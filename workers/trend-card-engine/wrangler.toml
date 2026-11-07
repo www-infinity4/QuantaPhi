@@ -1,0 +1,38 @@
+name = "quantaphi-trend-card-engine-staging"
+main = "worker.mjs"
+compatibility_date = "2026-11-07"
+workers_dev = true
+
+# Discovery refresh is scheduled; user-specific Quant decisions happen
+# ONLY in response to an authenticated POST /decision request.
+[triggers]
+crons = ["0 * * * *"]
+
+[[d1_databases]]
+binding = "TREND_DB"
+database_name = "quantaphi-trend-card-engine"
+database_id = "a48f3778-5347-42b9-b50d-4b16b9434ed2"
+
+# Existing database resources are referenced, not copied or migrated.
+# Decision reads use only caller-specific, bounded SELECT statements.
+[[d1_databases]]
+binding = "QUANT_AI_DB"
+database_name = "quant-ai"
+database_id = "4bb698ec-ee8c-42ec-ab4b-329f5df6ef95"
+
+[[d1_databases]]
+binding = "QUANTA_DB"
+database_name = "infinity-ledger"
+database_id = "711b3e05-f318-4d30-9a67-4de2af92aa6d"
+
+[[d1_databases]]
+binding = "IDENTITY_DB"
+database_name = "starquest-ledger"
+database_id = "a1a973b2-a37c-4e1c-b68e-a73803238206"
+
+[[services]]
+binding = "QUANT_AI"
+service = "quant-ai"
+
+# Do not include OPERATOR_TOKEN in source. Configure via Wrangler secret put.
+# Main site TREND_CARD_ENGINE service binding requires reviewed deployment.
