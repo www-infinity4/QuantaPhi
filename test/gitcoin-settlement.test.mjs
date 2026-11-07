@@ -29,9 +29,9 @@ try:
   for q in p['bad']:d.execute(q['sql'],q['params'])
 except sqlite3.IntegrityError:blocked=True
 print(json.dumps(dict(balance=d.execute('SELECT COALESCE(SUM(amount),0) FROM gitcoin_awards WHERE wallet_id=?',('customer-wallet',)).fetchone()[0],
- awards=d.execute('SELECT COUNT(*) FROM gitcoin_awards').fetchone()[0],history=d.execute('SELECT COUNT(*) FROM gitcoin_line_history').fetchone()[0],blocked=blocked)))
+ awards=d.execute('SELECT COUNT(*) FROM gitcoin_awards').fetchone()[0],history=d.execute('SELECT COUNT(*) FROM gitcoin_line_history').fetchone()[0],serials=d.execute('SELECT COUNT(*) FROM gitcoin_serials').fetchone()[0],blocked=blocked)))
 `],{input:JSON.stringify({schema:readFileSync(new URL('../gitcoin/schema.sql',import.meta.url),'utf8'),plans,bad}),encoding:'utf8'}));
- assert.deepEqual(result,{balance:2,awards:2,history:2,blocked:true});
+ assert.deepEqual(result,{balance:2,awards:2,history:2,serials:2,blocked:true});
 });
 test('settlement runs independent verification before any database write',async()=>{
  let writes=0;
@@ -61,8 +61,12 @@ else:print(json.dumps(dict(results=[dict(x) for x in d.execute(p['sql'],p['param
   const replay=await settleGitClaim(manifest(),{...adapters,db});
   const readded=await settleGitClaim(manifest('b'.repeat(40)),{...adapters,db});
   assert.equal(first.credited,2);assert.equal(first.receiptIds.length,2);
+  assert.equal(first.serials.length,2);
+  assert.match(first.serials[0],/^GIT-[0-9]{12}$/);
   assert.equal(replay.credited,0);assert.equal(replay.alreadyCredited,2);
+  assert.deepEqual(replay.serials,first.serials);
   assert.equal(readded.credited,0);assert.equal(readded.excludedHistorical.length,2);
+  assert.deepEqual(readded.serials,[]);
   assert.equal(first.cashPaid,false);
   run({batch:[{sql:'INSERT INTO gitcoin_bubbles_executor(singleton,binding_id,wallet_id,owner_subject,active,owner_verified) VALUES(1,?,?,?,?,?)',
    params:['owner-binding-fixture','bubbles-owner-wallet','owner-subject-fixture',1,1]}]});
@@ -78,5 +82,9 @@ else:print(json.dumps(dict(results=[dict(x) for x in d.execute(p['sql'],p['param
   }
   const rows=run({sql:"SELECT a.wallet_id,SUM(a.amount) AS total FROM gitcoin_awards a JOIN gitcoin_line_claims c ON c.receipt_id=a.receipt_id WHERE c.execution_channel='bubbles' GROUP BY a.wallet_id",params:[]}).results;
   assert.deepEqual(rows,[{wallet_id:'bubbles-owner-wallet',total:4}]);
+  const serials=run({sql:'SELECT serial_no, wallet_id, creator_subject FROM gitcoin_serials ORDER BY serial_no',params:[]}).results;
+  assert.deepEqual(serials.map(s=>s.serial_no),[1,2,3,4,5,6]);
+  assert.deepEqual(serials.slice(2).map(s=>s.wallet_id),Array(4).fill('bubbles-owner-wallet'));
+  assert.deepEqual(serials.slice(2).map(s=>s.creator_subject),['customer-A','customer-A','customer-B','customer-B']);
  }finally{rmSync(dir,{recursive:true,force:true})}
 });

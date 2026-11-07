@@ -25,6 +25,14 @@ export function gitCreditStatements(manifest,result,principal){
    SELECT c.receipt_id,?2,c.git_type,1,c.github_evidence_id,c.quant_ai_review_id,?3 FROM gitcoin_line_claims c
    JOIN gitcoin_line_history h ON h.receipt_id=c.receipt_id WHERE c.receipt_id=?1`,
    params:[line.receipt_id,line.wallet_id,result.attribution_evidence_id]});
+  // One authoritative sequence for all customers, independent of their local
+  // Termux installations. Only a persisted independently verified award can
+  // acquire a GIT serial, within the same transactional batch.
+  statements.push({sql:`INSERT OR IGNORE INTO gitcoin_serials(receipt_id,wallet_id,creator_subject,customer_wallet_id,git_type)
+   SELECT a.receipt_id,a.wallet_id,c.authenticated_submitter,c.customer_wallet_id,a.git_type
+   FROM gitcoin_awards a JOIN gitcoin_line_claims c ON c.receipt_id=a.receipt_id WHERE a.receipt_id=?1
+   AND NOT EXISTS(SELECT 1 FROM gitcoin_serials existing WHERE existing.receipt_id=a.receipt_id)`,
+   params:[line.receipt_id]});
  }
  return statements;
 }
@@ -43,20 +51,23 @@ export async function settleGitClaim(manifest,{principal,github,quantAI,db}={}){
  // D1 batch is transactional: a provenance/recipient conflict aborts the
  // complete batch. An interruption is safe to retry with the same receipts.
  const changes=await db.batch(plan.map(s=>db.prepare(s.sql).bind(...s.params)));
- const expected=createSettlementPlan(verified),receiptIds=[],excludedHistorical=[];
- const readback=await db.prepare(`SELECT c.receipt_id,c.recipient_wallet_id,h.receipt_id AS canonical_receipt,a.wallet_id,a.amount
+ const expected=createSettlementPlan(verified),receiptIds=[],serials=[],excludedHistorical=[];
+ const readback=await db.prepare(`SELECT c.receipt_id,c.recipient_wallet_id,h.receipt_id AS canonical_receipt,a.wallet_id,a.amount,s.serial_no,s.wallet_id AS serial_wallet_id,s.creator_subject AS serial_creator
    FROM gitcoin_line_claims c JOIN gitcoin_line_history h ON h.repo=c.repo AND h.file_path=c.file_path AND h.content_sha256=c.content_sha256
-   LEFT JOIN gitcoin_awards a ON a.receipt_id=c.receipt_id WHERE c.receipt_id IN (${expected.map((_,i)=>'?'+(i+1)).join(',')})`).bind(...expected.map(x=>x.receipt_id)).all();
+   LEFT JOIN gitcoin_awards a ON a.receipt_id=c.receipt_id
+   LEFT JOIN gitcoin_serials s ON s.receipt_id=a.receipt_id WHERE c.receipt_id IN (${expected.map((_,i)=>'?'+(i+1)).join(',')})`).bind(...expected.map(x=>x.receipt_id)).all();
  const saved=new Map((readback.results||[]).map(row=>[row.receipt_id,row]));
  for(const line of expected){
   const row=saved.get(line.receipt_id);
   if(!row||row.recipient_wallet_id!==line.wallet_id)fail('git_credit_readback_failed');
   if(row.canonical_receipt!==line.receipt_id){excludedHistorical.push(line.receipt_id);continue;}
-  if(row.wallet_id!==line.wallet_id||row.amount!==1)fail('git_credit_readback_failed');
+  if(row.wallet_id!==line.wallet_id||row.amount!==1||row.serial_wallet_id!==line.wallet_id||
+     !Number.isSafeInteger(row.serial_no)||row.serial_no<1||row.serial_creator!==principal.id)fail('git_credit_readback_failed');
   receiptIds.push(line.receipt_id);
+  serials.push('GIT-'+String(row.serial_no).padStart(12,'0'));
  }
- const credited=changes.reduce((n,x,i)=>n+(i%3===2?Number(x.meta?.changes||0):0),0);
+ const credited=changes.reduce((n,x,i)=>n+(i%4===2?Number(x.meta?.changes||0):0),0);
  if(!Number.isSafeInteger(credited)||credited<0||credited>receiptIds.length)fail('git_credit_readback_failed');
  return {asset:'GIT',status:'settled',walletId:verified.recipient_wallet_id,credited,alreadyCredited:receiptIds.length-credited,
-  receiptIds,excludedHistorical,reviewId:verified.review_id,cashPaid:false};
+  receiptIds,serials,excludedHistorical,reviewId:verified.review_id,cashPaid:false};
 }
