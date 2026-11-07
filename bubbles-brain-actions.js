@@ -275,6 +275,16 @@ function executionMessage(execution={},deduplicated=false,status='ready'){
  if(execution.status==='no_pending_jobs')return 'Your request is saved. Checking whether its jobs have already been claimed.';
  return 'Your request is saved, but the runner has not confirmed a launch. Robot Brain will retry automatically; you do not need to press Run.';
 }
+// Model roles share one GPT reasoning contract. Planned role labels are not
+// proof that model inference, repository writes or deployments took place.
+function sharedColorGptWorkBrief(){
+ return [
+  'Bubbles is one coordinated GPT Brain. Continue the original owner job under the same ticket until independently verified delivery or a recorded blocker.',
+  'Use needed roles: RED research of pinned files; ORANGE decisions only on conflicts; BLUE source validation/import planning; GREEN implementation with source edits and regression tests; PINK tests and review; PURPLE review of owner intent and approval gates; BLACK verification of actual commit, CI, merge, deploy and device receipts.',
+  'Every actual model call needs its model receipt; a color label, imagined assistant, tool proposal or scheduling event is not execution.',
+  'No model reply, planned role or queued ticket is a source commit. Keep the job and precise next action on failure, avoid duplicate repositories and resume from the last verified checkpoint.'
+ ].join(' ');
+}
 function makeJobs(request,selectedRepository){
  const message=String(request||'').trim().slice(0,4000);
  if(!message)throw Error('request_required');
@@ -284,7 +294,7 @@ function makeJobs(request,selectedRepository){
  return [{
   id:'TASK-1',agent:'greenbeans',color:'green',team:['yellow-jacket','blueberry','greenbeans','purple-pearl'],
   repository,executor:'repository-engine',queue_priority:80,status:'queued',
-  title,instructions:message+'\n\nExecution plan (planned stages, not completed work):\n'+JSON.stringify(plan)+'\nResearch verified documentation and actual repository source first. Save a structured plan with dependencies before implementation. Independent source inspections may run concurrently; writes must keep the existing repository lease and review gates. Never ask the owner for routine file paths or reversible styling choices.'+(omniSkill?'\n\nApproved Omni Code reference skill:\n'+omniSkill:'')+(siteSkill?'\n\nApproved autonomous website package plan:\n'+siteSkill:'')+(bridgeSkill?'\n\nSource-to-chat integration contract:\n'+bridgeSkill:'')+(recordBSkill?'\n\nRecordB recording library work contract:\n'+recordBSkill:''),
+  title,instructions:message+'\n\nShared GPT Brain build contract:\n'+sharedColorGptWorkBrief()+'\n\nExecution plan (planned stages, not completed work):\n'+JSON.stringify(plan)+'\nResearch verified documentation and actual repository source first. Save a structured plan with dependencies before implementation. Independent source inspections may run concurrently; writes must keep the existing repository lease and review gates. Never ask the owner for routine file paths or reversible styling choices.'+(omniSkill?'\n\nApproved Omni Code reference skill:\n'+omniSkill:'')+(siteSkill?'\n\nApproved autonomous website package plan:\n'+siteSkill:'')+(bridgeSkill?'\n\nSource-to-chat integration contract:\n'+bridgeSkill:'')+(recordBSkill?'\n\nRecordB recording library work contract:\n'+recordBSkill:''),
   acceptance:['Inspect actual repository implementation and implement this owner request; never fabricate source changes.',
    'Run focused tests and record commit/PR evidence, noting missing credentials or services.',
    'Carry the tested repair through the authorized review, merge and deployment pipeline. Record the actual live result; stop and report blockers when authorization or checks are missing.',
