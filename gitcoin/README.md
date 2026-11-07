@@ -68,3 +68,30 @@ This module is server source, with real SQLite tests, not a deployed API. Produc
 Bubbles job receipts must carry the authenticated `executionChannel`, customer identity/wallet and authorization, `executorBindingId`, signature verification and the owner recipient. Settlement persists the channel, owner-recipient policy, binding and customer wallet separately. The SQL award guard independently checks that the configured owner binding is active and verified and matches the award wallet.
 
 Existing pilot schemas require a reviewed migration for the new claim columns, owner configuration and updated award trigger. No live migration is performed here. Missing configuration blocks Bubbles GIT rather than falling back to a customer's wallet. Human CLI work outside the Bubbles execution channel is outside this owner-specific correction.
+
+## Globally serialized awards (source milestone)
+
+The isolated authoritative GIT D1 now defines `gitcoin_serials` with a shared
+SQLite `AUTOINCREMENT` sequence. Each independently verified 1-GIT award gets
+one permanent `GIT-000000000001`-style serial, plus its immutable receipt ID,
+credited wallet, authenticated request submitter, optional customer wallet,
+and GIT type. A verified claim must already exist: a local Termux
+`GIT-P-<receipt id>` is **only a provisional receipt reference**.
+
+The serial insert is part of the same D1 transactional batch as the awarded
+line. Repeated GitHub callbacks and retries cannot issue another serial for
+the same receipt; prior serials cannot be updated, deleted or transferred by
+this schema. The settlement readback verifies the serial recipient and creator
+before exposing it in a server-only result. On a shared ledger, serial numbers
+are globally sequential across all users, **not** per-account restartable.
+A new independent database or a reset is not a continuation of that sequence:
+production must use a single authoritative GIT database and preserve backups.
+
+Bubbles-generated code credits the active verified Bubbles owner/executor
+binding only, never the customer's wallet. The customer remains the recorded
+requester. Issuance still requires a signed customer-authorized GitHub job,
+default-branch verified code, passing CI, meaningful independently reviewed
+source lines, exact-commit customer acceptance and a server-issued wallet
+identity. Mere execution or a local receipt creates no award. Existing PR
+#1682 customer acceptance and PR #1703 Unified Wallet reading are separate
+integration milestones: this branch does not deploy or turn on live payouts.
