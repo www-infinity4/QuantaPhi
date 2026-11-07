@@ -3,9 +3,184 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-07T08:01:22.230034Z",
+  "checked_at": "2026-11-07T08:31:14.431452Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "hltv",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T08:10:00Z",
+      "related_news_urls": [
+        "https://www.dust2.us/news/79713/iowa-stormboar-announce-four-new-players-including-hltv-prospect-h0nest",
+        "https://community.skin.club/en/news/astralis-register-anlelele-as-substitute-for-pgl-major-singapore",
+        "https://pley.gg/cs2/astralis-bring-in-sashis-anlelele-for-singapore-hltv-reports/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPvR4bxRCcmoM1yG-DFROJoXUiC05hVQK5Ev9Ov_i4fSV81TV9KM9EGYymMJk",
+      "image_credit": "Dust2.us",
+      "news": [
+        {
+          "url": "https://www.dust2.us/news/79713/iowa-stormboar-announce-four-new-players-including-hltv-prospect-h0nest",
+          "title": "Iowa Stormboar announce four new players including HLTV Prospect H0NeST",
+          "publisher": "Dust2.us",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPvR4bxRCcmoM1yG-DFROJoXUiC05hVQK5Ev9Ov_i4fSV81TV9KM9EGYymMJk"
+        },
+        {
+          "url": "https://community.skin.club/en/news/astralis-register-anlelele-as-substitute-for-pgl-major-singapore",
+          "title": "Astralis Register Anlelele as Substitute for PGL Major Singapore",
+          "publisher": "Skin.Club Community",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmsaVxaoYfVDwmjopnqfXLPf-zgnQBaqnLP_w4jcY7U8fKnP6zA_fCVaKDcgU"
+        },
+        {
+          "url": "https://pley.gg/cs2/astralis-bring-in-sashis-anlelele-for-singapore-hltv-reports/",
+          "title": "Astralis bring in Sashi’s Anlelele for Singapore, HLTV reports",
+          "publisher": "Pley.gg",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbROt7tNWxbTbZx1RwIJGVsNIlOXk56G8tuAF_1lRbynp1wRj75M2vNq7b5kM"
+        }
+      ]
+    },
+    {
+      "query": "yosuke watanuki",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T08:10:00Z",
+      "related_news_urls": [
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/coleman-wong-vs-yosuke-watanuki-nov-07-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/facundo-diaz-acosta-vs-thiago-seyboth-wild-nov-07-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/henning-vs-caniato-nov-05-2026/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZO-q3moECJ5z2RXEYvYGRcTNf60Ab_yoBDIHXdBkDsAMCQTGhShjleO9AvJQ",
+      "image_credit": "Robinhood",
+      "news": [
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/coleman-wong-vs-yosuke-watanuki-nov-07-2026/",
+          "title": "November 7, 2026: Coleman Wong vs Yosuke Watanuki Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZO-q3moECJ5z2RXEYvYGRcTNf60Ab_yoBDIHXdBkDsAMCQTGhShjleO9AvJQ"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/facundo-diaz-acosta-vs-thiago-seyboth-wild-nov-07-2026/",
+          "title": "November 7, 2026: Facundo Diaz Acosta vs Thiago Seyboth Wild Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPlGIza8UpJ58EHVjjSwvi3FGzuvBGYLsAygnQQcxz4RE9TEtkBOtwXaNl3GA"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/henning-vs-caniato-nov-05-2026/",
+          "title": "November 5, 2026: Henning vs Caniato Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFBmHY13nfNcPfB5-DpVRfnfFPJTkYYh1SyM69woalml6Hzi982SKuU1Ov8lo"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 generative ai porting",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T08:00:00Z",
+      "related_news_urls": [
+        "https://www.rockpapershotgun.com/its-a-brave-new-world-gta-6s-pc-port-will-release-sooner-than-you-think-to-avoid-losing-money-to-ai-rip-offs-says-former-rockstar-tech-director",
+        "https://arstechnica.com/gaming/2026/11/could-potential-ai-clones-of-gta-vi-force-a-quicker-official-port/",
+        "https://wccftech.com/gta-6-tens-of-thousands-dollars-tokens-unofficial-pc-port/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIcSYiQp4LCYT2ET2e2PNDwT7JGsG2yuo5smKwTSnJ0UvYg-ilMsAJDecmJC8",
+      "image_credit": "Rock Paper Shotgun",
+      "news": [
+        {
+          "url": "https://www.rockpapershotgun.com/its-a-brave-new-world-gta-6s-pc-port-will-release-sooner-than-you-think-to-avoid-losing-money-to-ai-rip-offs-says-former-rockstar-tech-director",
+          "title": "\"It's a brave new world\": GTA 6's PC port will release sooner than you think to avoid losing money to AI rip-offs, says former Rockstar tech director",
+          "publisher": "Rock Paper Shotgun",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIcSYiQp4LCYT2ET2e2PNDwT7JGsG2yuo5smKwTSnJ0UvYg-ilMsAJDecmJC8"
+        },
+        {
+          "url": "https://arstechnica.com/gaming/2026/11/could-potential-ai-clones-of-gta-vi-force-a-quicker-official-port/",
+          "title": "Could potential AI clones of GTA VI force a quicker official port?",
+          "publisher": "Ars Technica",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtBbq1-zllBJdA1YQzjB0uI7SnInGhfpQi_PxkP9CW0NdFqnUihg6dQmwvPvA"
+        },
+        {
+          "url": "https://wccftech.com/gta-6-tens-of-thousands-dollars-tokens-unofficial-pc-port/",
+          "title": "GTA 6 Could Cost “Tens of Thousands Of Dollars” in Tokens To Develop Unofficial PC Port, Yet Former Rockstar Tech Director Believes It Will Be Attempted",
+          "publisher": "Wccftech",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8YuujC2R88Segx_IIKdTInPL1d_K93Y_xBp6m_OFv_dxmk3w5zr8Nxg_xLJQ"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 price",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T08:00:00Z",
+      "related_news_urls": [
+        "https://www.vice.com/en/article/how-buying-gta-6-could-actually-save-you-5000-according-to-a-self-made-millionaire/",
+        "https://www.ign.com/articles/self-made-millionaire-says-buying-gta-6-saves-you-5000",
+        "https://tech.yahoo.com/gaming/articles/millionaire-says-gta-6-actually-160154110.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_pYEj5E5i8dnPSxVcU_I-Ilr-8t-v5d9w1uqW2V_YxghWZ85Jy7y8ODAG0WI",
+      "image_credit": "VICE",
+      "news": [
+        {
+          "url": "https://www.vice.com/en/article/how-buying-gta-6-could-actually-save-you-5000-according-to-a-self-made-millionaire/",
+          "title": "How Buying ‘GTA 6’ Could Actually Save You $5,000, According to a Self-Made Millionaire",
+          "publisher": "VICE",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_pYEj5E5i8dnPSxVcU_I-Ilr-8t-v5d9w1uqW2V_YxghWZ85Jy7y8ODAG0WI"
+        },
+        {
+          "url": "https://www.ign.com/articles/self-made-millionaire-says-buying-gta-6-saves-you-5000",
+          "title": "'That’s 50 Nights of Entertainment' — Self-Made Millionaire Says Buying GTA 6 Saves You $5,000",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxL4x2qPhvxGiPknIVv2htTKmte3L0VGrVVGl87wac7pAHwS60tY7BObIIbac"
+        },
+        {
+          "url": "https://tech.yahoo.com/gaming/articles/millionaire-says-gta-6-actually-160154110.html",
+          "title": "A Millionaire Says GTA 6 Is Actually a Smart Financial Investment. Here’s His Reasoning.",
+          "publisher": "Yahoo Tech",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJcm21RWfnnSSkRnLMnUqpL712VU7a7yTPU-Y3ZCnkZFoTBZddZ7cPcDCyFvQ"
+        }
+      ]
+    },
+    {
+      "query": "ucla vs minnesota predictions",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T07:50:00Z",
+      "related_news_urls": [
+        "https://www.latimes.com/sports/ucla/story/2026-11-06/ucla-focuses-on-winning-turnover-battle-in-trenches-at-minnesota",
+        "https://247sports.com/college/minnesota/article/minnesota-gopher-football-ucla-bruins-preview-odds-game-prediction-292182481/",
+        "https://www.thedailygopher.com/minnesota-golden-gophers-football/41566/minnesota-football-vs-ucla-staff-predictions"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4N4m9d0dB-u17f5vGumSjRQ3_Rk1lFdKuSRfM8OuoOD6ZTsc4amXJ19Yfduc",
+      "image_credit": "Los Angeles Times",
+      "news": [
+        {
+          "url": "https://www.latimes.com/sports/ucla/story/2026-11-06/ucla-focuses-on-winning-turnover-battle-in-trenches-at-minnesota",
+          "title": "UCLA focuses on winning turnover battle, edge in trenches during key Minnesota matchup",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4N4m9d0dB-u17f5vGumSjRQ3_Rk1lFdKuSRfM8OuoOD6ZTsc4amXJ19Yfduc"
+        },
+        {
+          "url": "https://247sports.com/college/minnesota/article/minnesota-gopher-football-ucla-bruins-preview-odds-game-prediction-292182481/",
+          "title": "Minnesota Football vs. #8 UCLA preview and score prediction",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCZhgrGmLALdQKKrfrdsVwnWoNWOIAfJWWNx5PZp2Ln1_C9MTpD74fpZoLyOs"
+        },
+        {
+          "url": "https://www.thedailygopher.com/minnesota-golden-gophers-football/41566/minnesota-football-vs-ucla-staff-predictions",
+          "title": "Minnesota Football vs. UCLA: Staff Predictions",
+          "publisher": "The Daily Gopher",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVoxYjM_K0wZghhWBLVgLRBBRP0ZEDvb440Nb92L97Xxu2zOx05WZlL3XVGV8"
+        }
+      ]
+    },
     {
       "query": "haití",
       "approx_searches": "200+",
@@ -131,41 +306,6 @@
       ]
     },
     {
-      "query": "marshawn lynch",
-      "approx_searches": "100+",
-      "published_at": "2026-11-07T07:20:00Z",
-      "related_news_urls": [
-        "https://danpatrick.com/2026/11/04/mccourty-channeled-his-inner-marshawn-lynch/",
-        "https://brand-innovators.com/solo-stove-taps-marshawn-lynch-for-holiday-campaign/",
-        "https://www.morningstar.com/news/pr-newswire/20261106ny91397/solo-stove-and-marshawn-lynch-encourage-gift-givers-to-shop-solo-stove-this-holiday-with-their-new-gifts-that-dont-suck-campaign"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8RyoJSsXQscpFH2tWjYSqHEGaSeUOePLIrQSDdsSE6yy_kH_LL4jDKI1LTJk",
-      "image_credit": "Dan Patrick Show",
-      "news": [
-        {
-          "url": "https://danpatrick.com/2026/11/04/mccourty-channeled-his-inner-marshawn-lynch/",
-          "title": "McCourty channeled his inner Marshawn Lynch",
-          "publisher": "Dan Patrick Show",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8RyoJSsXQscpFH2tWjYSqHEGaSeUOePLIrQSDdsSE6yy_kH_LL4jDKI1LTJk"
-        },
-        {
-          "url": "https://brand-innovators.com/solo-stove-taps-marshawn-lynch-for-holiday-campaign/",
-          "title": "Solo Stove taps Marshawn Lynch for holiday campaign",
-          "publisher": "Brand Innovators",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStoPejeXvgsm0v-Ygawh6dLTbjJymDUHT0WWxx5dHw2B6854eJlUKaqReVpzU"
-        },
-        {
-          "url": "https://www.morningstar.com/news/pr-newswire/20261106ny91397/solo-stove-and-marshawn-lynch-encourage-gift-givers-to-shop-solo-stove-this-holiday-with-their-new-gifts-that-dont-suck-campaign",
-          "title": "Solo Stove and Marshawn Lynch encourage gift givers to shop Solo Stove this holiday with their new \"Gifts That Don't Suck\" campaign",
-          "publisher": "Morningstar",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHZxDcEtn4t-eWZJRu3cLm3lY_KE1W60cR4XUPBXHNeWE0euU4nBTI0w_dXX4"
-        }
-      ]
-    },
-    {
       "query": "campus drivers season 2",
       "approx_searches": "100+",
       "published_at": "2026-11-07T07:20:00Z",
@@ -197,146 +337,6 @@
           "publisher": "BGR",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTSiH2T6RFwjy1q2XqbMOeIGHjCMDVeed-rlIO1aDaOF3W6zfaVJL8ntXSi2Fo"
-        }
-      ]
-    },
-    {
-      "query": "raiders vs 49ers",
-      "approx_searches": "100+",
-      "published_at": "2026-11-07T07:20:00Z",
-      "related_news_urls": [
-        "https://www.raiders.com/news/what-the-49ers-are-saying-about-the-raiders-ahead-of-the-week-9-matchup",
-        "https://apnews.com/article/kubiak-klint-klay-raiders-49ers-17ef11baf82ed9d86097b36d960e6c4c",
-        "https://sports.yahoo.com/articles/las-vegas-raiders-hoping-one-005640968.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTJzYhHKJW3KkG-pI_DLFCZf3M5FMhAhnW46ULUG894wrrdNPSecQ9CUYnyso",
-      "image_credit": "Raiders.com",
-      "news": [
-        {
-          "url": "https://www.raiders.com/news/what-the-49ers-are-saying-about-the-raiders-ahead-of-the-week-9-matchup",
-          "title": "What the 49ers are saying about the Raiders ahead of the Week 9 matchup",
-          "publisher": "Raiders.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTJzYhHKJW3KkG-pI_DLFCZf3M5FMhAhnW46ULUG894wrrdNPSecQ9CUYnyso"
-        },
-        {
-          "url": "https://apnews.com/article/kubiak-klint-klay-raiders-49ers-17ef11baf82ed9d86097b36d960e6c4c",
-          "title": "No small talk until Sunday: The Kubiak brothers’ sideline standoff in Raiders-49ers",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzAblXvEgAPS-OnxwFsQdgjPf_n9_bDJQeU9_FN-Ith4TOmrID5neHOhHIxtE"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/las-vegas-raiders-hoping-one-005640968.html",
-          "title": "Las Vegas Raiders are hoping one player just had a ‘wake-up call' just before they get set to play the San Francisco 49ers",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMa5_xu81Peqpm0_sCizy6n3pPtwfW8AskXd6jb2vvmpyVFMwH-d3PEbW6Vr0"
-        }
-      ]
-    },
-    {
-      "query": "ethan hawke",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T07:10:00Z",
-      "related_news_urls": [
-        "https://people.com/ethan-hawke-says-daughter-maya-hawkes-wedding-was-greatest-day-of-my-life-12239791",
-        "https://www.broadwayworld.com/bwwtv/article/Ethan-Hawke-on-Maya-Hawkes-Wedding-and-Training-Day-with-Denzel-20261106",
-        "https://www.yahoo.com/entertainment/movies/articles/ethan-hawke-says-working-denzel-221503484.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQePhTeCcv8ONHMf8-f9XCSmT3SajFZbVR-LB39kOJpSbx_gmJU_U9svgNJQvo",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/ethan-hawke-says-daughter-maya-hawkes-wedding-was-greatest-day-of-my-life-12239791",
-          "title": "Ethan Hawke Says Daughter Maya’s Wedding Was ‘the Greatest Day of My Life’",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQePhTeCcv8ONHMf8-f9XCSmT3SajFZbVR-LB39kOJpSbx_gmJU_U9svgNJQvo"
-        },
-        {
-          "url": "https://www.broadwayworld.com/bwwtv/article/Ethan-Hawke-on-Maya-Hawkes-Wedding-and-Training-Day-with-Denzel-20261106",
-          "title": "Ethan Hawke on Maya Hawke's Wedding and Training Day with Denzel",
-          "publisher": "BroadwayWorld",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTY-GTO8nDU_xR8voQaoxG9WglWlMdM2tUjQemUgB8MQLqh_g1ucQIWAu3bXAc"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/ethan-hawke-says-working-denzel-221503484.html",
-          "title": "Ethan Hawke Says Working With Denzel Taught Him About Film Acting",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQE5g4AZJcEA0wOYLZu5NeqOR7MC1EcgV1de2_qkZ_lPlHzMdEyVGJiioul-8I"
-        }
-      ]
-    },
-    {
-      "query": "zelda ocarina of time remake walkthrough",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T07:10:00Z",
-      "related_news_urls": [
-        "https://www.polygon.com/zelda-ocarina-of-time-remake-oot-bottom-well-dungeon-walkthrough/",
-        "https://www.eurogamer.net/bottom-of-the-well-walkthrough-zelda-ocarina-of-time",
-        "https://www.ign.com/wikis/ocarina-of-time-remake/Dodongo_Cavern_Dungeon_Walkthrough"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrddwtTXfrEny4K1lBC6kt_Pe50t8mYheLOrUqyPgBFnXvGVJSLpYWPvmXFQ8",
-      "image_credit": "Polygon.com",
-      "news": [
-        {
-          "url": "https://www.polygon.com/zelda-ocarina-of-time-remake-oot-bottom-well-dungeon-walkthrough/",
-          "title": "Bottom of the Well dungeon walkthrough in Zelda Ocarina of Time",
-          "publisher": "Polygon.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrddwtTXfrEny4K1lBC6kt_Pe50t8mYheLOrUqyPgBFnXvGVJSLpYWPvmXFQ8"
-        },
-        {
-          "url": "https://www.eurogamer.net/bottom-of-the-well-walkthrough-zelda-ocarina-of-time",
-          "title": "Bottom of the Well dungeon walkthrough in Zelda Ocarina of Time",
-          "publisher": "Eurogamer.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGxW39duk2w1DRYDraODmrOaPGTZkABFV8e15KV0XtCIex1VODRSZ1mZt8hWM"
-        },
-        {
-          "url": "https://www.ign.com/wikis/ocarina-of-time-remake/Dodongo_Cavern_Dungeon_Walkthrough",
-          "title": "Dodongo Cavern Dungeon Walkthrough",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQHYaredpO73euYsqahBpHewGsi_kI-927XNKNDMnXmVfsy7bPFj-8GCZzw2k"
-        }
-      ]
-    },
-    {
-      "query": "fortnite power hour",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T07:00:00Z",
-      "related_news_urls": [
-        "https://www.forbes.com/sites/paultassi/2026/11/04/fortnite-clarifies-the-odds-of-opening-a-pirate-shop-token-chest/",
-        "https://www.gamespot.com/articles/fortnites-plan-to-survive-gta-6-is-finally-revealed-make-everything-free/",
-        "https://aftermath.site/fortnite-pirate-token/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbD9ACPjHDZIB4GHxA7QqmblNFGzIwDEgMskUmBXJvNEFIiV3I9rgpOh1BTQI",
-      "image_credit": "Forbes",
-      "news": [
-        {
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/04/fortnite-clarifies-the-odds-of-opening-a-pirate-shop-token-chest/",
-          "title": "‘Fortnite’ Clarifies The Odds Of Opening A Pirate Shop Token Chest",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbD9ACPjHDZIB4GHxA7QqmblNFGzIwDEgMskUmBXJvNEFIiV3I9rgpOh1BTQI"
-        },
-        {
-          "url": "https://www.gamespot.com/articles/fortnites-plan-to-survive-gta-6-is-finally-revealed-make-everything-free/",
-          "title": "Fortnite’s Plan To Survive GTA 6 Is Finally Revealed: Make Everything Free",
-          "publisher": "GameSpot",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQ-cb93fHEw66rTQyC1RggzGkhKu-95ooUMdVWzRXNNPEBN3ksGsExUM_5P3Y"
-        },
-        {
-          "url": "https://aftermath.site/fortnite-pirate-token/",
-          "title": "Fortnite's Pirate Token Item Is Everything That's Wrong With The Game These Days",
-          "publisher": "Aftermath",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRN6vNEOO4jl1XyvzGvVx9EoV6I5yc3UNCHJBSa0PslGHr3oEswjmpiWYp6bow"
         }
       ]
     }
