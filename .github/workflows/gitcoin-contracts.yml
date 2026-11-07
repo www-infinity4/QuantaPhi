@@ -1,0 +1,20 @@
+name: GIT coin receipt contracts
+on:
+  push:
+    paths: ['gitcoin/**','test/gitcoin-*.test.mjs','.github/workflows/gitcoin-contracts.yml']
+  pull_request:
+    paths: ['gitcoin/**','test/gitcoin-*.test.mjs','.github/workflows/gitcoin-contracts.yml']
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check gitcoin/gh-gitcoin.mjs
+      - run: node --test test/gitcoin-*.test.mjs
+      - run: python3 -c 'import sqlite3,pathlib; sqlite3.connect(":memory:").executescript(pathlib.Path("gitcoin/schema.sql").read_text()); print("GIT schema valid")'
