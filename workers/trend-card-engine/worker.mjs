@@ -2,6 +2,7 @@
  * No wallet writes, payment endpoints, model-generated publication or unapproved scraping.
  */
 import {BOT_ROLES,canPublishCard} from '../../trend-card-core.mjs';
+import {fetchQuantDecision} from './quant-decision.mjs';
 const FEED='https://trends.google.com/trending/rss?geo=US';
 const LIMIT=750000;
 const send=(body,status=200)=>Response.json(body,{status,headers:{'Cache-Control':'no-store','Access-Control-Allow-Origin':'https://quantaphi.org','Vary':'Origin'}});
@@ -73,7 +74,10 @@ async function featured(db,clock){
 export default {
  async fetch(request,env){
   const path=new URL(request.url).pathname;
-  if(path==='/health'&&request.method==='GET')return send({ok:true,db_connected:!!env.TREND_DB,quant_ai_configured:typeof env.QUANT_AI?.fetch==='function',active_bots:0,worker_queue:'not_a_live_agent_runner'});
+  if(path==='/health'&&request.method==='GET')return send({ok:true,db_connected:!!env.TREND_DB,quant_ai_service_connected:typeof env.QUANT_AI?.fetch==='function',quant_ai_data_connected:!!(env.QUANT_AI_DB&&env.QUANTA_DB&&env.IDENTITY_DB),decision_mode:'on_demand_per_user',active_bots:0,worker_queue:'not_a_live_agent_runner'});
+  // An authenticated user can request a private ranking only when needed.
+  // A recommendation is never an Orange approval for a public advertisement.
+  if(path==='/decision')return fetchQuantDecision(request,env);
   // Orange must be verified by a trusted server identity AND a real Quant AI receipt.
   // Approval remains deliberately unavailable until the upstream receipt contract is wired.
   if(path==='/orange/approve')return send({ok:false,error:'quant_ai_receipt_verification_not_configured'},503);
