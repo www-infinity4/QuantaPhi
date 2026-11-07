@@ -6,6 +6,7 @@
   const API = "https://fred-spaces-ledger.marvaseater.workers.dev";
   const ARCHIVE = "https://www.twitterspacegpt.com/hosts/dotkrueger";
   const FIRST = "fred-0700";
+  const FIRST_REPLAY = "https://x.com/i/spaces/1OyKAjYPeXqGb";
   // Stable numbers: never remap an episode number after somebody shares it.
   // Metadata is verified from the public host catalog; audio is NOT licensed here.
   const episodes = [
@@ -82,38 +83,42 @@
     return data;
   }
   async function checkPaymentReadiness(){
+    // The legacy deployed Worker reports paymentsReady but omits the paired
+    // owner debit/credit receipt. Never initiate a new 1-StarCoin charge
+    // until a separately reviewed receipt-contract v2 is deployed.
     try {
       const response=await fetch(API+"/health",{cache:"no-store"});
       const data=await response.json();
-      paymentsReady=Boolean(response.ok&&data.ok&&data.paymentsReady);
+      paymentsReady=Boolean(response.ok&&data.ok&&data.paymentsReady&&data.receiptContractVersion===2);
     }catch(_){paymentsReady=false;}
-    if(!paymentsReady)message="Fred's verified creator payout wallet is not connected. No StarCoin will be charged.";
+    if(!paymentsReady)message="Paid Fred Space unlocks paused until the live server supports verified QuantaPhi owner payout receipts. The first Fred Space remains free. No StarCoin charged.";
     render();
   }
   async function sync(){try{const d=await ledger("/v1/spaces/unlocks");unlocked=new Set(d.unlocked||[]);balance=d.starCoins;isPlatformOwner=!!d.isPlatformOwner;const saved=byId.get(requested||load(currentKey,FIRST));if(saved&&(saved.id===FIRST||unlocked.has(saved.id)))active=saved;render();window.dispatchEvent(new CustomEvent('phi:media-star-wallet-synced',{detail:{wholeStarCoins:balance,source:'fred-spaces-ledger'}}));}catch(error){message="StarCoin wallet not connected; the first episode remains free.";render();}}
   function payoutCaption(data){
     if(data.ownerPreview)return "Owner preview — no StarCoin deducted. ";
-    if(data.charged===1)return data.creatorPaid===true&&data.recipient==="fred-krueger"&&data.receiptReference
-      ?"1 StarCoin credited to Fred's verified wallet; linked debit/credit receipt confirmed. "
-      :"Payment discrepancy: 1 StarCoin was charged, but Fred's credit receipt was NOT verified. Report this transaction; do not retry payment. ";
+    if(data.charged===1)return data.ownerPaid===true&&data.recipient==="platform-owner"&&data.receiptReference
+      ?"1 StarCoin credited to the verified QuantaPhi platform-owner wallet; linked debit/credit receipt confirmed. No creator royalty or audio play is verified by this purchase. "
+      :"Payment discrepancy: 1 StarCoin was charged, but the QuantaPhi owner payout receipt was NOT verified. Report this transaction; do not retry payment. ";
     return "Already unlocked; no new charge. ";
   }
   function rememberEpisode(e){const seen=new Set(load(seenKey,[]));seen.add(active.id);active=e;seen.add(e.id);const available=episodes.filter(isReplayLink);
     if(available.length&&available.every(x=>seen.has(x.id))) {save("phi:fred-spaces-previous-round:v1",[...seen]);seen.clear();seen.add(e.id);}
     save(seenKey,[...seen]);save(currentKey,e.id);}
   async function more(){
-    if(busy||catalogLoading)return;
-    if(!paymentsReady){note("Media Star payments are paused until Fred's own payout wallet is verified. No StarCoin was charged.");return;}
+    if(busy)return;
+    if(catalogLoading){note("Fred's episode catalog is still loading; the first Space remains free.");return;}
+    if(!paymentsReady){note("Paid Fred Space unlocks are paused until the verified owner payout receipt service is ready. No StarCoin was charged.");return;}
     const next=pickNext();if(!next){note("No additional indexed episodes are available.");return;}
     // The fee is for curated discovery of a direct X replay link, not streaming rights.
     // The source may require X sign-in or disappear. Display this before every new debit.
-    if(next.id!==FIRST&&!isPlatformOwner&&!unlocked.has(next.id)&&!window.confirm("Spend 1 full StarCoin to reveal the curated episode: "+next.title+"? The replay opens on X, not inside QuantaPhi. X may require sign-in or may not offer playback. The StarCoin goes to Fred's verified account for this curated link, not guaranteed playback. Continue?"))return;
+    if(next.id!==FIRST&&!isPlatformOwner&&!unlocked.has(next.id)&&!window.confirm("Spend 1 full StarCoin to reveal the QuantaPhi-curated Fred Space: "+next.title+"? Your StarCoin is credited to the verified QuantaPhi platform owner for original link discovery, NOT to Fred for the recording. X may require sign-in or may not offer playback. Continue?"))return;
     busy=true;render();
     try{
       const data=next.id===FIRST?{ok:true,charged:0,starCoins:balance}:await ledger("/v1/spaces/unlock","POST",{episodeId:next.id});
       if(!data.ok)throw new Error("Unlock was not confirmed.");
       balance=data.starCoins;unlocked.add(next.id);rememberEpisode(next);
-      message=payoutCaption(data)+"Use the play button to open the original replay on X."
+      message=payoutCaption(data)+"Tap Play Fred's Spaces above or Play in this card to open the selected original X replay."
       window.dispatchEvent(new CustomEvent('phi:media-star-wallet-synced',{detail:{wholeStarCoins:balance,source:'fred-spaces-ledger'}}));
     }catch(error){message=error.message||"No StarCoin was charged. Please retry.";}
     finally{busy=false;render();}
@@ -129,7 +134,7 @@
     if(busy)return;
     if(target.id!==FIRST&&!isPlatformOwner&&!unlocked.has(target.id)){
       if(!paymentsReady){note("Wallet payments are unavailable; no StarCoin was charged.");return}
-      if(!window.confirm("Pay Fred 1 full StarCoin to reveal this curated episode: "+target.title+"? Audio comes from the original X recording, which might require sign-in or be unavailable."))return;
+      if(!window.confirm("Spend 1 full StarCoin to reveal this QuantaPhi-curated Fred Space: "+target.title+"? The fee credits the verified QuantaPhi platform owner, not Fred. The original X recording may require sign-in or be unavailable."))return;
     }
     busy=true;render();
     try{
@@ -139,7 +144,7 @@
       unlocked.add(target.id);
       if(data.starCoins!==undefined)balance=data.starCoins;
       rememberEpisode(target);
-      message=payoutCaption(data)+"Open the original X Space using the player.";
+      message=payoutCaption(data)+"Tap Play Fred's Spaces above or the in-card play link for the original X replay.";
       window.dispatchEvent(new CustomEvent('phi:media-star-wallet-synced',{detail:{wholeStarCoins:balance,source:'fred-spaces-ledger'}}));
     }catch(e){message=e?.message||"Fred episode selection failed; check the wallet receipt before retrying."}
     finally{busy=false;render()}
@@ -261,6 +266,28 @@
     const status=node("p","fs-status",message||"Featured replay is free. One new curated X episode link costs 1 full StarCoin after confirmation. Listening happens on X.");
     status.setAttribute("role","status");status.setAttribute("aria-live","polite");card.append(status);
     root.append(card);
+    // Keep the fixed first-screen radio useful after a paid, idempotent or
+    // platform-owner preview selection. No unpaid catalog URLs are released here.
+    const quickPlay=document.getElementById("fredSpacesQuickPlay");
+    const quickStatus=document.getElementById("fredSpacesQuickStatus");
+    const quickNext=document.getElementById("fredSpacesQuickNext");
+    const quickLabel=quickPlay?.querySelector(".fmq-note");
+    if(quickPlay){
+      const allowed=isReplayLink(active)&&(active.id===FIRST||unlocked.has(active.id)||isPlatformOwner);
+      const replay=allowed?active:byId.get(FIRST);
+      quickPlay.href=replay.source;
+      quickPlay.setAttribute('aria-label',"Play Fred Krueger's "+replay.title+" on X");
+      if(quickLabel)quickLabel.textContent=replay.id===FIRST
+        ?"First Space · FREE · Play the original recording on X"
+        :"Selected: "+replay.title+" · tap Play to open original X replay";
+    }
+    if(quickNext)quickNext.textContent=isPlatformOwner
+      ?"Next Fred Space · owner preview (free)"
+      :"Next Fred Space · 1 StarCoin";
+    if(quickStatus)quickStatus.textContent=message||
+      (catalogLoading?"Loading Fred's curated episode index. The free Space is ready.":paymentsReady
+        ?"The next curated Space is 1 StarCoin after confirmation. The verified QuantaPhi platform-owner wallet receives the fee. X handles the recording."
+        :"Paid unlocks paused until the owner payout receipt service is verified. The first Space remains free.");
   }
   const requested=new URL(location.href).searchParams.get("fredSpace");
   if(requested===FIRST)active=byId.get(FIRST);
@@ -271,11 +298,19 @@
       const catalog=await response.json();
       if(catalog.schemaVersion!==1||!Array.isArray(catalog.episodes))throw Error("Invalid episode index");
       const valid=catalog.episodes.filter(e=>e.hostId==="dotkrueger"&&e.id&&e.title&&Array.isArray(e.tags)&&isReplayLink(e));
-      if(!valid.some(e=>e.id===FIRST))throw Error("Featured episode missing");
-      episodes.splice(0,episodes.length,...valid);byId.clear();episodes.forEach(e=>byId.set(e.id,e));
+      // The public catalog still uses a twitter.com alias. Keep the
+      // owner-verified, directly playable x.com replay URL for the free
+      // starter even after loading hundreds of indexed entries.
+      if(!valid.some(e=>e.id===FIRST&&e.spaceId==="1OyKAjYPeXqGb"))throw Error("Featured episode missing or mismatched");
+      const canonical=valid.map(e=>e.id===FIRST?{...e,source:FIRST_REPLAY}:e);
+      episodes.splice(0,episodes.length,...canonical);byId.clear();episodes.forEach(e=>byId.set(e.id,e));
       active=byId.get(FIRST);
     }catch(error){message="Full episode index could not load. Next episode is paused; retry by reloading.";render();return;}
     catalogLoading=false;render();await sync();await checkPaymentReadiness();
   }
+  // The visible first-screen Next button uses the same guarded original
+  // next-episode path as the full Media Star; no duplicate billing flow.
+  const quickNext=document.getElementById("fredSpacesQuickNext");
+  quickNext?.addEventListener('click',()=>{void more();});
   render();void loadCatalog();void loadQuantInterests();
 })();

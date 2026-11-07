@@ -2,12 +2,13 @@
  * 120-record importer. Listing evidence is NOT inventory, a current offer,
  * licensed paid advertising, a medical recommendation, or checkout permission.
  */
-const make=(id,brand,name,size,productUrl,imageUrl,sourceName,description,drugFacts='',category='Skin relief')=>Object.freeze({
+const make=(id,brand,name,size,productUrl,imageUrl,sourceName,description,drugFacts='',category='Skin relief',options={})=>Object.freeze({
  id,brand,name,size,productUrl,imageUrl,sourceName,description,drugFacts,
  category,kind:'otc',checkedAt:'2026-11-07',
  reviewState:'editorial-reviewed',sponsored:false,
- imageCredit:'Product photograph hosted by '+sourceName,
- imageRights:'not-confirmed-for-paid-ads'
+ imageCredit:'Product photograph hosted by '+(options.imageSourceName||sourceName),
+ imageRights:'not-confirmed-for-paid-ads',
+ ...(options.factsUrl?{factsUrl:options.factsUrl}:{})
 });
 export const ESSENTIALS_SEED=Object.freeze([
  make('blue-star-ointment','Blue Star','Anti-Itch Medicated Ointment','2 oz',
@@ -21,6 +22,24 @@ export const ESSENTIALS_SEED=Object.freeze([
   'Walmart','Triple-antibiotic first aid ointment for minor cuts, scrapes, and burns. Review Drug Facts and warnings, including antibiotic allergy precautions.',
   'Active antibiotics: bacitracin zinc, neomycin sulfate, polymyxin B sulfate. Not a substitute for Blue Star anti-itch ointment.',
   'First aid'),
+ make('aquaphor-healing-175oz','Aquaphor','Healing Ointment','1.75 oz',
+  'https://www.walmart.com/ip/193670269',
+  'https://i5.walmartimages.com/seo/Aquaphor-Healing-Ointment-Skin-Protectant-For-Dry-and-Cracked-Skin-1-75-oz-Tube_c7eefe20-d603-436e-838d-f042c3d63383.7718e2f63d047c492c49126c074f3b99.jpeg',
+  'Walmart','Skin-protectant ointment for temporary protection of minor cuts, scrapes and burns and relief of dry, chapped or cracked skin. Follow the package Drug Facts.',
+  'Active ingredient: petrolatum 41% skin protectant. External use only; avoid eyes and follow label warnings.',
+  'Skin relief',{factsUrl:'https://www.aquaphorus.com/products/aquaphor-repairing-ointment/aquaphor-healing-ointment-1%2C-d-%2C75oz'}),
+ make('band-aid-hydro-seal-10ct','Band-Aid','Hydro Seal All-Purpose Hydrocolloid Bandages','10 ct',
+  'https://www.kroger.com/p/band-aid-brand-hydro-seal-waterproof-first-aid-hydrocolloid-gel-bandages/0038137117297',
+  'https://d3pq5rjvq8yvv1.cloudfront.net/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/2/e/2e69baf1-84c8-4fd1-a98c-beefa961c5ab_1.54ef610709f52781f05fcecb642976bb.jpeg',
+  'Kroger','Waterproof hydrocolloid dressings that cushion and protect minor wounds and blisters. Not the same product as an antibiotic ointment.',
+  'Apply to clean, dry skin without antibiotic ointment underneath; do not cut or reuse. Read manufacturer directions for placement and removal.',
+  'First aid',{imageSourceName:'HealthWarehouse',factsUrl:'https://www.band-aid.com/products/adhesive-bandages/hydro-seal-all-purpose-bandages'}),
+ make('cortizone10-sensitive-skin-2oz','Cortizone-10','Maximum Strength Sensitive Skin Itch Relief Cream','2 oz',
+  'https://www.walmart.com/ip/1520268394',
+  'https://i5.walmartimages.com/seo/Cortizone-10-Maximum-Strength-1-Hydrocortisone-Sensitive-Skin-Anti-Itch-Cream-2oz_c84f4106-821d-4ca7-b0fe-51d10813a379.24b2df8c33c3bc5ea161a77a04dc7838.jpeg',
+  'Walmart','Steroid anti-itch cream for temporary itching associated with minor skin irritation, insect bites and certain rashes; not a wound dressing.',
+  'Active ingredient: hydrocortisone 1%. Label for ages 2+; children under 2 ask a doctor. If symptoms persist over 7 days or recur, ask a doctor.',
+  'Skin relief',{factsUrl:'https://www.cortizone10.com/en-us/products/creams/sensitive-skin-anti-itch-cream'}),
  make('campho-phenique-liquid','Campho-Phenique','Maximum Strength Antiseptic Liquid','0.75 fl oz',
   'https://www.walmart.com/ip/555883890',
   'https://i5.walmartimages.com/seo/Campho-Phenique-Maximum-Strength-Antiseptic-Liquid-Pain-Relief-Anti-Itch-Treatment-Provides-Instant-Bug-Bites-Minor-Cuts-Skin-Irritations-0-75-Oz_b16c61c8-143e-4f53-8354-391d2ba0788b.16f21fcafa47cb5d066c923a08513e1f.jpeg',
@@ -49,7 +68,8 @@ export function validateEssentialCard(card,{today=new Date().toISOString().slice
   !['Skin relief','First aid'].includes(card.category)||card.kind!=='otc'||
   card.reviewState!=='editorial-reviewed'||card.sponsored!==false||
   card.imageRights!=='not-confirmed-for-paid-ads')return false;
- if(!httpsPublic(card.productUrl)||!httpsPublic(card.imageUrl))return false;
+ if(!httpsPublic(card.productUrl)||!httpsPublic(card.imageUrl)||
+  (card.factsUrl&&!httpsPublic(card.factsUrl)))return false;
  if(!/^\d{4}-\d{2}-\d{2}$/.test(card.checkedAt||'')||!/^\d{4}-\d{2}-\d{2}$/.test(today))return false;
  const checked=Date.parse(card.checkedAt+'T00:00:00Z'),current=Date.parse(today+'T00:00:00Z');
  return Number.isFinite(checked)&&Number.isFinite(current)&&current>=checked&&current-checked<=90*86400000;

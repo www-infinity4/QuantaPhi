@@ -5,9 +5,9 @@ source_requests:
   - https://github.com/www-infinity4/QuantaPhi/issues/1315
 state: implementing
 dot: "🔴"
-progress_percent: 18
+progress_percent: 24
 progress_basis: "Issue scoped, no independently accepted product, partner grant, payout or email send; Explainable in-app ranking, sponsor disclosure, consented metrics and zero unrelated wallet mutation"
-sessions_spent: 3
+sessions_spent: 4
 sessions_remaining_estimate: unknown
 agent: "ChatGPT issue scoping, no coordinator lease"
 lease_id: null
@@ -15,15 +15,15 @@ lease_expires_at: null
 task_session_id: null
 fence: null
 repo: www-infinity4/QuantaPhi
-branch: feat/otc-blue-star-neosporin-carousel-20261107
-head_sha: null
-pr: null
-tests: []
+branch: feat/media-star-fred-launcher-otc-featured-20261107
+head_sha: pending-final-checkpoint
+pr: 1820
+tests: [test/essentials-live-cards.test.mjs, test/essentials-companion-cards.test.mjs, test/essentials-cards.browser.spec.mjs]
 merged: false
 deployed: false
 live_verified: false
 blocker: "External provider qualification and/or account-specific delegated permissions not yet verified"
-next_action: "Verify exact-head interactive card CI and responsive browser, then review/merge minimal OTC card PR and confirm live Oracle deep links"
+next_action: "Check exact-head PR #1820 interactive-card CI and Android-width source links, then review merge/deploy eligibility; do not claim live until readback"
 ---
 
 # TICKET-1315: QuantaPhi Quant feed/ads and privacy
@@ -60,3 +60,11 @@ Explainable in-app ranking, sponsor disclosure, consented metrics and zero unrel
 
 ## Session receipt
 GitHub issue created during the owner-request scoping session; checkpoint staged in a documentation-only branch. No real implementation, provider consent, commercial payout or outside send has occurred.
+
+## November 7, 2026 · Owner accepted three companion Quick Card suggestions
+- Added Aquaphor Healing Ointment 1.75 oz, BAND-AID Hydro Seal All-Purpose 10 ct, Cortizone-10 Maximum Strength Sensitive Skin 2 oz as three distinct original Oracle entries (8 reviewed static seeds total).
+- Reviewed source links and package images from Walmart, Kroger/HealthWarehouse, and manufacturer labeling. Source ledger: `docs/MEDICINE-CABINET-EDITORIAL-SOURCES.md`.
+- Additional one-tap buttons are beneath the owner-featured Blue Star and Neosporin pair; no duplicates, prices, sponsored rankings, or medical tracking.
+- All three cards have distinct directions / drug-facts descriptions and manufacturer URLs, existing on-card Share/Collect/Follow/Build and mobile image fallback.
+- TDD: added failing new-card assertions before the new records (all three IDs absent from source); expanded Node and mobile browser CI. Exact-head CI and actual Android acceptance pending. No live deploy, paid ad rights or partner authorization claimed.
+- Preserved original #1315 privacy/ads goals; eight cards do not complete the full 50-state/promotional/ranking backlog.

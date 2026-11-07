@@ -24,9 +24,9 @@ test('Neosporin Original 1 oz is its own first-aid card, not incorrectly sold as
 });
 test('both products and companion OTC essentials are eligible for reviewed card creation',()=>{
  const {cards,held}=prepareEssentialsBatch(ESSENTIALS_SEED,{today:'2026-11-07'});
- assert.equal(cards.length,5);
+ assert.equal(cards.length,8);
  assert.deepEqual(held,[]);
- assert.equal(new Set(cards.map(c=>c.id)).size,5);
+ assert.equal(new Set(cards.map(c=>c.id)).size,cards.length);
  assert.ok(cards.every(c=>!c.price&&!c.stock&&!c.trendingScore&&!c.sponsorClaim));
 });
 test('up to 120 reviewed records can be prepared without guessing any extra products',()=>{
@@ -43,8 +43,9 @@ test('review holds invalid, expired, duplicate and sponsored offers',()=>{
   {...c,id:'stale',checkedAt:'2020-01-01'},
   {...c,id:'unreviewed',reviewState:'pending'},
   {...c,id:'insecure',imageUrl:'http://example.com/fake.jpg'},
-  {...c,id:'unsanctioned-ad',sponsored:true}],{today:'2026-11-07'});
- assert.equal(cards.length,1);assert.equal(held.length,5);
+  {...c,id:'unsanctioned-ad',sponsored:true},
+  {...c,id:'bad-drug-facts-url',factsUrl:'javascript:alert(1)'}],{today:'2026-11-07'});
+ assert.equal(cards.length,1);assert.equal(held.length,6);
 });
 test('homepage directly spotlights both ORIGINAL cards inside Oracle and never launches a duplicate carousel',()=>{
  const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');

@@ -1,6 +1,6 @@
 /* Source-backed, on-card essentials discovery. No paid endorsements, invented
  * price/stock, medical targeting, automatic checkout, or feed scraping. */
-import {ESSENTIALS_SEED,prepareEssentialsBatch} from './essentials-card-batch.mjs';
+import {ESSENTIALS_SEED,prepareEssentialsBatch} from './essentials-card-batch.mjs?v=20261107-otc-eight1';
 import {mountCardActions} from './quanta-card-actions.mjs';
 const el=(tag,cls,text)=>{const node=document.createElement(tag);if(cls)node.className=cls;if(text!==undefined)node.textContent=text;return node};
 const href=(label,url,cls)=>{const node=el('a',cls,label);node.href=url;node.target='_blank';node.rel='noopener noreferrer';return node};
@@ -22,8 +22,10 @@ export function createEssentialQuickCard(card){
  info.append(el('p','qec-kind','Original retail listing · '+card.size),el('h2','qec-title',card.brand+' · '+card.name),
   el('p','qec-description',card.description));
  if(card.drugFacts)info.append(el('p','qec-facts',card.drugFacts));
+ if(card.factsUrl)info.append(href('Official product facts and directions',card.factsUrl,'qec-facts-source'));
  info.append(href('View exact item at '+card.sourceName,card.productUrl,'qec-shop'));
- info.append(el('p','qec-note','Independent editorial card, not a sponsored advertisement. No live stock or price guarantee. Read the original Drug Facts label before use.'));
+ info.append(el('p','qec-note','Independent editorial card, not a sponsored advertisement. No live stock or price guarantee. Read the original package directions and any applicable Drug Facts before use.'));
+ info.append(el('small','qec-photo-credit',card.imageCredit+' · photo rights not confirmed for paid advertising.'));
  const actions=el('div','qec-actions');mountCardActions(actions,{
   id:card.id,name:card.brand+' · '+card.name,category:card.category,
   featureUrl:card.productUrl,official:card.productUrl,
@@ -35,7 +37,7 @@ async function reviewedCatalog(){
  try{
   const response=await fetch('/data/essentials-reviewed.json',{cache:'no-store',credentials:'same-origin'});
   if(response.ok){const items=await response.json();if(Array.isArray(items)&&items.length)return items;}
- }catch{} // Fallback only to the four independently curated seeds.
+ }catch{} // Use the source-reviewed seeds when no separately validated import is published.
  return ESSENTIALS_SEED;
 }
 export async function mountEssentialsQuickCards(){
