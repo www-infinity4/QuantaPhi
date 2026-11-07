@@ -41,6 +41,13 @@ CREATE TABLE IF NOT EXISTS gitcoin_receipts (
   saved_utc TEXT NOT NULL
 );
 CREATE INDEX IF NOT EXISTS idx_gits_repo ON gitcoin_receipts(repo,commit_sha);
+CREATE TABLE IF NOT EXISTS gitcoin_verified_collectors (
+  receipt_id TEXT PRIMARY KEY REFERENCES gitcoin_receipts(receipt_id),
+  github_login TEXT NOT NULL,
+  source TEXT NOT NULL CHECK(source='gh_authenticated_user'),
+  verified_utc TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_gitcoin_verified_collector ON gitcoin_verified_collectors(github_login);
 '''
 
 
@@ -106,10 +113,14 @@ def open_db(db_path):
     return con
 
 
-def save_manifest(db_path, manifest, remote_check='not_checked'):
+def save_manifest(db_path, manifest, remote_check='not_checked', authenticated_collector=None):
     validate_manifest(manifest)
     if remote_check not in REMOTE_CHECKS:
         fail('invalid_remote_check')
+    if authenticated_collector is not None and (
+            not isinstance(authenticated_collector, str)
+            or not re.fullmatch(r'[A-Za-z0-9-]{1,39}', authenticated_collector)):
+        fail('invalid_authenticated_github_login')
     new = 0
     duplicates = 0
     now = datetime.now(timezone.utc).isoformat()
@@ -125,7 +136,34 @@ def save_manifest(db_path, manifest, remote_check='not_checked'):
                'pending_review' if row['eligible'] else 'excluded', remote_check, now))
             new += int(result.rowcount == 1)
             duplicates += int(result.rowcount == 0)
+            if authenticated_collector is not None:
+                # This is the signed-in GH collector, not proof of code authorship.
+                previous = con.execute(
+                    'SELECT github_login FROM gitcoin_verified_collectors WHERE receipt_id=?',
+                    (row['id'],)).fetchone()
+                if previous and previous[0].casefold() != authenticated_collector.casefold():
+                    fail('collector_identity_conflict')
+                con.execute('''INSERT OR IGNORE INTO gitcoin_verified_collectors
+                  (receipt_id,github_login,source,verified_utc) VALUES(?,?,'gh_authenticated_user',?)''',
+                  (row['id'], authenticated_collector, now))
     return new, duplicates
+
+
+def list_receipts(db_path, limit=50):
+    """Private local audit list. References are NOT minted global coin serials."""
+    if not isinstance(limit, int) or not 1 <= limit <= 200:
+        fail('invalid_receipt_limit')
+    if not Path(db_path).expanduser().exists():
+        return []
+    with open_db(db_path) as con:
+        rows = con.execute('''SELECT r.receipt_id,r.repo,r.commit_sha,r.path,r.line_number,
+          r.status,r.remote_check,c.github_login
+          FROM gitcoin_receipts r LEFT JOIN gitcoin_verified_collectors c
+          ON c.receipt_id=r.receipt_id ORDER BY r.rowid DESC LIMIT ?''', (limit,)).fetchall()
+    return [{'receipt_reference': 'GIT-P-' + rid, 'coin_status': 'provisional_not_minted',
+             'repo': repo, 'commit': commit, 'path': path, 'line_number': n, 'review_status': status,
+             'remote_check': remote, 'verified_collector': login}
+            for rid,repo,commit,path,n,status,remote,login in rows]
 
 
 def balance(db_path):
@@ -172,12 +210,16 @@ def scan(args):
         fail('gh_gitcoin_collector_not_installed')
     command = ['node', str(script), 'scan', '--repo', args.repo, '--intent', args.intent,
                '--builder', args.builder, '--commit', commit]
-    if args.github_login:
-        command += ['--github-login', args.github_login]
+    authenticated_login = invoke(['gh', 'api', 'user', '--jq', '.login'], cwd=worktree)
+    if not re.fullmatch(r'[A-Za-z0-9-]{1,39}', authenticated_login):
+        fail('github_authenticated_login_unavailable')
+    if args.github_login and args.github_login.casefold() != authenticated_login.casefold():
+        fail('github_authenticated_login_mismatch')
+    command += ['--github-login', authenticated_login]
     manifest = json.loads(invoke(command, cwd=worktree))
     if manifest['repo'] != args.repo or manifest['commit'] != commit:
         fail('unexpected_scan_provenance')
-    inserted, duplicate = save_manifest(args.db, manifest, 'github_commit_found')
+    inserted, duplicate = save_manifest(args.db, manifest, 'github_commit_found', authenticated_collector=authenticated_login)
     return {'remote_commit_found': True, 'added_receipts': inserted, 'duplicates': duplicate,
             **balance(args.db)}
 
@@ -194,9 +236,11 @@ def main():
     c.add_argument('--github-login')
     c.add_argument('--commit')
     cmds.add_parser('balance', help='Display pending local receipts, not spendable coins')
+    cmds.add_parser('receipts', help='List serialized provisional references and verified GH collector')
     args = p.parse_args()
     try:
-        result = scan(args) if args.command == 'scan' else balance(args.db)
+        result = (scan(args) if args.command == 'scan' else
+                  list_receipts(args.db) if args.command == 'receipts' else balance(args.db))
         print(json.dumps(result, indent=2))
     except (ValueError, subprocess.CalledProcessError, subprocess.TimeoutExpired, OSError, json.JSONDecodeError) as exc:
         print('gitcoin-local: ' + str(exc), file=sys.stderr)

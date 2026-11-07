@@ -84,6 +84,25 @@ class LocalLedgerTests(unittest.TestCase):
             proof = con.execute('select distinct remote_check from gitcoin_receipts').fetchall()
         self.assertEqual(proof, [('not_checked',)])
 
+    def test_local_serial_reference_and_authenticated_collector_are_bound_to_receipt(self):
+        m = manifest()
+        self.assertEqual(ledger.save_manifest(self.db, m, 'github_commit_found', authenticated_collector='test-user'), (2, 0))
+        found = ledger.list_receipts(self.db)
+        self.assertEqual(len(found), 2)
+        self.assertEqual({x['receipt_reference'] for x in found}, {'GIT-P-' + x['id'] for x in m['lines']})
+        self.assertEqual(found[0]['verified_collector'], 'test-user')
+        self.assertEqual(found[0]['coin_status'], 'provisional_not_minted')
+        self.assertEqual(ledger.save_manifest(self.db, m, 'github_commit_found', authenticated_collector='test-user'), (0, 2))
+        with self.assertRaisesRegex(ValueError, 'collector_identity_conflict'):
+            ledger.save_manifest(self.db, m, 'github_commit_found', authenticated_collector='different-user')
+        self.assertEqual(ledger.balance(self.db)['total_records'], 2)
+
+    def test_receipts_without_authenticated_github_identity_remain_unverified(self):
+        m = manifest()
+        ledger.save_manifest(self.db, m)
+        self.assertIsNone(ledger.list_receipts(self.db)[0]['verified_collector'])
+        self.assertEqual(ledger.balance(self.db)['settled_gits'], 0)
+
     def test_repo_urls_are_not_arbitrarily_trusted(self):
         self.assertTrue(ledger.remote_matches('git@github.com:www-infinity4/Moltnook.git', 'www-infinity4/Moltnook'))
         self.assertTrue(ledger.remote_matches('https://github.com/www-infinity4/Moltnook.git', 'www-infinity4/Moltnook'))

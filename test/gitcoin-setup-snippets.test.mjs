@@ -15,6 +15,7 @@ test("termux script scans the user's own repo into an unminted local ledger",()=
  assert.match(cmd,/\-\-repo owner\/repo/);
  assert.match(cmd,/termux-ledger\.py["'] scan/);
  assert.match(cmd,/termux-ledger\.py["'] balance/);
+ assert.match(cmd,/termux-ledger\.py["'] receipts/);
  assert.match(cmd,/gitcoin-workspaces\/owner\/repo/);
  assert.doesNotMatch(cmd,/gh auth login.*--with-token/);
  assert.doesNotMatch(cmd,/mint\(|settle\(|wallet.*credit/i);
@@ -24,6 +25,7 @@ test('copy-for-AI prompt links to real source without claiming secret credential
  assert.match(prompt,/owner\/repo/);
  assert.match(prompt,/gitcoin\/TERMUX\.md/);
  assert.match(prompt,/Quant AI/);
+ assert.match(prompt,/GIT-P-/);
  assert.match(prompt,/local SQLite/);
  assert.match(prompt,/do not (?:claim|mint|issue)/i);
  assert.match(prompt,/Bubbles Bits/);

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>GIT Coin · QuantaPhi</title>
-<meta name="description" content="Collect traceable GIT code-line candidates from your own GitHub contributions with a private Termux SQLite ledger.">
+<meta name="description" content="Create user-attributed, serialized pending GIT receipts in Termux. Verified global GIT serials require server wallet settlement.">
 <style>
 :root{font:17px/1.58 system-ui,-apple-system,Roboto,sans-serif;letter-spacing:.18px;color:#e6e2dc;background:#151c25}*{box-sizing:border-box}
 body{max-width:840px;margin:auto;padding:22px 16px 70px}header{display:flex;align-items:center;justify-content:space-between;gap:18px}
@@ -21,8 +21,8 @@ small{color:#c6cbd1}.rail{display:grid;grid-template-columns:repeat(auto-fit,min
 <main>
 <section aria-labelledby="title"><span class="tag">Source-backed programming assets · pilot</span>
 <h1 id="title">GIT Coin</h1>
-<p>Build code. Push a commit to your personal GitHub repository. Collect a unique, traceable local receipt for each newly added line. Quant AI's separate review will decide which candidates eventually qualify for awards.</p>
-<div class="rail"><div class="item"><strong>Code line</strong><small>Repo, commit, file, line and hash</small></div><div class="item"><strong>Local database</strong><small>Private SQLite receipts</small></div><div class="item"><strong>Credit status</strong><small>Pending, not spendable or cash</small></div></div>
+<p>Build code. Push a commit to your personal GitHub repository. Collect a unique, traceable local receipt for each added line, tied to the GitHub identity authenticated in Termux. Pending local references are not spendable or cash. After accepted work, independent verification and authorized settlement, one authoritative shared ledger will assign a unique GIT serial.</p>
+<div class="rail"><div class="item"><strong>Pending serial</strong><small>GIT-P- plus receipt hash</small></div><div class="item"><strong>Collector identity</strong><small>Authenticated GitHub login, private SQLite</small></div><div class="item"><strong>Global award</strong><small>GIT-000000000001 after server settlement only</small></div></div>
 </section>
 <section aria-labelledby="termux" data-gitcoin-root><h2 id="termux">Collect with Termux or an AI assistant</h2>
 <p>Enter your own GitHub repository. Copy the commands into Android Termux, or give the setup instructions to an AI assistant you choose. Your repository must already have pushed commits.</p>
@@ -32,12 +32,12 @@ small{color:#c6cbd1}.rail{display:grid;grid-template-columns:repeat(auto-fit,min
 <button id="copySetup" data-gitcoin-copy="termux" type="button">Copy Termux commands</button>
 <button id="copyAi" data-gitcoin-copy="ai" type="button">Copy for AI</button>
 <small id="copyStatus" data-gitcoin-status role="status" aria-live="polite">Pending local receipts only; no wallet credits issued.</small>
-<p><a href="https://github.com/www-infinity4/QuantaPhi/blob/feat/gitcoin-termux-sqlite-20261104/gitcoin/termux-ledger.py">Inspect the actual collector source: termux-ledger.py</a></p>
-<p>Requires <code>git</code>, <code>gh</code>, <code>node</code> and <code>python3</code>, with <code>gh auth login</code> completed by you. No npm or paid API. Database: <code>~/.quantaphi/gitcoin/receipts.sqlite3</code>.</p>
+<p><a href="https://github.com/www-infinity4/QuantaPhi/blob/feat/gitcoin-termux-serial-card-20261107/gitcoin/termux-ledger.py">Inspect the actual collector source: termux-ledger.py</a></p>
+<p>Requires <code>git</code>, <code>gh</code>, <code>node</code> and <code>python3</code>, with <code>gh auth login</code> completed by you. No npm or paid API. Run <code>receipts</code> to see pending serialized references and the authenticated collector. Database: <code>~/.quantaphi/gitcoin/receipts.sqlite3</code>.</p>
 </section>
 <section aria-labelledby="agent"><h2 id="agent">Bubbles and GPT developer receipts</h2>
-<p>Bubbles may create pending GIT claims for eligible code that it genuinely commits for a consenting user, with a signed task receipt and an explicitly approved owner/operator beneficiary. GPT or another agent is attributed separately. No third-party AI provider participates in or accepts GIT automatically.</p>
-<p><strong>Bubble Bits</strong> are the separate QuantaPhi/Bubbles work-iteration system. <strong>GPT Coin</strong> is a distinct optional provider-issued system: a user can propose or create their own similar record, but it is not an official GPT-issued coin. No provider-issued GPT Coin or integration is currently verified.</p>
+<p>For customer-approved code created through Bubbles, each eligible verified new source line can earn 1 GIT for the verified Bubbles owner/executor wallet. The ledger records the requesting customer separately from the recipient and issues a unique global serial per award. Signed jobs, GitHub commit and CI proof, customer acceptance and independent Quant AI review are all required. GPT or another agent is attributed separately. No third-party AI provider participates in or accepts GIT automatically.</p>
+<p><strong>No automatic wallet payment is live in this pilot.</strong> <strong>Bubble Bits</strong> are the separate QuantaPhi/Bubbles work-iteration system. <strong>GPT Coin</strong> is a distinct optional provider-issued system: a user can propose or create their own similar record, but it is not an official GPT-issued coin. No provider-issued GPT Coin or integration is currently verified.</p>
 </section>
 <section aria-labelledby="trade"><h2 id="trade">Business marketplace — proposed</h2>
 <p>Businesses could someday license useful code, purchase approved GIT units, or accept units for eligible services under signed agreements. These transactions require a real buyer, lawful reuse rights and tested wallet transfers. IBM and other technology companies have not been verified as accepting this GIT Coin.</p>

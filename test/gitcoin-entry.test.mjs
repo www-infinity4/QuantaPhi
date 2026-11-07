@@ -9,6 +9,8 @@ test('GIT Coin entry page gives a real Termux command and explicit pending credi
  assert.match(html,/receipts\.sqlite3/);
  assert.match(html,/not (?:spendable|cash)/i);
  assert.match(html,/personal.*GitHub.*repository/i);
+ assert.match(html,/GIT-P-/);
+ assert.match(html,/GIT-000000000001/);
  assert.match(html,/copySetup/);
  assert.doesNotMatch(html,/\bIBM accepts GIT\b/);
 });
