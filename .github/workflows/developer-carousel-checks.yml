@@ -5,6 +5,11 @@ on:
       - 'developer-carousel-core.mjs'
       - 'developer-carousel.mjs'
       - 'developer-carousel.css'
+      - 'quick-card-builder.html'
+      - 'quick-card-builder.js'
+      - 'quick-card-one-link.mjs'
+      - 'test/quick-card-one-link.test.mjs'
+      - 'test/quick-card-one-link.browser.spec.mjs'
       - 'oracle-card-deck.js'
       - 'index.html'
       - 'tests/developer-carousel.test.mjs'
@@ -17,6 +22,11 @@ on:
       - 'developer-carousel-core.mjs'
       - 'developer-carousel.mjs'
       - 'developer-carousel.css'
+      - 'quick-card-builder.html'
+      - 'quick-card-builder.js'
+      - 'quick-card-one-link.mjs'
+      - 'test/quick-card-one-link.test.mjs'
+      - 'test/quick-card-one-link.browser.spec.mjs'
       - 'oracle-card-deck.js'
       - 'index.html'
       - 'tests/developer-carousel.test.mjs'
@@ -38,7 +48,7 @@ jobs:
           node --check developer-carousel-core.mjs
           node --check developer-carousel.mjs
           node --check oracle-card-deck.js
-          node --test tests/developer-carousel.test.mjs
+          node --test tests/developer-carousel.test.mjs test/quick-card-one-link.test.mjs
   developer-browser:
     runs-on: ubuntu-latest
     steps:
@@ -53,4 +63,4 @@ jobs:
       - name: Exercise actual builder cards on Android widths in Chromium
         run: |
           python3 -m http.server 8799 --bind 127.0.0.1 >/tmp/developer-carousel-http.log 2>&1 &
-          npx playwright test test/developer-carousel.browser.spec.mjs test/infinity-affiliates.browser.spec.mjs --reporter=line --workers=1
+          npx playwright test test/developer-carousel.browser.spec.mjs test/quick-card-one-link.browser.spec.mjs test/infinity-affiliates.browser.spec.mjs --reporter=line --workers=1
