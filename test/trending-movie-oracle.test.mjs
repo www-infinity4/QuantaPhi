@@ -50,7 +50,7 @@ test('each trend movie is a native independent Oracle card with in-place stop an
 });
 test('scheduled importer uses verified Google RSS, actual trailer publisher feeds, and no fake fill',()=>{
  const sync=read('scripts/sync_trending_movies.py'),workflow=read('.github/workflows/trending-movies-sync.yml');
- assert.match(sync,/google-trends-latest\.json/);
+ assert.match(workflow,/google-trends-latest\.json/);
  assert.match(sync,/youtube\.com\/feeds\/videos\.xml/);
  assert.match(sync,/trend_query/);
  assert.match(sync,/no Google match|new trailer/i);
