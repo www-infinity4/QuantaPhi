@@ -8,6 +8,8 @@ on:
       - 'oracle-card-deck.js'
       - 'index.html'
       - 'tests/developer-carousel.test.mjs'
+      - 'test/developer-carousel.browser.spec.mjs'
+      - 'test/infinity-affiliates.browser.spec.mjs'
       - '.github/workflows/developer-carousel-checks.yml'
   push:
     branches: [main]
@@ -18,6 +20,8 @@ on:
       - 'oracle-card-deck.js'
       - 'index.html'
       - 'tests/developer-carousel.test.mjs'
+      - 'test/developer-carousel.browser.spec.mjs'
+      - 'test/infinity-affiliates.browser.spec.mjs'
       - '.github/workflows/developer-carousel-checks.yml'
 permissions:
   contents: read
@@ -35,3 +39,18 @@ jobs:
           node --check developer-carousel.mjs
           node --check oracle-card-deck.js
           node --test tests/developer-carousel.test.mjs
+  developer-browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser test dependencies
+        run: |
+          npm install --no-save @playwright/test@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Exercise actual builder cards on Android widths in Chromium
+        run: |
+          python3 -m http.server 8799 --bind 127.0.0.1 >/tmp/developer-carousel-http.log 2>&1 &
+          npx playwright test test/developer-carousel.browser.spec.mjs test/infinity-affiliates.browser.spec.mjs --reporter=line --workers=1
