@@ -251,6 +251,15 @@ function xtPosts(payload){
    metrics:post.public_metrics||null,source:'x_api_verified'};
  });
 }
+async function xtSinglePost(env,owner,url){
+ const id=String(url.searchParams.get('id')||'');
+ if(!xtId(id))throw xoErr('invalid_post_id',400);
+ const token=await xoOwnerToken(env,owner);
+ const payload=await xtFetch(token,'https://api.x.com/2/tweets/'+id+'?'+XT_FIELDS);
+ const post=xtPosts({data:payload.data?[payload.data]:[],includes:payload.includes})[0];
+ if(!post)throw xoErr('x_post_not_available',404);
+ return {post,source:'x_api_verified',fetchedAt:new Date().toISOString()};
+}
 async function xtTimeline(env,owner,url){
  const mode=url.searchParams.get('feed')||'following';
  if(!['public','following'].includes(mode))throw xoErr('invalid_feed',400);
@@ -355,7 +364,8 @@ async function handle(request,env){
   const owner=await account(request,env);
   if(path==='/v1/x/oauth/start'&&request.method==='POST'){const body=await request.json().catch(()=>({}));return out(await xoBegin(env,owner,{write:body?.write===true}));}
   if(path==='/v1/x/oauth/disconnect'&&request.method==='POST')return out(await xoDisconnect(env,owner,(await request.json().catch(()=>({}))).confirmation));
-  if(path==='/v1/x/timeline'&&request.method==='GET')return out(await xtTimeline(env,owner,url));
+  if(path==='/v1/x/post'&&request.method==='GET')return out(await xtSinglePost(env,owner,url));
+   if(path==='/v1/x/timeline'&&request.method==='GET')return out(await xtTimeline(env,owner,url));
   if(path==='/v1/x/spaces/live'&&request.method==='GET')return out(await xtLiveSpaces(env,owner,url));
   if(path==='/v1/x/profile'&&request.method==='GET')return out(await xtProfile(env,owner));
   if(path==='/v1/x/archive'&&request.method==='GET')return out(await xtArchive(env,owner));
