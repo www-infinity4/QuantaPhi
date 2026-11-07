@@ -18,7 +18,7 @@ test('classic rock retains the same Quick Card and has a genuine visible artist 
  assert.ok(html().includes('id="classicRockOfficialMusicCard"'));
  assert.ok(s.includes("const frame=node('iframe'"));
  assert.ok(s.includes('frame.src='));
- assert.ok(s.includes('band.videoId'));
+ assert.ok(s.includes('track.videoId'));
  assert.ok(s.includes('renderOffers(band);start(band)'));
  assert.ok(s.includes('min-height:210px'));
  assert.ok(s.includes('referrerPolicy'));
