@@ -31,9 +31,9 @@
    '#steveMillerBookOfDreamsCard .smb-cover{width:86px;height:86px;border-radius:12px;object-fit:cover;background:#172830;flex:none;}',
    '#steveMillerBookOfDreamsCard h2{margin:0 0 4px;font-size:21px;line-height:1.3;color:#203b45;}',
    '#steveMillerBookOfDreamsCard .smb-sub{font-size:14px;line-height:1.5;color:#536e74;margin:0;}',
-   '#steveMillerBookOfDreamsCard .smb-radio{display:flex;align-items:center;gap:12px;padding:14px 0 6px;}',
+   '#steveMillerBookOfDreamsCard .smb-radio{display:flex;align-items:center;gap:12px;margin:9px 0 12px;padding:10px 12px;border:1px solid #9fcecc;border-radius:16px;background:linear-gradient(115deg,#e8faf7,#fff);box-shadow:0 4px 15px #184e4d12;}',
    '#steveMillerBookOfDreamsCard .smb-radio-play{display:grid;place-items:center;flex:none;width:48px;height:48px;border:0;border-radius:50%;background:#136a76;color:#fff;font-size:22px;cursor:pointer;}',
-   '#steveMillerBookOfDreamsCard .smb-radio-next{display:grid;place-items:center;flex:none;width:42px;height:42px;border:1px solid #a3c9c8;border-radius:50%;background:#fff;color:#136a76;font-size:17px;cursor:pointer;}',
+   '#steveMillerBookOfDreamsCard .smb-radio-next{display:grid;place-items:center;flex:none;min-width:44px;min-height:44px;border:1px solid #b5d6d7;border-radius:10px;background:#fff;color:#155164;font-size:18px;cursor:pointer;}',
    '#steveMillerBookOfDreamsCard .smb-radio-play:focus-visible,#steveMillerBookOfDreamsCard .smb-radio-next:focus-visible{outline:3px solid #9c5dd6;outline-offset:3px;}',
    '#steveMillerBookOfDreamsCard .smb-radio-name{font-size:16px;line-height:1.4;font-weight:800;}',
    '#steveMillerBookOfDreamsCard .smb-radio-status{font-size:13px;line-height:1.45;color:#536e74;overflow-wrap:anywhere;}',
@@ -61,7 +61,7 @@
   button.setAttribute('aria-pressed','false');
   const radioCopy=make('div');
   radioCopy.append(make('strong','smb-radio-name','Steve Miller Radio · Book of Dreams'));
-  const status=make('div','smb-radio-status','Tap Play for the YouTube album playlist.');
+  const status=make('div','smb-radio-status','Tap Play for Steve Miller Radio · official Book of Dreams recordings.');
   status.setAttribute('role','status');
   status.setAttribute('aria-live','polite');
   radioCopy.append(status);
