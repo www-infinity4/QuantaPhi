@@ -10,7 +10,7 @@ test('Blue Star is a source-backed original 2oz ointment, with no fabricated sal
  assert.match(item.drugFacts, /camphor 1\.24%/i);
  assert.equal(item.sponsored, false);
  assert.equal(item.price, undefined);
- assert.equal(validateEssentialCard(item), true);
+ assert.equal(validateEssentialCard(item,{today:'2026-11-07'}), true);
 });
 
 test('pilot includes multiple publishers so a deliberate related follow can rotate publishers', () => {
