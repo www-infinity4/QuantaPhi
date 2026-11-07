@@ -18,6 +18,26 @@ export function normalizeSpaceEntry(source) {
     ? 'replay source-marked; audio not tested'
     : 'playback unverified'};
 }
+export function parseSpaceClipPostId(value){
+ try{
+  const u=new URL(String(value||'').trim());
+  if(u.protocol!=='https:'||!['x.com','www.x.com','twitter.com','www.twitter.com'].includes(u.hostname)||u.username||u.password)return null;
+  const found=u.pathname.match(/^\/[A-Za-z0-9_]{1,15}\/status\/([0-9]{1,22})\/?$/);
+  return found?found[1]:null;
+ }catch{return null}
+}
+let xWidgetsReady=null;
+function loadOfficialXWidgets(){
+ if(window.twttr?.widgets?.createTweet)return Promise.resolve(window.twttr.widgets);
+ if(!xWidgetsReady)xWidgetsReady=new Promise((resolve,reject)=>{
+  const script=document.createElement('script');
+  script.src='https://platform.x.com/widgets.js';script.async=true;
+  script.onload=()=>window.twttr?.widgets?.createTweet?resolve(window.twttr.widgets):reject(Error('X official embed unavailable'));
+  script.onerror=()=>reject(Error('X official embed blocked'));
+  document.head.append(script);
+ }).catch(error=>{xWidgetsReady=null;throw error});
+ return xWidgetsReady;
+}
 export function filterSpaceEntries(entries, search='') {
   const term=String(search||'').trim().toLocaleLowerCase().replace(/^@/,'');
   return (Array.isArray(entries)?entries:[]).filter(x=>
@@ -75,6 +95,11 @@ export function mountXSpacesQuickCard(root){
  urlInput.setAttribute('aria-label','X Space URL to add to this session');
  const addButton=node('button','xqs-button','Add this Space');addButton.type='button';
  append(second,urlInput,addButton);
+ const clipRow=node('div','xqs-bar');
+ const clipInput=node('input','xqs-input');clipInput.type='url';clipInput.placeholder='X post linking to a recording or Space clip';
+ clipInput.setAttribute('aria-label','X post URL containing a Space recording or audio clip');
+ const clipButton=node('button','xqs-button xqs-primary','Listen here to shared X clip');clipButton.type='button';
+ append(clipRow,clipInput,clipButton);
  const status=node('p','xqs-status','Ready · select Find live Spaces, load your indexed library or paste a genuine source link.');
  status.setAttribute('role','status');status.setAttribute('aria-live','polite');
  const deck=node('div','xqs-deck');
@@ -85,7 +110,7 @@ export function mountXSpacesQuickCard(root){
  append(nav,prev,count,next);
  const note=node('p','xqs-note',
   'X controls live Spaces audio. A Space URL does not include an authorized live stream for QuantaPhi. This card shows genuine rooms and only enables local listening when an embeddable source is available.');
- append(section,first,second,status,deck,nav,listening,note);
+ append(section,first,second,clipRow,status,deck,nav,listening,note);
  root.replaceChildren(section);
  // Session-only links: do not expose followed-account data across visitors or record user browsing.
  let fromIndex=[],fromLive=[],sessionOnly=[],position=0,searchTerm='',pending=false;
@@ -115,6 +140,23 @@ export function mountXSpacesQuickCard(root){
   append(card,node('h3','',chosen.title),source,inline,playback,open);
   deck.append(card);
  }
+ clipButton.addEventListener('click',async()=>{
+  const id=parseSpaceClipPostId(clipInput.value);
+  if(!id){status.textContent='Paste an X post URL that shares a Space recording or audio clip.';return}
+  clipButton.disabled=true;
+  listening.replaceChildren(node('p','xqs-note','Loading the official X post widget inside this card…'));
+  status.textContent='An embedded X post can play only audio that its publisher makes available.';
+  try{
+   const widgets=await loadOfficialXWidgets();
+   listening.replaceChildren();
+   const result=await widgets.createTweet(id,listening,{conversation:'none',theme:'light',align:'center'});
+   if(!result)throw Error('X did not return an embeddable post');
+   status.textContent='Official X post embedded here. If the publisher included audio, play it inside this card; not all X posts or Spaces include playable audio.';
+  }catch(e){
+   listening.replaceChildren(node('p','xqs-note','X did not provide an embeddable recording. Playback on this site is not available for this post.'));
+   status.textContent='The official post embed could not load ('+String(e?.message||e)+'). No audio was faked.';
+  }finally{clipButton.disabled=false}
+ });
  search.addEventListener('input',()=>{searchTerm=search.value;position=0;redraw()});
  prev.addEventListener('click',()=>{if(position>0)position--;redraw()});
  next.addEventListener('click',()=>{if(position<distinct().length-1)position++;redraw()});
