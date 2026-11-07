@@ -3,9 +3,219 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-07T07:01:14.476243Z",
+  "checked_at": "2026-11-07T07:31:32.650984Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "zelda ocarina of time remake walkthrough",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T07:10:00Z",
+      "related_news_urls": [
+        "https://www.ign.com/wikis/ocarina-of-time-remake/Dodongo_Cavern_Dungeon_Walkthrough",
+        "https://www.polygon.com/zelda-ocarina-of-time-remake-oot-forest-temple-walkthrough/",
+        "https://games.gg/the-legend-of-zelda-ocarina-of-time-2026/guides/ocarina-of-time-remake-dungeons-full-list-order-and-what-changed/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQHYaredpO73euYsqahBpHewGsi_kI-927XNKNDMnXmVfsy7bPFj-8GCZzw2k",
+      "image_credit": "IGN",
+      "news": [
+        {
+          "url": "https://www.ign.com/wikis/ocarina-of-time-remake/Dodongo_Cavern_Dungeon_Walkthrough",
+          "title": "Dodongo Cavern Dungeon Walkthrough",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQHYaredpO73euYsqahBpHewGsi_kI-927XNKNDMnXmVfsy7bPFj-8GCZzw2k"
+        },
+        {
+          "url": "https://www.polygon.com/zelda-ocarina-of-time-remake-oot-forest-temple-walkthrough/",
+          "title": "Forest Temple walkthrough in Zelda Ocarina of Time",
+          "publisher": "Polygon.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRoCd9mK_-FkW7UEQkRJK1zOktMzTObJ6csstd2PX6_MK4GdJ30_6WnUD4Bhg"
+        },
+        {
+          "url": "https://games.gg/the-legend-of-zelda-ocarina-of-time-2026/guides/ocarina-of-time-remake-dungeons-full-list-order-and-what-changed/",
+          "title": "Ocarina of Time Remake Dungeons: Full List, Order and What Changed",
+          "publisher": "games.gg",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrwrLgQg1m2m3blocnrJ7sQeDXXm-yFRWbJnCjq1BBA3bGrFhkEqbcAmI7UnY"
+        }
+      ]
+    },
+    {
+      "query": "ethan hawke",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T07:10:00Z",
+      "related_news_urls": [
+        "https://people.com/ethan-hawke-says-daughter-maya-hawkes-wedding-was-greatest-day-of-my-life-12239791",
+        "https://www.broadwayworld.com/bwwtv/article/Ethan-Hawke-on-Maya-Hawkes-Wedding-and-Training-Day-with-Denzel-20261106",
+        "https://www.instyle.com/ethan-hawke-reveals-new-details-daughter-maya-hawke-wedding-12240851"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQePhTeCcv8ONHMf8-f9XCSmT3SajFZbVR-LB39kOJpSbx_gmJU_U9svgNJQvo",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/ethan-hawke-says-daughter-maya-hawkes-wedding-was-greatest-day-of-my-life-12239791",
+          "title": "Ethan Hawke Says Daughter Maya’s Wedding Was ‘the Greatest Day of My Life’",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQePhTeCcv8ONHMf8-f9XCSmT3SajFZbVR-LB39kOJpSbx_gmJU_U9svgNJQvo"
+        },
+        {
+          "url": "https://www.broadwayworld.com/bwwtv/article/Ethan-Hawke-on-Maya-Hawkes-Wedding-and-Training-Day-with-Denzel-20261106",
+          "title": "Ethan Hawke on Maya Hawke's Wedding and Training Day with Denzel",
+          "publisher": "BroadwayWorld",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTY-GTO8nDU_xR8voQaoxG9WglWlMdM2tUjQemUgB8MQLqh_g1ucQIWAu3bXAc"
+        },
+        {
+          "url": "https://www.instyle.com/ethan-hawke-reveals-new-details-daughter-maya-hawke-wedding-12240851",
+          "title": "Ethan Hawke Reveals New Details About Daughter Maya’s “Incredible” Wedding",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQHoamlABprBR9WuHiIQvn1H00hRYuRb0CT72m7Xkva4o7FO5xH6vI9p4rintY"
+        }
+      ]
+    },
+    {
+      "query": "blake griffin",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T07:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/blake-griffin-frustrated-paying-more-143540205.html",
+        "https://www.aol.com/articles/know-bad-something-blake-griffin-232315000.html",
+        "https://www.the-sun.com/money/17263669/blake-griffin-pays-above-nba-prices-watch-son-play/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRV4s-N6tx37H1QXoGres7Rp79LwlzuPVwbxLyMGxx829JZoRCRFDIgw7pzwLE",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/blake-griffin-frustrated-paying-more-143540205.html",
+          "title": "Blake Griffin frustrated after paying more than NBA tickets to watch his son play",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRV4s-N6tx37H1QXoGres7Rp79LwlzuPVwbxLyMGxx829JZoRCRFDIgw7pzwLE"
+        },
+        {
+          "url": "https://www.aol.com/articles/know-bad-something-blake-griffin-232315000.html",
+          "title": "“Do You Know How Bad Something Has to Be”: Blake Griffin Takes Hilarious Dig at LeBron James",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6FsccojEqGB4x5lPbNFm5tWoCNKOK4kLKe0_8iG7lSebLk1VMK3KY0afh3b4"
+        },
+        {
+          "url": "https://www.the-sun.com/money/17263669/blake-griffin-pays-above-nba-prices-watch-son-play/",
+          "title": "Blake Griffin slams outrageous cost of youth sports after spending MORE than NBA prices just to watch son play",
+          "publisher": "The Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSeBhG3jiIF16mUXOeYCdgJABaSFV82Kl7-wZXbkwtKMcFJ3Q-TC75A_CmFPI"
+        }
+      ]
+    },
+    {
+      "query": "osaa football playoffs",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T07:00:00Z",
+      "related_news_urls": [
+        "https://www.oregonlive.com/highschoolsports/2026/11/friday-night-spotlight-oregon-high-school-football-state-tournament-live-scores-schedule-links.html",
+        "https://sports.yahoo.com/articles/eugene-springfield-area-high-school-010110828.html",
+        "https://www.thenewsguard.com/news/sports-postseason-awaits-eddyville-waldport-and-toledo/article_914e29b9-f20c-468f-bd6e-09df0e0d42d5.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQF5JC9DXgkZyxZyT8G99ee7NftC-0ci-S92AcC3x9KaSBQeSvakEuqlI9R2HQ",
+      "image_credit": "OregonLive.com",
+      "news": [
+        {
+          "url": "https://www.oregonlive.com/highschoolsports/2026/11/friday-night-spotlight-oregon-high-school-football-state-tournament-live-scores-schedule-links.html",
+          "title": "Friday Night Spotlight: Oregon high school football state playoffs live scores, schedule, links",
+          "publisher": "OregonLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQF5JC9DXgkZyxZyT8G99ee7NftC-0ci-S92AcC3x9KaSBQeSvakEuqlI9R2HQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/eugene-springfield-area-high-school-010110828.html",
+          "title": "Eugene-Springfield area high school football playoff updates, scores",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWqTP4zTslz_98NLJGQb3tQKUTCGfSACI0FgISm1dPzaqjO0oQK1E_kyf2-dE"
+        },
+        {
+          "url": "https://www.thenewsguard.com/news/sports-postseason-awaits-eddyville-waldport-and-toledo/article_914e29b9-f20c-468f-bd6e-09df0e0d42d5.html",
+          "title": "Sports: Postseason awaits Eddyville, Waldport, and Toledo",
+          "publisher": "The News Guard",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNhWMDX-ghVxU74qxHc6ukUKl6Aq6pogySnk5iRX48mP31GHICZPI4ePFuQS4"
+        }
+      ]
+    },
+    {
+      "query": "alexandra daddario",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T07:00:00Z",
+      "related_news_urls": [
+        "https://deadline.com/2026/11/taylor-kitsch-alexandra-daddario-long-island-bank-robber-1237215411/",
+        "https://movieweb.com/long-island-bank-robber-thriller-taylor-kitsch/",
+        "https://www.newsday.com/entertainment/movies/long-island-bank-robber-wify7f2n"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvUWPLXwhkZWeeM90NlJZ0U6dtk8rYW9Vyv4sW4VYgIzyy2k8OaNg9Cx0_iXE",
+      "image_credit": "Deadline",
+      "news": [
+        {
+          "url": "https://deadline.com/2026/11/taylor-kitsch-alexandra-daddario-long-island-bank-robber-1237215411/",
+          "title": "Taylor Kitsch, Alexandra Daddario, Christopher Walken Cast In 'Robber'",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvUWPLXwhkZWeeM90NlJZ0U6dtk8rYW9Vyv4sW4VYgIzyy2k8OaNg9Cx0_iXE"
+        },
+        {
+          "url": "https://movieweb.com/long-island-bank-robber-thriller-taylor-kitsch/",
+          "title": "'The Terminal List' Star Taylor Kitsch Breaks Bad in New Real-Life Heist Thriller",
+          "publisher": "MovieWeb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJyIJWn4gMYWdt3Rb7CiXRNuSJzK8e7gt8Y6TpU9LzAdn6qK3fkVJhlisnebE"
+        },
+        {
+          "url": "https://www.newsday.com/entertainment/movies/long-island-bank-robber-wify7f2n",
+          "title": "Taylor Kitsch to play 'Long Island Bank Robber'",
+          "publisher": "Newsday",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXLG8smfMlX-rc6Y1NpLicOCrSVkrtfgSDP7G7A7jWkrUCl10a5rHAsOVJMRU"
+        }
+      ]
+    },
+    {
+      "query": "yerin ha",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T06:50:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66098310/?ref_=tt_nwr_1",
+        "https://vmagazine.com/article/the-most-wonderful-time-of-the-year-the-david-yurman-way/",
+        "https://www.bustle.com/entertainment/yerin-ha-michael-b-jordan-david-yurman-ad-chemistry"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTy6XLMuZWqErVE7N_4K8qN7Y3tuBa2ok7bZiPxAVnT-BPPcIZ1mja90J4vxQ0",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66098310/?ref_=tt_nwr_1",
+          "title": "‘Bridgerton’ Star Yerin Ha and Michael B. Jordan Stun Fans in Candid Photo",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTy6XLMuZWqErVE7N_4K8qN7Y3tuBa2ok7bZiPxAVnT-BPPcIZ1mja90J4vxQ0"
+        },
+        {
+          "url": "https://vmagazine.com/article/the-most-wonderful-time-of-the-year-the-david-yurman-way/",
+          "title": "Inde Navarrette Stars in David Yurman’s 2026 Holiday Campaign",
+          "publisher": "V Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDoanTo1Rys0JxKSX2EUeiKILx3E2ycIhNVuj8qsPn0eU_NbCoS9uIWsLaAFM"
+        },
+        {
+          "url": "https://www.bustle.com/entertainment/yerin-ha-michael-b-jordan-david-yurman-ad-chemistry",
+          "title": "Help! I Can’t Stop Blushing At Yerin Ha & Michael B. Jordan’s Holiday Campaign",
+          "publisher": "Bustle",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDMTxoa23GdUZa73dMwHrzIv-Xz9YKqwHphWSc3IjLXgdaCeHmen9SHIiJt8g"
+        }
+      ]
+    },
     {
       "query": "alice tubello",
       "approx_searches": "200+",
@@ -29,7 +239,7 @@
           "title": "Alarm triggers sudden evacuation as Bianca Andreescu serves for match in Cali",
           "publisher": "Tennisuptodate.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLUvvk5ft3gs9jBaSCm02oShJeZhd2RsRNQzTpS-OqFfzS04vbB2z4dHajznM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQP_zePcPFHVS-ysesLISUEn2pehZbKLujA-wJX_ZI5bKggNqmzOTjY4bk3MwA"
         }
       ]
     },
@@ -73,40 +283,40 @@
       "approx_searches": "100+",
       "published_at": "2026-11-07T06:40:00Z",
       "related_news_urls": [
-        "https://www.vcstar.com/story/sports/high-school/football/2026/11/06/live-coverage-of-the-first-round-of-the-high-school-football-playoffs--live/92615515007/",
-        "https://www.ocregister.com/2026/11/06/photos-hot-shots-from-fridays-high-school-football-playoff-games/",
-        "https://www.si.com/high-school/california/cif-southern-section-football-first-round-playoff-scores-divisions-2-14-01m6syy9wj47"
+        "https://www.ocregister.com/2026/11/06/big-plays-help-push-dana-hills-football-past-westlake-in-cif-ss-playoffs/",
+        "https://www.picketfencemedia.com/danapointtimes/sports-and-outdoors/dolphins-roundup-dana-hills-opens-division-4-playoffs-friday-boys-water-polo-falls-in-round/article_3897054f-715a-4b01-a481-816f8b57d7bd.html",
+        "https://www.nfhsnetwork.com/events/dana-hills-high-school-dana-point-ca/gamde2bf7faca"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQA7LveyFpqIyUJ7Pasq9yTFpWk9AcOz6UVUcLul04F9UZuNSkITu85TH1XgP4",
-      "image_credit": "Ventura County Star",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQs43wzZFD5cBvnqpWWVUOdMFzEBnqxxZUGCRPvoe4Zx6Obgj9cEWnxDUG4fTg",
+      "image_credit": "Orange County Register",
       "news": [
         {
-          "url": "https://www.vcstar.com/story/sports/high-school/football/2026/11/06/live-coverage-of-the-first-round-of-the-high-school-football-playoffs--live/92615515007/",
-          "title": "LIVE coverage of the first round of the high school football playoffs",
-          "publisher": "Ventura County Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQA7LveyFpqIyUJ7Pasq9yTFpWk9AcOz6UVUcLul04F9UZuNSkITu85TH1XgP4"
-        },
-        {
-          "url": "https://www.ocregister.com/2026/11/06/photos-hot-shots-from-fridays-high-school-football-playoff-games/",
-          "title": "Photos: Hot shots from Friday’s high school football playoff games",
+          "url": "https://www.ocregister.com/2026/11/06/big-plays-help-push-dana-hills-football-past-westlake-in-cif-ss-playoffs/",
+          "title": "Big plays help push Dana Hills football past Westlake in CIF-SS playoffs",
           "publisher": "Orange County Register",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGnxp58HSzA7wD0RimOP1zJ1iwD_Oi0MTHOsYRFQdjRNMCRYkP4EZqNigRBh8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQs43wzZFD5cBvnqpWWVUOdMFzEBnqxxZUGCRPvoe4Zx6Obgj9cEWnxDUG4fTg"
         },
         {
-          "url": "https://www.si.com/high-school/california/cif-southern-section-football-first-round-playoff-scores-divisions-2-14-01m6syy9wj47",
-          "title": "CIF Southern Section Football First-Round Playoff Scores (Divisions 2-14)",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.picketfencemedia.com/danapointtimes/sports-and-outdoors/dolphins-roundup-dana-hills-opens-division-4-playoffs-friday-boys-water-polo-falls-in-round/article_3897054f-715a-4b01-a481-816f8b57d7bd.html",
+          "title": "DOLPHINS ROUNDUP: Dana Hills Opens Division 4 Playoffs Friday; Boys Water Polo Falls in Round 2",
+          "publisher": "picketfencemedia.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbUx-XipmPkiCqCG-HgBJdTBwQdbpxeosvAuI7qKuT5hbwwH4x2YOb5d5h_Kk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWn77OnbsiWVjFFVkskLZH1dIRE0qdIXJLmRev4K4qqPo-zSSCymdPOXrtMfc"
+        },
+        {
+          "url": "https://www.nfhsnetwork.com/events/dana-hills-high-school-dana-point-ca/gamde2bf7faca",
+          "title": "2026 CIFSS Football Playoffs Westlake High School vs. Dana Hills High School - 11/06/2026 | Live & On Demand",
+          "publisher": "NFHS Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROl-d6aLrgkSQnhN35GTj_iRxI69ixLZQaIAdlCjzyTFyO4Rs3qA_FP4xhID0"
         }
       ]
     },
     {
-      "query": "alexandra shubladze",
+      "query": "claire liu",
       "approx_searches": "2000+",
-      "published_at": "2026-11-07T06:30:00Z",
+      "published_at": "2026-11-07T06:20:00Z",
       "related_news_urls": [
         "https://www.wtatennis.com/news/4605678/eala-beats-ruzic-in-hong-kong-quarterfinal-featuring-29-break-points",
         "https://www.espn.com/tennis/story/_/id/50400006/alex-eala-antonia-ruzic-hong-kong-open-quarterfinal",
@@ -135,216 +345,6 @@
           "publisher": "Inquirer.net",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjn_RQoKgccYVvjMDW1P-3xXAFppgYBcQFklb-QrO2anIxNTCdjDEzViiTFgc"
-        }
-      ]
-    },
-    {
-      "query": "freeze warning",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-07T06:20:00Z",
-      "related_news_urls": [
-        "https://www.14news.com/2026/11/06/drizzle-today-gives-way-frost-freeze-this-weekend/",
-        "https://patch.com/illinois/across-il/sub-freezing-temperatures-expected-parts-chicago-area",
-        "https://www.keyc.com/2026/11/05/frosty-nights-sunshine-gradual-warming-way/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUb8GmeRNLuF7r1TiotM64f4mi0I4PleghAXtD5YMIrXg3snNHYbbZiKaBH00",
-      "image_credit": "WFIE | 14 News",
-      "news": [
-        {
-          "url": "https://www.14news.com/2026/11/06/drizzle-today-gives-way-frost-freeze-this-weekend/",
-          "title": "Drizzle Today Gives Way to Frost and Freeze This Weekend",
-          "publisher": "WFIE | 14 News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUb8GmeRNLuF7r1TiotM64f4mi0I4PleghAXtD5YMIrXg3snNHYbbZiKaBH00"
-        },
-        {
-          "url": "https://patch.com/illinois/across-il/sub-freezing-temperatures-expected-parts-chicago-area",
-          "title": "Sub-Freezing Temperatures Expected For Parts Of Chicago Area",
-          "publisher": "Patch",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8KZxGFU4PIadZZcQCEp-q19yrbWCgcm9gJG0fNLiGBowue0OSjDJ7Sjuy9Sc"
-        },
-        {
-          "url": "https://www.keyc.com/2026/11/05/frosty-nights-sunshine-gradual-warming-way/",
-          "title": "Frosty nights, sunshine, gradual warming on the way",
-          "publisher": "KEYC News Now",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9qMiiM8WdSTibxWzONxHw7Hmms5otqxG-llrT0BiDMH0TkisdZUHFsieVcXM"
-        }
-      ]
-    },
-    {
-      "query": "claire liu",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-07T06:20:00Z",
-      "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/casper-ruud-vs-carlos-alcaraz-set-1-winner-nov-07-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/rinky-hijikata-vs-tomas-martin-etcheverry-set-2-winner-nov-05-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/lorenzo-musetti-vs-luca-van-assche-set-1-winner-nov-05-2026/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTc630s7KHCe-H-9vKxNxs-GWY0pYH6OKaMEVqToSr7FneDmKaPsCAfQ27LJQ",
-      "image_credit": "Robinhood",
-      "news": [
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/casper-ruud-vs-carlos-alcaraz-set-1-winner-nov-07-2026/",
-          "title": "November 7, 2026: Casper Ruud vs Carlos Alcaraz: Set 1 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTc630s7KHCe-H-9vKxNxs-GWY0pYH6OKaMEVqToSr7FneDmKaPsCAfQ27LJQ"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/rinky-hijikata-vs-tomas-martin-etcheverry-set-2-winner-nov-05-2026/",
-          "title": "November 5, 2026: Rinky Hijikata vs Tomas Martin Etcheverry: Set 2 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKMaKsKWftlG7A4wHDfdUGk5u9gmfJJuhbQaCGMQSWlBkHOp1Ryq_bXi3b7SU"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/lorenzo-musetti-vs-luca-van-assche-set-1-winner-nov-05-2026/",
-          "title": "November 5, 2026: Lorenzo Musetti vs Luca Van Assche: Set 1 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUnA0jeYKOZPnLztXb2UrhsoXARKxHVQtYCfOcw4gr4bHeXdUbVo75G-GlxYE"
-        }
-      ]
-    },
-    {
-      "query": "jeff hiller",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T06:20:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/it/news/ni66098582/?ref_=nm_nwr_1",
-        "https://www.theatermania.com/news/interview-jeff-hiller-on-artistic-successes-and-returning-to-the-stage-in-the-exhibitionist_1858998/",
-        "https://www.broadwayworld.com/article/Video-Jeff-Hiller-is-Bringing-Humor-and-Heart-to-THE-EXHIBITIONIST-20261106"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzCY8695xaRCgSfSBdUpWNzaWMkDaepVFnGZkqpA6M91hD6xHNQQ4kQIfDefI",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/it/news/ni66098582/?ref_=nm_nwr_1",
-          "title": "Video: Jeff Hiller Has an Emmy, But the Stage Is Still Calling",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzCY8695xaRCgSfSBdUpWNzaWMkDaepVFnGZkqpA6M91hD6xHNQQ4kQIfDefI"
-        },
-        {
-          "url": "https://www.theatermania.com/news/interview-jeff-hiller-on-artistic-successes-and-returning-to-the-stage-in-the-exhibitionist_1858998/",
-          "title": "Interview: Emmy Winner Jeff Hiller on Artistic Successes and Returning to the Stage in The Exhibitionist",
-          "publisher": "TheaterMania",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt6jiTQaWugnA3mVKTsskHpGWZGdcR1EjkRy9mu3QrIzPJvGNGgAnnzVJOQKU"
-        },
-        {
-          "url": "https://www.broadwayworld.com/article/Video-Jeff-Hiller-is-Bringing-Humor-and-Heart-to-THE-EXHIBITIONIST-20261106",
-          "title": "Video: Jeff Hiller is Bringing Humor and Heart to THE EXHIBITIONIST",
-          "publisher": "BroadwayWorld",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0GgDEttdJQEPRBq1Zu-Xj_l7hzLsY7LnqEVuLDLpqZL9j4U25KrNBpERAc1I"
-        }
-      ]
-    },
-    {
-      "query": "angelina jolie",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T06:10:00Z",
-      "related_news_urls": [
-        "https://www.abs-cbn.com/entertainment/showbiz/celebrities/2026/11/6/angelina-jolie-heading-to-manila-for-2026-asean-inclusive-growth-summit-1326",
-        "https://www.gmanetwork.com/news/showbiz/chikaminute/1008605/lea-salonga-to-serve-as-speaker-at-the-2026-asean-inclusive-growth-summit/story/",
-        "https://mb.com.ph/2026/11/06/angelina-jolie-to-visit-manila-for-the-asean-inclusive-growth-summit-2026"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_sHteOkF5FfB06b4ZOSeTwUqyiyMkibO0r4EmNu257YsteIJVO5PM7wjuWH4",
-      "image_credit": "ABS-CBN",
-      "news": [
-        {
-          "url": "https://www.abs-cbn.com/entertainment/showbiz/celebrities/2026/11/6/angelina-jolie-heading-to-manila-for-2026-asean-inclusive-growth-summit-1326",
-          "title": "Angelina Jolie heading to Manila for 2026 ASEAN Inclusive Growth Summit",
-          "publisher": "ABS-CBN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_sHteOkF5FfB06b4ZOSeTwUqyiyMkibO0r4EmNu257YsteIJVO5PM7wjuWH4"
-        },
-        {
-          "url": "https://www.gmanetwork.com/news/showbiz/chikaminute/1008605/lea-salonga-to-serve-as-speaker-at-the-2026-asean-inclusive-growth-summit/story/",
-          "title": "Lea Salonga to serve as speaker at the 2026 ASEAN Inclusive Growth Summit",
-          "publisher": "GMA Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSeFMua8xLFZ6ht7lFlDo1ubH5_5a3D-xHJgpyyU7Q6Qb-ez0g88wWOb1Wmo5A"
-        },
-        {
-          "url": "https://mb.com.ph/2026/11/06/angelina-jolie-to-visit-manila-for-the-asean-inclusive-growth-summit-2026",
-          "title": "Angelina Jolie to visit Manila for the ASEAN Inclusive Growth Summit 2026",
-          "publisher": "Manila Bulletin",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDN6kbOMPYdCDJo4cvhw5Gt8C9kBF6SoqvRx_A7rddsdnzcL6zOC_VBbIzGqg"
-        }
-      ]
-    },
-    {
-      "query": "cameron diaz",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T06:10:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/film/news/bad-day-trailer-cameron-diaz-netflix-1236939650/",
-        "https://www.justjared.com/2026/11/05/bad-day-trailer-cameron-diaz-accidentally-robs-a-bank-in-new-netflix-comedy-movie-watch-now/",
-        "https://people.com/cameron-diaz-bad-day-trailer-netflix-comedy-exclusive-12222383"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMYpPK65bFj_jAPSOBDhlAOCx9JDlPwe8EKoYngNc_HzU5Y6npKjOnYIVQfwQ",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/film/news/bad-day-trailer-cameron-diaz-netflix-1236939650/",
-          "title": "‘Bad Day’ Trailer: Cameron Diaz Is a Single Mom Who Accidentally Robs a Bank in Netflix Comedy",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMYpPK65bFj_jAPSOBDhlAOCx9JDlPwe8EKoYngNc_HzU5Y6npKjOnYIVQfwQ"
-        },
-        {
-          "url": "https://www.justjared.com/2026/11/05/bad-day-trailer-cameron-diaz-accidentally-robs-a-bank-in-new-netflix-comedy-movie-watch-now/",
-          "title": "'Bad Day' Trailer: Cameron Diaz Accidentally Robs a Bank in New Netflix Comedy Movie - Watch Now!",
-          "publisher": "Just Jared",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAUpXXQOVs5Z7VCt1sNIERowhex2JqVgBJlGGim7gXVWDs4GnTyl0nocjPISQ"
-        },
-        {
-          "url": "https://people.com/cameron-diaz-bad-day-trailer-netflix-comedy-exclusive-12222383",
-          "title": "Cameron Diaz Explains Why She Connected With Her ‘Bad Day’ Role (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROFP0ddhP_itX2vMcRyW1Ra6nD7x30Tz9SBhxM_2gRC4HiLIifjMmaQdiDHFM"
-        }
-      ]
-    },
-    {
-      "query": "what does jd stand for in jd vance",
-      "approx_searches": "100+",
-      "published_at": "2026-11-07T06:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/06/opinion/jd-vance-midterms.html",
-        "https://www.vox.com/today-explained-newsletter/509815/jd-vance-2028-maga-midterms-stephen-miller",
-        "https://www.cnn.com/2026/11/05/politics/video/sarah-matthews-on-vance-no-chance-of-becoming-president-in-2028"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS59q_3h8_aSCKT6g4nJZ9qoiKPsvdr92GnFyxcRhV_167szzevfjAjo6hTB1A",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/06/opinion/jd-vance-midterms.html",
-          "title": "Opinion | After These Midterms, JD Vance Is in a Bind",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS59q_3h8_aSCKT6g4nJZ9qoiKPsvdr92GnFyxcRhV_167szzevfjAjo6hTB1A"
-        },
-        {
-          "url": "https://www.vox.com/today-explained-newsletter/509815/jd-vance-2028-maga-midterms-stephen-miller",
-          "title": "2026 midterm results: JD Vance’s bad week gets worse",
-          "publisher": "Vox",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTq3LvUHpFXgPtuMnu0Oldf1btjo9l-yKXFlSQ2SnOHyaZm-2OSFUXTyxQgdug"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/05/politics/video/sarah-matthews-on-vance-no-chance-of-becoming-president-in-2028",
-          "title": "Sarah Matthews on Vance: ‘No chance’ of becoming president in 2028’",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQl1ajHvZ6tf1qGoXu1PIWs2dXikh4g25BNW886h5zJ2E5uf7WTE3Nj4z45Tig"
         }
       ]
     }
