@@ -894,7 +894,7 @@ test('authenticated repository plan recovers from one malformed model JSON respo
 test('repository plan fails closed after repeated malformed model JSON',async()=>{
  const memory=new Map([['key',{key:'key',leaseId:'lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,job:{instructions:'Inspect source'}}]]);
  let modelCalls=0;
- const clock=new BrainClock({storage:{get:async k=>memory.get(k)}},{WRITER_AI:{run:async()=>{modelCalls++;return {response:"{'invalid':'output'}"}}}});
+ const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{WRITER_AI:{run:async()=>{modelCalls++;return {response:"{'invalid':'output'}"}}}});
  await assert.rejects(clock.runner(new Request('https://clock/runner/plan',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook',key:'key',leaseId:'lease',evidence:{}})})),/engine_model_json_invalid/);
  assert.equal(modelCalls,2,'Do not run open-ended retries');
 });
