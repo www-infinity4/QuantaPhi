@@ -75,6 +75,11 @@ export default {
  async fetch(request,env){
   const path=new URL(request.url).pathname;
   if(path==='/health'&&request.method==='GET')return send({ok:true,db_connected:!!env.TREND_DB,quant_ai_service_connected:typeof env.QUANT_AI?.fetch==='function',quant_ai_data_connected:!!(env.QUANT_AI_DB&&env.QUANTA_DB&&env.IDENTITY_DB),decision_mode:'on_demand_per_user',active_bots:0,worker_queue:'not_a_live_agent_runner'});
+  if(path==='/decision'&&request.method==='OPTIONS'){
+   const origin=request.headers.get('Origin');
+   if(origin!=='https://quantaphi.org')return send({ok:false,error:'origin_not_allowed'},403);
+   return new Response(null,{status:204,headers:{'Access-Control-Allow-Origin':origin,'Access-Control-Allow-Methods':'POST,OPTIONS','Access-Control-Allow-Headers':'authorization,content-type','Access-Control-Max-Age':'600','Vary':'Origin'}});
+  }
   // An authenticated user can request a private ranking only when needed.
   // A recommendation is never an Orange approval for a public advertisement.
   if(path==='/decision')return fetchQuantDecision(request,env);
