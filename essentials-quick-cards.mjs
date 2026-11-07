@@ -24,7 +24,7 @@ export function createEssentialQuickCard(card){
  if(card.drugFacts)info.append(el('p','qec-facts',card.drugFacts));
  if(card.factsUrl)info.append(href('Official product facts and directions',card.factsUrl,'qec-facts-source'));
  info.append(href('View exact item at '+card.sourceName,card.productUrl,'qec-shop'));
- info.append(el('p','qec-note','Independent editorial card, not a sponsored advertisement. No live stock or price guarantee. Read the original Drug Facts label before use.'));
+ info.append(el('p','qec-note','Independent editorial card, not a sponsored advertisement. No live stock or price guarantee. Read the original package directions and any applicable Drug Facts before use.'));
  info.append(el('small','qec-photo-credit',card.imageCredit+' · photo rights not confirmed for paid advertising.'));
  const actions=el('div','qec-actions');mountCardActions(actions,{
   id:card.id,name:card.brand+' · '+card.name,category:card.category,
