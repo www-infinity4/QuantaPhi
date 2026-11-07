@@ -5,7 +5,7 @@ state: implementing
 dot: "🟡"
 progress_percent: 55
 progress_basis: "Estimate: source-backed search, official references, in-card proposal preview, moderation-boundary tests and reviewed-data importer implemented on PR; exact-head CI, review, merge, approved 1,000+ data snapshot and Android live acceptance pending"
-sessions_spent: 3
+sessions_spent: 4
 sessions_remaining_estimate: unknown
 agent: "GPT · Red source review, Green implementation, Pink CI review, Black release verification pending"
 lease_id: null
@@ -13,16 +13,16 @@ lease_expires_at: null
 task_session_id: null
 fence: null
 repo: www-infinity4/QuantaPhi
-branch: feat/developer-library-1790
-head_sha: null
+branch: feat/media-star-creator-ledger-choices-20261107
+head_sha: 7179beefbda7a304e54c26ab3f508d1b3229a39d (earlier exact-head CI before final checkpoint)
 last_observed_at_utc: "2026-11-07"
-pr: "https://github.com/www-infinity4/QuantaPhi/pull/1814"
-tests: "Prior source/run on PR #1814: 10/11 tests succeeded, older fixed-five slide test corrected; exact-head checks pending"
+pr: "https://github.com/www-infinity4/QuantaPhi/pull/1822 (current draft); #1814 (earlier merged)"
+tests: "Media Star Creator PR #1822: 15/15 Node tests passed, 5/5 listed workflows succeeded at head 7179beef; independent Android and live payout verification pending"
 merged: false
 deployed: false
 live_verified: false
-blocker: "Exact-head CI, independent code review, safe PR merge, approved catalog data PR, and live Android/Cloudflare verification"
-next_action: "Inspect latest exact-head Developer source and Android CI; repair any failures and merge reviewed source-only PR if permitted"
+blocker: "Current #1822 remains draft; D1 PR #130 source-only; issuer view funding/identity, curator wallet entitlement service, moderation and Android/live deployment unverified"
+next_action: "Review creator-card D1 PR #130, confirm migrations and rights/payment policies; then independently review #1822, verify Android and authorize deployment separately"
 ---
 ## November 7 — thousands-scale Developer Library expansion (PR #1814)
 
@@ -69,3 +69,13 @@ next_action: "Inspect latest exact-head Developer source and Android CI; repair 
 - [ ] Verify actual moderation/publishing in an authorized non-production or controlled environment
 
 No checkout, wallet mutation, public auto-publish, provider login or new payout privilege was added.
+
+## November 7 — creator card pricing + two separate ledgers (PR #1822; backend PR #130)
+
+Owner direction: Every independently verified Media Star viewing creates a **new issuer-funded Infinity 1 StarCoin award proposal** for the rightful verified creator; the viewer's wallet is never debited for that reward. A *different* optional curated paid episode charges the viewer **1 StarCoin once per new unlocked episode** for transfer to the verified card curator. Free-first configuration is creator-selectable; never treat free playback as a buyer charge or send a curator charge to the wrong recipient.
+
+Source receipt: QuantaPhi draft [#1822](https://github.com/www-infinity4/QuantaPhi/pull/1822) implements actual creator pricing/free-first UI, multi-episode list, production registration draft, safe public HTML omission of locked URLs and Android-readable styling. CI at head `7179beefbda7a304e54c26ab3f508d1b3229a39d`: 5 workflows successful; the Media Star source suite 15 tests passed, zero failed. TV-Database [#130](https://github.com/www-infinity4/TV-Database/pull/130) stages D1 0005 separate issuer awards and curator unlocks with no account balance mutations; original CI head `72cd639938baa6ee8191338848699c244558b63e` passed TypeScript, SQLite and seven contracts. Later commits must be checked individually.
+
+No new funded coins, actual paid entitlements, third-party verified wallet connections, new public published cards, live website, Android playback, Cloudflare deployment or monetary transactions have been verified or claimed. The production registry historically limits observed receipts to one per viewer/content/Central day, based on self-reported 30-second playback; a future independently verified actual-play session proof and abuse rules are required before paying for *every* genuine play. Fred's external X replay remains outside first-party completion telemetry. The new two-ledger schema keeps pending awards and curator payments independently auditable.
+
+Next action: independent financial/security/rights review and exact-head CI; verify authorized creator identity and payout terms, apply approved migration, implement and sandbox-test auditable issuer funding + customer-to-curator transfer, then moderated public Media Star feed and actual Android readback. Do not silently mint or backfill uncertain plays.
