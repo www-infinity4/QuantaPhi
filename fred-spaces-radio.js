@@ -97,8 +97,8 @@
   async function sync(){try{const d=await ledger("/v1/spaces/unlocks");unlocked=new Set(d.unlocked||[]);balance=d.starCoins;isPlatformOwner=!!d.isPlatformOwner;const saved=byId.get(requested||load(currentKey,FIRST));if(saved&&(saved.id===FIRST||unlocked.has(saved.id)))active=saved;render();window.dispatchEvent(new CustomEvent('phi:media-star-wallet-synced',{detail:{wholeStarCoins:balance,source:'fred-spaces-ledger'}}));}catch(error){message="StarCoin wallet not connected; the first episode remains free.";render();}}
   function payoutCaption(data){
     if(data.ownerPreview)return "Owner preview — no StarCoin deducted. ";
-    if(data.charged===1)return data.creatorPaid===true&&data.ownerPaid===true&&data.recipient==="platform-owner"&&data.receiptReference
-      ?"1 StarCoin credited to the verified QuantaPhi platform-owner wallet; linked debit/credit receipt confirmed. "
+    if(data.charged===1)return data.ownerPaid===true&&data.recipient==="platform-owner"&&data.receiptReference
+      ?"1 StarCoin credited to the verified QuantaPhi platform-owner wallet; linked debit/credit receipt confirmed. No creator royalty or audio play is verified by this purchase. "
       :"Payment discrepancy: 1 StarCoin was charged, but the QuantaPhi owner payout receipt was NOT verified. Report this transaction; do not retry payment. ";
     return "Already unlocked; no new charge. ";
   }
