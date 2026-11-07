@@ -1,7 +1,7 @@
 /* Public copy-only setup for users collecting THEIR OWN pending GIT receipts.
  * No remote code runs in the browser; no wallet mint or provider GPT Coin claim.
  */
-const BRANCH='feat/gitcoin-termux-sqlite-20261104';
+const BRANCH='feat/gitcoin-termux-serial-card-20261107';
 const SOURCE='https://github.com/www-infinity4/QuantaPhi';
 export function normalizeGithubRepo(raw){
  const value=typeof raw==='string'?raw.trim():'';
