@@ -46,3 +46,10 @@ test('play shortcut updates only to a verified unlocked original X source; no fa
  assert.match(html,/data-oracle-spotlight="source-blue-star-ointment"/);
  assert.match(html,/data-oracle-spotlight="source-neosporin-original-1oz"/);
 });
+
+test('live payout server must prove receipt contract v2 before exposing any paid Fred Space unlock',()=>{
+ const player=read('fred-spaces-radio.js');
+ assert.match(player,/paymentsReady=Boolean\(response\.ok&&data\.ok&&data\.paymentsReady&&data\.receiptContractVersion===2\)/);
+ assert.match(player,/until.*receipt|receipt.*ready/i);
+ assert.match(player,/if\(!paymentsReady\)/);
+});
