@@ -186,7 +186,7 @@ function registerSourceCards(){
  // Move the ORIGINAL article, preserving its search field, player and listeners.
  let added=false;
  const registeredIds=new Set(entries.map(e=>e.feedId));
- for(const node of document.querySelectorAll('#siteQuickCards .iqc-card[data-source-id], #premiumSourceCards .iqc-card[data-source-id], #brandProductCards .iqc-card[data-source-id], #verifiedBrandSportsCards .iqc-card[data-source-id], #infinityAcceptedCards .iqc-card[data-source-id]')){
+ for(const node of document.querySelectorAll('#siteQuickCards .iqc-card[data-source-id], #premiumSourceCards .iqc-card[data-source-id], #brandProductCards .iqc-card[data-source-id], #essentialsQuickCards .iqc-card[data-source-id], #verifiedBrandSportsCards .iqc-card[data-source-id], #infinityAcceptedCards .iqc-card[data-source-id]')){
   if(node.dataset.sourceReady!=='true')continue;
   const id=node.dataset.sourceId;
   if(!/^[a-z0-9-]+$/.test(id||'')||registeredIds.has(id))continue;
@@ -255,7 +255,7 @@ function chainCard(entry){
  const nativeX=entry.id==='xTwitterCard';
  return {id:entry.feedId,name:entry.node.dataset.sourceName||entry.title,
   category:entry.node.dataset.sourceCategory||entry.category,official:nativeX?'https://x.com/':entry.official,
-  ready:(nativeX||entry.node.dataset.sourceReady==='true')&&available(entry),restricted:nonProfiling(entry)};
+  ready:(nativeX||entry.node.dataset.sourceReady==='true')&&available(entry),restricted:nonProfiling(entry)&&entry.node.dataset.powerChainExplicit!=='true'};
 }
 function refreshFollows(){
  relatedFollows=powerChainApi&&feedState?.powerChain?.seeds.length?
