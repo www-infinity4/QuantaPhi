@@ -59,7 +59,7 @@ export function mountDeveloperDiscovery({root,stage,addResources,showIndex}){
  toggle.setAttribute('aria-expanded','false');
  const editor=slide.appendChild(el('div','developer-editor devlib-editor'));
  editor.id='devlibStudio';editor.hidden=true;
- const note=editor.appendChild(el('p','devlib-caution','Source code is not imported or executed. Check permissions and licenses. Owner review is required before anything appears on the public website.'));
+ const note=editor.appendChild(el('p','devlib-caution','Source code is not imported or executed. Never enter passwords, private identity numbers or payment details. A proposal opens a PUBLIC GitHub issue only after you choose it; the owner must approve changes.'));
  const topicLine=editor.appendChild(el('label','devlib-label','What part of QuantaPhi should this improve?'));
  const topicField=topicLine.appendChild(el('select','devlib-topic'));
  for(const topic of DEVELOPMENT_TOPICS){const op=el('option','',topic.label);op.value=topic.id;topicField.appendChild(op);}
@@ -73,7 +73,7 @@ export function mountDeveloperDiscovery({root,stage,addResources,showIndex}){
  const copy=editorActions.appendChild(el('button','devlib-copy-button','Copy Bubbles build brief'));copy.type='button';
  const feedback=editor.appendChild(el('p','devlib-feedback'));feedback.setAttribute('role','status');
  const previewStage=editor.appendChild(el('div','devlib-preview'));previewStage.hidden=true;
- const issueLink=editor.appendChild(el('a','devlib-review','Prepare owner-reviewed GitHub issue'));
+ const issueLink=editor.appendChild(el('a','devlib-review','Open public GitHub review issue'));
  issueLink.hidden=true;issueLink.target='_blank';issueLink.rel='noopener noreferrer';
  const ai=editor.appendChild(el('details','devlib-bubbles'));
  ai.appendChild(el('summary','', 'Talk with Bubbles in this card'));
