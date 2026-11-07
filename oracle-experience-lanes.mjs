@@ -12,6 +12,7 @@ const createButton=(label,cls,action)=>{
 };
 const safeText=value=>String(value||'').slice(0,220);
 const videos=normalizeVideoCatalog(CURATED_VIDEOS);
+let activeVideo=null; // Only one video frame may play across all Oracle lanes.
 const EXPERIMENTS=[
  {title:'Balloon Rocket',equipment:'Balloon, string, drinking straw, tape and two fixed supports.',
   steps:'Run the string through the straw and pull it taut. Tape an inflated balloon to the straw. Release the balloon and observe motion.',
@@ -83,12 +84,22 @@ function videoCard(video){
  const source=h('a','ioc-source-link','View original YouTube video');source.href=video.sourceUrl;
  source.target='_blank';source.rel='noopener noreferrer';
  const play=createButton('Play in this card','ioc-primary',()=>{
+  if(activeVideo?.card===card){activeVideo.stop();return}
+  if(activeVideo)activeVideo.stop();
   hero.replaceChildren();
   const frame=h('iframe','ioc-player');frame.title=video.title+' · YouTube player';
   frame.src='https://www.youtube-nocookie.com/embed/'+video.id+'?autoplay=1&rel=0';
   frame.setAttribute('allow','accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share');
   frame.setAttribute('allowfullscreen','');frame.referrerPolicy='strict-origin-when-cross-origin';frame.loading='eager';
-  hero.append(frame);play.hidden=true;status.textContent='Using YouTube’s embedded player. If YouTube says playback is unavailable, see the official source link.';
+  hero.append(frame);
+  play.textContent='Stop video';play.setAttribute('aria-pressed','true');
+  activeVideo={card,stop(){
+   frame.src='about:blank';hero.replaceChildren(image);
+   play.textContent='Play in this card';play.setAttribute('aria-pressed','false');
+   status.textContent='Playback stopped.';
+   if(activeVideo?.card===card)activeVideo=null;
+  }};
+  status.textContent='Using YouTube’s embedded player. If YouTube says playback is unavailable, see the official source link.';
  });
  hero.append(image);card.append(hero,title,credit,note,play,status,source);
  return card;
@@ -117,6 +128,7 @@ function mountLane(parent,definition){
  status.setAttribute('role','status');status.setAttribute('aria-live','polite');
  let index=0,marker=null,selected=null,unlocked=definition.id!=='adult';
  function restore(){
+  if(activeVideo&&stage.contains(activeVideo.card))activeVideo.stop();
   if(selected){document.dispatchEvent(new CustomEvent('oracle:card-deactivated',{detail:{id:selected.id}}));
    if(marker?.parentNode)marker.parentNode.insertBefore(selected,marker);
    marker?.remove();selected=null;marker=null;}
