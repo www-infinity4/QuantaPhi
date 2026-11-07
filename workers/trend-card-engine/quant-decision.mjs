@@ -5,7 +5,7 @@
  */
 const VALID_ID=/^[a-z0-9][a-z0-9-]{1,99}$/;
 const PRIVATE_TOPICS=/\b(?:health|medical|disease|diagnosis|religion|politics|sexual|ssn|social security|password|credit card|bank account|ethnicity|race|disability)\b/i;
-const RESTRICTED_CARD=/\b(?:adult|21\+|cannabis|marijuana|tobacco|nicotine|gambling|weapon|firearm|prescription)\b/i;
+const RESTRICTED_CARD=/(?:\b(?:adult|cannabis|marijuana|tobacco|nicotine|gambling|weapon|firearm|prescription)\b|\b(?:18|21)\+)/i;
 const IGNORED=new Set(['about','above','after','again','album','already','before','between','build','cards','card','created','different','discover','follow','from','into','more','next','original','page','product','search','some','source','that','their','these','this','those','very','what','when','where','which','with','your','youtube','website']);
 const tokens=value=>[...new Set(String(value??'').toLowerCase().match(/[a-z0-9]{4,}/g)||[])]
  .filter(w=>!IGNORED.has(w)&&!PRIVATE_TOPICS.test(w)).slice(0,38);
@@ -58,7 +58,7 @@ export function rankQuantCandidates(candidates,signals={},context={},seenIds=[])
   personal=Math.min(100,personal);
   contextScore=Math.min(30,contextScore);
   const score=personal+contextScore;
-  return {id:c.id,score,reason:personal>0?'Matched to your QuantaPhi activity':contextScore>0?'Related to this card':'Available source-verified choice'};
+  return {id:c.id,score,reason:personal>0?'Matched to your QuantaPhi activity':contextScore>0?'Related to this card':'Contextual choice'};
  }).sort((a,b)=>b.score-a.score||a.id.localeCompare(b.id));
 }
 
