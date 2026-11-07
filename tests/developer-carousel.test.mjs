@@ -29,8 +29,8 @@ test('dedicated developer carousel keeps original working widgets and real publi
   assert.match(html, /id="developerCarousel"[^>]*aria-roledescription="carousel"/);
   assert.match(html, /id="developerCardStage"/);
   assert.match(html, /src="\/developer-carousel\.mjs\?/);
-  assert.match(render, /stage\.appendChild\(node\)/);
-  assert.match(render, /card\.node\.hidden=i!==nextIndex/);
+  assert.match(render, /editor\.appendChild\(node\)/);
+  assert.match(render, /card\.slide\.hidden=i!==nextIndex/);
   assert.doesNotMatch(render, /bank\.appendChild\(current\.node\)/);
   assert.match(render, /new ResizeObserver\(fit\)/);
   assert.match(render, /\/quick-card-builder\.html/);
