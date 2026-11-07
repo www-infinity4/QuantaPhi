@@ -1,6 +1,6 @@
 /* Source-backed, on-card essentials discovery. No paid endorsements, invented
  * price/stock, medical targeting, automatic checkout, or feed scraping. */
-import {ESSENTIALS_SEED,prepareEssentialsBatch} from './essentials-card-batch.mjs';
+import {ESSENTIALS_SEED,prepareEssentialsBatch} from './essentials-card-batch.mjs?v=20261107-otc-eight1';
 import {mountCardActions} from './quanta-card-actions.mjs';
 const el=(tag,cls,text)=>{const node=document.createElement(tag);if(cls)node.className=cls;if(text!==undefined)node.textContent=text;return node};
 const href=(label,url,cls)=>{const node=el('a',cls,label);node.href=url;node.target='_blank';node.rel='noopener noreferrer';return node};
