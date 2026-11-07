@@ -3,10 +3,13 @@ on:
   pull_request:
     paths:
       - 'coupon-wallet-core.mjs'
+      - 'coupon-store-readiness.mjs'
       - 'coupon-quick-cards.mjs'
       - 'coupon-quick-cards.css'
       - 'data/verified-coupon-offers.json'
       - 'test/coupon-quick-cards.test.mjs'
+      - 'test/coupon-store-readiness.test.mjs'
+      - 'docs/coupon-wallet-store-acceptance.md'
       - 'index.html'
       - 'oracle-card-deck.js'
       - '.github/workflows/coupon-quick-cards.yml'
@@ -22,10 +25,11 @@ jobs:
         with:
           node-version: '22'
       - name: Coupon data and behavior contract
-        run: node --test test/coupon-quick-cards.test.mjs
+        run: node --test test/coupon-quick-cards.test.mjs test/coupon-store-readiness.test.mjs
       - name: JavaScript syntax
         run: |
           node --check coupon-wallet-core.mjs
+          node --check coupon-store-readiness.mjs
           node --check coupon-quick-cards.mjs
       - name: Validate empty-by-default reviewed feed
         run: node --input-type=module -e "import fs from 'node:fs'; const d=JSON.parse(fs.readFileSync('data/verified-coupon-offers.json')); if(d.version!==1||!Array.isArray(d.offers)) process.exit(1)"
