@@ -34,6 +34,7 @@ export const cards=Object.freeze([
  app('nasa-plus','NASA+ · Science Video Quick Card','/?card=nasa-plus','QuantaPhi',['NASA documentary','science video']),
  app('pbs-nova','PBS NOVA · Documentary Quick Card','/?card=pbs-nova','QuantaPhi',['NOVA documentary','quantum PBS']),
  app('pbs-history','PBS American Experience · History Video','/?card=pbs-history','QuantaPhi',['PBS history video','American Experience']),
+ app('trending-movies','Trending Movies · Play Trailers in Quick Cards','/?card=trending-movies','QuantaPhi',['google trending movies','new movies','movie trailers','cinema carousel','movies trending now']),
  app('quant-tv-movies','Quant Movies · Inline Video','/?card=tvQuantExpansion','QuantaPhi',['science movies','quant movies','vintage movies']),
  local('channels','Television Cards','phiChannelCards',['phi-tv-programs.js','phi-channel-cards.js'],['phi-channel-cards.css'],['channel cards','tv channels','infinity tv','cnn live','cnbc live','nasa plus','pbs nova','pbs documentary','quant movies','science fiction movies']),
  app('trending-now','Trending Google Search Cards','/trending-now.html','QuantaPhi',['trending','google trends','trending now','trending cards','trend cards']),
