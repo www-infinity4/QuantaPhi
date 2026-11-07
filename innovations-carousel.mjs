@@ -38,7 +38,7 @@ if(root){
   body.append(make('p','innovations-headline',entry.headline));
   body.append(make('p','innovations-summary',entry.summary));
   body.append(make('p','innovations-readiness',
-    'Stage: '+entry.readiness.replaceAll('-',' ')+' · Source '+entry.sourceDate+' · Checked '+entry.checkedAt));
+    'Stage: '+entry.readiness.replaceAll('-',' ')+' · Source '+entry.sourceDate+' · Checked '+entry.checkedAt+(entry.readiness==='field-applications'?' · Project-specific availability':' · Not a retail offer')));
   const actions=make('div','innovations-primary-actions');
   const read=make('button','innovations-read','Explore the idea');
   read.type='button';
