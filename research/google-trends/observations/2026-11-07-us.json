@@ -3,12 +3,327 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-07T18:31:24.657328Z",
+  "checked_at": "2026-11-07T19:01:26.937878Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "sd state vs northern iowa",
+      "query": "dana white",
       "approx_searches": "500+",
+      "published_at": "2026-11-07T18:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/deontay-wilder-launches-heavyweight-truth-021300400.html",
+        "https://bloodyelbow.com/2026/11/06/dana-white-boasts-of-improved-bedroom-energy-in-awkward-podcast-moment-with-deontay-wilder/",
+        "https://tuscaloosathread.com/ixp/962/p/tuscaloosas-deontay-wilder-enters-the-podcast-world/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMf2mIaKQ83BQJX-7LLpjkOIGGUPE3EwuSdAQiEDFNra84SBzHxnct6cTPaoY",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/deontay-wilder-launches-heavyweight-truth-021300400.html",
+          "title": "Deontay Wilder launches Heavyweight Truth with Dana White",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMf2mIaKQ83BQJX-7LLpjkOIGGUPE3EwuSdAQiEDFNra84SBzHxnct6cTPaoY"
+        },
+        {
+          "url": "https://bloodyelbow.com/2026/11/06/dana-white-boasts-of-improved-bedroom-energy-in-awkward-podcast-moment-with-deontay-wilder/",
+          "title": "Dana White boasts of improved ‘bedroom energy’ in awkward podcast moment with Deontay Wilder",
+          "publisher": "Bloody Elbow",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrz2JHau9y-cOV9SKiQsUylg4huTtfJR63TDj5ppU-3OvexchUKdjtQjUioiE"
+        },
+        {
+          "url": "https://tuscaloosathread.com/ixp/962/p/tuscaloosas-deontay-wilder-enters-the-podcast-world/",
+          "title": "Boxing Legend Deontay Wilder Takes on Podcasting",
+          "publisher": "Tuscaloosa Thread",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUoiEvzcKojQi0pqtSRKF27yJjKPIeMEVxn7NG7E-DUhW52SxUdY5uY0dayXk"
+        }
+      ]
+    },
+    {
+      "query": "georgia state vs app state",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T18:40:00Z",
+      "related_news_urls": [
+        "https://appstatesports.com/news/2026/11/6/football-saturdays-app-state-georgia-state-game-sold-out.aspx",
+        "https://www.covers.com/sport/football/ncaaf/matchup/378954/picks",
+        "https://www.prpeak.com/classifieds/garage-sales/garage-sales/2165374"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn46PvRdocHxG90EypVNjlz6QIRGtaOmcW12yMUYiwfftnxKOBqFMTuMK_Fqw",
+      "image_credit": "App State Athletics",
+      "news": [
+        {
+          "url": "https://appstatesports.com/news/2026/11/6/football-saturdays-app-state-georgia-state-game-sold-out.aspx",
+          "title": "Saturday’s App State-Georgia State Game Sold Out",
+          "publisher": "App State Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn46PvRdocHxG90EypVNjlz6QIRGtaOmcW12yMUYiwfftnxKOBqFMTuMK_Fqw"
+        },
+        {
+          "url": "https://www.covers.com/sport/football/ncaaf/matchup/378954/picks",
+          "title": "Appalachian State",
+          "publisher": "Covers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpgdq_-Dqy8xkPJlci5M0TxKDuae7EH3VDVPVFvlBCkQSlKOvubJjPFqHzyPk"
+        },
+        {
+          "url": "https://www.prpeak.com/classifieds/garage-sales/garage-sales/2165374",
+          "title": "LIVE: College Football Live : App State vs Georgia State Live updates",
+          "publisher": "Powell River Peak",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYJTkoQRxSuZEze65rmZgN954zoFa0mgo358bKwDfFfGhFrC5jpORQNWfHivE"
+        }
+      ]
+    },
+    {
+      "query": "kendre miller",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T18:40:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/fantasy/football/news/kendre-miller-cut-loose-by-saints/",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-07/saints-release-kendre-miller-after-estime-signing",
+        "https://nfltraderumors.co/saints-releasing-rb-kendre-miller/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRgtyhxGxEG7i2Okxt9MXO4tXkT6SYFeNJ2RsRVSTb2-axRU5x1XlHHfRx6NM",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/fantasy/football/news/kendre-miller-cut-loose-by-saints/",
+          "title": "Kendre Miller: Cut loose by Saints",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRgtyhxGxEG7i2Okxt9MXO4tXkT6SYFeNJ2RsRVSTb2-axRU5x1XlHHfRx6NM"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-07/saints-release-kendre-miller-after-estime-signing",
+          "title": "Saints release Kendre Miller after Estime signing",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZj-on0aKXuehJYvjlP2Y-zY4jGaOIx7vWlekaaDfCD5PfcCsw_oykEV0WGJA"
+        },
+        {
+          "url": "https://nfltraderumors.co/saints-releasing-rb-kendre-miller/",
+          "title": "Saints Releasing RB Kendre Miller",
+          "publisher": "NFLTradeRumors.co",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMg5isHRArTGKY3vdWOMTUyeMIFUi3jqlvbPki7wQaPfPh9SAuSCo3zJnsYhc"
+        }
+      ]
+    },
+    {
+      "query": "paris fc",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T18:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cm62yqngv6e2t",
+        "https://karlobag.eu/en/sports/news/aj-auxerre-vs-paris-fc-tickets-for-the-ligue-1-match-nmtlp/",
+        "https://www.beinsports.com/en-us/soccer/ligue-1/articles/live-auxerre-vs-paris-fc-ligue-1-2026-11-07"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cm62yqngv6e2t",
+          "title": "Auxerre vs Paris FC: French Ligue 1 stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
+        },
+        {
+          "url": "https://karlobag.eu/en/sports/news/aj-auxerre-vs-paris-fc-tickets-for-the-ligue-1-match-nmtlp/",
+          "title": "AJ Auxerre vs Paris FC: tickets for the Ligue 1 match",
+          "publisher": "KarloBag.eu",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-PXGG2anFgZTZOCcKVYy4XucT4nOMwK3G-UZUkMvQHCAICFI52PBhfXHNREg"
+        },
+        {
+          "url": "https://www.beinsports.com/en-us/soccer/ligue-1/articles/live-auxerre-vs-paris-fc-ligue-1-2026-11-07",
+          "title": "Live: Auxerre vs. Paris FC | Ligue 1",
+          "publisher": "beIN SPORTS",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKIhWNVaOVxX0Q4xYVvCaiYDffpAa9FznCeNpgYslooCa10_h3mY2HMxpXqQM"
+        }
+      ]
+    },
+    {
+      "query": "fsu score",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T18:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50379360/florida-state-mike-norvell-collapse",
+        "https://www.nytimes.com/athletic/7611650/2026/11/01/mike-norvell-fired-fsu-florida-state-football-buyout/",
+        "https://www.usatoday.com/story/sports/ncaaf/acc/2026/11/06/fsu-football-coaching-search-florida-state-debt-money-candidates/92618073007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFii3ZkHEz3jWX9cIPugu-GG2ee1EMCA8RU7mZc0YO-NwvU2kyQVYXmZkFv14",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50379360/florida-state-mike-norvell-collapse",
+          "title": "Inside Florida State's ongoing nightmare",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFii3ZkHEz3jWX9cIPugu-GG2ee1EMCA8RU7mZc0YO-NwvU2kyQVYXmZkFv14"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7611650/2026/11/01/mike-norvell-fired-fsu-florida-state-football-buyout/",
+          "title": "FSU fires Mike Norvell, owes coach $50 million buyout after befuddling 7-year tenure",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTO1aBns2puBrB7uTqYXhkN7YdOoRIKifNDKUFboLxdO6lVLQkACzXBhjKYeiE"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/ncaaf/acc/2026/11/06/fsu-football-coaching-search-florida-state-debt-money-candidates/92618073007/",
+          "title": "Florida State football seeks new coach amid $306M question: Can FSU afford it?",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVnTG9GUDvZrb4GBfjBRj_i93GA26Vg23iR3MGMJg_DRZLcFGIyKlVR56pR5w"
+        }
+      ]
+    },
+    {
+      "query": "jordyn tyson",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T18:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-07/schultz-jordyn-tyson-hamstring-good-to-go-vs-browns",
+        "https://www.nola.com/sports/saints/saints-jordyn-tyson-kelvin-banks-injury-report/article_81599f15-ccee-4d85-bc9f-c24544ab6148.html",
+        "https://www.neworleanssaints.com/news/rookie-receiver-jordyn-tyson-focused-on-making-nfl-debut-with-new-orleans-saints"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoF4jGz7zwjDJKylkJN4IPQeDjQZHLIctXNxGmFJlgNmpLUPiIP8FpwD0sd0U",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-07/schultz-jordyn-tyson-hamstring-good-to-go-vs-browns",
+          "title": "Schultz: Jordyn Tyson (hamstring) good to go vs. Browns",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoF4jGz7zwjDJKylkJN4IPQeDjQZHLIctXNxGmFJlgNmpLUPiIP8FpwD0sd0U"
+        },
+        {
+          "url": "https://www.nola.com/sports/saints/saints-jordyn-tyson-kelvin-banks-injury-report/article_81599f15-ccee-4d85-bc9f-c24544ab6148.html",
+          "title": "Saints update status on Jordyn Tyson, Kelvin Banks ahead of Browns game. Will they play?",
+          "publisher": "NOLA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRX8-Iab7y8k3WTIJPOKKRxAaTR10XThUicQSMkhgInn8ERQJcKe90uXkc-bec"
+        },
+        {
+          "url": "https://www.neworleanssaints.com/news/rookie-receiver-jordyn-tyson-focused-on-making-nfl-debut-with-new-orleans-saints",
+          "title": "Rookie receiver Jordyn Tyson focused on making NFL debut with New Orleans Saints",
+          "publisher": "New Orleans Saints | NewOrleansSaints.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFSLPDYe0kAP7DL3rDhxFfuzjbTQnhyiLpw3ncRpEtz1EnWT5RtV51lNBgYPA"
+        }
+      ]
+    },
+    {
+      "query": "nate sheppard",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T18:30:00Z",
+      "related_news_urls": [
+        "https://www.newsobserver.com/sports/article317975114.html",
+        "https://www.usatoday.com/sports/ncaaf/event/2026/2969399/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=9",
+        "https://www.cbssports.com/college-football/news/nate-sheppard-stayed-duke-others-left-heisman/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdaY4qsIFiYg0Izt-sMYOGBq_dQhvIK19ray3Uf2Ul2WhoxZOTGEQd-W4MMXo",
+      "image_credit": "Raleigh News & Observer",
+      "news": [
+        {
+          "url": "https://www.newsobserver.com/sports/article317975114.html",
+          "title": "Watch Nate Sheppard set Duke football record with TD run vs NC State",
+          "publisher": "Raleigh News & Observer",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdaY4qsIFiYg0Izt-sMYOGBq_dQhvIK19ray3Uf2Ul2WhoxZOTGEQd-W4MMXo"
+        },
+        {
+          "url": "https://www.usatoday.com/sports/ncaaf/event/2026/2969399/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=9",
+          "title": "Duke Blue Devils at NC State Wolfpack - NCAAF Game Summary - Nov 07, 2026",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDPhIaILHoTzLEds84uz1umWto6v2G7S22W4ado1iTO7_M9QhkleYmVQU1zl8"
+        },
+        {
+          "url": "https://www.cbssports.com/college-football/news/nate-sheppard-stayed-duke-others-left-heisman/",
+          "title": "Nate Sheppard stayed at Duke when others left, and now he's crashing the Heisman race",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRg9IEhl-GGqKWTrHtfK3d5oMe1IteubTx8ZLwPOtv7DOqoYrB3plWA-x4orgg"
+        }
+      ]
+    },
+    {
+      "query": "youngstown st vs murray state",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T18:20:00Z",
+      "related_news_urls": [
+        "https://goracers.com/news/2026/11/6/football-racers-return-home-to-host-fourth-ranked-penguins",
+        "https://globelynews.com/americas/youngstown-state-vs-murray-state-prediction-how-to-watch/",
+        "https://www.vindy.com/sports/2026/11/penguins-5-game-win-streak-a-full-team-effort/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrfOyly8ko6EutRUSNi1HYh4U4u_C7WTXuEX03st2as7bUCsuNUUA04FlTCfo",
+      "image_credit": "Murray State University Athletics",
+      "news": [
+        {
+          "url": "https://goracers.com/news/2026/11/6/football-racers-return-home-to-host-fourth-ranked-penguins",
+          "title": "Racers Return Home to Host Fourth-Ranked Penguins",
+          "publisher": "Murray State University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrfOyly8ko6EutRUSNi1HYh4U4u_C7WTXuEX03st2as7bUCsuNUUA04FlTCfo"
+        },
+        {
+          "url": "https://globelynews.com/americas/youngstown-state-vs-murray-state-prediction-how-to-watch/",
+          "title": "Youngstown State vs. Murray State: Prediction, How to Watch",
+          "publisher": "Globely News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVDFPhHg9eYRX-Ze7Iw4e5tD-0uRZZ_MJpDnjqIJQGEuFlXKN_dTALcEmXCSE"
+        },
+        {
+          "url": "https://www.vindy.com/sports/2026/11/penguins-5-game-win-streak-a-full-team-effort/",
+          "title": "Penguins’ 5-game win streak a full-team effort",
+          "publisher": "The Vindicator",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1huV2RxEk1CmnkHZ_IMzspccYTtxgb5M032aXQ3kXK5agFeaB6Y3y8QNV4GM"
+        }
+      ]
+    },
+    {
+      "query": "jim cramer nvidia stock advice",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T18:20:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/retiree-bought-1-000-nvidia-050652743.html",
+        "https://www.thestreet.com/investing/stocks/jim-cramer-sends-a-strong-signal-to-nvidia-stock-investors",
+        "https://www.fool.com/coverage/stock-market-today/2026/11/05/stock-market-today-nov-5-nvidia-slides-on-ai-chip-selloff-as-election-uncertainty-weighs/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuz5LO3MBJkgQLRwUWZhBOkf2HME4oZCLR17H2GAjUVAPRj15i9f4al_NhCuI",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/retiree-bought-1-000-nvidia-050652743.html",
+          "title": "A Retiree Who Bought 1,000 Nvidia Shares at $122 Just Watched Chips Have Their Worst Day Since 2020",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuz5LO3MBJkgQLRwUWZhBOkf2HME4oZCLR17H2GAjUVAPRj15i9f4al_NhCuI"
+        },
+        {
+          "url": "https://www.thestreet.com/investing/stocks/jim-cramer-sends-a-strong-signal-to-nvidia-stock-investors",
+          "title": "Jim Cramer sends a strong signal to Nvidia stock investors",
+          "publisher": "TheStreet",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSz0cbGgpHzusVi-m-H6DbnZLVqWZqdjs3_CiOHPJAw2upGUFOZbhYtytSGC6k"
+        },
+        {
+          "url": "https://www.fool.com/coverage/stock-market-today/2026/11/05/stock-market-today-nov-5-nvidia-slides-on-ai-chip-selloff-as-election-uncertainty-weighs/",
+          "title": "Stock Market Today, Nov. 5: Nvidia Slides on AI Chip Selloff as Election Uncertainty Weighs",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFksGcb6KuPE6BhwtHVBUMLwTOQxmyTXQRyidpIRwrxNuz_Lkum1GfoJWuosA"
+        }
+      ]
+    },
+    {
+      "query": "sd state vs northern iowa",
+      "approx_searches": "1000+",
       "published_at": "2026-11-07T18:10:00Z",
       "related_news_urls": [
         "https://unipanthers.com/news/2026/11/6/womens-basketball-uni-womens-basketball-drops-first-game-of-the-2026-27-season-at-south-dakota-state",
@@ -38,269 +353,6 @@
           "publisher": "KELOLAND.com",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCfKCx0x7k_wUeDfEgrcoy4lxHIeJ672IT5E86UpovQrzKm1KqLKJYyor4p1A"
-        }
-      ]
-    },
-    {
-      "query": "illinois st vs north dakota",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T18:10:00Z",
-      "related_news_urls": [
-        "https://tulsaworld.com/sports/high-school/football/article_372f7740-22c0-4e90-b8af-c656edefa10c.html",
-        "https://406mtsports.com/high-school/football/the-blitz-montana-high-school-football-highlights-nov-6/article_2ac773f7-e24e-4b43-9739-cebd3aba9ec3.html",
-        "https://bismarcktribune.com/news/state-regional/crime-courts/article_8e97b2b9-e931-4b04-b6bb-9412326cd2bf.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRBjDrD-qZ_XnX3LZaj8Jk5gNg_lfajzk6kIDrjYbYsarghLH6U3zUHIXRAJ0",
-      "image_credit": "Tulsa World",
-      "news": [
-        {
-          "url": "https://tulsaworld.com/sports/high-school/football/article_372f7740-22c0-4e90-b8af-c656edefa10c.html",
-          "title": "High school football: Playoff pairings",
-          "publisher": "Tulsa World",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRBjDrD-qZ_XnX3LZaj8Jk5gNg_lfajzk6kIDrjYbYsarghLH6U3zUHIXRAJ0"
-        },
-        {
-          "url": "https://406mtsports.com/high-school/football/the-blitz-montana-high-school-football-highlights-nov-6/article_2ac773f7-e24e-4b43-9739-cebd3aba9ec3.html",
-          "title": "The Blitz: Montana high school football highlights (Nov. 6)",
-          "publisher": "406 Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyLMQu6xpoG1_t-Wcijv4UyUisks-1Yzngvi4WAK9aPIr6EhrhciobCWxRgPI"
-        },
-        {
-          "url": "https://bismarcktribune.com/news/state-regional/crime-courts/article_8e97b2b9-e931-4b04-b6bb-9412326cd2bf.html",
-          "title": "McKenzie County woman pleads not guilty to charge stemming from death of her daughter",
-          "publisher": "The Bismarck Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnXA1_YWnISWZrONVrJmqPY2fHedZjC5OHMb3L5Zv4Y0GsJl-dTQsA1cEoOWk"
-        }
-      ]
-    },
-    {
-      "query": "adt - sporting cristal",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T18:10:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/peru/nota/_/id/17485399/sporting-cristal-hernan-barcos-duelo-adt-nos-jugamos-la-vida",
-        "https://rpp.pe/futbol/descentralizado/sporting-cristal-vs-adt-en-vivo-a-que-hora-juegan-y-donde-ver-fecha-16-torneo-clausura-2026-via-l1max-partidos-de-hoy-noticia-1716287",
-        "https://depor.com/futbol-peruano/descentralizado/sporting-cristal-hernan-barcos-hablo-sobre-el-duro-partido-con-adt-en-altura-y-reacciono-a-sancion-de-pablo-guede-liga-1-video-noticia/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHEMufLvNnhxrOOrnvvsGQW3PIhS5b3Ib7QxHnRSms2yt5IHbcn0VHxL0J6zQ",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/peru/nota/_/id/17485399/sporting-cristal-hernan-barcos-duelo-adt-nos-jugamos-la-vida",
-          "title": "Hernán Barcos sobre el duelo entre Cristal y ADT: \"Nos jugamos la vida\"",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHEMufLvNnhxrOOrnvvsGQW3PIhS5b3Ib7QxHnRSms2yt5IHbcn0VHxL0J6zQ"
-        },
-        {
-          "url": "https://rpp.pe/futbol/descentralizado/sporting-cristal-vs-adt-en-vivo-a-que-hora-juegan-y-donde-ver-fecha-16-torneo-clausura-2026-via-l1max-partidos-de-hoy-noticia-1716287",
-          "title": "Sporting Cristal vs ADT EN VIVO: ¿a qué hora juegan y dónde ver la fecha 16 del Torneo Clausura 2026?",
-          "publisher": "RPP Noticias",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfmHsZfYdcQRXHwxW2eqayGByxRPXKMKWl7fJhde8_RoRI07MatwmxCQ8kw38"
-        },
-        {
-          "url": "https://depor.com/futbol-peruano/descentralizado/sporting-cristal-hernan-barcos-hablo-sobre-el-duro-partido-con-adt-en-altura-y-reacciono-a-sancion-de-pablo-guede-liga-1-video-noticia/",
-          "title": "Hernán Barcos reaccionó a la sanción de Pablo Guede y habló sobre el duro reto de Sporting Cristal",
-          "publisher": "Depor",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyd3OboSZSv6aE5wTv3R3rkpYFqcnIDUt4D8KTY5lUsADWbWAunIET-x2D9pI"
-        }
-      ]
-    },
-    {
-      "query": "fortnite power hour pirate token",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-07T18:10:00Z",
-      "related_news_urls": [
-        "https://www.forbes.com/sites/paultassi/2026/11/06/the-fortnite-lottery-odds-pirate-shop-token-is-backfiring/",
-        "https://aftermath.site/fortnite-pirate-token/",
-        "https://www.ign.com/wikis/fortnite/How_to_Unlock_Pirate_Shop_Access_-_Free_Item_Shop_Explained"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwYOykrzx1qfjaRrTx5l7b0yg-W5YjZGHeHORYJf_3bT46El0qwfj6gXPG8N8",
-      "image_credit": "Forbes",
-      "news": [
-        {
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/06/the-fortnite-lottery-odds-pirate-shop-token-is-backfiring/",
-          "title": "The ‘Fortnite’ Lottery Odds Pirate Shop Token Is Backfiring",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwYOykrzx1qfjaRrTx5l7b0yg-W5YjZGHeHORYJf_3bT46El0qwfj6gXPG8N8"
-        },
-        {
-          "url": "https://aftermath.site/fortnite-pirate-token/",
-          "title": "Fortnite's Pirate Token Item Is Everything That's Wrong With The Game These Days",
-          "publisher": "Aftermath",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRN6vNEOO4jl1XyvzGvVx9EoV6I5yc3UNCHJBSa0PslGHr3oEswjmpiWYp6bow"
-        },
-        {
-          "url": "https://www.ign.com/wikis/fortnite/How_to_Unlock_Pirate_Shop_Access_-_Free_Item_Shop_Explained",
-          "title": "How to Unlock Pirate Shop Access - Free Item Shop Explained",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMJ6GFUrkoGN3XNX7klflDQlaaCxgCTFe2BzIwPgsgtXNH8O_ehmcD0xSOWh0"
-        }
-      ]
-    },
-    {
-      "query": "dana holgorsen",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-07T18:00:00Z",
-      "related_news_urls": [
-        "https://www.on3.com/news/nebraska-fires-offensive-coordinator-dana-holgorsen/",
-        "https://www.si.com/college/nebraska/football/jeremy-pernell-time-for-huskers-matt-rhule-to-move-on-from-dana-holgorsen-01m6ckbt1zna",
-        "https://sports.yahoo.com/articles/dana-holgorsen-fired-nebraska-offensive-180726568.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRa-SweJR0Lh8m4yZfxtehLkMKlxkEd5WnwkI2x80kg74BrA8RpJyYsgUclISg",
-      "image_credit": "On3",
-      "news": [
-        {
-          "url": "https://www.on3.com/news/nebraska-fires-offensive-coordinator-dana-holgorsen/",
-          "title": "Nebraska fires offensive coordinator Dana Holgorsen",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRa-SweJR0Lh8m4yZfxtehLkMKlxkEd5WnwkI2x80kg74BrA8RpJyYsgUclISg"
-        },
-        {
-          "url": "https://www.si.com/college/nebraska/football/jeremy-pernell-time-for-huskers-matt-rhule-to-move-on-from-dana-holgorsen-01m6ckbt1zna",
-          "title": "Jeremy Pernell: It’s Time for Nebraska’s Matt Rhule to Move On From Dana Holgorsen",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsyakHlzUIEI7Y4MYF9BdBXlEPYS17EEpFJNqy0gRO3j9UWd-3b_Jp-YSZSRs"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/dana-holgorsen-fired-nebraska-offensive-180726568.html",
-          "title": "Dana Holgorsen Fired as Nebraska’s Offensive Coordinator",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrJU8hJgPhEnUn9H2vg9Hx7ZmyqXPDXM-PNplD_qkhsnTjN4DeGlELHYaZ4BY"
-        }
-      ]
-    },
-    {
-      "query": "legend glasker",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T18:00:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
-    },
-    {
-      "query": "earthquake now",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T17:50:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
-    },
-    {
-      "query": "valencia vs real madrid",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T17:50:00Z",
-      "related_news_urls": [
-        "https://www.si.com/soccer/valencia-vs-real-madrid-preview-predictions-lineups-11-7-26",
-        "https://www.bbc.com/sport/football/live/c9y7l4p8v268t",
-        "https://www.aljazeera.com/sports/liveblog/2026/11/7/valencia-vs-real-madrid-live-la-liga"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTW3iY1RcUiK4YTCqr3USbrwBT-dtZw9CphgNUuRGEU_d4y_4A0sEgHy5Ig5wg",
-      "image_credit": "Sports Illustrated",
-      "news": [
-        {
-          "url": "https://www.si.com/soccer/valencia-vs-real-madrid-preview-predictions-lineups-11-7-26",
-          "title": "Valencia vs. Real Madrid: Preview, Predictions and Lineups",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTW3iY1RcUiK4YTCqr3USbrwBT-dtZw9CphgNUuRGEU_d4y_4A0sEgHy5Ig5wg"
-        },
-        {
-          "url": "https://www.bbc.com/sport/football/live/c9y7l4p8v268t",
-          "title": "Valencia vs Real Madrid: Spanish La Liga stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQM0NKo_65Pk-Q-RuHkqXyCAJSnk5xVvzgObxNE6Cd7GPtlaHmGIhZf2RmjI7k"
-        },
-        {
-          "url": "https://www.aljazeera.com/sports/liveblog/2026/11/7/valencia-vs-real-madrid-live-la-liga",
-          "title": "Valencia vs Real Madrid LIVE: La Liga",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_Ar2qpe1HTVd79HJm2XxlM4aRzdMf57dN9U1HrqgdnmrUY6TEsMHF5pzZSc"
-        }
-      ]
-    },
-    {
-      "query": "ty dieffenbach",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T17:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50340597/ty-dieffenbach-throws-12-yard-td-pass-wayne-knight",
-        "https://www.dailynews.com/2026/11/06/no-8-ucla-football-needs-qb-ty-dieffenbach-to-be-the-difference/",
-        "https://www.fox.com/sports/football/college-football/watch-ucla-bruins-vs-minnesota-golden-gophers-nov-07-2026"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmjAnmYeZwgEcg2YT4kMUjuY5BVZ9RXIGNg2S_X2K97x2IF8Wwnoa-dHbPFdE",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50340597/ty-dieffenbach-throws-12-yard-td-pass-wayne-knight",
-          "title": "Ty Dieffenbach throws 12-yard TD pass to Wayne Knight",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmjAnmYeZwgEcg2YT4kMUjuY5BVZ9RXIGNg2S_X2K97x2IF8Wwnoa-dHbPFdE"
-        },
-        {
-          "url": "https://www.dailynews.com/2026/11/06/no-8-ucla-football-needs-qb-ty-dieffenbach-to-be-the-difference/",
-          "title": "No. 8 UCLA football needs QB Ty Dieffenbach to be the difference",
-          "publisher": "Los Angeles Daily News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSU5yAbpNlB4LMsPb0LD_pgda5Z8ThqtE6x3BJsaRmw7Dz_nc2vFATV9vdkR-c"
-        },
-        {
-          "url": "https://www.fox.com/sports/football/college-football/watch-ucla-bruins-vs-minnesota-golden-gophers-nov-07-2026",
-          "title": "Watch UCLA vs Minnesota Live: Streaming, TV Channel & Start Time - Nov 7, 2026 | CFB Week 10",
-          "publisher": "FOX One",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2JgFj6hXpcUGcUJpyylajQjKTDQ62rUTDVQkV6y6Js63wt9cNT8ejOTk30L0"
-        }
-      ]
-    },
-    {
-      "query": "msc poesia detained miami coast guard",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T17:40:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/video/6408029955112",
-        "https://www.cbsnews.com/news/coast-guard-detains-msc-poesia-cruise-ship-miami/",
-        "https://local12.com/news/local/cincinnati-couples-anniversary-trip-canceled-after-ship-detained-port-of-miami-coast-guard-florida-searching-search-cruise-atlantic-ocean-msc-poesia-captain-ohio"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKiGyX_8iUZu4GSel5UZ2sXdw1zdU7ZYFI8gYw5fRWj9FpZtxBO7bb9sIqIJg",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/video/6408029955112",
-          "title": "Over 2,000 passengers faced cruise disruption after Coast Guard blocked departure",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKiGyX_8iUZu4GSel5UZ2sXdw1zdU7ZYFI8gYw5fRWj9FpZtxBO7bb9sIqIJg"
-        },
-        {
-          "url": "https://www.cbsnews.com/news/coast-guard-detains-msc-poesia-cruise-ship-miami/",
-          "title": "Cruise canceled after Coast Guard detains ship in Miami, officials say",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRch0SoKPqXdP8dzIyUsg6HqfyC3MFkTp8zIbd11_TNmJo8mEPJzabo4JRprE"
-        },
-        {
-          "url": "https://local12.com/news/local/cincinnati-couples-anniversary-trip-canceled-after-ship-detained-port-of-miami-coast-guard-florida-searching-search-cruise-atlantic-ocean-msc-poesia-captain-ohio",
-          "title": "Cincinnati couple's anniversary trip canceled after ship detained in Miami by Coast Guard",
-          "publisher": "WKRC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxdMDOJhQwDHTjn-GcnzPYXBIsYGcN34VkK71Vfc8AV_frJ-VG679dMVEtKZI"
         }
       ]
     }
