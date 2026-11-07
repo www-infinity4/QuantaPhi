@@ -3248,7 +3248,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   const named=request.match(/\bwww-infinity4\/[A-Za-z0-9_.-]+\b/);
   // Repository names must be explicitly introduced by "named" or "called".
   // Do not mistake the article "a" in "create a repo" for a repository name.
-  const repoName=createRepository?(request.match(/\brepo(?:sitory)?\s+(?:(?:to\s+be\s+)?(?:called|named)|with\s+the\s+name)\s+([A-Za-z0-9_.-]+)/i)?.[1]
+  const repositoryCreationIntent=createRepository?brainTools?.repositoryCreationIntent?.(request):null;
+  const repoName=createRepository?(repositoryCreationIntent?.name||request.match(/\brepo(?:sitory)?\s+(?:(?:to\s+be\s+)?(?:called|named)|with\s+the\s+name)\s+([A-Za-z0-9_.-]+)/i)?.[1]
    ||request.match(/\b(?:called|named)\s+(?:repo(?:sitory)?\s+)?([A-Za-z0-9_.-]+)/i)?.[1]
    ||request.match(/\b(?:create|make|start|build)\s+(?:(?:me|a|new)\s+)*([A-Za-z][\w.-]*)\s+(?:(?:the|github)\s+)*(?:repo|repository)\b/i)?.[1]
    ||request.match(/\b(?:create|make|start|build)\s+(?:me\s+)?(?:(?:a|new|github)\s+)*(?:repo|repository)\s+([A-Za-z][\w.-]*)\b/i)?.[1]
@@ -3323,7 +3324,25 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     // The final direct receipt arrives asynchronously in the ordinary case.
     // This also handles a definite no-action reply returned immediately.
     const overflowEvidence=await maybeDelegateDirectOverflow(result,args,request,imageWorkEvidence);
-    if(overflowEvidence){
+    // Repository creation is setup, not the end of an explicitly requested
+    // package build. Reuse the authenticated runner and its deduplicated job.
+    const createdRepositoryPackage=action==='create_repository'&&
+     repositoryCreationIntent?.continueBuild===true&&result.ok===true&&
+     result.repository===repository&&
+     ['repository_created','repository_already_exists'].includes(result.status);
+    if(createdRepositoryPackage){
+     const creationReceipt=(await humanReplies()).githubReply(result);
+     try{
+      const ticket=await submitRepositoryWork(engineeringRequest+
+       '\n\nRepository already verified: '+repository+
+       '. Continue the explicit owner-requested complete package in THIS repository. Do not create another repository. Read pinned source; coordinate needed color GPT specialists, implement, test, review and return separate commit, PR, CI and deployment receipts.',
+       'explicit-user-command',repository,activeCardEvidence,imageWorkEvidence);
+      workEvidence=creationReceipt+'\n'+(await humanReplies()).workReply(ticket);
+     }catch(error){
+      workEvidence=creationReceipt+'\nThe requested package build was not confirmed as queued: '+
+       String(error?.message||error).slice(0,180)+'. Repository creation is not build completion.';
+     }
+    }else if(overflowEvidence){
      workEvidence=overflowEvidence;
     }else if(args.action==='list_workflows'&&result.ok===true&&result.complete===true&&Array.isArray(result.workflows)){
      const names=result.workflows.filter(item=>item.state==='active').slice(0,12)
@@ -3646,7 +3665,27 @@ function watchDirectGithubReceipt(requestId,operation,ownerRequest,imageEvidence
     publishDirectGithubIteration(operation,requestId,'tool_receipt',result,receiptThread);
     // Testing, merge and deployment require separate verified receipts.
     recordBrainNotice('GitHub work receipt: '+String(result.status||'unconfirmed')+'. '+String(result.summary||''));
-    const report=await maybeDelegateDirectOverflow(result,operation,ownerRequest,imageEvidence)||
+    // The GitHub API normally responds "working" first. Continue only after
+    // the verified final creation receipt, never on chat or dispatch narration.
+    // Do not turn a restored opaque receipt into fresh owner authorization.
+    let packageHandoff=null;
+    if(operation?.action==='create_repository'&&receiptThread===activeThread&&
+     brainTools?.repositoryCreationIntent?.(ownerRequest)?.continueBuild===true&&
+     result.ok===true&&result.repository===operation.repository&&
+     ['repository_created','repository_already_exists'].includes(result.status)){
+     const creationReceipt=(await humanReplies()).githubReply(result);
+     try{
+      const ticket=await submitRepositoryWork(ownerRequest+
+       '\n\nVerified repository: '+operation.repository+
+       '. Finish the original owner-requested package here with source research, color GPT planning, Green implementation, Pink tests, Purple review and independent code/CI/deployment receipts. Do not create another repository.',
+       'explicit-user-command',operation.repository,null,imageEvidence);
+      packageHandoff=creationReceipt+'\n'+(await humanReplies()).workReply(ticket);
+     }catch(error){
+      packageHandoff=creationReceipt+'\nPackage build not confirmed as queued: '+
+       String(error?.message||error).slice(0,180)+'. Repository creation is not build completion.';
+     }
+    }
+    const report=packageHandoff||await maybeDelegateDirectOverflow(result,operation,ownerRequest,imageEvidence)||
      (await humanReplies()).githubReply(result);
     appendGithubReport(report,receiptThread);
     if(pendingBits)continue;

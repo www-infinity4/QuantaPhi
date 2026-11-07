@@ -174,7 +174,9 @@ export function hasUnverifiedActionClaim(userRequest,answer){
  const request=clean(userRequest,4000),text=clean(answer,8000);
  if(!/\b(?:build|repair|fix|continue|implement|upgrade|integrat|expand|develop|website|code|repository|project|robot brain|bot|app|video generator)\b/i.test(request))return false;
  if(/^\s*(?:#{1,4}\s*|\*\*|[-*]\s*)*(?:completed|done|fixed|merged|deployed)\s*(?:[✅✔✓:!]|\*\*|\s*[-—])/im.test(text))return true;
- if(/\b(?:I|we|our (?:bots?|agents?)|the (?:bots?|agents?|robot brain))\s+(?:(?:have|has|already|just|now|successfully)\s+){0,3}(?:created|edited|implemented|merged|deployed|fixed|built|committed|uploaded|provisioned)\b/i.test(text))return true;
+ // Terse GPT narration such as "Added **file.jsx**" is not a commit receipt.
+ if(/(?:^|\n)\s*(?:[-*]\s*)?(?:added|created|implemented|built|committed|deployed|published)\s+(?:\*\*)?[\w./\u2010-\u2015-]+\.(?:js|jsx|mjs|cjs|ts|tsx|json|css|html|py|md)\b/im.test(text))return true;
+ if(/\b(?:I|we|our (?:bots?|agents?)|the (?:bots?|agents?|robot brain))\s+(?:(?:have|has|already|just|now|successfully)\s+){0,3}(?:added|created|edited|implemented|merged|deployed|fixed|built|committed|uploaded|provisioned)\b/i.test(text))return true;
  if(/\b(?:codebase|repository|pull request|branch|source file|website|page|app|site|adapter|implementation)\b.{0,120}\b(?:has been|have been|was|were|is now)\s+(?:already\s+|successfully\s+)?(?:merged|deployed|implemented|added|fixed|committed|built)\b/i.test(text))return true;
  if(/\b(?:merged into (?:the )?main|deployed to (?:production|your site)|pushed to main)\b/i.test(text)&&/\b(?:we|I|our|code|repository|branch|adapter|changes)\b/i.test(text))return true;
  return false;
