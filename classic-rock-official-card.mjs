@@ -2,7 +2,7 @@
  * No artist button may start the unrelated Infinity Radio transport.
  * Each visible YouTube embed is subject to the provider's playback permissions.
  */
-import {CLASSIC_ROCK_BANDS,linkIsAllowed} from './classic-rock-official-catalog.mjs';
+import {CLASSIC_ROCK_BANDS,linkIsAllowed} from './classic-rock-official-catalog.mjs?v=20261106-artist-radio3';
 const root=document.getElementById('classicRockOfficialMusicCard');
 if(root&&root.dataset.officialRockMounted!=='true'){
  root.dataset.officialRockMounted='true';
