@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'innovations/**'
+      - 'scripts/termux-solar-research.sh'
       - 'innovations-carousel-core.mjs'
       - 'innovations-carousel.mjs'
       - 'innovations-carousel.css'
@@ -35,6 +36,17 @@ jobs:
         run: |
           node --check innovations-carousel-core.mjs
           node --check innovations-carousel.mjs
+          bash -n scripts/termux-solar-research.sh
+          python3 - <<'PY'
+          from pathlib import Path
+          text = Path('scripts/termux-solar-research.sh').read_text()
+          assert "<<'PY'" in text
+          script = text.split("<<'PY'\n", 1)[1].split('\nPY\n', 1)[0]
+          compile(script, 'termux-collector.py', 'exec')
+          assert 'measuredEfficiency=None' in script
+          assert "publicationStatus='draft_only'" in script
+          print('Termux launcher and research collector pass syntax/claim-safety checks')
+          PY
           node --test tests/innovations-carousel.test.mjs
           python3 - <<'PY'
           import xml.etree.ElementTree as ET
