@@ -1,0 +1,41 @@
+name: Oracle standalone source video card contracts
+
+on:
+  pull_request:
+    paths:
+      - 'tv-quant-discovery.mjs'
+      - 'tv-source-quick-cards.mjs'
+      - 'tv-501-expansion.mjs'
+      - 'tv-501-expansion.css'
+      - 'oracle-card-deck.js'
+      - 'oracle-card-deck.css'
+      - 'bubbles-card-catalog.mjs'
+      - 'index.html'
+      - 'test/tv-source-quick-cards.test.mjs'
+      - 'test/government-501-tv-quant.test.mjs'
+      - '.github/workflows/oracle-standalone-source-cards.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'tv-quant-discovery.mjs'
+      - 'tv-source-quick-cards.mjs'
+      - 'tv-501-expansion.mjs'
+      - 'test/tv-source-quick-cards.test.mjs'
+
+jobs:
+  source-cards:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Parse changed browser modules
+        run: |
+          node --check tv-quant-discovery.mjs
+          node --check tv-source-quick-cards.mjs
+          node --check tv-501-expansion.mjs
+          node --check oracle-card-deck.js
+      - name: Regression and source integrity tests
+        run: node --test test/tv-source-quick-cards.test.mjs test/government-501-tv-quant.test.mjs

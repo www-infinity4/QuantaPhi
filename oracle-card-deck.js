@@ -28,7 +28,12 @@ const choices=[
  ['infinityReaderSports','Sports Almanac · Records'],
  ['infinityReaderCosmic','Beyond the Signal · Read'],
  ['phiChannelCards','Infinity TV Guide'],
- ['tvQuantExpansion','CNN CNBC NASA PBS · Quant Movies'],
+ ['tvSourceCnnQuickCard','CNN · News video'],
+ ['tvSourceCnbcQuickCard','CNBC · Business video'],
+ ['tvSourceNasaPlusQuickCard','NASA+ · Science video'],
+ ['tvSourcePbsNovaQuickCard','PBS NOVA · Science documentary'],
+ ['tvSourcePbsHistoryQuickCard','PBS American Experience · History'],
+ ['tvQuantExpansion','Your Quant Movies · In-card video'],
   ['infinityStarQuestCard','StarQuest · Infinity TV'],
   ['infinityOmniTvCard','Omni TV · Channel remote'],
   ['infinityChillerCard','Chiller · Classic suspense TV'],
@@ -99,7 +104,12 @@ const CARD_DIRECTIONS={
  infinityReaderSports:['reader-sports','Sports','Read historical games, milestones and athletic records'],
  infinityReaderCosmic:['reader-cosmic','Stories','Read original cosmic fiction and public-domain space adventures'],
  phiChannelCards:['channels','Television','Browse the Infinity TV Guide and select a channel'],
- tvQuantExpansion:['quant-tv-movies','Television','Watch NASA science documentaries and find official CNN/CNBC/PBS channels'],
+ tvSourceCnnQuickCard:['cnn-news','News','Watch an official CNN news video within the original Oracle card'],
+ tvSourceCnbcQuickCard:['cnbc-news','Business news','Watch CNBC markets and business video inside the card'],
+ tvSourceNasaPlusQuickCard:['nasa-plus-video','Science','Watch a NASA science documentary in the card'],
+ tvSourcePbsNovaQuickCard:['pbs-nova-video','Science','Watch NOVA official quantum and science documentary video'],
+ tvSourcePbsHistoryQuickCard:['pbs-history-video','History','Watch American Experience documentary video from PBS'],
+ tvQuantExpansion:['quant-tv-movies','Movies','Watch original-source science and classic movies within the card'],
   infinityStarQuestCard:['infinity-tv-starquest','Television','Play the current StarQuest selected movie and browse the guide'],
   infinityOmniTvCard:['infinity-tv-omni','Television','Use Omni TV’s remote to select verified source channels'],
   infinityChillerCard:['infinity-tv-chiller','Television','Watch a Chiller selected suspense program with original source details'],
@@ -148,7 +158,7 @@ const entries=unique.map(([id,title])=>{
 const STORE='oracle:card-activity:v1';
 const spotlightRequested=(()=>{try{
  const url=new URL(location.href);
- const names={twitter:'xTwitterCard',x:'xTwitterCard','x-twitter':'xTwitterCard','x-spaces':'xSpacesQuickCard',zeus:'coliseumZeusCard',coliseum:'coliseumZeusCard',walmart:'walmartShoppingCard',google:'source-google','kyou':'liveFoxGameCard','kyou-live':'liveFoxGameCard','kyou-fox':'liveFoxGameCard','fox-live-game':'liveFoxGameCard','fox-live-news':'liveFoxNewsCard',starquest:'infinityStarQuestCard',chiller:'infinityChillerCard','shop-lc':'infinityShopLcCard',shoplc:'infinityShopLcCard',omnitv:'infinityOmniTvCard','omni-tv':'infinityOmniTvCard','tv-guide':'phiChannelCards','fox-one':'source-fox-one',foxone:'source-fox-one','fox-one-live-news':'source-fox-one-live-news',foxnewslive:'source-fox-one-live-news',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture'};
+ const names={twitter:'xTwitterCard',x:'xTwitterCard','x-twitter':'xTwitterCard','x-spaces':'xSpacesQuickCard',zeus:'coliseumZeusCard',coliseum:'coliseumZeusCard',walmart:'walmartShoppingCard',google:'source-google','kyou':'liveFoxGameCard','kyou-live':'liveFoxGameCard','kyou-fox':'liveFoxGameCard','fox-live-game':'liveFoxGameCard','fox-live-news':'liveFoxNewsCard',starquest:'infinityStarQuestCard',chiller:'infinityChillerCard','shop-lc':'infinityShopLcCard',shoplc:'infinityShopLcCard',omnitv:'infinityOmniTvCard','omni-tv':'infinityOmniTvCard','tv-guide':'phiChannelCards',cnn:'tvSourceCnnQuickCard','cnn-news':'tvSourceCnnQuickCard',cnbc:'tvSourceCnbcQuickCard','cnbc-news':'tvSourceCnbcQuickCard','nasa-plus':'tvSourceNasaPlusQuickCard','pbs-nova':'tvSourcePbsNovaQuickCard','pbs-history':'tvSourcePbsHistoryQuickCard','fox-one':'source-fox-one',foxone:'source-fox-one','fox-one-live-news':'source-fox-one-live-news',foxnewslive:'source-fox-one-live-news',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture'};
  names.housing='disabilityHousingCard';names['disability-housing']='disabilityHousingCard';names['home-access']='disabilityHousingCard';
  const requested=url.searchParams.get('card');
  return names[requested]||(requested&&/^[a-zA-Z0-9-]+$/.test(requested)?requested:null);
