@@ -38,4 +38,16 @@
  .developer-controls strong{font-size:16px}
  .developer-card-picker button{font-size:14px}
 }
+/* At 320px, keep arrows above the wrapping description and away from the
+   floating Bubbles launcher. Preserve the full-size original builder controls. */
+@media(max-width:350px){
+ .developer-carousel{display:flex;flex-direction:column;scroll-margin-top:90px}
+ .developer-controls{order:-1;position:sticky;top:84px;z-index:50;
+  padding:9px 3px;margin-bottom:14px;border-radius:14px;
+  background:#382a42;box-shadow:0 3px 9px #24162d25}
+ .developer-head{order:0}
+ .developer-card-picker{order:1}
+ .developer-card-stage{order:2}
+ .developer-card-status{order:3}
+}
 @media(prefers-reduced-motion:reduce){.developer-carousel *{scroll-behavior:auto}}
