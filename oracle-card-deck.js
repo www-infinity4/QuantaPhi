@@ -6,7 +6,8 @@
 const host=document.getElementById('oracleCardDeck'),stage=document.getElementById('oracleCardStage');
 if(!host||!stage)return;
 const now=document.getElementById('oracleCardNow'),status=document.getElementById('oracleCardStatus'),
- next=document.getElementById('oracleCardNext'),prev=document.getElementById('oracleCardPrevious'),scroll=document.getElementById('oracleCardScroll');
+ next=document.getElementById('oracleCardNext'),prev=document.getElementById('oracleCardPrevious'),scroll=document.getElementById('oracleCardScroll'),
+ feedback=document.getElementById('oracleCardNotForMe'),hiddenManager=document.getElementById('oracleCardHiddenManager'),hiddenList=document.getElementById('oracleCardHiddenList');
 const choices=[
  ['coliseumZeusCard','ZEUS 6.2 · Coliseum Group Builder'],
  ['walmartShoppingCard','Walmart · Pizza and grocery picks'],
@@ -142,11 +143,14 @@ const CARD_DIRECTIONS={
 
 // Builders have a dedicated real-widget home beside the advertisement area.
 const DEVELOPER_CARD_IDS=new Set(['mediaStarCreator','government501Affiliates','infinityAffiliates','phiProjectActions']);
+// Mark actual registered cards once, including late-loaded sources; do not
+// maintain a second CSS list that silently misses new music/21+/X cards.
+const manageNode=entry=>{if(entry?.node)entry.node.dataset.oracleDeckManaged='true';return entry;};
 const unique=[...new Map(choices.filter(([id])=>!DEVELOPER_CARD_IDS.has(id)).map(([id,title])=>[id,title])).entries()];
 const entries=unique.map(([id,title])=>{
  const [feedId,category,feature]=CARD_DIRECTIONS[id]||['deck-'+id.toLowerCase(),'Discovery',title];
  return {id,title,feedId,category,feature,study:title,node:document.getElementById(id),marker:null,count:0};
-}).filter(x=>x.node);
+}).filter(x=>x.node).map(manageNode);
 const STORE='oracle:card-activity:v1';
 const spotlightRequested=(()=>{try{
  const url=new URL(location.href);
@@ -191,7 +195,7 @@ function registerSourceCards(){
    category,feature:'Use the real '+label+' card controls',study:'Original source card with direct controls',
    official:node.dataset.official||'',
    node,marker:null,count:Math.max(0,Math.min(1000,Number(counts['source-'+id])||0))};
-  entries.push(entry);added=true;
+  entries.push(manageNode(entry));added=true;
  }
  if(added){
   updateTabs();predict();
@@ -306,11 +310,35 @@ function registerLateWidgets(){
 registerSourceCards();
 const readDirections=()=>{try{return directionApi.cleanFeedState(JSON.parse(localStorage.getItem(directionApi.FEED_STORAGE_KEY)||'{}'))}catch{return directionApi.cleanFeedState({})}};
 function storeDirections(){if(!directionApi||!feedState)return;try{localStorage.setItem(directionApi.FEED_STORAGE_KEY,JSON.stringify(feedState))}catch{}}
-function liveCatalog(){return entries.filter(available).filter(e=>selectedTab!=='for-you'||!nonProfiling(e)).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
-function eligible(){const cards=entries.filter(available);return selectedTab==='following'&&feedState?
+function liveCatalog(){return eligible().filter(e=>selectedTab!=='for-you'||!nonProfiling(e)).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
+function eligible(){const cards=entries.filter(available).filter(e=>!feedState?.muted?.includes(e.feedId));return selectedTab==='following'&&feedState?
  cards.filter(e=>feedState.following.includes(e.feedId)):cards;}
+function updateHiddenList(){
+ if(!hiddenManager||!hiddenList)return;
+ const muted=feedState?.muted||[];
+ hiddenManager.hidden=muted.length===0;
+ hiddenList.replaceChildren();
+ for(const id of muted){
+  const entry=entries.find(e=>e.feedId===id);
+  const row=document.createElement('div');row.className='oracle-hidden-row';
+  const label=document.createElement('span');label.textContent=entry?.title||id;
+  const restore=document.createElement('button');restore.type='button';
+  restore.textContent='Show again';restore.setAttribute('aria-label','Show '+(entry?.title||id)+' again');
+  restore.addEventListener('click',()=>{
+   if(!directionApi)return;
+   feedState=directionApi.unmuteCard(readDirections(),id);storeDirections();
+   updateTabs();predict();
+   if(!active&&!expanded)start();
+   window.dispatchEvent(new CustomEvent('quantaphi:feed-updated',{detail:{origin:'oracle-viewer'}}));
+  });
+  row.append(label,restore);hiddenList.append(row);
+ }
+}
 function updateTabs(){
+ entries.forEach(manageNode);
  updateInventory();
+ updateHiddenList();
+ if(feedback)feedback.hidden=!active||!directionApi;
   for(const button of host.querySelectorAll('[data-oracle-family]')){
   const count=eligible().filter(e=>cardFamily(e)===button.dataset.oracleFamily).length;
   button.disabled=count===0;
@@ -426,6 +454,22 @@ tabButtons.forEach(b=>b.addEventListener('click',()=>{
  if(selectedTab==='for-you')void connectQuant({select:true,revision});
  predict();
 }));
+feedback?.addEventListener('click',()=>{
+ if(!directionApi||!active)return;
+ // This preference is scoped to the current browser; shared sources stay
+ // published and may be restored deliberately from Hidden cards.
+ feedState=directionApi.muteCard(readDirections(),active.feedId);storeDirections();
+ viewerTouched=true;selectionVersion++;
+ returnActive();updateTabs();
+ const first=eligible()[0];
+ if(first)show(first,false);
+ else{
+  now.textContent='No cards in this view';
+  status.textContent='You can restore a card under Hidden cards.';
+ }
+ predict();
+ window.dispatchEvent(new CustomEvent('quantaphi:feed-updated',{detail:{origin:'oracle-viewer'}}));
+});
 follow?.addEventListener('click',()=>{
  if(!directionApi||!active)return;
  feedState=directionApi.toggleFollowing(readDirections(),active.feedId);storeDirections();
@@ -452,7 +496,7 @@ void import('/following-publisher-feed.mjs?v=20261031-following1').then(({mountF
  });
  followingPublisherFeed?.sync({tab:selectedTab});
 }).catch(()=>{const target=document.getElementById('oracleFollowingFeed');if(target)target.hidden=true;});
-Promise.all([import('/quanta-feed-rank.mjs?v=20261027-infinity-accepted2'),
+Promise.all([import('/quanta-feed-rank.mjs?v=20261107-personal-feedback1'),
  import('/quanta-feed-quants.mjs?v=20261024-directions1'),
  import('/quanta-carousel-balance.mjs?v=20261027-all-families1')]).then(([r,q,f])=>{
  directionApi=r;quantApi=q;familyApi=f;feedState=readDirections();updateTabs();
