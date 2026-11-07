@@ -3,6 +3,7 @@ const base='http://127.0.0.1:8799';
 test.use({viewport:{width:390,height:844}});
 const fill=async(page,mode='interactive')=>{
  await page.goto(base+'/quick-card-builder.html',{waitUntil:'domcontentloaded'});
+ await page.locator('details.qcp-advanced summary').click();
  await page.locator('input[name="title"]').fill('Vintage Radio Shop');
  await page.locator('input[name="website"]').fill('https://example.org/shop');
  await page.locator('textarea[name="description"]').fill('A complete original website for vintage radio products and spare parts.');
