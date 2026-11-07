@@ -81,3 +81,4 @@ next_action: "One specific executable action"
 ```
 
 Keep the ticket body human-readable below the metadata with acceptance criteria, completed/remaining checklist, actual session receipts and reviewer/deployment gates.
+| Fred's Spaces · Media Star radio launcher and audio verification | [#99](https://github.com/www-infinity4/QuantaPhi/issues/99) | [TICKET-99](TICKET-99.md) · existing X replay source, first free, guarded StarCoin unlock | 🟡 | Source button and Node/mobile regressions authored; exact-head CI and playback unverified | 1 / unknown | Check CI and reviewed X playback source before any release or payment assurances |
