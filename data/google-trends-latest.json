@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-07T20:30:55.516036Z",
+  "checked_at": "2026-11-07T21:01:23.383565Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "charlotte vs inter miami",
+      "query": "why is melania going to lsu game",
       "approx_searches": "2000+",
-      "published_at": "2026-11-07T20:10:00Z",
+      "published_at": "2026-11-07T20:40:00Z",
       "related_news_urls": [
-        "https://www.charlottefootballclub.com/news/beating-miami-in-the-finale-materials-of-the-match-charlotte-fc-at-inter-miami-cf",
-        "https://www.intermiamicf.com/news/match-preview-inter-miami-cf-closes-out-2026-mls-regular-season-with-home-game-against-charlotte-fc",
-        "https://www.bbc.com/sport/football/live/cxvgdj93176rt"
+        "https://www.wafb.com/2026/11/06/lsu-junior-be-recognized-by-first-lady-melania-trump-alabama-game/",
+        "https://www.foxnews.com/video/6408072742112",
+        "https://lsusports.net/news/2026/11/6/football-vs-alabama-game-day-information-2026"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTrDwdDMq8tSj5BumUdxAbGQV8EIEWLu-2VgZ08by8MkYVPzQuHtzfv1ymWdY",
-      "image_credit": "Charlotte FC",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsqtb1sIaoXSLyUg93yCQvhWy7oi7AILuX6947qMv6ejwGuX8TfBsBvrOpMGI",
+      "image_credit": "WAFB",
       "news": [
         {
-          "url": "https://www.charlottefootballclub.com/news/beating-miami-in-the-finale-materials-of-the-match-charlotte-fc-at-inter-miami-cf",
-          "title": "Beating Miami in the Finale | Materials of the Match: Charlotte FC at Inter Miami CF",
-          "publisher": "Charlotte FC",
+          "url": "https://www.wafb.com/2026/11/06/lsu-junior-be-recognized-by-first-lady-melania-trump-alabama-game/",
+          "title": "LSU junior to be recognized by first lady Melania Trump at Alabama game",
+          "publisher": "WAFB",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTrDwdDMq8tSj5BumUdxAbGQV8EIEWLu-2VgZ08by8MkYVPzQuHtzfv1ymWdY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsqtb1sIaoXSLyUg93yCQvhWy7oi7AILuX6947qMv6ejwGuX8TfBsBvrOpMGI"
         },
         {
-          "url": "https://www.intermiamicf.com/news/match-preview-inter-miami-cf-closes-out-2026-mls-regular-season-with-home-game-against-charlotte-fc",
-          "title": "MATCH PREVIEW: Inter Miami CF Closes Out 2026 MLS Regular Season with Home Game Against Charlotte FC",
-          "publisher": "Inter Miami CF",
+          "url": "https://www.foxnews.com/video/6408072742112",
+          "title": "First lady says 'I believe in you' as millions in scholarship funding presented to foster youth at LSU",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1hU1omHOSVlSytk-X4AtQV-enQptaOTcc41jDMGL0_jQcxe4Oqt843eafYpc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9GROhKbyT7ndGMtFel8uacaUwQbwuJqGNSgGTxMVpUo5IaWQuJE_LTAsiAhM"
         },
         {
-          "url": "https://www.bbc.com/sport/football/live/cxvgdj93176rt",
-          "title": "Inter Miami vs Charlotte: Major League Soccer stats & head-to-head",
-          "publisher": "BBC",
+          "url": "https://lsusports.net/news/2026/11/6/football-vs-alabama-game-day-information-2026",
+          "title": "Football vs. Alabama Game Day Information - Enhanced Security (2026)",
+          "publisher": "LSUsports.net",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuzQMLv2hTZ5zntraFZwNloZIkfCfAo3rXy1Q9at5JRlOZnKSOMdoqplZWyfE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmYK3eePtM08tpwO98kgjO2G03OxBlz794EEPxtuKO03xe6cjQnQ9cds8r84Y"
         }
       ]
     },
     {
-      "query": "emergency landing",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-07T20:10:00Z",
+      "query": "elena rybakina",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T20:40:00Z",
       "related_news_urls": [
-        "https://www.latimes.com/california/story/2026-11-06/southwest-flight-from-orange-county-declares-emergency-lands-at-lax",
-        "https://www.nbclosangeles.com/news/local/southwest-airlines-plane-diverted-to-lax-santa-ana-san-jose/3967181/",
-        "https://people.com/southwest-flight-makes-emergency-landing-at-lax-12242133"
+        "https://www.wtatennis.com/news/4606105/elena-rybakina-medically-withdraws-from-2026-wta-finals-at-indian-wells",
+        "https://sports.yahoo.com/articles/elena-rybakina-withdraws-wta-finals-191856086.html",
+        "https://www.usatoday.com/story/sports/tennis/2026/11/07/elena-rybakina-withdraws-wta-finals-indian-wells/92663813007/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNO3SHSsB41PYlAkJz6GlZczrcSVpUJ8kemeIu7MO-IRF6U9y9MD8z99obK4U",
-      "image_credit": "Los Angeles Times",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIU0me4ZC1vzCwQN80BJRx-BgsTim9z5PwQ988qooSzyEGa48PB0NmJOJF03U",
+      "image_credit": "WTA Tennis",
       "news": [
         {
-          "url": "https://www.latimes.com/california/story/2026-11-06/southwest-flight-from-orange-county-declares-emergency-lands-at-lax",
-          "title": "Southwest flight from Orange County declares emergency, lands at LAX",
-          "publisher": "Los Angeles Times",
+          "url": "https://www.wtatennis.com/news/4606105/elena-rybakina-medically-withdraws-from-2026-wta-finals-at-indian-wells",
+          "title": "Elena Rybakina withdraws from 2026 WTA Finals at Indian Wells, cites medical issue",
+          "publisher": "WTA Tennis",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNO3SHSsB41PYlAkJz6GlZczrcSVpUJ8kemeIu7MO-IRF6U9y9MD8z99obK4U"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIU0me4ZC1vzCwQN80BJRx-BgsTim9z5PwQ988qooSzyEGa48PB0NmJOJF03U"
         },
         {
-          "url": "https://www.nbclosangeles.com/news/local/southwest-airlines-plane-diverted-to-lax-santa-ana-san-jose/3967181/",
-          "title": "Southwest Airlines plane diverted to LAX on flight from Santa Ana to San Jose",
-          "publisher": "NBC Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvFX7Al4Kku_twAupHs22KnvgV5e6FPK7qUgDy1JWHER-3esN_jr2HOXYQl8E"
-        },
-        {
-          "url": "https://people.com/southwest-flight-makes-emergency-landing-at-lax-12242133",
-          "title": "Southwest Flight Forced into Emergency Landing at LAX Following Mid-Air Scare",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKilmdyzwmoR7sKXp3Elv_v1FV8koJ5RrhNunqEzNjCpCAdmBd1IUQU-ZHWUg"
-        }
-      ]
-    },
-    {
-      "query": "yale football",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T20:10:00Z",
-      "related_news_urls": [
-        "https://brownbears.com/news/2026/11/6/football-set-for-saturday-matchup-at-yale",
-        "https://yaledailynews.com/articles/bulldogs-to-take-on-bears-in-regular-season-finale-with-playoff-stakes",
-        "https://www.espn.com/espnplus/player/_/eventCalendarId/401867810"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUES-GzwVZTBzJbHzB8xNhnWVSkyF-Q9I4i9Aq9Qj6iNfismU8y65VxMlheeI",
-      "image_credit": "Brown University Athletics",
-      "news": [
-        {
-          "url": "https://brownbears.com/news/2026/11/6/football-set-for-saturday-matchup-at-yale",
-          "title": "Football Set for Saturday Matchup at Yale",
-          "publisher": "Brown University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUES-GzwVZTBzJbHzB8xNhnWVSkyF-Q9I4i9Aq9Qj6iNfismU8y65VxMlheeI"
-        },
-        {
-          "url": "https://yaledailynews.com/articles/bulldogs-to-take-on-bears-in-regular-season-finale-with-playoff-stakes",
-          "title": "Bulldogs to take on Bears in regular season finale with playoff stakes",
-          "publisher": "Yale Daily News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ56zPA8cqYe3gAe7yPz7ddcK30je43NfRNpCPBMxioeaDM_aukxLhTeRGLGj8"
-        },
-        {
-          "url": "https://www.espn.com/espnplus/player/_/eventCalendarId/401867810",
-          "title": "Brown vs. Yale 11/7/26 - Stream the Game Live - Watch ESPN",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLyRvHi0yc2FZIl4_TnTOxw5OpqIL1AUbrt24fvhpD3_UJBnoqZBJXamSmih4"
-        }
-      ]
-    },
-    {
-      "query": "vcu vs memphis",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T20:10:00Z",
-      "related_news_urls": [
-        "https://www.commercialappeal.com/story/sports/college/memphis-tigers/basketball/2026/11/07/memphis-basketball-vcu-tv-channel-today-time/92659026007/",
-        "https://sports.yahoo.com/articles/watch-memphis-vs-vcu-140047247.html",
-        "https://www.bleachernation.com/picks/2026/11/07/aac-basketball-predictions-computer-picks-and-best-bets-november-7-3/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdlRbk9hY_O6Vsxxd4YC6XrqHxSe6vO0Ugkipgb_XnuN526QGckXWNI4GhG1k",
-      "image_credit": "The Commercial Appeal",
-      "news": [
-        {
-          "url": "https://www.commercialappeal.com/story/sports/college/memphis-tigers/basketball/2026/11/07/memphis-basketball-vcu-tv-channel-today-time/92659026007/",
-          "title": "What channel is Memphis basketball vs VCU on today? Time, TV schedule",
-          "publisher": "The Commercial Appeal",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdlRbk9hY_O6Vsxxd4YC6XrqHxSe6vO0Ugkipgb_XnuN526QGckXWNI4GhG1k"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/watch-memphis-vs-vcu-140047247.html",
-          "title": "How to watch Memphis vs. VCU",
+          "url": "https://sports.yahoo.com/articles/elena-rybakina-withdraws-wta-finals-191856086.html",
+          "title": "Elena Rybakina withdraws from WTA Finals, Marta Kostyuk takes her place",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCbgqA2XfoNren0mRK5kaCJxDzDSEdRg8XR1go9e29ygKUVxUf0EuLTVqpxF4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBO5tWTwzc_ODR5RsXgw5tB6nCKFR5zWc21oqhET5a-DMiYpOXBpwRWFFpeCI"
         },
         {
-          "url": "https://www.bleachernation.com/picks/2026/11/07/aac-basketball-predictions-computer-picks-and-best-bets-november-7-3/",
-          "title": "AAC Basketball Predictions, Computer Picks and Best Bets | November 7",
-          "publisher": "Bleacher Nation",
+          "url": "https://www.usatoday.com/story/sports/tennis/2026/11/07/elena-rybakina-withdraws-wta-finals-indian-wells/92663813007/",
+          "title": "Elena Rybakina withdraws from WTA Finals, Marta Kostyuk takes her place",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdSL4zyTCvIrQO_qF4oVxQ5SNmQFs7xRZGtJfsI9c3KvrFKsRhJ28qP3O6GLo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLG03Df0-pgojRuy14qCZOGN8ZrRc6ui3lO9WG8jwCUPU8sQ-6YE_gBz79VtA"
         }
       ]
     },
     {
-      "query": "rice vs north texas",
+      "query": "arda güler",
       "approx_searches": "500+",
-      "published_at": "2026-11-07T20:10:00Z",
+      "published_at": "2026-11-07T20:40:00Z",
       "related_news_urls": [
-        "https://collegesportswire.usatoday.com/story/sports/college/college-football/2026/11/07/rice-north-texas-week-10-betting-odds-prediction/92623715007/",
-        "https://zonecoverage.com/2026/gambling/tiny-nicks-gambling-picks-11-07-5/",
-        "https://www.lhindependent.com/news/state/north-texas-gameday-brown-sees-focus-on-improvement-as-key-to-conference-title-run/article_3b62dfe8-ea51-502a-86e9-83a586982263.html"
+        "https://www.fanatik.com.tr/real-madrid/live-valencia-real-madrid-maci-canli-anlatim-val-rm-maci-kadrolari-skoru-ve-istatistikleri-laliga-12-hafta-maci-2643682",
+        "https://www.hurriyet.com.tr/sporarena/jose-mourinho-yarinki-mac-beni-korkutuyor-43368494",
+        "https://www.milliyet.com.tr/nabiz/valencia-real-madrid-maci-hangi-kanalda-saat-kacta-canli-yayinlanacak-valencia-real-madrid-maci-muhtemel-11ler-ile-arda-guler-oynayacak-mi-7696201"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEQiNAR4TcXwb_lMQ-PSgEszBK7nuu0Rvi0r2QJNoBtOK2txrkVOcqhMwm1iw",
-      "image_credit": "College Sports Wire",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGbbYU9y6yNyoXFr1aC0nnmyyX61DLRF_oV4ft-CFk-6h-X4Ourm_afdI10AU",
+      "image_credit": "Fanatik",
       "news": [
         {
-          "url": "https://collegesportswire.usatoday.com/story/sports/college/college-football/2026/11/07/rice-north-texas-week-10-betting-odds-prediction/92623715007/",
-          "title": "Rice vs. North Texas: Week 10 Betting Odds, Prediction",
-          "publisher": "College Sports Wire",
+          "url": "https://www.fanatik.com.tr/real-madrid/live-valencia-real-madrid-maci-canli-anlatim-val-rm-maci-kadrolari-skoru-ve-istatistikleri-laliga-12-hafta-maci-2643682",
+          "title": "Valencia - Real Madrid maçı Canlı Anlatım - VAL RM maçı kadroları, skoru ve istatistikleri (LaLiga 12. hafta maçı)",
+          "publisher": "Fanatik",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEQiNAR4TcXwb_lMQ-PSgEszBK7nuu0Rvi0r2QJNoBtOK2txrkVOcqhMwm1iw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGbbYU9y6yNyoXFr1aC0nnmyyX61DLRF_oV4ft-CFk-6h-X4Ourm_afdI10AU"
         },
         {
-          "url": "https://zonecoverage.com/2026/gambling/tiny-nicks-gambling-picks-11-07-5/",
-          "title": "Tiny Nick's Gambling Picks 11/07",
-          "publisher": "Zone Coverage",
+          "url": "https://www.hurriyet.com.tr/sporarena/jose-mourinho-yarinki-mac-beni-korkutuyor-43368494",
+          "title": "Jose Mourinho: 'Yarınki maç beni korkutuyor!'",
+          "publisher": "Hürriyet",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQY-ZMO30-wXLTB3t6WssRncOTOt9E3CJwbEbOhgwYgLj7D5Yl0PfJRHOkDCM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO56OLLjOCHmNs0lX7C7niqsOZXOkAJX-pncAJVDk_4pLYGA3DFJ-gjgDwLEk"
         },
         {
-          "url": "https://www.lhindependent.com/news/state/north-texas-gameday-brown-sees-focus-on-improvement-as-key-to-conference-title-run/article_3b62dfe8-ea51-502a-86e9-83a586982263.html",
-          "title": "North Texas gameday: Brown sees focus on improvement as key to conference title run",
-          "publisher": "Liberty Hill Independent",
+          "url": "https://www.milliyet.com.tr/nabiz/valencia-real-madrid-maci-hangi-kanalda-saat-kacta-canli-yayinlanacak-valencia-real-madrid-maci-muhtemel-11ler-ile-arda-guler-oynayacak-mi-7696201",
+          "title": "VALENCİA REAL MADRİD MAÇI CANLI YAYIN KANALI: Valencia Real Madrid maçı hangi kanalda, saat kaçta canlı yayınlanacak?",
+          "publisher": "Milliyet",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQacZUEa3LPqKg1KxJLywd0yayqblb_vNVHBhn_YL5_87jeJzZg8qqJ88m9f3c"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR55hOX8g92Pfn8nUknM6Qqcypu2gFWG2K1O8Ha1wzJ6xiJZ_8Qm2KBL_io90s"
         }
       ]
     },
     {
-      "query": "mo state vs fiu",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T20:10:00Z",
+      "query": "usc football schedule",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T20:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/missouri-state-vs-fiu-prediction-110126278.html",
-        "https://fiusports.com/news/2026/11/5/football-matches-up-with-missouri-state-for-homecoming-saturday.aspx",
-        "https://www.ky3.com/2026/11/06/what-know-florida-international-meets-missouri-state-cusa-action/"
+        "https://www.cbssports.com/college-football/news/big-ten-power-rankings-week-10-lincoln-riley-usc/",
+        "https://sports.yahoo.com/articles/usc-playing-today-trojans-football-110805387.html",
+        "https://www.on3.com/teams/usc-trojans/news/wearesc-weekly-roundtable-how-high-will-usc-jump-during-bye-week/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR05aiWQnbN9RaPl-RJZqzwSCQm-x1XvhD2eWIVwU051EQlesqOPDsUt30i-FI",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRL2ZJeMynW2-TJ-fSxnDo_rb6hBUYgLEqErJgmyR6X0dKuCi99CLoGsXxFABI",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/college-football/news/big-ten-power-rankings-week-10-lincoln-riley-usc/",
+          "title": "Big Ten Power Rankings, Week 10: Can Lincoln Riley lead USC on a late charge?",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRL2ZJeMynW2-TJ-fSxnDo_rb6hBUYgLEqErJgmyR6X0dKuCi99CLoGsXxFABI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/usc-playing-today-trojans-football-110805387.html",
+          "title": "Is USC playing today? Trojans football schedule, next game after Week 10 bye",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2el5h2LJ7DszL9PWAbt1JXPmH3lJeczDPsFEnCzkbP8OBuiRiNzuxqUl97k4"
+        },
+        {
+          "url": "https://www.on3.com/teams/usc-trojans/news/wearesc-weekly-roundtable-how-high-will-usc-jump-during-bye-week/",
+          "title": "WeAreSC Weekly Roundtable: How High Will USC Jump During Bye Week",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfE_nFX8rpuDbfn0GHWS-8YzdlV5ArVVn8K9s2jl90OdYHwVEeySUd7sxOkVU"
+        }
+      ]
+    },
+    {
+      "query": "drew mestemaker",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T20:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/d-live-todd-mcshay-identifies-193647362.html",
+        "https://www.cbssports.com/nfl/draft/news/is-drew-mestemaker-really-qb1-troubling-trend-lessons-from-caleb-williams-trevor-lawrence/",
+        "https://www.espn.com/radio/play/_/id/50386680"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQio1rfmQ_Jmd4F3sL4vX83JI27T7BeTCdYIYe7WDEqR5QbklNKhzYTzlCQPqE",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/missouri-state-vs-fiu-prediction-110126278.html",
-          "title": "Missouri State vs FIU Prediction, Pick, NCAAF Odds for Saturday, Nov. 7",
+          "url": "https://sports.yahoo.com/articles/d-live-todd-mcshay-identifies-193647362.html",
+          "title": "‘I’d Have To Live With It’ — Todd McShay Identifies Scenario for NFL Teams To Draft Drew Mestemaker Over Jeremiah Smith",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR05aiWQnbN9RaPl-RJZqzwSCQm-x1XvhD2eWIVwU051EQlesqOPDsUt30i-FI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQio1rfmQ_Jmd4F3sL4vX83JI27T7BeTCdYIYe7WDEqR5QbklNKhzYTzlCQPqE"
         },
         {
-          "url": "https://fiusports.com/news/2026/11/5/football-matches-up-with-missouri-state-for-homecoming-saturday.aspx",
-          "title": "Football Matches Up with Missouri State for Homecoming Saturday",
-          "publisher": "FIU Athletics",
+          "url": "https://www.cbssports.com/nfl/draft/news/is-drew-mestemaker-really-qb1-troubling-trend-lessons-from-caleb-williams-trevor-lawrence/",
+          "title": "Is Drew Mestemaker really QB1? A troubling trend and lessons from Caleb Williams, Trevor Lawrence",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREXpYDhdUaptjygL2SCkOhVvcvsK6kNjsok8UE4qxZEFXVYoGj8LES5M9oQ9k"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_KbBD1_eBMIct4vj_AOv_Ubyo2I-JAsWrKI0dL1rE6oLuhw-d2bdzt2mf-3I"
         },
         {
-          "url": "https://www.ky3.com/2026/11/06/what-know-florida-international-meets-missouri-state-cusa-action/",
-          "title": "WHAT TO KNOW: Florida International meets Missouri State in CUSA action",
-          "publisher": "KY3",
+          "url": "https://www.espn.com/radio/play/_/id/50386680",
+          "title": "NFL on ESPN - Move the Sticks: Who's the No. 1 QB in 2027? The case for Mestemaker, Carr, Mensah, Chambliss & more",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQetJU-KxxQ-2iLsncue2CT21JaOIoP7mzuEstvk178FqIc5uPSqBRBxO15Ybg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDizdQoD3NZpZzDPoxCZ-Ba7fuH-0ICNHeRj_BfzjFTBbUibZGlkT0ieUMr7Y"
         }
       ]
     },
     {
-      "query": "la tech vs troy",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T20:10:00Z",
+      "query": "heisman odds",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T20:40:00Z",
       "related_news_urls": [
-        "https://lincolnparishjournal.com/2026/11/07/bulldogs-look-to-take-another-step-toward-sun-belt-west-title/",
-        "https://www.al.com/sports/2026/11/scouting-report-what-you-need-to-know-for-troys-game-vs-louisiana-tech.html",
-        "https://collegesportswire.usatoday.com/story/sports/college/college-football/2026/11/07/louisiana-tech-troy-week-10-betting-odds-prediction/92624478007/"
+        "https://sports.yahoo.com/college-football/article/heisman-watch-will-julian-sayins-injury-ultimately-derail-jeremiah-smiths-heisman-hopes-150703738.html",
+        "https://www.elevenwarriors.com/ohio-state-football/2026/11/165140/heisman-watch-jeremiah-smith-regains-lead-in-the-heisman-trophy-odds-following-miami-star-malachi-toneys-injury",
+        "https://www.cbssports.com/college-football/news/malachi-toney-injury-heisman-race-jeremiah-smith-darian-mensah/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9-fv56jQzziOTFmyx5ERjc_KFkZjPExXIj5sId5u2oIYN_z5d-NKNryHX8so",
-      "image_credit": "Lincoln Parish Journal",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG6mfntx9VZlrr4vy3qOTdEyD8MgisTSj74jQ16knypAzEMSJj4r7vpV0-orA",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://lincolnparishjournal.com/2026/11/07/bulldogs-look-to-take-another-step-toward-sun-belt-west-title/",
-          "title": "Bulldogs look to take another step toward Sun Belt West title",
-          "publisher": "Lincoln Parish Journal",
+          "url": "https://sports.yahoo.com/college-football/article/heisman-watch-will-julian-sayins-injury-ultimately-derail-jeremiah-smiths-heisman-hopes-150703738.html",
+          "title": "Heisman Watch: Will Julian Sayin's injury ultimately derail Jeremiah Smith's Heisman hopes?",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9-fv56jQzziOTFmyx5ERjc_KFkZjPExXIj5sId5u2oIYN_z5d-NKNryHX8so"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG6mfntx9VZlrr4vy3qOTdEyD8MgisTSj74jQ16knypAzEMSJj4r7vpV0-orA"
         },
         {
-          "url": "https://www.al.com/sports/2026/11/scouting-report-what-you-need-to-know-for-troys-game-vs-louisiana-tech.html",
-          "title": "Scouting report: What you need to know for Troy’s game vs. Louisiana Tech",
-          "publisher": "AL.com",
+          "url": "https://www.elevenwarriors.com/ohio-state-football/2026/11/165140/heisman-watch-jeremiah-smith-regains-lead-in-the-heisman-trophy-odds-following-miami-star-malachi-toneys-injury",
+          "title": "Jeremiah Smith Regains Lead in the Heisman Trophy Odds Following Miami Star Malachi Toney's Injury",
+          "publisher": "Eleven Warriors",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrCmc1_LWDUefSCbqsAfsounXpi4sKOrkbqN255qAqpbsDCgEcZvtvN9eiu9c"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbn2So2bROqnb25I35KbOy9L1LuRRtN2P6qO0MmIW-AgNqv1Ccpsu83R9U67Y"
         },
         {
-          "url": "https://collegesportswire.usatoday.com/story/sports/college/college-football/2026/11/07/louisiana-tech-troy-week-10-betting-odds-prediction/92624478007/",
-          "title": "Louisiana Tech vs. Troy: Week 10 Betting Odds, Prediction",
+          "url": "https://www.cbssports.com/college-football/news/malachi-toney-injury-heisman-race-jeremiah-smith-darian-mensah/",
+          "title": "Malachi Toney injury reshapes Heisman race as Jeremiah Smith, Darian Mensah gain momentum",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-GAa_9YynZBYYovLHouIKmhSZJec0Z8AzajWRMQUbcWQ3jZFMCf6_Le5EDwA"
+        }
+      ]
+    },
+    {
+      "query": "real",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T20:40:00Z",
+      "related_news_urls": [
+        "https://www.yardbarker.com/soccer/articles/man_united_confident_of_winning_wonderkid_transfer_battle_despite_city_arsenal_threat/s1_15953_44528965",
+        "https://www.spox.com/fussball/news/real-salt-lake-gegen-la-galaxy-heute-live-sehen-wer-uebertraegt-das-spiel-im-tv-und-livestream/bltdd98645b2c33f0b0",
+        "https://www.vietnam.vn/de/nhan-dinh-real-salt-lake-vs-los-angeles-galaxy-vong-34-mls-nha-nghe-my"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5hXdly3GGpdEQ9bR7auRdqL6RmHpBCsura6ZTJNCKiHfBmXaNaDWTc911714",
+      "image_credit": "Yardbarker",
+      "news": [
+        {
+          "url": "https://www.yardbarker.com/soccer/articles/man_united_confident_of_winning_wonderkid_transfer_battle_despite_city_arsenal_threat/s1_15953_44528965",
+          "title": "Man United confident of winning wonderkid transfer battle despite City & Arsenal threat",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5hXdly3GGpdEQ9bR7auRdqL6RmHpBCsura6ZTJNCKiHfBmXaNaDWTc911714"
+        },
+        {
+          "url": "https://www.spox.com/fussball/news/real-salt-lake-gegen-la-galaxy-heute-live-sehen-wer-uebertraegt-das-spiel-im-tv-und-livestream/bltdd98645b2c33f0b0",
+          "title": "Real Salt Lake gegen LA Galaxy: Wo läuft das Spiel im TV und Livestream? Anstoßzeit und Sender",
+          "publisher": "SPOX.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStmjlXflM9QXVK1c0w6jO-DcBTo4kBt0TsKhyNPhYNxPV9kG312GyMzHGEPmM"
+        },
+        {
+          "url": "https://www.vietnam.vn/de/nhan-dinh-real-salt-lake-vs-los-angeles-galaxy-vong-34-mls-nha-nghe-my",
+          "title": "Spielvorschau Real Salt Lake gegen Los Angeles Galaxy, MLS (American Professional League), 34. Spieltag",
+          "publisher": "Vietnam.vn",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTY6jndYO454OjC6RRSHibWq4OlGM4KBMS8xIlX7Y_gYx0FJ7CPpQJK3QmEf9E"
+        }
+      ]
+    },
+    {
+      "query": "arkansas state football",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T20:40:00Z",
+      "related_news_urls": [
+        "https://www.covers.com/sport/football/ncaaf/matchup/378941/picks",
+        "https://collegesportswire.usatoday.com/story/sports/college/college-football/2026/11/07/ul-monroe-arkansas-state-week-10-betting-odds-prediction/92608775007/",
+        "https://basketball.realgm.com/betting/picks/ulm-vs-arkansas-state-prediction-11-07-2026/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpgdq_-Dqy8xkPJlci5M0TxKDuae7EH3VDVPVFvlBCkQSlKOvubJjPFqHzyPk",
+      "image_credit": "Covers.com",
+      "news": [
+        {
+          "url": "https://www.covers.com/sport/football/ncaaf/matchup/378941/picks",
+          "title": "Arkansas State Red Wolves vs Louisiana Tech Bulldogs Prediction, Picks, Prop Bets For November 21, 2026 - NCAAF",
+          "publisher": "Covers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpgdq_-Dqy8xkPJlci5M0TxKDuae7EH3VDVPVFvlBCkQSlKOvubJjPFqHzyPk"
+        },
+        {
+          "url": "https://collegesportswire.usatoday.com/story/sports/college/college-football/2026/11/07/ul-monroe-arkansas-state-week-10-betting-odds-prediction/92608775007/",
+          "title": "UL Monroe vs. Arkansas State: Week 10 Betting Odds, Prediction",
           "publisher": "College Sports Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhMsEKPfCNWD5NKJrpm3-RX3EvkljLzFmPsvPNAEPdr64RIdldz_U-dCBS7tw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtgwwax0Sf7IBON6PuvZPmYC_SixPbWP3j5cDgh6buVitVrokEEvIPCGXnhA4"
+        },
+        {
+          "url": "https://basketball.realgm.com/betting/picks/ulm-vs-arkansas-state-prediction-11-07-2026/",
+          "title": "Basketball News, Rumors, Scores, Stats, Analysis, Depth Charts, Forums",
+          "publisher": "RealGM",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLwv-q6o2UpzWe822iwolewZO7JylMNQ7Fho3Xzi87h7t2aVKUSPvrGel7JVk"
         }
       ]
     },
     {
-      "query": "boca vs defensa y justicia",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-07T20:00:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/argentina/nota/_/id/17482233/boca-la-formacion-vs-defensa-y-justicia-tabla-anual-torneo-clausura-2026",
-        "https://www.sportingnews.com/mx/futbol/news/como-salio-boca-defensa-justicia-resultado-goles-clausura-2026/661dadc6d9528f40fec23f9a",
-        "https://www.ole.com.ar/boca-juniors/listo-bombonera-partido-boca-defensa_3_hwnaPvY2hX.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_9Vxco2Mr0gni7KXPyV6OvOqHd2bI-EsNFR9MHgw8gWXAL7ue9tLb-4ypKzI",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/argentina/nota/_/id/17482233/boca-la-formacion-vs-defensa-y-justicia-tabla-anual-torneo-clausura-2026",
-          "title": "Con una duda, Arruabarrena arma el equipo de Boca para definir la Tabla Anual ante Defensa",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_9Vxco2Mr0gni7KXPyV6OvOqHd2bI-EsNFR9MHgw8gWXAL7ue9tLb-4ypKzI"
-        },
-        {
-          "url": "https://www.sportingnews.com/mx/futbol/news/como-salio-boca-defensa-justicia-resultado-goles-clausura-2026/661dadc6d9528f40fec23f9a",
-          "title": "Cómo salió Boca vs. Defensa y Justicia hoy: Formaciones, resultado y goles del partido por el Clausura 2026",
-          "publisher": "Sporting News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOyXCP2gjJEsAragkpAEv3gUb-P7kt4VHmlkMAoOE0R0t0K5K-UGUV3O7_I_o"
-        },
-        {
-          "url": "https://www.ole.com.ar/boca-juniors/listo-bombonera-partido-boca-defensa_3_hwnaPvY2hX.html",
-          "title": "Todo listo en la Bombonera para el partido entre Boca y Defensa",
-          "publisher": "Olé",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTomf8Wtn2dL6L4AqrZCyh3dAPrNcSnnyKvj9IQWNvyZQVyC1DG-szHp7Ws7jo"
-        }
-      ]
-    },
-    {
-      "query": "roma",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-07T20:00:00Z",
-      "related_news_urls": [
-        "https://www.gazzetta.it/Calcio/Serie-A/Roma/07-11-2026/roma-sassuolo-live-risultato-e-gol-in-diretta-serie-a.shtml",
-        "https://www.corrieredellosport.it/foto/calcio/serie-a/roma/2026/11/07-152430789/roma-sassuolo_la_probabile_formazione_di_gasperini",
-        "https://www.fantacalcio.it/news/calcio-italia/07_11_2026/roma-sassuolo-formazioni-ufficiali-500419"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKwyceiGahJwS72n4L1XpC4mDoJBucLOy3c4Xsib0Hpeweo5tpRclbvP97uJ8",
-      "image_credit": "La Gazzetta dello Sport",
-      "news": [
-        {
-          "url": "https://www.gazzetta.it/Calcio/Serie-A/Roma/07-11-2026/roma-sassuolo-live-risultato-e-gol-in-diretta-serie-a.shtml",
-          "title": "LIVE Alle 20.45 Roma-Sassuolo, le ufficiali: para ancora Vasquez. Aquilani con Esposito",
-          "publisher": "La Gazzetta dello Sport",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKwyceiGahJwS72n4L1XpC4mDoJBucLOy3c4Xsib0Hpeweo5tpRclbvP97uJ8"
-        },
-        {
-          "url": "https://www.corrieredellosport.it/foto/calcio/serie-a/roma/2026/11/07-152430789/roma-sassuolo_la_probabile_formazione_di_gasperini",
-          "title": "Roma-Sassuolo, la formazione ufficiale di Gasperini",
-          "publisher": "Corriere dello Sport",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3wWb4OVJUwvS2IujoQHScbgngTNFywRRrreZRj69t9xh4h4B_Hp8DkHkrlCI"
-        },
-        {
-          "url": "https://www.fantacalcio.it/news/calcio-italia/07_11_2026/roma-sassuolo-formazioni-ufficiali-500419",
-          "title": "Roma-Sassuolo, formazioni ufficiali: ci sono Mora, Koné ed Hermoso",
-          "publisher": "Fantacalcio",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRsyNUxd7FX93G-9dk6K0SxjOmInPOtCVqTmfbPFgq8WQb8IK90FuWtRzVLY_I"
-        }
-      ]
-    },
-    {
-      "query": "sporting vs moreirense",
+      "query": "whit weeks",
       "approx_searches": "200+",
-      "published_at": "2026-11-07T20:00:00Z",
+      "published_at": "2026-11-07T20:40:00Z",
       "related_news_urls": [
-        "https://www.abola.pt/noticias/a-revolucao-silenciosa-o-onze-provavel-do-sporting-para-a-estreia-de-paulo-fonseca-2026110700364277647",
-        "https://www.sporttv.pt/noticias/867113/luis-catarino-analisa-primeiro-11-inicial-de-paulo-fonseca",
-        "https://cnnportugal.iol.pt/hoje-vai-ser-noticia/hoje-e-noticia/hoje-vai-ser-noticia-179404200"
+        "https://www.on3.com/news/lsu-te-treydez-green-appears-friday-availability-report-questionable-vs-alabama/",
+        "https://www.espn.com/college-football/story/_/id/50384078/lsu-whit-weeks-doubtful-return-alabama",
+        "https://247sports.com/college/lsu/article/lsu-tigers-football-sec-availability-report-whit-weeks-lane-kiffin-alabama-ryan-coleman-williams-292203741/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQua4epYIeY1jPW9MVRlGSt9nz5ps3buGl5C_aynikwZjrwy4Sg3a7cYUI6wQU",
-      "image_credit": "A Bola",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8kXEzh7UNvr3K0SbGXR34LHMFTvQZgs1xQz5gM0UF6Bo3K9mgFRL9x0eGGoA",
+      "image_credit": "On3",
       "news": [
         {
-          "url": "https://www.abola.pt/noticias/a-revolucao-silenciosa-o-onze-provavel-do-sporting-para-a-estreia-de-paulo-fonseca-2026110700364277647",
-          "title": "A revolução silenciosa: o onze provável do Sporting para a estreia de Paulo Fonseca",
-          "publisher": "A Bola",
+          "url": "https://www.on3.com/news/lsu-te-treydez-green-appears-friday-availability-report-questionable-vs-alabama/",
+          "title": "LSU TE Trey'Dez Green appears on Friday availability report as questionable vs. Alabama",
+          "publisher": "On3",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQua4epYIeY1jPW9MVRlGSt9nz5ps3buGl5C_aynikwZjrwy4Sg3a7cYUI6wQU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8kXEzh7UNvr3K0SbGXR34LHMFTvQZgs1xQz5gM0UF6Bo3K9mgFRL9x0eGGoA"
         },
         {
-          "url": "https://www.sporttv.pt/noticias/867113/luis-catarino-analisa-primeiro-11-inicial-de-paulo-fonseca",
-          "title": "Luís Catarino analisa primeiro 11 inicial de Paulo Fonseca",
-          "publisher": "Sport TV",
+          "url": "https://www.espn.com/college-football/story/_/id/50384078/lsu-whit-weeks-doubtful-return-alabama",
+          "title": "LSU's Whit Weeks doubtful to return against Alabama",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEurFBNM1kZOfLWFl3YyNDxt1tJEPMxn2xUkBwr60dFx5OPWyb3l2fJTo-SCA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnhJvnMJZwUnjt7ZSR3RSbT1rnz9CklaAze7otMhWLYu1xWvoeH9hC640UkUY"
         },
         {
-          "url": "https://cnnportugal.iol.pt/hoje-vai-ser-noticia/hoje-e-noticia/hoje-vai-ser-noticia-179404200",
-          "title": "Hoje vai ser notícia",
-          "publisher": "CNN Portugal",
+          "url": "https://247sports.com/college/lsu/article/lsu-tigers-football-sec-availability-report-whit-weeks-lane-kiffin-alabama-ryan-coleman-williams-292203741/",
+          "title": "SEC Availability Report: LSU linebacker Whit Weeks' status revealed for Week 10 against Alabama",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSb3Iylmk9K4EesE8bE7CuY3HT9VYucUUn90r-HfHRt8jibWEcH8rzFQO1wVBY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ845f0uus0a5C2kB2m2FFkH_a_kDH9mAy41Coc83aUok41x1ni4E6EEvTd_AU"
+        }
+      ]
+    },
+    {
+      "query": "federico valverde",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T20:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/real-madrid-set-historic-european-070000738.html",
+        "https://www.aol.com/articles/why-arda-g-ler-not-172700000.html",
+        "https://www.cnet.com/tech/services-and-software/aek-athens-vs-real-madrid-livestream-champions-league-soccer-from-anywhere/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmZf7nD3cyoXGSf5jdok6ycUeij-O5jolHz__coQZQMCyz3jdKAcGvwJ914Hw",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/real-madrid-set-historic-european-070000738.html",
+          "title": "Real Madrid set historic European record after Valverde’s dramatic winner against AEK Athens",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmZf7nD3cyoXGSf5jdok6ycUeij-O5jolHz__coQZQMCyz3jdKAcGvwJ914Hw"
+        },
+        {
+          "url": "https://www.aol.com/articles/why-arda-g-ler-not-172700000.html",
+          "title": "Why Is Arda Güler Not Playing Today for Real Madrid vs. AEK Athens?",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXBhL38iMossXzB_YqNtuyVdhrDZvJwwQ_xz4S7rS7wSpgVaNPguspF6Ey3SM"
+        },
+        {
+          "url": "https://www.cnet.com/tech/services-and-software/aek-athens-vs-real-madrid-livestream-champions-league-soccer-from-anywhere/",
+          "title": "AEK Athens vs. Real Madrid: Livestream Champions League Soccer From Anywhere",
+          "publisher": "CNET",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcIEl6RUDKp_PKhy554rwRiLqj1YcqvMDmp-03RgUi0outQ0osQgLrnWi5vB0"
         }
       ]
     }
