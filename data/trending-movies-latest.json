@@ -2,7 +2,7 @@
   "schema_version": 1,
   "source": "Google Trends RSS + publisher trailer RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
-  "checked_at": "2026-11-07T11:32:52.571019Z",
+  "checked_at": "2026-11-07T12:06:07.759341Z",
   "source_note": "Google trending titles are independently matched to source-backed trailer uploads. Other cards are labelled NEW TRAILER, not Google-trending. These are previews, not full movies.",
   "items": [
     {
