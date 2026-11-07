@@ -115,6 +115,7 @@ const groupDefinitions=[
  {id:'shows',title:'Pawn Stars · Bourdain · World TV',description:'Full episodes from recognized publishers, with international travel and food preferred.',items:videos.filter(v=>v.category==='shows')},
  {id:'adult',title:'Optional 21+ Directory',description:'Adult-only dispensary directory, intentionally outside Public and the regular shopping carousels.',items:[
   {id:'cannabisDirectoryCard',title:'National dispensary directory'},
+  {id:'infinityAdultContentCard',title:'21+ Original Lifestyle Quick Card'},
   {id:'bruceBannerWeedmapsCard',title:'Bruce Banner · publisher source'},
   ...['livwell-colorado','livwell-central','native-roots-speer','native-roots-highlands','fired-sixth','fired-alameda',
    'fired-cherry','lightshade-evans','lightshade-dayton','star-buds-lakeside','green-solution-wewatta','maikoh-broadway'].map(id=>({id:'dispensary-'+id,title:'Independent dispensary listing'}))
@@ -126,7 +127,10 @@ function mountLane(parent,definition){
  const intro=h('header','ioc-intro');intro.append(h('p','ioc-kicker','INFINITY® · ORACLE OCTAVES'),h('h2','',definition.title),h('p','',definition.description));
  const nav=h('div','ioc-nav'),stage=h('div','ioc-stage'),status=h('p','ioc-count');
  status.setAttribute('role','status');status.setAttribute('aria-live','polite');
- let index=0,marker=null,selected=null,unlocked=definition.id!=='adult';
+ // Preserve saved ?card= links when originals move out of the public Oracle deck.
+ const directCard=(()=>{try{return new URLSearchParams(location.search).get('card')}catch{return null}})();
+ const selectedIndex=definition.items.findIndex(item=>item.id===directCard);
+ let index=Math.max(0,selectedIndex),marker=null,selected=null,unlocked=definition.id!=='adult';
  function restore(){
   if(activeVideo&&stage.contains(activeVideo.card))activeVideo.stop();
   if(selected){document.dispatchEvent(new CustomEvent('oracle:card-deactivated',{detail:{id:selected.id}}));
