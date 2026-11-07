@@ -261,7 +261,7 @@ test('chat routes source repairs and explicit workflow operations to their own a
  const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
  const start=ui.indexOf(' else if(!embedded&&!ownerGithubNonAction&&(directRequest||githubCheck||createRepository||coderRequest||directCoding)){');
  const end=ui.indexOf(' else if(!embedded&&(isOwnerWorkRequest(request)',start);
- const intent=ui.slice(ui.indexOf(' const workflowIntent='),ui.indexOf(' // Owner-named RecordB'));
+ const intent=ui.slice(ui.indexOf(' const namedWorkflow='),ui.indexOf(' // Owner-named RecordB'));
  const calls=[];
  const run=new Function('submitRepositoryWork','directGithubOperation',
   `return async (request,directRequest=false)=>{
@@ -283,7 +283,7 @@ test('chat routes source repairs and explicit workflow operations to their own a
  assert.equal(await run('Inspect the source in www-infinity4/RecordB',true),'inspected');
  const workflowRepair='Fix the build.yml workflow in www-infinity4/RecordB so the check can execute';
  assert.equal(await run(workflowRepair),'ready');
- assert.equal(await run('Trigger build.yml workflow in www-infinity4/RecordB'),'inspected');
+ assert.equal(await run('Trigger build.yml in www-infinity4/RecordB'),'inspected');
  assert.equal(await run('Please execute deploy.yml workflow in www-infinity4/RecordB'),'inspected');
  assert.equal(await run('List the build.yml workflow in www-infinity4/RecordB'),'inspected');
  assert.deepEqual(calls,[

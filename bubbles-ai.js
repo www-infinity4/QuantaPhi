@@ -3126,7 +3126,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // source changes use the repository runner after resolving their target.
  const requestsAgents=/\b(?:multi[- ]agent|color[- ]bot|all\s+(?:my\s+)?bots|bot\s+team|team\s+of\s+bots|run\s+the\s+bots|purple\s+orchestrat|run\s+all\s+agents)\b/i.test(request)
   ||/\b(?:use|via|through|delegate(?:\s+to)?|send(?:\s+to)?|ask|run|start|launch|engage)\s+(?:the\s+)?(?:robot\s*brain|moltnook)\b/i.test(request);
- const workflowIntent=/\b(?:github\s+actions?|workflow|workflows)\b/i.test(request);
+ const namedWorkflow=request.match(/\b([a-z0-9][a-z0-9_.-]*\.ya?ml)\b/i)?.[1]||'';
+ const workflowIntent=Boolean(namedWorkflow)||/\b(?:github\s+actions?|workflow|workflows)\b/i.test(request);
  const runCommand=/^(?:(?:please|hey|bubbles)[\s,:]+)*(?:(?:can|could|would|will) you\s+)?(?:run|start|trigger|dispatch|rerun|execute)\b/i.test(request);
  const codeTask=/\b(?:add|insert|attach|edit|fix|repair|update|upgrade|change|implement|write|commit|push|refactor|patch|inspect|review|check|create|build|populate|scaffold|test|run|move|put|place|relocate)\b[\s\S]{0,180}\b(?:github|repositor(?:y|ies)|repos?|code|source|files?|readme|scripts?|worker|website|page|card|button|approval|app|apk|bubbles|quantaphi|workflow|actions|branch|pull\s+request|pr|login\s+route|api\s+(?:route|endpoint))\b/i.test(request)||
   workflowIntent&&(runCommand||/\b(?:list|show)\b/i.test(request));
@@ -3274,7 +3275,6 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    ?'Tell Bubbles the repository name, for example: create a repository named StoryPhi.'
    :'I could not verify a single repository for this request. Tell me which feature you mean.');
   else try{
-   const namedWorkflow=request.match(/\b([a-z0-9][a-z0-9_.-]*\.ya?ml)\b/i)?.[1]||'';
    const workflowDispatch=workflowIntent&&runCommand;
    const sourceRequest=namedWorkflow?request.replace(namedWorkflow,''):request;
    const sourceEdit=neuralCoding||/\b(?:add|create|make|build|generate|insert|attach|fix|repair|update|upgrade|implement|edit|write|push|replace|correct|refactor|populate|scaffold|move|put|place|relocate)\b/i.test(sourceRequest);

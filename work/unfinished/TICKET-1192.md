@@ -88,3 +88,11 @@ A fresh reviewer approved source merge with BUBBLE_BITS_ENABLED absent/OFF after
 - Independent review of Moltnook #244 reproduced parent process credential visibility with synthetic values. Repository checks now use a disposable container copy, with no network for test or build execution. Only dependency acquisition uses network access, with npm lifecycle hooks disabled. Verify the hosted isolation probe before accepting the runner change.
 - The runner verifies staged files against the reviewed patch. Screenshot archival excludes symlinks and verifies image signatures before upload.
 - State is source tested and pending final head review, guarded release, and live authenticated acceptance. No coordinator lease was claimed. The next action is to inspect the actual Docker probe and exact-head PR checks.
+
+## November 6 CT · Live Bubbles work updates
+
+- Consulted Gemini on the event contract, reload recovery, retry receipts and test isolation. Its browser could review the architecture. The exact earlier Google AI Mode response was unavailable.
+- The same owner chat now receives signed updates when repository lookup, planning, patching, review, checks and publication begin. Completed file reads show the pinned commit and bounded paths. A failed check remains visible with its exit code, and the next build uses the recorded diagnostics. Pull request progress requires successful checks on the same attempt.
+- Ticket progress is bound to the owner and originating chat. Active visible chats request one ticket every 2.5 seconds, and a same-tab reload replays saved observations. General owner notices stay in Work details and voice. The initial release uses the existing authenticated request path and introduces no new model provider or secret.
+- Focused source suites and the hosted Docker isolation probe passed. GitHub surfaced fixtures that relied on old classifier or source-review syntax. Those were corrected and require CI on the new heads.
+- State is source tested, with exact-head review, guarded release and a signed live chat repair pending. One documented session. Overall completion and remaining sessions are unknown. No coordinator lease was claimed. Next action is to verify the revised PR checks and independent review.

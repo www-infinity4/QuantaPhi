@@ -37,13 +37,14 @@ test('First-party site and studio both use new verified owner command assets',()
 });
 
 test('An ordinary owner request to add a copy button uses a real code route',()=>{
- const pattern=bubbles.match(/const codeTask=(\/.*?\/i)\.test\(request\);/);
- assert.ok(pattern,'direct code request matcher exists');
- const matches=new Function('request','return '+pattern[1]+'.test(request);');
+ const begin=bubbles.indexOf(' const namedWorkflow='),end=bubbles.indexOf(' // Owner-named RecordB',begin);
+ assert.ok(begin>0&&end>begin,'direct code request matcher exists');
+ const matches=new Function('request',bubbles.slice(begin,end)+'\nreturn codeTask;');
  assert.equal(matches('Add copy button to owner approval'),true);
  assert.equal(matches('Please add a copy button to Bubbles owner approval'),true);
  assert.equal(matches('Tell me about copying paintings'),false);
- assert.match(bubbles,/const mode=.*\(\?:add\|create\|make\|build\|generate\|insert\|attach\|fix/);
+ assert.match(bubbles,/const sourceEdit=.*\(\?:add\|create\|make\|build\|generate\|insert\|attach\|fix/);
+ assert.match(bubbles,/await submitRepositoryWork\(engineeringRequest,'explicit-user-command'/);
  assert.match(bubbles,/owner\[- \]approval/);
  assert.match(bubbles,/const copy=create\('button','ba-owner-copy','Copy request'\)/);
  assert.match(bubbles,/navigator\.clipboard\.writeText\(summary\)/);
