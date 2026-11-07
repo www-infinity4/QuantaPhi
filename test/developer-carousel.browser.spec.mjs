@@ -21,7 +21,8 @@ for(const width of [320,360,393]){
   await expect(visible.locator('.developer-editor')).toBeHidden();
   const creator=stage.frameLocator('iframe[title="QuantaPhi original Quick Card publisher"]');
   await visible.getByRole('button',{name:/Build Quick Card · in this card/}).click();
-  await expect(creator.locator('#quickCardCreate input[name="title"]')).toBeVisible({timeout:18000});
+  await expect(creator.locator('#quickCardCreate input[name="website"]')).toBeVisible({timeout:18000});
+  await creator.locator('details.qcp-advanced summary').click();
   await creator.locator('input[name="title"]').fill('Vintage Radio Creator');
   await section.getByRole('button',{name:'501 Affiliates'}).click();
   await expect(visible.locator('.developer-cover-title')).toHaveText('501 Affiliates');
@@ -55,6 +56,7 @@ test('Developer Quick Card publishes only through the real publisher request flo
  await expect(stage.locator('.developer-slide:not([hidden]) .developer-cover-image')).toBeVisible();
  await expect(stage.locator('.developer-slide:not([hidden]) .developer-studio-toggle')).toHaveAttribute('aria-expanded','true');
  await expect(form).toBeVisible({timeout:20000});
+ await form.locator('details.qcp-advanced summary').click();
  await form.locator('[name="title"]').fill('Original Radio Workshop');
  await form.locator('[name="website"]').fill('https://example.org/radio');
  await form.locator('[name="description"]').fill('Original workshop with historical radio parts and verified sources.');
