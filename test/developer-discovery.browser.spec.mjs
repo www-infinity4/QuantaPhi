@@ -18,7 +18,7 @@ test('Official Google resources and a review-only visitor idea card join the exi
  await card.locator('textarea').fill('Add an accessible public profile with display name, avatar choices and an edit button');
  await card.getByRole('button',{name:'Preview safe layout'}).click();
  await expect(card.locator('.devlib-mock-profile')).toBeVisible();
- const review=card.getByRole('link',{name:/Prepare owner-reviewed GitHub issue/});
+ const review=card.getByRole('link',{name:/Open public GitHub review issue/});
  await expect(review).toBeVisible();
  const href=await review.getAttribute('href');
  const u=new URL(href);
