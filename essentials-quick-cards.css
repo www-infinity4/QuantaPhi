@@ -1,0 +1,21 @@
+/* Oracle Octaves family: product photograph first; original card moves to viewer. */
+#essentialsQuickCards{margin:22px auto;max-width:1160px}
+.qec-heading{padding:12px 16px;color:inherit}
+.qec-heading h2{font-size:clamp(1.45rem,4vw,2rem);line-height:1.2;letter-spacing:.015em;margin:0 0 8px}
+.qec-heading p{font-size:1rem;line-height:1.55;margin:0;max-width:72ch}
+.qec-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:14px;padding:8px}
+.qec-card{background:#fff;color:#1d2835;border:1px solid #e0d9ce;border-radius:20px;overflow:hidden;min-width:0;box-shadow:0 6px 24px #2b272414}
+.qec-card[hidden]{display:none!important}
+.qec-kicker{font-size:.76rem;letter-spacing:.12em;font-weight:800;text-transform:uppercase;padding:12px 16px 0;color:#375b8a}
+.qec-photo-link{display:flex;min-height:210px;max-height:320px;align-items:center;justify-content:center;background:#f6f7f9;margin:10px 14px;border-radius:16px}
+.qec-photo{max-height:300px;max-width:100%;width:auto;object-fit:contain}
+.qec-info{padding:6px 17px 18px}
+.qec-kind{color:#50627a;font-size:.82rem;font-weight:700}
+.qec-title{font-size:clamp(1.28rem,4.3vw,1.65rem);line-height:1.28;margin:8px 0}
+.qec-description,.qec-facts{font-size:1rem;line-height:1.55}
+.qec-facts{color:#334d60}
+.qec-shop{display:flex;align-items:center;justify-content:center;min-height:48px;padding:11px 16px;border-radius:12px;background:#173a63;color:white!important;font-size:1rem;font-weight:750;text-align:center;text-decoration:none}
+.qec-note,.qec-review{font-size:.84rem;line-height:1.5;color:#58606c}
+.qec-actions{margin-top:12px}
+.qec-card a:focus-visible,.qec-card button:focus-visible{outline:3px solid #bd7539;outline-offset:3px}
+@media(max-width:393px){.qec-grid{grid-template-columns:minmax(0,1fr);padding:6px}.qec-card{border-radius:16px}.qec-photo-link{min-height:180px}}
