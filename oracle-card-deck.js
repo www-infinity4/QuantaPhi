@@ -232,6 +232,28 @@ function registerDirectoryCards(){
 }
 window.addEventListener('quantaphi:directory-cards-ready',registerDirectoryCards);
 
+// Every verified trending movie is its OWN original Oracle card in the same
+// Public / For You / Following carousel. No nested scrolling movies wall.
+function registerTrendingMovieCards(){
+ let added=false;
+ for(const node of document.querySelectorAll('#trendingMovieCards [data-trending-movie-id]')){
+  const id=node.id,videoId=node.dataset.trendingMovieId;
+  if(!/^trendMovie[A-Za-z0-9_-]{11}$/.test(id)||
+     id!=='trendMovie'+videoId||entries.some(e=>e.id===id))continue;
+  const title=node.querySelector('.mtc-title')?.textContent?.trim();
+  if(!title)continue;
+  const feedId='trending-movie-'+videoId;
+  entries.push({id,title:title+' · Film trailer',feedId,category:'Movies',
+   feature:'Play the original publisher movie trailer inside this Quick Card',
+   study:'Google Trends sourced movie headlines or independently new published trailers',
+   node,marker:null,count:Number(counts[id])||0});
+  observe.observe(node,{childList:true});added=true;
+ }
+ if(added){updateTabs();predict();if(!active)start();}
+}
+window.addEventListener('quantaphi:trending-movie-cards-ready',registerTrendingMovieCards);
+
+
 // Discover widgets mounted after the deferred deck script, including roots that
 // did not exist at its first scan. Reparenting is ignored once registered.
 function registerLateWidgets(){
@@ -244,6 +266,7 @@ function registerLateWidgets(){
   observe.observe(node,{childList:true});added=true;
  }
  registerSourceCards();
+ registerTrendingMovieCards();
  if(added){updateTabs();predict();if(!active)start();}
 }
 
