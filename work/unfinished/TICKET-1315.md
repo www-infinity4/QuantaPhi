@@ -32,7 +32,7 @@ next_action: "Run exact-head CI on PR #1738, resolve merge conflicts without ove
 - Continued the existing Power Chain Follow PR #1738 on its existing branch. Created a reviewed, editorial four-product pilot: Blue Star 2 oz, Campho-Phenique, Aveeno Anti-Itch, and Sarna Original, with original retailer URLs and source-hosted photographs.
 - Built a deterministic 120-card-per-batch validator: unique IDs, source HTTPS, source-photo HTTPS, explicit review state, staleness expiry, no price/stock/trending/sponsor invention.
 - Reused Oracle Public / Following and shared Follow, Star, Collect, Share, +1 Build actions; added explicit opt-in Skin relief Power Chain, while disabling behavioral personalization on health cards.
-- Local RED: test module missing; GREEN: five Node tests passed on candidate contents (prior to GitHub writing). Exact-head GitHub CI, the responsive in-site browser, licensed photo rights for commercial advertisements, PR merge and production deployment have **not** been verified.
+- Local RED: test modules missing; GREEN: eight Node tests passed on candidate contents (batch validator and offline JSON importer), and new syntax checks passed. Additional Oracle test staged in GitHub CI. Exact-head GitHub CI, the responsive in-site browser, licensed photo rights for commercial advertisements, PR merge and production deployment have **not** been verified.
 - Estimated 15% of full #1315 acceptance, not release complete. No coordinator lease was obtained; no payment, wallet, purchase, signup, or commercial placement authorized.
 
 # TICKET-1315: QuantaPhi Quant feed/ads and privacy
