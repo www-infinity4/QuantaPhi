@@ -35,4 +35,6 @@
     "discoverability": "eligible_for_approved_feed_not_guaranteed_rotation"
   },
   "editorialNotes": "Independent third-party navigation card. Do not present as GE sponsorship, invent pricing, or claim QuantaPhi checkout. Source and live card rendering reviewed; approved for discovery on 2026-11-03. Carousel placement is Quant-ranked and remains to be tested. Live browser checks do not establish merchant sponsorship, prices, image rights for paid advertising, or completed retailer checkout."
+,
+  "badge": {"label": "Verified", "color": "#28a745"}
 }
