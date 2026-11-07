@@ -18,15 +18,19 @@ const el=(tag,cls,text)=>{
 export const tvSourceCardId=key=>SOURCE_IDS[key]||'';
 
 export function mountTvSourceQuickCards(host,channels){
- if(!host?.parentNode||!Array.isArray(channels))return [];
+ if(!host||!Array.isArray(channels))return [];
  const mounted=[];
  for(const entry of channels){
   const id=tvSourceCardId(entry.id);
   if(!id||entry.mode!=='official-video'||!/^[-_A-Za-z0-9]{11}$/.test(entry.videoId))continue;
-  const prior=document.getElementById(id);
-  if(prior){mounted.push(prior);continue;}
-  const card=el('section','channelphi-card channelphi-standalone-source channelphi-'+entry.id);
-  card.id=id;card.dataset.tvSourceId=entry.id;
+  // Fixed HTML anchors prevent a race with Oracle reparenting the movie card.
+  const card=document.getElementById(id);
+  if(!card)continue;
+  if(card.dataset.tvSourceReady==='true'){mounted.push(card);continue;}
+  card.replaceChildren();
+  card.classList.add('channelphi-card','channelphi-standalone-source','channelphi-'+entry.id);
+  card.dataset.tvSourceReady='true';
+  card.dataset.tvSourceId=entry.id;
   card.dataset.sourceName=entry.name;
   card.setAttribute('aria-label',entry.name+' independent playable video card');
   const mast=card.appendChild(el('div','channelphi-mast'));
@@ -85,8 +89,7 @@ export function mountTvSourceQuickCards(host,channels){
   document.addEventListener('oracle:card-deactivated',event=>{if(event.detail?.id===id)stop()});
   document.addEventListener('visibilitychange',()=>{if(document.hidden)stop()});
   window.addEventListener('pagehide',stop);
-  // Sibling nodes become distinct, original Oracle cards; no shared news wall.
-  host.parentNode.insertBefore(card,host);
+  // Every card stays at its original separate HTML anchor, even if Oracle is active.
   mounted.push(card);
  }
  return mounted;
