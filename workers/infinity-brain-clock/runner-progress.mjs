@@ -2,6 +2,9 @@ const RUN=/^https:\/\/github\.com\/www-infinity4\/Moltnook\/actions\/runs\/[0-9]
 const labels={
  discovery_started:'Looking up the repository and its source',
  planning_started:'Planning the repair from source evidence',
+ red_reasoned:'Red GPT reviewed source evidence',
+ orange_reasoned:'Orange GPT resolved a decision',
+ blue_reasoned:'Blue GPT checked import/schema evidence',
  source_read:'Read pinned repository source',
  patch_started:'Preparing a patch against the pinned source',
  patch_prepared:'Prepared an exact source patch',
@@ -14,6 +17,7 @@ const labels={
  attempt_failed:'Repair attempt failed'
 };
 const phases=Object.keys(labels);
+const initialPhases=new Set(['discovery_started','planning_started','red_reasoned','orange_reasoned','blue_reasoned','source_read']);
 const failureStages=new Set(['build','review','test','arbitration']);
 const sequenceOf=(phase,attempt)=>attempt*20+phases.indexOf(phase)+1;
 const filePath=/^(?!.*(?:^|\/)(?:\.{1,2}|\.git|\.env(?:\.[^/]*)?|\.npmrc|\.netrc|\.ssh|\.aws|credentials|secrets)(?:\/|$))[A-Za-z0-9_.-]+(?:\/[A-Za-z0-9_.-]+)*$/i;
@@ -30,8 +34,10 @@ export function appendRunnerStep(progress,step,repository,runUrl,runAttempt=1){
  if(progress?.runUrl!==runUrl||!RUN.test(runUrl)||!step||
   !Number.isInteger(runAttempt)||runAttempt<1||runAttempt>9999||
   !Object.hasOwn(labels,step.phase)||!Number.isInteger(step.attempt)||
-  (phases.indexOf(step.phase)<3?step.attempt!==0:step.attempt<1||step.attempt>3))return null;
+  (initialPhases.has(step.phase)?step.attempt!==0:step.attempt<1||step.attempt>3))return null;
  const {phase,attempt}=step;
+ // A reasoning step proves authenticated GPT inference only, never data
+ // import, source writing, a reviewed PR, payment, or deployment.
  if(phase==='checks_passed'&&step.exitCode!==0)return null;
  if(phase==='attempt_failed'&&!failureStages.has(step.stage))return null;
  const id=runUrl.split('/').at(-1)+(runAttempt===1?'':'.'+runAttempt)+'-'+attempt+'-'+phase;
@@ -50,6 +56,7 @@ export function appendRunnerStep(progress,step,repository,runUrl,runAttempt=1){
  const exitCode=phase==='attempt_failed'&&Number.isInteger(step.exitCode)&&step.exitCode>0&&step.exitCode<=255
   ?step.exitCode:null;
  let summary='';
+ if(['red_reasoned','orange_reasoned','blue_reasoned'].includes(phase))summary='GPT inference only; no tools, imports or source changes verified.';
  if(phase==='attempt_failed')summary='Failed during '+step.stage+(exitCode===null?'.':' with exit code '+exitCode+'.')+
   (attempt<3?' Another attempt is available.':' The retry limit was reached.');
  if(phase==='source_read'||phase==='patch_prepared'){
