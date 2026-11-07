@@ -23,3 +23,19 @@ test('NASA records retain actual source ID, credits, dates and images',()=>{
  const rows=normalizeResults({collection:{items:[{data:[{title:'Carina',nasa_id:'PIA123',secondary_creator:'NASA / ESA',description:'Actual caption',date_created:'2022-07-12'}],links:[{rel:'preview',href:'https://images-assets.nasa.gov/image/PIA123/PIA123~thumb.jpg'}]}]}},card);
  assert.equal(rows[0].url,'https://images.nasa.gov/details/PIA123');assert.equal(rows[0].credit,'NASA / ESA');assert.equal(rows[0].date,'2022-07-12');
 });
+
+test('Coin World opens on numismatic news rather than only a Morgan-dollar search',()=>{
+ const card=PREMIUM_CARDS.find(x=>x.id==='coinworld');
+ assert.match(card.query,/news/i);
+});
+test('Coin World source results preserve genuine story pictures from image_url',()=>{
+ const card=PREMIUM_CARDS.find(x=>x.id==='coinworld');
+ const rows=normalizeResults({results:[
+  {title:'Coin World original headline',url:'https://www.coinworld.com/news/us-coins/real-story',image_url:'https://assets.coinworld.com/news/real-story.jpg',description:'Original article excerpt',publishedDate:'2026-11-07'},
+  {title:'Unrelated site',url:'https://coinworld.com.attacker.test/news/fake',image_url:'https://attacker.test/coin.jpg'}
+ ]},card);
+ assert.equal(rows.length,1);
+ assert.equal(rows[0].image,'https://assets.coinworld.com/news/real-story.jpg');
+ assert.equal(rows[0].date,'2026-11-07');
+ assert.equal(rows[0].description,'Original article excerpt');
+});
