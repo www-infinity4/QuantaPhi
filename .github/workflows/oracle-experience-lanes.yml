@@ -4,6 +4,15 @@ on:
     branches: [feat/oracle-creative-media-1603-20261107]
     paths:
       - 'oracle-experience-lanes.*'
+      - 'image-generator-lab.mjs'
+      - 'image-generator-source-core.mjs'
+      - 'image-generator-lab.css'
+      - 'data/image-generator-sources.json'
+      - 'scripts/refresh-image-generator-sources.mjs'
+      - 'test/image-generator-source-catalog.test.mjs'
+      - 'test/image-generator-source-audit.test.mjs'
+      - 'test/image-generator-lab.browser.cjs'
+      - 'test/fixtures/image-generator-lab.html'
       - 'oracle-curated-catalog.mjs'
       - 'oracle-card-deck.js'
       - 'phi-image-builder.js'
@@ -16,6 +25,15 @@ on:
   pull_request:
     paths:
       - 'oracle-experience-lanes.*'
+      - 'image-generator-lab.mjs'
+      - 'image-generator-source-core.mjs'
+      - 'image-generator-lab.css'
+      - 'data/image-generator-sources.json'
+      - 'scripts/refresh-image-generator-sources.mjs'
+      - 'test/image-generator-source-catalog.test.mjs'
+      - 'test/image-generator-source-audit.test.mjs'
+      - 'test/image-generator-lab.browser.cjs'
+      - 'test/fixtures/image-generator-lab.html'
       - 'oracle-curated-catalog.mjs'
       - 'oracle-card-deck.js'
       - 'phi-image-builder.js'
@@ -25,6 +43,8 @@ on:
       - 'index.html'
       - '.github/workflows/oracle-experience-lanes.yml'
   workflow_dispatch:
+  schedule:
+    - cron: '23 14 * * 3'
 permissions:
   contents: read
 jobs:
@@ -40,15 +60,38 @@ jobs:
         run: |
           node --check oracle-curated-catalog.mjs
           node --check oracle-experience-lanes.mjs
+          node --check image-generator-source-core.mjs
+          node --check image-generator-lab.mjs
+          node --check scripts/refresh-image-generator-sources.mjs
           node --check oracle-card-deck.js
           node --check phi-image-builder.js
           node --check phi-story-writer.js
           node --check restricted-dispensary-cards.mjs
       - name: Check reviewed publisher catalog and carousel behavior
-        run: node --test test/oracle-curated-catalog.test.mjs
+        run: |
+          node --test test/oracle-curated-catalog.test.mjs
+          node --test test/image-generator-source-catalog.test.mjs test/image-generator-source-audit.test.mjs
       - name: Install test browser for Android Image Printer verification
         run: |
           npm install --no-save --package-lock=false playwright@1.56.1
           npx playwright install --with-deps chromium
       - name: Verify Android one-prompt Image Printer and original render repairs
-        run: node test/oracle-image-studio.browser.cjs
+        run: |
+          node test/oracle-image-studio.browser.cjs
+          node test/image-generator-lab.browser.cjs
+  generator-source-scan:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Read official GitHub source metadata without publishing
+        run: node scripts/refresh-image-generator-sources.mjs --output image-generator-source-review.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: image-generator-source-review
+          path: image-generator-source-review.json
+          retention-days: 14
