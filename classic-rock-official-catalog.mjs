@@ -23,6 +23,11 @@ export const CLASSIC_ROCK_BANDS = Object.freeze([
   id:'pink-floyd',name:'Pink Floyd',feature:'Wish You Were Here · official recordings',
   youtube:'https://www.youtube.com/@pinkfloyd',
   videoId:'K6qj09OHvjw',videoTitle:"Wish You Were Here · Official Video",
+  tracks:Object.freeze([
+   Object.freeze({videoId:'K6qj09OHvjw',videoTitle:'Wish You Were Here · Official Video'}),
+   Object.freeze({videoId:'HrxX9TBj2zY',videoTitle:'Another Brick in the Wall, Part Two · Official Video'}),
+   Object.freeze({videoId:'sZCkb0F51qw',videoTitle:'Comfortably Numb · Official Audio'})
+  ]),
   offers:Object.freeze([
    {category:'Vinyl · CD · box sets',label:'Shop Pink Floyd albums',url:'https://www.pinkfloyd.com/store/'},
    {category:'Official apparel & releases',label:'Wish You Were Here 50 collection',url:'https://shop.pinkfloyd.com/collections/wish-you-were-here-50'}

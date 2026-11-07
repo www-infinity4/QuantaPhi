@@ -2,7 +2,7 @@
  * No artist button may start the unrelated Infinity Radio transport.
  * Each visible YouTube embed is subject to the provider's playback permissions.
  */
-import {CLASSIC_ROCK_BANDS,linkIsAllowed} from './classic-rock-official-catalog.mjs';
+import {CLASSIC_ROCK_BANDS,linkIsAllowed} from './classic-rock-official-catalog.mjs?v=20261106-artist-radio3';
 const root=document.getElementById('classicRockOfficialMusicCard');
 if(root&&root.dataset.officialRockMounted!=='true'){
  root.dataset.officialRockMounted='true';
@@ -15,8 +15,10 @@ if(root&&root.dataset.officialRockMounted!=='true'){
   '#classicRockOfficialMusicCard .cr-record{flex:none;width:53px;height:53px;border:3px solid #d8e6e6;border-radius:50%;background:repeating-radial-gradient(circle,#141f28 0 5px,#293640 5px 6px);display:grid;place-items:center;color:#b7d8d7;font-weight:900;font-size:23px;}',
   '#classicRockOfficialMusicCard h2{margin:0;font-size:21px;font-weight:850;line-height:1.25;color:#243c45;}',
   '#classicRockOfficialMusicCard .cr-intro{margin:4px 0 0;color:#536c74;font-size:14px;line-height:1.45;}',
-  '#classicRockOfficialMusicCard .cr-radio{display:flex;gap:12px;align-items:center;margin:8px 0 15px;}',
+  '#classicRockOfficialMusicCard .cr-radio{display:flex;gap:12px;align-items:center;margin:9px 0 12px;padding:10px 12px;border:1px solid #9fcecc;border-radius:16px;background:linear-gradient(115deg,#e8faf7,#fff);box-shadow:0 4px 15px #184e4d12;}',
   '#classicRockOfficialMusicCard .cr-radio-play{display:grid;place-items:center;flex:none;width:48px;height:48px;border-radius:50%;border:0;background:#136a76;color:#fff;font-size:22px;cursor:pointer;}',
+  '#classicRockOfficialMusicCard .cr-radio-next{display:grid;place-items:center;flex:none;min-width:44px;min-height:44px;border:1px solid #b5d6d7;border-radius:10px;background:#fff;color:#155164;font-size:18px;cursor:pointer;}',
+  '#classicRockOfficialMusicCard .cr-radio-next[hidden]{display:none;}',
   '#classicRockOfficialMusicCard .cr-radio-name{font-size:16px;font-weight:800;line-height:1.4;}',
   '#classicRockOfficialMusicCard .cr-radio-status{font-size:12px;line-height:1.45;color:#536c74;overflow-wrap:anywhere;}',
   '#classicRockOfficialMusicCard .cr-player-panel[hidden]{display:none;}',
@@ -41,16 +43,19 @@ if(root&&root.dataset.officialRockMounted!=='true'){
  const record=node('span','cr-record','∞');
  record.setAttribute('aria-hidden','true');
  const introWrap=node('div');
- introWrap.append(node('h2','','Classic Rock · Artist Music'),node('p','cr-intro','Play a selected artist’s official video here, not Infinity Radio.'));
+ introWrap.append(node('h2','','Classic Rock · Artist Music'),node('p','cr-intro','Pink Floyd Radio and Classic Rock · separate from Infinity Radio.'));
  heading.append(record,introWrap);
  const radioRow=node('div','cr-radio');
  const play=node('button','cr-radio-play','▶');
  play.type='button';play.setAttribute('aria-pressed','false');
+ const next=node('button','cr-radio-next','⏭');
+ next.type='button';next.hidden=true;
+ next.setAttribute('aria-label','Next Pink Floyd track');
  const rc=node('div');
  const radioName=node('strong','cr-radio-name');
  const radioStatus=node('div','cr-radio-status','Select an artist to listen.');
  radioStatus.setAttribute('role','status');radioStatus.setAttribute('aria-live','polite');
- rc.append(radioName,radioStatus);radioRow.append(play,rc);
+ rc.append(radioName,radioStatus);radioRow.append(play,next,rc);
  const panel=node('div','cr-player-panel');
  panel.hidden=true;
  const frame=node('iframe','cr-player-frame');
@@ -71,7 +76,7 @@ if(root&&root.dataset.officialRockMounted!=='true'){
  offers.append(offerTitle,current,grid);
  const foot=node('p','cr-note','Artist selections open visible official YouTube media in this card; availability depends on the publisher. This is not a continuous licensed artist radio stream.');
  const buttons=new Map();
- let selected=null,active=false;
+ let selected=null,active=false,trackIndex=0;
  function stop(){
   frame.removeAttribute('src');
   panel.hidden=true;
@@ -84,8 +89,10 @@ if(root&&root.dataset.officialRockMounted!=='true'){
  function renderOffers(band){
   if(active)stop();
   selected=band;
-  radioName.textContent=band.name+' · Official Music';
-  play.setAttribute('aria-label','Play '+band.name+' official video');
+  trackIndex=0;
+  next.hidden=!(Array.isArray(band.tracks)&&band.tracks.length>1);
+  radioName.textContent=band.name+' Radio';
+  play.setAttribute('aria-label','Play '+band.name+' Radio');
   offerTitle.textContent=band.name+' · Artist release spotlight';
   current.textContent=band.feature+' · Official artist sources';
   grid.replaceChildren();
@@ -102,19 +109,23 @@ if(root&&root.dataset.officialRockMounted!=='true'){
   radioStatus.textContent='Tap Play for '+band.name+' · '+band.videoTitle+'.';
  }
  function start(band){
-  if(!band||!/^[A-Za-z0-9_-]{11}$/.test(band.videoId)){
+  const tracks=Array.isArray(band?.tracks)&&band.tracks.length?band.tracks:[{videoId:band?.videoId,videoTitle:band?.videoTitle}];
+  const track=tracks[trackIndex%tracks.length];
+  if(!band||!/^[A-Za-z0-9_-]{11}$/.test(track?.videoId)){
    radioStatus.textContent='Artist recording unavailable; use the official channel link.';
    return;
   }
   window.dispatchEvent(new CustomEvent('quantaphi:artist-radio-start',{detail:{cardId:root.id}}));
-  frame.title=band.name+' · '+band.videoTitle+' on YouTube';
+  frame.title=band.name+' · '+track.videoTitle+' on YouTube';
   panel.hidden=false;
-  frame.src='https://www.youtube.com/embed/'+band.videoId+'?autoplay=1&rel=0';
+  const upcoming=tracks.slice(trackIndex+1).concat(tracks.slice(0,trackIndex));
+  const queue=upcoming.map(item=>item.videoId).join(',');
+  frame.src='https://www.youtube.com/embed/'+track.videoId+'?autoplay=1&playsinline=1&rel=0'+(queue?'&loop=1&playlist='+queue:'');
   active=true;
   play.textContent='■';
   play.setAttribute('aria-pressed','true');
-  play.setAttribute('aria-label','Stop '+band.name+' official video');
-  radioStatus.textContent=band.name+' · '+band.videoTitle+' · use the player if autoplay is blocked.';
+  play.setAttribute('aria-label','Stop '+band.name+' official player');
+  radioStatus.textContent=band.name+' · '+track.videoTitle+' · use the visible player if autoplay is blocked.';
  }
  for(const band of CLASSIC_ROCK_BANDS){
   const artist=node('button','cr-artist',band.name);
@@ -127,6 +138,12 @@ if(root&&root.dataset.officialRockMounted!=='true'){
  play.addEventListener('click',()=>{
   if(active){stop();return;}
   start(selected);
+ });
+ next.addEventListener('click',()=>{
+  if(!Array.isArray(selected?.tracks)||selected.tracks.length<2)return;
+  trackIndex=(trackIndex+1)%selected.tracks.length;
+  if(active)start(selected);
+  else radioStatus.textContent='Ready: '+selected.tracks[trackIndex].videoTitle+' · tap Play.';
  });
  window.addEventListener('quantaphi:artist-radio-start',event=>{
   if(event.detail?.cardId!==root.id&&active)stop();
