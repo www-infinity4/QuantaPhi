@@ -35,7 +35,7 @@ if(root){
     const inner=frame.contentDocument;
     if(!inner?.documentElement)return;
     const fit=()=>{const h=Math.max(inner.documentElement.scrollHeight,inner.body?.scrollHeight||0);
-     if(Number.isFinite(h)&&h>0)frame.style.height=Math.max(800,Math.min(6000,Math.ceil(h+12)))+'px';};
+     if(Number.isFinite(h)&&h>0)frame.style.height=Math.max(800,Math.min(6000,Math.ceil(h)))+'px';};
     fit();
     const observer=new ResizeObserver(fit);
     observer.observe(inner.documentElement);
