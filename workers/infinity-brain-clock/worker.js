@@ -445,7 +445,7 @@ export class BrainClock extends DurableObject{
    // Direct scoped repairs proceed to Green without an unnecessary research loop.
    const roleHandoffs=path==='/runner/plan'
     ? await runColorHandoffs(this.env.WRITER_AI,{
-       task:assigned.instructions,evidence:{
+       task:assigned.instructions.split(/\n\nExecution plan/)[0].slice(0,4000),evidence:{
         pinnedSourcePreview:JSON.stringify(body.evidence||{}).slice(0,7000)
        }
       })
