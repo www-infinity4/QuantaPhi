@@ -42,3 +42,12 @@ test('related research uses existing QuantaPhi search rather than fabricated liv
  await expect(page.locator('#innovationsStatus')).toContainText('Review sources');
  await expect(page.locator('#innovationsStage .innovations-slide')).toHaveCount(4);
 });
+test('Build opens the real moderated Quick Card builder when the owner executor is hidden',async({page})=>{
+ await page.goto(base+'/',{waitUntil:'domcontentloaded'});
+ const slide=page.locator('#innovationsCarousel .innovations-slide:not([hidden])');
+ await slide.locator('[data-action="build"]').click();
+ await expect(page).toHaveURL(/\/quick-card-builder\.html\?/);
+ await expect(page.locator('#quickCardCreate')).toBeVisible();
+ await expect(page.locator('[name="website"]')).toHaveValue('https://8msolar.com/solar-paint-turning-any-surface-into-a-solar-panel/');
+ await expect(page.locator('#qcpResult')).toBeEmpty();
+});
