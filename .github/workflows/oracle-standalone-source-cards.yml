@@ -8,6 +8,7 @@ on:
       - 'tv-501-expansion.mjs'
       - 'tv-501-expansion.css'
       - 'oracle-card-deck.js'
+      - 'oracle-card-deck.css'
       - 'bubbles-card-catalog.mjs'
       - 'index.html'
       - 'test/tv-source-quick-cards.test.mjs'
