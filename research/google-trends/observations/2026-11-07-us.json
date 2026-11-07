@@ -3,12 +3,319 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-07T11:01:24.057829Z",
+  "checked_at": "2026-11-07T11:31:25.632131Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "wind advisory",
+      "query": "will estes donnie wahlberg boston blue",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T11:10:00Z",
+      "related_news_urls": [
+        "https://www.tvinsider.com/1302253/boston-blue-will-estes-jamie-reagan-danny-donnie-wahlberg-blue-bloods-interview/",
+        "https://www.tvline.com/2310002/boston-blue-season-2-episode-5-jamie-reagan-returns-will-estes-interview-video/",
+        "https://people.com/will-estes-reunites-donnie-wahlberg-boston-blue-clip-exclusive-12238364"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_xT5Cf9SgAMv1zSe5kSNRzN41DkalJ9NNkKYgv4tJFQPJMseYPnQL3lV-X0",
+      "image_credit": "TV Insider",
+      "news": [
+        {
+          "url": "https://www.tvinsider.com/1302253/boston-blue-will-estes-jamie-reagan-danny-donnie-wahlberg-blue-bloods-interview/",
+          "title": "'Boston Blue': Why Will Estes Was 'Terrified' to Play Jamie Reagan Again",
+          "publisher": "TV Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_xT5Cf9SgAMv1zSe5kSNRzN41DkalJ9NNkKYgv4tJFQPJMseYPnQL3lV-X0"
+        },
+        {
+          "url": "https://www.tvline.com/2310002/boston-blue-season-2-episode-5-jamie-reagan-returns-will-estes-interview-video/",
+          "title": "Boston Blue Season 2, Episode 5: Jamie Reagan Returns — Will Estes Interview Video",
+          "publisher": "TVLine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfeZfHUqPqc5zqFsQqRcAKNVk_i9HDWjQ0yHAo8krFJyn8yPgL4tXCNd5D4rA"
+        },
+        {
+          "url": "https://people.com/will-estes-reunites-donnie-wahlberg-boston-blue-clip-exclusive-12238364",
+          "title": "Donnie Wahlberg and Blue Bloods Brother Will Estes Settle a ‘Beef’ as They Reunite in Boston Blue Clip (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfP_8xbPQNRCNgSB-ZPDyIUaJXK4rL7K0hfAChkRSazbRRvt6b5z3qgxLycCQ"
+        }
+      ]
+    },
+    {
+      "query": "ihsa football scores",
       "approx_searches": "200+",
+      "published_at": "2026-11-07T11:10:00Z",
+      "related_news_urls": [
+        "https://www.chicagotribune.com/2026/11/06/ihsa-state-football-playoff-pairings-schedule/",
+        "https://sports.yahoo.com/articles/illinois-high-school-football-final-063359107.html",
+        "https://www.pjstar.com/story/sports/high-school/football/2026/11/05/football-predictions-how-we-see-ihsa-second-round-for-peoria-area-high-school-games/92564715007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdAQZ9U5B6qMz4ZYIw1N_3bee9rZkKCJw-BBNVXs0_uJ75y9nEeE8E8dhHivA",
+      "image_credit": "Chicago Tribune",
+      "news": [
+        {
+          "url": "https://www.chicagotribune.com/2026/11/06/ihsa-state-football-playoff-pairings-schedule/",
+          "title": "IHSA football playoffs: Get the scores from 2nd-round games in Class 8A to 1A",
+          "publisher": "Chicago Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdAQZ9U5B6qMz4ZYIw1N_3bee9rZkKCJw-BBNVXs0_uJ75y9nEeE8E8dhHivA"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/illinois-high-school-football-final-063359107.html",
+          "title": "Illinois High School Football Final Scores - November 6",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmTZnNn6L1RhAFjGo1ZmAVneOpokK8eD1-RsiHGnACP-sT0gtrzWMVhr5cNws"
+        },
+        {
+          "url": "https://www.pjstar.com/story/sports/high-school/football/2026/11/05/football-predictions-how-we-see-ihsa-second-round-for-peoria-area-high-school-games/92564715007/",
+          "title": "IHSA playoff predictions: Second-round picks for Peoria-area high school football teams",
+          "publisher": "Peoria Journal Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKV8V5xTasV0eqGGlEEsVrBWKelZ2vTbRJdrJtuz0TTBkPaE21udJAwe-ftwo"
+        }
+      ]
+    },
+    {
+      "query": "leeds united",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T11:10:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cq33x0rvmjret",
+        "https://www.leedsunited.com/en/news/team-news-injury-updates-on-calvert-lewin-okafor-and-stach",
+        "https://sports.yahoo.com/articles/pressing-charts-def-cons-more-074200815.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUG9ujP2BxW6_1fT8ZTCOtcPhRUBLL0KFRRBaScJuMjaCQr1no1XqEu8RSwis",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cq33x0rvmjret",
+          "title": "Leeds United vs Tottenham Hotspur: Premier League preview, team news, stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUG9ujP2BxW6_1fT8ZTCOtcPhRUBLL0KFRRBaScJuMjaCQr1no1XqEu8RSwis"
+        },
+        {
+          "url": "https://www.leedsunited.com/en/news/team-news-injury-updates-on-calvert-lewin-okafor-and-stach",
+          "title": "Team News: Injury updates on Calvert-Lewin, Okafor & Stach",
+          "publisher": "Leeds United | Official Website - Leeds United",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqwL9kvFPQ2Yd7ud4vE5-eMoHhi3I99hFTq6OxcQCViHAELn62qHHcv7BdEs4"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/pressing-charts-def-cons-more-074200815.html",
+          "title": "Pressing charts, def cons and more! Nine OPTA facts ahead of #LEETOT",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQN9XscYQOWBe0QxMPQ2j-ubSiV-FgD4cWXoRE8CzLQn_jFoPbK2IVmugPEHw8"
+        }
+      ]
+    },
+    {
+      "query": "jehovah's witnesses and blood transfusions",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T11:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cx5ynly549njo",
+        "https://suaragarut.id/en/witnesses-relax-blood-rules"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvX97Ty6nAkOl6myPdQK0HWsxf5lZPD2SfpcX3nsNPJVJmrjxaPasDQetzNvg",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cx5ynly549njo",
+          "title": "Jehovah's Witness rules on blood transfusions have changed, but it's too late for my brother",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvX97Ty6nAkOl6myPdQK0HWsxf5lZPD2SfpcX3nsNPJVJmrjxaPasDQetzNvg"
+        },
+        {
+          "url": "https://suaragarut.id/en/witnesses-relax-blood-rules",
+          "title": "Jehovahs Witnesses Relax Blood Rules After Texas Man Dies",
+          "publisher": "SuaraGarut.ID",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc8IYbFUPaWY7k-4tJuncKxEXu-WDpMc82t_-0Qg0sZQ3Zt7ENO6xBQehB-WM"
+        }
+      ]
+    },
+    {
+      "query": "dp world tour",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T11:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/golf/story/_/id/50390018/liv-golf-liquidation-next-bryson-dechambeau-jon-rahm",
+        "https://sports.yahoo.com/golf/article/liv-golf-is-dead--but-it-changed-golf-forever-164353197.html",
+        "https://www.golfchannel.com/dp-world-tour/news/report-dpwt-informs-bryson-dechambeau-hes-got-full-status-for-2027-if-he-wants-it"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-HnyYFitno7sD36krWrLSJnbOTsDa7ajhaCzSUY_bQbMmSunLkrturN5lta0",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/golf/story/_/id/50390018/liv-golf-liquidation-next-bryson-dechambeau-jon-rahm",
+          "title": "Is this really the end of LIV, and what's next for some the world's best golfers?",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-HnyYFitno7sD36krWrLSJnbOTsDa7ajhaCzSUY_bQbMmSunLkrturN5lta0"
+        },
+        {
+          "url": "https://sports.yahoo.com/golf/article/liv-golf-is-dead--but-it-changed-golf-forever-164353197.html",
+          "title": "LIV Golf is dead ... but it changed golf forever",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWE6wnRblHin876Ctm3bVqUiQAWzJ3_9IhNXRwiYARaqR3XLTd5E6TGKlr7Y8"
+        },
+        {
+          "url": "https://www.golfchannel.com/dp-world-tour/news/report-dpwt-informs-bryson-dechambeau-hes-got-full-status-for-2027-if-he-wants-it",
+          "title": "Report: DPWT informs Bryson DeChambeau he’s got full status for 2027, if he wants it",
+          "publisher": "Golf Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuEa86W5vYEPgTH-VQRXNtmvcHBZYsoE0wSLf6qtR5el_AKk9c_vpd7I3LK5E"
+        }
+      ]
+    },
+    {
+      "query": "alabama vs lsu",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T11:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50401690/alabama-ryan-coleman-williams-trio-return-vs-lsu",
+        "https://www.nytimes.com/athletic/7754316/2026/11/05/alabama-lsu-football-rivalry-sec-schedule/",
+        "https://www.al.com/sports/2026/11/casagrande-monster-weekend-means-wildly-different-things-for-alabama-auburn.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-Sn7Qgm3kx-6Z8OM15XaIwWRzeRRJ1_UgivbLAfbrWjm5fjbvQkMNp1ThKm0",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50401690/alabama-ryan-coleman-williams-trio-return-vs-lsu",
+          "title": "Alabama's Ryan Coleman-Williams among trio to return vs. LSU",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-Sn7Qgm3kx-6Z8OM15XaIwWRzeRRJ1_UgivbLAfbrWjm5fjbvQkMNp1ThKm0"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7754316/2026/11/05/alabama-lsu-football-rivalry-sec-schedule/",
+          "title": "Can Alabama vs. LSU last as a premier college football rivalry?",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRudTYfd55JkRckFT7ZXqe_fcyKTU7JyFC4qCqo5Gp1NAEG9aoTWqv0qXTm1No"
+        },
+        {
+          "url": "https://www.al.com/sports/2026/11/casagrande-monster-weekend-means-wildly-different-things-for-alabama-auburn.html",
+          "title": "Casagrande: Monster weekend means wildly different things for Alabama, Auburn",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS9lWSAQTaBchiES1eR89EGNjdRdpsArywLr8nEXr6atrtPIrD5p29pKUZtTk"
+        }
+      ]
+    },
+    {
+      "query": "wrongful death lawyer",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T10:50:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/news/us/articles/lindsay-clancy-doctors-her-lawyer-214909986.html",
+        "https://www.the-sun.com/news/17263755/lindsay-clancy-doctors-derail-patrick-civil-lawsuit/",
+        "https://www.fox5atlanta.com/news/family-teen-killed-newnan-police-make-announcement"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2H7eR2yn1X8Vjb8ofbI0QAvUwZ6A8J9i3rD1kyHsyWnRsYYlgcMREzBTsZ_4",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/news/us/articles/lindsay-clancy-doctors-her-lawyer-214909986.html",
+          "title": "Lindsay Clancy’s Doctors Use Her Lawyer’s Statement to Push for a Lawsuit Against Them to Be Dropped",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2H7eR2yn1X8Vjb8ofbI0QAvUwZ6A8J9i3rD1kyHsyWnRsYYlgcMREzBTsZ_4"
+        },
+        {
+          "url": "https://www.the-sun.com/news/17263755/lindsay-clancy-doctors-derail-patrick-civil-lawsuit/",
+          "title": "Lindsay Clancy doctors make emergency bid to derail ex Patrick's $1m lawsuit",
+          "publisher": "The Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcDExfkQQ50gYbmwU2VSAjQV9gNNIITAySjk4zSFrn7MsvYjWN9EctuYT6OOs"
+        },
+        {
+          "url": "https://www.fox5atlanta.com/news/family-teen-killed-newnan-police-make-announcement",
+          "title": "Family plans $75M suit after 18-year-old killed in Newnan police chase",
+          "publisher": "FOX 5 Atlanta",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrJ_jvt3aMzkvVY1_Oj7OQEeJF1yxvE-z0OCkAlZ-AdR3sqlAE7uIS16EX4sU"
+        }
+      ]
+    },
+    {
+      "query": "colorado",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T10:50:00Z",
+      "related_news_urls": [
+        "https://www.kunc.org/news/2026-11-06/midterm-blue-tsunami-drowns-colorado-gop",
+        "https://www.cpr.org/2026/11/05/polis-on-democratic-wins-and-legacy/",
+        "https://www.9news.com/article/news/politics/colorado-gop-chairman-republican-losses-rebuilding-party/73-f73bdc6e-2cf9-43ea-abe0-b48cfae59963"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVqhqzHwY7mjcVD4MyZk6paZokSMKnT4Vbp1BInYI4OSVvDS8rf-Aar8WPrAM",
+      "image_credit": "KUNC",
+      "news": [
+        {
+          "url": "https://www.kunc.org/news/2026-11-06/midterm-blue-tsunami-drowns-colorado-gop",
+          "title": "Midterm 'blue tsunami' drowns Colorado GOP",
+          "publisher": "KUNC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVqhqzHwY7mjcVD4MyZk6paZokSMKnT4Vbp1BInYI4OSVvDS8rf-Aar8WPrAM"
+        },
+        {
+          "url": "https://www.cpr.org/2026/11/05/polis-on-democratic-wins-and-legacy/",
+          "title": "Polis on Democrats’ big night, CoCo and why he hopes mercy will be his legacy",
+          "publisher": "Colorado Public Radio",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTixGkFDLaBOHS264xtnBMK4ze4MVGiJKuHgS4UKFFOlr9rSiYGofVnTLsWnKw"
+        },
+        {
+          "url": "https://www.9news.com/article/news/politics/colorado-gop-chairman-republican-losses-rebuilding-party/73-f73bdc6e-2cf9-43ea-abe0-b48cfae59963",
+          "title": "Colorado Republicans chairman speaks on GOP losses, rebuilding party",
+          "publisher": "9News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzHCmKH8TamyfNQB6smq7O2f_cJWdeYChrdKeBySiJcfjkm1nmMJnglg8ENuw"
+        }
+      ]
+    },
+    {
+      "query": "腾讯视频",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T10:40:00Z",
+      "related_news_urls": [
+        "https://finance.sina.cn/2026-11-07/detail-inixwakh8381786.d.html?vt=4&pos=108",
+        "https://bydrug.pharmcube.com/news/detail/ede8300f24216a0783c1e38b44a94174",
+        "https://www.mrjjxw.com/articles/2026-11-06/4640621.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGsUulgVvqMm6FMmqBeqq_Ebt1SRrbKapCXJPJPedbepoErsg0QWmxrcWiHXc",
+      "image_credit": "新浪财经",
+      "news": [
+        {
+          "url": "https://finance.sina.cn/2026-11-07/detail-inixwakh8381786.d.html?vt=4&pos=108",
+          "title": "一波经典港剧将被改编",
+          "publisher": "新浪财经",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGsUulgVvqMm6FMmqBeqq_Ebt1SRrbKapCXJPJPedbepoErsg0QWmxrcWiHXc"
+        },
+        {
+          "url": "https://bydrug.pharmcube.com/news/detail/ede8300f24216a0783c1e38b44a94174",
+          "title": "TVB，有新动作",
+          "publisher": "ByDrug",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaHhlupKO3GRfhOmVAB9l0M5kw1Ntdbf9-eef9P81Uku9jm64W22rr7f_eAP8"
+        },
+        {
+          "url": "https://www.mrjjxw.com/articles/2026-11-06/4640621.html",
+          "title": "TVB联手腾讯视频布局“横屏短剧”",
+          "publisher": "https://www.mrjjxw.com/",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaV2aU0yfoXogJkzOmq36eocTlfjGE2-ZtXZj014B---wi3Oy1e3o6x5JC1Lo"
+        }
+      ]
+    },
+    {
+      "query": "wind advisory",
+      "approx_searches": "500+",
       "published_at": "2026-11-07T10:30:00Z",
       "related_news_urls": [
         "https://www.thenewstribune.com/news/weather-news/article317971465.html",
@@ -38,321 +345,6 @@
           "publisher": "cedarnews.net",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQULdOa1zXrxpLsOOn5rFXyrj9O71WKQzoBjgm3vsYh96UATcFIiS4H_HkhwKE"
-        }
-      ]
-    },
-    {
-      "query": "new zealand vs india",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-07T10:20:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-2nd-odi-1539438/match-report",
-        "https://sports.yahoo.com/articles/zealand-vs-india-2nd-odi-010001305.html",
-        "https://www.foxsports.com/articles/soccer/gurnoor-brar-takes-430-as-india-bowls-out-new-zealand-for-134-in-the-2nd-odi"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgCBaZRt__pRbKYlQD4UAgr3_MvqgRc6CgaOQU9bLNmuNdgENkjZqaJfBRKuQ",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-2nd-odi-1539438/match-report",
-          "title": "India go 2-0 up after narrow DLS win in low-scoring suspenser",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgCBaZRt__pRbKYlQD4UAgr3_MvqgRc6CgaOQU9bLNmuNdgENkjZqaJfBRKuQ"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/zealand-vs-india-2nd-odi-010001305.html",
-          "title": "New Zealand vs. India 2nd ODI live score, win probability and chances of victory in Wellington",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoAO8N-UXV8SGbI0i8PEipNZQhYDGvTS7KqVicogw9Hql58cx98VFkXHbGQO0"
-        },
-        {
-          "url": "https://www.foxsports.com/articles/soccer/gurnoor-brar-takes-430-as-india-bowls-out-new-zealand-for-134-in-the-2nd-odi",
-          "title": "Gurnoor Brar takes 4-30 as India bowls out New Zealand for 134 in the 2nd ODI",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4s4BZOkTNXN3YIPa9D2mGE41CMQSYHPibv39-9pCCL84ruNU6IK4Wzep74lk"
-        }
-      ]
-    },
-    {
-      "query": "new",
-      "approx_searches": "100+",
-      "published_at": "2026-11-07T10:20:00Z",
-      "related_news_urls": [
-        "https://www.courant.com/2026/11/07/new-ct-restaurant-is-opening-owners-say-goal-is-families-fun-and-affordable-food/",
-        "https://www.thebanner.com/culture/arts/walters-art-museum-luxury-loss-YEX7Q5SZYZEVZK5N7NCGSKWXUA/",
-        "https://www.bbc.com/news/articles/crp3gg2z171go"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJF0E_6GG3QgJIFwoH4OgJIII6b_IIRrMvX-rfMxJVgNPPFEDHOAMQbz-4ouc",
-      "image_credit": "Hartford Courant",
-      "news": [
-        {
-          "url": "https://www.courant.com/2026/11/07/new-ct-restaurant-is-opening-owners-say-goal-is-families-fun-and-affordable-food/",
-          "title": "New CT restaurant is opening. Owners say goal is families, fun and ‘affordable food’",
-          "publisher": "Hartford Courant",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJF0E_6GG3QgJIFwoH4OgJIII6b_IIRrMvX-rfMxJVgNPPFEDHOAMQbz-4ouc"
-        },
-        {
-          "url": "https://www.thebanner.com/culture/arts/walters-art-museum-luxury-loss-YEX7Q5SZYZEVZK5N7NCGSKWXUA/",
-          "title": "What is the true cost of luxury? A new Walters art exhibit aims to find out.",
-          "publisher": "The Baltimore Banner",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZ3eHvwsi5Gpv5grANxGLFl68eQSq061FXvR4pkDLNPymQdsuwH4M_bRui0JI"
-        },
-        {
-          "url": "https://www.bbc.com/news/articles/crp3gg2z171go",
-          "title": "With Stephen Miller pick, Trump readies for a battle",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQy8hm6HqwEuJ5SFhO-w_d5N5VMD8pqzKcJzbhwRtPl9zieo-jk3mrfr2ZoRKw"
-        }
-      ]
-    },
-    {
-      "query": "lindenwold",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T10:20:00Z",
-      "related_news_urls": [
-        "https://6abc.com/post/foster-mother-charged-10-year-old-philadelphia-girls-death-previously-faced-abuse-allegations-attorney-says/20021681/",
-        "https://www.nbcphiladelphia.com/news/local/full-timeline-of-investigation-into-malayshia-alfords-murder/4492693/",
-        "https://abcnews.com/US/foster-parent-accused-murdering-10-year-girl-care/story?id=137926563"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVYNnkphWDc5JJK0rKeVLgdxeGFqet7VMBroj5_54wS0wKZOpkrvoT-9uwY_k",
-      "image_credit": "6abc Philadelphia",
-      "news": [
-        {
-          "url": "https://6abc.com/post/foster-mother-charged-10-year-old-philadelphia-girls-death-previously-faced-abuse-allegations-attorney-says/20021681/",
-          "title": "Foster mother charged in 10-year-old Philadelphia girl's death previously faced abuse allegations, attorney says",
-          "publisher": "6abc Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVYNnkphWDc5JJK0rKeVLgdxeGFqet7VMBroj5_54wS0wKZOpkrvoT-9uwY_k"
-        },
-        {
-          "url": "https://www.nbcphiladelphia.com/news/local/full-timeline-of-investigation-into-malayshia-alfords-murder/4492693/",
-          "title": "Full timeline of investigation into Malayshia Alford's murder",
-          "publisher": "NBC10 Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgKZmmThbKEGu1FfKvhFVY_A4Dru1ryEGpbArsmNI5_d0UpPxd0TW_detfZ9o"
-        },
-        {
-          "url": "https://abcnews.com/US/foster-parent-accused-murdering-10-year-girl-care/story?id=137926563",
-          "title": "Foster parent accused of murdering 10-year-old girl in her care: Officials",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlSqR0zCWNJbkC4ukap0e8WAUGHdU0l-ga_rprmlWHGubj3E2i7nPKdKIkLAQ"
-        }
-      ]
-    },
-    {
-      "query": "roku",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T10:10:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/media-advertising/articles/fox-closes-22-billion-roku-142117922.html",
-        "https://www.prnewswire.com/news-releases/fox-corporation-completes-acquisition-of-roku-302932088.html",
-        "https://www.imdb.com/news/ni66099451/?ref_=nwc_art_perm"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTyjEZby1f8MfRuk5q7lExQZC3-zSseojZWiX7vinXAkWRgxxSVwD6A86ECKk",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/media-advertising/articles/fox-closes-22-billion-roku-142117922.html",
-          "title": "Fox Closes $22 Billion Roku Takeover",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTyjEZby1f8MfRuk5q7lExQZC3-zSseojZWiX7vinXAkWRgxxSVwD6A86ECKk"
-        },
-        {
-          "url": "https://www.prnewswire.com/news-releases/fox-corporation-completes-acquisition-of-roku-302932088.html",
-          "title": "FOX CORPORATION COMPLETES ACQUISITION OF ROKU",
-          "publisher": "PR Newswire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOGy15er6RYLqLqfL3b0xsKN4BgjYUBOh8grCUJxZ_lwzC8ZMmnf9fzRAHRNU"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66099451/?ref_=nwc_art_perm",
-          "title": "Fox Commits to Carrying Non-Fox Content on Roku for at Least 3 Years as DOJ Closes Antitrust Investigation",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTw6JvxSzuuc2M7NEMwldNHfAfTkbBhPWk9AYwevomvFsTiJ2jStB0W1Fdo144"
-        }
-      ]
-    },
-    {
-      "query": "wi vs ban",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T10:00:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/story/ban-vs-wi-sylhet-test-amir-jangoo-backs-his-instincts-after-century-1561675",
-        "https://www.cricbuzz.com/cricket-news/140811/record-breaking-hasan-mahmud-savours-a-special-milestone-cricbuzzcom",
-        "https://www.jamaicaobserver.com/2026/11/06/mahmuds-6-90-restricts-west-indies-second-bangladesh-test/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSg7ljpu4-VrCZ2L42Srwj9Nj2ltGRQ_y8CI504d34v6Rn6hhazt6fbf1SJ85I",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/story/ban-vs-wi-sylhet-test-amir-jangoo-backs-his-instincts-after-century-1561675",
-          "title": "'It's all about sticking to my strengths' - Jangoo backs his instincts after Sylhet ton",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSg7ljpu4-VrCZ2L42Srwj9Nj2ltGRQ_y8CI504d34v6Rn6hhazt6fbf1SJ85I"
-        },
-        {
-          "url": "https://www.cricbuzz.com/cricket-news/140811/record-breaking-hasan-mahmud-savours-a-special-milestone-cricbuzzcom",
-          "title": "Record-breaking Hasan Mahmud savours a special milestone",
-          "publisher": "Cricbuzz",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8_qjqKBGoGvLOqLoWDOv5Nd58zqOkfI1EHD7WjzR_MXhBYOea0MOHAajviQA"
-        },
-        {
-          "url": "https://www.jamaicaobserver.com/2026/11/06/mahmuds-6-90-restricts-west-indies-second-bangladesh-test/",
-          "title": "Mahmud’s 6-90 restricts West Indies in second Bangladesh Test",
-          "publisher": "Jamaica Observer",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWTsLHV1sFwz0yCFGE0SKt1-FRTMN1OXRad9AuKuFOKnZajj6Et0b-6ynTZzk"
-        }
-      ]
-    },
-    {
-      "query": "what are the details of iran's new nuclear proposal to the united states?",
-      "approx_searches": "100+",
-      "published_at": "2026-11-07T10:00:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/live-news/iran-war-news-nuclear-proposal-hegseth-congress-budget-request-11-06-26",
-        "https://www.aljazeera.com/news/2026/11/6/russia-to-uae-iran-steps-up-diplomacy-amid-trump-threats-what-we-know",
-        "https://www.theguardian.com/world/2026/nov/07/strait-of-hormuz-qatar-plan-iran-nuclear-inspections"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFSI35elogQVAVLwUp88unTJtLiaO23no75_Q-zJk6hpQyWCc4_nfTdI-_zEA",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/live-news/iran-war-news-nuclear-proposal-hegseth-congress-budget-request-11-06-26",
-          "title": "Hegseth calls US-Iran war a 'courageous and historic effort'",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFSI35elogQVAVLwUp88unTJtLiaO23no75_Q-zJk6hpQyWCc4_nfTdI-_zEA"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/6/russia-to-uae-iran-steps-up-diplomacy-amid-trump-threats-what-we-know",
-          "title": "Russia to UAE, Iran steps up diplomacy amid Trump threats: What we know",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfnFM1z0DKtzx2bTvDARe0e5HJ9J2hznBSGCEWaWNjkSJHA4oKU-euhsnTKPw"
-        },
-        {
-          "url": "https://www.theguardian.com/world/2026/nov/07/strait-of-hormuz-qatar-plan-iran-nuclear-inspections",
-          "title": "Strait of Hormuz could reopen as part of Qatari plan for Iran nuclear inspections",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHMrAGNYrCAXpCnvM2tp3-TtF867GU3XivK-I7cT1afApnb0zcSWzAcOLD4RM"
-        }
-      ]
-    },
-    {
-      "query": "saturday night live druski; the strokes",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T09:50:00Z",
-      "related_news_urls": [
-        "https://blog.youtube/news-and-events/druski-hosts-saturday-night-live-nbc/",
-        "https://deadline.com/2026/11/snl-promo-druski-last-episode-of-show-1237214905/",
-        "https://www.tvline.com/2307641/what-to-watch-november-7-2026-tv-shows-movies-streaming/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnRg31yKEnxDrmF7mCc0uwWC9mL2FulUCAYWza2ASF0losocPgWAh0t78vGXM",
-      "image_credit": "YouTube Official Blog",
-      "news": [
-        {
-          "url": "https://blog.youtube/news-and-events/druski-hosts-saturday-night-live-nbc/",
-          "title": "Druski to host Saturday Night Live this weekend",
-          "publisher": "YouTube Official Blog",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnRg31yKEnxDrmF7mCc0uwWC9mL2FulUCAYWza2ASF0losocPgWAh0t78vGXM"
-        },
-        {
-          "url": "https://deadline.com/2026/11/snl-promo-druski-last-episode-of-show-1237214905/",
-          "title": "‘Saturday Night Live’ Promo: Druski Set To Host “Last-Ever Episode Of ‘SNL'”",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQliR7TNBoq41AQFilRJ8y1R217KvVI3tLnvoOrs-kCXFWn0oReDD8IPBY2F4k"
-        },
-        {
-          "url": "https://www.tvline.com/2307641/what-to-watch-november-7-2026-tv-shows-movies-streaming/",
-          "title": "What To Watch Saturday: Druski Hosts SNL, Nikki DeLoach/Juan Pablo Di Pace Hallmark Movie, And More",
-          "publisher": "TVLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgiEnWIBLinu9QNl9L6_NxEhReXwKT481747yVsq73xW8ZxVoeM5KEtiFmLbU"
-        }
-      ]
-    },
-    {
-      "query": "tom jones",
-      "approx_searches": "100+",
-      "published_at": "2026-11-07T09:50:00Z",
-      "related_news_urls": [
-        "https://nypost.com/2026/11/05/entertainment/tom-jones-reveals-he-almost-died-following-mystery-illness/",
-        "https://www.cleveland.com/news/2026/11/tom-jones-thought-his-illness-was-the-flu-then-things-became-far-more-serious.html",
-        "https://www.usatoday.com/story/entertainment/music/2026/11/06/tom-jones-health-scare-respiratory-infection/92647225007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQ2ZQ4TC081UXJD1EuIMxbT1fHoi6aSCtoDzV9VLy2OcXku4BiZziFOMN0TzQ",
-      "image_credit": "New York Post",
-      "news": [
-        {
-          "url": "https://nypost.com/2026/11/05/entertainment/tom-jones-reveals-he-almost-died-following-mystery-illness/",
-          "title": "Exclusive | Tom Jones reveals he almost died in return to stage following serious mystery illness",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQ2ZQ4TC081UXJD1EuIMxbT1fHoi6aSCtoDzV9VLy2OcXku4BiZziFOMN0TzQ"
-        },
-        {
-          "url": "https://www.cleveland.com/news/2026/11/tom-jones-thought-his-illness-was-the-flu-then-things-became-far-more-serious.html",
-          "title": "Tom Jones thought his illness was the flu. Then things became far more serious",
-          "publisher": "Cleveland.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTT6Eb_1jR1rhtdTxtkwE2R2x2yYVNlbUBYoHbVFOfueKtxhnNE8Ir-p7pkE9M"
-        },
-        {
-          "url": "https://www.usatoday.com/story/entertainment/music/2026/11/06/tom-jones-health-scare-respiratory-infection/92647225007/",
-          "title": "Tom Jones, 86, says he feared life was 'over' after recent health scare",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkLPVEguSHWNHcJctKV6O3jBWX5ttdyXhXHESVNNzpvIO6XFnP4aTT1zyLjgU"
-        }
-      ]
-    },
-    {
-      "query": "zelda ocarina of time remake",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T09:20:00Z",
-      "related_news_urls": [
-        "https://www.nintendo.com/en-gb/News/2026/November/Ask-the-Developer-Vol-24-The-Legend-of-Zelda-Ocarina-of-Time-Chapter-1-3230318.html",
-        "https://gameinformer.com/interview/2026/11/06/award-winning-composer-and-musician-jon-batiste-talks-ocarina-of-times-music",
-        "https://www.theverge.com/games/1026380/zelda-ocarina-of-time-interview-eiji-aonuma-hidemaro-fujibayashi"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnV5nZjIGijYizcERtXK2tJGjctxSrf7u_w6bimlNlGGpkKEbVfb87w5taX0s",
-      "image_credit": "Nintendo",
-      "news": [
-        {
-          "url": "https://www.nintendo.com/en-gb/News/2026/November/Ask-the-Developer-Vol-24-The-Legend-of-Zelda-Ocarina-of-Time-Chapter-1-3230318.html",
-          "title": "Ask the Developer Vol. 24, The Legend of Zelda: Ocarina of Time – Chapter 1",
-          "publisher": "Nintendo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnV5nZjIGijYizcERtXK2tJGjctxSrf7u_w6bimlNlGGpkKEbVfb87w5taX0s"
-        },
-        {
-          "url": "https://gameinformer.com/interview/2026/11/06/award-winning-composer-and-musician-jon-batiste-talks-ocarina-of-times-music",
-          "title": "Award-Winning Composer And Musician Jon Batiste Talks Ocarina Of Time's Music And Why 'Guile's Theme' Goes With Everything",
-          "publisher": "Game Informer",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUrrs-lE4g4CQ5294A0SXX_tAgfKmFufzCAKhMN6dlyjigE0PlkWguiVNIWOc"
-        },
-        {
-          "url": "https://www.theverge.com/games/1026380/zelda-ocarina-of-time-interview-eiji-aonuma-hidemaro-fujibayashi",
-          "title": "Nintendo’s designers strove for ‘elegance’ when remaking Ocarina of Time",
-          "publisher": "The Verge",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUHXAduy7S9ao61KTOCHsWwUdJedofDqkob32gyCAwNHjxnID_UWOrM3-ilF8"
         }
       ]
     }
