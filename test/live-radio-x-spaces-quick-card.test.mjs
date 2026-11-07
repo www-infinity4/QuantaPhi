@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {test} from 'node:test';
 import {readFileSync} from 'node:fs';
-import {validSpaceLink, normalizeSpaceEntry, filterSpaceEntries} from '../x-spaces-quick-card.mjs';
+import {validSpaceLink, normalizeSpaceEntry, filterSpaceEntries, parseSpaceClipPostId} from '../x-spaces-quick-card.mjs';
 import {readVerifiedLiveSpaces} from '../quanta-feed-spaces.mjs';
 
 const read=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
@@ -81,4 +81,13 @@ test('live X Spaces search uses wallet authorization and rejects ended or fabric
  await assert.rejects(()=>readVerifiedLiveSpaces({token:'bad',topic:'technology',fetcher}),/wallet_not_connected/);
  await assert.rejects(()=>readVerifiedLiveSpaces({token,topic:'//abuse',fetcher}),/invalid_space_topic/);
  assert.equal(urls.length,1);
+});
+
+test('an X Space clip post can be requested in the card only through an official embedded post',()=>{
+ assert.equal(parseSpaceClipPostId('https://x.com/Host/status/1888777666555444333'),'1888777666555444333');
+ assert.equal(parseSpaceClipPostId('https://twitter.com/Host/status/1888777666555444333?s=2'),'1888777666555444333');
+ for(const bad of ['https://evil.example/Host/status/1888777666555444333','https://x.com/i/spaces/1OyKAjYPeXqGb','javascript:alert(1)'])assert.equal(parseSpaceClipPostId(bad),null);
+ const source=read('x-spaces-quick-card.mjs');
+ assert.ok(source.includes('widgets.createTweet'),'must use documented official post embedding, not X Spaces iframes');
+ assert.ok(source.includes('https://platform.x.com/widgets.js'));
 });
