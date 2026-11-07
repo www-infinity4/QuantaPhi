@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-07T14:18:17.005041Z",
+  "checked_at": "2026-11-07T15:18:34.485032Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -741,17 +741,17 @@
     },
     "durable-knipex": {
       "schema_version": 1,
-      "attempted_at": "2026-11-07T09:18:22.217529Z",
+      "attempted_at": "2026-11-07T15:18:34.485032Z",
       "items": []
     },
     "durable-wera": {
       "schema_version": 1,
-      "attempted_at": "2026-11-07T09:18:22.217529Z",
+      "attempted_at": "2026-11-07T15:18:34.485032Z",
       "items": []
     },
     "durable-wiha": {
       "schema_version": 1,
-      "attempted_at": "2026-11-07T09:18:22.217529Z",
+      "attempted_at": "2026-11-07T15:18:34.485032Z",
       "items": [
         {
           "url": "https://www.wihatools.com/account/login",
@@ -759,7 +759,7 @@
           "title": "Wiha Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -768,7 +768,7 @@
           "title": "Wiha Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -777,7 +777,7 @@
           "title": "Wiha Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -786,16 +786,16 @@
           "title": "Wiha Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
           "url": "https://www.wihatools.com/products/wiha-premium-mro-case",
-          "image": "https://www.wihatools.com/cdn/shop/files/ehsxrbqfr4gohu7cxtcv_1024x.jpg?v=1776759757",
+          "image": "https://www.wihatools.com/cdn/shop/files/u4wio9fzywgds5dw2jhb_1024x.jpg?v=1776759757",
           "title": "158 piece Overlanding Kit in Rolling Tool Box",
           "kind": "product",
           "description": "Introducing the 158 Piece Industrial MRO Rolling Case Kit; a masterclass in tool storage, protection, and versatility. This premium case is custom molded to perfection, featuring custom foam tray compartments for each tool, ensuring they are securely held in p",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "1614.09",
@@ -807,11 +807,11 @@
         },
         {
           "url": "https://www.wihatools.com/products/194-piece-premium-kit-in-rolling-tool-box",
-          "image": "https://www.wihatools.com/cdn/shop/files/hhsc80cvvzqx3mpxendu_1024x.jpg?v=1776759757",
+          "image": "https://www.wihatools.com/cdn/shop/files/okoutoivumiii8jwd6lf_1024x.jpg?v=1776759757",
           "title": "194 Piece Premium Kit In Rolling Tool Box",
           "kind": "product",
           "description": "The Wiha 194 Piece Premium Tool Kit In Rolling Tool Box is designed to empower contractors and professionals with a comprehensive set of high-quality tools for all their needs. With an extensive array of 194 must-have pieces, Wiha’s Premium Tool Kit is the per",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "1199.99",
@@ -825,7 +825,7 @@
     },
     "durable-pb-swiss-tools": {
       "schema_version": 1,
-      "attempted_at": "2026-11-07T09:18:22.217529Z",
+      "attempted_at": "2026-11-07T15:18:34.485032Z",
       "items": [
         {
           "url": "https://www.pbswisstools.com/en/tools/quality-hand-tools/vde-and-elektronics-screwdrivers/product/pb-175-0-led",
@@ -833,7 +833,7 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -842,7 +842,7 @@
           "title": "PB 6464",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -851,7 +851,7 @@
           "title": "PB 900 V01",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -860,7 +860,7 @@
           "title": "PB C6 192",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -869,7 +869,7 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -878,7 +878,7 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -887,7 +887,7 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -896,14 +896,14 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-snap-on": {
       "schema_version": 1,
-      "attempted_at": "2026-11-07T09:18:22.217529Z",
+      "attempted_at": "2026-11-07T15:18:34.485032Z",
       "items": [
         {
           "url": "https://www.snapon.com/EN/Makers-and-Fixers",
@@ -918,7 +918,7 @@
     },
     "durable-lie-nielsen": {
       "schema_version": 1,
-      "attempted_at": "2026-11-07T09:18:22.217529Z",
+      "attempted_at": "2026-11-07T15:18:34.485032Z",
       "items": [
         {
           "url": "https://www.lie-nielsen.com/products/1-sp-boggs-con-boggs-spokeshaves",
@@ -926,7 +926,7 @@
           "title": "Boggs Concave Spokeshave",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -935,7 +935,7 @@
           "title": "1-SP-Boggs-Con.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -944,7 +944,7 @@
           "title": "boggs-concave-2021-iso.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -953,7 +953,7 @@
           "title": "concave-boggs-spokeshave-2019.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -962,7 +962,7 @@
           "title": "Small Router Plane - Open Throat",
           "kind": "website",
           "description": "Small Router Plane Loosely based on the Stanley No. 271, these small Router Planes are perfect for shallow mortise and small relief work. The compact design makes it easy to guide along narrow edges and fit into tight spaces. 4\" long x 2\" wide O1 blade with 1/",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -971,7 +971,7 @@
           "title": "small-router-plane-ot-front.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -980,7 +980,7 @@
           "title": "small-router-plane-ot-iso-l.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -989,14 +989,14 @@
           "title": "small-router-plane-ot-iso-r.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-starrett": {
       "schema_version": 1,
-      "attempted_at": "2026-11-07T09:18:22.217529Z",
+      "attempted_at": "2026-11-07T15:18:34.485032Z",
       "items": [
         {
           "url": "https://www.starrett.com/",
@@ -1004,7 +1004,7 @@
           "title": "Premium Starrett micrometer resting on an American flag",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1013,7 +1013,7 @@
           "title": "W4900 Animated Gif",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1022,7 +1022,7 @@
           "title": "Starrett Carbide Tipped Reciprocating Saw Blade",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1031,7 +1031,7 @@
           "title": "Starrett and Roush Yates",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1040,7 +1040,7 @@
           "title": "Made In America",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1049,7 +1049,7 @@
           "title": "HG Electronic Height Gages and Accessories",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1058,7 +1058,7 @@
           "title": "Made In America",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1067,14 +1067,14 @@
           "title": "Made In America",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-mitutoyo": {
       "schema_version": 1,
-      "attempted_at": "2026-11-07T09:18:22.217529Z",
+      "attempted_at": "2026-11-07T15:18:34.485032Z",
       "items": [
         {
           "url": "https://www.mitutoyo.com/services/calibration-repair/calibration-lab/",
@@ -1082,7 +1082,7 @@
           "title": "Mitutoyo Metrology Calibration Lab",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1091,7 +1091,7 @@
           "title": "precision measurement services",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1100,14 +1100,14 @@
           "title": "Coordinate Measuring Machines | Mitutoyo America Corporation",
           "kind": "website",
           "description": "Mitutoyo manufactures top-quality coordinate measuring machines (CMM) that lead the industry in precision. Find the perfect solution for you.",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-leatherman": {
       "schema_version": 1,
-      "attempted_at": "2026-11-07T09:18:22.217529Z",
+      "attempted_at": "2026-11-07T15:18:34.485032Z",
       "items": [
         {
           "url": "https://www.leatherman.com/collections/bestsellers/products/arc",
@@ -1115,7 +1115,7 @@
           "title": "Black DLC and stainless steel Leatherman ARC® multi-tool opened showcasing the many tools and features included.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1124,7 +1124,7 @@
           "title": "Leatherman ARC® Talos multi-tool opened showcasing the many tools and features included.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1133,7 +1133,7 @@
           "title": "Black DLC and stainless steel Leatherman ARC® multi-tool closed showcasing its compact design.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1142,7 +1142,7 @@
           "title": "Leatherman ARC® Talos closed showcasing the Bronze Cerakote coating and compact design.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1151,7 +1151,7 @@
           "title": "Leatherman Gift Card",
           "kind": "product",
           "description": "Leatherman's Digital Gift Card is perfect for any occasion. This e-gift card lets recipients pick their favorite products from our online store. Choose how you deliver — email right away, schedule for later, or send to yourself to pass along personally. Simple",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "10.0",
@@ -1166,7 +1166,7 @@
           "title": "ARC®",
           "kind": "product",
           "description": "The ARC is our most advanced multi-tool, built to be both durable and easier to use. It features a MagnaCut steel blade that holds its edge longer and resists rust, making it perfect for both daily tasks and hard outdoor jobs. Every feature is outside-accessib",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "249.95",
@@ -1181,7 +1181,7 @@
           "title": "Skeletool® CX",
           "kind": "product",
           "description": "The Leatherman Skeletool CX packs only the most essential features into a lightweight, portable design. It’s made for people who want serious function without carrying extra bulk. The premium 154CM stainless steel straight-edge blade has a great balance of cor",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "99.95",
@@ -1194,7 +1194,7 @@
     },
     "durable-victorinox": {
       "schema_version": 1,
-      "attempted_at": "2026-11-07T09:18:22.217529Z",
+      "attempted_at": "2026-11-07T15:18:34.485032Z",
       "items": [
         {
           "url": "https://www.victorinox.com/en-US/",
@@ -1202,7 +1202,7 @@
           "title": "Victorinox (USA) | Victorinox Homepage",
           "kind": "website",
           "description": "Victorinox ✚ Makers of the Original Swiss Army Knife ✚ High quality products ✚ Watches, Cutlery, Travel Gear and Fragrances ✚ Order online now!",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1211,7 +1211,7 @@
           "title": "Swiss Army Knife™ & Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1220,7 +1220,7 @@
           "title": "CUTLERY",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1229,7 +1229,7 @@
           "title": "WATCHES",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1238,7 +1238,7 @@
           "title": "Huntsman Year of the Goat 2027",
           "kind": "product",
           "description": "Swiss-made pocket knife with 16 functions and red Cellidor scales featuring exclusive Year of the Goat artwork. Limited to 8,888 individually numbered pieces worldwide and presented in a special gift box with certificate. Includes scissors, wood saw, screwdriv",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "99",
@@ -1254,7 +1254,7 @@
           "title": "Swiss Army Knives / Pocket Knives from Victorinox | Victorinox (USA)",
           "kind": "website",
           "description": "Since 1897, the Swiss Army Knife has been a trusted tool of adventurers around the world. The Swiss Army Knife is the companion you can count on.",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1263,7 +1263,7 @@
           "title": "Everyday",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1272,14 +1272,14 @@
           "title": "Trades & Crafts",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T09:18:22.217529Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-stabila": {
       "schema_version": 1,
-      "attempted_at": "2026-11-07T09:18:22.217529Z",
+      "attempted_at": "2026-11-07T15:18:34.485032Z",
       "items": []
     },
     "durable-klein-tools": {
@@ -6860,7 +6860,7 @@
     },
     "durable-s-t-dupont": {
       "schema_version": 1,
-      "attempted_at": "2026-11-07T08:19:49.128907Z",
+      "attempted_at": "2026-11-07T15:18:34.485032Z",
       "items": [
         {
           "url": "https://www.st-dupont.com/collections/customisable-lighters",
@@ -6868,7 +6868,7 @@
           "title": "Customisable lighters",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6877,7 +6877,7 @@
           "title": "Cohiba 60",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6886,7 +6886,7 @@
           "title": "85th Anniversary",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6895,7 +6895,7 @@
           "title": "Popote",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6904,7 +6904,7 @@
           "title": "Lacquered lighter",
           "kind": "product",
           "description": "S.T. Dupont and the Paris Opera unveil a new limited-edition collection: Phantom of the Paris Opera. In Paris, beneath the gilded splendour of the Palais Garnier, when the murmur of the audience fades and the curtain falls, another story begins; invisible, yet",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1765.00",
@@ -6919,7 +6919,7 @@
           "title": "Lacquered lighter",
           "kind": "product",
           "description": "S.T. Dupont and the Paris Opera unveil a new limited-edition collection: Phantom of the Paris Opera. In Paris, beneath the gilded splendour of the Palais Garnier, when the murmur of the audience fades and the curtain falls, another story begins; invisible, yet",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "345.00",
@@ -6934,7 +6934,7 @@
           "title": "Fountain pen large",
           "kind": "product",
           "description": "S.T. Dupont and the Paris Opera unveil a new limited-edition collection: Phantom of the Paris Opera. In Paris, beneath the gilded splendour of the Palais Garnier, when the murmur of the audience fades and the curtain falls, another story begins; invisible, yet",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1665.00",
@@ -6947,7 +6947,7 @@
     },
     "durable-duluth-pack": {
       "schema_version": 1,
-      "attempted_at": "2026-11-07T08:19:49.128907Z",
+      "attempted_at": "2026-11-07T15:18:34.485032Z",
       "items": [
         {
           "url": "https://duluthpack.com/products/pack-2-duluth",
@@ -6955,7 +6955,7 @@
           "title": "#2 Original Canoe Pack - 59 L in tough 15-ounce canvas with rugged leather straps, designed for outdoor hiking and canoeing by Duluth Pack.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6964,7 +6964,7 @@
           "title": "#3 Monarch Pack - 54 L in durable olive canvas with rich brown leather straps, showcasing handcrafted rugged outdoor design by Duluth Pack for adventure use.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6973,7 +6973,7 @@
           "title": "#3 Original Pack - 72 L in tough green canvas with rugged leather straps, crafted by Duluth Pack for durable outdoor use and heritage-inspired adventure gear.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6982,7 +6982,7 @@
           "title": "#3-70 Utility Pack - 60 L in olive canvas with leather straps, designed for rugged outdoor use and durable everyday carry by Duluth Pack.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6991,7 +6991,7 @@
           "title": "#2 Original Canoe Pack - 56 L",
           "kind": "product",
           "description": "One of the original designs created by Duluth Pack's founder, Camille Poirier. The #2 Original Pack by Duluth Pack has been time-tested for over a century. Constructed of our rugged canvas, the #2 Original Pack sports three guaranteed-for-life buckle strap clo",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "249.95",
@@ -7007,7 +7007,7 @@
           "title": "#2 Original Canoe Pack - 56 L",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": null
         },
@@ -7017,7 +7017,7 @@
           "title": "#3 Monarch Pack - 54 L",
           "kind": "product",
           "description": "A traditional-style canoe pack that has been an essential for outdoor travels for generations. The craftsmanship of the #3 Monarch Pack by Duluth Pack is in its own class. The rugged design is built with hardcore use in mind. Built to be used, the #3 Monarch P",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "524.95",
@@ -7033,7 +7033,7 @@
           "title": "#3 Original Canoe Pack - 72 L",
           "kind": "product",
           "description": "The #3 Original Duluth Pack has been the time-tested favorite for generations of wilderness travelers and explorers. The rugged durability of this pack allows one to carry the canoe while wearing the pack and is made to fit the confines of a canoe for when you",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "274.95",
@@ -7047,7 +7047,7 @@
     },
     "durable-swaine-adeney-brigg": {
       "schema_version": 1,
-      "attempted_at": "2026-11-07T08:19:49.128907Z",
+      "attempted_at": "2026-11-07T15:18:34.485032Z",
       "items": [
         {
           "url": "https://us.swaine.london/collections/small-leather-goods",
@@ -7055,7 +7055,7 @@
           "title": "Bridle Business Card Case - Navy - Swaine Group Ltd",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7064,7 +7064,7 @@
           "title": "Diana's 14\" Cambridge Holdall - Havana - Swaine Group Ltd",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7073,7 +7073,7 @@
           "title": "Diana's 14\" Cambridge Holdall - Havana - Swaine Group Ltd",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7082,7 +7082,7 @@
           "title": "Collapsible Umbrella with Whangee Handle - Black - Swaine",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7091,7 +7091,7 @@
           "title": "Brigitte Ruffle Origami - English Rose Rabbit - Swaine Group Ltd",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7100,7 +7100,7 @@
           "title": "Brigitte Ruffle Origami - English Rose Rabbit - Swaine Group Ltd",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7109,7 +7109,7 @@
           "title": "Brigitte Ruffle Origami - English Rose Rabbit - Swaine Group Ltd",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7118,19 +7118,19 @@
           "title": "Bel-Air Handbag - Ostrich Leather (Polished Brass) Blue and white - Swaine Group Ltd",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         }
       ]
     },
     "durable-herman-miller-aeron-eames-line": {
       "schema_version": 1,
-      "attempted_at": "2026-11-07T08:19:49.128907Z",
+      "attempted_at": "2026-11-07T15:18:34.485032Z",
       "items": []
     },
     "durable-steelcase": {
       "schema_version": 1,
-      "attempted_at": "2026-11-07T08:19:49.128907Z",
+      "attempted_at": "2026-11-07T15:18:34.485032Z",
       "items": [
         {
           "url": "https://www.steelcase.com/",
@@ -7138,7 +7138,7 @@
           "title": "Steelcase - Office Furniture Solutions, Education & Healthcare Furniture",
           "kind": "website",
           "description": "The leading manufacturer of furniture for offices, hospitals, and classrooms. Our furniture is inspired by innovative research in workspace design.",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7147,7 +7147,7 @@
           "title": "Steelcase - Office Furniture Solutions, Education & Healthcare Furniture",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7156,7 +7156,7 @@
           "title": "More Choice for Every Detail​",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7165,7 +7165,7 @@
           "title": "Steelcase - Office Furniture Solutions, Education & Healthcare Furniture",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7174,7 +7174,7 @@
           "title": "CF Series Single & Dual Adjustable Monitor Arm Mount | Steelcase",
           "kind": "website",
           "description": "Capable of supporting a range of weights, the CF Series flat screen monitor arm is a reliable and adjustable solution for your computer support needs.",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7183,7 +7183,7 @@
           "title": "CF Pro Monitor Arm",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7192,7 +7192,7 @@
           "title": "CF Pro Monitor Arm",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7201,14 +7201,14 @@
           "title": "CF Pro Monitor Arm",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         }
       ]
     },
     "durable-usm-modular-furniture": {
       "schema_version": 1,
-      "attempted_at": "2026-11-07T08:19:49.128907Z",
+      "attempted_at": "2026-11-07T15:18:34.485032Z",
       "items": [
         {
           "url": "https://us.usm.com",
@@ -7216,7 +7216,7 @@
           "title": "USM Modular Furniture",
           "kind": "website",
           "description": "Discover modular furniture solutions designed for elegance and functionality. Explore USM home and office solutions online.",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7225,7 +7225,7 @@
           "title": "USM nightstand golden yellow",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7234,7 +7234,7 @@
           "title": "USM nightstand golden yellow",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7243,7 +7243,7 @@
           "title": "USM Haller Modern Steel Nightstand (P) in Beige",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7252,7 +7252,7 @@
           "title": "USM Haller nightstand (P)",
           "kind": "product",
           "description": "This popular bedside table offers a 6\"H open shelf and a 13\"H drop down door on the bottom offers plenty of storage. The door locks with the twist of a coin. Available in 14 standard surface colors.",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1677.0",
@@ -7267,7 +7267,7 @@
           "title": "USM Haller nightstand (P2)",
           "kind": "product",
           "description": "The classic nightstand with a 6\"H drop down door that locks with the twist of a coin. Available in 14 standard surface colors.",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1545.0",
@@ -7282,7 +7282,7 @@
           "title": "USM Haller Nightstand (P1)",
           "kind": "product",
           "description": "A modern and adaptable nightstand or side table with two drop down doors that locks with the twist of a coin. Available in 6 Quick Ship colors.",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "2131.0",
@@ -7295,7 +7295,7 @@
     },
     "durable-vitsoe": {
       "schema_version": 1,
-      "attempted_at": "2026-11-07T08:19:49.128907Z",
+      "attempted_at": "2026-11-07T15:18:34.485032Z",
       "items": [
         {
           "url": "https://www.vitsoe.com/us/606",
@@ -7303,7 +7303,7 @@
           "title": "Modular wall-mounted shelving system for book with off-white shelves, cabinets and drawers.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7312,7 +7312,7 @@
           "title": "Vitsœ 620 modular sofa in cinnamon leather upholstery with off-white shell and two 621 tables on both sides",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7321,7 +7321,7 @@
           "title": "Vitsœ 621 nesting tables in off-white used as a side table in the living room",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7330,14 +7330,14 @@
           "title": "Vitsœ planner and 606 Universal Shelving System behind.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         }
       ]
     },
     "durable-artek": {
       "schema_version": 1,
-      "attempted_at": "2026-11-07T08:19:49.128907Z",
+      "attempted_at": "2026-11-07T15:18:34.485032Z",
       "items": [
         {
           "url": "https://www.artek.fi/en/",
@@ -7345,7 +7345,7 @@
           "title": "Artek - Artek",
           "kind": "website",
           "description": "Art & Technology since 1935",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7354,7 +7354,7 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "Find an overview of all Artek products",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7363,7 +7363,7 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7372,7 +7372,7 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7381,7 +7381,7 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7390,7 +7390,7 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "Find an overview of all Artek products",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7399,7 +7399,7 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7408,29 +7408,29 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         }
       ]
     },
     "durable-carl-hansen-son": {
       "schema_version": 1,
-      "attempted_at": "2026-11-07T08:19:49.128907Z",
+      "attempted_at": "2026-11-07T15:18:34.485032Z",
       "items": []
     },
     "durable-knoll": {
       "schema_version": 1,
-      "attempted_at": "2026-11-07T08:19:49.128907Z",
+      "attempted_at": "2026-11-07T15:18:34.485032Z",
       "items": []
     },
     "durable-fritz-hansen": {
       "schema_version": 1,
-      "attempted_at": "2026-11-07T08:19:49.128907Z",
+      "attempted_at": "2026-11-07T15:18:34.485032Z",
       "items": []
     },
     "durable-thonet": {
       "schema_version": 1,
-      "attempted_at": "2026-11-07T08:19:49.128907Z",
+      "attempted_at": "2026-11-07T15:18:34.485032Z",
       "items": [
         {
           "url": "https://www.thonet.de/shop/de",
@@ -7438,7 +7438,7 @@
           "title": "Basecap Beige",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": null
         },
@@ -7448,7 +7448,7 @@
           "title": "Basecap Navy",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": null
         },
@@ -7458,7 +7458,7 @@
           "title": "Poster Overview 2025",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": null
         },
@@ -7468,7 +7468,7 @@
           "title": "S 64 V",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1457.75",
@@ -7483,7 +7483,7 @@
           "title": "214",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1011.50",
@@ -7498,7 +7498,7 @@
           "title": "209",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1374.45",
@@ -7513,7 +7513,7 @@
           "title": "S 35 L",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "3403.40",
@@ -7528,7 +7528,7 @@
           "title": "Set B 9",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "3070.20",
@@ -7541,7 +7541,7 @@
     },
     "durable-emeco": {
       "schema_version": 1,
-      "attempted_at": "2026-11-07T08:19:49.128907Z",
+      "attempted_at": "2026-11-07T15:18:34.485032Z",
       "items": [
         {
           "url": "https://www.emeco.net/products/chairs",
@@ -7549,7 +7549,7 @@
           "title": "Browse Emeco's product catalogue",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7558,7 +7558,7 @@
           "title": "Studio image of Kito by Naoto Fukasawa close up of back",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7567,7 +7567,7 @@
           "title": "ZaZa bench collection by Naoto Fukasawa",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7576,7 +7576,7 @@
           "title": "outdoor setting with navy lounge armchairs, tables and rocker on a patio",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-07T08:19:49.128907Z",
+          "checked_at": "2026-11-07T15:18:34.485032Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         }
       ]
