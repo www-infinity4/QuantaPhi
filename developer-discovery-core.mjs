@@ -74,6 +74,7 @@ export function buildGithubSearchURL(topicId,page=1,terms=''){
  return url.href;
 }
 const ghName=/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/;
+export const GITHUB_OFFICIAL_IMAGE='https://github.githubassets.com/favicons/favicon.svg';
 export function normalizeGithubResult(row,category=''){
  if(!row||!Number.isSafeInteger(row.id)||row.id<=0||typeof row.full_name!=='string'||!ghName.test(row.full_name))return null;
  if(row.fork||row.archived||row.disabled)return null;
@@ -87,10 +88,11 @@ export function normalizeGithubResult(row,category=''){
  }catch{return null;}
  const spdx=String(row.license?.spdx_id||'').slice(0,36).replace(/[^A-Za-z0-9+.()-]/g,'')||'Unspecified';
  const text=String(row.description||'').replace(/[\u0000-\u001f\u007f]/g,' ').trim().slice(0,240);
+ if(forbiddenSourceText(row.name+' '+text))return null;
  return Object.freeze({
   id:'github-'+row.id,source:'GitHub',label:row.name?.slice(0,90)||row.full_name.split('/')[1],
   description:text||'Original public repository · examine source, maintenance and integration before using.',
-  url:expected,image:image.href,category,license:spdx,
+  url:expected,image:GITHUB_OFFICIAL_IMAGE,category,license:spdx,
   licenseStatus:'review-license-before-reuse',stars:Number.isFinite(row.stargazers_count)?Math.max(0,row.stargazers_count):null,
   pushedAt:typeof row.pushed_at==='string'?row.pushed_at.slice(0,10):'',
   repo:row.full_name
@@ -106,7 +108,7 @@ export function validateIndexedResource(raw){
  try{
   const link=new URL(String(raw.url||'')),a=new URL(String(raw.image||''));
   if(link.protocol!=='https:'||link.hostname!=='github.com'||link.pathname.replace(/\/$/,'')!=='/'+raw.repo)return null;
-  if(a.protocol!=='https:'||a.hostname!=='avatars.githubusercontent.com')return null;
+  if(a.href!==GITHUB_OFFICIAL_IMAGE)return null;
   avatar=a.href;
  }catch{return null;}
  const label=String(raw.label||'').trim().slice(0,90);
