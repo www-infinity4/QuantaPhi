@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "source": "Google Trends RSS + publisher trailer RSS",
+  "source_url": "https://trends.google.com/trending/rss?geo=US",
+  "checked_at": "2026-11-07T08:05:49.933416Z",
+  "source_note": "Google trending titles are independently matched to source-backed trailer uploads. Other cards are labelled NEW TRAILER, not Google-trending. These are previews, not full movies.",
+  "items": [
+    {
+      "id": "o9WWeKSbtAo",
+      "title": "The Further Mis-Adventures of Cliff Booth",
+      "video_id": "o9WWeKSbtAo",
+      "video_title": "The Further Mis-Adventures of Cliff Booth Trailer #2 (2026)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-06T14:23:57Z",
+      "source_url": "https://www.youtube.com/watch?v=o9WWeKSbtAo",
+      "poster": "https://i.ytimg.com/vi/o9WWeKSbtAo/hqdefault.jpg",
+      "google_trending": false
+    },
+    {
+      "id": "HIqwJ7kvNUo",
+      "title": "Drag",
+      "video_id": "HIqwJ7kvNUo",
+      "video_title": "Drag Trailer #1 (2027)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-05T19:36:19Z",
+      "source_url": "https://www.youtube.com/watch?v=HIqwJ7kvNUo",
+      "poster": "https://i.ytimg.com/vi/HIqwJ7kvNUo/hqdefault.jpg",
+      "google_trending": false
+    },
+    {
+      "id": "CkLO19tB9Ys",
+      "title": "The 12 Dates of Christmas",
+      "video_id": "CkLO19tB9Ys",
+      "video_title": "The 12 Dates of Christmas Trailer #1 (2026)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-05T18:48:43Z",
+      "source_url": "https://www.youtube.com/watch?v=CkLO19tB9Ys",
+      "poster": "https://i.ytimg.com/vi/CkLO19tB9Ys/hqdefault.jpg",
+      "google_trending": false
+    },
+    {
+      "id": "qoo1GTEXD1Y",
+      "title": "Godzilla Minus Zero",
+      "video_id": "qoo1GTEXD1Y",
+      "video_title": "Godzilla Minus Zero Trailer #3 (2026)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-05T17:41:47Z",
+      "source_url": "https://www.youtube.com/watch?v=qoo1GTEXD1Y",
+      "poster": "https://i.ytimg.com/vi/qoo1GTEXD1Y/hqdefault.jpg",
+      "google_trending": false
+    },
+    {
+      "id": "3tjovYGO4w4",
+      "title": "Karōshi",
+      "video_id": "3tjovYGO4w4",
+      "video_title": "Karōshi Trailer #1 (2027)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-05T16:30:15Z",
+      "source_url": "https://www.youtube.com/watch?v=3tjovYGO4w4",
+      "poster": "https://i.ytimg.com/vi/3tjovYGO4w4/hqdefault.jpg",
+      "google_trending": false
+    },
+    {
+      "id": "sUrsz6JiimI",
+      "title": "Bad Day",
+      "video_id": "sUrsz6JiimI",
+      "video_title": "Bad Day Trailer #1 (2026)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-05T15:34:18Z",
+      "source_url": "https://www.youtube.com/watch?v=sUrsz6JiimI",
+      "poster": "https://i.ytimg.com/vi/sUrsz6JiimI/hqdefault.jpg",
+      "google_trending": false
+    },
+    {
+      "id": "MdF3GxzoEog",
+      "title": "Lords of War",
+      "video_id": "MdF3GxzoEog",
+      "video_title": "Lords of War Teaser Trailer (2027)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-04T16:32:49Z",
+      "source_url": "https://www.youtube.com/watch?v=MdF3GxzoEog",
+      "poster": "https://i.ytimg.com/vi/MdF3GxzoEog/hqdefault.jpg",
+      "google_trending": false
+    },
+    {
+      "id": "qcop4A5Hkw8",
+      "title": "The Angry Birds Movie 3",
+      "video_id": "qcop4A5Hkw8",
+      "video_title": "The Angry Birds Movie 3 Trailer #2 (2026)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-04T14:36:32Z",
+      "source_url": "https://www.youtube.com/watch?v=qcop4A5Hkw8",
+      "poster": "https://i.ytimg.com/vi/qcop4A5Hkw8/hqdefault.jpg",
+      "google_trending": false
+    }
+  ]
+}
