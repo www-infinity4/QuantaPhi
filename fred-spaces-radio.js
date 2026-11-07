@@ -83,12 +83,15 @@
     return data;
   }
   async function checkPaymentReadiness(){
+    // The legacy deployed Worker reports paymentsReady but omits the paired
+    // owner debit/credit receipt. Never initiate a new 1-StarCoin charge
+    // until a separately reviewed receipt-contract v2 is deployed.
     try {
       const response=await fetch(API+"/health",{cache:"no-store"});
       const data=await response.json();
-      paymentsReady=Boolean(response.ok&&data.ok&&data.paymentsReady);
+      paymentsReady=Boolean(response.ok&&data.ok&&data.paymentsReady&&data.receiptContractVersion===2);
     }catch(_){paymentsReady=false;}
-    if(!paymentsReady)message="QuantaPhi's verified platform-owner payout wallet is not connected. Paid unlocks are paused; the first Fred Space remains free.";
+    if(!paymentsReady)message="Paid Fred Space unlocks paused until the live server supports verified QuantaPhi owner payout receipts. The first Fred Space remains free. No StarCoin charged.";
     render();
   }
   async function sync(){try{const d=await ledger("/v1/spaces/unlocks");unlocked=new Set(d.unlocked||[]);balance=d.starCoins;isPlatformOwner=!!d.isPlatformOwner;const saved=byId.get(requested||load(currentKey,FIRST));if(saved&&(saved.id===FIRST||unlocked.has(saved.id)))active=saved;render();window.dispatchEvent(new CustomEvent('phi:media-star-wallet-synced',{detail:{wholeStarCoins:balance,source:'fred-spaces-ledger'}}));}catch(error){message="StarCoin wallet not connected; the first episode remains free.";render();}}
@@ -105,7 +108,7 @@
   async function more(){
     if(busy)return;
     if(catalogLoading){note("Fred's episode catalog is still loading; the first Space remains free.");return;}
-    if(!paymentsReady){note("Paid Fred Space unlocks are paused until QuantaPhi's verified owner payout wallet is ready. No StarCoin was charged.");return;}
+    if(!paymentsReady){note("Paid Fred Space unlocks are paused until the verified owner payout receipt service is ready. No StarCoin was charged.");return;}
     const next=pickNext();if(!next){note("No additional indexed episodes are available.");return;}
     // The fee is for curated discovery of a direct X replay link, not streaming rights.
     // The source may require X sign-in or disappear. Display this before every new debit.
@@ -284,7 +287,7 @@
     if(quickStatus)quickStatus.textContent=message||
       (catalogLoading?"Loading Fred's curated episode index. The free Space is ready.":paymentsReady
         ?"The next curated Space is 1 StarCoin after confirmation. The verified QuantaPhi platform-owner wallet receives the fee. X handles the recording."
-        :"Paid unlocks paused until QuantaPhi's owner payout wallet is verified. The first Space remains free.");
+        :"Paid unlocks paused until the owner payout receipt service is verified. The first Space remains free.");
   }
   const requested=new URL(location.href).searchParams.get("fredSpace");
   if(requested===FIRST)active=byId.get(FIRST);
