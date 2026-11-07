@@ -21,10 +21,10 @@ test('six reviewed original in-card image generators have deduplicated source pr
 });
 
 test('unreviewed remote endpoints cannot become public generator cards',()=>{
- const modified=[...catalog,{...catalog[0],id:'evil',sourceUrl:'https://github.com.evil.net/fake/repo'}];
+ const modified=[...catalog,{...catalog[0],id:'image-evil-external',sourceUrl:'https://github.com.evil.net/fake/repo'}];
  assert.throws(()=>normalizeGeneratorSources(modified),/source|github/i);
- assert.throws(()=>normalizeGeneratorSources([{...catalog[0],id:'remote',implementation:'external-api'}]),/implementation/);
- assert.throws(()=>normalizeGeneratorSources([{...catalog[0],id:'dupe'} , {...catalog[0],id:'dupe'}]),/duplicate/i);
+ assert.throws(()=>normalizeGeneratorSources([{...catalog[0],id:'image-remote-server',implementation:'external-api'}]),/implementation/);
+ assert.throws(()=>normalizeGeneratorSources([{...catalog[0],id:'image-dupe'} , {...catalog[0],id:'image-dupe'}]),/duplicate/i);
  assert.equal(parseGitHubSource('https://github.com/rough-stuff/rough'),'rough-stuff/rough');
  assert.throws(()=>parseGitHubSource('http://github.com/rough-stuff/rough'),/source|github/i);
 });
