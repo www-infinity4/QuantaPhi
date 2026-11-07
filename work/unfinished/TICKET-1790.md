@@ -1,28 +1,28 @@
 ---
 issue: 1790
-project: "Developer carousel — five real site-building Quick Cards"
+project: "Developer carousel + one-field website Quick Card creator"
 state: implementing
 dot: "🟡"
 progress_percent: unknown
-progress_basis: "Five original builders staged; focused 3/3 tests green; browser and release checks under repair"
-sessions_spent: 2
+progress_basis: "Original carousel PRs #1791 and #1805 merged; single-URL follow-up source and tests on an isolated branch; CI, deployment and acceptance pending"
+sessions_spent: 3
 sessions_remaining_estimate: unknown
-agent: "GPT / Green engineering and Pink test review"
+agent: "GPT Green source implementation / Pink automated test review"
 lease_id: null
 lease_expires_at: null
 task_session_id: null
 fence: null
 repo: www-infinity4/QuantaPhi
-branch: feat/developer-carousel-1790
-head_sha: 844b6946bd297b13a68970d7e6aad39a8b96f692
+branch: fix/one-link-quick-card-builder-1790-20261107
+head_sha: pending-final-branch-head
 last_observed_at_utc: "2026-11-07"
-pr: "https://github.com/www-infinity4/QuantaPhi/pull/1791"
-tests: "Focused CI 42361280373: 3 passed; ledger and browser regressions being fixed"
+pr: pending-review
+tests: "One-link TDD 4/4 local helper assertions; exact-head CI and Android tests pending"
 merged: false
 deployed: false
 live_verified: false
-blocker: "Exact-head regression checks and Android browser acceptance pending; review bot quota exhausted"
-next_action: "Fix checkpoint/browser test regressions; run exact-head CI and independent browser checks before merge"
+blocker: "Exact-head CI and browser tests plus independently verified AI source enrichment are outstanding"
+next_action: "Open follow-up PR; review exact-head Quick Card publisher and Developer carousel CI and browser results"
 ---
 # Developer carousel — issue #1790
 
@@ -59,3 +59,12 @@ next_action: "Fix checkpoint/browser test regressions; run exact-head CI and ind
 - [ ] Verify actual moderation/publishing in an authorized non-production or controlled environment
 
 No checkout, wallet mutation, public auto-publish, provider login or new payout privilege was added.
+
+## November 7 follow-up: one-URL Quick Card creator
+- Existing original Developer carousel was merged through PRs #1791 and #1805. Its live Android/edge behavior remains separately gated.
+- Owner wants a visitor to enter `www.bubbleyum.com` and create a card without completing multiple required descriptions. Reuse original moderated `/api/quick-cards` publisher, not a pretend form or unauthorized provider sign-in.
+- Branch `fix/one-link-quick-card-builder-1790-20261107` stages one visible website textbox, optional advanced editor, input normalization, source-only publisher defaults and explicitly honest failure states.
+- Initial new helper tests were observed red with missing module and green after implementation (4/4 local). GitHub workflow updates request Android Chromium tests and original Developer regression.
+- No AI remote page crawler, media-rights reviewer, live product inventory, or verified brand/content inference was added. Those are independent requirements; the default card is an honest source-link card pending richer enrichment and moderation.
+- **Release status:** source committed to branch; CI, review, merge, site deployment, publisher D1 readback and live Android are **not verified**.
+- **Next action:** open PR on existing #1790, check exact-head CI and independent review, then only eligible merge/deploy with separate readback.
