@@ -5,21 +5,23 @@ const src=()=>readFileSync(new URL('../steve-miller-book-of-dreams.js',import.me
 const html=()=>readFileSync(new URL('../index.html',import.meta.url),'utf8');
 const deck=()=>readFileSync(new URL('../oracle-card-deck.js',import.meta.url),'utf8');
 
-test('Steve Miller retains original Oracle Quick Card and preserves album source',()=>{
- assert.match(html(),/id="steveMillerBookOfDreamsCard"/);
- assert.match(deck(),/\['steveMillerBookOfDreamsCard','Steve Miller · Book of Dreams'\]/);
- assert.match(src(),/Book of Dreams/);
- assert.match(src(),/PL8a8cutYP7foGH0YDM8YtNqGtgL0EAJ7k/);
+test('Steve Miller retains the original Oracle Quick Card and Book of Dreams source',()=>{
+ assert.ok(html().includes('id="steveMillerBookOfDreamsCard"'));
+ assert.ok(deck().includes("['steveMillerBookOfDreamsCard','Steve Miller · Book of Dreams']"));
+ assert.ok(src().includes('PL8a8cutYP7foGH0YDM8YtNqGtgL0EAJ7k'));
 });
-test('real 48px Infinity Radio button replaces dummy YouTube panel',()=>{
+test('play clicks mount the album playlist as a visible in-card YouTube player',()=>{
  const s=src();
- assert.match(s,/smb-radio-play/);
- assert.match(s,/width:48px;height:48px/);
- assert.match(s,/window\.InfinityRadioQuick\.toggle\(\)/);
- assert.match(s,/quantaphi:infinity-radio-state/);
- assert.match(s,/aria-pressed/);
- assert.doesNotMatch(s,/new yt\.Player|iframe_api|smb-player-frame|smbAlbumYoutubeMount/);
+ assert.ok(s.includes('smb-radio-play'));
+ assert.ok(s.includes('width:48px;height:48px'));
+ assert.ok(s.includes("make('iframe'"));
+ assert.ok(s.includes('www.youtube.com/embed/videoseries'));
+ assert.ok(s.includes('min-height:210px'));
+ assert.ok(s.includes('referrerPolicy'));
+ assert.ok(s.includes('quantaphi:artist-radio-start'));
+ assert.ok(!s.includes('window.InfinityRadioQuick.toggle()'));
 });
-test('switching cards cannot stop the shared radio',()=>{
- assert.doesNotMatch(src(),/oracle:card-deactivated|visibilitychange|radio\.pause\(/);
+test('stopping removes the media source rather than pretending to pause the shared radio',()=>{
+ assert.ok(src().includes("frame.removeAttribute('src')"));
+ assert.ok(!src().includes('oracle:card-deactivated'));
 });

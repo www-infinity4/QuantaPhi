@@ -1,39 +1,28 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-
 const source=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 
-test('existing Infinity Radio owns one shared transport for the music cards',()=>{
+test('existing Infinity Radio remains a separate working transport',()=>{
  const radio=source('quick-infinity-radio.js');
- assert.match(radio,/window\.InfinityRadioQuick\s*=\s*Object\.freeze/);
- assert.match(radio,/quantaphi:infinity-radio-state/);
- assert.match(radio,/toggle:\s*toggleRadio/);
- assert.match(radio,/getState:\s*getRadioState/);
+ assert.ok(radio.includes('window.InfinityRadioQuick = Object.freeze'));
+ assert.ok(radio.includes('quantaphi:infinity-radio-state'));
+ assert.ok(radio.includes('toggle: toggleRadio'));
+ assert.ok(radio.includes('getState: getRadioState'));
 });
-
-test('Steve Miller displays compact Infinity Radio play/pause control without a mock album player',()=>{
- const card=source('steve-miller-book-of-dreams.js');
- assert.match(card,/InfinityRadioQuick/);
- assert.match(card,/Infinity Radio/);
- assert.match(card,/48px/);
- assert.doesNotMatch(card,/new yt\.Player|iframe_api|smb-player-frame|smbAlbumYoutubeMount|YouTube album player/);
- assert.doesNotMatch(card,/oracle:card-deactivated/);
+test('artist Quick Cards play their selected YouTube sources and never the Infinity catalog',()=>{
+ const steve=source('steve-miller-book-of-dreams.js');
+ const rock=source('classic-rock-official-card.mjs');
+ assert.ok(steve.includes('www.youtube.com/embed/videoseries'));
+ assert.ok(rock.includes('www.youtube.com/embed/'));
+ assert.ok(steve.includes('width:48px;height:48px'));
+ assert.ok(rock.includes('width:48px;height:48px'));
+ assert.ok(!steve.includes('window.InfinityRadioQuick.toggle()'));
+ assert.ok(!rock.includes('window.InfinityRadioQuick.toggle()'));
 });
-
-test('Classic Rock uses Infinity Radio and selects artist information, not fake artist audio',()=>{
- const card=source('classic-rock-official-card.mjs');
- assert.match(card,/InfinityRadioQuick/);
- assert.match(card,/Infinity Radio/);
- assert.match(card,/48px/);
- assert.match(card,/renderOffers\(band\)/);
- assert.doesNotMatch(card,/new yt\.Player|iframe_api|cr-video-poster|crOfficialYouTubeMount|player\.pauseVideo/);
- assert.doesNotMatch(card,/oracle:card-deactivated/);
-});
-
-test('home updates only the three music assets, without redirecting the reader to a media viewer',()=>{
+test('site keeps all three music scripts in the page with refreshed asset versions',()=>{
  const home=source('index.html');
- assert.match(home,/quick-infinity-radio\.js\?v=20261106-shared-control/);
- assert.match(home,/steve-miller-book-of-dreams\.js\?v=20261106-radio-control/);
- assert.match(home,/classic-rock-official-card\.mjs\?v=20261106-radio-control/);
+ assert.ok(home.includes('quick-infinity-radio.js?v=20261106-artist-audio-stop'));
+ assert.ok(home.includes('steve-miller-book-of-dreams.js?v=20261106-artist-playback'));
+ assert.ok(home.includes('classic-rock-official-card.mjs?v=20261106-artist-playback'));
 });
