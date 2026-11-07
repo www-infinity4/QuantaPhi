@@ -3,9 +3,149 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-07T08:31:14.431452Z",
+  "checked_at": "2026-11-07T09:01:34.379679Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "jj gabriel",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T08:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7596852/2026/11/04/jj-gabriel-real-madrid-manchester-united/",
+        "https://www.bbc.com/sport/football/articles/cq146dnrn541o",
+        "https://www.si.com/soccer/where-man-utd-wonderkid-jj-gabriel-fit-real-madrid"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTijAazFpKbl6o-KVXt0yffmIb0cFoV2QvB0bi06B_Z0kQ9P5im72cw-ngPpqE",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7596852/2026/11/04/jj-gabriel-real-madrid-manchester-united/",
+          "title": "Manchester United’s JJ Gabriel expected to join Real Madrid in January - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTijAazFpKbl6o-KVXt0yffmIb0cFoV2QvB0bi06B_Z0kQ9P5im72cw-ngPpqE"
+        },
+        {
+          "url": "https://www.bbc.com/sport/football/articles/cq146dnrn541o",
+          "title": "JJ Gabriel transfer news: Real Madrid confident of signing Manchester United forward",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3wm7hFnZBBfvR8EV8JhpojiCrLAjnVs4c1x4gzgxCmV6UFNyCiYfI-iTRjDE"
+        },
+        {
+          "url": "https://www.si.com/soccer/where-man-utd-wonderkid-jj-gabriel-fit-real-madrid",
+          "title": "Where Does Wantaway Man Utd Wonderkid JJ Gabriel Fit in at Real Madrid?",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZXph0Udc9Kn453M9WB9ugjXb-8P0CrJ_XwgSz_wVsGv6Uk3B5SE6IHCSjt3I"
+        }
+      ]
+    },
+    {
+      "query": "gta release date",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T08:40:00Z",
+      "related_news_urls": [
+        "https://corporate.charter.com/newsroom/spectrum-giving-free-gig-speed-lift-thanksgiving-grand-theft-auto",
+        "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/",
+        "https://www.ign.com/articles/gta-6-preload-times-and-install-size-confirmed-rockstar-announces-physical-cover-art-poster-and-map-of-leonida"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLrldBUNUxrprrQdaGkYX-IyU3QqIHF3o_gPJ8nNZdwM-7CUvyPxPcKlXOanM",
+      "image_credit": "Charter Communications",
+      "news": [
+        {
+          "url": "https://corporate.charter.com/newsroom/spectrum-giving-free-gig-speed-lift-thanksgiving-grand-theft-auto",
+          "title": "Download Grand Theft Auto VI Faster and Get to Leonida Sooner With Spectrum Internet Gig",
+          "publisher": "Charter Communications",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLrldBUNUxrprrQdaGkYX-IyU3QqIHF3o_gPJ8nNZdwM-7CUvyPxPcKlXOanM"
+        },
+        {
+          "url": "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/",
+          "title": "Grand Theft Auto VI pre-download begins November 10",
+          "publisher": "PlayStation.Blog",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyNgZ56vmBZJJNXtBuVMuXt5SrJjkpTULssjmIfrOVOdDg6PUuF-BaAKk2CE8"
+        },
+        {
+          "url": "https://www.ign.com/articles/gta-6-preload-times-and-install-size-confirmed-rockstar-announces-physical-cover-art-poster-and-map-of-leonida",
+          "title": "GTA 6 Preload and Global Release Times Confirmed by Rockstar Games",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4TNkiJd_FtSk5Q90FBzAjxCX_kHa8vAM-4Nq-9OjOImj9wTyBR6foMAHCy5E"
+        }
+      ]
+    },
+    {
+      "query": "new zealand vs tonga",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T08:20:00Z",
+      "related_news_urls": [
+        "https://www.nrl.com/news/2026/11/03/world-cup-team-lists-mens-semi-finals/",
+        "https://www.odt.co.nz/news/dunedin/tongan-league-fans-bring-world-cup-party-to-south-dunedin-fbraimp1",
+        "https://kanivatonga.co.nz/2026/11/vava%CA%BBu-erupts-in-red-and-white-as-popular-influencer-leads-bicycle-parade-for-tonga-nrl-xiii/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp1pRtKAGO4B6dN1DrIFZGjeJutXTym1pimMedWv7mGw04wM7LqAdHoAzIyuo",
+      "image_credit": "NRL.com",
+      "news": [
+        {
+          "url": "https://www.nrl.com/news/2026/11/03/world-cup-team-lists-mens-semi-finals/",
+          "title": "World Cup Late Mail: Men's Semi-Finals - Ponga returns; Toia out",
+          "publisher": "NRL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp1pRtKAGO4B6dN1DrIFZGjeJutXTym1pimMedWv7mGw04wM7LqAdHoAzIyuo"
+        },
+        {
+          "url": "https://www.odt.co.nz/news/dunedin/tongan-league-fans-bring-world-cup-party-to-south-dunedin-fbraimp1",
+          "title": "Tongan league fans bring world cup party to South Dunedin",
+          "publisher": "ODT",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdUZOv4Gq7ihQwnnBnOrPf3QNeVvKtdkhiqN79CWz9VUfp7FzV0OWYPyFdek0"
+        },
+        {
+          "url": "https://kanivatonga.co.nz/2026/11/vava%CA%BBu-erupts-in-red-and-white-as-popular-influencer-leads-bicycle-parade-for-tonga-nrl-xiii/",
+          "title": "Vavaʻu erupts in red and white bicycle parade as Tonga facing Kiwi this evening",
+          "publisher": "Kaniva Tonga News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfPOij2VoG2ftHKRCeqKtK1-NbDpXSAM29CMgps0SJ151pTrw96byTRrGaG4E"
+        }
+      ]
+    },
+    {
+      "query": "salma hayek",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T08:20:00Z",
+      "related_news_urls": [
+        "https://people.com/salma-hayek-says-feeling-optimistic-after-turning-60-exclusive-12239789",
+        "https://uk.news.yahoo.com/salma-hayek-feels-optimistic-turning-230000646.html",
+        "https://www.thenews.com.pk/latest/1422703-salma-hayek-feels-scary-after-achieving-major-milestone"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1HESxSpvvydf-KrM5sfLZDFhcHIDBpw2G6S7D9vyMrN4gGahFAPXS82QRuGE",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/salma-hayek-says-feeling-optimistic-after-turning-60-exclusive-12239789",
+          "title": "Salma Hayek Says She’s Feeling ‘Very Optimistic’ After Turning 60: ‘Still Doing What I Love, Let’s Go’ (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1HESxSpvvydf-KrM5sfLZDFhcHIDBpw2G6S7D9vyMrN4gGahFAPXS82QRuGE"
+        },
+        {
+          "url": "https://uk.news.yahoo.com/salma-hayek-feels-optimistic-turning-230000646.html",
+          "title": "Salma Hayek feels 'optimistic' after turning 60",
+          "publisher": "Yahoo News UK",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9Di5M8ObOZ4kvsto64Dt9OGP_NV2Lv_CgFsEl3me0uMfDypjKmT4KNXZJuyc"
+        },
+        {
+          "url": "https://www.thenews.com.pk/latest/1422703-salma-hayek-feels-scary-after-achieving-major-milestone",
+          "title": "Salma Hayek feels 'scary' after achieving major milestone?",
+          "publisher": "The News International",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMWJMT9NB9EyNwQRKoufmcpGBBIG-tbBZ1S4lj2vGD956N3-1WlfHJMUenxJE"
+        }
+      ]
+    },
     {
       "query": "hltv",
       "approx_searches": "200+",
@@ -48,7 +188,7 @@
       "related_news_urls": [
         "https://robinhood.com/us/en/prediction-markets/tennis/events/coleman-wong-vs-yosuke-watanuki-nov-07-2026/",
         "https://robinhood.com/us/en/prediction-markets/tennis/events/facundo-diaz-acosta-vs-thiago-seyboth-wild-nov-07-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/henning-vs-caniato-nov-05-2026/"
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/tjen-vs-kudermetova-nov-06-2026/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZO-q3moECJ5z2RXEYvYGRcTNf60Ab_yoBDIHXdBkDsAMCQTGhShjleO9AvJQ",
       "image_credit": "Robinhood",
@@ -68,11 +208,46 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPlGIza8UpJ58EHVjjSwvi3FGzuvBGYLsAygnQQcxz4RE9TEtkBOtwXaNl3GA"
         },
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/henning-vs-caniato-nov-05-2026/",
-          "title": "November 5, 2026: Henning vs Caniato Tennis Prediction Market",
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/tjen-vs-kudermetova-nov-06-2026/",
+          "title": "November 6, 2026: Tjen vs Kudermetova Tennis Prediction Market",
           "publisher": "Robinhood",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFBmHY13nfNcPfB5-DpVRfnfFPJTkYYh1SyM69woalml6Hzi982SKuU1Ov8lo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPNvFvJO8-EwwreZqL4bmA9D6aiMaRl3zFjCZ4tyQCjua7ZUFN2iZXgj1p9to"
+        }
+      ]
+    },
+    {
+      "query": "texas vs missouri prediction",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T08:00:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/texas/article/texas-missouri-breaking-down-the-key-matchups-ahead-of-saturdays-showdown-292252699/",
+        "https://www.rockmnation.com/missouri-tigers-football/162553/four-questions-for-mizzou-as-its-november-gauntlet-begins-with-texas",
+        "https://www.saturdaydownsouth.com/news/college-football/texas-longhorns-vs-missouri-tigers-prediction-and-preview/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDfil93Wi-VRk11_vFgC41cU671PFV65BrYboAlGURBsBeNEyh_aBojUCKakk",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/texas/article/texas-missouri-breaking-down-the-key-matchups-ahead-of-saturdays-showdown-292252699/",
+          "title": "Texas-Missouri: Breaking down the key matchups ahead of Saturday's showdown",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDfil93Wi-VRk11_vFgC41cU671PFV65BrYboAlGURBsBeNEyh_aBojUCKakk"
+        },
+        {
+          "url": "https://www.rockmnation.com/missouri-tigers-football/162553/four-questions-for-mizzou-as-its-november-gauntlet-begins-with-texas",
+          "title": "Four questions for Mizzou as its November gauntlet begins with Texas",
+          "publisher": "Rock M Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOPoHVjjPgVZu00oxR8UM2l9gmDALWY2gSUTkQbZBjPLTHOB-TBqNuIFPc5ZY"
+        },
+        {
+          "url": "https://www.saturdaydownsouth.com/news/college-football/texas-longhorns-vs-missouri-tigers-prediction-and-preview/",
+          "title": "Texas Longhorns vs. Missouri Tigers Prediction and Preview",
+          "publisher": "Saturday Down South",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrGxE-qSMbml8FBzP6akDAjQOHeQgx_yetuXUSA7lel1EByvTv1lF4I-S7JyM"
         }
       ]
     },
@@ -147,196 +322,37 @@
       ]
     },
     {
-      "query": "ucla vs minnesota predictions",
+      "query": "amazon return refund lawsuit claims",
       "approx_searches": "100+",
       "published_at": "2026-11-07T07:50:00Z",
       "related_news_urls": [
-        "https://www.latimes.com/sports/ucla/story/2026-11-06/ucla-focuses-on-winning-turnover-battle-in-trenches-at-minnesota",
-        "https://247sports.com/college/minnesota/article/minnesota-gopher-football-ucla-bruins-preview-odds-game-prediction-292182481/",
-        "https://www.thedailygopher.com/minnesota-golden-gophers-football/41566/minnesota-football-vs-ucla-staff-predictions"
+        "https://finance.yahoo.com/personal-finance/banking/article/did-amazon-owe-you-a-refund-you-may-qualify-for-part-of-a-300-million-settlement-153810924.html",
+        "https://www.the-sun.com/money/17269432/amazon-refund-settlement-claim/",
+        "https://moneywise.com/news/top-stories/amazon-return-refund-class-action-settlement"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4N4m9d0dB-u17f5vGumSjRQ3_Rk1lFdKuSRfM8OuoOD6ZTsc4amXJ19Yfduc",
-      "image_credit": "Los Angeles Times",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXSCNM22xNtoQNZ0nriPgIQxH5KBpWxd-gWlzkkPjg_qzFw5Mp8RnqJAnesgU",
+      "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://www.latimes.com/sports/ucla/story/2026-11-06/ucla-focuses-on-winning-turnover-battle-in-trenches-at-minnesota",
-          "title": "UCLA focuses on winning turnover battle, edge in trenches during key Minnesota matchup",
-          "publisher": "Los Angeles Times",
+          "url": "https://finance.yahoo.com/personal-finance/banking/article/did-amazon-owe-you-a-refund-you-may-qualify-for-part-of-a-300-million-settlement-153810924.html",
+          "title": "Did Amazon owe you a refund? You may qualify for part of a $300 million settlement.",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4N4m9d0dB-u17f5vGumSjRQ3_Rk1lFdKuSRfM8OuoOD6ZTsc4amXJ19Yfduc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXSCNM22xNtoQNZ0nriPgIQxH5KBpWxd-gWlzkkPjg_qzFw5Mp8RnqJAnesgU"
         },
         {
-          "url": "https://247sports.com/college/minnesota/article/minnesota-gopher-football-ucla-bruins-preview-odds-game-prediction-292182481/",
-          "title": "Minnesota Football vs. #8 UCLA preview and score prediction",
-          "publisher": "247Sports",
+          "url": "https://www.the-sun.com/money/17269432/amazon-refund-settlement-claim/",
+          "title": "Did you make a return at Amazon? Final weeks to file for piece of $309million pot in 'no hassle' settlement",
+          "publisher": "The Sun",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCZhgrGmLALdQKKrfrdsVwnWoNWOIAfJWWNx5PZp2Ln1_C9MTpD74fpZoLyOs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVcY9dUwWbX5WkcoM-2Tlwt_SPsHD3uqL_whH6kTI_D08X5UyRZajKPmfZj2g"
         },
         {
-          "url": "https://www.thedailygopher.com/minnesota-golden-gophers-football/41566/minnesota-football-vs-ucla-staff-predictions",
-          "title": "Minnesota Football vs. UCLA: Staff Predictions",
-          "publisher": "The Daily Gopher",
+          "url": "https://moneywise.com/news/top-stories/amazon-return-refund-class-action-settlement",
+          "title": "Amazon customers who were denied a refund could be eligible for payout from a Washington State settlement",
+          "publisher": "MoneyWise.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVoxYjM_K0wZghhWBLVgLRBBRP0ZEDvb440Nb92L97Xxu2zOx05WZlL3XVGV8"
-        }
-      ]
-    },
-    {
-      "query": "haití",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T07:40:00Z",
-      "related_news_urls": [
-        "https://es-us.noticias.yahoo.com/poderosa-pandilla-haitiana-contacta-grupo-022617095.html",
-        "https://acento.com.do/internacional/pandillas-en-haiti-piden-dialogo-a-la-onu-ante-ataque-de-el-salvador-9784299.html",
-        "https://elnuevodiario.com.do/la-paradoja-del-poder-criminal-y-la-mediacion-imposible-en-haiti/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLMIKPO1K7qCmbwgPMAzhKaAXHwU9t5P1ZzMNLvMc1-YetxyrX_BLFcmnIvow",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://es-us.noticias.yahoo.com/poderosa-pandilla-haitiana-contacta-grupo-022617095.html",
-          "title": "Poderosa pandilla haitiana contacta a grupo gubernamental de desarme",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLMIKPO1K7qCmbwgPMAzhKaAXHwU9t5P1ZzMNLvMc1-YetxyrX_BLFcmnIvow"
-        },
-        {
-          "url": "https://acento.com.do/internacional/pandillas-en-haiti-piden-dialogo-a-la-onu-ante-ataque-de-el-salvador-9784299.html",
-          "title": "Pandillas en Haití piden diálogo a la ONU ante ataque de El Salvador",
-          "publisher": "Acento",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVpF6L_V6wh4HKyo_ZStfsb0cs6L0o4tHiDxRpDNQXKFz5xFq4SMplpboYdf0"
-        },
-        {
-          "url": "https://elnuevodiario.com.do/la-paradoja-del-poder-criminal-y-la-mediacion-imposible-en-haiti/",
-          "title": "La paradoja del poder criminal y la mediación imposible en Haití",
-          "publisher": "El Nuevo Diario",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS_blTgGl76PyuTd_8Qrrvne8q2-OVNuh9RiklZhh-Q4P62jpGL2OI6nuMQxI"
-        }
-      ]
-    },
-    {
-      "query": "jared padalecki",
-      "approx_searches": "100+",
-      "published_at": "2026-11-07T07:40:00Z",
-      "related_news_urls": [
-        "https://ew.com/jared-padalecki-admits-crush-on-costar-lauren-graham-in-new-gilmore-girls-doc-trailer-12238847"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcxSDCYIPp4x5ylGBCFxc78TYsvjguUUMNMFhOcFu4zUZrS9QwHC9p3CjlJ24",
-      "image_credit": "Entertainment Weekly",
-      "news": [
-        {
-          "url": "https://ew.com/jared-padalecki-admits-crush-on-costar-lauren-graham-in-new-gilmore-girls-doc-trailer-12238847",
-          "title": "Jared Padalecki admits he ‘certainly had a crush’ on costar Lauren Graham in new Gilmore Girls doc trailer (exclusive)",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcxSDCYIPp4x5ylGBCFxc78TYsvjguUUMNMFhOcFu4zUZrS9QwHC9p3CjlJ24"
-        }
-      ]
-    },
-    {
-      "query": "the walking dead: the return",
-      "approx_searches": "100+",
-      "published_at": "2026-11-07T07:30:00Z",
-      "related_news_urls": [
-        "https://undeadwalking.com/the-walking-dead-twd-daryl-dixon-return-imminent",
-        "https://undeadwalking.com/3-things-walking-dead-fans-need-from-daryl-dixon-final-season",
-        "https://undeadwalking.com/the-walking-dead-daryl-dixon-season-4-could-have-unexpected-ending"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgrbpw6_ow2y3OvFUJWH64fDkItphjXE8VDYELMQ4OjizJF7og7yNENNaCFC8",
-      "image_credit": "Undead Walking",
-      "news": [
-        {
-          "url": "https://undeadwalking.com/the-walking-dead-twd-daryl-dixon-return-imminent",
-          "title": "The Walking Dead's big franchise return is officially imminent",
-          "publisher": "Undead Walking",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgrbpw6_ow2y3OvFUJWH64fDkItphjXE8VDYELMQ4OjizJF7og7yNENNaCFC8"
-        },
-        {
-          "url": "https://undeadwalking.com/3-things-walking-dead-fans-need-from-daryl-dixon-final-season",
-          "title": "3 things Walking Dead fans need from Daryl Dixon's final season",
-          "publisher": "Undead Walking",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUGtr3m64UBVNCFM93WkkKZuj5_v63yOLeLze0job3jYzHFKk68I5UGjKGFx8"
-        },
-        {
-          "url": "https://undeadwalking.com/the-walking-dead-daryl-dixon-season-4-could-have-unexpected-ending",
-          "title": "The Walking Dead: Daryl Dixon season 4 could have an unexpected ending",
-          "publisher": "Undead Walking",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTV2v1Bgwg4hficokokF7DcRPR5rvTPBG-rEM0-e_geC4u4tTjOUFi8XxuO_dQ"
-        }
-      ]
-    },
-    {
-      "query": "play store",
-      "approx_searches": "100+",
-      "published_at": "2026-11-07T07:30:00Z",
-      "related_news_urls": [
-        "https://www.bgr.com/2303296/how-to-install-apps-android-phone-outside-play-store/",
-        "https://www.howtogeek.com/download-android-apps-without-using-google-play-store/",
-        "https://thebangladeshtoday.com/bangladesh/2026/11/06/39154"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTJ0iQBOcCLIfFiW1qU5SkxsVtK0oBMAp7dmgp2w-iv8ujQaF-vpUu9WXhnVs",
-      "image_credit": "BGR",
-      "news": [
-        {
-          "url": "https://www.bgr.com/2303296/how-to-install-apps-android-phone-outside-play-store/",
-          "title": "Your Android Phone Can Install Apps Outside The Play Store – Here's How",
-          "publisher": "BGR",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTJ0iQBOcCLIfFiW1qU5SkxsVtK0oBMAp7dmgp2w-iv8ujQaF-vpUu9WXhnVs"
-        },
-        {
-          "url": "https://www.howtogeek.com/download-android-apps-without-using-google-play-store/",
-          "title": "4 safe ways to download Android apps without using the Google Play Store",
-          "publisher": "How-To Geek",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgflfMWJ6de3HoKdv5mYv1AsBeqdwfGnhVkv9o7HC2UPCRHiM1pvHka6NJhMo"
-        },
-        {
-          "url": "https://thebangladeshtoday.com/bangladesh/2026/11/06/39154",
-          "title": "APK Downloads in Bangladesh: What Mobile Users Should Check",
-          "publisher": "The Bangladesh Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTp3fTNKWHT0qSRDNIf67mdxcIYTryfRMVhuNJTCVv39i6ZYoXmGa38Z7mCzck"
-        }
-      ]
-    },
-    {
-      "query": "campus drivers season 2",
-      "approx_searches": "100+",
-      "published_at": "2026-11-07T07:20:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/tv/news/off-campus-season-2-release-amazon-alli-and-dean-1236940329/",
-        "https://deadline.com/2026/11/off-campus-season-2-release-date-returning-cast-prime-video-1237214389/",
-        "https://www.bgr.com/2308657/best-tv-shows-watch-after-off-campus-prime-video/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZ0KmXQi5YTmyMTZ9gEuTcXVfAo8iOV9OWB6KMi1RbGrw-7NLYDxzOSS1V1xg",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/tv/news/off-campus-season-2-release-amazon-alli-and-dean-1236940329/",
-          "title": "‘Off Campus’ Sets Season 2 Release Date at Amazon",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZ0KmXQi5YTmyMTZ9gEuTcXVfAo8iOV9OWB6KMi1RbGrw-7NLYDxzOSS1V1xg"
-        },
-        {
-          "url": "https://deadline.com/2026/11/off-campus-season-2-release-date-returning-cast-prime-video-1237214389/",
-          "title": "‘Off Campus’ Gets Season 2 Release Date On Prime Video, Confirms Returning Cast",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOQHZKTZOlosIk85NcmrO37VJ5y1r_O767kayfDWgkeXAxSl6LGvapElnZISU"
-        },
-        {
-          "url": "https://www.bgr.com/2308657/best-tv-shows-watch-after-off-campus-prime-video/",
-          "title": "5 Best TV Shows To Watch After Prime Video's Off Campus",
-          "publisher": "BGR",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTSiH2T6RFwjy1q2XqbMOeIGHjCMDVeed-rlIO1aDaOF3W6zfaVJL8ntXSi2Fo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkPc1RoQCOyH1R9DTotCbYIYJYgJfR5t6D8zbQTAi80OcsXprq9DyHKjZ77hk"
         }
       ]
     }
