@@ -10,8 +10,7 @@ export function routeColorHandoffs(task){
  if(!s)return [];
  const importWork=/\b(?:import|ingest|sync|migrat(?:e|ion)|data\s+feed|dataset|source\s+records)\b/i.test(s);
  const broad=/\b(?:research|design|architect|compare|decide|strategy|universal|system|across\s+all|investigate|discover|find\s+sources)\b/i.test(s);
- const scopedFix=/^(?:please\s+)?(?:fix|repair|correct|update|patch|restore)\b/i.test(s)
-   && /\b[A-Za-z0-9_./-]+\.(?:js|mjs|cjs|ts|tsx|jsx|html|css|json|sql|yml|yaml)\b/i.test(s);
+ const scopedFix=/^(?:please\s+)?(?:fix|repair|correct|update|patch|restore)\b/i.test(s);
  const sourceReady=/^(?:please\s+)?(?:import|ingest|sync)\b/i.test(s)
    && /\b(?:verified|approved|licensed|registered|existing)\b/i.test(s);
  // A specific source fix does not need a big-picture research cycle.
