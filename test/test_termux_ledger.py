@@ -89,7 +89,7 @@ class LocalLedgerTests(unittest.TestCase):
         self.assertEqual(ledger.save_manifest(self.db, m, 'github_commit_found', authenticated_collector='test-user'), (2, 0))
         found = ledger.list_receipts(self.db)
         self.assertEqual(len(found), 2)
-        self.assertEqual(found[0]['receipt_reference'], 'GIT-P-' + m['lines'][0]['id'])
+        self.assertEqual({x['receipt_reference'] for x in found}, {'GIT-P-' + x['id'] for x in m['lines']})
         self.assertEqual(found[0]['verified_collector'], 'test-user')
         self.assertEqual(found[0]['coin_status'], 'provisional_not_minted')
         self.assertEqual(ledger.save_manifest(self.db, m, 'github_commit_found', authenticated_collector='test-user'), (0, 2))
