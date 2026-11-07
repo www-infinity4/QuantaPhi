@@ -30,12 +30,13 @@ test('501 card is findable in Oracle and Bubbles while never taking employee pas
  assert.match(ui,/not.*grant.*government|does not grant government/i);
  assert.doesNotMatch(ui,/fetch\(|type=['"]password/i);
 });
-test('CNN and CNBC are honest subscriber handoffs; NASA+ and PBS are official sources',()=>{
+test('CNN and CNBC clips are distinct from subscriber live TV; NASA+ and PBS use official videos',()=>{
  const names=TV_EXPANSION_CHANNELS.map(x=>x.id);
  for(const key of ['cnn','cnbc','nasa-plus','pbs-nova','pbs-history'])assert.ok(names.includes(key),key);
  for(const row of TV_EXPANSION_CHANNELS){
   assert.equal(new URL(row.url).protocol,'https:');
-  assert.equal(row.mode,'official-link','no offsite page iframe masquerading as video');
+  assert.equal(row.mode,'official-video','publisher clips are not full broadcaster-site iframes');
+  assert.match(row.videoId,/^[A-Za-z0-9_-]{11}$/);
   assert.ok(row.poster && /^https:\/\//.test(row.poster));
  }
  assert.match(TV_EXPANSION_CHANNELS.find(x=>x.id==='cnn').access,/subscription|provider/i);
@@ -63,7 +64,7 @@ test('TV extension shows actual in-card movies with one player, cast instruction
  assert.match(home,/id="tvQuantExpansion"/);
  assert.match(ui,/getElementById\('tvQuantExpansion'\)/);
  assert.match(ui,/quantaphi:tv-playback-request/);
- assert.match(ui,/host\.appendChild\(el\('div','channelphi-grid'\)\)/);
+ assert.match(ui,/mountTvSourceQuickCards\(host,TV_EXPANSION_CHANNELS\)/);
  assert.match(ui,/youtube-nocookie\.com\/embed\//);
  assert.match(ui,/loadOwnQuantScores/);
  assert.match(ui,/Use my Quant interests/);
