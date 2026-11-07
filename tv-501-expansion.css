@@ -20,3 +20,89 @@
 #tvQuantExpansion .channelphi-movie-official{font-size:13px;font-weight:800;color:#185479}
 #tvQuantExpansion .channelphi-quant-movies .channelphi-now{color:#1a3650;font-size:16px}
 @media(max-width:430px){#tvQuantExpansion .channelphi-quant-controls button{font-size:13px;padding:8px 5px}}
+
+/* Each broadcaster is a first-class Oracle Octaves Quick Card.
+   No shared scroll shelf, external launch button, or browser-like page frame. */
+.channelphi-standalone-source{
+ --oracle-paper:#f7f4f0;
+ margin:16px 0;
+ padding:clamp(12px,3vw,22px);
+ border:1px solid #ddd0e6;
+ border-radius:22px;
+ background:linear-gradient(145deg,#fff 0%,#fbf7ff 72%,#faf6ed 100%);
+ color:#342747;
+ box-shadow:0 8px 26px #47305c12;
+ max-width:100%;
+ box-sizing:border-box;
+}
+.channelphi-standalone-source .channelphi-mast{gap:12px}
+.channelphi-standalone-source .channelphi-name h3{color:#342048;font-size:clamp(21px,4.6vw,27px)}
+.channelphi-standalone-source .channelphi-description{
+ color:#544760;font-size:clamp(14px,3.1vw,16px);line-height:1.5;
+}
+.channelphi-standalone-source .channelphi-monogram{
+ background:linear-gradient(145deg,#66418d,#45235d);
+ min-width:48px;
+}
+.channelphi-cnn.channelphi-standalone-source .channelphi-monogram{background:#a42634}
+.channelphi-cnbc.channelphi-standalone-source .channelphi-monogram{background:#275671}
+.channelphi-nasa-plus.channelphi-standalone-source .channelphi-monogram{background:#173e67}
+.channelphi-pbs-nova.channelphi-standalone-source .channelphi-monogram,
+.channelphi-pbs-history.channelphi-standalone-source .channelphi-monogram{background:#623c8b}
+.channelphi-standalone-source .channelphi-source-video-screen{
+ width:100%;
+ aspect-ratio:16/9;
+ min-height:0;
+ background:radial-gradient(circle at 40% 25%,#4c4661,#111724 80%);
+ border:1px solid #bda7cc;
+ overflow:hidden;
+}
+.channelphi-standalone-source .channelphi-source-video-screen .channelphi-art{
+ position:absolute;inset:0;width:100%;height:100%;
+ object-fit:cover;opacity:1;
+}
+.channelphi-standalone-source .channelphi-screen-label{
+ background:linear-gradient(#0c0c1733,#04050d90);
+ color:#fff;
+}
+.channelphi-standalone-source .channelphi-play-icon{
+ background:#ffffffeb;color:#44275b;border:1px solid #fff;
+ width:55px;height:55px;font-size:24px;
+}
+.channelphi-standalone-source .channelphi-screen-label strong{font-size:15px}
+.channelphi-standalone-source .channelphi-video-slot{
+ width:100%;aspect-ratio:16/9;
+ background:#000;overflow:hidden;
+}
+.channelphi-standalone-source .channelphi-frame{
+ width:100%;height:100%;min-height:0;aspect-ratio:16/9;
+ border:0;display:block;background:#000;
+}
+.channelphi-standalone-source .channelphi-viewer{padding:6px;background:#10101b;border-radius:15px}
+.channelphi-standalone-source .channelphi-source-stop{
+ display:block;min-height:40px;margin:8px 0 0 auto;
+ padding:7px 14px;border-radius:10px;
+ border:1px solid #baa8ca;background:#f7f3fa;
+ color:#492d62;font-size:14px;font-weight:750;cursor:pointer;
+}
+.channelphi-standalone-source .channelphi-source-title{
+ display:block;margin:4px 0;color:#332347;
+ font-size:clamp(15px,3.2vw,19px);line-height:1.35;
+}
+.channelphi-standalone-source .channelphi-source-status,
+.channelphi-standalone-source .channelphi-provider-note{
+ color:#60576a;font-size:13px;line-height:1.45;margin:0;
+}
+.channelphi-standalone-source :is(button,a):focus-visible{
+ outline:3px solid #22799b;outline-offset:3px;
+}
+.channelphi-standalone-source [hidden]{display:none!important}
+@media(max-width:430px){
+ .channelphi-standalone-source{padding:12px;margin:12px 0;border-radius:18px}
+ .channelphi-standalone-source .channelphi-source-video-screen{min-height:0}
+ .channelphi-standalone-source .channelphi-description{font-size:14px}
+ .channelphi-standalone-source .channelphi-video-slot{aspect-ratio:16/9}
+}
+@media(prefers-reduced-motion:reduce){
+ .channelphi-standalone-source *{animation:none!important;transition:none!important}
+}
