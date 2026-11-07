@@ -41,6 +41,29 @@ function firstPartyRepairTarget(utterance){
  const directive=new RegExp('^(?:(?:please|hey\\s+bubbles|bubbles)[\\s,:]+)?(?:i\\s+(?:need|want)\\s+(?:you\\s+)?to|you\\s+(?:need|have)\\s+to|(?:can|could|would|will)\\s+you|we\\s+need\\s+to)\\s+'+verb+'\\b','i');
  return start.test(command)||directive.test(command)?'www-infinity4/QuantaPhi':null;
 }
+// Creation is a single setup step, not the end of a requested package build.
+// Preserve multiword names and only continue building on an explicit instruction.
+// This is intent parsing, never a new permission to write or publish.
+function repositoryCreationIntent(utterance){
+ const raw=String(utterance||'').trim().slice(0,4001);
+ if(!raw||raw.length>4000||/^(?:do not|don't|never|how|why|what|explain|describe)\\b/i.test(raw))return null;
+ const begins=/^(?:(?:please|hey\\s+bubbles|bubbles)[\\s,:]+)*(?:(?:can|could|would|will)\\s+you\\s+)?(?:create|make|start|build)\\s+(?:me\\s+)?(?:(?:a|an|new|github|private|public)\\s+)*(?:repo|repository)\\b/i;
+ if(!begins.test(raw))return null;
+ const found=/\\b(?:repo(?:sitory)?\\s+(?:(?:to\\s+be\\s+)?(?:called|named)|with\\s+the\\s+name)|(?:called|named)\\s+(?:repo(?:sitory)?\\s+)?)[\\s:]+([A-Za-z][A-Za-z0-9_.-]*(?:\\s+[A-Za-z][A-Za-z0-9_.-]*){0,6})/i.exec(raw);
+ if(!found)return null;
+ const words=found[1].split(/\\s+/);
+ const stops=new Set(['and','then','with','for','to','that','which','where','while','after','plus','so','design','populate','implement','build','write','add','scaffold','assemble','develop','wire','finish','continue','operate','create','make','put','using','including']);
+ let end=words.findIndex((w,i)=>i>0&&stops.has(w.toLowerCase()));
+ if(end<0)end=words.length;
+ if(end<1||end>4)return null; // Never silently invent or truncate a long name.
+ const name=words.slice(0,end).join('-');
+ if(!/^[A-Za-z][A-Za-z0-9_.-]{1,99}$/.test(name))return null;
+ const start=found.index+found[0].length-found[1].length;
+ const tail=raw.slice(start+words.slice(0,end).join(' ').length);
+ const continueBuild=/\\b(?:design|populate|implement|write|build|add|scaffold|assemble|develop|wire|finish|continue|code|create)\\b/i.test(tail)&&
+  !/\\b(?:don't|do\\s+not|never|without\\s+(?:writing|building|editing))\\b/i.test(tail);
+ return {name,continueBuild};
+}
 function classify(utterance){
  const text=String(utterance||'').trim().slice(0,4001);
  if(!text||text.length>4000)return 'chat';
@@ -462,7 +485,7 @@ class ProgressTracker{
   return pending===1&&started.length===1?[started[0]+' started.']:[];
  }
 }
-const api={nativeCaptureNotice,speechText,notificationPreference,ProgressTracker,ownerApprovalRequests,bulkRunPreview,requestPlan,executionMessage,classify,firstPartyRepairTarget,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief,needsSitePackage,sitePackageBrief,integrationBrief,recordBWorkBrief};
+const api={nativeCaptureNotice,speechText,notificationPreference,ProgressTracker,ownerApprovalRequests,bulkRunPreview,requestPlan,executionMessage,classify,firstPartyRepairTarget,resolveRepairRequest,resolveFollowupRequest,repositoryFor,repositoryCreationIntent,makeJobs,describeTickets,needsOmniCode,omniCodeBrief,needsSitePackage,sitePackageBrief,integrationBrief,recordBWorkBrief};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;
 root.BubblesBrainActions=api;
 })(typeof window!=='undefined'?window:globalThis);
