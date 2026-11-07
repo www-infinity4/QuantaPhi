@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-07T16:31:13.334817Z",
+  "checked_at": "2026-11-07T17:01:30.982272Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "iowa state vs baylor",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-07T16:10:00Z",
+      "query": "nottm forest vs man city",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-07T16:40:00Z",
       "related_news_urls": [
-        "https://www.desmoinesregister.com/story/sports/college/iowa-state/football/2026/11/07/iowa-state-baylor-football-odds-time-tv-prediction/92632495007/",
-        "https://sports.yahoo.com/articles/gameday-availability-report-released-iowa-153156552.html",
-        "https://www.sportsgambler.com/betting-tips/ncaaf/iowa-state-cyclones-vs-baylor-bears-prediction-odds-2026-11-07/"
+        "https://www.skysports.com/football/live-blog/13592878/nottingham-forest-vs-man-city-live-premier-league-score-updates-news-prediction-line-ups-and-how-to-watch-or-stream",
+        "https://www.si.com/soccer/nottingham-forest-vs-man-city-preview-predictions-lineups-11-7-26",
+        "https://sports.yahoo.com/articles/maresca-makes-three-changes-forest-161500026.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR898mTS70ch366-dH-2lw7rl2QkOpVV_F6AMyciiAvf_p4WbyG4cPbRhw0LFs",
-      "image_credit": "The Des Moines Register",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRW5Tms3Lk6-e8YzP2EHjWAh4nEOvsyHQF8_Im4BGpCCJx0E-jiQWv3KyV3X0U",
+      "image_credit": "Sky Sports",
       "news": [
         {
-          "url": "https://www.desmoinesregister.com/story/sports/college/iowa-state/football/2026/11/07/iowa-state-baylor-football-odds-time-tv-prediction/92632495007/",
-          "title": "How to watch Iowa State football vs Baylor, time, TV, odds Saturday",
-          "publisher": "The Des Moines Register",
+          "url": "https://www.skysports.com/football/live-blog/13592878/nottingham-forest-vs-man-city-live-premier-league-score-updates-news-prediction-line-ups-and-how-to-watch-or-stream",
+          "title": "Nottingham Forest vs Man City LIVE! Premier League score updates, news, prediction, line-ups and how to watch or stream",
+          "publisher": "Sky Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR898mTS70ch366-dH-2lw7rl2QkOpVV_F6AMyciiAvf_p4WbyG4cPbRhw0LFs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRW5Tms3Lk6-e8YzP2EHjWAh4nEOvsyHQF8_Im4BGpCCJx0E-jiQWv3KyV3X0U"
         },
         {
-          "url": "https://sports.yahoo.com/articles/gameday-availability-report-released-iowa-153156552.html",
-          "title": "Gameday availability report released for Iowa State vs Baylor football",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4zZCiZFS-3zD_y8QOqMNLMbCXXCTRCCGNtjfj2tpD62r4rpMSsa1fjR60kyQ"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/ncaaf/iowa-state-cyclones-vs-baylor-bears-prediction-odds-2026-11-07/",
-          "title": "Iowa State vs Baylor Prediction, Picks & Odds | 07 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBCgQnAJm8LH2YdVNCq3Yo83xfedzNycU3_E99wEs919Ty42LSZ32HDms8B28"
-        }
-      ]
-    },
-    {
-      "query": "tulsa vs tulane",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T16:10:00Z",
-      "related_news_urls": [
-        "https://pickdawgz.com/college-football-picks/tulsa-vs-tulane-prediction-11-7-2026-todays-college-football-picks/",
-        "https://www.si.com/college/tulane/football/three-keys-for-a-tu-victory-over-tu-01m6s9j5dmzf",
-        "https://tulsaworld.com/sports/college/tu/article_04d26038-c00e-4aa3-9963-d3f308d70e0d.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRs1slUraJBwK46uYWjNR91B1vx64TeR7WIsrU8XQGVyPrGhzB76nvmINIzso",
-      "image_credit": "PickDawgz",
-      "news": [
-        {
-          "url": "https://pickdawgz.com/college-football-picks/tulsa-vs-tulane-prediction-11-7-2026-todays-college-football-picks/",
-          "title": "Tulsa vs Tulane Prediction 11/7/2026 Today’s College Football Picks",
-          "publisher": "PickDawgz",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRs1slUraJBwK46uYWjNR91B1vx64TeR7WIsrU8XQGVyPrGhzB76nvmINIzso"
-        },
-        {
-          "url": "https://www.si.com/college/tulane/football/three-keys-for-a-tu-victory-over-tu-01m6s9j5dmzf",
-          "title": "Three Keys for a TU Victory over TU",
+          "url": "https://www.si.com/soccer/nottingham-forest-vs-man-city-preview-predictions-lineups-11-7-26",
+          "title": "Nottingham Forest vs. Man City: Preview, Predictions and Lineups",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9UU6LnHuQxJ4--UYs2fvvDAUX6O8C1Hk_CPDQz3zOYsNjBDlQkQz81NjJMfs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG-HtA06W2aLIqdFawhvZr2EHdqSKUU3r3oUKf3aQZ28ZJV-4v85yU8qBldoc"
         },
         {
-          "url": "https://tulsaworld.com/sports/college/tu/article_04d26038-c00e-4aa3-9963-d3f308d70e0d.html",
-          "title": "Bill Haisten: A perfect time for Tulsa to start scrubbing a 4-23 stain",
-          "publisher": "Tulsa World",
+          "url": "https://sports.yahoo.com/articles/maresca-makes-three-changes-forest-161500026.html",
+          "title": "Maresca makes three changes for Forest trip",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPzR-peukpLPq_r16RULLqCfZhF7vN4zHh2Yin5WeGcIG6VdL9imKX6qIoy1U"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6j0TgY6YUlb28zpfYpYqZzeWWtV22n78UKardEfIsdC_CGX8w4qPmWvs9IZA"
         }
       ]
     },
     {
-      "query": "nyt crossword answers",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T16:10:00Z",
+      "query": "duke vs nc state",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-07T16:40:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/05/crosswords/daily-puzzle-2026-11-06.html",
-        "https://parade.com/living/nyt-mini-crossword-answers-hints-clues-today-november-7-2026",
-        "https://www.analyticsinsight.net/games/mini-crossword/todays-nyt-mini-crossword-answers-for-november-5-2026"
+        "https://sports.yahoo.com/articles/duke-vs-nc-state-live-143056054.html",
+        "https://www.si.com/college/duke/blue-devils-football-state-5-key-players-watch",
+        "https://247sports.com/college/north-carolina-state/longformarticle/pack-power-pregame-film-room-breaking-down-duke-ahead-of-week-10-292149325/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScL0u8SelEUBxeeFgshOzw8xqIBd9JyEwSDUCCmnt8pAiuTykD_et4gknt-Tw",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHwy3sEoPAjFm-d_d8DbHXKnFohaUK0XdBai_qxsT_icCk7GA-mWG7aNlSdvs",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/05/crosswords/daily-puzzle-2026-11-06.html",
-          "title": "NYT Crossword Answers for Nov. 6, 2026",
-          "publisher": "The New York Times",
+          "url": "https://sports.yahoo.com/articles/duke-vs-nc-state-live-143056054.html",
+          "title": "Duke vs. NC State live updates: Score, highlights, predictions, analysis",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScL0u8SelEUBxeeFgshOzw8xqIBd9JyEwSDUCCmnt8pAiuTykD_et4gknt-Tw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHwy3sEoPAjFm-d_d8DbHXKnFohaUK0XdBai_qxsT_icCk7GA-mWG7aNlSdvs"
         },
         {
-          "url": "https://parade.com/living/nyt-mini-crossword-answers-hints-clues-today-november-7-2026",
-          "title": "NYT Mini Crossword Answers, Hints for Saturday, November 7, 2026",
-          "publisher": "Parade Magazine",
+          "url": "https://www.si.com/college/duke/blue-devils-football-state-5-key-players-watch",
+          "title": "Duke Football vs. NC State: 5 Key Players To Watch",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM6wLBY-Cki6ryp2uzYJmO0Y9ajEoYBJIZ6rg7E2jPLhNUlxCw4PsXqwhqYWo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6L_82Smp2viW_vZYwO6w65Xwo3RSBjLeevksEoqIVU1avMNUd-p6r221oVPc"
         },
         {
-          "url": "https://www.analyticsinsight.net/games/mini-crossword/todays-nyt-mini-crossword-answers-for-november-5-2026",
-          "title": "Today’s NYT Mini Crossword Answers for November 5, 2026",
-          "publisher": "Analytics Insight",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRcCxFOTQ51rzRaFasJXToVZSZ7LU7CTlRgPK2I2UivejFU2MXYDnR6mnDyFA"
-        }
-      ]
-    },
-    {
-      "query": "florida state vs boston college",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-07T16:00:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/florida-state/longformarticle/florida-state-depth-chart-boston-college-game-292285599/",
-        "https://sports.yahoo.com/articles/final-fsu-vs-boston-college-154802023.html",
-        "https://www.tomahawknation.com/florida-state-football/140239/gameday-central-florida-state-seminoles-vs-boston-college-eagles-previews-predictions-how-to-watch-odds"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRv28nX7d6md1AHnWK6A8qfIXfv3otf4f0blAnBQHVZVoShfozeHC3khF_YMmQ",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/florida-state/longformarticle/florida-state-depth-chart-boston-college-game-292285599/",
-          "title": "FSU releases updated depth chart ahead of Boston College game: Numerous changes, some due to injuries",
+          "url": "https://247sports.com/college/north-carolina-state/longformarticle/pack-power-pregame-film-room-breaking-down-duke-ahead-of-week-10-292149325/",
+          "title": "Pack Power Pregame Film Room: Breaking Down Duke Ahead of Week 10",
           "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRv28nX7d6md1AHnWK6A8qfIXfv3otf4f0blAnBQHVZVoShfozeHC3khF_YMmQ"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/final-fsu-vs-boston-college-154802023.html",
-          "title": "Final FSU vs. Boston College injury report: Multiple changes for FSU",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzor17Pu6rF1qFxD9Mlpnrxn2_nO1ObZ3z5BoH3ofmNZmmIyGm76Lg6VA9G1E"
-        },
-        {
-          "url": "https://www.tomahawknation.com/florida-state-football/140239/gameday-central-florida-state-seminoles-vs-boston-college-eagles-previews-predictions-how-to-watch-odds",
-          "title": "Gameday Central: Florida State Seminoles vs. Boston College Eagles-Previews, predictions, how to watch, odds",
-          "publisher": "Tomahawk Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPwKWNnmtS4QQz9mrXvLnjfv9SOHr77XLwiqZ7vhdjzUx01OpESnhvpwvh_jA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTF_56i6usaBk_vzQt2boOqvQrXi0E_nBQYWfsuXoEADcgNnPy6WCbO4FiXFKo"
         }
       ]
     },
     {
-      "query": "clemson vs syracuse",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-07T16:00:00Z",
-      "related_news_urls": [
-        "https://www.syracuse.com/orangefootball/2026/11/syracuse-football-hosts-a-clemson-offense-with-no-bite-9-things-to-know.html",
-        "https://www.localsyr.com/orange-nation/where-to-watch-su-vs-clemson-5/",
-        "https://sports.yahoo.com/articles/watch-clemson-vs-syracuse-live-153000594.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNHXdZ72nbxcgjZaDxHzAJ_rVRCir7wIWXKtnmDFg9jw_Bp5oYl89l0CM--gE",
-      "image_credit": "Syracuse.com",
-      "news": [
-        {
-          "url": "https://www.syracuse.com/orangefootball/2026/11/syracuse-football-hosts-a-clemson-offense-with-no-bite-9-things-to-know.html",
-          "title": "Syracuse football faces a Clemson offense with no bite (9 things to know)",
-          "publisher": "Syracuse.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNHXdZ72nbxcgjZaDxHzAJ_rVRCir7wIWXKtnmDFg9jw_Bp5oYl89l0CM--gE"
-        },
-        {
-          "url": "https://www.localsyr.com/orange-nation/where-to-watch-su-vs-clemson-5/",
-          "title": "Where to watch SU vs. Clemson",
-          "publisher": "WSYR",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGhZCGAPyvzF7QoJpIufIHK2syklVhoR3XCPU5j7MW3R58RsaKdnKxRTQEm58"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/watch-clemson-vs-syracuse-live-153000594.html",
-          "title": "How to watch Clemson vs Syracuse: Live stream NCAA College Football, TV channel",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAgJ1qQqQkakt2AdyBHHsdjC3j0m2QQyLnQyp2CpV5e44dOwLBqOcSYTfAVkI"
-        }
-      ]
-    },
-    {
-      "query": "unc vs uconn",
+      "query": "maryland vs purdue",
       "approx_searches": "2000+",
-      "published_at": "2026-11-07T16:00:00Z",
+      "published_at": "2026-11-07T16:40:00Z",
       "related_news_urls": [
-        "https://goheels.com/news/2026/11/6/football-travels-to-uconn-saturday-in-nonconference-matchup",
-        "https://www.on3.com/teams/north-carolina-tar-heels/news/unc-uconn-pregame-scoop/",
-        "https://sports.yahoo.com/articles/unc-football-vs-uconn-watch-140000132.html"
+        "https://sports.yahoo.com/articles/maryland-football-vs-purdue-game-163000655.html",
+        "https://www.jconline.com/story/sports/college/purdue/football/2026/11/07/purdue-football-injury-report-maryland-rodney-lora-jaden-mangham/92626594007/",
+        "https://www.foxsports.com/stories/college-football/how-to-watch-maryland-vs-purdue-tv-channel-live-stream-time-nov-7-2026"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGdIOrsCj-XU0jBWAIVU_Eaoyhv9NiSLgZZcvXjE6uWTt9AvOmZRohtCUpDxw",
-      "image_credit": "University of North Carolina Athletics",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQq2ffQe03QWBXLQf9d3gs7Zg3mHDZadMWpXPqtVXAF3ZAUayUk28yPOrIksiI",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://goheels.com/news/2026/11/6/football-travels-to-uconn-saturday-in-nonconference-matchup",
-          "title": "Football Travels To UConn Saturday In Non-Conference Matchup - University of North Carolina Athletics",
-          "publisher": "University of North Carolina Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGdIOrsCj-XU0jBWAIVU_Eaoyhv9NiSLgZZcvXjE6uWTt9AvOmZRohtCUpDxw"
-        },
-        {
-          "url": "https://www.on3.com/teams/north-carolina-tar-heels/news/unc-uconn-pregame-scoop/",
-          "title": "UNC-UConn Pregame Scoop - Updated 10:32 a.m.",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSxS25cs1gkqpIyG8nQdE6ZohAG5RGcvgIDM5nJ8JmnCbt5H_91t56KHVDvWo"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/unc-football-vs-uconn-watch-140000132.html",
-          "title": "UNC Football vs. UConn: How to Watch",
+          "url": "https://sports.yahoo.com/articles/maryland-football-vs-purdue-game-163000655.html",
+          "title": "Maryland football vs. Purdue game thread: updates, highlights & more",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROJ-AfMvriFpkd9zMfFpVARZkLZwRUg-yUotoMZUNAa_4owbt2UPkOfaJkAFM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQq2ffQe03QWBXLQf9d3gs7Zg3mHDZadMWpXPqtVXAF3ZAUayUk28yPOrIksiI"
+        },
+        {
+          "url": "https://www.jconline.com/story/sports/college/purdue/football/2026/11/07/purdue-football-injury-report-maryland-rodney-lora-jaden-mangham/92626594007/",
+          "title": "Purdue football missing depth piece on defensive line vs Maryland",
+          "publisher": "Journal & Courier",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5Tz4lidQU_UWecipu8ePj-JzdjCzFOaG8vVSW9XkTsmgoJhtgcQCCeLWAEo4"
+        },
+        {
+          "url": "https://www.foxsports.com/stories/college-football/how-to-watch-maryland-vs-purdue-tv-channel-live-stream-time-nov-7-2026",
+          "title": "How to Watch Maryland vs. Purdue: TV Channel, Live Stream, Time",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROETmK31ilhYqaI85XjESDqGAb-i1YDYBZnlMxjDtaH9Zgx9ULw4-Is4JKncQ"
         }
       ]
     },
     {
-      "query": "darian mensah",
+      "query": "panthers vs capitals",
       "approx_searches": "1000+",
-      "published_at": "2026-11-07T16:00:00Z",
+      "published_at": "2026-11-07T16:40:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/athletic/7756668/2026/11/07/darian-mensah-miami-quarterback-nfl-draft/",
-        "https://www.gq.com/story/darian-mensah-profile",
-        "https://www.steelcurtainnetwork.com/steelers-2027-nfl-draft-quarterback-report-week-9-darian-mensah-scouting-notebook/"
+        "https://www.nhl.com/news/florida-panthers-washington-capitals-game-preview-november-7-2026",
+        "https://sports.yahoo.com/articles/panthers-vs-capitals-prediction-pick-155227745.html",
+        "https://russianmachineneverbreaks.com/2026/11/06/capitals-friday-practice-panthers-boone-jenner-faceoffs/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsxazfjSByTmz2UdXofdFLGRzoTtubNfxKry9hFNb9VcFiyrLz4jmOewoB3Xg",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/florida-panthers-washington-capitals-game-preview-november-7-2026",
+          "title": "Panthers at Capitals projected lineups",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/panthers-vs-capitals-prediction-pick-155227745.html",
+          "title": "Panthers vs Capitals Prediction, Pick, NHL Odds for Saturday, November 7",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCfZ75nz7X8hJznf3yw8sQs9r_26CDo695ajddYbbpd0EH4PEBDc5qwpC81Zk"
+        },
+        {
+          "url": "https://russianmachineneverbreaks.com/2026/11/06/capitals-friday-practice-panthers-boone-jenner-faceoffs/",
+          "title": "Capitals Friday practice updates: Prepararing for Panthers, praising Boone, and extra faceoffs work",
+          "publisher": "RMNB",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZWkuFAiGK_IEkoh9fFbZquUQ6_GMFML1A7z7_yIi9fITSx78KEL__izEwFC4"
+        }
+      ]
+    },
+    {
+      "query": "fulham",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-07T16:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/live-blogs/premier-league-live-updates-scores-results-news/TGZ4kVlqFf1W/",
+        "https://sports.yahoo.com/articles/leeds-utd-host-spurs-early-120700334.html",
+        "https://www.theguardian.com/football/live/2026/nov/07/arsenal-and-manchester-city-in-action-fa-cup-first-round-news-and-more-matchday-live?page=with:block-6aeee58d8f08975ecf4b5ea2"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYj7C00UQZR8CVZU-v76gAKxRnG79yvTzMcX7ge2zc1i7czCm31OplOmoM2jU",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/athletic/7756668/2026/11/07/darian-mensah-miami-quarterback-nfl-draft/",
-          "title": "QB Darian Mensah is following Cam Ward’s Miami blueprint as his NFL Draft stock rises",
+          "url": "https://www.nytimes.com/athletic/live-blogs/premier-league-live-updates-scores-results-news/TGZ4kVlqFf1W/",
+          "title": "Premier League live scores: Latest news and updates as Leeds host Spurs in early kick-off",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsxazfjSByTmz2UdXofdFLGRzoTtubNfxKry9hFNb9VcFiyrLz4jmOewoB3Xg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYj7C00UQZR8CVZU-v76gAKxRnG79yvTzMcX7ge2zc1i7czCm31OplOmoM2jU"
         },
         {
-          "url": "https://www.gq.com/story/darian-mensah-profile",
-          "title": "Darian Mensah Might Be the Richest Player in College Football. But He’s Still Going to Class",
-          "publisher": "GQ",
+          "url": "https://sports.yahoo.com/articles/leeds-utd-host-spurs-early-120700334.html",
+          "title": "Leeds Utd lead Spurs in early PL kick-off",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsoSf0-ja-IfjRUsYJCrMf4lAxUOxVs05E1iIgf7x64QjrbpDXkjeHUeVdVls"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzySnrkYBUOO7crlgsMhCRu_S1xDDN39dZDSrdprTepGouZvBqzTMaa8Gs4B0"
         },
         {
-          "url": "https://www.steelcurtainnetwork.com/steelers-2027-nfl-draft-quarterback-report-week-9-darian-mensah-scouting-notebook/",
-          "title": "Steelers 2027 NFL Draft Quarterback Report, Week 9: Darian Mensah Scouting Notebook",
-          "publisher": "Steel Curtain Network",
+          "url": "https://www.theguardian.com/football/live/2026/nov/07/arsenal-and-manchester-city-in-action-fa-cup-first-round-news-and-more-matchday-live?page=with:block-6aeee58d8f08975ecf4b5ea2",
+          "title": "Arsenal and Manchester City in action, FA Cup first round news: matchday live – as it happened",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRQkgWrzvzn4D4oRoDJHbS9iiKZDp7qC2jWgvJX72zLPukDHGrsir9dgqPB-o"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJNvq1kcGUfU6G81gr06PKKNLklOrxXR2s-RSqQykVejXS4xkkpumf6BKa16U"
         }
       ]
     },
     {
-      "query": "espn unlimited",
+      "query": "television show",
       "approx_searches": "200+",
-      "published_at": "2026-11-07T16:00:00Z",
+      "published_at": "2026-11-07T16:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50380000/2007-chaos-2026-season",
-        "https://meteamedia.org/31349/sports/startling-college-football-season-high-ranked-teams-gets-defeated/",
-        "https://www.nytimes.com/athletic/7745299/2026/11/02/college-football-upsets-letdown-games/"
+        "https://www.space.com/entertainment/space-movies-shows/upcoming-marvel-movies-and-tv-shows",
+        "https://www.slashfilm.com/2308020/marvel-movies-tv-shows-2027-release-schedule-explained/",
+        "https://thedirect.com/article/marvel-mcu-films-after-doomsday-disney-upfront-27"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9rx8QZR7Nd4EZ22K1FYTEqgr4ZB0zveUokRKXC_UgEuD5VDr8bvj7A1RGQ_s",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2P_dynHP-YzsrdUIjzfIt6cvWaMRqiI0WttRRZtOizvmt3nCX8o1OMGvhQDU",
+      "image_credit": "Space",
       "news": [
         {
-          "url": "https://www.espn.com/college-football/story/_/id/50380000/2007-chaos-2026-season",
-          "title": "What would it take for the 2026 season's chaos to become the new 2007?",
-          "publisher": "ESPN",
+          "url": "https://www.space.com/entertainment/space-movies-shows/upcoming-marvel-movies-and-tv-shows",
+          "title": "Upcoming Marvel movies and TV shows: Avengers: Doomsday, Secret Wars, X-Men & more",
+          "publisher": "Space",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9rx8QZR7Nd4EZ22K1FYTEqgr4ZB0zveUokRKXC_UgEuD5VDr8bvj7A1RGQ_s"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2P_dynHP-YzsrdUIjzfIt6cvWaMRqiI0WttRRZtOizvmt3nCX8o1OMGvhQDU"
         },
         {
-          "url": "https://meteamedia.org/31349/sports/startling-college-football-season-high-ranked-teams-gets-defeated/",
-          "title": "Startling college football season: High Ranked teams gets defeated",
-          "publisher": "metea media",
+          "url": "https://www.slashfilm.com/2308020/marvel-movies-tv-shows-2027-release-schedule-explained/",
+          "title": "Marvel's 2027 Release Schedule: All 8 Movies And TV Shows Explained",
+          "publisher": "SlashFilm",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU6WngxsphBHSKDovnKjJWmy0tic41gMbRrbw0J1bekus2A3A70JFwYxnwTec"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAchezkJ3axlO71bFql0vh7UeHU5K7uhoUgU2hvkylPEpB_xVMSvGtOiuK38U"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7745299/2026/11/02/college-football-upsets-letdown-games/",
-          "title": "Are letdown games real? The 2026 college football season says yes",
-          "publisher": "The New York Times",
+          "url": "https://thedirect.com/article/marvel-mcu-films-after-doomsday-disney-upfront-27",
+          "title": "Marvel Confirms 4 MCU Films Releasing After Avengers: Doomsday At Disney Upfront 27 Event",
+          "publisher": "The Direct",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT66Vugo2t0DllriLQ8pS46HDi1PKwF8-gNCKejv6hKN_MPmDQnlubP9qft_lw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvf5wFJxwmDkF2oc285iv8y-jjT4jdSIEBpzj9ge1lRSBcfyGmPtxYY5JZZLc"
         }
       ]
     },
     {
-      "query": "atp paris",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T16:00:00Z",
+      "query": "angel city fc vs kc current",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T16:30:00Z",
       "related_news_urls": [
-        "https://www.lemonde.fr/sport/article/2026/11/07/au-masters-1-000-de-paris-l-intellectuel-luca-van-assche-affronte-ben-shelton-pour-une-place-en-finale_6808266_3242.html",
-        "https://www.france24.com/fr/info-en-continu/20261106-tennis-van-assche-qualifi%C3%A9-%C3%A0-paris-pour-sa-1re-demi-finale-de-masters-1000",
-        "https://www.lequipe.fr/Tennis/Article/Luca-van-assche-le-teigneux-qui-a-appris-a-prendre-le-jeu-a-son-compte-il-frappe-beaucoup-plus-fort-en-coup-droit/1741814"
+        "https://www.kctv5.com/2026/11/06/current-hosts-pep-rally-holliday-montessori-before-saturdays-quarterfinal-against-angel-city-fc/",
+        "https://www.cbssports.com/soccer/news/kansas-city-current-angel-city-fc-high-scoring-squads-nwsl-to-quarterfinal-action/",
+        "https://goduke.com/news/2026/11/6/womens-soccer-four-blue-devils-earn-nwsl-playoff-bids-kick-off-action-this-weekend"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQR9uP-zNGjmzgWDLdqFVTwctQZYyoTCOoViDoFy9jowaIE4eukax-PpGWucf4",
-      "image_credit": "Le Monde.fr",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbZC5F8Yz2LBfVQstMe_S5vB0B1RZKwlTgoSo_oKcA5IWwTlxFXR9vbYRWe0Y",
+      "image_credit": "KCTV",
       "news": [
         {
-          "url": "https://www.lemonde.fr/sport/article/2026/11/07/au-masters-1-000-de-paris-l-intellectuel-luca-van-assche-affronte-ben-shelton-pour-une-place-en-finale_6808266_3242.html",
-          "title": "Au Masters 1000 de Paris, « l’intellectuel » Luca Van Assche affronte Ben Shelton pour une place en finale",
-          "publisher": "Le Monde.fr",
+          "url": "https://www.kctv5.com/2026/11/06/current-hosts-pep-rally-holliday-montessori-before-saturdays-quarterfinal-against-angel-city-fc/",
+          "title": "Current hosts pep rally at Holliday Montessori before Saturday’s quarterfinal against Angel City FC",
+          "publisher": "KCTV",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQR9uP-zNGjmzgWDLdqFVTwctQZYyoTCOoViDoFy9jowaIE4eukax-PpGWucf4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbZC5F8Yz2LBfVQstMe_S5vB0B1RZKwlTgoSo_oKcA5IWwTlxFXR9vbYRWe0Y"
         },
         {
-          "url": "https://www.france24.com/fr/info-en-continu/20261106-tennis-van-assche-qualifi%C3%A9-%C3%A0-paris-pour-sa-1re-demi-finale-de-masters-1000",
-          "title": "Tennis: Van Assche qualifié à Paris pour sa 1re demi-finale de Masters 1000",
-          "publisher": "France 24",
+          "url": "https://www.cbssports.com/soccer/news/kansas-city-current-angel-city-fc-high-scoring-squads-nwsl-to-quarterfinal-action/",
+          "title": "Kansas City Current and Angel City FC bring high scoring squads to quarterfinal action",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQlxVu22G-JWq4i1o87ROJ7cYOZG2pvw9VIw5qp-VRwwUg_RjlSQ5NC9XesIKQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVh7azjO2-UTHoSzwedlggUpuJU3BrJzR7jewfKkW-p_fj-siu1so0MMiDl8E"
         },
         {
-          "url": "https://www.lequipe.fr/Tennis/Article/Luca-van-assche-le-teigneux-qui-a-appris-a-prendre-le-jeu-a-son-compte-il-frappe-beaucoup-plus-fort-en-coup-droit/1741814",
-          "title": "Luca Van Assche, le teigneux qui a appris à prendre le jeu à son compte : « Il frappe beaucoup plus fort »",
-          "publisher": "L'Équipe",
+          "url": "https://goduke.com/news/2026/11/6/womens-soccer-four-blue-devils-earn-nwsl-playoff-bids-kick-off-action-this-weekend",
+          "title": "Four Blue Devils Earn NWSL Playoff Bids; Kick Off Action This Weekend",
+          "publisher": "GoDuke.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQ8UiY0HTGuJdSdjPjIHawpFk9UsregKJLgY4YMpI-mEEUqj3wmegcfdeR29c"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQawl0qvevgX8ie-iMksgvjVE5U4EVXtbChl8pe5O_ji64mQwbJxhamdPSZDt0"
         }
       ]
     },
     {
-      "query": "paul barringer",
+      "query": "auburn vs arkansas",
       "approx_searches": "200+",
-      "published_at": "2026-11-07T16:00:00Z",
+      "published_at": "2026-11-07T16:30:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-senate.html",
-        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-mississippi-us-senate.html",
-        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-governor.html"
+        "https://auburntigers.com/news/2026/11/6/auburn-football-gameday-advisory-the-arkansas-game",
+        "https://sports.yahoo.com/articles/auburn-vs-arkansas-live-updates-160141461.html",
+        "https://www.wholehogsports.com/news/2026/nov/06/arkansas-football-tv-auburn-how-to-watch-stream-listen-weather-forecast-betting-line/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2AuHGmRxQRkJxccJiL1SwsmhrGlyQFLC0h9bAEY9ze1d-ba1iYaOJCAuCmrE",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkero1sJ-KxFSdcWLiSUBhEnv0LWjLGsieqEj42vDhMcmPSat666ndyBcDfto",
+      "image_credit": "Auburn Tigers - Official Athletics Website",
       "news": [
         {
-          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-senate.html",
-          "title": "U.S. Senate Election Results",
-          "publisher": "The New York Times",
+          "url": "https://auburntigers.com/news/2026/11/6/auburn-football-gameday-advisory-the-arkansas-game",
+          "title": "Auburn Football Gameday Advisory: The Arkansas Game",
+          "publisher": "Auburn Tigers - Official Athletics Website",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2AuHGmRxQRkJxccJiL1SwsmhrGlyQFLC0h9bAEY9ze1d-ba1iYaOJCAuCmrE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkero1sJ-KxFSdcWLiSUBhEnv0LWjLGsieqEj42vDhMcmPSat666ndyBcDfto"
         },
         {
-          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-mississippi-us-senate.html",
-          "title": "Mississippi U.S. Senate 2026: Live Midterm Election Results, Hyde-Smith vs. Colom",
-          "publisher": "The New York Times",
+          "url": "https://sports.yahoo.com/articles/auburn-vs-arkansas-live-updates-160141461.html",
+          "title": "Auburn vs Arkansas live updates: Score, highlights",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ2SzE2rixkW2-Ud2QNzlA7_Cspq2EaauvuqNq9JBRz1uscq4oQHC6xpT6ojyE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4vVId3etRYeRK1IKb6wL_q1sYKqVvIw05XU0y68z88THBAj88egXsUjIzuhk"
         },
         {
-          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-governor.html",
-          "title": "U.S. Governor Midterm Elections 2026: Live Results",
-          "publisher": "The New York Times",
+          "url": "https://www.wholehogsports.com/news/2026/nov/06/arkansas-football-tv-auburn-how-to-watch-stream-listen-weather-forecast-betting-line/",
+          "title": "Arkansas football at Auburn: How to watch and listen, forecast, betting line",
+          "publisher": "Whole Hog Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5eAN7UbnOaOyZMgN1ApQP_FEPg5u5BREID_8FDO3605Fr9Im__uy1BVzoyp4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtafJ0OyxWp7X_UEyYkWwW7P8iMrVIlerppnSRdzfcEZZhPg96D1YClZBjLYA"
+        }
+      ]
+    },
+    {
+      "query": "lsu alabama game",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T16:30:00Z",
+      "related_news_urls": [
+        "https://www.wafb.com/2026/11/06/lsu-junior-be-recognized-by-first-lady-melania-trump-alabama-game/",
+        "https://www.kcci.com/article/melania-trump-lsu-set-to-announce-scholarship-program-students-foster-care/74364914",
+        "https://lsusports.net/news/2026/11/6/football-vs-alabama-game-day-information-2026"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsqtb1sIaoXSLyUg93yCQvhWy7oi7AILuX6947qMv6ejwGuX8TfBsBvrOpMGI",
+      "image_credit": "WAFB",
+      "news": [
+        {
+          "url": "https://www.wafb.com/2026/11/06/lsu-junior-be-recognized-by-first-lady-melania-trump-alabama-game/",
+          "title": "LSU junior to be recognized by first lady Melania Trump at Alabama game",
+          "publisher": "WAFB",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsqtb1sIaoXSLyUg93yCQvhWy7oi7AILuX6947qMv6ejwGuX8TfBsBvrOpMGI"
+        },
+        {
+          "url": "https://www.kcci.com/article/melania-trump-lsu-set-to-announce-scholarship-program-students-foster-care/74364914",
+          "title": "Melania Trump, LSU are set to announce a scholarship program for students who were in foster care",
+          "publisher": "KCCI",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvjMIWzmyWPW7Qt9E4rxWQDdz6rV5ho5aXfUQ_z3YSr8oUUJQ93sK11KXV65g"
+        },
+        {
+          "url": "https://lsusports.net/news/2026/11/6/football-vs-alabama-game-day-information-2026",
+          "title": "Football vs. Alabama Game Day Information - Enhanced Security (2026)",
+          "publisher": "LSUsports.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmYK3eePtM08tpwO98kgjO2G03OxBlz794EEPxtuKO03xe6cjQnQ9cds8r84Y"
+        }
+      ]
+    },
+    {
+      "query": "julian edelman",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T16:20:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/tv/news/rob-gronkowski-julian-edelman-sing-football-gronk-jules-1236940027/",
+        "https://frontofficesports.com/article/julian-edelman-foxborough-rocking-tom-brady-return/",
+        "https://sports.yahoo.com/articles/tom-brady-roasts-ex-teammates-030608698.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQL-AfKaJYWjXvV593nCFe0cG-KBgB7DLlq01Dw9fyLsks-yCCElQkjBsFhooE",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/tv/news/rob-gronkowski-julian-edelman-sing-football-gronk-jules-1236940027/",
+          "title": "‘The Gronk & Jules Show’ Hosts Rob Gronkowski and Julian Edelman Sing About Their Love for Talkin’ Football in New Promo (EXCLUSIVE)",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQL-AfKaJYWjXvV593nCFe0cG-KBgB7DLlq01Dw9fyLsks-yCCElQkjBsFhooE"
+        },
+        {
+          "url": "https://frontofficesports.com/article/julian-edelman-foxborough-rocking-tom-brady-return/",
+          "title": "Julian Edelman: Foxborough ‘Will Be Rocking’ for Tom Brady’s Return",
+          "publisher": "Front Office Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmVDxSbHVAe6ahQ7LdSbwIqGfCq8NoOEU67O1a4MwVlydj31rVtXGJ9fToNUI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/tom-brady-roasts-ex-teammates-030608698.html",
+          "title": "Tom Brady roasts ex-teammates Rob Gronkowski, Julian Edelman’s new song",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXE4zFEctRUkLuH9Sll_mOzoM8JgJF8S-xNSsKjOLFo_T_2GwMqyLG51iZ4Rg"
         }
       ]
     }
