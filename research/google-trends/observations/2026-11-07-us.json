@@ -3,12 +3,327 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-07T12:31:12.403090Z",
+  "checked_at": "2026-11-07T13:01:24.817723Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "málaga vs racing santander",
+      "query": "star wars: ahsoka season 2",
       "approx_searches": "200+",
+      "published_at": "2026-11-07T12:40:00Z",
+      "related_news_urls": [
+        "https://thedirect.com/article/ahsoka-season-2-the-mandalorian-the-acolyte-disney-plus-lucasfilm-star-wars",
+        "https://www.disneyfanatic.com/star-wars-boss-confirms-live-action-tv-plan-mando-verse-th1/",
+        "https://insidethemagic.net/2026/11/lucasfilm-confirms-status-star-wars-live-action-tv-kathleen-kennedy-dave-filoni-th1/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5FrlNpT9vtN29DtuqgX-qqXm8Zqy4eN0WkxCO1UwUHhPLn0TJmKFDOnJr8KQ",
+      "image_credit": "The Direct",
+      "news": [
+        {
+          "url": "https://thedirect.com/article/ahsoka-season-2-the-mandalorian-the-acolyte-disney-plus-lucasfilm-star-wars",
+          "title": "Report: Ahsoka Season 2 Is No Longer Expected To Release On Disney+ With Lucasfilm's Live-Action Star Wars TV Streaming Rollout Used For The Mandalorian & The Acolyte",
+          "publisher": "The Direct",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5FrlNpT9vtN29DtuqgX-qqXm8Zqy4eN0WkxCO1UwUHhPLn0TJmKFDOnJr8KQ"
+        },
+        {
+          "url": "https://www.disneyfanatic.com/star-wars-boss-confirms-live-action-tv-plan-mando-verse-th1/",
+          "title": "‘Star Wars’ Boss Confirms Live-Action TV Plan Following Reported End of Mando-Verse",
+          "publisher": "Disney Fanatic",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfKm4TMDONvbqUz3doWGcVZD6zH0IlZH_AmjtKpBpDoa3FaKyoa_F0YXRK4rk"
+        },
+        {
+          "url": "https://insidethemagic.net/2026/11/lucasfilm-confirms-status-star-wars-live-action-tv-kathleen-kennedy-dave-filoni-th1/",
+          "title": "Lucasfilm Confirms Status of ‘Star Wars’ Live-Action TV Following President Exit",
+          "publisher": "Inside the Magic",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQattJX2Rvxomq1qeooZUtwVyxeXDwsGcvXfCktkNoxkhuc2z7Ck1gLjH1Ztgo"
+        }
+      ]
+    },
+    {
+      "query": "did lauren boebert lose",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T12:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-colorado-us-house-4.html",
+        "https://www.military.com/former-navy-admiral-fired-who-fled-gop-projected-to-flip-colorado-republican-house-seat",
+        "https://www.cpr.org/2026/11/03/colorado-election-results-congressional-district-4-boebert-laubacher/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8OstSZUYQvuRqFn-yrvQ0TdXcxQKmWisL0H-1KSYiswIHpolfOXADTPuXDdQ",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-colorado-us-house-4.html",
+          "title": "Colorado Fourth Congressional District 2026: Live Election Results, Boebert vs. Laubacher",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8OstSZUYQvuRqFn-yrvQ0TdXcxQKmWisL0H-1KSYiswIHpolfOXADTPuXDdQ"
+        },
+        {
+          "url": "https://www.military.com/former-navy-admiral-fired-who-fled-gop-projected-to-flip-colorado-republican-house-seat",
+          "title": "34-Year Navy Veteran Eileen Laubacher Is on Verge of Unseating Lauren Boebert in Colorado",
+          "publisher": "Military.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDzBRcz727mxh_b4VCauNc6B-LGNDmoKq0yTCREWtWvnHv0aIb7RK9Nmz4PeI"
+        },
+        {
+          "url": "https://www.cpr.org/2026/11/03/colorado-election-results-congressional-district-4-boebert-laubacher/",
+          "title": "Lauren Boebert in big fight to keep her seat in Congress in too-close-to-call race",
+          "publisher": "Colorado Public Radio",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRw31sj8gahgKTqRRaGWyQB1tkEdVqUrxDAWO0dFimMAWS7DTItmo3gLPtFbPg"
+        }
+      ]
+    },
+    {
+      "query": "robin montgomery",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T12:40:00Z",
+      "related_news_urls": [
+        "https://www.sofascore.com/tennis/match/robin-montgomery-janice-tjen/IJqcstXtc",
+        "https://www.wtatennis.com/videos/4604571/tjen-unleashes-forehand-barrage-to-seize-control-of-first-set-tiebreak-in-chennai",
+        "https://www.dimers.com/tennis/news/janice-tjen-vs-robin-montgomery-tennis-prediction-wta-chennai-open-2026-ac"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQlQjT5mamRxgCKOtFYm0h341EgPaUCLKmH5XTrboeOL0elkZdiw2MS3hHYCdU",
+      "image_credit": "Sofascore",
+      "news": [
+        {
+          "url": "https://www.sofascore.com/tennis/match/robin-montgomery-janice-tjen/IJqcstXtc",
+          "title": "Janice Tjen Robin Montgomery live score and H2H results",
+          "publisher": "Sofascore",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQlQjT5mamRxgCKOtFYm0h341EgPaUCLKmH5XTrboeOL0elkZdiw2MS3hHYCdU"
+        },
+        {
+          "url": "https://www.wtatennis.com/videos/4604571/tjen-unleashes-forehand-barrage-to-seize-control-of-first-set-tiebreak-in-chennai",
+          "title": "Tjen unleashes forehand barrage to seize control of first-set tiebreak in Chennai",
+          "publisher": "WTA Tennis",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRARsZ8aXRbvNxEHbinmNJgJ__bouJJn93KAhtzjOUiQ78a21mvBoKpNb8XhZM"
+        },
+        {
+          "url": "https://www.dimers.com/tennis/news/janice-tjen-vs-robin-montgomery-tennis-prediction-wta-chennai-open-2026-ac",
+          "title": "Janice Tjen vs. Robin Montgomery prediction, odds, picks for WTA Chennai Open 2026",
+          "publisher": "Dimers",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAP5_CplSyT1LLJWQDysa9RMyXwAq8guIM0yVCl7pQq-am7dK3tSbwP9zLE3M"
+        }
+      ]
+    },
+    {
+      "query": "chelsea vs everton",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T12:30:00Z",
+      "related_news_urls": [
+        "https://www.chelseafc.com/en/news/article/confirmed-chelsea-women-line-up-vs-everton",
+        "https://sports.yahoo.com/articles/chelsea-vs-everton-women-super-114859938.html",
+        "https://royalbluemersey.sbnation.com/everton-women-ladies-team-womens-super-league-wsl-news-latest/84497/everton-women-vs-chelsea-wsl-match-preview-more-of-the-same-from-the-toffees"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQn0GOlA8AN7ptkf9Gx6T8ys3z-Q6XHpsvRWsNf1nbzp_dXEW3cSebXUz_dTiU",
+      "image_credit": "Chelsea Football Club",
+      "news": [
+        {
+          "url": "https://www.chelseafc.com/en/news/article/confirmed-chelsea-women-line-up-vs-everton",
+          "title": "Confirmed Chelsea Women line up vs Everton | News | Official Site",
+          "publisher": "Chelsea Football Club",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQn0GOlA8AN7ptkf9Gx6T8ys3z-Q6XHpsvRWsNf1nbzp_dXEW3cSebXUz_dTiU"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/chelsea-vs-everton-women-super-114859938.html",
+          "title": "Chelsea vs. Everton, Women’s Super League: Confirmed lineups; how to watch",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqKtnp0UEU6ggPF90GmwzSPrj_bv2V6BF6rTK7URNJUGfaZd3Xz-GI5bgsjfA"
+        },
+        {
+          "url": "https://royalbluemersey.sbnation.com/everton-women-ladies-team-womens-super-league-wsl-news-latest/84497/everton-women-vs-chelsea-wsl-match-preview-more-of-the-same-from-the-toffees",
+          "title": "Everton Women vs Chelsea: WSL Match Preview | More of the same from the Toffees",
+          "publisher": "Royal Blue Mersey",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpQYoEArb8qVdwhE3e6SkrVNTlQuObGeRfPczADotZh6V42h5_LH4TG_6_csk"
+        }
+      ]
+    },
+    {
+      "query": "ghsa football playoffs",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T12:30:00Z",
+      "related_news_urls": [
+        "https://www.ajc.com/sports/2026/11/newton-football-allegations-ghsa/",
+        "https://www.usatoday.com/story/sports/high-school/football/2026/11/05/newton-high-school-football-investigation-ghsa-playoffs/92631928007/",
+        "https://www.on3.com/high-school/news/newton-ga-football-team-to-be-investigated-by-the-ghsa/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWwDlkyT2q_3D-tqorz7CtUbBxnXXsH7hQYeqm5g0zZ1FcF6CzbR_vppTwii4",
+      "image_credit": "The Atlanta Journal-Constitution",
+      "news": [
+        {
+          "url": "https://www.ajc.com/sports/2026/11/newton-football-allegations-ghsa/",
+          "title": "GHSA to investigate report of ineligible player on Newton’s football team",
+          "publisher": "The Atlanta Journal-Constitution",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWwDlkyT2q_3D-tqorz7CtUbBxnXXsH7hQYeqm5g0zZ1FcF6CzbR_vppTwii4"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/high-school/football/2026/11/05/newton-high-school-football-investigation-ghsa-playoffs/92631928007/",
+          "title": "Undefeated Georgia high school football team faces GHSA investigation ahead of playoffs",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2JI0mzdNXgrcX3JVY5Mk5UOLd6SP63xuNh833P78z9B8O_DKNLMPkx0fA4zE"
+        },
+        {
+          "url": "https://www.on3.com/high-school/news/newton-ga-football-team-to-be-investigated-by-the-ghsa/",
+          "title": "Newton (Ga.) football team to be investigated by the GHSA",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREeJDV_SM-B95ZQxADO8oFggtTwQVGlWfFgf1Fv2UjGXpy6chdvngz8gxRBWU"
+        }
+      ]
+    },
+    {
+      "query": "la habana",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T12:30:00Z",
+      "related_news_urls": [
+        "https://www.univision.com/local/miami-wltv/recibi-amenazas-la-periodista-yoani-sanchez-cuenta-como-fue-su-detencion-por-el-regimen-de-cuba-video",
+        "https://www.telemundo51.com/noticias/local/denuncian-nueva-ola-de-detenciones-y-vigilancia-contra-activistas-y-periodistas-independientes-en-cuba/2846090/",
+        "https://www.dw.com/es/la-periodista-independiente-cubana-yoani-s%C3%A1nchez-fue-liberada-tras-varias-horas-detenida-en-la-habana/a-79871525"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSwdaY2CuG0-OeB0LnKRSq914XhDIGRpyFB7j--2qsF9IkVzMdToJAXCvAZ9UI",
+      "image_credit": "Univision",
+      "news": [
+        {
+          "url": "https://www.univision.com/local/miami-wltv/recibi-amenazas-la-periodista-yoani-sanchez-cuenta-como-fue-su-detencion-por-el-regimen-de-cuba-video",
+          "title": "“Recibí amenazas”: la periodista Yoani Sánchez cuenta cómo fue su detención por el régimen de Cuba",
+          "publisher": "Univision",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSwdaY2CuG0-OeB0LnKRSq914XhDIGRpyFB7j--2qsF9IkVzMdToJAXCvAZ9UI"
+        },
+        {
+          "url": "https://www.telemundo51.com/noticias/local/denuncian-nueva-ola-de-detenciones-y-vigilancia-contra-activistas-y-periodistas-independientes-en-cuba/2846090/",
+          "title": "Denuncian nueva ola de detenciones y vigilancia contra activistas y periodistas independientes en Cuba",
+          "publisher": "Telemundo Miami (51)",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6ooGGXL2h9fAJKvOK5wXNMcgUqBYPPYjVWcZUu1pRCWTJZD8tawtdHmR4VCg"
+        },
+        {
+          "url": "https://www.dw.com/es/la-periodista-independiente-cubana-yoani-s%C3%A1nchez-fue-liberada-tras-varias-horas-detenida-en-la-habana/a-79871525",
+          "title": "La periodista independiente cubana Yoani Sánchez fue liberada tras varias horas detenida en La Habana",
+          "publisher": "DW.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWLMjd1rJh6NpOp3j7arFUAFQz45hclU2fFOJHwtWFGoaLY57737FDjAGlqg0"
+        }
+      ]
+    },
+    {
+      "query": "málaga - racing de santander",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T12:20:00Z",
+      "related_news_urls": [
+        "https://www.diariosur.es/malagacf/previa-malaga-racing-primera-20261106225109-nt.html",
+        "https://www.malagacf.com/noticias/previa-del-malaga-racing0611",
+        "https://as.com/futbol/funes-y-jose-alberto-bajo-presion-en-la-rosaleda-f202611-n/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTue1v4z6Xr0tan7NfZ-B-7zgLR4XahCgrQLdB6idRR1_gvevgDfv9WF5IX7Y0",
+      "image_credit": "Diario Sur",
+      "news": [
+        {
+          "url": "https://www.diariosur.es/malagacf/previa-malaga-racing-primera-20261106225109-nt.html",
+          "title": "Esperanza o calvario para el Málaga",
+          "publisher": "Diario Sur",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTue1v4z6Xr0tan7NfZ-B-7zgLR4XahCgrQLdB6idRR1_gvevgDfv9WF5IX7Y0"
+        },
+        {
+          "url": "https://www.malagacf.com/noticias/previa-del-malaga-racing0611",
+          "title": "Previa del Málaga – Racing",
+          "publisher": "Málaga CF",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgiGET0KC3qBd-MxK58DZ7XxxlgiMU-YRmydwZliqklFQeSV-indOym6W1wlM"
+        },
+        {
+          "url": "https://as.com/futbol/funes-y-jose-alberto-bajo-presion-en-la-rosaleda-f202611-n/",
+          "title": "Funes y José Alberto, bajo presión en La Rosaleda",
+          "publisher": "Diario AS",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXa0x_bbYMAllVXuwxQNhLZ-nUg4ENGzcLWDtGZq9PLs3qL7xLzZ9EjKdkKyc"
+        }
+      ]
+    },
+    {
+      "query": "chris sale sonny gray rotation",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T12:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/braves-lock-75m-deal-sonny-100605406.html",
+        "https://heavy.com/sports/mlb/atlanta-braves/braves-sonny-gray-free-agent-prediction/",
+        "https://sportsnaut.com/mlb/atlanta-braves-max-fried-trade-speculation"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDRlJ6Y7LZAAf-utS-ZqWsS5Ko9x85wElEaFHv0Jf0Mb88TY0l8NVDuQokDO0",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/braves-lock-75m-deal-sonny-100605406.html",
+          "title": "Braves Lock In $75M Deal For Sonny Gray To Pair With Chris Sale",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDRlJ6Y7LZAAf-utS-ZqWsS5Ko9x85wElEaFHv0Jf0Mb88TY0l8NVDuQokDO0"
+        },
+        {
+          "url": "https://heavy.com/sports/mlb/atlanta-braves/braves-sonny-gray-free-agent-prediction/",
+          "title": "Braves Predicted to Land 3-Time All-Star on $50 Million Deal",
+          "publisher": "Heavy.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkfv1d7XCEzdO9rGgnDtct0CNF_hwslUrZlbXUs0naHMiHuXTL6i-vWl7dRFI"
+        },
+        {
+          "url": "https://sportsnaut.com/mlb/atlanta-braves-max-fried-trade-speculation",
+          "title": "New Report Opens Door for Atlanta Braves to Reunite With 3-Time All-Star in Blockbuster Trade",
+          "publisher": "Sportsnaut",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHB6vfOqOMZFyg9fFlCu_mbwTcuP7kd4YIzRLvWlKoRILybtqaQgOiQz85Soo"
+        }
+      ]
+    },
+    {
+      "query": "minnesota high school football tournament teams",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T12:20:00Z",
+      "related_news_urls": [
+        "https://varsity.startribune.com/minnesota-high-school-football-state-tournament-field-qualifiers-2026/601908480",
+        "https://www.inforum.com/sports/prep/from-section-finals-to-big-playoff-games-follow-our-live-blog",
+        "https://www.wctrib.com/sports/prep/heres-our-tribune-sports-live-blog"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSroPzGyWE3cvewaxC7bWwzizPOzeatZmnpIUeRNYlWcLGwSNlO_VeSqeSMBrI",
+      "image_credit": "Star Tribune",
+      "news": [
+        {
+          "url": "https://varsity.startribune.com/minnesota-high-school-football-state-tournament-field-qualifiers-2026/601908480",
+          "title": "These are the teams headed to the football state tournament",
+          "publisher": "Star Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSroPzGyWE3cvewaxC7bWwzizPOzeatZmnpIUeRNYlWcLGwSNlO_VeSqeSMBrI"
+        },
+        {
+          "url": "https://www.inforum.com/sports/prep/from-section-finals-to-big-playoff-games-follow-our-live-blog",
+          "title": "From section finals to big playoff games, follow our live blog",
+          "publisher": "InForum",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzMJHz2ifk0LLpwCW9DsUcl68QcsQEBQ_W4u7wJAb_8gY3D4nFRJWgapMCRJM"
+        },
+        {
+          "url": "https://www.wctrib.com/sports/prep/heres-our-tribune-sports-live-blog",
+          "title": "Here's our Tribune Sports Live blog",
+          "publisher": "West Central Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6DygRPlN2YZU3jdmGCgED3z9nJUFdQfxhxFDXF_8YcTFGzMUwsuM65UfIOfE"
+        }
+      ]
+    },
+    {
+      "query": "málaga vs racing santander",
+      "approx_searches": "500+",
       "published_at": "2026-11-07T12:10:00Z",
       "related_news_urls": [
         "https://footballwhispers.com/blog/malaga-vs-racing-santander-prediction-07-11-2026/",
@@ -38,295 +353,6 @@
           "publisher": "BBC",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyDUe1HSw8UWfBKR-3mXpzmkqB7rsVnNO8_YIj3AfujQOSAtKtsPYGzsI7GRI"
-        }
-      ]
-    },
-    {
-      "query": "nintendo zelda ocarina of time",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-07T12:10:00Z",
-      "related_news_urls": [
-        "https://www.nintendo.com/en-gb/News/2026/November/Ask-the-Developer-Vol-24-The-Legend-of-Zelda-Ocarina-of-Time-Chapter-1-3230318.html",
-        "https://gameinformer.com/interview/2026/11/06/award-winning-composer-and-musician-jon-batiste-talks-ocarina-of-times-music",
-        "https://www.ign.com/articles/the-legend-of-zelda-ocarina-of-time-review-remake"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnV5nZjIGijYizcERtXK2tJGjctxSrf7u_w6bimlNlGGpkKEbVfb87w5taX0s",
-      "image_credit": "Nintendo",
-      "news": [
-        {
-          "url": "https://www.nintendo.com/en-gb/News/2026/November/Ask-the-Developer-Vol-24-The-Legend-of-Zelda-Ocarina-of-Time-Chapter-1-3230318.html",
-          "title": "Ask the Developer Vol. 24, The Legend of Zelda: Ocarina of Time – Chapter 1",
-          "publisher": "Nintendo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnV5nZjIGijYizcERtXK2tJGjctxSrf7u_w6bimlNlGGpkKEbVfb87w5taX0s"
-        },
-        {
-          "url": "https://gameinformer.com/interview/2026/11/06/award-winning-composer-and-musician-jon-batiste-talks-ocarina-of-times-music",
-          "title": "Award-Winning Composer And Musician Jon Batiste Talks Ocarina Of Time's Music And Why 'Guile's Theme' Goes With Everything",
-          "publisher": "Game Informer",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUrrs-lE4g4CQ5294A0SXX_tAgfKmFufzCAKhMN6dlyjigE0PlkWguiVNIWOc"
-        },
-        {
-          "url": "https://www.ign.com/articles/the-legend-of-zelda-ocarina-of-time-review-remake",
-          "title": "The Legend of Zelda: Ocarina of Time Review",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0DA1hil1z5VobNLFzVE-hgMYBug5iynq-iSjY7Z-v_YXBHKKmZpu8KPKxlvI"
-        }
-      ]
-    },
-    {
-      "query": "south",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T12:10:00Z",
-      "related_news_urls": [
-        "https://www.thestate.com/sports/college/university-of-south-carolina/usc-football/article317943611.html",
-        "https://sports.yahoo.com/articles/channel-south-carolina-football-vs-110557661.html",
-        "https://www.on3.com/teams/south-carolina-gamecocks/news/south-carolina-football-texas-am-injuries-2026/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6mUpHDfAK2n6GFEM1BpK_GD-Gf4A6UcIVqhh7ks1PVuBTNf04KT9Tt7bP6UQ",
-      "image_credit": "The State",
-      "news": [
-        {
-          "url": "https://www.thestate.com/sports/college/university-of-south-carolina/usc-football/article317943611.html",
-          "title": "Five final thoughts, score prediction for South Carolina football vs. Texas A&M",
-          "publisher": "The State",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6mUpHDfAK2n6GFEM1BpK_GD-Gf4A6UcIVqhh7ks1PVuBTNf04KT9Tt7bP6UQ"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/channel-south-carolina-football-vs-110557661.html",
-          "title": "What channel is South Carolina football vs Texas A&M on today? Time, TV schedule",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiAj4Q9_BGfwjF-W59LoRmqqY1ENaOQEW2GKn3Cd6kpUZ1l_C-e4s2BbWoSOc"
-        },
-        {
-          "url": "https://www.on3.com/teams/south-carolina-gamecocks/news/south-carolina-football-texas-am-injuries-2026/",
-          "title": "How Texas A&M's injury situation might affect the Aggies against South Carolina",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_D3z0xWbXxYlNxOCOV17-oJHHIfTzu5dL_llmXNwHrKBy49NDHshW4mWumL8"
-        }
-      ]
-    },
-    {
-      "query": "cvs blackwood",
-      "approx_searches": "100+",
-      "published_at": "2026-11-07T12:10:00Z",
-      "related_news_urls": [
-        "https://6abc.com/post/large-police-presence-seen-outside-cvs-store-gloucester-township/20020916/",
-        "https://www.nbcphiladelphia.com/news/local/armed-person-shot-cvs-gloucester-township-new-jersey-friday/4493240/",
-        "https://www.fox29.com/news/incident-gloucester-township-prompts-heavy-police-activity-skyfox"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCnhUQNCDLO1hv8hahfbj0hwd1qrOuFvFHPEYMHecC7M7wTfEs7gxMW2FyD24",
-      "image_credit": "6abc Philadelphia",
-      "news": [
-        {
-          "url": "https://6abc.com/post/large-police-presence-seen-outside-cvs-store-gloucester-township/20020916/",
-          "title": "Armed suspect shot during confrontation with police at CVS store in Gloucester Township, Camden County",
-          "publisher": "6abc Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCnhUQNCDLO1hv8hahfbj0hwd1qrOuFvFHPEYMHecC7M7wTfEs7gxMW2FyD24"
-        },
-        {
-          "url": "https://www.nbcphiladelphia.com/news/local/armed-person-shot-cvs-gloucester-township-new-jersey-friday/4493240/",
-          "title": "Armed man shot by police while robbing CVS in South Jersey",
-          "publisher": "NBC10 Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSScrjIjuH4GMoq9jc-mOjEvoOmK2djJs0LICdccB1B34i41T3ZaA4zZeeDLn0"
-        },
-        {
-          "url": "https://www.fox29.com/news/incident-gloucester-township-prompts-heavy-police-activity-skyfox",
-          "title": "Armed suspect shot by police at Gloucester Township CVS; investigation underway",
-          "publisher": "FOX 29 Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgQ_0kUWz1Zu8kztn32vafmwKkgJYeaSLPbBREE_1KdNhrKgQopUDbccvfxUE"
-        }
-      ]
-    },
-    {
-      "query": "eenadu",
-      "approx_searches": "100+",
-      "published_at": "2026-11-07T12:10:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
-    },
-    {
-      "query": "nato",
-      "approx_searches": "100+",
-      "published_at": "2026-11-07T12:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/06/world/europe/europe-trump-midterms.html",
-        "https://www.bloomberg.com/news/articles/2026-11-05/nato-s-rutte-says-he-told-trump-to-keep-chin-up-after-midterms",
-        "https://www.politico.eu/article/allies-fear-donald-trump-could-target-nato-after-midterm-loss/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfUR7ZRnRuQgQFkDXI64cN_MnxJW6TXdBRuI1zKhnipermilLuRgOWUDK6Mtw",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/06/world/europe/europe-trump-midterms.html",
-          "title": "Europe Still Sees Trump As Powerful, Especially in Foreign Policy",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfUR7ZRnRuQgQFkDXI64cN_MnxJW6TXdBRuI1zKhnipermilLuRgOWUDK6Mtw"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-05/nato-s-rutte-says-he-told-trump-to-keep-chin-up-after-midterms",
-          "title": "NATO’s Rutte Says He Told Trump to Keep ‘Chin Up’ After Midterms",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS645fHnWE3TcahzvKtMe6TFXBQOIR0R61tEiwtF7_aQZqgpOrY1TQZie7zx44"
-        },
-        {
-          "url": "https://www.politico.eu/article/allies-fear-donald-trump-could-target-nato-after-midterm-loss/",
-          "title": "Allies fear Trump will target NATO in case of midterm loss",
-          "publisher": "POLITICO.eu",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYf9K0yeo0v47CKmaUI1SCJLSqivthVKC3vV46GoQzNBT4qJZd-EZ71NbfLmc"
-        }
-      ]
-    },
-    {
-      "query": "klara and the sun",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T12:00:00Z",
-      "related_news_urls": [
-        "https://www.indiewire.com/features/commentary/taika-waititi-bad-instagram-post-critics-klara-and-the-sun-1235225140/",
-        "https://www.hollywoodreporter.com/movies/movie-news/klara-and-the-sun-taika-waititi-slams-critics-reviews-1236744227/",
-        "https://www.pajiba.com/celebrities_are_better_than_you/taika-waititis-anticritics-rant-is-another-symptom-of-his-artistic-decline.php"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlxoA3qu2VlzWtmI_nXB2iCS4yDs1paN0nG3k4WBb2Sxoj4l1DjAYMCZeD75I",
-      "image_credit": "IndieWire",
-      "news": [
-        {
-          "url": "https://www.indiewire.com/features/commentary/taika-waititi-bad-instagram-post-critics-klara-and-the-sun-1235225140/",
-          "title": "The Problem With Taika Waititi's 'Klara and the Sun' Instagram Post",
-          "publisher": "IndieWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlxoA3qu2VlzWtmI_nXB2iCS4yDs1paN0nG3k4WBb2Sxoj4l1DjAYMCZeD75I"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/movies/movie-news/klara-and-the-sun-taika-waititi-slams-critics-reviews-1236744227/",
-          "title": "‘Klara and the Sun’ Director Taika Waititi Calls Critics “Sad Lost Souls” Over Negative Reviews",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYVJIqphMP90bkXrGbABBVvNIYYn4i9OnshkXN6sig4_-OU45-7PTYLbNmPAA"
-        },
-        {
-          "url": "https://www.pajiba.com/celebrities_are_better_than_you/taika-waititis-anticritics-rant-is-another-symptom-of-his-artistic-decline.php",
-          "title": "There's a Reason the Critics Don't Like Your New Stuff, Taika Waititi",
-          "publisher": "Pajiba",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIbRRyecmgt2tRFZznColOru5YKNQ52jwNudB0lHRO0MfeD3OEqvc5xRq0gWI"
-        }
-      ]
-    },
-    {
-      "query": "carson daly",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-07T12:00:00Z",
-      "related_news_urls": [
-        "https://www.today.com/popculture/news/carson-daly-feeling-grateful-ahead-saturday-today-job-rcna607949",
-        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/07/carson-daly-saturday-today-gig-today-show-laura-jarrett/92625170007/",
-        "https://www.hollywoodreporter.com/tv/tv-news/carson-daly-named-co-anchor-saturday-today-show-nbc-1236748201/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQi67czo9O12LKAdzJYQLroi_mLiWDWHIHW4XgI79efOxJEuyFN-7xTdmZxh9Y",
-      "image_credit": "TODAY.com",
-      "news": [
-        {
-          "url": "https://www.today.com/popculture/news/carson-daly-feeling-grateful-ahead-saturday-today-job-rcna607949",
-          "title": "Carson Daly Reveals How He’s Feeling Ahead of New Saturday TODAY Gig",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQi67czo9O12LKAdzJYQLroi_mLiWDWHIHW4XgI79efOxJEuyFN-7xTdmZxh9Y"
-        },
-        {
-          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/07/carson-daly-saturday-today-gig-today-show-laura-jarrett/92625170007/",
-          "title": "Carson Daly says new role gives 'Today' family 'a good reason' to celebrate | Exclusive",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2MP-qTnyUOx5V8ZbAGr2ZRgZjYOzsg5fGrrgKg-0M4etRM0FO-gQGPkaHP0M"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/tv/tv-news/carson-daly-named-co-anchor-saturday-today-show-nbc-1236748201/",
-          "title": "Carson Daly Named Co-Anchor of NBC’s ‘Saturday Today’",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7oPpuewLrM9M6DgAlKKSvPj4Vkvy9CU3tOYgpcgscXURx5MCDvn40tojyk_Q"
-        }
-      ]
-    },
-    {
-      "query": "tyson fury comments deontay wilder",
-      "approx_searches": "100+",
-      "published_at": "2026-11-07T12:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/boxing/story/_/id/50379303/wilder-opetaia-serve-co-main-event-fury-joshua-card",
-        "https://www.badlefthook.com/boxing-news/120206/tyson-fury-doesnt-want-to-see-deontay-wilder-fight-jai-opetaia-boxing-news-2026",
-        "https://sports.yahoo.com/articles/tyson-fury-holds-nothing-back-013952870.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSs1yCiIbimIqcDxh_T7yUQhf6JQN0_qEoIqmhBSoHiYko_lAvxK7vfbgrsP4I",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/boxing/story/_/id/50379303/wilder-opetaia-serve-co-main-event-fury-joshua-card",
-          "title": "Wilder-Opetaia to serve as co-main event on Fury-Joshua card",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSs1yCiIbimIqcDxh_T7yUQhf6JQN0_qEoIqmhBSoHiYko_lAvxK7vfbgrsP4I"
-        },
-        {
-          "url": "https://www.badlefthook.com/boxing-news/120206/tyson-fury-doesnt-want-to-see-deontay-wilder-fight-jai-opetaia-boxing-news-2026",
-          "title": "‘He shouldn’t be in the ring’: Tyson Fury doesn’t want to see Deontay Wilder fight Jai Opetaia",
-          "publisher": "Bad Left Hook",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUKsYKRe5WRJx88un0FLTCQpju6vF_iE8JDhXhAmWfnuTUp_dXNWAzUZ1DUBk"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/tyson-fury-holds-nothing-back-013952870.html",
-          "title": "Tyson Fury Holds Nothing Back in Blunt Deontay Wilder Assessment",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr_5Q2uuchwqk5e7K1yjwGMmpe60EBDda-Dh328FfVcyWRovkzOgsd81Y3EBA"
-        }
-      ]
-    },
-    {
-      "query": "kevin o'connell",
-      "approx_searches": "100+",
-      "published_at": "2026-11-07T12:00:00Z",
-      "related_news_urls": [
-        "https://www.dailynorseman.com/minnesota-vikings-podcasts/101245/oconnell-must-adapt-or-the-offense-stays-stuck",
-        "https://www.cbssports.com/nfl/news/why-vikings-coach-kevin-oconnell-should-be-on-hot-seat/",
-        "https://www.detroitlions.com/news/5-stats-that-stand-out-following-detroit-lions-week-8-victory-gibbs-reed-hutchinson"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7-hqXnduPkF48dGM0gvyV5fmMbNZ_av95FaWO5ll3O-35IPDxZv_zybMLeHY",
-      "image_credit": "Daily Norseman",
-      "news": [
-        {
-          "url": "https://www.dailynorseman.com/minnesota-vikings-podcasts/101245/oconnell-must-adapt-or-the-offense-stays-stuck",
-          "title": "O’Connell Must Adapt or the Offense Stays Stuck",
-          "publisher": "Daily Norseman",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7-hqXnduPkF48dGM0gvyV5fmMbNZ_av95FaWO5ll3O-35IPDxZv_zybMLeHY"
-        },
-        {
-          "url": "https://www.cbssports.com/nfl/news/why-vikings-coach-kevin-oconnell-should-be-on-hot-seat/",
-          "title": "Why Vikings coach Kevin O'Connell should be on hot seat despite NFL-best 6-1 record",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLuOlvgrc_KOUvT9iDv0r-ZM9R54A324cSPSa0MqP9zSHlv-mRAAIdKApAR2g"
-        },
-        {
-          "url": "https://www.detroitlions.com/news/5-stats-that-stand-out-following-detroit-lions-week-8-victory-gibbs-reed-hutchinson",
-          "title": "TWENTYMAN: 5 stats that stand out following Lions' Week 8 victory",
-          "publisher": "Detroit Lions",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEPwrHZd0tZHvhHhxbJo5IqPI0lTX9Ed4HCBvEaRnOOucX1RxKA1QrjM1BDVc"
         }
       ]
     }
