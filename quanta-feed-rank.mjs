@@ -8,6 +8,7 @@ const bounded=n=>Number.isFinite(n)&&n>0?Math.min(5000,Math.floor(n)):0;
 export const cleanFeedState=raw=>{
  const r=raw&&typeof raw==='object'&&!Array.isArray(raw)?raw:{};
  const following=[...new Set((Array.isArray(r.following)?r.following:[]).filter(validId).slice(0,800))];
+ const muted=[...new Set((Array.isArray(r.muted)?r.muted:[]).filter(validId).slice(0,800))];
  const counts={},viewed={},transitions={};
  for(const [key,val] of Object.entries(r.counts||{}).slice(0,900))if(validId(key)&&bounded(val))counts[key]=bounded(val);
  for(const [key,val] of Object.entries(r.viewed||{}).slice(0,900))if(validId(key)&&bounded(val))viewed[key]=bounded(val);
@@ -18,7 +19,7 @@ export const cleanFeedState=raw=>{
   for(const [to,n] of Object.entries(row).slice(0,80))if(validId(to)&&to!==from&&bounded(n))edges[to]=bounded(n);
   if(Object.keys(edges).length)transitions[from]=edges;
  }
- return {version:2,following,counts,viewed,transitions,
+ return {version:3,following,muted,counts,viewed,transitions,
   lastUsed:validId(r.lastUsed)?r.lastUsed:'',
   advance:Math.max(0,Math.min(100000,Number(r.advance)||0))};
 };
@@ -64,7 +65,8 @@ export function feedScore(card,state){
 }
 export function feedCandidates(cards,tab,state,query=''){
  const q=String(query).trim().toLowerCase().slice(0,120);
- const filtered=cards.filter(c=>(tab!=='following'||(state.following||[]).includes(c.id))&&
+ const filtered=cards.filter(c=>!(state.muted||[]).includes(c.id)&&
+  (tab!=='following'||(state.following||[]).includes(c.id))&&
   (!q||[c.name,c.category,c.feature,c.study].join(' ').toLowerCase().includes(q)));
  const priority=(a,b)=>Number(isInfinityAccepted(b))-Number(isInfinityAccepted(a));
  if(tab==='following')return filtered.sort((a,b)=>priority(a,b)||(state.counts?.[b.id]||0)-(state.counts?.[a.id]||0)||a.name.localeCompare(b.name));
@@ -134,3 +136,20 @@ export const markOpened=(state,id,fromId=state.lastUsed)=>({
 });
 export const toggleFollowing=(state,id)=>({...state,following:(state.following||[]).includes(id)?
  state.following.filter(x=>x!==id):[...state.following,id]});
+
+/* A visitor's explicit rejection outranks old engagement, category matching and
+ * authenticated Quant weights. No shared source card or other visitor is changed. */
+export function muteCard(state,id){
+ if(!validId(id))return state;
+ const counts={...(state.counts||{})},viewed={...(state.viewed||{})};
+ delete counts[id];delete viewed[id];
+ const transitions={};
+ for(const [from,edges] of Object.entries(state.transitions||{})){
+  if(from===id)continue;
+  const kept=Object.fromEntries(Object.entries(edges||{}).filter(([to])=>to!==id));
+  if(Object.keys(kept).length)transitions[from]=kept;
+ }
+ return {...state,counts,viewed,transitions,
+  muted:[...new Set([...(state.muted||[]),id])].slice(-800)};
+}
+export const unmuteCard=(state,id)=>({...state,muted:(state.muted||[]).filter(x=>x!==id)});
