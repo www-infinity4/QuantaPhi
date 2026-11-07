@@ -6,7 +6,7 @@ Owner request 2026-11-07: Blue Star 2oz Walmart product; forgotten and everyday 
 - Editorial pilot: 4 source-backed cards in essentials-card-batch.mjs (Blue Star 2oz, Campho-Phenique, Aveeno Anti-Itch, Sarna Original).
 - Independent full retail listing link, publisher-hosted photograph, source label, no invented current sale, stock, ranking or sponsorship.
 - Main page #essentialsQuickCards mounts the originals after ShopPhi; Oracle discovers the SAME original DOM card as its Public, For You, and Following card. Shared Follow / Star / Collect / Share / +1 Build controls are reused.
-- data-personalization="disabled" prevents health card click/view analytics. Only an explicit on-card Power Chain follow turns on close Skin relief category matching. Unfollow this one is durable within the existing device-local follow state.
+- data-personalization="disabled" prevents health card click/view analytics. Only an explicit Oracle Power Chain follow for the selected original card turns on close Skin relief category matching. Unfollow this one is durable within the existing device-local follow state.
 - The data/essentials-reviewed.json file (currently empty, fallback to curated 4) can hold up to 120 reviewed cards at a time. New validated entries are shown on the home page without editing HTML. To prepare a candidate batch offline:
 
     node scripts/build-essentials-batch.mjs editorial-source-input.json data/essentials-reviewed.json
