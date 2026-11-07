@@ -51,3 +51,12 @@ test('expanded station carousel has direct, first-party-published stream sources
  }
  assert.doesNotMatch(js,/ice[0-9]\.somafm|autoplay\s*=\s*true/i);
 });
+
+test('Spaces card has a live-source view and keeps audio status truthful',()=>{
+ const source=read('x-spaces-quick-card.mjs');
+ assert.match(source,/\u005c/v1\u005c/x\u005c/spaces\u005c/live/);
+ assert.match(source,/Find live Spaces/);
+ assert.match(source,/Listen here/);
+ assert.doesNotMatch(source,/iframe\.src\s*=\s*chosen\.url|<iframe\s+src.*spaces/);
+ assert.match(source,/Playback on this site is not available/);
+});
