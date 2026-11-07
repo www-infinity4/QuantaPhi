@@ -195,7 +195,7 @@ function registerSourceCards(){
    category,feature:'Use the real '+label+' card controls',study:'Original source card with direct controls',
    official:node.dataset.official||'',
    node,marker:null,count:Math.max(0,Math.min(1000,Number(counts['source-'+id])||0))};
-  entries.push(manageNode(entry));added=true;
+  manageNode(entry);entries.push(entry);added=true;
  }
  if(added){
   updateTabs();predict();
