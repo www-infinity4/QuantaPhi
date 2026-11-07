@@ -33,3 +33,39 @@ test('health reports unwired rather than claiming live bots; approvals fail clos
  assert.equal(approve.status,503);
  await assert.rejects(worker.scheduled({},{}),/TREND_DB/i);
 });
+
+
+test('job claims wait for predecessors and completed receipts require owned live lease',async()=>{
+ const token='z'.repeat(32);
+ const job={id:'trend-card-2026-11-07:blue',batch_id:'trend-card-2026-11-07',role:'blue',depends_on:'orange',state:'queued',attempts:0,lease_owner:null,lease_until:null};
+ let prior='queued';
+ const db={prepare(sql){
+  let args=[];
+  return {bind(...values){args=values;return this},async first(){
+   if(sql.includes('SELECT * FROM continuity_jobs'))return job;
+   if(sql.includes('SELECT state FROM continuity_jobs'))return {state:prior};
+   return null;
+  },async run(){
+   if(sql.includes("SET state='running'")){
+    if(job.state!=='queued')return {meta:{changes:0}};
+    job.state='running';job.lease_owner=args[0];job.lease_until=args[1];job.attempts++;return {meta:{changes:1}};
+   }
+   if(sql.includes("SET state='complete'")){
+    if(job.state!=='running'||job.lease_owner!==args[3]||job.lease_until<args[4])return {meta:{changes:0}};
+    job.state='complete';return {meta:{changes:1}};
+   }
+   throw new Error('unexpected query '+sql);
+  }};
+ }};
+ const send=(path,body,authorization=true)=>worker.fetch(new Request('https://example.com'+path,{method:'POST',headers:{'Content-Type':'application/json',...(authorization?{Authorization:'Bearer '+token}:{})},body:JSON.stringify(body)}),{TREND_DB:db,OPERATOR_TOKEN:token});
+ assert.equal((await send('/jobs/claim',{id:job.id,worker_id:'blue-worker'},false)).status,401);
+ assert.equal((await send('/jobs/claim',{id:job.id,worker_id:'blue-worker'})).status,409);
+ prior='complete';
+ assert.equal((await send('/jobs/claim',{id:job.id,worker_id:'blue-worker'})).status,200);
+ assert.equal(job.attempts,1);
+ assert.equal((await send('/jobs/claim',{id:job.id,worker_id:'other-worker'})).status,409);
+ assert.equal((await send('/jobs/complete',{id:job.id,worker_id:'other-worker',evidence_receipt:'verified:commit-sha'})).status,409);
+ assert.equal((await send('/jobs/complete',{id:job.id,worker_id:'blue-worker',evidence_receipt:'verified:commit-sha'})).status,200);
+ assert.equal(job.state,'complete');
+ assert.equal((await send('/jobs/complete',{id:job.id,worker_id:'blue-worker',evidence_receipt:'verified:commit-sha'})).status,409);
+});
