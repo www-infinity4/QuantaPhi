@@ -14,47 +14,31 @@ test('Walmart request searches owner source then reads the observed file before 
  assert.equal(calls[0].query,'walmart');assert.equal(calls[0].scope,'owner');
  assert.equal(found.repository,catalog[0]);assert.equal(found.path,hit.path);assert.equal(found.writeAuthorized,false);
 });
-test('Gary Cardone Church of I AM resolves the real card source across repository matches',async()=>{
- const owned=['www-infinity4/QuantaPhi','www-infinity4/WidgetPhi'];
- const seen=[];
- const hits=[
-  {repository:owned[1],path:'browser/widgetphi-cardone.js',excerpt:'Cardone Capital quick card'},
-  {repository:owned[0],path:'church-iam-card.js',excerpt:'Church of I AM Gary Cardone original Sunday promotion'}
- ];
- const source=await discoverProject({request:'Fix the Gary Cardone Church of I AM card',catalog:owned,
-  invoke:async operation=>{
-   seen.push(operation);
-   if(operation.action==='search_github_code')return {ok:true,status:'code_search_results',results:hits};
-   if(operation.action==='read_repository')return {ok:true,headSha:'b'.repeat(40)};
-   if(operation.action==='read_file')return {ok:true,sha:'a'.repeat(40),content:'Church of I AM Gary Cardone official Sunday promotion'};
-   throw Error('unexpected action');
-  }});
- assert.equal(seen[0].scope,'owner');
- assert.equal(source.repository,owned[0]);
- assert.equal(source.path,'church-iam-card.js');
- assert.equal(source.card,'church-of-i-am');
- assert.equal(source.writeAuthorized,false);
-});
-test('a natural follow-up reuses the card named in recent owner conversation',()=>{
- const history=[{role:'user',text:'The Gary Cardone Church of I AM card needs attention.'},
- {role:'assistant',text:'I will inspect the source.'}];
- assert.match(sourceQueryFor('Fix that card',history),/Church of I AM/);
- assert.equal(sourceQueryFor('Fix the Walmart card',history),'Fix the Walmart card');
-});
-test('ordinary repair instructions find the right card, not a repository picker',()=>{
- const gary=cardWorkTargetFor('Fix the Gary Cardone Sunday promotion');
- assert.equal(gary?.id,'church-of-i-am');
- assert.equal(gary?.repository,'www-infinity4/QuantaPhi');
- assert.equal(cardWorkTargetFor('Please repair Gary Cardone'),gary);
- assert.equal(cardWorkTargetFor('Move Gary Cardone into the carousel'),gary);
- assert.equal(cardWorkTargetFor('Place the Gary Cardone card in rotation'),gary);
- assert.equal(cardWorkTargetFor('Repair Cardone Capital')?.id,'cardone-capital');
- const history=[{role:'user',text:'We need to fix the Gary Cardone Church of I AM card'}];
- assert.equal(cardWorkTargetFor('Fix that card',history)?.id,'church-of-i-am');
- for(const q of ['What is Church of I AM?','Do not fix Gary Cardone','Explain Cardone Capital']){
+
+test('retired Gary and Grant Cardone names no longer resolve as registered work targets',()=>{
+ for(const q of ['Fix the Gary Cardone Church of I AM card','Repair Cardone Capital','Move the Gary Cardone card to the carousel']){
   assert.equal(cardWorkTargetFor(q),null,q);
  }
 });
+
+
+test('a natural follow-up reuses an existing card but not a retired card',()=>{
+ const history=[{role:'user',text:'The Pixie Stories card needs attention.'},{role:'assistant',text:'I will inspect the source.'}];
+ assert.match(sourceQueryFor('Fix that card',history),/Pixie Stories/);
+ assert.equal(sourceQueryFor('Fix the Walmart card',history),'Fix the Walmart card');
+ const retired=[{role:'user',text:'The Gary Cardone card needs attention.'}];
+ assert.equal(sourceQueryFor('Fix that card',retired),'Fix that card');
+});
+
+
+test('ordinary repair instructions recognize existing cards, not retired ones',()=>{
+ assert.equal(cardWorkTargetFor('Fix the Pixie Stories card')?.id,'pixie-stories');
+ for(const q of ['Fix the Gary Cardone Sunday promotion','Please repair Gary Cardone','Repair Cardone Capital']){
+  assert.equal(cardWorkTargetFor(q),null,q);
+ }
+ for(const q of ['What is Church of I AM?','Do not fix Gary Cardone','Explain Cardone Capital'])assert.equal(cardWorkTargetFor(q),null,q);
+});
+
 test('chat dispatcher treats recognized card work as a direct owner engineering task',()=>{
  const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
  assert.match(ui,/const namedCardWork=projectContextModule\?\.cardWorkTargetFor/);
@@ -119,27 +103,26 @@ test('the gateway corrects the reported draft without treating its JSON as execu
  assert.equal(body.answerStatus,'partial');
  assert.equal(body.receipt.repositoryActionsVerified,false);
 });
-test('card movement resolves named and follow-up targets without making questions into writes',()=>{
+
+test('retired cards are not eligible for new carousel repairs, including follow-ups',()=>{
  const history=[{role:'user',text:'Gary Cardone Church of I AM is above the carousel.'}];
- for(const request of ['Move the Gary Cardone card to the carousel','Please place Gary Cardone in the carousel',
-  'I want you to relocate the Gary Cardone card','Put that card into the carousel','Move that card to the carousel']){
-  assert.equal(cardWorkTargetFor(request,history)?.id,'church-of-i-am',request);
+ for(const q of ['Move the Gary Cardone card to the carousel','Please place Gary Cardone in the carousel','Put that card into the carousel','Move that card to the carousel']){
+  assert.equal(cardWorkTargetFor(q,history),null,q);
  }
- for(const request of ['Do not move the Gary Cardone card','Why move the Gary Cardone card?',
-  'Explain how to place Gary Cardone in the carousel'])assert.equal(cardWorkTargetFor(request,history),null,request);
+ for(const q of ['Do not move the Gary Cardone card','Why move the Gary Cardone card?'])assert.equal(cardWorkTargetFor(q,history),null,q);
 });
 
 
-test('Cardonay resolves Gary Cardone only for a CURRENT explicit request, not a stale repair',()=>{
- assert.equal(cardWorkTargetFor('Please fix Cardonay')?.id,'church-of-i-am');
- assert.equal(cardWorkTargetFor('Check Cardonay new broken button')?.id,undefined,'check is not a write command');
+test('Cardonay alias stays retired and resolved work does not reopen',()=>{
+ assert.equal(cardWorkTargetFor('Please fix Cardonay'),null);
+ assert.equal(cardWorkTargetFor('Check Cardonay new broken button'),null);
  assert.equal(cardWorkTargetFor('Do not fix Cardonay again'),null);
  const history=[{role:'user',text:'Fix Gary Cardone carousel; it is broken'},
-   {role:'user',text:'We already fixed the Cardone card. Stop reopening it.'}];
- assert.equal(cardWorkTargetFor('Fix that card',history),null,'resolved work must stop deictic replay');
- const stillCurrent=[{role:'user',text:'The Infinity Radio card navigation is broken now'}];
- assert.equal(cardWorkTargetFor('Fix that card',stillCurrent)?.id,'infinity-radio');
+  {role:'user',text:'We already fixed the Cardone card. Stop reopening it.'}];
+ assert.equal(cardWorkTargetFor('Fix that card',history),null);
+ assert.equal(cardWorkTargetFor('Fix that card',[{role:'user',text:'The Infinity Radio card navigation is broken now'}])?.id,'infinity-radio');
 });
+
 test('Cardone closure context filters stale complaints from unrelated owner work without deleting real history',async()=>{
  const {curateOwnerTaskContext}=await import('../bubbles-task-context.mjs');
  const prior=[
