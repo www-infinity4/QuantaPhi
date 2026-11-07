@@ -23,8 +23,8 @@ test('retired Gary and Grant Cardone names no longer resolve as registered work 
 
 
 test('a natural follow-up reuses an existing card but not a retired card',()=>{
- const history=[{role:'user',text:'The Walmart card needs attention.'},{role:'assistant',text:'I will inspect the source.'}];
- assert.match(sourceQueryFor('Fix that card',history),/Walmart/);
+ const history=[{role:'user',text:'The Pixie Stories card needs attention.'},{role:'assistant',text:'I will inspect the source.'}];
+ assert.match(sourceQueryFor('Fix that card',history),/Pixie Stories/);
  assert.equal(sourceQueryFor('Fix the Walmart card',history),'Fix the Walmart card');
  const retired=[{role:'user',text:'The Gary Cardone card needs attention.'}];
  assert.equal(sourceQueryFor('Fix that card',retired),'Fix that card');
@@ -32,7 +32,7 @@ test('a natural follow-up reuses an existing card but not a retired card',()=>{
 
 
 test('ordinary repair instructions recognize existing cards, not retired ones',()=>{
- assert.equal(cardWorkTargetFor('Fix the Walmart card')?.id,'walmart-shopping');
+ assert.equal(cardWorkTargetFor('Fix the Pixie Stories card')?.id,'pixie-stories');
  for(const q of ['Fix the Gary Cardone Sunday promotion','Please repair Gary Cardone','Repair Cardone Capital']){
   assert.equal(cardWorkTargetFor(q),null,q);
  }
