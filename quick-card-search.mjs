@@ -11,8 +11,9 @@ export function showQuickCardMatches(query){
  const grid=el('div','qsr-grid');host.append(grid);
  for(const card of cards){
   const article=el('article','qsr-card');article.dataset.quickCardMatch=card.id;
-// Improvement: add a visible badge to encourage interaction based on daily evidence (29 views, 0 interactions)
+// Improvement: add a visible badge to encourage interaction based on daily evidence (73 views, 0 interactions)
 article.classList.add('search-card-improved');
+article.dataset.improved = 'true'; // evidence: 73 views, 0 interactions
 // Ensure the article can contain absolutely positioned elements
 article.style.position='relative';
 const badge=el('span','search-card-improved-badge','Try it!');
