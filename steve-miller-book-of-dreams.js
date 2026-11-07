@@ -8,8 +8,16 @@
   if(!root||root.dataset.smbMounted==='true')return;
   root.dataset.smbMounted='true';
   root.classList.add('smb-album-card');
-  const albumId='PL8a8cutYP7foGH0YDM8YtNqGtgL0EAJ7k';
-  const album='https://www.youtube.com/playlist?list='+albumId;
+  // Verified official-artist YouTube recordings from Book of Dreams.
+  // No audio downloads, stream extraction, or unverified playlist dependency.
+  const steveTracks=Object.freeze([
+    {id:'JHa1hiFYbFQ',name:'Jet Airliner'},
+    {id:'HUv7pXgZ9NA',name:'Winter Time'},
+    {id:'cTyFNA6939w',name:'Swingtown'},
+    {id:'EFOjLc6vjas',name:'The Stake'}
+  ]);
+  const album='https://www.stevemillerband.com/releases-archive/book-dreams/';
+  let trackIndex=0;
   const make=(tag,cls,value)=>{
     const el=document.createElement(tag);
     if(cls)el.className=cls;
@@ -25,7 +33,8 @@
    '#steveMillerBookOfDreamsCard .smb-sub{font-size:14px;line-height:1.5;color:#536e74;margin:0;}',
    '#steveMillerBookOfDreamsCard .smb-radio{display:flex;align-items:center;gap:12px;padding:14px 0 6px;}',
    '#steveMillerBookOfDreamsCard .smb-radio-play{display:grid;place-items:center;flex:none;width:48px;height:48px;border:0;border-radius:50%;background:#136a76;color:#fff;font-size:22px;cursor:pointer;}',
-   '#steveMillerBookOfDreamsCard .smb-radio-play:focus-visible{outline:3px solid #9c5dd6;outline-offset:3px;}',
+   '#steveMillerBookOfDreamsCard .smb-radio-next{display:grid;place-items:center;flex:none;width:42px;height:42px;border:1px solid #a3c9c8;border-radius:50%;background:#fff;color:#136a76;font-size:17px;cursor:pointer;}',
+   '#steveMillerBookOfDreamsCard .smb-radio-play:focus-visible,#steveMillerBookOfDreamsCard .smb-radio-next:focus-visible{outline:3px solid #9c5dd6;outline-offset:3px;}',
    '#steveMillerBookOfDreamsCard .smb-radio-name{font-size:16px;line-height:1.4;font-weight:800;}',
    '#steveMillerBookOfDreamsCard .smb-radio-status{font-size:13px;line-height:1.45;color:#536e74;overflow-wrap:anywhere;}',
    '#steveMillerBookOfDreamsCard .smb-player-panel[hidden]{display:none;}',
@@ -56,7 +65,10 @@
   status.setAttribute('role','status');
   status.setAttribute('aria-live','polite');
   radioCopy.append(status);
-  radio.append(button,radioCopy);
+  const next=make('button','smb-radio-next','⏭');
+  next.type='button';
+  next.setAttribute('aria-label','Next Steve Miller track');
+  radio.append(button,next,radioCopy);
   const panel=make('div','smb-player-panel');
   panel.hidden=true;
   const frame=make('iframe','smb-player-frame');
@@ -66,16 +78,24 @@
   frame.allow='autoplay; encrypted-media; picture-in-picture';
   frame.setAttribute('allowfullscreen','');
   panel.append(frame);
-  const note=make('p','smb-credit','Artist playlist plays only through YouTube. If a video blocks embedding, open the album source below.');
+  const note=make('p','smb-credit','Official artist recordings play through YouTube inside this card. Provider availability and mobile autoplay vary.');
   const more=make('details','smb-source');
   more.append(make('summary','','Album information & fallback'));
-  const source=make('a','','Book of Dreams · YouTube album playlist');
+  const source=make('a','','Steve Miller Band · Book of Dreams official album');
   source.href=album;
   source.target='_blank';
   source.rel='noopener noreferrer';
   more.append(source);
   root.append(head,radio,panel,note,more);
   let active=false;
+  function showSelectedTrack(){
+   const track=steveTracks[trackIndex];
+   const upcoming=steveTracks.slice(trackIndex+1).concat(steveTracks.slice(0,trackIndex));
+   const sequence=upcoming.map(t=>t.id).join(',');
+   frame.title='Steve Miller Band · '+track.name+' (official YouTube recording)';
+   frame.src='https://www.youtube.com/embed/'+track.id+'?autoplay=1&playsinline=1&rel=0&loop=1&playlist='+sequence;
+   status.textContent='Now selected: '+track.name+' · use the visible YouTube player if mobile autoplay is blocked.';
+  }
   function stop(){
    frame.removeAttribute('src');
    panel.hidden=true;
@@ -89,12 +109,19 @@
    if(active){stop();return;}
    window.dispatchEvent(new CustomEvent('quantaphi:artist-radio-start',{detail:{cardId:root.id}}));
    panel.hidden=false;
-   frame.src='https://www.youtube.com/embed/videoseries?list='+encodeURIComponent(albumId)+'&autoplay=1&rel=0';
+   showSelectedTrack();
    active=true;
    button.textContent='■';
    button.setAttribute('aria-label','Stop Steve Miller Book of Dreams');
    button.setAttribute('aria-pressed','true');
-   status.textContent='YouTube album playlist · use the visible player if autoplay is blocked.';
+  });
+  next.addEventListener('click',()=>{
+    trackIndex=(trackIndex+1)%steveTracks.length;
+    if(!active){
+      status.textContent='Ready: '+steveTracks[trackIndex].name+' · tap Play.';
+      return;
+    }
+    showSelectedTrack();
   });
   window.addEventListener('quantaphi:artist-radio-start',event=>{
    if(event.detail?.cardId!==root.id&&active)stop();
