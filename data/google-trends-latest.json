@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-06T23:31:09.737412Z",
+  "checked_at": "2026-11-07T00:01:55.904683Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "celtics vs hornets",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-06T23:10:00Z",
+      "query": "76ers vs cavaliers",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-06T23:40:00Z",
       "related_news_urls": [
-        "https://sportsbook.fanduel.com/basketball/nba/boston-celtics-@-charlotte-hornets-36279168",
-        "https://www.nbcsportsboston.com/nba/boston-celtics/one-possession-robinson-turns-on-the-jets-in-key-moment-vs-bucks/811707/",
-        "https://www.nba.com/celtics/news/gamepreview-20261106-boscha"
+        "https://www.phillyvoice.com/sixers-vs-cavaliers-76ers-cavs-injury-report-news-analysis-lebron-james-joel-embiid-dominick-barlow/",
+        "https://sports.yahoo.com/articles/cavaliers-score-vs-76ers-live-231029090.html",
+        "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/sixers-cavaliers-nba-cup-rematch-by-the-numbers/764693/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG9zdUWjJvK1O2O7Rfm7SMc47yf86qTlR4spHlaD9Rn3gHXUipQuqdFJ1Enh8",
-      "image_credit": "FanDuel Sportsbook",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRd8nXOXzGxb2HqSWZhVH885f0Hf9jMJv4YvY06b7lDyowW4il_wQjtXkc2OMs",
+      "image_credit": "PhillyVoice",
       "news": [
         {
-          "url": "https://sportsbook.fanduel.com/basketball/nba/boston-celtics-@-charlotte-hornets-36279168",
-          "title": "Boston Celtics @ Charlotte Hornets Odds",
-          "publisher": "FanDuel Sportsbook",
+          "url": "https://www.phillyvoice.com/sixers-vs-cavaliers-76ers-cavs-injury-report-news-analysis-lebron-james-joel-embiid-dominick-barlow/",
+          "title": "Full injury reports for Sixers-Cavaliers on Friday",
+          "publisher": "PhillyVoice",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG9zdUWjJvK1O2O7Rfm7SMc47yf86qTlR4spHlaD9Rn3gHXUipQuqdFJ1Enh8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRd8nXOXzGxb2HqSWZhVH885f0Hf9jMJv4YvY06b7lDyowW4il_wQjtXkc2OMs"
         },
         {
-          "url": "https://www.nbcsportsboston.com/nba/boston-celtics/one-possession-robinson-turns-on-the-jets-in-key-moment-vs-bucks/811707/",
-          "title": "One Possession: Robinson turns on the jets in key moment vs. Bucks",
-          "publisher": "NBC Sports Boston",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOpL7WQQugrSQ7ZtpXCmAWxYK0Mh81tPwy1Ml4hQBBM0hMI0b4kcAEmcWq9pM"
-        },
-        {
-          "url": "https://www.nba.com/celtics/news/gamepreview-20261106-boscha",
-          "title": "11/06 Game Preview: Celtics at Hornets",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQW7bxGfwxWfUZHO_3UY4DeRFbRKt387_voqw5FeYCIJnGExy1Ydk3xvfrOs8Q"
-        }
-      ]
-    },
-    {
-      "query": "senator chris murphy",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-06T23:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/06/us/politics/chris-murphy-senate-stroke.html",
-        "https://apnews.com/article/florida-learjet-plane-crash-copilot-father-6a0878fe45bdd2dfa396d20abdae5b13",
-        "https://www.yahoo.com/news/politics/articles/sen-chris-murphy-hospital-miss-194100404.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQTNzlKM_n_GevfCaJw7foWZq2E5MtrtKcf5UhoOVcP2uOBL6uR7wq1b4zTwo",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/06/us/politics/chris-murphy-senate-stroke.html",
-          "title": "Christopher Murphy Will Not Return to Senate Next Week After Stroke",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQTNzlKM_n_GevfCaJw7foWZq2E5MtrtKcf5UhoOVcP2uOBL6uR7wq1b4zTwo"
-        },
-        {
-          "url": "https://apnews.com/article/florida-learjet-plane-crash-copilot-father-6a0878fe45bdd2dfa396d20abdae5b13",
-          "title": "Dad of 20-year-old co-pilot in Florida Learjet crash says her final radio calls showed 'she's tough'",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTI86qZIBDIntCxXcGqvhoPcD7rv9mdhNm4myb-FoYZFgo5PpSsm07PPhoLtvQ"
-        },
-        {
-          "url": "https://www.yahoo.com/news/politics/articles/sen-chris-murphy-hospital-miss-194100404.html",
-          "title": "Sen. Chris Murphy out of hospital, will miss votes after stroke",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfIdH_DYnhp6qO2wZSoNbplWFkpw4eYBZ948KTOz6xfMvlVs8dUrUC_e2qcLI"
-        }
-      ]
-    },
-    {
-      "query": "blue jackets vs sabres",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-06T23:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nhl/story/_/id/50391024/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-        "https://www.nhl.com/sabres/news/how-to-watch-buffalo-sabres-columbus-blue-jackets-lineup-x3524",
-        "https://sports.yahoo.com/articles/buffalo-sabres-vs-columbus-blue-174533875.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6whBEtCShvlGM3kS1UjmwsYkSVc-z_OGtlJUvdOizj5Ne_SPqXBI1_QtPidc",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nhl/story/_/id/50391024/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-          "title": "NHL Tonight: Keys to Blue Jackets-Sabres, Sharks-Wild, Ducks-Flames",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6whBEtCShvlGM3kS1UjmwsYkSVc-z_OGtlJUvdOizj5Ne_SPqXBI1_QtPidc"
-        },
-        {
-          "url": "https://www.nhl.com/sabres/news/how-to-watch-buffalo-sabres-columbus-blue-jackets-lineup-x3524",
-          "title": "Sabres vs. Blue Jackets | How to watch, lineup notes, and storylines",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQK26Kdb6l-xr_iaYXEqKMZrCiBGJ8M_ANckQ-k4Xzkqsg2t0_LLWkXwjPk1qc"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/buffalo-sabres-vs-columbus-blue-174533875.html",
-          "title": "Buffalo Sabres vs. Columbus Blue Jackets - Lineups, Injury Updates, And Game Notes",
+          "url": "https://sports.yahoo.com/articles/cavaliers-score-vs-76ers-live-231029090.html",
+          "title": "Cavaliers score vs 76ers. Live game updates from LeBron James' homecoming",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRNX3rzIoss39oqNAYKIQDrJqntZ2JgTYlG4mAl7ZIWd5_KGnh-DQUXayln94"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIyx4mcbx1x9X_QsJRAXX_zHjAvr51FDEFn2HKt9o06cbW4R92A7FXIBkHwCg"
+        },
+        {
+          "url": "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/sixers-cavaliers-nba-cup-rematch-by-the-numbers/764693/",
+          "title": "Sixers-Cavs by the numbers: Pressure, threes and a 29-point rematch",
+          "publisher": "NBC Sports Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQT_Jsr_wP8PwoEux7tZT7GuJAsYd0jJ5LhSxGdwGiq0Bgpaeokjey0AESGCKE"
         }
       ]
     },
     {
-      "query": "jane seymour",
+      "query": "ohio state basketball",
       "approx_searches": "500+",
-      "published_at": "2026-11-06T23:10:00Z",
+      "published_at": "2026-11-06T23:40:00Z",
       "related_news_urls": [
-        "https://www.dailyherald.com/20261105/television/television-qa-does-anyone-have-a-prescription-for-old-episodes-of-dr-quinn-medicine-woman/",
-        "https://www.thelist.com/2300940/what-surviving-cast-dr-quinn-medicine-woman-looks-like-today/"
+        "https://ohiostatebuckeyes.com/news/2026/11/4/mens-basketball-ohio-state-open-home-slate-against-youngstown-state-friday",
+        "https://www.dispatch.com/story/sports/college/basketball/2026/11/06/ohio-state-youngstown-state-basketball-how-to-watch-stream-game/92623303007/",
+        "https://247sports.com/college/ohio-state/longformarticle/ohio-state-buckeyes-mens-basketball-preview-vs-youngstown-state-292243155/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdnMw9T4ziqzkFxZmIr87FDvO9y7lMh9P_6-RE617M8gK2tTT6HFKkbjw23C4",
-      "image_credit": "Daily Herald",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_Jsv4k5ZySo47nntmVQRA_9Wpu4loVfvxS0nJhotx4cXSWSeZ2ukFBwcfFBc",
+      "image_credit": "Ohio State | Official Athletics Website",
       "news": [
         {
-          "url": "https://www.dailyherald.com/20261105/television/television-qa-does-anyone-have-a-prescription-for-old-episodes-of-dr-quinn-medicine-woman/",
-          "title": "Television Q&A: Does anyone have a prescription for old episodes of ‘Dr. Quinn, Medicine Woman’?",
-          "publisher": "Daily Herald",
+          "url": "https://ohiostatebuckeyes.com/news/2026/11/4/mens-basketball-ohio-state-open-home-slate-against-youngstown-state-friday",
+          "title": "Ohio State Opens Home Slate Against Youngstown State Friday",
+          "publisher": "Ohio State | Official Athletics Website",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdnMw9T4ziqzkFxZmIr87FDvO9y7lMh9P_6-RE617M8gK2tTT6HFKkbjw23C4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_Jsv4k5ZySo47nntmVQRA_9Wpu4loVfvxS0nJhotx4cXSWSeZ2ukFBwcfFBc"
         },
         {
-          "url": "https://www.thelist.com/2300940/what-surviving-cast-dr-quinn-medicine-woman-looks-like-today/",
-          "title": "What The Surviving Cast Of Dr. Quinn, Medicine Woman Looks Like Today",
-          "publisher": "The List",
+          "url": "https://www.dispatch.com/story/sports/college/basketball/2026/11/06/ohio-state-youngstown-state-basketball-how-to-watch-stream-game/92623303007/",
+          "title": "Where to watch Ohio State vs Youngstown State basketball today: Time, TV channel for game",
+          "publisher": "The Columbus Dispatch",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRR1UBruK43AsPJSCAAF-OKZsThjiwvsVq7J72t7eqNYEpXFD9FlDmfSzRsXUE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg_DcMARWHbAwaZ9UbgVldWxqY9cDAFhjvQfKoQi6qQoY6zg3RkY8xV5xGJnM"
+        },
+        {
+          "url": "https://247sports.com/college/ohio-state/longformarticle/ohio-state-buckeyes-mens-basketball-preview-vs-youngstown-state-292243155/",
+          "title": "What To Watch: Ohio State opens home schedule vs. Youngstown State",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR97uacstPnfkTIIs0MaAmyOBhvIAgczyC6sx7OhSF2-e3W6u9R2r0L7Vgx8lw"
         }
       ]
     },
     {
-      "query": "virginia tech vs smu",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-06T23:00:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/prediction/news/virginia-tech-vs-smu-odds-picks-predictions-use-kalshi-promo-code-cbssports55-55-bonus/",
-        "https://sports.yahoo.com/articles/where-watch-virginia-tech-hokies-210000829.html",
-        "https://www.sportsline.com/insiders/virginia-tech-vs-smu-odds-2026-college-football-picks-week-10-friday-predictions-from-proven-model/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnrfzmZeWglIoRznqZnGDqP0LJKBcEunIHzysQ9EYeI8BAqcU6PX5jiZaY_pI",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/prediction/news/virginia-tech-vs-smu-odds-picks-predictions-use-kalshi-promo-code-cbssports55-55-bonus/",
-          "title": "Virginia Tech vs. SMU odds, picks, predictions: Use Kalshi promo code CBSSPORTS55 for $55 bonus",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnrfzmZeWglIoRznqZnGDqP0LJKBcEunIHzysQ9EYeI8BAqcU6PX5jiZaY_pI"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/where-watch-virginia-tech-hokies-210000829.html",
-          "title": "Here’s Where to Watch the Virginia Tech Hokies vs. SMU Mustangs Game Live Online",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjFv8ykHi80BqbCNz760vapPZJoICwOAcXC51u7LqpckDdhqYAsLbI6EJwWUk"
-        },
-        {
-          "url": "https://www.sportsline.com/insiders/virginia-tech-vs-smu-odds-2026-college-football-picks-week-10-friday-predictions-from-proven-model/",
-          "title": "Virginia Tech vs. SMU odds: 2026 college football picks, Week 10 Friday predictions from proven model",
-          "publisher": "SportsLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6Zpo6qWmrJodEOBPgZhDE2rQpcE_BEy6XR6aeHHjFEOV-B9RCzBsud7OsJ6A"
-        }
-      ]
-    },
-    {
-      "query": "wizards vs hawks",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-06T23:00:00Z",
-      "related_news_urls": [
-        "https://www.bulletsforever.com/washington-wizards-preview/73863/washington-wizards-atlanta-hawks-nba-game-preview",
-        "https://sports.yahoo.com/articles/trae-young-returns-atlanta-wizards-194449184.html",
-        "https://www.espn.com/nba/recap/_/gameId/401909923"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPoqbfAGxJC4Io9UrjzUmNKQ8mo77tYfLuZDEA4bhKpmY-aPPn5p6oXEPv8PA",
-      "image_credit": "Bullets Forever",
-      "news": [
-        {
-          "url": "https://www.bulletsforever.com/washington-wizards-preview/73863/washington-wizards-atlanta-hawks-nba-game-preview",
-          "title": "Wizards at Hawks preview: Washington plays Atlanta on second half of home-and-away",
-          "publisher": "Bullets Forever",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPoqbfAGxJC4Io9UrjzUmNKQ8mo77tYfLuZDEA4bhKpmY-aPPn5p6oXEPv8PA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/trae-young-returns-atlanta-wizards-194449184.html",
-          "title": "Trae Young Returns To Atlanta As Wizards Seek Revenge In NBA Cup Clash",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_58xoQEFmL81XUhy5MwQ77PK9f4V92BQRMw887g19zWkyxhSp5q5A2S877Do"
-        },
-        {
-          "url": "https://www.espn.com/nba/recap/_/gameId/401909923",
-          "title": "Hawks 120-105 Wizards (Nov 4, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7IAdcRNt3y7IEUhLboQwUWRAd6Ez1ZFbJnje-edmkk3a6plJLH1-Hq4rj3Gs"
-        }
-      ]
-    },
-    {
-      "query": "mina kimes",
+      "query": "wvu basketball",
       "approx_searches": "500+",
-      "published_at": "2026-11-06T23:00:00Z",
+      "published_at": "2026-11-06T23:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50381715/chiefs-patrick-mahomes-run-qb-sneak-19-season",
-        "https://www.kansascity.com/sports/spt-columns-blogs/sam-mcdowell/article317888914.html",
-        "https://arrowheadaddict.com/andy-reid-s-refusal-to-run-quarterback-sneaks-continues-to-haunt-the-chiefs-01m6emsyb9s7"
+        "https://wvusports.com/news/2026/11/6/general-dac-energy-renews-mens-basketball-100-000-ticket-donation",
+        "https://www.on3.com/sites/wv-sports/news/wvu-basketball-better-passing-decisions/",
+        "https://www.wvnews.com/bluegoldnews/photos/wvu-basketball-burger-front/image_583f64a2-e748-4e29-a2b9-77a0f889edb3.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScT0d_Dc_MQVYVMQKZIMTaewvHUDJ1lqvT2uLxdeVzD65HJN-JwDyProEUp7M",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3Q39TdFMk-ZT_vFH5RDjkSlsH9-bRZv5ry7IZeIsohK_p3ALk8f_bp0Bvp1w",
+      "image_credit": "West Virginia University Athletics",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50381715/chiefs-patrick-mahomes-run-qb-sneak-19-season",
-          "title": "Chiefs' Patrick Mahomes hasn't run QB sneak since '19 season",
-          "publisher": "ESPN",
+          "url": "https://wvusports.com/news/2026/11/6/general-dac-energy-renews-mens-basketball-100-000-ticket-donation",
+          "title": "DAC Energy Renews Men’s Basketball $100,000 Ticket Donation",
+          "publisher": "West Virginia University Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScT0d_Dc_MQVYVMQKZIMTaewvHUDJ1lqvT2uLxdeVzD65HJN-JwDyProEUp7M"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3Q39TdFMk-ZT_vFH5RDjkSlsH9-bRZv5ry7IZeIsohK_p3ALk8f_bp0Bvp1w"
         },
         {
-          "url": "https://www.kansascity.com/sports/spt-columns-blogs/sam-mcdowell/article317888914.html",
-          "title": "Did the Chiefs have better options at the 1-yard line? Yes, this one",
-          "publisher": "Kansas City Star",
+          "url": "https://www.on3.com/sites/wv-sports/news/wvu-basketball-better-passing-decisions/",
+          "title": "For WVU, better passing starts with better decisions",
+          "publisher": "On3",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqmgEcgUQsIP11ymGT_HNzGmJwOctcr-BN_nL5vX61PCkxBySO3S1w-XCxKm4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXxekQKaztU5ZvkeF3m4doiQ0C7uagwZBes9Cc10gtV4iBL9TX9K_bIogTBw0"
         },
         {
-          "url": "https://arrowheadaddict.com/andy-reid-s-refusal-to-run-quarterback-sneaks-continues-to-haunt-the-chiefs-01m6emsyb9s7",
-          "title": "Andy Reid's refusal to run quarterback sneaks continues to haunt the Chiefs",
-          "publisher": "Arrowhead Addict",
+          "url": "https://www.wvnews.com/bluegoldnews/photos/wvu-basketball-burger-front/image_583f64a2-e748-4e29-a2b9-77a0f889edb3.html",
+          "title": "WVU Basketball Burger Front | West Virginia University Sports | wvnews.com",
+          "publisher": "WV News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ43mxHtfRuepQjpnpx-uSjgt6b7gv-U96L_XVDXn1uLsEqamMxNM8po5QjqUM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfIGJObCnw0Bn83mV4tVjMM-ZUdeLulMrelk0mue3OlEFdWBwZzkBjsM0qqRI"
         }
       ]
     },
     {
-      "query": "aj dybantsa stats",
-      "approx_searches": "500+",
-      "published_at": "2026-11-06T23:00:00Z",
-      "related_news_urls": [
-        "https://www.bulletsforever.com/latest-news/73884/aj-dybantsa-nba-rookie-of-the-year-rankings",
-        "https://sports.yahoo.com/video/how-aj-dybantsa-is-still-finding-a-flow-with-wizards-183457010.html",
-        "https://www.audacy.com/thefandc/video/siriusxm-s-justin-termine-on-aj-dybantsa-wizards-and-nba-rookie-performances-xbtxqzi"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTP6LIIZmmuZqGpnu6VUJ72vPUGpL97XZa1esEO1mSqH3m2QS7coEdzt9P-UNw",
-      "image_credit": "Bullets Forever",
-      "news": [
-        {
-          "url": "https://www.bulletsforever.com/latest-news/73884/aj-dybantsa-nba-rookie-of-the-year-rankings",
-          "title": "AJ Dybantsa ranked No. 5 in Rookie of the Year rankings",
-          "publisher": "Bullets Forever",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTP6LIIZmmuZqGpnu6VUJ72vPUGpL97XZa1esEO1mSqH3m2QS7coEdzt9P-UNw"
-        },
-        {
-          "url": "https://sports.yahoo.com/video/how-aj-dybantsa-is-still-finding-a-flow-with-wizards-183457010.html",
-          "title": "How AJ Dybantsa is still finding a flow with Wizards",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkoUtm6b0I4bT8cDP3kDyeqcpkvGybnJlWpG_p2BK0KkytIP_ohuuSR3MJPI4"
-        },
-        {
-          "url": "https://www.audacy.com/thefandc/video/siriusxm-s-justin-termine-on-aj-dybantsa-wizards-and-nba-rookie-performances-xbtxqzi",
-          "title": "SiriusXM's Justin Termine on AJ Dybantsa, Wizards, and NBA Rookie performances",
-          "publisher": "Audacy",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZXXMiQGwSQCit51MSqqY_kGE_AuTZ-2zugjBgppnuXt7aD0JB-Aq3MZ3Z9CU"
-        }
-      ]
-    },
-    {
-      "query": "terrance ferguson",
+      "query": "is veterans day a federal holiday",
       "approx_searches": "200+",
-      "published_at": "2026-11-06T23:00:00Z",
+      "published_at": "2026-11-06T23:40:00Z",
       "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-06/rams-rule-out-terrance-ferguson-ankle-hamstring",
-        "https://theramswire.usatoday.com/story/sports/nfl/rams/2026/11/06/rams-terrance-ferguson-injury-update-out-sunday/92648852007/",
-        "https://www.profootballrumors.com/2026/11/rams-designate-te-terrance-ferguson-rb-ronnie-rivers-for-return"
+        "https://www.dogonews.com/2026/11/6/the-history-behind-veterans-day",
+        "https://www.wyff4.com/article/veterans-day-editorial-honor-flight-vietnam/74335468",
+        "https://www.nvdaily.com/nvdaily/commentary-a-debt-of-gratitude/article_42650e43-ff3e-59d9-8884-d9e27ce6d978.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnZzNxOrL8ezQr6K1jFcJ4Gn1pFa-a0e21EkklTOrgwc4MaQzjy7Bgf98E7Xo",
-      "image_credit": "NBC Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQj-PRIVjjiDg6xp_NzWQNTYDHxkEj4w1ekXTLCwQJVdLvDJlGnfpoVz9mJo0Y",
+      "image_credit": "DOGO News",
       "news": [
         {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-06/rams-rule-out-terrance-ferguson-ankle-hamstring",
-          "title": "Rams rule out Terrance Ferguson (ankle/hamstring)",
-          "publisher": "NBC Sports",
+          "url": "https://www.dogonews.com/2026/11/6/the-history-behind-veterans-day",
+          "title": "The History Behind Veterans Day",
+          "publisher": "DOGO News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnZzNxOrL8ezQr6K1jFcJ4Gn1pFa-a0e21EkklTOrgwc4MaQzjy7Bgf98E7Xo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQj-PRIVjjiDg6xp_NzWQNTYDHxkEj4w1ekXTLCwQJVdLvDJlGnfpoVz9mJo0Y"
         },
         {
-          "url": "https://theramswire.usatoday.com/story/sports/nfl/rams/2026/11/06/rams-terrance-ferguson-injury-update-out-sunday/92648852007/",
-          "title": "Terrance Ferguson injures hamstring in practice, now ruled out vs. Commanders",
-          "publisher": "Rams Wire",
+          "url": "https://www.wyff4.com/article/veterans-day-editorial-honor-flight-vietnam/74335468",
+          "title": "Editorial: Veterans Day 2026",
+          "publisher": "WYFF",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2S5o_jSYSIhDToK7V3TndbTvWENLGvXqHe5dDhAEqNJGIBbRxbqc2b5AAcck"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4WYEShDm3Vo9bPsQU0rz-_0D3gc6PXjdxyF4Cawl6zxiRNZUmTjwzHn6GKU8"
         },
         {
-          "url": "https://www.profootballrumors.com/2026/11/rams-designate-te-terrance-ferguson-rb-ronnie-rivers-for-return",
-          "title": "Rams Designate TE Terrance Ferguson, RB Ronnie Rivers For Return",
-          "publisher": "ProFootballRumors.com",
+          "url": "https://www.nvdaily.com/nvdaily/commentary-a-debt-of-gratitude/article_42650e43-ff3e-59d9-8884-d9e27ce6d978.html",
+          "title": "Commentary: A debt of gratitude",
+          "publisher": "The Northern Virginia Daily",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlWskD9O64LKRiSMdmxuF1p3HXv0pLBS82HvLdEsJHbYpSVrJOmvwPgGSGMVc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIZxXUnSPqtSuWHNH20jsDg6ZrwmcjZiVdQESBso4O5B6Zu_iIzRGdo152AKc"
         }
       ]
     },
     {
-      "query": "pat tillman",
+      "query": "baylor basketball",
       "approx_searches": "500+",
-      "published_at": "2026-11-06T22:50:00Z",
+      "published_at": "2026-11-06T23:40:00Z",
       "related_news_urls": [
-        "https://www.pinalcentral.com/arizona_and_national_sports/pat-tillman-still-inspiring-millions-22-years-after-his-death-in-afghanistan/article_548b4ed5-3a58-591b-877b-77195ad62647.html",
-        "https://www.bozemandailychronicle.com/wire/sports/pat-tillman-still-inspiring-millions-22-years-after-his-death-in-afghanistan/article_4b935c64-81fe-5044-a5ee-9b39029dba0b.html",
-        "https://www.kokomotribune.com/news/nation_world_news/pat-tillman-still-inspiring-millions-22-years-after-his-death-in-afghanistan/article_5911f02a-be02-5f63-a07d-6a0dcc35dd6f.html"
+        "https://www.sportsgambler.com/betting-tips/basketball/arkansas-pine-bluff-golden-lions-vs-baylor-bears-prediction-odds-2026-11-06/",
+        "https://sicem365.com/s/22254/game-thread-baylor-basketball-welcomes-arkansas-pine-bluff-on-friday-evening",
+        "https://www.itemonline.com/sports/national_sports/uapb-set-for-road-matchup-with-the-baylor-bears/article_138596bb-9f27-5f9d-a226-1659fbeb91df.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToacqhFan7c5UC_JhcUJzqUW5qAmpqzyzI41eX5dtzxJfaLt375SvwI7wNtk8",
-      "image_credit": "PinalCentral.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcTGVlKEGwdNHr3lOJVvpinWqIL6JkAbvLEfubnc4yHQQb8OIz5FvirFmuxFQ",
+      "image_credit": "Sportsgambler",
       "news": [
         {
-          "url": "https://www.pinalcentral.com/arizona_and_national_sports/pat-tillman-still-inspiring-millions-22-years-after-his-death-in-afghanistan/article_548b4ed5-3a58-591b-877b-77195ad62647.html",
-          "title": "Pat Tillman still inspiring millions 22 years after his death in Afghanistan",
-          "publisher": "PinalCentral.com",
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/arkansas-pine-bluff-golden-lions-vs-baylor-bears-prediction-odds-2026-11-06/",
+          "title": "Arkansas-Pine Bluff vs Baylor Prediction, Picks & Odds | 06 Nov 2026",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToacqhFan7c5UC_JhcUJzqUW5qAmpqzyzI41eX5dtzxJfaLt375SvwI7wNtk8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcTGVlKEGwdNHr3lOJVvpinWqIL6JkAbvLEfubnc4yHQQb8OIz5FvirFmuxFQ"
         },
         {
-          "url": "https://www.bozemandailychronicle.com/wire/sports/pat-tillman-still-inspiring-millions-22-years-after-his-death-in-afghanistan/article_4b935c64-81fe-5044-a5ee-9b39029dba0b.html",
-          "title": "Pat Tillman still inspiring millions 22 years after his death in Afghanistan",
-          "publisher": "Bozeman Daily Chronicle",
+          "url": "https://sicem365.com/s/22254/game-thread-baylor-basketball-welcomes-arkansas-pine-bluff-on-friday-evening",
+          "title": "Game Thread: Baylor Basketball Welcomes Arkansas-Pine Bluff on Friday Evening",
+          "publisher": "SicEm365",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDtTzDSW6EvuvSnA4W8V8k_Bc1KIlah1CIpx6ccvNFeNU9Lg6gfcoRXOt23sg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqbBdq2dWI0BDkqK7QGjfdeS4IRlF1KbEPK5zxtdL5CS9LMfrZatW9Bzpkxqo"
         },
         {
-          "url": "https://www.kokomotribune.com/news/nation_world_news/pat-tillman-still-inspiring-millions-22-years-after-his-death-in-afghanistan/article_5911f02a-be02-5f63-a07d-6a0dcc35dd6f.html",
-          "title": "Pat Tillman still inspiring millions 22 years after his death in Afghanistan",
-          "publisher": "Kokomo Tribune",
+          "url": "https://www.itemonline.com/sports/national_sports/uapb-set-for-road-matchup-with-the-baylor-bears/article_138596bb-9f27-5f9d-a226-1659fbeb91df.html",
+          "title": "UAPB set for road matchup with the Baylor Bears",
+          "publisher": "itemonline.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSrfnFZnunIMqnk-ugsGEVHZymwMfJd4nO17anBztThbFjNVLpJq5DpKjQOlh0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFblO5zWNNlO2weXGvtNXcd74hNn4lhWQydw9VDPv1FXLAGHurZPE8okAT1w"
+        }
+      ]
+    },
+    {
+      "query": "unc basketball schedule",
+      "approx_searches": "200+",
+      "published_at": "2026-11-06T23:40:00Z",
+      "related_news_urls": [
+        "https://goheels.com/news/2026/11/5/womens-soccer-munson-hat-trick-lifts-womens-soccer-past-louisville-3-2",
+        "https://gocards.com/news/2026/11/5/womens-soccer-no-24-louisville-battles-no-2-north-carolina-in-narrow-defeat",
+        "https://www.whas11.com/article/sports/football/kickoff-time-tv-designation-announced-for-louisville-at-north-carolina/417-71ffc2e6-1013-4c59-8f9e-f15fee052842"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLLxwLo8qbNqqcDx0KWxrktPnCvR5Q_mJHmChvxMoho_pGfFLS5JDiSWj6A1g",
+      "image_credit": "University of North Carolina Athletics",
+      "news": [
+        {
+          "url": "https://goheels.com/news/2026/11/5/womens-soccer-munson-hat-trick-lifts-womens-soccer-past-louisville-3-2",
+          "title": "Munson Hat Trick Lifts Women’s Soccer Past Louisville, 3-2 - University of North Carolina Athletics",
+          "publisher": "University of North Carolina Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLLxwLo8qbNqqcDx0KWxrktPnCvR5Q_mJHmChvxMoho_pGfFLS5JDiSWj6A1g"
+        },
+        {
+          "url": "https://gocards.com/news/2026/11/5/womens-soccer-no-24-louisville-battles-no-2-north-carolina-in-narrow-defeat",
+          "title": "No. 24 Louisville Battles No. 2 North Carolina in Narrow Defeat",
+          "publisher": "gocards.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqPaItw6l1939O3bKTlHQKMVxbSQv3Nv38P2K1d4GCuB-6hoMUubHuEfwz5Q4"
+        },
+        {
+          "url": "https://www.whas11.com/article/sports/football/kickoff-time-tv-designation-announced-for-louisville-at-north-carolina/417-71ffc2e6-1013-4c59-8f9e-f15fee052842",
+          "title": "Kickoff time, TV designation announced for Louisville at North Carolina",
+          "publisher": "WHAS11",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVplJb4BnxWSXaAV4MWNDyCOcOj3ifbXi-uBfoxt-PZdjRkPr-GLW4mbkBO6M"
+        }
+      ]
+    },
+    {
+      "query": "south florida vs east carolina",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-06T23:30:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/east-carolina/article/ecu-football-final-picks-and-bold-predictions-for-game-against-usf-292241183/",
+        "https://collegefootballnews.com/college-football/usf-vs-east-carolina-prediction-2026",
+        "https://www.sportsgambler.com/betting-tips/ncaaf/south-florida-bulls-vs-east-carolina-pirates-prediction-odds-2026-11-06/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2rk5ngMRe706UxU2efc0dpg9Prw9RdoPrfpMpNNafSEUZJ6NbAir1728z7zM",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/east-carolina/article/ecu-football-final-picks-and-bold-predictions-for-game-against-usf-292241183/",
+          "title": "Final Picks, and Bold Predictions, for ECU’s Game Against USF",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2rk5ngMRe706UxU2efc0dpg9Prw9RdoPrfpMpNNafSEUZJ6NbAir1728z7zM"
+        },
+        {
+          "url": "https://collegefootballnews.com/college-football/usf-vs-east-carolina-prediction-2026",
+          "title": "USF vs East Carolina Prediction: Who Keeps Their AAC Hopes Alive?",
+          "publisher": "College Football News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqqNeABW8q2WQp1KMR3Km0L8OCBzq29rN6UPKN9tBlzOzsOa4MPyQRwkJQgIY"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/ncaaf/south-florida-bulls-vs-east-carolina-pirates-prediction-odds-2026-11-06/",
+          "title": "South Florida vs East Carolina Prediction, Picks & Odds | 06 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRS2TFT-SCQ7_VYEX1WO_fnCL3T7ysdJWupxfl0HLLYYTcYmRjR2z4N10eCs0"
+        }
+      ]
+    },
+    {
+      "query": "purdue basketball",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-06T23:30:00Z",
+      "related_news_urls": [
+        "https://www.indystar.com/story/sports/college/purdue/2026/11/06/purdue-basketball-toughness-vs-gonzaga-rebounding-defend-without-fouling-valparaiso/92558061007/",
+        "https://sports.yahoo.com/articles/purdue-basketball-score-tonight-live-193043544.html",
+        "https://www.foxsports.com/stories/mens-college-basketball/how-watch-valparaiso-vs-purdue-tv-channel-live-stream-time-nov-6-2026"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFZYfyAYjiiYd4v4HtyV5ME6jCZMqxwD8dD4FwinhzRHbcrTqzcTQp5wEAchM",
+      "image_credit": "IndyStar",
+      "news": [
+        {
+          "url": "https://www.indystar.com/story/sports/college/purdue/2026/11/06/purdue-basketball-toughness-vs-gonzaga-rebounding-defend-without-fouling-valparaiso/92558061007/",
+          "title": "Purdue basketball has a defining trait it must refine against Valpo and beyond",
+          "publisher": "IndyStar",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFZYfyAYjiiYd4v4HtyV5ME6jCZMqxwD8dD4FwinhzRHbcrTqzcTQp5wEAchM"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/purdue-basketball-score-tonight-live-193043544.html",
+          "title": "Where to watch Purdue basketball score tonight live vs Valparaiso: Score, Purdue roster, radio",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScSEvHImlcI1fVMHQFnw535oL-POokCTO-fpcoQ_wgTGtJS0g_lKc4Iqbtx0Q"
+        },
+        {
+          "url": "https://www.foxsports.com/stories/mens-college-basketball/how-watch-valparaiso-vs-purdue-tv-channel-live-stream-time-nov-6-2026",
+          "title": "How to Watch Valparaiso vs. Purdue: TV Channel, Live Stream, Time",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLat8MvHF12ONDpGUT-JCf3SMPgg5TwGHADzykQpKL2zxQHoAP6v6vHbuWzDo"
+        }
+      ]
+    },
+    {
+      "query": "muerte",
+      "approx_searches": "500+",
+      "published_at": "2026-11-06T23:30:00Z",
+      "related_news_urls": [
+        "https://www.univision.com/famosos/muere-futbolista-jesus-de-miguel-portero-jesus-owono-dejar-futbol-familia-ataques",
+        "https://www.bbc.com/mundo/articles/ck4g1l0064q9o",
+        "https://www.clarin.com/deportes/revelo-informe-preliminar-autopsia-jesus-miguel-futbolista-murio-espana_0_FYLpYk2KHV.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwRPJghajnSHNgxvTQlG9WPW4Pk9TlcES78b2ZXmHTCEOTLljLG4F0gH6p9H4",
+      "image_credit": "Univision",
+      "news": [
+        {
+          "url": "https://www.univision.com/famosos/muere-futbolista-jesus-de-miguel-portero-jesus-owono-dejar-futbol-familia-ataques",
+          "title": "Hermanito de Jesús Owono es llamado “asesino” tras muerte de Jesús de Miguel: el portero “está muy afectado”",
+          "publisher": "Univision",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwRPJghajnSHNgxvTQlG9WPW4Pk9TlcES78b2ZXmHTCEOTLljLG4F0gH6p9H4"
+        },
+        {
+          "url": "https://www.bbc.com/mundo/articles/ck4g1l0064q9o",
+          "title": "\"Están siendo los días más difíciles de mi vida\": la desconsolada carta del portero Owono tras el encontronazo que causó la muerte al jugador Jesús de Miguel",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcShGnAVRlSGJMAM85IrqEexQfFTaiL9l0-RbY91NIcOW09rBhaOiYafUwUsc"
+        },
+        {
+          "url": "https://www.clarin.com/deportes/revelo-informe-preliminar-autopsia-jesus-miguel-futbolista-murio-espana_0_FYLpYk2KHV.html",
+          "title": "Qué reveló el informe preliminar de la autopsia a Jesús de Miguel, el futbolista que murió en España",
+          "publisher": "Clarin.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYndYkEoihoMplU3c5wTbziEDF_bMRZ04fCf2tUSmljc3sEncafF1-9jLvkRg"
+        }
+      ]
+    },
+    {
+      "query": "cuba",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-06T23:30:00Z",
+      "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-06/trump-s-latest-swing-at-cuba-puts-french-chinese-firms-in-crosshairs",
+        "https://www.state.gov/releases/office-of-the-spokesman/2026/11/further-sanctions-on-the-cuban-regimes-foreign-military-support-and-illicit-revenue-networks",
+        "https://thehill.com/policy/defense/6202991-rubio-broadens-cuba-sanctions-crude-oil/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxi0NPMbbQO-FR4SfLAAWDjM0KcOhduVKFSbEEfOeg6Q0HRjnnNsds7OUxi_w",
+      "image_credit": "Bloomberg.com",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-06/trump-s-latest-swing-at-cuba-puts-french-chinese-firms-in-crosshairs",
+          "title": "Trump’s Latest Swing at Cuba Puts French, Chinese Firms in Crosshairs",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxi0NPMbbQO-FR4SfLAAWDjM0KcOhduVKFSbEEfOeg6Q0HRjnnNsds7OUxi_w"
+        },
+        {
+          "url": "https://www.state.gov/releases/office-of-the-spokesman/2026/11/further-sanctions-on-the-cuban-regimes-foreign-military-support-and-illicit-revenue-networks",
+          "title": "Further Sanctions on the Cuban Regime’s Foreign Military Support and Illicit Revenue Networks",
+          "publisher": "U.S. Department of State (.gov)",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKAjWbfxPJ7_im77huuw2T96wnkqNeq6F7alhrN2YAHRWtwKU4p1cIi1GdsNk"
+        },
+        {
+          "url": "https://thehill.com/policy/defense/6202991-rubio-broadens-cuba-sanctions-crude-oil/",
+          "title": "Rubio places additional sanctions on Cuba, targeting ‘illicit’ shipping network",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTAA3-Ar8kt80Cb-WnrXfWXA193V8MaLQ7Q7gVX9I9TdR9-2I-4nEcy8oqZjI"
         }
       ]
     }
