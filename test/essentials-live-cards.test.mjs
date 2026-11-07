@@ -26,7 +26,7 @@ test('both products and companion OTC essentials are eligible for reviewed card 
  const {cards,held}=prepareEssentialsBatch(ESSENTIALS_SEED,{today:'2026-11-07'});
  assert.equal(cards.length,8);
  assert.deepEqual(held,[]);
- assert.equal(new Set(cards.map(c=>c.id)).size,5);
+ assert.equal(new Set(cards.map(c=>c.id)).size,cards.length);
  assert.ok(cards.every(c=>!c.price&&!c.stock&&!c.trendingScore&&!c.sponsorClaim));
 });
 test('up to 120 reviewed records can be prepared without guessing any extra products',()=>{
