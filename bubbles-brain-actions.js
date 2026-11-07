@@ -32,7 +32,10 @@ function firstPartyRepairTarget(utterance){
  if(/\b(?:moltnook|widget\s*phi|widgetphi|record\s?b|tv-database|code\s*phi|omni\s*phi)\b/i.test(command))return null;
  if(/\b(?:both|two|multiple|all)\b.{0,50}\b(?:repos?|repositories)\b/i.test(command))return null;
  const firstParty=/\b(?:bubbles|twitter)\b|\bx[\s/-]+(?:quick\s*card|posting|feed|timeline|spaces)\b|\b(?:infinity|oracle)\s+carousel\b/i;
- if(!firstParty.test(command))return null;
+ // QuantaPhi owns the artist music Quick Cards. A rock-player repair
+ // must not fall through to an unrelated generic INFINITY code runner.
+ const musicCard=/\b(?:rock\s+music\s+(?:player|buttons?|radio)|(?:steve\s+miller|pink\s+floyd|classic\s+rock|infinity\s+radio)\b.{0,80}\b(?:radio|player|buttons?|quick\s*card|playback|music))\b/i;
+ if(!firstParty.test(command)&&!musicCard.test(command))return null;
  const verb='(?:fix|repair|finish|complete|restore|debug|update|upgrade|build|create|wire|connect|replace|correct|implement|integrate|hook\\s+up)';
  const start=new RegExp('^(?:(?:please|hey\\s+bubbles|bubbles)[\\s,:]+)*'+verb+'\\b','i');
  const directive=new RegExp('^(?:(?:please|hey\\s+bubbles|bubbles)[\\s,:]+)?(?:i\\s+(?:need|want)\\s+(?:you\\s+)?to|you\\s+(?:need|have)\\s+to|(?:can|could|would|will)\\s+you|we\\s+need\\s+to)\\s+'+verb+'\\b','i');
