@@ -40,7 +40,8 @@ test('all source playback remains in its own card and stops on Oracle switching'
  const integration=read('tv-501-expansion.mjs');
  assert.match(integration,/mountTvSourceQuickCards\(host,TV_EXPANSION_CHANNELS\)/);
  assert.doesNotMatch(integration,/grid\.appendChild\(el\('article','channelphi-card channelphi-source/);
- assert.match(builder,/insertBefore\(card,host\)/);
+ assert.match(builder,/document\.getElementById\(id\)/);
+ assert.doesNotMatch(builder,/insertBefore\(card,host\)/);
  assert.match(builder,/youtube-nocookie\.com\/embed\//);
  assert.match(builder,/quantaphi:tv-playback-request/);
  assert.match(builder,/oracle:card-deactivated/);
@@ -59,5 +60,6 @@ test('Oracle Octaves light treatment and one-screen playback are available on ph
  assert.match(css,/@media\s*\(max-width:\s*430px\)/);
  const home=read('index.html');
  assert.match(home,/id="tvQuantExpansion"/);
+ for(const id of Object.values(roots))assert.ok(home.includes('id="'+id+'"'),'missing stable card anchor '+id);
  assert.match(home,/tv-501-expansion\.mjs/);
 });
