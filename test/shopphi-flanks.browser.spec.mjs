@@ -40,7 +40,7 @@ test('Android gets two legible large interactive companion tiles with working Ne
  await expect(page.locator('.shopphi-flank-position')).toHaveText('3–4 of 6');
  const after=await tiles.first().getAttribute('href');
  expect(after).not.toBe(first);
- await page.getByRole('button',{name:'‹ Previous'}).click();
+ await page.getByRole('button',{name:'‹ Previous',exact:true}).click();
  await expect(page.locator('.shopphi-flank-position')).toHaveText('1–2 of 6');
 });
 test('404 paid ad service does not create fake sponsored ads or six empty boxes',async({page})=>{
