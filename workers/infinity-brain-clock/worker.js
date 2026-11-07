@@ -535,7 +535,7 @@ export class BrainClock extends DurableObject{
  }
  async reconcilePendingWork(){
   const now=Date.now(),summary={recovered:0,stale:0,conflicts:0};
-  const rows=await this.env.WORK_DB.prepare("SELECT id,status,context_json FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
+  const rows=await readRunnerQueue(this.env.WORK_DB,{ownerHash:this.env.WRITER_OWNER_HASH,order:'oldest'});
   for(const row of rows.results||[]){
    let context;try{context=JSON.parse(row.context_json)}catch{continue}
    let changed=false,recovered=0,stale=0;
@@ -573,9 +573,7 @@ export class BrainClock extends DurableObject{
   if(Number(await this.ctx.storage.get('deferred-recovery-next-at')||0)>now)
    return {state:'recovery_cooldown'};
   await this.ctx.storage.put('deferred-recovery-next-at',now+DEFERRED_REVIEW_INTERVAL_MS);
-  const rows=await this.env.WORK_DB.prepare(
-   "SELECT id,created_at,status,request,context_json FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100"
-  ).bind(this.env.WRITER_OWNER_HASH).all();
+  const rows=await readRunnerQueue(this.env.WORK_DB,{ownerHash:this.env.WRITER_OWNER_HASH,order:'oldest'});
   for(const row of rows.results||[]){
    let context;try{context=JSON.parse(row.context_json)}catch{continue}
    for(const job of context.color_jobs||[]){
