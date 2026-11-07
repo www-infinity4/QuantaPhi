@@ -50,6 +50,10 @@ on:
       - 'quanta-feed.*'
       - 'quanta-feed-rank.mjs'
       - 'power-chain-follow.mjs'
+      - 'essentials-card-batch.mjs'
+      - 'essentials-quick-cards.mjs'
+      - 'essentials-quick-cards.css'
+      - 'test/essentials-batch.test.mjs'
       - 'test/power-chain-follow.*'
       - 'infinity-accepted*'
       - 'infinity-affiliates*'
@@ -141,6 +145,8 @@ jobs:
           node --check quanta-card-experience.mjs
           node --check oracle-card-deck.js
           node --check power-chain-follow.mjs
+          node --check essentials-card-batch.mjs
+          node --check essentials-quick-cards.mjs
           node --check quanta-card-live-source.mjs
           node --check quanta-marketplace-carousel.mjs
           node --check design-lab/power-chain-core.mjs
@@ -200,7 +206,7 @@ jobs:
           python3 -m unittest discover -s test -p 'test_world_series_sync.py' -v
           node --test test/world-series-news.test.mjs test/church-iam-card.test.mjs
       - name: Check original-card preservation
-        run: node --test test/oracle-card-deck.test.cjs test/power-chain-follow.test.mjs
+        run: node --test test/oracle-card-deck.test.cjs test/power-chain-follow.test.mjs test/essentials-batch.test.mjs
       - name: Install Chromium for live browser QA
         run: |
           npm install --no-save @playwright/test@1.56.1
