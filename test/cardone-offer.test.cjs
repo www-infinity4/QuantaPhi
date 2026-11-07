@@ -9,5 +9,5 @@ test('Cardone standalone card is unpublished and no longer indexed',()=>{
 test('other interactive cards are retained',()=>{
  assert.match(read('index.html'),/id="oracleCardDeck"/);
  assert.match(read('index.html'),/id="pixieStoryCard"/);
- assert.match(read('oracle-card-deck.js'),/stage\\.append\\(entry\\.node\\)/);
+ assert.match(read('oracle-card-deck.js'),/stage\.append\(entry\.node\)/);
 });
