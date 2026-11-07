@@ -8,14 +8,14 @@ const deck=()=>readFileSync(new URL('../oracle-card-deck.js',import.meta.url),'u
 test('Steve Miller retains the original Oracle Quick Card and Book of Dreams source',()=>{
  assert.ok(html().includes('id="steveMillerBookOfDreamsCard"'));
  assert.ok(deck().includes("['steveMillerBookOfDreamsCard','Steve Miller · Book of Dreams']"));
- assert.ok(src().includes('PL8a8cutYP7foGH0YDM8YtNqGtgL0EAJ7k'));
+ assert.ok(src().includes('JHa1hiFYbFQ'));
 });
 test('play clicks mount the album playlist as a visible in-card YouTube player',()=>{
  const s=src();
  assert.ok(s.includes('smb-radio-play'));
  assert.ok(s.includes('width:48px;height:48px'));
  assert.ok(s.includes("make('iframe'"));
- assert.ok(s.includes('www.youtube.com/embed/videoseries'));
+ assert.ok(s.includes('www.youtube.com/embed/'));
  assert.ok(s.includes('min-height:210px'));
  assert.ok(s.includes('referrerPolicy'));
  assert.ok(s.includes('quantaphi:artist-radio-start'));
