@@ -10,7 +10,7 @@ const deck=readFileSync(new URL('../oracle-card-deck.js',import.meta.url),'utf8'
 const tools=readFileSync(new URL('../quanta-card-experience.mjs',import.meta.url),'utf8');
 test('all twenty-two provider quick cards exist, have unique IDs and real HTTPS original links',()=>{
  assert.equal(QUICK_CARD_SOURCES.length,22);
- assert.equal(new Set(QUICK_CARD_SOURCES.map(c=>c.id)).size,20);
+ assert.equal(new Set(QUICK_CARD_SOURCES.map(c=>c.id)).size,22);
  for(const card of QUICK_CARD_SOURCES){
   assert.ok(validSourceCard(card),card.id);
   assert.equal(findSourceCard(card.id),card);
