@@ -5,7 +5,7 @@
  */
 import {
  DEVELOPMENT_TOPICS,OFFICIAL_DEVELOPER_SOURCES,buildGithubSearchURL,
- summarizeGithubPage,classifyProposal,buildReviewIssueURL,existingCapabilityFor
+ summarizeGithubPage,validateIndexedResource,classifyProposal,buildReviewIssueURL,existingCapabilityFor
 } from './developer-discovery-core.mjs';
 
 const el=(tag,cls,text)=>{
@@ -180,6 +180,19 @@ export function mountDeveloperDiscovery({root,stage,addResources,showIndex}){
  const initial=[WORKSHOP,...OFFICIAL_DEVELOPER_SOURCES];
  initial.forEach(x=>seen.add(x.id));
  addResources(initial);
+ // An approved GitHub data-only PR can publish thousands of *source records*.
+ // The snapshot is not code and never means those repositories can be executed.
+ void fetch('/data/developer-source-catalog.json',{cache:'no-store'}).then(async response=>{
+  if(!response.ok)return;
+  const snapshot=await response.json();
+  if(snapshot?.schema_version!==1||!Array.isArray(snapshot.items))return;
+  const good=snapshot.items.map(validateIndexedResource).filter(Boolean)
+   .filter(x=>!seen.has(x.id)).slice(0,1800);
+  good.forEach(x=>seen.add(x.id));
+  addResources(good);
+  if(page===0&&!busy&&good.length)
+   sourceStatus.textContent='Indexed '+good.length.toLocaleString()+' genuine GitHub source cards for review. Browse with the arrows or search more. No third-party code is running.';
+ }).catch(()=>{/* Only the real official cards appear if no reviewed snapshot exists. */});
  let lastCategory=category.value||DEVELOPMENT_TOPICS[0].id;
  async function searchPage(reset){
   if(busy)return;
