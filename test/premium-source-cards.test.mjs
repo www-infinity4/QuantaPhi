@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {PREMIUM_CARDS,sourceURL,normalizeResults} from '../premium-source-cards.mjs';
+import {PREMIUM_CARDS,sourceURL,normalizeResults,attachArticleImages} from '../premium-source-cards.mjs';
 test('every added collector/source card has a unique fixed official HTTPS destination',()=>{
  assert.equal(PREMIUM_CARDS.filter(x=>!x.id.startsWith('denver-')).length,17);
  assert.equal(PREMIUM_CARDS.filter(x=>x.id.startsWith('denver-')).length,8);
@@ -38,4 +38,16 @@ test('Coin World source results preserve genuine story pictures from image_url',
  assert.equal(rows[0].image,'https://assets.coinworld.com/news/real-story.jpg');
  assert.equal(rows[0].date,'2026-11-07');
  assert.equal(rows[0].description,'Original article excerpt');
+});
+
+test('Coin World images attach only to matching publisher stories despite tracking parameters',()=>{
+ const stories=[
+  {url:'https://www.coinworld.com/news/us-coins/real-story?utm_source=search',title:'Real story',image:null},
+  {url:'https://www.coinworld.com/news/us-coins/different-story',title:'Different story',image:null}
+ ];
+ const verifiedImage=[{url:'https://www.coinworld.com/news/us-coins/real-story',image:'https://assets.coinworld.com/news/real-story.jpg'}];
+ const merged=attachArticleImages(stories,verifiedImage);
+ assert.equal(merged[0].image,'https://assets.coinworld.com/news/real-story.jpg');
+ assert.equal(merged[1].image,null,'Do not attribute a photo to the wrong news story');
+ assert.equal(stories[0].image,null,'Do not mutate publisher search records');
 });
