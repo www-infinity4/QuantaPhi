@@ -1,0 +1,39 @@
+/* Oracle Octaves developer rail: one real full-size creator at a time. */
+.developer-carousel{margin:26px auto 18px;max-width:100%;padding:16px;border:1px solid #b7a6b7;border-radius:22px;background:linear-gradient(145deg,#292138,#4b334b 75%,#725143);color:#fff;box-shadow:0 12px 28px #24162d2b}
+.developer-carousel *{box-sizing:border-box}
+.developer-head small{display:block;color:#ebd8b7;font-weight:850;letter-spacing:.08em;font-size:13px}
+.developer-head h2{font-size:clamp(22px,5.5vw,30px);line-height:1.17;margin:7px 0}
+.developer-head p{font-size:16px;line-height:1.48;color:#f3eafa;margin:0 0 14px}
+.developer-controls{display:grid;grid-template-columns:50px minmax(0,1fr) 50px;align-items:center;gap:7px}
+.developer-controls button{min-height:48px;min-width:48px;border-radius:13px;background:#f3eefa;color:#2d2233;font-size:28px;padding:0;border:1px solid #d7c8d8}
+.developer-controls button:disabled{opacity:.4}
+.developer-controls strong{text-align:center;font-size:18px;line-height:1.25;min-width:0;overflow-wrap:anywhere}
+.developer-card-picker{display:flex;overflow-x:auto;gap:8px;padding:10px 1px 13px;scrollbar-width:thin;overscroll-behavior-x:contain}
+.developer-card-picker button{min-height:44px;flex:0 0 auto;padding:9px 12px;border-radius:999px;background:#faf6fc;color:#33253e;font-size:14px;border:1px solid #ded0df;font-weight:850}
+.developer-card-picker button[aria-pressed="true"]{background:#e4c897;color:#302010;border-color:#fff}
+.developer-carousel :is(button,a):focus-visible{outline:3px solid #ffd57f;outline-offset:3px}
+.developer-card-stage{background:#fff;color:#241d29;border-radius:17px;padding:10px;overflow-wrap:anywhere;min-width:0}
+.developer-card-stage>*{width:100%;max-width:100%;margin:0 auto}
+.developer-card-stage button,.developer-card-stage a{min-height:44px}
+.developer-card-bank{display:none!important}
+.developer-card-status{margin:10px 2px 0;color:#f4e9f5;line-height:1.45;font-size:15px}
+.developer-quickcard{background:#fff;color:#2a2328;border-radius:15px}
+.developer-quickcard-hero{display:flex;align-items:center;gap:13px;padding:12px}
+.developer-quickcard-hero img{width:86px;height:86px;max-width:26%;object-fit:cover;border-radius:14px;background:#f0eafa}
+.developer-quickcard-hero h3{font-size:21px;margin:0 0 4px}
+.developer-quickcard-hero p{font-size:15px;line-height:1.4;margin:0}
+.developer-quickcard-frame{width:100%;min-height:800px;border:0;display:block;background:#fff;border-radius:12px}
+.developer-quickcard-fallback{padding:11px 12px;color:#4d4153;font-size:15px;margin:0}
+.developer-quickcard-fallback a{display:inline-flex;align-items:center;color:#4c2679;text-decoration:underline;font-weight:750}
+.developer-jump{margin:12px auto 18px;max-width:760px;text-align:center;font-size:16px}
+.developer-jump a{display:inline-flex;align-items:center;min-height:44px;padding:10px 17px;border:1px solid #d3b49a;background:#fff6ed;border-radius:13px;color:#493020;font-weight:850;text-decoration:none}
+@media(max-width:390px){
+ .developer-carousel{padding:10px;border-radius:17px}
+ .developer-card-stage{padding:6px}
+ .developer-quickcard-hero{align-items:flex-start}
+ .developer-quickcard-hero img{width:65px;height:65px}
+ .developer-controls{grid-template-columns:46px minmax(0,1fr) 46px}
+ .developer-controls strong{font-size:16px}
+ .developer-card-picker button{font-size:14px}
+}
+@media(prefers-reduced-motion:reduce){.developer-carousel *{scroll-behavior:auto}}
