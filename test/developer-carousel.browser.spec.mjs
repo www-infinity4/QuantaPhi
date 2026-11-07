@@ -39,14 +39,14 @@ test('Developer Quick Card publishes only through the real publisher request flo
    body:JSON.stringify({ok:true,cardUrl:base+'/cards/developer-fixture-12345',slug:'developer-fixture-12345'})});
  });
  await page.goto(base+'/?card=quickCardBuilderInline',{waitUntil:'domcontentloaded'});
- const stage=page.locator('#developerCardStage'),form=stage.frameLocator('iframe').locator('#quickCardCreate');
+ const stage=page.locator('#developerCardStage'),form=stage.frameLocator('iframe[title="QuantaPhi original Quick Card publisher"]').locator('#quickCardCreate');
  await expect(form).toBeVisible({timeout:20000});
  await form.locator('[name="title"]').fill('Original Radio Workshop');
  await form.locator('[name="website"]').fill('https://example.org/radio');
  await form.locator('[name="description"]').fill('Original workshop with historical radio parts and verified sources.');
  await form.locator('[name="interactionRequest"]').fill('Search original repair parts and show official source links.');
- await stage.frameLocator('iframe').locator('#qcpPublish').click();
- await expect(stage.frameLocator('iframe').locator('#qcpResult')).toContainText('Card published');
- await expect(stage.frameLocator('iframe').locator('#qcpResult')).toContainText('Placement in the homepage rotation requires review');
+ await stage.frameLocator('iframe[title="QuantaPhi original Quick Card publisher"]').locator('#qcpPublish').click();
+ await expect(stage.frameLocator('iframe[title="QuantaPhi original Quick Card publisher"]').locator('#qcpResult')).toContainText('Card published');
+ await expect(stage.frameLocator('iframe[title="QuantaPhi original Quick Card publisher"]').locator('#qcpResult')).toContainText('Placement in the homepage rotation requires review');
  expect(attempts).toBe(1);
 });
