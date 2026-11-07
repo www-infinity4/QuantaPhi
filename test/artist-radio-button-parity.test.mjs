@@ -27,3 +27,11 @@ test('Pink Floyd has its own clearly labeled radio button and a multi-recording 
   assert.ok(catalog.includes(id),'verified Pink Floyd official video '+id);
  assert.ok(rock.includes('quantaphi:artist-radio-start'),'artist focus pauses Infinity radio');
 });
+
+test('homepage and imported catalog change cache versions with the radio fixes',()=>{
+ const page=source('index.html');
+ const classic=source('classic-rock-official-card.mjs');
+ assert.ok(page.includes('/steve-miller-book-of-dreams.js?v=20261106-artist-radio3'));
+ assert.ok(page.includes('/classic-rock-official-card.mjs?v=20261106-artist-radio3'));
+ assert.ok(classic.includes("./classic-rock-official-catalog.mjs?v=20261106-artist-radio3"));
+});
