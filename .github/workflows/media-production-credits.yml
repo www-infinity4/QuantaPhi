@@ -4,6 +4,8 @@ on:
     paths:
       - 'phi-channel-cards.js'
       - 'media-star-creator.js'
+      - 'media-star-creator.css'
+      - 'test/media-star-creator-two-ledgers.test.cjs'
       - 'index.html'
       - 'test/media-production-credits.test.cjs'
       - '.github/workflows/media-production-credits.yml'
@@ -12,6 +14,8 @@ on:
     paths:
       - 'phi-channel-cards.js'
       - 'media-star-creator.js'
+      - 'media-star-creator.css'
+      - 'test/media-star-creator-two-ledgers.test.cjs'
       - 'index.html'
       - 'test/media-production-credits.test.cjs'
       - '.github/workflows/media-production-credits.yml'
@@ -26,4 +30,4 @@ jobs:
       - run: |
           node --check media-star-creator.js
           node --check phi-channel-cards.js
-          node --test test/media-production-credits.test.cjs test/phi-channel-cards.test.cjs
+          node --test test/media-production-credits.test.cjs test/phi-channel-cards.test.cjs test/media-star-creator-two-ledgers.test.cjs
