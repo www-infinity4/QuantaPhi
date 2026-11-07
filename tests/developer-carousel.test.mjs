@@ -48,8 +48,8 @@ test('Developer carousel is picture-led Oracle Octaves rather than a permanent f
  assert.match(render,/developer-editor/,'original creator stays embedded, not linked out');
  assert.match(render,/developer-card-choice/,'carousel keeps direct navigation');
  assert.match(css,/developer-cover-art/,'actual cover art has dedicated framing');
- assert.match(css,/developer-editor\\[hidden\\]/,'inactive form stays out of the initial card view');
+ assert.ok(css.includes('.developer-editor[hidden]'),'inactive form stays out of the initial card view');
  assert.match(css,/aspect-ratio:/,'portrait artwork retains an intentional visual ratio');
- assert.doesNotMatch(css,/background:linear-gradient\\(145deg,#292138/,'do not restore the old full-width purple regression panel');
+ assert.ok(!css.includes('background:linear-gradient(145deg,#292138'),'do not restore the old full-width purple regression panel');
  assert.match(catalog,/image:/,'each card has original-site media');
 });
