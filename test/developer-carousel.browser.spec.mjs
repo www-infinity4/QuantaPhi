@@ -52,7 +52,7 @@ test('Developer Quick Card publishes only through the real publisher request flo
  });
  await page.goto(base+'/?card=quickCardBuilderInline',{waitUntil:'domcontentloaded'});
  const stage=page.locator('#developerCardStage'),form=stage.frameLocator('iframe[title="QuantaPhi original Quick Card publisher"]').locator('#quickCardCreate');
- await expect(stage.locator('.developer-cover-image')).toBeVisible();
+ await expect(stage.locator('.developer-slide:not([hidden]) .developer-cover-image')).toBeVisible();
  await expect(stage.locator('.developer-slide:not([hidden]) .developer-studio-toggle')).toHaveAttribute('aria-expanded','true');
  await expect(form).toBeVisible({timeout:20000});
  await form.locator('[name="title"]').fill('Original Radio Workshop');
