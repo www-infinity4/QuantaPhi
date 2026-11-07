@@ -22,7 +22,7 @@ test('For You explicitly invokes the authenticated same-origin Quant AI decision
   assert.ok(body.candidates.some(c=>c.id==='pink-floyd-radio'));
   assert.equal(body.candidates.some(c=>c.id==='unsafe'),false);
   assert.deepEqual(body.seen_ids,['classic-rock-songs']);
-  return {ok:true,async json(){return {ok:true,ranked:[{id:'pink-floyd-radio',score:90},{id:'forged',score:500}]}}};
+  return {ok:true,async json(){return {ok:true,placement_authorized:false,ranked:[{id:'pink-floyd-radio',score:90},{id:'forged',score:500}]}}};
  }};
  const result=await loadOwnOrangeScores(bridge,candidates,{title:'Pink Floyd radio'},['classic-rock-songs']);
  assert.equal(calls,1);
