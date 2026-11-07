@@ -3916,9 +3916,17 @@ async function getOwnerToken(){
 }
 async function verifiedOwnerHeaders(){
  if(embedded)throw Error('Guest embed bubbles cannot access the owner Robot Brain.');
- if(ownerReady&&ownerHeaders)return ownerHeaders;
- if(!window.QuantaBrainOwner?.ready)throw Error('Robot Brain owner verification is unavailable on this page.');
- const headers=await Promise.race([window.QuantaBrainOwner.ready,new Promise(resolve=>setTimeout(()=>resolve(null),10000))]);
+ const bridge=window.QuantaBrainOwner;
+ if(ownerReady&&ownerHeaders){
+  const current=typeof bridge?.currentHeaders==='function'?bridge.currentHeaders():ownerHeaders;
+  if(current?.Authorization){ownerHeaders=current;return current;}
+  ownerReady=false;ownerHeaders=null;
+  throw Error('Robot Brain owner session expired; owner tools paused. Chat remains available.');
+ }
+ if(!bridge?.ready)throw Error('Robot Brain owner verification is unavailable on this page.');
+ const proposed=typeof bridge.currentHeaders==='function'?bridge.currentHeaders():null;
+ const waited=proposed||await Promise.race([bridge.ready,new Promise(resolve=>setTimeout(()=>resolve(null),10000))]);
+ const headers=typeof bridge.currentHeaders==='function'?bridge.currentHeaders():waited;
  if(!headers?.Authorization){ownerMode.textContent='Owner tools: not yet verified · say “connect owner tools” for details.';throw Error('Verify your owner Unified Wallet on QuantaPhi. No job was submitted.')}
  ownerHeaders=headers;ownerReady=true;workButton.hidden=nativeOverlay;
  ownerMode.textContent='Signed in to Bubbles & Robot Brain · Wallet verified';syncOwnerIdentity();
@@ -3944,6 +3952,16 @@ async function connectOwner(){
  // Populate actual owner repositories without making the owner open another page.
  if(!repositoryCatalogComplete&&!repositoryCatalogLoading)void loadRepositoryCatalog();
 }
+// Provider OAuth changes are independent of the Robot Brain owner session.
+// Never keep a stale privileged header or blank the current conversation.
+window.addEventListener('bubbles:owner-lost',()=>{
+ ownerReady=false;ownerHeaders=null;
+ ownerMode.textContent='Owner session needs verification · chat and history remain available.';
+ workButton.hidden=true;
+ workStatus.textContent='Owner-only operations paused. Reconnect the existing wallet; Cloudflare sign-in is separate.';
+ if(chatGate){chatGate.dataset.ownerVerified='false';chatGate.hidden=true;}
+});
+window.addEventListener('bubbles:owner-restored',()=>void connectOwner());
 // Two Red macro sectors share an authenticated, purpose-scoped channel.
 // Red-Bubbles observes, acknowledges and delegates approved actions; Red-Brain
 // records dispatch and signed runner receipts. Neither channel grants itself
