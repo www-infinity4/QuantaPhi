@@ -1,0 +1,64 @@
+name: Innovations picture-first carousel
+on:
+  pull_request:
+    paths:
+      - 'innovations/**'
+      - 'innovations-carousel-core.mjs'
+      - 'innovations-carousel.mjs'
+      - 'innovations-carousel.css'
+      - 'tests/innovations-carousel.test.mjs'
+      - 'test/innovations-carousel.browser.spec.mjs'
+      - 'index.html'
+      - '.github/workflows/innovations-carousel.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'innovations/**'
+      - 'innovations-carousel-core.mjs'
+      - 'innovations-carousel.mjs'
+      - 'innovations-carousel.css'
+      - 'tests/innovations-carousel.test.mjs'
+      - 'test/innovations-carousel.browser.spec.mjs'
+      - 'index.html'
+      - '.github/workflows/innovations-carousel.yml'
+permissions:
+  contents: read
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check curated sources and original visual wiring
+        run: |
+          node --check innovations-carousel-core.mjs
+          node --check innovations-carousel.mjs
+          node --test tests/innovations-carousel.test.mjs
+          python3 - <<'PY'
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+          files=list(Path('innovations').glob('*.svg'))
+          assert len(files)>=4,files
+          for file in files:
+            root=ET.parse(file).getroot()
+            assert root.tag.endswith('svg')
+            assert root.get('viewBox')
+          print(f'Validated {len(files)} original editorial SVG illustrations')
+          PY
+  android:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser test dependencies
+        run: |
+          npm install --no-save @playwright/test@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Check genuine source artwork, controls, navigation and research handoff
+        run: |
+          python3 -m http.server 8799 --bind 127.0.0.1 >/tmp/innovations-http.log 2>&1 &
+          npx playwright test test/innovations-carousel.browser.spec.mjs --reporter=line --workers=1
