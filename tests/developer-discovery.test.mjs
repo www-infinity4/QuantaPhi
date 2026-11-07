@@ -79,7 +79,7 @@ test('review proposal URL requires explicit visitor action, no secrets, and has 
  assert.equal(url.origin,'https://github.com');
  assert.equal(url.pathname,'/www-infinity4/QuantaPhi/issues/new');
  assert.match(url.searchParams.get('body'),/Requires owner approval/);
- assert.match(url.searchParams.get('body'),/existing partial/i);
+ assert.match(url.searchParams.get('body'),/Existing site status: partial/i);
  assert.doesNotMatch(url.searchParams.get('body'),/Approved to deploy|auto-merge/);
  assert.equal(cleanProposalText('abc\0def').includes('\0'),false);
  assert.equal(buildReviewIssueURL({topic:'profiles',idea:'My SSN 123-45-6789 is here',source:null}),null);
