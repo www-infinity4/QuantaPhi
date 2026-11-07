@@ -1,0 +1,57 @@
+/* Infinity Oracle Octaves: one original Innovations Quick Card at a time. */
+.innovations-carousel{box-sizing:border-box;width:100%;max-width:850px;margin:20px auto 24px;padding:0 9px;color:#263642;background:transparent;border:0;box-shadow:none;font:400 16px/1.52 system-ui,-apple-system,sans-serif}
+.innovations-carousel *{box-sizing:border-box}
+.innovations-head{text-align:center;max-width:650px;margin:0 auto 10px}
+.innovations-head small{display:block;color:#356e79;font:850 12px/1.4 system-ui,sans-serif;letter-spacing:.12em}
+.innovations-head h2{font-size:clamp(24px,5vw,30px);color:#174f65;line-height:1.25;margin:5px auto 7px}
+.innovations-head p{font-size:15px;color:#526d75;margin:0 auto 8px;max-width:580px;line-height:1.55}
+.innovations-controls{display:grid;grid-template-columns:48px minmax(0,1fr) 48px;gap:8px;align-items:center;max-width:690px;margin:0 auto}
+.innovations-controls button{width:48px;min-width:48px;height:48px;min-height:48px;border:1px solid #bfd4da;border-radius:14px;background:#fff;color:#1b4d65;font:700 30px/1 system-ui,sans-serif;cursor:pointer;padding:0;box-shadow:none}
+.innovations-controls button:disabled{opacity:.5}
+.innovations-controls strong{font-weight:750;font-size:17px;text-align:center;line-height:1.25;color:#1e526c;overflow-wrap:anywhere;min-width:0}
+.innovations-picker{display:flex;gap:2px;justify-content:center;align-items:center;min-height:47px;margin:1px auto 6px}
+.innovations-choice{width:44px;min-width:44px;height:44px;min-height:44px;border:0;border-radius:11px;background:transparent;display:grid;place-items:center;padding:0;cursor:pointer;box-shadow:none}
+.innovations-dot{display:block;width:10px;height:10px;border-radius:12px;background:#96b6bc;transition:width .15s,background-color .15s}
+.innovations-choice[aria-pressed="true"] .innovations-dot{width:25px;background:#207b93}
+.innovations-carousel :is(button,a,summary):focus-visible{outline:3px solid #167e9e;outline-offset:3px}
+.innovations-stage{max-width:720px;min-width:0;margin:0 auto}
+.innovations-slide{border:1px solid #c6d9dd;border-radius:22px;background:#fff;padding:7px;color:#233f4b;box-shadow:0 7px 25px #20364818;min-width:0;overflow:hidden}
+.innovations-slide[hidden]{display:none!important}
+.innovations-media{aspect-ratio:5/3.45;max-height:440px;min-height:180px;width:100%;position:relative;background:#e3f0f3;border-radius:17px;overflow:hidden}
+.innovations-card-image{width:100%;height:100%;display:block;object-fit:cover;object-position:center}
+.innovations-card-image[hidden]{display:none!important}
+.innovations-art-credit{position:absolute;bottom:8px;left:10px;max-width:calc(100% - 20px);padding:5px 8px;background:#f8feffef;border-radius:7px;color:#1a4555;font-size:11px;font-weight:700}
+.innovations-copy{padding:15px 14px 11px;display:grid;gap:9px;min-width:0}
+.innovations-eyebrow{font-size:11px;line-height:1.4;letter-spacing:.10em;color:#30798b;font-weight:850}
+.innovations-title{font-size:clamp(25px,5vw,32px);color:#175b76;margin:0;line-height:1.16}
+.innovations-headline{font-size:18px;font-weight:700;color:#344d59;margin:0}
+.innovations-summary{font-size:16px;line-height:1.55;color:#334a56;margin:0}
+.innovations-readiness{font-size:12px;line-height:1.6;color:#5b6d75;margin:0}
+.innovations-primary-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:3px 0 0}
+.innovations-primary-actions button{font:800 14px/1.34 system-ui,sans-serif;min-width:0;min-height:48px;padding:8px 7px;cursor:pointer;background:#ecf7f8;border:1px solid #bad7df;color:#135774;border-radius:12px;box-shadow:none}
+.innovations-source,.innovations-builder{font-size:14px;line-height:1.45;font-weight:700;color:#205e83;text-decoration:underline;display:flex;align-items:center;min-height:44px;padding:5px 3px;overflow-wrap:anywhere}
+.innovations-builder{color:#456276}
+.innovations-details{padding:13px;border:1px solid #c6dbe0;border-radius:13px;background:#f8fcfc}
+.innovations-details[hidden]{display:none!important}
+.innovations-details h4{font-size:16px;color:#175267;margin:0 0 5px}
+.innovations-details h4:not(:first-child){margin-top:11px}
+.innovations-details ul{padding-left:20px;margin:6px 0 10px}
+.innovations-details li{margin:5px 0;font-size:15px;line-height:1.46}
+.innovations-caveat{font-size:15px;line-height:1.5;margin:0}
+.innovations-shared-actions{min-width:0}
+.innovations-shared-actions .qca-toolbar{margin:3px 0 0;border:1px solid #e1e7e8;border-radius:12px;padding:8px;background:#fff}
+.innovations-shared-actions .qca-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.innovations-shared-actions .qca-controls button{min-height:44px;min-width:0;background:#fff;border:1px solid #d6e0e2;color:#294d5d;font:750 12px/1.25 system-ui,sans-serif;padding:7px 2px;border-radius:10px;box-shadow:none;cursor:pointer}
+.innovations-shared-actions .qca-status{color:#536875;font-size:12px;line-height:1.45;margin:5px 2px}
+.innovations-status{text-align:center;color:#647981;font-size:12px;line-height:1.45;margin:10px auto}
+@media(max-width:380px){
+ .innovations-carousel{padding:0 6px}
+ .innovations-controls{grid-template-columns:46px minmax(0,1fr) 46px;gap:5px}
+ .innovations-controls button{width:46px;min-width:46px;height:46px;min-height:46px}
+ .innovations-slide{padding:5px;border-radius:17px}
+ .innovations-media{min-height:165px;border-radius:13px}
+ .innovations-copy{padding:12px 10px 10px}
+ .innovations-primary-actions{gap:6px}
+ .innovations-primary-actions button{font-size:13px}
+}
+@media(prefers-reduced-motion:reduce){.innovations-dot{transition:none}}
