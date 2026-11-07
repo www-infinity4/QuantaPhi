@@ -1,0 +1,37 @@
+name: Developer carousel source checks
+on:
+  pull_request:
+    paths:
+      - 'developer-carousel-core.mjs'
+      - 'developer-carousel.mjs'
+      - 'developer-carousel.css'
+      - 'oracle-card-deck.js'
+      - 'index.html'
+      - 'tests/developer-carousel.test.mjs'
+      - '.github/workflows/developer-carousel-checks.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'developer-carousel-core.mjs'
+      - 'developer-carousel.mjs'
+      - 'developer-carousel.css'
+      - 'oracle-card-deck.js'
+      - 'index.html'
+      - 'tests/developer-carousel.test.mjs'
+      - '.github/workflows/developer-carousel-checks.yml'
+permissions:
+  contents: read
+jobs:
+  developer-carousel:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate creator modules and original carousel wiring
+        run: |
+          node --check developer-carousel-core.mjs
+          node --check developer-carousel.mjs
+          node --check oracle-card-deck.js
+          node --test tests/developer-carousel.test.mjs
