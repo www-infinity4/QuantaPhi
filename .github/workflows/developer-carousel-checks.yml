@@ -12,6 +12,7 @@ on:
       - 'scripts/build-developer-source-catalog.mjs'
       - '.github/workflows/developer-catalog-import.yml'
       - 'data/developer-source-catalog.json'
+      - 'tests/developer-catalog-snapshot.test.mjs'
       - 'test/developer-discovery.browser.spec.mjs'
       - 'developer-carousel.mjs'
       - 'developer-carousel.css'
@@ -34,6 +35,7 @@ on:
       - 'scripts/build-developer-source-catalog.mjs'
       - '.github/workflows/developer-catalog-import.yml'
       - 'data/developer-source-catalog.json'
+      - 'tests/developer-catalog-snapshot.test.mjs'
       - 'test/developer-discovery.browser.spec.mjs'
       - 'developer-carousel.mjs'
       - 'developer-carousel.css'
@@ -61,7 +63,7 @@ jobs:
           node --check developer-discovery.mjs
           node --check scripts/build-developer-source-catalog.mjs
           node --check oracle-card-deck.js
-          node --test tests/developer-carousel.test.mjs tests/developer-discovery.test.mjs tests/developer-catalog-import.test.mjs tests/developer-catalog-workflow.test.mjs
+          node --test tests/developer-carousel.test.mjs tests/developer-discovery.test.mjs tests/developer-catalog-import.test.mjs tests/developer-catalog-workflow.test.mjs tests/developer-catalog-snapshot.test.mjs
   developer-browser:
     runs-on: ubuntu-latest
     steps:
