@@ -3,356 +3,332 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-07T01:31:32.996316Z",
+  "checked_at": "2026-11-07T02:02:45.034378Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "new mexico vs nevada",
+      "query": "nocturne series",
       "approx_searches": "1000+",
-      "published_at": "2026-11-07T01:10:00Z",
+      "published_at": "2026-11-07T01:40:00Z",
       "related_news_urls": [
-        "https://golobos.com/news/2026/11/5/by-the-numbers-game-9-new-mexico-at-nevada",
-        "https://nevadasportsnet.com/news/reporters/nsn-tonight-from-mackay-stadium-nevada-football-looks-for-breakout-win-against-new-mexico",
-        "https://sportsbook.fanduel.com/football/ncaa-football-games/new-mexico-@-nevada-36260456"
+        "https://www.imdb.com/news/ni66098068/?ref_=nmnw_art_perm",
+        "https://www.aol.com/articles/apple-tv-serial-killer-thriller-135154000.html",
+        "https://theplaylist.net/nocturne-stephen-graham-rory-culkin-liev-schreiber-zazie-beetz-interview-20261106/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH9ptOlMCm1ESKWwjipQAKgII9e-mCAQK5fK5kk-vPKi9PorpwWozaYKv7DSg",
-      "image_credit": "New Mexico Lobos",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTphpIzeRYQxMdjnC7a5MnEAKVIFE_ge4sBi93gWk4hEZNmADtciVowBT51nsQ",
+      "image_credit": "IMDb",
       "news": [
         {
-          "url": "https://golobos.com/news/2026/11/5/by-the-numbers-game-9-new-mexico-at-nevada",
-          "title": "By The Numbers - Game 9: New Mexico at Nevada",
-          "publisher": "New Mexico Lobos",
+          "url": "https://www.imdb.com/news/ni66098068/?ref_=nmnw_art_perm",
+          "title": "‘Nocturne’ Episode 3 Recap & Ending Explained: What the Sandman’s Call Means for Jonah and Saga",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH9ptOlMCm1ESKWwjipQAKgII9e-mCAQK5fK5kk-vPKi9PorpwWozaYKv7DSg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTphpIzeRYQxMdjnC7a5MnEAKVIFE_ge4sBi93gWk4hEZNmADtciVowBT51nsQ"
         },
         {
-          "url": "https://nevadasportsnet.com/news/reporters/nsn-tonight-from-mackay-stadium-nevada-football-looks-for-breakout-win-against-new-mexico",
-          "title": "NSN Tonight from Mackay Stadium: Nevada football looks for breakout win against New Mexico",
-          "publisher": "Nevada Sports Net",
+          "url": "https://www.aol.com/articles/apple-tv-serial-killer-thriller-135154000.html",
+          "title": "Apple TV’s Serial Killer Thriller is Officially a No. 1 Streaming Hit",
+          "publisher": "AOL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSkPF905NXYeJRKxDojz9-yek8vvIEHI07iKZumgTwsFDCbp9k9vZ6bAFAAg1M"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfBpZ_MS8QJg6Xb17emO6bisa0QAg463MJX-1en6FrxLag-jMKvXZZ68r39Ks"
         },
         {
-          "url": "https://sportsbook.fanduel.com/football/ncaa-football-games/new-mexico-@-nevada-36260456",
-          "title": "New Mexico @ Nevada Odds",
-          "publisher": "FanDuel Sportsbook",
+          "url": "https://theplaylist.net/nocturne-stephen-graham-rory-culkin-liev-schreiber-zazie-beetz-interview-20261106/",
+          "title": "‘Nocturne’: Liev Schreiber, Zazie Beetz, Stephen Graham & Rory Culkin On Playing Psychological Games With A Serial Killer [Bingeworthy Podcast]",
+          "publisher": "The Playlist",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3VnYzYqI_rFs_w6UNwKwekPzs91TDC7oqxv4aqx5Va0iYDC7m9U_WkMCZeeQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNler3-yihvh5wwtkitrOjTZQXOKbW5fRxpx1r-xNKCHZRp5NPmTIC7VSgqPU"
         }
       ]
     },
     {
-      "query": "mario hezonja",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T01:10:00Z",
+      "query": "midterm election results senate",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T01:40:00Z",
       "related_news_urls": [
-        "https://www.eurohoops.net/en/nba-news/2029611/mario-hezonja-talks-team-status-cleveland-cavaliers-nba/",
-        "https://www.hoopsrumors.com/2026/10/cavs-notes-hezonja-mobley-altman-thomas.html",
-        "https://roundtable.io/sports/nba/cavaliers/news/mario-hezonja-sends-bold-message-to-cavaliers-about-his-defensive-role"
+        "https://www.nytimes.com/live/2026/11/06/us/midterm-elections-trump",
+        "https://thehill.com/homenews/senate/6205607-hyde-smith-colom-mississippi-senate/",
+        "https://www.cnbc.com/2026/11/05/mississippi-senate-election-scott-colom-hyde-smith.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQyOJtZsqci7EOELaeNL6tqpMOMCHUGBYnq60HYwbro7YLSBy96mgcyUdV9EpY",
-      "image_credit": "Eurohoops",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1SVSUKSj-s0swbJ0p6q1XqytKWzh6PapUzPInxcpAGG9qol4sZ9IUSGzrEMk",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.eurohoops.net/en/nba-news/2029611/mario-hezonja-talks-team-status-cleveland-cavaliers-nba/",
-          "title": "Hezonja’s bench production secures future in Cleveland: “In Kenny’s hands”",
-          "publisher": "Eurohoops",
+          "url": "https://www.nytimes.com/live/2026/11/06/us/midterm-elections-trump",
+          "title": "2026 Election Results Live Updates: Democrats’ Lead in Mississippi Senate Midterm Grows",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQyOJtZsqci7EOELaeNL6tqpMOMCHUGBYnq60HYwbro7YLSBy96mgcyUdV9EpY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1SVSUKSj-s0swbJ0p6q1XqytKWzh6PapUzPInxcpAGG9qol4sZ9IUSGzrEMk"
         },
         {
-          "url": "https://www.hoopsrumors.com/2026/10/cavs-notes-hezonja-mobley-altman-thomas.html",
-          "title": "Cavs Notes: Hezonja, Mobley, Altman, Thomas",
-          "publisher": "Hoops Rumors",
+          "url": "https://thehill.com/homenews/senate/6205607-hyde-smith-colom-mississippi-senate/",
+          "title": "How Scott Colom turned his Mississippi Senate race into a nail-biter",
+          "publisher": "The Hill",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnUBQgkK-OvInPR7vInBjp5lsua60jBMhattJy7QRvlhgpJ0Mui3_SjYcMf7g"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmnfkzzT95m8JWdi000-paa6Qb2jSJxfhQygMpRVQknZR7D6nOeXseHQg7otE"
         },
         {
-          "url": "https://roundtable.io/sports/nba/cavaliers/news/mario-hezonja-sends-bold-message-to-cavaliers-about-his-defensive-role",
-          "title": "Mario Hezonja Sends Bold Message to Cavaliers About His Defensive Role",
-          "publisher": "roundtable.io",
+          "url": "https://www.cnbc.com/2026/11/05/mississippi-senate-election-scott-colom-hyde-smith.html",
+          "title": "Mississippi Senate: Colom, Hyde-Smith gird for ballot legal fight in razor-thin race",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPDS0XZcaxuVzdl1_6tkkwkhvrnvxwdrQiMDX95GzHdio2oJ3tjksLQvJPUz4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRMuxdkvZwfm9FV0hbdEoZsrLtXSyRHZKBZtnzn-B3QTbuPH46E9-EBfMH-bw"
         }
       ]
     },
     {
-      "query": "evan mobley",
+      "query": "marquette basketball",
       "approx_searches": "500+",
-      "published_at": "2026-11-07T01:10:00Z",
+      "published_at": "2026-11-07T01:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/fantasy/article/yahoo-perfect-5-luka-doncic-evan-mobley-and-walker-kessler-lead-my-friday-lineup-163200277.html",
-        "https://netswire.usatoday.com/story/sports/nba/nets/2026/11/06/should-nets-rookie-mikel-brown-jr-be-in-the-starting-lineup-now/92648586007/",
-        "https://www.wwltv.com/video/sports/locked-on/lo-national/fantasy-basketball-show/fantasy-basketball-preview-for-friday/535-7900adba-aa9f-420a-8795-75cbb4f3752e"
+        "https://gomarquette.com/news/2026/11/4/mens-basketball-mubb-hosts-detroit-mercy-in-student-only-game-at-al-mcguire-center",
+        "https://www.jsonline.com/story/sports/college/marquette/2026/11/06/watch-marquette-vs-detroit-mercy-tonight-time-tv-channel-streaming/92598716007/",
+        "https://sports.yahoo.com/articles/marquette-basketball-vs-detroit-live-230126901.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS82w6uqKgDSZ6PnpuHADxlHaji6ghnGg-XyzAbSaQyQ4NSG2BNS6WwJc2WTqY",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRT7rCJaBxYcA_68Dqj_akcfWX3Jv6gdOTewydwRNhNG19cOh5HAHW0MZXXdrk",
+      "image_credit": "Marquette University Athletics",
+      "news": [
+        {
+          "url": "https://gomarquette.com/news/2026/11/4/mens-basketball-mubb-hosts-detroit-mercy-in-student-only-game-at-al-mcguire-center",
+          "title": "#MUBB Hosts Detroit Mercy In Student-Only Game At Al McGuire Center",
+          "publisher": "Marquette University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRT7rCJaBxYcA_68Dqj_akcfWX3Jv6gdOTewydwRNhNG19cOh5HAHW0MZXXdrk"
+        },
+        {
+          "url": "https://www.jsonline.com/story/sports/college/marquette/2026/11/06/watch-marquette-vs-detroit-mercy-tonight-time-tv-channel-streaming/92598716007/",
+          "title": "What channel is Marquette basketball on tonight? Time, TV, odds",
+          "publisher": "Milwaukee Journal Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFs2f3RU881V4fpeluTSQ24cj70YzgRl8s1M4JsqugVWqI32R-VIzmWn4hFtQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/marquette-basketball-vs-detroit-live-230126901.html",
+          "title": "Marquette basketball vs Detroit live updates, highlights, how to watch",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaDaUuzrTCXnF8jc55m2_UYMWI7XxEni90Aih5HJE8RMkPab89gKfMfwPLvmc"
+        }
+      ]
+    },
+    {
+      "query": "you can see everything streaming",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T01:40:00Z",
+      "related_news_urls": [
+        "https://apnews.com/article/possible-love-movie-c6e7ace8cdeb35383e42ab8013b4e05d",
+        "https://slate.com/culture/2026/11/possible-love-netflix-movie-oscars-you-can-see-everything.html",
+        "https://www.yahoo.com/entertainment/movies/articles/possible-love-ending-ho-seok-113424654.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1CDgnNaPDhXvXtOmAY-Z7_5UrQ-721gfZ_tagBVJuc1snZvwFHuUn191mpV8",
+      "image_credit": "AP News",
+      "news": [
+        {
+          "url": "https://apnews.com/article/possible-love-movie-c6e7ace8cdeb35383e42ab8013b4e05d",
+          "title": "In ‘Possible Love,’ a South Korean auteur returns with a story of marriage, labor and class",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1CDgnNaPDhXvXtOmAY-Z7_5UrQ-721gfZ_tagBVJuc1snZvwFHuUn191mpV8"
+        },
+        {
+          "url": "https://slate.com/culture/2026/11/possible-love-netflix-movie-oscars-you-can-see-everything.html",
+          "title": "Netflix’s New Movie Is Being Compared to Parasite, but It Resembles Other Masterpieces Even More",
+          "publisher": "Slate Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgh3Taczs3j9O7Z1eqi5L_tyd1Q34b6rsslHEAmYqSLr2aYwWH4T1yI6FRQ20"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/possible-love-ending-ho-seok-113424654.html",
+          "title": "Possible Love Ending: How Do Ho-seok and Mi-ok Face Their Future After Leaving the Mansion?",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHTHzpQ7Di6_Qp1YMMKa722MShCD2F3eIr9LRquThCP6ztcL_UwlLXJ_0B3Bo"
+        }
+      ]
+    },
+    {
+      "query": "karlo matković",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T01:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-06/nor-starts-fears-murray-murphy-zion-matkovic",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-06/thunder-start-shai-mccain-ajay-kenrich-i-hart"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQj_4zS5-SIHZCduhqDYTicIMHcdy7BmQDmKL6-rO8mA_SdCaUia6iRqurmvQ",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-06/nor-starts-fears-murray-murphy-zion-matkovic",
+          "title": "NOR starts Fears, Murray, Murphy, Zion, Matković",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQj_4zS5-SIHZCduhqDYTicIMHcdy7BmQDmKL6-rO8mA_SdCaUia6iRqurmvQ"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-06/thunder-start-shai-mccain-ajay-kenrich-i-hart",
+          "title": "Thunder start Shai, McCain, Ajay, Kenrich, I-hart",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDI92hcCvVvW5AsQxOsh3Xy3GdcDuHHJD6H8-tUIlI8b8_v3G7nlXMI5AzdVQ"
+        }
+      ]
+    },
+    {
+      "query": "vj edgecombe",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-07T01:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/76ers-star-tyrese-maxey-4-205540402.html",
+        "https://larrybrownsports.com/basketball/tyrese-maxey-hilarious-message-76ers-teammate-missed-layup/777378",
+        "https://www.yardbarker.com/nba/articles/tyrese_maxey_shares_what_he_said_to_vj_edgecombe_just_before_his_clutch_triple_vs_hornets/s1_17664_44500706"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLc0-n9CZOkfqxgVwaQFGJioqhUMYQtdc_44tyetRXwoPlXWAS_866Xf24PyY",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/fantasy/article/yahoo-perfect-5-luka-doncic-evan-mobley-and-walker-kessler-lead-my-friday-lineup-163200277.html",
-          "title": "Yahoo Perfect 5: Luka Dončić, Evan Mobley and Walker Kessler lead my Friday lineup",
+          "url": "https://sports.yahoo.com/articles/76ers-star-tyrese-maxey-4-205540402.html",
+          "title": "76ers Star Tyrese Maxey’s 4-Word Message to VJ Edgecombe Goes Viral",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS82w6uqKgDSZ6PnpuHADxlHaji6ghnGg-XyzAbSaQyQ4NSG2BNS6WwJc2WTqY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLc0-n9CZOkfqxgVwaQFGJioqhUMYQtdc_44tyetRXwoPlXWAS_866Xf24PyY"
         },
         {
-          "url": "https://netswire.usatoday.com/story/sports/nba/nets/2026/11/06/should-nets-rookie-mikel-brown-jr-be-in-the-starting-lineup-now/92648586007/",
-          "title": "Should Nets rookie Mikel Brown Jr. be in the starting lineup now?",
-          "publisher": "Nets Wire",
+          "url": "https://larrybrownsports.com/basketball/tyrese-maxey-hilarious-message-76ers-teammate-missed-layup/777378",
+          "title": "Tyrese Maxey had hilarious message for 76ers teammate after missed layup",
+          "publisher": "Larry Brown Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA3rTKUQBakn4vq7Re-j5-8RRbbx1xPGHUpgpa7nrJlZSwoobLfRJnrK725Ic"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7gCaCUEivIy5hnpo7pnQydj99OJp5UMtkIpXNwt3ODARDhVMVjTrvoP4UwRM"
         },
         {
-          "url": "https://www.wwltv.com/video/sports/locked-on/lo-national/fantasy-basketball-show/fantasy-basketball-preview-for-friday/535-7900adba-aa9f-420a-8795-75cbb4f3752e",
-          "title": "Fantasy Basketball Preview For Friday",
-          "publisher": "WWLTV.com",
+          "url": "https://www.yardbarker.com/nba/articles/tyrese_maxey_shares_what_he_said_to_vj_edgecombe_just_before_his_clutch_triple_vs_hornets/s1_17664_44500706",
+          "title": "Tyrese Maxey shares what he said to VJ Edgecombe just before his clutch triple vs Hornets",
+          "publisher": "Yardbarker",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFlP2UUzvAZ0kXC6ZXvSJQZA1tkFRUVzVKSO92Kr7O9m8fALXvWGIDb6vWDOA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS49zwBZUI4agnbQtMYcnz1gSEjtV_UQw9r66M1KaeLt0G1MzXSlxhlkmFYw3I"
         }
       ]
     },
     {
-      "query": "braylon mullins",
+      "query": "billy bush",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T01:30:00Z",
+      "related_news_urls": [
+        "https://www.aol.com/articles/billy-bush-praises-pal-tucker-151813000.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbS8I7z4RQUg-kXfl8BKy0AiZ72c3OI60Ld55ByrGivOZ8RBqWhqqc8pzZQJA",
+      "image_credit": "AOL.com",
+      "news": [
+        {
+          "url": "https://www.aol.com/articles/billy-bush-praises-pal-tucker-151813000.html",
+          "title": "Billy Bush Praises Pal Tucker Carlson as a ‘Different Kind of Leader’ as He Questions If He’ll Run for President",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbS8I7z4RQUg-kXfl8BKy0AiZ72c3OI60Ld55ByrGivOZ8RBqWhqqc8pzZQJA"
+        }
+      ]
+    },
+    {
+      "query": "thomas bryant",
       "approx_searches": "200+",
-      "published_at": "2026-11-07T01:10:00Z",
+      "published_at": "2026-11-07T01:30:00Z",
       "related_news_urls": [
-        "https://patch.com/connecticut/mansfield/uconn-basketball-star-braylon-mullins-signs-endorsement-deal-finex-credit",
-        "https://hartfordbusiness.com/article/ct-credit-union-signs-endorsement-deal-with-uconns-braylon-mullins/",
-        "https://www.cuinsight.com/press-release/finex-credit-union-partners-with-uconn-basketballs-braylon-mullins/"
+        "https://cavs.com/news/features-thomas-bryant-261105",
+        "https://sports.yahoo.com/articles/backup-big-man-suddenly-crucial-150005225.html",
+        "https://www.cbssports.com/fantasy/basketball/news/cavaliers-khalifa-diop-recalled-thursday/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwFmTm_GOUWNkMy-e5cImUkEZ_ZmHTs_swwDIRgPWdFPr4YipZCwonlmiq01Y",
-      "image_credit": "Patch",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXTkLEH8eXt_3mdvvsMRNbqdiMbmkXsvsMQcmu5YWTqY6ANSB-lOLM_mptMM8",
+      "image_credit": "NBA.com",
       "news": [
         {
-          "url": "https://patch.com/connecticut/mansfield/uconn-basketball-star-braylon-mullins-signs-endorsement-deal-finex-credit",
-          "title": "UConn Basketball Star Braylon Mullins Signs Endorsement Deal With Finex Credit Union",
-          "publisher": "Patch",
+          "url": "https://cavs.com/news/features-thomas-bryant-261105",
+          "title": "Thomas Bryant Stays Ready for when His Name is Called",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwFmTm_GOUWNkMy-e5cImUkEZ_ZmHTs_swwDIRgPWdFPr4YipZCwonlmiq01Y"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXTkLEH8eXt_3mdvvsMRNbqdiMbmkXsvsMQcmu5YWTqY6ANSB-lOLM_mptMM8"
         },
         {
-          "url": "https://hartfordbusiness.com/article/ct-credit-union-signs-endorsement-deal-with-uconns-braylon-mullins/",
-          "title": "CT credit union signs endorsement deal with UConn’s Braylon Mullins",
-          "publisher": "Hartford Business Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQf7tQOUqsMRBZeLadoec5sLgNCS4yHsFT4tNRaxcXhIw4EfUMEI1Y0Cz5oZg"
-        },
-        {
-          "url": "https://www.cuinsight.com/press-release/finex-credit-union-partners-with-uconn-basketballs-braylon-mullins/",
-          "title": "Finex Credit Union partners with UConn Basketball’s Braylon Mullins",
-          "publisher": "CUInsight",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZ_3ZvQzfTBJ5LExcbLhGRfqC092PfP8I9zJVilenLxMdLkW6WiQmuwmHV_OE"
-        }
-      ]
-    },
-    {
-      "query": "james franklin",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T01:10:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/sports/ncaaf/acc/2026/11/06/james-franklin-ranked-teams-record-virginia-tech-football-penn-state/92570190007/",
-        "https://augustafreepress.com/news/was-james-franklin-really-trying-to-complain-about-not-having-an-airport-nearby/",
-        "https://www.crossingbroad.com/news/trending/james-franklin-talking-about-airports-again/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVQjX84efVzeJE1jEQZwNYt6haDNmW_h7EGWCEyg9f5dSm6nQkUkIIhxHL7Ys",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/sports/ncaaf/acc/2026/11/06/james-franklin-ranked-teams-record-virginia-tech-football-penn-state/92570190007/",
-          "title": "James Franklin gets another shot at the problem that haunted his Penn State tenure",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVQjX84efVzeJE1jEQZwNYt6haDNmW_h7EGWCEyg9f5dSm6nQkUkIIhxHL7Ys"
-        },
-        {
-          "url": "https://augustafreepress.com/news/was-james-franklin-really-trying-to-complain-about-not-having-an-airport-nearby/",
-          "title": "Was James Franklin really trying to complain about not having an airport nearby?",
-          "publisher": "Augusta Free Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQy6_LVJdCwGw0bY5OqFMx89snzTPfUgdvtqQi_uOV9p8kdClJ7Kt1UKDPYFxg"
-        },
-        {
-          "url": "https://www.crossingbroad.com/news/trending/james-franklin-talking-about-airports-again/",
-          "title": "James Franklin Talking About Airports Again",
-          "publisher": "Crossing Broad",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG1dc2Pr_m9l20Mhwrmn5M1EvhX0_3wOvYX63gHb4-inl0AySDyWCwAy3q0Js"
-        }
-      ]
-    },
-    {
-      "query": "st thomas mn vs minnesota",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T01:10:00Z",
-      "related_news_urls": [
-        "https://www.startribune.com/minnesota-gophers-st-thomas-basketball-game-today-niko-medved-rivalry-ncaa-tournament-2026-27-season/601910672",
-        "https://www.mprnews.org/story/2026/11/06/minnesota-st-thomas-start-a-new-rivalry-proximity-doesnt-mean-theyll-see-each-other-often",
-        "https://247sports.com/college/minnesota/longformarticle/minnesota-st-thomas-mens-baskeball-game-preview-prediction--292226640/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZ1taLsQlwxE1wVhJ4ALrRfcuQIlQCxwfqSEV2c9WgXXmj4TklIqOIaqGBVbU",
-      "image_credit": "Star Tribune",
-      "news": [
-        {
-          "url": "https://www.startribune.com/minnesota-gophers-st-thomas-basketball-game-today-niko-medved-rivalry-ncaa-tournament-2026-27-season/601910672",
-          "title": "Gophers, St. Thomas finally meet in men’s hoops. Why it might not happen again.",
-          "publisher": "Star Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZ1taLsQlwxE1wVhJ4ALrRfcuQIlQCxwfqSEV2c9WgXXmj4TklIqOIaqGBVbU"
-        },
-        {
-          "url": "https://www.mprnews.org/story/2026/11/06/minnesota-st-thomas-start-a-new-rivalry-proximity-doesnt-mean-theyll-see-each-other-often",
-          "title": "Minnesota and St. Thomas start a new rivalry. Proximity doesn't mean they'll see each other often",
-          "publisher": "MPR News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScG0VvupUEBlHW_loE9QHMqwPRZL8XrEICFy6r61w5mDQSlrL4x66inVDPEYM"
-        },
-        {
-          "url": "https://247sports.com/college/minnesota/longformarticle/minnesota-st-thomas-mens-baskeball-game-preview-prediction--292226640/",
-          "title": "St. Thomas vs Minnesota Men's Basketball Preview and Prediction",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTy-I-1A439UjBkuLZwzT43XHIxepyz7_g_rM74RkdA1jjoN6YPIbpHOQQ0ZA0"
-        }
-      ]
-    },
-    {
-      "query": "new streaming movies",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T01:10:00Z",
-      "related_news_urls": [
-        "https://www.thewrap.com/creative-content/movies/best-new-streaming-movies-november-2026/",
-        "https://variety.com/lists/best-movies-streaming-november-2026/",
-        "https://www.yahoo.com/entertainment/movies/articles/missed-theaters-every-movie-finally-073000795.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7vudYavA3z8MKpvijwzUoQJA7m6y7j5euqwfLfWQjgnBkVkzbnRpincUme0g",
-      "image_credit": "TheWrap",
-      "news": [
-        {
-          "url": "https://www.thewrap.com/creative-content/movies/best-new-streaming-movies-november-2026/",
-          "title": "The Top 21 New Movies Streaming Now",
-          "publisher": "TheWrap",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7vudYavA3z8MKpvijwzUoQJA7m6y7j5euqwfLfWQjgnBkVkzbnRpincUme0g"
-        },
-        {
-          "url": "https://variety.com/lists/best-movies-streaming-november-2026/",
-          "title": "23 Best Movies New to Streaming in November: ‘Tony,’ ‘Misty Green,’ ‘Possible Love’ and More",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLNfy_i8rp254Z8iKViDGtAlrxVT8u4pE_Yag3R7ivDZos9i3DDKbxZeCcwpI"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/missed-theaters-every-movie-finally-073000795.html",
-          "title": "Missed it in theaters? Here’s every movie finally arriving on streaming in November 2026",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSFNlsjio7WkdKxjNQuRXA-FX2daJOwb32dzHYpuyVkNYlikPySW8uXiaMWyI"
-        }
-      ]
-    },
-    {
-      "query": "connie britton",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-07T01:00:00Z",
-      "related_news_urls": [
-        "https://www.mansionglobal.com/articles/connie-brittons-five-favorite-things-at-home-706c881b",
-        "https://lifehacker.com/entertainment/best-shows-like-phony",
-        "https://www.tvline.com/2303902/tv-shows-like-phony/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8EhMzjiJydmH9AIcfqfcvb-7Ix95sTt_qbYGCfeaWQlzP0nYsN_Ko0NW5SdM",
-      "image_credit": "Mansion Global",
-      "news": [
-        {
-          "url": "https://www.mansionglobal.com/articles/connie-brittons-five-favorite-things-at-home-706c881b",
-          "title": "Connie Britton’s Five Favorite Things At Home",
-          "publisher": "Mansion Global",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8EhMzjiJydmH9AIcfqfcvb-7Ix95sTt_qbYGCfeaWQlzP0nYsN_Ko0NW5SdM"
-        },
-        {
-          "url": "https://lifehacker.com/entertainment/best-shows-like-phony",
-          "title": "10 Shows Like 'Phony' You Should Watch Next",
-          "publisher": "Lifehacker",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRezcUUwzcVWwF-ljrVeF1qAMdC2TtKUeIIeOtLBjJIDcY0J5hoy-640vEoQRM"
-        },
-        {
-          "url": "https://www.tvline.com/2303902/tv-shows-like-phony/",
-          "title": "5 TV Shows To Watch If You Like Phony",
-          "publisher": "TVLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0oXOweKgN4Yu5mNmp5AJBvSRs2URLnA_hnlPjfSGG_giSwJbYWPZ62jx91pI"
-        }
-      ]
-    },
-    {
-      "query": "southern miss vs iowa state",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-07T01:00:00Z",
-      "related_news_urls": [
-        "https://www.desmoinesregister.com/story/sports/college/iowa-state/basketball-mens/2026/11/06/iowa-state-basketball-cyclones-players-era-las-vegas-tj-otzelberger/92625121007/",
-        "https://cyclonefanatic.com/2026/11/no-18-isu-seeks-to-reconnect-with-its-first-punch-identity-friday-against-southern-miss/",
-        "https://sports.yahoo.com/articles/iowa-state-basketball-vs-southern-230132748.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcRAxrXs9gtUHYWoR9kEu6TgHfBFEBzkWZ60NPhAQfJXUAnDCOPVrJ728fV_U",
-      "image_credit": "The Des Moines Register",
-      "news": [
-        {
-          "url": "https://www.desmoinesregister.com/story/sports/college/iowa-state/basketball-mens/2026/11/06/iowa-state-basketball-cyclones-players-era-las-vegas-tj-otzelberger/92625121007/",
-          "title": "Iowa State basketball's games before Vegas vital to forming identity",
-          "publisher": "The Des Moines Register",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcRAxrXs9gtUHYWoR9kEu6TgHfBFEBzkWZ60NPhAQfJXUAnDCOPVrJ728fV_U"
-        },
-        {
-          "url": "https://cyclonefanatic.com/2026/11/no-18-isu-seeks-to-reconnect-with-its-first-punch-identity-friday-against-southern-miss/",
-          "title": "No. 18 ISU seeks to reconnect with its \"first punch\" identity Friday against Southern Miss",
-          "publisher": "Cyclone Fanatic",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-w-u1kEddxTssgaU0KyBJIr1RYUZUY6s3DHoqTM7wjSGN1V0WGajpnakj1Tc"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/iowa-state-basketball-vs-southern-230132748.html",
-          "title": "Iowa State basketball vs. Southern Miss live updates, TV channel",
+          "url": "https://sports.yahoo.com/articles/backup-big-man-suddenly-crucial-150005225.html",
+          "title": "This Backup Big Man Is Suddenly Crucial To Cavs Success",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQabEMHw2a826aAG1QfX7wjbgrywzucBtnhcYvpxALLH0ynjD4rI9AY37yslGQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3IHogUQEacb5gMpXvgB5WKDy9On3Y7pZ7FVy89r2Fv0-HAmOFZpgGeGzdul0"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/cavaliers-khalifa-diop-recalled-thursday/",
+          "title": "Cavaliers' Khalifa Diop: Recalled Thursday",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRexZUBC31V2b_qWPQuYS7NLlKz7nZ6EbsLxoBaQlxfP74UK5mCW9hQla-oNio"
         }
       ]
     },
     {
-      "query": "dusty may",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-07T01:00:00Z",
+      "query": "lsu vs alabama",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T01:30:00Z",
       "related_news_urls": [
-        "https://www.rotowire.com/basketball/headlines/santi-aldama-news-available-to-play-537871",
-        "https://thesmokingcuban.com/santi-aldama-return-brings-back-dirk-nowitzki-trait-mavericks-needed",
-        "https://roundtable.io/sports/nba/mavericks/video/mavs-injury-update-major-frontcourt-boost-coming-with-santi-aldama-return"
+        "https://www.espn.com/college-football/story/_/id/50401690/alabama-ryan-coleman-williams-trio-return-vs-lsu",
+        "https://www.al.com/alabamafootball/2026/11/3-alabama-players-questionable-4-upgraded-to-probable-for-lsu-game.html",
+        "https://lsusports.net/news/2026/11/6/football-returns-to-death-valley-for-november-showdown-with-alabama"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRT-FFV4hujqyXqnnhwo3BlOeQY9X3edVfel1g-tKMihmFY2jAlYkAM-p6BoyY",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-Sn7Qgm3kx-6Z8OM15XaIwWRzeRRJ1_UgivbLAfbrWjm5fjbvQkMNp1ThKm0",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50401690/alabama-ryan-coleman-williams-trio-return-vs-lsu",
+          "title": "Alabama's Ryan Coleman-Williams among trio to return vs. LSU",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-Sn7Qgm3kx-6Z8OM15XaIwWRzeRRJ1_UgivbLAfbrWjm5fjbvQkMNp1ThKm0"
+        },
+        {
+          "url": "https://www.al.com/alabamafootball/2026/11/3-alabama-players-questionable-4-upgraded-to-probable-for-lsu-game.html",
+          "title": "3 Alabama players questionable, 4 upgraded to probable for LSU game",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTet4eXjWljCaOG58gkFARm-_LwWUn9csQJ8kUr0KqZ8PBHREOtpQlaWrQQLk"
+        },
+        {
+          "url": "https://lsusports.net/news/2026/11/6/football-returns-to-death-valley-for-november-showdown-with-alabama",
+          "title": "Football Returns to Death Valley for November Showdown with Alabama",
+          "publisher": "LSUsports.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQskkPYW_j-EhVqb-aNMA4569HKoxBIJuTo1i97zfCJrK-FEM2Hq4AIpdfv1DA"
+        }
+      ]
+    },
+    {
+      "query": "brandon miller",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-07T01:20:00Z",
+      "related_news_urls": [
+        "https://www.rotowire.com/basketball/headlines/brandon-miller-injury-wont-return-friday-537900",
+        "https://basketnews.com/news-258989-what-happened-to-brandon-miller-hornets-star-exits-with-injury-in-nba-cup-vs-celtics.html",
+        "https://www.cbssports.com/fantasy/basketball/news/hornets-brandon-miller-heads-to-locker-room/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLgfpCJKw3h-UZAk743NuFNoYfH6laihhKcRpE_a0DjkW_hBLa1fkUA4xLIck",
       "image_credit": "RotoWire",
       "news": [
         {
-          "url": "https://www.rotowire.com/basketball/headlines/santi-aldama-news-available-to-play-537871",
-          "title": "Santi Aldama News: Available to play",
+          "url": "https://www.rotowire.com/basketball/headlines/brandon-miller-injury-wont-return-friday-537900",
+          "title": "Brandon Miller Injury: Won't return Friday",
           "publisher": "RotoWire",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRT-FFV4hujqyXqnnhwo3BlOeQY9X3edVfel1g-tKMihmFY2jAlYkAM-p6BoyY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLgfpCJKw3h-UZAk743NuFNoYfH6laihhKcRpE_a0DjkW_hBLa1fkUA4xLIck"
         },
         {
-          "url": "https://thesmokingcuban.com/santi-aldama-return-brings-back-dirk-nowitzki-trait-mavericks-needed",
-          "title": "Santi Aldama's return brings back a Dirk Nowitzki trait the Mavericks have needed",
-          "publisher": "The Smoking Cuban",
+          "url": "https://basketnews.com/news-258989-what-happened-to-brandon-miller-hornets-star-exits-with-injury-in-nba-cup-vs-celtics.html",
+          "title": "What happened to Brandon Miller? Hornets star exits with injury in NBA Cup vs Celtics",
+          "publisher": "BasketNews.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHxcTcTmg4UE0h9syuVoYJJ2ftIDH3e8u7jNUQ2vikFHIsNaRDjw1vcOuZrns"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDDsg5bNDy_BtxNX9_WoyXNW4Z2e0D6Mi3JMuV6NWpHTJx8aX_WvPOmOOsqPk"
         },
         {
-          "url": "https://roundtable.io/sports/nba/mavericks/video/mavs-injury-update-major-frontcourt-boost-coming-with-santi-aldama-return",
-          "title": "Video - Mavs Injury Update: Major Frontcourt Boost Coming With Santi Aldama Return?",
-          "publisher": "roundtable.io",
+          "url": "https://www.cbssports.com/fantasy/basketball/news/hornets-brandon-miller-heads-to-locker-room/",
+          "title": "Hornets' Brandon Miller: Heads to locker room",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh0bTXEoUegaook9xJnBT5-TV0w2dN4zhAJ6xAh7uEY6pQkxbNL3Y2DVleIGM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0jchji8-l1z_Qlu8-mT9pGRAUaVPJQI_REa3fFctGG_BzOKVtM13szrhVL7Q"
         }
       ]
     }
