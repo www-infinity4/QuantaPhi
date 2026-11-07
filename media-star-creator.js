@@ -116,7 +116,7 @@
   const heading = el("div","ms-creator-heading");
   heading.append(el("span","ms-creator-logo","⭐"),el("div","ms-creator-heading-copy","MEDIA STAR · CREATOR EDITION"));
   panel.append(heading,el("h2","","Build your own Media Star"),el("p","ms-creator-intro",
-    "Build a curated Media Star: choose free episodes and optional paid-next access. No payment is enabled until content rights and the recipient wallet are verified."));
+    "Add a link to your own episode, sound, video or podcast. Build a curated Media Star: choose free episodes and optional paid-next access. No payment is enabled until content rights and the recipient wallet are verified."));
   const form=el("form","ms-creator-form");form.noValidate=true;
   const field = (name,label,placeholder,kind="input") => {
     const wrap=el("label","ms-creator-label",label);
