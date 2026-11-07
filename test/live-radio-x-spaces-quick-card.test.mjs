@@ -54,7 +54,7 @@ test('expanded station carousel has direct, first-party-published stream sources
 
 test('Spaces card has a live-source view and keeps audio status truthful',()=>{
  const source=read('x-spaces-quick-card.mjs');
- assert.match(source,/\u005c/v1\u005c/x\u005c/spaces\u005c/live/);
+ assert.match(source,/\/v1\/x\/spaces\/live/);
  assert.match(source,/Find live Spaces/);
  assert.match(source,/Listen here/);
  assert.doesNotMatch(source,/iframe\.src\s*=\s*chosen\.url|<iframe\s+src.*spaces/);
