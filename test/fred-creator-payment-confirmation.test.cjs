@@ -6,10 +6,11 @@ const script=src.slice(begin,end)+'\npayoutCaption';
 const caption=vm.runInNewContext(script);
 
 test('only a paired owner payout receipt permits a confirmed QuantaPhi owner StarCoin credit caption',()=>{
- const text=caption({charged:1,creatorPaid:true,ownerPaid:true,recipient:'platform-owner',receiptReference:'attempt-123'});
+ const text=caption({charged:1,creatorPaid:false,creatorRoyaltyPaid:false,ownerPaid:true,recipient:'platform-owner',receiptReference:'attempt-123'});
  assert.match(text,/QuantaPhi platform.owner wallet/i);
  assert.match(text,/confirmed/i);
  assert.doesNotMatch(text,/credited to Fred/i);
+ assert.match(text,/no creator royalty or audio play is verified/i);
 });
 test('charged without verified owner receipt is always a discrepancy, not a successful payout',()=>{
  for(const receipt of [
