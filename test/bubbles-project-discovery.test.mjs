@@ -232,7 +232,7 @@ test('browser carries plural repair context to real owner source discovery and G
  assert.match(ui,/await suggestRepositoryTargets\(request,false\)/);
  const index=readFileSync(new URL('../index.html',import.meta.url),'utf8');
  const bubbles=readFileSync(new URL('../bubbles.html',import.meta.url),'utf8');
- for(const page of [index,bubbles])assert.match(page,/bubbles-ai\.js\?v=20261106-agent-runner1/);
+ for(const page of [index,bubbles])assert.match(page,/bubbles-ai\.js\?v=20261107-agent-runner2/);
 });
 
 
@@ -257,14 +257,17 @@ test('Bubbles waits for a real durable GitHub code-search receipt before decidin
  assert.match(ui,/await settleGithubRead\(\{action:'list_repositories',mode:'read'\}\)/);
 });
 
-test('an ordinary chat repair reaches the tested repository runner, while direct inspection uses GitHub',async()=>{
+test('chat routes source repairs and explicit workflow operations to their own adapters',async()=>{
  const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
  const start=ui.indexOf(' else if(!embedded&&!ownerGithubNonAction&&(directRequest||githubCheck||createRepository||coderRequest||directCoding)){');
  const end=ui.indexOf(' else if(!embedded&&(isOwnerWorkRequest(request)',start);
+ const intent=ui.slice(ui.indexOf(' const workflowIntent='),ui.indexOf(' // Owner-named RecordB'));
  const calls=[];
  const run=new Function('submitRepositoryWork','directGithubOperation',
   `return async (request,directRequest=false)=>{
-    const embedded=false,ownerGithubNonAction=false,githubCheck=false,createRepository=false,coderRequest=null,directCoding=true;
+    const embedded=false,ownerGithubNonAction=false,githubCheck=false,createRepository=false,coderRequest=null;
+    ${intent}
+    const directCoding=codeTask;
     const repoCreateQualifiers=null,neuralCoding=false,repositoryAdvice=null,imageWorkEvidence='',activeCardEvidence=null,contextualPluralRepair=false;
     const status={};let workEvidence='';
     const humanReplies=async()=>({workReply:t=>t.status,githubReply:r=>r.status});
@@ -273,10 +276,22 @@ test('an ordinary chat repair reaches the tested repository runner, while direct
     return workEvidence;
   }`)(
   async (request,approval,repository)=>{calls.push(['runner',request,approval,repository]);return {status:'ready'};},
-  async args=>{calls.push(['github',args.mode,args.repository]);return {ok:true,status:'inspected'};}
+  async args=>{calls.push(['github',args.action,args.mode,args.repository,args.workflow]);return {ok:true,status:'inspected'};}
  );
  const repair='Fix the login route in www-infinity4/RecordB';
  assert.equal(await run(repair),'ready');
  assert.equal(await run('Inspect the source in www-infinity4/RecordB',true),'inspected');
- assert.deepEqual(calls,[['runner',repair,'explicit-user-command','www-infinity4/RecordB'],['github','read','www-infinity4/RecordB']]);
+ const workflowRepair='Fix the build.yml workflow in www-infinity4/RecordB so the check can execute';
+ assert.equal(await run(workflowRepair),'ready');
+ assert.equal(await run('Trigger build.yml workflow in www-infinity4/RecordB'),'inspected');
+ assert.equal(await run('Please execute deploy.yml workflow in www-infinity4/RecordB'),'inspected');
+ assert.equal(await run('List the build.yml workflow in www-infinity4/RecordB'),'inspected');
+ assert.deepEqual(calls,[
+  ['runner',repair,'explicit-user-command','www-infinity4/RecordB'],
+  ['github','assist','read','www-infinity4/RecordB',undefined],
+  ['runner',workflowRepair,'explicit-user-command','www-infinity4/RecordB'],
+  ['github','dispatch_workflow','actions','www-infinity4/RecordB','build.yml'],
+  ['github','dispatch_workflow','actions','www-infinity4/RecordB','deploy.yml'],
+  ['github','list_workflows','read','www-infinity4/RecordB',undefined]
+ ]);
 });

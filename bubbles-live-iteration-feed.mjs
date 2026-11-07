@@ -86,18 +86,23 @@ export function advanceLiveBits(previous,event){
   const agent=clean(event.agent,40),stage=clean(event.stage,100);
   const summary=clean(event.summary,180);
   const ticketId=clean(event.ticketId,30);
+  const runnerJob=clean(event.runnerJob,48);
   // Links come from the verified owner ticket.
   const evidence=typeof event.runUrl==='string'&&
     /^https:\/\/github\.com\/www-infinity4\/[A-Za-z0-9_.-]+\/(?:actions\/runs|pull)\/[0-9]+$/.test(event.runUrl)
     ?event.runUrl:'';
-  if(event.runnerPhase){
-   add(stage,event.runnerPhase==='attempt_failed'?'failed':'observed',
-    {ticketId,resource:repo,detail:summary,tool:'robot_brain.job',url:evidence});
+  if(runnerJob&&(event.runnerPhase||status!=='working'))for(const entry of s.entries){
+   if(entry.ticketId===ticketId&&entry.runnerJob===runnerJob&&entry.state==='running')entry.state='observed';
+  }
+  if(typeof event.runnerPhase==='string'&&event.runnerPhase){
+   const state=event.runnerPhase==='attempt_failed'?'failed':
+    event.runnerPhase.endsWith('_started')&&status==='working'?'running':'observed';
+   add(stage,state,{ticketId,runnerJob,resource:repo,detail:summary,tool:'robot_brain.job',url:evidence});
    return s;
   }
   const label=status==='blocked'?'blocked':status==='working'?'working reported (result pending)':status==='deployed_verified'?'deployment recorded':status==='merged_verified'?'merge recorded':status==='committed_unverified'?'commit awaiting verification':status==='ready'||status==='queued'?'waiting for runner':status==='superseded'?'superseded':'result recorded';
   add('GitHub · '+(agent||'Brain')+' · '+label,status==='blocked'?'failed':status==='working'?'running':'observed',{
-   ticketId,resource:repo,criteria:stage,detail:summary||'Stage recorded in the owner Brain ledger; result evidence remains separate.',
+   ticketId,runnerJob,resource:repo,criteria:stage,detail:summary||'Stage recorded in the owner Brain ledger; result evidence remains separate.',
    tool:'robot_brain.job',receiptTail:'',url:evidence
   });
   return s;
@@ -106,10 +111,10 @@ export function advanceLiveBits(previous,event){
   const repo=clean(event.repository,95),state=clean(event.status,35);
   if(!/^www-infinity4\/[A-Za-z0-9_.-]{1,80}$/.test(repo)||!['queued','ready','working','blocked','committed_unverified','merged_verified','deployed_verified','complete','completed'].includes(state))return s;
   const phrase=state==='queued'||state==='ready'?'runner queued':state==='working'?'runner working':state==='blocked'?'runner blocked':state==='deployed_verified'?'deployment verified by Brain':state==='merged_verified'?'merge verified; deployment pending':'result awaiting independent verification';
-  // The ticket is polled every 15 seconds. Identical state is one iteration.
+  // Identical owner snapshots never create or redraw a progress row.
   const ticketId=clean(event.ticketId,30);
   const signature=ticketId+'|'+repo+'|'+state;
-  if(s.lastJobStatus===signature)return s;
+  if(s.lastJobStatus===signature)return previous;
   s.lastJobStatus=signature;
   add('GitHub · '+phrase,state==='blocked'?'failed':state==='working'?'running':'observed',{ticketId,resource:repo,detail:'This reports job state; it does not mint a Bubble Bit or independently verify a deployment.'});
   return s;
@@ -213,7 +218,9 @@ if(typeof window!=='undefined'&&typeof document!=='undefined'&&!window.__Bubbles
   const kind=event?.detail?.type;
   if(kind==='turn_started'){turnVisible=false;mount();render?.begin();}
   if(kind==='session_changed'){turnVisible=false;mount();render?.reset();}
-  state=advanceLiveBits(state,event.detail);
+  const next=advanceLiveBits(state,event.detail);
+  if(next===state)return;
+  state=next;
   mount();
   const ticketId=['job','job_step'].includes(kind)?event.detail.ticketId:'';
   if(ticketId)render?.show(state,ticketId);

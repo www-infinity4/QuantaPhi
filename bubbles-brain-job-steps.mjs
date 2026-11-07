@@ -4,6 +4,7 @@
 const REPO=/^www-infinity4\/[A-Za-z0-9_.-]{1,80}$/;
 const JOB=/^[A-Za-z0-9_-]{1,48}$/;
 const STATES=new Set(['queued','ready','working','blocked','committed_unverified','merged_verified','deployed_verified','complete','completed','superseded']);
+const RUNNER_PHASE=/^(?:discovery_started|planning_started|source_read|patch_started|patch_prepared|review_started|checks_started|checks_passed|arbitration_started|publication_started|pr_opened|attempt_failed)$/;
 const safeText=(v,limit)=>typeof v==='string'?v.replace(/[\u0000-\u001f\u007f<>]/g,' ').replace(/\s+/g,' ').trim().slice(0,limit):'';
 function safeRunUrl(value,repository){
  try{
@@ -23,7 +24,7 @@ export function projectVerifiedJobTransitions(ticket,previous={}){
   !REPO.test(ticket.repository||'')||!Array.isArray(ticket.context?.color_jobs))
   return {events:[],markers:previous};
  const old=previous.__ticketId===ticket.id?previous:{};
- const markers={__ticketId:ticket.id},events=[];
+ const markers={...old,__ticketId:ticket.id},events=[];
  for(const job of ticket.context.color_jobs.slice(0,12)){
   if(!JOB.test(job?.id||'')||job.repository!==ticket.repository||!STATES.has(job.status))continue;
   const p=job.progress&&typeof job.progress==='object'?job.progress:{};
@@ -31,23 +32,31 @@ export function projectVerifiedJobTransitions(ticket,previous={}){
   const runUrl=safeRunUrl(p.runUrl||p.url||'',ticket.repository);
   const agent=safeText(job.agent||'',40);
   const stage=safeText(job.title||'',100);
-  for(const step of (Array.isArray(p.runnerSteps)?p.runnerSteps:[]).slice(-20)){
+  const steps=(Array.isArray(p.runnerSteps)?p.runnerSteps:[]).slice(-36);
+  let hasRunnerProgress=false;
+  for(const step of steps){
    const runnerUrl=safeRunUrl(step?.runUrl,ticket.repository);
    const label=safeText(step?.label,100);
-   if(!runnerUrl||!label||!/^\d+-[0-3]-(?:source_read|patch_prepared|checks_started|checks_passed|attempt_failed|pr_opened)$/.test(step?.id||''))continue;
+   const run=runnerUrl.match(/\/actions\/runs\/(\d+)$/)?.[1];
+   const runAttempt=step?.runAttempt??1;
+   if(!run||!label||!RUNNER_PHASE.test(step.phase||'')||!Number.isInteger(step.attempt)||step.attempt<0||step.attempt>3||
+    !Number.isInteger(runAttempt)||runAttempt<1||runAttempt>9999||
+    step.id!==run+(runAttempt===1?'':'.'+runAttempt)+'-'+step.attempt+'-'+step.phase)continue;
+   if(runnerUrl===runUrl)hasRunnerProgress=true;
    const key=job.id+'|'+step.id;
+   if(markers[key])continue;
    markers[key]=true;
-   if(old[key])continue;
    events.push({type:'job_step',repository:ticket.repository,agent,status:job.status,
     stage:label+(step.attempt?' · attempt '+step.attempt:''),summary:safeText(step.summary,180),
-    runUrl:safeRunUrl(step.prUrl,ticket.repository)||runnerUrl,runnerPhase:step.phase,
+    runUrl:safeRunUrl(step.prUrl,ticket.repository)||runnerUrl,runnerPhase:step.phase,runnerJob:job.id,
     source:'owner_ticket_snapshot',verifiedCompletion:false});
   }
   const fingerprint=JSON.stringify([job.status,summary,runUrl]);
   markers[job.id]=fingerprint;
-  if(old[job.id]===fingerprint)continue;
+  if(old[job.id]===fingerprint||(job.status==='working'&&hasRunnerProgress))continue;
   events.push({type:'job_step',repository:ticket.repository,agent,status:job.status,
-   summary,stage,runUrl,source:'owner_ticket_snapshot',verifiedCompletion:false});
+   summary,stage,runUrl,runnerJob:job.id,source:'owner_ticket_snapshot',verifiedCompletion:false});
  }
+ for(const key of Object.keys(markers).filter(key=>key.includes('|')).slice(0,-600))delete markers[key];
  return {events,markers};
 }

@@ -81,3 +81,10 @@ A fresh reviewer approved source merge with BUBBLE_BITS_ENABLED absent/OFF after
 - The runner uses a temporary checkout at a pinned commit. It prepares exact block edits, runs focused tests, and passes bounded terminal diagnostics to the next attempt. The new progress entries use the owner ticket, run identity, and source revision to show real attempts in the chat that submitted the repair.
 - Local verification covered a real test process exiting 1 and then 0 after a corrected patch. The harness supplied the candidate edits. Production acceptance still requires a signed owner chat request with an actual runner claim, test receipt, and pull request returned to that chat.
 - State is source tested. This is one additional documented session. Overall percentage and remaining sessions are unknown. The next action is to check the updated PR heads in CI and review them for the existing guarded release.
+
+## November 6 CT · Independent release review
+
+- Independent review found a dispatch regression in QuantaPhi #1737. Preserve explicit `trigger` and `execute` requests while keeping ordinary workflow source repairs on the repository runner.
+- Independent review of Moltnook #244 reproduced parent process credential visibility with synthetic values. Repository checks now use a disposable container copy, with no network for test or build execution. Only dependency acquisition uses network access, with npm lifecycle hooks disabled. Verify the hosted isolation probe before accepting the runner change.
+- The runner verifies staged files against the reviewed patch. Screenshot archival excludes symlinks and verifies image signatures before upload.
+- State is source tested and pending final head review, guarded release, and live authenticated acceptance. No coordinator lease was claimed. The next action is to inspect the actual Docker probe and exact-head PR checks.

@@ -313,6 +313,7 @@ const THREAD_PREFIX=THREAD_INDEX+':';
 const TAB_THREAD=THREAD_INDEX+':tab';
 const EXPLICIT_THREAD=TAB_THREAD+':explicit';
 const UPDATE_RELOAD_THREAD=TAB_THREAD+':site-update-reload';
+const ACTIVE_WORK_REF='bubbles-last-active-work-v1';
 // Kept solely to preserve old website/APK conversations in History. Never the
 // default for a newly opened chat.
 const SHARED_MAIN_THREAD='bubbles_shared_main_v1';
@@ -327,7 +328,7 @@ if(keepChat&&legacy?.length&&!data(THREAD_INDEX+':migrated',false)){
 }
 // A new page/app opening is a new conversation. sessionStorage survives
 // WebView restarts, so it MUST NOT silently reopen a previously selected chat.
-// Only a site-revision reload initiated by our own updater may resume a thread.
+// A same-tab reload can resume a saved repository job in its original thread.
 let lastTab='',resumeSiteUpdate=false;
 try{
  lastTab=sessionStorage.getItem(TAB_THREAD)||'';
@@ -337,7 +338,9 @@ try{
 const freshThreadId=()=> 'chat_'+crypto.randomUUID().replaceAll('-','');
 const embeddedResume=embedded&&keepChat?(threadIndex.find(t=>t.id===lastTab)?.id||
  threadIndex.find(t=>Array.isArray(data(THREAD_PREFIX+t.id,null))&&data(THREAD_PREFIX+t.id,[]).length)?.id||''):'';
-let activeThread=embeddedResume||(resumeSiteUpdate&&threadIndex.some(t=>t.id===lastTab)?lastTab:freshThreadId());
+const reloadWithWork=keepChat&&typeof performance!=='undefined'&&
+ performance.getEntriesByType?.('navigation')[0]?.type==='reload'&&Boolean(recentWorkRef(lastTab));
+let activeThread=embeddedResume||((resumeSiteUpdate||reloadWithWork)&&threadIndex.some(t=>t.id===lastTab)?lastTab:freshThreadId());
 try{
  sessionStorage.setItem(TAB_THREAD,activeThread);
  sessionStorage.setItem(EXPLICIT_THREAD,'0');
@@ -3123,7 +3126,10 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // source changes use the repository runner after resolving their target.
  const requestsAgents=/\b(?:multi[- ]agent|color[- ]bot|all\s+(?:my\s+)?bots|bot\s+team|team\s+of\s+bots|run\s+the\s+bots|purple\s+orchestrat|run\s+all\s+agents)\b/i.test(request)
   ||/\b(?:use|via|through|delegate(?:\s+to)?|send(?:\s+to)?|ask|run|start|launch|engage)\s+(?:the\s+)?(?:robot\s*brain|moltnook)\b/i.test(request);
- const codeTask=/\b(?:add|insert|attach|edit|fix|repair|update|upgrade|change|implement|write|commit|push|refactor|patch|inspect|review|check|create|build|populate|scaffold|test|run|move|put|place|relocate)\b[\s\S]{0,180}\b(?:github|repositor(?:y|ies)|repos?|code|source|files?|readme|scripts?|worker|website|page|card|button|approval|app|apk|bubbles|quantaphi|workflow|actions|branch|pull\s+request|pr|login\s+route|api\s+(?:route|endpoint))\b/i.test(request);
+ const workflowIntent=/\b(?:github\s+actions?|workflow|workflows)\b/i.test(request);
+ const runCommand=/^(?:(?:please|hey|bubbles)[\s,:]+)*(?:(?:can|could|would|will) you\s+)?(?:run|start|trigger|dispatch|rerun|execute)\b/i.test(request);
+ const codeTask=/\b(?:add|insert|attach|edit|fix|repair|update|upgrade|change|implement|write|commit|push|refactor|patch|inspect|review|check|create|build|populate|scaffold|test|run|move|put|place|relocate)\b[\s\S]{0,180}\b(?:github|repositor(?:y|ies)|repos?|code|source|files?|readme|scripts?|worker|website|page|card|button|approval|app|apk|bubbles|quantaphi|workflow|actions|branch|pull\s+request|pr|login\s+route|api\s+(?:route|endpoint))\b/i.test(request)||
+  workflowIntent&&(runCommand||/\b(?:list|show)\b/i.test(request));
  // Owner-named RecordB issue #2 is a multi-agent implementation job, not a
  // generic GitHub 'assist' operation or a read-only work history report.
  const namedRecordBIssue=/\brecord\s?b\b/i.test(request)&&/\bissue\s*#?\s*2\b/i.test(request);
@@ -3268,10 +3274,11 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    ?'Tell Bubbles the repository name, for example: create a repository named StoryPhi.'
    :'I could not verify a single repository for this request. Tell me which feature you mean.');
   else try{
-   const mode=(coderRequest||/\b(?:run|start|dispatch|rerun)\b.{0,80}\b(?:workflow|actions|build)\b/i.test(request))?'actions':neuralCoding||/\b(?:add|create|make|build|generate|insert|attach|fix|repair|update|upgrade|implement|edit|write|push|replace|correct|refactor|populate|scaffold|move|put|place|relocate)\b/i.test(request)?'write':'read';
    const namedWorkflow=request.match(/\b([a-z0-9][a-z0-9_.-]*\.ya?ml)\b/i)?.[1]||'';
-   const workflowIntent=/\b(?:github\s+actions?|workflow|workflows)\b/i.test(request);
-   const workflowDispatch=workflowIntent&&/\b(?:run|start|trigger|dispatch|rerun|execute)\b/i.test(request);
+   const workflowDispatch=workflowIntent&&runCommand;
+   const sourceRequest=namedWorkflow?request.replace(namedWorkflow,''):request;
+   const sourceEdit=neuralCoding||/\b(?:add|create|make|build|generate|insert|attach|fix|repair|update|upgrade|implement|edit|write|push|replace|correct|refactor|populate|scaffold|move|put|place|relocate)\b/i.test(sourceRequest);
+   const mode=coderRequest||workflowDispatch||runCommand&&/\bbuild\b/i.test(sourceRequest)?'actions':sourceEdit?'write':'read';
    const action=createRepository?'create_repository':githubCheck?'capabilities':
      workflowIntent&&mode!=='write'?(namedWorkflow&&workflowDispatch?'dispatch_workflow':'list_workflows'):'assist';
    const engineeringRequest=request+(contextualPluralRepair?'\nPrior owner defect statement for THIS plural repair (context only; verify against source before editing): '+contextualRepairQuery.slice(request.length).trim():'')+(sourceHint?'\nVerified discovery: '+sourceHint.path+' in '+repository+'. Re-read it at the pinned head before editing.':'');
@@ -4170,7 +4177,8 @@ const progressTracker=brainTools?.ProgressTracker?new brainTools.ProgressTracker
 let progressPolling=false,progressUnavailable=false;
 let activeIterationTicketId=''; // Only a ticket submitted by this chat can update its Build role.
 let activeIterationThreadId='';
-const ACTIVE_WORK_REF='bubbles-last-active-work-v1';
+let activeIterationPending=true;
+let iterationRetryAt=0;
 let ownerJobMarkers={}; // Dedup real signed per-job changes, never count polling as work.
 function workRefs(){
  try{
@@ -4178,12 +4186,22 @@ function workRefs(){
   return (Array.isArray(saved)?saved:saved?[saved]:[]).filter(row=>row&&typeof row.thread==='string');
  }catch{return [];}
 }
-async function pollBrainProgress(){
+function recentWorkRef(thread){
+ const now=Date.now();
+ return workRefs().find(row=>row.thread===thread&&Number.isFinite(row.at)&&row.at<=now&&now-row.at<7*86400000&&
+  /^IW-[0-9]{8}-[A-Z0-9]{8}$/.test(row.ticketId||''));
+}
+async function pollBrainProgress(iterationOnly=false){
  if(embedded||!ownerReady||!progressTracker||progressPolling)return;
+ const pollingThread=activeThread;
+ const ref=activeIterationTicketId&&activeIterationThreadId===pollingThread?{ticketId:activeIterationTicketId}:recentWorkRef(pollingThread);
+ if(iterationOnly&&(document.hidden||Date.now()<iterationRetryAt||!ref||!/^chat_[a-f0-9]{32}$/.test(pollingThread)||
+  (activeIterationThreadId===pollingThread&&!activeIterationPending)))return;
  progressPolling=true;
  try{
   const headers=await verifiedOwnerHeaders();
-  const response=await bubblesFetch(BRAIN+'/work/tickets/list',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:'{}',cache:'no-store'},12000);
+  const body=iterationOnly?JSON.stringify({iteration:{ticketId:ref.ticketId,threadId:pollingThread}}):'{}';
+  const response=await bubblesFetch(BRAIN+'/work/tickets/list',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body,cache:'no-store'},iterationOnly?5000:12000);
   const result=await response.json();
   if(!response.ok||!result.ok||!Array.isArray(result.tickets))throw Error('Brain unreachable');
   // A sign-out, wallet/account switch or re-pair during the network wait must
@@ -4191,30 +4209,25 @@ async function pollBrainProgress(){
   if(!ownerReady||ownerHeaders!==headers)return;
   // A safe website/PWA update may reload during a pending repository job.
   // The pointer becomes valid only when this owner's fresh signed list confirms it.
-  if(!activeIterationTicketId||activeIterationThreadId!==activeThread){
-   try{
-    const restored=workRefs().find(ref=>ref.thread===activeThread);
-    if(restored&&restored.thread===activeThread&&Number.isFinite(restored.at)&&
-       restored.at<=Date.now()&&Date.now()-restored.at<7*86400000&&
-       /^IW-[0-9]{8}-[A-Z0-9]{8}$/.test(restored.ticketId||'')){
-     const verified=result.tickets.find(ticket=>ticket?.id===restored.ticketId&&/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(ticket.repository||''));
-     if(verified){activeIterationTicketId=verified.id;activeIterationThreadId=activeThread;ownerJobMarkers={};}
-    }
-   }catch{/* Session storage blocked; verified live status still functions. */}
+  const matchesThread=ticket=>iterationOnly?ticket?.context?.iteration_thread===pollingThread:
+   !ticket?.context?.iteration_thread||ticket.context.iteration_thread===pollingThread;
+  if(pollingThread===activeThread&&ref&&(!activeIterationTicketId||activeIterationThreadId!==activeThread)){
+   const verified=result.tickets.find(ticket=>ticket?.id===ref.ticketId&&matchesThread(ticket));
+   if(verified){activeIterationTicketId=verified.id;activeIterationThreadId=activeThread;ownerJobMarkers={};}
   }
   // Unrelated historic/blocked Brain tickets are not this chat's execution result.
-  const iterationTicket=activeIterationTicketId&&activeIterationThreadId===activeThread
-   ?result.tickets.find(ticket=>ticket?.id===activeIterationTicketId&&/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(ticket.repository||''))
+  const iterationTicket=pollingThread===activeThread&&activeIterationTicketId&&activeIterationThreadId===activeThread
+   ?result.tickets.find(ticket=>ticket?.id===activeIterationTicketId&&matchesThread(ticket)&&/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(ticket.repository||''))
    :null;
   if(iterationTicket){
-   const iterationThread=activeThread;
+   activeIterationPending=['queued','ready','working'].includes(iterationTicket.status);
    if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
     type:'job',ticketId:iterationTicket.id,repository:iterationTicket.repository,status:iterationTicket.status,
     url:iterationTicket.progress?.url||''}}));
    try{
     // Verified owner ticket list, not a model answer, supplies these steps.
-    const {projectVerifiedJobTransitions}=await import('/bubbles-brain-job-steps.mjs?v=20261106-runner-steps1');
-    if(!ownerReady||ownerHeaders!==headers||activeThread!==iterationThread||
+    const {projectVerifiedJobTransitions}=await import('/bubbles-brain-job-steps.mjs?v=20261107-runner-steps2');
+    if(!ownerReady||ownerHeaders!==headers||activeThread!==pollingThread||
      activeIterationTicketId!==iterationTicket.id)return;
     const projection=projectVerifiedJobTransitions(iterationTicket,ownerJobMarkers);
     ownerJobMarkers=projection.markers;
@@ -4224,6 +4237,7 @@ async function pollBrainProgress(){
     }
    }catch{/* Optional display must not interrupt authenticated ticket polling. */}
   }
+  if(iterationOnly){if(!iterationTicket)iterationRetryAt=Date.now()+15000;return;}
   const counts=result.tickets.reduce((map,ticket)=>{const key=String(ticket?.status||'unknown');map[key]=(map[key]||0)+1;return map;},{});
   brainConnectionState('Connected · Work status available in Options', 'connected');
   resumePendingGithubReceipts();
@@ -4251,6 +4265,7 @@ async function pollBrainProgress(){
   if(updates.length)announceBrainProgress(updates.slice(-5).join(' '));
    if(typeof syncRedSectors==='function')void syncRedSectors().catch(()=>{if(!redLinkFailed){redLinkFailed=true;recordBrainNotice('Red-Brain connection is not responding. Ticket polling continues.');}});
  }catch{
+  if(iterationOnly){iterationRetryAt=Date.now()+15000;return;} // Normal owner polling reports connection failures.
   brainConnectionState('Brain unreachable · latest notices retained', 'unreachable');
   if(!progressUnavailable){progressUnavailable=true;recordBrainNotice('Robot Brain is unreachable. Retrying quietly; saved notices remain available.');}
  }finally{progressPolling=false;}
@@ -4260,11 +4275,17 @@ function announceBrainProgress(text){
  // Preserve authenticated Brain wording and hide accidental internal identifiers.
  const reply=/\b(?:request_id|ticket_id|run_id|IW-[0-9]{8})\b/i.test(String(text))
   ?'There is a new work update. The details are in Work details.':String(text);
- display(reply,'ai');messages.push({role:'assistant',text:reply});messages=messages.slice(-400);persistChat();
  if(nativeOverlay||config.voice){progressVoiceQueue.push(reply);if(progressVoiceQueue.length>5)progressVoiceQueue.shift();}
 }
 
-if(!embedded&&progressTracker&&typeof setInterval==='function')setInterval(()=>{void pollBrainProgress();if(!nativeOverlay&&config.voice&&!busy&&!speaking&&progressVoiceQueue.length)speakText(progressVoiceQueue.shift());},15000);
+if(!embedded&&progressTracker&&typeof setInterval==='function'){
+ setInterval(()=>{void pollBrainProgress();if(!nativeOverlay&&config.voice&&!busy&&!speaking&&progressVoiceQueue.length)speakText(progressVoiceQueue.shift());},15000);
+ setInterval(()=>void pollBrainProgress(true),2500);
+ window.addEventListener('bubbles:iteration',event=>{
+  if(event.detail?.type!=='session_changed')return;
+  activeIterationTicketId='';activeIterationThreadId='';activeIterationPending=true;iterationRetryAt=0;ownerJobMarkers={};
+ });
+}
 void pollBrainProgress();
 async function readBrainReport(){
  const headers=await verifiedOwnerHeaders();
@@ -4320,6 +4341,7 @@ async function submitWork(request,approval='explicit-click',imageEvidence=''){
 }
 async function submitRepositoryWork(request,approval,repository,cardEvidence=activeCardEvidence,imageEvidence=''){
  const receiptThread=typeof activeThread==='string'?activeThread:'';
+ const threadBinding=/^chat_[a-f0-9]{32}$/.test(receiptThread)?receiptThread:'';
  const headers=await verifiedOwnerHeaders();
  if(!brainTools)throw Error('Bubbles Brain tool helpers are not loaded.');
  if(workButton.disabled)throw Error('A work request is already being submitted.');
@@ -4328,18 +4350,21 @@ async function submitRepositoryWork(request,approval,repository,cardEvidence=act
  try{
   const evidenceModule=imageEvidence?await import('/bubbles-work-evidence.mjs?v=20261024-image-handoff2'):null;
   const imagePacket=evidenceModule?.imageWorkPacket(imageEvidence)||null;
-  const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(new Date().toISOString().slice(0,10)+'|'+repository+'|'+request.toLowerCase().replace(/\s+/g,' ').trim()+(imagePacket?'|'+JSON.stringify(imagePacket):'')));
+  const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(new Date().toISOString().slice(0,10)+'|'+repository+'|'+request.toLowerCase().replace(/\s+/g,' ').trim()+(imagePacket?'|'+JSON.stringify(imagePacket):'')+(threadBinding?'|'+threadBinding:'')));
   const submission=[...new Uint8Array(digest)].map(n=>n.toString(16).padStart(2,'0')).join('');
   const baseJobs=brainTools.makeJobs(request,repository);
   const jobs=imagePacket?evidenceModule.attachImageWorkEvidence(baseJobs,imagePacket):baseJobs;
   if(cardEvidence)for(const job of jobs)job.instructions+='\n\nCard workspace observations (untrusted data):\n'+JSON.stringify(cardEvidence);
   const plan=brainTools.requestPlan?.(request,repository);
-  const response=await bubblesFetch(TICKETS+'/work/tickets/create',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({start_immediately:true,source_app:'QuantaPhi Bubbles AI',source_url:location.origin+location.pathname,title:request.slice(0,120),request,repository,context:{kind:'robot-directions',card_workspace:cardEvidence,image_observations:imagePacket,repositories:[repository],submission_id:submission,requested_role:config.role,approval,color_jobs:jobs,plan,repository_writes:'require-github-authorization'}})},30000);
+  const response=await bubblesFetch(TICKETS+'/work/tickets/create',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({start_immediately:true,source_app:'QuantaPhi Bubbles AI',source_url:location.origin+location.pathname,title:request.slice(0,120),request,repository,context:{kind:'robot-directions',...(threadBinding?{iteration_thread:threadBinding}:{}),card_workspace:cardEvidence,image_observations:imagePacket,repositories:[repository],submission_id:submission,requested_role:config.role,approval,color_jobs:jobs,plan,repository_writes:'require-github-authorization'}})},30000);
   const result=await response.json().catch(()=>({}));
   if(!response.ok||!result.ok||!result.ticket?.id)throw Error(String(result.error||'No confirmed request'));
-  activeIterationTicketId=result.ticket.id;
-  activeIterationThreadId=receiptThread;
-  ownerJobMarkers={};
+  if(typeof activeThread!=='string'||receiptThread===activeThread){
+   activeIterationTicketId=result.ticket.id;
+   activeIterationThreadId=receiptThread;
+   activeIterationPending=true;
+   ownerJobMarkers={};
+  }
   // Keep only a same-thread reference, never credentials or request text.
   // Always revalidate against the current authenticated owner's backend.
   try{sessionStorage.setItem(ACTIVE_WORK_REF,JSON.stringify([
