@@ -258,7 +258,7 @@ async function xtTimeline(env,owner,url){
  let path;
  if(mode==='following'){
   if(!xtId(account.row?.x_user_id))throw xoErr('x_oauth_account_required',401);
-  path='/2/users/'+account.row.x_user_id+'/reverse_chronological_timeline?max_results=10&'+XT_FIELDS;
+  path='/2/users/'+account.row.x_user_id+'/timelines/reverse_chronological?max_results=10&'+XT_FIELDS;
  }else{
   const topic=(url.searchParams.get('q')||'science technology').trim();
   if(!xtTopic(topic))throw xoErr('invalid_public_search',400);
