@@ -3,356 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-07T21:31:13.216673Z",
+  "checked_at": "2026-11-07T22:01:15.313171Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "luke fahey",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-07T21:10:00Z",
+      "query": "ryan hopkins",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T21:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50370894/ohio-state-stick-luke-fahey-quarterback-vs-oregon",
-        "https://scarletandgame.com/how-ryan-day-plans-to-fix-ohio-state-s-broken-support-system-around-luke-fahey",
-        "https://sports.yahoo.com/articles/former-ohio-state-qb-cj-170037279.html"
+        "https://www.espn.com/college-football/story/_/id/50401113/source-wisconsin-start-freshman-ryan-hopkins-vs-rutgers",
+        "https://www.jsonline.com/story/sports/college/uw/2026/11/07/luke-fickell-wisconsin-badgers-football-quarterback-plan-colton-joseph-ryan-hopkins-rutgers/92664167007/",
+        "https://www.buckys5thquarter.com/wisconsin-badgers-football/91578/wisconsin-badgers-football-news-quarterback-change-necessary-ryan-hopkins-colton-joseph-luke-fickell"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZzO21mSaxETAzYNLU85l98ZULEc1dGAuwxiu9D3dR_s45HTuSgrUBFV_H6Gs",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvZREUMN3uzkjim7K15DJDxXD6YCw2kCXso_b_F3FeaIUbzQAo7FZMvdAABac",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/college-football/story/_/id/50370894/ohio-state-stick-luke-fahey-quarterback-vs-oregon",
-          "title": "Ohio State to stick with Luke Fahey at quarterback vs. Oregon",
+          "url": "https://www.espn.com/college-football/story/_/id/50401113/source-wisconsin-start-freshman-ryan-hopkins-vs-rutgers",
+          "title": "Source: Wisconsin to start freshman QB Ryan Hopkins vs. Rutgers",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZzO21mSaxETAzYNLU85l98ZULEc1dGAuwxiu9D3dR_s45HTuSgrUBFV_H6Gs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvZREUMN3uzkjim7K15DJDxXD6YCw2kCXso_b_F3FeaIUbzQAo7FZMvdAABac"
         },
         {
-          "url": "https://scarletandgame.com/how-ryan-day-plans-to-fix-ohio-state-s-broken-support-system-around-luke-fahey",
-          "title": "How Ryan Day plans to fix Ohio State's broken support system around Luke Fahey",
-          "publisher": "Scarlet and Game",
+          "url": "https://www.jsonline.com/story/sports/college/uw/2026/11/07/luke-fickell-wisconsin-badgers-football-quarterback-plan-colton-joseph-ryan-hopkins-rutgers/92664167007/",
+          "title": "Will Ryan Hopkins, Colton Joseph play for Wisconsin football vs Rutgers?",
+          "publisher": "Milwaukee Journal Sentinel",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC-QVcMEVFwbtgeRzI4CMohtim9KVlpKOf1ANjPVlp9J95MR_W9RGFkXQ_pLs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxSIlJLoeK7Ej6rSJVXGr02cJoE99WgAMzgdbfNGms9DhBEo4As01IJsIIO9o"
         },
         {
-          "url": "https://sports.yahoo.com/articles/former-ohio-state-qb-cj-170037279.html",
-          "title": "Former Ohio State QB CJ. Stroud Knows this Team is Going to Continue to Fight",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.buckys5thquarter.com/wisconsin-badgers-football/91578/wisconsin-badgers-football-news-quarterback-change-necessary-ryan-hopkins-colton-joseph-luke-fickell",
+          "title": "Are the Badgers right to make a QB change to Ryan Hopkins?",
+          "publisher": "Bucky's 5th Quarter",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNORE1MUQu_d4McUvOdFEFLdp2FrBsig5Psi8sGcFg3GLb0AkGeR1DdYxpU1s"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxYW28YGx2abSYDnDwMm14UMO9CGOtnx5MX_foBW8u4-nUE3IjTvqbg1UtWIs"
         }
       ]
     },
     {
-      "query": "rangers vs kraken",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T21:10:00Z",
+      "query": "n7 day",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T21:40:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/rangers/news/rangers-at-kraken-pregame-notes-11-07-26",
-        "https://sports.yahoo.com/articles/rangers-vs-kraken-prediction-pick-152041062.html",
-        "https://www.nytimes.com/athletic/7761438/2026/11/07/rangers-vs-kraken-stream-how-to-watch-nov-7/"
+        "https://www.ign.com/articles/mass-effect-cast-celebrates-n7-day-with-video-asking-fans-to-help-save-the-franchise",
+        "https://wnhub.io/news/other/item-52615",
+        "https://www.gamespot.com/articles/mass-effect-is-getting-a-new-art-collection-at-a-difficult-time-for-its-fans/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhJUr7cYH3NFl8P-FDORAlx9aDPouAG4lx0afoptwzmIEGSOOaTasmh6mltK4",
-      "image_credit": "NHL.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzZ4xxWcHy_MSyFV8vDNQzkcdKlxrAFzmIz5rUhj_lcW-jvjvGq8ufLY9I8ZA",
+      "image_credit": "IGN",
       "news": [
         {
-          "url": "https://www.nhl.com/rangers/news/rangers-at-kraken-pregame-notes-11-07-26",
-          "title": "Rangers at Kraken: Pregame Notes",
-          "publisher": "NHL.com",
+          "url": "https://www.ign.com/articles/mass-effect-cast-celebrates-n7-day-with-video-asking-fans-to-help-save-the-franchise",
+          "title": "'This Is Only the Beginning' — N7 Day Kicks Off With Video From the Cast Calling on Fans to Help Save Mass Effect",
+          "publisher": "IGN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhJUr7cYH3NFl8P-FDORAlx9aDPouAG4lx0afoptwzmIEGSOOaTasmh6mltK4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzZ4xxWcHy_MSyFV8vDNQzkcdKlxrAFzmIz5rUhj_lcW-jvjvGq8ufLY9I8ZA"
         },
         {
-          "url": "https://sports.yahoo.com/articles/rangers-vs-kraken-prediction-pick-152041062.html",
-          "title": "Rangers vs Kraken Prediction, Pick, NHL Odds for Saturday, November 7",
-          "publisher": "Yahoo Sports",
+          "url": "https://wnhub.io/news/other/item-52615",
+          "title": "BioWare Co-Founder: Saving Mass Effect 5 could cost more than $200 million",
+          "publisher": "WN Hub",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2FuwqJaHWi51kIBJT7F0Mq1PawvoJ7Hjp55Gw-0ZlBRuyUGFyRYdn0yCucMs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTreDdMUGxp9K0hPvuWY1t6KQbNuy7hUMmG-zghuHprWLSVu0vifGemljs7v4Q"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7761438/2026/11/07/rangers-vs-kraken-stream-how-to-watch-nov-7/",
-          "title": "How to watch Rangers vs. Kraken: TV channel and streaming options for November 7",
-          "publisher": "The New York Times",
+          "url": "https://www.gamespot.com/articles/mass-effect-is-getting-a-new-art-collection-at-a-difficult-time-for-its-fans/",
+          "title": "Mass Effect Is Getting A New Art Collection At A Difficult Time For Its Fans",
+          "publisher": "GameSpot",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjDHfHD6LhIJ4XDkWirEszpYJC2APsB8tpdAid5HEBj9RhW_P51_CVmjIRRbo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-F1JBVMnmNJYqGPMGeB18RHH5NmSSQKwoj3IcIH5IaUeaAx2AVUFNgKzVY-w"
         }
       ]
     },
     {
-      "query": "south alabama vs louisiana",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T21:10:00Z",
+      "query": "kelsey mitchell",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T21:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/south-alabama-vs-louisiana-prediction-110714444.html",
-        "https://www.al.com/sports/2026/11/scouting-report-what-you-need-to-know-for-south-alabamas-game-at-louisiana.html",
-        "https://www.theadvocate.com/acadiana/sports/ul_lafayette/cajuns-aiming-to-find-renewed-energy-after-a-week-off/article_4387cdcc-8dc0-449a-b725-a65862a5f633.html"
+        "https://www.si.com/wnba/fever/indiana-fever-s-defensive-woes-should-cement-kelsey-mitchell-s-future-01m6v9b8630d",
+        "https://athlonsports.com/wnba/sophie-cunningham-angel-reese-send-clear-message-to-indiana-fever-kelsey-mitchell",
+        "https://www.aol.com/articles/caitlin-clark-better-without-her-075022000.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTQiLc_fXh0vHzG4kPI73pZ5x_P9wgfgXCt-Lxkj21a-6b9ki4FzaNPGnmyx8",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZD6UAZ6Jk84q_nV4i0AmvRIjlPqGoJ0El6q672nyySYYoa5dmeWZShk42PZM",
+      "image_credit": "Sports Illustrated",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/south-alabama-vs-louisiana-prediction-110714444.html",
-          "title": "South Alabama vs Louisiana Prediction, Pick, NCAAF Odds for Saturday, Nov. 7",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.si.com/wnba/fever/indiana-fever-s-defensive-woes-should-cement-kelsey-mitchell-s-future-01m6v9b8630d",
+          "title": "Indiana Fever's Defensive Woes Should Cement Kelsey Mitchell's Future",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTQiLc_fXh0vHzG4kPI73pZ5x_P9wgfgXCt-Lxkj21a-6b9ki4FzaNPGnmyx8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZD6UAZ6Jk84q_nV4i0AmvRIjlPqGoJ0El6q672nyySYYoa5dmeWZShk42PZM"
         },
         {
-          "url": "https://www.al.com/sports/2026/11/scouting-report-what-you-need-to-know-for-south-alabamas-game-at-louisiana.html",
-          "title": "Scouting report: What you need to know for South Alabama’s game at Louisiana",
-          "publisher": "AL.com",
+          "url": "https://athlonsports.com/wnba/sophie-cunningham-angel-reese-send-clear-message-to-indiana-fever-kelsey-mitchell",
+          "title": "Sophie Cunningham, Angel Reese Send Clear Message to Indiana Fever’s Kelsey Mitchell",
+          "publisher": "Athlon Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLAoZbt1hIQxkwiDHLdYWqqGukUdtuzIVa1VhtHzXjKceYBEl0K708s1e-ivs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQJpocSrA-ifU3lRNJJVNjYquiGMmtyXSYXSpcHs3IBkfOe6AXyPYYYuCNtjQ"
         },
         {
-          "url": "https://www.theadvocate.com/acadiana/sports/ul_lafayette/cajuns-aiming-to-find-renewed-energy-after-a-week-off/article_4387cdcc-8dc0-449a-b725-a65862a5f633.html",
-          "title": "Cajuns counting on renewed energy from bye week ahead of matchup with South Alabama",
+          "url": "https://www.aol.com/articles/caitlin-clark-better-without-her-075022000.html",
+          "title": "‘(Caitlin Clark) Will Be Better Without Her,’ ‘Would Love To See Her Back’ — WNBA Fans Divided Over Linda Cohn’s Take on Kelsey Mitchell’s Free Agency",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrkxqiyWRKiCvqxh12UoGwR5-pSu1JgfPBO9Rvfrx9uFUFgJHU259PrjINjdI"
+        }
+      ]
+    },
+    {
+      "query": "southern university football",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T21:30:00Z",
+      "related_news_urls": [
+        "https://bcuathletics.com/news/2026/11/5/football-battles-southern-in-final-road-contest.aspx",
+        "https://www.wafb.com/2026/11/07/southern-vs-bethune-cookman-live-updates-aw-mumford-stadium/",
+        "https://www.theadvocate.com/baton_rouge/sports/southern/toyloy-browns-prediction-on-southern-bethune-cookman-swac/article_f5b30285-72e4-4dd1-8865-6630e15d9f3a.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReTbmlfMBoNXCcVN_q03q36j1AfMsFjAVCVcgwaW1BEm_-CVEW0y_xb83UKm0",
+      "image_credit": "Bethune-Cookman University Athletics",
+      "news": [
+        {
+          "url": "https://bcuathletics.com/news/2026/11/5/football-battles-southern-in-final-road-contest.aspx",
+          "title": "Football Battles Southern in Final Road Contest",
+          "publisher": "Bethune-Cookman University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReTbmlfMBoNXCcVN_q03q36j1AfMsFjAVCVcgwaW1BEm_-CVEW0y_xb83UKm0"
+        },
+        {
+          "url": "https://www.wafb.com/2026/11/07/southern-vs-bethune-cookman-live-updates-aw-mumford-stadium/",
+          "title": "Southern leads Bethune-Cookman 31-3 at halftime",
+          "publisher": "WAFB",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeBJurg_wsWiy5si5Ib9L-CXU4NyeM4oXL88ODwP_gw33RVsarIQKtTwHV9EE"
+        },
+        {
+          "url": "https://www.theadvocate.com/baton_rouge/sports/southern/toyloy-browns-prediction-on-southern-bethune-cookman-swac/article_f5b30285-72e4-4dd1-8865-6630e15d9f3a.html",
+          "title": "Toyloy Brown's prediction on the Southern-Bethune-Cookman game",
           "publisher": "The Advocate",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlq1eJAfXHZuXT4dbV_04kI750NVFPKHieEaEwC6JVhZ8t4lXQw3z51jshD30"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1FkKGS_KOP0BTA1VQYPJnztvA_khru6_KXh3J0_V9jUx72PpHNASKhN_EWrY"
         }
       ]
     },
     {
-      "query": "wellington turman",
+      "query": "eastern wa vs idaho",
       "approx_searches": "500+",
-      "published_at": "2026-11-07T21:10:00Z",
+      "published_at": "2026-11-07T21:20:00Z",
       "related_news_urls": [
-        "https://dknetwork.draftkings.com/2026/11/07/prediction-pick-for-seokhyeon-ko-vs-wellington-turman-at-ufc-vegas-124/",
-        "https://www.starnewskorea.com/en/sports/2026/11/07/2026110712551329786",
-        "https://www.ufc.com/video/161630"
+        "https://twaslnews1.twaslnews.com/7283001/",
+        "https://www.spokesman.com/stories/2026/nov/06/how-ewu-can-earn-first-road-win-at-idaho-since-201/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuQqGr2H2ntO6KWKNkrtk-QgF_RGm_SQXVtB7YJl27CrSk3_6XCK2LRME7W-U",
-      "image_credit": "DraftKings Network",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX9QtaqrSWglbOg9y8gJOhIYrPBH55tkZDxac3JZHBXXYqR6JH1nM7aVkLu74",
+      "image_credit": "شبكة تواصل الإخبارية",
       "news": [
         {
-          "url": "https://dknetwork.draftkings.com/2026/11/07/prediction-pick-for-seokhyeon-ko-vs-wellington-turman-at-ufc-vegas-124/",
-          "title": "Prediction, pick for Seokhyeon Ko vs. Wellington Turman at UFC Vegas 124",
-          "publisher": "DraftKings Network",
+          "url": "https://twaslnews1.twaslnews.com/7283001/",
+          "title": "Why Idaho’s Che-Scow Cup matchup with Eastern Washington could define its late-season push — Eastern Washington Vs Idaho",
+          "publisher": "شبكة تواصل الإخبارية",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuQqGr2H2ntO6KWKNkrtk-QgF_RGm_SQXVtB7YJl27CrSk3_6XCK2LRME7W-U"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX9QtaqrSWglbOg9y8gJOhIYrPBH55tkZDxac3JZHBXXYqR6JH1nM7aVkLu74"
         },
         {
-          "url": "https://www.starnewskorea.com/en/sports/2026/11/07/2026110712551329786",
-          "title": "\"Even gave up our honeymoon\": Ko Suk-hyun, \"My motivation is exceptional, my mental state is at its peak...\" Passes UFC weigh-in",
-          "publisher": "스타뉴스",
+          "url": "https://www.spokesman.com/stories/2026/nov/06/how-ewu-can-earn-first-road-win-at-idaho-since-201/",
+          "title": "How EWU can earn first road win at Idaho since 2012 | Things to watch",
+          "publisher": "The Spokesman-Review",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7n8_wn01JuY95otdWKwY7SbO5UysBe243RQeCUxQOOy_7cE6ULRisPFCFaow"
-        },
-        {
-          "url": "https://www.ufc.com/video/161630",
-          "title": "Seokhyeon Ko: 'I'm Definitely Going To Knock Him Out' | UFC Fight Night: Cortes Acosta vs Walker",
-          "publisher": "UFC.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrOB0Ku-8wUgtFWkrHc7fB9cqOM6h4ay8imw5EXxf5-nPT0aBhcASYd2Rs1fo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGxKIzOcGZONuxpesNdMlsSksOVJo3CeZMkXY1R08m_fEwof-UspdTZrZZUWw"
         }
       ]
     },
     {
-      "query": "prince william kate middleton remembrance 2026",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T21:10:00Z",
+      "query": "atlético mineiro vs grêmio",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T21:20:00Z",
       "related_news_urls": [
-        "https://people.com/kate-middleton-prince-william-attend-festival-of-remembrance-12238132",
-        "https://www.yahoo.com/entertainment/celebrity/royals/articles/sophie-duchess-edinburgh-debuts-statement-192233409.html",
-        "https://www.telegraph.co.uk/royal-family/2026/11/07/waleses-king-queen-honour-armed-forces-remembrance/"
+        "https://ge.globo.com/mg/futebol/copa-do-brasil/noticia/2026/11/07/atletico-mg-x-gremio-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
+        "https://www.uol.com.br/esporte/futebol/ultimas-noticias/2026/11/07/escalacao-atletico-mg-gremio-copa-do-brasil.ghtm",
+        "https://www.sportingnews.com/br/futebol/noticias/gremio-quantas-finais-copa-do-brasil/b9dce3a8de67c03420541c94"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCCE_69uh-Ro7-3b0aomPFOEPOqVzJcSqi9sdFuLOZpsKewaafFyELjsDmak4",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/kate-middleton-prince-william-attend-festival-of-remembrance-12238132",
-          "title": "Kate Middleton and Prince William Step Out Together for Royal Remembrance Event After Last Year’s Shakeup",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCCE_69uh-Ro7-3b0aomPFOEPOqVzJcSqi9sdFuLOZpsKewaafFyELjsDmak4"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/royals/articles/sophie-duchess-edinburgh-debuts-statement-192233409.html",
-          "title": "Sophie, Duchess of Edinburgh Debuts New Statement Gold Choker at the Festival of Remembrance",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvponoX8q5VvHC024X4u2_Qqm6YMSoLYqMQYajwRWkuKTqrxQIla16hKaj38g"
-        },
-        {
-          "url": "https://www.telegraph.co.uk/royal-family/2026/11/07/waleses-king-queen-honour-armed-forces-remembrance/",
-          "title": "Prince and Princess of Wales join King and Queen at Festival of Remembrance",
-          "publisher": "The Telegraph",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS8MDFYYd-SzHrQD1u6s0UWVNM0p1M4IALVgif1_jFe8UhCc8t3IWamUfNTPc"
-        }
-      ]
-    },
-    {
-      "query": "mls schedule",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T21:10:00Z",
-      "related_news_urls": [
-        "https://www.mlssoccer.com/playoffs/2026/news/decision-day-scenarios-final-playoff-spots-round-one-hosting-2026",
-        "https://www.sportsvideo.org/2026/11/06/with-decision-day-on-deck-mls-productions-stamford-hub-prepares-for-15-matches-in-five-hours/",
-        "https://www.espn.com/soccer/story/_/id/50359073/mls-power-rankings-inter-miami-find-their-feet-decision-day-coming-up"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbZROCUie-lwwnsa7TxGh81t-RZUM_qltQWPwgKNFoKdhKe0QYyg_C1xpD6UI",
-      "image_credit": "MLSsoccer.com",
-      "news": [
-        {
-          "url": "https://www.mlssoccer.com/playoffs/2026/news/decision-day-scenarios-final-playoff-spots-round-one-hosting-2026",
-          "title": "Decision Day scenarios: Final playoff spots & Round One hosting",
-          "publisher": "MLSsoccer.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbZROCUie-lwwnsa7TxGh81t-RZUM_qltQWPwgKNFoKdhKe0QYyg_C1xpD6UI"
-        },
-        {
-          "url": "https://www.sportsvideo.org/2026/11/06/with-decision-day-on-deck-mls-productions-stamford-hub-prepares-for-15-matches-in-five-hours/",
-          "title": "With Decision Day on Deck, MLS Productions’ Stamford Hub Prepares for 15 Matches in Five Hours",
-          "publisher": "Sports Video Group",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLUqU4pAS9NcL4Z2j8RPqM9OA9bFsQR3veS-HF_E9tpcMkhZOaCWDYCoL5JRM"
-        },
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50359073/mls-power-rankings-inter-miami-find-their-feet-decision-day-coming-up",
-          "title": "MLS Power Rankings: Miamis finds its feet with Decision Day coming up",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTqsA1WDouYi0_GAOBMAwMgSzgkR7Hf6F4PKVJaRiM_Lv7ZMVwnlY3Y0e0H-g"
-        }
-      ]
-    },
-    {
-      "query": "copa do brasil",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T21:10:00Z",
-      "related_news_urls": [
-        "https://ge.globo.com/mg/futebol/copa-do-brasil/jogo/07-11-2026/atletico-mg-gremio.ghtml",
-        "https://tangerina.uol.com.br/mix/vai-passar-no-youtube-onde-assistir-atletico-mg-x-gremio-ao-vivo-hoje/",
-        "https://www.itatiaia.com.br/esportes/futebol/futebol-nacional/copa-do-brasil/atletico-x-gremio-fumaca-de-sinalizadores-provoca-atraso-no-inicio-da-partida/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMbG65QjCyhz9E4ldfxZyTCZ5Q2MB4cjc-FjWbcWPK_lIdocC7GC9lnPM-dxM",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBZJDbtTDOsp3krZAmXHPtWwVuSat-ZnAZJdKc47F0DpS_V1IZpgMWVOU2aTI",
       "image_credit": "ge",
       "news": [
         {
-          "url": "https://ge.globo.com/mg/futebol/copa-do-brasil/jogo/07-11-2026/atletico-mg-gremio.ghtml",
-          "title": "Ao vivo: Atlético-MG x Grêmio | Semifinal | Copa do Brasil",
+          "url": "https://ge.globo.com/mg/futebol/copa-do-brasil/noticia/2026/11/07/atletico-mg-x-gremio-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
+          "title": "Atlético-MG x Grêmio: onde assistir ao vivo, horário e escalações",
           "publisher": "ge",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMbG65QjCyhz9E4ldfxZyTCZ5Q2MB4cjc-FjWbcWPK_lIdocC7GC9lnPM-dxM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBZJDbtTDOsp3krZAmXHPtWwVuSat-ZnAZJdKc47F0DpS_V1IZpgMWVOU2aTI"
         },
         {
-          "url": "https://tangerina.uol.com.br/mix/vai-passar-no-youtube-onde-assistir-atletico-mg-x-gremio-ao-vivo-hoje/",
-          "title": "Vai passar no YouTube? Onde assistir Atlético-MG x Grêmio ao vivo hoje",
+          "url": "https://www.uol.com.br/esporte/futebol/ultimas-noticias/2026/11/07/escalacao-atletico-mg-gremio-copa-do-brasil.ghtm",
+          "title": "Fred volta ao banco no Atlético-MG, e Grêmio tem Marlon; veja times",
           "publisher": "UOL",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaspJQki8JoNHFr-turXKNz9sAjAelajX8-1opWTao6pz9pqOYMiedGXWvuSg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9z0NxOin_EhjrEZf4Zr2_06y_x952kIZWi4X_RDxXWN-GnavnAnOlISse7r0"
         },
         {
-          "url": "https://www.itatiaia.com.br/esportes/futebol/futebol-nacional/copa-do-brasil/atletico-x-gremio-fumaca-de-sinalizadores-provoca-atraso-no-inicio-da-partida/",
-          "title": "Atlético x Grêmio: fumaça de sinalizadores provoca atraso no início da partida",
-          "publisher": "Rádio Itatiaia",
+          "url": "https://www.sportingnews.com/br/futebol/noticias/gremio-quantas-finais-copa-do-brasil/b9dce3a8de67c03420541c94",
+          "title": "Quantas vezes o Grêmio chegou à final da Copa do Brasil?",
+          "publisher": "www.sportingnews.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzo7sOho3ML7PoIzR0XglLoP7MuXsEPhvZYhJEO3mqMd5LvBtVABrlGlTao-A"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAuNn0eYYZCBMkXRy17W9RytxCvM78T2XoPRcQAUhXTPsa-cm0LPhXEgPWnHY"
         }
       ]
     },
     {
-      "query": "murtazali magomedov",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T21:10:00Z",
+      "query": "northern az vs cal poly",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T21:20:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/jose-delano-ufc-matchmaker-sean-190000255.html",
-        "https://www.ufc.com/news/jose-delano-chasing-dreams-ufc-vegas-124",
-        "https://sports.betmgm.com/en/blog/ufc/vegas-124-jose-delano-murtazali-magomedov-predictions-odds-bm05/"
+        "https://gopoly.com/news/2026/11/5/football-mustangs-host-no-6-northern-arizona-in-saturday-senior-day-matchup-to-close-home-schedule",
+        "https://sports.yahoo.com/articles/no-6-northern-arizona-football-235134853.html",
+        "https://www.fubo.tv/welcome/matches/945853e9-2c0e-4d3a-ba5a-ee08cc22b302"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSztLktwTXcsIOHPbw-F0f88ZrauKLGNy7KBR3cZgE_NUthptQy5AvtBIpiEcA",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWWcE8VtmU8xfoxOeJsubjCFNONXrh6x4GYlIUicwKcWMUD8wDGF-T8_tRojU",
+      "image_credit": "Cal Poly Athletics",
+      "news": [
+        {
+          "url": "https://gopoly.com/news/2026/11/5/football-mustangs-host-no-6-northern-arizona-in-saturday-senior-day-matchup-to-close-home-schedule",
+          "title": "Mustangs Host No. 6 Northern Arizona in Saturday Senior Day Matchup to Close Home Schedule",
+          "publisher": "Cal Poly Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWWcE8VtmU8xfoxOeJsubjCFNONXrh6x4GYlIUicwKcWMUD8wDGF-T8_tRojU"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/no-6-northern-arizona-football-235134853.html",
+          "title": "No. 6 Northern Arizona football heads to Cal Poly for final road game",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_zuvBqWW1F-EN97oXdtdMfWG71gJo7RXYMfxAQMBoWOyMUFEI0GATeyjAJWE"
+        },
+        {
+          "url": "https://www.fubo.tv/welcome/matches/945853e9-2c0e-4d3a-ba5a-ee08cc22b302",
+          "title": "Watch Cal Poly-San Luis Obispo vs Northern Arizona",
+          "publisher": "Fubo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7v3GOow-qqwgzHVE3ysPtnSeFFhWoVe5azQJLeMCgCSwQrMHGVEWMRMJVrZ0"
+        }
+      ]
+    },
+    {
+      "query": "dakorien moore",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T21:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/videos/wide-receiver-dakorien-moore-discusses-155645248.html",
+        "https://sports.yahoo.com/videos/wide-receiver-dakorien-moore-discusses-202236670.html",
+        "https://www.10tv.com/article/sports/football/ohio-state-football/ohio-state-oregon-injury-report-2026/530-86fdb2d3-f99e-493b-836f-b5788795d237"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQogbQGrrzA2Vgz5TbHweabBfI_AGNnxZmjuDE4bvCAN1npW7ucucPZ_k5m1NA",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/jose-delano-ufc-matchmaker-sean-190000255.html",
-          "title": "Jose Delano: UFC matchmaker Sean Shelby called me one of DWCS’s all-time best signings ahead of UFC Vegas 124",
+          "url": "https://sports.yahoo.com/videos/wide-receiver-dakorien-moore-discusses-155645248.html",
+          "title": "Wide Receiver Dakorien Moore discusses their motivation for the last stretch of the season",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSztLktwTXcsIOHPbw-F0f88ZrauKLGNy7KBR3cZgE_NUthptQy5AvtBIpiEcA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQogbQGrrzA2Vgz5TbHweabBfI_AGNnxZmjuDE4bvCAN1npW7ucucPZ_k5m1NA"
         },
         {
-          "url": "https://www.ufc.com/news/jose-delano-chasing-dreams-ufc-vegas-124",
-          "title": "Jose Delano | Chasing Dreams",
-          "publisher": "UFC.com",
+          "url": "https://sports.yahoo.com/videos/wide-receiver-dakorien-moore-discusses-202236670.html",
+          "title": "Wide Receiver Dakorien Moore discusses his growth as a player",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStISq_QxLN9IuzGH9wGsjN3bekElgV-HmhCOOjmDmothtFsRFZzmvu1FlRpGI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuYJpx_BiXCRVzVF4_6ekq0CVMFCQEP711dkQUxsJhuF_GIYxP4voS2BaNxTQ"
         },
         {
-          "url": "https://sports.betmgm.com/en/blog/ufc/vegas-124-jose-delano-murtazali-magomedov-predictions-odds-bm05/",
-          "title": "UFC Vegas 124: Jose Delano vs. Murtazali Magomedov Predictions & Odds",
-          "publisher": "sports.betmgm.com",
+          "url": "https://www.10tv.com/article/sports/football/ohio-state-football/ohio-state-oregon-injury-report-2026/530-86fdb2d3-f99e-493b-836f-b5788795d237",
+          "title": "Ohio State injury report: 8 players ruled out for Oregon game",
+          "publisher": "10TV",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjYRoOq_6dQGjvLPQgBSWhJAmKukX7coTeNhXKrqmKZuaLWu1FXpu8dOiB4_I"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAjhpgqufZuyicT5qaE784A0Uio4N_y1hw2qqnQsy5vSTJDPiAnmn5oDiDePs"
         }
       ]
     },
     {
-      "query": "nuggets vs pacers",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-07T21:00:00Z",
-      "related_news_urls": [
-        "https://www.nba.com/news/nba-mexico-city-game-2026-everything-to-know",
-        "https://www.reuters.com/sports/jokic-embraces-mexico-city-spotlight-nba-international-showcase-2026-11-07/",
-        "https://sports.yahoo.com/articles/kelly-oubre-jr-sends-clear-185106301.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT24Jhp9s5yIspqms6zyjYRVYb31Wq1q-HfmqbOytNlXkitB-EhXS6jk1yc2FI",
-      "image_credit": "NBA.com",
-      "news": [
-        {
-          "url": "https://www.nba.com/news/nba-mexico-city-game-2026-everything-to-know",
-          "title": "NBA Mexico City Game 2026: Everything to know",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT24Jhp9s5yIspqms6zyjYRVYb31Wq1q-HfmqbOytNlXkitB-EhXS6jk1yc2FI"
-        },
-        {
-          "url": "https://www.reuters.com/sports/jokic-embraces-mexico-city-spotlight-nba-international-showcase-2026-11-07/",
-          "title": "Jokic embraces Mexico City spotlight in NBA international showcase",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdT9fEOyk7AVZX92fnOlFoVmbP_6hg5gg_LrDk3ONMJkHMGn2oZFShHeVT2JY"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/kelly-oubre-jr-sends-clear-185106301.html",
-          "title": "Kelly Oubre Jr. Sends Clear Message to Mexico City Fans Before Pacers-Nuggets",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTG_13Ing7GnkuvEA_YYnXjAr6fmwNleYbIb3E6_mXtdsnE9mFKmemytk9K-_U"
-        }
-      ]
-    },
-    {
-      "query": "sam leavitt",
+      "query": "california great america closing 2027",
       "approx_searches": "1000+",
-      "published_at": "2026-11-07T21:00:00Z",
+      "published_at": "2026-11-07T21:20:00Z",
       "related_news_urls": [
-        "https://www.secsports.com/videos/2026/11/lsu-qb-sam-leavitt-playing-with-nerves-is-a-privilege-not-a-curse",
-        "https://lsutigerswire.usatoday.com/story/sports/college/lsu/football/2026/11/06/lsu-footall-sam-leavitt-espn-qbr-rankings-espn-alabama-game/92617490007/",
-        "https://lsureveille.com/292565/sports/column-lsu-footballs-sam-leavitts-recent-success-has-created-buzz-in-heisman-trophy-race/"
+        "https://www.cbsnews.com/sanfrancisco/news/great-america-theme-park-santa-clara-2027-farewell-season-six-flags/",
+        "https://www.sfgate.com/disneyland/article/california-great-america-closure-22517433.php",
+        "https://people.com/historic-california-theme-park-closing-permanently-after-more-than-half-century-in-business-12242210"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8EBeJxkO5NU6z1W44-i4N3cr1NgAoGfeFTArXkqXLluJ8EIWt-FMtLXdKBv8",
-      "image_credit": "Southeastern Conference",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqgBCvZ_nH4xxP71O3_xMvERUoUZGgTGvVJ4oPCZBYdpMcxsn_Yrs70iRPbNM",
+      "image_credit": "CBS News",
       "news": [
         {
-          "url": "https://www.secsports.com/videos/2026/11/lsu-qb-sam-leavitt-playing-with-nerves-is-a-privilege-not-a-curse",
-          "title": "LSU QB Sam Leavitt: Playing with nerves is a privilege, not a curse",
-          "publisher": "Southeastern Conference",
+          "url": "https://www.cbsnews.com/sanfrancisco/news/great-america-theme-park-santa-clara-2027-farewell-season-six-flags/",
+          "title": "Great America theme park in Santa Clara confirms farewell season in 2027",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8EBeJxkO5NU6z1W44-i4N3cr1NgAoGfeFTArXkqXLluJ8EIWt-FMtLXdKBv8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqgBCvZ_nH4xxP71O3_xMvERUoUZGgTGvVJ4oPCZBYdpMcxsn_Yrs70iRPbNM"
         },
         {
-          "url": "https://lsutigerswire.usatoday.com/story/sports/college/lsu/football/2026/11/06/lsu-footall-sam-leavitt-espn-qbr-rankings-espn-alabama-game/92617490007/",
-          "title": "Where LSU football QB Sam Leavitt ranks in ESPN's QBR entering Week 10",
-          "publisher": "LSU Wire",
+          "url": "https://www.sfgate.com/disneyland/article/california-great-america-closure-22517433.php",
+          "title": "California's Great America to finally close after more than 50 years",
+          "publisher": "SFGATE",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTHOBdQPQYqL78chwcOdBZvZ_KYA_uXcqdxY1NPFAL4M_sG8BF9dRd8I34evk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsAiUrQ9ItQts9prNLWcg01LIbRKAsM3kLLWN8Jdb-h7jmECj98kbNOIPSkYM"
         },
         {
-          "url": "https://lsureveille.com/292565/sports/column-lsu-footballs-sam-leavitts-recent-success-has-created-buzz-in-heisman-trophy-race/",
-          "title": "Column: LSU football’s Sam Leavitt’s recent success has created buzz in Heisman Trophy race",
-          "publisher": "The Reveille, LSU's student newspaper",
+          "url": "https://people.com/historic-california-theme-park-closing-permanently-after-more-than-half-century-in-business-12242210",
+          "title": "Historic California Theme Park Closing Permanently After More Than Half a Century in Business",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNtCj8Bz4xD8cv3aEbJx_qzoDffxQvJRPJ62-RAghtOmh4xsxUx-hFdGj6TrE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlUW34POQBm7u40A0fXY9zeDu7HhcUjhxZkzawhZq1K67Mfio21PzmMDNM5jk"
+        }
+      ]
+    },
+    {
+      "query": "gio lopez",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T21:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/wake-forest-heisman-hopeful-qb-160853411.html",
+        "https://journalnow.com/video/sports/video_23105038-43dd-5dbd-9ceb-fcdf9636a130.html",
+        "https://www.on3.com/sites/deacons-illustrated/news/wake-forest-will-wait-for-news-on-its-heart-and-soul/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSM9NP4SC4qOK_IieL_UV_0xFFrElvTgRW8uht5CKVH8ZwLf9oQN0L_iuBmRtg",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/wake-forest-heisman-hopeful-qb-160853411.html",
+          "title": "Wake Forest’s Heisman hopeful QB Gio Lopez ruled out for Week 10 clash",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSM9NP4SC4qOK_IieL_UV_0xFFrElvTgRW8uht5CKVH8ZwLf9oQN0L_iuBmRtg"
+        },
+        {
+          "url": "https://journalnow.com/video/sports/video_23105038-43dd-5dbd-9ceb-fcdf9636a130.html",
+          "title": "Watch Jake Dickert talk about Gio Lopez' injury",
+          "publisher": "Winston-Salem Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQeDsMCpZF0XOq_779Z0QBr3QGHOjyNrliTfJlBLKfvqI5qs0tLfS9Oy1bHOGE"
+        },
+        {
+          "url": "https://www.on3.com/sites/deacons-illustrated/news/wake-forest-will-wait-for-news-on-its-heart-and-soul/",
+          "title": "Wake Forest will wait for news on its “heart and soul”",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRY83jxReQvvuupMAl5KVgbpBfXTF8Vufx9xqosQbLZOzjeRGetsr1Yvd5AGpk"
         }
       ]
     }
