@@ -46,12 +46,12 @@ function firstPartyRepairTarget(utterance){
 // This is intent parsing, never a new permission to write or publish.
 function repositoryCreationIntent(utterance){
  const raw=String(utterance||'').trim().slice(0,4001);
- if(!raw||raw.length>4000||/^(?:do not|don't|never|how|why|what|explain|describe)\\b/i.test(raw))return null;
- const begins=/^(?:(?:please|hey\\s+bubbles|bubbles)[\\s,:]+)*(?:(?:can|could|would|will)\\s+you\\s+)?(?:create|make|start|build)\\s+(?:me\\s+)?(?:(?:a|an|new|github|private|public)\\s+)*(?:repo|repository)\\b/i;
+ if(!raw||raw.length>4000||/^(?:do not|don't|never|how|why|what|explain|describe)\b/i.test(raw))return null;
+ const begins=/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:(?:can|could|would|will)\s+you\s+)?(?:create|make|start|build)\s+(?:me\s+)?(?:(?:a|an|new|github|private|public)\s+)*(?:repo|repository)\b/i;
  if(!begins.test(raw))return null;
- const found=/\\b(?:repo(?:sitory)?\\s+(?:(?:to\\s+be\\s+)?(?:called|named)|with\\s+the\\s+name)|(?:called|named)\\s+(?:repo(?:sitory)?\\s+)?)[\\s:]+([A-Za-z][A-Za-z0-9_.-]*(?:\\s+[A-Za-z][A-Za-z0-9_.-]*){0,6})/i.exec(raw);
+ const found=/\b(?:repo(?:sitory)?\s+(?:(?:to\s+be\s+)?(?:called|named)|with\s+the\s+name)|(?:called|named)\s+(?:repo(?:sitory)?\s+)?)[\s:]+([A-Za-z][A-Za-z0-9_.-]*(?:\s+[A-Za-z][A-Za-z0-9_.-]*){0,6})/i.exec(raw);
  if(!found)return null;
- const words=found[1].split(/\\s+/);
+ const words=found[1].split(/\s+/);
  const stops=new Set(['and','then','with','for','to','that','which','where','while','after','plus','so','design','populate','implement','build','write','add','scaffold','assemble','develop','wire','finish','continue','operate','create','make','put','using','including']);
  let end=words.findIndex((w,i)=>i>0&&stops.has(w.toLowerCase()));
  if(end<0)end=words.length;
@@ -60,8 +60,8 @@ function repositoryCreationIntent(utterance){
  if(!/^[A-Za-z][A-Za-z0-9_.-]{1,99}$/.test(name))return null;
  const start=found.index+found[0].length-found[1].length;
  const tail=raw.slice(start+words.slice(0,end).join(' ').length);
- const continueBuild=/\\b(?:design|populate|implement|write|build|add|scaffold|assemble|develop|wire|finish|continue|code|create)\\b/i.test(tail)&&
-  !/\\b(?:don't|do\\s+not|never|without\\s+(?:writing|building|editing))\\b/i.test(tail);
+ const continueBuild=/\b(?:design|populate|implement|write|build|add|scaffold|assemble|develop|wire|finish|continue|code|create)\b/i.test(tail)&&
+  !/\b(?:don't|do\s+not|never|without\s+(?:writing|building|editing))\b/i.test(tail);
  return {name,continueBuild};
 }
 function classify(utterance){
