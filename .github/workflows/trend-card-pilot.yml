@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: '22'
       - name: Validate source, roles, queue, auth and Orange gate
-        run: node --test test/trend-card-engine.test.mjs test/trend-card-worker.test.mjs
+        run: node --test test/trend-card-engine.test.mjs test/trend-card-worker.test.mjs test/trend-card-quant-decision.test.mjs
       - name: Permanent public creator shelf must remain outside rotating deck
         run: |
           node - <<'NODE'
