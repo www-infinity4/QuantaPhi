@@ -107,6 +107,7 @@ on:
       - 'test/quanta-card-experience.test.mjs'
       - 'test/source-quick-cards.test.mjs'
       - 'test/quanta-card-feed.test.mjs'
+      - 'test/oracle-personal-feedback.test.mjs'
       - 'test/quanta-card-actions-fox-one.test.mjs'
       - 'test/quick-card-single-search.test.mjs'
       - 'test/quanta-card-provider.test.mjs'
@@ -198,6 +199,8 @@ jobs:
         run: |
           python3 -m unittest discover -s test -p 'test_world_series_sync.py' -v
           node --test test/world-series-news.test.mjs test/church-iam-card.test.mjs
+      - name: Check personal card rejection and stacked-card regressions
+        run: node --test test/oracle-personal-feedback.test.mjs
       - name: Check original-card preservation
         run: node test/oracle-card-deck.test.cjs
       - name: Install Chromium for live browser QA
