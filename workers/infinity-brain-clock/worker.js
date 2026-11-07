@@ -405,7 +405,7 @@ export class BrainClock extends DurableObject{
      }
     }catch{/* A missed progress observation must not abort actual execution. */}
    }
-   await this.emit(['gold-diggers-ink','blueberry','greenbeans','pink-panther','gpt-purple'].includes(body.agent)?body.agent:'greenbeans','gpt-purple','repair progress',lease.job.repository+' · '+message,runUrl);
+   await this.emit(['gold-diggers-ink','red-macro-reader','orange-peel','blueberry','greenbeans','pink-panther','gpt-purple'].includes(body.agent)?body.agent:'greenbeans','gpt-purple','repair progress',lease.job.repository+' · '+message,runUrl);
    return Response.json({ok:true});
   }
   if(['/runner/color-think','/runner/plan','/runner/build','/runner/engine-review','/runner/arbitrate','/runner/capability','/runner/github-credential','/runner/merge-result','/runner/merge-candidates'].includes(path)){
