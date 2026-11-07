@@ -290,3 +290,14 @@ test('owner repo creation with an explicitly requested package continues to the 
  assert.match(src,/createdRepositoryPackage/);
  assert.match(src,/submitRepositoryWork\(engineeringRequest/);
 });
+
+
+test('owner jobs direct one shared GPT Brain through a full verified package, not a planning-only answer',()=>{
+ const jobs=makeJobs('Build the full TV guide quick-card package and advertising data','www-infinity4/QuantaPhi');
+ const instruction=jobs[0].instructions;
+ for(const cue of ['one coordinated GPT Brain','RED research','ORANGE decisions','BLUE source','GREEN implementation','PINK tests','PURPLE review','BLACK verification','same ticket']){
+  assert.ok(instruction.includes(cue),cue);
+ }
+ assert.match(instruction,/No model reply, planned role or queued ticket is a source commit/i);
+ assert.ok(jobs[1].dependencies.includes(jobs[0].id));
+});
