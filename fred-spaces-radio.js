@@ -6,6 +6,7 @@
   const API = "https://fred-spaces-ledger.marvaseater.workers.dev";
   const ARCHIVE = "https://www.twitterspacegpt.com/hosts/dotkrueger";
   const FIRST = "fred-0700";
+  const FIRST_REPLAY = "https://x.com/i/spaces/1OyKAjYPeXqGb";
   // Stable numbers: never remap an episode number after somebody shares it.
   // Metadata is verified from the public host catalog; audio is NOT licensed here.
   const episodes = [
@@ -294,8 +295,12 @@
       const catalog=await response.json();
       if(catalog.schemaVersion!==1||!Array.isArray(catalog.episodes))throw Error("Invalid episode index");
       const valid=catalog.episodes.filter(e=>e.hostId==="dotkrueger"&&e.id&&e.title&&Array.isArray(e.tags)&&isReplayLink(e));
-      if(!valid.some(e=>e.id===FIRST))throw Error("Featured episode missing");
-      episodes.splice(0,episodes.length,...valid);byId.clear();episodes.forEach(e=>byId.set(e.id,e));
+      // The public catalog still uses a twitter.com alias. Keep the
+      // owner-verified, directly playable x.com replay URL for the free
+      // starter even after loading hundreds of indexed entries.
+      if(!valid.some(e=>e.id===FIRST&&e.spaceId==="1OyKAjYPeXqGb"))throw Error("Featured episode missing or mismatched");
+      const canonical=valid.map(e=>e.id===FIRST?{...e,source:FIRST_REPLAY}:e);
+      episodes.splice(0,episodes.length,...canonical);byId.clear();episodes.forEach(e=>byId.set(e.id,e));
       active=byId.get(FIRST);
     }catch(error){message="Full episode index could not load. Next episode is paused; retry by reloading.";render();return;}
     catalogLoading=false;render();await sync();await checkPaymentReadiness();
