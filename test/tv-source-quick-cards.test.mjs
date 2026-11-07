@@ -58,6 +58,9 @@ test('Oracle Octaves light treatment and one-screen playback are available on ph
  assert.match(css,/--oracle-paper|#f7f4f0|#fff/);
  assert.match(css,/aspect-ratio:\s*16\s*\/\s*9/);
  assert.match(css,/@media\s*\(max-width:\s*430px\)/);
+ const deckCss=read('oracle-card-deck.css');
+ for(const id of Object.values(roots))assert.ok(deckCss.includes('#'+id),'card must not appear in a grouped homepage scroll: '+id);
+ assert.match(deckCss,/body\.oracle-card-deck-active main\.app/);
  const home=read('index.html');
  assert.match(home,/id="tvQuantExpansion"/);
  for(const id of Object.values(roots))assert.ok(home.includes('id="'+id+'"'),'missing stable card anchor '+id);
