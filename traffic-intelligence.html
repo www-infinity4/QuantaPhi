@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f6f3fa">
+<meta name="robots" content="noindex,nofollow">
+<title>Traffic Intelligence | QuantaPhi</title>
+<meta name="description" content="Evidence-first traffic audit for QuantaPhi: Cloudflare, GA4, bots, per-page coverage and AdSense crawler checks.">
+<style>
+:root{color-scheme:light;--ink:#272034;--soft:#665b70;--purple:#58357b;--line:#ded5e7;--bg:#f6f3fa;--panel:#fff;--good:#1e6f59;--warn:#975c16;--danger:#9c3445;font:18px/1.55 system-ui,-apple-system,Roboto,sans-serif;letter-spacing:.11px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink)}
+a{color:var(--purple);text-underline-offset:3px}a:focus-visible,button:focus-visible,select:focus-visible,textarea:focus-visible,input:focus-visible{outline:3px solid #8b61c3;outline-offset:3px}
+.wrap{max-width:1040px;margin:auto;padding:0 17px 80px}
+header{padding:25px 0 20px}header .brand{display:flex;align-items:center;gap:11px;color:var(--purple);font-size:17px;font-weight:850;text-decoration:none}
+.phi{display:inline-grid;place-items:center;width:43px;height:43px;border-radius:14px;background:#58357b;color:#fff;font-size:28px;box-shadow:0 6px 16px #58357b22}
+h1{font-size:clamp(32px,5vw,49px);line-height:1.14;letter-spacing:-.7px;margin:22px 0 10px}
+h2{font-size:clamp(23px,3vw,29px);letter-spacing:-.35px;line-height:1.23;margin:0 0 10px}
+h3{font-size:21px;line-height:1.28;margin:0 0 6px}.subtitle{color:var(--soft);max-width:800px;margin:0 0 18px}
+.meta{display:flex;gap:10px;align-items:center;flex-wrap:wrap;color:var(--soft);font-size:15px}
+.pip{display:inline-block;width:9px;height:9px;background:#aa7228;border-radius:100%;vertical-align:middle;margin-right:5px}
+nav{position:sticky;top:0;z-index:4;background:#f6f3faf5;border-bottom:1px solid var(--line);margin:0 -17px 18px;padding:10px 17px;overflow-x:auto}
+nav .links{display:flex;gap:8px;min-width:max-content}
+nav a{display:block;border:1px solid var(--line);border-radius:12px;padding:9px 13px;background:#fff;text-decoration:none;font-size:15px;font-weight:750}
+button,select,.filebutton{font:inherit}
+button,.filebutton{appearance:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--purple);color:#fff;border:1px solid var(--purple);border-radius:13px;padding:12px 17px;min-height:51px;font-weight:750;cursor:pointer;text-decoration:none}
+button.secondary,.filebutton.secondary{background:#fff;color:var(--purple);border-color:#baabce}
+button:disabled{opacity:.58;cursor:wait}
+select{background:#fff;color:var(--ink);min-height:51px;padding:10px 14px;border:1px solid #baabce;border-radius:12px;font-weight:650;max-width:100%}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:15px 0 12px}
+section{scroll-margin-top:85px;margin:22px 0 26px}
+.panel{padding:20px;border:1px solid var(--line);background:var(--panel);border-radius:22px;box-shadow:0 4px 18px #27163c0c}
+.note{background:#f1eaf8;border-left:4px solid #8653ac;border-radius:8px;padding:12px 15px;margin:16px 0;color:#40354c}
+.warning{border-left-color:#c28a3a;background:#fff6e8}
+.error{border-left-color:#b34959;background:#fff0f2}
+.small{font-size:15px;color:var(--soft)}.muted{color:var(--soft)}
+.kpi-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.kpi{border:1px solid #e6ddec;border-radius:17px;padding:15px;background:#fff;min-width:0}
+.kpi .name{font-size:16px;color:#61556d;font-weight:680;line-height:1.32;min-height:42px}
+.kpi .value{font-size:clamp(30px,5vw,45px);font-weight:860;line-height:1.1;margin:11px 0 8px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.kpi .hint{font-size:14px;color:#665b70;line-height:1.43}
+.grid-two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.statline{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.statline:last-child{border:0}.statline strong{font-size:22px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere;text-align:right}
+.statline span{max-width:62%}
+.reading{font-size:15px;color:#62566f;overflow-wrap:anywhere}
+.tag{display:inline-block;background:#eee7f5;border-radius:8px;padding:3px 7px;font-size:13px;font-weight:750;color:#52316b}
+table{border-collapse:collapse;width:100%;font-size:16px}th,td{padding:13px 8px;text-align:left;vertical-align:top;border-bottom:1px solid #e9e3ef}th{color:#564966;font-size:14px}
+td.number{text-align:right;font-variant-numeric:tabular-nums;font-weight:760}
+.scroll{max-width:100%;overflow-x:auto}
+.page-entry{padding:14px 0;border-bottom:1px solid var(--line)}
+.page-entry:last-child{border:0}.path{font-size:18px;font-weight:750;overflow-wrap:anywhere}.pagemetrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:10px}
+.pagemetrics div{background:#f8f6fa;border:1px solid #ece5f0;padding:9px;border-radius:12px;min-width:0}
+.pagemetrics b{display:block;font-size:22px;line-height:1.4;font-variant-numeric:tabular-nums}.pagemetrics span{display:block;font-size:13px;color:#5f536a;line-height:1.3}
+.check{padding:12px 0;border-bottom:1px solid var(--line)}.check:last-child{border:0}
+details{border:1px solid var(--line);border-radius:14px;padding:12px 15px;margin:10px 0;background:#fff}
+summary{font-weight:760;cursor:pointer;line-height:1.4}
+textarea{width:100%;min-height:128px;padding:14px;font:inherit;border:1px solid #b7a6c8;border-radius:14px;color:var(--ink);resize:vertical}
+fieldset{border:0;padding:0;margin:0}label{display:block;font-weight:750;margin-bottom:8px}
+footer{border-top:1px solid var(--line);margin-top:30px;padding-top:18px;color:var(--soft);font-size:15px}
+@media(min-width:720px){.kpi-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.pagemetrics{max-width:640px}}
+@media(max-width:620px){.grid-two{grid-template-columns:1fr}.wrap{padding-left:14px;padding-right:14px}nav{margin-left:-14px;margin-right:-14px}.panel{padding:17px}.pagemetrics{gap:6px}.pagemetrics div{padding:7px}.pagemetrics b{font-size:20px}.bar button{flex:1}}
+@media(max-width:350px){.kpi-grid{grid-template-columns:1fr 1fr}.kpi{padding:11px}.kpi .value{font-size:30px}.pagemetrics{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<a class="brand" href="/"><span class="phi">Φ</span><span>QuantaPhi.org</span></a>
+<h1>Traffic Intelligence</h1>
+<p class="subtitle">Real measurements, not made-up visitors. Inspect Cloudflare edge activity, GA4 coverage, verified crawlers and analytics wiring without confusing requests with people.</p>
+<div class="meta"><span><span class="pip"></span><span id="liveStatus">Checking recorded sources</span></span><span id="lastChecked">No current refresh receipt</span></div>
+</header>
+<nav aria-label="Dashboard sections"><div class="links">
+<a href="#overview">Overview</a><a href="#pages">Pages</a><a href="#compare">Compare</a><a href="#crawlers">Crawlers</a><a href="#sources">Sources & repairs</a>
+</div></nav>
+<div class="bar">
+<label for="range" style="margin:0">Time range</label>
+<select id="range" aria-label="Traffic time range">
+<option value="1h">Last hour</option><option value="24h">24 hours</option><option value="7d" selected>7 days</option><option value="28d">28 days</option>
+</select>
+<button id="refresh">Refresh checks</button>
+</div>
+<p class="small" id="rangeCaption" aria-live="polite">UTC time windows; a preceding equal-length period is required for comparison.</p>
+<section id="overview">
+<h2>Realtime & traffic signals</h2>
+<div class="kpi-grid" aria-live="polite">
+<article class="kpi"><div class="name">Realtime visitors</div><div class="value" id="realtime">—</div><div class="hint">GA4 active users, last 30 minutes when connected. Not proof of a human.</div></article>
+<article class="kpi"><div class="name">Verified bots</div><div class="value" id="verifiedBots">—</div><div class="hint">Cloudflare verified bot category. Estimated if based on sampled edge logs.</div></article>
+<article class="kpi"><div class="name">Suspicious</div><div class="value" id="suspicious">—</div><div class="hint">Only with an explicit WAF / bot-classification rule and coverage.</div></article>
+<article class="kpi"><div class="name">Unknown</div><div class="value" id="unknown">—</div><div class="hint">Unclassified requests, not assumed to be human visitors.</div></article>
+</div>
+<div class="note warning"><strong>Human traffic is not directly proven by these counters.</strong> A high bot score or GA4 active user is evidence of human-like behavior, not identity verification. No human total is inferred by subtracting bots from page views.</div>
+<div class="grid-two">
+<div class="panel">
+<h3>Cloudflare recorded ledger</h3>
+<div class="statline"><span>HTTP requests since first recorded day</span><strong id="edgeRequests">—</strong></div>
+<div class="statline"><span>Cloudflare page views since first recorded day</span><strong id="edgeViews">—</strong></div>
+<p id="ledgerNote" class="reading">Waiting for the existing /api/site-traffic endpoint. Includes bots and assets; not unique people.</p>
+</div>
+<div class="panel">
+<h3>Human-likely signal</h3>
+<div class="statline"><span>Qualified, source-labeled requests</span><strong id="humanLikely">—</strong></div>
+<p class="reading">An estimate only, where bot group or approved classifier evidence exists. Never labeled “verified humans.”</p>
+<p class="reading" id="auditStatus">Detailed classification API not yet verified.</p>
+</div>
+</div>
+</section>
+<section id="pages" class="panel">
+<h2>Page-by-page</h2>
+<p class="muted">Active pages with available evidence. The sitemap supplies an initial inventory, not a guarantee that every dynamic Quick Card or route is listed.</p>
+<div id="pageList" aria-live="polite"><p>Checking sitemap entries and page-level analytics…</p></div>
+<p id="pageCoverage" class="small">Unlisted or dynamically generated routes still require a crawl inventory and server logs.</p>
+</section>
+<section id="compare">
+<h2>Reconciliation & comparison</h2>
+<div class="grid-two">
+<div class="panel">
+<h3>Cloudflare edge</h3>
+<div class="statline"><span>Selected-period requests</span><strong id="periodEdge">—</strong></div>
+<div class="statline"><span>Earlier equal-length period</span><strong id="previousEdge">—</strong></div>
+<div class="statline"><span>Comparable change</span><strong id="deltaEdge">—</strong></div>
+<p class="reading">Counts include automated and asset requests. The lifetime ledger is not a substitute for a matching period.</p>
+</div>
+<div class="panel">
+<h3>Google Analytics 4</h3>
+<div class="statline"><span>Selected-period views</span><strong id="periodGa">—</strong></div>
+<div class="statline"><span>Earlier equal-length period</span><strong id="previousGa">—</strong></div>
+<div class="statline"><span>Comparable change</span><strong id="deltaGa">—</strong></div>
+<p class="reading">GA4 needs a working tag on every eligible page, consent behavior and access to the GA4 Data API.</p>
+</div>
+</div>
+<div class="note"><strong>These columns are different measurements.</strong> Cloudflare HTTP requests, Cloudflare page views, GA4 views, GA4 users and AdSense impressions cannot be subtracted to calculate fraud or lost revenue. Match UTC time, hostname, page path, measurement definition, tags and sampling first.</div>
+</section>
+<section id="crawlers" class="panel">
+<h2>Crawler checks</h2>
+<p>Live same-origin file checks are useful diagnostics, but they do not prove Googlebot or Mediapartners-Google fetched the site successfully.</p>
+<div id="crawlerResults" aria-live="polite"><div class="check">robots.txt — not checked</div><div class="check">ads.txt — not checked</div><div class="check">sitemap.xml — not checked</div></div>
+<details><summary>How actual crawler verification works</summary>
+<p>Compare Cloudflare verified-bot classifications and firewall actions with matched server-side request logs, crawler identity verification and Google Search Console URL Inspection. Check Mediapartners-Google/Googlebot accessibility separately. User-agent strings alone can be spoofed. A 200 response to this browser is not proof a Google crawler received 200.</p>
+<p>For AdSense, confirm <code>/ads.txt</code> is accessible, correctly formatted, and not disallowed by <code>/robots.txt</code>. Record challenge or deny events for crawler requests and the observed UTC time.</p></details>
+</section>
+<section id="sources" class="panel">
+<h2>Source register</h2>
+<div id="sourceList" aria-live="polite"></div>
+<h3 style="margin-top:22px">Wiring issues</h3>
+<div id="issues" class="reading">
+<div class="check"><strong>Cloudflare scheduled refresh:</strong> verify Worker secret name <code>SITE_TRAFFIC_CLOUDFLARE_TOKEN</code> and fresh D1 write receipts; do not expose the value.</div>
+<div class="check"><strong>GA4 instrumentation:</strong> audit live scripts on homepage, Bubbles and all independent entrypoints, then Data API access. Existing homepage tag alone is not full-site coverage.</div>
+<div class="check"><strong>Classification:</strong> Cloudflare SQL verified-bot categories may be sampled; botScore and referrer columns previously returned 403. No complete genuine-human measure currently exists.</div>
+<div class="check"><strong>Page inventory:</strong> reconcile sitemap with deployed dynamic/Quick Card paths.</div>
+</div>
+<details>
+<summary>Import a source-backed aggregate report</summary>
+<p class="small">Optional local audit file using <code>quantaphi.traffic-intelligence.v1</code>. The file stays in this browser session; imported numbers are marked <strong>locally supplied, not independently provider-verified</strong>. Never import raw IP addresses, cookies, query parameters, tokens or personally identifying data.</p>
+<input id="auditFile" type="file" accept=".json,application/json" aria-label="Select an aggregate traffic audit JSON file">
+<p id="importStatus" class="small">No local report imported.</p>
+</details>
+<div style="margin-top:20px">
+<label for="journal">Source / refresh / repair notes (saved only on this device)</label>
+<textarea id="journal" maxlength="6000" placeholder="e.g., Date/time UTC; endpoint; query filter; measured or sampled; HTTP/permission status; next verification step. Do not paste secrets."></textarea>
+<div class="bar"><button id="saveNotes" class="secondary">Save notes locally</button><button id="export" class="secondary">Export evidence log</button></div>
+<div id="noteStatus" class="small" role="status"></div>
+</div>
+</section>
+<footer>QuantaPhi Traffic Intelligence · Forensic read-only dashboard · Source tests and production deployment are separate receipts. <a href="/">Return to QuantaPhi</a> · <a href="https://github.com/www-infinity4/QuantaPhi/issues/1110">Analytics work ticket #1110</a></footer>
+</div>
+<script type="module">
+import {EMPTY,parseLedger,validateAudit,formatMetric,compareMetrics} from './traffic-intelligence-core.mjs';
+const $=id=>document.getElementById(id);
+const values=['realtime','verifiedBots','suspicious','unknown','humanLikely','periodEdge','previousEdge','deltaEdge','periodGa','previousGa','deltaGa'];
+const state={ledger:null,audit:null,origin:'none',pages:[],checkedAt:null,crawler:{}};
+const nice=n=>Number.isSafeInteger(n)?n.toLocaleString('en-US'):EMPTY;
+const date=s=>s?new Date(s).toLocaleString(): 'not available';
+function set(id,value){$(id).textContent=value;}
+function el(tag,text,className){const n=document.createElement(tag);if(text!=null)n.textContent=text;if(className)n.className=className;return n;}
+function reset(){for(const id of values)set(id,EMPTY);}
+function sourceLine(label,description,status){const row=el('div',null,'check');row.append(el('strong',label+': '),document.createTextNode(description+' · '+status));return row;}
+function render(){
+ reset();
+ const l=state.ledger;
+ set('edgeRequests',l?nice(l.requests):EMPTY);set('edgeViews',l?nice(l.pageViews):EMPTY);
+ set('liveStatus',l?'Cloudflare ledger available (bot-inclusive)':'Verified human count unavailable');
+ if(l){
+  const age=Date.now()-Date.parse(l.fetchedAt);
+  const old=age>60*60*1000;
+  const refresh=l.refreshStatus==='refreshed'?'Provider refresh confirmed. ':
+   l.refreshStatus==='recent'?'Provider checked within cooldown. ':
+   l.refreshStatus==='not_configured'?'Cloudflare refresh secret not configured. ':
+   l.refreshStatus==='failed'?'Provider refresh failed. ':
+   l.refreshConfigured?'Refresh configured; latest D1 read shown. ':'Unattended refresh not configured. ';
+  set('ledgerNote','Recorded '+l.since+' through '+l.through+' UTC. Last source timestamp '+date(l.fetchedAt)+'. '+(old?'Stale record. ':'')+refresh+'Includes bots; NOT unique visitors.');
+ }else set('ledgerNote','No validated Cloudflare ledger available; showing unavailable rather than zero.');
+ const a=state.audit;
+ const exact=a&&a.range===$('range').value;
+ if(exact){
+  const m=a.signals;
+  set('realtime',formatMetric(m.realtimeActiveUsers));
+  set('verifiedBots',formatMetric(m.verifiedBots));
+  set('suspicious',formatMetric(m.suspicious));
+  set('unknown',formatMetric(m.unknown));
+  set('humanLikely',formatMetric(m.humanLikely));
+  const sum=key=>a.pages.reduce((acc,p)=>{const v=p.current[key];return v?acc+v.value:acc;},0);
+  // Never sum partial page coverage or incompatible precision; report per-page data individually.
+  const single=a.pages.length===1?a.pages[0]:null;
+  const currentEdge=single?.current.edgeRequests,previousEdge=single?.previous.edgeRequests;
+  const currentGa=single?.current.ga4Views,previousGa=single?.previous.ga4Views;
+  // Explicitly scoped single-path view; multi-page totals require a server-supplied complete aggregate.
+  if(single?.path==='/'){
+   set('periodEdge',formatMetric(currentEdge));set('previousEdge',formatMetric(previousEdge));
+   set('periodGa',formatMetric(currentGa));set('previousGa',formatMetric(previousGa));
+   const dc=compareMetrics(currentEdge,previousEdge),dg=compareMetrics(currentGa,previousGa);
+   set('deltaEdge',dc?((dc.delta>0?'+':'')+nice(dc.delta)):EMPTY);
+   set('deltaGa',dg?((dg.delta>0?'+':'')+nice(dg.delta)):EMPTY);
+  }
+  set('auditStatus',state.origin==='import'?'Local report only; provider authenticity unverified.':'Server-supplied classified report; verify provenance and period in source register.');
+  set('rangeCaption','UTC: '+a.period.start+' to '+a.period.endExclusive+' (exclusive). '+(a.previousPeriod?'Previous equal-length period provided.':'Previous comparison unavailable.')+(state.origin==='import'?' Locally imported; not independently verified.':''));
+ }else{
+  set('auditStatus','No validated '+$('range').value+' classification feed. Source is unavailable, not zero.');
+  set('rangeCaption','Selected '+$('range').value+' UTC period. Source-matched previous period not yet available; lifetime totals are not a comparable window.');
+ }
+ renderPages();renderSources();
+}
+function renderPages(){
+ const host=$('pageList');host.replaceChildren();
+ const audit=state.audit?.range===$('range').value?state.audit:null;
+ const pageMap=new Map((audit?.pages||[]).map(p=>[p.path,p]));
+ const paths=[...new Set([...state.pages,...pageMap.keys()])].sort((a,b)=>a==='/'?-1:b==='/'?1:a.localeCompare(b));
+ if(!paths.length){host.append(el('p','Sitemap currently unavailable and no verified per-page feed exists.'));return;}
+ for(const path of paths){
+  const entry=el('article',null,'page-entry'),title=el('div',null,'path');
+  const link=el('a',path);link.href=path;link.rel='noopener';title.append(link);entry.append(title);
+  const data=pageMap.get(path),cols=el('div',null,'pagemetrics');
+  for(const [key,label] of [['edgeRequests','CF requests'],['ga4Views','GA4 views'],['verifiedBots','Verified bots']]){
+   const cell=el('div');cell.append(el('b',formatMetric(data?.current[key])),el('span',label));cols.append(cell);
+  }
+  entry.append(cols);
+  const comp=compareMetrics(data?.current.edgeRequests,data?.previous.edgeRequests);
+  entry.append(el('div',data?(state.origin==='import'?'Local evidence · ':'Source-reported · ')+(comp?'CF change '+(comp.delta>0?'+':'')+nice(comp.delta):'Comparison unavailable'):'Listed in sitemap; per-page counters not wired','small'));
+  host.append(entry);
+ }
+ set('pageCoverage',paths.length+' listed paths (sitemap and/or feed). Not an exhaustive count of active routes; verify subdomains, SPA paths and dynamic cards separately.');
+}
+function renderSources(){
+ const host=$('sourceList');host.replaceChildren();
+ const l=state.ledger;
+ host.append(sourceLine('Cloudflare GraphQL httpRequests1dGroups → D1 traffic_daily',
+  'GET /api/site-traffic; date-granular, recorded-since totals, bot-inclusive',
+  l?(l.refreshConfigured?'Read; refresh flag configured':'Read; refresh not configured'):'not connected / endpoint unavailable'));
+ host.append(sourceLine('Cloudflare Analytics SQL events.httpRequests',
+  'Zone + exact host + UTC path filter; adaptive sampling; verifiedBotCategory',
+  state.audit?.sources.some(s=>s.provider==='Cloudflare')?'report supplied; verify sample interval':'current per-page / bot breakdown not wired'));
+ host.append(sourceLine('GA4 Data API runRealtimeReport',
+  'Property-level activeUsers (30m); service-side authorized read',
+  state.audit?.signals.realtimeActiveUsers?'report supplied':'not wired'));
+ host.append(sourceLine('GA4 Data API runReport',
+  'Page path, views and users for matching UTC periods; tag coverage required',
+  state.audit?.sources.some(s=>s.provider==='GA4')?'report supplied':'not wired'));
+ if(state.audit)for(const s of state.audit.sources){
+  host.append(sourceLine(s.id+' · '+s.provider+' '+s.dataset,'query: '+s.query+'; fetched '+s.fetchedAt+'; basis '+s.precision,
+   s.status+(state.origin==='import'?' · local, unverified':' · same-origin response')));
+ }
+}
+async function loadLedger(force=false){
+ const url='/api/site-traffic'+(force?'?refresh=1':'');
+ let server=null,backup=null;
+ try{const r=await fetch(url,{cache:'no-store',credentials:'omit'});if(r.ok)server=parseLedger(await r.json());}catch{}
+ if(!server)try{const r=await fetch('/data/site-traffic-lifetime.json',{cache:'no-store',credentials:'omit'});if(r.ok)backup=parseLedger(await r.json());}catch{}
+ const chosen=server||backup;
+ if(chosen&&(!state.ledger||Date.parse(chosen.fetchedAt)>=Date.parse(state.ledger.fetchedAt)))state.ledger=chosen;
+ if(server&&state.ledger===server&&server.refreshStatus==='not_configured')set('liveStatus','Read available · refresh secret missing');
+ if(!server&&backup)set('liveStatus','Static dated fallback only');
+}
+async function loadAudit(){
+ if(state.origin==='import')return;
+ try{
+  const r=await fetch('/api/traffic-intelligence?range='+encodeURIComponent($('range').value),{cache:'no-store',credentials:'omit'});
+  if(!r.ok)throw Error('HTTP '+r.status);
+  const parsed=validateAudit(await r.json());
+  if(parsed.range!==$('range').value)throw Error('range mismatch');
+  state.audit=parsed;state.origin='server';
+ }catch{state.audit=null;state.origin='none';}
+}
+async function loadSitemap(){
+ try{
+  const r=await fetch('/sitemap.xml',{cache:'no-store',credentials:'omit'});
+  if(!r.ok)throw Error('sitemap_http_'+r.status);
+  const xml=new DOMParser().parseFromString(await r.text(),'application/xml');
+  if(xml.querySelector('parsererror'))throw Error('invalid_xml');
+  const urls=Array.from(xml.getElementsByTagName('loc')).map(e=>e.textContent.trim());
+  state.pages=urls.map(u=>{try{const p=new URL(u,location.origin);return p.origin===location.origin?p.pathname:null;}catch{return null;}}).filter(Boolean).slice(0,400);
+ }catch{state.pages=[];}
+}
+async function crawlerCheck(path,parser){
+ try{
+  const r=await fetch(path,{cache:'no-store',credentials:'omit'});
+  if(!r.ok)return {text:'HTTP '+r.status+' · inspect Cloudflare rules and origin',ok:false};
+  const content=await r.text();
+  return parser(content);
+ }catch{return {text:'Fetch unavailable or blocked from this browser',ok:false};}
+}
+async function checkCrawlers(){
+ const results=await Promise.all([
+  crawlerCheck('/robots.txt',body=>({text:body.includes('User-agent:')?'HTTP 200 · robots rules readable; Googlebot access still unverified':'HTTP 200 · robots format needs inspection',ok:true})),
+  crawlerCheck('/ads.txt',body=>({text:/google\.com\s*,\s*pub-\d+\s*,\s*(DIRECT|RESELLER)/i.test(body)?'HTTP 200 · Google seller format detected; AdSense crawl still unverified':'HTTP 200 · verify publisher ID and formatting',ok:true})),
+  crawlerCheck('/sitemap.xml',body=>({text:body.includes('<urlset')?'HTTP 200 · XML sitemap served; coverage unverified':'HTTP 200 · review sitemap XML',ok:true}))
+ ]);
+ const labels=['robots.txt','ads.txt','sitemap.xml'];
+ const host=$('crawlerResults');host.replaceChildren();
+ results.forEach((v,i)=>{state.crawler[labels[i]]=v.text;host.append(sourceLine(labels[i],v.text,v.ok?'browser check only':'needs repair'));});
+}
+let busy=false;
+async function refresh(force=false){
+ if(busy)return;busy=true;$('refresh').disabled=true;$('refresh').textContent='Checking sources…';
+ try{
+  await Promise.all([loadLedger(force),loadAudit(),loadSitemap(),checkCrawlers()]);
+  state.checkedAt=new Date().toISOString();set('lastChecked','Browser checks at '+date(state.checkedAt));
+  render();
+ }finally{busy=false;$('refresh').disabled=false;$('refresh').textContent='Refresh checks';}
+}
+$('refresh').addEventListener('click',()=>refresh(true));
+$('range').addEventListener('change',()=>{if(state.origin!=='import'){state.audit=null;loadAudit().then(render);}else render();});
+$('auditFile').addEventListener('change',async event=>{
+ const f=event.target.files?.[0];if(!f)return;
+ if(f.size>300000){set('importStatus','File too large; only aggregate evidence under 300 KB accepted.');return;}
+ try{
+  const a=validateAudit(JSON.parse(await f.text()));
+  state.audit=a;state.origin='import';$('range').value=a.range;
+  set('importStatus','Aggregate report loaded locally. Values are NOT independently verified against the provider.');
+  render();
+ }catch(e){set('importStatus','Rejected malformed or unsourced report: '+String(e.message).slice(0,120));}
+});
+const notesKey='quantaphi:traffic-intelligence:journal:v1';
+try{$('journal').value=localStorage.getItem(notesKey)||'';}catch{}
+$('saveNotes').addEventListener('click',()=>{try{localStorage.setItem(notesKey,$('journal').value);set('noteStatus','Saved on this device only.');}catch{set('noteStatus','Local storage unavailable; export instead.');}});
+$('export').addEventListener('click',()=>{
+ const record={schema:'quantaphi.traffic-evidence-log.v1',exportedAt:new Date().toISOString(),site:'quantaphi.org',
+  ledger:state.ledger,reportedAudit:state.audit,reportOrigin:state.origin,crawlerBrowserChecks:state.crawler,
+  inventory:state.pages,notes:$('journal').value,warning:'Local notes and imported reports are not independently provider-verified. No people count is inferred.'};
+ const blob=new Blob([JSON.stringify(record,null,2)],{type:'application/json'});
+ const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='quantaphi-traffic-evidence.json';a.click();URL.revokeObjectURL(url);
+ set('noteStatus','Evidence log exported. No data was sent to a server.');
+});
+refresh();
+</script>
+</body>
+</html>
