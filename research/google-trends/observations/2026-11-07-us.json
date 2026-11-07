@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-07T19:01:26.937878Z",
+  "checked_at": "2026-11-07T19:31:04.015940Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "dana white",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T18:40:00Z",
+      "query": "valencia c. f. - real madrid",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-07T19:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/deontay-wilder-launches-heavyweight-truth-021300400.html",
-        "https://bloodyelbow.com/2026/11/06/dana-white-boasts-of-improved-bedroom-energy-in-awkward-podcast-moment-with-deontay-wilder/",
-        "https://tuscaloosathread.com/ixp/962/p/tuscaloosas-deontay-wilder-enters-the-podcast-world/"
+        "https://as.com/futbol/primera/valencia-real-madrid-en-directo-laliga-ea-sports-hoy-en-vivo-f202611-d/",
+        "https://espndeportes.espn.com/futbol/espana/nota/_/id/17483583/javier-aguirre-responde-mourinho-debilidad-real-madrid",
+        "https://www.si.com/es-us/a-que-hora-es-el-partido-valencia-vs-real-madrid-y-como-verlo-en-tv-y-streaming-online-07-11-2026"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMf2mIaKQ83BQJX-7LLpjkOIGGUPE3EwuSdAQiEDFNra84SBzHxnct6cTPaoY",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRok9yaO01--lJOpwXlK4VzeNxy-jNKyhWwZ_hAQ3vDJKNRCQfySDc9aOnNd60",
+      "image_credit": "Diario AS",
+      "news": [
+        {
+          "url": "https://as.com/futbol/primera/valencia-real-madrid-en-directo-laliga-ea-sports-hoy-en-vivo-f202611-d/",
+          "title": "Valencia - Real Madrid, en directo: LaLiga EA Sports, hoy en vivo",
+          "publisher": "Diario AS",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRok9yaO01--lJOpwXlK4VzeNxy-jNKyhWwZ_hAQ3vDJKNRCQfySDc9aOnNd60"
+        },
+        {
+          "url": "https://espndeportes.espn.com/futbol/espana/nota/_/id/17483583/javier-aguirre-responde-mourinho-debilidad-real-madrid",
+          "title": "Javier Aguirre responde a Mourinho y ve una debilidad en Real Madrid",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwECSTrwI7Cxxhk2pdItLInNbIrAzEOjIDUbsDYL3TUmmn2wobCS7F2OdzOm0"
+        },
+        {
+          "url": "https://www.si.com/es-us/a-que-hora-es-el-partido-valencia-vs-real-madrid-y-como-verlo-en-tv-y-streaming-online-07-11-2026",
+          "title": "¿A qué hora es el partido Valencia vs Real Madrid y cómo verlo en TV y streaming online?",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLOnKQcvKqFe-SPL8mo7UOKQIlwBumMu2fohiM51z0GF1MIY90QkY70nvP8l4"
+        }
+      ]
+    },
+    {
+      "query": "texas a&m vs south carolina",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-07T19:10:00Z",
+      "related_news_urls": [
+        "https://www.postandcourier.com/sports/carolina/gamecocks-texas-am-college-football-playoff/article_aaef9c6b-08f8-4cbb-99a3-1d2f0259b133.html",
+        "https://sports.yahoo.com/articles/watch-texas-m-vs-south-185000248.html",
+        "https://247sports.com/college/south-carolina/article/south-carolina-gamecocks-football-betting-lines-texas-am-week-10-2026-season-292287083/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7fYg8c-fm1OufXeWSJ9vxsVNzfuP-CjIXxvdt4B-P1R2aoPJZ5VQ-05Ele0E",
+      "image_credit": "Post and Courier",
+      "news": [
+        {
+          "url": "https://www.postandcourier.com/sports/carolina/gamecocks-texas-am-college-football-playoff/article_aaef9c6b-08f8-4cbb-99a3-1d2f0259b133.html",
+          "title": "Final predictions for South Carolina at Texas A&M: Key matchups, storylines and more",
+          "publisher": "Post and Courier",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7fYg8c-fm1OufXeWSJ9vxsVNzfuP-CjIXxvdt4B-P1R2aoPJZ5VQ-05Ele0E"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/watch-texas-m-vs-south-185000248.html",
+          "title": "How to watch Texas A&M vs South Carolina: Live stream NCAA College Football, TV channel",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSx-5dTmOijcOd6b848hTs7gINQYrDr2okvNqrVw4LPwgg45egSkFUN0nf2eYU"
+        },
+        {
+          "url": "https://247sports.com/college/south-carolina/article/south-carolina-gamecocks-football-betting-lines-texas-am-week-10-2026-season-292287083/",
+          "title": "Final look at the betting lines for South Carolina vs. Texas A&M",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtsOo1wzZxYFaZ6VmEXSmNdtPWwPjk8InqT1-tqik497fN86Cwq2i2_oyzQRs"
+        }
+      ]
+    },
+    {
+      "query": "psg vs troyes",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-07T19:10:00Z",
+      "related_news_urls": [
+        "https://www.goal.com/en/news/paris-saint-germain-makes-a-surprise-decision-regarding-achraf-hakimi/bltc3bcb8917f58e785",
+        "https://athlonsports.com/soccer/how-to-watch-psg-vs-troyes-online-start-time-live-streaming-tv-channels",
+        "https://www.couriernews.com/sports/psg-to-be-without-akliouche-and-hakimi-in-ligue-1-match-against-troyes/article_a1ec0e5a-331e-5a4c-9d4c-ed1b1bcda472.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_jJasbcOxcsEbNbNSQkuYM_aEhm5ThhuKwHb0YDoZ-9hynLzU2p_-ovILg9U",
+      "image_credit": "Goal.com",
+      "news": [
+        {
+          "url": "https://www.goal.com/en/news/paris-saint-germain-makes-a-surprise-decision-regarding-achraf-hakimi/bltc3bcb8917f58e785",
+          "title": "Paris Saint-Germain makes a surprise decision regarding Achraf Hakimi",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_jJasbcOxcsEbNbNSQkuYM_aEhm5ThhuKwHb0YDoZ-9hynLzU2p_-ovILg9U"
+        },
+        {
+          "url": "https://athlonsports.com/soccer/how-to-watch-psg-vs-troyes-online-start-time-live-streaming-tv-channels",
+          "title": "PSG vs. Troyes Confirmed Lineups, Team News, Live Streaming & How to Watch on TV",
+          "publisher": "Athlon Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtylVXMV-rLpRG6D71dVFT0iv4zhNjtvuK201qos0myS4MS0ir4RcSyInd878"
+        },
+        {
+          "url": "https://www.couriernews.com/sports/psg-to-be-without-akliouche-and-hakimi-in-ligue-1-match-against-troyes/article_a1ec0e5a-331e-5a4c-9d4c-ed1b1bcda472.html",
+          "title": "PSG to be without Akliouche and Hakimi in Ligue 1 match against Troyes",
+          "publisher": "couriernews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu6-0H7SlLHSRQcE4NIeH9JzSI3toZvq9_CqK5IZqXw7L2Yuq3Kf2jHa1819Y"
+        }
+      ]
+    },
+    {
+      "query": "psg - troyes",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T19:10:00Z",
+      "related_news_urls": [
+        "https://www.lequipe.fr/Football/Actualites/Qui-est-younes-idder-le-jeune-titi-convoque-par-luis-enrique-contre-troyes/1741923",
+        "https://www.footmercato.net/a6579601466945733360-psg-estac-les-compositions-probables",
+        "https://www.psg.fr/content/composition-paris-saint-germain-estac-troyes-ligue-1-2026-2027/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScWxk_Hp0IrOevaxSSOfTEzdkgvj0WDrSpjz5_oMkixeohoLQX-pMmwGzhg1Q",
+      "image_credit": "L'Équipe",
+      "news": [
+        {
+          "url": "https://www.lequipe.fr/Football/Actualites/Qui-est-younes-idder-le-jeune-titi-convoque-par-luis-enrique-contre-troyes/1741923",
+          "title": "Qui est Younes Idder, le jeune titi convoqué par Luis Enrique contre Troyes ?",
+          "publisher": "L'Équipe",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScWxk_Hp0IrOevaxSSOfTEzdkgvj0WDrSpjz5_oMkixeohoLQX-pMmwGzhg1Q"
+        },
+        {
+          "url": "https://www.footmercato.net/a6579601466945733360-psg-estac-les-compositions-probables",
+          "title": "PSG - ESTAC : les compositions probables",
+          "publisher": "Foot Mercato",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNkCD518C0BziijZqzM2w0qpR-ukmR2XiN8Xu-ix6lCCEB5czoa8CMAI4fxsw"
+        },
+        {
+          "url": "https://www.psg.fr/content/composition-paris-saint-germain-estac-troyes-ligue-1-2026-2027/",
+          "title": "Onze de départ au Parc",
+          "publisher": "Paris Saint-Germain",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWB1bc4IObWwVh8LbGZ52Y0vvfnoM-fHIfjjhtRDA_c8YXFrhslrgdCq2rcUs"
+        }
+      ]
+    },
+    {
+      "query": "roma vs sassuolo",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T19:10:00Z",
+      "related_news_urls": [
+        "https://www.chiesaditotti.com/totti-today/44139/sweet-seventeen-romas-unbeaten-streak-in-serie-a-continues",
+        "https://www.bbc.com/sport/football/live/ck0e0jz1d907t",
+        "https://sports.yahoo.com/articles/serie-liveblog-roma-sassuolo-parma-130200685.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmpkRBh0wmK3adshYddWAmDbDHxXuzeXFpjmiOvRmx2NZG5gfivs-ZSzt4zXA",
+      "image_credit": "Chiesa Di Totti",
+      "news": [
+        {
+          "url": "https://www.chiesaditotti.com/totti-today/44139/sweet-seventeen-romas-unbeaten-streak-in-serie-a-continues",
+          "title": "Sweet Seventeen: Roma’s Unbeaten Streak in Serie A Continues",
+          "publisher": "Chiesa Di Totti",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmpkRBh0wmK3adshYddWAmDbDHxXuzeXFpjmiOvRmx2NZG5gfivs-ZSzt4zXA"
+        },
+        {
+          "url": "https://www.bbc.com/sport/football/live/ck0e0jz1d907t",
+          "title": "Roma vs Sassuolo: Italian Serie A - watch",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4Weqg3tpGop8AqYiiHZMxxlf6g2MoKouJaYjAt1U6gVZ1A-cq0Q7QTcyA-DE"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/serie-liveblog-roma-sassuolo-parma-130200685.html",
+          "title": "Serie A Liveblog: Roma-Sassuolo, Parma-Bologna, Cagliari-Frosinone, Torino-Lecce",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFia1GyVVEVpJ21v4WFyGeQkkxCkUZtl5CPLvoEnuKtR-yo5fz8OyM3vYg7PM"
+        }
+      ]
+    },
+    {
+      "query": "portland st vs montana",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T19:10:00Z",
+      "related_news_urls": [
+        "https://www.montanasports.com/college/montana-grizzlies/after-bounce-back-no-12-montana-returns-home-welcomes-new-look-portland-state",
+        "https://www.swxlocalsports.com/montana/montana-grizzlies/game-preview-fresh-off-record-setting-weekend-the-griz-look-to-add-another-win-over/article_2173e749-bccc-4139-a231-84ba8e4e8c83.html",
+        "https://billingsgazette.com/sports/college/big-sky-conference/montana-state-university/article_e04075e5-ce11-5de6-93f9-139fa1b85f1e.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIMTFDGhSHUkmqSxNyrb_Ry_cxOsfRcoOkojklPK_sL49Drh72DR8e4uro08A",
+      "image_credit": "MontanaSports.com",
+      "news": [
+        {
+          "url": "https://www.montanasports.com/college/montana-grizzlies/after-bounce-back-no-12-montana-returns-home-welcomes-new-look-portland-state",
+          "title": "After bounce-back, No. 12 Montana returns home, welcomes new-look Portland State",
+          "publisher": "MontanaSports.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIMTFDGhSHUkmqSxNyrb_Ry_cxOsfRcoOkojklPK_sL49Drh72DR8e4uro08A"
+        },
+        {
+          "url": "https://www.swxlocalsports.com/montana/montana-grizzlies/game-preview-fresh-off-record-setting-weekend-the-griz-look-to-add-another-win-over/article_2173e749-bccc-4139-a231-84ba8e4e8c83.html",
+          "title": "Game Preview: Fresh off record setting weekend the Griz look to add another win over Portland State",
+          "publisher": "SWX Local Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoqnrFtIFk9mSXoNwTRAgZD4mswAaDD2wI1NhMT0VhkYtUWxnGOU3RO8eVno0"
+        },
+        {
+          "url": "https://billingsgazette.com/sports/college/big-sky-conference/montana-state-university/article_e04075e5-ce11-5de6-93f9-139fa1b85f1e.html",
+          "title": "Big Sky Conference football picks: 406 MT Sports panel forecasts games for Griz, Cats",
+          "publisher": "Billings Gazette",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQa5fwPC11-a9FV5prefSbsw7loK55uszQMorpri1FEWDXfIY4yWn6DIHRhgwU"
+        }
+      ]
+    },
+    {
+      "query": "florida a&m vs alcorn state",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T19:10:00Z",
+      "related_news_urls": [
+        "https://www.tallahassee.com/story/sports/college/famu/2026/11/07/famu-alcorn-state-football-score-game-updates--live/92501361007/",
+        "https://sports.yahoo.com/articles/famu-football-vs-alcorn-state-100236343.html",
+        "https://alcornsports.com/news/2026/11/6/football-home-sweet-home-alcorn-welcomes-the-rattlers.aspx"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBFOTAu-u99xG4-CLsAX7fw9ozoZgWxYHAQAi-kxOqR1JTXR88BX8upQ_sYoI",
+      "image_credit": "Tallahassee Democrat",
+      "news": [
+        {
+          "url": "https://www.tallahassee.com/story/sports/college/famu/2026/11/07/famu-alcorn-state-football-score-game-updates--live/92501361007/",
+          "title": "FAMU football vs Alcorn State live updates: Time, TV info, predictions",
+          "publisher": "Tallahassee Democrat",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBFOTAu-u99xG4-CLsAX7fw9ozoZgWxYHAQAi-kxOqR1JTXR88BX8upQ_sYoI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/famu-football-vs-alcorn-state-100236343.html",
+          "title": "FAMU football vs Alcorn State prediction poll for today's SWAC game",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtiZYmqlSjcC-wOZPrvKh9m7kTuBqOKFxeqhTOKIu17g3FyGXe5RGV4ZjTfi8"
+        },
+        {
+          "url": "https://alcornsports.com/news/2026/11/6/football-home-sweet-home-alcorn-welcomes-the-rattlers.aspx",
+          "title": "Home Sweet Home: Alcorn Welcomes the Rattlers",
+          "publisher": "Alcorn State University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRP3I2BJjHxSb5oktnbFyNpY4-0pW2diG17rfZQZWipaE6ZW_ZGhYeX_pqQwRY"
+        }
+      ]
+    },
+    {
+      "query": "ms valley vs jackson state",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T19:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/channel-jackson-state-football-vs-110603896.html",
+        "https://www.gwcommonwealth.com/valley-jsu-renew-rivalry",
+        "https://www.clarionledger.com/story/sports/college/jackson-state/2026/11/06/jackson-state-football-mississippi-valley-state-predictions-picks-week-10/91849698007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQx8mJbOYH9i29V8xe2JcEilYIKriQbMmFKTj5k8nSebziZUpDnYEiv7Pq9Wv4",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/deontay-wilder-launches-heavyweight-truth-021300400.html",
-          "title": "Deontay Wilder launches Heavyweight Truth with Dana White",
+          "url": "https://sports.yahoo.com/articles/channel-jackson-state-football-vs-110603896.html",
+          "title": "What channel is Jackson State football vs Mississippi Valley State on today? Time, TV schedule",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMf2mIaKQ83BQJX-7LLpjkOIGGUPE3EwuSdAQiEDFNra84SBzHxnct6cTPaoY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQx8mJbOYH9i29V8xe2JcEilYIKriQbMmFKTj5k8nSebziZUpDnYEiv7Pq9Wv4"
         },
         {
-          "url": "https://bloodyelbow.com/2026/11/06/dana-white-boasts-of-improved-bedroom-energy-in-awkward-podcast-moment-with-deontay-wilder/",
-          "title": "Dana White boasts of improved ‘bedroom energy’ in awkward podcast moment with Deontay Wilder",
-          "publisher": "Bloody Elbow",
+          "url": "https://www.gwcommonwealth.com/valley-jsu-renew-rivalry",
+          "title": "Valley, JSU renew rivalry",
+          "publisher": "The Greenwood Commonwealth",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrz2JHau9y-cOV9SKiQsUylg4huTtfJR63TDj5ppU-3OvexchUKdjtQjUioiE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_FV7h0wGrcvYmMQOZqRQUK44a8b8sPss74VYqh-O0b3ntIibP6i4SiN-kCB0"
         },
         {
-          "url": "https://tuscaloosathread.com/ixp/962/p/tuscaloosas-deontay-wilder-enters-the-podcast-world/",
-          "title": "Boxing Legend Deontay Wilder Takes on Podcasting",
-          "publisher": "Tuscaloosa Thread",
+          "url": "https://www.clarionledger.com/story/sports/college/jackson-state/2026/11/06/jackson-state-football-mississippi-valley-state-predictions-picks-week-10/91849698007/",
+          "title": "Jackson State vs Mississippi Valley State prediction. Can Tigers stay in SWAC East race?",
+          "publisher": "The Clarion-Ledger",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUoiEvzcKojQi0pqtSRKF27yJjKPIeMEVxn7NG7E-DUhW52SxUdY5uY0dayXk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWF4URIek9CjnHvIkfAyUQMca4884om6aRQwgwBpuFHq8JbHP_SpFO42QuVKc"
         }
       ]
     },
     {
-      "query": "georgia state vs app state",
+      "query": "alabama a&m vs prairie view",
       "approx_searches": "500+",
-      "published_at": "2026-11-07T18:40:00Z",
+      "published_at": "2026-11-07T19:10:00Z",
       "related_news_urls": [
-        "https://appstatesports.com/news/2026/11/6/football-saturdays-app-state-georgia-state-game-sold-out.aspx",
-        "https://www.covers.com/sport/football/ncaaf/matchup/378954/picks",
-        "https://www.prpeak.com/classifieds/garage-sales/garage-sales/2165374"
+        "https://aamusports.com/news/2026/11/5/football-alabama-am-takes-three-game-winning-streak-to-prairie-view-am.aspx",
+        "https://www.si.com/college/hbcu/football/tremaine-jackson-alabama-am-prairie-view-swac-football-preview-2026",
+        "https://www.houstonchronicle.com/sports/college/article/prairie-view-alabama-am-watch-22509529.php"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn46PvRdocHxG90EypVNjlz6QIRGtaOmcW12yMUYiwfftnxKOBqFMTuMK_Fqw",
-      "image_credit": "App State Athletics",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShoEu6yUcuJHKoZHja5TStvqeSwCRgDUBUCoLGKy-lk8XMyLtmxP4U2J7RFlE",
+      "image_credit": "Alabama A&M Athletics",
       "news": [
         {
-          "url": "https://appstatesports.com/news/2026/11/6/football-saturdays-app-state-georgia-state-game-sold-out.aspx",
-          "title": "Saturday’s App State-Georgia State Game Sold Out",
-          "publisher": "App State Athletics",
+          "url": "https://aamusports.com/news/2026/11/5/football-alabama-am-takes-three-game-winning-streak-to-prairie-view-am.aspx",
+          "title": "Alabama A&M Takes Three-Game Winning Streak to Prairie View A&M",
+          "publisher": "Alabama A&M Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn46PvRdocHxG90EypVNjlz6QIRGtaOmcW12yMUYiwfftnxKOBqFMTuMK_Fqw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShoEu6yUcuJHKoZHja5TStvqeSwCRgDUBUCoLGKy-lk8XMyLtmxP4U2J7RFlE"
         },
         {
-          "url": "https://www.covers.com/sport/football/ncaaf/matchup/378954/picks",
-          "title": "Appalachian State",
-          "publisher": "Covers.com",
+          "url": "https://www.si.com/college/hbcu/football/tremaine-jackson-alabama-am-prairie-view-swac-football-preview-2026",
+          "title": "Tremaine Jackson Previews Alabama A&M vs. Prairie View A&M SWAC Showdown",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpgdq_-Dqy8xkPJlci5M0TxKDuae7EH3VDVPVFvlBCkQSlKOvubJjPFqHzyPk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3kd47bxttuRQjw0eSLOGOSLdhywsyFQnLT1bYwuJ7jGcEoz6IkcLd0U6g80c"
         },
         {
-          "url": "https://www.prpeak.com/classifieds/garage-sales/garage-sales/2165374",
-          "title": "LIVE: College Football Live : App State vs Georgia State Live updates",
-          "publisher": "Powell River Peak",
+          "url": "https://www.houstonchronicle.com/sports/college/article/prairie-view-alabama-am-watch-22509529.php",
+          "title": "Prairie View A&M vs. Alabama A&M: How to watch, date, time, TV channel",
+          "publisher": "Houston Chronicle",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYJTkoQRxSuZEze65rmZgN954zoFa0mgo358bKwDfFfGhFrC5jpORQNWfHivE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSkcMvNYKvV_hvBSoFHVq_GhXexWbY6U1vJs89Lcv5ygSoiP0OWGcKFXSVN5tQ"
         }
       ]
     },
     {
-      "query": "kendre miller",
+      "query": "delaware vs kennesaw st",
       "approx_searches": "500+",
-      "published_at": "2026-11-07T18:40:00Z",
+      "published_at": "2026-11-07T19:10:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/fantasy/football/news/kendre-miller-cut-loose-by-saints/",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-07/saints-release-kendre-miller-after-estime-signing",
-        "https://nfltraderumors.co/saints-releasing-rb-kendre-miller/"
+        "https://www.sportsgambler.com/betting-tips/ncaaf/delaware-blue-hens-vs-kennesaw-state-owls-prediction-odds-2026-11-07/",
+        "https://www.bleachernation.com/picks/2026/11/05/delaware-vs-kennesaw-state-football-best-bets-computer-predictions-nov-7/",
+        "https://www.delawareonline.com/story/sports/college/ud/2026/11/05/delaware-blue-hens-college-football-pivotal-november-cusa-stretch-at-kennesaw-state/92560685007/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRgtyhxGxEG7i2Okxt9MXO4tXkT6SYFeNJ2RsRVSTb2-axRU5x1XlHHfRx6NM",
-      "image_credit": "CBS Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoe_ST0TyyZgv2bhEkZPRi1qEb7ls3PUIS9URgQYxrrxKWJUt32dAINl8mQFo",
+      "image_credit": "Sportsgambler",
       "news": [
         {
-          "url": "https://www.cbssports.com/fantasy/football/news/kendre-miller-cut-loose-by-saints/",
-          "title": "Kendre Miller: Cut loose by Saints",
-          "publisher": "CBS Sports",
+          "url": "https://www.sportsgambler.com/betting-tips/ncaaf/delaware-blue-hens-vs-kennesaw-state-owls-prediction-odds-2026-11-07/",
+          "title": "Delaware vs Kennesaw State Prediction, Picks & Odds | 07 Nov 2026",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRgtyhxGxEG7i2Okxt9MXO4tXkT6SYFeNJ2RsRVSTb2-axRU5x1XlHHfRx6NM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoe_ST0TyyZgv2bhEkZPRi1qEb7ls3PUIS9URgQYxrrxKWJUt32dAINl8mQFo"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-07/saints-release-kendre-miller-after-estime-signing",
-          "title": "Saints release Kendre Miller after Estime signing",
-          "publisher": "NBC Sports",
+          "url": "https://www.bleachernation.com/picks/2026/11/05/delaware-vs-kennesaw-state-football-best-bets-computer-predictions-nov-7/",
+          "title": "Delaware vs. Kennesaw State Football Best Bets & Computer Predictions – Nov. 7",
+          "publisher": "Bleacher Nation",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZj-on0aKXuehJYvjlP2Y-zY4jGaOIx7vWlekaaDfCD5PfcCsw_oykEV0WGJA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFkmMec6PG50rTb3TdYGOeWQUjBvqJtIQqthnVdG6wc-BK3I_KYZKCNAdmTO8"
         },
         {
-          "url": "https://nfltraderumors.co/saints-releasing-rb-kendre-miller/",
-          "title": "Saints Releasing RB Kendre Miller",
-          "publisher": "NFLTradeRumors.co",
+          "url": "https://www.delawareonline.com/story/sports/college/ud/2026/11/05/delaware-blue-hens-college-football-pivotal-november-cusa-stretch-at-kennesaw-state/92560685007/",
+          "title": "As Blue Hens seek a November to remember, these 4 games loom",
+          "publisher": "Delawareonline.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMg5isHRArTGKY3vdWOMTUyeMIFUi3jqlvbPki7wQaPfPh9SAuSCo3zJnsYhc"
-        }
-      ]
-    },
-    {
-      "query": "paris fc",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T18:40:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cm62yqngv6e2t",
-        "https://karlobag.eu/en/sports/news/aj-auxerre-vs-paris-fc-tickets-for-the-ligue-1-match-nmtlp/",
-        "https://www.beinsports.com/en-us/soccer/ligue-1/articles/live-auxerre-vs-paris-fc-ligue-1-2026-11-07"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cm62yqngv6e2t",
-          "title": "Auxerre vs Paris FC: French Ligue 1 stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
-        },
-        {
-          "url": "https://karlobag.eu/en/sports/news/aj-auxerre-vs-paris-fc-tickets-for-the-ligue-1-match-nmtlp/",
-          "title": "AJ Auxerre vs Paris FC: tickets for the Ligue 1 match",
-          "publisher": "KarloBag.eu",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-PXGG2anFgZTZOCcKVYy4XucT4nOMwK3G-UZUkMvQHCAICFI52PBhfXHNREg"
-        },
-        {
-          "url": "https://www.beinsports.com/en-us/soccer/ligue-1/articles/live-auxerre-vs-paris-fc-ligue-1-2026-11-07",
-          "title": "Live: Auxerre vs. Paris FC | Ligue 1",
-          "publisher": "beIN SPORTS",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKIhWNVaOVxX0Q4xYVvCaiYDffpAa9FznCeNpgYslooCa10_h3mY2HMxpXqQM"
-        }
-      ]
-    },
-    {
-      "query": "fsu score",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T18:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50379360/florida-state-mike-norvell-collapse",
-        "https://www.nytimes.com/athletic/7611650/2026/11/01/mike-norvell-fired-fsu-florida-state-football-buyout/",
-        "https://www.usatoday.com/story/sports/ncaaf/acc/2026/11/06/fsu-football-coaching-search-florida-state-debt-money-candidates/92618073007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFii3ZkHEz3jWX9cIPugu-GG2ee1EMCA8RU7mZc0YO-NwvU2kyQVYXmZkFv14",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50379360/florida-state-mike-norvell-collapse",
-          "title": "Inside Florida State's ongoing nightmare",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFii3ZkHEz3jWX9cIPugu-GG2ee1EMCA8RU7mZc0YO-NwvU2kyQVYXmZkFv14"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7611650/2026/11/01/mike-norvell-fired-fsu-florida-state-football-buyout/",
-          "title": "FSU fires Mike Norvell, owes coach $50 million buyout after befuddling 7-year tenure",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTO1aBns2puBrB7uTqYXhkN7YdOoRIKifNDKUFboLxdO6lVLQkACzXBhjKYeiE"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/ncaaf/acc/2026/11/06/fsu-football-coaching-search-florida-state-debt-money-candidates/92618073007/",
-          "title": "Florida State football seeks new coach amid $306M question: Can FSU afford it?",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVnTG9GUDvZrb4GBfjBRj_i93GA26Vg23iR3MGMJg_DRZLcFGIyKlVR56pR5w"
-        }
-      ]
-    },
-    {
-      "query": "jordyn tyson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T18:30:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-07/schultz-jordyn-tyson-hamstring-good-to-go-vs-browns",
-        "https://www.nola.com/sports/saints/saints-jordyn-tyson-kelvin-banks-injury-report/article_81599f15-ccee-4d85-bc9f-c24544ab6148.html",
-        "https://www.neworleanssaints.com/news/rookie-receiver-jordyn-tyson-focused-on-making-nfl-debut-with-new-orleans-saints"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoF4jGz7zwjDJKylkJN4IPQeDjQZHLIctXNxGmFJlgNmpLUPiIP8FpwD0sd0U",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-07/schultz-jordyn-tyson-hamstring-good-to-go-vs-browns",
-          "title": "Schultz: Jordyn Tyson (hamstring) good to go vs. Browns",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoF4jGz7zwjDJKylkJN4IPQeDjQZHLIctXNxGmFJlgNmpLUPiIP8FpwD0sd0U"
-        },
-        {
-          "url": "https://www.nola.com/sports/saints/saints-jordyn-tyson-kelvin-banks-injury-report/article_81599f15-ccee-4d85-bc9f-c24544ab6148.html",
-          "title": "Saints update status on Jordyn Tyson, Kelvin Banks ahead of Browns game. Will they play?",
-          "publisher": "NOLA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRX8-Iab7y8k3WTIJPOKKRxAaTR10XThUicQSMkhgInn8ERQJcKe90uXkc-bec"
-        },
-        {
-          "url": "https://www.neworleanssaints.com/news/rookie-receiver-jordyn-tyson-focused-on-making-nfl-debut-with-new-orleans-saints",
-          "title": "Rookie receiver Jordyn Tyson focused on making NFL debut with New Orleans Saints",
-          "publisher": "New Orleans Saints | NewOrleansSaints.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFSLPDYe0kAP7DL3rDhxFfuzjbTQnhyiLpw3ncRpEtz1EnWT5RtV51lNBgYPA"
-        }
-      ]
-    },
-    {
-      "query": "nate sheppard",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T18:30:00Z",
-      "related_news_urls": [
-        "https://www.newsobserver.com/sports/article317975114.html",
-        "https://www.usatoday.com/sports/ncaaf/event/2026/2969399/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=9",
-        "https://www.cbssports.com/college-football/news/nate-sheppard-stayed-duke-others-left-heisman/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdaY4qsIFiYg0Izt-sMYOGBq_dQhvIK19ray3Uf2Ul2WhoxZOTGEQd-W4MMXo",
-      "image_credit": "Raleigh News & Observer",
-      "news": [
-        {
-          "url": "https://www.newsobserver.com/sports/article317975114.html",
-          "title": "Watch Nate Sheppard set Duke football record with TD run vs NC State",
-          "publisher": "Raleigh News & Observer",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdaY4qsIFiYg0Izt-sMYOGBq_dQhvIK19ray3Uf2Ul2WhoxZOTGEQd-W4MMXo"
-        },
-        {
-          "url": "https://www.usatoday.com/sports/ncaaf/event/2026/2969399/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=9",
-          "title": "Duke Blue Devils at NC State Wolfpack - NCAAF Game Summary - Nov 07, 2026",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDPhIaILHoTzLEds84uz1umWto6v2G7S22W4ado1iTO7_M9QhkleYmVQU1zl8"
-        },
-        {
-          "url": "https://www.cbssports.com/college-football/news/nate-sheppard-stayed-duke-others-left-heisman/",
-          "title": "Nate Sheppard stayed at Duke when others left, and now he's crashing the Heisman race",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRg9IEhl-GGqKWTrHtfK3d5oMe1IteubTx8ZLwPOtv7DOqoYrB3plWA-x4orgg"
-        }
-      ]
-    },
-    {
-      "query": "youngstown st vs murray state",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T18:20:00Z",
-      "related_news_urls": [
-        "https://goracers.com/news/2026/11/6/football-racers-return-home-to-host-fourth-ranked-penguins",
-        "https://globelynews.com/americas/youngstown-state-vs-murray-state-prediction-how-to-watch/",
-        "https://www.vindy.com/sports/2026/11/penguins-5-game-win-streak-a-full-team-effort/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrfOyly8ko6EutRUSNi1HYh4U4u_C7WTXuEX03st2as7bUCsuNUUA04FlTCfo",
-      "image_credit": "Murray State University Athletics",
-      "news": [
-        {
-          "url": "https://goracers.com/news/2026/11/6/football-racers-return-home-to-host-fourth-ranked-penguins",
-          "title": "Racers Return Home to Host Fourth-Ranked Penguins",
-          "publisher": "Murray State University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrfOyly8ko6EutRUSNi1HYh4U4u_C7WTXuEX03st2as7bUCsuNUUA04FlTCfo"
-        },
-        {
-          "url": "https://globelynews.com/americas/youngstown-state-vs-murray-state-prediction-how-to-watch/",
-          "title": "Youngstown State vs. Murray State: Prediction, How to Watch",
-          "publisher": "Globely News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVDFPhHg9eYRX-Ze7Iw4e5tD-0uRZZ_MJpDnjqIJQGEuFlXKN_dTALcEmXCSE"
-        },
-        {
-          "url": "https://www.vindy.com/sports/2026/11/penguins-5-game-win-streak-a-full-team-effort/",
-          "title": "Penguins’ 5-game win streak a full-team effort",
-          "publisher": "The Vindicator",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1huV2RxEk1CmnkHZ_IMzspccYTtxgb5M032aXQ3kXK5agFeaB6Y3y8QNV4GM"
-        }
-      ]
-    },
-    {
-      "query": "jim cramer nvidia stock advice",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T18:20:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/retiree-bought-1-000-nvidia-050652743.html",
-        "https://www.thestreet.com/investing/stocks/jim-cramer-sends-a-strong-signal-to-nvidia-stock-investors",
-        "https://www.fool.com/coverage/stock-market-today/2026/11/05/stock-market-today-nov-5-nvidia-slides-on-ai-chip-selloff-as-election-uncertainty-weighs/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuz5LO3MBJkgQLRwUWZhBOkf2HME4oZCLR17H2GAjUVAPRj15i9f4al_NhCuI",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/retiree-bought-1-000-nvidia-050652743.html",
-          "title": "A Retiree Who Bought 1,000 Nvidia Shares at $122 Just Watched Chips Have Their Worst Day Since 2020",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuz5LO3MBJkgQLRwUWZhBOkf2HME4oZCLR17H2GAjUVAPRj15i9f4al_NhCuI"
-        },
-        {
-          "url": "https://www.thestreet.com/investing/stocks/jim-cramer-sends-a-strong-signal-to-nvidia-stock-investors",
-          "title": "Jim Cramer sends a strong signal to Nvidia stock investors",
-          "publisher": "TheStreet",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSz0cbGgpHzusVi-m-H6DbnZLVqWZqdjs3_CiOHPJAw2upGUFOZbhYtytSGC6k"
-        },
-        {
-          "url": "https://www.fool.com/coverage/stock-market-today/2026/11/05/stock-market-today-nov-5-nvidia-slides-on-ai-chip-selloff-as-election-uncertainty-weighs/",
-          "title": "Stock Market Today, Nov. 5: Nvidia Slides on AI Chip Selloff as Election Uncertainty Weighs",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFksGcb6KuPE6BhwtHVBUMLwTOQxmyTXQRyidpIRwrxNuz_Lkum1GfoJWuosA"
-        }
-      ]
-    },
-    {
-      "query": "sd state vs northern iowa",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-07T18:10:00Z",
-      "related_news_urls": [
-        "https://unipanthers.com/news/2026/11/6/womens-basketball-uni-womens-basketball-drops-first-game-of-the-2026-27-season-at-south-dakota-state",
-        "https://sports.yahoo.com/articles/sdsu-womens-basketball-picks-first-073041023.html",
-        "https://www.keloland.com/sports/jacks-wbb-hit-10-3-pointers-in-win-over-uni/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRlrTu47gXekqVRP7U65M_zW_w0omtswDkKgBrmboCr_v6DJZQFGrR3A55jlk",
-      "image_credit": "UNI Athletics",
-      "news": [
-        {
-          "url": "https://unipanthers.com/news/2026/11/6/womens-basketball-uni-womens-basketball-drops-first-game-of-the-2026-27-season-at-south-dakota-state",
-          "title": "UNI women’s basketball drops first game of the 2026-27 season at South Dakota State",
-          "publisher": "UNI Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRlrTu47gXekqVRP7U65M_zW_w0omtswDkKgBrmboCr_v6DJZQFGrR3A55jlk"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/sdsu-womens-basketball-picks-first-073041023.html",
-          "title": "SDSU women's basketball picks up first win vs Northern Iowa",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPnIbFNE_kOfXm6DilyolqCr7BifhZZbna9FREhCitmFuRLC6CuwVZFiiQPQo"
-        },
-        {
-          "url": "https://www.keloland.com/sports/jacks-wbb-hit-10-3-pointers-in-win-over-uni/",
-          "title": "Jacks WBB hit 10 3-pointers in win over UNI",
-          "publisher": "KELOLAND.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCfKCx0x7k_wUeDfEgrcoy4lxHIeJ672IT5E86UpovQrzKm1KqLKJYyor4p1A"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPC0xHosW5zdYu_aXFalamoQ7BzgWCpRniYhPkRb5byjBg2E91xeJyz3zXVbA"
         }
       ]
     }
