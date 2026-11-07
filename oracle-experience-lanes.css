@@ -37,6 +37,8 @@
 #oracleExperienceLanes .ioc-gate .ioc-primary{width:100%}
 #oracleExperienceLanes #ioc-adult .ioc-intro .ioc-secondary{margin-top:12px}
 #oracleExperienceLanes [hidden]{display:none!important}
+/* When a different story card is selected, return unused original widgets to an invisible connected bank, never a vertical wall. */
+body.oracle-card-deck-active main.app > :is(#physicsOracleCard,#oracleRealmGame){display:none!important}
 /* The age-restricted original roots must never appear as a vertical wall in the ordinary page. */
 body.oracle-card-deck-active main.app>[id^="dispensary-"],
 body.oracle-card-deck-active main.app>#cannabisDirectoryCard,
