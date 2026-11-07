@@ -22,15 +22,18 @@ export function routeColorHandoffs(task){
 }
 
 export async function runColorHandoffs(ai,{task,evidence={}}={}){
- if(!ai||typeof ai.run!=='function')throw Error('color_model_unavailable');
  if(typeof task!=='string'||!task.trim()||task.length>12000)throw Error('color_handoff_task_invalid');
+ const roles=routeColorHandoffs(task);
+ // A narrow Green repair needs no extra model or credential before the regular runner.
+ if(!roles.length)return [];
+ if(!ai||typeof ai.run!=='function')throw Error('color_model_unavailable');
  if(!evidence||typeof evidence!=='object'||Array.isArray(evidence))throw Error('color_handoff_evidence_invalid');
  // The planner already has the pinned source; keep role inference deliberately
  // bounded and do not elevate any prior model output to user instructions.
  const source=JSON.stringify(evidence);
  if(source.length>8000)throw Error('color_handoff_evidence_too_large');
  const handoffs=[];
- for(const role of routeColorHandoffs(task)){
+ for(const role of roles){
   const profile=colorCoreProfile(role);
   const input={task,evidence,previousRoleFindings:handoffs.map(h=>({role:h.role,finding:h.finding,nextAction:h.nextAction}))};
   const response=await ai.run(COLOR_MODEL,{
