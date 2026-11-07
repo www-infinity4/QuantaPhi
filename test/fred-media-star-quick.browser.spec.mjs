@@ -31,7 +31,7 @@ test('next Fred Space opens the real Oracle card and never bypasses payment read
  await expect(page.locator('#fredSpacesQuickNext')).toBeVisible();
  await page.locator('#fredSpacesQuickNext').click();
  const stage=page.locator('#oracleCardStage');
- await expect(stage).toHaveAttribute('data-switchboard-id','fredSpacesRadio',{timeout:20000});
+ await expect(stage).toHaveAttribute('data-switchboard-id','fred-spaces',{timeout:20000});
  await expect(stage.getByText('Fred Krueger · @dotkrueger · X Spaces')).toBeVisible();
  const source=stage.locator('.fs-play');
  await expect(source).toHaveAttribute('href','https://x.com/i/spaces/1OyKAjYPeXqGb');
