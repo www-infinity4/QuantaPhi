@@ -7,6 +7,7 @@ import {tinyfishCard} from './tinyfish-card-catalog.mjs';
 import {liveSourceProfile,showLiveSourceResults} from './quanta-card-live-source.mjs';
 import {mountMarketplaceCarousel} from './quanta-marketplace-carousel.mjs?v=20261101-unified-market1';
 import {mountStarMakerQuickCard} from './starmaker-quick-card.mjs';
+import {mountMotorcycleQuickCard} from './motorcycle-quick-cards.mjs';
 import {mountKaraokeLab} from './quanta-karaoke-lab.mjs';
 /* Infinity card experiences: real local controls, consented embeds, verified open APIs.
  * Never invent publisher feeds, balances, trending lists, streaming rights or provider sessions.
@@ -376,6 +377,10 @@ export function mountCardTools(root,card){
   // local checklist or an imitation ChatGPT reply. The official viewer
   // mounts beside these original shared actions in source-quick-cards.mjs.
   root.append(node('p','qcx-note','Sign in and use the actual ChatGPT website with the official website controls below.'));
+  mountCardActions(root,card,{showSearch:false});
+  return;
+ }
+ if(mountMotorcycleQuickCard(root,card)){
   mountCardActions(root,card,{showSearch:false});
   return;
  }

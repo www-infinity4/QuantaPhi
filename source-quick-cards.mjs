@@ -1,5 +1,6 @@
 import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261102-cardimages1';
 import {mountOfficialViewer} from './quanta-official-viewer.mjs';
+import {MOTORCYCLE_SOURCES} from './motorcycle-quick-cards.mjs';
 import {lookupQuickCard} from './quick-card-search-core.mjs?v=20261028-search1';
 /* Infinity source quick cards — official links and one consented Bubbles specialist.
  * Public preview, not publisher endorsement, trending API, logged-in session,
@@ -29,15 +30,16 @@ export const QUICK_CARD_SOURCES=Object.freeze([
  source('fox-one-live-news','FOX One · Live News','News · Video','FOX One video spot · Watch FOX News live','https://www.fox.com/stream/fox-news','https://x.com/foxone/status/2070282166190408122','Present the original FOX One video spot and help viewers find FOX News streaming through FOX One. Do not imply affiliation, free live access, video rights, or guaranteed autoplay.','Official FOX One post embed. Full FOX News live viewing requires an eligible FOX One subscription or TV provider sign-in. The video embed depends on X and browser support.',{secondUrl:'https://www.fox.com/',secondLabel:'Explore all FOX One channels'}),
  source('fox-news','Fox News','News','Fox News headlines and viewer submissions','https://www.foxnews.com/','https://www.foxnews.com/','Help users research Fox reports and draft a news tip with source evidence. Submission requires a real Fox-approved destination and the visitor’s explicit approval.','View Fox News. Video submissions are draft-only until an authenticated, publisher-approved handoff is built.',{secondUrl:'https://www.foxnews.com/contact',secondLabel:'Contact Fox News'}),
  source('tv-guide','TV Guide','TV','Find tonight’s shows and TV recommendations','https://www.tvguide.com/','https://www.tvguide.com/','Find programs, schedules and credited trailers using a licensed/verified TV listing source and the user’s choice of region.','Open TV Guide to choose shows. The live local schedule needs a licensed guide feed and explicit region selection.'), 
- source('starmaker','StarMaker','Karaoke','Find a song and sing karaoke','https://www.starmakerstudios.com/en/songs','https://www.starmakerstudios.com/en/songs','Help with song selection, harmonies and vocal practice; recording needs explicit microphone permission and a real licensed backing track.','Open official StarMaker karaoke. QuantaPhi must not copy paid backing tracks, lyrics or recordings without rights.',{secondUrl:'https://play.google.com/store/apps/details?id=com.starmakerinteractive.starmaker',secondLabel:'Open StarMaker on Android'})
+ source('starmaker','StarMaker','Karaoke','Find a song and sing karaoke','https://www.starmakerstudios.com/en/songs','https://www.starmakerstudios.com/en/songs','Help with song selection, harmonies and vocal practice; recording needs explicit microphone permission and a real licensed backing track.','Open official StarMaker karaoke. QuantaPhi must not copy paid backing tracks, lyrics or recordings without rights.',{secondUrl:'https://play.google.com/store/apps/details?id=com.starmakerinteractive.starmaker',secondLabel:'Open StarMaker on Android'}),
+ ...MOTORCYCLE_SOURCES
 ]);
 // Only expose source cards that contain a usable real action (search, player,
-// message draft, local recording, or approved provider embed). These are
+// message draft, model selection, local recording, or approved provider embed). These are
 // independent tools, not claims of publisher data access or affiliation.
 export const PUBLIC_SOURCE_IDS=Object.freeze([
  'google','bing','youtube','reddit','x','tiktok','starmaker','fox-one','fox-one-live-news',
  'cnn','fox-news','yahoo-news','tv-guide','facebook','instagram','whatsapp',
- 'chatgpt','gemini','claude','copilot'
+ 'chatgpt','gemini','claude','copilot','harley-davidson','indian-motorcycle'
 ]);
 export const isPublicSourceCard=card=>Boolean(card&&PUBLIC_SOURCE_IDS.includes(card.id));
 export const findSourceCard=id=>{
