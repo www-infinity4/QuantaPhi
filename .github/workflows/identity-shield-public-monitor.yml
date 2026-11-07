@@ -1,5 +1,11 @@
 name: Infinity Identity Shield public research
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'identity-shield-card.mjs'
+      - 'scripts/identity-shield-public-monitor.py'
+      - '.github/workflows/identity-shield-public-monitor.yml'
   pull_request:
     paths:
       - 'identity-shield-card.mjs'
