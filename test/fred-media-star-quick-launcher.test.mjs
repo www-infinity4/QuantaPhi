@@ -35,7 +35,8 @@ test('the separate next-episode button opens the ORIGINAL player and invokes its
 
 test('play shortcut updates only to a verified unlocked original X source; no false trending or new playback rights',()=>{
  const html=read('index.html'),player=read('fred-spaces-radio.js');
- assert.match(player,/quickPlay\.href=active\.source/);
+ assert.match(player,/const replay=allowed\?active:byId\.get\(FIRST\)/);
+ assert.match(player,/quickPlay\.href=replay\.source/);
  assert.match(player,/quickPlay\.setAttribute\('aria-label'/);
  assert.match(player,/if\(saved&&\(saved\.id===FIRST\|\|unlocked\.has\(saved\.id\)\)\)active=saved/);
  assert.match(player,/play\.href=active\.source;play\.target="_blank"/);
