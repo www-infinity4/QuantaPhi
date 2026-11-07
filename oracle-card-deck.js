@@ -10,14 +10,12 @@ const now=document.getElementById('oracleCardNow'),status=document.getElementByI
 const choices=[
  ['coliseumZeusCard','ZEUS 6.2 · Coliseum Group Builder'],
  ['walmartShoppingCard','Walmart · Pizza and grocery picks'],
- ['cardoneCapitalOffer','10X Westshore · Cardone Capital'],
  ['quantaDirectoryCards','Find a name, website or StarMaker song'],
  ['bubblesIdentitySettingsCard','Bubbles · Identity & Documents'],
  ['disabilityHousingCard','Home Access · Housing with disability income'],
  ['pixieStoryCard','Pixie Stories · Read and explore'],
  ['googleTrendNba','NBA · Trending matchups'],
  ['googleTrendMlb','MLB · Scores'],
- ['churchOfIAmCard','Church of I AM · Gary Cardone'],
  ['googleTrendCulture','Media · Trending searches'],
  ['infiniteBook','Read an original story'],
  ['infinityAffiliates','Infinity Affiliates · Match approved brands'],
@@ -81,7 +79,6 @@ const CARD_DIRECTIONS={
  liveFoxNewsCard:['fox-live-news','Television','Watch the official LiveNOW from FOX news player'],
  coliseumZeusCard:['coliseum-zeus','Collaboration','Pitch, vote, branch and build in the Zeus arena'],
  walmartShoppingCard:['walmart-shopping','Shopping','Shop Walmart pizza, groceries and related products'],
- cardoneCapitalOffer:['cardone-capital','Real estate','Study cashflow, fees and property risk'],
  quantaDirectoryCards:['public-directory','Directory','Search verified names, businesses and websites'],
  bubblesIdentitySettingsCard:['bubbles-identity-settings','Account settings','Open private identity planning, SSI letters and document checklist'],
  disabilityHousingCard:['disability-housing','Housing','Prepare a housing intake with disability benefit income'],
@@ -89,7 +86,6 @@ const CARD_DIRECTIONS={
  pixieStoryCard:['pixie-stories','Stories','Read an original Pixie story'],
  googleTrendNba:['trending-nba','Sports','Explore an NBA match and related research'],
  googleTrendMlb:['trending-mlb','Sports','Explore current MLB matchups'],
- churchOfIAmCard:['church-of-i-am','Sunday conversations','Find Gary Cardone’s official Sunday I AM gathering'],
  googleTrendCulture:['trending-media','Media','Investigate popular media and events'],
  infiniteBook:['reads-realms','Stories','Read and research an original story'],
  infinityAffiliates:['infinity-affiliates','Shopping','Match Infinity Approved brands and request product affiliation'],
@@ -148,14 +144,12 @@ const entries=unique.map(([id,title])=>{
  return {id,title,feedId,category,feature,study:title,node:document.getElementById(id),marker:null,count:0};
 }).filter(x=>x.node);
 const STORE='oracle:card-activity:v1';
-const cardoneButton=document.getElementById('oracleCardCardone');
-const CARDONE_ID='cardoneCapitalOffer';
 const spotlightRequested=(()=>{try{
  const url=new URL(location.href);
- const names={twitter:'xTwitterCard',x:'xTwitterCard','x-twitter':'xTwitterCard','x-spaces':'xSpacesQuickCard',zeus:'coliseumZeusCard',coliseum:'coliseumZeusCard',walmart:'walmartShoppingCard',google:'source-google','kyou':'liveFoxGameCard','kyou-live':'liveFoxGameCard','kyou-fox':'liveFoxGameCard','fox-live-game':'liveFoxGameCard','fox-live-news':'liveFoxNewsCard',starquest:'infinityStarQuestCard',chiller:'infinityChillerCard','shop-lc':'infinityShopLcCard',shoplc:'infinityShopLcCard',omnitv:'infinityOmniTvCard','omni-tv':'infinityOmniTvCard','tv-guide':'phiChannelCards','fox-one':'source-fox-one',foxone:'source-fox-one','fox-one-live-news':'source-fox-one-live-news',foxnewslive:'source-fox-one-live-news',cardone:'cardoneCapitalOffer',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture',iam:'churchOfIAmCard','church-of-i-am':'churchOfIAmCard'};
+ const names={twitter:'xTwitterCard',x:'xTwitterCard','x-twitter':'xTwitterCard','x-spaces':'xSpacesQuickCard',zeus:'coliseumZeusCard',coliseum:'coliseumZeusCard',walmart:'walmartShoppingCard',google:'source-google','kyou':'liveFoxGameCard','kyou-live':'liveFoxGameCard','kyou-fox':'liveFoxGameCard','fox-live-game':'liveFoxGameCard','fox-live-news':'liveFoxNewsCard',starquest:'infinityStarQuestCard',chiller:'infinityChillerCard','shop-lc':'infinityShopLcCard',shoplc:'infinityShopLcCard',omnitv:'infinityOmniTvCard','omni-tv':'infinityOmniTvCard','tv-guide':'phiChannelCards','fox-one':'source-fox-one',foxone:'source-fox-one','fox-one-live-news':'source-fox-one-live-news',foxnewslive:'source-fox-one-live-news',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture'};
  names.housing='disabilityHousingCard';names['disability-housing']='disabilityHousingCard';names['home-access']='disabilityHousingCard';
  const requested=url.searchParams.get('card');
- return names[requested]||(requested&&/^[a-zA-Z0-9-]+$/.test(requested)?requested:null)||(url.hash==='#cardoneCapitalOffer'?'cardoneCapitalOffer':null);
+ return names[requested]||(requested&&/^[a-zA-Z0-9-]+$/.test(requested)?requested:null);
 }catch{return null}})();
 let counts={};try{counts=JSON.parse(localStorage.getItem(STORE)||'{}')||{}}catch{}
 entries.forEach(x=>x.count=Math.max(0,Math.min(1000,Number(counts[x.id])||0)));
@@ -497,18 +491,6 @@ function advance(direction){
 }
 // The visitor controls the primary Quick Card. Passive ShopPhi rotations may
 // update related offers below it, never replace its player or active controls.
-cardoneButton?.addEventListener('click',()=>{
- viewerTouched=true;
- const entry=entries.find(x=>x.id===CARDONE_ID);
- if(!available(entry)){status.textContent='The Cardone card is not available in this page version yet.';return;}
- if(expanded){
-  expanded=false;document.body.classList.remove('oracle-shelf-open');
-  scroll.setAttribute('aria-expanded','false');
-  scroll.textContent='↓ Scroll interactive cards / widgets';
- }
- show(entry);
- host.scrollIntoView?.({block:'start',behavior:'smooth'});
-});
 for(const shortcut of document.querySelectorAll('[data-oracle-spotlight]')){
  shortcut.addEventListener('click',()=>{
   viewerTouched=true;
@@ -588,7 +570,7 @@ host.addEventListener('click',e=>{
 },true);
 document.body.classList.add('oracle-card-deck-active');
 // Every ready card competes for first placement. The source/museum/product
-// categories and both Cardone cards have no privileged opening positions.
+// categories have no privileged opening positions.
 function chooseOpening(){
  const ready=eligible();if(!ready.length)return null;
  // Each visit starts with another family; 116 accepted brands no longer monopolize
