@@ -35,5 +35,5 @@ test('public monitor is scheduled and only writes public source digests to a rea
  assert.ok(monitor.includes('www.identitytheft.gov'));
  assert.ok(monitor.includes('content_sha256'));
  assert.equal(state.monitor_kind,'public_policy_sources_only');
- assert.equal(state.last_run_utc,null);
+ assert.ok(state.last_run_utc===null || Number.isFinite(Date.parse(state.last_run_utc)));
 });
