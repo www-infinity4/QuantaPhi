@@ -60,7 +60,9 @@ test('Real GitHub results become individually navigable picture-first cards; no 
  await expect(section.locator('#developerCardNow')).toHaveText('example-carousel');
  const active=section.locator('.developer-resource-slide');
  await expect(active.locator('.developer-cover-image')).toBeVisible();
- await expect(active.locator('.devlib-meta')).toContainText(['Source: GitHub','Rights: MIT','GitHub stars: 120']);
+ await expect(active.locator('.devlib-facts')).toContainText('GitHub');
+ await expect(active.locator('.devlib-facts')).toContainText('MIT');
+ await expect(active.locator('.devlib-facts')).toContainText('120');
  await expect(active.getByRole('link',{name:'Inspect original source'})).toHaveAttribute('href','https://github.com/oss/example-carousel');
  await section.getByRole('button',{name:'Next developer card'}).click();
  await expect(section.locator('#developerCardNow')).toHaveText('slider');
