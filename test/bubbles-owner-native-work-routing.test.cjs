@@ -15,6 +15,22 @@ test('owner X / Bubbles repairs identify QuantaPhi without a magic prompt',()=>{
   'Could you wire the Twitter quick card to the real X feed?'
  ]) assert.equal(brain.firstPartyRepairTarget(instruction),'www-infinity4/QuantaPhi',instruction);
 });
+test('rock radio and Steve Miller quick card repairs auto-route to QuantaPhi',()=>{
+ for(const instruction of [
+  'Fix the rock music player buttons; they play Infinity Music instead',
+  'Repair Steve Miller radio in the Quick Card',
+  'Fix Pink Floyd radio button on the page',
+  'Bubbles, repair Classic Rock player in the Infinity carousel',
+  'Please fix Infinity Radio Quick Card playback'
+ ]) assert.equal(brain.firstPartyRepairTarget(instruction),'www-infinity4/QuantaPhi',instruction);
+ for(const instruction of [
+  'How does Steve Miller radio work?',
+  'Do not fix Pink Floyd radio',
+  'Fix Pink Floyd radio in www-infinity4/Alien-Radio',
+  'Repair Classic Rock player across both repositories'
+ ]) assert.equal(brain.firstPartyRepairTarget(instruction),null,instruction);
+});
+
 test('questions, refusals, read-only checks and named other repos never authorize QuantaPhi repair',()=>{
  for(const instruction of [
   'How can I repair Bubbles?',
