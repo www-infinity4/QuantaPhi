@@ -1,5 +1,18 @@
 name: Oracle Octaves creator and documentary carousels
 on:
+  push:
+    branches: [feat/oracle-creative-media-1603-20261107]
+    paths:
+      - 'oracle-experience-lanes.*'
+      - 'oracle-curated-catalog.mjs'
+      - 'oracle-card-deck.js'
+      - 'phi-image-builder.js'
+      - 'phi-story-writer.js'
+      - 'restricted-dispensary-cards.mjs'
+      - 'test/oracle-curated-catalog.test.mjs'
+      - 'test/oracle-image-studio.browser.cjs'
+      - 'index.html'
+      - '.github/workflows/oracle-experience-lanes.yml'
   pull_request:
     paths:
       - 'oracle-experience-lanes.*'
@@ -33,3 +46,9 @@ jobs:
           node --check restricted-dispensary-cards.mjs
       - name: Check reviewed publisher catalog and carousel behavior
         run: node --test test/oracle-curated-catalog.test.mjs
+      - name: Install test browser for Android Image Printer verification
+        run: |
+          npm install --no-save --package-lock=false playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Verify Android one-prompt Image Printer and original render repairs
+        run: node test/oracle-image-studio.browser.cjs
