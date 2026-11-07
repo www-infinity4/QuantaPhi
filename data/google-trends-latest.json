@@ -3,87 +3,87 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-07T11:31:25.632131Z",
+  "checked_at": "2026-11-07T12:01:29.827421Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "will estes donnie wahlberg boston blue",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-07T11:10:00Z",
-      "related_news_urls": [
-        "https://www.tvinsider.com/1302253/boston-blue-will-estes-jamie-reagan-danny-donnie-wahlberg-blue-bloods-interview/",
-        "https://www.tvline.com/2310002/boston-blue-season-2-episode-5-jamie-reagan-returns-will-estes-interview-video/",
-        "https://people.com/will-estes-reunites-donnie-wahlberg-boston-blue-clip-exclusive-12238364"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_xT5Cf9SgAMv1zSe5kSNRzN41DkalJ9NNkKYgv4tJFQPJMseYPnQL3lV-X0",
-      "image_credit": "TV Insider",
-      "news": [
-        {
-          "url": "https://www.tvinsider.com/1302253/boston-blue-will-estes-jamie-reagan-danny-donnie-wahlberg-blue-bloods-interview/",
-          "title": "'Boston Blue': Why Will Estes Was 'Terrified' to Play Jamie Reagan Again",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_xT5Cf9SgAMv1zSe5kSNRzN41DkalJ9NNkKYgv4tJFQPJMseYPnQL3lV-X0"
-        },
-        {
-          "url": "https://www.tvline.com/2310002/boston-blue-season-2-episode-5-jamie-reagan-returns-will-estes-interview-video/",
-          "title": "Boston Blue Season 2, Episode 5: Jamie Reagan Returns — Will Estes Interview Video",
-          "publisher": "TVLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfeZfHUqPqc5zqFsQqRcAKNVk_i9HDWjQ0yHAo8krFJyn8yPgL4tXCNd5D4rA"
-        },
-        {
-          "url": "https://people.com/will-estes-reunites-donnie-wahlberg-boston-blue-clip-exclusive-12238364",
-          "title": "Donnie Wahlberg and Blue Bloods Brother Will Estes Settle a ‘Beef’ as They Reunite in Boston Blue Clip (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfP_8xbPQNRCNgSB-ZPDyIUaJXK4rL7K0hfAChkRSazbRRvt6b5z3qgxLycCQ"
-        }
-      ]
-    },
-    {
-      "query": "ihsa football scores",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T11:10:00Z",
-      "related_news_urls": [
-        "https://www.chicagotribune.com/2026/11/06/ihsa-state-football-playoff-pairings-schedule/",
-        "https://sports.yahoo.com/articles/illinois-high-school-football-final-063359107.html",
-        "https://www.pjstar.com/story/sports/high-school/football/2026/11/05/football-predictions-how-we-see-ihsa-second-round-for-peoria-area-high-school-games/92564715007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdAQZ9U5B6qMz4ZYIw1N_3bee9rZkKCJw-BBNVXs0_uJ75y9nEeE8E8dhHivA",
-      "image_credit": "Chicago Tribune",
-      "news": [
-        {
-          "url": "https://www.chicagotribune.com/2026/11/06/ihsa-state-football-playoff-pairings-schedule/",
-          "title": "IHSA football playoffs: Get the scores from 2nd-round games in Class 8A to 1A",
-          "publisher": "Chicago Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdAQZ9U5B6qMz4ZYIw1N_3bee9rZkKCJw-BBNVXs0_uJ75y9nEeE8E8dhHivA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/illinois-high-school-football-final-063359107.html",
-          "title": "Illinois High School Football Final Scores - November 6",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmTZnNn6L1RhAFjGo1ZmAVneOpokK8eD1-RsiHGnACP-sT0gtrzWMVhr5cNws"
-        },
-        {
-          "url": "https://www.pjstar.com/story/sports/high-school/football/2026/11/05/football-predictions-how-we-see-ihsa-second-round-for-peoria-area-high-school-games/92564715007/",
-          "title": "IHSA playoff predictions: Second-round picks for Peoria-area high school football teams",
-          "publisher": "Peoria Journal Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKV8V5xTasV0eqGGlEEsVrBWKelZ2vTbRJdrJtuz0TTBkPaE21udJAwe-ftwo"
-        }
-      ]
-    },
-    {
-      "query": "leeds united",
+      "query": "spartanburg",
       "approx_searches": "100+",
-      "published_at": "2026-11-07T11:10:00Z",
+      "published_at": "2026-11-07T11:40:00Z",
+      "related_news_urls": [
+        "https://www.wspa.com/news/local-news/officers-respond-to-shooting-after-man-walks-into-spartanburg-er-with-gunshot-wound/",
+        "https://www.foxcarolina.com/2026/11/06/police-report-another-early-morning-shooting-injury-spartanburg/",
+        "https://www.wyff4.com/article/woman-charged-after-gunshot-victim-changes-story/74363478"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkIoSq2uktsL1cthXfwSbpJ0hyxFOZVhy4V11RazhgSnKklkAQ0TF_L73rx1A",
+      "image_credit": "WSPA 7News",
+      "news": [
+        {
+          "url": "https://www.wspa.com/news/local-news/officers-respond-to-shooting-after-man-walks-into-spartanburg-er-with-gunshot-wound/",
+          "title": "Officers respond to shooting after man walks into Spartanburg ER with gunshot wound",
+          "publisher": "WSPA 7News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkIoSq2uktsL1cthXfwSbpJ0hyxFOZVhy4V11RazhgSnKklkAQ0TF_L73rx1A"
+        },
+        {
+          "url": "https://www.foxcarolina.com/2026/11/06/police-report-another-early-morning-shooting-injury-spartanburg/",
+          "title": "Police: Woman arrested after man injured in early morning Spartanburg shooting",
+          "publisher": "FOX Carolina News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeqV67FZFAtkJq_9IE1kjWDzdCGtuv5BnXAg_C5wMsCBFka_N4JdxqIY2DuO0"
+        },
+        {
+          "url": "https://www.wyff4.com/article/woman-charged-after-gunshot-victim-changes-story/74363478",
+          "title": "Woman arrested after man walks into ER with gunshot wound, police say",
+          "publisher": "WYFF",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtMoNK9nPIHFVvbhRozwr1CzWbqBh11qx8L_On5W0z5cESZ9dcqq96g-E6Km8"
+        }
+      ]
+    },
+    {
+      "query": "prate wordle",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T11:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/06/crosswords/wordle-review-1967.html",
+        "https://www.cnet.com/tech/gaming/todays-wordle-hints-answer-november-7-1967/",
+        "https://www.forbes.com/sites/erikkain/2026/11/06/wordle-hints-clues-answer-saturday-november-7/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpLGrFOQCDh_hNNCM8HxdMDP5jeBdLu8we008NAmwEcdyukN77v2bg-ch39Es",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/06/crosswords/wordle-review-1967.html",
+          "title": "Today’s Wordle Hints for November 7, 2026",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpLGrFOQCDh_hNNCM8HxdMDP5jeBdLu8we008NAmwEcdyukN77v2bg-ch39Es"
+        },
+        {
+          "url": "https://www.cnet.com/tech/gaming/todays-wordle-hints-answer-november-7-1967/",
+          "title": "Today’s NYT Wordle Hints, Answer and Help for Saturday, Nov. 7, #1967",
+          "publisher": "CNET",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEa5gGqbzlxCuoKeG_Swy0F8UbP2kaD6mieuiuEbz6lIybuNLvqvWJPLR8u40"
+        },
+        {
+          "url": "https://www.forbes.com/sites/erikkain/2026/11/06/wordle-hints-clues-answer-saturday-november-7/",
+          "title": "Today’s Wordle #1967 Hints, Clues And Answer For Saturday November 7",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROh6VwHVMCGgMeuZmdVI3qHN6COTca6AocJqEKCUzCHb_dId7DY5wELNIgm1Q"
+        }
+      ]
+    },
+    {
+      "query": "leeds vs spurs",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-07T11:30:00Z",
       "related_news_urls": [
         "https://www.bbc.com/sport/football/live/cq33x0rvmjret",
         "https://www.leedsunited.com/en/news/team-news-injury-updates-on-calvert-lewin-okafor-and-stach",
-        "https://sports.yahoo.com/articles/pressing-charts-def-cons-more-074200815.html"
+        "https://www.skysports.com/football/live-blog/13592869/leeds-vs-tottenham-live-premier-league-updates-news-prediction-and-line-ups"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUG9ujP2BxW6_1fT8ZTCOtcPhRUBLL0KFRRBaScJuMjaCQr1no1XqEu8RSwis",
       "image_credit": "BBC",
@@ -103,248 +103,248 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqwL9kvFPQ2Yd7ud4vE5-eMoHhi3I99hFTq6OxcQCViHAELn62qHHcv7BdEs4"
         },
         {
-          "url": "https://sports.yahoo.com/articles/pressing-charts-def-cons-more-074200815.html",
-          "title": "Pressing charts, def cons and more! Nine OPTA facts ahead of #LEETOT",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.skysports.com/football/live-blog/13592869/leeds-vs-tottenham-live-premier-league-updates-news-prediction-and-line-ups",
+          "title": "Leeds vs Tottenham LIVE! Premier League updates, news, prediction and line-ups",
+          "publisher": "Sky Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQN9XscYQOWBe0QxMPQ2j-ubSiV-FgD4cWXoRE8CzLQn_jFoPbK2IVmugPEHw8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTX940wvywpnHgCawIeKmOya7-89oFwXCYimc9xVtoEVWnrpt6fLYmE3KL7Uag"
         }
       ]
     },
     {
-      "query": "jehovah's witnesses and blood transfusions",
-      "approx_searches": "100+",
-      "published_at": "2026-11-07T11:00:00Z",
+      "query": "criminal lawyer",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T11:30:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/news/articles/cx5ynly549njo",
-        "https://suaragarut.id/en/witnesses-relax-blood-rules"
+        "https://oaklandside.org/2026/11/05/juarez-assault-duongs-california-waste-thao-trial-oakland/",
+        "https://www.mercurynews.com/2026/11/05/mario-juarez-sheng-thao-testimony-corruption-case/",
+        "https://www.yahoo.com/news/us/articles/key-witness-grilled-corruption-trial-040959613.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvX97Ty6nAkOl6myPdQK0HWsxf5lZPD2SfpcX3nsNPJVJmrjxaPasDQetzNvg",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkSPck7iM13cOoRVgzDG3-nC818CU_PWesXlALMWJ1fO_f4Lbfxctlfx6XGg4",
+      "image_credit": "The Oaklandside",
       "news": [
         {
-          "url": "https://www.bbc.com/news/articles/cx5ynly549njo",
-          "title": "Jehovah's Witness rules on blood transfusions have changed, but it's too late for my brother",
-          "publisher": "BBC",
+          "url": "https://oaklandside.org/2026/11/05/juarez-assault-duongs-california-waste-thao-trial-oakland/",
+          "title": "Brutal assault outside city contractor’s office recounted by FBI informant",
+          "publisher": "The Oaklandside",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvX97Ty6nAkOl6myPdQK0HWsxf5lZPD2SfpcX3nsNPJVJmrjxaPasDQetzNvg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkSPck7iM13cOoRVgzDG3-nC818CU_PWesXlALMWJ1fO_f4Lbfxctlfx6XGg4"
         },
         {
-          "url": "https://suaragarut.id/en/witnesses-relax-blood-rules",
-          "title": "Jehovahs Witnesses Relax Blood Rules After Texas Man Dies",
-          "publisher": "SuaraGarut.ID",
+          "url": "https://www.mercurynews.com/2026/11/05/mario-juarez-sheng-thao-testimony-corruption-case/",
+          "title": "‘They crossed the line’: Violence and more illicit payoffs alleged by star witness at Sheng Thao’s trial",
+          "publisher": "The Mercury News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc8IYbFUPaWY7k-4tJuncKxEXu-WDpMc82t_-0Qg0sZQ3Zt7ENO6xBQehB-WM"
-        }
-      ]
-    },
-    {
-      "query": "dp world tour",
-      "approx_searches": "100+",
-      "published_at": "2026-11-07T11:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/golf/story/_/id/50390018/liv-golf-liquidation-next-bryson-dechambeau-jon-rahm",
-        "https://sports.yahoo.com/golf/article/liv-golf-is-dead--but-it-changed-golf-forever-164353197.html",
-        "https://www.golfchannel.com/dp-world-tour/news/report-dpwt-informs-bryson-dechambeau-hes-got-full-status-for-2027-if-he-wants-it"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-HnyYFitno7sD36krWrLSJnbOTsDa7ajhaCzSUY_bQbMmSunLkrturN5lta0",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/golf/story/_/id/50390018/liv-golf-liquidation-next-bryson-dechambeau-jon-rahm",
-          "title": "Is this really the end of LIV, and what's next for some the world's best golfers?",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-HnyYFitno7sD36krWrLSJnbOTsDa7ajhaCzSUY_bQbMmSunLkrturN5lta0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Dwm6LKlLdHEo6ZVcuRXhRhESsdcAm1Kp9RZ4M-N5PrbBwayZFj6nD4njj90"
         },
         {
-          "url": "https://sports.yahoo.com/golf/article/liv-golf-is-dead--but-it-changed-golf-forever-164353197.html",
-          "title": "LIV Golf is dead ... but it changed golf forever",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWE6wnRblHin876Ctm3bVqUiQAWzJ3_9IhNXRwiYARaqR3XLTd5E6TGKlr7Y8"
-        },
-        {
-          "url": "https://www.golfchannel.com/dp-world-tour/news/report-dpwt-informs-bryson-dechambeau-hes-got-full-status-for-2027-if-he-wants-it",
-          "title": "Report: DPWT informs Bryson DeChambeau he’s got full status for 2027, if he wants it",
-          "publisher": "Golf Channel",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuEa86W5vYEPgTH-VQRXNtmvcHBZYsoE0wSLf6qtR5el_AKk9c_vpd7I3LK5E"
-        }
-      ]
-    },
-    {
-      "query": "alabama vs lsu",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-07T11:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50401690/alabama-ryan-coleman-williams-trio-return-vs-lsu",
-        "https://www.nytimes.com/athletic/7754316/2026/11/05/alabama-lsu-football-rivalry-sec-schedule/",
-        "https://www.al.com/sports/2026/11/casagrande-monster-weekend-means-wildly-different-things-for-alabama-auburn.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-Sn7Qgm3kx-6Z8OM15XaIwWRzeRRJ1_UgivbLAfbrWjm5fjbvQkMNp1ThKm0",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50401690/alabama-ryan-coleman-williams-trio-return-vs-lsu",
-          "title": "Alabama's Ryan Coleman-Williams among trio to return vs. LSU",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-Sn7Qgm3kx-6Z8OM15XaIwWRzeRRJ1_UgivbLAfbrWjm5fjbvQkMNp1ThKm0"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7754316/2026/11/05/alabama-lsu-football-rivalry-sec-schedule/",
-          "title": "Can Alabama vs. LSU last as a premier college football rivalry?",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRudTYfd55JkRckFT7ZXqe_fcyKTU7JyFC4qCqo5Gp1NAEG9aoTWqv0qXTm1No"
-        },
-        {
-          "url": "https://www.al.com/sports/2026/11/casagrande-monster-weekend-means-wildly-different-things-for-alabama-auburn.html",
-          "title": "Casagrande: Monster weekend means wildly different things for Alabama, Auburn",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS9lWSAQTaBchiES1eR89EGNjdRdpsArywLr8nEXr6atrtPIrD5p29pKUZtTk"
-        }
-      ]
-    },
-    {
-      "query": "wrongful death lawyer",
-      "approx_searches": "100+",
-      "published_at": "2026-11-07T10:50:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/news/us/articles/lindsay-clancy-doctors-her-lawyer-214909986.html",
-        "https://www.the-sun.com/news/17263755/lindsay-clancy-doctors-derail-patrick-civil-lawsuit/",
-        "https://www.fox5atlanta.com/news/family-teen-killed-newnan-police-make-announcement"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2H7eR2yn1X8Vjb8ofbI0QAvUwZ6A8J9i3rD1kyHsyWnRsYYlgcMREzBTsZ_4",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/news/us/articles/lindsay-clancy-doctors-her-lawyer-214909986.html",
-          "title": "Lindsay Clancy’s Doctors Use Her Lawyer’s Statement to Push for a Lawsuit Against Them to Be Dropped",
+          "url": "https://www.yahoo.com/news/us/articles/key-witness-grilled-corruption-trial-040959613.html",
+          "title": "Key witness grilled in corruption trial of Oakland ex-mayor",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2H7eR2yn1X8Vjb8ofbI0QAvUwZ6A8J9i3rD1kyHsyWnRsYYlgcMREzBTsZ_4"
-        },
-        {
-          "url": "https://www.the-sun.com/news/17263755/lindsay-clancy-doctors-derail-patrick-civil-lawsuit/",
-          "title": "Lindsay Clancy doctors make emergency bid to derail ex Patrick's $1m lawsuit",
-          "publisher": "The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcDExfkQQ50gYbmwU2VSAjQV9gNNIITAySjk4zSFrn7MsvYjWN9EctuYT6OOs"
-        },
-        {
-          "url": "https://www.fox5atlanta.com/news/family-teen-killed-newnan-police-make-announcement",
-          "title": "Family plans $75M suit after 18-year-old killed in Newnan police chase",
-          "publisher": "FOX 5 Atlanta",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrJ_jvt3aMzkvVY1_Oj7OQEeJF1yxvE-z0OCkAlZ-AdR3sqlAE7uIS16EX4sU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7LbewyekTMQRYe42_Du2SKY9RGq-VCqgPS00NofF8V7gAYcgXH4YfYAnNqp0"
         }
       ]
     },
     {
-      "query": "colorado",
+      "query": "sat",
       "approx_searches": "100+",
-      "published_at": "2026-11-07T10:50:00Z",
+      "published_at": "2026-11-07T11:30:00Z",
       "related_news_urls": [
-        "https://www.kunc.org/news/2026-11-06/midterm-blue-tsunami-drowns-colorado-gop",
-        "https://www.cpr.org/2026/11/05/polis-on-democratic-wins-and-legacy/",
-        "https://www.9news.com/article/news/politics/colorado-gop-chairman-republican-losses-rebuilding-party/73-f73bdc6e-2cf9-43ea-abe0-b48cfae59963"
+        "https://www.nytimes.com/2026/11/06/us/college-board-cheating-sat.html",
+        "https://qz.com/college-board-sat-auto-sat-ai-cheating-tool-110626"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVqhqzHwY7mjcVD4MyZk6paZokSMKnT4Vbp1BInYI4OSVvDS8rf-Aar8WPrAM",
-      "image_credit": "KUNC",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjTJr8ndDeq3P7ODqrV_akfKK02Czpwlaea94xKSL5ullr2EAEKUerg1tK0lc",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.kunc.org/news/2026-11-06/midterm-blue-tsunami-drowns-colorado-gop",
-          "title": "Midterm 'blue tsunami' drowns Colorado GOP",
-          "publisher": "KUNC",
+          "url": "https://www.nytimes.com/2026/11/06/us/college-board-cheating-sat.html",
+          "title": "How the College Board Is Fighting A.I. Cheating on the SAT Tests",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVqhqzHwY7mjcVD4MyZk6paZokSMKnT4Vbp1BInYI4OSVvDS8rf-Aar8WPrAM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjTJr8ndDeq3P7ODqrV_akfKK02Czpwlaea94xKSL5ullr2EAEKUerg1tK0lc"
         },
         {
-          "url": "https://www.cpr.org/2026/11/05/polis-on-democratic-wins-and-legacy/",
-          "title": "Polis on Democrats’ big night, CoCo and why he hopes mercy will be his legacy",
-          "publisher": "Colorado Public Radio",
+          "url": "https://qz.com/college-board-sat-auto-sat-ai-cheating-tool-110626",
+          "title": "College Board changed SAT to block Auto SAT AI cheating tool",
+          "publisher": "qz.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTixGkFDLaBOHS264xtnBMK4ze4MVGiJKuHgS4UKFFOlr9rSiYGofVnTLsWnKw"
-        },
-        {
-          "url": "https://www.9news.com/article/news/politics/colorado-gop-chairman-republican-losses-rebuilding-party/73-f73bdc6e-2cf9-43ea-abe0-b48cfae59963",
-          "title": "Colorado Republicans chairman speaks on GOP losses, rebuilding party",
-          "publisher": "9News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzHCmKH8TamyfNQB6smq7O2f_cJWdeYChrdKeBySiJcfjkm1nmMJnglg8ENuw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAigXGynvsLf1CEAKYaiF8O_MXn354Zj3nI72uzt9M_STFrJk3bwjEJRND7vY"
         }
       ]
     },
     {
-      "query": "腾讯视频",
+      "query": "brittany mahomes",
       "approx_searches": "100+",
-      "published_at": "2026-11-07T10:40:00Z",
+      "published_at": "2026-11-07T11:30:00Z",
       "related_news_urls": [
-        "https://finance.sina.cn/2026-11-07/detail-inixwakh8381786.d.html?vt=4&pos=108",
-        "https://bydrug.pharmcube.com/news/detail/ede8300f24216a0783c1e38b44a94174",
-        "https://www.mrjjxw.com/articles/2026-11-06/4640621.html"
+        "https://people.com/brittany-mahomes-and-3-kids-wear-chiefs-red-to-support-patrick-mahomes-on-sidelines-new-photos-12239855",
+        "https://timesofindia.indiatimes.com/sports/nfl/news/dad-wasnt-just-gone-patrick-mahomes-opens-up-about-how-he-wants-sterling-bronze-and-golden-to-learn-from-him/articleshow/135613943.cms",
+        "https://www.marca.com/en/nfl/kansas-city-chiefs/2026/11/04/patrick-mahomes-i-have-to-be-dad-too-quote-resurfaces-as-the-chiefs-look-to-bounce-back.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGsUulgVvqMm6FMmqBeqq_Ebt1SRrbKapCXJPJPedbepoErsg0QWmxrcWiHXc",
-      "image_credit": "新浪财经",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4PLvFi9Mm9gi7W8n_mAsb4f3rRFKj__Fu2L9Wu-CVZm3V18xFeJvPQuuZ_LA",
+      "image_credit": "People.com",
       "news": [
         {
-          "url": "https://finance.sina.cn/2026-11-07/detail-inixwakh8381786.d.html?vt=4&pos=108",
-          "title": "一波经典港剧将被改编",
-          "publisher": "新浪财经",
+          "url": "https://people.com/brittany-mahomes-and-3-kids-wear-chiefs-red-to-support-patrick-mahomes-on-sidelines-new-photos-12239855",
+          "title": "Brittany Mahomes and Her 3 Kids Wear Chiefs Red to Support Dad Patrick on the Sidelines in Adorable New Photos",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGsUulgVvqMm6FMmqBeqq_Ebt1SRrbKapCXJPJPedbepoErsg0QWmxrcWiHXc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4PLvFi9Mm9gi7W8n_mAsb4f3rRFKj__Fu2L9Wu-CVZm3V18xFeJvPQuuZ_LA"
         },
         {
-          "url": "https://bydrug.pharmcube.com/news/detail/ede8300f24216a0783c1e38b44a94174",
-          "title": "TVB，有新动作",
-          "publisher": "ByDrug",
+          "url": "https://timesofindia.indiatimes.com/sports/nfl/news/dad-wasnt-just-gone-patrick-mahomes-opens-up-about-how-he-wants-sterling-bronze-and-golden-to-learn-from-him/articleshow/135613943.cms",
+          "title": "“Dad wasn’t just gone”: Patrick Mahomes opens up about how he wants Sterling, Bronze and Golden to learn",
+          "publisher": "The Times of India",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaHhlupKO3GRfhOmVAB9l0M5kw1Ntdbf9-eef9P81Uku9jm64W22rr7f_eAP8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOV0_qLND8OJ2z0AciEo94GfPdYH6BfEIQ73fy7Z9KuAp19mrUUOdzBRK65qc"
         },
         {
-          "url": "https://www.mrjjxw.com/articles/2026-11-06/4640621.html",
-          "title": "TVB联手腾讯视频布局“横屏短剧”",
-          "publisher": "https://www.mrjjxw.com/",
+          "url": "https://www.marca.com/en/nfl/kansas-city-chiefs/2026/11/04/patrick-mahomes-i-have-to-be-dad-too-quote-resurfaces-as-the-chiefs-look-to-bounce-back.html",
+          "title": "Patrick Mahomes’ “I have to be a dad too” quote resurfaces as the Chiefs look to bounce back",
+          "publisher": "MARCA",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaV2aU0yfoXogJkzOmq36eocTlfjGE2-ZtXZj014B---wi3Oy1e3o6x5JC1Lo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_5YkzEZldZZBR18ombkM2r4q-8Ue-cWG1A9U_fDdYkaj_F_dXISkJS-IRPeQ"
         }
       ]
     },
     {
-      "query": "wind advisory",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T10:30:00Z",
+      "query": "macklemore",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T11:30:00Z",
       "related_news_urls": [
-        "https://www.thenewstribune.com/news/weather-news/article317971465.html",
-        "https://www.tillamookcountypioneer.net/tillamook-county-emergency-management-advisory-high-wind-watch-from-saturday-afternoon-11-7-26-until-0400am-sunday-11-8-26/",
-        "https://cedarnews.net/newstasks/1120378/high-wind-warning-oregon-washington/"
+        "https://www.reuters.com/lifestyle/macklemore-says-us-venues-rejected-his-free-palestine-tour-2026-11-06/",
+        "https://www.theguardian.com/music/2026/nov/06/macklemore-arenas-free-palestine-tour",
+        "https://www.sfgate.com/sf-culture/article/macklemore-chase-center-22517302.php"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT57V9Z2lW2hmGQNP5FCPij5xRjX84S4CL2cKFETtTIdL22noSXh1wMt69A9BA",
-      "image_credit": "Tacoma News Tribune",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgDlEfGX3ehaMYKcAm0PXfjFBkOnYcg4wKObTIsVilMum2DoH_SGdQSHge6QI",
+      "image_credit": "Reuters",
       "news": [
         {
-          "url": "https://www.thenewstribune.com/news/weather-news/article317971465.html",
-          "title": "High wind warning for Northern Washington Coast and Grays Harbor County Coast",
-          "publisher": "Tacoma News Tribune",
+          "url": "https://www.reuters.com/lifestyle/macklemore-says-us-venues-rejected-his-free-palestine-tour-2026-11-06/",
+          "title": "Macklemore says US venues rejected his Free Palestine tour",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT57V9Z2lW2hmGQNP5FCPij5xRjX84S4CL2cKFETtTIdL22noSXh1wMt69A9BA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgDlEfGX3ehaMYKcAm0PXfjFBkOnYcg4wKObTIsVilMum2DoH_SGdQSHge6QI"
         },
         {
-          "url": "https://www.tillamookcountypioneer.net/tillamook-county-emergency-management-advisory-high-wind-watch-from-saturday-afternoon-11-7-26-until-0400am-sunday-11-8-26/",
-          "title": "TILLAMOOK COUNTY EMERGENCY MANAGEMENT ADVISORY: High Wind Watch from Saturday afternoon 11/7/26 until 04:00AM Sunday 11/8/26",
-          "publisher": "Tillamook County Pioneer",
+          "url": "https://www.theguardian.com/music/2026/nov/06/macklemore-arenas-free-palestine-tour",
+          "title": "Macklemore says that nine US arenas turned down his Free Palestine tour",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzRKqKD-jVJMDTAik_ZtqLFccqsRIKLvMkyuxheH3OFntr77wyJQOEGzSxmxQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvdCRed0mcygwBfkquC6v0niZA_rxMVEwYeSgN2J4eVYdcnSVhR2kAU9NMoS0"
         },
         {
-          "url": "https://cedarnews.net/newstasks/1120378/high-wind-warning-oregon-washington/",
-          "title": "High Wind Warning Issued for Parts of Oregon and Washington",
-          "publisher": "cedarnews.net",
+          "url": "https://www.sfgate.com/sf-culture/article/macklemore-chase-center-22517302.php",
+          "title": "Macklemore calls out Chase Center with regard to Palestine benefit shows",
+          "publisher": "SFGATE",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQULdOa1zXrxpLsOOn5rFXyrj9O71WKQzoBjgm3vsYh96UATcFIiS4H_HkhwKE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzzZHQQzawXiXI0WziGQtZ_IZe4-cDrLvUzj3yqVTWLxacQstmHGNZaRNenXU"
+        }
+      ]
+    },
+    {
+      "query": "luka doncic comments dirk nowitzki",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T11:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/lakers-luka-doncic-calls-nba-051949870.html",
+        "https://www.si.com/nba/lakers/onsi/lakers-luka-doncic-declared-better-than-dirk-nowitzki-by-former-nba-star",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/07/he-said-thank-you-dirk-but-he-doesnt-even-call/92658948007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7RfVKIqFHIELpJWMBE8-yYti1S8_ZsihlLKCdRxRYwzjH5YQcC85lIhlUOu0",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/lakers-luka-doncic-calls-nba-051949870.html",
+          "title": "Lakers’ Luka Doncic calls out NBA mentor: ‘He don’t even call’",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7RfVKIqFHIELpJWMBE8-yYti1S8_ZsihlLKCdRxRYwzjH5YQcC85lIhlUOu0"
+        },
+        {
+          "url": "https://www.si.com/nba/lakers/onsi/lakers-luka-doncic-declared-better-than-dirk-nowitzki-by-former-nba-star",
+          "title": "Lakers’ Luka Doncic Declared Better Than Dirk Nowitzki by Former NBA Star",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmIRUOzA1tDLnOIXrECEzFXRRTxV-cDhegP-LhyjyKZPpGlSDmmJkGP7ICG00"
+        },
+        {
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/07/he-said-thank-you-dirk-but-he-doesnt-even-call/92658948007/",
+          "title": "He said: \"Thank you, Dirk. But he doesn't even call. …",
+          "publisher": "HoopsHype",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9a59Ho6NfR-4miZIHLti3y1VnGKzFlnyf6kckh-pxJNPR2B35JsIrnL_3kF4"
+        }
+      ]
+    },
+    {
+      "query": "megamillions",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T11:20:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/money/lottery/2026/11/06/mega-millions-winning-numbers-nov-6-2026/92631831007/",
+        "https://www.wavy.com/news/did-anyone-win-the-mega-millions-482m-jackpot-jackpot-soars-past-500-million/",
+        "https://www.forbes.com/sites/siladityaray/2026/11/04/mega-millions-jackpot-tops-500-million-heres-what-the-winner-could-take-home/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkZsXNy7D-I-MEnAXuzg3KzBRMDL-cqyqKFc0kKse7UPl3mrrt6WkLnk2AvQU",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/money/lottery/2026/11/06/mega-millions-winning-numbers-nov-6-2026/92631831007/",
+          "title": "Mega Millions winning numbers as jackpot climbs to $505M for Nov. 6",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkZsXNy7D-I-MEnAXuzg3KzBRMDL-cqyqKFc0kKse7UPl3mrrt6WkLnk2AvQU"
+        },
+        {
+          "url": "https://www.wavy.com/news/did-anyone-win-the-mega-millions-482m-jackpot-jackpot-soars-past-500-million/",
+          "title": "Over $1B in Mega Millions, Powerball jackpots up for grabs",
+          "publisher": "WAVY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzv0Fx8pq6zthG5Bm2NPoeG1Tja2pIMFILJlw80xS_Wc8BQB7LlZnDBMrZLW4"
+        },
+        {
+          "url": "https://www.forbes.com/sites/siladityaray/2026/11/04/mega-millions-jackpot-tops-500-million-heres-what-the-winner-could-take-home/",
+          "title": "Mega Millions Jackpot Tops $500 Million—Here’s What The Winner Could Take Home",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHTuzxS6qku_Z3j3KuW7i_UjPPjxJKpJwp2osGQIDYwGxJHf4eHqMB2YRgZVY"
+        }
+      ]
+    },
+    {
+      "query": "will estes donnie wahlberg boston blue",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T11:10:00Z",
+      "related_news_urls": [
+        "https://www.tvinsider.com/1302253/boston-blue-will-estes-jamie-reagan-danny-donnie-wahlberg-blue-bloods-interview/",
+        "https://www.tvline.com/2310002/boston-blue-season-2-episode-5-jamie-reagan-returns-will-estes-interview-video/",
+        "https://www.yahoo.com/entertainment/tv/articles/donnie-wahlberg-blue-bloods-brother-190000905.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_xT5Cf9SgAMv1zSe5kSNRzN41DkalJ9NNkKYgv4tJFQPJMseYPnQL3lV-X0",
+      "image_credit": "TV Insider",
+      "news": [
+        {
+          "url": "https://www.tvinsider.com/1302253/boston-blue-will-estes-jamie-reagan-danny-donnie-wahlberg-blue-bloods-interview/",
+          "title": "'Boston Blue': Why Will Estes Was 'Terrified' to Play Jamie Reagan Again",
+          "publisher": "TV Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_xT5Cf9SgAMv1zSe5kSNRzN41DkalJ9NNkKYgv4tJFQPJMseYPnQL3lV-X0"
+        },
+        {
+          "url": "https://www.tvline.com/2310002/boston-blue-season-2-episode-5-jamie-reagan-returns-will-estes-interview-video/",
+          "title": "Boston Blue Season 2, Episode 5: Jamie Reagan Returns — Will Estes Interview Video",
+          "publisher": "TVLine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfeZfHUqPqc5zqFsQqRcAKNVk_i9HDWjQ0yHAo8krFJyn8yPgL4tXCNd5D4rA"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/donnie-wahlberg-blue-bloods-brother-190000905.html",
+          "title": "Donnie Wahlberg and “Blue Bloods” Brother Will Estes Settle a ‘Beef’ as They Reunite in “Boston Blue” Clip (Exclusive)",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9kWwbyJbhbO3UKh7Gin8RSEw4TUsZpPKb6r6OD_dPxrwZqHdb85J2SbR-MOc"
         }
       ]
     }
