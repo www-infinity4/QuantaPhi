@@ -84,3 +84,15 @@ body.oracle-quanta #oracleCardDeck .oracle-card-scroll{background:transparent;co
 .oracle-following-feed .ofp-more[hidden]{display:none!important}
 .oracle-following-feed :is(a,button):focus-visible{outline:3px solid #333;outline-offset:2px}
 @media(max-width:600px){.oracle-following-feed .ofp-items{grid-template-columns:1fr}.oracle-following-feed .ofp-item{grid-template-columns:minmax(116px,42%) 1fr;grid-template-rows:auto}.oracle-following-feed .ofp-photo{height:100%;aspect-ratio:auto;min-height:145px;object-fit:cover}.oracle-following-feed .ofp-title{font-size:15px}.oracle-following-feed .ofp-info{padding:11px}.oracle-following-feed .ofp-actions{display:grid;grid-template-columns:1fr}.oracle-following-feed .ofp-action{width:100%}.oracle-following-feed .ofp-item.ofp-no-photo{grid-template-columns:1fr}}
+
+/* Broadcaster video cards are SINGLE Oracle choices, never an accidental
+   vertically stacked scrolling news wall at their original DOM anchors.
+   A selected card is reparented under #oracleCardStage, so stays visible. */
+body.oracle-card-deck-active main.app > :is(
+ #tvSourceCnnQuickCard,
+ #tvSourceCnbcQuickCard,
+ #tvSourceNasaPlusQuickCard,
+ #tvSourcePbsNovaQuickCard,
+ #tvSourcePbsHistoryQuickCard,
+ #tvQuantExpansion
+){display:none!important}
