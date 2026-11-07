@@ -23,3 +23,16 @@
 .oracle-essentials-jumps{display:flex;gap:8px;flex-wrap:wrap;margin:8px auto 12px;justify-content:center}
 .oracle-essentials-jumps button{min-height:46px;min-width:126px;max-width:100%;padding:9px 14px;border-radius:999px;background:#edf1f5;color:#22334a;border:1px solid #aeb9c8;font-size:1rem;font-weight:750;cursor:pointer}
 .oracle-essentials-jumps button:focus-visible{outline:3px solid #bd7539;outline-offset:3px}
+
+/* Owner-featured shortcuts: prominent, truthful editorial placement rather
+   than an unsupported "most-trending" statistic or a sponsored claim. */
+.oracle-essentials-jumps{
+  padding:12px 11px 14px;border:1px solid #cedde0;border-radius:17px;
+  background:linear-gradient(135deg,#f3fbfc,#fff);
+}
+.oracle-essentials-jumps .oracle-essentials-label{
+  display:block;flex-basis:100%;font-size:15px;line-height:1.4;
+  font-weight:900;color:#25445a;text-align:center;
+}
+.oracle-essentials-jumps button{background:#fff;border-color:#93b3c0;min-height:48px}
+.oracle-essentials-jumps button:hover{background:#ecf9fc}
