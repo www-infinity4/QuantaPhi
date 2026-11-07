@@ -221,6 +221,39 @@ function registerDirectoryCards(){
  if(added||entries.some(e=>e.id.startsWith('directory-store-'))){updateTabs();predict();}
 }
 window.addEventListener('quantaphi:directory-cards-ready',registerDirectoryCards);
+// Every verified trending movie is its OWN original Oracle card in the same
+// Public / For You / Following carousel. No nested scrolling movies wall.
+function registerTrendingMovieCards(){
+ let added=false;
+ for(const node of document.querySelectorAll('#trendingMovieCards [data-trending-movie-id]')){
+  const id=node.id,videoId=node.dataset.trendingMovieId;
+  if(!/^trendMovie[A-Za-z0-9_-]{11}$/.test(id)||
+     id!=='trendMovie'+videoId)continue;
+  const title=node.querySelector('.mtc-title')?.textContent?.trim();
+  if(!title)continue;
+  const existing=entries.find(e=>e.id===id);
+  if(existing){
+   if(existing.node!==node&&!existing.node.isConnected){
+    existing.node=node;observe.observe(node,{childList:true});
+   }
+   continue;
+  }
+  const feedId='trending-movie-'+videoId;
+  entries.push({id,title:title+' · Film trailer',feedId,category:'Movies',
+   feature:'Play the original publisher movie trailer inside this Quick Card',
+   study:'Google Trends sourced movie headlines or independently new published trailers',
+   node,marker:null,count:Number(counts[id])||0});
+  observe.observe(node,{childList:true});added=true;
+ }
+ if(added){
+  updateTabs();predict();if(!active)start();
+  if(spotlightRequested==='trending-movies'&&!viewerTouched&&!expanded){
+   const first=entries.find(e=>e.id.startsWith('trendMovie')&&available(e));
+   if(first&&first!==active)show(first,false);
+  }
+ }
+}
+window.addEventListener('quantaphi:trending-movie-cards-ready',registerTrendingMovieCards);
 
 // Discover widgets mounted after the deferred deck script, including roots that
 // did not exist at its first scan. Reparenting is ignored once registered.
@@ -234,6 +267,7 @@ function registerLateWidgets(){
   observe.observe(node,{childList:true});added=true;
  }
  registerSourceCards();
+ registerTrendingMovieCards();
  if(added){updateTabs();predict();if(!active)start();}
 }
 
@@ -618,6 +652,7 @@ const observe=new MutationObserver(()=>{
 });
 for(const entry of entries)observe.observe(entry.node,{childList:true,subtree:false,attributes:entry.id==='result',attributeFilter:entry.id==='result'?['hidden']:undefined});
 new MutationObserver(registerLateWidgets).observe(document.querySelector('main.app')||document.body,{childList:true,subtree:true});
+registerTrendingMovieCards(); // Recover async movie feed loaded before Oracle.
 // Reads & Realms can relocate itself on an async home/search cycle. Keep
 // exactly one live DOM node and never fight the search-mode owner.
 new MutationObserver(()=>{
