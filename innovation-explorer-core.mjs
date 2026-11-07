@@ -1,0 +1,7 @@
+export const innovations = Object.freeze([
+ {id:'solar-paint',title:'Solar paint and coatings',topic:'solar',stage:'Research and prototypes',summary:'Explore coatings and printable photovoltaic layers that could harvest light from new surfaces.',claims:'Conversion efficiency and outdoor durability depend on the actual material and device.',source:'https://www.nrel.gov/pv/'},
+ {id:'photoelectrochemical-hydrogen',title:'Sunlight to hydrogen',topic:'hydrogen',stage:'Research and prototypes',summary:'Photoelectrochemical systems use light-absorbing materials to drive water-splitting reactions.',claims:'Hydrogen output requires measured energy and material inputs; it is not free additional energy.',source:'https://www.energy.gov/eere/fuelcells/hydrogen-production-photoelectrochemical-water-splitting'},
+ {id:'tandem-solar',title:'Tandem solar cells',topic:'solar',stage:'Research and pilot production',summary:'Stacking complementary absorbers can capture different parts of sunlight more effectively.',claims:'Lab efficiency is not a guaranteed field or product yield.',source:'https://www.nrel.gov/pv/'},
+ {id:'thermoelectric',title:'Heat to electricity',topic:'materials',stage:'Established principle; active materials research',summary:'Thermoelectric materials generate voltage from a temperature difference.',claims:'A temperature gradient and heat flow are required.',source:'https://www.energy.gov/science/'},
+]);
+export function filterInnovations(topic='all') {return topic==='all' ? [...innovations] : innovations.filter(item=>item.topic===topic);}
