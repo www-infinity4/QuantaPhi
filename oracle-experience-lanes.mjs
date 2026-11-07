@@ -126,13 +126,14 @@ function mountLane(parent,definition){
   if(!unlocked)return;
   restore();
   const item=definition.items[index];if(!item){stage.append(h('p','','No reviewed cards available.'));return}
-  if(item.id){
+  if(item.sourceUrl){stage.append(videoCard(item));}
+  else if(item.id){
    const node=document.getElementById(item.id);
    if(!node){stage.append(h('p','ioc-status','This original card has not loaded yet.'));return}
    marker=document.createComment('Oracle Octaves original card return point: '+item.id);
    node.parentNode.insertBefore(marker,node);stage.append(node);selected=node;
    node.dispatchEvent(new Event('oracle:activate'));
-  }else stage.append(videoCard(item));
+  }else stage.append(h('p','ioc-status','No playable card is available.'));
   status.textContent=(index+1)+' / '+definition.items.length+' · '+(item.title||item.publisher||'Original card');
  }
  const previous=createButton('‹','ioc-arrow',()=>{index=nextCardIndex(index,-1,definition.items.length);show()});
@@ -144,15 +145,15 @@ function mountLane(parent,definition){
  if(definition.id==='adult'){
   const gate=h('div','ioc-gate');
   const enter=createButton('I am 21+ · View carousel','ioc-primary',()=>{
-   unlocked=true;gate.hidden=true;stage.hidden=false;
+   unlocked=true;gate.hidden=true;stage.hidden=false;nav.hidden=false;close.hidden=false;
    document.dispatchEvent(new Event('oracle:adult-acknowledged'));show();
   });
   const close=createButton('Hide 21+ carousel','ioc-secondary',()=>{
-   restore();unlocked=false;stage.hidden=true;gate.hidden=false;
+   restore();unlocked=false;stage.hidden=true;gate.hidden=false;nav.hidden=true;close.hidden=true;
    document.dispatchEvent(new Event('oracle:adult-hidden'));status.textContent='21+ content hidden';
   });
   gate.append(h('p','','Only open this optional section if you are at least 21. This button is not legal age verification.'),enter);
-  intro.append(close);stage.hidden=true;section.append(gate);status.textContent='21+ content hidden';
+  close.hidden=true;intro.append(close);stage.hidden=true;nav.hidden=true;section.append(gate);status.textContent='21+ content hidden';
  }
  section.append(stage);
  parent.append(section);
