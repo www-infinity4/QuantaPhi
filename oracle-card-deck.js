@@ -292,6 +292,7 @@ window.addEventListener('quantaphi:trending-app-cards-ready',registerTrendingApp
 function registerLateWidgets(){\n // Dedicated Oracle creator and optional adult lanes retain exclusive ownership.
  let added=false;
  for(const [id,title] of unique){
+  if(reservedForDedicatedLanes.has(id)||id.startsWith('dispensary-'))continue;
   if(entries.some(e=>e.id===id))continue;
   const node=document.getElementById(id);if(!node)continue;
   const [feedId,category,feature]=CARD_DIRECTIONS[id]||['deck-'+id.toLowerCase(),'Discovery',title];
