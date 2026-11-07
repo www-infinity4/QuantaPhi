@@ -3,22 +3,44 @@ const API='https://media-star-following-spaces.marvaseater.workers.dev';
 const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n};
 const append=(n,...children)=>{n.append(...children);return n};
 const safeHandle=x=>/^[A-Za-z0-9_]{1,15}$/.test(String(x||''))?String(x):'';
+export function parseXPostId(value){
+ const raw=String(value||'').trim();
+ if(/^[0-9]{1,22}$/.test(raw))return raw;
+ try{
+  const u=new URL(raw);
+  if(u.protocol!=='https:'||!['x.com','www.x.com','twitter.com','www.twitter.com'].includes(u.hostname)||u.username||u.password)return null;
+  const match=u.pathname.match(/^\/(?:[A-Za-z0-9_]{1,15}|i)\/status\/([0-9]{1,22})\/?$/);
+  return match?match[1]:null;
+ }catch{return null}
+}
 export function mountXTwitterCard(root){
  if(!root||typeof document==='undefined')return null;
- const state={tab:'public',connected:false,canPost:false,canLike:false,pending:false,posts:[],spaces:[],profile:null,archive:[],topic:'technology',updatedAt:null,notice:'Connect your QuantaPhi wallet and X account to load genuine posts.'};
+ const initialPost=parseXPostId(new URLSearchParams(window.location.search).get('post'));
+ const state={tab:initialPost?'post':'public',singleId:initialPost,single:null,connected:false,canPost:false,canLike:false,pending:false,posts:[],spaces:[],profile:null,archive:[],topic:'technology',updatedAt:null,notice:'Connect your QuantaPhi wallet and X account to load genuine posts.'};
  const card=el('article','xt-card'),head=el('header','xt-head'),title=el('h2','', '𝕏 · Twitter'),caption=el('p','xt-caption','Original X content, inside an Infinity card. No fake posts or likes.');
  const connect=el('a','xt-button xt-connect','Connect X · read & reply');connect.href='/connect-x?write=1';connect.setAttribute('aria-label','Connect your X account through QuantaPhi');
  const write=el('a','xt-button xt-write','Enable posting');write.href='/connect-x?write=1';
  const profile=el('button','xt-button xt-profile','Profile'),compose=el('button','xt-button xt-compose','Compose');profile.type=compose.type='button';
  append(head,append(el('div','xt-title'),title,caption),append(el('div','xt-head-actions'),profile,compose,connect,write));
  const tabs=el('nav','xt-tabs');tabs.setAttribute('aria-label','X card sections');tabs.setAttribute('role','tablist');
- const labels=[['public','Public'],['following','Following'],['spaces','Live Spaces'],['archive','Saved Spaces'],['profile','Profile']];
+ const labels=[['public','Public'],['following','Following'],['post','One post'],['spaces','Live Spaces'],['archive','Saved Spaces'],['profile','Profile']];
  const tabButtons=new Map();
- for(const [id,label] of labels){const b=el('button','xt-tab',label);b.type='button';b.setAttribute('role','tab');b.setAttribute('aria-selected',id==='public'?'true':'false');b.addEventListener('click',()=>{state.tab=id;select();void load()});tabButtons.set(id,b);tabs.append(b)}
+ for(const [id,label] of labels){const b=el('button','xt-tab',label);b.type='button';b.setAttribute('role','tab');b.setAttribute('aria-selected',String(id===state.tab));b.addEventListener('click',()=>{state.tab=id;select();if(id==='post'&&!state.singleId){render();return}void load()});tabButtons.set(id,b);tabs.append(b)}
  const search=el('div','xt-search'),topic=el('input','xt-topic');topic.type='search';topic.value='technology';topic.maxLength=60;topic.placeholder='Topic on X';topic.setAttribute('aria-label','Search public X posts or live Spaces');
  const searchButton=el('button','xt-button','Search');searchButton.type='button';
  searchButton.addEventListener('click',()=>{state.topic=topic.value.trim();void load()});
  append(search,topic,searchButton);
+ const postSearch=el('div','xt-search xt-post-search');
+ const postInput=el('input','xt-topic');postInput.type='text';postInput.placeholder='Paste an X post URL or post ID';postInput.setAttribute('aria-label','X post URL or numeric ID');
+ const readPost=el('button','xt-button','Read this post');readPost.type='button';
+ append(postSearch,postInput,readPost);
+ readPost.addEventListener('click',()=>{
+  const id=parseXPostId(postInput.value);
+  if(!id){status('Enter a valid X post URL or numeric post ID.');return}
+  state.singleId=id;state.single=null;state.tab='post';select();void load();
+ });
+ postInput.addEventListener('keydown',event=>{if(event.key==='Enter'){event.preventDefault();readPost.click()}});
+ if(initialPost)postInput.value=initialPost;
  const notice=el('p','xt-status');notice.setAttribute('role','status');notice.setAttribute('aria-live','polite');
  const fetched=el('small','xt-fetched');
  const timeline=el('div','xt-timeline');
@@ -31,7 +53,7 @@ export function mountXTwitterCard(root){
  const actions=el('div','xt-dialog-actions'),cancel=el('button','xt-button','Cancel'),send=el('button','xt-button xt-send','Send to X');cancel.type=send.type='button';
  const feedback=el('p','xt-feedback');feedback.setAttribute('role','status');
  append(actions,cancel,send);append(dialog,dialogTitle,dialogNote,textarea,counter,feedback,actions);
- append(card,head,tabs,search,notice,timeline,footer,dialog);root.replaceChildren(card);
+ append(card,head,postSearch,tabs,search,notice,timeline,footer,dialog);root.replaceChildren(card);
  let replyTo=null;
  let queuedLoad=false;
  const openComposer=(id=null)=>{replyTo=id;dialogTitle.textContent=id?'Reply on X':'Compose on X';textarea.value='';counter.textContent='0 / 280';feedback.textContent='';if(typeof dialog.showModal==='function')dialog.showModal();else dialog.setAttribute('open','');textarea.focus()};
@@ -86,7 +108,10 @@ export function mountXTwitterCard(root){
  }
  function render(){
   timeline.replaceChildren();
-  if(state.tab==='public'||state.tab==='following'){
+  if(state.tab==='post'){
+   if(!state.single)timeline.append(text('p',state.singleId?'No verified X post loaded yet.':'Paste a post URL or ID to read it here.','xt-empty'));
+   else timeline.append(renderPost(state.single));
+  }else if(state.tab==='public'||state.tab==='following'){
    if(!state.posts.length)timeline.append(text('p','No verified X posts available for this view.','xt-empty'));
    for(const p of state.posts)timeline.append(renderPost(p));
   }else if(state.tab==='spaces'){
@@ -142,15 +167,16 @@ export function mountXTwitterCard(root){
     status('Connect X once to load genuine feeds and reply in this card. X permission is requested on its official consent screen.');render();return;
    }
    let result;
+   if(state.tab==='post'&&state.singleId){result=await api('/v1/x/post?id='+encodeURIComponent(state.singleId));state.single=result.post||null}
    if(state.tab==='profile'){result=await api('/v1/x/profile');state.profile=result}
    if(state.tab==='public'||state.tab==='following'){result=await api('/v1/x/timeline?feed='+state.tab+(state.tab==='public'?'&q='+encodeURIComponent(state.topic):''));state.posts=result.posts||[]}
    if(state.tab==='spaces'){result=await api('/v1/x/spaces/live?q='+encodeURIComponent(state.topic));state.spaces=(result.spaces||[]).filter(s=>s.state==='live')}
    if(state.tab==='archive'){result=await api('/v1/x/archive');state.archive=result.spaces||[]}
    if(state.tab!==requestedTab||state.topic!==requestedTopic){queuedLoad=true;return}
    state.updatedAt=result?.fetchedAt||new Date().toISOString();
-   status(state.tab==='spaces'?'Live-only X Space results · refreshes while this tab is visible.':state.tab==='archive'?'Showing indexed Space links, not verified X API playback.':state.canPost?'Showing genuine X posts. Reply without leaving the card.':'Showing genuine X posts. Select Enable posting to authorize in-card replies.');
+   status(state.tab==='post'?'One verified X post loaded inside this card.':state.tab==='spaces'?'Live-only X Space results · refreshes while this tab is visible.':state.tab==='archive'?'Showing indexed Space links, not verified X API playback.':state.canPost?'Showing genuine X posts. Reply without leaving the card.':'Showing genuine X posts. Select Enable posting to authorize in-card replies.');
    render();
-  }catch(e){if(state.tab==='spaces')state.spaces=[];if(state.tab==='public'||state.tab==='following')state.posts=[];status('X data unavailable: '+String(e.message||e)+'. No estimated or stale records displayed.');render()}
+  }catch(e){if(state.tab==='spaces')state.spaces=[];if(state.tab==='post')state.single=null;if(state.tab==='public'||state.tab==='following')state.posts=[];status('X data unavailable: '+String(e.message||e)+'. No estimated or stale records displayed.');render()}
   finally{state.pending=false;refresh.disabled=false;if(queuedLoad){queuedLoad=false;void load()}}
  }
  // Rate-limited fetch only for the visible live tab; never label ended Spaces as current.

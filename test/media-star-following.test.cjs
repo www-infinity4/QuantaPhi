@@ -454,3 +454,29 @@ test('X Following uses its documented timeline API and replies to the selected p
   assert.ok(seen.includes('/2/users/123456/timelines/reverse_chronological'));
  }finally{global.fetch=prior}
 });
+
+test('X individual post lookup fetches a real post for in-card reading, rejects bad IDs',async()=>{
+ const {env,call}=await fixture();
+ env.X_OWNER_ID='owner-one';env.X_USER_ACCESS_TOKEN='fixture-read-token';
+ const original=global.fetch;const paths=[];
+ global.fetch=async url=>{
+  const u=new URL(String(url));paths.push(u.pathname);
+  if(u.pathname==='/2/tweets/1888777666555444333')return Response.json({
+   data:{id:'1888777666555444333',author_id:'123456',text:'Read this actual source post',created_at:'2026-11-06T18:00:00Z'},
+   includes:{users:[{id:'123456',username:'SourceWriter',name:'Source Writer'}]}});
+  throw Error('unexpected X route '+u.pathname);
+ };
+ try{
+  const result=await call('/v1/x/post?id=1888777666555444333',tok);
+  assert.equal(result.status,200);
+  const body=await result.json();
+  assert.equal(body.post.text,'Read this actual source post');
+  assert.equal(body.post.author.handle,'SourceWriter');
+  assert.equal(body.source,'x_api_verified');
+  assert.deepEqual(paths,['/2/tweets/1888777666555444333']);
+  const invalid=await call('/v1/x/post?id=https://other.example/status/abc',tok);
+  assert.equal(invalid.status,400);
+  assert.equal(paths.length,1,'invalid lookup must never contact X');
+  assert.notEqual((await call('/v1/x/post?id=1888777666555444333',other)).status,200,'wallet boundaries remain enforced');
+ }finally{global.fetch=original}
+});

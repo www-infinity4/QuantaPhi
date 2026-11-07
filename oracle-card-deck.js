@@ -109,7 +109,7 @@ const CARD_DIRECTIONS={
  result:['deck-research','Research','Explore sources and a current AI overview'],
  fredSpacesRadio:['fred-spaces','Music','Listen to an indexed Media Star conversation'],
  xTwitterCard:['x-twitter','Social','Read real Public and Following X posts, find Spaces, compose, reply, like and repost after authorization'],
- xSpacesQuickCard:['x-spaces','Live conversations','Browse indexed Space links by topic and open the official X player'],
+ xSpacesQuickCard:['x-spaces','Live conversations','Find provider-verified live Spaces, browse indexed links, and embed supported X recording clips inside this card'],
  followingSpacesRadio:['following-spaces','Music','Choose a followed host and show'],
  magooSpacesRadio:['magoo-spaces','Music','Listen to a featured Space'],
  mediaStarCreator:['media-star-creator','Media','Produce your own playable media card'],
