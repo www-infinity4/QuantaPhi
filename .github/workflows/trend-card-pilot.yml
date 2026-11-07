@@ -5,6 +5,9 @@ on:
       - 'trend-card-core.mjs'
       - 'creator-ad-studio.css'
       - 'index.html'
+      - 'quanta-feed.mjs'
+      - 'quanta-feed-orange.mjs'
+      - 'workers/quantaphi-site/worker.js'
       - 'workers/trend-card-engine/**'
       - 'test/trend-card-*.test.mjs'
       - 'docs/INFINITY-TREND-TO-CARD-EIGHT-BOTS.md'
@@ -21,7 +24,7 @@ jobs:
         with:
           node-version: '22'
       - name: Validate source, roles, queue, auth and Orange gate
-        run: node --test test/trend-card-engine.test.mjs test/trend-card-worker.test.mjs test/trend-card-quant-decision.test.mjs
+        run: node --test test/trend-card-engine.test.mjs test/trend-card-worker.test.mjs test/trend-card-quant-decision.test.mjs test/trend-card-orange-client.test.mjs
       - name: Permanent public creator shelf must remain outside rotating deck
         run: |
           node - <<'NODE'
