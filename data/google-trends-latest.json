@@ -3,153 +3,258 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-07T15:01:18.643829Z",
+  "checked_at": "2026-11-07T15:31:33.741579Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "bayern munich",
+      "query": "cj carr",
       "approx_searches": "2000+",
-      "published_at": "2026-11-07T14:40:00Z",
+      "published_at": "2026-11-07T15:10:00Z",
       "related_news_urls": [
-        "https://fcbayern.com/en/news/matchpreviews/2026/11/preview-mainz-bayern-bundesliga-matchday-9",
-        "https://www.bbc.com/sport/football/live/c6d09x7zknymt",
-        "https://sports.yahoo.com/articles/confirmed-lineups-mainz-05-vs-133100626.html"
+        "https://thejetpress.com/jets-fans-should-be-locked-cj-carr-vs-darian-mensah-notre-dame-miami-matchup-01m6s3jr0kxn",
+        "https://www.espn.com/college-football/story/_/id/50381419/week-10-live-cfp-takeaways-highlights",
+        "https://www.cbssports.com/college-football/news/college-football-live-updates-scores-week-10-schedule-2026/live/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt9elvhUSSjDtpnevmGmKSJZSMkMkqT6FWPN8MKu_UHKHjxZmz602EXxakSqI",
-      "image_credit": "FC Bayern",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7FOLuW_eLWh-cat9PKBNOwvEtDvtEmZafygVktEaS5ppOu50ub0DeaP2Cb3Y",
+      "image_credit": "The Jet Press",
       "news": [
         {
-          "url": "https://fcbayern.com/en/news/matchpreviews/2026/11/preview-mainz-bayern-bundesliga-matchday-9",
-          "title": "Preview: Mainz vs. Bayern, Bundesliga Matchday 9",
-          "publisher": "FC Bayern",
+          "url": "https://thejetpress.com/jets-fans-should-be-locked-cj-carr-vs-darian-mensah-notre-dame-miami-matchup-01m6s3jr0kxn",
+          "title": "Jets fans should be locked in to C.J. Carr vs. Darian Mensah in Notre Dame-Miami matchup",
+          "publisher": "The Jet Press",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt9elvhUSSjDtpnevmGmKSJZSMkMkqT6FWPN8MKu_UHKHjxZmz602EXxakSqI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7FOLuW_eLWh-cat9PKBNOwvEtDvtEmZafygVktEaS5ppOu50ub0DeaP2Cb3Y"
         },
         {
-          "url": "https://www.bbc.com/sport/football/live/c6d09x7zknymt",
-          "title": "Mainz 05 vs Bayern Munich: German Bundesliga stats & head-to-head",
+          "url": "https://www.espn.com/college-football/story/_/id/50381419/week-10-live-cfp-takeaways-highlights",
+          "title": "Live highlights and top CFP analysis from Week 10's big games",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxengX4mqKPYdRCqkjh-HGluWcZQMkglYEmP5FRlZZcWuZssgCot3m0RCgr8M"
+        },
+        {
+          "url": "https://www.cbssports.com/college-football/news/college-football-live-updates-scores-week-10-schedule-2026/live/",
+          "title": "College football live updates, scores: Week 10 schedule features Texas vs. Missouri, UCLA in action",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwC8VpkF4yvtrCMViaALO5Ma91xCTAo8yXZ_v239epdSbNX10GLGMB7q20A6s"
+        }
+      ]
+    },
+    {
+      "query": "kalani sitake",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T15:10:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-sports/byu-thrived-nil-era-many-expected-falter-nfl-legend-steve-young-says",
+        "https://www.yahoo.com/news/videos/nfl-legend-steve-young-says-120139009.html",
+        "https://mezha.net/eng/news/mezha-b4a6b71810e733472dd6ac8a_steve_young_says/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTnb77T3iBamaZ_B9SA79c1A5fpg2wXahiszGVUBMjr6IYAx2uYG5IsC0mgiw",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/outkick-sports/byu-thrived-nil-era-many-expected-falter-nfl-legend-steve-young-says",
+          "title": "BYU has thrived in an NIL era that many expected them to falter in, NFL legend Steve Young says",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTnb77T3iBamaZ_B9SA79c1A5fpg2wXahiszGVUBMjr6IYAx2uYG5IsC0mgiw"
+        },
+        {
+          "url": "https://www.yahoo.com/news/videos/nfl-legend-steve-young-says-120139009.html",
+          "title": "NFL legend Steve Young says that BYU has thrived in the NIL era when many thought they would falter",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBUdbhWU2PCdIJ0TNI4j5GfN1xHtXsADeOLZsZGZmu1QCJzemIfbpqQDhBiEE"
+        },
+        {
+          "url": "https://mezha.net/eng/news/mezha-b4a6b71810e733472dd6ac8a_steve_young_says/",
+          "title": "Steve Young says BYU has thrived in an NIL era many expected it to struggle in",
+          "publisher": "Mezha.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvfHaNHZpUlnZjERg3pVIWz8H15hDRayoKfheFmmYYKWcXV4Taxei_EOvJvnw"
+        }
+      ]
+    },
+    {
+      "query": "galatasaray vs amed sk",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T15:10:00Z",
+      "related_news_urls": [
+        "https://www.aljazeera.com/sports/2026/11/6/we-are-here-kurdish-club-amedspor-shakes-up-turkish-football",
+        "https://www.bbc.com/sport/football/live/cr4g1j759448t",
+        "https://www.flashscore.com/match/football/amedspor-EHdgkFvm/galatasaray-riaqqurF/summary/lineups/?mid=pAfuzdkI"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUVvYcMawf-L6nq0PBI7K6Wner6hJURI34Mrd0qp56r7Rzj9dElYBdMvWNJ6k",
+      "image_credit": "Al Jazeera",
+      "news": [
+        {
+          "url": "https://www.aljazeera.com/sports/2026/11/6/we-are-here-kurdish-club-amedspor-shakes-up-turkish-football",
+          "title": "‘We are here’: Kurdish club Amedspor shakes up Turkish football",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUVvYcMawf-L6nq0PBI7K6Wner6hJURI34Mrd0qp56r7Rzj9dElYBdMvWNJ6k"
+        },
+        {
+          "url": "https://www.bbc.com/sport/football/live/cr4g1j759448t",
+          "title": "Galatasaray vs Amed: Turkish Süper Lig stats & head-to-head",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3R4MmHNZkatB2tnoF0vHmESNmIZMAx1d9kYDqgLcY5KoZmHd2qRdniqBKP24"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
         },
         {
-          "url": "https://sports.yahoo.com/articles/confirmed-lineups-mainz-05-vs-133100626.html",
-          "title": "Confirmed lineups: Mainz 05 vs. FC Bayern",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.flashscore.com/match/football/amedspor-EHdgkFvm/galatasaray-riaqqurF/summary/lineups/?mid=pAfuzdkI",
+          "title": "Current Form - Galatasaray",
+          "publisher": "Flashscore.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlB7BcP_IZtYzNZolsMn5G8n2bRQq2eKtwsedTwQU1C_K11TzLJ6WaBDm-wBc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTXPH1MSkj9K9_vKcc7QFVpPpsacS9gFXOG6eJMKKv7V9OJ0Rv6n42jw16lLc"
         }
       ]
     },
     {
-      "query": "magda linette",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T14:40:00Z",
-      "related_news_urls": [
-        "https://przegladsportowy.onet.pl/tenis/magda-linette-anastasija-zacharowa-relacja-na-zywo/ktmrhmk",
-        "https://sport.interia.pl/tenis/news-magda-linette-walczy-o-wielki-final-wiemy-kiedy-polfinal-z-r,nId,23570428",
-        "https://www.polsatsport.pl/wiadomosc/2026-11-06/wta-w-chennai-magda-linette-mai-hontama-relacja-live-i-wynik-na-zywo/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjJ0W2nrCOUrEZrfharbM6TIvzNzG1PhxKHoWdRbAyaEItXqvBNu4sWaap4hg",
-      "image_credit": "Przegląd Sportowy",
-      "news": [
-        {
-          "url": "https://przegladsportowy.onet.pl/tenis/magda-linette-anastasija-zacharowa-relacja-na-zywo/ktmrhmk",
-          "title": "Magda Linette - Anastasija Zacharowa [RELACJA NA ŻYWO]",
-          "publisher": "Przegląd Sportowy",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjJ0W2nrCOUrEZrfharbM6TIvzNzG1PhxKHoWdRbAyaEItXqvBNu4sWaap4hg"
-        },
-        {
-          "url": "https://sport.interia.pl/tenis/news-magda-linette-walczy-o-wielki-final-wiemy-kiedy-polfinal-z-r,nId,23570428",
-          "title": "Linette walczy o wielki finał. Wiadomo kto rywalką Polki i o której półfinał",
-          "publisher": "Interia Sport",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTB3umhNi1mwtqZJ3CQo6DxzoDRs6UxMfdf-lL9BJrOco6vKgtvZzZfb2BxUsc"
-        },
-        {
-          "url": "https://www.polsatsport.pl/wiadomosc/2026-11-06/wta-w-chennai-magda-linette-mai-hontama-relacja-live-i-wynik-na-zywo/",
-          "title": "WTA w Chennai: Magda Linette - Mai Hontama. Relacja live i wynik na żywo",
-          "publisher": "www.polsatsport.pl",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA2DJxRgVBUOXHLMgNDpnZoIk4fChdnxJsN6JgZ13PN09s7dNY9LvbLbsddn8"
-        }
-      ]
-    },
-    {
-      "query": "rcd espanyol - deportivo",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-07T14:30:00Z",
-      "related_news_urls": [
-        "https://bolavip.com/laliga/alineaciones-de-espanyol-y-deportivo-la-coruna-por-la-laliga-formaciones-probables",
-        "https://www.riazor.org/los-lectores-de-riazor-org-apuestan-por-dar-continuidad-al-mismo-once-inicial-para-visitar-al-espanyol/",
-        "https://dxtcampeon.elidealgallego.com/deportivo/depor/2026-11-07/el-1x1-del-rival-sarabia-trae-un-nuevo-libreto-al-espanyol-889347.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTU0XwdR4wy4cPTSGuFMkfQxLg4bKtmPPWUnhTDfUljb0LyFyEZp82Gc6YpMcI",
-      "image_credit": "Bolavip",
-      "news": [
-        {
-          "url": "https://bolavip.com/laliga/alineaciones-de-espanyol-y-deportivo-la-coruna-por-la-laliga-formaciones-probables",
-          "title": "Alineaciones de Espanyol y Deportivo La Coruña por la LaLiga: formaciones probables",
-          "publisher": "Bolavip",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTU0XwdR4wy4cPTSGuFMkfQxLg4bKtmPPWUnhTDfUljb0LyFyEZp82Gc6YpMcI"
-        },
-        {
-          "url": "https://www.riazor.org/los-lectores-de-riazor-org-apuestan-por-dar-continuidad-al-mismo-once-inicial-para-visitar-al-espanyol/",
-          "title": "Los lectores de Riazor.org apuestan por dar continuidad al mismo once inicial para visitar al Espanyol",
-          "publisher": "Riazor.org",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQp4I15thIwLKF3MSWiuqv0uV7YMjWt01NAdj5vbKtNKBND0Oj4AF8W5ClSIDc"
-        },
-        {
-          "url": "https://dxtcampeon.elidealgallego.com/deportivo/depor/2026-11-07/el-1x1-del-rival-sarabia-trae-un-nuevo-libreto-al-espanyol-889347.html",
-          "title": "El 1x1 del rival: Sarabia trae un nuevo libreto al Espanyol",
-          "publisher": "DXT Campeón",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbYyiIWCQ7dwhZWtxdu52xEM-bbXijcQCh6ohHb8r-kSgTbgwy52a6TAtpch0"
-        }
-      ]
-    },
-    {
-      "query": "noah okafor",
+      "query": "wow forever server status",
       "approx_searches": "500+",
-      "published_at": "2026-11-07T14:30:00Z",
+      "published_at": "2026-11-07T15:00:00Z",
       "related_news_urls": [
-        "https://www.bbc.co.uk/sport/football/live/cq33x0rvmjret",
-        "https://www.theguardian.com/football/2026/nov/07/leeds-tottenham-premier-league-match-report",
-        "https://www.nytimes.com/athletic/live-blogs/premier-league-live-updates-scores-results-news/TGZ4kVlqFf1W/"
+        "https://www.bloomberg.com/news/newsletters/2026-11-06/why-blizzard-made-world-of-warcraft-forever",
+        "https://www.windowscentral.com/gaming/blizzard/blizzard-confirms-world-of-warcraft-forever-is-the-biggest-launch-in-wow-history-beating-wrath-of-the-lich-king-is-wow-retail-cooked",
+        "https://blog.twitch.tv/en/2026/11/04/world-of-warcraft-forever-is-here/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcST19WjgtEU-PyAJCJsRv0Ot5zzojgTIjCIVDNDrsQlpbaC3TuVwHedXluxgyE",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9cqmImPgSunkiAqCwZNUJ_gV_isC0V26Utply-Lc5En0vL0mwkOzLdT9gcB8",
+      "image_credit": "Bloomberg.com",
       "news": [
         {
-          "url": "https://www.bbc.co.uk/sport/football/live/cq33x0rvmjret",
-          "title": "Leeds 1-0 Tottenham: Noah Okafor downs Tottenham to earn Leeds first win since September",
-          "publisher": "BBC",
+          "url": "https://www.bloomberg.com/news/newsletters/2026-11-06/why-blizzard-made-world-of-warcraft-forever",
+          "title": "Why Blizzard Made a New ‘World of Warcraft’",
+          "publisher": "Bloomberg.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcST19WjgtEU-PyAJCJsRv0Ot5zzojgTIjCIVDNDrsQlpbaC3TuVwHedXluxgyE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9cqmImPgSunkiAqCwZNUJ_gV_isC0V26Utply-Lc5En0vL0mwkOzLdT9gcB8"
         },
         {
-          "url": "https://www.theguardian.com/football/2026/nov/07/leeds-tottenham-premier-league-match-report",
-          "title": "Okafor’s Leeds winner adds insult to Tel’s injury for Tottenham as Bogle escapes red",
-          "publisher": "The Guardian",
+          "url": "https://www.windowscentral.com/gaming/blizzard/blizzard-confirms-world-of-warcraft-forever-is-the-biggest-launch-in-wow-history-beating-wrath-of-the-lich-king-is-wow-retail-cooked",
+          "title": "World of Warcraft: Forever is the biggest launch in WoW history, beating Wrath itself",
+          "publisher": "Windows Central",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYl8tz6pikpLGiGiDtkjDmDqgoeOcpVqmABYtPzt7fqryMtQlkUq4B9H16FzQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNjlynUv7tjrl30fMTEO0fbTq4CvAg_Lwo95LlJv4-IcV7E5RgOcDcaYabQL0"
         },
         {
-          "url": "https://www.nytimes.com/athletic/live-blogs/premier-league-live-updates-scores-results-news/TGZ4kVlqFf1W/",
-          "title": "Premier League live scores: Latest news and updates as Leeds defeat Spurs in early kick-off",
-          "publisher": "The New York Times",
+          "url": "https://blog.twitch.tv/en/2026/11/04/world-of-warcraft-forever-is-here/",
+          "title": "Begin Again in Azeroth: World of Warcraft: Forever Is Here",
+          "publisher": "Twitch Blog",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6TsJLworcVwzHFUKYFF533mJDudEBygPpCv2n2Vs-8tcEKEYV8_JBfkYqGoA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3YGvvEoJJjNzp3PtFe9MElXz12R-B5EXLkXjKXCuiR4Vgp0pJdSk7etEs5K8"
         }
       ]
     },
     {
-      "query": "ohio state vs oregon",
+      "query": "lakesha womack",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T15:00:00Z",
+      "related_news_urls": [
+        "https://nypost.com/2026/11/05/us-news/north-carolina-dem-lakesha-womack-has-court-appearance-for-car-theft-after-midterm-win/",
+        "https://fortune.com/2026/11/06/north-carolina-lakesha-womack-tim-moore-2026-midterm-elections/",
+        "https://www.wfae.org/politics/2026-11-04/how-lakesha-womacks-56-000-campaign-and-president-trump-sunk-powerful-republican-tim-moore"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNo5KOEqkJLfDMGM_rPCFxA6aT-3e1ekNS0hqAPK0Vl_n9TT-xNuGmx2sQmj4",
+      "image_credit": "New York Post",
+      "news": [
+        {
+          "url": "https://nypost.com/2026/11/05/us-news/north-carolina-dem-lakesha-womack-has-court-appearance-for-car-theft-after-midterm-win/",
+          "title": "Dem candidate gets elected to the House in surprise win — and has a court appearance for car theft next week",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNo5KOEqkJLfDMGM_rPCFxA6aT-3e1ekNS0hqAPK0Vl_n9TT-xNuGmx2sQmj4"
+        },
+        {
+          "url": "https://fortune.com/2026/11/06/north-carolina-lakesha-womack-tim-moore-2026-midterm-elections/",
+          "title": "A North Carolina House race pitted $59,000 against an incumbent's $3 million—and the challenger won",
+          "publisher": "Fortune",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1c50v-hc4l24BzM63I1JQ7uvvYeYB6kZw-hauv9zoZjsp3Sj-pYohXTGgmHY"
+        },
+        {
+          "url": "https://www.wfae.org/politics/2026-11-04/how-lakesha-womacks-56-000-campaign-and-president-trump-sunk-powerful-republican-tim-moore",
+          "title": "How LaKesha Womack's $56,000 campaign (and President Trump) sunk powerful Republican Tim Moore",
+          "publisher": "WFAE",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQvx5g-ZEhoEKP6AD4WJg4ZIPcwF3z1M7H33bcCQi9pXs9UkpmY9O_k5Lt6HM"
+        }
+      ]
+    },
+    {
+      "query": "colts quarterback trade talks jones",
       "approx_searches": "200+",
-      "published_at": "2026-11-07T14:30:00Z",
+      "published_at": "2026-11-07T15:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50403440/sources-colts-engaged-daniel-jones-trade-talks",
+        "https://www.cbssports.com/nfl/news/nfl-trade-deadline-rumors-colts-daniel-jones-vikings/",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-07/schefter-giants-inquire-about-ravens-rb-justice-hill"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD9QS164El3VCEBhsL06eebAaIKRD-7mTn559TEHJ9gPOWM7H61FVnOaZDtY8",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50403440/sources-colts-engaged-daniel-jones-trade-talks",
+          "title": "Colts in Daniel Jones trade talks as multiple teams call about QB, sources say",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD9QS164El3VCEBhsL06eebAaIKRD-7mTn559TEHJ9gPOWM7H61FVnOaZDtY8"
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-rumors-colts-daniel-jones-vikings/",
+          "title": "NFL trade deadline rumors: Colts' Daniel Jones could get dealt and there's only one team that makes sense",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgGbsSvwOSlKs-7I6zt5x-KCba2hCwIeqoqC2fmsVTnxkNS_Ic2rQGL1VJ0Ns"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-07/schefter-giants-inquire-about-ravens-rb-justice-hill",
+          "title": "Schefter: Giants inquire about Ravens RB Justice Hill",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDF65WyOYJZ-11vx_nQ7kF-PQc8FIU0e-QEPQ75N1y1_OY3rP7NWKyxWEIvwo"
+        }
+      ]
+    },
+    {
+      "query": "athletic club - real madrid",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T14:50:00Z",
+      "related_news_urls": [
+        "https://www.marca.com/futbol/futbol-femenino/primera-division/2026/11/07/sara-ortega-busca-nuevo-azote-real-madrid-seria-sueno-repetirlo.html",
+        "https://as.com/futbol/femenino/athletic-real-madrid-en-directo-liga-f-moeve-hoy-en-vivo-f202611-n/",
+        "https://www.articulo14.es/deportes/el-real-madrid-visita-lezama-con-el-objetivo-de-dormir-lider-20261107.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZd0jK-veCWvVOAySiqDFmsa-RRTBjCLkCZTgLxkJjOafGcMrcDfJ07z3ywS8",
+      "image_credit": "MARCA",
+      "news": [
+        {
+          "url": "https://www.marca.com/futbol/futbol-femenino/primera-division/2026/11/07/sara-ortega-busca-nuevo-azote-real-madrid-seria-sueno-repetirlo.html",
+          "title": "Sara Ortega busca ser de nuevo el azote del Real Madrid: \"Sería un sueño repetirlo\"",
+          "publisher": "MARCA",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZd0jK-veCWvVOAySiqDFmsa-RRTBjCLkCZTgLxkJjOafGcMrcDfJ07z3ywS8"
+        },
+        {
+          "url": "https://as.com/futbol/femenino/athletic-real-madrid-en-directo-liga-f-moeve-hoy-en-vivo-f202611-n/",
+          "title": "Athletic-Real Madrid, en directo: Liga F Moeve, hoy en vivo",
+          "publisher": "Diario AS",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiD4rlx592NXb-3pHRkAmlQFVNBQGNOqFzIYGhx3REKmsgzjYUynKKR9IL9ss"
+        },
+        {
+          "url": "https://www.articulo14.es/deportes/el-real-madrid-visita-lezama-con-el-objetivo-de-dormir-lider-20261107.html",
+          "title": "El Real Madrid visita Lezama con el objetivo de dormir líder",
+          "publisher": "Artículo 14",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj4GMxuiFDni_TpMKuSVLB-wVnpaYTrSNiyUru5iqd9Y8QSxHWV67aB7huemk"
+        }
+      ]
+    },
+    {
+      "query": "oregon vs ohio state",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T14:50:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/articles/line-continues-move-buckeyes-showdown-140047655.html",
         "https://www.cbssports.com/prediction/news/ohio-state-vs-oregon-odds-picks-prediction-use-kalshi-promo-code-cbssports55-for-55-bonus-saturday/",
@@ -182,177 +287,72 @@
       ]
     },
     {
-      "query": "blackburn rovers vs west ham",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T14:20:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cq4g13kl9x6gt",
-        "https://www.goal.com/en-us/news/live-stream-online-tv-where-to-watch-blackburn-rovers-v-west-ham-united/blt32349ea2e5d7c586",
-        "https://www.thewesthamway.com/2026/11/07/mowbray-thinks-west-ham-are-beatable-lets-use-that-as-fuel-at-ewood-park/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRumyuV6Rv3rXLrmLrzyBZwJR7Mouc4-G5q1fPc3NfGJYbephR1sKeksajsKfg",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cq4g13kl9x6gt",
-          "title": "Blackburn Rovers v West Ham United: Championship stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRumyuV6Rv3rXLrmLrzyBZwJR7Mouc4-G5q1fPc3NfGJYbephR1sKeksajsKfg"
-        },
-        {
-          "url": "https://www.goal.com/en-us/news/live-stream-online-tv-where-to-watch-blackburn-rovers-v-west-ham-united/blt32349ea2e5d7c586",
-          "title": "Watch Blackburn Rovers vs. West Ham United live today: Who is broadcasting the match on TV and via live stream?",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrLe9BIIpqV13xCij7nfi-fm5OMiFx-Iz1wra8yTDTatq41R6N3xB8Xl5--QQ"
-        },
-        {
-          "url": "https://www.thewesthamway.com/2026/11/07/mowbray-thinks-west-ham-are-beatable-lets-use-that-as-fuel-at-ewood-park/",
-          "title": "Mowbray thinks West Ham are beatable – let’s use that as fuel at Ewood Park",
-          "publisher": "The West Ham Way",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzfZ_xGVQ2R3aVYr5EBpkBBe_gW1Ix1XaNJi7fvWdAEgNoWNtascicgBQDas8"
-        }
-      ]
-    },
-    {
-      "query": "fulham vs newcastle",
+      "query": "bayern munich",
       "approx_searches": "2000+",
-      "published_at": "2026-11-07T14:10:00Z",
+      "published_at": "2026-11-07T14:40:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cmj6jdk36975t",
-        "https://sports.yahoo.com/articles/fulham-vs-newcastle-team-news-133000014.html",
-        "https://www.fulhamfc.com/news/2026/november/06/pre-newcastle-press-conference/"
+        "https://fcbayern.com/en/news/matchpreviews/2026/11/preview-mainz-bayern-bundesliga-matchday-9",
+        "https://sports.yahoo.com/articles/confirmed-lineups-mainz-05-vs-133100626.html",
+        "https://www.nytimes.com/athletic/7760954/2026/11/07/bayern-munich-vs-fsv-mainz-stream-how-to-watch-bundesliga-nov-7/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRajCR4be3jB_E-ob0wMKB1oCSucCBAxZiQuGWx0g5TSolSZxKc0wFjJH3numk",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt9elvhUSSjDtpnevmGmKSJZSMkMkqT6FWPN8MKu_UHKHjxZmz602EXxakSqI",
+      "image_credit": "FC Bayern",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/cmj6jdk36975t",
-          "title": "Premier League LIVE: Build-up, team news, live text, radio & score updates from across the Premier League",
-          "publisher": "BBC",
+          "url": "https://fcbayern.com/en/news/matchpreviews/2026/11/preview-mainz-bayern-bundesliga-matchday-9",
+          "title": "Preview: Mainz vs. Bayern, Bundesliga Matchday 9",
+          "publisher": "FC Bayern",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRajCR4be3jB_E-ob0wMKB1oCSucCBAxZiQuGWx0g5TSolSZxKc0wFjJH3numk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt9elvhUSSjDtpnevmGmKSJZSMkMkqT6FWPN8MKu_UHKHjxZmz602EXxakSqI"
         },
         {
-          "url": "https://sports.yahoo.com/articles/fulham-vs-newcastle-team-news-133000014.html",
-          "title": "Fulham vs. Newcastle — Team News & Match Preview",
+          "url": "https://sports.yahoo.com/articles/confirmed-lineups-mainz-05-vs-133100626.html",
+          "title": "Confirmed lineups: Mainz 05 vs. FC Bayern",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUG8YlTH3lMO1hVMInGnVU1MNxSMG0HU5inKZfKpaU5vrsVOE7WAWENitupC8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlB7BcP_IZtYzNZolsMn5G8n2bRQq2eKtwsedTwQU1C_K11TzLJ6WaBDm-wBc"
         },
         {
-          "url": "https://www.fulhamfc.com/news/2026/november/06/pre-newcastle-press-conference/",
-          "title": "Pre-Newcastle Press Conference",
-          "publisher": "Fulham FC",
+          "url": "https://www.nytimes.com/athletic/7760954/2026/11/07/bayern-munich-vs-fsv-mainz-stream-how-to-watch-bundesliga-nov-7/",
+          "title": "How to watch Bayern Munich vs. FSV Mainz in the U.S.: TV channel and streaming options for November 7",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSw28zHGXW4ZHL4w-T-n5N5gv8Byx1bTCP_4bstTrHKPcYab0GXRUfaEAIK0Io"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQde1iwAyIaHJ25UlAdm8Sjp5im5FIXQvQWtzHzTLpbpXTtClHDrgiq2NgVQh8"
         }
       ]
     },
     {
-      "query": "arsenal vs hull",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-07T14:00:00Z",
+      "query": "magda linette",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T14:40:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c64g1dvlpjzkt",
-        "https://www.arsenal.com/news/team-news-arteta-makes-six-changes-for-visit-of-hull-city-aFm6p5H0sRkP",
-        "https://www.skysports.com/football/live-blog/13592870/arsenal-vs-hull-city-live-premier-league-updates-news-prediction-and-line-ups"
+        "https://przegladsportowy.onet.pl/tenis/magda-linette-anastasija-zacharowa-relacja-na-zywo/ktmrhmk",
+        "https://sport.interia.pl/tenis/na-zywo-magda-linette-anastazja-zacharowa-w-polfinale-turnieju-wta-c,nzId,9403",
+        "https://www.sport.pl/tenis/14,64987,33121697.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQx6eiu22YzdFZU98VAnyHhasi7030fjXF6SJC4fQjc_SiKQPXg7I5MhN2XT0g",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjJ0W2nrCOUrEZrfharbM6TIvzNzG1PhxKHoWdRbAyaEItXqvBNu4sWaap4hg",
+      "image_credit": "Przegląd Sportowy",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/c64g1dvlpjzkt",
-          "title": "Arsenal vs Hull City: Premier League preview, team news, stats & head-to-head",
-          "publisher": "BBC",
+          "url": "https://przegladsportowy.onet.pl/tenis/magda-linette-anastasija-zacharowa-relacja-na-zywo/ktmrhmk",
+          "title": "Magda Linette - Anastasija Zacharowa [RELACJA NA ŻYWO]",
+          "publisher": "Przegląd Sportowy",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQx6eiu22YzdFZU98VAnyHhasi7030fjXF6SJC4fQjc_SiKQPXg7I5MhN2XT0g"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjJ0W2nrCOUrEZrfharbM6TIvzNzG1PhxKHoWdRbAyaEItXqvBNu4sWaap4hg"
         },
         {
-          "url": "https://www.arsenal.com/news/team-news-arteta-makes-six-changes-for-visit-of-hull-city-aFm6p5H0sRkP",
-          "title": "Team news: Arteta makes six changes for visit of Hull City",
-          "publisher": "Arsenal.com",
+          "url": "https://sport.interia.pl/tenis/na-zywo-magda-linette-anastazja-zacharowa-w-polfinale-turnieju-wta-c,nzId,9403",
+          "title": "Magda Linette - Anastazja Zacharowa w półfinale turnieju WTA Ćennaj. Relacja na żywo",
+          "publisher": "Interia Sport",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnQc44u1ttILIqAbAf53yLydD-XpdGYz4FvS2_FbF4bNa3ZHChnnFi2oecnBY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRVGunXvbMtROEdHt9-1SaJt1mXuAR123YAwsnEkQx21lmp-GFJojeTgalAso"
         },
         {
-          "url": "https://www.skysports.com/football/live-blog/13592870/arsenal-vs-hull-city-live-premier-league-updates-news-prediction-and-line-ups",
-          "title": "Arsenal vs Hull City LIVE! Premier League updates, news, prediction and line-ups",
-          "publisher": "Sky Sports",
+          "url": "https://www.sport.pl/tenis/14,64987,33121697.html",
+          "title": "Magda Linette o krok od finału! [NA ŻYWO]",
+          "publisher": "Sport.pl",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdA7rRPJUD3-pfLkH_8P7XdBEtYVvt5gnB8l74nnOtkaSkBryTvbxShZOBs4E"
-        }
-      ]
-    },
-    {
-      "query": "mcdonalds new value meals",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-07T14:00:00Z",
-      "related_news_urls": [
-        "https://www.audacy.com/national/news/mcdonald-s-introduces-new-value-meals-for-people-struggling-with-high-prices",
-        "https://www.cnbc.com/2026/11/04/mcdonalds-is-about-to-report-earnings-heres-what-to-expect.html",
-        "https://apnews.com/article/mcdonalds-inflation-fast-food-earnings-7fee4f873c6230e20f9e366e35094444"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQreiZlUexioo_ZO43qsVIPt0H2T6N3lyCWsij2GWcXg0zAy84BINjoqkNEiwk",
-      "image_credit": "Audacy",
-      "news": [
-        {
-          "url": "https://www.audacy.com/national/news/mcdonald-s-introduces-new-value-meals-for-people-struggling-with-high-prices",
-          "title": "McDonald's introduces new value meals for people struggling with high prices",
-          "publisher": "Audacy",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQreiZlUexioo_ZO43qsVIPt0H2T6N3lyCWsij2GWcXg0zAy84BINjoqkNEiwk"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/04/mcdonalds-is-about-to-report-earnings-heres-what-to-expect.html",
-          "title": "McDonald's stock rises as earnings beat, U.S. restaurants show improvement",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkGoWFqLS0aRsYdnPlv500bha0xtz_lHOxEuU7wHdbQwYvGcU0_SXtreJH4Xc"
-        },
-        {
-          "url": "https://apnews.com/article/mcdonalds-inflation-fast-food-earnings-7fee4f873c6230e20f9e366e35094444",
-          "title": "McDonald’s plans new value bundles next year after US traffic falls in third quarter",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFNTfn5zbOrh1fsEtlutDLFEf18TDjWBwniyNvE8K1DI6rjmbUCINM3agn9LE"
-        }
-      ]
-    },
-    {
-      "query": "jason sudeikis",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-07T14:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/best-college-gameday-signs-week-142251228.html",
-        "https://www.usatoday.com/story/sports/ncaaf/2026/11/05/college-gameday-guest-picker-jason-sudeikis-notre-dame-miami-family-ties-espn-ted-lasso/92627505007/",
-        "https://bleacherreport.com/articles/25529859-espn-college-gameday-2026-week-10-schedule-location-predictions-and-more"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJFrkmMyAWhDtDDF0-Sz5-HJN7hdFSpCImaqNemkHDbmcZ7-hEeQ1Eyj1c0xU",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/best-college-gameday-signs-week-142251228.html",
-          "title": "Best ‘College GameDay’ signs from Week 10: Miami vs. Notre Dame",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJFrkmMyAWhDtDDF0-Sz5-HJN7hdFSpCImaqNemkHDbmcZ7-hEeQ1Eyj1c0xU"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/ncaaf/2026/11/05/college-gameday-guest-picker-jason-sudeikis-notre-dame-miami-family-ties-espn-ted-lasso/92627505007/",
-          "title": "Jason Sudeikis' Notre Dame family ties make him perfect College GameDay guest picker",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTu63avMnQtZq9RxrtShE6WD-e_ShzdjZB-z4Pn6iO2iAB55ote9pNFD1pDnOI"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25529859-espn-college-gameday-2026-week-10-schedule-location-predictions-and-more",
-          "title": "ESPN College GameDay 2026 Week 10 Schedule, Location, Predictions and More",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYCoUwzGES3UHF9xdA6icu6kR56TxV1ZVo9MxhbgTHjtMzzhhyIzoCiy-Qteg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRivrbSBCBg5rrg6Fsf4LJMFayGD8WPwANlhktJvtBOJYG-cT5yUj5gLJp3R4U"
         }
       ]
     }
