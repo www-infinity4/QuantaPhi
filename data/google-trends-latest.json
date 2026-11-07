@@ -3,9 +3,246 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-07T06:32:23.566231Z",
+  "checked_at": "2026-11-07T07:01:14.476243Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "alice tubello",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T06:40:00Z",
+      "related_news_urls": [
+        "https://www.yardbarker.com/tennis/articles/emergency_alarm_forces_bianca_andreescus_match_to_stop_while_serving_for_victory_in_cali/s1_17460_44526072",
+        "https://tennisuptodate.com/wta/emergency-alarm-forces-bianca-andreescus-match-to-stop-while-serving-for-victory-in-cali"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQGB7WZw8n0DiKqlYKIxIbAgx1bcmk9gbJAC3PKQLZRIwIoSfO6gFYUeMVTocc",
+      "image_credit": "Yardbarker",
+      "news": [
+        {
+          "url": "https://www.yardbarker.com/tennis/articles/emergency_alarm_forces_bianca_andreescus_match_to_stop_while_serving_for_victory_in_cali/s1_17460_44526072",
+          "title": "Emergency alarm forces Bianca Andreescu's match to stop while serving for victory in Cali",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQGB7WZw8n0DiKqlYKIxIbAgx1bcmk9gbJAC3PKQLZRIwIoSfO6gFYUeMVTocc"
+        },
+        {
+          "url": "https://tennisuptodate.com/wta/emergency-alarm-forces-bianca-andreescus-match-to-stop-while-serving-for-victory-in-cali",
+          "title": "Alarm triggers sudden evacuation as Bianca Andreescu serves for match in Cali",
+          "publisher": "Tennisuptodate.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLUvvk5ft3gs9jBaSCm02oShJeZhd2RsRNQzTpS-OqFfzS04vbB2z4dHajznM"
+        }
+      ]
+    },
+    {
+      "query": "natalie portman",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T06:40:00Z",
+      "related_news_urls": [
+        "https://www.artnews.com/art-news/news/gallerist-movie-trailer-1234804759/",
+        "https://deadline.com/2026/11/the-gallerist-trailer-natalie-portman-jenna-ortega-dark-comedy-1237214004/",
+        "https://www.yahoo.com/entertainment/movies/trailers/articles/jenna-ortega-natalie-portman-absurd-161223419.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Nz4XjUdTj-tn_6UUrZWQTQShKlPz3q92JfKo5gPT3ncdswZITacxTAjFnWo",
+      "image_credit": "ARTnews.com",
+      "news": [
+        {
+          "url": "https://www.artnews.com/art-news/news/gallerist-movie-trailer-1234804759/",
+          "title": "Antic Trailer Released for The Gallerist , Natalie Portman-Starring Art World Satire",
+          "publisher": "ARTnews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Nz4XjUdTj-tn_6UUrZWQTQShKlPz3q92JfKo5gPT3ncdswZITacxTAjFnWo"
+        },
+        {
+          "url": "https://deadline.com/2026/11/the-gallerist-trailer-natalie-portman-jenna-ortega-dark-comedy-1237214004/",
+          "title": "'The Gallerist' Trailer: Natalie Portman, Jenna Ortega At Art Basel",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTB-ZOeByihk1MwM_SO8OuYq24QnrCtvdIcRbDshY-JSIz_E7hlHgRV2GoYFmQ"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/trailers/articles/jenna-ortega-natalie-portman-absurd-161223419.html",
+          "title": "Jenna Ortega & Natalie Portman’s Absurd Comedy Movie With More A-Listers Gets New Trailer",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRjguA_twl5ld2IhdNHDE5cgr-DNnrk7TaB5X2m0S2i0SfVVxCBMjuMwTGiSI"
+        }
+      ]
+    },
+    {
+      "query": "cif ss football playoffs",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T06:40:00Z",
+      "related_news_urls": [
+        "https://www.vcstar.com/story/sports/high-school/football/2026/11/06/live-coverage-of-the-first-round-of-the-high-school-football-playoffs--live/92615515007/",
+        "https://www.ocregister.com/2026/11/06/photos-hot-shots-from-fridays-high-school-football-playoff-games/",
+        "https://www.si.com/high-school/california/cif-southern-section-football-first-round-playoff-scores-divisions-2-14-01m6syy9wj47"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQA7LveyFpqIyUJ7Pasq9yTFpWk9AcOz6UVUcLul04F9UZuNSkITu85TH1XgP4",
+      "image_credit": "Ventura County Star",
+      "news": [
+        {
+          "url": "https://www.vcstar.com/story/sports/high-school/football/2026/11/06/live-coverage-of-the-first-round-of-the-high-school-football-playoffs--live/92615515007/",
+          "title": "LIVE coverage of the first round of the high school football playoffs",
+          "publisher": "Ventura County Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQA7LveyFpqIyUJ7Pasq9yTFpWk9AcOz6UVUcLul04F9UZuNSkITu85TH1XgP4"
+        },
+        {
+          "url": "https://www.ocregister.com/2026/11/06/photos-hot-shots-from-fridays-high-school-football-playoff-games/",
+          "title": "Photos: Hot shots from Friday’s high school football playoff games",
+          "publisher": "Orange County Register",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGnxp58HSzA7wD0RimOP1zJ1iwD_Oi0MTHOsYRFQdjRNMCRYkP4EZqNigRBh8"
+        },
+        {
+          "url": "https://www.si.com/high-school/california/cif-southern-section-football-first-round-playoff-scores-divisions-2-14-01m6syy9wj47",
+          "title": "CIF Southern Section Football First-Round Playoff Scores (Divisions 2-14)",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbUx-XipmPkiCqCG-HgBJdTBwQdbpxeosvAuI7qKuT5hbwwH4x2YOb5d5h_Kk"
+        }
+      ]
+    },
+    {
+      "query": "alexandra shubladze",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-07T06:30:00Z",
+      "related_news_urls": [
+        "https://www.wtatennis.com/news/4605678/eala-beats-ruzic-in-hong-kong-quarterfinal-featuring-29-break-points",
+        "https://www.espn.com/tennis/story/_/id/50400006/alex-eala-antonia-ruzic-hong-kong-open-quarterfinal",
+        "https://sports.inquirer.net/705733/alex-eala-faces-tough-test-vs-maria-sakkari-in-hong-kong-open-semis"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSv80hgDzLQTUbWCd8aJ63wDJWMJq5Nct5KomKc7K610eDJ21y3KvkIKTHoIo",
+      "image_credit": "WTA Tennis",
+      "news": [
+        {
+          "url": "https://www.wtatennis.com/news/4605678/eala-beats-ruzic-in-hong-kong-quarterfinal-featuring-29-break-points",
+          "title": "Eala beats Ruzic in Hong Kong quarterfinal featuring 29 break points",
+          "publisher": "WTA Tennis",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSv80hgDzLQTUbWCd8aJ63wDJWMJq5Nct5KomKc7K610eDJ21y3KvkIKTHoIo"
+        },
+        {
+          "url": "https://www.espn.com/tennis/story/_/id/50400006/alex-eala-antonia-ruzic-hong-kong-open-quarterfinal",
+          "title": "Alex Eala survives Antonia Ruzic test, storms into Hong Kong Open semifinals against Maria Sakkari",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp3BfJ7KRWu6Rp4OY8DvhScpyoiF42kNB59EbUPv019ayoCQcyotfmRRI4Tow"
+        },
+        {
+          "url": "https://sports.inquirer.net/705733/alex-eala-faces-tough-test-vs-maria-sakkari-in-hong-kong-open-semis",
+          "title": "Alex Eala faces tough test vs Maria Sakkari in Hong Kong Open semis",
+          "publisher": "Inquirer.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjn_RQoKgccYVvjMDW1P-3xXAFppgYBcQFklb-QrO2anIxNTCdjDEzViiTFgc"
+        }
+      ]
+    },
+    {
+      "query": "freeze warning",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-07T06:20:00Z",
+      "related_news_urls": [
+        "https://www.14news.com/2026/11/06/drizzle-today-gives-way-frost-freeze-this-weekend/",
+        "https://patch.com/illinois/across-il/sub-freezing-temperatures-expected-parts-chicago-area",
+        "https://www.keyc.com/2026/11/05/frosty-nights-sunshine-gradual-warming-way/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUb8GmeRNLuF7r1TiotM64f4mi0I4PleghAXtD5YMIrXg3snNHYbbZiKaBH00",
+      "image_credit": "WFIE | 14 News",
+      "news": [
+        {
+          "url": "https://www.14news.com/2026/11/06/drizzle-today-gives-way-frost-freeze-this-weekend/",
+          "title": "Drizzle Today Gives Way to Frost and Freeze This Weekend",
+          "publisher": "WFIE | 14 News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUb8GmeRNLuF7r1TiotM64f4mi0I4PleghAXtD5YMIrXg3snNHYbbZiKaBH00"
+        },
+        {
+          "url": "https://patch.com/illinois/across-il/sub-freezing-temperatures-expected-parts-chicago-area",
+          "title": "Sub-Freezing Temperatures Expected For Parts Of Chicago Area",
+          "publisher": "Patch",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8KZxGFU4PIadZZcQCEp-q19yrbWCgcm9gJG0fNLiGBowue0OSjDJ7Sjuy9Sc"
+        },
+        {
+          "url": "https://www.keyc.com/2026/11/05/frosty-nights-sunshine-gradual-warming-way/",
+          "title": "Frosty nights, sunshine, gradual warming on the way",
+          "publisher": "KEYC News Now",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9qMiiM8WdSTibxWzONxHw7Hmms5otqxG-llrT0BiDMH0TkisdZUHFsieVcXM"
+        }
+      ]
+    },
+    {
+      "query": "claire liu",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-07T06:20:00Z",
+      "related_news_urls": [
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/casper-ruud-vs-carlos-alcaraz-set-1-winner-nov-07-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/rinky-hijikata-vs-tomas-martin-etcheverry-set-2-winner-nov-05-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/lorenzo-musetti-vs-luca-van-assche-set-1-winner-nov-05-2026/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTc630s7KHCe-H-9vKxNxs-GWY0pYH6OKaMEVqToSr7FneDmKaPsCAfQ27LJQ",
+      "image_credit": "Robinhood",
+      "news": [
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/casper-ruud-vs-carlos-alcaraz-set-1-winner-nov-07-2026/",
+          "title": "November 7, 2026: Casper Ruud vs Carlos Alcaraz: Set 1 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTc630s7KHCe-H-9vKxNxs-GWY0pYH6OKaMEVqToSr7FneDmKaPsCAfQ27LJQ"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/rinky-hijikata-vs-tomas-martin-etcheverry-set-2-winner-nov-05-2026/",
+          "title": "November 5, 2026: Rinky Hijikata vs Tomas Martin Etcheverry: Set 2 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKMaKsKWftlG7A4wHDfdUGk5u9gmfJJuhbQaCGMQSWlBkHOp1Ryq_bXi3b7SU"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/lorenzo-musetti-vs-luca-van-assche-set-1-winner-nov-05-2026/",
+          "title": "November 5, 2026: Lorenzo Musetti vs Luca Van Assche: Set 1 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUnA0jeYKOZPnLztXb2UrhsoXARKxHVQtYCfOcw4gr4bHeXdUbVo75G-GlxYE"
+        }
+      ]
+    },
+    {
+      "query": "jeff hiller",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T06:20:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/it/news/ni66098582/?ref_=nm_nwr_1",
+        "https://www.theatermania.com/news/interview-jeff-hiller-on-artistic-successes-and-returning-to-the-stage-in-the-exhibitionist_1858998/",
+        "https://www.broadwayworld.com/article/Video-Jeff-Hiller-is-Bringing-Humor-and-Heart-to-THE-EXHIBITIONIST-20261106"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzCY8695xaRCgSfSBdUpWNzaWMkDaepVFnGZkqpA6M91hD6xHNQQ4kQIfDefI",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/it/news/ni66098582/?ref_=nm_nwr_1",
+          "title": "Video: Jeff Hiller Has an Emmy, But the Stage Is Still Calling",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzCY8695xaRCgSfSBdUpWNzaWMkDaepVFnGZkqpA6M91hD6xHNQQ4kQIfDefI"
+        },
+        {
+          "url": "https://www.theatermania.com/news/interview-jeff-hiller-on-artistic-successes-and-returning-to-the-stage-in-the-exhibitionist_1858998/",
+          "title": "Interview: Emmy Winner Jeff Hiller on Artistic Successes and Returning to the Stage in The Exhibitionist",
+          "publisher": "TheaterMania",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt6jiTQaWugnA3mVKTsskHpGWZGdcR1EjkRy9mu3QrIzPJvGNGgAnnzVJOQKU"
+        },
+        {
+          "url": "https://www.broadwayworld.com/article/Video-Jeff-Hiller-is-Bringing-Humor-and-Heart-to-THE-EXHIBITIONIST-20261106",
+          "title": "Video: Jeff Hiller is Bringing Humor and Heart to THE EXHIBITIONIST",
+          "publisher": "BroadwayWorld",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0GgDEttdJQEPRBq1Zu-Xj_l7hzLsY7LnqEVuLDLpqZL9j4U25KrNBpERAc1I"
+        }
+      ]
+    },
     {
       "query": "angelina jolie",
       "approx_searches": "200+",
@@ -77,282 +314,37 @@
       ]
     },
     {
-      "query": "lakers",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-07T06:00:00Z",
+      "query": "what does jd stand for in jd vance",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T06:10:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/nba/gametracker/NBA_20261106_POR@LAL/",
-        "https://www.si.com/nba/trailblazers/onsi/2-winners-2-losers-in-blazers-loss-vs-luka-doncic-lakers",
-        "https://sports.yahoo.com/articles/luka-doncics-remarkable-scoring-streak-120355790.html"
+        "https://www.nytimes.com/2026/11/06/opinion/jd-vance-midterms.html",
+        "https://www.vox.com/today-explained-newsletter/509815/jd-vance-2028-maga-midterms-stephen-miller",
+        "https://www.cnn.com/2026/11/05/politics/video/sarah-matthews-on-vance-no-chance-of-becoming-president-in-2028"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTh9El8md9-zrdRZ6Sw8Eiesyo1pMsj1FOtBMLxewrI4i6aV4MyqIN1qosPaqI",
-      "image_credit": "CBS Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS59q_3h8_aSCKT6g4nJZ9qoiKPsvdr92GnFyxcRhV_167szzevfjAjo6hTB1A",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.cbssports.com/nba/gametracker/NBA_20261106_POR@LAL/",
-          "title": "Portland Trail Blazers vs. Los Angeles Lakers Live Score and Stats - November 6, 2026 Gametracker",
-          "publisher": "CBS Sports",
+          "url": "https://www.nytimes.com/2026/11/06/opinion/jd-vance-midterms.html",
+          "title": "Opinion | After These Midterms, JD Vance Is in a Bind",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTh9El8md9-zrdRZ6Sw8Eiesyo1pMsj1FOtBMLxewrI4i6aV4MyqIN1qosPaqI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS59q_3h8_aSCKT6g4nJZ9qoiKPsvdr92GnFyxcRhV_167szzevfjAjo6hTB1A"
         },
         {
-          "url": "https://www.si.com/nba/trailblazers/onsi/2-winners-2-losers-in-blazers-loss-vs-luka-doncic-lakers",
-          "title": "2 Winners, 2 Losers in Blazers Loss vs. Luka Doncic, Lakers",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.vox.com/today-explained-newsletter/509815/jd-vance-2028-maga-midterms-stephen-miller",
+          "title": "2026 midterm results: JD Vance’s bad week gets worse",
+          "publisher": "Vox",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmtZOzYD2CqIVtJbOvYVVGeq9mqT4ZEiyon3M7tPLiF7XoSPGZXb0PNfafS48"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTq3LvUHpFXgPtuMnu0Oldf1btjo9l-yKXFlSQ2SnOHyaZm-2OSFUXTyxQgdug"
         },
         {
-          "url": "https://sports.yahoo.com/articles/luka-doncics-remarkable-scoring-streak-120355790.html",
-          "title": "Luka Doncic's remarkable scoring streak gives Lakers a new challenge",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.cnn.com/2026/11/05/politics/video/sarah-matthews-on-vance-no-chance-of-becoming-president-in-2028",
+          "title": "Sarah Matthews on Vance: ‘No chance’ of becoming president in 2028’",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStcH_p-yyHYkV41iEk-GUpo22Dw__efpKjibW_BgtkecaeG_5dPe8r2VctS9s"
-        }
-      ]
-    },
-    {
-      "query": "austin reaves",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-07T06:00:00Z",
-      "related_news_urls": [
-        "https://lakersnation.com/ziaire-williams-enjoying-being-austin-reaves-teammate/",
-        "https://www.nba.com/watch/video/lal-138-mia-117-ziaire-williams-postgame-media-availability",
-        "https://www.yardbarker.com/nba/articles/ziaire_williams_luka_doncic_is_unbelievable_play_and_even_better_person/s1_17074_44516742"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSA48i3rO5Ta4jO5fP4gQxozCmlf2ZPOWigU9KyX3SltU18KbSENKcTJaZ_z94",
-      "image_credit": "Lakers Nation",
-      "news": [
-        {
-          "url": "https://lakersnation.com/ziaire-williams-enjoying-being-austin-reaves-teammate/",
-          "title": "Ziaire Williams Enjoying Being Austin Reaves’ Teammate",
-          "publisher": "Lakers Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSA48i3rO5Ta4jO5fP4gQxozCmlf2ZPOWigU9KyX3SltU18KbSENKcTJaZ_z94"
-        },
-        {
-          "url": "https://www.nba.com/watch/video/lal-138-mia-117-ziaire-williams-postgame-media-availability",
-          "title": "LAL 138, MIA 117: Ziaire Williams Postgame Media Availability",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1sjiUqYrDYlBhZ6BjKjTIA4tqLmtwh4sAW_SzL6KsbtNnQLHc2rTJBTANq74"
-        },
-        {
-          "url": "https://www.yardbarker.com/nba/articles/ziaire_williams_luka_doncic_is_unbelievable_play_and_even_better_person/s1_17074_44516742",
-          "title": "Ziaire Williams: Luka Doncic Is ‘Unbelievable’ Play And ‘Even Better Person’",
-          "publisher": "Yardbarker",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7UR5yVFwRIGFjsCykBn95_53-JZ7CzRg6nxNtcE2ZIdtmqiMHQNPFIQgk3k0"
-        }
-      ]
-    },
-    {
-      "query": "stephon castle",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T06:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50404646/stephon-castle-gets-basket-plus-foul",
-        "https://www.fantasypros.com/nba/news/618311/stephon-castle-posts-double-double-wednesdays-win-over-mavericks.php",
-        "https://www.cbssports.com/fantasy/basketball/news/spurs-stephon-castle-steadies-ship-in-easy-win/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8dUrdYmRKle6XhmZARw8YLH7XIqWf1_M5PXAq2siN-odNG8KbgP76ZnQmM14",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50404646/stephon-castle-gets-basket-plus-foul",
-          "title": "Stephon Castle gets the basket plus the foul",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8dUrdYmRKle6XhmZARw8YLH7XIqWf1_M5PXAq2siN-odNG8KbgP76ZnQmM14"
-        },
-        {
-          "url": "https://www.fantasypros.com/nba/news/618311/stephon-castle-posts-double-double-wednesdays-win-over-mavericks.php",
-          "title": "Stephon Castle posts double-double in Wednesday's win over Mavericks",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdl8waRLch19DRQuqpj3OU6ayhxfULA8ctC35_qCY30gkS4TR77bQ7iw5F9ro"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/spurs-stephon-castle-steadies-ship-in-easy-win/",
-          "title": "Spurs' Stephon Castle: Steadies ship in easy win",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm0HUO8iBtRp9_YhvKC9382eiXPNHy6Vcf3KvDqCjGlNACVxn27pByk2Ie9fI"
-        }
-      ]
-    },
-    {
-      "query": "wilt chamberlain",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T06:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50385705/wembanyama-52-points-24-rebounds-8-blocks-spurs-mavs",
-        "https://www.nba.com/watch/video/game-recap-spurs-112-mavericks-111",
-        "https://www.theringer.com/2026/11/05/nba/ban-victor-wembanyama-nba-rules"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOERXo9VW6ajt3oPkOE8zSNVDgHCI_f-DMnnrivOVmAjeR4-71K14yOY5hSCA",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50385705/wembanyama-52-points-24-rebounds-8-blocks-spurs-mavs",
-          "title": "Wembanyama has career night with 52 points, 24 rebounds, 8 blocks in Spurs' win",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOERXo9VW6ajt3oPkOE8zSNVDgHCI_f-DMnnrivOVmAjeR4-71K14yOY5hSCA"
-        },
-        {
-          "url": "https://www.nba.com/watch/video/game-recap-spurs-112-mavericks-111",
-          "title": "Game Recap: Spurs 112, Mavericks 111",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrcp1wnLPKQ4peLsQPnAyAuwXv3y9VzrHk5cvAfOoUuiuApZCc5TfZRC2jDV0"
-        },
-        {
-          "url": "https://www.theringer.com/2026/11/05/nba/ban-victor-wembanyama-nba-rules",
-          "title": "Ban Wemby. Save Basketball.",
-          "publisher": "The Ringer",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfajtevyPoDkPgQ9VvhR3SsWI5-6x1R05hxDTnCW5qr_zV0AD_dILGmXCtsbU"
-        }
-      ]
-    },
-    {
-      "query": "trail blazers vs lakers",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-07T05:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/game/_/gameId/401909922/76ers-pistons",
-        "https://www.espn.com/nba/game/_/gameId/401909897/76ers-hornets",
-        "https://www.espn.com/nba/game/_/gameId/401909926/bulls-knicks"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS27-FQSAjul_ssj_1Am6-x18FnOnPBRBa_tE4aqYaZ8qvo3bhbkH_oh7i79Nw",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/game/_/gameId/401909922/76ers-pistons",
-          "title": "76ers 112-106 Pistons (Nov 4, 2026) Final Score",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS27-FQSAjul_ssj_1Am6-x18FnOnPBRBa_tE4aqYaZ8qvo3bhbkH_oh7i79Nw"
-        },
-        {
-          "url": "https://www.espn.com/nba/game/_/gameId/401909897/76ers-hornets",
-          "title": "76ers 109-104 Hornets (Oct 31, 2026) Final Score",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTslA-i0X-rCrkhYBfyI5UAjM2OMjpoTBxQWqAVKR3qEg5Mdimpy1t56mkwIc"
-        },
-        {
-          "url": "https://www.espn.com/nba/game/_/gameId/401909926/bulls-knicks",
-          "title": "Knicks 135-105 Bulls (Nov 4, 2026) Final Score",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShhSKJA9QRmiJcXNuOVzezzG_vKKQrFSM-c-09BdzAoJjotAvj_USsUqsp32I"
-        }
-      ]
-    },
-    {
-      "query": "donovan clingan",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T05:50:00Z",
-      "related_news_urls": [
-        "https://ripcityproject.com/donovan-clingan-solving-mobile-matchup-problem-blazers",
-        "https://www.fantasypros.com/nba/news/617987/donovan-clingan-puts-up-big-double-double-wednesday.php",
-        "https://www.nba.com/watch/video/donovan-clingan-with-the-slam-23"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1HtVTLi4c4txTd_e_dokbNf-wnL4OUQj81fQz6IQ1_0bC5_bnkqUHWfVruMo",
-      "image_credit": "Rip City Project",
-      "news": [
-        {
-          "url": "https://ripcityproject.com/donovan-clingan-solving-mobile-matchup-problem-blazers",
-          "title": "Donovan Clingan is solving his mobile matchup problem for the Blazers",
-          "publisher": "Rip City Project",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1HtVTLi4c4txTd_e_dokbNf-wnL4OUQj81fQz6IQ1_0bC5_bnkqUHWfVruMo"
-        },
-        {
-          "url": "https://www.fantasypros.com/nba/news/617987/donovan-clingan-puts-up-big-double-double-wednesday.php",
-          "title": "Donovan Clingan puts up big double-double Wednesday",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYYMba8GDj4K_xZusC2xgsYl3j71_gdF4NtEcR9eSdsXcMzh4mTfpDAEnDqsw"
-        },
-        {
-          "url": "https://www.nba.com/watch/video/donovan-clingan-with-the-slam-23",
-          "title": "Donovan Clingan with the slam",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRehHkwONLF-xeEDHA8c-UC0O50VyNhGX6_s5uYIrrhlGEIZDdWzGkyPEeCvS4"
-        }
-      ]
-    },
-    {
-      "query": "scoot henderson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T05:50:00Z",
-      "related_news_urls": [
-        "https://www.blazersedge.com/trail-blazers-news/117896/portland-trail-blazers-coach-micah-nori-scoot-henderson-2026",
-        "https://sports.yahoo.com/articles/blazers-guard-scoot-henderson-micah-212437922.html",
-        "https://sports.yahoo.com/articles/scoot-henderson-reveals-unique-og-130045683.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOD0GqGpAQRWQI3xCNOt-Fs0jK1vjQHCEv2zfnaevvo2quLZhuAD58SjcwY5A",
-      "image_credit": "Blazer's Edge",
-      "news": [
-        {
-          "url": "https://www.blazersedge.com/trail-blazers-news/117896/portland-trail-blazers-coach-micah-nori-scoot-henderson-2026",
-          "title": "Coach Micah Nori Appears to be in Scoot Henderson’s Corner",
-          "publisher": "Blazer's Edge",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOD0GqGpAQRWQI3xCNOt-Fs0jK1vjQHCEv2zfnaevvo2quLZhuAD58SjcwY5A"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/blazers-guard-scoot-henderson-micah-212437922.html",
-          "title": "Blazers guard Scoot Henderson’s Micah Nori lovefest features subtle shade at Tiago Splitter",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1TXMJstsGKDmZ91q9nrudpvdXGE-ab_Z9z6FXc267wh4lwAXTJb5jZwwL4Us"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/scoot-henderson-reveals-unique-og-130045683.html",
-          "title": "Scoot Henderson Reveals Unique 'OG' Relationship With Blazers Coach Micah Nori",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCWaI0COwtxNiuU-LvKVp-N-49N202axEmAj4ibVqMwP8F1w6oH464TEH8X2w"
-        }
-      ]
-    },
-    {
-      "query": "damian lillard",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-07T05:50:00Z",
-      "related_news_urls": [
-        "https://www.jsonline.com/story/sports/nba/bucks/2026/11/06/doc-rivers-damian-lillard-never-welcomed-properly-milwaukee-bucks/92646650007/",
-        "https://www.si.com/nba/trailblazers/onsi/how-damian-lillard-has-helped-transform-the-blazers-offense",
-        "https://www.yardbarker.com/nba/articles/blazers_micah_nori_on_damian_lillard_he_just_pulls_everything_together/s1_17038_44522042"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQX021OqgVVfx8gGTp05JGoYCsrbc08sQnPgDNljHXNJepqOQJVs65Y42eHNAQ",
-      "image_credit": "Milwaukee Journal Sentinel",
-      "news": [
-        {
-          "url": "https://www.jsonline.com/story/sports/nba/bucks/2026/11/06/doc-rivers-damian-lillard-never-welcomed-properly-milwaukee-bucks/92646650007/",
-          "title": "Doc Rivers: Damian Lillard 'never welcomed' properly with Bucks",
-          "publisher": "Milwaukee Journal Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQX021OqgVVfx8gGTp05JGoYCsrbc08sQnPgDNljHXNJepqOQJVs65Y42eHNAQ"
-        },
-        {
-          "url": "https://www.si.com/nba/trailblazers/onsi/how-damian-lillard-has-helped-transform-the-blazers-offense",
-          "title": "How Damian Lillard Has Helped Transform the Blazers Offense",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjqR4ZLPM5FTgca8Xwx0yeAMs95lvZ_MHLGirWlH36DLMDM6ulKbcNm_ljgPY"
-        },
-        {
-          "url": "https://www.yardbarker.com/nba/articles/blazers_micah_nori_on_damian_lillard_he_just_pulls_everything_together/s1_17038_44522042",
-          "title": "Blazers’ Micah Nori on Damian Lillard: ‘He just pulls everything together’",
-          "publisher": "Yardbarker",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9Bz7i5n2d7wzR6a21GEZd6pdjDLC3jRaJx8ir6NVejF72DVr4pqWz797cdUA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQl1ajHvZ6tf1qGoXu1PIWs2dXikh4g25BNW886h5zJ2E5uf7WTE3Nj4z45Tig"
         }
       ]
     }
