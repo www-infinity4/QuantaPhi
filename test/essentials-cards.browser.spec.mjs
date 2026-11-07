@@ -54,7 +54,7 @@ test('Aquaphor, Band-Aid Hydro Seal and Cortizone-10 are distinct real Quick Car
  await page.goto(base+'/?card=aquaphor-healing-175oz',{waitUntil:'domcontentloaded'});
  const deck=page.locator('#oracleCardDeck'),stage=deck.locator('#oracleCardStage');
  const fixtures=[
-  ['aquaphor-healing-175oz','Aquaphor Healing','Aquaphor','https://www.walmart.com/ip/193670269','petrolatum'],
+  ['aquaphor-healing-175oz','Aquaphor Healing','Walmart','https://www.walmart.com/ip/193670269','petrolatum'],
   ['band-aid-hydro-seal-10ct','Band-Aid Hydro Seal','Kroger','https://www.kroger.com/p/band-aid-brand-hydro-seal-waterproof-first-aid-hydrocolloid-gel-bandages/0038137117297','hydrocolloid'],
   ['cortizone10-sensitive-skin-2oz','Cortizone-10','Walmart','https://www.walmart.com/ip/1520268394','hydrocortisone']
  ];
