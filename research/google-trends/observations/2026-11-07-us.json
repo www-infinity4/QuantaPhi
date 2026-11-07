@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-07T22:31:12.061544Z",
+  "checked_at": "2026-11-07T23:01:18.086159Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "boise state vs co state",
+      "query": "deion sanders",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T22:40:00Z",
+      "related_news_urls": [
+        "https://www.essentiallysports.com/ncaa-college-football-news-deion-sanders-girlfriend-karrueche-tran-opens-up-on-motherhood-at-thirty-eight-while-pushing-back-on-external-pressure-figuring-out/",
+        "https://www.yahoo.com/entertainment/celebrity/articles/just-nasty-deion-sanders-girlfriend-145712415.html",
+        "https://theshaderoom.com/karrueche-tran-fans-mention-deion-sanders-kids-motherhood-video-the-shade-room/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1rKGBTJdnRkrzxI5P2CSFq2ttbIWUi05e4T2QrcfEbucEEYlgt43y8zl3W-w",
+      "image_credit": "EssentiallySports",
+      "news": [
+        {
+          "url": "https://www.essentiallysports.com/ncaa-college-football-news-deion-sanders-girlfriend-karrueche-tran-opens-up-on-motherhood-at-thirty-eight-while-pushing-back-on-external-pressure-figuring-out/",
+          "title": "Deion Sanders’ Girlfriend Karrueche Tran Opens Up on Motherhood at 38 while Pushing Back on External Pressure: “Figuring Out”",
+          "publisher": "EssentiallySports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1rKGBTJdnRkrzxI5P2CSFq2ttbIWUi05e4T2QrcfEbucEEYlgt43y8zl3W-w"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/just-nasty-deion-sanders-girlfriend-145712415.html",
+          "title": "“It’s Just Nasty”: Deion Sanders’ Girlfriend Karrueche Tran Blasts “Rude” Pressure to Have Kids",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1NlXlZdsRpfePYAnxrHNeQTyrBznsJTveWEokUDLdVMQWjNYBjSG29c0FYkQ"
+        },
+        {
+          "url": "https://theshaderoom.com/karrueche-tran-fans-mention-deion-sanders-kids-motherhood-video-the-shade-room/",
+          "title": "Fans Mention Deion Sanders After Karrueche Tran Shares Her Thoughts On Motherhood & Having Kids (VIDEO)",
+          "publisher": "The Shade Room",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkJLTiY2v_pX4neTB6RLl0gvb4xsZjbQgYQNiDfxjV436TW75PXsvRntAfH-k"
+        }
+      ]
+    },
+    {
+      "query": "andrew nembhard",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T22:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/recap/_/gameId/401909927",
+        "https://www.nba.com/watch/video/game-recap-pacers-107-grizzlies-103",
+        "https://dailymemphian.com/article/68305/memphis-grizzlies-drop-second-straight-game-indiana-pacers"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZtTjIimZu3CdQgKOZ8E63P39s1Qj1QCKLCeBuyDUc4BjXwqfX1Dq9g6pAgWU",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/recap/_/gameId/401909927",
+          "title": "Pacers 107-103 Grizzlies (Nov 4, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZtTjIimZu3CdQgKOZ8E63P39s1Qj1QCKLCeBuyDUc4BjXwqfX1Dq9g6pAgWU"
+        },
+        {
+          "url": "https://www.nba.com/watch/video/game-recap-pacers-107-grizzlies-103",
+          "title": "Game Recap: Pacers 107, Grizzlies 103",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBknPAowW732Tzl0hA-TkkfRDrDWKZIhlkbzqvMp1tElD7hkdnlYS61QmXtjQ"
+        },
+        {
+          "url": "https://dailymemphian.com/article/68305/memphis-grizzlies-drop-second-straight-game-indiana-pacers",
+          "title": "Grizzlies drop second straight game in loss to Pacers",
+          "publisher": "Daily Memphian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4Ooz9uux_VfvfA5_tfoImX7ubXAtgnbWFizo42LObB44BpTuvLNardUwireU"
+        }
+      ]
+    },
+    {
+      "query": "wyoming football",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T22:40:00Z",
+      "related_news_urls": [
+        "https://www.inforum.com/sports/bison-media-zone/mens-sports/around-the-mountain-west-perhaps-improbably-wyoming-firmly-in-conference-title-fight",
+        "https://7220sports.com/wyoming-unlv-football-info-tv-radio/",
+        "https://unlvrebels.com/news/2026/11/4/womens-volleyball-rebels-travel-to-face-cowgirls-this-week"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTceyyHzHgsZ0z3lyXvXfiMEf5gZRxFsbcTeZgyJvYOGOBQEZ3WQOJvoA_Vns",
+      "image_credit": "InForum",
+      "news": [
+        {
+          "url": "https://www.inforum.com/sports/bison-media-zone/mens-sports/around-the-mountain-west-perhaps-improbably-wyoming-firmly-in-conference-title-fight",
+          "title": "Around the Mountain West: Perhaps improbably, Wyoming firmly in conference title fight",
+          "publisher": "InForum",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTceyyHzHgsZ0z3lyXvXfiMEf5gZRxFsbcTeZgyJvYOGOBQEZ3WQOJvoA_Vns"
+        },
+        {
+          "url": "https://7220sports.com/wyoming-unlv-football-info-tv-radio/",
+          "title": "Gear Up For Game Day: UNLV Rebels",
+          "publisher": "7220 Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTouPaf72mKCwQvuj9nk9ljpRmNJbbGm_tjZTUAywWC2Cwn-hGE3vA7fTSeeTY"
+        },
+        {
+          "url": "https://unlvrebels.com/news/2026/11/4/womens-volleyball-rebels-travel-to-face-cowgirls-this-week",
+          "title": "Rebels Travel To Face Cowgirls This Week",
+          "publisher": "University of Nevada Las Vegas Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2e091m7N4j2S8FLi1X97FYvmnZ-YmeBbhhhV0T_IxOZJU74N8uMitQ6PMJ7I"
+        }
+      ]
+    },
+    {
+      "query": "kylian mbappé",
       "approx_searches": "2000+",
-      "published_at": "2026-11-07T22:10:00Z",
+      "published_at": "2026-11-07T22:30:00Z",
       "related_news_urls": [
-        "https://www.ktvb.com/article/sports/ncaa/ncaaf/boise-state-football/game-day-guide-colorado-state-boise-state-preview-watch-bronco-roundup/277-33c21514-5916-40df-8db0-786f5d3b9459",
-        "https://sports.yahoo.com/articles/boise-state-football-vs-csu-200043905.html",
-        "https://www.idahostatesman.com/sports/college/mountain-west/boise-state-university/boise-state-football/article317963704.html"
+        "https://www.bbc.com/sport/football/articles/cm93zvzzl33zo",
+        "https://www.si.com/soccer/harry-kane-new-salary-compares-erling-haaland-kylian-mbappe",
+        "https://www.espn.com/soccer/story/_/id/50216815/harry-kane-signs-new-bayern-munich-contract"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLoo4RyGcdI0RsPy0nKbYEN9y5-F5UJ9qTp2gyid097fgFIRv92xY5VWEOqI0",
-      "image_credit": "KTVB",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCu6YkzE4HVVuMHl-7z5YbnnjCX1Qz-IOedvzc3dJQBLHaRRfaZr-d64giBEk",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.ktvb.com/article/sports/ncaa/ncaaf/boise-state-football/game-day-guide-colorado-state-boise-state-preview-watch-bronco-roundup/277-33c21514-5916-40df-8db0-786f5d3b9459",
-          "title": "Game Day Guide: No. 25 Boise State visits Colorado State for Pac-12 clash",
-          "publisher": "KTVB",
+          "url": "https://www.bbc.com/sport/football/articles/cm93zvzzl33zo",
+          "title": "Does Kane deal end Premier League career but offer England hope?",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLoo4RyGcdI0RsPy0nKbYEN9y5-F5UJ9qTp2gyid097fgFIRv92xY5VWEOqI0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCu6YkzE4HVVuMHl-7z5YbnnjCX1Qz-IOedvzc3dJQBLHaRRfaZr-d64giBEk"
         },
         {
-          "url": "https://sports.yahoo.com/articles/boise-state-football-vs-csu-200043905.html",
-          "title": "Boise State football vs. CSU live updates: Start time, TV channel",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.si.com/soccer/harry-kane-new-salary-compares-erling-haaland-kylian-mbappe",
+          "title": "How Harry Kane’s New Salary Compares to Erling Haaland, Kylian Mbappe",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEdzaxXHMHa_HmB-ZIs-LyQuGbMq21GfIQtPNuCdWWjtjsPVKWencjhvvOZCY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSVLvsQk84v32An8s1ci5RIdy1d-LeGZwtU2uzWRDt_YjSYdLeQuTkU381Cc0"
         },
         {
-          "url": "https://www.idahostatesman.com/sports/college/mountain-west/boise-state-university/boise-state-football/article317963704.html",
-          "title": "Boise State vs. Colorado State: How to watch on TV or listen on radio",
-          "publisher": "Idaho Statesman",
+          "url": "https://www.espn.com/soccer/story/_/id/50216815/harry-kane-signs-new-bayern-munich-contract",
+          "title": "Harry Kane signs new Bayern Munich contract: 'I want to win many more titles'",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTh2kWwwvA6ZBOFfP02pCVXj0h6c6B4lu5km28pvuFz1YYtmFDnXq4mrs2hnus"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQlpPFkhsqtPE2AdvLmWo1u4sE_HoQM_8qWydhoS0xvHydTgcJSAj7TsMy5Fc"
         }
       ]
     },
     {
-      "query": "montana state vs idaho state",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-07T22:10:00Z",
-      "related_news_urls": [
-        "https://www.montanasports.com/college/montana-state-bobcats/same-expectations-tougher-test-for-montana-state-against-ranked-idaho-state",
-        "https://skylinesportsmt.com/jammin-with-jp-the-big-sky-all-stars-draft-the-bobcats-o-line-the-trip-to-idaho-state/",
-        "https://missoulian.com/article_4106074b-7706-4798-bef5-447b802160e1.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI2lcicwHBZPkNSajZgwlIhye0SRAttuNkwNyUqI7Tgcl1RyEYEqDXHr1W7EA",
-      "image_credit": "MontanaSports.com",
-      "news": [
-        {
-          "url": "https://www.montanasports.com/college/montana-state-bobcats/same-expectations-tougher-test-for-montana-state-against-ranked-idaho-state",
-          "title": "Same expectations, tougher test for Montana State against ranked Idaho State",
-          "publisher": "MontanaSports.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI2lcicwHBZPkNSajZgwlIhye0SRAttuNkwNyUqI7Tgcl1RyEYEqDXHr1W7EA"
-        },
-        {
-          "url": "https://skylinesportsmt.com/jammin-with-jp-the-big-sky-all-stars-draft-the-bobcats-o-line-the-trip-to-idaho-state/",
-          "title": "Jammin’ with JP: The Big Sky All-Stars draft, the Bobcats’ O-line & the trip to Idaho State",
-          "publisher": "Skyline Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3qiemvonJQyepI-WJREZaJfRxqXtXAkZbK0jZ5-zJvDGq_9MAoZtn22Ois6U"
-        },
-        {
-          "url": "https://missoulian.com/article_4106074b-7706-4798-bef5-447b802160e1.html",
-          "title": "Levi Bruce motion and affidavit",
-          "publisher": "The Missoulian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnJhWO_vABaLCoFkYyrSJRlS4ew666xnp5KTZXj-E7MRdIPrZBwOwZrTdF2sM"
-        }
-      ]
-    },
-    {
-      "query": "nm state vs gonzaga",
+      "query": "southern il vs indiana state",
       "approx_searches": "500+",
-      "published_at": "2026-11-07T22:10:00Z",
+      "published_at": "2026-11-07T22:30:00Z",
       "related_news_urls": [
-        "https://www.swxlocalsports.com/spokane/gonzaga/mens-basketball/game-preview-no-15-gonzaga-vs-new-mexico-state-zags-host-aggies-in-home-opener/article_8b4b95c6-14a5-4791-b1d9-8abfd542e4c3.html",
-        "https://gozags.com/news/2026/11/5/mens-basketball-mbb-welcomes-nmsu-for-home-opener",
-        "https://www.spokesman.com/stories/2026/nov/06/compromised-new-mexico-state-team-grateful-for-gon/"
+        "https://www.thehoosiernetwork.com/article/2026/11/indiana-womens-basketball-southern-illinois-recap",
+        "https://www.idsnews.com/article/2026/11/indiana-womens-basketball-win-hope-southern-illinois-iu-bloomington",
+        "https://www.thedailyhoosier.com/iu-womens-basketball-improves-to-2-0-with-dominant-96-55-victory-over-southern-illinois/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdp9M5nmpqA9CLPwNdk7HJwAWkXghWiPjmvetMxEg2QhxaZB4fflFA7HxFF6g",
-      "image_credit": "SWX Local Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7g3BOwAPmVuItsLo3TMO6VmwxSNM4SFpF7WRGpGlBfICaCUP3uarCWRaD5GM",
+      "image_credit": "The Hoosier Network",
       "news": [
         {
-          "url": "https://www.swxlocalsports.com/spokane/gonzaga/mens-basketball/game-preview-no-15-gonzaga-vs-new-mexico-state-zags-host-aggies-in-home-opener/article_8b4b95c6-14a5-4791-b1d9-8abfd542e4c3.html",
-          "title": "Game Preview | No. 15 Gonzaga vs New Mexico State | Zags host Aggies in home opener",
-          "publisher": "SWX Local Sports",
+          "url": "https://www.thehoosiernetwork.com/article/2026/11/indiana-womens-basketball-southern-illinois-recap",
+          "title": "Indiana’s offense erupts to advance to 2-0 on the new season",
+          "publisher": "The Hoosier Network",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdp9M5nmpqA9CLPwNdk7HJwAWkXghWiPjmvetMxEg2QhxaZB4fflFA7HxFF6g"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7g3BOwAPmVuItsLo3TMO6VmwxSNM4SFpF7WRGpGlBfICaCUP3uarCWRaD5GM"
         },
         {
-          "url": "https://gozags.com/news/2026/11/5/mens-basketball-mbb-welcomes-nmsu-for-home-opener",
-          "title": "MBB Welcomes NMSU for Home Opener",
-          "publisher": "Gonzaga University Athletics",
+          "url": "https://www.idsnews.com/article/2026/11/indiana-womens-basketball-win-hope-southern-illinois-iu-bloomington",
+          "title": "COLUMN: Add another ‘prison of hope’ to Indiana women’s basketball’s depth this season",
+          "publisher": "Indiana Daily Student",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXDOrc91V_bpZbnpiiewhKoOoTq18362XRJydFdTdQwUCHl8cKPYmg2qKm1Gc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4EmkD7GJmpahbHBUHZ6Qr038JuvkL-yaBqDvwZpwv5hIp_gj9iLif5zkZkMk"
         },
         {
-          "url": "https://www.spokesman.com/stories/2026/nov/06/compromised-new-mexico-state-team-grateful-for-gon/",
-          "title": "Compromised New Mexico State team grateful for Gonzaga opportunity: 'It's really hard to get these games anymore'",
-          "publisher": "The Spokesman-Review",
+          "url": "https://www.thedailyhoosier.com/iu-womens-basketball-improves-to-2-0-with-dominant-96-55-victory-over-southern-illinois/",
+          "title": "IU women’s basketball improves to 2-0 with dominant 96-55 victory over Southern Illinois",
+          "publisher": "The Daily Hoosier",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDeSX9XD0zFbmIPVEXhKd0V6FYcyb1AIwzHbJ6TaZ_xnpq0NCJTDVbZ7PQcbA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgsYqn5YT7wHUrAZTrdHSnCVchs1Aku5og81FLX20QKLhQM5xGRtTVN3NZUSw"
         }
       ]
     },
     {
-      "query": "gabriel lorenco",
+      "query": "motor city",
       "approx_searches": "200+",
-      "published_at": "2026-11-07T22:10:00Z",
+      "published_at": "2026-11-07T22:30:00Z",
       "related_news_urls": [
-        "https://www.ufc.com/video/161633",
-        "https://sports.yahoo.com/articles/thomas-petersen-vs-gabriel-lorenco-161002458.html",
-        "https://dknetwork.draftkings.com/2026/11/07/prediction-pick-for-gabriel-lorenco-vs-thomas-petersen-ufc-vegas-124/"
+        "https://movieweb.com/motor-city-alan-ritchson-stream-amc-november-2026/",
+        "https://decider.com/2026/11/06/motor-city-amc-review-stream-it-or-skip-it/",
+        "https://blog.reelgood.com/en-au/how-to-watch-motor-city-in-australia"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuvMNLW5U_iVUpR3svrcYPE5_1qquwWcgrDiDJxvZzZJXzSAVN2uxzf7yY_dc",
-      "image_credit": "UFC.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlLhRzw041oxneNGgpinhxXADxohrpu_31kwoLgUFI3IKLHmUyQzyaMf25YSA",
+      "image_credit": "MovieWeb",
       "news": [
         {
-          "url": "https://www.ufc.com/video/161633",
-          "title": "Gabriel Lorenço: 'We Came Here To Make History' | UFC Fight Night: Cortes Acosta vs Walker",
-          "publisher": "UFC.com",
+          "url": "https://movieweb.com/motor-city-alan-ritchson-stream-amc-november-2026/",
+          "title": "Alan Ritchson's Non-Stop 103-Minute Action Thriller Takes Over Streaming in Just 1 Day",
+          "publisher": "MovieWeb",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuvMNLW5U_iVUpR3svrcYPE5_1qquwWcgrDiDJxvZzZJXzSAVN2uxzf7yY_dc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlLhRzw041oxneNGgpinhxXADxohrpu_31kwoLgUFI3IKLHmUyQzyaMf25YSA"
         },
         {
-          "url": "https://sports.yahoo.com/articles/thomas-petersen-vs-gabriel-lorenco-161002458.html",
-          "title": "Thomas Petersen vs. Gabriel Lorenco prediction, odds, pick for UFC Vegas 124",
-          "publisher": "Yahoo Sports",
+          "url": "https://decider.com/2026/11/06/motor-city-amc-review-stream-it-or-skip-it/",
+          "title": "Stream It Or Skip It: ‘Motor City’ on AMC+, an Alan Ritchson dialogue-free action stylegasm",
+          "publisher": "Decider",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTneY-eelUZ8rG-p3OCMGsagiTZK3mS5RNVg9LH9LGH10eIQa5D71P0VOq-EdY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUCi7k4qw6iuSg40mR58QvAZLr6hrfi3m4TTHfUrmLcYY96cRQOISm2RyTaiE"
         },
         {
-          "url": "https://dknetwork.draftkings.com/2026/11/07/prediction-pick-for-gabriel-lorenco-vs-thomas-petersen-ufc-vegas-124/",
-          "title": "Prediction, pick for Gabriel Lorenco vs. Thomas Petersen UFC Vegas 124",
-          "publisher": "DraftKings Network",
+          "url": "https://blog.reelgood.com/en-au/how-to-watch-motor-city-in-australia",
+          "title": "How to watch Motor City in Australia",
+          "publisher": "UpNext by Reelgood",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwkaht_pDnhgMxkRGflsY_352lwsYwBn09U-PpHbM0woYKmGeHHqTN7fRe_g8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2CqIjYODpkFptqFdK2FmxO3uljST0AEOg8dztH6WDDQ7a3hKCv7Qy7eeaeHI"
         }
       ]
     },
     {
-      "query": "lucas fernando",
+      "query": "green bay packers practice squad promotion",
       "approx_searches": "200+",
-      "published_at": "2026-11-07T22:10:00Z",
+      "published_at": "2026-11-07T22:30:00Z",
       "related_news_urls": [
-        "https://www.ufc.com/video/161618",
-        "https://mmajunkie.usatoday.com/story/sports/ufc/2026/11/07/billy-elekana-vs-lucas-fernando-ufc-vegas-124-prediction-expert-pick/92654191007/",
-        "https://www.sherdog.com/news/news/Billy-Elekana-wants-to-be-UFCs-next-Charles-Oliveira-targets-twister-203510"
+        "https://www.patriots.com/news/patriots-activate-wr-mack-hollins-to-the-53-man-roster",
+        "https://nypost.com/2026/11/06/sports/raiders-run-defense-faces-big-time-49ers-test/",
+        "https://www.espn.com/nfl/recap/_/gameId/401873029"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPlR8-2YVpAYOCeTKyRHkAjDja55_unZ0NdkBR1NcjPgEZbwqiENjNYyKEEr8",
-      "image_credit": "UFC.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlrIc6y3ptLdYmJtS5pmTxeYTO1UneZaB7siXIYpWwatHPs1sBu0EcVq5lpII",
+      "image_credit": "Patriots.com",
       "news": [
         {
-          "url": "https://www.ufc.com/video/161618",
-          "title": "Billy Elekana: 'I'm Trying To Be The Charles Oliveira Of Light Heavyweight' | UFC Fight Night: Cortes Acosta vs Walker",
-          "publisher": "UFC.com",
+          "url": "https://www.patriots.com/news/patriots-activate-wr-mack-hollins-to-the-53-man-roster",
+          "title": "Patriots Activate WR Mack Hollins to the 53-Man Roster",
+          "publisher": "Patriots.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPlR8-2YVpAYOCeTKyRHkAjDja55_unZ0NdkBR1NcjPgEZbwqiENjNYyKEEr8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlrIc6y3ptLdYmJtS5pmTxeYTO1UneZaB7siXIYpWwatHPs1sBu0EcVq5lpII"
         },
         {
-          "url": "https://mmajunkie.usatoday.com/story/sports/ufc/2026/11/07/billy-elekana-vs-lucas-fernando-ufc-vegas-124-prediction-expert-pick/92654191007/",
-          "title": "Billy Elekana vs. Lucas Fernando prediction, pick, start time, odds for UFC Fight Night 293",
-          "publisher": "MMA Junkie",
+          "url": "https://nypost.com/2026/11/06/sports/raiders-run-defense-faces-big-time-49ers-test/",
+          "title": "49ers won’t let Raiders off hook after Jets’ inexplicable unforced error",
+          "publisher": "New York Post",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSn_P6kG4vu2ZqtX2agu1fCyQt9Qspwb5Og1qNCmQc5CK26GNKtC66ZjtLrLk0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLMdZew9r4mUtyzKwdTNK3JGKMHqfV9IbR1sKgJvVfuwg5u10IiTNr-W__CaU"
         },
         {
-          "url": "https://www.sherdog.com/news/news/Billy-Elekana-wants-to-be-UFCs-next-Charles-Oliveira-targets-twister-203510",
-          "title": "Billy Elekana wants to be UFC's next Charles Oliveira, targets twister",
-          "publisher": "Sherdog",
+          "url": "https://www.espn.com/nfl/recap/_/gameId/401873029",
+          "title": "Raiders 38-33 Jets (Nov 1, 2026) Game Recap",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3VD-epyhXOycYs1a8_MVcVfjws1XVXakoKowdUa04JZxBpU1X3UenFCDtgyE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5rjhuFTf6SNp89hpw1dRcgraF9NswX4nJXkYlMdwdcNCA3-qlYP9kG0R2jRk"
         }
       ]
     },
     {
-      "query": "karine silva",
+      "query": "ana silvia garza",
       "approx_searches": "200+",
-      "published_at": "2026-11-07T22:10:00Z",
+      "published_at": "2026-11-07T22:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/karine-silva-vs-gabriella-fernandes-160847160.html",
-        "https://sports.betmgm.com/en/blog/ufc/vegas-124-karine-silva-gabriella-fernandes-predictions-odds-bm05/",
-        "https://dknetwork.draftkings.com/2026/11/07/prediction-pick-for-karine-silva-vs-gabriella-fernandes-at-ufc-vegas-124/"
+        "https://www.univision.com/famosos/ana-silvia-garza-ayuda-mama-mariana-garza-abuela-maria-perroni",
+        "https://www.infobae.com/mexico/2026/11/07/mariana-garza-pide-donadores-de-sangre-urgentes-para-su-madre-la-actriz-ana-silvia-tras-delicada-crisis-de-salud-pulmonar/",
+        "https://www.ejecentral.com.mx/nuestro-eje/ana-silvia-garza-madre-de-mariana-garza-enfrenta-problemas-de-salud-piden-donadores-de-sangre-y-plaquetas"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8Yx_J355suqUSj-RZ9h23fvBhlJ0C-lH91vHhv5uZQ8E34L1EdCzHb81eGEk",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_KyF20I66GbEFCzK3jKacU468URHpBMr8UQRQxtjF12p9QOsI1WcNt3IytwI",
+      "image_credit": "Univision",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/karine-silva-vs-gabriella-fernandes-160847160.html",
-          "title": "Karine Silva vs. Gabriella Fernandes prediction, odds, pick for UFC Vegas 124",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.univision.com/famosos/ana-silvia-garza-ayuda-mama-mariana-garza-abuela-maria-perroni",
+          "title": "Piden ayuda para la actriz Ana Silvia Garza, mamá de Mariana Garza y abuela de María Perroni",
+          "publisher": "Univision",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8Yx_J355suqUSj-RZ9h23fvBhlJ0C-lH91vHhv5uZQ8E34L1EdCzHb81eGEk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_KyF20I66GbEFCzK3jKacU468URHpBMr8UQRQxtjF12p9QOsI1WcNt3IytwI"
         },
         {
-          "url": "https://sports.betmgm.com/en/blog/ufc/vegas-124-karine-silva-gabriella-fernandes-predictions-odds-bm05/",
-          "title": "UFC Vegas 124: Karine Silva vs. Gabriella Fernandes Predictions & Odds",
-          "publisher": "sports.betmgm.com",
+          "url": "https://www.infobae.com/mexico/2026/11/07/mariana-garza-pide-donadores-de-sangre-urgentes-para-su-madre-la-actriz-ana-silvia-tras-delicada-crisis-de-salud-pulmonar/",
+          "title": "Mariana Garza pide donadores de sangre urgentes para su madre, la actriz Ana Silvia, tras delicada crisis de salud pulmonar",
+          "publisher": "Infobae",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_dOTCdf_9PSUPYsmgiQ5Zc9ifmitJAKUQ5WkId6uJuMe84Rm-oWjgwwWnpGA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYlRvi3CZyUAmvjdL8mBVT1pR_T469B77H_h1S9ID9Gd5fAEnGOvHlzu-AZCU"
         },
         {
-          "url": "https://dknetwork.draftkings.com/2026/11/07/prediction-pick-for-karine-silva-vs-gabriella-fernandes-at-ufc-vegas-124/",
-          "title": "Prediction, pick for Karine Silva vs. Gabriella Fernandes at UFC Vegas 124",
-          "publisher": "DraftKings Network",
+          "url": "https://www.ejecentral.com.mx/nuestro-eje/ana-silvia-garza-madre-de-mariana-garza-enfrenta-problemas-de-salud-piden-donadores-de-sangre-y-plaquetas",
+          "title": "Ana Silvia Garza, madre de Mariana Garza, enfrenta problemas de salud; piden donadores de sangre y plaquetas",
+          "publisher": "Eje Central",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTetelw7gvwM8LVbGprIAlmg6x2yHTU1WBiFcEXEGqDQspCXgeEDyvTkkaiT54"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgxRAsTirxBWyoUvKqXsLfklN3YWh01VXfoq5loeSFG4jHVgKxUFc76KSv2aE"
         }
       ]
     },
     {
-      "query": "sonny gray",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T22:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/sonny-gray-75m-deal-pairs-173013343.html",
-        "https://heavy.com/sports/mlb/atlanta-braves/braves-sonny-gray-free-agent-prediction/",
-        "https://sportsnaut.com/mlb/atlanta-braves-max-fried-trade-speculation"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSg23YaxOxmG--R5HlLlRhCQBmtRTbxusovP41oP6K7NaSSEtnrh5z5kG1vy40",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/sonny-gray-75m-deal-pairs-173013343.html",
-          "title": "Sonny Gray’s $75M Deal Pairs With Chris Sale In Atlanta",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSg23YaxOxmG--R5HlLlRhCQBmtRTbxusovP41oP6K7NaSSEtnrh5z5kG1vy40"
-        },
-        {
-          "url": "https://heavy.com/sports/mlb/atlanta-braves/braves-sonny-gray-free-agent-prediction/",
-          "title": "Braves Predicted to Land 3-Time All-Star on $50 Million Deal",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkfv1d7XCEzdO9rGgnDtct0CNF_hwslUrZlbXUs0naHMiHuXTL6i-vWl7dRFI"
-        },
-        {
-          "url": "https://sportsnaut.com/mlb/atlanta-braves-max-fried-trade-speculation",
-          "title": "New Report Opens Door for Atlanta Braves to Reunite With 3-Time All-Star in Blockbuster Trade",
-          "publisher": "Sportsnaut",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHB6vfOqOMZFyg9fFlCu_mbwTcuP7kd4YIzRLvWlKoRILybtqaQgOiQz85Soo"
-        }
-      ]
-    },
-    {
-      "query": "israeli elections netanyahu",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-07T22:00:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/07/middleeast/eisenkot-israel-government-latam-intl",
-        "https://www.npr.org/2026/11/07/nx-s1-6032606/israeli-president-invites-netanyahus-opposition-leader-to-broker-new-government",
-        "https://www.theguardian.com/world/2026/nov/07/israel-president-gadi-eisenkot-form-government"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTEmrOL09H3qlJ7nVt0tGO7uzsWwQhtIYACDptuJnvJXP30H4kJs37EDbTlNE",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/07/middleeast/eisenkot-israel-government-latam-intl",
-          "title": "In setback to Netanyahu, rival Eisenkot to be tasked with forming next Israeli government. But the path remains complicated",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTEmrOL09H3qlJ7nVt0tGO7uzsWwQhtIYACDptuJnvJXP30H4kJs37EDbTlNE"
-        },
-        {
-          "url": "https://www.npr.org/2026/11/07/nx-s1-6032606/israeli-president-invites-netanyahus-opposition-leader-to-broker-new-government",
-          "title": "Israeli president invites Netanyahu's opposition leader to broker new government",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://www.theguardian.com/world/2026/nov/07/israel-president-gadi-eisenkot-form-government",
-          "title": "Israel’s president picks Yashar leader Gadi Eisenkot to form government",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmyNkze8WKteAkLDFCz5QX-7RKpwfA7Bo_LBDsMwVYcimIi4H2ekx5Hdz98sk"
-        }
-      ]
-    },
-    {
-      "query": "judge",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T22:00:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/07/politics/golf-course-judge-investigate-violations",
-        "https://www.washingtonpost.com/politics/2026/11/07/judge-taps-ex-prosecutor-probe-lawyer-conduct-trump-golf-course-fight/",
-        "https://www.theguardian.com/us-news/2026/nov/07/trump-east-potomac-golf-course-lawsuit"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeb8qdwSh6t7D0QS31yZm02lCX2KY_P-N98IUBEtMKxwaK0MyaIiT5oHsAibY",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/07/politics/golf-course-judge-investigate-violations",
-          "title": "Judge expected to tap former US attorney to investigate possible ‘ethical violations’ by Trump admin lawyers in case",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeb8qdwSh6t7D0QS31yZm02lCX2KY_P-N98IUBEtMKxwaK0MyaIiT5oHsAibY"
-        },
-        {
-          "url": "https://www.washingtonpost.com/politics/2026/11/07/judge-taps-ex-prosecutor-probe-lawyer-conduct-trump-golf-course-fight/",
-          "title": "Judge taps ex-prosecutor to probe lawyer conduct in Trump golf course fight",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVIl6R9gyhsPq-X7eI2-zFt6XwV8oWCBkCXAf_RM7-ZJ_6729wv02rbpkMbwQ"
-        },
-        {
-          "url": "https://www.theguardian.com/us-news/2026/nov/07/trump-east-potomac-golf-course-lawsuit",
-          "title": "Judge to appoint special master to determine whether Trump lawyers purposely misled her over golf course",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtzGsZ7mBbK1hwh3htE2NHtfmX5OK6-Lk3d8VOJ-RWZ15oYjGlSjBBe2eL1fo"
-        }
-      ]
-    },
-    {
-      "query": "iowa vs northwestern",
+      "query": "army air force game",
       "approx_searches": "200+",
-      "published_at": "2026-11-07T22:00:00Z",
+      "published_at": "2026-11-07T22:30:00Z",
       "related_news_urls": [
-        "https://www.hawkcentral.com/story/sports/college/iowa/football/2026/11/07/iowa-northwestern-football-time-tv-channel-odds-stream/92625640007/",
-        "https://www.blackheartgoldpants.com/football/71970/iowa-hawkeyes-football-northwestern-wildcats-game-preview",
-        "https://sports.yahoo.com/articles/northwestern-wildcats-vs-iowa-hawkeyes-180015757.html"
+        "https://www.foxnews.com/outkick-sports/army-student-displays-hilarious-communism-sign-ahead-game-against-air-force",
+        "https://www.cbssports.com/college-football/news/army-air-force-live-updates-score-college-football-week-10/live/",
+        "https://gazette.com/2026/11/06/how-to-watch-air-force-at-army-with-cic-trophy-on-the-line/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1Vk2rcf-bsdKiLrkIo2luSrx2Nuy5wPLdTt9kryU3_FaCmQ1C3xB4-S9mwDI",
-      "image_credit": "Hawk Central",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1ElNFKOxKFrtK5upvxQnxMr7hwL-9yI6HroCeotYQeiNSvoezTVVgm2tFw2E",
+      "image_credit": "Fox News",
       "news": [
         {
-          "url": "https://www.hawkcentral.com/story/sports/college/iowa/football/2026/11/07/iowa-northwestern-football-time-tv-channel-odds-stream/92625640007/",
-          "title": "How to watch Iowa football vs Northwestern, time, TV channel, odds",
-          "publisher": "Hawk Central",
+          "url": "https://www.foxnews.com/outkick-sports/army-student-displays-hilarious-communism-sign-ahead-game-against-air-force",
+          "title": "Army student displays hilarious 'communism' sign ahead of game against Air Force",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1Vk2rcf-bsdKiLrkIo2luSrx2Nuy5wPLdTt9kryU3_FaCmQ1C3xB4-S9mwDI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1ElNFKOxKFrtK5upvxQnxMr7hwL-9yI6HroCeotYQeiNSvoezTVVgm2tFw2E"
         },
         {
-          "url": "https://www.blackheartgoldpants.com/football/71970/iowa-hawkeyes-football-northwestern-wildcats-game-preview",
-          "title": "Iowa Hawkeyes Football: Northwestern Wildcats Game Preview",
-          "publisher": "Black Heart Gold Pants",
+          "url": "https://www.cbssports.com/college-football/news/army-air-force-live-updates-score-college-football-week-10/live/",
+          "title": "Army vs. Air Force live updates: Black Knights, Falcons clash in next leg of Commander-in-Chief's Trophy",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzGh9qP7-nkKtv0f0TFGOiHDnv8-P9AjgsGi5YAY-gHQyGxMba-_zwiRCyllk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROMTECxs2fbXbJLp3hYrlBJYBTESw-KfMxW9uUe866ppLESvDZJ3QOcIaAt1s"
         },
         {
-          "url": "https://sports.yahoo.com/articles/northwestern-wildcats-vs-iowa-hawkeyes-180015757.html",
-          "title": "Northwestern Wildcats vs. Iowa Hawkeyes: Week 10 Predictions",
-          "publisher": "Yahoo Sports",
+          "url": "https://gazette.com/2026/11/06/how-to-watch-air-force-at-army-with-cic-trophy-on-the-line/",
+          "title": "How to watch Air Force at Army with CIC Trophy on the line",
+          "publisher": "Colorado Springs Gazette",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmPk5srTUBIgx0GUC52RVtadANuiV9ohdIgULJxFYRTVl-wR-dS-PSu6Kk6vU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBK7sLeraCkxJGgAPF_gqIji7BSLLz_ZF7V5ROqYLISnFoFTnleoEvVSJebM0"
+        }
+      ]
+    },
+    {
+      "query": "boa san antonio 2026",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T22:30:00Z",
+      "related_news_urls": [
+        "https://www.flomarching.com/articles/16348719-boa-san-antonio-super-regional-2026-scores-preliminary-results",
+        "https://news4sanantonio.com/news/local/photos-bands-of-america-brings-marching-bands-from-across-the-country-to-the-alamodome",
+        "https://www.sa.gov/Directory/News-Releases/Make-a-Plan-for-Major-Downtown-Events-on-Saturday-November-7"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTTrBQ4HAdjc5Ut1KeuxXMwTfJqX9jsGRo8WTmhOB392l9C_EEXJwQnkgD7FI",
+      "image_credit": "FloMarching",
+      "news": [
+        {
+          "url": "https://www.flomarching.com/articles/16348719-boa-san-antonio-super-regional-2026-scores-preliminary-results",
+          "title": "BOA San Antonio Super Regional 2026 Scores: Preliminary Results Are In",
+          "publisher": "FloMarching",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTTrBQ4HAdjc5Ut1KeuxXMwTfJqX9jsGRo8WTmhOB392l9C_EEXJwQnkgD7FI"
+        },
+        {
+          "url": "https://news4sanantonio.com/news/local/photos-bands-of-america-brings-marching-bands-from-across-the-country-to-the-alamodome",
+          "title": "PHOTOS: Bands of America brings marching bands from across the country to The Alamodome!",
+          "publisher": "WOAI",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPWovTr0EUo6DwPPR3S7O0bBUyZbb7udBLkexQZDMJMuo-qcj4-p9EbEzzih8"
+        },
+        {
+          "url": "https://www.sa.gov/Directory/News-Releases/Make-a-Plan-for-Major-Downtown-Events-on-Saturday-November-7",
+          "title": "Make a Plan for Major Downtown Events on Saturday, November 7",
+          "publisher": "City of San Antonio (.gov)",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFa8hWvPfYLtOUgKSTfdj6ppvYF6sVrGYhOohVzrQagmRnIeJ9vC1Bdr8NK78"
         }
       ]
     }
