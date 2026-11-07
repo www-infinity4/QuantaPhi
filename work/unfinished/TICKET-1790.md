@@ -1,3 +1,29 @@
+---
+issue: 1790
+project: "Developer carousel — five real site-building Quick Cards"
+state: implementing
+dot: "🟡"
+progress_percent: unknown
+progress_basis: "Five original builders staged; focused 3/3 tests green; browser and release checks under repair"
+sessions_spent: 2
+sessions_remaining_estimate: unknown
+agent: "GPT / Green engineering and Pink test review"
+lease_id: null
+lease_expires_at: null
+task_session_id: null
+fence: null
+repo: www-infinity4/QuantaPhi
+branch: feat/developer-carousel-1790
+head_sha: 844b6946bd297b13a68970d7e6aad39a8b96f692
+last_observed_at_utc: "2026-11-07"
+pr: "https://github.com/www-infinity4/QuantaPhi/pull/1791"
+tests: "Focused CI 42361280373: 3 passed; ledger and browser regressions being fixed"
+merged: false
+deployed: false
+live_verified: false
+blocker: "Exact-head regression checks and Android browser acceptance pending; review bot quota exhausted"
+next_action: "Fix checkpoint/browser test regressions; run exact-head CI and independent browser checks before merge"
+---
 # Developer carousel — issue #1790
 
 - **Canonical issue:** https://github.com/www-infinity4/QuantaPhi/issues/1790
