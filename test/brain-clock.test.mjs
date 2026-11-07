@@ -39,7 +39,7 @@ const colorCoreUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(
 const assignedJobScopeUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/assigned-job-scope.mjs',import.meta.url))).toString('base64');
 const ownerAuditDraftUrl='data:text/javascript;base64,'+Buffer.from((await fs.readFile(new URL('../workers/infinity-brain-clock/owner-audit-draft.mjs',import.meta.url),'utf8')).replace('./conversation-work-audit.mjs',new URL('../workers/infinity-brain-clock/conversation-work-audit.mjs',import.meta.url).href)).toString('base64');
 const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./continuity-snapshot.mjs",new URL("../workers/infinity-brain-clock/continuity-snapshot.mjs",import.meta.url).href).replace("./color-core.mjs",colorCoreUrl).replace("./assigned-job-scope.mjs",assignedJobScopeUrl).replace("./technical-handoff.mjs",handoffUrl).replace('./source-review.mjs',sourceReviewUrl).replace("./phone-tool.mjs",phoneUrl).replace("./conversation-memory.mjs",conversationUrl).replace('./owner-audit-draft.mjs',ownerAuditDraftUrl).replace("./red-sectors.mjs",redUrl).replace("./alarm-retry.mjs",alarmUrl).replace("./owner-task-clock.mjs",clockUrl).replace("./autopilot-triage.mjs",autopilotUrl).replace("./agent-skills.mjs",agentSkillsUrl).replace("./runner-request.mjs",runnerRequestUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./ticket-selector.mjs',selectorUrl).replace('./runner-claim-idle.mjs',runnerIdleUrl).replace('./deferred-recovery.mjs',recoveryUrl).replace('./ticket-status.mjs',ticketStatusUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
-const {default:brainWorker,BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source.replace('./quick-card-browser.mjs',new URL('../workers/infinity-brain-clock/quick-card-browser.mjs',import.meta.url).href).replace('./direct-github.mjs',directGithubUrl).replace('./github-credential.mjs',credentialUrl).replace('./cloudflare-token-broker.mjs',cloudflareBrokerUrl).replace('./cloudflare-oauth-bootstrap.mjs',cloudflareBootstrapUrl).replace('./merge-receipt.mjs',mergeUrl)).toString('base64'));
+const {default:brainWorker,BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source.replace('./runner-progress.mjs',new URL('../workers/infinity-brain-clock/runner-progress.mjs',import.meta.url).href).replace('./quick-card-browser.mjs',new URL('../workers/infinity-brain-clock/quick-card-browser.mjs',import.meta.url).href).replace('./direct-github.mjs',directGithubUrl).replace('./github-credential.mjs',credentialUrl).replace('./cloudflare-token-broker.mjs',cloudflareBrokerUrl).replace('./cloudflare-oauth-bootstrap.mjs',cloudflareBootstrapUrl).replace('./merge-receipt.mjs',mergeUrl)).toString('base64'));
 test('quick-card browser HTTP route denies guests and wrong origins before forwarding',async()=>{
  let forwarded=0;
  const owner='quick-card-synthetic-owner',hash=Buffer.from(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(owner))).toString('hex');
@@ -814,4 +814,70 @@ test('signed Bubbles continuation lists older ready work ahead of blocked backlo
  assert.doesNotMatch(queries[1].sql,/CASE status/);
  assert.deepEqual(queries[1].params,[ownerHash]);
  assert.equal(JSON.stringify(r).includes('Bearer'),false);
+});
+
+test('the owner progress endpoint serves only the selected ticket and originating conversation',async()=>{
+ const id='IW-20261104-ABCD1234',threadId='chat_'+'a'.repeat(32),token='fixture-owner-token';
+ const hash=Buffer.from(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(token))).toString('hex');
+ const row={id,repository:'www-infinity4/QuantaPhi',status:'working',context_json:JSON.stringify({
+  iteration_thread:threadId,card_workspace:{private:'excluded'},color_jobs:[{
+   id:'TASK-1',repository:'www-infinity4/QuantaPhi',status:'working',instructions:'excluded job instructions'}]})};
+ let readCount=0;
+ const env={WRITER_OWNER_HASH:hash,WORK_DB:{prepare(sql){
+  assert.match(sql,/WHERE id=\? AND owner_hash=\?/);
+  return {bind(ticketId,owner){return {async first(){readCount++;return ticketId===id&&owner===hash?row:null;}}}};
+ }}};
+ const read=(thread,auth=token)=>brainWorker.fetch(new Request('https://brain.test/work/tickets/list',{
+  method:'POST',headers:{Authorization:'Bearer '+auth,'Content-Type':'application/json',Origin:'https://quantaphi.org'},
+  body:JSON.stringify({iteration:{ticketId:id,threadId:thread}})
+ }),env);
+ assert.equal((await read(threadId,'wrong')).status,404);
+ assert.equal(readCount,0);
+ assert.equal((await read('chat_'+'b'.repeat(32))).status,404);
+ const response=await read(threadId);
+ assert.equal(response.status,200);
+ assert.equal(response.headers.get('Cache-Control'),'no-store');
+ const text=await response.text();
+ assert.deepEqual(JSON.parse(text).tickets.map(ticket=>ticket.id),[id]);
+ assert.doesNotMatch(text,/excluded/);
+});
+
+test('the authenticated runner path persists in-flight steps only for its current lease and revision',async()=>{
+ const ticketId='IW-20261104-ABCD1234',repository='www-infinity4/QuantaPhi';
+ const job={id:'TASK-1',repository,instructions:'Repair the session page',acceptance:['Run the focused check'],status:'working',
+  progress:{runUrl:'https://github.com/www-infinity4/Moltnook/actions/runs/42'}};
+ const revision=Buffer.from(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify({
+  instructions:job.instructions,acceptance:job.acceptance,repository})))).toString('hex');
+ let context=JSON.stringify({color_jobs:[job]}),writes=0;
+ const owner='synthetic-owner';
+ const env={WRITER_OWNER_HASH:owner,WORK_DB:{prepare(sql){return {bind(...args){
+  if(sql.startsWith('SELECT'))return {first:async()=>{
+   assert.deepEqual(args,[ticketId,owner]);return {context_json:context};
+  }};
+  return {run:async()=>{
+   assert.deepEqual(args.slice(2),[ticketId,owner,context]);
+   writes++;context=args[0];return {meta:{changes:1}};
+  }};
+ }}}}};
+ const lease={key:'key',leaseId:'current',runId:'42',runAttempt:2,engine:true,leaseUntil:Date.now()+60000,
+  ticketId,jobId:job.id,repository,revision,job};
+ const records=new Map([['key',lease]]);
+ const clock=new BrainClock({storage:{get:async key=>records.get(key),put:async(key,value)=>records.set(key,value)}},env);
+ const send=(phase,attempt,overrides={})=>clock.runner(new Request('https://clock/runner/event',{
+  method:'POST',body:JSON.stringify({key:lease.key,leaseId:lease.leaseId,runId:lease.runId,runAttempt:'2',
+   runnerRepository:'www-infinity4/Moltnook',agent:'blueberry',step:{phase,attempt},...overrides})
+ }));
+ assert.equal((await send('discovery_started',0,{runAttempt:'1'})).status,409);
+ assert.equal((await send('discovery_started',0,{leaseId:'stale'})).status,409);
+ assert.equal(writes,0);
+ assert.equal((await send('discovery_started',0)).status,200);
+ await send('discovery_started',0);
+ await send('planning_started',0);
+ assert.equal(writes,2);
+ const saved=JSON.parse(context).color_jobs[0];
+ assert.equal(saved.status,'working');
+ assert.deepEqual(saved.progress.runnerSteps.map(step=>step.phase),['discovery_started','planning_started']);
+ saved.instructions='A different revision';context=JSON.stringify({color_jobs:[saved]});
+ await send('source_read',0);
+ assert.equal(writes,2);
 });

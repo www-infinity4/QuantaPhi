@@ -217,6 +217,7 @@ export class BrainClock extends DurableObject{
  }
  async runner(request){
   const body=await request.json(),runId=body.runId;
+  const runAttempt=/^[1-9][0-9]{0,3}$/.test(body.runAttempt||'')?Number(body.runAttempt):1;
   const engine=body.runnerRepository==='www-infinity4/Moltnook';
   const runUrl='https://github.com/'+(engine?'www-infinity4/Moltnook':'www-infinity4/QuantaPhi')+'/actions/runs/'+runId;
   const path=new URL(request.url).pathname;
@@ -319,7 +320,7 @@ export class BrainClock extends DurableObject{
      const deps=effectiveDependencies.map(id=>jobs.find(j=>j.id===id)||{status:'missing_dependency'});
      const eligibility=checkOwnerRunnerRequest(job,{now:Date.now(),prior:previous,lease:repositoryLease,deps});
      if(!eligibility.eligible){noteRunnerSkip(claimBlockedBy,eligibility.reason);if(eligibility.reason==='dependency_pending')noteRunnerDependencyStatuses(dependencyStates,jobs,effectiveDependencies);continue;}
-     const lease={adapterVersion:VERSION,key,ticketId:ticket.id,jobId:job.id,revision,runId,leaseId:crypto.randomUUID(),leaseUntil:Date.now()+(engine?40:20)*60*1000,status:'claimed',job:previous?.commitSha?{...job,progress:{...job.progress,commitSha:previous.commitSha}}:job};
+     const lease={adapterVersion:VERSION,key,ticketId:ticket.id,jobId:job.id,revision,runId,runAttempt,leaseId:crypto.randomUUID(),leaseUntil:Date.now()+(engine?40:20)*60*1000,status:'claimed',job:previous?.commitSha?{...job,progress:{...job.progress,commitSha:previous.commitSha}}:job};
      const quantIndex=await this.ctx.storage.get('job-quant-index')||[];
      const memories=[];for(const item of quantIndex.filter(q=>q.repository===job.repository).slice(0,5)){const q=await this.ctx.storage.get(item.id);if(q)memories.push(q);}
      let experientialMemory=[];
@@ -372,7 +373,7 @@ export class BrainClock extends DurableObject{
    if(!quant||quant.repository!==lease.repository||!quant.attempts.some(a=>a.runUrl===runUrl)||latest.filter(q=>q.id===id).length!==1)throw Error('durable_quant_readback_failed');
    return Response.json({ok:true,quantId:id,status:quant.status,durableReadback:true,latestFiveContains:true,attemptCount:quant.attempts.length,repository:quant.repository,runUrl});
   }
-  if(!lease||lease.runId!==runId||lease.leaseId!==body.leaseId||lease.leaseUntil<Date.now())return Response.json({ok:false,error:'writer_lease_rejected',adapter:VERSION,path},{status:409});
+  if(!lease||lease.runId!==runId||(lease.runAttempt||1)!==runAttempt||lease.leaseId!==body.leaseId||lease.leaseUntil<Date.now())return Response.json({ok:false,error:'writer_lease_rejected',adapter:VERSION,path},{status:409});
   if(path==='/runner/result'&&body.status==='source_verified')return this.acceptSourceReview({lease,body,runUrl,engine});
   const message=String(body.message||'').slice(0,390);
   if(path==='/runner/event'){
@@ -381,6 +382,29 @@ export class BrainClock extends DurableObject{
    await this.ctx.storage.put(lease.key,lease);
    await this.ctx.storage.put('repository-lease:'+lease.repository,lease);
    if(/^[a-f0-9]{40}$/.test(body.commitSha||'')){lease.commitSha=body.commitSha;await this.ctx.storage.put(lease.key,lease);}
+   if(engine&&lease.engine&&body.step){
+    // Project signed events onto the claimed owner ticket, with the same
+    // revision/run boundary as the eventual result. Progress never advances
+    // the job state or authorizes a write.
+    try{
+     const {appendRunnerStep}=await import('./runner-progress.mjs');
+     const db=this.env.WORK_DB,owner=this.env.WRITER_OWNER_HASH;
+     for(let i=0;i<3;i++){
+      const row=await db.prepare('SELECT context_json FROM work_tickets WHERE id=? AND owner_hash=?').bind(lease.ticketId,owner).first();
+      if(!row)break;
+      const context=JSON.parse(row.context_json);
+      const job=context.color_jobs?.find(job=>job.id===lease.jobId);
+      if(job?.status!=='working'||job.repository!==lease.repository||
+       await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}))!==lease.revision)break;
+      const progress=appendRunnerStep(job.progress,body.step,lease.repository,runUrl,runAttempt);
+      if(!progress)break;
+      job.progress=progress;
+      const saved=await db.prepare('UPDATE work_tickets SET context_json=?,updated_at=? WHERE id=? AND owner_hash=? AND context_json=?')
+       .bind(JSON.stringify(context),Date.now(),lease.ticketId,owner,row.context_json).run();
+      if(saved.meta?.changes===1)break;
+     }
+    }catch{/* A missed progress observation must not abort actual execution. */}
+   }
    await this.emit(['gold-diggers-ink','blueberry','greenbeans','pink-panther','gpt-purple'].includes(body.agent)?body.agent:'greenbeans','gpt-purple','repair progress',lease.job.repository+' · '+message,runUrl);
    return Response.json({ok:true});
   }
@@ -1133,6 +1157,7 @@ export async function readRunnerBody(request, pathname){
  * a new anonymous owner_token in the browser: those tickets never dispatch. */
 export async function ownerTickets(env,path,body){
  const denied=(error,status=400)=>({status,result:{ok:false,error}});
+ const iterationThread=/^chat_[a-f0-9]{32}$/;
  const ownerHash=env.WRITER_OWNER_HASH;
  if(!/^[a-f0-9]{64}$/.test(ownerHash||''))return denied('brain_owner_partition_not_configured',503);
  const db=env.WORK_DB;
@@ -1152,6 +1177,20 @@ export async function ownerTickets(env,path,body){
  }
  if(path==='/work/continuity')return ownerContinuitySnapshot(db,ownerHash,body);
  if(path==='/work/tickets/list'){
+  if(Object.hasOwn(body||{},'iteration')){
+   const {ticketId,threadId}=body.iteration||{};
+   if(typeof ticketId!=='string'||!/^IW-[0-9]{8}-[A-Z0-9]{8}$/.test(ticketId)||
+    typeof threadId!=='string'||!iterationThread.test(threadId))
+    return denied('invalid_iteration_scope');
+   const row=await db.prepare('SELECT * FROM work_tickets WHERE id=? AND owner_hash=?').bind(ticketId,ownerHash).first();
+   const ticket=publicTicket(row);
+   if(ticket?.context?.iteration_thread!==threadId)return denied('owner_ticket_not_found',404);
+   const jobs=(Array.isArray(ticket.context.color_jobs)?ticket.context.color_jobs:[]).filter(Boolean).map(job=>({
+    id:job.id,repository:job.repository,title:job.title,agent:job.agent,status:job.status,progress:job.progress
+   }));
+   return {status:200,result:{ok:true,tickets:[{id:ticket.id,repository:ticket.repository,status:ticket.status,
+    context:{iteration_thread:threadId,color_jobs:jobs}}]}};
+  }
   // Bubbles ordinary work history stays unchanged. A signed owner continuation
   // needs an older eligible ticket even after 100 more-recent blocked updates.
   // Read-only selection preserves the same owner_hash partition, and the later
@@ -1291,6 +1330,8 @@ export async function ownerTickets(env,path,body){
   const request=ownerDraft?.request??(typeof body.request==='string'?body.request.trim().slice(0,12000):'');
   const title=ownerDraft?.title??(typeof body.title==='string'?body.title.trim().slice(0,180):'');
   const context=ownerDraft?.context??(body.context&&typeof body.context==='object'&&!Array.isArray(body.context)?body.context:{});
+  if(Object.hasOwn(context,'iteration_thread')&&(body.start_immediately!==true||
+   typeof context.iteration_thread!=='string'||!iterationThread.test(context.iteration_thread)))return denied('invalid_iteration_scope');
   const repository=String(ownerDraft?.repository||body.repository||context.repositories?.[0]||'www-infinity4/QuantaPhi');
   if(!/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(repository))return denied('explicit_owner_repository_required');
   context.repositories=[repository];
@@ -1329,7 +1370,7 @@ export async function ownerTickets(env,path,body){
   const submission=String(context.submission_id||'').slice(0,100);
   if(!request||context.kind!=='robot-directions')return denied('robot_directions_required');
   if(submission){
-   const old=await db.prepare("SELECT * FROM work_tickets WHERE owner_hash=? AND json_extract(context_json,'$.submission_id')=? AND repository=? LIMIT 1").bind(ownerHash,submission,repository).first();
+   const old=await db.prepare("SELECT * FROM work_tickets WHERE owner_hash=? AND json_extract(context_json,'$.submission_id')=? AND repository=? AND COALESCE(json_extract(context_json,'$.iteration_thread'),'')=? LIMIT 1").bind(ownerHash,submission,repository,context.iteration_thread||'').first();
    if(old)return existingResult(old);
   }
   const fingerprintContext={...context};delete fingerprintContext.submission_id;delete fingerprintContext.request_fingerprint;delete fingerprintContext.color_jobs;delete fingerprintContext.execution_mode;delete fingerprintContext.plan;
@@ -1343,6 +1384,7 @@ export async function ownerTickets(env,path,body){
   for(const row of legacy.results||[]){
    if(String(row.request||'').trim().replace(/\s+/g,' ')!==request.replace(/\s+/g,' '))continue;
    let saved;try{saved=JSON.parse(row.context_json)}catch{continue}
+   if((saved.iteration_thread||'')!==(context.iteration_thread||''))continue;
    if(Object.keys(fingerprintContext).every(key=>JSON.stringify(stable(saved[key]))===JSON.stringify(stable(fingerprintContext[key]))))
     return existingResult(row);
   }
@@ -1373,6 +1415,15 @@ export async function ownerTickets(env,path,body){
   if(jobs.some(job=>job.repository!==repository))return denied('ticket_repository_mismatch');
   context.repositories=[repository];
   const originalContext=JSON.parse(row.context_json||'{}');
+  if(originalContext.iteration_thread){
+   context.iteration_thread=originalContext.iteration_thread;
+   const priorJobs=originalContext.color_jobs||[];
+   context.color_jobs=jobs.map(job=>{
+    const prior=priorJobs.find(row=>row.id===job.id&&row.instructions===job.instructions&&row.repository===job.repository&&
+     JSON.stringify(row.acceptance)===JSON.stringify(job.acceptance));
+    return {...job,status:'queued',progress:prior?.progress,last_inspected_at:prior?.last_inspected_at};
+   });
+  }else delete context.iteration_thread;
   if(originalContext.request_fingerprint)context.request_fingerprint=originalContext.request_fingerprint;
   else delete context.request_fingerprint;
   const serialized=JSON.stringify(context);
@@ -1689,7 +1740,7 @@ export default{
    try{
     const identity=await authenticate(request);
     const text=await readRunnerBody(request,path);
-    const body=JSON.parse(text);body.runId=identity.run_id;body.runnerRepository=identity.repository;
+    const body=JSON.parse(text);body.runId=identity.run_id;body.runAttempt=identity.run_attempt;body.runnerRepository=identity.repository;
     return await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal'+path,{method:'POST',body:JSON.stringify(body)});
    }catch(e){return Response.json({ok:false,error:e.message},{status:e.status===413?413:401});}
   }

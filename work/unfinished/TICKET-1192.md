@@ -73,3 +73,26 @@ A fresh reviewer approved source merge with BUBBLE_BITS_ENABLED absent/OFF after
 - Focused local check: 133 tests passed. Current production was observed serving #1730 and Brain v97. This checkpoint is source tested. The new browser and Brain releases, independently read-back live repo creation, and phone acceptance are pending. No owner coordinator lease was available in this session.
 - This slice has three acceptance steps: source tests passed, exact-head CI and guarded release pending, owner chat write/readback pending. Estimated slice progress 1/3. Overall progress and remaining sessions are unknown.
 - Next action: verify the reconciled PR head in GitHub CI, then stage the exact Brain source through the existing release gate.
+
+## November 6 CT · Bubbles chat to repository repair loop
+
+- The [owner release](https://github.com/www-infinity4/Moltnook/actions/runs/42188409507) and Cloudflare deployment readback confirmed Brain v98 at 100%. The later [signed benchmark](https://github.com/www-infinity4/Moltnook/actions/runs/42255359447) passed six of ten checks. Some GitHub file reads finished while their explanations remained partial.
+- Reconciled [PR #1737](https://github.com/www-infinity4/QuantaPhi/pull/1737) with current main. Normal source-changing chat requests now use the existing signed repository runner. GitHub reads, repository creation, and explicitly selected workflows retain their existing adapters. A saved ticket still needs a runner claim and actual result.
+- The runner uses a temporary checkout at a pinned commit. It prepares exact block edits, runs focused tests, and passes bounded terminal diagnostics to the next attempt. The new progress entries use the owner ticket, run identity, and source revision to show real attempts in the chat that submitted the repair.
+- Local verification covered a real test process exiting 1 and then 0 after a corrected patch. The harness supplied the candidate edits. Production acceptance still requires a signed owner chat request with an actual runner claim, test receipt, and pull request returned to that chat.
+- State is source tested. This is one additional documented session. Overall percentage and remaining sessions are unknown. The next action is to check the updated PR heads in CI and review them for the existing guarded release.
+
+## November 6 CT · Independent release review
+
+- Independent review found a dispatch regression in QuantaPhi #1737. Preserve explicit `trigger` and `execute` requests while keeping ordinary workflow source repairs on the repository runner.
+- Independent review of Moltnook #244 reproduced parent process credential visibility with synthetic values. Repository checks now use a disposable container copy, with no network for test or build execution. Only dependency acquisition uses network access, with npm lifecycle hooks disabled. Verify the hosted isolation probe before accepting the runner change.
+- The runner verifies staged files against the reviewed patch. Screenshot archival excludes symlinks and verifies image signatures before upload.
+- State is source tested and pending final head review, guarded release, and live authenticated acceptance. No coordinator lease was claimed. The next action is to inspect the actual Docker probe and exact-head PR checks.
+
+## November 6 CT · Live Bubbles work updates
+
+- Consulted Gemini on the event contract, reload recovery, retry receipts and test isolation. Its browser could review the architecture. The exact earlier Google AI Mode response was unavailable.
+- The same owner chat now receives signed updates when repository lookup, planning, patching, review, checks and publication begin. Completed file reads show the pinned commit and bounded paths. A failed check remains visible with its exit code, and the next build uses the recorded diagnostics. Pull request progress requires successful checks on the same attempt.
+- Ticket progress is bound to the owner and originating chat. Active visible chats request one ticket every 2.5 seconds, and a same-tab reload replays saved observations. General owner notices stay in Work details and voice. The initial release uses the existing authenticated request path and introduces no new model provider or secret.
+- Focused source suites and the hosted Docker isolation probe passed. GitHub surfaced fixtures that relied on old classifier or source-review syntax. Those were corrected and require CI on the new heads.
+- State is source tested, with exact-head review, guarded release and a signed live chat repair pending. One documented session. Overall completion and remaining sessions are unknown. No coordinator lease was claimed. Next action is to verify the revised PR checks and independent review.

@@ -21,13 +21,14 @@ test('existing safe update guards preserve drafts, photos, unsaved history and l
 });
 test('reloaded first-party apps request the current Bubbles build revision',()=>{
  for(const path of ['index.html','bubbles.html','bubbles/index.html','bubbles-chrome.html'])
-  assert.match(file(path),/\/bubbles-ai\.js\?v=20261106-bubbles-google-cloudflare10/);
+  assert.match(file(path),/\/bubbles-ai\.js\?v=20261107-agent-runner2/);
 });
 test('a work receipt can resume only with a verified same-thread ticket',()=>{
  const src=file('bubbles-ai.js');
  assert.match(src,/const ACTIVE_WORK_REF='bubbles-last-active-work-v1';/);
- assert.match(src,/restored\.thread===activeThread/);
- assert.match(src,/result\.tickets\.find\(ticket=>ticket\?\.id===restored\.ticketId/);
+ assert.match(src,/pollingThread===activeThread&&ref/);
+ assert.match(src,/result\.tickets\.find\(ticket=>ticket\?\.id===ref\.ticketId&&matchesThread\(ticket\)/);
+ assert.match(src,/setInterval\(\(\)=>void pollBrainProgress\(true\),2500\)/);
  assert.match(src,/sessionStorage\.setItem\(ACTIVE_WORK_REF,/);
 });
 

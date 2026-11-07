@@ -182,3 +182,116 @@ test('owner closure phrased as "is fixed" or "we have fixed" stops stale Cardona
  const owner=curateOwnerTaskContext("We've fixed Cardonay. Stop opening that repair.",{related:[],recent:[]});
  assert.match(owner.note,/do not dispatch a Cardone repair/);
 });
+
+
+test('two-feature repairs search individual owner code terms after a compound index miss',async()=>{
+ const searches=[],reads=[],owner='www-infinity4/QuantaPhi';
+ const result=await discoverProject({
+  request:'Fix Bubbles login and microphone',
+  catalog:[owner,'www-infinity4/Moltnook'],
+  invoke:async command=>{
+   if(command.action==='search_github_code'){
+    searches.push(command.query);
+    if(command.query==='login')return {ok:true,status:'code_search_results',results:[
+     {repository:owner,path:'bubbles-login.mjs',excerpt:'Bubbles login callback state'}]};
+    if(command.query==='microphone')return {ok:true,status:'code_search_results',results:[
+     {repository:owner,path:'bubbles-microphone.mjs',excerpt:'Bubbles microphone permissions'}]};
+    return {ok:true,status:'code_search_results',results:[]};
+   }
+   if(command.action==='read_repository')return {ok:true,headSha:'b'.repeat(40)};
+   if(command.action==='read_file'){
+    reads.push(command);
+    return {ok:true,sha:'a'.repeat(40),content:'Bubbles login and microphone controls'};
+   }
+   throw Error('unexpected tool');
+  }
+ });
+ assert.ok(searches.includes('login'), 'search login independently');
+ assert.ok(searches.includes('microphone'), 'search microphone independently');
+ assert.equal(result?.repository,owner);
+ assert.ok(reads.length>0,'pin a real source read before choosing a writable target');
+ assert.equal(result.writeAuthorized,false);
+});
+
+test('brief plural repair follow-up reuses latest owner defects for read-only discovery',()=>{
+ const history=[{role:'user',text:'The Bubbles login is broken and the microphone cannot connect.'},
+  {role:'assistant',text:'I will investigate.'}];
+ const query=sourceQueryFor('Fix those two things',history);
+ assert.match(query,/Bubbles login is broken/i);
+ assert.match(query,/microphone cannot connect/i);
+ assert.equal(sourceQueryFor('Explain those two things',history),'Explain those two things');
+ assert.equal(sourceQueryFor('Fix those two things',[{role:'user',text:'The issue was fixed. Stop reopening it.'}]),'Fix those two things');
+});
+
+
+test('browser carries plural repair context to real owner source discovery and GitHub tool',()=>{
+ const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ assert.match(ui,/const contextualPluralRepair=pluralRepair&&contextualRepairQuery!==request/);
+ assert.match(ui,/if\(contextualPluralRepair&&!ownerGithubNonAction&&!requestsAgents&&!namedRecordBIssue\)directCoding=true/);
+ assert.match(ui,/const engineeringRequest=request\+\(contextualPluralRepair\?/);
+ assert.match(ui,/await suggestRepositoryTargets\(request,false\)/);
+ const index=readFileSync(new URL('../index.html',import.meta.url),'utf8');
+ const bubbles=readFileSync(new URL('../bubbles.html',import.meta.url),'utf8');
+ for(const page of [index,bubbles])assert.match(page,/bubbles-ai\.js\?v=20261107-agent-runner2/);
+});
+
+
+test('Bubbles waits for a real durable GitHub code-search receipt before deciding discovery failed',async()=>{
+ const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ const begin=ui.indexOf('async function settleGithubRead(');
+ const end=ui.indexOf('async function suggestRepositoryTargets(',begin);
+ assert.ok(begin>0&&end>begin,'shared receipt reader is defined');
+ assert.doesNotMatch(ui,/readGithubReceipt\(/,'a nonexistent receipt helper must never stop GitHub inspection');
+ const events=[];
+ const settle=new Function('directGithubOperation','githubReceipt',ui.slice(begin,end)+'\nreturn settleGithubRead;')(
+  async command=>{events.push('request:'+command.action);return {ok:true,status:'working',requestId:'verified-reader-1'};},
+  async id=>{events.push('receipt:'+id);return events.length===2
+   ?{ok:false,error:'receipt_not_found',requestId:id}
+   :{ok:true,status:'code_search_results',requestId:id,results:[{repository:'www-infinity4/QuantaPhi',path:'bubbles-ai.js'}]};}
+ );
+ const result=await settle({action:'search_github_code',mode:'read'}, {pause:async()=>{},maxChecks:4});
+ assert.equal(result.status,'code_search_results');
+ assert.equal(result.results[0].path,'bubbles-ai.js');
+ assert.deepEqual(events,['request:search_github_code','receipt:verified-reader-1','receipt:verified-reader-1']);
+ assert.match(ui,/return settleGithubRead\(operation,\{showProgress:!preview\}\);/);
+ assert.match(ui,/await settleGithubRead\(\{action:'list_repositories',mode:'read'\}\)/);
+});
+
+test('chat routes source repairs and explicit workflow operations to their own adapters',async()=>{
+ const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ const start=ui.indexOf(' else if(!embedded&&!ownerGithubNonAction&&(directRequest||githubCheck||createRepository||coderRequest||directCoding)){');
+ const end=ui.indexOf(' else if(!embedded&&(isOwnerWorkRequest(request)',start);
+ const intent=ui.slice(ui.indexOf(' const namedWorkflow='),ui.indexOf(' // Owner-named RecordB'));
+ const calls=[];
+ const run=new Function('submitRepositoryWork','directGithubOperation',
+  `return async (request,directRequest=false)=>{
+    const embedded=false,ownerGithubNonAction=false,githubCheck=false,createRepository=false,coderRequest=null;
+    ${intent}
+    const directCoding=codeTask;
+    const repoCreateQualifiers=null,neuralCoding=false,repositoryAdvice=null,imageWorkEvidence='',activeCardEvidence=null,contextualPluralRepair=false;
+    const status={};let workEvidence='';
+    const humanReplies=async()=>({workReply:t=>t.status,githubReply:r=>r.status});
+    const recordBrainNotice=()=>{},maybeDelegateDirectOverflow=async()=>null;
+    if(false){} ${ui.slice(start,end)}
+    return workEvidence;
+  }`)(
+  async (request,approval,repository)=>{calls.push(['runner',request,approval,repository]);return {status:'ready'};},
+  async args=>{calls.push(['github',args.action,args.mode,args.repository,args.workflow]);return {ok:true,status:'inspected'};}
+ );
+ const repair='Fix the login route in www-infinity4/RecordB';
+ assert.equal(await run(repair),'ready');
+ assert.equal(await run('Inspect the source in www-infinity4/RecordB',true),'inspected');
+ const workflowRepair='Fix the build.yml workflow in www-infinity4/RecordB so the check can execute';
+ assert.equal(await run(workflowRepair),'ready');
+ assert.equal(await run('Trigger build.yml in www-infinity4/RecordB'),'inspected');
+ assert.equal(await run('Please execute deploy.yml workflow in www-infinity4/RecordB'),'inspected');
+ assert.equal(await run('List the build.yml workflow in www-infinity4/RecordB'),'inspected');
+ assert.deepEqual(calls,[
+  ['runner',repair,'explicit-user-command','www-infinity4/RecordB'],
+  ['github','assist','read','www-infinity4/RecordB',undefined],
+  ['runner',workflowRepair,'explicit-user-command','www-infinity4/RecordB'],
+  ['github','dispatch_workflow','actions','www-infinity4/RecordB','build.yml'],
+  ['github','dispatch_workflow','actions','www-infinity4/RecordB','deploy.yml'],
+  ['github','list_workflows','read','www-infinity4/RecordB',undefined]
+ ]);
+});
