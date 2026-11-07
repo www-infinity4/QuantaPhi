@@ -96,7 +96,7 @@ if(root){
  const addResources=items=>{
   let first=-1;
   for(const resource of items){
-   if(!resource?.id||resourceIds.has(resource.id)||cards.length>=2010)continue;
+   if(!resource?.id||resourceIds.has(resource.id)||cards.length>=6000)continue;
    resourceIds.add(resource.id);
    if(first<0)first=cards.length;
    cards.push({id:resource.id,label:resource.label,description:resource.description,kind:'resource',resource});
