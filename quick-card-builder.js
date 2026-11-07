@@ -1,3 +1,4 @@
+import {buildWebsiteCardDraft,normalizeWebsiteInput} from '/quick-card-one-link.mjs';
 import {shareQuickCard} from '/quick-card-share.js?v=3';
 import {openQuickCardPreview} from '/quick-card-preview.mjs';
 const form=document.getElementById('quickCardCreate'),result=document.getElementById('qcpResult'),kind=document.getElementById('qcpKind');
@@ -8,7 +9,7 @@ const websiteInput=form.elements.namedItem('website'),searchInput=form.elements.
 // Explicit prefill from the wiring study; never publish on navigation.
 try {
  const from=new URLSearchParams(location.search),raw=from.get('website'),text=from.get('title');
- const site=raw&&new URL(raw);
+ const site=raw&&new URL(normalizeWebsiteInput(raw));
  if(site?.protocol==='https:'&&!site.username&&!site.password&&!site.port&&/^[a-z0-9.-]+$/i.test(site.hostname)){
   websiteInput.value=site.href;
   if(text)form.elements.namedItem('title').value=text.slice(0,85);
@@ -45,8 +46,10 @@ document.getElementById('qcpSharePage')?.addEventListener('click',()=>void share
 const button=document.getElementById('qcpPublish');
 form.addEventListener('submit',async event=>{
  event.preventDefault();button.disabled=true;result.replaceChildren();button.textContent='Publishing…';
- const body=Object.fromEntries(new FormData(form).entries());
+ let body;
  try{
+  body=buildWebsiteCardDraft(Object.fromEntries(new FormData(form).entries()));
+  websiteInput.value=body.website;
   const response=await fetch('/api/quick-cards',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
   const value=await response.json();
   if(!response.ok||!value.ok)throw new Error(value.error||'Publishing was not confirmed.');
@@ -63,5 +66,5 @@ form.addEventListener('submit',async event=>{
   publishedShare.addEventListener('click',()=>void shareQuickCard({url:value.cardUrl,title:body.title+' · QuantaPhi Quick Card',image:body.image||'',description:body.description||'',status:message}));
   row.append(previewButton,publishedShare,link,copy);result.append(message,field,row);
  }catch(error){const p=document.createElement('p');p.textContent=error.message||'Could not publish your card.';result.append(p);}
- finally{button.disabled=false;button.textContent='Publish shareable card';}
+ finally{button.disabled=false;button.textContent='Build my Quick Card';}
 });
