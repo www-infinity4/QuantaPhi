@@ -3,28 +3,37 @@
  * Actual in-card movie playback uses the EXISTING vetted PhiTVPrograms ids.
  * Quant interests come from a signed-in read only AFTER an explicit opt-in. */
 export const quantTvConsentKey='quantaphi:tv:quant-recommendations:v1';
+/* Standalone Oracle cards use individual publisher-uploaded YouTube videos.
+ * This is not an unauthorized copy of a paywalled live television feed.
+ * Embed availability is controlled by the original publisher. */
 export const TV_EXPANSION_CHANNELS=Object.freeze([
- {id:'cnn',name:'CNN',category:'News',mode:'official-link',url:'https://www.cnn.com/',
-  poster:'https://www.google.com/s2/favicons?domain=cnn.com&sz=128',
-  access:'CNN All Access subscription or supported TV provider required for full live channels.',
-  description:'Watch CNN news and original films with your own valid subscription or TV provider. Choose Watch at CNN.'},
- {id:'cnbc',name:'CNBC',category:'Business news',mode:'official-link',url:'https://www.cnbc.com/live-tv/',
-  poster:'https://www.google.com/s2/favicons?domain=cnbc.com&sz=128',
-  access:'CNBC+, CNBC Pro or supported TV provider subscription may be required.',
-  description:'Open the original CNBC livestream player. Public clips may be available without a subscription.'},
- {id:'nasa-plus',name:'NASA+',category:'Science',mode:'official-link',url:'https://plus.nasa.gov/',
-  poster:'https://www.google.com/s2/favicons?domain=nasa.gov&sz=128',
-  access:'Free official NASA live coverage, science documentaries and series.',
-  description:'Watch NASA missions, science films and original documentary programs on the official NASA+ service.'},
- {id:'pbs-nova',name:'PBS NOVA',category:'Science documentaries',mode:'official-link',url:'https://www.pbs.org/show/nova/',
-  poster:'https://www.google.com/s2/favicons?domain=pbs.org&sz=128',
-  access:'Public PBS clips and eligible episodes; some full programs may require PBS Passport.',
-  description:'Discover physics, inventions, astronomy and nature documentaries through the original NOVA player.'},
- {id:'pbs-history',name:'PBS American Experience',category:'History documentaries',mode:'official-link',url:'https://www.pbs.org/show/american-experience/',
-  poster:'https://www.google.com/s2/favicons?domain=pbs.org&sz=128',
-  access:'PBS video availability varies by episode, region and Passport status.',
-  description:'Watch history documentary episodes and clips through the official PBS website or app.'}
+ {id:'cnn',name:'CNN',category:'News',mode:'official-video',url:'https://www.cnn.com/',
+  videoId:'_fLyisCUrQE',videoTitle:'CNN · Texas races and election analysis',
+  poster:'https://i.ytimg.com/vi/_fLyisCUrQE/hqdefault.jpg',
+  access:'Live CNN requires an All Access subscription or supported TV provider. This is an official public news clip.',
+  description:'News reporting from CNN’s own video channel, inside this Quick Card. Not a live channel.'},
+ {id:'cnbc',name:'CNBC',category:'Business news',mode:'official-video',url:'https://www.cnbc.com/live-tv/',
+  videoId:'gvAkhbw620o',videoTitle:'CNBC Television · AI investment and energy costs',
+  poster:'https://i.ytimg.com/vi/gvAkhbw620o/hqdefault.jpg',
+  access:'Live CNBC may require CNBC+ or a supported TV provider. This is an official public business-news clip.',
+  description:'Market and business reporting from CNBC Television’s video channel, played in this card. Not live television.'},
+ {id:'nasa-plus',name:'NASA+',category:'Science',mode:'official-video',url:'https://plus.nasa.gov/',
+  videoId:'uSMGENDH_QI',videoTitle:'NASA · Cosmic Dawn: James Webb Space Telescope',
+  poster:'https://i.ytimg.com/vi/uSMGENDH_QI/hqdefault.jpg',
+  access:'Free public NASA documentary clip. Live NASA+ is a separate official service.',
+  description:'NASA science and exploration, with the official source video playing in this card.'},
+ {id:'pbs-nova',name:'PBS NOVA',category:'Science documentaries',mode:'official-video',url:'https://www.pbs.org/show/nova/',
+  videoId:'t06aTX9jM34',videoTitle:'NOVA PBS · Decoding the Universe: Quantum',
+  poster:'https://i.ytimg.com/vi/t06aTX9jM34/hqdefault.jpg',
+  access:'Public NOVA PBS official documentary; PBS Passport may be needed for other programs.',
+  description:'Physics, science and original NOVA documentary video inside the card.'},
+ {id:'pbs-history',name:'PBS American Experience',category:'History documentaries',mode:'official-video',url:'https://www.pbs.org/show/american-experience/',
+  videoId:'EZyGL-BF-n8',videoTitle:'American Experience PBS · Season 34 preview',
+  poster:'https://i.ytimg.com/vi/EZyGL-BF-n8/hqdefault.jpg',
+  access:'Public official PBS preview; some full episodes require PBS Passport or regional access.',
+  description:'Explore documentary history through American Experience official source video.'}
 ]);
+
 const finite=(x,cap=100)=>Number.isFinite(Number(x))?Math.max(0,Math.min(cap,Number(x))):0;
 const sciences=/(?:science|space|nasa|webb|physics|astrophys|cosmos|cosmic|astronomy|satellite|moon|planet|quantum|technology)/i;
 const mystery=/(?:mystery|suspense|horror|chiller|twilight|detective|hitchcock|thriller)/i;
