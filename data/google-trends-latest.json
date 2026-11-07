@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-07T14:01:31.198435Z",
+  "checked_at": "2026-11-07T14:31:26.573980Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "mainz vs bayern",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-07T13:40:00Z",
-      "related_news_urls": [
-        "https://www.bild.de/sport/fussball/fc-bayern-warnung-vor-mainz-bayern-stars-mussten-eigene-hilflos-halbzeit-sehen-6aedc39c47b5fce02f87a266",
-        "https://www.kicker.de/danks-kuendigt-pausen-an-wer-kann-bei-bayern-ueberhaupt-links-spielen-1269125/artikel",
-        "https://www.dazn.com/de-DE/news/fussball/bundesliga-wer-zeigt-uebertraegt-mainz-05-vs-fc-bayern-im-tv-und-live-stream/1cumq1imznl6c14skzqshjj7gr"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScUSxesGMb_EqEYBLVSi4xIlSG42vIMlr0lsAK5mpoHHsjueJeCQBNsiN6MOE",
-      "image_credit": "BILD",
-      "news": [
-        {
-          "url": "https://www.bild.de/sport/fussball/fc-bayern-warnung-vor-mainz-bayern-stars-mussten-eigene-hilflos-halbzeit-sehen-6aedc39c47b5fce02f87a266",
-          "title": "FC Bayern: Warnung vor Mainz – Bayern-Stars mussten eigene Hilflos-Halbzeit sehen!",
-          "publisher": "BILD",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScUSxesGMb_EqEYBLVSi4xIlSG42vIMlr0lsAK5mpoHHsjueJeCQBNsiN6MOE"
-        },
-        {
-          "url": "https://www.kicker.de/danks-kuendigt-pausen-an-wer-kann-bei-bayern-ueberhaupt-links-spielen-1269125/artikel",
-          "title": "Danks kündigt Pausen an - Wer kann bei Bayern überhaupt links spielen?",
-          "publisher": "Kicker",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwDhw22srYXYpVyMnI-ykvHQg0BRXHnsSRlC2m-_xKP63x1mfwYONJS_DHIC8"
-        },
-        {
-          "url": "https://www.dazn.com/de-DE/news/fussball/bundesliga-wer-zeigt-uebertraegt-mainz-05-vs-fc-bayern-im-tv-und-live-stream/1cumq1imznl6c14skzqshjj7gr",
-          "title": "Bundesliga: Wer zeigt / überträgt Mainz 05 vs. FC Bayern im TV und LIVE-STREAM?",
-          "publisher": "DAZN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRY2fmMT6nQ5XDbBGQrRcMCxtrB1hGGzntsitisrNtAIHNeNNFI_5seBDmJQUc"
-        }
-      ]
-    },
-    {
-      "query": "dortmund vs sv elversberg",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T13:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/confirmed-lineups-borussia-dortmund-vs-132600612.html",
-        "https://www.bbc.com/sport/football/live/cwvgdj931ez7t",
-        "https://www.fearthewall.com/general/25389/match-preview-bvb-host-sv-elversberg"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE8HS_m3UoQ9s09K_1pQfxjUEBGKlrDhWQGrQ6odSFVdFZLKjN3b1wNSBm868",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/confirmed-lineups-borussia-dortmund-vs-132600612.html",
-          "title": "Confirmed lineups: Borussia Dortmund vs. SV Elversberg",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE8HS_m3UoQ9s09K_1pQfxjUEBGKlrDhWQGrQ6odSFVdFZLKjN3b1wNSBm868"
-        },
-        {
-          "url": "https://www.bbc.com/sport/football/live/cwvgdj931ez7t",
-          "title": "Borussia Dortmund vs Elversberg: German Bundesliga stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
-        },
-        {
-          "url": "https://www.fearthewall.com/general/25389/match-preview-bvb-host-sv-elversberg",
-          "title": "Match Preview: BVB Host SV Elversberg",
-          "publisher": "Fear The Wall",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQKxQj8p-x-DoIM5AHJ6YWMI-JPEcneBT1wEfcQBbZvDTpZ36FQWUbqOa_KcI"
-        }
-      ]
-    },
-    {
-      "query": "dortmund - sv elversberg",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T13:40:00Z",
-      "related_news_urls": [
-        "https://www.sportschau.de/regional/wdr/wdr-vom-perlentaucher-zum-bvb-sportdirektor-100.html",
-        "https://www.tipico.de/wett-tipps/sportwetten-news/dortmund-vs-elversberg-tipp-quoten-news-prognose-07-11-2026",
-        "https://www.sr.de/sr/home/sport/fussball_bundesliga_bvb_borussia_dortmund_sv_elversberg_100.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpi4evBYMqq1DkZti4O3bVpWZntd7oryh5FZTgXYZ6-WH8yFYeLlL0Vsi7JPA",
-      "image_credit": "sportschau.de",
-      "news": [
-        {
-          "url": "https://www.sportschau.de/regional/wdr/wdr-vom-perlentaucher-zum-bvb-sportdirektor-100.html",
-          "title": "Book trifft auf Ex-Verein: Vom Perlentaucher zum BVB-Sportdirektor",
-          "publisher": "sportschau.de",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpi4evBYMqq1DkZti4O3bVpWZntd7oryh5FZTgXYZ6-WH8yFYeLlL0Vsi7JPA"
-        },
-        {
-          "url": "https://www.tipico.de/wett-tipps/sportwetten-news/dortmund-vs-elversberg-tipp-quoten-news-prognose-07-11-2026",
-          "title": "Dortmund vs. Elversberg Tipp, Quoten, News & Prognose | 07.11.2026",
-          "publisher": "Tipico",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZzFVy3QLBdFbA8i9tXg1ejagGo_OTGkxV92KvR1FuGewwJw-MwW5n_gbfLzg"
-        },
-        {
-          "url": "https://www.sr.de/sr/home/sport/fussball_bundesliga_bvb_borussia_dortmund_sv_elversberg_100.html",
-          "title": "Die SV Elversberg trifft vor großer Kulisse auf Borussia Dortmund",
-          "publisher": "SR.de",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwuiWB9svC5h_lR9bL_SOIjT53QooE1y41pBY7kJvPdU_I_Lizb75kjx6OX5k"
-        }
-      ]
-    },
-    {
-      "query": "cagliari vs frosinone",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T13:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/cagliari-frosinone-torino-lecce-xis-130600081.html",
-        "https://www.bbc.com/sport/football/live/ckd6d93qx7z3t",
-        "https://robinhood.com/us/en/prediction-markets/soccer/events/osasuna-vs-bilbao-first-half-winner-nov-07-2026/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ64gPxRhwYZz7pBFb9hP8ittsWKVVJXdUvG1zbLe4AljAkce6LpDhu5soJVnQ",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/cagliari-frosinone-torino-lecce-xis-130600081.html",
-          "title": "✅ Cagliari-Frosinone and Torino-Lecce XIs: Mendy, Cacciamani and Stulic 👀",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ64gPxRhwYZz7pBFb9hP8ittsWKVVJXdUvG1zbLe4AljAkce6LpDhu5soJVnQ"
-        },
-        {
-          "url": "https://www.bbc.com/sport/football/live/ckd6d93qx7z3t",
-          "title": "Cagliari vs Frosinone: Italian Serie A stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQx_b81QthyHCJAutSMaTE8OfbYkxH3bNPY1as_v_V2soP_x2kg7tUBbiGaar8"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/soccer/events/osasuna-vs-bilbao-first-half-winner-nov-07-2026/",
-          "title": "November 7, 2026: Osasuna vs Bilbao: First Half Winner Soccer Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzFeVkIfiMFM7QSADE8EzQ4dI38v4860jQKrXNk-bRzVKyFiavpeWvlvh4SYA"
-        }
-      ]
-    },
-    {
-      "query": "supreme court of the united states",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T13:40:00Z",
-      "related_news_urls": [
-        "https://www.npr.org/2026/11/07/nx-s1-6032757/how-the-new-senate-majority-shifts-control-over-the-federal-judiciary",
-        "https://www.yahoo.com/news/politics/articles/conservative-us-supreme-court-justices-195338837.html",
-        "https://www.scotusblog.com/2026/11/democrats-won-control-of-congress-what-might-that-mean-for-the-supreme-court/"
-      ],
-      "image_url": null,
-      "image_credit": "NPR",
-      "news": [
-        {
-          "url": "https://www.npr.org/2026/11/07/nx-s1-6032757/how-the-new-senate-majority-shifts-control-over-the-federal-judiciary",
-          "title": "How the new Senate majority shifts control over the federal judiciary",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://www.yahoo.com/news/politics/articles/conservative-us-supreme-court-justices-195338837.html",
-          "title": "Conservative US Supreme Court justices Thomas and Alito in spotlight after Democratic landslide",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoabQ6o9c11vKKnfAO33-Kl6Z7fUlBnvc2BSCtCOjL9TlWKvcMUsK3j54BwPA"
-        },
-        {
-          "url": "https://www.scotusblog.com/2026/11/democrats-won-control-of-congress-what-might-that-mean-for-the-supreme-court/",
-          "title": "Democrats won control of Congress. So what does that mean for the Supreme Court?",
-          "publisher": "SCOTUSblog",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhAUnAIjJ2-TNyUER-Kol5pmpbv3Sv1n6t1DRYEV2G8ihTb92NHzla-_smy1w"
-        }
-      ]
-    },
-    {
-      "query": "jetblue financial status restructuring debt",
+      "query": "fulham vs newcastle",
       "approx_searches": "500+",
-      "published_at": "2026-11-07T13:30:00Z",
+      "published_at": "2026-11-07T14:10:00Z",
       "related_news_urls": [
-        "https://www.theatlantic.com/ideas/2026/11/airlines-bankruptcy-profit-jetblue/689332/",
-        "https://www.bloomberg.com/news/articles/2026-11-06/jetblue-s-defiant-cfo-to-employees-not-considering-bankruptcy",
-        "https://ticotimes.net/2026/11/03/jetblue-debt-costa-rica-flights"
+        "https://www.bbc.com/sport/football/live/c6gr87qy1zd1t",
+        "https://www.skysports.com/football/live-blog/13592872/fulham-vs-newcastle-live-premier-league-updates-news-prediction-and-line-ups",
+        "https://sports.yahoo.com/articles/fulham-vs-newcastle-team-news-133000014.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuWghBQfZaNybgTcuCuTyJFakUAvl7lpeCPw-c-II9HI1k_k4Swxm1ICcgMLY",
-      "image_credit": "The Atlantic",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSg9OsRcQ_Mxmee0MGT-zrElCgs8IgfE8F1gEqYKhq6IHSRGLsE2YtsqxtFlys",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.theatlantic.com/ideas/2026/11/airlines-bankruptcy-profit-jetblue/689332/",
-          "title": "What Happened to JetBlue?",
-          "publisher": "The Atlantic",
+          "url": "https://www.bbc.com/sport/football/live/c6gr87qy1zd1t",
+          "title": "Fulham vs Newcastle United: Premier League preview, team news, stats & head-to-head",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuWghBQfZaNybgTcuCuTyJFakUAvl7lpeCPw-c-II9HI1k_k4Swxm1ICcgMLY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSg9OsRcQ_Mxmee0MGT-zrElCgs8IgfE8F1gEqYKhq6IHSRGLsE2YtsqxtFlys"
         },
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-06/jetblue-s-defiant-cfo-to-employees-not-considering-bankruptcy",
-          "title": "JetBlue’s Defiant CFO to Employees: ‘Not Considering Bankruptcy’",
-          "publisher": "Bloomberg.com",
+          "url": "https://www.skysports.com/football/live-blog/13592872/fulham-vs-newcastle-live-premier-league-updates-news-prediction-and-line-ups",
+          "title": "Fulham vs Newcastle LIVE! Premier League updates, news, prediction and line-ups",
+          "publisher": "Sky Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfQJih6acNWWZcKkSt-RsvjBnYDMOl3If7ngjWczRnGQoJGhddLfRu9eFpfFg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAiDouv5jQctQ3b1FUie8vq3jr_J_JqPPzLRHi8dbRGD5nhcH7Znnq08cL2dw"
         },
         {
-          "url": "https://ticotimes.net/2026/11/03/jetblue-debt-costa-rica-flights",
-          "title": "What JetBlue’s Multi-Billion Dollar Debt Means for Costa Rica Flights",
-          "publisher": "The Tico Times",
+          "url": "https://sports.yahoo.com/articles/fulham-vs-newcastle-team-news-133000014.html",
+          "title": "Fulham vs. Newcastle — Team News & Match Preview",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeLJTCrNrvRB1prow5Fr_BZQSPADA8U7PjG8QQXiSc-w1-MdpL5v0tLfqXV80"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUG8YlTH3lMO1hVMInGnVU1MNxSMG0HU5inKZfKpaU5vrsVOE7WAWENitupC8"
         }
       ]
     },
     {
-      "query": "high school football playoffs",
+      "query": "game day",
       "approx_searches": "200+",
-      "published_at": "2026-11-07T13:30:00Z",
+      "published_at": "2026-11-07T14:10:00Z",
       "related_news_urls": [
-        "https://www.kjrh.com/news/local-news/midnight-coin-toss-decides-oklahoma-high-school-football-playoff-race",
-        "https://sports.yahoo.com/articles/oklahoma-high-school-football-playoff-061958331.html",
-        "https://www.si.com/high-school/oklahoma/midnight-coin-flip-utilized-to-determine-playoff-teams-from-oklahoma-high-school-football-district-01m6tapbrms6"
+        "https://sports.yahoo.com/articles/watch-oregon-vs-ohio-state-125721292.html",
+        "https://www.cbssports.com/betting/news/ohio-state-oregon-prediction-odds-time-streaming-2026-week-10-college-football-picks/",
+        "https://www.cleveland.com/osu/2026/11/how-ohio-state-footballs-jeremiah-smith-can-channel-michael-jordan-to-solve-his-penalty-problem-jimmy-watkins.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrPXkDawLPvkpPJGVXjyME33gDGodzHBthwhk1QODvtakJEQhzRozQ4uVd0pw",
-      "image_credit": "2 News Oklahoma KJRH Tulsa",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQA5Jfx96y83ySjws9-hVHj_ldhNWYSrXt_IJuiEe3Kjy2mX6trvBl4uHmvs1A",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.kjrh.com/news/local-news/midnight-coin-toss-decides-oklahoma-high-school-football-playoff-race",
-          "title": "Midnight coin toss decides Oklahoma high school football playoff race",
-          "publisher": "2 News Oklahoma KJRH Tulsa",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrPXkDawLPvkpPJGVXjyME33gDGodzHBthwhk1QODvtakJEQhzRozQ4uVd0pw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/oklahoma-high-school-football-playoff-061958331.html",
-          "title": "Oklahoma high school football playoff bids decided by coin flip at catfish restaurant",
+          "url": "https://sports.yahoo.com/articles/watch-oregon-vs-ohio-state-125721292.html",
+          "title": "How to watch Oregon vs. Ohio State: Time, TV channel, streaming",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSz-_PgISy-0tokmSM7iekDlpsKdK05bkS4Z8PaBN5EA7df0bVTty9cm6jdsiE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQA5Jfx96y83ySjws9-hVHj_ldhNWYSrXt_IJuiEe3Kjy2mX6trvBl4uHmvs1A"
         },
         {
-          "url": "https://www.si.com/high-school/oklahoma/midnight-coin-flip-utilized-to-determine-playoff-teams-from-oklahoma-high-school-football-district-01m6tapbrms6",
-          "title": "Midnight Coin Flip Utilized To Determine Playoff Teams From Oklahoma High School Football District",
+          "url": "https://www.cbssports.com/betting/news/ohio-state-oregon-prediction-odds-time-streaming-2026-week-10-college-football-picks/",
+          "title": "Ohio State vs. Oregon prediction, odds, time: Week 10 college football picks from proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStK5byfB1R9dbCDzeg-tHRlyzmh5thpWA4_l7_lzQRUisH4vKm_dKLGs-cVM4"
+        },
+        {
+          "url": "https://www.cleveland.com/osu/2026/11/how-ohio-state-footballs-jeremiah-smith-can-channel-michael-jordan-to-solve-his-penalty-problem-jimmy-watkins.html",
+          "title": "‘The Jeremiah Rules’: How Ohio State’s Jeremiah Smith can channel Michael Jordan to solve his penalty problem — Jimmy Watkins",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUsXW8ehEpUpedEHe_Tj3lkDj_TEz7w46OLVOQsJGkdbIKOGkCQZDqua93Am8"
+        }
+      ]
+    },
+    {
+      "query": "arsenal vs hull",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-07T14:00:00Z",
+      "related_news_urls": [
+        "https://www.arsenal.com/news/team-news-arteta-makes-six-changes-for-visit-of-hull-city-aFm6p5H0sRkP",
+        "https://www.skysports.com/football/live-blog/13592870/arsenal-vs-hull-city-live-premier-league-updates-news-prediction-and-line-ups",
+        "https://www.bbc.com/sport/football/live/c64g1dvlpjzkt"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnQc44u1ttILIqAbAf53yLydD-XpdGYz4FvS2_FbF4bNa3ZHChnnFi2oecnBY",
+      "image_credit": "Arsenal.com",
+      "news": [
+        {
+          "url": "https://www.arsenal.com/news/team-news-arteta-makes-six-changes-for-visit-of-hull-city-aFm6p5H0sRkP",
+          "title": "Team news: Arteta makes six changes for visit of Hull City",
+          "publisher": "Arsenal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnQc44u1ttILIqAbAf53yLydD-XpdGYz4FvS2_FbF4bNa3ZHChnnFi2oecnBY"
+        },
+        {
+          "url": "https://www.skysports.com/football/live-blog/13592870/arsenal-vs-hull-city-live-premier-league-updates-news-prediction-and-line-ups",
+          "title": "Arsenal vs Hull City LIVE! Premier League updates, news, prediction and line-ups",
+          "publisher": "Sky Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdA7rRPJUD3-pfLkH_8P7XdBEtYVvt5gnB8l74nnOtkaSkBryTvbxShZOBs4E"
+        },
+        {
+          "url": "https://www.bbc.com/sport/football/live/c64g1dvlpjzkt",
+          "title": "Arsenal vs Hull City: Premier League preview, team news, stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQx6eiu22YzdFZU98VAnyHhasi7030fjXF6SJC4fQjc_SiKQPXg7I5MhN2XT0g"
+        }
+      ]
+    },
+    {
+      "query": "jason sudeikis",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T14:00:00Z",
+      "related_news_urls": [
+        "https://bleacherreport.com/articles/25529859-espn-college-gameday-2026-week-10-schedule-location-predictions-and-more",
+        "https://www.usatoday.com/story/sports/ncaaf/2026/11/05/college-gameday-guest-picker-jason-sudeikis-notre-dame-miami-family-ties-espn-ted-lasso/92627505007/",
+        "https://sports.yahoo.com/articles/where-college-gameday-watch-espn-090200986.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYCoUwzGES3UHF9xdA6icu6kR56TxV1ZVo9MxhbgTHjtMzzhhyIzoCiy-Qteg",
+      "image_credit": "Bleacher Report",
+      "news": [
+        {
+          "url": "https://bleacherreport.com/articles/25529859-espn-college-gameday-2026-week-10-schedule-location-predictions-and-more",
+          "title": "ESPN College GameDay 2026 Week 10 Schedule, Location, Predictions and More",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYCoUwzGES3UHF9xdA6icu6kR56TxV1ZVo9MxhbgTHjtMzzhhyIzoCiy-Qteg"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/ncaaf/2026/11/05/college-gameday-guest-picker-jason-sudeikis-notre-dame-miami-family-ties-espn-ted-lasso/92627505007/",
+          "title": "Jason Sudeikis' Notre Dame family ties make him perfect College GameDay guest picker",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTu63avMnQtZq9RxrtShE6WD-e_ShzdjZB-z4Pn6iO2iAB55ote9pNFD1pDnOI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/where-college-gameday-watch-espn-090200986.html",
+          "title": "Where is College GameDay: How to Watch ESPN Kick Off College Football in Week 10",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1klu1nKDwdXyIHKndH9L7CUqAJC9OT4hMGgm5RJVWv8jwFmCh3n8LIWywuGE"
+        }
+      ]
+    },
+    {
+      "query": "lou holtz",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T14:00:00Z",
+      "related_news_urls": [
+        "https://fightingirish.com/news/2026/11/02/notre-dame-football-set-to-honor-lou-holtz",
+        "https://www.uhnd.com/video/2026/11/06/notre-dame-releases-faith-and-belief-hype-video-before-prime-time-miami-showdown/",
+        "https://www.msn.com/en-us/sports/college-sports/is-there-a-uniform-change-coming-for-notre-dame-in-the-game-against-miami/ar-AA2gAqj4"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_N8lzmAzqzVuz2y4AYfp5ppNNcdr7kXyft99JJpO4efHnmtfB9lpsNTqaw9o",
+      "image_credit": "Notre Dame Fighting Irish",
+      "news": [
+        {
+          "url": "https://fightingirish.com/news/2026/11/02/notre-dame-football-set-to-honor-lou-holtz",
+          "title": "Notre Dame Football Set to Honor Lou Holtz",
+          "publisher": "Notre Dame Fighting Irish",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_N8lzmAzqzVuz2y4AYfp5ppNNcdr7kXyft99JJpO4efHnmtfB9lpsNTqaw9o"
+        },
+        {
+          "url": "https://www.uhnd.com/video/2026/11/06/notre-dame-releases-faith-and-belief-hype-video-before-prime-time-miami-showdown/",
+          "title": "Notre Dame Releases ‘Faith and Belief’ Hype Video Before Prime-Time Miami Showdown",
+          "publisher": "UHND.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSStxPQ7VDUqqhGeT4HIuIIs0FUGf325_jwuYzB2BH4dIM6rdy_sMicL1tnyy8"
+        },
+        {
+          "url": "https://www.msn.com/en-us/sports/college-sports/is-there-a-uniform-change-coming-for-notre-dame-in-the-game-against-miami/ar-AA2gAqj4",
+          "title": "Is there a uniform change coming for Notre Dame in the game against Miami?",
+          "publisher": "MSN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFqH1R7yKjtSRNB58nDVGt0qkd2XbP7AI9K25hFiEeu2dKFNDC55A8HaFMP4w"
+        }
+      ]
+    },
+    {
+      "query": "cagliari - frosinone",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T14:00:00Z",
+      "related_news_urls": [
+        "https://www.fantacalcio.it/news/calcio-italia/07_11_2026/cagliari-frosinone-le-formazioni-ufficiali-500402",
+        "https://www.teleuniverso.it/calcio-cagliari-frosinone-ecco-i-convocati/",
+        "https://www.isolaonline24.it/2026/11/07/cagliari-a-caccia-di-punti-dopo-quattro-sconfitte-alla-domus-ce-il-frosinone/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDV8bJ_9_2yB0PtpOxjPme7V2WTHbUlDDTMpaHyvQOKJeZfRJS6xUBR5WnhYI",
+      "image_credit": "Fantacalcio",
+      "news": [
+        {
+          "url": "https://www.fantacalcio.it/news/calcio-italia/07_11_2026/cagliari-frosinone-le-formazioni-ufficiali-500402",
+          "title": "Cagliari-Frosinone: le formazioni ufficiali",
+          "publisher": "Fantacalcio",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDV8bJ_9_2yB0PtpOxjPme7V2WTHbUlDDTMpaHyvQOKJeZfRJS6xUBR5WnhYI"
+        },
+        {
+          "url": "https://www.teleuniverso.it/calcio-cagliari-frosinone-ecco-i-convocati/",
+          "title": "Calcio – Cagliari-Frosinone, 24 convocati resta a casa Terzic",
+          "publisher": "Teleuniverso",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWHmIkr4dbEIoMnF7dtIoZKaYoIIi-CvaYudDAtWTPO2VZeSJXptZL0jqpzFI"
+        },
+        {
+          "url": "https://www.isolaonline24.it/2026/11/07/cagliari-a-caccia-di-punti-dopo-quattro-sconfitte-alla-domus-ce-il-frosinone/",
+          "title": "Cagliari a caccia di punti dopo quattro sconfitte: alla Domus c’è il Frosinone",
+          "publisher": "Isola online 24",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHmXmaIh-6c2-s7XKsoqjow1hhD_Lx6uuO4JKDD_Sk-rjc1IsR-aeJEQCDDiM"
+        }
+      ]
+    },
+    {
+      "query": "ben shelton",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T13:50:00Z",
+      "related_news_urls": [
+        "https://www.atptour.com/en/news/shelton-ferrero-coaching-news-2026",
+        "https://www.si.com/tennis/tennis-mailbag-will-ben-shelton-juan-carlos-ferrero-perfect-match",
+        "https://www.espn.com/tennis/story/_/id/50353478/ben-shelton-adds-coach-juan-carlos-ferrero-2027-staff"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCZcgjg8OVOTSTrqkzIF3PMondAf474Wr1ku6vKVGt4sFAwLjZa5l9OkHS0YU",
+      "image_credit": "ATP Tour",
+      "news": [
+        {
+          "url": "https://www.atptour.com/en/news/shelton-ferrero-coaching-news-2026",
+          "title": "Shelton to add Juan Carlos Ferrero to coaching team",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCZcgjg8OVOTSTrqkzIF3PMondAf474Wr1ku6vKVGt4sFAwLjZa5l9OkHS0YU"
+        },
+        {
+          "url": "https://www.si.com/tennis/tennis-mailbag-will-ben-shelton-juan-carlos-ferrero-perfect-match",
+          "title": "Tennis Mailbag: Will Ben Shelton and Juan Carlos Ferrero Be a Perfect Match?",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKjraOi1BjDXjW_UINkOqxddI1XfZ6Wf7sfhh4oCVbhlG6AUoOnK370KByjyQ"
-        }
-      ]
-    },
-    {
-      "query": "tottenham schedule",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T13:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.co.uk/football/story/_/id/50399542/luca-williams-barnett-tottenham-roberto-de-zerbi-premier-league",
-        "https://www.espn.com/soccer/story/_/id/50369087/steven-gerrard-tottenham-wonderkid-luca-williams-barnett",
-        "https://roundtable.io/sports/soccer/premier-league/tottenham/news/micky-van-de-ven-reveals-what-its-really-like-training-with-luca-williams-barnett-at-tottenham"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAdFsAZ4AIJDdPgGGRmB1Cn-BB8a8-qFc62BGJjWydOopjj8blcSDG63RkNhM",
-      "image_credit": "ESPN",
-      "news": [
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk7nz8fF9yxV1QpNYZDe-qq3QArARIdkqJv8Wfkk640TqdSG0TZKWtQ3WR8VE"
+        },
         {
-          "url": "https://www.espn.co.uk/football/story/_/id/50399542/luca-williams-barnett-tottenham-roberto-de-zerbi-premier-league",
-          "title": "Roberto De Zerbi: Tottenham rising star Luca Williams-Barnett ready to start matches",
+          "url": "https://www.espn.com/tennis/story/_/id/50353478/ben-shelton-adds-coach-juan-carlos-ferrero-2027-staff",
+          "title": "Ben Shelton adds coach Juan Carlos Ferrero to 2027 staff",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAdFsAZ4AIJDdPgGGRmB1Cn-BB8a8-qFc62BGJjWydOopjj8blcSDG63RkNhM"
-        },
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50369087/steven-gerrard-tottenham-wonderkid-luca-williams-barnett",
-          "title": "Steven Gerrard names Premier League wonderkid to watch: 'I have seen enough'",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8lh3JSrAQFUbQwSgiEmDgbacFQ_5giF7URMJN2MvQyYLARuC13sG675ZqvzE"
-        },
-        {
-          "url": "https://roundtable.io/sports/soccer/premier-league/tottenham/news/micky-van-de-ven-reveals-what-its-really-like-training-with-luca-williams-barnett-at-tottenham",
-          "title": "Micky van de Ven Reveals What It's Really Like Training With Luca Williams-Barnett at Tottenham",
-          "publisher": "roundtable.io",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3RVaoUfVpk_FDBjk12Agyglp4TakSvV3sXiErR5hrbdJ3ioA2FImNWdUH6i0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuJSjArcSeFF_5cUGnsl79ZvdqaM9AoTtE_5HicPfKXVbBDY-XP6FGpuXR038"
         }
       ]
     },
     {
-      "query": "man city vs west ham",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T13:00:00Z",
+      "query": "rb leipzig vs augsburg",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T13:50:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/articles/crq5nnqn84zyo",
-        "https://www.chelseafc.com/en/news/article/bompastor-delivers-injury-update-on-lauren-james-and-lexi-potter",
-        "https://dave.sport/news/lauren-james-injury-chelsea-hamstring-2/"
+        "https://www.kicker.de/die-wade-fragezeichen-hinter-nusa-1269271/artikel",
+        "https://rbleipzig.com/de/match-news/liveticker-spielbericht-rbl-fc-augsburg-07-11-2026",
+        "https://www.zeit.de/news/2026-11/07/rb-leipzig-will-makellose-bundesliga-heimserie-ausbauen"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_anKx1QOIltuXHnU32ztG0Ofj94KjjN7EurWv-SZENMB0SEFavSXlmoPXM5Y",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAHux_z76rxLWkjPvLyHeVpzpRnJtw1UvltYYwOSW_2jUqXiwv7mIlIxClbpU",
+      "image_credit": "Kicker",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/articles/crq5nnqn84zyo",
-          "title": "Women's Super League: Sonia Bompastor confirms Lauren James' injury",
-          "publisher": "BBC",
+          "url": "https://www.kicker.de/die-wade-fragezeichen-hinter-nusa-1269271/artikel",
+          "title": "Die Wade: Fragezeichen hinter Nusa",
+          "publisher": "Kicker",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_anKx1QOIltuXHnU32ztG0Ofj94KjjN7EurWv-SZENMB0SEFavSXlmoPXM5Y"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAHux_z76rxLWkjPvLyHeVpzpRnJtw1UvltYYwOSW_2jUqXiwv7mIlIxClbpU"
         },
         {
-          "url": "https://www.chelseafc.com/en/news/article/bompastor-delivers-injury-update-on-lauren-james-and-lexi-potter",
-          "title": "Bompastor delivers injury update on Lauren James and Lexi Potter | News | Official Site",
-          "publisher": "Chelsea Football Club",
+          "url": "https://rbleipzig.com/de/match-news/liveticker-spielbericht-rbl-fc-augsburg-07-11-2026",
+          "title": "Jetzt im Live-Ticker: RBL empfängt den FC Augsburg",
+          "publisher": "RB Leipzig",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdKEjFAUDq3GADsavQ8-6X_fiAmoZxtXhMo7YePOm1S4dOYY9HbLs_HNf8T1o"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbDSScyxAHySGywpemoybTKv5H_pWUcOfYOReRJGEJw09wpik7x4QhR4BG5qo"
         },
         {
-          "url": "https://dave.sport/news/lauren-james-injury-chelsea-hamstring-2/",
-          "title": "Lauren James injury: Chelsea star to miss at least five games",
-          "publisher": "Dave.Sport",
+          "url": "https://www.zeit.de/news/2026-11/07/rb-leipzig-will-makellose-bundesliga-heimserie-ausbauen",
+          "title": "Fußball-Bundesliga: RB Leipzig will makellose Bundesliga-Heimserie ausbauen",
+          "publisher": "DIE ZEIT",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJDueKtk5IvQQ7C1GYJWEgwaNBOE1ZsWlLbLaKmzRJoXasJhD1_xaRHIy6uIE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu1plup1ZhqWCf5xp4vo45ELD1PnC4ygOuhO4oSssh9y7GseDUQOVvjsHDNPo"
         }
       ]
     },
     {
-      "query": "bristol city vs norwich city",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T13:00:00Z",
+      "query": "star wars ahsoka season 2",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T13:50:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/ckpqg85z1pvpt",
-        "https://www.magzter.com/stories/newspaper/Scottish-Daily-Express/MUSABA-UP-AND-DOWN-CANARIES-CAN-STILL-BE-A-FOURCE",
-        "https://www.canaries.co.uk/news/press-conference-clement-consistency-performances-so-important"
+        "https://thedirect.com/article/ahsoka-season-2-the-mandalorian-the-acolyte-disney-plus-lucasfilm-star-wars",
+        "https://gizmodo.com/ahsoka-season-2-will-feature-more-clone-wars-and-rebels-characters-2000834611",
+        "https://www.starwarsnewsnet.com/?p=184984"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7piOKIRU7ZNoCFd3XgEBdYGom2YorFLnP2nGDE-C8ZhqqXx8ryxlQXP91rQs",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5FrlNpT9vtN29DtuqgX-qqXm8Zqy4eN0WkxCO1UwUHhPLn0TJmKFDOnJr8KQ",
+      "image_credit": "The Direct",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/ckpqg85z1pvpt",
-          "title": "Bristol City v Norwich City: Championship stats & head-to-head",
-          "publisher": "BBC",
+          "url": "https://thedirect.com/article/ahsoka-season-2-the-mandalorian-the-acolyte-disney-plus-lucasfilm-star-wars",
+          "title": "Report: Ahsoka Season 2 Is No Longer Expected To Release On Disney+ With Lucasfilm's Live-Action Star Wars TV Streaming Rollout Used For The Mandalorian & The Acolyte",
+          "publisher": "The Direct",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7piOKIRU7ZNoCFd3XgEBdYGom2YorFLnP2nGDE-C8ZhqqXx8ryxlQXP91rQs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5FrlNpT9vtN29DtuqgX-qqXm8Zqy4eN0WkxCO1UwUHhPLn0TJmKFDOnJr8KQ"
         },
         {
-          "url": "https://www.magzter.com/stories/newspaper/Scottish-Daily-Express/MUSABA-UP-AND-DOWN-CANARIES-CAN-STILL-BE-A-FOURCE",
-          "title": "MUSABA: UP AND DOWN CANARIES CAN STILL BE A FOURCE | Scottish Daily Express - newspaper",
-          "publisher": "Magzter",
+          "url": "https://gizmodo.com/ahsoka-season-2-will-feature-more-clone-wars-and-rebels-characters-2000834611",
+          "title": "‘Ahsoka’ Season 2 Will Feature More ‘Clone Wars’ and ‘Rebels’ Characters",
+          "publisher": "Gizmodo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_UriN64In12ylSrIl_azcsFmRLSn7nXnYAjGkOn36TW-sjkkNjuT6ui4NsTc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTE5u5rUw5jJ919VpsCfjAG0dlzudXeQcPTi5ZPeFqTgniuluEHDN9Et0plebM"
         },
         {
-          "url": "https://www.canaries.co.uk/news/press-conference-clement-consistency-performances-so-important",
-          "title": "Press Conference | Clement: Consistency in performances is so important",
-          "publisher": "Norwich City Football Club",
+          "url": "https://www.starwarsnewsnet.com/?p=184984",
+          "title": "'Ahsoka' Season 2 Cast Discuss Their Character's Journeys and Using Outdoor Sets This Time",
+          "publisher": "Star Wars News Net",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFNKY-MUnxz_cXnaeZqV34eQGMhwZhgHJ3gyLGh3dRIwwpcVrEf5mgOhZmMMI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSabcsvFS3yfAQVgUtxQVxITOgqAv1lLLqWHHnCnHMLb3HlJ5-IdA_gc22UsA4"
+        }
+      ]
+    },
+    {
+      "query": "torino vs lecce",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T13:50:00Z",
+      "related_news_urls": [
+        "https://www.gazzetta.it/Calcio/Serie-A/Torino/07-11-2026/torino-lecce-live-risultato-e-gol-in-diretta-serie-a.shtml",
+        "https://www.fantacalcio.it/news/calcio-italia/07_11_2026/torino-lecce-le-formazioni-ufficiali-500403",
+        "https://www.lastampa.it/sport/2026/11/07/news/toro_lecce_prova_d_appello_abate-15790864/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKnu9rQNACiMFaGjwq2IsnOyeKL29B8RdZMlWWRv273vZqKY9se5ei7kbd-tA",
+      "image_credit": "La Gazzetta dello Sport",
+      "news": [
+        {
+          "url": "https://www.gazzetta.it/Calcio/Serie-A/Torino/07-11-2026/torino-lecce-live-risultato-e-gol-in-diretta-serie-a.shtml",
+          "title": "LIVE Alle 15 Torino-Lecce, le ufficiali: Abate con Kulenovic-Simeone. Di Francesco si affida a Stulic",
+          "publisher": "La Gazzetta dello Sport",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKnu9rQNACiMFaGjwq2IsnOyeKL29B8RdZMlWWRv273vZqKY9se5ei7kbd-tA"
+        },
+        {
+          "url": "https://www.fantacalcio.it/news/calcio-italia/07_11_2026/torino-lecce-le-formazioni-ufficiali-500403",
+          "title": "Torino-Lecce: le formazioni ufficiali",
+          "publisher": "Fantacalcio",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5QLLSl16aGrweH3Msr5xWnF_o8-qws66e5CPT8am098PNkYMV1PgpCjiEFqY"
+        },
+        {
+          "url": "https://www.lastampa.it/sport/2026/11/07/news/toro_lecce_prova_d_appello_abate-15790864/",
+          "title": "Toro, prova d’appello e d’orgoglio: “Strada giusta, non siamo in calo”",
+          "publisher": "La Stampa",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG2F9REuLAghQ4pm3S3vcZeR_NtGYYB82LQlgImu-fQ3zYUx5n_cIvRSvW_Mc"
         }
       ]
     }
