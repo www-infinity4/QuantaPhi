@@ -73,6 +73,7 @@ on:
       - 'test/fred-media-star-quick-launcher.test.mjs'
       - 'test/fred-media-star-quick.browser.spec.mjs'
       - 'test/essentials-live-cards.test.mjs'
+      - 'test/essentials-companion-cards.test.mjs'
       - 'test/essentials-import-cli.test.mjs'
       - 'test/essentials-cards.browser.spec.mjs'
       - 'scripts/build-essentials-batch.mjs'
@@ -205,7 +206,7 @@ jobs:
       - name: Check assimilation accessibility
         run: node --test test/assimilation-mobile-accessibility.test.mjs
       - name: Validate real-brand retail products and APK disclosure
-        run: node --test test/brand-product-cards.test.mjs test/essentials-live-cards.test.mjs test/essentials-import-cli.test.mjs
+        run: node --test test/brand-product-cards.test.mjs test/essentials-live-cards.test.mjs test/essentials-companion-cards.test.mjs test/essentials-import-cli.test.mjs
       - name: Validate Denver retail source and mobile card contracts
         run: node --test test/denver-retail-quick-cards.test.mjs
       - name: Check World Series publisher stories and Cardone detail actions
