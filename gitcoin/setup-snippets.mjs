@@ -33,7 +33,8 @@ export function makeTermuxSetup(raw){
   '  git -C "$WORK" pull --ff-only',
   'fi',
   `python3 "$TOOLS/gitcoin/termux-ledger.py" scan --worktree "$WORK" --repo ${repo} --intent website --builder human`,
-  'python3 "$TOOLS/gitcoin/termux-ledger.py" balance'
+  'python3 "$TOOLS/gitcoin/termux-ledger.py" balance',
+  'python3 "$TOOLS/gitcoin/termux-ledger.py" receipts'
  ].join('\n');
 }
 export function makeAiInstructions(raw){
@@ -45,10 +46,12 @@ export function makeAiInstructions(raw){
  'Help me set it up on Android Termux using git, gh, Node and Python with a local SQLite database; no npm or paid API.',
  'Authenticate only through my own gh auth login. Verify the GitHub remote and pushed commit.',
  'Do not request, expose, export or copy credentials or private repository source to an unrelated service.',
+ 'Each code line gets a deterministic local GIT-P-<receipt hash> reference and an authenticated gh collector record; these are NOT minted coin serials.',
+ 'The server-only GIT ledger assigns immutable global serials GIT-000000000001, etc., after authorized GitHub/Quant AI review and accepted code work.',
  'Each code line must get its own provenance receipt, including excluded low-value lines; Quant AI will separately review candidates.',
  'Do not claim, mint, issue, transfer or value spendable GITs based only on local receipts.',
  'Bubbles Bits are separately verified Bubbles tool-work events. GPT Coin is a different optional provider-issued asset;',
  'a user-created imitation must not be labeled provider-issued and there is no verified GPT Coin minting integration.',
- 'Show local pending and excluded totals, never pretend they are financial income or settled balances.'
+ 'Show local pending and excluded totals and the receipts command, never pretend they are financial income or settled balances.'
  ].join('\n');
 }
