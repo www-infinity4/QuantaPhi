@@ -208,7 +208,8 @@ function registerSourceCards(){
 window.addEventListener('quantaphi:source-cards-ready',registerSourceCards);
 // Dynamically mount every loaded, original Cloudflare store listing as its own
 // Oracle card. No personal browsing telemetry, sale controls, or fake ratings.
-function registerDirectoryCards(){\n if(document.getElementById('oracleExperienceLanes'))return; // Exclusive opt-in 21+ carousel owns directory listings.
+function registerDirectoryCards(){
+ if(document.getElementById('oracleExperienceLanes'))return; // Exclusive opt-in 21+ carousel owns directory listings.
  let added=false;
  for(const node of document.querySelectorAll('[data-directory-store-id]')){
   const id=node.id;
@@ -289,7 +290,8 @@ window.addEventListener('quantaphi:trending-app-cards-ready',registerTrendingApp
 
 // Discover widgets mounted after the deferred deck script, including roots that
 // did not exist at its first scan. Reparenting is ignored once registered.
-function registerLateWidgets(){\n // Dedicated Oracle creator and optional adult lanes retain exclusive ownership.
+function registerLateWidgets(){
+ // Dedicated Oracle creator and optional adult lanes retain exclusive ownership.
  let added=false;
  for(const [id,title] of unique){
   if(reservedForDedicatedLanes.has(id)||id.startsWith('dispensary-'))continue;
