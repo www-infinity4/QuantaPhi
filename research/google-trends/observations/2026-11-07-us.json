@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-07T00:42:10.177237Z",
+  "checked_at": "2026-11-07T01:01:31.529216Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "xavier basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T00:20:00Z",
+      "query": "atlanta hawks",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T00:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/xavier-v-eastern-michigan-preview-185450202.html",
-        "https://www.bleachernation.com/picks/2026/11/06/big-east-basketball-predictions-computer-picks-and-best-bets-november-7-2/",
-        "https://ats.io/matchup/college-basketball/eastern-michigan-eagles-vs-xavier-musketeers-prediction-06-11-2026/"
+        "https://www.bulletsforever.com/washington-wizards-preview/73863/washington-wizards-atlanta-hawks-nba-game-preview",
+        "https://sports.yahoo.com/articles/three-bold-predictions-atlanta-hawks-200004637.html",
+        "https://www.espn.com/nba/recap/_/gameId/401909923"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8SC3QlRHVqla-qfDJ74WVNJ1xbk7oOF_y9LdaDB9gtk_Sss_iAT5Js_oaiK4",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPoqbfAGxJC4Io9UrjzUmNKQ8mo77tYfLuZDEA4bhKpmY-aPPn5p6oXEPv8PA",
+      "image_credit": "Bullets Forever",
+      "news": [
+        {
+          "url": "https://www.bulletsforever.com/washington-wizards-preview/73863/washington-wizards-atlanta-hawks-nba-game-preview",
+          "title": "Wizards at Hawks preview: Washington plays Atlanta on second half of home-and-away",
+          "publisher": "Bullets Forever",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPoqbfAGxJC4Io9UrjzUmNKQ8mo77tYfLuZDEA4bhKpmY-aPPn5p6oXEPv8PA"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/three-bold-predictions-atlanta-hawks-200004637.html",
+          "title": "Three Bold Predictions For Atlanta Hawks-Washington Wizards NBA Cup Showdown",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrUPBwijrNOfbZ99gT5gQ22IYTLZ92_24VmfKNLrumGSx9VxSJMAIpra-848o"
+        },
+        {
+          "url": "https://www.espn.com/nba/recap/_/gameId/401909923",
+          "title": "Hawks 120-105 Wizards (Nov 4, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7IAdcRNt3y7IEUhLboQwUWRAd6Ez1ZFbJnje-edmkk3a6plJLH1-Hq4rj3Gs"
+        }
+      ]
+    },
+    {
+      "query": "the day after tomorrow",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-07T00:40:00Z",
+      "related_news_urls": [
+        "https://www.cbr.com/best-movies-for-day-after-tomorrow-fans-list/",
+        "https://decider.com/2026/11/03/top-movie-on-netflix-the-day-after-tomorrow/",
+        "https://www.imdb.com/news/ni66098396/?ref_=nmnw_art_perm"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfganwaImLHAqbxYvh4cqI8gPibaYA-doVmlKGchUVH0hiqSwtgVsV_0uY1GQ",
+      "image_credit": "Comic Book Resources",
+      "news": [
+        {
+          "url": "https://www.cbr.com/best-movies-for-day-after-tomorrow-fans-list/",
+          "title": "8 Best Movies To Watch If You Love The Day After Tomorrow",
+          "publisher": "Comic Book Resources",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfganwaImLHAqbxYvh4cqI8gPibaYA-doVmlKGchUVH0hiqSwtgVsV_0uY1GQ"
+        },
+        {
+          "url": "https://decider.com/2026/11/03/top-movie-on-netflix-the-day-after-tomorrow/",
+          "title": "How Did ‘The Day After Tomorrow’ Become the Top Movie on Netflix in 2026?",
+          "publisher": "Decider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRwdbalXxbpwaZrPsAPfLqIqoajII8BXpk9yCI0VMyomJsrSXhcwzAWH208Ns"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66098396/?ref_=nmnw_art_perm",
+          "title": "Jake Gyllenhaal's 123-Minute Sci-Fi Action Thriller Is Officially the Biggest Movie on Netflix",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNwuxwJB8dAWJYBouizyDEXTl8OmKPbYQ43Qfz-AEmtOEQvuKpcs70Lw6EQCQ"
+        }
+      ]
+    },
+    {
+      "query": "ncaa men's basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T00:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mens-college-basketball/story/_/id/50382900/bilas-index-best-teams-men-basketball",
+        "https://www.cbssports.com/college-basketball/news/college-basketball-rankings-duke-talented-roster/",
+        "https://www.usatoday.com/story/sports/ncaab/2026/11/02/college-basketball-top-100-players-2026-27-rankings/92482649007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREkA5a-FTBsAmtDjwoJ67ZSeUEla6U3uw7gFzAOHmyFPsrotE0DqEJLwZd4H8",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50382900/bilas-index-best-teams-men-basketball",
+          "title": "The Bilas Index: The best men's basketball teams in 2026-27",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREkA5a-FTBsAmtDjwoJ67ZSeUEla6U3uw7gFzAOHmyFPsrotE0DqEJLwZd4H8"
+        },
+        {
+          "url": "https://www.cbssports.com/college-basketball/news/college-basketball-rankings-duke-talented-roster/",
+          "title": "College basketball rankings: Duke's talented roster set to take center stage Thursday night",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrLtC-nZ9u8bDj_5sBDe2VDa4BAuSE7XuOnu7_k0G1BIknyL8AaF_NXRrmTv4"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/ncaab/2026/11/02/college-basketball-top-100-players-2026-27-rankings/92482649007/",
+          "title": "Top 100 college basketball players for 2026-27: Who ranks No. 1?",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6-_KRYakkX1K-YtkJ0cZB4-SHOBbrMa3-MkquCKgGXe-4Z-6X_3gl-cLRUzw"
+        }
+      ]
+    },
+    {
+      "query": "uma thurman",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T00:40:00Z",
+      "related_news_urls": [
+        "https://oglobo.globo.com/cultura/noticia/2026/11/06/filho-de-ethan-hawke-e-uma-thurman-ganha-primeiro-papel-principal-no-cinema.ghtml",
+        "https://www.adorocinema.com/noticias/filmes/noticia-1000231187/",
+        "https://diariodamidia.com.br/levon-hawke-contracena-com-anthony-hopkins-em-twentyseven"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQl6f68eKdtIybhaqlMammCL_bq__JbrcwXrAgR-tNHBph6r2H7K1RwZ7NeQS0",
+      "image_credit": "O GLOBO",
+      "news": [
+        {
+          "url": "https://oglobo.globo.com/cultura/noticia/2026/11/06/filho-de-ethan-hawke-e-uma-thurman-ganha-primeiro-papel-principal-no-cinema.ghtml",
+          "title": "Filho de Ethan Hawke e Uma Thurman ganha primeiro papel principal no cinema",
+          "publisher": "O GLOBO",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQl6f68eKdtIybhaqlMammCL_bq__JbrcwXrAgR-tNHBph6r2H7K1RwZ7NeQS0"
+        },
+        {
+          "url": "https://www.adorocinema.com/noticias/filmes/noticia-1000231187/",
+          "title": "Seus pais são duas estrelas mundialmente famosas: Este ator interpretará seu primeiro grande papel ao lado de Anthony Hopkins",
+          "publisher": "AdoroCinema",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRybO4P7CffPcAolSQZOav62l27m_23T_vlLcmk2Zv92h-jqOkIPKTurnkuqjk"
+        },
+        {
+          "url": "https://diariodamidia.com.br/levon-hawke-contracena-com-anthony-hopkins-em-twentyseven",
+          "title": "Levon Hawke contracena com Anthony Hopkins em 'Twenty‑Seven'",
+          "publisher": "diariodamidia.com.br",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStx_b_eAIWMo9WBQ6cZ0kqzEPqIg6e-1BIRfMza2QEZvVx7A5f1VUTdcpucFE"
+        }
+      ]
+    },
+    {
+      "query": "clemson basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T00:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/clemson-vs-american-live-updates-220153848.html",
+        "https://www.si.com/college/clemson/basketball/everything-to-know-for-clemson-basketball-matchup-with-american",
+        "https://rubbingtherock.com/clemson-tigers-final-mens-basketball-odds-and-prediction-versus-american-eagles"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx93yNVHnGC4p94kIV9Om_7MBb7y98X7JChkvryqGvhZ2-rGMlCTUlegUvdQ4",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/xavier-v-eastern-michigan-preview-185450202.html",
-          "title": "Xavier v. Eastern Michigan: Preview",
+          "url": "https://sports.yahoo.com/articles/clemson-vs-american-live-updates-220153848.html",
+          "title": "Clemson vs American live updates: Score, highlights, predictions, analysis",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8SC3QlRHVqla-qfDJ74WVNJ1xbk7oOF_y9LdaDB9gtk_Sss_iAT5Js_oaiK4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx93yNVHnGC4p94kIV9Om_7MBb7y98X7JChkvryqGvhZ2-rGMlCTUlegUvdQ4"
         },
         {
-          "url": "https://www.bleachernation.com/picks/2026/11/06/big-east-basketball-predictions-computer-picks-and-best-bets-november-7-2/",
-          "title": "Big East Basketball Predictions, Computer Picks and Best Bets | November 7",
-          "publisher": "Bleacher Nation",
+          "url": "https://www.si.com/college/clemson/basketball/everything-to-know-for-clemson-basketball-matchup-with-american",
+          "title": "Everything to Know for Clemson Basketball's Matchup With American",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT82vOh5Y9GENujtdGuJutmobK592GoJBt2rVE110nkuR2rjDJIQEQ-VNXJqvU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4Qxr1klFtQghhlb2r7CFkOKz6OOM1VmdG6BjWrOO8N3Z-RAltsoJV_L3EvPQ"
         },
         {
-          "url": "https://ats.io/matchup/college-basketball/eastern-michigan-eagles-vs-xavier-musketeers-prediction-06-11-2026/",
-          "title": "Eastern Michigan Eagles vs Xavier Musketeers Prediction",
-          "publisher": "ATS.io",
+          "url": "https://rubbingtherock.com/clemson-tigers-final-mens-basketball-odds-and-prediction-versus-american-eagles",
+          "title": "Clemson Tigers final men's basketball odds and prediction versus American Eagles",
+          "publisher": "Rubbing the Rock",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGTeP3QNp6Wq0DWwFiYIHLL4XeTlPcNwvREAtkgOVsnVEy_TQVa12EUW5YBh8"
+          "image_url": null
         }
       ]
     },
     {
-      "query": "brandon aiyuk drama",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-07T00:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50402899/brandon-aiyuk-meets-49ers-looking-get-reinstated",
-        "https://www.foxsports.com/stories/nfl/san-francisco-49ers-brandon-aiyuk-reinstatement-bonuses",
-        "https://sports.yahoo.com/articles/49ers-kyle-shanahan-couldn-t-233054285.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbP-T7j0Y2Z8o_ruxNMUBgPeKadfH0ueuMRUT2siyPJoff3WL6_JUipw9ja_s",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50402899/brandon-aiyuk-meets-49ers-looking-get-reinstated",
-          "title": "Brandon Aiyuk meets with 49ers, says he's healthy, 'looking to get reinstated'",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbP-T7j0Y2Z8o_ruxNMUBgPeKadfH0ueuMRUT2siyPJoff3WL6_JUipw9ja_s"
-        },
-        {
-          "url": "https://www.foxsports.com/stories/nfl/san-francisco-49ers-brandon-aiyuk-reinstatement-bonuses",
-          "title": "NFL Reportedly Tells Brandon Aiyuk He Owes 49ers About $13 Million",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUN4Q942Cyt2KFxl05OsmIyJsmiznOQcNpiZNUf-1ZLOJXWvJ9lW3w8rGeBaI"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/49ers-kyle-shanahan-couldn-t-233054285.html",
-          "title": "49ers’ Kyle Shanahan ‘couldn’t care less’ about Brandon Aiyuk visit with Drew Rosenhaus",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4pBI2sjc0NB-e6UB9Sg8QWZm6fLmFpd_gkPa5OUbJp5dM9UJgMao1LUyWfiw"
-        }
-      ]
-    },
-    {
-      "query": "fortaleza - medellín",
+      "query": "preston spradlin",
       "approx_searches": "200+",
-      "published_at": "2026-11-07T00:20:00Z",
+      "published_at": "2026-11-07T00:40:00Z",
       "related_news_urls": [
-        "https://www.elcolombiano.com/deportes/futbol/dim-vs-fortaleza-clasificacion-cuadrangulares-liga-betplay-2026-FB43245761",
-        "https://www.teleantioquia.co/deportes/medellin-anuncio-otro-esperado-regreso-pero-martegani-y-quintero-siguen-descartados-ante-fortaleza-623682",
-        "https://www.boyacaradio.com/noticia.php?id=65032"
+        "https://www.on3.com/teams/kentucky-wildcats/news/how-preston-spradlin-helped-kentucky-land-justin-mcbride/",
+        "https://ukathletics.com/news/2026/11/05/big-blue-preview-kentucky-vs-james-madison/",
+        "https://www.kentucky.com/sports/spt-columns-blogs/mark-story/article317874265.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuvJNSnQJOot2FNlpu546hTGb6TD5CR5uUA8ONNk-1__SqHARVH86ufQYNj9A",
-      "image_credit": "El Colombiano",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsZUfQyyZq8TaZbAJoSTcBuJXD7Jijqezkp-8adgNi0ZhmcFuLvSlPr70KB9A",
+      "image_credit": "On3",
       "news": [
         {
-          "url": "https://www.elcolombiano.com/deportes/futbol/dim-vs-fortaleza-clasificacion-cuadrangulares-liga-betplay-2026-FB43245761",
-          "title": "¡Al todo o nada en Bogotá! El DIM visita a Fortaleza en busca del paso a los cuadrangulares | El Colombiano",
-          "publisher": "El Colombiano",
+          "url": "https://www.on3.com/teams/kentucky-wildcats/news/how-preston-spradlin-helped-kentucky-land-justin-mcbride/",
+          "title": "How Preston Spradlin helped Kentucky land Justin McBride",
+          "publisher": "On3",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuvJNSnQJOot2FNlpu546hTGb6TD5CR5uUA8ONNk-1__SqHARVH86ufQYNj9A"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsZUfQyyZq8TaZbAJoSTcBuJXD7Jijqezkp-8adgNi0ZhmcFuLvSlPr70KB9A"
         },
         {
-          "url": "https://www.teleantioquia.co/deportes/medellin-anuncio-otro-esperado-regreso-pero-martegani-y-quintero-siguen-descartados-ante-fortaleza-623682",
-          "title": "Medellín anunció otro esperado regreso, pero Martegani y Quintero siguen descartados ante Fortaleza",
-          "publisher": "Teleantioquia",
+          "url": "https://ukathletics.com/news/2026/11/05/big-blue-preview-kentucky-vs-james-madison/",
+          "title": "Big Blue Preview: Kentucky vs. James Madison",
+          "publisher": "UKAthletics",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXaIvEule0rvBZsHMRzvxNUSsOlTp6ISyVWN_ZiNPCQcrek6tpzcdgwIwg6ns"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfDk8DHwFjV0j3qBRMXLPvn53MtD-3OX6NGBJHFRpBT_bXOAF364VrFobd67E"
         },
         {
-          "url": "https://www.boyacaradio.com/noticia.php?id=65032",
-          "title": "La penúltima fecha de la Liga Dimayor comenzará este viernes",
-          "publisher": "Boyaca Radio",
+          "url": "https://www.kentucky.com/sports/spt-columns-blogs/mark-story/article317874265.html",
+          "title": "Where to watch, how to follow the UK men’s basketball game vs. James Madison",
+          "publisher": "Lexington Herald Leader",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2q8Q9-6jvRbodeVsAQoxZtlnwNGBIColfJ9BDnXMCWuMr79hfzBLMmM6Tsyw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUdqE9k3gFdw3mWCNQdYsarM0SHfFdrPPPXft8nPJwduGvl6Z1LQX-lJJ37Sw"
         }
       ]
     },
     {
-      "query": "sharks vs wild",
+      "query": "abdul el-sayed parents",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T00:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cmrly6j6lpydo",
+        "https://businessday.ng/world/article/nigerian-born-didi-okparake-six-other-africans-eye-us-congress-seat/",
+        "https://yen.com.gh/world/us/315090-meet-ghanaians-secured-victory-midterms/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9tWd6_4nIaUSXQPD8BP_ptfsbBQ937tIz9VwepXq5iIf2UqU9CQEheZ66E78",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cmrly6j6lpydo",
+          "title": "Abdul El-Sayed, Melat Kiros, Adrian Boafo: The politicians with African roots making history in the US midterms",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9tWd6_4nIaUSXQPD8BP_ptfsbBQ937tIz9VwepXq5iIf2UqU9CQEheZ66E78"
+        },
+        {
+          "url": "https://businessday.ng/world/article/nigerian-born-didi-okparake-six-other-africans-eye-us-congress-seat/",
+          "title": "Nigerian-born Didi Okparake, six other Africans eye US Congress seat",
+          "publisher": "Business News Nigeria",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQL6NRN25dmCWuaAhQYUuDKxKOINZUZT2Ry9R1GrHUrVcTNBzMevPr5anGikv4"
+        },
+        {
+          "url": "https://yen.com.gh/world/us/315090-meet-ghanaians-secured-victory-midterms/",
+          "title": "Meet the Ghanaian Politicians Who Secured Victory Over Trump’s People in the US Midterms",
+          "publisher": "Yen News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqzrqELefHtZ7GyOCbpUOrNZ6tdTBwrluOl7k7H4mVAeZdYN1OUHt0DR5K9E8"
+        }
+      ]
+    },
+    {
+      "query": "necaxa - tijuana",
       "approx_searches": "2000+",
-      "published_at": "2026-11-07T00:10:00Z",
+      "published_at": "2026-11-07T00:30:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/wild/video/faber-pregame-vs-sjs-6408032841112",
-        "https://www.mercurynews.com/2026/11/06/sharks-warsofsky-makes-lineup-changes-for-game-vs-minnesota-wild/",
-        "https://www.covers.com/nhl/sharks-vs-wild-prediction-picks-nov-6-2026"
+        "https://www.marca.com/mx/futbol/liga-mx/necaxa-tijuana/2026/11/07/01_0159_20261107_1174_4690-directo.html",
+        "https://www.facebook.com/MilenioDiario/posts/-es-hoy-es-hoyconoce-a-qu%C3%A9-hora-y-en-d%C3%B3nde-ver-el-necaxa-vs-tijuana-de-la-liga-m/1670714058419392/",
+        "https://psn.si/xolos-visita-rayos-rm/2026/11/06/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4PinN86UPwDJDRzhxUU4gKWQPlPGMY4xeYcrKybLBC_JDy5_0KomRMF-Ct7Y",
-      "image_credit": "NHL.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfD9DEAsI8t0FA_CoOuvT5FYCt3X4xdMOfYWLOfiCIG2YtAjSbqoHZkUeySi8",
+      "image_credit": "MARCA",
       "news": [
         {
-          "url": "https://www.nhl.com/wild/video/faber-pregame-vs-sjs-6408032841112",
-          "title": "Faber | Pregame vs. SJS",
-          "publisher": "NHL.com",
+          "url": "https://www.marca.com/mx/futbol/liga-mx/necaxa-tijuana/2026/11/07/01_0159_20261107_1174_4690-directo.html",
+          "title": "Necaxa - Tijuana EN VIVO | Gilberto Mora hoy en directo Liga MX",
+          "publisher": "MARCA",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4PinN86UPwDJDRzhxUU4gKWQPlPGMY4xeYcrKybLBC_JDy5_0KomRMF-Ct7Y"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfD9DEAsI8t0FA_CoOuvT5FYCt3X4xdMOfYWLOfiCIG2YtAjSbqoHZkUeySi8"
         },
         {
-          "url": "https://www.mercurynews.com/2026/11/06/sharks-warsofsky-makes-lineup-changes-for-game-vs-minnesota-wild/",
-          "title": "Sharks’ Warsofsky makes lineup changes for game vs. Minnesota Wild",
-          "publisher": "The Mercury News",
+          "url": "https://www.facebook.com/MilenioDiario/posts/-es-hoy-es-hoyconoce-a-qu%C3%A9-hora-y-en-d%C3%B3nde-ver-el-necaxa-vs-tijuana-de-la-liga-m/1670714058419392/",
+          "title": "⚽ ¡Es hoy, es hoy! Conoce a qué HORA y en DÓNDE VER el Necaxa vs Tijuana de la Liga MX ⚡🆚🐶",
+          "publisher": "Facebook",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjx2MXn-o7TUM4AJ9ESNk3RlJk2BCl-5__a8m7ogEpnMBqupJR6JwZtdf7_ic"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBhWLtdla7m2TVblxUjntE_426Z9BjLth9gfEZozFeLSoubUbps_O3ehWuQcg"
         },
         {
-          "url": "https://www.covers.com/nhl/sharks-vs-wild-prediction-picks-nov-6-2026",
-          "title": "Sharks vs Wild Prediction, Picks & Odds for Tonight’s NHL Game",
-          "publisher": "Covers.com",
+          "url": "https://psn.si/xolos-visita-rayos-rm/2026/11/06/",
+          "title": "Xolos de Tijuana visita a los Rayos",
+          "publisher": "PSN Noticias",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQK6e4vq1oJ8wsptNvLu-3NNKZ9CM_PJCJlGeRZ1kdFyizHOT5-CZXNiLEnE3w"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQH2QYwGpY4DNaRNwAe9lwzwlu8NyVo6O3sc-v7ygNVn7HsbZf8ro9E_dWsHlw"
         }
       ]
     },
     {
-      "query": "etsu vs nc state",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T00:10:00Z",
+      "query": "san luis - juárez",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-07T00:30:00Z",
       "related_news_urls": [
-        "https://www.backingthepack.com/nc-state-basketball/42173/game-thread-etsu-vs-nc-state",
-        "https://www.addictedtoquack.com/morning-quack-fix/64704/oregon-ducks-football-news",
-        "https://www.vuhoops.com/villanova-basketball/35487/villanova-wildcats-0-1-vs-holy-cross-crusaders-0-1-game-chat"
+        "https://www.facebook.com/MilenioDiario/posts/-se-vienecheca-a-qu%C3%A9-hora-y-por-d%C3%B3nde-ver-el-san-luis-vs-ju%C3%A1rez-de-la-liga-mx-/1670716078419190/",
+        "https://www.eluniversal.com.mx/deportes/san-luis-vs-fc-juarez-en-vivo-sigue-aqui-el-minuto-a-minuto-del-partido-del-apertura-2026/",
+        "https://fcjuarez.com/bravos-visita-al-atletico-de-san-luis-en-la-jornada-16-del-apertura-2026/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQECuRYV4Lb1nfDvQRk53uQmua8AuRTvptac2k_oveSvlo2_Beo6wKf3cQqqX8",
-      "image_credit": "Backing The Pack",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTONSmJyHZGThFYF6wbEju0Jw7gkXYoRsLbGxpNLWtQwAIfCM6mvrr289c1J6Y",
+      "image_credit": "Facebook",
       "news": [
         {
-          "url": "https://www.backingthepack.com/nc-state-basketball/42173/game-thread-etsu-vs-nc-state",
-          "title": "Game thread: ETSU vs. NC State",
-          "publisher": "Backing The Pack",
+          "url": "https://www.facebook.com/MilenioDiario/posts/-se-vienecheca-a-qu%C3%A9-hora-y-por-d%C3%B3nde-ver-el-san-luis-vs-ju%C3%A1rez-de-la-liga-mx-/1670716078419190/",
+          "title": "⚽ ¡Se viene! Checa a qué HORA y por DÓNDE VER el San Luis vs Juárez de la Liga MX ⛪🆚🐴",
+          "publisher": "Facebook",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQECuRYV4Lb1nfDvQRk53uQmua8AuRTvptac2k_oveSvlo2_Beo6wKf3cQqqX8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTONSmJyHZGThFYF6wbEju0Jw7gkXYoRsLbGxpNLWtQwAIfCM6mvrr289c1J6Y"
         },
         {
-          "url": "https://www.addictedtoquack.com/morning-quack-fix/64704/oregon-ducks-football-news",
-          "title": "Oregon Ducks Football News",
-          "publisher": "Addicted To Quack",
+          "url": "https://www.eluniversal.com.mx/deportes/san-luis-vs-fc-juarez-en-vivo-sigue-aqui-el-minuto-a-minuto-del-partido-del-apertura-2026/",
+          "title": "San Luis vs FC Juárez EN VIVO | Minuto a minuto del partido del Apertura 2026",
+          "publisher": "El Universal",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXBaqdh_ss078vIEABmADSJikN9Nwagufk6-KXHnmvW142yyVkWvEfEghnqDw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRog3JBur2mHZlnah0F1Gosompgfn2YdduTNmuZabdlmDbMLXwt_eVwaVyns8Q"
         },
         {
-          "url": "https://www.vuhoops.com/villanova-basketball/35487/villanova-wildcats-0-1-vs-holy-cross-crusaders-0-1-game-chat",
-          "title": "Villanova Wildcats (0-1) vs Holy Cross Crusaders (0-1): Game Chat",
-          "publisher": "VU Hoops",
+          "url": "https://fcjuarez.com/bravos-visita-al-atletico-de-san-luis-en-la-jornada-16-del-apertura-2026/",
+          "title": "Bravos visita al Atlético de San Luis en la Jornada 16 del Apertura 2026",
+          "publisher": "FC Juarez",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpDx-p-mFSMhLlexqI-gVyjFBrVex8p4ljRw0g4b0v_vEbOZOuw5-lVtT_Upw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_Wn-IffGJD2zqP0PCEjSC3qN2tk1T9VnDaT8AOtj3Rj5y0HwbxwP3xSpvDpk"
         }
       ]
     },
     {
-      "query": "delta air lines route cancellations",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T00:10:00Z",
+      "query": "delaware vs wisconsin",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-07T00:30:00Z",
       "related_news_urls": [
-        "https://simpleflying.com/delta-cancels-15-routes-from-3-busiest-hubs/",
-        "https://www.nj.com/news/2026/11/over-1331-flights-delayed-59-canceled-amid-widespread-us-travel-disruptions.html",
-        "https://www.travelmarketreport.com/air/articles/northeast-storms-bring-heavy-rain-sparking-ground-stops-at-jfk-and-lga"
+        "https://uwbadgers.com/news/2026/11/3/mens-basketball-five-things-to-know-wisconsin-welcomes-delaware",
+        "https://sports.yahoo.com/articles/wisconsin-badgers-vs-delaware-blue-002043676.html",
+        "https://www.jsonline.com/story/sports/college/uw/2026/11/06/watch-wisconsin-basketball-vs-delaware-tonight-time-tv-channel/92596568007/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTirg3p9VLn47J9I10rgwIIN8Phv61-qDvHN6MBnLFxlK0EKawsJAqlGR5AR_8",
-      "image_credit": "Simple Flying",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6_yJleeQ2oejmrcU3siGd9A7MAI2-NvJCOzpz_1rme7gLiR8A6Hx0HaZy0Ao",
+      "image_credit": "Wisconsin Badgers",
       "news": [
         {
-          "url": "https://simpleflying.com/delta-cancels-15-routes-from-3-busiest-hubs/",
-          "title": "Delta Air Lines Cancels 15 Routes From 3 Busiest Hubs: See Full List Now",
-          "publisher": "Simple Flying",
+          "url": "https://uwbadgers.com/news/2026/11/3/mens-basketball-five-things-to-know-wisconsin-welcomes-delaware",
+          "title": "Five Things to Know: Wisconsin welcomes Delaware",
+          "publisher": "Wisconsin Badgers",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTirg3p9VLn47J9I10rgwIIN8Phv61-qDvHN6MBnLFxlK0EKawsJAqlGR5AR_8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6_yJleeQ2oejmrcU3siGd9A7MAI2-NvJCOzpz_1rme7gLiR8A6Hx0HaZy0Ao"
         },
         {
-          "url": "https://www.nj.com/news/2026/11/over-1331-flights-delayed-59-canceled-amid-widespread-us-travel-disruptions.html",
-          "title": "Over 1,331 flights delayed, 59 canceled amid widespread U.S. travel disruptions",
-          "publisher": "NJ.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT99ydc-cQbRgOCocwTuoYc8bSViffb7IE8bkqLcZNQ9o-dUNKtHdhXkFNO_jY"
-        },
-        {
-          "url": "https://www.travelmarketreport.com/air/articles/northeast-storms-bring-heavy-rain-sparking-ground-stops-at-jfk-and-lga",
-          "title": "Northeast Storms Bring Heavy Rain, Sparking Ground Stops at JFK and LGA",
-          "publisher": "Travel Market Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSznnUD8NXZmtF_tcdaEKlfmIu5P8Lrq1VMXHW60k4hVJ2hVJDUndlxFoRzpe4"
-        }
-      ]
-    },
-    {
-      "query": "ducks vs flames",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T00:10:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/news/anaheim-ducks-calgary-flames-game-preview-november-6-2026",
-        "https://sports.yahoo.com/articles/devin-cooley-returns-ir-flames-201704225.html",
-        "https://www.covers.com/nhl/ducks-vs-flames-prediction-picks-nov-6-2026"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/news/anaheim-ducks-calgary-flames-game-preview-november-6-2026",
-          "title": "Ducks at Flames projected lineups",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/devin-cooley-returns-ir-flames-201704225.html",
-          "title": "Devin Cooley returns from IR as Flames host high-powered Ducks",
+          "url": "https://sports.yahoo.com/articles/wisconsin-badgers-vs-delaware-blue-002043676.html",
+          "title": "Wisconsin Badgers vs. Delaware Blue Hens Game Thread: Bounce back game?",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyNLPtffnAjk8qOmo8m8YQdX3qtXy95s4wkoPc2WO2zUU2QkkkvzfhxfcflZ4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOyyv7wSP5cpSzPqv85W04n7zKJZFinjjBDN3LkBn7TLENXbMuXjZ37p1baIs"
         },
         {
-          "url": "https://www.covers.com/nhl/ducks-vs-flames-prediction-picks-nov-6-2026",
-          "title": "Ducks vs Flames Prediction, Picks & Odds for Tonight’s NHL Game",
-          "publisher": "Covers.com",
+          "url": "https://www.jsonline.com/story/sports/college/uw/2026/11/06/watch-wisconsin-basketball-vs-delaware-tonight-time-tv-channel/92596568007/",
+          "title": "What channel is Wisconsin basketball on tonight? Time, TV, streaming",
+          "publisher": "Milwaukee Journal Sentinel",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUFfJnloRx_gggJ5W_xEZkYfuWwfFG4SGN4PC3G3Qa_sLsllwFnBtJIOqFAOI"
-        }
-      ]
-    },
-    {
-      "query": "nc state basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T00:10:00Z",
-      "related_news_urls": [
-        "https://www.backingthepack.com/nc-state-basketball/42143/nc-state-welcomes-the-east-tennessee-state-university-buccaneers",
-        "https://packinsider.com/2026/11/06/nc-state-etsu-basketball-odds-spread-series-history-2026/",
-        "https://247sports.com/college/north-carolina-state/article/nc-state-vs-etsu-2026-mens-basketball-game-thread-292259533/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh36D460yXeUMwj73jwVE-HVvc0w0i-uRmiMc7_giakIchOKYSqrPj6DZBJjg",
-      "image_credit": "Backing The Pack",
-      "news": [
-        {
-          "url": "https://www.backingthepack.com/nc-state-basketball/42143/nc-state-welcomes-the-east-tennessee-state-university-buccaneers",
-          "title": "NC State Welcomes the East Tennessee State University Buccaneers",
-          "publisher": "Backing The Pack",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh36D460yXeUMwj73jwVE-HVvc0w0i-uRmiMc7_giakIchOKYSqrPj6DZBJjg"
-        },
-        {
-          "url": "https://packinsider.com/2026/11/06/nc-state-etsu-basketball-odds-spread-series-history-2026/",
-          "title": "NC State vs. ETSU: A Surprising Losing Streak and Tonight's Betting Odds",
-          "publisher": "PackInsider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS39QTaKRUtAc18UTP_8Ab7rZlhrBPruvlLw-rk7UAW3_HHbofTmH736liU3eA"
-        },
-        {
-          "url": "https://247sports.com/college/north-carolina-state/article/nc-state-vs-etsu-2026-mens-basketball-game-thread-292259533/",
-          "title": "NC State vs. ETSU 2026 men's basketball game thread",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsVXRiMSCLJx8ee1_qysUn4s82PvDjkptFtWkKWYHqshO4cnovkyfA94QKG38"
-        }
-      ]
-    },
-    {
-      "query": "alabama basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T00:10:00Z",
-      "related_news_urls": [
-        "https://www.al.com/alabamabasketball/2026/11/an-elite-foodie-and-basketball-coach-returns-to-tuscaloosa-for-clash-with-alabama.html",
-        "https://www.rollbamaroll.com/alabama-crimson-tide-basketball/85981/alabama-basketball-vs-arkansas-state-3-keys-how-to-watch",
-        "https://tdalabamamag.com/2026/11/05/oats-sends-message-to-alabama-fans-after-low-attendance/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIihVdLESRNRj1aRm1PkTURhnM4JpkN5i_5wo4Fe-igEMJkvsqRBfzOd90ihs",
-      "image_credit": "AL.com",
-      "news": [
-        {
-          "url": "https://www.al.com/alabamabasketball/2026/11/an-elite-foodie-and-basketball-coach-returns-to-tuscaloosa-for-clash-with-alabama.html",
-          "title": "An ‘elite’ foodie and basketball coach returns to Tuscaloosa for clash with Alabama",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIihVdLESRNRj1aRm1PkTURhnM4JpkN5i_5wo4Fe-igEMJkvsqRBfzOd90ihs"
-        },
-        {
-          "url": "https://www.rollbamaroll.com/alabama-crimson-tide-basketball/85981/alabama-basketball-vs-arkansas-state-3-keys-how-to-watch",
-          "title": "Alabama Basketball vs Arkansas State: 3 Keys, How to Watch",
-          "publisher": "Roll 'Bama Roll",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDD5ioxYBuj4Q2QOna7cso_r1CnMBgD2_D__jpeoBH97dpb3tUzJzb8sDMS8Y"
-        },
-        {
-          "url": "https://tdalabamamag.com/2026/11/05/oats-sends-message-to-alabama-fans-after-low-attendance/",
-          "title": "Nate Oats sends message to Alabama fans after low attendance for season opener",
-          "publisher": "Touchdown Alabama",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAlXasjYNmvH3JmxJ5B26FpHopM1iRtzRCTK0P1TSYNwO-VjyxqFqu4euMdl4"
-        }
-      ]
-    },
-    {
-      "query": "iowa basketball",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-07T00:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/womens-college-basketball/recap/_/gameId/401921425",
-        "https://www.hawkcentral.com/story/sports/college/iowa/basketball-men/2026/11/06/iowa-mens-basketball-how-to-watch-channel-time-hawkeyes-eastern-illinois/92623355007/",
-        "https://hawkfanatic.com/2026/11/05/no-10-iowa-women-crush-eastern-illinois-80-39-up-next-uconn-sunday-in-storrs/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQxiwIOGmbYTrl-iVXeyq4OXZqN1Zh6EsUQDnxlo82FzbFDQtnBXNmqqJmvVg",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401921425",
-          "title": "Iowa 80-39 Eastern Illinois (Nov 5, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQxiwIOGmbYTrl-iVXeyq4OXZqN1Zh6EsUQDnxlo82FzbFDQtnBXNmqqJmvVg"
-        },
-        {
-          "url": "https://www.hawkcentral.com/story/sports/college/iowa/basketball-men/2026/11/06/iowa-mens-basketball-how-to-watch-channel-time-hawkeyes-eastern-illinois/92623355007/",
-          "title": "How to watch Iowa men's basketball vs Eastern Illinois on Friday",
-          "publisher": "Hawk Central",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSh2PN6cqzKHgpfl50m4IIKRSnAGS2V4C2ZDVjfY47cr2IofKXlVXOk7DxNIBY"
-        },
-        {
-          "url": "https://hawkfanatic.com/2026/11/05/no-10-iowa-women-crush-eastern-illinois-80-39-up-next-uconn-sunday-in-storrs/",
-          "title": "No. 10 Iowa women crush Eastern Illinois 80-39; up next UConn Sunday in Storrs",
-          "publisher": "HawkFanatic",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqToZSy-QhIaknp919zQlgXd5Zo05h0Io3aTkJHEu-Gf7d57N6vldiy7TqKOg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1ixx8pJy6QxsQiBXH7M9oYpX7qS-G3stLcjV-0SCyoLgaPeNfaq6ocqmYJfc"
         }
       ]
     }
