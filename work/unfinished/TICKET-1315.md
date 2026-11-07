@@ -3,11 +3,11 @@ issue: 1315
 project: "QuantaPhi Quant feed/ads and privacy"
 source_requests:
   - https://github.com/www-infinity4/QuantaPhi/issues/1315
-state: scoped
+state: implementing
 dot: "🔴"
-progress_percent: 0
+progress_percent: 15
 progress_basis: "Issue scoped, no independently accepted product, partner grant, payout or email send; Explainable in-app ranking, sponsor disclosure, consented metrics and zero unrelated wallet mutation"
-sessions_spent: 1
+sessions_spent: 2
 sessions_remaining_estimate: unknown
 agent: "ChatGPT issue scoping, no coordinator lease"
 lease_id: null
@@ -17,14 +17,23 @@ fence: null
 repo: www-infinity4/QuantaPhi
 branch: docs/partner-funding-outreach-tickets-1312-1317
 head_sha: null
-pr: null
+pr: 1738
 tests: []
 merged: false
 deployed: false
 live_verified: false
 blocker: "External provider qualification and/or account-specific delegated permissions not yet verified"
-next_action: "Inspect QuantaPhi first-party feed ranking, source attribution, ad controls and wallet isolation"
+next_action: "Run exact-head CI on PR #1738, resolve merge conflicts without overwriting main, inspect editorial photo rights, then review mobile/Public/Following acceptance"
 ---
+
+# TICKET-1315: QuantaPhi Quant feed/ads and privacy
+
+## November 7, 2026 session · OTC essentials batch
+- Continued the existing Power Chain Follow PR #1738 on its existing branch. Created a reviewed, editorial four-product pilot: Blue Star 2 oz, Campho-Phenique, Aveeno Anti-Itch, and Sarna Original, with original retailer URLs and source-hosted photographs.
+- Built a deterministic 120-card-per-batch validator: unique IDs, source HTTPS, source-photo HTTPS, explicit review state, staleness expiry, no price/stock/trending/sponsor invention.
+- Reused Oracle Public / Following and shared Follow, Star, Collect, Share, +1 Build actions; added explicit opt-in Skin relief Power Chain, while disabling behavioral personalization on health cards.
+- Local RED: test module missing; GREEN: five Node tests passed on candidate contents (prior to GitHub writing). Exact-head GitHub CI, the responsive in-site browser, licensed photo rights for commercial advertisements, PR merge and production deployment have **not** been verified.
+- Estimated 15% of full #1315 acceptance, not release complete. No coordinator lease was obtained; no payment, wallet, purchase, signup, or commercial placement authorized.
 
 # TICKET-1315: QuantaPhi Quant feed/ads and privacy
 
