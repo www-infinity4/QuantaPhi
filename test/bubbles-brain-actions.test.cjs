@@ -272,3 +272,21 @@ test('image repair resolves latest owner images without promoting filenames or a
  assert.equal(resolveRepairRequest('Fix it',[...history,{role:'user',text:'What is the weather?'}]),'');
  assert.equal(resolveRepairRequest('Fix it',[]),'');
 });
+
+
+test('repository creation preserves a multiword project name and its requested build',()=>{
+ const {repositoryCreationIntent}=require('../bubbles-brain-actions.js');
+ const work='Create a repo named continuity builder design the files to operate as Bubbles continuing builds. Add the TV carousel and advertising data.';
+ assert.deepEqual(repositoryCreationIntent(work),{name:'continuity-builder',continueBuild:true});
+ assert.deepEqual(repositoryCreationIntent('Create a repository called Fresh Studio and implement its cards'),{name:'Fresh-Studio',continueBuild:true});
+ assert.deepEqual(repositoryCreationIntent('Create a repo named Rain'),{name:'Rain',continueBuild:false});
+ assert.equal(repositoryCreationIntent('How do I create a repo named Rain?'),null);
+ assert.equal(repositoryCreationIntent('Create a repo without a name'),null);
+});
+
+test('owner repo creation with an explicitly requested package continues to the authenticated runner',()=>{
+ const src=fs.readFileSync(require.resolve('../bubbles-ai.js'),'utf8');
+ assert.match(src,/repositoryCreationIntent\?\.\(request\)/);
+ assert.match(src,/createdRepositoryPackage/);
+ assert.match(src,/submitRepositoryWork\(engineeringRequest/);
+});
