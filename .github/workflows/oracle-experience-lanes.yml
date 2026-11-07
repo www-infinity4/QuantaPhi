@@ -1,0 +1,35 @@
+name: Oracle Octaves creator and documentary carousels
+on:
+  pull_request:
+    paths:
+      - 'oracle-experience-lanes.*'
+      - 'oracle-curated-catalog.mjs'
+      - 'oracle-card-deck.js'
+      - 'phi-image-builder.js'
+      - 'phi-story-writer.js'
+      - 'restricted-dispensary-cards.mjs'
+      - 'test/oracle-curated-catalog.test.mjs'
+      - 'index.html'
+      - '.github/workflows/oracle-experience-lanes.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  oracle-carousels:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate exact-branch JavaScript
+        run: |
+          node --check oracle-curated-catalog.mjs
+          node --check oracle-experience-lanes.mjs
+          node --check oracle-card-deck.js
+          node --check phi-image-builder.js
+          node --check phi-story-writer.js
+          node --check restricted-dispensary-cards.mjs
+      - name: Check reviewed publisher catalog and carousel behavior
+        run: node --test test/oracle-curated-catalog.test.mjs
