@@ -7,7 +7,7 @@ export function mountXTwitterCard(root){
  if(!root||typeof document==='undefined')return null;
  const state={tab:'public',connected:false,canPost:false,canLike:false,pending:false,posts:[],spaces:[],profile:null,archive:[],topic:'technology',updatedAt:null,notice:'Connect your QuantaPhi wallet and X account to load genuine posts.'};
  const card=el('article','xt-card'),head=el('header','xt-head'),title=el('h2','', '𝕏 · Twitter'),caption=el('p','xt-caption','Original X content, inside an Infinity card. No fake posts or likes.');
- const connect=el('a','xt-button xt-connect','Connect X account');connect.href='/connect-x';connect.setAttribute('aria-label','Connect your X account through QuantaPhi');
+ const connect=el('a','xt-button xt-connect','Connect X · read & reply');connect.href='/connect-x?write=1';connect.setAttribute('aria-label','Connect your X account through QuantaPhi');
  const write=el('a','xt-button xt-write','Enable posting');write.href='/connect-x?write=1';
  const profile=el('button','xt-button xt-profile','Profile'),compose=el('button','xt-button xt-compose','Compose');profile.type=compose.type='button';
  append(head,append(el('div','xt-title'),title,caption),append(el('div','xt-head-actions'),profile,compose,connect,write));
@@ -33,6 +33,7 @@ export function mountXTwitterCard(root){
  append(actions,cancel,send);append(dialog,dialogTitle,dialogNote,textarea,counter,feedback,actions);
  append(card,head,tabs,search,notice,timeline,footer,dialog);root.replaceChildren(card);
  let replyTo=null;
+ let queuedLoad=false;
  const openComposer=(id=null)=>{replyTo=id;dialogTitle.textContent=id?'Reply on X':'Compose on X';textarea.value='';counter.textContent='0 / 280';feedback.textContent='';if(typeof dialog.showModal==='function')dialog.showModal();else dialog.setAttribute('open','');textarea.focus()};
  const closeComposer=()=>{if(typeof dialog.close==='function')dialog.close();else dialog.removeAttribute('open')};
  textarea.addEventListener('input',()=>{counter.textContent=Array.from(textarea.value).length+' / 280'});
@@ -105,7 +106,7 @@ export function mountXTwitterCard(root){
    else{const p=state.profile.profile,box=el('section','xt-post'),a=el('a','xt-button','Open full profile on X');a.href=p.url;a.target='_blank';a.rel='noopener noreferrer';
     append(box,text('h3',p.name||p.handle),text('p','@'+p.handle,'xt-muted'),text('p',p.description||''),a);timeline.append(box)}
   }
-  fetched.textContent=state.updatedAt?'X API verified · '+new Date(state.updatedAt).toLocaleTimeString():'No live X data loaded';
+  fetched.textContent=state.updatedAt?(state.tab==='archive'?'Media Star index · ':'X API verified · ')+new Date(state.updatedAt).toLocaleTimeString():'No live X data loaded';
   select();
  }
  async function act(path,payload,success){
@@ -128,7 +129,8 @@ export function mountXTwitterCard(root){
   if(reload)void load();
  });
  async function load(){
-  if(state.pending)return;
+  if(state.pending){queuedLoad=true;return}
+  const requestedTab=state.tab,requestedTopic=state.topic;
   state.pending=true;refresh.disabled=true;status('Reading X source data…');
   // Never keep stale live cards visible after a failed refresh.
   if(state.tab==='spaces'){state.spaces=[];render()}
@@ -137,18 +139,19 @@ export function mountXTwitterCard(root){
    state.connected=Boolean(account.xConnected);state.canPost=Boolean(account.canPost);state.canLike=Boolean(account.canLike);
    if(!state.connected){
     state.posts=[];state.spaces=[];state.profile=null;state.archive=[];
-    status('No authorized X connection. Connect your account, then return to this card.');render();return;
+    status('Connect X once to load genuine feeds and reply in this card. X permission is requested on its official consent screen.');render();return;
    }
    let result;
    if(state.tab==='profile'){result=await api('/v1/x/profile');state.profile=result}
    if(state.tab==='public'||state.tab==='following'){result=await api('/v1/x/timeline?feed='+state.tab+(state.tab==='public'?'&q='+encodeURIComponent(state.topic):''));state.posts=result.posts||[]}
    if(state.tab==='spaces'){result=await api('/v1/x/spaces/live?q='+encodeURIComponent(state.topic));state.spaces=(result.spaces||[]).filter(s=>s.state==='live')}
    if(state.tab==='archive'){result=await api('/v1/x/archive');state.archive=result.spaces||[]}
+   if(state.tab!==requestedTab||state.topic!==requestedTopic){queuedLoad=true;return}
    state.updatedAt=result?.fetchedAt||new Date().toISOString();
-   status(state.tab==='spaces'?'Live-only X Space results · refreshes while this tab is visible.': 'Showing only verified X API records.');
+   status(state.tab==='spaces'?'Live-only X Space results · refreshes while this tab is visible.':state.tab==='archive'?'Showing indexed Space links, not verified X API playback.':state.canPost?'Showing genuine X posts. Reply without leaving the card.':'Showing genuine X posts. Select Enable posting to authorize in-card replies.');
    render();
   }catch(e){if(state.tab==='spaces')state.spaces=[];if(state.tab==='public'||state.tab==='following')state.posts=[];status('X data unavailable: '+String(e.message||e)+'. No estimated or stale records displayed.');render()}
-  finally{state.pending=false;refresh.disabled=false}
+  finally{state.pending=false;refresh.disabled=false;if(queuedLoad){queuedLoad=false;void load()}}
  }
  // Rate-limited fetch only for the visible live tab; never label ended Spaces as current.
  const poll=setInterval(()=>{if(root.isConnected&&state.tab==='spaces'&&document.visibilityState==='visible'&&!state.pending)void load();if(!root.isConnected)clearInterval(poll)},90000);
