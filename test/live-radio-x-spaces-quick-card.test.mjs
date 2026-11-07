@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import {test} from 'node:test';
 import {readFileSync} from 'node:fs';
 import {validSpaceLink, normalizeSpaceEntry, filterSpaceEntries} from '../x-spaces-quick-card.mjs';
+import {readVerifiedLiveSpaces} from '../quanta-feed-spaces.mjs';
 
 const read=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 
@@ -59,4 +60,25 @@ test('Spaces card has a live-source view and keeps audio status truthful',()=>{
  assert.match(source,/Listen here/);
  assert.doesNotMatch(source,/iframe\.src\s*=\s*chosen\.url|<iframe\s+src.*spaces/);
  assert.match(source,/Playback on this site is not available/);
+});
+
+test('live X Spaces search uses wallet authorization and rejects ended or fabricated sessions',async()=>{
+ const token='sq_'+'t'.repeat(36);
+ const urls=[];
+ const fetcher=async (url,opts)=>{
+  urls.push(String(url));
+  assert.equal(opts.headers.Authorization,'Bearer '+token);
+  return Response.json({source:'x_api_live',fetchedAt:'2026-11-06T21:00:00Z',spaces:[
+   {state:'live',source:'x_api_live',title:'Genuine Space',creatorHandle:'ActualHost',url:'https://x.com/i/spaces/1OyKAjYPeXqGb'},
+   {state:'ended',source:'x_api_live',title:'Ended',url:'https://x.com/i/spaces/1BRJjPRygqaKw'},
+   {state:'live',source:'owner_import',title:'Unverified',url:'https://x.com/i/spaces/1BRJjPRygqaKw'}
+  ]});
+ };
+ const live=await readVerifiedLiveSpaces({token,topic:'technology',fetcher});
+ assert.equal(urls.length,1);
+ assert.ok(urls[0].includes('/v1/x/spaces/live?q=technology'));
+ assert.deepEqual(live.spaces.map(x=>x.title),['Genuine Space']);
+ await assert.rejects(()=>readVerifiedLiveSpaces({token:'bad',topic:'technology',fetcher}),/wallet_not_connected/);
+ await assert.rejects(()=>readVerifiedLiveSpaces({token,topic:'//abuse',fetcher}),/invalid_space_topic/);
+ assert.equal(urls.length,1);
 });
