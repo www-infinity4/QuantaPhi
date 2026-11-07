@@ -49,6 +49,9 @@ body.oracle-card-deck-active main.app>#infinityAdultContentCard{display:none!imp
 #oracleExperienceLanes #phiImageBuilder #pi-prompt{min-height:130px;font:400 18px/1.52 system-ui,sans-serif;letter-spacing:.015em}
 #oracleExperienceLanes #phiImageBuilder .pi-primary{font-size:18px;min-height:55px}
 #oracleExperienceLanes #phiStoryWriter .sw-card{max-width:100%;margin:0;background:#fff;color:#34243f;box-shadow:none;border:1px solid #e4d4ee;border-radius:18px}
+#oracleExperienceLanes #phiStoryWriter .sw-advanced{margin:10px 0 14px;padding:12px;border:1px solid #d4c1e5;border-radius:12px;background:#fcfaff}
+#oracleExperienceLanes #phiStoryWriter .sw-advanced>summary{cursor:pointer;font-size:15px;font-weight:750;color:#54317d;min-height:38px}
+#oracleExperienceLanes #phiStoryWriter .sw-primary{min-height:54px;font-size:17px}
 #oracleExperienceLanes #phiStoryWriter textarea{font:400 18px/1.55 system-ui,sans-serif;min-height:135px}
 @media(max-width:390px){#oracleExperienceLanes{font-size:16px;gap:17px}#oracleExperienceLanes .ioc-lane{padding:11px;border-radius:17px}#oracleExperienceLanes .ioc-video{padding:10px}#oracleExperienceLanes .ioc-nav{grid-template-columns:44px minmax(0,1fr) 44px}}
 @media(prefers-reduced-motion:reduce){#oracleExperienceLanes *,#oracleExperienceLanes *::before,#oracleExperienceLanes *::after{transition:none!important;animation:none!important}}
