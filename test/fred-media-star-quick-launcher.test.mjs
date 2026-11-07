@@ -16,7 +16,7 @@ test('a top-level radio-style button opens the existing Fred Media Star in the O
   assert.match(styles, /min-height:\s*48px/);
   assert.match(styles, /width:\s*48px;height:\s*48px/);
   assert.match(deck, /document\.querySelectorAll\('\[data-oracle-spotlight\]'\)/);
-  assert.match(deck, /show\(entry\);host\.scrollIntoView/);
+  assert.match(deck, /show\(entry\);host\.scrollIntoView\?\./);
 });
 
 test('Fred launcher never spends StarCoins, simulates in-card audio or bypasses the original ledger', () => {
