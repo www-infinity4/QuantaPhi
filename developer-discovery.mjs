@@ -187,7 +187,7 @@ export function mountDeveloperDiscovery({root,stage,addResources,showIndex}){
   const snapshot=await response.json();
   if(snapshot?.schema_version!==1||!Array.isArray(snapshot.items))return;
   const good=snapshot.items.map(validateIndexedResource).filter(Boolean)
-   .filter(x=>!seen.has(x.id)).slice(0,1800);
+   .filter(x=>!seen.has(x.id)).slice(0,5000);
   good.forEach(x=>seen.add(x.id));
   addResources(good);
   if(page===0&&!busy&&good.length)
