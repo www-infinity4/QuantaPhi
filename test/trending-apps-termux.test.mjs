@@ -29,7 +29,7 @@ test('show only actual source-matched apps as trending; keep others named Featur
  assert.equal(rows[0].trend,'verified');
  assert.equal(rows.find(x=>x.id==='firefox').trend,'verified');
  assert.equal(rows.find(x=>x.id==='signal').trend,'featured');
- assert.equal(trendForApp('termux',feed.topics)?.query,'Termux app');
+ assert.equal(trendForApp('termux',feed.topics,NOW)?.query,'Termux app');
 });
 test('stale, future, malformed or fake Google counts never count as trending',()=>{
  const badDate={...feed,checked_at:'2026-09-01T00:00:00Z'};
