@@ -185,7 +185,7 @@ function registerSourceCards(){
  // Each real homepage widget gets its own direction and Follow state.
  // Move the ORIGINAL article, preserving its search field, player and listeners.
  let added=false;
- for(const node of document.querySelectorAll('#siteQuickCards .iqc-card[data-source-id], #premiumSourceCards .iqc-card[data-source-id], #brandProductCards .iqc-card[data-source-id], #verifiedBrandSportsCards .iqc-card[data-source-id], #infinityAcceptedCards .iqc-card[data-source-id]')){
+ for(const node of document.querySelectorAll('#siteQuickCards .iqc-card[data-source-id], #premiumSourceCards .iqc-card[data-source-id], #brandProductCards .iqc-card[data-source-id], #essentialsQuickCards .iqc-card[data-source-id], #verifiedBrandSportsCards .iqc-card[data-source-id], #infinityAcceptedCards .iqc-card[data-source-id]')){
   if(node.dataset.sourceReady!=='true')continue;
   const id=node.dataset.sourceId;
   if(!/^[a-z0-9-]+$/.test(id||'')||entries.some(e=>e.feedId===id))continue;
@@ -211,7 +211,7 @@ window.addEventListener('quantaphi:source-cards-ready',registerSourceCards);
 // Dynamically mount every loaded, original Cloudflare store listing as its own
 // Oracle card. No personal browsing telemetry, sale controls, or fake ratings.
 function registerDirectoryCards(){
- if(document.getElementById('oracleExperienceLanes'))return; // Exclusive opt-in 21+ carousel owns directory listings.
+ if(document.getElementById('oracleExperienceLanes'))return; // Opt-in 21+ lane owns directory listings.
  let added=false;
  for(const node of document.querySelectorAll('[data-directory-store-id]')){
   const id=node.id;
@@ -293,7 +293,7 @@ window.addEventListener('quantaphi:trending-app-cards-ready',registerTrendingApp
 // Discover widgets mounted after the deferred deck script, including roots that
 // did not exist at its first scan. Reparenting is ignored once registered.
 function registerLateWidgets(){
- // Keep dedicated developer, creator and adult cards in their own carousels.
+ // Preserve exclusive ownership of original creator, developer, and adult cards.
  let added=false;
  for(const [id,title] of unique){
   if(reservedForDedicatedLanes.has(id)||id.startsWith('dispensary-'))continue;
