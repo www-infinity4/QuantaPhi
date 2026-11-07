@@ -1,11 +1,11 @@
 ---
 issue: 1603
-project: "Oracle Octaves creator, physics, cartoons, documentaries, TV and 21+ carousel"
+project: "Oracle Octaves creator, image generators, physics, cartoons, documentaries, TV and 21+ carousels"
 state: source_tested
 dot: "🔴"
-progress_percent: 55
-progress_basis: "Six distinct source lanes and 14 reviewed media links staged; dedicated exact-head Node CI passed; Android image, story, media and age-gate acceptance and independent review remain."
-sessions_spent: 1
+progress_percent: 62
+progress_basis: "Six original SVG image-generator Quick Cards driven by reviewed source records and 14 video records; focused CI and isolated Android Chromium tests passed. Independent review, merge, live provider, deployment and full Android acceptance remain."
+sessions_spent: 2
 sessions_remaining_estimate: "unknown; independent review, Android browser and publish stages pending"
 agent: "ChatGPT"
 lease_id: null
@@ -14,13 +14,13 @@ lease_expires_at: null
 task_session_id: null
 repo: www-infinity4/QuantaPhi
 branch: feat/oracle-creative-media-1603-20261107
-last_observed_utc: "2026-11-07T10:20:00Z"
-tests: "PR #1792 GitHub Actions run 42363357215 passed syntax and Node catalog checks; full-suite image test adaptation and ledger metadata pending new exact-head CI"
+last_observed_utc: "2026-11-07T21:40:00Z"
+tests: "PR #1792 head e6c707fd714acc474c59a72a5b5bb650c87d28e7: focused workflow run 42416920123 passed Node catalogs, source audit tests, original Image Printer checks, and real local SVG/PNG print browser tests at 320/360/393px."
 merged: false
 deployed: false
 live_verified: false
-blocker: "Independent review and real embedded YouTube / image renderer / 21+ Android acceptance not demonstrated"
-next_action: "Rerun exact-head CI, inspect image-quality and ledger regressions, and verify Android browser controls on the draft PR before any merge."
+blocker: "Independent approval unavailable; PR conflicts/main drift may recur; live Cloudflare image rendering, external videos, 21+ and deployed Android acceptance unverified."
+next_action: "Obtain independent source/rights review, reconcile latest main, verify exact-head required checks; then permitted merge and live Android/Cloudflare readback."
 ---
 
 # TICKET-1603 — Oracle Octaves creator, physics, media and optional 21+ carousels
@@ -42,3 +42,14 @@ next_action: "Rerun exact-head CI, inspect image-quality and ledger regressions,
 - **Collisions:** Keep existing developer carousel PR #1791 and 27-department/21+ PR #1485 independent. Compare shared Oracle deck edits before merging.
 - **Next single executable action:** Open draft PR from this branch against main, run and inspect exact-head CI, then reproduce the six lanes in a real Android-sized browser with original renderer and one-player checks; return failing tests to this same issue.
 - **Release gate:** independent review/approval, CI pass on exact SHA, permitted merge, actual deployed readback and in-card Android acceptance. Do not treat PR creation as a release.
+
+
+## Session 2 — source-backed Image Generator Lab (November 7, 2026)
+
+- **Owner request:** manufacture a carousel of image-generator Quick Cards backed by real GitHub/WWW creative-tool sources and a provenance database; no fake cards or unverified AI provider access.
+- **Source database:** [data/image-generator-sources.json](../../data/image-generator-sources.json) records six individual GitHub repositories, original websites, license identifiers, human-readable rights notes and review date, all checked through public GitHub repository metadata on November 7. References are *reference-only*; **no external repo code, avatar styles, provider keys or site images were copied or executed**.
+- **Original working generators:** gradient painter, geometric wallpaper, hand-drawn-style curves, social poster, geometric avatar/identicon and radial mandala. [image-generator-source-core.mjs](../../image-generator-source-core.mjs) prints deterministic bounded/escaped original SVGs; [image-generator-lab.mjs](../../image-generator-lab.mjs) instantiates each validated catalog record into one Android-width interactive Quick Card, supports Print image, SVG and PNG downloads, offline artwork preview, saved drafts while paging and source links. Source failure hides unverified cards rather than silently fabricating them.
+- **Read-only source refresh:** [scripts/refresh-image-generator-sources.mjs](../../scripts/refresh-image-generator-sources.mjs) reads *only official GitHub repo metadata* and produces a review-required/matches artifact. Workflow has a weekly scheduled or manual audit after it reaches the default branch, not unapproved auto-publication or arbitrary web scraping.
+- **Exact-head focused CI:** commit `e6c707fd714acc474c59a72a5b5bb650c87d28e7`, [run 42416920123](https://github.com/www-infinity4/QuantaPhi/actions/runs/42416920123), **passed** code syntax, six-source validation, source-audit failure tests, existing Oracle video catalog, original Image Printer tests and real Chromium SVG/PNG print controls at 320/360/393 pixels, including fail-closed catalog response. Earlier red test-fixture mistakes were corrected before the passing run.
+- **Still NOT done:** independent approval, merge/deployment/live testing, third-party source site rights to embed (not requested), real external diffusion-model API integration (no grant or endpoint), Bubbles runtime producer automation beyond reviewed static source ingestion, and full end-to-end main-page Android acceptance. The in-card generator is real original *vector* art; do not market it as diffusion/photorealistic AI model output.
+- **Next safe action:** independent reviewer, exact current-head mergeability and required CI, approved merge, deployment receipt, then user-visible Android and source audit readback.
