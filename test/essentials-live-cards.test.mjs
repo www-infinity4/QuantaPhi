@@ -56,6 +56,6 @@ test('homepage directly spotlights both ORIGINAL cards inside Oracle and never l
  assert.match(deck,/#essentialsQuickCards \.iqc-card\[data-source-id\]/);
  assert.match(ui,/mountCardActions/);
  assert.match(ui,/quantaphi:source-cards-ready/);
- assert.match(ui,/data\.sourceReady='true'/);
- assert.match(ui,/data\.personalization='disabled'/);
+ assert.match(ui,/dataset\.sourceReady='true'/);
+ assert.match(ui,/dataset\.personalization='disabled'/);
 });
