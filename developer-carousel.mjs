@@ -6,7 +6,6 @@ import {BUILDER_CARDS,nextDeveloperCardIndex} from './developer-carousel-core.mj
 const root=document.getElementById('developerCarousel');
 if(root){
  const stage=document.getElementById('developerCardStage');
- const bank=document.getElementById('developerCardBank');
  const previous=document.getElementById('developerCardPrevious');
  const next=document.getElementById('developerCardNext');
  const now=document.getElementById('developerCardNow');
@@ -29,6 +28,20 @@ if(root){
   frame.loading='lazy';
   frame.referrerPolicy='strict-origin-when-cross-origin';
   frame.src='/quick-card-builder.html?developer=1';
+  // The first-party publisher is same-origin. Size to its real form so Android
+  // users scroll the QuantaPhi page instead of a second nested iframe scrollbar.
+  frame.addEventListener('load',()=>{
+   try{
+    const inner=frame.contentDocument;
+    if(!inner?.documentElement)return;
+    const fit=()=>{const h=Math.max(inner.documentElement.scrollHeight,inner.body?.scrollHeight||0);
+     if(Number.isFinite(h)&&h>0)frame.style.height=Math.max(800,Math.min(6000,Math.ceil(h+12)))+'px';};
+    fit();
+    const observer=new ResizeObserver(fit);
+    observer.observe(inner.documentElement);
+    if(inner.body)observer.observe(inner.body);
+   }catch{/* The original full-page builder link remains available if framing changes. */}
+  });
   const fallback=card.appendChild(create('p','developer-quickcard-fallback'));
   const link=fallback.appendChild(create('a',null,'Open the full Quick Card builder on QuantaPhi'));
   link.href='/quick-card-builder.html';
@@ -38,7 +51,10 @@ if(root){
   const node=info.id==='quickCardBuilderInline'?publisherCard():document.getElementById(info.id);
   if(!node)return null; // An unavailable original tool must never become a fake card.
   node.dataset.developerCard=info.id;
-  bank.appendChild(node);
+  // Park each existing widget ONCE in a stable panel. Reparenting an iframe on
+  // every arrow click can reload it and destroy a creator's unsent form draft.
+  stage.appendChild(node);
+  node.hidden=true;
   return {...info,node};
  }).filter(Boolean);
  let current=null,index=0;
@@ -52,8 +68,7 @@ if(root){
   if(!cards.length)return;
   const target=cards[nextIndex];
   if(current===target)return;
-  if(current)bank.appendChild(current.node);
-  stage.appendChild(target.node);
+  cards.forEach((card,i)=>{card.node.hidden=i!==nextIndex;});
   current=target;index=nextIndex;
   now.textContent=target.label;
   stage.setAttribute('aria-label',target.label+' original builder');
