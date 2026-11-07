@@ -37,6 +37,8 @@ test('play shortcut updates only to a verified unlocked original X source; no fa
  const html=read('index.html'),player=read('fred-spaces-radio.js');
  assert.match(player,/const replay=allowed\?active:byId\.get\(FIRST\)/);
  assert.match(player,/quickPlay\.href=replay\.source/);
+ assert.match(player,/const FIRST_REPLAY = "https:\/\/x\.com\/i\/spaces\/1OyKAjYPeXqGb"/);
+ assert.match(player,/e\.id===FIRST\?\{\.\.\.e,source:FIRST_REPLAY\}:e/);
  assert.match(player,/quickPlay\.setAttribute\('aria-label'/);
  assert.match(player,/if\(saved&&\(saved\.id===FIRST\|\|unlocked\.has\(saved\.id\)\)\)active=saved/);
  assert.match(player,/play\.href=active\.source;play\.target="_blank"/);
