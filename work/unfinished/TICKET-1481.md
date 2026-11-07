@@ -64,3 +64,15 @@ next_action: "Run exact-head coupon and unfinished-ledger CI for PR #1621, then 
 5. Security/release review plus independent production readback before closing.
 
 **Next one executable action:** open the feature PR, inspect exact-head coupon CI, and fix any source failures. Preserve distinct merge, deployment and live-verification gates.
+
+## 2026-11-06 store-readiness update
+
+- Added coupon-store-readiness.mjs, which checks an actual saved, still-current reviewed offer against a selected retailer route. It never claims a coupon was accepted, applied at a register or saved money.
+- Fixed the Coupon Wallet UI to select a genuinely saved offer. When the feed is empty, it says no current coupon rather than generating a fictional paper/app offer.
+- Added eight store-readiness unit tests: empty feed, Walmart paper requirement, digital-screen denial, Walmart.com seller validation, McDonald's app restriction, stale/expired/unreviewed, rebate vs till discount, and unknown route.
+- Expanded .github/workflows/coupon-quick-cards.yml to require both test files and syntax checks for the new store policy module.
+- Added docs/coupon-wallet-store-acceptance.md with the store-payment acceptance matrix and release gates.
+- Local eight-test check passed against a mirrored version of the existing offer filter. Exact repository-head CI and mobile browser runs are **not yet confirmed**, and must not be represented as green.
+- This remains a draft/non-deployed PR. The source offer file still has zero entries, signed-in D1 wallet and merchant-authorized redemption are not integrated, and no live retailer discount has been observed.
+
+**Next concrete engineering gate:** confirm exact-head CI; then implement authenticated per-user storage and approved issuer ingestion. Store-ready claims remain forbidden until a merchant-authorized sandbox and real receipt are independently verified.
