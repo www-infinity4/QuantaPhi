@@ -1,0 +1,58 @@
+/* Infinity Oracle Octaves app cards: mobile-first, light surfaces, honest terminal. */
+#trendingAppCards{min-width:0;max-width:100%}
+.trending-app-card{
+ display:flex;flex-direction:column;gap:12px;box-sizing:border-box;
+ padding:clamp(14px,3vw,22px);margin:16px 0;
+ border:1px solid #decfdf;border-radius:21px;
+ background:linear-gradient(145deg,#fff 0%,#fbf7fc 65%,#fffaf0);
+ box-shadow:0 10px 28px #45345314;min-width:0;max-width:100%;color:#34273e;
+}
+.trapp-mast{display:flex;align-items:center;gap:13px}
+.trapp-logo{width:56px;height:56px;object-fit:contain;border-radius:13px;background:#fff;padding:6px;border:1px solid #e2d8e5;flex-shrink:0}
+.trapp-title-block{min-width:0}
+.trapp-kicker{font-size:11px;color:#795989;font-weight:800;letter-spacing:.07em}
+.trapp-title{margin:4px 0;color:#332541;font-size:clamp(23px,5vw,30px);line-height:1.2;overflow-wrap:anywhere}
+.trapp-feature{margin:0;font-size:clamp(15px,3vw,17px);line-height:1.55;color:#584c60}
+.trapp-proof,.trapp-source{font-size:13px;line-height:1.5;color:#5b5164;margin:0}
+.trapp-official{display:inline-block;min-height:44px;box-sizing:border-box;padding:11px 15px;border-radius:10px;border:1px solid #b7a7c6;background:#fff;color:#402b52;font-size:14px;text-decoration:none;font-weight:750}
+.trending-app-card[data-trend="verified"] .trapp-kicker{color:#226b55}
+.termux-code-pad{
+ box-sizing:border-box;width:100%;min-width:0;background:#12191d;color:#eaf5e8;
+ padding:clamp(12px,2vw,19px);border-radius:17px;border:1px solid #335e54;
+ font:500 15px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;
+}
+.termux-pad-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;border-bottom:1px solid #3c574e;padding:0 0 10px;font-weight:800}
+.termux-pad-led{font-size:11px;color:#bddbc5;letter-spacing:.02em}
+.termux-output{padding:9px 1px;max-height:190px;min-height:94px;overflow:auto;overflow-wrap:anywhere;color:#bde6c1;font-size:13px}
+.termux-output p{margin:4px 0;white-space:pre-wrap;overflow-wrap:anywhere}
+.termux-prompt-line{display:flex;gap:9px;align-items:center;margin:8px 0 6px;color:#d0ffd3;font-weight:700}
+.termux-prompt-cursor{display:inline-block;color:#77eea6;animation:termux-blink 1.2s steps(2,start) infinite}
+.termux-prompt-label{font-size:13px}
+@keyframes termux-blink{to{opacity:0}}
+.termux-code-input{
+ display:block;box-sizing:border-box;resize:vertical;width:100%;min-height:116px;
+ padding:13px;border:1px solid #517367;background:#0a1114;color:#ecfff0;
+ border-radius:10px;outline:none;font:500 16px/1.55 ui-monospace,SFMono-Regular,Consolas,monospace;
+ tab-size:2;overflow-wrap:anywhere;
+}
+.termux-code-input:focus{border-color:#80e2ad;box-shadow:0 0 0 2px #58a37655}
+.termux-code-input::placeholder{color:#97b2a4;opacity:1}
+.termux-pad-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:10px}
+.termux-pad-controls button{
+ min-height:48px;padding:9px 6px;border-radius:10px;
+ font:800 clamp(12px,2.7vw,15px)/1.25 system-ui,sans-serif;
+ border:1px solid #78988b;cursor:pointer;touch-action:manipulation;
+}
+.termux-pad-primary{background:#e3f5e8;color:#173e2e}
+.termux-pad-secondary{background:#1f3630;color:#e4f6e9}
+.termux-pad-notice{margin:10px 0 0;color:#bdd0c6;font:500 12px/1.55 system-ui,sans-serif}
+.trending-app-card [hidden]{display:none!important}
+.trending-app-card :is(button,a):focus-visible{outline:3px solid #4baf85;outline-offset:3px}
+body.oracle-card-deck-active main.app > #trendingAppCards{display:none!important}
+@media(max-width:430px){
+ .trending-app-card{padding:12px;border-radius:17px;margin:10px 0}
+ .termux-pad-controls{gap:5px}
+ .termux-code-pad{padding:10px}
+ .trapp-logo{width:48px;height:48px}
+}
+@media(prefers-reduced-motion:reduce){.termux-prompt-cursor{animation:none;opacity:1}}
