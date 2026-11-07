@@ -43,5 +43,22 @@ Public Quick Cards are independent discovery results, not automatically sponsore
 
 - Source-backed discovery pilot and static creator shelf: **staged in branch**.
 - Test-suite proof: focused Node tests executed locally; CI and Android/production not yet verified.
-- Actual Cloudflare D1, Cron, eight *running* bots, verified Quant AI decisions, licensed artist player, merchant checkout, sponsor payouts: **not established**.
+- Isolated Cloudflare D1, staging Worker deployment and Cron configured and independently read back; eight *running* bots, public advertising approval, licensed artist player, merchant checkout and sponsor payouts: **not established**.
 - Next verified action: inspect exact-head CI and review security/rights; then isolated D1 staging and scheduled RSS readback. Keep this issue open until source, CI, deployment, Android and user-posting acceptance are observed.
+
+## November 7 addendum · Existing Quant AI IS connected — Orange makes decisions on demand
+
+The existing Cloudflare `quant-ai` Worker already has `DB`, `QUANTA_DB`, and `IDENTITY_DB` bindings; QuantaPhi's production site Worker already binds `QUANT_AI` and `QUANTAI` to it. **No new model service, data migration, permanent AI call, or additional Quant mint is required.**
+
+Read-only aggregate Cloudflare inspection on Nov 7 found:
+- Quant AI D1 has 0 `quant_packets`, 0 `quant_tags`, and 0 `quant_events` at inspection (the source and permission schema exists, but these are not populated decision signals yet).
+- The existing authoritative Quanta ledger has 37 committed searches, 471 card interactions, 97 collected items, 98 mint records, and 202 research revisions across accounts. These are aggregate counts, not a single person's data. Orange uses only the current authenticated user's allowed rows, not all other users' records.
+- The new isolated staging Worker binds those **existing** D1 resources to read relevant evidence without exporting or copying any wallet/identity table into its public trend-card D1.
+
+**On-demand request:** `POST /decision` on the private staging Worker accepts an explicit `consent:true`, bounded candidate cards, current card context and a valid existing `sq_` device token. It resolves the user through the existing IDENTITY_DB, checks an active wallet, and uses parameterized read-only SELECTs scoped by user_id/wallet_id for their committed searches, card interactions, and collects. Any future Quant-AI packet tags require `personalized_discovery` purpose and unexpired consent. It returns ranked card IDs/scores, generic explanations and signal counts; no raw searches, stable user IDs or wallet IDs. It cannot transfer assets or authorize public advertising. Authentication failures fail closed.
+
+**Homepage handoff staged in PR #1781:** The existing For You view asks Orange for a ranking only when the visitor selects For You or taps Next. The `quanta-feed-orange.mjs` adapter uses the existing signed-in QuantaCloudConnection, with same-origin `/api/quant-orange/decision` forwarding privately through `TREND_CARD_ENGINE`. On server error or disconnected authentication, the existing signed-in Quant ranking code remains the fallback. Personal ranking state is in memory and cleared on feed tab changes. Public and Following are not silently personalized.
+
+**Release dependency:** PR #1781 is still a draft; the staging decision endpoint and D1 bindings are deployed, but the homepage route is not live until that PR is independently tested, approved/merged/deployed and the production site Worker receives a reviewed `TREND_CARD_ENGINE` private service binding. No real signed-in user decision was invoked from this chat. Distinguish selection of an eligible card from **Orange's separate, rights-checked decision to publish sponsored material publicly**; `/orange/approve` still returns 503 until trusted moderation and rights receipts are implemented.
+
+The presence of a Cloudflare database does not prove all data is populated or that a user is authenticated. Never claim every Quant packet is available when the Quant AI tag tables are empty.
