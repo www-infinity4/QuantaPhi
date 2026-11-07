@@ -424,3 +424,33 @@ test('consented X write scopes issue real post and like receipts',async()=>{
   assert.equal(writes,2);
  }finally{global.fetch=old}
 });
+
+test('X Following uses its documented timeline API and replies to the selected post inside the card',async()=>{
+ const {env,call}=await fixture();
+ env.X_OAUTH_CLIENT_ID='fixture-client';env.X_OAUTH_CLIENT_SECRET='fixture-secret';
+ env.X_OAUTH_ENCRYPTION_KEY=Buffer.alloc(32,23).toString('base64url');
+ await call('/v1/x/account',tok,{handle:'SpaceTester'});
+ const begin=await(await call('/v1/x/oauth/start',tok,{write:true})).json();
+ const state=new URL(begin.authorizationUrl).searchParams.get('state');
+ const prior=global.fetch;
+ const seen=[];
+ global.fetch=async (url,options={})=>{
+  const u=new URL(String(url));seen.push(u.pathname);
+  if(u.pathname==='/2/oauth2/token')return Response.json({access_token:'access',refresh_token:'refresh',expires_in:3600,scope:'tweet.read users.read follows.read space.read offline.access tweet.write like.write'});
+  if(u.pathname==='/2/users/me')return Response.json({data:{id:'123456',username:'SpaceTester'}});
+  if(u.pathname==='/2/users/123456/timelines/reverse_chronological')return Response.json({data:[{id:'1888777666555444333',author_id:'98765',text:'A genuine followed post'}],includes:{users:[{id:'98765',username:'RealFriend',name:'Real Friend'}]}});
+  if(u.pathname==='/2/tweets'){const body=JSON.parse(options.body);assert.equal(body.reply.in_reply_to_tweet_id,'1888777666555444333');assert.equal(body.text,'My in-card reply');return Response.json({data:{id:'1888777666555444334'}})}
+  throw Error('wrong X API route: '+u.pathname);
+ };
+ try{
+  assert.equal((await call('/api/x/oauth/callback?state='+state+'&code=approved')).status,200);
+  const timeline=await call('/v1/x/timeline?feed=following',tok);
+  assert.equal(timeline.status,200,'Following must reach the real X reverse chronological route');
+  const data=await timeline.json();
+  assert.equal(data.posts[0].author.handle,'RealFriend');
+  const reply=await call('/v1/x/post',tok,{replyTo:data.posts[0].id,text:'My in-card reply'});
+  assert.equal(reply.status,200);
+  assert.equal((await reply.json()).action,'replied');
+  assert.ok(seen.includes('/2/users/123456/timelines/reverse_chronological'));
+ }finally{global.fetch=prior}
+});
