@@ -79,9 +79,11 @@ test('Android header stays reachable and manual scroll can settle on carousel',a
  const deck=page.locator('#oracleCardDeck');
  await page.mouse.move(2,Math.min(420,page.viewportSize().height/2));
  // Proximity snap intentionally does not jump 400+ pixels to a distant section.
- // Extra content above the deck can require more than one real user wheel gesture.
- // Approach the deck in bounded gestures, never scrollIntoView or teleport.
- for(let gesture=0;gesture<4;gesture++){
+ // The page now includes additional visible builder links above the deck.
+ // Use enough ordinary, bounded wheel gestures to reach it even on narrow phones;
+ // the final assertions still require real scroll snapping and a visible nav.
+ // Do not scrollIntoView or teleport.
+ for(let gesture=0;gesture<10;gesture++){
   const distance=await deck.evaluate(e=>e.getBoundingClientRect().top);
   if(distance<110)break;
   await page.mouse.wheel(0,Math.min(480,Math.max(120,Math.round(distance-70))));
@@ -89,6 +91,6 @@ test('Android header stays reachable and manual scroll can settle on carousel',a
  }
  // The tabs and family shortcuts precede the arrow row inside the deck;
  // the correct resting point is the deck section start, not the arrows.
- // Proximity snap need not land at an exact pixel; verify the actual controls remain readable.
+ // Proximity snap allows a different offset as long as the navigation controls remain accessible.
  await expect(nav).toBeInViewport({ratio:0.8});
 });

@@ -1,5 +1,6 @@
 import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261102-cardimages1';
 import {mountOfficialViewer} from './quanta-official-viewer.mjs';
+import {MOTORCYCLE_SOURCES} from './motorcycle-quick-cards.mjs';
 import {lookupQuickCard} from './quick-card-search-core.mjs?v=20261028-search1';
 /* Infinity source quick cards — official links and one consented Bubbles specialist.
  * Public preview, not publisher endorsement, trending API, logged-in session,
@@ -19,7 +20,7 @@ export const QUICK_CARD_SOURCES=Object.freeze([
  source('claude','Anthropic Claude','AI · Review','Review the Gemini plan with Claude','https://claude.ai/','https://claude.ai/','Claude independently reviews proposed changes, tests and possible hazards; no generated text is execution authorization.','The card can ask Bubbles for an authenticated Anthropic API response, if configured; otherwise use the official Claude interface.'),
  source('copilot','GitHub Copilot','AI · Coding','Review work with GitHub Copilot','https://github.com/copilot','https://github.com/copilot/agents','GitHub Copilot cloud agent can work on appropriately enabled repositories through approved GitHub issues and PRs.','Open the official GitHub Copilot interface. This card does not inherit private repository permissions or claim a direct Copilot chat API.'), 
  source('x','X / Grok','Social','Trends, posts and Grok','https://x.com/','https://x.com/explore','Explore verified public X posts, native embeds and the separate Grok product only when allowed.','Open the X Explore interface. Post streams and Grok need supported provider authorization.',{secondUrl:'https://x.com/i/grok',secondLabel:'Open Grok'}),
- source('reddit','Reddit','Community','Popular communities and discussions','https://www.reddit.com/','https://www.reddit.com/r/popular/','Find relevant communities and explain posts only from explicitly permitted Reddit sources.','Open Reddit popular. Commercial reuse and embedding require provider permission; no unlicensed card feed.'), 
+ source('reddit','Reddit','Community','Popular communities and discussions','https://www.reddit.com/','https://www.reddit.com/r/popular/','Find relevant communities and explain posts only from explicitly permitted Reddit sources.','Open Reddit popular. Commercial reuse and embedding require provider permission; no unlicensed card feed.',{extraControls:[{label:'Open Reddit',href:'https://www.reddit.com/',icon:'link'}]}), 
  source('tiktok','TikTok','Video','Discover popular short videos','https://www.tiktok.com/','https://www.tiktok.com/explore','Curate original creators with verified post URLs and approved TikTok Embed Player.','Open TikTok Explore. A real player reel needs actual authorized post IDs and player use; no fabricated trends.'), 
  source('whatsapp','WhatsApp','Messaging','Open your WhatsApp conversations','https://www.whatsapp.com/','https://web.whatsapp.com/','Help draft a message for the visitor. Never read contacts, send a message or reveal a conversation without per-action consent and an authorized integration.','Open the official WhatsApp Web client. Private messages cannot be embedded or accessed by QuantaPhi.',{secondUrl:'https://www.whatsapp.com/business/',secondLabel:'Business messaging information'}),
  source('bing','Bing','Search','Search the web','https://www.bing.com/','https://www.bing.com/search','Assist with query formulation, source checking and comparison, not fabricated Bing results.','Submit a real Bing query with a dedicated search bar.',{searchParameter:'q'}),
@@ -29,15 +30,16 @@ export const QUICK_CARD_SOURCES=Object.freeze([
  source('fox-one-live-news','FOX One · Live News','News · Video','FOX One video spot · Watch FOX News live','https://www.fox.com/stream/fox-news','https://x.com/foxone/status/2070282166190408122','Present the original FOX One video spot and help viewers find FOX News streaming through FOX One. Do not imply affiliation, free live access, video rights, or guaranteed autoplay.','Official FOX One post embed. Full FOX News live viewing requires an eligible FOX One subscription or TV provider sign-in. The video embed depends on X and browser support.',{secondUrl:'https://www.fox.com/',secondLabel:'Explore all FOX One channels'}),
  source('fox-news','Fox News','News','Fox News headlines and viewer submissions','https://www.foxnews.com/','https://www.foxnews.com/','Help users research Fox reports and draft a news tip with source evidence. Submission requires a real Fox-approved destination and the visitor’s explicit approval.','View Fox News. Video submissions are draft-only until an authenticated, publisher-approved handoff is built.',{secondUrl:'https://www.foxnews.com/contact',secondLabel:'Contact Fox News'}),
  source('tv-guide','TV Guide','TV','Find tonight’s shows and TV recommendations','https://www.tvguide.com/','https://www.tvguide.com/','Find programs, schedules and credited trailers using a licensed/verified TV listing source and the user’s choice of region.','Open TV Guide to choose shows. The live local schedule needs a licensed guide feed and explicit region selection.'), 
- source('starmaker','StarMaker','Karaoke','Find a song and sing karaoke','https://www.starmakerstudios.com/en/songs','https://www.starmakerstudios.com/en/songs','Help with song selection, harmonies and vocal practice; recording needs explicit microphone permission and a real licensed backing track.','Open official StarMaker karaoke. QuantaPhi must not copy paid backing tracks, lyrics or recordings without rights.',{secondUrl:'https://play.google.com/store/apps/details?id=com.starmakerinteractive.starmaker',secondLabel:'Open StarMaker on Android'})
+ source('starmaker','StarMaker','Karaoke','Find a song and sing karaoke','https://www.starmakerstudios.com/en/songs','https://www.starmakerstudios.com/en/songs','Help with song selection, harmonies and vocal practice; recording needs explicit microphone permission and a real licensed backing track.','Open official StarMaker karaoke. QuantaPhi must not copy paid backing tracks, lyrics or recordings without rights.',{secondUrl:'https://play.google.com/store/apps/details?id=com.starmakerinteractive.starmaker',secondLabel:'Open StarMaker on Android'}),
+ ...MOTORCYCLE_SOURCES
 ]);
 // Only expose source cards that contain a usable real action (search, player,
-// message draft, local recording, or approved provider embed). These are
+// message draft, model selection, local recording, or approved provider embed). These are
 // independent tools, not claims of publisher data access or affiliation.
 export const PUBLIC_SOURCE_IDS=Object.freeze([
  'google','bing','youtube','reddit','x','tiktok','starmaker','fox-one','fox-one-live-news',
  'cnn','fox-news','yahoo-news','tv-guide','facebook','instagram','whatsapp',
- 'chatgpt','gemini','claude','copilot'
+ 'chatgpt','gemini','claude','copilot','harley-davidson','indian-motorcycle'
 ]);
 export const isPublicSourceCard=card=>Boolean(card&&PUBLIC_SOURCE_IDS.includes(card.id));
 export const findSourceCard=id=>{

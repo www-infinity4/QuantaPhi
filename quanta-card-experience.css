@@ -300,3 +300,12 @@ textarea.qcx-input{width:100%;resize:vertical;min-height:85px}
 .iqc-gemini-transcript{max-height:280px;overflow:auto;display:grid;gap:8px;overflow-wrap:anywhere}
 .iqc-gemini-line{margin:0;padding:11px 12px;border-radius:12px;background:#f5f2f0;color:#29252b;white-space:pre-wrap;font:15px/1.55 system-ui}
 .iqc-gemini-connect:focus-visible,.iqc-gemini-account:focus-visible{outline:3px solid #70469c;outline-offset:2px}
+
+/* Native motorcycle model selector: existing Oracle Octaves card, no fake dealer widget. */
+.qcx-motorcycle-tool{display:grid;gap:10px;min-width:0}
+.qcx-motorcycle-tool h3{margin:0;font-size:19px;line-height:1.35}
+.qcx-motorcycle-select{width:100%;max-width:100%;min-height:48px;padding:10px 12px;font:600 16px/1.4 system-ui;border:1px solid #b8aeb7;border-radius:12px;background:#fff;color:#292631}
+.qcx-motorcycle-link{display:flex;align-items:center;justify-content:center;text-align:center;min-height:48px;padding:10px 12px;border:1px solid #bcb3bd;border-radius:12px;background:#eeebed!important;color:#2e2932!important;text-decoration:none!important;font:750 16px/1.4 system-ui}
+.qcx-motorcycle-tool .qcx-link{min-height:44px;display:inline-flex;align-items:center;font-size:15px;line-height:1.4}
+.qcx-motorcycle-tool .qcx-note{margin:0;font-size:14px;line-height:1.5;color:#554e58}
+.qcx-motorcycle-select:focus-visible,.qcx-motorcycle-link:focus-visible{outline:3px solid #784da9;outline-offset:3px}

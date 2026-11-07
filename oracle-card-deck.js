@@ -140,15 +140,17 @@ const CARD_DIRECTIONS={
  publicCardTrends:['trending-now','Research','Investigate verified trends and search interests']
 };
 
+// Builders have a dedicated real-widget home beside the advertisement area.
+const DEVELOPER_CARD_IDS=new Set(['mediaStarCreator','government501Affiliates','infinityAffiliates','phiProjectActions']);
 const reservedForDedicatedLanes=new Set([
  'phiMediaBuilder','phiStoryWriter','infiniteBook','groupStoryBuild','pixieStoryCard',
  'physicsOracleCard','oracleRealmGame','cannabisDirectoryCard','bruceBannerWeedmapsCard','infinityAdultContentCard'
 ]);
-const unique=[...new Map(choices.map(([id,title])=>[id,title])).entries()];
+const unique=[...new Map(choices.filter(([id])=>!DEVELOPER_CARD_IDS.has(id)&&!reservedForDedicatedLanes.has(id)&&!id.startsWith('dispensary-')).map(([id,title])=>[id,title])).entries()];
 const entries=unique.map(([id,title])=>{
  const [feedId,category,feature]=CARD_DIRECTIONS[id]||['deck-'+id.toLowerCase(),'Discovery',title];
  return {id,title,feedId,category,feature,study:title,node:document.getElementById(id),marker:null,count:0};
-}).filter(x=>x.node&&!reservedForDedicatedLanes.has(x.id)&&!x.id.startsWith('dispensary-'));
+}).filter(x=>x.node);
 const STORE='oracle:card-activity:v1';
 const spotlightRequested=(()=>{try{
  const url=new URL(location.href);
@@ -291,7 +293,7 @@ window.addEventListener('quantaphi:trending-app-cards-ready',registerTrendingApp
 // Discover widgets mounted after the deferred deck script, including roots that
 // did not exist at its first scan. Reparenting is ignored once registered.
 function registerLateWidgets(){
- // Dedicated Oracle creator and optional adult lanes retain exclusive ownership.
+ // Keep dedicated developer, creator and adult cards in their own carousels.
  let added=false;
  for(const [id,title] of unique){
   if(reservedForDedicatedLanes.has(id)||id.startsWith('dispensary-'))continue;
