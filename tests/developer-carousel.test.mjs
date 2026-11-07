@@ -30,7 +30,8 @@ test('dedicated developer carousel keeps original working widgets and real publi
   assert.match(html, /id="developerCardStage"/);
   assert.match(html, /src="\/developer-carousel\.mjs\?/);
   assert.match(render, /editor\.appendChild\(node\)/);
-  assert.match(render, /card\.slide\.hidden=i!==nextIndex/);
+  assert.match(render, /card\.slide\.hidden=card!==target/);
+  assert.match(render, /discovery\?\.render\(target\.resource\)/);
   assert.doesNotMatch(render, /bank\.appendChild\(current\.node\)/);
   assert.match(render, /new ResizeObserver\(fit\)/);
   assert.match(render, /\/quick-card-builder\.html/);
