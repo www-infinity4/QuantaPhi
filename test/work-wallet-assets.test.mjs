@@ -1,0 +1,67 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {DatabaseSync} from 'node:sqlite';
+import wallet from '../workers/unified-wallet/worker.js';
+import {readGitAsset,readGptCoinAsset} from '../workers/unified-wallet/engineering-assets.mjs';
+
+function ledger(){
+ const sql=new DatabaseSync(':memory:');
+ const DB={prepare(query){
+  const statement=sql.prepare(query);
+  return {bind(...params){
+   return {first:async()=>statement.get(...params),run:async()=>({meta:statement.run(...params)})};
+  }};
+ }};
+ return {DB,sql};
+}
+
+test('GIT balance reads only actual awards and separates pending claims per wallet',async()=>{
+ const env=ledger();
+ env.GIT_DB=env.DB;
+ assert.equal((await readGitAsset(env,'owner')).status,'ledger_unavailable');
+ env.sql.exec(`CREATE TABLE gitcoin_awards(wallet_id TEXT,amount INTEGER);
+  CREATE TABLE gitcoin_line_claims(recipient_wallet_id TEXT,status TEXT);
+  INSERT INTO gitcoin_awards VALUES ('owner',1),('owner',1),('another',1);
+  INSERT INTO gitcoin_line_claims VALUES ('owner','pending'),('owner','verified'),('another','rejected');`);
+ assert.deepEqual(await readGitAsset(env,'owner'),{available:true,status:'ledger_verified',credited:2,pending:1,spendAvailable:false});
+ assert.deepEqual(await readGitAsset(env,'another'),{available:true,status:'ledger_verified',credited:1,pending:0,spendAvailable:false});
+ assert.equal((await readGitAsset(env,null)).credited,null);
+});
+
+test('the authenticated wallet imports only an issuer-signed receipt for the current account, exactly once',async()=>{
+ const env=ledger();
+ env.sql.exec(readFileSync(new URL('../workers/unified-wallet/gpt-coin-schema.sql',import.meta.url),'utf8'));
+ const a='sq_'+'a'.repeat(40),b='sq_'+'b'.repeat(40),encoder=new TextEncoder();
+ const accountHash=async token=>Buffer.from(await crypto.subtle.digest('SHA-256',encoder.encode(token))).toString('hex');
+ const identities=new Map([[await accountHash(a),{id:'account-a'}],[await accountHash(b),{id:'account-b'}]]);
+ env.IDENTITY_DB={prepare:()=>({bind:hash=>({first:async()=>identities.get(hash)})})};
+ const key=await crypto.subtle.generateKey('Ed25519',true,['sign','verify']);
+ const now=Date.now(),receipt={version:1,asset:'GPT_COIN',issuer:'fixture-issuer',receiptId:'receipt-fixture-0001',
+  recipient:'account-a',amount:4,issuedAt:now-500,expiresAt:now+60_000};
+ async function proof(r){
+  const payload=JSON.stringify(['quantaphi:gpt-coin:v1',r.issuer,r.receiptId,r.recipient,r.amount,r.issuedAt,r.expiresAt]);
+  const signature=await crypto.subtle.sign('Ed25519',key.privateKey,encoder.encode(payload));
+  return {receipt:r,signature:Buffer.from(signature).toString('base64url')};
+ }
+ const importReceipt=(value,token)=>wallet.fetch(new Request('https://wallet.test/v1/wallet/gpt-coin/import',{
+  method:'POST',headers:{'Content-Type':'application/json',...(token?{Authorization:'Bearer '+token}:{})},body:JSON.stringify(value)
+ }),env,{});
+ const signed=await proof(receipt);
+ assert.equal((await importReceipt(signed)).status,401);
+ assert.equal((await importReceipt(signed,a)).status,503);
+ assert.equal((await readGptCoinAsset(env,'account-a')).credited,null);
+ env.GPT_COIN_ISSUER=receipt.issuer;
+ env.GPT_COIN_ISSUER_PUBLIC_KEY=Buffer.from(await crypto.subtle.exportKey('raw',key.publicKey)).toString('base64url');
+ assert.equal((await importReceipt(signed,b)).status,403);
+ assert.equal((await importReceipt({...signed,receipt:{...receipt,amount:99}},a)).status,403);
+ const first=await importReceipt(signed,a),replay=await importReceipt(signed,a);
+ assert.equal(first.status,200);assert.equal((await first.json()).replayed,false);
+ assert.equal((await replay.json()).replayed,true);
+ assert.equal((await importReceipt(await proof({...receipt,amount:5}),a)).status,409);
+ assert.equal((await readGptCoinAsset(env,'account-a')).credited,4);
+ assert.equal((await readGptCoinAsset(env,'account-b')).credited,0);
+ assert.throws(()=>env.sql.exec('DELETE FROM gpt_coin_imports'),/immutable_gpt_coin_receipt/);
+ delete env.GPT_COIN_ISSUER_PUBLIC_KEY;
+ assert.equal((await readGptCoinAsset(env,'account-a')).credited,4,'old signed imports remain readable while imports are paused');
+});
