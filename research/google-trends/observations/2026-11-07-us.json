@@ -3,9 +3,149 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-07T10:30:52.566248Z",
+  "checked_at": "2026-11-07T11:01:24.057829Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "wind advisory",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T10:30:00Z",
+      "related_news_urls": [
+        "https://www.thenewstribune.com/news/weather-news/article317971465.html",
+        "https://www.tillamookcountypioneer.net/tillamook-county-emergency-management-advisory-high-wind-watch-from-saturday-afternoon-11-7-26-until-0400am-sunday-11-8-26/",
+        "https://cedarnews.net/newstasks/1120378/high-wind-warning-oregon-washington/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT57V9Z2lW2hmGQNP5FCPij5xRjX84S4CL2cKFETtTIdL22noSXh1wMt69A9BA",
+      "image_credit": "Tacoma News Tribune",
+      "news": [
+        {
+          "url": "https://www.thenewstribune.com/news/weather-news/article317971465.html",
+          "title": "High wind warning for Northern Washington Coast and Grays Harbor County Coast",
+          "publisher": "Tacoma News Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT57V9Z2lW2hmGQNP5FCPij5xRjX84S4CL2cKFETtTIdL22noSXh1wMt69A9BA"
+        },
+        {
+          "url": "https://www.tillamookcountypioneer.net/tillamook-county-emergency-management-advisory-high-wind-watch-from-saturday-afternoon-11-7-26-until-0400am-sunday-11-8-26/",
+          "title": "TILLAMOOK COUNTY EMERGENCY MANAGEMENT ADVISORY: High Wind Watch from Saturday afternoon 11/7/26 until 04:00AM Sunday 11/8/26",
+          "publisher": "Tillamook County Pioneer",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzRKqKD-jVJMDTAik_ZtqLFccqsRIKLvMkyuxheH3OFntr77wyJQOEGzSxmxQ"
+        },
+        {
+          "url": "https://cedarnews.net/newstasks/1120378/high-wind-warning-oregon-washington/",
+          "title": "High Wind Warning Issued for Parts of Oregon and Washington",
+          "publisher": "cedarnews.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQULdOa1zXrxpLsOOn5rFXyrj9O71WKQzoBjgm3vsYh96UATcFIiS4H_HkhwKE"
+        }
+      ]
+    },
+    {
+      "query": "new zealand vs india",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-07T10:20:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-2nd-odi-1539438/match-report",
+        "https://sports.yahoo.com/articles/zealand-vs-india-2nd-odi-010001305.html",
+        "https://www.foxsports.com/articles/soccer/gurnoor-brar-takes-430-as-india-bowls-out-new-zealand-for-134-in-the-2nd-odi"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgCBaZRt__pRbKYlQD4UAgr3_MvqgRc6CgaOQU9bLNmuNdgENkjZqaJfBRKuQ",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-2nd-odi-1539438/match-report",
+          "title": "India go 2-0 up after narrow DLS win in low-scoring suspenser",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgCBaZRt__pRbKYlQD4UAgr3_MvqgRc6CgaOQU9bLNmuNdgENkjZqaJfBRKuQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/zealand-vs-india-2nd-odi-010001305.html",
+          "title": "New Zealand vs. India 2nd ODI live score, win probability and chances of victory in Wellington",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoAO8N-UXV8SGbI0i8PEipNZQhYDGvTS7KqVicogw9Hql58cx98VFkXHbGQO0"
+        },
+        {
+          "url": "https://www.foxsports.com/articles/soccer/gurnoor-brar-takes-430-as-india-bowls-out-new-zealand-for-134-in-the-2nd-odi",
+          "title": "Gurnoor Brar takes 4-30 as India bowls out New Zealand for 134 in the 2nd ODI",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4s4BZOkTNXN3YIPa9D2mGE41CMQSYHPibv39-9pCCL84ruNU6IK4Wzep74lk"
+        }
+      ]
+    },
+    {
+      "query": "new",
+      "approx_searches": "100+",
+      "published_at": "2026-11-07T10:20:00Z",
+      "related_news_urls": [
+        "https://www.courant.com/2026/11/07/new-ct-restaurant-is-opening-owners-say-goal-is-families-fun-and-affordable-food/",
+        "https://www.thebanner.com/culture/arts/walters-art-museum-luxury-loss-YEX7Q5SZYZEVZK5N7NCGSKWXUA/",
+        "https://www.bbc.com/news/articles/crp3gg2z171go"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJF0E_6GG3QgJIFwoH4OgJIII6b_IIRrMvX-rfMxJVgNPPFEDHOAMQbz-4ouc",
+      "image_credit": "Hartford Courant",
+      "news": [
+        {
+          "url": "https://www.courant.com/2026/11/07/new-ct-restaurant-is-opening-owners-say-goal-is-families-fun-and-affordable-food/",
+          "title": "New CT restaurant is opening. Owners say goal is families, fun and ‘affordable food’",
+          "publisher": "Hartford Courant",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJF0E_6GG3QgJIFwoH4OgJIII6b_IIRrMvX-rfMxJVgNPPFEDHOAMQbz-4ouc"
+        },
+        {
+          "url": "https://www.thebanner.com/culture/arts/walters-art-museum-luxury-loss-YEX7Q5SZYZEVZK5N7NCGSKWXUA/",
+          "title": "What is the true cost of luxury? A new Walters art exhibit aims to find out.",
+          "publisher": "The Baltimore Banner",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZ3eHvwsi5Gpv5grANxGLFl68eQSq061FXvR4pkDLNPymQdsuwH4M_bRui0JI"
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/crp3gg2z171go",
+          "title": "With Stephen Miller pick, Trump readies for a battle",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQy8hm6HqwEuJ5SFhO-w_d5N5VMD8pqzKcJzbhwRtPl9zieo-jk3mrfr2ZoRKw"
+        }
+      ]
+    },
+    {
+      "query": "lindenwold",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T10:20:00Z",
+      "related_news_urls": [
+        "https://6abc.com/post/foster-mother-charged-10-year-old-philadelphia-girls-death-previously-faced-abuse-allegations-attorney-says/20021681/",
+        "https://www.nbcphiladelphia.com/news/local/full-timeline-of-investigation-into-malayshia-alfords-murder/4492693/",
+        "https://abcnews.com/US/foster-parent-accused-murdering-10-year-girl-care/story?id=137926563"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVYNnkphWDc5JJK0rKeVLgdxeGFqet7VMBroj5_54wS0wKZOpkrvoT-9uwY_k",
+      "image_credit": "6abc Philadelphia",
+      "news": [
+        {
+          "url": "https://6abc.com/post/foster-mother-charged-10-year-old-philadelphia-girls-death-previously-faced-abuse-allegations-attorney-says/20021681/",
+          "title": "Foster mother charged in 10-year-old Philadelphia girl's death previously faced abuse allegations, attorney says",
+          "publisher": "6abc Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVYNnkphWDc5JJK0rKeVLgdxeGFqet7VMBroj5_54wS0wKZOpkrvoT-9uwY_k"
+        },
+        {
+          "url": "https://www.nbcphiladelphia.com/news/local/full-timeline-of-investigation-into-malayshia-alfords-murder/4492693/",
+          "title": "Full timeline of investigation into Malayshia Alford's murder",
+          "publisher": "NBC10 Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgKZmmThbKEGu1FfKvhFVY_A4Dru1ryEGpbArsmNI5_d0UpPxd0TW_detfZ9o"
+        },
+        {
+          "url": "https://abcnews.com/US/foster-parent-accused-murdering-10-year-girl-care/story?id=137926563",
+          "title": "Foster parent accused of murdering 10-year-old girl in her care: Officials",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlSqR0zCWNJbkC4ukap0e8WAUGHdU0l-ga_rprmlWHGubj3E2i7nPKdKIkLAQ"
+        }
+      ]
+    },
     {
       "query": "roku",
       "approx_searches": "200+",
@@ -38,6 +178,41 @@
           "publisher": "IMDb",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTw6JvxSzuuc2M7NEMwldNHfAfTkbBhPWk9AYwevomvFsTiJ2jStB0W1Fdo144"
+        }
+      ]
+    },
+    {
+      "query": "wi vs ban",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T10:00:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/story/ban-vs-wi-sylhet-test-amir-jangoo-backs-his-instincts-after-century-1561675",
+        "https://www.cricbuzz.com/cricket-news/140811/record-breaking-hasan-mahmud-savours-a-special-milestone-cricbuzzcom",
+        "https://www.jamaicaobserver.com/2026/11/06/mahmuds-6-90-restricts-west-indies-second-bangladesh-test/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSg7ljpu4-VrCZ2L42Srwj9Nj2ltGRQ_y8CI504d34v6Rn6hhazt6fbf1SJ85I",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/story/ban-vs-wi-sylhet-test-amir-jangoo-backs-his-instincts-after-century-1561675",
+          "title": "'It's all about sticking to my strengths' - Jangoo backs his instincts after Sylhet ton",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSg7ljpu4-VrCZ2L42Srwj9Nj2ltGRQ_y8CI504d34v6Rn6hhazt6fbf1SJ85I"
+        },
+        {
+          "url": "https://www.cricbuzz.com/cricket-news/140811/record-breaking-hasan-mahmud-savours-a-special-milestone-cricbuzzcom",
+          "title": "Record-breaking Hasan Mahmud savours a special milestone",
+          "publisher": "Cricbuzz",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8_qjqKBGoGvLOqLoWDOv5Nd58zqOkfI1EHD7WjzR_MXhBYOea0MOHAajviQA"
+        },
+        {
+          "url": "https://www.jamaicaobserver.com/2026/11/06/mahmuds-6-90-restricts-west-indies-second-bangladesh-test/",
+          "title": "Mahmud’s 6-90 restricts West Indies in second Bangladesh Test",
+          "publisher": "Jamaica Observer",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWTsLHV1sFwz0yCFGE0SKt1-FRTMN1OXRad9AuKuFOKnZajj6Et0b-6ynTZzk"
         }
       ]
     },
@@ -147,33 +322,6 @@
       ]
     },
     {
-      "query": "west indies vs bangladesh",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T09:20:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/series/west-indies-in-bangladesh-2026-27-1553291/bangladesh-vs-west-indies-2nd-test-1553296/match-report",
-        "https://www.cricbuzz.com/cricket-news/140811/record-breaking-hasan-mahmud-savours-a-special-milestone-cricbuzzcom"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEPbFeZNhMHinMcwVq_S1XGpOFQeZSh0gGZUUwJsRA2eyYAew9rz3oM_0vZk0",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/series/west-indies-in-bangladesh-2026-27-1553291/bangladesh-vs-west-indies-2nd-test-1553296/match-report",
-          "title": "Hridoy gets to maiden Test century but Warrican makes it West Indies' morning",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEPbFeZNhMHinMcwVq_S1XGpOFQeZSh0gGZUUwJsRA2eyYAew9rz3oM_0vZk0"
-        },
-        {
-          "url": "https://www.cricbuzz.com/cricket-news/140811/record-breaking-hasan-mahmud-savours-a-special-milestone-cricbuzzcom",
-          "title": "Record-breaking Hasan Mahmud savours a special milestone",
-          "publisher": "Cricbuzz",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8_qjqKBGoGvLOqLoWDOv5Nd58zqOkfI1EHD7WjzR_MXhBYOea0MOHAajviQA"
-        }
-      ]
-    },
-    {
       "query": "zelda ocarina of time remake",
       "approx_searches": "500+",
       "published_at": "2026-11-07T09:20:00Z",
@@ -205,146 +353,6 @@
           "publisher": "The Verge",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUHXAduy7S9ao61KTOCHsWwUdJedofDqkob32gyCAwNHjxnID_UWOrM3-ilF8"
-        }
-      ]
-    },
-    {
-      "query": "radiation",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T09:10:00Z",
-      "related_news_urls": [
-        "https://www.wivb.com/news/investigates/catholic-academy-parents-seek-answers-after-elevated-radiation-levels-found-in-parking-lot/",
-        "https://investigativepost.org/2026/11/06/niagara-falls-school-to-be-tested-for-radioactivity/",
-        "https://www.niagara-gazette.com/news/local_news/epa-dec-notify-falls-school-of-need-for-radiological-testing/article_0c0c22db-0119-4205-a728-248696ed2621.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6J_q7GFu1svozb4s8BUjs29i551EWPQ8LfmbXFm5-Au_MpXe8JNbtoJmum-4",
-      "image_credit": "WIVB News 4",
-      "news": [
-        {
-          "url": "https://www.wivb.com/news/investigates/catholic-academy-parents-seek-answers-after-elevated-radiation-levels-found-in-parking-lot/",
-          "title": "Catholic Academy parents seek answers after elevated radiation levels found in parking lot",
-          "publisher": "WIVB News 4",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6J_q7GFu1svozb4s8BUjs29i551EWPQ8LfmbXFm5-Au_MpXe8JNbtoJmum-4"
-        },
-        {
-          "url": "https://investigativepost.org/2026/11/06/niagara-falls-school-to-be-tested-for-radioactivity/",
-          "title": "Niagara Falls school to be tested for radioactivity",
-          "publisher": "Investigative Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2oPp-tbqs65D7dFNgwv_7McMWclo1ZcDktZ27c-6_kUB7XV1gF5hFqudP7Jc"
-        },
-        {
-          "url": "https://www.niagara-gazette.com/news/local_news/epa-dec-notify-falls-school-of-need-for-radiological-testing/article_0c0c22db-0119-4205-a728-248696ed2621.html",
-          "title": "EPA, DEC notify Falls school of need for radiological testing",
-          "publisher": "niagara-gazette.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5ur9pz_jZmdAVPBvKexUsL8_dMudFrY9HARIvEVs2LNZ3GjUse8UrMmAkEY0"
-        }
-      ]
-    },
-    {
-      "query": "gabby windey",
-      "approx_searches": "100+",
-      "published_at": "2026-11-07T09:10:00Z",
-      "related_news_urls": [
-        "https://www.vulture.com/article/gabby-windeys-biology-lesson-won-late-night-this-week.html",
-        "https://gomag.com/article/gabby-windey-says-she-and-robby-hoffman-would-commit-crimes-for-each-other/",
-        "https://bachelornation.com/2026/11/05/gabby-windey-teases-i-m-pregnant-and-discusses-wearing-a-fake-pregnancy-belly/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWQ9oNl9T3umEYSGUuFThsAv4W9EApzyujug5akaATrPhNM6hTY87GqW2qG3w",
-      "image_credit": "Vulture",
-      "news": [
-        {
-          "url": "https://www.vulture.com/article/gabby-windeys-biology-lesson-won-late-night-this-week.html",
-          "title": "Gabby Windey’s Lesbian Biology Lesson Won Late Night This Week",
-          "publisher": "Vulture",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWQ9oNl9T3umEYSGUuFThsAv4W9EApzyujug5akaATrPhNM6hTY87GqW2qG3w"
-        },
-        {
-          "url": "https://gomag.com/article/gabby-windey-says-she-and-robby-hoffman-would-commit-crimes-for-each-other/",
-          "title": "Gabby Windey Says She And Robby Hoffman Would Commit Crimes For Each Other",
-          "publisher": "GO Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREny13jDgWVu56XQY4k2n1zjjOTtxwVBw9WKJwwPoLnItE0WxMwalt5WKX7Vw"
-        },
-        {
-          "url": "https://bachelornation.com/2026/11/05/gabby-windey-teases-i-m-pregnant-and-discusses-wearing-a-fake-pregnancy-belly/",
-          "title": "Gabby Windey Teases ‘I’m Pregnant’ and Discusses Wearing a Fake Pregnancy Belly",
-          "publisher": "Bachelor Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRimJw1QbFkEpgJpPrBaJ6cgAFfgitJRe7Dc7mC0XWp082HUioZT_G-dsC_gpM"
-        }
-      ]
-    },
-    {
-      "query": "aaron donald rams return comments",
-      "approx_searches": "100+",
-      "published_at": "2026-11-07T09:00:00Z",
-      "related_news_urls": [
-        "https://www.thesportingtribune.com/2026/11/05/donald-content-considering-thwarted-plans",
-        "https://nypost.com/2026/11/06/sports/aaron-donald-honest-rams-return-aint-what-i-expected/",
-        "https://www.aol.co.uk/articles/aaron-donald-drops-truth-bomb-235836000.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTA9a-0T4vs8nsX3YM0m35n9etNO2I-pTMY7YkGQCeYg_0RcONu7p_dUMXHjKc",
-      "image_credit": "The Sporting Tribune",
-      "news": [
-        {
-          "url": "https://www.thesportingtribune.com/2026/11/05/donald-content-considering-thwarted-plans",
-          "title": "Things aren't unfolding how Aaron Donald and the Rams envisioned, but he's here and enjoying it",
-          "publisher": "The Sporting Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTA9a-0T4vs8nsX3YM0m35n9etNO2I-pTMY7YkGQCeYg_0RcONu7p_dUMXHjKc"
-        },
-        {
-          "url": "https://nypost.com/2026/11/06/sports/aaron-donald-honest-rams-return-aint-what-i-expected/",
-          "title": "Aaron Donald gets brutally honest about Rams return",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbFym_aN6IdMrL17E2bLUjZ849kZpAmUxe7DQc_9qCa7eZTmCABt9CElQV5hc"
-        },
-        {
-          "url": "https://www.aol.co.uk/articles/aaron-donald-drops-truth-bomb-235836000.html",
-          "title": "Aaron Donald drops truth bomb about Rams comeback: ‘That’s football’",
-          "publisher": "AOL.co.uk",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8ZXSiste89UWBSu5_tEVzxagYbgCLLGQjanW3apjmugint_0YM9GaKQGUkr0"
-        }
-      ]
-    },
-    {
-      "query": "play gta 6 before launch date",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T09:00:00Z",
-      "related_news_urls": [
-        "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10?utm_source=blast&amp;amp%3Butm_medium=o_email&amp;amp%3Butm_campaign=e10316_global_localized_gtavi-preload_static_learn-more&amp;amp%3Butm_content=main-img",
-        "https://corporate.charter.com/newsroom/spectrum-giving-free-gig-speed-lift-thanksgiving-grand-theft-auto",
-        "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvr3MnhC7loBDcBhBXQOjgXQdBnSX1GgBl8Gp0wCtDiGaqob5Fx5ug4CQtEz4",
-      "image_credit": "Rockstar Games",
-      "news": [
-        {
-          "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10?utm_source=blast&amp;amp%3Butm_medium=o_email&amp;amp%3Butm_campaign=e10316_global_localized_gtavi-preload_static_learn-more&amp;amp%3Butm_content=main-img",
-          "title": "Grand Theft Auto VI Pre-Load Begins on November 10",
-          "publisher": "Rockstar Games",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvr3MnhC7loBDcBhBXQOjgXQdBnSX1GgBl8Gp0wCtDiGaqob5Fx5ug4CQtEz4"
-        },
-        {
-          "url": "https://corporate.charter.com/newsroom/spectrum-giving-free-gig-speed-lift-thanksgiving-grand-theft-auto",
-          "title": "Download Grand Theft Auto VI Faster and Get to Leonida Sooner With Spectrum Internet Gig",
-          "publisher": "Charter Communications",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLrldBUNUxrprrQdaGkYX-IyU3QqIHF3o_gPJ8nNZdwM-7CUvyPxPcKlXOanM"
-        },
-        {
-          "url": "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/",
-          "title": "Grand Theft Auto VI pre-download begins November 10",
-          "publisher": "PlayStation.Blog",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyNgZ56vmBZJJNXtBuVMuXt5SrJjkpTULssjmIfrOVOdDg6PUuF-BaAKk2CE8"
         }
       ]
     }
