@@ -15,7 +15,7 @@
 .developer-card-stage{background:#fff;color:#241d29;border-radius:17px;padding:10px;overflow-wrap:anywhere;min-width:0}
 .developer-card-stage>*{width:100%;max-width:100%;margin:0 auto}
 .developer-card-stage button,.developer-card-stage a{min-height:44px}
-.developer-card-bank{display:none!important}
+.developer-card-stage > [hidden]{display:none!important}
 .developer-card-status{margin:10px 2px 0;color:#f4e9f5;line-height:1.45;font-size:15px}
 .developer-quickcard{background:#fff;color:#2a2328;border-radius:15px}
 .developer-quickcard-hero{display:flex;align-items:center;gap:13px;padding:12px}
