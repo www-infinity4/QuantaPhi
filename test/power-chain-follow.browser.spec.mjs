@@ -63,3 +63,32 @@ test('resuming a deep-linked page respects an empty Following feed', async ({ pa
  await expect(deck.locator('#oracleCardNow')).toHaveText('No followed interactive cards');
  await expect(stage).not.toHaveAttribute('data-switchboard-id', /.+/);
 });
+
+
+test('Blue Star opens as a mobile Quick Card and its user-chosen chain adds reviewed skin-relief publishers', async ({ page }) => {
+ // The mock isolates layout/navigation from a retailer CDN outage. A real photo
+ // and commercial license still require independent live verification.
+ await page.route('**/*', route => {
+  const url=route.request().url();
+  if(url.startsWith(base+'/'))return route.continue();
+  if(url.startsWith('https://i5.walmartimages.com/'))
+   return route.fulfill({status:200,contentType:'image/svg+xml',body:'<svg xmlns="http://www.w3.org/2000/svg" width="2" height="2"></svg>'});
+  return route.abort();
+ });
+ await page.goto(base+'/?card=blue-star-ointment',{waitUntil:'domcontentloaded'});
+ const deck=page.locator('#oracleCardDeck');
+ const stage=deck.locator('#oracleCardStage');
+ const chain=deck.locator('#oraclePowerChainFollow');
+ await expect(stage).toHaveAttribute('data-switchboard-id','blue-star-ointment');
+ await expect(stage.getByRole('heading',{name:/Blue Star.*Anti-Itch/i})).toBeVisible();
+ await expect(stage.getByRole('link',{name:'View exact item at Walmart'}))
+  .toHaveAttribute('href','https://www.walmart.com/ip/10316529');
+ await expect(stage.locator('.qec-card')).toHaveAttribute('data-personalization','disabled');
+ await expect(chain).toBeVisible();
+ await chain.click();
+ await deck.getByRole('tab',{name:'Following'}).click();
+ const chooser=deck.locator('#oracleCardChooser');
+ await expect(chooser.locator('option[value="source-aveeno-anti-itch"]')).toHaveCount(1);
+ await expect(chooser.locator('option[value="source-sarna-original-lotion"]')).toHaveCount(1);
+ await expect(chooser.locator('option[value="source-campho-phenique-liquid"]')).toHaveCount(0);
+});
