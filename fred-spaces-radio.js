@@ -108,7 +108,7 @@
     const next=pickNext();if(!next){note("No additional indexed episodes are available.");return;}
     // The fee is for curated discovery of a direct X replay link, not streaming rights.
     // The source may require X sign-in or disappear. Display this before every new debit.
-    if(next.id!==FIRST&&!isPlatformOwner&&!unlocked.has(next.id)&&!window.confirm("Spend 1 full StarCoin to reveal the QuantaPhi-curated Fred Space: "+next.title+"? Your StarCoin is credited to the verified QuantaPhi platform owner for original link discovery, NOT to Fred for the recording. Playback opens on X and might need sign-in or be unavailable. Continue?"))return;
+    if(next.id!==FIRST&&!isPlatformOwner&&!unlocked.has(next.id)&&!window.confirm("Spend 1 full StarCoin to reveal the QuantaPhi-curated Fred Space: "+next.title+"? Your StarCoin is credited to the verified QuantaPhi platform owner for original link discovery, NOT to Fred for the recording. X may require sign-in or may not offer playback. Continue?"))return;
     busy=true;render();
     try{
       const data=next.id===FIRST?{ok:true,charged:0,starCoins:balance}:await ledger("/v1/spaces/unlock","POST",{episodeId:next.id});
