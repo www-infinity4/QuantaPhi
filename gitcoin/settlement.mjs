@@ -30,7 +30,8 @@ export function gitCreditStatements(manifest,result,principal){
   // acquire a GIT serial, within the same transactional batch.
   statements.push({sql:`INSERT OR IGNORE INTO gitcoin_serials(receipt_id,wallet_id,creator_subject,customer_wallet_id,git_type)
    SELECT a.receipt_id,a.wallet_id,c.authenticated_submitter,c.customer_wallet_id,a.git_type
-   FROM gitcoin_awards a JOIN gitcoin_line_claims c ON c.receipt_id=a.receipt_id WHERE a.receipt_id=?1`,
+   FROM gitcoin_awards a JOIN gitcoin_line_claims c ON c.receipt_id=a.receipt_id WHERE a.receipt_id=?1
+   AND NOT EXISTS(SELECT 1 FROM gitcoin_serials existing WHERE existing.receipt_id=a.receipt_id)`,
    params:[line.receipt_id]});
  }
  return statements;
