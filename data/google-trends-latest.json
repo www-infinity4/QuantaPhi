@@ -3,17 +3,79 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-07T09:31:23.999570Z",
+  "checked_at": "2026-11-07T10:01:28.131567Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "radiation",
+      "query": "west indies vs bangladesh",
       "approx_searches": "100+",
+      "published_at": "2026-11-07T09:20:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/series/west-indies-in-bangladesh-2026-27-1553291/bangladesh-vs-west-indies-2nd-test-1553296/match-report",
+        "https://www.cricbuzz.com/cricket-news/140811/record-breaking-hasan-mahmud-savours-a-special-milestone-cricbuzzcom"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEPbFeZNhMHinMcwVq_S1XGpOFQeZSh0gGZUUwJsRA2eyYAew9rz3oM_0vZk0",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/series/west-indies-in-bangladesh-2026-27-1553291/bangladesh-vs-west-indies-2nd-test-1553296/match-report",
+          "title": "Hridoy gets to maiden Test century but Warrican makes it West Indies' morning",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEPbFeZNhMHinMcwVq_S1XGpOFQeZSh0gGZUUwJsRA2eyYAew9rz3oM_0vZk0"
+        },
+        {
+          "url": "https://www.cricbuzz.com/cricket-news/140811/record-breaking-hasan-mahmud-savours-a-special-milestone-cricbuzzcom",
+          "title": "Record-breaking Hasan Mahmud savours a special milestone",
+          "publisher": "Cricbuzz",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8_qjqKBGoGvLOqLoWDOv5Nd58zqOkfI1EHD7WjzR_MXhBYOea0MOHAajviQA"
+        }
+      ]
+    },
+    {
+      "query": "zelda ocarina of time remake",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T09:20:00Z",
+      "related_news_urls": [
+        "https://www.nintendo.com/en-gb/News/2026/November/Ask-the-Developer-Vol-24-The-Legend-of-Zelda-Ocarina-of-Time-Chapter-1-3230318.html",
+        "https://gameinformer.com/interview/2026/11/06/award-winning-composer-and-musician-jon-batiste-talks-ocarina-of-times-music",
+        "https://www.nbcphiladelphia.com/news/local/hey-listen-gamers-line-up-for-release-of-new-zelda-game/4492162/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnV5nZjIGijYizcERtXK2tJGjctxSrf7u_w6bimlNlGGpkKEbVfb87w5taX0s",
+      "image_credit": "Nintendo",
+      "news": [
+        {
+          "url": "https://www.nintendo.com/en-gb/News/2026/November/Ask-the-Developer-Vol-24-The-Legend-of-Zelda-Ocarina-of-Time-Chapter-1-3230318.html",
+          "title": "Ask the Developer Vol. 24, The Legend of Zelda: Ocarina of Time – Chapter 1",
+          "publisher": "Nintendo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnV5nZjIGijYizcERtXK2tJGjctxSrf7u_w6bimlNlGGpkKEbVfb87w5taX0s"
+        },
+        {
+          "url": "https://gameinformer.com/interview/2026/11/06/award-winning-composer-and-musician-jon-batiste-talks-ocarina-of-times-music",
+          "title": "Award-Winning Composer And Musician Jon Batiste Talks Ocarina Of Time's Music And Why 'Guile's Theme' Goes With Everything",
+          "publisher": "Game Informer",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUrrs-lE4g4CQ5294A0SXX_tAgfKmFufzCAKhMN6dlyjigE0PlkWguiVNIWOc"
+        },
+        {
+          "url": "https://www.nbcphiladelphia.com/news/local/hey-listen-gamers-line-up-for-release-of-new-zelda-game/4492162/",
+          "title": "‘Hey, listen!': Gamers line up for release of new Zelda game",
+          "publisher": "NBC10 Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6FXscu34OlYJJSjbxKF2r0qAUMcBeZxd5fwwg1Np_sLg3Gmp7-KdXVm_WMIo"
+        }
+      ]
+    },
+    {
+      "query": "radiation",
+      "approx_searches": "200+",
       "published_at": "2026-11-07T09:10:00Z",
       "related_news_urls": [
         "https://www.wivb.com/news/investigates/catholic-academy-parents-seek-answers-after-elevated-radiation-levels-found-in-parking-lot/",
         "https://investigativepost.org/2026/11/06/niagara-falls-school-to-be-tested-for-radioactivity/",
-        "https://www.yahoo.com/news/us/articles/radiation-testing-results-spark-additional-004325647.html"
+        "https://www.niagara-gazette.com/news/local_news/epa-dec-notify-falls-school-of-need-for-radiological-testing/article_0c0c22db-0119-4205-a728-248696ed2621.html"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6J_q7GFu1svozb4s8BUjs29i551EWPQ8LfmbXFm5-Au_MpXe8JNbtoJmum-4",
       "image_credit": "WIVB News 4",
@@ -33,11 +95,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2oPp-tbqs65D7dFNgwv_7McMWclo1ZcDktZ27c-6_kUB7XV1gF5hFqudP7Jc"
         },
         {
-          "url": "https://www.yahoo.com/news/us/articles/radiation-testing-results-spark-additional-004325647.html",
-          "title": "Radiation testing results spark additional fear and anger",
-          "publisher": "Yahoo",
+          "url": "https://www.niagara-gazette.com/news/local_news/epa-dec-notify-falls-school-of-need-for-radiological-testing/article_0c0c22db-0119-4205-a728-248696ed2621.html",
+          "title": "EPA, DEC notify Falls school of need for radiological testing",
+          "publisher": "niagara-gazette.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvj0JN73usgqYG8MJYTH9vURY1NXqTZSYBXgFn9wxqHeBgh4jJssdxR6Yh7Vg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5ur9pz_jZmdAVPBvKexUsL8_dMudFrY9HARIvEVs2LNZ3GjUse8UrMmAkEY0"
         }
       ]
     },
@@ -77,37 +139,37 @@
       ]
     },
     {
-      "query": "alexandra eala",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-07T08:50:00Z",
+      "query": "play gta 6 before launch date",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T09:00:00Z",
       "related_news_urls": [
-        "https://www.wtatennis.com/news/4605678/eala-beats-ruzic-in-hong-kong-quarterfinal-featuring-29-break-points",
-        "https://www.espn.com/tennis/story/_/id/50400006/alex-eala-antonia-ruzic-hong-kong-open-quarterfinal",
-        "https://sports.inquirer.net/705765/live-alex-eala-vs-maria-sakkari-hong-kong-open-semifinals"
+        "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10?utm_source=blast&amp;amp%3Butm_medium=o_email&amp;amp%3Butm_campaign=e10316_global_localized_gtavi-preload_static_learn-more&amp;amp%3Butm_content=main-img",
+        "https://corporate.charter.com/newsroom/spectrum-giving-free-gig-speed-lift-thanksgiving-grand-theft-auto",
+        "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSv80hgDzLQTUbWCd8aJ63wDJWMJq5Nct5KomKc7K610eDJ21y3KvkIKTHoIo",
-      "image_credit": "WTA Tennis",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRP0RNbrUaCSVCdZe1TVTMe96jHPbUGQXSxS_CtqnL_8ndAnx9F8JGQLuStNtU",
+      "image_credit": "Rockstar Games",
       "news": [
         {
-          "url": "https://www.wtatennis.com/news/4605678/eala-beats-ruzic-in-hong-kong-quarterfinal-featuring-29-break-points",
-          "title": "Eala beats Ruzic in Hong Kong quarterfinal featuring 29 break points",
-          "publisher": "WTA Tennis",
+          "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10?utm_source=blast&amp;amp%3Butm_medium=o_email&amp;amp%3Butm_campaign=e10316_global_localized_gtavi-preload_static_learn-more&amp;amp%3Butm_content=main-img",
+          "title": "Grand Theft Auto VI Pre-Load Begins on November 10",
+          "publisher": "Rockstar Games",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSv80hgDzLQTUbWCd8aJ63wDJWMJq5Nct5KomKc7K610eDJ21y3KvkIKTHoIo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRP0RNbrUaCSVCdZe1TVTMe96jHPbUGQXSxS_CtqnL_8ndAnx9F8JGQLuStNtU"
         },
         {
-          "url": "https://www.espn.com/tennis/story/_/id/50400006/alex-eala-antonia-ruzic-hong-kong-open-quarterfinal",
-          "title": "Alex Eala survives Antonia Ruzic test, storms into Hong Kong Open semifinals against Maria Sakkari",
-          "publisher": "ESPN",
+          "url": "https://corporate.charter.com/newsroom/spectrum-giving-free-gig-speed-lift-thanksgiving-grand-theft-auto",
+          "title": "Download Grand Theft Auto VI Faster and Get to Leonida Sooner With Spectrum Internet Gig",
+          "publisher": "Charter Communications",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp3BfJ7KRWu6Rp4OY8DvhScpyoiF42kNB59EbUPv019ayoCQcyotfmRRI4Tow"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLrldBUNUxrprrQdaGkYX-IyU3QqIHF3o_gPJ8nNZdwM-7CUvyPxPcKlXOanM"
         },
         {
-          "url": "https://sports.inquirer.net/705765/live-alex-eala-vs-maria-sakkari-hong-kong-open-semifinals",
-          "title": "LIVE: Alex Eala vs Maria Sakkari – Hong Kong Open semifinals",
-          "publisher": "Inquirer.net",
+          "url": "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/",
+          "title": "Grand Theft Auto VI pre-download begins November 10",
+          "publisher": "PlayStation.Blog",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWRYZGaZJExgKOj6uSwfI0lamPAIt-m6-Jiz-aM_qiF7_1ZWwKZP-iAXZzSqw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyNgZ56vmBZJJNXtBuVMuXt5SrJjkpTULssjmIfrOVOdDg6PUuF-BaAKk2CE8"
         }
       ]
     },
@@ -209,43 +271,8 @@
       ]
     },
     {
-      "query": "la",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-07T08:50:00Z",
-      "related_news_urls": [
-        "https://abc7.com/story/where-nithya-raman-won-votes-karen-bass-interactive-map-breaks-down-la-mayoral-vote/20020903/",
-        "https://ktla.com/news/local-news/horvath-raman-city-county-partnership/",
-        "https://laist.com/news/politics/raman-defeats-bass-in-race-for-la-mayor-ushering-in-new-era-of-progressive-politics"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVbDJoa0hqkVUbc3Qm7-B9nEAFZNaTT-JFUlrjpmfZYlkDnW-ZHuFAWyNXFOk",
-      "image_credit": "ABC7 Los Angeles",
-      "news": [
-        {
-          "url": "https://abc7.com/story/where-nithya-raman-won-votes-karen-bass-interactive-map-breaks-down-la-mayoral-vote/20020903/",
-          "title": "Interactive map shows where Angelenos voted for Nithya Raman over Karen Bass in L.A. mayoral race",
-          "publisher": "ABC7 Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVbDJoa0hqkVUbc3Qm7-B9nEAFZNaTT-JFUlrjpmfZYlkDnW-ZHuFAWyNXFOk"
-        },
-        {
-          "url": "https://ktla.com/news/local-news/horvath-raman-city-county-partnership/",
-          "title": "‘People are hungry for change,’ says the only L.A. County supervisor who endorsed Nithya Raman",
-          "publisher": "KTLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTxhEyvbaiSmYLaU-KewKEUqzjqDGHmyT-AKfoo1rPTuhNXUwPLzInbaCkTPA"
-        },
-        {
-          "url": "https://laist.com/news/politics/raman-defeats-bass-in-race-for-la-mayor-ushering-in-new-era-of-progressive-politics",
-          "title": "Raman defeats Bass in race for LA mayor, ushering in new era of progressive politics",
-          "publisher": "LAist",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6cUHE2C59xipcZkVE8Pa4DdUPB-KbqFewWwImDu_kKaeeiJGoiLXUhFkx27E"
-        }
-      ]
-    },
-    {
       "query": "jj gabriel",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-07T08:40:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/athletic/7596852/2026/11/04/jj-gabriel-real-madrid-manchester-united/",
@@ -279,58 +306,23 @@
       ]
     },
     {
-      "query": "gta release date",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-07T08:40:00Z",
-      "related_news_urls": [
-        "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10?utm_source=blast&amp;amp%3Butm_medium=o_email&amp;amp%3Butm_campaign=e10316_global_localized_gtavi-preload_static_learn-more&amp;amp%3Butm_content=main-img",
-        "https://corporate.charter.com/newsroom/spectrum-giving-free-gig-speed-lift-thanksgiving-grand-theft-auto",
-        "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvr3MnhC7loBDcBhBXQOjgXQdBnSX1GgBl8Gp0wCtDiGaqob5Fx5ug4CQtEz4",
-      "image_credit": "Rockstar Games",
-      "news": [
-        {
-          "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10?utm_source=blast&amp;amp%3Butm_medium=o_email&amp;amp%3Butm_campaign=e10316_global_localized_gtavi-preload_static_learn-more&amp;amp%3Butm_content=main-img",
-          "title": "Grand Theft Auto VI Pre-Load Begins on November 10",
-          "publisher": "Rockstar Games",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvr3MnhC7loBDcBhBXQOjgXQdBnSX1GgBl8Gp0wCtDiGaqob5Fx5ug4CQtEz4"
-        },
-        {
-          "url": "https://corporate.charter.com/newsroom/spectrum-giving-free-gig-speed-lift-thanksgiving-grand-theft-auto",
-          "title": "Download Grand Theft Auto VI Faster and Get to Leonida Sooner With Spectrum Internet Gig",
-          "publisher": "Charter Communications",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLrldBUNUxrprrQdaGkYX-IyU3QqIHF3o_gPJ8nNZdwM-7CUvyPxPcKlXOanM"
-        },
-        {
-          "url": "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/",
-          "title": "Grand Theft Auto VI pre-download begins November 10",
-          "publisher": "PlayStation.Blog",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyNgZ56vmBZJJNXtBuVMuXt5SrJjkpTULssjmIfrOVOdDg6PUuF-BaAKk2CE8"
-        }
-      ]
-    },
-    {
       "query": "rugby league world cup",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-07T08:30:00Z",
       "related_news_urls": [
         "https://www.bbc.com/sport/rugby-league/live/c6wyrexkky71t",
         "https://www.theguardian.com/sport/2026/nov/07/new-zealand-kiwi-ferns-samoa-womens-rugby-league-world-cup-semi-final-match-report",
         "https://www.rlwc2026.com/news/world-cup-team-lists-womens-semi-finals"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyO9iB3xKZVCdjxla6P9ebEImfOrLXYY-eRVFNx6qyet4cACYVS-U6W62WpF4",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0gdr3VvkFbUVrDxr1oDtFd1He7Qi0qh5DzWHKgdTIQ3t5RqA1kht6Zxtj0Sc",
       "image_credit": "BBC",
       "news": [
         {
           "url": "https://www.bbc.com/sport/rugby-league/live/c6wyrexkky71t",
-          "title": "Women's Rugby League World Cup LIVE: Semi-Final 1 New Zealand v Samoa - radio commentary",
+          "title": "Women's Rugby League World Cup LIVE: Semi-Final 1 New Zealand v Samoa - live text and radio commentary",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyO9iB3xKZVCdjxla6P9ebEImfOrLXYY-eRVFNx6qyet4cACYVS-U6W62WpF4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0gdr3VvkFbUVrDxr1oDtFd1He7Qi0qh5DzWHKgdTIQ3t5RqA1kht6Zxtj0Sc"
         },
         {
           "url": "https://www.theguardian.com/sport/2026/nov/07/new-zealand-kiwi-ferns-samoa-womens-rugby-league-world-cup-semi-final-match-report",
