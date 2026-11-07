@@ -1,0 +1,50 @@
+name: Developer catalog source import (review only)
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 5 * * 0'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/build-developer-source-catalog.mjs'
+      - '.github/workflows/developer-catalog-import.yml'
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  stage-candidate-data-pr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test source-only data importer
+        run: node --test tests/developer-catalog-import.test.mjs
+      - name: Search GitHub public repository metadata within provider limits
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/build-developer-source-catalog.mjs
+      - name: Stage candidate catalog on separate review branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- data/developer-source-catalog.json; then
+            echo "No candidate catalog changes"
+            exit 0
+          fi
+          git config user.name "quanta-developer-catalog[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -C bot/developer-source-catalog
+          git add data/developer-source-catalog.json
+          git commit -m "data: stage GitHub developer catalog candidates for review"
+          git push --force-with-lease origin bot/developer-source-catalog
+          if ! gh pr list --head bot/developer-source-catalog --state open --json number --jq 'length' | grep -qx '1'; then
+            gh pr create --head bot/developer-source-catalog --base main \
+              --title "Review sourced Developer Library catalog update" \
+              --body "Metadata-only candidate source cards from GitHub Search API. Not approved implementations. Review repository identity, description, license, relevance, safety, age and rights before merging. No imported scripts execute. #1790"
+          fi
