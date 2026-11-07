@@ -1,36 +1,56 @@
-/* Fred's existing Media Star: quick access near Infinity Radio, not a second player.
-   Actual X replays and the StarCoin ledger remain in fred-spaces-radio.js. */
+/* Fred's permanent, visible first-screen Media Star controls.
+   Each listening link opens the original X Space, never a simulated local stream. */
 #fredSpacesQuick{
-  box-sizing:border-box;margin:9px 0 12px;max-width:100%;
+  box-sizing:border-box;display:grid;gap:9px;
+  width:100%;max-width:100%;margin:10px 0 16px;
+  padding:12px;border:2px solid #76b6b6;border-radius:19px;
+  background:linear-gradient(125deg,#e5faf6 0%,#f8fcfc 60%,#fff 100%);
+  box-shadow:0 5px 19px #184e4d1b;color:#163e4b;
 }
 #fredSpacesQuickPlay{
   box-sizing:border-box;display:flex;width:100%;min-width:0;min-height:70px;
-  align-items:center;gap:12px;padding:10px 12px;
-  background:linear-gradient(115deg,#e8faf7,#fff);color:#163e4b;
-  border:1px solid #9fcecc;border-radius:16px;cursor:pointer;
-  box-shadow:0 4px 15px #184e4d12;text-align:left;
+  align-items:center;gap:12px;padding:5px 4px;
+  background:transparent;color:#163e4b!important;border:0;
+  border-radius:12px;cursor:pointer;text-align:left;text-decoration:none!important;
   font-family:inherit;line-height:1.4;white-space:normal;
 }
 #fredSpacesQuickPlay .fmq-play{
   box-sizing:border-box;display:grid;place-items:center;flex:none;
-  width:48px;height:48px;min-height:48px;padding-left:3px;
-  border:0;border-radius:50%;background:#136a76;color:#fff;
-  font-size:22px;font-weight:900;
+  width:50px;height:50px;min-height:50px;padding-left:3px;
+  border:0;border-radius:50%;background:#126b78;color:#fff;
+  font-size:23px;font-weight:900;box-shadow:0 2px 8px #20535b33;
 }
 #fredSpacesQuickPlay .fmq-copy{min-width:0;flex:1 1 auto;display:grid;gap:3px}
 #fredSpacesQuickPlay .fmq-name{
-  display:block;font-size:16px;font-weight:900;color:#163e4b;
+  display:block;font-size:clamp(17px,4.8vw,21px);font-weight:900;color:#163e4b;
   line-height:1.3;overflow-wrap:anywhere;
 }
 #fredSpacesQuickPlay .fmq-note{
-  display:block;font-size:13px;font-weight:650;color:#45616a;
-  line-height:1.45;overflow-wrap:anywhere;
+  display:block;font-size:15px;font-weight:750;color:#365e64;
+  line-height:1.4;overflow-wrap:anywhere;
 }
-#fredSpacesQuickPlay:focus-visible{
+#fredSpacesQuick .fmq-controls{display:flex;gap:8px;flex-wrap:wrap}
+#fredSpacesQuick .fmq-controls button{
+  box-sizing:border-box;flex:1 1 145px;min-width:0;min-height:48px;
+  padding:10px 12px;border:1px solid #91bfc4;border-radius:12px;
+  background:#fff;color:#1a4652;font:800 15px/1.35 inherit;
+  font-family:inherit;cursor:pointer;text-align:center;
+  overflow-wrap:anywhere;
+}
+#fredSpacesQuick #fredSpacesQuickNext{
+  background:#126b78;color:#fff;border-color:#126b78;
+}
+#fredSpacesQuickStatus{
+  margin:0;padding:0 3px;color:#416168;font-size:14px;
+  font-weight:650;line-height:1.45;overflow-wrap:anywhere;
+}
+#fredSpacesQuickPlay:focus-visible,
+#fredSpacesQuick .fmq-controls button:focus-visible{
   outline:3px solid #9c5dd6;outline-offset:3px;
 }
-#fredSpacesQuickPlay:active{transform:translateY(1px)}
+#fredSpacesQuickPlay:active,#fredSpacesQuick .fmq-controls button:active{transform:translateY(1px)}
 @media(max-width:360px){
-  #fredSpacesQuickPlay{padding:10px;gap:9px}
-  #fredSpacesQuickPlay .fmq-note{font-size:13px}
+ #fredSpacesQuick{padding:10px;gap:7px}
+ #fredSpacesQuickPlay{gap:10px}
+ #fredSpacesQuick .fmq-controls button{flex-basis:130px}
 }
