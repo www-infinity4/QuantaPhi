@@ -30,6 +30,7 @@ export const cards=Object.freeze([
  local('radio-clubhouse','Radio Clubhouse','radioClubhouse',['radio-clubhouse.js'],['radio-clubhouse.css']),
  local('concepts','Infinity Concepts','infinityConcepts',['infinity-concepts.js'],['infinity-concepts.css']),
  local('group-story','Group Story','groupStoryBuild',['group-story.js'],['group-story.css'],['group story build']),
+ app('trending-movies','Trending Movies · Play Trailers in Quick Cards','/?card=trending-movies','QuantaPhi',['google trending movies','new movies','movie trailers','cinema carousel','movies trending now']),
  app('quant-tv-movies','Quant Movies · CNN CNBC NASA PBS','/?card=tvQuantExpansion','QuantaPhi',['science movies','quant movies','nasa documentaries','cnn cnbc','pbs nova']),
  local('channels','Television Cards','phiChannelCards',['phi-tv-programs.js','phi-channel-cards.js'],['phi-channel-cards.css'],['channel cards','tv channels','infinity tv','cnn live','cnbc live','nasa plus','pbs nova','pbs documentary','quant movies','science fiction movies']),
  app('trending-now','Trending Google Search Cards','/trending-now.html','QuantaPhi',['trending','google trends','trending now','trending cards','trend cards']),
