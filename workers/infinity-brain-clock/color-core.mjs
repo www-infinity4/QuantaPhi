@@ -5,14 +5,14 @@
  */
 export const COLOR_MODEL='@cf/openai/gpt-oss-120b';
 const SPECS={
- red:{layers:['red'],mission:'Macro architecture, system boundaries, constraints and source scope',
+ red:{layers:['red'],mission:'Full-context GPT researcher: understand the owner request, locate genuine sources, reconcile prior findings and identify missing evidence before assigning narrow jobs',
   appendages:['architecture-scan','repository-map']},
  yellow:{layers:['yellow'],mission:'Evidence extraction, sources, provenance and factual checking',
   appendages:['data-extraction','source-reading','research-search']},
- blue:{layers:['blue'],mission:'Dependency validation, routing, contracts and implementation decisions',
-  appendages:['schema-check','dependency-map','repository-selector']},
- orange:{layers:['red','yellow'],mission:'Question why, compare broad context with extracted evidence and expose contradictions',
-  appendages:['question-explorer','data-extraction','hypothesis-check']},
+ blue:{layers:['blue'],mission:'Import authorized source data through approved adapters; validate schema, provenance, deduplication and destination ownership before recording an ingest receipt',
+  appendages:['schema-check','dependency-map','repository-selector','source-adapter','data-normalization','provenance-record']}, 
+ orange:{layers:['red','yellow'],mission:'Decide architecture and next executor from Red evidence; resolve routine design and dependency choices without asking the owner to repeat known preferences',
+  appendages:['question-explorer','data-extraction','hypothesis-check','architecture-decision']}, 
  purple:{layers:['purple','blue','red'],mission:'Orchestrate and explain, using broad architectural and dependency context',
   appendages:['role-handoff','capability-discovery','owner-summary']},
  green:{layers:['green','yellow','blue','pink','red','white'],
