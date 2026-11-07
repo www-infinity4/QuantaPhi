@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-07T02:31:27.997503Z",
+  "checked_at": "2026-11-07T03:01:35.642949Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "spurs vs kings",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-07T02:10:00Z",
-      "related_news_urls": [
-        "https://www.poundingtherock.com/spurs-game-previews/109536/game-preview-san-antonio-spurs-vs-sacramento-kings",
-        "https://kingsherald.com/articles/kings-vs-spurs-alien-invasion/",
-        "https://news4sanantonio.com/news/local/san-antonio-spurs-take-on-sacramento-kings-in-nba-cup-group-stage"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRScz580dK3GUunMgw45QATghaMWDLQxppQ25wsBVOAcbwlSF-KyqJRyMiLcGQ",
-      "image_credit": "Pounding The Rock",
-      "news": [
-        {
-          "url": "https://www.poundingtherock.com/spurs-game-previews/109536/game-preview-san-antonio-spurs-vs-sacramento-kings",
-          "title": "Game Preview: San Antonio Spurs vs. Sacramento Kings",
-          "publisher": "Pounding The Rock",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRScz580dK3GUunMgw45QATghaMWDLQxppQ25wsBVOAcbwlSF-KyqJRyMiLcGQ"
-        },
-        {
-          "url": "https://kingsherald.com/articles/kings-vs-spurs-alien-invasion/",
-          "title": "Kings vs. Spurs: Alien Invasion",
-          "publisher": "The Kings Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEP0pOa4LWqfIwdPh6Y3M6pi4BeX632njFcOqdLgAhCxNLVwP8CqSboy8koOg"
-        },
-        {
-          "url": "https://news4sanantonio.com/news/local/san-antonio-spurs-take-on-sacramento-kings-in-nba-cup-group-stage",
-          "title": "San Antonio Spurs take on Sacramento Kings in NBA Cup group stage",
-          "publisher": "WOAI",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRf-InJua_upYO4cvb8K9xBactraSvtG6gj30xaWnLXqllfwnUpFPw4ykE5ssk"
-        }
-      ]
-    },
-    {
-      "query": "paul george",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-07T02:10:00Z",
-      "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/05/sports/celtics-paul-george/",
-        "https://nesn.com/boston-celtics/news/joe-mazzulla-strong-message-paul-george/44f1906f8a1d35674253c90f",
-        "https://thesixersense.com/76ers-must-ignore-paul-george-jaylen-brown-comparisons-from-celtics-side"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRie8Ll-F2qCCe515aGpPzN0pUXzedCBpIm5wCwqh2jjDAvdLIVlYbXLVW0e4",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/05/sports/celtics-paul-george/",
-          "title": "When Jayson Tatum sits, Paul George — healthy and rested — shifts into ‘attack mode’",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRie8Ll-F2qCCe515aGpPzN0pUXzedCBpIm5wCwqh2jjDAvdLIVlYbXLVW0e4"
-        },
-        {
-          "url": "https://nesn.com/boston-celtics/news/joe-mazzulla-strong-message-paul-george/44f1906f8a1d35674253c90f",
-          "title": "Joe Mazzulla Sends Strong Message About Paul George",
-          "publisher": "NESN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrsUlJw2eKKfO1aZs4RZQfS6W_OpZYe_HBWqzW_QCvSFPuX_5oU6TG3QSABW8"
-        },
-        {
-          "url": "https://thesixersense.com/76ers-must-ignore-paul-george-jaylen-brown-comparisons-from-celtics-side",
-          "title": "76ers must ignore Paul George, Jaylen Brown comparisons from Celtics side",
-          "publisher": "The Sixer Sense",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSZNXyeaACsZKe-c28A3HycaHB57Yi1XdTxTwnX7RrZBBNaHV0tSBm_W1l-E0"
-        }
-      ]
-    },
-    {
-      "query": "mhsaa football playoffs",
+      "query": "jordan elliott",
       "approx_searches": "500+",
-      "published_at": "2026-11-07T02:10:00Z",
+      "published_at": "2026-11-07T02:40:00Z",
       "related_news_urls": [
-        "https://www.lansingstatejournal.com/story/sports/high-school/2026/11/06/mhsaa-football-scores-greater-lansing-district-final-live-updates-2026/92639897007/",
-        "https://www.mhsaa.com/sports/football/stories/1st-goal-2026-playoffs-week-2-preview",
-        "https://www.woodtv.com/sports/football-frenzy/high-school-football-frenzy-district-finals-highlights-november-6-2026/"
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-06/jordan-elliott-to-work-out-for-bears-next-week",
+        "https://athlonsports.com/nfl/chicago-bears/bears-jordan-elliott-workout-robert-saleh",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-06/taylor-back-good-to-go-for-week-9-vs-chiefs"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgY684H67H0qDCUULjj2ZvrTaMzbuxrGpUGd1qO-VxTaZ24b7nQhznOAo9W44",
-      "image_credit": "Lansing State Journal",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsL4i8mKcdeJ_quYcp4vYkloePl1gbaZFNi7wcMo_VcdGNgXF3s1bSXcKgieo",
+      "image_credit": "NBC Sports",
       "news": [
         {
-          "url": "https://www.lansingstatejournal.com/story/sports/high-school/2026/11/06/mhsaa-football-scores-greater-lansing-district-final-live-updates-2026/92639897007/",
-          "title": "Michigan high school football scores: Greater Lansing district final live updates",
-          "publisher": "Lansing State Journal",
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-06/jordan-elliott-to-work-out-for-bears-next-week",
+          "title": "Jordan Elliott to work out for Bears next week",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgY684H67H0qDCUULjj2ZvrTaMzbuxrGpUGd1qO-VxTaZ24b7nQhznOAo9W44"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsL4i8mKcdeJ_quYcp4vYkloePl1gbaZFNi7wcMo_VcdGNgXF3s1bSXcKgieo"
         },
         {
-          "url": "https://www.mhsaa.com/sports/football/stories/1st-goal-2026-playoffs-week-2-preview",
-          "title": "1st & Goal: 2026 Playoffs Week 2 Preview",
-          "publisher": "Michigan High School Athletic Association",
+          "url": "https://athlonsports.com/nfl/chicago-bears/bears-jordan-elliott-workout-robert-saleh",
+          "title": "Bears Eye Another Defensive Tackle With Ties to Robert Saleh",
+          "publisher": "Athlon Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAPCjrqokrVlxKEkarMqW8bjY0Lh4ddCEhuvE8-SAIEth1q81mJNqf8YbSY2M"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-GrDMrw8ima0afB9Aj7saJ2bFcbyeXGqii91bDOrxjDK-zOE6r2GdJMlAY2k"
         },
         {
-          "url": "https://www.woodtv.com/sports/football-frenzy/high-school-football-frenzy-district-finals-highlights-november-6-2026/",
-          "title": "Football Frenzy: Where we’ll be for district finals",
-          "publisher": "WOODTV.com",
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-06/taylor-back-good-to-go-for-week-9-vs-chiefs",
+          "title": "Taylor (back) good to go for Week 9 vs. Chiefs",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuuod0ve7gQ9dTs8FJh_EG52ORCLchNeJiOORShkOz_wpmAwr2s6wW9EkuziI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuKFLpq0SraMScHnXu8y1LDFTwMuJ-mPIJwfBMX6_LC32_Y-nxmSBJQFC7-_0"
         }
       ]
     },
     {
-      "query": "tre johnson",
+      "query": "utah royals fc vs san diego wave",
       "approx_searches": "500+",
-      "published_at": "2026-11-07T02:10:00Z",
+      "published_at": "2026-11-07T02:40:00Z",
       "related_news_urls": [
-        "https://wizofawes.com/tre-johnsons-disappointing-start-leaves-wizards-needing-more",
-        "https://www.bulletsforever.com/washington-wizards-preview/73863/washington-wizards-atlanta-hawks-nba-game-preview",
-        "https://www.espn.com/nba/recap/_/gameId/401909923"
+        "https://www.deseret.com/sports/2026/11/06/utah-royals-fc-prepares-for-first-nwsl-playoffs-match/",
+        "https://www.oregonlive.com/tv/2026/11/how-to-watch-san-diego-wave-fc-vs-utah-royals-nwsl-playoff-game-tonight-time-free-live-stream-betting-lines.html",
+        "https://www.sandiegouniontribune.com/2026/11/05/wave-say-theyll-stick-to-the-game-plan-as-nwsl-title-run-begins-with-home-playoff-match/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF4Lq4oV7yTnNfaJxJqYoVdbpTsrM7hJrF3mPP1FmL3WVGVbHT5jVOexJNFwY",
-      "image_credit": "Wiz of Awes",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjNqhYCPomYFAGKNtlZOUuXYI_2OsqCSpTsM0rU3tyS6HSTkyWSEoGghbIinQ",
+      "image_credit": "Deseret News",
       "news": [
         {
-          "url": "https://wizofawes.com/tre-johnsons-disappointing-start-leaves-wizards-needing-more",
-          "title": "Tre Johnson's disappointing start leaves the Wizards needing more",
-          "publisher": "Wiz of Awes",
+          "url": "https://www.deseret.com/sports/2026/11/06/utah-royals-fc-prepares-for-first-nwsl-playoffs-match/",
+          "title": "Utah Royals make their first-ever playoff match, and ownership says the season is already a success",
+          "publisher": "Deseret News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF4Lq4oV7yTnNfaJxJqYoVdbpTsrM7hJrF3mPP1FmL3WVGVbHT5jVOexJNFwY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjNqhYCPomYFAGKNtlZOUuXYI_2OsqCSpTsM0rU3tyS6HSTkyWSEoGghbIinQ"
         },
         {
-          "url": "https://www.bulletsforever.com/washington-wizards-preview/73863/washington-wizards-atlanta-hawks-nba-game-preview",
-          "title": "Wizards at Hawks preview: Washington plays Atlanta on second half of home-and-away",
-          "publisher": "Bullets Forever",
+          "url": "https://www.oregonlive.com/tv/2026/11/how-to-watch-san-diego-wave-fc-vs-utah-royals-nwsl-playoff-game-tonight-time-free-live-stream-betting-lines.html",
+          "title": "How to watch San Diego Wave FC vs. Utah Royals NWSL playoff game tonight: Time, free live stream, betting lin",
+          "publisher": "OregonLive.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPoqbfAGxJC4Io9UrjzUmNKQ8mo77tYfLuZDEA4bhKpmY-aPPn5p6oXEPv8PA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRhSl7DUW9-CETsRxEijhu6oV_lSy7HY4kVYWhy4MjtG4aSqr1RmgmpRMIdIQ"
         },
         {
-          "url": "https://www.espn.com/nba/recap/_/gameId/401909923",
-          "title": "Hawks 120-105 Wizards (Nov 4, 2026) Game Recap",
-          "publisher": "ESPN",
+          "url": "https://www.sandiegouniontribune.com/2026/11/05/wave-say-theyll-stick-to-the-game-plan-as-nwsl-title-run-begins-with-home-playoff-match/",
+          "title": "Wave say they'll stick to the game plan as their NWSL title run begins with a home playoff match",
+          "publisher": "San Diego Union-Tribune",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7IAdcRNt3y7IEUhLboQwUWRAd6Ez1ZFbJnje-edmkk3a6plJLH1-Hq4rj3Gs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTy9pWG9IpVDNrdy_f_bUNZdSVm_IKDtAvmxfwDY9wQrjtt0XE00Q9Rb-CzTm0"
         }
       ]
     },
     {
-      "query": "lsu basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-07T02:10:00Z",
+      "query": "andy beshear",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T02:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/womens-college-basketball/story/_/id/50396158/no-9-lsu-women-crush-texas-southern-historic-131-22-victory",
-        "https://www.foxnews.com/outkick-sports/womens-college-basketball-team-humiliates-opponent-historical-blowout-hooters-girls-back-nascar",
-        "https://www.wafb.com/2026/11/03/lsu-recognize-angel-reese-halftime/"
+        "https://www.whas11.com/article/news/politics/national-politics/dga-chair-andy-beshear-democrat-governor-wins/417-9e592faf-0a21-4d1e-83e2-ce62de9eb145",
+        "https://www.cnn.com/2026/11/04/politics/video/beshear-kentucky-cooper-trump-referendum-digvid",
+        "https://www.courier-journal.com/story/news/politics/andy-beshear/2026/11/06/andy-beshear-democratic-governors-success-potential-presidential-run/92623461007/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1zyvEihMmJvSFfq2Fr9642aRrhFj85g53Bsld4nEzHJPkTMK5VYKXtoPhc90",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXZQeTp6bciw03SZDxMnJmA9c3D5fMGPEXBuIQbDCcguCXeHhm6qyL7F0K0lU",
+      "image_credit": "WHAS11",
+      "news": [
+        {
+          "url": "https://www.whas11.com/article/news/politics/national-politics/dga-chair-andy-beshear-democrat-governor-wins/417-9e592faf-0a21-4d1e-83e2-ce62de9eb145",
+          "title": "'Blue wave' for Democrats was also an important win for Kentucky's Andy Beshear. Here's why",
+          "publisher": "WHAS11",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXZQeTp6bciw03SZDxMnJmA9c3D5fMGPEXBuIQbDCcguCXeHhm6qyL7F0K0lU"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/04/politics/video/beshear-kentucky-cooper-trump-referendum-digvid",
+          "title": "Gov. Beshear calls election a referendum on Trump",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSefXS-d2Ld-PXaF_RUlKh7ih5lYMmlQ62eM98poLpFCyqTmoG0UkCnZouVtT0"
+        },
+        {
+          "url": "https://www.courier-journal.com/story/news/politics/andy-beshear/2026/11/06/andy-beshear-democratic-governors-success-potential-presidential-run/92623461007/",
+          "title": "Beshear's DGA candidates roll in blue wave. What could it mean for 2028?",
+          "publisher": "The Courier-Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2f3h81DxK6L4tFtIMHqFiHA4-T4T03KkP19vd6NQD8Ll5AVPB9vvpEdyAiuQ"
+        }
+      ]
+    },
+    {
+      "query": "college basketball scores",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T02:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/womens-college-basketball/story/_/id/50403206/two-women-basketball-players-make-layups-wrong-team",
+        "https://www.foxnews.com/outkick-sports/two-womens-college-basketball-teams-score-own-baskets-same-day",
+        "https://www.tmz.com/2026/11/06/new-mexico-state-hooper-hits-buzzer-beater-on-wrong-basket-down-1-with-20-seconds-left/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6Abkf35aFgGmGmSFx1g3uEIJUCMaEBZXqL9M9L0-UMwLZMrRgE4SVyO6xs8M",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/womens-college-basketball/story/_/id/50396158/no-9-lsu-women-crush-texas-southern-historic-131-22-victory",
-          "title": "No. 9 LSU women crush Texas Southern in historic 131-22 victory",
+          "url": "https://www.espn.com/womens-college-basketball/story/_/id/50403206/two-women-basketball-players-make-layups-wrong-team",
+          "title": "Players from New Mexico State, Northwestern State make layups for wrong team",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1zyvEihMmJvSFfq2Fr9642aRrhFj85g53Bsld4nEzHJPkTMK5VYKXtoPhc90"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6Abkf35aFgGmGmSFx1g3uEIJUCMaEBZXqL9M9L0-UMwLZMrRgE4SVyO6xs8M"
         },
         {
-          "url": "https://www.foxnews.com/outkick-sports/womens-college-basketball-team-humiliates-opponent-historical-blowout-hooters-girls-back-nascar",
-          "title": "Women's college basketball team humiliates opponent with historical blowout & Hooters girls are BACK in NASCAR",
+          "url": "https://www.foxnews.com/outkick-sports/two-womens-college-basketball-teams-score-own-baskets-same-day",
+          "title": "Two women's college basketball teams score on their own baskets in the same day",
           "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9tTYGuV6Vvtu64hHPUM2iAfaP4vgcMrVmjMBj9hylPToYP9jMkNTWJbwOWBE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1gCnMSuAZ4MxiGli6tUZw0BCaAsWgs1p3CMRzInlDRWD-l753QLnku_b0De8"
         },
         {
-          "url": "https://www.wafb.com/2026/11/03/lsu-recognize-angel-reese-halftime/",
-          "title": "LSU recognizes Angel Reese at halftime of Texas Southern game",
-          "publisher": "WAFB",
+          "url": "https://www.tmz.com/2026/11/06/new-mexico-state-hooper-hits-buzzer-beater-on-wrong-basket-down-1-with-20-seconds-left/",
+          "title": "New Mexico State Hooper Scores On Wrong Basket Down 1 With 20 Seconds Left",
+          "publisher": "TMZ",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTDge_qgJQ2NmG5b5LwIgoXRpmH9EfLmTm8TdbxkKHrc_eRuWEIUlI5E96NvA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSThN8PfSN6wKmABjMYqA5tvzKsRx5BdmAJswo-IL3lWNOjYzBiONlW98Wrjlc"
         }
       ]
     },
     {
-      "query": "hawks game",
+      "query": "cm punk",
       "approx_searches": "200+",
-      "published_at": "2026-11-07T02:10:00Z",
+      "published_at": "2026-11-07T02:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/radio/play/_/id/50308953",
-        "https://www.espn.com.au/wnba/story/_/id/50308081/wnba-games-today-dream-valkyries-watch-oct-29",
-        "https://www.espn.com/soccer/odds/_/gameId/401874963"
+        "https://www.wwe.com/shows/smackdown/2026-11-06",
+        "https://bleacherreport.com/liveblogs/25529861-wwe-smackdown-live-updates-results-and-highlights-crown-jewel-2026",
+        "https://www.cagesideseats.com/wwe/485255/wwe-smackdown-preview-nov-6-2026-cm-punk-vs-kevin-owens-no-holds-barred-crown-jewel-go-home"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-RXnETtRNQz3KMvd1_ErThGnR-RGDBlmAZKKFizqp-S6OMe-gyJvYdQ8YNPs",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0r15fe9a71j3cAdc-N1l7X16fwfSECPRH2Ozige2ujiTAtFbwidc7IkleHDA",
+      "image_credit": "WWE",
+      "news": [
+        {
+          "url": "https://www.wwe.com/shows/smackdown/2026-11-06",
+          "title": "SmackDown, Nov. 6, 2026 preview: CM Punk battles Kevin Owens in a No Holds Barred Match",
+          "publisher": "WWE",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0r15fe9a71j3cAdc-N1l7X16fwfSECPRH2Ozige2ujiTAtFbwidc7IkleHDA"
+        },
+        {
+          "url": "https://bleacherreport.com/liveblogs/25529861-wwe-smackdown-live-updates-results-and-highlights-crown-jewel-2026",
+          "title": "WWE SmackDown Live Updates, Results and Highlights Before Crown Jewel 2026",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9wriTEFmqxUAXbxp5-YiGJpRInpd_1XD3Enl2tHCAK-K6elIMFNGStN3OzU4"
+        },
+        {
+          "url": "https://www.cagesideseats.com/wwe/485255/wwe-smackdown-preview-nov-6-2026-cm-punk-vs-kevin-owens-no-holds-barred-crown-jewel-go-home",
+          "title": "Punk and Owens have a great reason for not going on WWE’s very dumb flight to Saudi Arabia",
+          "publisher": "Cageside Seats",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvnrPDwNiJ0yahfTOxJnjLSkxUYlhTCJklI-8AsnBW8Lg5Dd_vNDF8ZruF1Ns"
+        }
+      ]
+    },
+    {
+      "query": "johnny walker",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T02:40:00Z",
+      "related_news_urls": [
+        "https://www.ufc.com/news/waldo-cortes-acosta-short-notice-no-problem-ufc-vegas-124",
+        "https://www.mmafighting.com/ufc/519437/johnny-walker-cites-huge-advantage-over-ufc-heavyweights-calls-waldo-cortes-acosta-his-christmas-present",
+        "https://www.sherdog.com/news/articles/How-to-watch-UFC-Vegas-124-Start-time-Paramount43-stream-full-fight-card-203519"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9W3RboBxp482D1QLIsymYr3SXbN311Wk_QqdeuXU0aBuGJKXDGHuRSliJu7U",
+      "image_credit": "UFC.com",
+      "news": [
+        {
+          "url": "https://www.ufc.com/news/waldo-cortes-acosta-short-notice-no-problem-ufc-vegas-124",
+          "title": "Waldo Cortes Acosta | Short Notice, No Problem",
+          "publisher": "UFC.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9W3RboBxp482D1QLIsymYr3SXbN311Wk_QqdeuXU0aBuGJKXDGHuRSliJu7U"
+        },
+        {
+          "url": "https://www.mmafighting.com/ufc/519437/johnny-walker-cites-huge-advantage-over-ufc-heavyweights-calls-waldo-cortes-acosta-his-christmas-present",
+          "title": "Johnny Walker cites ‘huge advantage’ over UFC heavyweights, calls Waldo Cortes-Acosta his ‘Christmas present’",
+          "publisher": "MMA Fighting",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://www.sherdog.com/news/articles/How-to-watch-UFC-Vegas-124-Start-time-Paramount43-stream-full-fight-card-203519",
+          "title": "How to watch UFC Vegas 124: Start time, Paramount+ stream & full fight card",
+          "publisher": "Sherdog",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOe0-gcDwA1kZAVoYsMgseOlSe-WSxeNNtjcQQXgLFuXDsix4bP74Hq-gmkz4"
+        }
+      ]
+    },
+    {
+      "query": "kyshawn george",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-07T02:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-06/kyshawn-george-with-a-monster-33-4-7-performance",
+        "https://www.rotowire.com/basketball/headlines/trey-murphy-news-available-friday-537847",
+        "https://clutchpoints.com/nba/new-orleans-pelicans/trey-murphy-jordan-poole-injury-report-pelicans-jazz"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZ-fHCMc0axsWBWwY2B6O8qPiFqlQawYpB7TSs1D8Y8xdxlRwGk_IKdLo9OI4",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-06/kyshawn-george-with-a-monster-33-4-7-performance",
+          "title": "Kyshawn George with a monster 33/4/7 performance",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZ-fHCMc0axsWBWwY2B6O8qPiFqlQawYpB7TSs1D8Y8xdxlRwGk_IKdLo9OI4"
+        },
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/trey-murphy-news-available-friday-537847",
+          "title": "Trey Murphy News: Available Friday",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwGA-jO2c8gEueE6N9-igedM9IhybaaHvkv-MdfkOlqZT6OmwNFUyidRPW5C8"
+        },
+        {
+          "url": "https://clutchpoints.com/nba/new-orleans-pelicans/trey-murphy-jordan-poole-injury-report-pelicans-jazz",
+          "title": "Are Trey Murphy III, Jordan Poole playing tonight? Pelicans vs. Jazz injury report",
+          "publisher": "ClutchPoints",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRv6GW7rWj2evNtlr6QhR8HsjMh2c6EQtIicRz2kiPnTENshIMuawksA4mvAKM"
+        }
+      ]
+    },
+    {
+      "query": "robert pattinson",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T02:30:00Z",
+      "related_news_urls": [
+        "https://www.hollywoodreporter.com/movies/movie-news/robert-pattinson-tested-to-play-james-bond-1236749903/",
+        "https://www.thewrap.com/creative-content/movies/robert-pattinson-screen-tested-james-bond/",
+        "https://comicbook.com/movies/news/james-bond-casting-update-adds-robert-pattinson-nicholas-hoult-upending-007-shortlist/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-vJ6FWlsdfX6nMaRdZW3IERvMjxhbmAw6xQ9HUJ9FcS4iw_ha-relDg6oCq8",
+      "image_credit": "The Hollywood Reporter",
+      "news": [
+        {
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/robert-pattinson-tested-to-play-james-bond-1236749903/",
+          "title": "James Bond Surprise: Robert Pattinson Screen Tested to Play 007",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-vJ6FWlsdfX6nMaRdZW3IERvMjxhbmAw6xQ9HUJ9FcS4iw_ha-relDg6oCq8"
+        },
+        {
+          "url": "https://www.thewrap.com/creative-content/movies/robert-pattinson-screen-tested-james-bond/",
+          "title": "Batman as Bond? Robert Pattinson Screen Tested for 007 Role",
+          "publisher": "TheWrap",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_lZhk_zA0Z3ZoWL6dFudXu98yNGYxFjIXKaBZdNl93X8qwOSGZnVzmJTM__g"
+        },
+        {
+          "url": "https://comicbook.com/movies/news/james-bond-casting-update-adds-robert-pattinson-nicholas-hoult-upending-007-shortlist/",
+          "title": "James Bond Casting Update Adds Robert Pattinson & Nicholas Hoult, Upending 007 Shortlist",
+          "publisher": "ComicBook.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTidQ21TdC08puw3RqrujAYSUDvz0qsa4UGbqgSwEhPUUyEvuXSf8BZ-l3Vq1o"
+        }
+      ]
+    },
+    {
+      "query": "macklin celebrini",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T02:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nhl/recap/_/gameId/401892646",
+        "https://www.nhl.com/news/sharks-hold-players-only-meeting-after-kings-loss",
+        "https://www.mercurynews.com/2026/11/05/san-jose-sharks-mike-grier-simon-edvinsson-detroit-red-wings/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQZpSKPy-qYZO2WCwgmGqpyuHspM-gbDFk0LZeqcEw17qT0hj9bxDG71i32q4",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/radio/play/_/id/50308953",
-          "title": "Fantasy Focus Football - Week 8 Rankings: Who is set to be the top performers at each position? | Fantasy Focus",
+          "url": "https://www.espn.com/nhl/recap/_/gameId/401892646",
+          "title": "Kings 7-2 Sharks (Nov 4, 2026) Game Recap",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-RXnETtRNQz3KMvd1_ErThGnR-RGDBlmAZKKFizqp-S6OMe-gyJvYdQ8YNPs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQZpSKPy-qYZO2WCwgmGqpyuHspM-gbDFk0LZeqcEw17qT0hj9bxDG71i32q4"
         },
         {
-          "url": "https://www.espn.com.au/wnba/story/_/id/50308081/wnba-games-today-dream-valkyries-watch-oct-29",
-          "title": "What time is the WNBA Finals game today? Game 6 schedule",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHXx2VTEZh0coT7M3Nr5fJc0rOKOF01ygebjAwjJqlX5IQgLI-9bGqDn355sM"
-        },
-        {
-          "url": "https://www.espn.com/soccer/odds/_/gameId/401874963",
-          "title": "Sassuolo vs. Fiorentina (Nov 2, 2026) Odds and Spread",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRY5pdmnzAm0p0PbC7WH32NSgBxqs0uxVVYEWLVng4yWNsd3YUekN96WObbBU0"
-        }
-      ]
-    },
-    {
-      "query": "massillon football",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T02:10:00Z",
-      "related_news_urls": [
-        "https://www.cantonrep.com/story/sports/high-school/fridaynightohio/2026/11/06/massillon-high-school-football-score-columbus-desales-live-updates-ohsaa-playoffs/92618158007/",
-        "https://sports.yahoo.com/videos/savior-owens-10-yard-touchdown-013857195.html",
-        "https://massillontigers.com/2026/11/04/massillon-is-a-bigger-fish-in-the-division-ii-pond/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNUro_vdeV9auyGDP5GbpUCBRI3gOizuJUgZojTsR5VRxDL1epedZlzen5rU0",
-      "image_credit": "Canton Repository",
-      "news": [
-        {
-          "url": "https://www.cantonrep.com/story/sports/high-school/fridaynightohio/2026/11/06/massillon-high-school-football-score-columbus-desales-live-updates-ohsaa-playoffs/92618158007/",
-          "title": "Massillon vs. Columbus DeSales, OHSAA high school football score, live updates",
-          "publisher": "Canton Repository",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNUro_vdeV9auyGDP5GbpUCBRI3gOizuJUgZojTsR5VRxDL1epedZlzen5rU0"
-        },
-        {
-          "url": "https://sports.yahoo.com/videos/savior-owens-10-yard-touchdown-013857195.html",
-          "title": "Savior Owens 10-yard touchdown extends Massillon football lead",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTU5HeQfaWRaBAORNRxP8c7I7ZT8ap9r-sUBRYKVJJzFl8XyEFYQODMdnRWjo"
-        },
-        {
-          "url": "https://massillontigers.com/2026/11/04/massillon-is-a-bigger-fish-in-the-division-ii-pond/",
-          "title": "Massillon is a Bigger Fish in the Division II Pond",
-          "publisher": "MassillonTigers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDrU1KNlC9Je4FE8Er3vlO0W8Dh91s9nqtFR0bhahjrHVL987x0Ahy8pe4Hho"
-        }
-      ]
-    },
-    {
-      "query": "kirill kaprizov",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T02:10:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-6-2026",
-        "https://www.espn.com/video/clip/_/id/50403636/kirill-kaprizov-scores-power-play-minnesota-wild",
-        "https://www.nytimes.com/athletic/7753545/2026/11/05/kirill-kaprizov-wild-70-goals/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRg9MyxL_y1ysb-WO1riPhT-n7JFw6X44QsdepT9_HZTO65hlXMfIvkgcUSHPA",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-6-2026",
-          "title": "On Tap: Kaprizov seeks to continue goal outburst for Wild",
+          "url": "https://www.nhl.com/news/sharks-hold-players-only-meeting-after-kings-loss",
+          "title": "Sharks hold players-only meeting after Kings loss",
           "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRg9MyxL_y1ysb-WO1riPhT-n7JFw6X44QsdepT9_HZTO65hlXMfIvkgcUSHPA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGdIcMuA5bXJx3ELZ-p0N6kL8yH2bO9K4vcvg0DP1luxFVWwP3fAQ2uY-kYQs"
         },
         {
-          "url": "https://www.espn.com/video/clip/_/id/50403636/kirill-kaprizov-scores-power-play-minnesota-wild",
-          "title": "Kirill Kaprizov scores on the power play for Minnesota Wild",
-          "publisher": "ESPN",
+          "url": "https://www.mercurynews.com/2026/11/05/san-jose-sharks-mike-grier-simon-edvinsson-detroit-red-wings/",
+          "title": "After Sharks’ latest dud, what’s Mike Grier’s next move?",
+          "publisher": "The Mercury News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDH0c-SqXb37H_emBZZBFmCtbJMdodLB6tWUJK51KsWpY2dVBN-uimkHGMvk8"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7753545/2026/11/05/kirill-kaprizov-wild-70-goals/",
-          "title": "Kirill Kaprizov’s pursuit of 70 goals shows he’s reached yet another elite level - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTb1w8PL0XUR3ur_HcYLuBGkWr-rlYhFhFRXgl7-Crufb7KtmYcRS7aGN7d4lk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLcZxmTh4W51SMciKyVxDaGcAvNB_DPTZYetNrEI0H_gefpGRvuZHIn6uB3BI"
         }
       ]
     },
     {
-      "query": "mon laferte",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T02:10:00Z",
+      "query": "cam spencer",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T02:30:00Z",
       "related_news_urls": [
-        "https://cnnespanol.cnn.com/2026/11/06/entretenimiento/video/mon-laferte-vegas-golpe-cara-concierto-orix",
-        "https://es-us.vida-estilo.yahoo.com/mon-laferte-sufre-golpe-rostro-141014884.html",
-        "https://www.diariolibre.com/revista/musica/2026/11/06/mon-laferte-recibe-golpe-en-concierto-las-vegas/3713293"
+        "https://www.cbssports.com/fantasy/basketball/news/grizzlies-cam-spencer-hands-out-nine-dimes/",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-02/cam-spencer-chips-in-13-points-seven-assists",
+        "https://www.rotowire.com/basketball/headlines/cam-spencer-news-double-doubles-in-spot-start-537063"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9lX24VNhkuuIPiJb3IOsZHaRVRHtPcr8D87L9-QGHubRDyg6gcLZYP9PzeyQ",
-      "image_credit": "CNN en Español",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRexZUBC31V2b_qWPQuYS7NLlKz7nZ6EbsLxoBaQlxfP74UK5mCW9hQla-oNio",
+      "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://cnnespanol.cnn.com/2026/11/06/entretenimiento/video/mon-laferte-vegas-golpe-cara-concierto-orix",
-          "title": "Golpean a Mon Laferte en el rostro con un objeto durante concierto en Las Vegas",
-          "publisher": "CNN en Español",
+          "url": "https://www.cbssports.com/fantasy/basketball/news/grizzlies-cam-spencer-hands-out-nine-dimes/",
+          "title": "Grizzlies' Cam Spencer: Hands out nine dimes",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9lX24VNhkuuIPiJb3IOsZHaRVRHtPcr8D87L9-QGHubRDyg6gcLZYP9PzeyQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRexZUBC31V2b_qWPQuYS7NLlKz7nZ6EbsLxoBaQlxfP74UK5mCW9hQla-oNio"
         },
         {
-          "url": "https://es-us.vida-estilo.yahoo.com/mon-laferte-sufre-golpe-rostro-141014884.html",
-          "title": "Golpean a Mon Laferte en pleno concierto en Las Vegas",
-          "publisher": "Yahoo en Español Vida y Estilo",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-02/cam-spencer-chips-in-13-points-seven-assists",
+          "title": "Cam Spencer chips in 13 points, seven assists",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMz9UMlJS333KV-bT-QxuMnHeQlyMLNbh1ve6diJ5uQ4etAv6W425-yHYg1Ig"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJefx76GTKEMrzKE6C621I0iJxbbw6BwIvVvyMApEwWG0HTVCr94oH-zb_p9s"
         },
         {
-          "url": "https://www.diariolibre.com/revista/musica/2026/11/06/mon-laferte-recibe-golpe-en-concierto-las-vegas/3713293",
-          "title": "Mon Laferte recibe golpe de celular durante su concierto en Las Vegas",
-          "publisher": "Diario Libre",
+          "url": "https://www.rotowire.com/basketball/headlines/cam-spencer-news-double-doubles-in-spot-start-537063",
+          "title": "Cam Spencer News: Double-doubles in spot start",
+          "publisher": "RotoWire",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTe4GLIBMqAbPdBbgbkdYeKHMzTwZWHwM7OX2-_m5Xl8E8QsqU_Spdhcaekx8g"
-        }
-      ]
-    },
-    {
-      "query": "nz vs ind",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-07T02:00:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-2nd-odi-1539438/match-preview",
-        "https://sports.yahoo.com/articles/wellington-weather-forecast-zealand-vs-161224581.html",
-        "https://www.dawn.com/news/2042226"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqTv2YW2t1qoWyMaKsuxoUcfIUz6xGsW0FI_8XzVw9bximUJ9kFxcWBz3hbIg",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-2nd-odi-1539438/match-preview",
-          "title": "NZ vs IND 2026/27, NZ vs IND 2nd ODI Match Preview - Cricket could take backseat in wet Wellington",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqTv2YW2t1qoWyMaKsuxoUcfIUz6xGsW0FI_8XzVw9bximUJ9kFxcWBz3hbIg"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/wellington-weather-forecast-zealand-vs-161224581.html",
-          "title": "Wellington weather forecast for New Zealand vs. India ODI: Chances of rain, average temperatures ahead of 2nd match",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSkwTbO5-JEyIrZPSGiSPT99yYHsg3X3Zpqe5HpkdF_ogZon7aTZMHmBtMW95I"
-        },
-        {
-          "url": "https://www.dawn.com/news/2042226",
-          "title": "Classy Virat Kohli leads India to crushing win over New Zealand",
-          "publisher": "Dawn",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZRNhVQZh4gXp8Xte5RLt3xFIKUTyLI-Xbgj3UAc9yGlPxwgddPfg-BU3iWmY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTKh_LNbnMJibp_aTfw-wULssAzCo9jNH9lX9yWKPAdb_XkN6oLZHWHS5S7hg"
         }
       ]
     }
