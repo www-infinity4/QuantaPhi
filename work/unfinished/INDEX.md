@@ -3,6 +3,8 @@
 Read [README](README.md) and root [AGENTS.md](../../AGENTS.md) before editing code. Entries below are routing pointers, **not** verified current percent-complete estimates. Each ticket's issue comments and latest exact-head PR/CI are authoritative. Agents must verify and update after each work session.
 
 | Project | Canonical issue | Linked source | Dot | Progress | Sessions spent / remaining | Next verified action |
+
+| Bubbles / Robot Brain research evidence server | [#1489](https://github.com/www-infinity4/QuantaPhi/issues/1489) | [TICKET-1489](TICKET-1489.md) · isolated live D1 / Worker | 🟡 | 55% estimated; 8 curated entries, 11 categories, read API live | 1 / 2–4 estimate | Exact-head CI/review; verify first cron ingest; then wire read-only tool into Bubbles and Robot Brain |
 | --- | --- | --- | --- | --- | --- | --- |
 | X Spaces Quick Card · owned index/topic search | [#1284](https://github.com/www-infinity4/QuantaPhi/issues/1284) | [TICKET-1284](TICKET-1284.md) · validated X source links, no unsupported audio embed | 🟡 | 35% scoped card UI, full X audio/API blocked | 1 / unknown | Exact-head CI and readback, obtain verified official X Space player embed before claiming inline audio |
 | Live Radio Iowa & Beyond · 15 sourced stations | [#1589](https://github.com/www-infinity4/QuantaPhi/issues/1589) | [TICKET-1589](TICKET-1589.md) · PR #1690 merged seven; eight more on follow-up branch | 🟡 | 82% estimated original seven live; follow-up eight stream playback pending | 2 / unknown | Check 15-station CI, merge reviewed expansion, test individual Android streams |
