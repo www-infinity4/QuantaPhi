@@ -14,8 +14,8 @@ lease_expires_at: null
 task_session_id: null
 repo: www-infinity4/QuantaPhi
 branch: feat/oracle-creative-media-1603-20261107
-last_observed_utc: "2026-11-07T21:40:00Z"
-tests: "PR #1792 head e6c707fd714acc474c59a72a5b5bb650c87d28e7: focused workflow run 42416920123 passed Node catalogs, source audit tests, original Image Printer checks, and real local SVG/PNG print browser tests at 320/360/393px."
+last_observed_utc: "2026-11-07T21:44:01Z"
+tests: "PR #1792 head 466f16c50728495068bbfe98782e3de379c24794: focused workflow run 42417206114 succeeded, including reviewed catalogs, discovery queue failures, Image Printer regression, SVG/PNG browser tests at 320/360/393px. Main has moved; this is not post-merge/live evidence."
 merged: false
 deployed: false
 live_verified: false
@@ -53,3 +53,9 @@ next_action: "Obtain independent source/rights review, reconcile latest main, ve
 - **Exact-head focused CI:** commit `e6c707fd714acc474c59a72a5b5bb650c87d28e7`, [run 42416920123](https://github.com/www-infinity4/QuantaPhi/actions/runs/42416920123), **passed** code syntax, six-source validation, source-audit failure tests, existing Oracle video catalog, original Image Printer tests and real Chromium SVG/PNG print controls at 320/360/393 pixels, including fail-closed catalog response. Earlier red test-fixture mistakes were corrected before the passing run.
 - **Still NOT done:** independent approval, merge/deployment/live testing, third-party source site rights to embed (not requested), real external diffusion-model API integration (no grant or endpoint), Bubbles runtime producer automation beyond reviewed static source ingestion, and full end-to-end main-page Android acceptance. The in-card generator is real original *vector* art; do not market it as diffusion/photorealistic AI model output.
 - **Next safe action:** independent reviewer, exact current-head mergeability and required CI, approved merge, deployment receipt, then user-visible Android and source audit readback.
+
+### Session 2 final readback · 2026-11-07T21:44:01Z
+
+- Added read-only **GitHub Search discovery** to the scheduled/manual scan. Three bounded public repository searches produce de-duplicated candidate entries and safe error records in a JSON artifact; unapproved candidates are NEVER imported directly into the six-card public catalog. Added two fail-closed tests for licensable candidate selection, exclusion of current catalog IDs and repository metadata outages.
+- Exact feature/source commit `466f16c50728495068bbfe98782e3de379c24794`, [Oracle CI run 42417206114](https://github.com/www-infinity4/QuantaPhi/actions/runs/42417206114): **completed SUCCESS**. The optional GitHub source scan job is SKIPPED on a push by design and will run only on manual dispatch or weekly after default-branch merge; no live scheduled ingest has been proven.
+- Current `main` observed `0cb63034a4c3dc9888aa712e2660493398b23f26`, newer than this PR's merge base; GitHub reports `mergeable_state=dirty` (conflicts). Preserve recent Developer/Essentials revisions, reconcile fresh base, independent review, then required exact-head checks and permitted merge. PR remains OPEN, unmerged/undeployed.
