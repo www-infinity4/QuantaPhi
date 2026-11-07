@@ -15,7 +15,7 @@ test("termux script scans the user's own repo into an unminted local ledger",()=
  assert.match(cmd,/\-\-repo owner\/repo/);
  assert.match(cmd,/termux-ledger\.py["'] scan/);
  assert.match(cmd,/termux-ledger\.py["'] balance/);
- assert.match(cmd,/termux-ledger\\.py["'] receipts/);
+ assert.match(cmd,/termux-ledger\.py["'] receipts/);
  assert.match(cmd,/gitcoin-workspaces\/owner\/repo/);
  assert.doesNotMatch(cmd,/gh auth login.*--with-token/);
  assert.doesNotMatch(cmd,/mint\(|settle\(|wallet.*credit/i);
