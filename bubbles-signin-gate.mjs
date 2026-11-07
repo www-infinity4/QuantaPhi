@@ -209,6 +209,19 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
     return render({...data,walletVerified:session?.walletVerified===true,
      accountsVerified:Array.isArray(accountRecords),accountRecords:accountRecords||[]});
    } catch(error) {
+    // A dropped status request is not an OAuth revocation. Keep the last
+    // server-verified account cards hidden, but remove their live green
+    // status until the next successful authenticated read.
+    if(latest&&(latest.providers.github.connected||latest.providers.cloudflare.connected)){
+     gate.dataset.ready='false';
+     gate.hidden=latest.walletVerified||latest.signedIn||(prefix==='chat'&&gate.dataset.ownerVerified==='true');
+     if(connectionSummary){
+      connectionSummary.textContent='Account check temporarily unavailable · Previously verified connections are not yet rechecked.';
+      connectionSummary.hidden=false;
+     }
+     setStatus('Account status temporarily unavailable. Retry the check; Bubbles chat remains available. A new Cloudflare sign-in is not required by this error.');
+     return null;
+    }
     latest=null;gate.hidden=prefix==='chat'&&gate.dataset.ownerVerified==='true';gate.dataset.ready='false';
     if(connectionSummary){connectionSummary.textContent='Account status unavailable · Open Account Connections to retry';connectionSummary.hidden=false;}
     if(walletIdentity){walletIdentity.hidden=true;walletIdentity.textContent='';}
