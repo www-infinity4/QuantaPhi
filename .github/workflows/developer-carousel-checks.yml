@@ -7,6 +7,10 @@ on:
       - 'developer-discovery.mjs'
       - 'developer-discovery.css'
       - 'tests/developer-discovery.test.mjs'
+      - 'tests/developer-catalog-import.test.mjs'
+      - 'scripts/build-developer-source-catalog.mjs'
+      - '.github/workflows/developer-catalog-import.yml'
+      - 'data/developer-source-catalog.json'
       - 'test/developer-discovery.browser.spec.mjs'
       - 'developer-carousel.mjs'
       - 'developer-carousel.css'
@@ -24,6 +28,10 @@ on:
       - 'developer-discovery.mjs'
       - 'developer-discovery.css'
       - 'tests/developer-discovery.test.mjs'
+      - 'tests/developer-catalog-import.test.mjs'
+      - 'scripts/build-developer-source-catalog.mjs'
+      - '.github/workflows/developer-catalog-import.yml'
+      - 'data/developer-source-catalog.json'
       - 'test/developer-discovery.browser.spec.mjs'
       - 'developer-carousel.mjs'
       - 'developer-carousel.css'
@@ -49,8 +57,9 @@ jobs:
           node --check developer-carousel.mjs
           node --check developer-discovery-core.mjs
           node --check developer-discovery.mjs
+          node --check scripts/build-developer-source-catalog.mjs
           node --check oracle-card-deck.js
-          node --test tests/developer-carousel.test.mjs tests/developer-discovery.test.mjs
+          node --test tests/developer-carousel.test.mjs tests/developer-discovery.test.mjs tests/developer-catalog-import.test.mjs
   developer-browser:
     runs-on: ubuntu-latest
     steps:
