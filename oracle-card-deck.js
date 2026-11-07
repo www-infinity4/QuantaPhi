@@ -140,7 +140,9 @@ const CARD_DIRECTIONS={
  publicCardTrends:['trending-now','Research','Investigate verified trends and search interests']
 };
 
-const unique=[...new Map(choices.map(([id,title])=>[id,title])).entries()];
+// Builders have a dedicated real-widget home beside the advertisement area.
+const DEVELOPER_CARD_IDS=new Set(['mediaStarCreator','government501Affiliates','infinityAffiliates','phiProjectActions']);
+const unique=[...new Map(choices.filter(([id])=>!DEVELOPER_CARD_IDS.has(id)).map(([id,title])=>[id,title])).entries()];
 const entries=unique.map(([id,title])=>{
  const [feedId,category,feature]=CARD_DIRECTIONS[id]||['deck-'+id.toLowerCase(),'Discovery',title];
  return {id,title,feedId,category,feature,study:title,node:document.getElementById(id),marker:null,count:0};
