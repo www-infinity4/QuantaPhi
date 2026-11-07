@@ -71,10 +71,9 @@ if(root){
   actions.append(read,research);
   const article=make('a','innovations-source',entry.sourceLabel+' ↗');
   article.href=entry.source;article.target='_blank';article.rel='noopener noreferrer';
-  const build=make('a','innovations-builder','Create your own Quick Card');
   const params=new URLSearchParams({website:entry.source,title:entry.name+' · My research card'});
-  build.href='/quick-card-builder.html?'+params.toString();
-  body.append(actions,article,build);
+  const buildHref='/quick-card-builder.html?'+params.toString();
+  body.append(actions,article);
   const points=make('ul','innovations-applications');
   for(const text of entry.applications)points.append(make('li','',text));
   details.append(make('h4','','Possible applications'),points,
@@ -89,6 +88,17 @@ if(root){
    shareImage:entry.image,shareDescription:entry.summary,
    previewMode:'interactive'
   },{showPreview:false,showOriginal:false,showSearch:false,websiteReader:false});
+  // Shared +1 Build must never focus a hidden owner-only executor.
+  // Use the real moderated creator when Bubbles job input is unavailable.
+  shared.addEventListener('click',event=>{
+   const action=event.target.closest('button[data-action="build"]');
+   if(!action||!shared.contains(action))return;
+   const executor=document.getElementById('robotDirectionsInput');
+   if(executor&&!executor.closest('[hidden]'))return;
+   event.preventDefault();
+   event.stopPropagation();
+   location.assign(buildHref);
+  },true);
   body.append(shared);
   card.append(media,body);
   stage.append(card);
