@@ -5,27 +5,27 @@ const get=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 
 test('Steve Miller button mounts Book of Dreams YouTube playlist inside the original Quick Card',()=>{
  const s=get('steve-miller-book-of-dreams.js');
- assert.match(s,/www\\.youtube\\.com\\/embed\\/videoseries/);
- assert.match(s,/PL8a8cutYP7foGH0YDM8YtNqGtgL0EAJ7k/);
- assert.match(s,/createElement|make\\('iframe'/);
- assert.match(s,/smb-player-panel/);
- assert.doesNotMatch(s,/window\\.InfinityRadioQuick\\.toggle\\(\\)/);
+ assert.ok(s.includes('www.youtube.com/embed/videoseries'));
+ assert.ok(s.includes('PL8a8cutYP7foGH0YDM8YtNqGtgL0EAJ7k'));
+ assert.ok(s.includes("make('iframe'"));
+ assert.ok(s.includes('smb-player-panel'));
+ assert.ok(!s.includes('window.InfinityRadioQuick.toggle()'));
 });
 
 test('Pink Floyd and other classic-rock buttons launch selected artist video in card',()=>{
  const s=get('classic-rock-official-card.mjs');
- assert.match(s,/www\\.youtube\\.com\\/embed\\//);
- assert.match(s,/band\\.videoId/);
- assert.match(s,/cr-player-panel/);
- assert.doesNotMatch(s,/window\\.InfinityRadioQuick\\.toggle\\(\\)/);
+ assert.ok(s.includes('www.youtube.com/embed/'));
+ assert.ok(s.includes('band.videoId'));
+ assert.ok(s.includes('cr-player-panel'));
+ assert.ok(!s.includes('window.InfinityRadioQuick.toggle()'));
 });
 
 test('both embed players keep YouTube visible and stop when another artist starts',()=>{
  for(const path of ['steve-miller-book-of-dreams.js','classic-rock-official-card.mjs']){
   const s=get(path);
-  assert.match(s,/min-height:210px/);
-  assert.match(s,/quantaphi:artist-radio-start/);
-  assert.match(s,/referrerPolicy/);
-  assert.match(s,/removeAttribute\\('src'\\)/);
+  assert.ok(s.includes('min-height:210px'),path);
+  assert.ok(s.includes('quantaphi:artist-radio-start'),path);
+  assert.ok(s.includes('referrerPolicy'),path);
+  assert.ok(s.includes("removeAttribute('src')"),path);
  }
 });
