@@ -3,107 +3,231 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-07T05:31:25.487586Z",
+  "checked_at": "2026-11-07T06:01:24.381521Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "luka doncic",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-07T05:10:00Z",
+      "query": "lakers score",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T05:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/nba/article/the-lakers-live-on-a-spaceship-and-luka-doncic-looks-like-the-best-damn-pilot-in-the-galaxy-183740557.html",
-        "https://www.nba.com/news/starting-5-november-2-2026",
-        "https://www.espn.com/nba/story/_/id/50356293/lakers-luka-doncic-touts-improved-defense-win-vs-raptors"
+        "https://www.espn.com/nba/story/_/id/50391857/bronny-james-sent-lakers-g-league-affiliate",
+        "https://sports.yahoo.com/articles/jj-redick-sends-strong-message-043651047.html",
+        "https://www.nba.com/news/bronny-james-assigned-to-g-league-again-by-lakers"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScnsxQpaHTYRjEizaUIeYG-oMsC6_CxA53JAciDXyyTF2VkzviY43lcsa4LzM",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/nba/article/the-lakers-live-on-a-spaceship-and-luka-doncic-looks-like-the-best-damn-pilot-in-the-galaxy-183740557.html",
-          "title": "The Lakers 'live on a spaceship,' and Luka Dončić looks like the best damn pilot in the galaxy",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScnsxQpaHTYRjEizaUIeYG-oMsC6_CxA53JAciDXyyTF2VkzviY43lcsa4LzM"
-        },
-        {
-          "url": "https://www.nba.com/news/starting-5-november-2-2026",
-          "title": "Starting 5: Luka makes history, Celtics and Warriors extend streaks",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7H6XxpJ6I1hoPWn5saQQMxprBWwsCGV69zUJWzffiPMBUQXsmk1i1cie312A"
-        },
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50356293/lakers-luka-doncic-touts-improved-defense-win-vs-raptors",
-          "title": "Luka Doncic touts his improved defense, draws praise from Lakers, Raptors",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTH4O9IKeKmJbugM-ulHzHPLaOBBPtREp5218pk6HAu1kMVu1CdmOHeDZE65XI"
-        }
-      ]
-    },
-    {
-      "query": "lakers vs trail blazers",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-07T05:10:00Z",
-      "related_news_urls": [
-        "https://www.blazersedge.com/trail-blazers-discussion-game-threads/118024/discussion-portland-trail-blazers-los-angeles-lakers-time-tv-injury-report-streaming",
-        "https://sports.yahoo.com/articles/luka-doncics-remarkable-scoring-streak-120355790.html",
-        "https://www.cbssports.com/prediction/news/lakers-vs-trail-blazers-odds-picks-nba-predictions-get-55-bonus-kalshi-promo-code-cbssports55/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSI29drbwHKpmb76-q2KeLIQH9mJevd_t5Q_O35ZNYR9-nmsPJZN6fY0kB8Ma8",
-      "image_credit": "Blazer's Edge",
-      "news": [
-        {
-          "url": "https://www.blazersedge.com/trail-blazers-discussion-game-threads/118024/discussion-portland-trail-blazers-los-angeles-lakers-time-tv-injury-report-streaming",
-          "title": "Discuss Portland Trail Blazers vs. Los Angeles Lakers Now!",
-          "publisher": "Blazer's Edge",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSI29drbwHKpmb76-q2KeLIQH9mJevd_t5Q_O35ZNYR9-nmsPJZN6fY0kB8Ma8"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/luka-doncics-remarkable-scoring-streak-120355790.html",
-          "title": "Luka Doncic's remarkable scoring streak gives Lakers a new challenge",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStcH_p-yyHYkV41iEk-GUpo22Dw__efpKjibW_BgtkecaeG_5dPe8r2VctS9s"
-        },
-        {
-          "url": "https://www.cbssports.com/prediction/news/lakers-vs-trail-blazers-odds-picks-nba-predictions-get-55-bonus-kalshi-promo-code-cbssports55/",
-          "title": "Lakers vs. Trail Blazers odds, picks, NBA predictions: Get $55 bonus with Kalshi promo code CBSSPORTS55",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdpIM9DcRXNFLQITAtrWaEuyk2XeIwIu7CkBvOOiEfejxV_0s86mBaUeb4iSc"
-        }
-      ]
-    },
-    {
-      "query": "ringer",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T05:10:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
-    },
-    {
-      "query": "lakers blazers",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T05:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/game/_/gameId/401909929/cavaliers-thunder",
-        "https://www.espn.com/nba/game/_/gameId/401909922/76ers-pistons",
-        "https://www.espn.com/nba/game/_/gameId/401909897/76ers-hornets"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFeqa_6jZUfVPnn-AgxzY2TviIGp0kx9_hsonVyKe7tMVoOqgNFxpGHl8_bjI",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAjB-kGwYkeMU0Rxd-h_AmW5k055kJTcPY4Tmd8KfW6wKB7Lx5u2a0DnAeFFc",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nba/game/_/gameId/401909929/cavaliers-thunder",
-          "title": "Thunder 124-116 Cavaliers (Nov 4, 2026) Final Score",
+          "url": "https://www.espn.com/nba/story/_/id/50391857/bronny-james-sent-lakers-g-league-affiliate",
+          "title": "Bronny James assigned to Coachella Valley Lakers in G League",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFeqa_6jZUfVPnn-AgxzY2TviIGp0kx9_hsonVyKe7tMVoOqgNFxpGHl8_bjI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAjB-kGwYkeMU0Rxd-h_AmW5k055kJTcPY4Tmd8KfW6wKB7Lx5u2a0DnAeFFc"
         },
+        {
+          "url": "https://sports.yahoo.com/articles/jj-redick-sends-strong-message-043651047.html",
+          "title": "JJ Redick Sends Strong Message to Bronny James After Lakers’ Roster Decision",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyAELv2_g6CaVjw0tVL0EU4JRWVokihzLg_qs6EoFCrysY90mUVvpS2_jG-9k"
+        },
+        {
+          "url": "https://www.nba.com/news/bronny-james-assigned-to-g-league-again-by-lakers",
+          "title": "Bronny James assigned to G League by Lakers",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5bxI9nkhl8B7bUanx3DjiZv9pULwwfK1W4OQsV8JKVPxzhQ4-k0Ifb1O_NFs"
+        }
+      ]
+    },
+    {
+      "query": "zach lavine",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T05:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50386480/luka-doncic-40-points-hot-streak-lakers-kings",
+        "https://www.nba.com/watch/video/game-recap-lakers-116-kings-103",
+        "https://www.silverscreenandroll.com/lakers-analysis/128474/player-grades-lakers-kings-stats-box-score-recap-austin-reaves-luka-doncic"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJATPoEnUl5lbWTLLgycIGNBt_ZHVIazRPcQxUgo7P3F4Tjj2tIAVvj0O_z-c",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50386480/luka-doncic-40-points-hot-streak-lakers-kings",
+          "title": "Luka Doncic again puts up 40 as torrid stretch continues in Lakers' win",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJATPoEnUl5lbWTLLgycIGNBt_ZHVIazRPcQxUgo7P3F4Tjj2tIAVvj0O_z-c"
+        },
+        {
+          "url": "https://www.nba.com/watch/video/game-recap-lakers-116-kings-103",
+          "title": "Game Recap: Lakers 116, Kings 103",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoxOojhkkHOfS7oSQNzlCgav-w7qNEW4g0m_aZkXPC0XTq62yeZ9lE18Kw4_s"
+        },
+        {
+          "url": "https://www.silverscreenandroll.com/lakers-analysis/128474/player-grades-lakers-kings-stats-box-score-recap-austin-reaves-luka-doncic",
+          "title": "Player Grades: Lakers vs. Kings",
+          "publisher": "Silver Screen and Roll",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCp5OxP14v_AuZaCruE1ZITpJGsoVv00dyVtukwhLQJwpQHMcCISuCyZmwFUY"
+        }
+      ]
+    },
+    {
+      "query": "the hunger games",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T05:40:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/movies/article/where-to-watch-all-hunger-games-movies-for-free-ahead-of-the-sunrise-on-the-reaping-premiere-144640476.html",
+        "https://deadline.com/2026/11/hunger-games-sunrise-on-the-reaping-box-office-presales-1237215871/",
+        "https://www.tatlerasia.com/lifestyle/entertainment/the-hunger-games-sunrise-on-the-reaping-cast-and-character-guide"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaL__LQMJu3obW4GRnB2QHw2wS1lMTsxAz7Fj-irMBbW84VztZHgAewtAur6A",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/article/where-to-watch-all-hunger-games-movies-for-free-ahead-of-the-sunrise-on-the-reaping-premiere-144640476.html",
+          "title": "Where to watch all Hunger Games movies for free ahead of the 'Sunrise on the Reaping' premiere",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaL__LQMJu3obW4GRnB2QHw2wS1lMTsxAz7Fj-irMBbW84VztZHgAewtAur6A"
+        },
+        {
+          "url": "https://deadline.com/2026/11/hunger-games-sunrise-on-the-reaping-box-office-presales-1237215871/",
+          "title": "'Hunger Games: Sunrise on Reaping' Presales Best 'Wicked', $80M Opening Eyed",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-GLY1zfMi_YICNUHWLURRTgQe4TXjb_yKaRH67w2a7JSWSxVuMHDsGKCjLgQ"
+        },
+        {
+          "url": "https://www.tatlerasia.com/lifestyle/entertainment/the-hunger-games-sunrise-on-the-reaping-cast-and-character-guide",
+          "title": "‘The Hunger Games: Sunrise on the Reaping’ cast and character guide",
+          "publisher": "Tatler Asia",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXuJf2OGYCY1ptdv5lqmdyjksLHeRKdHjyiZoVO8N1GnxSpMSlAuMFeB7eJTA"
+        }
+      ]
+    },
+    {
+      "query": "oakland vs stanford",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T05:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401921727",
+        "https://goldengrizzlies.com/news/2026/11/5/mens-basketball-golden-grizzlies-open-west-coach-road-stretch-against-stanford-and-uc-santa-barbara.aspx",
+        "https://www.on3.com/sites/cardinal-sports-report/news/preview-stanford-mens-basketball-welcomes-oakland-to-maples-pavilion/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSP5NSW3r-Nv1RB9p3_I30IyiEuIQeRuLG_g_PwxZiV_YwJ7hj3LSiSEjCvJ60",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401921727",
+          "title": "Stanford 81-63 Oakland (Nov 6, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSP5NSW3r-Nv1RB9p3_I30IyiEuIQeRuLG_g_PwxZiV_YwJ7hj3LSiSEjCvJ60"
+        },
+        {
+          "url": "https://goldengrizzlies.com/news/2026/11/5/mens-basketball-golden-grizzlies-open-west-coach-road-stretch-against-stanford-and-uc-santa-barbara.aspx",
+          "title": "Golden Grizzlies Open West Coach Road Stretch against Stanford and UC Santa Barbara",
+          "publisher": "Oakland University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWaBwZGeCcvTWlWUOAAaz62RvBMZaJaEGxXOibRrS_v798u0k6GxPvdPBD83w"
+        },
+        {
+          "url": "https://www.on3.com/sites/cardinal-sports-report/news/preview-stanford-mens-basketball-welcomes-oakland-to-maples-pavilion/",
+          "title": "Preview: Stanford Men’s Basketball welcomes Oakland to Maples Pavilion",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSBhPsBfnqSOo79faKcSDHESFheY4qmDnGtgHH5_bZBVm5S7n61IlwfrQ6BAE"
+        }
+      ]
+    },
+    {
+      "query": "ocarina",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T05:40:00Z",
+      "related_news_urls": [
+        "https://www.nintendo.com/us/whatsnew/its-time-experience-the-legend-of-zelda-ocarina-of-time-reborn-exclusively-for-nintendo-switch-2/",
+        "https://6abc.com/post/fans-line-outside-south-philly-best-buy-midnight-release-legend-zelda-ocarina-time/20017528/",
+        "https://www.theverge.com/games/1026380/zelda-ocarina-of-time-interview-eiji-aonuma-hidemaro-fujibayashi"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzc4XzkP3VhCpLa8uV-23bOQRkzSW8WxlfoP5_O4-G9r54QPTcvsLTohIpCic",
+      "image_credit": "Nintendo",
+      "news": [
+        {
+          "url": "https://www.nintendo.com/us/whatsnew/its-time-experience-the-legend-of-zelda-ocarina-of-time-reborn-exclusively-for-nintendo-switch-2/",
+          "title": "The Legend of Zelda: Ocarina of Time is now available - News - Nintendo Official Site",
+          "publisher": "Nintendo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzc4XzkP3VhCpLa8uV-23bOQRkzSW8WxlfoP5_O4-G9r54QPTcvsLTohIpCic"
+        },
+        {
+          "url": "https://6abc.com/post/fans-line-outside-south-philly-best-buy-midnight-release-legend-zelda-ocarina-time/20017528/",
+          "title": "Fans line up outside South Philly Best Buy for midnight release of 'The Legend of Zelda: Ocarina of Time'",
+          "publisher": "6abc Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR79Go6FmUfWQtwzBHgcF79NPhw5RBUvKSucnhUQs6NbBWVHeWxp_PbQEUs8OI"
+        },
+        {
+          "url": "https://www.theverge.com/games/1026380/zelda-ocarina-of-time-interview-eiji-aonuma-hidemaro-fujibayashi",
+          "title": "Nintendo’s designers strove for ‘elegance’ when remaking Ocarina of Time",
+          "publisher": "The Verge",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSdVe03Y3ApnqxEqcdtkUnU86v8jkOAVOeuOsPdNzuOUg7PqHD3c431zYZzSE"
+        }
+      ]
+    },
+    {
+      "query": "titus welliver",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T05:40:00Z",
+      "related_news_urls": [
+        "https://people.com/titus-welliver-remembers-matt-damon-kindness-when-his-late-wife-had-cancer-12217855",
+        "https://ew.com/titus-welliver-shares-matt-damon-kind-gesture-before-wife-death-12241112",
+        "https://netflixlife.com/the-lincoln-lawyer-season-5-release-month-netflix-confirmed-author"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTr7j13zhvJJE3XoDg-L3DuIGUMNPIafh_O7LsMHNI0KXbtsaTbAH6vaMA0rPA",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/titus-welliver-remembers-matt-damon-kindness-when-his-late-wife-had-cancer-12217855",
+          "title": "Titus Welliver Gets Emotional Recounting Matt Damon’s Kindness amid His Late Wife’s Cancer Journey",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTr7j13zhvJJE3XoDg-L3DuIGUMNPIafh_O7LsMHNI0KXbtsaTbAH6vaMA0rPA"
+        },
+        {
+          "url": "https://ew.com/titus-welliver-shares-matt-damon-kind-gesture-before-wife-death-12241112",
+          "title": "Titus Welliver gets emotional remembering Matt Damon’s kind gesture shortly before his wife died from cancer",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqoj_I_piOt6wrldg0m5ju64VWzFib_D1Qzwos-SV4J0sk-F_EMpIHqkLvSog"
+        },
+        {
+          "url": "https://netflixlife.com/the-lincoln-lawyer-season-5-release-month-netflix-confirmed-author",
+          "title": "The Lincoln Lawyer season 5 release month on Netflix seemingly teased by author",
+          "publisher": "Netflix Life",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-fvWlGiDR6cXJTFnb1ark6B8phBFdKkuT504jBWhXoj25VLa0gjx9Pnl48VQ"
+        }
+      ]
+    },
+    {
+      "query": "sacramento kings",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T05:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/game/_/gameId/401909922/76ers-pistons",
+        "https://www.espn.com/nba/game/_/gameId/401909897/76ers-hornets",
+        "https://www.espn.com/nba/game/_/gameId/401909926/bulls-knicks"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS27-FQSAjul_ssj_1Am6-x18FnOnPBRBa_tE4aqYaZ8qvo3bhbkH_oh7i79Nw",
+      "image_credit": "ESPN",
+      "news": [
         {
           "url": "https://www.espn.com/nba/game/_/gameId/401909922/76ers-pistons",
           "title": "76ers 112-106 Pistons (Nov 4, 2026) Final Score",
@@ -117,216 +241,118 @@
           "publisher": "ESPN",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTslA-i0X-rCrkhYBfyI5UAjM2OMjpoTBxQWqAVKR3qEg5Mdimpy1t56mkwIc"
-        }
-      ]
-    },
-    {
-      "query": "where is luka doncic from",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T05:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50388765/fan-ejected-throwing-ball-hard-ref-lakers-kings-game",
-        "https://www.nytimes.com/athletic/7760748/2026/11/06/luka-doncic-technical-referee-lakers/",
-        "https://sports.yahoo.com/articles/respect-ron-harper-fires-back-124000474.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbvO-kG3Ky7sQZfUTF808iqLklA_X0gkGX515XY88Y16pskMHsGbOIUUc6lkM",
-      "image_credit": "ESPN",
-      "news": [
+        },
         {
-          "url": "https://www.espn.com/video/clip/_/id/50388765/fan-ejected-throwing-ball-hard-ref-lakers-kings-game",
-          "title": "Fan ejected after throwing ball hard to ref during Lakers-Kings game",
+          "url": "https://www.espn.com/nba/game/_/gameId/401909926/bulls-knicks",
+          "title": "Knicks 135-105 Bulls (Nov 4, 2026) Final Score",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbvO-kG3Ky7sQZfUTF808iqLklA_X0gkGX515XY88Y16pskMHsGbOIUUc6lkM"
-        },
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShhSKJA9QRmiJcXNuOVzezzG_vKKQrFSM-c-09BdzAoJjotAvj_USsUqsp32I"
+        }
+      ]
+    },
+    {
+      "query": "jessica alba",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T05:30:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/jessica-alba-tries-style-first-140500139.html",
+        "https://www.imdb.com/news/ni66098456/?ref_=int_nwr_1",
+        "https://people.com/jessica-alba-fall-outfit-quince-clothing-lookalikes-november-2026-12227966"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQuIpOiCkvZY9kK2zOqOp-Teq-IcsI80cxdM1ZJbYVoTSvDaC19spJkY5Av0TM",
+      "image_credit": "Yahoo",
+      "news": [
         {
-          "url": "https://www.nytimes.com/athletic/7760748/2026/11/06/luka-doncic-technical-referee-lakers/",
-          "title": "Luka Dončić receives technical foul for throwing ball at referee",
-          "publisher": "The New York Times",
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/jessica-alba-tries-style-first-140500139.html",
+          "title": "Jessica Alba Tries This Style for the “First Time” at Max Mara’s Face of the Future Party (Exclusive)",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwLIa6TjfPP9vsaN61tvwSJ9sy4ezi8Yoc2B4Ib4RAgzAIY4qlyvGO2gXQNgQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQuIpOiCkvZY9kK2zOqOp-Teq-IcsI80cxdM1ZJbYVoTSvDaC19spJkY5Av0TM"
         },
         {
-          "url": "https://sports.yahoo.com/articles/respect-ron-harper-fires-back-124000474.html",
-          "title": "“Have Some Respect”: Ron Harper Fires Back at Critic Who Called Out Female Referee in Luka Doncic Fan Ejection",
+          "url": "https://www.imdb.com/news/ni66098456/?ref_=int_nwr_1",
+          "title": "‘Trigger Warning’ Star Jessica Alba Turns Heads at Max Mara Reception",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2AqLXzuWDb4FYbNA96xFdixsN1a4FTJDSEi6EIZa9xxTTEEPECFROYINlU7I"
+        },
+        {
+          "url": "https://people.com/jessica-alba-fall-outfit-quince-clothing-lookalikes-november-2026-12227966",
+          "title": "Jessica Alba Just Proved Why This Classic Denim-and-Leather Outfit Never Looks Dated — Recreate It from $20",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTypPAR4I9WJd-JdbR1mtU3vzgC8zT-F0NB5E2EZI6CBENNQh2GXrKy0IqaHMk"
+        }
+      ]
+    },
+    {
+      "query": "jake laravia",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T05:30:00Z",
+      "related_news_urls": [
+        "https://lakeshowlife.com/los-angeles-lakers-need-bench-jake-laravia-ziaire-williams-maximize-units",
+        "https://www.espn.co.uk/video/clip/_/id/50354806/jake-laravia-denies-toronto-raptors-block",
+        "https://www.cbssports.com/fantasy/basketball/news/lakers-jake-laravia-big-defensive-effort-in-spot-start/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQb2EREa5HhBt96jAvrdsS5Iun_4o14cWKgYwctVIu7mXIvgVoRBl0tNYu5GdM",
+      "image_credit": "Lake Show Life",
+      "news": [
+        {
+          "url": "https://lakeshowlife.com/los-angeles-lakers-need-bench-jake-laravia-ziaire-williams-maximize-units",
+          "title": "Lakers need to bench Jake LaRavia for Ziaire Williams to maximize the units",
+          "publisher": "Lake Show Life",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQb2EREa5HhBt96jAvrdsS5Iun_4o14cWKgYwctVIu7mXIvgVoRBl0tNYu5GdM"
+        },
+        {
+          "url": "https://www.espn.co.uk/video/clip/_/id/50354806/jake-laravia-denies-toronto-raptors-block",
+          "title": "Jake LaRavia denies Toronto Raptors with block",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXbNqNvHsL0RsAH7aHUJuNMy5zGJUoE8Nk8uOAk0Dd7RiQzuo_wTVlrbktEOk"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/lakers-jake-laravia-big-defensive-effort-in-spot-start/",
+          "title": "Lakers' Jake LaRavia: Big defensive effort in spot start",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRexZUBC31V2b_qWPQuYS7NLlKz7nZ6EbsLxoBaQlxfP74UK5mCW9hQla-oNio"
+        }
+      ]
+    },
+    {
+      "query": "de'aaron fox",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T05:30:00Z",
+      "related_news_urls": [
+        "https://airalamo.com/de-aaron-fox-victor-wembanyama-have-finally-become-true-dynamic-duo",
+        "https://sports.yahoo.com/articles/fox-put-together-rare-performance-163816511.html",
+        "https://www.fantasypros.com/nba/news/616946/deaaron-fox-flirts-with-triple-double-saturday-against-timberwolves.php"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8Ni4DoVzaTVfIACRHsAJHPkf6xJnhI9gAjar-lrn4GKoosIv8MVeDtoOepOc",
+      "image_credit": "Air Alamo",
+      "news": [
+        {
+          "url": "https://airalamo.com/de-aaron-fox-victor-wembanyama-have-finally-become-true-dynamic-duo",
+          "title": "De'Aaron Fox and Victor Wembanyama have finally become a true dynamic duo",
+          "publisher": "Air Alamo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8Ni4DoVzaTVfIACRHsAJHPkf6xJnhI9gAjar-lrn4GKoosIv8MVeDtoOepOc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/fox-put-together-rare-performance-163816511.html",
+          "title": "Fox put together rare performance in Spurs' victory over Timberwolves",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShlFJOcdb-twMB9ClqnyaEYT1n80Qq1skBpA9f9R3rfc1DtjAwFuA6KOeFugk"
-        }
-      ]
-    },
-    {
-      "query": "michael c hall",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T05:00:00Z",
-      "related_news_urls": [
-        "https://www.vulture.com/article/dexter-resurrection-recap-season-2-episode-2-showtime.html",
-        "https://www.tvline.com/2306974/dexter-resurrection-recap-season-2-episode-2-uma-thurman-charley-return/",
-        "https://ew.com/krysten-ritter-teases-her-dexter-resurrection-12201168"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1s4Qcz69EtNigcXv72s-yMvt_ELOPZCx_6pJ8SXpmx86EuRk6-G2Txi3EasA",
-      "image_credit": "Vulture",
-      "news": [
-        {
-          "url": "https://www.vulture.com/article/dexter-resurrection-recap-season-2-episode-2-showtime.html",
-          "title": "Dexter: Resurrection Recap: Attention Economy",
-          "publisher": "Vulture",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1s4Qcz69EtNigcXv72s-yMvt_ELOPZCx_6pJ8SXpmx86EuRk6-G2Txi3EasA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqpG8pIdWY1GK_7EEG2xx4RuJOLq7XTTr5bqmGmdkz8lO4ZMjxgqyL0dQSVnU"
         },
         {
-          "url": "https://www.tvline.com/2306974/dexter-resurrection-recap-season-2-episode-2-uma-thurman-charley-return/",
-          "title": "Dexter: Resurrection Recap: An Old Foe Makes Dexter An Offer He Can't Refuse",
-          "publisher": "TVLine",
+          "url": "https://www.fantasypros.com/nba/news/616946/deaaron-fox-flirts-with-triple-double-saturday-against-timberwolves.php",
+          "title": "De'Aaron Fox flirts with triple-double Saturday against Timberwolves",
+          "publisher": "FantasyPros",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl46ky3ap_JAmbUlAwyiWMYZ3OWmLjcJNIwK2YH-BjGtS2j7LeXp6MiaTVl8c"
-        },
-        {
-          "url": "https://ew.com/krysten-ritter-teases-her-dexter-resurrection-12201168",
-          "title": "Krysten Ritter teases her ‘Dexter’ resurrection: ‘I wanted to come back in any shape or form’",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3PNfYFl4FwyOCWXtxjoEpc_FEqWbvtPlVIB-7uY0dhJBDdoXB9oj1InC355k"
-        }
-      ]
-    },
-    {
-      "query": "heated rivalry theaters",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T05:00:00Z",
-      "related_news_urls": [
-        "https://www.inc.com/hauwa-otori/heated-rivalry-theatrical-release-box-office-strategy/91425033",
-        "https://www.yoursun.com/charlotte/lifestyles/heated-rivalry-is-coming-out-of-the-cottage-and-into-the-movie-theater/article_35a5ecd1-a544-5a3e-b864-5ad58bb4ac25.html",
-        "https://www.buzzfeed.com/jennifer_mcphee/heated-rivalry-hitting-theatres-this-november"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdlJzbndzRUFDuhzQBy00Vtb85-gAtrKIbIvh9CdYYVcMD4JKPngnapUO6l-k",
-      "image_credit": "Inc.com",
-      "news": [
-        {
-          "url": "https://www.inc.com/hauwa-otori/heated-rivalry-theatrical-release-box-office-strategy/91425033",
-          "title": "Fans Just Dropped $1M in Presales to Watch 'Heated Rivalry' in Movie Theaters—11 Months After Its Premiere",
-          "publisher": "Inc.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdlJzbndzRUFDuhzQBy00Vtb85-gAtrKIbIvh9CdYYVcMD4JKPngnapUO6l-k"
-        },
-        {
-          "url": "https://www.yoursun.com/charlotte/lifestyles/heated-rivalry-is-coming-out-of-the-cottage-and-into-the-movie-theater/article_35a5ecd1-a544-5a3e-b864-5ad58bb4ac25.html",
-          "title": "'Heated Rivalry' is coming out of the cottage and into the movie theater",
-          "publisher": "yoursun.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYSNhkBx3SOh00qPG1-ge6vdNYkJ4gdYaWpSEJOXpTJZsAgKjRq-K6wV28xVc"
-        },
-        {
-          "url": "https://www.buzzfeed.com/jennifer_mcphee/heated-rivalry-hitting-theatres-this-november",
-          "title": "\"Heated Rivalry\" Is Hitting Theatres This November, And The Internet Has THOUGHTS",
-          "publisher": "BuzzFeed",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAJtcqT9J-whaPoJxjmtKdwezaDtSk6zRzuLGlCynnJm6jX3zh1LvZ7-2bNxQ"
-        }
-      ]
-    },
-    {
-      "query": "great america",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T05:00:00Z",
-      "related_news_urls": [
-        "https://www.eastbaytimes.com/2026/11/06/great-america-santa-clara-roller-coaster-jobs-economy-build-property/",
-        "https://www.sfgate.com/disneyland/article/california-great-america-closure-22517433.php",
-        "https://www.kron4.com/news/bay-area/californias-great-america-in-santa-clara-announces-final-season-what-guests-need-to-know/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_cQ02UNIMlK7esHqr6gpffQT7VldKe_F8lE2Sdu29_i4kzHkh4U0MUKCIEEE",
-      "image_credit": "East Bay Times",
-      "news": [
-        {
-          "url": "https://www.eastbaytimes.com/2026/11/06/great-america-santa-clara-roller-coaster-jobs-economy-build-property/",
-          "title": "Exclusive: California’s Great America sets official closing date for Labor Day 2027",
-          "publisher": "East Bay Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_cQ02UNIMlK7esHqr6gpffQT7VldKe_F8lE2Sdu29_i4kzHkh4U0MUKCIEEE"
-        },
-        {
-          "url": "https://www.sfgate.com/disneyland/article/california-great-america-closure-22517433.php",
-          "title": "California's Great America to finally close after more than 50 years",
-          "publisher": "SFGATE",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsAiUrQ9ItQts9prNLWcg01LIbRKAsM3kLLWN8Jdb-h7jmECj98kbNOIPSkYM"
-        },
-        {
-          "url": "https://www.kron4.com/news/bay-area/californias-great-america-in-santa-clara-announces-final-season-what-guests-need-to-know/",
-          "title": "California’s Great America in Santa Clara announces final season: What guests need to know",
-          "publisher": "KRON4",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRol0SCp49itsZpv2ozGJw98xoXKv_zRbxrK3DPbeptMyapbi8DYHNrgie4fxI"
-        }
-      ]
-    },
-    {
-      "query": "tarleton state basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T04:50:00Z",
-      "related_news_urls": [
-        "https://tarletonsports.com/story.aspx?filename=tarleton-state-mens-basketball-set-for-road-opener-at-san-diego&file_date=11/5/2026",
-        "https://usdtoreros.com/news/2026/11/5/mens-basketball-toreros-set-to-host-tarleton-state-at-jcp.aspx",
-        "https://apnews.com/article/mens-college-basketball-san-diego-san-diego-toreros-college-basketball-college-sports-086599e58c264439ac38c9e51b0057c5"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4ASY2upWwY4gzLIzzeYt9gvQ1D5v0FygCfpfM-nihxBGG2Fo-W2OsIbhxchw",
-      "image_credit": "Tarleton State University Athletics",
-      "news": [
-        {
-          "url": "https://tarletonsports.com/story.aspx?filename=tarleton-state-mens-basketball-set-for-road-opener-at-san-diego&file_date=11/5/2026",
-          "title": "Tarleton State Men's Basketball set for road opener at San Diego",
-          "publisher": "Tarleton State University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4ASY2upWwY4gzLIzzeYt9gvQ1D5v0FygCfpfM-nihxBGG2Fo-W2OsIbhxchw"
-        },
-        {
-          "url": "https://usdtoreros.com/news/2026/11/5/mens-basketball-toreros-set-to-host-tarleton-state-at-jcp.aspx",
-          "title": "Toreros Set to Host Tarleton State at JCP",
-          "publisher": "University of San Diego Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-aWFBW86KMAKvXv7hxPda4sKdwrEdpCoGcgSEYBxzVyreEeV3mY7YkMt3rSo"
-        },
-        {
-          "url": "https://apnews.com/article/mens-college-basketball-san-diego-san-diego-toreros-college-basketball-college-sports-086599e58c264439ac38c9e51b0057c5",
-          "title": "San Diego Toreros play the Tarleton State Texans in non-conference play",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyxytuQ4aGf2BOxfux9vnLUnsxmXV6_4vU1gfZLf7dr_vdaPit7PYKHCUsALk"
-        }
-      ]
-    },
-    {
-      "query": "ilia topuria",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T04:50:00Z",
-      "related_news_urls": [
-        "https://www.sherdog.com/news/news/Ilia-Topuria-reveals-who-he-wants-to-fight-next-in-the-UFC-203511",
-        "https://www.mmafighting.com/ufc/519653/ilia-topuria-opens-up-on-loss-to-justin-gaethje-calls-for-paddy-pimblett-in-april",
-        "https://sports.yahoo.com/articles/ilia-topuria-makes-candid-admission-225537178.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuN1Jmg3gNxxohiYs2eWeEP1CL4KCjmrFHbgUxG2Sc0SJnmYZf92OOMgH7ybM",
-      "image_credit": "Sherdog",
-      "news": [
-        {
-          "url": "https://www.sherdog.com/news/news/Ilia-Topuria-reveals-who-he-wants-to-fight-next-in-the-UFC-203511",
-          "title": "Ilia Topuria reveals who he wants to fight next in the UFC",
-          "publisher": "Sherdog",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuN1Jmg3gNxxohiYs2eWeEP1CL4KCjmrFHbgUxG2Sc0SJnmYZf92OOMgH7ybM"
-        },
-        {
-          "url": "https://www.mmafighting.com/ufc/519653/ilia-topuria-opens-up-on-loss-to-justin-gaethje-calls-for-paddy-pimblett-in-april",
-          "title": "Ilia Topuria opens up on loss to Justin Gaethje, calls for Paddy Pimblett in April",
-          "publisher": "MMA Fighting",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsEtEW-wTFrr9oBcrPjaOqY05GNQybEFf4sExzzPorAvyLYvzkseumM9inVxE"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/ilia-topuria-makes-candid-admission-225537178.html",
-          "title": "Ilia Topuria Makes Candid Admission Following Justin Gaethje Loss",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS25c7K1GacUUwIJAaVtub7r5qBG6GGEXaO9UTty5d0t8UKnDYGGHjNZXW2iUM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQ2U7FlnuBC9LEzKy_3Zos_r8OKZrVwkNY9VDgmfBFCcIuBAVSX_3gEmmtb1s"
         }
       ]
     }
