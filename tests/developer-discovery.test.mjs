@@ -39,7 +39,7 @@ test('source cards are legitimate GitHub projects and carry license-review statu
  assert.equal(x.id,'github-125');
  assert.equal(x.license,'MIT');
  assert.equal(x.licenseStatus,'review-license-before-reuse');
- assert.equal(x.image,'https://avatars.githubusercontent.com/u/1234?v=4');
+ assert.equal(x.image,'https://github.githubassets.com/favicons/favicon.svg');
  assert.equal(x.url,'https://github.com/example-org/ui-kit');
  assert.equal(normalizeGithubResult({...repo,html_url:'https://evil.example/project'}),null);
  assert.equal(normalizeGithubResult({...repo,fork:true}),null);
