@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-07T20:01:31.766355Z",
+  "checked_at": "2026-11-07T20:30:55.516036Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "penn state vs washington",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-07T19:40:00Z",
+      "query": "charlotte vs inter miami",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-07T20:10:00Z",
       "related_news_urls": [
-        "https://www.seattletimes.com/sports/washington-huskies-football/washington-huskies-vs-penn-state-live-updates-how-to-watch-score/",
-        "https://sports.yahoo.com/articles/penn-state-vs-washington-live-183044876.html",
-        "https://www.foxsports.com/stories/college-football/how-to-watch-penn-state-vs-washington-tv-channel-live-stream-time-nov-7-2026"
+        "https://www.charlottefootballclub.com/news/beating-miami-in-the-finale-materials-of-the-match-charlotte-fc-at-inter-miami-cf",
+        "https://www.intermiamicf.com/news/match-preview-inter-miami-cf-closes-out-2026-mls-regular-season-with-home-game-against-charlotte-fc",
+        "https://www.bbc.com/sport/football/live/cxvgdj93176rt"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGYh3YU_5-Mhs2m_FYE7ETEH80gpCfcjhCkxMcTR1IId3aUv4oY-c43Hcy8dE",
-      "image_credit": "The Seattle Times",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTrDwdDMq8tSj5BumUdxAbGQV8EIEWLu-2VgZ08by8MkYVPzQuHtzfv1ymWdY",
+      "image_credit": "Charlotte FC",
       "news": [
         {
-          "url": "https://www.seattletimes.com/sports/washington-huskies-football/washington-huskies-vs-penn-state-live-updates-how-to-watch-score/",
-          "title": "Live: Washington Huskies vs. Penn State: Live updates, how to watch, score",
-          "publisher": "The Seattle Times",
+          "url": "https://www.charlottefootballclub.com/news/beating-miami-in-the-finale-materials-of-the-match-charlotte-fc-at-inter-miami-cf",
+          "title": "Beating Miami in the Finale | Materials of the Match: Charlotte FC at Inter Miami CF",
+          "publisher": "Charlotte FC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGYh3YU_5-Mhs2m_FYE7ETEH80gpCfcjhCkxMcTR1IId3aUv4oY-c43Hcy8dE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTrDwdDMq8tSj5BumUdxAbGQV8EIEWLu-2VgZ08by8MkYVPzQuHtzfv1ymWdY"
         },
         {
-          "url": "https://sports.yahoo.com/articles/penn-state-vs-washington-live-183044876.html",
-          "title": "Penn State vs. Washington live updates: Score, highlights, analysis",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.intermiamicf.com/news/match-preview-inter-miami-cf-closes-out-2026-mls-regular-season-with-home-game-against-charlotte-fc",
+          "title": "MATCH PREVIEW: Inter Miami CF Closes Out 2026 MLS Regular Season with Home Game Against Charlotte FC",
+          "publisher": "Inter Miami CF",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToapMVcdHJePogtbqjSk3Lbw6Du4CTuClmmRBvthH3N0XA7zTjr4iHSHlM8S0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1hU1omHOSVlSytk-X4AtQV-enQptaOTcc41jDMGL0_jQcxe4Oqt843eafYpc"
         },
         {
-          "url": "https://www.foxsports.com/stories/college-football/how-to-watch-penn-state-vs-washington-tv-channel-live-stream-time-nov-7-2026",
-          "title": "How to Watch Penn State vs. Washington: TV Channel, Live Stream, Time",
-          "publisher": "FOX Sports",
+          "url": "https://www.bbc.com/sport/football/live/cxvgdj93176rt",
+          "title": "Inter Miami vs Charlotte: Major League Soccer stats & head-to-head",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJf4G45DxZFy1vwll_8WbQ39dYBRz7Xp2eRJSJCcw2qwkColL9rvW4i0at3A"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuzQMLv2hTZ5zntraFZwNloZIkfCfAo3rXy1Q9at5JRlOZnKSOMdoqplZWyfE"
         }
       ]
     },
     {
-      "query": "cincinnati vs houston",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-07T19:40:00Z",
+      "query": "emergency landing",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-07T20:10:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/prediction/news/cincinnati-vs-houston-odds-use-polymarket-promo-code-cbssports-for-25-bonus-on-college-football-picks/",
-        "https://sports.yahoo.com/articles/cincinnati-bearcats-vs-no-17-173045226.html",
-        "https://www.si.com/college/houston/football/no-17-houston-vs-cincinnati-live-in-game-updates-analysis-highlights-and-box-score"
+        "https://www.latimes.com/california/story/2026-11-06/southwest-flight-from-orange-county-declares-emergency-lands-at-lax",
+        "https://www.nbclosangeles.com/news/local/southwest-airlines-plane-diverted-to-lax-santa-ana-san-jose/3967181/",
+        "https://people.com/southwest-flight-makes-emergency-landing-at-lax-12242133"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQdQ_bSAtyA65ApYOn-CVkYRhG4-8XhOjsBFDbVvkVdQq3yVNEfSWaejyefwE",
-      "image_credit": "CBS Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNO3SHSsB41PYlAkJz6GlZczrcSVpUJ8kemeIu7MO-IRF6U9y9MD8z99obK4U",
+      "image_credit": "Los Angeles Times",
       "news": [
         {
-          "url": "https://www.cbssports.com/prediction/news/cincinnati-vs-houston-odds-use-polymarket-promo-code-cbssports-for-25-bonus-on-college-football-picks/",
-          "title": "Cincinnati vs. Houston odds: Use Polymarket promo code CBSSPORTS for $25 bonus on college football picks",
-          "publisher": "CBS Sports",
+          "url": "https://www.latimes.com/california/story/2026-11-06/southwest-flight-from-orange-county-declares-emergency-lands-at-lax",
+          "title": "Southwest flight from Orange County declares emergency, lands at LAX",
+          "publisher": "Los Angeles Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQdQ_bSAtyA65ApYOn-CVkYRhG4-8XhOjsBFDbVvkVdQq3yVNEfSWaejyefwE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNO3SHSsB41PYlAkJz6GlZczrcSVpUJ8kemeIu7MO-IRF6U9y9MD8z99obK4U"
         },
         {
-          "url": "https://sports.yahoo.com/articles/cincinnati-bearcats-vs-no-17-173045226.html",
-          "title": "Cincinnati Bearcats vs. No. 17 Houston Cougars, live updates, score",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.nbclosangeles.com/news/local/southwest-airlines-plane-diverted-to-lax-santa-ana-san-jose/3967181/",
+          "title": "Southwest Airlines plane diverted to LAX on flight from Santa Ana to San Jose",
+          "publisher": "NBC Los Angeles",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgYCR8ReU2ctge4pUxFI1KxX3Uv1Nw6Ih67oa9stDVebs7OIIe98UNYL0d-lM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvFX7Al4Kku_twAupHs22KnvgV5e6FPK7qUgDy1JWHER-3esN_jr2HOXYQl8E"
         },
         {
-          "url": "https://www.si.com/college/houston/football/no-17-houston-vs-cincinnati-live-in-game-updates-analysis-highlights-and-box-score",
-          "title": "No. 17 Houston vs. Cincinnati Live In-Game Updates, Analysis, Highlights and Box Score",
-          "publisher": "Sports Illustrated",
+          "url": "https://people.com/southwest-flight-makes-emergency-landing-at-lax-12242133",
+          "title": "Southwest Flight Forced into Emergency Landing at LAX Following Mid-Air Scare",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGGVtDVHVc_CIWs9QA5QM_zScSS8QALM7zYJ-Wejmc4EZpsPV-Dg1VRj0-4v4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKilmdyzwmoR7sKXp3Elv_v1FV8koJ5RrhNunqEzNjCpCAdmBd1IUQU-ZHWUg"
         }
       ]
     },
     {
-      "query": "temple vs navy",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-07T19:40:00Z",
+      "query": "yale football",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T20:10:00Z",
       "related_news_urls": [
-        "https://collegesportswire.usatoday.com/story/sports/college/college-football/2026/11/07/temple-navy-week-10-betting-odds-prediction/92623299007/",
-        "https://navysports.com/news/2026/11/4/general-media-links-and-videos-for-wednesday.aspx",
-        "https://phlsportsnow.com/temple-football-preview-how-will-the-owls-handle-final-third-of-the-season/"
+        "https://brownbears.com/news/2026/11/6/football-set-for-saturday-matchup-at-yale",
+        "https://yaledailynews.com/articles/bulldogs-to-take-on-bears-in-regular-season-finale-with-playoff-stakes",
+        "https://www.espn.com/espnplus/player/_/eventCalendarId/401867810"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6-mmwr_talBhLMglAOv_G-rTVEjTzsgkFENtVw8DGkRwF72aFZQJNACi59uo",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUES-GzwVZTBzJbHzB8xNhnWVSkyF-Q9I4i9Aq9Qj6iNfismU8y65VxMlheeI",
+      "image_credit": "Brown University Athletics",
+      "news": [
+        {
+          "url": "https://brownbears.com/news/2026/11/6/football-set-for-saturday-matchup-at-yale",
+          "title": "Football Set for Saturday Matchup at Yale",
+          "publisher": "Brown University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUES-GzwVZTBzJbHzB8xNhnWVSkyF-Q9I4i9Aq9Qj6iNfismU8y65VxMlheeI"
+        },
+        {
+          "url": "https://yaledailynews.com/articles/bulldogs-to-take-on-bears-in-regular-season-finale-with-playoff-stakes",
+          "title": "Bulldogs to take on Bears in regular season finale with playoff stakes",
+          "publisher": "Yale Daily News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ56zPA8cqYe3gAe7yPz7ddcK30je43NfRNpCPBMxioeaDM_aukxLhTeRGLGj8"
+        },
+        {
+          "url": "https://www.espn.com/espnplus/player/_/eventCalendarId/401867810",
+          "title": "Brown vs. Yale 11/7/26 - Stream the Game Live - Watch ESPN",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLyRvHi0yc2FZIl4_TnTOxw5OpqIL1AUbrt24fvhpD3_UJBnoqZBJXamSmih4"
+        }
+      ]
+    },
+    {
+      "query": "vcu vs memphis",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T20:10:00Z",
+      "related_news_urls": [
+        "https://www.commercialappeal.com/story/sports/college/memphis-tigers/basketball/2026/11/07/memphis-basketball-vcu-tv-channel-today-time/92659026007/",
+        "https://sports.yahoo.com/articles/watch-memphis-vs-vcu-140047247.html",
+        "https://www.bleachernation.com/picks/2026/11/07/aac-basketball-predictions-computer-picks-and-best-bets-november-7-3/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdlRbk9hY_O6Vsxxd4YC6XrqHxSe6vO0Ugkipgb_XnuN526QGckXWNI4GhG1k",
+      "image_credit": "The Commercial Appeal",
+      "news": [
+        {
+          "url": "https://www.commercialappeal.com/story/sports/college/memphis-tigers/basketball/2026/11/07/memphis-basketball-vcu-tv-channel-today-time/92659026007/",
+          "title": "What channel is Memphis basketball vs VCU on today? Time, TV schedule",
+          "publisher": "The Commercial Appeal",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdlRbk9hY_O6Vsxxd4YC6XrqHxSe6vO0Ugkipgb_XnuN526QGckXWNI4GhG1k"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/watch-memphis-vs-vcu-140047247.html",
+          "title": "How to watch Memphis vs. VCU",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCbgqA2XfoNren0mRK5kaCJxDzDSEdRg8XR1go9e29ygKUVxUf0EuLTVqpxF4"
+        },
+        {
+          "url": "https://www.bleachernation.com/picks/2026/11/07/aac-basketball-predictions-computer-picks-and-best-bets-november-7-3/",
+          "title": "AAC Basketball Predictions, Computer Picks and Best Bets | November 7",
+          "publisher": "Bleacher Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdSL4zyTCvIrQO_qF4oVxQ5SNmQFs7xRZGtJfsI9c3KvrFKsRhJ28qP3O6GLo"
+        }
+      ]
+    },
+    {
+      "query": "rice vs north texas",
+      "approx_searches": "500+",
+      "published_at": "2026-11-07T20:10:00Z",
+      "related_news_urls": [
+        "https://collegesportswire.usatoday.com/story/sports/college/college-football/2026/11/07/rice-north-texas-week-10-betting-odds-prediction/92623715007/",
+        "https://zonecoverage.com/2026/gambling/tiny-nicks-gambling-picks-11-07-5/",
+        "https://www.lhindependent.com/news/state/north-texas-gameday-brown-sees-focus-on-improvement-as-key-to-conference-title-run/article_3b62dfe8-ea51-502a-86e9-83a586982263.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEQiNAR4TcXwb_lMQ-PSgEszBK7nuu0Rvi0r2QJNoBtOK2txrkVOcqhMwm1iw",
       "image_credit": "College Sports Wire",
       "news": [
         {
-          "url": "https://collegesportswire.usatoday.com/story/sports/college/college-football/2026/11/07/temple-navy-week-10-betting-odds-prediction/92623299007/",
-          "title": "Temple vs. Navy: Week 10 Betting Odds, Prediction",
+          "url": "https://collegesportswire.usatoday.com/story/sports/college/college-football/2026/11/07/rice-north-texas-week-10-betting-odds-prediction/92623715007/",
+          "title": "Rice vs. North Texas: Week 10 Betting Odds, Prediction",
           "publisher": "College Sports Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6-mmwr_talBhLMglAOv_G-rTVEjTzsgkFENtVw8DGkRwF72aFZQJNACi59uo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEQiNAR4TcXwb_lMQ-PSgEszBK7nuu0Rvi0r2QJNoBtOK2txrkVOcqhMwm1iw"
         },
         {
-          "url": "https://navysports.com/news/2026/11/4/general-media-links-and-videos-for-wednesday.aspx",
-          "title": "Media Links and Videos for Wednesday",
-          "publisher": "Naval Academy Athletics",
+          "url": "https://zonecoverage.com/2026/gambling/tiny-nicks-gambling-picks-11-07-5/",
+          "title": "Tiny Nick's Gambling Picks 11/07",
+          "publisher": "Zone Coverage",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeAUToVAcGfn8MI3n-jcQ3RpAsTfELHHuf9g8eVPjx4y6cEi3q2SGUEYK2sqY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQY-ZMO30-wXLTB3t6WssRncOTOt9E3CJwbEbOhgwYgLj7D5Yl0PfJRHOkDCM"
         },
         {
-          "url": "https://phlsportsnow.com/temple-football-preview-how-will-the-owls-handle-final-third-of-the-season/",
-          "title": "Temple Football Preview: How Will the Owls Handle Final Third of the Season?",
-          "publisher": "Philadelphia Sports Now",
+          "url": "https://www.lhindependent.com/news/state/north-texas-gameday-brown-sees-focus-on-improvement-as-key-to-conference-title-run/article_3b62dfe8-ea51-502a-86e9-83a586982263.html",
+          "title": "North Texas gameday: Brown sees focus on improvement as key to conference title run",
+          "publisher": "Liberty Hill Independent",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRE77Dp-mMMqXM9mhY8S1ubzrgzt-YmGgUG8530ayPtGv4eZsgTxWBA2lGlZlo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQacZUEa3LPqKg1KxJLywd0yayqblb_vNVHBhn_YL5_87jeJzZg8qqJ88m9f3c"
         }
       ]
     },
     {
-      "query": "wku vs middle tenn.",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T19:40:00Z",
+      "query": "mo state vs fiu",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T20:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/derek-mason-mtsu-vs-western-173033028.html",
-        "https://mtsusidelines.com/2026/11/06/the-other-sideline-previewing-the-100-miles-of-hate-series-in-2026/",
-        "https://goblueraiders.com/news/2026/11/6/football-blue-raiders-face-wku-for-homecoming-saturday"
+        "https://sports.yahoo.com/articles/missouri-state-vs-fiu-prediction-110126278.html",
+        "https://fiusports.com/news/2026/11/5/football-matches-up-with-missouri-state-for-homecoming-saturday.aspx",
+        "https://www.ky3.com/2026/11/06/what-know-florida-international-meets-missouri-state-cusa-action/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7wpNeHE6p2KLYqfMPxB-Hr42ig59bmsMZItIcJaBaf9dk488RK8zLBROisGc",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR05aiWQnbN9RaPl-RJZqzwSCQm-x1XvhD2eWIVwU051EQlesqOPDsUt30i-FI",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/derek-mason-mtsu-vs-western-173033028.html",
-          "title": "Derek Mason, MTSU vs Western Kentucky live updates for college football Week 10",
+          "url": "https://sports.yahoo.com/articles/missouri-state-vs-fiu-prediction-110126278.html",
+          "title": "Missouri State vs FIU Prediction, Pick, NCAAF Odds for Saturday, Nov. 7",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7wpNeHE6p2KLYqfMPxB-Hr42ig59bmsMZItIcJaBaf9dk488RK8zLBROisGc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR05aiWQnbN9RaPl-RJZqzwSCQm-x1XvhD2eWIVwU051EQlesqOPDsUt30i-FI"
         },
         {
-          "url": "https://mtsusidelines.com/2026/11/06/the-other-sideline-previewing-the-100-miles-of-hate-series-in-2026/",
-          "title": "The Other Sideline: Previewing the 100 Miles of Hate series in 2026",
-          "publisher": "MTSU Sidelines",
+          "url": "https://fiusports.com/news/2026/11/5/football-matches-up-with-missouri-state-for-homecoming-saturday.aspx",
+          "title": "Football Matches Up with Missouri State for Homecoming Saturday",
+          "publisher": "FIU Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYVPYrb8GN_KJrEpJPjZXwqmeCRbp6pwGWn7tlKXfkceZtDS0-jGVLqaZFVVs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREXpYDhdUaptjygL2SCkOhVvcvsK6kNjsok8UE4qxZEFXVYoGj8LES5M9oQ9k"
         },
         {
-          "url": "https://goblueraiders.com/news/2026/11/6/football-blue-raiders-face-wku-for-homecoming-saturday",
-          "title": "Blue Raiders face WKU for Homecoming Saturday",
-          "publisher": "Middle Tennessee State University Athletics",
+          "url": "https://www.ky3.com/2026/11/06/what-know-florida-international-meets-missouri-state-cusa-action/",
+          "title": "WHAT TO KNOW: Florida International meets Missouri State in CUSA action",
+          "publisher": "KY3",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYBW6VhfCy5qAmoFioikKhto1oq0UOFSySwLuRh2sk_1ksgN0zUT86ReZ6HrE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQetJU-KxxQ-2iLsncue2CT21JaOIoP7mzuEstvk178FqIc5uPSqBRBxO15Ybg"
         }
       ]
     },
     {
-      "query": "marshall vs ga southern",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T19:40:00Z",
-      "related_news_urls": [
-        "https://wvmetronews.com/2026/11/04/turner-to-remain-starting-quarterback-as-marshall-looks-to-maintain-momentum-in-matchup-with-georgia-southern/",
-        "https://www.griceconnect.com/sports/game-preview-eagles-looking-to-carry-momentum-against-herd-12990892",
-        "https://www.prpeak.com/classifieds/garage-sales/garage-sales/2165389"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFecEVAYiSoQSyEKGRdzS1TjgfBwGykjoamA0Uv3DE8zacxOCYUnXwVGCjZKk",
-      "image_credit": "WV MetroNews",
-      "news": [
-        {
-          "url": "https://wvmetronews.com/2026/11/04/turner-to-remain-starting-quarterback-as-marshall-looks-to-maintain-momentum-in-matchup-with-georgia-southern/",
-          "title": "Turner to remain starting quarterback as Marshall looks to maintain momentum in matchup with Georgia Southern",
-          "publisher": "WV MetroNews",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFecEVAYiSoQSyEKGRdzS1TjgfBwGykjoamA0Uv3DE8zacxOCYUnXwVGCjZKk"
-        },
-        {
-          "url": "https://www.griceconnect.com/sports/game-preview-eagles-looking-to-carry-momentum-against-herd-12990892",
-          "title": "GAME PREVIEW| Eagles looking to carry momentum against Herd",
-          "publisher": "Grice Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4yecfxgeKFN8H31aZ4b5BFcq84BkDrKZpqVaJTtXnwqKSJTXMJqDr1ZHgG_M"
-        },
-        {
-          "url": "https://www.prpeak.com/classifieds/garage-sales/garage-sales/2165389",
-          "title": "LIVE: College Football Live : Marshall vs Georgia Southern Live updates",
-          "publisher": "Powell River Peak",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQT2pIabN4yttzVzaqkJmoX-WL46wYmTWqJnt_bd9cHN0-ndNGVRKq_dmXUYzA"
-        }
-      ]
-    },
-    {
-      "query": "merrimack vs wake forest",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T19:40:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/wake-forest/longformarticle/16-wake-forest-hosting-a-flip-target-and-more-for-merrimack-game-292258394/",
-        "https://www.si.com/college/wake-forest/football/is-a-blowout-coming-to-winston-salem-our-staff-makes-their-picks-01m6v56dtyxp",
-        "https://www.bloggersodear.com/wake-forest-football/24858/scouting-report-merrimack-warriors"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsDHbJ1bqkkFSzxV4Nz5xA29B5jhfrFtjA7MRYrfERakZPhABfRE_1zPoHNz0",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/wake-forest/longformarticle/16-wake-forest-hosting-a-flip-target-and-more-for-merrimack-game-292258394/",
-          "title": "#16 Wake Forest hosting a flip target and more for Merrimack game",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsDHbJ1bqkkFSzxV4Nz5xA29B5jhfrFtjA7MRYrfERakZPhABfRE_1zPoHNz0"
-        },
-        {
-          "url": "https://www.si.com/college/wake-forest/football/is-a-blowout-coming-to-winston-salem-our-staff-makes-their-picks-01m6v56dtyxp",
-          "title": "Is a Blowout Coming to Winston-Salem? Our Staff Makes Their Picks",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTUreaXlquBOdYsSWXaE_KcHrYvQb-1rv8hBVnzoyUvRhBTp9Envh3E_xXk44"
-        },
-        {
-          "url": "https://www.bloggersodear.com/wake-forest-football/24858/scouting-report-merrimack-warriors",
-          "title": "Scouting Report: Merrimack Warriors",
-          "publisher": "Blogger So Dear",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_HN365RTNFZVk2hbkzeZzL_iObc0qGg1R03l3XEQSrPRGNRAhCVEBKyGvakc"
-        }
-      ]
-    },
-    {
-      "query": "pokémon",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T19:40:00Z",
-      "related_news_urls": [
-        "https://www.nbcnews.com/news/us-news/man-arrested-leaving-sleeping-6-year-old-daughter-pokemon-rcna607993",
-        "https://www.foxcarolina.com/2026/11/07/father-accused-leaving-daughter-sleeping-outside-target-hold-spot-pokmon-cards-police-say/",
-        "https://www.counton2.com/news/local-news/child-6-left-alone-outside-west-ashley-target-so-dad-could-purchase-pokemon-cards-police/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNHeHxUC219lMUNMUjb9o1MHgdTWfeMvBUKQwe6LRqbr_sAFzTL3s3M6RkkH4",
-      "image_credit": "NBC News",
-      "news": [
-        {
-          "url": "https://www.nbcnews.com/news/us-news/man-arrested-leaving-sleeping-6-year-old-daughter-pokemon-rcna607993",
-          "title": "South Carolina man arrested after leaving sleeping 6-year-old daughter in line for Pokémon card release, police say",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNHeHxUC219lMUNMUjb9o1MHgdTWfeMvBUKQwe6LRqbr_sAFzTL3s3M6RkkH4"
-        },
-        {
-          "url": "https://www.foxcarolina.com/2026/11/07/father-accused-leaving-daughter-sleeping-outside-target-hold-spot-pokmon-cards-police-say/",
-          "title": "Father accused of leaving daughter sleeping outside Target to hold spot for Pokémon cards, police say",
-          "publisher": "FOX Carolina News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHQNzHWbSJuC1wsRUdE447HD61DROboSFB-EkHhJ8Tu51EaaqT-BVXaQUg8XM"
-        },
-        {
-          "url": "https://www.counton2.com/news/local-news/child-6-left-alone-outside-west-ashley-target-so-dad-could-purchase-pokemon-cards-police/",
-          "title": "Child, 6, left alone outside West Ashley Target so dad could purchase Pokémon cards: police",
-          "publisher": "WCBD News 2",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMjDFRbJ6s96-hRHNcBpJGIN7Fm3chZcMvLWV5A0aYSN4wVZtSmqb3mRMCnyU"
-        }
-      ]
-    },
-    {
-      "query": "erling haaland",
-      "approx_searches": "500+",
-      "published_at": "2026-11-07T19:30:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/articles/cm93zvzzl33zo",
-        "https://www.si.com/soccer/harry-kane-new-salary-compares-erling-haaland-kylian-mbappe",
-        "https://www.espn.com/soccer/story/_/id/50216815/harry-kane-signs-new-bayern-munich-contract"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCu6YkzE4HVVuMHl-7z5YbnnjCX1Qz-IOedvzc3dJQBLHaRRfaZr-d64giBEk",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/articles/cm93zvzzl33zo",
-          "title": "Does Kane deal end Premier League career but offer England hope?",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCu6YkzE4HVVuMHl-7z5YbnnjCX1Qz-IOedvzc3dJQBLHaRRfaZr-d64giBEk"
-        },
-        {
-          "url": "https://www.si.com/soccer/harry-kane-new-salary-compares-erling-haaland-kylian-mbappe",
-          "title": "How Harry Kane’s New Salary Compares to Erling Haaland, Kylian Mbappe",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSVLvsQk84v32An8s1ci5RIdy1d-LeGZwtU2uzWRDt_YjSYdLeQuTkU381Cc0"
-        },
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50216815/harry-kane-signs-new-bayern-munich-contract",
-          "title": "Harry Kane signs new Bayern Munich contract: 'I want to win many more titles'",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQlpPFkhsqtPE2AdvLmWo1u4sE_HoQM_8qWydhoS0xvHydTgcJSAj7TsMy5Fc"
-        }
-      ]
-    },
-    {
-      "query": "vmi vs tn tech",
+      "query": "la tech vs troy",
       "approx_searches": "200+",
-      "published_at": "2026-11-07T19:20:00Z",
+      "published_at": "2026-11-07T20:10:00Z",
       "related_news_urls": [
-        "https://www.herald-citizen.com/sports/no-9-9-tennessee-tech-host-vmi-on-homecoming/article_05f0da05-50ba-5594-9ebd-4c459b1f781a.html",
-        "https://www.covers.com/sport/football/ncaaf/matchup/378898/picks",
-        "https://www.espn.com/college-football/story/_/id/50407948/sources-byu-rb-lj-martin-return-play-vs-no-3-utah"
+        "https://lincolnparishjournal.com/2026/11/07/bulldogs-look-to-take-another-step-toward-sun-belt-west-title/",
+        "https://www.al.com/sports/2026/11/scouting-report-what-you-need-to-know-for-troys-game-vs-louisiana-tech.html",
+        "https://collegesportswire.usatoday.com/story/sports/college/college-football/2026/11/07/louisiana-tech-troy-week-10-betting-odds-prediction/92624478007/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg9Hs_wtMwqmhfEfE_cNMa6ODC45iYIwKnI0e7DmLrDlSLIckE1j7wSmKXNYo",
-      "image_credit": "Herald-Citizen.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9-fv56jQzziOTFmyx5ERjc_KFkZjPExXIj5sId5u2oIYN_z5d-NKNryHX8so",
+      "image_credit": "Lincoln Parish Journal",
       "news": [
         {
-          "url": "https://www.herald-citizen.com/sports/no-9-9-tennessee-tech-host-vmi-on-homecoming/article_05f0da05-50ba-5594-9ebd-4c459b1f781a.html",
-          "title": "No. 9/9 Tennessee Tech Host VMI on Homecoming",
-          "publisher": "Herald-Citizen.com",
+          "url": "https://lincolnparishjournal.com/2026/11/07/bulldogs-look-to-take-another-step-toward-sun-belt-west-title/",
+          "title": "Bulldogs look to take another step toward Sun Belt West title",
+          "publisher": "Lincoln Parish Journal",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg9Hs_wtMwqmhfEfE_cNMa6ODC45iYIwKnI0e7DmLrDlSLIckE1j7wSmKXNYo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9-fv56jQzziOTFmyx5ERjc_KFkZjPExXIj5sId5u2oIYN_z5d-NKNryHX8so"
         },
         {
-          "url": "https://www.covers.com/sport/football/ncaaf/matchup/378898/picks",
-          "title": "Mercer Bears vs Tennessee Tech Golden Eagles Prediction, Picks, Prop Bets For November 14, 2026 - NCAAF",
-          "publisher": "Covers.com",
+          "url": "https://www.al.com/sports/2026/11/scouting-report-what-you-need-to-know-for-troys-game-vs-louisiana-tech.html",
+          "title": "Scouting report: What you need to know for Troy’s game vs. Louisiana Tech",
+          "publisher": "AL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMa9IbQJb3D9D2S-qXunCDhAM7pqkk_UqBcQiMmjcieWFnUYbeyEGxiq0Asag"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrCmc1_LWDUefSCbqsAfsounXpi4sKOrkbqN255qAqpbsDCgEcZvtvN9eiu9c"
         },
         {
-          "url": "https://www.espn.com/college-football/story/_/id/50407948/sources-byu-rb-lj-martin-return-play-vs-no-3-utah",
-          "title": "BYU star RB LJ Martin returns, plays vs. No. 3 Utah",
-          "publisher": "ESPN",
+          "url": "https://collegesportswire.usatoday.com/story/sports/college/college-football/2026/11/07/louisiana-tech-troy-week-10-betting-odds-prediction/92624478007/",
+          "title": "Louisiana Tech vs. Troy: Week 10 Betting Odds, Prediction",
+          "publisher": "College Sports Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRigiVW7qtxE4aSioPpN4--X5JM6nQDEHVXmqyXNrDbB1UQs12TD99NGBRJKcU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhMsEKPfCNWD5NKJrpm3-RX3EvkljLzFmPsvPNAEPdr64RIdldz_U-dCBS7tw"
         }
       ]
     },
     {
-      "query": "winthrop basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-07T19:20:00Z",
+      "query": "boca vs defensa y justicia",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T20:00:00Z",
       "related_news_urls": [
-        "https://sports.betmgm.com/en/blog/ncaab/north-dakota-winthrop-prediction-odds-picks-nov-7-college-basketball-jaa/",
-        "https://winthropeagles.com/news/2026/11/6/mens-basketball-takes-on-north-dakota-in-home-opener.aspx",
-        "https://www.covers.com/sport/basketball/ncaab/matchup/394902/picks"
+        "https://espndeportes.espn.com/futbol/argentina/nota/_/id/17482233/boca-la-formacion-vs-defensa-y-justicia-tabla-anual-torneo-clausura-2026",
+        "https://www.sportingnews.com/mx/futbol/news/como-salio-boca-defensa-justicia-resultado-goles-clausura-2026/661dadc6d9528f40fec23f9a",
+        "https://www.ole.com.ar/boca-juniors/listo-bombonera-partido-boca-defensa_3_hwnaPvY2hX.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWNbDJpVAGEouB_Gx416W98HNYv73Fpryzse4qUgpR6QHrUPmevUm89dHohiI",
-      "image_credit": "sports.betmgm.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_9Vxco2Mr0gni7KXPyV6OvOqHd2bI-EsNFR9MHgw8gWXAL7ue9tLb-4ypKzI",
+      "image_credit": "ESPN Deportes",
       "news": [
         {
-          "url": "https://sports.betmgm.com/en/blog/ncaab/north-dakota-winthrop-prediction-odds-picks-nov-7-college-basketball-jaa/",
-          "title": "North Dakota vs Winthrop Prediction, Odds & Best Bets Today – NCAAB, Nov. 7",
-          "publisher": "sports.betmgm.com",
+          "url": "https://espndeportes.espn.com/futbol/argentina/nota/_/id/17482233/boca-la-formacion-vs-defensa-y-justicia-tabla-anual-torneo-clausura-2026",
+          "title": "Con una duda, Arruabarrena arma el equipo de Boca para definir la Tabla Anual ante Defensa",
+          "publisher": "ESPN Deportes",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWNbDJpVAGEouB_Gx416W98HNYv73Fpryzse4qUgpR6QHrUPmevUm89dHohiI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_9Vxco2Mr0gni7KXPyV6OvOqHd2bI-EsNFR9MHgw8gWXAL7ue9tLb-4ypKzI"
         },
         {
-          "url": "https://winthropeagles.com/news/2026/11/6/mens-basketball-takes-on-north-dakota-in-home-opener.aspx",
-          "title": "Men's Basketball Takes On North Dakota In Home Opener",
-          "publisher": "Winthrop University Athletics",
+          "url": "https://www.sportingnews.com/mx/futbol/news/como-salio-boca-defensa-justicia-resultado-goles-clausura-2026/661dadc6d9528f40fec23f9a",
+          "title": "Cómo salió Boca vs. Defensa y Justicia hoy: Formaciones, resultado y goles del partido por el Clausura 2026",
+          "publisher": "Sporting News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaVJFy-iAmWLYBkLTdwSF3eGcBPQKxD6uKaMajjyOZ1oMlX3X2TXQ9pRrSOEo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOyXCP2gjJEsAragkpAEv3gUb-P7kt4VHmlkMAoOE0R0t0K5K-UGUV3O7_I_o"
         },
         {
-          "url": "https://www.covers.com/sport/basketball/ncaab/matchup/394902/picks",
-          "title": "North Dakota Fighting Hawks vs Winthrop Eagles Prediction, Picks, Prop Bets For November 07, 2026 - NCAAB",
-          "publisher": "Covers.com",
+          "url": "https://www.ole.com.ar/boca-juniors/listo-bombonera-partido-boca-defensa_3_hwnaPvY2hX.html",
+          "title": "Todo listo en la Bombonera para el partido entre Boca y Defensa",
+          "publisher": "Olé",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTky4vTVp9MFCG7quyztvCL-Fd9SmbUmXa4cujya4tcH5tVQobHotrAbD9O4IM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTomf8Wtn2dL6L4AqrZCyh3dAPrNcSnnyKvj9IQWNvyZQVyC1DG-szHp7Ws7jo"
+        }
+      ]
+    },
+    {
+      "query": "roma",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-07T20:00:00Z",
+      "related_news_urls": [
+        "https://www.gazzetta.it/Calcio/Serie-A/Roma/07-11-2026/roma-sassuolo-live-risultato-e-gol-in-diretta-serie-a.shtml",
+        "https://www.corrieredellosport.it/foto/calcio/serie-a/roma/2026/11/07-152430789/roma-sassuolo_la_probabile_formazione_di_gasperini",
+        "https://www.fantacalcio.it/news/calcio-italia/07_11_2026/roma-sassuolo-formazioni-ufficiali-500419"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKwyceiGahJwS72n4L1XpC4mDoJBucLOy3c4Xsib0Hpeweo5tpRclbvP97uJ8",
+      "image_credit": "La Gazzetta dello Sport",
+      "news": [
+        {
+          "url": "https://www.gazzetta.it/Calcio/Serie-A/Roma/07-11-2026/roma-sassuolo-live-risultato-e-gol-in-diretta-serie-a.shtml",
+          "title": "LIVE Alle 20.45 Roma-Sassuolo, le ufficiali: para ancora Vasquez. Aquilani con Esposito",
+          "publisher": "La Gazzetta dello Sport",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKwyceiGahJwS72n4L1XpC4mDoJBucLOy3c4Xsib0Hpeweo5tpRclbvP97uJ8"
+        },
+        {
+          "url": "https://www.corrieredellosport.it/foto/calcio/serie-a/roma/2026/11/07-152430789/roma-sassuolo_la_probabile_formazione_di_gasperini",
+          "title": "Roma-Sassuolo, la formazione ufficiale di Gasperini",
+          "publisher": "Corriere dello Sport",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3wWb4OVJUwvS2IujoQHScbgngTNFywRRrreZRj69t9xh4h4B_Hp8DkHkrlCI"
+        },
+        {
+          "url": "https://www.fantacalcio.it/news/calcio-italia/07_11_2026/roma-sassuolo-formazioni-ufficiali-500419",
+          "title": "Roma-Sassuolo, formazioni ufficiali: ci sono Mora, Koné ed Hermoso",
+          "publisher": "Fantacalcio",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRsyNUxd7FX93G-9dk6K0SxjOmInPOtCVqTmfbPFgq8WQb8IK90FuWtRzVLY_I"
+        }
+      ]
+    },
+    {
+      "query": "sporting vs moreirense",
+      "approx_searches": "200+",
+      "published_at": "2026-11-07T20:00:00Z",
+      "related_news_urls": [
+        "https://www.abola.pt/noticias/a-revolucao-silenciosa-o-onze-provavel-do-sporting-para-a-estreia-de-paulo-fonseca-2026110700364277647",
+        "https://www.sporttv.pt/noticias/867113/luis-catarino-analisa-primeiro-11-inicial-de-paulo-fonseca",
+        "https://cnnportugal.iol.pt/hoje-vai-ser-noticia/hoje-e-noticia/hoje-vai-ser-noticia-179404200"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQua4epYIeY1jPW9MVRlGSt9nz5ps3buGl5C_aynikwZjrwy4Sg3a7cYUI6wQU",
+      "image_credit": "A Bola",
+      "news": [
+        {
+          "url": "https://www.abola.pt/noticias/a-revolucao-silenciosa-o-onze-provavel-do-sporting-para-a-estreia-de-paulo-fonseca-2026110700364277647",
+          "title": "A revolução silenciosa: o onze provável do Sporting para a estreia de Paulo Fonseca",
+          "publisher": "A Bola",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQua4epYIeY1jPW9MVRlGSt9nz5ps3buGl5C_aynikwZjrwy4Sg3a7cYUI6wQU"
+        },
+        {
+          "url": "https://www.sporttv.pt/noticias/867113/luis-catarino-analisa-primeiro-11-inicial-de-paulo-fonseca",
+          "title": "Luís Catarino analisa primeiro 11 inicial de Paulo Fonseca",
+          "publisher": "Sport TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEurFBNM1kZOfLWFl3YyNDxt1tJEPMxn2xUkBwr60dFx5OPWyb3l2fJTo-SCA"
+        },
+        {
+          "url": "https://cnnportugal.iol.pt/hoje-vai-ser-noticia/hoje-e-noticia/hoje-vai-ser-noticia-179404200",
+          "title": "Hoje vai ser notícia",
+          "publisher": "CNN Portugal",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSb3Iylmk9K4EesE8bE7CuY3HT9VYucUUn90r-HfHRt8jibWEcH8rzFQO1wVBY"
         }
       ]
     }
