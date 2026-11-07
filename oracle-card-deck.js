@@ -140,11 +140,15 @@ const CARD_DIRECTIONS={
  publicCardTrends:['trending-now','Research','Investigate verified trends and search interests']
 };
 
+const reservedForDedicatedLanes=new Set([
+ 'phiMediaBuilder','phiStoryWriter','infiniteBook','groupStoryBuild','pixieStoryCard',
+ 'physicsOracleCard','oracleRealmGame','cannabisDirectoryCard','bruceBannerWeedmapsCard','infinityAdultContentCard'
+]);
 const unique=[...new Map(choices.map(([id,title])=>[id,title])).entries()];
 const entries=unique.map(([id,title])=>{
  const [feedId,category,feature]=CARD_DIRECTIONS[id]||['deck-'+id.toLowerCase(),'Discovery',title];
  return {id,title,feedId,category,feature,study:title,node:document.getElementById(id),marker:null,count:0};
-}).filter(x=>x.node);
+}).filter(x=>x.node&&!reservedForDedicatedLanes.has(x.id)&&!x.id.startsWith('dispensary-'));
 const STORE='oracle:card-activity:v1';
 const spotlightRequested=(()=>{try{
  const url=new URL(location.href);
@@ -204,7 +208,7 @@ function registerSourceCards(){
 window.addEventListener('quantaphi:source-cards-ready',registerSourceCards);
 // Dynamically mount every loaded, original Cloudflare store listing as its own
 // Oracle card. No personal browsing telemetry, sale controls, or fake ratings.
-function registerDirectoryCards(){
+function registerDirectoryCards(){\n if(document.getElementById('oracleExperienceLanes'))return; // Exclusive opt-in 21+ carousel owns directory listings.
  let added=false;
  for(const node of document.querySelectorAll('[data-directory-store-id]')){
   const id=node.id;
@@ -285,7 +289,7 @@ window.addEventListener('quantaphi:trending-app-cards-ready',registerTrendingApp
 
 // Discover widgets mounted after the deferred deck script, including roots that
 // did not exist at its first scan. Reparenting is ignored once registered.
-function registerLateWidgets(){
+function registerLateWidgets(){\n // Dedicated Oracle creator and optional adult lanes retain exclusive ownership.
  let added=false;
  for(const [id,title] of unique){
   if(entries.some(e=>e.id===id))continue;
