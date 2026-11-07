@@ -3,6 +3,11 @@ on:
   pull_request:
     paths:
       - 'developer-carousel-core.mjs'
+      - 'developer-discovery-core.mjs'
+      - 'developer-discovery.mjs'
+      - 'developer-discovery.css'
+      - 'tests/developer-discovery.test.mjs'
+      - 'test/developer-discovery.browser.spec.mjs'
       - 'developer-carousel.mjs'
       - 'developer-carousel.css'
       - 'oracle-card-deck.js'
@@ -15,6 +20,11 @@ on:
     branches: [main]
     paths:
       - 'developer-carousel-core.mjs'
+      - 'developer-discovery-core.mjs'
+      - 'developer-discovery.mjs'
+      - 'developer-discovery.css'
+      - 'tests/developer-discovery.test.mjs'
+      - 'test/developer-discovery.browser.spec.mjs'
       - 'developer-carousel.mjs'
       - 'developer-carousel.css'
       - 'oracle-card-deck.js'
@@ -37,8 +47,10 @@ jobs:
         run: |
           node --check developer-carousel-core.mjs
           node --check developer-carousel.mjs
+          node --check developer-discovery-core.mjs
+          node --check developer-discovery.mjs
           node --check oracle-card-deck.js
-          node --test tests/developer-carousel.test.mjs
+          node --test tests/developer-carousel.test.mjs tests/developer-discovery.test.mjs
   developer-browser:
     runs-on: ubuntu-latest
     steps:
@@ -53,4 +65,4 @@ jobs:
       - name: Exercise actual builder cards on Android widths in Chromium
         run: |
           python3 -m http.server 8799 --bind 127.0.0.1 >/tmp/developer-carousel-http.log 2>&1 &
-          npx playwright test test/developer-carousel.browser.spec.mjs test/infinity-affiliates.browser.spec.mjs --reporter=line --workers=1
+          npx playwright test test/developer-carousel.browser.spec.mjs test/developer-discovery.browser.spec.mjs test/infinity-affiliates.browser.spec.mjs --reporter=line --workers=1
