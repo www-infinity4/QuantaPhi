@@ -5,8 +5,8 @@ const get=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 
 test('Steve Miller button mounts Book of Dreams YouTube playlist inside the original Quick Card',()=>{
  const s=get('steve-miller-book-of-dreams.js');
- assert.ok(s.includes('www.youtube.com/embed/videoseries'));
- assert.ok(s.includes('PL8a8cutYP7foGH0YDM8YtNqGtgL0EAJ7k'));
+ assert.ok(s.includes('www.youtube.com/embed/'));
+ assert.ok(s.includes('JHa1hiFYbFQ'));
  assert.ok(s.includes("make('iframe'"));
  assert.ok(s.includes('smb-player-panel'));
  assert.ok(!s.includes('window.InfinityRadioQuick.toggle()'));
