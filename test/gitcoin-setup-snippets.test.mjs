@@ -24,6 +24,7 @@ test('copy-for-AI prompt links to real source without claiming secret credential
  assert.match(prompt,/owner\/repo/);
  assert.match(prompt,/gitcoin\/TERMUX\.md/);
  assert.match(prompt,/Quant AI/);
+ assert.match(prompt,/GIT-P-/);
  assert.match(prompt,/local SQLite/);
  assert.match(prompt,/do not (?:claim|mint|issue)/i);
  assert.match(prompt,/Bubbles Bits/);
