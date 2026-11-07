@@ -84,6 +84,31 @@ export default {
    const jobs=await env.TREND_DB.prepare('SELECT id,batch_id,role,objective,depends_on,state,attempts,updated_at,last_error FROM continuity_jobs ORDER BY updated_at DESC LIMIT 80').all();
    return send({ok:true,jobs:jobs.results||[]});
   }
+  if(path==='/jobs/claim'&&request.method==='POST'){
+   if(!authorized(request,env.OPERATOR_TOKEN))return send({ok:false,error:'unauthorized'},401);
+   let body;try{body=await request.json()}catch{return send({ok:false,error:'bad_json'},400)}
+   const id=String(body?.id||''),owner=String(body?.worker_id||'');
+   if(!/^trend-card-\d{4}-\d{2}-\d{2}:(gpt|yellow|orange|blue|green|red|purple|silver)$/.test(id)||!/^[-a-zA-Z0-9_.]{4,100}$/.test(owner))return send({ok:false,error:'invalid_claim'},400);
+   const db=env.TREND_DB,now=new Date().toISOString(),epoch=Math.floor(Date.now()/1000);
+   const job=await db.prepare('SELECT * FROM continuity_jobs WHERE id=?').bind(id).first();
+   if(!job)return send({ok:false,error:'not_found'},404);
+   if(job.depends_on){
+    const dep=await db.prepare('SELECT state FROM continuity_jobs WHERE batch_id=? AND role=?').bind(job.batch_id,job.depends_on).first();
+    if(dep?.state!=='complete')return send({ok:false,error:'dependency_not_complete'},409);
+   }
+   const changed=await db.prepare("UPDATE continuity_jobs SET state='running',lease_owner=?,lease_until=?,attempts=attempts+1,updated_at=? WHERE id=? AND attempts<4 AND (state='queued' OR (state='running' AND lease_until<?))")
+    .bind(owner,epoch+600,now,id,epoch).run();
+   return changed.meta?.changes===1?send({ok:true,id,lease_until:epoch+600}):send({ok:false,error:'not_claimable'},409);
+  }
+  if(path==='/jobs/complete'&&request.method==='POST'){
+   if(!authorized(request,env.OPERATOR_TOKEN))return send({ok:false,error:'unauthorized'},401);
+   let body;try{body=await request.json()}catch{return send({ok:false,error:'bad_json'},400)}
+   const id=String(body?.id||''),owner=String(body?.worker_id||''),receipt=String(body?.evidence_receipt||'');
+   if(!/^trend-card-\d{4}-\d{2}-\d{2}:(gpt|yellow|orange|blue|green|red|purple|silver)$/.test(id)||!/^[-a-zA-Z0-9_.]{4,100}$/.test(owner)||receipt.length<12||receipt.length>1000)return send({ok:false,error:'invalid_receipt'},400);
+   const changed=await env.TREND_DB.prepare("UPDATE continuity_jobs SET state='complete',lease_owner=NULL,lease_until=NULL,evidence_receipt=?,updated_at=? WHERE id=? AND state='running' AND lease_owner=? AND lease_until>=?")
+    .bind(receipt,new Date().toISOString(),id,owner,Math.floor(Date.now()/1000)).run();
+   return changed.meta?.changes===1?send({ok:true,id}):send({ok:false,error:'lease_or_state_mismatch'},409);
+  }
   return send({ok:false,error:'not_found'},404);
  },
  async scheduled(_event,env){
