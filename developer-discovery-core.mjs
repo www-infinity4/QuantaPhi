@@ -96,6 +96,33 @@ export function normalizeGithubResult(row,category=''){
   repo:row.full_name
  });
 }
+/* Revalidate every stored public metadata record before showing it on site.
+ * An approved catalog PR still cannot grant permission to run third-party code. */
+export function validateIndexedResource(raw){
+ if(!raw||raw.source!=='GitHub'||!/^github-[1-9]\d{0,17}$/.test(String(raw.id||'')))return null;
+ if(!ghName.test(String(raw.repo||''))||!DEVELOPMENT_TOPICS.some(x=>x.id===raw.category))return null;
+ const original='https://github.com/'+raw.repo;
+ let avatar;
+ try{
+  const link=new URL(String(raw.url||'')),a=new URL(String(raw.image||''));
+  if(link.protocol!=='https:'||link.hostname!=='github.com'||link.pathname.replace(/\/$/,'')!=='/'+raw.repo)return null;
+  if(a.protocol!=='https:'||a.hostname!=='avatars.githubusercontent.com')return null;
+  avatar=a.href;
+ }catch{return null;}
+ const label=String(raw.label||'').trim().slice(0,90);
+ if(!label||forbiddenSourceText(label+' '+String(raw.description||'')))return null;
+ return Object.freeze({
+  id:raw.id,source:'GitHub',label,
+  url:original,image:avatar,repo:raw.repo,category:raw.category,
+  description:String(raw.description||'').slice(0,240),
+  license:String(raw.license||'Unspecified').slice(0,36),
+  licenseStatus:'review-license-before-reuse',
+  stars:Number.isFinite(raw.stars)?Math.max(0,Math.trunc(raw.stars)):null,
+  pushedAt:typeof raw.pushedAt==='string'?raw.pushedAt.slice(0,10):''
+ });
+}
+const forbiddenSourceText=value=>/\b(?:pornography|porn|nudes?|hentai|dick.pics)\b/i.test(value);
+
 export function summarizeGithubPage(result,category=''){
  const rows=Array.isArray(result?.items)?result.items:[];
  const seen=new Set(),items=[];
