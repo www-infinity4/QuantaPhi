@@ -1,5 +1,6 @@
-/* Classic Rock · official artist information, one shared Infinity Radio
- * transport. Artist selections never pretend the radio plays those artists.
+/* Classic Rock · artist-specific official YouTube videos inside the Quick Card.
+ * No artist button may start the unrelated Infinity Radio transport.
+ * Each visible YouTube embed is subject to the provider's playback permissions.
  */
 import {CLASSIC_ROCK_BANDS,linkIsAllowed} from './classic-rock-official-catalog.mjs';
 const root=document.getElementById('classicRockOfficialMusicCard');
@@ -18,6 +19,10 @@ if(root&&root.dataset.officialRockMounted!=='true'){
   '#classicRockOfficialMusicCard .cr-radio-play{display:grid;place-items:center;flex:none;width:48px;height:48px;border-radius:50%;border:0;background:#136a76;color:#fff;font-size:22px;cursor:pointer;}',
   '#classicRockOfficialMusicCard .cr-radio-name{font-size:16px;font-weight:800;line-height:1.4;}',
   '#classicRockOfficialMusicCard .cr-radio-status{font-size:12px;line-height:1.45;color:#536c74;overflow-wrap:anywhere;}',
+  '#classicRockOfficialMusicCard .cr-player-panel[hidden]{display:none;}',
+  '#classicRockOfficialMusicCard .cr-player-panel{margin:8px 0 14px;}',
+  '#classicRockOfficialMusicCard .cr-player-frame{display:block;width:100%;min-height:210px;border:0;border-radius:12px;background:#172830;}',
+  '#classicRockOfficialMusicCard .cr-player-source{display:block;margin:7px 0 0;color:#125262;font-size:12px;}',
   '#classicRockOfficialMusicCard .cr-artist-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:11px 0 14px;}',
   '#classicRockOfficialMusicCard .cr-artist{min-width:0;min-height:58px;border:1px solid #cadbde;border-radius:13px;padding:9px 11px;background:#fff;color:#25444a;text-align:left;font:inherit;font-size:15px;font-weight:700;line-height:1.4;cursor:pointer;overflow-wrap:anywhere;}',
   '#classicRockOfficialMusicCard .cr-artist[aria-pressed="true"]{border-color:#0d737a;background:#eef9f9;}',
@@ -36,27 +41,51 @@ if(root&&root.dataset.officialRockMounted!=='true'){
  const record=node('span','cr-record','∞');
  record.setAttribute('aria-hidden','true');
  const introWrap=node('div');
- introWrap.append(node('h2','','Classic Rock · Listen & Shop'),node('p','cr-intro','Listen to Infinity Radio while exploring official artist releases.'));
+ introWrap.append(node('h2','','Classic Rock · Artist Music'),node('p','cr-intro','Play a selected artist’s official video here, not Infinity Radio.'));
  heading.append(record,introWrap);
  const radioRow=node('div','cr-radio');
  const play=node('button','cr-radio-play','▶');
- play.type='button';play.setAttribute('aria-label','Play Infinity Radio');play.setAttribute('aria-pressed','false');
+ play.type='button';play.setAttribute('aria-pressed','false');
  const rc=node('div');
- rc.append(node('strong','cr-radio-name','∞ Infinity Radio'));
- const radioStatus=node('div','cr-radio-status','Loading shared Infinity Radio…');
+ const radioName=node('strong','cr-radio-name');
+ const radioStatus=node('div','cr-radio-status','Select an artist to listen.');
  radioStatus.setAttribute('role','status');radioStatus.setAttribute('aria-live','polite');
- rc.append(radioStatus);radioRow.append(play,rc);
+ rc.append(radioName,radioStatus);radioRow.append(play,rc);
+ const panel=node('div','cr-player-panel');
+ panel.hidden=true;
+ const frame=node('iframe','cr-player-frame');
+ frame.loading='lazy';
+ frame.referrerPolicy='strict-origin-when-cross-origin';
+ frame.allow='autoplay; encrypted-media; picture-in-picture';
+ frame.setAttribute('allowfullscreen','');
+ const sourceLink=node('a','cr-player-source','Open official artist channel if embedding is blocked');
+ sourceLink.target='_blank';sourceLink.rel='noopener noreferrer';
+ panel.append(frame,sourceLink);
  const artistList=node('nav','cr-artist-list');
- artistList.setAttribute('aria-label','Choose an artist release spotlight');
+ artistList.setAttribute('aria-label','Select an artist to play');
  const offers=node('section','cr-offers');
  offers.setAttribute('aria-label','Official artist releases and merchandise');
  const offerTitle=node('h3','cr-offer-heading');
  const current=node('p','cr-current');
  const grid=node('div','cr-offer-grid');
  offers.append(offerTitle,current,grid);
- const foot=node('p','cr-note','The radio plays its own source-cleared music collection, not recordings by the selected band. Selecting a band changes official release information only; it never launches another player.');
+ const foot=node('p','cr-note','Artist selections open visible official YouTube media in this card; availability depends on the publisher. This is not a continuous licensed artist radio stream.');
  const buttons=new Map();
+ let selected=null,active=false;
+ function stop(){
+  frame.removeAttribute('src');
+  panel.hidden=true;
+  active=false;
+  play.textContent='▶';
+  play.setAttribute('aria-pressed','false');
+  play.setAttribute('aria-label','Play '+(selected?.name||'selected artist'));
+  radioStatus.textContent='Stopped · tap Play for '+(selected?.name||'this artist')+'.';
+ }
  function renderOffers(band){
+  if(active)stop();
+  selected=band;
+  radioName.textContent=band.name+' · Official Music';
+  play.setAttribute('aria-label','Play '+band.name+' official video');
   offerTitle.textContent=band.name+' · Artist release spotlight';
   current.textContent=band.feature+' · Official artist sources';
   grid.replaceChildren();
@@ -67,31 +96,41 @@ if(root&&root.dataset.officialRockMounted!=='true'){
    link.prepend(node('small','',offer.category));
    grid.append(link);
   }
+  sourceLink.href=linkIsAllowed(band.youtube)?band.youtube:'https://www.youtube.com';
   root.dataset.selectedArtist=band.id;
   for(const [id,b] of buttons)b.setAttribute('aria-pressed',String(id===band.id));
+  radioStatus.textContent='Tap Play for '+band.name+' · '+band.videoTitle+'.';
+ }
+ function start(band){
+  if(!band||!/^[A-Za-z0-9_-]{11}$/.test(band.videoId)){
+   radioStatus.textContent='Artist recording unavailable; use the official channel link.';
+   return;
+  }
+  window.dispatchEvent(new CustomEvent('quantaphi:artist-radio-start',{detail:{cardId:root.id}}));
+  frame.title=band.name+' · '+band.videoTitle+' on YouTube';
+  panel.hidden=false;
+  frame.src='https://www.youtube.com/embed/'+band.videoId+'?autoplay=1&rel=0';
+  active=true;
+  play.textContent='■';
+  play.setAttribute('aria-pressed','true');
+  play.setAttribute('aria-label','Stop '+band.name+' official video');
+  radioStatus.textContent=band.name+' · '+band.videoTitle+' · use the player if autoplay is blocked.';
  }
  for(const band of CLASSIC_ROCK_BANDS){
   const artist=node('button','cr-artist',band.name);
   artist.type='button';
-  artist.setAttribute('aria-label','View '+band.name+' official releases');
+  artist.setAttribute('aria-label','Play '+band.name+' official music');
   artist.setAttribute('aria-pressed','false');
-  artist.addEventListener('click',()=>renderOffers(band));
+  artist.addEventListener('click',()=>{renderOffers(band);start(band);});
   buttons.set(band.id,artist);artistList.append(artist);
  }
- function refresh(state){
-  const s=state||window.InfinityRadioQuick?.getState?.();
-  if(!s){radioStatus.textContent='Infinity Radio is initializing.';return;}
-  play.textContent=s.playing?'Ⅱ':'▶';
-  play.setAttribute('aria-label',s.playing?'Pause Infinity Radio':'Play Infinity Radio');
-  play.setAttribute('aria-pressed',String(!!s.playing));
-  radioStatus.textContent=s.ready?(s.status||'Tap to listen to Infinity Radio'):'Infinity Radio is loading its catalog.';
- }
  play.addEventListener('click',()=>{
-  if(!window.InfinityRadioQuick){radioStatus.textContent='Infinity Radio is not loaded; refresh the page.';return;}
-  refresh(window.InfinityRadioQuick.toggle());
+  if(active){stop();return;}
+  start(selected);
  });
- window.addEventListener('quantaphi:infinity-radio-state',event=>refresh(event.detail));
- root.append(heading,radioRow,artistList,offers,foot);
+ window.addEventListener('quantaphi:artist-radio-start',event=>{
+  if(event.detail?.cardId!==root.id&&active)stop();
+ });
+ root.append(heading,radioRow,artistList,panel,offers,foot);
  if(CLASSIC_ROCK_BANDS.length)renderOffers(CLASSIC_ROCK_BANDS[0]);
- refresh();
 }
