@@ -1,3 +1,4 @@
+import {mountAdvertiserPartnerProgram} from './advertiser-partner-card.mjs';
 import {INFINITY_ACCEPTED_BRANDS,acceptedBrand} from './infinity-accepted-catalog.mjs';
 import {AFFILIATE_REQUEST_KINDS,validateAffiliateRequest,affiliateIssueUrl,findAcceptedBrandForProduct,safePublicUrl,groupApprovedBrands} from './infinity-affiliates-core.mjs';
 const el=(t,c,txt)=>{const e=document.createElement(t);if(c)e.className=c;if(txt!==undefined)e.textContent=txt;return e};
@@ -47,12 +48,14 @@ const markup=`<div class="ia-hero">
     <button type="button" id="iaCopy" class="ia-secondary">Copy request link</button>
    </div>
   </form>
+  <div id="iaAdvertisingProgram" aria-label="Advertiser contribution and promotion options"></div>
   <div class="ia-foot-actions"><button type="button" id="iaShare">↗ Share Affiliates</button><button type="button" id="iaCollect">◇ Collect</button><a href="/quick-card-builder.html">+1 Build</a></div>
   <p class="ia-disclosure">Independent Infinity Approved directory and affiliation request system. Product matching checks the official brand website domain only; it does not confirm product authenticity, rights, affiliate eligibility, program acceptance, payouts, or commissions. Merchant checkout and final approval remain with their authorized parties.</p>
  </div>`;
 function mount(host){
  if(!host||host.dataset.affiliateReady)return;
  host.classList.add('infinity-affiliates-card');host.innerHTML=markup;
+ mountAdvertiserPartnerProgram(host.querySelector('#iaAdvertisingProgram'));
  const $=id=>host.querySelector('#'+id);
  const product=$('iaProductUrl'),brandSearch=$('iaBrandSearch'),brandSelect=$('iaBrandSelect'),result=$('iaMatchResult');
  const form=$('iaForm'),feedback=$('iaFeedback'),previewTitle=$('iaPreviewTitle'),previewState=$('iaPreviewState');
