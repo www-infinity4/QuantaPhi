@@ -82,3 +82,35 @@ test('Following displays genuine publisher listings only after Follow and preser
  await expect(listing.getByText('1885 Morgan Silver Dollar · Heritage lot')).toHaveCount(0);
  await expect(listing).toContainText('Follow auction houses');
 });
+
+test('PCGS certified-VAM cross-seller discovery shows attributed lots and licensed reference image at Android width',async({page})=>{
+ await page.route('https://commons.wikimedia.org/**',route=>route.fulfill({
+  contentType:'image/svg+xml',body:'<svg xmlns="http://www.w3.org/2000/svg" width="500" height="350"><rect width="500" height="350" fill="#ddd"/></svg>'
+ }));
+ await page.route('https://orange-brook-a2ac.marvaseater.workers.dev/search**',route=>{
+  const q=new URL(route.request().url()).searchParams.get('q')||'';
+  const results=q.includes('site:greatcollections.com')?[
+   {title:'1888-O Hot Lips VAM-4 Top 100 PCGS AU-53',url:'https://www.greatcollections.com/Coin/2299600/1888-O-Morgan-Silver-Dollar-Hot-Lips-VAM-4-PCGS-AU-53',description:'Certified lot, seller provides photos'},
+   {title:'Fake ungraded dollar',url:'https://www.greatcollections.com/Coin/2399000/No-Holder'}
+  ]:q.includes('site:icollector.com')?[
+   {title:'1889-O MORGAN DOLLAR, PCGS AU-53 VAM 2 OVAL O',url:'https://www.icollector.com/1889-O-MORGAN-DOLLAR-PCGS-AU-53-VAM-2-OVAL-O_i37331753',status:'sold'}
+  ]:q.includes('site:pcgs.com')?[
+   {title:'PCGS CoinFacts Morgan Dollar',url:'https://www.pcgs.com/coinfacts/coin/1888-o'}
+  ]:[];
+  route.fulfill({json:{results},headers:{'access-control-allow-origin':'*'}});
+ });
+ await page.goto(base+'/?card=pcgs',{waitUntil:'domcontentloaded'});
+ const card=page.locator('#oracleCardStage [data-source-id="pcgs"]');
+ await expect(card).toBeVisible();
+ const sales=card.locator('.premium-coin-sales');
+ await expect(sales).toBeVisible();
+ await expect(sales.getByText('1888-O Hot Lips VAM-4 Top 100 PCGS AU-53')).toBeVisible({timeout:25000});
+ await expect(sales.locator('img.premium-coin-reference-photo')).toHaveAttribute('src',/commons\\.wikimedia\\.org/);
+ await expect(sales.getByText(/not a seller listing/i)).toBeVisible();
+ await expect(sales.getByRole('link',{name:/View actual lot photographs at GreatCollections/})).toHaveAttribute('href',/greatcollections\\.com\\/Coin\\/2299600/);
+ await expect(sales.getByText('Fake ungraded dollar')).toHaveCount(0);
+ await sales.getByRole('button',{name:'iCollector'}).click();
+ await expect(sales.getByText('1889-O MORGAN DOLLAR, PCGS AU-53 VAM 2 OVAL O')).toBeVisible();
+ await expect(sales.getByText(/Past\\/closed listing/)).toBeVisible();
+ expect(await sales.evaluate(el=>el.getBoundingClientRect().right<=innerWidth)).toBeTruthy();
+});
