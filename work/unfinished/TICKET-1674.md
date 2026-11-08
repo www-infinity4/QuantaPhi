@@ -25,6 +25,8 @@ blocker: "Live canonical Gitcoin D1 has no verified executor binding or issued a
 next_action: "Verify exact-head PR #1845 CI, then review canonical Gitcoin executor identity/binding and signed Bubble Bits receipt delivery before any migration or deployment."
 ---
 
+Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1674
+
 # Session 1 · Four-asset wallet continuation
 
 Owner requested four visible independent assets: GIT Coin, Bubble Bits, GPT Coin and Cash Wallet. This work reuses issues #1674, #1296 and #1773, the original Gitcoin repo and existing Cash Wallet draft PR #1772. The new source draft is QuantaPhi PR #1845; there is no new issuer or duplicate issue.
