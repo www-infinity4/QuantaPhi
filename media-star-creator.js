@@ -136,6 +136,9 @@
       if(link.value.trim())void registerBuiltCard();
     }catch(e){feedback.textContent=e.message;}
   });
+  createBtn("💡 Build an image collectible set","ms-creator-button",()=>{
+    location.assign('/collectible-set-studio.html');
+  });
   createBtn("Copy my Media Star","ms-creator-button ms-primary",async()=>{
     try{const html=exportHtml(data());
       if(!navigator.clipboard?.writeText)throw Error("Clipboard is unavailable in this browser.");
