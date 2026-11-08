@@ -68,6 +68,17 @@ export function createCardArtwork(card,small=false){
   logo.src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png';
   logo.addEventListener('error',()=>{logo.hidden=true;art.append(node('strong','qcx-google-backup','Google'))},{once:true});
   art.append(logo,node('span','qcx-brand-caption','Search Google from this QuantaPhi card'));
+ }else if(card.id==='pcla-picocela'){
+  // Original schematic, not a manufacturer photo or a stock-price chart.
+  art.classList.add('qcx-pcla-art');
+  const hero=node('div','qcx-pcla-hero');
+  hero.append(node('span','qcx-pcla-ticker','NASDAQ · PCLA'),node('strong','qcx-pcla-company','PicoCELA'));
+  const mesh=node('div','qcx-pcla-mesh');mesh.setAttribute('aria-hidden','true');
+  for(let n=0;n<6;n++)mesh.append(node('span','qcx-pcla-node qcx-pcla-node-'+(n+1)));
+  mesh.append(node('span','qcx-pcla-infinity','∞'));
+  hero.append(mesh,node('span','qcx-pcla-tech','PBE · MULTI-HOP NETWORKS'),
+    node('span','qcx-pcla-caption','Japan · Wireless infrastructure · Cloud management'));
+  art.append(hero);
  }else if(card.official){
   // Full-height source-owned icon, paired with real brand name and a
   // distinct branded composition; no arbitrary two-letter cover art.
@@ -366,10 +377,86 @@ export function mountFoxOneSpot(root,card){
   }
  }
 }
+function mountPclaResearch(root,card){
+ const panel=section(root,'PCLA · SOURCE-BACKED RESEARCH','PicoCELA Mesh Networks');
+ note(panel,'PicoCELA is a Japanese wireless-networking company. Infinity is the QuantaPhi visual theme, not a verified commercial partnership.');
+ const list=node('ul','qcx-pcla-points');
+ for(const info of [
+  'PicoCELA Backhaul Engine: multi-hop wireless backhaul extends Wi-Fi coverage.',
+  'PicoManager: cloud management for connected mesh access points.',
+  'Review technology, independent financial data, and investment risks.'
+ ])list.append(node('li','',info));
+ panel.append(list);
+ const sources=node('div','qcx-pcla-links');
+ sources.append(link('Official PicoCELA',card.official),link('Market history',card.marketUrl));
+ panel.append(sources);
+ const close=typeof card.quoteCloseUsd==='number'?'
+ if(!root||!card)return;root.replaceChildren();
+ root.classList.add('qcx-experience');root.append(node('p','qcx-eyebrow','INTERACTIVE CARD · '+String(card.category||card.kind||'Explore').toUpperCase()));
+ const id=card.id;
+ if(id==='x')mountIntegraXTour(root);
+ if(id==='x')mountIntegraAutomationGuide(root);
+ if(id==='chatgpt'){
+  // This card is a real-website launch surface, not a fake site search,
+  // local checklist or an imitation ChatGPT reply. The official viewer
+  // mounts beside these original shared actions in source-quick-cards.mjs.
+  root.append(node('p','qcx-note','Sign in and use the actual ChatGPT website with the official website controls below.'));
+  mountCardActions(root,card,{showSearch:false});
+  return;
+ }
+ if(mountMotorcycleQuickCard(root,card)){
+  mountCardActions(root,card,{showSearch:false});
+  return;
+ }
+ if(id==='google'||id==='bing'){
+  // Search remains the primary interaction; global controls come afterward.
+  searchTool(root,card);mountCardActions(root,card,{showSearch:false});return;
+ }
+ if(id==='fox-one'||id==='fox-one-live-news')mountFoxOneSpot(root,card);
+ if(id==='youtube'||id==='tiktok'){
+  // Playback is the first action; source discovery stays optional and secondary.
+  mediaPlayer(root,id);
+  const discover=node('details','qcx-discover-details');
+  discover.append(node('summary','','Find more '+(id==='tiktok'?'TikTok videos':'YouTube videos')));
+  if(searchTool(discover,card)){
+   if(id==='youtube')trendingTool(discover,card);
+   root.append(discover);
+  }
+  mountCardActions(root,card,{showSearch:false});
+  return;
+ }
+ if(id==='spotify')mediaPlayer(root,'spotify');
+ if(id==='starmaker'){
+  // Real on-card curated song search, explicitly consented Music Quant
+  // recommendations, and an optional local recorder. No duplicate Google
+  // site-search or assumed StarMaker account/API session.
+  mountStarMakerQuickCard(root);
+  const recording=node('details','qcx-recording-details');
+  recording.append(node('summary','','Record a local voice take'));
+  mountKaraokeLab(recording);root.append(recording);
+  mountCardActions(root,card,{showSearch:false});return;
+ }
+ if(id==='whatsapp')whatsappDraft(root);
+ if(id==='wikipedia')wikipediaTool(root,card);
+ if(id==='gold'||id==='silver')calculator(root,card);
+ checklist(root,card);
+ // Wikipedia already has a native API search; never add a second website reader.
+ const alreadyHasSearch=searchTool(root,card)||id==='wikipedia';
+ trendingTool(root,card);
+ // Preserve generic discovery only when there is no existing on-card provider search.
+ mountCardActions(root,card,{showSearch:!alreadyHasSearch&&!liveSourceProfile(id)});
+}
++card.quoteCloseUsd.toFixed(2):'unavailable';
+ note(panel,'PCLA historical close: '+close+' on '+card.quoteDate+'. This is NOT a live quote.');
+ note(panel,'Corporate action: '+card.splitRatio+' reverse stock split in January 2026. Per-share price alone does not prove shareholder gains. Compare split-adjusted returns and your actual shares. Not financial advice.');
+}
 export function mountCardTools(root,card){
  if(!root||!card)return;root.replaceChildren();
  root.classList.add('qcx-experience');root.append(node('p','qcx-eyebrow','INTERACTIVE CARD · '+String(card.category||card.kind||'Explore').toUpperCase()));
  const id=card.id;
+ if(id==='pcla-picocela'){
+  mountPclaResearch(root,card);mountCardActions(root,card,{showSearch:false});return;
+ }
  if(id==='x')mountIntegraXTour(root);
  if(id==='x')mountIntegraAutomationGuide(root);
  if(id==='chatgpt'){
