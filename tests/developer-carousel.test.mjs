@@ -8,7 +8,7 @@ const source = path => readFileSync(new URL('../' + path, import.meta.url), 'utf
 test('developer catalog includes each real builder exactly once', () => {
   assert.deepEqual(BUILDER_CARDS.map(c => c.id), [
     'mediaStarCreator', 'quickCardBuilderInline', 'government501Affiliates',
-    'infinityAffiliates', 'phiProjectActions'
+    'infinityAffiliates', 'phiProjectActions', 'ownerEngineerCard'
   ]);
   assert.equal(new Set(BUILDER_CARDS.map(c=>c.id)).size, BUILDER_CARDS.length);
   assert.ok(BUILDER_CARDS.every(c => c.label && c.description));
