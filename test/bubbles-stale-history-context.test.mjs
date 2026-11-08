@@ -48,7 +48,8 @@ test('explicit historical questions can retrieve old words without deleting orig
 
 test('indexed archive supplies dated context rather than undated owner commands',()=>{
  const source=readFileSync(new URL('../bubbles-memory.js',import.meta.url),'utf8');
- assert.match(source,/Archived \[/);
- assert.match(source,/Recent \[/);
+ assert.match(source,/dated\(e,old\?'Archived':'Relevant'\)/);
+ assert.match(source,/dated\(e,'Recent'\)/);
+ assert.match(source,/label\+' \['/);
  assert.match(source,/new Date\(e\.at\)/);
 });
