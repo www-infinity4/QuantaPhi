@@ -3,356 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-08T19:31:15.747890Z",
+  "checked_at": "2026-11-08T20:01:20.483479Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "atlético madrid - barcelona",
-      "approx_searches": "50000+",
-      "published_at": "2026-11-08T19:10:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/espana/nota/_/id/17481023/atletico-madrid-vs-barcelona-como-estan-las-apuestas",
-        "https://www.si.com/es-us/los-ultimos-10-enfrentamientos-entre-el-atletico-de-madrid-y-el-fc-barcelona",
-        "https://www.elmundo.es/deportes/futbol/primera-division/2026/11/07/6aecf93a21efa031248b4576.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRm1zAsbAiUp7cmvjzlm67H-5-YCw-uyDcsmM0zm5f6O5s6i_c8lvcdOUUgNwE",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/espana/nota/_/id/17481023/atletico-madrid-vs-barcelona-como-estan-las-apuestas",
-          "title": "Atlético Madrid vs Barcelona: ¿Cómo están las apuestas?",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRm1zAsbAiUp7cmvjzlm67H-5-YCw-uyDcsmM0zm5f6O5s6i_c8lvcdOUUgNwE"
-        },
-        {
-          "url": "https://www.si.com/es-us/los-ultimos-10-enfrentamientos-entre-el-atletico-de-madrid-y-el-fc-barcelona",
-          "title": "Los últimos 10 enfrentamientos entre el Atlético de Madrid y el FC Barcelona",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZvjCGjSM82orjtZbcNlmtCk_HjtmudwkBqr-TegHdeNInkoa2iZ1Qaw-40oE"
-        },
-        {
-          "url": "https://www.elmundo.es/deportes/futbol/primera-division/2026/11/07/6aecf93a21efa031248b4576.html",
-          "title": "136 días después, se cierra la herida Julián Álvarez en la víspera de jugar contra el Barça: \"No ha sido la declaración sino pequeños gestos\"",
-          "publisher": "El Mundo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy-_ZL_pmCk1QmpVvIe-2Pf63j2ZkJImDVIVjL5MC6H5C6ioXgmHVpFHGsTiY"
-        }
-      ]
-    },
-    {
-      "query": "vasco vs palmeiras",
+      "query": "blake corum",
       "approx_searches": "2000+",
-      "published_at": "2026-11-08T19:10:00Z",
+      "published_at": "2026-11-08T19:40:00Z",
       "related_news_urls": [
-        "https://ge.globo.com/rj/futebol/copa-do-brasil/jogo/08-11-2026/vasco-palmeiras.ghtml",
-        "https://www.sportingnews.com/br/futebol/noticias/globo-vasco-palmeiras-gp-brasil-atraso/55994bb76e47191b6ee43c9b",
-        "https://odia.ig.com.br/esporte/vasco/2026/11/7320436-vascainos-confiam-em-classificacao-mas-divergem-sobre-jogo-na-colina.html"
+        "https://www.espn.com/nfl/story/_/id/50403440/sources-colts-engaged-daniel-jones-trade-talks",
+        "https://www.nfl.com/news/trade-talk-latest-on-colts-qb-daniel-jones-chargers-lb-khalil-mack-ahead-of-deadline",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/daniel-jones-has-several-million-reasons-to-want-to-be-traded-to-a-contender"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLcuX0yr1ACd8nz3fSW00NyFX21AcOnj3NCVWY9ikCXbE6rMqFfjzrxpFXZc4",
-      "image_credit": "ge",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD9QS164El3VCEBhsL06eebAaIKRD-7mTn559TEHJ9gPOWM7H61FVnOaZDtY8",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://ge.globo.com/rj/futebol/copa-do-brasil/jogo/08-11-2026/vasco-palmeiras.ghtml",
-          "title": "Ao vivo: Vasco x Palmeiras | Semifinal | Copa do Brasil",
-          "publisher": "ge",
+          "url": "https://www.espn.com/nfl/story/_/id/50403440/sources-colts-engaged-daniel-jones-trade-talks",
+          "title": "Colts in Daniel Jones trade talks as multiple teams call about QB, sources say",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLcuX0yr1ACd8nz3fSW00NyFX21AcOnj3NCVWY9ikCXbE6rMqFfjzrxpFXZc4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD9QS164El3VCEBhsL06eebAaIKRD-7mTn559TEHJ9gPOWM7H61FVnOaZDtY8"
         },
         {
-          "url": "https://www.sportingnews.com/br/futebol/noticias/globo-vasco-palmeiras-gp-brasil-atraso/55994bb76e47191b6ee43c9b",
-          "title": "Globo vai passar Vasco x Palmeiras ou GP do Brasil se a corrida atrasar?",
-          "publisher": "www.sportingnews.com",
+          "url": "https://www.nfl.com/news/trade-talk-latest-on-colts-qb-daniel-jones-chargers-lb-khalil-mack-ahead-of-deadline",
+          "title": "Trade talk: Latest on Colts QB Daniel Jones, Chargers LB Khalil Mack ahead of deadline",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqBxkQxk1WscFYF3pqfYkgdto6rD0yC_e3F--7qNI02CapPPIe9yGywJpSVdQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThrkweIxX33ex0H2IdobI63-XGGfNtq0zOAMPJPWi1bInGGmUs_S4FKqmVIjs"
         },
         {
-          "url": "https://odia.ig.com.br/esporte/vasco/2026/11/7320436-vascainos-confiam-em-classificacao-mas-divergem-sobre-jogo-na-colina.html",
-          "title": "Vascaínos confiam em classificação, mas divergem sobre jogo na Colina",
-          "publisher": "O Dia",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTIrfd8Hnt-YpQAHz1AvB2TXFesiI-WgURdmxuVVN_K8Em7yE6JUQ6QjvxWSc"
-        }
-      ]
-    },
-    {
-      "query": "philadelphia",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T19:10:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/08/us/philadelphia-boycott-ride-jewish-businesses",
-        "https://www.usatoday.com/videos/news/2026/11/08/philadelphia-biker-protest-targets-jewish-owned-businesses-over-israel-support/92679621007/",
-        "https://www.nbcphiladelphia.com/news/local/new-billboards-urge-people-boycott-jewish-owned-businesses-jew-belong-philadelphia/4493543/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDpPjnLosFEYeYVahFAykvweKQ4CTbCWfXYVIkCeCoz4fbp5Zf98pTczTNif4",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/08/us/philadelphia-boycott-ride-jewish-businesses",
-          "title": "Bicycle ‘boycott ride’ targeting Jewish-owned businesses in Philadelphia draws hundreds of counterprotesters",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDpPjnLosFEYeYVahFAykvweKQ4CTbCWfXYVIkCeCoz4fbp5Zf98pTczTNif4"
-        },
-        {
-          "url": "https://www.usatoday.com/videos/news/2026/11/08/philadelphia-biker-protest-targets-jewish-owned-businesses-over-israel-support/92679621007/",
-          "title": "Philadelphia biker protest targets Jewish-owned businesses over Israel support",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVJOyfVblKjbbujQE9ulGXXrS1rFDErG_tyLIKDID7h0zTsXNu9S-quzwVjpQ"
-        },
-        {
-          "url": "https://www.nbcphiladelphia.com/news/local/new-billboards-urge-people-boycott-jewish-owned-businesses-jew-belong-philadelphia/4493543/",
-          "title": "New billboards urge people to ‘boycott the boycott' of Jewish-owned businesses",
-          "publisher": "NBC10 Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7gGw-9OCWJgFMJBB-fK5RTElbGteNutfDiPQI-8gtoD5De2TZfYjyOX6PjX0"
-        }
-      ]
-    },
-    {
-      "query": "dylan sampson",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T19:10:00Z",
-      "related_news_urls": [
-        "https://www.si.com/onsi/fantasy/start-em-sit-em/fantasy-football-week-9-bold-predictions-dylan-sampson-marvin-harrison",
-        "https://www.brownsnation.com/browns-backfield-usage-took-a-surprising-turn-in-pittsburgh/",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/sampson-has-six-catches-in-loss-to-steelers"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4nWIY6MD2pb0KSh_I-UR3QseO4pPcTeKV_mcPkL1nikEiYqmmE1xcGQ9nFkw",
-      "image_credit": "Sports Illustrated",
-      "news": [
-        {
-          "url": "https://www.si.com/onsi/fantasy/start-em-sit-em/fantasy-football-week-9-bold-predictions-dylan-sampson-marvin-harrison",
-          "title": "Fantasy Football Week 9 Bold Predictions: Big Games Due for Dylan Sampson, Marvin Harrison Jr.",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4nWIY6MD2pb0KSh_I-UR3QseO4pPcTeKV_mcPkL1nikEiYqmmE1xcGQ9nFkw"
-        },
-        {
-          "url": "https://www.brownsnation.com/browns-backfield-usage-took-a-surprising-turn-in-pittsburgh/",
-          "title": "Browns’ Backfield Usage Took A Surprising Turn In Pittsburgh",
-          "publisher": "Browns Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG55MuBkB3iqOP_G2Mln-wMsgzPEASMZ5cDwAYlorIypZlzoV8D8zl3AWDf0Y"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/sampson-has-six-catches-in-loss-to-steelers",
-          "title": "Sampson has six catches in loss to Steelers",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/daniel-jones-has-several-million-reasons-to-want-to-be-traded-to-a-contender",
+          "title": "Daniel Jones has several million reasons to want to be traded to a contender",
           "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTL5315d_uI0iuHYOX0jREYaPH3dW5YGmYkZCOJI0-UNU_tBwhE1cQZovs_TvA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTItJD1zeKHBPec1_K5oTS6olVaW90CCVCmrHk-4g1noxU3RmDvZnxxx6CApSw"
         }
       ]
     },
     {
-      "query": "manny pacquiao next fight news",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T19:10:00Z",
+      "query": "golden knights vs sabres",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T19:40:00Z",
       "related_news_urls": [
-        "https://boxingnewsonline.net/news/pacquiao-linked-to-fight-with-brit/",
-        "https://www.boxingscene.com/articles/conor-benn-reveals-manny-pacquiao-offer-fight-targeted-for-2027",
-        "https://www.boxingnews24.com/2026/11/conor-benn-says-pacquiao-fight-offered-for-december/"
+        "https://www.nhl.com/sabres/news/how-to-watch-buffalo-sabres-vegas-golden-knights-lineup-x5154",
+        "https://www.audacy.com/wgr550/sports/sabres/sabres-get-back-to-their-game-as-the-prepare-for-vegas",
+        "https://www.nytimes.com/athletic/7763600/2026/11/08/golden-knights-vs-sabres-stream-how-to-watch-nov-8/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBkigdJt65yP-EYmLJjnGCp8mXD2PdKx1V-KVZIUN2pUqlwwm0Mr5en0r9mV4",
-      "image_credit": "Boxing News Online",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQt_WvsgkLAzB4QNAZn2hlQpX1jriXx_SX1kJJ9WFdGBhU229UoArdDdih3fvg",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://boxingnewsonline.net/news/pacquiao-linked-to-fight-with-brit/",
-          "title": "New opponent for Manny Pacquiao’s next pro fight emerges: “It was offered to me”",
-          "publisher": "Boxing News Online",
+          "url": "https://www.nhl.com/sabres/news/how-to-watch-buffalo-sabres-vegas-golden-knights-lineup-x5154",
+          "title": "Sabres vs. Golden Knights | How to watch, lineup notes, and storylines",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBkigdJt65yP-EYmLJjnGCp8mXD2PdKx1V-KVZIUN2pUqlwwm0Mr5en0r9mV4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQt_WvsgkLAzB4QNAZn2hlQpX1jriXx_SX1kJJ9WFdGBhU229UoArdDdih3fvg"
         },
         {
-          "url": "https://www.boxingscene.com/articles/conor-benn-reveals-manny-pacquiao-offer-fight-targeted-for-2027",
-          "title": "Conor Benn reveals Manny Pacquiao offer, fight targeted for 2027",
-          "publisher": "BoxingScene",
+          "url": "https://www.audacy.com/wgr550/sports/sabres/sabres-get-back-to-their-game-as-the-prepare-for-vegas",
+          "title": "Sabres get back to their game as the prepare for Vegas",
+          "publisher": "Audacy",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPUNbGrVALiiRF3h7Udaxq-7q42zgTeLtfzd3kXnTM_kWI82PB0voygzsC0yI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVE7_KJoWeE1tcDjbZNjmAsGSMyL7o3IEb3VWMdRXXTn2H5J6Fy4CRbxmZeqA"
         },
         {
-          "url": "https://www.boxingnews24.com/2026/11/conor-benn-says-pacquiao-fight-offered-for-december/",
-          "title": "Conor Benn Says Pacquiao Fight Offered For December",
-          "publisher": "Boxing News 24",
+          "url": "https://www.nytimes.com/athletic/7763600/2026/11/08/golden-knights-vs-sabres-stream-how-to-watch-nov-8/",
+          "title": "How to watch Golden Knights vs. Sabres: TV channel and streaming options for November 8",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaE4JpPUMjesrHnvArCozskOqynNYDo1yTMskIKrAxrp28aTdrFAIp21RuJJk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgd6dn1tAdBM3NmNYvukEXmbfKxnHx1I52EhUsUoRH7kS966MBmBWlVx1rK-0"
         }
       ]
     },
     {
-      "query": "iowa vs uconn",
+      "query": "ceedee lamb",
       "approx_searches": "2000+",
-      "published_at": "2026-11-08T19:00:00Z",
+      "published_at": "2026-11-08T19:40:00Z",
       "related_news_urls": [
-        "https://www.ctinsider.com/sports/uconn-womens-basketball/article/how-to-watch-uconn-vs-iowa-time-tv-lineups-22506018.php",
-        "https://www.hawkcentral.com/story/sports/college/iowa/basketball-women/2026/11/07/iowa-womens-basketball-uconn-storrs-hawkeyes-mckenna-woliczko/92628360007/",
-        "https://247sports.com/college/iowa/article/there-keys-and-a-pick-iowa-gets-first-big-test-against-no-2-uconn-292290547/"
+        "https://sports.yahoo.com/articles/ceedee-lamb-vs-colts-week-104000435.html",
+        "https://www.dallascowboys.com/news/zero-to-100-ceedee-leads-the-nfl-in-this-stat",
+        "https://www.dunkelindex.com/news/ceedee-lamb-nfl-player-prop-predictions-lines-and-trends-2026-week-9"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkfGoks1BGpfJD8OrRcHZ7UXYeg-X-2lfbqgkCPcq6pish_xQWc6spriRLrCo",
-      "image_credit": "CT Insider",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTE1tVGgMCf7w9mKTbBOJC3XT2JFTjHy4Fo1ehUKHFudyfDfHjFlKL5Q1hPFk8",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.ctinsider.com/sports/uconn-womens-basketball/article/how-to-watch-uconn-vs-iowa-time-tv-lineups-22506018.php",
-          "title": "How to watch No. 2 UConn women's basketball vs. No. 10 Iowa",
-          "publisher": "CT Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkfGoks1BGpfJD8OrRcHZ7UXYeg-X-2lfbqgkCPcq6pish_xQWc6spriRLrCo"
-        },
-        {
-          "url": "https://www.hawkcentral.com/story/sports/college/iowa/basketball-women/2026/11/07/iowa-womens-basketball-uconn-storrs-hawkeyes-mckenna-woliczko/92628360007/",
-          "title": "No. 10 Iowa women's basketball ready for first big test: at No. 2 UConn",
-          "publisher": "Hawk Central",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNCr_sWfu0tDWEeXKthiPha0UvJptRm9KFO-4aMXNaL2XQs4XzOhuehC96ZTQ"
-        },
-        {
-          "url": "https://247sports.com/college/iowa/article/there-keys-and-a-pick-iowa-gets-first-big-test-against-no-2-uconn-292290547/",
-          "title": "Three Keys And A Pick: Iowa Gets First Big Test Against No. 2 UConn",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ73b1YjF-zoHD3CwX9cZ_a20kUJ3l6dyBmw6txs7TVJnqt2kX02u41GHDmsXw"
-        }
-      ]
-    },
-    {
-      "query": "fiorentina - juventus",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T19:00:00Z",
-      "related_news_urls": [
-        "https://www.gazzetta.it/Calcio/Serie-A/Juventus/08-11-2026/fiorentina-juve-live-risultato-e-gol-in-diretta-serie-a.shtml",
-        "https://www.tuttosport.com/foto/calcio/serie-a/juventus/2026/11/08-152417645/formazioni_ufficiali_fiorentina-juve_la_mossa_di_spalletti_per_l_attacco",
-        "https://www.juventus.com/it/news/articoli/serie-a-fiorentina-juventus-le-formazioni-ufficiali"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqGmY22lwizi5vVmNwQZePB0KmzrNXcT_IXUcuxfx3S-EkUfRMtiFDUgNNrOQ",
-      "image_credit": "La Gazzetta dello Sport",
-      "news": [
-        {
-          "url": "https://www.gazzetta.it/Calcio/Serie-A/Juventus/08-11-2026/fiorentina-juve-live-risultato-e-gol-in-diretta-serie-a.shtml",
-          "title": "LIVE Alle 20.45 Fiorentina-Juve, le ufficiali: Vanoli con Pedro Gonçalves, Spalletti sceglie Boga",
-          "publisher": "La Gazzetta dello Sport",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqGmY22lwizi5vVmNwQZePB0KmzrNXcT_IXUcuxfx3S-EkUfRMtiFDUgNNrOQ"
-        },
-        {
-          "url": "https://www.tuttosport.com/foto/calcio/serie-a/juventus/2026/11/08-152417645/formazioni_ufficiali_fiorentina-juve_la_mossa_di_spalletti_per_l_attacco",
-          "title": "Formazioni ufficiali Fiorentina-Juve: la mossa di Spalletti per l'attacco",
-          "publisher": "Tuttosport",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwtj1osZ7Igna9ci_vAubqcGIi3tdrP-hrW4_JE_TKbJCUoXnZX15YlO39fb4"
-        },
-        {
-          "url": "https://www.juventus.com/it/news/articoli/serie-a-fiorentina-juventus-le-formazioni-ufficiali",
-          "title": "Serie A | Fiorentina-Juventus | Le formazioni ufficiali",
-          "publisher": "Juventus.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuc5yxTTCoIIz4FNnPyEcSPHQ631PmG6eNVDV9NkNZ2ZZXvdCUuhGcg6k-g2A"
-        }
-      ]
-    },
-    {
-      "query": "jake ferguson",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T19:00:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/fantasy/football/news/cowboys-jake-ferguson-active-in-week-9/",
-        "https://www.complex.com/bets/a/matt-burke/jake-ferguson-fantasy-football-injury-update",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-06/jake-ferguson-ankle-questionable-vs-colts"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRgtyhxGxEG7i2Okxt9MXO4tXkT6SYFeNJ2RsRVSTb2-axRU5x1XlHHfRx6NM",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/cowboys-jake-ferguson-active-in-week-9/",
-          "title": "Cowboys' Jake Ferguson: Active in Week 9",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRgtyhxGxEG7i2Okxt9MXO4tXkT6SYFeNJ2RsRVSTb2-axRU5x1XlHHfRx6NM"
-        },
-        {
-          "url": "https://www.complex.com/bets/a/matt-burke/jake-ferguson-fantasy-football-injury-update",
-          "title": "Jake Ferguson Fantasy Football Injury Update: Is Cowboys TE Playing This Week?",
-          "publisher": "Complex",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxvhrmeBKvWKNdLAF_9WVZQiQKC84zTW4dijJEA_TS_OVHS8_ZvawvDvVyjGU"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-06/jake-ferguson-ankle-questionable-vs-colts",
-          "title": "Jake Ferguson (ankle) questionable vs. Colts",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhz6KBMcLl6vXXBzpub-f5-h1aEmCIBDaBNiFQiEBEjO6r6EFmso58wZb_nsg"
-        }
-      ]
-    },
-    {
-      "query": "riley moss",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T19:00:00Z",
-      "related_news_urls": [
-        "https://heavy.com/sports/nfl/carolina-panthers/riley-moss-injury-update-broncos-cb/",
-        "https://sports.yahoo.com/articles/broncos-trade-cb-riley-moss-133030636.html",
-        "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/11/05/nfl-trade-deadline-should-broncos-move-riley-moss/92612118007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQaXAFEcR-aQtqpzPdwhkXhaPSSTivGHm5S5b3YJuQxn1mhmt7ARoJkdTQyhs",
-      "image_credit": "Heavy.com",
-      "news": [
-        {
-          "url": "https://heavy.com/sports/nfl/carolina-panthers/riley-moss-injury-update-broncos-cb/",
-          "title": "Riley Moss Injury Update: Broncos CB Has Scary Moment vs. Panthers",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQaXAFEcR-aQtqpzPdwhkXhaPSSTivGHm5S5b3YJuQxn1mhmt7ARoJkdTQyhs"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/broncos-trade-cb-riley-moss-133030636.html",
-          "title": "Should the Broncos trade CB Riley Moss before NFL's deadline?",
+          "url": "https://sports.yahoo.com/articles/ceedee-lamb-vs-colts-week-104000435.html",
+          "title": "CeeDee Lamb vs. Colts Week 9: 3 Expectations for Cowboys WR With George Pickens Questionable",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaIrPiwRuREszj9JJWqVL_KFBneREYF9OIhb3NS0Eh4bYHfpF4kGfsES4kn_I"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTE1tVGgMCf7w9mKTbBOJC3XT2JFTjHy4Fo1ehUKHFudyfDfHjFlKL5Q1hPFk8"
         },
         {
-          "url": "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/11/05/nfl-trade-deadline-should-broncos-move-riley-moss/92612118007/",
-          "title": "Should the Broncos trade CB Riley Moss before NFL's deadline?",
-          "publisher": "Broncos Wire",
+          "url": "https://www.dallascowboys.com/news/zero-to-100-ceedee-leads-the-nfl-in-this-stat",
+          "title": "Zero to 100: CeeDee leads the NFL in this stat",
+          "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS--QGtRM5PmaCo6Dgb2K_VyB0rzSR-wA_00wkuUG90QINRGs8rOlDCT2frU14"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRI2qMKtZtV69A66DVK56oSKxLY3e0P5tWVdW1qbdO_yqOeaB2yjTTtwSMzEHI"
+        },
+        {
+          "url": "https://www.dunkelindex.com/news/ceedee-lamb-nfl-player-prop-predictions-lines-and-trends-2026-week-9",
+          "title": "CeeDee Lamb vs. Colts - NFL - Player Props, Lines and Trends",
+          "publisher": "The Dunkel Index",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEDfcVCp9EJzkBphdCynS9zM65PNzMCKfQUvFyR9hXnJNmj_bA_CnNyzeUPT4"
         }
       ]
     },
     {
-      "query": "quinshon judkins",
+      "query": "cupertino show",
       "approx_searches": "500+",
-      "published_at": "2026-11-08T19:00:00Z",
+      "published_at": "2026-11-08T19:40:00Z",
       "related_news_urls": [
-        "https://www.cleveland.com/browns/2026/11/come-on-browns-cut-out-the-dumb-penalties-terry-pluto.html",
-        "https://www.firstcoastnews.com/video/sports/locked-on/lo-cleveland/locked-on-browns-hit/the-browns-lead-the-league-in-2-major-categories-and-theyre-both-bad-one-fix-is-complicated-one-is-easy/535-4336bb6f-1b91-448a-be66-102572630a57",
-        "https://athlonsports.com/nfl/trending/nfl-makes-punishment-announcement-after-quinshon-judkins-incident"
+        "https://www.cbsnews.com/newyork/video/cbs-drama-cupertino-part-of-n-j-s-booming-show-business-industry/",
+        "https://www.usatoday.com/story/news/state/pennsylvania/pittsburgh/2026/11/05/watch-stream-new-cbs-legal-drama-cupertino-carnegie-mellon-graduates/92582474007/",
+        "https://www.cbsnews.com/newyork/news/cbs-cupertino-new-jersey-mike-colter-rachel-keller/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfEw358D-yAn6LF_LfGfXRvAkKw8NUG__8frNksq5vEt-54evrNe26mNVtovo",
-      "image_credit": "Cleveland.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRnTbJrVqRJEX7au8_K-A_4xCRgy4Q7_xiwzWrOHR52Nsty2m1_p6S-lfBgQs",
+      "image_credit": "CBS News",
       "news": [
         {
-          "url": "https://www.cleveland.com/browns/2026/11/come-on-browns-cut-out-the-dumb-penalties-terry-pluto.html",
-          "title": "Come on Browns, cut out the dumb penalties — Terry Pluto",
-          "publisher": "Cleveland.com",
+          "url": "https://www.cbsnews.com/newyork/video/cbs-drama-cupertino-part-of-n-j-s-booming-show-business-industry/",
+          "title": "CBS drama \"Cupertino\" part of N.J.'s booming show business industry",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfEw358D-yAn6LF_LfGfXRvAkKw8NUG__8frNksq5vEt-54evrNe26mNVtovo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRnTbJrVqRJEX7au8_K-A_4xCRgy4Q7_xiwzWrOHR52Nsty2m1_p6S-lfBgQs"
         },
         {
-          "url": "https://www.firstcoastnews.com/video/sports/locked-on/lo-cleveland/locked-on-browns-hit/the-browns-lead-the-league-in-2-major-categories-and-theyre-both-bad-one-fix-is-complicated-one-is-easy/535-4336bb6f-1b91-448a-be66-102572630a57",
-          "title": "The Browns lead the league in 2 major categories, and they're both bad. One fix is complicated, one is easy",
-          "publisher": "firstcoastnews.com",
+          "url": "https://www.usatoday.com/story/news/state/pennsylvania/pittsburgh/2026/11/05/watch-stream-new-cbs-legal-drama-cupertino-carnegie-mellon-graduates/92582474007/",
+          "title": "Carnegie Mellon alums star in new CBS legal drama 'Cupertino'",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStSSe8nF9VugJxlE7IZ0mMBQ01KIqEkauHdg_6vo9S3p5ducgHOCXxYbQhF5M"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwrNsUBaq76VelDudxvdAD3Ux4x4ojjBWYuvtLwXswKE0O3lrCd9HFZXY3KWA"
         },
         {
-          "url": "https://athlonsports.com/nfl/trending/nfl-makes-punishment-announcement-after-quinshon-judkins-incident",
-          "title": "NFL Makes Punishment Announcement After Quinshon Judkins Incident",
-          "publisher": "Athlon Sports",
+          "url": "https://www.cbsnews.com/newyork/news/cbs-cupertino-new-jersey-mike-colter-rachel-keller/",
+          "title": "New CBS legal drama \"Cupertino\" is part of New Jersey's booming show business industry",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaNbc2lqKddh6OZxlKnYu-Bj_imRUTs1WaYfStvLIvheAgsXxyXPDrzMMPzWw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeV-T901YUb__kTS-HbRo6vtNuQQXjUM8qUv0UostjQbvwQ7rmXakXKJNnOPE"
+        }
+      ]
+    },
+    {
+      "query": "76ers vs bulls",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-08T19:30:00Z",
+      "related_news_urls": [
+        "https://www.libertyballers.com/76ers-game-previews/101283/sixers-bulls-philadelphia-chicago-nba-preview-joel-embiid-nic-claxton-nick-nurse-lebron-james",
+        "https://sports.yahoo.com/articles/76ers-perfect-opportunity-waiting-chicago-180034308.html",
+        "https://www.delawareonline.com/story/sports/nba/76ers/2026/11/08/what-channel-are-sixers-on-today-what-time-is-sixers-game-today-will-lebron-james-play-chicago-bulls/92677382007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNXvHD-JMD-7nfcDtGRjvu5JZfaRA833fixg9iFzlTUot5w8usH1DxUSFmrIk",
+      "image_credit": "Liberty Ballers",
+      "news": [
+        {
+          "url": "https://www.libertyballers.com/76ers-game-previews/101283/sixers-bulls-philadelphia-chicago-nba-preview-joel-embiid-nic-claxton-nick-nurse-lebron-james",
+          "title": "Sixers visit Bulls for second meeting in Sunday matinee",
+          "publisher": "Liberty Ballers",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNXvHD-JMD-7nfcDtGRjvu5JZfaRA833fixg9iFzlTUot5w8usH1DxUSFmrIk"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/76ers-perfect-opportunity-waiting-chicago-180034308.html",
+          "title": "76ers Have Perfect Get-Right Opportunity Waiting in Chicago",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-9Ez4zaHIzai8fb5R_O6f1LLyiOLB6Z4NUWjIbbd0sF5XVYa1Fg7horUYPtI"
+        },
+        {
+          "url": "https://www.delawareonline.com/story/sports/nba/76ers/2026/11/08/what-channel-are-sixers-on-today-what-time-is-sixers-game-today-will-lebron-james-play-chicago-bulls/92677382007/",
+          "title": "What channel are Sixers on today? What time is Sixers vs. Chicago Bulls",
+          "publisher": "Delawareonline.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoK05HG3Vp7bqy8kfmODfIneOIL0kva0b7Qc_qMl2kHuh21aHCeZEgH48WyEM"
+        }
+      ]
+    },
+    {
+      "query": "harrison butker",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-08T19:30:00Z",
+      "related_news_urls": [
+        "https://www.nfl.com/videos/butker-s-missed-51-yard-field-goal-is-followed-by-boos-from-fans-in-kansas-city",
+        "https://www.kansascity.com/sports/nfl/kansas-city-chiefs/article317947466.html",
+        "https://timesofindia.indiatimes.com/sports/nfl/news/he-needs-to-be-fired-chiefs-head-coach-andy-reid-backs-harrison-butker-sparking-major-outrage-ahead-of-clash-against-the-new-york-jets/articleshow/135564416.cms"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSZ6emy_0WK6e6aw7-0I4dFdt-OA275LQAzY1w44ZAkcYxRnzREjs4obcy9Kc",
+      "image_credit": "NFL.com",
+      "news": [
+        {
+          "url": "https://www.nfl.com/videos/butker-s-missed-51-yard-field-goal-is-followed-by-boos-from-fans-in-kansas-city",
+          "title": "Kicker Harrison Butker's missed 51-yard field goal is followed by boos from fans in Kansas City",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSZ6emy_0WK6e6aw7-0I4dFdt-OA275LQAzY1w44ZAkcYxRnzREjs4obcy9Kc"
+        },
+        {
+          "url": "https://www.kansascity.com/sports/nfl/kansas-city-chiefs/article317947466.html",
+          "title": "Why the Chiefs are sticking with Harrison Butker vs. Jets as Justin Tucker looms",
+          "publisher": "Kansas City Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOfReue0blc3F67ezkJEyYLaocLeW9sDkzr1_tIq1a9TPv3yJPqZ8IPJiP_sw"
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/sports/nfl/news/he-needs-to-be-fired-chiefs-head-coach-andy-reid-backs-harrison-butker-sparking-major-outrage-ahead-of-clash-against-the-new-york-jets/articleshow/135564416.cms",
+          "title": "“He needs to be fired”: Chiefs head coach Andy Reid backs Harrison Butker sparking major outrage ahead of",
+          "publisher": "The Times of India",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8wuwT2pX4vMS8pH_quWRyfVYnX2W8yp6znEvacePMEDtyClZGT5oWY1hksNg"
+        }
+      ]
+    },
+    {
+      "query": "ap poll rankings",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-08T19:30:00Z",
+      "related_news_urls": [
+        "https://www.on3.com/teams/kentucky-wildcats/news/kentucky-falls-out-of-top-10-in-latest-ap-poll-rankings-after-loss-to-tennessee/",
+        "https://www.aseaofblue.com/kentucky-wildcats-football/187129/college-football-rankings-roundup-top-25-polls",
+        "https://sports.yahoo.com/articles/far-did-kentucky-fall-us-181631976.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpO9lZJw6AjET3tRY0ZVHsOVAm_9FVPRBLpzihCskRXMT0PUg1ajJNVF62UIw",
+      "image_credit": "On3",
+      "news": [
+        {
+          "url": "https://www.on3.com/teams/kentucky-wildcats/news/kentucky-falls-out-of-top-10-in-latest-ap-poll-rankings-after-loss-to-tennessee/",
+          "title": "Kentucky falls out of top 10 in latest AP Poll rankings after loss to Tennessee",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpO9lZJw6AjET3tRY0ZVHsOVAm_9FVPRBLpzihCskRXMT0PUg1ajJNVF62UIw"
+        },
+        {
+          "url": "https://www.aseaofblue.com/kentucky-wildcats-football/187129/college-football-rankings-roundup-top-25-polls",
+          "title": "Kentucky Wildcats in the College Football rankings and Sunday News",
+          "publisher": "A Sea Of Blue",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQU8yg8vldROO23MjBbuvUFbT-1wB7t00-l4V4Y-flY6TnHCJkflB8hVur-3x0"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/far-did-kentucky-fall-us-181631976.html",
+          "title": "How far did Kentucky fall in US LBM Coaches Poll?",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVm3r9Uyqm3RsZRCqHBwr9y_2jKp74T2VnGRmP7fxGyYIUjLyAU_HITCPML2s"
+        }
+      ]
+    },
+    {
+      "query": "john riggins",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T19:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/washington-commanders-set-retire-john-054542585.html",
+        "https://www.commanders.com/news/i-m-the-guy-how-riggins-unlocked-next-level-in-1982-playoffs"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrNP3cOHKTwabe6_aBTomijY9DFgPcLO-j-inad5UW0vfO0WUb_EJmqGlGNpw",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/washington-commanders-set-retire-john-054542585.html",
+          "title": "Washington Commanders Set to Retire John Riggins' Iconic No. 44",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrNP3cOHKTwabe6_aBTomijY9DFgPcLO-j-inad5UW0vfO0WUb_EJmqGlGNpw"
+        },
+        {
+          "url": "https://www.commanders.com/news/i-m-the-guy-how-riggins-unlocked-next-level-in-1982-playoffs",
+          "title": "‘I’m the guy’: How Riggins unlocked next level in 1982 playoffs",
+          "publisher": "Washington Commanders",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS45mqnqK_VulGAJdNp9bM3ik6VionSPfaM95fj-SMLrkPcZJ4LhX16dnUxaXA"
+        }
+      ]
+    },
+    {
+      "query": "mahomes injury",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-08T19:20:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/patrick-mahomes-hurts-elbow-but-returns-before-halftime-chiefs-lead-14-12",
+        "https://www.usatoday.com/story/sports/nfl/chiefs/2026/11/08/patrick-mahomes-injury-update-chiefs-superstar-hurts-arm-vs-jets/92679938007/",
+        "https://www.kmbc.com/article/patrick-mahomes-injury-chiefs-jets-throwing-arm/74369010"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTnrciF4KQFg04tBOyIG3IHATmResIZbU7gedecbAA7Ch1Bz0JRedldbvmdK4",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/patrick-mahomes-hurts-elbow-but-returns-before-halftime-chiefs-lead-14-12",
+          "title": "Patrick Mahomes hurts elbow, but returns before halftime; Chiefs lead 14-12",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTnrciF4KQFg04tBOyIG3IHATmResIZbU7gedecbAA7Ch1Bz0JRedldbvmdK4"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/nfl/chiefs/2026/11/08/patrick-mahomes-injury-update-chiefs-superstar-hurts-arm-vs-jets/92679938007/",
+          "title": "Patrick Mahomes injury update as Chiefs QB leaves game: Live updates",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6hQKXzeaHe8oagEmQFCcVQrBx4nXZusFnVJUl4-Y9-jbZp_tTacy2iC9E4a4"
+        },
+        {
+          "url": "https://www.kmbc.com/article/patrick-mahomes-injury-chiefs-jets-throwing-arm/74369010",
+          "title": "Patrick Mahomes injures right arm, returns to Chiefs game against Jets",
+          "publisher": "KMBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEyV_EXofZuzT_YRL37zxHtcSjM_3GYdJGu4L38lpbR6iCMSEpnYXdwn50tKQ"
+        }
+      ]
+    },
+    {
+      "query": "portland thorns vs washington spirit",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T19:20:00Z",
+      "related_news_urls": [
+        "https://washingtonspirit.com/blog/2026/11/06/know-before-you-go-washington-spirit-vs-portland-thorns-fc-quarterfinals/",
+        "https://sports.yahoo.com/articles/washington-spirit-vs-portland-thorns-182941151.html",
+        "https://wjla.com/good-morning-washington/spirit-ceo-kim-stone-previews-sundays-playoff-fan-experience"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRZNpRrpbbXmj3pmT-plyDp5JhQZrCZYNq3bgaHPHsvSynkXSRLFMFKDQgMec",
+      "image_credit": "Washington Spirit",
+      "news": [
+        {
+          "url": "https://washingtonspirit.com/blog/2026/11/06/know-before-you-go-washington-spirit-vs-portland-thorns-fc-quarterfinals/",
+          "title": "KNOW BEFORE YOU GO: Washington Spirit vs Portland Thorns FC - 2026 NWSL Playoffs Quarterfinal",
+          "publisher": "Washington Spirit",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRZNpRrpbbXmj3pmT-plyDp5JhQZrCZYNq3bgaHPHsvSynkXSRLFMFKDQgMec"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/washington-spirit-vs-portland-thorns-182941151.html",
+          "title": "Washington Spirit vs. Portland Thorns live updates: NWSL playoffs score, highlights",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROCQv2Mksq8ywXcvNHt_bXyPWIKXGROt-asFKOvKTJTl_54EMfcxlatGM7Syk"
+        },
+        {
+          "url": "https://wjla.com/good-morning-washington/spirit-ceo-kim-stone-previews-sundays-playoff-fan-experience",
+          "title": "CEO Kim Stone previews playoff fan experience as Spirit gear up to host Thorns Sunday",
+          "publisher": "WJLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRX7rT0K5T99qO94zXIhHTlpaKDkLnPjBxBGwlGoR1o4t_wzSR6kW0r3AWzSWo"
         }
       ]
     }
