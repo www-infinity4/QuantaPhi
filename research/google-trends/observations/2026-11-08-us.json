@@ -3,16 +3,296 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-08T15:30:46.114179Z",
+  "checked_at": "2026-11-08T16:01:22.477559Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "real sociedad",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T15:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/c84g1kez3we1t",
+        "https://www.marca.com/en/soccer/laliga-ea-sports/real-sociedad-rayo/2026/11/08/01_0101_20261108_188_184-live.html",
+        "https://sports.yahoo.com/articles/set-anoeta-real-sociedad-rayo-141900449.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/c84g1kez3we1t",
+          "title": "Real Sociedad vs Rayo Vallecano: Spanish La Liga stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
+        },
+        {
+          "url": "https://www.marca.com/en/soccer/laliga-ea-sports/real-sociedad-rayo/2026/11/08/01_0101_20261108_188_184-live.html",
+          "title": "Real Sociedad - Rayo LIVE. LALIGA EA Sports latest updates",
+          "publisher": "MARCA",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-7e4ONuwuLeScbPSkzdc-iXh8UQJKEuJxMQaEX3FlNpisH2eg77JE0_rrQBI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/set-anoeta-real-sociedad-rayo-141900449.html",
+          "title": "🚨 All set at Anoeta: Real Sociedad-Rayo Vallecano line-ups confirmed",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOEQUSQmfRb9-VPb91MYK4_tyV2_pjbgA1aHvlNrc7HzSQvHOwan3BOMKUF5I"
+        }
+      ]
+    },
+    {
+      "query": "brest vs ol",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T15:40:00Z",
+      "related_news_urls": [
+        "https://www.olympique-et-lyonnais.com/brest-sattend-a-un-ol-dans-la-continuite-malgre-le-depart-de-paulo-fonseca,412353.html",
+        "https://www.ici.fr/bretagne/finistere-29/brest/direct-ligue-1-vivez-le-match-du-stade-brestois-face-a-lyon-en-direct-avec-ici-breizh-izel-9395954",
+        "https://www.football365.fr/brest-lyon-streaming-chaine-tv-et-compos-3-10325566.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRk6ZmbIdRv_qZpr9Lk6Ss_mmOSj3CwwIqIBCxf1AX4oOpQpcz1OcGHh25dDl0",
+      "image_credit": "Olympique & Lyonnais",
+      "news": [
+        {
+          "url": "https://www.olympique-et-lyonnais.com/brest-sattend-a-un-ol-dans-la-continuite-malgre-le-depart-de-paulo-fonseca,412353.html",
+          "title": "Brest s’attend à un OL dans la continuité malgré le départ de Paulo Fonseca",
+          "publisher": "Olympique & Lyonnais",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRk6ZmbIdRv_qZpr9Lk6Ss_mmOSj3CwwIqIBCxf1AX4oOpQpcz1OcGHh25dDl0"
+        },
+        {
+          "url": "https://www.ici.fr/bretagne/finistere-29/brest/direct-ligue-1-vivez-le-match-du-stade-brestois-face-a-lyon-en-direct-avec-ici-breizh-izel-9395954",
+          "title": "DIRECT - Ligue 1 : vivez le match du Stade Brestois face à Lyon en direct avec Ici Breizh Izel",
+          "publisher": "ici.fr",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlrohux89FXR4JB89U6_RDYE3Ye8loMC0i5RTHju3hWdM3GCflicicONqTxsc"
+        },
+        {
+          "url": "https://www.football365.fr/brest-lyon-streaming-chaine-tv-et-compos-3-10325566.html",
+          "title": "Brest-Lyon : streaming, chaîne TV et compos",
+          "publisher": "Football365",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAYdDU3AM815WC8riSUXK4tS_5xIN2Rbh_hirn1gFkCgL0fKTg4xyTs5wB6ow"
+        }
+      ]
+    },
+    {
+      "query": "motogp",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T15:40:00Z",
+      "related_news_urls": [
+        "https://www.motogp.com/en/news/2026/11/07/match-point-sunday-marquez-wins-dramatic-qatar-sprint-martin-heroic-for-p3-bezzecchi-crashes/1184253",
+        "https://www.motorsport.com/motogp/news/marc-marquez-and-marco-bezzecchi-disagree-on-qatar-motogp-sprint-clash/10872685/",
+        "https://sports.yahoo.com/articles/valentino-rossis-rider-confronts-marc-114100569.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_3i2Ipsc4ZiH2MEmUO7l0IivUD5pymdMmiGr_T_SzMLEwyYU-Pwkhoi-3HY4",
+      "image_credit": "motogp.com",
+      "news": [
+        {
+          "url": "https://www.motogp.com/en/news/2026/11/07/match-point-sunday-marquez-wins-dramatic-qatar-sprint-martin-heroic-for-p3-bezzecchi-crashes/1184253",
+          "title": "Match point Sunday: Marquez wins dramatic Qatar Sprint, Martin heroic for P3, Bezzecchi crashes",
+          "publisher": "motogp.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_3i2Ipsc4ZiH2MEmUO7l0IivUD5pymdMmiGr_T_SzMLEwyYU-Pwkhoi-3HY4"
+        },
+        {
+          "url": "https://www.motorsport.com/motogp/news/marc-marquez-and-marco-bezzecchi-disagree-on-qatar-motogp-sprint-clash/10872685/",
+          "title": "Marc Marquez and Marco Bezzecchi disagree on Qatar MotoGP sprint clash",
+          "publisher": "Motorsport.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRq8QsgQBPnkKJBjiWMCcw-kzkPoYJLiH_682uhsK_7ayMmxIWUuU3gFnufBeA"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/valentino-rossis-rider-confronts-marc-114100569.html",
+          "title": "Valentino Rossi's rider confronts Marc Marquez over controversial Qatar crash",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-fgg2bmgy9Wwx4b_SRW4_Npmsbs4naEX103E3DwMY9nXJ4Qp48L2Sp5tcUAU"
+        }
+      ]
+    },
+    {
+      "query": "man utd vs aston villa",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-08T15:30:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cq2d6wgrey22t",
+        "https://www.theguardian.com/football/live/2026/nov/08/man-utd-v-aston-villa-premier-league-live",
+        "https://www.skysports.com/football/live-blog/13592908/man-utd-vs-aston-villa-live-premier-league-score-updates-news-prediction-line-ups-and-how-to-watch-or-stream"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwAMaYmv8p0zM4c7DQPDAOmGITNkWuTUl8HWEFuX8gkO4Ap_BUs0i9d9n7MfI",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cq2d6wgrey22t",
+          "title": "Premier League: Man Utd host Villa looking to climb out of drop zone",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwAMaYmv8p0zM4c7DQPDAOmGITNkWuTUl8HWEFuX8gkO4Ap_BUs0i9d9n7MfI"
+        },
+        {
+          "url": "https://www.theguardian.com/football/live/2026/nov/08/man-utd-v-aston-villa-premier-league-live",
+          "title": "Man Utd v Aston Villa: Premier League – live",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-nJ9-6rdZ1CcJtiAJlgDXfWkB7nHXckJZKYqZyeWkqdXZ3JnX4X1HwzjyIOs"
+        },
+        {
+          "url": "https://www.skysports.com/football/live-blog/13592908/man-utd-vs-aston-villa-live-premier-league-score-updates-news-prediction-line-ups-and-how-to-watch-or-stream",
+          "title": "Man Utd vs Aston Villa LIVE! Premier League score updates, news, prediction, line-ups and how to watch or stream",
+          "publisher": "Sky Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQK7YcPYnBRi0F7O8Xc3nyvCvGkhvf_bT-GITBoQSzDPjRuFsk_FXR8aLD-UHA"
+        }
+      ]
+    },
+    {
+      "query": "lottery",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-08T15:30:00Z",
+      "related_news_urls": [
+        "https://www.fox5ny.com/news/lucky-new-jersey-ticket-wins-847-million-powerball-jackpot",
+        "https://www.njlottery.com/en-us/newsandevents/newsinput/2026/press-releases/PB_Jackpot_RetailWin_110526.html",
+        "https://abc7ny.com/post/new-jersey-ticket-wins-847m-powerball-jackpot-ninth-largest-game-history/20017286/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgwVBid2YhSKX4njnckx2JnvmwAog-W-9PU7ljlT7wZ9p03a1tB3h0EXRreZw",
+      "image_credit": "FOX 5 New York",
+      "news": [
+        {
+          "url": "https://www.fox5ny.com/news/lucky-new-jersey-ticket-wins-847-million-powerball-jackpot",
+          "title": "Lucky New Jersey ticket wins $847 million Powerball jackpot at Bergen County Wegmans",
+          "publisher": "FOX 5 New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgwVBid2YhSKX4njnckx2JnvmwAog-W-9PU7ljlT7wZ9p03a1tB3h0EXRreZw"
+        },
+        {
+          "url": "https://www.njlottery.com/en-us/newsandevents/newsinput/2026/press-releases/PB_Jackpot_RetailWin_110526.html",
+          "title": "PB_Jackpot_RetailWin_110526",
+          "publisher": "NJ Lottery",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSv4neFsnzCFhrddcDNjw2AJ2jA2Y77NxnZjG8T3AHG2AYUN2XNhuE1hOu1dW8"
+        },
+        {
+          "url": "https://abc7ny.com/post/new-jersey-ticket-wins-847m-powerball-jackpot-ninth-largest-game-history/20017286/",
+          "title": "Powerball winning ticket sold at Montvale, NJ Wegmans for $847 million jackpot",
+          "publisher": "ABC7 New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMv6JmsfWt2m47s8zHMohqv7uU2lKE8Ej0J4bnwyPnMifGo3Mg64WZ_KetB2I"
+        }
+      ]
+    },
+    {
+      "query": "elizabeth warren",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T15:30:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/politics/policy/elizabeth-warrens-power-in-new-senate-is-a-wall-street-nightmare-dff8fb6e",
+        "https://finance.yahoo.com/economy/article/elizabeth-warren-will-take-over-the-senate-banking-committee-next-year-expect-hearings-205713342.html",
+        "https://nypost.com/2026/11/07/business/elizabeth-warren-hates-wall-street-expect-her-to-bring-out-the-knives-once-shes-back-in-power/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcZ-OS0UAXLBM4O-ElSJNdPA1znUqEj98RE0a_b7EWkvOqqbkenyTFHejEfDM",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/politics/policy/elizabeth-warrens-power-in-new-senate-is-a-wall-street-nightmare-dff8fb6e",
+          "title": "Elizabeth Warren’s Power in New Senate Is a Wall Street Nightmare",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcZ-OS0UAXLBM4O-ElSJNdPA1znUqEj98RE0a_b7EWkvOqqbkenyTFHejEfDM"
+        },
+        {
+          "url": "https://finance.yahoo.com/economy/article/elizabeth-warren-will-take-over-the-senate-banking-committee-next-year-expect-hearings-205713342.html",
+          "title": "Elizabeth Warren will take over the Senate Banking Committee next year. Expect hearings.",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5ynCbv7I4zY_vVWtcNhQRsIHOgFWw74gaJnhmMKgXW4ZE0mam-QiGvM42wPM"
+        },
+        {
+          "url": "https://nypost.com/2026/11/07/business/elizabeth-warren-hates-wall-street-expect-her-to-bring-out-the-knives-once-shes-back-in-power/",
+          "title": "Elizabeth Warren hates Wall Street — expect her to bring out the knives once she's back in power",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShQ6-0sG55fN-VivbYvRf-gi3pIV4MvJPL4fLUxPe0ZB2rC1mUBpl8IdR9kvM"
+        }
+      ]
+    },
+    {
+      "query": "jamarr chase",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T15:30:00Z",
+      "related_news_urls": [
+        "https://www.nfl.com/videos/one-handed-catch-in-madrid-ja-marr-chase-s-mitt-has-magnetic-attraction-to-burrow-s-pass-in-madrid",
+        "https://www.wlwt.com/article/cincinnati-bengals-jamarr-chase-atlanta-falcons-spain/74363133",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jamarr-chase-explodes-for-142-receiving-yards-in-first-25-minutes-of-play-in-madrid"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSxA41ILEd6PI8n1-Xjcst7Vn43tcu1LJNP4gm4l8AjLj8KwnbpGx3Hfbb3Ao",
+      "image_credit": "NFL.com",
+      "news": [
+        {
+          "url": "https://www.nfl.com/videos/one-handed-catch-in-madrid-ja-marr-chase-s-mitt-has-magnetic-attraction-to-burrow-s-pass-in-madrid",
+          "title": "One-handed catch in Madrid! Ja'Marr Chase's mitt has magnetic attraction to Burrow's pass in Madrid",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSxA41ILEd6PI8n1-Xjcst7Vn43tcu1LJNP4gm4l8AjLj8KwnbpGx3Hfbb3Ao"
+        },
+        {
+          "url": "https://www.wlwt.com/article/cincinnati-bengals-jamarr-chase-atlanta-falcons-spain/74363133",
+          "title": "‘Incredible’: Bengals WR Ja’Marr Chase soaking up chance to play in Spain",
+          "publisher": "WLWT",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3CoIins_yYOSgx9jW5zHE3dGb0_iQ6vjsTOaEBa39SAQq-Hd6F0-4LPDV970"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jamarr-chase-explodes-for-142-receiving-yards-in-first-25-minutes-of-play-in-madrid",
+          "title": "Ja’Marr Chase explodes for 142 receiving yards in first 25 minutes of play in Madrid",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1QruEY3_9aooG4FCjJn5DZvBEHNpKeQhuJNwLivIpcz7DwMLQfvIPVzryPIM"
+        }
+      ]
+    },
+    {
+      "query": "jessie bates",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T15:30:00Z",
+      "related_news_urls": [
+        "https://www.democratandchronicle.com/story/sports/football/nfl/bills/2026/11/08/buffalo-bills-trade-deadline-targets-budda-baker-elijah-molden-espn/92639422007/",
+        "https://www.nytimes.com/athletic/7753941/2026/11/05/bills-nfl-trade-deadline-targets-2026/",
+        "https://www.si.com/nfl/bills/onsi/trade-deadline-bills-roadblocks-for-amani-hooker-budda-baker-jessie-bates-aid-out-by-nfl-insider"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxdZ0bd_yg5M4we9effKUEeUXfrsh9fjlDMIjG8yScoSGQGoBoIWjTAfrbPG8",
+      "image_credit": "Democrat and Chronicle",
+      "news": [
+        {
+          "url": "https://www.democratandchronicle.com/story/sports/football/nfl/bills/2026/11/08/buffalo-bills-trade-deadline-targets-budda-baker-elijah-molden-espn/92639422007/",
+          "title": "ESPN says Bills should be aggressive at trade deadline. Here's who they could target",
+          "publisher": "Democrat and Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxdZ0bd_yg5M4we9effKUEeUXfrsh9fjlDMIjG8yScoSGQGoBoIWjTAfrbPG8"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7753941/2026/11/05/bills-nfl-trade-deadline-targets-2026/",
+          "title": "Bills trade deadline power rankings: The 10 best fits for Buffalo’s defense",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgpVfa9yQ5w5zNQLMzsHeee3OBOY7EdWYj2edzwHYpbicxO0bt2VaxmFD6Tik"
+        },
+        {
+          "url": "https://www.si.com/nfl/bills/onsi/trade-deadline-bills-roadblocks-for-amani-hooker-budda-baker-jessie-bates-aid-out-by-nfl-insider",
+          "title": "Bills' Roadblocks for Amani Hooker, Budda Baker, Jessie Bates Trades Laid Out By NFL Insider",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQesBNqUtlMPYPMmbFZmnpjAfgRpfILyrAYHb4G8WcbrpOz14Lt9ePOQbIkEBQ"
+        }
+      ]
+    },
     {
       "query": "rams vs commanders",
       "approx_searches": "200+",
       "published_at": "2026-11-08T15:10:00Z",
       "related_news_urls": [
         "https://www.therams.com/news/top-rams-news-previews-and-predictions-for-rams-at-commanders-on-sunday-at-northwest-stadium-for-week-9-2026",
-        "https://www.latimes.com/sports/rams/live/rams-washington-commanders-live-updates-start-time-watch-odds-score-highlights",
+        "https://sports.yahoo.com/articles/rams-vs-commanders-live-updates-150026615.html",
         "https://www.hogshaven.com/washington-commanders-analysis/453825/washington-commanders-rams-nfl-week-9-stefon-diggs-klavon-chaisson"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7RF6csOk5LNN3YH8o2YrzEU8RyYF7WD8pb0A-i_wfm17ik-iziJ0RV3_U09o",
@@ -26,11 +306,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7RF6csOk5LNN3YH8o2YrzEU8RyYF7WD8pb0A-i_wfm17ik-iziJ0RV3_U09o"
         },
         {
-          "url": "https://www.latimes.com/sports/rams/live/rams-washington-commanders-live-updates-start-time-watch-odds-score-highlights",
-          "title": "Rams vs. Commanders: Live updates, start time, how to watch and odds",
-          "publisher": "Los Angeles Times",
+          "url": "https://sports.yahoo.com/articles/rams-vs-commanders-live-updates-150026615.html",
+          "title": "Rams vs. Commanders live updates: Score, highlights, injuries and analysis",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQe9ZcT3Ji1B1d9NtDEKpWGT0ypPhoOm6aWdnW8S6Ot1aFzluCVSiLIkRU2nUk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPJj_bT40LGRM7OoslaQtwtk3Oo284fjtbY7qzckEHV9qF99etzlaOYwZ3Mmg"
         },
         {
           "url": "https://www.hogshaven.com/washington-commanders-analysis/453825/washington-commanders-rams-nfl-week-9-stefon-diggs-klavon-chaisson",
@@ -42,317 +322,37 @@
       ]
     },
     {
-      "query": "nick folk",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T15:00:00Z",
-      "related_news_urls": [
-        "https://www.wusa9.com/video/sports/locked-on/lo-atlanta/locked-on-falcons-hit/critical-nick-folk-is-kicking-for-his-job-the-falcons-big-decision/535-3fe63048-c6f7-46b9-8938-cbc226fd14be",
-        "https://www.si.com/nfl/falcons/onsi/falcons-hope-nick-folk-can-end-frustrating-history-at-kicker",
-        "https://www.thefantasyfootballers.com/news/645743/nick-folk-misses-only-field-goal-attempt/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpT9E_wvHeTahbuQ8sT-DRB546fY2Bpr-YE7GuCkpcI5N0mvLMkEuNCyLGt1g",
-      "image_credit": "WUSA9",
-      "news": [
-        {
-          "url": "https://www.wusa9.com/video/sports/locked-on/lo-atlanta/locked-on-falcons-hit/critical-nick-folk-is-kicking-for-his-job-the-falcons-big-decision/535-3fe63048-c6f7-46b9-8938-cbc226fd14be",
-          "title": "CRITICAL: Nick Folk Is Kicking for His Job: The Falcons' Big Decision",
-          "publisher": "WUSA9",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpT9E_wvHeTahbuQ8sT-DRB546fY2Bpr-YE7GuCkpcI5N0mvLMkEuNCyLGt1g"
-        },
-        {
-          "url": "https://www.si.com/nfl/falcons/onsi/falcons-hope-nick-folk-can-end-frustrating-history-at-kicker",
-          "title": "Falcons Hope Nick Folk Can End Frustrating History at Kicker",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8RU31mi5_SqFRAXRoQCv918P6NYrBvjnuFb5CJipFpQwgPEOkukrDDefcx1M"
-        },
-        {
-          "url": "https://www.thefantasyfootballers.com/news/645743/nick-folk-misses-only-field-goal-attempt/",
-          "title": "Nick Folk Misses only field-goal attempt",
-          "publisher": "Fantasy Footballers Podcast",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTZO36MpY67vuCS5TIiS-eQlcD2l3_Ku9-491MMu2f91MSe0Lbe0O0w19YjIU"
-        }
-      ]
-    },
-    {
-      "query": "dame judi dench",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T15:00:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/news/judi-dench-is-it-too-late-to-make-a-run-for-it/",
-        "https://www.cbsnews.com/video/extended-interview-dame-judi-dench-and-brendan-ohea/",
-        "https://ew.com/judi-dench-told-she-would-never-star-film-because-her-face-was-wrong-12198898"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv4u3eV8gi-NXHIxEAph9OWOhDxxjbwrRQSiw7YFfCkaj1IKH98mptwYz2Vc0",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/news/judi-dench-is-it-too-late-to-make-a-run-for-it/",
-          "title": "Judi Dench on an actor's life",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv4u3eV8gi-NXHIxEAph9OWOhDxxjbwrRQSiw7YFfCkaj1IKH98mptwYz2Vc0"
-        },
-        {
-          "url": "https://www.cbsnews.com/video/extended-interview-dame-judi-dench-and-brendan-ohea/",
-          "title": "Extended interview: Dame Judi Dench and Brendan O'Hea",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFpiMxtihZjuBSt-nnYF11PPf8BNq-0VVy9Q3NKMVFvBAyNzZ0gC7XIcxE5b0"
-        },
-        {
-          "url": "https://ew.com/judi-dench-told-she-would-never-star-film-because-her-face-was-wrong-12198898",
-          "title": "Judi Dench says ‘big Hollywood producer’ told her she’d never make a film because of her face",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWubx25ROGKIJriPKPwqucu8SXvNmab6w82LLGZPzbZMCtCOvR7sGoaL1UKbI"
-        }
-      ]
-    },
-    {
-      "query": "houston weather",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T15:00:00Z",
-      "related_news_urls": [
-        "https://www.fox26houston.com/weather/houston-weather-sunday-rain-ahead-midweek-cold-front",
-        "https://www.yahoo.com/news/weather-news/articles/houston-weather-rain-likely-sunday-110000229.html",
-        "https://www.click2houston.com/weather/2026/11/07/houston-turning-cloudy-ahead-of-sunday-rain-chances/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREZ4NnQ_lyj2aXH6SD3Oah8_pCT7Eg2IDJzC3Tz46x9lsCabaH-ev6uxaQ2mY",
-      "image_credit": "FOX 26 Houston",
-      "news": [
-        {
-          "url": "https://www.fox26houston.com/weather/houston-weather-sunday-rain-ahead-midweek-cold-front",
-          "title": "Houston Weather: Sunday rain ahead of midweek cold front",
-          "publisher": "FOX 26 Houston",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREZ4NnQ_lyj2aXH6SD3Oah8_pCT7Eg2IDJzC3Tz46x9lsCabaH-ev6uxaQ2mY"
-        },
-        {
-          "url": "https://www.yahoo.com/news/weather-news/articles/houston-weather-rain-likely-sunday-110000229.html",
-          "title": "Houston weather: Rain likely on Sunday. When will the heaviest rainfall occur?",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzCGBcycY1i3AQzrzhgWI4liuIRSyE0dZgV4AUx_XQhp0UXrXOypqmS-YWZow"
-        },
-        {
-          "url": "https://www.click2houston.com/weather/2026/11/07/houston-turning-cloudy-ahead-of-sunday-rain-chances/",
-          "title": "Rain returns to Houston check out Sunday’s shower timeline",
-          "publisher": "Click2Houston",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLssz1Iz5WP8koOIufq-oLRvn4iWBaRODxjzqNMkdPXr9sZ6cpppE-xIwt3WE"
-        }
-      ]
-    },
-    {
-      "query": "joe burrow girlfriend",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T14:50:00Z",
-      "related_news_urls": [
-        "https://www.thebiglead.com/joe-burrow-model-girlfriend-olivia-ponton-vacation-photos-madrid/",
-        "https://www.yahoo.com/entertainment/articles/joe-burrow-gf-olivia-ponton-145254299.html",
-        "https://www.marca.com/en/lifestyle/2026/11/03/olivia-ponton-joe-burrow-s-partner-reveals-health-issue-and-is-considering-surgery.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIGkOCh7lBmT8hbBQXn1hkUmWbp3mR6aKzqxnPfx4HikLTWyE7dlFr3tC_q-0",
-      "image_credit": "The Big Lead",
-      "news": [
-        {
-          "url": "https://www.thebiglead.com/joe-burrow-model-girlfriend-olivia-ponton-vacation-photos-madrid/",
-          "title": "Joe Burrow's model girlfriend Olivia Ponton causes a stir with vacation photos",
-          "publisher": "The Big Lead",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIGkOCh7lBmT8hbBQXn1hkUmWbp3mR6aKzqxnPfx4HikLTWyE7dlFr3tC_q-0"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/articles/joe-burrow-gf-olivia-ponton-145254299.html",
-          "title": "Joe Burrow’s GF Olivia Ponton Contemplating ‘Surgery’ After Being Diagnosed With Health Condition",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJJMH-VEuSFvMV2CQWJIgB6inuKPvXnFIKr-EZT6pmro2PaDXnoG04MzATXjg"
-        },
-        {
-          "url": "https://www.marca.com/en/lifestyle/2026/11/03/olivia-ponton-joe-burrow-s-partner-reveals-health-issue-and-is-considering-surgery.html",
-          "title": "Olivia Ponton, Joe Burrow's partner, reveals a health issue and is considering surgery",
-          "publisher": "MARCA",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT80xyx2GhCU73vxa_u54tvjt3DV7E20SkrLb_s1ctq3qiRbcMXq-DZjJdpoJo"
-        }
-      ]
-    },
-    {
-      "query": "real madrid stadium",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T14:50:00Z",
-      "related_news_urls": [
-        "https://www.ajc.com/sports/2026/11/postcard-from-madrid-ken-sugiura-falcons/",
-        "https://www.ajc.com/sports/2026/11/falcons-in-madrid-tour-of-bernabeu-stadium/",
-        "https://www.ajc.com/sports/2026/11/win-column-mi-casa-es-su-casa/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ2z_Bw8H0vQCeQ3qHbApQz1IhqTyDQixlOyv2tdd_V6ILwQL1DW3R93de3WE",
-      "image_credit": "The Atlanta Journal-Constitution",
-      "news": [
-        {
-          "url": "https://www.ajc.com/sports/2026/11/postcard-from-madrid-ken-sugiura-falcons/",
-          "title": "Ken Sugiura: Postcard from Madrid includes Tim Hortons and Taco Bell",
-          "publisher": "The Atlanta Journal-Constitution",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ2z_Bw8H0vQCeQ3qHbApQz1IhqTyDQixlOyv2tdd_V6ILwQL1DW3R93de3WE"
-        },
-        {
-          "url": "https://www.ajc.com/sports/2026/11/falcons-in-madrid-tour-of-bernabeu-stadium/",
-          "title": "Ken Sugiura: Postcard from Madrid: My grand tour of fabled Bernabéu Stadium",
-          "publisher": "The Atlanta Journal-Constitution",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTWoJTZ4J6wpZl_m0SMQLbQXZ5FuupJx6FyT4wFK2BUjwJVLOEpGVKpfY3ITo"
-        },
-        {
-          "url": "https://www.ajc.com/sports/2026/11/win-column-mi-casa-es-su-casa/",
-          "title": "The Win Column: Su casa es mi casa",
-          "publisher": "The Atlanta Journal-Constitution",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0ikYryGgVrTaQfijx1hFgmWMczgU3gkw9Tolih9QE0Dh0zhcDzZuYKRvWf3k"
-        }
-      ]
-    },
-    {
-      "query": "jets vs chiefs",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T14:50:00Z",
-      "related_news_urls": [
-        "https://www.arrowheadpride.com/kansas-city-chiefs-game-information/215517/chiefs-vs-jets-week-9-live-sream-tv-channel-schedule-odds-how-to-watch-online",
-        "https://sports.yahoo.com/videos/chiefs-closing-problem-solve-vs-150302840.html",
-        "https://www.ganggreennation.com/new-york-jets-news/98296/new-york-jets-news-jets-look-to-end-losing-streak-against-the-kansas-city-chiefs"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTix4SkOgqGV_Nrq3xtZTtNjmfP2V1WCTOzLucgh1vbY6QuezLEhNyT3JY1wWw",
-      "image_credit": "Arrowhead Pride",
-      "news": [
-        {
-          "url": "https://www.arrowheadpride.com/kansas-city-chiefs-game-information/215517/chiefs-vs-jets-week-9-live-sream-tv-channel-schedule-odds-how-to-watch-online",
-          "title": "How to watch Chiefs-Jets Week 9: live stream, start time and more",
-          "publisher": "Arrowhead Pride",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTix4SkOgqGV_Nrq3xtZTtNjmfP2V1WCTOzLucgh1vbY6QuezLEhNyT3JY1wWw"
-        },
-        {
-          "url": "https://sports.yahoo.com/videos/chiefs-closing-problem-solve-vs-150302840.html",
-          "title": "Chiefs Have A Closing Problem They Need To Solve vs. Jets",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLSOII7q_LSoT8IbGk1eDnSn8LZ6KH38ynl03c3lT38P7ZkCbRaUnvaK62ZN4"
-        },
-        {
-          "url": "https://www.ganggreennation.com/new-york-jets-news/98296/new-york-jets-news-jets-look-to-end-losing-streak-against-the-kansas-city-chiefs",
-          "title": "New York Jets Flight Connections 11/08/26",
-          "publisher": "Gang Green Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSI5MThky7U1gqpBN0anMmPfkYtAGGJIapBwuM86WnBP2saqFDyU2TY48NH8fA"
-        }
-      ]
-    },
-    {
-      "query": "is cam skattebo playing this week",
+      "query": "newt gingrich",
       "approx_searches": "200+",
-      "published_at": "2026-11-08T14:50:00Z",
+      "published_at": "2026-11-08T15:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50402162/giants-cam-skattebo-doubtful-vs-eagles-nabers-full-go",
-        "https://www.giants.com/news/giants-vs-eagles-week-9-injury-report-cam-skattebo-abdul-carter",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/schefter-skattebo-hamstring-is-pushing-to-play"
+        "https://www.yahoo.com/news/politics/articles/scaramucci-dismisses-newt-gingrichs-prediction-160012564.html",
+        "https://www.foxbusiness.com/video/6408026148112",
+        "https://thehill.com/homenews/campaign/6200720-newt-gingrich-jd-vance-gop-election-defeat/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNdJl-qvHdK52EEts4x9G55YTuAWmWdDBcEEsQFnwBKpgX11MjR4RymJgV62E",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ53uRQyQ-NUI3XyXSjnmfA5VHGKY-BsGVA5HxkQisoGHvXXeDbgO3L9lxXP7k",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50402162/giants-cam-skattebo-doubtful-vs-eagles-nabers-full-go",
-          "title": "Giants' Cam Skattebo doubtful vs. Eagles; Malik Nabers 'full go'",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNdJl-qvHdK52EEts4x9G55YTuAWmWdDBcEEsQFnwBKpgX11MjR4RymJgV62E"
-        },
-        {
-          "url": "https://www.giants.com/news/giants-vs-eagles-week-9-injury-report-cam-skattebo-abdul-carter",
-          "title": "Giants vs. Eagles Week 9 Injury Report: Cam Skattebo doubtful, Charlie Jones questionable",
-          "publisher": "Giants.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4Yc2GCtqxYIPY66ouGIj6zKUtGCKWaPFe2uibMnafpW-dWeXDUFZd425Bo6o"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/schefter-skattebo-hamstring-is-pushing-to-play",
-          "title": "Schefter: Skattebo (hamstring) is pushing to play",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQw-dUjwCWIz9cjt-YkVqf7Y5c-MquAKRmHdTXN7VvQCct6sVhd63YbCbhYM98"
-        }
-      ]
-    },
-    {
-      "query": "charlie woerner",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-08T14:40:00Z",
-      "related_news_urls": [
-        "https://www.nfl.com/news/nfl-week-9-inactives-players-ruled-out-sunday-2026-season",
-        "https://nypost.com/2026/11/06/sports/raiders-run-defense-faces-big-time-49ers-test/",
-        "https://www.espn.com/nfl/recap/_/gameId/401873029"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR07LR2VqDFi43kxHvZJ9SvnoiKo6ulGJq_QCbzDFhBvwiB9ckTV5wIIsv7i_w",
-      "image_credit": "NFL.com",
-      "news": [
-        {
-          "url": "https://www.nfl.com/news/nfl-week-9-inactives-players-ruled-out-sunday-2026-season",
-          "title": "NFL Week 9 inactives: Players ruled out for Sunday's 13 games",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR07LR2VqDFi43kxHvZJ9SvnoiKo6ulGJq_QCbzDFhBvwiB9ckTV5wIIsv7i_w"
-        },
-        {
-          "url": "https://nypost.com/2026/11/06/sports/raiders-run-defense-faces-big-time-49ers-test/",
-          "title": "49ers won’t let Raiders off hook after Jets’ inexplicable unforced error",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLMdZew9r4mUtyzKwdTNK3JGKMHqfV9IbR1sKgJvVfuwg5u10IiTNr-W__CaU"
-        },
-        {
-          "url": "https://www.espn.com/nfl/recap/_/gameId/401873029",
-          "title": "Raiders 38-33 Jets (Nov 1, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5rjhuFTf6SNp89hpw1dRcgraF9NswX4nJXkYlMdwdcNCA3-qlYP9kG0R2jRk"
-        }
-      ]
-    },
-    {
-      "query": "barcelona - madrid",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-08T14:40:00Z",
-      "related_news_urls": [
-        "https://as.com/futbol/internacional/crystal-palace-liverpool-en-directo-premier-league-hoy-en-vivo-f202611-n/",
-        "https://es-us.noticias.yahoo.com/deportes/sunderland-chelsea-xabi-alonso-deja-131200496.html",
-        "https://onefootball.com/es/noticias/regis-le-bris-alinea-a-talbi-sunderland-recibe-al-chelsea-mukiele-apto-43746325"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXYsRpw2PpXlXkDWnC3EmcDpvIkcu1LWmgchy30dunitmYxkq9udJ2dI6q8Cc",
-      "image_credit": "Diario AS",
-      "news": [
-        {
-          "url": "https://as.com/futbol/internacional/crystal-palace-liverpool-en-directo-premier-league-hoy-en-vivo-f202611-n/",
-          "title": "Crystal Palace - Liverpool, en directo: Premier League, hoy en vivo",
-          "publisher": "Diario AS",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXYsRpw2PpXlXkDWnC3EmcDpvIkcu1LWmgchy30dunitmYxkq9udJ2dI6q8Cc"
-        },
-        {
-          "url": "https://es-us.noticias.yahoo.com/deportes/sunderland-chelsea-xabi-alonso-deja-131200496.html",
-          "title": "🚨 Sunderland-Chelsea. Xabi Alonso deja en el banquillo a Estevao",
+          "url": "https://www.yahoo.com/news/politics/articles/scaramucci-dismisses-newt-gingrichs-prediction-160012564.html",
+          "title": "Scaramucci Dismisses Newt Gingrich's Prediction That 2028 GOP Race Is 'Wide Open' After Midterm Rout: 'That Isn't Happening'",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEeLBL3qdAZDY4a6al7lZE0JdQlqmYJaz1TmyKpq5oPfs_biOWC8xCwuW4RiA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ53uRQyQ-NUI3XyXSjnmfA5VHGKY-BsGVA5HxkQisoGHvXXeDbgO3L9lxXP7k"
         },
         {
-          "url": "https://onefootball.com/es/noticias/regis-le-bris-alinea-a-talbi-sunderland-recibe-al-chelsea-mukiele-apto-43746325",
-          "title": "Régis Le Bris alinea a Talbi: Sunderland recibe al Chelsea; Mukiele, apto",
-          "publisher": "OneFootball",
+          "url": "https://www.foxbusiness.com/video/6408026148112",
+          "title": "Newt Gingrich: This midterm election was 'healthy' for US",
+          "publisher": "Fox Business",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRA0V43-HMaPekdJQFSP1eRJgFuIzfudsw_DMijv0EOgHt1hffhHozlffS269o"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbH7lCSHw3gEJHPrN03a-ofWlO9O8ILLKy3EQAVVz4RLmmT_6P6qc2WzvwjlY"
+        },
+        {
+          "url": "https://thehill.com/homenews/campaign/6200720-newt-gingrich-jd-vance-gop-election-defeat/",
+          "title": "Gingrich: GOP’s massive loss takes ‘luster’ off Vance for 2028",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIiC3ndiDv_K3anYdIlXPfj6OhPh9TbE8eq28V0q1Rg22DrZMPUKixCTEgWKo"
         }
       ]
     }
