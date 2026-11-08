@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Set up a Stripe seller draft for a coin business, mowing service or Shop Phi Quick Cards with Bubbles GPT help. Merchant connection and cash wallet are not active.">
+<title>Stripe Business Studio · QuantaPhi</title>
+<style>
+:root{color-scheme:light;font:18px/1.5 system-ui,-apple-system,Arial,sans-serif;background:#ecf3f8;color:#20374e}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(150deg,#e7f5fc,#f9fafc 40%,#eaeaf7);min-height:100vh}
+main{max-width:900px;margin:auto;padding:12px 14px 105px}nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}a{color:#165a89;text-underline-offset:3px}
+nav a{font-size:16px;font-weight:800}
+header{background:linear-gradient(122deg,#192e59,#355a87 75%,#665c9b);border-radius:21px;color:#fff;display:grid;grid-template-columns:1fr minmax(100px,190px);align-items:center;gap:12px;padding:23px 22px;box-shadow:0 10px 23px #193e6028}
+header img{width:100%;max-height:175px;object-fit:contain;border-radius:13px}
+header .eyebrow{font-size:12px;letter-spacing:.17em;font-weight:900;color:#d6e9ff}
+h1{font-size:clamp(29px,6vw,41px);line-height:1.14;margin:11px 0}
+h2{font-size:22px;line-height:1.25;margin:0 0 9px}
+h3{font-size:18px;margin:11px 0 6px}
+p{margin:9px 0 13px}
+article{background:#fff;border:1px solid #ccdae6;padding:19px 20px;border-radius:17px;margin:14px 0;box-shadow:0 4px 14px #1638510c}
+.state{padding:12px;background:#eaf1f9;border-left:4px solid #678fb0;border-radius:8px;color:#234363}
+fieldset{margin:0;border:0;padding:0}legend{font-weight:900;margin-bottom:9px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{font-weight:750;font-size:16px;display:block;margin:8px 0}
+input,select,textarea{font:17px/1.45 system-ui,-apple-system,sans-serif;display:block;margin-top:5px;width:100%;padding:11px 12px;background:#fff;color:#20374e;border:1px solid #99b2c6;border-radius:10px;min-height:46px}
+textarea{min-height:115px;resize:vertical}small{font-weight:400;font-size:13px;line-height:1.45;color:#536c7e;display:block;margin-top:4px}
+button,.action{display:inline-flex;align-items:center;justify-content:center;min-height:48px;border-radius:11px;padding:11px 15px;font:800 16px/1.3 system-ui,sans-serif;text-decoration:none;white-space:normal;max-width:100%;cursor:pointer;border:1px solid #93aec5;color:#244868;background:#fff}
+button.primary{background:#295885;border-color:#295885;color:#fff}button:disabled{opacity:.55;cursor:not-allowed}
+.actions{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0}.actions>*{flex:1 1 160px}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #259ac8;outline-offset:3px}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;max-height:260px;overflow:auto;font:13px/1.5 ui-monospace,Consolas,monospace;background:#f1f5fa;color:#234363;border:1px solid #d1dfe9;border-radius:10px;padding:12px}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:15px}
+.steps div{background:#f1f5f9;padding:12px;border:1px solid #d5e1ea;border-radius:10px;font-size:14px;overflow-wrap:anywhere}
+.steps strong{display:block;color:#284a70}ol{padding-left:21px}
+@media(max-width:590px){header{grid-template-columns:1fr}header img{width:120px;max-height:85px;justify-self:start}.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:440px){main{padding:10px 10px 90px}article{padding:15px}.grid{grid-template-columns:1fr}header{padding:20px 17px}.actions>*{flex-basis:100%}}
+</style></head><body><main>
+<nav aria-label="Navigation"><a href="/">← QuantaPhi</a><a href="/quick-card-builder.html">Quick Card Builder</a><a href="/bubbles.html">Bubbles Chat</a></nav>
+<header>
+<div>
+<p class="eyebrow">INFINITY® · ORACLE OCTAVES · BUSINESS TOOLS</p>
+<h1>Stripe Business Studio</h1>
+<p>Prepare a merchant account for selling coins, mowing lawns, or offering eligible products and services. Let Bubbles help with your storefront, then complete your own secure Stripe verification.</p>
+<p><strong>Stripe not connected to this seller.</strong> QuantaPhi's connected Stripe account is a test sandbox; this page does not create a merchant account or handle real money.</p>
+</div>
+<img src="/assets/phi-data-analyst.webp" alt="Original Infinity Phi studio artwork" loading="lazy" decoding="async">
+</header>
+<article>
+<h2>1 · Create or connect your Stripe business</h2>
+<p>Use Stripe's official, secure onboarding. Enter private identity information, tax details, bank numbers and supporting documents only into Stripe—not into Bubbles or a Quick Card.</p>
+<p><a class="action" target="_blank" rel="noopener noreferrer" href="https://dashboard.stripe.com/register">Open official Stripe business signup</a></p>
+<p class="state">This page prepares a public-information template only. Signing up for Stripe does not automatically link a seller to Shop Phi. QuantaPhi must build authenticated Stripe Connect onboarding and verify merchant eligibility directly with Stripe.</p>
+</article>
+<article>
+<h2>2 · Prepare Shop Phi Quick Cards</h2>
+<p>One verified seller connection can be associated with multiple individually approved products or services. This template is local to your browser until you choose to copy or save it.</p>
+<form id="stripeSellerForm" autocomplete="off">
+<fieldset><legend>Public business draft (no sensitive data)</legend>
+<div class="grid">
+<label>Public seller handle
+<input id="stripeSellerSlug" required name="sellerSlug" maxlength="70" placeholder="fred-coins" pattern="[a-z0-9][a-z0-9_-]{1,69}"><small>A draft label, not proof of identity.</small></label>
+<label>Public business name
+<input id="stripeDisplayName" required name="displayName" maxlength="80" placeholder="Fred's Coin Finds"></label>
+<label>Business category
+<select id="stripeBusinessType" name="businessType" required>
+<option value="coins">Collectibles · Coins</option>
+<option value="services">Services · Lawn Care / Repairs</option>
+<option value="products">Other eligible products</option>
+</select></label>
+<label>Draft price per card (USD)
+<input id="stripePrice" required name="priceUsd" inputmode="decimal" placeholder="25.00" maxlength="10">
+<small>This is a proposed price only, not a payment or validated sale.</small></label>
+</div>
+<label>Quick Card or Shop Phi item IDs
+<textarea id="stripeSellerCards" name="cardIds" maxlength="45000" placeholder="fred-coins-001&#10;fred-coins-002"></textarea>
+<small>Optional until you have listings. One per line or comma; up to 500. Only list content you own or are authorized to sell.</small></label>
+<label>Public business description (optional)
+<textarea id="stripeSellerNotes" name="notes" maxlength="800" placeholder="We sell verified coins and provide accurate grading details."></textarea>
+<small>No customer records, bank information, Stripe secret keys, social security numbers or passwords.</small></label>
+</fieldset>
+<div class="actions">
+<button class="primary" type="submit" id="stripeDraft">Build Stripe Quick Card plan</button>
+<button type="button" id="stripeExport" disabled>Save draft JSON</button>
+<button type="button" id="stripeCopy" disabled>Copy draft for Bubbles</button>
+<button type="button" id="stripeClear">Clear draft</button>
+</div>
+</form>
+<p id="stripeStatus" aria-live="polite" role="status">No merchant draft prepared. No payments are enabled.</p>
+<h3>Draft preview</h3><pre id="stripePreview" tabindex="0">No preview yet.</pre>
+</article>
+<article>
+<h2>3 · Bubbles GPT business helper</h2>
+<p>Ask Bubbles how to describe your store, prepare permitted Quick Cards, explain Stripe requirements, or make a sales plan. Bubbles cannot sign away your rights, enter banking details, activate payouts or promise earnings.</p>
+<button class="primary" id="stripeBubblesOpen" type="button">Open Bubbles Stripe Business Helper</button>
+<p class="state">The separate Stripe plugin in ChatGPT can access only the account permissions you authorize. A ChatGPT connection is not transferable customer consent and is not an encrypted bank vault for all Shop Phi users.</p>
+</article>
+<article>
+<h2>4 · Infinity Cash: money, keys and receipts</h2>
+<p>A $500 bank transfer requires a genuine payment instruction, regulated custody, clearing, settlement and reconciliation. A reference number is a useful digital receipt—not $500 of newly created money.</p>
+<div class="steps" aria-label="Cash deposit lifecycle">
+<div><strong>1 · Sent</strong>Bank or payment provider initiates</div>
+<div><strong>2 · Pending</strong>Provider checks transfer and risk</div>
+<div><strong>3 · Settled</strong>Authorized provider confirms held USD</div>
+<div><strong>4 · Available</strong>Reconciled server credits eligible wallet funds</div>
+</div>
+<p class="state"><strong>Cash Wallet not connected.</strong> No balance, deposit, transfer or payout is established by this page. No guaranteed cash returns. Bubbles cannot independently spend, invest, lend or convert user USD into Infinity tokens.</p>
+</article>
+</main>
+<script type="module" src="/stripe-business-studio.js?v=20261107-1"></script>
+<script defer src="/bubbles-embed.js" data-bubble-id="stripe-business-helper" data-bubble-role="specialist" data-bubble-name="Bubbles Stripe Business Helper" data-bubble-instructions="You are Bubbles Stripe Business Helper, a practical merchant-setup and Shop Phi planning assistant. Help users write ordinary public store descriptions, coin listings and lawn-care service descriptions, understand official Stripe Connect onboarding, and prepare safe pricing/card review plans. Never ask for or store passwords, bank account numbers, tax IDs, SSNs, Stripe secret keys, private customer histories or sensitive identity documents. This ChatGPT connection is not a bank vault or legal identity verification. QuantaPhi seller Stripe account link is not active until authorized server Stripe Connect confirms identity, charges_enabled, payout capability, and rights; redirect success alone is not proof. Never claim a sale, merchant approval, paid charge, escrow, regulated custody or cash funding without signed provider receipts. Personal Cash Wallet and merchant payout are separate. Never guarantee investment returns or move user funds."></script>
+</body></html>
