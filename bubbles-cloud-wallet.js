@@ -143,14 +143,14 @@ async function load(){
  try{
   const token=await verifiedWalletToken();
   if(!/^sq_[A-Za-z0-9_-]{32,}$/.test(token||'')){
-   balances.hidden=true;history.hidden=true;receipts.replaceChildren();
+   disconnectedBalances();
    status('Wallet not connected in this browser or Android app. Your Cloudflare records have not been erased. Use Find Cloud Tokens to restore an existing verified wallet.');
    return;
   }
   const [star,unified]=await Promise.all([api(STAR+'/v1/state',token),api(WALLET+'/v1/wallet/state',token)]);
   await populate(token,star,unified);
  }catch(error){
-  balances.hidden=true;history.hidden=true;receipts.replaceChildren();
+  disconnectedBalances();
   status('Could not verify the current wallet: '+String(error.message||error).slice(0,180)+'. Stored Cloudflare records were not changed.');
  }finally{pending=false;refresh.disabled=false}
 }
@@ -158,5 +158,7 @@ refresh.addEventListener('click',()=>void load());
 document.addEventListener('starquest:ledger-connected',()=>void load());
 document.addEventListener('starquest:auth-changed',()=>void load());
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')void load()});
+global.addEventListener('infinity:wallet-state',()=>void load());
+disconnectedBalances();
 void load();
 })(window);
