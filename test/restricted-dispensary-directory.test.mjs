@@ -51,3 +51,16 @@ test('every dispensary card is actually mounted and discoverable in Oracle',asyn
  assert.ok(client.includes('if(!allowed)'));
  assert.ok(client.includes('acknowledged=false'));
 });
+
+test('Denver listings stay in the Oracle carousel instead of stacking down the homepage',async()=>{
+ const fs=await import('node:fs/promises');
+ const css=await fs.readFile(new URL('../restricted-dispensary-cards.css',import.meta.url),'utf8');
+ const html=await fs.readFile(new URL('../index.html',import.meta.url),'utf8');
+ for(const id of DISPENSARY_CARD_IDS){
+  assert.ok(html.includes('<section id="'+id+'"'));
+ }
+ assert.match(css,/body\.oracle-card-deck-active:not\(\.oracle-shelf-open\) main\.app > section\[id\^="dispensary-"\]\{display:none!important\}/,
+  'All original directory roots must be hidden outside the active carousel stage');
+ assert.match(css,/\.oracle-card-deck-stage > section\[id\^="dispensary-"\]/,
+  'The currently selected original card must remain visible inside the carousel');
+});
