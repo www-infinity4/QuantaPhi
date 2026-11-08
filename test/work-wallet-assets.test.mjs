@@ -4,6 +4,7 @@ import {readFileSync} from 'node:fs';
 import {DatabaseSync} from 'node:sqlite';
 import wallet from '../workers/unified-wallet/worker.js';
 import {readGitAsset,readGptCoinAsset} from '../workers/unified-wallet/engineering-assets.mjs';
+import {auditWalletWorkBindings,EXPECTED_GIT_DB} from '../workers/unified-wallet/work-asset-binding-policy.mjs';
 
 function ledger(){
  const sql=new DatabaseSync(':memory:');
@@ -89,4 +90,26 @@ test('an awarded GIT without its global serial must remain pending issuance, not
  assert.equal((await readGitAsset(env,'owner')).credited,0);
  env.sql.exec('DROP TABLE gitcoin_serials');
  assert.equal((await readGitAsset(env,'owner')).status,'ledger_unavailable','missing authoritative serial ledger never means zero verified issuance');
+});
+
+test('reviewed GIT binding addition cannot erase production identity, recovery or secret bindings',()=>{
+ const before=[
+  {name:'BOT_WORK_SECRET',type:'secret_text'},
+  {name:'DB',type:'d1',id:'711b3e05-f318-4d30-9a67-4de2af92aa6d'},
+  {name:'IDENTITY_DB',type:'d1',id:'a1a973b2-a37c-4e1c-b68e-a73803238206'},
+  {name:'RECOVERY_ACCESS_AUD',type:'plain_text'},
+  {name:'RECOVERY_ACCESS_ISSUER',type:'plain_text'},
+  {name:'RECOVERY_OWNER_ACCOUNT_ID',type:'plain_text'},
+  {name:'RECOVERY_OWNER_EMAIL',type:'plain_text'}
+ ];
+ const after=[...before,{...EXPECTED_GIT_DB}];
+ assert.equal(auditWalletWorkBindings(before,after).safe,true);
+ assert.equal(auditWalletWorkBindings(before,after.filter(x=>x.name!=='BOT_WORK_SECRET')).safe,false,'never drop bot payout secret');
+ assert.equal(auditWalletWorkBindings(before,after.filter(x=>x.name!=='RECOVERY_OWNER_EMAIL')).safe,false,'never drop recovery owner association');
+ assert.equal(auditWalletWorkBindings(before,after.map(x=>x.name==='DB'?{...x,id:'00000000-0000-0000-0000-000000000000'}:x)).safe,false,'never swap live money D1');
+ assert.equal(auditWalletWorkBindings(before,after.map(x=>x.name==='GIT_DB'?{...x,id:'00000000-0000-0000-0000-000000000000'}:x)).safe,false,'never link a different GIT ledger');
+ assert.equal(auditWalletWorkBindings(before,before).safe,false,'missing new GIT binding is not a ready release');
+ assert.equal(auditWalletWorkBindings(before,[...after,{name:'BUBBLE_BITS_ENABLED',type:'plain_text'}]).safe,false,'cannot silently enable live minting');
+ assert.equal(auditWalletWorkBindings(before,[...after,{name:'GPT_COIN_ISSUER_PUBLIC_KEY',type:'plain_text'}]).safe,false,'issuer rollout is separate');
+ assert.equal(auditWalletWorkBindings(before,after.concat(after.find(x=>x.name==='GIT_DB'))).safe,false,'duplicated binding names block safe release');
 });
