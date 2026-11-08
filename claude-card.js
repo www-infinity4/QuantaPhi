@@ -24,7 +24,7 @@ function patchScript(patches,stamp){
    '[ "$(basename "$(git rev-parse --show-toplevel)")" = "'+name+'" ] || { echo "WRONG REPO"; exit 1; }\n'+
    '[ -z "$(git status --porcelain)" ] || { echo "DIRTY REPO — commit or stash your existing work before patching"; exit 1; }\n'+
    'git checkout -b claude-fix-'+stampText+' || exit 1\npython3 - <<\'ENDPY\' || exit 1\nimport json,pathlib\n'+
-   'def patch(path,old,new):\n    p=pathlib.Path(path);s=p.read_text()\n    assert s.count(old)==1,"no unique match: "+path\n    p.write_text(s.replace(old,new,1));print("patched",path)\n'+
+   'def patch(path,old,new):\n    p=pathlib.Path(path);s=p.read_text(encoding="utf-8")\n    assert s.count(old)==1,"no unique match: "+path\n    p.write_text(s.replace(old,new,1),encoding="utf-8");print("patched",path)\n'+
    list.map(p=>'patch(json.loads(r\'\'\''+jsonSafe(p.path)+'\'\'\'),json.loads(r\'\'\''+jsonSafe(p.old_str)+'\'\'\'),json.loads(r\'\'\''+jsonSafe(p.new_str)+'\'\'\'))').join('\n')+
    '\nENDPY\necho "patch applied ✓"\n'+
    'git remote set-url origin https://github.com/'+repo+'.git\n'+

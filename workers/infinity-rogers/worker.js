@@ -888,10 +888,12 @@ export default {
          const result=await handleGeminiCard(request,env);
          return new Response(result.body,{status:result.status,headers:{...headers(request)}});
        }
-       if(url.pathname==='/v1/claude/steward'){
+       if(url.pathname === '/v1/claude/steward'){
         const {handleSteward}=await import('./claude-steward.mjs');
         const result=await handleSteward(request,env);
-        return new Response(result.body,{status:result.status,headers:{...headers(request)}});
+        // Preserve the original Response status/body while adding first-party CORS.
+        for(const [key,value] of Object.entries(headers(request)))result.headers.set(key,value);
+        return result;
       }
       if(url.pathname===COLLAB_PATH){
         const {handleCollaboration}=await import('./ai-collaboration.mjs');

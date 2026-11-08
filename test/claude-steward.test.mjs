@@ -197,3 +197,22 @@ test('Claude client uses Android-compatible abort and prevents partial script ex
  assert.match(script,/git checkout -b claude-fix-202611081200 \|\| exit 1/);
  assert.match(script,/python3 - <<'ENDPY' \|\| exit 1/);
 });
+
+
+test('Steward exact patch matching uses bounded index search rather than split allocation',()=>{
+ const source=fs.readFileSync(new URL('../workers/infinity-rogers/claude-steward.mjs',import.meta.url),'utf8');
+ assert.doesNotMatch(source,/text\.split\(oldStr\)/);
+ assert.match(source,/text\.indexOf\(oldStr,offset\)/);
+});
+
+test('worker returns the signed Steward response while appending first-party CORS',()=>{
+ const source=fs.readFileSync(new URL('../workers/infinity-rogers/worker.js',import.meta.url),'utf8');
+ assert.match(source,/result\.headers\.set\(key,value\)/);
+ assert.match(source,/if\(url\.pathname === '\/v1\/claude\/steward'\)/);
+});
+
+test('Termux patch export uses deterministic UTF-8 file handling',()=>{
+ const source=fs.readFileSync(new URL('../claude-card.js',import.meta.url),'utf8');
+ assert.match(source,/p\.read_text\(encoding="utf-8"\)/);
+ assert.match(source,/p\.write_text\(s\.replace\(old,new,1\),encoding="utf-8"\)/);
+});

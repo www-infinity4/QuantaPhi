@@ -64,7 +64,11 @@ async function runTool(name,input,ctx){
    const oldStr=String(input.old_str??''),newStr=String(input.new_str??'');
    if(oldStr.length<8||oldStr.length>6000||newStr.length>8000)return 'old_str_must_be_8_to_6000_chars';
    const text=await sourceText(env,auth,fetcher,cache,input.repository,input.path);
-   const count=text.split(oldStr).length-1;
+   let count=0,offset=0;
+   while((offset=text.indexOf(oldStr,offset))!==-1){
+    count++;if(count>1)break;
+    offset+=oldStr.length;
+   }
    if(count!==1)return 'does_not_apply: old_str occurs '+count+' times (need exactly 1). Re-read and retry.';
    patches.push({repository:input.repository,path:input.path,old_str:oldStr,new_str:newStr,why:clip(input.why,400),verified:true});
    return 'verified_applies_once';
