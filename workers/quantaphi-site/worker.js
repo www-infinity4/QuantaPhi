@@ -404,6 +404,13 @@ const LEGACY_HANDOFF_HTML="<!doctype html><html><head><meta charset=\"utf-8\"><m
 export default {
  async fetch(request, env, ctx) {
   const incoming = new URL(request.url);
+  // The approved Shop LC products are served by a distinct Worker/D1 binding.
+  // No fallback to HTML scraping or visitor-provided rights flags.
+  if(incoming.pathname==='/api/shoplc/authorized-sale-feed'){
+   if(!['GET','HEAD'].includes(request.method))return Response.json({ok:false,error:'method_not_allowed'},{status:405,headers:{'Cache-Control':'no-store'}});
+   if(!env.SHOPLC_ADS)return Response.json({ok:false,error:'shoplc_ads_service_not_configured',items:[]},{status:503,headers:{'Cache-Control':'no-store'}});
+   return env.SHOPLC_ADS.fetch(request);
+  }
   if(incoming.pathname.startsWith('/api/bubbles/connections/')){
    if(!env.BUBBLES_CONNECTIONS)return Response.json({ok:false,error:'connections_not_configured'},{status:503,headers:{'Cache-Control':'no-store'}});
    return env.BUBBLES_CONNECTIONS.fetch(request);
