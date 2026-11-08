@@ -126,3 +126,16 @@ test('each core collector source has its own rights-verified real coin or slab r
  assert.match(referenceCoinImage('ngc').label,/NGC/i);
  assert.match(referenceCoinImage('vamworld').label,/Morgan/i);
 });
+
+test('withdrawn and closed lots must not be reported as successfully sold',()=>{
+ const seller=COIN_MARKETS.find(x=>x.id==='icollector');
+ const base='https://www.icollector.com/';
+ const titles=[
+  {url:base+'PCGS-VAM-4_i37331753',title:'1888-O PCGS VAM 4 Hot Lips',status:'withdrawn'},
+  {url:base+'PCGS-VAM-3_i37331754',title:'1891-CC PCGS VAM 3 Spitting Eagle',status:'ended'},
+  {url:base+'PCGS-VAM-2_i37331755',title:'1889-O PCGS VAM 2 Oval O',status:'sold'}
+ ];
+ const rows=normalizeCoinSaleResults({results:titles},seller);
+ assert.deepEqual(rows.map(x=>x.saleStatus),['withdrawn','closed','sold']);
+ assert.ok(rows.every(x=>x.forSale===false));
+});
