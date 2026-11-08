@@ -18,13 +18,13 @@ if(root){
   if(text!==undefined)el.textContent=text;
   return el;
  };
- function publisherCard(){
+ function publisherCard({src='/quick-card-builder.html?developer=1',title='QuantaPhi original Quick Card publisher',href='/quick-card-builder.html',label='Open the full Quick Card builder'}={}){
   const card=create('article','developer-quickcard');
   const frame=card.appendChild(create('iframe','developer-quickcard-frame'));
-  frame.title='QuantaPhi original Quick Card publisher';
+  frame.title=title;
   frame.loading='lazy';
   frame.referrerPolicy='strict-origin-when-cross-origin';
-  frame.src='/quick-card-builder.html?developer=1';
+  frame.src=src;
   frame.addEventListener('load',()=>{
    try{
     const inner=frame.contentDocument;
@@ -43,12 +43,14 @@ if(root){
    }catch{/* The original same-site builder link stays available. */}
   });
   const fallback=card.appendChild(create('p','developer-quickcard-fallback'));
-  const link=fallback.appendChild(create('a',null,'Open the full Quick Card builder'));
-  link.href='/quick-card-builder.html';
+  const link=fallback.appendChild(create('a',null,label));
+  link.href=href;
   return card;
  }
  const cards=BUILDER_CARDS.map((info,i)=>{
-  const node=info.id==='quickCardBuilderInline'?publisherCard():document.getElementById(info.id);
+  const node=info.id==='quickCardBuilderInline'?publisherCard():
+   info.id==='gptHtmlImplantInline'?publisherCard({src:'/gpt-html-implant.html?developer=1',title:'GPT HTML Implant creator',href:'/gpt-html-implant.html',label:'Open the GPT HTML importer'}):
+   document.getElementById(info.id);
   if(!node)return null; // Never generate a fake replacement for a missing builder.
   node.dataset.developerCard=info.id;
   const slide=create('article','developer-slide');
@@ -83,7 +85,7 @@ if(root){
    editor.hidden=!opening;
    toggle.setAttribute('aria-expanded',String(opening));
    toggle.textContent=opening?'Hide builder · keep my draft':info.action+' · in this card';
-   if(opening&&info.id==='quickCardBuilderInline'){
+   if(opening&&['quickCardBuilderInline','gptHtmlImplantInline'].includes(info.id)){
     const iframe=editor.querySelector('iframe.developer-quickcard-frame');
     if(iframe)iframe.loading='eager';
    }
