@@ -22,7 +22,7 @@ export function parseBranchStatusQuery(value){
     !/^[A-Za-z0-9][A-Za-z0-9._/-]{0,99}$/.test(branch))return null;
  return {repository,branch};
 }
-export function describeAuthenticatedBranchStatus(query,branchResult,ticketResult){
+export function describeAuthenticatedBranchStatus(query,branchResult,ticketResult,options={}){
  if(!query||!REPO.test(query.repository))return 'GitHub branch status not verified: invalid repository.';
  const same=branchResult?.ok===true&&branchResult.repository===query.repository&&
   branchResult.branch===query.branch&&Number.isSafeInteger(branchResult.repositoryId)&&branchResult.repositoryId>0;
@@ -36,7 +36,20 @@ export function describeAuthenticatedBranchStatus(query,branchResult,ticketResul
   return summary+' Saved Brain ticket status could not be verified.';
  const match=ticketResult.tickets.find(ticket=>ticket?.repository===query.repository&&
   typeof ticket.title==='string'&&ticket.title.toLowerCase().includes(query.branch.toLowerCase()));
- if(!match)return summary+' No exactly matching saved Brain ticket was identified in the latest available owner work list; this is not proof that no job was queued.';
+ if(!match){
+  // A recent ticket pointer is only a hint. Reconcile its exact ID and
+  // repository against THIS owner's fresh authenticated list before display.
+  // Different title means no demonstrated link to this requested branch.
+  const ticketId=options?.conversationTicketId;
+  const sameChat=typeof ticketId==='string'&&/^IW-[0-9]{8}-[A-Z0-9]{8}$/.test(ticketId)
+   ?ticketResult.tickets.find(ticket=>ticket?.id===ticketId&&ticket?.repository===query.repository)
+   :null;
+  const state=clean(sameChat?.status).slice(0,48);
+  if(/^(?:queued|ready|working|blocked|committed_unverified|merged_verified|deployed_verified|complete|completed|superseded)$/.test(state))
+   return summary+" This conversation's saved ticket reports "+state.replace(/_/g,' ')+
+    '. Its link to branch '+query.branch+' is unverified; this does not confirm runner completion.';
+  return summary+' No exactly matching saved Brain ticket was identified in the latest available owner work list; this is not proof that no job was queued.';
+ }
  const status=clean(match.status).slice(0,48);
  if(!/^(?:queued|ready|working|blocked|committed_unverified|merged_verified|deployed_verified|complete|completed|superseded)$/.test(status))
   return summary+' Saved Brain ticket status is unverified.';
