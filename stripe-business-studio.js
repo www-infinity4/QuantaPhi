@@ -30,7 +30,7 @@ form.addEventListener('submit',e=>{
    schemaVersion:draft.schemaVersion,displayName:draft.displayName,
    businessType:draft.businessType,sellerSlug:draft.sellerSlug,
    cardCount:draft.cardCount,firstThreeCards:draft.cards.slice(0,3),
-   unlistedRemaining:draft.cards.length-3,accountStatus:draft.accountStatus,
+   unlistedRemaining:Math.max(0,draft.cards.length-3),accountStatus:draft.accountStatus,
    checkoutEnabled:draft.checkoutEnabled,warnings:draft.warnings
   },null,2);
   status.textContent=draft.cardCount+' Stripe seller Quick Card drafts prepared. Nothing connected, published, charged or deposited.';
