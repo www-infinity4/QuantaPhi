@@ -381,19 +381,28 @@ function mountPclaResearch(root,card){
  const panel=section(root,'PCLA · SOURCE-BACKED RESEARCH','PicoCELA Mesh Networks');
  note(panel,'PicoCELA is a Japanese wireless-networking company. Infinity is the QuantaPhi visual theme, not a verified commercial partnership.');
  const list=node('ul','qcx-pcla-points');
- for(const info of [
+ for(const item of [
   'PicoCELA Backhaul Engine: multi-hop wireless backhaul extends Wi-Fi coverage.',
   'PicoManager: cloud management for connected mesh access points.',
-  'Review technology, independent financial data, and investment risks.'
- ])list.append(node('li','',info));
+  'Review technology and independent market risks.'
+ ])list.append(node('li','',item));
  panel.append(list);
  const sources=node('div','qcx-pcla-links');
  sources.append(link('Official PicoCELA',card.official),link('Market history',card.marketUrl));
  panel.append(sources);
- const close=typeof card.quoteCloseUsd==='number'?'
+ const close=typeof card.quoteCloseUsd==='number'?'USD '+card.quoteCloseUsd.toFixed(2):'unavailable';
+ note(panel,'Historical PCLA closing price: '+close+' on '+card.quoteDate+'. This is NOT a live quote.');
+ note(panel,'Corporate action: '+card.splitRatio+' reverse stock split in January 2026. Per-share price alone does not prove gains. Compare split-adjusted returns and share quantities. Not financial advice.');
+}
+export function mountCardTools(root,card){
  if(!root||!card)return;root.replaceChildren();
  root.classList.add('qcx-experience');root.append(node('p','qcx-eyebrow','INTERACTIVE CARD · '+String(card.category||card.kind||'Explore').toUpperCase()));
  const id=card.id;
+ if(id==='pcla-picocela'){
+  mountPclaResearch(root,card);
+  mountCardActions(root,card,{showSearch:false});
+  return;
+ }
  if(id==='x')mountIntegraXTour(root);
  if(id==='x')mountIntegraAutomationGuide(root);
  if(id==='chatgpt'){
