@@ -3,6 +3,7 @@ import {wantsPublicX,publicXRead} from './public-x.mjs';
 import {browserTool} from './browser.mjs';
 import {researchArticle} from './research.mjs';
 import {handleMcp,mcpTools,selectMcpTool} from './mcp.mjs';
+import {handlePublicQuickCardMcp} from './public-gpt-mcp.mjs';
 import {calculateOrganicBenchmark,organicSpeechArgs,describeOrganic} from './organic-benchmark.mjs';
 import {semanticDecision,interpretOwnerWork} from './semantic-intent.mjs';
 import {lookupKind,webSearch,currentWeather,compareWeather} from './search.mjs';
@@ -866,6 +867,8 @@ export async function finishSearchReply(original,summarize,timeoutMs=20000,userR
 }
 export default {async fetch(request,env){
  const url=new URL(request.url);
+ // Plugin-only public noauth route: static builder metadata and draft handoff, no cost or account access.
+ if(url.pathname==='/mcp/public-cards')return handlePublicQuickCardMcp(request);
  // External MCP clients use a dedicated bearer secret. Browser chat never receives it.
  if(url.pathname==='/mcp')return handleMcp(request,env,command=>runMcpRead(request,env,command));
  if(request.method==='GET'&&url.pathname==='/health')return response(request,{ok:true,service:'bubbles-tools',revision:'20261027-owner-github-reads-v1',tools:{githubRawReadFallback:'public-main-403-429-only',githubRootReadFallback:'public-html-403-429-v1',replyActionEnvelopes:'blocked-v1',readAgent:'bounded server-side planning, read tools, observation and synthesis; four calls maximum',news:'connected',chat:Boolean(env.AI),speech:Boolean(env.AI),resonance:'connected',organicMemory:'software-only deterministic tool; no biological claims',webSearch:'Infinity SearXNG on request',googleSearch:env.GOOGLE_SEARCH_API_KEY&&env.GOOGLE_SEARCH_CX?'legacy API configured':'SearXNG engine if available',weather:'Open-Meteo on request',githubPublicRead:'available; public repos only',githubCreate:env.BRAIN?'owner-authenticated executor; session required':'executor unavailable',mcp:'read-only; requires server-side BUBBLES_MCP_TOKEN'}});

@@ -1,10 +1,10 @@
 name: Bubbles real tool results
 on:
   pull_request:
-    paths: ['workers/bubbles-tools/**', 'bubbles-research.mjs', 'test/bubbles-research.test.mjs', 'test/bubbles-tools.test.mjs', 'test/bubbles-natural-tool-sweep.test.mjs', 'test/bubbles-source-read-ui.test.mjs', 'test/bubbles-card-source-routing.test.mjs', 'workers/bubbles-tools/search.mjs', 'test/bubbles-cloud-browser.test.mjs', 'bubbles-cloud-browser.mjs', 'test/bubbles-mcp.test.mjs', 'test/bubbles-live-lookup.test.mjs', 'test/bubbles-resonance.test.mjs', 'test/bubbles-stream-voice.test.mjs', 'test/bubbles-brain-actions.test.cjs', 'test/bubbles-progress-updates.test.cjs', 'test/bubbles-owner-immediate-dispatch.test.cjs', 'test/bubbles-owner-native-work-routing.test.cjs', 'bubbles-brain-actions.js', 'bubbles-ai.js', 'src/specialist-planner.js', 'test/specialist-planner.test.mjs', 'robot-brain-owner.js', 'bubbles.html', 'bubbles-ai.css', 'test/bubbles-owner-native-pairing.test.cjs', 'index.html', 'bubbles-stream-voice.js', '.github/workflows/bubbles-tools.yml']
+    paths: ['workers/bubbles-tools/**', 'bubbles-research.mjs', 'test/bubbles-research.test.mjs', 'test/bubbles-tools.test.mjs', 'test/bubbles-natural-tool-sweep.test.mjs', 'test/bubbles-source-read-ui.test.mjs', 'test/bubbles-card-source-routing.test.mjs', 'workers/bubbles-tools/search.mjs', 'test/bubbles-cloud-browser.test.mjs', 'bubbles-cloud-browser.mjs', 'test/bubbles-mcp.test.mjs', 'test/chatgpt-public-quick-card-mcp.test.mjs', 'quick-card-gpt-draft.mjs', 'quick-card-builder.js', 'test/bubbles-live-lookup.test.mjs', 'test/bubbles-resonance.test.mjs', 'test/bubbles-stream-voice.test.mjs', 'test/bubbles-brain-actions.test.cjs', 'test/bubbles-progress-updates.test.cjs', 'test/bubbles-owner-immediate-dispatch.test.cjs', 'test/bubbles-owner-native-work-routing.test.cjs', 'bubbles-brain-actions.js', 'bubbles-ai.js', 'src/specialist-planner.js', 'test/specialist-planner.test.mjs', 'robot-brain-owner.js', 'bubbles.html', 'bubbles-ai.css', 'test/bubbles-owner-native-pairing.test.cjs', 'index.html', 'bubbles-stream-voice.js', '.github/workflows/bubbles-tools.yml']
   push:
     branches: [main]
-    paths: ['workers/bubbles-tools/**', 'bubbles-research.mjs', 'test/bubbles-research.test.mjs', 'test/bubbles-tools.test.mjs', 'test/bubbles-natural-tool-sweep.test.mjs', 'test/bubbles-source-read-ui.test.mjs', 'test/bubbles-card-source-routing.test.mjs', 'workers/bubbles-tools/search.mjs', 'test/bubbles-mcp.test.mjs', 'test/bubbles-live-lookup.test.mjs', 'test/bubbles-resonance.test.mjs', 'test/bubbles-brain-actions.test.cjs', 'test/bubbles-progress-updates.test.cjs', 'test/bubbles-owner-immediate-dispatch.test.cjs', 'test/bubbles-owner-native-work-routing.test.cjs', 'bubbles-brain-actions.js', 'bubbles-ai.js', 'src/specialist-planner.js', 'test/specialist-planner.test.mjs', 'robot-brain-owner.js', 'bubbles.html', 'bubbles-ai.css', 'test/bubbles-owner-native-pairing.test.cjs', '.github/workflows/bubbles-tools.yml']
+    paths: ['workers/bubbles-tools/**', 'bubbles-research.mjs', 'test/bubbles-research.test.mjs', 'test/bubbles-tools.test.mjs', 'test/bubbles-natural-tool-sweep.test.mjs', 'test/bubbles-source-read-ui.test.mjs', 'test/bubbles-card-source-routing.test.mjs', 'workers/bubbles-tools/search.mjs', 'test/bubbles-mcp.test.mjs', 'test/chatgpt-public-quick-card-mcp.test.mjs', 'quick-card-gpt-draft.mjs', 'quick-card-builder.js', 'test/bubbles-live-lookup.test.mjs', 'test/bubbles-resonance.test.mjs', 'test/bubbles-brain-actions.test.cjs', 'test/bubbles-progress-updates.test.cjs', 'test/bubbles-owner-immediate-dispatch.test.cjs', 'test/bubbles-owner-native-work-routing.test.cjs', 'bubbles-brain-actions.js', 'bubbles-ai.js', 'src/specialist-planner.js', 'test/specialist-planner.test.mjs', 'robot-brain-owner.js', 'bubbles.html', 'bubbles-ai.css', 'test/bubbles-owner-native-pairing.test.cjs', '.github/workflows/bubbles-tools.yml']
 permissions:
   contents: read
 jobs:
@@ -30,9 +30,11 @@ jobs:
           node --test test/bubbles-current-memory.test.cjs test/bubbles-cloud-browser.test.mjs test/bubbles-star-continuation.test.mjs
           node --test test/bubbles-natural-tool-sweep.test.mjs
           node --test test/bubbles-source-read-ui.test.mjs test/bubbles-card-source-routing.test.mjs
-      - name: MCP lookup and research contract tests
+      - name: MCP lookup, public ChatGPT drafts and research contract tests
         run: |
-          node --test test/bubbles-mcp.test.mjs test/bubbles-live-lookup.test.mjs test/bubbles-research.test.mjs
+          node --check workers/bubbles-tools/public-gpt-mcp.mjs
+          node --check quick-card-gpt-draft.mjs
+          node --test test/bubbles-mcp.test.mjs test/chatgpt-public-quick-card-mcp.test.mjs test/bubbles-live-lookup.test.mjs test/bubbles-research.test.mjs
       - name: Check bubbles-owner-native-pairing
         run: node --test test/bubbles-owner-native-pairing.test.cjs
       - name: Check bubbles-resonance
