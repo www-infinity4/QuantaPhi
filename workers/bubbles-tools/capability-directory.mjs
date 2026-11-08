@@ -1,0 +1,82 @@
+/**
+ * Source-grounded Bubbles capability locator.
+ *
+ * These names map to existing Worker, website or authenticated Brain adapters.
+ * A listed capability is not a completed tool invocation, a provider entitlement,
+ * permission, installation or proof of a healthy upstream service.
+ * Never return credentials, wallet records, owner sessions or tool call arguments.
+ */
+const ITEMS=Object.freeze([
+ {id:'oracle.chat',title:'Bubbles conversation · Cloudflare GPT-OSS',scope:'public-chat',model:true,
+  description:'Normal Bubbles chat through its existing Cloudflare Workers AI binding.'},
+ {id:'web.search',title:'Web source search',scope:'public-read',
+  description:'Search for source excerpts using the existing configured search adapter.'},
+ {id:'web.read_page',title:'Public page reader',scope:'public-read',
+  description:'Read a permitted public HTML page without a logged-in browser or site writes.'},
+ {id:'news.headlines',title:'Dated news headlines',scope:'public-read',
+  description:'Read current dated headlines; unverified or stale results are not facts.'},
+ {id:'weather.current',title:'Town weather',scope:'public-read',
+  description:'Ask for weather with a named town; the adapter supplies the observed result.'},
+ {id:'github.read_repository',title:'Public GitHub repository reader',scope:'public-read',
+  description:'Inspect publicly accessible repositories, not private GitHub permissions.'},
+ {id:'github.read_file',title:'Public GitHub source-file reader',scope:'public-read',
+  description:'Read a permitted repository source file with its actual source URL.'},
+ {id:'github.read_commit',title:'Public GitHub commit reader',scope:'public-read',
+  description:'Inspect the commit details available to this read-only adapter.'},
+ {id:'resonance.calculate',title:'Resonance calculator',scope:'public-read',
+  description:'Calculate ideal LC frequency from explicit inductance/capacitance values and units.'},
+ {id:'organic.memory_benchmark',title:'Organic Computation digital recall test',scope:'public-read',
+  description:'Run the registered software-only memory simulation; no hardware claims.'},
+ {id:'public_x.read',title:'Public X source reader',scope:'public-read',
+  description:'Read the existing bounded public X feed; not authenticated X account access.'},
+ {id:'bubbles.image_read',title:'Gemma image understanding',scope:'public-read',model:true,
+  description:'Analyze a user-provided image through the existing Cloudflare Gemma reader.'},
+ {id:'bubbles.transcribe',title:'Bubbles voice transcription',scope:'public-read',model:true,
+  description:'Transcribe explicitly supplied audio with the existing Cloudflare AI adapter.'},
+ {id:'quick_card.open',title:'Existing Quick Card selection',scope:'client-only',
+  description:'Open or play registered cards in the website/Android interface; not a server action.'},
+ {id:'github.create_repository',title:'Signed GitHub repository creation',scope:'owner-only',brain:true,
+  description:'Requires independently authenticated owner Brain authorization and a verified work receipt.'},
+ {id:'robot_brain.owner_work',title:'Robot Brain source engineering',scope:'owner-only',brain:true,
+  description:'Signed owner jobs, test/review and GitHub writes live in the existing Brain executor, not in this public chat.'},
+ {id:'bubbles.memory.owner',title:'Signed owner conversation memory',scope:'owner-only',brain:true,
+  description:'Private owner context requires verified session and account scoping, never a public search.'}
+]);
+
+export function isCapabilityDiscoveryQuestion(input){
+ const raw=typeof input==='string'?input.trim().slice(0,600):'';
+ if(!raw||/^(?:(?:please|hey|hi|hello|okay|ok|bubbles)[\s,:]+)*(?:build|create|fix|repair|modify|delete|install|deploy|merge|commit|run)\b/i.test(raw))return false;
+ const q=raw.replace(/^(?:(?:please|hey|hi|hello|okay|ok|bubbles)[\s,:]+)+/i,'').trim();
+ if(!/\b(?:tools?|skills?|capabilities|abilities)\b/i.test(q))return false;
+ return /^(?:(?:what|which|where|how|show|list|find|discover|locate)\b|(?:can|could|would)\s+you\s+(?:show|list|find|locate|describe|tell)|do\s+you\s+have\b)/i.test(q);
+}
+
+export function capabilityDirectory(env={}){
+ return ITEMS.map(item=>{
+  const status=item.brain?(env.BRAIN?'owner_authorization_required':'owner_adapter_not_configured')
+   :item.model?(env.AI?'ai_binding_present_unverified':'ai_binding_missing')
+   :item.scope==='client-only'?'client_runtime_unverified':'registered_execution_unverified';
+  return {id:item.id,title:item.title,scope:item.scope,description:item.description,
+   status,executionVerified:false};
+ });
+}
+
+export function capabilityDirectoryReply(env={}){
+ const items=capabilityDirectory(env);
+ const publicItems=items.filter(x=>x.scope==='public-read').map(x=>x.id);
+ const ownerItems=items.filter(x=>x.scope==='owner-only').map(x=>x.id);
+ return 'Bubbles can locate these registered read tools: '+publicItems.join(', ')+
+  '. Ordinary chat uses oracle.chat; Quick Cards operate through their existing page/Android interface. '+
+  'Separate, signed owner adapters: '+ownerItems.join(', ')+
+  '. Owner sign-in and per-action authorization are required for GitHub writes or Robot Brain work. '+
+  'This is a directory, not a completed tool invocation. A real tool receipt must confirm each action.';
+}
+
+/** Bounded model guidance. No extra model call is needed to retrieve it. */
+export function capabilityContextFor(question,env={}){
+ const q=String(question||'');
+ if(!/\b(?:tool|skill|capabilit|github|repository|robot brain|browser|search|cloudflare|code|repair|integrat)\w*\b/i.test(q))return '';
+ return 'Bubbles existing capability locator: '+capabilityDirectory(env)
+  .map(x=>x.id+' ['+x.scope+', '+x.status+']').join('; ')+
+  '. Public read functions cannot authorize owner writes. Registered means available in source, not executed; use authenticated adapters and return only their actual receipts. Preserve original Bubbles voice, memory, Quick Cards and signed Brain tools.';
+}
