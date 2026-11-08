@@ -3,48 +3,223 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-08T18:01:29.217101Z",
+  "checked_at": "2026-11-08T18:31:21.718360Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "alex singleton",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T17:40:00Z",
+      "query": "joe milton",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-08T18:10:00Z",
       "related_news_urls": [
-        "https://www.denverbroncos.com/news/broncos-ilb-alex-singleton-named-afc-defensive-player-of-the-month",
-        "https://3downnation.com/2026/11/06/former-cfl-star-alex-singleton-has-been-the-best-backer-in-football-for-a-long-time-broncos-dc-vance-joseph/",
-        "https://athlonsports.com/nfl/denver-broncos/alex-singleton-chuba-hubbard-broncos-panthers"
+        "https://sports.yahoo.com/nfl/live/eagles-giants-score-live-updates-inactives-highlights-stats-where-to-watch-week-9-161640488.html",
+        "https://www.usatoday.com/story/sports/nfl/eagles/2026/11/08/joe-milton-philadelphia-eagles-quarterback-tanner-mckee/92629612007/",
+        "https://www.inquirer.com/eagles/sirianni-quarterback-change-tanner-mckee-joe-milton-20261106.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaw3jwpHDjSSCcQqhyRUska_jpXnwRyf6Uv3UE1z9kQ_1orqcZN-ixXpT_aZc",
-      "image_credit": "Denver Broncos",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrHKI36leL3iOD_z3eCsqxlc4MSDUD_RlHY72pjeCZkCYg0Tr1OUzBXyR0ID0",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.denverbroncos.com/news/broncos-ilb-alex-singleton-named-afc-defensive-player-of-the-month",
-          "title": "Broncos ILB Alex Singleton named AFC Defensive Player of the Month",
-          "publisher": "Denver Broncos",
+          "url": "https://sports.yahoo.com/nfl/live/eagles-giants-score-live-updates-inactives-highlights-stats-where-to-watch-week-9-161640488.html",
+          "title": "Giants vs. Eagles live updates, inactives, where to watch: Cam Skattebo inactive for New York, while Joe Milton III gets first career start over Tanner McKee for Philadelphia",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaw3jwpHDjSSCcQqhyRUska_jpXnwRyf6Uv3UE1z9kQ_1orqcZN-ixXpT_aZc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrHKI36leL3iOD_z3eCsqxlc4MSDUD_RlHY72pjeCZkCYg0Tr1OUzBXyR0ID0"
         },
         {
-          "url": "https://3downnation.com/2026/11/06/former-cfl-star-alex-singleton-has-been-the-best-backer-in-football-for-a-long-time-broncos-dc-vance-joseph/",
-          "title": "Former CFL star Alex Singleton has been 'the best backer in football for a long time': Broncos DC Vance Joseph",
-          "publisher": "3DownNation",
+          "url": "https://www.usatoday.com/story/sports/nfl/eagles/2026/11/08/joe-milton-philadelphia-eagles-quarterback-tanner-mckee/92629612007/",
+          "title": "Who is Joe Milton III? Eagles turn to QB with 'cannon' arm strength",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQaWwGPTRw9cABLF56UhvGLAqgVkZM7gzJNIYqHJcO42NF41aCitY9vzobagOM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEmfKeYJxCztHtGyJQVgUMwfHBDLTvMua9E32wqWjGy6qJYeRlvIBizvqvaNU"
         },
         {
-          "url": "https://athlonsports.com/nfl/denver-broncos/alex-singleton-chuba-hubbard-broncos-panthers",
-          "title": "How Alex Singleton's 101 Tackles Set Up a Collision With Chuba Hubbard's 540 Rushing Yards When the Broncos Visit Carolina",
-          "publisher": "Athlon Sports",
+          "url": "https://www.inquirer.com/eagles/sirianni-quarterback-change-tanner-mckee-joe-milton-20261106.html",
+          "title": "Why did the Eagles make the quarterback change to Joe Milton? Nick Sirianni explains.",
+          "publisher": "Inquirer.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQIP6nwEV88T3XIy9u6c3FtI3_IEIGuqyEOUBZj-KN-iOSrNtRETSBjT5-f_o"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRafIpIfaXzo7RJ1UYq5erxAcEWCiVQr5xw-Jy27EyQ4VFIu-bjLvpCoZRYK0s"
         }
       ]
     },
     {
-      "query": "nwsl",
+      "query": "olympiacos vs paok",
       "approx_searches": "500+",
-      "published_at": "2026-11-08T17:40:00Z",
+      "published_at": "2026-11-08T18:10:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/ckg5j981dj98t",
+        "https://www.goal.com/en-ca/news/live-stream-online-tv-where-to-watch-olympiacos-v-paok-thessaloniki-fc/blt5248736013a66a34",
+        "https://www.soyfutbol.com/en/news/hormiga-gonzalez-takes-the-field-olympiacos-vs.-paokwhen-and-where-to-watch-in-mexico-20261108-0010.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXKn6cbnsVgLRMBNRYaCnfa4BDtZragn8YfkFA-uyuSgiX7mGTlJOrsMO96wQ",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/ckg5j981dj98t",
+          "title": "Olympiakos vs PAOK: Greek Super League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXKn6cbnsVgLRMBNRYaCnfa4BDtZragn8YfkFA-uyuSgiX7mGTlJOrsMO96wQ"
+        },
+        {
+          "url": "https://www.goal.com/en-ca/news/live-stream-online-tv-where-to-watch-olympiacos-v-paok-thessaloniki-fc/blt5248736013a66a34",
+          "title": "Watch Olympiacos vs. PAOK Thessaloniki FC live today: Who is broadcasting the match on TV and via live stream?",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQnwlzf285-ywCUYEVa1Da4V4qILdlIsz9Ke4xOAo9ivODqd5pG1iHxVlmedA"
+        },
+        {
+          "url": "https://www.soyfutbol.com/en/news/hormiga-gonzalez-takes-the-field-olympiacos-vs.-paokwhen-and-where-to-watch-in-mexico-20261108-0010.html",
+          "title": "Hormiga González Takes the Field: Olympiacos vs. PAOK—When and Where to Watch in Mexico?",
+          "publisher": "Soy Futbol",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc-PwbOQ4mxzhCzjjejHT8N9P2FArSR8I8no4PiYCnmNeur1hDYj1zN8ZvEBw"
+        }
+      ]
+    },
+    {
+      "query": "van jefferson",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T18:10:00Z",
+      "related_news_urls": [
+        "https://www.hogshaven.com/pressers/453672/dan-quinn-opportunity-rams-van-jefferson-jaden-bradley-dyami-brown-treylon-burks",
+        "https://sports.yahoo.com/articles/dan-quinn-none-moments-were-180940425.html",
+        "https://commanderswire.usatoday.com/story/sports/nfl/commanders/2026/11/05/commanders-dan-quinn-rams-sean-mcvay/92618909007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdd5wz9_uVVx71KCTz3lF_8gOO4wvsFjNkoPC1EE4OzMIc3mELrwt4yGO5E1A",
+      "image_credit": "Hogs Haven",
+      "news": [
+        {
+          "url": "https://www.hogshaven.com/pressers/453672/dan-quinn-opportunity-rams-van-jefferson-jaden-bradley-dyami-brown-treylon-burks",
+          "title": "Dan Quinn: Opportunity for Van Jefferson and Jaden Bradley vs Rams",
+          "publisher": "Hogs Haven",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdd5wz9_uVVx71KCTz3lF_8gOO4wvsFjNkoPC1EE4OzMIc3mELrwt4yGO5E1A"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/dan-quinn-none-moments-were-180940425.html",
+          "title": "Dan Quinn: None of the moments were too big for rookies Antonio Williams, Sonny Styles",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLxupH7OZTzyWDLMVxod-Dvk1Zjnld3sUcU3sMv1KLm79xqQnDmsEpRQ_FO2o"
+        },
+        {
+          "url": "https://commanderswire.usatoday.com/story/sports/nfl/commanders/2026/11/05/commanders-dan-quinn-rams-sean-mcvay/92618909007/",
+          "title": "Commanders' Dan Quinn respects challenge of facing Sean McVay",
+          "publisher": "Commanders Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAsfrqikfyjQMdDibRxU15EGYs734zRroXZuIi8csGbFRR31Cy4OM8mYPAddc"
+        }
+      ]
+    },
+    {
+      "query": "estime",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T18:10:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/fantasy/football/news/saints-charlie-smyth-officially-elevated-to-kick-week-9/",
+        "https://www.nola.com/sports/saints/saints-believe-they-ve-fixed-charlie-smyth-s-biggest-weakness-ahead-of-his-latest-chance/article_7d43e2e6-9e6d-4d69-b6dd-47944fe4295c.html",
+        "https://sports.yahoo.com/articles/saints-kicker-orleans-makes-bold-002642336.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRgtyhxGxEG7i2Okxt9MXO4tXkT6SYFeNJ2RsRVSTb2-axRU5x1XlHHfRx6NM",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/fantasy/football/news/saints-charlie-smyth-officially-elevated-to-kick-week-9/",
+          "title": "Saints' Charlie Smyth: Officially elevated to kick Week 9",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRgtyhxGxEG7i2Okxt9MXO4tXkT6SYFeNJ2RsRVSTb2-axRU5x1XlHHfRx6NM"
+        },
+        {
+          "url": "https://www.nola.com/sports/saints/saints-believe-they-ve-fixed-charlie-smyth-s-biggest-weakness-ahead-of-his-latest-chance/article_7d43e2e6-9e6d-4d69-b6dd-47944fe4295c.html",
+          "title": "Saints believe they’ve fixed Charlie Smyth’s biggest weakness ahead of his latest chance",
+          "publisher": "NOLA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-NMf6Nn_9fEHA-XT2-I-aoSmJebw1gGbiUU_hRy9UGY_94ggr0ATIE8d_GvA"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/saints-kicker-orleans-makes-bold-002642336.html",
+          "title": "Who is Saints’ Kicker? New Orleans Makes Bold Daniel Carlson Decision",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTQy8usaonED9dN3Tvf3iVZL7eeROgKV0xcq454G0Z90yRA8__FXnvWJiyU78"
+        }
+      ]
+    },
+    {
+      "query": "beşiktaş vs gençlerbirliği",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T18:10:00Z",
+      "related_news_urls": [
+        "https://www.fanatik.com.tr/besiktas/live-besiktas-genclerbirligi-maci-ne-zaman-saat-kacta-hangi-kanalda-11ler-belli-oldu-2643790",
+        "https://twaslnews1.twaslnews.com/7331407/",
+        "https://www.yenisafak.com/spor/daha-2-dakikada-kirmizi-kart-itirazi-willfred-ndidi-oyundan-atilmali-miydi-eski-hakemden-flas-yorum-4870803"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhcMNJHleylgZ3CtOUTIPKjTMUc-RlwF4Z3egVU0sqpr_2MSDcwbZQht0FMQM",
+      "image_credit": "Fanatik",
+      "news": [
+        {
+          "url": "https://www.fanatik.com.tr/besiktas/live-besiktas-genclerbirligi-maci-ne-zaman-saat-kacta-hangi-kanalda-11ler-belli-oldu-2643790",
+          "title": "CANLI| Beşiktaş-Gençlerbirliği maçı ne zaman, saat kaçta, hangi kanalda? (11'LER BELLİ OLDU)",
+          "publisher": "Fanatik",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhcMNJHleylgZ3CtOUTIPKjTMUc-RlwF4Z3egVU0sqpr_2MSDcwbZQht0FMQM"
+        },
+        {
+          "url": "https://twaslnews1.twaslnews.com/7331407/",
+          "title": "Son 5 resmi maçta ev sahibi takım kazanamadı — Beşiktaş Vs Gençlerbirliği",
+          "publisher": "شبكة تواصل الإخبارية",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlWaTEXoWYRNpPDOiSGa43htA5ZLRb69S_dwGkvSHAqVv5fJRmkx3cE1gIUdU"
+        },
+        {
+          "url": "https://www.yenisafak.com/spor/daha-2-dakikada-kirmizi-kart-itirazi-willfred-ndidi-oyundan-atilmali-miydi-eski-hakemden-flas-yorum-4870803",
+          "title": "Daha 2. dakikada kırmızı kart itirazı: Willfred Ndidi oyundan atılmalı mıydı? Eski hakemden flaş yorum...",
+          "publisher": "Yeni Şafak",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXjq5FxCgzBRnkZAXuYol0W6_9GJfb_sZV9YzrCDKuwfoWZf52nQJUNbupo1A"
+        }
+      ]
+    },
+    {
+      "query": "bengals standings",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T18:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50402286/jessie-bates-falcons-bengals",
+        "https://roundtable.io/sports/nfl/bengals/players/ex-bengals-safety-reflects-on-his-time-in-cincinnati",
+        "https://www.si.com/nfl/bengals/onsi/jessie-bates-admits-he-still-thinks-about-bengals-ahead-of-nfl-trade-deadline-01m664bjsefg"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOBNv0aJn98RE-c-OKRS5fg3cb9tJA-9Ucp_C1Dkp54XUGpPEWiS8gLNHwqa8",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50402286/jessie-bates-falcons-bengals",
+          "title": "Bengals face Falcons S Jessie Bates III, evoking mixed emotions",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOBNv0aJn98RE-c-OKRS5fg3cb9tJA-9Ucp_C1Dkp54XUGpPEWiS8gLNHwqa8"
+        },
+        {
+          "url": "https://roundtable.io/sports/nfl/bengals/players/ex-bengals-safety-reflects-on-his-time-in-cincinnati",
+          "title": "Ex-Bengals Safety Reflects on His Time in Cincinnati",
+          "publisher": "roundtable.io",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJXtj3Y8o14fb_UCQXdYJ1WN_IYkdnZSQQhu0odExd56MufPr9Npw6AUFsy04"
+        },
+        {
+          "url": "https://www.si.com/nfl/bengals/onsi/jessie-bates-admits-he-still-thinks-about-bengals-ahead-of-nfl-trade-deadline-01m664bjsefg",
+          "title": "Jessie Bates Admits He Still Thinks About Bengals Ahead of NFL Trade Deadline",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKWqTlITFcH4PgLC27fKdBI3bVzoLpJ4-v63xNwNvRyfcsgihr4sqZLbVFb8I"
+        }
+      ]
+    },
+    {
+      "query": "nwsl playoffs",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T18:10:00Z",
       "related_news_urls": [
         "https://www.theguardian.com/football/2026/nov/07/nwsl-playoffs-kansas-city-current-angel-city-utah-royals-san-diego-wave",
         "https://www.nytimes.com/athletic/7761799/2026/11/07/kansas-city-victory-angel-city-nwsl-quarterfinal/",
@@ -77,282 +252,107 @@
       ]
     },
     {
-      "query": "michael strahan",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T17:40:00Z",
+      "query": "nique clifford",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-08T18:00:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/articles/michael-strahan-next-tv-move-125300079.html",
-        "https://people.com/michael-strahan-biggest-names-fashion-television-music-new-iconic-series-12230250",
-        "https://whatsondisneyplus.com/michael-strahans-iconic-fashion-coming-soon-to-abc-hulu-disney/"
+        "https://okcthunderwire.usatoday.com/story/sports/nba/thunder/2026/11/08/report-okc-thunder-acquire-nique-clifford-in-trade-with-kings/92678920007/",
+        "https://sports.yahoo.com/articles/3-nique-clifford-trade-destinations-222017481.html",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/08/nique-clifford-traded-to-oklahoma-city/92678946007/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRsLJfj2UD9UNF_ON9Q4t5pjwwfbvEwfmHjdWiFM-zTbANQhA6ZrKGC3W0LUSA",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJKNAFdG6JXBf_tvjKn8BX1gp-K57tcwsoFcTvJ4I-guSYrh4ZJHA_JVbLwxY",
+      "image_credit": "OKC Thunder Wire",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/michael-strahan-next-tv-move-125300079.html",
-          "title": "Michael Strahan’s Next TV Move Has Fans Calling Him an “Icon”",
-          "publisher": "Yahoo",
+          "url": "https://okcthunderwire.usatoday.com/story/sports/nba/thunder/2026/11/08/report-okc-thunder-acquire-nique-clifford-in-trade-with-kings/92678920007/",
+          "title": "Report: OKC Thunder acquire Nique Clifford in trade with Kings",
+          "publisher": "OKC Thunder Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRsLJfj2UD9UNF_ON9Q4t5pjwwfbvEwfmHjdWiFM-zTbANQhA6ZrKGC3W0LUSA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJKNAFdG6JXBf_tvjKn8BX1gp-K57tcwsoFcTvJ4I-guSYrh4ZJHA_JVbLwxY"
         },
         {
-          "url": "https://people.com/michael-strahan-biggest-names-fashion-television-music-new-iconic-series-12230250",
-          "title": "Michael Strahan Pulls Back the Curtain on the Biggest Names in Fashion, Television and Music in New Iconic Series",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6AuOmGQ32gXNxSl7RvnDECKj4pU0I8pJaO0WQiPr0GtQUpknNF-z0OohessY"
-        },
-        {
-          "url": "https://whatsondisneyplus.com/michael-strahans-iconic-fashion-coming-soon-to-abc-hulu-disney/",
-          "title": "“Michael Strahan’s Iconic Fashion” Coming Soon To ABC, Hulu & Disney+",
-          "publisher": "What's On Disney Plus",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOqlkuLTX6hLSYk-6KGSV2lwQbFpK_7RsaKFpLteGM1ad4YpDfaxyl-6pdI7w"
-        }
-      ]
-    },
-    {
-      "query": "vitória sc vs porto",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T17:30:00Z",
-      "related_news_urls": [
-        "https://www.abola.pt/noticias/fc-porto-duelo-de-guimaraes-com-o-sporting-de-amorim-a-mao-de-semear-2026110719395349764",
-        "https://www.sporttv.pt/noticias/866488/farioli-e-a-sequencia-vitoriosa-fica-para-tras",
-        "https://www.noticiasaominuto.com/desporto/3080247/vitoria-sc-fc-porto-o-assalto-ao-castelo-da-tranquilidade"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJv8t-5T8TVzfXXy6hc9mEZJN8b3vAOrr_2Y4gK_0tPkCwdtt-Jf3xm4hLAHI",
-      "image_credit": "A Bola",
-      "news": [
-        {
-          "url": "https://www.abola.pt/noticias/fc-porto-duelo-de-guimaraes-com-o-sporting-de-amorim-a-mao-de-semear-2026110719395349764",
-          "title": "FC Porto: duelo de Guimarães com o Sporting de Amorim à mão de semear",
-          "publisher": "A Bola",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJv8t-5T8TVzfXXy6hc9mEZJN8b3vAOrr_2Y4gK_0tPkCwdtt-Jf3xm4hLAHI"
-        },
-        {
-          "url": "https://www.sporttv.pt/noticias/866488/farioli-e-a-sequencia-vitoriosa-fica-para-tras",
-          "title": "Farioli e a sequência vitoriosa: \"Fica para trás\"",
-          "publisher": "Sport TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnBAs2j4G0tIikOJySgq0DNu-MhVv2JbtvwqsrTbicaZfPWuOpDEZyhznsLeo"
-        },
-        {
-          "url": "https://www.noticiasaominuto.com/desporto/3080247/vitoria-sc-fc-porto-o-assalto-ao-castelo-da-tranquilidade",
-          "title": "Vitória SC: FC Porto: O assalto ao castelo... da tranquilidade",
-          "publisher": "Notícias ao Minuto",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQx1_SxHeSfFc_v0BUe7quOZvrLW-Gbwjz1M-byO2jXYN0RY5Xa4gDqKHgKs-c"
-        }
-      ]
-    },
-    {
-      "query": "marshals tv show schedule change",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T17:30:00Z",
-      "related_news_urls": [
-        "https://people.com/why-isnt-marshals-on-tonight-12240393",
-        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/06/cbs-sunday-schedule-change-november-marshals-tracker/92639301007/",
-        "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/tracker-marshals-tv-tonight-ll-124111044.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAlo4VxIt5yjwjjugjzxkrHKC_drU-dQ4kUZR9xJmFHB3ViiQnk7tFo4zFSu0",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/why-isnt-marshals-on-tonight-12240393",
-          "title": "Why Isn’t Marshals on Tonight? What to Know About the Surprising Season 2 Schedule Change",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAlo4VxIt5yjwjjugjzxkrHKC_drU-dQ4kUZR9xJmFHB3ViiQnk7tFo4zFSu0"
-        },
-        {
-          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/06/cbs-sunday-schedule-change-november-marshals-tracker/92639301007/",
-          "title": "Why 'Marshals' and 'Tracker' won't be on air on CBS Sunday",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjgoVyetNtyOMq4gZJl3tKzWpoXjjZ6icaYi06KSOLH0o2B3wSFfEX4KeNmCM"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/tracker-marshals-tv-tonight-ll-124111044.html",
-          "title": "Are ‘Tracker’ & ‘Marshals’ New on TV Tonight? When They’ll Return Amid ‘Cupertino’ November 8 Takeover",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTshEquBvulTk0Dz4kM4qSXXI-ZusBB43Z2pAw_6xnxcvyWdBG3BpCoiEHOzwU"
-        }
-      ]
-    },
-    {
-      "query": "jack mccaffery",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T17:30:00Z",
-      "related_news_urls": [
-        "https://cbs2iowa.com/news/local/former-iowa-coach-fran-mccafferys-son-jack-diagnosed-with-hodgkin-lymphoma",
-        "https://richmondspiders.com/news/2026/11/8/mccaffery-to-take-medical-leave-from-mens-basketball-team",
-        "https://thespun.com/wnba/caitlin-clarks-boyfriends-family-asking-for-prayers-sunday"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa0VF1ZgBGC2DhWGD91n0fTBvz0W6gOkZCq-ROcJc2xSXFmXoWb44ElDOSWi4",
-      "image_credit": "KGAN",
-      "news": [
-        {
-          "url": "https://cbs2iowa.com/news/local/former-iowa-coach-fran-mccafferys-son-jack-diagnosed-with-hodgkin-lymphoma",
-          "title": "Former Iowa coach Fran McCaffery's son Jack diagnosed with Hodgkin lymphoma",
-          "publisher": "KGAN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa0VF1ZgBGC2DhWGD91n0fTBvz0W6gOkZCq-ROcJc2xSXFmXoWb44ElDOSWi4"
-        },
-        {
-          "url": "https://richmondspiders.com/news/2026/11/8/mccaffery-to-take-medical-leave-from-mens-basketball-team",
-          "title": "McCaffery to Take Medical Leave from Men's Basketball Team - University of Richmond Athletics",
-          "publisher": "Richmond Spiders",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBAIlNZgyC02yLVAP2hjOaYyqtAwuTRkOcXLhepQdEU61VX1qYkNjAj6GOVHk"
-        },
-        {
-          "url": "https://thespun.com/wnba/caitlin-clarks-boyfriends-family-asking-for-prayers-sunday",
-          "title": "Caitlin Clark’s Boyfriend’s Family Asking For Prayers Sunday",
-          "publisher": "The Spun",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4RCNn1AMbcEkDAKUurwtyAvzPqIo2D1oA9o6ZI44ivx_ksIhhzKFamRlj4CU"
-        }
-      ]
-    },
-    {
-      "query": "cardinals vs seahawks",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T17:30:00Z",
-      "related_news_urls": [
-        "https://www.seattletimes.com/sports/seahawks/cardinals-gardner-minshew-eager-for-northwest-return-to-face-seahawks/",
-        "https://sports.yahoo.com/articles/cardinals-vs-seahawks-prediction-pick-145004758.html",
-        "https://www.fieldgulls.com/seattle-seahawks-news/179381/seahawks-news-seahawks-look-to-get-right-versus-cardinals-today"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-N8Nojytq98qx_pe__jlFhoELom2tQqjWRwA_aX4G-lea1elMn95N8b6SitQ",
-      "image_credit": "The Seattle Times",
-      "news": [
-        {
-          "url": "https://www.seattletimes.com/sports/seahawks/cardinals-gardner-minshew-eager-for-northwest-return-to-face-seahawks/",
-          "title": "WSU great 'fired up' for PNW return to face Seahawks",
-          "publisher": "The Seattle Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-N8Nojytq98qx_pe__jlFhoELom2tQqjWRwA_aX4G-lea1elMn95N8b6SitQ"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/cardinals-vs-seahawks-prediction-pick-145004758.html",
-          "title": "Cardinals vs Seahawks Prediction, Pick, Odds for NFL Week 9",
+          "url": "https://sports.yahoo.com/articles/3-nique-clifford-trade-destinations-222017481.html",
+          "title": "3 Nique Clifford Trade Destinations As He Emerges As A Low-Cost Option",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgfqxJYclaeblX_Ticv0B0rph2lIkUtzd7mEHeqSmSSCQEgQ3L3BMS3wWTxAU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcAt0UFTyciKEv-7X-PDrXDqaFIV3CEWG2sea3PLAKzQLryOkd6yk-fhBxrlo"
         },
         {
-          "url": "https://www.fieldgulls.com/seattle-seahawks-news/179381/seahawks-news-seahawks-look-to-get-right-versus-cardinals-today",
-          "title": "Pre-Snap Reads: Seahawks look to get right versus Cardinals today",
-          "publisher": "Field Gulls",
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/08/nique-clifford-traded-to-oklahoma-city/92678946007/",
+          "title": "Nique Clifford traded to Oklahoma City",
+          "publisher": "HoopsHype",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTan9Ul0IPDNxmXibjqXTPKQfg4RK1nlNmK4AJeW50BeoqXVqHbI4XqNkfXVxk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9a59Ho6NfR-4miZIHLti3y1VnGKzFlnyf6kckh-pxJNPR2B35JsIrnL_3kF4"
         }
       ]
     },
     {
-      "query": "shedeur sanders",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T17:20:00Z",
+      "query": "lions game",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-08T18:00:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50409705/browns-qb-deshaun-watson-concussion-protocol",
-        "https://sports.yahoo.com/articles/weird-2-time-super-bowl-171832232.html",
-        "https://www.foxnews.com/outkick-sports/browns-shedeur-sanders-hype-video-first-start-season-social-media-cannot-handle"
+        "https://www.freep.com/story/sports/columnists/mitch-albom/2026/11/08/detroit-lions-jack-campbell-injury-mike-utley-reggie-brown/92623703007/",
+        "https://www.foxnews.com/outkick-sports/detroit-lions-wear-jack-campbell-jerseys-ahead-miami-dolphins-game-honor-injured-teammate",
+        "https://www.detroitnews.com/story/sports/nfl/lions/2026/11/07/jack-campbell-injury-update-detroit-lion-injured-reserve-nick-whiteside/92662957007/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0tQDEgOOO_jnZm8047GT43gTiY2o-TG5VuKzp6vpJSjTKB9IfT1ByA1PdK_E",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmRW3Mo1E95vlP4j6-a51rzTmPE48Mo0F4jwy50qCDrGBrZjNvlRFdizSueaA",
+      "image_credit": "Detroit Free Press",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50409705/browns-qb-deshaun-watson-concussion-protocol",
-          "title": "Browns QB Deshaun Watson out of concussion protocol",
-          "publisher": "ESPN",
+          "url": "https://www.freep.com/story/sports/columnists/mitch-albom/2026/11/08/detroit-lions-jack-campbell-injury-mike-utley-reggie-brown/92623703007/",
+          "title": "Mitch Albom: After injuries like Jack Campbell's, a question remains",
+          "publisher": "Detroit Free Press",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0tQDEgOOO_jnZm8047GT43gTiY2o-TG5VuKzp6vpJSjTKB9IfT1ByA1PdK_E"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmRW3Mo1E95vlP4j6-a51rzTmPE48Mo0F4jwy50qCDrGBrZjNvlRFdizSueaA"
         },
         {
-          "url": "https://sports.yahoo.com/articles/weird-2-time-super-bowl-171832232.html",
-          "title": "‘How Weird Is This?’ — 2-Time Super Bowl Champion Calls Out Browns HC Todd Monken’s Bizarre Deshaun Watson-Shedeur Sanders Decision",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5iKqcDW5nWiSYaF2un0Occ21zICPhuzcK3UVUxkkHUXhrF8qp6QQ3Uqaz5eY"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick-sports/browns-shedeur-sanders-hype-video-first-start-season-social-media-cannot-handle",
-          "title": "Browns' Shedeur Sanders gets hype video for first start of the season and social media cannot handle it",
+          "url": "https://www.foxnews.com/outkick-sports/detroit-lions-wear-jack-campbell-jerseys-ahead-miami-dolphins-game-honor-injured-teammate",
+          "title": "Detroit Lions wear Jack Campbell jerseys ahead of Miami Dolphins game to honor injured teammate",
           "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVsFy6wmNmyJzjUT0RJCpxwjzEjybJNrfZMU42TeDvCJORbEalt6-FwG97xzM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdGiYt3Gc3-a12GgN2RaOnhN1JBrT9AsF8mVbLmXHTBeHBI_koy9cvS8lNhHY"
+        },
+        {
+          "url": "https://www.detroitnews.com/story/sports/nfl/lions/2026/11/07/jack-campbell-injury-update-detroit-lion-injured-reserve-nick-whiteside/92662957007/",
+          "title": "Lions officially place Jack Campbell on injured reserve",
+          "publisher": "The Detroit News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTm02PIx_HdVBe4biDQksstku4cc0ojcl2HEfbocV7mlDJEepUkXw6pavxMBXM"
         }
       ]
     },
     {
-      "query": "iona vs st john's",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T17:20:00Z",
-      "related_news_urls": [
-        "https://nypost.com/2026/11/07/sports/ionas-sadiku-ibine-ayo-forged-deep-bond-with-rick-pitino/",
-        "https://sports.yahoo.com/articles/watch-iona-vs-no-13-130000599.html",
-        "https://www.usatoday.com/story/sports/ncaab/2026/11/08/iona-vs-st-johns-odds-picks-and-predictions/92673858007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-vm_IyfXemGFeOlBZIMUkgWnlAq5rhH-59ueYnF2m3_C0u3SxP5-xbeSdzWw",
-      "image_credit": "New York Post",
-      "news": [
-        {
-          "url": "https://nypost.com/2026/11/07/sports/ionas-sadiku-ibine-ayo-forged-deep-bond-with-rick-pitino/",
-          "title": "Sadiku Ibine Ayo forged deep bond with Rick Pitino — even if that meant leaving St. John’s to thrive",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-vm_IyfXemGFeOlBZIMUkgWnlAq5rhH-59ueYnF2m3_C0u3SxP5-xbeSdzWw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/watch-iona-vs-no-13-130000599.html",
-          "title": "How to watch Iona vs. No. 13 St. John’s: TV, live stream info, storylines for Sunday’s game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6-_B0nnI5tEHVAsGYGzR1NH45tLWM6oPJOcWaph0iKz3_b5mQ_Wvxq3Y5TUA"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/ncaab/2026/11/08/iona-vs-st-johns-odds-picks-and-predictions/92673858007/",
-          "title": "Iona Gaels vs. St. John's Red Storm odds, picks and predictions",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_1-T-XQvhN6jFka532VvLHQ1gFAchvtm45PzzXs05DjgobeO7cSSAZUqokiI"
-        }
-      ]
-    },
-    {
-      "query": "nwsl schedule",
+      "query": "chankas cyc vs alianza lima",
       "approx_searches": "200+",
-      "published_at": "2026-11-08T17:20:00Z",
+      "published_at": "2026-11-08T18:00:00Z",
       "related_news_urls": [
-        "https://bleacherreport.com/articles/25530136-updated-nwsl-playoff-bracket-2026-and-quarterfinals-schedule-after-latest-results",
-        "https://www.theguardian.com/football/2026/nov/06/gotham-fc-nwsl-playoffs",
-        "https://www.nytimes.com/athletic/7760926/2026/11/07/your-nwsl-playoff-rooting-guide-plus-the-ultimate-college-football-slate/"
+        "https://depor.com/futbol-peruano/descentralizado/alianza-lima-vs-los-chankas-tito-ordonez-acuso-falta-de-seguridad-en-andahuaylas-para-pablo-guede-y-directivos-que-forman-parte-de-la-delegacion-en-andahuaylas-liga-1-noticia/",
+        "https://ovacion.pe/noticias/alianza-lima/fotos-alianza-entreno-andahuaylas-quedo-listo-duelo-ante-chankas",
+        "https://www.futbolperuano.com/liga-1/noticias/comision-disciplinaria-advierte-a-los-chankas-por-infringir-el-reglamento-de-la-liga-1-610650"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSV7t_p8CvSGAbwBcGmRpxdKAFCnP2yNYcZaiKNlOzBfY1IIr-91uGGUEssQPU",
-      "image_credit": "Bleacher Report",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREsrcMRqUt1OAX2iRfJRlNpA2uZKYQYzqDWT_IVdg0cbWuir_VjUdwQUPbU5Q",
+      "image_credit": "Depor",
       "news": [
         {
-          "url": "https://bleacherreport.com/articles/25530136-updated-nwsl-playoff-bracket-2026-and-quarterfinals-schedule-after-latest-results",
-          "title": "Updated NWSL Playoff Bracket 2026 and Quarterfinals Schedule After Latest Results",
-          "publisher": "Bleacher Report",
+          "url": "https://depor.com/futbol-peruano/descentralizado/alianza-lima-vs-los-chankas-tito-ordonez-acuso-falta-de-seguridad-en-andahuaylas-para-pablo-guede-y-directivos-que-forman-parte-de-la-delegacion-en-andahuaylas-liga-1-noticia/",
+          "title": "Pablo Guede sin espacio en Andahuaylas: El reclamo de Alianza Lima contra Los Chankas por falta de seguridad",
+          "publisher": "Depor",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSV7t_p8CvSGAbwBcGmRpxdKAFCnP2yNYcZaiKNlOzBfY1IIr-91uGGUEssQPU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREsrcMRqUt1OAX2iRfJRlNpA2uZKYQYzqDWT_IVdg0cbWuir_VjUdwQUPbU5Q"
         },
         {
-          "url": "https://www.theguardian.com/football/2026/nov/06/gotham-fc-nwsl-playoffs",
-          "title": "How Gotham FC re-tooled for another NWSL title run – this time as favorites",
-          "publisher": "The Guardian",
+          "url": "https://ovacion.pe/noticias/alianza-lima/fotos-alianza-entreno-andahuaylas-quedo-listo-duelo-ante-chankas",
+          "title": "(FOTOS) Alianza entrenó en Andahuaylas y quedó listo para duelo ante Los Chankas",
+          "publisher": "ovacion.pe",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6-Drn2g_uszp7O0tAMmYl5g3VGGddqatpRnd3hAvgLz2QGKXc5sIEmemXFl0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTv5-Dwl8CLelzpDfUMo0PeVAaX-QGcYgf91bfQQaiioNT2JQS-QZvjB6GvT5U"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7760926/2026/11/07/your-nwsl-playoff-rooting-guide-plus-the-ultimate-college-football-slate/",
-          "title": "Your NWSL playoff rooting guide, plus the ultimate college football slate - The Athletic",
-          "publisher": "The New York Times",
+          "url": "https://www.futbolperuano.com/liga-1/noticias/comision-disciplinaria-advierte-a-los-chankas-por-infringir-el-reglamento-de-la-liga-1-610650",
+          "title": "Comisión Disciplinaria advierte a Los Chankas por infringir el reglamento de la Liga 1",
+          "publisher": "Futbolperuano.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMEKJRTny_vUk7kGnCBfhxFXB1M2jXTUI9rispjoF9wBwYU2kP0AxP14iWGvI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBKYbsG5rNe6T3IurMRZMGSb0fLqQsRJwKGYXGnOc3MrYl5o8a_-FQO8I14b8"
         }
       ]
     }
