@@ -1080,7 +1080,26 @@ const actions=create('div','ba-actions');
 const mic=create('button','ba-mic','🎙 Enable listening');mic.type='button';mic.setAttribute('aria-pressed','false');
 const speak=create('button','ba-speak','🔇 Voice off');speak.type='button';speak.setAttribute('aria-pressed','false');
 const send=create('button','ba-send','Send');send.type='submit';
-actions.append(photoRow,mic,speak,send);composer.append(input,photoPreview,actions);
+// Claude is a model choice inside the existing Bubbles conversation, not a replacement chat.
+// Selecting a model changes routing only: owner auth and repair approvals remain separate.
+const modelRow=create('div','ba-model-row');
+modelRow.style.cssText='display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:3px 0 8px;';
+const modelLabel=create('label','ba-muted','Chat model');modelLabel.setAttribute('for','ba-chat-model');
+const modelChoice=create('select','ba-field');
+modelChoice.id='ba-chat-model';modelChoice.setAttribute('aria-label','Chat model');
+modelChoice.style.cssText='min-height:44px;min-width:140px;max-width:230px;font-size:16px;flex:1;';
+const bubblesModel=create('option','','Bubbles');bubblesModel.value='bubbles';
+const claudeModel=create('option','','Claude');claudeModel.value='claude';claudeModel.disabled=embedded;
+modelChoice.append(bubblesModel,claudeModel);modelChoice.value='bubbles';
+const modelNote=create('span','ba-muted','Claude can inspect and propose fixes; deployment needs separate approval.');
+modelNote.style.cssText='font-size:12px;line-height:1.4;flex:3;min-width:170px;';
+modelRow.append(modelLabel,modelChoice,modelNote);
+modelChoice.addEventListener('change',()=>{
+ const usingClaude=modelChoice.value==='claude';
+ input.placeholder=usingClaude?'Message Claude, or say Fix Bubbles…':nativeOverlay?'Message Bubbles or paste a code…':'Say something, ask a question, or describe a task…';
+ status.textContent=usingClaude?'Claude selected. Repairs are proposals until independently authorized.':'Bubbles selected.';
+});
+actions.append(photoRow,mic,speak,send);composer.append(modelRow,input,photoPreview,actions);
 // Account connector pairing stays beside the message box in website and APK chat.
 const connectorCodeButton=create('button','ba-control ba-connector-code','Create one-time connection code');
 connectorCodeButton.type='button';
@@ -2385,6 +2404,28 @@ async function consultExternalAi(question,mode='gemini_first',fromVoice=false,re
   else if(config.voice)speakText(completed?'AI consultation finished.':'AI consultation not confirmed.');}
  nativeSpeechPending=false;busy=false;send.disabled=false;setOrbState(voiceEnabled?'listening':'idle');drainVoiceTurns();
 }
+window.__bubblesRecentMessages=()=>messages.slice(-10).map(m=>({role:m.role,text:String(m.text||'').slice(0,600)}));
+// Claude steward: owner-verified Claude that can read source and prepare verified patches. Never deploys.
+async function askClaudeSteward(text,mode){
+ const steward=window.ClaudeSteward;
+ if(!steward||embedded||busy)return false;
+ busy=true;send.disabled=true;setOrbState('busy');
+ display(text,'you');messages.push({role:'user',text});persistChat();
+ let reply='',confirmed=false;
+ try{
+  const result=await steward.ask(text,{mode,evidence:window.__bubblesRecentMessages().slice(0,-1),inline:true});
+  confirmed=result?.ok===true&&typeof result.reply==='string'&&Boolean(result.reply.trim());
+  reply=confirmed?String(result.reply).slice(0,1500):'Claude did not confirm a response. Your draft is preserved; check existing Brain tickets before retrying.';
+  if(result?.patches?.length)reply+='\n\n'+result.patches.length+' proposed patch(es), verified against source but not applied. Open Claude to inspect details.';
+  if(result?.tickets?.length)reply+='\n\n'+result.tickets.map(ticket=>(ticket.deduplicated?'Existing ':'Recorded ')+String(ticket.status||'unknown')+' ticket '+ticket.id).join('; ')+'.';
+  if(result?.partial)reply+='\nClaude stopped early. The listed receipts are partial; no deployment was verified.';
+ }catch(error){reply='Claude steward not confirmed: '+String(error.message||error).slice(0,160)+'.';}
+ display(reply,'ai');messages.push({role:'assistant',text:reply});messages=messages.slice(-400);persistChat();
+ status.textContent=confirmed?'Claude steward replied.':'Claude response not confirmed. Your message remains in the composer.';
+ busy=false;send.disabled=false;setOrbState(voiceEnabled?'listening':'idle');
+ drainVoiceTurns();
+ return confirmed;
+}
 window.addEventListener('bubbles:ai-consult',event=>{
  if(embedded||busy||turnPending||!event?.detail?.question)return;
  if(!['gemini_first','gemini_claude_review','claude_only'].includes(event.detail.mode))return;
@@ -2407,6 +2448,30 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  let failedTurn=false;
  try{
  if(spoken&&await consumeOwnerCodeFromChat(spoken,fromVoice))return;
+ // A deliberate Claude choice applies to the main Bubbles composer and skips
+ // unrelated Oracle/tool routing. No text or attachments may be silently lost.
+ if(!embedded&&modelChoice.value==='claude'){
+  let decision;
+  try{
+   const {routeClaudeTurn}=await import('/bubbles-claude-routing.mjs?v=20261108-claude-choice1');
+   decision=routeClaudeTurn(modelChoice.value,spoken,Boolean(pendingImage||pendingImages.length));
+  }catch(error){
+   status.textContent='Claude routing unavailable: '+String(error.message||error).slice(0,110)+'. Your message was preserved.';
+   return;
+  }
+  if(decision?.mode==='unsupported_image'){
+   status.textContent='Claude currently accepts text only. Switch to Bubbles for attached images; the draft is preserved.';
+   return;
+  }
+  if(decision?.mode==='empty')return;
+  if(!window.ClaudeSteward){
+   status.textContent='Claude is not loaded on this page. No message was sent. Your draft is preserved.';
+   return;
+  }
+  const confirmed=await askClaudeSteward(decision.prompt,decision.mode);
+  if(confirmed)clearSentComposer();
+  return;
+ }
  // A new turn begins without granting credits; Personal Context must verify first.
  if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'turn_started'}}));
  // Read the separately authenticated Bubbles owner archive BEFORE routing tools.
@@ -2454,6 +2519,12 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     return;
    }
   }
+ const stewardAsk=/^(?:(?:hey|ok|okay|please)[,\s]+)*(?:bubbles[,\s]+)?(fix yourself|claude[,:]\s*[\s\S]{3,2400})$/i.exec(spoken);
+ if(stewardAsk&&window.ClaudeSteward&&!embedded){
+  clearSentComposer();
+  const fixing=/^fix yourself/i.test(stewardAsk[1]);
+  if(await askClaudeSteward(fixing?'Fix yourself. Find what Bubbles is getting wrong and prepare the fix.':stewardAsk[1].replace(/^claude[,:]\s*/i,''),fixing?'fix':'chat'))return;
+ }
  const aiConsult=/^(?:bubbles[, ]+)?ask (gemini then claude|gemini|claude)\s*:\s*([\s\S]{3,2400})$/i.exec(spoken);
  if(aiConsult){
   clearSentComposer();

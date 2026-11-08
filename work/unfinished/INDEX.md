@@ -47,6 +47,8 @@ Read [README](README.md) and root [AGENTS.md](../../AGENTS.md) before editing co
 | Power Chain bulk-buy | [#1145](https://github.com/www-infinity4/QuantaPhi/issues/1145) | [draft PR #1260](https://github.com/www-infinity4/QuantaPhi/pull/1260) | 🟡 | unknown | unknown / unknown | Independent review and deployment/phone acceptance after CI |
 | Bubbles ecosystem knowledge (generated public-repo manifest in bubbles-tools) | [#1659](https://github.com/www-infinity4/QuantaPhi/issues/1659) | [TICKET-1659](TICKET-1659.md) · branch bubbles-ecosystem-knowledge | 🟡 | 40% estimated, source only; CI and live check pending | 1 / 1–2 | Open PR, exact-head CI, review, merge, live synthetic question |
 
+| Bubbles Claude Steward · selectable Bubbles/Claude model and proposed self-repair | [#1855](https://github.com/www-infinity4/QuantaPhi/issues/1855) | [TICKET-1855](TICKET-1855.md) · [PR #1856](https://github.com/www-infinity4/QuantaPhi/pull/1856) | 🟡 | 63% estimated (5/8 acceptance groups); current source/CI proven, independent review/merge/live outstanding | 3 / unknown | Obtain independent security APPROVED review; then permitted guarded merge and verify Cloudflare + Android production |
+
 **Never treat unknown as zero or fabricate 70%.** If the same issue covers multiple jobs, create one scoped numbered issue for the specific build after deduplication, then a `TICKET-<number>.md` checkpoint. New tickets are added as links here in a PR. The red/yellow dots here are preliminary routing indicators only; verify live status and leases before assigning.
 
 ## Ticket checkpoint template
