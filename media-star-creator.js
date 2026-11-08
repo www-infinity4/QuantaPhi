@@ -205,6 +205,35 @@
   createBtn("Build with Omni Phi","ms-creator-button",()=>build("Omni"));
   form.append(actions,feedback);
   panel.append(form,preview);
+  const ledgerPanel=el('section','ms-creator-ledger');
+  ledgerPanel.append(el('h3','','My Infinity view awards'));
+  ledgerPanel.append(el('p','ms-creator-intro',
+    'Creator view awards come from Infinity, not viewer wallets. Pending issuer awards are not spendable. Curated paid episode receipts are a separate ledger.'));
+  const ledgerAction=el('button','ms-creator-button','Check my creator ledger');
+  ledgerAction.type='button';
+  const ledgerState=el('div','ms-creator-ledger-status');
+  ledgerState.setAttribute('role','status');
+  ledgerAction.addEventListener('click',async()=>{
+    ledgerState.textContent='Checking my verified StarQuest account…';
+    try{
+      const api=window.StarQuestCloudLedger;
+      if(typeof api?.productionClaims!=='function')throw Error('ledger_bridge_missing');
+      const result=await api.productionClaims();
+      if(!result?.ok)throw Error('ledger_unavailable');
+      ledgerState.replaceChildren();
+      ledgerState.append(el('strong','',
+        String(Number(result.pendingInfinityViewAwards)||0)+' pending Infinity view award receipts · not spendable'));
+      ledgerState.append(el('p','ms-creator-intro',
+        'Actual settled, spendable production coins: 0 until independently verified issuance and a successful wallet receipt.'));
+      for(const entry of (Array.isArray(result.infinityViewAwards)?result.infinityViewAwards:[]).slice(0,8)){
+        const item=el('p','ms-creator-ledger-row');
+        item.textContent=String(entry.content_title||'Media Star')+' · 1 proposed StarCoin · '+
+          String(entry.verification_status||'pending evidence')+' · '+String(entry.payout_status||'unfunded');
+        ledgerState.append(item);
+      }
+    }catch{ledgerState.textContent='Creator ledger is not available for this signed-in wallet. No new payment or claim was created.'}
+  });
+  ledgerPanel.append(ledgerAction,ledgerState);panel.append(ledgerPanel);
   const lookup=el('section','ms-production-lookup');
   lookup.append(el('h3','','Search the public production credits ledger'));
   lookup.append(el('p','ms-creator-intro','Search a credited creator, actor or guest. All proposed tokens remain unfunded; a credit is not a bank account or verified ownership.'));
