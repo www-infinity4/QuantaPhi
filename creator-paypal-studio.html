@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Prepare one PayPal creator connection for up to 500 approved QuantaPhi Quick Cards. Secure local draft only.">
+<link rel="canonical" href="https://quantaphi.org/creator-paypal-studio.html">
+<title>Creator PayPal Studio · QuantaPhi</title>
+<style>
+:root{color-scheme:light;font:18px/1.55 system-ui,-apple-system,sans-serif;color:#213549;background:#eef3f8}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(160deg,#e9f6fa,#f7f8fc 42%,#edeaf8);min-height:100vh}
+main{max-width:870px;margin:0 auto;padding:16px 15px 96px}
+nav{display:flex;align-items:center;justify-content:space-between;gap:9px;flex-wrap:wrap;margin:0 0 12px}
+a{color:#145985;text-underline-offset:3px}nav a{font-size:15px;font-weight:800}
+header{background:linear-gradient(125deg,#18395b,#245c83 70%,#595c94);border-radius:20px;color:#fff;padding:23px 22px;box-shadow:0 9px 22px #113b5b20}
+header a{color:#efffff}.eyebrow{font-size:12px;letter-spacing:.15em;font-weight:900;text-transform:uppercase}
+h1{font-size:clamp(29px,6vw,39px);line-height:1.16;margin:13px 0 8px}
+h2{font-size:22px;line-height:1.25;margin:0 0 12px}
+h3{font-size:17px;margin:9px 0}p{margin:9px 0 12px}
+.panel{margin:15px 0;padding:20px;background:#fff;border:1px solid #cbdae7;border-radius:17px}
+.status{background:#edf3fa;border-left:4px solid #6b91b3;padding:12px;border-radius:8px;font-size:16px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{display:block;font-weight:780;font-size:16px}
+input,textarea{display:block;width:100%;font:17px/1.45 system-ui,sans-serif;min-height:46px;border:1px solid #9db3c6;border-radius:10px;padding:10px 12px;margin-top:6px;background:#fff;color:#152a3c}
+textarea{min-height:150px;resize:vertical}
+small,.small{font-size:14px;color:#4d6278;line-height:1.4}
+.actions{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0}
+button,.link-action{min-height:46px;padding:10px 16px;border:1px solid #9db6c8;border-radius:12px;background:#fff;color:#244b68;font:800 16px/1.4 system-ui,sans-serif;cursor:pointer}
+button.primary{background:#234c80;color:#fff;border-color:#234c80}
+button[disabled]{cursor:not-allowed;opacity:.58}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #2096c6;outline-offset:3px}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;overflow-y:auto;max-height:330px;border:1px solid #cad8e4;border-radius:12px;background:#eff4f8;padding:12px;font:13px/1.5 ui-monospace,Consolas,monospace;color:#223950}
+#creatorPayPalStatus{font-size:16px;font-weight:650}
+ol{margin-left:0;padding-left:22px}li{padding:4px 0}
+@media(max-width:460px){main{padding:10px 10px 94px}.panel{padding:15px}.grid{grid-template-columns:1fr}header{padding:20px 16px}.actions button{flex:1 1 100%}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body><main>
+<nav><a href="/">← QuantaPhi</a><a href="/quick-card-builder.html">Quick Card Builder</a><a href="/bubbles.html">Bubbles</a></nav>
+<header>
+<p class="eyebrow">INFINITY® · ORACLE OCTAVES · CREATOR TOOLS</p>
+<h1>Creator PayPal Studio</h1>
+<p>Set up a reusable monetization template for one creator and up to 500 different Quick Cards. The account connects once; each card has its own approved price and content rights.</p>
+<p><strong>PayPal not connected.</strong> This is a local draft workbench, not a banking portal or live checkout. No PayPal account, payment, bank connection, receipt, or creator earnings can be verified here yet.</p>
+</header>
+<section class="panel" aria-label="First merchant sign-in">
+<h2>1 · Secure PayPal merchant onboarding</h2>
+<p>Use PayPal's official website to create or upgrade an eligible business account. Complete identity and payout verification on PayPal only. QuantaPhi must separately obtain PayPal platform partner approval before it can automatically connect additional creators.</p>
+<p><a class="link-action" href="https://www.paypal.com/us/business/open-business-account" target="_blank" rel="noopener noreferrer">Open official PayPal Business signup ↗</a></p>
+<p class="status">Connection status: <strong>Not connected / PayPal platform authorization not verified</strong>. Never paste passwords, tax IDs, routing numbers or bank statements into this page or Bubbles.</p>
+</section>
+<section class="panel" aria-labelledby="batchHeading">
+<h2 id="batchHeading">2 · Build a reusable Quick Card sales template</h2>
+<p>Prepare a <strong>draft only</strong>. The creator must sign in and approve an account connection, and each card must pass source, ownership and moderation review before real PayPal checkout is enabled.</p>
+<form id="creatorPayPalBatch" autocomplete="off">
+<div class="grid">
+<label>Public creator handle <input id="creatorPayPalSlug" name="creatorSlug" placeholder="fred" minlength="2" maxlength="70" pattern="[a-z0-9][a-z0-9_-]{1,69}" required><small>Draft label, not proof of account ownership.</small></label>
+<label>USD price per card <input id="creatorPayPalPrice" name="usdPrice" inputmode="decimal" placeholder="1.00" maxlength="8" required><small>Use 1.00 for $1.00; change per card after drafting if authorized.</small></label>
+</div>
+<label>Quick Card IDs · one per line or separated by commas
+<textarea id="creatorPayPalCardIds" name="cardIds" maxlength="45000" required placeholder="fred-card-001
+fred-card-002
+fred-card-003"></textarea>
+<small>Up to 500 existing or planned creator-owned card identifiers. This tool does not publish them.</small></label>
+<div class="actions">
+<button class="primary" id="creatorPayPalPreview" type="submit">Prepare 500-card template</button>
+<button id="creatorPayPalExport" type="button" disabled>Save JSON template</button>
+<button id="creatorPayPalCopy" type="button" disabled>Copy template</button>
+<button id="creatorPayPalClear" type="button">Clear draft</button>
+</div>
+</form>
+<p id="creatorPayPalStatus" role="status" aria-live="polite">No template prepared yet. No payments will be created.</p>
+<h3>Template preview</h3>
+<pre id="creatorPayPalOutput" tabindex="0">No card pricing template has been generated.</pre>
+</section>
+<section class="panel" aria-label="Connection and launch safety">
+<h2>3 · Activate only after verified authorization</h2>
+<ol>
+<li>QuantaPhi obtains approval for <a href="https://developer.paypal.com/platforms/seller-onboarding" target="_blank" rel="noopener noreferrer">PayPal's seller-onboarding program</a> and creates a secure backend connection.</li>
+<li>Each creator signs in to PayPal and expressly grants permission. QuantaPhi verifies the callback, merchant eligibility, account scope and revocation status.</li>
+<li>Every card gets a genuine creator-ownership/right-to-sell check, price approval, refund terms and reviewed interactive media.</li>
+<li>Real checkout requires an authorized order, PayPal's verified capture and signature-checked webhook before any creator earnings are marked paid.</li>
+</ol>
+<p class="status">Payments cannot be switched on by editing this JSON. No automatic USD or Star Coin transfer, PayPal partner fee, bank charge, or advertiser invoice occurs here. Platform fees require a separate signed agreement and provider approval.</p>
+<p class="small">Reference: <a href="https://developer.paypal.com/payment-links-buttons/create-payment-link/" target="_blank" rel="noopener noreferrer">PayPal Payment Links for a merchant's first standalone sale</a>. A manually created payment link is not the same as a verified QuantaPhi creator checkout or platform partner grant.</p>
+</section>
+</main>
+<script type="module" src="/creator-paypal-studio.js?v=20261107-creator1"></script>
+</body></html>
