@@ -68,3 +68,12 @@ test('creator ledger view reads pending Infinity awards from signed backend, nev
  assert.match(src,/not spendable/i);
  assert.doesNotMatch(src,/\bMintStarCoin\s*\(/);
 });
+
+test('creator rights proof is an explicit signed pending claim, never an automatic issuance',()=>{
+ assert.match(src,/Submit creator rights claim/);
+ assert.match(src,/claimMediaStarCreator\(/);
+ assert.match(src,/rightsAttestation:true/);
+ assert.match(src,/registeredContentId/);
+ assert.match(src,/pending_identity_and_rights_review/);
+ assert.doesNotMatch(src,/unverified_claim_paid/);
+});
