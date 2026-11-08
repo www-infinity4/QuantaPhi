@@ -14,7 +14,7 @@ export const LEGAL_SOURCES=Object.freeze([
 ]);
 export const LEGAL_TOPICS=Object.freeze([
  {id:'play',name:'Google Play registration and testing',question:'What documents, account ownership decisions, closed tests and verifiable approvals are required before submitting Bubbles to Google Play?',sourceIds:['play-account','play-testing','play-policy']},
- {id:'privacy',name:'Microphone, recordings and privacy',question:'How should the Bubbles app disclose and limit microphone use, recordings, cross-app permissions, data retention and account deletion?',sourceIds:['privacy-ftc','play-policy']},
+ {id:'privacy',name:'Privacy, microphone and recordings',question:'How should the Bubbles app disclose and limit microphone use, recordings, cross-app permissions, data retention and account deletion?',sourceIds:['privacy-ftc','play-policy']},
  {id:'copyright',name:'Copyright and code ownership',question:'What records of original code, contributor agreements, AI-generated content and third-party licenses should an attorney review?',sourceIds:['copyright-office','wex-contract']},
  {id:'trademark',name:'Bubbles and QuantaPhi trademarks',question:'What name/logo searches, goods-and-services classifications and attorney clearance work may be appropriate?',sourceIds:['trademark-uspto']},
  {id:'contracts',name:'Hosting, model and GitHub agreements',question:'What supplier licenses, API permissions, employment/contractor IP assignments and provider terms should an attorney check?',sourceIds:['wex-contract','copyright-office']},
