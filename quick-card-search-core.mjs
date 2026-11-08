@@ -1,9 +1,14 @@
 import {TINYFISH_CARDS} from './tinyfish-card-catalog.mjs';
 import {HOUSING_QUICK_CARD,HOUSING_ALIASES} from './disability-housing-core.mjs';
 import {HOUSING_HELP_RESOURCES,HOUSING_RESOURCE_ALIASES,housingResourceCard} from './housing-help-catalog.mjs';
+export const PI_SINGER_QUICK_CARD=Object.freeze({id:'pi-singer',name:'Pi Singer · π Music Studio',
+ official:'https://quantaphi.org/apps/pi-singer.html',feature:'Play Pi Singer',
+ description:'Interactive original π-digit music generator, live visualizer and optional microphone pitch experiment.',
+ kind:'Interactive GPT App',route:'/apps/pi-singer.html',shareImage:'/assets/gpt-implant-cover.svg'});
 const normalized=value=>String(value||'').normalize('NFKD').replace(/\p{M}/gu,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const aliases=Object.freeze({bk:'burger-king',burgerking:'burger-king',mcdonalds:'mcdonalds'});
 export function lookupQuickCard(id){
+ if(id===PI_SINGER_QUICK_CARD.id)return PI_SINGER_QUICK_CARD;
  if(id===HOUSING_QUICK_CARD.id)return HOUSING_QUICK_CARD;
  if(typeof id==='string'&&id.startsWith('housing-help-'))return housingResourceCard({id:id.slice('housing-help-'.length)});
  if(typeof id!=='string'||!Object.hasOwn(TINYFISH_CARDS,id))return null;
@@ -20,6 +25,8 @@ export function searchQuickCards(query,{limit=4}={}){
  const q=normalized(String(query||'').slice(0,2000));if(!q)return [];
  const compact=q.replace(/ /g,''),alias=aliases[compact]||'',words=q.split(' ');
  const ranked=[];
+ if(/^(?:pi singer|pi music|pi synthesizer|π singer|pi-singer)$/.test(q)||q.includes('pi singer'))
+   ranked.push({card:PI_SINGER_QUICK_CARD,score:1200});
  const housingPhrase=HOUSING_ALIASES.some(alias=>(' '+q+' ').includes(' '+normalized(alias)+' '));
  if(housingPhrase||q==='usda'||(/\b(?:disability|disabled|ssi|ssdi)\b/.test(q)&&/\b(?:home|homes|house|housing|loan)\b/.test(q)))ranked.push({card:HOUSING_QUICK_CARD,score:1100});
  for(const resource of HOUSING_HELP_RESOURCES){
