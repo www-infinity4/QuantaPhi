@@ -3,340 +3,324 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-08T01:01:39.657197Z",
+  "checked_at": "2026-11-08T01:32:12.611940Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "magic vs warriors",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-08T00:40:00Z",
+      "query": "jon gruden",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-08T01:20:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/golden-state-warriors-announce-injury-082041661.html",
-        "https://dubnationhq.com/p/preview-porzingis-retires-sort-of",
-        "https://www.si.com/nba/magic/onsi/orlando-magic-down-another-starter-against-warriors-preview-injuries-starters-how-to-watch-01m6vzmr2fpm"
+        "https://sports.yahoo.com/articles/raiders-back-jon-gruden-wants-195538944.html",
+        "https://en.as.com/nfl/jon-gruden-rips-los-angeles-chargers-and-offensive-coordinator-mike-mcdaniel-f202611-n//",
+        "https://www.joebucsfan.com/2026/11/gruden-brothers-very-confident-in-a-bears-victory/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmgGRx-9pxJf24yXMrkx49qYQp47BWzu1CoduoVGFJYxC8EExQbyV_WpHlccU",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdDFP6yLQRl90gg8iV1NeWKrIEqIW8F6QDR-eGqzcAdtoWcbOOPhCMa36PDws",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/golden-state-warriors-announce-injury-082041661.html",
-          "title": "Golden State Warriors Announce Injury Report vs. Orlando Magic (Nov. 7)",
+          "url": "https://sports.yahoo.com/articles/raiders-back-jon-gruden-wants-195538944.html",
+          "title": "“Raiders Need Me Back”: Jon Gruden Wants Tom Brady-Owned Franchise to Hire Him Amid NFL Lawsuit",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmgGRx-9pxJf24yXMrkx49qYQp47BWzu1CoduoVGFJYxC8EExQbyV_WpHlccU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdDFP6yLQRl90gg8iV1NeWKrIEqIW8F6QDR-eGqzcAdtoWcbOOPhCMa36PDws"
         },
         {
-          "url": "https://dubnationhq.com/p/preview-porzingis-retires-sort-of",
-          "title": "Preview: Porzingis retires (sort of), Warriors keep rising",
-          "publisher": "Dub Nation HQ",
+          "url": "https://en.as.com/nfl/jon-gruden-rips-los-angeles-chargers-and-offensive-coordinator-mike-mcdaniel-f202611-n//",
+          "title": "Jon Gruden rips Los Angeles Chargers and offensive coordinator Mike McDaniel",
+          "publisher": "Diario AS",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFJ3KI4KmT3rxPVrafGQTOqdYt4iVaPz_qSNAXzcUZwGLzJfbX3u7FG86K4L4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkr47k6ijxzCa75hbq-9L92Qp9hKoORMQxxEJyR24vQjGsKHHO3_w8hanb_jE"
         },
         {
-          "url": "https://www.si.com/nba/magic/onsi/orlando-magic-down-another-starter-against-warriors-preview-injuries-starters-how-to-watch-01m6vzmr2fpm",
-          "title": "Orlando Magic down another starter against Warriors: Preview, Injuries, Starters, How to Watch",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.joebucsfan.com/2026/11/gruden-brothers-very-confident-in-a-bears-victory/",
+          "title": "Gruden Brothers Very Confident In A Bears Victory",
+          "publisher": "JoeBucsFan.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShdYv5bLPxgcskR-yOFmADZi1h7JZvr78mQEInHC3_ZoyjuPhBjMVoCJGf3Yw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1pAG3SitvfcqP5R5yQgfNb1EYebCv7u43hKPnECpflhOisn1hz-7AXSjZsIk"
         }
       ]
     },
     {
-      "query": "vanderbilt football",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T00:40:00Z",
-      "related_news_urls": [
-        "https://hailstate.com/news/2026/11/6/football-mississippi-state-returns-home-to-face-vanderbilt-on-homecoming",
-        "https://www.yahoo.com/news/slideshows/mississippi-state-football-vs-vanderbilt-220145868.html",
-        "https://www.usatoday.com/sports/ncaaf/event/2026/2968593/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=6"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8ggAk7cyDFAJ4Zc0wzL1gl6rtG6-U9aS6j3lp0C8ExiKOW1ZNAE-3N0BTb5U",
-      "image_credit": "Mississippi State - Official Athletics Website",
-      "news": [
-        {
-          "url": "https://hailstate.com/news/2026/11/6/football-mississippi-state-returns-home-to-face-vanderbilt-on-homecoming",
-          "title": "Mississippi State Returns Home to Face Vanderbilt on Homecoming",
-          "publisher": "Mississippi State - Official Athletics Website",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8ggAk7cyDFAJ4Zc0wzL1gl6rtG6-U9aS6j3lp0C8ExiKOW1ZNAE-3N0BTb5U"
-        },
-        {
-          "url": "https://www.yahoo.com/news/slideshows/mississippi-state-football-vs-vanderbilt-220145868.html",
-          "title": "Mississippi State football vs Vanderbilt, see top photos of AJ Swann vs Jared Curtis",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_8sfiKfV27CUQMpv_-MOYSheGO_00LAwJjAsGdtjv1HPUic72D_2dikL3to0"
-        },
-        {
-          "url": "https://www.usatoday.com/sports/ncaaf/event/2026/2968593/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=6",
-          "title": "Vanderbilt Commodores at Mississippi State Bulldogs - NCAAF Game Summary - Nov 07, 2026",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQC4pQUOVepKdjq3gAY8gHy4lt981NbPz0yaG5GZO8QoPkFxeUOT-METdYZD_k"
-        }
-      ]
-    },
-    {
-      "query": "michigan football score",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T00:40:00Z",
-      "related_news_urls": [
-        "https://www.woodtv.com/sports/football-frenzy/high-school-football-frenzy-district-finals-highlights-november-6-2026/",
-        "https://www.wilx.com/2026/11/07/friday-night-frenzy-district-finals-highlights-scores/",
-        "https://www.mhsaa.com/sports/football/stories/1st-goal-2026-playoffs-week-2-preview"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS8-Ce3RjzgrHwgps-VyrsjeFX5Enf_A9PRjTL8hJ8IurITxk4PiJrj97vhxeY",
-      "image_credit": "WOODTV.com",
-      "news": [
-        {
-          "url": "https://www.woodtv.com/sports/football-frenzy/high-school-football-frenzy-district-finals-highlights-november-6-2026/",
-          "title": "Football Frenzy highlights: Nov. 6, 2026, district finals",
-          "publisher": "WOODTV.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS8-Ce3RjzgrHwgps-VyrsjeFX5Enf_A9PRjTL8hJ8IurITxk4PiJrj97vhxeY"
-        },
-        {
-          "url": "https://www.wilx.com/2026/11/07/friday-night-frenzy-district-finals-highlights-scores/",
-          "title": "Friday Night Frenzy District Finals Highlights and Scores",
-          "publisher": "WILX",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqUevNh-ww3VAKDjkKropB7xpiHeb5SlRHEoL_VrIHv7et-ogzIK-O89AB_Vo"
-        },
-        {
-          "url": "https://www.mhsaa.com/sports/football/stories/1st-goal-2026-playoffs-week-2-preview",
-          "title": "1st & Goal: 2026 Playoffs Week 2 Preview",
-          "publisher": "Michigan High School Athletic Association",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAPCjrqokrVlxKEkarMqW8bjY0Lh4ddCEhuvE8-SAIEth1q81mJNqf8YbSY2M"
-        }
-      ]
-    },
-    {
-      "query": "américa - deportivo cali",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T00:40:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17485515/protesta-america-antes-del-clasico-jugadores-reclamarian-pagos-pendientes",
-        "https://www.elpais.com.co/deportes/a-que-hora-abren-las-puertas-del-pascual-guerrero-para-el-clasico-america-vs-deportivo-cali-esto-debe-saber-0635.html",
-        "https://www.valledelcauca.gov.co/publicaciones/90990/baron-rojo-y-frente-radical-verde-acuerdan-vivir-el-clasico-vallecaucano-en-paz/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_zXDBIiBlcJWQP0KSAS-qZkC70NqiMyeMgVlMx15SHKNKf4_-6LLW0lzwIgg",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17485515/protesta-america-antes-del-clasico-jugadores-reclamarian-pagos-pendientes",
-          "title": "¿Protesta en América antes del clásico? Jugadores reclamarían pagos pendientes",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_zXDBIiBlcJWQP0KSAS-qZkC70NqiMyeMgVlMx15SHKNKf4_-6LLW0lzwIgg"
-        },
-        {
-          "url": "https://www.elpais.com.co/deportes/a-que-hora-abren-las-puertas-del-pascual-guerrero-para-el-clasico-america-vs-deportivo-cali-esto-debe-saber-0635.html",
-          "title": "¿A qué hora abren las puertas del Pascual Guerrero para el clásico América vs. Deportivo Cali? Esto debe saber",
-          "publisher": "El País",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvNRQ56KCY28O0twua6BGyaAAM3CKQjDqGKjK9QlULe7VfHVB720IlgBdfUKc"
-        },
-        {
-          "url": "https://www.valledelcauca.gov.co/publicaciones/90990/baron-rojo-y-frente-radical-verde-acuerdan-vivir-el-clasico-vallecaucano-en-paz/",
-          "title": "Barón Rojo y Frente Radical Verde acuerdan vivir el clásico vallecaucano en paz",
-          "publisher": "Gobernación del valle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNmXoYc6TDYV8rfxbtzSKBFmdh4uhd0KTgrD1iRlscruZKCfp4bdm-lIn7H00"
-        }
-      ]
-    },
-    {
-      "query": "toluca - monterrey",
+      "query": "peter berg",
       "approx_searches": "5000+",
-      "published_at": "2026-11-08T00:30:00Z",
+      "published_at": "2026-11-08T01:20:00Z",
       "related_news_urls": [
-        "https://www.si.com/es-us/las-posibles-alineaciones-titulares-del-partido-toluca-vs-monterrey-7-11-2026",
-        "https://www.univision.com/noticias/a-que-hora-y-donde-ver-toluca-vs-rayados-y-pumas-vs-america-video",
-        "https://www.reforma.com/vuelve-orbelin-al-cuadro-de-rayados/ar3310310?redirectcancha=1"
+        "https://madison.com/life-entertainment/local/movies-tv/article_6f2d268d-8113-46c8-a012-e37f4df8129f.html",
+        "https://www.wmtv15news.com/2026/11/02/mosquito-bowl-draws-crowd-lancaster-theater-dave-schreiners-hometown/",
+        "https://www.imdb.com/news/ni66097062/?ref_=nmnw_art_perm"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT62mJHi4dbgMW3iavhJ1Q3VyaAzsxJn3TRIBPG_q9aCjtUmD6a6EVnEk_tt2o",
-      "image_credit": "Sports Illustrated",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrlKyjJCH28D8GiOeQykp1Z-C8_xOtcyY0z0_B5q3EvgQ5dyXb8tk10A5gXTE",
+      "image_credit": "Wisconsin State Journal",
       "news": [
         {
-          "url": "https://www.si.com/es-us/las-posibles-alineaciones-titulares-del-partido-toluca-vs-monterrey-7-11-2026",
-          "title": "Las posibles alineaciones titulares del partido Toluca vs Monterrey",
+          "url": "https://madison.com/life-entertainment/local/movies-tv/article_6f2d268d-8113-46c8-a012-e37f4df8129f.html",
+          "title": "Mosquito Bowl from Netflix tells story of two former Badgers football players; Kollege Klub transformed into WWII-era tavern",
+          "publisher": "Wisconsin State Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrlKyjJCH28D8GiOeQykp1Z-C8_xOtcyY0z0_B5q3EvgQ5dyXb8tk10A5gXTE"
+        },
+        {
+          "url": "https://www.wmtv15news.com/2026/11/02/mosquito-bowl-draws-crowd-lancaster-theater-dave-schreiners-hometown/",
+          "title": "‘The Mosquito Bowl’ draws crowd to Lancaster theater in Dave Schreiner’s hometown",
+          "publisher": "WMTV 15 NEWS",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRY2Goe6jjuOIBA2XEAql_as6evjX7LSkl8LVTGuXPHTyysL5vhFvt0zczakVY"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66097062/?ref_=nmnw_art_perm",
+          "title": "Netflix's New Action-Packed War Epic Officially Debuts Thrilling Rt Audience Score",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRA-Q0iNjKpApueDrMyL7TSdNNdqkm8nXoZFNhH5k-hqkGzvAdgtemaLbwsLcc"
+        }
+      ]
+    },
+    {
+      "query": "craig dandridge",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T01:20:00Z",
+      "related_news_urls": [
+        "https://www.dawgnation.com/gameday/zykie-helton-craig-dandridge-tabbed-top-freshmen-by-espn/2JY4INTYNNETDNEN5VUCPFNUBQ/",
+        "https://sports.yahoo.com/articles/two-georgia-football-freshmen-earn-205821120.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVqoJ4FZLD4QBRh22tskciWcmSlBAT8M2Y2kZJWS-oF-0Ggm26lpMD3Au6H94",
+      "image_credit": "DawgNation",
+      "news": [
+        {
+          "url": "https://www.dawgnation.com/gameday/zykie-helton-craig-dandridge-tabbed-top-freshmen-by-espn/2JY4INTYNNETDNEN5VUCPFNUBQ/",
+          "title": "ESPN praises 2 Georgia freshmen as Kirby Smart aims to accelerate development",
+          "publisher": "DawgNation",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVqoJ4FZLD4QBRh22tskciWcmSlBAT8M2Y2kZJWS-oF-0Ggm26lpMD3Au6H94"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/two-georgia-football-freshmen-earn-205821120.html",
+          "title": "Two Georgia football freshmen earn ESPN recoginition",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXC-hRjfhSw2zva5YSUvQNRcyUxYAxQjZbilrsFZruyPNLH9yJb97-4AFI2AA"
+        }
+      ]
+    },
+    {
+      "query": "musician",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-08T01:10:00Z",
+      "related_news_urls": [
+        "https://www.npr.org/2026/11/07/nx-s1-6029751/how-a-musician-turned-singing-sands-into-an-instrument",
+        "https://www.pennlive.com/entertainment/2026/11/beloved-rock-musician-dies-after-battling-long-term-illness-our-hearts-are-broken.html",
+        "https://www.dallasobserver.com/music/north-texas-musicians-remember-celebrated-dallas-drummer-guyton-sanders-40728522/"
+      ],
+      "image_url": null,
+      "image_credit": "NPR",
+      "news": [
+        {
+          "url": "https://www.npr.org/2026/11/07/nx-s1-6029751/how-a-musician-turned-singing-sands-into-an-instrument",
+          "title": "How a musician turned singing sands into an instrument",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://www.pennlive.com/entertainment/2026/11/beloved-rock-musician-dies-after-battling-long-term-illness-our-hearts-are-broken.html",
+          "title": "Beloved rock musician dies after battling long-term illness: ‘Our hearts are broken’",
+          "publisher": "PennLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPlRdxr_37RNlqxfE5CAj5c16JSbr21Ue7fZ_ME9Z_rdJYDYnS5AewjJw-I74"
+        },
+        {
+          "url": "https://www.dallasobserver.com/music/north-texas-musicians-remember-celebrated-dallas-drummer-guyton-sanders-40728522/",
+          "title": "North Texas musicians remember celebrated Dallas drummer Guyton Sanders",
+          "publisher": "Dallas Observer",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDPSWIpMyDd77chjdPt-ztdX9G4_H1OkiKa7RIAt9MwIsx7BlHS5FpMx8wMys"
+        }
+      ]
+    },
+    {
+      "query": "jordan faison",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-08T01:10:00Z",
+      "related_news_urls": [
+        "https://irishsportsdaily.com/s/28488/notre-dame-wr-jordan-faison-unfazed",
+        "https://247sports.com/video/cfb-player-to-watch-notre-dames-jordan-faison-14626267"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZNerYmH0jfiLlJwDieCrtW-PiG61__6Tr8QW7xjL-CxQK29s4cnFKTm82_0w",
+      "image_credit": "Irish Sports Daily",
+      "news": [
+        {
+          "url": "https://irishsportsdaily.com/s/28488/notre-dame-wr-jordan-faison-unfazed",
+          "title": "Notre Dame WR Jordan Faison Unfazed",
+          "publisher": "Irish Sports Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZNerYmH0jfiLlJwDieCrtW-PiG61__6Tr8QW7xjL-CxQK29s4cnFKTm82_0w"
+        },
+        {
+          "url": "https://247sports.com/video/cfb-player-to-watch-notre-dames-jordan-faison-14626267",
+          "title": "CFB Player to Watch: Notre Dame's Jordan Faison",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbywEqeQxAvHMiNco4uQ_sHUy44wwmVIDqTG4OmkVoEIwYTSchYKCpS-2iruE"
+        }
+      ]
+    },
+    {
+      "query": "red wings vs avalanche",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T01:10:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/detroit-red-wings-colorado-avalanche-game-preview-november-7-2026",
+        "https://sports.yahoo.com/articles/open-thread-detroit-red-wings-010000350.html",
+        "https://www.si.com/nhl/red-wings/onsi/news/red-wings-vs-avalanche-projected-lines-injuries-how-to-watch"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/detroit-red-wings-colorado-avalanche-game-preview-november-7-2026",
+          "title": "Red Wings at Avalanche projected lineups",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/open-thread-detroit-red-wings-010000350.html",
+          "title": "Open Thread: Detroit Red Wings @ Colorado Avalanche 7:00 P.M. MST)",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5wpxCDvflhW6shP3tA672BWwSKVphPM7WqHvykBhLMiGjysgHP5lptCjKW7M"
+        },
+        {
+          "url": "https://www.si.com/nhl/red-wings/onsi/news/red-wings-vs-avalanche-projected-lines-injuries-how-to-watch",
+          "title": "Red Wings vs. Avalanche Projected Lines, Injuries and How to Watch",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT62mJHi4dbgMW3iavhJ1Q3VyaAzsxJn3TRIBPG_q9aCjtUmD6a6EVnEk_tt2o"
-        },
-        {
-          "url": "https://www.univision.com/noticias/a-que-hora-y-donde-ver-toluca-vs-rayados-y-pumas-vs-america-video",
-          "title": "Toluca vs. Rayados y Pumas vs. América: A qué hora y dónde ver",
-          "publisher": "Univision",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPFGL0bh4NaHD0dWb6JYxSFds-5vwdacdN3PTFTf6NTY65b5clwGThjDVeWMk"
-        },
-        {
-          "url": "https://www.reforma.com/vuelve-orbelin-al-cuadro-de-rayados/ar3310310?redirectcancha=1",
-          "title": "Vuelve Orbelín al cuadro de Rayados",
-          "publisher": "Reforma",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNqGkof2x_4e5DqFNNpGoIDP_S-kmKXMyRwR00MpS0asbDpEC9Mx4Au2S4O50"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkq3_E28HZ6-qtypSuCds1_KVaX95uXyOoot7GrpUF5bYEOL8dPAMIXYhobNo"
         }
       ]
     },
     {
-      "query": "cyclist",
+      "query": "uga game",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T01:10:00Z",
+      "related_news_urls": [
+        "https://www.dawgnation.com/gameday/georgia-rules-out-three-more-players-ole-miss-game/PLEATTHVDFCKDLNAPBRBF5ZWPM/",
+        "https://sports.yahoo.com/articles/georgia-rushing-touchdown-leader-returning-000352203.html",
+        "https://ugawire.usatoday.com/story/sports/college/bulldogs/football/2026/11/06/georgia-football-ole-miss-injury-report-players-out/92629443007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTiBcs1r4AzcETGAsa2E6ao3SCUvmJKuZ73QTJpYil-SOve3pEfcgJU4mrzBHE",
+      "image_credit": "DawgNation",
+      "news": [
+        {
+          "url": "https://www.dawgnation.com/gameday/georgia-rules-out-three-more-players-ole-miss-game/PLEATTHVDFCKDLNAPBRBF5ZWPM/",
+          "title": "Georgia rules out three more players for Ole Miss game",
+          "publisher": "DawgNation",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTiBcs1r4AzcETGAsa2E6ao3SCUvmJKuZ73QTJpYil-SOve3pEfcgJU4mrzBHE"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/georgia-rushing-touchdown-leader-returning-000352203.html",
+          "title": "Georgia rushing touchdown leader returning vs. Ole Miss",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyRQI3MThot6gS3BmOFRmfq_VlGlEUPHvDHdCSE_-5J0EW_IHrGS9IW1EUOJE"
+        },
+        {
+          "url": "https://ugawire.usatoday.com/story/sports/college/bulldogs/football/2026/11/06/georgia-football-ole-miss-injury-report-players-out/92629443007/",
+          "title": "At least 10 players ruled out for Georgia-Ole Miss game",
+          "publisher": "UGA Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTY_vM3WJVyihUGlwh0fOh2lbH5DSb_XnHsDOuB8XF7H3oSCPKs5H2qUbUzmSk"
+        }
+      ]
+    },
+    {
+      "query": "penguins vs kings",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T01:10:00Z",
+      "related_news_urls": [
+        "https://lakingsinsider.com/2026/11/07/11-7-preview-panarin-leads-the-way-for-lak-ppprogress-turcotte-expected-to-return-hockey-fights-cancer/",
+        "https://www.nhl.com/news/pittsburgh-penguins-los-angeles-kings-game-preview-november-7-2026",
+        "https://www.pensburgh.com/penguins-lines-game-time-watch/82866/game-preview-pittsburgh-penguins-los-angeles-kings-11-7-2026"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJohvqhTIpw1Zy7aWlrkevrrCqspRWvGLcBKdpC3b6H3ZXvoNSEjOzdV7-U6s",
+      "image_credit": "LA Kings Insider",
+      "news": [
+        {
+          "url": "https://lakingsinsider.com/2026/11/07/11-7-preview-panarin-leads-the-way-for-lak-ppprogress-turcotte-expected-to-return-hockey-fights-cancer/",
+          "title": "11/7 Preview - Panarin Leads The Way for LAK + PPProgress, Turcotte expected to return, Hockey Fights Cancer",
+          "publisher": "LA Kings Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJohvqhTIpw1Zy7aWlrkevrrCqspRWvGLcBKdpC3b6H3ZXvoNSEjOzdV7-U6s"
+        },
+        {
+          "url": "https://www.nhl.com/news/pittsburgh-penguins-los-angeles-kings-game-preview-november-7-2026",
+          "title": "Penguins at Kings projected lineups",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+        },
+        {
+          "url": "https://www.pensburgh.com/penguins-lines-game-time-watch/82866/game-preview-pittsburgh-penguins-los-angeles-kings-11-7-2026",
+          "title": "Game Preview: Pittsburgh Penguins @ Los Angeles Kings 11/7/2026",
+          "publisher": "PensBurgh",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtNnve_5pmpAVZgIlUF4mHtuKKxDERJ7Suxs5tlNvkuhkkngp6PYb8vJY4ZH4"
+        }
+      ]
+    },
+    {
+      "query": "cruz azul",
       "approx_searches": "2000+",
-      "published_at": "2026-11-08T00:30:00Z",
+      "published_at": "2026-11-08T01:10:00Z",
       "related_news_urls": [
-        "https://www.wral.com/news/local/several-injured-in-bicycle-crash-november-2026/",
-        "https://abc11.com/post/1-killed-7-injured-vehicle-strikes-group-bicyclists-wake-county/20022494/",
-        "https://www.newsobserver.com/news/local/counties/wake-county/article317974168.html"
+        "https://www.vavel.com/en-us/soccer/2026/11/07/1278362-tigres-vs-cruz-azul-live-score-liga-mx.html",
+        "https://www.bleachernation.com/picks/2026/11/07/cruz-azul-vs-tigres-uanl-prediction-picks-live-odds-nov-7/",
+        "https://www.soyfutbol.com/en/news/tigres-rolling-out-a-backup-squad-against-cruz-azul-vucetich-bets-on-youngsters-and-faces-a-key-absencewill-the-machine-take-advantage-20261105-0032.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi94Lv0ANRSR6xIbF54QdIUvf-jNiDDOe2-GAAl41ajPEKfRFXmc-brM4lEVE",
-      "image_credit": "WRAL",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8Zl8BVddTGIjtNYTh8lgZ14_Em8Kw-AcMik6tyNUH8KsKleH79nZR1fM_gok",
+      "image_credit": "VAVEL.com",
       "news": [
         {
-          "url": "https://www.wral.com/news/local/several-injured-in-bicycle-crash-november-2026/",
-          "title": "Apex driver in deadly DWI bicycle crash faces more than a dozen felonies, including hit-and-run",
-          "publisher": "WRAL",
+          "url": "https://www.vavel.com/en-us/soccer/2026/11/07/1278362-tigres-vs-cruz-azul-live-score-liga-mx.html",
+          "title": "Tigres vs Cruz Azul LIVE, Latest Score, Goals and Liga MX Updates (0-0)",
+          "publisher": "VAVEL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi94Lv0ANRSR6xIbF54QdIUvf-jNiDDOe2-GAAl41ajPEKfRFXmc-brM4lEVE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8Zl8BVddTGIjtNYTh8lgZ14_Em8Kw-AcMik6tyNUH8KsKleH79nZR1fM_gok"
         },
         {
-          "url": "https://abc11.com/post/1-killed-7-injured-vehicle-strikes-group-bicyclists-wake-county/20022494/",
-          "title": "Capital One Cycling Club: 1 killed, 7 injured after vehicle strikes group of bicyclists in Wake County",
-          "publisher": "ABC11 News",
+          "url": "https://www.bleachernation.com/picks/2026/11/07/cruz-azul-vs-tigres-uanl-prediction-picks-live-odds-nov-7/",
+          "title": "Cruz Azul vs. Tigres UANL Prediction, Picks, Live Odds – Nov. 7",
+          "publisher": "Bleacher Nation",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsjaK8RPlE5-Z3NfCOh4-xOe2ITlPycLtqy_cVRfo9asoWuSwyuzniu0snmDo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSs6CSaazDncIGDgqbgi8XzYwJwg61CfV5GdWVilV-gN6TkNYJBm1M-eR605EE"
         },
         {
-          "url": "https://www.newsobserver.com/news/local/counties/wake-county/article317974168.html",
-          "title": "1 killed, 7 taken to hospital after car hits bicycles. Driver may have been impaired",
-          "publisher": "Raleigh News & Observer",
+          "url": "https://www.soyfutbol.com/en/news/tigres-rolling-out-a-backup-squad-against-cruz-azul-vucetich-bets-on-youngsters-and-faces-a-key-absencewill-the-machine-take-advantage-20261105-0032.html",
+          "title": "Tigres Rolling Out a Backup Squad Against Cruz Azul: Vucetich Bets on Youngsters and Faces a Key Absence—Will the Machine Take Advantage?",
+          "publisher": "Soy Futbol",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTneeD2y58qx5-_LhYgUC68njnoir5LjYtsHFNi5OJB2gilYZQJVV0KvdITjG0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOJt7XflZsenee3yUIXx4u2JVUmYtEmK3HYJG6eUsw09G0tGvqs6q5znSinvw"
         }
       ]
     },
     {
-      "query": "maryland vs georgetown",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T00:30:00Z",
-      "related_news_urls": [
-        "https://www.testudotimes.com/maryland-terps-basketball/94969/maryland-mens-basketball-vs-georgetown-game-thread-updates-highlights-more",
-        "https://guhoyas.com/news/2026/11/6/mens-basketball-georgetown-hosts-maryland-for-saturday-night-dmv-duel.aspx",
-        "https://umterps.com/news/2026/11/5/mens-basketball-dmv-rivalry-renewed-terps-head-to-georgetown-on-saturday"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSziM25eAwxiOXXdr0Sf3rgOFKADwrJGapd7TJdunddaspHBSK64sDn8VM7i2U",
-      "image_credit": "Testudo Times",
-      "news": [
-        {
-          "url": "https://www.testudotimes.com/maryland-terps-basketball/94969/maryland-mens-basketball-vs-georgetown-game-thread-updates-highlights-more",
-          "title": "Maryland men’s basketball vs. Georgetown game thread: updates, highlights & more",
-          "publisher": "Testudo Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSziM25eAwxiOXXdr0Sf3rgOFKADwrJGapd7TJdunddaspHBSK64sDn8VM7i2U"
-        },
-        {
-          "url": "https://guhoyas.com/news/2026/11/6/mens-basketball-georgetown-hosts-maryland-for-saturday-night-dmv-duel.aspx",
-          "title": "Georgetown Hosts Maryland for Saturday Night DMV Duel",
-          "publisher": "Georgetown University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvbuW1pFXN6sf0hAWDRtXpxErDJqwx8UFI3BGVpRw2Q9qa6pRqYbaz9T6-Fhc"
-        },
-        {
-          "url": "https://umterps.com/news/2026/11/5/mens-basketball-dmv-rivalry-renewed-terps-head-to-georgetown-on-saturday",
-          "title": "DMV Rivalry Renewed: Terps Head To Georgetown On Saturday",
-          "publisher": "University of Maryland Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSk_jf0TR3c7Q7CsweowmhxCtlHR0O4BMKmXtfcckXucHMMJwcJairL5-8-BB4"
-        }
-      ]
-    },
-    {
-      "query": "hugh jackman",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T00:30:00Z",
-      "related_news_urls": [
-        "https://www.lansingstatejournal.com/story/sports/college/2026/11/07/hugh-jackman-go-blue-honorary-michigan-captain-msu/92660592007/",
-        "https://www.detroitnews.com/story/sports/college/big-ten/2026/11/07/social-media-stars-marvels-wolverine-soak-in-michigan-msu-experience/92667615007/",
-        "https://www.mlive.com/sports/2026/11/hugh-jackman-marvels-wolverine-honorary-michigan-football-captain-at-tonights-rivalry-game.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQev_K6sly6RLJazgrJljvQPdL9bPtpVmykiavlwzz0191Mpyrc861mfOEB0CQ",
-      "image_credit": "Lansing State Journal",
-      "news": [
-        {
-          "url": "https://www.lansingstatejournal.com/story/sports/college/2026/11/07/hugh-jackman-go-blue-honorary-michigan-captain-msu/92660592007/",
-          "title": "Hugh Jackman picks a side. What he said about Wolverine Nation",
-          "publisher": "Lansing State Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQev_K6sly6RLJazgrJljvQPdL9bPtpVmykiavlwzz0191Mpyrc861mfOEB0CQ"
-        },
-        {
-          "url": "https://www.detroitnews.com/story/sports/college/big-ten/2026/11/07/social-media-stars-marvels-wolverine-soak-in-michigan-msu-experience/92667615007/",
-          "title": "Social-media stars, Marvel's Wolverine soak in Michigan-MSU experience",
-          "publisher": "The Detroit News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdoOnkvgQgVZ_09_bpQQNujDCPgCLmnwUDBdhIK0Mi65KKrOcwld2NliRUmho"
-        },
-        {
-          "url": "https://www.mlive.com/sports/2026/11/hugh-jackman-marvels-wolverine-honorary-michigan-football-captain-at-tonights-rivalry-game.html",
-          "title": "Hugh Jackman, Marvel’s Wolverine, honorary Michigan football captain at tonight’s rivalry game",
-          "publisher": "MLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-7EMF_IcKJ_VGRy5jDeHCs2tR0J-jsccNmh5bCa0rYVVbvLFdxDv9g9YHdvc"
-        }
-      ]
-    },
-    {
-      "query": "gisele bündchen",
+      "query": "hendon hooker",
       "approx_searches": "500+",
-      "published_at": "2026-11-08T00:30:00Z",
+      "published_at": "2026-11-08T01:10:00Z",
       "related_news_urls": [
-        "https://people.com/gisele-bundchen-celebrates-husband-joaquim-valente-39th-birthday-instagram-tribute-12242370",
-        "https://www.eonline.com/news/1437924/gisele-buendchen-honors-husband-joaquim-valente-in-birthday-tribute",
-        "https://www.yahoo.com/entertainment/celebrity/articles/meet-gisele-b-ndchens-husband-235543464.html"
+        "https://247sports.com/college/tennessee/LongFormArticle/alex-golesh-tennessee-vols-football-offensive-coordinator-everything-said-ahead-music-city-bowl-hendon-hooker-cedric-tillman-179314490/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyY0tH9_lA0ecsZJWLY6m7gXnie19qqGogMGnfOliKVq0oQaJpcy6YE1Ikvl8",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxq12bsq8eV6llFX7rNfaIZ2weOn5ql7IWNyc_YRA7OV5oDUSWI5Mutspq72k",
+      "image_credit": "247Sports",
       "news": [
         {
-          "url": "https://people.com/gisele-bundchen-celebrates-husband-joaquim-valente-39th-birthday-instagram-tribute-12242370",
-          "title": "Gisele Bündchen Celebrates Husband Joaquim Valente’s 39th Birthday with Sweet Tribute: ‘How Lucky I Am’",
-          "publisher": "People.com",
+          "url": "https://247sports.com/college/tennessee/LongFormArticle/alex-golesh-tennessee-vols-football-offensive-coordinator-everything-said-ahead-music-city-bowl-hendon-hooker-cedric-tillman-179314490/",
+          "title": "Everything Vols OC Alex Golesh said ahead of Music City Bowl",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyY0tH9_lA0ecsZJWLY6m7gXnie19qqGogMGnfOliKVq0oQaJpcy6YE1Ikvl8"
-        },
-        {
-          "url": "https://www.eonline.com/news/1437924/gisele-buendchen-honors-husband-joaquim-valente-in-birthday-tribute",
-          "title": "Gisele Bündchen Calls Husband Joaquim Valente a \"Great Man\" in Sweet Birthday Tribute",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRq-itDhcYHqA9uozWkp7BPBLw8cd75FB-J52TFcpT_fhR-DWSlr7G7CL2rjFE"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/meet-gisele-b-ndchens-husband-235543464.html",
-          "title": "Meet Gisele Bündchen's husband Joaquim Valente who is 7 years her junior",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_EvCy5Q4M7bCnPRGVFwCyReQhSf8iweDjgxivUPMvxma-cqu7gmtZLjPdI7g"
-        }
-      ]
-    },
-    {
-      "query": "nbc sports",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T00:30:00Z",
-      "related_news_urls": [
-        "https://awfulannouncing.com/nbc/brent-musburger-bob-costas-miami-notre-dame.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7yO7ojrcl6Nk9Muf5ue7Wdago5QAmlqchTQtysKjEIvDsRnFJ9BD23dNygmg",
-      "image_credit": "Awful Announcing",
-      "news": [
-        {
-          "url": "https://awfulannouncing.com/nbc/brent-musburger-bob-costas-miami-notre-dame.html",
-          "title": "NBC solicits Brent Musburger, Bob Costas to narrate opening tease for Miami-Notre Dame",
-          "publisher": "Awful Announcing",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7yO7ojrcl6Nk9Muf5ue7Wdago5QAmlqchTQtysKjEIvDsRnFJ9BD23dNygmg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxq12bsq8eV6llFX7rNfaIZ2weOn5ql7IWNyc_YRA7OV5oDUSWI5Mutspq72k"
         }
       ]
     }
