@@ -1,6 +1,6 @@
 // Only the existing authenticated Brain service may call creditBubbleBit.
 // Isolated append-only asset ledger; never edits Quants, Star Coins or Infinity.
-const tools=new Set(['github.read_file','github.read_repository','github.search','github.commit','github.workflow_checks']);
+const tools=new Set(['github.read_file','github.read_repository','github.search','github.commit','github.workflow_checks','github.capabilities','github.list_workflows','github.list_runs','github.create_pr']);
 const id=x=>typeof x==='string'&&/^[A-Za-z0-9_-]{8,100}$/.test(x);
 const fail=code=>{throw Object.assign(new Error(code),{status:503})};
 export const bitCreditSchema=[
