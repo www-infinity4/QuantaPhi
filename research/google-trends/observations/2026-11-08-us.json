@@ -3,12 +3,187 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-08T10:31:14.873193Z",
+  "checked_at": "2026-11-08T11:01:33.623969Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "napoli vs lazio",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T10:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/napoli-vs-lazio-where-watch-091500984.html",
+        "https://www.goal.com/en-us/news/watch-napoli-v-lazio-live-today-where-to-watch-the-match-on-tv-and-online/bltdf7bdfb1767fca89",
+        "https://www.bleachernation.com/picks/2026/11/07/ssc-napoli-vs-lazio-prediction-picks-live-odds-nov-8/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTahS73EIP0eS-SwPb5vj9HzKjR0GWzamhE581vxfmMDQYgyCPwMnRq7-R5eQI",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/napoli-vs-lazio-where-watch-091500984.html",
+          "title": "Napoli vs. Lazio: Where to watch",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTahS73EIP0eS-SwPb5vj9HzKjR0GWzamhE581vxfmMDQYgyCPwMnRq7-R5eQI"
+        },
+        {
+          "url": "https://www.goal.com/en-us/news/watch-napoli-v-lazio-live-today-where-to-watch-the-match-on-tv-and-online/bltdf7bdfb1767fca89",
+          "title": "Watch Napoli v Lazio live today: where to watch the match on TV and online?",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWMYd9Z8G8vbEvwqinfmDTyx0QqwfrUYhWw0E4WSoT7CLS7x9gF3IKHOcF4ZU"
+        },
+        {
+          "url": "https://www.bleachernation.com/picks/2026/11/07/ssc-napoli-vs-lazio-prediction-picks-live-odds-nov-8/",
+          "title": "SSC Napoli vs. Lazio Prediction, Picks, Live Odds – Nov. 8",
+          "publisher": "Bleacher Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZEmL1Lxij0Ol3XeB3HZZFv9mWtS0T-zUvIvXDzkQ53WeJpR_Kuf-oBy3b30w"
+        }
+      ]
+    },
+    {
+      "query": "sunderland",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T10:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cwm23qne5pqyt",
+        "https://rokerreport.sbnation.com/haway-the-podcast/158804/starting-xi-will-le-bris-stick-or-twist-for-crunch-clash-with-chelsea",
+        "https://www.si.com/soccer/sunderland-vs-chelsea-preview-predictions-lineups-11-8-26"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRN--8Qxk6SpVhYXwKc4J4qEPcP50q02xE_7RsnzoH922nT9Jms7MqfUebM38",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cwm23qne5pqyt",
+          "title": "Sunderland vs Chelsea: Premier League preview, team news, stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRN--8Qxk6SpVhYXwKc4J4qEPcP50q02xE_7RsnzoH922nT9Jms7MqfUebM38"
+        },
+        {
+          "url": "https://rokerreport.sbnation.com/haway-the-podcast/158804/starting-xi-will-le-bris-stick-or-twist-for-crunch-clash-with-chelsea",
+          "title": "Starting XI: Will Le Bris Stick Or Twist For Crunch Clash With Chelsea?",
+          "publisher": "Roker Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEljMA7c9Sa6fxd3fZFjWMvKHbSic8OIHYLf-8Z0LCvW4LHmFS73o-CUS1xc0"
+        },
+        {
+          "url": "https://www.si.com/soccer/sunderland-vs-chelsea-preview-predictions-lineups-11-8-26",
+          "title": "Sunderland vs. Chelsea: Preview, Predictions and Lineups",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-7mVmbnFogLen0tjFoIzzILccGh1bmO8Ow6cCA9ObvAOYcVxNaNrXz11EolQ"
+        }
+      ]
+    },
+    {
+      "query": "pepsico hormel long term investment",
+      "approx_searches": "100+",
+      "published_at": "2026-11-08T10:40:00Z",
+      "related_news_urls": [
+        "https://www.fool.com/investing/2026/11/07/2-stocks-down-25-and-50-to-buy-now-and-hold-for-th/",
+        "https://seekingalpha.com/article/4961463-the-best-businesses-i-know-are-30-percent-off-im-buying",
+        "https://247wallst.com/investing/2026/11/05/3-dividend-aristocrats-trading-below-their-historical-valuations/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTelrqODFFzHe4D6MSGB84fx-mFlwMi2CO3IqJcxPrxKlIuMz___k6d6KRo-eQ",
+      "image_credit": "The Motley Fool",
+      "news": [
+        {
+          "url": "https://www.fool.com/investing/2026/11/07/2-stocks-down-25-and-50-to-buy-now-and-hold-for-th/",
+          "title": "2 Stocks Down 25% and 50% to Buy Now and Hold for the Next Decade.",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTelrqODFFzHe4D6MSGB84fx-mFlwMi2CO3IqJcxPrxKlIuMz___k6d6KRo-eQ"
+        },
+        {
+          "url": "https://seekingalpha.com/article/4961463-the-best-businesses-i-know-are-30-percent-off-im-buying",
+          "title": "The Best Businesses I Know Are 30% Off - I'm Buying",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT85TvnMiV-wGDGKDGXK2m8SZuz4ycjVvaI1UquA-LtZe2asnDvXN4VfQqbpOI"
+        },
+        {
+          "url": "https://247wallst.com/investing/2026/11/05/3-dividend-aristocrats-trading-below-their-historical-valuations/",
+          "title": "3 Dividend Aristocrats Trading Below Their Historical Valuations",
+          "publisher": "24/7 Wall St.",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaepOem8CkNmsOwii9Ch82pXqI_LfJHUjyDjjx3Zvy6GUtcpgcT354p_oiM7E"
+        }
+      ]
+    },
+    {
+      "query": "actor",
+      "approx_searches": "100+",
+      "published_at": "2026-11-08T10:30:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/07/us/laith-nakli-your-mother-movie-immigration",
+        "https://people.com/7th-heaven-star-jeremy-london-asks-for-help-finding-a-job-and-home-i-m-not-ok-12241209",
+        "https://malaysia.news.yahoo.com/7th-heaven-alum-pleads-help-161257085.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuIZm0a2ERQ4nksX9sNKSGUkQKH-8tDPS8F33Jxr_jRBvClte6MrB8if-o5Ik",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/07/us/laith-nakli-your-mother-movie-immigration",
+          "title": "This actor is starring in the biggest film of his career. He’s also fighting deportation",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuIZm0a2ERQ4nksX9sNKSGUkQKH-8tDPS8F33Jxr_jRBvClte6MrB8if-o5Ik"
+        },
+        {
+          "url": "https://people.com/7th-heaven-star-jeremy-london-asks-for-help-finding-a-job-and-home-i-m-not-ok-12241209",
+          "title": "‘7th Heaven’ Star Jeremy London Asks for Help Finding a ‘Job and Home’: ‘I’m Not Ok’",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQBNguhydi3Ia_fQnZH4Y1oOtuaQFI4XbO5i44T4U8fOfnZKuENhCS0zn_OBc"
+        },
+        {
+          "url": "https://malaysia.news.yahoo.com/7th-heaven-alum-pleads-help-161257085.html",
+          "title": "'7th Heaven' alum pleads for help amid crisis. 'This can't be happening'",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaJPb9GE5YXtRT1chXTlNwJeAFPwomdDmNFPzU01efks49kDG2TupQgWM4Gm8"
+        }
+      ]
+    },
+    {
+      "query": "wssu shooting",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T10:10:00Z",
+      "related_news_urls": [
+        "https://www.wxii12.com/article/winston-salem-state-shooting-three-hospitalized/74367022",
+        "https://www.wlwt.com/article/winston-salem-state-shooting/74367063",
+        "https://hbcugameday.com/2026/11/08/hbcu-on-campus-shooting-leaves-one-dead-three-shot-following-homecoming/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSI_hwds0_JiFgMnSKd0pj3tU-kN1WMvl5nxFlk4QOsmEXj0OMoaB_KWki9FJs",
+      "image_credit": "WXII",
+      "news": [
+        {
+          "url": "https://www.wxii12.com/article/winston-salem-state-shooting-three-hospitalized/74367022",
+          "title": "1 dead, 3 others injured following two separate shootings at Winston-Salem State University",
+          "publisher": "WXII",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSI_hwds0_JiFgMnSKd0pj3tU-kN1WMvl5nxFlk4QOsmEXj0OMoaB_KWki9FJs"
+        },
+        {
+          "url": "https://www.wlwt.com/article/winston-salem-state-shooting/74367063",
+          "title": "3 people sent to hospital after shooting at Winston-Salem State University, officials say",
+          "publisher": "WLWT",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRh811h3henHAPiQmvlD4AUuR9iX9U8JNNrd2_45XnXdaqfnMD1BaGt0u9hZiA"
+        },
+        {
+          "url": "https://hbcugameday.com/2026/11/08/hbcu-on-campus-shooting-leaves-one-dead-three-shot-following-homecoming/",
+          "title": "HBCU on-campus shooting leaves one dead, three shot following homecoming",
+          "publisher": "HBCU Gameday",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZBbiJ65cbyNpTxEvs_dpNInkkOTX9mArE5xQ56g201Ag8JLqPELDH7r1c7yw"
+        }
+      ]
+    },
+    {
       "query": "ole miss georgia fan trash delay",
-      "approx_searches": "1000+",
+      "approx_searches": "100+",
       "published_at": "2026-11-08T10:00:00Z",
       "related_news_urls": [
         "https://www.espn.com/video/clip/_/id/50415355",
@@ -27,7 +202,7 @@
         },
         {
           "url": "https://sports.yahoo.com/college-football/breaking-news/article/no-2-georgia-no-10-ole-miss-game-delayed-as-rebel-fans-throw-trash-onto-field-after-dpi-call-022235832.html",
-          "title": "No. 2 Georgia-No. 10 Ole Miss game delayed as Rebels fans throw trash onto field after DPI call",
+          "title": "No. 2 Georgia-No. 10 Ole Miss game delayed as Rebels fans throw trash onto field after DPI call during blowout loss",
           "publisher": "Yahoo Sports",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSstgJgwEZTF4NOi3lhYbae5LLn8PYSvWUrrx5oNlpSWPvvv0NzkgqbW8P4jGw"
@@ -46,33 +221,68 @@
       "approx_searches": "100+",
       "published_at": "2026-11-08T10:00:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/articles/ckp8g0z49qd8o",
-        "https://uk.sports.yahoo.com/news/scotlands-rivals-reinstate-under-fire-121300856.html",
-        "https://reporteri.net/en/sport/Granit-is-our-leader--he-apologized--Yakin-broke-the-silence-about-Jaka-after-returning-him-to-Switzerland/"
+        "https://www.economist.com/leaders/2026/11/05/donald-trumps-humiliation-offers-america-an-opportunity",
+        "https://www.nytimes.com/2026/11/08/us/politics/for-trump-and-america-a-clear-election-verdict-leaves-a-murky-future.html",
+        "https://time.com/article/2026/11/04/trump-lame-duck-era/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzny8l29QwcTdYZfhKMthi_BflK2Aj8szCJWvFOWCly_WMqxnInAfJseAg0kE",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8WoD1fBdK9ofVdlbAbniDLFtq6RJfCBCJVK_4Cw9mOTncqzczpcVRCSi3i2g",
+      "image_credit": "The Economist",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/articles/ckp8g0z49qd8o",
-          "title": "Scottish Gossip: Xhaka, Embolo, Lennon, Ferguson, Kabore, Kerjota, Mikulic",
-          "publisher": "BBC",
+          "url": "https://www.economist.com/leaders/2026/11/05/donald-trumps-humiliation-offers-america-an-opportunity",
+          "title": "Donald Trump’s humiliation offers America an opportunity",
+          "publisher": "The Economist",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzny8l29QwcTdYZfhKMthi_BflK2Aj8szCJWvFOWCly_WMqxnInAfJseAg0kE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8WoD1fBdK9ofVdlbAbniDLFtq6RJfCBCJVK_4Cw9mOTncqzczpcVRCSi3i2g"
         },
         {
-          "url": "https://uk.sports.yahoo.com/news/scotlands-rivals-reinstate-under-fire-121300856.html",
-          "title": "Scotland's rivals reinstate under-fire duo after fake Covid certificate bans",
-          "publisher": "Yahoo",
+          "url": "https://www.nytimes.com/2026/11/08/us/politics/for-trump-and-america-a-clear-election-verdict-leaves-a-murky-future.html",
+          "title": "For Trump and America, a Clear Election Verdict but a Murky Future",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRZzXwoX5Y-U17d2w7OTliCS5FBkd0HjM8WJrcpDTEn4_jbeZVapaSOWqR7rs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIdrpuS-WGuh_WBTLqUK2sFKdgz65slPioUtDkbnRrpLL8dDXLj2gm03Hn0f0"
         },
         {
-          "url": "https://reporteri.net/en/sport/Granit-is-our-leader--he-apologized--Yakin-broke-the-silence-about-Jaka-after-returning-him-to-Switzerland/",
-          "title": "“Graniti është lideri ynë, kërkoi falje” – Yakin thyen heshtjen për Xhakën pasi e riktheu te Zvicra",
-          "publisher": "Reporteri.net",
+          "url": "https://time.com/article/2026/11/04/trump-lame-duck-era/",
+          "title": "Welcome to Trump’s Lame-Duck Era",
+          "publisher": "Time Magazine",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRw7LKatjxRGJn2dVHUcZF5mp4cbTIff3XnUZ-Kx7aJxS5GNWWqLwzhmNVyjU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpN7A1irnX2MSqhhky6jf3S_rEhSyYRLEtjRHdhRJFu5e6iaZYpKMUOchPw1k"
+        }
+      ]
+    },
+    {
+      "query": "eiji aonuma nintendo staff retention",
+      "approx_searches": "100+",
+      "published_at": "2026-11-08T10:00:00Z",
+      "related_news_urls": [
+        "https://gonintendo.com/contents/66967-zelda-producer-discusses-the-real-benefit-of-having-very-long-term-tenured-staff-at",
+        "https://shattered.io/eiji-aonuma-nintendo-layoffs-long-tenured-staff-10977-jobs-2026/",
+        "https://insider-gaming.com/aonuma-nintendo-zelda-legacy/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjoZqRndwTFmMIBZYNR64v-83Lq1kAIhKgrmaqtJBSdG9EoOW-eOFpfHebQps",
+      "image_credit": "GoNintendo",
+      "news": [
+        {
+          "url": "https://gonintendo.com/contents/66967-zelda-producer-discusses-the-real-benefit-of-having-very-long-term-tenured-staff-at",
+          "title": "Zelda producer discusses the \"real benefit\" of having \"very long-term-tenured staff\" at the company",
+          "publisher": "GoNintendo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjoZqRndwTFmMIBZYNR64v-83Lq1kAIhKgrmaqtJBSdG9EoOW-eOFpfHebQps"
+        },
+        {
+          "url": "https://shattered.io/eiji-aonuma-nintendo-layoffs-long-tenured-staff-10977-jobs-2026/",
+          "title": "Eiji Aonuma on Nintendo Layoffs: 10,977 Jobs Lost [2026]",
+          "publisher": "shattered.io",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIsaBTi2TD2_UeRmaq5r_N_1hclYKXLHXjNaAJx-jSt1Jh697RD78YKxc_Gl4"
+        },
+        {
+          "url": "https://insider-gaming.com/aonuma-nintendo-zelda-legacy/",
+          "title": "Aonuma Explains How Nintendo Preserves Zelda’s Legacy",
+          "publisher": "Insider Gaming",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3DcxymJ-pzjMB5uJtkYSkIHPuPRfO13sz-S1sY6acfWOik2Lwd9Od4NWo0Hw"
         }
       ]
     },
@@ -113,7 +323,7 @@
     },
     {
       "query": "wi vs ban",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-08T09:40:00Z",
       "related_news_urls": [
         "https://www.cricinfo.com/story/ban-vs-wi-sylhet-test-amir-jangoo-backs-his-instincts-after-century-1561675",
@@ -143,216 +353,6 @@
           "publisher": "The St Kitts Nevis Observer",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKnJGgWGZObxdeQ77GCTcTe6jObG2d5b0KB_UeUD9x-DcoJVXAuv7ttp8t2cE"
-        }
-      ]
-    },
-    {
-      "query": "rugby league world cup",
-      "approx_searches": "100+",
-      "published_at": "2026-11-08T09:40:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/rugby-league/live/c6gm0k1d0rgnt",
-        "https://www.theguardian.com/sport/2026/nov/08/australia-jillaroos-fiji-womens-rugby-league-world-cup-semi-final-match-report",
-        "https://www.abc.net.au/news/2026-11-08/rugby-league-world-cup-jillaroos-fiji-bulikula-semi-final/107361332"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFSq4n10CeQA3JK3E9LK7uwlrSevBLQeCCk7dbA8e7AmsSQgHPR5C_js1B09k",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/rugby-league/live/c6gm0k1d0rgnt",
-          "title": "Women's Rugby League World Cup LIVE: Semi-Final 2 Australia v Fiji - radio commentary",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFSq4n10CeQA3JK3E9LK7uwlrSevBLQeCCk7dbA8e7AmsSQgHPR5C_js1B09k"
-        },
-        {
-          "url": "https://www.theguardian.com/sport/2026/nov/08/australia-jillaroos-fiji-womens-rugby-league-world-cup-semi-final-match-report",
-          "title": "Abbi Church powers Australia to win over spirited Fiji as hosts reach Women’s Rugby League World Cup final",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYKZQh0n6LYy3EYgQ_R-GEQmu3P7w2UsvqdzpAc2L-N8oArKEC9G2EAAuvwnI"
-        },
-        {
-          "url": "https://www.abc.net.au/news/2026-11-08/rugby-league-world-cup-jillaroos-fiji-bulikula-semi-final/107361332",
-          "title": "Wounded Jillaroos into World Cup final after Fiji smackdown",
-          "publisher": "ABC News & Headlines – Australian Broadcasting Corporation",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBA9gYoib3InTgFRO6eelmEbtk0n5H4U4pmxG3nvg-WZ0oQb0veMDqDDrvbmY"
-        }
-      ]
-    },
-    {
-      "query": "new zealand election",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T09:10:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/cxr5yyg2nj9eo",
-        "https://www.yahoo.com/news/politics/articles/relative-newcomer-emerges-kingmaker-zealand-084903484.html",
-        "https://www.cnn.com/2026/11/07/world/new-zealand-election-result-uncertain-intl-hnk"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTp7oTcDGMe3UpNaBFeLxuiARGhtfgTOHlNTec3xdL7ye6aIL0tDkQzuMN1oV0",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/cxr5yyg2nj9eo",
-          "title": "'Flat', 'tired', 'cynical': Unusually gloomy Kiwis deliver New Zealand's tightest election in years",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTp7oTcDGMe3UpNaBFeLxuiARGhtfgTOHlNTec3xdL7ye6aIL0tDkQzuMN1oV0"
-        },
-        {
-          "url": "https://www.yahoo.com/news/politics/articles/relative-newcomer-emerges-kingmaker-zealand-084903484.html",
-          "title": "Relative newcomer emerges as kingmaker after New Zealand election yields deadlock",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoMiiVwLy7rLizafeFqON91f4ZlsDn3G__Q2B0OwFCzIS8qIax8zYGFSNfa9I"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/07/world/new-zealand-election-result-uncertain-intl-hnk",
-          "title": "New Zealand in political limbo after knife-edge election",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSouTWOFa2aLD4zEtcX1JOson_NwZKdIrBLrNoJgAI0pjEvOMfsztDZ_HFz_oU"
-        }
-      ]
-    },
-    {
-      "query": "college gameday",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T09:00:00Z",
-      "related_news_urls": [
-        "https://www.al.com/alabamafootball/2026/11/desmond-howard-jabs-nick-saban-over-sign-stealing-comment-when-talking-alabama-lsu.html",
-        "https://247sports.com/college/alabama/article/nick-saban-makes-pick-for-alabama-lsu-identifies-biggest-concern-for-tide-292289423/",
-        "https://www.si.com/fannation/college/cfb-hq/news/rece-davis-two-loss-sec-team-win-national-championship-lsu"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnyMLehShpOYFUe3gm34fLNVMKJcXI99i4Z7ij_kbC3QoyDZt7O1IVI5IgZWY",
-      "image_credit": "AL.com",
-      "news": [
-        {
-          "url": "https://www.al.com/alabamafootball/2026/11/desmond-howard-jabs-nick-saban-over-sign-stealing-comment-when-talking-alabama-lsu.html",
-          "title": "ESPN's Desmond Howard jabs Nick Saban over sign-stealing comment when talking Alabama-LSU",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnyMLehShpOYFUe3gm34fLNVMKJcXI99i4Z7ij_kbC3QoyDZt7O1IVI5IgZWY"
-        },
-        {
-          "url": "https://247sports.com/college/alabama/article/nick-saban-makes-pick-for-alabama-lsu-identifies-biggest-concern-for-tide-292289423/",
-          "title": "Nick Saban makes pick for Alabama-LSU, identifies biggest concern for Tide",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEMpQMLGL70cuf2zd98vK2thqvZE9PWe9nzMZjYUjul8klLJGyX9nP0NCGSW8"
-        },
-        {
-          "url": "https://www.si.com/fannation/college/cfb-hq/news/rece-davis-two-loss-sec-team-win-national-championship-lsu",
-          "title": "Rece Davis Names Two-Loss SEC Team That Can Win the National Championship",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRimIvP9nY4zICkYeoGsBuq7-Tjv8AqRzthNKYu2oEgAMH24jgRVEBpVZjAISk"
-        }
-      ]
-    },
-    {
-      "query": "mililani vs kapolei",
-      "approx_searches": "100+",
-      "published_at": "2026-11-08T08:50:00Z",
-      "related_news_urls": [
-        "https://www.staradvertiser.com/2026/11/08/sports/hawaii-prep-world/kapolei-grounds-pounds-mililani-to-capture-oia-crown/",
-        "https://www.khon2.com/sports/built-ford-tough-matchup-oia-open-division-championship-game-kapolei-vs-mililani/",
-        "https://www.staradvertiser.com/2026/11/07/photo-gallery/prep-football-kapolei-vs-mililani-11-7-26/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuHx-RNWpwnW9qsSZNUHHCfh1ME0xZheL6eteETnKuNSlF8NHh3XM8f6W4jVg",
-      "image_credit": "Honolulu Star-Advertiser",
-      "news": [
-        {
-          "url": "https://www.staradvertiser.com/2026/11/08/sports/hawaii-prep-world/kapolei-grounds-pounds-mililani-to-capture-oia-crown/",
-          "title": "Kapolei grounds, pounds Mililani to capture OIA crown",
-          "publisher": "Honolulu Star-Advertiser",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuHx-RNWpwnW9qsSZNUHHCfh1ME0xZheL6eteETnKuNSlF8NHh3XM8f6W4jVg"
-        },
-        {
-          "url": "https://www.khon2.com/sports/built-ford-tough-matchup-oia-open-division-championship-game-kapolei-vs-mililani/",
-          "title": "Built Ford Tough Matchup: OIA Open Division Championship Game – Kapolei vs. Mililani",
-          "publisher": "KHON2",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlcy6iMmAfhclDwjnv2xPOt-ALmGJHq-osAm1YIhWZpYc__rN1zb9wfvpctHA"
-        },
-        {
-          "url": "https://www.staradvertiser.com/2026/11/07/photo-gallery/prep-football-kapolei-vs-mililani-11-7-26/",
-          "title": "Prep football: Kapolei vs. Mililani (11/7/26)",
-          "publisher": "Honolulu Star-Advertiser",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMwMMe-MgKxXmwn0El_qvoOnSj67ZHhot9L-x2OxtZ9UqXwqGXHy5HMzJgpMk"
-        }
-      ]
-    },
-    {
-      "query": "medal",
-      "approx_searches": "100+",
-      "published_at": "2026-11-08T08:50:00Z",
-      "related_news_urls": [
-        "https://uww.org/articles/beach-wrestling-2026-dakar-youth-olympics-live-schedule-rules",
-        "https://www.bignewsnetwork.com/news/279419506/spsenegal-dakar-saly-2026-youth-olympics-beach-wrestling",
-        "https://www.athensreview.com/sports/national_sports/dakar-youth-olympics-beach-wrestling/image_07d6d0e7-27b9-5537-9e58-7ad4d5b202bf.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQju0KUg_QJ6eQgTbMLoKvVThavrwuWT5Jr4_iyezm6s-Kxnj3TiEOPNDHb4cs",
-      "image_credit": "United World Wrestling",
-      "news": [
-        {
-          "url": "https://uww.org/articles/beach-wrestling-2026-dakar-youth-olympics-live-schedule-rules",
-          "title": "Beach Wrestling 2026 Dakar Youth Olympics: Live, Schedule, Rules",
-          "publisher": "United World Wrestling",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQju0KUg_QJ6eQgTbMLoKvVThavrwuWT5Jr4_iyezm6s-Kxnj3TiEOPNDHb4cs"
-        },
-        {
-          "url": "https://www.bignewsnetwork.com/news/279419506/spsenegal-dakar-saly-2026-youth-olympics-beach-wrestling",
-          "title": "(SP)SENEGAL-DAKAR-SALY-2026 YOUTH OLYMPICS-BEACH WRESTLING",
-          "publisher": "Big News Network.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCqlYDzapJsq1ueP4ArUNoPQg4SB9I-Bv1igqp3owKQgsBrwXfGXqYJqzwmco"
-        },
-        {
-          "url": "https://www.athensreview.com/sports/national_sports/dakar-youth-olympics-beach-wrestling/image_07d6d0e7-27b9-5537-9e58-7ad4d5b202bf.html",
-          "title": "Dakar Youth Olympics Beach Wrestling",
-          "publisher": "Athens Daily Review",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSocHx5OCGoQoiQCTxmT5k0GgHLa33YHvqmg6MLEtVvmuiEqvjqwHAxpa7Oqxk"
-        }
-      ]
-    },
-    {
-      "query": "play gta 6 before launch date",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-08T08:30:00Z",
-      "related_news_urls": [
-        "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10?utm_source=twitter&amp;utm_medium=o_social&amp;utm_campaign=gtavi_announcement_pre-load-20261103",
-        "https://corporate.charter.com/newsroom/spectrum-giving-free-gig-speed-lift-thanksgiving-grand-theft-auto",
-        "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvr3MnhC7loBDcBhBXQOjgXQdBnSX1GgBl8Gp0wCtDiGaqob5Fx5ug4CQtEz4",
-      "image_credit": "Rockstar Games",
-      "news": [
-        {
-          "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10?utm_source=twitter&amp;utm_medium=o_social&amp;utm_campaign=gtavi_announcement_pre-load-20261103",
-          "title": "Grand Theft Auto VI Pre-Load Begins on November 10",
-          "publisher": "Rockstar Games",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvr3MnhC7loBDcBhBXQOjgXQdBnSX1GgBl8Gp0wCtDiGaqob5Fx5ug4CQtEz4"
-        },
-        {
-          "url": "https://corporate.charter.com/newsroom/spectrum-giving-free-gig-speed-lift-thanksgiving-grand-theft-auto",
-          "title": "Download Grand Theft Auto VI Faster and Get to Leonida Sooner With Spectrum Internet Gig",
-          "publisher": "Charter Communications",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLrldBUNUxrprrQdaGkYX-IyU3QqIHF3o_gPJ8nNZdwM-7CUvyPxPcKlXOanM"
-        },
-        {
-          "url": "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/",
-          "title": "Grand Theft Auto VI pre-download begins November 10",
-          "publisher": "PlayStation.Blog",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyNgZ56vmBZJJNXtBuVMuXt5SrJjkpTULssjmIfrOVOdDg6PUuF-BaAKk2CE8"
         }
       ]
     }
