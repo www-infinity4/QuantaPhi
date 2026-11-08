@@ -239,9 +239,13 @@ export async function runPacketPass({
    ledger.done=[...new Set([...ledger.done,actionKey(packet)])].slice(-MAX_CANDIDATES);
   }
   ledger.pending=null;
-  if(!await saveCheckpoint(db,claim,ownerScope,sourceVersion,ledger,'running',stamp(clock)))
-   return {status:'reconciliation_required',scanned,attempted,skipped:ledger.skipped};
+  // Keep the actual provider result visible even if a newly expired fence
+  // prevents writing its receipt. D1 still has the pending operation key,
+  // so another caller must reconcile rather than replay that side effect.
   attempted.push(event);
+  if(!await saveCheckpoint(db,claim,ownerScope,sourceVersion,ledger,'running',stamp(clock)))
+   return {status:await activeClaim(db,claim,stamp(clock))?'reconciliation_required':'lease_lost',
+    scanned,attempted,skipped:ledger.skipped};
  }
  const left=ledger.candidates.filter(p=>candidateAvailable(p,ledger,sourceVersion));
  ledger.exhausted=selectActionPackets(left,{blocked:[],done:[],ownerId,limit:1}).length===0;
