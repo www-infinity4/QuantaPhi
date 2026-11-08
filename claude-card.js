@@ -6,6 +6,7 @@
 'use strict';
 if(root.ClaudeSteward)return;
 const URL_STEWARD=root.CLAUDE_STEWARD_URL||'https://infinity-rogers.marvaseater.workers.dev/v1/claude/steward';
+const URL_MODEL_CHECK=root.CLAUDE_MODEL_CHECK_URL||URL_STEWARD.replace(/\/v1\/claude\/steward$/, '/v1/claude/model-check');
 const KEY='claude-steward:v1';
 let turns=[];
 try{turns=JSON.parse(root.sessionStorage?.getItem(KEY)||'[]').slice(-24);}catch{}
@@ -40,6 +41,18 @@ async function ownerHeaders(){
  const h=typeof b.currentHeaders==='function'?b.currentHeaders():waited;
  if(!h?.Authorization)throw Error('Owner wallet not verified yet.');
  return h;
+}
+async function checkConnection(){
+ const owner=await ownerHeaders();
+ const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),12000);
+ try{
+  // Read-only model metadata, NOT an Anthropic /v1/messages inference request.
+  const res=await fetch(URL_MODEL_CHECK,{method:'GET',headers:{...owner,Accept:'application/json'},
+   signal:controller.signal,cache:'no-store'});
+  const data=await res.json().catch(()=>({}));
+  if(!res.ok||data.ok!==true)return {ok:false,error:String(data.error||'anthropic_provider_unavailable').slice(0,80)};
+  return data;
+ }finally{clearTimeout(timer)}
 }
 async function call(text,mode,evidence){
  const headers=await ownerHeaders();
@@ -154,7 +167,7 @@ function mount(){
  close.addEventListener('click',()=>{panel.style.display='none';});
  for(const t of turns)bubble(t.role==='user'?'you':'claude',t.text);
 }
-root.ClaudeSteward={ask,describeError,open:()=>{mount();open();},patchScript};
+root.ClaudeSteward={ask,describeError,checkConnection,open:()=>{mount();open();},patchScript};
 root.addEventListener('bubbles:claude-steward',e=>{const d=e?.detail;if(d?.text)void ask(d.text,{mode:d.mode==='fix'?'fix':'chat',evidence:d.evidence});});
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mount);else mount();
 })(typeof window!=='undefined'?window:globalThis);
