@@ -162,6 +162,7 @@ let active=null,expanded=false;
 let openingCursor=null;
 const tabButtons=[...host.querySelectorAll('[data-oracle-feed]')];
 const follow=document.getElementById('oracleCardFollow'),reason=document.getElementById('oracleCardReason');
+const notForMe=document.getElementById('oracleCardNotForMe'),restoreHidden=document.getElementById('oracleCardRestoreHidden');
 let selectedTab='public',directionApi=null,quantApi=null,familyApi=null,quantWeights={},quantConnected=false;
 const cardFamily=e=>e?.node?.matches('.iac-card')?'accepted':e?.id?.startsWith('source-')?'website':'original';
 let feedState=null,proposed=null,followingPublisherFeed=null;
@@ -306,9 +307,26 @@ function registerLateWidgets(){
 registerSourceCards();
 const readDirections=()=>{try{return directionApi.cleanFeedState(JSON.parse(localStorage.getItem(directionApi.FEED_STORAGE_KEY)||'{}'))}catch{return directionApi.cleanFeedState({})}};
 function storeDirections(){if(!directionApi||!feedState)return;try{localStorage.setItem(directionApi.FEED_STORAGE_KEY,JSON.stringify(feedState))}catch{}}
-function liveCatalog(){return entries.filter(available).filter(e=>selectedTab!=='for-you'||!nonProfiling(e)).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
-function eligible(){const cards=entries.filter(available);return selectedTab==='following'&&feedState?
- cards.filter(e=>feedState.following.includes(e.feedId)):cards;}
+function liveCatalog(){return entries.filter(available).filter(e=>selectedTab!=='for-you'||(!nonProfiling(e)&&!feedState?.hiddenForYou?.includes(e.feedId))).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
+function eligible(){
+ const cards=entries.filter(available);
+ if(selectedTab==='following'&&feedState)return cards.filter(e=>feedState.following.includes(e.feedId));
+ if(selectedTab==='for-you')return cards.filter(e=>!nonProfiling(e)&&!feedState?.hiddenForYou?.includes(e.feedId));
+ return cards;
+}
+function updatePreferenceControls(){
+ const hidden=feedState?.hiddenForYou||[];
+ if(notForMe){
+  notForMe.hidden=!active||nonProfiling(active);
+  const excluded=!!active&&hidden.includes(active.feedId);
+  notForMe.textContent=excluded?'Show in For You':'Not for me';
+  notForMe.setAttribute('aria-pressed',String(excluded));
+ }
+ if(restoreHidden){
+  restoreHidden.hidden=hidden.length===0;
+  restoreHidden.textContent='Restore hidden ('+hidden.length+')';
+ }
+}
 function updateTabs(){
  updateInventory();
   for(const button of host.querySelectorAll('[data-oracle-family]')){
@@ -318,6 +336,7 @@ function updateTabs(){
  }
  tabButtons.forEach(b=>{const on=b.dataset.oracleFeed===selectedTab;b.setAttribute('aria-selected',String(on));b.classList.toggle('oracle-current',on);});
  followingPublisherFeed?.sync({tab:selectedTab});
+ updatePreferenceControls();
  if(follow){
   const saved=Boolean(active&&feedState?.following.includes(active.feedId));
   follow.hidden=!active;
@@ -366,7 +385,7 @@ function predict(){
  proposed=null;
  if(expanded)return;
  const possible=eligible();
- if(!possible.length){next.disabled=true;reason.textContent='Your Following view is empty. Return to Public and add a card with + Follow.';return;}
+ if(!possible.length){next.disabled=true;reason.textContent=selectedTab==='following'?'Your Following view is empty. Return to Public and add a card with + Follow.':selectedTab==='for-you'?'No recommended cards remain. Restore hidden cards or browse Public.':'No ready cards yet.';return;}
  if(directionApi&&feedState){
   const present=liveCatalog();
   const context={...feedState,catalog:present,quantScores:quantWeights};
@@ -417,6 +436,12 @@ tabButtons.forEach(b=>b.addEventListener('click',()=>{
  }
  if(active)seenByTab[selectedTab].add(active.feedId);
  feedState=directionApi?readDirections():feedState;
+ if(selectedTab==='for-you'&&active&&(feedState?.hiddenForYou||[]).includes(active.feedId)){
+  returnActive();
+  const first=eligible()[0];
+  if(first)show(first,false);
+  else {now.textContent='No For You cards';status.textContent='All recommended cards are hidden. Restore hidden cards to see them again.';}
+ }
  updateTabs();
  if(selectedTab==='following'&&!eligible().some(e=>e===active)){
   returnActive();const first=eligible()[0];if(first)show(first,false);else{
@@ -436,6 +461,36 @@ follow?.addEventListener('click',()=>{
  updateTabs();predict();
  window.dispatchEvent(new CustomEvent('quantaphi:feed-updated',{detail:{origin:'oracle-viewer'}}));
 });
+// This is an explicit browser-local preference, never a server-side ad-targeting
+// signal. An excluded card remains in Public, Following and direct links.
+notForMe?.addEventListener('click',()=>{
+ if(!directionApi||!active||nonProfiling(active))return;
+ viewerTouched=true;selectionVersion++;
+ const id=active.feedId,wasHidden=readDirections().hiddenForYou.includes(id);
+ feedState=wasHidden?directionApi.restoreForYou(readDirections(),id):
+  directionApi.hideForYou(readDirections(),active.feedId);
+ storeDirections();
+ if(!wasHidden&&selectedTab==='for-you'){
+  returnActive();
+  const first=eligible()[0];
+  if(first)show(first,false);
+  else {now.textContent='No For You cards';status.textContent='All recommended cards are hidden. Restore hidden cards to see them again.';}
+ }
+ updateTabs();predict();
+ if(active||selectedTab!=='for-you')status.textContent=wasHidden?
+  'Restored to For You. Public and Following were unchanged.':
+  'Hidden from For You on this browser. This card remains in Public, Following and direct links.';
+ window.dispatchEvent(new CustomEvent('quantaphi:feed-updated',{detail:{origin:'oracle-viewer'}}));
+});
+restoreHidden?.addEventListener('click',()=>{
+ if(!directionApi)return;
+ viewerTouched=true;selectionVersion++;
+ feedState=directionApi.restoreForYou(readDirections());storeDirections();
+ if(!active&&!expanded){const first=eligible()[0];if(first)show(first,false);}
+ updateTabs();predict();
+ status.textContent='Restored hidden cards to For You on this browser. Public and Following were unchanged.';
+ window.dispatchEvent(new CustomEvent('quantaphi:feed-updated',{detail:{origin:'oracle-viewer'}}));
+});
 window.addEventListener('quantaphi:feed-updated',e=>{
  if(e.detail?.origin==='oracle-viewer'||!directionApi)return;
  feedState=readDirections();
@@ -452,7 +507,7 @@ void import('/following-publisher-feed.mjs?v=20261031-following1').then(({mountF
  });
  followingPublisherFeed?.sync({tab:selectedTab});
 }).catch(()=>{const target=document.getElementById('oracleFollowingFeed');if(target)target.hidden=true;});
-Promise.all([import('/quanta-feed-rank.mjs?v=20261027-infinity-accepted2'),
+Promise.all([import('/quanta-feed-rank.mjs?v=20261107-for-you-exclusions1'),
  import('/quanta-feed-quants.mjs?v=20261024-directions1'),
  import('/quanta-carousel-balance.mjs?v=20261027-all-families1')]).then(([r,q,f])=>{
  directionApi=r;quantApi=q;familyApi=f;feedState=readDirections();updateTabs();
