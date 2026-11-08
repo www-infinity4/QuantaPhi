@@ -13,4 +13,4 @@ export const OWNER_SYSTEMS=Object.freeze([
 export const OWNER_PHOTO='/assets/gpt-art/gpt-owner-engineer.webp';
 export function ownerCardReady({imageLoaded,rights}={}){return imageLoaded===true&&rights==='owner-approved'}
 export function sanitizeOwnerPhoto(value){return value===OWNER_PHOTO?value:''}
-export function ownerCtaUrl(){return '/website-viewer.html?site=chatgpt'}
+export function ownerCtaUrl(){return '/creator-gpt-handoff.html'}
