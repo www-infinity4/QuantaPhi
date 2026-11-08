@@ -53,3 +53,15 @@ test('Lawn service and changed price invalidate stale export, never claim a bank
  await expect(page.getByText('No guaranteed cash returns.')).toBeVisible();
  await expect(page.locator('input[type="file"]')).toHaveCount(0);
 });
+
+test('new business without cards can still prepare an honest nonnegative draft',async({page})=>{
+ await page.goto(base+'/stripe-business-studio.html',{waitUntil:'domcontentloaded'});
+ await page.locator('#stripeSellerSlug').fill('new-lawn');
+ await page.locator('#stripeDisplayName').fill('New Lawn Service');
+ await page.locator('#stripeBusinessType').selectOption('services');
+ await page.locator('#stripePrice').fill('30.00');
+ await page.locator('#stripeDraft').click();
+ await expect(page.locator('#stripeStatus')).toContainText('0 Stripe seller Quick Card drafts');
+ await expect(page.locator('#stripePreview')).toContainText('"unlistedRemaining": 0');
+ await expect(page.locator('#stripeExport')).toBeEnabled();
+});
