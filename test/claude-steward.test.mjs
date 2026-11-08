@@ -106,7 +106,11 @@ test('card patch script really patches a scratch repo once and refuses a second 
  const patches=[{repository:R,path:'src/app.js',old_str:'const msg = "it\'s \\"old\\"";\nlet n = 1;',new_str:'const msg = "it\'s \\"new\\"";\nlet n = 2;',why:'t'}];
  const script=sandbox.ClaudeSteward.patchScript(patches,'202611081200');
  assert.match(script,/<<'ENDPY'/);assert.ok(!script.includes('EOF'));
- assert.match(script,/git remote set-url origin https:\/\/\$\(gh auth token\)@github.com\/www-infinity4\/QuantaPhi.git/);
+ assert.match(script,/git remote set-url origin https:\/\/github.com\/www-infinity4\/QuantaPhi.git/);
+ assert.doesNotMatch(script,/gh auth token/,'Never embed GitHub tokens in git remote configuration');
+ assert.doesNotMatch(script,/git add -A/,'Do not stage unrelated files');
+ assert.match(script,/git add -- src\/app.js/);
+ assert.match(script,/git status --porcelain/,'Must refuse a dirty local checkout');
  assert.match(script,/ALL DONE ✓/);
  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'steward-'));
  fs.mkdirSync(path.join(dir,'src'));
