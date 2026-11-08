@@ -71,3 +71,9 @@ body.oracle-shelf-open #premiumSourceCards[hidden],body.oracle-shelf-open #siteQ
  .premium-coin-sales{margin:6px 16px;padding:12px}
  .premium-coin-sale-nav button{font-size:12px;padding:9px 7px}
 }
+
+/* Reviewed, seller-authorized photograph for the ACTUAL lot; never a search thumbnail. */
+.premium-coin-lot-photo{margin:0;display:grid;gap:7px;min-width:0}
+.premium-coin-lot-photo img{display:block;width:100%;height:auto;max-height:400px;object-fit:contain;border-radius:12px;background:#fff}
+.premium-coin-lot-photo figcaption{font:12px/1.5 system-ui;color:#62554c;overflow-wrap:anywhere}
+.premium-coin-lot-photo figcaption a{color:#17547e;text-decoration:underline}
