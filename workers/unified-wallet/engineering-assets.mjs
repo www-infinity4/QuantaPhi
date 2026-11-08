@@ -7,11 +7,22 @@ export async function readGitAsset(env,walletId){
  if(!walletId)return unavailable('wallet_link_required');
  if(!env.GIT_DB)return unavailable('ledger_unavailable');
  try{
+  // A line award alone is not a globally serialized GIT coin.
+  // The immutable serial must match the exact award receipt AND wallet.
+  // Missing serials remain a reconciliation backlog, never wallet credits.
   const row=await env.GIT_DB.prepare(`SELECT
-   (SELECT COALESCE(SUM(amount),0) FROM gitcoin_awards WHERE wallet_id=?1) AS credited,
-   (SELECT COUNT(*) FROM gitcoin_line_claims WHERE recipient_wallet_id=?1 AND status='pending') AS pending`).bind(walletId).first();
-  if(!validAmount(row?.credited)||!validAmount(row?.pending))return unavailable('ledger_unavailable');
-  return {available:true,status:'ledger_verified',credited:row.credited,pending:row.pending,spendAvailable:false};
+   (SELECT COUNT(*) FROM gitcoin_awards a JOIN gitcoin_serials s
+      ON s.receipt_id=a.receipt_id AND s.wallet_id=a.wallet_id
+      WHERE a.wallet_id=?1) AS credited,
+   (SELECT COUNT(*) FROM gitcoin_awards a WHERE a.wallet_id=?1 AND
+      NOT EXISTS (SELECT 1 FROM gitcoin_serials s
+        WHERE s.receipt_id=a.receipt_id AND s.wallet_id=a.wallet_id)) AS awaitingSerial,
+   (SELECT COUNT(*) FROM gitcoin_line_claims
+      WHERE recipient_wallet_id=?1 AND status='pending') AS pending`).bind(walletId).first();
+  if(!validAmount(row?.credited)||!validAmount(row?.pending)||
+    !validAmount(row?.awaitingSerial))return unavailable('ledger_unavailable');
+  return {available:true,status:'ledger_verified',credited:row.credited,
+    pending:row.pending,awaitingSerial:row.awaitingSerial,spendAvailable:false};
  }catch{return unavailable('ledger_unavailable')}
 }
 
