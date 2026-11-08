@@ -10,6 +10,14 @@ const FILE=/^(?:[A-Za-z0-9_.-]+\/){0,8}[A-Za-z0-9_.-]+\.(?:md|markdown|txt|html|
 const MAX_TURNS=6,MAX_PATCHES=3;
 const clip=(v,n)=>typeof v==='string'?v.slice(0,n):'';
 const out=(body,status=200)=>Response.json(body,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
+const providerError=status=>{
+ const errors={400:'anthropic_invalid_request',401:'anthropic_authentication_failed',
+  402:'anthropic_billing_required',403:'anthropic_access_forbidden',
+  404:'anthropic_model_unavailable',413:'anthropic_request_too_large',
+  422:'anthropic_invalid_request',429:'anthropic_rate_limited'};
+ return errors[status]||(status>=500?'anthropic_service_unavailable':'anthropic_provider_unavailable');
+};
+
 export const SYSTEM=`You are Claude, steward of Bubbles, the owner's AI assistant (QuantaPhi, github www-infinity4). You talk with the owner directly and can inspect Bubbles' real source to prepare fixes.
 Hard limits: you can only READ source, PROPOSE verified patches and FILE a DRAFT ticket. You cannot push, merge or deploy. Never say a fix is applied or live. After creating or reusing a ticket report its actual returned status; no proposed patch is automatically applied.
 Style: the owner is on a phone. Short plain sentences, no tables, no long preambles. Do not ask the owner to run commands; the card exports patches itself.
@@ -99,13 +107,7 @@ async function claude(env,body,fetcher){
   headers:{'Content-Type':'application/json','x-api-key':env.ANTHROPIC_API_KEY,'anthropic-version':'2023-06-01'},body:JSON.stringify(body)});
  // Never surface Anthropic response bodies: they can contain provider diagnostics
  // and are not needed to tell the owner which existing Cloudflare setup to check.
- if(!res.ok){
-  const errors={400:'anthropic_invalid_request',401:'anthropic_authentication_failed',
-   402:'anthropic_billing_required',403:'anthropic_access_forbidden',
-   404:'anthropic_model_unavailable',413:'anthropic_request_too_large',
-   422:'anthropic_invalid_request',429:'anthropic_rate_limited'};
-  throw Error(errors[res.status]||(res.status>=500?'anthropic_service_unavailable':'anthropic_provider_unavailable'));
- }
+ if(!res.ok)throw Error(providerError(res.status));
  return res.json();
 }
 function history(raw){
@@ -154,6 +156,30 @@ export async function steward(input,env,auth,fetcher=fetch){
   receipt:{tool:'claude.steward',mode,toolCalls:calls,githubChanges:false,deploymentVerified:false,
    patchesVerifiedAgainstSource:ctx.patches.length,draftTickets:ctx.tickets.filter(t=>t.status==='draft').length,storedByService:false}};
 }
+/** Owner-only, model-metadata check. Makes no /v1/messages call and cannot
+ * verify billing balance or a successful chat reply. Useful before spending
+ * any inference tokens. Never forward the secret or provider response body.
+ */
+export async function handleStewardModelCheck(request,env,{fetcher=fetch,verifyOwner=ownerVerified}={}){
+ if(request.method!=='GET')return out({ok:false,error:'method_not_allowed'},405);
+ if(!(await verifyOwner(request,env)))return out({ok:false,error:'owner_authorization_required'},403);
+ if(!env.ANTHROPIC_API_KEY)return out({ok:false,error:'anthropic_not_configured'},503);
+ const model=String(env.CLAUDE_STEWARD_MODEL||MODEL_DEFAULT);
+ if(!/^[A-Za-z0-9._-]{3,100}$/.test(model))return out({ok:false,error:'anthropic_invalid_model_configuration'},503);
+ try{
+  const res=await fetcher('https://api.anthropic.com/v1/models/'+encodeURIComponent(model),{
+   method:'GET',signal:AbortSignal.timeout(12000),
+   headers:{'x-api-key':env.ANTHROPIC_API_KEY,'anthropic-version':'2023-06-01'}
+  });
+  if(!res.ok)return out({ok:false,error:providerError(res.status)},503);
+  const data=await res.json().catch(()=>null);
+  if(data?.type!=='model'||typeof data.id!=='string'||!data.id)
+   return out({ok:false,error:'anthropic_invalid_model_response'},503);
+  return out({ok:true,provider:'anthropic',model:data.id,modelAvailable:true,
+   messageGenerationVerified:false});
+ }catch{return out({ok:false,error:'anthropic_provider_unavailable'},503)}
+}
+
 export async function handleSteward(request,env,{fetcher=fetch,verifyOwner=ownerVerified}={}){
  if(request.method!=='POST')return out({ok:false,error:'method_not_allowed'},405);
  if(!(await verifyOwner(request,env)))return out({ok:false,error:'owner_authorization_required'},403);
