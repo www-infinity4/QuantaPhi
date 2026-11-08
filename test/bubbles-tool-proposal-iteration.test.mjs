@@ -49,3 +49,22 @@ test('an unexecuted job-status proposal completes as incomplete, never falsely r
  assert.match(state.live,/incomplete|failed|unverified/i);
  assert.doesNotMatch(state.live,/Reply ready/i);
 });
+
+test('context observations never consume engineering iteration numbers',()=>{
+ let s=advanceLiveBits(newLiveBitsState(),{type:'turn_started'});
+ s=advanceLiveBits(s,{type:'memory',state:'retrieved'});
+ const op='11111111-1111-4111-8111-111111111111';
+ s=advanceLiveBits(s,{type:'tool_started',tool:'github.read_branch_status',operationId:op,
+  resource:'www-infinity4/Chiller',criteriaSummary:'Check add-full-episodes'});
+ const inProgress=s.entries.find(e=>e.tool==='github.read_branch_status');
+ assert.equal(inProgress.ordinal,1,'first real tool action must be engineering iteration 1');
+ assert.match(s.live,/^Iteration 1 · GitHub/);
+ s=advanceLiveBits(s,{type:'tool_receipt',tool:'github.read_branch_status',operationId:op,
+  receiptId:'branch_11111111111111111111111111111111',status:'complete'});
+ const finished=s.entries.find(e=>e.tool==='github.read_branch_status');
+ assert.equal(finished.ordinal,1);
+ assert.equal(s.entries.filter(e=>e.contextOnly).length,2);
+ assert.equal(s.entries.filter(e=>e.tool==='github.read_branch_status').length,1);
+ assert.match(s.live,/^Iteration 1 · GitHub/);
+ assert.equal(s.credits,0,'read-only status checks do not mint a Bubble Bit');
+});
