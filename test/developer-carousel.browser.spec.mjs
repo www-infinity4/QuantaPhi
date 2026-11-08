@@ -38,7 +38,7 @@ for(const width of [320,360,393]){
   await section.getByRole('button',{name:'Kris Watson · Owner & Engineer'}).click();
   await visible.getByRole('button',{name:/Explore engineering systems · in this card/}).click();
   await expect(stage.locator('.owner-system-list .owner-system')).toHaveCount(8);
-  await expect(stage.getByRole('link',{name:'Create with GPT'})).toHaveAttribute('href','/website-viewer.html?site=chatgpt');
+  await expect(stage.getByRole('link',{name:'Create with GPT'})).toHaveAttribute('href','/creator-gpt-handoff.html');
   await section.getByRole('button',{name:'Quick Card'}).click();
   await expect(creator.locator('input[name="title"]')).toHaveValue('Vintage Radio Creator');
   const bounds=await section.evaluate(el=>({left:el.getBoundingClientRect().left,right:el.getBoundingClientRect().right,width:innerWidth}));
