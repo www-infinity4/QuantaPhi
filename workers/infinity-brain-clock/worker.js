@@ -775,6 +775,26 @@ export class BrainClock extends DurableObject{
      await this.ctx.storage.delete(retryKey);
     }
    }
+   // Only a real committed GitHub source SHA with a Brain-owned receipt
+   // can propose one pending Gitcoin claim per independently checked diff line.
+   // A user/browser cannot supply the recipient wallet or mint a GIT here.
+   if(this.env.GITCOIN_CLAIMS_ENABLED==='1'&&metadata.receipt?.tool==='github.commit'&&
+      /^[a-f0-9]{40}$/.test(receipt.commitSha||'')){
+    const recipient=await this.ctx.storage.get('bot-work-recipient');
+    if(recipient?.userId){
+     try{
+      const {queueGitHubCommitCandidates}=await import('./gitcoin-diff-evidence.mjs');
+      metadata.gitcoin=await queueGitHubCommitCandidates(this.env,{
+       repo:repository,commitSha:receipt.commitSha,
+       sourceReceiptId:metadata.receipt.id,userId:recipient.userId
+      });
+     }catch(error){
+      metadata.gitcoin={status:'blocked',reason:'pending_gitcoin_claim_error',
+       submittedPending:0,mintedGitCoins:0};
+     }
+     await this.ctx.storage.put(key,record);
+    }
+   }
    await this.emit('bubbles','purple-pearl','direct GitHub receipt',repository+' · '+(metadata.status||metadata.action||'source inspected'),metadata.url);
   };
   try{
