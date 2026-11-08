@@ -3,12 +3,74 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-08T09:31:11.110469Z",
+  "checked_at": "2026-11-08T10:01:11.091408Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "new zealand election",
+      "query": "wi vs ban",
       "approx_searches": "100+",
+      "published_at": "2026-11-08T09:40:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/story/ban-vs-wi-sylhet-test-amir-jangoo-backs-his-instincts-after-century-1561675",
+        "https://www.espn.com/cricket/series/19430/report/1553296/day/4/bangladesh-vs-west-indies-2nd-test-19430"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSg7ljpu4-VrCZ2L42Srwj9Nj2ltGRQ_y8CI504d34v6Rn6hhazt6fbf1SJ85I",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/story/ban-vs-wi-sylhet-test-amir-jangoo-backs-his-instincts-after-century-1561675",
+          "title": "'It's all about sticking to my strengths' - Jangoo backs his instincts after Sylhet ton",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSg7ljpu4-VrCZ2L42Srwj9Nj2ltGRQ_y8CI504d34v6Rn6hhazt6fbf1SJ85I"
+        },
+        {
+          "url": "https://www.espn.com/cricket/series/19430/report/1553296/day/4/bangladesh-vs-west-indies-2nd-test-19430",
+          "title": "King's 61 gives West Indies solid start on fourth morning",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEWapRM03h0E5hb-3NspdI1QySqIl2hMPgtZHGTLLfU9uBgGPH5UNpES-KZG8"
+        }
+      ]
+    },
+    {
+      "query": "rugby league world cup",
+      "approx_searches": "100+",
+      "published_at": "2026-11-08T09:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/rugby-league/articles/c6vg02klk084o",
+        "https://www.foxsports.com.au/nrl/world-cup/womens-rugby-league-world-cup-2026-jillaroos-survive-big-scare-against-fiji-jaime-chapman-injury-update-final-against-new-zealand-date/news-story/618166a971e51f717a1b8ee44bd34b93",
+        "https://www.codesports.com.au/nrl/church-sends-aussies-to-the-final/video/ad99e5fe7effe4862d585fb16951e4f3"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR52vKRP4pXR-ZurqbyDJgz7u2Feyz_S35NuYCLv85yh4ys-775OjhZVh1SG3Q",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/rugby-league/articles/c6vg02klk084o",
+          "title": "2026 Women's Rugby League World Cup: Australia reach final after Fiji scare",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR52vKRP4pXR-ZurqbyDJgz7u2Feyz_S35NuYCLv85yh4ys-775OjhZVh1SG3Q"
+        },
+        {
+          "url": "https://www.foxsports.com.au/nrl/world-cup/womens-rugby-league-world-cup-2026-jillaroos-survive-big-scare-against-fiji-jaime-chapman-injury-update-final-against-new-zealand-date/news-story/618166a971e51f717a1b8ee44bd34b93",
+          "title": "Four-try hero as Jillaroos survive almighty World Cup wake-up call... and sight sparks ‘concern’",
+          "publisher": "Fox Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHmkzMJSas6VLqbUbgY57Jp0xGKbDBS5QyFK2NbOtMGKrQ5zC9i-pIf97-jPg"
+        },
+        {
+          "url": "https://www.codesports.com.au/nrl/church-sends-aussies-to-the-final/video/ad99e5fe7effe4862d585fb16951e4f3",
+          "title": "Church sends Aussies to the final",
+          "publisher": "CODE Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJt1Dt8Vcqzq3Shq8mL7Wl8uaAogfW-nxoRAr8zLxUGSBJnJohF07Wn_27lcc"
+        }
+      ]
+    },
+    {
+      "query": "new zealand election",
+      "approx_searches": "200+",
       "published_at": "2026-11-08T09:10:00Z",
       "related_news_urls": [
         "https://www.bbc.com/news/articles/cxr5yyg2nj9eo",
@@ -43,36 +105,36 @@
     },
     {
       "query": "college gameday",
-      "approx_searches": "1000+",
+      "approx_searches": "20000+",
       "published_at": "2026-11-08T09:00:00Z",
       "related_news_urls": [
-        "https://www.al.com/alabamafootball/2026/11/desmond-howard-jabs-nick-saban-over-sign-stealing-comment-when-talking-alabama-lsu.html",
-        "https://247sports.com/college/alabama/article/nick-saban-makes-pick-for-alabama-lsu-identifies-biggest-concern-for-tide-292289423/",
-        "https://www.si.com/fannation/college/cfb-hq/news/rece-davis-two-loss-sec-team-win-national-championship-lsu"
+        "https://www.espn.com/video/clip/_/id/50409152/sudeikis-mcafee-make-their-picks-miami-notre-dame",
+        "https://wsbt.com/news/local/college-gameday-returns-notre-dame-ahead-miami-matchup-cfp-football-espn-rece-davis-josh-pate-indiana",
+        "https://bleacherreport.com/articles/25529859-espn-college-gameday-2026-week-10-schedule-location-predictions-and-more"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnyMLehShpOYFUe3gm34fLNVMKJcXI99i4Z7ij_kbC3QoyDZt7O1IVI5IgZWY",
-      "image_credit": "AL.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWPvGPMot0E62Ea527fj88xMRWo3qBh_xp3QN7P93zg1nZqzkv0H4Ey8REc2A",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.al.com/alabamafootball/2026/11/desmond-howard-jabs-nick-saban-over-sign-stealing-comment-when-talking-alabama-lsu.html",
-          "title": "ESPN's Desmond Howard jabs Nick Saban over sign-stealing comment when talking Alabama-LSU",
-          "publisher": "AL.com",
+          "url": "https://www.espn.com/video/clip/_/id/50409152/sudeikis-mcafee-make-their-picks-miami-notre-dame",
+          "title": "Sudeikis, McAfee make their picks for Miami-Notre Dame",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnyMLehShpOYFUe3gm34fLNVMKJcXI99i4Z7ij_kbC3QoyDZt7O1IVI5IgZWY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWPvGPMot0E62Ea527fj88xMRWo3qBh_xp3QN7P93zg1nZqzkv0H4Ey8REc2A"
         },
         {
-          "url": "https://247sports.com/college/alabama/article/nick-saban-makes-pick-for-alabama-lsu-identifies-biggest-concern-for-tide-292289423/",
-          "title": "Nick Saban makes pick for Alabama-LSU, identifies biggest concern for Tide",
-          "publisher": "247Sports",
+          "url": "https://wsbt.com/news/local/college-gameday-returns-notre-dame-ahead-miami-matchup-cfp-football-espn-rece-davis-josh-pate-indiana",
+          "title": "College GameDay returns to Notre Dame ahead of Miami matchup",
+          "publisher": "WSBT",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEMpQMLGL70cuf2zd98vK2thqvZE9PWe9nzMZjYUjul8klLJGyX9nP0NCGSW8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7qXiBXDcHDw38BQygtqfg3N0XSeSC6GlqrPMOHWUlx6iKhhHRIiJOS9Rnscw"
         },
         {
-          "url": "https://www.si.com/fannation/college/cfb-hq/news/rece-davis-two-loss-sec-team-win-national-championship-lsu",
-          "title": "Rece Davis Names Two-Loss SEC Team That Can Win the National Championship",
-          "publisher": "Sports Illustrated",
+          "url": "https://bleacherreport.com/articles/25529859-espn-college-gameday-2026-week-10-schedule-location-predictions-and-more",
+          "title": "ESPN College GameDay 2026 Week 10 Schedule, Location, Predictions and More",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRimIvP9nY4zICkYeoGsBuq7-Tjv8AqRzthNKYu2oEgAMH24jgRVEBpVZjAISk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYCoUwzGES3UHF9xdA6icu6kR56TxV1ZVo9MxhbgTHjtMzzhhyIzoCiy-Qteg"
         }
       ]
     },
@@ -140,7 +202,7 @@
     },
     {
       "query": "alexandra eala",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-08T08:30:00Z",
       "related_news_urls": [
         "https://www.espn.com/tennis/story/_/id/50407226/alex-eala-outlasts-maria-sakkari-rain-soaked-hong-kong-open-semifinals-faces-claire-liu-final",
@@ -180,7 +242,7 @@
       "related_news_urls": [
         "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10?utm_source=twitter&amp;utm_medium=o_social&amp;utm_campaign=gtavi_announcement_pre-load-20261103",
         "https://corporate.charter.com/newsroom/spectrum-giving-free-gig-speed-lift-thanksgiving-grand-theft-auto",
-        "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/"
+        "https://mashable.com/entertainment/gta-6-how-to-play-one-day-early"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvr3MnhC7loBDcBhBXQOjgXQdBnSX1GgBl8Gp0wCtDiGaqob5Fx5ug4CQtEz4",
       "image_credit": "Rockstar Games",
@@ -200,59 +262,24 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLrldBUNUxrprrQdaGkYX-IyU3QqIHF3o_gPJ8nNZdwM-7CUvyPxPcKlXOanM"
         },
         {
-          "url": "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/",
-          "title": "Grand Theft Auto VI pre-download begins November 10",
-          "publisher": "PlayStation.Blog",
+          "url": "https://mashable.com/entertainment/gta-6-how-to-play-one-day-early",
+          "title": "How to play 'GTA 6' a day before everyone else in the U.S.",
+          "publisher": "Mashable",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyNgZ56vmBZJJNXtBuVMuXt5SrJjkpTULssjmIfrOVOdDg6PUuF-BaAKk2CE8"
-        }
-      ]
-    },
-    {
-      "query": "jeffrey epstein",
-      "approx_searches": "100+",
-      "published_at": "2026-11-08T08:30:00Z",
-      "related_news_urls": [
-        "https://www.theatlantic.com/politics/2026/11/epstein-midterm-election-end-maga/689303/",
-        "https://www.axios.com/2026/11/06/democrats-ads-epstein",
-        "https://www.ms.now/deadline-white-house/watch/want-to-burn-the-republican-party-down-trump-world-spooked-as-voters-unleash-wrath-over-epstein-2519967299790"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpCAbJfDPtLWqsj0BEHbA_CTzDayC7DV949F_SqWVSS_qdtnVQaSH2dqq9_xg",
-      "image_credit": "The Atlantic",
-      "news": [
-        {
-          "url": "https://www.theatlantic.com/politics/2026/11/epstein-midterm-election-end-maga/689303/",
-          "title": "The Epstein Election and the End of MAGA",
-          "publisher": "The Atlantic",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpCAbJfDPtLWqsj0BEHbA_CTzDayC7DV949F_SqWVSS_qdtnVQaSH2dqq9_xg"
-        },
-        {
-          "url": "https://www.axios.com/2026/11/06/democrats-ads-epstein",
-          "title": "Scoop: How Epstein ads pushed Dems' closing argument",
-          "publisher": "Axios",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_Jubimxgid4ZAEUTmsYnSmOfRGKyFw0j7ZHESZp7ZdgbiWQmLZP7yCo0W7qA"
-        },
-        {
-          "url": "https://www.ms.now/deadline-white-house/watch/want-to-burn-the-republican-party-down-trump-world-spooked-as-voters-unleash-wrath-over-epstein-2519967299790",
-          "title": "‘Want to burn the Republican Party down’: Trump world spooked as voters unleash wrath over Epstein",
-          "publisher": "MS NOW",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOlMJ12HQ0Y6uGbMAPI9-bIJSZ9CoCuf75iSzDEQ3idpB-ELHSakbtYCjuXo0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSccsAT8ketyX3yc0NBqh2AjUCqZDFi-V3gGh8hV9a7jTiacAH3Y-D3rl22LAY"
         }
       ]
     },
     {
       "query": "australia vs samoa",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-08T08:20:00Z",
       "related_news_urls": [
         "https://www.theguardian.com/sport/live/2026/nov/08/australia-kangaroos-vs-samoa-rugby-league-world-cup-mens-semi-final-live-updates",
-        "https://www.news.com.au/sport/nrl/world-cup/kangaroos-star-axed-for-world-cup-semifinal-as-alarming-detail-raises-eyebrows/news-story/851f30fc191f08bf44d938fd0f4ba736",
-        "https://www.ntnews.com.au/sport/world-cup-semifinals-live-insane-kangaroos-record-revealed-jillaroos-face-fiji/live-coverage/3f93825ae469e040a761073d8f05947d"
+        "https://www.espn.com/nrl/story/_/id/50415643/rugby-league-world-cup-match-winner-bench-walters-explains-kangaroos-selections",
+        "https://www.news.com.au/sport/nrl/world-cup/kangaroos-star-axed-for-world-cup-semifinal-as-alarming-detail-raises-eyebrows/news-story/851f30fc191f08bf44d938fd0f4ba736"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVhNiMXd2wnbrRwZU1uNloZE1TEi1uSfKdTPIYJ9HzUQ2PR3jt08dpizFkTH4",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5O8gwTJNJzCmGh1CbtvMVn_D7psVKsLPDCV4RHC8u7T1-z8RjlZZ9tET2Ti8",
       "image_credit": "The Guardian",
       "news": [
         {
@@ -260,7 +287,14 @@
           "title": "Australia v Samoa: men’s Rugby League World Cup semi-final – live",
           "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVhNiMXd2wnbrRwZU1uNloZE1TEi1uSfKdTPIYJ9HzUQ2PR3jt08dpizFkTH4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5O8gwTJNJzCmGh1CbtvMVn_D7psVKsLPDCV4RHC8u7T1-z8RjlZZ9tET2Ti8"
+        },
+        {
+          "url": "https://www.espn.com/nrl/story/_/id/50415643/rugby-league-world-cup-match-winner-bench-walters-explains-kangaroos-selections",
+          "title": "'Match-winner' from bench\" Walters explains Kangaroos selections",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRBKBasAhOM-bi2cIk3sFDC6Wrph7cOpu2sldrgDVRW6lsmQecOSP3JJ3rzG0"
         },
         {
           "url": "https://www.news.com.au/sport/nrl/world-cup/kangaroos-star-axed-for-world-cup-semifinal-as-alarming-detail-raises-eyebrows/news-story/851f30fc191f08bf44d938fd0f4ba736",
@@ -268,19 +302,12 @@
           "publisher": "News.com.au",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3gmijbF2EsjxB_64eL8RmkqVVc82XZHKH2gvDm91PMUY5aAwO0qzShYATlfE"
-        },
-        {
-          "url": "https://www.ntnews.com.au/sport/world-cup-semifinals-live-insane-kangaroos-record-revealed-jillaroos-face-fiji/live-coverage/3f93825ae469e040a761073d8f05947d",
-          "title": "World Cup semi-finals live: Jillaroos set to make history before Kangaroos face off against Samoa",
-          "publisher": "NT News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4WxTYjr6nelAbfF_IeM0PKEcJg9xIJ1Jlgy4-RL9dhV1SYaSkf9yIXMrkbhg"
         }
       ]
     },
     {
       "query": "the diplomat",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-08T08:20:00Z",
       "related_news_urls": [
         "https://www.lifestyleasia.com/hk/entertainment/streaming/will-the-diplomat-season-5-happen-all-we-know-about-netflix-political-drama/",
@@ -310,41 +337,6 @@
           "publisher": "What's on Netflix",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdiB_zvNKWP-TJqbdCQHa_23OGp-rl40hi24N8uV0x0LgVLjrGJMg392sZPfM"
-        }
-      ]
-    },
-    {
-      "query": "wegmans sold winning powerball ticket",
-      "approx_searches": "100+",
-      "published_at": "2026-11-08T08:20:00Z",
-      "related_news_urls": [
-        "https://abc7ny.com/post/new-jersey-ticket-wins-847m-powerball-jackpot-ninth-largest-game-history/20017286/",
-        "https://www.njlottery.com/en-us/newsandevents/newsinput/2026/press-releases/PB_Jackpot_RetailWin_110526.html",
-        "https://www.tcpalm.com/story/news/2026/11/07/powerball-numbers-saturday-november-wegmans-new-jersey/92653560007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMv6JmsfWt2m47s8zHMohqv7uU2lKE8Ej0J4bnwyPnMifGo3Mg64WZ_KetB2I",
-      "image_credit": "ABC7 New York",
-      "news": [
-        {
-          "url": "https://abc7ny.com/post/new-jersey-ticket-wins-847m-powerball-jackpot-ninth-largest-game-history/20017286/",
-          "title": "Powerball winning ticket sold at Montvale, NJ Wegmans for $847 million jackpot",
-          "publisher": "ABC7 New York",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMv6JmsfWt2m47s8zHMohqv7uU2lKE8Ej0J4bnwyPnMifGo3Mg64WZ_KetB2I"
-        },
-        {
-          "url": "https://www.njlottery.com/en-us/newsandevents/newsinput/2026/press-releases/PB_Jackpot_RetailWin_110526.html",
-          "title": "PB_Jackpot_RetailWin_110526",
-          "publisher": "NJ Lottery",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSv4neFsnzCFhrddcDNjw2AJ2jA2Y77NxnZjG8T3AHG2AYUN2XNhuE1hOu1dW8"
-        },
-        {
-          "url": "https://www.tcpalm.com/story/news/2026/11/07/powerball-numbers-saturday-november-wegmans-new-jersey/92653560007/",
-          "title": "After Wegmans ticket matches $847 million Powerball, jackpot at $20 million",
-          "publisher": "Treasure Coast News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk1z_WhFiPCZ9_WbBlaDSEdcpA0o-rmh0vERK9c5x_zFZR6HZ_ut_xEeokJN4"
         }
       ]
     }
