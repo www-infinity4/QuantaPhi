@@ -37,7 +37,7 @@ export function normalizeCoinSaleResults(data,market){
   for(const key of [...cleanUrl.searchParams.keys()])if(/^(?:utm_.*|gclid|fbclid)$/i.test(key))cleanUrl.searchParams.delete(key);
   const canonical=cleanUrl.href;if(seen.has(canonical))continue;seen.add(canonical);
   const state=String(x.auctionStatus||x.sale_status||x.status||'').toLowerCase().trim();
-  const saleStatus=['sold','closed','not_sold','ended','withdrawn'].includes(state)?'sold':'unverified';
+  const saleStatus=state==='sold'?'sold':(['withdrawn','cancelled','canceled'].includes(state)?'withdrawn':(['closed','not_sold','ended','expired'].includes(state)?'closed':'unverified'));
   // No claimed live price or available bid without a privileged seller feed.
   // Public search images are candidate media only. The seller must approve
   // reuse before a photo may appear in a commercial QuantaPhi card.
