@@ -91,6 +91,57 @@ async function paginated(kind,token){
  }
  return {items:found,complete:false};
 }
+async function appendGitSerials(token,generation,git){
+ const section=document.createElement('section');
+ const heading=document.createElement('h3');
+ heading.textContent='GIT coin serials';
+ const note=document.createElement('p');
+ const list=document.createElement('ol');
+ list.className='bubbles-wallet-receipts';
+ section.append(heading,note,list);
+ receipts.append(section);
+ if(git?.available!==true){
+  note.textContent='GIT ledger not connected. No verified GIT serials can be displayed yet.';
+  return;
+ }
+ let cursor=null,busy=false;
+ const more=document.createElement('button');
+ more.type='button';more.textContent='Load more GIT receipts';more.hidden=true;
+ section.append(more);
+ async function page(){
+  if(busy||generation!==walletGeneration)return;
+  busy=true;more.disabled=true;
+  try{
+   const url=new URL(WALLET+'/v1/wallet/git-serials');
+   url.searchParams.set('limit','25');
+   if(cursor!==null)url.searchParams.set('beforeSerial',String(cursor));
+   const data=await api(url.href,token);
+   if(generation!==walletGeneration||!data.available||data.asset!=='GIT'||!Array.isArray(data.items))
+    throw Error('GIT receipt history unavailable');
+   for(const receipt of data.items){
+    if(!/^GIT-[0-9]{12,}$/.test(receipt.serial||''))continue;
+    item(list,receipt.serial+' · '+String(receipt.gitType||'git:other').slice(0,60)+
+      ' · receipt '+String(receipt.receiptId||'').slice(0,20));
+   }
+   const next=data.nextBeforeSerial;
+   cursor=Number.isSafeInteger(next)&&next>0?next:null;
+   more.hidden=cursor===null;
+   note.textContent=list.children.length
+    ?'Issued GIT receipts from your verified wallet. These are not cash.'
+    :'No settled GIT receipts found in your verified wallet.';
+  }catch{
+   note.textContent='GIT serial history not yet available. Existing wallet records were not changed.';
+   more.hidden=true;
+  }finally{busy=false;more.disabled=false;}
+ }
+ more.addEventListener('click',async()=>{
+  try{
+   const active=await verifiedWalletToken();
+   if(active===token&&generation===walletGeneration)await page();
+  }catch{note.textContent='Reconnect your verified wallet to view older GIT receipts.';}
+ });
+ await page();
+}
 async function populate(token,star,unified,generation){
  const name=String(star.state?.username||'').trim().toLowerCase();
  const account=String(unified.user?.username||'').trim().toLowerCase();
@@ -154,6 +205,7 @@ async function populate(token,star,unified,generation){
  }
  if(!tokens.length)item(tokenList,'No Infinity search receipts returned for this account.');
  receipts.append(tokenList);
+ if(generation===walletGeneration)await appendGitSerials(token,generation,work.GIT);
 }
 async function load(){
  if(pending)return;
