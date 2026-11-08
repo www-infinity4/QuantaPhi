@@ -8,6 +8,7 @@ import {liveSourceProfile,showLiveSourceResults} from './quanta-card-live-source
 import {mountMarketplaceCarousel} from './quanta-marketplace-carousel.mjs?v=20261101-unified-market1';
 import {mountStarMakerQuickCard} from './starmaker-quick-card.mjs';
 import {mountMotorcycleQuickCard} from './motorcycle-quick-cards.mjs';
+import {mountMagazineReader} from './magazine-reading-quick-cards.mjs';
 import {mountKaraokeLab} from './quanta-karaoke-lab.mjs';
 /* Infinity card experiences: real local controls, consented embeds, verified open APIs.
  * Never invent publisher feeds, balances, trending lists, streaming rights or provider sessions.
@@ -381,6 +382,10 @@ export function mountCardTools(root,card){
   return;
  }
  if(mountMotorcycleQuickCard(root,card)){
+  mountCardActions(root,card,{showSearch:false});
+  return;
+ }
+ if(mountMagazineReader(root,card)){
   mountCardActions(root,card,{showSearch:false});
   return;
  }
