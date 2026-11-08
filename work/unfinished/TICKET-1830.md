@@ -1,16 +1,29 @@
+---
 issue: 1830
-project: "Opt-in collectible image Quick Card studio and future creator entitlements"
-repo: "www-infinity4/QuantaPhi"
-branch: "feat/collectible-set-studio-20261107"
-state: "source_tested"
-dot: "yellow"
-progress_percent_estimate: 24
+project: "Opt-in collectible image Quick Card studio and creator entitlements"
+state: source_tested
+dot: "🟡"
+progress_percent: 24
+progress_basis: "Estimated: local opt-in image draft, exact-image fingerprints and studio tests implemented; rights checks, authenticated protected storage, D1 paid entitlements, wallet integration, production approval and Android live acceptance pending"
 sessions_spent: 1
-sessions_remaining_estimate: "unknown"
-last_observed_utc: "2026-11-08T01:30:00Z"
+sessions_remaining_estimate: unknown
+agent: "GPT · Green source build, Pink CI, Purple review, Black release pending"
 lease_id: null
-lease_owner: null
-
+fence: null
+lease_expires_at: null
+task_session_id: null
+repo: www-infinity4/QuantaPhi
+branch: feat/collectible-set-studio-20261107
+head_sha: null
+last_observed_at_utc: "2026-11-08"
+issue_url: "https://github.com/www-infinity4/QuantaPhi/issues/1830"
+pr: "https://github.com/www-infinity4/QuantaPhi/pull/1831"
+merged: false
+deployed: false
+live_verified: false
+blocker: "Rights review, authenticated storage and creator D1 payment ledger are not built; exact-head CI and Android acceptance pending"
+next_action: "Inspect PR #1831 exact-head CI, repair any regressions, then run independent Android and privacy checks"
+---
 # Goal
 Owner wants previously collected images (original or permitted memes, vintage images, cartoons, art) suggested as a potential creator card set. One free extra cover, ten separate paid collectibles at a proposed 1 Star Coin each, never double-charge, creator-specific provenance and paid rarity after authenticated review.
 
