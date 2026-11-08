@@ -1,0 +1,19 @@
+name: Shop LC contextual fresh sale cards
+on:
+  pull_request:
+    paths: ['shoplc-contextual-sale.mjs', 'test/shoplc-contextual-sale.test.mjs', 'workers/shoplc-ad-feed/**', 'test/shoplc-ad-feed-worker.test.mjs', 'workers/quantaphi-site/worker.js', 'index.html', '.github/workflows/shoplc-contextual-sale.yml']
+  push:
+    branches: [main]
+    paths: ['shoplc-contextual-sale.mjs', 'test/shoplc-contextual-sale.test.mjs', 'workers/shoplc-ad-feed/**', 'test/shoplc-ad-feed-worker.test.mjs', 'workers/quantaphi-site/worker.js', 'index.html', '.github/workflows/shoplc-contextual-sale.yml']
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check shoplc-contextual-sale.mjs
+      - run: node --test test/shoplc-contextual-sale.test.mjs test/shoplc-ad-feed-worker.test.mjs

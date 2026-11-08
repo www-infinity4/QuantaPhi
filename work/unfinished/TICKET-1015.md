@@ -1,0 +1,15 @@
+# Shop LC contextual sale Quick Cards — Issue #1015
+- Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1015
+- Draft PR: https://github.com/www-infinity4/QuantaPhi/pull/1825
+- Branch: `feat/shoplc-contextual-sale-ads-20261107`
+- Last source review: 2026-11-08 UTC
+- Status: draft source enhanced with an isolated Cloudflare scheduled feed Worker, not deployed; merchant permission and live acceptance blocked.
+- Progress: estimated 5/10 source and release milestones: SKU/category validation; contextual mobile UI; device-local Not for me; multiple-current-items rotation; Cloudflare scheduled Worker + D1 schema/source route prepared. Remaining: approved feed/media contract, actual Ascend adapter credentials/configuration, independent review/exact-head CI, production release, live Android/feed acceptance. No public ads or verified merchant sales.
+- Source: `shoplc-contextual-sale.mjs`, `shoplc-contextual-sale.css`, homepage loader, `workers/shoplc-ad-feed/worker.mjs`, schema and Wrangler example, `workers/quantaphi-site/worker.js` service route, `test/shoplc-contextual-sale.test.mjs`, `test/shoplc-ad-feed-worker.test.mjs`, focused CI.
+- Red/Blue source: existing legacy StarQuest Ledger endpoint `/v1/shoplc/current-item` scrapes live-site HTML; NOT an authorized catalog or reliable price/stock source.
+- Rights blocker: Shop LC official affiliate program offers approved partners licensed banners, product feeds and promotional assets; no approval or actual feed supplied. Do not scrape the live TV/product pages. The new Worker requires server-installed explicit merchant/product/media approval, an exact-approved HTTPS feed host+bearer token, <=15-minute data and valid SKU/photo. Without verified approval, source fails closed. Cloudflare Worker/D1 are **not provisioned or deployed**.
+- Privacy: no personal identity, no hidden wallet actions, generic shopping/TV excludes jewelry ads, browser-local Not for me; multi-device account sync NOT implemented.
+- CI history: initial test-first red run 42430557588; prior frontend exact-head focused green run 42430999631. New Cloudflare-worker test-first run 42434042436 failed as expected before source existed; updated code committed to PR #1825; current-head Actions status must be independently confirmed before advancement.
+- No merge or deployment authorized; PR remains draft and must not be promoted as a working advertising feed.
+- Next safe action: obtain Shop LC/Ascend product feed and promotional media rights, then map actual approved feed format to the staged D1 ingestion adapter; independently review/test, and only then configure/deploy Cloudflare Cron + service binding.
+- Sessions documented: 2 (this session 2026-11-07 CT). Next sessions estimate: unknown (merchant approval dependent).

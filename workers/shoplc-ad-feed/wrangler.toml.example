@@ -1,0 +1,14 @@
+# SAMPLE ONLY: copy into local wrangler.toml only after merchant approval and
+# separate security/rights review. Never commit actual partner secrets.
+name = "quantaphi-shoplc-approved-ads"
+main = "worker.mjs"
+compatibility_date = "2026-11-07"
+workers_dev = false
+
+[triggers]
+crons = ["*/10 * * * *"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "quantaphi-shoplc-approved-ads"
+database_id = "SET_REAL_DATABASE_ID_AFTER_APPROVAL"
