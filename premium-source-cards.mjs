@@ -148,7 +148,8 @@ function mountCoinSales(article,card,field){
       source.href=row.imageSource;source.target='_blank';source.rel='noopener noreferrer';
       credit.append(source);picture.append(image,credit);item.append(picture);
      }
-     item.append(make('p','premium-coin-badge',row.seller+' · '+(row.saleStatus==='sold'?'Past/closed listing':'Sale status unverified')));
+     const statusText=row.saleStatus==='sold'?'Past/closed listing · sold':row.saleStatus==='closed'?'Closed listing · sale not confirmed':row.saleStatus==='withdrawn'?'Withdrawn listing': 'Sale status unverified';
+     item.append(make('p','premium-coin-badge',row.seller+' · '+statusText));
      item.append(make('h4','',row.title));
      if(row.description)item.append(make('p','premium-coin-summary',row.description));
      const original=make('a','premium-coin-lot-link','View actual lot photographs at '+row.seller+' ↗');
