@@ -107,6 +107,12 @@ test('accepted customer jobs use one immutable owner ledger and dedupe replay an
  const balance=sql.prepare('SELECT wallet_id,SUM(amount) AS amount FROM gitcoin_awards GROUP BY wallet_id').all();
  assert.deepEqual(balance.map(row=>({...row})),[{wallet_id:'wallet/bubbles-executor',amount:4}]);
  assert.equal(sql.prepare('SELECT COUNT(*) AS n FROM gitcoin_customer_award_links').get().n,4);
+ const serials=sql.prepare('SELECT serial_no,receipt_id,wallet_id,creator_subject FROM gitcoin_serials ORDER BY serial_no').all();
+ assert.equal(serials.length,4);
+ assert.deepEqual(serials.map(x=>x.serial_no),[1,2,3,4]);
+ assert.ok(serials.every(x=>x.wallet_id==='wallet/bubbles-executor'));
+ assert.deepEqual(serials.map(x=>x.creator_subject),['customer-1','customer-1','customer-2','customer-2']);
+ assert.throws(()=>sql.exec('DELETE FROM gitcoin_serials'),/immutable_gitcoin_serial/);
  assert.throws(()=>sql.exec('DELETE FROM gitcoin_customer_award_links'),/immutable_gitcoin_customer_receipt/);
 });
 test('missing database never claims to have minted a spendable credit',async()=>{
