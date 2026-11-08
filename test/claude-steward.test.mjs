@@ -5,7 +5,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import {execFileSync} from 'node:child_process';
-import {steward,handleSteward,SYSTEM} from '../workers/infinity-rogers/claude-steward.mjs';
+import {steward,handleSteward,handleStewardModelCheck,SYSTEM} from '../workers/infinity-rogers/claude-steward.mjs';
 
 const FILE='const a=1;\nfunction route(x){return x==="fix"?1:2;}\nconst b=2;\n';
 const AUTH='Bearer rb_'+'a'.repeat(64);
@@ -275,4 +275,51 @@ test('failed inline Claude send releases the lock and next send can succeed',asy
  assert.equal(second.ok,true);
  assert.equal(second.reply,'Now Claude answers');
  assert.equal(count,2,'The second call must not be rejected by a stale busy lock');
+});
+
+test('owner-gated Claude Model API check never generates text or exposes credentials',async()=>{
+ const req=()=>new Request('https://x/v1/claude/model-check',{method:'GET'});
+ let calls=0;
+ const fetcher=async(url,options)=>{
+  calls++;assert.equal(options.method,'GET');
+  assert.match(String(url),/\/v1\/models\/claude-sonnet-5-5$/);
+  assert.equal(options.headers['x-api-key'],'sk-test');
+  return Response.json({type:'model',id:'claude-sonnet-5-5'});
+ };
+ const rejected=await handleStewardModelCheck(req(),makeEnv(),{fetcher,verifyOwner:async()=>false});
+ assert.equal(rejected.status,403);
+ assert.equal(calls,0);
+ const accepted=await handleStewardModelCheck(req(),makeEnv(),{fetcher,verifyOwner:async()=>true});
+ assert.equal(accepted.status,200);
+ const data=await accepted.json();
+ assert.equal(data.ok,true);
+ assert.equal(data.model,'claude-sonnet-5-5');
+ assert.equal(data.messageGenerationVerified,false);
+ assert.equal(calls,1);
+ assert.doesNotMatch(JSON.stringify(data),/sk-test|secret|Authorization:/);
+});
+
+test('Claude model-check reports billing and authentication without running inference',async()=>{
+ for(const [code,expected] of [[401,'anthropic_authentication_failed'],[402,'anthropic_billing_required'],[404,'anthropic_model_unavailable']]){
+  const r=await handleStewardModelCheck(new Request('https://x/v1/claude/model-check',{method:'GET'}),makeEnv(),{
+   verifyOwner:async()=>true,
+   fetcher:async()=>new Response('SECRET_PROVIDER_MESSAGE',{status:code})
+  });
+  const data=await r.json();
+  assert.equal(r.status,503);
+  assert.equal(data.error,expected);
+  assert.doesNotMatch(JSON.stringify(data),/SECRET_PROVIDER_MESSAGE/);
+ }
+ const src=fs.readFileSync(new URL('../workers/infinity-rogers/worker.js',import.meta.url),'utf8');
+ assert.match(src,/url\.pathname === '\/v1\/claude\/model-check'/);
+});
+
+test('Claude Android model-check is a separate user-pressed read-only action',()=>{
+ const source=fs.readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ const client=fs.readFileSync(new URL('../claude-card.js',import.meta.url),'utf8');
+ assert.match(source,/Check Claude connection/);
+ assert.match(source,/ClaudeSteward\.checkConnection/);
+ assert.match(client,/async function checkConnection\(/);
+ assert.match(client,/method:'GET'/);
+ assert.match(client,/\/v1\/claude\/model-check/);
 });
