@@ -111,3 +111,18 @@ test('seller photographs require an independent, exact-lot authorized media reco
  assert.equal(attachLicensedCoinImages(rows,market,{...approval,grants:[{...approval.grants[0],image_url:'https://attacker.invalid/fake.jpg'}]},'2026-11-07')[0].image,null,'Media host must match approved seller domain');
  assert.equal(attachLicensedCoinImages(rows,market,{...approval,grants:[{...approval.grants[0],proof_url:''}]},'2026-11-07')[0].image,null,'Rights evidence URL is required');
 });
+
+test('each core collector source has its own rights-verified real coin or slab reference',()=>{
+ const ids=['vamworld','pcgs','ngc','heritage'];
+ const refs=ids.map(referenceCoinImage);
+ assert.equal(new Set(refs.map(x=>x.source)).size,ids.length,'avoid the same generic image on every collector card');
+ for(const r of refs){
+  assert.match(r.source,/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/);
+  assert.match(r.image,/^https:\/\/commons\.wikimedia\.org\/wiki\/Special:FilePath\//);
+  assert.equal(r.license,'CC0-1.0');
+  assert.equal(r.isListingPhoto,false);
+  assert.match(r.label,/Reference:/);
+ }
+ assert.match(referenceCoinImage('ngc').label,/NGC/i);
+ assert.match(referenceCoinImage('vamworld').label,/Morgan/i);
+});
