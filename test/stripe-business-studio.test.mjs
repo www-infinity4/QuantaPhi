@@ -20,6 +20,14 @@ test('coin seller and lawn service use one prospective merchant, no fake account
   assert.ok(!JSON.stringify(plan).includes('merchant_ref'));
  }
 });
+test('a new business can prepare Stripe setup before creating its first Quick Card',()=>{
+ const plan=buildStripeSellerDraft({sellerSlug:'new-lawn',displayName:'Neighborhood Lawn Care',businessType:'services',cardIds:'',priceUsd:'30.00',notes:''});
+ assert.equal(plan.cardCount,0);
+ assert.deepEqual(plan.cards,[]);
+ assert.equal(plan.accountStatus,'not_connected');
+ assert.equal(plan.checkoutEnabled,false);
+});
+
 test('seller drafts reject duplicate cards, extra privileges, over capacity, invalid dollars and restricted business groups',()=>{
  assert.deepEqual(parseStripeSellerCards('a,b\nc'),['a','b','c']);
  assert.throws(()=>parseStripeSellerCards('a,a'),/duplicate_card/);
