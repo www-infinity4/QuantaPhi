@@ -19,6 +19,25 @@ export function paintCard(container,c,{embedded=false}={}){
  if(new URLSearchParams(location.search).has('preview'))livePreview.hidden=true;
  const xPost=el('a','qcp-x-share','Post card to X ↗');xPost.href=xShareLink(c.cardUrl,c.title,c.image||'',c.description||'');xPost.target='_blank';xPost.rel='noopener noreferrer';
  shareBar.append(livePreview,share,xPost);article.append(shareBar,shareStatus);
+ if(c.locked||c.pricingMode==='paid'){
+  // Never expose, fetch, iframe or navigate to a paid creator's source without
+  // isolated hosting plus server-verified wallet debit and creator-credit receipts.
+  const gate=el('section','qcp-paid-gate');
+  gate.append(el('p','qcp-eyebrow','⭐ CREATOR APP · STARCOIN ACCESS'),
+    el('h2','',c.title),
+    el('p','qcp-desc','Pay '+c.priceStarCoins+' StarCoin'+(c.priceStarCoins==='1'?'':'s')+' to use this app'));
+  if(c.image){const poster=el('img','qcp-art');poster.src=c.image;poster.alt='Artwork for '+c.title;poster.loading='lazy';gate.append(poster);}
+  const unlock=el('button','qcp-unlock-button','Pay '+c.priceStarCoins+' StarCoin'+(c.priceStarCoins==='1'?'':'s')+' to use the App');
+  unlock.type='button';unlock.disabled=true;
+  unlock.setAttribute('aria-describedby','qcpPaymentUnavailable');
+  gate.append(unlock);
+  const note=el('p','qcp-small','Paid creator checkout is not connected. No charge will be made and the underlying app remains locked.');
+  note.id='qcpPaymentUnavailable';note.setAttribute('role','status');
+  gate.append(note);
+  if(c.creatorProfile){const creator=el('a','qcp-x-share','Creator profile ↗');creator.href=c.creatorProfile;creator.target='_blank';creator.rel='noopener noreferrer';gate.append(creator);}
+  article.append(gate,el('p','qcp-small','This is a shareable preview. Public discovery and wallet charging require independent review.'));
+  container.replaceChildren(article);return article;
+ }
  if(c.image){const image=el('img','qcp-art');image.src=c.image;image.alt='Artwork supplied for '+c.title;image.loading='lazy';image.referrerPolicy='no-referrer';image.addEventListener('error',()=>{image.remove();article.prepend(el('p','qcp-error','Card image is unavailable. The title and actions are still usable.'));});article.append(image);}
  else article.append(el('div','qcp-brand',new URL(c.website).hostname.replace(/^www\./,'')));
  const info=el('section','qcp-interaction');
