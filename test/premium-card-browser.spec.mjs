@@ -140,3 +140,27 @@ test('seller-authorized listing photo appears for the exact PCGS VAM lot and is 
  await expect(photos).toContainText('GreatCollections rights holder');
  await expect(photos.getByRole('link',{name:'Original lot and image credit'})).toHaveAttribute('href',lot);
 });
+
+test('blocked seller image falls back honestly to the specific lot link',async({page})=>{
+ const lot='https://www.greatcollections.com/Coin/2299600/1888-O-Morgan-Silver-Dollar-Hot-Lips-VAM-4-PCGS-AU-53';
+ await page.route('**/data/coin-media-approvals.json',route=>route.fulfill({json:{
+  schema_version:1,grants:[{market:'greatcollections',lot_url:lot,
+   image_url:'https://www.greatcollections.com/approved/lot-photo-restricted.jpg',
+   image_credit:'GreatCollections authorized catalog photograph',
+   license:'seller-permitted',proof_url:'https://www.greatcollections.com/approved/lot-permission',
+   approved_by:'reviewed-commercial-media',approved_at:'2026-11-07',expires_at:'2027-01-01'}]
+ }}));
+ await page.route('https://www.greatcollections.com/approved/lot-photo-restricted.jpg',route=>route.fulfill({status:403,body:'No hotlink access'}));
+ await page.route('https://orange-brook-a2ac.marvaseater.workers.dev/search**',route=>{
+  const q=new URL(route.request().url()).searchParams.get('q')||'';
+  route.fulfill({json:{results:q.includes('site:greatcollections.com')?[
+    {title:'1888-O Hot Lips VAM-4 Top 100 PCGS AU-53',url:lot}
+  ]:[]},headers:{'access-control-allow-origin':'*'}});
+ });
+ await page.goto(base+'/?card=pcgs',{waitUntil:'domcontentloaded'});
+ const sales=page.locator('#oracleCardStage [data-source-id="pcgs"] .premium-coin-sales');
+ await expect(sales.getByText('1888-O Hot Lips VAM-4 Top 100 PCGS AU-53')).toBeVisible({timeout:25000});
+ await expect(sales.locator('.premium-coin-lot-photo')).toHaveCount(0);
+ await expect(sales.getByText(/If the photo cannot load here, view the original seller listing/)).toBeVisible();
+ await expect(sales.getByRole('link',{name:/View actual lot photographs at GreatCollections/})).toHaveAttribute('href',lot);
+});
