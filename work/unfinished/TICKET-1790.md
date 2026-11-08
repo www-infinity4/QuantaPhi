@@ -5,7 +5,7 @@ state: implementing
 dot: "🟡"
 progress_percent: 55
 progress_basis: "Estimate: source-backed search, official references, in-card proposal preview, moderation-boundary tests and reviewed-data importer implemented on PR; exact-head CI, review, merge, approved 1,000+ data snapshot and Android live acceptance pending"
-sessions_spent: 4
+sessions_spent: 5
 sessions_remaining_estimate: unknown
 agent: "GPT · Red source review, Green implementation, Pink CI review, Black release verification pending"
 lease_id: null
@@ -14,15 +14,15 @@ task_session_id: null
 fence: null
 repo: www-infinity4/QuantaPhi
 branch: feat/media-star-creator-ledger-choices-20261107
-head_sha: 7179beefbda7a304e54c26ab3f508d1b3229a39d (earlier exact-head CI before final checkpoint)
+head_sha: 9fe29a641dbaa36f853b5704cb9ce06c5bad0a2e (source head before this checkpoint; exact-head CI must be read again)
 last_observed_at_utc: "2026-11-07"
 pr: "https://github.com/www-infinity4/QuantaPhi/pull/1822 (current draft); #1814 (earlier merged)"
-tests: "Media Star Creator PR #1822: 15/15 Node tests passed, 5/5 listed workflows succeeded at head 7179beef; independent Android and live payout verification pending"
+tests: "Creator prior source passed 15/15 focused tests; latest public-card & creator awards run pending exact-head confirmation. TV-Database source 2/2 CI passed at 2e11158e. Artist-radio CI unrelated failure on prior QuantaPhi head; no production acceptance."
 merged: false
 deployed: false
 live_verified: false
 blocker: "Current #1822 remains draft; D1 PR #130 source-only; issuer view funding/identity, curator wallet entitlement service, moderation and Android/live deployment unverified"
-next_action: "Review creator-card D1 PR #130, confirm migrations and rights/payment policies; then independently review #1822, verify Android and authorize deployment separately"
+next_action: "Independently review full latest-head #1822 CI and #130 security/rights before any merge; add signed creator settlement and user-confirmed curator checkout in a separately reviewed phase."
 ---
 ## November 7 — thousands-scale Developer Library expansion (PR #1814)
 
@@ -79,3 +79,12 @@ Source receipt: QuantaPhi draft [#1822](https://github.com/www-infinity4/QuantaP
 No new funded coins, actual paid entitlements, third-party verified wallet connections, new public published cards, live website, Android playback, Cloudflare deployment or monetary transactions have been verified or claimed. The production registry historically limits observed receipts to one per viewer/content/Central day, based on self-reported 30-second playback; a future independently verified actual-play session proof and abuse rules are required before paying for *every* genuine play. Fred's external X replay remains outside first-party completion telemetry. The new two-ledger schema keeps pending awards and curator payments independently auditable.
 
 Next action: independent financial/security/rights review and exact-head CI; verify authorized creator identity and payout terms, apply approved migration, implement and sandbox-test auditable issuer funding + customer-to-curator transfer, then moderated public Media Star feed and actual Android readback. Do not silently mint or backfill uncertain plays.
+
+## November 7 continuation — approved Public Oracle cards, native playback evidence, private award inquiry
+
+- **QuantaPhi draft PR #1822** now adds `media-star-public-feed-core.mjs` (validates signed source URLs and never displays paid links), `media-star-public-cards.mjs/css` (uses verified `/apps/icons/media-star-512.png` artwork, original `#infinityAcceptedCards` DOM bank and the existing `quantaphi:source-cards-ready` Oracle registration; no fake cards if empty), and source tests. First-party HTML5 free audio/video measures 30 foreground seconds without credited seeks before sending a **self-reported pending** production observation to the authenticated StarQuest bridge, never minting. Official supported YouTube playback is embedded on explicit click, but not falsely treated as observed completed audio. Original X URLs open at provider if unsupported; no iframe bypass.
+- Creator studio has a **My Infinity view awards** action; it calls existing authenticated `productionClaims()` and shows creator-scoped pending proposal receipts separately from spendable (zero until independently settled) or customer curator fees. Never claims a completed settlement.
+- **TV-Database draft PR #130** now has publicly accessible but **moderation-approved-only** `GET /v1/production/media-star-cards`, masking paid URLs at SQL projection. A reviewed card's episodes and any purchased episode IDs cannot be silently overwritten on editing. Signed client `recordProductionPlay` now transports registered `contentId`. Authenticated `/v1/production/mine` adds read-only issuer-award receipt status scoped to original card publisher or independently verified credited claimant. No debits, minting, or payout mutation.
+- Evidence: TV-Database head `2e11158e5d2b8148d4718fb8d18e1c7d2aba3d80` had 2/2 CI success, including D1 SQLite schema/actual query masking, Worker TypeScript compilation and source contracts. QuantaPhi frontend focused CI had passing Media Star suite at prior head `0d1688e41e490ec14e448da918fc23eb68c70236` after correcting a test-selector typo; latest head CI is pending. The separate artist-radio workflow is failing on that branch and needs independent triage; do not count all QuantaPhi workflows green.
+- No new creator card was actually approved, no D1 0005 migration was deployed, no wallet recipient was verified, and no StarCoin was issued, transferred or made claimable. The current production ledger reports only **client-reported one-per-content/account/Central-day** receipts, so it DOES NOT yet satisfy one award for each genuine replay/session. Provider playback validation, fraud controls, repeat-play idempotency, funded issuer policy and creator rights verification remain blockers. Do not call source work production.
+- Next safe action: verify latest CI and independent PR review, then separately design an accountable, verified per-play session receipt, approved backend issuance and creator/curator transfers. Preserve historical source receipts, no blind backfill.
