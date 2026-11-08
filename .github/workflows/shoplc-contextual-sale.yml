@@ -4,7 +4,7 @@ on:
     paths: ['shoplc-contextual-sale.mjs', 'test/shoplc-contextual-sale.test.mjs', 'workers/shoplc-ad-feed/**', 'test/shoplc-ad-feed-worker.test.mjs', 'workers/quantaphi-site/worker.js', 'index.html', '.github/workflows/shoplc-contextual-sale.yml']
   push:
     branches: [main]
-    paths: ['shoplc-contextual-sale.mjs', 'test/shoplc-contextual-sale.test.mjs', 'index.html', '.github/workflows/shoplc-contextual-sale.yml']
+    paths: ['shoplc-contextual-sale.mjs', 'test/shoplc-contextual-sale.test.mjs', 'workers/shoplc-ad-feed/**', 'test/shoplc-ad-feed-worker.test.mjs', 'workers/quantaphi-site/worker.js', 'index.html', '.github/workflows/shoplc-contextual-sale.yml']
 permissions:
   contents: read
 jobs:
