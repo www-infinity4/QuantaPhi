@@ -888,7 +888,12 @@ export default {
          const result=await handleGeminiCard(request,env);
          return new Response(result.body,{status:result.status,headers:{...headers(request)}});
        }
-       if(url.pathname===COLLAB_PATH){
+       if(url.pathname==='/v1/claude/steward'){
+        const {handleSteward}=await import('./claude-steward.mjs');
+        const result=await handleSteward(request,env);
+        return new Response(result.body,{status:result.status,headers:{...headers(request)}});
+      }
+      if(url.pathname===COLLAB_PATH){
         const {handleCollaboration}=await import('./ai-collaboration.mjs');
         const result=await handleCollaboration(request,env);
         return new Response(result.body,{status:result.status,headers:{...headers(request)}});

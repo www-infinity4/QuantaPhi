@@ -2385,6 +2385,24 @@ async function consultExternalAi(question,mode='gemini_first',fromVoice=false,re
   else if(config.voice)speakText(completed?'AI consultation finished.':'AI consultation not confirmed.');}
  nativeSpeechPending=false;busy=false;send.disabled=false;setOrbState(voiceEnabled?'listening':'idle');drainVoiceTurns();
 }
+window.__bubblesRecentMessages=()=>messages.slice(-10).map(m=>({role:m.role,text:String(m.text||'').slice(0,600)}));
+// Claude steward: owner-verified Claude that can read source and prepare verified patches. Never deploys.
+async function askClaudeSteward(text,mode){
+ const steward=window.ClaudeSteward;
+ if(!steward||embedded||busy)return false;
+ busy=true;send.disabled=true;setOrbState('busy');
+ display(text,'you');messages.push({role:'user',text});persistChat();
+ let reply='';
+ try{
+  const result=await steward.ask(text,{mode,evidence:window.__bubblesRecentMessages().slice(0,-1)});
+  reply=result?.reply?String(result.reply).slice(0,1500):'Claude did not confirm a response. Nothing was changed.';
+  if(result?.patches?.length)reply+='\n\n'+result.patches.length+' verified patch(es) are in the Claude card. Nothing is applied until you run or approve it.';
+ }catch(error){reply='Claude steward not confirmed: '+String(error.message||error).slice(0,160)+'.';}
+ display(reply,'ai');messages.push({role:'assistant',text:reply});messages=messages.slice(-400);persistChat();
+ status.textContent='Claude steward replied.';busy=false;send.disabled=false;setOrbState(voiceEnabled?'listening':'idle');
+ drainVoiceTurns();
+ return true;
+}
 window.addEventListener('bubbles:ai-consult',event=>{
  if(embedded||busy||turnPending||!event?.detail?.question)return;
  if(!['gemini_first','gemini_claude_review','claude_only'].includes(event.detail.mode))return;
@@ -2454,6 +2472,12 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     return;
    }
   }
+ const stewardAsk=/^(?:(?:hey|ok|okay|please)[,\s]+)*(?:bubbles[,\s]+)?(fix yourself|claude[,:]\s*[\s\S]{3,2400})$/i.exec(spoken);
+ if(stewardAsk&&window.ClaudeSteward&&!embedded){
+  clearSentComposer();
+  const fixing=/^fix yourself/i.test(stewardAsk[1]);
+  if(await askClaudeSteward(fixing?'Fix yourself. Find what Bubbles is getting wrong and prepare the fix.':stewardAsk[1].replace(/^claude[,:]\s*/i,''),fixing?'fix':'chat'))return;
+ }
  const aiConsult=/^(?:bubbles[, ]+)?ask (gemini then claude|gemini|claude)\s*:\s*([\s\S]{3,2400})$/i.exec(spoken);
  if(aiConsult){
   clearSentComposer();
