@@ -60,3 +60,11 @@ test('zero-free paid collection cannot leak the first episode source in the mani
  assert.ok(!html.includes(locked));
  assert.match(html,/No payment or source link/);
 });
+
+test('creator ledger view reads pending Infinity awards from signed backend, never fabricates wallet credits',()=>{
+ assert.match(src,/My Infinity view awards/);
+ assert.match(src,/productionClaims\(/);
+ assert.match(src,/pendingInfinityViewAwards/);
+ assert.match(src,/not spendable/i);
+ assert.doesNotMatch(src,/\bMintStarCoin\s*\(/);
+});
