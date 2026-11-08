@@ -15,7 +15,9 @@ test('Steve Miller button mounts Book of Dreams YouTube playlist inside the orig
 test('Pink Floyd and other classic-rock buttons launch selected artist video in card',()=>{
  const s=get('classic-rock-official-card.mjs');
  assert.ok(s.includes('www.youtube.com/embed/'));
- assert.ok(s.includes('band.videoId'));
+ assert.ok(s.includes('const track=tracks[trackIndex%tracks.length]'));
+ assert.ok(s.includes("frame.src='https://www.youtube.com/embed/'+track.videoId"));
+ assert.ok(s.includes('track?.videoId'));
  assert.ok(s.includes('cr-player-panel'));
  assert.ok(!s.includes('window.InfinityRadioQuick.toggle()'));
 });

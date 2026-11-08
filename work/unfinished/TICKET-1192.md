@@ -5,7 +5,7 @@ state: review_pending
 dot: "🟡"
 progress_percent: unknown
 progress_basis: "Source-level continuation and admission diagnostics staged; no production job execution or live Android acceptance proved"
-sessions_spent: 1
+sessions_spent: 2
 sessions_remaining_estimate: unknown
 agent: ChatGPT
 lease_id: null
@@ -13,13 +13,13 @@ lease_expires_at: null
 task_session_id: null
 fence: null
 repo: www-infinity4/QuantaPhi
-branch: feature/bubbles-visible-bit-iterations-20261104
-head_sha: 1a58cba45230a338c74c3fcb9788927857deca00
+branch: fix/bubbles-unexecuted-job-status-20261107
+head_sha: 7dc0f435614ec9d2361f0d45eba741e82cbb33bd
 merged: false
 deployed: false
 live_verified: false
-next_action: "Verify exact-head CI on Bubbles #1664; obtain independent review and gated merge/release, then use one signed owner continuation with real claim/test/PR receipt"
-blocker: "Live Brain's deployed source predates pending admission fixes; older tickets require explicit eligible owner selection. Independent review and guarded release still pending."
+next_action: "Verify exact-head CI on PR #1827 (Bubbles unified plus durable branch receipt storage); obtain a real independent reviewer approval, then permitted merge and guarded worker/frontend deploy with signed owner receipt and Android smoke test"
+blocker: "Copilot reviewer reported insufficient quota and gave no approval. New tool receipt persistence and iteration numbering still need exact-head CI. Live Cloudflare Brain and Bubbles frontend predates this unmerged PR; authenticated runtime and physical Android acceptance are pending."
 ---
 
 # Canonical issue
@@ -96,3 +96,16 @@ A fresh reviewer approved source merge with BUBBLE_BITS_ENABLED absent/OFF after
 - Ticket progress is bound to the owner and originating chat. Active visible chats request one ticket every 2.5 seconds, and a same-tab reload replays saved observations. General owner notices stay in Work details and voice. The initial release uses the existing authenticated request path and introduces no new model provider or secret.
 - Focused source suites and the hosted Docker isolation probe passed. GitHub surfaced fixtures that relied on old classifier or source-review syntax. Those were corrected and require CI on the new heads.
 - State is source tested, with exact-head review, guarded release and a signed live chat repair pending. One documented session. Overall completion and remaining sessions are unknown. No coordinator lease was claimed. Next action is to verify the revised PR checks and independent review.
+
+
+## 2026-11-07 CT · Chiller job-status source repair continuation
+- Session ledger field `sessions_spent: 2` is a conservative minimum: the pre-existing recorded session plus the current verified repair continuation. Earlier narrative notes are retained but not treated as extra independently counted sessions without a distinct session ID; the exact total historical count is not established.
+
+
+- Reused issue [#1192](https://github.com/www-infinity4/QuantaPhi/issues/1192), Bubble Bits [#1296](https://github.com/www-infinity4/QuantaPhi/issues/1296) and [PR #1827](https://github.com/www-infinity4/QuantaPhi/pull/1827); no coordinator lease/owner receipt was claimed, lease and fence remain null. This is another source engineering session, not a finished live job.
+- Reproduced the owner's screenshot: raw model-proposed `check_job_status` JSON was shown as though a tool call, while two context checks were miscounted as work. Added a reply guard, separate context rows, and an authenticated read-only Chiller branch status route using the existing signed owner Brain ingress. Branch ref and GitHub numeric repository identity are validated; an absent branch never proves a runner ran.
+- Existing Bubbles iteration display still numbered the first real action as 3 after two context rows. Added regression first; observed red `Iteration 3`; fixed separate technical ordinal and observed green `Iteration 1` with no wallet mint or pending context row.
+- Review found that the branch-read endpoint initially created an ephemeral random receipt ID without persistent evidence. Added new `test/bubbles-branch-receipt-storage.test.mjs`, the bounded (≤32) Durable Object read receipt store, readback before `status:complete`, invalid/missing evidence rejection, and CI coverage. Local source harness passed: 32 retained distinct records after 37 reads; invalid metadata rejected without storage write. **GitHub Actions CI on current code head is still pending at checkpoint time.**
+- Last pre-receipt-change Bubbles head `653bcfd5e219f5aed22a7ca36f3b009390916fd7` passed Bubbles unified interface, Bubbles Bits, real tool results, Android chat source checks and Robot Brain diagnostic; unrelated Artist radio source reliability test failed. **Current source code head** `7dc0f435614ec9d2361f0d45eba741e82cbb33bd` must pass its own CI before approval/merge.
+- PR #1827 was marked ready for review and mergeable, but Copilot left `COMMENTED` review stating insufficient quota; no independent approval. The last authenticated Cloudflare deployment inspection showed the active `infinity-brain-clock` deployment predates the PR change. No merge, production deploy, signed owner chat, wallet credit, or Android hardware result is claimed.
+- Scope completion estimate remains **unknown** because the final live signed conversation and phone acceptance remain untested; this is not a percentage of generated source. Single next action: read the current exact-head CI; correct any regression on this same PR. Then secure independent review/approval, guarded merge/deployment and one owner-signed end-to-end status request that returns a stored receipt in the original chat.

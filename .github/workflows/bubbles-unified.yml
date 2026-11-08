@@ -46,6 +46,11 @@ on:
       - 'bubbles-live-iteration-feed.mjs'
       - 'bubbles-live-iteration-feed.css'
       - 'test/bubbles-live-bits.test.mjs'
+      - 'test/bubbles-tool-proposal-iteration.test.mjs'
+      - 'test/bubbles-branch-status.test.mjs'
+      - 'test/bubbles-branch-receipt-storage.test.mjs'
+      - 'workers/infinity-brain-clock/branch-read-receipt.mjs'
+      - 'test/bubbles-branch-status-chat.test.mjs'
       - 'test/bubbles-github-receipt-followup.test.mjs'
       - 'test/bubbles-live-job-steps.test.mjs'
       - 'test/bubbles-color-reasoning-receipts.test.mjs'
@@ -95,6 +100,11 @@ on:
       - 'bubbles-live-iteration-feed.mjs'
       - 'bubbles-live-iteration-feed.css'
       - 'test/bubbles-live-bits.test.mjs'
+      - 'test/bubbles-tool-proposal-iteration.test.mjs'
+      - 'test/bubbles-branch-status.test.mjs'
+      - 'test/bubbles-branch-receipt-storage.test.mjs'
+      - 'workers/infinity-brain-clock/branch-read-receipt.mjs'
+      - 'test/bubbles-branch-status-chat.test.mjs'
       - 'test/bubbles-github-receipt-followup.test.mjs'
       - 'test/bubbles-live-job-steps.test.mjs'
       - 'test/bubbles-color-reasoning-receipts.test.mjs'
@@ -121,7 +131,7 @@ jobs:
       - run: node --test test/bubbles-dispatch-catalog.test.mjs test/bubbles-work-evidence.test.mjs test/bubbles-image-conversation.test.mjs
       - run: node --check bubbles-cloud-wallet.js
       - run: node --test test/bubbles-cloud-wallet-history.test.cjs test/bubbles-owner-wallet-recovery.test.cjs
-      - run: node --test test/bubbles-unified.test.mjs test/bubbles-iteration-bubbles.test.mjs test/bubbles-bit-session.test.mjs test/bubbles-live-bits.test.mjs test/bubbles-github-receipt-followup.test.mjs test/bubbles-live-job-steps.test.mjs test/bubbles-color-reasoning-receipts.test.mjs test/bubbles-auto-update-and-resume.test.mjs test/bubbles-tool-wiring.test.mjs test/bubbles-chat-turn-recovery.test.cjs test/bubbles-website-work-first.test.mjs
+      - run: node --test test/bubbles-unified.test.mjs test/bubbles-iteration-bubbles.test.mjs test/bubbles-bit-session.test.mjs test/bubbles-live-bits.test.mjs test/bubbles-tool-proposal-iteration.test.mjs test/bubbles-branch-status.test.mjs test/bubbles-branch-receipt-storage.test.mjs test/bubbles-branch-status-chat.test.mjs test/bubbles-github-receipt-followup.test.mjs test/bubbles-live-job-steps.test.mjs test/bubbles-color-reasoning-receipts.test.mjs test/bubbles-auto-update-and-resume.test.mjs test/bubbles-tool-wiring.test.mjs test/bubbles-chat-turn-recovery.test.cjs test/bubbles-website-work-first.test.mjs
       - name: Verify in-chat cards and repository ticket targets
         run: |
           node --check bubbles-card-workspace.mjs

@@ -2282,8 +2282,18 @@ function describeBubblesToolOutcome(json,answer){
  const note=explanations[state]||(incomplete?'The tool returned data, but the requested explanation or outcome remains incomplete.':'');
  return note?(text?text+'\n\n'+note:note):text;
 }
+// Model-generated structured text is NOT an authenticated tool invocation.
+// Report proposed job-status calls as unexecuted unless a real tool receipt exists.
+function isUnexecutedJobStatusProposal(text){
+ const value=String(text||'');
+ return /["']action["']\s*:\s*["'](?:check_job_status|check_runner_status)["']/i.test(value)
+  && /["']parameters["']\s*:/i.test(value)
+  && /["'](?:repo|repository)["']\s*:\s*["'][A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+["']/i.test(value);
+}
 function normalizeOwnerAssistantReply(reply,request,ownerVerified){
  const answer=String(reply||'').trim();
+ if(typeof isUnexecutedJobStatusProposal==='function'&&isUnexecutedJobStatusProposal(answer))
+  return 'Bubbles proposed a repository job-status check, but the authenticated tool did not execute it. The runner result is unverified; check the saved job receipt before reporting completion.';
  // Preserve the specific GitHub-search failure message from the concurrent repair.
  if(/["']action["']\s*:\s*["']github[.](?:searchCode|search_code)["'][\s\S]{0,1600}["']parameters["']\s*:/i.test(answer))
   return 'Bubbles received unexecuted GitHub search instructions, not actual results. The source search and card repair have not been verified.';
@@ -2413,6 +2423,73 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // It is not ChatGPT Personal Context, a permission grant or a completed job.
  const firstOwnerContext=await currentOwnerContext(spoken);
  if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'memory',state:firstOwnerContext.state}}));
+ // Explicit user-requested repository branch status is an authenticated READ,
+ // never an inferred tool command, write lease or new runner dispatch.
+ if(!embedded){
+  let branchStatusModule=null;
+  try{branchStatusModule=await import('/bubbles-branch-status.mjs?v=20261107-verified-receipt2')}catch{}
+  const branchStatusQuery=branchStatusModule?.parseBranchStatusQuery(spoken);
+  if(branchStatusQuery){
+   const receiptThread=activeThread,operationId=crypto.randomUUID();
+   display(spoken,'you');
+   if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:chat-user-visible',{detail:null}));
+   messages.push({role:'user',text:spoken});messages=messages.slice(-400);persistChat();
+   clearSentComposer();busy=true;send.disabled=true;setOrbState('thinking');
+   status.textContent='Reading the exact GitHub branch and saved Brain ticket…';
+   const emitRead=detail=>{
+    if(receiptThread!==activeThread||typeof CustomEvent!=='function')return;
+    window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{tool:'github.read_branch_status',
+     operationId,resource:branchStatusQuery.repository,criteriaSummary:'Check '+branchStatusQuery.branch,...detail}}));
+   };
+   emitRead({type:'tool_started'});
+   let answer='',readStatus='';
+   try{
+    const headers=await verifiedOwnerHeaders();
+    const response=await bubblesFetch(BRAIN+'/work/github/read',{method:'POST',
+     headers:{...headers,'Content-Type':'application/json'},
+     body:JSON.stringify({action:'read_branch_status',...branchStatusQuery}),cache:'no-store'},17000);
+    const branchRead=await response.json().catch(()=>({}));
+    if(!response.ok||branchRead.ok!==true)
+     throw Error(String(branchRead.error||'github_branch_read_failed').slice(0,100));
+    let ticketRead={ok:false};
+    try{
+     const tickets=await bubblesFetch(BRAIN+'/work/tickets/list',{method:'POST',
+      headers:{...headers,'Content-Type':'application/json'},body:'{}',cache:'no-store'},14000);
+     const data=await tickets.json().catch(()=>({}));
+     if(tickets.ok&&data.ok===true&&Array.isArray(data.tickets))ticketRead=data;
+    }catch{/* A failed ticket listing cannot erase a valid GitHub readback. */}
+    if(!ownerReady||ownerHeaders!==headers)throw Error('owner_session_changed_during_read');
+    // Never show a completed tool iteration for a random response id or an
+    // identity-mismatched result. Durable server readback and exact ref must agree.
+    const verified=branchStatusModule.isVerifiedBranchReadReceipt(branchStatusQuery,branchRead);
+    if(!verified)throw Error('authenticated_branch_receipt_unverified');
+    answer=branchStatusModule.describeAuthenticatedBranchStatus(branchStatusQuery,branchRead,ticketRead,
+     {conversationTicketId:recentWorkRef(receiptThread)?.ticketId||''});
+    const proof=branchRead.readReceipt;
+    emitRead({type:'tool_receipt',status:'complete',receiptId:proof.id,
+     detail:branchRead.exists===true?'GitHub branch readback returned a commit':'GitHub branch ref not found'});
+    readStatus='GitHub branch checked · runner result separate';
+   }catch(error){
+    failedTurn=true;
+    answer='Bubbles could not verify GitHub branch status ('+String(error.message||error).slice(0,110)+
+     '). Runner execution remains unverified. No job was submitted.';
+    emitRead({type:'tool_receipt',status:'failed',detail:'Authenticated branch read failed'});
+    readStatus='GitHub branch read unavailable · no runner outcome confirmed';
+   }finally{
+    if(receiptThread===activeThread){
+     // Even a missing/expired owner grant needs a visible, safe failure reply.
+     // An owner switch never exposes the old readback: it is rejected above.
+     appendGithubReport(answer,receiptThread);status.textContent=readStatus;
+     if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=answer;
+     else if(config.voice&&!nativeOverlay)speakText(answer);
+    }
+    nativeSpeechPending=false;busy=false;send.disabled=false;
+    if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
+    drainVoiceTurns();
+   }
+   return;
+  }
+ }
  // A GitHub status question reads the durable owner receipt; no second write.
  if(!embedded&&/\b(?:github|git\s*hub|repo|repository|created)\b/i.test(spoken)){
    let receiptModule=null;
@@ -3420,20 +3497,24 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    json=await response.json();
   }
   if(!response.ok||json.ok===false)throw Error(String(json.output||json.error||'Oracle conversation failed'));
-  if(nativeOverlay&&json.receipt?.tool)gptStatus.textContent=json.receipt.status==='complete'?'Reply ready.':'The result needs checking.';
   const rawAnswer=extract(json);
    if(!rawAnswer&&!cardoneResearch)throw Error('The AI returned no spoken or written reply');
    if(!cardoneResearch&&/^(?:on it|working on it|checking|thinking|one moment|just a moment)[.!…\s]*$/i.test(rawAnswer.trim()))throw Error('The assistant acknowledged the request but returned no result.');
+   const unexecutedJobProposal=isUnexecutedJobStatusProposal(rawAnswer);
+   if(nativeOverlay&&unexecutedJobProposal)gptStatus.textContent='Tool proposal not executed. No runner receipt.';
+   else if(nativeOverlay&&json.receipt?.tool)gptStatus.textContent=
+    json.receipt.status==='complete'?'Reply ready.':'The result needs checking.';
    const answer=normalizeOwnerAssistantReply(rawAnswer,request,ownerReady&&Boolean(ownerHeaders?.Authorization));
    const finalAnswer=describeBubblesToolOutcome(json,cardoneResearch&&
     (cardoneReplyUnusable(rawAnswer)||json.answerStatus==='partial'||
      json.receipt?.tool==='web.search'&&json.receipt?.status!=='complete')
      ?cardoneSourceFallback(request):answer);
    if(json.receipt?.tool==='weather.current'&&json.location){try{localStorage.setItem('bubbles-weather-town',json.location);}catch{}}
-  const receiptFailed=['failed','blocked','invalid_input','unconfirmed'].includes(json.receipt?.status)||json.answerStatus==='partial';
+  const receiptFailed=unexecutedJobProposal||['failed','blocked','invalid_input','unconfirmed'].includes(json.receipt?.status)||json.answerStatus==='partial';
   if(receiptFailed)failedTurn=true;
   messages.push({role:'assistant',text:finalAnswer,...(receiptFailed?{failed:true}:{})});messages=messages.slice(-400);persistChat();
-  display(finalAnswer,'ai');status.textContent=config.alias+' · response received';
+  display(finalAnswer,'ai');
+   status.textContent=unexecutedJobProposal?'Tool proposal not executed · runner status unverified':config.alias+' · response received';
   // Search sources remain tappable in this same Bubbles chat; voice never reads raw URLs.
   if(json.receipt?.tool==='web.search'){
    const row=create('div','ba-message-actions ba-search-sources');
@@ -3463,7 +3544,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    }
    conversation.append(row);
   }
-  if(json.receipt){
+  if(json.receipt&&!unexecutedJobProposal){
    if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
     type:'tool_receipt',tool:json.receipt.tool,status:json.receipt.status,receiptId:json.receipt.id
    }}));

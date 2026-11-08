@@ -10,6 +10,7 @@ const TOOL_NAMES=Object.freeze({
  'github.search':['GitHub','searching code','search results received'],
  'github.create_repository':['GitHub','requesting a repository','repository creation result received'],
  'github.read_file':['GitHub','reading a file','file read'],
+ 'github.read_branch_status':['GitHub','checking exact branch status','branch readback received (runner separately verified)'],
  'github.read_repository':['GitHub','reading repository','repository read'],
  'github.read_repo':['GitHub','reading repository','repository read'],
  'github.assist':['GitHub','planning and executing authorized repository work','engineering receipt received (verify each action)'],
@@ -46,7 +47,7 @@ const toolTitle=(tool,phase,provider)=>{
  const name=tool.startsWith('web.')&&provider==='google'?'Google':info[0];
  return name+' · '+(phase==='complete'?info[2]:phase==='failed'?'action failed':info[1]);
 };
-export function newLiveBitsState(){return {entries:[],seenReceipts:[],bitState:newBitSession(),contextReady:false,candidates:0,credits:0,sequence:0,live:'Ready for your next request',running:false};}
+export function newLiveBitsState(){return {entries:[],seenReceipts:[],bitState:newBitSession(),contextReady:false,candidates:0,credits:0,sequence:0,iterationCount:0,live:'Ready for your next request',running:false};}
 export function advanceLiveBits(previous,event){
  if(!event||typeof event!=='object')return previous;
  if(event.type==='session_changed')return newLiveBitsState();
@@ -54,26 +55,36 @@ export function advanceLiveBits(previous,event){
  s.bitState=applyBitObservation(previous.bitState||newBitSession(),event);
  s.candidates=s.bitState.candidateCount;s.credits=s.bitState.creditedBits;
  const add=(headline,state,extra={})=>{
-  const entry={number:++s.sequence,headline,state,criteria:'',criteriaKey:'',resource:'',detail:'',tool:'',receiptTail:'',...extra};
+  // Context and owner-memory observations stay in the ledger but cannot
+  // consume the engineering iteration number shown to the user.
+  const ordinal=extra.contextOnly?null:++s.iterationCount;
+  const entry={number:++s.sequence,ordinal,headline,state,criteria:'',criteriaKey:'',resource:'',detail:'',tool:'',receiptTail:'',...extra};
   s.entries.push(entry);if(s.entries.length>40)s.entries.shift();
-  s.live='Iteration '+entry.number+' · '+headline;
+  s.live=entry.contextOnly?'Context · '+headline:'Iteration '+entry.ordinal+' · '+headline;
   return entry;
  };
  if(event.type==='turn_started'){
   s.contextReady=false;s.running=true;s.turnStart=s.sequence+1;
-  add('Checking saved context for this request','running');return s;
+  add('Checking saved context for this request','running',{contextOnly:true});return s;
  }
  if(event.type==='memory'){
   s.contextReady=event.state==='retrieved';
-  add(event.state==='retrieved'?'Owner context retrieved':'Owner context unavailable','observed');
+  // A completed context read must not leave the prior step marked running.
+  const pendingContext=[...s.entries].reverse().find(entry=>entry.contextOnly&&entry.state==='running');
+  if(pendingContext)pendingContext.state=event.state==='retrieved'?'observed':'unverified';
+  add(event.state==='retrieved'?'Owner context retrieved':'Owner context unavailable',
+   event.state==='retrieved'?'observed':'unverified',{contextOnly:true});
   return s;
  }
  if(event.type==='turn_finished'){
   s.running=false;
-  const pendingTool=s.entries.some(entry=>entry.number>=s.turnStart&&entry.state==='running'&&entry.tool);
-  s.live=event.failed===true?'Reply failed · review the chat status':
-   pendingTool?'GitHub · waiting for saved execution receipt · '+s.sequence+' observed iterations':
-   'Reply ready · '+s.sequence+' observed iterations';
+  const current=s.entries.filter(entry=>entry.number>=(Number.isInteger(s.turnStart)?s.turnStart:1));
+  const pendingTool=current.some(entry=>entry.state==='running'&&entry.tool);
+  const completedToolCount=current.filter(entry=>entry.tool&&entry.state==='complete').length;
+  s.live=event.failed===true?'Reply incomplete · no verified job result':
+   pendingTool?'Tool still running · waiting for saved execution receipt':
+   completedToolCount?'Reply received · '+completedToolCount+' confirmed tool receipt'+(completedToolCount===1?'':'s'):
+   'Reply received · no tool execution receipt';
   return s;
  }
  if(event.type==='job_step'){
@@ -137,7 +148,7 @@ export function advanceLiveBits(previous,event){
  let row;
  if(existing){
   Object.assign(existing,{headline,state:phase,criteria:extra.criteria||existing.criteria,criteriaKey:extra.criteriaKey||existing.criteriaKey,resource:extra.resource||existing.resource,detail:extra.detail||existing.detail,receiptTail:extra.receiptTail||existing.receiptTail,fullReceiptId:extra.fullReceiptId||existing.fullReceiptId});
-  row=existing;s.live='Iteration '+row.number+' · '+headline;
+  row=existing;s.live='Iteration '+row.ordinal+' · '+headline;
  }else row=add(headline,phase,extra);
  if(event.type==='tool_receipt'&&idOkay(receipt)&&s.seenReceipts.length<500){
   s.seenReceipts.push(receipt);
@@ -190,7 +201,8 @@ export function mountLiveView(doc=typeof document!=='undefined'?document:null){
   for(const entry of entries){
    const li=doc.createElement('li');li.className='ba-live-bit-entry';
    const heading=doc.createElement('strong');
-   heading.textContent='Iteration '+entry.number+' · '+entry.headline+' · '+entry.state;
+   heading.textContent=entry.contextOnly?'Context · '+entry.headline+' · '+entry.state:
+    'Iteration '+entry.ordinal+' · '+entry.headline+' · '+entry.state;
    li.append(heading);
    for(const [label,value] of [['Criteria',entry.criteria],['Repository / resource',entry.resource],
        ['Work performed',entry.detail],['Receipt suffix',entry.receiptTail]]){

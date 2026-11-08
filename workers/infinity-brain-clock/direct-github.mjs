@@ -128,6 +128,33 @@ jobs:
   if(!r.ok)throw Error('github_http_'+r.status);
   return r.status===204?null:r.json();
  }
+ if(action==='read_branch_status'){
+  // A status question is a read, never a writer lease, workflow dispatch or
+  // inference-generated instruction. Validate the exact ref before networking.
+  const branch=body.branch;
+  if(typeof branch!=='string'||branch.length<1||branch.length>100||
+     !/^[A-Za-z0-9][A-Za-z0-9._/-]*$/.test(branch)||
+     /^refs\//i.test(branch)||branch.includes('..')||branch.includes('//')||branch.endsWith('/')||
+     branch.split('/').some(part=>part.startsWith('.')||part.endsWith('.')))
+   throw Error('invalid_branch_ref');
+  const repo=await api('');
+  if(repo.full_name!==repository||!Number.isSafeInteger(repo.id)||repo.id<=0)
+   throw Error('github_repository_identity_mismatch');
+  let ref;
+  try{ref=await api('/git/ref/heads/'+encodeURIComponent(branch));}
+  catch(error){
+   if(error.message!=='github_http_404')throw error;
+   return {ok:true,status:'branch_not_found',repository,repositoryId:repo.id,
+    branch,exists:false,headSha:null,jobExecutionVerified:false,
+    deploymentVerified:false,observedAt:new Date().toISOString()};
+  }
+  if(ref.ref!=='refs/heads/'+branch||ref.object?.type!=='commit'||!SHA.test(ref.object?.sha||''))
+   throw Error('github_branch_identity_mismatch');
+  return {ok:true,status:'branch_found',repository,repositoryId:repo.id,
+   branch,exists:true,headSha:ref.object.sha,
+   sourceUrl:'https://github.com/'+repository+'/tree/'+encodeURIComponent(branch),
+   jobExecutionVerified:false,deploymentVerified:false,observedAt:new Date().toISOString()};
+ }
  if(action==='capabilities'){
   const repo=await api('');
   return {ok:true,repository,status:'credential_verified_read',push:repo.permissions?.push??null,repositoryCreation:'available_for_owner_account',actions:'verify_by_actual_dispatch',defaultBranch:repo.default_branch};
