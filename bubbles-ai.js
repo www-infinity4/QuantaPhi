@@ -2459,7 +2459,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
      if(tickets.ok&&data.ok===true&&Array.isArray(data.tickets))ticketRead=data;
     }catch{/* A failed ticket listing cannot erase a valid GitHub readback. */}
     if(!ownerReady||ownerHeaders!==headers)throw Error('owner_session_changed_during_read');
-    answer=branchStatusModule.describeAuthenticatedBranchStatus(branchStatusQuery,branchRead,ticketRead);
+    answer=branchStatusModule.describeAuthenticatedBranchStatus(branchStatusQuery,branchRead,ticketRead,
+     {conversationTicketId:recentWorkRef(receiptThread)?.ticketId||''});
     const proof=branchRead.readReceipt;
     const verified=proof?.tool==='github.read_branch_status'&&proof.status==='complete'&&
      /^[A-Za-z0-9_-]{8,100}$/.test(proof.id||'');
