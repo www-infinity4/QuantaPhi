@@ -272,3 +272,32 @@ test('image repair resolves latest owner images without promoting filenames or a
  assert.equal(resolveRepairRequest('Fix it',[...history,{role:'user',text:'What is the weather?'}]),'');
  assert.equal(resolveRepairRequest('Fix it',[]),'');
 });
+
+
+test('repository creation preserves a multiword project name and its requested build',()=>{
+ const {repositoryCreationIntent}=require('../bubbles-brain-actions.js');
+ const work='Create a repo named continuity builder design the files to operate as Bubbles continuing builds. Add the TV carousel and advertising data.';
+ assert.deepEqual(repositoryCreationIntent(work),{name:'continuity-builder',continueBuild:true});
+ assert.deepEqual(repositoryCreationIntent('Create a repository called Fresh Studio and implement its cards'),{name:'Fresh-Studio',continueBuild:true});
+ assert.deepEqual(repositoryCreationIntent('Create a repo named Rain'),{name:'Rain',continueBuild:false});
+ assert.equal(repositoryCreationIntent('How do I create a repo named Rain?'),null);
+ assert.equal(repositoryCreationIntent('Create a repo without a name'),null);
+});
+
+test('owner repo creation with an explicitly requested package continues to the authenticated runner',()=>{
+ const src=fs.readFileSync(require.resolve('../bubbles-ai.js'),'utf8');
+ assert.match(src,/repositoryCreationIntent\?\.\(request\)/);
+ assert.match(src,/createdRepositoryPackage/);
+ assert.match(src,/submitRepositoryWork\(engineeringRequest/);
+});
+
+
+test('owner jobs direct one shared GPT Brain through a full verified package, not a planning-only answer',()=>{
+ const jobs=makeJobs('Build the full TV guide quick-card package and advertising data','www-infinity4/QuantaPhi');
+ const instruction=jobs[0].instructions;
+ for(const cue of ['one coordinated GPT Brain','RED research','ORANGE decisions','BLUE source','GREEN implementation','PINK tests','PURPLE review','BLACK verification','same ticket']){
+  assert.ok(instruction.includes(cue),cue);
+ }
+ assert.match(instruction,/No model reply, planned role or queued ticket is a source commit/i);
+ assert.ok(jobs[1].dependencies.includes(jobs[0].id));
+});

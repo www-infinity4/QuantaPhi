@@ -429,3 +429,19 @@ test('verified headlines survive a summary model outage with unchanged source re
   assert.equal(r.status,200,'news adapter succeeded even if optional summarization failed');
  }finally{globalThis.fetch=saved}
 });
+
+
+test('bare Added filenames in a GPT reply are not accepted as completed source work',async()=>{
+ const request='Continue building Bubbles Continuity Builder and the TV carousel';
+ const invented='Added **tv‑guide‑card.jsx** to the repository (https://github.com/www-infinity4/continuity/blob/main/src/components/tv-guide-card.jsx).\\nAdded **ads.json** with sample advertisement entries.';
+ assert.equal(hasUnverifiedActionClaim(request,invented),true);
+ let calls=0;
+ const req=new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},
+  body:JSON.stringify({request})});
+ const res=await worker.fetch(req,{AI:{run:async()=>({response:++calls===1?invented:'No source changes were verified. An authorized owner runner must implement and test the requested package.'})}});
+ const body=await res.json();
+ assert.equal(calls,2);
+ assert.doesNotMatch(body.output,/Added \*\*tv/);
+ assert.equal(body.receipt.repositoryActionsVerified,false);
+ assert.match(body.output,/No source changes were verified/);
+});

@@ -41,6 +41,29 @@ function firstPartyRepairTarget(utterance){
  const directive=new RegExp('^(?:(?:please|hey\\s+bubbles|bubbles)[\\s,:]+)?(?:i\\s+(?:need|want)\\s+(?:you\\s+)?to|you\\s+(?:need|have)\\s+to|(?:can|could|would|will)\\s+you|we\\s+need\\s+to)\\s+'+verb+'\\b','i');
  return start.test(command)||directive.test(command)?'www-infinity4/QuantaPhi':null;
 }
+// Creation is a single setup step, not the end of a requested package build.
+// Preserve multiword names and only continue building on an explicit instruction.
+// This is intent parsing, never a new permission to write or publish.
+function repositoryCreationIntent(utterance){
+ const raw=String(utterance||'').trim().slice(0,4001);
+ if(!raw||raw.length>4000||/^(?:do not|don't|never|how|why|what|explain|describe)\b/i.test(raw))return null;
+ const begins=/^(?:(?:please|hey\s+bubbles|bubbles)[\s,:]+)*(?:(?:can|could|would|will)\s+you\s+)?(?:create|make|start|build)\s+(?:me\s+)?(?:(?:a|an|new|github|private|public)\s+)*(?:repo|repository)\b/i;
+ if(!begins.test(raw))return null;
+ const found=/\b(?:repo(?:sitory)?\s+(?:(?:to\s+be\s+)?(?:called|named)|with\s+the\s+name)|(?:called|named)\s+(?:repo(?:sitory)?\s+)?)[\s:]+([A-Za-z][A-Za-z0-9_.-]*(?:\s+[A-Za-z][A-Za-z0-9_.-]*){0,6})/i.exec(raw);
+ if(!found)return null;
+ const words=found[1].split(/\s+/);
+ const stops=new Set(['and','then','with','for','to','that','which','where','while','after','plus','so','design','populate','implement','build','write','add','scaffold','assemble','develop','wire','finish','continue','operate','create','make','put','using','including']);
+ let end=words.findIndex((w,i)=>i>0&&stops.has(w.toLowerCase()));
+ if(end<0)end=words.length;
+ if(end<1||end>4)return null; // Never silently invent or truncate a long name.
+ const name=words.slice(0,end).join('-');
+ if(!/^[A-Za-z][A-Za-z0-9_.-]{1,99}$/.test(name))return null;
+ const start=found.index+found[0].length-found[1].length;
+ const tail=raw.slice(start+words.slice(0,end).join(' ').length);
+ const continueBuild=/\b(?:design|populate|implement|write|build|add|scaffold|assemble|develop|wire|finish|continue|code|create)\b/i.test(tail)&&
+  !/\b(?:don't|do\s+not|never|without\s+(?:writing|building|editing))\b/i.test(tail);
+ return {name,continueBuild};
+}
 function classify(utterance){
  const text=String(utterance||'').trim().slice(0,4001);
  if(!text||text.length>4000)return 'chat';
@@ -252,6 +275,16 @@ function executionMessage(execution={},deduplicated=false,status='ready'){
  if(execution.status==='no_pending_jobs')return 'Your request is saved. Checking whether its jobs have already been claimed.';
  return 'Your request is saved, but the runner has not confirmed a launch. Robot Brain will retry automatically; you do not need to press Run.';
 }
+// Model roles share one GPT reasoning contract. Planned role labels are not
+// proof that model inference, repository writes or deployments took place.
+function sharedColorGptWorkBrief(){
+ return [
+  'Bubbles is one coordinated GPT Brain. Continue the original owner job under the same ticket until independently verified delivery or a recorded blocker.',
+  'Use needed roles: RED research of pinned files; ORANGE decisions only on conflicts; BLUE source validation/import planning; GREEN implementation with source edits and regression tests; PINK tests and review; PURPLE review of owner intent and approval gates; BLACK verification of actual commit, CI, merge, deploy and device receipts.',
+  'Every actual model call needs its model receipt; a color label, imagined assistant, tool proposal or scheduling event is not execution.',
+  'No model reply, planned role or queued ticket is a source commit. Keep the job and precise next action on failure, avoid duplicate repositories and resume from the last verified checkpoint.'
+ ].join(' ');
+}
 function makeJobs(request,selectedRepository){
  const message=String(request||'').trim().slice(0,4000);
  if(!message)throw Error('request_required');
@@ -261,7 +294,7 @@ function makeJobs(request,selectedRepository){
  return [{
   id:'TASK-1',agent:'greenbeans',color:'green',team:['yellow-jacket','blueberry','greenbeans','purple-pearl'],
   repository,executor:'repository-engine',queue_priority:80,status:'queued',
-  title,instructions:message+'\n\nExecution plan (planned stages, not completed work):\n'+JSON.stringify(plan)+'\nResearch verified documentation and actual repository source first. Save a structured plan with dependencies before implementation. Independent source inspections may run concurrently; writes must keep the existing repository lease and review gates. Never ask the owner for routine file paths or reversible styling choices.'+(omniSkill?'\n\nApproved Omni Code reference skill:\n'+omniSkill:'')+(siteSkill?'\n\nApproved autonomous website package plan:\n'+siteSkill:'')+(bridgeSkill?'\n\nSource-to-chat integration contract:\n'+bridgeSkill:'')+(recordBSkill?'\n\nRecordB recording library work contract:\n'+recordBSkill:''),
+  title,instructions:message+'\n\nShared GPT Brain build contract:\n'+sharedColorGptWorkBrief()+'\n\nExecution plan (planned stages, not completed work):\n'+JSON.stringify(plan)+'\nResearch verified documentation and actual repository source first. Save a structured plan with dependencies before implementation. Independent source inspections may run concurrently; writes must keep the existing repository lease and review gates. Never ask the owner for routine file paths or reversible styling choices.'+(omniSkill?'\n\nApproved Omni Code reference skill:\n'+omniSkill:'')+(siteSkill?'\n\nApproved autonomous website package plan:\n'+siteSkill:'')+(bridgeSkill?'\n\nSource-to-chat integration contract:\n'+bridgeSkill:'')+(recordBSkill?'\n\nRecordB recording library work contract:\n'+recordBSkill:''),
   acceptance:['Inspect actual repository implementation and implement this owner request; never fabricate source changes.',
    'Run focused tests and record commit/PR evidence, noting missing credentials or services.',
    'Carry the tested repair through the authorized review, merge and deployment pipeline. Record the actual live result; stop and report blockers when authorization or checks are missing.',
@@ -462,7 +495,7 @@ class ProgressTracker{
   return pending===1&&started.length===1?[started[0]+' started.']:[];
  }
 }
-const api={nativeCaptureNotice,speechText,notificationPreference,ProgressTracker,ownerApprovalRequests,bulkRunPreview,requestPlan,executionMessage,classify,firstPartyRepairTarget,resolveRepairRequest,resolveFollowupRequest,repositoryFor,makeJobs,describeTickets,needsOmniCode,omniCodeBrief,needsSitePackage,sitePackageBrief,integrationBrief,recordBWorkBrief};
+const api={nativeCaptureNotice,speechText,notificationPreference,ProgressTracker,ownerApprovalRequests,bulkRunPreview,requestPlan,executionMessage,classify,firstPartyRepairTarget,resolveRepairRequest,resolveFollowupRequest,repositoryFor,repositoryCreationIntent,makeJobs,describeTickets,needsOmniCode,omniCodeBrief,needsSitePackage,sitePackageBrief,integrationBrief,recordBWorkBrief};
 if(typeof module!=='undefined'&&module.exports)module.exports=api;
 root.BubblesBrainActions=api;
 })(typeof window!=='undefined'?window:globalThis);

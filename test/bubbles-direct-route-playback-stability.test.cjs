@@ -48,7 +48,7 @@ test('Android reports retained local background transcripts and memory pressure'
 });
 
 test('spoken repository creation requires explicit naming and uses echo cooldown',()=>{
- assert.match(site,/const repoName=createRepository\?\(request\.match/);
+ assert.match(site,/const repoName=createRepository\?\(repositoryCreationIntent\?\.name\|\|request\.match/);
  assert.doesNotMatch(site,/repo\(\?:sitory\)\?\\s\+\(\[A-Za-z0-9_\\.-\]\+\)/);
  assert.match(site,/speaking=false;voiceEchoUntil=Date\.now\(\)\+2500/);
 });
