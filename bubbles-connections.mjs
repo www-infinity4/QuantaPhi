@@ -81,6 +81,12 @@ export function providerSignInErrorMessage(code,provider='cloudflare'){
     return 'Cloudflare did not return a usable authorization. Retry the Bubbles Cloudflare connection.';
   return 'Bubbles could not confirm the authorization. Retry '+providerName+' sign-in.';
 }
+export function cloudflareAccountListErrorMessage(code){
+  // Provider errors are codes only. Never echo remote descriptions/tokens.
+  if(code==='cloudflare_memberships_401'||code==='cloudflare_memberships_403')
+    return 'Cloudflare could not authorize account membership lookup. Reconnect with Memberships Read approval. No account has been selected.';
+  return 'Cloudflare account membership lookup is unavailable. Cloudflare stays signed in; no account has been selected.';
+}
 export class AccountConnections {
   constructor({token,request = (...args)=>fetch(...args),root = window,timeoutMs=10000}) {
     this.token=token;this.request=request;this.root=root;this.pending=null;this.timeoutMs=Math.max(1,Number(timeoutMs)||10000);
@@ -621,25 +627,40 @@ export function mountConnections(container,{token}) {
           const list=document.createElement('select');list.className='ba-field';
           list.setAttribute('aria-label','Select my Cloudflare account');
           const confirm=element('button','Use this Cloudflare account','ba-control');confirm.type='button';confirm.disabled=true;
+          // Do not show an empty, unusable selector while the membership
+          // lookup is loading or when the provider denies this permission.
+          list.hidden=true;confirm.hidden=true;
           const loadAccounts=async()=>{
-            list.replaceChildren();
             const response=await client.call('/cloudflare/accounts',{id:account.id});
+            if(!Array.isArray(response.accounts))throw Error('provider_response_invalid');
+            list.replaceChildren();
             const empty=document.createElement('option');empty.value='';empty.textContent='Choose account';list.append(empty);
             for(const cf of response.accounts){
               const option=document.createElement('option');option.value=cf.id;option.textContent=cf.name;list.append(option);
             }
-            if(response.truncated)statusLine.textContent='The account list is incomplete. No other account can be selected without verification.';
-            list.addEventListener('change',()=>{confirm.disabled=!list.value;});
+            if(!response.accounts.length){
+              statusLine.textContent='Cloudflare is connected, but returned no accepted account memberships. No account has been selected.';
+              return;
+            }
+            list.hidden=false;confirm.hidden=false;
+            statusLine.textContent=response.truncated
+              ?'The Cloudflare membership list is incomplete. Choose only an account shown here.'
+              :'Choose your verified Cloudflare account. This does not authorize a deployment.';
           };
+          list.addEventListener('change',()=>{confirm.disabled=!list.value;});
           confirm.addEventListener('click',async()=>{
+            if(!list.value)return;
             confirm.disabled=true;try{
               const response=await client.call('/cloudflare/select-account',{id:account.id,accountId:list.value});
-              statusLine.textContent=response.account.name+' selected and verified. Cloudflare storage is not provisioned yet; no deployment or data migration was performed.';
+              statusLine.textContent=response.account.name+' selected and verified. No deployment or data migration was performed.';
             }catch{statusLine.textContent='Account selection failed verification. No account was changed.';}
             finally{confirm.disabled=!list.value;}
           });
           chooser.append(statusLine,list,confirm);accounts.append(chooser);
-          void loadAccounts().catch(()=>{statusLine.textContent='Could not list the accounts authorized by Cloudflare. No account has been selected.';});
+          void loadAccounts().catch(error=>{
+            statusLine.textContent=cloudflareAccountListErrorMessage(String(error?.message||''));
+            list.hidden=true;confirm.hidden=true;confirm.disabled=true;
+          });
         }
         if(account.provider==='google'&&account.status==='connected') {
           const tools=element('details','');tools.append(element('summary','Use this Google account'));
