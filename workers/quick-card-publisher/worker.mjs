@@ -10,11 +10,23 @@ export function safeUrl(raw){
  const h=u.hostname.toLowerCase();if(!h.includes('.')||/^(localhost|0\.|127\.|10\.|192\.168\.|169\.254\.|172\.(1[6-9]|2\d|3[01])\.|::1)/.test(h)||h.endsWith('.local'))return '';
  u.hash='';return u.href;}catch{return ''}
 }
+export function creatorProfileUrl(raw){try{const u=new URL(String(raw||''));if(u.protocol!=='https:'||u.username||u.password||u.port||!['x.com','www.x.com','twitter.com','www.twitter.com'].includes(u.hostname))return '';const m=u.pathname.match(/^\/([A-Za-z0-9_]{1,15})\/?$/);return m&&!['i','home','intent','search','login','settings'].includes(m[1].toLowerCase())?'https://x.com/'+m[1]:'';}catch{return ''}}
+export function normalizeCreatorPricing(input){
+ const mode=input?.monetization??'free';
+ if(mode==='free')return {mode:'free',starCoins:'0'};
+ if(mode!=='paid')return {error:'Choose Free or Paid for this creator card.'};
+ const amount=input?.priceStarCoins;
+ if(typeof amount!=='string'||!/^[1-9][0-9]*$/.test(amount)||amount.length>78)return {error:'Enter a positive whole-StarCoin price using digits.'};
+ return {mode:'paid',starCoins:amount};
+}
 export function youtubeId(url){try{const u=new URL(url);const h=u.hostname.toLowerCase();const id=h==='youtu.be'?u.pathname.slice(1):(['youtube.com','www.youtube.com','m.youtube.com'].includes(h)?u.searchParams.get('v')||((u.pathname.startsWith('/shorts/')||u.pathname.startsWith('/embed/'))?u.pathname.split('/')[2]:''):'');return /^[A-Za-z0-9_-]{11}$/.test(id||'')?id:'';}catch{return ''}}
 export function normalizeCard(input){
  const title=text(input?.title,85),description=text(input?.description,600),interactionRequest=text(input?.interactionRequest,500);
  const website=safeUrl(input?.website),image=safeUrl(input?.image||''),kind=text(input?.kind,25);
  const previewMode=input?.previewMode==='visual'?'visual':'interactive';
+ const pricing=normalizeCreatorPricing(input);if(pricing.error)return {error:pricing.error};
+ const creatorProfile=input?.creatorProfile?creatorProfileUrl(input.creatorProfile):'';
+ if(input?.creatorProfile&&!creatorProfile)return {error:'Use an official X creator profile URL, or leave it blank.'};
  if(input?.image&&(!image||(!/\.(?:png|jpe?g|gif|webp)$/i.test(new URL(image).pathname)&&!(new URL(image).hostname==='lsco.scene7.com'&&new URL(image).pathname.startsWith('/is/image/')))))return {error:'Use a public HTTPS PNG, JPG, WebP or GIF image URL you may share.'};
  if(title.length<3||description.length<12||interactionRequest.length<10||!website)return {error:'A title, official HTTPS website, description and interaction request are required.'};
  if(!['search','visit','video'].includes(kind))return {error:'Select a supported interaction.'};
@@ -26,14 +38,22 @@ export function normalizeCard(input){
   if(!probe||new URL(probe).hostname!==new URL(website).hostname)return {error:'Search must use a confirmed URL on the same website; Bubbles cannot invent a site API.'};
  }
  if(kind==='video'){videoId=youtubeId(text(input?.video,500));if(!videoId)return {error:'Use a valid public YouTube URL for the video player.'};}
- return {card:{title,description,interactionRequest,website,image,kind,searchTemplate,videoId,previewMode}};
+ return {card:{title,description,interactionRequest,website,image,kind,searchTemplate,videoId,previewMode,
+   pricingMode:pricing.mode,priceStarCoins:pricing.starCoins,creatorProfile}};
 }
-export const publicCard=row=>({
- slug:row.slug,title:row.title,description:row.description,interactionRequest:row.interaction_request,
- website:row.website,image:row.image||'',kind:row.kind,searchTemplate:row.search_template||'',
- videoId:row.video_id||'',previewMode:row.preview_mode==='visual'?'visual':'interactive',
- status:row.status,createdAt:row.created_at,cardUrl:origin+'/cards/'+row.slug
-});
+export const publicCard=row=>{
+ const paid=row.pricing_mode==='paid';
+ // Paid app delivery is blocked until isolated hosting AND signed wallet+creator payout receipts exist.
+ return {
+  slug:row.slug,title:row.title,description:row.description,interactionRequest:row.interaction_request,
+  website:paid?'':row.website,image:row.image||'',kind:paid?'locked':row.kind,
+  searchTemplate:paid?'':row.search_template||'',videoId:paid?'':row.video_id||'',
+  previewMode:row.preview_mode==='visual'?'visual':'interactive',
+  pricingMode:paid?'paid':'free',priceStarCoins:paid?String(row.price_star_coins||'1'):'0',
+  creatorProfile:row.creator_profile||'',locked:paid,checkoutReady:false,
+  status:row.status,createdAt:row.created_at,cardUrl:origin+'/cards/'+row.slug
+ };
+};
 export function cardHtml(row){
  const card=publicCard(row), url=card.cardUrl;
  const title=htmlEscape(card.title),desc=htmlEscape(card.description),share=htmlEscape(url),
@@ -55,7 +75,7 @@ function validOrigin(request){const source=request.headers.get('Origin');return 
 export default {async fetch(request,env){
  const url=new URL(request.url),path=url.pathname,method=request.method;
  const db=env.CARDS_DB;if(!db)return json({ok:false,error:'Card storage is not connected.'},503);
- if(path==='/api/quick-cards/health'&&method==='GET')return json({ok:true,storage:'connected',published:'moderated',xReader:'separate'});
+ if(path==='/api/quick-cards/health'&&method==='GET')return json({ok:true,storage:'connected',published:'moderated',xReader:'separate',pricingDraftVersion:1,paidCheckoutReady:false,creatorPayoutReady:false,protectedAppHostingReady:false});
  if(path==='/api/quick-cards'&&method==='POST'){
   if(!validOrigin(request))return json({ok:false,error:'Open the QuantaPhi card builder to publish.'},403);
   if(!(request.headers.get('content-type')||'').includes('application/json'))return json({ok:false,error:'JSON required.'},415);
@@ -73,11 +93,12 @@ export default {async fetch(request,env){
    const tail=[...crypto.getRandomValues(new Uint8Array(5))].map(b=>b.toString(16).padStart(2,'0')).join('');
    const slug=slugBase+'-'+tail,stamp=new Date().toISOString(),c=norm.card;
    await db.batch([
-    db.prepare("INSERT INTO quick_cards (slug,title,description,interaction_request,website,image,kind,search_template,video_id,preview_mode,status,created_at) VALUES (?,?,?,?,?,?,?,?,?,?,'unlisted',?)")
-      .bind(slug,c.title,c.description,c.interactionRequest,c.website,c.image,c.kind,c.searchTemplate,c.videoId,c.previewMode,stamp),
+    db.prepare("INSERT INTO quick_cards (slug,title,description,interaction_request,website,image,kind,search_template,video_id,preview_mode,pricing_mode,price_star_coins,creator_profile,status,created_at) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,'unlisted',?)")
+      .bind(slug,c.title,c.description,c.interactionRequest,c.website,c.image,c.kind,c.searchTemplate,c.videoId,c.previewMode,c.pricingMode,c.priceStarCoins,c.creatorProfile,stamp),
     db.prepare("INSERT INTO card_publish_limits(day,ip_hash,count) VALUES (?,?,1) ON CONFLICT(day,ip_hash) DO UPDATE SET count=count+1").bind(day,bucket)
    ]);
-   return json({ok:true,slug,cardUrl:origin+'/cards/'+slug,status:'unlisted',discovery:'Submitted for moderation. Your card link works immediately.'},201);
+   return json({ok:true,slug,cardUrl:origin+'/cards/'+slug,status:'unlisted',pricingMode:c.pricingMode,
+    checkoutReady:false,discovery:c.pricingMode==='paid'?'Paid app card saved as locked preview. Checkout and creator payout not enabled.': 'Submitted for moderation. Your card link works immediately.'},201);
   }catch{return json({ok:false,error:'Card could not be saved. Please retry.'},503)}
  }
  if(path==='/api/quick-cards'&&method==='GET'){
