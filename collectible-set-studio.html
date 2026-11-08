@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Collectible Set Studio · QuantaPhi</title>
+<meta name="description" content="Privately design a collectible Quick Card set with a free cover and proposed Star Coin unlocks.">
+<link rel="stylesheet" href="/collectible-set-studio.css?v=20261107-1"></head>
+<body><main class="studio" id="collectibleStudio">
+<header><a class="home" href="/#developerCarousel">‹ Developer carousel</a><p class="eyebrow">INFINITY · MEDIA STAR · QUICK CARDS</p><h1>Collectible Set Studio</h1>
+<p>Turn your original drawings, licensed vintage art or permitted photographs into a card series. See a free cover, and plan 1 Star Coin per collectible.</p></header>
+<section class="promise" aria-label="Privacy and payment status"><strong>Private draft · no payments</strong>
+<p>Only files you select are inspected locally on this device. No account albums are searched, no image files are uploaded, and no one is charged.</p></section>
+<form id="setForm">
+<label for="setName">Collection title</label><input id="setName" maxlength="100" autocomplete="off" required placeholder="My original vintage collection">
+<label for="setTheme">Collection theme</label><input id="setTheme" maxlength="80" placeholder="Vintage cartoons, fantasy, memes, original artwork">
+<label for="coverFile">Free cover image — separate from the collectible images</label><input id="coverFile" type="file" accept="image/jpeg,image/png,image/webp" required>
+<label for="pieceFiles">Select 2–30 collectible images (each planned at 1 Star Coin)</label><input id="pieceFiles" type="file" accept="image/jpeg,image/png,image/webp" multiple required>
+<label class="choice"><input id="canPublish" type="checkbox"> I confirm I own the artwork or have permission to distribute it. I understand each image still needs review before public publication.</label>
+<label class="choice"><input id="privateOptIn" type="checkbox"> Yes, suggest collectible card projects using only the files I select here.</label>
+<div class="actions"><button type="submit" id="previewSet">Preview my set</button><button type="button" id="clearSet" class="neutral">Clear selected images</button></div></form>
+<section id="setSuggestion" class="idea" hidden><h2>💡 Your collection could become a Quick Card set</h2><p>One free showcase image introduces your work. Collectors could unlock each numbered card and build their own set once a real, approved wallet and rights-review service is connected.</p></section>
+<section id="draftPanel" aria-label="Draft collectible card preview" hidden><h2>Collector preview — proposed</h2><div id="freeCover" class="free-cover"></div><p id="setQuote"></p>
+<ol id="draftPieces" class="draft-pieces"></ol>
+<p class="fine">Images are only shown locally to the selector. A public paid edition must serve locked images from an authenticated backend after validating entitlements. A fingerprint registry can flag reuse but cannot guarantee screenshots or altered copies cannot be sold.</p>
+<div class="actions"><button id="copyBrief" type="button">Copy the GPT build brief</button><a href="/website-viewer.html?site=chatgpt">Create with GPT</a><a href="/gpt/">Create with Phi GPT</a></div></section>
+<p id="studioStatus" role="status" aria-live="polite">Choose images from your device to make a local draft.</p>
+</main><script type="module" src="/collectible-set-studio.mjs?v=20261107-1"></script></body></html>
