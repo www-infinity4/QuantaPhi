@@ -3,330 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-08T04:01:21.848525Z",
+  "checked_at": "2026-11-08T04:31:24.777525Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "mon laferte",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T03:40:00Z",
-      "related_news_urls": [
-        "https://cnnespanol.cnn.com/2026/11/06/entretenimiento/video/mon-laferte-vegas-golpe-cara-concierto-orix",
-        "https://es-us.vida-estilo.yahoo.com/mon-laferte-sufre-golpe-rostro-141014884.html",
-        "https://rpp.pe/famosos/celebridades/video-mon-laferte-se-pronuncio-tras-ser-golpeada-con-un-celular-durante-concierto-en-eeuu-noticia-1716447"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9lX24VNhkuuIPiJb3IOsZHaRVRHtPcr8D87L9-QGHubRDyg6gcLZYP9PzeyQ",
-      "image_credit": "CNN en Español",
-      "news": [
-        {
-          "url": "https://cnnespanol.cnn.com/2026/11/06/entretenimiento/video/mon-laferte-vegas-golpe-cara-concierto-orix",
-          "title": "Golpean a Mon Laferte en el rostro con un objeto durante concierto en Las Vegas",
-          "publisher": "CNN en Español",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9lX24VNhkuuIPiJb3IOsZHaRVRHtPcr8D87L9-QGHubRDyg6gcLZYP9PzeyQ"
-        },
-        {
-          "url": "https://es-us.vida-estilo.yahoo.com/mon-laferte-sufre-golpe-rostro-141014884.html",
-          "title": "Golpean a Mon Laferte en pleno concierto en Las Vegas",
-          "publisher": "Yahoo en Español Vida y Estilo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMz9UMlJS333KV-bT-QxuMnHeQlyMLNbh1ve6diJ5uQ4etAv6W425-yHYg1Ig"
-        },
-        {
-          "url": "https://rpp.pe/famosos/celebridades/video-mon-laferte-se-pronuncio-tras-ser-golpeada-con-un-celular-durante-concierto-en-eeuu-noticia-1716447",
-          "title": "Mon Laferte se pronunció luego de ser golpeada con un celular en el rostro durante concierto en EE.UU.",
-          "publisher": "RPP Noticias",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNCPuQrEqjuxWZFghm8u2lQa3RJcD0uPwLNSHGp19eYPoMVSnyXlvu6d3YKZg"
-        }
-      ]
-    },
-    {
-      "query": "mn wild",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T03:30:00Z",
-      "related_news_urls": [
-        "https://hockeywilderness.com/news-rumors/minnesota-wild/bill-guerin-and-quinn-hughes-are-trying-to-prove-everyone-wrong-r31775/",
-        "https://www.dailyfaceoff.com/news/top-25-nhl-ufas-unrestricted-free-agents-2027-rankings-hughes-kucherov-robertson-crosby-zacha",
-        "https://thehockeynews.com/news/podcast/is-quinn-hughes-fully-committed-to-the-minnesota-wild-the-hockey-news-big-show"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCSdSIEnMs3Gr87pQSKu3PMdWj-VGW4vIWsyA3_rdS1wfMW1RZsoFQWYHy88g",
-      "image_credit": "Hockey Wilderness",
-      "news": [
-        {
-          "url": "https://hockeywilderness.com/news-rumors/minnesota-wild/bill-guerin-and-quinn-hughes-are-trying-to-prove-everyone-wrong-r31775/",
-          "title": "Bill Guerin and Quinn Hughes Are Trying To Prove Everyone Wrong",
-          "publisher": "Hockey Wilderness",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCSdSIEnMs3Gr87pQSKu3PMdWj-VGW4vIWsyA3_rdS1wfMW1RZsoFQWYHy88g"
-        },
-        {
-          "url": "https://www.dailyfaceoff.com/news/top-25-nhl-ufas-unrestricted-free-agents-2027-rankings-hughes-kucherov-robertson-crosby-zacha",
-          "title": "Top 25 NHL UFAs of 2027: Does Quinn Hughes make it to market?",
-          "publisher": "Daily Faceoff",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNChhQE-zizs7hy6U1lzqnAtyaygJiqGSX8h3b10Kmi8-VpcEmGUORzGfTny0"
-        },
-        {
-          "url": "https://thehockeynews.com/news/podcast/is-quinn-hughes-fully-committed-to-the-minnesota-wild-the-hockey-news-big-show",
-          "title": "Is Quinn Hughes Fully Committed To The Minnesota Wild?: The Hockey News Big Show",
-          "publisher": "The Hockey News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4H8YTgDaZ12kqUoFcwONf6xWKFm_C9qWOmTqV6hhRoQudCpKkTSSV0vyrXhs"
-        }
-      ]
-    },
-    {
-      "query": "alperen şengün",
+      "query": "wendell carter jr.",
       "approx_searches": "500+",
-      "published_at": "2026-11-08T03:30:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
+      "published_at": "2026-11-08T04:10:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/watch/video/highlights-from-wendell-carter-jr-27-point-game",
+        "https://www.fantasypros.com/nba/news/618130/wendell-carter-jr-leads-magic-loss-to-suns.php",
+        "https://www.kiiitv.com/video/sports/locked-on/lo-national/fantasy-basketball-show/fantasy-basketball-thursday-recap-wendell-carter-does-it-again/535-604511eb-330a-4a2e-b0a6-a751447b1e54"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYzEzN10x1dq4ufNwyU8iEfqsL78dlUpRW28J2Zos03gCeOB6yNe8R1d1OwZw",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://www.nba.com/watch/video/highlights-from-wendell-carter-jr-27-point-game",
+          "title": "Wendell Carter Jr. puts up 27 in Phoenix",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYzEzN10x1dq4ufNwyU8iEfqsL78dlUpRW28J2Zos03gCeOB6yNe8R1d1OwZw"
+        },
+        {
+          "url": "https://www.fantasypros.com/nba/news/618130/wendell-carter-jr-leads-magic-loss-to-suns.php",
+          "title": "Wendell Carter Jr. leads Magic in loss to Suns",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7UOyQjdNHhPzCv8m2FxK64jtqv5z0QTGl1wg-TUpTM7kr9N8RqhSaqD89_5E"
+        },
+        {
+          "url": "https://www.kiiitv.com/video/sports/locked-on/lo-national/fantasy-basketball-show/fantasy-basketball-thursday-recap-wendell-carter-does-it-again/535-604511eb-330a-4a2e-b0a6-a751447b1e54",
+          "title": "Fantasy Basketball Thursday Recap - Wendell Carter Does It Again",
+          "publisher": "kiiitv.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3_Eb31VB-4BTD7SDBxGpAlFYCUrtistI7XBF9OkWGIuPmLWY4puBt3uzV2SI"
+        }
+      ]
     },
     {
-      "query": "mark fletcher jr.",
+      "query": "daniel radcliffe",
       "approx_searches": "200+",
-      "published_at": "2026-11-08T03:30:00Z",
+      "published_at": "2026-11-08T04:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50390365/linda-fletcher-miami-rv",
-        "https://sports.yahoo.com/articles/miami-rb-mark-fletcher-jr-163126324.html",
-        "https://caneswarning.com/miami-s-mark-fletcher-jr-uses-nil-money-to-surprise-mother-with-new-cadillac-escalade"
+        "https://people.com/daniel-radcliffe-reveals-inspiration-behind-his-favorite-feature-in-his-new-york-city-home-12236199",
+        "https://www.harrypotter.com/news/announcing-harry-potter-audioscapes-a-cosy-new-immersive-listening-experience-from-pottermore",
+        "https://collider.com/harry-potter-philosophers-stone-gryffindor-common-room-audioscapes-november-17/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwhTAxtWobtAtjQ0CFpv3zZjhSQVdJ339PGGhx_ey0XN3HfMfS5AagwZTX5TE",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSO4nzmhxj-z8bBpP4_TDOFA4YJ8na80Jzv_Tfh29Xo_Jrly74bok_NrGqBv0Y",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/daniel-radcliffe-reveals-inspiration-behind-his-favorite-feature-in-his-new-york-city-home-12236199",
+          "title": "Daniel Radcliffe Reveals How Beauty and the Beast and Sherlock Holmes Inspired His Favorite Part of His N.Y.C. Home",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSO4nzmhxj-z8bBpP4_TDOFA4YJ8na80Jzv_Tfh29Xo_Jrly74bok_NrGqBv0Y"
+        },
+        {
+          "url": "https://www.harrypotter.com/news/announcing-harry-potter-audioscapes-a-cosy-new-immersive-listening-experience-from-pottermore",
+          "title": "Harry Potter | Announcing Harry Potter Audioscapes™: A cosy new immersive listening experience from Pottermore",
+          "publisher": "Harry Potter",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR1JUPKSmzkbsZ5oXdPnmak7hrJT54Wig0PJ-E-jS5bWfVd_S7C2kyB1ICZg"
+        },
+        {
+          "url": "https://collider.com/harry-potter-philosophers-stone-gryffindor-common-room-audioscapes-november-17/",
+          "title": "Harry Potter Officially Returns on November 17",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWh85yVg4w2rNZmeAfg3tpro-mvY970YnQEt53qKyFv9aXqcWnmgso6Ttev1s"
+        }
+      ]
+    },
+    {
+      "query": "fortnite token",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T04:10:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/paultassi/2026/11/06/the-fortnite-lottery-odds-pirate-shop-token-is-backfiring/",
+        "https://www.ign.com/wikis/fortnite/All_Free_Treasure_Chest_Rewards_List",
+        "https://aftermath.site/fortnite-pirate-token/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwYOykrzx1qfjaRrTx5l7b0yg-W5YjZGHeHORYJf_3bT46El0qwfj6gXPG8N8",
+      "image_credit": "Forbes",
+      "news": [
+        {
+          "url": "https://www.forbes.com/sites/paultassi/2026/11/06/the-fortnite-lottery-odds-pirate-shop-token-is-backfiring/",
+          "title": "The ‘Fortnite’ Lottery Odds Pirate Shop Token Is Backfiring",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwYOykrzx1qfjaRrTx5l7b0yg-W5YjZGHeHORYJf_3bT46El0qwfj6gXPG8N8"
+        },
+        {
+          "url": "https://www.ign.com/wikis/fortnite/All_Free_Treasure_Chest_Rewards_List",
+          "title": "All Free Treasure Chest Rewards List",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQry90VsgzMazjMOXhR_zkBqdorn7XXQ78JsxfSzivvS8ysy35Dwv9trfPLCeA"
+        },
+        {
+          "url": "https://aftermath.site/fortnite-pirate-token/",
+          "title": "Fortnite's Pirate Token Item Is Everything That's Wrong With The Game These Days",
+          "publisher": "Aftermath",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRN6vNEOO4jl1XyvzGvVx9EoV6I5yc3UNCHJBSa0PslGHr3oEswjmpiWYp6bow"
+        }
+      ]
+    },
+    {
+      "query": "husker volleyball score",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T04:10:00Z",
+      "related_news_urls": [
+        "https://nebraskapublicmedia.org/en/series-media/nsaa-state-volleyball-championships-video/standalone-video-15983/2026-class-b-volleyball-championship-50032357/",
+        "https://www.klkntv.com/state-volleyball-semifinal-roundup-back-to-back-class-b-champion-norris-loses-in-straight-sets-and-more/",
+        "https://www.1011now.com/2026/11/04/nsaa-state-volleyball-highlights-scores/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1t8vbuliSgtWXLJ4b39Vyah3dkt_EPAMQ1d_oqv6jEUjgZUpN7PeNIpupCFQ",
+      "image_credit": "Nebraska Public Media",
+      "news": [
+        {
+          "url": "https://nebraskapublicmedia.org/en/series-media/nsaa-state-volleyball-championships-video/standalone-video-15983/2026-class-b-volleyball-championship-50032357/",
+          "title": "2026 Class B Volleyball Championship",
+          "publisher": "Nebraska Public Media",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1t8vbuliSgtWXLJ4b39Vyah3dkt_EPAMQ1d_oqv6jEUjgZUpN7PeNIpupCFQ"
+        },
+        {
+          "url": "https://www.klkntv.com/state-volleyball-semifinal-roundup-back-to-back-class-b-champion-norris-loses-in-straight-sets-and-more/",
+          "title": "State volleyball semifinal roundup: Back-to-back Class B champion Norris loses in straight sets, and more",
+          "publisher": "KLKN-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0ERZPOxMxElyT8Tog8IEBEDryh21NVG3IXt09O-lk77TmjNOhQ4ETOHb8Ms8"
+        },
+        {
+          "url": "https://www.1011now.com/2026/11/04/nsaa-state-volleyball-highlights-scores/",
+          "title": "NSAA State Volleyball Highlights & Scores",
+          "publisher": "KOLN | Nebraska Local News, Weather, Sports | Lincoln, NE",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrlL-I7dzkfAabW9WlEyyp1Kqk2cMQv3MHNdQHzysJhQWMMMiEM2R2mc0qPf0"
+        }
+      ]
+    },
+    {
+      "query": "ap poll week 10 projections",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T04:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/page/gamedaykickoff110526/week-10-top-games-upsets-preview",
+        "https://bleacherreport.com/articles/25529077-winners-and-losers-week-10-college-football-playoff-rankings",
+        "https://www.foxnews.com/outkick-sports/associated-press-top-25-poll-voters-hit-new-ridiculous-low-weeks-results"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGwNZ9IEhuJJyE7hBN4YjPQmb1QjTP_XNuGCJjt47bxcGz73FTlouRZWgAyKA",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/college-football/story/_/id/50390365/linda-fletcher-miami-rv",
-          "title": "'Never met a stranger': Riding to a Miami game with Linda Fletcher",
+          "url": "https://www.espn.com/college-football/story/_/page/gamedaykickoff110526/week-10-top-games-upsets-preview",
+          "title": "Will college football's top team stand up in Week 10?",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwhTAxtWobtAtjQ0CFpv3zZjhSQVdJ339PGGhx_ey0XN3HfMfS5AagwZTX5TE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGwNZ9IEhuJJyE7hBN4YjPQmb1QjTP_XNuGCJjt47bxcGz73FTlouRZWgAyKA"
         },
         {
-          "url": "https://sports.yahoo.com/articles/miami-rb-mark-fletcher-jr-163126324.html",
-          "title": "Miami RB Mark Fletcher Jr. surprises mom with new Cadillac Escalade",
-          "publisher": "Yahoo Sports",
+          "url": "https://bleacherreport.com/articles/25529077-winners-and-losers-week-10-college-football-playoff-rankings",
+          "title": "Winners and Losers of the Week 10 College Football Playoff Rankings",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8QRL2mMY3oYVYsKFMmTOKqAB3wUhkuyHFJGbpJXcEUikBpfz0Qa5z3Sr9QSU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTja2Q3mSLiwzX_mUr0j3PExH9qnr6qlvp_hFfBPP7Q8HgDpNwGyPlSU-9bHjs"
         },
         {
-          "url": "https://caneswarning.com/miami-s-mark-fletcher-jr-uses-nil-money-to-surprise-mother-with-new-cadillac-escalade",
-          "title": "Miami's Mark Fletcher Jr. uses NIL money to surprise mother with new Cadillac Escalade",
-          "publisher": "Canes Warning",
+          "url": "https://www.foxnews.com/outkick-sports/associated-press-top-25-poll-voters-hit-new-ridiculous-low-weeks-results",
+          "title": "Associated Press Top 25 poll voters hit a new, ridiculous low with this week's results",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhn9FkTX_e4aBXQc3cbmcBjKdd898nZTzimZtLgqDsec5CWzIeACWAhet5e0Y"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxRzH9_M5Drw3jOFEEy-Q-yj8ebL6q0URX4IOAP_AgVyesnyRAg1u7epFW9Jo"
         }
       ]
     },
     {
-      "query": "anthony black",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T03:30:00Z",
-      "related_news_urls": [
-        "https://roundtable.io/sports/nba/grizzlies/opinion/grizzlies-could-use-clever-trade-strategy-to-add-another-young-core-piece",
-        "https://roundtable.io/sports/nba/grizzlies/opinion/3-win-now-trade-targets-grizzlies-could-consider-after-4-0-start",
-        "https://arizonasports.com/nba/phoenix-suns/suns-provide-relief-with-much-needed-blowout-win-vs-magic-force-25-orlando-turnovers"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDrmNXQQPdFrhquFIqV71Dv2ZP4Uhi49VHPPlWIA-uZHh6gmPigkQ0JTBG-bc",
-      "image_credit": "roundtable.io",
-      "news": [
-        {
-          "url": "https://roundtable.io/sports/nba/grizzlies/opinion/grizzlies-could-use-clever-trade-strategy-to-add-another-young-core-piece",
-          "title": "Grizzlies Could Use Clever Trade Strategy to Add Another Young Core Piece",
-          "publisher": "roundtable.io",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDrmNXQQPdFrhquFIqV71Dv2ZP4Uhi49VHPPlWIA-uZHh6gmPigkQ0JTBG-bc"
-        },
-        {
-          "url": "https://roundtable.io/sports/nba/grizzlies/opinion/3-win-now-trade-targets-grizzlies-could-consider-after-4-0-start",
-          "title": "3 Win-Now Trade Targets Grizzlies Could Consider After 4-0 Start",
-          "publisher": "roundtable.io",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1KHd24AMlvGaMrh_o_ybIwDozu3YpeSQ2nBi9POR4LvvUV-mBKzMzqwSpZD4"
-        },
-        {
-          "url": "https://arizonasports.com/nba/phoenix-suns/suns-provide-relief-with-much-needed-blowout-win-vs-magic-force-25-orlando-turnovers",
-          "title": "Suns provide relief with much-needed blowout win vs. Magic, force 25 Orlando turnovers",
-          "publisher": "Arizona Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1n_SrrEc2YzPdBpRydZ_rmd1bgP_2GGInZ2QKHe7ZUDhN7ZytmqcDjdfJmi8"
-        }
-      ]
-    },
-    {
-      "query": "wild hockey",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T03:30:00Z",
-      "related_news_urls": [
-        "https://www.idahopress.com/sports/national/lightning-wild-hockey/image_31483c50-bac8-5b72-8009-9eb9defa8a5d.html",
-        "https://www.idahostatejournal.com/sports/national/blackhawks-lightning-hockey/image_0827553d-7d0f-5b6f-9daf-440bf97f5677.html",
-        "https://www.dailyrecordnews.com/ap_news/sports/lightning-wild-hockey/image_afe18ab4-d746-5af3-927e-d4f0a76b3366.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDzMShjikYwN0e8VthDRTaaz8qikUm8gHCSFKg8JXM_JPdVwcFsRpF6oWD-Cw",
-      "image_credit": "Idaho Press",
-      "news": [
-        {
-          "url": "https://www.idahopress.com/sports/national/lightning-wild-hockey/image_31483c50-bac8-5b72-8009-9eb9defa8a5d.html",
-          "title": "Lightning Wild Hockey",
-          "publisher": "Idaho Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDzMShjikYwN0e8VthDRTaaz8qikUm8gHCSFKg8JXM_JPdVwcFsRpF6oWD-Cw"
-        },
-        {
-          "url": "https://www.idahostatejournal.com/sports/national/blackhawks-lightning-hockey/image_0827553d-7d0f-5b6f-9daf-440bf97f5677.html",
-          "title": "Blackhawks Lightning Hockey",
-          "publisher": "Idaho State Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUt-yG2Ae1evqK0M3qh6vJ95NWNj002FtFpM-T6cYNl7QLhdWiWFSFSdEZr5U"
-        },
-        {
-          "url": "https://www.dailyrecordnews.com/ap_news/sports/lightning-wild-hockey/image_afe18ab4-d746-5af3-927e-d4f0a76b3366.html",
-          "title": "Lightning Wild Hockey",
-          "publisher": "dailyrecordnews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDzMShjikYwN0e8VthDRTaaz8qikUm8gHCSFKg8JXM_JPdVwcFsRpF6oWD-Cw"
-        }
-      ]
-    },
-    {
-      "query": "ufc 335",
+      "query": "paolo banchero",
       "approx_searches": "200+",
-      "published_at": "2026-11-08T03:30:00Z",
+      "published_at": "2026-11-08T04:10:00Z",
       "related_news_urls": [
-        "https://www.mmafighting.com/ufc/519837/maycee-barber-vs-carli-judice-scratched-from-ufc-335-lineup",
-        "https://sports.yahoo.com/articles/maycee-barber-ufc-335-012423614.html",
-        "https://bloodyelbow.com/2026/11/07/ufc-335-down-a-fight-with-promotion-looking-to-reschedule-maycee-barbers-return-according-to-report/"
+        "https://sports.yahoo.com/articles/former-tcu-star-desmond-bane-210019265.html",
+        "https://www.si.com/nba/suns/onsi/paolo-banchero-headlines-official-phoenix-suns-orlando-magic-injury-report",
+        "https://www.complex.com/bets/a/matt-burke/paolo-banchero-fantasy-basketball-injury-update"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRELSUx_PAziX0g6Tjk4LTLsdaVedUeSooFXQVa3Vg4bdqO-q0r5nJsBGh5PsU",
-      "image_credit": "MMA Fighting",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROMSuatTV_FPEduNMYdB2ZVk6gT2eYOklpN_2xkntsXOdD4QZOiT3YRCIwVg0",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.mmafighting.com/ufc/519837/maycee-barber-vs-carli-judice-scratched-from-ufc-335-lineup",
-          "title": "Maycee Barber out of UFC 335 matchup with Carli Judice",
-          "publisher": "MMA Fighting",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRELSUx_PAziX0g6Tjk4LTLsdaVedUeSooFXQVa3Vg4bdqO-q0r5nJsBGh5PsU"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/maycee-barber-ufc-335-012423614.html",
-          "title": "Maycee Barber Out of UFC 335",
+          "url": "https://sports.yahoo.com/articles/former-tcu-star-desmond-bane-210019265.html",
+          "title": "Ex TCU Star Desmond Bane Must Step Up as Paolo Banchero's Absence Hurts Struggling Magic",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT35D5LkiY5w4-cLswf0njAfY3BGBKExUIxeCdbeRdMVsQOAEJL0kTv8SMCu9U"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROMSuatTV_FPEduNMYdB2ZVk6gT2eYOklpN_2xkntsXOdD4QZOiT3YRCIwVg0"
         },
         {
-          "url": "https://bloodyelbow.com/2026/11/07/ufc-335-down-a-fight-with-promotion-looking-to-reschedule-maycee-barbers-return-according-to-report/",
-          "title": "UFC 335 down a fight with promotion looking to reschedule Maycee Barber's return according to report",
-          "publisher": "Bloody Elbow",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz6aYbsTY8RVEcRNQwGEFzCv_9v3tw0ePt4L9PtI0foIke1XhB1IZEJ6ABveY"
-        }
-      ]
-    },
-    {
-      "query": "james harden",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T03:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/fantasy/basketball/story/_/id/50390776/fantasy-basketball-tips-nba-betting-picks-today",
-        "https://www.fanduel.com/research/nba-props-today-friday-nov-6",
-        "https://www.si.com/betting/nba-best-bets-today-predictions-prop-bets-for-luka-doncic-trae-young-celtics-vs-hornets"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMpmwt4GbRci2YnXJXUhJ-lAjnLyQfMRpIxcLV4icGD9yA53pYa9TMEKMFCEo",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/fantasy/basketball/story/_/id/50390776/fantasy-basketball-tips-nba-betting-picks-today",
-          "title": "Fantasy adds, NBA bets to make for Friday: Cam Spencer, Saddiq Bey stand out",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMpmwt4GbRci2YnXJXUhJ-lAjnLyQfMRpIxcLV4icGD9yA53pYa9TMEKMFCEo"
-        },
-        {
-          "url": "https://www.fanduel.com/research/nba-props-today-friday-nov-6",
-          "title": "Best NBA Props Today: 3 NBA Prop Bets for Friday, Nov. 6",
-          "publisher": "FanDuel",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPFP3tdiFeGjO088EFPLZjwY7imcKPNXix9VNk_GuN6r00xrgu2pXkzzSDeIQ"
-        },
-        {
-          "url": "https://www.si.com/betting/nba-best-bets-today-predictions-prop-bets-for-luka-doncic-trae-young-celtics-vs-hornets",
-          "title": "Peter’s Points: NBA Best Bets Today (Predictions, Prop Bets for Luka Doncic, Trae Young, Celtics vs. Hornets)",
+          "url": "https://www.si.com/nba/suns/onsi/paolo-banchero-headlines-official-phoenix-suns-orlando-magic-injury-report",
+          "title": "Paolo Banchero Headlines Official Suns-Magic Injury Report",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQowKXZjgOO7Gx-A__GwVnLPktVgUwmcHtsMlLOsPtEnbFMbfctTgl3qIuENwI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRD7cOQ1nzdi8CNIKaOr-XM6bhWKz3QQLflU65UtoW0RZ_FjRtWRT_u9c-c5ow"
+        },
+        {
+          "url": "https://www.complex.com/bets/a/matt-burke/paolo-banchero-fantasy-basketball-injury-update",
+          "title": "Paolo Banchero Fantasy Basketball Injury Update: When Will Magic Star Return?",
+          "publisher": "Complex",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSa0cXNLxBEJheMe7IqgEM9V-7AYPZLKWs3Kk14JwPuPfTTxNUCZeH-XxZoNSw"
         }
       ]
     },
     {
-      "query": "pumas",
+      "query": "warriors",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-08T04:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/golden-state-warriors-announce-injury-082041661.html",
+        "https://www.nba.com/watch/video/golden-state-warriors-vs-orlando-magic-2nd-quarter-highlights-2?plsrc=nba&collection=steph-curry",
+        "https://dubnationhq.com/p/preview-porzingis-retires-sort-of"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmgGRx-9pxJf24yXMrkx49qYQp47BWzu1CoduoVGFJYxC8EExQbyV_WpHlccU",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/golden-state-warriors-announce-injury-082041661.html",
+          "title": "Golden State Warriors Announce Injury Report vs. Orlando Magic (Nov. 7)",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmgGRx-9pxJf24yXMrkx49qYQp47BWzu1CoduoVGFJYxC8EExQbyV_WpHlccU"
+        },
+        {
+          "url": "https://www.nba.com/watch/video/golden-state-warriors-vs-orlando-magic-2nd-quarter-highlights-2?plsrc=nba&collection=steph-curry",
+          "title": "Golden State Warriors vs. Orlando Magic - 2nd Quarter Highlights",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRr41L3YkqqG5fV2g-U3cU4T6zOkUbplqX30AN_rGc1tNP6wXB6rVBiQW-GBY4"
+        },
+        {
+          "url": "https://dubnationhq.com/p/preview-porzingis-retires-sort-of",
+          "title": "Preview: Porzingis retires (sort of), Warriors keep rising",
+          "publisher": "Dub Nation HQ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFJ3KI4KmT3rxPVrafGQTOqdYt4iVaPz_qSNAXzcUZwGLzJfbX3u7FG86K4L4"
+        }
+      ]
+    },
+    {
+      "query": "thomas castellanos",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T04:00:00Z",
+      "related_news_urls": [
+        "https://lufkindailynews.com/news_reuters/state/oct-31-2026-lubbock-texas-usa-texas-tech-red-raiders-quarterback-thomas-castellanos-4-hands/image_f594360d-46a2-5ef6-8286-b26e67e4e353.html",
+        "https://www.si.com/fannation/college/cfb-hq/rankings/big-12-qb-rankings-week-10-castellanos-joins-top-8-after-arizona-win",
+        "https://redraiderswire.usatoday.com/story/sports/college/red-raiders/football/2026/11/06/texas-tech-football-castellanos-primed-to-be-offensive-solution/92647369007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSQyVjxJwFjNcIdDvrnSp3FU8DyD2_KrC2BjaX_0jFwycz-7Frs-c5XzFojro",
+      "image_credit": "The Lufkin Daily News",
+      "news": [
+        {
+          "url": "https://lufkindailynews.com/news_reuters/state/oct-31-2026-lubbock-texas-usa-texas-tech-red-raiders-quarterback-thomas-castellanos-4-hands/image_f594360d-46a2-5ef6-8286-b26e67e4e353.html",
+          "title": "Oct 31, 2026; Lubbock, Texas, USA; Texas Tech Red Raiders quarterback Thomas Castellanos (4) hands to the ball to running back J'Koby Williams (20) in the second half against the A",
+          "publisher": "The Lufkin Daily News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSQyVjxJwFjNcIdDvrnSp3FU8DyD2_KrC2BjaX_0jFwycz-7Frs-c5XzFojro"
+        },
+        {
+          "url": "https://www.si.com/fannation/college/cfb-hq/rankings/big-12-qb-rankings-week-10-castellanos-joins-top-8-after-arizona-win",
+          "title": "Big 12 QB Rankings Week 10: Castellanos Joins Top 8 After Defeat of Arizona",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQaD-XuIR7uoBm4qegqdFbVIWbKLQUe_vo55_YvgpGQkMXKi3OIyXPxkBu4VLA"
+        },
+        {
+          "url": "https://redraiderswire.usatoday.com/story/sports/college/red-raiders/football/2026/11/06/texas-tech-football-castellanos-primed-to-be-offensive-solution/92647369007/",
+          "title": "SI names Texas Tech's Castellanos as pivotal quarterback",
+          "publisher": "Red Raiders Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQY_1dSSIqLgofUPTsSJ8BCt-mw69WtGWwg5bKQ8j8ubzDXSsFXOJ7NGj8Wd-I"
+        }
+      ]
+    },
+    {
+      "query": "salma hayek",
       "approx_searches": "500+",
-      "published_at": "2026-11-08T03:20:00Z",
+      "published_at": "2026-11-08T04:00:00Z",
       "related_news_urls": [
-        "https://www.vavel.com/en-us/soccer/2026/11/07/1278396-pumas-vs-club-america-live-score-updates-liga-mx-clasico-capitalino.html",
-        "https://www.soyfutbol.com/en/news/nathan-silva-fires-up-america-vs.-pumas-with-a-bold-statementwhat-did-the-brazilian-say-20261107-0023.html",
-        "https://en.as.com/soccer/america-vs-pumas-the-83-million-roster-gap-behind-mexico-citys-biggest-rivalry-f202611-n/"
+        "https://www.vogue.com/slideshow/salma-hayek-pinault-jane-fonda-women-in-film-honors-2026",
+        "https://pagesix.com/2026/11/05/photos/wif-honors-2026-red-carpet-salma-hayek-kerry-washington-sharon-stone-and-more/",
+        "https://www.hola.com/us/fashion/20261106933675/salma-hayek-perfect-shade-navy/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmh6ybMQ8DC_gCC59vPVz-wCmhFm4eXiL3FyrK8bAU9spa1MSKFdr1W43vEP4",
-      "image_credit": "VAVEL.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzZqjLBXmOHjSMgW5tY3du3GjxiGI6Z6dg0otswhSkQrTtc4W7_vRlO8nKxAQ",
+      "image_credit": "Vogue",
       "news": [
         {
-          "url": "https://www.vavel.com/en-us/soccer/2026/11/07/1278396-pumas-vs-club-america-live-score-updates-liga-mx-clasico-capitalino.html",
-          "title": "Pumas vs Club America LIVE, Score Updates, Liga MX Clasico Capitalino (1-1)",
-          "publisher": "VAVEL.com",
+          "url": "https://www.vogue.com/slideshow/salma-hayek-pinault-jane-fonda-women-in-film-honors-2026",
+          "title": "Salma Hayek Pinault, Jane Fonda, and Hollywood’s Leading Names Gathered to Toast Women In Film",
+          "publisher": "Vogue",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmh6ybMQ8DC_gCC59vPVz-wCmhFm4eXiL3FyrK8bAU9spa1MSKFdr1W43vEP4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzZqjLBXmOHjSMgW5tY3du3GjxiGI6Z6dg0otswhSkQrTtc4W7_vRlO8nKxAQ"
         },
         {
-          "url": "https://www.soyfutbol.com/en/news/nathan-silva-fires-up-america-vs.-pumas-with-a-bold-statementwhat-did-the-brazilian-say-20261107-0023.html",
-          "title": "Nathan Silva Fires Up América vs. Pumas with a Bold Statement—What Did the Brazilian Say?",
-          "publisher": "Soy Futbol",
+          "url": "https://pagesix.com/2026/11/05/photos/wif-honors-2026-red-carpet-salma-hayek-kerry-washington-sharon-stone-and-more/",
+          "title": "WIF Honors 2026 red carpet: Salma Hayek, Kerry Washington, Sharon Stone and more",
+          "publisher": "Page Six",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSF5kbRPlVd_1CAmqPDJDz6MAn279nyeCayD5IGVlbva-B2AJ76-ChVb3wZN3Q"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT289qvulJo4uXYv7Q_Ig3F5p5je52ZH4AIo2PuuhM9pYmgL-sG3zT6-xYSjxI"
         },
         {
-          "url": "https://en.as.com/soccer/america-vs-pumas-the-83-million-roster-gap-behind-mexico-citys-biggest-rivalry-f202611-n/",
-          "title": "América vs. Pumas: The $83 million roster gap behind Mexico City’s biggest rivalry",
-          "publisher": "Diario AS",
+          "url": "https://www.hola.com/us/fashion/20261106933675/salma-hayek-perfect-shade-navy/",
+          "title": "Salma Hayek might have found her perfect shade: Mexican star looks her best in Navy",
+          "publisher": "HOLA",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSv_gU0b4QUa4ew5J8vM_b115kIdS2mdn-HjhKf98oKPpHaDPAMDlZIAFnvLw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4PQc-FkmGIDUvd5EKGPiggJ_qvarDvSDpPLwYRUb-T1sZVkGJ5WpjaxkgP7M"
         }
       ]
     },
     {
-      "query": "strait of hormuz",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T03:20:00Z",
+      "query": "warriors standings",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T04:00:00Z",
       "related_news_urls": [
-        "https://www.cbsnews.com/live-updates/iran-war-us-trump-midterms-strait-of-hormuz/",
-        "https://www.reuters.com/world/middle-east/tankers-hit-hormuz-iran-keeps-up-pressure-after-us-vote-2026-11-05/",
-        "https://www.timesofisrael.com/liveblog_entry/iranian-state-media-reports-explosions-on-island-in-strait-of-hormuz/"
+        "https://www.espn.com/nba/story/_/id/50412162/yaxel-lendeborg-warriors-gifts-mom-home",
+        "https://sports.yahoo.com/nba/article/warriors-rookie-yaxel-lendeborg-buys-house-for-his-mother-who-saved-his-basketball-career-235024826.html",
+        "https://basketnews.com/news-259012-yaxel-lendeborg-makes-heartwarming-gesture-with-first-nba-paycheck.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRawj2dcqFb8qNH5e7YDZWtFFMJERcchE1yKt2qNkIberKMVR8VGFrXskaDZHg",
-      "image_credit": "CBS News",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtIDu-DgR2Uw95QPDxhOwOsyX2v2UrAJJnOCQ4zzkW71QwBOPbOHq4OzvsCos",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-midterms-strait-of-hormuz/",
-          "title": "More ships attacked in Persian Gulf, oil prices rebound slightly after post-midterm plunge",
-          "publisher": "CBS News",
+          "url": "https://www.espn.com/nba/story/_/id/50412162/yaxel-lendeborg-warriors-gifts-mom-home",
+          "title": "Warriors' Yaxel Lendeborg surprises mom with new home to fulfill 'lifelong goal'",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRawj2dcqFb8qNH5e7YDZWtFFMJERcchE1yKt2qNkIberKMVR8VGFrXskaDZHg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtIDu-DgR2Uw95QPDxhOwOsyX2v2UrAJJnOCQ4zzkW71QwBOPbOHq4OzvsCos"
         },
         {
-          "url": "https://www.reuters.com/world/middle-east/tankers-hit-hormuz-iran-keeps-up-pressure-after-us-vote-2026-11-05/",
-          "title": "Tankers hit in Hormuz as Iran keeps up pressure after US vote",
-          "publisher": "Reuters",
+          "url": "https://sports.yahoo.com/nba/article/warriors-rookie-yaxel-lendeborg-buys-house-for-his-mother-who-saved-his-basketball-career-235024826.html",
+          "title": "Warriors rookie Yaxel Lendeborg buys house for his mother, who saved his basketball career",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHmzxYJEIRmK_Z8MzgRBcpzGsIVZ0fmiYfxVeuzD7DhXTlQQwz86oDEmBpFkQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDH966jBSB-l-MkPOEAvy5op3TnJHUs-SsCGWe64GDD5OtxgufMIXjwOAZSkU"
         },
         {
-          "url": "https://www.timesofisrael.com/liveblog_entry/iranian-state-media-reports-explosions-on-island-in-strait-of-hormuz/",
-          "title": "Iranian state media reports explosions on island in Strait of Hormuz",
-          "publisher": "The Times of Israel",
+          "url": "https://basketnews.com/news-259012-yaxel-lendeborg-makes-heartwarming-gesture-with-first-nba-paycheck.html",
+          "title": "Yaxel Lendeborg makes heartwarming gesture with first NBA paycheck",
+          "publisher": "BasketNews.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_EI9XhYIlIlGZxpUOrk1zDbD3qOxiWy-qW0eOR3bfxCvRXeJLoS348ZL3mPY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZn1zfJv_9ZYJSEwp0OtGM7uj2ginf0P6t2tGBWXjFZFIy0lZPS8HeQvZ-DCU"
         }
       ]
     }
