@@ -56,7 +56,7 @@ Draft PR: https://github.com/www-infinity4/QuantaPhi/pull/1856
 - Production readback: Cloudflare `infinity-rogers` most recent deployment is `5258cc19-2689-4eb3-a7aa-61c7b4dd8c86`, created 2026-11-06T16:55:06Z; `ANTHROPIC_API_KEY` and `BRAIN` bindings exist. This proves the new Claude Worker is NOT deployed yet.
 - Final acceptance still requires independent security approval, authorized guarded merge, production version/readback, owner-signed non-sensitive synthetic Claude conversation and Android acceptance. No token, wallet or production data was mutated in this session.
 
-## Known blockers
+## Historical blockers at initial intake (2026-11-08 09:03 UTC; superseded by verified continuation above)
 1. Existing guarded workflow does not explicitly test `test/claude-steward.test.mjs` (first read).
 2. Draft approval phrase on card/doc is inaccurate until it names owner-reviewed `/work/tickets/update` plan submission.
 3. GitHub PR was opened draft because exact-head CI and independent release review were missing.
