@@ -274,7 +274,7 @@ test('real Bubbles messenger mounts iteration rows in the conversation after the
  const current=conversation.children[1];
  assert.match(current.attributes['aria-label'],/this chat message/);
  assert.ok(current.children[1].children.length>=2,'One live line per distinct iteration');
- assert.match(status.afterElement.textContent,/Iteration/);
+ assert.match(status.afterElement.textContent,/Context/);
  state=advanceLiveBits(state,{type:'tool_started',tool:'github.assist',
   operationId:'aaa11111-1111-4111-8111-111111111111',resource:'www-infinity4/TestPilot'});
  view.show(state);
