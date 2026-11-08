@@ -63,3 +63,13 @@ Draft PR: https://github.com/www-infinity4/QuantaPhi/pull/1856
 4. No signed production route receipt, end-to-end ticket advancement or Android proof yet.
 
 No patch proposal is an applied file. No DRAFT Brain ticket is automatically queued to the writer. Work remains open.
+
+
+## Owner correction · 2026-11-08 (this ticket; no duplicate)
+
+The owner clarified that the Claude button and selectable API model **do not represent the requested free Claude website service acting as a helper to Bubbles' real work-ticket executor**. Do not equate the user's Claude website login with Anthropic API authorization, and do not make chargeable requests without an explicit approved path.
+
+- Corrective source branch: `fix/remove-unconnected-claude-ui-20261108`. Removes the floating Claude script from four entrypoints, the Bubbles Claude picker, and misleading review adviser link; retains the native Bubbles conversation, owner work bridge, memory, voice and provider-independent tools.
+- Regression test updated **before** the source repair: `test/bubbles-claude-model-choice.test.mjs` requires the unconnected UI to be absent. Source test/CI, review, merge, deploy and Android acceptance remain separately pending until receipts exist.
+- The historical API Steward implementation and `#1856`, `#1868` are **not** evidence of Claude website integration. Keep provider-billed routes behind existing authorization; do not enable new API spending.
+- Next: CI/review for this owner-requested UI correction, then route Claude help through existing work tickets only with an approved, verified website/connector pathway or a user-reviewed manual handoff; never present a manual Claude answer as a completed repository operation.
