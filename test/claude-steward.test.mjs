@@ -233,3 +233,20 @@ test('Termux patch export uses deterministic UTF-8 file handling',()=>{
  assert.match(source,/p\.read_text\(encoding="utf-8"\)/);
  assert.match(source,/p\.write_text\(s\.replace\(old,new,1\),encoding="utf-8"\)/);
 });
+
+test('Claude client exposes sanitized reason to Bubbles composer instead of dropping failed send',()=>{
+ const src=fs.readFileSync(new URL('../claude-card.js',import.meta.url),'utf8');
+ const sandbox={sessionStorage:{getItem:()=>null,setItem(){}},addEventListener(){},
+  document:{readyState:'loading',addEventListener(){}}};
+ sandbox.window=sandbox;
+ vm.runInNewContext(src,sandbox);
+ assert.equal(typeof sandbox.ClaudeSteward.describeError,'function');
+ assert.match(sandbox.ClaudeSteward.describeError('anthropic_billing_required'),/billing|credits/i);
+ assert.match(sandbox.ClaudeSteward.describeError('anthropic_authentication_failed'),/credential|key/i);
+ assert.match(sandbox.ClaudeSteward.describeError('anthropic_model_unavailable'),/model/i);
+ assert.doesNotMatch(sandbox.ClaudeSteward.describeError('sk-test-account-secret'),/sk-test-account-secret/);
+ assert.match(src,/return inline\?{ok:false,error:/);
+ const bubbles=fs.readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ assert.match(bubbles,/steward\.describeError\(result\?\.error/);
+ assert.match(bubbles,/Your message remains in the composer/);
+});
