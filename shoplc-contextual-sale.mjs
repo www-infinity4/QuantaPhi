@@ -44,7 +44,10 @@ export function normalizeShopLcItem(raw,at=Date.now()){
   /fashion|shirt|dress|shoe|apparel/.test(text)?'fashion':'other';
  return Object.freeze({
   id,title,href:new URL(item.href).href,image,price,currency:'USD',category,
-  source:'Shop LC current-item lookup',checkedAt:at,purchaseVerified:false
+  source:'Shop LC approved partner feed',checkedAt:at,
+  expiresAt:Number(item.expiresAt)||at+15*60000,
+  onAir:item.onAir===true,saleVerified:item.saleVerified===true,
+  purchaseVerified:false
  });
 }
 export function chooseShopLcPlacement(items,context={},prefs={}){
@@ -62,9 +65,16 @@ export function chooseShopLcPlacement(items,context={},prefs={}){
  return null;
 }
 
+export function eligibleShopLcPlacements(items,context={},prefs={},now=Date.now()){
+ if(prefs.hideShopLc||prefs.hideAllCommercials||!Array.isArray(items))return [];
+ return items.filter(item=>item&&Number(item.expiresAt)>now&&
+  chooseShopLcPlacement([item],context,prefs)?.id===item.id);
+}
+
 if(typeof document!=='undefined'&&typeof window!=='undefined'){
  let hiddenForSession=false;
- let product=null,lastFetch=0,loading=null;
+ let products=[],lastFetch=0,loading=null;
+ const selectedIndex=new WeakMap();
  const currentPrefs=()=>{try{return {hideShopLc:localStorage.getItem(PREF_KEY)==='1'}}catch{return {hideShopLc:hiddenForSession}}};
  const setHidden=value=>{
   hiddenForSession=value;
@@ -89,7 +99,9 @@ if(typeof document!=='undefined'&&typeof window!=='undefined'){
    const existing=card.querySelector(':scope > .shoplc-sale-mini');
    if(existing)existing.remove();
    const context={sourceId:card.dataset.sourceId,title:card.dataset.sourceName,category:card.dataset.sourceCategory};
-   const match=chooseShopLcPlacement(product?[product]:[],context,prefs);
+   const matches=eligibleShopLcPlacements(products,context,prefs,Date.now());
+   const index=(selectedIndex.get(card)||0)%Math.max(1,matches.length);
+   const match=matches[index];
    if(!match&&!(prefs.hideShopLc&&card.dataset.sourceId==='shoplc-premium'))continue;
    const box=el('aside','shoplc-sale-mini');
    box.setAttribute('aria-label','Shop LC contextual product listing');
@@ -106,8 +118,68 @@ if(typeof document!=='undefined'&&typeof window!=='undefined'){
    img.addEventListener('error',()=>box.remove(),{once:true});
    const text=el('div','shoplc-sale-copy');
    text.append(el('strong','shoplc-sale-title',match.title),
-    el('span','shoplc-sale-small','Item '+match.id.slice(8)+' · Source checked '+new Date(match.checkedAt).toLocaleTimeString()),
-    el('span','shoplc-sale-small','Check the current price, image, size and availability at Shop LC.'));
+    el('span','shoplc-sale-small','Item '+match.id.slice(8)+' · Feed checked '+new Date(match.checkedAt).toLocaleTimeString()),
+    el('span','shoplc-sale-small',match.saleVerified?'Merchant-verified sale · confirm current terms at Shop LC.':
+     'Current merchant listing · check sale terms at Shop LC.'),
+    el('span','shoplc-sale-small','Price: '+(match.price!==null?'
+   body.append(img,text);
+   const actions=el('div','shoplc-sale-actions');
+   const open=el('a','shoplc-sale-link','See exact listing');
+   open.href=match.href;open.target='_blank';open.rel='noopener noreferrer';
+   const hide=el('button','shoplc-sale-hide','Not for me');
+   hide.type='button';hide.addEventListener('click',()=>setHidden(true));
+   actions.append(open,hide);
+   if(matches.length>1){
+    const next=el('button','shoplc-sale-next','Next offer ('+(index+1)+'/'+matches.length+')');
+    next.type='button';next.addEventListener('click',()=>{
+     selectedIndex.set(card,(index+1)%matches.length);render();
+    });
+    actions.append(next);
+   }
+   box.append(body,actions);
+   card.insertBefore(box,card.children[1]||null);
+  }
+ }
+ async function refresh(){
+  if(currentPrefs().hideShopLc){render();return}
+  const active=document.querySelector('#oracleCardStage .iqc-card[data-source-id]');
+  if(!active)return;
+  const relevant=candidateCards().includes(active);
+  if(!relevant)return;
+  if(Date.now()-lastFetch<REFRESH_MS){render();return}
+  if(loading)return loading;
+  const controller=new AbortController();
+  const timeout=setTimeout(()=>controller.abort(),9000);
+  loading=(async()=>{
+   try{
+    const response=await fetch(SOURCE,{cache:'no-store',credentials:'omit',signal:controller.signal});
+    if(!response.ok)throw Error('Shop LC item lookup unavailable');
+    const data=await response.json();
+    // A valid source alone is insufficient; the merchant must authorize
+    // product-feed access AND public promotional media reuse.
+    if(data?.rights?.provider!=='Shop LC'||
+       data?.rights?.productFeedApproved!==true||
+       data?.rights?.productImagesApproved!==true)throw Error('merchant_rights_not_confirmed');
+    const checkedAt=Number(data.checkedAt);
+    if(!Number.isFinite(checkedAt)||checkedAt>Date.now()||
+       Date.now()-checkedAt>15*60000)throw Error('stale_merchant_offer');
+    const raw=Array.isArray(data.items)?data.items:(data.item?[data.item]:[]);
+    products=raw.slice(0,24).map(x=>normalizeShopLcItem(x,checkedAt)).filter(x=>
+     x&&x.expiresAt>Date.now());
+   }catch{products=[]}
+   finally{clearTimeout(timeout);lastFetch=Date.now();loading=null;render()}
+  })();
+  return loading;
+ }
+ window.addEventListener('quantaphi:switchboard-change',()=>{void refresh()});
+ window.addEventListener('quantaphi:source-cards-ready',()=>{void refresh()});
+ document.addEventListener('visibilitychange',()=>{if(!document.hidden)void refresh()});
+ setInterval(()=>{if(!document.hidden)void refresh()},REFRESH_MS);
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{void refresh()},{once:true});
+ else void refresh();
+}
++match.price.toFixed(2):'at merchant checkout')+
+     (match.onAir?' · Merchant flagged on-air':'')+' · Availability can change.'));
    body.append(img,text);
    const actions=el('div','shoplc-sale-actions');
    const open=el('a','shoplc-sale-link','See exact listing');
