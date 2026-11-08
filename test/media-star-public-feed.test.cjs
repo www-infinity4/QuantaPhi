@@ -43,3 +43,11 @@ test('native media starts a distinct server session and finishes once after fore
  assert.match(SRC,/seconds<35/);
  assert.doesNotMatch(SRC,/recordProductionPlay\(/);
 });
+
+test('locked public card can check an existing signed entitlement but cannot initiate payment',()=>{
+ assert.match(SRC,/mediaStarEpisodeAccess/);
+ assert.match(SRC,/Check my episode access/);
+ assert.match(SRC,/previously_purchased/);
+ assert.match(SRC,/purchaseEnabled/);
+ assert.doesNotMatch(SRC,/\/v1\/production\/media-star-checkout/);
+});
