@@ -483,3 +483,16 @@ test('Bubbles capability discovery must not disable normal tools or create autho
  assert.equal(body.capabilities.find(x=>x.id==='robot_brain.owner_work').executionVerified,false);
  assert.match(body.output,/separate|verified|owner/i);
 });
+
+test('asking where tools live wins over public repository read heuristics even when a repository is named',async()=>{
+ const question='Which tools can you use to inspect www-infinity4/QuantaPhi repository?';
+ assert.equal(chooseTool(question),'bubbles.capabilities');
+ const req=new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},
+  body:JSON.stringify({request:question,mcp:true})});
+ const result=await worker.fetch(req,{AI:{run:async()=>{throw Error('must not call AI')}}});
+ const body=await result.json();
+ assert.equal(result.status,200);
+ assert.equal(body.receipt.tool,'bubbles.capabilities');
+ assert.equal(body.receipt.repositoryActionsVerified,false);
+ assert.ok(Array.isArray(body.capabilities));
+});
