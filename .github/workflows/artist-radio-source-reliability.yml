@@ -9,6 +9,7 @@ on:
       - 'test/steve-miller-book-of-dreams.test.mjs'
       - 'test/artist-music-source-playback.test.mjs'
       - 'test/infinity-radio-music-card-controls.test.mjs'
+      - 'test/artist-radio-player.browser.spec.mjs'
       - '.github/workflows/artist-radio-source-reliability.yml'
 permissions:
   contents: read
@@ -25,3 +26,11 @@ jobs:
         run: |
           node --check steve-miller-book-of-dreams.js
           node --test test/artist-radio-source-reliability.test.mjs test/steve-miller-book-of-dreams.test.mjs test/artist-music-source-playback.test.mjs test/infinity-radio-music-card-controls.test.mjs test/inline-rock-playback-regression.test.mjs test/classic-rock-official-card.test.mjs
+      - name: Install Chromium for Android-width artist player acceptance
+        run: |
+          npm install --no-save @playwright/test@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Verify selected artist and Next play in the original 360px card
+        run: |
+          python3 -m http.server 8799 --bind 127.0.0.1 >/tmp/artist-radio-card-test.log 2>&1 &
+          npx playwright test test/artist-radio-player.browser.spec.mjs --reporter=line --workers=1
