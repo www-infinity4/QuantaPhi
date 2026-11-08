@@ -49,3 +49,23 @@ test('PCLA card has a source-backed bespoke mesh-network visual and in-card rese
  assert.match(css,/qcx-pcla-mesh/);
  assert.match(css,/qcx-pcla-node/);
 });
+
+
+test('PCLA mounts as a real original homepage source-bank card in the active Oracle carousel',async()=>{
+ const {ACTIVE_SOURCE_CARDS,PUBLIC_SOURCE_IDS,isPublicSourceCard,findSourceCard}=await import('../source-quick-cards.mjs');
+ const card=ACTIVE_SOURCE_CARDS.find(x=>x.id==='pcla-picocela');
+ assert.ok(card,'PCLA missing from real source quick-card registry');
+ assert.ok(PUBLIC_SOURCE_IDS.includes(card.id),'PCLA omitted from public shelf');
+ assert.equal(findSourceCard('pcla-picocela'),card);
+ assert.equal(card.official,'https://picocela.com/en/');
+ assert.equal(card.marketUrl,'https://finance.yahoo.com/quote/PCLA/history/');
+ assert.equal(card.quoteDate,'2026-11-06');
+ assert.equal(isPublicSourceCard(card),true);
+ const fs=await import('node:fs');
+ const launcher=fs.readFileSync(new URL('../source-quick-cards.mjs',import.meta.url),'utf8');
+ const oracle=fs.readFileSync(new URL('../oracle-card-deck.js',import.meta.url),'utf8');
+ assert.match(launcher,/ACTIVE_SOURCE_CARDS\.filter\(isPublicSourceCard\)/);
+ assert.match(launcher,/window\.dispatchEvent\(new Event\('quantaphi:source-cards-ready'\)\)/);
+ assert.match(oracle,/#siteQuickCards \.iqc-card\[data-source-id\]/);
+ assert.match(oracle,/entries\.push\(entry\)/);
+});
