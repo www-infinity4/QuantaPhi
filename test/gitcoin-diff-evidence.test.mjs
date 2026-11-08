@@ -1,3 +1,4 @@
+import fs from 'node:fs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {extractGitLineCandidates,queueGitHubCommitCandidates} from '../workers/infinity-brain-clock/gitcoin-diff-evidence.mjs';
@@ -70,4 +71,14 @@ test('disabled/unsafe proof cannot call wallet or issue GIT',async()=>{
  const unsafe=await queueGitHubCommitCandidates(env,context,async()=>Response.json({...commit(),sha:'f'.repeat(40)}));
  assert.equal(unsafe.status,'blocked');
  assert.equal(calls,0);
+});
+
+test('only the authenticated Brain commit receipt can attempt candidate creation for bound executor',()=>{
+ const brain=fs.readFileSync('workers/infinity-brain-clock/worker.js','utf8');
+ assert.match(brain,/queueGitHubCommitCandidates/);
+ assert.match(brain,/GITCOIN_CLAIMS_ENABLED==='1'/);
+ assert.match(brain,/metadata\.receipt\?\.tool==='github\.commit'/);
+ assert.match(brain,/sourceReceiptId:metadata\.receipt\.id/);
+ assert.match(brain,/this\.ctx\.storage\.get\('bot-work-recipient'\)/);
+ assert.doesNotMatch(brain,/gitcoin_awards.*INSERT/);
 });
