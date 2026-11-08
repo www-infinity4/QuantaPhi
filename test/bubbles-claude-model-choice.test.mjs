@@ -65,11 +65,11 @@ test('failed Claude delivery preserves the typed draft and cannot claim a reply'
 
 test('Bubbles may use Claude as verified training wheels only for plain conversation',async()=>{
  const {shouldUseClaudeAssistance}=await import('../bubbles-claude-routing.mjs');
- const base={selectedModel:'bubbles',ownerVerified:true,providerPresent:true,
+ const base={selectedModel:'bubbles',ownerVerified:true,providerPresent:true,ownerEnabled:true,
   embedded:false,hasAttachments:false,toolWork:false,request:'How does this work?'};
  assert.equal(shouldUseClaudeAssistance(base),true);
  for(const patch of [
-  {selectedModel:'claude'},{ownerVerified:false},{providerPresent:false},
+  {selectedModel:'claude'},{ownerVerified:false},{providerPresent:false},{ownerEnabled:false},
   {embedded:true},{hasAttachments:true},{toolWork:true},{request:''}
  ]){
   assert.equal(shouldUseClaudeAssistance({...base,...patch}),false,
@@ -87,4 +87,15 @@ test('Bubbles Claude assistance keeps Bubbles interface and preserves real model
  assert.match(ui,/Bubbles · Claude-assisted reply/);
  assert.match(ui,/if\(assisted\?\.ok===true/);
  assert.match(ui,/if\(!response\)/);
+});
+
+test('Claude Bubbles training-wheel mode is opt-in and never charges on page load',async()=>{
+ const fs=await import('node:fs');
+ const ui=fs.readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ assert.match(ui,/let claudeAssistanceOptIn=false/);
+ assert.match(ui,/ownerEnabled:claudeAssistanceOptIn/);
+ assert.match(ui,/Use Claude behind Bubbles/);
+ assert.match(ui,/Anthropic API usage may be billed/);
+ assert.match(ui,/claudeAssistantToggle\.addEventListener\('change'/);
+ assert.doesNotMatch(ui,/localStorage\.setItem\(['"]claude/i);
 });
