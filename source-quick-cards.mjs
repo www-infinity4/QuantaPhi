@@ -1,4 +1,4 @@
-import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261102-cardimages1';
+import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261107-magazines1';
 import {mountOfficialViewer} from './quanta-official-viewer.mjs';
 import {MOTORCYCLE_SOURCES} from './motorcycle-quick-cards.mjs';
 import {MAGAZINE_READING_SOURCES} from './magazine-reading-quick-cards.mjs';
