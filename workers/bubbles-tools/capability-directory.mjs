@@ -61,11 +61,49 @@ export function capabilityDirectory(env={}){
  });
 }
 
-export function capabilityDirectoryReply(env={}){
+/**
+ * Return the most useful existing adapters for a tool-finding question.
+ * Deterministic routing avoids paid model calls and never grants permission.
+ * Each suggested entry is the same source-grounded catalog record returned to
+ * the owner, not a made-up tool name or an execution claim.
+ */
+export function recommendCapabilities(question,env={}){
+ const q=String(question||'').toLowerCase().slice(0,600);
+ const ids=[];
+ const add=(...values)=>{for(const id of values)if(!ids.includes(id))ids.push(id);};
+ if(/\b(?:deploy|deployment|code changes?|modif(?:y|ication)|edit|write|repair|fix|build|commit|merge|push)\b/.test(q))
+  add('robot_brain.owner_work');
+ if(/\b(?:create|make|start)\b/.test(q)&&/\b(?:git(?:hub)?|repositor(?:y|ies)|repos?)\b/.test(q))
+  add('github.create_repository');
+ if(/\b(?:git(?:hub)?|repositor(?:y|ies)|repos?)\b/.test(q)&&/\b(?:read|view|inspect|open|source|file|browse|search|access|find)\b/.test(q))
+  add('github.read_repository','github.read_file');
+ if(/\b(?:images?|photos?|pictures?|screenshots?|vision|visual|ocr)\b/.test(q))
+  add('bubbles.image_read');
+ if(/\b(?:voice|speech|audio|microphone|transcrib|dictat|recording)\w*\b/.test(q))
+  add('bubbles.transcribe');
+ if(/\b(?:web|online|internet|search|sources?|research|browse|browser)\b/.test(q))
+  add('web.search','web.read_page');
+ if(/\b(?:weather|forecast|temperature|rain)\b/.test(q))add('weather.current');
+ if(/\b(?:news|headlines?)\b/.test(q))add('news.headlines');
+ if(/\b(?:quick cards?|cards?|carousel|media player)\b/.test(q))add('quick_card.open');
+ if(/\b(?:memory|memories|context|remember|recall)\b/.test(q))
+  add('bubbles.memory.owner');
+ if(/\b(?:resonance|calculator|frequency|inductance)\b/.test(q))
+  add('resonance.calculate');
+ if(/\b(?:social|public x|twitter|tweets?)\b/.test(q))
+  add('public_x.read');
+ if(!ids.length)add('oracle.chat','web.search','github.read_repository');
+ const lookup=new Map(capabilityDirectory(env).map(item=>[item.id,item]));
+ return ids.slice(0,6).map(id=>lookup.get(id)).filter(Boolean);
+}
+
+export function capabilityDirectoryReply(env={},question=''){
+ const matched=recommendCapabilities(question,env);
  const items=capabilityDirectory(env);
  const publicItems=items.filter(x=>x.scope==='public-read').map(x=>x.id);
  const ownerItems=items.filter(x=>x.scope==='owner-only').map(x=>x.id);
- return 'Bubbles can locate these registered read tools: '+publicItems.join(', ')+
+ return 'Suggested existing tools for this request: '+matched.map(x=>x.id+' ('+x.scope+')').join(', ')+'. '+
+  'Bubbles can locate these registered read tools: '+publicItems.join(', ')+
   '. Ordinary chat uses oracle.chat; Quick Cards operate through their existing page/Android interface. '+
   'Separate, signed owner adapters: '+ownerItems.join(', ')+
   '. Owner sign-in and per-action authorization are required for GitHub writes or Robot Brain work. '+
