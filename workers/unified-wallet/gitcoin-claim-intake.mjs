@@ -20,6 +20,7 @@ function validate(input){
    !hash64(input.contentSha256)||!languages.has(input.language)||!intents.has(input.intent))
   fail('gitcoin_source_line_invalid');
  return {
+  version:1,source:'brain_verified_github_commit_v1',
   sourceReceiptId:input.sourceReceiptId,userId:input.userId,
   repo:input.repo,commitSha:input.commitSha,filePath:input.filePath,
   lineNumber:input.lineNumber,contentSha256:input.contentSha256,
