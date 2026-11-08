@@ -811,12 +811,14 @@ export class BrainClock extends DurableObject{
   }
   // Only the outer /work/github/read ingress may call this internal route.
   // It has already validated the live owner session and origin. No lease,
-  // editor credential, model prompt or action beyond read_repository/read_file.
+  // editor credential, model prompt or action beyond approved GitHub reads.
   if(new URL(request.url).pathname==='/github/read'){
    let body;
    try{body=await request.json()}catch{return Response.json({ok:false,error:'invalid_json'},{status:400});}
-   if(!body||!['read_repository','read_file'].includes(body.action)||
-      Object.keys(body).some(k=>!['action','repository','path'].includes(k)))
+   if(!body||!['read_repository','read_file','read_branch_status'].includes(body.action)||
+      Object.keys(body).some(k=>!['action','repository','path','branch'].includes(k))||
+      (body.action==='read_branch_status'&&(typeof body.branch!=='string'||Object.hasOwn(body,'path')))||
+      (body.action!=='read_branch_status'&&Object.hasOwn(body,'branch')))
     return Response.json({ok:false,error:'unsupported_read_only_action'},{status:400});
    try{
     const repository=validateRepository(body.repository);
@@ -825,6 +827,8 @@ export class BrainClock extends DurableObject{
      const result=await githubOperation(runtime,{action:'read_repository',repository,includeRoot:true});
      return Response.json(result);
     }
+    if(body.action==='read_branch_status')
+     return Response.json(await githubOperation(runtime,{action:'read_branch_status',repository,branch:body.branch}));
     const head=await githubOperation(runtime,{action:'read_repository',repository});
     if(!/^([a-f0-9]{40})$/.test(head.headSha||''))throw Error('github_head_sha_invalid');
     const data=await githubOperation(runtime,{action:'read_file',repository,path:body.path,ref:head.headSha});
@@ -1508,8 +1512,10 @@ export default{
     const raw=await request.text();if(raw.length>1200)return output(request,{ok:false,error:'request_too_large'},413);
     const body=JSON.parse(raw||'{}');
     if(!body||typeof body!=='object'||Array.isArray(body)||
-       !['read_repository','read_file'].includes(body.action)||
-       Object.keys(body).some(key=>!['action','repository','path'].includes(key)))
+       !['read_repository','read_file','read_branch_status'].includes(body.action)||
+       Object.keys(body).some(key=>!['action','repository','path','branch'].includes(key))||
+       (body.action==='read_branch_status'&&(typeof body.branch!=='string'||Object.hasOwn(body,'path')))||
+       (body.action!=='read_branch_status'&&Object.hasOwn(body,'branch')))
      return output(request,{ok:false,error:'unsupported_read_only_action'},400);
     const result=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/github/read',{
      method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
