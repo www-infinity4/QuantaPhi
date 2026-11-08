@@ -3,34 +3,37 @@ issue: 1321
 project: "Continuity Builder executable bounded action packets"
 source_requests:
   - https://github.com/www-infinity4/QuantaPhi/issues/1321
-state: blocked
-dot: "🔵"
-progress_percent: 25
-progress_basis: "2 of 8 implementation milestones: pure selector and claim-fenced D1 adapter seam with two-run regression coverage; production caller and real authenticated build/merge remain absent"
-sessions_spent: 8
-sessions_remaining_estimate: "2-4, dependent on signed bridge access"
-agent: "Copilot source-only; no issued coordinator lease"
+state: review_pending
+dot: "🟡"
+progress_percent: 38
+progress_basis: "3 of 8 milestones source-verified: bounded selector, durable D1 packet adapter, and post-review race/dedupe regressions. Authenticated production caller, live actions, independent acceptance and delivery remain open."
+sessions_spent: 9
+sessions_remaining_estimate: "unknown; requires signed Brain-to-coordinator integration"
+agent: "GPT continuation on existing #1321; no issued coordinator lease"
 lease_id: null
 lease_expires_at: null
 task_session_id: null
 fence: null
-last_observed_at_utc: "2026-11-08T11:06:23Z"
+last_observed_at_utc: "2026-11-08T22:09:06.002Z"
 repo: www-infinity4/QuantaPhi
-branch: copilot/continuity-builder-action-packets
-head_sha: d3f353deae9e40260c4633af611b07139386742a
-pr: https://github.com/www-infinity4/QuantaPhi/pull/1858
+branch: fix/continuity-1321-checkpoint-durability
+head_sha: c267eb837297547306720c299d61185aa72db623
+pr: https://github.com/www-infinity4/QuantaPhi/pull/1865
 tests:
+  - "PR #1865 exact code head c267eb837297547306720c299d61185aa72db623: 8/8 GitHub checks passed including Continuity contracts; four new regression tests on snapshot CAS, legacy running replay, terminal-history eviction, and successful legacy receipts."
   - "node --check continuity/packet-runner-adapter.mjs"
   - "node --test test/continuity*.test.mjs — 56 passed"
   - "node --test test/continuity-packet-runner-adapter.test.mjs — 3 passed (documentation sessions)"
 ci:
+  - "Review fixes on PR #1865 exact code head c267eb837297547306720c299d61185aa72db623: 8 successful checks, 0 failures."
+  - "Merged source baseline PR #1858: dca7f3e22994a297a0117192dbc0b2befc8b5bbd; merged Brain paging PR #1807: 7bf9d2a60fd07a2e2276e40690738f99affab560."
   - "PR #1858 exact head d3f353deae9e40260c4633af611b07139386742a: Continuity actionable packet contracts run 42474261115 is action_required with zero jobs; no failed-job logs"
-independent_review: pending
+independent_review: "Copilot review comments addressed; independent live acceptance pending"
 merged: false
 deployed: false
 live_verified: false
-blocker: "Observation-only coordinator has a D1 binding but no authenticated Brain CLOCK/owner-scoped candidate adapter; the Brain writer route is separate and no signed bridge has been verified"
-next_action: "Obtain/verify the existing authorized Brain-to-coordinator adapter contract, then connect this seam without expanding credentials or changing owner grants"
+blocker: "Source adapter corrected after Copilot review; actual authenticated Brain-to-coordinator writer/owner-scoped candidate adapter and production two-run readback remain unverified."
+next_action: "Verify/merge PR #1865 with all exact-head checks; then reuse #1321 for authorized Brain-to-coordinator signed adapter and live two-run readback."
 ---
 
 # Owner purpose
@@ -52,3 +55,9 @@ Pure packet selection rejects unchanged blocked same-head retries and foreign le
 - Production streaming acceptance still needs an authenticated candidate/import adapter and bounded concurrency/budget enforcement; this PR's synthetic adapter is not that runner.
 - Current exact-head CI run 42474261115 is `action_required` with zero jobs; local adapter tests do not substitute for CI.
 - Do not bypass wallet, finance, identity, OAuth, APK security or branch protection.
+
+## Follow-up repair of post-merge Copilot review — November 8, 2026
+
+The source-only adapter from merged #1858 was reviewed after its merge. The seven initial defects were addressed under existing issue #1321 in PR #1865, and its four follow-on findings have now been fixed in branch code at `c267eb837297547306720c299d61185aa72db623`. These guard against a concurrent checkpoint update overwriting provider receipts, replay of legacy running checkpoints with unknown operations, evicted done/blocked history making cached candidates eligible again, and legacy blocked/observed receipts incorrectly marking an action complete. Regressions were added before the fixes, and **8 of 8 exact-code-head checks passed**.
+
+This source implementation is **not** a deployed authenticated Continuity Builder or a live two-run acceptance receipt. Never report a fake Green dot, real Blue write, production merge or wallet payout from the synthetic adapter tests. A reviewed Brain-to-coordinator signed integration and provider-backed readback remain the next work under this same issue.
