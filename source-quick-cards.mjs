@@ -87,7 +87,7 @@ function mountGeminiTools(root){
  }
  async function loadGoogleAccounts(){
   try{
-   module=await import('/bubbles-connections.mjs?v=20261106-google-multi-cloudflare-full8');
+   module=await import('/bubbles-connections.mjs?v=20261108-cf-memberships1');
    client=new module.AccountConnections({token:()=>module.resolveConnectorWalletToken(window)});
    const result=await client.call('/accounts');
    const connected=(result.accounts||[]).filter(a=>a.provider==='google'&&a.status==='connected'&&

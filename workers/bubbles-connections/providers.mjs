@@ -316,23 +316,30 @@ export function cloudflareAdapter(config,request=(...args)=>globalThis.fetch(...
       }
     },
     async accounts({accessToken}){
-      // This endpoint uses only the connected user's encrypted token. No platform
-      // account token, user-supplied URL or arbitrary account identifier is used.
+      // account.read consents to user-details.read + memberships.read, NOT
+      // account-settings.read. /accounts can deny this token even while the
+      // user is successfully signed in. Resolve only accepted memberships.
       const accounts=[],seen=new Set();
+      let truncated=false;
       for(let page=1;page<=5;page++){
-        const url='https://api.cloudflare.com/client/v4/accounts?page='+page+'&per_page=50';
+        const url='https://api.cloudflare.com/client/v4/memberships?page='+page+'&per_page=50';
         const response=await request(url,{redirect:'manual',signal:AbortSignal.timeout(15000),
           headers:{Authorization:'Bearer '+accessToken,Accept:'application/json'}});
-        const data=await jsonResponse(response,'cloudflare_accounts');
+        const data=await jsonResponse(response,'cloudflare_memberships');
         if(data.success!==true||!Array.isArray(data.result))throw Error('provider_response_invalid');
-        for(const a of data.result){
-          if(!/^[a-f0-9]{32}$/.test(a?.id||'')||seen.has(a.id))continue;
-          seen.add(a.id);
-          accounts.push({id:a.id,name:typeof a.name==='string'?a.name.slice(0,160):'Cloudflare account'});
+        for(const membership of data.result){
+          if(membership?.status!=='accepted')continue;
+          const account=membership.account;
+          if(!/^[a-f0-9]{32}$/i.test(account?.id||'')||seen.has(account.id))continue;
+          seen.add(account.id);
+          accounts.push({id:account.id,name:typeof account.name==='string'
+            ?account.name.slice(0,160):'Cloudflare account'});
         }
-        if(!data.result_info||page>=data.result_info.total_pages)break;
+        const totalPages=Number(data.result_info?.total_pages)||page;
+        if(page===5&&totalPages>5)truncated=true;
+        if(page>=totalPages)break;
       }
-      return {accounts,truncated:accounts.length>=250};
+      return {accounts,truncated};
     },
     authorization({state,challenge,actions}){
       if(!actions.length)throw Error('unsupported_action');

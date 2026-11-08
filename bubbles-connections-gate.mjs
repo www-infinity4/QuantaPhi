@@ -1,2 +1,2 @@
 // Compatibility entry point: both account surfaces use one bounded transport.
-export {AccountConnections,resolveConnectorWalletToken,providerAuthorizationActions} from './bubbles-connections.mjs?v=20261106-google-multi-cloudflare-full8';
+export {AccountConnections,resolveConnectorWalletToken,providerAuthorizationActions} from './bubbles-connections.mjs?v=20261108-cf-memberships1';

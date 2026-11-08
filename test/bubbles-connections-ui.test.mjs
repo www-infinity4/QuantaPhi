@@ -514,19 +514,48 @@ test('Cloudflare Bubbles client restricts requests to scopes registered on its o
  assert.equal(url.searchParams.get('scope'),'user-details.read memberships.read d1.read');
  assert.ok(!url.href.includes('server-only'));
 });
-test('Cloudflare account discovery is verified with the users token and strips private API fields',async()=>{
- const {cloudflareAdapter}=await import('../workers/bubbles-connections/providers.mjs');
- const id='a'.repeat(32),calls=[];
- const adapter=cloudflareAdapter({clientId:'app',clientSecret:'secret',allowedScopes:'user-details.read memberships.read',
-   redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},async(url,options)=>{
-     calls.push({url,authorization:options.headers.Authorization});
-     return Response.json({success:true,result:[{id,name:'Personal account',api_key:'SHOULD_NOT_LEAK'}],result_info:{total_pages:1}});
-   });
- const result=await adapter.accounts({accessToken:'user-specific-token'});
- assert.deepEqual(result,{accounts:[{id,name:'Personal account'}],truncated:false});
- assert.equal(calls[0].authorization,'Bearer user-specific-token');
- assert.equal(calls[0].url,'https://api.cloudflare.com/client/v4/accounts?page=1&per_page=50');
- assert.ok(!JSON.stringify(result).includes('SHOULD_NOT_LEAK'));
+test('Cloudflare account discovery uses the consented membership scope and strips private fields',async()=>{
+  const {cloudflareAdapter}=await import('../workers/bubbles-connections/providers.mjs');
+  const id='a'.repeat(32),calls=[];
+  const adapter=cloudflareAdapter({clientId:'app',clientSecret:'secret',allowedScopes:'user-details.read memberships.read',
+    redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},async(url,options)=>{
+      calls.push({url,authorization:options.headers.Authorization});
+      return Response.json({success:true,result:[
+        {id:'membership-private',status:'accepted',account:{id,name:'Personal account'},api_key:'SHOULD_NOT_LEAK'},
+        {id:'other',status:'pending',account:{id:'b'.repeat(32),name:'Not yet accepted'}}
+      ],result_info:{total_pages:1}});
+    });
+  const result=await adapter.accounts({accessToken:'user-specific-token'});
+  assert.deepEqual(result,{accounts:[{id,name:'Personal account'}],truncated:false});
+  assert.equal(calls[0].authorization,'Bearer user-specific-token');
+  assert.equal(calls[0].url,'https://api.cloudflare.com/client/v4/memberships?page=1&per_page=50');
+  assert.ok(!JSON.stringify(result).includes('SHOULD_NOT_LEAK'));
+  assert.ok(!JSON.stringify(result).includes('Not yet accepted'));
+});
+test('Cloudflare memberships de-duplicate accepted accounts across bounded pages',async()=>{
+  const {cloudflareAdapter}=await import('../workers/bubbles-connections/providers.mjs');
+  const id='c'.repeat(32),other='d'.repeat(32),urls=[];
+  const adapter=cloudflareAdapter({clientId:'app',clientSecret:'secret',allowedScopes:'user-details.read memberships.read',
+    redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},async(url)=>{
+      urls.push(url);
+      const page=Number(new URL(url).searchParams.get('page'));
+      const result=page===1?[
+        {status:'accepted',account:{id,name:'First'}},
+        {status:'rejected',account:{id:'e'.repeat(32),name:'Rejected'}},
+      ]:[
+        {status:'accepted',account:{id,name:'Duplicate'}},
+        {status:'accepted',account:{id:other,name:'Second'}},
+        {status:'accepted',account:{id:'unsafe-id',name:'Invalid'}}
+      ];
+      return Response.json({success:true,result,result_info:{total_pages:2}});
+    });
+  assert.deepEqual(await adapter.accounts({accessToken:'scoped-token'}),{
+    accounts:[{id,name:'First'},{id:other,name:'Second'}],truncated:false
+  });
+  assert.deepEqual(urls,[
+    'https://api.cloudflare.com/client/v4/memberships?page=1&per_page=50',
+    'https://api.cloudflare.com/client/v4/memberships?page=2&per_page=50'
+  ]);
 });
 
 test('separate Chrome context needs no BroadcastChannel or window.opener',async()=>{
@@ -662,4 +691,49 @@ test('Google OAuth redirect status stays sanitized across Worker completion boun
  assert.equal(safeConnectionFailure(code),true);
  assert.match(providerSignInErrorMessage(code,'google'),/unexpected redirect/);
  assert.ok(!providerSignInErrorMessage(code,'google').includes('private-code'));
+});
+
+
+test('Cloudflare membership denial shows a reason without an empty actionable selector',async t=>{
+  class Element {
+    constructor(tag){this.tag=tag;this.childNodes=[];this.dataset={};this.listeners={};this.textContent='';this.style={};this.classList={add(){}};}
+    append(...nodes){this.childNodes.push(...nodes);}
+    prepend(...nodes){this.childNodes.unshift(...nodes);}
+    replaceChildren(...nodes){this.childNodes=nodes;}
+    setAttribute(k,v){this[k]=v;}
+    removeAttribute(k){delete this[k];}
+    addEventListener(k,fn){this.listeners[k]=fn;}
+  }
+  const originals={document:globalThis.document,window:globalThis.window,
+    sessionStorage:globalThis.sessionStorage,fetch:globalThis.fetch};
+  t.after(()=>Object.assign(globalThis,originals));
+  const document={createElement:tag=>new Element(tag),createTextNode:txt=>({textContent:txt}),addEventListener(){}};
+  const saved=new Map();
+  const sessionStorage={getItem:k=>saved.get(k)||null,setItem:(k,v)=>saved.set(k,v),removeItem:k=>saved.delete(k)};
+  const window={document,sessionStorage,location:{pathname:'/bubbles-accounts.html',search:''},
+    addEventListener(){},removeEventListener(){},setTimeout:()=>1,clearTimeout(){}};
+  Object.assign(globalThis,{document,window,sessionStorage,fetch:async(url)=>{
+    const path=String(url).replace('/api/bubbles/connections','');
+    if(path==='/catalog')return Response.json({ok:true,providers:[{id:'cloudflare',
+      configured:true,actions:['account.read']}]});
+    if(path==='/accounts')return Response.json({ok:true,accounts:[{id:'cf-1',
+      provider:'cloudflare',label:'connected@example.test',status:'connected',
+      expiresAt:Date.now()+600000,grantedActions:['account.read']}]});
+    if(path==='/wallet-email/preferences')return Response.json({ok:true,enabled:false});
+    if(path==='/cloudflare/accounts')return Response.json({ok:false,
+      error:'cloudflare_memberships_403'},{status:403});
+    assert.fail('Unexpected endpoint '+path);
+  }});
+  const host=new Element('main'),ui=mountConnections(host,{token:async()=>'sq_'+'a'.repeat(40)});
+  await ui.refresh();
+  const all=node=>[node,...(node.childNodes||[]).flatMap(all)];
+  for(let i=0;i<12&&!all(host).some(n=>String(n.textContent).includes('Reconnect with Memberships Read'));i++)
+    await new Promise(setImmediate);
+  const nodes=all(host);
+  assert.ok(nodes.some(n=>String(n.textContent).includes('Cloudflare signed in ✓')),
+    'The account stays connected when an optional lookup fails');
+  assert.ok(nodes.some(n=>String(n.textContent).includes('Reconnect with Memberships Read')));
+  assert.equal(nodes.find(n=>n['aria-label']==='Select my Cloudflare account').hidden,true);
+  assert.equal(nodes.find(n=>n.textContent==='Use this Cloudflare account').hidden,true);
+  assert.equal(nodes.find(n=>n.textContent==='Use this Cloudflare account').disabled,true);
 });

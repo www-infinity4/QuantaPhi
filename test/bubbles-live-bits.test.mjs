@@ -57,7 +57,7 @@ test('the same live status line loads on every Bubbles website entrypoint withou
   const html=fs(page);
   assert.match(html,/bubbles-live-iteration-feed\.mjs\?v=20261107-runner-steps2/);
   assert.match(html,/bubbles-live-iteration-feed\.css\?v=20261106-inthread-iterations2/);
-  assert.match(html,/bubbles-ai\.js\?v=20261107-agent-runner2/);
+  assert.match(html,/bubbles-ai\.js\?v=20261108-cf-memberships1/);
  }
  const module=fs('bubbles-live-iteration-feed.mjs');
  assert.match(module,/\.ba-panel \.ba-status|querySelector\('\.ba-panel'\)/,
