@@ -20,9 +20,11 @@ test('GIT balance reads only actual awards and separates pending claims per wall
  const env=ledger();
  env.GIT_DB=env.DB;
  assert.equal((await readGitAsset(env,'owner')).status,'ledger_unavailable');
- env.sql.exec(`CREATE TABLE gitcoin_awards(wallet_id TEXT,amount INTEGER);
+ env.sql.exec(`CREATE TABLE gitcoin_awards(receipt_id TEXT PRIMARY KEY,wallet_id TEXT,amount INTEGER);
+  CREATE TABLE gitcoin_serials(serial_no INTEGER PRIMARY KEY,receipt_id TEXT UNIQUE,wallet_id TEXT);
   CREATE TABLE gitcoin_line_claims(recipient_wallet_id TEXT,status TEXT);
-  INSERT INTO gitcoin_awards VALUES ('owner',1),('owner',1),('another',1);
+  INSERT INTO gitcoin_awards VALUES ('r1','owner',1),('r2','owner',1),('r3','another',1);
+  INSERT INTO gitcoin_serials VALUES (1,'r1','owner'),(2,'r2','owner'),(3,'r3','another');
   INSERT INTO gitcoin_line_claims VALUES ('owner','pending'),('owner','verified'),('another','rejected');`);
  assert.deepEqual(await readGitAsset(env,'owner'),{available:true,status:'ledger_verified',credited:2,pending:1,spendAvailable:false});
  assert.deepEqual(await readGitAsset(env,'another'),{available:true,status:'ledger_verified',credited:1,pending:0,spendAvailable:false});
@@ -64,4 +66,27 @@ test('the authenticated wallet imports only an issuer-signed receipt for the cur
  assert.throws(()=>env.sql.exec('DELETE FROM gpt_coin_imports'),/immutable_gpt_coin_receipt/);
  delete env.GPT_COIN_ISSUER_PUBLIC_KEY;
  assert.equal((await readGptCoinAsset(env,'account-a')).credited,4,'old signed imports remain readable while imports are paused');
+});
+
+test('an awarded GIT without its global serial must remain pending issuance, not appear credited',async()=>{
+ const env=ledger();env.GIT_DB=env.DB;
+ env.sql.exec(`CREATE TABLE gitcoin_awards(receipt_id TEXT PRIMARY KEY,wallet_id TEXT,amount INTEGER);
+  CREATE TABLE gitcoin_serials(serial_no INTEGER PRIMARY KEY,receipt_id TEXT UNIQUE,wallet_id TEXT);
+  CREATE TABLE gitcoin_line_claims(recipient_wallet_id TEXT,status TEXT);
+  INSERT INTO gitcoin_awards VALUES ('r1','owner',1),('r2','owner',1),('r3','another',1);
+  INSERT INTO gitcoin_serials VALUES (1,'r1','owner'),(2,'r3','another');
+  INSERT INTO gitcoin_line_claims VALUES ('owner','pending');`);
+ const owner=await readGitAsset(env,'owner');
+ assert.equal(owner.available,true);
+ assert.equal(owner.credited,1,'one award has a matching immutable serial, one does not');
+ assert.equal(owner.awaitingSerial,1,'server can reconcile the missing serial without fabricating another coin');
+ assert.equal(owner.pending,1);
+ const other=await readGitAsset(env,'another');
+ assert.equal(other.credited,1);
+ assert.equal(other.awaitingSerial,0);
+ // A serial linked to a different wallet may not silently credit the owner.
+ env.sql.exec("UPDATE gitcoin_serials SET wallet_id='another' WHERE receipt_id='r1'");
+ assert.equal((await readGitAsset(env,'owner')).credited,0);
+ env.sql.exec('DROP TABLE gitcoin_serials');
+ assert.equal((await readGitAsset(env,'owner')).status,'ledger_unavailable','missing authoritative serial ledger never means zero verified issuance');
 });
