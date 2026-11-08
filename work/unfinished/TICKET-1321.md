@@ -16,11 +16,14 @@ task_session_id: null
 fence: null
 repo: www-infinity4/QuantaPhi
 branch: copilot/continuity-builder-action-packets
-head_sha: pending
+head_sha: 1e6c2e23f86bee798d352f092c794028f6f953e2
 pr: https://github.com/www-infinity4/QuantaPhi/pull/1858
 tests:
-  - "node --test test/continuity-work-packets.test.mjs"
-  - "node --test test/continuity-packet-runner-adapter.test.mjs"
+  - "node --check continuity/packet-runner-adapter.mjs"
+  - "node --test test/continuity*.test.mjs — 56 passed"
+ci:
+  - "PR #1858 exact head: no check runs returned; related workflow runs currently report action_required"
+independent_review: pending
 merged: false
 deployed: false
 live_verified: false
