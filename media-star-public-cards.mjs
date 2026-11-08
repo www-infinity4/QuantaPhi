@@ -112,9 +112,29 @@ function buildCard(card,slug){
    btn.type='button';btn.addEventListener('click',()=>playFree(node,card,episode));
    item.append(btn);
   }else if(episode.requiresUnlock){
-   const locked=element('button','ms-public-locked','1 StarCoin · Creator checkout unavailable');
-   locked.type='button';locked.disabled=true;
-   item.append(locked);
+   const locked=element('button','ms-public-locked','Check my episode access');
+   locked.type='button';
+   const accessMessage=element('p','ms-public-access-note','1 StarCoin curated episode · checkout pending verification.');
+   locked.addEventListener('click',async()=>{
+    const checker=window.StarQuestCloudLedger?.mediaStarEpisodeAccess;
+    if(typeof checker!=='function'){
+     accessMessage.textContent='Signed episode access is not deployed. No StarCoin charged.';return
+    }
+    locked.disabled=true;
+    accessMessage.textContent='Checking your existing wallet entitlement…';
+    try{
+     const result=await checker(episode.episodeId);
+     if(result?.ok&&(result.access==='previously_purchased'||result.access==='free')&&
+        result.alreadyUnlocked===true&&result.sourceUrl){
+      accessMessage.textContent='Previously unlocked media available. No new charge.';
+      playFree(node,card,{...episode,sourceUrl:result.sourceUrl});
+     }else if(result?.ok&&result.purchaseEnabled===false){
+      accessMessage.textContent='1 StarCoin curator fee. Creator checkout unavailable until verified wallet and rights review. No charge made.';
+     }else accessMessage.textContent='Access has not been verified. No payment made.';
+    }catch{accessMessage.textContent='Cannot verify entitlement for this signed-in wallet. No payment made.'}
+    finally{locked.disabled=false}
+   });
+   item.append(locked,accessMessage);
   }else item.append(element('small','','Original media currently unavailable'));
   list.append(item);
  }
