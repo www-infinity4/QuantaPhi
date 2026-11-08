@@ -17,12 +17,21 @@ on:
       - 'test/bubbles-iteration-credit.test.mjs'
       - 'test/brain-iteration-credit.test.mjs'
       - 'test/work-wallet-assets.test.mjs'
+      - 'test/gitcoin-wallet-serials.test.mjs'
+      - 'test/bubbles-wallet-git-serial-ui.test.mjs'
+      - 'test/unified-wallet-account-isolation.test.cjs'
       - '.github/workflows/bubbles-bits.yml'
   push:
-    branches: [main]
+    branches: [main, fix/bubbles-verified-wallet-assets-1296]
     paths:
       - 'workers/infinity-brain-clock/bubbles-bits.mjs'
       - 'test/bubbles-bits.test.mjs'
+      - 'workers/unified-wallet/**'
+      - 'bubbles-cloud-wallet.js'
+      - 'test/gitcoin-wallet-serials.test.mjs'
+      - 'test/bubbles-wallet-git-serial-ui.test.mjs'
+      - 'test/unified-wallet-account-isolation.test.cjs'
+      - '.github/workflows/bubbles-bits.yml'
 jobs:
   receipt-tests:
     runs-on: ubuntu-latest
@@ -31,4 +40,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - run: node --test test/bubbles-bits.test.mjs test/bubbles-bit-session.test.mjs test/bubbles-iteration-credit.test.mjs test/brain-iteration-credit.test.mjs test/bubbles-live-bits.test.mjs test/bot-work-credit.test.mjs test/unified-wallet-account-isolation.test.cjs test/work-wallet-assets.test.mjs
+      - run: node --test test/bubbles-bits.test.mjs test/bubbles-bit-session.test.mjs test/bubbles-iteration-credit.test.mjs test/brain-iteration-credit.test.mjs test/bubbles-live-bits.test.mjs test/bot-work-credit.test.mjs test/unified-wallet-account-isolation.test.cjs test/work-wallet-assets.test.mjs test/gitcoin-wallet-serials.test.mjs test/bubbles-wallet-git-serial-ui.test.mjs
+      - run: node --check bubbles-cloud-wallet.js && node --check workers/unified-wallet/worker.js && node --check workers/unified-wallet/engineering-assets.mjs
