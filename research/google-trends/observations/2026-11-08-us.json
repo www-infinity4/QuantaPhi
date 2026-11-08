@@ -3,356 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-08T02:30:57.594870Z",
+  "checked_at": "2026-11-08T03:01:44.885649Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "earthquake",
+      "query": "texas state vs oregon state",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-08T02:40:00Z",
+      "related_news_urls": [
+        "https://www.oregonlive.com/beavers/2026/11/oregon-state-beavers-vs-texas-state-bobcats-live-updates-today.html",
+        "https://sports.yahoo.com/articles/oregon-state-football-vs-texas-013022057.html",
+        "https://www.statesmanjournal.com/story/sports/college/oregon-state/2026/11/06/oregon-state-beavers-football-jamarcus-shephard-fresno-state-texas-state/92624658007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRnO0VlPZwGg8b5cFdv4Ggr2i8-ulMMra38sr_eNPWz9kNeG7yRZ09X553TOw",
+      "image_credit": "OregonLive.com",
+      "news": [
+        {
+          "url": "https://www.oregonlive.com/beavers/2026/11/oregon-state-beavers-vs-texas-state-bobcats-live-updates-today.html",
+          "title": "Oregon State Beavers vs. Texas State Bobcats: Live updates today",
+          "publisher": "OregonLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRnO0VlPZwGg8b5cFdv4Ggr2i8-ulMMra38sr_eNPWz9kNeG7yRZ09X553TOw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/oregon-state-football-vs-texas-013022057.html",
+          "title": "Oregon State football vs. Texas State updates, score, channel, stream",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcMvvzzXEulNcW2UXA_uW0DNMaB-DrT4a2A7MrKhwvE-4Oonse6TSOahWgxC4"
+        },
+        {
+          "url": "https://www.statesmanjournal.com/story/sports/college/oregon-state/2026/11/06/oregon-state-beavers-football-jamarcus-shephard-fresno-state-texas-state/92624658007/",
+          "title": "Oregon State football 'resetting' after Fresno State loss",
+          "publisher": "Statesman Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKTtbFMX2pCUQWTOeC7oXyExl7gGVKwHAh_mIWebu5d8rWmUtn8s-YH9VdapI"
+        }
+      ]
+    },
+    {
+      "query": "hawks",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-08T02:40:00Z",
+      "related_news_urls": [
+        "https://www.peachtreehoops.com/atlanta-hawks-game-threads/73523/brooklyn-nets-atlanta-hawks-start-time-tv-streaming-radio-game-thread",
+        "https://sports.yahoo.com/articles/live-discussion-brooklyn-nets-atlanta-000000628.html",
+        "https://www.si.com/nba/hawks/onsi/three-bold-predictions-for-tonight-s-hawks-nets-matchup-01m6vm4pqs3h"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkb2h-FL7CUe5s28jkOMkfWNTWgDz9OBdmw754XKMF_yiAoDeykWmN4YS0qWo",
+      "image_credit": "Peachtree Hoops",
+      "news": [
+        {
+          "url": "https://www.peachtreehoops.com/atlanta-hawks-game-threads/73523/brooklyn-nets-atlanta-hawks-start-time-tv-streaming-radio-game-thread",
+          "title": "Nets at Hawks: start time, TV, streaming, radio, game thread",
+          "publisher": "Peachtree Hoops",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkb2h-FL7CUe5s28jkOMkfWNTWgDz9OBdmw754XKMF_yiAoDeykWmN4YS0qWo"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/live-discussion-brooklyn-nets-atlanta-000000628.html",
+          "title": "LIVE DISCUSSION: Brooklyn Nets at Atlanta Hawks, 7:30 PM ET",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeZRwOTYJZkkKUrvyaV2vGdzYhE6Xa59D3HldS9SFEI2H5rzQnoDNnGcAtkmc"
+        },
+        {
+          "url": "https://www.si.com/nba/hawks/onsi/three-bold-predictions-for-tonight-s-hawks-nets-matchup-01m6vm4pqs3h",
+          "title": "Three Bold Predictions For Tonight's Hawks-Nets Matchup",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPts-oN2PFOwzeIHgxsu4rdxMy5epqCN5kPD4PsLfV5h3E0MaOzoyMILmW25Y"
+        }
+      ]
+    },
+    {
+      "query": "karl-anthony towns",
       "approx_searches": "500+",
-      "published_at": "2026-11-08T02:10:00Z",
+      "published_at": "2026-11-08T02:40:00Z",
       "related_news_urls": [
-        "https://apnews.com/article/earthquake-japan-170119b720b08d9f40028e5bc40feb17",
-        "https://www3.nhk.or.jp/nhkworld/news/20261108de72261/",
-        "https://www.japantimes.co.jp/news/2026/11/06/japan/tokyo-shallow-quake/"
+        "https://www.espn.com/video/clip/_/id/50415138/karl-anthony-towns-throws-emphatic-one-handed-baseline-jam",
+        "https://sports.yahoo.com/articles/kat-proving-knicks-best-player-235051467.html",
+        "https://www.nba.com/watch/video/karl-anthony-towns-rocks-the-rim-4"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4UqZR20L9P3MuxaV_wdhvJ32JkxtODOCjWQ0Y-gfeka_8doxjpV-BXKd8kPs",
-      "image_credit": "AP News",
-      "news": [
-        {
-          "url": "https://apnews.com/article/earthquake-japan-170119b720b08d9f40028e5bc40feb17",
-          "title": "A strong earthquake with a preliminary magnitude of 5.7 strikes Japan, meteorological agency says",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4UqZR20L9P3MuxaV_wdhvJ32JkxtODOCjWQ0Y-gfeka_8doxjpV-BXKd8kPs"
-        },
-        {
-          "url": "https://www3.nhk.or.jp/nhkworld/news/20261108de72261/",
-          "title": "Magnitude 5.7 earthquake strikes central Japan | NHK WORLD-JAPAN News",
-          "publisher": "NHKニュース",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmLv8kbZ--UxNRgi_1vnMXYHI6C-lttrk9lkGJwEFZXpb_D2I7XfFH4O7zNEc"
-        },
-        {
-          "url": "https://www.japantimes.co.jp/news/2026/11/06/japan/tokyo-shallow-quake/",
-          "title": "Magnitude 6.1 quake hits off Tokyo, but no tsunami alert issued",
-          "publisher": "The Japan Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREtLzNmGGk5qzgpj27aOOTXC8KVl7r5elUIwjgTnHHa9_Ot-E2ya1YGJdCXMc"
-        }
-      ]
-    },
-    {
-      "query": "ben stiller",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T02:10:00Z",
-      "related_news_urls": [
-        "https://collider.com/ben-stiller-tower-heist-streaming-prime-video-november-2026/",
-        "https://www.yahoo.com/entertainment/tv/articles/ella-stiller-reveals-her-career-201456999.html",
-        "https://www.imdb.com/news/ni66086862/?ref_=nwc_art_perm"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD8SnzopMl2_lcVqcf_KbeMoTbSSBMJboMCAxyOn3aPnevs6YoCngl0Xx6BKw",
-      "image_credit": "Collider",
-      "news": [
-        {
-          "url": "https://collider.com/ben-stiller-tower-heist-streaming-prime-video-november-2026/",
-          "title": "Ben Stiller's 104-Minute Crime Thriller Officially Steals a Top Spot on Prime Video",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD8SnzopMl2_lcVqcf_KbeMoTbSSBMJboMCAxyOn3aPnevs6YoCngl0Xx6BKw"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/ella-stiller-reveals-her-career-201456999.html",
-          "title": "Ella Stiller Reveals How Her Career in Cupertino Differs from Her Parents' Paths",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKnY9kOLLYISUvhE7CvWt4wGlJmicC4LwpEa-yyGNzBQq1V0-kztRxkkdnG9A"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66086862/?ref_=nwc_art_perm",
-          "title": "‘Cupertino’s Ella Stiller Breaks Down That Billionaire Love Connection",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrsVg6f1_5uhYrD_qASQKvPo6GnRCwYRicQcm0j_A_n0jbONI3CnfglsyZSdE"
-        }
-      ]
-    },
-    {
-      "query": "the rock",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T02:10:00Z",
-      "related_news_urls": [
-        "https://bleacherreport.com/articles/25529720-new-wwe-rumors-reveal-rocks-30th-anniversary-celebration-new-title-belt-plans-more",
-        "https://www.cagesideseats.com/rumor-round-up/485210/rumor-roundup-rock-30-year-anniversary-enzo-amore-crown-jewel-production-santa-iron-survivor",
-        "https://www.wwe.com/videos/the-rock-s-greatest-catchphrases-30-years-of-the-rock"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-yEeonq1x-eZpvySuz0xTzeU1Bonr1YoHU77yrTJOgSrLfIMu1fiLtoq4410",
-      "image_credit": "Bleacher Report",
-      "news": [
-        {
-          "url": "https://bleacherreport.com/articles/25529720-new-wwe-rumors-reveal-rocks-30th-anniversary-celebration-new-title-belt-plans-more",
-          "title": "New WWE Rumors Reveal The Rock's 30th Anniversary Celebration with New Title Belt Plans & More",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-yEeonq1x-eZpvySuz0xTzeU1Bonr1YoHU77yrTJOgSrLfIMu1fiLtoq4410"
-        },
-        {
-          "url": "https://www.cagesideseats.com/rumor-round-up/485210/rumor-roundup-rock-30-year-anniversary-enzo-amore-crown-jewel-production-santa-iron-survivor",
-          "title": "Rumor Roundup (Nov. 6, 2026): The Rock’s new championship, WWE Crown Jewel, Santahausen, more!",
-          "publisher": "Cageside Seats",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmH319fQmVAWK-oYpfQlyzFL-o91-VvjD9FwTsUOBAonlUV5HcZFvXLG0DfyE"
-        },
-        {
-          "url": "https://www.wwe.com/videos/the-rock-s-greatest-catchphrases-30-years-of-the-rock",
-          "title": "The Rock’s greatest catchphrases: 30 Years of The Rock",
-          "publisher": "WWE",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuuPsDzsscwR9vKLd1Fipj4RpOkuOllbVCxfdAz_iCUEB0r3S5f87c-5rz-Ew"
-        }
-      ]
-    },
-    {
-      "query": "spurs vs trail blazers",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-08T02:00:00Z",
-      "related_news_urls": [
-        "https://www.blazersedge.com/gameday-coverage/118060/portland-trail-blazers-san-antonio-spurs-time-tv-streaming-victor-wembanyama-injury-report",
-        "https://www.poundingtherock.com/spurs-game-previews/109612/game-preview-san-antonio-spurs-vs-portland-trail-blazers",
-        "https://sportsbook.fanduel.com/basketball/nba/san-antonio-spurs-@-portland-trail-blazers-36282779"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3_G9gJKVzrKKiLt8qRajWgyizT_dtRQoiqyvYR7cj3NFSnzAb6NQKL8Rt9Cs",
-      "image_credit": "Blazer's Edge",
-      "news": [
-        {
-          "url": "https://www.blazersedge.com/gameday-coverage/118060/portland-trail-blazers-san-antonio-spurs-time-tv-streaming-victor-wembanyama-injury-report",
-          "title": "Trail Blazers Take on Spurs in Early-Season Test",
-          "publisher": "Blazer's Edge",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3_G9gJKVzrKKiLt8qRajWgyizT_dtRQoiqyvYR7cj3NFSnzAb6NQKL8Rt9Cs"
-        },
-        {
-          "url": "https://www.poundingtherock.com/spurs-game-previews/109612/game-preview-san-antonio-spurs-vs-portland-trail-blazers",
-          "title": "Game Preview: San Antonio Spurs vs. Portland Trail Blazers",
-          "publisher": "Pounding The Rock",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKKQSOFtvjWCZdKKemQxccT8tst9nHrAYe3BfkxAd0w03Fb_mO_wRGjXlKZwg"
-        },
-        {
-          "url": "https://sportsbook.fanduel.com/basketball/nba/san-antonio-spurs-@-portland-trail-blazers-36282779",
-          "title": "San Antonio Spurs @ Portland Trail Blazers Odds",
-          "publisher": "FanDuel Sportsbook",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTRUYRRGGP7SUbYG64ILoVK09S1NVV1rXiGmbdUcUkLeJW7is7_f8sU9mZsss"
-        }
-      ]
-    },
-    {
-      "query": "tristan thompson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T02:00:00Z",
-      "related_news_urls": [
-        "https://cavs.com/news/features-tristan-thompson-261107",
-        "https://roundtable.io/sports/nba/cavaliers/community/the-2016-championship-theme-nights-are-a-great-touch",
-        "https://cavs.com/news/releases-10th-anniversary-celebration-261104"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjyM9s-JWHIy6vwSBCQbDDMMXocHbhLsG27ihqi07ZUsEviw7qqCk7rwcAnp0",
-      "image_credit": "NBA.com",
-      "news": [
-        {
-          "url": "https://cavs.com/news/features-tristan-thompson-261107",
-          "title": "Tristan Thompson Helped Make NBA History in 2016",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjyM9s-JWHIy6vwSBCQbDDMMXocHbhLsG27ihqi07ZUsEviw7qqCk7rwcAnp0"
-        },
-        {
-          "url": "https://roundtable.io/sports/nba/cavaliers/community/the-2016-championship-theme-nights-are-a-great-touch",
-          "title": "The 2016 championship theme nights are a great touch",
-          "publisher": "roundtable.io",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXQG_MmFZcA1jEaLJ0hK877RiyMbsfFRXawJXWkdXoBTtbiZ5FGjiFY8_wHqQ"
-        },
-        {
-          "url": "https://cavs.com/news/releases-10th-anniversary-celebration-261104",
-          "title": "Cleveland Cavaliers Continue Tribute to 2016 NBA Championship with 10th Anniversary Celebration Games championed by Cleveland-Cliffs",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTSeQSmjv0qGkZJE7vqxF0Wo0WWhFvJT1O9ELIY8AlcO9EEcyh5oL2TG9F48RQ"
-        }
-      ]
-    },
-    {
-      "query": "trae young",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T02:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50405029/wizards-trae-young-returns-atlanta-vs-hawks-says-experience-was-different",
-        "https://www.nba.com/watch/video/game-recap-hawks-139-wizards-132-nov-6",
-        "https://www.si.com/ncaaf/scoreboard/merrimack-vs-wake-forest-11-7-2026-636"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQS3Bdrnm1Gjacrkxl40vFxkHBC1Z_zrfZq_uCmNTR3drNN0DxhnhbJr0b0j8",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnPPaJpSQlCuUA8wFwcLMYWH8-pGEgAJdxuWPSXh0q8WmKN9CGKz8F0xAcUyw",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nba/story/_/id/50405029/wizards-trae-young-returns-atlanta-vs-hawks-says-experience-was-different",
-          "title": "Wiz's Trae Young calls Atlanta return a 'cool' experience despite loss",
+          "url": "https://www.espn.com/video/clip/_/id/50415138/karl-anthony-towns-throws-emphatic-one-handed-baseline-jam",
+          "title": "Karl-Anthony Towns throws down emphatic one-handed baseline jam",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQS3Bdrnm1Gjacrkxl40vFxkHBC1Z_zrfZq_uCmNTR3drNN0DxhnhbJr0b0j8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnPPaJpSQlCuUA8wFwcLMYWH8-pGEgAJdxuWPSXh0q8WmKN9CGKz8F0xAcUyw"
         },
         {
-          "url": "https://www.nba.com/watch/video/game-recap-hawks-139-wizards-132-nov-6",
-          "title": "Game Recap: Hawks 139, Wizards 132 (Nov. 6)",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJx0n0d0yG9OPJOu-yzNU32PED3N7PWvXrBGbIhbWqQ9MeIZzH9oTIXZtpz18"
-        },
-        {
-          "url": "https://www.si.com/ncaaf/scoreboard/merrimack-vs-wake-forest-11-7-2026-636",
-          "title": "Merrimack Warriors vs Wake Forest Demon Deacons Live Score & Box Score — November 7, 2026 | SI",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9AxD_uE12GlKZ7Lirav0K0XMdiit0AMllrWqiXw9pJqMpEw7IQGbghmQQKHc"
-        }
-      ]
-    },
-    {
-      "query": "rob gronkowski",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T02:00:00Z",
-      "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/07/sports/rob-gronkowski-patriots-hall-of-fame-induction-tom-brady/",
-        "https://sports.yahoo.com/articles/patriots-legend-bill-belichick-gets-015644342.html",
-        "https://www.foxnews.com/outkick-sports/rob-gronkowski-patriots-hall-fame-celebration-awkward-turn-teammate-story-adult-toys"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDmIyypQ6oGKo9slSm7MebrgoCSN5NfFkq4pfs4d4mNspaLxgn1l90u3y2ByI",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/07/sports/rob-gronkowski-patriots-hall-of-fame-induction-tom-brady/",
-          "title": "Rob Gronkowski’s Patriots Hall of Fame induction featured jokes, memories, and an appearance from Tom Brady",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDmIyypQ6oGKo9slSm7MebrgoCSN5NfFkq4pfs4d4mNspaLxgn1l90u3y2ByI"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/patriots-legend-bill-belichick-gets-015644342.html",
-          "title": "Patriots legend Bill Belichick gets ‘GOAT’ claim from Rob Gronkowski",
+          "url": "https://sports.yahoo.com/articles/kat-proving-knicks-best-player-235051467.html",
+          "title": "KAT Proving He’s the Knicks’ Best Player Right Now",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNacryAUDS_g3HoWV3dthmht9zEKVmB27xo0XEn4AFy1ZL_6-YQIKCvpviySE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3Kcd40hq3NxN45rfmdGKr1-e5u6zIKYeb61PZFdkH71-kle20rTodPYqvySU"
         },
         {
-          "url": "https://www.foxnews.com/outkick-sports/rob-gronkowski-patriots-hall-fame-celebration-awkward-turn-teammate-story-adult-toys",
-          "title": "Rob Gronkowski's Patriots Hall of Fame celebration takes awkward turn with teammate's story about adult toys",
-          "publisher": "Fox News",
+          "url": "https://www.nba.com/watch/video/karl-anthony-towns-rocks-the-rim-4",
+          "title": "Karl-Anthony Towns rocks the rim",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsHKLvdyG_fBakNizmfiBgU9-SrSYAs_38umeKCyeALnk263PHsWB4r4RIO4s"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOh6o4jfnygDZHZhnHyjmGRAPQno6bJWSI4lM9_KB_7rbRU8gfNmU0jAICevY"
         }
       ]
     },
     {
-      "query": "derek carr",
+      "query": "josh brolin",
       "approx_searches": "500+",
-      "published_at": "2026-11-08T02:00:00Z",
+      "published_at": "2026-11-08T02:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/derek-carr-breaks-silence-reports-113000828.html",
-        "https://www.aol.com/articles/could-raiders-legend-derek-carr-121000000.html",
-        "https://www.marca.com/en/nfl/las-vegas-raiders/2026/10/31/derek-carr-makes-himself-available-to-the-raiders-following-kirk-cousins-issues-i-work-out-six-times-week.html"
+        "https://people.com/josh-brolin-renews-vows-with-wife-kathryn-las-vegas-10-years-of-marriage-photos-12242525",
+        "https://pagesix.com/2026/11/07/celebrity-news/josh-brolin-renews-vows-with-wife-kathryn-in-vegas-for-10th-anniversary/",
+        "https://www.hellomagazine.com/us/933788/josh-brolin-58-marries-wife-kathryn-39-all-over-again-in-surprise-las-vegas-ceremony/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdOYdCqwkf152VuxqNbl8CsqS1SaX6g1A8Ud06dg91afqyq6-6Y7qA1gWsnBY",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZXTnu9ULFVPRfzcYtA799hLPvYronul6EM6aRRaoj74FHSR9bBCB4zFeRNCI",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/josh-brolin-renews-vows-with-wife-kathryn-las-vegas-10-years-of-marriage-photos-12242525",
+          "title": "Josh Brolin and Wife Kathryn Renew Vows in Las Vegas After 10 Years: Photos",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZXTnu9ULFVPRfzcYtA799hLPvYronul6EM6aRRaoj74FHSR9bBCB4zFeRNCI"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/07/celebrity-news/josh-brolin-renews-vows-with-wife-kathryn-in-vegas-for-10th-anniversary/",
+          "title": "Josh Brolin shows off ripped physique while renewing vows with wife Kathryn in Vegas for 10th wedding anniversary",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRv4cQP1aOh7gyiN0WuQj2KVV5LPdWXcvBfArXHrQkTQAJfzoubZbW0OVnqk20"
+        },
+        {
+          "url": "https://www.hellomagazine.com/us/933788/josh-brolin-58-marries-wife-kathryn-39-all-over-again-in-surprise-las-vegas-ceremony/",
+          "title": "Josh Brolin, 58, marries wife Kathryn, 39, all over again in surprise Las Vegas ceremony",
+          "publisher": "HELLO!",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwSDnsjUwjZO64gx7DINDs9IZYc5QxAXQPvZpbICi5pFW1jRvDCUvTGIKt80g"
+        }
+      ]
+    },
+    {
+      "query": "suns vs rockets",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T02:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/rockets-kevin-durant-head-phoenix-000000871.html",
+        "https://www.brightsideofthesun.com/suns-game/113230/kevin-durant-return-houston-rockets-preview-fred-vanvleet-offensive-depth",
+        "https://www.star-telegram.com/sports/article317974513.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3SddHc9yBCEHfu9Ba-jg5kGag2t5_bCnePhfkdRnv1IUhHDHnh4en10K10O8",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/derek-carr-breaks-silence-reports-113000828.html",
-          "title": "Derek Carr breaks his silence on reports he is set to join the Minnesota Vikings",
+          "url": "https://sports.yahoo.com/articles/rockets-kevin-durant-head-phoenix-000000871.html",
+          "title": "Rockets and Kevin Durant head to Phoenix for a reunion",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdOYdCqwkf152VuxqNbl8CsqS1SaX6g1A8Ud06dg91afqyq6-6Y7qA1gWsnBY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3SddHc9yBCEHfu9Ba-jg5kGag2t5_bCnePhfkdRnv1IUhHDHnh4en10K10O8"
         },
         {
-          "url": "https://www.aol.com/articles/could-raiders-legend-derek-carr-121000000.html",
-          "title": "“I Could Do It”: Raiders Legend Derek Carr Confirms Stance on NFL Comeback Bid Amid Kirk Cousins Benching Rumors",
-          "publisher": "AOL.com",
+          "url": "https://www.brightsideofthesun.com/suns-game/113230/kevin-durant-return-houston-rockets-preview-fred-vanvleet-offensive-depth",
+          "title": "Game Preview: Suns prepare for major test against balanced Houston Rockets",
+          "publisher": "Bright Side Of The Sun",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRvniOUxSK9uF1GilWALP3H1VfoKCsRyrlnzB-nCrsDgr2d0H7cOsUPKLSunI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnokKuDSxwrJ7SermCRWFKohaa2MHIwyRf5PL4_IX7IfSWdZDZm3agAOWE5JE"
         },
         {
-          "url": "https://www.marca.com/en/nfl/las-vegas-raiders/2026/10/31/derek-carr-makes-himself-available-to-the-raiders-following-kirk-cousins-issues-i-work-out-six-times-week.html",
-          "title": "Derek Carr makes himself available to the Raiders following Kirk Cousins' issues: \"I work out six times a week\"",
-          "publisher": "MARCA",
+          "url": "https://www.star-telegram.com/sports/article317974513.html",
+          "title": "Injury report: Steven Adams, Clint Capela and more for Rockets vs. Suns",
+          "publisher": "Fort Worth Star-Telegram",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLESd7_wgiSFcDwlnfGkUyi2IHLr2WKd5CVws-_cxf0ciwhWC3LWXIdiXtk0w"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpCzD9cyeakBwj1pFbNqgl607R_eEJNO8GPM5d0XW34jxb763Qh0vVNZ60ao8"
         }
       ]
     },
     {
-      "query": "matthew schaefer",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T02:00:00Z",
+      "query": "anthony bourdain",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T02:40:00Z",
       "related_news_urls": [
-        "https://www.si.com/nhl/islanders/onsi/news/ny-islanders-correctly-tumble-down-nhl-power-rankings",
-        "https://nypost.com/2026/11/05/sports/what-i-know-about-the-islanders-trade-plans-matthew-schaefer/",
-        "https://www.newsday.com/sports/columnists/andrew-gross/islanders-playoff-standings-ekqxi2kp"
+        "https://www.npr.org/2026/11/06/nx-s1-6032770/anthony-bourdains-legacy-in-russia",
+        "https://mocoshow.com/2026/11/06/anthony-bourdains-favorite-chinese-food-opens-first-maryland-location/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVpYb3PZU7PAr1Xg70C-g5pmX4bP9nmyekD7_inbju7cNlXLQgeUYVwi7-EtI",
-      "image_credit": "Sports Illustrated",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS__kzRXkF37FYpztpHPaPNzbpv151NnGn2PNO59KX4dWfKTDRzD1uskLG2FNs",
+      "image_credit": "NPR",
       "news": [
         {
-          "url": "https://www.si.com/nhl/islanders/onsi/news/ny-islanders-correctly-tumble-down-nhl-power-rankings",
-          "title": "NY Islanders Correctly Tumble Down NHL Power Rankings",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.npr.org/2026/11/06/nx-s1-6032770/anthony-bourdains-legacy-in-russia",
+          "title": "Anthony Bourdain’s legacy in Russia",
+          "publisher": "NPR",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVpYb3PZU7PAr1Xg70C-g5pmX4bP9nmyekD7_inbju7cNlXLQgeUYVwi7-EtI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS__kzRXkF37FYpztpHPaPNzbpv151NnGn2PNO59KX4dWfKTDRzD1uskLG2FNs"
         },
         {
-          "url": "https://nypost.com/2026/11/05/sports/what-i-know-about-the-islanders-trade-plans-matthew-schaefer/",
-          "title": "What I know about the Islanders: trade plans, Matthew Schaefer",
-          "publisher": "New York Post",
+          "url": "https://mocoshow.com/2026/11/06/anthony-bourdains-favorite-chinese-food-opens-first-maryland-location/",
+          "title": "“Anthony Bourdain’s Favorite Chinese Food” Opens First Maryland Location",
+          "publisher": "The MoCo Show -",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpsXuZseaRAM-rTRDo-xK6LSzoLy2icwV4x2lDXxQMDMN3wAM5ZHiLrYeU2AI"
-        },
-        {
-          "url": "https://www.newsday.com/sports/columnists/andrew-gross/islanders-playoff-standings-ekqxi2kp",
-          "title": "Andrew Gross: It may be considered early in the season, but the Islanders need to start earning points",
-          "publisher": "Newsday",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIT76j2pWpQf8XeZQFFxuoaB7sXKkQ1I498ob2gfqDr0Km-rziM-_C5VeGBqc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEm1LBxqrgiPdo_NNJSfSpU_Dlh5_z8BC5Cev465QzLkZzJav6hX73S_Rrb48"
         }
       ]
     },
     {
-      "query": "aday mara",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T02:00:00Z",
+      "query": "jared mccain",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-08T02:30:00Z",
       "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-07/okc-starts-sga-mitchell-kenrich-mara-ihart",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-07/noah-clowney-illness-upgraded-to-available",
-        "https://www.espn.com/fantasy/basketball/story/_/id/50383545/fantasy-basketball-rookie-watch-nba-2026-2027"
+        "https://www.espn.com/nba/recap/_/gameId/401909291",
+        "https://okcthunderwire.usatoday.com/story/sports/nba/thunder/2026/11/06/player-grades-thunder-absolutely-humiliate-grizzlies-in-128-97-nba-cup-win/92653564007/",
+        "https://sports.yahoo.com/articles/jared-mccains-bounce-back-game-210003214.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZ2LBFdTwXbJVxrq-xjo5ncfvB5UZ2_czSsorPQ8KGn1VXTpIg8xT-jOe2CY4",
-      "image_credit": "NBC Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuFuehz9yG-0XAZF9A8BlpkwxrWvI4giuDo6ZxNUjTJRfoOup585EHq5h1_Tk",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-07/okc-starts-sga-mitchell-kenrich-mara-ihart",
-          "title": "OKC starts SGA, Mitchell, Kenrich, Mara, iHart",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZ2LBFdTwXbJVxrq-xjo5ncfvB5UZ2_czSsorPQ8KGn1VXTpIg8xT-jOe2CY4"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-07/noah-clowney-illness-upgraded-to-available",
-          "title": "Noah Clowney (illness) upgraded to available",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSkdtdhWUaL12_7TJwO1o9FRn9OPlqjQkNBrkLSjEVSAhPW0BrECuJMo2_DYBs"
-        },
-        {
-          "url": "https://www.espn.com/fantasy/basketball/story/_/id/50383545/fantasy-basketball-rookie-watch-nba-2026-2027",
-          "title": "Fantasy basketball rookie watch: Who's standing out and who's worth monitoring",
+          "url": "https://www.espn.com/nba/recap/_/gameId/401909291",
+          "title": "Thunder 128-97 Grizzlies (Nov 6, 2026) Game Recap",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdyBl6tD0Z8LNsbnSjYRFTkuYdHvlvkDwCj0cFpdSEl-vbUYXGIgT_TLi1sn4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuFuehz9yG-0XAZF9A8BlpkwxrWvI4giuDo6ZxNUjTJRfoOup585EHq5h1_Tk"
+        },
+        {
+          "url": "https://okcthunderwire.usatoday.com/story/sports/nba/thunder/2026/11/06/player-grades-thunder-absolutely-humiliate-grizzlies-in-128-97-nba-cup-win/92653564007/",
+          "title": "Player grades: Thunder absolutely humiliate Grizzlies in 128-97 NBA Cup win",
+          "publisher": "OKC Thunder Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScJR6EPz69TRtrxs96hE25mQFMfPxMe9eAaKdSDip3tLgLegggRUmfA1B3pEQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/jared-mccains-bounce-back-game-210003214.html",
+          "title": "Jared McCain's Bounce-Back Game Helps Lead Thunder Past Grizzlies",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShgDrYV_VZ4dA5PJmOcYa8f6dn3VQL5D2hVW0ktggcI2Niue4fmFTbiBSORZ4"
+        }
+      ]
+    },
+    {
+      "query": "george macintyre",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T02:30:00Z",
+      "related_news_urls": [
+        "https://atozsports.com/nashville/volunteers/tim-tebow-florida-comments-qb-george-macintyre-tennessee-football-vols/",
+        "https://www.yardbarker.com/college_football/articles/florida_gators_legend_changes_his_tune_on_tennessee_in_a_big_way_ahead_of_the_vols_big_game_against_kentucky/s1_17313_44490175",
+        "https://www.espn.com/college-football/story/_/id/50392385/week-10-college-football-uniforms-tennessee"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhiH0DnXPFFl-ZXBGDHZ31rQEpo_GJRdLJCutv6I1rVKGrG3z17BDZKWzRrHs",
+      "image_credit": "A to Z Sports",
+      "news": [
+        {
+          "url": "https://atozsports.com/nashville/volunteers/tim-tebow-florida-comments-qb-george-macintyre-tennessee-football-vols/",
+          "title": "Tim Tebow dropped some strong comments on QB George MacIntyre and Tennessee football and left no doubt on how he feels about the Vols",
+          "publisher": "A to Z Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhiH0DnXPFFl-ZXBGDHZ31rQEpo_GJRdLJCutv6I1rVKGrG3z17BDZKWzRrHs"
+        },
+        {
+          "url": "https://www.yardbarker.com/college_football/articles/florida_gators_legend_changes_his_tune_on_tennessee_in_a_big_way_ahead_of_the_vols_big_game_against_kentucky/s1_17313_44490175",
+          "title": "Florida Gators legend changes his tune on Tennessee in a big way ahead of the Vols’ big game against Kentucky",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbVl3Z4MpdcjggjCzJ0DZJKRRXzEOxgsitr6xof4Q_6uo5ZfdBDm3k31R3O4A"
+        },
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50392385/week-10-college-football-uniforms-tennessee",
+          "title": "Tennessee going 'dark mode' tops best college football Week 10 unis",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDUdXmicyp4dT2RxDUfoTH3lois_-HcC3bB06A15ASdrkF_U4syhyw3k6nxU8"
+        }
+      ]
+    },
+    {
+      "query": "notre dame football schedule 2026",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T02:30:00Z",
+      "related_news_urls": [
+        "https://fightingirish.com/news/2026/11/5/6-irish-are-2026-acc-regular-season-champions",
+        "https://themiamihurricane.com/2026/11/07/miami-soccer-regular-season-wraps-up-in-1-0-loss-to-no-6-notre-dame/",
+        "https://www.ndsmcobserver.com/article/irish-women-s-soccer-wins-first-outright-acc-regular-season-championship-20261107"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQm0uul3UJMNCuLyb2gRaiq4tRk1cWNu7-jB0Wlc8enJk6FGBUnh_JAb1PHhdo",
+      "image_credit": "Notre Dame Fighting Irish",
+      "news": [
+        {
+          "url": "https://fightingirish.com/news/2026/11/5/6-irish-are-2026-acc-regular-season-champions",
+          "title": "#6 Irish Are 2026 ACC Regular Season Champions",
+          "publisher": "Notre Dame Fighting Irish",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQm0uul3UJMNCuLyb2gRaiq4tRk1cWNu7-jB0Wlc8enJk6FGBUnh_JAb1PHhdo"
+        },
+        {
+          "url": "https://themiamihurricane.com/2026/11/07/miami-soccer-regular-season-wraps-up-in-1-0-loss-to-no-6-notre-dame/",
+          "title": "Miami Soccer regular season wraps up in 1-0 loss to No. 6 Notre Dame",
+          "publisher": "The Miami Hurricane",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Vq0GliaN8Qp5FsVbbbI7SOd5AGFKVF8UKnSUA3eydYN18h4r5laKYlCgqUI"
+        },
+        {
+          "url": "https://www.ndsmcobserver.com/article/irish-women-s-soccer-wins-first-outright-acc-regular-season-championship-20261107",
+          "title": "Irish women’s soccer wins first outright ACC regular season championship",
+          "publisher": "Observer Online",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpFdhqxdMh7VH8I4HI-AxEnJIaA0V-TcJQj-JQYBR7RdxzbScWnbnsyvtv4h0"
+        }
+      ]
+    },
+    {
+      "query": "defesa civil",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T02:30:00Z",
+      "related_news_urls": [
+        "https://oglobo.globo.com/brasil/noticia/2026/11/07/ha-risco-nas-proximas-72-horas-no-brasil-entenda-alerta-da-defesa-civil.ghtml",
+        "https://exame.com/brasil/defesa-civil-orienta-familias-a-estocar-agua-e-alimentos-entenda-recomendacao/",
+        "https://ndmais.com.br/tempo/defesa-civil-kit-emergencia-72-horas-alerta-vermelho-inmet/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_DIAOZrYum7PIGHS-nj6xxlwTry7qhAvMDHSyRNPmdO8W9Giwa4hvNyS_u_w",
+      "image_credit": "O GLOBO",
+      "news": [
+        {
+          "url": "https://oglobo.globo.com/brasil/noticia/2026/11/07/ha-risco-nas-proximas-72-horas-no-brasil-entenda-alerta-da-defesa-civil.ghtml",
+          "title": "Há risco nas próximas 72 horas no Brasil? Entenda alerta da Defesa Civil",
+          "publisher": "O GLOBO",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_DIAOZrYum7PIGHS-nj6xxlwTry7qhAvMDHSyRNPmdO8W9Giwa4hvNyS_u_w"
+        },
+        {
+          "url": "https://exame.com/brasil/defesa-civil-orienta-familias-a-estocar-agua-e-alimentos-entenda-recomendacao/",
+          "title": "Defesa Civil orienta famílias a estocar água e alimentos; entenda recomendação",
+          "publisher": "Exame",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaaHwx_rHIyZldDdDKP5MS5cIDRnU1OTabHpQqUZ_aCrvhL0wj1GYiTOEWvos"
+        },
+        {
+          "url": "https://ndmais.com.br/tempo/defesa-civil-kit-emergencia-72-horas-alerta-vermelho-inmet/",
+          "title": "Defesa Civil recomenda preparar kit de emergência para 72 horas diante de alerta vermelho em 325 cidades",
+          "publisher": "ND Mais",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXflQEVNhIYdGTf65bWKB3SRwYSOlhMPpoH0-Z_tO5CHzxoDG5BzKCCztJGxg"
         }
       ]
     }
