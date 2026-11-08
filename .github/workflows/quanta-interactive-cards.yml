@@ -154,6 +154,7 @@ jobs:
           node --check quanta-card-experience.mjs
           node --check oracle-card-deck.js
           node --check quanta-card-live-source.mjs
+          node --check workers/sponsor-boost/stripe-sandbox-webhook.mjs
           node --check quanta-marketplace-carousel.mjs
           node --check design-lab/power-chain-core.mjs
           node --check design-lab/app.mjs
