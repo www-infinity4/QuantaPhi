@@ -100,8 +100,15 @@ async function populate(token,star,unified){
  const cash=unified.cashWallet||{status:'not_connected'};
  const cashReady=cash.providerVerified===true&&cash.currency==='USD'&&
   Number.isSafeInteger(cash.availableCents)&&cash.availableCents>=0;
- const cashText=cashReady?
-  '
+ const cashText=cashReady
+  ? '$'+(cash.availableCents/100).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})
+  : '—';
+ const cashRow=line('Cash Wallet',null,cashReady
+  ? 'Settled USD · '+(Number(cash.pendingCents)>0?'pending funds separately held':'provider verified')
+  : 'No verified balance · provider not connected');
+ cashRow.querySelector('strong').textContent=cashText;
+ balances.append(cashRow);
+ balances.hidden=false;
  history.hidden=false;
  status('Cloudflare verified · '+name+' · live balances');
  receipts.replaceChildren();
