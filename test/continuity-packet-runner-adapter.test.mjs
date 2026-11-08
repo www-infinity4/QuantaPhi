@@ -140,3 +140,28 @@ test('a stale or foreign coordinator fence cannot scan or execute packets', asyn
     assert.equal(scans, 0);
   } finally {d.close();}
 });
+
+test('expired live coordinator lease stops the second packet rather than using a stale timestamp', async () => {
+  const d = database();
+  try {
+    const lease = await claim(d.db, AT, AT, 'fence-clock');
+    let currentTime = AT + 1;
+    const invoked = [];
+    const result = await runPacketPass({
+      db: d.db, claim: lease, ownerScope: OWNER_SCOPE, ownerId: OWNER,
+      sourceVersion: SHA, now: () => currentTime,
+      loadCandidates: async () => [packet(21), packet(22)],
+      executePacket: async (work, {idempotencyKey}) => {
+        invoked.push(work.issue);
+        if (work.issue === 21) currentTime = AT + LEASE + 1;
+        return {receipt: receipt(work, work.nextAction, 'changed', idempotencyKey, {
+          providerConfirmed: true,
+          artifactUrl: 'https://github.com/www-infinity4/QuantaPhi/commit/' + SHA,
+        })};
+      },
+    });
+    assert.equal(result.status, 'lease_lost');
+    assert.deepEqual(invoked, [21], 'fence expiry must prevent the second provider action');
+    assert.deepEqual(result.attempted.map(x => x.issue), [21]);
+  } finally {d.close();}
+});
