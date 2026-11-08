@@ -4,6 +4,7 @@
  */
 import {BUILDER_CARDS,nextDeveloperCardIndex} from './developer-carousel-core.mjs';
 import {mountDeveloperDiscovery} from './developer-discovery.mjs';
+import {buildOwnerDeveloperCard} from './owner-developer-card.mjs';
 const root=document.getElementById('developerCarousel');
 if(root){
  const stage=document.getElementById('developerCardStage');
@@ -48,7 +49,7 @@ if(root){
   return card;
  }
  const cards=BUILDER_CARDS.map((info,i)=>{
-  const node=info.id==='quickCardBuilderInline'?publisherCard():document.getElementById(info.id);
+  const node=info.id==='quickCardBuilderInline'?publisherCard():info.id==='ownerEngineerCard'?buildOwnerDeveloperCard():document.getElementById(info.id);
   if(!node)return null; // Never generate a fake replacement for a missing builder.
   node.dataset.developerCard=info.id;
   const slide=create('article','developer-slide');
