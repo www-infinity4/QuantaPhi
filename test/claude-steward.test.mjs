@@ -115,7 +115,7 @@ test('card patch script really patches a scratch repo once and refuses a second 
  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'steward-'));
  fs.mkdirSync(path.join(dir,'src'));
  fs.writeFileSync(path.join(dir,'src/app.js'),'x\nconst msg = "it\'s \\"old\\"";\nlet n = 1;\ny\n');
- const py=script.split("<<'ENDPY'\n")[1].split('\nENDPY')[0];
+ const py=script.split("<<'ENDPY' || exit 1\n")[1].split('\nENDPY')[0];
  const run=()=>execFileSync('python3',['-c',py],{cwd:dir,encoding:'utf8'});
  assert.match(run(),/patched src\/app.js/);
  assert.equal(fs.readFileSync(path.join(dir,'src/app.js'),'utf8'),'x\nconst msg = "it\'s \\"new\\"";\nlet n = 2;\ny\n');
