@@ -5,6 +5,10 @@ on:
       - 'developer-carousel-core.mjs'
       - 'developer-discovery-core.mjs'
       - 'developer-discovery.mjs'
+      - 'developer-indexed-picker.mjs'
+      - 'developer-indexed-search.mjs'
+      - 'tests/developer-indexed-search.test.mjs'
+      - 'test/developer-indexed-search.browser.spec.mjs'
       - 'developer-discovery.css'
       - 'tests/developer-discovery.test.mjs'
       - 'tests/developer-catalog-import.test.mjs'
@@ -28,6 +32,10 @@ on:
       - 'developer-carousel-core.mjs'
       - 'developer-discovery-core.mjs'
       - 'developer-discovery.mjs'
+      - 'developer-indexed-picker.mjs'
+      - 'developer-indexed-search.mjs'
+      - 'tests/developer-indexed-search.test.mjs'
+      - 'test/developer-indexed-search.browser.spec.mjs'
       - 'developer-discovery.css'
       - 'tests/developer-discovery.test.mjs'
       - 'tests/developer-catalog-import.test.mjs'
@@ -61,9 +69,11 @@ jobs:
           node --check developer-carousel.mjs
           node --check developer-discovery-core.mjs
           node --check developer-discovery.mjs
+          node --check developer-indexed-picker.mjs
+          node --check developer-indexed-search.mjs
           node --check scripts/build-developer-source-catalog.mjs
           node --check oracle-card-deck.js
-          node --test tests/developer-carousel.test.mjs tests/developer-discovery.test.mjs tests/developer-catalog-import.test.mjs tests/developer-catalog-workflow.test.mjs tests/developer-catalog-snapshot.test.mjs
+          node --test tests/developer-carousel.test.mjs tests/developer-discovery.test.mjs tests/developer-catalog-import.test.mjs tests/developer-catalog-workflow.test.mjs tests/developer-catalog-snapshot.test.mjs tests/developer-indexed-search.test.mjs
   developer-browser:
     runs-on: ubuntu-latest
     steps:
@@ -78,4 +88,4 @@ jobs:
       - name: Exercise actual builder cards on Android widths in Chromium
         run: |
           python3 -m http.server 8799 --bind 127.0.0.1 >/tmp/developer-carousel-http.log 2>&1 &
-          npx playwright test test/developer-carousel.browser.spec.mjs test/developer-discovery.browser.spec.mjs test/infinity-affiliates.browser.spec.mjs --reporter=line --workers=1
+          npx playwright test test/developer-carousel.browser.spec.mjs test/developer-discovery.browser.spec.mjs test/developer-indexed-search.browser.spec.mjs test/infinity-affiliates.browser.spec.mjs --reporter=line --workers=1
