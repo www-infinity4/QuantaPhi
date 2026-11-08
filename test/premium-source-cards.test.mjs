@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {PREMIUM_CARDS,sourceURL,normalizeResults,attachArticleImages} from '../premium-source-cards.mjs';
-import {COIN_MARKETS,normalizeCoinSaleResults,referenceCoinImage} from '../coin-sale-listings.mjs';
+import {COIN_MARKETS,normalizeCoinSaleResults,referenceCoinImage,attachLicensedCoinImages} from '../coin-sale-listings.mjs';
 test('every added collector/source card has a unique fixed official HTTPS destination',()=>{
  assert.equal(PREMIUM_CARDS.filter(x=>!x.id.startsWith('denver-')).length,17);
  assert.equal(PREMIUM_CARDS.filter(x=>x.id.startsWith('denver-')).length,8);
@@ -87,4 +87,27 @@ test('licensed real PCGS holder illustration is labelled as reference, never a s
  assert.match(image.label,/reference/i);
  assert.equal(image.isListingPhoto,false);
  assert.equal(referenceCoinImage('coinworld'),null);
+});
+
+test('seller photographs require an independent, exact-lot authorized media record',()=>{
+ const market=COIN_MARKETS.find(x=>x.id==='icollector');
+ const lot='https://www.icollector.com/1889-O-MORGAN-DOLLAR-PCGS-AU-53-VAM-2-OVAL-O_i37331753';
+ const other='https://www.icollector.com/1889-O-MORGAN-DOLLAR-PCGS-AU-53-VAM-2-OVAL-O_i37331754';
+ const rows=normalizeCoinSaleResults({results:[{title:'1889-O MORGAN DOLLAR PCGS AU-53 VAM 2 OVAL O',url:lot,thumbnail:'https://www.icollector.com/images/test.jpg',status:'sold'}]},market);
+ const approval={schema_version:1,grants:[{
+  market:'icollector',lot_url:lot,image_url:'https://www.icollector.com/photos/original-holder.jpg',
+  image_credit:'iCollector auction catalog, rights-holder authorized',
+  license:'seller-permitted',proof_url:'https://www.icollector.com/terms',
+  approved_by:'reviewed-commercial-media',approved_at:'2026-11-07',expires_at:'2027-01-01'
+ }]};
+ const approved=attachLicensedCoinImages(rows,market,approval,'2026-11-07');
+ assert.equal(approved.length,1);
+ assert.equal(approved[0].image,'https://www.icollector.com/photos/original-holder.jpg');
+ assert.match(approved[0].imageCredit,/rights-holder authorized/);
+ assert.equal(approved[0].imageSource,lot);
+ assert.equal(rows[0].image,null,'Do not mutate unapproved search results');
+ assert.equal(attachLicensedCoinImages(rows,market,approval,'2027-11-07')[0].image,null,'Expired grants must not render');
+ assert.equal(attachLicensedCoinImages([{...rows[0],url:other}],market,approval,'2026-11-07')[0].image,null,'A different coin cannot borrow a photo');
+ assert.equal(attachLicensedCoinImages(rows,market,{...approval,grants:[{...approval.grants[0],image_url:'https://attacker.invalid/fake.jpg'}]},'2026-11-07')[0].image,null,'Media host must match approved seller domain');
+ assert.equal(attachLicensedCoinImages(rows,market,{...approval,grants:[{...approval.grants[0],proof_url:''}]},'2026-11-07')[0].image,null,'Rights evidence URL is required');
 });
