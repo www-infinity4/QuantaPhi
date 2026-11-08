@@ -511,7 +511,7 @@ const connections=create('div','ba-connect');
 connections.append(create('strong','','Connections'));
 const provider=create('p','ba-muted','Live now: Oracle Cloudflare AI. Owner Bot tools use your verified QuantaPhi Unified Wallet, not a separate ChatGPT login. Existing Android Bubbles can optionally authorize eligible ChatGPT plan responses.');
 const openai=create('a','ba-link','ChatGPT sign-in requirements ↗');openai.href='https://help.openai.com/en/articles/20001410-sign-in-with-chatgpt';openai.target='_blank';openai.rel='noopener noreferrer';
-const claude=create('a','ba-link','Claude third-party API requirements ↗');claude.href='https://support.claude.com/en/articles/13189465-log-in-to-your-claude-account';claude.target='_blank';claude.rel='noopener noreferrer';
+
 const github=create('a','ba-link','GitHub App permission model ↗');github.href='https://docs.github.com/en/apps/creating-github-apps/about-creating-github-apps/about-creating-github-apps';github.target='_blank';github.rel='noopener noreferrer';
 const gptConnect=create('button','ba-control ba-chatgpt-login','Continue with ChatGPT');
 gptConnect.type='button';gptConnect.hidden=!nativeOverlay;
@@ -522,7 +522,7 @@ gptConnect.addEventListener('click',()=>{
  if(nativeOverlay){nativeGPTSignInRequested=true;gptStatus.textContent='Opening the native Android ChatGPT permission flow. The website never receives your sign-in tokens.'}
  else{gptStatus.textContent='ChatGPT website sign-in requires an approved OpenAI OAuth client ID for QuantaPhi. Until registered, Bubbles uses Oracle; Android Bubbles has its own supported device-local sign-in.';}
 });
-connections.append(provider,gptConnect,gptStatus,openai,claude,github);
+connections.append(provider,gptConnect,gptStatus,openai,github);
 const connectedAccounts=create('details','ba-account-connections');
 connectedAccounts.append(create('summary','','Connect your accounts'));
 connections.append(connectedAccounts);
@@ -1080,26 +1080,10 @@ const actions=create('div','ba-actions');
 const mic=create('button','ba-mic','🎙 Enable listening');mic.type='button';mic.setAttribute('aria-pressed','false');
 const speak=create('button','ba-speak','🔇 Voice off');speak.type='button';speak.setAttribute('aria-pressed','false');
 const send=create('button','ba-send','Send');send.type='submit';
-// Claude is a model choice inside the existing Bubbles conversation, not a replacement chat.
-// Selecting a model changes routing only: owner auth and repair approvals remain separate.
-const modelRow=create('div','ba-model-row');
-modelRow.style.cssText='display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:3px 0 8px;';
-const modelLabel=create('label','ba-muted','Chat model');modelLabel.setAttribute('for','ba-chat-model');
-const modelChoice=create('select','ba-field');
-modelChoice.id='ba-chat-model';modelChoice.setAttribute('aria-label','Chat model');
-modelChoice.style.cssText='min-height:44px;min-width:140px;max-width:230px;font-size:16px;flex:1;';
-const bubblesModel=create('option','','Bubbles');bubblesModel.value='bubbles';
-const claudeModel=create('option','','Claude');claudeModel.value='claude';claudeModel.disabled=embedded;
-modelChoice.append(bubblesModel,claudeModel);modelChoice.value='bubbles';
-const modelNote=create('span','ba-muted','Claude can inspect and propose fixes; deployment needs separate approval.');
-modelNote.style.cssText='font-size:12px;line-height:1.4;flex:3;min-width:170px;';
-modelRow.append(modelLabel,modelChoice,modelNote);
-modelChoice.addEventListener('change',()=>{
- const usingClaude=modelChoice.value==='claude';
- input.placeholder=usingClaude?'Message Claude, or say Fix Bubbles…':nativeOverlay?'Message Bubbles or paste a code…':'Say something, ask a question, or describe a task…';
- status.textContent=usingClaude?'Claude selected. Repairs are proposals until independently authorized.':'Bubbles selected.';
-});
-actions.append(photoRow,mic,speak,send);composer.append(modelRow,input,photoPreview,actions);
+// Keep Bubbles' original model and owner tools. A third-party website login is
+// not an authenticated API connection, so do not expose a non-working Claude choice.
+const modelChoice={value:'bubbles'};
+actions.append(photoRow,mic,speak,send);composer.append(input,photoPreview,actions);
 // Account connector pairing stays beside the message box in website and APK chat.
 const connectorCodeButton=create('button','ba-control ba-connector-code','Create one-time connection code');
 connectorCodeButton.type='button';
