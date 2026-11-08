@@ -26,8 +26,8 @@ test('GIT balance reads only actual awards and separates pending claims per wall
   INSERT INTO gitcoin_awards VALUES ('r1','owner',1),('r2','owner',1),('r3','another',1);
   INSERT INTO gitcoin_serials VALUES (1,'r1','owner'),(2,'r2','owner'),(3,'r3','another');
   INSERT INTO gitcoin_line_claims VALUES ('owner','pending'),('owner','verified'),('another','rejected');`);
- assert.deepEqual(await readGitAsset(env,'owner'),{available:true,status:'ledger_verified',credited:2,pending:1,spendAvailable:false});
- assert.deepEqual(await readGitAsset(env,'another'),{available:true,status:'ledger_verified',credited:1,pending:0,spendAvailable:false});
+ assert.deepEqual(await readGitAsset(env,'owner'),{available:true,status:'ledger_verified',credited:2,pending:1,awaitingSerial:0,spendAvailable:false});
+ assert.deepEqual(await readGitAsset(env,'another'),{available:true,status:'ledger_verified',credited:1,pending:0,awaitingSerial:0,spendAvailable:false});
  assert.equal((await readGitAsset(env,null)).credited,null);
 });
 
