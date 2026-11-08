@@ -5,6 +5,7 @@ const app=(id,title,path,repo,aliases=[],play='')=>({id,title,url:path,repositor
 export const cards=Object.freeze([
  app('disability-housing','Home Access · Disability Housing','/disability-housing.html','QuantaPhi',['disability housing','disabled housing','housing on disability','ssi housing','ssdi housing','usda housing','home access','housing assistance']),
  ...HOUSING_HELP_RESOURCES.map(r=>app('housing-help-'+r.id,r.title+' · '+r.provider,housingResourceRoute(r.id),'QuantaPhi',[r.id,r.id==='sieda'?'seida':r.id,r.provider.toLowerCase()+' housing help',r.title.toLowerCase()])),
+ app('bubbles-legal-research','Bubbles Legal Research Desk','/bubbles-legal-research.html','QuantaPhi',['legal research','lawyer of bubbles','ai lawyer','attorney preparation','app rights','google play legal','trademark legal','copyright legal']),
  app('bubbles-workshop','Bubbles Agent Workshop','/bubbles-agent-workshop/','Bubbles-Agent-Workshop',['agent workshop','build workshop']),
  app('infinity-radio','Infinity Radio','/infinity-radio/','Alien-Radio',['radio','alien radio'],'#play-btn'),
  local('story-writer','Story Writer','phiStoryWriter',['phi-visual-render.js','phi-story-writer.js'],['phi-story-writer.css'],['oracle story writer']),
