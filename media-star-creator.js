@@ -254,13 +254,22 @@
       if(!result?.ok)throw Error('ledger_unavailable');
       ledgerState.replaceChildren();
       ledgerState.append(el('strong','',
-        String(Number(result.pendingInfinityViewAwards)||0)+' pending Infinity view award receipts · not spendable'));
+        String(Number(result.pendingPerSessionInfinityProposals)||0)+' per-listen candidate awards · '+
+        String(Number(result.pendingInfinityViewAwards)||0)+' older daily receipts · none spendable'));
       ledgerState.append(el('p','ms-creator-intro',
         'Actual settled, spendable production coins: 0 until independently verified issuance and a successful wallet receipt.'));
       for(const claim of (Array.isArray(result.creatorIdentityClaims)?result.creatorIdentityClaims:[]).slice(0,8)){
         const item=el('p','ms-creator-ledger-row');
         item.textContent='Creator rights claim · '+String(claim.creator_display_name||'Creator')+
           ' · '+String(claim.review_status||'pending_identity_and_rights_review')+' · no payout until verified';
+        ledgerState.append(item);
+      }
+      for(const entry of (Array.isArray(result.infinitySessionProposals)?result.infinitySessionProposals:[]).slice(0,8)){
+        const item=el('p','ms-creator-ledger-row');
+        item.textContent=String(entry.content_title||'Media Star')+
+          ' · 1 NEW proposed Infinity StarCoin for a reported session · '+
+          String(entry.verification_status||'pending independent playback proof')+
+          ' · '+String(entry.payout_status||'unfunded_unclaimed');
         ledgerState.append(item);
       }
       for(const entry of (Array.isArray(result.infinityViewAwards)?result.infinityViewAwards:[]).slice(0,8)){
