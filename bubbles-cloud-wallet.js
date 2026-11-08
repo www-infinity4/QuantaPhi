@@ -11,7 +11,7 @@ const refresh=byId('bubblesWalletRefresh');
 if(!state||!balances||!history||!receipts||!refresh)return;
 let pending=false,lastUser='';
 function status(message){state.textContent=message}
-function money(value){return Number.isFinite(Number(value))?Number(value).toLocaleString(undefined,{maximumFractionDigits:1}):'—'}
+function money(value){return value===null||value===undefined||value===''||!Number.isFinite(Number(value))?'—':Number(value).toLocaleString(undefined,{maximumFractionDigits:1})}
 function accountTime(value){const number=Number(value);if(!Number.isFinite(number)||number<=0)return '';const t=new Date(number);return Number.isNaN(+t)?'':t.toLocaleString()}
 async function verifiedWalletToken(){
  const bridge=global.QuantaCloudConnection;
