@@ -11,7 +11,7 @@ const refresh=byId('bubblesWalletRefresh');
 if(!state||!balances||!history||!receipts||!refresh)return;
 let pending=false,lastUser='';
 function status(message){state.textContent=message}
-function money(value){return Number.isFinite(Number(value))?Number(value).toLocaleString(undefined,{maximumFractionDigits:1}):'—'}
+function money(value){return value===null||value===undefined||value===''||!Number.isFinite(Number(value))?'—':Number(value).toLocaleString(undefined,{maximumFractionDigits:1})}
 function accountTime(value){const number=Number(value);if(!Number.isFinite(number)||number<=0)return '';const t=new Date(number);return Number.isNaN(+t)?'':t.toLocaleString()}
 async function verifiedWalletToken(){
  const bridge=global.QuantaCloudConnection;
@@ -34,11 +34,25 @@ async function api(url,token){
   return data;
  }finally{clearTimeout(timer)}
 }
-function line(title,value){
+function line(title,value,detail=''){
  const span=document.createElement('span');span.className='bubbles-wallet-asset';
  const label=document.createElement('small');label.textContent=title;
  const count=document.createElement('strong');count.textContent=money(value);
- span.append(label,count);return span;
+ span.append(label,count);if(detail){const info=document.createElement('small');info.className='bubbles-wallet-asset-status';info.textContent=detail;span.append(info)}return span;
+}
+function workAssetLine(name,asset){
+ return asset?.available===true&&Number.isSafeInteger(asset.credited)&&asset.credited>=0
+   ?line(name,asset.credited,(asset.pending>0?String(asset.pending)+' pending verification · ':'')+'Verified receipt-backed ledger')
+   :line(name,null,'No verified balance · ledger not connected');
+}
+function disconnectedBalances(){
+ balances.replaceChildren(
+   line('GIT Coin',null,'No verified balance · sign in for verified receipt readback'),
+   line('Bubble Bits',null,'No verified balance · sign in for credited bits'),
+   line('GPT Coin',null,'No verified balance · verified model run required'),
+   line('Cash Wallet',null,'No verified balance · provider funds not connected')
+ );
+ balances.hidden=false;history.hidden=true;receipts.replaceChildren();
 }
 function item(target,text){
  const li=document.createElement('li');li.textContent=text;target.append(li);
