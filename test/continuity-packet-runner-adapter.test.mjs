@@ -165,3 +165,164 @@ test('expired live coordinator lease stops the second packet rather than using a
     assert.deepEqual(result.attempted.map(x => x.issue), [21]);
   } finally {d.close();}
 });
+
+
+test('rejects a receipt for a different action without marking the packet complete',async()=>{
+ const d=database();try{
+  const lease=await claim(d.db,AT,AT,'fence-action');
+  const result=await runPacketPass({db:d.db,claim:lease,ownerScope:OWNER_SCOPE,ownerId:OWNER,
+   sourceVersion:SHA,now:AT+1,loadCandidates:async()=>[packet(61)],
+   executePacket:async(work,{idempotencyKey})=>({receipt:receipt(work,'request_review','reviewed',idempotencyKey,{
+    providerConfirmed:true,artifactUrl:'https://github.com/www-infinity4/QuantaPhi/pull/61'
+   })})
+  });
+  assert.equal(result.status,'reconciliation_required');
+  const saved=JSON.parse(d.sqlite.prepare('SELECT result_json FROM continuity_packet_checkpoints').get().result_json);
+  assert.equal(saved.pending.issue,61);
+  assert.equal(saved.pending.action,'edit_code');
+  assert.equal(saved.done.includes(REPO+'#61#'+SHA+'#edit_code'),false);
+ }finally{d.close();}
+});
+
+test('atomically declines reservation when the previously checked coordinator lease expires',async()=>{
+ const d=database();try{
+  const lease=await claim(d.db,AT,AT,'fence-reserve-race');
+  let scans=0,modified=false;
+  const db={prepare(sql){
+   const stmt=d.db.prepare(sql);
+   if(!sql.includes('INSERT INTO continuity_packet_checkpoints'))return stmt;
+   return {bind(...args){const bound=stmt.bind(...args);return {run:async()=>{
+    if(!modified){modified=true;d.sqlite.prepare('UPDATE continuity_cycle_receipts SET lease_until=? WHERE cycle_id=?').run(AT,lease.id);}
+    return bound.run();
+   }}}};
+  }};
+  const result=await runPacketPass({db,claim:lease,ownerScope:OWNER_SCOPE,ownerId:OWNER,
+   sourceVersion:SHA,now:AT+1,loadCandidates:async()=>{scans++;return [packet(62)]},
+   executePacket:async()=>{throw Error('reservation must fail before any action')}
+  });
+  assert.equal(result.status,'checkpoint_conflict');
+  assert.equal(scans,0);
+  assert.equal(d.sqlite.prepare('SELECT count(*) n FROM continuity_packet_checkpoints').get().n,0);
+ }finally{d.close();}
+});
+
+test('persists one provider-confirmed outcome and the next in-flight identity before a crash',async()=>{
+ const d=database();try{
+  const lease=await claim(d.db,AT,AT,'fence-crash');
+  const result=await runPacketPass({db:d.db,claim:lease,ownerScope:OWNER_SCOPE,ownerId:OWNER,
+   sourceVersion:SHA,now:AT+1,loadCandidates:async()=>[packet(71),packet(72)],
+   executePacket:async(work,{idempotencyKey})=>{
+    if(work.issue===72)throw Error('provider connection lost after request');
+    return {receipt:receipt(work,work.nextAction,'changed',idempotencyKey,{
+     providerConfirmed:true,artifactUrl:'https://github.com/www-infinity4/QuantaPhi/commit/'+SHA})};
+   }
+  });
+  assert.equal(result.status,'reconciliation_required');
+  const saved=JSON.parse(d.sqlite.prepare('SELECT result_json FROM continuity_packet_checkpoints').get().result_json);
+  assert.deepEqual(saved.attempted.map(x=>x.issue),[71]);
+  assert.equal(saved.receipts.length,1);
+  assert.equal(saved.pending.issue,72);
+  assert.equal(saved.done.includes(REPO+'#71#'+SHA+'#edit_code'),true);
+  const next=await claim(d.db,AT+INTERVAL,AT+INTERVAL,'fence-crash-next');
+  let rereads=0,replays=0;
+  const resumed=await runPacketPass({db:d.db,claim:next,ownerScope:OWNER_SCOPE,ownerId:OWNER,
+   sourceVersion:SHA,now:AT+INTERVAL+1,loadCandidates:async()=>{rereads++;return []},
+   executePacket:async()=>{replays++;throw Error('duplicate mutation')}
+  });
+  assert.equal(resumed.status,'reconciliation_required');
+  assert.equal(rereads,0);assert.equal(replays,0);
+ }finally{d.close();}
+});
+
+test('an unchanged source resumes later eligible batches without rereading history',async()=>{
+ const d=database();try{
+  let scans=0,executed=[];
+  const candidates=[packet(81),packet(82),packet(83),packet(84)];
+  const run=async(cycle,source,reader)=>{
+   const lease=await claim(d.db,cycle,cycle,'fence-'+cycle);
+   return runPacketPass({db:d.db,claim:lease,ownerScope:OWNER_SCOPE,ownerId:OWNER,
+    sourceVersion:source,limit:2,now:cycle+1,loadCandidates:reader,
+    executePacket:async(work,{idempotencyKey})=>{
+     executed.push(work.issue);
+     return {receipt:receipt(work,work.nextAction,work.issue<83?'blocked':'changed',idempotencyKey,
+      work.issue<83?{reason:'needs evidence for this revision'}:{
+       providerConfirmed:true,artifactUrl:'https://github.com/www-infinity4/QuantaPhi/commit/'+SHA})};
+    }
+   });
+  };
+  const first=await run(AT,SHA,async()=>{scans++;return candidates});
+  assert.equal(first.status,'processed');
+  assert.deepEqual(executed,[81,82]);
+  const second=await run(AT+INTERVAL,SHA,async()=>{scans++;throw Error('unchanged inventory must stay cached')});
+  assert.equal(second.status,'processed');
+  assert.equal(second.scanned,false);
+  assert.deepEqual(executed,[81,82,83,84]);
+  assert.equal(scans,1);
+  const third=await run(AT+2*INTERVAL,SHA,async()=>{scans++;throw Error('no fresh scan')});
+  assert.equal(third.status,'unchanged');
+  assert.deepEqual(executed,[81,82,83,84]);assert.equal(scans,1);
+ }finally{d.close();}
+});
+
+test('a temporary candidate read failure is settled retryably rather than poisoning the owner checkpoint',async()=>{
+ const d=database();try{
+  const lease=await claim(d.db,AT,AT,'fence-load-1');
+  const failed=await runPacketPass({db:d.db,claim:lease,ownerScope:OWNER_SCOPE,ownerId:OWNER,
+   sourceVersion:SHA,now:AT+1,loadCandidates:async()=>{throw Error('temporary GitHub source outage')},
+   executePacket:async()=>{throw Error('should never execute')}});
+  assert.equal(failed.status,'load_failed');
+  const row=d.sqlite.prepare('SELECT state,result_json FROM continuity_packet_checkpoints').get();
+  assert.equal(row.state,'settled');
+  assert.equal(JSON.parse(row.result_json).inventoryLoaded,false);
+  const newLease=await claim(d.db,AT+INTERVAL,AT+INTERVAL,'fence-load-2');
+  const resumed=await runPacketPass({db:d.db,claim:newLease,ownerScope:OWNER_SCOPE,ownerId:OWNER,
+   sourceVersion:SHA,now:AT+INTERVAL+1,loadCandidates:async()=>[packet(91)],
+   executePacket:async(work,{idempotencyKey})=>({receipt:receipt(work,work.nextAction,'changed',idempotencyKey,{
+    providerConfirmed:true,artifactUrl:'https://github.com/www-infinity4/QuantaPhi/commit/'+SHA})})});
+  assert.equal(resumed.status,'processed');
+  assert.deepEqual(resumed.attempted.map(x=>x.issue),[91]);
+ }finally{d.close();}
+});
+
+test('a completed review does not prevent a later merge action for the same issue and head',async()=>{
+ const d=database();try{
+  const job=packet(92,{nextAction:'request_review'});
+  const first=await claim(d.db,AT,AT,'fence-review');
+  const reviewed=await runPacketPass({db:d.db,claim:first,ownerScope:OWNER_SCOPE,ownerId:OWNER,
+   sourceVersion:SHA,now:AT+1,loadCandidates:async()=>[job],
+   executePacket:async(work,{idempotencyKey})=>({receipt:receipt(work,work.nextAction,'reviewed',idempotencyKey,{
+    providerConfirmed:true,artifactUrl:'https://github.com/www-infinity4/QuantaPhi/pull/92'})})});
+  assert.equal(reviewed.status,'processed');
+  const next=await claim(d.db,AT+INTERVAL,AT+INTERVAL,'fence-merge');
+  const merged=await runPacketPass({db:d.db,claim:next,ownerScope:OWNER_SCOPE,ownerId:OWNER,
+   sourceVersion:NEXT,now:AT+INTERVAL+1,
+   loadCandidates:async()=>[packet(92,{nextAction:'merge_pr',requiredChecksPassed:true,requiredReviewsSatisfied:true})],
+   executePacket:async(work,{idempotencyKey})=>({receipt:receipt(work,work.nextAction,'merged',idempotencyKey,{
+    providerConfirmed:true,mergeSha:THIRD})})});
+  assert.equal(merged.status,'processed');
+  assert.equal(merged.attempted[0].action,'merge_pr');
+ }finally{d.close();}
+});
+
+test('a lease reclaimed between receipt validation and final settlement cannot commit stale state',async()=>{
+ const d=database();try{
+  const lease=await claim(d.db,AT,AT,'fence-final');
+  let expired=false;
+  const db={prepare(sql){
+   const stmt=d.db.prepare(sql);
+   if(!sql.includes('UPDATE continuity_packet_checkpoints SET state='))return stmt;
+   return {bind(...args){const bound=stmt.bind(...args);return {run:async()=>{
+    if(args[0]==='settled'&&!expired){expired=true;d.sqlite.prepare('UPDATE continuity_cycle_receipts SET lease_until=? WHERE cycle_id=?').run(AT,lease.id);}
+    return bound.run();
+   }}}};
+  }};
+  const result=await runPacketPass({db,claim:lease,ownerScope:OWNER_SCOPE,ownerId:OWNER,
+   sourceVersion:SHA,now:AT+1,loadCandidates:async()=>[packet(93)],
+   executePacket:async(work,{idempotencyKey})=>({receipt:receipt(work,work.nextAction,'changed',idempotencyKey,{
+    providerConfirmed:true,artifactUrl:'https://github.com/www-infinity4/QuantaPhi/commit/'+SHA})})});
+  assert.notEqual(result.status,'processed');
+  const row=d.sqlite.prepare('SELECT state,result_json FROM continuity_packet_checkpoints').get();
+  assert.equal(row.state,'running');
+  assert.equal(JSON.parse(row.result_json).receipts.length,1,'confirmed receipt must survive stale final settlement');
+ }finally{d.close();}
+});
