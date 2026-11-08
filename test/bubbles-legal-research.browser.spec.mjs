@@ -10,7 +10,7 @@ test('Bubbles legal research Quick Card prepares a local attorney packet on Andr
  });
  await page.goto(base+'/bubbles-legal-research.html',{waitUntil:'domcontentloaded'});
  await expect(page.getByRole('heading',{name:'Bubbles Legal Research Desk'})).toBeVisible();
- await expect(page.getByRole('button',{name:'Open Bubbles Legal Research'})).toBeVisible();
+ await expect(page.getByRole('button',{name:'Open Bubbles Legal Research',exact:true})).toBeVisible();
  await expect(page.locator('.quantaphi-bubbles-embed-launcher')).toBeVisible();
  const note=page.locator('#legalNotes');
  await note.fill('Please review code ownership and trademarks. <script>bad</script>');
@@ -31,7 +31,7 @@ test('Bubbles legal research Quick Card prepares a local attorney packet on Andr
 });
 test('manual Open Bubbles uses original local page launcher rather than an external fake lawyer',async({page})=>{
  await page.goto(base+'/bubbles-legal-research.html',{waitUntil:'domcontentloaded'});
- const button=page.getByRole('button',{name:'Open Bubbles Legal Research'});
+ const button=page.getByRole('button',{name:'Open Bubbles Legal Research',exact:true});
  await expect(page.locator('.quantaphi-bubbles-embed-launcher')).toHaveAttribute('aria-expanded','false');
  await button.click();
  await expect(page.locator('.quantaphi-bubbles-embed-launcher')).toHaveAttribute('aria-expanded','true');
