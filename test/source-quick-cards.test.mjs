@@ -116,12 +116,12 @@ test('functional source cards enter Public while link-only integrations remain s
  assert.deepEqual(PUBLIC_SOURCE_IDS,[
   'google','bing','youtube','reddit','x','tiktok','starmaker','fox-one','fox-one-live-news',
   'cnn','fox-news','yahoo-news','tv-guide','facebook','instagram','whatsapp',
-  'chatgpt','gemini','claude','copilot','harley-davidson','indian-motorcycle'
+  'chatgpt','gemini','claude','copilot','harley-davidson','indian-motorcycle','pcla-picocela'
  ]);
- assert.equal(PUBLIC_SOURCE_IDS.length,22);
+ assert.equal(PUBLIC_SOURCE_IDS.length,23);
  assert.equal(isPublicSourceCard(findSourceCard('chatgpt')),true);
  for(const card of QUICK_CARD_SOURCES)assert.equal(isPublicSourceCard(card),PUBLIC_SOURCE_IDS.includes(card.id));
- assert.match(launcher,/QUICK_CARD_SOURCES.filter\(isPublicSourceCard\)/);
+ assert.match(launcher,/ACTIVE_SOURCE_CARDS\.filter\(isPublicSourceCard\)/);
  assert.match(deck,/node.dataset.sourceReady!=='true'/);
  assert.match(deck,/const requested=entries.find/);
 });

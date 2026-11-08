@@ -1,4 +1,5 @@
 import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261102-cardimages1';
+import {findDiscovery} from './quanta-feed-catalog.mjs';
 import {mountOfficialViewer} from './quanta-official-viewer.mjs';
 import {MOTORCYCLE_SOURCES} from './motorcycle-quick-cards.mjs';
 import {lookupQuickCard} from './quick-card-search-core.mjs?v=20261028-search1';
@@ -33,17 +34,27 @@ export const QUICK_CARD_SOURCES=Object.freeze([
  source('starmaker','StarMaker','Karaoke','Find a song and sing karaoke','https://www.starmakerstudios.com/en/songs','https://www.starmakerstudios.com/en/songs','Help with song selection, harmonies and vocal practice; recording needs explicit microphone permission and a real licensed backing track.','Open official StarMaker karaoke. QuantaPhi must not copy paid backing tracks, lyrics or recordings without rights.',{secondUrl:'https://play.google.com/store/apps/details?id=com.starmakerinteractive.starmaker',secondLabel:'Open StarMaker on Android'}),
  ...MOTORCYCLE_SOURCES
 ]);
+// Carry one source-backed technology research card into the ACTIVE Oracle
+// source bank; the archived discovery feed is NOT a visible homepage carousel.
+// The source adapter reuses the same verified original catalog record and tools.
+const PCLA_DISCOVERY=findDiscovery('pcla-picocela');
+export const ACTIVE_SOURCE_CARDS=Object.freeze([
+ ...QUICK_CARD_SOURCES,
+ ...(PCLA_DISCOVERY?[source(PCLA_DISCOVERY.id,PCLA_DISCOVERY.name,PCLA_DISCOVERY.category,
+   PCLA_DISCOVERY.feature,PCLA_DISCOVERY.official,PCLA_DISCOVERY.url,
+   PCLA_DISCOVERY.study,PCLA_DISCOVERY.study,PCLA_DISCOVERY)]:[])
+]);
 // Only expose source cards that contain a usable real action (search, player,
 // message draft, model selection, local recording, or approved provider embed). These are
 // independent tools, not claims of publisher data access or affiliation.
 export const PUBLIC_SOURCE_IDS=Object.freeze([
  'google','bing','youtube','reddit','x','tiktok','starmaker','fox-one','fox-one-live-news',
  'cnn','fox-news','yahoo-news','tv-guide','facebook','instagram','whatsapp',
- 'chatgpt','gemini','claude','copilot','harley-davidson','indian-motorcycle'
+ 'chatgpt','gemini','claude','copilot','harley-davidson','indian-motorcycle','pcla-picocela'
 ]);
 export const isPublicSourceCard=card=>Boolean(card&&PUBLIC_SOURCE_IDS.includes(card.id));
 export const findSourceCard=id=>{
- const original=QUICK_CARD_SOURCES.find(p=>p.id===id);if(original)return original;
+ const original=ACTIVE_SOURCE_CARDS.find(p=>p.id===id);if(original)return original;
  const card=lookupQuickCard(id);if(!card)return null;
  return {...card,featureUrl:card.official,focus:'Help visitors use the original '+card.name+' website. Do not invent account access, offers or provider actions.',details:card.description};
 };
@@ -214,7 +225,7 @@ function mountShelf(){
  const host=document.getElementById('siteQuickCards');if(!host)return;
  host.replaceChildren();
  host.append(el('p','iqc-kind','INFINITY 2026® · INTERACTIVE SOURCE TOOLS'),el('h2','','Discover, watch, search, research and create'),el('p','iqc-muted','Use the feature on each card. Provider-owned accounts and copyrighted catalogs remain with their original services.'));
- const cards=el('div','iqc-grid');for(const p of QUICK_CARD_SOURCES.filter(isPublicSourceCard))cards.append(starterCard(p));host.append(cards);
+ const cards=el('div','iqc-grid');for(const p of ACTIVE_SOURCE_CARDS.filter(isPublicSourceCard))cards.append(starterCard(p));host.append(cards);
  // The Oracle viewer discovers each original source article as an individual
  // swipeable card, never a single 15-item link shelf.
  window.dispatchEvent(new Event('quantaphi:source-cards-ready'));
