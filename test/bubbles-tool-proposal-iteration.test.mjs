@@ -68,3 +68,17 @@ test('context observations never consume engineering iteration numbers',()=>{
  assert.match(s.live,/^Iteration 1 · GitHub/);
  assert.equal(s.credits,0,'read-only status checks do not mint a Bubble Bit');
 });
+
+test('a generic model receipt cannot certify or count an unexecuted job-status proposal',()=>{
+ const src=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ const detection=src.indexOf('const unexecutedJobProposal=isUnexecutedJobStatusProposal(rawAnswer)');
+ const receipt=src.indexOf('type:\'tool_receipt\',tool:json.receipt.tool',detection);
+ const finish=src.indexOf('if(nativeOverlay){',receipt);
+ assert.ok(detection>0&&receipt>detection&&finish>receipt);
+ const phase=src.slice(detection,finish);
+ assert.match(phase,/if\(json\.receipt&&!unexecutedJobProposal\)/,
+  'do not emit a completed tool receipt when the model merely printed a proposal');
+ assert.ok(src.indexOf('gptStatus.textContent',detection)>detection,
+  'Android foreground reply status must be evaluated after the unexecuted proposal detector');
+ assert.match(phase,/Tool proposal not executed · runner status unverified/);
+});
