@@ -25,6 +25,6 @@ export function buildOwnerDeveloperCard(){
  inSite.href='/gpt/';
  actions.append(create,inSite);
  card.append(actions);
- card.append(element('p','owner-card-fineprint','The GPT link opens the official ChatGPT destination through QuantaPhi’s existing website viewer. Browser restrictions may prevent embedding; use the viewer’s official-site button if necessary. Tokens are internal project concepts, not confirmed cash balances or guarantees.'));
+ card.append(element('p','owner-card-fineprint','Create with GPT opens the QuantaPhi source-and-HTML instruction handoff; it can copy your project brief before opening official ChatGPT. No private accounts or tools are transferred. Tokens are internal project concepts, not confirmed cash balances or guarantees.'));
  return card;
 }
