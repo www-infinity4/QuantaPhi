@@ -829,12 +829,13 @@ export class BrainClock extends DurableObject{
     }
     if(body.action==='read_branch_status'){
      const result=await githubOperation(runtime,{action:'read_branch_status',repository,branch:body.branch});
-     // Server-produced receipt describes one real readback, not a writer lease,
-     // completed runner job or wallet-mint authorization.
-     return Response.json({...result,readReceipt:result.ok?{
-      id:'branch_'+crypto.randomUUID().replaceAll('-',''),
-      tool:'github.read_branch_status',status:'complete',observedAt:result.observedAt
-     }:null});
+     // Only a verified durable-store round trip may produce a completed
+     // read receipt; an in-memory random ID is not persisted evidence.
+     // This records the READ alone, never a runner job or wallet award.
+     const {storeAndVerifyBranchReadReceipt}=await import('./branch-read-receipt.mjs');
+     const proof=await this.ctx.blockConcurrencyWhile(()=>
+      storeAndVerifyBranchReadReceipt(this.ctx.storage,result));
+     return Response.json({...result,readReceipt:proof});
     }
     const head=await githubOperation(runtime,{action:'read_repository',repository});
     if(!/^([a-f0-9]{40})$/.test(head.headSha||''))throw Error('github_head_sha_invalid');
