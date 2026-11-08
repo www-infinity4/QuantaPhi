@@ -5,7 +5,7 @@ state: review_pending
 dot: "🟡"
 progress_percent: unknown
 progress_basis: "Source-level continuation and admission diagnostics staged; no production job execution or live Android acceptance proved"
-sessions_spent: unknown
+sessions_spent: 2
 sessions_remaining_estimate: unknown
 agent: ChatGPT
 lease_id: null
@@ -99,6 +99,8 @@ A fresh reviewer approved source merge with BUBBLE_BITS_ENABLED absent/OFF after
 
 
 ## 2026-11-07 CT · Chiller job-status source repair continuation
+- Session ledger field `sessions_spent: 2` is a conservative minimum: the pre-existing recorded session plus the current verified repair continuation. Earlier narrative notes are retained but not treated as extra independently counted sessions without a distinct session ID; the exact total historical count is not established.
+
 
 - Reused issue [#1192](https://github.com/www-infinity4/QuantaPhi/issues/1192), Bubble Bits [#1296](https://github.com/www-infinity4/QuantaPhi/issues/1296) and [PR #1827](https://github.com/www-infinity4/QuantaPhi/pull/1827); no coordinator lease/owner receipt was claimed, lease and fence remain null. This is another source engineering session, not a finished live job.
 - Reproduced the owner's screenshot: raw model-proposed `check_job_status` JSON was shown as though a tool call, while two context checks were miscounted as work. Added a reply guard, separate context rows, and an authenticated read-only Chiller branch status route using the existing signed owner Brain ingress. Branch ref and GitHub numeric repository identity are validated; an absent branch never proves a runner ran.
