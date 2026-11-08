@@ -10,6 +10,7 @@ sessions_remaining_estimate: unknown
 agent: "ChatGPT Green, source-only; no owner Brain executor lease"
 lease_id: null
 lease_expires_at: null
+task_session_id: null
 fence: null
 repo: "www-infinity4/QuantaPhi"
 branch: "feat/bubbles-legal-research-desk-1837-20261107"
@@ -20,6 +21,8 @@ next_action: "Read exact-head PR CI, fix failures, obtain independent review and
 blocker: "CI and physical Android/browser live acceptance not verified; a licensed lawyer has not reviewed any document."
 ---
 # Ticket #1837: Bubbles Legal Research Desk
+
+Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1837
 
 Owner selected the official Google Play $25 one-time developer registration route and intends to consult a lawyer later. No fee has been paid and no counsel has been retained.
 
