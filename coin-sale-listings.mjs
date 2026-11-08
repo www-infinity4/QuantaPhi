@@ -65,7 +65,7 @@ const CC0_REFERENCE_PHOTOS=Object.freeze({
   image:'https://commons.wikimedia.org/wiki/Special:FilePath/Coin_slabs.jpg?width=960',
   credit:'Bruxton · Wikimedia Commons · CC0 1.0',
   license:'CC0-1.0',
-  label:'Reference: real graded coin holders including PCGS, not an auction lot',
+  label:'Reference: real graded coin holders including PCGS, not a seller listing or the pictured auction lot',
   isListingPhoto:false
  }),
  ngc:Object.freeze({
