@@ -2431,13 +2431,13 @@ async function askClaudeSteward(text,mode){
  try{
   const result=await steward.ask(text,{mode,evidence:window.__bubblesRecentMessages().slice(0,-1),inline:true});
   confirmed=result?.ok===true&&typeof result.reply==='string'&&Boolean(result.reply.trim());
-  reply=confirmed?String(result.reply).slice(0,1500):'Claude did not confirm a response. Your draft is preserved; check existing Brain tickets before retrying.';
+  reply=confirmed?String(result.reply).slice(0,1500):steward.describeError(result?.error)+' Your draft is preserved; check existing Brain tickets before retrying.';
   if(result?.patches?.length)reply+='\n\n'+result.patches.length+' proposed patch(es), verified against source but not applied. Open Claude to inspect details.';
   if(result?.tickets?.length)reply+='\n\n'+result.tickets.map(ticket=>(ticket.deduplicated?'Existing ':'Recorded ')+String(ticket.status||'unknown')+' ticket '+ticket.id).join('; ')+'.';
   if(result?.partial)reply+='\nClaude stopped early. The listed receipts are partial; no deployment was verified.';
  }catch(error){reply='Claude steward not confirmed: '+String(error.message||error).slice(0,160)+'.';}
- display(reply,'ai');messages.push({role:'assistant',text:reply});messages=messages.slice(-400);persistChat();
- status.textContent=confirmed?'Claude steward replied.':'Claude response not confirmed. Your message remains in the composer.';
+ display(reply,'ai');messages.push({role:'assistant',text:reply,...(confirmed?{provider:'anthropic'}:{failed:true})});messages=messages.slice(-400);persistChat();
+ status.textContent=confirmed?'Claude steward replied.':reply.slice(0,160)+' Your message remains in the composer.';
  busy=false;send.disabled=false;setOrbState(voiceEnabled?'listening':'idle');
  drainVoiceTurns();
  return confirmed;
