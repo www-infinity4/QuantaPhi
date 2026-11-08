@@ -21,7 +21,9 @@ test('artist playback is tap-initiated and uses a genuinely visible player with 
  assert.ok(s.includes('frame.removeAttribute'));
  assert.ok(s.includes('stevemillerband.com/releases-archive/book-dreams'));
  const classic=source('classic-rock-official-card.mjs');
- assert.ok(classic.includes('const track=tracks[trackIndex%tracks.length]'));\n assert.ok(classic.includes("frame.src='https://www.youtube.com/embed/'+track.videoId"));\n assert.ok(classic.includes('track?.videoId'));
+ assert.ok(classic.includes('const track=tracks[trackIndex%tracks.length]'));
+ assert.ok(classic.includes("frame.src='https://www.youtube.com/embed/'+track.videoId"));
+ assert.ok(classic.includes('track?.videoId'));
  assert.ok(classic.includes("frame.src='https://www.youtube.com/embed/'"));
  assert.ok(!classic.includes('window.InfinityRadioQuick.toggle()'));
 });
