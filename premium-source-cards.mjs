@@ -154,7 +154,7 @@ function mountCoinSales(article,card,field){
      if(row.description)item.append(make('p','premium-coin-summary',row.description));
      const original=make('a','premium-coin-lot-link','View actual lot photographs at '+row.seller+' ↗');
      original.href=row.url;original.target='_blank';original.rel='noopener noreferrer';item.append(original);
-     item.append(make('p','premium-coin-rights',row.image?'This actual lot photograph is shown with seller-specific reuse permission and source credit.':'Seller photographs stay with the source until image reuse is authorized. The separately licensed reference photo is not this lot.'));
+     item.append(make('p','premium-coin-rights',row.image?'Exact-lot image use is authorized in the approved media register. If the photo cannot load here, view the original seller listing; its pictured coin and current availability must be checked there.':'Seller photographs stay with the source until image reuse is authorized. The separately licensed reference photo is not this lot.'));
      count.textContent=position+1+' / '+rows.length;prev.disabled=position===0;next.disabled=position===rows.length-1;
     }
     prev.addEventListener('click',()=>{position--;show()});
