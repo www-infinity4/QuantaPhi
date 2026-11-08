@@ -2282,8 +2282,18 @@ function describeBubblesToolOutcome(json,answer){
  const note=explanations[state]||(incomplete?'The tool returned data, but the requested explanation or outcome remains incomplete.':'');
  return note?(text?text+'\n\n'+note:note):text;
 }
+// Model-generated structured text is NOT an authenticated tool invocation.
+// Report proposed job-status calls as unexecuted unless a real tool receipt exists.
+function isUnexecutedJobStatusProposal(text){
+ const value=String(text||'');
+ return /["']action["']\s*:\s*["'](?:check_job_status|check_runner_status)["']/i.test(value)
+  && /["']parameters["']\s*:/i.test(value)
+  && /["'](?:repo|repository)["']\s*:\s*["'][A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+["']/i.test(value);
+}
 function normalizeOwnerAssistantReply(reply,request,ownerVerified){
  const answer=String(reply||'').trim();
+ if(isUnexecutedJobStatusProposal(answer))
+  return 'Bubbles proposed a repository job-status check, but no authenticated tool executed that proposal. The runner result is unverified; check the saved job receipt before reporting completion.';
  // Preserve the specific GitHub-search failure message from the concurrent repair.
  if(/["']action["']\s*:\s*["']github[.](?:searchCode|search_code)["'][\s\S]{0,1600}["']parameters["']\s*:/i.test(answer))
   return 'Bubbles received unexecuted GitHub search instructions, not actual results. The source search and card repair have not been verified.';
@@ -3424,16 +3434,18 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   const rawAnswer=extract(json);
    if(!rawAnswer&&!cardoneResearch)throw Error('The AI returned no spoken or written reply');
    if(!cardoneResearch&&/^(?:on it|working on it|checking|thinking|one moment|just a moment)[.!…\s]*$/i.test(rawAnswer.trim()))throw Error('The assistant acknowledged the request but returned no result.');
+   const unexecutedJobProposal=isUnexecutedJobStatusProposal(rawAnswer);
    const answer=normalizeOwnerAssistantReply(rawAnswer,request,ownerReady&&Boolean(ownerHeaders?.Authorization));
    const finalAnswer=describeBubblesToolOutcome(json,cardoneResearch&&
     (cardoneReplyUnusable(rawAnswer)||json.answerStatus==='partial'||
      json.receipt?.tool==='web.search'&&json.receipt?.status!=='complete')
      ?cardoneSourceFallback(request):answer);
    if(json.receipt?.tool==='weather.current'&&json.location){try{localStorage.setItem('bubbles-weather-town',json.location);}catch{}}
-  const receiptFailed=['failed','blocked','invalid_input','unconfirmed'].includes(json.receipt?.status)||json.answerStatus==='partial';
+  const receiptFailed=unexecutedJobProposal||['failed','blocked','invalid_input','unconfirmed'].includes(json.receipt?.status)||json.answerStatus==='partial';
   if(receiptFailed)failedTurn=true;
   messages.push({role:'assistant',text:finalAnswer,...(receiptFailed?{failed:true}:{})});messages=messages.slice(-400);persistChat();
-  display(finalAnswer,'ai');status.textContent=config.alias+' · response received';
+  display(finalAnswer,'ai');
+   status.textContent=unexecutedJobProposal?'Tool proposal not executed · runner status unverified':config.alias+' · response received';
   // Search sources remain tappable in this same Bubbles chat; voice never reads raw URLs.
   if(json.receipt?.tool==='web.search'){
    const row=create('div','ba-message-actions ba-search-sources');
@@ -3467,7 +3479,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
     type:'tool_receipt',tool:json.receipt.tool,status:json.receipt.status,receiptId:json.receipt.id
    }}));
-   status.textContent=json.answerStatus==='partial'||json.receipt.status==='failed'?'I could not verify the full result.':'Reply ready.';
+   status.textContent=unexecutedJobProposal?'Tool proposal not executed · runner status unverified':
+     json.answerStatus==='partial'||json.receipt.status==='failed'?'I could not verify the full result.':'Reply ready.';
   }
   if(nativeOverlay){
     // The Android foreground service handles speech output; typed messages
