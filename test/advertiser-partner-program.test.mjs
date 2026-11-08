@@ -6,7 +6,7 @@ const read=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 const offer={plan:'voluntary-support',businessName:'Sample Shoe Co',siteUrl:'https://sample-shoe.example.org/products',
  details:'We would like to support future independent editorial Quick Cards.',acknowledge:true};
 const campaign={merchantId:'store-1',campaignId:'campaign-1',startsAt:'2026-11-01T00:00:00Z'};
-const coverage={merchantId:'store-1',campaignId:'campaign-1',source:'authorized-merchant-orders',finalized:true,refundsComplete:true,
+const coverage={merchantId:'store-1',campaignId:'campaign-1',source:'authorized-merchant-orders',finalized:true,refundsComplete:true,chargebacksComplete:true,
  periodStart:'2026-11-01T00:00:00Z',periodEnd:'2026-12-01T00:00:00Z'};
 const sale=(orderId,netCents,extra={})=>({orderId,merchantId:'store-1',campaignId:'campaign-1',
  currency:'USD',state:'settled',attributedBy:'quantaphi-referral',verifiedBy:'merchant-provider',
@@ -69,7 +69,7 @@ test('unverified, outside-campaign and wrong-merchant orders never count as proo
 });
 test('same order id is counted once and refund-adjusted net is used',()=>{
  const check=reviewAttributedSales(campaign,{coverage,receipts:[
-  sale('order-1',70000),sale('order-1',70000),sale('order-2',40000,{refundCents:20000})
+  sale('order-1',70000),sale('order-1',70000),sale('order-2',40000,{refundCents:12000,chargebackCents:8000})
  ]},'2026-12-05T00:00:00Z');
  assert.equal(check.netSalesCents,90000);
  assert.equal(check.status,'under_target_review');
@@ -86,6 +86,7 @@ test('exact $1,000 verified net sales meets the target without billing',()=>{
 test('30-day window and coverage are mandatory; nothing is billed on unverified receipts',()=>{
  assert.equal(reviewAttributedSales(campaign,{coverage:null,receipts:[sale('a',999999)]},'2026-12-05T00:00:00Z').status,'needs_verified_coverage');
  assert.equal(reviewAttributedSales(campaign,{coverage:{...coverage,refundsComplete:false},receipts:[sale('a',999999)]},'2026-12-05T00:00:00Z').status,'needs_verified_coverage');
+ assert.equal(reviewAttributedSales(campaign,{coverage:{...coverage,chargebacksComplete:false},receipts:[sale('a',999999)]},'2026-12-05T00:00:00Z').status,'needs_verified_coverage');
  assert.equal(reviewAttributedSales(campaign,{coverage,receipts:[sale('a',999999)]},'2026-11-20T00:00:00Z').status,'in_progress');
  const dup=reviewAttributedSales(campaign,{coverage,receipts:[sale('a',30000),sale('a',90000)]},'2026-12-05T00:00:00Z');
  assert.equal(dup.status,'needs_verified_coverage');
