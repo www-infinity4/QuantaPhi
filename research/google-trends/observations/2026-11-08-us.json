@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-08T17:31:22.376490Z",
+  "checked_at": "2026-11-08T18:01:29.217101Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "panthers vs bruins",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T17:10:00Z",
+      "query": "alex singleton",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-08T17:40:00Z",
       "related_news_urls": [
-        "https://www.stanleycupofchowder.com/26-27-game-coverage/59682/preview-bruins-look-to-extend-streak-against-panthers",
-        "https://sports.yahoo.com/articles/panthers-vs-bruins-prediction-picks-151243441.html",
-        "https://www.nhl.com/panthers/news/preview-panthers-take-on-bruins-in-atlantic-division-battle"
+        "https://www.denverbroncos.com/news/broncos-ilb-alex-singleton-named-afc-defensive-player-of-the-month",
+        "https://3downnation.com/2026/11/06/former-cfl-star-alex-singleton-has-been-the-best-backer-in-football-for-a-long-time-broncos-dc-vance-joseph/",
+        "https://athlonsports.com/nfl/denver-broncos/alex-singleton-chuba-hubbard-broncos-panthers"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToD75TR451xIXYtXoHT5U2EQdEyUfOf4yG5e8B0IeHP6yENmrkqw9Ei-nMSHQ",
-      "image_credit": "Stanley Cup of Chowder",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaw3jwpHDjSSCcQqhyRUska_jpXnwRyf6Uv3UE1z9kQ_1orqcZN-ixXpT_aZc",
+      "image_credit": "Denver Broncos",
       "news": [
         {
-          "url": "https://www.stanleycupofchowder.com/26-27-game-coverage/59682/preview-bruins-look-to-extend-streak-against-panthers",
-          "title": "Preview: Bruins look to extend streak against Panthers",
-          "publisher": "Stanley Cup of Chowder",
+          "url": "https://www.denverbroncos.com/news/broncos-ilb-alex-singleton-named-afc-defensive-player-of-the-month",
+          "title": "Broncos ILB Alex Singleton named AFC Defensive Player of the Month",
+          "publisher": "Denver Broncos",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToD75TR451xIXYtXoHT5U2EQdEyUfOf4yG5e8B0IeHP6yENmrkqw9Ei-nMSHQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaw3jwpHDjSSCcQqhyRUska_jpXnwRyf6Uv3UE1z9kQ_1orqcZN-ixXpT_aZc"
         },
         {
-          "url": "https://sports.yahoo.com/articles/panthers-vs-bruins-prediction-picks-151243441.html",
-          "title": "Panthers vs Bruins Prediction, Picks, NHL Odds for Sunday, November 8",
-          "publisher": "Yahoo Sports",
+          "url": "https://3downnation.com/2026/11/06/former-cfl-star-alex-singleton-has-been-the-best-backer-in-football-for-a-long-time-broncos-dc-vance-joseph/",
+          "title": "Former CFL star Alex Singleton has been 'the best backer in football for a long time': Broncos DC Vance Joseph",
+          "publisher": "3DownNation",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPAzBvij8wlAzXQORHSEMEu4gOHtbNlioAO48z4XBvF6clJF3GqYZY82Gdi_M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQaWwGPTRw9cABLF56UhvGLAqgVkZM7gzJNIYqHJcO42NF41aCitY9vzobagOM"
         },
         {
-          "url": "https://www.nhl.com/panthers/news/preview-panthers-take-on-bruins-in-atlantic-division-battle",
-          "title": "PREVIEW: Panthers take on Bruins in Atlantic Division battle",
-          "publisher": "NHL.com",
+          "url": "https://athlonsports.com/nfl/denver-broncos/alex-singleton-chuba-hubbard-broncos-panthers",
+          "title": "How Alex Singleton's 101 Tackles Set Up a Collision With Chuba Hubbard's 540 Rushing Yards When the Broncos Visit Carolina",
+          "publisher": "Athlon Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsfDCMquNLeiOgETwiVqvwvTbBz8uyvoHHHBfqp6Lxi6ty-q7mQ--isQmvklM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQIP6nwEV88T3XIy9u6c3FtI3_IEIGuqyEOUBZj-KN-iOSrNtRETSBjT5-f_o"
         }
       ]
     },
     {
-      "query": "seattle reign fc vs gotham",
+      "query": "nwsl",
       "approx_searches": "500+",
-      "published_at": "2026-11-08T17:10:00Z",
+      "published_at": "2026-11-08T17:40:00Z",
       "related_news_urls": [
-        "https://www.sounderatheart.com/2026/11/nwsl-quarterfinal-preview-seattle-reign-vs-gotham-fc/",
-        "https://www.seattletimes.com/sports/reign/reign-fc-face-top-seeded-gotham-in-nwsl-playoffs-sunday-heres-what-to-know/",
-        "https://www.sportsbusinessjournal.com/Articles/2026/11/06/gotham-fc-sells-3000-playoff-tickets-in-24-hours-through-mamdani-promotion/"
+        "https://www.theguardian.com/football/2026/nov/07/nwsl-playoffs-kansas-city-current-angel-city-utah-royals-san-diego-wave",
+        "https://www.nytimes.com/athletic/7761799/2026/11/07/kansas-city-victory-angel-city-nwsl-quarterfinal/",
+        "https://www.kansascity.com/sports/soccer/kc-current/article317927995.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqkPWuPe3sZMwWrSqvkXBiXHonSfekXjs7cYNKXKaP9PicLmof4SkTvTpiiF0",
-      "image_credit": "Sounder at Heart",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-jV40tGy-OHHW6ezhFHXhFb5dwJ1Gyyte-fRh53TwJrscZUlh6s5d6sK0Vsk",
+      "image_credit": "The Guardian",
       "news": [
         {
-          "url": "https://www.sounderatheart.com/2026/11/nwsl-quarterfinal-preview-seattle-reign-vs-gotham-fc/",
-          "title": "NWSL quarterfinal preview: Seattle Reign vs. Gotham FC",
-          "publisher": "Sounder at Heart",
+          "url": "https://www.theguardian.com/football/2026/nov/07/nwsl-playoffs-kansas-city-current-angel-city-utah-royals-san-diego-wave",
+          "title": "NWSL playoffs: Cooper’s extra-time penalty sends Kansas City through as Utah stun San Diego",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqkPWuPe3sZMwWrSqvkXBiXHonSfekXjs7cYNKXKaP9PicLmof4SkTvTpiiF0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-jV40tGy-OHHW6ezhFHXhFb5dwJ1Gyyte-fRh53TwJrscZUlh6s5d6sK0Vsk"
         },
         {
-          "url": "https://www.seattletimes.com/sports/reign/reign-fc-face-top-seeded-gotham-in-nwsl-playoffs-sunday-heres-what-to-know/",
-          "title": "What to know as the Reign open NWSL playoffs",
+          "url": "https://www.nytimes.com/athletic/7761799/2026/11/07/kansas-city-victory-angel-city-nwsl-quarterfinal/",
+          "title": "Kansas City secures NWSL quarterfinal win on penalty Angel City coach calls ‘tremendously cheap’ - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0_weaT4233VVXQ4a5evWM7fJSh0bLFxfv9zV37GSG-BoEGYDM5M2Ksu0Ji7Q"
+        },
+        {
+          "url": "https://www.kansascity.com/sports/soccer/kc-current/article317927995.html",
+          "title": "Kansas City Current wins NWSL playoff game vs. Angel City, advances to semifinals",
+          "publisher": "Kansas City Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQh0pFHFHl_jZHtM3TgZRaqVzVIhBUsrHNYbKxqk5odtzHJikLLpK2JG6G52dQ"
+        }
+      ]
+    },
+    {
+      "query": "michael strahan",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T17:40:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/tv/articles/michael-strahan-next-tv-move-125300079.html",
+        "https://people.com/michael-strahan-biggest-names-fashion-television-music-new-iconic-series-12230250",
+        "https://whatsondisneyplus.com/michael-strahans-iconic-fashion-coming-soon-to-abc-hulu-disney/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRsLJfj2UD9UNF_ON9Q4t5pjwwfbvEwfmHjdWiFM-zTbANQhA6ZrKGC3W0LUSA",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/michael-strahan-next-tv-move-125300079.html",
+          "title": "Michael Strahan’s Next TV Move Has Fans Calling Him an “Icon”",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRsLJfj2UD9UNF_ON9Q4t5pjwwfbvEwfmHjdWiFM-zTbANQhA6ZrKGC3W0LUSA"
+        },
+        {
+          "url": "https://people.com/michael-strahan-biggest-names-fashion-television-music-new-iconic-series-12230250",
+          "title": "Michael Strahan Pulls Back the Curtain on the Biggest Names in Fashion, Television and Music in New Iconic Series",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6AuOmGQ32gXNxSl7RvnDECKj4pU0I8pJaO0WQiPr0GtQUpknNF-z0OohessY"
+        },
+        {
+          "url": "https://whatsondisneyplus.com/michael-strahans-iconic-fashion-coming-soon-to-abc-hulu-disney/",
+          "title": "“Michael Strahan’s Iconic Fashion” Coming Soon To ABC, Hulu & Disney+",
+          "publisher": "What's On Disney Plus",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOqlkuLTX6hLSYk-6KGSV2lwQbFpK_7RsaKFpLteGM1ad4YpDfaxyl-6pdI7w"
+        }
+      ]
+    },
+    {
+      "query": "vitória sc vs porto",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T17:30:00Z",
+      "related_news_urls": [
+        "https://www.abola.pt/noticias/fc-porto-duelo-de-guimaraes-com-o-sporting-de-amorim-a-mao-de-semear-2026110719395349764",
+        "https://www.sporttv.pt/noticias/866488/farioli-e-a-sequencia-vitoriosa-fica-para-tras",
+        "https://www.noticiasaominuto.com/desporto/3080247/vitoria-sc-fc-porto-o-assalto-ao-castelo-da-tranquilidade"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJv8t-5T8TVzfXXy6hc9mEZJN8b3vAOrr_2Y4gK_0tPkCwdtt-Jf3xm4hLAHI",
+      "image_credit": "A Bola",
+      "news": [
+        {
+          "url": "https://www.abola.pt/noticias/fc-porto-duelo-de-guimaraes-com-o-sporting-de-amorim-a-mao-de-semear-2026110719395349764",
+          "title": "FC Porto: duelo de Guimarães com o Sporting de Amorim à mão de semear",
+          "publisher": "A Bola",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJv8t-5T8TVzfXXy6hc9mEZJN8b3vAOrr_2Y4gK_0tPkCwdtt-Jf3xm4hLAHI"
+        },
+        {
+          "url": "https://www.sporttv.pt/noticias/866488/farioli-e-a-sequencia-vitoriosa-fica-para-tras",
+          "title": "Farioli e a sequência vitoriosa: \"Fica para trás\"",
+          "publisher": "Sport TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnBAs2j4G0tIikOJySgq0DNu-MhVv2JbtvwqsrTbicaZfPWuOpDEZyhznsLeo"
+        },
+        {
+          "url": "https://www.noticiasaominuto.com/desporto/3080247/vitoria-sc-fc-porto-o-assalto-ao-castelo-da-tranquilidade",
+          "title": "Vitória SC: FC Porto: O assalto ao castelo... da tranquilidade",
+          "publisher": "Notícias ao Minuto",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQx1_SxHeSfFc_v0BUe7quOZvrLW-Gbwjz1M-byO2jXYN0RY5Xa4gDqKHgKs-c"
+        }
+      ]
+    },
+    {
+      "query": "marshals tv show schedule change",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T17:30:00Z",
+      "related_news_urls": [
+        "https://people.com/why-isnt-marshals-on-tonight-12240393",
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/06/cbs-sunday-schedule-change-november-marshals-tracker/92639301007/",
+        "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/tracker-marshals-tv-tonight-ll-124111044.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAlo4VxIt5yjwjjugjzxkrHKC_drU-dQ4kUZR9xJmFHB3ViiQnk7tFo4zFSu0",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/why-isnt-marshals-on-tonight-12240393",
+          "title": "Why Isn’t Marshals on Tonight? What to Know About the Surprising Season 2 Schedule Change",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAlo4VxIt5yjwjjugjzxkrHKC_drU-dQ4kUZR9xJmFHB3ViiQnk7tFo4zFSu0"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/06/cbs-sunday-schedule-change-november-marshals-tracker/92639301007/",
+          "title": "Why 'Marshals' and 'Tracker' won't be on air on CBS Sunday",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjgoVyetNtyOMq4gZJl3tKzWpoXjjZ6icaYi06KSOLH0o2B3wSFfEX4KeNmCM"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/tracker-marshals-tv-tonight-ll-124111044.html",
+          "title": "Are ‘Tracker’ & ‘Marshals’ New on TV Tonight? When They’ll Return Amid ‘Cupertino’ November 8 Takeover",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTshEquBvulTk0Dz4kM4qSXXI-ZusBB43Z2pAw_6xnxcvyWdBG3BpCoiEHOzwU"
+        }
+      ]
+    },
+    {
+      "query": "jack mccaffery",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T17:30:00Z",
+      "related_news_urls": [
+        "https://cbs2iowa.com/news/local/former-iowa-coach-fran-mccafferys-son-jack-diagnosed-with-hodgkin-lymphoma",
+        "https://richmondspiders.com/news/2026/11/8/mccaffery-to-take-medical-leave-from-mens-basketball-team",
+        "https://thespun.com/wnba/caitlin-clarks-boyfriends-family-asking-for-prayers-sunday"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa0VF1ZgBGC2DhWGD91n0fTBvz0W6gOkZCq-ROcJc2xSXFmXoWb44ElDOSWi4",
+      "image_credit": "KGAN",
+      "news": [
+        {
+          "url": "https://cbs2iowa.com/news/local/former-iowa-coach-fran-mccafferys-son-jack-diagnosed-with-hodgkin-lymphoma",
+          "title": "Former Iowa coach Fran McCaffery's son Jack diagnosed with Hodgkin lymphoma",
+          "publisher": "KGAN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa0VF1ZgBGC2DhWGD91n0fTBvz0W6gOkZCq-ROcJc2xSXFmXoWb44ElDOSWi4"
+        },
+        {
+          "url": "https://richmondspiders.com/news/2026/11/8/mccaffery-to-take-medical-leave-from-mens-basketball-team",
+          "title": "McCaffery to Take Medical Leave from Men's Basketball Team - University of Richmond Athletics",
+          "publisher": "Richmond Spiders",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBAIlNZgyC02yLVAP2hjOaYyqtAwuTRkOcXLhepQdEU61VX1qYkNjAj6GOVHk"
+        },
+        {
+          "url": "https://thespun.com/wnba/caitlin-clarks-boyfriends-family-asking-for-prayers-sunday",
+          "title": "Caitlin Clark’s Boyfriend’s Family Asking For Prayers Sunday",
+          "publisher": "The Spun",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4RCNn1AMbcEkDAKUurwtyAvzPqIo2D1oA9o6ZI44ivx_ksIhhzKFamRlj4CU"
+        }
+      ]
+    },
+    {
+      "query": "cardinals vs seahawks",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T17:30:00Z",
+      "related_news_urls": [
+        "https://www.seattletimes.com/sports/seahawks/cardinals-gardner-minshew-eager-for-northwest-return-to-face-seahawks/",
+        "https://sports.yahoo.com/articles/cardinals-vs-seahawks-prediction-pick-145004758.html",
+        "https://www.fieldgulls.com/seattle-seahawks-news/179381/seahawks-news-seahawks-look-to-get-right-versus-cardinals-today"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-N8Nojytq98qx_pe__jlFhoELom2tQqjWRwA_aX4G-lea1elMn95N8b6SitQ",
+      "image_credit": "The Seattle Times",
+      "news": [
+        {
+          "url": "https://www.seattletimes.com/sports/seahawks/cardinals-gardner-minshew-eager-for-northwest-return-to-face-seahawks/",
+          "title": "WSU great 'fired up' for PNW return to face Seahawks",
           "publisher": "The Seattle Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFxqmbURZgoHsUtkLrkL3bKt7rE809Wqjs6NtriG_83n4rIiDd4dkPiW5Gh7k"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-N8Nojytq98qx_pe__jlFhoELom2tQqjWRwA_aX4G-lea1elMn95N8b6SitQ"
         },
         {
-          "url": "https://www.sportsbusinessjournal.com/Articles/2026/11/06/gotham-fc-sells-3000-playoff-tickets-in-24-hours-through-mamdani-promotion/",
-          "title": "Gotham FC sells 3,000 playoff tickets in 24 hours through Mamdani promotion",
-          "publisher": "Sports Business Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYv4EYHy0c_8B6s_O30VEGGDjKXe6s0LyNxkfyz5WlK2mCThsH_ReVPI1HcAI"
-        }
-      ]
-    },
-    {
-      "query": "arkansas basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T17:10:00Z",
-      "related_news_urls": [
-        "https://arkansasrazorbacks.com/mbb-preview-arkansas-vs-virginia-in-the-capital-showcase/",
-        "https://www.wholehogsports.com/news/2026/nov/07/arkansas-basketball-vs-virginia-in-washington-dc-how-to-watch-betting-line-what-to-know/",
-        "https://virginiasports.com/news/2026/11/7/no-9-virginia-battles-no-12-arkansas-in-skyscanner-capital-showcase"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_W1y4YQB7UbUYih4x9hRxQ9tipYTTizGzCctLBXGZTCmDVysGsMkUpTzWrwE",
-      "image_credit": "Arkansas Razorbacks",
-      "news": [
-        {
-          "url": "https://arkansasrazorbacks.com/mbb-preview-arkansas-vs-virginia-in-the-capital-showcase/",
-          "title": "MBB Preview: Arkansas vs Virginia in the Capital Showcase",
-          "publisher": "Arkansas Razorbacks",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_W1y4YQB7UbUYih4x9hRxQ9tipYTTizGzCctLBXGZTCmDVysGsMkUpTzWrwE"
-        },
-        {
-          "url": "https://www.wholehogsports.com/news/2026/nov/07/arkansas-basketball-vs-virginia-in-washington-dc-how-to-watch-betting-line-what-to-know/",
-          "title": "Arkansas basketball vs. Virginia in Washington, D.C.: How to watch, betting line, what to know",
-          "publisher": "Whole Hog Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQN8rl8yqm9gzCEb_XZ8B3aamxcd1VawyE6JWfp3iW6CHlAWTeTmfUvPQIU7tY"
-        },
-        {
-          "url": "https://virginiasports.com/news/2026/11/7/no-9-virginia-battles-no-12-arkansas-in-skyscanner-capital-showcase",
-          "title": "No. 9 Virginia Battles No. 12 Arkansas in Skyscanner Capital Showcase",
-          "publisher": "Virginia Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlmji_uvZ71mYoVWd1ukm36DF2yf0QCi0wWFYDGB8ZOqgMYuOb45Cd1n8gqUc"
-        }
-      ]
-    },
-    {
-      "query": "kevin kane",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T17:10:00Z",
-      "related_news_urls": [
-        "https://www.indystar.com/story/sports/college/purdue/2026/11/08/purdue-football-coach-barry-odom-fires-kevin-kane-defensive-coordinator-hire-transfer-portal/92675115007/",
-        "https://sports.yahoo.com/articles/kevin-kane-fired-purdue-football-165501985.html",
-        "https://www.on3.com/teams/purdue-boilermakers/news/purdue-parts-ways-with-dc-kevin-kane/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0M1xSybWy_nrreLjyBvl82iPf1bk8oKBMpPb0ld1NUNmIUb8JLfbA-jQE07s",
-      "image_credit": "IndyStar",
-      "news": [
-        {
-          "url": "https://www.indystar.com/story/sports/college/purdue/2026/11/08/purdue-football-coach-barry-odom-fires-kevin-kane-defensive-coordinator-hire-transfer-portal/92675115007/",
-          "title": "Purdue coach Barry Odom' doesn't get credit for firing his questionable hire. Proof is in results",
-          "publisher": "IndyStar",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0M1xSybWy_nrreLjyBvl82iPf1bk8oKBMpPb0ld1NUNmIUb8JLfbA-jQE07s"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/kevin-kane-fired-purdue-football-165501985.html",
-          "title": "Kevin Kane fired as Purdue football defensive coordinator. What we know",
+          "url": "https://sports.yahoo.com/articles/cardinals-vs-seahawks-prediction-pick-145004758.html",
+          "title": "Cardinals vs Seahawks Prediction, Pick, Odds for NFL Week 9",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSq-fQA-_9zI_LmKrV6DtF6uOa5ZFKtmP4tEQNtykWwUb-umlETQwPlxXn7Ww0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgfqxJYclaeblX_Ticv0B0rph2lIkUtzd7mEHeqSmSSCQEgQ3L3BMS3wWTxAU"
         },
         {
-          "url": "https://www.on3.com/teams/purdue-boilermakers/news/purdue-parts-ways-with-dc-kevin-kane/",
-          "title": "Purdue parts ways with DC Kevin Kane",
-          "publisher": "On3",
+          "url": "https://www.fieldgulls.com/seattle-seahawks-news/179381/seahawks-news-seahawks-look-to-get-right-versus-cardinals-today",
+          "title": "Pre-Snap Reads: Seahawks look to get right versus Cardinals today",
+          "publisher": "Field Gulls",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVY9tZvZmkNpdfqqM3FCfVsHtzG0fI12-2WbSnJskolqe3o6MB4LzxaFZbrnU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTan9Ul0IPDNxmXibjqXTPKQfg4RK1nlNmK4AJeW50BeoqXVqHbI4XqNkfXVxk"
         }
       ]
     },
     {
-      "query": "sammy kershaw cma awards snub",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T17:00:00Z",
+      "query": "shedeur sanders",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T17:20:00Z",
       "related_news_urls": [
-        "https://www.kalb.com/2026/11/06/it-really-hurts-me-louisiana-native-country-music-star-sammy-kershaw-says-cma-denied-red-carpet-request-two-weeks-before-show/",
-        "https://www.pennlive.com/entertainment/2026/11/country-music-star-rips-cma-awards-after-extremely-hurtful-decision.html",
-        "https://www.tennessean.com/story/entertainment/music/2026/11/06/sammy-kershaw-cma-awards-denied-red-carpet-request/92640335007/"
+        "https://www.espn.com/nfl/story/_/id/50409705/browns-qb-deshaun-watson-concussion-protocol",
+        "https://sports.yahoo.com/articles/weird-2-time-super-bowl-171832232.html",
+        "https://www.foxnews.com/outkick-sports/browns-shedeur-sanders-hype-video-first-start-season-social-media-cannot-handle"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ2s7ZwZSD7DjHi2ihRCmoCeMKBpkKaIAwDGJoHP8AhRNJiadqRs2MqqoSD6g",
-      "image_credit": "KALB | News Channel 5",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0tQDEgOOO_jnZm8047GT43gTiY2o-TG5VuKzp6vpJSjTKB9IfT1ByA1PdK_E",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.kalb.com/2026/11/06/it-really-hurts-me-louisiana-native-country-music-star-sammy-kershaw-says-cma-denied-red-carpet-request-two-weeks-before-show/",
-          "title": "‘It really hurts me’: Louisiana native, country music star Sammy Kershaw says CMA denied red carpet request two weeks before show",
-          "publisher": "KALB | News Channel 5",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ2s7ZwZSD7DjHi2ihRCmoCeMKBpkKaIAwDGJoHP8AhRNJiadqRs2MqqoSD6g"
-        },
-        {
-          "url": "https://www.pennlive.com/entertainment/2026/11/country-music-star-rips-cma-awards-after-extremely-hurtful-decision.html",
-          "title": "Country music star rips CMA Awards after ‘extremely hurtful’ decision",
-          "publisher": "PennLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzf1FyTJo_zFj5emsboH6-141ykelHO09imcL-b10VuRcMyVHYs5opAsdz01o"
-        },
-        {
-          "url": "https://www.tennessean.com/story/entertainment/music/2026/11/06/sammy-kershaw-cma-awards-denied-red-carpet-request/92640335007/",
-          "title": "Sammy Kershaw says CMA Awards denied his red carpet request. 'It's extremely hurtful'",
-          "publisher": "The Tennessean",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1lOJ63pUNipuarAThyZby9G0EnG5JDkJ9VMYUpLvUJW2UZvaq44NdHs08KmM"
-        }
-      ]
-    },
-    {
-      "query": "celta vs levante",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T17:00:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cmz98zw15ldxt",
-        "https://www.oddschecker.com/tips/football/spanish-primera-division/cng101-20261108-celta-vigo-vs-levante-predictions-bet-builder-tips-lineups-odds",
-        "https://www.goal.com/en-om/tickets-travel/match/celta-vigo-levante-tickets/A~blt740740d5bec7f6e2"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTByT6bMBAOj79abxBr_GwKQ4jq-CXQOMvlLKRopCsUhz6cCEYgANrUd7YQxZU",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cmz98zw15ldxt",
-          "title": "Celta Vigo vs Levante: Spanish La Liga stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTByT6bMBAOj79abxBr_GwKQ4jq-CXQOMvlLKRopCsUhz6cCEYgANrUd7YQxZU"
-        },
-        {
-          "url": "https://www.oddschecker.com/tips/football/spanish-primera-division/cng101-20261108-celta-vigo-vs-levante-predictions-bet-builder-tips-lineups-odds",
-          "title": "Celta Vigo vs Levante: Lineups, Prediction, Betting Tips & Odds",
-          "publisher": "Oddschecker",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTwaXj-8tl24A2YtVg2RcnFyMk0rrydVlnwP6L896CwkupP0j4YIJ4N3l7m70"
-        },
-        {
-          "url": "https://www.goal.com/en-om/tickets-travel/match/celta-vigo-levante-tickets/A~blt740740d5bec7f6e2",
-          "title": "How to get Celta Vigo vs Levante tickets: LaLiga prices, fixture information, last-minute sales & more",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8KBD-7lbwsvXQzZ3quhlJBkKnoXH1VE6ITHlZiS_tYLXkeScvW2_DvgwiZao"
-        }
-      ]
-    },
-    {
-      "query": "philip rivers",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T16:50:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/college-football/news/nc-state-hire-philip-rivers-coach/",
-        "https://www.on3.com/news/nc-state-working-to-finalize-deal-with-school-legend-former-nfl-qb-philip-rivers/",
-        "https://www.espn.com/college-football/story/_/id/50373951/russell-wilson-interviews-nc-state-head-coaching-job"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0p6knZE3pHB5LJW8WeOqSyOFLH2AmAENBREVF_MUqsQ6CCfBubfTEa2rnCkM",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/college-football/news/nc-state-hire-philip-rivers-coach/",
-          "title": "NC State finalizing deal to hire Philip Rivers as next coach: Wolfpack betting big on program legend",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0p6knZE3pHB5LJW8WeOqSyOFLH2AmAENBREVF_MUqsQ6CCfBubfTEa2rnCkM"
-        },
-        {
-          "url": "https://www.on3.com/news/nc-state-working-to-finalize-deal-with-school-legend-former-nfl-qb-philip-rivers/",
-          "title": "NC State working to finalize deal with school legend, former NFL QB Philip Rivers",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgVw1sh5P8oAaF6kRUEmsigbsFWqbBYYpknZ7ZP6J8eICTadkUtH03H1stjtg"
-        },
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50373951/russell-wilson-interviews-nc-state-head-coaching-job",
-          "title": "Ex-NFL QB Russell Wilson interviews with NC State for head coaching job",
+          "url": "https://www.espn.com/nfl/story/_/id/50409705/browns-qb-deshaun-watson-concussion-protocol",
+          "title": "Browns QB Deshaun Watson out of concussion protocol",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQs6UeAQWuvVD8BRVfSQF6y2TGIDYJi98EYaTMG3tAZ8OVM0mbJB8blrfFEODk"
-        }
-      ]
-    },
-    {
-      "query": "villarreal vs getafe",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T16:50:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cre3x08kv7dqt",
-        "https://www.flashscore.com/match/football/getafe-dboeiWOt/villarreal-lUatW5jE/standings/live-standings/?mid=xts7rDX9",
-        "https://twaslnews1.twaslnews.com/7328874/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmq9eJj_W9Jd0lTTVXBI4O6mXx2tLibXGGrsXHBfbRghqbq8cylpY83vId00Y",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cre3x08kv7dqt",
-          "title": "Villarreal vs Getafe: Spanish La Liga stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmq9eJj_W9Jd0lTTVXBI4O6mXx2tLibXGGrsXHBfbRghqbq8cylpY83vId00Y"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0tQDEgOOO_jnZm8047GT43gTiY2o-TG5VuKzp6vpJSjTKB9IfT1ByA1PdK_E"
         },
         {
-          "url": "https://www.flashscore.com/match/football/getafe-dboeiWOt/villarreal-lUatW5jE/standings/live-standings/?mid=xts7rDX9",
-          "title": "Villarreal v Getafe LIVE 08/11/2026 | Football",
-          "publisher": "Flashscore.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ38PTPqrckhIV10OCa1l6qogPhnjba9OmFywh33QY2ipG36p8B_w1n2ApVAus"
-        },
-        {
-          "url": "https://twaslnews1.twaslnews.com/7328874/",
-          "title": "Villarreal Vs Getafe: Villarreal must steady themselves after PSG collapse as Getafe arrive with no away goals",
-          "publisher": "شبكة تواصل الإخبارية",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFZrqpNPrRyo-l8MLaiZxWYkjK6E75MYuqU0kM2IsK-Okr26IjJml_-805I2M"
-        }
-      ]
-    },
-    {
-      "query": "apple tv",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T16:50:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66089245/?ref_=ttnw_art_perm",
-        "https://collider.com/apple-tv-sci-fi-shows-no-bad-seasons-ranked/",
-        "https://screenrant.com/apple-tv-shows-with-flawless-worldbuilding/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9M-XbGYHQhuGV_xnvnEG-aSQGeoTffsONksWQRD_zXa0qhjgBg-Wn4erUMTo",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66089245/?ref_=ttnw_art_perm",
-          "title": "Dark Matter Officially Overtakes Apple TV’s Best Sci-Fi Show of All Time",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9M-XbGYHQhuGV_xnvnEG-aSQGeoTffsONksWQRD_zXa0qhjgBg-Wn4erUMTo"
-        },
-        {
-          "url": "https://collider.com/apple-tv-sci-fi-shows-no-bad-seasons-ranked/",
-          "title": "7 Apple TV Sci-Fi Shows With No Bad Seasons, Ranked",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCmiJ0DCDrQhrBB7sLx3yPGrpcgFsZo1HCds8nFmVHKsID2BqpWYqqUqhm3D8"
-        },
-        {
-          "url": "https://screenrant.com/apple-tv-shows-with-flawless-worldbuilding/",
-          "title": "7 Apple TV Sci-Fi Shows With Flawless Worldbuilding",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGslcEgRK3hJ7wMaOUIeNLaYc9uuPkSCr1j5_LDiktPYXm1PXk25IhSYh8rk8"
-        }
-      ]
-    },
-    {
-      "query": "drake london",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T16:50:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/nfl-fines-falcons-star-drake-123729164.html",
-        "https://www.thefalcoholic.com/atlanta-falcons-roster/98190/drake-london-fined-unnecessary-roughness-week-8-vs-buccaneers",
-        "https://www.aol.com/articles/two-49ers-players-were-fined-020545000.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMIOVoxDWJJB1kNjZQhNFGpYIt27y8SrvACwYkv0uKllHS_hEgdRgHdbMy2Hw",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/nfl-fines-falcons-star-drake-123729164.html",
-          "title": "NFL fines Falcons star Drake London for penalty vs. Buccaneers",
+          "url": "https://sports.yahoo.com/articles/weird-2-time-super-bowl-171832232.html",
+          "title": "‘How Weird Is This?’ — 2-Time Super Bowl Champion Calls Out Browns HC Todd Monken’s Bizarre Deshaun Watson-Shedeur Sanders Decision",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMIOVoxDWJJB1kNjZQhNFGpYIt27y8SrvACwYkv0uKllHS_hEgdRgHdbMy2Hw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5iKqcDW5nWiSYaF2un0Occ21zICPhuzcK3UVUxkkHUXhrF8qp6QQ3Uqaz5eY"
         },
         {
-          "url": "https://www.thefalcoholic.com/atlanta-falcons-roster/98190/drake-london-fined-unnecessary-roughness-week-8-vs-buccaneers",
-          "title": "Drake London fined big by NFL for unnecessary roughness vs. Bucs",
-          "publisher": "The Falcoholic",
+          "url": "https://www.foxnews.com/outkick-sports/browns-shedeur-sanders-hype-video-first-start-season-social-media-cannot-handle",
+          "title": "Browns' Shedeur Sanders gets hype video for first start of the season and social media cannot handle it",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEUaIKk3rDTQ0mQdEMMnny2Wu2eGZuv_WB3Ua5CiQRJx_BZNHh3bJqsAi3Th4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVsFy6wmNmyJzjUT0RJCpxwjzEjybJNrfZMU42TeDvCJORbEalt6-FwG97xzM"
+        }
+      ]
+    },
+    {
+      "query": "iona vs st john's",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T17:20:00Z",
+      "related_news_urls": [
+        "https://nypost.com/2026/11/07/sports/ionas-sadiku-ibine-ayo-forged-deep-bond-with-rick-pitino/",
+        "https://sports.yahoo.com/articles/watch-iona-vs-no-13-130000599.html",
+        "https://www.usatoday.com/story/sports/ncaab/2026/11/08/iona-vs-st-johns-odds-picks-and-predictions/92673858007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-vm_IyfXemGFeOlBZIMUkgWnlAq5rhH-59ueYnF2m3_C0u3SxP5-xbeSdzWw",
+      "image_credit": "New York Post",
+      "news": [
+        {
+          "url": "https://nypost.com/2026/11/07/sports/ionas-sadiku-ibine-ayo-forged-deep-bond-with-rick-pitino/",
+          "title": "Sadiku Ibine Ayo forged deep bond with Rick Pitino — even if that meant leaving St. John’s to thrive",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-vm_IyfXemGFeOlBZIMUkgWnlAq5rhH-59ueYnF2m3_C0u3SxP5-xbeSdzWw"
         },
         {
-          "url": "https://www.aol.com/articles/two-49ers-players-were-fined-020545000.html",
-          "title": "Two 49ers Players Were Fined on Saturday for Incidents During Loss to Falcons",
-          "publisher": "AOL.com",
+          "url": "https://sports.yahoo.com/articles/watch-iona-vs-no-13-130000599.html",
+          "title": "How to watch Iona vs. No. 13 St. John’s: TV, live stream info, storylines for Sunday’s game",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTivVNZ3N0F0pZUeMyJWq1EyEOKtmm8oyh4ezX_QTomy_TgF2Wj_NfZSbTx6kk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6-_B0nnI5tEHVAsGYGzR1NH45tLWM6oPJOcWaph0iKz3_b5mQ_Wvxq3Y5TUA"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/ncaab/2026/11/08/iona-vs-st-johns-odds-picks-and-predictions/92673858007/",
+          "title": "Iona Gaels vs. St. John's Red Storm odds, picks and predictions",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_1-T-XQvhN6jFka532VvLHQ1gFAchvtm45PzzXs05DjgobeO7cSSAZUqokiI"
+        }
+      ]
+    },
+    {
+      "query": "nwsl schedule",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T17:20:00Z",
+      "related_news_urls": [
+        "https://bleacherreport.com/articles/25530136-updated-nwsl-playoff-bracket-2026-and-quarterfinals-schedule-after-latest-results",
+        "https://www.theguardian.com/football/2026/nov/06/gotham-fc-nwsl-playoffs",
+        "https://www.nytimes.com/athletic/7760926/2026/11/07/your-nwsl-playoff-rooting-guide-plus-the-ultimate-college-football-slate/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSV7t_p8CvSGAbwBcGmRpxdKAFCnP2yNYcZaiKNlOzBfY1IIr-91uGGUEssQPU",
+      "image_credit": "Bleacher Report",
+      "news": [
+        {
+          "url": "https://bleacherreport.com/articles/25530136-updated-nwsl-playoff-bracket-2026-and-quarterfinals-schedule-after-latest-results",
+          "title": "Updated NWSL Playoff Bracket 2026 and Quarterfinals Schedule After Latest Results",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSV7t_p8CvSGAbwBcGmRpxdKAFCnP2yNYcZaiKNlOzBfY1IIr-91uGGUEssQPU"
+        },
+        {
+          "url": "https://www.theguardian.com/football/2026/nov/06/gotham-fc-nwsl-playoffs",
+          "title": "How Gotham FC re-tooled for another NWSL title run – this time as favorites",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6-Drn2g_uszp7O0tAMmYl5g3VGGddqatpRnd3hAvgLz2QGKXc5sIEmemXFl0"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7760926/2026/11/07/your-nwsl-playoff-rooting-guide-plus-the-ultimate-college-football-slate/",
+          "title": "Your NWSL playoff rooting guide, plus the ultimate college football slate - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMEKJRTny_vUk7kGnCBfhxFXB1M2jXTUI9rispjoF9wBwYU2kP0AxP14iWGvI"
         }
       ]
     }
