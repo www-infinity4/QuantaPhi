@@ -1,6 +1,6 @@
 import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261101-freshest1';
 import {mountCardActions} from './quanta-card-actions.mjs?v=20261031-heritage-signin1';
-import {COIN_MARKETS,isCoinResearchCard,normalizeCoinSaleResults,referenceCoinImage,sourceCoinSearch} from './coin-sale-listings.mjs';
+import {COIN_MARKETS,isCoinResearchCard,normalizeCoinSaleResults,referenceCoinImage,sourceCoinSearch,attachLicensedCoinImages} from './coin-sale-listings.mjs';
 // Real source searches, not invented inventory, account data or offers.
 const provider=(id,name,category,official,query,topics,color,extra={})=>({id,name,category,official,query,topics,color,...extra});
 export const PREMIUM_CARDS=Object.freeze([
@@ -72,6 +72,14 @@ async function lookup(card,query){
 }
 
 const coinSaleCache=new Map();
+let coinMediaApprovalsCache=null;
+async function approvedCoinMedia(){
+ if(coinMediaApprovalsCache&&Date.now()-coinMediaApprovalsCache.time<300000)return coinMediaApprovalsCache.manifest;
+ const r=await fetch('/data/coin-media-approvals.json',{credentials:'omit',cache:'no-store',signal:AbortSignal.timeout(5000)});
+ if(!r.ok)throw Error('approved_coin_media_not_available');
+ const manifest=await r.json();coinMediaApprovalsCache={time:Date.now(),manifest};return manifest;
+}
+
 // A SOURCE search is not a seller partnership. Keep seller lot links separate
 // from grading references and show only media with independently proven rights.
 function mountCoinSales(article,card,field){
@@ -119,6 +127,8 @@ function mountCoinSales(article,card,field){
     coinSaleCache.set(key,{rows,time:Date.now()});
    }
    if(now!==generation)return;
+   try{rows=attachLicensedCoinImages(rows,seller,await approvedCoinMedia());}catch{/* Rights manifest missing: stay on source links and CC0 reference only. */}
+   if(now!==generation)return;
    resultState.textContent=rows.length?rows.length+' attributed certified VAM lot link'+(rows.length===1?'':'s')+' · seller availability must be checked.':'No matching certified VAM lot links returned for this seller. Try another or browse the auction catalog.';
    if(rows.length){
     const item=make('div','premium-coin-sale-item'),nav=make('div','premium-coin-sale-nav');
@@ -126,12 +136,24 @@ function mountCoinSales(article,card,field){
     prev.type=next.type='button';let position=0;
     function show(){
      const row=rows[position];item.replaceChildren();
+     if(row.image&&row.imageRights==='seller-permitted'){
+      const picture=make('figure','premium-coin-lot-photo');
+      const image=make('img','','Actual certified coin lot photo: '+row.title);
+      image.alt='Actual seller-authorized coin lot photograph: '+row.title;
+      image.loading='lazy';image.referrerPolicy='no-referrer';
+      image.addEventListener('error',()=>picture.remove(),{once:true});
+      image.src=row.image;
+      const credit=make('figcaption','',row.imageCredit+' · ');
+      const source=make('a','','Original lot and image credit');
+      source.href=row.imageSource;source.target='_blank';source.rel='noopener noreferrer';
+      credit.append(source);picture.append(image,credit);item.append(picture);
+     }
      item.append(make('p','premium-coin-badge',row.seller+' · '+(row.saleStatus==='sold'?'Past/closed listing':'Sale status unverified')));
      item.append(make('h4','',row.title));
      if(row.description)item.append(make('p','premium-coin-summary',row.description));
      const original=make('a','premium-coin-lot-link','View actual lot photographs at '+row.seller+' ↗');
      original.href=row.url;original.target='_blank';original.rel='noopener noreferrer';item.append(original);
-     item.append(make('p','premium-coin-rights','Seller photographs stay with the source until image reuse is authorized. The photo above is a separately licensed reference, not this lot.'));
+     item.append(make('p','premium-coin-rights',row.image?'This actual lot photograph is shown with seller-specific reuse permission and source credit.':'Seller photographs stay with the source until image reuse is authorized. The separately licensed reference photo is not this lot.'));
      count.textContent=position+1+' / '+rows.length;prev.disabled=position===0;next.disabled=position===rows.length-1;
     }
     prev.addEventListener('click',()=>{position--;show()});
