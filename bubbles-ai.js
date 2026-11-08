@@ -2459,13 +2459,14 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
      if(tickets.ok&&data.ok===true&&Array.isArray(data.tickets))ticketRead=data;
     }catch{/* A failed ticket listing cannot erase a valid GitHub readback. */}
     if(!ownerReady||ownerHeaders!==headers)throw Error('owner_session_changed_during_read');
+    // Never show a completed tool iteration for a random response id or an
+    // identity-mismatched result. Durable server readback and exact ref must agree.
+    const verified=branchStatusModule.isVerifiedBranchReadReceipt(branchStatusQuery,branchRead);
+    if(!verified)throw Error('authenticated_branch_receipt_unverified');
     answer=branchStatusModule.describeAuthenticatedBranchStatus(branchStatusQuery,branchRead,ticketRead,
      {conversationTicketId:recentWorkRef(receiptThread)?.ticketId||''});
     const proof=branchRead.readReceipt;
-    const verified=proof?.tool==='github.read_branch_status'&&proof.status==='complete'&&
-     /^[A-Za-z0-9_-]{8,100}$/.test(proof.id||'');
-    emitRead({type:'tool_receipt',status:verified?'complete':'unverified',
-     ...(verified?{receiptId:proof.id}:{}),
+    emitRead({type:'tool_receipt',status:'complete',receiptId:proof.id,
      detail:branchRead.exists===true?'GitHub branch readback returned a commit':'GitHub branch ref not found'});
     readStatus='GitHub branch checked · runner result separate';
    }catch(error){
