@@ -3,7 +3,7 @@
  * The creator DOM/iframe is mounted once, so unsent inputs survive card rotation.
  */
 import {BUILDER_CARDS,nextDeveloperCardIndex} from './developer-carousel-core.mjs';
-import {mountDeveloperDiscovery} from './developer-discovery.mjs';
+import {mountDeveloperDiscovery} from './developer-discovery.mjs?v=20261108-index-picker1';
 const root=document.getElementById('developerCarousel');
 if(root){
  const stage=document.getElementById('developerCardStage');
