@@ -3533,13 +3533,25 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
      ownerEnabled:claudeAssistanceOptIn,
      providerPresent:Boolean(window.ClaudeSteward),embedded,
      hasAttachments:Boolean(pendingImage||pendingImages.length||screenEvidence),
-     toolWork:Boolean(detailed||workEvidence),request
+     toolWork:Boolean(detailed||workEvidence||liveLookup||weatherContinuation||cardoneResearch||privateSellerRequest),request
     });
    }catch{/* Missing assistance module leaves native Bubbles available. */}
    if(useClaude){
     try{
      const assisted=await window.ClaudeSteward.ask(request,{
-      mode:'chat',inline:true,evidence:window.__bubblesRecentMessages().slice(-10)
+      mode:'assist',inline:true,
+      evidence:window.__bubblesRecentMessages().slice(-6),
+      // User-selected Bubbles configuration remains authoritative even when
+      // Claude temporarily composes an ordinary conversation reply.
+      // The owner still controls retention; no tools or tokens travel here.
+      assistContext:{
+       assistantName:String(config.alias||'Bubbles').slice(0,70),
+       role:String(role.name||'').slice(0,100),
+       rolePrompt:String(role.prompt||'').slice(0,550),
+       ownerInstructions:String(config.instructions||'').slice(0,1200),
+       rememberedContext:(Array.isArray(userRules)?userRules:[]).slice(-4)
+        .map(value=>String(typeof value==='string'?value:value?.text||'').slice(0,300)).filter(Boolean)
+      }
      });
      if(assisted?.ok===true&&assisted.partial!==true&&typeof assisted.reply==='string'&&assisted.reply.trim()){
       response={ok:true};
