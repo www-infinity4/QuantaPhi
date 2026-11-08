@@ -3,76 +3,251 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-08T08:01:32.934786Z",
+  "checked_at": "2026-11-08T08:31:16.117590Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "perth wildcats",
-      "approx_searches": "100+",
-      "published_at": "2026-11-08T07:40:00Z",
+      "query": "claire liu",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-08T08:10:00Z",
       "related_news_urls": [
-        "https://www.wildcats.com.au/news/nbl27-r9-game-preview-wildcats-v-taipans",
-        "https://www.nbl.com.au/news/how-to-watch-talking-points-perth-v-cairns-nbl27",
-        "https://www.bets.com.au/basketball/nbl/perth-wildcats-vs-cairns-taipans-nbl-round-8-tips-20261106-0011/"
+        "https://www.espn.com/tennis/story/_/id/50407226/alex-eala-outlasts-maria-sakkari-rain-soaked-hong-kong-open-semifinals-faces-claire-liu-final",
+        "https://sports.inquirer.net/706177/live-alex-eala-vs-claire-liu-hong-kong-open-final",
+        "https://www.wtatennis.com/news/4606011/eala-tops-sakkari-in-rain-impacted-semifinal-to-set-hong-kong-final-against-liu"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-HJWF2aqQBjfyYBjm0Rtm6kdUfFvjhsm_x_qgtNoLi0QkB8mbGaHg46nCrgg",
-      "image_credit": "Perth Wildcats",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSwSmrOjKUv55-smBRwIBdogZNrG8PewoBhpZeHNF-aPaA86fjN-FpzSd9GWXo",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.wildcats.com.au/news/nbl27-r9-game-preview-wildcats-v-taipans",
-          "title": "NBL27 R9 Game Preview | Wildcats v Taipans",
-          "publisher": "Perth Wildcats",
+          "url": "https://www.espn.com/tennis/story/_/id/50407226/alex-eala-outlasts-maria-sakkari-rain-soaked-hong-kong-open-semifinals-faces-claire-liu-final",
+          "title": "Alex Eala outlasts Maria Sakkari in rain-soaked Hong Kong Open semifinals, faces Claire Liu in final",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-HJWF2aqQBjfyYBjm0Rtm6kdUfFvjhsm_x_qgtNoLi0QkB8mbGaHg46nCrgg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSwSmrOjKUv55-smBRwIBdogZNrG8PewoBhpZeHNF-aPaA86fjN-FpzSd9GWXo"
         },
         {
-          "url": "https://www.nbl.com.au/news/how-to-watch-talking-points-perth-v-cairns-nbl27",
-          "title": "How to watch & talking points: Perth v Cairns",
-          "publisher": "NBL",
+          "url": "https://sports.inquirer.net/706177/live-alex-eala-vs-claire-liu-hong-kong-open-final",
+          "title": "LIVE: Alex Eala vs Claire Liu – Hong Kong Open final",
+          "publisher": "Inquirer.net",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH5hA511XiNx7s9YpvRK_p5-ZARYPhvIKrFw5JPvIGhO1s7E_82qakgEjM_XA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXwdLK-bCFAI17rIpGzSWpCNj-tik0yLWLjLV6D5KYd8FroIvsn8cWUwoDmPQ"
         },
         {
-          "url": "https://www.bets.com.au/basketball/nbl/perth-wildcats-vs-cairns-taipans-nbl-round-8-tips-20261106-0011/",
-          "title": "Perth Wildcats vs Cairns Taipans NBL27 Round 8 Tips",
-          "publisher": "Bets.com.au",
+          "url": "https://www.wtatennis.com/news/4606011/eala-tops-sakkari-in-rain-impacted-semifinal-to-set-hong-kong-final-against-liu",
+          "title": "Eala tops Sakkari in rain-impacted semifinal to set Hong Kong final against Liu",
+          "publisher": "WTA Tennis",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkt4WsOU-VuW-4Wo0ruBpltI7dfX-oTagR_F3BzAyVmCuhnAzunbgXfCSssWM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQGGwUnFF5TWUOzxjtbcfRjQkfnPsr4fkBsJw0vO3zcVqeZx4uRORFSWvNTgE"
         }
       ]
     },
     {
-      "query": "celine dion",
+      "query": "riot",
       "approx_searches": "100+",
-      "published_at": "2026-11-08T07:40:00Z",
+      "published_at": "2026-11-08T08:10:00Z",
       "related_news_urls": [
-        "https://pagesix.com/2026/11/07/entertainment/celine-dion-caught-plays-air-guitar-at-metallicas-las-vegas-show/",
-        "https://www.billboard.com/music/music-news/celine-dion-metallica-sphere-air-bass-video-1236376892/",
-        "https://www.usatoday.com/story/entertainment/music/2026/11/06/celine-dion-metallica-vegas-video/92648370007/"
+        "https://playvalorant.com/en-us/news/game-updates/protecting-competitive-integrity-in-vct-2027/",
+        "https://www.sheepesports.com/en/articles/everything-to-know-about-the-vct-pacific-kickoff-qualifiers/en",
+        "https://thenewsmill.com/2026/11/riot-games-and-jioblast-to-host-vct-2027-kickoff-south-asia-qualifiers/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTIW5SIXGPjaouG55GQXvDTMR7O9juaiS-8nvWmx-zAhfTaEzNDekZZe7WCg-U",
-      "image_credit": "Page Six",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGW3mh18zie2Cl8VtY7aBneYT8noaAOtAaqv4fpUwhxajCiCiq1gboLSv8HhE",
+      "image_credit": "VALORANT",
       "news": [
         {
-          "url": "https://pagesix.com/2026/11/07/entertainment/celine-dion-caught-plays-air-guitar-at-metallicas-las-vegas-show/",
-          "title": "Celine Dion caught totally rocking out, playing air guitar, while watching Metallica’s Las Vegas show",
-          "publisher": "Page Six",
+          "url": "https://playvalorant.com/en-us/news/game-updates/protecting-competitive-integrity-in-vct-2027/",
+          "title": "Protecting Competitive Integrity in VCT 2027",
+          "publisher": "VALORANT",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTIW5SIXGPjaouG55GQXvDTMR7O9juaiS-8nvWmx-zAhfTaEzNDekZZe7WCg-U"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGW3mh18zie2Cl8VtY7aBneYT8noaAOtAaqv4fpUwhxajCiCiq1gboLSv8HhE"
         },
         {
-          "url": "https://www.billboard.com/music/music-news/celine-dion-metallica-sphere-air-bass-video-1236376892/",
-          "title": "Céline Dion Plays Air Bass at Metallica’s Sphere Show",
-          "publisher": "Billboard",
+          "url": "https://www.sheepesports.com/en/articles/everything-to-know-about-the-vct-pacific-kickoff-qualifiers/en",
+          "title": "Everything to know about the VCT Pacific Kickoff Qualifiers",
+          "publisher": "Sheep Esports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLpVkhtFxM9NUbOexqwQB4CdjIUTHavssSTQhhWrApaCyo8xPQxsgEzs7HDXI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHEDS4zG4qWuEKGU9R-g36zfNYc85V4kC-mG8Vd7DNJLtVYdLB_DBt26vRcvQ"
         },
         {
-          "url": "https://www.usatoday.com/story/entertainment/music/2026/11/06/celine-dion-metallica-vegas-video/92648370007/",
-          "title": "Celine Dion plays an epic air bass at Metallica concert in Vegas. See the video",
-          "publisher": "USA Today",
+          "url": "https://thenewsmill.com/2026/11/riot-games-and-jioblast-to-host-vct-2027-kickoff-south-asia-qualifiers/",
+          "title": "Riot Games and JioBLAST to host VCT 2027 Kickoff South Asia qualifiers",
+          "publisher": "The News Mill",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1G9gPuZoya9GJY21a0saohxAqXZ66LAbasgdKY58-elq6w8ntAt4jq-hOK9Q"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQywnWMv3OjsS0Gp55zimqQkhMdTyHbLROw7ffBW_B_wRMKBpNJ-uMoS4eK55o"
+        }
+      ]
+    },
+    {
+      "query": "usher",
+      "approx_searches": "100+",
+      "published_at": "2026-11-08T08:10:00Z",
+      "related_news_urls": [
+        "https://www.11alive.com/article/entertainment/music/fans-react-chris-brown-usher-first-night-atlanta-concert/85-835b212e-d0e0-4cb0-a914-0cbff588c967",
+        "https://www.ajc.com/arts-entertainment/2026/11/chris-brown-usher-atlanta-tour-atlanta/",
+        "https://www.yahoo.com/entertainment/music/concerts/articles/chris-brown-usher-perform-together-010055889.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQatEMLjnVSeYrJnQPP3N56SUlhw7YqYtnw8i7H3gukrTLp2-j72NCSzid0ub4",
+      "image_credit": "11Alive.com",
+      "news": [
+        {
+          "url": "https://www.11alive.com/article/entertainment/music/fans-react-chris-brown-usher-first-night-atlanta-concert/85-835b212e-d0e0-4cb0-a914-0cbff588c967",
+          "title": "Fans say Chris Brown and Usher’s first Atlanta concert left them feeling shortchanged",
+          "publisher": "11Alive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQatEMLjnVSeYrJnQPP3N56SUlhw7YqYtnw8i7H3gukrTLp2-j72NCSzid0ub4"
+        },
+        {
+          "url": "https://www.ajc.com/arts-entertainment/2026/11/chris-brown-usher-atlanta-tour-atlanta/",
+          "title": "Usher and Chris Brown deliver a very late, underwhelming concert in Atlanta",
+          "publisher": "The Atlanta Journal-Constitution",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKamgc1we02KS7rKUAQJgon1HP71KPiEsBLoKPJddgyuI_eXuyTUj2BhQmztI"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/music/concerts/articles/chris-brown-usher-perform-together-010055889.html",
+          "title": "Chris Brown and Usher Perform Together After Reported Backstage Argument and 2½-Hour Atlanta Concert Delay",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9ygZsZOvFhHmiIT6A1wTxVD6j-DREYg4Nxl8GtyqGVO3px9hhEOmTmQmVj_4"
+        }
+      ]
+    },
+    {
+      "query": "taekwondo",
+      "approx_searches": "100+",
+      "published_at": "2026-11-08T08:10:00Z",
+      "related_news_urls": [
+        "https://www.koreajoongangdaily.com/korea/ppp-blasts-handling-of-north-koreas-solo-unesco-taekwondo-bid/12961156",
+        "https://www.mk.co.kr/en/politics/12201509",
+        "https://en.sedaily.com/politics/2026/11/07/people-power-party-blames-government-over-taekwondos-likely"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz0VTvWR8bbHwVpWVKV_9IAEhEFnY2Sxe9VQvdYfSTLTPE1pJr3oOf431evDs",
+      "image_credit": "Korea JoongAng Daily",
+      "news": [
+        {
+          "url": "https://www.koreajoongangdaily.com/korea/ppp-blasts-handling-of-north-koreas-solo-unesco-taekwondo-bid/12961156",
+          "title": "PPP blasts handling of North Korea's solo Unesco taekwondo bid",
+          "publisher": "Korea JoongAng Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz0VTvWR8bbHwVpWVKV_9IAEhEFnY2Sxe9VQvdYfSTLTPE1pJr3oOf431evDs"
+        },
+        {
+          "url": "https://www.mk.co.kr/en/politics/12201509",
+          "title": "On the 7th, the People's Power strongly criticized the situation in which North Korea's sole registr..",
+          "publisher": "매일경제",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRS6DXwHaLadLV0IWVwdgPVcrO7cejHAYs8rZRXstr7WS7VCCV66u1beuhr0Yo"
+        },
+        {
+          "url": "https://en.sedaily.com/politics/2026/11/07/people-power-party-blames-government-over-taekwondos-likely",
+          "title": "People Power Party Blames Government Over Taekwondo's Likely North Korean Listing",
+          "publisher": "Seoul Economic Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMOCmTF_SBaNaqmJbcLZMlAekBLo6qiOf3rMIiO7vTdpsOBO3BlVOgjZ_xlTY"
+        }
+      ]
+    },
+    {
+      "query": "中超",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T08:00:00Z",
+      "related_news_urls": [
+        "https://m.zhibo8.com/news/web/zuqiu/2026-11-08/6aeeee516c4d8native.htm",
+        "https://www.ctdsb.net/c1720_202611/2899120.html",
+        "https://m.zhibo8.cc/news/web/zuqiu/2026-11-08/6aeff620ed1canative.htm"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDaMopVLtHzn7NVOizBaAaA1qzFpFZyACNEd38BN1DipTzH3SYCigM7RuEoBE",
+      "image_credit": "直播吧",
+      "news": [
+        {
+          "url": "https://m.zhibo8.com/news/web/zuqiu/2026-11-08/6aeeee516c4d8native.htm",
+          "title": "最后一个冠军点！蓉城客平泰山即夺队史首冠，英博主场能否逆袭？",
+          "publisher": "直播吧",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDaMopVLtHzn7NVOizBaAaA1qzFpFZyACNEd38BN1DipTzH3SYCigM7RuEoBE"
+        },
+        {
+          "url": "https://www.ctdsb.net/c1720_202611/2899120.html",
+          "title": "中超冠军，今天揭晓！",
+          "publisher": "极目新闻",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz-ImN42VdD_a0e4kEt3QY9NP1qBG0Pu4EVCBnFvNref02MzCY-dlN_Q7_w90"
+        },
+        {
+          "url": "https://m.zhibo8.cc/news/web/zuqiu/2026-11-08/6aeff620ed1canative.htm",
+          "title": "街访蓉城球迷：必拿冠军 玄学该平了 山东队是神经刀 曼联都赢了",
+          "publisher": "直播吧",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYnj89a3ubC3JS6D-_v3seIylaSdNVO7BiEVhgRqSiaOV9Y6NawXSlK3DzR5E"
+        }
+      ]
+    },
+    {
+      "query": "arjun rajput",
+      "approx_searches": "100+",
+      "published_at": "2026-11-08T08:00:00Z",
+      "related_news_urls": [
+        "https://timesofindia.indiatimes.com/sports/cricket/india-under-19-vs-pakistan-under-19-asia-cup-cricket-live-score-aaryavir-sehwag-anvay-dravid-yashbardhan-chauhan/liveblog/135650118.cms",
+        "https://www.rediff.com/cricket/report/india-vs-pakistan-u19-asia-cup-key-players-and-match-preview/20261107.htm",
+        "https://sports.yahoo.com/articles/ind-vs-pak-u-19-074221624.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR20-2_LOlpjUE7mghuj94OLw-HX5Dydc1ilc85sGDXcnAN5674GzeCqPvldCg",
+      "image_credit": "The Times of India",
+      "news": [
+        {
+          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-under-19-vs-pakistan-under-19-asia-cup-cricket-live-score-aaryavir-sehwag-anvay-dravid-yashbardhan-chauhan/liveblog/135650118.cms",
+          "title": "India vs Pakistan, Under-19 Asia Cup Live Score: India on the brink of all out after Arjun Rajput's solid innings",
+          "publisher": "The Times of India",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR20-2_LOlpjUE7mghuj94OLw-HX5Dydc1ilc85sGDXcnAN5674GzeCqPvldCg"
+        },
+        {
+          "url": "https://www.rediff.com/cricket/report/india-vs-pakistan-u19-asia-cup-key-players-and-match-preview/20261107.htm",
+          "title": "U-19 Asia Cup: India and Pakistan lock horns in battle for bragging rights, top spot",
+          "publisher": "Rediff",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTba2PnpgTelrBnRMN1b4tv0LSbchbFMiIGVqintIdLt0BihQkrj47_pqW6OUM"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/ind-vs-pak-u-19-074221624.html",
+          "title": "IND vs PAK U-19 Asia Cup 2026: Fans react as India batters struggle batting first against Pakistan",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUrTk0Lbgj92BQcf-JAqmnxIt1vJ_H8K9ZmPSK0tK5YoDkooUYOQjHZ3ZDGDs"
+        }
+      ]
+    },
+    {
+      "query": "samoa vs australia",
+      "approx_searches": "100+",
+      "published_at": "2026-11-08T08:00:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/sport/live/2026/nov/08/australia-kangaroos-vs-samoa-rugby-league-world-cup-mens-semi-final-live-updates",
+        "https://www.news.com.au/sport/nrl/world-cup/kangaroos-star-axed-for-world-cup-semifinal-as-alarming-detail-raises-eyebrows/news-story/851f30fc191f08bf44d938fd0f4ba736",
+        "https://pmn.co.nz/read/sports/toa-samoa-hungry-for-revenge-as-they-chase-world-cup-final-spot"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVhNiMXd2wnbrRwZU1uNloZE1TEi1uSfKdTPIYJ9HzUQ2PR3jt08dpizFkTH4",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/sport/live/2026/nov/08/australia-kangaroos-vs-samoa-rugby-league-world-cup-mens-semi-final-live-updates",
+          "title": "Australia v Samoa: men’s Rugby League World Cup semi-final – live",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVhNiMXd2wnbrRwZU1uNloZE1TEi1uSfKdTPIYJ9HzUQ2PR3jt08dpizFkTH4"
+        },
+        {
+          "url": "https://www.news.com.au/sport/nrl/world-cup/kangaroos-star-axed-for-world-cup-semifinal-as-alarming-detail-raises-eyebrows/news-story/851f30fc191f08bf44d938fd0f4ba736",
+          "title": "Kangaroos star axed, concerning detail",
+          "publisher": "News.com.au",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3gmijbF2EsjxB_64eL8RmkqVVc82XZHKH2gvDm91PMUY5aAwO0qzShYATlfE"
+        },
+        {
+          "url": "https://pmn.co.nz/read/sports/toa-samoa-hungry-for-revenge-as-they-chase-world-cup-final-spot",
+          "title": "Toa Sāmoa hungry for revenge as they chase World Cup final spot",
+          "publisher": "Pacific Media Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSkpWngydL7ma74n-VmSgRQMONCzPiSYSWVFhpTfLyY6AaAPcU2WCMy55e3WFI"
         }
       ]
     },
@@ -112,247 +287,72 @@
       ]
     },
     {
-      "query": "austin butler",
+      "query": "celine dion",
       "approx_searches": "100+",
       "published_at": "2026-11-08T07:40:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/movies/articles/miami-vice-85-set-photos-215851885.html",
-        "https://www.imdb.com/it/news/ni66093990/?ref_=nwc_art_perm",
-        "https://comicbook.com/movies/news/miami-vice-85-star-teases-the-reboots-action-intensity-this-is-gonna-be-fire/"
+        "https://pagesix.com/2026/11/07/entertainment/celine-dion-caught-plays-air-guitar-at-metallicas-las-vegas-show/",
+        "https://www.billboard.com/music/music-news/celine-dion-metallica-sphere-air-bass-video-1236376892/",
+        "https://www.usatoday.com/story/entertainment/music/2026/11/06/celine-dion-metallica-vegas-video/92648370007/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSOjKKatkcI8E2zvourDRczfXUDE6LeN7N7LfYNI3khd0ArwamvTVfAcajbho",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTIW5SIXGPjaouG55GQXvDTMR7O9juaiS-8nvWmx-zAhfTaEzNDekZZe7WCg-U",
+      "image_credit": "Page Six",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/miami-vice-85-set-photos-215851885.html",
-          "title": "Miami Vice ’85 Set Photos Offer First Look at Michael Irby’s Character",
-          "publisher": "Yahoo",
+          "url": "https://pagesix.com/2026/11/07/entertainment/celine-dion-caught-plays-air-guitar-at-metallicas-las-vegas-show/",
+          "title": "Celine Dion caught totally rocking out, playing air guitar, while watching Metallica’s Las Vegas show",
+          "publisher": "Page Six",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSOjKKatkcI8E2zvourDRczfXUDE6LeN7N7LfYNI3khd0ArwamvTVfAcajbho"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTIW5SIXGPjaouG55GQXvDTMR7O9juaiS-8nvWmx-zAhfTaEzNDekZZe7WCg-U"
         },
         {
-          "url": "https://www.imdb.com/it/news/ni66093990/?ref_=nwc_art_perm",
-          "title": "Michael B. Jordan & Austin Butler Spotted Filming ‘Miami Vice 85’ Scenes Together in New York City",
-          "publisher": "IMDb",
+          "url": "https://www.billboard.com/music/music-news/celine-dion-metallica-sphere-air-bass-video-1236376892/",
+          "title": "Céline Dion Plays Air Bass at Metallica’s Sphere Show",
+          "publisher": "Billboard",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5sDmx460SA-VeDxGA7SNyOEAHMZ2YUIetzuD6R2X-o4d0lzon8FwcObYr5qI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLpVkhtFxM9NUbOexqwQB4CdjIUTHavssSTQhhWrApaCyo8xPQxsgEzs7HDXI"
         },
         {
-          "url": "https://comicbook.com/movies/news/miami-vice-85-star-teases-the-reboots-action-intensity-this-is-gonna-be-fire/",
-          "title": "Miami Vice ’85 Star Teases the Reboot’s Action & Intensity: “This is Gonna Be Fire”",
-          "publisher": "ComicBook.com",
+          "url": "https://www.usatoday.com/story/entertainment/music/2026/11/06/celine-dion-metallica-vegas-video/92648370007/",
+          "title": "Celine Dion plays an epic air bass at Metallica concert in Vegas. See the video",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTANVgupFDttmmYTDnhjsce34NrkJhN4L9a_4FkkJiGpNFBwK0tbTRR6l2oiY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1G9gPuZoya9GJY21a0saohxAqXZ66LAbasgdKY58-elq6w8ntAt4jq-hOK9Q"
         }
       ]
     },
     {
-      "query": "inundación",
+      "query": "perth wildcats",
       "approx_searches": "100+",
-      "published_at": "2026-11-08T07:30:00Z",
+      "published_at": "2026-11-08T07:40:00Z",
       "related_news_urls": [
-        "https://www.telemundo51.com/video/el-tiempo/el-tiempo-pronostico/pronostico-del-tiempo-para-miami-y-el-sur-de-florida-51/2846017/",
-        "https://www.elnuevoherald.com/noticias/florida/sur-de-la-florida/article317965633.html",
-        "https://www.periodicocubano.com/miami-podrian-inundarse-hasta-el-lunes-por-mareas-del-rey/"
+        "https://www.wildcats.com.au/news/nbl27-r9-game-preview-wildcats-v-taipans",
+        "https://www.nbl.com.au/news/how-to-watch-talking-points-perth-v-cairns-nbl27",
+        "https://thewest.com.au/sport/perth-wildcats/perth-wildcats-stumble-to-fourth-consecutive-loss-with-100-92-result-against-cairns-taipans-at-rac-arena-c-23132148"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDZSnThT0K3jxINIEETXT-zGwGjK0Ag-CW3wYiU45xPGRExOH1Osg5i7l0UGQ",
-      "image_credit": "Telemundo Miami (51)",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-HJWF2aqQBjfyYBjm0Rtm6kdUfFvjhsm_x_qgtNoLi0QkB8mbGaHg46nCrgg",
+      "image_credit": "Perth Wildcats",
       "news": [
         {
-          "url": "https://www.telemundo51.com/video/el-tiempo/el-tiempo-pronostico/pronostico-del-tiempo-para-miami-y-el-sur-de-florida-51/2846017/",
-          "title": "Pronóstico del tiempo para Miami y el sur de Florida",
-          "publisher": "Telemundo Miami (51)",
+          "url": "https://www.wildcats.com.au/news/nbl27-r9-game-preview-wildcats-v-taipans",
+          "title": "NBL27 R9 Game Preview | Wildcats v Taipans",
+          "publisher": "Perth Wildcats",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDZSnThT0K3jxINIEETXT-zGwGjK0Ag-CW3wYiU45xPGRExOH1Osg5i7l0UGQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-HJWF2aqQBjfyYBjm0Rtm6kdUfFvjhsm_x_qgtNoLi0QkB8mbGaHg46nCrgg"
         },
         {
-          "url": "https://www.elnuevoherald.com/noticias/florida/sur-de-la-florida/article317965633.html",
-          "title": "Las mareas altas están empeorando en Miami. Los pronósticos apuntan a más inundaciones",
-          "publisher": "El Nuevo Herald",
+          "url": "https://www.nbl.com.au/news/how-to-watch-talking-points-perth-v-cairns-nbl27",
+          "title": "How to watch & talking points: Perth v Cairns",
+          "publisher": "NBL",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTW3gDuKSHleE7JcZJJgSGp6sCFO97LelnPapE14b3w98ZaQsOzL2XnPexzK7c"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH5hA511XiNx7s9YpvRK_p5-ZARYPhvIKrFw5JPvIGhO1s7E_82qakgEjM_XA"
         },
         {
-          "url": "https://www.periodicocubano.com/miami-podrian-inundarse-hasta-el-lunes-por-mareas-del-rey/",
-          "title": "Miami podrían inundarse hasta el lunes por mareas del rey",
-          "publisher": "Periódico Cubano",
+          "url": "https://thewest.com.au/sport/perth-wildcats/perth-wildcats-stumble-to-fourth-consecutive-loss-with-100-92-result-against-cairns-taipans-at-rac-arena-c-23132148",
+          "title": "Perth Wildcats stumble to fourth consecutive loss with 100-92 result against Cairns Taipans at RAC Arena",
+          "publisher": "The West Australian",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSV5LSY_7TQwxG3Loknanjxj8X3w9SXMhRuR25qvZjti4ml2JbVNaFHcGg6mvs"
-        }
-      ]
-    },
-    {
-      "query": "nfl week 9",
-      "approx_searches": "100+",
-      "published_at": "2026-11-08T07:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50381724/week-9-picks-predictions-schedule-fantasy-odds-2026",
-        "https://www.nfl.com/news/nfl-week-9-bold-predictions-justin-jefferson-feasts-on-bills-commanders-upset-rams",
-        "https://www.cbssports.com/nfl/news/nfl-week-9-last-minute-best-bets-packers-upset-patriots/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT224uoeAVXgVhxPh6IqToL9OsKRr9NRUhuztfbRDDaTjC57bSzh5bKxijS36w",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50381724/week-9-picks-predictions-schedule-fantasy-odds-2026",
-          "title": "NFL Week 9 preview: Picks, predictions, schedule, betting odds, fantasy tips",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT224uoeAVXgVhxPh6IqToL9OsKRr9NRUhuztfbRDDaTjC57bSzh5bKxijS36w"
-        },
-        {
-          "url": "https://www.nfl.com/news/nfl-week-9-bold-predictions-justin-jefferson-feasts-on-bills-commanders-upset-rams",
-          "title": "NFL Week 9 bold predictions: Justin Jefferson feasts on Bills; Commanders upset Rams",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrnl-n8aL90nCDU0MAp0sciLWzLapXsY8pYfxsimvC8IKsLG4wvalwA0gttWw"
-        },
-        {
-          "url": "https://www.cbssports.com/nfl/news/nfl-week-9-last-minute-best-bets-packers-upset-patriots/",
-          "title": "NFL Week 9 last-minute best bets: Packers upset Patriots in Foxborough, Rams edge out road win vs. Commanders",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8kY306tHifBfHaa5GfAAS4X52xnXkPGDBOaLs9p5g-eKLDhgsFNgEpnm5las"
-        }
-      ]
-    },
-    {
-      "query": "kanye west",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T07:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/05/style/yeezy-season-01-fashion-show-kanye-west.html",
-        "https://www.instyle.com/north-west-poses-siblings-kanye-west-yeezy-show-12237751",
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/north-west-supports-dad-kanye-150000041.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRztQ79-NfUaOVa0JPR23vyxSQNFtr-iy4hRBA5AFLN9qv45AAaVYYS7rom_Vk",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/05/style/yeezy-season-01-fashion-show-kanye-west.html",
-          "title": "Yeezy’s Fashion Show Was a Total Flop",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRztQ79-NfUaOVa0JPR23vyxSQNFtr-iy4hRBA5AFLN9qv45AAaVYYS7rom_Vk"
-        },
-        {
-          "url": "https://www.instyle.com/north-west-poses-siblings-kanye-west-yeezy-show-12237751",
-          "title": "North West, 13, Towers Over Dad Kanye West as He Steps Out With All 4 Kids for Rare Family Outing",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMfgtZ8xVSA2uXaRiSElVtQYnXem4NhFrv9a386oQX3COqEiZnZSAIQsN6z0Q"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/north-west-supports-dad-kanye-150000041.html",
-          "title": "North West Supports Dad Kanye at Yeezy Show With Bianca Censori by Her Side",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStu8uJujdGkTwn54VTw9RTFiUvly7-Bu3dF6vGWrhxAa79-U3O2CpmextI13I"
-        }
-      ]
-    },
-    {
-      "query": "bitcoin",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T07:00:00Z",
-      "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-06/bitcoin-selloff-eases-as-investors-explore-cautious-recovery",
-        "https://www.coindesk.com/markets/2026/11/06/bitcoin-recovers-usd76-000-level-as-etfs-shed-usd430-million-after-tech-rout",
-        "https://finance.yahoo.com/markets/article/bitcoin-tumbles-to-76000-as-post-election-stock-rally-fades-171549230.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT61R9OP5KtiyPGIgm0IOZNaNIVngpcLaONSZT_mL5hwA1rhQLLVTcPnGQaASk",
-      "image_credit": "Bloomberg.com",
-      "news": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-06/bitcoin-selloff-eases-as-investors-explore-cautious-recovery",
-          "title": "Bitcoin Selloff Eases as Investors Explore Cautious Recovery",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT61R9OP5KtiyPGIgm0IOZNaNIVngpcLaONSZT_mL5hwA1rhQLLVTcPnGQaASk"
-        },
-        {
-          "url": "https://www.coindesk.com/markets/2026/11/06/bitcoin-recovers-usd76-000-level-as-etfs-shed-usd430-million-after-tech-rout",
-          "title": "Bitcoin recovers $76,000 level as ETFs shed $430 million after tech rout",
-          "publisher": "CoinDesk",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6eEDezjXPdA5Iq3XUu85hccDM38cuWgXEGfz979Attnpxku4-wbRoSJRKCGE"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/article/bitcoin-tumbles-to-76000-as-post-election-stock-rally-fades-171549230.html",
-          "title": "Bitcoin tumbles to $76,000 as post-election stock rally fades",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRM0iRDJYdmcJY_-oM7MTJibKbCgzoCiNG0Nb8NVM_33hft2YgwotTC8x-EoJ0"
-        }
-      ]
-    },
-    {
-      "query": "michigan senate abdul el sayed",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T06:50:00Z",
-      "related_news_urls": [
-        "https://thehill.com/homenews/campaign/6204662-el-sayed-launches-habibi-pac/",
-        "https://www.politico.com/news/2026/11/05/abdul-el-sayed-jewish-voters-interview-01152872",
-        "https://abcnews.com/Politics/abdul-el-sayeds-grandparents-reflect-historic-senate-win/story?id=137926568"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTuYe67U1cADxW83y-BuzWqXC0_061GAj-AdGqPiIa47J-cV38wlrOCEDykvg",
-      "image_credit": "The Hill",
-      "news": [
-        {
-          "url": "https://thehill.com/homenews/campaign/6204662-el-sayed-launches-habibi-pac/",
-          "title": "El-Sayed launches Habibi PAC",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTuYe67U1cADxW83y-BuzWqXC0_061GAj-AdGqPiIa47J-cV38wlrOCEDykvg"
-        },
-        {
-          "url": "https://www.politico.com/news/2026/11/05/abdul-el-sayed-jewish-voters-interview-01152872",
-          "title": "How Abdul El-Sayed actually did with Jewish voters",
-          "publisher": "Politico",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTy8McvZI5_2zn0vHEryQUktj_QeTskC_cLZxOfkL6lhANe22U5oUyCpz1bFEY"
-        },
-        {
-          "url": "https://abcnews.com/Politics/abdul-el-sayeds-grandparents-reflect-historic-senate-win/story?id=137926568",
-          "title": "Abdul El-Sayed's grandparents reflect on his historic Senate win",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgqouo7iidUZaJtCWKw3wNUTcBHGujxZiEwRU2klVbf7KeM1qeKWuwmAxeoHo"
-        }
-      ]
-    },
-    {
-      "query": "ryan garcia",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T06:10:00Z",
-      "related_news_urls": [
-        "https://boxingnewsonline.net/news/terence-crawford-calls-out-boxing-legend/",
-        "https://talksport.com/boxing/4689841/terence-crawford-plea-floyd-mayweather-return/",
-        "https://britishboxingnews.co.uk/world-news/maybe-one-more-crawford-teases-a-comeback-and-calls-out-garcia-at-160lbs/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQW3_OQ0apT11qR5a5OOPzelvc9ibqeqF0LAxfL44wfbrfyqMmNWvcyqkAu5Wk",
-      "image_credit": "Boxing News Online",
-      "news": [
-        {
-          "url": "https://boxingnewsonline.net/news/terence-crawford-calls-out-boxing-legend/",
-          "title": "Terence Crawford calls out retired boxing legend for comeback fight: \"GOAT vs GOAT\"",
-          "publisher": "Boxing News Online",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQW3_OQ0apT11qR5a5OOPzelvc9ibqeqF0LAxfL44wfbrfyqMmNWvcyqkAu5Wk"
-        },
-        {
-          "url": "https://talksport.com/boxing/4689841/terence-crawford-plea-floyd-mayweather-return/",
-          "title": "Terence Crawford makes 'GOAT vs GOAT' fight plea to Floyd Mayweather after return decision",
-          "publisher": "talkSPORT",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTF6t48tujN1SthSU94gz1NxtF6-0uMJm9r4VId2wYPOGg7F8cUjYR8Sl4pRU4"
-        },
-        {
-          "url": "https://britishboxingnews.co.uk/world-news/maybe-one-more-crawford-teases-a-comeback-and-calls-out-garcia-at-160lbs/",
-          "title": "‘Maybe one more’ – Crawford teases a comeback and calls out Garcia at 160lbs",
-          "publisher": "British Boxing News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtrZsEMLeubDItV0nFPFM25TdV1gjueO8iIa5e5e9bgre32tcLmXHDNyJR5fs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUTDA-wsGunTMpEh904Dm0xLQ1JRhED9U-XM0864vrurrRHr6c6DktZ4J21Js"
         }
       ]
     }
