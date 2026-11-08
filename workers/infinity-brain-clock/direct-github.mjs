@@ -134,7 +134,7 @@ jobs:
   const branch=body.branch;
   if(typeof branch!=='string'||branch.length<1||branch.length>100||
      !/^[A-Za-z0-9][A-Za-z0-9._/-]*$/.test(branch)||
-     branch.includes('..')||branch.includes('//')||branch.endsWith('/')||
+     /^refs\//i.test(branch)||branch.includes('..')||branch.includes('//')||branch.endsWith('/')||
      branch.split('/').some(part=>part.startsWith('.')||part.endsWith('.')))
    throw Error('invalid_branch_ref');
   const repo=await api('');
