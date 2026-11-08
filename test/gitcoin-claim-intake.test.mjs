@@ -90,3 +90,18 @@ test('same receipt never changes wallet, account or line on retry',async()=>{
   IDENTITY_DB:{prepare(){return{bind(){return{async first(){return{id:'owner_account'}}}}}}}};
  await assert.rejects(()=>queuePendingGitLineClaim(env,good()),/gitcoin_claim_conflict/);
 });
+
+test('public callers cannot submit line claims, and trusted callers cannot bypass disabled GIT issuance pipeline',async()=>{
+ const wallet=(await import('../workers/unified-wallet/worker.js')).default;
+ const url='https://wallet.example.test/internal/gitcoin-line-claim';
+ const make=headers=>new Request(url,{method:'POST',headers:{'Content-Type':'application/json',Origin:'https://quantaphi.org',...headers},body:JSON.stringify(good())});
+ const blocked=await wallet.fetch(make({}),{BOT_WORK_SECRET:'trusted_test_secret'},{});
+ assert.equal(blocked.status,401);
+ assert.equal((await blocked.json()).error,'bot_work_authorization_required');
+ const spoof=await wallet.fetch(make({'X-Bot-Work-Key':'wrong'}),{BOT_WORK_SECRET:'trusted_test_secret'},{});
+ assert.equal(spoof.status,401);
+ const disabled=await wallet.fetch(make({'X-Bot-Work-Key':'trusted_test_secret'}),
+  {BOT_WORK_SECRET:'trusted_test_secret'},{});
+ assert.equal(disabled.status,503);
+ assert.equal((await disabled.json()).error,'gitcoin_claim_intake_disabled');
+});
