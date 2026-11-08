@@ -3,17 +3,149 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-08T09:01:30.762564Z",
+  "checked_at": "2026-11-08T09:31:11.110469Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "new zealand election",
+      "approx_searches": "100+",
+      "published_at": "2026-11-08T09:10:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cxr5yyg2nj9eo",
+        "https://www.yahoo.com/news/politics/articles/relative-newcomer-emerges-kingmaker-zealand-084903484.html",
+        "https://www.cnn.com/2026/11/07/world/new-zealand-election-result-uncertain-intl-hnk"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTp7oTcDGMe3UpNaBFeLxuiARGhtfgTOHlNTec3xdL7ye6aIL0tDkQzuMN1oV0",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cxr5yyg2nj9eo",
+          "title": "'Flat', 'tired', 'cynical': Unusually gloomy Kiwis deliver New Zealand's tightest election in years",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTp7oTcDGMe3UpNaBFeLxuiARGhtfgTOHlNTec3xdL7ye6aIL0tDkQzuMN1oV0"
+        },
+        {
+          "url": "https://www.yahoo.com/news/politics/articles/relative-newcomer-emerges-kingmaker-zealand-084903484.html",
+          "title": "Relative newcomer emerges as kingmaker after New Zealand election yields deadlock",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoMiiVwLy7rLizafeFqON91f4ZlsDn3G__Q2B0OwFCzIS8qIax8zYGFSNfa9I"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/07/world/new-zealand-election-result-uncertain-intl-hnk",
+          "title": "New Zealand in political limbo after knife-edge election",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSouTWOFa2aLD4zEtcX1JOson_NwZKdIrBLrNoJgAI0pjEvOMfsztDZ_HFz_oU"
+        }
+      ]
+    },
+    {
+      "query": "college gameday",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T09:00:00Z",
+      "related_news_urls": [
+        "https://www.al.com/alabamafootball/2026/11/desmond-howard-jabs-nick-saban-over-sign-stealing-comment-when-talking-alabama-lsu.html",
+        "https://247sports.com/college/alabama/article/nick-saban-makes-pick-for-alabama-lsu-identifies-biggest-concern-for-tide-292289423/",
+        "https://www.si.com/fannation/college/cfb-hq/news/rece-davis-two-loss-sec-team-win-national-championship-lsu"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnyMLehShpOYFUe3gm34fLNVMKJcXI99i4Z7ij_kbC3QoyDZt7O1IVI5IgZWY",
+      "image_credit": "AL.com",
+      "news": [
+        {
+          "url": "https://www.al.com/alabamafootball/2026/11/desmond-howard-jabs-nick-saban-over-sign-stealing-comment-when-talking-alabama-lsu.html",
+          "title": "ESPN's Desmond Howard jabs Nick Saban over sign-stealing comment when talking Alabama-LSU",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnyMLehShpOYFUe3gm34fLNVMKJcXI99i4Z7ij_kbC3QoyDZt7O1IVI5IgZWY"
+        },
+        {
+          "url": "https://247sports.com/college/alabama/article/nick-saban-makes-pick-for-alabama-lsu-identifies-biggest-concern-for-tide-292289423/",
+          "title": "Nick Saban makes pick for Alabama-LSU, identifies biggest concern for Tide",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEMpQMLGL70cuf2zd98vK2thqvZE9PWe9nzMZjYUjul8klLJGyX9nP0NCGSW8"
+        },
+        {
+          "url": "https://www.si.com/fannation/college/cfb-hq/news/rece-davis-two-loss-sec-team-win-national-championship-lsu",
+          "title": "Rece Davis Names Two-Loss SEC Team That Can Win the National Championship",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRimIvP9nY4zICkYeoGsBuq7-Tjv8AqRzthNKYu2oEgAMH24jgRVEBpVZjAISk"
+        }
+      ]
+    },
+    {
+      "query": "mililani vs kapolei",
+      "approx_searches": "100+",
+      "published_at": "2026-11-08T08:50:00Z",
+      "related_news_urls": [
+        "https://www.staradvertiser.com/2026/11/07/photo-gallery/prep-football-kapolei-vs-mililani-11-7-26/",
+        "https://www.khon2.com/sports/built-ford-tough-matchup-oia-open-division-championship-game-kapolei-vs-mililani/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMwMMe-MgKxXmwn0El_qvoOnSj67ZHhot9L-x2OxtZ9UqXwqGXHy5HMzJgpMk",
+      "image_credit": "Honolulu Star-Advertiser",
+      "news": [
+        {
+          "url": "https://www.staradvertiser.com/2026/11/07/photo-gallery/prep-football-kapolei-vs-mililani-11-7-26/",
+          "title": "Prep football: Kapolei vs. Mililani (11/7/26)",
+          "publisher": "Honolulu Star-Advertiser",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMwMMe-MgKxXmwn0El_qvoOnSj67ZHhot9L-x2OxtZ9UqXwqGXHy5HMzJgpMk"
+        },
+        {
+          "url": "https://www.khon2.com/sports/built-ford-tough-matchup-oia-open-division-championship-game-kapolei-vs-mililani/",
+          "title": "Built Ford Tough Matchup: OIA Open Division Championship Game – Kapolei vs. Mililani",
+          "publisher": "KHON2",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlcy6iMmAfhclDwjnv2xPOt-ALmGJHq-osAm1YIhWZpYc__rN1zb9wfvpctHA"
+        }
+      ]
+    },
+    {
+      "query": "medal",
+      "approx_searches": "100+",
+      "published_at": "2026-11-08T08:50:00Z",
+      "related_news_urls": [
+        "https://uww.org/articles/beach-wrestling-2026-dakar-youth-olympics-live-schedule-rules",
+        "https://www.bignewsnetwork.com/news/279419506/spsenegal-dakar-saly-2026-youth-olympics-beach-wrestling",
+        "https://www.couriernews.com/sports/senegalese-female-wrestler-wins-the-nation-s-first-olympic-gold-at-dakar-youth-games/article_b43aba43-c97a-5add-8b46-169ad31178bb.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQju0KUg_QJ6eQgTbMLoKvVThavrwuWT5Jr4_iyezm6s-Kxnj3TiEOPNDHb4cs",
+      "image_credit": "United World Wrestling",
+      "news": [
+        {
+          "url": "https://uww.org/articles/beach-wrestling-2026-dakar-youth-olympics-live-schedule-rules",
+          "title": "Beach Wrestling 2026 Dakar Youth Olympics: Live, Schedule, Rules",
+          "publisher": "United World Wrestling",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQju0KUg_QJ6eQgTbMLoKvVThavrwuWT5Jr4_iyezm6s-Kxnj3TiEOPNDHb4cs"
+        },
+        {
+          "url": "https://www.bignewsnetwork.com/news/279419506/spsenegal-dakar-saly-2026-youth-olympics-beach-wrestling",
+          "title": "(SP)SENEGAL-DAKAR-SALY-2026 YOUTH OLYMPICS-BEACH WRESTLING",
+          "publisher": "Big News Network.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCqlYDzapJsq1ueP4ArUNoPQg4SB9I-Bv1igqp3owKQgsBrwXfGXqYJqzwmco"
+        },
+        {
+          "url": "https://www.couriernews.com/sports/senegalese-female-wrestler-wins-the-nation-s-first-olympic-gold-at-dakar-youth-games/article_b43aba43-c97a-5add-8b46-169ad31178bb.html",
+          "title": "Senegalese female wrestler wins the nation’s first Olympic gold at Dakar Youth Games",
+          "publisher": "couriernews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrF8ToPe_kELDpV8oXqdFaS27K9PYfW5bCXKOoEwEQguGsz_Q0lE-s0nTnLzo"
+        }
+      ]
+    },
     {
       "query": "alexandra eala",
       "approx_searches": "2000+",
       "published_at": "2026-11-08T08:30:00Z",
       "related_news_urls": [
         "https://www.espn.com/tennis/story/_/id/50407226/alex-eala-outlasts-maria-sakkari-rain-soaked-hong-kong-open-semifinals-faces-claire-liu-final",
-        "https://sports.inquirer.net/706177/live-alex-eala-vs-claire-liu-hong-kong-open-final",
-        "https://www.wtatennis.com/news/4606011/eala-tops-sakkari-in-rain-impacted-semifinal-to-set-hong-kong-final-against-liu"
+        "https://www.wtatennis.com/news/4606011/eala-tops-sakkari-in-rain-impacted-semifinal-to-set-hong-kong-final-against-liu",
+        "https://www.abs-cbn.com/sports/othersports/2026/11/6/tennis-alex-eala-survives-tough-ruzic-challenge-to-make-hong-kong-open-final-four-2340"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSwSmrOjKUv55-smBRwIBdogZNrG8PewoBhpZeHNF-aPaA86fjN-FpzSd9GWXo",
       "image_credit": "ESPN",
@@ -26,18 +158,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSwSmrOjKUv55-smBRwIBdogZNrG8PewoBhpZeHNF-aPaA86fjN-FpzSd9GWXo"
         },
         {
-          "url": "https://sports.inquirer.net/706177/live-alex-eala-vs-claire-liu-hong-kong-open-final",
-          "title": "LIVE: Alex Eala vs Claire Liu – Hong Kong Open final",
-          "publisher": "Inquirer.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXwdLK-bCFAI17rIpGzSWpCNj-tik0yLWLjLV6D5KYd8FroIvsn8cWUwoDmPQ"
-        },
-        {
           "url": "https://www.wtatennis.com/news/4606011/eala-tops-sakkari-in-rain-impacted-semifinal-to-set-hong-kong-final-against-liu",
           "title": "Eala tops Sakkari in rain-impacted semifinal to set Hong Kong final against Liu",
           "publisher": "WTA Tennis",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQGGwUnFF5TWUOzxjtbcfRjQkfnPsr4fkBsJw0vO3zcVqeZx4uRORFSWvNTgE"
+        },
+        {
+          "url": "https://www.abs-cbn.com/sports/othersports/2026/11/6/tennis-alex-eala-survives-tough-ruzic-challenge-to-make-hong-kong-open-final-four-2340",
+          "title": "Tennis: Alex Eala survives tough Ruzic challenge to make Hong Kong Open semis",
+          "publisher": "ABS-CBN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7AnV16W-_23ZAloB1_k7Yht_A4g-cySQ4d4r-ImbgCxv6DeWxHDpYcqWS8T4"
         }
       ]
     },
@@ -82,8 +214,8 @@
       "published_at": "2026-11-08T08:30:00Z",
       "related_news_urls": [
         "https://www.theatlantic.com/politics/2026/11/epstein-midterm-election-end-maga/689303/",
-        "https://www.ms.now/deadline-white-house/watch/want-to-burn-the-republican-party-down-trump-world-spooked-as-voters-unleash-wrath-over-epstein-2519967299790",
-        "https://www.axios.com/2026/11/06/democrats-ads-epstein"
+        "https://www.axios.com/2026/11/06/democrats-ads-epstein",
+        "https://www.ms.now/deadline-white-house/watch/want-to-burn-the-republican-party-down-trump-world-spooked-as-voters-unleash-wrath-over-epstein-2519967299790"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpCAbJfDPtLWqsj0BEHbA_CTzDayC7DV949F_SqWVSS_qdtnVQaSH2dqq9_xg",
       "image_credit": "The Atlantic",
@@ -96,18 +228,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpCAbJfDPtLWqsj0BEHbA_CTzDayC7DV949F_SqWVSS_qdtnVQaSH2dqq9_xg"
         },
         {
-          "url": "https://www.ms.now/deadline-white-house/watch/want-to-burn-the-republican-party-down-trump-world-spooked-as-voters-unleash-wrath-over-epstein-2519967299790",
-          "title": "‘Want to burn the Republican Party down’: Trump world spooked as voters unleash wrath over Epstein",
-          "publisher": "MS NOW",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOlMJ12HQ0Y6uGbMAPI9-bIJSZ9CoCuf75iSzDEQ3idpB-ELHSakbtYCjuXo0"
-        },
-        {
           "url": "https://www.axios.com/2026/11/06/democrats-ads-epstein",
           "title": "Scoop: How Epstein ads pushed Dems' closing argument",
           "publisher": "Axios",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_Jubimxgid4ZAEUTmsYnSmOfRGKyFw0j7ZHESZp7ZdgbiWQmLZP7yCo0W7qA"
+        },
+        {
+          "url": "https://www.ms.now/deadline-white-house/watch/want-to-burn-the-republican-party-down-trump-world-spooked-as-voters-unleash-wrath-over-epstein-2519967299790",
+          "title": "‘Want to burn the Republican Party down’: Trump world spooked as voters unleash wrath over Epstein",
+          "publisher": "MS NOW",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOlMJ12HQ0Y6uGbMAPI9-bIJSZ9CoCuf75iSzDEQ3idpB-ELHSakbtYCjuXo0"
         }
       ]
     },
@@ -117,8 +249,8 @@
       "published_at": "2026-11-08T08:20:00Z",
       "related_news_urls": [
         "https://www.theguardian.com/sport/live/2026/nov/08/australia-kangaroos-vs-samoa-rugby-league-world-cup-mens-semi-final-live-updates",
-        "https://www.espn.com/nrl/story/_/id/50415643/rugby-league-world-cup-match-winner-bench-walters-explains-kangaroos-selections",
-        "https://sports.yahoo.com/articles/watch-australia-vs-samoa-free-060500905.html"
+        "https://www.news.com.au/sport/nrl/world-cup/kangaroos-star-axed-for-world-cup-semifinal-as-alarming-detail-raises-eyebrows/news-story/851f30fc191f08bf44d938fd0f4ba736",
+        "https://www.ntnews.com.au/sport/world-cup-semifinals-live-insane-kangaroos-record-revealed-jillaroos-face-fiji/live-coverage/3f93825ae469e040a761073d8f05947d"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVhNiMXd2wnbrRwZU1uNloZE1TEi1uSfKdTPIYJ9HzUQ2PR3jt08dpizFkTH4",
       "image_credit": "The Guardian",
@@ -131,18 +263,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVhNiMXd2wnbrRwZU1uNloZE1TEi1uSfKdTPIYJ9HzUQ2PR3jt08dpizFkTH4"
         },
         {
-          "url": "https://www.espn.com/nrl/story/_/id/50415643/rugby-league-world-cup-match-winner-bench-walters-explains-kangaroos-selections",
-          "title": "'Match-winner' from bench\" Walters explains Kangaroos selections",
-          "publisher": "ESPN",
+          "url": "https://www.news.com.au/sport/nrl/world-cup/kangaroos-star-axed-for-world-cup-semifinal-as-alarming-detail-raises-eyebrows/news-story/851f30fc191f08bf44d938fd0f4ba736",
+          "title": "Kangaroos star axed, concerning detail",
+          "publisher": "News.com.au",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRBKBasAhOM-bi2cIk3sFDC6Wrph7cOpu2sldrgDVRW6lsmQecOSP3JJ3rzG0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3gmijbF2EsjxB_64eL8RmkqVVc82XZHKH2gvDm91PMUY5aAwO0qzShYATlfE"
         },
         {
-          "url": "https://sports.yahoo.com/articles/watch-australia-vs-samoa-free-060500905.html",
-          "title": "Watch Australia vs Samoa: FREE live streams and TV channels",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.ntnews.com.au/sport/world-cup-semifinals-live-insane-kangaroos-record-revealed-jillaroos-face-fiji/live-coverage/3f93825ae469e040a761073d8f05947d",
+          "title": "World Cup semi-finals live: Jillaroos set to make history before Kangaroos face off against Samoa",
+          "publisher": "NT News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRh-BNXzncvg0ztLyWu_hqxu-DCSpxwukW9c_mN8UtVv-bW4vXuTkv2C2In0KE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4WxTYjr6nelAbfF_IeM0PKEcJg9xIJ1Jlgy4-RL9dhV1SYaSkf9yIXMrkbhg"
         }
       ]
     },
@@ -213,146 +345,6 @@
           "publisher": "Treasure Coast News",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk1z_WhFiPCZ9_WbBlaDSEdcpA0o-rmh0vERK9c5x_zFZR6HZ_ut_xEeokJN4"
-        }
-      ]
-    },
-    {
-      "query": "taekwondo",
-      "approx_searches": "100+",
-      "published_at": "2026-11-08T08:10:00Z",
-      "related_news_urls": [
-        "https://www.koreajoongangdaily.com/korea/ppp-blasts-handling-of-north-koreas-solo-unesco-taekwondo-bid/12961156",
-        "https://www.mk.co.kr/en/politics/12201509",
-        "https://en.sedaily.com/politics/2026/11/07/people-power-party-blames-government-over-taekwondos-likely"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz0VTvWR8bbHwVpWVKV_9IAEhEFnY2Sxe9VQvdYfSTLTPE1pJr3oOf431evDs",
-      "image_credit": "Korea JoongAng Daily",
-      "news": [
-        {
-          "url": "https://www.koreajoongangdaily.com/korea/ppp-blasts-handling-of-north-koreas-solo-unesco-taekwondo-bid/12961156",
-          "title": "PPP blasts handling of North Korea's solo Unesco taekwondo bid",
-          "publisher": "Korea JoongAng Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz0VTvWR8bbHwVpWVKV_9IAEhEFnY2Sxe9VQvdYfSTLTPE1pJr3oOf431evDs"
-        },
-        {
-          "url": "https://www.mk.co.kr/en/politics/12201509",
-          "title": "On the 7th, the People's Power strongly criticized the situation in which North Korea's sole registr..",
-          "publisher": "매일경제",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRS6DXwHaLadLV0IWVwdgPVcrO7cejHAYs8rZRXstr7WS7VCCV66u1beuhr0Yo"
-        },
-        {
-          "url": "https://en.sedaily.com/politics/2026/11/07/people-power-party-blames-government-over-taekwondos-likely",
-          "title": "People Power Party Blames Government Over Taekwondo's Likely North Korean Listing",
-          "publisher": "Seoul Economic Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMOCmTF_SBaNaqmJbcLZMlAekBLo6qiOf3rMIiO7vTdpsOBO3BlVOgjZ_xlTY"
-        }
-      ]
-    },
-    {
-      "query": "riot",
-      "approx_searches": "100+",
-      "published_at": "2026-11-08T08:10:00Z",
-      "related_news_urls": [
-        "https://playvalorant.com/en-us/news/game-updates/protecting-competitive-integrity-in-vct-2027/",
-        "https://thenewsmill.com/2026/11/riot-games-and-jioblast-to-host-vct-2027-kickoff-south-asia-qualifiers/",
-        "https://valorantesports.com/en-SG/valorantesports/news/vct-pacific-2027-primer"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGW3mh18zie2Cl8VtY7aBneYT8noaAOtAaqv4fpUwhxajCiCiq1gboLSv8HhE",
-      "image_credit": "VALORANT",
-      "news": [
-        {
-          "url": "https://playvalorant.com/en-us/news/game-updates/protecting-competitive-integrity-in-vct-2027/",
-          "title": "Protecting Competitive Integrity in VCT 2027",
-          "publisher": "VALORANT",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGW3mh18zie2Cl8VtY7aBneYT8noaAOtAaqv4fpUwhxajCiCiq1gboLSv8HhE"
-        },
-        {
-          "url": "https://thenewsmill.com/2026/11/riot-games-and-jioblast-to-host-vct-2027-kickoff-south-asia-qualifiers/",
-          "title": "Riot Games and JioBLAST to host VCT 2027 Kickoff South Asia qualifiers",
-          "publisher": "The News Mill",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQywnWMv3OjsS0Gp55zimqQkhMdTyHbLROw7ffBW_B_wRMKBpNJ-uMoS4eK55o"
-        },
-        {
-          "url": "https://valorantesports.com/en-SG/valorantesports/news/vct-pacific-2027-primer",
-          "title": "Introducing VCT Pacific 2027",
-          "publisher": "VALORANT Esports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXJUinbN9tmu8pfMNliU8ee2fA3RLEzmrN-Sehhgs2A8em_zAnUAtRUD3M7JE"
-        }
-      ]
-    },
-    {
-      "query": "usher",
-      "approx_searches": "100+",
-      "published_at": "2026-11-08T08:10:00Z",
-      "related_news_urls": [
-        "https://www.11alive.com/article/entertainment/music/fans-react-chris-brown-usher-first-night-atlanta-concert/85-835b212e-d0e0-4cb0-a914-0cbff588c967",
-        "https://www.ajc.com/arts-entertainment/2026/11/chris-brown-usher-atlanta-tour-atlanta/",
-        "https://www.yahoo.com/entertainment/music/concerts/articles/chris-brown-usher-perform-together-010055889.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQatEMLjnVSeYrJnQPP3N56SUlhw7YqYtnw8i7H3gukrTLp2-j72NCSzid0ub4",
-      "image_credit": "11Alive.com",
-      "news": [
-        {
-          "url": "https://www.11alive.com/article/entertainment/music/fans-react-chris-brown-usher-first-night-atlanta-concert/85-835b212e-d0e0-4cb0-a914-0cbff588c967",
-          "title": "Fans say Chris Brown and Usher’s first Atlanta concert left them feeling shortchanged",
-          "publisher": "11Alive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQatEMLjnVSeYrJnQPP3N56SUlhw7YqYtnw8i7H3gukrTLp2-j72NCSzid0ub4"
-        },
-        {
-          "url": "https://www.ajc.com/arts-entertainment/2026/11/chris-brown-usher-atlanta-tour-atlanta/",
-          "title": "Usher and Chris Brown deliver a very late, underwhelming concert in Atlanta",
-          "publisher": "The Atlanta Journal-Constitution",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKamgc1we02KS7rKUAQJgon1HP71KPiEsBLoKPJddgyuI_eXuyTUj2BhQmztI"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/music/concerts/articles/chris-brown-usher-perform-together-010055889.html",
-          "title": "Chris Brown and Usher Perform Together After Reported Backstage Argument and 2½-Hour Atlanta Concert Delay",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9ygZsZOvFhHmiIT6A1wTxVD6j-DREYg4Nxl8GtyqGVO3px9hhEOmTmQmVj_4"
-        }
-      ]
-    },
-    {
-      "query": "中超",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T08:00:00Z",
-      "related_news_urls": [
-        "https://m.zhibo8.com/news/web/zuqiu/2026-11-08/6aeeee516c4d8native.htm",
-        "https://m.dongqiudi.com/article/6626934.html",
-        "https://www.nowscore.com/news/1268516.htm"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDaMopVLtHzn7NVOizBaAaA1qzFpFZyACNEd38BN1DipTzH3SYCigM7RuEoBE",
-      "image_credit": "直播吧",
-      "news": [
-        {
-          "url": "https://m.zhibo8.com/news/web/zuqiu/2026-11-08/6aeeee516c4d8native.htm",
-          "title": "最后一个冠军点！蓉城客平泰山即夺队史首冠，英博主场能否逆袭？",
-          "publisher": "直播吧",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDaMopVLtHzn7NVOizBaAaA1qzFpFZyACNEd38BN1DipTzH3SYCigM7RuEoBE"
-        },
-        {
-          "url": "https://m.dongqiudi.com/article/6626934.html",
-          "title": "热议中超争冠战：津门虎比成都认真；考验约翰调整能力",
-          "publisher": "懂球帝",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxCN8eT_v8oFpLnUHHbbbUZig9YeMWv9Qhi8b_MSX-X-BjkwM1TuYTWNNVzMk"
-        },
-        {
-          "url": "https://www.nowscore.com/news/1268516.htm",
-          "title": "今日中超收官之战！山东泰山能阻击成都夺冠？",
-          "publisher": "捷报比分网",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-rFfJS5-6gJfzaKVIZI89vFDWBylx63M7Og9l_99U1m4NB834hwaFJ8TvHgg"
         }
       ]
     }
