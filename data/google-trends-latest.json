@@ -3,356 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-08T05:01:19.273718Z",
+  "checked_at": "2026-11-08T05:31:28.389740Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "college football rankings",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-08T04:40:00Z",
+      "query": "tabla general liga mx",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T05:10:00Z",
       "related_news_urls": [
-        "https://www.foxnews.com/video/6407967024112",
-        "https://www.nytimes.com/athletic/7746438/2026/11/02/college-football-fbs-rankings-138-teams/",
-        "https://www.cbssports.com/college-football/news/college-football-power-ratings-2026-georgia-miami-flaws/"
+        "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17483717/liga-mx-horarios-canales-jornada-16-apertura-2026",
+        "https://www.record.com.mx/historia/asi-marcha-la-tabla-de-posiciones-de-la-liga-mx-2026110714235995636",
+        "https://xeva.com.mx/deportes/298217/arranca-la-j16-de-liga-mx-con-el-pumas-vs-america-como-principal-atractivo"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8xfWc8WcrRxOwEoJa5kuq-XYW5ti8vddqs9JH_RxMoaF29D6vuZy7nNtZeCA",
-      "image_credit": "Fox News",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9bJvvns18K_Qblyv9rwXS2WUznAdhdJb6hHkpf-Y1U0HWaDie5NUYv9CF3K0",
+      "image_credit": "ESPN Deportes",
       "news": [
         {
-          "url": "https://www.foxnews.com/video/6407967024112",
-          "title": "There are NO Dominant Teams in College Football | Don't @ Me w/ Dan Dakich",
-          "publisher": "Fox News",
+          "url": "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17483717/liga-mx-horarios-canales-jornada-16-apertura-2026",
+          "title": "Liga MX: Horarios y cómo ver la Jornada 16",
+          "publisher": "ESPN Deportes",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8xfWc8WcrRxOwEoJa5kuq-XYW5ti8vddqs9JH_RxMoaF29D6vuZy7nNtZeCA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9bJvvns18K_Qblyv9rwXS2WUznAdhdJb6hHkpf-Y1U0HWaDie5NUYv9CF3K0"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7746438/2026/11/02/college-football-fbs-rankings-138-teams/",
-          "title": "Re-ranking 138 college football teams ahead of the most pivotal weekend of the season - The Athletic",
-          "publisher": "The New York Times",
+          "url": "https://www.record.com.mx/historia/asi-marcha-la-tabla-de-posiciones-de-la-liga-mx-2026110714235995636",
+          "title": "Así marcha la tabla de posiciones de la Liga MX, hoy 7 de noviembre",
+          "publisher": "Récord",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvVI0YJ95aEMj6hvRfTQ58Tn39_pbd63StpUnvbwwVsjJKUowp28MPIxdWgxU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRimrOK5HuQRxvdWES_uyWlRMb_CIE0aS1uAt_JWczUOoV0yUH3NWv7yLcbOQs"
         },
         {
-          "url": "https://www.cbssports.com/college-football/news/college-football-power-ratings-2026-georgia-miami-flaws/",
-          "title": "Tom Fornelli's College Football Power Ratings: Georgia and Miami remain on top, but cracks begin to show",
-          "publisher": "CBS Sports",
+          "url": "https://xeva.com.mx/deportes/298217/arranca-la-j16-de-liga-mx-con-el-pumas-vs-america-como-principal-atractivo",
+          "title": "Arranca la J16 de Liga MX con el Pumas vs América como principal atractivo",
+          "publisher": "XEVA",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRk9aRVy-PmE5ibxzpeGo2LPt-936uikeRzZUrDZiDfwF-_WnCC0gNULpa5fL4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeHSBi-HPOVRHxJ-7LY7ylT4ZCYsfDzseipfGIz0ho8xsgObaSuBl2hWYscNQ"
         }
       ]
     },
     {
-      "query": "ncaaf",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T04:40:00Z",
+      "query": "west seattle blog",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T05:10:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/college-football/news/polymarket-promo-code-cbssports-get-25-bonus-for-tennessee-kentucky-georgia-ole-miss-college-football/",
-        "https://www.rockytopinsider.com/2026/11/07/kalshi-code-rocky-55-referral-promo-nfl-sunday-after-kentucky-tennessee/",
-        "https://www.al.com/betting/2026/11/polymarket-promo-code-al25bonus-launches-a-25-bonus-for-miami-vs-notre-dame-tonight.html"
+        "https://westseattleblog.com/2026/11/west-seattle-saturday-28-notes-4/",
+        "https://westseattleblog.com/2026/11/biznote-the-wash-dog-announces-closure/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc1N3pgRbYNrAxfLu_5nWNnQ17Nx5Il6KQaAs6Fd1CL3L19uUvkkZZtbUzlpg",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWNhd4PU3_qWxiUCececZ_OQZIYwdZBgPcITnkxG1hQLyLgwDznkjwUUcO6FY",
+      "image_credit": "West Seattle Blog...",
+      "news": [
+        {
+          "url": "https://westseattleblog.com/2026/11/west-seattle-saturday-28-notes-4/",
+          "title": "WEST SEATTLE SATURDAY: 28 notes!",
+          "publisher": "West Seattle Blog...",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWNhd4PU3_qWxiUCececZ_OQZIYwdZBgPcITnkxG1hQLyLgwDznkjwUUcO6FY"
+        },
+        {
+          "url": "https://westseattleblog.com/2026/11/biznote-the-wash-dog-announces-closure/",
+          "title": "BIZNOTE: The Wash Dog announces closure (updated with owners’ comment)",
+          "publisher": "West Seattle Blog...",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScOJyjzXbfP1tr_ISueGwyQsaQj07LXj8B3JP1Ruz_1sRpKd_Tu7D7Sa51OAQ"
+        }
+      ]
+    },
+    {
+      "query": "sienna miller",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T05:10:00Z",
+      "related_news_urls": [
+        "https://www.eonline.com/news/1437866/sienna-miller-shares-her-older-kids-reaction-to-baby-boy-with-oli-green",
+        "https://people.com/sienna-miller-shares-how-her-2-older-kids-are-adjusting-to-her-new-baby-boy-12240709",
+        "https://ca.style.yahoo.com/sienna-millers-daughters-worship-baby-190000617.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRPRr1y0jRvrEIDIC0D5uVxwJWzlBEWicy-csOEMOykdQA54NlB2kST2nSo74",
+      "image_credit": "E! News",
+      "news": [
+        {
+          "url": "https://www.eonline.com/news/1437866/sienna-miller-shares-her-older-kids-reaction-to-baby-boy-with-oli-green",
+          "title": "Sienna Miller Reveals How Her Kids Are Adjusting to Her New Baby Boy With Oli Green",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRPRr1y0jRvrEIDIC0D5uVxwJWzlBEWicy-csOEMOykdQA54NlB2kST2nSo74"
+        },
+        {
+          "url": "https://people.com/sienna-miller-shares-how-her-2-older-kids-are-adjusting-to-her-new-baby-boy-12240709",
+          "title": "Sienna Miller Shares How Her 2 Older Kids Are Adjusting to Her New Baby Boy with Fiancé Oli Green",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4byC__wFo24lU8-EpMPFca82BpOjY4nQI3NdVMyOzMQLHw1qFVMgZNoOTg5w"
+        },
+        {
+          "url": "https://ca.style.yahoo.com/sienna-millers-daughters-worship-baby-190000617.html",
+          "title": "Sienna Miller's daughters 'worship' their baby brother",
+          "publisher": "Yahoo Lifestyle Canada",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVPvtCT-2NEWN92ZHzml_wK2vkrzJvyRsNUta5oqezALkwjWi-r4LdyEubzng"
+        }
+      ]
+    },
+    {
+      "query": "snl cast",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T05:00:00Z",
+      "related_news_urls": [
+        "https://obsessed.substack.com/p/bobby-moynihan-spills-on-tracy-morgan-snl-and-weirdos",
+        "https://www.thedailybeast.com/obsessed/bobby-moynihan-talks-tracy-morgan-weirdos-and-why-the-new-snl-cast-has-it-easy",
+        "https://www.nbc.com/nbc-insider/snl-new-tonight-november-7-host-musical-guest"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi86Ahm3LYwh0UbOct850TZuvgcK7JyXQqKkKPhTN0cAvg0lxRCXEUMsoMcNI",
+      "image_credit": "Obsessed by Kevin Fallon",
+      "news": [
+        {
+          "url": "https://obsessed.substack.com/p/bobby-moynihan-spills-on-tracy-morgan-snl-and-weirdos",
+          "title": "Bobby Moynihan Spills on Tracy Morgan, ‘SNL’, and Weirdos",
+          "publisher": "Obsessed by Kevin Fallon",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi86Ahm3LYwh0UbOct850TZuvgcK7JyXQqKkKPhTN0cAvg0lxRCXEUMsoMcNI"
+        },
+        {
+          "url": "https://www.thedailybeast.com/obsessed/bobby-moynihan-talks-tracy-morgan-weirdos-and-why-the-new-snl-cast-has-it-easy",
+          "title": "Bobby Moynihan Talks Tracy Morgan, Weirdos, and Why the New ‘SNL’ Cast Has It Easy",
+          "publisher": "The Daily Beast",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmE4Azl9jvD-ZsVUO92HdaslRYYm-2ghJQjErMzQAVYHpObTbaPNIjo-ajWFw"
+        },
+        {
+          "url": "https://www.nbc.com/nbc-insider/snl-new-tonight-november-7-host-musical-guest",
+          "title": "Is SNL New Tonight, November 7, 2026? About This Week's Host & Musical Guest",
+          "publisher": "NBC TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYIMLiakoXr1APH2J1B6DyNd79wHgqzstn6CwFsfrKsCVOGksVV-NrmHgrng0"
+        }
+      ]
+    },
+    {
+      "query": "power outage",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T05:00:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/world/russian-forces-launch-missile-attack-ukrainian-capital-kyiv-mayor-says-2026-11-07/",
+        "https://www.yahoo.com/news/world/articles/missiles-target-kyiv-injure-5-072141209.html",
+        "https://www.bbc.com/news/articles/cm4g1nq8158po"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfCmzIa4GGzj73-ULiLZ9F7CVBTkkbsETeoCiehnAmDaiEH1O5D39dJquGVJ8",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/world/russian-forces-launch-missile-attack-ukrainian-capital-kyiv-mayor-says-2026-11-07/",
+          "title": "Russia pounds power facilities around Kyiv, damages major bridge",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfCmzIa4GGzj73-ULiLZ9F7CVBTkkbsETeoCiehnAmDaiEH1O5D39dJquGVJ8"
+        },
+        {
+          "url": "https://www.yahoo.com/news/world/articles/missiles-target-kyiv-injure-5-072141209.html",
+          "title": "Drone and missile attacks wound 9 as Ukraine prepares for talks with Russia and the US",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSssoOtF7Zf2fRBWIpbRs-QqCrxZrg1we1JohnDufVNduYvTAAOoqwQfJRK4pc"
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/cm4g1nq8158po",
+          "title": "Ukraine's power network suffers further damage after fresh Russian strikes",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9NmqBFsg8wPb-h4Cw_T-jMcXA53JdUa29ugt0UO2LXxNOBOEKUBwqi44HSAQ"
+        }
+      ]
+    },
+    {
+      "query": "audric estime",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T05:00:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/fantasy/football/news/saints-charlie-smyth-officially-elevated-to-kick-week-9/",
+        "https://www.nola.com/sports/saints/saints-believe-they-ve-fixed-charlie-smyth-s-biggest-weakness-ahead-of-his-latest-chance/article_7d43e2e6-9e6d-4d69-b6dd-47944fe4295c.html",
+        "https://sports.yahoo.com/articles/saints-kicker-orleans-makes-bold-002642336.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRgtyhxGxEG7i2Okxt9MXO4tXkT6SYFeNJ2RsRVSTb2-axRU5x1XlHHfRx6NM",
       "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://www.cbssports.com/college-football/news/polymarket-promo-code-cbssports-get-25-bonus-for-tennessee-kentucky-georgia-ole-miss-college-football/",
-          "title": "Polymarket promo code CBSSPORTS: Get $25 bonus for Tennessee-Kentucky, Georgia-Ole Miss, college football",
+          "url": "https://www.cbssports.com/fantasy/football/news/saints-charlie-smyth-officially-elevated-to-kick-week-9/",
+          "title": "Saints' Charlie Smyth: Officially elevated to kick Week 9",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc1N3pgRbYNrAxfLu_5nWNnQ17Nx5Il6KQaAs6Fd1CL3L19uUvkkZZtbUzlpg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRgtyhxGxEG7i2Okxt9MXO4tXkT6SYFeNJ2RsRVSTb2-axRU5x1XlHHfRx6NM"
         },
         {
-          "url": "https://www.rockytopinsider.com/2026/11/07/kalshi-code-rocky-55-referral-promo-nfl-sunday-after-kentucky-tennessee/",
-          "title": "Kalshi code “ROCKY” extends $55 referral promo for NFL Sunday after Kentucky vs. Tennessee",
-          "publisher": "Rocky Top Insider",
+          "url": "https://www.nola.com/sports/saints/saints-believe-they-ve-fixed-charlie-smyth-s-biggest-weakness-ahead-of-his-latest-chance/article_7d43e2e6-9e6d-4d69-b6dd-47944fe4295c.html",
+          "title": "Saints believe they’ve fixed Charlie Smyth’s biggest weakness ahead of his latest chance",
+          "publisher": "NOLA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJcGkq3ojLOxIf6CdzynSrQWKeiDk5AdXFmWpjbdlt4oP7KRx8DVEQieO0NkI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-NMf6Nn_9fEHA-XT2-I-aoSmJebw1gGbiUU_hRy9UGY_94ggr0ATIE8d_GvA"
         },
         {
-          "url": "https://www.al.com/betting/2026/11/polymarket-promo-code-al25bonus-launches-a-25-bonus-for-miami-vs-notre-dame-tonight.html",
-          "title": "Polymarket Promo Code AL25BONUS launches $25 college football bonus for Miami vs. Notre Dame",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeOuH35jDdImodQdPKg_2NsJlhfREIDUKk6NqyVM4qZ1WUytG81z-xyAD1Wug"
-        }
-      ]
-    },
-    {
-      "query": "oilers",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T04:40:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/news/vancouver-canucks-edmonton-oilers-game-preview-november-7-2026",
-        "https://sports.yahoo.com/articles/lineup-notes-willander-miss-third-025547682.html",
-        "https://sportsbook.fanduel.com/hockey/nhl/vancouver-canucks-@-edmonton-oilers-36287969"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/news/vancouver-canucks-edmonton-oilers-game-preview-november-7-2026",
-          "title": "Canucks at Oilers projected lineups",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/lineup-notes-willander-miss-third-025547682.html",
-          "title": "Lineup Notes: Willander To Miss Third Consecutive Game, Bains Slots Back In As Canucks Face The Oilers",
+          "url": "https://sports.yahoo.com/articles/saints-kicker-orleans-makes-bold-002642336.html",
+          "title": "Who is Saints’ Kicker? New Orleans Makes Bold Daniel Carlson Decision",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3phCI1Lw7ZOGtm9aML1sqmnAlgdsCjfmppUqbJNpJSKG2ucG1kB5q69ODe38"
-        },
-        {
-          "url": "https://sportsbook.fanduel.com/hockey/nhl/vancouver-canucks-@-edmonton-oilers-36287969",
-          "title": "Vancouver Canucks @ Edmonton Oilers Odds",
-          "publisher": "FanDuel Sportsbook",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTQy8usaonED9dN3Tvf3iVZL7eeROgKV0xcq454G0Z90yRA8__FXnvWJiyU78"
         }
       ]
     },
     {
-      "query": "day after tomorrow",
+      "query": "ac boise",
       "approx_searches": "200+",
-      "published_at": "2026-11-08T04:40:00Z",
+      "published_at": "2026-11-08T05:00:00Z",
       "related_news_urls": [
-        "https://www.imdb.com/news/ni66098396/?ref_=nmnw_art_perm",
-        "https://decider.com/2026/11/03/top-movie-on-netflix-the-day-after-tomorrow/",
-        "https://www.cbr.com/the-day-after-tomorrow-disaster-netflix-success-november-2026/"
+        "https://www.ktvb.com/article/sports/soccer/ac-boise/ac-boise-dominates-one-knoxville-earns-first-playoff-win-in-club-history/277-478e7370-ba16-4186-82a0-72916251362e",
+        "https://boisedev.com/news/2026/11/07/headed-to-ac-boises-semi-final-game-heres-what-you-need-to-know/",
+        "https://www.backheeled.com/usl-league-one-ac-boise-promotion-charlotte-independence-more/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNwuxwJB8dAWJYBouizyDEXTl8OmKPbYQ43Qfz-AEmtOEQvuKpcs70Lw6EQCQ",
-      "image_credit": "IMDb",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBgOYVyOsnBlXb1nuV8MWFhs29hFYm61sWnb1HRRa0NMmFcfoFLsWfb7OACBA",
+      "image_credit": "KTVB",
       "news": [
         {
-          "url": "https://www.imdb.com/news/ni66098396/?ref_=nmnw_art_perm",
-          "title": "Jake Gyllenhaal's 123-Minute Sci-Fi Action Thriller Is Officially the Biggest Movie on Netflix",
-          "publisher": "IMDb",
+          "url": "https://www.ktvb.com/article/sports/soccer/ac-boise/ac-boise-dominates-one-knoxville-earns-first-playoff-win-in-club-history/277-478e7370-ba16-4186-82a0-72916251362e",
+          "title": "AC Boise dominates defending champion One Knoxville, earns first playoff win in club history",
+          "publisher": "KTVB",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNwuxwJB8dAWJYBouizyDEXTl8OmKPbYQ43Qfz-AEmtOEQvuKpcs70Lw6EQCQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBgOYVyOsnBlXb1nuV8MWFhs29hFYm61sWnb1HRRa0NMmFcfoFLsWfb7OACBA"
         },
         {
-          "url": "https://decider.com/2026/11/03/top-movie-on-netflix-the-day-after-tomorrow/",
-          "title": "How Did ‘The Day After Tomorrow’ Become the Top Movie on Netflix in 2026?",
-          "publisher": "Decider",
+          "url": "https://boisedev.com/news/2026/11/07/headed-to-ac-boises-semi-final-game-heres-what-you-need-to-know/",
+          "title": "Headed to AC Boise’s semi-final game? Here’s what you need to know",
+          "publisher": "Boise Dev",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRwdbalXxbpwaZrPsAPfLqIqoajII8BXpk9yCI0VMyomJsrSXhcwzAWH208Ns"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJxIrNQmi8KyrbpNgeftR2IcZI5-ktG4xdFcAIT5uvktxzKCEXxpEpIL00CjA"
         },
         {
-          "url": "https://www.cbr.com/the-day-after-tomorrow-disaster-netflix-success-november-2026/",
-          "title": "22 Years Later, a $553 Million Sci-Fi Blockbuster Is Beating Every Other Movie on Netflix",
-          "publisher": "Comic Book Resources",
+          "url": "https://www.backheeled.com/usl-league-one-ac-boise-promotion-charlotte-independence-more/",
+          "title": "USL League One playoffs: AC Boise's bid for \"true\" promotion, Charlotte Independence roll on & everything else",
+          "publisher": "Backheeled",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUyeO096X6WweJWtgIvhUIvF7x9kCJVWqxrfkCEO9QqxromkVeDSWk-z4-6tQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAt2tCWsMbe0-ouOPiPGNYzWF-dd1PiLhj2m79vSqdwdXIMzW7TtYVSQ0z6-w"
         }
       ]
     },
     {
-      "query": "stephen curry",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-08T04:30:00Z",
+      "query": "john mulaney",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T04:50:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/warriors-star-stephen-curry-joins-035741047.html",
-        "https://www.nba.com/news/stephen-curry-passes-oscar-robertson-all-time-scoring",
-        "https://roundtable.io/sports/nba/warriors/news/steph-curry-makes-nba-history-after-warriors-5-3-start-to-season"
+        "https://www.eonline.com/news/1437887/john-mulaneys-parenting-hack-for-teaching-son-to-ride-a-bike",
+        "https://www.yahoo.com/entertainment/videos/john-mulaney-reveals-hilarious-hack-024501048.html",
+        "https://www.hollywoodreporter.com/movies/movie-news/john-mulaney-teases-get-smart-reboot-1236748313/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbLnyq7RIMAe8nVtLmZ-rdOF8-MtRd_9meWayT5sBnZemym1A_vq6QPfvjLF0",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT37q4DQuBaruFurBqJBAFi5O4fNKUSXfCJMI6SjIy7SPK27qMogHNfa7aQF94",
+      "image_credit": "E! News",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/warriors-star-stephen-curry-joins-035741047.html",
-          "title": "Warriors star Stephen Curry joins elusive club with Kobe Bryant, LeBron James",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.eonline.com/news/1437887/john-mulaneys-parenting-hack-for-teaching-son-to-ride-a-bike",
+          "title": "John Mulaney Reveals His Hilarious Parenting Hack for Teaching His Son to Ride a Bike",
+          "publisher": "E! News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbLnyq7RIMAe8nVtLmZ-rdOF8-MtRd_9meWayT5sBnZemym1A_vq6QPfvjLF0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT37q4DQuBaruFurBqJBAFi5O4fNKUSXfCJMI6SjIy7SPK27qMogHNfa7aQF94"
         },
         {
-          "url": "https://www.nba.com/news/stephen-curry-passes-oscar-robertson-all-time-scoring",
-          "title": "Stephen Curry passes Oscar Robertson for No. 17 on scoring list",
-          "publisher": "NBA.com",
+          "url": "https://www.yahoo.com/entertainment/videos/john-mulaney-reveals-hilarious-hack-024501048.html",
+          "title": "John Mulaney Reveals His Hilarious Hack for Teaching His Son to Ride a Bike",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSe4c40mLyapdGFH0vguP_vSKItj4bRGxAmqmPLB3oCjgAr_FTa3Eugi6jTWB0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDx_otCqZty5EM8Tf0e9OecIRWhCVvOBDDUE1eR41pTFIRvxDgJ3za6mh5cb8"
         },
         {
-          "url": "https://roundtable.io/sports/nba/warriors/news/steph-curry-makes-nba-history-after-warriors-5-3-start-to-season",
-          "title": "Steph Curry Makes NBA History After Warriors' 5-3 Start to Season",
-          "publisher": "roundtable.io",
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/john-mulaney-teases-get-smart-reboot-1236748313/",
+          "title": "John Mulaney Teases His ‘Get Smart’ Reboot: “My Favorite Type of Person to Play”",
+          "publisher": "The Hollywood Reporter",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6vS5ULmiZ-TKmF3wCl5u_W9BnqBUznyPgmVMKC98h2Q1XrwcWYbUjfCtBKNc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRiYPzsbg_o_KbTC0UaiRXBUZVwZ8TRzxyu09EaiU0UQFDJNdKg_4X54z38D70"
         }
       ]
     },
     {
-      "query": "gui santos",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T04:30:00Z",
+      "query": "power outage seattle",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T04:50:00Z",
       "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-07/draymond-green-elbow-upgraded-to-available",
-        "https://www.rotowire.com/basketball/headlines/gui-santos-news-will-suit-up-saturday-538043",
-        "https://www.si.com/nba/warriors/onsi/warriors-starter-to-miss-suns-game-with-knee-injury-01m6f0nbxwes"
+        "https://www.kitsapsun.com/story/news/2026/11/07/november-windstorm-knocks-out-power-near-silverdale/92674052007/",
+        "https://westseattleblog.com/2026/11/west-seattle-weather-first-power-outage-2/",
+        "https://www.cascadiadaily.com/2026/nov/06/wind-advisory-in-effect-until-4-p-m/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-vWihyCQrraaoFrehwvjqZtpYuo1CqLxLqEe2HYH_fT3pw65IF02PnC_Cls0",
-      "image_credit": "NBC Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSr6NFhym5zHi5g6q8cusallbE7niKcQ447dlVK4f2c2DqFh9C8xxUl4ak5LV8",
+      "image_credit": "Kitsap Sun",
       "news": [
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-07/draymond-green-elbow-upgraded-to-available",
-          "title": "Draymond Green (elbow) upgraded to available",
-          "publisher": "NBC Sports",
+          "url": "https://www.kitsapsun.com/story/news/2026/11/07/november-windstorm-knocks-out-power-near-silverdale/92674052007/",
+          "title": "Strong winds anticipated to last through early Sunday morning in Kitsap",
+          "publisher": "Kitsap Sun",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-vWihyCQrraaoFrehwvjqZtpYuo1CqLxLqEe2HYH_fT3pw65IF02PnC_Cls0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSr6NFhym5zHi5g6q8cusallbE7niKcQ447dlVK4f2c2DqFh9C8xxUl4ak5LV8"
         },
         {
-          "url": "https://www.rotowire.com/basketball/headlines/gui-santos-news-will-suit-up-saturday-538043",
-          "title": "Gui Santos News: Will suit up Saturday",
-          "publisher": "RotoWire",
+          "url": "https://westseattleblog.com/2026/11/west-seattle-weather-first-power-outage-2/",
+          "title": "WEST SEATTLE WEATHER: First power outage – almost 5,000 customers out",
+          "publisher": "West Seattle Blog...",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSr6SRDO-wRjXuB-ipSXuwoZM6M2WHhg2j5IfJvtZtHZjrNunlY4NsgskVduVI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Uo13kKfZb8tRW-U3-HAU5oeML2H47VIQIZvZBMQxBosNBuexviiOBSyMATk"
         },
         {
-          "url": "https://www.si.com/nba/warriors/onsi/warriors-starter-to-miss-suns-game-with-knee-injury-01m6f0nbxwes",
-          "title": "Warriors Starter to Miss Suns Game with Knee Injury",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.cascadiadaily.com/2026/nov/06/wind-advisory-in-effect-until-4-p-m/",
+          "title": "Wind advisory in effect until 4 p.m.",
+          "publisher": "Cascadia Daily News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTa8cRty7JyGZPnHBzmYMss3jt-8QUuQBkNgvF2djbjjEoqa9cZGEcZDJE_q0s"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeLJb2ddc6hSGrhoEXT4Oc9TTa14mAHMNj6sbWfV4koFs6NJXVWJEsJybNQEU"
         }
       ]
     },
     {
-      "query": "sidney crosby",
+      "query": "tina fey",
       "approx_searches": "200+",
-      "published_at": "2026-11-08T04:30:00Z",
+      "published_at": "2026-11-08T04:50:00Z",
       "related_news_urls": [
-        "https://www.sportsnet.ca/nhl/video/penguins-crosby-moves-into-sixth-all-time-in-nhl-scoring-with-deflected-goal/",
-        "https://www.thescore.com/nhl/news/3646383/crosby-passes-dionne-for-6-th-most-points-in-nhl-history",
-        "https://thehockeynews.com/news/latest-news/what-sidney-crosby-s-climb-to-the-top-of-the-nhl-s-scoring-list-means-for-his-legacy"
+        "https://www.inc.com/victoria-salves/tina-fey-worth-estimated-75-million-dollars-wont-launch-celebrity-brand-1-reason/91430895",
+        "https://media.vw.com/releases/1944",
+        "https://www.today.com/video/see-tina-fey-and-rachel-dratch-in-nbc100-promo-272994885921"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFShq3DudNONwyEh1EkI-nJAGQuBEZO2MTUEqHHhzHiib4kHfdkkqCxb6U4_k",
-      "image_credit": "Sportsnet.ca",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQG5U713m6e6gTQ7rEvueyLvA0iYIxvM0_IxtHUSX1Dz5bzJ2PbA1N1y9IYk3w",
+      "image_credit": "Inc.com",
       "news": [
         {
-          "url": "https://www.sportsnet.ca/nhl/video/penguins-crosby-moves-into-sixth-all-time-in-nhl-scoring-with-deflected-goal/",
-          "title": "Penguins’ Crosby moves into sixth all-time in NHL scoring with deflected goal",
-          "publisher": "Sportsnet.ca",
+          "url": "https://www.inc.com/victoria-salves/tina-fey-worth-estimated-75-million-dollars-wont-launch-celebrity-brand-1-reason/91430895",
+          "title": "Tina Fey Is Worth an Estimated $75 Million. She Won't Launch a Celebrity Brand for 1 Surprising Reason",
+          "publisher": "Inc.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFShq3DudNONwyEh1EkI-nJAGQuBEZO2MTUEqHHhzHiib4kHfdkkqCxb6U4_k"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQG5U713m6e6gTQ7rEvueyLvA0iYIxvM0_IxtHUSX1Dz5bzJ2PbA1N1y9IYk3w"
         },
         {
-          "url": "https://www.thescore.com/nhl/news/3646383/crosby-passes-dionne-for-6-th-most-points-in-nhl-history",
-          "title": "Crosby passes Dionne for 6th-most points in NHL history",
-          "publisher": "theScore",
+          "url": "https://media.vw.com/releases/1944",
+          "title": "Volkswagen and NBCUniversal bring comedy legends together in NBC100 collaboration",
+          "publisher": "VW media site",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaCLIp3R-To3N7Iw0tHFfZyBDR9JY63HSeMOzBmJyEM5TddtOHkleec6SKJNg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdUIGdd-J8d_uh46_VNP3H-ikEwX9XmQ7h8onChAgv5ywBIetlDxQfPb3eonM"
         },
         {
-          "url": "https://thehockeynews.com/news/latest-news/what-sidney-crosby-s-climb-to-the-top-of-the-nhl-s-scoring-list-means-for-his-legacy",
-          "title": "What Sidney Crosby’s Climb To The Top Of The NHL’s Scoring List Means For His Legacy",
-          "publisher": "The Hockey News",
+          "url": "https://www.today.com/video/see-tina-fey-and-rachel-dratch-in-nbc100-promo-272994885921",
+          "title": "See Tina Fey and Rachel Dratch in NBC100 Promo",
+          "publisher": "TODAY.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQT0v6vdSdUF9uojmm5myPo1dPXx5fY6K2r-03OH7JwUXmtXjxyQXJIxHHiEMM"
-        }
-      ]
-    },
-    {
-      "query": "alycia baumgardner",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T04:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/boxing/story/_/id/50389927/baumgardner-turhan-boxing-picks-predictions-analysis",
-        "https://sports.yahoo.com/articles/baumgardner-vs-turhan-showdown-tops-024338056.html",
-        "https://fightnews.com/mvpw-07-turhan-vs-baumgardner-final-presser-quotes-video/199873"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEJ3zbgTU1ZlGnQ7DVl4z4FG9qUZoi6lqNm6m9V_e9WorLFelTr9jHa6iWGNM",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/boxing/story/_/id/50389927/baumgardner-turhan-boxing-picks-predictions-analysis",
-          "title": "Boxing experts make predictions, picks for Elif Nur Turhan-Alycia Baumgardner",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEJ3zbgTU1ZlGnQ7DVl4z4FG9qUZoi6lqNm6m9V_e9WorLFelTr9jHa6iWGNM"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/baumgardner-vs-turhan-showdown-tops-024338056.html",
-          "title": "Baumgardner vs Turhan Showdown Tops MVPW07 Card Sunday on ESPN",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQG1YlRiDPyTWUxHt3_TY_SeLj7Kl30D4dIP7mdXmSckHwPdand9adyQUxi3gE"
-        },
-        {
-          "url": "https://fightnews.com/mvpw-07-turhan-vs-baumgardner-final-presser-quotes-video/199873",
-          "title": "Boxing News: MVPW 07: Turhan Vs Baumgardner Final Presser Quotes & Video » November 7, 2026",
-          "publisher": "FightNews",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnfM4b9xGWyWAI7Ae_0ILPIECSW7i-kpdITmMv2zs9G2TtJycb_Uf2ZPtWLD0"
-        }
-      ]
-    },
-    {
-      "query": "kat dennings",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T04:30:00Z",
-      "related_news_urls": [
-        "https://www.whats-on-netflix.com/news/shifting-gears-sitcom-netflix-release-date/",
-        "https://www.cinemablend.com/television/shifting-gears-getting-competition-winter-tv-schedule-the-floor",
-        "https://www.themovieblog.com/2026/11/shifting-gears-season-3-premiere-date-announced/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSju7f5q3G71JronCezmm1SNwMcpHnJAtTrFQRUeadQz27UwA8D_MrDg0X8auc",
-      "image_credit": "What's on Netflix",
-      "news": [
-        {
-          "url": "https://www.whats-on-netflix.com/news/shifting-gears-sitcom-netflix-release-date/",
-          "title": "‘Shifting Gears’ Heading to Netflix Globally Ahead of Season 3 Premiere",
-          "publisher": "What's on Netflix",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSju7f5q3G71JronCezmm1SNwMcpHnJAtTrFQRUeadQz27UwA8D_MrDg0X8auc"
-        },
-        {
-          "url": "https://www.cinemablend.com/television/shifting-gears-getting-competition-winter-tv-schedule-the-floor",
-          "title": "The Winter TV Schedule Is Finally Shaking Out (And Shifting Gears Is Going To Have Some Big Competition)",
-          "publisher": "Cinemablend",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbJ7gUJORtEU4S0R2xpRBiRNFgDx3bxHikbZjJuRcITGC0hrBbiyvGh17SaRo"
-        },
-        {
-          "url": "https://www.themovieblog.com/2026/11/shifting-gears-season-3-premiere-date-announced/",
-          "title": "Shifting Gears Season 3 Premiere Date Announced by Tim Allen and Kat Dennings",
-          "publisher": "The Movie Blog",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ47Qcxa3mR-IkaF02NlffzMPPDSov7nM_iB5EbtsiCqNCyNQracrZw8HQffCw"
-        }
-      ]
-    },
-    {
-      "query": "rockets",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-08T04:20:00Z",
-      "related_news_urls": [
-        "https://www.thedreamshake.com/rockets-game-threads/42384/houston-rockets-and-kevin-durant-head-to-phoenix-for-a-reunion",
-        "https://sports.yahoo.com/articles/rockets-star-kevin-durant-back-235328765.html",
-        "https://www.brightsideofthesun.com/suns-game/113230/kevin-durant-return-houston-rockets-preview-fred-vanvleet-offensive-depth"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6sn9NGUeveli9wahOq2knnl1X61j_ufebV9FbkIUK_IHRChXexPxE86Cg5EU",
-      "image_credit": "The Dream Shake",
-      "news": [
-        {
-          "url": "https://www.thedreamshake.com/rockets-game-threads/42384/houston-rockets-and-kevin-durant-head-to-phoenix-for-a-reunion",
-          "title": "Rockets and Kevin Durant head to Phoenix for a reunion",
-          "publisher": "The Dream Shake",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6sn9NGUeveli9wahOq2knnl1X61j_ufebV9FbkIUK_IHRChXexPxE86Cg5EU"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/rockets-star-kevin-durant-back-235328765.html",
-          "title": "Rockets star Kevin Durant back in Phoenix vs. Suns: Preview, Starters, Injuries, How to Watch",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9oFg7tupZ756zlYQDlFEyb4lAvzlYhLoRErrXuB-lOyDNi6ZczrE6hD14ntY"
-        },
-        {
-          "url": "https://www.brightsideofthesun.com/suns-game/113230/kevin-durant-return-houston-rockets-preview-fred-vanvleet-offensive-depth",
-          "title": "Game Preview: Suns prepare for major test against balanced Houston Rockets",
-          "publisher": "Bright Side Of The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJ7aj4620URhesu_hDgD-NO8jzcvAI-nS4LL4DsWpGg1FSIPWOifZ0NybLcNs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqjpkdTKbG7NE5QSVs4DW8t1tdfmH_egeMZMr9gREeapBxvVjOS4Nx_WqTOoA"
         }
       ]
     }
