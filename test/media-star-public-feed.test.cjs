@@ -40,6 +40,6 @@ test('native media starts a distinct server session and finishes once after fore
  assert.match(SRC,/beginMediaStarPlayback/);
  assert.match(SRC,/completeMediaStarPlayback/);
  assert.match(SRC,/sessionId/);
- assert.match(SRC,/seconds>=35/);
+ assert.match(SRC,/seconds<35/);
  assert.doesNotMatch(SRC,/recordProductionPlay\(/);
 });
