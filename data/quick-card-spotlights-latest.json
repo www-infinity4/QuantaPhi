@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-08T13:18:26.871317Z",
+  "checked_at": "2026-11-08T14:18:03.630870Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -450,7 +450,7 @@
     },
     "hurley-surfwear": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T08:20:04.145052Z",
+      "attempted_at": "2026-11-08T14:18:03.630870Z",
       "items": [
         {
           "url": "https://www.hurley.com/",
@@ -458,7 +458,7 @@
           "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Clothing"
         },
         {
@@ -467,7 +467,7 @@
           "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Clothing"
         },
         {
@@ -476,7 +476,7 @@
           "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Clothing"
         },
         {
@@ -485,7 +485,7 @@
           "title": "Hurley | Boardshorts, Swimwear & Beach Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Clothing"
         },
         {
@@ -494,7 +494,7 @@
           "title": "Phantom Eco Weekender Slub 20\" - Black / 26IN",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Clothing",
           "offer": {
             "price": "59.95",
@@ -509,7 +509,7 @@
           "title": "Phantom Naturals Tailgate 18\" - Brown / 26IN",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Clothing",
           "offer": {
             "price": "59.95",
@@ -524,7 +524,7 @@
           "title": "Bottlecap Short Sleeve - Destroyer / XS",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Clothing",
           "offer": {
             "price": "36.00",
@@ -537,7 +537,7 @@
     },
     "royal-caribbean-cruises": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T08:20:04.145052Z",
+      "attempted_at": "2026-11-08T14:18:03.630870Z",
       "items": [
         {
           "url": "https://www.royalcaribbean.com/",
@@ -545,7 +545,7 @@
           "title": "Best Cruise, Vacation and Travel Deals | Royal Caribbean Official Site",
           "kind": "website",
           "description": "Book cruises and vacation deals on the official Royal Caribbean site. Sail to the Caribbean, Bahamas, Perfect Day CocoCay, Mexico, Alaska and Europe.",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Travel"
         },
         {
@@ -554,7 +554,7 @@
           "title": "It's Big Time Nav Images",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Travel"
         },
         {
@@ -563,7 +563,7 @@
           "title": "It's Big Time Nav Images",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Travel"
         },
         {
@@ -572,14 +572,14 @@
           "title": "lg banner 640 480 1x",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Travel"
         }
       ]
     },
     "durable-channellock": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T08:20:04.145052Z",
+      "attempted_at": "2026-11-08T14:18:03.630870Z",
       "items": [
         {
           "url": "https://www.channellock.com",
@@ -587,7 +587,7 @@
           "title": "CHANNELLOCK®: High-Quality Hand Tools - Channellock, Inc.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -596,7 +596,7 @@
           "title": "CHANNELLOCK® adjustable pliers with blue handles.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -605,7 +605,7 @@
           "title": "CHANNELLOCK® groove-joint pliers with blue handles.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -614,14 +614,14 @@
           "title": "CHANNELLOCK® locking pliers with blue and black handles and serrated jaws.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-wright-tool": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T08:20:04.145052Z",
+      "attempted_at": "2026-11-08T14:18:03.630870Z",
       "items": [
         {
           "url": "https://www.wrighttool.com/",
@@ -629,7 +629,7 @@
           "title": "Wright Tool",
           "kind": "website",
           "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -638,7 +638,7 @@
           "title": "Wright Tool",
           "kind": "website",
           "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -647,7 +647,7 @@
           "title": "Wright Tool",
           "kind": "website",
           "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -656,14 +656,14 @@
           "title": "Wright Tool",
           "kind": "website",
           "description": "Wright forges the most proven and highest quality wrenches, ratchets, sockets and attachments, proudly made in the USA.",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-estwing": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T08:20:04.145052Z",
+      "attempted_at": "2026-11-08T14:18:03.630870Z",
       "items": [
         {
           "url": "https://www.estwing.com/",
@@ -671,7 +671,7 @@
           "title": "Home - Estwing",
           "kind": "website",
           "description": "ProfessionalOutdoorHome Who’s Behind Your Swing? When it’s an Estwing, every strike, every detail counts. https://vimeo.com/1091256749 Estwing 100 Years of a Genuine American Icon How a true American legend grew to become the hand tool of choice for generation",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -680,7 +680,7 @@
           "title": "Shop - Estwing",
           "kind": "website",
           "description": "Select CategorySure Strike— Specialty— Roofing Tools— Pry Tools— Nail HammersSpecialty— Welding & Tinner’s— Lineman’s— Drywall— Drilling & Engineer’s— Bricklayer— Ball PeenSafetyRoofing— Shingler’s Hatchet— Shingler’s Hammer— Rigger’s Axes— Carpenter’s Hatchet",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -689,7 +689,7 @@
           "title": "Titanium Hammer (Black) - Estwing",
           "kind": "website",
           "description": "Power meets precision in a lightweight design as this titanium hammer delivers the striking force of a heavier steel hammer without the added weight. Its magnetic nail starter makes setting nails quick and easy. The Shock Reduction Grip® offers the utmost in b",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -698,7 +698,7 @@
           "title": "prod_hammers_nail_hammers_TIBKM_01_2000x2000",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -707,7 +707,7 @@
           "title": "prod_hammers_nail_hammers_TIBKM_02_2000x2000",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -716,7 +716,7 @@
           "title": "prod_hammers_nail_hammers_TIBKM_03_2000x2000",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -725,7 +725,7 @@
           "title": "Timber Titan™ Splitting Tool (Blue) - Estwing",
           "kind": "website",
           "description": "Estwing’s Timber Titan™ Splitting Tool is the ultimate long-handle splitting tool, designed for fast, efficient, and precise wood splitting.",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -734,7 +734,7 @@
           "title": "prod_outdoor_splitting_tools_E6-TT4_01_2000x2000",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
@@ -2034,7 +2034,7 @@
     },
     "colorado-rocky-mountain": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T08:20:04.145052Z",
+      "attempted_at": "2026-11-08T14:18:03.630870Z",
       "items": [
         {
           "url": "https://www.nps.gov/romo/index.htm",
@@ -2042,7 +2042,7 @@
           "title": "Rocky Mountain National Park (U.S. National Park Service)",
           "kind": "website",
           "description": "Located in northern Colorado, visitors to Rocky Mountain National Park can explore over 415 square miles (265,807 acres) within the Southern Rocky Mountains. From montane meadows to subalpine forests and mountain peaks in the alpine tundra, there is something ",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2051,7 +2051,7 @@
           "title": "Cub Lake with reflections. Yellow and brown grasses line the edge of the lake.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2060,7 +2060,7 @@
           "title": "A man is standing on a bridge and looking up at a waterfall",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2069,7 +2069,7 @@
           "title": "A pika has harvested a tundra thistle",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2078,7 +2078,7 @@
           "title": "Visitors are walking on the Tundra Communities trail in summer",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2087,7 +2087,7 @@
           "title": "The NPS Arrowhead appears on blue with text \"Rocky Mountain National Park Timed Entry Reservations\"",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2096,7 +2096,7 @@
           "title": "Park Entrance Fees and Passes",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Alpine hikes"
         },
         {
@@ -2105,14 +2105,14 @@
           "title": "A park ranger is sharing a program inside Beaver Meadows Visitor Center",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Alpine hikes"
         }
       ]
     },
     "colorado-numbers-rafting": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T08:20:04.145052Z",
+      "attempted_at": "2026-11-08T14:18:03.630870Z",
       "items": [
         {
           "url": "https://www.americanadventure.com/tour-category/the-numbers/",
@@ -2120,7 +2120,7 @@
           "title": "most-popular",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2129,7 +2129,7 @@
           "title": "Classic Colorado Whitewater",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2138,7 +2138,7 @@
           "title": "The Numbers Half Day",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2147,7 +2147,7 @@
           "title": "The Numbers Full Day",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2156,7 +2156,7 @@
           "title": "Numbers Half Day Rafting Adventure | American Adventure Expeditions",
           "kind": "website",
           "description": "Our classic half-day rafting adventure is great for experienced white water rafters looking for a challenging ride through The Numbers in Buena Vista, CO.",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2165,7 +2165,7 @@
           "title": "Numbers Half Day Private Trip",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2174,7 +2174,7 @@
           "title": "The Numbers Raft + ATV",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Whitewater"
         },
         {
@@ -2183,14 +2183,14 @@
           "title": "The Numbers Full Day",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Whitewater"
         }
       ]
     },
     "colorado-breckenridge-trails": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T08:20:04.145052Z",
+      "attempted_at": "2026-11-08T14:18:03.630870Z",
       "items": [
         {
           "url": "https://gobreck.com/guide/hiking/easy-hiking-trails-in-breckenridge/",
@@ -2198,7 +2198,7 @@
           "title": "Easy Hiking Trails in Breckenridge",
           "kind": "website",
           "description": "Enjoying one of the many easy hikes near Breckenridge is a great way to spend a summer day in the outdoors. Find the hike right for you and your crew.",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Easy hiking"
         },
         {
@@ -2207,7 +2207,7 @@
           "title": "Hiking in Breckenridge Without A Car",
           "kind": "website",
           "description": "You don’t need a car to hike some spectacular trails in Breckenridge. Free public transportation can make hiking in without a car simple and easy.",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Easy hiking"
         },
         {
@@ -2216,14 +2216,14 @@
           "title": "Best Summer Hikes in Breckenridge",
           "kind": "website",
           "description": "When it comes to hiking, Breckenridge has it all — waterfalls, wildflowers, alpine lakes, and more. Check out our favorite summer hikes in Breckenridge!",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Easy hiking"
         }
       ]
     },
     "colorado-glenwood-hot-springs": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T08:20:04.145052Z",
+      "attempted_at": "2026-11-08T14:18:03.630870Z",
       "items": [
         {
           "url": "https://hotspringspool.com/",
@@ -2231,7 +2231,7 @@
           "title": "Home Page",
           "kind": "website",
           "description": "Discover the ultimate Colorado destination with world famous hot springs pool, 107 room lodge and premier athletic club. Perfect for families & romantic getaways.",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2240,7 +2240,7 @@
           "title": "Glenwood Hot Springs Resort Logo White Text",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2249,7 +2249,7 @@
           "title": "View from the Bridge of Glenwood Hot Springs Resort Pools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2258,7 +2258,7 @@
           "title": "Alpine Coaster at Glenwood Caverns near Glenwood Hot Springs Resort",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2267,7 +2267,7 @@
           "title": "Hot Springs Rates",
           "kind": "website",
           "description": "Enjoy the benefits of the largest hot springs pool for the day or all year long at Glenwood Hot Springs Resort.",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2276,7 +2276,7 @@
           "title": "Hot Springs Rates",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2285,7 +2285,7 @@
           "title": "Glenwood Hot Springs Resort Wins Seven 2026 Locals’ Choice Award",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Relaxation"
         },
         {
@@ -2294,14 +2294,14 @@
           "title": "Hot Springs",
           "kind": "website",
           "description": "Soak in mineral-rich, heated water to refresh tired muscles, swim laps, or enjoy summer with cabana rentals and the Sopris Splash Zone. Experience it all at Glenwood Hot Springs.",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Relaxation"
         }
       ]
     },
     "colorado-ouray-ice-park": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T08:20:04.145052Z",
+      "attempted_at": "2026-11-08T14:18:03.630870Z",
       "items": [
         {
           "url": "https://ourayicepark.com/events/2027/01/28/fest",
@@ -2309,7 +2309,7 @@
           "title": "32nd Annual Ouray Ice Festival",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Technical ice"
         },
         {
@@ -2318,7 +2318,7 @@
           "title": "February 25th, 2026",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Technical ice"
         },
         {
@@ -2327,7 +2327,7 @@
           "title": "February 17th, 2026",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Technical ice"
         },
         {
@@ -2336,7 +2336,7 @@
           "title": "February 11th, 2026",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Technical ice"
         },
         {
@@ -2345,14 +2345,14 @@
           "title": "February 4th, 2026",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · Technical ice"
         }
       ]
     },
     "colorado-ice-lakes-basin": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T08:20:04.145052Z",
+      "attempted_at": "2026-11-08T14:18:03.630870Z",
       "items": [
         {
           "url": "https://www.fs.usda.gov/r02/sanjuan",
@@ -2360,7 +2360,7 @@
           "title": "San Juan National Forest",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · High alpine"
         },
         {
@@ -2369,7 +2369,7 @@
           "title": "A road is washed out by a river",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · High alpine"
         },
         {
@@ -2378,7 +2378,7 @@
           "title": "Road Conditions",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · High alpine"
         },
         {
@@ -2387,7 +2387,7 @@
           "title": "South Mineral Campground",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T08:20:04.145052Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Colorado · High alpine"
         }
       ]
@@ -3280,12 +3280,12 @@
     },
     "durable-sony-professional-pro-audio": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T07:18:28.326374Z",
+      "attempted_at": "2026-11-08T14:18:03.630870Z",
       "items": []
     },
     "durable-sennheiser-studio-monitor-series": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T07:18:28.326374Z",
+      "attempted_at": "2026-11-08T14:18:03.630870Z",
       "items": [
         {
           "url": "https://www.sennheiser.com/en-us",
@@ -3293,7 +3293,7 @@
           "title": "Sennheiser — Headphones, Microphones, Wireless Systems",
           "kind": "website",
           "description": "For over 75 years, our products come with a built-in mission: to stay true to the sound and soul the music was given by its artist.",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3302,7 +3302,7 @@
           "title": "Sennheiser — Headphones, Microphones, Wireless Systems",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3311,7 +3311,7 @@
           "title": "Sennheiser — Headphones, Microphones, Wireless Systems",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3320,7 +3320,7 @@
           "title": "Sennheiser — Headphones, Microphones, Wireless Systems",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3329,7 +3329,7 @@
           "title": "Microphones | Sennheiser",
           "kind": "website",
           "description": "Discover Sennheiser's microphones: Accentuate character, lend power to the voice, reach and touch the audience. Learn more now!",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3338,7 +3338,7 @@
           "title": "Microphones | Sennheiser",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3347,7 +3347,7 @@
           "title": "Looking for TAA-compliant products?",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3356,14 +3356,14 @@
           "title": "Wireless Systems: Top Audio Solutions | Sennheiser",
           "kind": "website",
           "description": "Unleash superior sound with Sennheiser wireless systems. Experience unmatched audio quality and reliability for professional-grade performance.",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-beyerdynamic": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T07:18:28.326374Z",
+      "attempted_at": "2026-11-08T14:18:03.630870Z",
       "items": [
         {
           "url": "https://north-america.beyerdynamic.com/",
@@ -3371,7 +3371,7 @@
           "title": "MMX 130 WIRELESS",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3380,7 +3380,7 @@
           "title": "AVENTHO Y",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3389,7 +3389,7 @@
           "title": "Made in Germany | beyerdynamic",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3398,14 +3398,14 @@
           "title": "Made in Germany T1 & T5 in third generation",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-audio-technica-studio-line": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T07:18:28.326374Z",
+      "attempted_at": "2026-11-08T14:18:03.630870Z",
       "items": [
         {
           "url": "https://www.audio-technica.com/en-us/",
@@ -3413,7 +3413,7 @@
           "title": "English Flag",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3422,7 +3422,7 @@
           "title": "Launch Recite Me assistive technology",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3431,7 +3431,7 @@
           "title": "ATH-M50x studio headphones resting on an audio mixer",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3440,14 +3440,14 @@
           "title": "corporate conference room",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-genelec": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T07:18:28.326374Z",
+      "attempted_at": "2026-11-08T14:18:03.630870Z",
       "items": [
         {
           "url": "https://www.genelec.com/studio-monitors",
@@ -3455,7 +3455,7 @@
           "title": "Genelec Studio Monitors",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3464,7 +3464,7 @@
           "title": "Genelec Studio Monitors",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3473,7 +3473,7 @@
           "title": "Genelec Home Speakers",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3482,19 +3482,19 @@
           "title": "Genelec Home Speakers",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-miele": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T07:18:28.326374Z",
+      "attempted_at": "2026-11-08T14:18:03.630870Z",
       "items": []
     },
     "durable-speed-queen": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T07:18:28.326374Z",
+      "attempted_at": "2026-11-08T14:18:03.630870Z",
       "items": [
         {
           "url": "https://speedqueen.com/",
@@ -3502,7 +3502,7 @@
           "title": "Speed Queen Home - Speed Queen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3511,7 +3511,7 @@
           "title": "Speed Queen Home - Speed Queen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3520,7 +3520,7 @@
           "title": "Speed Queen Home - Speed Queen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3529,7 +3529,7 @@
           "title": "Speed Queen Home - Speed Queen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3538,7 +3538,7 @@
           "title": "All Products - Speed Queen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3547,7 +3547,7 @@
           "title": "TR7 TR7006WN",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3556,7 +3556,7 @@
           "title": "TR7 TR7006BN",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3565,14 +3565,14 @@
           "title": "TC5 TC5003WN",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-henry-numatic": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T07:18:28.326374Z",
+      "attempted_at": "2026-11-08T14:18:03.630870Z",
       "items": [
         {
           "url": "https://numatic.com/",
@@ -3580,7 +3580,7 @@
           "title": "Home",
           "kind": "website",
           "description": "Numatic International the home of reliable, high performance, sustainable cleaning for all. UK’s No.1 in Professional Cleaning. Designed & Made in the UK. Committed to Sustainability.",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3589,7 +3589,7 @@
           "title": "CleanCare Range Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3598,7 +3598,7 @@
           "title": "ProCare Range Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3607,7 +3607,7 @@
           "title": "FloorCare Range",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3616,7 +3616,7 @@
           "title": "WBV370NX Pro Cordless Wet Vacuum",
           "kind": "website",
           "description": "The WBV370NX Pro Cordless Wet Vacuum. Eliminate the risk of slips, trips and falls with no cable. Perfect for cleaning up spills in high traffic areas.",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3625,7 +3625,7 @@
           "title": "CleanCare Range Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3634,7 +3634,7 @@
           "title": "ProCare Range Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3643,14 +3643,14 @@
           "title": "FloorCare Range",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-leica-camera-m-series": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T07:18:28.326374Z",
+      "attempted_at": "2026-11-08T14:18:03.630870Z",
       "items": [
         {
           "url": "https://leica-camera.com/en-US/photography/cameras/m",
@@ -3658,7 +3658,7 @@
           "title": "Leica Q3 and Q3 43",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3667,7 +3667,7 @@
           "title": "Leica Camera - M11 Monochrom",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3676,7 +3676,7 @@
           "title": "Leica Metal Gray products on a podest",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3685,7 +3685,7 @@
           "title": "Leica Q3 43 Formula 1® Edition",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3694,7 +3694,7 @@
           "title": "Leica Geovid Max 10x42 | Leica Camera US",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3703,7 +3703,7 @@
           "title": "Leica Q3 and Q3 43",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3712,7 +3712,7 @@
           "title": "Leica Camera - M11 Monochrom",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3721,14 +3721,14 @@
           "title": "Leica Metal Gray products on a podest",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-garmin-handheld-gps-mariner": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T07:18:28.326374Z",
+      "attempted_at": "2026-11-08T14:18:03.630870Z",
       "items": [
         {
           "url": "https://www.garmin.com/en-US/",
@@ -3736,7 +3736,7 @@
           "title": "Garmin",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3745,7 +3745,7 @@
           "title": "Holiday Gift Guide",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3754,7 +3754,7 @@
           "title": "FĒNIX® 9",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3763,7 +3763,7 @@
           "title": "APPROACH® S72",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3772,7 +3772,7 @@
           "title": "Approach® S72 – 47 mm",
           "kind": "product",
           "description": "Silver/Citron Titanium Bezel with Fog Gray/Citron ComfortFit Fabric Band",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": {
             "price": "799.99",
@@ -3787,7 +3787,7 @@
           "title": "CIRQA™ Smart Band",
           "kind": "product",
           "description": "Black",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": {
             "price": "199.99",
@@ -3795,26 +3795,17 @@
             "evidence": "jsonld-offer",
             "availability": ""
           }
-        },
-        {
-          "url": "https://www.garmin.com/en-US/p/1967830/",
-          "image": "https://res.garmin.com/homepage/87258/87258-TN-NEW.jpg",
-          "title": "EDGE® 1060",
-          "kind": "website",
-          "description": "",
-          "checked_at": "2026-11-01T13:15:27.551142Z",
-          "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-fujitsu-fi-series-scanners": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T07:18:28.326374Z",
+      "attempted_at": "2026-11-08T14:18:03.630870Z",
       "items": []
     },
     "durable-brother-monochrome-laser-printers": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T07:18:28.326374Z",
+      "attempted_at": "2026-11-08T14:18:03.630870Z",
       "items": [
         {
           "url": "https://www.brother-usa.com/c/shop/printers",
@@ -3822,7 +3813,7 @@
           "title": "Printer on a black background with a navy, blue, teal and yellow stripe.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3831,7 +3822,7 @@
           "title": "Ink Cartridge box on a black background with a navy, blue, teal and yellow stripe.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3840,7 +3831,7 @@
           "title": "Sewing machine on a black background with a navy, blue, teal and yellow stripe.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3849,7 +3840,7 @@
           "title": "P-touch label maker on a black background with a navy, blue, teal and yellow stripe.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3858,7 +3849,7 @@
           "title": "Brother MFC-J4355DW Wireless INKvestment Color Inkjet All-in-One Printer",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": null
         },
@@ -3868,7 +3859,7 @@
           "title": "Brother MFC-J1360DW Wireless Color Inkjet All-in-One Printer",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": null
         },
@@ -3878,7 +3869,7 @@
           "title": "Brother PT-D215EMIKR P-touch Embellish Ribbon and Tape Printer",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": null
         },
@@ -3888,7 +3879,7 @@
           "title": "Brother MFC-J1365DW Wireless INKvestment Color Inkjet All-in-One Printer",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures",
           "offer": null
         }
@@ -3896,7 +3887,7 @@
     },
     "durable-texas-instruments-graphing-calculators": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T07:18:28.326374Z",
+      "attempted_at": "2026-11-08T14:18:03.630870Z",
       "items": [
         {
           "url": "https://education.ti.com/",
@@ -3904,7 +3895,7 @@
           "title": "Algebra 1: Seven Important Calculator Functions",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T07:18:28.326374Z",
+          "checked_at": "2026-11-08T14:18:03.630870Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
