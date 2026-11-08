@@ -70,6 +70,11 @@ if(root){
    create('h3','developer-cover-title',info.label),
    create('p','developer-cover-description',info.description)
   );
+  if(info.id==='ownerEngineerCard'){
+   const gptLink=create('a','developer-gpt-action','Create with GPT');
+   gptLink.href='/website-viewer.html?site=chatgpt';
+   visual.appendChild(gptLink);
+  }
   const toggle=slide.appendChild(create('button','developer-studio-toggle',info.action+' · in this card'));
   toggle.type='button';
   const editor=slide.appendChild(create('div','developer-editor'));
