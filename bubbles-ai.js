@@ -1109,7 +1109,26 @@ claudeAssistantToggle.addEventListener('change',()=>{
  claudeAssistanceOptIn=claudeAssistantToggle.checked;
  status.textContent=claudeAssistanceOptIn?'Claude assistance enabled for this session. Bubbles remains in control of tools.':'Bubbles is using its normal chat engine.';
 });
-modelRow.append(modelLabel,modelChoice,modelNote,claudeAssistantLabel);
+const claudeCheck=create('button','ba-control','Check Claude connection');
+claudeCheck.type='button';
+claudeCheck.style.cssText='min-height:44px;font-size:14px;white-space:normal;';
+claudeCheck.addEventListener('click',async()=>{
+ if(!window.ClaudeSteward?.checkConnection){
+  status.textContent='Claude connection check is not loaded on this page.';
+  return;
+ }
+ claudeCheck.disabled=true;
+ status.textContent='Checking the existing Claude API key and model (no chat generation)…';
+ try{
+  const result=await window.ClaudeSteward.checkConnection();
+  status.textContent=result?.ok===true
+   ?'Claude model is available to the existing API key. A successful chat and billing capacity are not yet verified.'
+   :window.ClaudeSteward.describeError(result?.error);
+ }catch{
+  status.textContent='Claude connection check could not reach the existing signed Worker. No chat was generated.';
+ }finally{claudeCheck.disabled=false}
+});
+modelRow.append(modelLabel,modelChoice,modelNote,claudeAssistantLabel,claudeCheck);
 modelChoice.addEventListener('change',()=>{
  const usingClaude=modelChoice.value==='claude';
  input.placeholder=usingClaude?'Message Claude, or say Fix Bubbles…':nativeOverlay?'Message Bubbles or paste a code…':'Say something, ask a question, or describe a task…';
