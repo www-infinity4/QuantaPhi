@@ -72,7 +72,7 @@ if(root){
   );
   if(info.id==='ownerEngineerCard'){
    const gptLink=create('a','developer-gpt-action','Create with GPT');
-   gptLink.href='/website-viewer.html?site=chatgpt';
+   gptLink.href='/creator-gpt-handoff.html';
    visual.appendChild(gptLink);
   }
   const toggle=slide.appendChild(create('button','developer-studio-toggle',info.action+' · in this card'));
