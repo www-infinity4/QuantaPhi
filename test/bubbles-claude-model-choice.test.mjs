@@ -62,3 +62,29 @@ test('failed Claude delivery preserves the typed draft and cannot claim a reply'
  assert.match(ui,/return confirmed;\s*\}\s*window\.addEventListener\('bubbles:ai-consult'/);
  assert.match(ui,/Your draft is preserved; check existing Brain tickets before retrying/);
 });
+
+test('Bubbles may use Claude as verified training wheels only for plain conversation',async()=>{
+ const {shouldUseClaudeAssistance}=await import('../bubbles-claude-routing.mjs');
+ const base={selectedModel:'bubbles',ownerVerified:true,providerPresent:true,
+  embedded:false,hasAttachments:false,toolWork:false,request:'How does this work?'};
+ assert.equal(shouldUseClaudeAssistance(base),true);
+ for(const patch of [
+  {selectedModel:'claude'},{ownerVerified:false},{providerPresent:false},
+  {embedded:true},{hasAttachments:true},{toolWork:true},{request:''}
+ ]){
+  assert.equal(shouldUseClaudeAssistance({...base,...patch}),false,
+   'No Claude call for '+JSON.stringify(patch));
+ }
+});
+
+test('Bubbles Claude assistance keeps Bubbles interface and preserves real model receipt',async()=>{
+ const fs=await import('node:fs');
+ const ui=fs.readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ assert.match(ui,/shouldUseClaudeAssistance/);
+ assert.match(ui,/tool:'claude\.conversation'/);
+ assert.match(ui,/model:assisted\.model/);
+ assert.match(ui,/provider:'anthropic'/);
+ assert.match(ui,/Bubbles · Claude-assisted reply/);
+ assert.match(ui,/if\(assisted\?\.ok===true/);
+ assert.match(ui,/if\(!response\)/);
+});
