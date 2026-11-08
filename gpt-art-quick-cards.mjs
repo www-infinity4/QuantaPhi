@@ -23,7 +23,7 @@ export async function mountArtworkCards(root=host,cards=GPT_ART_CARDS){
   mountCardTools(controls,{id:card.id,name:card.title,kind:'Art',official:location.origin+'/',feature:'Explore original artwork'});
   node.append(controls);
   const action=make('a','gpt-art-create','Create with GPT');
-  action.href='/website-viewer.html?site=chatgpt';node.append(action);
+  action.href='/creator-gpt-handoff.html';node.append(action);
   const studio=make('a','gpt-art-create','Create with Oracle Octaves');
   studio.href='/?card=phiMediaBuilder';node.append(studio);
   node.append(make('small','gpt-art-disclosure','Independent creator showcase · no paid placement or official brand endorsement.'));
