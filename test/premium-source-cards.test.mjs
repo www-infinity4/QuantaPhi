@@ -83,7 +83,7 @@ test('GreatCollections VAM lots require actual certified listing URLs and no inv
 test('licensed real PCGS holder illustration is labelled as reference, never a sale lot',()=>{
  const image=referenceCoinImage('pcgs');
  assert.equal(image.license,'CC0-1.0');
- assert.match(image.source,/commons\\.wikimedia\\.org\\/wiki\\/File:/);
+ assert.match(image.source,/commons\.wikimedia\.org\/wiki\/File:/);
  assert.match(image.label,/reference/i);
  assert.equal(image.isListingPhoto,false);
  assert.equal(referenceCoinImage('coinworld'),null);
