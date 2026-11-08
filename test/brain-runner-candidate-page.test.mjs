@@ -32,9 +32,9 @@ function fixture(count=135){
      a.created_at-b.created_at||a.id.localeCompare(b.id));
     const limit=args.at(-1);
     const after=args.length===5?{created_at:args[1],id:args[3]}:null;
-    return {results:selected.filter(t=>!after||descending?
+    return {results:selected.filter(t=>!after||(descending?
      t.created_at<after.created_at||(t.created_at===after.created_at&&t.id<after.id):
-     t.created_at>after.created_at||(t.created_at===after.created_at&&t.id>after.id)
+     t.created_at>after.created_at||(t.created_at===after.created_at&&t.id>after.id))
     ).slice(0,limit)};
    },
    async first(){
