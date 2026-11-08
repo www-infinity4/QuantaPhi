@@ -99,3 +99,20 @@ test('Claude Bubbles training-wheel mode is opt-in and never charges on page loa
  assert.match(ui,/claudeAssistantToggle\.addEventListener\('change'/);
  assert.doesNotMatch(ui,/localStorage\.setItem\(['"]claude/i);
 });
+
+test('Bubbles retains original tool-first routes even when Claude chat assistance is opted in',async()=>{
+ const {shouldUseClaudeAssistance}=await import('../bubbles-claude-routing.mjs');
+ const base={selectedModel:'bubbles',ownerVerified:true,providerPresent:true,ownerEnabled:true,
+  embedded:false,hasAttachments:false,toolWork:false};
+ for(const request of [
+  'What is the weather in Denver?','Show me current news headlines',
+  'Search the web for astronomy','Read README.md in my GitHub repo',
+  'What tools does Bubbles have?','Open Fred Spaces radio',
+  'Play Infinity Radio','Show my wallet GIT coin balance',
+  'Calculate LC resonance 10 microhenries 22 picofarads',
+  'Create a repository named Photos','Can you check this source URL?'
+ ])assert.equal(shouldUseClaudeAssistance({...base,request}),false,
+  'Native Bubbles route must win for: '+request);
+ assert.equal(shouldUseClaudeAssistance({...base,request:'Tell me a story'}),true);
+ assert.deepEqual(routeClaudeTurn('claude','Tell me a story'),{mode:'chat',prompt:'Tell me a story'});
+});
