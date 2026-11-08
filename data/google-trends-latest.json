@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-08T03:01:44.885649Z",
+  "checked_at": "2026-11-08T03:31:30.711431Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "texas state vs oregon state",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T02:40:00Z",
-      "related_news_urls": [
-        "https://www.oregonlive.com/beavers/2026/11/oregon-state-beavers-vs-texas-state-bobcats-live-updates-today.html",
-        "https://sports.yahoo.com/articles/oregon-state-football-vs-texas-013022057.html",
-        "https://www.statesmanjournal.com/story/sports/college/oregon-state/2026/11/06/oregon-state-beavers-football-jamarcus-shephard-fresno-state-texas-state/92624658007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRnO0VlPZwGg8b5cFdv4Ggr2i8-ulMMra38sr_eNPWz9kNeG7yRZ09X553TOw",
-      "image_credit": "OregonLive.com",
-      "news": [
-        {
-          "url": "https://www.oregonlive.com/beavers/2026/11/oregon-state-beavers-vs-texas-state-bobcats-live-updates-today.html",
-          "title": "Oregon State Beavers vs. Texas State Bobcats: Live updates today",
-          "publisher": "OregonLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRnO0VlPZwGg8b5cFdv4Ggr2i8-ulMMra38sr_eNPWz9kNeG7yRZ09X553TOw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/oregon-state-football-vs-texas-013022057.html",
-          "title": "Oregon State football vs. Texas State updates, score, channel, stream",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcMvvzzXEulNcW2UXA_uW0DNMaB-DrT4a2A7MrKhwvE-4Oonse6TSOahWgxC4"
-        },
-        {
-          "url": "https://www.statesmanjournal.com/story/sports/college/oregon-state/2026/11/06/oregon-state-beavers-football-jamarcus-shephard-fresno-state-texas-state/92624658007/",
-          "title": "Oregon State football 'resetting' after Fresno State loss",
-          "publisher": "Statesman Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKTtbFMX2pCUQWTOeC7oXyExl7gGVKwHAh_mIWebu5d8rWmUtn8s-YH9VdapI"
-        }
-      ]
-    },
-    {
-      "query": "hawks",
+      "query": "nebraska volleyball",
       "approx_searches": "5000+",
-      "published_at": "2026-11-08T02:40:00Z",
+      "published_at": "2026-11-08T03:10:00Z",
       "related_news_urls": [
-        "https://www.peachtreehoops.com/atlanta-hawks-game-threads/73523/brooklyn-nets-atlanta-hawks-start-time-tv-streaming-radio-game-thread",
-        "https://sports.yahoo.com/articles/live-discussion-brooklyn-nets-atlanta-000000628.html",
-        "https://www.si.com/nba/hawks/onsi/three-bold-predictions-for-tonight-s-hawks-nets-matchup-01m6vm4pqs3h"
+        "https://goducks.com/news/2026/11/2/womens-volleyball-oregon-nebraska-match-at-mka-sold-out",
+        "https://www.si.com/college/nebraska/volleyball/how-to-watch-no-1-nebraska-volleyball-at-no-12-oregon-no-18-washington-with-previews-breakdowns-tv-channel-2026",
+        "https://huskers.com/news/2026/11/5/vb-preview-at-no-12-oregon-and-no-18-washington"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkb2h-FL7CUe5s28jkOMkfWNTWgDz9OBdmw754XKMF_yiAoDeykWmN4YS0qWo",
-      "image_credit": "Peachtree Hoops",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkSgrYaChugrmxQF0nDAAHTOYBy5waEcjhcvTaOVG5MsmyIIABQKu0cwSv6CY",
+      "image_credit": "University of Oregon Athletics",
       "news": [
         {
-          "url": "https://www.peachtreehoops.com/atlanta-hawks-game-threads/73523/brooklyn-nets-atlanta-hawks-start-time-tv-streaming-radio-game-thread",
-          "title": "Nets at Hawks: start time, TV, streaming, radio, game thread",
-          "publisher": "Peachtree Hoops",
+          "url": "https://goducks.com/news/2026/11/2/womens-volleyball-oregon-nebraska-match-at-mka-sold-out",
+          "title": "Oregon-Nebraska Match at MKA Sold Out",
+          "publisher": "University of Oregon Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkb2h-FL7CUe5s28jkOMkfWNTWgDz9OBdmw754XKMF_yiAoDeykWmN4YS0qWo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkSgrYaChugrmxQF0nDAAHTOYBy5waEcjhcvTaOVG5MsmyIIABQKu0cwSv6CY"
         },
         {
-          "url": "https://sports.yahoo.com/articles/live-discussion-brooklyn-nets-atlanta-000000628.html",
-          "title": "LIVE DISCUSSION: Brooklyn Nets at Atlanta Hawks, 7:30 PM ET",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeZRwOTYJZkkKUrvyaV2vGdzYhE6Xa59D3HldS9SFEI2H5rzQnoDNnGcAtkmc"
-        },
-        {
-          "url": "https://www.si.com/nba/hawks/onsi/three-bold-predictions-for-tonight-s-hawks-nets-matchup-01m6vm4pqs3h",
-          "title": "Three Bold Predictions For Tonight's Hawks-Nets Matchup",
+          "url": "https://www.si.com/college/nebraska/volleyball/how-to-watch-no-1-nebraska-volleyball-at-no-12-oregon-no-18-washington-with-previews-breakdowns-tv-channel-2026",
+          "title": "How to Watch No. 1 Nebraska Volleyball at No. 12 Oregon & No. 18 Washington with Previews, Breakdowns, TV Channel",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPts-oN2PFOwzeIHgxsu4rdxMy5epqCN5kPD4PsLfV5h3E0MaOzoyMILmW25Y"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPfiIDwRgvxguRYGcY3NYFzMn0EjkAhqH8AYg8r-_QJOi-azSery-lvXm3wHg"
+        },
+        {
+          "url": "https://huskers.com/news/2026/11/5/vb-preview-at-no-12-oregon-and-no-18-washington",
+          "title": "VB Preview: at No. 12 Oregon & No. 18 Washington - University of Nebraska - Official Athletics Website",
+          "publisher": "huskers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHihfggU6h_hD16B5VBNB64H_PasnAqIN8EZMv-68UQjcEBqAMKyyhM-Pvvww"
         }
       ]
     },
     {
-      "query": "karl-anthony towns",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T02:40:00Z",
+      "query": "bridget fonda",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T03:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50415138/karl-anthony-towns-throws-emphatic-one-handed-baseline-jam",
-        "https://sports.yahoo.com/articles/kat-proving-knicks-best-player-235051467.html",
-        "https://www.nba.com/watch/video/karl-anthony-towns-rocks-the-rim-4"
+        "https://www.foxnews.com/entertainment/bridget-fonda-spotted-rare-la-outing-24-years-after-final-screen-appearance",
+        "https://www.eonline.com/news/1437789/bridget-fonda-makes-rare-appearance-24-years-after-leaving-hollywood",
+        "https://www.instyle.com/bridget-fonda-makes-rare-appearance-24-years-retiring-acting-12237105"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnPPaJpSQlCuUA8wFwcLMYWH8-pGEgAJdxuWPSXh0q8WmKN9CGKz8F0xAcUyw",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS08jc3VzgH3KRjqscJp0oKB-uDQsZLAu3kuc_eJHFoxz-7plCixR8c-KYrKak",
+      "image_credit": "Fox News",
       "news": [
         {
-          "url": "https://www.espn.com/video/clip/_/id/50415138/karl-anthony-towns-throws-emphatic-one-handed-baseline-jam",
-          "title": "Karl-Anthony Towns throws down emphatic one-handed baseline jam",
-          "publisher": "ESPN",
+          "url": "https://www.foxnews.com/entertainment/bridget-fonda-spotted-rare-la-outing-24-years-after-final-screen-appearance",
+          "title": "Bridget Fonda spotted in rare LA outing 24 years after her final on-screen appearance",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnPPaJpSQlCuUA8wFwcLMYWH8-pGEgAJdxuWPSXh0q8WmKN9CGKz8F0xAcUyw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS08jc3VzgH3KRjqscJp0oKB-uDQsZLAu3kuc_eJHFoxz-7plCixR8c-KYrKak"
         },
         {
-          "url": "https://sports.yahoo.com/articles/kat-proving-knicks-best-player-235051467.html",
-          "title": "KAT Proving He’s the Knicks’ Best Player Right Now",
+          "url": "https://www.eonline.com/news/1437789/bridget-fonda-makes-rare-appearance-24-years-after-leaving-hollywood",
+          "title": "Bridget Fonda Steps Out for Rare Appearance in Los Angeles 24 Years After Last Acting Role",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgzHuwiI_I9Wi9bK-G7X_IpPHXb5IIfpbhyZksCQcmQrxXRabtyMGcUxUNQAg"
+        },
+        {
+          "url": "https://www.instyle.com/bridget-fonda-makes-rare-appearance-24-years-retiring-acting-12237105",
+          "title": "Bridget Fonda, 62, Makes Rare Appearance After Retiring From Acting 24 Years Ago",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS45AohkPvtYWwEOzzPbd20G-j1HmiIOL3cUlAnZdbCETLOq3zyTQw3OyiUS2A"
+        }
+      ]
+    },
+    {
+      "query": "carson beck",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T03:10:00Z",
+      "related_news_urls": [
+        "https://www.sfchronicle.com/sports/49ers/article/buckner-bosa-49ers-defense-22516846.php",
+        "https://sports.yahoo.com/articles/kyle-shanahan-reveals-thought-process-015241252.html",
+        "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/kyle-shanahan-identifies-challenges-raiders/1977286/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9zP3G9dsRxJWPIT1OOOkX3Dh8_JFgNztXeW3JQiKBk1GIx0c4eLJ1i24qqqc",
+      "image_credit": "San Francisco Chronicle",
+      "news": [
+        {
+          "url": "https://www.sfchronicle.com/sports/49ers/article/buckner-bosa-49ers-defense-22516846.php",
+          "title": "Could 49ers duo of DeForest Buckner and Nick Bosa unleash a Jeffery Simmons-like effect?",
+          "publisher": "San Francisco Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9zP3G9dsRxJWPIT1OOOkX3Dh8_JFgNztXeW3JQiKBk1GIx0c4eLJ1i24qqqc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/kyle-shanahan-reveals-thought-process-015241252.html",
+          "title": "Kyle Shanahan reveals thought process behind controversial decision to trade away DeForest Buckner",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3Kcd40hq3NxN45rfmdGKr1-e5u6zIKYeb61PZFdkH71-kle20rTodPYqvySU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWPHOcogLO0D1xoZm9h7MiTgYnWf2A7vnmF8AhiPdtQoBwabtROXEuL8YjdOw"
         },
         {
-          "url": "https://www.nba.com/watch/video/karl-anthony-towns-rocks-the-rim-4",
-          "title": "Karl-Anthony Towns rocks the rim",
-          "publisher": "NBA.com",
+          "url": "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/kyle-shanahan-identifies-challenges-raiders/1977286/",
+          "title": "Kyle Shanahan identifies 49ers' main challenges for Week 9 matchup vs. Raiders",
+          "publisher": "NBC Sports Bay Area & California",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOh6o4jfnygDZHZhnHyjmGRAPQno6bJWSI4lM9_KB_7rbRU8gfNmU0jAICevY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHAEo1Nk686xcWbAdwEgfi2M05taYohp9iEpTLBu9nY9NrwbwgIQiAAdV5DGs"
         }
       ]
     },
     {
-      "query": "josh brolin",
+      "query": "bella hadid",
       "approx_searches": "500+",
-      "published_at": "2026-11-08T02:40:00Z",
+      "published_at": "2026-11-08T03:10:00Z",
       "related_news_urls": [
-        "https://people.com/josh-brolin-renews-vows-with-wife-kathryn-las-vegas-10-years-of-marriage-photos-12242525",
-        "https://pagesix.com/2026/11/07/celebrity-news/josh-brolin-renews-vows-with-wife-kathryn-in-vegas-for-10th-anniversary/",
-        "https://www.hellomagazine.com/us/933788/josh-brolin-58-marries-wife-kathryn-39-all-over-again-in-surprise-las-vegas-ceremony/"
+        "https://www.instyle.com/bella-hadid-considers-dramatic-hair-change-halloween-wig-transformation-12237216",
+        "https://www.whowhatwear.com/fashion/celebrity-style/nike-shox-sneakers-trend-hailey-bieber-2026",
+        "https://www.marieclaire.com/fashion/celebrity-style/hailey-bieber-nike-shox-tl-sneakers-bella-hadid/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZXTnu9ULFVPRfzcYtA799hLPvYronul6EM6aRRaoj74FHSR9bBCB4zFeRNCI",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE_JrNdu6o2efVDIQt29mZ5mGcZbpy4ilieoYNxLnTifgtY9WOsPv-lRYtoNo",
+      "image_credit": "InStyle",
       "news": [
         {
-          "url": "https://people.com/josh-brolin-renews-vows-with-wife-kathryn-las-vegas-10-years-of-marriage-photos-12242525",
-          "title": "Josh Brolin and Wife Kathryn Renew Vows in Las Vegas After 10 Years: Photos",
-          "publisher": "People.com",
+          "url": "https://www.instyle.com/bella-hadid-considers-dramatic-hair-change-halloween-wig-transformation-12237216",
+          "title": "Bella Hadid Looks Nearly Unrecognizable With Dramatic Bangs and Darkest Hair Color Yet",
+          "publisher": "InStyle",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZXTnu9ULFVPRfzcYtA799hLPvYronul6EM6aRRaoj74FHSR9bBCB4zFeRNCI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE_JrNdu6o2efVDIQt29mZ5mGcZbpy4ilieoYNxLnTifgtY9WOsPv-lRYtoNo"
         },
         {
-          "url": "https://pagesix.com/2026/11/07/celebrity-news/josh-brolin-renews-vows-with-wife-kathryn-in-vegas-for-10th-anniversary/",
-          "title": "Josh Brolin shows off ripped physique while renewing vows with wife Kathryn in Vegas for 10th wedding anniversary",
-          "publisher": "Page Six",
+          "url": "https://www.whowhatwear.com/fashion/celebrity-style/nike-shox-sneakers-trend-hailey-bieber-2026",
+          "title": "Spotted on Hailey Bieber: The Polarizing Sneaker Trend That'll Be Everywhere in 2027",
+          "publisher": "Who What Wear",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRv4cQP1aOh7gyiN0WuQj2KVV5LPdWXcvBfArXHrQkTQAJfzoubZbW0OVnqk20"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWY722BipfdNF3-gQ0cRdTBs0gWnHWdq0Yq9-yCCxYmWnhanOEJCZmqltZ6is"
         },
         {
-          "url": "https://www.hellomagazine.com/us/933788/josh-brolin-58-marries-wife-kathryn-39-all-over-again-in-surprise-las-vegas-ceremony/",
-          "title": "Josh Brolin, 58, marries wife Kathryn, 39, all over again in surprise Las Vegas ceremony",
-          "publisher": "HELLO!",
+          "url": "https://www.marieclaire.com/fashion/celebrity-style/hailey-bieber-nike-shox-tl-sneakers-bella-hadid/",
+          "title": "Bella Hadid and Hailey Bieber Agree: These $180 Nike Sneakers Have Serious It-Girl Appeal",
+          "publisher": "Marie Claire",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwSDnsjUwjZO64gx7DINDs9IZYc5QxAXQPvZpbICi5pFW1jRvDCUvTGIKt80g"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxze23dbXbfJ8y2YEH20KTVWqAe6mOgmS0HIExBBoDnp3Q_IFd9YSFhxpjh8w"
         }
       ]
     },
     {
-      "query": "suns vs rockets",
+      "query": "dyson daniels",
       "approx_searches": "200+",
-      "published_at": "2026-11-08T02:40:00Z",
+      "published_at": "2026-11-08T03:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/rockets-kevin-durant-head-phoenix-000000871.html",
-        "https://www.brightsideofthesun.com/suns-game/113230/kevin-durant-return-houston-rockets-preview-fred-vanvleet-offensive-depth",
-        "https://www.star-telegram.com/sports/article317974513.html"
+        "https://www.foxsports.com.au/basketball/nba-2026-kristaps-porzingis-steps-away-from-basketball-as-draymond-green-reacts-golden-state-warriors-latest-news/news-story/4dd119bf0b65633bcad68020291b0e64",
+        "https://sports.yahoo.com/articles/dyson-daniels-jokes-onyeka-okongwu-174132809.html",
+        "https://aapnews.aap.com.au/news/daniels-dominates-the-boards-giddey-s-bulls-hammered"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3SddHc9yBCEHfu9Ba-jg5kGag2t5_bCnePhfkdRnv1IUhHDHnh4en10K10O8",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRY7snHmJcBPEdYOevwPWNMZYtOcYMf32gVJms_ALn260gluw1Cb6oVKAPJsY",
+      "image_credit": "Fox Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/rockets-kevin-durant-head-phoenix-000000871.html",
-          "title": "Rockets and Kevin Durant head to Phoenix for a reunion",
+          "url": "https://www.foxsports.com.au/basketball/nba-2026-kristaps-porzingis-steps-away-from-basketball-as-draymond-green-reacts-golden-state-warriors-latest-news/news-story/4dd119bf0b65633bcad68020291b0e64",
+          "title": "King James’ historic night to forget; Aussie star produces monster performance – NBA Wrap",
+          "publisher": "Fox Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRY7snHmJcBPEdYOevwPWNMZYtOcYMf32gVJms_ALn260gluw1Cb6oVKAPJsY"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/dyson-daniels-jokes-onyeka-okongwu-174132809.html",
+          "title": "Dyson Daniels Jokes About Onyeka Okongwu Costing Him Triple-Double",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3SddHc9yBCEHfu9Ba-jg5kGag2t5_bCnePhfkdRnv1IUhHDHnh4en10K10O8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRp7VSX-3ydOxrfsUQu-pMhGQUVRGE0ftkE-KMEEwVbDpOwPdIgaM2np_KfUYU"
         },
         {
-          "url": "https://www.brightsideofthesun.com/suns-game/113230/kevin-durant-return-houston-rockets-preview-fred-vanvleet-offensive-depth",
-          "title": "Game Preview: Suns prepare for major test against balanced Houston Rockets",
-          "publisher": "Bright Side Of The Sun",
+          "url": "https://aapnews.aap.com.au/news/daniels-dominates-the-boards-giddey-s-bulls-hammered",
+          "title": "Giddey's Bulls hammered as Wembanyama goes off in Texas",
+          "publisher": "https://aapnews.aap.com.au/",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnokKuDSxwrJ7SermCRWFKohaa2MHIwyRf5PL4_IX7IfSWdZDZm3agAOWE5JE"
-        },
-        {
-          "url": "https://www.star-telegram.com/sports/article317974513.html",
-          "title": "Injury report: Steven Adams, Clint Capela and more for Rockets vs. Suns",
-          "publisher": "Fort Worth Star-Telegram",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpCzD9cyeakBwj1pFbNqgl607R_eEJNO8GPM5d0XW34jxb763Qh0vVNZ60ao8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7IFijpS-TmOpUWloXC504RMB8b4Lh9aNEHTNyMeBk0l_tTz1QFdj9lNc8PpA"
         }
       ]
     },
     {
-      "query": "anthony bourdain",
+      "query": "jase richardson",
       "approx_searches": "200+",
-      "published_at": "2026-11-08T02:40:00Z",
+      "published_at": "2026-11-08T03:10:00Z",
       "related_news_urls": [
-        "https://www.npr.org/2026/11/06/nx-s1-6032770/anthony-bourdains-legacy-in-russia",
-        "https://mocoshow.com/2026/11/06/anthony-bourdains-favorite-chinese-food-opens-first-maryland-location/"
+        "https://www.cbssports.com/fantasy/basketball/news/magics-jase-richardson-slides-to-bench-saturday/",
+        "https://orlandomagicdaily.com/jase-richardson-getting-comfortable-brighter-spotlight-01m69acgm9ar",
+        "https://www.rotowire.com/basketball/headlines/jase-richardson-news-scores-10-points-adds-four-defensive-stats-537812"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS__kzRXkF37FYpztpHPaPNzbpv151NnGn2PNO59KX4dWfKTDRzD1uskLG2FNs",
-      "image_credit": "NPR",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCCv5waEbm0dMRWxPH9XRdajgSx2egpFFluC4GKmin6BjBTia0x2lbCt7MDJ4",
+      "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://www.npr.org/2026/11/06/nx-s1-6032770/anthony-bourdains-legacy-in-russia",
-          "title": "Anthony Bourdain’s legacy in Russia",
-          "publisher": "NPR",
+          "url": "https://www.cbssports.com/fantasy/basketball/news/magics-jase-richardson-slides-to-bench-saturday/",
+          "title": "Magic's Jase Richardson: Slides to bench Saturday",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS__kzRXkF37FYpztpHPaPNzbpv151NnGn2PNO59KX4dWfKTDRzD1uskLG2FNs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCCv5waEbm0dMRWxPH9XRdajgSx2egpFFluC4GKmin6BjBTia0x2lbCt7MDJ4"
         },
         {
-          "url": "https://mocoshow.com/2026/11/06/anthony-bourdains-favorite-chinese-food-opens-first-maryland-location/",
-          "title": "“Anthony Bourdain’s Favorite Chinese Food” Opens First Maryland Location",
-          "publisher": "The MoCo Show -",
+          "url": "https://orlandomagicdaily.com/jase-richardson-getting-comfortable-brighter-spotlight-01m69acgm9ar",
+          "title": "Jase Richardson is getting comfortable in a brighter spotlight",
+          "publisher": "Orlando Magic Daily",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEm1LBxqrgiPdo_NNJSfSpU_Dlh5_z8BC5Cev465QzLkZzJav6hX73S_Rrb48"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ56kNaVOnYa-ocrY4Tzvb8mdbUe1H7ccfB98eZEjUNiTlDvF-duZ7v_91Sw6Y"
+        },
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/jase-richardson-news-scores-10-points-adds-four-defensive-stats-537812",
+          "title": "Jase Richardson News: Scores 10 points, adds four defensive stats",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpg4RDuIc4d4zrbJFEErk0frICbINDl5PD7O2bkn1uaF0t1n4qapZOVU12aDw"
         }
       ]
     },
     {
-      "query": "jared mccain",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-08T02:30:00Z",
+      "query": "ufc 334",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-08T03:00:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nba/recap/_/gameId/401909291",
-        "https://okcthunderwire.usatoday.com/story/sports/nba/thunder/2026/11/06/player-grades-thunder-absolutely-humiliate-grizzlies-in-128-97-nba-cup-win/92653564007/",
-        "https://sports.yahoo.com/articles/jared-mccains-bounce-back-game-210003214.html"
+        "https://www.mmafighting.com/ufc/519826/ufc-334-10-fight-octagon-veteran-saves-bantamweight-clash-on-ciryl-gane-vs-josh-hokit-fight-card",
+        "https://mmajunkie.usatoday.com/story/sports/ufc/2026/11/06/ufc-334-juan-diaz-vs-alatengheili-news/92650273007/",
+        "https://bloodyelbow.com/2026/11/06/ufc-334-update-30-fight-veteran-joins-gane-vs-hokit-undercard/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuFuehz9yG-0XAZF9A8BlpkwxrWvI4giuDo6ZxNUjTJRfoOup585EHq5h1_Tk",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTE3Kp9ulH1BNs4Fq45HG5zYKC4QxW-Y4nkQcNHUsCmbUAdc3V9wxO_zzB72mM",
+      "image_credit": "MMA Fighting",
       "news": [
         {
-          "url": "https://www.espn.com/nba/recap/_/gameId/401909291",
-          "title": "Thunder 128-97 Grizzlies (Nov 6, 2026) Game Recap",
-          "publisher": "ESPN",
+          "url": "https://www.mmafighting.com/ufc/519826/ufc-334-10-fight-octagon-veteran-saves-bantamweight-clash-on-ciryl-gane-vs-josh-hokit-fight-card",
+          "title": "UFC 334: 10-fight octagon veteran saves bantamweight clash on Ciryl Gane vs. Josh Hokit fight card",
+          "publisher": "MMA Fighting",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuFuehz9yG-0XAZF9A8BlpkwxrWvI4giuDo6ZxNUjTJRfoOup585EHq5h1_Tk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTE3Kp9ulH1BNs4Fq45HG5zYKC4QxW-Y4nkQcNHUsCmbUAdc3V9wxO_zzB72mM"
         },
         {
-          "url": "https://okcthunderwire.usatoday.com/story/sports/nba/thunder/2026/11/06/player-grades-thunder-absolutely-humiliate-grizzlies-in-128-97-nba-cup-win/92653564007/",
-          "title": "Player grades: Thunder absolutely humiliate Grizzlies in 128-97 NBA Cup win",
-          "publisher": "OKC Thunder Wire",
+          "url": "https://mmajunkie.usatoday.com/story/sports/ufc/2026/11/06/ufc-334-juan-diaz-vs-alatengheili-news/92650273007/",
+          "title": "Hot prospect gets new UFC 334 opponent",
+          "publisher": "MMA Junkie",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScJR6EPz69TRtrxs96hE25mQFMfPxMe9eAaKdSDip3tLgLegggRUmfA1B3pEQ"
+          "image_url": null
         },
         {
-          "url": "https://sports.yahoo.com/articles/jared-mccains-bounce-back-game-210003214.html",
-          "title": "Jared McCain's Bounce-Back Game Helps Lead Thunder Past Grizzlies",
+          "url": "https://bloodyelbow.com/2026/11/06/ufc-334-update-30-fight-veteran-joins-gane-vs-hokit-undercard/",
+          "title": "UFC 334 update: 30-fight veteran joins Gane vs. Hokit undercard",
+          "publisher": "Bloody Elbow",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnshxaz7vUg_GokAyIL7nOLvgqipkHjeYcGU7NNrXwd0kDVsB8S2MkJTOZbY0"
+        }
+      ]
+    },
+    {
+      "query": "michael irvin",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T03:00:00Z",
+      "related_news_urls": [
+        "https://www.essentiallysports.com/nfl-legends-news-its-not-a-crime-eagles-super-bowl-champ-defends-lesean-mccoy-amid-controversial-emmitt-smith-debate/",
+        "https://www.profootballnetwork.com/michael-irvin-emmanuel-acho-emmitt-smith-disrespect/",
+        "https://tradersunion.com/news/billionaires/show/4123528-nfl-greatness-debate/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFVqCZIqED34H3G6zp2LASVhLm4hvM6F-9hIArHJXeiOsSdoWsb6yEj-Tm-p8",
+      "image_credit": "EssentiallySports",
+      "news": [
+        {
+          "url": "https://www.essentiallysports.com/nfl-legends-news-its-not-a-crime-eagles-super-bowl-champ-defends-lesean-mccoy-amid-controversial-emmitt-smith-debate/",
+          "title": "“It’s Not a Crime”: Eagles Super Bowl Champ Defends LeSean McCoy Amid Controversial Emmitt Smith Debate",
+          "publisher": "EssentiallySports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFVqCZIqED34H3G6zp2LASVhLm4hvM6F-9hIArHJXeiOsSdoWsb6yEj-Tm-p8"
+        },
+        {
+          "url": "https://www.profootballnetwork.com/michael-irvin-emmanuel-acho-emmitt-smith-disrespect/",
+          "title": "‘Insane Take,’ ‘Dude Is So Corny’ — NFL Fans Rally Behind Michael Irvin As Cowboys Icon Clashes With Emmanuel Acho Over ‘Disrespect’ of Emmitt Smith",
+          "publisher": "Pro Football Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmrk_QgxZtVxwiZkFM7zldzanyA0UvTrdFc-t4MwIknEwrA4VRlI2W45PPLcQ"
+        },
+        {
+          "url": "https://tradersunion.com/news/billionaires/show/4123528-nfl-greatness-debate/",
+          "title": "Stephen Smith says NFL greatness debate features Emmitt Smith and LeSean McCoy",
+          "publisher": "Traders Union",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuKP0Yzpe5VMxPxi8I_je_Qz0fCKMzEMjEN1L3lluFfKD5Ti_rZ8PFVR-JLK4"
+        }
+      ]
+    },
+    {
+      "query": "alperen sengun",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T03:00:00Z",
+      "related_news_urls": [
+        "https://www.si.com/nba/rockets/onsi/where-alperen-sengun-ranks-on-nba-s-mvp-ladder-01m6v9seqp0t",
+        "https://roundtable.io/sports/nba/rockets/community/players/put-some-respek-on-sengun-s-name",
+        "https://www.si.com/nba/rockets/onsi/can-alperen-sengun-push-jokic-wembanyana-aside-in-the-west-01m6s2vhw3qw"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3rUlxL--JNYJ2tD8QBDL6Q3XmPwW4Fhgg2ebU3kEEl0s5zxkQd16V_DbAx2c",
+      "image_credit": "Sports Illustrated",
+      "news": [
+        {
+          "url": "https://www.si.com/nba/rockets/onsi/where-alperen-sengun-ranks-on-nba-s-mvp-ladder-01m6v9seqp0t",
+          "title": "Where Does Alperen Sengun Rank on NBA’s MVP Ladder?",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3rUlxL--JNYJ2tD8QBDL6Q3XmPwW4Fhgg2ebU3kEEl0s5zxkQd16V_DbAx2c"
+        },
+        {
+          "url": "https://roundtable.io/sports/nba/rockets/community/players/put-some-respek-on-sengun-s-name",
+          "title": "Put some respek on Şengün’s name!",
+          "publisher": "roundtable.io",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwGy57NXNo1cYEO4GxbGGcjIvcxWQodc_XOK8VRoY-eNAWxGwpXiZ3dIu1g5Y"
+        },
+        {
+          "url": "https://www.si.com/nba/rockets/onsi/can-alperen-sengun-push-jokic-wembanyana-aside-in-the-west-01m6s2vhw3qw",
+          "title": "Can Alperen Sengun Become a Top-2 Center in the Western Conference?",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFSRiV_VVZunbgYcVw1W8il35XlmZGfrnlD7bSK3HkBmtNDZhpSS_g1eeTJyY"
+        }
+      ]
+    },
+    {
+      "query": "jalen johnson",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T03:00:00Z",
+      "related_news_urls": [
+        "https://www.hoopsrumors.com/2026/11/injury-notes-j-johnson-mcconnell-aldama-beringer.html",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-07/gui-santos-knee-upgraded-to-available-saturday",
+        "https://sports.yahoo.com/articles/jalen-johnson-listed-probable-against-193918032.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-5CNbuW3lfVE2fiKMKCJjGNgnTwpc0m7fcqPkKo8RIH2yoNcGlKzcgh3q5-A",
+      "image_credit": "Hoops Rumors",
+      "news": [
+        {
+          "url": "https://www.hoopsrumors.com/2026/11/injury-notes-j-johnson-mcconnell-aldama-beringer.html",
+          "title": "Injury Notes: J. Johnson, McConnell, Aldama, Beringer",
+          "publisher": "Hoops Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-5CNbuW3lfVE2fiKMKCJjGNgnTwpc0m7fcqPkKo8RIH2yoNcGlKzcgh3q5-A"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-07/gui-santos-knee-upgraded-to-available-saturday",
+          "title": "Gui Santos (knee) upgraded to available Saturday",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShH2I1tIPRSReTFo0GlGk5hKJ6FCx1UeSYXdb5hrKbLmjbVdAZmI29PDalaM8"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/jalen-johnson-listed-probable-against-193918032.html",
+          "title": "Jalen Johnson Listed Probable Against Nets After Missing 3 Straight Hawks Games",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShgDrYV_VZ4dA5PJmOcYa8f6dn3VQL5D2hVW0ktggcI2Niue4fmFTbiBSORZ4"
-        }
-      ]
-    },
-    {
-      "query": "george macintyre",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T02:30:00Z",
-      "related_news_urls": [
-        "https://atozsports.com/nashville/volunteers/tim-tebow-florida-comments-qb-george-macintyre-tennessee-football-vols/",
-        "https://www.yardbarker.com/college_football/articles/florida_gators_legend_changes_his_tune_on_tennessee_in_a_big_way_ahead_of_the_vols_big_game_against_kentucky/s1_17313_44490175",
-        "https://www.espn.com/college-football/story/_/id/50392385/week-10-college-football-uniforms-tennessee"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhiH0DnXPFFl-ZXBGDHZ31rQEpo_GJRdLJCutv6I1rVKGrG3z17BDZKWzRrHs",
-      "image_credit": "A to Z Sports",
-      "news": [
-        {
-          "url": "https://atozsports.com/nashville/volunteers/tim-tebow-florida-comments-qb-george-macintyre-tennessee-football-vols/",
-          "title": "Tim Tebow dropped some strong comments on QB George MacIntyre and Tennessee football and left no doubt on how he feels about the Vols",
-          "publisher": "A to Z Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhiH0DnXPFFl-ZXBGDHZ31rQEpo_GJRdLJCutv6I1rVKGrG3z17BDZKWzRrHs"
-        },
-        {
-          "url": "https://www.yardbarker.com/college_football/articles/florida_gators_legend_changes_his_tune_on_tennessee_in_a_big_way_ahead_of_the_vols_big_game_against_kentucky/s1_17313_44490175",
-          "title": "Florida Gators legend changes his tune on Tennessee in a big way ahead of the Vols’ big game against Kentucky",
-          "publisher": "Yardbarker",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbVl3Z4MpdcjggjCzJ0DZJKRRXzEOxgsitr6xof4Q_6uo5ZfdBDm3k31R3O4A"
-        },
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50392385/week-10-college-football-uniforms-tennessee",
-          "title": "Tennessee going 'dark mode' tops best college football Week 10 unis",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDUdXmicyp4dT2RxDUfoTH3lois_-HcC3bB06A15ASdrkF_U4syhyw3k6nxU8"
-        }
-      ]
-    },
-    {
-      "query": "notre dame football schedule 2026",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T02:30:00Z",
-      "related_news_urls": [
-        "https://fightingirish.com/news/2026/11/5/6-irish-are-2026-acc-regular-season-champions",
-        "https://themiamihurricane.com/2026/11/07/miami-soccer-regular-season-wraps-up-in-1-0-loss-to-no-6-notre-dame/",
-        "https://www.ndsmcobserver.com/article/irish-women-s-soccer-wins-first-outright-acc-regular-season-championship-20261107"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQm0uul3UJMNCuLyb2gRaiq4tRk1cWNu7-jB0Wlc8enJk6FGBUnh_JAb1PHhdo",
-      "image_credit": "Notre Dame Fighting Irish",
-      "news": [
-        {
-          "url": "https://fightingirish.com/news/2026/11/5/6-irish-are-2026-acc-regular-season-champions",
-          "title": "#6 Irish Are 2026 ACC Regular Season Champions",
-          "publisher": "Notre Dame Fighting Irish",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQm0uul3UJMNCuLyb2gRaiq4tRk1cWNu7-jB0Wlc8enJk6FGBUnh_JAb1PHhdo"
-        },
-        {
-          "url": "https://themiamihurricane.com/2026/11/07/miami-soccer-regular-season-wraps-up-in-1-0-loss-to-no-6-notre-dame/",
-          "title": "Miami Soccer regular season wraps up in 1-0 loss to No. 6 Notre Dame",
-          "publisher": "The Miami Hurricane",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Vq0GliaN8Qp5FsVbbbI7SOd5AGFKVF8UKnSUA3eydYN18h4r5laKYlCgqUI"
-        },
-        {
-          "url": "https://www.ndsmcobserver.com/article/irish-women-s-soccer-wins-first-outright-acc-regular-season-championship-20261107",
-          "title": "Irish women’s soccer wins first outright ACC regular season championship",
-          "publisher": "Observer Online",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpFdhqxdMh7VH8I4HI-AxEnJIaA0V-TcJQj-JQYBR7RdxzbScWnbnsyvtv4h0"
-        }
-      ]
-    },
-    {
-      "query": "defesa civil",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T02:30:00Z",
-      "related_news_urls": [
-        "https://oglobo.globo.com/brasil/noticia/2026/11/07/ha-risco-nas-proximas-72-horas-no-brasil-entenda-alerta-da-defesa-civil.ghtml",
-        "https://exame.com/brasil/defesa-civil-orienta-familias-a-estocar-agua-e-alimentos-entenda-recomendacao/",
-        "https://ndmais.com.br/tempo/defesa-civil-kit-emergencia-72-horas-alerta-vermelho-inmet/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_DIAOZrYum7PIGHS-nj6xxlwTry7qhAvMDHSyRNPmdO8W9Giwa4hvNyS_u_w",
-      "image_credit": "O GLOBO",
-      "news": [
-        {
-          "url": "https://oglobo.globo.com/brasil/noticia/2026/11/07/ha-risco-nas-proximas-72-horas-no-brasil-entenda-alerta-da-defesa-civil.ghtml",
-          "title": "Há risco nas próximas 72 horas no Brasil? Entenda alerta da Defesa Civil",
-          "publisher": "O GLOBO",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_DIAOZrYum7PIGHS-nj6xxlwTry7qhAvMDHSyRNPmdO8W9Giwa4hvNyS_u_w"
-        },
-        {
-          "url": "https://exame.com/brasil/defesa-civil-orienta-familias-a-estocar-agua-e-alimentos-entenda-recomendacao/",
-          "title": "Defesa Civil orienta famílias a estocar água e alimentos; entenda recomendação",
-          "publisher": "Exame",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaaHwx_rHIyZldDdDKP5MS5cIDRnU1OTabHpQqUZ_aCrvhL0wj1GYiTOEWvos"
-        },
-        {
-          "url": "https://ndmais.com.br/tempo/defesa-civil-kit-emergencia-72-horas-alerta-vermelho-inmet/",
-          "title": "Defesa Civil recomenda preparar kit de emergência para 72 horas diante de alerta vermelho em 325 cidades",
-          "publisher": "ND Mais",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXflQEVNhIYdGTf65bWKB3SRwYSOlhMPpoH0-Z_tO5CHzxoDG5BzKCCztJGxg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQdRfnHvz3R_Mw-yEyYwCzLcftyknNMAcSLHMG2_3eeqKIp-ZXITaRbXfCH_c"
         }
       ]
     }
