@@ -11,7 +11,7 @@ export function parseStripeSellerCards(raw){
  if(!(typeof raw==='string'||Array.isArray(raw)))throw Error('invalid_card_list');
  if(typeof raw==='string'&&raw.length>45000)throw Error('over_card_limit');
  const list=(typeof raw==='string'?raw.split(/[\n\r,]+/):raw).map(x=>typeof x==='string'?x.trim():x).filter(x=>x!==''&&x!==null&&x!==undefined);
- if(!list.length)throw Error('missing_card');
+ // An owner can prepare a business before creating the first sale card.
  if(list.length>MAX_STRIPE_SELLER_CARDS)throw Error('over_card_limit');
  const seen=new Set();
  for(const id of list){
