@@ -2,13 +2,13 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {DISPENSARY_SOURCES,eligibleDispensary,approvedDirectoryMedia,DISPENSARY_CARD_IDS} from '../restricted-dispensary-directory.mjs';
 
-test('thirteen distinct original-source store Quick Cards can appear in Oracle deck',()=>{
- assert.equal(DISPENSARY_SOURCES.length,13);
- assert.equal(new Set(DISPENSARY_SOURCES.map(x=>x.id)).size,13);
- assert.equal(new Set(DISPENSARY_CARD_IDS).size,13);
+test('fourteen distinct original-source store Quick Cards can appear in Oracle deck',()=>{
+ assert.equal(DISPENSARY_SOURCES.length,14);
+ assert.equal(new Set(DISPENSARY_SOURCES.map(x=>x.id)).size,14);
+ assert.equal(new Set(DISPENSARY_CARD_IDS).size,14);
  for(const x of DISPENSARY_SOURCES){
   assert.ok(DISPENSARY_CARD_IDS.includes('dispensary-'+x.id));
-  assert.match(x.address,/Denver, CO 802\d\d/);
+  assert.match(x.address,/, CO 80\d{3}$/);
   assert.ok(x.name&&x.store&&x.address&&x.source_url);
   assert.equal(x.category,'dispensary');
   assert.equal(x.paid_sponsor,false);
@@ -106,4 +106,37 @@ test('reviewed gallery is wired into the original Android card with accessible c
  assert.match(client,/photo\.referrerPolicy='no-referrer'/);
  assert.match(css,/\.dc-gallery-image/);
  assert.match(css,/\.dc-gallery-controls/);
+});
+
+
+test('Breckenridge is one verified source listing, not an Alpenglow duplicate',()=>{
+ const rows=DISPENSARY_SOURCES.filter(x=>x.city==='Breckenridge');
+ assert.equal(rows.length,1);
+ const row=rows[0];
+ assert.equal(row.id,'the-dispensary-breckenridge');
+ assert.equal(row.name,'The Dispensary');
+ assert.equal(row.store,'Breckenridge');
+ assert.equal(row.former_brand,'Alpenglow Botanicals');
+ assert.equal(row.phone,'(970) 389-6839');
+ assert.equal(row.address,'1805 Airport Rd, Breckenridge, CO 80424');
+ assert.equal(row.source_url,'https://thedispensary.com/locations/breckenridge-co/');
+ assert.equal(row.official_domain,'thedispensary.com');
+ assert.equal(row.paid_sponsor,false);
+ assert.equal('price' in row,false);
+ assert.equal('inventory' in row,false);
+ assert.ok(eligibleDispensary(row,true));
+ assert.deepEqual(approvedDirectoryMedia(row,true),[], 'uploaded cannabis product imagery is never auto-approved');
+});
+
+test('regional source cards show their actual city and former brand without claiming current offers',async()=>{
+ const fs=await import('node:fs/promises');
+ const html=await fs.readFile(new URL('../index.html',import.meta.url),'utf8');
+ const deck=await fs.readFile(new URL('../oracle-card-deck.js',import.meta.url),'utf8');
+ const client=await fs.readFile(new URL('../restricted-dispensary-cards.mjs',import.meta.url),'utf8');
+ assert.match(html,/id="dispensary-the-dispensary-breckenridge"/);
+ assert.match(deck,/\['dispensary-the-dispensary-breckenridge','21\+ · The Dispensary · Breckenridge'\]/);
+ assert.match(client,/row\.city\.toUpperCase\(\)/);
+ assert.match(client,/row\.former_brand/);
+ assert.match(client,/row\.phone/);
+ assert.doesNotMatch(client,/gold-shelf-ounce-discount/);
 });
