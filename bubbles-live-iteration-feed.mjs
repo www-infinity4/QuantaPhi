@@ -78,7 +78,7 @@ export function advanceLiveBits(previous,event){
   const pendingTool=current.some(entry=>entry.state==='running'&&entry.tool);
   const completedToolCount=current.filter(entry=>entry.tool&&entry.state==='complete').length;
   s.live=event.failed===true?'Reply incomplete · no verified job result':
-   pendingTool?'Tool still running · awaiting a verified execution receipt':
+   pendingTool?'Tool still running · waiting for saved execution receipt':
    completedToolCount?'Reply received · '+completedToolCount+' confirmed tool receipt'+(completedToolCount===1?'':'s'):
    'Reply received · no tool execution receipt';
   return s;
