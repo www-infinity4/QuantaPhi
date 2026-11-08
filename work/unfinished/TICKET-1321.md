@@ -14,17 +14,17 @@ lease_id: null
 lease_expires_at: null
 task_session_id: null
 fence: null
-last_observed_at_utc: "2026-11-08T11:04:48Z"
+last_observed_at_utc: "2026-11-08T11:06:23Z"
 repo: www-infinity4/QuantaPhi
 branch: copilot/continuity-builder-action-packets
-head_sha: 67b1c63ab3e2ab5c9d2dcbb34084c9379d859905
+head_sha: d3f353deae9e40260c4633af611b07139386742a
 pr: https://github.com/www-infinity4/QuantaPhi/pull/1858
 tests:
   - "node --check continuity/packet-runner-adapter.mjs"
   - "node --test test/continuity*.test.mjs — 56 passed"
   - "node --test test/continuity-packet-runner-adapter.test.mjs — 3 passed (documentation sessions)"
 ci:
-  - "PR #1858 exact head 67b1c63ab3e2ab5c9d2dcbb34084c9379d859905: Continuity actionable packet contracts run 42472204751 is action_required with zero jobs; no failed-job logs"
+  - "PR #1858 exact head d3f353deae9e40260c4633af611b07139386742a: Continuity actionable packet contracts run 42474261115 is action_required with zero jobs; no failed-job logs"
 independent_review: pending
 merged: false
 deployed: false
@@ -50,5 +50,5 @@ Pure packet selection rejects unchanged blocked same-head retries and foreign le
 - Actual authenticated runner consumes the packet and performs provider-confirmed actions through authorized GitHub capabilities.
 - Two-run production acceptance verifies one real eligible action/PR, exact-head CI, independent review, permitted merge, and a resumed unchanged-version skip.
 - Production streaming acceptance still needs an authenticated candidate/import adapter and bounded concurrency/budget enforcement; this PR's synthetic adapter is not that runner.
-- Current exact-head CI is `action_required` with zero jobs in the relevant workflow; local adapter tests do not substitute for CI.
+- Current exact-head CI run 42474261115 is `action_required` with zero jobs; local adapter tests do not substitute for CI.
 - Do not bypass wallet, finance, identity, OAuth, APK security or branch protection.
