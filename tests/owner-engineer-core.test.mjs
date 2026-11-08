@@ -16,5 +16,5 @@ test('portrait must be a reviewed, actual image before developer publicity card 
 test('owner photo path and GPT viewer are first-party routes',()=>{
  assert.equal(sanitizeOwnerPhoto('/assets/gpt-art/gpt-owner-engineer.webp'),'/assets/gpt-art/gpt-owner-engineer.webp');
  assert.equal(sanitizeOwnerPhoto('https://bad.example/me.jpg'),'');
- assert.equal(ownerCtaUrl(),'/website-viewer.html?site=chatgpt');
+ assert.equal(ownerCtaUrl(),'/creator-gpt-handoff.html');
 });
