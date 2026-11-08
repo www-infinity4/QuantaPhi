@@ -1,5 +1,5 @@
 import {ecosystemContextFor} from './ecosystem.mjs';
-import {isCapabilityDiscoveryQuestion,capabilityDirectory,capabilityDirectoryReply,capabilityContextFor} from './capability-directory.mjs';
+import {isCapabilityDiscoveryQuestion,capabilityDirectory,capabilityDirectoryReply,capabilityContextFor,recommendCapabilities} from './capability-directory.mjs';
 import {wantsPublicX,publicXRead} from './public-x.mjs';
 import {browserTool} from './browser.mjs';
 import {researchArticle} from './research.mjs';
@@ -621,7 +621,8 @@ async function execute(request,env,body){
    receipt:{...receipt,tool:'runtime.capabilities',status:'complete',repositoryActionsVerified:false}});
  }
  if(tool==='bubbles.capabilities')return response(request,{
-  ok:true,output:capabilityDirectoryReply(env),capabilities:capabilityDirectory(env),
+  ok:true,output:capabilityDirectoryReply(env,question),capabilities:capabilityDirectory(env),
+  recommendedCapabilities:recommendCapabilities(question,env),
   receipt:{...receipt,status:'complete',tool:'bubbles.capabilities',
    repositoryActionsVerified:false,executionVerified:false}
  });
