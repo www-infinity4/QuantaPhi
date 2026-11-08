@@ -19,6 +19,9 @@ on:
       - 'workers/infinity-brain-clock/owner-task-clock.mjs'
       - 'bubbles-cloud-wallet.js'
       - 'test/bubbles-cloud-wallet-history.test.cjs'
+      - 'test/wallet-four-assets.test.cjs'
+      - 'workers/unified-wallet/work-asset-ledger.mjs'
+      - 'workers/unified-wallet/work-asset-schema.sql'
       - 'wallet-recovery.html'
       - 'test/bubbles-owner-wallet-recovery.test.cjs'
       - 'workers/unified-wallet/wallet-recovery-schema.sql'
@@ -59,6 +62,11 @@ on:
   push:
     branches: [main]
     paths:
+      - 'test/wallet-four-assets.test.cjs'
+      - 'workers/unified-wallet/worker.js'
+      - 'workers/unified-wallet/work-asset-ledger.mjs'
+      - 'workers/unified-wallet/work-asset-schema.sql'
+      - 'bubbles-cloud-wallet.js'
       - 'bubbles-ai.js'
       - 'bubbles-dispatch-catalog.mjs'
       - 'bubbles-work-evidence.mjs'
@@ -120,7 +128,9 @@ jobs:
       - run: node --check bubbles-dispatch-catalog.mjs
       - run: node --test test/bubbles-dispatch-catalog.test.mjs test/bubbles-work-evidence.test.mjs test/bubbles-image-conversation.test.mjs
       - run: node --check bubbles-cloud-wallet.js
-      - run: node --test test/bubbles-cloud-wallet-history.test.cjs test/bubbles-owner-wallet-recovery.test.cjs
+      - run: node --check workers/unified-wallet/work-asset-ledger.mjs
+      - run: node --check workers/unified-wallet/worker.js
+      - run: node --test test/bubbles-cloud-wallet-history.test.cjs test/bubbles-owner-wallet-recovery.test.cjs test/wallet-four-assets.test.cjs
       - run: node --test test/bubbles-unified.test.mjs test/bubbles-iteration-bubbles.test.mjs test/bubbles-bit-session.test.mjs test/bubbles-live-bits.test.mjs test/bubbles-github-receipt-followup.test.mjs test/bubbles-live-job-steps.test.mjs test/bubbles-color-reasoning-receipts.test.mjs test/bubbles-auto-update-and-resume.test.mjs test/bubbles-tool-wiring.test.mjs test/bubbles-chat-turn-recovery.test.cjs test/bubbles-website-work-first.test.mjs
       - name: Verify in-chat cards and repository ticket targets
         run: |
