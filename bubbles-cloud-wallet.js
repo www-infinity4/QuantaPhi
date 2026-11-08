@@ -34,11 +34,20 @@ async function api(url,token){
   return data;
  }finally{clearTimeout(timer)}
 }
-function line(title,value){
+function line(title,value,detail=''){
  const span=document.createElement('span');span.className='bubbles-wallet-asset';
  const label=document.createElement('small');label.textContent=title;
  const count=document.createElement('strong');count.textContent=money(value);
- span.append(label,count);return span;
+ span.append(label,count);
+ if(detail){const meta=document.createElement('small');meta.className='bubbles-wallet-asset-status';meta.textContent=detail;span.append(meta)}
+ return span;
+}
+function workAssetLine(label,item){
+ if(item?.available===true&&Number.isSafeInteger(item.credited)&&item.credited>=0){
+  return line(label,item.credited,(item.pending>0?money(item.pending)+' pending verification · ':'')+
+   'Verified receipt-backed ledger');
+ }
+ return line(label,null,'No verified balance · ledger not connected');
 }
 function item(target,text){
  const li=document.createElement('li');li.textContent=text;target.append(li);
@@ -71,9 +80,87 @@ async function populate(token,star,unified){
   line('Infinity',b.INFINITY),
   line('Music Quants',b.MUSIC_QUANT)
  );
+ const workAssets=unified.workAssets||{};
+ balances.append(workAssetLine('GIT Coin',workAssets.GIT_COIN));
  const bitInfo=unified.bubbleBits;
- if(bitInfo?.available&&Number.isSafeInteger(bitInfo.credited))balances.append(line('Bubble Bits credited',bitInfo.credited));
- else {const unavailable=document.createElement('p');unavailable.textContent='Bubble Bit credit ledger unavailable';balances.append(unavailable);}
+ balances.append(workAssetLine('Bubble Bits',bitInfo));
+ balances.append(workAssetLine('GPT Coin',workAssets.GPT_COIN));
+ const cash=unified.cashWallet||{status:'not_connected'};
+ const cashReady=cash.providerVerified===true&&cash.currency==='USD'&&
+  Number.isSafeInteger(cash.availableCents)&&cash.availableCents>=0;
+ const cashText=cashReady?
+  '
+ history.hidden=false;
+ status('Cloudflare verified · '+name+' · live balances');
+ receipts.replaceChildren();
+ const description=document.createElement('p');
+ description.textContent='Reading the original Infinity transactions and search-token records directly from Cloudflare…';
+ receipts.append(description);
+ let transactions=[],tokens=[],complete=true,legacy=false;
+ try{
+  const result=await Promise.all([paginated('events',token),paginated('tokens',token)]);
+  transactions=result[0].items;tokens=result[1].items;complete=result.every(x=>x.complete);
+ }catch(error){
+  // Production may still be on the earlier Worker version. Display only
+  // authenticated recent records, and clearly identify the truncation.
+  legacy=true;complete=false;
+  transactions=(unified.history||[]).filter(x=>x.asset_code==='INFINITY');
+  tokens=(unified.tokens||[]).filter(x=>x.token_type==='INFINITY_SEARCH');
+ }
+ receipts.replaceChildren();
+ const note=document.createElement('p');
+ note.textContent=legacy?'Showing authenticated recent records only. Full Infinity history needs the updated Cloudflare Worker.':complete?'Complete available Infinity ledger history for this verified account.':'Only part of the Cloudflare history could be loaded; older records remain stored.';
+ receipts.append(note);
+ const header=document.createElement('h3');
+ header.textContent='Infinity transactions ('+transactions.length+(complete?' total':' loaded')+')';
+ receipts.append(header);
+ const events=document.createElement('ol');events.className='bubbles-wallet-receipts';
+ for(const e of transactions){
+  const meta=e.metadata||{};const source=String(meta.source||meta.query||e.reference_id||'').slice(0,130);
+  item(events,accountTime(e.created_at)+' · '+String(e.event_type||'Record')+' '+money(e.amount)+' · balance '+money(e.balance_after)+(source?' · '+source:''));
+ }
+ if(!transactions.length)item(events,'No Infinity transaction records returned for this account.');
+ receipts.append(events);
+ const tokenTitle=document.createElement('h3');tokenTitle.textContent='Infinity search tokens ('+tokens.length+(complete?' total':' loaded')+')';
+ receipts.append(tokenTitle);
+ const tokenList=document.createElement('ol');tokenList.className='bubbles-wallet-receipts';
+ for(const t of tokens){
+  const query=String(t.data?.query||t.data?.search||t.data?.title||'').slice(0,200);
+  item(tokenList,accountTime(t.created_at)+' · '+String(t.source||'Unknown source').slice(0,100)+(query?' · '+query:'')+' · receipt '+String(t.token_id||'').slice(0,28));
+ }
+ if(!tokens.length)item(tokenList,'No Infinity search receipts returned for this account.');
+ receipts.append(tokenList);
+}
+async function load(){
+ if(pending)return;
+ pending=true;refresh.disabled=true;
+ status('Checking your previously verified wallet…');
+ try{
+  const token=await verifiedWalletToken();
+  if(!/^sq_[A-Za-z0-9_-]{32,}$/.test(token||'')){
+   balances.hidden=true;history.hidden=true;receipts.replaceChildren();
+   status('Wallet not connected in this browser or Android app. Your Cloudflare records have not been erased. Use Find Cloud Tokens to restore an existing verified wallet.');
+   return;
+  }
+  const [star,unified]=await Promise.all([api(STAR+'/v1/state',token),api(WALLET+'/v1/wallet/state',token)]);
+  await populate(token,star,unified);
+ }catch(error){
+  balances.hidden=true;history.hidden=true;receipts.replaceChildren();
+  status('Could not verify the current wallet: '+String(error.message||error).slice(0,180)+'. Stored Cloudflare records were not changed.');
+ }finally{pending=false;refresh.disabled=false}
+}
+refresh.addEventListener('click',()=>void load());
+document.addEventListener('starquest:ledger-connected',()=>void load());
+document.addEventListener('starquest:auth-changed',()=>void load());
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')void load()});
+void load();
+})(window);
++(cash.availableCents/100).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}):'—';
+ const cashRow=line('Cash Wallet',null,cashReady?
+  'Settled USD · '+(Number(cash.pendingCents)>0?'pending funds separately held':'provider verified'):
+  'No verified balance · provider not connected');
+ cashRow.querySelector('strong').textContent=cashText;
+ balances.append(cashRow);
  balances.hidden=false;
  history.hidden=false;
  status('Cloudflare verified · '+name+' · live balances');
