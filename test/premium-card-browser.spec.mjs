@@ -164,3 +164,30 @@ test('blocked seller image falls back honestly to the specific lot link',async({
  await expect(sales.getByText(/If the photo cannot load here, view the original seller listing/)).toBeVisible();
  await expect(sales.getByRole('link',{name:/View actual lot photographs at GreatCollections/})).toHaveAttribute('href',lot);
 });
+
+test('all four collector cards visibly render different credited real coin photographs at Android width',async({page})=>{
+ await page.route('https://commons.wikimedia.org/**',route=>route.fulfill({
+  contentType:'image/svg+xml',
+  body:'<svg xmlns="http://www.w3.org/2000/svg" width="480" height="350"><rect width="480" height="350" fill="#ddd"/></svg>'
+ }));
+ await page.route('https://orange-brook-a2ac.marvaseater.workers.dev/search**',route=>route.fulfill({json:{results:[]},headers:{'access-control-allow-origin':'*'}}));
+ const srcs=new Set();
+ for(const id of ['vamworld','pcgs','ngc','heritage']){
+  await page.goto(base+'/?card='+id,{waitUntil:'domcontentloaded'});
+  const card=page.locator('#oracleCardStage [data-source-id="'+id+'"]');
+  await expect(card).toBeVisible({timeout:25000});
+  const figure=card.locator('.premium-coin-reference');
+  await expect(figure).toBeVisible();
+  const img=figure.locator('img.premium-coin-reference-photo');
+  await img.scrollIntoViewIfNeeded();
+  await expect(img).toBeVisible();
+  await expect(img).toHaveJSProperty('naturalWidth',480);
+  const src=await img.getAttribute('src');
+  expect(src).toMatch(/^https:\/\/commons\.wikimedia\.org\/wiki\/Special:FilePath\//);
+  srcs.add(src);
+  await expect(figure).toContainText('Wikimedia Commons · CC0');
+  await expect(figure.getByRole('link',{name:'Image license and credit'})).toHaveAttribute('href',/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/);
+  expect(await card.evaluate(el=>el.getBoundingClientRect().right<=innerWidth)).toBeTruthy();
+ }
+ expect(srcs.size).toBe(4);
+});
