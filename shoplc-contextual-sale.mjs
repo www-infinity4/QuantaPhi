@@ -1,7 +1,10 @@
 /* Shop LC contextual mini-cards. Reuse the existing live-item source only;
  * never infer a confirmed sale, purchase, current price, or merchant sponsorship.
  * Preferences stay on this browser; no wallet, person or private Quant data. */
-const SOURCE='https://starquest-ledger.marvaseater.workers.dev/v1/shoplc/current-item';
+// Only a future, reviewed same-origin adapter backed by an approved merchant feed.
+// This endpoint is intentionally absent until Shop LC media/feed rights are verified.
+// Do not reuse the legacy HTML-scraping /v1/shoplc/current-item endpoint.
+const SOURCE='/api/shoplc/authorized-sale-feed';
 const PREF_KEY='quantaphi:shoplc:hide-ads:v1';
 const REFRESH_MS=300000;
 
@@ -131,7 +134,16 @@ if(typeof document!=='undefined'&&typeof window!=='undefined'){
     const response=await fetch(SOURCE,{cache:'no-store',credentials:'omit',signal:controller.signal});
     if(!response.ok)throw Error('Shop LC item lookup unavailable');
     const data=await response.json();
-    product=normalizeShopLcItem(data,Date.now());
+    // A valid source alone is insufficient; the merchant must authorize
+    // product-feed access AND public promotional media reuse.
+    if(data?.rights?.provider!=='Shop LC'||
+       data?.rights?.productFeedApproved!==true||
+       data?.rights?.productImagesApproved!==true)throw Error('merchant_rights_not_confirmed');
+    const latest=Array.isArray(data.items)?data.items[0]:data.item;
+    const checkedAt=Number(data.checkedAt);
+    if(!Number.isFinite(checkedAt)||checkedAt>Date.now()||
+       Date.now()-checkedAt>15*60000)throw Error('stale_merchant_offer');
+    product=normalizeShopLcItem(latest,checkedAt);
    }catch{product=null}
    finally{clearTimeout(timeout);lastFetch=Date.now();loading=null;render()}
   })();
