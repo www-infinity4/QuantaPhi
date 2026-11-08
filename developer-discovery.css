@@ -1,0 +1,82 @@
+/* Resource discovery sits in the EXISTING picture-first Oracle carousel.
+ * No generic purple dashboard, vertical card grid, raw scraped HTML or code execution. */
+.developer-discovery-controls{max-width:720px;margin:4px auto 10px;min-width:0}
+.developer-discovery-controls *{box-sizing:border-box}
+.devlib-heading{color:#482563;font:750 18px/1.3 system-ui,sans-serif;margin:9px 2px 4px}
+.devlib-intro{color:#65536f;font:400 14px/1.55 system-ui,sans-serif;margin:0 2px 9px}
+.devlib-search{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr) auto;gap:7px;align-items:stretch;margin:0}
+.devlib-search :is(select,input){width:100%;min-width:0;border:1px solid #cfc2d6;border-radius:12px;background:#fff;color:#30243e;font:500 16px/1.3 system-ui,sans-serif;padding:10px 11px;min-height:48px}
+.devlib-search button,.devlib-more{min-height:48px;padding:10px 13px;border:1px solid #cdbbdb;border-radius:12px;background:#f7f2fc;color:#47276d;font:750 14px/1.35 system-ui,sans-serif;cursor:pointer}
+.devlib-search button:disabled,.devlib-more:disabled{opacity:.55}
+.devlib-discovery-actions{display:flex;align-items:center;gap:10px;min-width:0;margin:7px 1px 4px;flex-wrap:wrap}
+.devlib-source-status{color:#6d5e76;font:400 12px/1.5 system-ui,sans-serif;min-width:0;flex:1 1 180px;margin:0}
+.devlib-more[hidden]{display:none!important}
+.devlib-facts{display:flex;gap:6px 12px;flex-wrap:wrap;padding:5px 13px;color:#64576a}
+.devlib-meta{margin:2px 0;font:450 12px/1.4 system-ui,sans-serif}
+.devlib-meta strong{color:#493c51}
+.devlib-source-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;margin:7px 13px 3px;padding:8px 13px;border-radius:12px;border:1px solid #d2c3d9;color:#522d76;text-decoration:none;font:650 14px/1.4 system-ui,sans-serif;background:#fff}
+.devlib-editor{display:grid;gap:11px}
+.devlib-editor[hidden]{display:none!important}
+.devlib-caution{margin:0;padding:10px 11px;border:1px solid #e9dfd7;background:#fffaf3;border-radius:11px;color:#645448;font-size:13px;line-height:1.5}
+.devlib-label{display:grid;gap:7px;font:750 14px/1.4 system-ui,sans-serif;color:#40344c}
+.devlib-label :is(select,textarea){display:block;width:100%;min-height:46px;padding:12px;border:1px solid #bfb1ca;border-radius:11px;background:#fff;color:#30243e;font:400 16px/1.5 system-ui,sans-serif;resize:vertical}
+.devlib-label textarea{min-height:116px}
+.devlib-comparison{margin:0;padding:10px;border:1px solid #d7d0e1;background:#f9f7fc;border-radius:10px;color:#574c64;font-size:13px;line-height:1.5}
+.devlib-editor-actions{display:flex;flex-wrap:wrap;gap:8px}
+.devlib-editor-actions button,.devlib-review{display:inline-flex;align-items:center;justify-content:center;min-height:48px;min-width:0;padding:10px 14px;border:1px solid #cbb9d9;border-radius:12px;background:#f7f0fd;color:#4e2d6d;text-decoration:none;font:750 14px/1.35 system-ui,sans-serif;cursor:pointer}
+.devlib-review{background:#fff;color:#432962;border-color:#c5b1da;margin-top:4px}
+.devlib-review[hidden],.devlib-preview[hidden]{display:none!important}
+.devlib-feedback{min-height:0;margin:0;font-size:13px;color:#634e70;line-height:1.55}
+.devlib-preview{border:1px solid #d9ccdf;border-radius:14px;padding:13px;background:#fcfaff}
+.devlib-preview h4{font-size:15px;color:#4c2b67;margin:0 0 9px}
+.devlib-mock{min-width:0;padding:14px;border-radius:12px;border:1px solid #d8d3dc;background:#fff;color:#362d3d;font:500 15px/1.55 system-ui,sans-serif}
+.devlib-mock p{margin:5px 0 8px}
+.devlib-mock-profile{display:flex;align-items:center;gap:12px;min-width:0}
+.devlib-mock-profile strong{font-size:17px}
+.devlib-avatar{width:62px;height:62px;flex:0 0 62px;border:1px solid #c9b8d5;background:#eee4f7;color:#593680;border-radius:50%;display:grid;place-items:center;font-size:28px}
+.devlib-mock-buttons{display:flex;gap:6px;flex-wrap:wrap}
+.devlib-mock-button{min-height:44px;padding:9px 12px;border:1px solid #ccb9d5;background:#f4edfa;color:#472969;border-radius:11px;font:650 14px/1.25 system-ui,sans-serif}
+.devlib-bubbles{border:1px solid #ded0e6;border-radius:12px;padding:10px;margin-top:3px}
+.devlib-bubbles summary{font:750 15px/1.5 system-ui,sans-serif;color:#53316f;cursor:pointer}
+.devlib-bubbles p{font-size:13px;line-height:1.5;color:#64556b}
+.devlib-bubbles-frame{display:block;width:100%;height:580px;border:1px solid #dfd4e4;border-radius:12px;background:#f8f3fc}
+.developer-discovery-controls :is(input,select,button):focus-visible,.devlib-editor :is(textarea,select,button,a,summary):focus-visible{outline:3px solid #8c5db8;outline-offset:2px}
+@media(max-width:630px){
+ .devlib-search{grid-template-columns:1fr 1fr}
+ .devlib-search .devlib-search-button{grid-column:1/-1}
+ .devlib-search :is(select,input){font-size:16px}
+}
+@media(max-width:355px){
+ .devlib-search{grid-template-columns:1fr}
+ .devlib-search .devlib-search-button{grid-column:auto}
+ .devlib-editor-actions button{width:100%}
+ .devlib-bubbles-frame{height:460px}
+}
+
+
+/* Thousands of metadata cards stay in memory, never thousands of live DOM tiles.
+ * One ordinary Oracle card opens after tapping a result. */
+.devlib-indexed{margin:12px 0 17px;padding:13px;border:1px solid #dfd2e6;border-radius:17px;background:#fffdfa;color:#322640;min-width:0}
+.devlib-index-heading{font:800 17px/1.3 system-ui,sans-serif;color:#482563;margin:0 0 4px}
+.devlib-index-intro{font:450 13px/1.5 system-ui,sans-serif;color:#66566f;margin:0 0 10px}
+.devlib-index-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.devlib-index-form :is(select,input){min-height:48px;min-width:0;width:100%;border:1px solid #cbbdd6;background:#fff;color:#332a3a;padding:9px 10px;border-radius:11px;font:500 16px/1.4 system-ui,sans-serif}
+.devlib-index-form button{grid-column:1/-1;min-height:46px;padding:9px 13px;border-radius:11px;border:1px solid #cab7d8;background:#f5eefc;color:#4d2b6e;font:800 14px/1.3 system-ui,sans-serif;cursor:pointer}
+.devlib-index-count{margin:10px 0 8px;color:#594968;font:650 13px/1.55 system-ui,sans-serif;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+.devlib-index-results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;min-width:0}
+.devlib-index-result{display:grid;align-content:center;gap:4px;min-height:52px;width:100%;min-width:0;text-align:left;padding:10px 12px;background:#fff;border:1px solid #e0d6e8;border-radius:12px;color:#352443;cursor:pointer}
+.devlib-index-result strong{font:750 14px/1.3 system-ui,sans-serif;overflow-wrap:anywhere}
+.devlib-index-result small{font:450 12px/1.4 system-ui,sans-serif;color:#685876;overflow-wrap:anywhere}
+.devlib-index-paging{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:9px}
+.devlib-index-paging button{min-height:46px;padding:9px 10px;border:1px solid #d8c7e1;border-radius:11px;background:#f7f3fc;color:#49316d;font:750 13px/1.35 system-ui,sans-serif;cursor:pointer}
+.devlib-index-paging button:disabled{opacity:.43;cursor:default}
+.devlib-indexed :is(input,select,button):focus-visible{outline:3px solid #8c5db8;outline-offset:2px}
+@media(max-width:520px){
+ .devlib-indexed{padding:11px}
+ .devlib-index-results{grid-template-columns:1fr}
+ .devlib-index-result{min-height:48px}
+}
+@media(max-width:345px){
+ .devlib-index-form{grid-template-columns:1fr}
+ .devlib-index-form button{grid-column:auto}
+}

@@ -3,6 +3,7 @@
  * The creator DOM/iframe is mounted once, so unsent inputs survive card rotation.
  */
 import {BUILDER_CARDS,nextDeveloperCardIndex} from './developer-carousel-core.mjs';
+import {mountDeveloperDiscovery} from './developer-discovery.mjs?v=20261108-index-picker1';
 const root=document.getElementById('developerCarousel');
 if(root){
  const stage=document.getElementById('developerCardStage');
@@ -90,7 +91,18 @@ if(root){
   stage.appendChild(slide);
   return {...info,node,slide,editor,toggle};
  }).filter(Boolean);
- let current=null,index=0;
+ let current=null,index=0,discovery=null;
+ const resourceIds=new Set();
+ const addResources=items=>{
+  let first=-1;
+  for(const resource of items){
+   if(!resource?.id||resourceIds.has(resource.id)||cards.length>=6000)continue;
+   resourceIds.add(resource.id);
+   if(first<0)first=cards.length;
+   cards.push({id:resource.id,label:resource.label,description:resource.description,kind:'resource',resource});
+  }
+  return first;
+ };
  const selectors=cards.map((card,i)=>{
   const button=create('button','developer-card-choice');
   button.type='button';
@@ -105,7 +117,9 @@ if(root){
   if(!cards.length)return;
   const target=cards[nextIndex];
   if(current===target)return;
-  cards.forEach((card,i)=>{card.slide.hidden=i!==nextIndex;});
+  cards.forEach(card=>{if(card.slide)card.slide.hidden=card!==target;});
+  if(target.kind==='resource')discovery?.render(target.resource);
+  else discovery?.hide();
   current=target;index=nextIndex;
   now.textContent=target.label;
   stage.setAttribute('aria-label',target.label+' original builder');
@@ -129,6 +143,9 @@ if(root){
   if(Math.abs(dx)>70&&Math.abs(dx)>Math.abs(dy)*1.5)
    show(nextDeveloperCardIndex(index,dx>0?-1:1,cards.length));
  },{passive:true});
+ // Official source references are genuine cards; GitHub records appear only
+ // after an actual API response. Never synthesize counts or import code.
+ discovery=mountDeveloperDiscovery({root,stage,addResources,showIndex:show});
  const requested=(()=>{try{return new URL(location.href).searchParams.get('card')}catch{return null}})();
  const requestedIndex=cards.findIndex(card=>card.id===requested);
  if(cards.length){
