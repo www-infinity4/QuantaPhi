@@ -23,8 +23,8 @@ export function routeClaudeTurn(selectedModel,text,hasAttachments=false){
 // Optional Claude assistance must never intercept Bubbles' original
 // voice/search/weather/news/GitHub/Quick Card/wallet/owner-work paths.
 // Their authenticated Bubbles tools, not Claude prose, issue real receipts.
-const TOOL_TARGET=/\\b(?:weather|forecast|temperature|news|headlines|search|browse|google|sources?|citations?|github|repos?|repositor(?:y|ies)|readme|commits?|tickets?|robot brain|tools?|skills?|capabilit(?:y|ies)|quick cards?|radio|music|video|wallet|coins?|quants?|balance|payments?|checkout|images?|photos?|screen|microphone|voice|termux|python|claude|gemini|gpt|email|webpages?|url|resonance|inductance|capacitance)\\b/i;
-const TOOL_VERB=/^(?:(?:please|hey|bubbles)[,\\s]+)*(?:open|play|run|check|look up|fetch|inspect|show|list|read|send|share|collect|create|build|fix|repair|deploy|merge|update|delete|install|publish|record|transcribe|calculate|connect|search)\\b/i;
+const TOOL_TARGET=/\b(?:weather|forecast|temperature|news|headlines|search|browse|google|sources?|citations?|github|repos?|repositor(?:y|ies)|readme|commits?|tickets?|robot brain|tools?|skills?|capabilit(?:y|ies)|quick cards?|radio|music|video|wallet|coins?|quants?|balance|payments?|checkout|images?|photos?|screen|microphone|voice|termux|python|claude|gemini|gpt|email|webpages?|url|resonance|inductance|capacitance)\b/i;
+const TOOL_VERB=/^(?:(?:please|hey|bubbles)[,\s]+)*(?:open|play|run|check|look up|fetch|inspect|show|list|read|send|share|collect|create|build|fix|repair|deploy|merge|update|delete|install|publish|record|transcribe|calculate|connect|search)\b/i;
 export function shouldUseClaudeAssistance({selectedModel,ownerVerified,providerPresent,ownerEnabled,
  embedded,hasAttachments,toolWork,request}={}){
  return selectedModel==='bubbles'&&ownerVerified===true&&providerPresent===true&&ownerEnabled===true
