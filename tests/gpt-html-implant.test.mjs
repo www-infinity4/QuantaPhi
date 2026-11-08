@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {normalizePrice,publicWebsite,creatorProfile,validateHtmlImport,isolatedPreviewDocument,publisherDraftUrl} from '../gpt-html-implant-core.mjs';
+import {PI_SINGER_QUICK_CARD,lookupQuickCard,searchQuickCards} from '../quick-card-search-core.mjs';
 const read=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 
 test('free choice and custom StarCoin price are exact whole integer strings',()=>{
@@ -43,4 +44,12 @@ test('GPT-created HTML stays in sandbox; no third-party script or login in privi
  assert.match(html,/Pi Singer example/);
  assert.match(js,/frame\.srcdoc=result\.html/);
  assert.doesNotMatch(js,/\\bfetch\\s*\\(/);
+});
+
+test('Pi Singer is an actual hosted first-party app with artwork and search result',()=>{
+ assert.equal(lookupQuickCard('pi-singer'),PI_SINGER_QUICK_CARD);
+ assert.equal(searchQuickCards('Pi Singer')[0]?.id,'pi-singer');
+ assert.match(read('apps/pi-singer.html'),/<canvas id="screen"/);
+ assert.match(read('apps/pi-singer.html'),/Pi Singer/);
+ assert.match(read('quick-card-search.mjs'),/image.alt=card.name/);
 });
