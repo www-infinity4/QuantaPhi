@@ -8,7 +8,7 @@ const source = path => readFileSync(new URL('../' + path, import.meta.url), 'utf
 test('developer catalog includes each real builder exactly once', () => {
   assert.deepEqual(BUILDER_CARDS.map(c => c.id), [
     'mediaStarCreator', 'quickCardBuilderInline', 'government501Affiliates',
-    'infinityAffiliates', 'phiProjectActions'
+    'infinityAffiliates', 'phiProjectActions', 'gptHtmlImplantInline'
   ]);
   assert.equal(new Set(BUILDER_CARDS.map(c=>c.id)).size, BUILDER_CARDS.length);
   assert.ok(BUILDER_CARDS.every(c => c.label && c.description));
@@ -35,6 +35,8 @@ test('dedicated developer carousel keeps original working widgets and real publi
   assert.doesNotMatch(render, /bank\.appendChild\(current\.node\)/);
   assert.match(render, /new ResizeObserver\(fit\)/);
   assert.match(render, /\/quick-card-builder\.html/);
+  assert.match(render,/\/gpt-html-implant\.html/);
+  assert.match(source('gpt-html-implant.html'),/sandbox="allow-scripts"/);
   assert.match(deck, /DEVELOPER_CARD_IDS/);
   assert.match(css, /min-height:\s*44px/);
 });
