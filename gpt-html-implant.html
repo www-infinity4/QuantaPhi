@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Preview HTML made with GPT, then prepare a reviewed QuantaPhi Quick Card for your creation.">
+<title>GPT HTML Implant · QuantaPhi Developer</title>
+<link rel="stylesheet" href="/published-quick-card.css?v=3">
+<style>
+:root{font-size:18px}body{background:#f5f3f7;color:#291d36}.gpt-studio{max-width:860px;margin:auto;padding:18px 13px 40px}.gpt-pane{border:1px solid #d7cadd;border-radius:20px;background:#fff;padding:17px;margin:15px 0;box-shadow:0 5px 22px #503b5c13}.gpt-pane h1{font-size:clamp(25px,6vw,36px);margin:3px 0}.gpt-pane h2{font-size:clamp(19px,4vw,24px)}.gpt-pane p{line-height:1.55}.gpt-fields{display:grid;gap:11px}.gpt-fields label{display:grid;gap:5px;font-weight:720}.gpt-fields input,.gpt-fields textarea,.gpt-fields select{background:white;color:#291d36;border:1px solid #b8a6c3;border-radius:12px;padding:12px;font:inherit;width:100%;min-width:0}.gpt-fields textarea{min-height:160px;font:15px/1.45 ui-monospace,Consolas,monospace}.gpt-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.gpt-row button,.gpt-row a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;border-radius:12px;padding:10px 16px;border:1px solid #b6a1c5;background:#fff;color:#352241;font:750 16px/1.3 system-ui;text-decoration:none}.gpt-row .gpt-main{background:#3b2750;border-color:#3b2750;color:white}.gpt-row button:disabled{opacity:.5}.gpt-row :is(button,a):focus-visible{outline:3px solid #9d66bb;outline-offset:2px}#gptPreviewFrame{width:100%;min-height:345px;max-height:650px;border:1px solid #cab9d4;border-radius:14px;background:white}#gptPreviewFrame[hidden],#gptPriceLine[hidden]{display:none}.gpt-muted{font-size:14px;color:#605266}.gpt-note{border-left:4px solid #81639b;padding:12px;background:#f6f0fa}#gptStatus{min-height:1.5em;font-weight:650;color:#482b60}@media(max-width:420px){.gpt-pane{padding:12px}.gpt-row>*{flex:1 1 165px}}
+</style>
+</head><body><main class="gpt-studio" id="gptHtmlImplant">
+<section class="gpt-pane"><p class="qcp-eyebrow">INFINITY® · DEVELOPER QUICK CARD</p><h1>GPT HTML Implant</h1><p>Bring a working HTML game, music studio, learning tool or app from GPT into a QuantaPhi Quick Card. Preview locally, supply a hosted HTTPS address and submit the public card for review.</p><p class="gpt-muted">Works with HTML exported from a chat, including original GPT-generated experiments. No automatic access to your private ChatGPT, Canvas or Canva projects.</p></section>
+<section class="gpt-pane gpt-fields"><h2>1 · Bring your HTML here</h2>
+<label>App title<input id="gptTitle" maxlength="85" value="Pi Singer" placeholder="Pioneer Music Studio"></label>
+<label>Choose an HTML file<input id="gptFile" type="file" accept=".html,.htm,text/html"></label>
+<label>Or paste the HTML source<textarea id="gptCode" spellcheck="false" placeholder="<!doctype html> ... your GPT-made app"></textarea></label>
+<div class="gpt-row"><button id="gptPreview" class="gpt-main" type="button">Preview inside card</button><button id="gptDownload" type="button">Download my HTML</button><a href="/apps/pi-singer.html" target="_blank" rel="noopener noreferrer">Try Pi Singer example</a></div>
+<p id="gptStatus" aria-live="polite" role="status">Paste or import your HTML to preview it. Nothing is uploaded here.</p>
+<iframe id="gptPreviewFrame" title="Isolated HTML preview" sandbox="allow-scripts" referrerpolicy="no-referrer" hidden></iframe>
+<p class="gpt-muted">Preview runs in an isolated iframe with no cookies, external network requests, third-party login, or wallet access. Some apps need extra permitted assets or APIs to work when hosted.</p>
+</section>
+<section class="gpt-pane gpt-fields"><h2>2 · Describe your hosted creation</h2>
+<label>Hosted HTTPS app address<input id="gptWebsite" type="url" placeholder="https://your-app.example/my-tool.html" maxlength="900"></label>
+<p class="gpt-muted">Your exported file isn't uploaded by this browser preview. Publish it to a reviewed host first. QuantaPhi cannot safely run arbitrary visitor code under the main account and wallet origin.</p>
+<label>Describe your creation<textarea id="gptDescription" rows="2" maxlength="600" placeholder="An original π melody player with sound modes, tempo and visualization."></textarea></label>
+<label>What should visitors do?<textarea id="gptInteraction" rows="2" maxlength="500" placeholder="Play the app and experiment with its interactive controls."></textarea></label>
+<label>Optional X creator profile<input id="gptXProfile" type="url" placeholder="https://x.com/yourhandle" maxlength="160"></label>
+<label>Charge to use this Quick Card?<select id="gptMonetization"><option value="free">No · free to use</option><option value="paid">Yes · charge StarCoins</option></select></label>
+<label id="gptPriceLine" hidden>Whole StarCoins for each access<input id="gptPrice" type="text" inputmode="numeric" pattern="[1-9][0-9]*" value="1" aria-describedby="gptPriceNote"><small id="gptPriceNote">1 StarCoin suggested. Enter your own positive whole-coin price; no fixed price tiers. Checkout requires a verified wallet and creator payout integration.</small></label>
+<div class="gpt-row"><button id="gptPrepare" class="gpt-main" type="button">Prepare QuantaPhi Quick Card</button></div>
+<p class="gpt-note">Preparing a card is not public approval or deployment. Paid submissions are stored as drafts and cannot charge visitors until a protected app host, a signed wallet receipt and a creator payout are verified. No crypto or Bitcoin is involved.</p></section>
+</main><script type="module" src="/gpt-html-implant.mjs?v=20261107-implant1"></script></body></html>
