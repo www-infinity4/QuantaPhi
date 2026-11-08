@@ -3,328 +3,153 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-08T22:30:56.689031Z",
+  "checked_at": "2026-11-08T23:01:30.505865Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "49ers",
-      "approx_searches": "100000+",
-      "published_at": "2026-11-08T22:10:00Z",
+      "query": "aj barner",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-08T22:40:00Z",
       "related_news_urls": [
-        "https://www.raiders.com/news/how-to-watch-listen-to-and-livestream-raiders-at-49ers",
-        "https://www.foxsports.com/stories/nfl/how-to-watch-raiders-vs-49ers-tv-channel-live-stream-time-nov-8-2026",
-        "https://www.usatoday.com/story/sports/nfl/niners/2026/11/08/49ers-raiders-week-9-live-updates-final-score-highlights--live/92678845007/"
+        "https://www.nfl.com/videos/michael-wilson-sprints-for-23-yard-gain-vs-seahawks",
+        "https://www.espn.com/nfl/recap/_/gameId/401873029",
+        "https://raiderswire.usatoday.com/story/sports/nfl/raiders/2026/11/03/raiders-ballers-busters-studs-duds-week-8-jets/92589036007/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkeya7A40pC4KXe_HXjAcWYEslrZnk4ywBW9fmotkpap3vNqGCbefd8ZitdSo",
-      "image_credit": "Raiders.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGw8h0hBJXBIjFu6cmNfkZzG8616z5P_Sw4aDQJRAShwD2QR-ysM_V6_kucs4",
+      "image_credit": "NFL.com",
       "news": [
         {
-          "url": "https://www.raiders.com/news/how-to-watch-listen-to-and-livestream-raiders-at-49ers",
-          "title": "How to watch, listen to and livestream Raiders at 49ers",
-          "publisher": "Raiders.com",
+          "url": "https://www.nfl.com/videos/michael-wilson-sprints-for-23-yard-gain-vs-seahawks",
+          "title": "Arizona Cardinals wide receiver Michael Wilson sprints for 23-yard gain vs. Seattle Seahawks",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkeya7A40pC4KXe_HXjAcWYEslrZnk4ywBW9fmotkpap3vNqGCbefd8ZitdSo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGw8h0hBJXBIjFu6cmNfkZzG8616z5P_Sw4aDQJRAShwD2QR-ysM_V6_kucs4"
         },
         {
-          "url": "https://www.foxsports.com/stories/nfl/how-to-watch-raiders-vs-49ers-tv-channel-live-stream-time-nov-8-2026",
-          "title": "How to Watch Raiders vs. 49ers: TV Channel, Live Stream, Time",
-          "publisher": "FOX Sports",
+          "url": "https://www.espn.com/nfl/recap/_/gameId/401873029",
+          "title": "Raiders 38-33 Jets (Nov 1, 2026) Game Recap",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyEO-gMCK2YkI9D3KeLzUtLDX3w_CYjTm8bka804LPDJ5ZVFl6E31LVBCy80A"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5rjhuFTf6SNp89hpw1dRcgraF9NswX4nJXkYlMdwdcNCA3-qlYP9kG0R2jRk"
         },
         {
-          "url": "https://www.usatoday.com/story/sports/nfl/niners/2026/11/08/49ers-raiders-week-9-live-updates-final-score-highlights--live/92678845007/",
-          "title": "49ers vs. Raiders live updates: Week 9 game score, highlights",
-          "publisher": "USA Today",
+          "url": "https://raiderswire.usatoday.com/story/sports/nfl/raiders/2026/11/03/raiders-ballers-busters-studs-duds-week-8-jets/92589036007/",
+          "title": "Raiders Ballers & Busters for Week 8 vs Jets",
+          "publisher": "Raiders Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRStJUv3dINwpG8jzZn-icBlHz2AbQDXXf70BgrBVuGrXQIF91iHFL6TNDnTNo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLKjqbcIIzhiCAZb6wwQGCsPC5jrPLtRZYVjzXh629PGsXQO2znZDU7WZWevs"
         }
       ]
     },
     {
-      "query": "tank dell",
+      "query": "bulls",
       "approx_searches": "2000+",
-      "published_at": "2026-11-08T22:10:00Z",
+      "published_at": "2026-11-08T22:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/expect-tank-dell-second-game-223747428.html",
-        "https://www.fantasypros.com/nfl/news/617848/tank-dell-expected-to-see-increase-snaps.php",
-        "https://www.rotoballer.com/player-news/tank-dell-a-midseason-waiver-wire-target-with-increased-volume/1983354"
+        "https://sports.yahoo.com/articles/dailyn-swain-eases-nerves-strong-203207392.html",
+        "https://roundtable.io/sports/nba/bulls/players/bulls-rookie-jaylin-sellers-shines-in-g-league-action",
+        "https://www.si.com/nba/bulls/onsi/6-players-the-bulls-must-monitor-as-g-league-season-gets-underway-6"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT41CcQdXq9As2UhJxz2BZHGgP54NFWMKWsUgOdsrBq_mhzI2KoWKoWNOhZdqM",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-mk2bc-IBaRsXugFwqFt8x26NaAnXWgKosPpwScIcjRRU6K6j4gg6mnDmlbg",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/expect-tank-dell-second-game-223747428.html",
-          "title": "What to Expect From Tank Dell in Second Game Back With Texans",
+          "url": "https://sports.yahoo.com/articles/dailyn-swain-eases-nerves-strong-203207392.html",
+          "title": "Dailyn Swain Eases Nerves in Strong Bulls G League Debut (Houston Mallette Also Impresses)",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT41CcQdXq9As2UhJxz2BZHGgP54NFWMKWsUgOdsrBq_mhzI2KoWKoWNOhZdqM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-mk2bc-IBaRsXugFwqFt8x26NaAnXWgKosPpwScIcjRRU6K6j4gg6mnDmlbg"
         },
         {
-          "url": "https://www.fantasypros.com/nfl/news/617848/tank-dell-expected-to-see-increase-snaps.php",
-          "title": "Tank Dell expected to see increase in snaps",
-          "publisher": "FantasyPros",
+          "url": "https://roundtable.io/sports/nba/bulls/players/bulls-rookie-jaylin-sellers-shines-in-g-league-action",
+          "title": "Bulls Rookie Jaylin Sellers Shines in G League Action",
+          "publisher": "roundtable.io",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTaJrGGSfRvUlbfC2WGj9gVpCbLOigs3HibczXRasCbePYr4AQfoT5eT_cvDw0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJt5v9BvKMX9G6KdjR4ZyGSakqEo96w3N0ASfkfSMM6ZkJQl5jsmx7LC-AK4g"
         },
         {
-          "url": "https://www.rotoballer.com/player-news/tank-dell-a-midseason-waiver-wire-target-with-increased-volume/1983354",
-          "title": "Tank Dell: Must-Add Waiver Wire Pickup for Week 9 Fantasy Football? - NFL News",
-          "publisher": "RotoBaller",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSkJvCoQ-kqQjlosguVEfqXEGxSfKPQVkWcd2vHnzceDOOA9CWnuLEfhGzblZI"
-        }
-      ]
-    },
-    {
-      "query": "evan williams packers",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T22:10:00Z",
-      "related_news_urls": [
-        "https://www.packers.com/news/award-winning-evan-williams-brandon-cisse-elevating-packers-defense-nov-6-2026",
-        "https://cheeseheadtv.com/blog/packers-defensive-investments-finally-paying-off-557",
-        "https://dairylandexpress.com/green-bay-s-young-secondary-is-taking-over-and-the-packers-latest-nfl-awards-prove-it-01m6rv72nmxg"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCQ1Cmk0m62Qag3gmcPYcQiruY1HxAuI9bYFoSaD4AzdrfpC9ABmPQweDDrjY",
-      "image_credit": "Green Bay Packers – packers.com",
-      "news": [
-        {
-          "url": "https://www.packers.com/news/award-winning-evan-williams-brandon-cisse-elevating-packers-defense-nov-6-2026",
-          "title": "Award-winning Evan Williams, Brandon Cisse elevating Packers’ defense",
-          "publisher": "Green Bay Packers – packers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCQ1Cmk0m62Qag3gmcPYcQiruY1HxAuI9bYFoSaD4AzdrfpC9ABmPQweDDrjY"
-        },
-        {
-          "url": "https://cheeseheadtv.com/blog/packers-defensive-investments-finally-paying-off-557",
-          "title": "Packers’ Defensive Investments Finally Paying Off",
-          "publisher": "Cheesehead TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTp0I38Yz3ENR-oI5ONAeGdpoaeVjcwBdg62UweFZ3FCjLl9o0LsxtHR-fXPb0"
-        },
-        {
-          "url": "https://dairylandexpress.com/green-bay-s-young-secondary-is-taking-over-and-the-packers-latest-nfl-awards-prove-it-01m6rv72nmxg",
-          "title": "Green Bay's young secondary is taking over and the Packers' latest NFL awards prove it",
-          "publisher": "Dairyland Express",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMLVSieUcSIepe8q8zKMwYyhllPcBkBahMvhGv8klRHONMCJs-e8XKMX6-m7M"
-        }
-      ]
-    },
-    {
-      "query": "pat sajak",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T22:10:00Z",
-      "related_news_urls": [
-        "https://www.tvinsider.com/1302315/wheel-of-fortune-pat-sajak-daughter-maggie-details-emergency-surgery/",
-        "https://www.imdb.com/de/news/ni66101184/?ref_=nwc_art_perm",
-        "https://www.imdb.com/fr/news/ni66096597/?ref_=nwc_art_perm"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTg0kzYoTMIsh_Epfz-xnB-QqpMHkW1LKfin2YJuFKy-a8Nzc7Wr_bbZC9MdlU",
-      "image_credit": "TV Insider",
-      "news": [
-        {
-          "url": "https://www.tvinsider.com/1302315/wheel-of-fortune-pat-sajak-daughter-maggie-details-emergency-surgery/",
-          "title": "‘Wheel of Fortune’ Icon Pat Sajak’s Daughter Maggie Details His Emergency Surgery",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTg0kzYoTMIsh_Epfz-xnB-QqpMHkW1LKfin2YJuFKy-a8Nzc7Wr_bbZC9MdlU"
-        },
-        {
-          "url": "https://www.imdb.com/de/news/ni66101184/?ref_=nwc_art_perm",
-          "title": "‘Wheel of Fortune’ Icon Pat Sajak’s Daughter Maggie Details His Emergency Surgery",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8pmkfy0WmYemEzBlkDBPjjB11425kahj_gqeBqv1YU6fC-w5ZMAoB0xuu3KA"
-        },
-        {
-          "url": "https://www.imdb.com/fr/news/ni66096597/?ref_=nwc_art_perm",
-          "title": "Pat Sajak Is Unimpressed by Jackson Olson’s Dance Moves on Family Trip",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQospYcCkTQ2ty2Z-etdeYxVIt6kfj27JFtnt5GMsNt1mzbeA__XecctF_zJM"
-        }
-      ]
-    },
-    {
-      "query": "nvda stock",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T22:10:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/why-nvidia-stock-looks-bargain-171000661.html",
-        "https://seekingalpha.com/news/4668735-nvidia-sparks-valuation-debate-after-selloff",
-        "https://www.tikr.com/blog/ben-thompson-nvidia-will-almost-certainly-be-a-short-term-loser-from-the-blue-wave"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaOpz5J1WXooFCTlt1hxrfck4dDhQL4ThsU_K63wyVYbu2P6ctFKJB91_r2Bk",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-nvidia-stock-looks-bargain-171000661.html",
-          "title": "Why Nvidia Stock Looks Like a Bargain Right Now",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaOpz5J1WXooFCTlt1hxrfck4dDhQL4ThsU_K63wyVYbu2P6ctFKJB91_r2Bk"
-        },
-        {
-          "url": "https://seekingalpha.com/news/4668735-nvidia-sparks-valuation-debate-after-selloff",
-          "title": "NVIDIA sparks valuation debate after selloff (NVDA:NASDAQ)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtdvcdncTRNwBBieZzN694Zkf5iCVGyX46Oho9nd6xBkz6I3UQlo9n_4va2PA"
-        },
-        {
-          "url": "https://www.tikr.com/blog/ben-thompson-nvidia-will-almost-certainly-be-a-short-term-loser-from-the-blue-wave",
-          "title": "Ben Thompson: NVIDIA Will “Almost Certainly Be a Short-Term Loser” From the Blue Wave",
-          "publisher": "TIKR.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0kZAPj3kTCITZQaHo-0ssMaI12ZtFFeT__-kSIVUKsQ7BBw-4xFuYtg7YO7g"
-        }
-      ]
-    },
-    {
-      "query": "george kittle",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T22:10:00Z",
-      "related_news_urls": [
-        "https://www.ninersnation.com/san-francisco-49ers-analysis/165311/a-tale-of-the-2-best-tight-ends-in-the-nfl-george-kittle-vs-brock-bowers",
-        "https://www.si.com/nfl/49ers/onsi/49ers-one-major-threat-overcome-against-raiders",
-        "https://twaslnews1.twaslnews.com/7339123/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQX5tmkWal4u-JpgHsSdDhQiNHeOniR2HPjRvhOdutSckU3Qdx7V4VWpnIp8tM",
-      "image_credit": "Niners Nation",
-      "news": [
-        {
-          "url": "https://www.ninersnation.com/san-francisco-49ers-analysis/165311/a-tale-of-the-2-best-tight-ends-in-the-nfl-george-kittle-vs-brock-bowers",
-          "title": "A tale of the 2 best tight ends in the NFL: George Kittle vs. Brock Bowers",
-          "publisher": "Niners Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQX5tmkWal4u-JpgHsSdDhQiNHeOniR2HPjRvhOdutSckU3Qdx7V4VWpnIp8tM"
-        },
-        {
-          "url": "https://www.si.com/nfl/49ers/onsi/49ers-one-major-threat-overcome-against-raiders",
-          "title": "49ers Have Only One Major Threat to Overcome Against the Raiders",
+          "url": "https://www.si.com/nba/bulls/onsi/6-players-the-bulls-must-monitor-as-g-league-season-gets-underway-6",
+          "title": "6 Players the Bulls Must Monitor as G League Season Gets Underway",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRY2J1V9nrl161IkRWOq3xLNnICmZT7iOLGZlPp5JmTznsjCibKorcaOMf8-dY"
-        },
-        {
-          "url": "https://twaslnews1.twaslnews.com/7339123/",
-          "title": "49ers Vs Raiders: Raiders defense has no answer for George Kittle, says Matt Holder",
-          "publisher": "شبكة تواصل الإخبارية",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYtrYQxXnVkLWubh3iBxF6KzdMOQMmGBkFulwSIxB6LxS0irOrU_UTPjFPOg0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTk0zIX7maWsHPvwyzj470XXXvqRm4Wq8yBorP84GAeKDOW1Mk-DxnYMAHf9p0"
         }
       ]
     },
     {
-      "query": "lightning vs jets",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T22:10:00Z",
+      "query": "kayshon boutte",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T22:40:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/news/tampa-bay-lightning-winnipeg-jets-game-preview-november-8-2026",
-        "https://www.nytimes.com/athletic/7764225/2026/11/08/lightning-vs-jets-stream-how-to-watch-nov-8/",
-        "https://www.cbssports.com/nhl/news/jets-look-to-keep-rolling-as-surging-lightning-visit/"
+        "https://www.nfl.com/news/players-of-the-month-october-2026-drake-maye-malik-nabers",
+        "https://www.patriots.com/news/drake-maye-named-afc-offensive-player-of-the-month-for-october",
+        "https://patriotswire.usatoday.com/story/sports/nfl/patriots/2026/11/05/kayshon-boutte-reacts-drake-maye-offensive-player-month/92634763007/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
-      "image_credit": "NHL.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9T1p8pccIfBWGM9fmlBRb71sKBKqCrVpOwsdQmGJVxhFqWBEjcXOMWzXw6j0",
+      "image_credit": "NFL.com",
       "news": [
         {
-          "url": "https://www.nhl.com/news/tampa-bay-lightning-winnipeg-jets-game-preview-november-8-2026",
-          "title": "Lightning at Jets projected lineups",
-          "publisher": "NHL.com",
+          "url": "https://www.nfl.com/news/players-of-the-month-october-2026-drake-maye-malik-nabers",
+          "title": "Patriots QB Drake Maye, Giants WR Malik Nabers highlight October Players of the Month",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9T1p8pccIfBWGM9fmlBRb71sKBKqCrVpOwsdQmGJVxhFqWBEjcXOMWzXw6j0"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7764225/2026/11/08/lightning-vs-jets-stream-how-to-watch-nov-8/",
-          "title": "How to watch Lightning vs. Jets: TV channel and streaming options for November 8",
-          "publisher": "The New York Times",
+          "url": "https://www.patriots.com/news/drake-maye-named-afc-offensive-player-of-the-month-for-october",
+          "title": "Drake Maye Named AFC Offensive Player of the Month for October",
+          "publisher": "New England Patriots",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYS3ZkeSl-m24iGZfu5XcCV8c2YJhbfrmuftB0pl8I3ymykqQ_XjxstHa0Qv4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX5_cBZ8qafR5iJTAxuCzPuKtuBYjsKvCr1DlasEM3QW3RguiA18qka9LIFmI"
         },
         {
-          "url": "https://www.cbssports.com/nhl/news/jets-look-to-keep-rolling-as-surging-lightning-visit/",
-          "title": "Jets look to keep rolling as surging Lightning visit",
-          "publisher": "CBS Sports",
+          "url": "https://patriotswire.usatoday.com/story/sports/nfl/patriots/2026/11/05/kayshon-boutte-reacts-drake-maye-offensive-player-month/92634763007/",
+          "title": "Kayshon Boutte reacts to Drake Maye winning Offensive Player of Month",
+          "publisher": "Patriots Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1Q5fuVTuab2tLGijeWTkG4QvHvbfGsjTHi1V4AOJCHO1YhEC-t0htzHSNQHg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQth3xR8DvcCwszk9PWR9ZVePT1OCkqGJ6n5ybHKmYtiv4KKEni0G3FiDstu_0"
         }
       ]
     },
     {
-      "query": "jessica pegula",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T22:10:00Z",
+      "query": "puka nacua injury",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-08T22:30:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/athletic/7757273/2026/11/06/tennis-pegula-andreeva-wta-finals-trash-talk-sports/",
-        "https://www.espn.com/tennis/story/_/id/50401575/pegula-hot-mic-comments-andreeva-unfortunate-situation",
-        "https://www.bbc.com/sport/tennis/articles/ckpdgg87ye3po"
+        "https://www.espn.com/nfl/story/_/id/50425853/sources-rams-puka-nacua-undergo-tests-knee",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/puka-nacua-suffered-knee-injury-on-final-offensive-play-of-game",
+        "https://bleacherreport.com/articles/25530827-puka-nacua-injured-final-play-rams-vs-commanders-latest-updates-wr"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFJmnWcL-3s7dvap5fTsDNZ8x1dwAmmyrxG361VLgCBi-JfiYvvom8Fqk6ZdI",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ45oXfQ5_MnURrUdA_tRaiNXpYk_q-4iv-ANWmrr9VwG1HOnIVnXqyOYCAZ6g",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.nytimes.com/athletic/7757273/2026/11/06/tennis-pegula-andreeva-wta-finals-trash-talk-sports/",
-          "title": "The Jessica Pegula hot mic moment should never have happened. Tennis still needs more of it - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFJmnWcL-3s7dvap5fTsDNZ8x1dwAmmyrxG361VLgCBi-JfiYvvom8Fqk6ZdI"
-        },
-        {
-          "url": "https://www.espn.com/tennis/story/_/id/50401575/pegula-hot-mic-comments-andreeva-unfortunate-situation",
-          "title": "Jessica Pegula: Hot mic comments about Mirra Andreeva an 'unfortunate situation'",
+          "url": "https://www.espn.com/nfl/story/_/id/50425853/sources-rams-puka-nacua-undergo-tests-knee",
+          "title": "Sources: Puka Nacua set for tests on late-game knee injury; Rams believe ACL OK",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwWYh_oJXBGZfdD2a75rikwV7IajYeWMl-OHf2z7F3-5hh0Zrzu405ugMEfwc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ45oXfQ5_MnURrUdA_tRaiNXpYk_q-4iv-ANWmrr9VwG1HOnIVnXqyOYCAZ6g"
         },
         {
-          "url": "https://www.bbc.com/sport/tennis/articles/ckpdgg87ye3po",
-          "title": "WTA chair apologises to Pegula for airing of 'diva' comment",
-          "publisher": "BBC",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/puka-nacua-suffered-knee-injury-on-final-offensive-play-of-game",
+          "title": "Puka Nacua suffered knee injury on final offensive play of game",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQPdZIFvKeE2J8tHmQzYpcA4CLCPeeqLcJE6ZdLVUG3t6Ww4WdppZWE05Vfu0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpNc_8o4VvLz_Um_rKd_se1MwJ8jJ1dJcnRHoD3K7Yne9sOiVKFDwT6r5KKlg"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25530827-puka-nacua-injured-final-play-rams-vs-commanders-latest-updates-wr",
+          "title": "Puka Nacua Injured on Final Play for Rams vs. Commanders, Latest Updates on WR",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJJsCgcLYvzr6KCWx3iUyXhk9ZazW4799ZbPt4jIQLn7PGRTYHkHZSsk1ea_I"
         }
       ]
     },
     {
-      "query": "bryan cranston",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T22:10:00Z",
-      "related_news_urls": [
-        "https://www.businessinsider.com/day-in-the-life-bryan-cranston-breaking-bad-dos-hombres-2026-11",
-        "https://www.morningbrew.com/games/brew-mini/in-the-know",
-        "https://www.bloomberg.com/news/articles/2026-11-05/t-mobile-customers-swap-roaming-hotspots-for-streaming-benefits"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfqXKoIBFL6GHcNBAo18ons9zOOFRIml8QC7Bu2OJL8mrmKZLbzsKfdtbCD3E",
-      "image_credit": "Business Insider",
-      "news": [
-        {
-          "url": "https://www.businessinsider.com/day-in-the-life-bryan-cranston-breaking-bad-dos-hombres-2026-11",
-          "title": "I'm Bryan Cranston, actor and Dos Hombres mezcal cofounder. Here's my daily routine and what it'd take for me to rewatch 'Breaking Bad.'",
-          "publisher": "Business Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfqXKoIBFL6GHcNBAo18ons9zOOFRIml8QC7Bu2OJL8mrmKZLbzsKfdtbCD3E"
-        },
-        {
-          "url": "https://www.morningbrew.com/games/brew-mini/in-the-know",
-          "title": "Thu, Nov 5th, 2026 — Solve this Brew Mini: In the know",
-          "publisher": "Morning Brew",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRoExgv3K2M6UfsAWodUQqN5EonN_RBJslnTCtah8s1vd1VY9T7c6LosF834U"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-05/t-mobile-customers-swap-roaming-hotspots-for-streaming-benefits",
-          "title": "T-Mobile Customers Swap Roaming, Hotspots For Streaming Benefits",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4TTB6AsiR-fyjm0qDvG-Kpt0r4vXSr_1T_tTGQCFwcw3tnUPjtQvZfOcnztw"
-        }
-      ]
-    },
-    {
-      "query": "south carolina women's basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T22:10:00Z",
+      "query": "south carolina vs unc",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-08T22:30:00Z",
       "related_news_urls": [
         "https://gamecocksonline.com/news/2026/11/07/top-15-border-battle-sunday-in-charlotte/",
         "https://www.thestate.com/sports/college/university-of-south-carolina/usc-womens-basketball/article317958215.html",
@@ -353,6 +178,181 @@
           "publisher": "Axios",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQBkIV8xWxgo_7dxkw3vTgZbVVRBcUL7vXU7ncFXwQs3-De1yBdioF_6BIwFk"
+        }
+      ]
+    },
+    {
+      "query": "mike mcdaniel",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T22:30:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-sports/chargers-coach-mike-mcdaniel-makes-major-change-spark-offense-amid-dreadful-start-season",
+        "https://www.nytimes.com/athletic/7757089/2026/11/05/mike-mcdaniel-chargers-offense-play-calling/",
+        "https://www.si.com/nfl/chargers/onsi/chargers-mike-mcdaniel-finally-make-change-houston-texans"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyGCt9fhPwNs3k85EEvDK1B5fs0TkS-eZ1ryYtqoK9Bg7nfLfG-hLrcrgvYNk",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/outkick-sports/chargers-coach-mike-mcdaniel-makes-major-change-spark-offense-amid-dreadful-start-season",
+          "title": "Chargers coach Mike McDaniel makes major change to try and spark offense amid dreadful start to season",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyGCt9fhPwNs3k85EEvDK1B5fs0TkS-eZ1ryYtqoK9Bg7nfLfG-hLrcrgvYNk"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7757089/2026/11/05/mike-mcdaniel-chargers-offense-play-calling/",
+          "title": "Mike McDaniel to give moving upstairs a shot amid Chargers’ offensive woes - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdFHFM-oDB7-uZIla8sDLSOz_1bzJDeRXwDtGJ4SJhi0ODAEWlegati-HCBfs"
+        },
+        {
+          "url": "https://www.si.com/nfl/chargers/onsi/chargers-mike-mcdaniel-finally-make-change-houston-texans",
+          "title": "Chargers and Mike McDaniel Finally Make a Change Against the Houston Texans",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQF08AJhp_AhXeTEHlue0EkuS7Jzv4jYRwo5uPcjHS3Y740GSuf98XFi-UUEkk"
+        }
+      ]
+    },
+    {
+      "query": "josh giddey",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T22:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/tiago-splitter-reveals-nic-claxton-204241383.html",
+        "https://www.nba.com/bulls/videos/nic-claxton-gets-his-first-bulls-bucket-of-the-season",
+        "https://www.hoopsrumors.com/2026/11/bulls-notes-claxton-smith-buzelis-powell-trade-season.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu1c9sdl6q_w7tNrF4YtcuLHEY0FnQnOxCxuhLEHC6N9tkWfg4SzrwHs7nD2I",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/tiago-splitter-reveals-nic-claxton-204241383.html",
+          "title": "Tiago Splitter reveals Nic Claxton plan for Bulls debut vs. 76ers",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu1c9sdl6q_w7tNrF4YtcuLHEY0FnQnOxCxuhLEHC6N9tkWfg4SzrwHs7nD2I"
+        },
+        {
+          "url": "https://www.nba.com/bulls/videos/nic-claxton-gets-his-first-bulls-bucket-of-the-season",
+          "title": "Nic Claxton gets his first Bulls bucket of the season",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9tDskaGdPEwuEg5C2_bSZ-2PqQ-KDMGLolFGgxApdo1GAmrhRaruVTOjhBPE"
+        },
+        {
+          "url": "https://www.hoopsrumors.com/2026/11/bulls-notes-claxton-smith-buzelis-powell-trade-season.html",
+          "title": "Bulls Notes: Claxton, Smith, Buzelis, Powell, Trade Season",
+          "publisher": "Hoops Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR01Hv4V6VqoU1x7fTauwdPO5kzSYQf7hnUXbPIOKi-Px5dn7nqorjrxNYKHgY"
+        }
+      ]
+    },
+    {
+      "query": "tolima - millonarios",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T22:30:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17488920/tolima-vs-millonarios-fecha-18-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
+        "https://elolfato.com/ibague/mas-de-2000-hinchas-de-millonarios-llegaran-a-ibague",
+        "https://www.futbolred.com/apuestas/pronosticos-tolima-vs-millonarios-liga-betplay-08-11-2026-275015"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxKIE28SoBHF11drCkfPKQbGDcyNJTLTQDgIGnDi6urz_7Cl_JnQcMW-j2pRM",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17488920/tolima-vs-millonarios-fecha-18-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
+          "title": "Cuándo juegan Tolima vs. Millonarios por Liga BetPlay: equipo, fecha, hora y TV en vivo",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxKIE28SoBHF11drCkfPKQbGDcyNJTLTQDgIGnDi6urz_7Cl_JnQcMW-j2pRM"
+        },
+        {
+          "url": "https://elolfato.com/ibague/mas-de-2000-hinchas-de-millonarios-llegaran-a-ibague",
+          "title": "Más de 2000 hinchas de Millonarios llegarán a Ibagué",
+          "publisher": "El Olfato",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkKvNXRmz7a6NsbIqZhH5idIw7cUAHZG62h4Oe8BAkhtpsWdIdAL-2_Pwdw4c"
+        },
+        {
+          "url": "https://www.futbolred.com/apuestas/pronosticos-tolima-vs-millonarios-liga-betplay-08-11-2026-275015",
+          "title": "Tolima vs. Millonarios: dos rachas chocan en Ibagué y el empate paga 3,20",
+          "publisher": "Futbolred",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuFY30F91NFCU7RIPTyoo96IGJEiWm7f5PSv4-uVdHNYdtVXRjkehK3BTAfI8"
+        }
+      ]
+    },
+    {
+      "query": "khadarel hodge",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T22:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/demarcus-robinson-injury-update-raiders/1977755/",
+        "https://ninerswire.usatoday.com/story/sports/nfl/niners/2026/11/07/49ers-injury-update-christian-kirk-ir-demarcus-robinson/92665298007/",
+        "https://sports.yahoo.com/articles/san-francisco-49ers-welcoming-back-010434869.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYK4UFxIYvXyDqWfTQTzNoT3jDno9xjIBPVu9gba1Gx4OnCUsQnUAvZQJ8Km4",
+      "image_credit": "NBC Sports Bay Area & California",
+      "news": [
+        {
+          "url": "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/demarcus-robinson-injury-update-raiders/1977755/",
+          "title": "49ers activate wide receiver Demarcus Robinson off IR after five-game absence",
+          "publisher": "NBC Sports Bay Area & California",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYK4UFxIYvXyDqWfTQTzNoT3jDno9xjIBPVu9gba1Gx4OnCUsQnUAvZQJ8Km4"
+        },
+        {
+          "url": "https://ninerswire.usatoday.com/story/sports/nfl/niners/2026/11/07/49ers-injury-update-christian-kirk-ir-demarcus-robinson/92665298007/",
+          "title": "49ers officially activate one WR, place another on IR before Week 9",
+          "publisher": "Niners Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjpJT-LdEx8aDJr4jM3f0a4l5WqzXFwpitIExKSaPqkLihzE0MB2maVLXzThA"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/san-francisco-49ers-welcoming-back-010434869.html",
+          "title": "San Francisco 49ers Welcoming Back 11-Year Veteran WR for Raiders Game",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSu4Rjy19YBZyeFYxHB_XPRQ51FNoZysaqi6I5y8veirmEib_d_xvZ0ufwb74s"
+        }
+      ]
+    },
+    {
+      "query": "demario douglas",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T22:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-hayden-winks-wr-blueprint-for-week-9-201635405.html",
+        "https://www.nfl.com/news/nfl-fantasy-2026-start-em-sit-em-wide-receivers-for-week-9",
+        "https://www.fanduel.com/research/nfl-sleepers-today-fantasy-football-breakouts-week-9"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrtVMSOkPPWkE991nm7t2bb9dSaPZl9x3QCeZSEs8MCO5o0NgMuUmbx-Pr8is",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-hayden-winks-wr-blueprint-for-week-9-201635405.html",
+          "title": "Fantasy Football Rankings: Hayden Winks' WR Blueprint for Week 9",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrtVMSOkPPWkE991nm7t2bb9dSaPZl9x3QCeZSEs8MCO5o0NgMuUmbx-Pr8is"
+        },
+        {
+          "url": "https://www.nfl.com/news/nfl-fantasy-2026-start-em-sit-em-wide-receivers-for-week-9",
+          "title": "NFL Fantasy 2026 Start 'Em, Sit 'Em: Wide receivers for Week 9",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEXcAdHFFdbEw3f5LAW9SRYtf9g6dDdXVD9nuWDBAfOhKZ0BlsrfqhP2WYa9g"
+        },
+        {
+          "url": "https://www.fanduel.com/research/nfl-sleepers-today-fantasy-football-breakouts-week-9",
+          "title": "NFL Sleepers Today: 3 Fantasy Football Breakout Players for Week 9",
+          "publisher": "FanDuel",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQW_GFSmN3U2I4_aLgWlRm9-hmHmTIbQLrM6U7KyAnsO53YXrsVGmq6StS4rZk"
         }
       ]
     }
