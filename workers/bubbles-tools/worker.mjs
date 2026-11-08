@@ -914,7 +914,7 @@ export default {async fetch(request,env){
   // blocked, failed, partial or input-required tool call into a success story.
   if(data.receipt&&data.receipt.status!=='complete')return result;
   if(data.receipt?.tool==='public_x.read')return result;
-  if(data.model||data.receipt?.tool==='runtime.capabilities'||data.receipt?.tool==='agent.read_sequence'||data.receipt?.tool==='github.create_repository'||data.receipt?.tool==='github.read_repository'||data.receipt?.tool==='mcp.catalog'||data.receipt?.tool==='alias.safety_explanation'||data.receipt?.tool?.startsWith('resonance.')||data.receipt?.tool==='organic.memory_benchmark'||data.receipt?.tool==='weather.current'||(data.receipt?.tool==='web.search'&&(!data.sources?.length||!env.AI)))return result;
+  if(data.model||data.receipt?.tool==='bubbles.capabilities'||data.receipt?.tool==='runtime.capabilities'||data.receipt?.tool==='agent.read_sequence'||data.receipt?.tool==='github.create_repository'||data.receipt?.tool==='github.read_repository'||data.receipt?.tool==='mcp.catalog'||data.receipt?.tool==='alias.safety_explanation'||data.receipt?.tool?.startsWith('resonance.')||data.receipt?.tool==='organic.memory_benchmark'||data.receipt?.tool==='weather.current'||(data.receipt?.tool==='web.search'&&(!data.sources?.length||!env.AI)))return result;
   const summarize=()=>gptReply(request,env,clean(body.input,32000)||clean(body.request),data.receipt,data,clean(body.request));
   // Dated news already has a complete source-backed answer. Preserve it if
   // the optional language-model pass fails or takes too long.
