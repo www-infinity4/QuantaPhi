@@ -14,9 +14,10 @@ lease_id: null
 lease_expires_at: null
 task_session_id: null
 fence: null
+last_observed_at_utc: "2026-11-08T10:14:31Z"
 repo: www-infinity4/QuantaPhi
 branch: copilot/continuity-builder-action-packets
-head_sha: 495a58991cbe13888b6789544c0402fe7f3e3d4d
+head_sha: d0206ff5605ece2d58e1288d42c30446f386eb8b
 pr: https://github.com/www-infinity4/QuantaPhi/pull/1858
 tests:
   - "node --check continuity/packet-runner-adapter.mjs"
