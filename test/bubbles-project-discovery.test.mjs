@@ -215,7 +215,7 @@ test('browser carries plural repair context to real owner source discovery and G
  assert.match(ui,/await suggestRepositoryTargets\(request,false\)/);
  const index=readFileSync(new URL('../index.html',import.meta.url),'utf8');
  const bubbles=readFileSync(new URL('../bubbles.html',import.meta.url),'utf8');
- for(const page of [index,bubbles])assert.match(page,/bubbles-ai\.js\?v=20261107-branch-status4/);
+ for(const page of [index,bubbles])assert.match(page,/bubbles-ai\.js\?v=20261107-verified-branch5/);
 });
 
 
