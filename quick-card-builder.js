@@ -1,6 +1,9 @@
 import {shareQuickCard} from '/quick-card-share.js?v=3';
 import {openQuickCardPreview} from '/quick-card-preview.mjs';
 const form=document.getElementById('quickCardCreate'),result=document.getElementById('qcpResult'),kind=document.getElementById('qcpKind');
+const paidChoice=document.getElementById('qcpMonetization'),paidLine=document.getElementById('qcpPaidPrice');
+const showPricing=()=>{paidLine.hidden=paidChoice.value!=='paid';};
+paidChoice.addEventListener('change',showPricing);showPricing();
 const show=()=>{document.getElementById('qcpSearchLine').hidden=kind.value!=='search';document.getElementById('qcpVideoLine').hidden=kind.value!=='video';};
 kind.addEventListener('change',show);show();
 // Help creators configure official search interactions without inventing arbitrary APIs.
@@ -12,8 +15,10 @@ try {
  if(site?.protocol==='https:'&&!site.username&&!site.password&&!site.port&&/^[a-z0-9.-]+$/i.test(site.hostname)){
   websiteInput.value=site.href;
   if(text)form.elements.namedItem('title').value=text.slice(0,85);
-  form.elements.namedItem('description').value='Explore the original '+(text||site.hostname)+' website, using its authorized actions and source links.';
-  form.elements.namedItem('interactionRequest').value='Use real provider URLs, preserve original sign-in, and show working controls with a reliable official-site fallback.';
+  form.elements.namedItem('description').value=(from.get('description')||'Explore the original '+(text||site.hostname)+' website, using its authorized actions and source links.').slice(0,600);
+  form.elements.namedItem('interactionRequest').value=(from.get('interactionRequest')||'Use real provider URLs, preserve original sign-in, and show working controls with a reliable official-site fallback.').slice(0,500);
+  if(from.get('monetization')==='paid'){paidChoice.value='paid';const price=from.get('priceStarCoins');if(price&&/^[1-9][0-9]*$/.test(price)&&price.length<=78)form.elements.namedItem('priceStarCoins').value=price;showPricing();}
+  const social=from.get('creatorProfile');if(social&&/^https:\/\/x\.com\/[A-Za-z0-9_]{1,15}$/.test(social))form.elements.namedItem('creatorProfile').value=social;
  }
 }catch{/* Ignore malformed navigation parameters. */}
 function suggestSearch(){
@@ -46,11 +51,21 @@ const button=document.getElementById('qcpPublish');
 form.addEventListener('submit',async event=>{
  event.preventDefault();button.disabled=true;result.replaceChildren();button.textContent='Publishing…';
  const body=Object.fromEntries(new FormData(form).entries());
+ body.monetization=paidChoice.value;
+ if(body.monetization==='free')body.priceStarCoins='0';
  try{
+  if(body.monetization==='paid'){
+   if(!/^[1-9][0-9]*$/.test(body.priceStarCoins)||body.priceStarCoins.length>78)throw new Error('Enter a positive whole-StarCoin price.');
+   const health=await fetch('/api/quick-cards/health',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null);
+   if(health?.pricingDraftVersion!==1)throw new Error('The paid-card draft publisher is not active yet. Nothing was submitted or charged.');
+  }
   const response=await fetch('/api/quick-cards',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
   const value=await response.json();
   if(!response.ok||!value.ok)throw new Error(value.error||'Publishing was not confirmed.');
-  const message=document.createElement('p');message.textContent='Card published. Your link is ready to share. Placement in the homepage rotation requires review.';
+  if(body.monetization==='paid'&&value.pricingMode!=='paid')throw new Error('Server did not confirm paid pricing. Check this card before sharing.');
+  const message=document.createElement('p');message.textContent=body.monetization==='paid'
+   ?'Paid card draft saved as a locked preview. No StarCoins will be charged until protected hosting and verified creator payouts are connected.'
+   :'Card published. Your link is ready to share. Placement in the homepage rotation requires review.';
   const field=document.createElement('input');field.type='url';field.readOnly=true;field.value=value.cardUrl;field.setAttribute('aria-label','Your shareable card URL');
   const row=document.createElement('div');row.className='qcp-share';
   const link=document.createElement('a');link.href=value.cardUrl;link.textContent='Open your card';link.target='_blank';link.rel='noopener';
