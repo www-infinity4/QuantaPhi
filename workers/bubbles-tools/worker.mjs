@@ -120,7 +120,7 @@ export function chooseTool(text){
 // owner access. Explicit repository names and registered card targets win.
 export function contextualReadPlan(text,origin,selectedRepository=''){
  const q=String(text||'').trim();
- if(isSourceDraftRequest(q)||isSourceReviewRequest(q)||['github.create_repository','web.read_page'].includes(chooseTool(q))||/^(?:do not|don't|never|pretend|quote|example only)\b/i.test(q))return null;
+ if(isCapabilityDiscoveryQuestion(q)||isSourceDraftRequest(q)||isSourceReviewRequest(q)||['github.create_repository','web.read_page'].includes(chooseTool(q))||/^(?:do not|don't|never|pretend|quote|example only)\b/i.test(q))return null;
  const read=/\b(?:read|inspect|check|scan|review|look at|fetch|list|show)\b/i.test(q);
  const traffic=/\b(?:traffic|visitors?|page\s*views?)\b/i.test(q)&&/\b(?:not updating|stale|stuck|broken|wrong|stored|storage|refresh|count|counter|fix|check|inspect|read)\b/i.test(q);
  if(!read&&!traffic)return null;
