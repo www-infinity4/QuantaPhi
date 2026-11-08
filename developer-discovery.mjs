@@ -7,6 +7,7 @@ import {
  DEVELOPMENT_TOPICS,OFFICIAL_DEVELOPER_SOURCES,buildGithubSearchURL,
  summarizeGithubPage,validateIndexedResource,classifyProposal,buildReviewIssueURL,existingCapabilityFor
 } from './developer-discovery-core.mjs';
+import {mountIndexedDeveloperPicker} from './developer-indexed-picker.mjs';
 
 const el=(tag,cls,text)=>{
  const n=document.createElement(tag);if(cls)n.className=cls;
@@ -24,7 +25,8 @@ export function mountDeveloperDiscovery({root,stage,addResources,showIndex}){
  const panel=document.getElementById('developerDiscoveryControls');
  if(!root||!stage||!panel)return {render(){},hide(){}};
  const heading=panel.appendChild(el('h3','devlib-heading','Explore developer building blocks'));
- panel.appendChild(el('p','devlib-intro','Real GitHub repositories, Google developer resources and original QuantaPhi creators. Thousands can be found by searching topics and pages; only fetched results become cards.'));
+ panel.appendChild(el('p','devlib-intro','Original site builders, official developer references, and thousands of real GitHub source cards. Search your indexed library first, then explore additional GitHub projects.'));
+ const indexed=mountIndexedDeveloperPicker(panel,{stage,showIndex});
  const form=panel.appendChild(el('form','devlib-search'));
  form.setAttribute('aria-label','Find original developer resources');
  const category=form.appendChild(el('select','devlib-category'));
@@ -179,7 +181,8 @@ export function mountDeveloperDiscovery({root,stage,addResources,showIndex}){
  function hide(){saveDraft();slide.hidden=true;}
  const initial=[WORKSHOP,...OFFICIAL_DEVELOPER_SOURCES];
  initial.forEach(x=>seen.add(x.id));
- addResources(initial);
+ const initialIndex=addResources(initial);
+ indexed.addResources(initial,initialIndex);
  // An approved GitHub data-only PR can publish thousands of *source records*.
  // The snapshot is not code and never means those repositories can be executed.
  void fetch('/data/developer-source-catalog.json',{cache:'no-store'}).then(async response=>{
@@ -189,7 +192,8 @@ export function mountDeveloperDiscovery({root,stage,addResources,showIndex}){
   const good=snapshot.items.map(validateIndexedResource).filter(Boolean)
    .filter(x=>!seen.has(x.id)).slice(0,5000);
   good.forEach(x=>seen.add(x.id));
-  addResources(good);
+  const firstIndex=addResources(good);
+  indexed.addResources(good,firstIndex);
   if(page===0&&!busy&&good.length)
    sourceStatus.textContent='Indexed '+good.length.toLocaleString()+' genuine GitHub source cards for review. Browse with the arrows or search more. No third-party code is running.';
  }).catch(()=>{/* Only the real official cards appear if no reviewed snapshot exists. */});
@@ -216,6 +220,7 @@ export function mountDeveloperDiscovery({root,stage,addResources,showIndex}){
    const fresh=data.items.filter(x=>!seen.has(x.id));
    fresh.forEach(x=>seen.add(x.id));
    const firstIndex=addResources(fresh);
+   indexed.addResources(fresh,firstIndex);
    page=nextPage;
    const maximum=Math.min(1000,data.reportedMatches);
    sourceStatus.textContent='Loaded '+fresh.length+' new original repositories (page '+page+'). GitHub reports '+data.reportedMatches.toLocaleString()+' matching results; at most 1,000 can be viewed per search'+(data.incomplete?' (search may be incomplete)':'')+'.';
