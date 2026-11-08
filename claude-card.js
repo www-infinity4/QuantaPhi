@@ -122,7 +122,7 @@ async function ask(text,{mode='chat',evidence,inline=false}={}){
   if(data.partial&&!inline)bubble('claude','Claude stopped before finishing. Saved proposals and ticket receipts remain available; no code was applied.');
   showPatches(data);
  }catch(e){if(wait)wait.textContent=describeError(e?.message||e)+' Check existing Brain tickets before retrying any repair.';
-  if(inline)return {ok:false,error:String(e?.message||e).slice(0,80)};}
+  if(inline)data={ok:false,error:String(e?.message||e).slice(0,80)};}
  busy=false;if(ui&&!inline)ui.send.disabled=false;
  return data;
 }
