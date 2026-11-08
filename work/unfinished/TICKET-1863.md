@@ -21,6 +21,7 @@ blocker: "PR exact-head CI and public/Android site acceptance still required."
 next_action: "Run exact-head CI, merge if green and safe; verify actual card in QuantaPhi feed."
 ---
 # Sources and acceptance
+- Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1863
 - User requested a PCLA/PicoCELA technology/stock Quick Card with Infinity visual treatment. Prototype graphic was generated in ChatGPT; the site feature uses an original inline schematic, **not** a claim the exact prototype was uploaded.
 - Source: https://picocela.com/en/ (multi-hop mesh, PBE, PicoManager).
 - Market source: https://finance.yahoo.com/quote/PCLA/history/ — 2026-11-06 $6.10 historical closing price, NOT live.
