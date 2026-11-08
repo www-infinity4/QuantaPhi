@@ -121,3 +121,79 @@ test('card patch script really patches a scratch repo once and refuses a second 
  assert.equal(fs.readFileSync(path.join(dir,'src/app.js'),'utf8'),'x\nconst msg = "it\'s \\"new\\"";\nlet n = 2;\ny\n');
  assert.throws(run,/./);
 });
+
+test('Steward refuses to attach patches from another repository to a ticket',async()=>{
+ const brain=[],seen=[];
+ const other='www-infinity4/Moltnook';
+ const result=await steward({mode:'fix',messages:[{role:'user',text:'fix'}]},makeEnv(brain),AUTH,
+  scripted([{stop_reason:'tool_use',content:[
+   use('p','propose_patch',{repository:R,path:'a.js',old_str:'function route(x){return x==="fix"?1:2;}',new_str:'function route(x){return x==="fix"?2:1;}',why:'fix'}),
+   use('t','file_fix_ticket',{repository:other,title:'wrong target',request:'wrong repo'})]},
+   {stop_reason:'end_turn',content:[{type:'text',text:'done'}]}],seen));
+ assert.equal(result.tickets.length,0);
+ assert.equal(brain.length,0);
+ assert.match(seen.at(-1).messages.at(-1).content[1].content,/patch_repository_mismatch/);
+});
+
+test('Steward rejects oversized ticket instead of truncating verified patch text',async()=>{
+ const brain=[],seen=[];
+ const result=await steward({mode:'fix',messages:[{role:'user',text:'fix'}]},makeEnv(brain),AUTH,
+  scripted([{stop_reason:'tool_use',content:[
+   use('p','propose_patch',{repository:R,path:'a.js',old_str:'function route(x){return x==="fix"?1:2;}',new_str:'n'.repeat(8000),why:'fix'}),
+   use('t','file_fix_ticket',{repository:R,title:'long patch',request:'x'.repeat(4000)})]},
+   {stop_reason:'end_turn',content:[{type:'text',text:'done'}]}],seen));
+ assert.equal(result.tickets.length,0);
+ assert.equal(brain.length,0);
+ assert.match(seen.at(-1).messages.at(-1).content[1].content,/ticket_request_too_large/);
+});
+
+test('Steward reports an existing ready ticket rather than inventing a new draft',async()=>{
+ const brain=[];
+ const env=makeEnv(brain);
+ env.BRAIN.fetch=async (url,opts)=>{
+  brain.push({url,opts});
+  return Response.json({ok:true,deduplicated:true,ticket:{id:'IW-20261108-ABCD1234',status:'ready'}});
+ };
+ const seen=[];
+ const result=await steward({mode:'fix',messages:[{role:'user',text:'fix'}]},env,AUTH,
+  scripted([{stop_reason:'tool_use',content:[use('t','file_fix_ticket',{repository:R,title:'repair',request:'review'})]},
+  {stop_reason:'end_turn',content:[{type:'text',text:'done'}]}],seen));
+ assert.equal(result.tickets[0].status,'ready');
+ assert.equal(result.tickets[0].deduplicated,true);
+ assert.match(seen.at(-1).messages.at(-1).content[0].content,/existing_ticket.*status ready/);
+ assert.equal(result.receipt.draftTickets,0);
+});
+
+test('Confirmed draft ticket survives a subsequent failed Anthropic call',async()=>{
+ let calls=0,brain=[];
+ const fetcher=async(url,opts)=>{
+  if(String(url).includes('api.anthropic.com')){
+   if(++calls===1)return Response.json({stop_reason:'tool_use',content:[
+    use('t','file_fix_ticket',{repository:R,title:'fix',request:'fix route'})]});
+   throw Error('anthropic connection lost');
+  }
+  throw Error('unexpected '+url);
+ };
+ const result=await steward({mode:'fix',messages:[{role:'user',text:'fix'}]},makeEnv(brain),AUTH,fetcher);
+ assert.equal(result.ok,true);
+ assert.equal(result.partial,true);
+ assert.equal(result.tickets[0].id,'IW-20261108-ABCD1234');
+ assert.equal(result.receipt.deploymentVerified,false);
+ assert.equal(brain.length,1);
+});
+
+test('Claude client uses Android-compatible abort and prevents partial script export',()=>{
+ const src=fs.readFileSync(new URL('../claude-card.js',import.meta.url),'utf8');
+ assert.doesNotMatch(src,/signal:AbortSignal\.timeout/);
+ assert.match(src,/new AbortController\(\)/);
+ assert.match(src,/new TextEncoder\(\)/);
+ const sandbox={sessionStorage:{getItem:()=>null,setItem(){}},addEventListener(){},
+  document:{readyState:'loading',addEventListener(){}}};
+ sandbox.window=sandbox;
+ vm.runInNewContext(src,sandbox);
+ const script=sandbox.ClaudeSteward.patchScript([
+  {repository:R,path:'src/app.js',old_str:'old content',new_str:'new content'}],'202611081200');
+ assert.match(script,/set -eu/);
+ assert.match(script,/git checkout -b claude-fix-202611081200 \|\| exit 1/);
+ assert.match(script,/python3 - <<'ENDPY' \|\| exit 1/);
+});

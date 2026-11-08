@@ -16,13 +16,14 @@ const jsonSafe=v=>JSON.stringify(v).replace(/'/g,'\\u0027');
 function patchScript(patches,stamp){
  const by={};for(const p of patches||[])(by[p.repository]=by[p.repository]||[]).push(p);
  const stampText=stamp||new Date().toISOString().replace(/\D/g,'').slice(0,12);
- let n=0,out='';
+ let n=0,out='set -eu\n';
+ if(Object.keys(by).length>1)throw Error('mixed_repositories_require_separate_review');
  for(const [repo,list] of Object.entries(by)){
   const name=repo.split('/')[1];n++;
   out+='cd "${'+name.replace(/\W/g,'_').toUpperCase()+'_DIR:-$HOME/'+name+'}" || exit 1\n'+
    '[ "$(basename "$(git rev-parse --show-toplevel)")" = "'+name+'" ] || { echo "WRONG REPO"; exit 1; }\n'+
    '[ -z "$(git status --porcelain)" ] || { echo "DIRTY REPO — commit or stash your existing work before patching"; exit 1; }\n'+
-   'git checkout -b claude-fix-'+stampText+'\npython3 - <<\'ENDPY\'\nimport json,pathlib\n'+
+   'git checkout -b claude-fix-'+stampText+' || exit 1\npython3 - <<\'ENDPY\' || exit 1\nimport json,pathlib\n'+
    'def patch(path,old,new):\n    p=pathlib.Path(path);s=p.read_text()\n    assert s.count(old)==1,"no unique match: "+path\n    p.write_text(s.replace(old,new,1));print("patched",path)\n'+
    list.map(p=>'patch(json.loads(r\'\'\''+jsonSafe(p.path)+'\'\'\'),json.loads(r\'\'\''+jsonSafe(p.old_str)+'\'\'\'),json.loads(r\'\'\''+jsonSafe(p.new_str)+'\'\'\'))').join('\n')+
    '\nENDPY\necho "patch applied ✓"\n'+
@@ -42,11 +43,24 @@ async function ownerHeaders(){
 }
 async function call(text,mode,evidence){
  const headers=await ownerHeaders();
- const res=await fetch(URL_STEWARD,{method:'POST',headers:{...headers,'Content-Type':'application/json'},
-  body:JSON.stringify({mode,messages:[...turns.slice(-11),{role:'user',text}],evidence}),signal:AbortSignal.timeout(110000)});
- const data=await res.json().catch(()=>({}));
- if(!res.ok||!data.ok)throw Error(String(data.error||('steward_http_'+res.status)));
- return data;
+ // Size the actual UTF-8 HTTP body, dropping old history before rejecting a turn.
+ const messages=[...turns.slice(-11),{role:'user',text}];
+ const encode=()=>JSON.stringify({mode,messages,evidence});
+ let body=encode();
+ while(new TextEncoder().encode(body).length>27000&&messages.length>1){
+  messages.shift();body=encode();
+ }
+ if(new TextEncoder().encode(body).length>27000)throw Error('steward_request_too_large');
+ // Android 12 WebViews do not all implement AbortSignal.timeout.
+ const controller=new AbortController();
+ const timer=setTimeout(()=>controller.abort(),110000);
+ try{
+  const res=await fetch(URL_STEWARD,{method:'POST',headers:{...headers,'Content-Type':'application/json'},
+   body,signal:controller.signal});
+  const data=await res.json().catch(()=>({}));
+  if(!res.ok||!data.ok)throw Error(String(data.error||('steward_http_'+res.status)));
+  return data;
+ }finally{clearTimeout(timer);}
 }
 function el(tag,css,text){const e=document.createElement(tag);if(css)e.style.cssText=css;if(text!==undefined)e.textContent=text;return e;}
 function bubble(role,text){
@@ -76,13 +90,20 @@ async function ask(text,{mode='chat',evidence}={}){
  const wait=bubble('claude','Claude is looking…');
  let data=null;
  try{
-  const ev=evidence||(mode==='fix'&&typeof root.__bubblesRecentMessages==='function'?root.__bubblesRecentMessages():[]);
+  const diagnostic=mode==='fix'||/what is broken|look at the recent bubbles chat/i.test(clean);
+  const ev=evidence??(diagnostic&&typeof root.__bubblesRecentMessages==='function'?root.__bubblesRecentMessages():[]);
   data=await call(clean,mode,ev);
   turns.push({role:'user',text:clean},{role:'assistant',text:data.reply});turns=turns.slice(-24);save();
   if(wait)wait.textContent=data.reply;
-  if(data.tickets?.length)bubble('claude','Draft ticket '+data.tickets.map(t=>t.id).join(', ')+' filed. It is NOT runnable yet. Review a job plan and promote it with the existing owner Brain ticket update flow.');
+  if(data.tickets?.length)for(const ticket of data.tickets){
+   const state=String(ticket.status||'unknown');
+   const intro=ticket.deduplicated?'Existing ticket':'Ticket recorded';
+   const next=state==='draft'?'Awaiting owner-reviewed plan.':'Inspect its existing state before any further action.';
+   bubble('claude',intro+' '+ticket.id+' · '+state+'. '+next);
+  }
+  if(data.partial)bubble('claude','Claude stopped before finishing. Saved proposals and ticket receipts remain available; no code was applied.');
   showPatches(data);
- }catch(e){if(wait)wait.textContent='Not confirmed: '+String(e.message||e).slice(0,160)+'. Nothing was changed.';}
+ }catch(e){if(wait)wait.textContent='Claude response not confirmed: '+String(e.message||e).slice(0,160)+'. Check existing Brain tickets before retrying; delivery status is unknown.';}
  busy=false;if(ui)ui.send.disabled=false;
  return data;
 }
