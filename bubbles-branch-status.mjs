@@ -15,7 +15,8 @@ export function parseBranchStatusQuery(value){
  const repository=explicit?'www-infinity4/'+explicit[1]:/\bChiller\b/i.test(message)?'www-infinity4/Chiller':'';
  if(!REPO.test(repository))return null;
  const specified=message.match(/\b(?:branch\s+(?:named\s+)?|on\s+branch\s+)([A-Za-z0-9][A-Za-z0-9._/-]{0,99})\b/i)?.[1];
- const branch=specified||message.match(/\badd-full-episodes\b/i)?.[0]||'';
+ const branch=(specified&&!/^(?:in|on|for|of|status|progress|is|was)$/i.test(specified)?specified:'')||
+  message.match(/\badd-full-episodes\b/i)?.[0]||'';
  if(!branch||branch.includes('..')||branch.includes('//')||branch.endsWith('/')||
     branch.split('/').some(x=>x.startsWith('.')||x.endsWith('.'))||
     !/^[A-Za-z0-9][A-Za-z0-9._/-]{0,99}$/.test(branch))return null;
