@@ -122,7 +122,7 @@ test('seller-authorized listing photo appears for the exact PCGS VAM lot and is 
    image_url:'https://www.greatcollections.com/approved/lot-2299600.jpg',
    image_credit:'GreatCollections rights holder · reviewed approved lot photo',
    license:'seller-permitted',proof_url:'https://www.greatcollections.com/approved/lot-2299600-rights',
-   approved_by:'reviewed-commercial-media',approved_at:'2026-11-07',expires_at:'2027-01-01'}]
+   approved_by:'reviewed-commercial-media',permission_scope:'commercial-card-image',permission_evidence_sha256:'a'.repeat(64),approved_at:'2026-11-07',expires_at:'2027-01-01'}]
  }}));
  await page.route('https://www.greatcollections.com/approved/lot-2299600.jpg',route=>route.fulfill({
   contentType:'image/svg+xml',body:'<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450"><rect width="600" height="450" fill="#ddd"/></svg>'
@@ -148,7 +148,7 @@ test('blocked seller image falls back honestly to the specific lot link',async({
    image_url:'https://www.greatcollections.com/approved/lot-photo-restricted.jpg',
    image_credit:'GreatCollections authorized catalog photograph',
    license:'seller-permitted',proof_url:'https://www.greatcollections.com/approved/lot-permission',
-   approved_by:'reviewed-commercial-media',approved_at:'2026-11-07',expires_at:'2027-01-01'}]
+   approved_by:'reviewed-commercial-media',permission_scope:'commercial-card-image',permission_evidence_sha256:'a'.repeat(64),approved_at:'2026-11-07',expires_at:'2027-01-01'}]
  }}));
  await page.route('https://www.greatcollections.com/approved/lot-photo-restricted.jpg',route=>route.fulfill({status:403,body:'No hotlink access'}));
  await page.route('https://orange-brook-a2ac.marvaseater.workers.dev/search**',route=>{
