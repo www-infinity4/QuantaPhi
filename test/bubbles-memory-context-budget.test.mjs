@@ -4,7 +4,13 @@ import {readFileSync} from 'node:fs';
 import vm from 'node:vm';
 const source=readFileSync('bubbles-memory.js','utf8');
 function setup({last=[],related=[],notes=[],cloud=true,enabled=true}={}){
- const scope={enabled,cloud,recent:async()=>last,search:async()=>related,recall:async()=>notes};
+ // Real stored turns always carry an `at` timestamp. Keep synthetic
+ // latest turns fresh, and mark archived fixtures older than seven days.
+ const now=Date.now();
+ const scope={enabled,cloud,
+  recent:async()=>last.map(e=>({...e,at:e.at??now})),
+  search:async()=>related.map(e=>({...e,at:e.at??(now-8*24*60*60*1000)})),
+  recall:async()=>notes};
  vm.createContext(scope);
  vm.runInContext(source.slice(source.indexOf('async function context(q){'),source.indexOf('async function remoteFetch')),scope);
  return scope;
@@ -31,4 +37,16 @@ test('optional saved-note failure keeps recent local context, while disabled mem
  assert.match(await scope.context('x'),/local correction/);
  const disabled=setup({enabled:false});disabled.recent=()=>{throw Error('must not read')};
  assert.equal(await disabled.context('x'),'');
+});
+
+test('historical app failure is available only when earlier words are explicitly requested',async()=>{
+ const twoWeeksAgo=Date.now()-14*24*60*60*1000;
+ const older={id:'old-bug',role:'user',at:twoWeeksAgo,text:'The Bubbles app was broken and I was screaming about it.'};
+ const recent={id:'current',role:'user',at:Date.now(),text:'The current app has changed; inspect new behavior.'};
+ const session=setup({cloud:false,last:[older,recent],related:[older]});
+ const current=await session.context('Fix the current Bubbles app');
+ assert.doesNotMatch(current,/was broken and I was screaming/);
+ assert.match(current,/Recent \[[0-9-]+\] user: The current app has changed/);
+ const history=await session.context('What did I say two weeks ago?');
+ assert.match(history,/Archived \[[0-9-]+\] user: The Bubbles app was broken/);
 });

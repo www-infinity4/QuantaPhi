@@ -1,3 +1,4 @@
+import './bubbles-stale-history-context.test.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -215,7 +216,7 @@ test('browser carries plural repair context to real owner source discovery and G
  assert.match(ui,/await suggestRepositoryTargets\(request,false\)/);
  const index=readFileSync(new URL('../index.html',import.meta.url),'utf8');
  const bubbles=readFileSync(new URL('../bubbles.html',import.meta.url),'utf8');
- for(const page of [index,bubbles])assert.match(page,/bubbles-ai\.js\?v=20261107-agent-runner2/);
+ for(const page of [index,bubbles])assert.match(page,/bubbles-ai\.js\?v=20261108-history-fresh1/);
 });
 
 

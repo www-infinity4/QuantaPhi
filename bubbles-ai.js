@@ -3090,7 +3090,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // Public embedded assistants receive no owner's private memory or work log.
  // Owner-only context is curated for the CURRENT request; archived complaints
  // are never fresh authorizations to reopen completed Cardone repairs.
- const taskContextModule=embedded||!ownerReady?null:await import('/bubbles-task-context.mjs?v=20261102-cardone-closure1').catch(()=>null);
+ const taskContextModule=embedded||!ownerReady?null:await import('/bubbles-task-context.mjs?v=20261108-history-fresh1').catch(()=>null);
  const continuity=taskContextModule?.curateOwnerTaskContext?.(request,{
   related:ownerContext.related,recent:messages.slice(nativeOverlay?-12:-40),
   indexedHistory:String(indexedHistory),instructions:userRules

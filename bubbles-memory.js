@@ -109,7 +109,15 @@
   }
   async function context(q){
    if(!enabled)return '';
-   const last=await recent(12),related=await search(q,8),ids=new Set(last.map(e=>e.id));
+   const now=Date.now(),freshWindow=7*24*60*60*1000;
+   // "recent" is an age, not simply the last 12 rows ever recorded.
+   // Explicit history questions can still read older owner messages.
+   const askingHistory=/\b(?:remember|recall|history|historical|archiv(?:e|ed)|earlier|previous|two weeks|last week|last month|recorded|recording|old complaint|past complaint|what did (?:i|we|someone) say)\b/i.test(String(q||''));
+   const pastFailure=/\b(?:broken|buggy|bugs?|crash(?:ed|ing|es)?|fail(?:ed|ing|ure)?|not working|doesn['’]t work|didn['’]t work|stuck|unusable|stupid|screaming|angry|upset)\b/i;
+   const last=await recent(12),related=await search(q,8);
+   const isFresh=e=>Number.isSafeInteger(e?.at)&&e.at>0&&e.at<=now&&now-e.at<=freshWindow;
+   const fresh=last.filter(isFresh),ids=new Set(fresh.map(e=>e.id));
+   const dated=(e,label)=>label+' ['+(Number.isSafeInteger(e.at)&&e.at>0?new Date(e.at).toISOString().slice(0,10):'unknown')+'] '+e.role+': '+e.text.slice(0,900)+'\n';
    let saved='';
    // Saved notes remain evidence, never model instructions or permission.
    if(cloud){
@@ -121,19 +129,24 @@
      }
     }catch{/* Local transcript retrieval still works offline. */}
    }
-   // Reserve space for the newest turns before adding older search matches.
-   // Preserve chronological order in the prompt without letting an old, long
-   // excerpt push the latest owner correction out of the context window.
+   // Reserve space for actual recent turns before adding older search matches.
    const recentLines=[];let recentSize=0;
-   for(const e of [...last].reverse()){
-    const line=e.role+': '+e.text.slice(0,900)+'\n';
+   for(const e of [...fresh].reverse()){
+    const line=dated(e,'Recent');
     if(recentSize+line.length>5000)continue;
     recentLines.unshift(line);recentSize+=line.length;
    }
    let archived='';
-   for(const e of related){
-    if(ids.has(e.id))continue;
-    const line=e.role+': '+e.text.slice(0,900)+'\n';
+   const candidates=askingHistory?[...related,...last]:related;
+   const olderSeen=new Set(ids);
+   for(const e of candidates){
+    if(olderSeen.has(e.id))continue;
+    olderSeen.add(e.id);
+    const old=!isFresh(e);
+    // Old frustrated fault reports must not be supplied as present-day defects.
+    // Keep them intact for a deliberate historical/recording question instead.
+    if(old&&!askingHistory&&pastFailure.test(e.text))continue;
+    const line=dated(e,old?'Archived':'Relevant');
     if(saved.length+archived.length+recentSize+line.length>7800)continue;
     archived+=line;
    }
