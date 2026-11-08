@@ -68,7 +68,7 @@ test('paged indexed list displays at most eight choices and opens late catalog c
  await indexed.getByRole('button',{name:'Next indexed results'}).click();
  await expect(indexed.locator('.devlib-index-count')).toContainText('25–31');
  await indexed.locator('.devlib-index-result').last().click();
- await expect(area.locator('#developerCardNow')).toHaveText('Carousel Source 30');
+ await expect(area.locator('#developerCardNow')).toHaveText('Carousel Source 31');
  const bounds=await area.evaluate(el=>({left:el.getBoundingClientRect().left,right:el.getBoundingClientRect().right,width:innerWidth}));
  expect(bounds.left).toBeGreaterThanOrEqual(-1);
  expect(bounds.right).toBeLessThanOrEqual(bounds.width+1);
