@@ -109,6 +109,7 @@ export function attachLicensedCoinImages(rows,market,manifest,asOf=new Date().to
  const allowed=new Map();
  for(const g of grants.slice(0,100)){
   if(g?.market!==market.id||g?.license!=='seller-permitted'||g?.approved_by!=='reviewed-commercial-media'||
+    g.permission_scope!=='commercial-card-image'||!(/^[a-f0-9]{64}$/.test(g.permission_evidence_sha256||''))||
     !isoDay(g.approved_at)||!isoDay(g.expires_at)||!isoDay(asOf)||
     g.approved_at>asOf||g.expires_at<asOf||g.approved_at>g.expires_at)continue;
   const lot=safeSaleURL(g.lot_url,market.host),image=safeSaleURL(g.image_url,market.host);
