@@ -8,7 +8,7 @@ for(const width of [320,360,393]){
   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
   const section=page.locator('#developerCarousel'),stage=section.locator('#developerCardStage');
   await expect(section.getByRole('heading',{name:/Developer · Build into the site/i})).toBeVisible();
-  await expect(section.locator('.developer-card-choice')).toHaveCount(5);
+  await expect(section.locator('.developer-card-choice')).toHaveCount(6);
   const visible=stage.locator('.developer-slide:not([hidden])');
   await expect(visible.locator('.developer-cover-image')).toBeVisible();
   await expect(visible.locator('.developer-editor')).toBeHidden();
@@ -35,6 +35,10 @@ for(const width of [320,360,393]){
   await section.getByRole('button',{name:'Code Phi · Create Phi'}).click();
   await visible.getByRole('button',{name:/Build with Phi · in this card/}).click();
   await expect(stage.locator('#phiProjectActions')).toBeVisible();
+  await section.getByRole('button',{name:'Kris Watson · Owner & Engineer'}).click();
+  await visible.getByRole('button',{name:/Explore engineering systems · in this card/}).click();
+  await expect(stage.locator('.owner-system-list .owner-system')).toHaveCount(8);
+  await expect(stage.getByRole('link',{name:'Create with GPT'})).toHaveAttribute('href','/website-viewer.html?site=chatgpt');
   await section.getByRole('button',{name:'Quick Card'}).click();
   await expect(creator.locator('input[name="title"]')).toHaveValue('Vintage Radio Creator');
   const bounds=await section.evaluate(el=>({left:el.getBoundingClientRect().left,right:el.getBoundingClientRect().right,width:innerWidth}));
