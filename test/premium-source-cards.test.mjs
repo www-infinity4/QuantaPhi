@@ -98,7 +98,7 @@ test('seller photographs require an independent, exact-lot authorized media reco
   market:'icollector',lot_url:lot,image_url:'https://www.icollector.com/photos/original-holder.jpg',
   image_credit:'iCollector auction catalog, rights-holder authorized',
   license:'seller-permitted',proof_url:'https://www.icollector.com/terms',
-  approved_by:'reviewed-commercial-media',approved_at:'2026-11-07',expires_at:'2027-01-01'
+  approved_by:'reviewed-commercial-media',permission_scope:'commercial-card-image',permission_evidence_sha256:'a'.repeat(64),approved_at:'2026-11-07',expires_at:'2027-01-01'
  }]};
  const approved=attachLicensedCoinImages(rows,market,approval,'2026-11-07');
  assert.equal(approved.length,1);
@@ -110,6 +110,8 @@ test('seller photographs require an independent, exact-lot authorized media reco
  assert.equal(attachLicensedCoinImages([{...rows[0],url:other}],market,approval,'2026-11-07')[0].image,null,'A different coin cannot borrow a photo');
  assert.equal(attachLicensedCoinImages(rows,market,{...approval,grants:[{...approval.grants[0],image_url:'https://attacker.invalid/fake.jpg'}]},'2026-11-07')[0].image,null,'Media host must match approved seller domain');
  assert.equal(attachLicensedCoinImages(rows,market,{...approval,grants:[{...approval.grants[0],proof_url:''}]},'2026-11-07')[0].image,null,'Rights evidence URL is required');
+ assert.equal(attachLicensedCoinImages(rows,market,{...approval,grants:[{...approval.grants[0],permission_evidence_sha256:null}]},'2026-11-07')[0].image,null,'Seller permission needs an audited document fingerprint');
+ assert.equal(attachLicensedCoinImages(rows,market,{...approval,grants:[{...approval.grants[0],permission_scope:'research-only'}]},'2026-11-07')[0].image,null,'Research permission does not establish commercial image rights');
 });
 
 test('each core collector source has its own rights-verified real coin or slab reference',()=>{
