@@ -1,5 +1,6 @@
 import {shareQuickCard} from '/quick-card-share.js?v=3';
 import {openQuickCardPreview} from '/quick-card-preview.mjs';
+import {readPublicCardDraft} from '/quick-card-gpt-draft.mjs';
 const form=document.getElementById('quickCardCreate'),result=document.getElementById('qcpResult'),kind=document.getElementById('qcpKind');
 const show=()=>{document.getElementById('qcpSearchLine').hidden=kind.value!=='search';document.getElementById('qcpVideoLine').hidden=kind.value!=='video';};
 kind.addEventListener('change',show);show();
@@ -16,6 +17,22 @@ try {
   form.elements.namedItem('interactionRequest').value='Use real provider URLs, preserve original sign-in, and show working controls with a reliable official-site fallback.';
  }
 }catch{/* Ignore malformed navigation parameters. */}
+// ChatGPT plugin draft is fragment-only: never sent to QuantaPhi as a URL query.
+// Prefill the ORIGINAL form without publishing, sending network data, or executing HTML.
+const fragment=location.hash;
+const gptDraft=readPublicCardDraft(fragment);
+if(fragment.startsWith('#chatgpt-draft=')){
+ try{history.replaceState(history.state,'',location.pathname+location.search)}catch{}
+}
+if(gptDraft){
+ for(const field of ['title','website','description','interactionRequest']){
+  form.elements.namedItem(field).value=gptDraft[field];
+ }
+ kind.value=gptDraft.kind;show();
+ const notice=document.createElement('p');
+ notice.textContent='GPT-prepared draft loaded on this device. Review the details and source rights. Nothing has been published.';
+ result.append(notice);
+}
 function suggestSearch(){
  if(kind.value!=='search'||searchInput.value.trim())return;
  try{
