@@ -3,34 +3,209 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-08T00:46:48.246737Z",
+  "checked_at": "2026-11-08T01:01:39.657197Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "magic vs warriors",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-08T00:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/golden-state-warriors-announce-injury-082041661.html",
+        "https://dubnationhq.com/p/preview-porzingis-retires-sort-of",
+        "https://www.si.com/nba/magic/onsi/orlando-magic-down-another-starter-against-warriors-preview-injuries-starters-how-to-watch-01m6vzmr2fpm"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmgGRx-9pxJf24yXMrkx49qYQp47BWzu1CoduoVGFJYxC8EExQbyV_WpHlccU",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/golden-state-warriors-announce-injury-082041661.html",
+          "title": "Golden State Warriors Announce Injury Report vs. Orlando Magic (Nov. 7)",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmgGRx-9pxJf24yXMrkx49qYQp47BWzu1CoduoVGFJYxC8EExQbyV_WpHlccU"
+        },
+        {
+          "url": "https://dubnationhq.com/p/preview-porzingis-retires-sort-of",
+          "title": "Preview: Porzingis retires (sort of), Warriors keep rising",
+          "publisher": "Dub Nation HQ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFJ3KI4KmT3rxPVrafGQTOqdYt4iVaPz_qSNAXzcUZwGLzJfbX3u7FG86K4L4"
+        },
+        {
+          "url": "https://www.si.com/nba/magic/onsi/orlando-magic-down-another-starter-against-warriors-preview-injuries-starters-how-to-watch-01m6vzmr2fpm",
+          "title": "Orlando Magic down another starter against Warriors: Preview, Injuries, Starters, How to Watch",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShdYv5bLPxgcskR-yOFmADZi1h7JZvr78mQEInHC3_ZoyjuPhBjMVoCJGf3Yw"
+        }
+      ]
+    },
+    {
+      "query": "vanderbilt football",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-08T00:40:00Z",
+      "related_news_urls": [
+        "https://hailstate.com/news/2026/11/6/football-mississippi-state-returns-home-to-face-vanderbilt-on-homecoming",
+        "https://www.yahoo.com/news/slideshows/mississippi-state-football-vs-vanderbilt-220145868.html",
+        "https://www.usatoday.com/sports/ncaaf/event/2026/2968593/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=6"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8ggAk7cyDFAJ4Zc0wzL1gl6rtG6-U9aS6j3lp0C8ExiKOW1ZNAE-3N0BTb5U",
+      "image_credit": "Mississippi State - Official Athletics Website",
+      "news": [
+        {
+          "url": "https://hailstate.com/news/2026/11/6/football-mississippi-state-returns-home-to-face-vanderbilt-on-homecoming",
+          "title": "Mississippi State Returns Home to Face Vanderbilt on Homecoming",
+          "publisher": "Mississippi State - Official Athletics Website",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8ggAk7cyDFAJ4Zc0wzL1gl6rtG6-U9aS6j3lp0C8ExiKOW1ZNAE-3N0BTb5U"
+        },
+        {
+          "url": "https://www.yahoo.com/news/slideshows/mississippi-state-football-vs-vanderbilt-220145868.html",
+          "title": "Mississippi State football vs Vanderbilt, see top photos of AJ Swann vs Jared Curtis",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_8sfiKfV27CUQMpv_-MOYSheGO_00LAwJjAsGdtjv1HPUic72D_2dikL3to0"
+        },
+        {
+          "url": "https://www.usatoday.com/sports/ncaaf/event/2026/2968593/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=6",
+          "title": "Vanderbilt Commodores at Mississippi State Bulldogs - NCAAF Game Summary - Nov 07, 2026",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQC4pQUOVepKdjq3gAY8gHy4lt981NbPz0yaG5GZO8QoPkFxeUOT-METdYZD_k"
+        }
+      ]
+    },
+    {
+      "query": "michigan football score",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-08T00:40:00Z",
+      "related_news_urls": [
+        "https://www.woodtv.com/sports/football-frenzy/high-school-football-frenzy-district-finals-highlights-november-6-2026/",
+        "https://www.wilx.com/2026/11/07/friday-night-frenzy-district-finals-highlights-scores/",
+        "https://www.mhsaa.com/sports/football/stories/1st-goal-2026-playoffs-week-2-preview"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS8-Ce3RjzgrHwgps-VyrsjeFX5Enf_A9PRjTL8hJ8IurITxk4PiJrj97vhxeY",
+      "image_credit": "WOODTV.com",
+      "news": [
+        {
+          "url": "https://www.woodtv.com/sports/football-frenzy/high-school-football-frenzy-district-finals-highlights-november-6-2026/",
+          "title": "Football Frenzy highlights: Nov. 6, 2026, district finals",
+          "publisher": "WOODTV.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS8-Ce3RjzgrHwgps-VyrsjeFX5Enf_A9PRjTL8hJ8IurITxk4PiJrj97vhxeY"
+        },
+        {
+          "url": "https://www.wilx.com/2026/11/07/friday-night-frenzy-district-finals-highlights-scores/",
+          "title": "Friday Night Frenzy District Finals Highlights and Scores",
+          "publisher": "WILX",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqUevNh-ww3VAKDjkKropB7xpiHeb5SlRHEoL_VrIHv7et-ogzIK-O89AB_Vo"
+        },
+        {
+          "url": "https://www.mhsaa.com/sports/football/stories/1st-goal-2026-playoffs-week-2-preview",
+          "title": "1st & Goal: 2026 Playoffs Week 2 Preview",
+          "publisher": "Michigan High School Athletic Association",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAPCjrqokrVlxKEkarMqW8bjY0Lh4ddCEhuvE8-SAIEth1q81mJNqf8YbSY2M"
+        }
+      ]
+    },
+    {
+      "query": "américa - deportivo cali",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T00:40:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17485515/protesta-america-antes-del-clasico-jugadores-reclamarian-pagos-pendientes",
+        "https://www.elpais.com.co/deportes/a-que-hora-abren-las-puertas-del-pascual-guerrero-para-el-clasico-america-vs-deportivo-cali-esto-debe-saber-0635.html",
+        "https://www.valledelcauca.gov.co/publicaciones/90990/baron-rojo-y-frente-radical-verde-acuerdan-vivir-el-clasico-vallecaucano-en-paz/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_zXDBIiBlcJWQP0KSAS-qZkC70NqiMyeMgVlMx15SHKNKf4_-6LLW0lzwIgg",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17485515/protesta-america-antes-del-clasico-jugadores-reclamarian-pagos-pendientes",
+          "title": "¿Protesta en América antes del clásico? Jugadores reclamarían pagos pendientes",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_zXDBIiBlcJWQP0KSAS-qZkC70NqiMyeMgVlMx15SHKNKf4_-6LLW0lzwIgg"
+        },
+        {
+          "url": "https://www.elpais.com.co/deportes/a-que-hora-abren-las-puertas-del-pascual-guerrero-para-el-clasico-america-vs-deportivo-cali-esto-debe-saber-0635.html",
+          "title": "¿A qué hora abren las puertas del Pascual Guerrero para el clásico América vs. Deportivo Cali? Esto debe saber",
+          "publisher": "El País",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvNRQ56KCY28O0twua6BGyaAAM3CKQjDqGKjK9QlULe7VfHVB720IlgBdfUKc"
+        },
+        {
+          "url": "https://www.valledelcauca.gov.co/publicaciones/90990/baron-rojo-y-frente-radical-verde-acuerdan-vivir-el-clasico-vallecaucano-en-paz/",
+          "title": "Barón Rojo y Frente Radical Verde acuerdan vivir el clásico vallecaucano en paz",
+          "publisher": "Gobernación del valle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNmXoYc6TDYV8rfxbtzSKBFmdh4uhd0KTgrD1iRlscruZKCfp4bdm-lIn7H00"
+        }
+      ]
+    },
+    {
+      "query": "toluca - monterrey",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-08T00:30:00Z",
+      "related_news_urls": [
+        "https://www.si.com/es-us/las-posibles-alineaciones-titulares-del-partido-toluca-vs-monterrey-7-11-2026",
+        "https://www.univision.com/noticias/a-que-hora-y-donde-ver-toluca-vs-rayados-y-pumas-vs-america-video",
+        "https://www.reforma.com/vuelve-orbelin-al-cuadro-de-rayados/ar3310310?redirectcancha=1"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT62mJHi4dbgMW3iavhJ1Q3VyaAzsxJn3TRIBPG_q9aCjtUmD6a6EVnEk_tt2o",
+      "image_credit": "Sports Illustrated",
+      "news": [
+        {
+          "url": "https://www.si.com/es-us/las-posibles-alineaciones-titulares-del-partido-toluca-vs-monterrey-7-11-2026",
+          "title": "Las posibles alineaciones titulares del partido Toluca vs Monterrey",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT62mJHi4dbgMW3iavhJ1Q3VyaAzsxJn3TRIBPG_q9aCjtUmD6a6EVnEk_tt2o"
+        },
+        {
+          "url": "https://www.univision.com/noticias/a-que-hora-y-donde-ver-toluca-vs-rayados-y-pumas-vs-america-video",
+          "title": "Toluca vs. Rayados y Pumas vs. América: A qué hora y dónde ver",
+          "publisher": "Univision",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPFGL0bh4NaHD0dWb6JYxSFds-5vwdacdN3PTFTf6NTY65b5clwGThjDVeWMk"
+        },
+        {
+          "url": "https://www.reforma.com/vuelve-orbelin-al-cuadro-de-rayados/ar3310310?redirectcancha=1",
+          "title": "Vuelve Orbelín al cuadro de Rayados",
+          "publisher": "Reforma",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNqGkof2x_4e5DqFNNpGoIDP_S-kmKXMyRwR00MpS0asbDpEC9Mx4Au2S4O50"
+        }
+      ]
+    },
     {
       "query": "cyclist",
       "approx_searches": "2000+",
       "published_at": "2026-11-08T00:30:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/2026/11/07/us/north-carolina-cyclists-crash-wake-county",
-        "https://www.wral.com/video/heart-sank-wral-interviews-triangle-bicyclist-deadly-crash-november-2026/",
+        "https://www.wral.com/news/local/several-injured-in-bicycle-crash-november-2026/",
+        "https://abc11.com/post/1-killed-7-injured-vehicle-strikes-group-bicyclists-wake-county/20022494/",
         "https://www.newsobserver.com/news/local/counties/wake-county/article317974168.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTUSQih_UeSx_8D--HZquNsFFTZA-BwK44k3d1ibQIIDen_WeWrpnpCGIWFSE",
-      "image_credit": "CNN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi94Lv0ANRSR6xIbF54QdIUvf-jNiDDOe2-GAAl41ajPEKfRFXmc-brM4lEVE",
+      "image_credit": "WRAL",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/07/us/north-carolina-cyclists-crash-wake-county",
-          "title": "1 killed, 22 injured after elderly driver suspected to be impaired strikes cyclists in North Carolina, officials say",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTUSQih_UeSx_8D--HZquNsFFTZA-BwK44k3d1ibQIIDen_WeWrpnpCGIWFSE"
-        },
-        {
-          "url": "https://www.wral.com/video/heart-sank-wral-interviews-triangle-bicyclist-deadly-crash-november-2026/",
-          "title": "'My heart sank': WRAL interviews bicyclist advocate after deadly crash near Apex",
+          "url": "https://www.wral.com/news/local/several-injured-in-bicycle-crash-november-2026/",
+          "title": "Apex driver in deadly DWI bicycle crash faces more than a dozen felonies, including hit-and-run",
           "publisher": "WRAL",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQg1uBwR6oQ605YFaPvlFgbmt6_bCLK10DDXqTCUjVqUF533an4Er66x9apT5U"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi94Lv0ANRSR6xIbF54QdIUvf-jNiDDOe2-GAAl41ajPEKfRFXmc-brM4lEVE"
+        },
+        {
+          "url": "https://abc11.com/post/1-killed-7-injured-vehicle-strikes-group-bicyclists-wake-county/20022494/",
+          "title": "Capital One Cycling Club: 1 killed, 7 injured after vehicle strikes group of bicyclists in Wake County",
+          "publisher": "ABC11 News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsjaK8RPlE5-Z3NfCOh4-xOe2ITlPycLtqy_cVRfo9asoWuSwyuzniu0snmDo"
         },
         {
           "url": "https://www.newsobserver.com/news/local/counties/wake-county/article317974168.html",
@@ -38,6 +213,76 @@
           "publisher": "Raleigh News & Observer",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTneeD2y58qx5-_LhYgUC68njnoir5LjYtsHFNi5OJB2gilYZQJVV0KvdITjG0"
+        }
+      ]
+    },
+    {
+      "query": "maryland vs georgetown",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T00:30:00Z",
+      "related_news_urls": [
+        "https://www.testudotimes.com/maryland-terps-basketball/94969/maryland-mens-basketball-vs-georgetown-game-thread-updates-highlights-more",
+        "https://guhoyas.com/news/2026/11/6/mens-basketball-georgetown-hosts-maryland-for-saturday-night-dmv-duel.aspx",
+        "https://umterps.com/news/2026/11/5/mens-basketball-dmv-rivalry-renewed-terps-head-to-georgetown-on-saturday"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSziM25eAwxiOXXdr0Sf3rgOFKADwrJGapd7TJdunddaspHBSK64sDn8VM7i2U",
+      "image_credit": "Testudo Times",
+      "news": [
+        {
+          "url": "https://www.testudotimes.com/maryland-terps-basketball/94969/maryland-mens-basketball-vs-georgetown-game-thread-updates-highlights-more",
+          "title": "Maryland men’s basketball vs. Georgetown game thread: updates, highlights & more",
+          "publisher": "Testudo Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSziM25eAwxiOXXdr0Sf3rgOFKADwrJGapd7TJdunddaspHBSK64sDn8VM7i2U"
+        },
+        {
+          "url": "https://guhoyas.com/news/2026/11/6/mens-basketball-georgetown-hosts-maryland-for-saturday-night-dmv-duel.aspx",
+          "title": "Georgetown Hosts Maryland for Saturday Night DMV Duel",
+          "publisher": "Georgetown University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvbuW1pFXN6sf0hAWDRtXpxErDJqwx8UFI3BGVpRw2Q9qa6pRqYbaz9T6-Fhc"
+        },
+        {
+          "url": "https://umterps.com/news/2026/11/5/mens-basketball-dmv-rivalry-renewed-terps-head-to-georgetown-on-saturday",
+          "title": "DMV Rivalry Renewed: Terps Head To Georgetown On Saturday",
+          "publisher": "University of Maryland Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSk_jf0TR3c7Q7CsweowmhxCtlHR0O4BMKmXtfcckXucHMMJwcJairL5-8-BB4"
+        }
+      ]
+    },
+    {
+      "query": "hugh jackman",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T00:30:00Z",
+      "related_news_urls": [
+        "https://www.lansingstatejournal.com/story/sports/college/2026/11/07/hugh-jackman-go-blue-honorary-michigan-captain-msu/92660592007/",
+        "https://www.detroitnews.com/story/sports/college/big-ten/2026/11/07/social-media-stars-marvels-wolverine-soak-in-michigan-msu-experience/92667615007/",
+        "https://www.mlive.com/sports/2026/11/hugh-jackman-marvels-wolverine-honorary-michigan-football-captain-at-tonights-rivalry-game.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQev_K6sly6RLJazgrJljvQPdL9bPtpVmykiavlwzz0191Mpyrc861mfOEB0CQ",
+      "image_credit": "Lansing State Journal",
+      "news": [
+        {
+          "url": "https://www.lansingstatejournal.com/story/sports/college/2026/11/07/hugh-jackman-go-blue-honorary-michigan-captain-msu/92660592007/",
+          "title": "Hugh Jackman picks a side. What he said about Wolverine Nation",
+          "publisher": "Lansing State Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQev_K6sly6RLJazgrJljvQPdL9bPtpVmykiavlwzz0191Mpyrc861mfOEB0CQ"
+        },
+        {
+          "url": "https://www.detroitnews.com/story/sports/college/big-ten/2026/11/07/social-media-stars-marvels-wolverine-soak-in-michigan-msu-experience/92667615007/",
+          "title": "Social-media stars, Marvel's Wolverine soak in Michigan-MSU experience",
+          "publisher": "The Detroit News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdoOnkvgQgVZ_09_bpQQNujDCPgCLmnwUDBdhIK0Mi65KKrOcwld2NliRUmho"
+        },
+        {
+          "url": "https://www.mlive.com/sports/2026/11/hugh-jackman-marvels-wolverine-honorary-michigan-football-captain-at-tonights-rivalry-game.html",
+          "title": "Hugh Jackman, Marvel’s Wolverine, honorary Michigan football captain at tonight’s rivalry game",
+          "publisher": "MLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-7EMF_IcKJ_VGRy5jDeHCs2tR0J-jsccNmh5bCa0rYVVbvLFdxDv9g9YHdvc"
         }
       ]
     },
@@ -77,76 +322,6 @@
       ]
     },
     {
-      "query": "um game",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-08T00:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50399722/geno-auriemma-voices-disappointment-uconn-loss-michigan",
-        "https://sports.yahoo.com/articles/3-takeaways-michigan-basketball-loss-034000148.html",
-        "https://www.essentiallysports.com/ncaa-college-basketball-news-im-disappointed-geno-auriemma-reveals-unfiltered-thoughts-after-michigan-defeats-no-two-uconn-in-season-opener/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwdDOtTNAOvoIc6wAbTuSFviFo1saJnIaMr6VpDWy9yJuRC2Zdwg6dB4MsvVA",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50399722/geno-auriemma-voices-disappointment-uconn-loss-michigan",
-          "title": "Geno Auriemma voices disappointment in UConn's loss to Michigan",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwdDOtTNAOvoIc6wAbTuSFviFo1saJnIaMr6VpDWy9yJuRC2Zdwg6dB4MsvVA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/3-takeaways-michigan-basketball-loss-034000148.html",
-          "title": "3 takeaways from Michigan Basketball’s loss to UConn",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTbJhNPLm_mmdyVsQYunfqF5xps7BfcssNE_lqM4u9IZChyL44gj7p7wWS6Cc"
-        },
-        {
-          "url": "https://www.essentiallysports.com/ncaa-college-basketball-news-im-disappointed-geno-auriemma-reveals-unfiltered-thoughts-after-michigan-defeats-no-two-uconn-in-season-opener/",
-          "title": "“I’m Disappointed”: Geno Auriemma Reveals Unfiltered Thoughts After Michigan Defeats No. 2 UConn in Season Opener",
-          "publisher": "EssentiallySports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKJjXJPmyS0Sq_vrSYFfkpc17WiLIMYaB4YmsZd3-kQvxkATNW4ksn4A8ADzw"
-        }
-      ]
-    },
-    {
-      "query": "hugh jackman",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T00:30:00Z",
-      "related_news_urls": [
-        "https://www.lansingstatejournal.com/story/sports/college/2026/11/07/hugh-jackman-go-blue-honorary-michigan-captain-msu/92660592007/",
-        "https://www.mlive.com/sports/2026/11/hugh-jackman-marvels-wolverine-honorary-michigan-football-captain-at-tonights-rivalry-game.html",
-        "https://www.detroitnews.com/picture-gallery/sports/college/university-michigan/wolverines/2026/11/07/um-msu-fans-tailgate-together-before-the-start-of-rivalry-game/92666027007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQev_K6sly6RLJazgrJljvQPdL9bPtpVmykiavlwzz0191Mpyrc861mfOEB0CQ",
-      "image_credit": "Lansing State Journal",
-      "news": [
-        {
-          "url": "https://www.lansingstatejournal.com/story/sports/college/2026/11/07/hugh-jackman-go-blue-honorary-michigan-captain-msu/92660592007/",
-          "title": "Hugh Jackman picks a side. What he said about Wolverine Nation",
-          "publisher": "Lansing State Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQev_K6sly6RLJazgrJljvQPdL9bPtpVmykiavlwzz0191Mpyrc861mfOEB0CQ"
-        },
-        {
-          "url": "https://www.mlive.com/sports/2026/11/hugh-jackman-marvels-wolverine-honorary-michigan-football-captain-at-tonights-rivalry-game.html",
-          "title": "Hugh Jackman, Marvel’s Wolverine, honorary Michigan football captain at tonight’s rivalry game",
-          "publisher": "MLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-7EMF_IcKJ_VGRy5jDeHCs2tR0J-jsccNmh5bCa0rYVVbvLFdxDv9g9YHdvc"
-        },
-        {
-          "url": "https://www.detroitnews.com/picture-gallery/sports/college/university-michigan/wolverines/2026/11/07/um-msu-fans-tailgate-together-before-the-start-of-rivalry-game/92666027007/",
-          "title": "UM, MSU fans tailgate together before the start of rivalry game",
-          "publisher": "The Detroit News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyl4-2KzXjuF3j7mz0eChCB9_63oSXblq4GbZ6kbwmleZlTz5_coNh7q0MsJw"
-        }
-      ]
-    },
-    {
       "query": "nbc sports",
       "approx_searches": "500+",
       "published_at": "2026-11-08T00:30:00Z",
@@ -162,181 +337,6 @@
           "publisher": "Awful Announcing",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7yO7ojrcl6Nk9Muf5ue7Wdago5QAmlqchTQtysKjEIvDsRnFJ9BD23dNygmg"
-        }
-      ]
-    },
-    {
-      "query": "tectonics",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T00:30:00Z",
-      "related_news_urls": [
-        "https://www.sciencealert.com/scientists-discover-two-enormous-tears-in-a-tectonic-plate-beneath-iran",
-        "https://www.nature.com/articles/s41561-026-02129-4",
-        "https://ua.news/en/dovkolo-svitu/pid-pivdenno-skhidnim-iranom-viiavili-dva-rozrivi-araviiskoyi-pliti-sciencealert"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRW73J8pFxhp7ZlxQGTIzOk05A6yNpsPQ8qWzrAMo_HBCmo37Bjs9uz_Xqa6hQ",
-      "image_credit": "ScienceAlert",
-      "news": [
-        {
-          "url": "https://www.sciencealert.com/scientists-discover-two-enormous-tears-in-a-tectonic-plate-beneath-iran",
-          "title": "Scientists Discover Two Enormous Tears in a Tectonic Plate Beneath Iran",
-          "publisher": "ScienceAlert",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRW73J8pFxhp7ZlxQGTIzOk05A6yNpsPQ8qWzrAMo_HBCmo37Bjs9uz_Xqa6hQ"
-        },
-        {
-          "url": "https://www.nature.com/articles/s41561-026-02129-4",
-          "title": "Seismic evidence for double slab tears at the Neo-Tethyan subduction–collision transition",
-          "publisher": "Nature",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG8c9zGDVD4qZQA07eiS8h9s_kI5zIm4va-zRdxh1AAVGKk9ivAr2rPqGDLrg"
-        },
-        {
-          "url": "https://ua.news/en/dovkolo-svitu/pid-pivdenno-skhidnim-iranom-viiavili-dva-rozrivi-araviiskoyi-pliti-sciencealert",
-          "title": "Two tears in the Arabian Plate discovered beneath southeastern Iran — ScienceAlert",
-          "publisher": "UA.NEWS",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRv8KXIO74MGjFjiQfE2Xe2B1-JN1vVzHQjTmV6LDfIrfLD3NKBGg-12ci3U9k"
-        }
-      ]
-    },
-    {
-      "query": "protect college sports act",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T00:20:00Z",
-      "related_news_urls": [
-        "https://www.mercurynews.com/2026/11/06/midterm-election-protect-college-sports-act-big-ten-fox-wilner-mailbag/",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/the-protect-college-sports-act-could-be-dead",
-        "https://www.nytimes.com/athletic/7757472/2026/11/06/protect-college-sports-act-house-midterms/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAiikXNyIg_nDqSwzJ0BF4pkFDTst9-7fHymMeGZS4kxfkSHmh_iZHJqI0I4U",
-      "image_credit": "The Mercury News",
-      "news": [
-        {
-          "url": "https://www.mercurynews.com/2026/11/06/midterm-election-protect-college-sports-act-big-ten-fox-wilner-mailbag/",
-          "title": "Mailbag: Midterm elections and the Protect College Sports Act, the Big Ten and Fox, CFP rankings lunacy, Pac-12 regrets and loads more",
-          "publisher": "The Mercury News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAiikXNyIg_nDqSwzJ0BF4pkFDTst9-7fHymMeGZS4kxfkSHmh_iZHJqI0I4U"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/the-protect-college-sports-act-could-be-dead",
-          "title": "The Protect College Sports Act could be dead",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSr4WHcTAJVfjv6WmgFWhJZmkceSq3s3nftG9lEALtDl-i3WACRFMGg-q4vQ_E"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7757472/2026/11/06/protect-college-sports-act-house-midterms/",
-          "title": "Did the midterm elections kill the Protect College Sports Act? Here’s what happens next",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUGlgRtAr2HjpT9GSQOFtNW33ZWnKgNsL57NqjtyTY3H0VrlOQLsLmymB8sRg"
-        }
-      ]
-    },
-    {
-      "query": "la galaxy",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T00:20:00Z",
-      "related_news_urls": [
-        "https://www.centraloregondaily.com/sports/chucky-lozano-sets-world-cup-goal-for-mexico-going-step-by-step-with-la-galaxy/article_0941c75c-c170-5cea-bb5b-df842c118472.html",
-        "https://www.espn.com/college-football/recap/_/gameId/401856849",
-        "https://www.espn.com/nba/odds/_/gameId/401909938"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8k8VnpEPjk_D-Rrug_F9S9S6BBKRHNblN7FH5VXZ70lC2VNqvAENK9TB8a3s",
-      "image_credit": "Central Oregon Daily",
-      "news": [
-        {
-          "url": "https://www.centraloregondaily.com/sports/chucky-lozano-sets-world-cup-goal-for-mexico-going-step-by-step-with-la-galaxy/article_0941c75c-c170-5cea-bb5b-df842c118472.html",
-          "title": "Chucky Lozano sets World Cup goal for Mexico, going 'step-by-step' with LA Galaxy",
-          "publisher": "Central Oregon Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8k8VnpEPjk_D-Rrug_F9S9S6BBKRHNblN7FH5VXZ70lC2VNqvAENK9TB8a3s"
-        },
-        {
-          "url": "https://www.espn.com/college-football/recap/_/gameId/401856849",
-          "title": "Utah 28-20 BYU (Nov 7, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXFByFno44Ru0BqE86zKKfKredVHnWLjBYuJHaiXjm8elzIcKJ1_tE_FBIRR8"
-        },
-        {
-          "url": "https://www.espn.com/nba/odds/_/gameId/401909938",
-          "title": "Nuggets vs. Pacers (Nov 7, 2026) Live Odds, Player Props, and more",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3068eUQGos_cJSjML_WJrru7R-bbe5GMod5qHvHYVhXoHYzkP4c-HSi9Y1d8"
-        }
-      ]
-    },
-    {
-      "query": "jamal murray",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T00:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/why-nuggets-consider-trading-jamal-193916828.html",
-        "https://basketnews.com/news-258918-nuggets-star-identified-as-potential-surprise-trade-candidate.html",
-        "https://heavy.com/sports/nba/los-angeles-lakers/nba-trade-rumors-seismic-jamal-murray-talk-bulls-draymond-green/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk_WLaJlMXABcGm7B2ezEi6DNieRu_yMi6VDE5mmwEGfx54Soy5ImdsmjDIHo",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/why-nuggets-consider-trading-jamal-193916828.html",
-          "title": "Why Nuggets Should Consider Trading Jamal Murray This Season",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk_WLaJlMXABcGm7B2ezEi6DNieRu_yMi6VDE5mmwEGfx54Soy5ImdsmjDIHo"
-        },
-        {
-          "url": "https://basketnews.com/news-258918-nuggets-star-identified-as-potential-surprise-trade-candidate.html",
-          "title": "Nuggets star identified as potential surprise trade candidate",
-          "publisher": "BasketNews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTawYA-43-7ZSEnBOftLZ4p0E_Z1s8IwiptBe1OVkDxiftIZuP7pQ8WzacncoE"
-        },
-        {
-          "url": "https://heavy.com/sports/nba/los-angeles-lakers/nba-trade-rumors-seismic-jamal-murray-talk-bulls-draymond-green/",
-          "title": "NBA Trade Rumors: Draymond Green, ‘Seismic’ Jamal Murray Talk, Bulls’ Big Chip & More",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTG-iXicRVDUTjg6EJQCQ5p0HKsvW-RiqTNs-33NhWc89FhUC3Wkqsc1HcZGts"
-        }
-      ]
-    },
-    {
-      "query": "wizards vs thunder",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-08T00:10:00Z",
-      "related_news_urls": [
-        "https://www.bulletsforever.com/washington-wizards-preview/73899/washington-wizards-oklahoma-city-thunder-nba-game-preview",
-        "https://sports.yahoo.com/articles/channel-thunder-vs-wizards-tv-110623843.html",
-        "https://www.si.com/nba/thunder/onsi/3-critical-storylines-to-watch-in-okc-thunder-vs-wizards-01m6w0m94shp"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6EzYWgMhXxsiVCGaWYbHjjwRLHCFkH_EEfUdBeRgG2kk14cQTkeRnholzWCk",
-      "image_credit": "Bullets Forever",
-      "news": [
-        {
-          "url": "https://www.bulletsforever.com/washington-wizards-preview/73899/washington-wizards-oklahoma-city-thunder-nba-game-preview",
-          "title": "Preview: The Wizards face the Thunder on Saturday",
-          "publisher": "Bullets Forever",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6EzYWgMhXxsiVCGaWYbHjjwRLHCFkH_EEfUdBeRgG2kk14cQTkeRnholzWCk"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/channel-thunder-vs-wizards-tv-110623843.html",
-          "title": "What channel is Thunder vs Wizards on TV tonight? Time, NBA schedule, injury report",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-XNKH29t_dqLRGxxt4zkMk4mCDWz0Z4I36N7HbUaiS3HMqbPbR_fewl-wC5M"
-        },
-        {
-          "url": "https://www.si.com/nba/thunder/onsi/3-critical-storylines-to-watch-in-okc-thunder-vs-wizards-01m6w0m94shp",
-          "title": "3 Critical Storylines to watch in OKC Thunder vs. Wizards",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-dEeMHbYFfq1wCsLGrmkhw86iSgA9-LWilijDXLFJ2ylypG09juG1r1lGt1s"
         }
       ]
     }
