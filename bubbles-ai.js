@@ -3487,8 +3487,37 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    if(!window.QuantAIPersonal)throw Error('Private Quant-AI client is unavailable');
    json=await window.QuantAIPersonal.chat(request);response={ok:true};
   }else{
-   response=await bubblesFetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json',...(!embedded&&ownerReady&&ownerHeaders?.Authorization?{Authorization:ownerHeaders.Authorization}:{})},body:JSON.stringify(lookupPayload())},detailed?60000:38000);
-   json=await response.json();
+   // Bubbles remains the conversational mask. Claude may provide an ordinary
+   // owner-verified answer, while signed Bubbles tools, code and wallet routes
+   // remain independent. A failed Claude call changes no reward balances.
+   let useClaude=false;
+   try{
+    const {shouldUseClaudeAssistance}=await import('/bubbles-claude-routing.mjs?v=20261108-claude-wheels1');
+    useClaude=shouldUseClaudeAssistance({
+     selectedModel:modelChoice.value,ownerVerified:ownerReady&&Boolean(ownerHeaders?.Authorization),
+     providerPresent:Boolean(window.ClaudeSteward),embedded,
+     hasAttachments:Boolean(pendingImage||pendingImages.length||screenEvidence),
+     toolWork:Boolean(detailed||workEvidence),request
+    });
+   }catch{/* Missing assistance module leaves native Bubbles available. */}
+   if(useClaude){
+    try{
+     const assisted=await window.ClaudeSteward.ask(request,{
+      mode:'chat',inline:true,evidence:window.__bubblesRecentMessages().slice(-10)
+     });
+     if(assisted?.ok===true&&assisted.partial!==true&&typeof assisted.reply==='string'&&assisted.reply.trim()){
+      response={ok:true};
+      json={ok:true,output:assisted.reply,receipt:{
+       tool:'claude.conversation',provider:'anthropic',model:assisted.model,
+       status:'complete',githubChanges:false,deploymentVerified:false
+      }};
+     }
+    }catch{/* Provider unavailable: continue using the signed Bubbles route. */}
+   }
+   if(!response){
+    response=await bubblesFetch(AI,{method:'POST',headers:{'content-type':'application/json','accept':'application/json',...(!embedded&&ownerReady&&ownerHeaders?.Authorization?{Authorization:ownerHeaders.Authorization}:{})},body:JSON.stringify(lookupPayload())},detailed?60000:38000);
+    json=await response.json();
+   }
   }
   if(!response.ok||json.ok===false)throw Error(String(json.output||json.error||'Oracle conversation failed'));
   if(nativeOverlay&&json.receipt?.tool)gptStatus.textContent=json.receipt.status==='complete'?'Reply ready.':'The result needs checking.';
@@ -3503,7 +3532,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    if(json.receipt?.tool==='weather.current'&&json.location){try{localStorage.setItem('bubbles-weather-town',json.location);}catch{}}
   const receiptFailed=['failed','blocked','invalid_input','unconfirmed'].includes(json.receipt?.status)||json.answerStatus==='partial';
   if(receiptFailed)failedTurn=true;
-  messages.push({role:'assistant',text:finalAnswer,...(receiptFailed?{failed:true}:{})});messages=messages.slice(-400);persistChat();
+  messages.push({role:'assistant',text:finalAnswer,...(json.receipt?.tool==='claude.conversation'?{provider:'anthropic',model:json.receipt.model}:{}),...(receiptFailed?{failed:true}:{})});messages=messages.slice(-400);persistChat();
   display(finalAnswer,'ai');status.textContent=config.alias+' · response received';
   // Search sources remain tappable in this same Bubbles chat; voice never reads raw URLs.
   if(json.receipt?.tool==='web.search'){
@@ -3538,7 +3567,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
     type:'tool_receipt',tool:json.receipt.tool,status:json.receipt.status,receiptId:json.receipt.id
    }}));
-   status.textContent=json.answerStatus==='partial'||json.receipt.status==='failed'?'I could not verify the full result.':'Reply ready.';
+   status.textContent=json.answerStatus==='partial'||json.receipt.status==='failed'?'I could not verify the full result.':json.receipt.tool==='claude.conversation'?'Bubbles · Claude-assisted reply.':'Reply ready.';
   }
   if(nativeOverlay){
     // The Android foreground service handles speech output; typed messages
