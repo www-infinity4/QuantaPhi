@@ -3,16 +3,122 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-08T10:01:11.091408Z",
+  "checked_at": "2026-11-08T10:31:14.873193Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "wi vs ban",
+      "query": "ole miss georgia fan trash delay",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T10:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/video/clip/_/id/50415355",
+        "https://sports.yahoo.com/college-football/breaking-news/article/no-2-georgia-no-10-ole-miss-game-delayed-as-rebel-fans-throw-trash-onto-field-after-dpi-call-022235832.html",
+        "https://www.usatoday.com/story/sports/ncaaf/sec/2026/11/07/ole-miss-football-fans-throw-trash-field-officiating-georgia/92671169007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeguHro89beArvqkbfGyckvi_VMjsF45UQsJf0rOvLWrIxGChTWsTMlXi4Vfc",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50415355",
+          "title": "Ole Miss fans throw water bottles on field after going down 21-0 to Georgia",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeguHro89beArvqkbfGyckvi_VMjsF45UQsJf0rOvLWrIxGChTWsTMlXi4Vfc"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/breaking-news/article/no-2-georgia-no-10-ole-miss-game-delayed-as-rebel-fans-throw-trash-onto-field-after-dpi-call-022235832.html",
+          "title": "No. 2 Georgia-No. 10 Ole Miss game delayed as Rebels fans throw trash onto field after DPI call",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSstgJgwEZTF4NOi3lhYbae5LLn8PYSvWUrrx5oNlpSWPvvv0NzkgqbW8P4jGw"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/ncaaf/sec/2026/11/07/ole-miss-football-fans-throw-trash-field-officiating-georgia/92671169007/",
+          "title": "Trash flies as Ole Miss fans rage over controversial calls vs. Georgia",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSd-3qaDjwPBC7v4TX-Tgrgd7Y4d8Ykk7KM-wxsFsrRtSiEc4TeWE4u1SukqhQ"
+        }
+      ]
+    },
+    {
+      "query": "and",
       "approx_searches": "100+",
+      "published_at": "2026-11-08T10:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/articles/ckp8g0z49qd8o",
+        "https://uk.sports.yahoo.com/news/scotlands-rivals-reinstate-under-fire-121300856.html",
+        "https://reporteri.net/en/sport/Granit-is-our-leader--he-apologized--Yakin-broke-the-silence-about-Jaka-after-returning-him-to-Switzerland/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzny8l29QwcTdYZfhKMthi_BflK2Aj8szCJWvFOWCly_WMqxnInAfJseAg0kE",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/articles/ckp8g0z49qd8o",
+          "title": "Scottish Gossip: Xhaka, Embolo, Lennon, Ferguson, Kabore, Kerjota, Mikulic",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzny8l29QwcTdYZfhKMthi_BflK2Aj8szCJWvFOWCly_WMqxnInAfJseAg0kE"
+        },
+        {
+          "url": "https://uk.sports.yahoo.com/news/scotlands-rivals-reinstate-under-fire-121300856.html",
+          "title": "Scotland's rivals reinstate under-fire duo after fake Covid certificate bans",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRZzXwoX5Y-U17d2w7OTliCS5FBkd0HjM8WJrcpDTEn4_jbeZVapaSOWqR7rs"
+        },
+        {
+          "url": "https://reporteri.net/en/sport/Granit-is-our-leader--he-apologized--Yakin-broke-the-silence-about-Jaka-after-returning-him-to-Switzerland/",
+          "title": "“Graniti është lideri ynë, kërkoi falje” – Yakin thyen heshtjen për Xhakën pasi e riktheu te Zvicra",
+          "publisher": "Reporteri.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRw7LKatjxRGJn2dVHUcZF5mp4cbTIff3XnUZ-Kx7aJxS5GNWWqLwzhmNVyjU"
+        }
+      ]
+    },
+    {
+      "query": "movie times",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T09:50:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/tv/news/jet-lag-the-game-season-20-premiere-theater-tickets-sale-1236940302/",
+        "https://press.nebula.tv/nebula-brings-jet-lag-the-game-back-to-the-big-screen-for-season-20-with-international-theatrical-event-across-the-u-s-the-u-k-and-canada/",
+        "https://www.imdb.com/it/news/ni66096742/?ref_=nwc_art_perm"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcowfCBKaa6XGNfbWywcFbsTArjur60uCvHxtzCFkk9Us2KKqESQo71F7kYvE",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/tv/news/jet-lag-the-game-season-20-premiere-theater-tickets-sale-1236940302/",
+          "title": "‘Jet Lag: The Game’ Heads to Movie Theaters Across US, UK and Canada for Season 20 ‘Hide and Seek: Italy’ Premiere (EXCLUSIVE)",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcowfCBKaa6XGNfbWywcFbsTArjur60uCvHxtzCFkk9Us2KKqESQo71F7kYvE"
+        },
+        {
+          "url": "https://press.nebula.tv/nebula-brings-jet-lag-the-game-back-to-the-big-screen-for-season-20-with-international-theatrical-event-across-the-u-s-the-u-k-and-canada/",
+          "title": "Nebula brings ‘Jet Lag: The Game’ back to the big screen for season 20 with international theatrical event across the U.S., the U.K. and Canada",
+          "publisher": "Nebula",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQY5Sgua7H2NgW9o3lu3d3khTp0GILPgTtqS1O65oRG9JFwL-BdMmaeJQibw4c"
+        },
+        {
+          "url": "https://www.imdb.com/it/news/ni66096742/?ref_=nwc_art_perm",
+          "title": "‘Jet Lag: The Game’ Heads to Movie Theaters Across US, UK and Canada for Season 20 ‘Hide and Seek: Italy’ Premiere (Exclusive)",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRD9BiRTJcbHcBXEq87SqBwQt4QfWoWdW-cxrzLTKa9DGeZ1fXaD79e2CJ15PY"
+        }
+      ]
+    },
+    {
+      "query": "wi vs ban",
+      "approx_searches": "200+",
       "published_at": "2026-11-08T09:40:00Z",
       "related_news_urls": [
         "https://www.cricinfo.com/story/ban-vs-wi-sylhet-test-amir-jangoo-backs-his-instincts-after-century-1561675",
-        "https://www.espn.com/cricket/series/19430/report/1553296/day/4/bangladesh-vs-west-indies-2nd-test-19430"
+        "https://www.espn.com/cricket/series/19430/report/1553296/day/4/bangladesh-vs-west-indies-2nd-test-19430",
+        "https://www.thestkittsnevisobserver.com/pacers-give-windies-edge-after-lift-from-tailenders/"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSg7ljpu4-VrCZ2L42Srwj9Nj2ltGRQ_y8CI504d34v6Rn6hhazt6fbf1SJ85I",
       "image_credit": "Cricinfo",
@@ -30,6 +136,13 @@
           "publisher": "ESPN",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEWapRM03h0E5hb-3NspdI1QySqIl2hMPgtZHGTLLfU9uBgGPH5UNpES-KZG8"
+        },
+        {
+          "url": "https://www.thestkittsnevisobserver.com/pacers-give-windies-edge-after-lift-from-tailenders/",
+          "title": "Pacers give Windies edge after lift from tailenders",
+          "publisher": "The St Kitts Nevis Observer",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKnJGgWGZObxdeQ77GCTcTe6jObG2d5b0KB_UeUD9x-DcoJVXAuv7ttp8t2cE"
         }
       ]
     },
@@ -38,33 +151,33 @@
       "approx_searches": "100+",
       "published_at": "2026-11-08T09:40:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/rugby-league/articles/c6vg02klk084o",
-        "https://www.foxsports.com.au/nrl/world-cup/womens-rugby-league-world-cup-2026-jillaroos-survive-big-scare-against-fiji-jaime-chapman-injury-update-final-against-new-zealand-date/news-story/618166a971e51f717a1b8ee44bd34b93",
-        "https://www.codesports.com.au/nrl/church-sends-aussies-to-the-final/video/ad99e5fe7effe4862d585fb16951e4f3"
+        "https://www.bbc.com/sport/rugby-league/live/c6gm0k1d0rgnt",
+        "https://www.theguardian.com/sport/2026/nov/08/australia-jillaroos-fiji-womens-rugby-league-world-cup-semi-final-match-report",
+        "https://www.abc.net.au/news/2026-11-08/rugby-league-world-cup-jillaroos-fiji-bulikula-semi-final/107361332"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR52vKRP4pXR-ZurqbyDJgz7u2Feyz_S35NuYCLv85yh4ys-775OjhZVh1SG3Q",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFSq4n10CeQA3JK3E9LK7uwlrSevBLQeCCk7dbA8e7AmsSQgHPR5C_js1B09k",
       "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/rugby-league/articles/c6vg02klk084o",
-          "title": "2026 Women's Rugby League World Cup: Australia reach final after Fiji scare",
+          "url": "https://www.bbc.com/sport/rugby-league/live/c6gm0k1d0rgnt",
+          "title": "Women's Rugby League World Cup LIVE: Semi-Final 2 Australia v Fiji - radio commentary",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR52vKRP4pXR-ZurqbyDJgz7u2Feyz_S35NuYCLv85yh4ys-775OjhZVh1SG3Q"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFSq4n10CeQA3JK3E9LK7uwlrSevBLQeCCk7dbA8e7AmsSQgHPR5C_js1B09k"
         },
         {
-          "url": "https://www.foxsports.com.au/nrl/world-cup/womens-rugby-league-world-cup-2026-jillaroos-survive-big-scare-against-fiji-jaime-chapman-injury-update-final-against-new-zealand-date/news-story/618166a971e51f717a1b8ee44bd34b93",
-          "title": "Four-try hero as Jillaroos survive almighty World Cup wake-up call... and sight sparks ‘concern’",
-          "publisher": "Fox Sports",
+          "url": "https://www.theguardian.com/sport/2026/nov/08/australia-jillaroos-fiji-womens-rugby-league-world-cup-semi-final-match-report",
+          "title": "Abbi Church powers Australia to win over spirited Fiji as hosts reach Women’s Rugby League World Cup final",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHmkzMJSas6VLqbUbgY57Jp0xGKbDBS5QyFK2NbOtMGKrQ5zC9i-pIf97-jPg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYKZQh0n6LYy3EYgQ_R-GEQmu3P7w2UsvqdzpAc2L-N8oArKEC9G2EAAuvwnI"
         },
         {
-          "url": "https://www.codesports.com.au/nrl/church-sends-aussies-to-the-final/video/ad99e5fe7effe4862d585fb16951e4f3",
-          "title": "Church sends Aussies to the final",
-          "publisher": "CODE Sports",
+          "url": "https://www.abc.net.au/news/2026-11-08/rugby-league-world-cup-jillaroos-fiji-bulikula-semi-final/107361332",
+          "title": "Wounded Jillaroos into World Cup final after Fiji smackdown",
+          "publisher": "ABC News & Headlines – Australian Broadcasting Corporation",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJt1Dt8Vcqzq3Shq8mL7Wl8uaAogfW-nxoRAr8zLxUGSBJnJohF07Wn_27lcc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBA9gYoib3InTgFRO6eelmEbtk0n5H4U4pmxG3nvg-WZ0oQb0veMDqDDrvbmY"
         }
       ]
     },
@@ -105,36 +218,36 @@
     },
     {
       "query": "college gameday",
-      "approx_searches": "20000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-08T09:00:00Z",
       "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50409152/sudeikis-mcafee-make-their-picks-miami-notre-dame",
-        "https://wsbt.com/news/local/college-gameday-returns-notre-dame-ahead-miami-matchup-cfp-football-espn-rece-davis-josh-pate-indiana",
-        "https://bleacherreport.com/articles/25529859-espn-college-gameday-2026-week-10-schedule-location-predictions-and-more"
+        "https://www.al.com/alabamafootball/2026/11/desmond-howard-jabs-nick-saban-over-sign-stealing-comment-when-talking-alabama-lsu.html",
+        "https://247sports.com/college/alabama/article/nick-saban-makes-pick-for-alabama-lsu-identifies-biggest-concern-for-tide-292289423/",
+        "https://www.si.com/fannation/college/cfb-hq/news/rece-davis-two-loss-sec-team-win-national-championship-lsu"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWPvGPMot0E62Ea527fj88xMRWo3qBh_xp3QN7P93zg1nZqzkv0H4Ey8REc2A",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnyMLehShpOYFUe3gm34fLNVMKJcXI99i4Z7ij_kbC3QoyDZt7O1IVI5IgZWY",
+      "image_credit": "AL.com",
       "news": [
         {
-          "url": "https://www.espn.com/video/clip/_/id/50409152/sudeikis-mcafee-make-their-picks-miami-notre-dame",
-          "title": "Sudeikis, McAfee make their picks for Miami-Notre Dame",
-          "publisher": "ESPN",
+          "url": "https://www.al.com/alabamafootball/2026/11/desmond-howard-jabs-nick-saban-over-sign-stealing-comment-when-talking-alabama-lsu.html",
+          "title": "ESPN's Desmond Howard jabs Nick Saban over sign-stealing comment when talking Alabama-LSU",
+          "publisher": "AL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWPvGPMot0E62Ea527fj88xMRWo3qBh_xp3QN7P93zg1nZqzkv0H4Ey8REc2A"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnyMLehShpOYFUe3gm34fLNVMKJcXI99i4Z7ij_kbC3QoyDZt7O1IVI5IgZWY"
         },
         {
-          "url": "https://wsbt.com/news/local/college-gameday-returns-notre-dame-ahead-miami-matchup-cfp-football-espn-rece-davis-josh-pate-indiana",
-          "title": "College GameDay returns to Notre Dame ahead of Miami matchup",
-          "publisher": "WSBT",
+          "url": "https://247sports.com/college/alabama/article/nick-saban-makes-pick-for-alabama-lsu-identifies-biggest-concern-for-tide-292289423/",
+          "title": "Nick Saban makes pick for Alabama-LSU, identifies biggest concern for Tide",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7qXiBXDcHDw38BQygtqfg3N0XSeSC6GlqrPMOHWUlx6iKhhHRIiJOS9Rnscw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEMpQMLGL70cuf2zd98vK2thqvZE9PWe9nzMZjYUjul8klLJGyX9nP0NCGSW8"
         },
         {
-          "url": "https://bleacherreport.com/articles/25529859-espn-college-gameday-2026-week-10-schedule-location-predictions-and-more",
-          "title": "ESPN College GameDay 2026 Week 10 Schedule, Location, Predictions and More",
-          "publisher": "Bleacher Report",
+          "url": "https://www.si.com/fannation/college/cfb-hq/news/rece-davis-two-loss-sec-team-win-national-championship-lsu",
+          "title": "Rece Davis Names Two-Loss SEC Team That Can Win the National Championship",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYCoUwzGES3UHF9xdA6icu6kR56TxV1ZVo9MxhbgTHjtMzzhhyIzoCiy-Qteg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRimIvP9nY4zICkYeoGsBuq7-Tjv8AqRzthNKYu2oEgAMH24jgRVEBpVZjAISk"
         }
       ]
     },
@@ -143,18 +256,19 @@
       "approx_searches": "100+",
       "published_at": "2026-11-08T08:50:00Z",
       "related_news_urls": [
-        "https://www.staradvertiser.com/2026/11/07/photo-gallery/prep-football-kapolei-vs-mililani-11-7-26/",
-        "https://www.khon2.com/sports/built-ford-tough-matchup-oia-open-division-championship-game-kapolei-vs-mililani/"
+        "https://www.staradvertiser.com/2026/11/08/sports/hawaii-prep-world/kapolei-grounds-pounds-mililani-to-capture-oia-crown/",
+        "https://www.khon2.com/sports/built-ford-tough-matchup-oia-open-division-championship-game-kapolei-vs-mililani/",
+        "https://www.staradvertiser.com/2026/11/07/photo-gallery/prep-football-kapolei-vs-mililani-11-7-26/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMwMMe-MgKxXmwn0El_qvoOnSj67ZHhot9L-x2OxtZ9UqXwqGXHy5HMzJgpMk",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuHx-RNWpwnW9qsSZNUHHCfh1ME0xZheL6eteETnKuNSlF8NHh3XM8f6W4jVg",
       "image_credit": "Honolulu Star-Advertiser",
       "news": [
         {
-          "url": "https://www.staradvertiser.com/2026/11/07/photo-gallery/prep-football-kapolei-vs-mililani-11-7-26/",
-          "title": "Prep football: Kapolei vs. Mililani (11/7/26)",
+          "url": "https://www.staradvertiser.com/2026/11/08/sports/hawaii-prep-world/kapolei-grounds-pounds-mililani-to-capture-oia-crown/",
+          "title": "Kapolei grounds, pounds Mililani to capture OIA crown",
           "publisher": "Honolulu Star-Advertiser",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMwMMe-MgKxXmwn0El_qvoOnSj67ZHhot9L-x2OxtZ9UqXwqGXHy5HMzJgpMk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuHx-RNWpwnW9qsSZNUHHCfh1ME0xZheL6eteETnKuNSlF8NHh3XM8f6W4jVg"
         },
         {
           "url": "https://www.khon2.com/sports/built-ford-tough-matchup-oia-open-division-championship-game-kapolei-vs-mililani/",
@@ -162,6 +276,13 @@
           "publisher": "KHON2",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlcy6iMmAfhclDwjnv2xPOt-ALmGJHq-osAm1YIhWZpYc__rN1zb9wfvpctHA"
+        },
+        {
+          "url": "https://www.staradvertiser.com/2026/11/07/photo-gallery/prep-football-kapolei-vs-mililani-11-7-26/",
+          "title": "Prep football: Kapolei vs. Mililani (11/7/26)",
+          "publisher": "Honolulu Star-Advertiser",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMwMMe-MgKxXmwn0El_qvoOnSj67ZHhot9L-x2OxtZ9UqXwqGXHy5HMzJgpMk"
         }
       ]
     },
@@ -172,7 +293,7 @@
       "related_news_urls": [
         "https://uww.org/articles/beach-wrestling-2026-dakar-youth-olympics-live-schedule-rules",
         "https://www.bignewsnetwork.com/news/279419506/spsenegal-dakar-saly-2026-youth-olympics-beach-wrestling",
-        "https://www.couriernews.com/sports/senegalese-female-wrestler-wins-the-nation-s-first-olympic-gold-at-dakar-youth-games/article_b43aba43-c97a-5add-8b46-169ad31178bb.html"
+        "https://www.athensreview.com/sports/national_sports/dakar-youth-olympics-beach-wrestling/image_07d6d0e7-27b9-5537-9e58-7ad4d5b202bf.html"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQju0KUg_QJ6eQgTbMLoKvVThavrwuWT5Jr4_iyezm6s-Kxnj3TiEOPNDHb4cs",
       "image_credit": "United World Wrestling",
@@ -192,46 +313,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCqlYDzapJsq1ueP4ArUNoPQg4SB9I-Bv1igqp3owKQgsBrwXfGXqYJqzwmco"
         },
         {
-          "url": "https://www.couriernews.com/sports/senegalese-female-wrestler-wins-the-nation-s-first-olympic-gold-at-dakar-youth-games/article_b43aba43-c97a-5add-8b46-169ad31178bb.html",
-          "title": "Senegalese female wrestler wins the nation’s first Olympic gold at Dakar Youth Games",
-          "publisher": "couriernews.com",
+          "url": "https://www.athensreview.com/sports/national_sports/dakar-youth-olympics-beach-wrestling/image_07d6d0e7-27b9-5537-9e58-7ad4d5b202bf.html",
+          "title": "Dakar Youth Olympics Beach Wrestling",
+          "publisher": "Athens Daily Review",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrF8ToPe_kELDpV8oXqdFaS27K9PYfW5bCXKOoEwEQguGsz_Q0lE-s0nTnLzo"
-        }
-      ]
-    },
-    {
-      "query": "alexandra eala",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-08T08:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/tennis/story/_/id/50407226/alex-eala-outlasts-maria-sakkari-rain-soaked-hong-kong-open-semifinals-faces-claire-liu-final",
-        "https://www.wtatennis.com/news/4606011/eala-tops-sakkari-in-rain-impacted-semifinal-to-set-hong-kong-final-against-liu",
-        "https://www.abs-cbn.com/sports/othersports/2026/11/6/tennis-alex-eala-survives-tough-ruzic-challenge-to-make-hong-kong-open-final-four-2340"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSwSmrOjKUv55-smBRwIBdogZNrG8PewoBhpZeHNF-aPaA86fjN-FpzSd9GWXo",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/tennis/story/_/id/50407226/alex-eala-outlasts-maria-sakkari-rain-soaked-hong-kong-open-semifinals-faces-claire-liu-final",
-          "title": "Alex Eala outlasts Maria Sakkari in rain-soaked Hong Kong Open semifinals, faces Claire Liu in final",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSwSmrOjKUv55-smBRwIBdogZNrG8PewoBhpZeHNF-aPaA86fjN-FpzSd9GWXo"
-        },
-        {
-          "url": "https://www.wtatennis.com/news/4606011/eala-tops-sakkari-in-rain-impacted-semifinal-to-set-hong-kong-final-against-liu",
-          "title": "Eala tops Sakkari in rain-impacted semifinal to set Hong Kong final against Liu",
-          "publisher": "WTA Tennis",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQGGwUnFF5TWUOzxjtbcfRjQkfnPsr4fkBsJw0vO3zcVqeZx4uRORFSWvNTgE"
-        },
-        {
-          "url": "https://www.abs-cbn.com/sports/othersports/2026/11/6/tennis-alex-eala-survives-tough-ruzic-challenge-to-make-hong-kong-open-final-four-2340",
-          "title": "Tennis: Alex Eala survives tough Ruzic challenge to make Hong Kong Open semis",
-          "publisher": "ABS-CBN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7AnV16W-_23ZAloB1_k7Yht_A4g-cySQ4d4r-ImbgCxv6DeWxHDpYcqWS8T4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSocHx5OCGoQoiQCTxmT5k0GgHLa33YHvqmg6MLEtVvmuiEqvjqwHAxpa7Oqxk"
         }
       ]
     },
@@ -242,7 +328,7 @@
       "related_news_urls": [
         "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10?utm_source=twitter&amp;utm_medium=o_social&amp;utm_campaign=gtavi_announcement_pre-load-20261103",
         "https://corporate.charter.com/newsroom/spectrum-giving-free-gig-speed-lift-thanksgiving-grand-theft-auto",
-        "https://mashable.com/entertainment/gta-6-how-to-play-one-day-early"
+        "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvr3MnhC7loBDcBhBXQOjgXQdBnSX1GgBl8Gp0wCtDiGaqob5Fx5ug4CQtEz4",
       "image_credit": "Rockstar Games",
@@ -262,81 +348,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLrldBUNUxrprrQdaGkYX-IyU3QqIHF3o_gPJ8nNZdwM-7CUvyPxPcKlXOanM"
         },
         {
-          "url": "https://mashable.com/entertainment/gta-6-how-to-play-one-day-early",
-          "title": "How to play 'GTA 6' a day before everyone else in the U.S.",
-          "publisher": "Mashable",
+          "url": "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/",
+          "title": "Grand Theft Auto VI pre-download begins November 10",
+          "publisher": "PlayStation.Blog",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSccsAT8ketyX3yc0NBqh2AjUCqZDFi-V3gGh8hV9a7jTiacAH3Y-D3rl22LAY"
-        }
-      ]
-    },
-    {
-      "query": "australia vs samoa",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T08:20:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/sport/live/2026/nov/08/australia-kangaroos-vs-samoa-rugby-league-world-cup-mens-semi-final-live-updates",
-        "https://www.espn.com/nrl/story/_/id/50415643/rugby-league-world-cup-match-winner-bench-walters-explains-kangaroos-selections",
-        "https://www.news.com.au/sport/nrl/world-cup/kangaroos-star-axed-for-world-cup-semifinal-as-alarming-detail-raises-eyebrows/news-story/851f30fc191f08bf44d938fd0f4ba736"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5O8gwTJNJzCmGh1CbtvMVn_D7psVKsLPDCV4RHC8u7T1-z8RjlZZ9tET2Ti8",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/sport/live/2026/nov/08/australia-kangaroos-vs-samoa-rugby-league-world-cup-mens-semi-final-live-updates",
-          "title": "Australia v Samoa: men’s Rugby League World Cup semi-final – live",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5O8gwTJNJzCmGh1CbtvMVn_D7psVKsLPDCV4RHC8u7T1-z8RjlZZ9tET2Ti8"
-        },
-        {
-          "url": "https://www.espn.com/nrl/story/_/id/50415643/rugby-league-world-cup-match-winner-bench-walters-explains-kangaroos-selections",
-          "title": "'Match-winner' from bench\" Walters explains Kangaroos selections",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRBKBasAhOM-bi2cIk3sFDC6Wrph7cOpu2sldrgDVRW6lsmQecOSP3JJ3rzG0"
-        },
-        {
-          "url": "https://www.news.com.au/sport/nrl/world-cup/kangaroos-star-axed-for-world-cup-semifinal-as-alarming-detail-raises-eyebrows/news-story/851f30fc191f08bf44d938fd0f4ba736",
-          "title": "Kangaroos star axed, concerning detail",
-          "publisher": "News.com.au",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3gmijbF2EsjxB_64eL8RmkqVVc82XZHKH2gvDm91PMUY5aAwO0qzShYATlfE"
-        }
-      ]
-    },
-    {
-      "query": "the diplomat",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T08:20:00Z",
-      "related_news_urls": [
-        "https://www.lifestyleasia.com/hk/entertainment/streaming/will-the-diplomat-season-5-happen-all-we-know-about-netflix-political-drama/",
-        "https://westportjournal.com/arts/visual/watching-the-diplomat-season-4-with-susan-granger/",
-        "https://www.whats-on-netflix.com/interviews/the-diplomat-season-4-production-designer-interview-italy-locations/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ96Hgl_hMDzzkMBd5NO-m59l62oqJQnIponeUQCn__Ew2y8txxn5BQ9_Ui44U",
-      "image_credit": "Lifestyle Asia Hong Kong",
-      "news": [
-        {
-          "url": "https://www.lifestyleasia.com/hk/entertainment/streaming/will-the-diplomat-season-5-happen-all-we-know-about-netflix-political-drama/",
-          "title": "‘The Diplomat’ season 5: What we know so far about the Netflix political drama",
-          "publisher": "Lifestyle Asia Hong Kong",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ96Hgl_hMDzzkMBd5NO-m59l62oqJQnIponeUQCn__Ew2y8txxn5BQ9_Ui44U"
-        },
-        {
-          "url": "https://westportjournal.com/arts/visual/watching-the-diplomat-season-4-with-susan-granger/",
-          "title": "‘The Diplomat: Season 4’ on Netflix review by Susan Granger",
-          "publisher": "Westport Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMXyT3yIPdc88Nyrb1FRk3btFsY72Kir87zVPAarf9g4GqtX-tqSt8ssvvMOU"
-        },
-        {
-          "url": "https://www.whats-on-netflix.com/interviews/the-diplomat-season-4-production-designer-interview-italy-locations/",
-          "title": "How The Diplomat Season 4 Faked Windsor Castle, a Warship, and a G7 Summit",
-          "publisher": "What's on Netflix",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdiB_zvNKWP-TJqbdCQHa_23OGp-rl40hi24N8uV0x0LgVLjrGJMg392sZPfM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyNgZ56vmBZJJNXtBuVMuXt5SrJjkpTULssjmIfrOVOdDg6PUuF-BaAKk2CE8"
         }
       ]
     }
