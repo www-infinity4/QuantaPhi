@@ -1,0 +1,15 @@
+# Shop LC contextual sale Quick Cards — Issue #1015
+- Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1015
+- Draft PR: https://github.com/www-infinity4/QuantaPhi/pull/1825
+- Branch: `feat/shoplc-contextual-sale-ads-20261107`
+- Last source review: 2026-11-08 UTC
+- Status: source implemented on draft branch; production blocked (merchant approval + browser acceptance)
+- Progress: 3/8 milestones implemented (SKU/category validation; contextual UI/Android-sized controls; browser-local Not for me). Remaining: authorized merchant feed and creative license; robust multi-product change-over; full product interactions; cross-account preference policy; independent review; live/Android acceptance. No settled merchant sales or customer-specific ad delivery claimed.
+- Source: `shoplc-contextual-sale.mjs`, `shoplc-contextual-sale.css`, homepage loader, `test/shoplc-contextual-sale.test.mjs`, focused CI.
+- Red/Blue source: existing legacy StarQuest Ledger endpoint `/v1/shoplc/current-item` scrapes live-site HTML; NOT an authorized catalog or reliable price/stock source.
+- Rights blocker: Shop LC official terms forbid gathering or reusing merchant images/listings publicly without written permission, https://www.shoplc.com/pages/terms . Approved affiliates can access product feeds and creatives via https://www.shoplc.com/pages/affiliate-program . No approval/credentials verified. The new source now fetches ONLY the prospective same-origin `/api/shoplc/authorized-sale-feed` (not implemented) and requires explicit backend rights flags and <=15-minute timestamp; nothing should display until verified.
+- Privacy: no personal identity, no hidden wallet actions, generic shopping/TV excludes jewelry ads, browser-local Not for me; multi-device account sync NOT implemented.
+- CI history: initial test-first commit `2f60fbc395d863873c21a0afdb8f4e739644c9b3` focused run 42430557588 failed as intended before source; implementation commit `edeaeb95b3e170c89933dc76e31a705c6074f4d5` run 42430670843 passed. The subsequent rights-gated changes require exact-head retest.
+- No merge or deployment authorized; PR remains draft and must not be promoted as a working advertising feed.
+- Next safe action: obtain confirmed Shop LC/Ascend affiliate product-feed and media reuse rights; implement same-origin licensed adapter without scraping; independently review rights and exact-head CI before site/Android verification.
+- Sessions documented: 1. Next sessions estimate: unknown (merchant approval dependent).
