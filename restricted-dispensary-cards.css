@@ -47,3 +47,8 @@ body.oracle-card-deck-active .oracle-card-deck-stage > section[id^="dispensary-"
 .dc-gallery-count{font-size:14px;color:#4d606b;min-width:54px;text-align:center}
 .dc-gallery-controls [hidden]{display:none!important}
 @media(max-width:420px){.dc-gallery{padding:8px}.dc-gallery-controls .dc-control{flex:1 1 90px;font-size:13px}}
+
+/* Alias and direct contact are factual store details, not a promotion. */
+.dc-former-brand{margin:7px 0 0;font-size:14px;font-weight:650;line-height:1.4;color:#4d5f69}
+.dc-phone{display:inline-block;margin-top:8px;color:#204960;text-decoration:underline;font-size:15px;font-weight:700;min-height:44px;padding:9px 0}
+.dc-phone:focus-visible{outline:3px solid #74a8c5;outline-offset:2px}
