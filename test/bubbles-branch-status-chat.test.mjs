@@ -57,3 +57,30 @@ test('Bubbles main messenger invokes authenticated branch read before generic mo
  assert.match(fragment,/verifiedOwnerHeaders\(\)/);
  assert.doesNotMatch(fragment,/commit_files|dispatch_workflow|run-next/);
 });
+
+test('this chat owner-ticket ID remains visible even when its title omits the branch, without claiming linkage',()=>{
+ const q={repository:'www-infinity4/Chiller',branch:'add-full-episodes'};
+ const branchRead={ok:true,repository:q.repository,branch:q.branch,repositoryId:1367499788,exists:false,status:'branch_not_found'};
+ const ticket={id:'IW-20261107-ABCDEFGH',repository:q.repository,title:'Import complete classic TV catalogs',status:'working'};
+ const answer=describeAuthenticatedBranchStatus(q,branchRead,{ok:true,tickets:[ticket]}, {conversationTicketId:ticket.id});
+ assert.match(answer,/this conversation.*ticket/i);
+ assert.match(answer,/working/i);
+ assert.match(answer,/branch.*unverified|not linked|link.*unverified/i);
+ assert.doesNotMatch(answer,/matching saved Brain ticket reports working/i);
+ const noMatch=describeAuthenticatedBranchStatus(q,branchRead,{ok:true,tickets:[ticket]},
+  {conversationTicketId:'IW-20261107-OTHER123'});
+ assert.doesNotMatch(noMatch,/this conversation.*ticket/i);
+ const wrongRepo=describeAuthenticatedBranchStatus(q,branchRead,
+  {ok:true,tickets:[{...ticket,repository:'www-infinity4/QuantaPhi'}]},
+  {conversationTicketId:ticket.id});
+ assert.doesNotMatch(wrongRepo,/this conversation.*ticket/i);
+});
+test('Bubbles passes only its current-thread saved work-ticket pointer to status formatter',()=>{
+ const src=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ const start=src.indexOf('parseBranchStatusQuery(spoken)');
+ const end=src.indexOf('// A GitHub status question reads the durable owner receipt;',start);
+ assert.ok(start>0&&end>start);
+ const branchFlow=src.slice(start,end);
+ assert.match(branchFlow,/recentWorkRef\(receiptThread\)/);
+ assert.match(branchFlow,/conversationTicketId/);
+});
