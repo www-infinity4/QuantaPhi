@@ -28,12 +28,12 @@ async function fixture(){
   },
   async all(){
    reads.push({sql,args});
-   const account=accounts.find(a=>a.id===args[0]);assert.ok(account);
    if(sql.includes('FROM gitcoin_serials')){
     const n=accounts.findIndex(a=>'wallet-'+a.id===args[0]);
     assert.ok(n>=0,'GIT serial query uses server-resolved wallet');
     return {results:[{serial_no:n+10,receipt_id:'receipt-'+n,git_type:'git:app',issued_at:'2026-11-08 00:00:00'}]};
    }
+   const account=accounts.find(a=>a.id===args[0]);assert.ok(account);
    if(sql.includes('FROM unified_token_records'))return{results:[{token_id:'token-'+account.id,token_type:'INFINITY_SEARCH',data_json:'{}'}]};
    if(sql.includes('FROM unified_wallet_events'))return{results:[{event_id:'event-'+account.id,asset_code:'INFINITY',amount:1,balance_after:account.infinity,created_at:1,metadata_json:'{}'}]};
    throw Error('Unexpected all query');
