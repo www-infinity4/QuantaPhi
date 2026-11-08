@@ -3497,11 +3497,13 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    json=await response.json();
   }
   if(!response.ok||json.ok===false)throw Error(String(json.output||json.error||'Oracle conversation failed'));
-  if(nativeOverlay&&json.receipt?.tool)gptStatus.textContent=json.receipt.status==='complete'?'Reply ready.':'The result needs checking.';
   const rawAnswer=extract(json);
    if(!rawAnswer&&!cardoneResearch)throw Error('The AI returned no spoken or written reply');
    if(!cardoneResearch&&/^(?:on it|working on it|checking|thinking|one moment|just a moment)[.!…\s]*$/i.test(rawAnswer.trim()))throw Error('The assistant acknowledged the request but returned no result.');
    const unexecutedJobProposal=isUnexecutedJobStatusProposal(rawAnswer);
+   if(nativeOverlay&&json.receipt?.tool)gptStatus.textContent=unexecutedJobProposal?
+    'Tool proposal not executed. No runner receipt.':
+    json.receipt.status==='complete'?'Reply ready.':'The result needs checking.';
    const answer=normalizeOwnerAssistantReply(rawAnswer,request,ownerReady&&Boolean(ownerHeaders?.Authorization));
    const finalAnswer=describeBubblesToolOutcome(json,cardoneResearch&&
     (cardoneReplyUnusable(rawAnswer)||json.answerStatus==='partial'||
@@ -3542,12 +3544,11 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    }
    conversation.append(row);
   }
-  if(json.receipt){
+  if(json.receipt&&!unexecutedJobProposal){
    if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
     type:'tool_receipt',tool:json.receipt.tool,status:json.receipt.status,receiptId:json.receipt.id
    }}));
-   if(unexecutedJobProposal)status.textContent='Tool proposal not executed · runner status unverified';
-    else status.textContent=json.answerStatus==='partial'||json.receipt.status==='failed'?'I could not verify the full result.':'Reply ready.';
+   status.textContent=json.answerStatus==='partial'||json.receipt.status==='failed'?'I could not verify the full result.':'Reply ready.';
   }
   if(nativeOverlay){
     // The Android foreground service handles speech output; typed messages
