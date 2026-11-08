@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-08T13:01:07.773633Z",
+  "checked_at": "2026-11-08T13:31:20.433930Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "palantir news",
+      "query": "palace vs liverpool",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-08T13:10:00Z",
+      "related_news_urls": [
+        "https://www.liverpoolfc.com/news/team-news-confirmed-liverpool-line-up-v-crystal-palace",
+        "https://www.si.com/soccer/crystal-palace-vs-liverpool-preview-predictions-lineups-11-8-26",
+        "https://www.skysports.com/football/news/13607998/premier-league-predictions-and-jones-knows-best-bets-nottingham-forest-vs-man-city-man-utd-vs-aston-villa-and-more"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSksKYe_LweAQLhgPx6so3rQ42ZRLl2Xy_DQCrdmUC0WMHpXuMm3w-0gnDCk84",
+      "image_credit": "Liverpool FC",
+      "news": [
+        {
+          "url": "https://www.liverpoolfc.com/news/team-news-confirmed-liverpool-line-up-v-crystal-palace",
+          "title": "Team news: Confirmed Liverpool line-up v Crystal Palace",
+          "publisher": "Liverpool FC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSksKYe_LweAQLhgPx6so3rQ42ZRLl2Xy_DQCrdmUC0WMHpXuMm3w-0gnDCk84"
+        },
+        {
+          "url": "https://www.si.com/soccer/crystal-palace-vs-liverpool-preview-predictions-lineups-11-8-26",
+          "title": "Crystal Palace vs. Liverpool: Preview, Predictions and Lineups",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSE8yHWCCSWUeHCbOjXtODSfL_fHoBDUYe8Gcbs8MR29QmIcK4HgInnCen3S4o"
+        },
+        {
+          "url": "https://www.skysports.com/football/news/13607998/premier-league-predictions-and-jones-knows-best-bets-nottingham-forest-vs-man-city-man-utd-vs-aston-villa-and-more",
+          "title": "Premier League predictions & Jones Knows' best bets: Crystal Palace vs Liverpool, Man Utd vs Aston Villa and more!",
+          "publisher": "Sky Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_JQYqDGye4DBPE_DPjuC0xb42DnCvIzzm7sm14wt4mQFkKPnOyZWwMe0GFHw"
+        }
+      ]
+    },
+    {
+      "query": "brighton vs brentford",
       "approx_searches": "200+",
-      "published_at": "2026-11-08T12:40:00Z",
+      "published_at": "2026-11-08T13:10:00Z",
       "related_news_urls": [
-        "https://www.aljazeera.com/news/2026/11/5/palantir-mines-battlefield-intelligence-but-is-ukraine-paying-with-blood",
-        "https://www.bloomberg.com/news/articles/2026-11-03/palantir-executive-says-ukraine-support-is-controversial-in-us",
-        "https://euromaidanpress.com/2026/11/03/400-billion-us-tech-giant-helping-ukraine-is-now-facing-backlash-on-both-sides-of-atlantic/"
+        "https://www.bbc.com/sport/football/live/cqkgkwj1rpl8t",
+        "https://www.skysports.com/football/live-blog/13592882/brighton-vs-brentford-live-premier-league-score-updates-news-prediction-line-ups-and-how-to-watch-or-stream",
+        "https://sports.yahoo.com/articles/brentford-predicted-xi-vs-brighton-000000348.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR99V1e_ZrbelSw1e_ubVq5vqdbq6pILN8Ligpn7K76oQJfy8_boJxwjvT1YpA",
-      "image_credit": "Al Jazeera",
-      "news": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/5/palantir-mines-battlefield-intelligence-but-is-ukraine-paying-with-blood",
-          "title": "Palantir harvests battlefield data that Ukraine pays for ‘with blood’",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR99V1e_ZrbelSw1e_ubVq5vqdbq6pILN8Ligpn7K76oQJfy8_boJxwjvT1YpA"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-03/palantir-executive-says-ukraine-support-is-controversial-in-us",
-          "title": "Palantir Executive Says Ukraine Support Is Controversial in US",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJuDAQg3sDPRJgYKJFrD4aYXYe6Apv0lp1lNj7HN6vgWQZpZIIWmqzZgp6nP4"
-        },
-        {
-          "url": "https://euromaidanpress.com/2026/11/03/400-billion-us-tech-giant-helping-ukraine-is-now-facing-backlash-on-both-sides-of-atlantic/",
-          "title": "$400 billion US tech giant helping Ukraine is now facing backlash on both sides of Atlantic",
-          "publisher": "Euromaidan Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzUq0-0VqAn9FSanJraIJ83OVEpgY1lY-uvHZJWfVNhHyvsPG903VS4eEW8lc"
-        }
-      ]
-    },
-    {
-      "query": "burien power outage",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-08T12:40:00Z",
-      "related_news_urls": [
-        "https://www.king5.com/article/weather/severe-weather/strong-winds-blow-down-trees-block-roads-and-close-routes-saturday-night/281-b0a1088e-8003-45d3-83fb-8d7b854620ac",
-        "https://www.seattletimes.com/seattle-news/weather/seattle-windstorm-83k-outages-reported-in-western-wa/",
-        "https://mynorthwest.com/uncategorized/what-to-expect-as-western-washingtons-first-big-fall-storm-arrives-saturday-night/4296433"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSObh65ULu5dbtwM4zLhVALmqmaJ2Yg9Lm3pXOpwCK0DcOoZ39VMVWpw1erXKQ",
-      "image_credit": "KING5.com",
-      "news": [
-        {
-          "url": "https://www.king5.com/article/weather/severe-weather/strong-winds-blow-down-trees-block-roads-and-close-routes-saturday-night/281-b0a1088e-8003-45d3-83fb-8d7b854620ac",
-          "title": "Strong winds blow down trees, block roads and close routes Saturday night",
-          "publisher": "KING5.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSObh65ULu5dbtwM4zLhVALmqmaJ2Yg9Lm3pXOpwCK0DcOoZ39VMVWpw1erXKQ"
-        },
-        {
-          "url": "https://www.seattletimes.com/seattle-news/weather/seattle-windstorm-83k-outages-reported-in-western-wa/",
-          "title": "Seattle windstorm: 83K outages reported in Western WA",
-          "publisher": "The Seattle Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOp_DcPYGupK82bAYFEobVJCgXFKe0NXeaEHZDvoY6K7It-9gscApNocGMpho"
-        },
-        {
-          "url": "https://mynorthwest.com/uncategorized/what-to-expect-as-western-washingtons-first-big-fall-storm-arrives-saturday-night/4296433",
-          "title": "What to expect as Western Washington’s first big fall storm arrives Saturday night",
-          "publisher": "MyNorthwest.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkGoXkLTBFfZyggVrgb5yKXxfrIwVL9McmUuOFQxFy1-kAs55X5umLh4XLdK8"
-        }
-      ]
-    },
-    {
-      "query": "ansari",
-      "approx_searches": "100+",
-      "published_at": "2026-11-08T12:40:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/business/media-telecom/democrats-planning-flood-ai-bills-when-they-take-control-congress-2026-11-06/",
-        "https://www.foxbusiness.com/politics/new-political-landscape-facing-ai-after-democrats-midterm-gains",
-        "https://techcrunch.com/2026/11/06/from-the-front-row-to-the-hot-seat-what-the-midterms-mean-for-big-tech/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkFspECvCLExeJgeX987yvC2D9Gh5NFLPJ_kSHZlZdCqZNm2rg-T8ZFLC1xfo",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/business/media-telecom/democrats-planning-flood-ai-bills-when-they-take-control-congress-2026-11-06/",
-          "title": "Democrats planning flood of AI bills when they take control of Congress",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkFspECvCLExeJgeX987yvC2D9Gh5NFLPJ_kSHZlZdCqZNm2rg-T8ZFLC1xfo"
-        },
-        {
-          "url": "https://www.foxbusiness.com/politics/new-political-landscape-facing-ai-after-democrats-midterm-gains",
-          "title": "How Democrats’ midterm gains could reshape the political landscape for AI",
-          "publisher": "Fox Business",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReXzG7kAL6pGrY4XCszuApOY-Teos7y-GsW8b4tpV-sP3dIttP7YmeyP755Pg"
-        },
-        {
-          "url": "https://techcrunch.com/2026/11/06/from-the-front-row-to-the-hot-seat-what-the-midterms-mean-for-big-tech/",
-          "title": "From the front row to the hot seat — what the midterms mean for Big Tech",
-          "publisher": "TechCrunch",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Al8s-SCr_gKVwI7IQnHxGJCElgejvTWeLfdmqkvGDjaJ4mZroB8pA4B4kqw"
-        }
-      ]
-    },
-    {
-      "query": "india u-19 vs pakistan u-19",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T12:40:00Z",
-      "related_news_urls": [
-        "https://timesofindia.indiatimes.com/sports/cricket/india-under-19-vs-pakistan-under-19-asia-cup-cricket-live-score-aaryavir-sehwag-anvay-dravid-yashbardhan-chauhan/liveblog/135650118.cms",
-        "https://www.bcci.tv/matches/88a0848a-2f7c-4a65-9c53-5aff839b969c/india-under-19s-vs-pakistan-under-19s",
-        "https://www.rediff.com/cricket/report/u19-asia-cup-jr-sehwag-jr-dravid-flop-as-rajput-hits-ton-vs-pakistan/20261108.htm"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR20-2_LOlpjUE7mghuj94OLw-HX5Dydc1ilc85sGDXcnAN5674GzeCqPvldCg",
-      "image_credit": "The Times of India",
-      "news": [
-        {
-          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-under-19-vs-pakistan-under-19-asia-cup-cricket-live-score-aaryavir-sehwag-anvay-dravid-yashbardhan-chauhan/liveblog/135650118.cms",
-          "title": "India vs Pakistan, Under-19 Asia Cup Highlights: Pakistan beat India by 3 wickets",
-          "publisher": "The Times of India",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR20-2_LOlpjUE7mghuj94OLw-HX5Dydc1ilc85sGDXcnAN5674GzeCqPvldCg"
-        },
-        {
-          "url": "https://www.bcci.tv/matches/88a0848a-2f7c-4a65-9c53-5aff839b969c/india-under-19s-vs-pakistan-under-19s",
-          "title": "India Under-19s vs Pakistan Under-19s at Al Amerat, DP World Men’s U19 Asia Cup, 8 Nov 2026",
-          "publisher": "BCCI",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSohTg8PHV0DReNgmSIgZhtZxjnMdYjAlpz6AyTUrL5mH_zMTCN0iN19EuKBh8"
-        },
-        {
-          "url": "https://www.rediff.com/cricket/report/u19-asia-cup-jr-sehwag-jr-dravid-flop-as-rajput-hits-ton-vs-pakistan/20261108.htm",
-          "title": "U19 Asia Cup: Jr Sehwag, Jr Dravid flop as Rajput hits ton vs Pakistan",
-          "publisher": "Rediff",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_Z6Nit4gziIkQDx48vwijLE4rAKjR7DZNq0PuNaeqHQtxlNzPvLPA5xJB6c8"
-        }
-      ]
-    },
-    {
-      "query": "chase brown",
-      "approx_searches": "100+",
-      "published_at": "2026-11-08T12:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/fantasy/football/story/_/id/50357490/fantasy-playbook-projections-lineup-locks-week-9-shadow",
-        "https://sports.yahoo.com/fantasy/article/fantasy-football-start-em-sit-em-justin-boones-week-9-lineup-advice-154600531.html",
-        "https://www.nfl.com/news/nfl-week-9-fantasy-sleepers-giants-qb-j-j-mccarthy-cowboys-wr-ryan-flournoy-offer-upside"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgTv6SNKbc3esf4clUAgrv4idlaINTEFQe4vj3uB95LIr9XpVZmLrRzf0e4D8",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/fantasy/football/story/_/id/50357490/fantasy-playbook-projections-lineup-locks-week-9-shadow",
-          "title": "Fantasy playbook: Week 9 Shadow Reports, lineup locks and projected scores",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgTv6SNKbc3esf4clUAgrv4idlaINTEFQe4vj3uB95LIr9XpVZmLrRzf0e4D8"
-        },
-        {
-          "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-start-em-sit-em-justin-boones-week-9-lineup-advice-154600531.html",
-          "title": "Fantasy Football Start 'Em Sit 'Em: Justin Boone's Week 9 lineup advice",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQasA6_Pf62xwJBhrP_3wrkgNvllA88MQRQMhwiqyqxAGNdSOgf8kK2STweYwE"
-        },
-        {
-          "url": "https://www.nfl.com/news/nfl-week-9-fantasy-sleepers-giants-qb-j-j-mccarthy-cowboys-wr-ryan-flournoy-offer-upside",
-          "title": "NFL Week 9 fantasy sleepers: Giants QB J.J. McCarthy, Cowboys WR Ryan Flournoy offer upside",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6da5UJpu2rZsLUBjmKrM7L3SrdB_LThqovGJizxbFzYPH9lmzbSG4FIPZ2nY"
-        }
-      ]
-    },
-    {
-      "query": "historical stock market cycle analysis",
-      "approx_searches": "100+",
-      "published_at": "2026-11-08T12:40:00Z",
-      "related_news_urls": [
-        "https://www.fool.com/investing/2026/11/08/wall-street-biggest-bubble-looks-ready-to-burst-not-ai-or-quantum-computing/",
-        "https://finance.yahoo.com/markets/stocks/articles/stock-market-doing-something-only-142601595.html",
-        "https://www.morningstar.com.au/markets/is-us-market-expensive-cape-says"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvnEDOlNmfiZas4_BsYxackxoWwtoE3ualPHmxYx0ZGvTkHE_y4z6vz3WX3wA",
-      "image_credit": "The Motley Fool",
-      "news": [
-        {
-          "url": "https://www.fool.com/investing/2026/11/08/wall-street-biggest-bubble-looks-ready-to-burst-not-ai-or-quantum-computing/",
-          "title": "Wall Street's Biggest Bubble Looks Ready to Burst, and I Don't Mean AI or Quantum Computing",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvnEDOlNmfiZas4_BsYxackxoWwtoE3ualPHmxYx0ZGvTkHE_y4z6vz3WX3wA"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-doing-something-only-142601595.html",
-          "title": "The Stock Market Is Doing Something for Only the 5th Time in 30 Years, and History Is Crystal Clear on What Comes Next for Stocks",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQS486qQraYmKENpKnpjDBN7NxY6YIdTcm6HVBtpocTSiet6yNh9MXvUbrGnAo"
-        },
-        {
-          "url": "https://www.morningstar.com.au/markets/is-us-market-expensive-cape-says",
-          "title": "Is the US market as expensive as CAPE says?",
-          "publisher": "Morningstar Australia",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbtpnM-oWZ8zpO-6TGTkszCpPxeZ9Aryao_TsaQpe-NsC19qfg-mfos3HnLKE"
-        }
-      ]
-    },
-    {
-      "query": "atp paris",
-      "approx_searches": "100+",
-      "published_at": "2026-11-08T12:40:00Z",
-      "related_news_urls": [
-        "https://www.lemonde.fr/sport/article/2026/11/06/au-masters-1000-de-paris-les-joueurs-doivent-composer-avec-l-une-des-surfaces-les-plus-rapides-du-circuit_6807758_3242.html",
-        "https://www.sport.fr/tennis/tennis-tout-le-monde-est-bouilli-le-circuit-atp-proche-de-la-saturation-1498291.shtm",
-        "https://www.lequipe.fr/Tennis/Actualites/Cedric-pioline-directeur-du-rolex-paris-masters-les-fans-se-sont-approprie-le-lieu/1742199"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3O-P3Xh7ZiAd4Etc76sQB8RRhLsyueTTxMDvJVcgFrofzHipthToZxcTsfdQ",
-      "image_credit": "Le Monde.fr",
-      "news": [
-        {
-          "url": "https://www.lemonde.fr/sport/article/2026/11/06/au-masters-1000-de-paris-les-joueurs-doivent-composer-avec-l-une-des-surfaces-les-plus-rapides-du-circuit_6807758_3242.html",
-          "title": "Au Masters 1000 de Paris, les joueurs doivent composer avec l’une des surfaces les plus rapides du circuit",
-          "publisher": "Le Monde.fr",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3O-P3Xh7ZiAd4Etc76sQB8RRhLsyueTTxMDvJVcgFrofzHipthToZxcTsfdQ"
-        },
-        {
-          "url": "https://www.sport.fr/tennis/tennis-tout-le-monde-est-bouilli-le-circuit-atp-proche-de-la-saturation-1498291.shtm",
-          "title": "Tennis : « Tout le monde est bouilli », le circuit ATP proche de la saturation !",
-          "publisher": "Sport.fr",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqslMgXR-B1kBLB4xYWbmzK4IUvdetiqdozbUFA3zfQLZPmdJ7m1gA_pBws-4"
-        },
-        {
-          "url": "https://www.lequipe.fr/Tennis/Actualites/Cedric-pioline-directeur-du-rolex-paris-masters-les-fans-se-sont-approprie-le-lieu/1742199",
-          "title": "Cédric Pioline, directeur du Rolex Paris Masters : « Les fans se sont approprié le lieu »",
-          "publisher": "L'Équipe",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQGPUCsrjiN2aorWnwmAG0AJYfbiW2DKlZ3Cwo0BCsKNLIKA4-T1JzSEygv-og"
-        }
-      ]
-    },
-    {
-      "query": "çorum fk - fenerbahçe",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T12:30:00Z",
-      "related_news_urls": [
-        "https://www.sozcu.com.tr/fenerbahce-maci-oncesi-sakatlik-soku-p377201",
-        "https://www.hurriyet.com.tr/sporarena/milli-ara-oncesi-super-ligde-fenerbahce-ve-trabzonspor-deplasmanda-besiktas-ise-evinde-kazanir-iste-mislide-gunun-en-cok-43370406",
-        "https://www.cnnturk.com/spor/futbol/galeri/fenerbahcede-vedat-muriqi-karari-emre-belozoglundan-ilk-hamle-3490133"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS223AL7zzUTQhCKhmwfz065AVp4_Q8B9Y0ZLIBfsc5nglhJQKo5LljsQlxozs",
-      "image_credit": "Sözcü Gazetesi",
-      "news": [
-        {
-          "url": "https://www.sozcu.com.tr/fenerbahce-maci-oncesi-sakatlik-soku-p377201",
-          "title": "Fenerbahçe maçı öncesi Çorum FK'de sakatlık şoku",
-          "publisher": "Sözcü Gazetesi",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS223AL7zzUTQhCKhmwfz065AVp4_Q8B9Y0ZLIBfsc5nglhJQKo5LljsQlxozs"
-        },
-        {
-          "url": "https://www.hurriyet.com.tr/sporarena/milli-ara-oncesi-super-ligde-fenerbahce-ve-trabzonspor-deplasmanda-besiktas-ise-evinde-kazanir-iste-mislide-gunun-en-cok-43370406",
-          "title": "Milli ara öncesi Süper Lig’de Fenerbahçe ve Trabzonspor deplasmanda, Beşiktaş ise evinde kazanır! İşte Misli’de günün en çok oynanan maçları",
-          "publisher": "Hürriyet",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7u8Ey8HFa_YuSmOwJlDrT1BwEKQj7pd3jvxA6PRS4L1RwDTali1J81Cq_ePU"
-        },
-        {
-          "url": "https://www.cnnturk.com/spor/futbol/galeri/fenerbahcede-vedat-muriqi-karari-emre-belozoglundan-ilk-hamle-3490133",
-          "title": "Fenerbahçe'de Vedat Muriqi kararı! Emre Belözoğlu'ndan ilk hamle...",
-          "publisher": "CNN Türk",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeRU5FzsxitGXcYPP24adbpRVZUPvyMVQjxUiau_Q4DB7z0WRp5T1oworngAk"
-        }
-      ]
-    },
-    {
-      "query": "when is veterans day 2026",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T12:30:00Z",
-      "related_news_urls": [
-        "https://wtop.com/local/2026/11/to-thank-or-not-to-thank-veterans-share-how-they-really-feel-about-being-recognized-2/",
-        "https://www.twincities.com/2026/11/08/matt-witt-this-veterans-day-lets-focus-on-preventing-war/",
-        "https://www.lohud.com/story/news/2026/11/08/veterans-day-2026-date-day-federal-holiday-facts/92676132007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQePA_I7vk-6OC3WE4XimatGoC8jFEdEOBntZ62cSaC_FwBtoNAVWUoWW_IWUw",
-      "image_credit": "WTOP News",
-      "news": [
-        {
-          "url": "https://wtop.com/local/2026/11/to-thank-or-not-to-thank-veterans-share-how-they-really-feel-about-being-recognized-2/",
-          "title": "To thank or not to thank? Veterans share how they really feel about being recognized",
-          "publisher": "WTOP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQePA_I7vk-6OC3WE4XimatGoC8jFEdEOBntZ62cSaC_FwBtoNAVWUoWW_IWUw"
-        },
-        {
-          "url": "https://www.twincities.com/2026/11/08/matt-witt-this-veterans-day-lets-focus-on-preventing-war/",
-          "title": "Matt Witt: This Veterans Day, let’s focus on preventing war",
-          "publisher": "Pioneer Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRNSKRXWGiJa3lLtyyGNS0vscj9j3axw3RYA9MA9qWVjufaOSmI3x6ESSBICg"
-        },
-        {
-          "url": "https://www.lohud.com/story/news/2026/11/08/veterans-day-2026-date-day-federal-holiday-facts/92676132007/",
-          "title": "When is Veterans Day? Date, day and federal holiday facts",
-          "publisher": "Lohud",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9jCZNMMls7fEOY6SWL0NJ0Zkycu_q1zjM2tW_ju33T_OoCmEBb7o2MGFRiCM"
-        }
-      ]
-    },
-    {
-      "query": "aston villa vs man utd",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T12:30:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c94g1de1d87lt",
-        "https://www.arsenal.com/news/team-news-three-changes-at-anfield-au2q95r5NWFN",
-        "https://www.liverpoolfc.com/news/wsl-team-news-confirmed-liverpool-line-up-against-arsenal-at-anfield"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvv3xjAfMCgLMcN9qEi36tnJGNf1PrV4-zBJLKvaef9O2hW4m3x-X-qAmr1m8",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjo0m5wyeMbDOriR2deT7nJk_Te3hS4Qoz6d-57M8neMCWWLIUWXklPwT7ZqE",
       "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/c94g1de1d87lt",
-          "title": "Women's Super League LIVE: Liverpool vs Arsenal, Aston Villa vs Man Utd plus three other games",
+          "url": "https://www.bbc.com/sport/football/live/cqkgkwj1rpl8t",
+          "title": "Brighton & Hove Albion vs Brentford: Premier League preview, team news, stats & head-to-head",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvv3xjAfMCgLMcN9qEi36tnJGNf1PrV4-zBJLKvaef9O2hW4m3x-X-qAmr1m8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjo0m5wyeMbDOriR2deT7nJk_Te3hS4Qoz6d-57M8neMCWWLIUWXklPwT7ZqE"
         },
         {
-          "url": "https://www.arsenal.com/news/team-news-three-changes-at-anfield-au2q95r5NWFN",
-          "title": "Team news: Three changes at Anfield",
-          "publisher": "Arsenal.com",
+          "url": "https://www.skysports.com/football/live-blog/13592882/brighton-vs-brentford-live-premier-league-score-updates-news-prediction-line-ups-and-how-to-watch-or-stream",
+          "title": "Brighton vs Brentford LIVE! Premier League score updates, news, prediction, line-ups and how to watch or stream",
+          "publisher": "Sky Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0VkBd0E-wUlWfwv19wGhGmJPQt0K-1u9QgqhdlhdD-Z_RxDzA_6I1nLsp1fU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtLEYBxAMtcRgGu0crkhRdNp-UHYsw3d0FthsVkUf0H1xmT3riUlR2VVHHRzk"
         },
         {
-          "url": "https://www.liverpoolfc.com/news/wsl-team-news-confirmed-liverpool-line-up-against-arsenal-at-anfield",
-          "title": "WSL team news: Confirmed Liverpool line-up against Arsenal at Anfield",
-          "publisher": "Liverpool FC",
+          "url": "https://sports.yahoo.com/articles/brentford-predicted-xi-vs-brighton-000000348.html",
+          "title": "Brentford predicted XI vs Brighton: Bees eye back-to-back wins to gatecrash top four race",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCtVgIjc6Zo0Gqv-nBQhR8PFj9XtytB1Wrrw4wHUMijiNR8D2zl5OASwWXYU8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6q7ZXTCoJtODSmOcCbZ0Ciei4lMGyj53b1oa7x3hRNL_HWX21wsH2alJVbhY"
+        }
+      ]
+    },
+    {
+      "query": "genoa vs milan",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T13:10:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/c63r5edj845vt",
+        "https://sports.yahoo.com/articles/genoa-vs-ac-milan-official-124400241.html",
+        "https://sempremilan.com/six-wins-massa-officiate-genoa-milan"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRINHQZMXEbc-QX9ycPvXQkn9wTIqQXjI8Yg9nnkrPr5jkqqqX4TyviRgYp3eE",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/c63r5edj845vt",
+          "title": "Genoa vs AC Milan: Italian Serie A stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRINHQZMXEbc-QX9ycPvXQkn9wTIqQXjI8Yg9nnkrPr5jkqqqX4TyviRgYp3eE"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/genoa-vs-ac-milan-official-124400241.html",
+          "title": "GENOA vs. AC MILAN: THE OFFICIAL LINE-UPS",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSo9j4tGc0w_dtf1tjkCfMpM0UnpRYE1ByKGedHs56-Y7Qn0utLDna8c-Te20k"
+        },
+        {
+          "url": "https://sempremilan.com/six-wins-massa-officiate-genoa-milan",
+          "title": "Only six wins in 26 games: Davide Massa will officiate Milan’s encounter with Genoa",
+          "publisher": "SempreMilan",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkt-5Ts-qu41uac4LvzSUnkPsD-19UUkjI1CrqrjsdhvBfTa6OiVhDudQve-Q"
+        }
+      ]
+    },
+    {
+      "query": "browns vs saints",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T13:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50399074/cleveland-browns-qb-shedeur-sanders-start-growth-saints",
+        "https://www.cbssports.com/betting/news/browns-vs-saints-odds-picks-prediction-spread-start-time-nfl-week-9-betting-preview-best-bets/",
+        "https://sports.yahoo.com/articles/cleveland-browns-news-going-day-113000778.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSy39EhPGIzBFzaZWJgpWEJEtWCR7o7EivVSEpNvVkYmjoomLhNm6ROu4YZ3A0",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50399074/cleveland-browns-qb-shedeur-sanders-start-growth-saints",
+          "title": "3 ways Browns QB Shedeur Sanders can show growth vs. Saints",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSy39EhPGIzBFzaZWJgpWEJEtWCR7o7EivVSEpNvVkYmjoomLhNm6ROu4YZ3A0"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/browns-vs-saints-odds-picks-prediction-spread-start-time-nfl-week-9-betting-preview-best-bets/",
+          "title": "Browns vs. Saints odds, picks, prediction, spread: Start time, NFL Week 9 betting preview, best bets",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPqFvMVs3XWgsfMQerkvhGF7wr892Ff7Z-1NhxVGwX4KdZosOvG2zYb_OPJr8"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/cleveland-browns-news-going-day-113000778.html",
+          "title": "Cleveland Browns news: It is going to be a day, that’s for sure!",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLQ9EOV7UWbZ7JkqLISkaHWY3sy3cgFjM9SYXqgeiLYnL_cysSIXjklWm4ls8"
+        }
+      ]
+    },
+    {
+      "query": "amber heard",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T13:10:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/film/2026/nov/07/johnny-depp-ebenezer-film-scrooge-hollywood",
+        "https://pagesix.com/2026/11/03/society/johnny-depp-hosts-private-ebenezer-screening-teyana-taylor-throws-vip-party-and-more-sightings/",
+        "https://www.yahoo.com/entertainment/movies/articles/johnny-depp-ebenezer-scrooge-ruins-175130983.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3XNbTVUvgtPyS3L3nepumdeUQZFMGHFJwaxi57vnk3KsvwlI0k0RDbpd5r3I",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/film/2026/nov/07/johnny-depp-ebenezer-film-scrooge-hollywood",
+          "title": "Hollywood banks on Ebenezer to bring Johnny Depp in from the cold",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3XNbTVUvgtPyS3L3nepumdeUQZFMGHFJwaxi57vnk3KsvwlI0k0RDbpd5r3I"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/03/society/johnny-depp-hosts-private-ebenezer-screening-teyana-taylor-throws-vip-party-and-more-sightings/",
+          "title": "Johnny Depp hosts private 'Ebenezer' screening, Teyana Taylor throws VIP party and more sightings",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnpjDftnXnf-Vr0ADpmUQT4ePzn0jfSu9s7fikBwdz2CgkWpFf5TzRi0RiSkc"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/johnny-depp-ebenezer-scrooge-ruins-175130983.html",
+          "title": "Johnny Depp’s Ebenezer Scrooge Ruins Everyone’s Christmas in New Videos: ‘Shut Up!’",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTs8DatUqNXIQMZoRZmazatr-sFCg_9_fMLtxOU7hNZ_gofa5I4q69_58ceK0Y"
+        }
+      ]
+    },
+    {
+      "query": "west bend",
+      "approx_searches": "100+",
+      "published_at": "2026-11-08T13:10:00Z",
+      "related_news_urls": [
+        "https://www.jsonline.com/story/news/crime/2026/11/07/west-bend-police-working-scene-ask-public-to-avoid-area/92663620007/",
+        "https://www.fox6now.com/news/police-actively-responding-incident-west-bend-home",
+        "https://www.wisn.com/article/west-bend-police-washington-street/74365645"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-UMR-YBJYNLIwirNCoez4TTx_QqLCdSN59GE5m_4UDs8PghDFLl49ysTUOF4",
+      "image_credit": "Milwaukee Journal Sentinel",
+      "news": [
+        {
+          "url": "https://www.jsonline.com/story/news/crime/2026/11/07/west-bend-police-working-scene-ask-public-to-avoid-area/92663620007/",
+          "title": "Four dead, one injured in West Bend shooting, gun found in home",
+          "publisher": "Milwaukee Journal Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-UMR-YBJYNLIwirNCoez4TTx_QqLCdSN59GE5m_4UDs8PghDFLl49ysTUOF4"
+        },
+        {
+          "url": "https://www.fox6now.com/news/police-actively-responding-incident-west-bend-home",
+          "title": "West Bend death investigation; 2 kids, 2 adults",
+          "publisher": "FOX6 News Milwaukee",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKCM4XwrTNtyoQ3mkgCJbKaInht115L7o4TZ08NiNcfuZ6K5viN8VCkKo36YM"
+        },
+        {
+          "url": "https://www.wisn.com/article/west-bend-police-washington-street/74365645",
+          "title": "4 people, including 2 kids, found dead inside West Bend home; police believe suspect among dead",
+          "publisher": "WISN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBVb-3upLd2E8sMt3N7lC_B2tEHc0M8_gExqTt7Jkw7RH0DFBep2ZDmFFXcRo"
+        }
+      ]
+    },
+    {
+      "query": "sunderland vs chelsea",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-08T13:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cwm23qne5pqyt",
+        "https://www.skysports.com/football/live-blog/13592893/sunderland-vs-chelsea-live-premier-league-score-updates-news-prediction-line-ups-and-how-to-watch-or-stream",
+        "https://www.si.com/soccer/sunderland-vs-chelsea-preview-predictions-lineups-11-8-26"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRN--8Qxk6SpVhYXwKc4J4qEPcP50q02xE_7RsnzoH922nT9Jms7MqfUebM38",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cwm23qne5pqyt",
+          "title": "Sunderland vs Chelsea: Premier League preview, team news, stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRN--8Qxk6SpVhYXwKc4J4qEPcP50q02xE_7RsnzoH922nT9Jms7MqfUebM38"
+        },
+        {
+          "url": "https://www.skysports.com/football/live-blog/13592893/sunderland-vs-chelsea-live-premier-league-score-updates-news-prediction-line-ups-and-how-to-watch-or-stream",
+          "title": "Sunderland vs Chelsea LIVE! Premier League score updates, news, prediction, line-ups and how to watch or stream",
+          "publisher": "Sky Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOEVt7bu6rmAdHRN06E4Q6DOHnqPZFJsbpK4Owa9z68c-PFJNfkpMtrZU42Lc"
+        },
+        {
+          "url": "https://www.si.com/soccer/sunderland-vs-chelsea-preview-predictions-lineups-11-8-26",
+          "title": "Sunderland vs. Chelsea: Preview, Predictions and Lineups",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-7mVmbnFogLen0tjFoIzzILccGh1bmO8Ow6cCA9ObvAOYcVxNaNrXz11EolQ"
+        }
+      ]
+    },
+    {
+      "query": "dustin hoffman",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T13:00:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/video/6408082952112",
+        "https://www.newyorker.com/culture/the-weekend-essay/dustin-hoffman-on-surviving-the-graduate",
+        "https://www.yahoo.com/news/videos/news-week-dustin-hoffman-details-110000484.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXKIJaSInTH_gjtbCwgQsPf0netQ7HNVEDZfC9gFaRy_8TNfRVjz5iFomcLA0",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/video/6408082952112",
+          "title": "Dustin Hoffman had a 'terrible experience' making Hollywood classic 'The Graduate'",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXKIJaSInTH_gjtbCwgQsPf0netQ7HNVEDZfC9gFaRy_8TNfRVjz5iFomcLA0"
+        },
+        {
+          "url": "https://www.newyorker.com/culture/the-weekend-essay/dustin-hoffman-on-surviving-the-graduate",
+          "title": "Dustin Hoffman on Surviving “The Graduate”",
+          "publisher": "The New Yorker",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXSxC0o_qh8bGWu9_3T5I4YiEBiXl4g0y9oUs9rHyOHu9kUhtXp50nu4zUqF4"
+        },
+        {
+          "url": "https://www.yahoo.com/news/videos/news-week-dustin-hoffman-details-110000484.html",
+          "title": "NEWS OF THE WEEK: Dustin Hoffman details 'terrible' time filming The Graduate",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXa74tfH6gZPFDPDBXkcTGRfIJrPnP8cVbhRKJ0Nx_ZQm5vPSTVDDsDQvVuRw"
+        }
+      ]
+    },
+    {
+      "query": "children's place",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T13:00:00Z",
+      "related_news_urls": [
+        "https://www.retaildive.com/news/the-childrens-place-leadership-shakeup-bankruptcy-rumors/874004/",
+        "https://finance.yahoo.com/small-business/articles/childrens-place-may-closing-stores-100145788.html",
+        "https://www.al.com/business/2026/11/north-alabama-distribution-center-expected-to-close-laying-off-593-workers.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQOBYhDikZ2ycnF7-Ik1Ng3O_dU4IKMze72sjmLkgLjLLdESzVJRu9abXsorY",
+      "image_credit": "Retail Dive",
+      "news": [
+        {
+          "url": "https://www.retaildive.com/news/the-childrens-place-leadership-shakeup-bankruptcy-rumors/874004/",
+          "title": "The Children’s Place shakes up leadership amid bankruptcy rumors",
+          "publisher": "Retail Dive",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQOBYhDikZ2ycnF7-Ik1Ng3O_dU4IKMze72sjmLkgLjLLdESzVJRu9abXsorY"
+        },
+        {
+          "url": "https://finance.yahoo.com/small-business/articles/childrens-place-may-closing-stores-100145788.html",
+          "title": "The Children's Place may be closing all its stores — here's what parents need to know",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKPAtDb4mAcXKGo2lkwNS7tM64vICWSzaurHVcC-jLl7YA7_n-UJ9VOibARok"
+        },
+        {
+          "url": "https://www.al.com/business/2026/11/north-alabama-distribution-center-expected-to-close-laying-off-593-workers.html",
+          "title": "North Alabama distribution center expected to close, laying off 593 workers",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwoRnf9C0V6V8aN-yuA6acy8pdlQmP3g9V435GFzXOin10-VRtgEeEmklskAk"
+        }
+      ]
+    },
+    {
+      "query": "boston half marathon 2026",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T13:00:00Z",
+      "related_news_urls": [
+        "https://www.wcvb.com/article/baa-half-marathon-weather-2026/74298768",
+        "https://world-track.org/2026/11/how-to-watch-the-2026-boston-half-runners-live-results-leaderboards-and-tracking/",
+        "https://world-track.org/2026/11/sara-hall-emily-durgin-american-women-2026-boston-half-marathon/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROW99YFnUsMT0MKEcqzvpNF2VcEbj7dEU5vXHw_l7bFGw3ho2CCuTSy8HoM6M",
+      "image_credit": "WCVB",
+      "news": [
+        {
+          "url": "https://www.wcvb.com/article/baa-half-marathon-weather-2026/74298768",
+          "title": "Boston Half Marathon 2026 weather forecast",
+          "publisher": "WCVB",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROW99YFnUsMT0MKEcqzvpNF2VcEbj7dEU5vXHw_l7bFGw3ho2CCuTSy8HoM6M"
+        },
+        {
+          "url": "https://world-track.org/2026/11/how-to-watch-the-2026-boston-half-runners-live-results-leaderboards-and-tracking/",
+          "title": "How to watch the 2026 Boston Half runners: Live Results, Leaderboards and Tracking",
+          "publisher": "World-Track",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqY9CuPY7Ei_nxNOV6xwuQ6zzHcOVxdnvum1svgB1lWAHKTVK9nxwp02Rhxow"
+        },
+        {
+          "url": "https://world-track.org/2026/11/sara-hall-emily-durgin-american-women-2026-boston-half-marathon/",
+          "title": "Sara Hall, Emily Durgin lead American women entries at 2026 Boston Half Marathon",
+          "publisher": "World-Track",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1saN_VoYd0_Tf7RoJYe3kyjN-mefaDY2lWh5DZSlNJ7W2PiPejQEldPZ9mHc"
         }
       ]
     }
