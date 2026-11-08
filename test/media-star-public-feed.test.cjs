@@ -35,3 +35,11 @@ test('unapproved, malformed and duplicate media never reach public cards; paid s
  assert.equal(cards[0].episodes[1].requiresUnlock,true);
  assert.equal(core.safePublicMediaUrl('https://127.0.0.1/secret'),null);
 });
+
+test('native media starts a distinct server session and finishes once after foreground playback',()=>{
+ assert.match(SRC,/beginMediaStarPlayback/);
+ assert.match(SRC,/completeMediaStarPlayback/);
+ assert.match(SRC,/sessionId/);
+ assert.match(SRC,/seconds>=35/);
+ assert.doesNotMatch(SRC,/recordProductionPlay\(/);
+});
