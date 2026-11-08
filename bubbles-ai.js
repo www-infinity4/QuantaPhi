@@ -1080,7 +1080,26 @@ const actions=create('div','ba-actions');
 const mic=create('button','ba-mic','🎙 Enable listening');mic.type='button';mic.setAttribute('aria-pressed','false');
 const speak=create('button','ba-speak','🔇 Voice off');speak.type='button';speak.setAttribute('aria-pressed','false');
 const send=create('button','ba-send','Send');send.type='submit';
-actions.append(photoRow,mic,speak,send);composer.append(input,photoPreview,actions);
+// Claude is a model choice inside the existing Bubbles conversation, not a replacement chat.
+// Selecting a model changes routing only: owner auth and repair approvals remain separate.
+const modelRow=create('div','ba-model-row');
+modelRow.style.cssText='display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:3px 0 8px;';
+const modelLabel=create('label','ba-muted','Chat model');modelLabel.setAttribute('for','ba-chat-model');
+const modelChoice=create('select','ba-field');
+modelChoice.id='ba-chat-model';modelChoice.setAttribute('aria-label','Chat model');
+modelChoice.style.cssText='min-height:44px;min-width:140px;max-width:230px;font-size:16px;flex:1;';
+const bubblesModel=create('option','','Bubbles');bubblesModel.value='bubbles';
+const claudeModel=create('option','','Claude');claudeModel.value='claude';claudeModel.disabled=embedded;
+modelChoice.append(bubblesModel,claudeModel);modelChoice.value='bubbles';
+const modelNote=create('span','ba-muted','Claude can inspect and propose fixes; deployment needs separate approval.');
+modelNote.style.cssText='font-size:12px;line-height:1.4;flex:3;min-width:170px;';
+modelRow.append(modelLabel,modelChoice,modelNote);
+modelChoice.addEventListener('change',()=>{
+ const usingClaude=modelChoice.value==='claude';
+ input.placeholder=usingClaude?'Message Claude, or say Fix Bubbles…':nativeOverlay?'Message Bubbles or paste a code…':'Say something, ask a question, or describe a task…';
+ status.textContent=usingClaude?'Claude selected. Repairs are proposals until independently authorized.':'Bubbles selected.';
+});
+actions.append(photoRow,mic,speak,send);composer.append(modelRow,input,photoPreview,actions);
 // Account connector pairing stays beside the message box in website and APK chat.
 const connectorCodeButton=create('button','ba-control ba-connector-code','Create one-time connection code');
 connectorCodeButton.type='button';
@@ -2425,6 +2444,30 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  let failedTurn=false;
  try{
  if(spoken&&await consumeOwnerCodeFromChat(spoken,fromVoice))return;
+ // A deliberate Claude choice applies to the main Bubbles composer and skips
+ // unrelated Oracle/tool routing. No text or attachments may be silently lost.
+ if(!embedded&&modelChoice.value==='claude'){
+  let decision;
+  try{
+   const {routeClaudeTurn}=await import('/bubbles-claude-routing.mjs?v=20261108-claude-choice1');
+   decision=routeClaudeTurn(modelChoice.value,spoken,Boolean(pendingImage||pendingImages.length));
+  }catch(error){
+   status.textContent='Claude routing unavailable: '+String(error.message||error).slice(0,110)+'. Your message was preserved.';
+   return;
+  }
+  if(decision?.mode==='unsupported_image'){
+   status.textContent='Claude currently accepts text only. Switch to Bubbles for attached images; the draft is preserved.';
+   return;
+  }
+  if(decision?.mode==='empty')return;
+  if(!window.ClaudeSteward){
+   status.textContent='Claude is not loaded on this page. No message was sent. Your draft is preserved.';
+   return;
+  }
+  clearSentComposer();
+  await askClaudeSteward(decision.prompt,decision.mode);
+  return;
+ }
  // A new turn begins without granting credits; Personal Context must verify first.
  if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'turn_started'}}));
  // Read the separately authenticated Bubbles owner archive BEFORE routing tools.
