@@ -8,7 +8,7 @@ test('public media cards mount only from the Cloudflare moderated creator feed i
  assert.match(SRC,/v1\/production\/media-star-cards/);
  assert.match(SRC,/normalizeMediaStarPublicCatalog/);
  assert.match(SRC,/infinityAcceptedCards/);
- assert.match(SRC,/data\.sourceReady='true'/);
+ assert.match(SRC,/dataset\.sourceReady='true'/);
  assert.match(SRC,/quantaphi:source-cards-ready/);
  assert.match(HTML,/media-star-public-cards\.mjs/);
  assert.match(HTML,/media-star-public-cards\.css/);
