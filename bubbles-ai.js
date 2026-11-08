@@ -2427,7 +2427,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // never an inferred tool command, write lease or new runner dispatch.
  if(!embedded){
   let branchStatusModule=null;
-  try{branchStatusModule=await import('/bubbles-branch-status.mjs?v=20261107-authenticated-read1')}catch{}
+  try{branchStatusModule=await import('/bubbles-branch-status.mjs?v=20261107-verified-receipt2')}catch{}
   const branchStatusQuery=branchStatusModule?.parseBranchStatusQuery(spoken);
   if(branchStatusQuery){
    const receiptThread=activeThread,operationId=crypto.randomUUID();
