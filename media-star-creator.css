@@ -34,3 +34,10 @@
 #mediaStarCreator .ms-creator-ledger h3{font-size:20px;line-height:1.3;margin:0 0 10px;color:#392351}
 #mediaStarCreator .ms-creator-ledger-status{font-size:16px;line-height:1.5;overflow-wrap:anywhere;margin-top:10px}
 #mediaStarCreator .ms-creator-ledger-row{padding:9px 0;border-top:1px solid #d7bf8a;margin:8px 0}
+
+/* Explicit owner proof submission: never auto-claim or imply funded credits. */
+#mediaStarCreator .ms-creator-identity{border:1px solid #bea36f;background:#fffaf0;color:#37264e;border-radius:16px;padding:16px;margin-top:18px}
+#mediaStarCreator .ms-creator-identity h3{font-size:20px;line-height:1.3;color:#37264e;margin:0 0 9px}
+#mediaStarCreator .ms-rights-attestation{display:flex;gap:12px;align-items:flex-start;font-size:16px;line-height:1.5;margin:12px 0}
+#mediaStarCreator .ms-rights-attestation input{width:22px;height:22px;flex:0 0 22px;min-width:22px;margin:2px 0 0}
+#mediaStarCreator .ms-creator-identity button{min-height:48px;font-size:16px}
