@@ -317,13 +317,13 @@ function eligible(){
 function updatePreferenceControls(){
  const hidden=feedState?.hiddenForYou||[];
  if(notForMe){
-  notForMe.hidden=!active||nonProfiling(active);
+  notForMe.hidden=!directionApi||!active||nonProfiling(active);
   const excluded=!!active&&hidden.includes(active.feedId);
   notForMe.textContent=excluded?'Show in For You':'Not for me';
   notForMe.setAttribute('aria-pressed',String(excluded));
  }
  if(restoreHidden){
-  restoreHidden.hidden=hidden.length===0;
+  restoreHidden.hidden=!directionApi||hidden.length===0;
   restoreHidden.textContent='Restore hidden ('+hidden.length+')';
  }
 }
@@ -334,7 +334,7 @@ function updateTabs(){
   button.disabled=count===0;
   const total=button.querySelector('[data-family-count]');if(total){total.textContent='';total.hidden=true;}
  }
- tabButtons.forEach(b=>{const on=b.dataset.oracleFeed===selectedTab;b.setAttribute('aria-selected',String(on));b.classList.toggle('oracle-current',on);});
+ tabButtons.forEach(b=>{const on=b.dataset.oracleFeed===selectedTab;b.disabled=!directionApi;b.setAttribute('aria-selected',String(on));b.classList.toggle('oracle-current',on);});
  followingPublisherFeed?.sync({tab:selectedTab});
  updatePreferenceControls();
  if(follow){
