@@ -63,7 +63,7 @@
 .infinity-affiliates-card .ia-advertiser-form fieldset{border:0;padding:0;margin:0;min-width:0;display:grid;gap:8px}
 .infinity-affiliates-card .ia-advertiser-form legend{font-weight:900;margin-bottom:9px}
 .infinity-affiliates-card .ia-advertiser-choice{display:flex;gap:10px;align-items:flex-start;border:1px solid #c1d5e2;border-radius:13px;padding:11px;background:#fff}
-.infinity-affiliates-card .ia-advertiser-choice input{margin-top:3px;flex:none;width:22px;height:22px}
+.infinity-affiliates-card .ia-advertiser-choice input{margin-top:3px;flex:none;width:22px;height:22px;min-height:22px;accent-color:#236e95}
 .infinity-affiliates-card .ia-advertiser-choice strong{display:block;color:#183f60;font-size:17px}
 .infinity-affiliates-card .ia-advertiser-choice small{display:block;color:#455f72;font-size:13px;line-height:1.5;margin-top:4px;font-weight:500}
 .infinity-affiliates-card .ia-advertiser-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
