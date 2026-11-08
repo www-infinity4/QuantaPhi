@@ -44,7 +44,8 @@ async function ownerHeaders(){
 }
 async function checkConnection(){
  const owner=await ownerHeaders();
- const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),12000);
+ // 8s Brain owner verification + 12s Anthropic metadata + transport overhead.
+ const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),27000);
  try{
   // Read-only model metadata, NOT an Anthropic /v1/messages inference request.
   const res=await fetch(URL_MODEL_CHECK,{method:'GET',headers:{...owner,Accept:'application/json'},
@@ -54,11 +55,11 @@ async function checkConnection(){
   return data;
  }finally{clearTimeout(timer)}
 }
-async function call(text,mode,evidence){
+async function call(text,mode,evidence,assistContext){
  const headers=await ownerHeaders();
  // Size the actual UTF-8 HTTP body, dropping old history before rejecting a turn.
- const messages=[...turns.slice(-11),{role:'user',text}];
- const encode=()=>JSON.stringify({mode,messages,evidence});
+ const messages=[...(mode==='assist'?[]:turns.slice(-11)),{role:'user',text}];
+ const encode=()=>JSON.stringify({mode,messages,evidence,...(mode==='assist'?{assistContext}: {})});
  let body=encode();
  while(new TextEncoder().encode(body).length>27000&&messages.length>1){
   messages.shift();body=encode();
@@ -99,7 +100,7 @@ function describeError(code){
  const errors={
   anthropic_not_configured:'Claude API has no key configured on the Worker.',
   anthropic_authentication_failed:'Claude API rejected the existing key or credential.',
-  anthropic_billing_required:'Claude API billing or credits are unavailable. No paid call completed.',
+  anthropic_billing_required:'Claude API reported a billing or credit problem. Completed usage and charges were not verified.',
   anthropic_access_forbidden:'Claude API key does not have access to this model or workspace.',
   anthropic_model_unavailable:'Claude API model is not available for this account.',
   anthropic_invalid_request:'Claude rejected the request format. The source needs repair.',
@@ -113,7 +114,7 @@ function describeError(code){
  return (errors[String(code||'')]||'Claude could not confirm a response.')+
   ' Bubbles has not counted this as a completed Claude reply.';
 }
-async function ask(text,{mode='chat',evidence,inline=false}={}){
+async function ask(text,{mode='chat',evidence,inline=false,assistContext}={}){
  const clean=String(text||'').trim().slice(0,3000);
  if(!clean||busy)return null;
  busy=true;mount();if(!inline)open();
@@ -123,8 +124,8 @@ async function ask(text,{mode='chat',evidence,inline=false}={}){
  try{
   const diagnostic=mode==='fix'||/what is broken|look at the recent bubbles chat/i.test(clean);
   const ev=evidence??(diagnostic&&typeof root.__bubblesRecentMessages==='function'?root.__bubblesRecentMessages():[]);
-  data=await call(clean,mode,ev);
-  turns.push({role:'user',text:clean},{role:'assistant',text:data.reply});turns=turns.slice(-24);save();
+  data=await call(clean,mode,ev,assistContext);
+  if(mode!=='assist'){turns.push({role:'user',text:clean},{role:'assistant',text:data.reply});turns=turns.slice(-24);save();}
   if(wait)wait.textContent=data.reply;
   if(!inline&&data.tickets?.length)for(const ticket of data.tickets){
    const state=String(ticket.status||'unknown');
