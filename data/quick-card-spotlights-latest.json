@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-08T18:18:59.869910Z",
+  "checked_at": "2026-11-08T19:18:32.772222Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -371,17 +371,17 @@
     },
     "gmc-sierra-2026": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T13:18:26.871317Z",
+      "attempted_at": "2026-11-08T19:18:32.772222Z",
       "items": []
     },
     "gmc-denali-2026": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T13:18:26.871317Z",
+      "attempted_at": "2026-11-08T19:18:32.772222Z",
       "items": []
     },
     "carhartt-shop": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T13:18:26.871317Z",
+      "attempted_at": "2026-11-08T19:18:32.772222Z",
       "items": [
         {
           "url": "https://www.carhartt.com/product/104392?icid=2026-11-03_hp__prdpk_none_clickable_pdp_out-gft_outerwear-shovel-104392_allvisitors_lifestyle_21634",
@@ -389,7 +389,7 @@
           "title": "HeMen's Washed Duck Sierra Jacket",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T13:18:26.871317Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Clothing"
         },
         {
@@ -398,7 +398,7 @@
           "title": "Outerwear for the family",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T13:18:26.871317Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Clothing"
         },
         {
@@ -407,7 +407,7 @@
           "title": "Outerwear for the family",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T13:18:26.871317Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Clothing"
         },
         {
@@ -416,7 +416,7 @@
           "title": "Men's Washed Duck Active Jac",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T13:18:26.871317Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Clothing"
         },
         {
@@ -1827,7 +1827,7 @@
     },
     "denver-sams-no3": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T13:18:26.871317Z",
+      "attempted_at": "2026-11-08T19:18:32.772222Z",
       "items": [
         {
           "url": "https://samsno3.com/",
@@ -1835,7 +1835,7 @@
           "title": "Sam's No. 3 - Denver's Best Diner",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T13:18:26.871317Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Restaurants"
         },
         {
@@ -1844,7 +1844,7 @@
           "title": "Sam's No. 3 - Denver's Best Diner",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T13:18:26.871317Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Restaurants"
         },
         {
@@ -1853,7 +1853,7 @@
           "title": "Sam's No. 3 - Denver's Best Diner",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T13:18:26.871317Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Restaurants"
         },
         {
@@ -1862,19 +1862,19 @@
           "title": "Sam's No. 3 - Denver's Best Diner",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T13:18:26.871317Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Restaurants"
         }
       ]
     },
     "denver-work-and-class": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T13:18:26.871317Z",
+      "attempted_at": "2026-11-08T19:18:32.772222Z",
       "items": []
     },
     "denver-major-tom": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T13:18:26.871317Z",
+      "attempted_at": "2026-11-08T19:18:32.772222Z",
       "items": [
         {
           "url": "https://majortomdenver.com/",
@@ -1882,7 +1882,7 @@
           "title": "Major Tom",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T13:18:26.871317Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Restaurants"
         },
         {
@@ -1891,14 +1891,14 @@
           "title": "Major Tom | RiNo Restaurant, Dinner, Champagne & Cocktails | Denver",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T13:18:26.871317Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Restaurants"
         }
       ]
     },
     "denver-steubens": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T13:18:26.871317Z",
+      "attempted_at": "2026-11-08T19:18:32.772222Z",
       "items": [
         {
           "url": "https://steubens.com/",
@@ -1906,7 +1906,7 @@
           "title": "Steubens - Uptown, Denver, CO",
           "kind": "website",
           "description": "American Regional Classics, Steuben’s is named after a restaurant in Boston that my Great Uncles, Max and Joe, opened in 1945. Steuben's became a famous Boston restaurant, nightclub, ...",
-          "checked_at": "2026-11-08T13:18:26.871317Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Restaurants"
         },
         {
@@ -1915,7 +1915,7 @@
           "title": "slideshow photo number 1",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T13:18:26.871317Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Restaurants"
         },
         {
@@ -1924,7 +1924,7 @@
           "title": "slideshow photo number 2",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T13:18:26.871317Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Restaurants"
         },
         {
@@ -1933,19 +1933,19 @@
           "title": "slideshow photo number 3",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T13:18:26.871317Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Restaurants"
         }
       ]
     },
     "denver-hampton-social": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T13:18:26.871317Z",
+      "attempted_at": "2026-11-08T19:18:32.772222Z",
       "items": []
     },
     "denver-rhein-haus": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T13:18:26.871317Z",
+      "attempted_at": "2026-11-08T19:18:32.772222Z",
       "items": [
         {
           "url": "https://www.rheinhausdenver.com/",
@@ -1953,7 +1953,7 @@
           "title": "Rhein Haus Denver | Experience Bavarian Dining Today",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T13:18:26.871317Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Restaurants"
         },
         {
@@ -1962,7 +1962,7 @@
           "title": "Rhein Haus Denver | Experience Bavarian Dining Today",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T13:18:26.871317Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Restaurants"
         },
         {
@@ -1971,7 +1971,7 @@
           "title": "Rhein Haus Denver | Experience Bavarian Dining Today",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T13:18:26.871317Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Restaurants"
         },
         {
@@ -1980,19 +1980,19 @@
           "title": "Rhein Haus Denver | Experience Bavarian Dining Today",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T13:18:26.871317Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Restaurants"
         }
       ]
     },
     "denver-atomic-cowboy": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T13:18:26.871317Z",
+      "attempted_at": "2026-11-08T19:18:32.772222Z",
       "items": []
     },
     "denver-casa-bonita": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T13:18:26.871317Z",
+      "attempted_at": "2026-11-08T19:18:32.772222Z",
       "items": [
         {
           "url": "https://www.casabonitadenver.com/",
@@ -2000,7 +2000,7 @@
           "title": "Casa Bonita",
           "kind": "website",
           "description": "The Greatest Restaurant in the World!",
-          "checked_at": "2026-11-08T13:18:26.871317Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Restaurants"
         },
         {
@@ -2009,7 +2009,7 @@
           "title": "Shop Official Merchandise",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T13:18:26.871317Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Restaurants"
         },
         {
@@ -2018,7 +2018,7 @@
           "title": "View Our Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T13:18:26.871317Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Restaurants"
         },
         {
@@ -2027,7 +2027,7 @@
           "title": "Prepare For Your Visit",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T13:18:26.871317Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Restaurants"
         }
       ]
@@ -6782,7 +6782,7 @@
     },
     "durable-s-t-dupont": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T12:21:58.844211Z",
+      "attempted_at": "2026-11-08T19:18:32.772222Z",
       "items": [
         {
           "url": "https://www.st-dupont.com/collections/customisable-lighters",
@@ -6790,7 +6790,7 @@
           "title": "Customisable lighters",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6799,7 +6799,7 @@
           "title": "Cohiba 60",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6808,7 +6808,7 @@
           "title": "85th Anniversary",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6817,7 +6817,7 @@
           "title": "Popote",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6826,7 +6826,7 @@
           "title": "Lacquered lighter",
           "kind": "product",
           "description": "S.T. Dupont and the Paris Opera unveil a new limited-edition collection: Phantom of the Paris Opera. In Paris, beneath the gilded splendour of the Palais Garnier, when the murmur of the audience fades and the curtain falls, another story begins; invisible, yet",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1765.00",
@@ -6841,7 +6841,7 @@
           "title": "Lacquered lighter",
           "kind": "product",
           "description": "S.T. Dupont and the Paris Opera unveil a new limited-edition collection: Phantom of the Paris Opera. In Paris, beneath the gilded splendour of the Palais Garnier, when the murmur of the audience fades and the curtain falls, another story begins; invisible, yet",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "345.00",
@@ -6856,7 +6856,7 @@
           "title": "Fountain pen large",
           "kind": "product",
           "description": "S.T. Dupont and the Paris Opera unveil a new limited-edition collection: Phantom of the Paris Opera. In Paris, beneath the gilded splendour of the Palais Garnier, when the murmur of the audience fades and the curtain falls, another story begins; invisible, yet",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1665.00",
@@ -6869,7 +6869,7 @@
     },
     "durable-duluth-pack": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T12:21:58.844211Z",
+      "attempted_at": "2026-11-08T19:18:32.772222Z",
       "items": [
         {
           "url": "https://duluthpack.com/products/pack-2-duluth",
@@ -6877,7 +6877,7 @@
           "title": "#2 Original Canoe Pack - 59 L in tough 15-ounce canvas with rugged leather straps, designed for outdoor hiking and canoeing by Duluth Pack.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6886,7 +6886,7 @@
           "title": "#3 Monarch Pack - 54 L in durable olive canvas with rich brown leather straps, showcasing handcrafted rugged outdoor design by Duluth Pack for adventure use.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6895,7 +6895,7 @@
           "title": "#3 Original Pack - 72 L in tough green canvas with rugged leather straps, crafted by Duluth Pack for durable outdoor use and heritage-inspired adventure gear.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6904,7 +6904,7 @@
           "title": "#3-70 Utility Pack - 60 L in olive canvas with leather straps, designed for rugged outdoor use and durable everyday carry by Duluth Pack.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6913,7 +6913,7 @@
           "title": "#2 Original Canoe Pack - 56 L",
           "kind": "product",
           "description": "One of the original designs created by Duluth Pack's founder, Camille Poirier. The #2 Original Pack by Duluth Pack has been time-tested for over a century. Constructed of our rugged canvas, the #2 Original Pack sports three guaranteed-for-life buckle strap clo",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "249.95",
@@ -6929,7 +6929,7 @@
           "title": "#2 Original Canoe Pack - 56 L",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": null
         },
@@ -6939,7 +6939,7 @@
           "title": "#3 Monarch Pack - 54 L",
           "kind": "product",
           "description": "A traditional-style canoe pack that has been an essential for outdoor travels for generations. The craftsmanship of the #3 Monarch Pack by Duluth Pack is in its own class. The rugged design is built with hardcore use in mind. Built to be used, the #3 Monarch P",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "524.95",
@@ -6955,7 +6955,7 @@
           "title": "#3 Original Canoe Pack - 72 L",
           "kind": "product",
           "description": "The #3 Original Duluth Pack has been the time-tested favorite for generations of wilderness travelers and explorers. The rugged durability of this pack allows one to carry the canoe while wearing the pack and is made to fit the confines of a canoe for when you",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "274.95",
@@ -6969,7 +6969,7 @@
     },
     "durable-swaine-adeney-brigg": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T12:21:58.844211Z",
+      "attempted_at": "2026-11-08T19:18:32.772222Z",
       "items": [
         {
           "url": "https://us.swaine.london/collections/small-leather-goods",
@@ -6977,7 +6977,7 @@
           "title": "Bridle Business Card Case - Navy - Swaine Group Ltd",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6986,7 +6986,7 @@
           "title": "Diana's 14\" Cambridge Holdall - Havana - Swaine Group Ltd",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6995,7 +6995,7 @@
           "title": "Diana's 14\" Cambridge Holdall - Havana - Swaine Group Ltd",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7004,7 +7004,7 @@
           "title": "Collapsible Umbrella with Whangee Handle - Black - Swaine",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7013,7 +7013,7 @@
           "title": "Brigitte Ruffle Origami - English Rose Rabbit - Swaine Group Ltd",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7022,7 +7022,7 @@
           "title": "Brigitte Ruffle Origami - English Rose Rabbit - Swaine Group Ltd",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7031,7 +7031,7 @@
           "title": "Brigitte Ruffle Origami - English Rose Rabbit - Swaine Group Ltd",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7040,19 +7040,19 @@
           "title": "Bel-Air Handbag - Ostrich Leather (Polished Brass) Blue and white - Swaine Group Ltd",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         }
       ]
     },
     "durable-herman-miller-aeron-eames-line": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T12:21:58.844211Z",
+      "attempted_at": "2026-11-08T19:18:32.772222Z",
       "items": []
     },
     "durable-steelcase": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T12:21:58.844211Z",
+      "attempted_at": "2026-11-08T19:18:32.772222Z",
       "items": [
         {
           "url": "https://www.steelcase.com/",
@@ -7060,7 +7060,7 @@
           "title": "Steelcase - Office Furniture Solutions, Education & Healthcare Furniture",
           "kind": "website",
           "description": "The leading manufacturer of furniture for offices, hospitals, and classrooms. Our furniture is inspired by innovative research in workspace design.",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7069,7 +7069,7 @@
           "title": "Steelcase - Office Furniture Solutions, Education & Healthcare Furniture",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7078,7 +7078,7 @@
           "title": "More Choice for Every Detail​",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7087,7 +7087,7 @@
           "title": "Steelcase - Office Furniture Solutions, Education & Healthcare Furniture",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7096,7 +7096,7 @@
           "title": "CF Series Single & Dual Adjustable Monitor Arm Mount | Steelcase",
           "kind": "website",
           "description": "Capable of supporting a range of weights, the CF Series flat screen monitor arm is a reliable and adjustable solution for your computer support needs.",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7105,7 +7105,7 @@
           "title": "CF Pro Monitor Arm",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7114,7 +7114,7 @@
           "title": "CF Pro Monitor Arm",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7123,14 +7123,14 @@
           "title": "CF Pro Monitor Arm",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         }
       ]
     },
     "durable-usm-modular-furniture": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T12:21:58.844211Z",
+      "attempted_at": "2026-11-08T19:18:32.772222Z",
       "items": [
         {
           "url": "https://us.usm.com",
@@ -7138,7 +7138,7 @@
           "title": "USM Modular Furniture",
           "kind": "website",
           "description": "Discover modular furniture solutions designed for elegance and functionality. Explore USM home and office solutions online.",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7147,7 +7147,7 @@
           "title": "USM nightstand golden yellow",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7156,7 +7156,7 @@
           "title": "USM nightstand golden yellow",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7165,7 +7165,7 @@
           "title": "USM Haller Modern Steel Nightstand (P) in Beige",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7174,7 +7174,7 @@
           "title": "USM Haller nightstand (P)",
           "kind": "product",
           "description": "This popular bedside table offers a 6\"H open shelf and a 13\"H drop down door on the bottom offers plenty of storage. The door locks with the twist of a coin. Available in 14 standard surface colors.",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1677.0",
@@ -7189,7 +7189,7 @@
           "title": "USM Haller nightstand (P2)",
           "kind": "product",
           "description": "The classic nightstand with a 6\"H drop down door that locks with the twist of a coin. Available in 14 standard surface colors.",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1545.0",
@@ -7204,7 +7204,7 @@
           "title": "USM Haller Nightstand (P1)",
           "kind": "product",
           "description": "A modern and adaptable nightstand or side table with two drop down doors that locks with the twist of a coin. Available in 6 Quick Ship colors.",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "2131.0",
@@ -7217,7 +7217,7 @@
     },
     "durable-vitsoe": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T12:21:58.844211Z",
+      "attempted_at": "2026-11-08T19:18:32.772222Z",
       "items": [
         {
           "url": "https://www.vitsoe.com/us/606",
@@ -7225,7 +7225,7 @@
           "title": "Modular wall-mounted shelving system for book with off-white shelves, cabinets and drawers.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7234,7 +7234,7 @@
           "title": "Vitsœ 620 modular sofa in cinnamon leather upholstery with off-white shell and two 621 tables on both sides",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7243,7 +7243,7 @@
           "title": "Vitsœ 621 nesting tables in off-white used as a side table in the living room",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7252,14 +7252,14 @@
           "title": "Vitsœ planner and 606 Universal Shelving System behind.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         }
       ]
     },
     "durable-artek": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T12:21:58.844211Z",
+      "attempted_at": "2026-11-08T19:18:32.772222Z",
       "items": [
         {
           "url": "https://www.artek.fi/en/",
@@ -7267,7 +7267,7 @@
           "title": "Artek - Artek",
           "kind": "website",
           "description": "Art & Technology since 1935",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7276,7 +7276,7 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "Find an overview of all Artek products",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7285,7 +7285,7 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7294,7 +7294,7 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7303,7 +7303,7 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7312,7 +7312,7 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "Find an overview of all Artek products",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7321,7 +7321,7 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7330,29 +7330,29 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         }
       ]
     },
     "durable-carl-hansen-son": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T12:21:58.844211Z",
+      "attempted_at": "2026-11-08T19:18:32.772222Z",
       "items": []
     },
     "durable-knoll": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T12:21:58.844211Z",
+      "attempted_at": "2026-11-08T19:18:32.772222Z",
       "items": []
     },
     "durable-fritz-hansen": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T12:21:58.844211Z",
+      "attempted_at": "2026-11-08T19:18:32.772222Z",
       "items": []
     },
     "durable-thonet": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T12:21:58.844211Z",
+      "attempted_at": "2026-11-08T19:18:32.772222Z",
       "items": [
         {
           "url": "https://www.thonet.de/shop/de",
@@ -7360,7 +7360,7 @@
           "title": "Basecap Beige",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": null
         },
@@ -7370,7 +7370,7 @@
           "title": "Basecap Navy",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": null
         },
@@ -7380,7 +7380,7 @@
           "title": "Poster Overview 2025",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": null
         },
@@ -7390,7 +7390,7 @@
           "title": "S 64 V",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1457.75",
@@ -7405,7 +7405,7 @@
           "title": "214",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1011.50",
@@ -7420,7 +7420,7 @@
           "title": "209",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1374.45",
@@ -7435,7 +7435,7 @@
           "title": "S 35 L",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "3403.40",
@@ -7450,7 +7450,7 @@
           "title": "Set B 9",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "3070.20",
@@ -7463,7 +7463,7 @@
     },
     "durable-emeco": {
       "schema_version": 1,
-      "attempted_at": "2026-11-08T12:21:58.844211Z",
+      "attempted_at": "2026-11-08T19:18:32.772222Z",
       "items": [
         {
           "url": "https://www.emeco.net/products/chairs",
@@ -7471,7 +7471,7 @@
           "title": "Browse Emeco's product catalogue",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7480,7 +7480,7 @@
           "title": "Studio image of Kito by Naoto Fukasawa close up of back",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7489,7 +7489,7 @@
           "title": "ZaZa bench collection by Naoto Fukasawa",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7498,7 +7498,7 @@
           "title": "outdoor setting with navy lounge armchairs, tables and rocker on a patio",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-08T12:21:58.844211Z",
+          "checked_at": "2026-11-08T19:18:32.772222Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         }
       ]
