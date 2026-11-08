@@ -49,7 +49,7 @@ export function selectSponsoredBoost(campaigns,visitor,context){
   if(!signal||!items.length)continue;
   const prev=visitor.lastVariantByCampaign?.[c.id];
   const fresh=items.filter(x=>x.id!==prev);
-  const group=(fresh.length?fresh:items).sort((a,b)=>b.productUpdatedAt.localeCompare(a.productUpdatedAt)||a.id.localeCompare(b.id));
+  const group=(fresh.length?fresh:items).sort((a,b)=>a.id.localeCompare(b.id));
   const best=group[0];
   const score=(signal==='follow'?100:80)+(context.category===c.category?10:0)-timesShown*20;
   choices.push({campaign:c,variant:best,signal,score});
