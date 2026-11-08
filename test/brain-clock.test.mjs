@@ -136,7 +136,7 @@ test('repository engine claims any owner repository while honoring leases and jo
   {id:'outside',repository:'other/Project401',instructions:'Build',status:'queued'}
  ]};
  const storage={get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)};
- const clock=new BrainClock({storage},{WORK_DB:{prepare:()=>({bind(){return this},all:async()=>({results:[{id:'ticket',request:'Build my project',context_json:JSON.stringify(context)}]}),run:async()=>({meta:{changes:1}})})}});
+ const clock=new BrainClock({storage},{WRITER_OWNER_HASH:'synthetic-owner',WORK_DB:{prepare:()=>({bind(){return this},all:async()=>({results:[{id:'ticket',request:'Build my project',context_json:JSON.stringify(context)}]}),run:async()=>({meta:{changes:1}})})}});
  const request=()=>new Request('https://clock/runner/claim',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook'})});
  const first=await (await clock.runner(request())).json();assert.equal(first.lease.jobId,'base');assert.equal(first.lease.job.ownerRequest,'Build my project');
  const second=await (await clock.runner(request())).json();assert.equal(second.lease,null);
@@ -290,7 +290,7 @@ test('the owner ticket router is authentication gated and the browser never gene
 test('untouched queued work advances ahead of an earlier blocked job, and owner selection is honored',async()=>{
  const memory=new Map(),jobs=[{id:'TASK-1',repository:'www-infinity4/QuantaPhi',instructions:'Old repair',status:'blocked',dependencies:[]},{id:'TASK-2',repository:'www-infinity4/QuantaPhi',instructions:'New repair',status:'queued',dependencies:[]}];
  const storage={get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v),delete:async k=>memory.delete(k)};
- const env={WORK_DB:{prepare:()=>({bind(){return this},all:async()=>({results:[{id:'ticket',request:'Fix my cards',context_json:JSON.stringify({color_jobs:jobs})}]}),run:async()=>({meta:{changes:1}})})}};
+ const env={WRITER_OWNER_HASH:'synthetic-owner',WORK_DB:{prepare:()=>({bind(){return this},all:async()=>({results:[{id:'ticket',request:'Fix my cards',context_json:JSON.stringify({color_jobs:jobs})}]}),run:async()=>({meta:{changes:1}})})}};
  const clock=new BrainClock({storage},env),request=()=>new Request('https://clock/runner/claim',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook'})});
  const first=await(await clock.runner(request())).json();assert.equal(first.lease.jobId,'TASK-2');
  memory.clear();memory.set('requested-next-job',{ticketId:'ticket',jobId:'TASK-1'});const next=await(await clock.runner(request())).json();assert.equal(next.lease.jobId,'TASK-1');assert.equal(memory.has('requested-next-job'),false);
@@ -387,7 +387,7 @@ test('claim skips a committed receipt even when D1 still says queued',async()=>{
  const memory=new Map(),repo='www-infinity4/QuantaPhi',job={id:'TASK-1',repository:repo,instructions:'Done source',status:'queued'};
  const revision=Buffer.from(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:repo})))).toString('hex');
  memory.set('writer:ticket:TASK-1:'+revision,{status:'committed_unverified',commitSha:'a'.repeat(40),leaseUntil:0,retryAt:0});
- const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{WORK_DB:{prepare:()=>({bind(){return this},all:async()=>({results:[{id:'ticket',context_json:JSON.stringify({color_jobs:[job]})}]})})}});
+ const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{WRITER_OWNER_HASH:'synthetic-owner',WORK_DB:{prepare:()=>({bind(){return this},all:async()=>({results:[{id:'ticket',context_json:JSON.stringify({color_jobs:[job]})}]})})}});
  const result=await (await clock.runner(new Request('https://clock/runner/claim',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook'})}))).json();
  assert.equal(result.lease,null);
 });
@@ -704,7 +704,7 @@ test('signed runner claim defers stale Pink verification when a linked Green rep
  const db={prepare:()=>({bind(){return this},all:async()=>({results:[ticket]}),
   run:async()=>{updates++;return{meta:{changes:1}}}})};
  const data=new Map();
- const clock=new BrainClock({storage:{get:async k=>data.get(k),put:async(k,v)=>data.set(k,v)}},{WORK_DB:db});
+ const clock=new BrainClock({storage:{get:async k=>data.get(k),put:async(k,v)=>data.set(k,v)}},{WRITER_OWNER_HASH:'synthetic-owner',WORK_DB:db});
  const result=await (await clock.runner(new Request('https://clock/runner/claim',{
   method:'POST',body:JSON.stringify({runId:'567',runnerRepository:'www-infinity4/Moltnook'})
  }))).json();
