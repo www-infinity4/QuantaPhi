@@ -40,6 +40,6 @@ test('existing Oracle and Developer carousels are both wired to real cards, with
  assert.ok(src('oracle-card-deck.js').includes('#gptArtworkQuickCards .iqc-card[data-source-id]'));
  assert.match(src('developer-carousel.mjs'),/buildOwnerDeveloperCard/);
  assert.match(src('gpt-art-quick-cards.mjs'),/Create with GPT/);
- assert.equal(ownerCtaUrl(),'/website-viewer.html?site=chatgpt');
+ assert.equal(ownerCtaUrl(),'/creator-gpt-handoff.html');
  assert.ok(src('quanta-official-viewer.mjs').includes('https://chatgpt.com/'));
 });
