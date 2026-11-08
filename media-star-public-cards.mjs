@@ -10,7 +10,6 @@ const element=(tag,cls,text)=>{
  if(text!==undefined)node.textContent=String(text);
  return node;
 };
-const sourceIdOf=card=>card.contentId.split(':').at(-1);
 function youtubeId(raw){
  try{
   const u=new URL(raw);
@@ -22,22 +21,37 @@ function youtubeId(raw){
  }catch{return null}
 }
 function trackGenuineNativeProgress(player,card,episode){
- let previous=null,seconds=0,submitted=false;
- player.addEventListener('playing',()=>{previous=player.currentTime});
+ let previous=null,seconds=0,finishSent=false,sessionId=null,starting=false;
+ const bridge=()=>window.StarQuestCloudLedger;
+ const finishIfReady=()=>{
+  if(seconds<35||!sessionId||finishSent)return;
+  const finish=bridge()?.completeMediaStarPlayback;
+  if(typeof finish!=='function')return;
+  finishSent=true;
+  // Session receipts are pending self-reports until independently verified.
+  Promise.resolve(finish({sessionId,observedSeconds:Math.floor(seconds)}))
+   .catch(()=>{finishSent=false});
+ };
+ player.addEventListener('playing',()=>{
+  previous=player.currentTime;
+  const start=bridge()?.beginMediaStarPlayback;
+  if(sessionId||starting||typeof start!=='function')return;
+  starting=true;
+  Promise.resolve(start({contentId:card.contentId,episodeId:episode.episodeId}))
+   .then(result=>{if(result?.ok&&result.sessionId){sessionId=result.sessionId;finishIfReady()}})
+   .catch(()=>{/* Free playback remains available even without a verified wallet */})
+   .finally(()=>{starting=false});
+ });
  player.addEventListener('seeking',()=>{previous=null});
  player.addEventListener('pause',()=>{previous=null});
  player.addEventListener('timeupdate',()=>{
-  if(submitted||player.paused||player.seeking||document.visibilityState!=='visible'){previous=player.currentTime;return}
+  if(finishSent||player.paused||player.seeking||document.visibilityState!=='visible'){
+   previous=player.currentTime;return
+  }
   const now=player.currentTime,delta=previous===null?0:now-previous;
   previous=now;
   if(delta>0&&delta<=3)seconds+=delta;
-  if(seconds<30)return;
-  submitted=true;
-  // This is a client observation, not server-verifiable payment proof.
-  const recorder=window.StarQuestCloudLedger?.recordProductionPlay;
-  if(typeof recorder!=='function')return;
-  Promise.resolve(recorder({platform:'media-star',sourceId:sourceIdOf(card),
-   contentId:card.contentId,title:episode.title,observedSeconds:Math.floor(seconds)})).catch(()=>{});
+  finishIfReady();
  });
 }
 function playFree(root,card,episode){
