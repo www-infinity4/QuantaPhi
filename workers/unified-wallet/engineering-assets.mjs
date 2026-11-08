@@ -15,6 +15,37 @@ export async function readGitAsset(env,walletId){
  }catch{return unavailable('ledger_unavailable')}
 }
 
+// Read-only, account-scoped issued GIT serials. This never mints, transfers,
+// estimates earnings, or treats local GIT-P receipts as settled.
+export async function readGitSerialReceipts(env,walletId,{limit=20,beforeSerial=null}={}){
+ if(!Number.isSafeInteger(limit)||limit<1||limit>100)
+  throw Object.assign(new Error('invalid_git_limit'),{status:400});
+ if(beforeSerial!==null&&(!Number.isSafeInteger(beforeSerial)||beforeSerial<1))
+  throw Object.assign(new Error('invalid_git_cursor'),{status:400});
+ const unavailableSerial=status=>({available:false,status,items:[],nextBeforeSerial:null});
+ if(!walletId)return unavailableSerial('wallet_link_required');
+ if(!env.GIT_DB)return unavailableSerial('ledger_unavailable');
+ try{
+  const result=await env.GIT_DB.prepare(`SELECT
+   s.serial_no,s.receipt_id,s.git_type,s.issued_at
+   FROM gitcoin_serials s
+   JOIN gitcoin_awards a ON a.receipt_id=s.receipt_id
+   WHERE s.wallet_id=?1 AND a.wallet_id=?1
+    AND (?2 IS NULL OR s.serial_no<?2)
+   ORDER BY s.serial_no DESC LIMIT ?3`).bind(walletId,beforeSerial,limit+1).all();
+  const rows=result?.results;
+  if(!Array.isArray(rows))return unavailableSerial('ledger_unavailable');
+  if(rows.some(r=>!Number.isSafeInteger(r.serial_no)||r.serial_no<1||
+    typeof r.receipt_id!=='string'||typeof r.git_type!=='string'))
+   return unavailableSerial('ledger_unavailable');
+  const more=rows.length>limit,shown=rows.slice(0,limit);
+  return {available:true,status:'ledger_verified',items:shown.map(r=>({
+   serial:'GIT-'+String(r.serial_no).padStart(12,'0'),
+   receiptId:r.receipt_id,gitType:r.git_type,issuedAt:r.issued_at
+  })),nextBeforeSerial:more?shown[shown.length-1].serial_no:null};
+ }catch{return unavailableSerial('ledger_unavailable');}
+}
+
 const issuerId = value => typeof value==='string'&&/^[A-Za-z0-9._-]{3,80}$/.test(value);
 const rawKey = value => typeof value==='string'&&/^[A-Za-z0-9_-]{43}$/.test(value);
 const decode = value => Uint8Array.from(atob(value.replaceAll('-','+').replaceAll('_','/')),c=>c.charCodeAt(0));
