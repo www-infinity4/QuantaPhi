@@ -1,36 +1,55 @@
 /**
- * Owner-only GIT/GPT work-credit projections, deliberately independent of
- * existing Gitcoin repo, Star Coins, Bubble Bits, Quants, and real USD funds.
+ * Unified Wallet's authenticated READ-ONLY projections for the separate work
+ * assets. The canonical GIT Coin D1 already exists in
+ * quantaphi-gitcoin-ledger: NEVER double mint it in Unified Wallet.
  *
- * Only an independently validated Brain/ChatGPT executor may later append
- * settled rows. This file exposes READ-ONLY signed-account projections.
- * Browser text, a commit mention, or a model answer cannot mint these assets.
+ * GPT Coin is a new separate proposed model-invocation receipt journal.
+ * Neither a model's text nor a page animation proves earned coins.
  */
 export const workAssetSchema=[
- "CREATE TABLE IF NOT EXISTS verified_work_asset_receipts (receipt_id TEXT PRIMARY KEY, user_id TEXT NOT NULL, asset_code TEXT NOT NULL CHECK(asset_code IN ('GIT_COIN','GPT_COIN')), source_receipt_id TEXT NOT NULL, source_system TEXT NOT NULL, repository TEXT, commit_sha TEXT, evidence_path TEXT, evidence_line INTEGER, evidence_hash TEXT NOT NULL, amount INTEGER NOT NULL CHECK(amount=1), settlement_status TEXT NOT NULL DEFAULT 'pending' CHECK(settlement_status IN ('pending','credited','rejected')), created_at INTEGER NOT NULL, UNIQUE(asset_code,source_receipt_id), UNIQUE(user_id,asset_code,repository,commit_sha,evidence_path,evidence_line,evidence_hash), CHECK(asset_code!='GIT_COIN' OR (repository IS NOT NULL AND commit_sha IS NOT NULL AND evidence_path IS NOT NULL AND evidence_line>0)))",
- "CREATE INDEX IF NOT EXISTS verified_work_asset_owner ON verified_work_asset_receipts(user_id,asset_code,created_at DESC)",
- "CREATE TRIGGER IF NOT EXISTS verified_work_asset_no_update BEFORE UPDATE ON verified_work_asset_receipts BEGIN SELECT RAISE(ABORT,'immutable_work_asset'); END",
- "CREATE TRIGGER IF NOT EXISTS verified_work_asset_no_delete BEFORE DELETE ON verified_work_asset_receipts BEGIN SELECT RAISE(ABORT,'immutable_work_asset'); END"
+ "CREATE TABLE IF NOT EXISTS verified_gpt_coin_receipts (receipt_id TEXT PRIMARY KEY, user_id TEXT NOT NULL, source_receipt_id TEXT NOT NULL UNIQUE, source_system TEXT NOT NULL, model_reference TEXT NOT NULL, evidence_hash TEXT NOT NULL, amount INTEGER NOT NULL DEFAULT 1 CHECK(amount=1), settlement_status TEXT NOT NULL DEFAULT 'pending' CHECK(settlement_status IN ('pending','credited','rejected')), created_at INTEGER NOT NULL)",
+ "CREATE INDEX IF NOT EXISTS verified_gpt_coin_owner ON verified_gpt_coin_receipts(user_id,created_at DESC)",
+ "CREATE TRIGGER IF NOT EXISTS verified_gpt_coin_no_update BEFORE UPDATE ON verified_gpt_coin_receipts BEGIN SELECT RAISE(ABORT,'immutable_gpt_coin'); END",
+ "CREATE TRIGGER IF NOT EXISTS verified_gpt_coin_no_delete BEFORE DELETE ON verified_gpt_coin_receipts BEGIN SELECT RAISE(ABORT,'immutable_gpt_coin'); END"
 ];
-const unavailable={available:false,status:'not_connected',credited:null,pending:null};
-export async function readVerifiedWorkAssets(env,userId){
- const blank=()=>({GIT_COIN:{...unavailable},GPT_COIN:{...unavailable}});
- if(env.WORK_ASSET_LEDGER_ENABLED!=='1'||!env.DB)return blank();
+const missing=()=>({available:false,status:'not_connected',credited:null,pending:null});
+const valid=n=>Number.isSafeInteger(Number(n))&&Number(n)>=0;
+async function readCanonicalGitcoin(env,userId){
+ if(env.GITCOIN_OWNER_BINDING_ENABLED!=='1'||!env.GITCOIN_DB)return missing();
  try{
-  const rows=(await env.DB.prepare(`SELECT asset_code,
+  // owner_subject must be independently verified to be the signed-in StarQuest
+  // account ID. NEVER accept the wallet id or GitHub username from the browser.
+  const owner=await env.GITCOIN_DB.prepare(`SELECT wallet_id FROM gitcoin_bubbles_executor
+   WHERE owner_subject=?1 AND active=1 AND owner_verified=1`).bind(userId).first();
+  if(!owner?.wallet_id)return missing();
+  const [issued,pending]=await Promise.all([
+   env.GITCOIN_DB.prepare('SELECT COALESCE(SUM(amount),0) AS n FROM gitcoin_awards WHERE wallet_id=?1')
+    .bind(owner.wallet_id).first(),
+   env.GITCOIN_DB.prepare(`SELECT COUNT(*) AS n FROM gitcoin_line_claims c
+    LEFT JOIN gitcoin_awards a ON a.receipt_id=c.receipt_id
+    WHERE c.recipient_wallet_id=?1 AND c.status IN ('pending','verified') AND a.receipt_id IS NULL`)
+    .bind(owner.wallet_id).first()
+  ]);
+  if(!valid(issued?.n)||!valid(pending?.n))return missing();
+  return {available:true,status:'verified_ledger',credited:Number(issued.n),
+   pending:Number(pending.n),source:'canonical_gitcoin_d1'};
+ }catch{return missing()}
+}
+async function readGptCoin(env,userId){
+ if(env.GPT_COIN_LEDGER_ENABLED!=='1'||!env.DB)return missing();
+ try{
+  const row=await env.DB.prepare(`SELECT
    COALESCE(SUM(CASE WHEN settlement_status='credited' THEN amount ELSE 0 END),0) AS credited,
    COALESCE(SUM(CASE WHEN settlement_status='pending' THEN amount ELSE 0 END),0) AS pending
-   FROM verified_work_asset_receipts WHERE user_id=?1 GROUP BY asset_code`).bind(userId).all()).results||[];
-  const result={
-   GIT_COIN:{available:true,status:'verified_ledger',credited:0,pending:0,source:'authenticated_d1'},
-   GPT_COIN:{available:true,status:'verified_ledger',credited:0,pending:0,source:'authenticated_d1'}
-  };
-  for(const row of rows){
-   if(!Object.prototype.hasOwnProperty.call(result,row.asset_code))continue;
-   const count=Number(row.credited),pending=Number(row.pending);
-   if(!Number.isSafeInteger(count)||count<0||!Number.isSafeInteger(pending)||pending<0)return blank();
-   result[row.asset_code]={available:true,status:'verified_ledger',credited:count,pending,source:'authenticated_d1'};
-  }
-  return result;
- }catch{return blank()}
+   FROM verified_gpt_coin_receipts WHERE user_id=?1`).bind(userId).first();
+  if(!valid(row?.credited)||!valid(row?.pending))return missing();
+  return {available:true,status:'verified_ledger',credited:Number(row.credited),
+   pending:Number(row.pending),source:'verified_gpt_invocation_receipts'};
+ }catch{return missing()}
+}
+export async function readVerifiedWorkAssets(env,userId){
+ const [GIT_COIN,GPT_COIN]=await Promise.all([
+  readCanonicalGitcoin(env,userId),readGptCoin(env,userId)
+ ]);
+ return {GIT_COIN,GPT_COIN};
 }
