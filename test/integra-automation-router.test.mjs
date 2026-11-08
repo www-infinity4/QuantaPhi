@@ -56,7 +56,7 @@ test('paid TinyFish is an explicitly approved, host-scoped and budgeted exceptio
 });
 
 test('production X card and homepage load the exact revised Integra assets',()=>{
- const version='20261102-cardimages1',cardVersion='20261106-gemini-oncard1';
+ const version='20261102-cardimages1',cardVersion='20261107-magazines1';
  const detail=read('source-quick-card.html'),home=read('index.html'),catalog=read('source-quick-cards.mjs');
  assert.ok(detail.includes('/quanta-card-experience.css?v='+cardVersion));
  assert.ok(detail.includes('/source-quick-cards.mjs?v='+cardVersion));
