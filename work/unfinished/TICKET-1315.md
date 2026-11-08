@@ -60,3 +60,13 @@ Explainable in-app ranking, sponsor disclosure, consented metrics and zero unrel
 
 ## Session receipt
 GitHub issue created during the owner-request scoping session; checkpoint staged in a documentation-only branch. No real implementation, provider consent, commercial payout or outside send has occurred.
+
+## November 7, 2026 CT · Screenshot-requested reversible recommendations control
+
+- **Existing job:** #1315. Owner's X screenshots discuss Bubbles card building and unwanted mass advertising. Do not infer access to X's targeting system or any private profile from those screenshots.
+- **Focused source milestone:** `feat/for-you-not-for-me-1315-20261107`, draft PR [#1835](https://github.com/www-infinity4/QuantaPhi/pull/1835). Scope is only QuantaPhi's existing Oracle For You carousel, not a replacement builder, provider API or ad purchase system.
+- **Implemented in branch:** `quanta-feed-rank.mjs` stores a bounded, sanitized browser-local `hiddenForYou` list; `oracle-card-deck.js` honors it in eligibility, ranking and next-card selection. Public, Following and original card DOM are retained. `index.html` + `oracle-card-spotlight.css` provide accessible Android-sized Not for me / Show in For You / Restore hidden controls.
+- **Tests:** `test/oracle-feed-not-for-me.test.mjs` and `test/oracle-feed-not-for-me.browser.spec.mjs` added to existing interactive card CI. Four independent source-execution checks passed against fetched branch code with the accepted-brand classifier stubbed; this is *not* production or Android proof. Exact-head GitHub CI and browser result are pending.
+- **Safety:** No real visitor accounts, advertising provider credentials, Cloudflare D1, GitHub writer lease, purchase approval or reward-wallet ledger touched; no external X feed control claimed. Public remains broad, and exclusions can be restored on the same browser.
+- **Canonical full-ticket progress:** still estimated 18%; this partial feature does not satisfy sponsorship, consented metrics, live browser acceptance, publisher rights or deployment.
+- **Next executable action:** Inspect exact-head PR #1835 interactive-card Node + Android-width Playwright checks, fix any failing test on the same branch, obtain independent review, then request merge/deployment verification through the existing release gate. Do not claim live availability before readback.

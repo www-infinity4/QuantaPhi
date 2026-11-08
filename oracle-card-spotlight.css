@@ -76,3 +76,18 @@ body.oracle-quanta #oracleCardDeck :is(button,a,select):focus-visible{outline:3p
 @media(prefers-reduced-motion:reduce){
  body.oracle-quanta #oracleCardDeck *{transition:none!important;animation:none!important}
 }
+
+/* Visitor-controlled card exclusions are local to For You, not public deletion. */
+body.oracle-quanta #oracleCardDeck .oracle-feed-preferences{
+ display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:6px 0;
+}
+body.oracle-quanta #oracleCardDeck .oracle-feed-preferences button{
+ box-sizing:border-box;min-height:44px;padding:9px 13px;max-width:100%;
+ background:#fff!important;color:#264d68!important;border:1px solid #b8cbd7!important;
+ border-radius:11px!important;font:750 15px/1.35 system-ui,sans-serif!important;
+ letter-spacing:.005em;white-space:normal;cursor:pointer;
+}
+body.oracle-quanta #oracleCardDeck .oracle-feed-preferences button[hidden]{display:none!important}
+body.oracle-quanta #oracleCardDeck #oracleCardNotForMe[aria-pressed="true"]{
+ background:#e7eff4!important;color:#23475f!important;border-color:#799cb0!important;
+}
