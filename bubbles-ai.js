@@ -2423,6 +2423,69 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // It is not ChatGPT Personal Context, a permission grant or a completed job.
  const firstOwnerContext=await currentOwnerContext(spoken);
  if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'memory',state:firstOwnerContext.state}}));
+ // Explicit user-requested repository branch status is an authenticated READ,
+ // never an inferred tool command, write lease or new runner dispatch.
+ if(!embedded){
+  let branchStatusModule=null;
+  try{branchStatusModule=await import('/bubbles-branch-status.mjs?v=20261107-authenticated-read1')}catch{}
+  const branchStatusQuery=branchStatusModule?.parseBranchStatusQuery(spoken);
+  if(branchStatusQuery){
+   const receiptThread=activeThread,operationId=crypto.randomUUID();
+   display(spoken,'you');
+   if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:chat-user-visible',{detail:null}));
+   messages.push({role:'user',text:spoken});messages=messages.slice(-400);persistChat();
+   clearSentComposer();busy=true;send.disabled=true;setOrbState('thinking');
+   status.textContent='Reading the exact GitHub branch and saved Brain ticket…';
+   const emitRead=detail=>{
+    if(receiptThread!==activeThread||typeof CustomEvent!=='function')return;
+    window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{tool:'github.read_branch_status',
+     operationId,resource:branchStatusQuery.repository,criteriaSummary:'Check '+branchStatusQuery.branch,...detail}}));
+   };
+   emitRead({type:'tool_started'});
+   let answer='',readStatus='';
+   try{
+    const headers=await verifiedOwnerHeaders();
+    const response=await bubblesFetch(BRAIN+'/work/github/read',{method:'POST',
+     headers:{...headers,'Content-Type':'application/json'},
+     body:JSON.stringify({action:'read_branch_status',...branchStatusQuery}),cache:'no-store'},17000);
+    const branchRead=await response.json().catch(()=>({}));
+    if(!response.ok||branchRead.ok!==true)
+     throw Error(String(branchRead.error||'github_branch_read_failed').slice(0,100));
+    let ticketRead={ok:false};
+    try{
+     const tickets=await bubblesFetch(BRAIN+'/work/tickets/list',{method:'POST',
+      headers:{...headers,'Content-Type':'application/json'},body:'{}',cache:'no-store'},14000);
+     const data=await tickets.json().catch(()=>({}));
+     if(tickets.ok&&data.ok===true&&Array.isArray(data.tickets))ticketRead=data;
+    }catch{/* A failed ticket listing cannot erase a valid GitHub readback. */}
+    if(!ownerReady||ownerHeaders!==headers)throw Error('owner_session_changed_during_read');
+    answer=branchStatusModule.describeAuthenticatedBranchStatus(branchStatusQuery,branchRead,ticketRead);
+    const proof=branchRead.readReceipt;
+    const verified=proof?.tool==='github.read_branch_status'&&proof.status==='complete'&&
+     /^[A-Za-z0-9_-]{8,100}$/.test(proof.id||'');
+    emitRead({type:'tool_receipt',status:verified?'complete':'unverified',
+     ...(verified?{receiptId:proof.id}:{}),
+     detail:branchRead.exists===true?'GitHub branch readback returned a commit':'GitHub branch ref not found'});
+    readStatus='GitHub branch checked · runner result separate';
+   }catch(error){
+    failedTurn=true;
+    answer='Bubbles could not verify GitHub branch status ('+String(error.message||error).slice(0,110)+
+     '). Runner execution remains unverified. No job was submitted.';
+    emitRead({type:'tool_receipt',status:'failed',detail:'Authenticated branch read failed'});
+    readStatus='GitHub branch read unavailable · no runner outcome confirmed';
+   }finally{
+    if(ownerReady&&receiptThread===activeThread){
+     appendGithubReport(answer,receiptThread);status.textContent=readStatus;
+     if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=answer;
+     else if(config.voice&&!nativeOverlay)speakText(answer);
+    }
+    nativeSpeechPending=false;busy=false;send.disabled=false;
+    if(!speaking)setOrbState(voiceEnabled?'listening':'idle');
+    drainVoiceTurns();
+   }
+   return;
+  }
+ }
  // A GitHub status question reads the durable owner receipt; no second write.
  if(!embedded&&/\b(?:github|git\s*hub|repo|repository|created)\b/i.test(spoken)){
    let receiptModule=null;
