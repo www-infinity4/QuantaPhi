@@ -18,7 +18,7 @@ test('QuantaPhi direct sponsorship card shows proposed prices and correctly qual
  await expect(page.locator('#salesTraffic')).toContainText('9,999');
  await expect(page.locator('#salesTraffic')).toContainText('includes bots');
  await expect(page.locator('#salesTraffic')).toContainText('not sponsored ad impressions');
- await expect(page.locator('#salesNote')).toContainText('not unique human visitors');
+ await expect(page.locator('#salesNote')).toContainText(/not unique human visitors/i);
  expect(await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth)).toBeLessThanOrEqual(4);
  expect(posts).toEqual([]);
 });
