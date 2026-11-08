@@ -138,7 +138,7 @@ function mountCoinSales(article,card,field){
      const row=rows[position];item.replaceChildren();
      if(row.image&&row.imageRights==='seller-permitted'){
       const picture=make('figure','premium-coin-lot-photo');
-      const image=make('img','','Actual certified coin lot photo: '+row.title);
+      const image=make('img','premium-coin-lot-image');
       image.alt='Actual seller-authorized coin lot photograph: '+row.title;
       image.loading='lazy';image.referrerPolicy='no-referrer';
       image.addEventListener('error',()=>picture.remove(),{once:true});
