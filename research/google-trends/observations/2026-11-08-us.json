@@ -3,324 +3,340 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-08T01:32:12.611940Z",
+  "checked_at": "2026-11-08T02:01:45.830927Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "jon gruden",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T01:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/raiders-back-jon-gruden-wants-195538944.html",
-        "https://en.as.com/nfl/jon-gruden-rips-los-angeles-chargers-and-offensive-coordinator-mike-mcdaniel-f202611-n//",
-        "https://www.joebucsfan.com/2026/11/gruden-brothers-very-confident-in-a-bears-victory/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdDFP6yLQRl90gg8iV1NeWKrIEqIW8F6QDR-eGqzcAdtoWcbOOPhCMa36PDws",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/raiders-back-jon-gruden-wants-195538944.html",
-          "title": "“Raiders Need Me Back”: Jon Gruden Wants Tom Brady-Owned Franchise to Hire Him Amid NFL Lawsuit",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdDFP6yLQRl90gg8iV1NeWKrIEqIW8F6QDR-eGqzcAdtoWcbOOPhCMa36PDws"
-        },
-        {
-          "url": "https://en.as.com/nfl/jon-gruden-rips-los-angeles-chargers-and-offensive-coordinator-mike-mcdaniel-f202611-n//",
-          "title": "Jon Gruden rips Los Angeles Chargers and offensive coordinator Mike McDaniel",
-          "publisher": "Diario AS",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkr47k6ijxzCa75hbq-9L92Qp9hKoORMQxxEJyR24vQjGsKHHO3_w8hanb_jE"
-        },
-        {
-          "url": "https://www.joebucsfan.com/2026/11/gruden-brothers-very-confident-in-a-bears-victory/",
-          "title": "Gruden Brothers Very Confident In A Bears Victory",
-          "publisher": "JoeBucsFan.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1pAG3SitvfcqP5R5yQgfNb1EYebCv7u43hKPnECpflhOisn1hz-7AXSjZsIk"
-        }
-      ]
-    },
-    {
-      "query": "peter berg",
+      "query": "west virginia vs texas tech",
       "approx_searches": "5000+",
-      "published_at": "2026-11-08T01:20:00Z",
+      "published_at": "2026-11-08T01:40:00Z",
       "related_news_urls": [
-        "https://madison.com/life-entertainment/local/movies-tv/article_6f2d268d-8113-46c8-a012-e37f4df8129f.html",
-        "https://www.wmtv15news.com/2026/11/02/mosquito-bowl-draws-crowd-lancaster-theater-dave-schreiners-hometown/",
-        "https://www.imdb.com/news/ni66097062/?ref_=nmnw_art_perm"
+        "https://www.lubbockonline.com/story/sports/college/red-raiders/2026/11/07/texas-tech-football-west-virginia-channel-today-time-tv-schedule-streaming-info/92514210007/",
+        "https://sports.yahoo.com/articles/watch-west-virginia-vs-texas-012000064.html",
+        "https://247sports.com/college/west-virginia/article/by-the-numbers-wvu-vs-texas-tech-292099079/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrlKyjJCH28D8GiOeQykp1Z-C8_xOtcyY0z0_B5q3EvgQ5dyXb8tk10A5gXTE",
-      "image_credit": "Wisconsin State Journal",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQcMjRm2UBo4QLbDQmGPP56cLjFrlCwYiEpb3QJsP6A3FahTCZ-Sv9Wx1wbr0",
+      "image_credit": "Lubbock Avalanche-Journal",
       "news": [
         {
-          "url": "https://madison.com/life-entertainment/local/movies-tv/article_6f2d268d-8113-46c8-a012-e37f4df8129f.html",
-          "title": "Mosquito Bowl from Netflix tells story of two former Badgers football players; Kollege Klub transformed into WWII-era tavern",
-          "publisher": "Wisconsin State Journal",
+          "url": "https://www.lubbockonline.com/story/sports/college/red-raiders/2026/11/07/texas-tech-football-west-virginia-channel-today-time-tv-schedule-streaming-info/92514210007/",
+          "title": "What channel is Texas Tech vs. West Virginia today? Time, TV channel for Week 10 game",
+          "publisher": "Lubbock Avalanche-Journal",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrlKyjJCH28D8GiOeQykp1Z-C8_xOtcyY0z0_B5q3EvgQ5dyXb8tk10A5gXTE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQcMjRm2UBo4QLbDQmGPP56cLjFrlCwYiEpb3QJsP6A3FahTCZ-Sv9Wx1wbr0"
         },
         {
-          "url": "https://www.wmtv15news.com/2026/11/02/mosquito-bowl-draws-crowd-lancaster-theater-dave-schreiners-hometown/",
-          "title": "‘The Mosquito Bowl’ draws crowd to Lancaster theater in Dave Schreiner’s hometown",
-          "publisher": "WMTV 15 NEWS",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRY2Goe6jjuOIBA2XEAql_as6evjX7LSkl8LVTGuXPHTyysL5vhFvt0zczakVY"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66097062/?ref_=nmnw_art_perm",
-          "title": "Netflix's New Action-Packed War Epic Officially Debuts Thrilling Rt Audience Score",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRA-Q0iNjKpApueDrMyL7TSdNNdqkm8nXoZFNhH5k-hqkGzvAdgtemaLbwsLcc"
-        }
-      ]
-    },
-    {
-      "query": "craig dandridge",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T01:20:00Z",
-      "related_news_urls": [
-        "https://www.dawgnation.com/gameday/zykie-helton-craig-dandridge-tabbed-top-freshmen-by-espn/2JY4INTYNNETDNEN5VUCPFNUBQ/",
-        "https://sports.yahoo.com/articles/two-georgia-football-freshmen-earn-205821120.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVqoJ4FZLD4QBRh22tskciWcmSlBAT8M2Y2kZJWS-oF-0Ggm26lpMD3Au6H94",
-      "image_credit": "DawgNation",
-      "news": [
-        {
-          "url": "https://www.dawgnation.com/gameday/zykie-helton-craig-dandridge-tabbed-top-freshmen-by-espn/2JY4INTYNNETDNEN5VUCPFNUBQ/",
-          "title": "ESPN praises 2 Georgia freshmen as Kirby Smart aims to accelerate development",
-          "publisher": "DawgNation",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVqoJ4FZLD4QBRh22tskciWcmSlBAT8M2Y2kZJWS-oF-0Ggm26lpMD3Au6H94"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/two-georgia-football-freshmen-earn-205821120.html",
-          "title": "Two Georgia football freshmen earn ESPN recoginition",
+          "url": "https://sports.yahoo.com/articles/watch-west-virginia-vs-texas-012000064.html",
+          "title": "How to watch West Virginia vs Texas Tech: Live stream NCAA College Football, TV channel",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXC-hRjfhSw2zva5YSUvQNRcyUxYAxQjZbilrsFZruyPNLH9yJb97-4AFI2AA"
-        }
-      ]
-    },
-    {
-      "query": "musician",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T01:10:00Z",
-      "related_news_urls": [
-        "https://www.npr.org/2026/11/07/nx-s1-6029751/how-a-musician-turned-singing-sands-into-an-instrument",
-        "https://www.pennlive.com/entertainment/2026/11/beloved-rock-musician-dies-after-battling-long-term-illness-our-hearts-are-broken.html",
-        "https://www.dallasobserver.com/music/north-texas-musicians-remember-celebrated-dallas-drummer-guyton-sanders-40728522/"
-      ],
-      "image_url": null,
-      "image_credit": "NPR",
-      "news": [
-        {
-          "url": "https://www.npr.org/2026/11/07/nx-s1-6029751/how-a-musician-turned-singing-sands-into-an-instrument",
-          "title": "How a musician turned singing sands into an instrument",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": null
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTP39z3-yH17QvZtF9sGzrtNSREO6Kghfkg4m1URrDiEwU6MpjX81YB07MlnJk"
         },
         {
-          "url": "https://www.pennlive.com/entertainment/2026/11/beloved-rock-musician-dies-after-battling-long-term-illness-our-hearts-are-broken.html",
-          "title": "Beloved rock musician dies after battling long-term illness: ‘Our hearts are broken’",
-          "publisher": "PennLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPlRdxr_37RNlqxfE5CAj5c16JSbr21Ue7fZ_ME9Z_rdJYDYnS5AewjJw-I74"
-        },
-        {
-          "url": "https://www.dallasobserver.com/music/north-texas-musicians-remember-celebrated-dallas-drummer-guyton-sanders-40728522/",
-          "title": "North Texas musicians remember celebrated Dallas drummer Guyton Sanders",
-          "publisher": "Dallas Observer",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDPSWIpMyDd77chjdPt-ztdX9G4_H1OkiKa7RIAt9MwIsx7BlHS5FpMx8wMys"
-        }
-      ]
-    },
-    {
-      "query": "jordan faison",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T01:10:00Z",
-      "related_news_urls": [
-        "https://irishsportsdaily.com/s/28488/notre-dame-wr-jordan-faison-unfazed",
-        "https://247sports.com/video/cfb-player-to-watch-notre-dames-jordan-faison-14626267"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZNerYmH0jfiLlJwDieCrtW-PiG61__6Tr8QW7xjL-CxQK29s4cnFKTm82_0w",
-      "image_credit": "Irish Sports Daily",
-      "news": [
-        {
-          "url": "https://irishsportsdaily.com/s/28488/notre-dame-wr-jordan-faison-unfazed",
-          "title": "Notre Dame WR Jordan Faison Unfazed",
-          "publisher": "Irish Sports Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZNerYmH0jfiLlJwDieCrtW-PiG61__6Tr8QW7xjL-CxQK29s4cnFKTm82_0w"
-        },
-        {
-          "url": "https://247sports.com/video/cfb-player-to-watch-notre-dames-jordan-faison-14626267",
-          "title": "CFB Player to Watch: Notre Dame's Jordan Faison",
+          "url": "https://247sports.com/college/west-virginia/article/by-the-numbers-wvu-vs-texas-tech-292099079/",
+          "title": "By the numbers: WVU vs. Texas Tech",
           "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbywEqeQxAvHMiNco4uQ_sHUy44wwmVIDqTG4OmkVoEIwYTSchYKCpS-2iruE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlkUkJJq8TZKroLAI2t-oAJ7f1TyaSAwv0wXsrLdoVM3RU_jMI3lEsuh7F_fI"
         }
       ]
     },
     {
-      "query": "red wings vs avalanche",
+      "query": "amanda nunes",
       "approx_searches": "1000+",
-      "published_at": "2026-11-08T01:10:00Z",
+      "published_at": "2026-11-08T01:40:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/news/detroit-red-wings-colorado-avalanche-game-preview-november-7-2026",
-        "https://sports.yahoo.com/articles/open-thread-detroit-red-wings-010000350.html",
-        "https://www.si.com/nhl/red-wings/onsi/news/red-wings-vs-avalanche-projected-lines-injuries-how-to-watch"
+        "https://www.audacy.com/wqam/video/amanda-nunes-leaving-att-kayla-harrison-matchup-reclaiming-bantamweight-supremacy-xbudrsa",
+        "https://boxingnews.com/news/kayla-harrison-three-fights-next-after-nunes-ufc-334",
+        "https://www.bjpenn.com/mma-news/kayla-harrison/kayla-harrison-vs-amanda-nunes-leads-to-retirement-or-2-division-title-chase-per-ufc-edmonton-contender/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
-      "image_credit": "NHL.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-MIFiz1XKhv5Ksd6oOKV5M2Qcf6opE4SlN5MB5a0J8fhe2ufLoAoEr_4Bn9A",
+      "image_credit": "Audacy",
       "news": [
         {
-          "url": "https://www.nhl.com/news/detroit-red-wings-colorado-avalanche-game-preview-november-7-2026",
-          "title": "Red Wings at Avalanche projected lineups",
-          "publisher": "NHL.com",
+          "url": "https://www.audacy.com/wqam/video/amanda-nunes-leaving-att-kayla-harrison-matchup-reclaiming-bantamweight-supremacy-xbudrsa",
+          "title": "Amanda Nunes: Leaving ATT, Kayla Harrison Matchup & Reclaiming Bantamweight Supremacy",
+          "publisher": "Audacy",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-MIFiz1XKhv5Ksd6oOKV5M2Qcf6opE4SlN5MB5a0J8fhe2ufLoAoEr_4Bn9A"
         },
         {
-          "url": "https://sports.yahoo.com/articles/open-thread-detroit-red-wings-010000350.html",
-          "title": "Open Thread: Detroit Red Wings @ Colorado Avalanche 7:00 P.M. MST)",
-          "publisher": "Yahoo Sports",
+          "url": "https://boxingnews.com/news/kayla-harrison-three-fights-next-after-nunes-ufc-334",
+          "title": "Three Fights Kayla Harrison Should Take Next After Nunes Victory",
+          "publisher": "boxingnews.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5wpxCDvflhW6shP3tA672BWwSKVphPM7WqHvykBhLMiGjysgHP5lptCjKW7M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmbFxb8ja9J0q6EHHA6kkYDmfDfsgepkrcuMi_G0e-lJ4HlFO8FtUjJ2pr-7M"
         },
         {
-          "url": "https://www.si.com/nhl/red-wings/onsi/news/red-wings-vs-avalanche-projected-lines-injuries-how-to-watch",
-          "title": "Red Wings vs. Avalanche Projected Lines, Injuries and How to Watch",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.bjpenn.com/mma-news/kayla-harrison/kayla-harrison-vs-amanda-nunes-leads-to-retirement-or-2-division-title-chase-per-ufc-edmonton-contender/",
+          "title": "Kayla Harrison vs. Amanda Nunes leads to retirement or 2-division title chase, per UFC Edmonton contender",
+          "publisher": "BJPenn.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkq3_E28HZ6-qtypSuCds1_KVaX95uXyOoot7GrpUF5bYEOL8dPAMIXYhobNo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFnWUtEDfhcyNa09UWecdfeC98_29GgBy6Jtf8ILy-ns0IHXOuH-mL3DdvXDY"
         }
       ]
     },
     {
-      "query": "uga game",
+      "query": "hawaii vs utep",
       "approx_searches": "1000+",
-      "published_at": "2026-11-08T01:10:00Z",
+      "published_at": "2026-11-08T01:40:00Z",
       "related_news_urls": [
-        "https://www.dawgnation.com/gameday/georgia-rules-out-three-more-players-ole-miss-game/PLEATTHVDFCKDLNAPBRBF5ZWPM/",
-        "https://sports.yahoo.com/articles/georgia-rushing-touchdown-leader-returning-000352203.html",
-        "https://ugawire.usatoday.com/story/sports/college/bulldogs/football/2026/11/06/georgia-football-ole-miss-injury-report-players-out/92629443007/"
+        "https://www.yardbarker.com/college_football/articles/hawaii_takes_on_utep_saturday_at_sun_bowl/s1_17668_44530390",
+        "https://www.hawaiitribune-herald.com/2026/11/07/sports/how-uh-and-utep-match-up-in-todays-football-game/",
+        "https://hawaiiathletics.com/news/2026/11/2/football-warriors-rekindle-rilvary-with-road-contest-at-utep.aspx"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTiBcs1r4AzcETGAsa2E6ao3SCUvmJKuZ73QTJpYil-SOve3pEfcgJU4mrzBHE",
-      "image_credit": "DawgNation",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQ7TqP2RYqYnFyBRow9-aRDFK-u7yBuXA85Mu5kbx9DIOBQp0BxiRnN-Qg7sg",
+      "image_credit": "Yardbarker",
       "news": [
         {
-          "url": "https://www.dawgnation.com/gameday/georgia-rules-out-three-more-players-ole-miss-game/PLEATTHVDFCKDLNAPBRBF5ZWPM/",
-          "title": "Georgia rules out three more players for Ole Miss game",
-          "publisher": "DawgNation",
+          "url": "https://www.yardbarker.com/college_football/articles/hawaii_takes_on_utep_saturday_at_sun_bowl/s1_17668_44530390",
+          "title": "Hawai’i Takes on UTEP Saturday at Sun Bowl",
+          "publisher": "Yardbarker",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTiBcs1r4AzcETGAsa2E6ao3SCUvmJKuZ73QTJpYil-SOve3pEfcgJU4mrzBHE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQ7TqP2RYqYnFyBRow9-aRDFK-u7yBuXA85Mu5kbx9DIOBQp0BxiRnN-Qg7sg"
         },
         {
-          "url": "https://sports.yahoo.com/articles/georgia-rushing-touchdown-leader-returning-000352203.html",
-          "title": "Georgia rushing touchdown leader returning vs. Ole Miss",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.hawaiitribune-herald.com/2026/11/07/sports/how-uh-and-utep-match-up-in-todays-football-game/",
+          "title": "How UH and UTEP match up in today’s football game",
+          "publisher": "Hawaii Tribune-Herald",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyRQI3MThot6gS3BmOFRmfq_VlGlEUPHvDHdCSE_-5J0EW_IHrGS9IW1EUOJE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Y9e2ydfTTCQbOGxRt8QYOf004lD5DMzk7TFWVPkFdLe0jCbJlsx9XaiQFuA"
         },
         {
-          "url": "https://ugawire.usatoday.com/story/sports/college/bulldogs/football/2026/11/06/georgia-football-ole-miss-injury-report-players-out/92629443007/",
-          "title": "At least 10 players ruled out for Georgia-Ole Miss game",
-          "publisher": "UGA Wire",
+          "url": "https://hawaiiathletics.com/news/2026/11/2/football-warriors-rekindle-rilvary-with-road-contest-at-utep.aspx",
+          "title": "Warriors Rekindle Rivalry WIth Road Contest At UTEP",
+          "publisher": "Hawaii athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTY_vM3WJVyihUGlwh0fOh2lbH5DSb_XnHsDOuB8XF7H3oSCPKs5H2qUbUzmSk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9SOkA2tcOQe1sDcmP1hEl7Zcjz0-YSmeZK6ZBnL3-9Kt-ol0Ety14L-LDXOo"
         }
       ]
     },
     {
-      "query": "penguins vs kings",
+      "query": "fresno state vs utah state",
       "approx_searches": "1000+",
-      "published_at": "2026-11-08T01:10:00Z",
+      "published_at": "2026-11-08T01:40:00Z",
       "related_news_urls": [
-        "https://lakingsinsider.com/2026/11/07/11-7-preview-panarin-leads-the-way-for-lak-ppprogress-turcotte-expected-to-return-hockey-fights-cancer/",
-        "https://www.nhl.com/news/pittsburgh-penguins-los-angeles-kings-game-preview-november-7-2026",
-        "https://www.pensburgh.com/penguins-lines-game-time-watch/82866/game-preview-pittsburgh-penguins-los-angeles-kings-11-7-2026"
+        "https://247sports.com/college/fresno-state/article/fresno-state-football-at-utah-state-on-usa-network-what-channel-how-to-watch-bulldogs-aggies-292293391/",
+        "https://gvwire.com/2026/11/06/offensive-line-vital-to-bulldogs-success-can-they-keep-it-going-at-utah-state/",
+        "https://www.cachevalleydaily.com/utah-state-football-press-conference-nov-2-2026---week-10-vs-fres-state/html_c2b8bf22-9439-410f-99c1-d5dc950b5b85.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJohvqhTIpw1Zy7aWlrkevrrCqspRWvGLcBKdpC3b6H3ZXvoNSEjOzdV7-U6s",
-      "image_credit": "LA Kings Insider",
-      "news": [
-        {
-          "url": "https://lakingsinsider.com/2026/11/07/11-7-preview-panarin-leads-the-way-for-lak-ppprogress-turcotte-expected-to-return-hockey-fights-cancer/",
-          "title": "11/7 Preview - Panarin Leads The Way for LAK + PPProgress, Turcotte expected to return, Hockey Fights Cancer",
-          "publisher": "LA Kings Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJohvqhTIpw1Zy7aWlrkevrrCqspRWvGLcBKdpC3b6H3ZXvoNSEjOzdV7-U6s"
-        },
-        {
-          "url": "https://www.nhl.com/news/pittsburgh-penguins-los-angeles-kings-game-preview-november-7-2026",
-          "title": "Penguins at Kings projected lineups",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
-        },
-        {
-          "url": "https://www.pensburgh.com/penguins-lines-game-time-watch/82866/game-preview-pittsburgh-penguins-los-angeles-kings-11-7-2026",
-          "title": "Game Preview: Pittsburgh Penguins @ Los Angeles Kings 11/7/2026",
-          "publisher": "PensBurgh",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtNnve_5pmpAVZgIlUF4mHtuKKxDERJ7Suxs5tlNvkuhkkngp6PYb8vJY4ZH4"
-        }
-      ]
-    },
-    {
-      "query": "cruz azul",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T01:10:00Z",
-      "related_news_urls": [
-        "https://www.vavel.com/en-us/soccer/2026/11/07/1278362-tigres-vs-cruz-azul-live-score-liga-mx.html",
-        "https://www.bleachernation.com/picks/2026/11/07/cruz-azul-vs-tigres-uanl-prediction-picks-live-odds-nov-7/",
-        "https://www.soyfutbol.com/en/news/tigres-rolling-out-a-backup-squad-against-cruz-azul-vucetich-bets-on-youngsters-and-faces-a-key-absencewill-the-machine-take-advantage-20261105-0032.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8Zl8BVddTGIjtNYTh8lgZ14_Em8Kw-AcMik6tyNUH8KsKleH79nZR1fM_gok",
-      "image_credit": "VAVEL.com",
-      "news": [
-        {
-          "url": "https://www.vavel.com/en-us/soccer/2026/11/07/1278362-tigres-vs-cruz-azul-live-score-liga-mx.html",
-          "title": "Tigres vs Cruz Azul LIVE, Latest Score, Goals and Liga MX Updates (0-0)",
-          "publisher": "VAVEL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8Zl8BVddTGIjtNYTh8lgZ14_Em8Kw-AcMik6tyNUH8KsKleH79nZR1fM_gok"
-        },
-        {
-          "url": "https://www.bleachernation.com/picks/2026/11/07/cruz-azul-vs-tigres-uanl-prediction-picks-live-odds-nov-7/",
-          "title": "Cruz Azul vs. Tigres UANL Prediction, Picks, Live Odds – Nov. 7",
-          "publisher": "Bleacher Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSs6CSaazDncIGDgqbgi8XzYwJwg61CfV5GdWVilV-gN6TkNYJBm1M-eR605EE"
-        },
-        {
-          "url": "https://www.soyfutbol.com/en/news/tigres-rolling-out-a-backup-squad-against-cruz-azul-vucetich-bets-on-youngsters-and-faces-a-key-absencewill-the-machine-take-advantage-20261105-0032.html",
-          "title": "Tigres Rolling Out a Backup Squad Against Cruz Azul: Vucetich Bets on Youngsters and Faces a Key Absence—Will the Machine Take Advantage?",
-          "publisher": "Soy Futbol",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOJt7XflZsenee3yUIXx4u2JVUmYtEmK3HYJG6eUsw09G0tGvqs6q5znSinvw"
-        }
-      ]
-    },
-    {
-      "query": "hendon hooker",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T01:10:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/tennessee/LongFormArticle/alex-golesh-tennessee-vols-football-offensive-coordinator-everything-said-ahead-music-city-bowl-hendon-hooker-cedric-tillman-179314490/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxq12bsq8eV6llFX7rNfaIZ2weOn5ql7IWNyc_YRA7OV5oDUSWI5Mutspq72k",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjbzDGAs_xeEXNOOfjZfn2ejyt6xRHaiTG8daH-UoHFriOcLOxWFk9V0TaOWc",
       "image_credit": "247Sports",
       "news": [
         {
-          "url": "https://247sports.com/college/tennessee/LongFormArticle/alex-golesh-tennessee-vols-football-offensive-coordinator-everything-said-ahead-music-city-bowl-hendon-hooker-cedric-tillman-179314490/",
-          "title": "Everything Vols OC Alex Golesh said ahead of Music City Bowl",
+          "url": "https://247sports.com/college/fresno-state/article/fresno-state-football-at-utah-state-on-usa-network-what-channel-how-to-watch-bulldogs-aggies-292293391/",
+          "title": "How to Watch: Fresno State at Utah State on USA",
           "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxq12bsq8eV6llFX7rNfaIZ2weOn5ql7IWNyc_YRA7OV5oDUSWI5Mutspq72k"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjbzDGAs_xeEXNOOfjZfn2ejyt6xRHaiTG8daH-UoHFriOcLOxWFk9V0TaOWc"
+        },
+        {
+          "url": "https://gvwire.com/2026/11/06/offensive-line-vital-to-bulldogs-success-can-they-keep-it-going-at-utah-state/",
+          "title": "Offensive Line Vital to Bulldogs Success. Can They Keep It Going at Utah State?",
+          "publisher": "GV Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRg4ZSVNp2B5qcCKbqQfevzJpywLnsSd9fWyhPFqQyzFVFGjKNfaGtqueL0ooY"
+        },
+        {
+          "url": "https://www.cachevalleydaily.com/utah-state-football-press-conference-nov-2-2026---week-10-vs-fres-state/html_c2b8bf22-9439-410f-99c1-d5dc950b5b85.html",
+          "title": "Utah State Football Press Conference (Nov. 2, 2026) - Week 10 vs Fres State",
+          "publisher": "Cache Valley Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfkj0gfkUN0Y6g4rSCZVNgpo0cnY1NKSD7ozSE49jdrWplXybJnqYNmq30swc"
+        }
+      ]
+    },
+    {
+      "query": "josh hokit",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T01:40:00Z",
+      "related_news_urls": [
+        "https://mmajunkie.usatoday.com/story/sports/ufc/2026/11/06/ufc-334-stipe-miocic-josh-hokit-persona-over-the-top/92638711007/",
+        "https://bloodyelbow.com/2026/11/07/ciryl-gane-reacts-to-josh-hokit-getting-a-title-shot-before-alexander-volkov-hows-this-possible/",
+        "https://sports.yahoo.com/articles/kamaru-usman-ciryl-gane-most-004024561.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpoTrfEAThaUkCcOyq_w6uzfqhc_9Ni57M8UKcv5z-1_0MxdcPcQwtGkEGejA",
+      "image_credit": "MMA Junkie",
+      "news": [
+        {
+          "url": "https://mmajunkie.usatoday.com/story/sports/ufc/2026/11/06/ufc-334-stipe-miocic-josh-hokit-persona-over-the-top/92638711007/",
+          "title": "Stipe Miocic before UFC 334: Josh Hokit's schtick is 'a little too much'",
+          "publisher": "MMA Junkie",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpoTrfEAThaUkCcOyq_w6uzfqhc_9Ni57M8UKcv5z-1_0MxdcPcQwtGkEGejA"
+        },
+        {
+          "url": "https://bloodyelbow.com/2026/11/07/ciryl-gane-reacts-to-josh-hokit-getting-a-title-shot-before-alexander-volkov-hows-this-possible/",
+          "title": "Ciryl Gane reacts to Josh Hokit getting a title shot before Alexander Volkov: 'How’s this possible?'",
+          "publisher": "Bloody Elbow",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUJXATVy1w_aGxGFo0wqPDiCWli6ecRyREjA-3txcab6ZvJJvUXAvGoOCifsA"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/kamaru-usman-ciryl-gane-most-004024561.html",
+          "title": "Kamaru Usman: 'Ciryl Gane is the most dynamic heavyweight we've ever seen'",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0QfWkyAc7RvAH0Mxf3y35przx1HWNP_vUf4pbGrNPPzg3JBpcvgtqD1-kZtk"
+        }
+      ]
+    },
+    {
+      "query": "kurt russell",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T01:40:00Z",
+      "related_news_urls": [
+        "https://people.com/actors-who-dated-costars-after-working-together-12207719",
+        "https://www.yahoo.com/entertainment/movies/articles/im-not-ready-holiday-movies-120000979.html",
+        "https://www.tomsguide.com/entertainment/streaming/im-not-ready-for-holiday-movies-yet-so-i-found-this-overlooked-80s-crime-thriller-with-kurt-russell-for-free-on-tubi-instead"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaFj5GIVuCH7w5ffcjzplYzCpdNl9cOQNg4y7txiPMCdSrjU-yw0OJJ9KGKjE",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/actors-who-dated-costars-after-working-together-12207719",
+          "title": "7 Celebrity Couples Who Started Off as Costars Before Dating Years Later",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaFj5GIVuCH7w5ffcjzplYzCpdNl9cOQNg4y7txiPMCdSrjU-yw0OJJ9KGKjE"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/im-not-ready-holiday-movies-120000979.html",
+          "title": "I'm not ready for holiday movies yet, so I found an overlooked '80s crime thriller free on Tubi",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwniNVUc1lfhBdN9VWc466hTrS0WrqqZmDYJwdboTgl4uK1xyAJ0aHHLik8hs"
+        },
+        {
+          "url": "https://www.tomsguide.com/entertainment/streaming/im-not-ready-for-holiday-movies-yet-so-i-found-this-overlooked-80s-crime-thriller-with-kurt-russell-for-free-on-tubi-instead",
+          "title": "I'm not ready for holiday movies yet, so I found this overlooked '80s crime thriller with Kurt Russell for free on Tubi instead",
+          "publisher": "Tom's Guide",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdujq_Kr2krzRCJ0GrLVyyRKZX0pCgm-5SnUXmgFLo0HU6NiePDZRcEX52bF0"
+        }
+      ]
+    },
+    {
+      "query": "5g",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T01:30:00Z",
+      "related_news_urls": [
+        "https://spacenews.com/astrolab-to-develop-lunar-power-and-communications-infrastructure/",
+        "https://mezha.net/eng/news/mezha-f9ef72a7e6f197f37128c407_astrolab_proposes_lunar/",
+        "https://www.nicholsonstudentmedia.com/news/academics/space-executives-talk-future-of-lunar-economy/article_96c5d9c6-c97e-4a3b-88e0-1be755fe4de9.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0kQbWksEH-Bn_blpEAXYywYtiXKDJCfncq7oqwqNxutZXPTMyP4KWrivRRiY",
+      "image_credit": "SpaceNews",
+      "news": [
+        {
+          "url": "https://spacenews.com/astrolab-to-develop-lunar-power-and-communications-infrastructure/",
+          "title": "Astrolab to develop lunar power and communications infrastructure",
+          "publisher": "SpaceNews",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0kQbWksEH-Bn_blpEAXYywYtiXKDJCfncq7oqwqNxutZXPTMyP4KWrivRRiY"
+        },
+        {
+          "url": "https://mezha.net/eng/news/mezha-f9ef72a7e6f197f37128c407_astrolab_proposes_lunar/",
+          "title": "Astrolab proposes lunar 5G network with 400-hour power reserves and robotic rovers",
+          "publisher": "Mezha.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUEkqaHHaQgVqBSsemMk6FC4-35MmVXRf6ScWSlBy1-JeEJpwonlsSR7GVA6I"
+        },
+        {
+          "url": "https://www.nicholsonstudentmedia.com/news/academics/space-executives-talk-future-of-lunar-economy/article_96c5d9c6-c97e-4a3b-88e0-1be755fe4de9.html",
+          "title": "Space executives talk future of lunar economy",
+          "publisher": "The Charge",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUidfxgGWxtBAsvVHBniNRIxPnGFrqFgfBWBCIsKpxthzSyh3cnmsL4wOE2hA"
+        }
+      ]
+    },
+    {
+      "query": "mario cristobal",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T01:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50390885/5-star-wr-brysen-wright-picks-miami-reclassifies-2027",
+        "https://www.usatoday.com/story/sports/high-school/football/2026/11/05/brysen-wright-commits-miami-football-2028-recruiting-class/92397655007/",
+        "https://www.tallahassee.com/story/sports/college/fsu/football/2026/11/06/brysen-wright-miami-florida-state-seminoles-mike-norvell-football-recruiting/92628725007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ15vV93RhAAmZMfk60BNC-MG7k0LF-2iKrhlgaFrKwc76T0CTNrgQOOiPvJsc",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50390885/5-star-wr-brysen-wright-picks-miami-reclassifies-2027",
+          "title": "No. 1 2028 overall recruit Brysen Wright picks Miami, reclassifies to 2027",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ15vV93RhAAmZMfk60BNC-MG7k0LF-2iKrhlgaFrKwc76T0CTNrgQOOiPvJsc"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/high-school/football/2026/11/05/brysen-wright-commits-miami-football-2028-recruiting-class/92397655007/",
+          "title": "Brysen Wright commitment: 5-star WR commits to Miami football, Mario Cristobal",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvOrIKcJmsVU1IBLeLkVnAT-INCZeAUjyIqH4DoUVeBa8BrduMH4S_tFpgPJ0"
+        },
+        {
+          "url": "https://www.tallahassee.com/story/sports/college/fsu/football/2026/11/06/brysen-wright-miami-florida-state-seminoles-mike-norvell-football-recruiting/92628725007/",
+          "title": "Brysen Wright announcement ceremony shows gaps FSU need to fill",
+          "publisher": "Tallahassee Democrat",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMSsMTGaY9F8XxDmepzBxx85h1Q5TXgIeD-LV48QEzSfTJVUWVxnrBqzkJ4wQ"
+        }
+      ]
+    },
+    {
+      "query": "nolan traoré",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T01:30:00Z",
+      "related_news_urls": [
+        "https://www.basketusa.com/news/955334/victor-wembanyama-et-les-spurs-deroulent-a-sacramento/",
+        "https://www.lequipe.fr/Basket/Actualites/Septieme-victoire-consecutive-pour-les-san-antonio-spurs-un-double-double-et-de-l-adresse-pour-victor-wembanyama/1741855",
+        "https://sports.orange.fr/plus-de-sport/basket/article/nba-saison-reguliere-san-antonio-enchaine-wembanyama-brille-a-nouveau-exclu-CNT000002tBvtZ.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQr_qJcLkb8JQBh9LsPE8yRjtjtjS5Zgw2PfHV5LlfiS5sREEz_DiBw_LJTqoE",
+      "image_credit": "Basket USA",
+      "news": [
+        {
+          "url": "https://www.basketusa.com/news/955334/victor-wembanyama-et-les-spurs-deroulent-a-sacramento/",
+          "title": "Victor Wembanyama et les Spurs déroulent à Sacramento",
+          "publisher": "Basket USA",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQr_qJcLkb8JQBh9LsPE8yRjtjtjS5Zgw2PfHV5LlfiS5sREEz_DiBw_LJTqoE"
+        },
+        {
+          "url": "https://www.lequipe.fr/Basket/Actualites/Septieme-victoire-consecutive-pour-les-san-antonio-spurs-un-double-double-et-de-l-adresse-pour-victor-wembanyama/1741855",
+          "title": "Septième victoire consécutive pour les San Antonio Spurs, un double-double et de l'adresse pour Victor Wembanyama",
+          "publisher": "L'Équipe",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPmc06MLR1st-Mg15LnsvYtovuLzyZtEABTQCN3u7Ns9xKK-amWncKLU5rmMI"
+        },
+        {
+          "url": "https://sports.orange.fr/plus-de-sport/basket/article/nba-saison-reguliere-san-antonio-enchaine-wembanyama-brille-a-nouveau-exclu-CNT000002tBvtZ.html",
+          "title": "NBA - Saison régulière : San Antonio enchaîne, Wembanyama brille à nouveau : Sports - Orange",
+          "publisher": "Sports - Orange",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQh0GNH78seVrFdUw5leg3iZiLY-GbxC-B5Otr7Pm_9eyQzzsgU6RUYIgr4HMY"
+        }
+      ]
+    },
+    {
+      "query": "taye diggs",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T01:30:00Z",
+      "related_news_urls": [
+        "https://bossip.com/4651688/where-is-the-cast-of-brown-sugar/4/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4QA7E3_4A-XFppsSPE_PoZZAQpZM2AoNdgWqFB9dxSDuF3fB950wPsyQRJOo",
+      "image_credit": "Bossip",
+      "news": [
+        {
+          "url": "https://bossip.com/4651688/where-is-the-cast-of-brown-sugar/4/",
+          "title": "Still Sweet Like ‘Brown Sugar’! From Sanaa Lathan To Taye Diggs, Here’s Where The Black Rom-Com Cast Is Now",
+          "publisher": "Bossip",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4QA7E3_4A-XFppsSPE_PoZZAQpZM2AoNdgWqFB9dxSDuF3fB950wPsyQRJOo"
         }
       ]
     }
