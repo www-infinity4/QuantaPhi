@@ -1,0 +1,15 @@
+/* Small merchant-source placement inside existing Oracle Octaves Quick Cards. */
+.shoplc-sale-mini{box-sizing:border-box;margin:12px 0 16px;padding:14px;border:1px solid #d5c5b8;border-radius:18px;background:#fffaf5;color:#302a2e;box-shadow:0 6px 18px #271b2212;font:inherit}
+.shoplc-sale-mini *{box-sizing:border-box}
+.shoplc-sale-kicker{display:block;font-size:.75rem;font-weight:800;letter-spacing:.055em;color:#79516f;line-height:1.4}
+.shoplc-sale-body{display:grid;grid-template-columns:minmax(86px,130px) 1fr;gap:14px;align-items:center;margin:10px 0}
+.shoplc-sale-image{display:block;width:100%;aspect-ratio:1;object-fit:contain;background:#fff;border:1px solid #e5dee1;border-radius:12px}
+.shoplc-sale-copy{display:flex;flex-direction:column;gap:7px;min-width:0}
+.shoplc-sale-title{font-size:1.08rem;line-height:1.35;overflow-wrap:anywhere}
+.shoplc-sale-small{font-size:.85rem;line-height:1.45;color:#62565e}
+.shoplc-sale-actions{display:flex;flex-wrap:wrap;gap:9px;align-items:center}
+.shoplc-sale-actions a,.shoplc-sale-actions button,.shoplc-sale-restore{min-height:44px;padding:11px 14px;border-radius:11px;font:inherit;font-size:.92rem;font-weight:750;text-decoration:none;cursor:pointer}
+.shoplc-sale-link{display:inline-flex;align-items:center;justify-content:center;background:#3d2b40;color:#fff!important}
+.shoplc-sale-hide,.shoplc-sale-restore{background:#fff;border:1px solid #a79aa4;color:#3d2b40}
+.shoplc-sale-mini :focus-visible{outline:3px solid #315c94;outline-offset:2px}
+@media(max-width:380px){.shoplc-sale-body{grid-template-columns:85px 1fr;gap:10px}.shoplc-sale-mini{padding:12px}.shoplc-sale-title{font-size:1rem}}
