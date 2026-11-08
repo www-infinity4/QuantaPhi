@@ -1,0 +1,25 @@
+name: Collectible Set Studio · privacy and draft safety
+on:
+  pull_request:
+    paths:
+      - 'collectible-set-*'
+      - 'media-star-creator.js'
+      - 'test/collectible-set-studio.test.mjs'
+      - '.github/workflows/collectible-set-studio.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  no-payment-source-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: JS syntax and focused proposal-only tests
+        run: |
+          node --check collectible-set-core.mjs
+          node --check collectible-set-studio.mjs
+          node --check media-star-creator.js
+          node --test test/collectible-set-studio.test.mjs
