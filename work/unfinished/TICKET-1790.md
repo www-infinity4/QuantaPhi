@@ -5,7 +5,7 @@ state: implementing
 dot: "🟡"
 progress_percent: 55
 progress_basis: "Estimate: source-backed search, official references, in-card proposal preview, moderation-boundary tests and reviewed-data importer implemented on PR; exact-head CI, review, merge, approved 1,000+ data snapshot and Android live acceptance pending"
-sessions_spent: 5
+sessions_spent: 6
 sessions_remaining_estimate: unknown
 agent: "GPT · Red source review, Green implementation, Pink CI review, Black release verification pending"
 lease_id: null
@@ -14,15 +14,15 @@ task_session_id: null
 fence: null
 repo: www-infinity4/QuantaPhi
 branch: feat/media-star-creator-ledger-choices-20261107
-head_sha: 9fe29a641dbaa36f853b5704cb9ce06c5bad0a2e (source head before this checkpoint; exact-head CI must be read again)
+head_sha: 0a9cde5694cd7a8eccf1f2086c24007207768c6c (source head before this checkpoint; exact-head CI pending)
 last_observed_at_utc: "2026-11-07"
 pr: "https://github.com/www-infinity4/QuantaPhi/pull/1822 (current draft); #1814 (earlier merged)"
-tests: "Creator prior source passed 15/15 focused tests; latest public-card & creator awards run pending exact-head confirmation. TV-Database source 2/2 CI passed at 2e11158e. Artist-radio CI unrelated failure on prior QuantaPhi head; no production acceptance."
+tests: "Media Star focused workflow passed on prior QuantaPhi head 837b63a5; latest creator-claim, session, and paid-entitlement CI pending. TV-Database latest a9986e7a production-credit workflow queued and YouTube workflow passed. Other artist-radio failure remains separate. No live browser or wallet acceptance."
 merged: false
 deployed: false
 live_verified: false
 blocker: "Current #1822 remains draft; D1 PR #130 source-only; issuer view funding/identity, curator wallet entitlement service, moderation and Android/live deployment unverified"
-next_action: "Independently review full latest-head #1822 CI and #130 security/rights before any merge; add signed creator settlement and user-confirmed curator checkout in a separately reviewed phase."
+next_action: "Read latest exact-head #1822 and #130 CI, address errors, then independently review signer/rights verification and issuer funding/atomic curator checkout before any merge or live deployment."
 ---
 ## November 7 — thousands-scale Developer Library expansion (PR #1814)
 
@@ -88,3 +88,12 @@ Next action: independent financial/security/rights review and exact-head CI; ver
 - Evidence: TV-Database head `2e11158e5d2b8148d4718fb8d18e1c7d2aba3d80` had 2/2 CI success, including D1 SQLite schema/actual query masking, Worker TypeScript compilation and source contracts. QuantaPhi frontend focused CI had passing Media Star suite at prior head `0d1688e41e490ec14e448da918fc23eb68c70236` after correcting a test-selector typo; latest head CI is pending. The separate artist-radio workflow is failing on that branch and needs independent triage; do not count all QuantaPhi workflows green.
 - No new creator card was actually approved, no D1 0005 migration was deployed, no wallet recipient was verified, and no StarCoin was issued, transferred or made claimable. The current production ledger reports only **client-reported one-per-content/account/Central-day** receipts, so it DOES NOT yet satisfy one award for each genuine replay/session. Provider playback validation, fraud controls, repeat-play idempotency, funded issuer policy and creator rights verification remain blockers. Do not call source work production.
 - Next safe action: verify latest CI and independent PR review, then separately design an accountable, verified per-play session receipt, approved backend issuance and creator/curator transfers. Preserve historical source receipts, no blind backfill.
+
+## November 7 session 6 — claimant evidence, each listening-session proposal, and existing paid entitlement
+
+Owner instruction remains the canonical separate payout model. No spendable coins issued.
+
+- **Backend** TV-Database draft PR #130 latest tested changes through `a9986e7a4f9b95facf6ed61828d51cdaf581ed5c`: D1 creator rights claims (`media_star_creator_claims`) bound to authenticated wallet; distinct eligible native-play `media_star_session_evidence` and one `media_star_infinity_session_awards` proposal per server-issued session (instead of older one/content/account/day reports). Server checks approved content, free or viewer-owned paid entitlement, elapsed playback period, bound claimant and per-hour rate limit. Candidate proposal is still client-reported and **unfunded_unclaimed**; no viewer debit, no mint, no automated verified proof. Added signed read-only `media-star-episode-access`: paid source only with same viewer's recorded `settled` and non-null transfer receipt. **NO purchase endpoint, issuance endpoint or recipient override**. D1 migration schema and synthetic fixture assert no double proposed credit, duplicate paid episode receipt rejection, claimant isolation and zero account balance changes.
+- **Frontend** QuantaPhi draft PR #1822 latest through docs head `0a9cde5694cd7a8eccf1f2086c24007207768c6c`: Media Star creator studio asks for explicit creator rights confirmation/evidence; signed StarQuest bridge saves a pending claim, never an inferred creator payment. Original Public Oracle Media Star native audio/video player starts and completes per-listen session when foreground media progress is observed; official YouTube embeds do **not** pretend to expose reliable listening proof. Locked cards now offer **Check my episode access** read-only, with no purchase or charge. Creator ledger shows per-session proposals, older daily receipts, pending identity claims and zero spendable until independently approved.
+- **CI readback at checkpoint**: Previous QuantaPhi Media Star production-credit workflow succeeded on head `837b63a5`, while an unrelated artist-radio workflow failed; all-job green not claimed. Backend `a9986e7a` run had YouTube job success, production credit check queued. Later exact-head source/docs commits must be checked. No migration or Worker/site deployment, approved public creator card, authorized X/YouTube listen telemetry, Android acceptance, funded mint/transfer, real curator payment receipt, or verified rights claimant.
+- **Next safe action**: Review the newest exact-head two-repo CI and security acceptance, then build independent reviewer-authorized claimant verification, controlled issuer-funded settlement, and customer-confirmed **atomic** one-coin curator transfer with receipt/entitlement. Merge/deploy only after approved independent review, D1 migration plan, live browser/mobile verification and payment audit.
