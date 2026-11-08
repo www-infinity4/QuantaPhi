@@ -25,3 +25,9 @@ The GPT Coin import is issuer-signed Ed25519 and account-bound. A provider still
 7. Final acceptance requires actual Cloudflare version/source/binding readback, production Android 360px browser observation, same-account wallet receipt and a recorded rollback source pin.
 
 Keep this checkpoint with the existing canonical issues #1296, #1674 and the unfinished GIT source PR chain; this is not a claim that release is complete.
+
+## Global GIT serial reconciliation guard (2026-11-07)
+
+A verified line-award record is not itself a serialized issued GIT coin. The authenticated wallet asset reader now credits ONLY GIT awards joined to immutable `gitcoin_serials` by exact `receipt_id` AND `wallet_id`. Missing or mismatched serials are shown separately as `awaitingSerial` reconciliation and **never increase the displayed credited balance**. If the GIT serial schema/binding cannot be read, balance is unavailable rather than fabricated as 0. Pending line claims remain a separate `pending` count. Android wallet labels distinguish pending verification from pending serial allocation; no client operation creates serials.
+
+This source guard cannot mint GIT or substitute for owner/executor enrollment. Existing live Cloudflare GIT schema contains `gitcoin_serials`; source issuance from stacked #1675/#1779, independent review, verified worker binding, and backend readback still require an approved release.
