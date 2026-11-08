@@ -692,3 +692,48 @@ test('Google OAuth redirect status stays sanitized across Worker completion boun
  assert.match(providerSignInErrorMessage(code,'google'),/unexpected redirect/);
  assert.ok(!providerSignInErrorMessage(code,'google').includes('private-code'));
 });
+
+
+test('Cloudflare membership denial shows a reason without an empty actionable selector',async t=>{
+  class Element {
+    constructor(tag){this.tag=tag;this.childNodes=[];this.dataset={};this.listeners={};this.textContent='';this.style={};this.classList={add(){}};}
+    append(...nodes){this.childNodes.push(...nodes);}
+    prepend(...nodes){this.childNodes.unshift(...nodes);}
+    replaceChildren(...nodes){this.childNodes=nodes;}
+    setAttribute(k,v){this[k]=v;}
+    removeAttribute(k){delete this[k];}
+    addEventListener(k,fn){this.listeners[k]=fn;}
+  }
+  const originals={document:globalThis.document,window:globalThis.window,
+    sessionStorage:globalThis.sessionStorage,fetch:globalThis.fetch};
+  t.after(()=>Object.assign(globalThis,originals));
+  const document={createElement:tag=>new Element(tag),createTextNode:txt=>({textContent:txt}),addEventListener(){}};
+  const saved=new Map();
+  const sessionStorage={getItem:k=>saved.get(k)||null,setItem:(k,v)=>saved.set(k,v),removeItem:k=>saved.delete(k)};
+  const window={document,sessionStorage,location:{pathname:'/bubbles-accounts.html',search:''},
+    addEventListener(){},removeEventListener(){},setTimeout:()=>1,clearTimeout(){}};
+  Object.assign(globalThis,{document,window,sessionStorage,fetch:async(url)=>{
+    const path=String(url).replace('/api/bubbles/connections','');
+    if(path==='/catalog')return Response.json({ok:true,providers:[{id:'cloudflare',
+      configured:true,actions:['account.read']}]});
+    if(path==='/accounts')return Response.json({ok:true,accounts:[{id:'cf-1',
+      provider:'cloudflare',label:'connected@example.test',status:'connected',
+      expiresAt:Date.now()+600000,grantedActions:['account.read']}]});
+    if(path==='/wallet-email/preferences')return Response.json({ok:true,enabled:false});
+    if(path==='/cloudflare/accounts')return Response.json({ok:false,
+      error:'cloudflare_memberships_403'},{status:403});
+    assert.fail('Unexpected endpoint '+path);
+  }});
+  const host=new Element('main'),ui=mountConnections(host,{token:async()=>'sq_'+'a'.repeat(40)});
+  await ui.refresh();
+  const all=node=>[node,...(node.childNodes||[]).flatMap(all)];
+  for(let i=0;i<12&&!all(host).some(n=>String(n.textContent).includes('Reconnect with Memberships Read'));i++)
+    await new Promise(setImmediate);
+  const nodes=all(host);
+  assert.ok(nodes.some(n=>String(n.textContent).includes('Cloudflare signed in ✓')),
+    'The account stays connected when an optional lookup fails');
+  assert.ok(nodes.some(n=>String(n.textContent).includes('Reconnect with Memberships Read')));
+  assert.equal(nodes.find(n=>n['aria-label']==='Select my Cloudflare account').hidden,true);
+  assert.equal(nodes.find(n=>n.textContent==='Use this Cloudflare account').hidden,true);
+  assert.equal(nodes.find(n=>n.textContent==='Use this Cloudflare account').disabled,true);
+});
