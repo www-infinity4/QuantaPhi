@@ -23,6 +23,6 @@ test('artist Quick Cards play their selected YouTube sources and never the Infin
 test('site keeps all three music scripts in the page with refreshed asset versions',()=>{
  const home=source('index.html');
  assert.ok(home.includes('quick-infinity-radio.js?v=20261106-artist-audio-stop'));
- assert.ok(home.includes('steve-miller-book-of-dreams.js?v=20261106-artist-radio2'));
- assert.ok(home.includes('classic-rock-official-card.mjs?v=20261106-artist-playback'));
+ assert.ok(home.includes('steve-miller-book-of-dreams.js?v=20261106-artist-radio3'));
+ assert.ok(home.includes('classic-rock-official-card.mjs?v=20261106-artist-radio3'));
 });
