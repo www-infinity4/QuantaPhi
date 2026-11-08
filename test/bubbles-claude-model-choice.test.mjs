@@ -50,3 +50,15 @@ test('selected Claude responses remain in the main Bubbles conversation',async()
  assert.match(steward,/if\(!inline\)open\(\)/);
  assert.match(ui,/result\?\.tickets\?\.length/);
 });
+
+
+test('failed Claude delivery preserves the typed draft and cannot claim a reply',async()=>{
+ const fs=await import('node:fs');
+ const ui=fs.readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ assert.match(ui,/const confirmed=await askClaudeSteward\(decision\.prompt,decision\.mode\);\s*if\(confirmed\)clearSentComposer\(\)/);
+ assert.doesNotMatch(ui,/clearSentComposer\(\);\s*await askClaudeSteward/);
+ assert.match(ui,/confirmed=result\?\.ok===true&&typeof result\.reply==='string'/);
+ assert.match(ui,/status\.textContent=confirmed\?'Claude steward replied\.'/);
+ assert.match(ui,/return confirmed;\s*\}\s*window\.addEventListener\('bubbles:ai-consult'/);
+ assert.match(ui,/Your draft is preserved; check existing Brain tickets before retrying/);
+});
