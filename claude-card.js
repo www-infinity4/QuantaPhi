@@ -21,12 +21,13 @@ function patchScript(patches,stamp){
   const name=repo.split('/')[1];n++;
   out+='cd "${'+name.replace(/\W/g,'_').toUpperCase()+'_DIR:-$HOME/'+name+'}" || exit 1\n'+
    '[ "$(basename "$(git rev-parse --show-toplevel)")" = "'+name+'" ] || { echo "WRONG REPO"; exit 1; }\n'+
-   'git checkout -B claude-fix-'+stampText+'\npython3 - <<\'ENDPY\'\nimport json,pathlib\n'+
+   '[ -z "$(git status --porcelain)" ] || { echo "DIRTY REPO — commit or stash your existing work before patching"; exit 1; }\n'+
+   'git checkout -b claude-fix-'+stampText+'\npython3 - <<\'ENDPY\'\nimport json,pathlib\n'+
    'def patch(path,old,new):\n    p=pathlib.Path(path);s=p.read_text()\n    assert s.count(old)==1,"no unique match: "+path\n    p.write_text(s.replace(old,new,1));print("patched",path)\n'+
    list.map(p=>'patch(json.loads(r\'\'\''+jsonSafe(p.path)+'\'\'\'),json.loads(r\'\'\''+jsonSafe(p.old_str)+'\'\'\'),json.loads(r\'\'\''+jsonSafe(p.new_str)+'\'\'\'))').join('\n')+
    '\nENDPY\necho "patch applied ✓"\n'+
-   'git remote set-url origin https://$(gh auth token)@github.com/'+repo+'.git\n'+
-   'git add -A && git commit -m "Claude steward fix" && git push origin HEAD && echo "ALL DONE ✓ (branch claude-fix-'+stampText+' pushed, open a PR)"\n';
+   'git remote set-url origin https://github.com/'+repo+'.git\n'+
+   'git add -- '+list.map(p=>p.path).join(' ')+' && git commit -m "Claude steward fix" && gh auth setup-git && git push origin HEAD && echo "ALL DONE ✓ (branch claude-fix-'+stampText+' pushed, open a PR)"\n';
  }
  return out;
 }
@@ -79,7 +80,7 @@ async function ask(text,{mode='chat',evidence}={}){
   data=await call(clean,mode,ev);
   turns.push({role:'user',text:clean},{role:'assistant',text:data.reply});turns=turns.slice(-24);save();
   if(wait)wait.textContent=data.reply;
-  if(data.tickets?.length)bubble('claude','Draft ticket '+data.tickets.map(t=>t.id).join(', ')+' filed. It is a draft until you approve it in Bubbles.');
+  if(data.tickets?.length)bubble('claude','Draft ticket '+data.tickets.map(t=>t.id).join(', ')+' filed. It is NOT runnable yet. Review a job plan and promote it with the existing owner Brain ticket update flow.');
   showPatches(data);
  }catch(e){if(wait)wait.textContent='Not confirmed: '+String(e.message||e).slice(0,160)+'. Nothing was changed.';}
  busy=false;if(ui)ui.send.disabled=false;
