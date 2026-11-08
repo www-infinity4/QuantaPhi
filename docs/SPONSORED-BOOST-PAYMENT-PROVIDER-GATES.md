@@ -53,6 +53,28 @@ https://support.google.com/publisherpolicies/answer/48182
 https://support.google.com/adsense/answer/2660562
 https://www.ftc.gov/business-guidance/resources/native-advertising-guide-businesses
 
+## November 7, 2026 — verified Stripe Infinity SANDBOX milestone
+
+**External Stripe facts were retrieved from the connected Stripe plugin (test mode), not inferred from source.** Target account: **Infinity sandbox**; Stripe test-mode context `acct_1UZNk46EcqqJzlWv`. This is a sandbox merchant context, not proof of approved live payments or business identity.
+
+| Stripe test artifact | Verified identifier / state |
+| --- | --- |
+| Product | `prod_VaZHvTSYWh1sqy` · QuantaPhi Sponsored Quick Card Boost — TEST ONLY |
+| One-time $100.00 USD price | `price_1UZO8k6EcqqJzlWvKf3rGFuy` · `unit_amount=10000`, `currency=usd`, `livemode=false` |
+| Checkout/payment link | `plink_1UZO996EcqqJzlWvCVkSrIz2` · https://buy.stripe.com/test_9B614gbBSeqWa9Ug5X7Vm00 |
+| Usage | Restricted to **one completed sandbox session**; initial readback `completed_sessions.count=0`; no test payment event verified at creation |
+| Campaign metadata | `environment=sandbox`, `project_issue=1315`, `review_status=not_approved`, `fulfillment=disabled` |
+| Backend | Source-only `workers/sponsor-boost/stripe-sandbox-webhook.mjs`, **not deployed**; `workers/sponsor-boost/stripe-sandbox-schema.sql` isolated **unapplied** D1 |
+| CI | `test/stripe-sponsor-sandbox-webhook.test.mjs` added to exact-head card-quality CI; independently verify successful run before release |
+
+**Buyer-facing test:** the link is exclusively Stripe **test mode** and cannot charge a real card; use Stripe's published test payment methods only. Never use real financial details. A browser automation attempt via TinyFish could not start due to insufficient third-party service wallet credit; no test checkout was submitted. Manual test using official Stripe sandbox is available without that browser automation and can be independently confirmed through Stripe account test transactions.
+
+**Webhook source rules:** require raw-body Stripe HMAC timestamp signature in the `Stripe-Signature` header using Cloudflare Worker secret `STRIPE_TEST_WEBHOOK_SECRET`; reject signatures outside a five-minute clock window. Require both event and Checkout Session `livemode=false`, `checkout.session.completed`, exact `payment_link`, `USD 10000 cents`, `payment_status=paid` and exact nonpublished sponsorship metadata. Only then write to isolated `SPONSOR_SANDBOX_DB` via unique `event_id`/`session_id`; duplicate events cannot double-credit. All responses explicitly mark `canActivateAd=false` and `realMoney=false`. It does **not** read/write `sponsor_campaign` or any Cash Wallet/reward/creator balances. This is not a legal production backend or a settlement confirmation.
+
+**Staging secrets and bindings (not set here):** Configure `STRIPE_TEST_WEBHOOK_SECRET` as a Worker secret obtained from a **test-mode** Stripe event destination, `STRIPE_TEST_ACCOUNT_ID` as the authorized sandbox context, `STRIPE_TEST_PAYMENT_LINK_ID` as the known link, and `SPONSOR_SANDBOX_DB` as a **separate** isolated D1. Never use a live webhook secret, Stripe API key, PayPal token or Chime data. Do not connect this test endpoint to a live card carousel or cash wallet. Operator should register the endpoint with Stripe only after an actual reviewed Worker staging URL exists, then complete one real **test** checkout and verify signed webhook + duplicate replay via D1 readback.
+
+**Production remains blocked** on verified business identity, legal sponsorship terms and taxes, per-advertiser authorization/pricing, actual rights-cleared products, appropriately secured per-campaign Checkout Sessions or invoices, live merchant onboarding, refunds/chargebacks, consent-aware real impression/click receipts and review/deployment/Android acceptance. A reusable test Payment Link is not suitable as a commercial multi-advertiser billing endpoint.
+
 ## Secure architecture and work gates
 
 1. **Owner-controlled provider onboarding:** verify legal merchant identity, processor support/fees, business payout destination privately and valid business terms. Never submit bank details to a model or email. Choose between Stripe Invoicing/Checkout and PayPal Business invoicing based on actual merchant eligibility and account owner consent. Do not turn on another user's saved bank.
