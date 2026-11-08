@@ -69,6 +69,7 @@ const choices=[
  ['dispensary-star-buds-lakeside','21+ · Star Buds · Lakeside'],
  ['dispensary-green-solution-wewatta','21+ · The Green Solution · Wewatta'],
  ['dispensary-maikoh-broadway','21+ · Maikoh Holistics · North Broadway'],
+ ['dispensary-the-dab-alameda','21+ · The Dab by Silverpeak · Alameda'],
  ['phiChannelCards','Infinity TV Guide'],
  ['publicCardTrends','Explore what is trending']
 ];
@@ -137,6 +138,7 @@ const CARD_DIRECTIONS={
  ['dispensary-star-buds-lakeside']:['adult-store-star-buds-lakeside','21+ Directory','Independent source-verified dispensary listing with original store website'],
  ['dispensary-green-solution-wewatta']:['adult-store-green-solution-wewatta','21+ Directory','Independent source-verified dispensary listing with original store website'],
  ['dispensary-maikoh-broadway']:['adult-store-maikoh-broadway','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-the-dab-alameda']:['adult-store-the-dab-alameda','21+ Directory','Independent source-verified dispensary listing with original store website'],
  publicCardTrends:['trending-now','Research','Investigate verified trends and search interests']
 };
 
