@@ -6,7 +6,10 @@ on:
       - 'source-quick-cards.mjs'
       - 'test/gemini-card.test.mjs'
       - 'test/claude-steward.test.mjs'
+      - 'test/bubbles-claude-model-choice.test.mjs'
+      - 'bubbles-claude-routing.mjs'
       - 'claude-card.js'
+      - 'bubbles.html'
       - 'bubbles-ai.js'
       - '.github/workflows/deploy-gemini-card.yml'
   push:
@@ -38,8 +41,10 @@ jobs:
           node --check workers/infinity-rogers/gemini-card.mjs
           node --check workers/infinity-rogers/claude-steward.mjs
           node --check claude-card.js
+          node --check bubbles-ai.js
+          node --check bubbles-claude-routing.mjs
           node --check source-quick-cards.mjs
-          node --test test/claude-steward.test.mjs test/gemini-card.test.mjs test/source-quick-cards.test.mjs test/bubbles-ai-collaboration.test.mjs test/chatgpt-official-viewer.test.mjs test/integra-automation-router.test.mjs test/bubbles-connections-ui.test.mjs
+          node --test test/bubbles-claude-model-choice.test.mjs test/claude-steward.test.mjs test/gemini-card.test.mjs test/source-quick-cards.test.mjs test/bubbles-ai-collaboration.test.mjs test/chatgpt-official-viewer.test.mjs test/integra-automation-router.test.mjs test/bubbles-connections-ui.test.mjs
       - name: Dry-run existing model Worker bundle
         run: |
           npx --yes wrangler@4 deploy --config workers/infinity-rogers/wrangler.toml --dry-run --outdir /tmp/gemini-card-bundle
