@@ -326,3 +326,117 @@ test('a lease reclaimed between receipt validation and final settlement cannot c
   assert.equal(JSON.parse(row.result_json).receipts.length,1,'confirmed receipt must survive stale final settlement');
  }finally{d.close();}
 });
+
+
+test('concurrent snapshot change rejects stale checkpoint reservation rather than overwriting receipts',async()=>{
+ const d=database();try{
+  const first=await claim(d.db,AT,AT,'snap-a');
+  await runPacketPass({db:d.db,claim:first,ownerScope:OWNER_SCOPE,ownerId:OWNER,
+   sourceVersion:SHA,now:AT+1,loadCandidates:async()=>[],executePacket:async()=>{throw Error('not called')}});
+  const next=await claim(d.db,AT+INTERVAL,AT+INTERVAL,'snap-b');
+  let changed=false,scans=0;
+  const db={prepare(sql){
+   const stmt=d.db.prepare(sql);
+   if(!sql.includes('INSERT INTO continuity_packet_checkpoints'))return stmt;
+   return {bind(...args){const bound=stmt.bind(...args);return {run:async()=>{
+    if(!changed){
+     changed=true;
+     const old=d.sqlite.prepare('SELECT result_json FROM continuity_packet_checkpoints').get();
+     const ledger=JSON.parse(old.result_json);
+     ledger.receipts=[{repo:REPO,issue:45,headSha:SHA,action:'edit_code',result:'changed',
+       idempotencyKey:'external-45',providerConfirmed:true}];
+     d.sqlite.prepare('UPDATE continuity_packet_checkpoints SET result_json=?,updated_at=updated_at+1')
+       .run(JSON.stringify(ledger));
+    }
+    return bound.run();
+   }}}};
+  }};
+  const result=await runPacketPass({db,claim:next,ownerScope:OWNER_SCOPE,ownerId:OWNER,
+    sourceVersion:NEXT,now:AT+INTERVAL+1,
+    loadCandidates:async()=>{scans++;return [packet(46)]},
+    executePacket:async()=>{throw Error('must not execute')}});
+  assert.equal(result.status,'checkpoint_conflict');assert.equal(scans,0);
+  const saved=JSON.parse(d.sqlite.prepare('SELECT result_json FROM continuity_packet_checkpoints').get().result_json);
+  assert.equal(saved.receipts[0].issue,45);
+ }finally{d.close();}
+});
+
+test('legacy running checkpoint without an explicit pending field always requires reconciliation',async()=>{
+ const d=database();try{
+  const original=await claim(d.db,AT,AT,'legacy-start');
+  await runPacketPass({db:d.db,claim:original,ownerScope:OWNER_SCOPE,ownerId:OWNER,
+    sourceVersion:SHA,now:AT+1,loadCandidates:async()=>[packet(45)],
+    executePacket:async()=>{throw Error('uncertain provider write')}});
+  d.sqlite.prepare("UPDATE continuity_packet_checkpoints SET state='running',result_json='{}'").run();
+  const next=await claim(d.db,AT+INTERVAL,AT+INTERVAL,'legacy-after-expiry');
+  let scans=0,executes=0;
+  const result=await runPacketPass({db:d.db,claim:next,ownerScope:OWNER_SCOPE,ownerId:OWNER,
+    sourceVersion:SHA,now:AT+INTERVAL+1,loadCandidates:async()=>{scans++;return [packet(45)]},
+    executePacket:async()=>{executes++;throw Error('duplicate')}});
+  assert.equal(result.status,'reconciliation_required');
+  assert.equal(scans,0);assert.equal(executes,0);
+ }finally{d.close();}
+});
+
+test('cached inventory terminal markers prevent replay after 100-entry done/blocker history evicts keys',async()=>{
+ const d=database();try{
+  const initial=await claim(d.db,AT,AT,'cache-init');
+  await runPacketPass({db:d.db,claim:initial,ownerScope:OWNER_SCOPE,ownerId:OWNER,
+    sourceVersion:SHA,now:AT+1,loadCandidates:async()=>[],executePacket:async()=>{throw Error('empty')}});
+  const previous=JSON.parse(d.sqlite.prepare('SELECT result_json FROM continuity_packet_checkpoints').get().result_json);
+  const oldDone=packet(1),oldBlocked=packet(2);
+  const actionKey=p=>[p.repo,p.issue,p.headSha,p.nextAction].join('#');
+  const history=Array.from({length:99},(_,i)=>REPO+'#'+(1000+i)+'#'+SHA+'#edit_code');
+  previous.done=[actionKey(oldDone),...history];
+  previous.blocked=[{repo:REPO,issue:2,headSha:SHA,action:'edit_code',sourceVersion:SHA,reason:'blocked previously'},
+   ...Array.from({length:99},(_,i)=>({repo:REPO,issue:2000+i,headSha:SHA,
+     action:'edit_code',sourceVersion:SHA,reason:'old block'}))];
+  previous.inventoryLoaded=true;previous.exhausted=false;
+  previous.candidates=[{...oldDone,terminal:'done'},{...oldBlocked,terminal:'blocked'},packet(3),packet(4)];
+  d.sqlite.prepare('UPDATE continuity_packet_checkpoints SET result_json=?').run(JSON.stringify(previous));
+  const fresh=await claim(d.db,AT+INTERVAL,AT+INTERVAL,'cache-next');
+  const invoked=[];
+  const processed=await runPacketPass({db:d.db,claim:fresh,ownerScope:OWNER_SCOPE,ownerId:OWNER,
+    sourceVersion:SHA,now:AT+INTERVAL+1,limit:2,
+    loadCandidates:async()=>{throw Error('cached inventory only')},
+    executePacket:async(work,{idempotencyKey})=>{
+      invoked.push(work.issue);
+      return {receipt:work.issue===4?receipt(work,work.nextAction,'blocked',idempotencyKey,{reason:'new block'})
+       :receipt(work,work.nextAction,'changed',idempotencyKey,{providerConfirmed:true,
+        artifactUrl:'https://github.com/www-infinity4/QuantaPhi/commit/'+SHA})};
+    }});
+  assert.equal(processed.status,'processed');
+  assert.deepEqual(invoked,[3,4]);
+  const another=await claim(d.db,AT+2*INTERVAL,AT+2*INTERVAL,'cache-final');
+  const resumed=await runPacketPass({db:d.db,claim:another,ownerScope:OWNER_SCOPE,ownerId:OWNER,
+   sourceVersion:SHA,now:AT+2*INTERVAL+1,
+   loadCandidates:async()=>{throw Error('no repeat scan')},
+   executePacket:async()=>{throw Error('must not replay old terminal candidates')}});
+  assert.equal(resumed.status,'unchanged');
+  assert.deepEqual(invoked,[3,4]);
+ }finally{d.close();}
+});
+
+test('legacy blocked merge receipt does not make a later eligible merge completed',async()=>{
+ const d=database();try{
+  const start=await claim(d.db,AT,AT,'legacy-done-setup');
+  await runPacketPass({db:d.db,claim:start,ownerScope:OWNER_SCOPE,ownerId:OWNER,
+    sourceVersion:SHA,now:AT+1,loadCandidates:async()=>[],executePacket:async()=>{throw Error('empty')}});
+  const legacy=JSON.parse(d.sqlite.prepare('SELECT result_json FROM continuity_packet_checkpoints').get().result_json);
+  legacy.done=[REPO+'#51#'+SHA];
+  legacy.receipts=[
+    {repo:REPO,issue:51,headSha:SHA,action:'merge_pr',result:'blocked',idempotencyKey:'blocked',reason:'not ready'},
+    {repo:REPO,issue:51,headSha:SHA,action:'request_review',result:'reviewed',
+      idempotencyKey:'reviewed',providerConfirmed:true}
+  ];
+  d.sqlite.prepare('UPDATE continuity_packet_checkpoints SET result_json=?').run(JSON.stringify(legacy));
+  const next=await claim(d.db,AT+INTERVAL,AT+INTERVAL,'legacy-done-next');
+  const merged=await runPacketPass({db:d.db,claim:next,ownerScope:OWNER_SCOPE,ownerId:OWNER,
+    sourceVersion:NEXT,now:AT+INTERVAL+1,
+    loadCandidates:async()=>[packet(51,{nextAction:'merge_pr',requiredChecksPassed:true,requiredReviewsSatisfied:true})],
+    executePacket:async(work,{idempotencyKey})=>({receipt:receipt(work,work.nextAction,'merged',idempotencyKey,
+      {providerConfirmed:true,mergeSha:THIRD})})});
+  assert.equal(merged.status,'processed');
+  assert.equal(merged.attempted[0].result,'merged');
+ }finally{d.close();}
+});
