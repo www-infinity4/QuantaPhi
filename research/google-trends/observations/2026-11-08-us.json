@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-08T19:01:17.989741Z",
+  "checked_at": "2026-11-08T19:31:15.747890Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "malik willis",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T18:40:00Z",
+      "query": "atlético madrid - barcelona",
+      "approx_searches": "50000+",
+      "published_at": "2026-11-08T19:10:00Z",
       "related_news_urls": [
-        "https://dknetwork.draftkings.com/2026/11/08/malik-willis-passing-yards-pick-for-dolphins-vs-lions/",
-        "https://goingfor2.com/malik-willis-fantasy-outlook-a-big-week-against-detroit-shorts/",
-        "https://www.miamidolphins.com/video/malik-willis-on-facing-the-lions-defense-they-re-a-well-coached-team"
+        "https://espndeportes.espn.com/futbol/espana/nota/_/id/17481023/atletico-madrid-vs-barcelona-como-estan-las-apuestas",
+        "https://www.si.com/es-us/los-ultimos-10-enfrentamientos-entre-el-atletico-de-madrid-y-el-fc-barcelona",
+        "https://www.elmundo.es/deportes/futbol/primera-division/2026/11/07/6aecf93a21efa031248b4576.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRybgQ91_-5H67KlFF5qGunKqWvaGqw7rZvokwA61tbBkYteSBeNgvWS-QF8G8",
-      "image_credit": "DraftKings Network",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRm1zAsbAiUp7cmvjzlm67H-5-YCw-uyDcsmM0zm5f6O5s6i_c8lvcdOUUgNwE",
+      "image_credit": "ESPN Deportes",
       "news": [
         {
-          "url": "https://dknetwork.draftkings.com/2026/11/08/malik-willis-passing-yards-pick-for-dolphins-vs-lions/",
-          "title": "Malik Willis Passing Yards Pick for Dolphins vs. Lions",
-          "publisher": "DraftKings Network",
+          "url": "https://espndeportes.espn.com/futbol/espana/nota/_/id/17481023/atletico-madrid-vs-barcelona-como-estan-las-apuestas",
+          "title": "Atlético Madrid vs Barcelona: ¿Cómo están las apuestas?",
+          "publisher": "ESPN Deportes",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRybgQ91_-5H67KlFF5qGunKqWvaGqw7rZvokwA61tbBkYteSBeNgvWS-QF8G8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRm1zAsbAiUp7cmvjzlm67H-5-YCw-uyDcsmM0zm5f6O5s6i_c8lvcdOUUgNwE"
         },
         {
-          "url": "https://goingfor2.com/malik-willis-fantasy-outlook-a-big-week-against-detroit-shorts/",
-          "title": "Malik Willis Fantasy Outlook: A Big Week Against Detroit? #shorts",
-          "publisher": "GoingFor2.com",
+          "url": "https://www.si.com/es-us/los-ultimos-10-enfrentamientos-entre-el-atletico-de-madrid-y-el-fc-barcelona",
+          "title": "Los últimos 10 enfrentamientos entre el Atlético de Madrid y el FC Barcelona",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQv8boX20OmjVO7FHfUD5eX5Dp2mieCsdGDg1sOURm1PtD1aTOqzlzqpMg3U5Y"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZvjCGjSM82orjtZbcNlmtCk_HjtmudwkBqr-TegHdeNInkoa2iZ1Qaw-40oE"
         },
         {
-          "url": "https://www.miamidolphins.com/video/malik-willis-on-facing-the-lions-defense-they-re-a-well-coached-team",
-          "title": "Malik Willis on facing the Lions defense: 'They're a well-coached team'",
-          "publisher": "Miami Dolphins",
+          "url": "https://www.elmundo.es/deportes/futbol/primera-division/2026/11/07/6aecf93a21efa031248b4576.html",
+          "title": "136 días después, se cierra la herida Julián Álvarez en la víspera de jugar contra el Barça: \"No ha sido la declaración sino pequeños gestos\"",
+          "publisher": "El Mundo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS56NVbQ5WHGHT3xbuF4VyHcHwNKVvC1FvZ_kdWyRIprgAHbW8IaRlui8qRDH4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy-_ZL_pmCk1QmpVvIe-2Pf63j2ZkJImDVIVjL5MC6H5C6ioXgmHVpFHGsTiY"
         }
       ]
     },
     {
-      "query": "isack hadjar",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T18:40:00Z",
+      "query": "vasco vs palmeiras",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-08T19:10:00Z",
       "related_news_urls": [
-        "https://www.gpblog.com/en/news/hadjar-asks-red-bull-to-let-him-pass-verstappen-again-after-team-orders",
-        "https://fordauthority.com/2026/11/red-bull-ford-f1-driver-backtracks-criticism-of-team/",
-        "https://racingnews365.com/isack-hadjar-cautious-over-major-red-bull-problem-fix-id-be-lying-if-i-said-yes"
+        "https://ge.globo.com/rj/futebol/copa-do-brasil/jogo/08-11-2026/vasco-palmeiras.ghtml",
+        "https://www.sportingnews.com/br/futebol/noticias/globo-vasco-palmeiras-gp-brasil-atraso/55994bb76e47191b6ee43c9b",
+        "https://odia.ig.com.br/esporte/vasco/2026/11/7320436-vascainos-confiam-em-classificacao-mas-divergem-sobre-jogo-na-colina.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTe4VmXRAQDesqsOLs5dyKe2uL3nubkwphnJ4_Y90yonGva8tJVfwIcBSTjh70",
-      "image_credit": "GPblog",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLcuX0yr1ACd8nz3fSW00NyFX21AcOnj3NCVWY9ikCXbE6rMqFfjzrxpFXZc4",
+      "image_credit": "ge",
       "news": [
         {
-          "url": "https://www.gpblog.com/en/news/hadjar-asks-red-bull-to-let-him-pass-verstappen-again-after-team-orders",
-          "title": "Hadjar raises the issue with Red Bull after team order for Verstappen",
-          "publisher": "GPblog",
+          "url": "https://ge.globo.com/rj/futebol/copa-do-brasil/jogo/08-11-2026/vasco-palmeiras.ghtml",
+          "title": "Ao vivo: Vasco x Palmeiras | Semifinal | Copa do Brasil",
+          "publisher": "ge",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTe4VmXRAQDesqsOLs5dyKe2uL3nubkwphnJ4_Y90yonGva8tJVfwIcBSTjh70"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLcuX0yr1ACd8nz3fSW00NyFX21AcOnj3NCVWY9ikCXbE6rMqFfjzrxpFXZc4"
         },
         {
-          "url": "https://fordauthority.com/2026/11/red-bull-ford-f1-driver-backtracks-criticism-of-team/",
-          "title": "Red Bull Ford F1 Driver Backtracks Criticism Of Team",
-          "publisher": "Ford Authority",
+          "url": "https://www.sportingnews.com/br/futebol/noticias/globo-vasco-palmeiras-gp-brasil-atraso/55994bb76e47191b6ee43c9b",
+          "title": "Globo vai passar Vasco x Palmeiras ou GP do Brasil se a corrida atrasar?",
+          "publisher": "www.sportingnews.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzn4H6ctUOigcwg5WFeMe_Qt8A4QmmDl6LUIGhqu9Bo2CE4mL0kfYpwbeNFGM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqBxkQxk1WscFYF3pqfYkgdto6rD0yC_e3F--7qNI02CapPPIe9yGywJpSVdQ"
         },
         {
-          "url": "https://racingnews365.com/isack-hadjar-cautious-over-major-red-bull-problem-fix-id-be-lying-if-i-said-yes",
-          "title": "Isack Hadjar cautious over major Red Bull problem fix: 'I'd be lying if I said yes'",
-          "publisher": "RacingNews365",
+          "url": "https://odia.ig.com.br/esporte/vasco/2026/11/7320436-vascainos-confiam-em-classificacao-mas-divergem-sobre-jogo-na-colina.html",
+          "title": "Vascaínos confiam em classificação, mas divergem sobre jogo na Colina",
+          "publisher": "O Dia",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMSPdrzWuLbp_Z4_MjfT0TD_PX-GS_VvTH_tt7_zcfsMQRckY8VhhMij233SM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTIrfd8Hnt-YpQAHz1AvB2TXFesiI-WgURdmxuVVN_K8Em7yE6JUQ6QjvxWSc"
         }
       ]
     },
     {
-      "query": "sauce gardner",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T18:40:00Z",
+      "query": "philadelphia",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T19:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50359560/regrading-deals-2025-nfl-trade-deadline-williams-gardner",
-        "https://www.nytimes.com/athletic/7751195/2026/11/04/new-york-jets-sauce-garnder-colts-trade-draft-picks/",
-        "https://www.indystar.com/story/sports/nfl/colts/2026/11/06/colts-sauce-gardner-explains-blocking-out-pressure-criticism-one-year-after-jets-trade/92631635007/"
+        "https://www.cnn.com/2026/11/08/us/philadelphia-boycott-ride-jewish-businesses",
+        "https://www.usatoday.com/videos/news/2026/11/08/philadelphia-biker-protest-targets-jewish-owned-businesses-over-israel-support/92679621007/",
+        "https://www.nbcphiladelphia.com/news/local/new-billboards-urge-people-boycott-jewish-owned-businesses-jew-belong-philadelphia/4493543/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbQPzCzOww7yNg7czS8eSatguM8ozEwK1NnMUADy-Nauc9g82cJn3ClgFA4LE",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDpPjnLosFEYeYVahFAykvweKQ4CTbCWfXYVIkCeCoz4fbp5Zf98pTczTNif4",
+      "image_credit": "CNN",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50359560/regrading-deals-2025-nfl-trade-deadline-williams-gardner",
-          "title": "Regrading 2025 NFL deadline trades: How Gardner, Williams deals look right now",
-          "publisher": "ESPN",
+          "url": "https://www.cnn.com/2026/11/08/us/philadelphia-boycott-ride-jewish-businesses",
+          "title": "Bicycle ‘boycott ride’ targeting Jewish-owned businesses in Philadelphia draws hundreds of counterprotesters",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbQPzCzOww7yNg7czS8eSatguM8ozEwK1NnMUADy-Nauc9g82cJn3ClgFA4LE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDpPjnLosFEYeYVahFAykvweKQ4CTbCWfXYVIkCeCoz4fbp5Zf98pTczTNif4"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7751195/2026/11/04/new-york-jets-sauce-garnder-colts-trade-draft-picks/",
-          "title": "How the Jets decided to trade Sauce Gardner, and where they stand one year later",
-          "publisher": "The New York Times",
+          "url": "https://www.usatoday.com/videos/news/2026/11/08/philadelphia-biker-protest-targets-jewish-owned-businesses-over-israel-support/92679621007/",
+          "title": "Philadelphia biker protest targets Jewish-owned businesses over Israel support",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpxIm7bAJZZjDDOCh_c6fYMeQBySmM7umk62OpIFPFS9qSshvxA25Au1oV-2Y"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVJOyfVblKjbbujQE9ulGXXrS1rFDErG_tyLIKDID7h0zTsXNu9S-quzwVjpQ"
         },
         {
-          "url": "https://www.indystar.com/story/sports/nfl/colts/2026/11/06/colts-sauce-gardner-explains-blocking-out-pressure-criticism-one-year-after-jets-trade/92631635007/",
-          "title": "Colts' Sauce Gardner on how he blocks out undue pressure, fan disappointment from Jets trade",
-          "publisher": "IndyStar",
+          "url": "https://www.nbcphiladelphia.com/news/local/new-billboards-urge-people-boycott-jewish-owned-businesses-jew-belong-philadelphia/4493543/",
+          "title": "New billboards urge people to ‘boycott the boycott' of Jewish-owned businesses",
+          "publisher": "NBC10 Philadelphia",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlcdU17ErwawRd4WJTzvsYSyTV6_2jpIi8Wor7df2Vee8Cx8qEr39LYQVCXwM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7gGw-9OCWJgFMJBB-fK5RTElbGteNutfDiPQI-8gtoD5De2TZfYjyOX6PjX0"
         }
       ]
     },
     {
-      "query": "chase young",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T18:40:00Z",
+      "query": "dylan sampson",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T19:10:00Z",
       "related_news_urls": [
-        "https://www.clevelandbrowns.com/news/spencer-fano-prepares-for-matchup-against-chase-young-in-week-9",
-        "https://www.bignewsnetwork.com/news/279418492/spencer-fano-prepares-for-matchup-against-chase-young-in-week-9",
-        "https://sports.yahoo.com/articles/chicago-bears-dealt-chase-young-143138816.html"
+        "https://www.si.com/onsi/fantasy/start-em-sit-em/fantasy-football-week-9-bold-predictions-dylan-sampson-marvin-harrison",
+        "https://www.brownsnation.com/browns-backfield-usage-took-a-surprising-turn-in-pittsburgh/",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/sampson-has-six-catches-in-loss-to-steelers"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQk_-nkgRIu-5RNKMga_NJzDPbILujaFEg7UdeNdHpRlP1b5_1Y2JjBtWtZ1MA",
-      "image_credit": "Cleveland Browns",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4nWIY6MD2pb0KSh_I-UR3QseO4pPcTeKV_mcPkL1nikEiYqmmE1xcGQ9nFkw",
+      "image_credit": "Sports Illustrated",
       "news": [
         {
-          "url": "https://www.clevelandbrowns.com/news/spencer-fano-prepares-for-matchup-against-chase-young-in-week-9",
-          "title": "Spencer Fano prepares for matchup against Chase Young in Week 9",
-          "publisher": "Cleveland Browns",
+          "url": "https://www.si.com/onsi/fantasy/start-em-sit-em/fantasy-football-week-9-bold-predictions-dylan-sampson-marvin-harrison",
+          "title": "Fantasy Football Week 9 Bold Predictions: Big Games Due for Dylan Sampson, Marvin Harrison Jr.",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQk_-nkgRIu-5RNKMga_NJzDPbILujaFEg7UdeNdHpRlP1b5_1Y2JjBtWtZ1MA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4nWIY6MD2pb0KSh_I-UR3QseO4pPcTeKV_mcPkL1nikEiYqmmE1xcGQ9nFkw"
         },
         {
-          "url": "https://www.bignewsnetwork.com/news/279418492/spencer-fano-prepares-for-matchup-against-chase-young-in-week-9",
-          "title": "Spencer Fano prepares for matchup against Chase Young in Week 9",
-          "publisher": "Big News Network.com",
+          "url": "https://www.brownsnation.com/browns-backfield-usage-took-a-surprising-turn-in-pittsburgh/",
+          "title": "Browns’ Backfield Usage Took A Surprising Turn In Pittsburgh",
+          "publisher": "Browns Nation",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSucZVOb3NHANGzpBaghIhcd2QWVxRjI-6SkJpfYiiE4_cXeSgKs5TfdDT028M"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG55MuBkB3iqOP_G2Mln-wMsgzPEASMZ5cDwAYlorIypZlzoV8D8zl3AWDf0Y"
         },
         {
-          "url": "https://sports.yahoo.com/articles/chicago-bears-dealt-chase-young-143138816.html",
-          "title": "Chicago Bears Dealt Chase Young Trade Rumor Amid Zavier Scott News",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnBy4t3NdLALc5_tjnmGkqvY0rnSVFHcGdRJsoBU4-Xhp_LVMkicaQUTpytxE"
-        }
-      ]
-    },
-    {
-      "query": "is taylor swift at the chiefs game today",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T18:30:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66101293/?ref_=nwc_art_perm",
-        "https://www.yahoo.com/entertainment/celebrity/articles/taylor-swift-chiefs-jets-game-175626396.html",
-        "https://www.elle.com/culture/celebrities/a74305255/taylor-swift-travis-kelce-chiefs-broncos-away-game-attendance-explained-2026/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7BH2nDxcDjCM5eHrF6ofKQRGcatMZ2BY99UU9_uBEAPTRyKTasmI_MtqGMb4",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66101293/?ref_=nwc_art_perm",
-          "title": "Is Taylor Swift Going to Chiefs Game Today, November 8? What We Know",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7BH2nDxcDjCM5eHrF6ofKQRGcatMZ2BY99UU9_uBEAPTRyKTasmI_MtqGMb4"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/taylor-swift-chiefs-jets-game-175626396.html",
-          "title": "Is Taylor Swift at Chiefs-Jets game today? Latest on pop star’s attendance",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrQlkVUnkADSeIWWGrvmtwxfc9d9jmbnBakMBFP7YmfCjqQOvKxHYAnsDVdWA"
-        },
-        {
-          "url": "https://www.elle.com/culture/celebrities/a74305255/taylor-swift-travis-kelce-chiefs-broncos-away-game-attendance-explained-2026/",
-          "title": "Why Taylor Swift Hasn’t Been Seen at Travis Kelce’s Chiefs-Broncos Game in Denver",
-          "publisher": "ELLE",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4HKHunbmkANPHEjq__M-3QxuJ0UrCQ9au7YdO4Pk92jCTFVfd8u1LCwAC5Cc"
-        }
-      ]
-    },
-    {
-      "query": "dallas cowboys vs colts match player stats",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T18:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50403627/trade-talks-pick-nfl-tuesday-deadline-looming",
-        "https://www.nfl.com/news/jonathan-taylor-landing-spots-ranking-top-7-trade-fits-colts-pro-bowl-running-back",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/giants-offered-second-round-pick-and-fifth-round-pick-for-jonathan-taylor"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRlXrygGMXjTugpeh8d7O4QhJmkO_1wW5CyE0ZI1kYHzl5BHX3uapRk4aa8y0",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50403627/trade-talks-pick-nfl-tuesday-deadline-looming",
-          "title": "Sources: Colts among several NFL teams mulling trade offers as deadline looms",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRlXrygGMXjTugpeh8d7O4QhJmkO_1wW5CyE0ZI1kYHzl5BHX3uapRk4aa8y0"
-        },
-        {
-          "url": "https://www.nfl.com/news/jonathan-taylor-landing-spots-ranking-top-7-trade-fits-colts-pro-bowl-running-back",
-          "title": "Jonathan Taylor landing spots: Ranking top 7 trade fits for Colts Pro Bowl running back",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPZ_Ilrg0C-q5c0SlpasDnPvQBfJlHYz7ngoP8iJye6T6Pu-fH4LMm-AcWQaw"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/giants-offered-second-round-pick-and-fifth-round-pick-for-jonathan-taylor",
-          "title": "Giants offered second-round pick and fifth-round pick for Jonathan Taylor",
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/sampson-has-six-catches-in-loss-to-steelers",
+          "title": "Sampson has six catches in loss to Steelers",
           "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0Q5xTLRNKKIVf18E5ZPlYcuveXgmexCtH-_MRJjGZPq6vkD0l3dpM8MlRsws"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTL5315d_uI0iuHYOX0jREYaPH3dW5YGmYkZCOJI0-UNU_tBwhE1cQZovs_TvA"
         }
       ]
     },
     {
-      "query": "greg desrosiers jr.",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T18:30:00Z",
+      "query": "manny pacquiao next fight news",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T19:10:00Z",
       "related_news_urls": [
-        "https://www.nfl.com/news/devin-singletary-ready-for-showcase-as-likely-rb1-vs-eagles-i-know-what-i-can-do",
-        "https://www.cbssports.com/fantasy/football/news/jamey-eisenbergs-2026-week-9-fantasy-football-sleepers/",
-        "https://sports.yahoo.com/articles/devin-singletary-demarcus-robinson-more-181309386.html"
+        "https://boxingnewsonline.net/news/pacquiao-linked-to-fight-with-brit/",
+        "https://www.boxingscene.com/articles/conor-benn-reveals-manny-pacquiao-offer-fight-targeted-for-2027",
+        "https://www.boxingnews24.com/2026/11/conor-benn-says-pacquiao-fight-offered-for-december/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGy2BsIgz7HDQlC8Noze5F2eoDyl8e3x6EK9l4Lw_ZA2i0RvaWJOiQkT-vzGc",
-      "image_credit": "NFL.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBkigdJt65yP-EYmLJjnGCp8mXD2PdKx1V-KVZIUN2pUqlwwm0Mr5en0r9mV4",
+      "image_credit": "Boxing News Online",
       "news": [
         {
-          "url": "https://www.nfl.com/news/devin-singletary-ready-for-showcase-as-likely-rb1-vs-eagles-i-know-what-i-can-do",
-          "title": "Giants' Devin Singletary ready for showcase as likely RB1 vs. Eagles: 'I know what I can do'",
-          "publisher": "NFL.com",
+          "url": "https://boxingnewsonline.net/news/pacquiao-linked-to-fight-with-brit/",
+          "title": "New opponent for Manny Pacquiao’s next pro fight emerges: “It was offered to me”",
+          "publisher": "Boxing News Online",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGy2BsIgz7HDQlC8Noze5F2eoDyl8e3x6EK9l4Lw_ZA2i0RvaWJOiQkT-vzGc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBkigdJt65yP-EYmLJjnGCp8mXD2PdKx1V-KVZIUN2pUqlwwm0Mr5en0r9mV4"
         },
         {
-          "url": "https://www.cbssports.com/fantasy/football/news/jamey-eisenbergs-2026-week-9-fantasy-football-sleepers/",
-          "title": "Jamey Eisenberg's Week 9 Fantasy football sleepers and DFS picks: Devin Singletary ready to seize his moment",
-          "publisher": "CBS Sports",
+          "url": "https://www.boxingscene.com/articles/conor-benn-reveals-manny-pacquiao-offer-fight-targeted-for-2027",
+          "title": "Conor Benn reveals Manny Pacquiao offer, fight targeted for 2027",
+          "publisher": "BoxingScene",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrO7GZZtrOXjRJrOg1_NeKpHGqnZ_3rsMGWeGjv5wQtJLemWycER9tQmNtlkQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPUNbGrVALiiRF3h7Udaxq-7q42zgTeLtfzd3kXnTM_kWI82PB0voygzsC0yI"
         },
         {
-          "url": "https://sports.yahoo.com/articles/devin-singletary-demarcus-robinson-more-181309386.html",
-          "title": "Devin Singletary, Demarcus Robinson, And More Last-Minute Must-Start Fantasy Football Sleepers For Week 9",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.boxingnews24.com/2026/11/conor-benn-says-pacquiao-fight-offered-for-december/",
+          "title": "Conor Benn Says Pacquiao Fight Offered For December",
+          "publisher": "Boxing News 24",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYREvmqzfv3rCTzVPoosAPl7iIdsOYJ234HXgoZfGj8-_BDT6rukOo1dl28B4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaE4JpPUMjesrHnvArCozskOqynNYDo1yTMskIKrAxrp28aTdrFAIp21RuJJk"
         }
       ]
     },
     {
-      "query": "courtland sutton",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T18:30:00Z",
+      "query": "iowa vs uconn",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-08T19:00:00Z",
       "related_news_urls": [
-        "https://heavy.com/sports/nfl/denver-broncos/wide-receiver-courtland-sutton-huge-hit/",
-        "https://www.thefantasyfootballers.com/news/645523/courtland-sutton-four-catches-in-week-8-victory/",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/sutton-catches-all-four-targets-for-53-yards"
+        "https://www.ctinsider.com/sports/uconn-womens-basketball/article/how-to-watch-uconn-vs-iowa-time-tv-lineups-22506018.php",
+        "https://www.hawkcentral.com/story/sports/college/iowa/basketball-women/2026/11/07/iowa-womens-basketball-uconn-storrs-hawkeyes-mckenna-woliczko/92628360007/",
+        "https://247sports.com/college/iowa/article/there-keys-and-a-pick-iowa-gets-first-big-test-against-no-2-uconn-292290547/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbLCWppeAOVLvP7JmSOOevB9Q_awxZRhdClh7mVSxj7iU0H5aJ615FDtOkDjM",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkfGoks1BGpfJD8OrRcHZ7UXYeg-X-2lfbqgkCPcq6pish_xQWc6spriRLrCo",
+      "image_credit": "CT Insider",
+      "news": [
+        {
+          "url": "https://www.ctinsider.com/sports/uconn-womens-basketball/article/how-to-watch-uconn-vs-iowa-time-tv-lineups-22506018.php",
+          "title": "How to watch No. 2 UConn women's basketball vs. No. 10 Iowa",
+          "publisher": "CT Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkfGoks1BGpfJD8OrRcHZ7UXYeg-X-2lfbqgkCPcq6pish_xQWc6spriRLrCo"
+        },
+        {
+          "url": "https://www.hawkcentral.com/story/sports/college/iowa/basketball-women/2026/11/07/iowa-womens-basketball-uconn-storrs-hawkeyes-mckenna-woliczko/92628360007/",
+          "title": "No. 10 Iowa women's basketball ready for first big test: at No. 2 UConn",
+          "publisher": "Hawk Central",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNCr_sWfu0tDWEeXKthiPha0UvJptRm9KFO-4aMXNaL2XQs4XzOhuehC96ZTQ"
+        },
+        {
+          "url": "https://247sports.com/college/iowa/article/there-keys-and-a-pick-iowa-gets-first-big-test-against-no-2-uconn-292290547/",
+          "title": "Three Keys And A Pick: Iowa Gets First Big Test Against No. 2 UConn",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ73b1YjF-zoHD3CwX9cZ_a20kUJ3l6dyBmw6txs7TVJnqt2kX02u41GHDmsXw"
+        }
+      ]
+    },
+    {
+      "query": "fiorentina - juventus",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T19:00:00Z",
+      "related_news_urls": [
+        "https://www.gazzetta.it/Calcio/Serie-A/Juventus/08-11-2026/fiorentina-juve-live-risultato-e-gol-in-diretta-serie-a.shtml",
+        "https://www.tuttosport.com/foto/calcio/serie-a/juventus/2026/11/08-152417645/formazioni_ufficiali_fiorentina-juve_la_mossa_di_spalletti_per_l_attacco",
+        "https://www.juventus.com/it/news/articoli/serie-a-fiorentina-juventus-le-formazioni-ufficiali"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqGmY22lwizi5vVmNwQZePB0KmzrNXcT_IXUcuxfx3S-EkUfRMtiFDUgNNrOQ",
+      "image_credit": "La Gazzetta dello Sport",
+      "news": [
+        {
+          "url": "https://www.gazzetta.it/Calcio/Serie-A/Juventus/08-11-2026/fiorentina-juve-live-risultato-e-gol-in-diretta-serie-a.shtml",
+          "title": "LIVE Alle 20.45 Fiorentina-Juve, le ufficiali: Vanoli con Pedro Gonçalves, Spalletti sceglie Boga",
+          "publisher": "La Gazzetta dello Sport",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqGmY22lwizi5vVmNwQZePB0KmzrNXcT_IXUcuxfx3S-EkUfRMtiFDUgNNrOQ"
+        },
+        {
+          "url": "https://www.tuttosport.com/foto/calcio/serie-a/juventus/2026/11/08-152417645/formazioni_ufficiali_fiorentina-juve_la_mossa_di_spalletti_per_l_attacco",
+          "title": "Formazioni ufficiali Fiorentina-Juve: la mossa di Spalletti per l'attacco",
+          "publisher": "Tuttosport",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwtj1osZ7Igna9ci_vAubqcGIi3tdrP-hrW4_JE_TKbJCUoXnZX15YlO39fb4"
+        },
+        {
+          "url": "https://www.juventus.com/it/news/articoli/serie-a-fiorentina-juventus-le-formazioni-ufficiali",
+          "title": "Serie A | Fiorentina-Juventus | Le formazioni ufficiali",
+          "publisher": "Juventus.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuc5yxTTCoIIz4FNnPyEcSPHQ631PmG6eNVDV9NkNZ2ZZXvdCUuhGcg6k-g2A"
+        }
+      ]
+    },
+    {
+      "query": "jake ferguson",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T19:00:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/fantasy/football/news/cowboys-jake-ferguson-active-in-week-9/",
+        "https://www.complex.com/bets/a/matt-burke/jake-ferguson-fantasy-football-injury-update",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-06/jake-ferguson-ankle-questionable-vs-colts"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRgtyhxGxEG7i2Okxt9MXO4tXkT6SYFeNJ2RsRVSTb2-axRU5x1XlHHfRx6NM",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/fantasy/football/news/cowboys-jake-ferguson-active-in-week-9/",
+          "title": "Cowboys' Jake Ferguson: Active in Week 9",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRgtyhxGxEG7i2Okxt9MXO4tXkT6SYFeNJ2RsRVSTb2-axRU5x1XlHHfRx6NM"
+        },
+        {
+          "url": "https://www.complex.com/bets/a/matt-burke/jake-ferguson-fantasy-football-injury-update",
+          "title": "Jake Ferguson Fantasy Football Injury Update: Is Cowboys TE Playing This Week?",
+          "publisher": "Complex",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxvhrmeBKvWKNdLAF_9WVZQiQKC84zTW4dijJEA_TS_OVHS8_ZvawvDvVyjGU"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-06/jake-ferguson-ankle-questionable-vs-colts",
+          "title": "Jake Ferguson (ankle) questionable vs. Colts",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhz6KBMcLl6vXXBzpub-f5-h1aEmCIBDaBNiFQiEBEjO6r6EFmso58wZb_nsg"
+        }
+      ]
+    },
+    {
+      "query": "riley moss",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T19:00:00Z",
+      "related_news_urls": [
+        "https://heavy.com/sports/nfl/carolina-panthers/riley-moss-injury-update-broncos-cb/",
+        "https://sports.yahoo.com/articles/broncos-trade-cb-riley-moss-133030636.html",
+        "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/11/05/nfl-trade-deadline-should-broncos-move-riley-moss/92612118007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQaXAFEcR-aQtqpzPdwhkXhaPSSTivGHm5S5b3YJuQxn1mhmt7ARoJkdTQyhs",
       "image_credit": "Heavy.com",
       "news": [
         {
-          "url": "https://heavy.com/sports/nfl/denver-broncos/wide-receiver-courtland-sutton-huge-hit/",
-          "title": "Courtland Sutton Injury Update: Broncos WR Takes Huge Hit vs. Chiefs",
+          "url": "https://heavy.com/sports/nfl/carolina-panthers/riley-moss-injury-update-broncos-cb/",
+          "title": "Riley Moss Injury Update: Broncos CB Has Scary Moment vs. Panthers",
           "publisher": "Heavy.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbLCWppeAOVLvP7JmSOOevB9Q_awxZRhdClh7mVSxj7iU0H5aJ615FDtOkDjM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQaXAFEcR-aQtqpzPdwhkXhaPSSTivGHm5S5b3YJuQxn1mhmt7ARoJkdTQyhs"
         },
         {
-          "url": "https://www.thefantasyfootballers.com/news/645523/courtland-sutton-four-catches-in-week-8-victory/",
-          "title": "Courtland Sutton Four catches in Week 8 victory",
-          "publisher": "Fantasy Footballers Podcast",
+          "url": "https://sports.yahoo.com/articles/broncos-trade-cb-riley-moss-133030636.html",
+          "title": "Should the Broncos trade CB Riley Moss before NFL's deadline?",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqgxIlcMTLLAg-97V9YhZsBoV4-8dVl3UtZM_N0bvJcRjRrsYTirZzjQOfjpY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaIrPiwRuREszj9JJWqVL_KFBneREYF9OIhb3NS0Eh4bYHfpF4kGfsES4kn_I"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/sutton-catches-all-four-targets-for-53-yards",
-          "title": "Sutton catches all four targets for 53 yards",
-          "publisher": "NBC Sports",
+          "url": "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/11/05/nfl-trade-deadline-should-broncos-move-riley-moss/92612118007/",
+          "title": "Should the Broncos trade CB Riley Moss before NFL's deadline?",
+          "publisher": "Broncos Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcnknb6OKxUbUiUvg7HApLr0oakb6M19hyZn8UI4jH57pK9Z3PTKwf4x25psw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS--QGtRM5PmaCo6Dgb2K_VyB0rzSR-wA_00wkuUG90QINRGs8rOlDCT2frU14"
         }
       ]
     },
     {
-      "query": "chris johnson",
+      "query": "quinshon judkins",
       "approx_searches": "500+",
-      "published_at": "2026-11-08T18:30:00Z",
+      "published_at": "2026-11-08T19:00:00Z",
       "related_news_urls": [
-        "https://www.miamidolphins.com/video/chris-johnson-the-no-27-pick-of-2026-draft-snags-his-first-career-int-against-jared-goff",
-        "https://www.miamiherald.com/sports/nfl/miami-dolphins/article317669515.html",
-        "https://www.si.com/nfl/dolphins/onsi/ranking-the-top-five-dolphins-rookies-and-how-they-stack-up-with-their-nfl-counterparts-01m6rkv7vqv4"
+        "https://www.cleveland.com/browns/2026/11/come-on-browns-cut-out-the-dumb-penalties-terry-pluto.html",
+        "https://www.firstcoastnews.com/video/sports/locked-on/lo-cleveland/locked-on-browns-hit/the-browns-lead-the-league-in-2-major-categories-and-theyre-both-bad-one-fix-is-complicated-one-is-easy/535-4336bb6f-1b91-448a-be66-102572630a57",
+        "https://athlonsports.com/nfl/trending/nfl-makes-punishment-announcement-after-quinshon-judkins-incident"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTz2sUHsnO7LREq84yV5L8dxELFMFLWYdXdWu4gX9lGbokzcZbLLHG25yeIgzU",
-      "image_credit": "Miami Dolphins",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfEw358D-yAn6LF_LfGfXRvAkKw8NUG__8frNksq5vEt-54evrNe26mNVtovo",
+      "image_credit": "Cleveland.com",
       "news": [
         {
-          "url": "https://www.miamidolphins.com/video/chris-johnson-the-no-27-pick-of-2026-draft-snags-his-first-career-int-against-jared-goff",
-          "title": "Chris Johnson, the No. 27 pick of 2026 draft, snags his first career INT against Jared Goff",
-          "publisher": "Miami Dolphins",
+          "url": "https://www.cleveland.com/browns/2026/11/come-on-browns-cut-out-the-dumb-penalties-terry-pluto.html",
+          "title": "Come on Browns, cut out the dumb penalties — Terry Pluto",
+          "publisher": "Cleveland.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTz2sUHsnO7LREq84yV5L8dxELFMFLWYdXdWu4gX9lGbokzcZbLLHG25yeIgzU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfEw358D-yAn6LF_LfGfXRvAkKw8NUG__8frNksq5vEt-54evrNe26mNVtovo"
         },
         {
-          "url": "https://www.miamiherald.com/sports/nfl/miami-dolphins/article317669515.html",
-          "title": "Dolphins’ Johnson and Gordon candidly reflect on their head-scratching moments",
-          "publisher": "Miami Herald",
+          "url": "https://www.firstcoastnews.com/video/sports/locked-on/lo-cleveland/locked-on-browns-hit/the-browns-lead-the-league-in-2-major-categories-and-theyre-both-bad-one-fix-is-complicated-one-is-easy/535-4336bb6f-1b91-448a-be66-102572630a57",
+          "title": "The Browns lead the league in 2 major categories, and they're both bad. One fix is complicated, one is easy",
+          "publisher": "firstcoastnews.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgL4ffakxWEWxZa4Di-WjYiGEn42cUk37EKnTF-SKpHXSEYIeoxORC9qFxZpE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStSSe8nF9VugJxlE7IZ0mMBQ01KIqEkauHdg_6vo9S3p5ducgHOCXxYbQhF5M"
         },
         {
-          "url": "https://www.si.com/nfl/dolphins/onsi/ranking-the-top-five-dolphins-rookies-and-how-they-stack-up-with-their-nfl-counterparts-01m6rkv7vqv4",
-          "title": "Ranking the Top Five Dolphins Rookies And How They Stack Up With Their NFL Counterparts",
-          "publisher": "Sports Illustrated",
+          "url": "https://athlonsports.com/nfl/trending/nfl-makes-punishment-announcement-after-quinshon-judkins-incident",
+          "title": "NFL Makes Punishment Announcement After Quinshon Judkins Incident",
+          "publisher": "Athlon Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_IIXphM4bqjwbRIj2tRHaaQkSe49-0i0M_oFJVoCCMkYWJKE-iQX99z2n8R8"
-        }
-      ]
-    },
-    {
-      "query": "t1 vs blg",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T18:30:00Z",
-      "related_news_urls": [
-        "https://www.hotspawn.com/league-of-legends/news/blg-vs-t1-worlds-2026-preview",
-        "https://egamersworld.com/lol/tip/q8qUtLA6g/bilibili-gaming-vs-t1-Mo_mM-vhN",
-        "https://www.sheepesports.com/pt/articles/worlds-2026-t1-vs-bilibili-gaming-the-lpl-slayer-vs-blg-s-quest-to-become-the-lck-slayer/en"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1XMOujCU7eAaFADmb-r5iCC9GxMMt8lLM8wfYLx-hFzc8uE0wz9uPOR1em94",
-      "image_credit": "Hotspawn",
-      "news": [
-        {
-          "url": "https://www.hotspawn.com/league-of-legends/news/blg-vs-t1-worlds-2026-preview",
-          "title": "BLG Vs T1 Worlds 2026 Semifinals Preview: Can The LPL Get Revenge?",
-          "publisher": "Hotspawn",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1XMOujCU7eAaFADmb-r5iCC9GxMMt8lLM8wfYLx-hFzc8uE0wz9uPOR1em94"
-        },
-        {
-          "url": "https://egamersworld.com/lol/tip/q8qUtLA6g/bilibili-gaming-vs-t1-Mo_mM-vhN",
-          "title": "Bilibili Gaming vs T1 Prediction & Betting Tip | LoL",
-          "publisher": "EGamersWorld",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxNuMG_Eyyfw_iY7zeGrIl8C0lUZpmh5zZzamAeoeBt9srZb3QvPyRxQSiBBo"
-        },
-        {
-          "url": "https://www.sheepesports.com/pt/articles/worlds-2026-t1-vs-bilibili-gaming-the-lpl-slayer-vs-blg-s-quest-to-become-the-lck-slayer/en",
-          "title": "Worlds 2026: T1 vs. Bilibili Gaming — The LPL Slayer vs. BLG's Quest to Become the LCK Slayer",
-          "publisher": "Sheep Esports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgVV0SXhz1XTGUuHGGDhPRwqT_5JjNSVKyqyQACNWpl6T0Fax0g4UfXgJzPdc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaNbc2lqKddh6OZxlKnYu-Bj_imRUTs1WaYfStvLIvheAgsXxyXPDrzMMPzWw"
         }
       ]
     }
