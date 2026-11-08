@@ -1,4 +1,8 @@
 /* 21+ source-backed individual dispensary listings · no unlicensed product photos */
+/* Only the selected original directory root belongs inside the Oracle stage.
+ * Do not expose all twelve as a long independent page below the carousel. */
+body.oracle-card-deck-active:not(.oracle-shelf-open) main.app > section[id^="dispensary-"]{display:none!important}
+body.oracle-card-deck-active .oracle-card-deck-stage > section[id^="dispensary-"]{display:block;margin:0}
 .dc-card{max-width:820px;margin:16px auto;padding:16px;background:#fff;color:#27313b;
  border:1px solid #d5dde0;border-radius:19px;box-shadow:0 5px 21px #20293410;
  font-family:system-ui,-apple-system,Roboto,sans-serif;line-height:1.45;}
