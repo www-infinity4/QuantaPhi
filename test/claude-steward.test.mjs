@@ -250,3 +250,29 @@ test('Claude client exposes sanitized reason to Bubbles composer instead of drop
  assert.match(bubbles,/steward\.describeError\(result\?\.error/);
  assert.match(bubbles,/Your message remains in the composer/);
 });
+
+test('failed inline Claude send releases the lock and next send can succeed',async()=>{
+ const src=fs.readFileSync(new URL('../claude-card.js',import.meta.url),'utf8');
+ let count=0;
+ const sandbox={
+  window:null,sessionStorage:{getItem:()=>null,setItem(){}},
+  document:{readyState:'loading',body:null,addEventListener(){}},
+  addEventListener(){},TextEncoder,AbortController,Response,URL,JSON,Promise,
+  setTimeout,clearTimeout,console,
+  QuantaBrainOwner:{currentHeaders:()=>({Authorization:AUTH})},
+  fetch:async()=>{
+   count++;
+   return count===1?Response.json({ok:false,error:'anthropic_billing_required'},{status:503})
+    :Response.json({ok:true,reply:'Now Claude answers',model:'claude-sonnet-5-5'});
+  }
+ };
+ sandbox.window=sandbox;
+ vm.runInNewContext(src,sandbox);
+ const first=await sandbox.ClaudeSteward.ask('first',{inline:true});
+ assert.equal(first.ok,false);
+ assert.equal(first.error,'anthropic_billing_required');
+ const second=await sandbox.ClaudeSteward.ask('second',{inline:true});
+ assert.equal(second.ok,true);
+ assert.equal(second.reply,'Now Claude answers');
+ assert.equal(count,2,'The second call must not be rejected by a stale busy lock');
+});
