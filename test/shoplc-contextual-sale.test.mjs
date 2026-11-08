@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {normalizeShopLcItem,chooseShopLcPlacement,safeShopLcUrl} from '../shoplc-contextual-sale.mjs';
+import {normalizeShopLcItem,chooseShopLcPlacement,eligibleShopLcPlacements,safeShopLcUrl} from '../shoplc-contextual-sale.mjs';
 
 const ring={ok:true,itemId:'product:8620442',productCode:'8620442',
  title:'10K Yellow Gold AAA Usambara Color Change Garnet Ring',
@@ -60,4 +60,21 @@ test('public runtime requires approved merchant feed and image rights; no unauth
  assert.ok(script.includes('productImagesApproved!==true'));
  assert.ok(script.includes('Date.now()-checkedAt>15*60000'));
  assert.ok(!script.includes('https://starquest-ledger.marvaseater.workers.dev'));
+});
+
+test('several licensed current rings remain eligible without flooding unrelated cards',()=>{
+ const at=Date.UTC(2026,10,8,1,0);
+ const first=normalizeShopLcItem({...ring,expiresAt:at+600000},at);
+ const second=normalizeShopLcItem({...ring,productCode:'8620443',itemId:'product:8620443',title:'14K White Gold Fancy Diamond Ring',expiresAt:at+600000},at);
+ const old=normalizeShopLcItem({...ring,productCode:'8620444',itemId:'product:8620444',title:'Old expired gold garnet ring',expiresAt:at-1},at);
+ const shopping={category:'Fine Jewelry',title:'Explore gemstone rings'};
+ assert.deepEqual(eligibleShopLcPlacements([first,second,old],shopping,{},at).map(x=>x.id),[first.id,second.id]);
+ assert.equal(eligibleShopLcPlacements([first,second],{category:'TV',title:'Watch Shop LC'}, {},at).length,0);
+ assert.equal(eligibleShopLcPlacements([first,second],shopping,{hideShopLc:true},at).length,0);
+});
+test('site worker serves only an approved bound service; no fallback to live TV scraping',()=>{
+ const site=readFileSync(new URL('../workers/quantaphi-site/worker.js',import.meta.url),'utf8');
+ assert.match(site,/incoming\.pathname==='\/api\/shoplc\/authorized-sale-feed'/);
+ assert.match(site,/env\.SHOPLC_ADS\.fetch\(request\)/);
+ assert.match(site,/shoplc_ads_service_not_configured/);
 });
