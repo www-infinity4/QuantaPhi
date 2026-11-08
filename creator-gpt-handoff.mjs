@@ -56,13 +56,22 @@ if(root){
  $('creatorBriefForm').addEventListener('submit',async event=>{
   event.preventDefault();
   try{
+   let publicContext=null;
+   try{
+    const response=await fetch('/creator-public-context.json',{method:'GET',cache:'no-store',headers:{accept:'application/json'}});
+    if(response.ok&&(response.headers.get('content-type')||'').includes('application/json')){
+     const value=await response.json();
+     if(value?.schema_version===1&&value.origin==='https://quantaphi.org')publicContext=value;
+    }
+   }catch{/* First-party public metadata unavailable; brief keeps source links. */}
    const brief=buildCreatorBrief({idea:$('creatorIdea').value,
     specialist:$('creatorSpecialist').value,title:$('creatorProjectTitle').value,
-    website:$('creatorSourceUrl').value,existingHtml:$('creatorExistingHtml').value});
+    website:$('creatorSourceUrl').value,existingHtml:$('creatorExistingHtml').value,
+    publicContext});
    $('creatorPreparedBrief').value=brief;
    try{
     await navigator.clipboard.writeText(brief);
-    feedback.textContent='GPT instructions copied. Open ChatGPT, paste, and submit. No accounts, files or wallets were accessed.';
+    feedback.textContent='GPT instructions copied. '+(publicContext?'Public QuantaPhi creator context loaded. ':'Public manifest unavailable; cited source links supplied. ')+'Open ChatGPT, paste and submit. No private accounts or wallets were accessed.';
    }catch{
     $('creatorPreparedBrief').focus();$('creatorPreparedBrief').select();
     feedback.textContent='Clipboard unavailable. Instructions are selected—copy them and paste into ChatGPT manually.';
