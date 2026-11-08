@@ -6,6 +6,12 @@ test('direct scoped repair goes to Green without repeated reading',()=>{
  assert.deepEqual(routeColorHandoffs('Fix bubbles-ai.js playback handler'),[]);
  assert.deepEqual(routeColorHandoffs('Repair the exact src/radio-player.mjs button'),[]);
 });
+test('ordinary assigned validation and feature jobs bypass unnecessary Red/Orange inference',()=>{
+ assert.deepEqual(routeColorHandoffs('Validate signed webhooks and deduplicate incoming events'),[]);
+ assert.deepEqual(routeColorHandoffs('Patch the original card accessibility labels'),[]);
+ assert.deepEqual(routeColorHandoffs('Verify the exact rendered homepage link'),[]);
+});
+
 test('Blue imports permitted source data; broad work uses Red and Orange before Blue',()=>{
  assert.deepEqual(routeColorHandoffs('Import a verified feed from the existing approved adapter into D1'),['blue']);
  assert.deepEqual(routeColorHandoffs('Research the issuer offers and import a verified dataset into the coupon wallet'),['red','orange','blue']);
