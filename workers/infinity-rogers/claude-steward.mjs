@@ -97,7 +97,15 @@ async function runTool(name,input,ctx){
 async function claude(env,body,fetcher){
  const res=await fetcher('https://api.anthropic.com/v1/messages',{method:'POST',signal:AbortSignal.timeout(45000),
   headers:{'Content-Type':'application/json','x-api-key':env.ANTHROPIC_API_KEY,'anthropic-version':'2023-06-01'},body:JSON.stringify(body)});
- if(!res.ok)throw Error(res.status===429?'anthropic_rate_limited':'anthropic_provider_unavailable');
+ // Never surface Anthropic response bodies: they can contain provider diagnostics
+ // and are not needed to tell the owner which existing Cloudflare setup to check.
+ if(!res.ok){
+  const errors={400:'anthropic_invalid_request',401:'anthropic_authentication_failed',
+   402:'anthropic_billing_required',403:'anthropic_access_forbidden',
+   404:'anthropic_model_unavailable',413:'anthropic_request_too_large',
+   422:'anthropic_invalid_request',429:'anthropic_rate_limited'};
+  throw Error(errors[res.status]||(res.status>=500?'anthropic_service_unavailable':'anthropic_provider_unavailable'));
+ }
  return res.json();
 }
 function history(raw){
