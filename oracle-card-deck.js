@@ -70,6 +70,7 @@ const choices=[
  ['dispensary-green-solution-wewatta','21+ · The Green Solution · Wewatta'],
  ['dispensary-maikoh-broadway','21+ · Maikoh Holistics · North Broadway'],
  ['dispensary-the-dab-alameda','21+ · The Dab by Silverpeak · Alameda'],
+ ['dispensary-the-dispensary-breckenridge','21+ · The Dispensary · Breckenridge'],
  ['phiChannelCards','Infinity TV Guide'],
  ['publicCardTrends','Explore what is trending']
 ];
@@ -139,6 +140,7 @@ const CARD_DIRECTIONS={
  ['dispensary-green-solution-wewatta']:['adult-store-green-solution-wewatta','21+ Directory','Independent source-verified dispensary listing with original store website'],
  ['dispensary-maikoh-broadway']:['adult-store-maikoh-broadway','21+ Directory','Independent source-verified dispensary listing with original store website'],
  ['dispensary-the-dab-alameda']:['adult-store-the-dab-alameda','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-the-dispensary-breckenridge']:['adult-store-the-dispensary-breckenridge','21+ Directory','Independent location listing, formerly Alpenglow Botanicals'],
  publicCardTrends:['trending-now','Research','Investigate verified trends and search interests']
 };
 
