@@ -105,12 +105,12 @@ test('PCGS certified-VAM cross-seller discovery shows attributed lots and licens
  const sales=card.locator('.premium-coin-sales');
  await expect(sales).toBeVisible();
  await expect(sales.getByText('1888-O Hot Lips VAM-4 Top 100 PCGS AU-53')).toBeVisible({timeout:25000});
- await expect(sales.locator('img.premium-coin-reference-photo')).toHaveAttribute('src',/commons\\.wikimedia\\.org/);
+ await expect(sales.locator('img.premium-coin-reference-photo')).toHaveAttribute('src',/commons\.wikimedia\.org/);
  await expect(sales.getByText(/not a seller listing/i)).toBeVisible();
- await expect(sales.getByRole('link',{name:/View actual lot photographs at GreatCollections/})).toHaveAttribute('href',/greatcollections\\.com\\/Coin\\/2299600/);
+ await expect(sales.getByRole('link',{name:/View actual lot photographs at GreatCollections/})).toHaveAttribute('href',/greatcollections\.com\/Coin\/2299600/);
  await expect(sales.getByText('Fake ungraded dollar')).toHaveCount(0);
  await sales.getByRole('button',{name:'iCollector'}).click();
  await expect(sales.getByText('1889-O MORGAN DOLLAR, PCGS AU-53 VAM 2 OVAL O')).toBeVisible();
- await expect(sales.getByText(/Past\\/closed listing/)).toBeVisible();
+ await expect(sales.getByText(/Past\/closed listing/)).toBeVisible();
  expect(await sales.evaluate(el=>el.getBoundingClientRect().right<=innerWidth)).toBeTruthy();
 });
