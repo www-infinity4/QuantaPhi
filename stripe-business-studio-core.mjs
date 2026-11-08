@@ -38,6 +38,8 @@ export function buildStripeSellerDraft(input){
  const amount=parseStripeUsdCents(input.priceUsd);
  if(amount===null)throw Error('invalid_price');
  if(typeof input.notes!=='string'||input.notes.length>800)throw Error('invalid_notes');
+ const sensitive=/(?:sk_(?:live|test)_[A-Za-z0-9]{6,}|whsec_[A-Za-z0-9]{6,}|\b(?:ssn|social security(?: number)?|routing number|bank account|password|api key|tax id|ein)\b)/i;
+ if(sensitive.test(input.notes)||sensitive.test(input.displayName))throw Error('sensitive_information_not_allowed');
  const notes=input.notes.replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/g,'').trim();
  return Object.freeze({
   schemaVersion:1,provider:'stripe_connect',kind:'quanta_seller_template',
