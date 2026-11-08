@@ -53,11 +53,11 @@ test('selected contextual promotion has no wallet mutation, identity targeting, 
  assert.match(script,/Shop LC listing/);
 });
 
-test('public runtime requires approved merchant feed and image rights; no unauthorised page scraping',()=>{
+test('public runtime requires approved merchant feed and image rights; no unauthorized scraping',()=>{
  const script=readFileSync(new URL('../shoplc-contextual-sale.mjs',import.meta.url),'utf8');
- assert.match(script,/const SOURCE='\\/api\\/shoplc\\/authorized-sale-feed'/);
- assert.match(script,/productFeedApproved!==true/);
- assert.match(script,/productImagesApproved!==true/);
- assert.match(script,/Date\\.now\\(\\)-checkedAt>15\\*60000/);
- assert.doesNotMatch(script,/https:\\/\\/starquest-ledger\\.marvaseater\\.workers\\.dev/);
+ assert.ok(script.includes("const SOURCE='/api/shoplc/authorized-sale-feed'"));
+ assert.ok(script.includes('productFeedApproved!==true'));
+ assert.ok(script.includes('productImagesApproved!==true'));
+ assert.ok(script.includes('Date.now()-checkedAt>15*60000'));
+ assert.ok(!script.includes('https://starquest-ledger.marvaseater.workers.dev'));
 });
