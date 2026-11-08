@@ -10,6 +10,7 @@ const TOOL_NAMES=Object.freeze({
  'github.search':['GitHub','searching code','search results received'],
  'github.create_repository':['GitHub','requesting a repository','repository creation result received'],
  'github.read_file':['GitHub','reading a file','file read'],
+ 'github.read_branch_status':['GitHub','checking exact branch status','branch readback received (runner separately verified)'],
  'github.read_repository':['GitHub','reading repository','repository read'],
  'github.read_repo':['GitHub','reading repository','repository read'],
  'github.assist':['GitHub','planning and executing authorized repository work','engineering receipt received (verify each action)'],
