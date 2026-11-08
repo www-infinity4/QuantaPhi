@@ -85,9 +85,15 @@ async function populate(token,star,unified){
   line('Infinity',b.INFINITY),
   line('Music Quants',b.MUSIC_QUANT)
  );
- const bitInfo=unified.bubbleBits;
- if(bitInfo?.available&&Number.isSafeInteger(bitInfo.credited))balances.append(line('Bubble Bits credited',bitInfo.credited));
- else {const unavailable=document.createElement('p');unavailable.textContent='Bubble Bit credit ledger unavailable';balances.append(unavailable);}
+ const workAssets=unified.workAssets||{};
+ balances.append(workAssetLine('GIT Coin',workAssets.GIT_COIN));
+ balances.append(workAssetLine('Bubble Bits',unified.bubbleBits));
+ balances.append(workAssetLine('GPT Coin',workAssets.GPT_COIN));
+ const cash=unified.cashWallet||{status:'not_connected'};
+ const cashReady=cash.providerVerified===true&&cash.currency==='USD'&&Number.isSafeInteger(cash.availableCents)&&cash.availableCents>=0;
+ const cashRow=line('Cash Wallet',null,cashReady?'Settled USD · provider verified':'No verified balance · provider not connected');
+ cashRow.querySelector('strong').textContent=cashReady?('$'+(cash.availableCents/100).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})):'—';
+ balances.append(cashRow);
  balances.hidden=false;
  history.hidden=false;
  status('Cloudflare verified · '+name+' · live balances');
