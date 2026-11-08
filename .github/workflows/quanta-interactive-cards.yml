@@ -61,6 +61,8 @@ on:
       - 'quanta-feed-card.html'
       - 'source-quick-cards.mjs'
       - 'motorcycle-quick-cards.mjs'
+      - 'magazine-reading-quick-cards.mjs'
+      - 'test/magazine-reading-quick-cards.test.mjs'
       - 'test/motorcycle-quick-cards.test.mjs'
       - 'denver-retail-*.mjs'
       - 'denver-retail-*.css'
@@ -173,6 +175,7 @@ jobs:
           node --check workers/infinity-brain-clock/quick-card-browser-policy.mjs
           node --check workers/infinity-brain-clock/quick-card-browser.mjs
           node --check source-quick-cards.mjs
+          node --check magazine-reading-quick-cards.mjs
           node --check premium-source-cards.mjs
           node --check denver-retail-catalog.mjs
           node --check denver-retail-quick-cards.mjs
@@ -187,7 +190,7 @@ jobs:
           node --check church-iam-card.js
           node --check phi-assimilation.js
       - name: Run interactive card regression tests
-        run: node --test tests/colorado-mountain-cards.test.mjs test/verified-brand-sports.test.mjs test/art-museum-quick-cards.test.mjs test/source-quick-cards.test.mjs test/motorcycle-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/quanta-card-actions-fox-one.test.mjs test/quanta-x-composer.test.mjs test/quanta-integra-x-tour.test.mjs test/integra-automation-router.test.mjs test/quick-card-single-search.test.mjs test/quanta-card-provider.test.mjs test/quanta-card-live-source.test.mjs test/quanta-marketplace-carousel.test.mjs test/design-lab-power-chain.test.mjs test/design-lab-bulk-allocator.test.mjs test/cooperative-power-chain.test.mjs test/oracle-deck-cycle.test.mjs test/premium-source-cards.test.mjs test/x-money-card.test.mjs test/home-mobile-first.test.mjs test/quick-card-brand-compact.test.mjs test/android-scroll-sections.test.mjs test/share-shopphi-browser.test.mjs test/infinity-affiliates.test.mjs
+        run: node --test tests/colorado-mountain-cards.test.mjs test/verified-brand-sports.test.mjs test/art-museum-quick-cards.test.mjs test/source-quick-cards.test.mjs test/motorcycle-quick-cards.test.mjs test/magazine-reading-quick-cards.test.mjs test/quanta-card-feed.test.mjs test/quanta-card-experience.test.mjs test/quanta-card-actions-fox-one.test.mjs test/quanta-x-composer.test.mjs test/quanta-integra-x-tour.test.mjs test/integra-automation-router.test.mjs test/quick-card-single-search.test.mjs test/quanta-card-provider.test.mjs test/quanta-card-live-source.test.mjs test/quanta-marketplace-carousel.test.mjs test/design-lab-power-chain.test.mjs test/design-lab-bulk-allocator.test.mjs test/cooperative-power-chain.test.mjs test/oracle-deck-cycle.test.mjs test/premium-source-cards.test.mjs test/x-money-card.test.mjs test/home-mobile-first.test.mjs test/quick-card-brand-compact.test.mjs test/android-scroll-sections.test.mjs test/share-shopphi-browser.test.mjs test/infinity-affiliates.test.mjs
       - name: Verify connected source-backed ShopPhi slideshow
         run: node --test test/shopphi-showcase.test.mjs tests/shop-phi-switchboard.test.mjs tests/quick-card-mobile-revamp.test.mjs
       - name: Check today's Infinity card freshness and real product media
