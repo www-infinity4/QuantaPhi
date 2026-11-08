@@ -105,3 +105,44 @@ test('public callers cannot submit line claims, and trusted callers cannot bypas
  assert.equal(disabled.status,503);
  assert.equal((await disabled.json()).error,'gitcoin_claim_intake_disabled');
 });
+
+test('canonical Gitcoin D1 accepts one pending line receipt on replay and issues zero GIT awards',async()=>{
+ const {execFileSync}=await import('node:child_process');
+ const d=db(),env={GITCOIN_CLAIMS_ENABLED:'1',GITCOIN_DB:d.table,
+  IDENTITY_DB:{prepare(){return{bind(){return{async first(){return{id:'owner_account'}}}}}}}};
+ await queuePendingGitLineClaim(env,good());
+ const stmt=d.binds.find(x=>x.sql.includes('INSERT OR IGNORE INTO gitcoin_line_claims'));
+ assert.ok(stmt);
+ const py=`import sqlite3,json,sys
+p=json.load(sys.stdin);db=sqlite3.connect(':memory:')
+db.executescript("""CREATE TABLE gitcoin_line_claims(
+ receipt_id TEXT PRIMARY KEY CHECK(length(receipt_id)=64),
+ repo TEXT NOT NULL,commit_sha TEXT NOT NULL,file_path TEXT NOT NULL,
+ line_number INTEGER NOT NULL CHECK(line_number>0),
+ content_sha256 TEXT NOT NULL CHECK(length(content_sha256)=64),
+ git_type TEXT NOT NULL,intent TEXT NOT NULL,builder_claim TEXT NOT NULL,
+ authenticated_submitter TEXT NOT NULL,recipient_wallet_id TEXT,
+ execution_channel TEXT NOT NULL DEFAULT 'github_cli'
+   CHECK(execution_channel IN ('bubbles','github_cli','provider')),
+ recipient_policy TEXT NOT NULL DEFAULT 'verified_external_builder_v1',
+ executor_binding_id TEXT,customer_wallet_id TEXT,
+ status TEXT NOT NULL DEFAULT 'pending'
+   CHECK(status IN ('pending','excluded','rejected','verified')),
+ github_evidence_id TEXT,quant_ai_review_id TEXT,reason_code TEXT,
+ created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE gitcoin_awards(
+ receipt_id TEXT PRIMARY KEY,
+ wallet_id TEXT NOT NULL,amount INTEGER NOT NULL CHECK(amount=1));
+""")
+with db:
+ db.execute(p['sql'],p['args'])
+ db.execute(p['sql'],p['args'])
+row=db.execute("SELECT COUNT(*),status,recipient_wallet_id,reason_code FROM gitcoin_line_claims").fetchone()
+print(json.dumps({'row':row,'issued':db.execute('SELECT COUNT(*) FROM gitcoin_awards').fetchone()[0]}))
+`;
+ const result=JSON.parse(execFileSync('python3',['-c',py],{input:JSON.stringify(stmt),encoding:'utf8'}));
+ assert.deepEqual(result.row,[1,'pending','wallet_ref','pending_independent_github_diff_review']);
+ assert.equal(result.issued,0);
+});
