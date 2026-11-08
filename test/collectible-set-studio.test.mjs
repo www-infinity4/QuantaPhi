@@ -41,7 +41,7 @@ test('studio is linked from existing Media Star, contains opt-in, previews and n
  const html=src('collectible-set-studio.html'),ui=src('collectible-set-studio.mjs'),creator=src('media-star-creator.js');
  assert.ok(html.includes('id="coverFile"'));assert.ok(html.includes('id="pieceFiles"'));
  assert.ok(html.includes('id="privateOptIn"'));assert.ok(html.includes('id="canPublish"'));
- assert.ok(html.includes('/website-viewer.html?site=chatgpt'));
+ assert.ok(html.includes('/creator-gpt-handoff.html'));
  assert.ok(creator.includes("location.assign('/collectible-set-studio.html')"));
  for(const value of ['file.arrayBuffer()','crypto.subtle.digest','URL.createObjectURL','URL.revokeObjectURL'])assert.ok(ui.includes(value),value);
  for(const unsafe of ['getUserMedia','navigator.mediaDevices','fetch(','wallet.spend','localStorage.setItem'])assert.equal(ui.includes(unsafe),false,unsafe);
