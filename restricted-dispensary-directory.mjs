@@ -161,6 +161,20 @@ export const DISPENSARY_SOURCES=Object.freeze([
   "city": "Denver",
   "state": "CO",
   "paid_sponsor": false
+ },
+ {
+  "id": "the-dispensary-breckenridge",
+  "name": "The Dispensary",
+  "store": "Breckenridge",
+  "former_brand": "Alpenglow Botanicals",
+  "phone": "(970) 389-6839",
+  "address": "1805 Airport Rd, Breckenridge, CO 80424",
+  "source_url": "https://thedispensary.com/locations/breckenridge-co/",
+  "official_domain": "thedispensary.com",
+  "category": "dispensary",
+  "city": "Breckenridge",
+  "state": "CO",
+  "paid_sponsor": false
  }
 ].map(x=>Object.freeze(x)));
 export const DISPENSARY_CARD_IDS=Object.freeze(DISPENSARY_SOURCES.map(x=>'dispensary-'+x.id));
