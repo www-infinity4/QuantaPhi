@@ -245,7 +245,7 @@ test('Claude client exposes sanitized reason to Bubbles composer instead of drop
  assert.match(sandbox.ClaudeSteward.describeError('anthropic_authentication_failed'),/credential|key/i);
  assert.match(sandbox.ClaudeSteward.describeError('anthropic_model_unavailable'),/model/i);
  assert.doesNotMatch(sandbox.ClaudeSteward.describeError('sk-test-account-secret'),/sk-test-account-secret/);
- assert.match(src,/return inline\?{ok:false,error:/);
+ assert.match(src,/if\(inline\)data={ok:false,error:/);
  const bubbles=fs.readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
  assert.match(bubbles,/steward\.describeError\(result\?\.error/);
  assert.match(bubbles,/Your message remains in the composer/);
