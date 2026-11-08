@@ -3,7 +3,7 @@ const fs=require('node:fs'),vm=require('node:vm'),crypto=require('node:crypto').
 
 async function fixture(){
  const {readBubbleBits}=await import('../workers/unified-wallet/bubble-bit-credit.mjs');
- const {readGitAsset,readGptCoinAsset,importGptCoin}=await import('../workers/unified-wallet/engineering-assets.mjs');
+ const {readGitAsset,readGptCoinAsset,importGptCoin,readGitSerialReceipts}=await import('../workers/unified-wallet/engineering-assets.mjs');
  const accounts=[
   {id:'account-a',username:'alice',star_coins:7,pending_share_credits:0,share_count:0,quant:11,infinity:13,music:17},
   {id:'account-b',username:'bob',star_coins:19,pending_share_credits:0,share_count:0,quant:23,infinity:29,music:31}
@@ -29,6 +29,11 @@ async function fixture(){
   async all(){
    reads.push({sql,args});
    const account=accounts.find(a=>a.id===args[0]);assert.ok(account);
+   if(sql.includes('FROM gitcoin_serials')){
+    const n=accounts.findIndex(a=>'wallet-'+a.id===args[0]);
+    assert.ok(n>=0,'GIT serial query uses server-resolved wallet');
+    return {results:[{serial_no:n+10,receipt_id:'receipt-'+n,git_type:'git:app',issued_at:'2026-11-08 00:00:00'}]};
+   }
    if(sql.includes('FROM unified_token_records'))return{results:[{token_id:'token-'+account.id,token_type:'INFINITY_SEARCH',data_json:'{}'}]};
    if(sql.includes('FROM unified_wallet_events'))return{results:[{event_id:'event-'+account.id,asset_code:'INFINITY',amount:1,balance_after:account.infinity,created_at:1,metadata_json:'{}'}]};
    throw Error('Unexpected all query');
@@ -37,7 +42,7 @@ async function fixture(){
  }}}}};
  const source=fs.readFileSync('workers/unified-wallet/worker.js','utf8').replace(/^import .*\n/gm,'').replace('export default','globalThis.worker =');
  let keyFetches=0;
- const worker=vm.runInNewContext(source+';worker',{readBubbleBits,readGitAsset,readGptCoinAsset,importGptCoin,crypto,TextEncoder,TextDecoder,Request,Response,URL,Uint8Array,btoa,atob,AbortSignal,console,fetch:async()=>{keyFetches++;throw Error('Ordinary wallet routes must not request Access keys');}});
+ const worker=vm.runInNewContext(source+';worker',{readBubbleBits,readGitAsset,readGptCoinAsset,importGptCoin,readGitSerialReceipts,crypto,TextEncoder,TextDecoder,Request,Response,URL,Uint8Array,btoa,atob,AbortSignal,console,fetch:async()=>{keyFetches++;throw Error('Ordinary wallet routes must not request Access keys');}});
  const env={DB:db,IDENTITY_DB:db,GIT_DB:db};
  const request=(path,token)=>new Request('https://wallet.example.test'+path,{headers:{Origin:'https://quantaphi.org',...(token?{Authorization:'Bearer '+token}:{})}});
  return{accounts,tokens,reads,env,request,worker,keyFetches:()=>keyFetches};
@@ -76,5 +81,22 @@ test('another account ID in the history query never changes the authenticated ow
  assert.equal(response.status,200);
  const payload=await response.json();
  assert.equal(payload.items[0].event_id,'event-account-a');
+ assert.equal(f.keyFetches(),0);
+});
+
+test('GIT serial receipts are read-only, authenticated and account scoped even if a different wallet is requested',async()=>{
+ const f=await fixture();
+ const unauth=await f.worker.fetch(f.request('/v1/wallet/git-serials?walletId=wallet-account-b',null),f.env,{});
+ assert.equal(unauth.status,401);
+ for(let i=0;i<2;i++){
+  const response=await f.worker.fetch(f.request('/v1/wallet/git-serials?walletId=wallet-account-b',f.tokens[i]),f.env,{});
+  assert.equal(response.status,200);
+  const data=await response.json();
+  assert.equal(data.asset,'GIT');
+  assert.equal(data.available,true);
+  assert.equal(data.items.length,1);
+  assert.equal(data.items[0].serial,'GIT-'+String(i+10).padStart(12,'0'));
+ }
+ assert.equal((await f.worker.fetch(f.request('/v1/wallet/git-serials?beforeSerial=-100',f.tokens[0]),f.env,{})).status,400);
  assert.equal(f.keyFetches(),0);
 });
