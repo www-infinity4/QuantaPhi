@@ -3,28 +3,29 @@ issue: 1321
 project: "Continuity Builder executable bounded action packets"
 source_requests:
   - https://github.com/www-infinity4/QuantaPhi/issues/1321
-state: implementing
-dot: "🟡"
-progress_percent: 20
-progress_basis: "Pure packet selector, test source and runbook staged; no real continuity runner integration or resumed automated GitHub write yet"
-sessions_spent: 1
-sessions_remaining_estimate: unknown
-agent: "ChatGPT source-only; no issued coordinator lease"
+state: blocked
+dot: "🔵"
+progress_percent: 25
+progress_basis: "2 of 8 implementation milestones: pure selector and claim-fenced D1 adapter seam with two-run regression coverage; production caller and real authenticated build/merge remain absent"
+sessions_spent: 2
+sessions_remaining_estimate: "2-4, dependent on signed bridge access"
+agent: "Copilot source-only; no issued coordinator lease"
 lease_id: null
 lease_expires_at: null
 task_session_id: null
 fence: null
 repo: www-infinity4/QuantaPhi
-branch: feat/continuity-action-packets-1321
-head_sha: null
-pr: null
+branch: copilot/continuity-builder-action-packets
+head_sha: pending
+pr: https://github.com/www-infinity4/QuantaPhi/pull/1858
 tests:
-  - "node --test test/continuity-work-packets.test.mjs pending GitHub CI"
+  - "node --test test/continuity-work-packets.test.mjs"
+  - "node --test test/continuity-packet-runner-adapter.test.mjs"
 merged: false
 deployed: false
 live_verified: false
-blocker: "Actual authenticated Continuity coordinator needs a verified atomic D1 checkpoint and runner integration"
-next_action: "Pass exact-head work-packet Node CI, review and merge; wire into verified runner in a separate scoped PR"
+blocker: "Observation-only coordinator has a D1 binding but no authenticated Brain CLOCK/owner-scoped candidate adapter; the Brain writer route is separate and no signed bridge has been verified"
+next_action: "Obtain/verify the existing authorized Brain-to-coordinator adapter contract, then connect this seam without expanding credentials or changing owner grants"
 ---
 
 # Owner purpose
@@ -34,6 +35,7 @@ Stop continuity rereading unchanged work and reporting 0 progress after short lo
 Pure packet selection rejects unchanged blocked same-head retries and foreign leases; merge gating and receipt idempotency verified by tests.
 
 ## Remaining
-- Authenticated runner consumes packet, persists source hash and action result, and executes real GitHub capability.
-- Two-run integration acceptance verifies one real merge after independent CI/review and one unchanged-head skip.
+- Adapter seam now requires a live D1 cycle fence, stores revision-scoped outcomes, and avoids a second history load for an unchanged version; synthetic tests only.
+- Actual authenticated runner consumes the packet and performs provider-confirmed actions through authorized GitHub capabilities.
+- Two-run production acceptance verifies one real eligible action/PR, exact-head CI, independent review, permitted merge, and a resumed unchanged-version skip.
 - Do not bypass wallet, finance, identity, OAuth, APK security or branch protection.
