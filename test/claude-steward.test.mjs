@@ -63,7 +63,7 @@ test('fix mode: search, verified patch, draft ticket, honest receipt',async()=>{
  // evidence is labelled untrusted and tools are offered
  assert.match(seen[0].system,/untrusted data/);
  assert.match(seen[0].system,/ignore previous instructions/);
- assert.equal(seen[0].tools.length,4);
+ assert.equal(seen[0].tools.length,5);
  assert.ok(!JSON.stringify(seen).includes(AUTH),'owner bearer must never reach Anthropic');
  assert.ok(!JSON.stringify(seen).includes('sk-test'));
 });
@@ -215,4 +215,22 @@ test('Termux patch export uses deterministic UTF-8 file handling',()=>{
  const source=fs.readFileSync(new URL('../claude-card.js',import.meta.url),'utf8');
  assert.match(source,/p\.read_text\(encoding="utf-8"\)/);
  assert.match(source,/p\.write_text\(s\.replace\(old,new,1\),encoding="utf-8"\)/);
+});
+
+test('Claude discovers existing Bubbles adapters by name without using model-written code',async()=>{
+ const seen=[];
+ const result=await steward({mode:'chat',messages:[{role:'user',text:'Where does Bubbles find GitHub work tools?'}]},makeEnv(),AUTH,
+  scripted([
+   {stop_reason:'tool_use',content:[use('lookup1','list_bubbles_tools',{query:'fix GitHub repository'})]},
+   {stop_reason:'end_turn',content:[{type:'text',text:'The GitHub writer is an owner-gated adapter; I did not run it.'}]}
+  ],seen));
+ assert.equal(result.ok,true);
+ assert.equal(result.receipt.githubChanges,false);
+ assert.equal(result.receipt.toolCalls,1);
+ const call=seen[1].messages.at(-1).content[0];
+ assert.equal(call.type,'tool_result');
+ assert.match(call.content,/github-owner-work/);
+ assert.match(call.content,/owner-gated/);
+ assert.match(call.content,/direct-github\.mjs/);
+ assert.doesNotMatch(call.content,/sk-test|rb_[a-z0-9]{64}/);
 });
