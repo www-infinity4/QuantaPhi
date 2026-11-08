@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-08T20:01:20.483479Z",
+  "checked_at": "2026-11-08T20:31:19.904254Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "blake corum",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T19:40:00Z",
+      "query": "jj mccarthy",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-08T20:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50403440/sources-colts-engaged-daniel-jones-trade-talks",
-        "https://www.nfl.com/news/trade-talk-latest-on-colts-qb-daniel-jones-chargers-lb-khalil-mack-ahead-of-deadline",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/daniel-jones-has-several-million-reasons-to-want-to-be-traded-to-a-contender"
+        "https://sports.yahoo.com/nfl/live/eagles-giants-score-live-updates-inactives-highlights-stats-where-to-watch-week-9-161640488.html",
+        "https://www.usatoday.com/story/sports/nfl/eagles/2026/11/08/joe-milton-philadelphia-eagles-quarterback-tanner-mckee/92629612007/",
+        "https://www.bleedinggreennation.com/philadelphia-eagles-interviews-exclusive/189618/nick-sirianni-explains-eagles-making-a-qb-change-week-9-joe-milton-tanner-mckee-comments"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD9QS164El3VCEBhsL06eebAaIKRD-7mTn559TEHJ9gPOWM7H61FVnOaZDtY8",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFdlsfp6mXJslLkTWNXMcyMx47vJWuSyc8PPFM9OzD-0O8xjN1lK-2uHZ7I_c",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50403440/sources-colts-engaged-daniel-jones-trade-talks",
-          "title": "Colts in Daniel Jones trade talks as multiple teams call about QB, sources say",
+          "url": "https://sports.yahoo.com/nfl/live/eagles-giants-score-live-updates-inactives-highlights-stats-where-to-watch-week-9-161640488.html",
+          "title": "Giants vs. Eagles score, live updates: J.J. McCarthy questionable with hip injury, replaced by Jameis Winston early in the second half",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFdlsfp6mXJslLkTWNXMcyMx47vJWuSyc8PPFM9OzD-0O8xjN1lK-2uHZ7I_c"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/nfl/eagles/2026/11/08/joe-milton-philadelphia-eagles-quarterback-tanner-mckee/92629612007/",
+          "title": "Who is Joe Milton III? Eagles turn to QB with 'cannon' arm strength",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEmfKeYJxCztHtGyJQVgUMwfHBDLTvMua9E32wqWjGy6qJYeRlvIBizvqvaNU"
+        },
+        {
+          "url": "https://www.bleedinggreennation.com/philadelphia-eagles-interviews-exclusive/189618/nick-sirianni-explains-eagles-making-a-qb-change-week-9-joe-milton-tanner-mckee-comments",
+          "title": "Nick Sirianni explains decision for Eagles QB change",
+          "publisher": "Bleeding Green Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAqro6Zd9KE_7-2bM-uyNcjVoEICsmJYJ8QN87HQBJ_L0jh-5KhjFcJNF85Mc"
+        }
+      ]
+    },
+    {
+      "query": "barca",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-08T20:10:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cm4g1jlw7vqlt",
+        "https://www.si.com/soccer/atletico-madrid-vs-barcelona-preview-predictions-lineups-11-8-26",
+        "https://www.espn.com/soccer/story/_/id/50407601/diego-simeone-julian-alvarez-barcelona-atletico-madrid"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRJ_2eFueYcy0AOWBJ5VRF2vnYN-nFs_qDRKkZhzTXp0oRIZMFbLBDYW0hVu4",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cm4g1jlw7vqlt",
+          "title": "Atlético Madrid vs Barcelona: Spanish La Liga stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRJ_2eFueYcy0AOWBJ5VRF2vnYN-nFs_qDRKkZhzTXp0oRIZMFbLBDYW0hVu4"
+        },
+        {
+          "url": "https://www.si.com/soccer/atletico-madrid-vs-barcelona-preview-predictions-lineups-11-8-26",
+          "title": "Atletico Madrid vs. Barcelona: Preview, Predictions and Lineups",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNthJqRNya9_TsXrTxkDddx2cCN0dAJ-1lwJh93r5QkTevGrFMGSeBqqVNWl0"
+        },
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50407601/diego-simeone-julian-alvarez-barcelona-atletico-madrid",
+          "title": "Diego Simeone backs Julián Álvarez for Barcelona clash after Atlético transfer saga",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD9QS164El3VCEBhsL06eebAaIKRD-7mTn559TEHJ9gPOWM7H61FVnOaZDtY8"
-        },
-        {
-          "url": "https://www.nfl.com/news/trade-talk-latest-on-colts-qb-daniel-jones-chargers-lb-khalil-mack-ahead-of-deadline",
-          "title": "Trade talk: Latest on Colts QB Daniel Jones, Chargers LB Khalil Mack ahead of deadline",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThrkweIxX33ex0H2IdobI63-XGGfNtq0zOAMPJPWi1bInGGmUs_S4FKqmVIjs"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/daniel-jones-has-several-million-reasons-to-want-to-be-traded-to-a-contender",
-          "title": "Daniel Jones has several million reasons to want to be traded to a contender",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTItJD1zeKHBPec1_K5oTS6olVaW90CCVCmrHk-4g1noxU3RmDvZnxxx6CApSw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvQj1594Segev85JvUwvek-rhLCIi5xiE7cXmQ5RLQnaaEVhlPmyreNDyHpCE"
         }
       ]
     },
     {
-      "query": "golden knights vs sabres",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T19:40:00Z",
+      "query": "kaytron allen",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T20:10:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/sabres/news/how-to-watch-buffalo-sabres-vegas-golden-knights-lineup-x5154",
-        "https://www.audacy.com/wgr550/sports/sabres/sabres-get-back-to-their-game-as-the-prepare-for-vegas",
-        "https://www.nytimes.com/athletic/7763600/2026/11/08/golden-knights-vs-sabres-stream-how-to-watch-nov-8/"
+        "https://sports.yahoo.com/articles/life-just-got-little-harder-130117808.html",
+        "https://dolphinswire.usatoday.com/story/sports/nfl/dolphins/2026/11/08/jaylen-wright-injury-dolphins-rb-wont-play-vs-lions-in-week-9/92676537007/",
+        "https://www.cbssports.com/fantasy/football/news/dolphins-kaytron-allen-will-play-in-week-9/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQt_WvsgkLAzB4QNAZn2hlQpX1jriXx_SX1kJJ9WFdGBhU229UoArdDdih3fvg",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/sabres/news/how-to-watch-buffalo-sabres-vegas-golden-knights-lineup-x5154",
-          "title": "Sabres vs. Golden Knights | How to watch, lineup notes, and storylines",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQt_WvsgkLAzB4QNAZn2hlQpX1jriXx_SX1kJJ9WFdGBhU229UoArdDdih3fvg"
-        },
-        {
-          "url": "https://www.audacy.com/wgr550/sports/sabres/sabres-get-back-to-their-game-as-the-prepare-for-vegas",
-          "title": "Sabres get back to their game as the prepare for Vegas",
-          "publisher": "Audacy",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVE7_KJoWeE1tcDjbZNjmAsGSMyL7o3IEb3VWMdRXXTn2H5J6Fy4CRbxmZeqA"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7763600/2026/11/08/golden-knights-vs-sabres-stream-how-to-watch-nov-8/",
-          "title": "How to watch Golden Knights vs. Sabres: TV channel and streaming options for November 8",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgd6dn1tAdBM3NmNYvukEXmbfKxnHx1I52EhUsUoRH7kS966MBmBWlVx1rK-0"
-        }
-      ]
-    },
-    {
-      "query": "ceedee lamb",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T19:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/ceedee-lamb-vs-colts-week-104000435.html",
-        "https://www.dallascowboys.com/news/zero-to-100-ceedee-leads-the-nfl-in-this-stat",
-        "https://www.dunkelindex.com/news/ceedee-lamb-nfl-player-prop-predictions-lines-and-trends-2026-week-9"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTE1tVGgMCf7w9mKTbBOJC3XT2JFTjHy4Fo1ehUKHFudyfDfHjFlKL5Q1hPFk8",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcybc1HtKCSi41tRAj6pvgNCmT9tOaiK8loxXJMSqpKbEZGeAtfUHeMlSNL0Q",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/ceedee-lamb-vs-colts-week-104000435.html",
-          "title": "CeeDee Lamb vs. Colts Week 9: 3 Expectations for Cowboys WR With George Pickens Questionable",
+          "url": "https://sports.yahoo.com/articles/life-just-got-little-harder-130117808.html",
+          "title": "Life just got a little harder for one of the Miami Dolphins' most underperforming units ahead of Week 9",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTE1tVGgMCf7w9mKTbBOJC3XT2JFTjHy4Fo1ehUKHFudyfDfHjFlKL5Q1hPFk8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcybc1HtKCSi41tRAj6pvgNCmT9tOaiK8loxXJMSqpKbEZGeAtfUHeMlSNL0Q"
         },
         {
-          "url": "https://www.dallascowboys.com/news/zero-to-100-ceedee-leads-the-nfl-in-this-stat",
-          "title": "Zero to 100: CeeDee leads the NFL in this stat",
+          "url": "https://dolphinswire.usatoday.com/story/sports/nfl/dolphins/2026/11/08/jaylen-wright-injury-dolphins-rb-wont-play-vs-lions-in-week-9/92676537007/",
+          "title": "Dolphins RB won't play vs. Lions in Week 9 due to quad injury",
+          "publisher": "Dolphins Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVSarCW9NO1ikCssV8BLHCQoOPr0MckdI2B8JqG33cXl_FhXGIdgXE3hVqBjQ"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/football/news/dolphins-kaytron-allen-will-play-in-week-9/",
+          "title": "Dolphins' Kaytron Allen: Will play in Week 9",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRgtyhxGxEG7i2Okxt9MXO4tXkT6SYFeNJ2RsRVSTb2-axRU5x1XlHHfRx6NM"
+        }
+      ]
+    },
+    {
+      "query": "sarah strong",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T20:10:00Z",
+      "related_news_urls": [
+        "https://www.yardbarker.com/college_basketball_w/articles/cant_be_stupid_like_that_sarah_strong_takes_accountability_ahead_of_uconns_clash_with_hawkeyes/s1_17730_44533294",
+        "https://www.ctinsider.com/sports/uconn-womens-basketball/article/how-to-watch-uconn-vs-iowa-time-tv-lineups-22506018.php",
+        "https://247sports.com/college/iowa/article/there-keys-and-a-pick-iowa-gets-first-big-test-against-no-2-uconn-292290547/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYKJuDinDPbNqG9AZkCJlfEauhpam_iJJilL95aM9bTpVb65oL9avOYJwPCqA",
+      "image_credit": "Yardbarker",
+      "news": [
+        {
+          "url": "https://www.yardbarker.com/college_basketball_w/articles/cant_be_stupid_like_that_sarah_strong_takes_accountability_ahead_of_uconns_clash_with_hawkeyes/s1_17730_44533294",
+          "title": "'Can’t Be Stupid Like That': Sarah Strong Takes Accountability Ahead of UConn’s Clash With Hawkeyes",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYKJuDinDPbNqG9AZkCJlfEauhpam_iJJilL95aM9bTpVb65oL9avOYJwPCqA"
+        },
+        {
+          "url": "https://www.ctinsider.com/sports/uconn-womens-basketball/article/how-to-watch-uconn-vs-iowa-time-tv-lineups-22506018.php",
+          "title": "How to watch No. 2 UConn women's basketball vs. No. 10 Iowa",
+          "publisher": "CT Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkfGoks1BGpfJD8OrRcHZ7UXYeg-X-2lfbqgkCPcq6pish_xQWc6spriRLrCo"
+        },
+        {
+          "url": "https://247sports.com/college/iowa/article/there-keys-and-a-pick-iowa-gets-first-big-test-against-no-2-uconn-292290547/",
+          "title": "Three Keys And A Pick: Iowa Gets First Big Test Against No. 2 UConn",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1gtD9u4fP06jxXYG-xCYh2jtJ6TSDfR_JBw3pw06k4b3_IFU8RDxPl71QwuY"
+        }
+      ]
+    },
+    {
+      "query": "derrick moore",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T20:10:00Z",
+      "related_news_urls": [
+        "https://www.detroitlions.com/news/inactives-lions-at-dolphins-stbrown-reed-wonnum",
+        "https://sports.yahoo.com/articles/amon-ra-st-brown-playing-152423152.html",
+        "https://www.prideofdetroit.com/detroit-lions-injuries/179867/lions-dolphins-week-9-injury-designations-lions-rule-out-5-starters"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdijXpbdjGMLK39kvgbfIzuIpjELR-Z8grO3lFXDQq9wfHVIvQs_XF3AZMbf8",
+      "image_credit": "Detroit Lions",
+      "news": [
+        {
+          "url": "https://www.detroitlions.com/news/inactives-lions-at-dolphins-stbrown-reed-wonnum",
+          "title": "INACTIVES: Lions at Dolphins",
+          "publisher": "Detroit Lions",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdijXpbdjGMLK39kvgbfIzuIpjELR-Z8grO3lFXDQq9wfHVIvQs_XF3AZMbf8"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/amon-ra-st-brown-playing-152423152.html",
+          "title": "Is Amon-Ra St. Brown playing today? Lions Week 9 injury report with WR questionable",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTN3JJxrpIcF3ym9TelJpyboheIdD0ssuBDvfFBhsuVbqSeEipugEymLWnpLBc"
+        },
+        {
+          "url": "https://www.prideofdetroit.com/detroit-lions-injuries/179867/lions-dolphins-week-9-injury-designations-lions-rule-out-5-starters",
+          "title": "Lions, Dolphins Week 9 injury designations: Lions rule out 5 starters",
+          "publisher": "Pride Of Detroit",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTMHpsezBKV_fcSzc5aD_oxdnFT22dkJv5v-sUc6jy4Q0r1hftNcPACe6UbyuU"
+        }
+      ]
+    },
+    {
+      "query": "rashan gary",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T20:10:00Z",
+      "related_news_urls": [
+        "https://arizonasports.com/nfl/arizona-cardinals/nfl-fines-cowboys-demarvion-overshown-for-hit-on-cardinals-bam-knight",
+        "https://sports.yahoo.com/articles/dallas-cowboys-defense-receives-46-120100887.html",
+        "https://www.dallascowboys.com/news/don-t-forget-these-5-gary-s-untimely-penalty"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfYlxOPSajNvbwMAbmBSGzNzyihPKD0W91l1MdrVGftG2pYaN67g6NQEOjhP8",
+      "image_credit": "Arizona Sports",
+      "news": [
+        {
+          "url": "https://arizonasports.com/nfl/arizona-cardinals/nfl-fines-cowboys-demarvion-overshown-for-hit-on-cardinals-bam-knight",
+          "title": "NFL fines Cowboys’ DeMarvion Overshown for hit on Cardinals’ Bam Knight",
+          "publisher": "Arizona Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfYlxOPSajNvbwMAbmBSGzNzyihPKD0W91l1MdrVGftG2pYaN67g6NQEOjhP8"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/dallas-cowboys-defense-receives-46-120100887.html",
+          "title": "Dallas Cowboys defense receives $46,883 punishment as NFL quietly admits a mistake from overtime loss to Cardinals",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8lO3n3FYmOb4-XomtVdH2ifWu_tRu9kyBK3V2eus0vYW0IZLAXnBi6w9xyf4"
+        },
+        {
+          "url": "https://www.dallascowboys.com/news/don-t-forget-these-5-gary-s-untimely-penalty",
+          "title": "Don’t Forget These 5: Gary’s untimely penalty",
           "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRI2qMKtZtV69A66DVK56oSKxLY3e0P5tWVdW1qbdO_yqOeaB2yjTTtwSMzEHI"
-        },
-        {
-          "url": "https://www.dunkelindex.com/news/ceedee-lamb-nfl-player-prop-predictions-lines-and-trends-2026-week-9",
-          "title": "CeeDee Lamb vs. Colts - NFL - Player Props, Lines and Trends",
-          "publisher": "The Dunkel Index",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEDfcVCp9EJzkBphdCynS9zM65PNzMCKfQUvFyR9hXnJNmj_bA_CnNyzeUPT4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSoGMcaFVBCo8eDXo9IHfkruDogS8KOxt40XCQbeXI_7OlOZXZwBbEkNwodilA"
         }
       ]
     },
     {
-      "query": "cupertino show",
+      "query": "katie price",
       "approx_searches": "500+",
-      "published_at": "2026-11-08T19:40:00Z",
+      "published_at": "2026-11-08T20:00:00Z",
       "related_news_urls": [
-        "https://www.cbsnews.com/newyork/video/cbs-drama-cupertino-part-of-n-j-s-booming-show-business-industry/",
-        "https://www.usatoday.com/story/news/state/pennsylvania/pittsburgh/2026/11/05/watch-stream-new-cbs-legal-drama-cupertino-carnegie-mellon-graduates/92582474007/",
-        "https://www.cbsnews.com/newyork/news/cbs-cupertino-new-jersey-mike-colter-rachel-keller/"
+        "https://www.the-independent.com/bulletin/news/kieran-hayler-trial-katie-price-daily-mail-b3081033.html",
+        "https://www.lbc.co.uk/article/katie-prices-ex-husband-breaks-silence-on-five-years-of-hell-after-being-cleared-5Hjdm6d_2/",
+        "https://www.the-independent.com/news/uk/crime/katie-price-kieran-hayler-husband-trial-b3080993.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRnTbJrVqRJEX7au8_K-A_4xCRgy4Q7_xiwzWrOHR52Nsty2m1_p6S-lfBgQs",
-      "image_credit": "CBS News",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD23XAtgkSeCsLL-mtd0ZWV7bIeKofxb32KpHRIsWLzQBbeKQYwmT8Er9drrQ",
+      "image_credit": "The Independent",
       "news": [
         {
-          "url": "https://www.cbsnews.com/newyork/video/cbs-drama-cupertino-part-of-n-j-s-booming-show-business-industry/",
-          "title": "CBS drama \"Cupertino\" part of N.J.'s booming show business industry",
-          "publisher": "CBS News",
+          "url": "https://www.the-independent.com/bulletin/news/kieran-hayler-trial-katie-price-daily-mail-b3081033.html",
+          "title": "Kieran Hayler says his rape trial was 'just a game' for ex-wife Katie Price",
+          "publisher": "The Independent",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRnTbJrVqRJEX7au8_K-A_4xCRgy4Q7_xiwzWrOHR52Nsty2m1_p6S-lfBgQs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD23XAtgkSeCsLL-mtd0ZWV7bIeKofxb32KpHRIsWLzQBbeKQYwmT8Er9drrQ"
         },
         {
-          "url": "https://www.usatoday.com/story/news/state/pennsylvania/pittsburgh/2026/11/05/watch-stream-new-cbs-legal-drama-cupertino-carnegie-mellon-graduates/92582474007/",
-          "title": "Carnegie Mellon alums star in new CBS legal drama 'Cupertino'",
-          "publisher": "USA Today",
+          "url": "https://www.lbc.co.uk/article/katie-prices-ex-husband-breaks-silence-on-five-years-of-hell-after-being-cleared-5Hjdm6d_2/",
+          "title": "Katie Price’s ex-husband breaks silence on 'five years of hell' after being cleared of raping girl, 13",
+          "publisher": "LBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwrNsUBaq76VelDudxvdAD3Ux4x4ojjBWYuvtLwXswKE0O3lrCd9HFZXY3KWA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSI8iais26Zz8hw9U2QY8D9h8mzOJnR8emZmXtXYMmci-UNZynU4nQSzsgg1Og"
         },
         {
-          "url": "https://www.cbsnews.com/newyork/news/cbs-cupertino-new-jersey-mike-colter-rachel-keller/",
-          "title": "New CBS legal drama \"Cupertino\" is part of New Jersey's booming show business industry",
-          "publisher": "CBS News",
+          "url": "https://www.the-independent.com/news/uk/crime/katie-price-kieran-hayler-husband-trial-b3080993.html",
+          "title": "Katie Price’s ex-husband speaks for first time since being cleared of rape: 'Five years of hell'",
+          "publisher": "The Independent",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeV-T901YUb__kTS-HbRo6vtNuQQXjUM8qUv0UostjQbvwQ7rmXakXKJNnOPE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQp0g4_oHYzVvwaUZhX9b5qzlMoM7gbS7WNeFi4xMSJC1QxMCpUjDCXZIYba0"
         }
       ]
     },
     {
-      "query": "76ers vs bulls",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-08T19:30:00Z",
+      "query": "george karlaftis",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T20:00:00Z",
       "related_news_urls": [
-        "https://www.libertyballers.com/76ers-game-previews/101283/sixers-bulls-philadelphia-chicago-nba-preview-joel-embiid-nic-claxton-nick-nurse-lebron-james",
-        "https://sports.yahoo.com/articles/76ers-perfect-opportunity-waiting-chicago-180034308.html",
-        "https://www.delawareonline.com/story/sports/nba/76ers/2026/11/08/what-channel-are-sixers-on-today-what-time-is-sixers-game-today-will-lebron-james-play-chicago-bulls/92677382007/"
+        "https://www.arrowheadpride.com/kansas-city-chiefs-news/215223/george-karlaftis-understands-learning-curve-rookie-r-mason-thomas",
+        "https://www.kshb.com/sports/football/chiefs/rookie-de-r-mason-thomas-will-play-wr-rashee-rice-also-returning-for-chiefs-in-denver",
+        "https://www.kansascity.com/sports/nfl/kansas-city-chiefs/article317968169.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNXvHD-JMD-7nfcDtGRjvu5JZfaRA833fixg9iFzlTUot5w8usH1DxUSFmrIk",
-      "image_credit": "Liberty Ballers",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfyfsSbqzwhKFsp8e_iA9333RY_MAHBZrbX4oLZtbdamnJAtbQt6H1xlqozO4",
+      "image_credit": "Arrowhead Pride",
       "news": [
         {
-          "url": "https://www.libertyballers.com/76ers-game-previews/101283/sixers-bulls-philadelphia-chicago-nba-preview-joel-embiid-nic-claxton-nick-nurse-lebron-james",
-          "title": "Sixers visit Bulls for second meeting in Sunday matinee",
-          "publisher": "Liberty Ballers",
+          "url": "https://www.arrowheadpride.com/kansas-city-chiefs-news/215223/george-karlaftis-understands-learning-curve-rookie-r-mason-thomas",
+          "title": "George Karlaftis can relate to R Mason Thomas’ rookie progress",
+          "publisher": "Arrowhead Pride",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNXvHD-JMD-7nfcDtGRjvu5JZfaRA833fixg9iFzlTUot5w8usH1DxUSFmrIk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfyfsSbqzwhKFsp8e_iA9333RY_MAHBZrbX4oLZtbdamnJAtbQt6H1xlqozO4"
         },
         {
-          "url": "https://sports.yahoo.com/articles/76ers-perfect-opportunity-waiting-chicago-180034308.html",
-          "title": "76ers Have Perfect Get-Right Opportunity Waiting in Chicago",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.kshb.com/sports/football/chiefs/rookie-de-r-mason-thomas-will-play-wr-rashee-rice-also-returning-for-chiefs-in-denver",
+          "title": "Rookie DE R Mason Thomas will play, WR Rashee Rice also returning for Chiefs in Denver",
+          "publisher": "KSHB 41 Kansas City",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-9Ez4zaHIzai8fb5R_O6f1LLyiOLB6Z4NUWjIbbd0sF5XVYa1Fg7horUYPtI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtj9wI6C0lf6AiDWspk8qVObobf8POiDvJ4ZhJBlGQaTQUEvu3XmmA01tmcmA"
         },
         {
-          "url": "https://www.delawareonline.com/story/sports/nba/76ers/2026/11/08/what-channel-are-sixers-on-today-what-time-is-sixers-game-today-will-lebron-james-play-chicago-bulls/92677382007/",
-          "title": "What channel are Sixers on today? What time is Sixers vs. Chicago Bulls",
-          "publisher": "Delawareonline.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoK05HG3Vp7bqy8kfmODfIneOIL0kva0b7Qc_qMl2kHuh21aHCeZEgH48WyEM"
-        }
-      ]
-    },
-    {
-      "query": "harrison butker",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-08T19:30:00Z",
-      "related_news_urls": [
-        "https://www.nfl.com/videos/butker-s-missed-51-yard-field-goal-is-followed-by-boos-from-fans-in-kansas-city",
-        "https://www.kansascity.com/sports/nfl/kansas-city-chiefs/article317947466.html",
-        "https://timesofindia.indiatimes.com/sports/nfl/news/he-needs-to-be-fired-chiefs-head-coach-andy-reid-backs-harrison-butker-sparking-major-outrage-ahead-of-clash-against-the-new-york-jets/articleshow/135564416.cms"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSZ6emy_0WK6e6aw7-0I4dFdt-OA275LQAzY1w44ZAkcYxRnzREjs4obcy9Kc",
-      "image_credit": "NFL.com",
-      "news": [
-        {
-          "url": "https://www.nfl.com/videos/butker-s-missed-51-yard-field-goal-is-followed-by-boos-from-fans-in-kansas-city",
-          "title": "Kicker Harrison Butker's missed 51-yard field goal is followed by boos from fans in Kansas City",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSZ6emy_0WK6e6aw7-0I4dFdt-OA275LQAzY1w44ZAkcYxRnzREjs4obcy9Kc"
-        },
-        {
-          "url": "https://www.kansascity.com/sports/nfl/kansas-city-chiefs/article317947466.html",
-          "title": "Why the Chiefs are sticking with Harrison Butker vs. Jets as Justin Tucker looms",
+          "url": "https://www.kansascity.com/sports/nfl/kansas-city-chiefs/article317968169.html",
+          "title": "R Mason Thomas: ‘We have to keep pushing’ (Video)",
           "publisher": "Kansas City Star",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOfReue0blc3F67ezkJEyYLaocLeW9sDkzr1_tIq1a9TPv3yJPqZ8IPJiP_sw"
-        },
-        {
-          "url": "https://timesofindia.indiatimes.com/sports/nfl/news/he-needs-to-be-fired-chiefs-head-coach-andy-reid-backs-harrison-butker-sparking-major-outrage-ahead-of-clash-against-the-new-york-jets/articleshow/135564416.cms",
-          "title": "“He needs to be fired”: Chiefs head coach Andy Reid backs Harrison Butker sparking major outrage ahead of",
-          "publisher": "The Times of India",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8wuwT2pX4vMS8pH_quWRyfVYnX2W8yp6znEvacePMEDtyClZGT5oWY1hksNg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQCdYvWOsPduivb2a_5qowpd4bfH3VlXvURi_5XsI4Vx29aE4xf2Z0DtLT2_g"
         }
       ]
     },
     {
-      "query": "ap poll rankings",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T19:30:00Z",
+      "query": "lee kang-in",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T19:50:00Z",
       "related_news_urls": [
-        "https://www.on3.com/teams/kentucky-wildcats/news/kentucky-falls-out-of-top-10-in-latest-ap-poll-rankings-after-loss-to-tennessee/",
-        "https://www.aseaofblue.com/kentucky-wildcats-football/187129/college-football-rankings-roundup-top-25-polls",
-        "https://sports.yahoo.com/articles/far-did-kentucky-fall-us-181631976.html"
+        "https://biz.chosun.com/en/en-sports/2026/11/08/LBXU2XKMDJH6ZDCX7E6GWSYRTE/",
+        "https://www.chosun.com/english/sports-en/2026/11/08/YN2ZEPW25FCOTOB7AIPWNMGRSU/",
+        "https://www.chosun.com/english/sports-en/2026/11/08/XHA3O2GMUFA53M26O65COK3SYA/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpO9lZJw6AjET3tRY0ZVHsOVAm_9FVPRBLpzihCskRXMT0PUg1ajJNVF62UIw",
-      "image_credit": "On3",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRry5M-zxmDWQ9pnTNJk9eJ4Va6CaGThn7rH3_ezyUcOUSLWKYNp3nf25yqYHA",
+      "image_credit": "Chosunbiz",
       "news": [
         {
-          "url": "https://www.on3.com/teams/kentucky-wildcats/news/kentucky-falls-out-of-top-10-in-latest-ap-poll-rankings-after-loss-to-tennessee/",
-          "title": "Kentucky falls out of top 10 in latest AP Poll rankings after loss to Tennessee",
-          "publisher": "On3",
+          "url": "https://biz.chosun.com/en/en-sports/2026/11/08/LBXU2XKMDJH6ZDCX7E6GWSYRTE/",
+          "title": "Simeone defends Lee Kang-in playing time, expects him to start vs Barcelona",
+          "publisher": "Chosunbiz",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpO9lZJw6AjET3tRY0ZVHsOVAm_9FVPRBLpzihCskRXMT0PUg1ajJNVF62UIw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRry5M-zxmDWQ9pnTNJk9eJ4Va6CaGThn7rH3_ezyUcOUSLWKYNp3nf25yqYHA"
         },
         {
-          "url": "https://www.aseaofblue.com/kentucky-wildcats-football/187129/college-football-rankings-roundup-top-25-polls",
-          "title": "Kentucky Wildcats in the College Football rankings and Sunday News",
-          "publisher": "A Sea Of Blue",
+          "url": "https://www.chosun.com/english/sports-en/2026/11/08/YN2ZEPW25FCOTOB7AIPWNMGRSU/",
+          "title": "Simeone Defends Lee Kang-in's Playing Time Ahead of Barcelona Clash",
+          "publisher": "조선일보",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQU8yg8vldROO23MjBbuvUFbT-1wB7t00-l4V4Y-flY6TnHCJkflB8hVur-3x0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdqvq_4Pnl_K5CGYcEWYANGRoK_lZ19B928ngYwo3iHptRu_UEVUv5rjA1RXQ"
         },
         {
-          "url": "https://sports.yahoo.com/articles/far-did-kentucky-fall-us-181631976.html",
-          "title": "How far did Kentucky fall in US LBM Coaches Poll?",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.chosun.com/english/sports-en/2026/11/08/XHA3O2GMUFA53M26O65COK3SYA/",
+          "title": "Atlético Madrid's Simeone Defends Lee Kang-in's Playing Time",
+          "publisher": "조선일보",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVm3r9Uyqm3RsZRCqHBwr9y_2jKp74T2VnGRmP7fxGyYIUjLyAU_HITCPML2s"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTg60DS9P6mp79vopxKI3qk9GZOZILuzTbtDYCa4q8r_uYJAwxgCAUYFV-mPbA"
         }
       ]
     },
     {
-      "query": "john riggins",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T19:30:00Z",
+      "query": "estrela amadora vs benfica",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T19:50:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/washington-commanders-set-retire-john-054542585.html",
-        "https://www.commanders.com/news/i-m-the-guy-how-riggins-unlocked-next-level-in-1982-playoffs"
+        "https://www.record.pt/futebol/futebol-nacional/liga-betclic/benfica/detalhe/em-direto-siga-a-antevisao-de-marco-silva-ao-jogo-com-o-e-amadora",
+        "https://www.vietnam.vn/pt/nhan-dinh-estrela-vs-benfica-co-hoi-bam-duoi-ngoi-dau",
+        "https://www.cmjornal.pt/desporto/futebol/detalhe/conheca-as-escolhas-de-marco-silva-para-o-jogo-contra-o-e-amadora"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrNP3cOHKTwabe6_aBTomijY9DFgPcLO-j-inad5UW0vfO0WUb_EJmqGlGNpw",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9wWhLK4Sf0M2TIVJ0vKGQXciHfAm3kDk-DQe7vq7ZsBcp4xPmaRuLGiP5fpo",
+      "image_credit": "Record",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/washington-commanders-set-retire-john-054542585.html",
-          "title": "Washington Commanders Set to Retire John Riggins' Iconic No. 44",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.record.pt/futebol/futebol-nacional/liga-betclic/benfica/detalhe/em-direto-siga-a-antevisao-de-marco-silva-ao-jogo-com-o-e-amadora",
+          "title": "Marco Silva: renovação de Prestianni (e não só), \"decisão acertada\" de Trubin, o \"jogador\" Paulo Fonseca e regresso na defesa",
+          "publisher": "Record",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrNP3cOHKTwabe6_aBTomijY9DFgPcLO-j-inad5UW0vfO0WUb_EJmqGlGNpw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9wWhLK4Sf0M2TIVJ0vKGQXciHfAm3kDk-DQe7vq7ZsBcp4xPmaRuLGiP5fpo"
         },
         {
-          "url": "https://www.commanders.com/news/i-m-the-guy-how-riggins-unlocked-next-level-in-1982-playoffs",
-          "title": "‘I’m the guy’: How Riggins unlocked next level in 1982 playoffs",
-          "publisher": "Washington Commanders",
+          "url": "https://www.vietnam.vn/pt/nhan-dinh-estrela-vs-benfica-co-hoi-bam-duoi-ngoi-dau",
+          "title": "Palpite para Estrela x Benfica: Oportunidade de lutar pela liderança",
+          "publisher": "Vietnam.vn",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS45mqnqK_VulGAJdNp9bM3ik6VionSPfaM95fj-SMLrkPcZJ4LhX16dnUxaXA"
-        }
-      ]
-    },
-    {
-      "query": "mahomes injury",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-08T19:20:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/patrick-mahomes-hurts-elbow-but-returns-before-halftime-chiefs-lead-14-12",
-        "https://www.usatoday.com/story/sports/nfl/chiefs/2026/11/08/patrick-mahomes-injury-update-chiefs-superstar-hurts-arm-vs-jets/92679938007/",
-        "https://www.kmbc.com/article/patrick-mahomes-injury-chiefs-jets-throwing-arm/74369010"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTnrciF4KQFg04tBOyIG3IHATmResIZbU7gedecbAA7Ch1Bz0JRedldbvmdK4",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/patrick-mahomes-hurts-elbow-but-returns-before-halftime-chiefs-lead-14-12",
-          "title": "Patrick Mahomes hurts elbow, but returns before halftime; Chiefs lead 14-12",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTnrciF4KQFg04tBOyIG3IHATmResIZbU7gedecbAA7Ch1Bz0JRedldbvmdK4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZF9crzPKUqopK7_yalTn3KMUD8lNGEmbNC6Sv1cseJuaDIiTSe6kxcxodeA4"
         },
         {
-          "url": "https://www.usatoday.com/story/sports/nfl/chiefs/2026/11/08/patrick-mahomes-injury-update-chiefs-superstar-hurts-arm-vs-jets/92679938007/",
-          "title": "Patrick Mahomes injury update as Chiefs QB leaves game: Live updates",
-          "publisher": "USA Today",
+          "url": "https://www.cmjornal.pt/desporto/futebol/detalhe/conheca-as-escolhas-de-marco-silva-para-o-jogo-contra-o-e-amadora",
+          "title": "Conheça as escolhas de Marco Silva para o jogo contra o E. Amadora",
+          "publisher": "Correio da Manhã",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6hQKXzeaHe8oagEmQFCcVQrBx4nXZusFnVJUl4-Y9-jbZp_tTacy2iC9E4a4"
-        },
-        {
-          "url": "https://www.kmbc.com/article/patrick-mahomes-injury-chiefs-jets-throwing-arm/74369010",
-          "title": "Patrick Mahomes injures right arm, returns to Chiefs game against Jets",
-          "publisher": "KMBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEyV_EXofZuzT_YRL37zxHtcSjM_3GYdJGu4L38lpbR6iCMSEpnYXdwn50tKQ"
-        }
-      ]
-    },
-    {
-      "query": "portland thorns vs washington spirit",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T19:20:00Z",
-      "related_news_urls": [
-        "https://washingtonspirit.com/blog/2026/11/06/know-before-you-go-washington-spirit-vs-portland-thorns-fc-quarterfinals/",
-        "https://sports.yahoo.com/articles/washington-spirit-vs-portland-thorns-182941151.html",
-        "https://wjla.com/good-morning-washington/spirit-ceo-kim-stone-previews-sundays-playoff-fan-experience"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRZNpRrpbbXmj3pmT-plyDp5JhQZrCZYNq3bgaHPHsvSynkXSRLFMFKDQgMec",
-      "image_credit": "Washington Spirit",
-      "news": [
-        {
-          "url": "https://washingtonspirit.com/blog/2026/11/06/know-before-you-go-washington-spirit-vs-portland-thorns-fc-quarterfinals/",
-          "title": "KNOW BEFORE YOU GO: Washington Spirit vs Portland Thorns FC - 2026 NWSL Playoffs Quarterfinal",
-          "publisher": "Washington Spirit",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRZNpRrpbbXmj3pmT-plyDp5JhQZrCZYNq3bgaHPHsvSynkXSRLFMFKDQgMec"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/washington-spirit-vs-portland-thorns-182941151.html",
-          "title": "Washington Spirit vs. Portland Thorns live updates: NWSL playoffs score, highlights",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROCQv2Mksq8ywXcvNHt_bXyPWIKXGROt-asFKOvKTJTl_54EMfcxlatGM7Syk"
-        },
-        {
-          "url": "https://wjla.com/good-morning-washington/spirit-ceo-kim-stone-previews-sundays-playoff-fan-experience",
-          "title": "CEO Kim Stone previews playoff fan experience as Spirit gear up to host Thorns Sunday",
-          "publisher": "WJLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRX7rT0K5T99qO94zXIhHTlpaKDkLnPjBxBGwlGoR1o4t_wzSR6kW0r3AWzSWo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3vcfsl9HX-IeH3TnLGZtpfJrpKodD1nHnK5xTVRripk3FaZyArrSuNs3f3ns"
         }
       ]
     }
