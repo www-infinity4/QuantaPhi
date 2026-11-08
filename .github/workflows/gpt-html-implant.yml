@@ -1,0 +1,70 @@
+name: GPT HTML Implant and priced creator Quick Cards
+on:
+  pull_request:
+    paths:
+      - 'gpt-html-implant*'
+      - 'apps/pi-singer.html'
+      - 'assets/gpt-implant-cover.svg'
+      - 'developer-carousel*'
+      - 'quick-card-builder*'
+      - 'published-quick-card*'
+      - 'quick-card-search*'
+      - 'workers/quick-card-publisher/**'
+      - 'tests/gpt-html-implant.test.mjs'
+      - 'test/gpt-html-implant.browser.spec.mjs'
+      - 'test/quick-card-monetization.test.mjs'
+      - '.github/workflows/gpt-html-implant.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'gpt-html-implant*'
+      - 'apps/pi-singer.html'
+      - 'assets/gpt-implant-cover.svg'
+      - 'workers/quick-card-publisher/**'
+      - '.github/workflows/gpt-html-implant.yml'
+permissions:
+  contents: read
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax checks
+        run: |
+          node --check gpt-html-implant-core.mjs
+          node --check gpt-html-implant.mjs
+          node --check quick-card-builder.js
+          node --check published-quick-card.js
+          node --check quick-card-search-core.mjs
+          node --check quick-card-search.mjs
+          node --check developer-carousel.mjs
+          node --check workers/quick-card-publisher/worker.mjs
+          python3 - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          ET.parse('assets/gpt-implant-cover.svg')
+          text=Path('apps/pi-singer.html').read_text()
+          assert '<canvas id="screen"' in text and 'Pi Singer' in text
+          print('Original Pi Singer and SVG art verified in repository')
+          PY
+      - name: Security, paid gates, publisher and search unit tests
+        run: |
+          node --test tests/gpt-html-implant.test.mjs test/quick-card-monetization.test.mjs test/quick-card-publisher.test.mjs tests/developer-carousel.test.mjs
+  android:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser test dependencies
+        run: |
+          npm install --no-save @playwright/test@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Android source browser checks
+        run: |
+          python3 -m http.server 8799 --bind 127.0.0.1 >/tmp/gpt-html-implant-http.log 2>&1 &
+          npx playwright test test/gpt-html-implant.browser.spec.mjs --reporter=line --workers=1
