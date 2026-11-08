@@ -44,7 +44,10 @@ function workAssetLine(title,asset,unavailable){
  const confirmed=asset?.available===true&&Number.isSafeInteger(asset.credited)&&asset.credited>=0;
  const entry=line(title,confirmed?asset.credited:null);
  const note=document.createElement('small');
- note.textContent=confirmed?(Number.isSafeInteger(asset.pending)?asset.pending+' pending verification':'Confirmed credits'):unavailable;
+ const conditions=[];
+ if(Number.isSafeInteger(asset?.pending)&&asset.pending>=0)conditions.push(asset.pending+' pending verification');
+ if(Number.isSafeInteger(asset?.awaitingSerial)&&asset.awaitingSerial>0)conditions.push(asset.awaitingSerial+' awaiting GIT serial');
+ note.textContent=confirmed?(conditions.join(' · ')||'Confirmed credits'):unavailable;
  entry.append(note);
  return entry;
 }
