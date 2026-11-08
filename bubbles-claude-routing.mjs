@@ -20,9 +20,9 @@ export function routeClaudeTurn(selectedModel,text,hasAttachments=false){
  * Bubbles keeps its original signed work/voice/image/quick-card routes;
  * no model response can bypass those tools or assert completion.
  */
-export function shouldUseClaudeAssistance({selectedModel,ownerVerified,providerPresent,
+export function shouldUseClaudeAssistance({selectedModel,ownerVerified,providerPresent,ownerEnabled,
  embedded,hasAttachments,toolWork,request}={}){
- return selectedModel==='bubbles'&&ownerVerified===true&&providerPresent===true
+ return selectedModel==='bubbles'&&ownerVerified===true&&providerPresent===true&&ownerEnabled===true
   &&embedded!==true&&hasAttachments!==true&&toolWork!==true
   &&typeof request==='string'&&Boolean(request.trim());
 }
