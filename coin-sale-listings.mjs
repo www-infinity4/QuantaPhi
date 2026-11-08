@@ -48,15 +48,45 @@ export function normalizeCoinSaleResults(data,market){
  }
  return rows;
 }
-const REFERENCE=Object.freeze({
- source:'https://commons.wikimedia.org/wiki/File:Coin_slabs.jpg',
- image:'https://commons.wikimedia.org/wiki/Special:FilePath/Coin_slabs.jpg?width=960',
- credit:'Bruxton · Wikimedia Commons · CC0 1.0',
- license:'CC0-1.0',label:'Reference: actual graded coin holders — not a seller listing',
- isListingPhoto:false
+// Each image's author and CC0 dedication were checked against its own
+// Wikimedia Commons file page. These are examples of actual photographed
+// coins/holders, never the specific coin for sale in a seller listing.
+const CC0_REFERENCE_PHOTOS=Object.freeze({
+ vamworld:Object.freeze({
+  source:'https://commons.wikimedia.org/wiki/File:1880_S_Morgan_dollar_from_the_Redfield_Hoard_slabbed_in_a_red_Paramount_holder.jpg',
+  image:'https://commons.wikimedia.org/wiki/Special:FilePath/1880_S_Morgan_dollar_from_the_Redfield_Hoard_slabbed_in_a_red_Paramount_holder.jpg?width=960',
+  credit:'Bruxton · Wikimedia Commons · CC0 1.0',
+  license:'CC0-1.0',
+  label:'Reference: photographed 1880-S Morgan dollar in a Redfield Hoard holder, not an attributed VAM listing',
+  isListingPhoto:false
+ }),
+ pcgs:Object.freeze({
+  source:'https://commons.wikimedia.org/wiki/File:Coin_slabs.jpg',
+  image:'https://commons.wikimedia.org/wiki/Special:FilePath/Coin_slabs.jpg?width=960',
+  credit:'Bruxton · Wikimedia Commons · CC0 1.0',
+  license:'CC0-1.0',
+  label:'Reference: real graded coin holders including PCGS, not an auction lot',
+  isListingPhoto:false
+ }),
+ ngc:Object.freeze({
+  source:'https://commons.wikimedia.org/wiki/File:1902-O_NGC_graded_Morgan_silver_dollar_from_the_Fitzgerald_Collection.jpg',
+  image:'https://commons.wikimedia.org/wiki/Special:FilePath/1902-O_NGC_graded_Morgan_silver_dollar_from_the_Fitzgerald_Collection.jpg?width=960',
+  credit:'Bruxton · Wikimedia Commons · CC0 1.0',
+  license:'CC0-1.0',
+  label:'Reference: photographed 1902-O NGC-graded Morgan dollar, not this listing or a VAM attribution',
+  isListingPhoto:false
+ }),
+ heritage:Object.freeze({
+  source:'https://commons.wikimedia.org/wiki/File:1922_Peace_dollar_from_the_Great_Montana_Collection_graded_and_slabbed_by_NGC.jpg',
+  image:'https://commons.wikimedia.org/wiki/Special:FilePath/1922_Peace_dollar_from_the_Great_Montana_Collection_graded_and_slabbed_by_NGC.jpg?width=960',
+  credit:'Bruxton · Wikimedia Commons · CC0 1.0',
+  license:'CC0-1.0',
+  label:'Reference: photographed 1922 Peace dollar in an NGC holder, not an auction lot',
+  isListingPhoto:false
+ })
 });
 export function referenceCoinImage(cardId){
- return isCoinResearchCard(cardId)?REFERENCE:null;
+ return CC0_REFERENCE_PHOTOS[cardId]||null;
 }
 export function sourceCoinSearch(market,term='Morgan dollar'){
  if(!COIN_MARKETS.some(x=>x.id===market?.id&&x.host===market.host))return null;
