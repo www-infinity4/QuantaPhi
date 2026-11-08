@@ -53,6 +53,8 @@ export function buildCreatorBrief({idea='',specialist='auto',website='',existing
   'Suggested specialty: '+SPECIALISTS[subject].label+'. '+SPECIALISTS[subject].focus,
   'Original website supplied by creator: '+(websiteUrl?websiteUrl.href:'none'),
   'Source-backed public QuantaPhi capability inventory (not live runtime certification):\n'+sourceList,
+  'Public source-context for ChatGPT to read if browsing is enabled: https://quantaphi.org/creator-public-context.json',
+  'Ask GPT to read that public JSON first and check the actual website and source references. This document is a source-level snapshot, not a verified production or private-data API.',
   'Public Quick Card builder: https://quantaphi.org/quick-card-builder.html',
   'QuantaPhi Quick Card contract: https://quantaphi.org/docs/UNIVERSAL-QUICK-CARD-CONTRACT.md',
   'Verified repository source: https://github.com/www-infinity4/QuantaPhi/blob/main/docs/UNIVERSAL-QUICK-CARD-CONTRACT.md',
