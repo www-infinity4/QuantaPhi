@@ -36,8 +36,8 @@ test('GIT Coin reads existing canonical Gitcoin D1 only when verified executor b
  let bound=[],statements=[];
  const gitDb={prepare(sql){statements.push(sql);return{bind(value){bound.push(value);return{async first(){
   if(sql.includes('gitcoin_bubbles_executor'))return value==='owner_a'?{wallet_id:'verified-wallet'}:null;
-  if(sql.includes('gitcoin_awards'))return{n:4};
   if(sql.includes('gitcoin_line_claims'))return{n:2};
+  if(sql.includes('FROM gitcoin_awards'))return{n:4};
   throw Error('invalid_query');
  }}}}}};
  const yes=await readVerifiedWorkAssets({GITCOIN_DB:gitDb,GITCOIN_OWNER_BINDING_ENABLED:'1'},'owner_a');
