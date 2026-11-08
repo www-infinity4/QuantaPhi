@@ -140,7 +140,9 @@ function mountCoinSales(article,card,field){
       const picture=make('figure','premium-coin-lot-photo');
       const image=make('img','premium-coin-lot-image');
       image.alt='Actual seller-authorized coin lot photograph: '+row.title;
-      image.loading='lazy';image.referrerPolicy='no-referrer';
+      image.loading='eager';image.referrerPolicy='no-referrer';
+      // Only one selected lot photo exists. Request it even below the fold so
+      // a refused merchant hotlink cannot leave a permanent empty panel.
       image.addEventListener('error',()=>picture.remove(),{once:true});
       image.src=row.image;
       const credit=make('figcaption','',row.imageCredit+' · ');
