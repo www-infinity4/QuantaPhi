@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {parseBranchStatusQuery,describeAuthenticatedBranchStatus} from '../bubbles-branch-status.mjs';
+import {parseBranchStatusQuery,describeAuthenticatedBranchStatus,isVerifiedBranchReadReceipt} from '../bubbles-branch-status.mjs';
 
 test('explicit Chiller branch-status request routes to owner-scoped GitHub read, not the model',()=>{
  const examples=[
@@ -83,4 +83,28 @@ test('Bubbles passes only its current-thread saved work-ticket pointer to status
  const branchFlow=src.slice(start,end);
  assert.match(branchFlow,/recentWorkRef\(receiptThread\)/);
  assert.match(branchFlow,/conversationTicketId/);
+});
+
+test('branch receipt is only confirmed for exact requested repo/ref and durable result evidence',()=>{
+ const q={repository:'www-infinity4/Chiller',branch:'add-full-episodes'};
+ const data={ok:true,status:'branch_not_found',...q,repositoryId:1367499788,exists:false,headSha:null,
+  jobExecutionVerified:false,deploymentVerified:false};
+ const proof={id:'branch_11111111111111111111111111111111',tool:'github.read_branch_status',
+  status:'complete',persisted:true,...q,repositoryId:1367499788,exists:false,headSha:null,
+  jobExecutionVerified:false,deploymentVerified:false};
+ assert.equal(isVerifiedBranchReadReceipt(q,{...data,readReceipt:proof}),true);
+ assert.equal(isVerifiedBranchReadReceipt(q,{...data,readReceipt:{...proof,persisted:false}}),false);
+ assert.equal(isVerifiedBranchReadReceipt(q,{...data,readReceipt:{...proof,repository:'www-infinity4/QuantaPhi'}}),false);
+ assert.equal(isVerifiedBranchReadReceipt(q,{...data,readReceipt:{...proof,branch:'main'}}),false);
+ assert.equal(isVerifiedBranchReadReceipt(q,{...data,readReceipt:{...proof,repositoryId:999}}),false);
+ assert.equal(isVerifiedBranchReadReceipt(q,{...data,readReceipt:{...proof,exists:true}}),false);
+ assert.equal(isVerifiedBranchReadReceipt(q,{...data,repository:'www-infinity4/QuantaPhi',readReceipt:proof}),false);
+ assert.equal(isVerifiedBranchReadReceipt(q,{...data,readReceipt:{...proof,id:'synthetic'}}),false);
+ assert.equal(isVerifiedBranchReadReceipt(q,{...data,status:'branch_found',exists:true,headSha:'a'.repeat(40),
+  readReceipt:{...proof,exists:true,headSha:'a'.repeat(40)}}),true);
+});
+test('chat only displays a confirmed Bubbles tool iteration when receipt identity and durability validate',()=>{
+ const src=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ assert.match(src,/isVerifiedBranchReadReceipt\(branchStatusQuery,branchRead\)/);
+ assert.doesNotMatch(src,/const verified=proof\?\.tool==='github\.read_branch_status'&&proof\.status==='complete'/);
 });
