@@ -2474,7 +2474,9 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     emitRead({type:'tool_receipt',status:'failed',detail:'Authenticated branch read failed'});
     readStatus='GitHub branch read unavailable · no runner outcome confirmed';
    }finally{
-    if(ownerReady&&receiptThread===activeThread){
+    if(receiptThread===activeThread){
+     // Even a missing/expired owner grant needs a visible, safe failure reply.
+     // An owner switch never exposes the old readback: it is rejected above.
      appendGithubReport(answer,receiptThread);status.textContent=readStatus;
      if(nativeOverlay&&nativeSpeechPending)nativeSpeechReply=answer;
      else if(config.voice&&!nativeOverlay)speakText(answer);
