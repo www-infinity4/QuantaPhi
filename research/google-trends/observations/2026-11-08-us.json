@@ -3,188 +3,118 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-08T15:01:26.676963Z",
+  "checked_at": "2026-11-08T15:30:46.114179Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "barcelona - madrid",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T14:40:00Z",
+      "query": "rams vs commanders",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T15:10:00Z",
       "related_news_urls": [
-        "https://okdiario.com/economia/precios-alta-velocidad-renfe-desploman-temor-tragedia-ya-hay-billetes-apenas-7-euros-20676051",
-        "https://actualidadvalencia.com/ave-valencia-madrid-billetes-15-euros-urda/",
-        "https://www.sirchandler.com.ar/2026/11/fuerte-baja-de-los-precios-y-la-demanda-en-los-trenes-espanoles/"
+        "https://www.therams.com/news/top-rams-news-previews-and-predictions-for-rams-at-commanders-on-sunday-at-northwest-stadium-for-week-9-2026",
+        "https://www.latimes.com/sports/rams/live/rams-washington-commanders-live-updates-start-time-watch-odds-score-highlights",
+        "https://www.hogshaven.com/washington-commanders-analysis/453825/washington-commanders-rams-nfl-week-9-stefon-diggs-klavon-chaisson"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1X101jh-xjhc37FD6v9tI-v0eotcHACrcYKNG9RkY8d4hAFiwSYBR_N6ceK4",
-      "image_credit": "OkDiario",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7RF6csOk5LNN3YH8o2YrzEU8RyYF7WD8pb0A-i_wfm17ik-iziJ0RV3_U09o",
+      "image_credit": "Rams",
       "news": [
         {
-          "url": "https://okdiario.com/economia/precios-alta-velocidad-renfe-desploman-temor-tragedia-ya-hay-billetes-apenas-7-euros-20676051",
-          "title": "Los precios de la Alta Velocidad de Renfe se desploman por el temor tras la tragedia: ya hay billetes por a...",
-          "publisher": "OkDiario",
+          "url": "https://www.therams.com/news/top-rams-news-previews-and-predictions-for-rams-at-commanders-on-sunday-at-northwest-stadium-for-week-9-2026",
+          "title": "Top Rams News: Previews and predictions for Rams at Commanders on Sunday at Northwest Stadium for Week 9",
+          "publisher": "Rams",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1X101jh-xjhc37FD6v9tI-v0eotcHACrcYKNG9RkY8d4hAFiwSYBR_N6ceK4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7RF6csOk5LNN3YH8o2YrzEU8RyYF7WD8pb0A-i_wfm17ik-iziJ0RV3_U09o"
         },
         {
-          "url": "https://actualidadvalencia.com/ave-valencia-madrid-billetes-15-euros-urda/",
-          "title": "La tragedia de Urda sacude la confianza en la alta velocidad: Valencia a Madrid desde 15 euros y plazas libres",
-          "publisher": "Actualidad Valencia",
+          "url": "https://www.latimes.com/sports/rams/live/rams-washington-commanders-live-updates-start-time-watch-odds-score-highlights",
+          "title": "Rams vs. Commanders: Live updates, start time, how to watch and odds",
+          "publisher": "Los Angeles Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSrn1nGWngtYtJYz7iHCcm6Gz7fraUtffe0SLBrxy7DYgraV74E2AD7-Jgfk4A"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQe9ZcT3Ji1B1d9NtDEKpWGT0ypPhoOm6aWdnW8S6Ot1aFzluCVSiLIkRU2nUk"
         },
         {
-          "url": "https://www.sirchandler.com.ar/2026/11/fuerte-baja-de-los-precios-y-la-demanda-en-los-trenes-espanoles/",
-          "title": "Fuerte baja de los precios y la demanda en los trenes españoles",
-          "publisher": "Sir Chandler",
+          "url": "https://www.hogshaven.com/washington-commanders-analysis/453825/washington-commanders-rams-nfl-week-9-stefon-diggs-klavon-chaisson",
+          "title": "Five Washington Commanders players key to beating Rams in NFL Week 9",
+          "publisher": "Hogs Haven",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCl_KX51clPGpjXLDtY6oMsiTZHdC-uiFnEO4pdpqsVqeXBT5XJBOiEx56YGQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhB4mSKsQBZK80mBwOEfWpbGYjJdm6mH01V-kSOLES41AVFOuqQEqze51rIgA"
         }
       ]
     },
     {
-      "query": "kyle pitts",
+      "query": "nick folk",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-08T15:00:00Z",
+      "related_news_urls": [
+        "https://www.wusa9.com/video/sports/locked-on/lo-atlanta/locked-on-falcons-hit/critical-nick-folk-is-kicking-for-his-job-the-falcons-big-decision/535-3fe63048-c6f7-46b9-8938-cbc226fd14be",
+        "https://www.si.com/nfl/falcons/onsi/falcons-hope-nick-folk-can-end-frustrating-history-at-kicker",
+        "https://www.thefantasyfootballers.com/news/645743/nick-folk-misses-only-field-goal-attempt/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpT9E_wvHeTahbuQ8sT-DRB546fY2Bpr-YE7GuCkpcI5N0mvLMkEuNCyLGt1g",
+      "image_credit": "WUSA9",
+      "news": [
+        {
+          "url": "https://www.wusa9.com/video/sports/locked-on/lo-atlanta/locked-on-falcons-hit/critical-nick-folk-is-kicking-for-his-job-the-falcons-big-decision/535-3fe63048-c6f7-46b9-8938-cbc226fd14be",
+          "title": "CRITICAL: Nick Folk Is Kicking for His Job: The Falcons' Big Decision",
+          "publisher": "WUSA9",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpT9E_wvHeTahbuQ8sT-DRB546fY2Bpr-YE7GuCkpcI5N0mvLMkEuNCyLGt1g"
+        },
+        {
+          "url": "https://www.si.com/nfl/falcons/onsi/falcons-hope-nick-folk-can-end-frustrating-history-at-kicker",
+          "title": "Falcons Hope Nick Folk Can End Frustrating History at Kicker",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8RU31mi5_SqFRAXRoQCv918P6NYrBvjnuFb5CJipFpQwgPEOkukrDDefcx1M"
+        },
+        {
+          "url": "https://www.thefantasyfootballers.com/news/645743/nick-folk-misses-only-field-goal-attempt/",
+          "title": "Nick Folk Misses only field-goal attempt",
+          "publisher": "Fantasy Footballers Podcast",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTZO36MpY67vuCS5TIiS-eQlcD2l3_Ku9-491MMu2f91MSe0Lbe0O0w19YjIU"
+        }
+      ]
+    },
+    {
+      "query": "dame judi dench",
       "approx_searches": "500+",
-      "published_at": "2026-11-08T14:40:00Z",
+      "published_at": "2026-11-08T15:00:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/kyle-pitts-start-sit-week-093300228.html",
-        "https://www.fantasypros.com/nfl/notes/488477/kyle-pitts-2026-week-9-outlook.php",
-        "https://fantasyfootballcalculator.com/start/kyle-pitts-sr.-or-zach-charbonnet"
+        "https://www.cbsnews.com/news/judi-dench-is-it-too-late-to-make-a-run-for-it/",
+        "https://www.cbsnews.com/video/extended-interview-dame-judi-dench-and-brendan-ohea/",
+        "https://ew.com/judi-dench-told-she-would-never-star-film-because-her-face-was-wrong-12198898"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMdSsnt0Fhh0649BbYX-ehJB4tFyId4-hggl0bnhFynHQUurzKeioHUXekfBU",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv4u3eV8gi-NXHIxEAph9OWOhDxxjbwrRQSiw7YFfCkaj1IKH98mptwYz2Vc0",
+      "image_credit": "CBS News",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/kyle-pitts-start-sit-week-093300228.html",
-          "title": "Kyle Pitts Start or Sit for Week 9: Falcons TE Draws a Bengals Defense Missing Kyle Dugger",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.cbsnews.com/news/judi-dench-is-it-too-late-to-make-a-run-for-it/",
+          "title": "Judi Dench on an actor's life",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMdSsnt0Fhh0649BbYX-ehJB4tFyId4-hggl0bnhFynHQUurzKeioHUXekfBU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv4u3eV8gi-NXHIxEAph9OWOhDxxjbwrRQSiw7YFfCkaj1IKH98mptwYz2Vc0"
         },
         {
-          "url": "https://www.fantasypros.com/nfl/notes/488477/kyle-pitts-2026-week-9-outlook.php",
-          "title": "Kyle Pitts Sr. Week 9 Outlook - Bengals at Falcons",
-          "publisher": "FantasyPros",
+          "url": "https://www.cbsnews.com/video/extended-interview-dame-judi-dench-and-brendan-ohea/",
+          "title": "Extended interview: Dame Judi Dench and Brendan O'Hea",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUn1oskZhuNuvechv5o-tiHNroUIjArjXgt7Y1sKGT0BE-y71lJDPk_WCi3O0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFpiMxtihZjuBSt-nnYF11PPf8BNq-0VVy9Q3NKMVFvBAyNzZ0gC7XIcxE5b0"
         },
         {
-          "url": "https://fantasyfootballcalculator.com/start/kyle-pitts-sr.-or-zach-charbonnet",
-          "title": "Who Should I Start? Kyle Pitts Sr. or Zach Charbonnet",
-          "publisher": "Fantasy Football Calculator",
+          "url": "https://ew.com/judi-dench-told-she-would-never-star-film-because-her-face-was-wrong-12198898",
+          "title": "Judi Dench says ‘big Hollywood producer’ told her she’d never make a film because of her face",
+          "publisher": "Entertainment Weekly",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdVcc7Z03JFfDy809yBmPTP1QFmnvVdNhMG9OHwTI6uZYK09zBWRTlMibOEB0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWubx25ROGKIJriPKPwqucu8SXvNmab6w82LLGZPzbZMCtCOvR7sGoaL1UKbI"
         }
       ]
     },
     {
-      "query": "premier league table",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-08T14:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/recap/_/gameId/401864535",
-        "https://www.espn.com/soccer/team-stats/_/gameId/401879243/league/eng.1",
-        "https://www.espn.com/video/clip/_/id/50359520"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPdt7HbTaxTbWJQ6q8ZLTlcZzHLnubCk2HYh5LA2V2BB-MQm3MV3UIMv_TLww",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/recap/_/gameId/401864535",
-          "title": "Wyoming 41-35 UNLV (Nov 7, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPdt7HbTaxTbWJQ6q8ZLTlcZzHLnubCk2HYh5LA2V2BB-MQm3MV3UIMv_TLww"
-        },
-        {
-          "url": "https://www.espn.com/soccer/team-stats/_/gameId/401879243/league/eng.1",
-          "title": "C Palace vs. Liverpool (Nov 8, 2026) Team Stats",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3GpFdHjFk6k8p_dCXU_3oG_5HhjP4XpUGFLaylQd_1mIJXtFNb5oH9zDrBqk"
-        },
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50359520",
-          "title": "Jerzy Robinson's lob attempt ends up going in for a South Carolina trey",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9O25BkRWrR-cIc09eDWjgikXp0r7lIlmEjMuT54ECEgQtQym7-RIsg6YzPAo"
-        }
-      ]
-    },
-    {
-      "query": "james pearce jr",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T14:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/james-pearce-jr-active-atlanta-141144482.html",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/falcons-activate-james-pearce-yasir-abdullah",
-        "https://www.profootballrumors.com/2026/11/falcons-activate-two-from-ir-return-olb-james-pearce-from-suspension"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaYKqbi0uXhC0vtA4Nw70becHdpo2dQnAJ0hhr2XaFpnNMcf_6h4ayRNOgD3o",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/james-pearce-jr-active-atlanta-141144482.html",
-          "title": "James Pearce Jr. active for Atlanta Falcons' game against the Cincinnati Bengals in Madrid",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaYKqbi0uXhC0vtA4Nw70becHdpo2dQnAJ0hhr2XaFpnNMcf_6h4ayRNOgD3o"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/falcons-activate-james-pearce-yasir-abdullah",
-          "title": "Falcons activate James Pearce, Yasir Abdullah",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXt7xbjdLRddCRUMTL9jyPNbZ5nJaMXhCMEGdA22moTxwyEyapyX6XSeVvS9Q"
-        },
-        {
-          "url": "https://www.profootballrumors.com/2026/11/falcons-activate-two-from-ir-return-olb-james-pearce-from-suspension",
-          "title": "Falcons Activate Two From IR, Return OLB James Pearce From Suspension",
-          "publisher": "ProFootballRumors.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXtPHH2uY9PPMFQT4Gd8YQm-r6mBA5FxyEIbszkXwZ42uHQwUgY4AqIONpttA"
-        }
-      ]
-    },
-    {
-      "query": "the altruists netflix",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T14:40:00Z",
-      "related_news_urls": [
-        "https://www.reutersconnect.com/item/netflix-fysee-the-fall-edit-2026-nobody-wants-this-season-3-la/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUFCQ1BSMTAyNjY0NTAzMg",
-        "https://www.wvnews.com/newsfeed/world/new-zealand-election/image_f7a24825-d876-5214-ae3d-956ebd0c6119.html",
-        "https://www.guardonline.com/news/national/nobody-wants-this-fyc-event/image_963e2ead-24a6-5c31-baf6-5015d9ff914d.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZyKikxtgVbomw17VA6SXtZ9Y-453j9rIozzeDvMQdMu3kee3uVUajsbvV74Q",
-      "image_credit": "Reuters Connect",
-      "news": [
-        {
-          "url": "https://www.reutersconnect.com/item/netflix-fysee-the-fall-edit-2026-nobody-wants-this-season-3-la/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUFCQ1BSMTAyNjY0NTAzMg",
-          "title": "Licensable picture: Netflix FYSEE The Fall Edit 2026 - Nobody Wants This Season 3 - LA",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZyKikxtgVbomw17VA6SXtZ9Y-453j9rIozzeDvMQdMu3kee3uVUajsbvV74Q"
-        },
-        {
-          "url": "https://www.wvnews.com/newsfeed/world/new-zealand-election/image_f7a24825-d876-5214-ae3d-956ebd0c6119.html",
-          "title": "New Zealand Election",
-          "publisher": "WV News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvs_zcS-C20zCQGM03hCvjUA83khs0c06R2pp26M-soY4G5K7wVqaK0zcjEVo"
-        },
-        {
-          "url": "https://www.guardonline.com/news/national/nobody-wants-this-fyc-event/image_963e2ead-24a6-5c31-baf6-5015d9ff914d.html",
-          "title": "\"Nobody Wants This\" FYC Event",
-          "publisher": "The Batesville Daily Guard",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPJ4P2-JSDhCO_4Byjw3Mpi1BD-G61sKd9AB2mJwwFlo9e_EXV54IzPADvYRc"
-        }
-      ]
-    },
-    {
-      "query": "weather houston",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T14:40:00Z",
+      "query": "houston weather",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T15:00:00Z",
       "related_news_urls": [
         "https://www.fox26houston.com/weather/houston-weather-sunday-rain-ahead-midweek-cold-front",
         "https://www.yahoo.com/news/weather-news/articles/houston-weather-rain-likely-sunday-110000229.html",
@@ -217,142 +147,212 @@
       ]
     },
     {
-      "query": "barcelona vs madrid cff",
+      "query": "joe burrow girlfriend",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T14:50:00Z",
+      "related_news_urls": [
+        "https://www.thebiglead.com/joe-burrow-model-girlfriend-olivia-ponton-vacation-photos-madrid/",
+        "https://www.yahoo.com/entertainment/articles/joe-burrow-gf-olivia-ponton-145254299.html",
+        "https://www.marca.com/en/lifestyle/2026/11/03/olivia-ponton-joe-burrow-s-partner-reveals-health-issue-and-is-considering-surgery.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIGkOCh7lBmT8hbBQXn1hkUmWbp3mR6aKzqxnPfx4HikLTWyE7dlFr3tC_q-0",
+      "image_credit": "The Big Lead",
+      "news": [
+        {
+          "url": "https://www.thebiglead.com/joe-burrow-model-girlfriend-olivia-ponton-vacation-photos-madrid/",
+          "title": "Joe Burrow's model girlfriend Olivia Ponton causes a stir with vacation photos",
+          "publisher": "The Big Lead",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIGkOCh7lBmT8hbBQXn1hkUmWbp3mR6aKzqxnPfx4HikLTWyE7dlFr3tC_q-0"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/articles/joe-burrow-gf-olivia-ponton-145254299.html",
+          "title": "Joe Burrow’s GF Olivia Ponton Contemplating ‘Surgery’ After Being Diagnosed With Health Condition",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJJMH-VEuSFvMV2CQWJIgB6inuKPvXnFIKr-EZT6pmro2PaDXnoG04MzATXjg"
+        },
+        {
+          "url": "https://www.marca.com/en/lifestyle/2026/11/03/olivia-ponton-joe-burrow-s-partner-reveals-health-issue-and-is-considering-surgery.html",
+          "title": "Olivia Ponton, Joe Burrow's partner, reveals a health issue and is considering surgery",
+          "publisher": "MARCA",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT80xyx2GhCU73vxa_u54tvjt3DV7E20SkrLb_s1ctq3qiRbcMXq-DZjJdpoJo"
+        }
+      ]
+    },
+    {
+      "query": "real madrid stadium",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T14:50:00Z",
+      "related_news_urls": [
+        "https://www.ajc.com/sports/2026/11/postcard-from-madrid-ken-sugiura-falcons/",
+        "https://www.ajc.com/sports/2026/11/falcons-in-madrid-tour-of-bernabeu-stadium/",
+        "https://www.ajc.com/sports/2026/11/win-column-mi-casa-es-su-casa/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ2z_Bw8H0vQCeQ3qHbApQz1IhqTyDQixlOyv2tdd_V6ILwQL1DW3R93de3WE",
+      "image_credit": "The Atlanta Journal-Constitution",
+      "news": [
+        {
+          "url": "https://www.ajc.com/sports/2026/11/postcard-from-madrid-ken-sugiura-falcons/",
+          "title": "Ken Sugiura: Postcard from Madrid includes Tim Hortons and Taco Bell",
+          "publisher": "The Atlanta Journal-Constitution",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ2z_Bw8H0vQCeQ3qHbApQz1IhqTyDQixlOyv2tdd_V6ILwQL1DW3R93de3WE"
+        },
+        {
+          "url": "https://www.ajc.com/sports/2026/11/falcons-in-madrid-tour-of-bernabeu-stadium/",
+          "title": "Ken Sugiura: Postcard from Madrid: My grand tour of fabled Bernabéu Stadium",
+          "publisher": "The Atlanta Journal-Constitution",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTWoJTZ4J6wpZl_m0SMQLbQXZ5FuupJx6FyT4wFK2BUjwJVLOEpGVKpfY3ITo"
+        },
+        {
+          "url": "https://www.ajc.com/sports/2026/11/win-column-mi-casa-es-su-casa/",
+          "title": "The Win Column: Su casa es mi casa",
+          "publisher": "The Atlanta Journal-Constitution",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0ikYryGgVrTaQfijx1hFgmWMczgU3gkw9Tolih9QE0Dh0zhcDzZuYKRvWf3k"
+        }
+      ]
+    },
+    {
+      "query": "jets vs chiefs",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T14:50:00Z",
+      "related_news_urls": [
+        "https://www.arrowheadpride.com/kansas-city-chiefs-game-information/215517/chiefs-vs-jets-week-9-live-sream-tv-channel-schedule-odds-how-to-watch-online",
+        "https://sports.yahoo.com/videos/chiefs-closing-problem-solve-vs-150302840.html",
+        "https://www.ganggreennation.com/new-york-jets-news/98296/new-york-jets-news-jets-look-to-end-losing-streak-against-the-kansas-city-chiefs"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTix4SkOgqGV_Nrq3xtZTtNjmfP2V1WCTOzLucgh1vbY6QuezLEhNyT3JY1wWw",
+      "image_credit": "Arrowhead Pride",
+      "news": [
+        {
+          "url": "https://www.arrowheadpride.com/kansas-city-chiefs-game-information/215517/chiefs-vs-jets-week-9-live-sream-tv-channel-schedule-odds-how-to-watch-online",
+          "title": "How to watch Chiefs-Jets Week 9: live stream, start time and more",
+          "publisher": "Arrowhead Pride",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTix4SkOgqGV_Nrq3xtZTtNjmfP2V1WCTOzLucgh1vbY6QuezLEhNyT3JY1wWw"
+        },
+        {
+          "url": "https://sports.yahoo.com/videos/chiefs-closing-problem-solve-vs-150302840.html",
+          "title": "Chiefs Have A Closing Problem They Need To Solve vs. Jets",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLSOII7q_LSoT8IbGk1eDnSn8LZ6KH38ynl03c3lT38P7ZkCbRaUnvaK62ZN4"
+        },
+        {
+          "url": "https://www.ganggreennation.com/new-york-jets-news/98296/new-york-jets-news-jets-look-to-end-losing-streak-against-the-kansas-city-chiefs",
+          "title": "New York Jets Flight Connections 11/08/26",
+          "publisher": "Gang Green Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSI5MThky7U1gqpBN0anMmPfkYtAGGJIapBwuM86WnBP2saqFDyU2TY48NH8fA"
+        }
+      ]
+    },
+    {
+      "query": "is cam skattebo playing this week",
       "approx_searches": "200+",
+      "published_at": "2026-11-08T14:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50402162/giants-cam-skattebo-doubtful-vs-eagles-nabers-full-go",
+        "https://www.giants.com/news/giants-vs-eagles-week-9-injury-report-cam-skattebo-abdul-carter",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/schefter-skattebo-hamstring-is-pushing-to-play"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNdJl-qvHdK52EEts4x9G55YTuAWmWdDBcEEsQFnwBKpgX11MjR4RymJgV62E",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50402162/giants-cam-skattebo-doubtful-vs-eagles-nabers-full-go",
+          "title": "Giants' Cam Skattebo doubtful vs. Eagles; Malik Nabers 'full go'",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNdJl-qvHdK52EEts4x9G55YTuAWmWdDBcEEsQFnwBKpgX11MjR4RymJgV62E"
+        },
+        {
+          "url": "https://www.giants.com/news/giants-vs-eagles-week-9-injury-report-cam-skattebo-abdul-carter",
+          "title": "Giants vs. Eagles Week 9 Injury Report: Cam Skattebo doubtful, Charlie Jones questionable",
+          "publisher": "Giants.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4Yc2GCtqxYIPY66ouGIj6zKUtGCKWaPFe2uibMnafpW-dWeXDUFZd425Bo6o"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/schefter-skattebo-hamstring-is-pushing-to-play",
+          "title": "Schefter: Skattebo (hamstring) is pushing to play",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQw-dUjwCWIz9cjt-YkVqf7Y5c-MquAKRmHdTXN7VvQCct6sVhd63YbCbhYM98"
+        }
+      ]
+    },
+    {
+      "query": "charlie woerner",
+      "approx_searches": "20000+",
       "published_at": "2026-11-08T14:40:00Z",
       "related_news_urls": [
-        "https://www.dazn.com/es-ES/news/futbol/fc-barcelona-madrid-cff-horario-donde-ver-tv-online-liga-f-202627-dazn/zana4qtpel5u1cjyiytx8oadw",
-        "https://www.sport.es/es/noticias/barca/barca-pone-prueba-tercer-clasificado-136196758",
-        "https://cronicaglobal.elespanol.com/culemania/secciones/20261107/barca-femenino-esperados-pere-romeu-champions-league/1003742810001_0.html"
+        "https://www.nfl.com/news/nfl-week-9-inactives-players-ruled-out-sunday-2026-season",
+        "https://nypost.com/2026/11/06/sports/raiders-run-defense-faces-big-time-49ers-test/",
+        "https://www.espn.com/nfl/recap/_/gameId/401873029"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCiVYX2jg_fC6TSWeqPnwsyDqX6lb5exI-mZw70vNpzFA0F-ypHbPvncFF5_I",
-      "image_credit": "DAZN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR07LR2VqDFi43kxHvZJ9SvnoiKo6ulGJq_QCbzDFhBvwiB9ckTV5wIIsv7i_w",
+      "image_credit": "NFL.com",
       "news": [
         {
-          "url": "https://www.dazn.com/es-ES/news/futbol/fc-barcelona-madrid-cff-horario-donde-ver-tv-online-liga-f-202627-dazn/zana4qtpel5u1cjyiytx8oadw",
-          "title": "FC Barcelona vs Madrid CFF: horario y dónde ver hoy por TV y online Liga F 2026/27 a través de DAZN",
-          "publisher": "DAZN",
+          "url": "https://www.nfl.com/news/nfl-week-9-inactives-players-ruled-out-sunday-2026-season",
+          "title": "NFL Week 9 inactives: Players ruled out for Sunday's 13 games",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCiVYX2jg_fC6TSWeqPnwsyDqX6lb5exI-mZw70vNpzFA0F-ypHbPvncFF5_I"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR07LR2VqDFi43kxHvZJ9SvnoiKo6ulGJq_QCbzDFhBvwiB9ckTV5wIIsv7i_w"
         },
         {
-          "url": "https://www.sport.es/es/noticias/barca/barca-pone-prueba-tercer-clasificado-136196758",
-          "title": "El Barça pone a prueba al tercer clasificado antes del Arsenal con Serrajordi",
-          "publisher": "SPORT",
+          "url": "https://nypost.com/2026/11/06/sports/raiders-run-defense-faces-big-time-49ers-test/",
+          "title": "49ers won’t let Raiders off hook after Jets’ inexplicable unforced error",
+          "publisher": "New York Post",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREVLXBv_sU7jZ-2dgdlJVQFg96letgj84ueBw1e8yla2ebbk7G7Ba8VQnojz8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLMdZew9r4mUtyzKwdTNK3JGKMHqfV9IbR1sKgJvVfuwg5u10IiTNr-W__CaU"
         },
         {
-          "url": "https://cronicaglobal.elespanol.com/culemania/secciones/20261107/barca-femenino-esperados-pere-romeu-champions-league/1003742810001_0.html",
-          "title": "Los dos fichajes del Barça Femenino más esperados por Pere Romeu para la Champions League",
-          "publisher": "Crónica Global",
+          "url": "https://www.espn.com/nfl/recap/_/gameId/401873029",
+          "title": "Raiders 38-33 Jets (Nov 1, 2026) Game Recap",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdIBCCwNF3r2BVMVS9H8ewvkL7rxLrBXIUp8Fk3uiA_NuH4DvvNH6-fa7GryU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5rjhuFTf6SNp89hpw1dRcgraF9NswX4nJXkYlMdwdcNCA3-qlYP9kG0R2jRk"
         }
       ]
     },
     {
-      "query": "rennes vs losc",
-      "approx_searches": "200+",
+      "query": "barcelona - madrid",
+      "approx_searches": "5000+",
       "published_at": "2026-11-08T14:40:00Z",
       "related_news_urls": [
-        "https://lepetitlillois.com/2026/11/08/ia-opta-croit-pas-stade-rennais-losc/",
-        "https://www.lequipe.fr/Football/Actualites/Compositions-de-rennes-lille-en-ligue-1-eliezer-mayenda-et-calvin-verdonk-titulaires/1742207",
-        "https://www.flashscore.fr/actualites/sans-esteban-lepaul-l-attaque-est-elle-le-point-faible-du-stade-rennais/ldPOvlqA/"
+        "https://as.com/futbol/internacional/crystal-palace-liverpool-en-directo-premier-league-hoy-en-vivo-f202611-n/",
+        "https://es-us.noticias.yahoo.com/deportes/sunderland-chelsea-xabi-alonso-deja-131200496.html",
+        "https://onefootball.com/es/noticias/regis-le-bris-alinea-a-talbi-sunderland-recibe-al-chelsea-mukiele-apto-43746325"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjNQU6N183tGeBUIfA28u9hFEYsDkY683GI1IRlKtWNP725JIgLSfR2pMKvo0",
-      "image_credit": "Le Petit Lillois",
-      "news": [
-        {
-          "url": "https://lepetitlillois.com/2026/11/08/ia-opta-croit-pas-stade-rennais-losc/",
-          "title": "Le LOSC favori contre Rennes ? L'IA d'Opta n'est pas d'accord sur cet avis",
-          "publisher": "Le Petit Lillois",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjNQU6N183tGeBUIfA28u9hFEYsDkY683GI1IRlKtWNP725JIgLSfR2pMKvo0"
-        },
-        {
-          "url": "https://www.lequipe.fr/Football/Actualites/Compositions-de-rennes-lille-en-ligue-1-eliezer-mayenda-et-calvin-verdonk-titulaires/1742207",
-          "title": "Compositions de Rennes-Lille en Ligue 1 : Eliezer Mayenda et Calvin Verdonk titulaires",
-          "publisher": "L'Équipe",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrySZyNqfdr0p2Inivl9QSjvL3jDdJuLClmlkAfjzNkfdumPCUrEQpMu5miyI"
-        },
-        {
-          "url": "https://www.flashscore.fr/actualites/sans-esteban-lepaul-l-attaque-est-elle-le-point-faible-du-stade-rennais/ldPOvlqA/",
-          "title": "Ligue 1 : Sans Estéban Lepaul, l'attaque est-elle le point faible du Stade Rennais",
-          "publisher": "Flashscore.fr",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFGWdOrkxsAxrBarMbr8zLXxZf0HAKHm5_7cjFtXqPGY5ufNKN0LNh1x5Qfus"
-        }
-      ]
-    },
-    {
-      "query": "julia garner",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T14:30:00Z",
-      "related_news_urls": [
-        "https://people.com/star-tracks-sunday-november-8-2026-new-celebrity-photos-updated-daily-12242559",
-        "https://www.reutersconnect.com/item/netflix-fysee-the-fall-edit-2026-nobody-wants-this-season-3-la/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUFCQ1BSMTAyNjY0NTAzMg",
-        "https://www.wvnews.com/newsfeed/world/new-zealand-election/image_f7a24825-d876-5214-ae3d-956ebd0c6119.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsZJTDmbwcoqCDRox53f2O2NaCUvtPAJYTGJCijmIInyHwj-LGE5gD-oQw75U",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/star-tracks-sunday-november-8-2026-new-celebrity-photos-updated-daily-12242559",
-          "title": "Julia Garner Glows at an FYC Event in L.A., Plus Usher and More",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsZJTDmbwcoqCDRox53f2O2NaCUvtPAJYTGJCijmIInyHwj-LGE5gD-oQw75U"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/netflix-fysee-the-fall-edit-2026-nobody-wants-this-season-3-la/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUFCQ1BSMTAyNjY0NTAzMg",
-          "title": "Licensable picture: Netflix FYSEE The Fall Edit 2026 - Nobody Wants This Season 3 - LA",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZyKikxtgVbomw17VA6SXtZ9Y-453j9rIozzeDvMQdMu3kee3uVUajsbvV74Q"
-        },
-        {
-          "url": "https://www.wvnews.com/newsfeed/world/new-zealand-election/image_f7a24825-d876-5214-ae3d-956ebd0c6119.html",
-          "title": "New Zealand Election",
-          "publisher": "WV News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvs_zcS-C20zCQGM03hCvjUA83khs0c06R2pp26M-soY4G5K7wVqaK0zcjEVo"
-        }
-      ]
-    },
-    {
-      "query": "carlos alcaraz",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T14:30:00Z",
-      "related_news_urls": [
-        "https://as.com/tenis/masters_1000/carlos-alcaraz-ben-shelton-hoy-en-directo-final-del-masters-1000-de-paris-ultima-hora-en-vivo-f202611-d/",
-        "https://www.chicagotribune.com/2026/11/07/alcaraz-busca-revancha-y-se-medir-ante-shelton-en-la-final-del-masters-de-pars/",
-        "https://elpais.com/deportes/tenis/2026-11-07/alcaraz-implacable-ante-ruud-y-por-primera-vez-finalista-en-paris.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQud0sk7947lapExCFexwQ1rkMHkms0s36RkCPhaZ3agt-jUfEwei2cl44YFcI",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXYsRpw2PpXlXkDWnC3EmcDpvIkcu1LWmgchy30dunitmYxkq9udJ2dI6q8Cc",
       "image_credit": "Diario AS",
       "news": [
         {
-          "url": "https://as.com/tenis/masters_1000/carlos-alcaraz-ben-shelton-hoy-en-directo-final-del-masters-1000-de-paris-ultima-hora-en-vivo-f202611-d/",
-          "title": "Carlos Alcaraz - Ben Shelton hoy, en directo: final del Masters 1.000 de París, última hora en vivo",
+          "url": "https://as.com/futbol/internacional/crystal-palace-liverpool-en-directo-premier-league-hoy-en-vivo-f202611-n/",
+          "title": "Crystal Palace - Liverpool, en directo: Premier League, hoy en vivo",
           "publisher": "Diario AS",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQud0sk7947lapExCFexwQ1rkMHkms0s36RkCPhaZ3agt-jUfEwei2cl44YFcI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXYsRpw2PpXlXkDWnC3EmcDpvIkcu1LWmgchy30dunitmYxkq9udJ2dI6q8Cc"
         },
         {
-          "url": "https://www.chicagotribune.com/2026/11/07/alcaraz-busca-revancha-y-se-medir-ante-shelton-en-la-final-del-masters-de-pars/",
-          "title": "Alcaraz busca revancha y se medirá ante Shelton en la final del Masters de París",
-          "publisher": "Chicago Tribune",
+          "url": "https://es-us.noticias.yahoo.com/deportes/sunderland-chelsea-xabi-alonso-deja-131200496.html",
+          "title": "🚨 Sunderland-Chelsea. Xabi Alonso deja en el banquillo a Estevao",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOVli6wUvF97u9sbw6t04fSF0Cb511ZEEjTDA5LbG9dEXpKgZ1lGkllkQ5E0E"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEeLBL3qdAZDY4a6al7lZE0JdQlqmYJaz1TmyKpq5oPfs_biOWC8xCwuW4RiA"
         },
         {
-          "url": "https://elpais.com/deportes/tenis/2026-11-07/alcaraz-implacable-ante-ruud-y-por-primera-vez-finalista-en-paris.html",
-          "title": "Alcaraz, implacable ante Ruud y, por primera vez, finalista en París",
-          "publisher": "EL PAÍS",
+          "url": "https://onefootball.com/es/noticias/regis-le-bris-alinea-a-talbi-sunderland-recibe-al-chelsea-mukiele-apto-43746325",
+          "title": "Régis Le Bris alinea a Talbi: Sunderland recibe al Chelsea; Mukiele, apto",
+          "publisher": "OneFootball",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ29M4Bfbw91uKCKX1dCurrfJkBMiZpwobqV8RKw1c4jskO2I5p1sK-v82yz5w"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRA0V43-HMaPekdJQFSP1eRJgFuIzfudsw_DMijv0EOgHt1hffhHozlffS269o"
         }
       ]
     }
