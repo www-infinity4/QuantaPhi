@@ -2293,7 +2293,7 @@ function isUnexecutedJobStatusProposal(text){
 function normalizeOwnerAssistantReply(reply,request,ownerVerified){
  const answer=String(reply||'').trim();
  if(isUnexecutedJobStatusProposal(answer))
-  return 'Bubbles proposed a repository job-status check, but no authenticated tool executed that proposal. The runner result is unverified; check the saved job receipt before reporting completion.';
+  return 'Bubbles proposed a repository job-status check, but the authenticated tool did not execute it. The runner result is unverified; check the saved job receipt before reporting completion.';
  // Preserve the specific GitHub-search failure message from the concurrent repair.
  if(/["']action["']\s*:\s*["']github[.](?:searchCode|search_code)["'][\s\S]{0,1600}["']parameters["']\s*:/i.test(answer))
   return 'Bubbles received unexecuted GitHub search instructions, not actual results. The source search and card repair have not been verified.';
