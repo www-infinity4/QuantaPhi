@@ -3501,8 +3501,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    if(!rawAnswer&&!cardoneResearch)throw Error('The AI returned no spoken or written reply');
    if(!cardoneResearch&&/^(?:on it|working on it|checking|thinking|one moment|just a moment)[.!…\s]*$/i.test(rawAnswer.trim()))throw Error('The assistant acknowledged the request but returned no result.');
    const unexecutedJobProposal=isUnexecutedJobStatusProposal(rawAnswer);
-   if(nativeOverlay&&json.receipt?.tool)gptStatus.textContent=unexecutedJobProposal?
-    'Tool proposal not executed. No runner receipt.':
+   if(nativeOverlay&&unexecutedJobProposal)gptStatus.textContent='Tool proposal not executed. No runner receipt.';
+   else if(nativeOverlay&&json.receipt?.tool)gptStatus.textContent=
     json.receipt.status==='complete'?'Reply ready.':'The result needs checking.';
    const answer=normalizeOwnerAssistantReply(rawAnswer,request,ownerReady&&Boolean(ownerHeaders?.Authorization));
    const finalAnswer=describeBubblesToolOutcome(json,cardoneResearch&&
