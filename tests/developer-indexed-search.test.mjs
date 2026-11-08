@@ -32,7 +32,7 @@ test('paged browsing is bounded, preserves actual card indices, and never mutate
  const before=JSON.stringify(many);
  const first=searchIndexedResources(many,{topic:'carousels',limit:8,offset:0});
  assert.deepEqual(first.items.map(x=>x.index),[5,6,7,8,9,10,11,12]);
- assert.equal(first.total,32);assert.equal(first.nextOffset,8);assert.equal(first.previousOffset,0);
+ assert.equal(first.total,32);assert.equal(first.nextOffset,8);assert.equal(first.previousOffset,null);
  const last=searchIndexedResources(many,{topic:'carousels',limit:8,offset:28});
  assert.deepEqual(last.items.map(x=>x.index),[29,30,31,32,33,34,35,36]);
  assert.equal(last.offset,24);
