@@ -8,6 +8,7 @@ const bounded=n=>Number.isFinite(n)&&n>0?Math.min(5000,Math.floor(n)):0;
 export const cleanFeedState=raw=>{
  const r=raw&&typeof raw==='object'&&!Array.isArray(raw)?raw:{};
  const following=[...new Set((Array.isArray(r.following)?r.following:[]).filter(validId).slice(0,800))];
+ const hiddenForYou=[...new Set((Array.isArray(r.hiddenForYou)?r.hiddenForYou:[]).filter(validId).slice(0,800))];
  const counts={},viewed={},transitions={};
  for(const [key,val] of Object.entries(r.counts||{}).slice(0,900))if(validId(key)&&bounded(val))counts[key]=bounded(val);
  for(const [key,val] of Object.entries(r.viewed||{}).slice(0,900))if(validId(key)&&bounded(val))viewed[key]=bounded(val);
@@ -18,7 +19,7 @@ export const cleanFeedState=raw=>{
   for(const [to,n] of Object.entries(row).slice(0,80))if(validId(to)&&to!==from&&bounded(n))edges[to]=bounded(n);
   if(Object.keys(edges).length)transitions[from]=edges;
  }
- return {version:2,following,counts,viewed,transitions,
+ return {version:2,following,hiddenForYou,counts,viewed,transitions,
   lastUsed:validId(r.lastUsed)?r.lastUsed:'',
   advance:Math.max(0,Math.min(100000,Number(r.advance)||0))};
 };
@@ -65,6 +66,7 @@ export function feedScore(card,state){
 export function feedCandidates(cards,tab,state,query=''){
  const q=String(query).trim().toLowerCase().slice(0,120);
  const filtered=cards.filter(c=>(tab!=='following'||(state.following||[]).includes(c.id))&&
+  (tab!=='for-you'||!(state.hiddenForYou||[]).includes(c.id))&&
   (!q||[c.name,c.category,c.feature,c.study].join(' ').toLowerCase().includes(q)));
  const priority=(a,b)=>Number(isInfinityAccepted(b))-Number(isInfinityAccepted(a));
  if(tab==='following')return filtered.sort((a,b)=>priority(a,b)||(state.counts?.[b.id]||0)-(state.counts?.[a.id]||0)||a.name.localeCompare(b.name));
@@ -134,3 +136,14 @@ export const markOpened=(state,id,fromId=state.lastUsed)=>({
 });
 export const toggleFollowing=(state,id)=>({...state,following:(state.following||[]).includes(id)?
  state.following.filter(x=>x!==id):[...state.following,id]});
+
+// Explicit visitor exclusions only affect For You. Public and Following remain complete.
+// No profile, ad ID, external request or wallet ledger is written here.
+export const hideForYou=(state,id)=>{
+ if(!validId(id))return state;
+ const previous=Array.isArray(state.hiddenForYou)?state.hiddenForYou:[];
+ return {...state,hiddenForYou:[...new Set([...previous,id])].slice(-800)};
+};
+export const restoreForYou=(state,id='')=>({
+ ...state,hiddenForYou:id?(state.hiddenForYou||[]).filter(x=>x!==id):[]
+});
