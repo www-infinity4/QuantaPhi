@@ -323,3 +323,42 @@ test('Claude Android model-check is a separate user-pressed read-only action',()
  assert.match(client,/method:'GET'/);
  assert.match(client,/\/v1\/claude\/model-check/);
 });
+
+test('Bubbles-assisted Claude turn keeps the owner role/context without offering repair tools',async()=>{
+ const seen=[];
+ const fetcher=async(url,options)=>{
+  assert.match(String(url),/api.anthropic.com\/v1\/messages/);
+  const data=JSON.parse(options.body);seen.push(data);
+  return Response.json({stop_reason:'end_turn',content:[{type:'text',text:'Bubbles-style reply'}]});
+ };
+ const result=await steward({
+  mode:'assist',messages:[{role:'user',text:'Tell me a story'}],
+  assistContext:{assistantName:'Bubbles',role:'Story writer',rolePrompt:'Speak with wonder',
+   ownerInstructions:'Short paragraphs and large type',
+   rememberedContext:['Previous owner preference: stories with clear sources']}
+ },makeEnv(),AUTH,fetcher);
+ assert.equal(result.ok,true);
+ assert.equal(result.reply,'Bubbles-style reply');
+ assert.equal(result.receipt.mode,'assist');
+ assert.equal(result.receipt.toolCalls,0);
+ assert.equal(seen.length,1);
+ assert.equal(seen[0].tools,undefined,'No repository or ticket tools are offered in Bubbles-assist mode');
+ assert.match(seen[0].system,/You are Bubbles/);
+ assert.match(seen[0].system,/Story writer/);
+ assert.match(seen[0].system,/Short paragraphs and large type/);
+ assert.doesNotMatch(JSON.stringify(seen),/sk-test|Bearer rb_/);
+});
+
+test('Bubbles-assist context is bounded and never contains common credential formats',async()=>{
+ const observed=[];
+ const result=await steward({mode:'assist',messages:[{role:'user',text:'Hi'}],
+  assistContext:{ownerInstructions:'A'.repeat(6000)+' ghp_'+'b'.repeat(40),
+   rememberedContext:['github_pat_'+'c'.repeat(60)]}},makeEnv(),AUTH,async(_url,options)=>{
+   observed.push(JSON.parse(options.body));
+   return Response.json({stop_reason:'end_turn',content:[{type:'text',text:'Hello'}]});
+  });
+ assert.equal(result.ok,true);
+ const content=JSON.stringify(observed);
+ assert.ok(content.length<10000);
+ assert.doesNotMatch(content,/ghp_b{20}|github_pat_c{20}/);
+});
