@@ -205,6 +205,38 @@
   createBtn("Build with Omni Phi","ms-creator-button",()=>build("Omni"));
   form.append(actions,feedback);
   panel.append(form,preview);
+  const claimPanel=el('section','ms-creator-identity');
+  claimPanel.append(el('h3','','Verify content ownership · creator claim'));
+  claimPanel.append(el('p','ms-creator-intro',
+    'First preview and register your collection while signed in. Your public creator name and official credit/evidence link above will be submitted for independent rights review. The connected StarQuest account supplies your claimant wallet; a submission never creates spendable coins.'));
+  const attestLabel=el('label','ms-creator-label ms-rights-attestation');
+  const attest=el('input','');attest.type='checkbox';attest.name='rightsAttestation';
+  attestLabel.append(attest,el('span','',
+    'I confirm I am authorized to submit a rights claim for this media. My evidence can be reviewed before any award is issued.'));
+  const claimButton=el('button','ms-creator-button','Submit creator rights claim');
+  claimButton.type='button';
+  const claimState=el('div','ms-creator-status');
+  claimState.setAttribute('role','status');
+  claimButton.addEventListener('click',async()=>{
+    if(!attest.checked){claimState.textContent='Confirm your authority to request content ownership review.';return}
+    if(!registeredContentId){claimState.textContent='Preview your media first to register its ID in your connected StarQuest wallet.';return}
+    const name=creator.value.trim(),evidenceUrl=creditEvidence.value.trim();
+    if(name.length<2||!evidenceUrl){claimState.textContent='Enter your creator name and public evidence URL above.';return}
+    const api=window.StarQuestCloudLedger;
+    if(typeof api?.claimMediaStarCreator!=='function'){
+      claimState.textContent='Verified wallet claim service is not yet deployed. No payment or claim was created.';return
+    }
+    claimState.textContent='Submitting to verified creator rights review…';
+    try{
+      const result=await api.claimMediaStarCreator({contentId:registeredContentId,
+        creatorName:name,evidenceUrl,rightsAttestation:true});
+      claimState.textContent=result?.ok
+        ?('Rights review status: '+String(result.reviewStatus||'pending_identity_and_rights_review')+
+          '. Your account was recorded as the claimant. No StarCoin payout has occurred.')
+        :'Rights verification request was not accepted. No payout was created.';
+    }catch{claimState.textContent='Rights claim was not accepted by the connected wallet. Check your signed-in account and evidence link. No payout was created.'}
+  });
+  claimPanel.append(attestLabel,claimButton,claimState);panel.append(claimPanel);
   const ledgerPanel=el('section','ms-creator-ledger');
   ledgerPanel.append(el('h3','','My Infinity view awards'));
   ledgerPanel.append(el('p','ms-creator-intro',
@@ -225,6 +257,12 @@
         String(Number(result.pendingInfinityViewAwards)||0)+' pending Infinity view award receipts · not spendable'));
       ledgerState.append(el('p','ms-creator-intro',
         'Actual settled, spendable production coins: 0 until independently verified issuance and a successful wallet receipt.'));
+      for(const claim of (Array.isArray(result.creatorIdentityClaims)?result.creatorIdentityClaims:[]).slice(0,8)){
+        const item=el('p','ms-creator-ledger-row');
+        item.textContent='Creator rights claim · '+String(claim.creator_display_name||'Creator')+
+          ' · '+String(claim.review_status||'pending_identity_and_rights_review')+' · no payout until verified';
+        ledgerState.append(item);
+      }
       for(const entry of (Array.isArray(result.infinityViewAwards)?result.infinityViewAwards:[]).slice(0,8)){
         const item=el('p','ms-creator-ledger-row');
         item.textContent=String(entry.content_title||'Media Star')+' · 1 proposed StarCoin · '+
