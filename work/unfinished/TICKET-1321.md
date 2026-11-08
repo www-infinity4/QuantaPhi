@@ -3,28 +3,34 @@ issue: 1321
 project: "Continuity Builder executable bounded action packets"
 source_requests:
   - https://github.com/www-infinity4/QuantaPhi/issues/1321
-state: implementing
-dot: "🟡"
-progress_percent: 20
-progress_basis: "Pure packet selector, test source and runbook staged; no real continuity runner integration or resumed automated GitHub write yet"
-sessions_spent: 1
-sessions_remaining_estimate: unknown
-agent: "ChatGPT source-only; no issued coordinator lease"
+state: blocked
+dot: "🔵"
+progress_percent: 25
+progress_basis: "2 of 8 implementation milestones: pure selector and claim-fenced D1 adapter seam with two-run regression coverage; production caller and real authenticated build/merge remain absent"
+sessions_spent: 8
+sessions_remaining_estimate: "2-4, dependent on signed bridge access"
+agent: "Copilot source-only; no issued coordinator lease"
 lease_id: null
 lease_expires_at: null
 task_session_id: null
 fence: null
+last_observed_at_utc: "2026-11-08T11:06:23Z"
 repo: www-infinity4/QuantaPhi
-branch: feat/continuity-action-packets-1321
-head_sha: null
-pr: null
+branch: copilot/continuity-builder-action-packets
+head_sha: d3f353deae9e40260c4633af611b07139386742a
+pr: https://github.com/www-infinity4/QuantaPhi/pull/1858
 tests:
-  - "node --test test/continuity-work-packets.test.mjs pending GitHub CI"
+  - "node --check continuity/packet-runner-adapter.mjs"
+  - "node --test test/continuity*.test.mjs — 56 passed"
+  - "node --test test/continuity-packet-runner-adapter.test.mjs — 3 passed (documentation sessions)"
+ci:
+  - "PR #1858 exact head d3f353deae9e40260c4633af611b07139386742a: Continuity actionable packet contracts run 42474261115 is action_required with zero jobs; no failed-job logs"
+independent_review: pending
 merged: false
 deployed: false
 live_verified: false
-blocker: "Actual authenticated Continuity coordinator needs a verified atomic D1 checkpoint and runner integration"
-next_action: "Pass exact-head work-packet Node CI, review and merge; wire into verified runner in a separate scoped PR"
+blocker: "Observation-only coordinator has a D1 binding but no authenticated Brain CLOCK/owner-scoped candidate adapter; the Brain writer route is separate and no signed bridge has been verified"
+next_action: "Obtain/verify the existing authorized Brain-to-coordinator adapter contract, then connect this seam without expanding credentials or changing owner grants"
 ---
 
 # Owner purpose
@@ -34,6 +40,15 @@ Stop continuity rereading unchanged work and reporting 0 progress after short lo
 Pure packet selection rejects unchanged blocked same-head retries and foreign leases; merge gating and receipt idempotency verified by tests.
 
 ## Remaining
-- Authenticated runner consumes packet, persists source hash and action result, and executes real GitHub capability.
-- Two-run integration acceptance verifies one real merge after independent CI/review and one unchanged-head skip.
+- Adapter seam now requires a live D1 cycle fence, stores revision-scoped outcomes, and avoids a second history load for an unchanged version; synthetic tests only.
+- Color handoffs distinguish Blue's provider-backed write, Red's accepted destination/readback, and `purple.integrated`. Purple proves assimilation; Green activity can overlap Yellow/Blue, while any production artifact still requires the authorized builder and applicable acceptance.
+- Concurrent Yellow discovery, version-frozen Orange targeting, Blue transport and emergent Green activity are documented as a bounded feedback-loop contract. Stop/rotate conditions include unchanged source/version/destination or blocker, zero new verified evidence, failed gates and exhausted explicit budgets; all results remain tied to the same job/fence.
+- Color names are compatibility labels for observable states/functions in one programmer-directed system, not evidence of autonomous bots. Green describes concurrent Yellow/Blue activity, while an artifact still requires the authorized builder's real write/tests; Purple denotes verified Red assimilation, not an asserted reviewer-bot action.
+- Future Green-sequence dots must be backed one-to-one by persisted real operation receipts with inspectable inputs, decision, outputs, status and provenance. Example counts are hypothetical; expandable UI is deferred until authenticated receipt persistence exists.
+- Observed in this source session: ontology and checkpoint documentation refinement only. No bot transition, search, transport, write, assimilation, build, merge or deployment occurred.
+- In the previous two source sessions: scoped streaming-loop and color-ontology documentation only. No streaming color stage, provider-backed transition receipt, Blue write, Red acceptance/readback, Purple integration, data import or live execution occurred.
+- Actual authenticated runner consumes the packet and performs provider-confirmed actions through authorized GitHub capabilities.
+- Two-run production acceptance verifies one real eligible action/PR, exact-head CI, independent review, permitted merge, and a resumed unchanged-version skip.
+- Production streaming acceptance still needs an authenticated candidate/import adapter and bounded concurrency/budget enforcement; this PR's synthetic adapter is not that runner.
+- Current exact-head CI run 42474261115 is `action_required` with zero jobs; local adapter tests do not substitute for CI.
 - Do not bypass wallet, finance, identity, OAuth, APK security or branch protection.
