@@ -114,3 +114,29 @@ test('PCGS certified-VAM cross-seller discovery shows attributed lots and licens
  await expect(sales.getByText(/Past\/closed listing/)).toBeVisible();
  expect(await sales.evaluate(el=>el.getBoundingClientRect().right<=innerWidth)).toBeTruthy();
 });
+
+test('seller-authorized listing photo appears for the exact PCGS VAM lot and is credited in the card',async({page})=>{
+ const lot='https://www.greatcollections.com/Coin/2299600/1888-O-Morgan-Silver-Dollar-Hot-Lips-VAM-4-PCGS-AU-53';
+ await page.route('**/data/coin-media-approvals.json',route=>route.fulfill({json:{
+  schema_version:1,grants:[{market:'greatcollections',lot_url:lot,
+   image_url:'https://www.greatcollections.com/approved/lot-2299600.jpg',
+   image_credit:'GreatCollections rights holder · reviewed approved lot photo',
+   license:'seller-permitted',proof_url:'https://www.greatcollections.com/approved/lot-2299600-rights',
+   approved_by:'reviewed-commercial-media',approved_at:'2026-11-07',expires_at:'2027-01-01'}]
+ }}));
+ await page.route('https://www.greatcollections.com/approved/lot-2299600.jpg',route=>route.fulfill({
+  contentType:'image/svg+xml',body:'<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450"><rect width="600" height="450" fill="#ddd"/></svg>'
+ }));
+ await page.route('https://orange-brook-a2ac.marvaseater.workers.dev/search**',route=>{
+  const q=new URL(route.request().url()).searchParams.get('q')||'';
+  return route.fulfill({json:{results:q.includes('site:greatcollections.com')?[
+   {title:'1888-O Hot Lips VAM-4 Top 100 PCGS AU-53',url:lot}
+  ]:[]},headers:{'access-control-allow-origin':'*'}});
+ });
+ await page.goto(base+'/?card=pcgs',{waitUntil:'domcontentloaded'});
+ const photos=page.locator('#oracleCardStage [data-source-id="pcgs"] .premium-coin-lot-photo');
+ await expect(photos).toBeVisible({timeout:25000});
+ await expect(photos.locator('img')).toHaveAttribute('src','https://www.greatcollections.com/approved/lot-2299600.jpg');
+ await expect(photos).toContainText('GreatCollections rights holder');
+ await expect(photos.getByRole('link',{name:'Original lot and image credit'})).toHaveAttribute('href',lot);
+});
