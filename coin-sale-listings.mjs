@@ -65,3 +65,34 @@ export function sourceCoinSearch(market,term='Morgan dollar'){
  url.search=new URLSearchParams({q:'site:'+market.host+' '+(query||'Morgan dollar')+' PCGS VAM',format:'json',categories:'general',safesearch:'1'});
  return url.href;
 }
+
+const isoDay=value=>typeof value==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(value)&&!Number.isNaN(Date.parse(value+'T00:00:00Z'));
+/**
+ * Authored first-party approval manifest ONLY, not a browser/search seller flag.
+ * Grant review belongs to site maintainers and must record the seller's
+ * written media permission for the specific listing before publication.
+ * No unknown image hosts or implied seller permissions.
+ */
+export function attachLicensedCoinImages(rows,market,manifest,asOf=new Date().toISOString().slice(0,10)){
+ if(!Array.isArray(rows)||!COIN_MARKETS.some(x=>x.id===market?.id&&x.host===market.host))return [];
+ const grants=manifest?.schema_version===1&&Array.isArray(manifest.grants)?manifest.grants:[];
+ const allowed=new Map();
+ for(const g of grants.slice(0,100)){
+  if(g?.market!==market.id||g?.license!=='seller-permitted'||g?.approved_by!=='reviewed-commercial-media'||
+    !isoDay(g.approved_at)||!isoDay(g.expires_at)||!isoDay(asOf)||
+    g.approved_at>asOf||g.expires_at<asOf||g.approved_at>g.expires_at)continue;
+  const lot=safeSaleURL(g.lot_url,market.host),image=safeSaleURL(g.image_url,market.host);
+  const proof=typeof g.proof_url==='string'&&g.proof_url.trim()?safeSaleURL(g.proof_url,market.host):null;
+  if(!lot||!isSellerLot(lot,market)||!image||!proof||typeof g.image_credit!=='string'||
+    g.image_credit.trim().length<10||g.image_credit.length>160)continue;
+  const key=new URL(lot);key.hash='';
+  if(!allowed.has(key.href))allowed.set(key.href,{image,imageCredit:g.image_credit.trim(),imageSource:key.href,imageRights:'seller-permitted'});
+ }
+ return rows.map(row=>{
+  const url=safeSaleURL(row?.url,market.host);
+  if(!url)return row;
+  const key=new URL(url);key.hash='';
+  const grant=allowed.get(key.href);
+  return grant?{...row,...grant}:row;
+ });
+}
