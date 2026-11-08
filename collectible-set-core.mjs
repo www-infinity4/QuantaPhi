@@ -2,8 +2,12 @@
 const SHA=/^sha256:[0-9a-f]{64}$/;
 const ID=/^[a-z0-9][a-z0-9_-]{0,127}$/;
 const clean=(v,n=120)=>String(v||'').replace(/[\u0000-\u001f\u007f]/g,' ').replace(/\s+/g,' ').trim().slice(0,n);
-export function eligibleCreatorSuggestion({consent=false,imageCount=0,scope=''}={}){
- return consent===true&&scope==='selected-files'&&Number.isInteger(imageCount)&&imageCount>=2;
+export function eligibleCreatorSuggestion({consent=false,imageCount=0,scope='',consentVerified=false,source=''}={}){
+ if(consent!==true||!Number.isInteger(imageCount)||imageCount<2)return false;
+ // Never read arbitrary saved galleries. A future first-party collection summary
+ // requires a separately verified, purpose-scoped consent receipt.
+ return scope==='selected-files'||(scope==='authorized-saved-manifest'&&
+  consentVerified===true&&source==='first-party-collection');
 }
 export function creatorSetEconomy({pieceCount=0,unitCost=1,freePreview=true}={}){
  const count=Number.isInteger(pieceCount)&&pieceCount>0&&pieceCount<=100?pieceCount:0;
