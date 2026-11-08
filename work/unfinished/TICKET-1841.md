@@ -3,7 +3,7 @@ issue: 1841
 project: "QuantaPhi creator PayPal Connect — one account, up to 500 Quick Cards"
 source_requests:
   - "2026-11-07 owner PayPal merchant onboarding + Fred 500 card monetization"
-state: source_test_pending
+state: source_tested
 dot: "🔴"
 progress_percent: 22
 progress_basis: "Five source components, local draft UI, documented account flow, tests staged. None of the critical PayPal merchant authorization, platform partnership, authenticated server, money movement or live checkout is verified."
@@ -25,6 +25,9 @@ next_action: "Inspect exact-head PR #1842 card-quality CI, correct real failures
 ---
 
 # Ticket #1841 · PayPal creator merchant for up to 500 Quick Cards
+
+Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1841
+
 
 ## November 7, 2026 · first source stage
 
