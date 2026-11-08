@@ -40,6 +40,13 @@ test('seller drafts reject duplicate cards, extra privileges, over capacity, inv
  for(const key of ['stripeAccountId','secret','payoutBank','connected','authToken','paymentAuthorized','sellerId'])assert.throws(()=>buildStripeSellerDraft({...args,[key]:'forged'}),/unsupported_field/,key);
  for(const kind of ['cannabis','alcohol','nicotine','gambling','weapons'])assert.throws(()=>buildStripeSellerDraft({...args,businessType:kind}),/invalid_business_type/);
 });
+test('public GPT business drafts reject accidental Stripe keys and private finance form data',()=>{
+ const base={sellerSlug:'fred',displayName:'Fred Coins',businessType:'coins',cardIds:'coin-001',priceUsd:'10.00',notes:''};
+ for(const notes of ['Stripe key sk_live_123456789abcdef','webhook whsec_12345678900000','routing number 123456789','SSN 111-22-3333','my bank account 123456789']){
+  assert.throws(()=>buildStripeSellerDraft({...base,notes}),/sensitive_information_not_allowed/,notes);
+ }
+});
+
 test('seller eligibility always requires real authenticated backend and processor state',()=>{
  const plan=buildStripeSellerDraft({sellerSlug:'fred',displayName:'Fred Coin Shop',businessType:'coins',cardIds:['fred-card'],priceUsd:'100.00',notes:''});
  for(const x of [{},{merchantVerified:true,chargesEnabled:true,payoutsEnabled:true,rightsApproved:true,ownerAuthenticated:true},{accountStatus:'verified',merchantVerified:true,chargesEnabled:true,payoutsEnabled:true,rightsApproved:true,ownerAuthenticated:true}]){
