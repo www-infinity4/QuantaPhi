@@ -827,8 +827,15 @@ export class BrainClock extends DurableObject{
      const result=await githubOperation(runtime,{action:'read_repository',repository,includeRoot:true});
      return Response.json(result);
     }
-    if(body.action==='read_branch_status')
-     return Response.json(await githubOperation(runtime,{action:'read_branch_status',repository,branch:body.branch}));
+    if(body.action==='read_branch_status'){
+     const result=await githubOperation(runtime,{action:'read_branch_status',repository,branch:body.branch});
+     // Server-produced receipt describes one real readback, not a writer lease,
+     // completed runner job or wallet-mint authorization.
+     return Response.json({...result,readReceipt:result.ok?{
+      id:'branch_'+crypto.randomUUID().replaceAll('-',''),
+      tool:'github.read_branch_status',status:'complete',observedAt:result.observedAt
+     }:null});
+    }
     const head=await githubOperation(runtime,{action:'read_repository',repository});
     if(!/^([a-f0-9]{40})$/.test(head.headSha||''))throw Error('github_head_sha_invalid');
     const data=await githubOperation(runtime,{action:'read_file',repository,path:body.path,ref:head.headSha});
