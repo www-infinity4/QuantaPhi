@@ -1,6 +1,6 @@
 import {payBotWork} from './bot-work-credit.mjs';
 import {creditBubbleBit,readBubbleBits} from './bubble-bit-credit.mjs';
-import {readGitAsset,readGptCoinAsset,importGptCoin} from './engineering-assets.mjs';
+import {readGitAsset,readGitSerialReceipts,readGptCoinAsset,importGptCoin} from './engineering-assets.mjs';
 const CLIENT_SCRIPT = "(function(global){\n'use strict';\nconst ENDPOINT='https://unified-wallet.marvaseater.workers.dev';\nconst DEVICE_PREFIX='starquest_ledger_device_v1:';\nconst read=(key,fallback=null)=>{try{return JSON.parse(localStorage.getItem(key))??fallback}catch{return fallback}};\nfunction storedToken(key){const raw=localStorage.getItem(key)||'';if(/^sq_[A-Za-z0-9_-]{32,}$/.test(raw))return raw;const value=read(key,null);return /^sq_[A-Za-z0-9_-]{32,}$/.test(value?.deviceToken||'')?value.deviceToken:''}\nfunction findDeviceToken(){const session=read('starquest_session',null),username=String(session?.username||session?.key||'').toLowerCase(),exact=username&&storedToken(DEVICE_PREFIX+username);if(exact)return exact;for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i)||'';if(!key.startsWith(DEVICE_PREFIX))continue;const token=storedToken(key);if(token)return token}return ''}\nclass InfinityUnifiedWallet{\n constructor(options={}){this.endpoint=options.endpoint||ENDPOINT;this.appName=options.appName||document.title||location.hostname;this.state=null;this.listeners=new Set()}\n token(){const token=findDeviceToken();if(!/^sq_[A-Za-z0-9_-]{32,}$/.test(token))throw new Error('Connect the same StarQuest account before using the unified wallet.');return token}\n async request(path,options={}){const response=await fetch(this.endpoint+path,{...options,headers:{'content-type':'application/json','authorization':'Bearer '+this.token(),...(options.headers||{})}});const result=await response.json().catch(()=>({}));if(!response.ok)throw new Error(result.error||'unified_wallet_request_failed');return result}\n async connect(){return this.refresh()}\n async refresh(){this.state=await this.request('/v1/wallet/state',{cache:'no-store'});this.listeners.forEach(fn=>fn(this.state));global.dispatchEvent(new CustomEvent('infinity:wallet-state',{detail:this.state}));return this.state}\n async importLegacy({importKey='browser-v1',balances={},tokens=[]}={}){const result=await this.request('/v1/wallet/import',{method:'POST',body:JSON.stringify({importKey,source:this.appName,balances,tokens})});await this.refresh();return result}\n async mintToken(type,data,idempotencyKey){const result=await this.request('/v1/tokens/mint',{method:'POST',body:JSON.stringify({type,data,idempotencyKey,source:this.appName})});await this.refresh();return result}\n async spendInfinity(amount,referenceId,idempotencyKey,metadata={}){const result=await this.request('/v1/wallet/spend',{method:'POST',body:JSON.stringify({asset:'INFINITY',amount,referenceId,idempotencyKey,metadata})});await this.refresh();return result}\n subscribe(listener){this.listeners.add(listener);if(this.state)listener(this.state);return()=>this.listeners.delete(listener)}\n}\nglobal.InfinityUnifiedWallet=InfinityUnifiedWallet;\n})(window);\n";
 const ALLOWED_ORIGINS = new Set(['https://quantaphi.org','https://www.quantaphi.org','https://quantaphi.net','https://www.quantaphi.net','https://www-infinity4.github.io','http://localhost:8000','http://127.0.0.1:8000']);
 const TOKEN_TYPES = new Set(['MUSIC_QUANT','LISTENING_QUANT','QUANT_DATA','INFINITY_SEARCH']);
@@ -47,6 +47,23 @@ async function state(env,account){
  * Cursor ordering stays stable when new mints arrive while a user reads history.
  * Never accept a userId or owner-supplied wallet ID from query parameters.
  */
+async function gitSerialHistory(env,account,url){
+ // Exact account device token is authenticated by identity() before this
+ // entry point. Wallet ID comes ONLY from server-owned quant_wallets.
+ const readInteger=(name,fallback,min,max)=>{
+  const raw=url.searchParams.get(name);
+  if(raw===null)return fallback;
+  if(!/^[0-9]+$/.test(raw))throw Object.assign(Error(name==='limit'?'invalid_git_limit':'invalid_git_cursor'),{status:400});
+  const value=Number(raw);
+  if(!Number.isSafeInteger(value)||value<min||value>max)
+   throw Object.assign(Error(name==='limit'?'invalid_git_limit':'invalid_git_cursor'),{status:400});
+  return value;
+ };
+ const limit=readInteger('limit',20,1,100),beforeSerial=readInteger('beforeSerial',null,1,Number.MAX_SAFE_INTEGER);
+ const {walletId}=await quantState(env,account.id);
+ return {ok:true,asset:'GIT',...await readGitSerialReceipts(env,walletId,{limit,beforeSerial})};
+}
+
 async function infinityHistory(env,account,url){
   const kind=url.searchParams.get('kind')||'events';
   if(kind!=='events'&&kind!=='tokens')throw Object.assign(new Error('unsupported_history_kind'),{status:400});
@@ -309,5 +326,5 @@ export default {async fetch(request,env,ctx){ if(request.method==='OPTIONS')retu
   let input;try{input=JSON.parse(raw)}catch{return json(request,{ok:false,error:'invalid_json'},400)}
   return json(request,await importGptCoin(env,account.id,input));
  }
- if(url.pathname==='/v1/wallet/state'&&request.method==='GET')return json(request,await state(env,account)); if(url.pathname==='/v1/wallet/infinity-history'&&request.method==='GET')return json(request,await infinityHistory(env,account,url)); if(url.pathname==='/v1/wallet/import'&&request.method==='POST')return json(request,await importLegacy(request,env,account)); if(url.pathname==='/v1/tokens/mint'&&request.method==='POST')return json(request,await mintToken(request,env,account),201); if(url.pathname==='/v1/wallet/spend'&&request.method==='POST')return json(request,await spend(request,env,account)); return json(request,{error:'not_found'},404)}catch(error){return json(request,{error:error.message||'internal_error'},error.status||500)}}};
+ if(url.pathname==='/v1/wallet/git-serials'&&request.method==='GET')return json(request,await gitSerialHistory(env,account,url)); if(url.pathname==='/v1/wallet/state'&&request.method==='GET')return json(request,await state(env,account)); if(url.pathname==='/v1/wallet/infinity-history'&&request.method==='GET')return json(request,await infinityHistory(env,account,url)); if(url.pathname==='/v1/wallet/import'&&request.method==='POST')return json(request,await importLegacy(request,env,account)); if(url.pathname==='/v1/tokens/mint'&&request.method==='POST')return json(request,await mintToken(request,env,account),201); if(url.pathname==='/v1/wallet/spend'&&request.method==='POST')return json(request,await spend(request,env,account)); return json(request,{error:'not_found'},404)}catch(error){return json(request,{error:error.message||'internal_error'},error.status||500)}}};
 
