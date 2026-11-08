@@ -47,14 +47,20 @@ function storeCandidate(p){
  };
 }
 function doneFor(ledger,p){
+ // This marker is written only after a provider-confirmed action. It protects
+ // the currently cached inventory even when the bounded history evicts keys.
+ if(p.terminal==='done')return true;
  const key=actionKey(p);
  if(ledger.done.includes(key))return true;
- // An older pre-migration receipt may have a legacy issue/head done key.
- // Only dedupe it when the separately recorded action matches.
+ // Older checkpoints sometimes stored only the issue/head key. A blocked or
+ // observed receipt (or an unrelated successful review) NEVER completed a merge.
  return ledger.done.includes(packetKey(p))&&ledger.receipts.some(r=>
-  r.repo===p.repo&&r.issue===p.issue&&r.headSha===p.headSha&&r.action===p.nextAction);
+  r.repo===p.repo&&r.issue===p.issue&&r.headSha===p.headSha&&
+  r.action===p.nextAction&&r.providerConfirmed===true&&
+  ['changed','reviewed','merged','deployed'].includes(r.result));
 }
 function blockedFor(ledger,p,sourceVersion){
+ if(p.terminal==='blocked')return true;
  return ledger.blocked.some(b=>b.repo===p.repo&&b.issue===p.issue&&
   b.headSha===p.headSha&&(!b.action||b.action===p.nextAction)&&
   (b.sourceVersion===sourceVersion||
@@ -140,6 +146,8 @@ async function reserveCheckpoint(db,claim,ownerScope,sourceVersion,ledger,previo
   "WHERE old.cycle_id=continuity_packet_checkpoints.cycle_id "+
   "AND old.fence=continuity_packet_checkpoints.fence "+
   "AND old.state='running' AND old.lease_until>?))) "+
+  "AND continuity_packet_checkpoints.updated_at=? "+
+  "AND continuity_packet_checkpoints.result_json=? "+
   "AND EXISTS (SELECT 1 FROM continuity_cycle_receipts AS current2 "+
   "WHERE current2.cycle_id=excluded.cycle_id AND current2.fence=excluded.fence "+
   "AND current2.state='running' AND current2.lease_until>?)";
@@ -147,7 +155,7 @@ async function reserveCheckpoint(db,claim,ownerScope,sourceVersion,ledger,previo
   ownerScope,sourceVersion,claim.id,claim.fence,at,JSON.stringify(ledger),
   claim.id,claim.fence,at,
   previous?.source_version||'',previous?.fence||'',previous?.cycle_id??-1,
-  at,at
+  at,previous?.updated_at??-1,previous?.result_json??'',at
  ).run();
  return r?.meta?.changes===1;
 }
@@ -167,11 +175,14 @@ export async function runPacketPass({
  if(!await activeClaim(db,claim,started))
   return {status:'lease_lost',scanned:false,attempted:[],skipped:[]};
  await db.prepare(SCHEMA).run();
- const previous=await db.prepare("SELECT source_version,state,cycle_id,fence,result_json "+
+ const previous=await db.prepare("SELECT source_version,state,cycle_id,fence,updated_at,result_json "+
   "FROM continuity_packet_checkpoints WHERE owner_scope=?").bind(ownerScope).first();
  let old;
  try{old=parseLedger(previous);}catch{return {status:'reconciliation_required',scanned:false,attempted:[],skipped:[]}}
- if(previous?.state==='running'&&old.pending)
+ // Legacy running checkpoints did not record an explicit pending identity.
+ // They may have already dispatched a provider write: never reclaim them.
+ // A non-null pending key is likewise uncertain regardless of state.
+ if(old.pending||(previous?.state==='running'&&!Object.hasOwn(old,'pending')))
   return {status:'reconciliation_required',scanned:false,attempted:old.attempted||[],skipped:old.skipped||[]};
  const newRevision=previous?.source_version!==sourceVersion;
  const ledger=ledgerFrom(old,newRevision);
@@ -238,6 +249,11 @@ export async function runPacketPass({
   if(['changed','reviewed','merged','deployed'].includes(received.result)){
    ledger.done=[...new Set([...ledger.done,actionKey(packet)])].slice(-MAX_CANDIDATES);
   }
+  // Keep immutable terminal progress with its cached source candidate. Merely
+  // trimming 100-entry history must never make a completed write eligible again.
+  // A changed source version rebuilds this inventory and reevaluates eligibility.
+  const stored=ledger.candidates.find(p=>validPacket(p)&&actionKey(p)===actionKey(packet));
+  if(stored)stored.terminal=['changed','reviewed','merged','deployed'].includes(received.result)?'done':'blocked';
   ledger.pending=null;
   // Keep the actual provider result visible even if a newly expired fence
   // prevents writing its receipt. D1 still has the pending operation key,
