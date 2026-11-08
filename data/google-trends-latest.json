@@ -3,9 +3,114 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-08T07:02:23.643630Z",
+  "checked_at": "2026-11-08T07:31:24.771316Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "kanye west",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T07:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/05/style/yeezy-season-01-fashion-show-kanye-west.html",
+        "https://www.instyle.com/north-west-poses-siblings-kanye-west-yeezy-show-12237751",
+        "https://www.hola.com/us/fashion/20261105933408/bianca-censori-plunging-jumpsuit-70s-inspired-hair/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRztQ79-NfUaOVa0JPR23vyxSQNFtr-iy4hRBA5AFLN9qv45AAaVYYS7rom_Vk",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/05/style/yeezy-season-01-fashion-show-kanye-west.html",
+          "title": "Yeezy’s Fashion Show Was a Total Flop",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRztQ79-NfUaOVa0JPR23vyxSQNFtr-iy4hRBA5AFLN9qv45AAaVYYS7rom_Vk"
+        },
+        {
+          "url": "https://www.instyle.com/north-west-poses-siblings-kanye-west-yeezy-show-12237751",
+          "title": "North West, 13, Towers Over Dad Kanye West as He Steps Out With All 4 Kids for Rare Family Outing",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMfgtZ8xVSA2uXaRiSElVtQYnXem4NhFrv9a386oQX3COqEiZnZSAIQsN6z0Q"
+        },
+        {
+          "url": "https://www.hola.com/us/fashion/20261105933408/bianca-censori-plunging-jumpsuit-70s-inspired-hair/",
+          "title": "Bianca Censori leaves little to the imagination in plunging jumpsuit and glamorous '70s-inspired hair transformation",
+          "publisher": "HOLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFyagcLzWQAsBjYdFQ7HxHwCIVhvz0_OqF8ODY-e-xDIHVfzruxz3LEi7nTa4"
+        }
+      ]
+    },
+    {
+      "query": "bitcoin",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T07:00:00Z",
+      "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-06/bitcoin-selloff-eases-as-investors-explore-cautious-recovery",
+        "https://www.coindesk.com/markets/2026/11/06/bitcoin-recovers-usd76-000-level-as-etfs-shed-usd430-million-after-tech-rout",
+        "https://finance.yahoo.com/markets/article/bitcoin-tumbles-to-76000-as-post-election-stock-rally-fades-171549230.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT61R9OP5KtiyPGIgm0IOZNaNIVngpcLaONSZT_mL5hwA1rhQLLVTcPnGQaASk",
+      "image_credit": "Bloomberg.com",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-06/bitcoin-selloff-eases-as-investors-explore-cautious-recovery",
+          "title": "Bitcoin Selloff Eases as Investors Explore Cautious Recovery",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT61R9OP5KtiyPGIgm0IOZNaNIVngpcLaONSZT_mL5hwA1rhQLLVTcPnGQaASk"
+        },
+        {
+          "url": "https://www.coindesk.com/markets/2026/11/06/bitcoin-recovers-usd76-000-level-as-etfs-shed-usd430-million-after-tech-rout",
+          "title": "Bitcoin recovers $76,000 level as ETFs shed $430 million after tech rout",
+          "publisher": "CoinDesk",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6eEDezjXPdA5Iq3XUu85hccDM38cuWgXEGfz979Attnpxku4-wbRoSJRKCGE"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/article/bitcoin-tumbles-to-76000-as-post-election-stock-rally-fades-171549230.html",
+          "title": "Bitcoin tumbles to $76,000 as post-election stock rally fades",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRM0iRDJYdmcJY_-oM7MTJibKbCgzoCiNG0Nb8NVM_33hft2YgwotTC8x-EoJ0"
+        }
+      ]
+    },
+    {
+      "query": "michigan senate abdul el sayed",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T06:50:00Z",
+      "related_news_urls": [
+        "https://thehill.com/homenews/campaign/6204662-el-sayed-launches-habibi-pac/",
+        "https://www.politico.com/news/2026/11/05/abdul-el-sayed-jewish-voters-interview-01152872",
+        "https://abcnews.com/Politics/abdul-el-sayeds-grandparents-reflect-historic-senate-win/story?id=137926568"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTuYe67U1cADxW83y-BuzWqXC0_061GAj-AdGqPiIa47J-cV38wlrOCEDykvg",
+      "image_credit": "The Hill",
+      "news": [
+        {
+          "url": "https://thehill.com/homenews/campaign/6204662-el-sayed-launches-habibi-pac/",
+          "title": "El-Sayed launches Habibi PAC",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTuYe67U1cADxW83y-BuzWqXC0_061GAj-AdGqPiIa47J-cV38wlrOCEDykvg"
+        },
+        {
+          "url": "https://www.politico.com/news/2026/11/05/abdul-el-sayed-jewish-voters-interview-01152872",
+          "title": "How Abdul El-Sayed actually did with Jewish voters",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTy8McvZI5_2zn0vHEryQUktj_QeTskC_cLZxOfkL6lhANe22U5oUyCpz1bFEY"
+        },
+        {
+          "url": "https://abcnews.com/Politics/abdul-el-sayeds-grandparents-reflect-historic-senate-win/story?id=137926568",
+          "title": "Abdul El-Sayed's grandparents reflect on his historic Senate win",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgqouo7iidUZaJtCWKw3wNUTcBHGujxZiEwRU2klVbf7KeM1qeKWuwmAxeoHo"
+        }
+      ]
+    },
     {
       "query": "ryan garcia",
       "approx_searches": "200+",
@@ -223,7 +328,7 @@
       "related_news_urls": [
         "https://www.nbcsportsbayarea.com/nba/sacramento-kings/deaaron-fox-darius-acuff-jr-spurs/1977718/",
         "https://sports.yahoo.com/articles/aaron-fox-advices-rookie-darius-094457425.html",
-        "https://www.nbcsportsbayarea.com/video/nba/sacramento-kings/deaaron-fox-presser-watch/1977731/"
+        "https://bvmsports.com/2026/11/07/deaaron-fox-shares-advice-to-kings-rookie-darius-acuff-jr-nbc-sports-california/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRA0rji8sqaF216CRWcFR0FXsPF5H-2qCXabyjRL1vHGs7iu5gMKqqjosMAUyo",
       "image_credit": "NBC Sports Bay Area & California",
@@ -243,116 +348,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT9ppvLNE6EPbW_vzWE7NKw3RsTAd03fDig_Cg5wQYc_5M02TVaVABHcuC7YU"
         },
         {
-          "url": "https://www.nbcsportsbayarea.com/video/nba/sacramento-kings/deaaron-fox-presser-watch/1977731/",
-          "title": "Former Kings guard De'Aaron Fox shares advice to young rookie Darius Acuff Jr.",
-          "publisher": "NBC Sports Bay Area & California",
+          "url": "https://bvmsports.com/2026/11/07/deaaron-fox-shares-advice-to-kings-rookie-darius-acuff-jr-nbc-sports-california/",
+          "title": "De’Aaron Fox shares advice to Kings rookie Darius Acuff Jr. | NBC Sports California",
+          "publisher": "BVM Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBb9QjHXXK2UBLiyTofUQEuGrWp8ypQwsKArLivqoHnoGEY2-b58RfopxC76M"
-        }
-      ]
-    },
-    {
-      "query": "portland weather",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T05:40:00Z",
-      "related_news_urls": [
-        "https://www.koin.com/weather/dry-start-to-the-weekend-more-rain-on-the-way-in-portland-area/",
-        "https://www.kptv.com/2026/11/04/off-showers-starting-wednesday-afternoon/",
-        "https://wgme.com/news/local/portland-wraps-up-one-of-its-driest-octobers-as-mild-november-looms"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9POLZ2xZ6jBbHGeZt8f13U56KQ2fTkAzRfZWgZ5_-4d7U_xH2cwS0uECG7pg",
-      "image_credit": "KOIN.com",
-      "news": [
-        {
-          "url": "https://www.koin.com/weather/dry-start-to-the-weekend-more-rain-on-the-way-in-portland-area/",
-          "title": "Dry start to the weekend, more rain on the way in Portland area",
-          "publisher": "KOIN.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9POLZ2xZ6jBbHGeZt8f13U56KQ2fTkAzRfZWgZ5_-4d7U_xH2cwS0uECG7pg"
-        },
-        {
-          "url": "https://www.kptv.com/2026/11/04/off-showers-starting-wednesday-afternoon/",
-          "title": "On and off showers starting Wednesday afternoon",
-          "publisher": "KPTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUqID4yZfcEqO2yV9wgvMeMiA-iZoN-wEYWPdT-vic4iHuu1j7IgWQ-GzALhs"
-        },
-        {
-          "url": "https://wgme.com/news/local/portland-wraps-up-one-of-its-driest-octobers-as-mild-november-looms",
-          "title": "Portland wraps up one of its driest Octobers as mild November looms",
-          "publisher": "WGME",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVj9GauUv-s04X16i84SqNuTT_XzT0WD7D3JaLarizfTo-HFV5nUdgOUeha3U"
-        }
-      ]
-    },
-    {
-      "query": "mississippi senate race election results",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-08T05:30:00Z",
-      "related_news_urls": [
-        "https://apnews.com/projects/elections-2026/mississippi-us-senate-results/",
-        "https://www.nytimes.com/live/2026/11/06/us/midterm-elections-trump",
-        "https://www.washingtonpost.com/politics/2026/11/07/here-are-midterm-races-watch-that-are-still-too-close-call/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9oEasnTDRUr2q-TjRibhJWnth8kxzHe5jfe3GfDfY-gXR0YEwlFWtnaG6Fng",
-      "image_credit": "AP News",
-      "news": [
-        {
-          "url": "https://apnews.com/projects/elections-2026/mississippi-us-senate-results/",
-          "title": "Mississippi U.S. Senate Election Live Results 2026",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9oEasnTDRUr2q-TjRibhJWnth8kxzHe5jfe3GfDfY-gXR0YEwlFWtnaG6Fng"
-        },
-        {
-          "url": "https://www.nytimes.com/live/2026/11/06/us/midterm-elections-trump",
-          "title": "Midterm Elections Live Updates: Democrats’ Lead in Mississippi Senate Race Grows",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1SVSUKSj-s0swbJ0p6q1XqytKWzh6PapUzPInxcpAGG9qol4sZ9IUSGzrEMk"
-        },
-        {
-          "url": "https://www.washingtonpost.com/politics/2026/11/07/here-are-midterm-races-watch-that-are-still-too-close-call/",
-          "title": "Here are the midterm races to watch that are still too close to call",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSw9Gl3_k_6k4YrhlR-qoDB2misanbq236KYZOgpXxqxkm2JfzaChL2X-TtXFI"
-        }
-      ]
-    },
-    {
-      "query": "oj simpson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T05:30:00Z",
-      "related_news_urls": [
-        "https://people.com/did-o-j-simpson-have-an-accomplice-new-docuseries-revisits-theory-behind-nicole-brown-simpson-and-ron-goldman-s-murders-12238692",
-        "https://www.foxnews.com/us/9-mystery-fingerprints-oj-simpson-murder-case-could-hold-new-clues-more-than-30-years-later",
-        "https://www.aol.com/articles/o-j-simpson-docuseries-discusses-184156000.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQW9KzYP69ge1QQ_istfwDHCN9EUXpcBAp0T7tn3DQ4uaa9wGN1d1mzy-Lvxdc",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/did-o-j-simpson-have-an-accomplice-new-docuseries-revisits-theory-behind-nicole-brown-simpson-and-ron-goldman-s-murders-12238692",
-          "title": "O.J. Simpson Accomplice Theory in Double Murder Revisited in New Docuseries",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQW9KzYP69ge1QQ_istfwDHCN9EUXpcBAp0T7tn3DQ4uaa9wGN1d1mzy-Lvxdc"
-        },
-        {
-          "url": "https://www.foxnews.com/us/9-mystery-fingerprints-oj-simpson-murder-case-could-hold-new-clues-more-than-30-years-later",
-          "title": "9 mystery fingerprints from OJ Simpson murder case could hold new clues more than 30 years later",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRs3SKXlP4C_YnojlwBbDqleWU00jT0tuTo314uSPY5XCnZ8_eHjLHj85EFV6k"
-        },
-        {
-          "url": "https://www.aol.com/articles/o-j-simpson-docuseries-discusses-184156000.html",
-          "title": "O.J. Simpson Docuseries Discusses Theory He May Have Had an Accomplice",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQo4GLhcOJwRoHb3HkalooYEYCz_DVHaeUBEWRFiSuHlfLfVFyusSGaBLJQ_ok"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRHWytX0nlGz4T9VWebIz8diEbqSei7cnImfUzAIqbT9zPfsHq5-8D2JLL1ow"
         }
       ]
     }
