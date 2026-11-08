@@ -3479,8 +3479,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{
     type:'tool_receipt',tool:json.receipt.tool,status:json.receipt.status,receiptId:json.receipt.id
    }}));
-   status.textContent=unexecutedJobProposal?'Tool proposal not executed · runner status unverified':
-     json.answerStatus==='partial'||json.receipt.status==='failed'?'I could not verify the full result.':'Reply ready.';
+   if(unexecutedJobProposal)status.textContent='Tool proposal not executed · runner status unverified';
+    else status.textContent=json.answerStatus==='partial'||json.receipt.status==='failed'?'I could not verify the full result.':'Reply ready.';
   }
   if(nativeOverlay){
     // The Android foreground service handles speech output; typed messages
