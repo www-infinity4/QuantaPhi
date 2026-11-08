@@ -82,12 +82,12 @@ function showPatches(data){
  });
  box.append(copy);ui.log.append(box);ui.log.scrollTop=ui.log.scrollHeight;
 }
-async function ask(text,{mode='chat',evidence}={}){
+async function ask(text,{mode='chat',evidence,inline=false}={}){
  const clean=String(text||'').trim().slice(0,3000);
  if(!clean||busy)return null;
- busy=true;mount();open();
- bubble('you',clean);if(ui)ui.send.disabled=true;
- const wait=bubble('claude','Claude is looking…');
+ busy=true;mount();if(!inline)open();
+ if(!inline)bubble('you',clean);if(ui&&!inline)ui.send.disabled=true;
+ const wait=inline?null:bubble('claude','Claude is looking…');
  let data=null;
  try{
   const diagnostic=mode==='fix'||/what is broken|look at the recent bubbles chat/i.test(clean);
@@ -95,16 +95,16 @@ async function ask(text,{mode='chat',evidence}={}){
   data=await call(clean,mode,ev);
   turns.push({role:'user',text:clean},{role:'assistant',text:data.reply});turns=turns.slice(-24);save();
   if(wait)wait.textContent=data.reply;
-  if(data.tickets?.length)for(const ticket of data.tickets){
+  if(!inline&&data.tickets?.length)for(const ticket of data.tickets){
    const state=String(ticket.status||'unknown');
    const intro=ticket.deduplicated?'Existing ticket':'Ticket recorded';
    const next=state==='draft'?'Awaiting owner-reviewed plan.':'Inspect its existing state before any further action.';
    bubble('claude',intro+' '+ticket.id+' · '+state+'. '+next);
   }
-  if(data.partial)bubble('claude','Claude stopped before finishing. Saved proposals and ticket receipts remain available; no code was applied.');
+  if(data.partial&&!inline)bubble('claude','Claude stopped before finishing. Saved proposals and ticket receipts remain available; no code was applied.');
   showPatches(data);
  }catch(e){if(wait)wait.textContent='Claude response not confirmed: '+String(e.message||e).slice(0,160)+'. Check existing Brain tickets before retrying; delivery status is unknown.';}
- busy=false;if(ui)ui.send.disabled=false;
+ busy=false;if(ui&&!inline)ui.send.disabled=false;
  return data;
 }
 function open(){if(ui){ui.panel.style.display='flex';}}

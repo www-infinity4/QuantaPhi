@@ -31,3 +31,22 @@ test('Claude model choice refuses attachments instead of silently dropping them'
 test('empty text cannot start a Claude repair or model call', () => {
   assert.deepEqual(routeClaudeTurn('claude','   '),{mode:'empty',prompt:null});
 });
+
+
+test('the Claude model is available from each first-party Bubbles entrypoint',async()=>{
+ const fs=await import('node:fs');
+ for(const path of ['bubbles.html','bubbles-chrome.html','bubbles/index.html','index.html']){
+  const html=fs.readFileSync(new URL('../'+path,import.meta.url),'utf8');
+  assert.match(html,/\/claude-card\.js\?v=20261108-steward/,'Missing Claude Steward script: '+path);
+  assert.match(html,/\/bubbles-ai\.js\?v=20261108-claude-model1/,'Missing selectable model: '+path);
+ }
+});
+
+test('selected Claude responses remain in the main Bubbles conversation',async()=>{
+ const fs=await import('node:fs');
+ const ui=fs.readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ const steward=fs.readFileSync(new URL('../claude-card.js',import.meta.url),'utf8');
+ assert.match(ui,/inline:true/);
+ assert.match(steward,/if\(!inline\)open\(\)/);
+ assert.match(ui,/result\?\.tickets\?\.length/);
+});

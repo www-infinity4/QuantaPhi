@@ -2413,9 +2413,11 @@ async function askClaudeSteward(text,mode){
  display(text,'you');messages.push({role:'user',text});persistChat();
  let reply='';
  try{
-  const result=await steward.ask(text,{mode,evidence:window.__bubblesRecentMessages().slice(0,-1)});
+  const result=await steward.ask(text,{mode,evidence:window.__bubblesRecentMessages().slice(0,-1),inline:true});
   reply=result?.reply?String(result.reply).slice(0,1500):'Claude did not confirm a response. Nothing was changed.';
-  if(result?.patches?.length)reply+='\n\n'+result.patches.length+' verified patch(es) are in the Claude card. Nothing is applied until you run or approve it.';
+  if(result?.patches?.length)reply+='\n\n'+result.patches.length+' proposed patch(es), verified against source but not applied. Open Claude to inspect details.';
+  if(result?.tickets?.length)reply+='\n\n'+result.tickets.map(ticket=>(ticket.deduplicated?'Existing ':'Recorded ')+String(ticket.status||'unknown')+' ticket '+ticket.id).join('; ')+'.';
+  if(result?.partial)reply+='\nClaude stopped early. The listed receipts are partial; no deployment was verified.';
  }catch(error){reply='Claude steward not confirmed: '+String(error.message||error).slice(0,160)+'.';}
  display(reply,'ai');messages.push({role:'assistant',text:reply});messages=messages.slice(-400);persistChat();
  status.textContent='Claude steward replied.';busy=false;send.disabled=false;setOrbState(voiceEnabled?'listening':'idle');
