@@ -148,6 +148,33 @@ export const DISPENSARY_SOURCES=Object.freeze([
   "city": "Denver",
   "state": "CO",
   "paid_sponsor": false
+
+ },
+ {
+  "id": "the-dab-alameda",
+  "name": "The Dab by Silverpeak",
+  "store": "Alameda",
+  "address": "2748 W Alameda Ave, Denver, CO 80219",
+  "source_url": "https://thedab303.com/locations/",
+  "official_domain": "thedab303.com",
+  "category": "dispensary",
+  "city": "Denver",
+  "state": "CO",
+  "paid_sponsor": false
+ },
+ {
+  "id": "the-dispensary-breckenridge",
+  "name": "The Dispensary",
+  "store": "Breckenridge",
+  "former_brand": "Alpenglow Botanicals",
+  "phone": "(970) 389-6839",
+  "address": "1805 Airport Rd, Breckenridge, CO 80424",
+  "source_url": "https://thedispensary.com/locations/breckenridge-co/",
+  "official_domain": "thedispensary.com",
+  "category": "dispensary",
+  "city": "Breckenridge",
+  "state": "CO",
+  "paid_sponsor": false
  }
 ].map(x=>Object.freeze(x)));
 export const DISPENSARY_CARD_IDS=Object.freeze(DISPENSARY_SOURCES.map(x=>'dispensary-'+x.id));
@@ -161,4 +188,33 @@ export function eligibleDispensary(row,acknowledged){
       (url.hostname!==domain&&!url.hostname.endsWith('.'+domain)))return null;
   return row;
  }catch{return null}
+}
+
+/* The directory is not an advertising service. Only individually approved
+ * merchant-owned storefront/editorial photography can appear in this gallery;
+ * never infer rights from a screenshot, public URL, or user upload.
+ * Regulated product promotions belong to the separately verified ads path. */
+export function approvedDirectoryMedia(row,acknowledged,now=Date.now()){
+ if(!eligibleDispensary(row,acknowledged))return [];
+ const accepted=[],seen=new Set(),domain=row.official_domain;
+ const allowed=(raw)=>{try{
+  const u=new URL(raw);
+  return u.protocol==='https:'&&!u.username&&!u.password&&!u.port&&
+   (u.hostname===domain||u.hostname.endsWith('.'+domain))?u:null;
+ }catch{return null}};
+ for(const item of Array.isArray(row.media_gallery)?row.media_gallery:[]){
+  if(!item||item.status!=='approved'||item.rights_cleared!==true||
+     !['storefront','editorial'].includes(item.kind)||!item.publisher||
+     !allowed(item.source_url)||!allowed(item.rights_evidence_url))continue;
+  const image=allowed(item.url);
+  if(!image||!/\.(?:jpg|jpeg|png|webp)$/i.test(image.pathname))continue;
+  const reviewed=Date.parse(item.reviewed_at||''),expires=Date.parse(item.expires_at||'');
+  if(!Number.isFinite(reviewed)||reviewed>now||reviewed<now-180*86400000||
+     !Number.isFinite(expires)||expires<=now||seen.has(image.href))continue;
+  seen.add(image.href);
+  accepted.push({url:image.href,alt:String(item.alt||'Official store photograph').slice(0,160),
+   publisher:String(item.publisher).slice(0,100),sourceUrl:item.source_url});
+  if(accepted.length===6)break;
+ }
+ return accepted;
 }
