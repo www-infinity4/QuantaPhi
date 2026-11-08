@@ -1093,7 +1093,23 @@ const claudeModel=create('option','','Claude');claudeModel.value='claude';claude
 modelChoice.append(bubblesModel,claudeModel);modelChoice.value='bubbles';
 const modelNote=create('span','ba-muted','Claude can inspect and propose fixes; deployment needs separate approval.');
 modelNote.style.cssText='font-size:12px;line-height:1.4;flex:3;min-width:170px;';
-modelRow.append(modelLabel,modelChoice,modelNote);
+// Explicit session-only choice: Claude API is NOT free merely because the
+// owner has a Claude chat account. Do not enable billable calls on page load.
+let claudeAssistanceOptIn=false;
+const claudeAssistantLabel=create('label','ba-muted');
+claudeAssistantLabel.style.cssText='display:flex;align-items:center;gap:9px;font-size:14px;line-height:1.45;width:100%;';
+const claudeAssistantToggle=create('input','');
+claudeAssistantToggle.type='checkbox';
+claudeAssistantToggle.checked=false;
+claudeAssistantToggle.setAttribute('aria-label','Use Claude behind Bubbles');
+claudeAssistantToggle.style.cssText='min-width:20px;width:20px;height:20px;flex:0 0 20px;accent-color:#6f2da8;';
+const claudeAssistantText=create('span','','Use Claude behind Bubbles · Anthropic API usage may be billed');
+claudeAssistantLabel.append(claudeAssistantToggle,claudeAssistantText);
+claudeAssistantToggle.addEventListener('change',()=>{
+ claudeAssistanceOptIn=claudeAssistantToggle.checked;
+ status.textContent=claudeAssistanceOptIn?'Claude assistance enabled for this session. Bubbles remains in control of tools.':'Bubbles is using its normal chat engine.';
+});
+modelRow.append(modelLabel,modelChoice,modelNote,claudeAssistantLabel);
 modelChoice.addEventListener('change',()=>{
  const usingClaude=modelChoice.value==='claude';
  input.placeholder=usingClaude?'Message Claude, or say Fix Bubbles…':nativeOverlay?'Message Bubbles or paste a code…':'Say something, ask a question, or describe a task…';
@@ -3495,6 +3511,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     const {shouldUseClaudeAssistance}=await import('/bubbles-claude-routing.mjs?v=20261108-claude-wheels1');
     useClaude=shouldUseClaudeAssistance({
      selectedModel:modelChoice.value,ownerVerified:ownerReady&&Boolean(ownerHeaders?.Authorization),
+     ownerEnabled:claudeAssistanceOptIn,
      providerPresent:Boolean(window.ClaudeSteward),embedded,
      hasAttachments:Boolean(pendingImage||pendingImages.length||screenEvidence),
      toolWork:Boolean(detailed||workEvidence),request
