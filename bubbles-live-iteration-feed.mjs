@@ -56,24 +56,31 @@ export function advanceLiveBits(previous,event){
  const add=(headline,state,extra={})=>{
   const entry={number:++s.sequence,headline,state,criteria:'',criteriaKey:'',resource:'',detail:'',tool:'',receiptTail:'',...extra};
   s.entries.push(entry);if(s.entries.length>40)s.entries.shift();
-  s.live='Iteration '+entry.number+' · '+headline;
+  s.live=entry.contextOnly?'Context · '+headline:'Iteration '+entry.number+' · '+headline;
   return entry;
  };
  if(event.type==='turn_started'){
   s.contextReady=false;s.running=true;s.turnStart=s.sequence+1;
-  add('Checking saved context for this request','running');return s;
+  add('Checking saved context for this request','running',{contextOnly:true});return s;
  }
  if(event.type==='memory'){
   s.contextReady=event.state==='retrieved';
-  add(event.state==='retrieved'?'Owner context retrieved':'Owner context unavailable','observed');
+  // A completed context read must not leave the prior step marked running.
+  const pendingContext=[...s.entries].reverse().find(entry=>entry.contextOnly&&entry.state==='running');
+  if(pendingContext)pendingContext.state=event.state==='retrieved'?'observed':'unverified';
+  add(event.state==='retrieved'?'Owner context retrieved':'Owner context unavailable',
+   event.state==='retrieved'?'observed':'unverified',{contextOnly:true});
   return s;
  }
  if(event.type==='turn_finished'){
   s.running=false;
-  const pendingTool=s.entries.some(entry=>entry.number>=s.turnStart&&entry.state==='running'&&entry.tool);
-  s.live=event.failed===true?'Reply failed · review the chat status':
-   pendingTool?'GitHub · waiting for saved execution receipt · '+s.sequence+' observed iterations':
-   'Reply ready · '+s.sequence+' observed iterations';
+  const current=s.entries.filter(entry=>entry.number>=(Number.isInteger(s.turnStart)?s.turnStart:1));
+  const pendingTool=current.some(entry=>entry.state==='running'&&entry.tool);
+  const completedToolCount=current.filter(entry=>entry.tool&&entry.state==='complete').length;
+  s.live=event.failed===true?'Reply incomplete · no verified job result':
+   pendingTool?'Tool still running · awaiting a verified execution receipt':
+   completedToolCount?'Reply received · '+completedToolCount+' confirmed tool receipt'+(completedToolCount===1?'':'s'):
+   'Reply received · no tool execution receipt';
   return s;
  }
  if(event.type==='job_step'){
@@ -190,7 +197,8 @@ export function mountLiveView(doc=typeof document!=='undefined'?document:null){
   for(const entry of entries){
    const li=doc.createElement('li');li.className='ba-live-bit-entry';
    const heading=doc.createElement('strong');
-   heading.textContent='Iteration '+entry.number+' · '+entry.headline+' · '+entry.state;
+   heading.textContent=entry.contextOnly?'Context · '+entry.headline+' · '+entry.state:
+    'Iteration '+entry.number+' · '+entry.headline+' · '+entry.state;
    li.append(heading);
    for(const [label,value] of [['Criteria',entry.criteria],['Repository / resource',entry.resource],
        ['Work performed',entry.detail],['Receipt suffix',entry.receiptTail]]){
