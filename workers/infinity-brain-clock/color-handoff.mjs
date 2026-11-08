@@ -15,6 +15,10 @@ export function routeColorHandoffs(task){
    && /\b(?:verified|approved|licensed|registered|existing)\b/i.test(s);
  // A specific source fix does not need a big-picture research cycle.
  if(scopedFix&&!importWork&&!broad)return [];
+ // Ordinary scoped validation/build jobs also go straight to the existing
+ // authorized planner. Only genuine uncertainty/import work needs extra AI
+ // roles; otherwise Red/Orange calls waste model budget and break job isolation.
+ if(!broad&&!importWork)return [];
  // Already approved, source-scoped imports can go directly to Blue.
  if(sourceReady&&!broad)return ['blue'];
  return ['red','orange',...(importWork?['blue']:[])];
