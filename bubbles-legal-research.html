@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Bubbles legal research assistant and source-backed attorney preparation for QuantaPhi app and website owners. Not a law firm.">
+<title>Bubbles Legal Research Desk · QuantaPhi</title>
+<style>
+:root{color-scheme:light;font:18px/1.55 system-ui,-apple-system,sans-serif;color:#223448;background:#edf2f6}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(155deg,#ecf6fb,#f7f8fb 40%,#eae8f7);min-height:100vh}
+main{max-width:850px;margin:auto;padding:15px 15px 105px}a{color:#165b88;text-underline-offset:3px}
+.top{display:flex;gap:12px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.top a{font-weight:800;font-size:16px}header{border:1px solid #bad0e1;border-radius:22px;padding:23px 19px;background:linear-gradient(125deg,#172f56,#355589 70%,#5c5b9b);color:white;box-shadow:0 8px 25px #17365a26}
+header a{color:#e6faff}.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:900}h1{font-size:clamp(27px,6vw,38px);line-height:1.16;margin:12px 0 9px}h2{font-size:22px;line-height:1.25;margin:0 0 12px}h3{font-size:18px;margin:10px 0 4px}
+p{margin:8px 0 13px}.quiet{color:#45586b;font-size:16px}
+.panel{padding:19px;background:#fff;border:1px solid #c9d9e7;border-radius:18px;margin:15px 0;box-shadow:0 3px 13px #1c40600c}
+.alert{padding:12px 15px;border-left:4px solid #6078a3;background:#eaf1f8;border-radius:8px;color:#233c58}
+button,.action{font:800 16px/1.3 system-ui,sans-serif;min-height:48px;border-radius:12px;border:1px solid #9cb4c8;background:#fff;color:#244a68;padding:11px 15px;cursor:pointer}
+button.primary{background:#244f82;border-color:#244f82;color:#fff}.actions{display:flex;gap:9px;flex-wrap:wrap;margin:13px 0}
+.actions>button{flex:1 1 170px}button:focus-visible,a:focus-visible,textarea:focus-visible,input:focus-visible{outline:3px solid #108bbd;outline-offset:3px}
+fieldset{border:0;margin:0;padding:0}legend{font-weight:850;margin-bottom:8px}
+label.topic{display:flex;align-items:flex-start;gap:12px;padding:9px 6px;border-bottom:1px solid #e4ebf1;font-size:16px;cursor:pointer}
+label.topic input{width:21px;height:21px;flex:none;accent-color:#245c8a;margin-top:3px}
+textarea{width:100%;font:16px/1.5 system-ui,sans-serif;resize:vertical;min-height:108px;border:1px solid #a6bbc9;border-radius:11px;padding:12px;background:#fbfdff;color:#1a3047}
+#legalPacketPreview{font:14px/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;max-height:300px;overflow:auto;background:#f2f6fa;border:1px solid #d1dce7;padding:12px;border-radius:11px;color:#233b56}
+#legalSources{display:grid;gap:8px}#legalSources a{display:block;padding:11px 12px;background:#f2f6fa;border:1px solid #d6e2ea;border-radius:12px;font-size:16px}
+#legalSources small{display:block;color:#536679;font-size:13px;line-height:1.45}
+footer{padding:8px 6px;text-align:center;font-size:14px;color:#526277}
+@media(max-width:390px){main{padding:10px 10px 100px}.panel{padding:15px}header{padding:18px 15px}.actions button{flex-basis:100%}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style></head>
+<body><main>
+<nav class="top" aria-label="Site navigation"><a href="/">← QuantaPhi</a><a href="/bubbles.html">Bubbles main chat</a><a href="/quick-card-builder.html">Quick Card Builder</a></nav>
+<header>
+<p class="eyebrow">INFINITY® · ORACLE OCTAVES · BUBBLES SPECIALISTS</p>
+<h1>Bubbles Legal Research Desk</h1>
+<p>Research public legal information, prepare questions about app ownership, and organize a packet for a future lawyer—inside QuantaPhi.</p>
+<p><strong>AI research assistant, not a lawyer.</strong> No independent license to practice law. Nothing here creates an attorney-client relationship or provides legal advice. Conversations are not automatically confidential or privileged.</p>
+<button id="legalOpenChat" class="primary" type="button">Open Bubbles Legal Research</button>
+<p class="quiet" style="color:#e4f4ff">Uses the existing QuantaPhi Bubbles chat. No new subscription or legal-provider account is created.</p>
+</header>
+<section class="panel" aria-labelledby="legalDecisionHeading">
+<h2 id="legalDecisionHeading">Google Play plan</h2>
+<p><strong>Chosen:</strong> the official one-time $25 registration route for full developer distribution. <strong>Status:</strong> not registered, not paid, and not approved.</p>
+<p>Register only through <a href="https://support.google.com/googleplay/android-developer/answer/6112435" target="_blank" rel="noopener noreferrer">Google's official Play Console instructions</a>. Google requires additional testing, app review and verified ownership details before publication.</p>
+<div class="alert">Bubbles is not a lawyer or law firm. Always verify legal statements against the current jurisdiction and official sources. A lawyer should review anything you rely on for rights, filings, or legal decisions.</div>
+</section>
+<section class="panel" aria-labelledby="legalChooseHeading">
+<h2 id="legalChooseHeading">Prepare your lawyer questions</h2>
+<p>Choose the areas you want reviewed. This creates a text packet on this device only.</p>
+<fieldset id="legalTopicList"><legend>Review topics</legend></fieldset>
+<label for="legalNotes"><strong>Optional notes for your lawyer</strong></label>
+<p class="quiet">Avoid private user messages, credentials, ID numbers or recordings. No notes are uploaded or saved by this page. No recorded microphone without permission.</p>
+<textarea id="legalNotes" maxlength="2000" placeholder="For example: I want advice about ownership of the app name, original code and open-source licenses."></textarea>
+<div class="actions">
+<button id="legalCopyPacket" type="button">Copy lawyer packet</button>
+<button id="legalDownloadPacket" type="button">Save text packet</button>
+<button id="legalClearPacket" type="button">Clear</button>
+</div>
+<p id="legalStatus" role="status" aria-live="polite"></p>
+<h3>Preview · draft only</h3>
+<pre id="legalPacketPreview" tabindex="0"></pre>
+</section>
+<section class="panel" aria-labelledby="legalSourcesHeading">
+<h2 id="legalSourcesHeading">Original research sources</h2>
+<p>Official agency information plus openly identified educational and case-law references. Opening a source is your choice; an external source is not an attorney.</p>
+<div id="legalSources"></div>
+<p class="quiet">CourtListener has an optional authenticated MCP integration. It is <strong>not</strong> connected here; this page only links to public legal research.</p>
+</section>
+<footer>QuantaPhi · Research only · No automatic legal filings, payments, trademark approvals, publication or recording</footer>
+</main>
+<script type="module" src="/bubbles-legal-research.js?v=20261107-desk1"></script>
+<script defer src="/bubbles-embed.js" data-bubble-id="bubbles-legal-research" data-bubble-role="specialist" data-bubble-name="Bubbles Legal Research" data-bubble-instructions="You are Bubbles Legal Research, an AI informational researcher, not a lawyer or law firm. No attorney-client relationship or privilege is created. Ask which jurisdiction matters; distinguish statutes, policies, opinions and unverified claims. Find and cite primary sources with exact URLs and dates where available; say plainly when tools have not verified a source. Research Google Play rules, privacy/recordings, software copyright, trademarks, contractor agreements and app terms. Never claim filings, approvals, account access, payments or legal representation. Do not seek credentials, IDs, private chats or recordings. Encourage review by a licensed attorney before legal decisions."></script>
+</body></html>
