@@ -3,41 +3,216 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-08T06:01:39.565325Z",
+  "checked_at": "2026-11-08T06:33:23.282760Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "de'aaron fox",
+      "query": "ryan garcia",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T06:10:00Z",
+      "related_news_urls": [
+        "https://boxingnewsonline.net/news/terence-crawford-calls-out-boxing-legend/",
+        "https://talksport.com/boxing/4689841/terence-crawford-plea-floyd-mayweather-return/",
+        "https://britishboxingnews.co.uk/world-news/maybe-one-more-crawford-teases-a-comeback-and-calls-out-garcia-at-160lbs/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQW3_OQ0apT11qR5a5OOPzelvc9ibqeqF0LAxfL44wfbrfyqMmNWvcyqkAu5Wk",
+      "image_credit": "Boxing News Online",
+      "news": [
+        {
+          "url": "https://boxingnewsonline.net/news/terence-crawford-calls-out-boxing-legend/",
+          "title": "Terence Crawford calls out retired boxing legend for comeback fight: \"GOAT vs GOAT\"",
+          "publisher": "Boxing News Online",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQW3_OQ0apT11qR5a5OOPzelvc9ibqeqF0LAxfL44wfbrfyqMmNWvcyqkAu5Wk"
+        },
+        {
+          "url": "https://talksport.com/boxing/4689841/terence-crawford-plea-floyd-mayweather-return/",
+          "title": "Terence Crawford makes 'GOAT vs GOAT' fight plea to Floyd Mayweather after return decision",
+          "publisher": "talkSPORT",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTF6t48tujN1SthSU94gz1NxtF6-0uMJm9r4VId2wYPOGg7F8cUjYR8Sl4pRU4"
+        },
+        {
+          "url": "https://britishboxingnews.co.uk/world-news/maybe-one-more-crawford-teases-a-comeback-and-calls-out-garcia-at-160lbs/",
+          "title": "‘Maybe one more’ – Crawford teases a comeback and calls out Garcia at 160lbs",
+          "publisher": "British Boxing News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtrZsEMLeubDItV0nFPFM25TdV1gjueO8iIa5e5e9bgre32tcLmXHDNyJR5fs"
+        }
+      ]
+    },
+    {
+      "query": "elon musk net worth",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T06:00:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/politics/policy/elon-musk-texas-midterm-elections-b993e58d",
+        "https://www.nytimes.com/2026/11/06/us/politics/musk-trump-midterm-election-spending.html",
+        "https://www.washingtonpost.com/technology/2026/11/07/musk-fled-california-texas-now-his-red-state-refuge-is-revolt/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRW9vqa9d_zfmA_7Jx0naM65E4t7l83Staek7GdV9_eKGFX3Hsvh5DV_qwjOig",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/politics/policy/elon-musk-texas-midterm-elections-b993e58d",
+          "title": "Elon Musk Staked His Empire on Texas. Now State Democrats Want to Rein Him In.",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRW9vqa9d_zfmA_7Jx0naM65E4t7l83Staek7GdV9_eKGFX3Hsvh5DV_qwjOig"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/06/us/politics/musk-trump-midterm-election-spending.html",
+          "title": "How Elon Musk Frittered Away Nearly $500 Million on the Midterm Elections",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxZbSpzywBm_bKXJe-0T-ifdBAkaFf-gR8zR3JqpcRWw8xbhz9l9faJ29K6BQ"
+        },
+        {
+          "url": "https://www.washingtonpost.com/technology/2026/11/07/musk-fled-california-texas-now-his-red-state-refuge-is-revolt/",
+          "title": "The tech billionaires who fled California are facing a new blue Texas",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuZCLmvi-dt0ZSOfJFPr2NVxXWi8MIHIFPszCPTymUvZaFdlqPH5qk58VbFDA"
+        }
+      ]
+    },
+    {
+      "query": "sunny deol",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T06:00:00Z",
+      "related_news_urls": [
+        "https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/sunny-deol-praises-ramayana-rise-of-a-legend-after-appearing-as-lord-hanuman-in-post-credit-scene-this-film-is-not-less-than-any-hollywood-film-but-i-would-say-it-is-better-than-them/articleshow/135641840.cms",
+        "https://www.imdb.com/news/ni66096617/?ref_=nmnw_art_perm",
+        "https://indianexpress.com/article/entertainment/bollywood/hanuman-actor-sunny-deol-urges-every-indian-to-watch-ramayana-part-1-10955294/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQftCYdfcHLsR13IIJpUe-I_kYpjrKVi8MPi0-AsKnOVfyf3CsTDkRKJ45hJJ0",
+      "image_credit": "The Times of India",
+      "news": [
+        {
+          "url": "https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/sunny-deol-praises-ramayana-rise-of-a-legend-after-appearing-as-lord-hanuman-in-post-credit-scene-this-film-is-not-less-than-any-hollywood-film-but-i-would-say-it-is-better-than-them/articleshow/135641840.cms",
+          "title": "Sunny Deol praises 'Ramayana: Rise of a Legend' after appearing as Lord Hanuman in post-credit scene: 'Th",
+          "publisher": "The Times of India",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQftCYdfcHLsR13IIJpUe-I_kYpjrKVi8MPi0-AsKnOVfyf3CsTDkRKJ45hJJ0"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66096617/?ref_=nmnw_art_perm",
+          "title": "Ramayana Ending Explained: Sunny Deol’s Lord Hanuman With Just 3 Epic Words Gives The Sequel Glimpse – Beginning Of The End Of Ravana!",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVT86wfffhr0iD5gZuqOv6TFQKD3wr-A279YatpVp2tK8lNa_wX9Dcv-BSk18"
+        },
+        {
+          "url": "https://indianexpress.com/article/entertainment/bollywood/hanuman-actor-sunny-deol-urges-every-indian-to-watch-ramayana-part-1-10955294/",
+          "title": "Sunny Deol urges every Indian to watch Ramayana: ‘No less than any Hollywood movie’",
+          "publisher": "The Indian Express",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRB1qGEm7jBvEPjZKpRcSOn_-Fvwztsfefs_jv-OfR97dtlO-Br3_O5215WwDA"
+        }
+      ]
+    },
+    {
+      "query": "i play rocky",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-08T05:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/05/movies/i-play-rocky-review-sylvester-stallone.html",
+        "https://www.bbc.com/culture/article/20261104-how-sylvester-stallone-created-underdog-icon-rocky",
+        "https://www.theguardian.com/film/2026/nov/06/rocky-review-50-sylvester-stallone-boxer"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKhEESb_E46MbCZewx1Gcy0M9yMouWO_0C3s7zj_FVX55GirYx6B6BGvCgS4Y",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/05/movies/i-play-rocky-review-sylvester-stallone.html",
+          "title": "‘I Play Rocky’ Review: He’s a Champion",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKhEESb_E46MbCZewx1Gcy0M9yMouWO_0C3s7zj_FVX55GirYx6B6BGvCgS4Y"
+        },
+        {
+          "url": "https://www.bbc.com/culture/article/20261104-how-sylvester-stallone-created-underdog-icon-rocky",
+          "title": "'It was a total miracle': How rejection led Sylvester Stallone to create film's ultimate underdog Rocky",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRnNpONmmJw2cizEYU-5PhEvmlkb_0ZOyyd8LrSzWzJLxUFNZdqxkFPHaPjbY"
+        },
+        {
+          "url": "https://www.theguardian.com/film/2026/nov/06/rocky-review-50-sylvester-stallone-boxer",
+          "title": "Rocky review – 50 years on, Stallone’s boxer remains an exhilaratingly gritty contender",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQE-0_fzrvkttTb994JLU_2UCNFispX-9q1i0C6D_kjAUIJzKmm-D3Xb97sn3k"
+        }
+      ]
+    },
+    {
+      "query": "connor mcdavid",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T05:50:00Z",
+      "related_news_urls": [
+        "https://www.sportsnet.ca/nhl/article/oilers-connor-mcdavid-ties-adam-oates-with-assists-in-18-consecutive-games/",
+        "https://www.nhl.com/news/vancouver-canucks-edmonton-oilers-game-recap-november-7-2026",
+        "https://www.reuters.com/sports/nhl/connor-mcdavids-assist-streak-18-games-oilers-handle-canucks--flm-2026-11-08/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlp66sGiV0r7ypYBM4NUoUesUsEEh6jJyvg0I-GAMFwGFFowbUblfQGTEDHhQ",
+      "image_credit": "Sportsnet.ca",
+      "news": [
+        {
+          "url": "https://www.sportsnet.ca/nhl/article/oilers-connor-mcdavid-ties-adam-oates-with-assists-in-18-consecutive-games/",
+          "title": "Oilers' Connor McDavid ties Adam Oates with assists in 18 consecutive games",
+          "publisher": "Sportsnet.ca",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlp66sGiV0r7ypYBM4NUoUesUsEEh6jJyvg0I-GAMFwGFFowbUblfQGTEDHhQ"
+        },
+        {
+          "url": "https://www.nhl.com/news/vancouver-canucks-edmonton-oilers-game-recap-november-7-2026",
+          "title": "Draisaitl scores twice, Oilers hold off Canucks",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxpjRofurD3JI3uPK7IKeENDteQBkS51qhqK_wdAiPlaoQDm6X2AriPWLe4Pg"
+        },
+        {
+          "url": "https://www.reuters.com/sports/nhl/connor-mcdavids-assist-streak-18-games-oilers-handle-canucks--flm-2026-11-08/",
+          "title": "Connor McDavid's assist streak to 18 games as Oilers handle Canucks",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdHRRiHEZ-iXawxAXnFfP7lskrrQZZl8zJBPqPjM5d9GOeie65Yrw93dsXzQo"
+        }
+      ]
+    },
+    {
+      "query": "rey mysterio",
       "approx_searches": "200+",
       "published_at": "2026-11-08T05:40:00Z",
       "related_news_urls": [
-        "https://www.nbcsportsbayarea.com/nba/sacramento-kings/deaaron-fox-darius-acuff-jr-spurs/1977718/",
-        "https://sports.yahoo.com/articles/aaron-fox-advices-rookie-darius-094457425.html",
-        "https://www.nbcsportsbayarea.com/video/nba/sacramento-kings/deaaron-fox-presser-watch/1977731/"
+        "https://www.cagesideseats.com/lucha-libre-aaa-cmll/485564/wwe-aaa-heroes-inmortales-results-live-discussion-week-3-nov-7-2026-hall-of-fame-induction-marisela-pena-rey-mysterio",
+        "https://www.fightful.com/wrestling/rey-mysterio-suspended-from-aaa-in-storyline-accused-of-having-affair-with-marisela-pena/",
+        "https://411mania.com/wrestling/cooks-aaa-on-fox-review-11-7-26/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRA0rji8sqaF216CRWcFR0FXsPF5H-2qCXabyjRL1vHGs7iu5gMKqqjosMAUyo",
-      "image_credit": "NBC Sports Bay Area & California",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7u5PN-Hiz4qRejNvCXqIDE3_7y8KcdYMCCtyRmHG421sbfrD9xm4zGjWMPe4",
+      "image_credit": "Cageside Seats",
       "news": [
         {
-          "url": "https://www.nbcsportsbayarea.com/nba/sacramento-kings/deaaron-fox-darius-acuff-jr-spurs/1977718/",
-          "title": "Former Kings star De'Aaron Fox shares honest advice to rookie Darius Acuff Jr.",
-          "publisher": "NBC Sports Bay Area & California",
+          "url": "https://www.cagesideseats.com/lucha-libre-aaa-cmll/485564/wwe-aaa-heroes-inmortales-results-live-discussion-week-3-nov-7-2026-hall-of-fame-induction-marisela-pena-rey-mysterio",
+          "title": "WWE AAA Heroes Inmortales results, live discussion Week 3: Hall of Fame induction",
+          "publisher": "Cageside Seats",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRA0rji8sqaF216CRWcFR0FXsPF5H-2qCXabyjRL1vHGs7iu5gMKqqjosMAUyo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7u5PN-Hiz4qRejNvCXqIDE3_7y8KcdYMCCtyRmHG421sbfrD9xm4zGjWMPe4"
         },
         {
-          "url": "https://sports.yahoo.com/articles/aaron-fox-advices-rookie-darius-094457425.html",
-          "title": "De’Aaron Fox advices rookie Darius Acuff Jr. on …",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.fightful.com/wrestling/rey-mysterio-suspended-from-aaa-in-storyline-accused-of-having-affair-with-marisela-pena/",
+          "title": "Rey Mysterio Suspended From AAA In Storyline, Accused Of Having Affair With Marisela Peña",
+          "publisher": "Fightful",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT9ppvLNE6EPbW_vzWE7NKw3RsTAd03fDig_Cg5wQYc_5M02TVaVABHcuC7YU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrR3ZUAqG1DlKlohDg9VU3uNNwO5Hpvnr5EPM6aIT6pangdKmEZ-QlqdkvyI4"
         },
         {
-          "url": "https://www.nbcsportsbayarea.com/video/nba/sacramento-kings/deaaron-fox-presser-watch/1977731/",
-          "title": "Former Kings guard De'Aaron Fox shares advice to young rookie Darius Acuff Jr.",
-          "publisher": "NBC Sports Bay Area & California",
+          "url": "https://411mania.com/wrestling/cooks-aaa-on-fox-review-11-7-26/",
+          "title": "Cook’s AAA on FOX Review 11.7.26",
+          "publisher": "411Mania.",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBb9QjHXXK2UBLiyTofUQEuGrWp8ypQwsKArLivqoHnoGEY2-b58RfopxC76M"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeqbbRMpZboG3FUDVSKDtZIVx82qbfSiQWkJ2LmCEHgGgKwgj2Rak-ensLVbs"
         }
       ]
     },
@@ -77,282 +252,107 @@
       ]
     },
     {
-      "query": "rey mysterio",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T05:40:00Z",
-      "related_news_urls": [
-        "https://www.cagesideseats.com/lucha-libre-aaa-cmll/485564/wwe-aaa-heroes-inmortales-results-live-discussion-week-3-nov-7-2026-hall-of-fame-induction-marisela-pena-rey-mysterio",
-        "https://www.fightful.com/wrestling/rey-mysterio-suspended-from-aaa-in-storyline-accused-of-having-affair-with-marisela-pena/",
-        "https://411mania.com/wrestling/join-411s-live-aaa-on-fox-coverage-11-7-26/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7u5PN-Hiz4qRejNvCXqIDE3_7y8KcdYMCCtyRmHG421sbfrD9xm4zGjWMPe4",
-      "image_credit": "Cageside Seats",
-      "news": [
-        {
-          "url": "https://www.cagesideseats.com/lucha-libre-aaa-cmll/485564/wwe-aaa-heroes-inmortales-results-live-discussion-week-3-nov-7-2026-hall-of-fame-induction-marisela-pena-rey-mysterio",
-          "title": "WWE AAA Heroes Inmortales results, live discussion Week 3: Hall of Fame induction",
-          "publisher": "Cageside Seats",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7u5PN-Hiz4qRejNvCXqIDE3_7y8KcdYMCCtyRmHG421sbfrD9xm4zGjWMPe4"
-        },
-        {
-          "url": "https://www.fightful.com/wrestling/rey-mysterio-suspended-from-aaa-in-storyline-accused-of-having-affair-with-marisela-pena/",
-          "title": "Rey Mysterio Suspended From AAA In Storyline, Accused Of Having Affair With Marisela Peña",
-          "publisher": "Fightful",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrR3ZUAqG1DlKlohDg9VU3uNNwO5Hpvnr5EPM6aIT6pangdKmEZ-QlqdkvyI4"
-        },
-        {
-          "url": "https://411mania.com/wrestling/join-411s-live-aaa-on-fox-coverage-11-7-26/",
-          "title": "Join 411’s Live AAA on FOX Coverage",
-          "publisher": "411Mania.",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGDXsCgKyd06p51LB2yW1r1u9zlnNmTWifF1N8a75cOIvH4mBqx3qppejNBL0"
-        }
-      ]
-    },
-    {
       "query": "portland weather",
       "approx_searches": "200+",
       "published_at": "2026-11-08T05:40:00Z",
       "related_news_urls": [
-        "https://www.ksat.com/weather/2026/11/06/quiet-today-soaking-rainfall-by-saturday-night/",
-        "https://www.wavy.com/blogs/weather-blog/blog-we-asked-for-rain-were-getting-storms/",
-        "https://wgme.com/news/local/rain-moves-in-friday-bringing-more-showers-and-seasonable-temperatures-into-the-weekend"
+        "https://www.koin.com/weather/dry-start-to-the-weekend-more-rain-on-the-way-in-portland-area/",
+        "https://www.kptv.com/2026/11/04/off-showers-starting-wednesday-afternoon/",
+        "https://wgme.com/news/local/portland-wraps-up-one-of-its-driest-octobers-as-mild-november-looms"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7UctKjCg0qxJEEJCIYhcZB55YVQOetf71OMgTbK-AUgXxPbpozXjGhh99CnY",
-      "image_credit": "KSAT",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9POLZ2xZ6jBbHGeZt8f13U56KQ2fTkAzRfZWgZ5_-4d7U_xH2cwS0uECG7pg",
+      "image_credit": "KOIN.com",
       "news": [
         {
-          "url": "https://www.ksat.com/weather/2026/11/06/quiet-today-soaking-rainfall-by-saturday-night/",
-          "title": "Soaking rain for part of the weekend",
-          "publisher": "KSAT",
+          "url": "https://www.koin.com/weather/dry-start-to-the-weekend-more-rain-on-the-way-in-portland-area/",
+          "title": "Dry start to the weekend, more rain on the way in Portland area",
+          "publisher": "KOIN.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7UctKjCg0qxJEEJCIYhcZB55YVQOetf71OMgTbK-AUgXxPbpozXjGhh99CnY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9POLZ2xZ6jBbHGeZt8f13U56KQ2fTkAzRfZWgZ5_-4d7U_xH2cwS0uECG7pg"
         },
         {
-          "url": "https://www.wavy.com/blogs/weather-blog/blog-we-asked-for-rain-were-getting-storms/",
-          "title": "Blog: We asked for rain. We’re getting storms",
-          "publisher": "WAVY.com",
+          "url": "https://www.kptv.com/2026/11/04/off-showers-starting-wednesday-afternoon/",
+          "title": "On and off showers starting Wednesday afternoon",
+          "publisher": "KPTV",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTv3a1HWWKMaDohDdPK0QTNC4CRTWCQO76JXjCBooKNPBQbZhvfsjpm0VlKMh8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUqID4yZfcEqO2yV9wgvMeMiA-iZoN-wEYWPdT-vic4iHuu1j7IgWQ-GzALhs"
         },
         {
-          "url": "https://wgme.com/news/local/rain-moves-in-friday-bringing-more-showers-and-seasonable-temperatures-into-the-weekend",
-          "title": "Rain moves in Friday, bringing more showers and seasonable temperatures into the weekend",
+          "url": "https://wgme.com/news/local/portland-wraps-up-one-of-its-driest-octobers-as-mild-november-looms",
+          "title": "Portland wraps up one of its driest Octobers as mild November looms",
           "publisher": "WGME",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfsnj97aRyaHOxcKVfZzdBXk7RQvujyA3niSoKw3bCBTjbY0gOimopAktd_Vk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVj9GauUv-s04X16i84SqNuTT_XzT0WD7D3JaLarizfTo-HFV5nUdgOUeha3U"
         }
       ]
     },
     {
-      "query": "violent night 2",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T05:30:00Z",
+      "query": "de'aaron fox",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T05:40:00Z",
       "related_news_urls": [
-        "https://www.boxofficepro.com/long-range-forecast-will-moviegoers-say-ho-ho-ho-or-no-no-no-to-violent-night-2/",
-        "https://www.imdb.com/news/ni66100363/?ref_=ttnw_art_perm",
-        "https://bleedingcool.com/movies/violent-night-2-a-new-behind-the-scenes-featurette-released/"
+        "https://www.nbcsportsbayarea.com/nba/sacramento-kings/deaaron-fox-darius-acuff-jr-spurs/1977718/",
+        "https://sports.yahoo.com/articles/aaron-fox-advices-rookie-darius-094457425.html",
+        "https://www.nbcsportsbayarea.com/video/nba/sacramento-kings/deaaron-fox-presser-watch/1977731/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMNAOQfWPJ4VnrHfpZjVDu20dNvPDfZFv4aEeV0FQDOnrDKG3k4iyDPbX783k",
-      "image_credit": "Boxoffice Pro",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRA0rji8sqaF216CRWcFR0FXsPF5H-2qCXabyjRL1vHGs7iu5gMKqqjosMAUyo",
+      "image_credit": "NBC Sports Bay Area & California",
       "news": [
         {
-          "url": "https://www.boxofficepro.com/long-range-forecast-will-moviegoers-say-ho-ho-ho-or-no-no-no-to-violent-night-2/",
-          "title": "Long Range Forecast: Will Moviegoers Say Ho-Ho-Ho or No-No-No to VIOLENT NIGHT 2?",
-          "publisher": "Boxoffice Pro",
+          "url": "https://www.nbcsportsbayarea.com/nba/sacramento-kings/deaaron-fox-darius-acuff-jr-spurs/1977718/",
+          "title": "Former Kings star De'Aaron Fox shares honest advice to rookie Darius Acuff Jr.",
+          "publisher": "NBC Sports Bay Area & California",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMNAOQfWPJ4VnrHfpZjVDu20dNvPDfZFv4aEeV0FQDOnrDKG3k4iyDPbX783k"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRA0rji8sqaF216CRWcFR0FXsPF5H-2qCXabyjRL1vHGs7iu5gMKqqjosMAUyo"
         },
         {
-          "url": "https://www.imdb.com/news/ni66100363/?ref_=ttnw_art_perm",
-          "title": "David Harbour Is Officially Back in Action in Clip From Next Month's Violent New Sequel",
-          "publisher": "IMDb",
+          "url": "https://sports.yahoo.com/articles/aaron-fox-advices-rookie-darius-094457425.html",
+          "title": "De’Aaron Fox advices rookie Darius Acuff Jr. on …",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnSgYJ_Zdvrmwc6hsbgbuNMNitPtmSa_CoQx0xyjQsnh6mxxVDbeWEjMAufMg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT9ppvLNE6EPbW_vzWE7NKw3RsTAd03fDig_Cg5wQYc_5M02TVaVABHcuC7YU"
         },
         {
-          "url": "https://bleedingcool.com/movies/violent-night-2-a-new-behind-the-scenes-featurette-released/",
-          "title": "Violent Night 2: A New Behind-The-Scenes Featurette Released",
-          "publisher": "Bleeding Cool News",
+          "url": "https://www.nbcsportsbayarea.com/video/nba/sacramento-kings/deaaron-fox-presser-watch/1977731/",
+          "title": "Former Kings guard De'Aaron Fox shares advice to young rookie Darius Acuff Jr.",
+          "publisher": "NBC Sports Bay Area & California",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHoC_U0I4oG05lj5LilIVirur4XI7kp7l_ZQFgVkbbOZ9Ioqb2l1ZSbGmkLck"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBb9QjHXXK2UBLiyTofUQEuGrWp8ypQwsKArLivqoHnoGEY2-b58RfopxC76M"
         }
       ]
     },
     {
-      "query": "sherrod brown",
+      "query": "japan earthquakes",
       "approx_searches": "5000+",
       "published_at": "2026-11-08T05:30:00Z",
       "related_news_urls": [
-        "https://www.nbcnews.com/politics/2026-elections/alaska-governor-results",
-        "https://spotlightdelaware.org/2026/11/04/delaware-democrats-secure-statehouse-supermajority-with-upset-wins/",
-        "https://thehill.com/homenews/campaign/6165627-coons-wins-delaware-senate-race/"
+        "https://abcnews.com/International/wireStory/strong-earthquake-preliminary-magnitude-57-strikes-japan-meteorological-137946690",
+        "https://www.aljazeera.com/news/2026/11/8/earthquake-hits-central-japan-injuring-more-than-20-people",
+        "https://japantoday.com/category/national/m5.7-quake-strikes-central-japan-over-20-injured"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWmvwHQ7qw_OeBHOZP6ZwuRTw2z_p-Uk4Zzu0P7tlDCqywgsu_KC3_mofNjNI",
-      "image_credit": "NBC News",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnAXuNjFpZC1-r3b4tjIgOqXdrgCSTTew6u5rc3xoVkPvrQ-uxkBhne9UckDs",
+      "image_credit": "ABC News - Breaking News, Latest News and Videos",
       "news": [
         {
-          "url": "https://www.nbcnews.com/politics/2026-elections/alaska-governor-results",
-          "title": "Alaska Governor Midterm Election 2026: Live Results",
-          "publisher": "NBC News",
+          "url": "https://abcnews.com/International/wireStory/strong-earthquake-preliminary-magnitude-57-strikes-japan-meteorological-137946690",
+          "title": "A strong earthquake with a preliminary magnitude of 5.7 strikes Japan, meteorological agency says",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWmvwHQ7qw_OeBHOZP6ZwuRTw2z_p-Uk4Zzu0P7tlDCqywgsu_KC3_mofNjNI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnAXuNjFpZC1-r3b4tjIgOqXdrgCSTTew6u5rc3xoVkPvrQ-uxkBhne9UckDs"
         },
         {
-          "url": "https://spotlightdelaware.org/2026/11/04/delaware-democrats-secure-statehouse-supermajority-with-upset-wins/",
-          "title": "Delaware Democrats secure statehouse supermajority with upset wins",
-          "publisher": "Spotlight Delaware",
+          "url": "https://www.aljazeera.com/news/2026/11/8/earthquake-hits-central-japan-injuring-more-than-20-people",
+          "title": "Earthquake hits central Japan, injuring more than 20 people",
+          "publisher": "Al Jazeera",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjktPwmnUL-WCAbhb-4-fpmVtPU2AJqpAv2an284n-5Qa1rHLxxQUM1KlllZY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSfxV4nroBs4Fuaij1-hJvTeyJEEGcpUZ_od_EzOqyrD79xJVvdGhyMlAxAiw"
         },
         {
-          "url": "https://thehill.com/homenews/campaign/6165627-coons-wins-delaware-senate-race/",
-          "title": "Coons wins Delaware Senate reelection",
-          "publisher": "The Hill",
+          "url": "https://japantoday.com/category/national/m5.7-quake-strikes-central-japan-over-20-injured",
+          "title": "M5.7 quake strikes central Japan; over 20 injured",
+          "publisher": "Japan Today",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_ZAe31URrOfOfOVCrpLv_jygu924yctQRATBiQoNXIB_Gavp7nNex64PnJFQ"
-        }
-      ]
-    },
-    {
-      "query": "mississippi senate race election results",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-08T05:30:00Z",
-      "related_news_urls": [
-        "https://apnews.com/projects/elections-2026/mississippi-us-senate-results/",
-        "https://www.washingtonpost.com/politics/2026/11/07/here-are-midterm-races-watch-that-are-still-too-close-call/",
-        "https://www.nytimes.com/live/2026/11/06/us/midterm-elections-trump"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9oEasnTDRUr2q-TjRibhJWnth8kxzHe5jfe3GfDfY-gXR0YEwlFWtnaG6Fng",
-      "image_credit": "AP News",
-      "news": [
-        {
-          "url": "https://apnews.com/projects/elections-2026/mississippi-us-senate-results/",
-          "title": "Mississippi U.S. Senate Election Live Results 2026",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9oEasnTDRUr2q-TjRibhJWnth8kxzHe5jfe3GfDfY-gXR0YEwlFWtnaG6Fng"
-        },
-        {
-          "url": "https://www.washingtonpost.com/politics/2026/11/07/here-are-midterm-races-watch-that-are-still-too-close-call/",
-          "title": "Here are the midterm races to watch that are still too close to call",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSw9Gl3_k_6k4YrhlR-qoDB2misanbq236KYZOgpXxqxkm2JfzaChL2X-TtXFI"
-        },
-        {
-          "url": "https://www.nytimes.com/live/2026/11/06/us/midterm-elections-trump",
-          "title": "Midterm Elections Live Updates: Democrats’ Lead in Mississippi Senate Race Grows",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1SVSUKSj-s0swbJ0p6q1XqytKWzh6PapUzPInxcpAGG9qol4sZ9IUSGzrEMk"
-        }
-      ]
-    },
-    {
-      "query": "oj simpson",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T05:30:00Z",
-      "related_news_urls": [
-        "https://people.com/did-o-j-simpson-have-an-accomplice-new-docuseries-revisits-theory-behind-nicole-brown-simpson-and-ron-goldman-s-murders-12238692",
-        "https://www.foxnews.com/us/9-mystery-fingerprints-oj-simpson-murder-case-could-hold-new-clues-more-than-30-years-later",
-        "https://www.aol.com/articles/o-j-simpson-docuseries-discusses-184156000.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQW9KzYP69ge1QQ_istfwDHCN9EUXpcBAp0T7tn3DQ4uaa9wGN1d1mzy-Lvxdc",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/did-o-j-simpson-have-an-accomplice-new-docuseries-revisits-theory-behind-nicole-brown-simpson-and-ron-goldman-s-murders-12238692",
-          "title": "O.J. Simpson Accomplice Theory in Double Murder Revisited in New Docuseries",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQW9KzYP69ge1QQ_istfwDHCN9EUXpcBAp0T7tn3DQ4uaa9wGN1d1mzy-Lvxdc"
-        },
-        {
-          "url": "https://www.foxnews.com/us/9-mystery-fingerprints-oj-simpson-murder-case-could-hold-new-clues-more-than-30-years-later",
-          "title": "9 mystery fingerprints from OJ Simpson murder case could hold new clues more than 30 years later",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRs3SKXlP4C_YnojlwBbDqleWU00jT0tuTo314uSPY5XCnZ8_eHjLHj85EFV6k"
-        },
-        {
-          "url": "https://www.aol.com/articles/o-j-simpson-docuseries-discusses-184156000.html",
-          "title": "O.J. Simpson Docuseries Discusses Theory He May Have Had an Accomplice",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQo4GLhcOJwRoHb3HkalooYEYCz_DVHaeUBEWRFiSuHlfLfVFyusSGaBLJQ_ok"
-        }
-      ]
-    },
-    {
-      "query": "cody campbell",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T05:30:00Z",
-      "related_news_urls": [
-        "https://www.kut.org/education/2026-11-05/with-democrats-in-charge-of-texas-whats-next-for-ut-austin",
-        "https://www.texastribune.org/2026/11/05/texas-universities-colleges-conservative-overhaul-democrats-reverse/",
-        "https://www.houstonchronicle.com/politics/texas/article/gina-hinojosa-appointments-22512099.php"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRlmq2Co3ClyUlibJtXxniwP-tQR9M8UpseGpTecLyN2lEmGeK5aMpnVAqzdLg",
-      "image_credit": "KUT",
-      "news": [
-        {
-          "url": "https://www.kut.org/education/2026-11-05/with-democrats-in-charge-of-texas-whats-next-for-ut-austin",
-          "title": "With Democrats in charge of Texas, what's next for UT Austin?",
-          "publisher": "KUT",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRlmq2Co3ClyUlibJtXxniwP-tQR9M8UpseGpTecLyN2lEmGeK5aMpnVAqzdLg"
-        },
-        {
-          "url": "https://www.texastribune.org/2026/11/05/texas-universities-colleges-conservative-overhaul-democrats-reverse/",
-          "title": "Democrats inheriting Texas colleges the GOP overhauled in conservative push",
-          "publisher": "The Texas Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWJxJqhWVrSAkYibl4zLetmKO_R8g_6HAMsJkLl4DjAPpqFUT9ERrFlfApBos"
-        },
-        {
-          "url": "https://www.houstonchronicle.com/politics/texas/article/gina-hinojosa-appointments-22512099.php",
-          "title": "Gina Hinojosa will make dozens of key appointments in her first year as governor",
-          "publisher": "Houston Chronicle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_w5KzDl3jXLsnw30qj629yHyudCpzQRpVuk85a3fIjUq_wqb9jwK1nJSv9zM"
-        }
-      ]
-    },
-    {
-      "query": "henry cavill",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T05:30:00Z",
-      "related_news_urls": [
-        "https://blog.google/products-and-platforms/devices/googlebook/henry-cavill-mustache-protocol-video-game/",
-        "https://9to5google.com/2026/11/04/henry-cavill-mustache-protocol-googlebook/",
-        "https://www.androidauthority.com/henry-cavill-googlebook-game-3731786/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBtvZ1IMNcBO1TlEVLvPsEuCiKSFl5lWQbVukdQv5zI1aoQAm2Yw_vKcwSaXs",
-      "image_credit": "blog.google",
-      "news": [
-        {
-          "url": "https://blog.google/products-and-platforms/devices/googlebook/henry-cavill-mustache-protocol-video-game/",
-          "title": "Watch Henry Cavill build a video game on his Googlebook",
-          "publisher": "blog.google",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBtvZ1IMNcBO1TlEVLvPsEuCiKSFl5lWQbVukdQv5zI1aoQAm2Yw_vKcwSaXs"
-        },
-        {
-          "url": "https://9to5google.com/2026/11/04/henry-cavill-mustache-protocol-googlebook/",
-          "title": "Henry Cavill builds 16-bit ‘Mustache Protocol’ game on Googlebook for a good cause [Video]",
-          "publisher": "9to5Google",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRxJsT5_zmNZlt2PZdaCvarEYM5im2p7gIqWLTMwWfOVwe-p6c6KOYd81fJhk"
-        },
-        {
-          "url": "https://www.androidauthority.com/henry-cavill-googlebook-game-3731786/",
-          "title": "Henry Cavill’s Justice League mustache disaster is now a tongue-in-cheek Googlebook game for charity",
-          "publisher": "Android Authority",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8BqPxTzp1xUTOLdxUmtUqP85FvmYPfkV7kgGm-YYMlGdvgktX3dgEo1IWZhk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTytx9eyLLY3cbQFfgKBnRSlXWN47O3cKvxUqf5CSz4QDuiMT_da-vcY1fY5H0"
         }
       ]
     }
