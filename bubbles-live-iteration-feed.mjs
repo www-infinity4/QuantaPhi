@@ -47,7 +47,7 @@ const toolTitle=(tool,phase,provider)=>{
  const name=tool.startsWith('web.')&&provider==='google'?'Google':info[0];
  return name+' · '+(phase==='complete'?info[2]:phase==='failed'?'action failed':info[1]);
 };
-export function newLiveBitsState(){return {entries:[],seenReceipts:[],bitState:newBitSession(),contextReady:false,candidates:0,credits:0,sequence:0,live:'Ready for your next request',running:false};}
+export function newLiveBitsState(){return {entries:[],seenReceipts:[],bitState:newBitSession(),contextReady:false,candidates:0,credits:0,sequence:0,iterationCount:0,live:'Ready for your next request',running:false};}
 export function advanceLiveBits(previous,event){
  if(!event||typeof event!=='object')return previous;
  if(event.type==='session_changed')return newLiveBitsState();
@@ -55,9 +55,12 @@ export function advanceLiveBits(previous,event){
  s.bitState=applyBitObservation(previous.bitState||newBitSession(),event);
  s.candidates=s.bitState.candidateCount;s.credits=s.bitState.creditedBits;
  const add=(headline,state,extra={})=>{
-  const entry={number:++s.sequence,headline,state,criteria:'',criteriaKey:'',resource:'',detail:'',tool:'',receiptTail:'',...extra};
+  // Context and owner-memory observations stay in the ledger but cannot
+  // consume the engineering iteration number shown to the user.
+  const ordinal=extra.contextOnly?null:++s.iterationCount;
+  const entry={number:++s.sequence,ordinal,headline,state,criteria:'',criteriaKey:'',resource:'',detail:'',tool:'',receiptTail:'',...extra};
   s.entries.push(entry);if(s.entries.length>40)s.entries.shift();
-  s.live=entry.contextOnly?'Context · '+headline:'Iteration '+entry.number+' · '+headline;
+  s.live=entry.contextOnly?'Context · '+headline:'Iteration '+entry.ordinal+' · '+headline;
   return entry;
  };
  if(event.type==='turn_started'){
@@ -145,7 +148,7 @@ export function advanceLiveBits(previous,event){
  let row;
  if(existing){
   Object.assign(existing,{headline,state:phase,criteria:extra.criteria||existing.criteria,criteriaKey:extra.criteriaKey||existing.criteriaKey,resource:extra.resource||existing.resource,detail:extra.detail||existing.detail,receiptTail:extra.receiptTail||existing.receiptTail,fullReceiptId:extra.fullReceiptId||existing.fullReceiptId});
-  row=existing;s.live='Iteration '+row.number+' · '+headline;
+  row=existing;s.live='Iteration '+row.ordinal+' · '+headline;
  }else row=add(headline,phase,extra);
  if(event.type==='tool_receipt'&&idOkay(receipt)&&s.seenReceipts.length<500){
   s.seenReceipts.push(receipt);
@@ -199,7 +202,7 @@ export function mountLiveView(doc=typeof document!=='undefined'?document:null){
    const li=doc.createElement('li');li.className='ba-live-bit-entry';
    const heading=doc.createElement('strong');
    heading.textContent=entry.contextOnly?'Context · '+entry.headline+' · '+entry.state:
-    'Iteration '+entry.number+' · '+entry.headline+' · '+entry.state;
+    'Iteration '+entry.ordinal+' · '+entry.headline+' · '+entry.state;
    li.append(heading);
    for(const [label,value] of [['Criteria',entry.criteria],['Repository / resource',entry.resource],
        ['Work performed',entry.detail],['Receipt suffix',entry.receiptTail]]){
