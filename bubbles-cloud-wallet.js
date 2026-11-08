@@ -52,6 +52,18 @@ function workAssetLine(label,item){
 function item(target,text){
  const li=document.createElement('li');li.textContent=text;target.append(li);
 }
+function disconnectedBalances(){
+ balances.replaceChildren(
+  line('GIT Coin',null,'No verified balance · sign in to load source receipts'),
+  line('Bubble Bits',null,'No verified balance · sign in to load earned bits'),
+  line('GPT Coin',null,'No verified balance · verified GPT runs required'),
+  line('Cash Wallet',null,'No verified balance · provider funds not connected')
+ );
+ balances.hidden=false;
+ history.hidden=true;
+ receipts.replaceChildren();
+}
+
 async function paginated(kind,token){
  let cursor=null,found=[],pages=0;
  while(pages++<50){
@@ -138,14 +150,14 @@ async function load(){
  try{
   const token=await verifiedWalletToken();
   if(!/^sq_[A-Za-z0-9_-]{32,}$/.test(token||'')){
-   balances.hidden=true;history.hidden=true;receipts.replaceChildren();
+   disconnectedBalances();
    status('Wallet not connected in this browser or Android app. Your Cloudflare records have not been erased. Use Find Cloud Tokens to restore an existing verified wallet.');
    return;
   }
   const [star,unified]=await Promise.all([api(STAR+'/v1/state',token),api(WALLET+'/v1/wallet/state',token)]);
   await populate(token,star,unified);
  }catch(error){
-  balances.hidden=true;history.hidden=true;receipts.replaceChildren();
+  disconnectedBalances();
   status('Could not verify the current wallet: '+String(error.message||error).slice(0,180)+'. Stored Cloudflare records were not changed.');
  }finally{pending=false;refresh.disabled=false}
 }
@@ -153,6 +165,10 @@ refresh.addEventListener('click',()=>void load());
 document.addEventListener('starquest:ledger-connected',()=>void load());
 document.addEventListener('starquest:auth-changed',()=>void load());
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')void load()});
+// A trusted unified-wallet state update, unlike a Bubble Bits animation or
+// an AI text response, can request a fresh read of authenticated D1 balances.
+global.addEventListener('infinity:wallet-state',()=>void load());
+disconnectedBalances();
 void load();
 })(window);
 +(cash.availableCents/100).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}):'—';
