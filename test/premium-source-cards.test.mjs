@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {PREMIUM_CARDS,sourceURL,normalizeResults,attachArticleImages} from '../premium-source-cards.mjs';
+import {COIN_MARKETS,normalizeCoinSaleResults,referenceCoinImage} from '../coin-sale-listings.mjs';
 test('every added collector/source card has a unique fixed official HTTPS destination',()=>{
  assert.equal(PREMIUM_CARDS.filter(x=>!x.id.startsWith('denver-')).length,17);
  assert.equal(PREMIUM_CARDS.filter(x=>x.id.startsWith('denver-')).length,8);
@@ -50,4 +51,40 @@ test('Coin World images attach only to matching publisher stories despite tracki
  assert.equal(merged[0].image,'https://assets.coinworld.com/news/real-story.jpg');
  assert.equal(merged[1].image,null,'Do not attribute a photo to the wrong news story');
  assert.equal(stories[0].image,null,'Do not mutate publisher search records');
+});
+
+test('certified VAM marketplace results keep actual lot provenance, not old sales masquerading as for-sale',()=>{
+ const seller=COIN_MARKETS.find(x=>x.id==='icollector');
+ const rows=normalizeCoinSaleResults({results:[
+  {title:'1889-O MORGAN DOLLAR, PCGS AU-53 VAM 2 OVAL O',url:'https://www.icollector.com/1889-O-MORGAN-DOLLAR-PCGS-AU-53-VAM-2-OVAL-O_i37331753',status:'sold',thumbnail:'https://www.icollector.com/photos/example.jpg'},
+  {title:'Invented PCGS VAM lot',url:'https://www.icollector.com.attacker.invalid/lot',status:'open'},
+  {title:'Uncertified Morgan dollar',url:'https://www.icollector.com/Morgan-Dollar_i123456',status:'active'},
+  {title:'Coin index',url:'https://www.icollector.com/coins',status:'active'}
+ ]},seller);
+ assert.equal(rows.length,1);
+ assert.equal(rows[0].seller,'iCollector');
+ assert.equal(rows[0].saleStatus,'sold');
+ assert.equal(rows[0].forSale,false);
+ assert.equal(rows[0].image,null,'Image scraping is not image-use authorization');
+ assert.match(rows[0].url,/_i37331753$/);
+});
+test('GreatCollections VAM lots require actual certified listing URLs and no invented price',()=>{
+ const seller=COIN_MARKETS.find(x=>x.id==='greatcollections');
+ const rows=normalizeCoinSaleResults({results:[
+  {title:'1888-O Hot Lips VAM-4 Top 100 PCGS AU53',url:'https://www.greatcollections.com/Coin/2299600/1888-O-Morgan-Silver-Dollar-Hot-Lips-VAM-4-PCGS-AU-53',description:'Current Bid $410'},
+  {title:'A non-PCGS advertising landing page',url:'https://www.greatcollections.com/vams'},
+  {title:'Unrelated',url:'https://greatcollections.com.evil.test/Coin/1/Fake-PCGS-VAM'}
+ ]},seller);
+ assert.equal(rows.length,1);
+ assert.equal(rows[0].saleStatus,'unverified');
+ assert.equal(rows[0].price,null,'A search snippet is not a verified bid');
+ assert.equal(rows[0].forSale,false);
+});
+test('licensed real PCGS holder illustration is labelled as reference, never a sale lot',()=>{
+ const image=referenceCoinImage('pcgs');
+ assert.equal(image.license,'CC0-1.0');
+ assert.match(image.source,/commons\\.wikimedia\\.org\\/wiki\\/File:/);
+ assert.match(image.label,/reference/i);
+ assert.equal(image.isListingPhoto,false);
+ assert.equal(referenceCoinImage('coinworld'),null);
 });
