@@ -22,6 +22,23 @@ export function parseBranchStatusQuery(value){
     !/^[A-Za-z0-9][A-Za-z0-9._/-]{0,99}$/.test(branch))return null;
  return {repository,branch};
 }
+// A claim of "completed" from the Brain response is evidence only when its
+// persisted readback, repository identity and exact returned ref agree with the
+// owner's original request. It does not prove a runner ran or deployed.
+export function isVerifiedBranchReadReceipt(query,result){
+ const receipt=result?.readReceipt;
+ if(!query||!result||result.ok!==true||
+    !REPO.test(query.repository||'')||result.repository!==query.repository||
+    result.branch!==query.branch||!Number.isSafeInteger(result.repositoryId)||result.repositoryId<=0||
+    !receipt||receipt.persisted!==true||receipt.tool!=='github.read_branch_status'||
+    receipt.status!=='complete'||!/^branch_[a-f0-9]{32}$/.test(receipt.id||'')||
+    receipt.repository!==result.repository||receipt.repositoryId!==result.repositoryId||
+    receipt.branch!==result.branch||receipt.exists!==result.exists||receipt.headSha!==result.headSha||
+    receipt.jobExecutionVerified!==false||receipt.deploymentVerified!==false||
+    result.jobExecutionVerified!==false||result.deploymentVerified!==false)return false;
+ return (result.status==='branch_found'&&result.exists===true&&SHA.test(result.headSha||''))||
+    (result.status==='branch_not_found'&&result.exists===false&&result.headSha===null);
+}
 export function describeAuthenticatedBranchStatus(query,branchResult,ticketResult,options={}){
  if(!query||!REPO.test(query.repository))return 'GitHub branch status not verified: invalid repository.';
  const same=branchResult?.ok===true&&branchResult.repository===query.repository&&
