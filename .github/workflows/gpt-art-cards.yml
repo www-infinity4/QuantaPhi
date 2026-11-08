@@ -1,0 +1,29 @@
+name: GPT artwork and owner Developer Quick Cards
+on:
+  pull_request:
+    paths:
+      - 'gpt-art-*.mjs'
+      - 'gpt-art-*.css'
+      - 'owner-*.mjs'
+      - 'assets/gpt-art/**'
+      - 'developer-carousel.*'
+      - 'developer-carousel-core.mjs'
+      - 'oracle-card-deck.js'
+      - 'index.html'
+      - 'tests/gpt-art-cards.test.mjs'
+      - 'tests/owner-engineer-core.test.mjs'
+      - 'tests/developer-carousel.test.mjs'
+      - '.github/workflows/gpt-art-cards.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Focused published-source and Developer regression tests
+        run: node --test tests/gpt-art-cards.test.mjs tests/owner-engineer-core.test.mjs tests/developer-carousel.test.mjs

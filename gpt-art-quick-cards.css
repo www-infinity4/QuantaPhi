@@ -1,0 +1,10 @@
+/* Original image-first GPT artwork and fantasy trading-card previews. */
+.gpt-art-quick-card{max-width:720px;margin:0 auto;background:#fff;color:#302a38;display:grid;gap:10px;padding:12px;border-radius:20px}
+.gpt-art-quick-card .gpt-art-frame{width:100%;max-height:min(74vh,710px);display:grid;place-items:center;overflow:hidden;background:#f4f1f7;border-radius:14px}
+.gpt-art-quick-card .gpt-art-frame img{display:block;width:100%;max-height:min(74vh,710px);object-fit:contain;object-position:center}
+.gpt-art-quick-card .gpt-art-title{font-size:clamp(22px,5vw,30px);line-height:1.24;margin:2px 0;color:#482d60}
+.gpt-art-quick-card .iqc-description{font-size:16px;line-height:1.5;color:#5c5268}
+.gpt-art-quick-card .gpt-art-create{display:inline-flex;min-height:48px;align-items:center;justify-content:center;padding:11px 15px;margin:3px 0;border-radius:13px;border:1px solid #d6c5df;background:#fff;color:#512878;text-decoration:none;font-weight:780;font-size:16px;text-align:center}
+.gpt-art-quick-card .gpt-art-create:first-of-type{background:#4f316c;color:#fff}
+.gpt-art-quick-card .gpt-art-disclosure{font-size:13px;line-height:1.55;color:#69616f}
+@media(max-width:390px){.gpt-art-quick-card{padding:8px}.gpt-art-quick-card .gpt-art-create{width:100%}}

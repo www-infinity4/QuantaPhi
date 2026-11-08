@@ -58,3 +58,24 @@
  .developer-editor{padding:10px 3px 4px}
 }
 @media(prefers-reduced-motion:reduce){.developer-choice-dot{transition:none}}
+
+/* Owner biography is an original sixth Developer Quick Card, never a public-ad proxy. */
+.owner-developer-card{font:inherit;color:#30243e;padding:4px 8px 12px;line-height:1.55}
+.owner-card-eyebrow{font-size:12px!important;letter-spacing:.06em;font-weight:800;color:#71577b}
+.owner-card-heading{font-size:clamp(22px,5vw,27px);line-height:1.22;color:#432657;margin:8px 0}
+.owner-card-summary{font-size:16px!important;line-height:1.58!important}
+.owner-system-list{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));margin:14px 0}
+.owner-system{padding:13px;border:1px solid #e4d8eb;border-radius:14px;background:#f9f6fc}
+.owner-system strong{font-size:17px;color:#3d2455}
+.owner-system p{font-size:15px;line-height:1.56;margin:6px 0 0}
+.owner-card-actions{display:flex;gap:10px;flex-wrap:wrap;margin:15px 0}
+.owner-card-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 15px;border-radius:13px;border:1px solid #cdbbd9;background:#fff;color:#512875;font-size:16px;font-weight:750;text-decoration:none}
+.owner-card-actions a.owner-gpt-create{background:#49305e;color:#fff}
+.owner-card-fineprint{font-size:13px;line-height:1.55;color:#73667b}
+@media(max-width:390px){.owner-system-list{grid-template-columns:1fr}.owner-card-actions a{width:100%}}
+
+/* Do not crop the owner's portrait into a wide background banner. */
+.developer-cover-art[data-mode="portrait"]{background:#e8e3ec}
+.developer-cover-art[data-mode="portrait"] .developer-cover-image{width:auto;max-width:100%;height:100%;object-fit:contain;object-position:center}
+
+.developer-gpt-action{display:flex;align-items:center;justify-content:center;min-height:48px;margin:4px 14px 12px;padding:10px 14px;background:#4d3166;color:#fff!important;border:1px solid #4d3166;border-radius:14px;text-decoration:none;font-size:16px;font-weight:780}
