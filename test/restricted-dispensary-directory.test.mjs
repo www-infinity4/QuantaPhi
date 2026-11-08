@@ -94,3 +94,16 @@ test('six-source media galleries are strictly rights reviewed, non-product, age-
  assert.deepEqual(gallery.map(x=>x.alt),Array.from({length:6},(_,i)=>'Store exterior '+i));
  assert.equal(approvedDirectoryMedia({...row,media_gallery:[{...good(1),rights_evidence_url:''}]},true,now).length,0);
 });
+
+test('reviewed gallery is wired into the original Android card with accessible controls',async()=>{
+ const fs=await import('node:fs/promises');
+ const client=await fs.readFile(new URL('../restricted-dispensary-cards.mjs',import.meta.url),'utf8');
+ const css=await fs.readFile(new URL('../restricted-dispensary-cards.css',import.meta.url),'utf8');
+ assert.match(client,/approvedDirectoryMedia\(row,acknowledged\)/);
+ assert.match(client,/Play gallery/);
+ assert.match(client,/Pause gallery/);
+ assert.match(client,/prefers-reduced-motion: reduce/);
+ assert.match(client,/photo\.referrerPolicy='no-referrer'/);
+ assert.match(css,/\.dc-gallery-image/);
+ assert.match(css,/\.dc-gallery-controls/);
+});
