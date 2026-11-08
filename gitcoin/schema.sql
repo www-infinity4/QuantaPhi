@@ -61,7 +61,7 @@ CREATE INDEX IF NOT EXISTS idx_gitcoin_awards_wallet ON gitcoin_awards(wallet_id
 -- One historical copy per repository/path/content. Copying the same line back
 -- into the file after deletion cannot mint it again under a new commit SHA.
 CREATE TABLE IF NOT EXISTS gitcoin_line_history (
- repo TEXT NOT NULL,
+ repo TEXT NOT NULL COLLATE NOCASE,
  file_path TEXT NOT NULL,
  content_sha256 TEXT NOT NULL,
  receipt_id TEXT NOT NULL UNIQUE REFERENCES gitcoin_line_claims(receipt_id),
@@ -76,12 +76,14 @@ CREATE TRIGGER IF NOT EXISTS gitcoin_claim_recipient_guard_v2 BEFORE INSERT ON g
 WHEN EXISTS(SELECT 1 FROM gitcoin_line_claims c WHERE c.receipt_id=NEW.receipt_id AND
  (c.repo<>NEW.repo OR c.commit_sha<>NEW.commit_sha OR c.file_path<>NEW.file_path OR c.line_number<>NEW.line_number OR
   c.content_sha256<>NEW.content_sha256 OR c.recipient_wallet_id IS NOT NEW.recipient_wallet_id OR
+  c.authenticated_submitter<>NEW.authenticated_submitter OR c.customer_wallet_id IS NOT NEW.customer_wallet_id OR
   c.execution_channel<>NEW.execution_channel OR c.recipient_policy<>NEW.recipient_policy OR c.executor_binding_id IS NOT NEW.executor_binding_id))
 BEGIN SELECT RAISE(ABORT,'git_receipt_conflict'); END;
 CREATE TRIGGER IF NOT EXISTS gitcoin_award_verified_guard_v2 BEFORE INSERT ON gitcoin_awards
 WHEN NOT EXISTS(SELECT 1 FROM gitcoin_line_claims c WHERE c.receipt_id=NEW.receipt_id AND c.status='verified'
  AND c.recipient_wallet_id=NEW.wallet_id AND c.git_type=NEW.git_type
  AND c.github_evidence_id=NEW.github_evidence_id AND c.quant_ai_review_id=NEW.quant_ai_review_id
+ AND (c.builder_claim<>'bubbles' OR c.execution_channel='bubbles')
  AND (c.execution_channel<>'bubbles' OR EXISTS(SELECT 1 FROM gitcoin_bubbles_executor e
   WHERE e.singleton=1 AND e.active=1 AND e.owner_verified=1 AND e.binding_id=c.executor_binding_id
   AND e.wallet_id=NEW.wallet_id AND c.recipient_policy='bubbles_owner_executor_v1')))
@@ -94,6 +96,38 @@ CREATE TRIGGER IF NOT EXISTS gitcoin_history_no_update BEFORE UPDATE ON gitcoin_
 BEGIN SELECT RAISE(ABORT,'immutable_git_history'); END;
 CREATE TRIGGER IF NOT EXISTS gitcoin_history_no_delete BEFORE DELETE ON gitcoin_line_history
 BEGIN SELECT RAISE(ABORT,'immutable_git_history'); END;
+
+-- One globally serialized issued GIT per verified award, shared across users
+-- in this ONE authoritative GIT D1 database. Termux provisional IDs are not
+-- coin serial numbers. SQLite AUTOINCREMENT prevents reuse of deleted serials.
+CREATE TABLE IF NOT EXISTS gitcoin_serials (
+  serial_no INTEGER PRIMARY KEY AUTOINCREMENT,
+  receipt_id TEXT NOT NULL UNIQUE REFERENCES gitcoin_awards(receipt_id),
+  wallet_id TEXT NOT NULL,
+  creator_subject TEXT NOT NULL,
+  customer_wallet_id TEXT,
+  git_type TEXT NOT NULL,
+  issued_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE INDEX IF NOT EXISTS idx_gitcoin_serials_wallet ON gitcoin_serials(wallet_id,serial_no);
+CREATE TRIGGER IF NOT EXISTS gitcoin_serials_verified_guard BEFORE INSERT ON gitcoin_serials
+WHEN NOT EXISTS (
+ SELECT 1 FROM gitcoin_awards a JOIN gitcoin_line_claims c ON c.receipt_id=a.receipt_id
+ WHERE a.receipt_id=NEW.receipt_id AND a.wallet_id=NEW.wallet_id
+ AND a.git_type=NEW.git_type AND c.authenticated_submitter=NEW.creator_subject
+ AND c.customer_wallet_id IS NEW.customer_wallet_id
+)
+BEGIN SELECT RAISE(ABORT,'gitcoin_serial_requires_verified_award'); END;
+CREATE TRIGGER IF NOT EXISTS gitcoin_serials_no_update BEFORE UPDATE ON gitcoin_serials
+BEGIN SELECT RAISE(ABORT,'immutable_gitcoin_serial'); END;
+CREATE TRIGGER IF NOT EXISTS gitcoin_serials_no_delete BEFORE DELETE ON gitcoin_serials
+BEGIN SELECT RAISE(ABORT,'immutable_gitcoin_serial'); END;
+-- Deterministic backfill for older awards in the isolated GIT ledger, if any.
+-- The historic receipt, wallet and creator remain unchanged.
+INSERT OR IGNORE INTO gitcoin_serials(receipt_id,wallet_id,creator_subject,customer_wallet_id,git_type)
+SELECT a.receipt_id,a.wallet_id,c.authenticated_submitter,c.customer_wallet_id,a.git_type
+FROM gitcoin_awards a JOIN gitcoin_line_claims c ON c.receipt_id=a.receipt_id
+ORDER BY a.issued_at,a.receipt_id;
 
 -- Trade/transfer proposal: NO API and NO active transfer process yet.
 -- Later service must lock/serialize per wallet, prove authorized signatures,
