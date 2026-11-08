@@ -97,6 +97,38 @@ BEGIN SELECT RAISE(ABORT,'immutable_git_history'); END;
 CREATE TRIGGER IF NOT EXISTS gitcoin_history_no_delete BEFORE DELETE ON gitcoin_line_history
 BEGIN SELECT RAISE(ABORT,'immutable_git_history'); END;
 
+-- One globally serialized issued GIT per verified award, shared across users
+-- in this ONE authoritative GIT D1 database. Termux provisional IDs are not
+-- coin serial numbers. SQLite AUTOINCREMENT prevents reuse of deleted serials.
+CREATE TABLE IF NOT EXISTS gitcoin_serials (
+  serial_no INTEGER PRIMARY KEY AUTOINCREMENT,
+  receipt_id TEXT NOT NULL UNIQUE REFERENCES gitcoin_awards(receipt_id),
+  wallet_id TEXT NOT NULL,
+  creator_subject TEXT NOT NULL,
+  customer_wallet_id TEXT,
+  git_type TEXT NOT NULL,
+  issued_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE INDEX IF NOT EXISTS idx_gitcoin_serials_wallet ON gitcoin_serials(wallet_id,serial_no);
+CREATE TRIGGER IF NOT EXISTS gitcoin_serials_verified_guard BEFORE INSERT ON gitcoin_serials
+WHEN NOT EXISTS (
+ SELECT 1 FROM gitcoin_awards a JOIN gitcoin_line_claims c ON c.receipt_id=a.receipt_id
+ WHERE a.receipt_id=NEW.receipt_id AND a.wallet_id=NEW.wallet_id
+ AND a.git_type=NEW.git_type AND c.authenticated_submitter=NEW.creator_subject
+ AND c.customer_wallet_id IS NEW.customer_wallet_id
+)
+BEGIN SELECT RAISE(ABORT,'gitcoin_serial_requires_verified_award'); END;
+CREATE TRIGGER IF NOT EXISTS gitcoin_serials_no_update BEFORE UPDATE ON gitcoin_serials
+BEGIN SELECT RAISE(ABORT,'immutable_gitcoin_serial'); END;
+CREATE TRIGGER IF NOT EXISTS gitcoin_serials_no_delete BEFORE DELETE ON gitcoin_serials
+BEGIN SELECT RAISE(ABORT,'immutable_gitcoin_serial'); END;
+-- Deterministic backfill for older awards in the isolated GIT ledger, if any.
+-- The historic receipt, wallet and creator remain unchanged.
+INSERT OR IGNORE INTO gitcoin_serials(receipt_id,wallet_id,creator_subject,customer_wallet_id,git_type)
+SELECT a.receipt_id,a.wallet_id,c.authenticated_submitter,c.customer_wallet_id,a.git_type
+FROM gitcoin_awards a JOIN gitcoin_line_claims c ON c.receipt_id=a.receipt_id
+ORDER BY a.issued_at,a.receipt_id;
+
 -- Trade/transfer proposal: NO API and NO active transfer process yet.
 -- Later service must lock/serialize per wallet, prove authorized signatures,
 -- check sufficient available balance atomically, dedupe transaction IDs, and
