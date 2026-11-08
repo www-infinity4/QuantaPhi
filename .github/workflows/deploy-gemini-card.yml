@@ -5,11 +5,15 @@ on:
       - 'workers/infinity-rogers/**'
       - 'source-quick-cards.mjs'
       - 'test/gemini-card.test.mjs'
+      - 'test/claude-steward.test.mjs'
+      - 'claude-card.js'
+      - 'bubbles-ai.js'
       - '.github/workflows/deploy-gemini-card.yml'
   push:
     branches: [main]
     paths:
       - 'workers/infinity-rogers/gemini-card.mjs'
+      - 'workers/infinity-rogers/claude-steward.mjs'
       - 'workers/infinity-rogers/worker.js'
       - 'workers/infinity-rogers/wrangler.toml'
       - '.github/workflows/deploy-gemini-card.yml'
@@ -32,8 +36,10 @@ jobs:
         run: |
           node --check workers/infinity-rogers/worker.js
           node --check workers/infinity-rogers/gemini-card.mjs
+          node --check workers/infinity-rogers/claude-steward.mjs
+          node --check claude-card.js
           node --check source-quick-cards.mjs
-          node --test test/gemini-card.test.mjs test/source-quick-cards.test.mjs test/bubbles-ai-collaboration.test.mjs test/chatgpt-official-viewer.test.mjs test/integra-automation-router.test.mjs test/bubbles-connections-ui.test.mjs
+          node --test test/claude-steward.test.mjs test/gemini-card.test.mjs test/source-quick-cards.test.mjs test/bubbles-ai-collaboration.test.mjs test/chatgpt-official-viewer.test.mjs test/integra-automation-router.test.mjs test/bubbles-connections-ui.test.mjs
       - name: Dry-run existing model Worker bundle
         run: |
           npx --yes wrangler@4 deploy --config workers/infinity-rogers/wrangler.toml --dry-run --outdir /tmp/gemini-card-bundle
@@ -56,7 +62,7 @@ jobs:
           const data=JSON.parse(readFileSync('/tmp/infinity-rogers-before.json','utf8'));
           if(data.success!==true)throw Error('Existing Worker settings are unreadable; no deployment');
           const map=new Map((data.result?.bindings||[]).map(b=>[b.name,b]));
-          for(const [name,type] of Object.entries({AI:'ai',METER_DB:'d1',GEMINI_API_KEY:'secret_text'})){
+          for(const [name,type] of Object.entries({AI:'ai',METER_DB:'d1',GEMINI_API_KEY:'secret_text',ANTHROPIC_API_KEY:'secret_text',BRAIN:'service',CONNECTIONS_SERVICE:'service'})){
             if(map.get(name)?.type!==type)throw Error('Existing production model binding missing or different: '+name);
           }
           // Every non-secret live binding must be represented in the source file.
@@ -65,7 +71,7 @@ jobs:
             if(!['AI','METER_DB','BRAIN','CONNECTIONS_SERVICE'].includes(item.name))
               throw Error('Undeclared existing binding '+item.name+' requires review before deploying');
           }
-          console.log('Verified existing model Worker binding contract and Gemini secret before deployment.');
+          console.log('Verified existing model Worker bindings, Claude and Gemini secrets before deployment.');
           NODE
       - name: Deploy Gemini in-card endpoint preserving production secrets
         if: github.event_name != 'pull_request'
@@ -97,6 +103,8 @@ jobs:
           }
           if(current.get('CONNECTIONS_SERVICE')?.type!=='service')
             throw Error('New Google connection verification binding missing');
+          if(current.get('ANTHROPIC_API_KEY')?.type!=='secret_text')
+            throw Error('Anthropic secret missing after deployment');
           if(current.get('BRAIN')?.type!=='service')
             throw Error('Existing BRAIN service binding still missing after deployment');
           console.log('Production Gemini card deployed; all previous Worker bindings preserved.');
