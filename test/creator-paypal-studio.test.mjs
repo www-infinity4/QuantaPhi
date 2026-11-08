@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {MAX_CREATOR_CARDS,parseCreatorCardIds,parseUsdPrice,prepareCreatorPayPalManifest,assessCreatorActivation} from '../creator-paypal-studio-core.mjs';
+import {findCard} from '../bubbles-card-catalog.mjs';
 const file=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 
 test('500 eligible card drafts use one creator connection and never create 500 merchant accounts',()=>{
@@ -55,6 +56,13 @@ test('activation preflight blocks any payment claim until provider/rights/source
   assert.equal(r.state,'server_activation_required');
  }
 });
+test('Bubbles can open the actual creator merchant template, without inventing a PayPal connection',()=>{
+ const card=findCard('creator paypal studio');
+ assert.ok(card);
+ assert.equal(card.url,'/creator-paypal-studio.html');
+ assert.equal(findCard('monetize quick cards')?.url,'/creator-paypal-studio.html');
+});
+
 test('creator studio is a real editable local batch tool, never fake connected checkout',()=>{
  const html=file('creator-paypal-studio.html'),js=file('creator-paypal-studio.js'),quick=file('quick-card-builder.html');
  assert.match(html,/<h1[^>]*>Creator PayPal Studio<\/h1>/);
