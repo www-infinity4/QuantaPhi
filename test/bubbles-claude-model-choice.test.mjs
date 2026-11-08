@@ -37,7 +37,7 @@ test('the Claude model is available from each first-party Bubbles entrypoint',as
  const fs=await import('node:fs');
  for(const path of ['bubbles.html','bubbles-chrome.html','bubbles/index.html','index.html']){
   const html=fs.readFileSync(new URL('../'+path,import.meta.url),'utf8');
-  assert.match(html,/\/claude-card\.js\?v=20261108-steward/,'Missing Claude Steward script: '+path);
+  assert.match(html,/\/claude-card\.js\?v=20261108-steward-conncheck1/,'Missing Claude Steward script: '+path);
   assert.match(html,/\/bubbles-ai\.js\?v=20261108-claude-wheels1/,'Missing selectable model: '+path);
  }
 });
