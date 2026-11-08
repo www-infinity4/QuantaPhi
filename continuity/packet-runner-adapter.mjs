@@ -77,15 +77,19 @@ function receiptSummary(receipt) {
 
 export async function runPacketPass({
   db, claim, ownerScope, ownerId, sourceVersion, loadCandidates, executePacket,
-  limit = 3, now = Date.now(),
+  limit = 3, now = Date.now,
 } = {}) {
+  // Re-read time before each privileged action: a frozen timestamp can
+  // incorrectly keep an expired coordinator lease alive after a slow write.
+  const clock = typeof now === 'function' ? now : () => now;
+  const startedAt = clock();
   if (!db?.prepare || claim?.claimed !== true || !Number.isSafeInteger(claim.id) ||
       typeof claim.fence !== 'string' || !claim.fence || !/^[a-f0-9]{64}$/i.test(ownerScope || '') ||
       typeof ownerId !== 'string' || !ownerId || !SHA.test(sourceVersion || '') ||
       typeof loadCandidates !== 'function' || typeof executePacket !== 'function' ||
-      !Number.isInteger(limit) || limit < 2 || limit > 5 || !Number.isSafeInteger(now))
+      !Number.isInteger(limit) || limit < 2 || limit > 5 || !Number.isSafeInteger(startedAt))
     throw Error('packet_runner_arguments_invalid');
-  if (!await activeClaim(db, claim, now)) return {status: 'lease_lost', scanned: false, attempted: []};
+  if (!await activeClaim(db, claim, startedAt)) return {status: 'lease_lost', scanned: false, attempted: []};
 
   await db.prepare(SCHEMA).run();
   const previous = await db.prepare(`SELECT source_version,state,result_json
@@ -106,7 +110,7 @@ export async function runPacketPass({
       state='running',cycle_id=excluded.cycle_id,fence=excluded.fence,
       updated_at=excluded.updated_at,result_json='{}'
     WHERE continuity_packet_checkpoints.state!='running'`)
-    .bind(ownerScope, sourceVersion, claim.id, claim.fence, now).run();
+    .bind(ownerScope, sourceVersion, claim.id, claim.fence, startedAt).run();
   if (reserved?.meta?.changes !== 1)
     return {status: 'checkpoint_conflict', scanned: false, attempted: [], skipped: []};
 
@@ -128,7 +132,7 @@ export async function runPacketPass({
   const nextBlocked = [...blocked];
   const nextDone = [...done];
   for (const packet of packets) {
-    if (!await activeClaim(db, claim, now))
+    if (!await activeClaim(db, claim, clock()))
       return {status: 'lease_lost', scanned: true, attempted, skipped};
     const idempotencyKey = `${sourceVersion.slice(0, 16)}:${packet.issue}:${packet.headSha.slice(0, 12)}:${packet.nextAction}`;
     let receipt;
@@ -154,11 +158,11 @@ export async function runPacketPass({
     done: [...new Set(nextDone)].slice(-MAX_CANDIDATES),
     receipts: receipts.slice(-MAX_CANDIDATES).map(receiptSummary),
   };
-  if (!await activeClaim(db, claim, now))
+  if (!await activeClaim(db, claim, clock()))
     return {status: 'lease_lost', scanned: true, attempted, skipped};
   const saved = await db.prepare(`UPDATE continuity_packet_checkpoints SET state=?,updated_at=?,result_json=?
     WHERE owner_scope=? AND source_version=? AND state='running' AND cycle_id=? AND fence=?`)
-    .bind('settled', now, JSON.stringify(result), ownerScope, sourceVersion, claim.id, claim.fence).run();
+    .bind('settled', clock(), JSON.stringify(result), ownerScope, sourceVersion, claim.id, claim.fence).run();
   if (saved?.meta?.changes !== 1)
     return {status: 'checkpoint_conflict', scanned: true, attempted, skipped};
   return {status: attempted.length ? 'processed' : 'exhausted', scanned: true, attempted, skipped};
