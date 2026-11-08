@@ -10,6 +10,8 @@ test('500 creator cards export one unverified PayPal merchant template with zero
  await page.goto(base+'/creator-paypal-studio.html',{waitUntil:'domcontentloaded'});
  await expect(page.getByRole('heading',{name:'Creator PayPal Studio'})).toBeVisible();
  await expect(page.getByText('PayPal not connected.')).toBeVisible();
+ const signupHeight=await page.locator('a.link-action').evaluate(link=>link.getBoundingClientRect().height);
+ expect(signupHeight).toBeGreaterThanOrEqual(44);
  await expect(page.locator('#creatorPayPalExport')).toBeDisabled();
  await page.locator('#creatorPayPalSlug').fill('fred');
  await page.locator('#creatorPayPalPrice').fill('1.00');
