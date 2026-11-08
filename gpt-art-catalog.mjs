@@ -5,7 +5,7 @@ export const GPT_ART_CARDS=Object.freeze([
   "id": "gpt-portrait-study",
   "title": "Portrait Study",
   "collection": "gpt-art",
-  "description": "Uploaded portrait photograph",
+  "description": "Owner profile portrait, reserved for the Developer carousel",
   "imagePath": "/assets/gpt-art/gpt-portrait-study.webp",
   "ready": false,
   "rights": "pending",
@@ -210,5 +210,5 @@ export function normalizeArtCard(card){
 }
 export function eligibleArtCards(cards=GPT_ART_CARDS){
  if(!Array.isArray(cards))return [];
- return cards.map(normalizeArtCard).filter(card=>card&&card.ready===true&&card.rights==='reviewed');
+ return cards.map(normalizeArtCard).filter(card=>card&&card.id!=='gpt-portrait-study'&&card.ready===true&&card.rights==='reviewed');
 }
