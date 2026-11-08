@@ -76,7 +76,7 @@ export function reviewAttributedSales(campaign,{coverage,receipts}={},asOf=new D
  // refunds/chargebacks; a click, visitor interest, estimate or owner note is not a sale.
  if(!coverage||coverage.merchantId!==campaign.merchantId||
   coverage.campaignId!==campaign.campaignId||coverage.source!=='authorized-merchant-orders'||
-  coverage.finalized!==true||coverage.refundsComplete!==true||
+  coverage.finalized!==true||coverage.refundsComplete!==true||coverage.chargebacksComplete!==true||
   utc(coverage.periodStart)!==start||utc(coverage.periodEnd)!==end||
   !Array.isArray(receipts))return result('needs_verified_coverage');
  if(now<end)return result('in_progress');
@@ -89,8 +89,9 @@ export function reviewAttributedSales(campaign,{coverage,receipts}={},asOf=new D
   if(!Number.isFinite(paid)||paid<start||paid>=end)continue;
   if(!checkText(row.orderId,1,120)||!Number.isSafeInteger(row.netCents)||
    row.netCents<0||!Number.isSafeInteger(row.refundCents??0)||
-   (row.refundCents??0)<0||(row.refundCents??0)>row.netCents)return result('needs_verified_coverage');
-  const sum=row.netCents-(row.refundCents??0);
+   (row.refundCents??0)<0||!Number.isSafeInteger(row.chargebackCents??0)||
+   (row.chargebackCents??0)<0||(row.refundCents??0)+(row.chargebackCents??0)>row.netCents)return result('needs_verified_coverage');
+  const sum=row.netCents-(row.refundCents??0)-(row.chargebackCents??0);
   if(used.has(row.orderId)){
    if(used.get(row.orderId)!==sum)return result('needs_verified_coverage');
    continue;
