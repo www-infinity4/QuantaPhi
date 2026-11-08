@@ -30,7 +30,7 @@ export function describeAuthenticatedBranchStatus(query,branchResult,ticketResul
  const missing=same&&branchResult.exists===false&&branchResult.status==='branch_not_found';
  if(!found&&!missing)return 'GitHub branch status not verified: identity mismatch or authenticated read unavailable. No runner result is confirmed.';
  const summary=found?
-  'GitHub checked '+query.repository+': branch exists ('+query.branch+') at commit '+branchResult.headSha.slice(0,12)+'. A branch alone does not prove a job finished or was deployed.':
+  'GitHub checked '+query.repository+': branch exists ('+query.branch+') at commit '+branchResult.headSha.slice(0,12)+'. Verified source: https://github.com/'+query.repository+'/commit/'+branchResult.headSha+'. A branch alone does not prove a job finished or was deployed.':
   'GitHub checked '+query.repository+': branch '+query.branch+' not found. The job execution is unverified; a missing branch does not establish whether the runner was attempted.';
  if(ticketResult?.ok!==true||!Array.isArray(ticketResult.tickets))
   return summary+' Saved Brain ticket status could not be verified.';
