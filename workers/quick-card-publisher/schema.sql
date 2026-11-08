@@ -5,6 +5,8 @@ CREATE TABLE IF NOT EXISTS quick_cards (
  kind TEXT NOT NULL CHECK(kind IN ('search','visit','video')),
  search_template TEXT NOT NULL DEFAULT '', video_id TEXT NOT NULL DEFAULT '',
  preview_mode TEXT NOT NULL DEFAULT 'interactive' CHECK(preview_mode IN ('interactive','visual')),
+ pricing_mode TEXT NOT NULL DEFAULT 'free' CHECK(pricing_mode IN ('free','paid')),
+ price_star_coins TEXT NOT NULL DEFAULT '0', creator_profile TEXT NOT NULL DEFAULT '',
  status TEXT NOT NULL DEFAULT 'unlisted' CHECK(status IN ('unlisted','approved','removed')),
  created_at TEXT NOT NULL
 );
