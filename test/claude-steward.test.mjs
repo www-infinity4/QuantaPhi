@@ -93,6 +93,23 @@ test('chat mode cannot file tickets; non-owner repositories are refused',async()
  assert.match(toolResults[1],/path_not_allowed/);
 });
 
+test('classifies Anthropic HTTP errors without leaking provider detail',async()=>{
+ const failures=[
+  [400,'anthropic_invalid_request'],[401,'anthropic_authentication_failed'],
+  [402,'anthropic_billing_required'],[403,'anthropic_access_forbidden'],
+  [404,'anthropic_model_unavailable'],[413,'anthropic_request_too_large'],
+  [429,'anthropic_rate_limited'],[500,'anthropic_service_unavailable']
+ ];
+ for(const [status,expected] of failures){
+  const fetcher=async()=>new Response('PRIVATE_PROVIDER_ERROR sk-secret', {status});
+  const result=await steward({mode:'chat',messages:[{role:'user',text:'Hello Claude'}]},makeEnv(),AUTH,fetcher);
+  assert.equal(result.ok,false,'status '+status);
+  assert.equal(result.status,503,'status '+status);
+  assert.equal(result.error,expected,'status '+status);
+  assert.doesNotMatch(JSON.stringify(result),/PRIVATE_PROVIDER_ERROR|sk-secret/);
+ }
+});
+
 test('missing Anthropic secret is reported, not faked',async()=>{
  const r=await steward({messages:[{role:'user',text:'hi'}]},{},AUTH,async()=>{throw Error('no')});
  assert.equal(r.ok,false);assert.equal(r.error,'anthropic_not_configured');
