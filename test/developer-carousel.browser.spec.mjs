@@ -8,7 +8,7 @@ for(const width of [320,360,393]){
   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
   const section=page.locator('#developerCarousel'),stage=section.locator('#developerCardStage');
   await expect(section.getByRole('heading',{name:/Developer · Build into the site/i})).toBeVisible();
-  await expect(section.locator('.developer-card-choice')).toHaveCount(5);
+  await expect(section.locator('.developer-card-choice')).toHaveCount(6);
   const visible=stage.locator('.developer-slide:not([hidden])');
   await expect(visible.locator('.developer-cover-image')).toBeVisible();
   await expect(visible.locator('.developer-editor')).toBeHidden();
@@ -35,8 +35,19 @@ for(const width of [320,360,393]){
   await section.getByRole('button',{name:'Code Phi · Create Phi'}).click();
   await visible.getByRole('button',{name:/Build with Phi · in this card/}).click();
   await expect(stage.locator('#phiProjectActions')).toBeVisible();
+  await section.getByRole('button',{name:'GPT HTML Implant'}).click();
+  const imported=stage.locator('.developer-slide:not([hidden])');
+  await imported.getByRole('button',{name:/Import GPT app · in this card/}).click();
+  const gpt=stage.frameLocator('iframe[title="GPT HTML Implant creator"]');
+  await expect(gpt.locator('#gptHtmlImplant')).toBeVisible({timeout:18000});
+  await expect(gpt.locator('#gptMonetization')).toHaveValue('free');
+  await gpt.locator('#gptMonetization').selectOption('paid');
+  await expect(gpt.locator('#gptPriceLine')).toBeVisible();
+  await gpt.locator('#gptPrice').fill('15');
   await section.getByRole('button',{name:'Quick Card'}).click();
   await expect(creator.locator('input[name="title"]')).toHaveValue('Vintage Radio Creator');
+  await section.getByRole('button',{name:'GPT HTML Implant'}).click();
+  await expect(gpt.locator('#gptPrice')).toHaveValue('15');
   const bounds=await section.evaluate(el=>({left:el.getBoundingClientRect().left,right:el.getBoundingClientRect().right,width:innerWidth}));
   expect(bounds.left).toBeGreaterThanOrEqual(-1);
   expect(bounds.right).toBeLessThanOrEqual(bounds.width+1);
