@@ -21,6 +21,7 @@ import {handleQuickCardBrowser,readBoundedJson} from './quick-card-browser.mjs';
 import {reconcileMergedJob} from './merge-receipt.mjs';
 import {sortCandidates} from './queue-order.mjs';
 import {ticketAdmission,filterActiveTickets} from './ticket-selector.mjs';
+import {readRunnerQueue} from './runner-candidate-page.mjs';
 import {describeRunnerIdle,noteRunnerSkip,noteRunnerDependencyStatuses} from './runner-claim-idle.mjs';
 import {DEFERRED_REVIEW_INTERVAL_MS,sourceRecoveryEligibility,inspectDeferredSources,recoveryDecision} from './deferred-recovery.mjs';
 import {ticketStatusFromJobs} from './ticket-status.mjs';
@@ -306,13 +307,12 @@ export class BrainClock extends DurableObject{
   }
   if(path==='/runner/claim'){
    const requested=await this.ctx.storage.get('requested-next-job');
-   const rows=await this.env.WORK_DB.prepare("SELECT id,context_json,request,created_at FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at DESC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
-   // The owner-selected ticket can be older than the bounded 100-row scan.
-   // Add it read-only by exact owner partition; never silently lose priority.
-   if(requested?.ticketId&&!(rows.results||[]).some(t=>t.id===requested.ticketId)){
-    const target=await this.env.WORK_DB.prepare("SELECT id,context_json,request,created_at FROM work_tickets WHERE id=? AND owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions'").bind(requested.ticketId,this.env.WRITER_OWNER_HASH).first();
-    if(target)rows.results=[target,...(rows.results||[])];
-   }
+   // Read older owner work through bounded keyset pages; security, source
+   // claim, dependencies, lease and age policy are checked below as before.
+   const rows=await readRunnerQueue(this.env.WORK_DB,{
+    ownerHash:this.env.WRITER_OWNER_HASH,order:'newest',
+    requestedTicketId:requested?.ticketId||''
+   });
    const candidates=(rows.results||[]).flatMap(ticket=>{let context;try{context=JSON.parse(ticket.context_json)}catch{return []}const jobs=Array.isArray(context.color_jobs)?context.color_jobs:[];return jobs.map(job=>({ticket,jobs,job,context}))});
    sortCandidates(candidates,requested);
    const admission=filterActiveTickets(candidates,{requested,now:Date.now()});
@@ -367,7 +367,7 @@ export class BrainClock extends DurableObject{
     (engine?/^www-infinity4\/[\w.-]+$/.test(job.repository||''):supported(job)))
     .length;
    const idle=describeRunnerIdle({candidateCount:candidates.length,admission,
-    adapterMatches,claimBlockedBy,dependencyStates,scanLimited:(rows.results||[]).length>=100});
+    adapterMatches,claimBlockedBy,dependencyStates,scanLimited:rows.scanLimited});
    await this.ctx.storage.put('writer-idle-summary:'+ (engine?'repository-engine':'interface-writer'),
     {at:Date.now(),...idle});
    return Response.json({ok:true,lease:null,idle});
@@ -546,7 +546,7 @@ export class BrainClock extends DurableObject{
  }
  async reconcilePendingWork(){
   const now=Date.now(),summary={recovered:0,stale:0,conflicts:0};
-  const rows=await this.env.WORK_DB.prepare("SELECT id,status,context_json FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
+  const rows=await readRunnerQueue(this.env.WORK_DB,{ownerHash:this.env.WRITER_OWNER_HASH,order:'oldest'});
   for(const row of rows.results||[]){
    let context;try{context=JSON.parse(row.context_json)}catch{continue}
    let changed=false,recovered=0,stale=0;
@@ -584,9 +584,7 @@ export class BrainClock extends DurableObject{
   if(Number(await this.ctx.storage.get('deferred-recovery-next-at')||0)>now)
    return {state:'recovery_cooldown'};
   await this.ctx.storage.put('deferred-recovery-next-at',now+DEFERRED_REVIEW_INTERVAL_MS);
-  const rows=await this.env.WORK_DB.prepare(
-   "SELECT id,created_at,status,request,context_json FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100"
-  ).bind(this.env.WRITER_OWNER_HASH).all();
+  const rows=await readRunnerQueue(this.env.WORK_DB,{ownerHash:this.env.WRITER_OWNER_HASH,order:'oldest'});
   for(const row of rows.results||[]){
    let context;try{context=JSON.parse(row.context_json)}catch{continue}
    for(const job of context.color_jobs||[]){
@@ -657,8 +655,11 @@ export class BrainClock extends DurableObject{
   // Across ALL pending jobs, run at most one automatic GitHub dispatch per
   // five minutes. Otherwise hundreds of blocked tickets could flood Actions.
   if((await this.ctx.storage.get('alarm-global-next-at')||0)>now)return {state:'global_dispatch_cooldown'};
-  const rows=await this.env.WORK_DB.prepare("SELECT id,context_json,created_at FROM work_tickets WHERE owner_hash=? AND status IN ('ready','working','blocked') AND json_extract(context_json,'$.kind')='robot-directions' ORDER BY created_at ASC LIMIT 100").bind(this.env.WRITER_OWNER_HASH).all();
   const requested=await this.ctx.storage.get('requested-next-job');
+  const rows=await readRunnerQueue(this.env.WORK_DB,{
+   ownerHash:this.env.WRITER_OWNER_HASH,order:'oldest',
+   requestedTicketId:requested?.ticketId||''
+  });
   const candidates=(rows.results||[]).flatMap(ticket=>{let context;try{context=JSON.parse(ticket.context_json||'{}')}catch{return []}const jobs=Array.isArray(context.color_jobs)?context.color_jobs:[];return jobs.map(job=>({ticket,jobs,job}))});
   sortCandidates(candidates,requested);
   const admission=filterActiveTickets(candidates,{requested,now});

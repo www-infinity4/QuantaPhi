@@ -56,6 +56,7 @@ jobs:
             test/brain-clock-binding-parity.test.mjs
           node --test \
             test/brain-ticket-selector.test.mjs \
+            test/brain-runner-candidate-page.test.mjs \
             test/brain-deferred-recovery.test.mjs \
             test/brain-cloudflare-token-broker.test.mjs \
             test/brain-queue-order.test.mjs \
