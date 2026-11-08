@@ -116,3 +116,14 @@ test('Bubbles retains original tool-first routes even when Claude chat assistanc
  assert.equal(shouldUseClaudeAssistance({...base,request:'Tell me a story'}),true);
  assert.deepEqual(routeClaudeTurn('claude','Tell me a story'),{mode:'chat',prompt:'Tell me a story'});
 });
+
+test('Claude helper preserves Bubbles weather followups and owner-selected conversation style',async()=>{
+ const fs=await import('node:fs');
+ const ui=fs.readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ assert.match(ui,/toolWork:Boolean\([^\n]*liveLookup[^\n]*weatherContinuation/);
+ assert.match(ui,/mode:'assist',inline:true/);
+ assert.match(ui,/assistContext:\{/);
+ assert.match(ui,/ownerInstructions:/);
+ assert.match(ui,/rolePrompt:/);
+ assert.match(ui,/rememberedContext:/);
+});
