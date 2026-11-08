@@ -870,6 +870,14 @@ export default {
       });
     }
 
+    if (request.method === "GET" && url.pathname === '/v1/claude/model-check') {
+      if (!originAllowed(request)) return json(request, {ok:false,error:'origin_not_allowed'},403);
+      const {handleStewardModelCheck}=await import('./claude-steward.mjs');
+      const result=await handleStewardModelCheck(request,env);
+      for(const [key,value] of Object.entries(headers(request)))result.headers.set(key,value);
+      return result;
+    }
+
     if (request.method === "GET" && url.pathname === "/v1/usage") return usageResponse(request, env);
 
     if (request.method === "GET" && url.pathname === "/probe") {
