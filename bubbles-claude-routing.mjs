@@ -14,3 +14,15 @@ export function routeClaudeTurn(selectedModel,text,hasAttachments=false){
   };
   return {mode:'chat',prompt:message.slice(0,2400)};
 }
+
+/**
+ * Claude is an optional verified conversation engine beneath the Bubbles UI.
+ * Bubbles keeps its original signed work/voice/image/quick-card routes;
+ * no model response can bypass those tools or assert completion.
+ */
+export function shouldUseClaudeAssistance({selectedModel,ownerVerified,providerPresent,
+ embedded,hasAttachments,toolWork,request}={}){
+ return selectedModel==='bubbles'&&ownerVerified===true&&providerPresent===true
+  &&embedded!==true&&hasAttachments!==true&&toolWork!==true
+  &&typeof request==='string'&&Boolean(request.trim());
+}
