@@ -73,3 +73,7 @@
 .owner-card-actions a.owner-gpt-create{background:#49305e;color:#fff}
 .owner-card-fineprint{font-size:13px;line-height:1.55;color:#73667b}
 @media(max-width:390px){.owner-system-list{grid-template-columns:1fr}.owner-card-actions a{width:100%}}
+
+/* Do not crop the owner's portrait into a wide background banner. */
+.developer-cover-art[data-mode="portrait"]{background:#e8e3ec}
+.developer-cover-art[data-mode="portrait"] .developer-cover-image{width:auto;max-width:100%;height:100%;object-fit:contain;object-position:center}
