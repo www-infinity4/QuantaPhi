@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "purpose": "Seller-authorized certified coin lot photographs displayed inside existing Oracle collector Quick Cards",
+  "review_status": "no_rights_grants_yet",
+  "checked_at": "2026-11-07",
+  "grants": [],
+  "instructions": "Add no grants without rights-holder permission for a SPECIFIC lot's commercial in-card photograph. Each manually reviewed grant must include merchant lot/image HTTPS URLs, seller image credit, rights-holder proof URL, commercial-card-image permission_scope, approved_by review marker, and a SHA-256 digest of the privately retained written permission receipt. Generic terms or discoverable thumbnails do not count. Independently review and retain the authorization before publishing."
+}

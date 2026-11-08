@@ -82,3 +82,112 @@ test('Following displays genuine publisher listings only after Follow and preser
  await expect(listing.getByText('1885 Morgan Silver Dollar · Heritage lot')).toHaveCount(0);
  await expect(listing).toContainText('Follow auction houses');
 });
+
+test('PCGS certified-VAM cross-seller discovery shows attributed lots and licensed reference image at Android width',async({page})=>{
+ await page.route('https://commons.wikimedia.org/**',route=>route.fulfill({
+  contentType:'image/svg+xml',body:'<svg xmlns="http://www.w3.org/2000/svg" width="500" height="350"><rect width="500" height="350" fill="#ddd"/></svg>'
+ }));
+ await page.route('https://orange-brook-a2ac.marvaseater.workers.dev/search**',route=>{
+  const q=new URL(route.request().url()).searchParams.get('q')||'';
+  const results=q.includes('site:greatcollections.com')?[
+   {title:'1888-O Hot Lips VAM-4 Top 100 PCGS AU-53',url:'https://www.greatcollections.com/Coin/2299600/1888-O-Morgan-Silver-Dollar-Hot-Lips-VAM-4-PCGS-AU-53',description:'Certified lot, seller provides photos'},
+   {title:'Fake ungraded dollar',url:'https://www.greatcollections.com/Coin/2399000/No-Holder'}
+  ]:q.includes('site:icollector.com')?[
+   {title:'1889-O MORGAN DOLLAR, PCGS AU-53 VAM 2 OVAL O',url:'https://www.icollector.com/1889-O-MORGAN-DOLLAR-PCGS-AU-53-VAM-2-OVAL-O_i37331753',status:'sold'}
+  ]:q.includes('site:pcgs.com')?[
+   {title:'PCGS CoinFacts Morgan Dollar',url:'https://www.pcgs.com/coinfacts/coin/1888-o'}
+  ]:[];
+  route.fulfill({json:{results},headers:{'access-control-allow-origin':'*'}});
+ });
+ await page.goto(base+'/?card=pcgs',{waitUntil:'domcontentloaded'});
+ const card=page.locator('#oracleCardStage [data-source-id="pcgs"]');
+ await expect(card).toBeVisible();
+ const sales=card.locator('.premium-coin-sales');
+ await expect(sales).toBeVisible();
+ await expect(sales.getByText('1888-O Hot Lips VAM-4 Top 100 PCGS AU-53')).toBeVisible({timeout:25000});
+ await expect(sales.locator('img.premium-coin-reference-photo')).toHaveAttribute('src',/commons\.wikimedia\.org/);
+ await expect(sales.getByText(/not a seller listing/i)).toBeVisible();
+ await expect(sales.getByRole('link',{name:/View actual lot photographs at GreatCollections/})).toHaveAttribute('href',/greatcollections\.com\/Coin\/2299600/);
+ await expect(sales.getByText('Fake ungraded dollar')).toHaveCount(0);
+ await sales.getByRole('button',{name:'iCollector'}).click();
+ await expect(sales.getByText('1889-O MORGAN DOLLAR, PCGS AU-53 VAM 2 OVAL O')).toBeVisible();
+ await expect(sales.getByText(/Past\/closed listing/)).toBeVisible();
+ expect(await sales.evaluate(el=>el.getBoundingClientRect().right<=innerWidth)).toBeTruthy();
+});
+
+test('seller-authorized listing photo appears for the exact PCGS VAM lot and is credited in the card',async({page})=>{
+ const lot='https://www.greatcollections.com/Coin/2299600/1888-O-Morgan-Silver-Dollar-Hot-Lips-VAM-4-PCGS-AU-53';
+ await page.route('**/data/coin-media-approvals.json',route=>route.fulfill({json:{
+  schema_version:1,grants:[{market:'greatcollections',lot_url:lot,
+   image_url:'https://www.greatcollections.com/approved/lot-2299600.jpg',
+   image_credit:'GreatCollections rights holder · reviewed approved lot photo',
+   license:'seller-permitted',proof_url:'https://www.greatcollections.com/approved/lot-2299600-rights',
+   approved_by:'reviewed-commercial-media',permission_scope:'commercial-card-image',permission_evidence_sha256:'a'.repeat(64),approved_at:'2026-11-07',expires_at:'2027-01-01'}]
+ }}));
+ await page.route('https://www.greatcollections.com/approved/lot-2299600.jpg',route=>route.fulfill({
+  contentType:'image/svg+xml',body:'<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450"><rect width="600" height="450" fill="#ddd"/></svg>'
+ }));
+ await page.route('https://orange-brook-a2ac.marvaseater.workers.dev/search**',route=>{
+  const q=new URL(route.request().url()).searchParams.get('q')||'';
+  return route.fulfill({json:{results:q.includes('site:greatcollections.com')?[
+   {title:'1888-O Hot Lips VAM-4 Top 100 PCGS AU-53',url:lot}
+  ]:[]},headers:{'access-control-allow-origin':'*'}});
+ });
+ await page.goto(base+'/?card=pcgs',{waitUntil:'domcontentloaded'});
+ const photos=page.locator('#oracleCardStage [data-source-id="pcgs"] .premium-coin-lot-photo');
+ await expect(photos).toBeVisible({timeout:25000});
+ await expect(photos.locator('img')).toHaveAttribute('src','https://www.greatcollections.com/approved/lot-2299600.jpg');
+ await expect(photos).toContainText('GreatCollections rights holder');
+ await expect(photos.getByRole('link',{name:'Original lot and image credit'})).toHaveAttribute('href',lot);
+});
+
+test('blocked seller image falls back honestly to the specific lot link',async({page})=>{
+ const lot='https://www.greatcollections.com/Coin/2299600/1888-O-Morgan-Silver-Dollar-Hot-Lips-VAM-4-PCGS-AU-53';
+ await page.route('**/data/coin-media-approvals.json',route=>route.fulfill({json:{
+  schema_version:1,grants:[{market:'greatcollections',lot_url:lot,
+   image_url:'https://www.greatcollections.com/approved/lot-photo-restricted.jpg',
+   image_credit:'GreatCollections authorized catalog photograph',
+   license:'seller-permitted',proof_url:'https://www.greatcollections.com/approved/lot-permission',
+   approved_by:'reviewed-commercial-media',permission_scope:'commercial-card-image',permission_evidence_sha256:'a'.repeat(64),approved_at:'2026-11-07',expires_at:'2027-01-01'}]
+ }}));
+ await page.route('https://www.greatcollections.com/approved/lot-photo-restricted.jpg',route=>route.fulfill({status:403,body:'No hotlink access'}));
+ await page.route('https://orange-brook-a2ac.marvaseater.workers.dev/search**',route=>{
+  const q=new URL(route.request().url()).searchParams.get('q')||'';
+  route.fulfill({json:{results:q.includes('site:greatcollections.com')?[
+    {title:'1888-O Hot Lips VAM-4 Top 100 PCGS AU-53',url:lot}
+  ]:[]},headers:{'access-control-allow-origin':'*'}});
+ });
+ await page.goto(base+'/?card=pcgs',{waitUntil:'domcontentloaded'});
+ const sales=page.locator('#oracleCardStage [data-source-id="pcgs"] .premium-coin-sales');
+ await expect(sales.getByText('1888-O Hot Lips VAM-4 Top 100 PCGS AU-53')).toBeVisible({timeout:25000});
+ await expect(sales.locator('.premium-coin-lot-photo')).toHaveCount(0);
+ await expect(sales.getByText(/If the photo cannot load here, view the original seller listing/)).toBeVisible();
+ await expect(sales.getByRole('link',{name:/View actual lot photographs at GreatCollections/})).toHaveAttribute('href',lot);
+});
+
+test('all four collector cards visibly render different credited real coin photographs at Android width',async({page})=>{
+ await page.route('https://commons.wikimedia.org/**',route=>route.fulfill({
+  contentType:'image/svg+xml',
+  body:'<svg xmlns="http://www.w3.org/2000/svg" width="480" height="350"><rect width="480" height="350" fill="#ddd"/></svg>'
+ }));
+ await page.route('https://orange-brook-a2ac.marvaseater.workers.dev/search**',route=>route.fulfill({json:{results:[]},headers:{'access-control-allow-origin':'*'}}));
+ const srcs=new Set();
+ for(const id of ['vamworld','pcgs','ngc','heritage']){
+  await page.goto(base+'/?card='+id,{waitUntil:'domcontentloaded'});
+  const card=page.locator('#oracleCardStage [data-source-id="'+id+'"]');
+  await expect(card).toBeVisible({timeout:25000});
+  const figure=card.locator('.premium-coin-reference');
+  await expect(figure).toBeVisible();
+  const img=figure.locator('img.premium-coin-reference-photo');
+  await img.scrollIntoViewIfNeeded();
+  await expect(img).toBeVisible();
+  await expect(img).toHaveJSProperty('naturalWidth',480);
+  const src=await img.getAttribute('src');
+  expect(src).toMatch(/^https:\/\/commons\.wikimedia\.org\/wiki\/Special:FilePath\//);
+  srcs.add(src);
+  await expect(figure).toContainText('Wikimedia Commons · CC0');
+  await expect(figure.getByRole('link',{name:'Image license and credit'})).toHaveAttribute('href',/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/);
+  expect(await card.evaluate(el=>el.getBoundingClientRect().right<=innerWidth)).toBeTruthy();
+ }
+ expect(srcs.size).toBe(4);
+});

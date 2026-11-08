@@ -1,5 +1,6 @@
 import {mountRotatingSpotlights} from './quick-card-spotlights.mjs?v=20261101-freshest1';
 import {mountCardActions} from './quanta-card-actions.mjs?v=20261031-heritage-signin1';
+import {COIN_MARKETS,isCoinResearchCard,normalizeCoinSaleResults,referenceCoinImage,sourceCoinSearch,attachLicensedCoinImages} from './coin-sale-listings.mjs';
 // Real source searches, not invented inventory, account data or offers.
 const provider=(id,name,category,official,query,topics,color,extra={})=>({id,name,category,official,query,topics,color,...extra});
 export const PREMIUM_CARDS=Object.freeze([
@@ -69,6 +70,110 @@ async function lookup(card,query){
  }
  const result={time:Date.now(),rows:rows.slice(0,12)};cache.set(key,result);return result;
 }
+
+const coinSaleCache=new Map();
+let coinMediaApprovalsCache=null;
+async function approvedCoinMedia(){
+ if(coinMediaApprovalsCache&&Date.now()-coinMediaApprovalsCache.time<300000)return coinMediaApprovalsCache.manifest;
+ const r=await fetch('/data/coin-media-approvals.json',{credentials:'omit',cache:'no-store',signal:AbortSignal.timeout(5000)});
+ if(!r.ok)throw Error('approved_coin_media_not_available');
+ const manifest=await r.json();coinMediaApprovalsCache={time:Date.now(),manifest};return manifest;
+}
+
+// A SOURCE search is not a seller partnership. Keep seller lot links separate
+// from grading references and show only media with independently proven rights.
+function mountCoinSales(article,card,field){
+ const section=make('section','premium-coin-sales');
+ section.setAttribute('aria-label','Certified VAM lot listings');
+ const heading=make('h3','','Certified VAM auction lots');
+ const explainer=make('p','premium-coin-intro','Actual PCGS / NGC / ANACS VAM listing links, not ungraded coins. Prices and availability are confirmed only on the original seller site.');
+ const visual=make('figure','premium-coin-reference');
+ const reference=referenceCoinImage(card.id);
+ if(reference){
+  const image=make('img','premium-coin-reference-photo');
+  image.alt='Reference photo of real certified coin holders, not the coin in the current auction listing';
+  image.loading='lazy';image.referrerPolicy='no-referrer';
+  image.addEventListener('error',()=>{image.hidden=true;},{once:true});
+  image.src=reference.image;
+  const caption=make('figcaption','',reference.label+' · '+reference.credit+' · ');
+  const credit=make('a','','Image license and credit');
+  credit.href=reference.source;credit.target='_blank';credit.rel='noopener noreferrer';
+  caption.append(credit);visual.append(image,caption);
+ }
+ const markets=make('div','premium-coin-sellers');
+ markets.setAttribute('role','group');markets.setAttribute('aria-label','Auction marketplaces');
+ const resultState=make('p','premium-coin-status','Choose a seller to check original certified VAM auction lots.');
+ resultState.setAttribute('role','status');
+ const results=make('div','premium-coin-results');
+ let current=0,generation=0;
+ const buttons=COIN_MARKETS.map((seller,index)=>{
+  const b=make('button','',seller.name);b.type='button';
+  b.addEventListener('click',()=>{current=index;void run()});
+  markets.append(b);return b;
+ });
+ const updateButtons=()=>buttons.forEach((b,index)=>b.setAttribute('aria-pressed',String(index===current)));
+ async function run(){
+  const now=++generation,seller=COIN_MARKETS[current],query=field.value.trim()||'Morgan dollar';
+  updateButtons();results.replaceChildren();
+  resultState.textContent='Finding '+seller.name+' certified VAM listings…';
+  const key=seller.id+'|'+query;let rows;
+  try{
+   const cached=coinSaleCache.get(key);
+   if(cached&&Date.now()-cached.time<600000)rows=cached.rows;
+   else{
+    const url=sourceCoinSearch(seller,query),response=await fetch(url,{credentials:'omit',signal:AbortSignal.timeout(12000)});
+    if(!response.ok)throw Error('coin_seller_search_unavailable');
+    rows=normalizeCoinSaleResults(await response.json(),seller);
+    coinSaleCache.set(key,{rows,time:Date.now()});
+   }
+   if(now!==generation)return;
+   try{rows=attachLicensedCoinImages(rows,seller,await approvedCoinMedia());}catch{/* Rights manifest missing: stay on source links and CC0 reference only. */}
+   if(now!==generation)return;
+   resultState.textContent=rows.length?rows.length+' attributed certified VAM lot link'+(rows.length===1?'':'s')+' · seller availability must be checked.':'No matching certified VAM lot links returned for this seller. Try another or browse the auction catalog.';
+   if(rows.length){
+    const item=make('div','premium-coin-sale-item'),nav=make('div','premium-coin-sale-nav');
+    const prev=make('button','','‹ Previous lot'),count=make('span'),next=make('button','','Next lot ›');
+    prev.type=next.type='button';let position=0;
+    function show(){
+     const row=rows[position];item.replaceChildren();
+     if(row.image&&row.imageRights==='seller-permitted'){
+      const picture=make('figure','premium-coin-lot-photo');
+      const image=make('img','premium-coin-lot-image');
+      image.alt='Actual seller-authorized coin lot photograph: '+row.title;
+      image.loading='eager';image.referrerPolicy='no-referrer';
+      // Only one selected lot photo exists. Request it even below the fold so
+      // a refused merchant hotlink cannot leave a permanent empty panel.
+      image.addEventListener('error',()=>picture.remove(),{once:true});
+      image.src=row.image;
+      const credit=make('figcaption','',row.imageCredit+' · ');
+      const source=make('a','','Original lot and image credit');
+      source.href=row.imageSource;source.target='_blank';source.rel='noopener noreferrer';
+      credit.append(source);picture.append(image,credit);item.append(picture);
+     }
+     const statusText=row.saleStatus==='sold'?'Past/closed listing · sold':row.saleStatus==='closed'?'Closed listing · sale not confirmed':row.saleStatus==='withdrawn'?'Withdrawn listing': 'Sale status unverified';
+     item.append(make('p','premium-coin-badge',row.seller+' · '+statusText));
+     item.append(make('h4','',row.title));
+     if(row.description)item.append(make('p','premium-coin-summary',row.description));
+     const original=make('a','premium-coin-lot-link','View actual lot photographs at '+row.seller+' ↗');
+     original.href=row.url;original.target='_blank';original.rel='noopener noreferrer';item.append(original);
+     item.append(make('p','premium-coin-rights',row.image?'Exact-lot image use is authorized in the approved media register. If the photo cannot load here, view the original seller listing; its pictured coin and current availability must be checked there.':'Seller photographs stay with the source until image reuse is authorized. The separately licensed reference photo is not this lot.'));
+     count.textContent=position+1+' / '+rows.length;prev.disabled=position===0;next.disabled=position===rows.length-1;
+    }
+    prev.addEventListener('click',()=>{position--;show()});
+    next.addEventListener('click',()=>{position++;show()});
+    nav.append(prev,count,next);results.append(item,nav);show();
+   }
+  }catch{
+   if(now===generation)resultState.textContent=seller.name+' listing search is temporarily unavailable. Use the original seller catalog below.';
+  }
+  if(now!==generation)return;
+  const catalog=make('a','premium-coin-lot-link','Browse '+seller.name+' original auction catalog ↗');
+  catalog.href=seller.home;catalog.target='_blank';catalog.rel='noopener noreferrer';results.append(catalog);
+ }
+ section.append(heading,explainer,visual,markets,resultState,results);
+ article.addEventListener('oracle:activate',()=>{if(!section.dataset.started){section.dataset.started='true';void run()}});
+ return section;
+}
 export function mountPremiumCard(card){
  const article=make('article','iqc-card premium-card');if(card.dining)article.classList.add('denver-dining-card');article.dataset.sourceId=card.id;article.dataset.sourceName=card.name;article.dataset.sourceReady='true';article.dataset.official=card.official;article.dataset.sourceCategory=card.category;article.dataset.sourceQuery=card.query;article.style.setProperty('--premium-accent',card.color);
  const header=make('header','premium-heading');header.append(make('p','iqc-kind',card.category+' · INFINITY 2026®'),make('h2','',card.name));
@@ -101,6 +206,7 @@ export function mountPremiumCard(card){
  }
  if(diningInfo)article.append(header,diningInfo,content,disclaimer,actions);
  else article.append(header,content,form,topics,state,disclaimer,actions);
+ if(isCoinResearchCard(card.id))article.insertBefore(mountCoinSales(article,card,field),form);
  mountCardActions(actions,{...card,route:'/?card='+card.id,featureUrl:card.official});
  const rotating=['Restaurants','Shopping','Trading cards','Auctions'].includes(card.category);
  let serial=0,loaded=false;
