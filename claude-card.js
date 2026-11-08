@@ -82,6 +82,24 @@ function showPatches(data){
  });
  box.append(copy);ui.log.append(box);ui.log.scrollTop=ui.log.scrollHeight;
 }
+function describeError(code){
+ const errors={
+  anthropic_not_configured:'Claude API has no key configured on the Worker.',
+  anthropic_authentication_failed:'Claude API rejected the existing key or credential.',
+  anthropic_billing_required:'Claude API billing or credits are unavailable. No paid call completed.',
+  anthropic_access_forbidden:'Claude API key does not have access to this model or workspace.',
+  anthropic_model_unavailable:'Claude API model is not available for this account.',
+  anthropic_invalid_request:'Claude rejected the request format. The source needs repair.',
+  anthropic_request_too_large:'Claude rejected the request size.',
+  anthropic_rate_limited:'Claude API rate limit reached; retry later if you choose.',
+  anthropic_service_unavailable:'Claude provider service did not respond successfully.',
+  anthropic_provider_unavailable:'Claude provider response was not verified.',
+  owner_authorization_required:'Owner session is not authorized to call Claude.',
+  steward_request_too_large:'Claude chat message is too large.'
+ };
+ return (errors[String(code||'')]||'Claude could not confirm a response.')+
+  ' Bubbles has not counted this as a completed Claude reply.';
+}
 async function ask(text,{mode='chat',evidence,inline=false}={}){
  const clean=String(text||'').trim().slice(0,3000);
  if(!clean||busy)return null;
@@ -103,7 +121,8 @@ async function ask(text,{mode='chat',evidence,inline=false}={}){
   }
   if(data.partial&&!inline)bubble('claude','Claude stopped before finishing. Saved proposals and ticket receipts remain available; no code was applied.');
   showPatches(data);
- }catch(e){if(wait)wait.textContent='Claude response not confirmed: '+String(e.message||e).slice(0,160)+'. Check existing Brain tickets before retrying; delivery status is unknown.';}
+ }catch(e){if(wait)wait.textContent=describeError(e?.message||e)+' Check existing Brain tickets before retrying any repair.';
+  if(inline)return {ok:false,error:String(e?.message||e).slice(0,80)};}
  busy=false;if(ui&&!inline)ui.send.disabled=false;
  return data;
 }
@@ -135,7 +154,7 @@ function mount(){
  close.addEventListener('click',()=>{panel.style.display='none';});
  for(const t of turns)bubble(t.role==='user'?'you':'claude',t.text);
 }
-root.ClaudeSteward={ask,open:()=>{mount();open();},patchScript};
+root.ClaudeSteward={ask,describeError,open:()=>{mount();open();},patchScript};
 root.addEventListener('bubbles:claude-steward',e=>{const d=e?.detail;if(d?.text)void ask(d.text,{mode:d.mode==='fix'?'fix':'chat',evidence:d.evidence});});
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mount);else mount();
 })(typeof window!=='undefined'?window:globalThis);
