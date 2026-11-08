@@ -41,7 +41,7 @@ test('history labels partial loads without claiming 500-row excerpt is complete'
 });
 
 test('authenticated mobile wallet shows all three work assets without invented balances',()=>{
- assert.match(page,/bubbles-cloud-wallet\.js\?v=20261107-three-work-assets1/);
+ assert.match(page,/bubbles-cloud-wallet\.js\?v=20261107-serial-git1/);
  assert.match(ui,/workAssetLine\('GIT'/);
  assert.match(ui,/workAssetLine\('Bubble Bits'/);
  assert.match(ui,/workAssetLine\('GPT Coin'/);
@@ -49,6 +49,7 @@ test('authenticated mobile wallet shows all three work assets without invented b
  assert.match(ui,/Provider issuer not connected/);
  assert.match(worker,/workAssets=\{GIT:git,BUBBLE_BIT:bubbleBits,GPT_COIN:gptCoin\}/);
  assert.match(worker,/readGitAsset\(env,quant.walletId\)/);
+ assert.match(ui,/awaiting GIT serial/);
  assert.match(worker,/importGptCoin\(env,account.id,input\)/);
  assert.doesNotMatch(ui,/GIT\|\|0|GPT_COIN\|\|0/);
 });
