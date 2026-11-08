@@ -429,3 +429,57 @@ test('verified headlines survive a summary model outage with unchanged source re
   assert.equal(r.status,200,'news adapter succeeded even if optional summarization failed');
  }finally{globalThis.fetch=saved}
 });
+
+
+test('Bubbles finds existing tools from ordinary questions instead of falling back to an ungrounded chat answer',async()=>{
+ const questions=[
+  'Bubbles, what tools and skills do you have?',
+  'Which tools can you use to read GitHub?',
+  'Find your existing tools for searching the web',
+  'Where are your capabilities for browsing sources?',
+  'Show me your available tools'
+ ];
+ for(const question of questions){
+  assert.equal(chooseTool(question),'bubbles.capabilities',question);
+  let modelCalls=0;
+  const response=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',
+   headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},
+   body:JSON.stringify({request:question,mcp:true})}),{
+    AI:{run:async()=>{modelCalls++;throw Error('Capability discovery must not consume inference')}},
+    BRAIN:{fetch:async()=>{throw Error('Capability lookup must not submit a job')}}
+   });
+  assert.equal(response.status,200);
+  const body=await response.json();
+  assert.equal(body.ok,true);
+  assert.equal(body.receipt.tool,'bubbles.capabilities');
+  assert.equal(body.receipt.status,'complete');
+  assert.equal(body.receipt.repositoryActionsVerified,false);
+  assert.equal(body.receipt.minted,false);
+  assert.equal(modelCalls,0);
+  assert.ok(Array.isArray(body.capabilities)&&body.capabilities.length>=10);
+  assert.ok(body.capabilities.some(x=>x.id==='github.read_file'&&x.scope==='public-read'));
+  assert.ok(body.capabilities.some(x=>x.id==='weather.current'));
+  assert.ok(body.capabilities.some(x=>x.id==='robot_brain.owner_work'&&x.scope==='owner-only'&&x.executionVerified===false));
+  assert.match(body.output,/GitHub/i);
+  assert.match(body.output,/owner|authoriz/i);
+  assert.doesNotMatch(JSON.stringify(body),/Authorization: Bearer|api[_-]?key|sk-ant-/i);
+ }
+});
+
+test('Bubbles capability discovery must not disable normal tools or create authorization',async()=>{
+ for(const [question,expected] of [
+  ['What is the current weather in Denver?','weather.current'],
+  ['Read README.md in www-infinity4/QuantaPhi','github.read_file'],
+  ['Create a GitHub repo called Demo','github.create_repository'],
+  ['Explain this design','oracle.chat'],
+  ['Please build a tool directory in my repository','oracle.chat']
+ ])assert.equal(chooseTool(question),expected,question);
+ const response=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',
+  headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},
+  body:JSON.stringify({request:'Which tool can deploy my code?'})}),{});
+ const body=await response.json();
+ assert.equal(body.receipt.tool,'bubbles.capabilities');
+ assert.equal(body.receipt.repositoryActionsVerified,false);
+ assert.equal(body.capabilities.find(x=>x.id==='robot_brain.owner_work').executionVerified,false);
+ assert.match(body.output,/separate|verified|owner/i);
+});
