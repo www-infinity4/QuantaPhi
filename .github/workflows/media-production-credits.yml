@@ -6,6 +6,10 @@ on:
       - 'media-star-creator.js'
       - 'media-star-creator.css'
       - 'test/media-star-creator-two-ledgers.test.cjs'
+      - 'media-star-public-feed-core.mjs'
+      - 'media-star-public-cards.mjs'
+      - 'media-star-public-cards.css'
+      - 'test/media-star-public-feed.test.cjs'
       - 'work/unfinished/TICKET-1790.md'
       - 'work/unfinished/INDEX.md'
       - 'index.html'
@@ -18,6 +22,10 @@ on:
       - 'media-star-creator.js'
       - 'media-star-creator.css'
       - 'test/media-star-creator-two-ledgers.test.cjs'
+      - 'media-star-public-feed-core.mjs'
+      - 'media-star-public-cards.mjs'
+      - 'media-star-public-cards.css'
+      - 'test/media-star-public-feed.test.cjs'
       - 'work/unfinished/TICKET-1790.md'
       - 'work/unfinished/INDEX.md'
       - 'index.html'
@@ -33,5 +41,7 @@ jobs:
         with: {node-version: '24'}
       - run: |
           node --check media-star-creator.js
+          node --check media-star-public-feed-core.mjs
+          node --check media-star-public-cards.mjs
           node --check phi-channel-cards.js
-          node --test test/media-production-credits.test.cjs test/phi-channel-cards.test.cjs test/media-star-creator-two-ledgers.test.cjs
+          node --test test/media-production-credits.test.cjs test/phi-channel-cards.test.cjs test/media-star-creator-two-ledgers.test.cjs test/media-star-public-feed.test.cjs
