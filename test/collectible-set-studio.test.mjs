@@ -11,6 +11,9 @@ test('no silent private gallery inference: only deliberately selected files with
  assert.equal(eligibleCreatorSuggestion({consent:true,imageCount:50,scope:'saved-images'}),false);
  assert.equal(eligibleCreatorSuggestion({consent:true,imageCount:1,scope:'selected-files'}),false);
  assert.equal(eligibleCreatorSuggestion({consent:true,imageCount:10,scope:'selected-files'}),true);
+ assert.equal(eligibleCreatorSuggestion({consent:true,imageCount:10,scope:'authorized-saved-manifest'}),false);
+ assert.equal(eligibleCreatorSuggestion({consent:true,imageCount:10,scope:'authorized-saved-manifest',consentVerified:true,source:'first-party-collection'}),true);
+ assert.equal(eligibleCreatorSuggestion({consent:false,imageCount:10,scope:'authorized-saved-manifest',consentVerified:true,source:'first-party-collection'}),false);
 });
 test('one free separate cover plus ten paid artworks costs ten Star Coins only as a proposal',()=>{
  const q=creatorSetEconomy({pieceCount:10,unitCost:1,freePreview:true});
