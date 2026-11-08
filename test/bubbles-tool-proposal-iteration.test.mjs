@@ -78,6 +78,8 @@ test('a generic model receipt cannot certify or count an unexecuted job-status p
  const phase=src.slice(detection,finish);
  assert.match(phase,/if\(json\.receipt&&!unexecutedJobProposal\)/,
   'do not emit a completed tool receipt when the model merely printed a proposal');
+ assert.match(phase,/if\(nativeOverlay&&unexecutedJobProposal\)gptStatus\.textContent=/,
+  'Android must flag an unexecuted model proposal even if the response has NO receipt');
  assert.ok(src.indexOf('gptStatus.textContent',detection)>detection,
   'Android foreground reply status must be evaluated after the unexecuted proposal detector');
  assert.match(phase,/Tool proposal not executed · runner status unverified/);
