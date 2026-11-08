@@ -514,19 +514,48 @@ test('Cloudflare Bubbles client restricts requests to scopes registered on its o
  assert.equal(url.searchParams.get('scope'),'user-details.read memberships.read d1.read');
  assert.ok(!url.href.includes('server-only'));
 });
-test('Cloudflare account discovery is verified with the users token and strips private API fields',async()=>{
- const {cloudflareAdapter}=await import('../workers/bubbles-connections/providers.mjs');
- const id='a'.repeat(32),calls=[];
- const adapter=cloudflareAdapter({clientId:'app',clientSecret:'secret',allowedScopes:'user-details.read memberships.read',
-   redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},async(url,options)=>{
-     calls.push({url,authorization:options.headers.Authorization});
-     return Response.json({success:true,result:[{id,name:'Personal account',api_key:'SHOULD_NOT_LEAK'}],result_info:{total_pages:1}});
-   });
- const result=await adapter.accounts({accessToken:'user-specific-token'});
- assert.deepEqual(result,{accounts:[{id,name:'Personal account'}],truncated:false});
- assert.equal(calls[0].authorization,'Bearer user-specific-token');
- assert.equal(calls[0].url,'https://api.cloudflare.com/client/v4/accounts?page=1&per_page=50');
- assert.ok(!JSON.stringify(result).includes('SHOULD_NOT_LEAK'));
+test('Cloudflare account discovery uses the consented membership scope and strips private fields',async()=>{
+  const {cloudflareAdapter}=await import('../workers/bubbles-connections/providers.mjs');
+  const id='a'.repeat(32),calls=[];
+  const adapter=cloudflareAdapter({clientId:'app',clientSecret:'secret',allowedScopes:'user-details.read memberships.read',
+    redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},async(url,options)=>{
+      calls.push({url,authorization:options.headers.Authorization});
+      return Response.json({success:true,result:[
+        {id:'membership-private',status:'accepted',account:{id,name:'Personal account'},api_key:'SHOULD_NOT_LEAK'},
+        {id:'other',status:'pending',account:{id:'b'.repeat(32),name:'Not yet accepted'}}
+      ],result_info:{total_pages:1}});
+    });
+  const result=await adapter.accounts({accessToken:'user-specific-token'});
+  assert.deepEqual(result,{accounts:[{id,name:'Personal account'}],truncated:false});
+  assert.equal(calls[0].authorization,'Bearer user-specific-token');
+  assert.equal(calls[0].url,'https://api.cloudflare.com/client/v4/memberships?page=1&per_page=50');
+  assert.ok(!JSON.stringify(result).includes('SHOULD_NOT_LEAK'));
+  assert.ok(!JSON.stringify(result).includes('Not yet accepted'));
+});
+test('Cloudflare memberships de-duplicate accepted accounts across bounded pages',async()=>{
+  const {cloudflareAdapter}=await import('../workers/bubbles-connections/providers.mjs');
+  const id='c'.repeat(32),other='d'.repeat(32),urls=[];
+  const adapter=cloudflareAdapter({clientId:'app',clientSecret:'secret',allowedScopes:'user-details.read memberships.read',
+    redirectUri:'https://quantaphi.org/api/bubbles/connections/cloudflare/callback'},async(url)=>{
+      urls.push(url);
+      const page=Number(new URL(url).searchParams.get('page'));
+      const result=page===1?[
+        {status:'accepted',account:{id,name:'First'}},
+        {status:'rejected',account:{id:'e'.repeat(32),name:'Rejected'}},
+      ]:[
+        {status:'accepted',account:{id,name:'Duplicate'}},
+        {status:'accepted',account:{id:other,name:'Second'}},
+        {status:'accepted',account:{id:'unsafe-id',name:'Invalid'}}
+      ];
+      return Response.json({success:true,result,result_info:{total_pages:2}});
+    });
+  assert.deepEqual(await adapter.accounts({accessToken:'scoped-token'}),{
+    accounts:[{id,name:'First'},{id:other,name:'Second'}],truncated:false
+  });
+  assert.deepEqual(urls,[
+    'https://api.cloudflare.com/client/v4/memberships?page=1&per_page=50',
+    'https://api.cloudflare.com/client/v4/memberships?page=2&per_page=50'
+  ]);
 });
 
 test('separate Chrome context needs no BroadcastChannel or window.opener',async()=>{
