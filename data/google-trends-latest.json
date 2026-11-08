@@ -3,293 +3,153 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-08T16:31:20.222720Z",
+  "checked_at": "2026-11-08T17:01:09.496908Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "kurt warner",
-      "approx_searches": "500+",
-      "published_at": "2026-11-08T16:10:00Z",
+      "query": "epl",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-08T16:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/kurt-warner-shares-expectations-burrow-141234779.html",
-        "https://heavy.com/sports/nfl/cincinnati-bengals/joe-burrow-bengals-super-bowl-admission/",
-        "https://heavy.com/sports/nfl/cincinnati-bengals/nfl-legend-kurt-warner-makes-strong-statement-on-bengals-qb-joe-burrow/"
+        "https://www.bbc.com/sport/football/live/c8x23v559276t",
+        "https://www.theguardian.com/football/live/2026/nov/08/crystal-palace-v-liverpool-brighton-v-brentford-and-more-premier-league-live",
+        "https://www.bbc.co.uk/sport/football/live/c8x23v559276t?page=2"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROlrScbnzzNwFX_b2BUE-V4jL_RPp_-RN6O3O3cmhLof4mQPncj98p3q46uVs",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/kurt-warner-shares-expectations-burrow-141234779.html",
-          "title": "Kurt Warner shares his expectations for Burrow, Bengals",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROlrScbnzzNwFX_b2BUE-V4jL_RPp_-RN6O3O3cmhLof4mQPncj98p3q46uVs"
-        },
-        {
-          "url": "https://heavy.com/sports/nfl/cincinnati-bengals/joe-burrow-bengals-super-bowl-admission/",
-          "title": "Bengals’ Joe Burrow Makes Candid Admission About Super Bowl Chances",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRscM0BdokqjEdzh4aQJFXcJNpy0P5mQcIjPRhQ6muVSAyDEdVEumMnGYmzBm8"
-        },
-        {
-          "url": "https://heavy.com/sports/nfl/cincinnati-bengals/nfl-legend-kurt-warner-makes-strong-statement-on-bengals-qb-joe-burrow/",
-          "title": "NFL Legend Kurt Warner Makes Strong Statement on Bengals QB Joe Burrow",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlIgV2W4bslInImqGWOMjxJunVynndOLt-PSv81r2k2o_VmIxkuDC-3W1ocxw"
-        }
-      ]
-    },
-    {
-      "query": "army navy game",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T16:10:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/news/trump-army-navy-game-iran-war-midterm-elections/",
-        "https://www.northjersey.com/story/news/new-jersey/2026/11/06/donald-trump-attend-army-navy-game-metlife-stadium-december/92641403007/",
-        "https://sports.yahoo.com/articles/president-trump-reportedly-north-jersey-173303748.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgEU1Pv9c2dmHgdi8wMfWlx--_m1km0q9hvpZKKMecaHb0hfhYTeLMQ9ZeSfg",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/news/trump-army-navy-game-iran-war-midterm-elections/",
-          "title": "Trump to attend Army-Navy football game next month, officials say",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgEU1Pv9c2dmHgdi8wMfWlx--_m1km0q9hvpZKKMecaHb0hfhYTeLMQ9ZeSfg"
-        },
-        {
-          "url": "https://www.northjersey.com/story/news/new-jersey/2026/11/06/donald-trump-attend-army-navy-game-metlife-stadium-december/92641403007/",
-          "title": "President Trump will reportedly be in North Jersey for Army-Navy game",
-          "publisher": "Bergen Record",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlE8k-SKr8Qv_a5fdO_aS6_UdHxLFdt_yuDat6wFt49Gz58vTscQheC2nD_qA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/president-trump-reportedly-north-jersey-173303748.html",
-          "title": "President Trump will reportedly be in North Jersey for Army-Navy game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYCyV2Bav6VBe2AAEvv9E2pcrdERtB7GFtQBskFuDxBvMlg1qxOxzZ6R0He6Q"
-        }
-      ]
-    },
-    {
-      "query": "texans vs chargers",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T16:10:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/outkick-betting/houston-texans-los-angeles-chargers-matchup-surprisingly-struggling-nfl-teams",
-        "https://sports.yahoo.com/articles/texans-vs-chargers-prediction-pick-144222523.html",
-        "https://www.cbssports.com/prediction/news/chargers-vs-texans-odds-predictions-use-polymarket-promo-code-cbssports-to-get-a-25-bonus-for-nfl-week-9/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVb6OBxtJacqUxUEc-oZsNDpSsevQAjI6PdggA8Xr8dBFvmVpfj7dcTG48PWM",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/outkick-betting/houston-texans-los-angeles-chargers-matchup-surprisingly-struggling-nfl-teams",
-          "title": "Houston Texans and Los Angeles Chargers meet in a matchup of two surprisingly struggling NFL teams",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVb6OBxtJacqUxUEc-oZsNDpSsevQAjI6PdggA8Xr8dBFvmVpfj7dcTG48PWM"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/texans-vs-chargers-prediction-pick-144222523.html",
-          "title": "Texans vs Chargers Prediction, Pick, Odds for NFL Week 9",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTIvfoDJ5wKXkCicKEn7P2dhAaKFqyasXhBqO_X6CIDf-HWTHcj45nReJ9mL-c"
-        },
-        {
-          "url": "https://www.cbssports.com/prediction/news/chargers-vs-texans-odds-predictions-use-polymarket-promo-code-cbssports-to-get-a-25-bonus-for-nfl-week-9/",
-          "title": "Chargers vs. Texans odds, predictions: Use Polymarket promo code CBSSPORTS to get a $25 bonus for NFL Week 9",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIHqRh-Q3KqV_LLi5U_g4tNwHgUdPWvQp514SgJkXfyytzYsMksGd81prZOPU"
-        }
-      ]
-    },
-    {
-      "query": "le mans vs monaco",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T16:10:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cwe9lezd24y9t",
-        "https://onefootball.com/en/news/filipe-luis-says-monacos-level-depends-on-improving-on-the-ball-and-in-duels-at-le-mans-43740479",
-        "https://www.whoscored.com/articles/LMvtWuwGjUGwPpAnAeEIWQ/show/cng111-20261108-le-mans-vs-monaco-prediction-1794126046"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRws_R-EFu6ATaSHyyJ5-r28sd4bMy0gv7oyuigsKxI2StTzIT1jsMbhMJf2tY",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOzgEm3HB3RzbhfTfAogzK0v8oF5yYoZKvePjiS7NlZ20CqcXPQSScFgIvENo",
       "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/cwe9lezd24y9t",
-          "title": "Le Mans vs Monaco: French Ligue 1 stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/c8x23v559276t",
+          "title": "Premier League LIVE: Build-up, team news, live text, radio & score updates from across the Premier League",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRws_R-EFu6ATaSHyyJ5-r28sd4bMy0gv7oyuigsKxI2StTzIT1jsMbhMJf2tY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOzgEm3HB3RzbhfTfAogzK0v8oF5yYoZKvePjiS7NlZ20CqcXPQSScFgIvENo"
         },
         {
-          "url": "https://onefootball.com/en/news/filipe-luis-says-monacos-level-depends-on-improving-on-the-ball-and-in-duels-at-le-mans-43740479",
-          "title": "Filipe Luis says Monaco’s level depends on improving on the ball and in duels at Le Mans",
-          "publisher": "OneFootball",
+          "url": "https://www.theguardian.com/football/live/2026/nov/08/crystal-palace-v-liverpool-brighton-v-brentford-and-more-premier-league-live",
+          "title": "Crystal Palace 1-3 Liverpool, Sunderland 1-0 Chelsea, and more: Premier League – as it happened",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdQst6GEifisDWzWzS4K6Ey3djI2CFvSxVOPlKe9_lifxMP7NycwIeElJvlGk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_g1ftLGOgO1PB6c0hgz733hxi3O4t6JuVY1QJp6bQq_Hu9Kwf303Wnv4r6nQ"
         },
         {
-          "url": "https://www.whoscored.com/articles/LMvtWuwGjUGwPpAnAeEIWQ/show/cng111-20261108-le-mans-vs-monaco-prediction-1794126046",
-          "title": "Le Mans vs Monaco: Lineups, Prediction, Odds & Bet Builder Tip",
-          "publisher": "WhoScored.com",
+          "url": "https://www.bbc.co.uk/sport/football/live/c8x23v559276t?page=2",
+          "title": "Premier League LIVE: Build-up, team news, live text, radio & score updates from across the Premier League",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSI46u7uHsq-V1hLniyj9SLj_gqE_i0KnCqZWNyp7h_uAkeLYgWy9DN4dX5Tj4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOzgEm3HB3RzbhfTfAogzK0v8oF5yYoZKvePjiS7NlZ20CqcXPQSScFgIvENo"
         }
       ]
     },
     {
-      "query": "atletico vs barcelona",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T16:10:00Z",
+      "query": "pl",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T16:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/extraordinary-footballer-diego-simone-goes-000000647.html",
-        "https://www.espn.com/soccer/story/_/id/50407601/diego-simeone-julian-alvarez-barcelona-atletico-madrid",
-        "https://www.nytimes.com/athletic/7763590/2026/11/08/barcelona-vs-atletico-madrid-stream-how-to-watch-la-liga-nov-8/"
+        "https://wiadomosci.onet.pl/krakow/lekarze-ratowali-policjantow-po-zamachu-w-krakowie-tak-znalezlismy-sie-w-oku-cyklonu/fzn497z",
+        "https://wiadomosci.wp.pl/krakow/wciaz-nie-wiedzieli-co-sie-dzieje-dramatyczna-relacja-7348846286850496a",
+        "https://www.o2.pl/informacje/malarka-izabela-w-zginela-w-strzelaninie-w-krakowie-osierocila-czworo-dzieci-7348853426973152a"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWD6TCrzymafF5U-2AH_JSzj1AlqP-Lm-9zHcyu0g_15kYRMkMksXIE-aaPis",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPPjIE5w62dNNDk2ysFkallC7adCYqwc12c7AbJw9j8S0rTl9HCtTc-G2s3do",
+      "image_credit": "Wiadomości Onet",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/extraordinary-footballer-diego-simone-goes-000000647.html",
-          "title": "‘An extraordinary footballer’ – Diego Simone goes crazy for Raphinha again ahead of Barcelona clash",
-          "publisher": "Yahoo Sports",
+          "url": "https://wiadomosci.onet.pl/krakow/lekarze-ratowali-policjantow-po-zamachu-w-krakowie-tak-znalezlismy-sie-w-oku-cyklonu/fzn497z",
+          "title": "Lekarze ruszyli na ratunek policjantom w Krakowie. \"Tak znaleźliśmy się w oku cyklonu\"",
+          "publisher": "Wiadomości Onet",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWD6TCrzymafF5U-2AH_JSzj1AlqP-Lm-9zHcyu0g_15kYRMkMksXIE-aaPis"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPPjIE5w62dNNDk2ysFkallC7adCYqwc12c7AbJw9j8S0rTl9HCtTc-G2s3do"
         },
         {
-          "url": "https://www.espn.com/soccer/story/_/id/50407601/diego-simeone-julian-alvarez-barcelona-atletico-madrid",
-          "title": "Diego Simeone backs Julián Álvarez for Barcelona clash after Atlético transfer saga",
-          "publisher": "ESPN",
+          "url": "https://wiadomosci.wp.pl/krakow/wciaz-nie-wiedzieli-co-sie-dzieje-dramatyczna-relacja-7348846286850496a",
+          "title": "\"Wciąż nie wiedzieli, co się dzieje\". Dramatyczna relacja",
+          "publisher": "WP Wiadomości",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvQj1594Segev85JvUwvek-rhLCIi5xiE7cXmQ5RLQnaaEVhlPmyreNDyHpCE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH8RE9LHVLZmXejbDz0i6PlObox2YI91qTbiRzxSbgLyGjkz_URcjvAZsR4Y0"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7763590/2026/11/08/barcelona-vs-atletico-madrid-stream-how-to-watch-la-liga-nov-8/",
-          "title": "How to watch Barcelona vs. Atletico Madrid in the U.S.: TV channel and streaming options for November 8",
-          "publisher": "The New York Times",
+          "url": "https://www.o2.pl/informacje/malarka-izabela-w-zginela-w-strzelaninie-w-krakowie-osierocila-czworo-dzieci-7348853426973152a",
+          "title": "Malarka Izabela W. zginęła w strzelaninie w Krakowie. Osierociła czworo dzieci",
+          "publisher": "o2",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLo5YPMW5qqYDuoarHiZy91eMh9OTY8pHrPIh01tvqVEYGIxvwl45m98RxLmc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRI7YiTG30_KH15Pl_OtdULO5MV1lTnOGpVhurq7EFOO8dVFmg4qO1dw9NyZH0"
         }
       ]
     },
     {
-      "query": "inter vs como",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T16:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/serie-line-ups-inter-vs-160100190.html",
-        "https://www.cbssports.com/watch/general/video/can-como-finally-defeat-inter-milan-serie-a-match-preview-morning-footy",
-        "https://www.goal.com/en-us/news/watch-inter-v-como-live-today-who-is-showing-the-match-on-tv-and-streaming-it-live/blt29f88b37b85c4ee1"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS69_Z52MwUsJFDg0QC7m4lT2rChkyriiKGGro-bkl80xlaVl03Sv3CWjyG0cw",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/serie-line-ups-inter-vs-160100190.html",
-          "title": "Serie A line-ups: Inter vs. Como",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS69_Z52MwUsJFDg0QC7m4lT2rChkyriiKGGro-bkl80xlaVl03Sv3CWjyG0cw"
-        },
-        {
-          "url": "https://www.cbssports.com/watch/general/video/can-como-finally-defeat-inter-milan-serie-a-match-preview-morning-footy",
-          "title": "Can Como FINALLY defeat Inter Milan? | Serie A MATCH PREVIEW - Morning Footy Stream of Soccer",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRf191xI5_QCfYizzanKaC1oFS72hLecxZoaNmpo98NikcSx1B5IQm8a9gG5qE"
-        },
-        {
-          "url": "https://www.goal.com/en-us/news/watch-inter-v-como-live-today-who-is-showing-the-match-on-tv-and-streaming-it-live/blt29f88b37b85c4ee1",
-          "title": "Watch Inter v Como live today: who is showing the match on TV and streaming it live?",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR51Dmb_ylMCypKgX-6UZiSQb24OpCxkg2cgT6rL319oMHJXbYNHetMj54Cokk"
-        }
-      ]
-    },
-    {
-      "query": "cambuur vs psv",
+      "query": "nicolas jackson",
       "approx_searches": "200+",
-      "published_at": "2026-11-08T16:00:00Z",
+      "published_at": "2026-11-08T16:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/sc-cambuur-vs-psv-eindhoven-091521019.html",
-        "https://www.goal.com/en/news/psv-s-probable-line-up-is-pepi-ready-for-a-starting-place/bltf5ae2d13543fe49f",
-        "https://www.sportsmole.co.uk/football/cambuur/preview/cambuur-vs-psv-prediction-team-news-lineups_608646.html"
+        "https://sports.yahoo.com/articles/nicolas-jackson-could-end-aston-165900830.html",
+        "https://www.goal.com/en-us/news/ian-wright-backs-65m-aston-villa-signing-nicolas-jackson-make-chelsea-regret-sale/bltd9222f8122e27bab",
+        "https://www.footballtransfers.com/us/transfer-news/uk-premier-league/2026/10/man-utds-perfect-signing-receives-official-transfer-verdict"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy951Y7-yGpqgVJo1ttoj0tFnMAsarJOPn4_7MuGwnREqpcGHOMEl7rbhTAes",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRj496dAdVSREmhARc8QV9dZjrxveWZ-jwn_dqAR_wHLG4D_qntFyEWVYnTl5U",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/sc-cambuur-vs-psv-eindhoven-091521019.html",
-          "title": "SC Cambuur vs PSV Eindhoven: Match Preview, Team News and Expected Lineups",
+          "url": "https://sports.yahoo.com/articles/nicolas-jackson-could-end-aston-165900830.html",
+          "title": "Nicolas Jackson could end Aston Villa's comical 11-year wait after Premier League announcement",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy951Y7-yGpqgVJo1ttoj0tFnMAsarJOPn4_7MuGwnREqpcGHOMEl7rbhTAes"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRj496dAdVSREmhARc8QV9dZjrxveWZ-jwn_dqAR_wHLG4D_qntFyEWVYnTl5U"
         },
         {
-          "url": "https://www.goal.com/en/news/psv-s-probable-line-up-is-pepi-ready-for-a-starting-place/bltf5ae2d13543fe49f",
-          "title": "PSV’s probable line-up: is Pepi ready for a starting place?",
+          "url": "https://www.goal.com/en-us/news/ian-wright-backs-65m-aston-villa-signing-nicolas-jackson-make-chelsea-regret-sale/bltd9222f8122e27bab",
+          "title": "'He could go on a run at Villa' - Arsenal legend Ian Wright backs £65m signing Nicolas Jackson to make Chelsea regret summer sale",
           "publisher": "Goal.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS7bHvOPcM6RU1pEwPXKj6Pp03YyVNoDKrwUj1pUnBD0t8YKJN4t_y6mqjJAo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2iS4flajUYXMAeOZaBdTBSfXfqleLMtPsElb8EEZEa2pAJnuu6Y4RRERWQ-8"
         },
         {
-          "url": "https://www.sportsmole.co.uk/football/cambuur/preview/cambuur-vs-psv-prediction-team-news-lineups_608646.html",
-          "title": "Preview: Cambuur vs PSV Eindhoven - prediction, team news, lineups",
-          "publisher": "Sports Mole",
+          "url": "https://www.footballtransfers.com/us/transfer-news/uk-premier-league/2026/10/man-utds-perfect-signing-receives-official-transfer-verdict",
+          "title": "Man Utd's perfect signing receives official transfer verdict",
+          "publisher": "www.footballtransfers.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRK3k2tSsVyMHN73bZkW4r8HhMtkKdK9l-g5glfMiQ5sVSaJ3W1RanRmLbSYHk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJnZWY1XLQ_iWC3a_fcOZU7lrlkMpcW1bkpdYH9u6hRmLARc1wZPz4J_Bj4JU"
         }
       ]
     },
     {
-      "query": "maha",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T15:50:00Z",
+      "query": "freiburg vs union berlin",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T16:40:00Z",
       "related_news_urls": [
-        "https://www.washingtonpost.com/politics/2026/11/07/republican-sen-ron-johnson-accuses-trump-administration-corruption/",
-        "https://www.nytimes.com/2026/11/06/us/politics/susie-wiles-calley-means-joe-rogan.html",
-        "https://www.axios.com/2026/11/06/trump-joe-rogan-calley-means"
+        "https://www.kicker.de/freiburg-gegen-union-2026-bundesliga-5226885/ticker",
+        "https://www.t-online.de/sport/live-ticker/fussball/bundesliga/sdc_fm-59361/bundesliga-live-freiburg-gegen-berlin-auftsellung-und-ticker.html",
+        "https://www.tipico.de/wett-tipps/sportwetten-news/freiburg-union-berlin-offizielle-aufstellungen"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNdRnGRn-Y6PHDQVFZviZHqfInBK8acS6DNndem1lrKeBfrprTrZXRZF2PgG4",
-      "image_credit": "The Washington Post",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUx3x_FUGjTSpmh-IF49qVsuz4ngfJl0quegfZMo65rWy_00zWaylw5DvXePc",
+      "image_credit": "Kicker",
       "news": [
         {
-          "url": "https://www.washingtonpost.com/politics/2026/11/07/republican-sen-ron-johnson-accuses-trump-administration-corruption/",
-          "title": "Republican Sen. Ron Johnson accuses Trump administration of corruption",
-          "publisher": "The Washington Post",
+          "url": "https://www.kicker.de/freiburg-gegen-union-2026-bundesliga-5226885/ticker",
+          "title": "Liveticker | SC Freiburg - 1. FC Union Berlin 0:0 | 9. Spieltag | Bundesliga 2026/27",
+          "publisher": "Kicker",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNdRnGRn-Y6PHDQVFZviZHqfInBK8acS6DNndem1lrKeBfrprTrZXRZF2PgG4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUx3x_FUGjTSpmh-IF49qVsuz4ngfJl0quegfZMo65rWy_00zWaylw5DvXePc"
         },
         {
-          "url": "https://www.nytimes.com/2026/11/06/us/politics/susie-wiles-calley-means-joe-rogan.html",
-          "title": "Susie Wiles, Trump’s Chief of Staff, Is Accused of Blocking Health Policies to Attract Donations",
-          "publisher": "The New York Times",
+          "url": "https://www.t-online.de/sport/live-ticker/fussball/bundesliga/sdc_fm-59361/bundesliga-live-freiburg-gegen-berlin-auftsellung-und-ticker.html",
+          "title": "Bundesliga live: Freiburg gegen Berlin | Auftsellung und Ticker",
+          "publisher": "T-Online",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEk0_8mppUIjMz00-habckYjnOADp-oTx6v6Mpg6y2yrFcZV2guFGm03fS3sY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7oec3VSIrwhuQeniJnVxHENhEEPUv_ZLkcI-bKPttkiDQINUO7PqoX_DK7n0"
         },
         {
-          "url": "https://www.axios.com/2026/11/06/trump-joe-rogan-calley-means",
-          "title": "Ex-RFK Jr. adviser alleges Trump admin corruption prompted resignation",
-          "publisher": "Axios",
+          "url": "https://www.tipico.de/wett-tipps/sportwetten-news/freiburg-union-berlin-offizielle-aufstellungen",
+          "title": "SC Freiburg vs. 1. FC Union Berlin: Die offiziellen Aufstellungen sind da!",
+          "publisher": "Tipico",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSse96jaY8OUL1j73sFCKgxr8CzIIg2NpbW1qiNF5aDzWKCH5n3rBlO_DdTKVM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmo5_EwMArJTxHogLD3dRiAbRGOc9iY9c3gnu8X3vpcuv_4udDVFWzChI22wI"
         }
       ]
     },
     {
-      "query": "epl table",
-      "approx_searches": "200000+",
-      "published_at": "2026-11-08T15:50:00Z",
+      "query": "premier league standings",
+      "approx_searches": "50000+",
+      "published_at": "2026-11-08T16:30:00Z",
       "related_news_urls": [
         "https://www.bbc.com/sport/football/live/cmj6jdk36975t",
         "https://www.espn.com/soccer/story/_/id/50410354/manchester-city-nottingham-forest-premier-league-loss",
@@ -322,37 +182,177 @@
       ]
     },
     {
-      "query": "george pickens",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T15:40:00Z",
+      "query": "khalil herbert",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T16:30:00Z",
       "related_news_urls": [
-        "https://www.dallascowboys.com/news/updates-november-2026",
-        "https://www.si.com/nfl/cowboys/onsi/george-pickens-week-9-status-more-question-cowboys-roster-move",
-        "https://sports.yahoo.com/articles/cowboys-announce-george-pickens-news-174618785.html"
+        "https://www.mlbtraderumors.com/2026/10/sonny-gray-becomes-free-agent-after-mutual-option-is-declined.html",
+        "https://www.ajc.com/sports/2026/11/could-braves-and-sonny-gray-finally-happen-this-offseason/",
+        "https://www.foxsports.com/stories/mlb/mlb-free-agency-skubal-offseason-signings"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk_V6UgqHlQmSyjrGSaqLxNe-z1RPmwI3GeZEXcFQklVPJhbCvupMW8zhQOTM",
-      "image_credit": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYoYFfpD_nXRIJScC2D9ymWoEobOEIvm0YdcfXI-nP7SKEjj6UI0yLqmsMnFU",
+      "image_credit": "MLB Trade Rumors",
       "news": [
         {
-          "url": "https://www.dallascowboys.com/news/updates-november-2026",
-          "title": "Updates: Lawrence to IR, Liufau returns",
-          "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+          "url": "https://www.mlbtraderumors.com/2026/10/sonny-gray-becomes-free-agent-after-mutual-option-is-declined.html",
+          "title": "Red Sox Decline Mutual Option On Sonny Gray",
+          "publisher": "MLB Trade Rumors",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk_V6UgqHlQmSyjrGSaqLxNe-z1RPmwI3GeZEXcFQklVPJhbCvupMW8zhQOTM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYoYFfpD_nXRIJScC2D9ymWoEobOEIvm0YdcfXI-nP7SKEjj6UI0yLqmsMnFU"
         },
         {
-          "url": "https://www.si.com/nfl/cowboys/onsi/george-pickens-week-9-status-more-question-cowboys-roster-move",
-          "title": "George Pickens' Week 9 Status Now More in Question After Cowboys' Roster Move",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.ajc.com/sports/2026/11/could-braves-and-sonny-gray-finally-happen-this-offseason/",
+          "title": "Could Braves and Sonny Gray finally happen this offseason?",
+          "publisher": "The Atlanta Journal-Constitution",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqUhdc_OIG4GlULp3HsUxZmyRJpfVm_9Le2c0D81okMrtP0_Dt7esaW0YkecI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTggWjbNDAsU6RgtRJNsLhYkWzJeXWlr_5fpo06vmysTa3gOS46_5S446Ul59Y"
         },
         {
-          "url": "https://sports.yahoo.com/articles/cowboys-announce-george-pickens-news-174618785.html",
-          "title": "Cowboys Announce George Pickens News Before Colts Game",
+          "url": "https://www.foxsports.com/stories/mlb/mlb-free-agency-skubal-offseason-signings",
+          "title": "MLB Free Agency Buzz: Dodgers Make Coaching Change; Nationals Extend OF",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSj1K-xAV3xFABFgnmBls0Ta9QMox5Ys0sDYhTDCc987oNx0hVyF6ICRukroCA"
+        }
+      ]
+    },
+    {
+      "query": "power outages seattle",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-08T16:30:00Z",
+      "related_news_urls": [
+        "https://www.king5.com/article/weather/severe-weather/strong-winds-blow-down-trees-block-roads-and-close-routes-saturday-night/281-b0a1088e-8003-45d3-83fb-8d7b854620ac",
+        "https://www.kiro7.com/news/local/strong-winds-leave-tens-thousands-across-washington-without-power/b291d13e-42e1-4af9-a9db-c7584953e470/",
+        "https://www.seattletimes.com/seattle-news/weather/seattle-windstorm-83k-outages-reported-in-western-wa/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSziMx76v74in_WvgtLdXsBaj46uB25y-i6hSgNqatrwUABXsk39CH5rTgQG8s",
+      "image_credit": "KING5.com",
+      "news": [
+        {
+          "url": "https://www.king5.com/article/weather/severe-weather/strong-winds-blow-down-trees-block-roads-and-close-routes-saturday-night/281-b0a1088e-8003-45d3-83fb-8d7b854620ac",
+          "title": "Strong winds blow down trees, block roads and close roads Saturday night",
+          "publisher": "KING5.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSziMx76v74in_WvgtLdXsBaj46uB25y-i6hSgNqatrwUABXsk39CH5rTgQG8s"
+        },
+        {
+          "url": "https://www.kiro7.com/news/local/strong-winds-leave-tens-thousands-across-washington-without-power/b291d13e-42e1-4af9-a9db-c7584953e470/",
+          "title": "Strong winds leave tens of thousands across Washington without power",
+          "publisher": "KIRO 7 News Seattle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS34IwvoU5gFmtfmBksQ0kJRlPNfhqpPCfLm1qwDo1ttqh_4gMLtaoVdsjyRIA"
+        },
+        {
+          "url": "https://www.seattletimes.com/seattle-news/weather/seattle-windstorm-83k-outages-reported-in-western-wa/",
+          "title": "Thousands in Western WA lost power from hefty windstorm",
+          "publisher": "The Seattle Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOp_DcPYGupK82bAYFEobVJCgXFKe0NXeaEHZDvoY6K7It-9gscApNocGMpho"
+        }
+      ]
+    },
+    {
+      "query": "chicago fire",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-08T16:30:00Z",
+      "related_news_urls": [
+        "https://www.intermiamicf.com/news/it-s-miami-time-presented-by-royal-caribbean-inter-miami-cf-to-face-columbus-crew-in-round-one-of-the-audi-2026-mls-playoffs",
+        "https://www.nbc4i.com/sports/mls/columbus-crew/crew-enter-mls-playoffs-as-no-7-seed-to-face-inter-miami-in-round-one/",
+        "https://www.bbc.com/sport/football/live/cw203jemke86t"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdAtICysXeft2wtE88mCweHgtxc91TQKP3dSOQqxotAuSNiXQkRtFmD-BrN5o",
+      "image_credit": "Inter Miami CF",
+      "news": [
+        {
+          "url": "https://www.intermiamicf.com/news/it-s-miami-time-presented-by-royal-caribbean-inter-miami-cf-to-face-columbus-crew-in-round-one-of-the-audi-2026-mls-playoffs",
+          "title": "It’s Miami Time presented by Royal Caribbean: Inter Miami CF to Face Columbus Crew in Round One of the Audi 2026 MLS Playoffs",
+          "publisher": "Inter Miami CF",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdAtICysXeft2wtE88mCweHgtxc91TQKP3dSOQqxotAuSNiXQkRtFmD-BrN5o"
+        },
+        {
+          "url": "https://www.nbc4i.com/sports/mls/columbus-crew/crew-enter-mls-playoffs-as-no-7-seed-to-face-inter-miami-in-round-one/",
+          "title": "Crew enter MLS playoffs as No. 7 seed, to face Inter Miami in Round One",
+          "publisher": "NBC4 WCMH-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjaJKT9-v4qTyygYQ_8CFTkWHzfJM0nUkhOGghkuuiWqtMRA0UfNZe9PAJWuY"
+        },
+        {
+          "url": "https://www.bbc.com/sport/football/live/cw203jemke86t",
+          "title": "Chicago Fire vs Columbus Crew: Major League Soccer stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyija6X5BPE92BH1IAT94YYfPu6J9QGFOT7toIOIy0gNMfarCyhe1M4QfI-W8"
+        }
+      ]
+    },
+    {
+      "query": "usa network",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T16:30:00Z",
+      "related_news_urls": [
+        "https://www.sportsvideo.org/2026/11/05/the-cw-goes-big-on-college-basketball-expanding-remi-workflows-specialty-cameras-across-three-conferences-130-games/",
+        "https://sports.yahoo.com/articles/neil-everett-guest-host-bill-180009924.html",
+        "https://www.sportsvideo.org/2026/11/02/off-historic-opener-in-rome-fox-sports-relies-on-remi-workflows-specialty-cameras-for-college-basketball-season/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZNG2tbAATdB9FJTmXn7AhfDX7fK5OQwhQnSJCAwohFPqSzG3IivlqoXrANxc",
+      "image_credit": "Sports Video Group",
+      "news": [
+        {
+          "url": "https://www.sportsvideo.org/2026/11/05/the-cw-goes-big-on-college-basketball-expanding-remi-workflows-specialty-cameras-across-three-conferences-130-games/",
+          "title": "The CW Goes Big on College Basketball, Expanding REMI Workflows, Specialty Cameras Across Three Conferences, 130 Games",
+          "publisher": "Sports Video Group",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZNG2tbAATdB9FJTmXn7AhfDX7fK5OQwhQnSJCAwohFPqSzG3IivlqoXrANxc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/neil-everett-guest-host-bill-180009924.html",
+          "title": "Neil Everett to guest host Bill Walton Classic on USA Network",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoQ9d4in4YG3VNEUEWQgZUjaORaTNhneQ2TavjA_Q2JsUMTnXMmwnKbP6KMbA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ90okyqBiLNgRjGiMT3BRNHQh-Qod-ATrP8z0N4lYDNmr84GlV1VbZQOVZ9nE"
+        },
+        {
+          "url": "https://www.sportsvideo.org/2026/11/02/off-historic-opener-in-rome-fox-sports-relies-on-remi-workflows-specialty-cameras-for-college-basketball-season/",
+          "title": "Off Historic Opener in Rome, FOX Sports Relies on REMI Workflows, Specialty Cameras for College Basketball Season",
+          "publisher": "Sports Video Group",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLVGtrvwPDVnvch0JdZqsn49PofTSzPAxPwwFl01Ps2ZEuiez9UQCi8v6Exd0"
+        }
+      ]
+    },
+    {
+      "query": "myles garrett",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T16:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50400738/sources-rams-myles-garrett-track-return-vs-commanders",
+        "https://sports.yahoo.com/articles/myles-garrett-finally-making-la-154305013.html",
+        "https://www.nfl.com/news/rams-myles-garrett-knee-activated-injured-reserve-commanders"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSd6WqKYsMdNDINYF9Dztmeb4jW80LCnDhUmfetI2hLZ1g8VxChAKUHqDNuhvs",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50400738/sources-rams-myles-garrett-track-return-vs-commanders",
+          "title": "Rams' Myles Garrett to be activated from injured reserve, play vs. Commanders",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSd6WqKYsMdNDINYF9Dztmeb4jW80LCnDhUmfetI2hLZ1g8VxChAKUHqDNuhvs"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/myles-garrett-finally-making-la-154305013.html",
+          "title": "Is Myles Garrett finally making LA debut vs. Commanders after knee surgery?",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQd8sRFj3jpfDeGeIjeYtikFjXhu0PqcVuuja45_Set6uNk4jTaWTkNrQ2p190"
+        },
+        {
+          "url": "https://www.nfl.com/news/rams-myles-garrett-knee-activated-injured-reserve-commanders",
+          "title": "Rams activate Myles Garrett (knee) from injured reserve ahead of Sunday's game vs. Commanders",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUwj7XBr4XifbgJvHZps5QVaxs_kUbdu0qFQiVzNFSdlIFbJI7EW44lL2Lh4g"
         }
       ]
     }
