@@ -15,3 +15,14 @@
 .qcp-actions .qca-controls>[aria-pressed="true"]{background:#fff1d5;color:#5f3800}
 .qcp-actions .qca-controls>:focus-visible{outline:3px solid #c47936;outline-offset:2px}
 @media(min-width:650px){.qcp-actions .qca-controls{grid-template-columns:repeat(5,minmax(0,1fr))}}
+
+/* Creator-priced Quick Card: 21+-style gated interaction, no simulated wallet charge. */
+.qcp-paid-gate{border:1px solid #dfccaa;border-radius:20px;padding:20px;background:#fffaf1;display:grid;gap:13px;text-align:center;min-height:230px;align-content:center}
+.qcp-paid-gate .qcp-eyebrow{color:#715027;margin:0}
+.qcp-paid-gate h2{font:800 clamp(24px,5vw,32px)/1.2 system-ui;color:#36233c;margin:0}
+.qcp-paid-gate .qcp-desc{font-size:19px;color:#4f354c;margin:0}
+.qcp-paid-gate .qcp-art{width:100%;max-height:310px;object-fit:cover}
+.qcp-paid-gate .qcp-unlock-button{margin:0 auto;min-height:52px;width:min(100%,450px);background:#332643;color:#fff;border:1px solid #6d5a7e;font-size:18px}
+.qcp-paid-gate .qcp-unlock-button:disabled{opacity:.7;cursor:not-allowed}
+.qcp-paid-gate .qcp-x-share{margin:auto}
+@media(max-width:420px){.qcp-paid-gate{padding:15px}.qcp-paid-gate .qcp-desc{font-size:17px}}
