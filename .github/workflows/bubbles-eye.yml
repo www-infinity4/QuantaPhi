@@ -1,5 +1,7 @@
 name: bubbles-eye
 on:
+  pull_request:
+    paths: ['.github/workflows/bubbles-eye.yml', 'workers/bubbles-cloud-browser/**', 'tools/eye/**', 'test/bubbles-eye-cloudflare.test.mjs']
   workflow_run:
     workflows: ["pages build and deployment"]
     types: [completed]
@@ -15,6 +17,22 @@ concurrency:
   group: bubbles-eye-public-capture
   cancel-in-progress: false
 jobs:
+  source:
+    if: ${{ github.event_name == 'pull_request' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check workers/bubbles-cloud-browser/eye-capture.mjs
+      - run: node --check tools/eye/capture.mjs
+      - run: node --check tools/eye/diagnose.mjs
+      - run: node --test test/bubbles-eye-cloudflare.test.mjs
   eye:
     if: ${{ github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main') }}
     runs-on: ubuntu-latest
