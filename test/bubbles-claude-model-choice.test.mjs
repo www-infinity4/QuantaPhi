@@ -33,13 +33,19 @@ test('empty text cannot start a Claude repair or model call', () => {
 });
 
 
-test('the Claude model is available from each first-party Bubbles entrypoint',async()=>{
+test('unconnected Claude launcher and model picker are not exposed on first-party Bubbles pages',async()=>{
  const fs=await import('node:fs');
  for(const path of ['bubbles.html','bubbles-chrome.html','bubbles/index.html','index.html']){
   const html=fs.readFileSync(new URL('../'+path,import.meta.url),'utf8');
-  assert.match(html,/\/claude-card\.js\?v=20261108-steward/,'Missing Claude Steward script: '+path);
-  assert.match(html,/\/bubbles-ai\.js\?v=20261108-claude-model1/,'Missing selectable model: '+path);
+  assert.doesNotMatch(html,/src="\/claude-card\.js\?/,'Misleading Claude launcher on '+path);
+  assert.match(html,/src="\/bubbles-ai\.js\?/,'Native Bubbles must stay loaded on '+path);
  }
+ const chat=fs.readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ assert.doesNotMatch(chat,/const claudeModel=create\('option'/,'Do not offer the unverified Claude provider');
+ assert.doesNotMatch(chat,/composer\.append\(modelRow/,'No inert model chooser');
+ assert.match(chat,/const modelChoice=\{value:'bubbles'\}/,'Keep native Bubbles routing default');
+ const studio=fs.readFileSync(new URL('../bubbles.html',import.meta.url),'utf8');
+ assert.doesNotMatch(studio,/source-quick-card\.html\?card=claude/,'Remove misleading Claude review adviser');
 });
 
 test('selected Claude responses remain in the main Bubbles conversation',async()=>{

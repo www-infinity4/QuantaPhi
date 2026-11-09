@@ -31,3 +31,12 @@ Uses the existing `ANTHROPIC_API_KEY` secret on `infinity-rogers`. Optional var 
 - Copilot highlighted 13 inline review findings; source fixes were committed and threads resolved. The review state is still COMMENTED, not an independent APPROVED security review.
 - Cloudflare's currently deployed `infinity-rogers` version dates to 2026-11-06, before this Claude code. The encrypted secret and service bindings are present but **the feature is not verified live**.
 - No merge or deployment may be inferred from green CI. Obtain independent approval, use the repo's guarded release, verify the actual Worker version, then perform a non-sensitive owner-authenticated chat and Android acceptance test.
+
+
+## Owner correction — 2026-11-08: website access is not a paid API authorization
+
+The owner specifically requested **Claude's existing website service to help Bubbles complete real Bubbles work tickets**, not a floating Claude chat button or an unverified Anthropic API model selector. The standalone launcher and model-choice UI were removed in the corrective branch `fix/remove-unconnected-claude-ui-20261108`. This does not remove Bubbles' Cloudflare models, tools, voice, memory, signed owner executor, work queue or existing ticket.
+
+An authenticated `claude.ai` browser session is not a supported server-to-server Claude credential. Do not redirect its cookies, infer paid API entitlement, use an unapproved login automation, or silently send paid Anthropic requests. Existing Claude Steward server code remains staged/isolated for historical review; no live website-to-Bubbles execution is proven.
+
+**Next lawful integration path:** Bubbles claims an existing ticket using its signed work engine; it may prepare an owner-reviewed, bounded task packet for manual use in a logged-in Claude website session. Any automated provider bridge requires a separately verified supported method, explicit consent and cost disclosure; the output must come back through the normal source-test-review-merge-deploy receipts before being called work completed. No additional provider button should appear unless end-to-end connectivity is independently demonstrated.
