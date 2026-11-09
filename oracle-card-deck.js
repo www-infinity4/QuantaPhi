@@ -530,7 +530,7 @@ function show(entry,remember=true,automatic=false){
    // the generic QuantaPhi site preview used by unrelated URLs.
    const mediaSrc=displayed.node.querySelector('[data-walmart-image],.qbp-photo,.sap-feature img,.iqc-media img,.qcx-art img,.premium-selected img,.oracle-original-cover img,img[src]')?.getAttribute('src')||'';
    mountCardActions(container,{id:displayed.feedId||displayed.id,name:displayed.title,
-    category:displayed.category,official:displayed.official,route:'/?card='+encodeURIComponent(displayed.id),mediaSrc});
+    category:displayed.category,official:displayed.official,route:'/?card='+encodeURIComponent(displayed.id)+(displayed.id==='nesSnesQuickCard'?'&nesSnesPreview=1':''),mediaSrc});
    stage.append(container);
   }).catch(()=>{status.textContent='Card actions unavailable; existing card remains usable.';});
  }
