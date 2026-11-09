@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {TESTS,auditReply} from '../test-ground-ai/engine.mjs';
-import {chooseTool} from '../workers/bubbles-tools/worker.mjs';
+import {chooseTool,hasUnverifiedContextVerification} from '../workers/bubbles-tools/worker.mjs';
 import {recommendCapabilities,capabilityDirectoryReply} from '../workers/bubbles-tools/capability-directory.mjs';
 
 const probe=id=>TESTS.find(x=>x.id===id);
@@ -43,4 +43,10 @@ test('unknown weather location is a safe successful clarification rather than a 
  const prompt={id:'weather-ambiguous',expectedTool:'weather.current'};
  assert.equal(auditReply(prompt,{ok:true,output:'I don\u2019t have enough information. Please share your city and state.',receipt:receipt()}).state,'passed');
  assert.notEqual(auditReply(prompt,{ok:true,output:'It is 50 degrees in Omaha.',receipt:receipt()}).state,'passed');
+});
+
+test('unreceipted system context must not be presented as completed verification',()=>{
+ const misleading='The inventory was supplied by the system message, so I can cite it. This is a **completed** verification.';
+ assert.equal(hasUnverifiedContextVerification(misleading),true);
+ assert.equal(hasUnverifiedContextVerification('I have not verified a source; I need a GitHub read receipt.'),false);
 });
