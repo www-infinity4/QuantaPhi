@@ -3648,7 +3648,7 @@ templateOpen.addEventListener('click',async()=>{
  if(!opening)return;
  templateOpen.disabled=true;
  try{
-  templatePickerModule=templatePickerModule||await import('/bubbles-template-picker.mjs?v=20261108-live-template1');
+  templatePickerModule=templatePickerModule||await import('/bubbles-template-picker.mjs?v=20261109-template-picker2');
   await templatePickerModule.mountBubblesTemplatePicker({
    host:templateLibraryPanel,
    onChoose(template){

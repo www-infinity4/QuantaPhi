@@ -63,3 +63,9 @@ No active owner-agent coordinator lease was verified or claimed. Do not overwrit
 - Next action: inspect exact-head CI and independent source review; merge only if accepted and prove website assets/load + signed Bubbles source retrieval. Preserve QuantaPhi issue #1662 as open until live acceptance.
 
 - CI regression diagnosis: exact-head failures traced to changing only one Bubbles script cache version while other entrypoints and tests pin a shared version; restored the shared version to preserve Android/website parity. The new GitHub picker module has its own versioned import and a no-store JSON fetch. The unfinished ledger now links its exact TICKET-1662 record. All checks must rerun against the new head; no claim of production yet.
+
+## Draft preservation and shared version gate (2026-11-09 UTC)
+
+- Added RED regression tests first for non-truncation of existing owner messages, rejection of malformed remote source paths, and one shared fresh JS version across four first-party Bubbles entrypoints. GitHub exact-head test run 42564355193 confirmed 3 failures out of 38 before code changes.
+- Repaired the picker to refuse overlength drafts without touching input; tightened source path validation; updated all four Bubbles entrypoints and existing cache-regression assertions to the same fresh JS version. Existing owner/Cloudflare auth and Bubbles source execution behavior remain unchanged.
+- No coordinator lease claimed; review, merge, public readback and Android acceptance remain unverified pending exact-head green CI and independent approval.

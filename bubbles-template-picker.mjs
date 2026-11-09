@@ -5,6 +5,7 @@ const SHA=/^[0-9a-f]{40}$/;
 const FILE=/^templates\/[a-z0-9]+(?:-[a-z0-9]+)*\.json$/;
 const REPO=/^www-infinity4\/[A-Za-z0-9_.-]+$/;
 const BAD_PATH=/(?:^|\/)\.\.?\//;
+const SOURCE_PATH=/^[A-Za-z0-9_./-]+$/;
 const opts={credentials:'omit',mode:'cors',cache:'no-store',redirect:'error',referrerPolicy:'no-referrer'};
 const text=(v,n)=>String(v||'').trim().slice(0,n);
 export function parseTemplateCatalog(catalog){
@@ -21,7 +22,7 @@ function validTemplate(data,entry){
  return data?.schema==='bubbles.card-template'&&data.version===1&&data.id===entry.id&&
   typeof data.title==='string'&&data.title.length>0&&data.title.length<=120&&
   source&&REPO.test(source.repo||'')&&SHA.test(source.commit||'')&&
-  typeof source.path==='string'&&source.path.length<240&&!BAD_PATH.test(source.path)&&!source.path.startsWith('/')&&
+  typeof source.path==='string'&&source.path.length>0&&source.path.length<240&&SOURCE_PATH.test(source.path)&&!BAD_PATH.test(source.path)&&!source.path.startsWith('/')&&
   site?.schema==='widgetphi.site'&&site.version===1&&Array.isArray(site.cards)&&site.cards.length>=1&&site.cards.length<=12&&
   site.cards.every(card=>card&&/^[a-zA-Z0-9_-]{1,80}$/.test(card.instanceId||'')&&/^[a-zA-Z0-9_-]{1,80}$/.test(card.cardId||'')&&card.settings&&typeof card.settings==='object'&&!Array.isArray(card.settings))&&
   data.integration?.productionVerified===false&&data.integration?.requiresReview===true;
@@ -42,12 +43,15 @@ export async function loadTemplateCatalog(fetcher=fetch){
 }
 export function createTemplateBuildPrompt(template,currentDraft=''){
  if(!template?.id||!ID.test(template.id)||!validTemplate(template,{id:template.id}))throw Error('Select a verified catalog template');
- const draft=text(currentDraft,1100);
+ const draft=String(currentDraft||'');
+ if(draft.length>1100)throw Error('Existing chat draft too long to combine with template. No text was changed.');
  const source=template.source;
  const path='https://github.com/www-infinity4/Bubbles-Cognitive-Automation/blob/main/templates/'+template.id+'.json';
  const header='Build using Bubbles template '+template.id+' ('+text(template.title,120)+'). Read this actual template before modifying code: '+path+'. Reference original source '+source.repo+' at commit '+source.commit+', file '+source.path+'.';
  const instructions='Keep Oracle Octaves styling and functional controls. The manifest is a proposal, not a deployed card. Verify source, actual permissions, tests, independent review and deployment receipts; do not charge or mint coins.';
- return [header,draft?'My build request: '+draft:'My build request: Adapt this template into a working QuantaPhi Quick Card.',instructions].join('\n').slice(0,2400);
+ const prompt=[header,draft.trim()?'My build request: '+draft:'My build request: Adapt this template into a working QuantaPhi Quick Card.',instructions].join('\n');
+ if(prompt.length>2400)throw Error('Template prompt too long. Existing chat draft was preserved.');
+ return prompt;
 }
 export async function mountBubblesTemplatePicker({host,onChoose,fetcher=fetch}={}){
  if(!host||typeof onChoose!=='function')throw Error('Add Template requires a host and selection callback');
@@ -56,7 +60,7 @@ export async function mountBubblesTemplatePicker({host,onChoose,fetcher=fetch}={
  let templates;
  try{templates=await loadTemplateCatalog(fetcher);}catch(error){status.textContent='Templates unavailable: '+text(error.message,160);return 0;}
  if(!templates.length){status.textContent='No verified template configurations available. No placeholder cards were added.';return 0;}
- status.textContent=templates.length+' verified configurations · choose one to prepare an editable chat request.';
+ status.textContent=templates.length+' source-backed configurations · choose one to prepare an editable chat request.';
  const list=document.createElement('div');list.className='ba-template-grid';host.append(list);
  for(const t of templates){
   const card=document.createElement('article');card.className='ba-template-entry';
