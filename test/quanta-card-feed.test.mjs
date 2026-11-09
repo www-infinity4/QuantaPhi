@@ -8,8 +8,8 @@ import {quantScores,loadOwnQuantScores} from '../quanta-feed-quants.mjs';
 import {cleanFeedState,feedCandidates,nextFeedCard,nextFeedDirection,directionScore,markOpened,markViewed,toggleFollowing} from '../quanta-feed-rank.mjs';
 const raw=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 const base=()=>({...cleanFeedState({}),catalog:ALL_FEED_CARDS});
-test('public contains every original quick card and 24 independent discovery cards',()=>{
- assert.equal(DISCOVERY_CARDS.length,24);
+test('public contains every original quick card and 25 independent discovery cards',()=>{
+ assert.equal(DISCOVERY_CARDS.length,25);
  assert.equal(new Set(ALL_FEED_CARDS.map(x=>x.id)).size,ALL_FEED_CARDS.length);
  for(const id of ['muse-ai','webb','google','reddit','radio-philco-90','just-radios','robinhood','chime','x-money','ebay','gold','silver','us-mint','pcgs','ngc','x-live-spaces','wikipedia','vam-scarface','instructables','vintage-toys','antique-collectibles']){
   assert.ok(feedCard(id),id);

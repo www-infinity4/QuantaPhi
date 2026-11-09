@@ -300,3 +300,27 @@ textarea.qcx-input{width:100%;resize:vertical;min-height:85px}
 .iqc-gemini-transcript{max-height:280px;overflow:auto;display:grid;gap:8px;overflow-wrap:anywhere}
 .iqc-gemini-line{margin:0;padding:11px 12px;border-radius:12px;background:#f5f2f0;color:#29252b;white-space:pre-wrap;font:15px/1.55 system-ui}
 .iqc-gemini-connect:focus-visible,.iqc-gemini-account:focus-visible{outline:3px solid #70469c;outline-offset:2px}
+
+/* Native motorcycle model selector: existing Oracle Octaves card, no fake dealer widget. */
+.qcx-motorcycle-tool{display:grid;gap:10px;min-width:0}
+.qcx-motorcycle-tool h3{margin:0;font-size:19px;line-height:1.35}
+.qcx-motorcycle-select{width:100%;max-width:100%;min-height:48px;padding:10px 12px;font:600 16px/1.4 system-ui;border:1px solid #b8aeb7;border-radius:12px;background:#fff;color:#292631}
+.qcx-motorcycle-link{display:flex;align-items:center;justify-content:center;text-align:center;min-height:48px;padding:10px 12px;border:1px solid #bcb3bd;border-radius:12px;background:#eeebed!important;color:#2e2932!important;text-decoration:none!important;font:750 16px/1.4 system-ui}
+.qcx-motorcycle-tool .qcx-link{min-height:44px;display:inline-flex;align-items:center;font-size:15px;line-height:1.4}
+.qcx-motorcycle-tool .qcx-note{margin:0;font-size:14px;line-height:1.5;color:#554e58}
+.qcx-motorcycle-select:focus-visible,.qcx-motorcycle-link:focus-visible{outline:3px solid #784da9;outline-offset:3px}
+
+/* PicoCELA: original network schematic; NOT a live market chart. */
+.qcx-art[data-brand="pcla-picocela"]{background:linear-gradient(140deg,#06152b,#0d4b64 68%,#081b30);color:#fff;border-color:#42e8f3;min-height:205px}
+.qcx-pcla-hero{position:relative;z-index:2;display:flex;flex-direction:column;gap:5px;width:100%}
+.qcx-pcla-ticker{font-size:11px;font-weight:850;letter-spacing:.12em;color:#79f1fa}
+.qcx-pcla-company{font-size:clamp(24px,6vw,36px);font-weight:850;text-shadow:0 0 15px #57dffb}
+.qcx-pcla-tech{font-weight:800;font-size:12px;color:#a4fcfc}.qcx-pcla-caption{font-size:12px;color:#e2f6f7;line-height:1.4}
+.qcx-pcla-mesh{height:84px;position:relative;margin:4px 0;background:linear-gradient(28deg,transparent 21%,#3ed8f980 22%,#3ed8f980 23%,transparent 24%,transparent 60%,#3ed8f980 61%,transparent 62%),linear-gradient(-26deg,transparent 22%,#3ed8f980 23%,#3ed8f980 24%,transparent 25%,transparent 64%,#3ed8f980 65%,transparent 66%)}
+.qcx-pcla-node{position:absolute;width:13px;height:13px;border-radius:50%;border:2px solid #e0ffff;background:#21bfea;box-shadow:0 0 14px #33d7ee}
+.qcx-pcla-node-1{left:4%;top:65%}.qcx-pcla-node-2{left:23%;top:10%}.qcx-pcla-node-3{left:41%;top:55%}
+.qcx-pcla-node-4{left:61%;top:12%}.qcx-pcla-node-5{left:77%;top:62%}.qcx-pcla-node-6{left:93%;top:10%}
+.qcx-pcla-infinity{position:absolute;left:46%;top:5%;font-size:36px;color:#caffffcc;text-shadow:0 0 12px #29d9e5}
+.qcx-pcla-points{margin:0;padding-left:22px;line-height:1.5}.qcx-pcla-points li{margin:7px 0}
+.qcx-pcla-links{display:flex;flex-wrap:wrap;gap:12px}.qcx-pcla-links .qcx-link{min-height:44px;display:inline-flex;align-items:center}
+.qcx-art.qcx-small[data-brand="pcla-picocela"] .qcx-pcla-company{font-size:25px}

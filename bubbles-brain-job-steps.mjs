@@ -4,7 +4,7 @@
 const REPO=/^www-infinity4\/[A-Za-z0-9_.-]{1,80}$/;
 const JOB=/^[A-Za-z0-9_-]{1,48}$/;
 const STATES=new Set(['queued','ready','working','blocked','committed_unverified','merged_verified','deployed_verified','complete','completed','superseded']);
-const RUNNER_PHASE=/^(?:discovery_started|planning_started|source_read|patch_started|patch_prepared|review_started|checks_started|checks_passed|arbitration_started|publication_started|pr_opened|attempt_failed)$/;
+const RUNNER_PHASE=/^(?:discovery_started|planning_started|red_reasoned|orange_reasoned|blue_reasoned|source_read|patch_started|patch_prepared|review_started|checks_started|checks_passed|arbitration_started|publication_started|pr_opened|attempt_failed)$/;
 const safeText=(v,limit)=>typeof v==='string'?v.replace(/[\u0000-\u001f\u007f<>]/g,' ').replace(/\s+/g,' ').trim().slice(0,limit):'';
 function safeRunUrl(value,repository){
  try{
@@ -46,7 +46,8 @@ export function projectVerifiedJobTransitions(ticket,previous={}){
    const key=job.id+'|'+step.id;
    if(markers[key])continue;
    markers[key]=true;
-   events.push({type:'job_step',repository:ticket.repository,agent,status:job.status,
+   const stepAgent={red_reasoned:'red-macro-reader',orange_reasoned:'orange-peel',blue_reasoned:'blueberry'}[step.phase]||agent;
+   events.push({type:'job_step',repository:ticket.repository,agent:stepAgent,status:job.status,
     stage:label+(step.attempt?' · attempt '+step.attempt:''),summary:safeText(step.summary,180),
     runUrl:safeRunUrl(step.prUrl,ticket.repository)||runnerUrl,runnerPhase:step.phase,runnerJob:job.id,
     source:'owner_ticket_snapshot',verifiedCompletion:false});

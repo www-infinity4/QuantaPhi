@@ -114,7 +114,9 @@ async function walletIdentity(){
 }
 let resolveReady;
 const ready=new Promise(resolve=>{resolveReady=resolve});
-window.QuantaBrainOwner={ready,verify,walletIdentity,diagnostics:()=>({
+window.QuantaBrainOwner={ready,verify,walletIdentity,
+ currentHeaders:()=>verifiedHeaders&&host?.dataset?.state==='verified'?verifiedHeaders:null,
+ diagnostics:()=>({
  bridge:check.bridge,credential:check.credential,server:check.server,reason:check.reason,
  owner:typeof document!=='undefined'&&document.getElementById?.('robotBrainOwner')?.dataset?.state==='verified'?'verified':'not-verified'
 })};
@@ -134,8 +136,16 @@ async function renewWallet(){
   const delay=Math.max(10000,Math.min(15*60*1000,result.expiresAt-Date.now()-60000));
   clearTimeout(renewTimer);renewTimer=setTimeout(renewWallet,delay);
  }else if(result.state==='no-wallet'||result.state==='not-linked'){
-  // When the active wallet changes or signs out, do not leave owner UI active.
-  location.reload();
+  // Lock owner-only operations without reloading and destroying the live chat.
+  // A missing/rejected wallet is not evidence that Cloudflare OAuth expired.
+  clearTimeout(renewTimer);
+  verifiedHeaders=null;verifiedSource='';
+  host.dataset.state='locked';
+  form(result.state==='no-wallet'?
+   'Your wallet session is unavailable. Bubbles chat remains open; reconnect the existing wallet for owner-only work.':
+   'The Brain could not verify this wallet as its owner. Owner tools are paused; your chat is preserved.');
+  window.dispatchEvent?.(new Event('bubbles:owner-lost'));
+  later(()=>start(),30000);
  }else{
   clearTimeout(renewTimer);renewTimer=setTimeout(renewWallet,30000);
  }
@@ -159,6 +169,7 @@ function unlocked(headers,token,source,expiresAt){
  }
  host.replaceChildren(bar);
  resolveReady(headers);
+ window.dispatchEvent?.(new Event('bubbles:owner-restored'));
  if(source==='wallet'){
   const delay=Math.max(10000,Math.min(15*60*1000,expiresAt-Date.now()-60000));
   clearTimeout(renewTimer);renewTimer=setTimeout(renewWallet,delay);
