@@ -107,3 +107,11 @@ test('source-read and owner-write discovery must return the correct actual adapt
  ])assert.equal(recommendCapabilities(question,{BRAIN:{}})[0]?.id,'bubbles.memory.owner',question);
  assert.equal(recommendCapabilities('Which tools can run an Organic Computation memory benchmark?')[0]?.id,'organic.memory_benchmark');
 });
+
+test('explicit repository files and source URLs still choose readers, not the directory',()=>{
+ for(const [request,expected] of [
+  ['Show existing tools.js in www-infinity4/QuantaPhi repository','github.read_file'],
+  ['Show bubbles-live-tools.js in www-infinity4/QuantaPhi repository','github.read_file'],
+  ['What tools are described at https://example.com/tools? Read and summarize that page.','web.read_page']
+ ])assert.equal(chooseTool(request),expected,request);
+});
