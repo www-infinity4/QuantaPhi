@@ -406,14 +406,15 @@ export default {
   const incoming = new URL(request.url);
   // Source-only private telemetry bridge. Both routes fail closed by default.
   // No live data, wallet or Quant ledger writes when either binding/flag is absent.
-  if(incoming.pathname === '/api/quant-events/consent' || incoming.pathname === '/api/quant-events'){
+  if(['/api/quant-events','/api/quant-events/consent','/api/quant-events/data'].includes(incoming.pathname)){
    const consent=incoming.pathname==='/api/quant-events/consent';
-   const flag=consent?'EVENT_CONSENT_MANAGEMENT_ENABLED':'EVENTS_BRIDGE_ENABLED';
+   const data=incoming.pathname==='/api/quant-events/data';
+   const flag=data?'EVENT_DATA_MANAGEMENT_ENABLED':consent?'EVENT_CONSENT_MANAGEMENT_ENABLED':'EVENTS_BRIDGE_ENABLED';
    const headers={'Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Vary':'Origin'};
    const error=env?.[flag]!=='true'
-     ? consent?'consent_management_disabled':'event_collection_disabled'
+     ? data?'data_management_disabled':consent?'consent_management_disabled':'event_collection_disabled'
      : !env.EVENTS_BRIDGE?.fetch
-       ? consent?'consent_service_unavailable':'event_bridge_unavailable'
+       ? data?'data_service_unavailable':consent?'consent_service_unavailable':'event_bridge_unavailable'
        : null;
    if(error)return Response.json({error},{status:503,headers});
    return env.EVENTS_BRIDGE.fetch(request);
