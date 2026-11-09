@@ -123,7 +123,7 @@ test('review: preview gate keeps the NES/SNES card out of public Oracle until ex
 
 test('review: gateway allows same-origin player framing but does not weaken other routes',async()=>{
  const worker=source('workers/quantaphi-site/worker.js');
- const env={URL,Request,Response,Headers,fetch:async()=>new Response('<!doctype html><title>Game</title>',{status:200,headers:{'Content-Type':'text/html','X-Frame-Options':'DENY'}})};
+ const env={URL,Request,Response,Headers,AbortController,setTimeout,clearTimeout,fetch:async()=>new Response('<!doctype html><title>Game</title>',{status:200,headers:{'Content-Type':'text/html','X-Frame-Options':'DENY'}})};
  vm.createContext(env);
  vm.runInContext(worker.replace(/^import \{videoAPI\} from ['"]\.\/video-api\.mjs['"];?\s*/m,'').replace('export default','globalThis.worker='),env);
  const player=await env.worker.fetch(new Request('https://quantaphi.org/nes-snes-player.html'));
