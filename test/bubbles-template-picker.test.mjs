@@ -57,3 +57,9 @@ test('all first-party website and Android entrypoints request the new Bubbles te
   assert.ok(html.includes(current),file+' missing the current Bubbles script revision');
  }
 });
+
+test('Add Template lives in its own composer row so Send stays with the four original actions',()=>{
+ const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ assert.match(ui,/composer\.insertBefore\(templateOpen,actions\)/);
+ assert.doesNotMatch(ui,/actions\.insertBefore\(templateOpen,mic\)/);
+});
