@@ -1,6 +1,6 @@
 # QuantaPhi · Cloudflare D1 event ingestion, 100k+ DAU profile
 
-**Status:** source PR #1884 remains unmerged; isolated Cloudflare staging D1 and Queues exist with **synthetic HTTP pull → D1 canary readback**. No live Worker deployment, consent workflow activation, production event collection or Wallet integration was enabled. Read [`SCALING-100K-DAU.md`](./SCALING-100K-DAU.md) for scaling decisions, read-only Cloudflare schema observations, budget/privacy gates, and BI options.
+**Status:** [PR #1884](https://github.com/www-infinity4/QuantaPhi/pull/1884) **merged into `main`** at `df93c0c9ddf1fba370b613e04586ca32918404a7`. The isolated Cloudflare staging D1 and Queues passed a **synthetic HTTP pull → consent-gated D1 write/readback, revoked-event rejection, and canary cleanup**. No actual repository Worker queue consumer has been deployed; the production site Worker has no event bridge binding or analytics enable flag. No user analytics, Wallet mutation, live consent collection, production performance claim, or billing-scale load test is established. Read [`SCALING-100K-DAU.md`](./SCALING-100K-DAU.md) for scaling decisions, read-only Cloudflare schema observations, budget/privacy gates, and BI options.
 
 ## Package contents
 
@@ -184,3 +184,11 @@ Retained historical events, delayed external exports, formal user erasure, and
 immutable consent audit/reporting remain separate release gates. No deployment,
 Cloudflare resource creation, billing approval, signed-in browser acceptance or
 live consent was performed by staging this source.
+
+## November 8 staging / merge receipt
+
+- Source PR [#1884](https://github.com/www-infinity4/QuantaPhi/pull/1884) squash-merged to `main` as [`df93c0c`](https://github.com/www-infinity4/QuantaPhi/commit/df93c0c9ddf1fba370b613e04586ca32918404a7).
+- Exact pre-merge head `b5434c731ac2e77db496ba46e9882fdf7cccdeaa`: 20/20 workflows passed; [Quant events CI](https://github.com/www-infinity4/QuantaPhi/actions/runs/42567316682) passed 42/42 Node and SQLite schema/index checks. Copilot independent review returned six comments, all addressed and resolved; review state COMMENTED, not formal APPROVED. Source merge was explicitly owner-requested.
+- Isolated Cloudflare D1 `quantaphi-quant-events-staging` (not production) contains both SQL migrations; staging Queue and DLQ have a small HTTP pull test consumer. Synthetic events were pushed/pulled, consent-gated SQL inserted and read back once, second event was stopped after revocation, both messages were acknowledged, and test records were subsequently removed (final `users=0,events=0,quant_event_consents=0`). Neither the production `quant-ai` nor Wallet D1 was touched.
+- The live site Worker `quantaphi-site` lacks `EVENTS_BRIDGE` and `EVENTS_BRIDGE_ENABLED`/`EVENT_CONSENT_MANAGEMENT_ENABLED` bindings; deployment readback last seen November 6, 2026. Source merge **does not** indicate activation of the new routes. Cloudflare staging was checked via API rather than the actual repo Worker consumer; do not claim a Worker deployment or completed 100k DAU load validation.
+- Further release gates: deploy isolated staging Worker **using the exact compiled source**, set private bindings/secrets only in staging, test real browser Wallet sign-in and explicit consent, verify live Queue → D1 write and revoke/delete, define retention/export/erasure and financial cost caps, obtain independent privacy/security acceptance before turning customer analytics on.
