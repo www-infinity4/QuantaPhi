@@ -23,7 +23,8 @@ jobs:
       - name: Run Worker HTTP, Queue and real SQLite tests (no npm)
         run: node --experimental-strip-types --test workers/quant-events/tests/*.test.mjs
       - name: Validate D1 schema using Python SQLite (no npm)
-        run: python3 - <<'PY'
+        run: |
+          python3 - <<'PY'
           import sqlite3, pathlib
           p=pathlib.Path('workers/quant-events/migrations/0001_quant_events.sql')
           conn=sqlite3.connect(':memory:')
