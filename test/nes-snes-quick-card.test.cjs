@@ -158,3 +158,34 @@ test('review: preview Share preserves its opt-in flag, and hidden emulator is st
  assert.match(card,/visibilitychange/);
  assert.match(card,/stop\(\)/);
 });
+
+
+test('review: a running preview emulator actually closes on switchboard change and hidden tab',()=>{
+ const handlers={},elements={},frames=[];
+ const button=id=>({disabled:false,addEventListener:(type,fn)=>{handlers[id+':'+type]=fn}});
+ elements['#nesSnesLaunch']=button('launch');
+ elements['#nesSnesStop']=button('stop');
+ elements['#nesSnesPlayerSlot']={append:frame=>frames.push(frame),replaceChildren:()=>{}};
+ elements['#nesSnesStatus']={textContent:''};
+ const root={hidden:true,classList:{add(){}},querySelector:s=>elements[s],closest:()=>null};
+ const doc={hidden:false,body:{classList:{contains:()=>false}},
+  getElementById:id=>id==='nesSnesQuickCard'?root:null,
+  createElement:tag=>{assert.equal(tag,'iframe');return {removed:false,setAttribute(){},addEventListener(){},remove(){this.removed=true}};},
+  addEventListener:(name,fn)=>{handlers['document:'+name]=fn}};
+ const win={location:{search:'?nesSnesPreview=1'},addEventListener:(name,fn)=>{handlers['window:'+name]=fn}};
+ class MockObserver{constructor(fn){handlers.mutation=fn}observe(){}}
+ new vm.Script(source('nes-snes-quick-card.js')).runInNewContext({document:doc,window:win,URLSearchParams,MutationObserver:MockObserver});
+ assert.equal(root.hidden,false);
+ handlers['launch:click']();
+ assert.equal(frames.length,1);
+ handlers['window:quantaphi:switchboard-change']({detail:{id:'another-card'}});
+ assert.equal(frames[0].removed,true,'switching cards must remove the running player');
+ handlers['launch:click']();
+ doc.hidden=true;
+ handlers['document:visibilitychange']();
+ assert.equal(frames[1].removed,true,'hidden tab must stop audio');
+ doc.hidden=false;
+ handlers['launch:click']();
+ handlers.mutation();
+ assert.equal(frames[2].removed,true,'collapsed and inactive shelf must stop emulator');
+});
