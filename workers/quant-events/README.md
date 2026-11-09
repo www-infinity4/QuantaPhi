@@ -1,6 +1,6 @@
 # QuantaPhi · Cloudflare D1 event ingestion, 100k+ DAU profile
 
-**Status:** source updated and locally tested, **not** committed, migrated or deployed. Read [`SCALING-100K-DAU.md`](./SCALING-100K-DAU.md) for scaling decisions, read-only Cloudflare schema observations, budget/privacy gates, and BI options.
+**Status:** staged in [draft QuantaPhi PR #1884](https://github.com/www-infinity4/QuantaPhi/pull/1884), **not merged, migrated, activated or deployed**. Exact-head CI and independent security/privacy review are required. Read [`SCALING-100K-DAU.md`](./SCALING-100K-DAU.md) for scaling decisions, read-only Cloudflare schema observations, budget/privacy gates, and BI options.
 
 ## Package contents
 
