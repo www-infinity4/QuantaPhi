@@ -3,9 +3,149 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T08:31:51.601505Z",
+  "checked_at": "2026-11-09T09:01:43.167616Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "pandilla",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T08:40:00Z",
+      "related_news_urls": [
+        "https://www.facebook.com/PoliciaNacionaldeHonduras/posts/cacer%C3%ADadeterroristas-saturaci%C3%B3n-policial-deja-a-un-terrorista-de-la-pandilla-18-/1468214752168163/",
+        "https://www.laprensa.hn/sucesos/comayaguela-capturan-joven-cristiano-hallazgo-tatuaje-pandilla-18-brazo-OM32580817",
+        "https://www.latribuna.hn/2026/11/02/alias-dauner-es-capturado-durante-operativo-policial-en-comayaguela/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTje3MMu8YaSQJvwelScVF-wyGDIbsFGcuFH2kK3UYTBkvaZ-hUpxj24s4NZjY",
+      "image_credit": "Facebook",
+      "news": [
+        {
+          "url": "https://www.facebook.com/PoliciaNacionaldeHonduras/posts/cacer%C3%ADadeterroristas-saturaci%C3%B3n-policial-deja-a-un-terrorista-de-la-pandilla-18-/1468214752168163/",
+          "title": "#CaceríaDeTerroristas | Saturación policial deja a un terrorista de la Pandilla 18 capturado en la 14 de marzo de Comayagüela Los policías llegaron de sorpresa, logrando la detenci",
+          "publisher": "Facebook",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTje3MMu8YaSQJvwelScVF-wyGDIbsFGcuFH2kK3UYTBkvaZ-hUpxj24s4NZjY"
+        },
+        {
+          "url": "https://www.laprensa.hn/sucesos/comayaguela-capturan-joven-cristiano-hallazgo-tatuaje-pandilla-18-brazo-OM32580817",
+          "title": "Capturan a joven por presunta vinculación con la pandilla 18 en Comayagüela",
+          "publisher": "www.laprensa.hn",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRK1MEopJunV7MbuMhT3TU2Bt1SCDLHIQGPLpznzkuj7gRBWsMO10R2Gr5sTsA"
+        },
+        {
+          "url": "https://www.latribuna.hn/2026/11/02/alias-dauner-es-capturado-durante-operativo-policial-en-comayaguela/",
+          "title": "Alias “Dauner” es capturado durante operativo policial en Comayagüela",
+          "publisher": "Diario La Tribuna",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQazSGqxL2xECPQIsbgdHh_duoXOQKMxFKMKpMbQjLLlYmDr2ZCN1DPAF5uWY8"
+        }
+      ]
+    },
+    {
+      "query": "power",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T08:40:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/world/zaporizhzhia-nuclear-plant-loses-external-power-supply-russian-installed-2026-11-08/",
+        "https://thehill.com/policy/international/6206805-ukraine-nuclear-safety-threatened/",
+        "https://www.yahoo.com/news/world/articles/zaporizhzhia-nuclear-power-plant-restores-001500507.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwN5pD948a43MwTivwOeXG0NDujrqGZvCBD4xmgPhgD8itPj8cXpOmz4UZSr0",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/world/zaporizhzhia-nuclear-plant-loses-external-power-supply-russian-installed-2026-11-08/",
+          "title": "Power restored to Zaporizhzhia nuclear plant, IAEA says",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwN5pD948a43MwTivwOeXG0NDujrqGZvCBD4xmgPhgD8itPj8cXpOmz4UZSr0"
+        },
+        {
+          "url": "https://thehill.com/policy/international/6206805-ukraine-nuclear-safety-threatened/",
+          "title": "Ukrainian nuclear plant switches to generators after losing final power line",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5CNYDdQM_52TiK1zaMrx09c0n6ZhndYHUdrT2128BwTlxVtGxMwoDz_B1yhU"
+        },
+        {
+          "url": "https://www.yahoo.com/news/world/articles/zaporizhzhia-nuclear-power-plant-restores-001500507.html",
+          "title": "Zaporizhzhia Nuclear Power Plant restores external power supply after blackout",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlNNpDL90YpP_fL1-khRkxmBGss4KF6L_i-KaEb_OtYZIllIc6gFsmEJb1dQ0"
+        }
+      ]
+    },
+    {
+      "query": "ice",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T08:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcsandiego.com/news/local/ice-takes-8-year-old-haitian-boy-into-custody-at-san-diego-check-in/4098472/",
+        "https://www.news10.com/news/national/mullin-says-deportations-will-continue/",
+        "https://www.tribuneindia.com/news/usa-news/despite-midterm-losses-trump-admin-intensifies-deportations-under-new-chief-of-staff-stephen-miller-report/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQC90_A-LOFVpF8LmikjuLgiBVKjSwoogQGCUd9qSYbBi22C-XDXod6ysrSVq0",
+      "image_credit": "NBC 7 San Diego",
+      "news": [
+        {
+          "url": "https://www.nbcsandiego.com/news/local/ice-takes-8-year-old-haitian-boy-into-custody-at-san-diego-check-in/4098472/",
+          "title": "ICE takes 8-year-old Haitian boy into custody at San Diego check-in",
+          "publisher": "NBC 7 San Diego",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQC90_A-LOFVpF8LmikjuLgiBVKjSwoogQGCUd9qSYbBi22C-XDXod6ysrSVq0"
+        },
+        {
+          "url": "https://www.news10.com/news/national/mullin-says-deportations-will-continue/",
+          "title": "Mullin says deportations will continue",
+          "publisher": "NEWS10 ABC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKN6FSpizG18mKGkMYzZL4WNCDIVSqzDe6nyzECZJc8WihBe-hYNS6YGI5jnQ"
+        },
+        {
+          "url": "https://www.tribuneindia.com/news/usa-news/despite-midterm-losses-trump-admin-intensifies-deportations-under-new-chief-of-staff-stephen-miller-report/",
+          "title": "Despite midterm losses, Trump admin intensifies deportations under new Chief of Staff Stephen Miller: Report",
+          "publisher": "The Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPA51ILjgvE4BN2jXCsJThedxV834bVobtRhsGCc8917yzXtA2s7n1xYU3RyM"
+        }
+      ]
+    },
+    {
+      "query": "volcano",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T08:20:00Z",
+      "related_news_urls": [
+        "https://weather.com/2026/11/06/news/trending/video/hawaii-kilauea-lava-fountain-episode-56-eruption",
+        "https://bigislandnow.com/2026/11/06/volcano-watch-such-great-heights-measuring-kilaueas-lava-fountains/",
+        "https://komonews.com/weather/weather-whys/why-has-mount-kilauea-volcano-been-erupting-for-so-long-lava-fountains-660-feet-summit-eruption-magma-reservoirs"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYDVY2kE3XhosZTpaysiDECVZ4MyxZDsPab9XYZSUaSs8-orhlHcIDQvFI3pQ",
+      "image_credit": "The Weather Channel",
+      "news": [
+        {
+          "url": "https://weather.com/2026/11/06/news/trending/video/hawaii-kilauea-lava-fountain-episode-56-eruption",
+          "title": "Kilauea volcano erupts: See the 660-foot lava fountain",
+          "publisher": "The Weather Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYDVY2kE3XhosZTpaysiDECVZ4MyxZDsPab9XYZSUaSs8-orhlHcIDQvFI3pQ"
+        },
+        {
+          "url": "https://bigislandnow.com/2026/11/06/volcano-watch-such-great-heights-measuring-kilaueas-lava-fountains/",
+          "title": "Volcano Watch: Such great heights; measuring Kīlauea’s lava fountains",
+          "publisher": "Big Island Now",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRspiePvSFCfWTgUfg1YzFZsyVYlCIGQMTpCd2bWD5u-eYuZKsfIF31PtUn8RY"
+        },
+        {
+          "url": "https://komonews.com/weather/weather-whys/why-has-mount-kilauea-volcano-been-erupting-for-so-long-lava-fountains-660-feet-summit-eruption-magma-reservoirs",
+          "title": "Why has Mount Kilauea been erupting for so long?",
+          "publisher": "KOMO",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSiBYeK9ffH_rR0Sv0uX_K5JOskDhYAW0vkX5erEpQbuZIgHh32GUU-AxXQEEA"
+        }
+      ]
+    },
     {
       "query": "attack on titan",
       "approx_searches": "100+",
@@ -38,41 +178,6 @@
           "publisher": "ComicBook.com",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROX7md6mYyYU1uADcMR5-4R7DEngEPeFKdsoAkSZonNvl6JeGU0y-nHrexfiw"
-        }
-      ]
-    },
-    {
-      "query": "jennifer aniston",
-      "approx_searches": "100+",
-      "published_at": "2026-11-09T08:00:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/articles/friends-jennifer-aniston-starred-forgotten-191200025.html",
-        "https://www.imdb.com/fr/news/ni66099017/?ref_=nwc_art_perm",
-        "https://www.imdb.com/news/ni66099017/?ref_=nwc_art_perm"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbXSVJfTqDy4H6N3guO_WaWVu7ix7wN9hou7tfua0hwbZc6uarjIkHPGGFIvU",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/friends-jennifer-aniston-starred-forgotten-191200025.html",
-          "title": "Before Friends, Jennifer Aniston Starred In A Forgotten '90s Sketch Comedy Show",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbXSVJfTqDy4H6N3guO_WaWVu7ix7wN9hou7tfua0hwbZc6uarjIkHPGGFIvU"
-        },
-        {
-          "url": "https://www.imdb.com/fr/news/ni66099017/?ref_=nwc_art_perm",
-          "title": "Before Friends, Jennifer Aniston Starred In A Forgotten '90s Sketch Comedy Show",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwSQr9Lm3lPm3eEMu36VlrgoImcU-UJDhRMcWo1UpgmOaRvdqWYHz3p79Odac"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66099017/?ref_=nwc_art_perm",
-          "title": "Before Friends, Jennifer Aniston Starred In A Forgotten '90s Sketch Comedy Show",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwSQr9Lm3lPm3eEMu36VlrgoImcU-UJDhRMcWo1UpgmOaRvdqWYHz3p79Odac"
         }
       ]
     },
@@ -112,8 +217,43 @@
       ]
     },
     {
-      "query": "peaky blinders netflix six seasons",
+      "query": "jennifer aniston",
       "approx_searches": "100+",
+      "published_at": "2026-11-09T08:00:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/tv/articles/friends-jennifer-aniston-starred-forgotten-191200025.html",
+        "https://www.imdb.com/fr/news/ni66099017/?ref_=nwc_art_perm",
+        "https://www.imdb.com/news/ni66099017/?ref_=nwc_art_perm"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbXSVJfTqDy4H6N3guO_WaWVu7ix7wN9hou7tfua0hwbZc6uarjIkHPGGFIvU",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/friends-jennifer-aniston-starred-forgotten-191200025.html",
+          "title": "Before Friends, Jennifer Aniston Starred In A Forgotten '90s Sketch Comedy Show",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbXSVJfTqDy4H6N3guO_WaWVu7ix7wN9hou7tfua0hwbZc6uarjIkHPGGFIvU"
+        },
+        {
+          "url": "https://www.imdb.com/fr/news/ni66099017/?ref_=nwc_art_perm",
+          "title": "Before Friends, Jennifer Aniston Starred In A Forgotten '90s Sketch Comedy Show",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwSQr9Lm3lPm3eEMu36VlrgoImcU-UJDhRMcWo1UpgmOaRvdqWYHz3p79Odac"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66099017/?ref_=nwc_art_perm",
+          "title": "Before Friends, Jennifer Aniston Starred In A Forgotten '90s Sketch Comedy Show",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwSQr9Lm3lPm3eEMu36VlrgoImcU-UJDhRMcWo1UpgmOaRvdqWYHz3p79Odac"
+        }
+      ]
+    },
+    {
+      "query": "peaky blinders netflix six seasons",
+      "approx_searches": "200+",
       "published_at": "2026-11-09T07:40:00Z",
       "related_news_urls": [
         "https://collider.com/peaky-blinders-netflix-tom-hardy-streaming-binge/",
@@ -148,36 +288,36 @@
     },
     {
       "query": "steve sarkisian texas longhorns comments",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-09T07:40:00Z",
       "related_news_urls": [
-        "https://www.burntorangenation.com/texas-longhorns-football/106959/texas-longhorns-toughness-steve-sarkisian-missouri",
-        "https://www.foxnews.com/outkick-sports/steve-sarkisian-started-campaign-texas-longhorns-ridiculous-big-game-comments",
-        "https://247sports.com/college/texas/article/were-big-game-hunters-its-the-right-time-to-take-texas-seriously-as-a-title-contender-the-first-word-292400210/"
+        "https://www.espn.com/college-football/story/_/id/50411883/arch-manning-defense-help-no-7-texas-rally-missouri",
+        "https://sports.yahoo.com/articles/terrible-call-game-needs-investigated-223036749.html",
+        "https://www.columbiamissourian.com/sports/mizzou_football/fumbled-opportunity-bad-breaks-mistakes-prove-costly-in-mizzous-loss-to-no-7-texas/article_978f8142-efc5-4c4e-8711-350aa1ff3913.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOuKd7D8QsdzHpYR9cx41LtR6SUaHHZL0a16lKgcx9XLewa1WuXb-eD0VQdx0",
-      "image_credit": "Burnt Orange Nation",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJU1MF4LlgWEySOd9Ruymzdqk1u7qhz3WY5waZ3Ft_VoUJm7mV3riUKdU8aKI",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.burntorangenation.com/texas-longhorns-football/106959/texas-longhorns-toughness-steve-sarkisian-missouri",
-          "title": "Steve Sarkisian lauds the undeniable toughness of his Texas team",
-          "publisher": "Burnt Orange Nation",
+          "url": "https://www.espn.com/college-football/story/_/id/50411883/arch-manning-defense-help-no-7-texas-rally-missouri",
+          "title": "'We just refuse to go away': Sarkisian lauds Longhorns after 34-20 victory",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOuKd7D8QsdzHpYR9cx41LtR6SUaHHZL0a16lKgcx9XLewa1WuXb-eD0VQdx0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJU1MF4LlgWEySOd9Ruymzdqk1u7qhz3WY5waZ3Ft_VoUJm7mV3riUKdU8aKI"
         },
         {
-          "url": "https://www.foxnews.com/outkick-sports/steve-sarkisian-started-campaign-texas-longhorns-ridiculous-big-game-comments",
-          "title": "Steve Sarkisian has already started his campaign for Texas Longhorns with ridiculous 'big game' comments",
-          "publisher": "Fox News",
+          "url": "https://sports.yahoo.com/articles/terrible-call-game-needs-investigated-223036749.html",
+          "title": "‘Terrible Call,’ ‘This Game Needs to Be Investigated’ — David Pollack, CFB Fans Call Out Controversial Officiating in Texas-Missouri Clash",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWH6TDA345K8y7Be4i6RNIlM7Q1Eomlw6Jwy8EneP3hKO_uzFZxab5QHM8IP4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSUFxKwsMDxauTpsgC_C8xZCuTTHY1ShevJqeIQlmMDcDQcag-T0VkGfdGA5E"
         },
         {
-          "url": "https://247sports.com/college/texas/article/were-big-game-hunters-its-the-right-time-to-take-texas-seriously-as-a-title-contender-the-first-word-292400210/",
-          "title": "'We're big game hunters' -- It's the right time to take Texas seriously as a title contender: The First Word",
-          "publisher": "247Sports",
+          "url": "https://www.columbiamissourian.com/sports/mizzou_football/fumbled-opportunity-bad-breaks-mistakes-prove-costly-in-mizzous-loss-to-no-7-texas/article_978f8142-efc5-4c4e-8711-350aa1ff3913.html",
+          "title": "Fumbled opportunity: Bad breaks, mistakes prove costly in Mizzou's loss to No. 7 Texas",
+          "publisher": "Columbia Missourian",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAREDfYv_DDW6k1jCpYv9N9ydDpO8C8a9rChpenidFLq7sMGLJLZYGiw70Yvs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLw38UQCpRbqjpXMJMWEUHj4hhEJ4jsnK-1P-55etn7p3KDLak8ToChF1E9lA"
         }
       ]
     },
@@ -205,146 +345,6 @@
           "publisher": "OpenCritic",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScf8izxcBrZuaUz_VbkKPVTLHk45gRXyMs2wvRWUPpDM5zKP6un6qMWeNGGHM"
-        }
-      ]
-    },
-    {
-      "query": "elon musk spacex telecom acquisition",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T07:00:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/video/why-musks-telecom-play-is-no-hail-mary-fix-185825477.html",
-        "https://www.marketwatch.com/story/elon-musk-opens-the-door-for-a-big-spacex-acquisition-4f62bcad",
-        "https://www.bloomberg.com/news/articles/2026-11-05/how-musk-s-starlink-can-challenge-at-t-verizon-and-t-mobile"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3yDjri-p1_pXqxuoQDnLUhptGvYInVmnQkvXlWPKhDiBSUmXfiqi-Rx49hg0",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/video/why-musks-telecom-play-is-no-hail-mary-fix-185825477.html",
-          "title": "Why Musk's telecom play is no 'Hail Mary' fix",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3yDjri-p1_pXqxuoQDnLUhptGvYInVmnQkvXlWPKhDiBSUmXfiqi-Rx49hg0"
-        },
-        {
-          "url": "https://www.marketwatch.com/story/elon-musk-opens-the-door-for-a-big-spacex-acquisition-4f62bcad",
-          "title": "Elon Musk opens the door for a big SpaceX acquisition",
-          "publisher": "MarketWatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPf-K1jWqWAN_g1VOG9fzRG2lQNFJhqLgU6IGBmSf1Uo_iQ2t19GuwOmx_iD8"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-05/how-musk-s-starlink-can-challenge-at-t-verizon-and-t-mobile",
-          "title": "How Musk Plans to Shake Up the US Wireless Industry",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGqSXSMg4LHFGQ60HUz997ev7TWIvnSqX4fZeZOVi1kNHnNnNlgmGBOdqKUZs"
-        }
-      ]
-    },
-    {
-      "query": "10",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-09T06:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50408585/projecting-2026-playoff-top-12-week-10-cfp",
-        "https://sports.yahoo.com/college-football/article/yahoo-top-10-messy-day-of-blowouts-creates-cleaner-picture-of-the-sports-best-061153518.html",
-        "https://www.cbssports.com/college-football/news/week-10-cfb-overreactions-lane-kiffin-alabama-problem-spenders-coaches/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2xhJvKzuTnUauvnDHFyhxqovw49SxhPY13v19ZPf3HkG2iKGZtLR2J_eId_M",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50408585/projecting-2026-playoff-top-12-week-10-cfp",
-          "title": "College Football Playoff top 12 projection after Week 10",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2xhJvKzuTnUauvnDHFyhxqovw49SxhPY13v19ZPf3HkG2iKGZtLR2J_eId_M"
-        },
-        {
-          "url": "https://sports.yahoo.com/college-football/article/yahoo-top-10-messy-day-of-blowouts-creates-cleaner-picture-of-the-sports-best-061153518.html",
-          "title": "Yahoo Top 10: Messy day of blowouts creates cleaner picture of the sport's best",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnNZ1uzj5uJ5KIm1zsUJLF3csqaVrRFZKzXtZXsmlmB-2zPY1Y0zdKcgb0E3M"
-        },
-        {
-          "url": "https://www.cbssports.com/college-football/news/week-10-cfb-overreactions-lane-kiffin-alabama-problem-spenders-coaches/",
-          "title": "Week 10 CFB Overreactions: Cash is still king, first-year coaches in trouble and Lane Kiffin's Alabama problem",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0J3KgySRmSI6Px9PUm4qkle_HOJ9lXs1SXQAPbBiNgYOmj0g01vnYAxGUdxg"
-        }
-      ]
-    },
-    {
-      "query": "joseph baena",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T06:50:00Z",
-      "related_news_urls": [
-        "https://people.com/arnold-schwarzenegger-son-joseph-baena-places-in-top-5-pro-debut-natural-bodybuilding-competition-12243669",
-        "https://sports.yahoo.com/articles/arnold-schwarzenegger-son-channels-dad-235543724.html",
-        "https://pagesix.com/2026/11/08/celebrity-news/arnold-schwarzeneggers-son-joseph-baena-29-places-in-top-5-at-bodybuilding-competition/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS329_K5ghFtluLzfSFcIHAor8j8s8PNA_sYxw692UYGzXHplQheR4lMg89MqA",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/arnold-schwarzenegger-son-joseph-baena-places-in-top-5-pro-debut-natural-bodybuilding-competition-12243669",
-          "title": "Arnold Schwarzenegger’s Son Joseph Baena Places in Top 5 in ‘Pro Debut’ at Natural Bodybuilding Competition",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS329_K5ghFtluLzfSFcIHAor8j8s8PNA_sYxw692UYGzXHplQheR4lMg89MqA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/arnold-schwarzenegger-son-channels-dad-235543724.html",
-          "title": "Arnold Schwarzenegger’s Son Channels His Dad by Placing in Top 5 at Bodybuilding Competition",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmcipvi2Aq1kWJ9NHK3i2Q8kedGCC4lRTfFAIDwHuW2GS5cjewyjG4vedL6v4"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/08/celebrity-news/arnold-schwarzeneggers-son-joseph-baena-29-places-in-top-5-at-bodybuilding-competition/",
-          "title": "Arnold Schwarzenegger's son Joseph Baena, 29, places in top 5 at bodybuilding competition",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvHKjx1LYT8q2vvN-nXmGGgQoA4rgs-edQ17Z-FeB3ba4OJ1madHqNEWpGPPg"
-        }
-      ]
-    },
-    {
-      "query": "杭州枪击",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T06:40:00Z",
-      "related_news_urls": [
-        "https://www.ntdtv.com/gb/2026/11/08/a104149097.html",
-        "https://www.aboluowang.com/2026/1109/2455188.html",
-        "https://zj.ifeng.com/c/8xrjfAVyI0A"
-      ],
-      "image_url": null,
-      "image_credit": "新唐人電視台",
-      "news": [
-        {
-          "url": "https://www.ntdtv.com/gb/2026/11/08/a104149097.html",
-          "title": "杭州臨平萬達廣場驚傳持槍搶劫案 多人死亡（視頻）",
-          "publisher": "新唐人電視台",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://www.aboluowang.com/2026/1109/2455188.html",
-          "title": "杭州惊传持枪抢劫案 多人死亡",
-          "publisher": "阿波罗新闻网",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://zj.ifeng.com/c/8xrjfAVyI0A",
-          "title": "2026无界艺术时尚周开幕式暨文旅时尚产业大会在临平举行",
-          "publisher": "凤凰网",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSR0lZeUfBimLi2RWJCn3m_eSRWMgAdhEvp4exmBlKtkEqtA02MydA6EMVey00"
         }
       ]
     }
