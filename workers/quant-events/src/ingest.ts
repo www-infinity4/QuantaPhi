@@ -170,7 +170,7 @@ function validateQueueItem(message: unknown): { data: IngestPayload; item: Queue
   };
 }
 
-function prepareStatements(db: DB, packets: Array<{data:IngestPayload;item:QueueItem}>): {
+function prepareStatements(db: DB, packets: Array<{data:IngestPayload;item:QueueItem}>, enforceConsent=false): {
   statements: Statement[]; eventStatementIndices: number[]; totalEvents: number;
 } {
   const statements: Statement[] = [];
@@ -180,18 +180,36 @@ function prepareStatements(db: DB, packets: Array<{data:IngestPayload;item:Queue
     const {userId,deviceType,events} = data;
     const {region,stateCode,postalCode} = item.edge;
     const t = item.accepted_at_ms;
-    statements.push(db.prepare(`
-      INSERT INTO users (id, created_at, state_code, device_type, edge_region, postal_code)
-      VALUES (?, ?, ?, ?, ?, ?)
-      ON CONFLICT(id) DO NOTHING
-    `).bind(userId,t,stateCode,deviceType,region,postalCode));
+    const userSql=enforceConsent
+      ? `INSERT INTO users (id, created_at, state_code, device_type, edge_region, postal_code)
+          SELECT ?,?,?,?,?,? WHERE EXISTS (
+            SELECT 1 FROM quant_event_consents
+            WHERE user_id=? AND purpose='analytics' AND policy_version='v1'
+              AND revoked_at_ms IS NULL AND consented_at_ms<=?
+          ) ON CONFLICT(id) DO NOTHING`
+      : `INSERT INTO users (id, created_at, state_code, device_type, edge_region, postal_code)
+          VALUES (?,?,?,?,?,?) ON CONFLICT(id) DO NOTHING`;
+    statements.push(db.prepare(userSql).bind(
+      userId,t,stateCode,deviceType,region,postalCode,...(enforceConsent?[userId,t]:[])
+    ));
     for (let i=0; i<events.length; i+=ROWS_PER_INSERT) {
       const subset=events.slice(i,i+ROWS_PER_INSERT);
-      const sql=`INSERT INTO events (id, user_id, event_type, target_entity, numerical_value, created_at_ms) VALUES ${
-        subset.map(()=>'(?, ?, ?, ?, ?, ?)').join(', ')
-      } ON CONFLICT(id) DO NOTHING`;
+      const values=subset.map(()=>'(?, ?, ?, ?, ?, ?)').join(', ');
+      const sql=enforceConsent
+        ? `WITH event_rows(id,user_id,event_type,target_entity,numerical_value,created_at_ms)
+            AS (VALUES ${values})
+            INSERT INTO events(id,user_id,event_type,target_entity,numerical_value,created_at_ms)
+            SELECT id,user_id,event_type,target_entity,numerical_value,created_at_ms FROM event_rows
+            WHERE EXISTS (
+              SELECT 1 FROM quant_event_consents
+              WHERE user_id=? AND purpose='analytics' AND policy_version='v1'
+                AND revoked_at_ms IS NULL AND consented_at_ms<=?
+            ) ON CONFLICT(id) DO NOTHING`
+        : `INSERT INTO events (id, user_id, event_type, target_entity, numerical_value, created_at_ms)
+            VALUES ${values} ON CONFLICT(id) DO NOTHING`;
       const bindings: SqlValue[]=[];
       for (const e of subset) bindings.push(e.id,userId,e.event_type,e.target_entity,e.numerical_value,t);
+      if(enforceConsent) bindings.push(userId,t);
       eventStatementIndices.push(statements.length);
       statements.push(db.prepare(sql).bind(...bindings));
       totalEvents+=subset.length;
@@ -199,8 +217,8 @@ function prepareStatements(db: DB, packets: Array<{data:IngestPayload;item:Queue
   }
   return {statements,eventStatementIndices,totalEvents};
 }
-async function persist(db: DB, packets: Array<{data:IngestPayload;item:QueueItem}>): Promise<{inserted:number;totalEvents:number}> {
-  const {statements,eventStatementIndices,totalEvents} = prepareStatements(db,packets);
+async function persist(db: DB, packets: Array<{data:IngestPayload;item:QueueItem}>, enforceConsent=false): Promise<{inserted:number;totalEvents:number}> {
+  const {statements,eventStatementIndices,totalEvents} = prepareStatements(db,packets,enforceConsent);
   const results=await db.batch(statements);
   let inserted=0;
   for (const idx of eventStatementIndices) {
@@ -279,6 +297,8 @@ export default {
     if(packets.length===0) return;
     // One atomic D1 transaction for this consumer batch. On failure, throw so
     // Queues retries. Stable event IDs make replays idempotent.
-    await persist(env.DB,packets);
+    // Consent is verified atomically by D1 on every queued insert; revocation
+    // and renewed consent cannot revive an older queued event.
+    await persist(env.DB,packets,true);
   },
 };
