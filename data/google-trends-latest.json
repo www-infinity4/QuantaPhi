@@ -3,16 +3,51 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T17:01:54.703692Z",
+  "checked_at": "2026-11-09T17:31:32.054631Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "james gunn",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-09T17:10:00Z",
+      "related_news_urls": [
+        "https://www.indiewire.com/news/breaking-news/dc-studios-shakeup-james-gunn-peter-safran-out-jeremy-latcham-1235226240/",
+        "https://www.thewrap.com/culture-lifestyle/culture/james-gunn-and-peter-safran-out-at-dc-studios-jeremy-latcham-named-new-president-and-chief-creative-officer/",
+        "https://thedirect.com/article/james-gunn-green-lantern-costume-dc-lore"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9bHPKHbRJ95_1PPfU5zan3HabO7uM_PG8xNTthiuV8jW8dbBk-2IoghXbdVs",
+      "image_credit": "IndieWire",
+      "news": [
+        {
+          "url": "https://www.indiewire.com/news/breaking-news/dc-studios-shakeup-james-gunn-peter-safran-out-jeremy-latcham-1235226240/",
+          "title": "James Gunn, Peter Safran Out at DC Studios, Jeremy Latcham Hired",
+          "publisher": "IndieWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9bHPKHbRJ95_1PPfU5zan3HabO7uM_PG8xNTthiuV8jW8dbBk-2IoghXbdVs"
+        },
+        {
+          "url": "https://www.thewrap.com/culture-lifestyle/culture/james-gunn-and-peter-safran-out-at-dc-studios-jeremy-latcham-named-new-president-and-chief-creative-officer/",
+          "title": "James Gunn and Peter Safran Out at DC Studios, Jeremy Latcham Named New President and Chief Creative Officer",
+          "publisher": "TheWrap",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEQQZ_2rVsG--txLyvDbTuPQ2-T1v8egx_llG5WHGXfRpxTaRAizu6KizAdwM"
+        },
+        {
+          "url": "https://thedirect.com/article/james-gunn-green-lantern-costume-dc-lore",
+          "title": "James Gunn's New Green Lantern Costume Permanently Rewrites DC Lore For The Better",
+          "publisher": "The Direct",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQt3IPANlZjBWdttmi0PG6SlsFu6kc9yTkVU5SPAghbQAQwbHYUSu0Vtx27mzY"
+        }
+      ]
+    },
     {
       "query": "white house",
       "approx_searches": "500+",
       "published_at": "2026-11-09T16:40:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/2026/11/09/opinion/stephen-miller-roy-cohn-trump.html",
-        "https://www.theguardian.com/us-news/2026/nov/09/stephen-miller-white-house-chief-of-staff",
+        "https://www.wbur.org/hereandnow/2026/11/09/trump-stephen-miller",
         "https://www.axios.com/2026/11/08/richard-walters-white-house-stephen-miller"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR13nKtLcwbj7yJsy3CibaXC7NczSFe2quDQVHj5_KL9TO_sUyNGjtJMW1zdxM",
@@ -26,11 +61,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR13nKtLcwbj7yJsy3CibaXC7NczSFe2quDQVHj5_KL9TO_sUyNGjtJMW1zdxM"
         },
         {
-          "url": "https://www.theguardian.com/us-news/2026/nov/09/stephen-miller-white-house-chief-of-staff",
-          "title": "Hardline Trump aide Stephen Miller takes over as White House chief of staff",
-          "publisher": "The Guardian",
+          "url": "https://www.wbur.org/hereandnow/2026/11/09/trump-stephen-miller",
+          "title": "What's Trump's appointment of Stephen Miller means for his lame-duck presidency",
+          "publisher": "WBUR",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8xXAxbOCYpbC_G6qm1tEQ4FtwEsaGGCkHrVdkABl2nQOkfq-eVg7hjHvMpSk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOOL32SFcb3RaemkQ3GjxWX2D9E1LFA6huvPTHMlfDSRO6oq2srhdcOSIQaJM"
         },
         {
           "url": "https://www.axios.com/2026/11/08/richard-walters-white-house-stephen-miller",
@@ -42,78 +77,43 @@
       ]
     },
     {
-      "query": "stray kids world tour dates",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T16:40:00Z",
-      "related_news_urls": [
-        "https://www.baltimoreravens.com/news/stray-kids-announce-2027-world-tour-run-it-across-north-america-europe-and-the-uk",
-        "https://www.usatoday.com/story/shopping/entertainment/tickets/2026/11/09/stray-kids-2027-tickets-tour-schedule/92689903007/",
-        "https://www.wbaltv.com/article/k-pop-stray-kids-baltimore-m-t-bank-stadium-2027/74375872"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTzNvQDHC2t9E5WQsqdxUVzSpQ9tW_MocoAeUpop6l4AyO0CoKxolmfiUwTkU",
-      "image_credit": "Baltimore Ravens",
-      "news": [
-        {
-          "url": "https://www.baltimoreravens.com/news/stray-kids-announce-2027-world-tour-run-it-across-north-america-europe-and-the-uk",
-          "title": "Stray Kids Announce 2027 World Tour ‘Run It’ Across North America, Europe and the UK",
-          "publisher": "Baltimore Ravens",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTzNvQDHC2t9E5WQsqdxUVzSpQ9tW_MocoAeUpop6l4AyO0CoKxolmfiUwTkU"
-        },
-        {
-          "url": "https://www.usatoday.com/story/shopping/entertainment/tickets/2026/11/09/stray-kids-2027-tickets-tour-schedule/92689903007/",
-          "title": "Stray Kids just announced 2027 'Run It' world tour, including 12 U.S. concerts",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoePLCyiGh-YDaTpqDEDXuvxLID8CpRA0YEMzz1bJO8DnyjNL3ZaZBvnRvCW0"
-        },
-        {
-          "url": "https://www.wbaltv.com/article/k-pop-stray-kids-baltimore-m-t-bank-stadium-2027/74375872",
-          "title": "'Stray Kids' coming to Baltimore's M&T Bank Stadium next summer",
-          "publisher": "WBAL-TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQi0HEIS0Gc71QSy74BIm14CMR9_72kqIDHon7a1gQ6O9xouPZOxbcjxTqjpE"
-        }
-      ]
-    },
-    {
       "query": "rockstar games gta vi",
-      "approx_searches": "20000+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-09T16:30:00Z",
       "related_news_urls": [
-        "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10",
-        "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/",
-        "https://www.forbes.com/sites/paultassi/2026/11/09/gta-6-online-info-found-in-pre-loaded-gta-6-files-and-backend/"
+        "https://pitchfork.com/story/gta-vi-is-putting-on-a-music-festival/",
+        "https://www.rollingstone.com/music/music-news/grand-theft-auto-6-music-festival-1235654527/",
+        "https://www.usatoday.com/story/tech/gaming/2026/11/09/gta-6-music-festival-miami-tickets/92689761007/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvr3MnhC7loBDcBhBXQOjgXQdBnSX1GgBl8Gp0wCtDiGaqob5Fx5ug4CQtEz4",
-      "image_credit": "Rockstar Games",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWANhkpCRwTYIbjXteyO_NRuoe7fs06NiTK3NcgXfbUAj86RRr9ticvNsBLkU",
+      "image_credit": "Pitchfork",
       "news": [
         {
-          "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10",
-          "title": "Grand Theft Auto VI Pre-Load Begins on November 10",
-          "publisher": "Rockstar Games",
+          "url": "https://pitchfork.com/story/gta-vi-is-putting-on-a-music-festival/",
+          "title": "GTA VI Is Putting on a Music Festival",
+          "publisher": "Pitchfork",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvr3MnhC7loBDcBhBXQOjgXQdBnSX1GgBl8Gp0wCtDiGaqob5Fx5ug4CQtEz4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWANhkpCRwTYIbjXteyO_NRuoe7fs06NiTK3NcgXfbUAj86RRr9ticvNsBLkU"
         },
         {
-          "url": "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/",
-          "title": "Grand Theft Auto VI pre-download begins November 10",
-          "publisher": "PlayStation.Blog",
+          "url": "https://www.rollingstone.com/music/music-news/grand-theft-auto-6-music-festival-1235654527/",
+          "title": "Travis Scott, Cardi B, and Justice Lead One-Off ‘Grand Theft Auto 6’ Music Festival",
+          "publisher": "Rolling Stone",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyNgZ56vmBZJJNXtBuVMuXt5SrJjkpTULssjmIfrOVOdDg6PUuF-BaAKk2CE8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWqLKXCbyaOdp_G1opk5ZioMXNUm-UVEjPsfv2rZTGTlMHQ3-y3tFGtGdrMnU"
         },
         {
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/09/gta-6-online-info-found-in-pre-loaded-gta-6-files-and-backend/",
-          "title": "‘GTA 6 Online’ Info Found In Pre-Loaded ‘GTA 6’ Files And Backend",
-          "publisher": "Forbes",
+          "url": "https://www.usatoday.com/story/tech/gaming/2026/11/09/gta-6-music-festival-miami-tickets/92689761007/",
+          "title": "Cardi B, Travis Scott to headline GTA 6 festival. See lineup",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwrF8DXqlToUK3psdVdfSCpjUNjKZkwepLLR1XgXKaV4__g10bI0xKXSdKFmY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS48xsTLeQ9DVfCxwk_jPePfudzjdKNJ1Gzc3ovfXzN_TBButpT34yiyKGvqt4"
         }
       ]
     },
     {
       "query": "nasa meteor sighting north carolina tennessee",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-09T16:10:00Z",
       "related_news_urls": [
         "https://www.cbsnews.com/news/fireball-north-carolina-tennessee-47000-mph/",
@@ -147,83 +147,48 @@
       ]
     },
     {
-      "query": "gta vi xbox series s",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T16:00:00Z",
-      "related_news_urls": [
-        "https://en.gamegpu.com/news/igry/gta-6-na-xbox-series-s-smozhet-rabotat-v-razreshenii-ot-720p-do-1080p",
-        "https://www.engadget.com/2302290/playstation-5-settings-change-before-gta-6/",
-        "https://insider-gaming.com/gta-6-datamine-reveals-possible-120hz-mode-but-no-vrr-support/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtIyijI5UD74DZMboQABSrOFglfeeakq8jqScljH9No_Iu50-htO7vNtsgaFU",
-      "image_credit": "GameGPU",
-      "news": [
-        {
-          "url": "https://en.gamegpu.com/news/igry/gta-6-na-xbox-series-s-smozhet-rabotat-v-razreshenii-ot-720p-do-1080p",
-          "title": "GTA 6 on Xbox Series S will be able to run in resolutions from 720p to 1080p",
-          "publisher": "GameGPU",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtIyijI5UD74DZMboQABSrOFglfeeakq8jqScljH9No_Iu50-htO7vNtsgaFU"
-        },
-        {
-          "url": "https://www.engadget.com/2302290/playstation-5-settings-change-before-gta-6/",
-          "title": "Change These PlayStation 5 Settings Before GTA 6 Comes Out",
-          "publisher": "Engadget",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIE8UWdQws7ZE6cJJJeIYvc7mW_FTIgh1vJfjREEHpmICjOStawgCEKGbSn8o"
-        },
-        {
-          "url": "https://insider-gaming.com/gta-6-datamine-reveals-possible-120hz-mode-but-no-vrr-support/",
-          "title": "GTA 6 Datamine Reveals Possible 120Hz Mode, But No VRR Support",
-          "publisher": "Insider Gaming",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0sWbwhQ3xm3ImtHcmBDjAAsfTaH90atxvW4WSqe1JBns3HW9rll-wNbH7hXY"
-        }
-      ]
-    },
-    {
       "query": "24 team playoff",
       "approx_searches": "2000+",
       "published_at": "2026-11-09T15:50:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/athletic/7765656/2026/11/09/college-football-playoff-24-teams-espn-expansion/",
-        "https://collegefootballplayoff.com/news/2026/11/9/24-team-expansion",
-        "https://www.espn.com/video/clip/_/id/50433483"
+        "https://www.espn.com/college-football/story/_/id/50433381/cfp-espn-ink-5-year-17b-deal-expand-field-sources-say",
+        "https://www.koco.com/article/college-football-playoff-doubles-24-teams/74377302",
+        "https://www.cnn.com/2026/11/09/sport/college-football-playoff-expansion"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvUzRY6pe8qqd-nDRcPzSCMFavkT2ZJoOyaQaYvNyTk2YDZcxJF49A9eW-ddA",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaJeiOzreeoz-RT2cQTseTg7r4_psD5LC-iHwBsDIwJNgH-dUQGa8zXn_-XEA",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.nytimes.com/athletic/7765656/2026/11/09/college-football-playoff-24-teams-espn-expansion/",
-          "title": "ESPN, College Football Playoff agree to details of expansion to 24 teams: Sources - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvUzRY6pe8qqd-nDRcPzSCMFavkT2ZJoOyaQaYvNyTk2YDZcxJF49A9eW-ddA"
-        },
-        {
-          "url": "https://collegefootballplayoff.com/news/2026/11/9/24-team-expansion",
-          "title": "CFP to Expand to 24 Teams Starting with the 2027-28 College Football Season; Announces Exclusive Media Rights Agreement with ESPN to Televise New CFP Games through the 2021-32 Seas",
-          "publisher": "College Football Playoff",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBXwo9vwSrsBfq_dc1MzSqLbSfjqUg7I3_INac-SUEvM7BEZ-k0we6rrzwijw"
-        },
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50433483",
-          "title": "Stephen A. calls for teams to have stronger schedules in light of 24-team CFP",
+          "url": "https://www.espn.com/college-football/story/_/id/50433381/cfp-espn-ink-5-year-17b-deal-expand-field-sources-say",
+          "title": "CFP, ESPN ink 5-year, $1.7B deal to expand field, sources say",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_aefW81CbVhokIsa4h6xGJPgoD9JJuvelgLj3FAmqbbVG2QyTMNpFbu4l0RE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaJeiOzreeoz-RT2cQTseTg7r4_psD5LC-iHwBsDIwJNgH-dUQGa8zXn_-XEA"
+        },
+        {
+          "url": "https://www.koco.com/article/college-football-playoff-doubles-24-teams/74377302",
+          "title": "College Football Playoff doubles up, expands to 24 teams beginning next season",
+          "publisher": "KOCO",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4PVWiC6l7YuFESa1R-xJZFJ6RgAJeuP2dCyc6gvVFN9LEL3j35ejLuikH9ok"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/09/sport/college-football-playoff-expansion",
+          "title": "The College Football Playoff is expanding to 24 teams. Football Saturdays will never be the same",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0rDdQJSKUsGW2lWORraSsq3SFmrwLrB_I8Hq8Su1N5FJkk6qzyptzOGl_Qzk"
         }
       ]
     },
     {
       "query": "sarah jukaku",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-09T15:50:00Z",
       "related_news_urls": [
         "https://www.foxnews.com/politics/democratic-senator-elect-calls-trump-unserious-fool-defending-combative-political-style",
-        "https://timesofindia.indiatimes.com/world/us/there-is-only-the-united-states-of-america-erika-kirk-slams-abdul-el-sayeds-arab-america-remark-after-historic-senate-win/articleshow/135686041.cms",
-        "https://abcnews.com/Politics/abdul-el-sayed-democrats-work-trump-act/story?id=137952241"
+        "https://www.yahoo.com/news/politics/articles/abdul-el-sayeds-vow-win-160803896.html",
+        "https://www.nbcchicago.com/entertainment/entertainment-news/abdul-el-sayed-says-life-of-a-showgirl-isnt-taylor-swifts-best-album/4012899/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtsLi-Ipv2pENqAIP3QBv6KY7vIv3f_OzIzarck0pf5f8HosX0BcLExs_d76k",
       "image_credit": "Fox News",
@@ -236,18 +201,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtsLi-Ipv2pENqAIP3QBv6KY7vIv3f_OzIzarck0pf5f8HosX0BcLExs_d76k"
         },
         {
-          "url": "https://timesofindia.indiatimes.com/world/us/there-is-only-the-united-states-of-america-erika-kirk-slams-abdul-el-sayeds-arab-america-remark-after-historic-senate-win/articleshow/135686041.cms",
-          "title": "‘There is only the United States of America’: Erika Kirk slams Abdul El-Sayed’s ‘Arab America’ remark aft",
-          "publisher": "The Times of India",
+          "url": "https://www.yahoo.com/news/politics/articles/abdul-el-sayeds-vow-win-160803896.html",
+          "title": "Abdul El-Sayed's Vow to Win by 7 Resurfaces After He Does Exactly That",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1JK-ttQUFCbWc4GvcBR1VUp21MIEgU8R-O8rV6llscjRl57ql5bTCajliKCk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWH0RzBJqIQt8xQH2cakZ9WA2iWfM_pxGBliwHxr8JKrxXPXt3mtlr1G7eqW4"
         },
         {
-          "url": "https://abcnews.com/Politics/abdul-el-sayed-democrats-work-trump-act/story?id=137952241",
-          "title": "Abdul El-Sayed says Democrats will work with Trump if 'he wants to act serious'",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "url": "https://www.nbcchicago.com/entertainment/entertainment-news/abdul-el-sayed-says-life-of-a-showgirl-isnt-taylor-swifts-best-album/4012899/",
+          "title": "‘Of course not': Abdul El-Sayed says ‘Life of a Showgirl' isn't Taylor Swift's best album",
+          "publisher": "NBC 5 Chicago",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRN2qKe5vIfEMaH7_txeYZKPZ94mj-ucn_KRrOmumU5rCjHjxE0lQWZRmZa59A"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF6e7ott5WKVu1RDh66HrOQmMI8O2o6PKdWK2x_Lqb9dxRZ4w7JMO6PMlrh_o"
         }
       ]
     },
@@ -256,19 +221,19 @@
       "approx_searches": "500+",
       "published_at": "2026-11-09T15:50:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/videos/real-reason-gwyneth-paltrow-brad-150000934.html",
+        "https://variety.com/2026/tv/news/gwyneth-paltrow-goop-guide-netflix-spotify-video-podcast-1236941245/",
         "https://people.com/gwyneth-paltrow-zip-up-sweater-november-2026-12187498",
-        "https://www.imdb.com/fr/news/ni66100983/?ref_=nm_nwr_1"
+        "https://www.yahoo.com/entertainment/videos/real-reason-gwyneth-paltrow-brad-150000934.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReBhF2WV4zn_bsUT3ObGf48jKF5AGCowY2nURD6SbmVSCC6DpI45SYN2CuKLU",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI3n8ZJdsB2klf0pE7m4-yQONtx3CvCsofynwFlJJOhdRw2ea76buy_ocR7pE",
+      "image_credit": "Variety",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/videos/real-reason-gwyneth-paltrow-brad-150000934.html",
-          "title": "The Real Reason Gwyneth Paltrow And Brad Pitt Called It Quits",
-          "publisher": "Yahoo",
+          "url": "https://variety.com/2026/tv/news/gwyneth-paltrow-goop-guide-netflix-spotify-video-podcast-1236941245/",
+          "title": "Gwyneth Paltrow Goop Guide Video Podcast Coming to Netflix and Spotify",
+          "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReBhF2WV4zn_bsUT3ObGf48jKF5AGCowY2nURD6SbmVSCC6DpI45SYN2CuKLU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI3n8ZJdsB2klf0pE7m4-yQONtx3CvCsofynwFlJJOhdRw2ea76buy_ocR7pE"
         },
         {
           "url": "https://people.com/gwyneth-paltrow-zip-up-sweater-november-2026-12187498",
@@ -278,17 +243,17 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSWd8vuPv2K9cNz1MMl22vfpsLGK2HxmZSzyW00PyZz37aYcQGYzdcITyuiS4"
         },
         {
-          "url": "https://www.imdb.com/fr/news/ni66100983/?ref_=nm_nwr_1",
-          "title": "Why Gwyneth Paltrow (54) & Timothée Chalamet (30) Waived Off The Intimacy Coordinator On ‘Marty Supreme’",
-          "publisher": "IMDb",
+          "url": "https://www.yahoo.com/entertainment/videos/real-reason-gwyneth-paltrow-brad-150000934.html",
+          "title": "The Real Reason Gwyneth Paltrow And Brad Pitt Called It Quits",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr68HCFzIWVltsioiqkhBt_Ah3sDHM08xguBjt1QZVUsMN40Mc4dg-nCPDU5U"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbafcV56oiCQAR8_cg8o9_snfYn5peR6Mdl8rXFt6wf8FX-982nI4qoxPnAg4"
         }
       ]
     },
     {
       "query": "snowfall forecast",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-09T15:40:00Z",
       "related_news_urls": [
         "https://myfox8.com/weather/blog/is-the-triad-in-for-an-icy-winter-fox8-meteorologist-emily-byrd-shares-2026-27-winter-weather-prediction/",
@@ -326,20 +291,13 @@
       "approx_searches": "2000+",
       "published_at": "2026-11-09T15:30:00Z",
       "related_news_urls": [
-        "https://www.kvue.com/video/news/local/national-fried-chicken-sandwich-day-november-9-popeyes-chick-fil-a-urban-bird-hot-chicken-austin-deal/269-b34b0cd5-1481-4c7b-8c0d-2d1fba667f4d",
         "https://www.13newsnow.com/article/news/nation-world/national-fried-chicken-sandwich-day-freebies-and-deals/507-66e27ec3-0dbe-4b99-bb55-f04f1e84088e",
-        "https://mashable.com/life/national-fried-chicken-sandwich-day-2026-free-food-deals"
+        "https://mashable.com/life/national-fried-chicken-sandwich-day-2026-free-food-deals",
+        "https://www.cbsnews.com/chicago/video/chicagos-do-rite-donuts-celebrates-national-fried-chicken-sandwich-day/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPWMhriT9U0KbynctDfW9C2LzCTQjibzaGZIVFun_K-ketkGU1TgKpfvCdH5s",
-      "image_credit": "KVUE",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfq8-U8c-kL15QrbfJdiLZRHSTHmsVF67aMQ-jYQkBU0wFA5kcMoxUvYfEfzA",
+      "image_credit": "13newsnow.com",
       "news": [
-        {
-          "url": "https://www.kvue.com/video/news/local/national-fried-chicken-sandwich-day-november-9-popeyes-chick-fil-a-urban-bird-hot-chicken-austin-deal/269-b34b0cd5-1481-4c7b-8c0d-2d1fba667f4d",
-          "title": "Nov. 9 is National Fried Chicken Sandwich Day",
-          "publisher": "KVUE",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPWMhriT9U0KbynctDfW9C2LzCTQjibzaGZIVFun_K-ketkGU1TgKpfvCdH5s"
-        },
         {
           "url": "https://www.13newsnow.com/article/news/nation-world/national-fried-chicken-sandwich-day-freebies-and-deals/507-66e27ec3-0dbe-4b99-bb55-f04f1e84088e",
           "title": "Fast-food restaurants celebrate National fried chicken sandwich day with freebies and deals",
@@ -353,6 +311,48 @@
           "publisher": "Mashable",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEcjCWWDegk1QRjzWYNYO5GRDmZYEbcmkvZ8qe4K8xV2PwhxGdDl3kVnLroco"
+        },
+        {
+          "url": "https://www.cbsnews.com/chicago/video/chicagos-do-rite-donuts-celebrates-national-fried-chicken-sandwich-day/",
+          "title": "Chicago's Do-Rite Donuts celebrates National Fried Chicken Sandwich Day",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvgARQjpG3aAPTIhBZ0AJSn8FyqXgD-V3_hGcz5pP8jG3IkWb4c4otjGQnlkM"
+        }
+      ]
+    },
+    {
+      "query": "hoda kotb",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T15:30:00Z",
+      "related_news_urls": [
+        "https://people.com/hoda-kotb-reunites-jenna-bush-hager-today-show-guest-cohost-12244580",
+        "https://www.yahoo.com/entertainment/tv/articles/hoda-kotb-hosts-today-jenna-154445758.html",
+        "https://www.imdb.com/news/ni66102686/?ref_=nwc_art_perm"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbkkMCwDBmeZA29PtO9UCinVCPaXzvJchWDFtjjEqxbNv_LEVfK8JQmjaqNO8",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/hoda-kotb-reunites-jenna-bush-hager-today-show-guest-cohost-12244580",
+          "title": "Hoda Kotb Reunites with Jenna Bush Hager as Guest Co-Host on Today : ‘Like Not a Day Had Passed’",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbkkMCwDBmeZA29PtO9UCinVCPaXzvJchWDFtjjEqxbNv_LEVfK8JQmjaqNO8"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/hoda-kotb-hosts-today-jenna-154445758.html",
+          "title": "Hoda Kotb Hosts ‘Today’ With Jenna Bush Hager Nearly 2 Years After Show Exit",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7foMwYQDGdAp2ymZtBWc_Ql0iliU5oShMVwuVAbfALAz_8rbYLSpfkfo5LdA"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66102686/?ref_=nwc_art_perm",
+          "title": "Hoda Kotb Hosts ‘Today’ With Jenna Bush Hager Nearly 2 Years After Show Exit",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ69lg707XL2EEXU8rAL_Dsbq1oymJ0W7yT7veDioUnWmUuI16F8KdcgfG8JVM"
         }
       ]
     }
