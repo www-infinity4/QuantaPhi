@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {createHmac} from 'node:crypto';
 import {DatabaseSync} from 'node:sqlite';
 import {readFileSync} from 'node:fs';
 import worker from '../src/ingest.ts';
@@ -86,5 +87,37 @@ test('Mixed consumer batch cannot insert unconsented subject',async()=>{
     ]},{DB:f.DB});
     assert.equal(count(f.sqlite),1);
     assert.equal(f.sqlite.prepare('SELECT count(*) AS n FROM users').get().n,1);
+  }finally{f.close();}
+});
+
+test('direct D1 staging must be explicitly unlocked and consent checked',async()=>{
+  const f=fixture();
+  try{
+    const secret='synthetic-direct-only-secret',ts=String(Date.now());
+    const signature=createHmac('sha256',secret)
+      .update(['v1',id,ts,'0'].join('\n')).digest('hex');
+    const send=()=>new Request('https://quantaphi.org/v1/events',{
+      method:'POST',
+      headers:{
+        Authorization:'Bearer internal-staging-token',
+        'Content-Type':'application/json',
+        'x-quant-identity-time':ts,
+        'x-quant-identity-geo':'0',
+        'x-quant-identity-signature':signature
+      },
+      body:JSON.stringify({
+        user:{id,device_type:'unknown'},
+        queries:[{id:'event-00000101',event_type:'card_click',target_entity:'card:physics',numerical_value:1}]
+      })
+    });
+    const env={DB:f.DB,INGEST_TOKEN:'internal-staging-token',USER_IDENTITY_HMAC_SECRET:secret,INGEST_MODE:'direct'};
+    assert.equal((await worker.fetch(send(),env)).status,503);
+    assert.equal(count(f.sqlite),0);
+    env.DIRECT_STAGING_ALLOWED='true';
+    await worker.fetch(send(),env);
+    assert.equal(count(f.sqlite),0);
+    consent(f.sqlite);
+    await worker.fetch(send(),env);
+    assert.equal(count(f.sqlite),1);
   }finally{f.close();}
 });
