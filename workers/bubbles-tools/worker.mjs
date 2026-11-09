@@ -1,3 +1,4 @@
+import {hasUnverifiedContextVerification} from '../../bubbles-evidence-provenance.mjs';
 import {ecosystemContextFor} from './ecosystem.mjs';
 import {isCapabilityDiscoveryQuestion,capabilityDirectory,capabilityDirectoryReply,capabilityContextFor,recommendCapabilities} from './capability-directory.mjs';
 import {wantsPublicX,publicXRead} from './public-x.mjs';
@@ -184,11 +185,6 @@ export function hasUnverifiedActionClaim(userRequest,answer){
  return false;
 }
 // A system prompt or the current conversation is context, not completed source verification.
-export function hasUnverifiedContextVerification(answer){
- const text=clean(answer,8000).replace(/\*/g,'');
- return /\b(?:system message|conversation context)\b[\s\S]{0,260}\b(?:completed|verified)\s+verification\b/i.test(text)||
-  /\b(?:completed|verified)\s+verification\b[\s\S]{0,260}\b(?:system message|conversation context)\b/i.test(text);
-}
 // Model text is not a tool invocation. Workers AI chat can emit planning
 // prose or fabricated createTicket JSON instead of a user-facing reply.
 // Reject the draft before it reaches the floating bubble or Android TTS.
