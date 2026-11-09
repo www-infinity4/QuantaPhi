@@ -47,8 +47,10 @@ export function isCapabilityDiscoveryQuestion(input){
  const raw=typeof input==='string'?input.trim().slice(0,600):'';
  if(!raw||/^(?:(?:please|hey|hi|hello|okay|ok|bubbles)[\s,:]+)*(?:build|create|fix|repair|modify|delete|install|deploy|merge|commit|run)\b/i.test(raw))return false;
  const q=raw.replace(/^(?:(?:please|hey|hi|hello|okay|ok|bubbles)[\s,:]+)+/i,'').trim();
+ // Inventory means Bubbles' registered abilities, not arbitrary tools on the internet
+ // or a file whose name happens to contain "tools".
  if(!/\b(?:tools?|skills?|capabilities|abilities)\b/i.test(q))return false;
- return /^(?:(?:what|which|where|how|show|list|find|discover|locate)\b|(?:can|could|would)\s+you\s+(?:show|list|find|locate|describe|tell)|do\s+you\s+have\b)/i.test(q);
+ return /^(?:(?:what|which)\s+(?:(?:are|is)\s+)?(?:(?:your|the|available|existing|registered)\s+)?(?:tools?|skills?|capabilities|abilities)\b|(?:where|how)\b.{0,75}\b(?:your|bubbles|available|existing)\b.{0,50}\b(?:tools?|skills?|capabilities|abilities)\b|(?:show|list|find|discover|locate)\s+(?:(?:me|us)\s+)?(?:(?:your|existing|available|registered|bubbles)\s+){1,3}(?:tools?|skills?|capabilities|abilities)\b|(?:can|could|would)\s+you\s+(?:show|list|find|locate|describe|tell)\b.{0,55}\b(?:your|existing|available)\s+(?:tools?|skills?|capabilities|abilities)\b|do\s+you\s+have\s+(?:tools?|skills?|capabilities|abilities)\b)/i.test(q);
 }
 
 export function capabilityDirectory(env={}){
@@ -71,7 +73,13 @@ export function recommendCapabilities(question,env={}){
  const q=String(question||'').toLowerCase().slice(0,600);
  const ids=[];
  const add=(...values)=>{for(const id of values)if(!ids.includes(id))ids.push(id);};
- if(/\b(?:deploy|deployment|code changes?|modif(?:y|ication)|edit|write|repair|fix|build|commit|merge|push)\b/.test(q))
+ const commitRead=/\bcommits?\b/.test(q)&&/\b(?:read|view|inspect|show|list|fetch|explain|find)\b/.test(q);
+ const publicMemoryTest=/\b(?:organic\s+computation|memory|recall|pattern)\b/.test(q)&&
+  /\b(?:benchmark|simulat(?:e|ion)|test|trials?|digital)\b/.test(q);
+ if(commitRead)add('github.read_commit');
+ if(publicMemoryTest)add('organic.memory_benchmark');
+ if(/\b(?:deploy|deployment|code changes?|modif(?:y|ication)|edit|write|repair|fix|build|merge|push)\b/.test(q)||
+    /\b(?:commit|committing)\s+(?:my\s+|the\s+)?(?:code|changes|files|patch|work)\b|\bmake\s+(?:a\s+)?commit\b/.test(q))
   add('robot_brain.owner_work');
  if(/\b(?:create|make|start)\b/.test(q)&&/\b(?:git(?:hub)?|repositor(?:y|ies)|repos?)\b/.test(q))
   add('github.create_repository');
@@ -86,7 +94,7 @@ export function recommendCapabilities(question,env={}){
  if(/\b(?:weather|forecast|temperature|rain)\b/.test(q))add('weather.current');
  if(/\b(?:news|headlines?)\b/.test(q))add('news.headlines');
  if(/\b(?:quick cards?|cards?|carousel|media player)\b/.test(q))add('quick_card.open');
- if(/\b(?:memory|memories|context|remember|recall)\b/.test(q))
+ if(!publicMemoryTest&&/\b(?:memory|memories|context|remember|recall)\b/.test(q))
   add('bubbles.memory.owner');
  if(/\b(?:resonance|calculator|frequency|inductance)\b/.test(q))
   add('resonance.calculate');
