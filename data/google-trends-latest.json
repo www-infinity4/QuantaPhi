@@ -3,41 +3,251 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T06:01:47.256063Z",
+  "checked_at": "2026-11-09T06:44:16.781404Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "juju watkins",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T05:30:00Z",
+      "query": "michaella love is blind",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T06:30:00Z",
       "related_news_urls": [
-        "https://www.foxnews.com/video/6408120473112",
-        "https://www.espn.com/womens-college-basketball/recap/_/gameId/401927106",
-        "https://www.cbssports.com/watch/nfl/video/highlights-utah-state-at-no-3-usc-118"
+        "https://www.netflix.com/tudum/articles/love-is-blind-season-11-matt-beekeeper-michaella-interview",
+        "https://people.com/love-is-blind-michaella-giorgio-falls-reunion-admits-secret-romance-12241510",
+        "https://www.imdb.com/news/ni66101984/?ref_=ttnw_art_perm"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTRuja7QxwnYV3uNtZcgcOnmyVF21C3qXvPhTaOa4LMG3HQwFqkXzcFDp3FZc",
-      "image_credit": "Fox News",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9N4TC-mV47ajAUJUIMjbbKiMlBtox44PxeRTkm2VPk0yRzjutFbONFYpxuFM",
+      "image_credit": "Netflix",
       "news": [
         {
-          "url": "https://www.foxnews.com/video/6408120473112",
-          "title": "Utah State Aggies vs No. 3 USC Trojans Highlights | Women's College Basketball",
-          "publisher": "Fox News",
+          "url": "https://www.netflix.com/tudum/articles/love-is-blind-season-11-matt-beekeeper-michaella-interview",
+          "title": "Beekeeper Matt and Michaella Break Down That Buzzy Love Is Blind Reunion Clash",
+          "publisher": "Netflix",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTRuja7QxwnYV3uNtZcgcOnmyVF21C3qXvPhTaOa4LMG3HQwFqkXzcFDp3FZc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9N4TC-mV47ajAUJUIMjbbKiMlBtox44PxeRTkm2VPk0yRzjutFbONFYpxuFM"
         },
         {
-          "url": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401927106",
-          "title": "USC 118-40 Utah State (Nov 8, 2026) Game Recap",
-          "publisher": "ESPN",
+          "url": "https://people.com/love-is-blind-michaella-giorgio-falls-reunion-admits-secret-romance-12241510",
+          "title": "‘Love Is Blind’ Star Michaella Giorgio Falls Onstage in Awkward Reunion Moment, Reveals Secret Romance with Fellow Contestant",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5HhPf0P3eVP63dNuLcuvGGkPEmxG2szzX2SshFtz2WnyPvTnO8DoNWBTgkVk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHjPT2n9PTJ7RIOICou9Vw0VFUq696aeaMafyyznwwSz8Nme1MbwSbIHqNaBk"
         },
         {
-          "url": "https://www.cbssports.com/watch/nfl/video/highlights-utah-state-at-no-3-usc-118",
-          "title": "NCAAW Highlights: Utah State at No. 3 USC (11/8) Stream of National Football League",
-          "publisher": "CBS Sports",
+          "url": "https://www.imdb.com/news/ni66101984/?ref_=ttnw_art_perm",
+          "title": "Love Is Blind Season 11 Boston Beekeeper Matt, What Really Happened with Michaella, Shrooms",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThoJkNidAlwDOOxWph4ZH6Lx2DoCsbHs57jCsdfEokxOsjBYkrmA55GPCwoXM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsyDBBaptSZhLrGIXD7wuzWoFZhtSnCG-KE_kxo6O352aT2E5UG_8ixyLshdA"
+        }
+      ]
+    },
+    {
+      "query": "jimmy fallon",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T06:20:00Z",
+      "related_news_urls": [
+        "https://www.wthr.com/article/sports/wnba/indiana-fever/caitlin-clark-tonight-show-starring-jimmy-fallon-interview-nbc-friday-night/531-f18c83ef-65cf-4c1b-9bc0-c25b8fd5687e",
+        "https://www.soleretriever.com/news/articles/caitlin-clark-gifts-jimmy-fallon-nike-caitlin-1-friendship-bracelet",
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/caitlin-clark-goes-12-16-135608006.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVLkrFkTJu3hBIDNMw8jkHbkUZ0ymWFOCf2sb4_FBR2_bWLEAs0cQDyuuJahw",
+      "image_credit": "WTHR",
+      "news": [
+        {
+          "url": "https://www.wthr.com/article/sports/wnba/indiana-fever/caitlin-clark-tonight-show-starring-jimmy-fallon-interview-nbc-friday-night/531-f18c83ef-65cf-4c1b-9bc0-c25b8fd5687e",
+          "title": "Caitlin Clark caps big week with 'Tonight Show' appearance",
+          "publisher": "WTHR",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVLkrFkTJu3hBIDNMw8jkHbkUZ0ymWFOCf2sb4_FBR2_bWLEAs0cQDyuuJahw"
+        },
+        {
+          "url": "https://www.soleretriever.com/news/articles/caitlin-clark-gifts-jimmy-fallon-nike-caitlin-1-friendship-bracelet",
+          "title": "Caitlin Clark Gifts Jimmy Fallon the Taylor Swift-Inspired Nike Caitlin 1 Friendship Bracelet",
+          "publisher": "Sole Retriever",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_fC65D4djtQxVZvzKZA2LAucwAkAznqR4_Nqw9B7TSJnjQ-Ma0CU6aDQzeL4"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/caitlin-clark-goes-12-16-135608006.html",
+          "title": "Caitlin Clark Goes 12-for-16 While Shooting Cheeseballs Into Jimmy Fallon's Mouth in 24 Seconds",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTP0VmqwxRPs-alrE1UY6QrGsAMj3XJMbMcH2WxuC28DMR8Pz7WN2_Q95uvOd4"
+        }
+      ]
+    },
+    {
+      "query": "rockstar gta 6 new screenshots",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-09T06:10:00Z",
+      "related_news_urls": [
+        "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10",
+        "https://www.bgr.com/2308570/things-to-do-before-installing-gta-6-ps5-xbox/",
+        "https://corporate.charter.com/newsroom/spectrum-giving-free-gig-speed-lift-thanksgiving-grand-theft-auto"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSk249MDEeYsamkE71yKC0ECdZNDRlGbRKQe3_RZaj1uwDwCU1bTkE0XNFdCZM",
+      "image_credit": "Rockstar Games",
+      "news": [
+        {
+          "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10",
+          "title": "Grand Theft Auto VI Pre-Load Begins on November 10",
+          "publisher": "Rockstar Games",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSk249MDEeYsamkE71yKC0ECdZNDRlGbRKQe3_RZaj1uwDwCU1bTkE0XNFdCZM"
+        },
+        {
+          "url": "https://www.bgr.com/2308570/things-to-do-before-installing-gta-6-ps5-xbox/",
+          "title": "5 Things You Need To Do Before You Install Grand Theft Auto 6",
+          "publisher": "BGR",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP-QCKWv6igNJtizFGcUP9dIS86tuMUwNI_8-D8XjBDAlWCSvSEYlel3tkgCQ"
+        },
+        {
+          "url": "https://corporate.charter.com/newsroom/spectrum-giving-free-gig-speed-lift-thanksgiving-grand-theft-auto",
+          "title": "Download Grand Theft Auto VI Faster and Get to Leonida Sooner With Spectrum Internet Gig",
+          "publisher": "Charter Communications",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLrldBUNUxrprrQdaGkYX-IyU3QqIHF3o_gPJ8nNZdwM-7CUvyPxPcKlXOanM"
+        }
+      ]
+    },
+    {
+      "query": "magda linette",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T06:00:00Z",
+      "related_news_urls": [
+        "https://przegladsportowy.onet.pl/tenis/magda-linette-janice-tjen-na-zywo-polka-gra-w-wielkim-finale/mcynx26",
+        "https://www.polsatsport.pl/wiadomosc/2026-11-08/wta-w-chennai-magda-linette-janice-tjen-relacja-live-i-wynik-na-zywo/",
+        "https://sportowefakty.wp.pl/sportowybar/1283124/jest-ustawiona-do-konca-zycia-ma-miliony-na-koncie"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjVdhw4nP5HjHREZKrNfNh9KlNYwIIilf2NM6GD-9WxbQ7cY0JhdnqelaWi_E",
+      "image_credit": "Przegląd Sportowy",
+      "news": [
+        {
+          "url": "https://przegladsportowy.onet.pl/tenis/magda-linette-janice-tjen-na-zywo-polka-gra-w-wielkim-finale/mcynx26",
+          "title": "Magda Linette - Janice Tjen NA ŻYWO. Polka gra w wielkim finale",
+          "publisher": "Przegląd Sportowy",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjVdhw4nP5HjHREZKrNfNh9KlNYwIIilf2NM6GD-9WxbQ7cY0JhdnqelaWi_E"
+        },
+        {
+          "url": "https://www.polsatsport.pl/wiadomosc/2026-11-08/wta-w-chennai-magda-linette-janice-tjen-relacja-live-i-wynik-na-zywo/",
+          "title": "WTA w Chennai: Magda Linette - Janice Tjen. Relacja live i wynik na żywo",
+          "publisher": "www.polsatsport.pl",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTh5Zwg6qzga87JqGDSg-lyxTTTiSfe8wDNzp51YnLt4SsA7fmghjZDx8fDspY"
+        },
+        {
+          "url": "https://sportowefakty.wp.pl/sportowybar/1283124/jest-ustawiona-do-konca-zycia-ma-miliony-na-koncie",
+          "title": "Jest \"ustawiona\" do końca życia. Ma miliony na koncie",
+          "publisher": "SportoweFakty",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjZ9i5pdGnEXOOkcsasLTmT6ca5OxUk_mc18BpxWppIWJ0y97sXCvLZXVs8Uk"
+        }
+      ]
+    },
+    {
+      "query": "杭州临平",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T06:00:00Z",
+      "related_news_urls": [
+        "https://www.aboluowang.com/2026/1109/2455188.html",
+        "https://zj.ifeng.com/c/8xrjfAVyI0A",
+        "https://zj.ifeng.com/c/8xu533m1wVC"
+      ],
+      "image_url": null,
+      "image_credit": "阿波罗新闻网",
+      "news": [
+        {
+          "url": "https://www.aboluowang.com/2026/1109/2455188.html",
+          "title": "杭州惊传持枪抢劫案 多人死亡",
+          "publisher": "阿波罗新闻网",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://zj.ifeng.com/c/8xrjfAVyI0A",
+          "title": "2026无界艺术时尚周开幕式暨文旅时尚产业大会在临平举行",
+          "publisher": "凤凰网",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSR0lZeUfBimLi2RWJCn3m_eSRWMgAdhEvp4exmBlKtkEqtA02MydA6EMVey00"
+        },
+        {
+          "url": "https://zj.ifeng.com/c/8xu533m1wVC",
+          "title": "杭州又多一个“谷”！临平为何瞄准国际美妆？",
+          "publisher": "凤凰网",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhbdNewMQw0OjIxUPIAcvZHRiKnmREEYIXcu-a9SPch2vpdRWD7ADl0EoRww0"
+        }
+      ]
+    },
+    {
+      "query": "denzel washington",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T06:00:00Z",
+      "related_news_urls": [
+        "https://www.tvline.com/2303841/denzel-washington-final-tv-role-animated-hbo-kids-show/",
+        "https://www.imdb.com/news/ni66099970/?ref_=tt_nwr_1",
+        "https://movieweb.com/2-guns-washington-wahlberg-action-thriller-stream-youtube-november-2026/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnZHKjYhrSvaFQkOYU87oz9lOfieeaNgkqpypWGGEb0-6CZn8sTo-2pG-yfqQ",
+      "image_credit": "TVLine",
+      "news": [
+        {
+          "url": "https://www.tvline.com/2303841/denzel-washington-final-tv-role-animated-hbo-kids-show/",
+          "title": "Denzel Washington's Final TV Role Was On An Animated HBO Kids' Show",
+          "publisher": "TVLine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnZHKjYhrSvaFQkOYU87oz9lOfieeaNgkqpypWGGEb0-6CZn8sTo-2pG-yfqQ"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66099970/?ref_=tt_nwr_1",
+          "title": "Denzel Washington's Final TV Role Was On An Animated HBO Kids' Show",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaFmM6HqpyB_w5lia9bTxgCCWa0YMihRCv-aoSALvFs8jN1wZus3nPFHfvOiQ"
+        },
+        {
+          "url": "https://movieweb.com/2-guns-washington-wahlberg-action-thriller-stream-youtube-november-2026/",
+          "title": "Denzel Washington & Mark Wahlberg's 109-Minute Action Thriller Is Streaming Free After Being Cut From Netflix",
+          "publisher": "MovieWeb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTuWCgfA9Xs_BIwx0CBOSVq2kpx3xK86lGPe7SE3lXkAMqbdLcAUdF3raWco9w"
+        }
+      ]
+    },
+    {
+      "query": "janice tjen",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T05:50:00Z",
+      "related_news_urls": [
+        "https://www.wtatennis.com/news/4606329/rain-postpones-chennai-title-match-between-tjen-linett",
+        "https://www.thehindu.com/sport/tennis/chennai-open-tennis-singles-final-postponed-due-to-rain-and-air-quality/article71681215.ece",
+        "https://timesofindia.indiatimes.com/sports/badminton/diwali-fireworks-rain-force-chennai-open-final-between-janice-tjen-and-magda-linette-to-be-postponed/articleshow/135669675.cms"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8qfSXpmOHlmOIrur7rf1tCdTf1sbv4foTq-D8BqH268nwdnXWxUxDlZ-G1lw",
+      "image_credit": "WTA Tennis",
+      "news": [
+        {
+          "url": "https://www.wtatennis.com/news/4606329/rain-postpones-chennai-title-match-between-tjen-linett",
+          "title": "Rain postpones Chennai title match between Tjen, Linette",
+          "publisher": "WTA Tennis",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8qfSXpmOHlmOIrur7rf1tCdTf1sbv4foTq-D8BqH268nwdnXWxUxDlZ-G1lw"
+        },
+        {
+          "url": "https://www.thehindu.com/sport/tennis/chennai-open-tennis-singles-final-postponed-due-to-rain-and-air-quality/article71681215.ece",
+          "title": "Chennai Open tennis: Singles final postponed due to rain, unhealthy air quality",
+          "publisher": "The Hindu",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOC6mAhk0qjo9yf8ExerDX4bDXVtB0zBUUo1xt40vORmJdswbF1kgp8vNYc7U"
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/sports/badminton/diwali-fireworks-rain-force-chennai-open-final-between-janice-tjen-and-magda-linette-to-be-postponed/articleshow/135669675.cms",
+          "title": "Diwali fireworks, rain force Chennai Open final between Janice Tjen and Magda Linette to be postponed",
+          "publisher": "The Times of India",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF8KCmdrjxID8uSxx819jjHw5Z3iy6qv7pFbhPAyxHVqL-TAyOZYdWnULsYz4"
         }
       ]
     },
@@ -46,13 +256,20 @@
       "approx_searches": "200+",
       "published_at": "2026-11-09T05:30:00Z",
       "related_news_urls": [
+        "https://www.reuters.com/business/environment/delhi-air-quality-deteriorates-revellers-mark-diwali-with-illegal-fireworks-2026-11-09/",
         "https://www.dw.com/en/india-delhi-chokes-on-most-polluted-diwali-eve-in-10-years/live-79883248",
-        "https://www.yahoo.com/news/world/articles/indian-capital-chokes-pollution-diwali-040704612.html",
-        "https://www.wral.com/news/ap/f3ba1-new-delhi-wakes-to-toxic-smog-after-diwali-as-firecrackers-add-to-seasonal-pollution-crisis/"
+        "https://www.thehindu.com/news/cities/Delhi/air-pollution-over-50-times-who-limit-in-parts-of-delhi-as-people-defy-ban-on-firecrackers-on-deepavali/article71681210.ece"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhoku61qu-W7i_SYXq_rCqix7-XuMy-wgh-4ntWBk2omeIcd9XEvlderFufaA",
-      "image_credit": "DW.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTK4txzVIO_6D71qiw_wCoj38YrM7PMjoBeGEiGNGHZkZxojnHsoJYuXsfIkYA",
+      "image_credit": "Reuters",
       "news": [
+        {
+          "url": "https://www.reuters.com/business/environment/delhi-air-quality-deteriorates-revellers-mark-diwali-with-illegal-fireworks-2026-11-09/",
+          "title": "Delhi air quality deteriorates as revellers mark Diwali with illegal fireworks",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTK4txzVIO_6D71qiw_wCoj38YrM7PMjoBeGEiGNGHZkZxojnHsoJYuXsfIkYA"
+        },
         {
           "url": "https://www.dw.com/en/india-delhi-chokes-on-most-polluted-diwali-eve-in-10-years/live-79883248",
           "title": "India: Delhi chokes on most polluted Diwali eve in 10 years",
@@ -61,53 +278,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhoku61qu-W7i_SYXq_rCqix7-XuMy-wgh-4ntWBk2omeIcd9XEvlderFufaA"
         },
         {
-          "url": "https://www.yahoo.com/news/world/articles/indian-capital-chokes-pollution-diwali-040704612.html",
-          "title": "Indian capital chokes with pollution after Diwali fireworks",
-          "publisher": "Yahoo",
+          "url": "https://www.thehindu.com/news/cities/Delhi/air-pollution-over-50-times-who-limit-in-parts-of-delhi-as-people-defy-ban-on-firecrackers-on-deepavali/article71681210.ece",
+          "title": "Air pollution over 66 times WHO limit in parts of Delhi as people defy ban on firecrackers on Deepavali",
+          "publisher": "The Hindu",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoKpNE4h9VKIDP5lnGvs3uERaKn9Hd3_BQ-DZgcdTbsV78m30pamPyU2YHX8E"
-        },
-        {
-          "url": "https://www.wral.com/news/ap/f3ba1-new-delhi-wakes-to-toxic-smog-after-diwali-as-firecrackers-add-to-seasonal-pollution-crisis/",
-          "title": "New Delhi wakes to toxic smog after Diwali as firecrackers add to seasonal pollution crisis",
-          "publisher": "WRAL",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVGmWdefhDcd0pRmf288rL-5sFle5X9JlbrBJLM7240DYR6HFwsvZIKvAXQ2Q"
-        }
-      ]
-    },
-    {
-      "query": "carson wentz",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T05:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nfl/breaking-news/article/carson-wentz-to-start-at-qb-for-vikings-on-monday-night-vs-bills-with-kyler-murray-nursing-hamstring-injury-182733631.html",
-        "https://www.nfl.com/news/vikings-to-start-carson-wentz-vs-bills-kyler-murray-hamstring",
-        "https://bringmethesports.com/report-kyler-murrays-hamstring-strain-may-keep-him-out-beyond-bills-game"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvGlMpvlFF3T_r_QKzY-XFiZxSs3sTA6RqbxdSF3qxrrQ-yv58dtVSK_iXqYk",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/nfl/breaking-news/article/carson-wentz-to-start-at-qb-for-vikings-on-monday-night-vs-bills-with-kyler-murray-nursing-hamstring-injury-182733631.html",
-          "title": "Carson Wentz to start at QB for Vikings on Monday night vs. Bills, with Kyler Murray nursing hamstring injury",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvGlMpvlFF3T_r_QKzY-XFiZxSs3sTA6RqbxdSF3qxrrQ-yv58dtVSK_iXqYk"
-        },
-        {
-          "url": "https://www.nfl.com/news/vikings-to-start-carson-wentz-vs-bills-kyler-murray-hamstring",
-          "title": "Vikings to start Carson Wentz vs. Bills on Monday with Kyler Murray battling hamstring injury",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOI54QC0nZL4aySkqbhOx9TBg1KhR0-vGSaBw0kVWjTavuEYSGxJYmjy1Su6U"
-        },
-        {
-          "url": "https://bringmethesports.com/report-kyler-murrays-hamstring-strain-may-keep-him-out-beyond-bills-game",
-          "title": "Report: Kyler Murray’s hamstring strain may keep him out beyond Bills game",
-          "publisher": "Bring Me the Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqs9WI2gdcEaWEe7P3ZhNKN5QQd1_k4EkkW_labCGWjo47A4-cuyGiiP9iDxs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwoQa6pkLCDK8ooEs1NM-Okb_jVoNRkQbY5NQJPSI0gpW0VowcMonk3ffxfWw"
         }
       ]
     },
@@ -116,19 +291,19 @@
       "approx_searches": "200+",
       "published_at": "2026-11-09T05:20:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/claressa-shields-makes-serious-allegation-022348427.html",
+        "https://www.hotnewhiphop.com/1016056-claressa-sheilds-gervonta-davis-beef-shakur",
         "https://www.instagram.com/p/DfVaxrWAbi5/",
-        "https://www.hotnewhiphop.com/1016056-claressa-sheilds-gervonta-davis-beef-shakur"
+        "https://sports.yahoo.com/articles/claressa-shields-makes-serious-allegation-022348427.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0xTNTbPWqXIg41XI5MGatg3SdKocxf-k8ypLSxq9cV_XUhJz0KAk5ljBynfg",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpG_yRhjJWZ73MKr9CG40XlD2M2TGs0K5Gw4GQquRm1USq68AQc4dYmvUYcQo",
+      "image_credit": "HotNewHipHop",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/claressa-shields-makes-serious-allegation-022348427.html",
-          "title": "Claressa Shields Makes Serious Allegation Against Gervonta Davis — 'I Saw It With My Own Two Eyes'",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.hotnewhiphop.com/1016056-claressa-sheilds-gervonta-davis-beef-shakur",
+          "title": "Claressa Shields Isn't Done With Gervonta Davis As Feud Gets Personal",
+          "publisher": "HotNewHipHop",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0xTNTbPWqXIg41XI5MGatg3SdKocxf-k8ypLSxq9cV_XUhJz0KAk5ljBynfg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpG_yRhjJWZ73MKr9CG40XlD2M2TGs0K5Gw4GQquRm1USq68AQc4dYmvUYcQo"
         },
         {
           "url": "https://www.instagram.com/p/DfVaxrWAbi5/",
@@ -138,87 +313,17 @@
           "image_url": null
         },
         {
-          "url": "https://www.hotnewhiphop.com/1016056-claressa-sheilds-gervonta-davis-beef-shakur",
-          "title": "Claressa Shields Isn't Done With Gervonta Davis As Feud Gets Personal",
-          "publisher": "HotNewHipHop",
+          "url": "https://sports.yahoo.com/articles/claressa-shields-makes-serious-allegation-022348427.html",
+          "title": "Claressa Shields Makes Serious Allegation Against Gervonta Davis — 'I Saw It With My Own Two Eyes'",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpG_yRhjJWZ73MKr9CG40XlD2M2TGs0K5Gw4GQquRm1USq68AQc4dYmvUYcQo"
-        }
-      ]
-    },
-    {
-      "query": "caroline dubois",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T05:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/boxing/story/_/id/50378020/caroline-dubois-alycia-baumgardner-disrespectful-boxing",
-        "https://www.bbc.com/sport/boxing/articles/c6y8l1318k8zo",
-        "https://bleacherreport.com/articles/25529217-alycia-baumgardner-talks-claressa-shields-rivalry-next-fight-mvp-and-more-br-interview"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8QMO1cMp2lBPxf7YkM4u44aB3JAA1xGr8WvJFbmwwVA7Gicz1csYGPyxbiBM",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/boxing/story/_/id/50378020/caroline-dubois-alycia-baumgardner-disrespectful-boxing",
-          "title": "Caroline Dubois calls out 'disrespectful' Alycia Baumgardner, eyes '27 clash",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8QMO1cMp2lBPxf7YkM4u44aB3JAA1xGr8WvJFbmwwVA7Gicz1csYGPyxbiBM"
-        },
-        {
-          "url": "https://www.bbc.com/sport/boxing/articles/c6y8l1318k8zo",
-          "title": "Turhan vs Baumgardner: Briton Caroline Dubois targeting Alycia Baumgardner & dreams of undisputed",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTA-9pT-NDdkVizIJfUnF3OKAuFYzjGbdRTGwlnPfHbQkl5tu3vOJWiYfGT5B4"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25529217-alycia-baumgardner-talks-claressa-shields-rivalry-next-fight-mvp-and-more-br-interview",
-          "title": "Alycia Baumgardner Talks Claressa Shields Rivalry, Next Fight with MVP and More in B/R Interview",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUIaiIW787cIFa_Iranslz4DrvN7ClKtSLVi6zrt3xCYK8fVoUojsZjBi3-zI"
-        }
-      ]
-    },
-    {
-      "query": "ut arlington vs hawaii",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T05:00:00Z",
-      "related_news_urls": [
-        "https://www.sportsgambler.com/betting-tips/basketball/ut-arlington-mavericks-vs-hawaii-rainbow-warriors-prediction-odds-2026-11-08/",
-        "https://www.covers.com/sport/basketball/ncaab/matchup/394911/picks",
-        "https://www.dimers.com/news/best-bets-11-08-2026-ac"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-hYvvU8Fdyaub-QnNAgEZZ9H540kcmu5JWauguvOqcRhcDKqJwPmT09FP62Q",
-      "image_credit": "Sportsgambler",
-      "news": [
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/ut-arlington-mavericks-vs-hawaii-rainbow-warriors-prediction-odds-2026-11-08/",
-          "title": "UT Arlington vs Hawaii Prediction, Picks & Odds | 08 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-hYvvU8Fdyaub-QnNAgEZZ9H540kcmu5JWauguvOqcRhcDKqJwPmT09FP62Q"
-        },
-        {
-          "url": "https://www.covers.com/sport/basketball/ncaab/matchup/394911/picks",
-          "title": "UT Arlington Mavericks vs Hawai'i Rainbow Warriors Prediction, Picks, Prop Bets For November 08, 2026 - NCAAB",
-          "publisher": "Covers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_Z5MEDG1FkeA9waZgZsnKqc0Z35NWJ3ksctR0cX-3nfEczKnL4gGK-4w_R5A"
-        },
-        {
-          "url": "https://www.dimers.com/news/best-bets-11-08-2026-ac",
-          "title": "Best bets today for all sports: Sunday's picks include Heat vs. Kings NBA play [11/8/2026]",
-          "publisher": "Dimers",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSU0_hsrIBAGGpXxBbmB7wZwsN8WkTC6_VCqbai-6n2UlqSRia87YGtEmvQFMA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0xTNTbPWqXIg41XI5MGatg3SdKocxf-k8ypLSxq9cV_XUhJz0KAk5ljBynfg"
         }
       ]
     },
     {
       "query": "mv odyssey cruise ship detained",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-09T05:00:00Z",
       "related_news_urls": [
         "https://www.cbsnews.com/news/odyssey-forever-cruise-arrested-at-singapore-port/",
@@ -248,111 +353,6 @@
           "publisher": "The New York Times",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwO_j1w909sXynu_QXh0e7GlKdI89A-mdYWVFc7ggoJarle3uc_gq3xM9fPwk"
-        }
-      ]
-    },
-    {
-      "query": "pelle larsson",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T05:00:00Z",
-      "related_news_urls": [
-        "https://www.sun-sentinel.com/2026/11/08/windermans-view-spoelstra-sends-wakeup-call-to-wiggins-in-win-with-rotation-remix/",
-        "https://www.si.com/nba/heat/onsi/the-miami-heat-make-a-starting-lineup-change-01m6yztdcqy2",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/mia-starts-mitchell-klay-larsson-giannis-bam"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc2l4qQ0MJOLheUQ_EW89ktHgPeQmvDQy3Ht16I2EcwfH7GI1zeEZ8Ij5fX5E",
-      "image_credit": "Sun Sentinel",
-      "news": [
-        {
-          "url": "https://www.sun-sentinel.com/2026/11/08/windermans-view-spoelstra-sends-wakeup-call-to-wiggins-in-win-with-rotation-remix/",
-          "title": "Winderman’s view: Heat’s Spoelstra sends wakeup call to Wiggins in win with rotation remix",
-          "publisher": "Sun Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc2l4qQ0MJOLheUQ_EW89ktHgPeQmvDQy3Ht16I2EcwfH7GI1zeEZ8Ij5fX5E"
-        },
-        {
-          "url": "https://www.si.com/nba/heat/onsi/the-miami-heat-make-a-starting-lineup-change-01m6yztdcqy2",
-          "title": "The Miami Heat Make a Starting Lineup Change",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBFFHsRBirTR7a_l3_qk-tMGukSqoXlRF2duNRSAML5qu36ohzLwuDwCLpxmk"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/mia-starts-mitchell-klay-larsson-giannis-bam",
-          "title": "MIA starts Mitchell, Klay, Larsson, Giannis, Bam",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRanQyGh496i04uLMwJStfsiE_DbAnPp7XqUcQnAU38laIb0iPduRUqvKFSwVE"
-        }
-      ]
-    },
-    {
-      "query": "nfc standings",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T04:50:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/nfc-west-standings-show-why-050033343.html",
-        "https://www.foxla.com/video/fmc-3q4sscolx47fjhtv",
-        "https://theramswire.usatoday.com/story/sports/nfl/rams/2026/11/03/rams-nfc-west-standings-49ers-seahawks/92584541007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmUJZ0aDmaxma2EAAfwgHwOpkVPBtlWHXuKK3p2D3kWfNuzPomczfylXM4seI",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/nfc-west-standings-show-why-050033343.html",
-          "title": "NFC West standings show why 49ers Week 9 win was so important",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmUJZ0aDmaxma2EAAfwgHwOpkVPBtlWHXuKK3p2D3kWfNuzPomczfylXM4seI"
-        },
-        {
-          "url": "https://www.foxla.com/video/fmc-3q4sscolx47fjhtv",
-          "title": "NFC West Huddle: Is the NFC North the toughest division now?",
-          "publisher": "FOX 11 Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX6JoR2XeRt5v9SYMKDU6TYhBYr2PkfmwvvOEA13DuWaXrZk9YxWBsVHETiKo"
-        },
-        {
-          "url": "https://theramswire.usatoday.com/story/sports/nfl/rams/2026/11/03/rams-nfc-west-standings-49ers-seahawks/92584541007/",
-          "title": "NFC West standings: Rams gain ground on 49ers, pull even with Seahawks",
-          "publisher": "Rams Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRALILQ5Su3vlzH0PlBxTzMa9i-HIFtXxUFGtH9zyZ0vJX81e_3rjANG5EPl7c"
-        }
-      ]
-    },
-    {
-      "query": "cole irvin",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T04:50:00Z",
-      "related_news_urls": [
-        "https://heavy.com/sports/mlb/los-angeles-dodgers/cole-irvin-release-veteran-pitcher-sudden-move/",
-        "https://sports.yahoo.com/articles/los-angeles-dodgers-release-7-191107025.html",
-        "https://heavy.com/sports/mlb/los-angeles-dodgers/yency-almonte-immediately-release-veteran-pitcher/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyKHtfzWNUKfQSWM7YE_lyqTBzuGWdS1OwtVtKBiQdbiD0ENhmNCHyLpB5NJ0",
-      "image_credit": "Heavy.com",
-      "news": [
-        {
-          "url": "https://heavy.com/sports/mlb/los-angeles-dodgers/cole-irvin-release-veteran-pitcher-sudden-move/",
-          "title": "Los Angeles Dodgers Release 7-Year MLB Veteran Pitcher in Sudden Move",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyKHtfzWNUKfQSWM7YE_lyqTBzuGWdS1OwtVtKBiQdbiD0ENhmNCHyLpB5NJ0"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/los-angeles-dodgers-release-7-191107025.html",
-          "title": "Los Angeles Dodgers Release 7-Year MLB Veteran Pitcher in Sudden Move",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXlndAhOEkrvmNUdMmcmCpWyL6mb52S_7P5ioKeEGyeL1dGvlBSyY48DZxI3k"
-        },
-        {
-          "url": "https://heavy.com/sports/mlb/los-angeles-dodgers/yency-almonte-immediately-release-veteran-pitcher/",
-          "title": "Los Angeles Dodgers Immediately Release 7-Year MLB Veteran Pitcher",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHznYzgRrNyl3rYBzZo1_yn6wyDLnz5NRhcsMOK68D0Ns4vhdsFya62fxcsIQ"
         }
       ]
     }
