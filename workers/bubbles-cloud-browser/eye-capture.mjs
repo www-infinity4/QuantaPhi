@@ -45,7 +45,7 @@ export const VISUAL_EXPRESSION=`(() => {
   .filter(visible).slice(0,180).map(el=>{const b=el.getBoundingClientRect();return {
    tag:el.tagName.toLowerCase(),label:limit(el.getAttribute('aria-label')||el.textContent,70),
    x:Math.round(b.left),y:Math.round(b.top),w:Math.round(b.width),h:Math.round(b.height)};});
- const offscreenRight=items.filter(x=>x.x>view.width||x.x+x.w>view.width+4).slice(0,25);
+ const offscreenRight=view.docWidth>view.width+4?items.filter(x=>x.x>view.width||x.x+x.w>view.width+4).slice(0,25):[];
  const brokenImages=[...document.images].filter(el=>visible(el)&&el.complete&&el.naturalWidth===0)
   .slice(0,20).map(el=>({alt:limit(el.alt,60),tag:'img'}));
  const overlaps=[];
@@ -129,7 +129,11 @@ export async function capturePublicBubbles(env,mode,{pause=ms=>new Promise(r=>se
      captureBeyondViewport:true,clip:{x:0,y:0,width:viewport.width,height:fullHeight,scale:1}});
     if(!fold.data||!full.data||fold.data.length>6000000||full.data.length>6000000)
      throw Error('eye_screenshot_invalid_or_too_large');
-    return {ok:true,mode,red:state.red,yellow:state.yellow,orange:state.orange,
+    let accessibility=[];
+    try{const ax=await send('Accessibility.getFullAXTree');accessibility=(ax.nodes||[]).slice(0,260)
+      .map(n=>({role:String(n.role?.value||'').slice(0,40),name:String(n.name?.value||'').slice(0,100),ignored:n.ignored===true}));}
+    catch{} // Older CDP backends may not support this method; bounded DOM boxes remain available.
+    return {ok:true,mode,red:{...state.red,accessibility},yellow:state.yellow,orange:state.orange,
      errors:errors.slice(0,30),fullHeightClipped:state.red.docHeight>fullHeight,
      purple:{accepted:true},screenshots:{fold:fold.data,full:full.data}};
    }finally{socket.removeEventListener('message',onEvent)}
