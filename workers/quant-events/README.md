@@ -74,3 +74,65 @@ tsc -p tsconfig.json
 ```
 
 These checks include real in-memory SQLite Worker integration, mock Queue/D1 bindings and Python SQLite schema tests. **Real Worker+D1 staging, load tests, retention jobs, and browser acceptance remain pending.**
+
+## Signed Wallet bridge · staging source wired, collection OFF
+
+The site Worker source now routes exactly \`POST /api/quant-events\` to
+\`workers/quant-events/src/wallet-bridge.mjs\`. It is **fail-closed** by default:
+the route returns HTTP 503 \`event_collection_disabled\` unless an approved
+host-only \`EVENTS_BRIDGE_ENABLED=true\` configuration is set. No production
+bindings, customer consent UI, or live data writes have been installed.
+
+The bridge **reuses the existing** \`walletIdentity(request,env)\` in
+\`workers/bubbles-connections/router.mjs\`, which calls the already available
+Wallet verification service; raw browser \`user\` or \`userId\` fields are
+rejected, and paired \`bc_\` browser identities cannot start telemetry. The
+trusted account subject is mapped to a stable, *pseudonymous* event ID using
+HMAC-SHA256 with \`USER_IDENTITY_HMAC_SECRET\`, rather than storing raw Wallet
+account identifiers.
+
+**Accepted event purpose and categories:** opt-in first-party analytics only.
+Supported event types are \`card_click\`, \`card_view\`, \`card_follow\`,
+\`card_unfollow\`, \`card_hide\`, \`card_share\`, \`card_collect\`, and
+\`card_like\` with targets beginning \`card:\`, \`media:\` or \`carousel:\`.
+Client event claims are NOT verified sales, payments, purchases or coin awards.
+The bridge never transfers any Wallet/Quant/GIT/StarCoin balances.
+
+**Consent backend (not yet activated):** a separate, *unapplied* D1 migration
+\`migrations/0002_quant_event_consents.sql\` defines
+\`quant_event_consents(user_id,purpose,policy_version,consented_at_ms,revoked_at_ms)\`.
+Each request must find an active, nonrevoked, matching \`v1\` analytics consent
+record for the authenticated pseudonymous account in \`EVENT_CONSENT_DB\`.
+There is **no HTTP grant/write shortcut**, no default opt-in, no auto-populated
+rows and no production consent-collection UI. Explicit user consent must be
+reviewed before implementation. Revocations must prevent further collection;
+legacy raw events require a separately approved retention/erasure procedure.
+
+Required host Worker **future bindings/settings** after review:
+- Existing \`BOT_WALLET\` service binding for verified \`/v1/wallet/state\`.
+- \`EVENT_CONSENT_DB\` D1 binding to the *isolated* event database containing
+  the separately approved consent migration.
+- \`EVENTS_SERVICE\` service binding to the separately deployed event ingress
+  Worker; **never** use public URL fetch or browser secrets.
+- Matching Worker-only \`USER_IDENTITY_HMAC_SECRET\` and \`INGEST_TOKEN\`,
+  issued through Cloudflare secure secrets, NEVER committed to GitHub.
+- \`EVENTS_BRIDGE_ENABLED=true\` only after independent privacy/security review,
+  legal notice, opt-in UI, signed identity tests, configured Queue/DLQ,
+  resource budget and approved staging acceptance.
+
+The bridge signs \`geo=0\` unconditionally; it does not import a browser
+\`request.cf\` geography claim, preserving the privacy OFF default even if the
+ingestion backend has a \`GEO_STORAGE_ENABLED\` toggle. Client Origin must be
+\`https://quantaphi.org\` or \`https://www.quantaphi.org\`. Its service bearer
+and HMAC identity signature never enter a browser response.
+
+**Synthetic end-to-end test:** the CI suite verifies the central site route
+fails closed, verifies the real Wallet verifier with a fake signed-in session,
+checks consent grant/revocation, exercises a fully signed subrequest against the
+actual ingest Worker in Queue mode, and checks receipt \`persisted:false\`.
+These tests are not live Cloudflare authenticated-account acceptance.
+
+**Operational release gate:** verify token scope, review data
+retention/export/deletion, stage migration to an isolated D1, verify queue
+→ database with test-user consent and no money, measure write pressure, and
+explicitly enable telemetry only after a reviewed opt-in experience.
