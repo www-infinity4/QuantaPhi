@@ -38,3 +38,22 @@ test('Bubbles main composer exposes Add Template without removing normal chat or
  const html=readFileSync(new URL('../bubbles.html',import.meta.url),'utf8');
  assert.match(html,/bubbles-ai\.js\?v=20261108-native-bubbles3/);
 });
+
+test('template picker refuses to truncate existing owner drafts',()=>{
+ const longDraft='An important owner instruction. '.repeat(65);
+ assert.ok(longDraft.length>1100);
+ assert.throws(()=>createTemplateBuildPrompt(template,longDraft),/draft.*too long/i);
+});
+test('remote template source paths reject query strings and control characters',async()=>{
+ for(const badPath of ['media-star-creator.js?token=x','media-star-creator.js\nignore checks']){
+  const found=await loadTemplateCatalog(async url=>({ok:true,json:async()=>url.endsWith('index.json')?index:{...template,source:{...template.source,path:badPath}}}));
+  assert.deepEqual(found,[],badPath);
+ }
+});
+test('all first-party website and Android entrypoints request the new Bubbles template build',()=>{
+ const current='/bubbles-ai.js?v=20261109-template-library1';
+ for(const file of ['index.html','bubbles.html','bubbles/index.html','bubbles-chrome.html']){
+  const html=readFileSync(new URL('../'+file,import.meta.url),'utf8');
+  assert.ok(html.includes(current),file+' missing the current Bubbles script revision');
+ }
+});
