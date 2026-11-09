@@ -15,6 +15,12 @@ export function extractAssignedColorTask(instructions){
 export function routeColorHandoffs(task){
  const s=String(task||'').trim();
  if(!s)return [];
+ // A real owner-scoped source repair must not trigger a provider/data-import
+ // research loop merely because the filename contains "system" or the edit
+ // concerns an import statement. The normal signed Green/Pink writer follows.
+ const fileSpecificRepair=/^(?:please\\s+)?(?:fix|repair|correct|patch|update|restore)\\b/i.test(s)&&
+  /\\b[A-Za-z0-9_./-]+\\.(?:js|mjs|cjs|jsx|ts|tsx|py|css|html|json|yaml|yml|md|sh)\\b/i.test(s);
+ if(fileSpecificRepair)return [];
  const importWork=/\b(?:import|ingest|sync|migrat(?:e|ion)|data\s+feed|dataset|source\s+records)\b/i.test(s);
  const broad=/\b(?:research|design|architect|compare|decide|strategy|universal|system|across\s+all|investigate|discover|find\s+sources)\b/i.test(s);
  const scopedFix=/^(?:please\s+)?(?:fix|repair|correct|update|patch|restore)\b/i.test(s);
@@ -46,9 +52,11 @@ export async function runColorHandoffs(ai,{task,evidence={}}={}){
  for(const role of roles){
   const profile=colorCoreProfile(role);
   const input={task,evidence,previousRoleFindings:handoffs.map(h=>({role:h.role,finding:h.finding,nextAction:h.nextAction}))};
+  const serialized=JSON.stringify(input);
+  if(serialized.length>16000)throw Error('color_handoff_prompt_too_large');
   const response=await ai.run(COLOR_MODEL,{
    messages:[{role:'system',content:colorCoreSystemPrompt(profile)},
-    {role:'user',content:JSON.stringify(input).slice(0,16000)}],
+    {role:'user',content:serialized}],
    max_tokens:1300,temperature:0.1
   });
   const raw=typeof response==='string'?response:response?.response||response?.choices?.[0]?.message?.content||'';
