@@ -6,9 +6,10 @@ const ui=readFileSync('bubbles-ai.js','utf8');
 const native=readFileSync('android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/FloatingOracleWindow.java','utf8');
 const THREAD_KEY='quantaphi:bubbles:threads:v2';
 const SHARED='bubbles_shared_main_v1';
-function startup({local=new Map(),session=new Map(),embedded=false}={}){
+function startup({local=new Map(),session=new Map(),embedded=false,navigation='navigate'}={}){
  const ctx={
   bubbleId:'',embedded,HISTORY:'old-history',keepChat:true,
+  performance:{getEntriesByType:()=>[{type:navigation}]},
   crypto:{randomUUID:()=> '00000000-0000-4000-8000-'+Math.floor(Math.random()*1e12).toString().padStart(12,'0')},
   data:(key,fallback)=>local.has(key)?JSON.parse(local.get(key)):fallback,
   save:(key,value)=>{local.set(key,JSON.stringify(value));return true},
@@ -22,7 +23,8 @@ function startup({local=new Map(),session=new Map(),embedded=false}={}){
  const start=ui.indexOf("const THREAD_INDEX=");
  const end=ui.indexOf("let greeted=messages.length>0",start);
  assert.ok(start>0&&end>start);
- const result=vm.runInNewContext(ui.slice(start,end)+
+ const helpers=ui.slice(ui.indexOf('function workRefs()'),ui.indexOf('async function pollBrainProgress('));
+ const result=vm.runInNewContext(ui.slice(start,end)+'\n'+helpers+
   '\n({activeThread,threadIndex,messages,SHARED_MAIN_THREAD,TAB_THREAD,UPDATE_RELOAD_THREAD})',ctx);
  return {...result,local,session};
 }
@@ -52,6 +54,13 @@ test('trusted site-update marker permits one exact-session reload, not the next 
  assert.equal(refreshed.activeThread,first.activeThread);
  assert.equal(session.has(first.UPDATE_RELOAD_THREAD),false);
  assert.notEqual(startup({local,session}).activeThread,first.activeThread);
+});
+test('a reload reopens the conversation with a saved repair ticket, while a normal visit opens a new chat',()=>{
+ const first=startup();
+ const {activeThread,local,session}=first;
+ session.set('bubbles-last-active-work-v1',JSON.stringify([{thread:activeThread,ticketId:'IW-20261107-ABCD1234',at:Date.now()}]));
+ assert.equal(startup({local,session,navigation:'reload'}).activeThread,activeThread);
+ assert.notEqual(startup({local,session}).activeThread,activeThread);
 });
 test('old shared session without index entry is kept in History, never opened by default',()=>{
  const local=new Map(),session=new Map();

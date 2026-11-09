@@ -1,5 +1,7 @@
 import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261102-cardimages1';
+import {findDiscovery} from './quanta-feed-catalog.mjs';
 import {mountOfficialViewer} from './quanta-official-viewer.mjs';
+import {MOTORCYCLE_SOURCES} from './motorcycle-quick-cards.mjs';
 import {lookupQuickCard} from './quick-card-search-core.mjs?v=20261028-search1';
 /* Infinity source quick cards — official links and one consented Bubbles specialist.
  * Public preview, not publisher endorsement, trending API, logged-in session,
@@ -19,7 +21,7 @@ export const QUICK_CARD_SOURCES=Object.freeze([
  source('claude','Anthropic Claude','AI · Review','Review the Gemini plan with Claude','https://claude.ai/','https://claude.ai/','Claude independently reviews proposed changes, tests and possible hazards; no generated text is execution authorization.','The card can ask Bubbles for an authenticated Anthropic API response, if configured; otherwise use the official Claude interface.'),
  source('copilot','GitHub Copilot','AI · Coding','Review work with GitHub Copilot','https://github.com/copilot','https://github.com/copilot/agents','GitHub Copilot cloud agent can work on appropriately enabled repositories through approved GitHub issues and PRs.','Open the official GitHub Copilot interface. This card does not inherit private repository permissions or claim a direct Copilot chat API.'), 
  source('x','X / Grok','Social','Trends, posts and Grok','https://x.com/','https://x.com/explore','Explore verified public X posts, native embeds and the separate Grok product only when allowed.','Open the X Explore interface. Post streams and Grok need supported provider authorization.',{secondUrl:'https://x.com/i/grok',secondLabel:'Open Grok'}),
- source('reddit','Reddit','Community','Popular communities and discussions','https://www.reddit.com/','https://www.reddit.com/r/popular/','Find relevant communities and explain posts only from explicitly permitted Reddit sources.','Open Reddit popular. Commercial reuse and embedding require provider permission; no unlicensed card feed.'), 
+ source('reddit','Reddit','Community','Popular communities and discussions','https://www.reddit.com/','https://www.reddit.com/r/popular/','Find relevant communities and explain posts only from explicitly permitted Reddit sources.','Open Reddit popular. Commercial reuse and embedding require provider permission; no unlicensed card feed.',{extraControls:[{label:'Open Reddit',href:'https://www.reddit.com/',icon:'link'}]}), 
  source('tiktok','TikTok','Video','Discover popular short videos','https://www.tiktok.com/','https://www.tiktok.com/explore','Curate original creators with verified post URLs and approved TikTok Embed Player.','Open TikTok Explore. A real player reel needs actual authorized post IDs and player use; no fabricated trends.'), 
  source('whatsapp','WhatsApp','Messaging','Open your WhatsApp conversations','https://www.whatsapp.com/','https://web.whatsapp.com/','Help draft a message for the visitor. Never read contacts, send a message or reveal a conversation without per-action consent and an authorized integration.','Open the official WhatsApp Web client. Private messages cannot be embedded or accessed by QuantaPhi.',{secondUrl:'https://www.whatsapp.com/business/',secondLabel:'Business messaging information'}),
  source('bing','Bing','Search','Search the web','https://www.bing.com/','https://www.bing.com/search','Assist with query formulation, source checking and comparison, not fabricated Bing results.','Submit a real Bing query with a dedicated search bar.',{searchParameter:'q'}),
@@ -29,19 +31,30 @@ export const QUICK_CARD_SOURCES=Object.freeze([
  source('fox-one-live-news','FOX One · Live News','News · Video','FOX One video spot · Watch FOX News live','https://www.fox.com/stream/fox-news','https://x.com/foxone/status/2070282166190408122','Present the original FOX One video spot and help viewers find FOX News streaming through FOX One. Do not imply affiliation, free live access, video rights, or guaranteed autoplay.','Official FOX One post embed. Full FOX News live viewing requires an eligible FOX One subscription or TV provider sign-in. The video embed depends on X and browser support.',{secondUrl:'https://www.fox.com/',secondLabel:'Explore all FOX One channels'}),
  source('fox-news','Fox News','News','Fox News headlines and viewer submissions','https://www.foxnews.com/','https://www.foxnews.com/','Help users research Fox reports and draft a news tip with source evidence. Submission requires a real Fox-approved destination and the visitor’s explicit approval.','View Fox News. Video submissions are draft-only until an authenticated, publisher-approved handoff is built.',{secondUrl:'https://www.foxnews.com/contact',secondLabel:'Contact Fox News'}),
  source('tv-guide','TV Guide','TV','Find tonight’s shows and TV recommendations','https://www.tvguide.com/','https://www.tvguide.com/','Find programs, schedules and credited trailers using a licensed/verified TV listing source and the user’s choice of region.','Open TV Guide to choose shows. The live local schedule needs a licensed guide feed and explicit region selection.'), 
- source('starmaker','StarMaker','Karaoke','Find a song and sing karaoke','https://www.starmakerstudios.com/en/songs','https://www.starmakerstudios.com/en/songs','Help with song selection, harmonies and vocal practice; recording needs explicit microphone permission and a real licensed backing track.','Open official StarMaker karaoke. QuantaPhi must not copy paid backing tracks, lyrics or recordings without rights.',{secondUrl:'https://play.google.com/store/apps/details?id=com.starmakerinteractive.starmaker',secondLabel:'Open StarMaker on Android'})
+ source('starmaker','StarMaker','Karaoke','Find a song and sing karaoke','https://www.starmakerstudios.com/en/songs','https://www.starmakerstudios.com/en/songs','Help with song selection, harmonies and vocal practice; recording needs explicit microphone permission and a real licensed backing track.','Open official StarMaker karaoke. QuantaPhi must not copy paid backing tracks, lyrics or recordings without rights.',{secondUrl:'https://play.google.com/store/apps/details?id=com.starmakerinteractive.starmaker',secondLabel:'Open StarMaker on Android'}),
+ ...MOTORCYCLE_SOURCES
+]);
+// Carry one source-backed technology research card into the ACTIVE Oracle
+// source bank; the archived discovery feed is NOT a visible homepage carousel.
+// The source adapter reuses the same verified original catalog record and tools.
+const PCLA_DISCOVERY=findDiscovery('pcla-picocela');
+export const ACTIVE_SOURCE_CARDS=Object.freeze([
+ ...QUICK_CARD_SOURCES,
+ ...(PCLA_DISCOVERY?[source(PCLA_DISCOVERY.id,PCLA_DISCOVERY.name,PCLA_DISCOVERY.category,
+   PCLA_DISCOVERY.feature,PCLA_DISCOVERY.official,PCLA_DISCOVERY.url,
+   PCLA_DISCOVERY.study,PCLA_DISCOVERY.study,PCLA_DISCOVERY)]:[])
 ]);
 // Only expose source cards that contain a usable real action (search, player,
-// message draft, local recording, or approved provider embed). These are
+// message draft, model selection, local recording, or approved provider embed). These are
 // independent tools, not claims of publisher data access or affiliation.
 export const PUBLIC_SOURCE_IDS=Object.freeze([
  'google','bing','youtube','reddit','x','tiktok','starmaker','fox-one','fox-one-live-news',
  'cnn','fox-news','yahoo-news','tv-guide','facebook','instagram','whatsapp',
- 'chatgpt','gemini','claude','copilot'
+ 'chatgpt','gemini','claude','copilot','harley-davidson','indian-motorcycle','pcla-picocela'
 ]);
 export const isPublicSourceCard=card=>Boolean(card&&PUBLIC_SOURCE_IDS.includes(card.id));
 export const findSourceCard=id=>{
- const original=QUICK_CARD_SOURCES.find(p=>p.id===id);if(original)return original;
+ const original=ACTIVE_SOURCE_CARDS.find(p=>p.id===id);if(original)return original;
  const card=lookupQuickCard(id);if(!card)return null;
  return {...card,featureUrl:card.official,focus:'Help visitors use the original '+card.name+' website. Do not invent account access, offers or provider actions.',details:card.description};
 };
@@ -53,9 +66,115 @@ export const validSourceCard=card=>{
 const el=(tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e};
 function link(text,href,klass=''){const a=el('a',klass,text);a.href=href;a.target='_blank';a.rel='noopener noreferrer';return a}
 export const aiCardMode=id=>id==='gemini'?'gemini_first':id==='claude'?'gemini_claude_review':null;
+
+const GEMINI_CARD_API='https://infinity-rogers.marvaseater.workers.dev/v1/ai/card/gemini';
+function mountGeminiTools(root){
+ root.classList.add('iqc-gemini');
+ // The existing Quick Card article owns every control. No new viewer, feed
+ // ordering, modal, or Bubbles chat impersonation is introduced.
+ const status=el('p','iqc-ai-receipt','Checking Google account connection…');
+ status.setAttribute('role','status');
+ const oauth=el('button','iqc-gemini-connect','Sign in with Google');
+ oauth.type='button';oauth.disabled=true;
+ const select=el('select','iqc-gemini-account');
+ select.setAttribute('aria-label','Google account for Gemini');
+ select.hidden=true;
+ const transcript=el('div','iqc-gemini-transcript');
+ transcript.setAttribute('role','log');transcript.setAttribute('aria-label','Gemini responses in this quick card');
+ const form=el('form','iqc-ai-form'),input=el('textarea','iqc-ai-input');
+ input.rows=3;input.maxLength=1800;
+ input.placeholder='Message Gemini here…';
+ input.setAttribute('aria-label','Message Gemini');
+ const send=el('button','iqc-ai-send','Send to Gemini');send.type='submit';send.disabled=true;
+ form.append(input,send);root.append(oauth,select,form,status,transcript);
+ let module=null,client=null,history=[],inFlight=false;
+ function showLine(sender,value){
+  const line=el('p','iqc-gemini-line');
+  const who=el('strong','',sender+': ');
+  const message=el('span','',String(value).slice(0,6000));
+  line.append(who,message);transcript.append(line);
+  // Keep an accessible bounded conversation in this one card.
+  while(transcript.childNodes.length>16)transcript.firstChild.remove();
+ }
+ async function loadGoogleAccounts(){
+  try{
+   module=await import('/bubbles-connections.mjs?v=20261106-google-multi-cloudflare-full8');
+   client=new module.AccountConnections({token:()=>module.resolveConnectorWalletToken(window)});
+   const result=await client.call('/accounts');
+   const connected=(result.accounts||[]).filter(a=>a.provider==='google'&&a.status==='connected'&&
+     Number.isFinite(a.expiresAt)&&a.expiresAt>Date.now()+30000);
+   select.replaceChildren();
+   for(const account of connected){
+    const option=el('option','',account.label||'Google account');
+    option.value=account.id;select.append(option);
+   }
+   select.hidden=connected.length===0;
+   oauth.textContent=connected.length?'Connect another Google account':'Sign in with Google';
+   oauth.disabled=false;send.disabled=connected.length===0;
+   status.textContent=connected.length
+     ?'Google verified for '+connected.length+' account(s). Messages go to the Gemini API only when you tap Send.'
+     :'No Google account connected to this Bubbles wallet. Sign in here to use the Gemini card.';
+  }catch(error){
+   oauth.disabled=false;send.disabled=true;
+   status.textContent=error?.message==='verified_wallet_required'
+     ?'A verified Bubbles wallet session is required. Sign in to Bubbles first, then connect Google.'
+     :'Google connection could not be verified. No Gemini request was sent.';
+  }
+ }
+ oauth.addEventListener('click',async()=>{
+  if(inFlight)return;
+  oauth.disabled=true;status.textContent='Opening Google’s official authorization page…';
+  try{
+   if(!module||!client)await loadGoogleAccounts();
+   // Only a navigation target is saved, never account tokens or OAuth codes.
+   sessionStorage.setItem('bubbles:gemini-card-return:v1','1');
+   await client.connect('google',['identity.read'],async(error)=>{
+    if(error){sessionStorage.removeItem('bubbles:gemini-card-return:v1');status.textContent=error.message;await loadGoogleAccounts();}
+    else await loadGoogleAccounts();
+   });
+  }catch(error){
+   try{sessionStorage.removeItem('bubbles:gemini-card-return:v1')}catch{}
+   status.textContent='Google sign-in could not start: '+String(error.message||'connection unavailable').slice(0,140);
+  }finally{oauth.disabled=false;}
+ });
+ form.addEventListener('submit',async event=>{
+  event.preventDefault();
+  if(inFlight||!client||!select.value)return;
+  const question=input.value.trim();
+  if(question.length<3)return;
+  inFlight=true;send.disabled=true;status.textContent='Contacting the real Gemini model…';
+  const chosen=select.value;
+  const oldHistory=history.slice(-8);
+  try{
+   const token=await module.resolveConnectorWalletToken(window);
+   const res=await fetch(GEMINI_CARD_API,{
+    method:'POST',cache:'no-store',headers:{Authorization:'Bearer '+token,'Content-Type':'application/json'},
+    body:JSON.stringify({accountId:chosen,question,history:oldHistory})
+   });
+   const data=await res.json().catch(()=>({ok:false,error:'invalid_gemini_response'}));
+   if(!res.ok||data.ok!==true||data.provider!=='Gemini'||typeof data.answer!=='string')
+    throw Error(String(data.error||'Gemini did not return a verified response.'));
+   showLine('You',question);showLine('Gemini',data.answer);
+   history=[...oldHistory,{role:'user',text:question},{role:'model',text:data.answer.slice(0,1800)}].slice(-8);
+   input.value='';
+   status.textContent='Gemini response received · '+String(data.model||'model')+
+     (Number.isFinite(data.remaining)?' · '+data.remaining+' messages left today':'');
+  }catch(error){
+   const code=String(error.message||'').slice(0,100);
+   status.textContent=code==='gemini_not_configured'
+     ?'Gemini API key is not configured on the model Worker. No response was generated.'
+     :code==='google_connection_required'?'Google authorization expired. Reconnect this account.'
+     :code==='gemini_daily_limit'?'This Google account reached today’s Gemini card limit.'
+     :'Gemini request failed: '+code+'. No model success is claimed.';
+  }finally{inFlight=false;send.disabled=!select.value;}
+ });
+ select.addEventListener('change',()=>{history=[];transcript.replaceChildren();status.textContent='Google account selected. Your previous card conversation was cleared from this view.'});
+ void loadGoogleAccounts();
+}
 function askAiTools(root,card){
  if(!['gemini','claude','copilot'].includes(card.id))return;
  const area=el('div','iqc-ask-ai');
+ if(card.id==='gemini'){mountGeminiTools(area);root.append(area);return;}
  if(card.id==='copilot'){
   area.append(el('p','iqc-muted','Copilot runs through GitHub’s own agent interface, with repository permission and a reviewable PR. No silent issue assignment.'));
   root.append(area);return;
@@ -106,7 +225,7 @@ function mountShelf(){
  const host=document.getElementById('siteQuickCards');if(!host)return;
  host.replaceChildren();
  host.append(el('p','iqc-kind','INFINITY 2026® · INTERACTIVE SOURCE TOOLS'),el('h2','','Discover, watch, search, research and create'),el('p','iqc-muted','Use the feature on each card. Provider-owned accounts and copyrighted catalogs remain with their original services.'));
- const cards=el('div','iqc-grid');for(const p of QUICK_CARD_SOURCES.filter(isPublicSourceCard))cards.append(starterCard(p));host.append(cards);
+ const cards=el('div','iqc-grid');for(const p of ACTIVE_SOURCE_CARDS.filter(isPublicSourceCard))cards.append(starterCard(p));host.append(cards);
  // The Oracle viewer discovers each original source article as an individual
  // swipeable card, never a single 15-item link shelf.
  window.dispatchEvent(new Event('quantaphi:source-cards-ready'));

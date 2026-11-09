@@ -68,10 +68,37 @@ export function filterActiveTickets(candidates,{
 }={}){
  const allowed=[],deferred=[];
  const limit=Number.isInteger(maxLookAhead)?Math.max(1,Math.min(500,maxLookAhead)):500;
- for(const candidate of (Array.isArray(candidates)?candidates:[]).slice(0,limit)){
-  const admission=ticketAdmission(candidate,{now,maximumAgeDays,requested});
+ const examined=(Array.isArray(candidates)?candidates:[]).slice(0,limit);
+ // A signed owner request to finish a specific old job must also be able to
+ // execute the SAME ticket's SAME repository prerequisite stages. Otherwise
+ // the selected parent remains stuck behind its old, aged-out dependencies.
+ // This is age-selection only: each predecessor still goes through all
+ // owner/security, repository, retry, lease and source-review gates.
+ const root=requested?.ticketId&&requested?.jobId
+  ?examined.find(c=>c.ticket?.id===requested.ticketId&&c.job?.id===requested.jobId):null;
+ const selectedDependencies=new Set();
+ if(root&&ticketAdmission(root,{now,maximumAgeDays,requested}).eligible){
+  const sameScope=new Map(examined.filter(c=>c.ticket?.id===root.ticket.id&&
+   c.job?.repository===root.job.repository&&typeof c.job?.id==='string').map(c=>[c.job.id,c]));
+  const pending=Array.isArray(root.job.dependencies)?[...root.job.dependencies]:[];
+  const seen=new Set([root.job.id]);
+  while(pending.length&&seen.size<16){
+   const id=pending.shift();
+   if(typeof id!=='string'||seen.has(id))continue;
+   const dependency=sameScope.get(id);
+   if(!dependency)continue; // Cross-repository or missing dependencies cannot be auto-selected.
+   seen.add(id);
+   selectedDependencies.add(id);
+   if(Array.isArray(dependency.job.dependencies))pending.push(...dependency.job.dependencies);
+  }
+ }
+ for(const candidate of examined){
+  const selectedDependency=candidate?.ticket?.id===requested?.ticketId&&
+   selectedDependencies.has(candidate?.job?.id)&&candidate?.job?.repository===root?.job?.repository;
+  const admission=ticketAdmission(candidate,{now,maximumAgeDays,
+   requested:selectedDependency?{ticketId:requested.ticketId,jobId:candidate.job.id}:requested});
   if(admission.eligible)allowed.push(candidate);
   else deferred.push({ticketId:candidate?.ticket?.id||'',jobId:candidate?.job?.id||'',reason:admission.reason});
  }
- return {allowed,deferred,examined:Math.min(Array.isArray(candidates)?candidates.length:0,limit)};
+ return {allowed,deferred,examined:examined.length};
 }

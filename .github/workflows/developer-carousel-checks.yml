@@ -1,0 +1,91 @@
+name: Developer carousel source checks
+on:
+  pull_request:
+    paths:
+      - 'developer-carousel-core.mjs'
+      - 'developer-discovery-core.mjs'
+      - 'developer-discovery.mjs'
+      - 'developer-indexed-picker.mjs'
+      - 'developer-indexed-search.mjs'
+      - 'tests/developer-indexed-search.test.mjs'
+      - 'test/developer-indexed-search.browser.spec.mjs'
+      - 'developer-discovery.css'
+      - 'tests/developer-discovery.test.mjs'
+      - 'tests/developer-catalog-import.test.mjs'
+      - 'tests/developer-catalog-workflow.test.mjs'
+      - 'scripts/build-developer-source-catalog.mjs'
+      - '.github/workflows/developer-catalog-import.yml'
+      - 'data/developer-source-catalog.json'
+      - 'tests/developer-catalog-snapshot.test.mjs'
+      - 'test/developer-discovery.browser.spec.mjs'
+      - 'developer-carousel.mjs'
+      - 'developer-carousel.css'
+      - 'oracle-card-deck.js'
+      - 'index.html'
+      - 'tests/developer-carousel.test.mjs'
+      - 'test/developer-carousel.browser.spec.mjs'
+      - 'test/infinity-affiliates.browser.spec.mjs'
+      - '.github/workflows/developer-carousel-checks.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'developer-carousel-core.mjs'
+      - 'developer-discovery-core.mjs'
+      - 'developer-discovery.mjs'
+      - 'developer-indexed-picker.mjs'
+      - 'developer-indexed-search.mjs'
+      - 'tests/developer-indexed-search.test.mjs'
+      - 'test/developer-indexed-search.browser.spec.mjs'
+      - 'developer-discovery.css'
+      - 'tests/developer-discovery.test.mjs'
+      - 'tests/developer-catalog-import.test.mjs'
+      - 'tests/developer-catalog-workflow.test.mjs'
+      - 'scripts/build-developer-source-catalog.mjs'
+      - '.github/workflows/developer-catalog-import.yml'
+      - 'data/developer-source-catalog.json'
+      - 'tests/developer-catalog-snapshot.test.mjs'
+      - 'test/developer-discovery.browser.spec.mjs'
+      - 'developer-carousel.mjs'
+      - 'developer-carousel.css'
+      - 'oracle-card-deck.js'
+      - 'index.html'
+      - 'tests/developer-carousel.test.mjs'
+      - 'test/developer-carousel.browser.spec.mjs'
+      - 'test/infinity-affiliates.browser.spec.mjs'
+      - '.github/workflows/developer-carousel-checks.yml'
+permissions:
+  contents: read
+jobs:
+  developer-carousel:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate creator modules and original carousel wiring
+        run: |
+          node --check developer-carousel-core.mjs
+          node --check developer-carousel.mjs
+          node --check developer-discovery-core.mjs
+          node --check developer-discovery.mjs
+          node --check developer-indexed-picker.mjs
+          node --check developer-indexed-search.mjs
+          node --check scripts/build-developer-source-catalog.mjs
+          node --check oracle-card-deck.js
+          node --test tests/developer-carousel.test.mjs tests/developer-discovery.test.mjs tests/developer-catalog-import.test.mjs tests/developer-catalog-workflow.test.mjs tests/developer-catalog-snapshot.test.mjs tests/developer-indexed-search.test.mjs
+  developer-browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser test dependencies
+        run: |
+          npm install --no-save @playwright/test@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Exercise actual builder cards on Android widths in Chromium
+        run: |
+          python3 -m http.server 8799 --bind 127.0.0.1 >/tmp/developer-carousel-http.log 2>&1 &
+          npx playwright test test/developer-carousel.browser.spec.mjs test/developer-discovery.browser.spec.mjs test/developer-indexed-search.browser.spec.mjs test/infinity-affiliates.browser.spec.mjs --reporter=line --workers=1

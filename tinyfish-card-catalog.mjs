@@ -2,8 +2,6 @@
 import {INFINITY_ACCEPTED_BRANDS} from './infinity-accepted-catalog.mjs';
 const sources=[
  {"id":"walmart-shopping","name":"Walmart shopping","url":"https://www.walmart.com/"},
- {"id":"cardone-capital","name":"10X Westshore South · Cardone Capital","url":"https://cardonecapital.com/westshoresouth/"},
- {"id":"church-of-i-am","name":"Church of I AM · Gary Cardone","url":"https://x.com/GaryCardone"},
  {
   "id": "radio-zenith-transoceanic",
   "name": "Zenith Trans-Oceanic R-520",

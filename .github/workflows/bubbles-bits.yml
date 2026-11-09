@@ -6,6 +6,16 @@ on:
       - 'test/bubbles-bits.test.mjs'
       - 'bubbles-bit-session.mjs'
       - 'test/bubbles-bit-session.test.mjs'
+      - 'workers/infinity-brain-clock/iteration-credit.mjs'
+      - 'workers/infinity-brain-clock/worker.js'
+      - 'workers/infinity-brain-clock/direct-github.mjs'
+      - 'workers/unified-wallet/**'
+      - 'bubbles-live-iteration-feed.mjs'
+      - 'bubbles-iteration-bubbles.mjs'
+      - 'bubbles-cloud-wallet.js'
+      - 'bubbles-ai.js'
+      - 'test/bubbles-iteration-credit.test.mjs'
+      - 'test/brain-iteration-credit.test.mjs'
       - '.github/workflows/bubbles-bits.yml'
   push:
     branches: [main]
@@ -20,4 +30,4 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - run: node --test test/bubbles-bits.test.mjs test/bubbles-bit-session.test.mjs
+      - run: node --test test/bubbles-bits.test.mjs test/bubbles-bit-session.test.mjs test/bubbles-iteration-credit.test.mjs test/brain-iteration-credit.test.mjs test/bubbles-live-bits.test.mjs test/bot-work-credit.test.mjs test/unified-wallet-account-isolation.test.cjs

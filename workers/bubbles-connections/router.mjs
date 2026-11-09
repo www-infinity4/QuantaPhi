@@ -55,11 +55,13 @@ const HANDOFF_FAILURE_REASONS=Object.freeze({
 });
 export function callbackPage(provider,result='',reason='') {
   if(!['google','github','cloudflare'].includes(provider))return new Response('Unknown provider',{status:404});
-  const details=Object.hasOwn(OAUTH_RETURN_REASONS,reason)?OAUTH_RETURN_REASONS[reason]:null;
+  const providerName={google:'Google',github:'GitHub',cloudflare:'Cloudflare'}[provider];
+  const details=Object.hasOwn(OAUTH_RETURN_REASONS,reason)?OAUTH_RETURN_REASONS[reason].replaceAll('Cloudflare',providerName):null;
+  const returnPath=(provider==='google'||provider==='cloudflare')&&result==='received'?'/bubbles-accounts.html?return='+provider:'/bubbles.html';
   const message=result==='received'
     ? 'Authorization received securely. Return to Bubbles to verify and finish connecting your account.'
     : result==='declined'
-      ? 'Cloudflare declined the requested access. No authorization was completed. Return to Bubbles to review your connection.'
+      ? providerName+' declined the requested access. No authorization was completed. Return to Bubbles to review your connection.'
     : result==='failed'
       ? 'The authorization could not be received. Return to Bubbles and retry the sign-in.'
       : 'Return to Bubbles to check your account connection.';
@@ -67,7 +69,7 @@ export function callbackPage(provider,result='',reason='') {
   // The callback has already redirected away from the provider code. Offer
   // user-initiated navigation to the registered Android return intent or to
   // the Chrome/PWA account page. Neither link carries OAuth state or tokens.
-  const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f4f0"><title>Return to Bubbles</title><link rel="stylesheet" href="/bubbles-auth.css?v=20261026-oracle-auth1"></head><body class="bubbles-auth-page"><main class="bubbles-auth-shell"><article class="auth-return-card"><h1>Return to Bubbles</h1><p>'+message+'</p>'+detailLine+'<p><a class="auth-action auth-primary" href="/bubbles.html">Continue in Bubbles</a><a class="auth-action" href="quantaphi-bubbles://return">Return to Bubbles Android app</a></p><p><a href="/bubbles-accounts.html">Account connections</a></p><p class="auth-intro">Connection is not confirmed until Bubbles checks your account securely.</p></article></main><script type="module" src="/bubbles-auth-return.mjs?v=20261026-oauth-finalize2"></script></body></html>';
+  const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f4f0"><title>Return to Bubbles</title><link rel="stylesheet" href="/bubbles-auth.css?v=20261026-oracle-auth1"></head><body class="bubbles-auth-page"><main class="bubbles-auth-shell"><article class="auth-return-card"><h1>Return to Bubbles</h1><p>'+message+'</p>'+detailLine+'<p><a class="auth-action auth-primary" href="'+returnPath+'">Continue in Bubbles</a><a class="auth-action" href="quantaphi-bubbles://return">Return to Bubbles Android app</a></p><p><a href="/bubbles-accounts.html">Account connections</a></p><p class="auth-intro">Connection is not confirmed until Bubbles checks your account securely.</p></article></main><script type="module" src="/bubbles-auth-return.mjs?v=20261105-cloudflare-google-return3"></script></body></html>';
   return new Response(html,{headers:{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store',
     'Referrer-Policy':'no-referrer','Content-Security-Policy':"default-src 'none'; style-src 'self'; script-src 'self'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
     'X-Content-Type-Options':'nosniff'}});
@@ -199,7 +201,7 @@ export async function handleConnections(request,env,resolveService) {
         ready:github.permissionsApproved&&cloudflare.permissionsApproved,
         providers:{github,cloudflare}});
     }
-    if (request.method === 'GET' && url.pathname === PREFIX+'/accounts') return json(origin,{ok:true,accounts:await service.list(identity)});
+    if (request.method === 'GET' && url.pathname === PREFIX+'/accounts') return json(origin,{ok:true,accounts:await service.gateStatus(identity)});
     if (request.method !== 'POST') return json(origin,{ok:false,error:'not_found'},404);
     if (!request.headers.get('Content-Type')?.startsWith('application/json')) return json(origin,{ok:false,error:'json_required'},415);
     if (Number(request.headers.get('Content-Length')) > 8192) return json(origin,{ok:false,error:'too_large'},413);
@@ -208,6 +210,12 @@ export async function handleConnections(request,env,resolveService) {
     if (!body || typeof body !== 'object' || Array.isArray(body)) return json(origin,{ok:false,error:'invalid_json'},400);
     if(url.pathname===PREFIX+'/setup/check'){
       const result=await service.checkSetup(identity);
+      if(result?.connectionError)throw Error(result.connectionError);
+      return json(origin,{ok:true,...result});
+    }
+    if(url.pathname===PREFIX+'/handoff/google/resume'||url.pathname===PREFIX+'/handoff/cloudflare/resume'){
+      const result=url.pathname.includes('/cloudflare/')
+        ?await service.resumeCloudflareHandoff(identity):await service.resumeGoogleHandoff(identity);
       if(result?.connectionError)throw Error(result.connectionError);
       return json(origin,{ok:true,...result});
     }

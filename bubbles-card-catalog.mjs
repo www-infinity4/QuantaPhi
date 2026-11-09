@@ -21,6 +21,8 @@ export const cards=Object.freeze([
  local('video-builder','Video Builder','phiVideoBuilder',['phi-video-builder.js'],[],['video studio']),
  local('fred-spaces','Fred Spaces','fredSpacesRadio',['fred-spaces-radio.js'],['fred-spaces-radio.css'],['fred radio','fred krueger','fred space','freds spaces','freds space']),
  local('magoo-spaces','Magoo Spaces','magooSpacesRadio',['magoo-spaces-radio.js'],['magoo-spaces-radio.css'],['magoo phd']),
+ local('x-twitter','Twitter / X','xTwitterCard',['x-twitter-card.mjs'],['x-twitter-card.css'],['twitter','x feed','tweet','twitter card','x app','timeline']),
+ local('x-spaces','X Spaces · Listen','xSpacesQuickCard',['x-spaces-quick-card.mjs'],[],['twitter spaces','x spaces','spaces card','live spaces','space audio']),
  local('following-spaces','Following Spaces','followingSpacesRadio',['following-spaces-radio.js'],['following-spaces-radio.css'],['followed spaces']),
  // Player-first: Fred and the owner’s followed-person selector share the Media Star surface.
  local('media-star','Media Star','fredSpacesRadio',['fred-spaces-radio.js','following-spaces-radio.js'],['fred-spaces-radio.css','following-spaces-radio.css'],['media star player','media star radio','media star podcasts','media star card','media star fred spaces'],['followingSpacesRadio']),
@@ -28,6 +30,10 @@ export const cards=Object.freeze([
  local('radio-clubhouse','Radio Clubhouse','radioClubhouse',['radio-clubhouse.js'],['radio-clubhouse.css']),
  local('concepts','Infinity Concepts','infinityConcepts',['infinity-concepts.js'],['infinity-concepts.css']),
  local('group-story','Group Story','groupStoryBuild',['group-story.js'],['group-story.css'],['group story build']),
+ app('trending-movies','Trending Movies · Play Trailers in Quick Cards','/?card=trending-movies','QuantaPhi',['google trending movies','new movies','movie trailers','cinema carousel','movies trending now']),
+ app('trending-apps','Trending Android Apps · Oracle Cards','/?card=trending-apps','QuantaPhi',['android trending apps','app carousel','popular Android apps','source backed apps']),
+ app('termux','Termux · Inline Command Pad','/?card=termux','QuantaPhi',['termux','terminal','shell code pad','termux in quick card']),
+
  app('quant-tv-movies','Quant Movies · CNN CNBC NASA PBS','/?card=tvQuantExpansion','QuantaPhi',['science movies','quant movies','nasa documentaries','cnn cnbc','pbs nova']),
  local('channels','Television Cards','phiChannelCards',['phi-tv-programs.js','phi-channel-cards.js'],['phi-channel-cards.css'],['channel cards','tv channels','infinity tv','cnn live','cnbc live','nasa plus','pbs nova','pbs documentary','quant movies','science fiction movies']),
  app('trending-now','Trending Google Search Cards','/trending-now.html','QuantaPhi',['trending','google trends','trending now','trending cards','trend cards']),
@@ -35,8 +41,6 @@ export const cards=Object.freeze([
  app('trending-mlb','World Series Tracker','/?card=mlb','QuantaPhi',['world series','rays brewers','mlb trends']),
  app('trending-media','Trending Media Explorer','/?card=media','QuantaPhi',['avengers doomsday','ethan klein','media trends']),
  app('pixie-stories','Pixie Stories','/pixie/','QuantaPhi',['pixie','pixie story','pixie storybook','pixie quick card']),
- app('cardone-capital','Cardone Real Estate Card','/cardone-capital.html','QuantaPhi',['cardone','grant cardone','cardone capital','10x westshore','westshore south','real estate card']),
- app('church-of-i-am','Church of I AM · Gary Cardone','/?card=iam','QuantaPhi',['church of i am','i am sunday','gary cardone','cardonay','gary cardone sunday','gary cardone church','i am promo']),
  app('muse-ai','Muse AI Reviewer','/science-quick-card.html?card=muse-ai','QuantaPhi',['muse','meta muse','muse reviewer']),
  app("quanta-feed","QuantaPhi Public For You Following","/",'QuantaPhi',["public feed","for you page","following feed"]),
  app("just-radios","JustRadios restoration kits","/quanta-feed-card.html?card=just-radios",'QuantaPhi',["justradios","radio kits"]),

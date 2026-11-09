@@ -75,6 +75,13 @@
   next.setAttribute('aria-label','Next Infinity Radio song');next.disabled=true;
   bar.append(play,next,copy,open);
   anchor.insertAdjacentElement('afterend',bar);
+  // Attach source-backed local radio cards beside the existing Infinity Radio.
+  // The browser loads one small module rather than adding seven player iframes.
+  const liveRadioScript = document.createElement('script');
+  liveRadioScript.src = '/iowa-live-radio-cards.js?v=20261105-states-db1';
+  liveRadioScript.defer = true;
+  document.head.appendChild(liveRadioScript);
+
 
   const audio = document.createElement('audio');
   audio.preload = 'none';
@@ -103,6 +110,7 @@
     }else if(added){trackIndex=0;}
     play.disabled=false;next.disabled=false;
     if(!playbackRequested)status.textContent=(origin==='cache'?'Saved collection':'Ready')+' · '+songCount();
+    emitRadioState();
     try{localStorage.setItem(CACHE_KEY,JSON.stringify(tracks));}catch(_){}
   }
   async function refreshCatalog() {
@@ -139,6 +147,7 @@
     play.textContent = playing ? 'Ⅱ' : '▶';
     play.setAttribute('aria-label',playing?'Pause Infinity Radio':'Play Infinity Radio');
     play.setAttribute('aria-pressed',String(playing));
+    emitRadioState();
   }
   function setTrack() {
     audio.src = tracks[trackIndex].url;
@@ -203,18 +212,47 @@
       newArrivalWaiting=false;setTrack();start();
     }else{trackIndex=(trackIndex+1)%tracks.length;setTrack();}
   });
-  play.addEventListener('click',() => {
+  // Shared transport: both music Quick Cards control THIS existing Infinity
+  // Radio audio element, never a new iframe or a second audio element.
+  function getRadioState() {
+    return {
+      ready: tracks.length > 0,
+      playing: playbackRequested && !audio.paused,
+      requested: playbackRequested,
+      title: tracks[trackIndex]?.title || '',
+      status: status.textContent || ''
+    };
+  }
+  function emitRadioState() {
+    if (typeof window === 'undefined' || typeof CustomEvent !== 'function' || typeof window.dispatchEvent !== 'function') return;
+    window.dispatchEvent(new CustomEvent('quantaphi:infinity-radio-state', {detail:getRadioState()}));
+  }
+  function toggleRadio() {
     if (playbackRequested) {
-      playbackRequested = false; ++generation; audio.pause(); setPlaying(false); status.textContent = 'Paused · ' + tracks[trackIndex].title;
-    } else if(tracks.length) {
+      playbackRequested = false;
+      ++generation;
+      audio.pause();
+      setPlaying(false);
+      status.textContent = 'Paused · ' + (tracks[trackIndex]?.title || 'Infinity Radio');
+    } else if (tracks.length) {
       playbackRequested = true;
       failures = 0;
-      // A deliberate new Play gesture retries temporary network failures.
+      if (typeof window !== 'undefined' && typeof CustomEvent === 'function' && typeof window.dispatchEvent === 'function')
+        window.dispatchEvent(new CustomEvent('quantaphi:infinity-radio-play'));
       unavailableSources.clear();
-      skippedSinceSuccess=0;
+      skippedSinceSuccess = 0;
       start();
+    } else {
+      status.textContent = 'Infinity Radio is loading its song collection.';
     }
-  });
+    emitRadioState();
+    return getRadioState();
+  }
+  if (typeof window !== 'undefined') {
+    window.InfinityRadioQuick = Object.freeze({toggle: toggleRadio, getState: getRadioState});
+    emitRadioState();
+  }
+  play.addEventListener('click', toggleRadio);
   audio.addEventListener('ended',()=>advance('ended'));
   audio.addEventListener('error',() => {
     if (!playbackRequested || !audio.getAttribute('src') || audio.ended) return;
@@ -227,5 +265,20 @@
   audio.addEventListener('playing',() => {
     if (!playbackRequested) { audio.pause(); setPlaying(false); return; }
     setPlaying(true);
+  });
+  if (typeof window !== 'undefined' && typeof window.addEventListener === 'function')
+  window.addEventListener('quantaphi:station-selected', () => {
+    if (!playbackRequested) return;
+    playbackRequested=false; ++generation; audio.pause(); setPlaying(false);
+    status.textContent='Paused for another live radio station.';
+  });
+  // Artist Quick Cards play provider-owned media. Never mix Infinity's catalog
+  // beneath a visible Steve Miller or Pink Floyd YouTube player.
+  if (typeof window !== 'undefined' && typeof window.addEventListener === 'function')
+  window.addEventListener('quantaphi:artist-radio-start', () => {
+    if (!playbackRequested) return;
+    playbackRequested=false; ++generation; audio.pause(); setPlaying(false);
+    status.textContent='Paused for artist music player.';
+    emitRadioState();
   });
 })();

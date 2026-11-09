@@ -1,14 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {DISPENSARY_SOURCES,eligibleDispensary,DISPENSARY_CARD_IDS} from '../restricted-dispensary-directory.mjs';
+import {DISPENSARY_SOURCES,eligibleDispensary,approvedDirectoryMedia,DISPENSARY_CARD_IDS} from '../restricted-dispensary-directory.mjs';
 
-test('twelve distinct original-source store Quick Cards can appear in Oracle deck',()=>{
- assert.equal(DISPENSARY_SOURCES.length,12);
- assert.equal(new Set(DISPENSARY_SOURCES.map(x=>x.id)).size,12);
- assert.equal(new Set(DISPENSARY_CARD_IDS).size,12);
+test('fourteen distinct original-source store Quick Cards can appear in Oracle deck',()=>{
+ assert.equal(DISPENSARY_SOURCES.length,14);
+ assert.equal(new Set(DISPENSARY_SOURCES.map(x=>x.id)).size,14);
+ assert.equal(new Set(DISPENSARY_CARD_IDS).size,14);
  for(const x of DISPENSARY_SOURCES){
   assert.ok(DISPENSARY_CARD_IDS.includes('dispensary-'+x.id));
-  assert.match(x.address,/Denver, CO 802\d\d/);
+  assert.match(x.address,/, CO 80\d{3}$/);
   assert.ok(x.name&&x.store&&x.address&&x.source_url);
   assert.equal(x.category,'dispensary');
   assert.equal(x.paid_sponsor,false);
@@ -50,4 +50,93 @@ test('every dispensary card is actually mounted and discoverable in Oracle',asyn
  assert.ok(client.includes('eligibleDispensary(row,acknowledged)'));
  assert.ok(client.includes('if(!allowed)'));
  assert.ok(client.includes('acknowledged=false'));
+});
+
+test('Denver listings stay in the Oracle carousel instead of stacking down the homepage',async()=>{
+ const fs=await import('node:fs/promises');
+ const css=await fs.readFile(new URL('../restricted-dispensary-cards.css',import.meta.url),'utf8');
+ const html=await fs.readFile(new URL('../index.html',import.meta.url),'utf8');
+ for(const id of DISPENSARY_CARD_IDS){
+  assert.ok(html.includes('<section id="'+id+'"'));
+ }
+ assert.match(css,/body\.oracle-card-deck-active:not\(\.oracle-shelf-open\) main\.app > section\[id\^="dispensary-"\]\{display:none!important\}/,
+  'All original directory roots must be hidden outside the active carousel stage');
+ assert.match(css,/\.oracle-card-deck-stage > section\[id\^="dispensary-"\]/,
+  'The currently selected original card must remain visible inside the carousel');
+});
+
+test('The Dab Alameda exists as a sourced, non-sponsored Denver directory card',()=>{
+ const row=DISPENSARY_SOURCES.find(x=>x.id==='the-dab-alameda');
+ assert.ok(row,'expected existing carousel to include The Dab Alameda');
+ assert.equal(row.name,'The Dab by Silverpeak');
+ assert.equal(row.address,'2748 W Alameda Ave, Denver, CO 80219');
+ assert.equal(row.source_url,'https://thedab303.com/locations/');
+ assert.equal(row.official_domain,'thedab303.com');
+ assert.equal(row.paid_sponsor,false);
+ assert.equal('price' in row,false);
+ assert.equal('inventory' in row,false);
+});
+test('six-source media galleries are strictly rights reviewed, non-product, age-acknowledged and deduplicated',()=>{
+ const row=DISPENSARY_SOURCES[0];
+ const good=n=>({url:'https://'+row.official_domain+'/media/store-'+n+'.jpg',
+  source_url:row.source_url,publisher:'Store',rights_evidence_url:'https://'+row.official_domain+'/image-permission',
+  rights_cleared:true,status:'approved',kind:'storefront',
+  reviewed_at:'2026-11-07',expires_at:'2026-12-01',alt:'Store exterior '+n});
+ const input={...row,media_gallery:[...Array.from({length:8},(_,i)=>good(i)),good(0),
+  {...good(8),kind:'product'},
+  {...good(9),rights_cleared:false},
+  {...good(10),url:'https://example.invalid/a.jpg'},
+  {...good(11),expires_at:'2026-10-01'}]};
+ const now=Date.parse('2026-11-08T12:00:00Z');
+ assert.deepEqual(approvedDirectoryMedia(input,false,now),[]);
+ const gallery=approvedDirectoryMedia(input,true,now);
+ assert.equal(gallery.length,6);
+ assert.deepEqual(gallery.map(x=>x.alt),Array.from({length:6},(_,i)=>'Store exterior '+i));
+ assert.equal(approvedDirectoryMedia({...row,media_gallery:[{...good(1),rights_evidence_url:''}]},true,now).length,0);
+});
+
+test('reviewed gallery is wired into the original Android card with accessible controls',async()=>{
+ const fs=await import('node:fs/promises');
+ const client=await fs.readFile(new URL('../restricted-dispensary-cards.mjs',import.meta.url),'utf8');
+ const css=await fs.readFile(new URL('../restricted-dispensary-cards.css',import.meta.url),'utf8');
+ assert.match(client,/approvedDirectoryMedia\(row,acknowledged\)/);
+ assert.match(client,/Play gallery/);
+ assert.match(client,/Pause gallery/);
+ assert.match(client,/prefers-reduced-motion: reduce/);
+ assert.match(client,/photo\.referrerPolicy='no-referrer'/);
+ assert.match(css,/\.dc-gallery-image/);
+ assert.match(css,/\.dc-gallery-controls/);
+});
+
+
+test('Breckenridge is one verified source listing, not an Alpenglow duplicate',()=>{
+ const rows=DISPENSARY_SOURCES.filter(x=>x.city==='Breckenridge');
+ assert.equal(rows.length,1);
+ const row=rows[0];
+ assert.equal(row.id,'the-dispensary-breckenridge');
+ assert.equal(row.name,'The Dispensary');
+ assert.equal(row.store,'Breckenridge');
+ assert.equal(row.former_brand,'Alpenglow Botanicals');
+ assert.equal(row.phone,'(970) 389-6839');
+ assert.equal(row.address,'1805 Airport Rd, Breckenridge, CO 80424');
+ assert.equal(row.source_url,'https://thedispensary.com/locations/breckenridge-co/');
+ assert.equal(row.official_domain,'thedispensary.com');
+ assert.equal(row.paid_sponsor,false);
+ assert.equal('price' in row,false);
+ assert.equal('inventory' in row,false);
+ assert.ok(eligibleDispensary(row,true));
+ assert.deepEqual(approvedDirectoryMedia(row,true),[], 'uploaded cannabis product imagery is never auto-approved');
+});
+
+test('regional source cards show their actual city and former brand without claiming current offers',async()=>{
+ const fs=await import('node:fs/promises');
+ const html=await fs.readFile(new URL('../index.html',import.meta.url),'utf8');
+ const deck=await fs.readFile(new URL('../oracle-card-deck.js',import.meta.url),'utf8');
+ const client=await fs.readFile(new URL('../restricted-dispensary-cards.mjs',import.meta.url),'utf8');
+ assert.match(html,/id="dispensary-the-dispensary-breckenridge"/);
+ assert.match(deck,/\['dispensary-the-dispensary-breckenridge','21\+ · The Dispensary · Breckenridge'\]/);
+ assert.match(client,/row\.city\.toUpperCase\(\)/);
+ assert.match(client,/row\.former_brand/);
+ assert.match(client,/row\.phone/);
+ assert.doesNotMatch(client,/gold-shelf-ounce-discount/);
 });

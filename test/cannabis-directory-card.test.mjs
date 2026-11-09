@@ -105,3 +105,17 @@ test('directory pagination retries, captures filters and reopens safely during p
  assert.equal(maps.hidden,true); // Official MT roster publishes only city, not street.
  assert.equal(maps.href,undefined); // Never offer invented store directions.
 });
+
+test('missing or failed merchant photos use honest original artwork inside the quick card',()=>{
+ const js=read('cannabis-directory-card.mjs'),css=read('cannabis-directory-cards.css');
+ assert.match(js,/function renderDirectoryArtwork\(photo,model\)/);
+ assert.match(js,/renderDirectoryArtwork\(photo,model\)/);
+ assert.match(js,/img\.addEventListener\('error'/);
+ assert.match(js,/icd-store-art/);
+ assert.match(js,/aria-label/);
+ assert.doesNotMatch(js,/Original store image pending documented rights|Source image unavailable/);
+ assert.match(css,/\.icd-store-art/);
+ assert.match(css,/cannabis-directory-leaf\.svg/);
+ assert.match(css,/prefers-reduced-motion:reduce/);
+ assert.match(read('cannabis-directory-leaf.svg'),/<svg[^>]*viewBox=/);
+});

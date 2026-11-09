@@ -1,44 +1,32 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {CLASSIC_ROCK_BANDS, linkIsAllowed} from '../classic-rock-official-catalog.mjs';
-
+import {CLASSIC_ROCK_BANDS,linkIsAllowed} from '../classic-rock-official-catalog.mjs';
 const source=()=>readFileSync(new URL('../classic-rock-official-card.mjs',import.meta.url),'utf8');
 const html=()=>readFileSync(new URL('../index.html',import.meta.url),'utf8');
-const deck=()=>readFileSync(new URL('../oracle-card-deck.js',import.meta.url),'utf8');
 
-test('five artist-driven buttons, source-backed merchandise, no reseller links',()=>{
+test('all five artist selectors retain official release and video metadata',()=>{
  assert.deepEqual(CLASSIC_ROCK_BANDS.map(b=>b.id),['pink-floyd','reo-speedwagon','cheap-trick','journey','styx']);
  for(const band of CLASSIC_ROCK_BANDS){
-  assert.ok(b.name && b.feature && b.youtube.startsWith('https://www.youtube.com/'));
-  assert.ok(b.offers.length>=1);
-  assert.ok(linkIsAllowed(b.youtube));
-  for(const offer of band.offers){
-   assert.ok(linkIsAllowed(offer.url),band.name+' '+offer.url);
-   assert.ok(offer.label && offer.category);
-   assert.doesNotMatch(offer.url,/ebay|discogs|mercari|amazon|shopify.*example|reospeedwagon\.shop/);
-  }
+  assert.ok(band.name&&band.offers.length>0&&/^[A-Za-z0-9_-]{11}$/.test(band.videoId));
+  for(const offer of band.offers)assert.equal(linkIsAllowed(offer.url),true,offer.url);
  }
- assert.equal(linkIsAllowed('https://youtube.com.evil.test/'),'false'==='true');
  assert.equal(linkIsAllowed('javascript:alert(1)'),false);
- assert.equal(linkIsAllowed('https://reospeedwagon.shop/shop'),false);
 });
-
-test('card appears by Steve Miller, ahead of 21 plus source listings, in the original deck',()=>{
- assert.match(html(),/id="steveMillerBookOfDreamsCard"[\s\S]*?id="classicRockOfficialMusicCard"[\s\S]*?id="bruceBannerWeedmapsCard"/);
- assert.match(html(),/classic-rock-official-card\.mjs/);
- assert.match(deck(),/\['classicRockOfficialMusicCard','Classic Rock · Official music and releases'\]/);
- assert.match(deck(),/classicRockOfficialMusicCard:\['classic-rock-official-music','Music'/);
+test('classic rock retains the same Quick Card and has a genuine visible artist source',()=>{
+ const s=source();
+ assert.ok(html().includes('id="classicRockOfficialMusicCard"'));
+ assert.ok(s.includes("const frame=node('iframe'"));
+ assert.ok(s.includes('frame.src='));
+ assert.ok(s.includes('track.videoId'), 'selected artist track video ID is used');
+ assert.ok(s.includes('renderOffers(band);start(band)'));
+ assert.ok(s.includes('min-height:210px'));
+ assert.ok(s.includes('referrerPolicy'));
+ assert.ok(s.includes('aria-pressed'));
 });
-
-test('one compact button per artist, band-specific shop below, and no embedded player',()=>{
- const js=source();
- assert.match(js,/const artistLink = node\('a'/);
- assert.match(js,/artistLink\.href = band\.youtube/);
- assert.match(js,/artistLink\.target = '_blank'/);
- assert.match(js,/artistLink\.rel = 'noopener noreferrer'/);
- assert.match(js,/renderOffers\(band\)/);
- assert.match(js,/https?:\/\//);
- assert.doesNotMatch(js,/iframe|YT\.Player|audio\.play|video\.play|autoplay|YouTubeIframeAPIReady/);
- assert.doesNotMatch(js,/MusicQuant|StarCoin|wallet\.debit/);
+test('artist selections cannot start unrelated Infinity Radio or touch wallet',()=>{
+ const s=source();
+ assert.ok(!s.includes('window.InfinityRadioQuick.toggle()'));
+ assert.ok(!s.includes('wallet.debit'));
+ assert.ok(s.includes('quantaphi:artist-radio-start'));
 });

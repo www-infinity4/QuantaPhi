@@ -2,7 +2,7 @@
  * Browser-only display; never a tool/permission grant, hidden reasoning stream,
  * wallet operation, extra floating assistant, or independent agent executor.
  */
-import {newBitSession,applyBitObservation} from './bubbles-bit-session.mjs?v=20261101-bits1';
+import {newBitSession,applyBitObservation} from './bubbles-bit-session.mjs?v=20261104-credit1';
 export const BUBBLE_ROLES=Object.freeze([
  {id:'listen',label:'Listen',help:'Actual voice capture state from the Bubbles orb.'},
  {id:'think',label:'Think',help:'A response is being processed. Private model reasoning is not displayed.'},
@@ -114,9 +114,9 @@ export function mountBubbleIterations({launcher,panel,status,chatScroll,conversa
    button.dataset.status=item.status;button.setAttribute('aria-pressed',String(role.id===selected));
    button.querySelector('.ba-iteration-state').textContent=labels[item.status];
   }
-  bitCount.textContent=bitsState.candidateCount+' candidate'+(bitsState.candidateCount===1?'':'s')+' · 0 credited · 0 spendable';
+  bitCount.textContent=bitsState.candidateCount+' receipt'+(bitsState.candidateCount===1?'':'s')+' · '+bitsState.creditedBits+' Bubble Bits credited';
   bitNote.textContent=bitsState.contextReady
-    ?'Owner context checked. Candidate receipts are not wallet credits.'
+    ?'Pending receipts await wallet confirmation. Credited Bits are confirmed by the server.'
     :'Owner context not verified this turn. Later actions will not count until checked.';
   bitRecent.replaceChildren();
   for(const item of bitsState.recent.slice(0,3))bitRecent.append(create('span','ba-bits-proof',item.tool+' · receipt …'+item.receiptTail));

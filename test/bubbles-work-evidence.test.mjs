@@ -16,6 +16,9 @@ function harness({denied=false}={}){
  const ctx={workEvidenceModule,overflowChooser:chooseOverflow,brainTools,crypto:webcrypto,TextEncoder,JSON,Date,
   activeCardEvidence:null,workButton:{disabled:false},workStatus:{},workText:{value:''},config:{role:'owner'},TICKETS:'https://brain.example',location:{origin:'https://quantaphi.org',pathname:'/bubbles.html'},
   CustomEvent:class {constructor(name,args){this.detail=args.detail;}},window:{dispatchEvent(){}},pollBrainProgress:async()=>{},recordBrainNotice(){},humanReplies:async()=>({workReply:()=> 'Request saved.'}),
+  // The harness evaluates a bounded watcher slice; recovery helpers live outside it.
+  rememberPendingGithubWork:(requestId,thread)=>{ctx.savedPending={requestId,thread}},
+  clearPendingGithubWork:requestId=>{ctx.clearedPending=requestId},
   verifiedOwnerHeaders:async()=>{if(denied)throw Error('owner_authorization_required');return {Authorization:'Bearer fixture-only'};},
   bubblesFetch:async(url,args)=>{posts.push({url,headers:args.headers,body:JSON.parse(args.body)});return {ok:true,json:async()=>({ok:true,ticket:{id:'synthetic-ticket',status:'ready'},execution:{status:'queued_for_runner'}})};}
  };
@@ -65,7 +68,7 @@ test('evidence is bounded, drops original bytes and never mutates base jobs',()=
 });
 test('both immediate and delayed receipt paths capture the same observation snapshot',()=>{
  assert.match(ui,/directGithubOperation\(args,\{ownerRequest:request,imageEvidence:imageWorkEvidence\}\)/);
- assert.match(ui,/watchDirectGithubReceipt\(requestId,operation,ownerRequest\|\|operation.request\|\|'',imageEvidence\)/);
+ assert.match(ui,/watchDirectGithubReceipt\(requestId,operation,ownerRequest\|\|operation.request\|\|'',imageEvidence,receiptThread\)/);
  assert.match(ui,/maybeDelegateDirectOverflow\(result,operation,ownerRequest,imageEvidence\)/);
  assert.match(ui,/maybeDelegateDirectOverflow\(result,args,request,imageWorkEvidence\)/);
  assert.match(ui,/submitWork\(request,'explicit-user-command',imageWorkEvidence\)/);
@@ -85,6 +88,8 @@ test('actual delayed receipt preserves observations and saves reply to its origi
  assert.equal(reads,2);assert.equal(posts.length,1);
  assert.match(posts[0].body.context.image_observations.observations,/Image 2/);
  assert.equal(ctx.saved.key,'thread:original-thread');assert.equal(ctx.saved.items[0].sessionId,'original-thread');
+ assert.equal(ctx.savedPending.thread,'original-thread');
+ assert.equal(ctx.clearedPending,'fixture-delayed-receipt');
  assert.equal(ctx.messages.length,0);
 });
 
@@ -99,6 +104,8 @@ test('an in-flight GitHub request never disappears silently when the receipt rem
  ctx.watchDirectGithubReceipt('fixture-unconfirmed-receipt',{action:'assist',mode:'write',repository:'www-infinity4/QuantaPhi'},'Fix Bubbles');
  const answer=await Promise.race([shown,new Promise((_,reject)=>setTimeout(()=>reject(Error('silent_github_receipt_timeout')),1500))]);
  assert.equal(reads,120);
+ assert.equal(ctx.savedPending.thread,'owner-session');
+ assert.equal(ctx.clearedPending,undefined,'a pending or timed-out write must retain its recovery reference');
  assert.match(answer,/not returned a final receipt|could not verify|unconfirmed/i);
  assert.doesNotMatch(answer,/work finished|deployed successfully|completion verified/i);
 });

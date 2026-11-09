@@ -10,14 +10,13 @@ const now=document.getElementById('oracleCardNow'),status=document.getElementByI
 const choices=[
  ['coliseumZeusCard','ZEUS 6.2 · Coliseum Group Builder'],
  ['walmartShoppingCard','Walmart · Pizza and grocery picks'],
- ['cardoneCapitalOffer','10X Westshore · Cardone Capital'],
  ['quantaDirectoryCards','Find a name, website or StarMaker song'],
+ ['identityShieldQuickCard','Infinity Identity Shield · Research & Protection'],
  ['bubblesIdentitySettingsCard','Bubbles · Identity & Documents'],
  ['disabilityHousingCard','Home Access · Housing with disability income'],
  ['pixieStoryCard','Pixie Stories · Read and explore'],
  ['googleTrendNba','NBA · Trending matchups'],
  ['googleTrendMlb','MLB · Scores'],
- ['churchOfIAmCard','Church of I AM · Gary Cardone'],
  ['googleTrendCulture','Media · Trending searches'],
  ['infiniteBook','Read an original story'],
  ['infinityAffiliates','Infinity Affiliates · Match approved brands'],
@@ -40,6 +39,8 @@ const choices=[
  ['phiMediaBuilder','Create images and video'],
  ['result','Explore research and Asteroid'],
  ['fredSpacesRadio','Listen to Media Star'],
+ ['xTwitterCard','X · Twitter Quick Card'],
+ ['xSpacesQuickCard','Explore X Spaces'],
  ['followingSpacesRadio','Explore radio shows'],
  ['magooSpacesRadio','Hear featured episodes'],
  ['mediaStarCreator','Build your media card'],
@@ -68,6 +69,8 @@ const choices=[
  ['dispensary-star-buds-lakeside','21+ · Star Buds · Lakeside'],
  ['dispensary-green-solution-wewatta','21+ · The Green Solution · Wewatta'],
  ['dispensary-maikoh-broadway','21+ · Maikoh Holistics · North Broadway'],
+ ['dispensary-the-dab-alameda','21+ · The Dab by Silverpeak · Alameda'],
+ ['dispensary-the-dispensary-breckenridge','21+ · The Dispensary · Breckenridge'],
  ['phiChannelCards','Infinity TV Guide'],
  ['publicCardTrends','Explore what is trending']
 ];
@@ -79,15 +82,14 @@ const CARD_DIRECTIONS={
  liveFoxNewsCard:['fox-live-news','Television','Watch the official LiveNOW from FOX news player'],
  coliseumZeusCard:['coliseum-zeus','Collaboration','Pitch, vote, branch and build in the Zeus arena'],
  walmartShoppingCard:['walmart-shopping','Shopping','Shop Walmart pizza, groceries and related products'],
- cardoneCapitalOffer:['cardone-capital','Real estate','Study cashflow, fees and property risk'],
  quantaDirectoryCards:['public-directory','Directory','Search verified names, businesses and websites'],
+ identityShieldQuickCard:['identity-shield','Protection research','Review official SSA and FTC guidance, read actual public research checks and planned identity safeguards'],
  bubblesIdentitySettingsCard:['bubbles-identity-settings','Account settings','Open private identity planning, SSI letters and document checklist'],
  disabilityHousingCard:['disability-housing','Housing','Prepare a housing intake with disability benefit income'],
  scienceQuickCards:['nasa-science','Science','Study current science and research'],
  pixieStoryCard:['pixie-stories','Stories','Read an original Pixie story'],
  googleTrendNba:['trending-nba','Sports','Explore an NBA match and related research'],
  googleTrendMlb:['trending-mlb','Sports','Explore current MLB matchups'],
- churchOfIAmCard:['church-of-i-am','Sunday conversations','Find Gary Cardone’s official Sunday I AM gathering'],
  googleTrendCulture:['trending-media','Media','Investigate popular media and events'],
  infiniteBook:['reads-realms','Stories','Read and research an original story'],
  infinityAffiliates:['infinity-affiliates','Shopping','Match Infinity Approved brands and request product affiliation'],
@@ -108,6 +110,8 @@ const CARD_DIRECTIONS={
  phiMediaBuilder:['image-builder','Media','Create images and video'],
  result:['deck-research','Research','Explore sources and a current AI overview'],
  fredSpacesRadio:['fred-spaces','Music','Listen to an indexed Media Star conversation'],
+ xTwitterCard:['x-twitter','Social','Read real Public and Following X posts, find Spaces, compose, reply, like and repost after authorization'],
+ xSpacesQuickCard:['x-spaces','Live conversations','Find provider-verified live Spaces, browse indexed links, and embed supported X recording clips inside this card'],
  followingSpacesRadio:['following-spaces','Music','Choose a followed host and show'],
  magooSpacesRadio:['magoo-spaces','Music','Listen to a featured Space'],
  mediaStarCreator:['media-star-creator','Media','Produce your own playable media card'],
@@ -121,7 +125,7 @@ const CARD_DIRECTIONS={
  shopAdPhi:['deck-shop','Shopping','Explore interactive product and advertising tools'],
  bruceBannerWeedmapsCard:['bruce-banner-weedmaps','21+ Publisher','Explore rotating original ILLICIT Bruce Banner strain and product references on Weedmaps'],
  infinityAdultContentCard:['adult-content-preferences','Preferences','Manage optional 21+ ad viewing; no restricted creative without server verification'],
- steveMillerBookOfDreamsCard:['steve-miller-book-of-dreams','Music','Play the Steve Miller Band 1977 full album from the original YouTube playlist'],
+ steveMillerBookOfDreamsCard:['steve-miller-book-of-dreams','Music','Play verified official Steve Miller Book of Dreams recordings in the Quick Card'],
  classicRockOfficialMusicCard:['classic-rock-official-music','Music','Play official artist music on YouTube and shop band-linked CD, vinyl, digital releases and merchandise'],
  ['dispensary-livwell-colorado']:['adult-store-livwell-colorado','21+ Directory','Independent source-verified dispensary listing with original store website'],
  ['dispensary-livwell-central']:['adult-store-livwell-central','21+ Directory','Independent source-verified dispensary listing with original store website'],
@@ -135,23 +139,25 @@ const CARD_DIRECTIONS={
  ['dispensary-star-buds-lakeside']:['adult-store-star-buds-lakeside','21+ Directory','Independent source-verified dispensary listing with original store website'],
  ['dispensary-green-solution-wewatta']:['adult-store-green-solution-wewatta','21+ Directory','Independent source-verified dispensary listing with original store website'],
  ['dispensary-maikoh-broadway']:['adult-store-maikoh-broadway','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-the-dab-alameda']:['adult-store-the-dab-alameda','21+ Directory','Independent source-verified dispensary listing with original store website'],
+ ['dispensary-the-dispensary-breckenridge']:['adult-store-the-dispensary-breckenridge','21+ Directory','Independent location listing, formerly Alpenglow Botanicals'],
  publicCardTrends:['trending-now','Research','Investigate verified trends and search interests']
 };
 
-const unique=[...new Map(choices.map(([id,title])=>[id,title])).entries()];
+// Builders have a dedicated real-widget home beside the advertisement area.
+const DEVELOPER_CARD_IDS=new Set(['mediaStarCreator','government501Affiliates','infinityAffiliates','phiProjectActions']);
+const unique=[...new Map(choices.filter(([id])=>!DEVELOPER_CARD_IDS.has(id)).map(([id,title])=>[id,title])).entries()];
 const entries=unique.map(([id,title])=>{
  const [feedId,category,feature]=CARD_DIRECTIONS[id]||['deck-'+id.toLowerCase(),'Discovery',title];
  return {id,title,feedId,category,feature,study:title,node:document.getElementById(id),marker:null,count:0};
 }).filter(x=>x.node);
 const STORE='oracle:card-activity:v1';
-const cardoneButton=document.getElementById('oracleCardCardone');
-const CARDONE_ID='cardoneCapitalOffer';
 const spotlightRequested=(()=>{try{
  const url=new URL(location.href);
- const names={zeus:'coliseumZeusCard',coliseum:'coliseumZeusCard',walmart:'walmartShoppingCard',google:'source-google','kyou':'liveFoxGameCard','kyou-live':'liveFoxGameCard','kyou-fox':'liveFoxGameCard','fox-live-game':'liveFoxGameCard','fox-live-news':'liveFoxNewsCard',starquest:'infinityStarQuestCard',chiller:'infinityChillerCard','shop-lc':'infinityShopLcCard',shoplc:'infinityShopLcCard',omnitv:'infinityOmniTvCard','omni-tv':'infinityOmniTvCard','tv-guide':'phiChannelCards','fox-one':'source-fox-one',foxone:'source-fox-one','fox-one-live-news':'source-fox-one-live-news',foxnewslive:'source-fox-one-live-news',cardone:'cardoneCapitalOffer',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture',iam:'churchOfIAmCard','church-of-i-am':'churchOfIAmCard'};
+ const names={twitter:'xTwitterCard',x:'xTwitterCard','x-twitter':'xTwitterCard','x-spaces':'xSpacesQuickCard',zeus:'coliseumZeusCard',coliseum:'coliseumZeusCard',walmart:'walmartShoppingCard',google:'source-google','kyou':'liveFoxGameCard','kyou-live':'liveFoxGameCard','kyou-fox':'liveFoxGameCard','fox-live-game':'liveFoxGameCard','fox-live-news':'liveFoxNewsCard',starquest:'infinityStarQuestCard',chiller:'infinityChillerCard','shop-lc':'infinityShopLcCard',shoplc:'infinityShopLcCard',omnitv:'infinityOmniTvCard','omni-tv':'infinityOmniTvCard','termux':'trendingAppTermux','trending-apps':'trendingAppTermux','android-apps':'trendingAppTermux','tv-guide':'phiChannelCards','fox-one':'source-fox-one',foxone:'source-fox-one','fox-one-live-news':'source-fox-one-live-news',foxnewslive:'source-fox-one-live-news',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture'};
  names.housing='disabilityHousingCard';names['disability-housing']='disabilityHousingCard';names['home-access']='disabilityHousingCard';
  const requested=url.searchParams.get('card');
- return names[requested]||(requested&&/^[a-zA-Z0-9-]+$/.test(requested)?requested:null)||(url.hash==='#cardoneCapitalOffer'?'cardoneCapitalOffer':null);
+ return names[requested]||(requested&&/^[a-zA-Z0-9-]+$/.test(requested)?requested:null);
 }catch{return null}})();
 let counts={};try{counts=JSON.parse(localStorage.getItem(STORE)||'{}')||{}}catch{}
 entries.forEach(x=>x.count=Math.max(0,Math.min(1000,Number(counts[x.id])||0)));
@@ -179,7 +185,7 @@ function registerSourceCards(){
  // Each real homepage widget gets its own direction and Follow state.
  // Move the ORIGINAL article, preserving its search field, player and listeners.
  let added=false;
- for(const node of document.querySelectorAll('#siteQuickCards .iqc-card[data-source-id], #premiumSourceCards .iqc-card[data-source-id], #brandProductCards .iqc-card[data-source-id], #verifiedBrandSportsCards .iqc-card[data-source-id], #infinityAcceptedCards .iqc-card[data-source-id]')){
+ for(const node of document.querySelectorAll('#siteQuickCards .iqc-card[data-source-id], #premiumSourceCards .iqc-card[data-source-id], #brandProductCards .iqc-card[data-source-id], #essentialsQuickCards .iqc-card[data-source-id], #verifiedBrandSportsCards .iqc-card[data-source-id], #infinityAcceptedCards .iqc-card[data-source-id]')){
   if(node.dataset.sourceReady!=='true')continue;
   const id=node.dataset.sourceId;
   if(!/^[a-z0-9-]+$/.test(id||'')||entries.some(e=>e.feedId===id))continue;
@@ -221,6 +227,67 @@ function registerDirectoryCards(){
  if(added||entries.some(e=>e.id.startsWith('directory-store-'))){updateTabs();predict();}
 }
 window.addEventListener('quantaphi:directory-cards-ready',registerDirectoryCards);
+// Every verified trending movie is its OWN original Oracle card in the same
+// Public / For You / Following carousel. No nested scrolling movies wall.
+function registerTrendingMovieCards(){
+ let added=false;
+ for(const node of document.querySelectorAll('#trendingMovieCards [data-trending-movie-id]')){
+  const id=node.id,videoId=node.dataset.trendingMovieId;
+  if(!/^trendMovie[A-Za-z0-9_-]{11}$/.test(id)||
+     id!=='trendMovie'+videoId)continue;
+  const title=node.querySelector('.mtc-title')?.textContent?.trim();
+  if(!title)continue;
+  const existing=entries.find(e=>e.id===id);
+  if(existing){
+   if(existing.node!==node&&!existing.node.isConnected){
+    existing.node=node;observe.observe(node,{childList:true});
+   }
+   continue;
+  }
+  const feedId='trending-movie-'+videoId;
+  entries.push({id,title:title+' · Film trailer',feedId,category:'Movies',
+   feature:'Play the original publisher movie trailer inside this Quick Card',
+   study:'Google Trends sourced movie headlines or independently new published trailers',
+   node,marker:null,count:Number(counts[id])||0});
+  observe.observe(node,{childList:true});added=true;
+ }
+ if(added){
+  updateTabs();predict();if(!active)start();
+  if(spotlightRequested==='trending-movies'&&!viewerTouched&&!expanded){
+   const first=entries.find(e=>e.id.startsWith('trendMovie')&&available(e));
+   if(first&&first!==active)show(first,false);
+  }
+ }
+}
+window.addEventListener('quantaphi:trending-movie-cards-ready',registerTrendingMovieCards);
+
+// Each verified source app is a SINGLE original Oracle Quick Card. The
+// Termux card is a local command editor, never a browser privilege escalation.
+function registerTrendingAppCards(){
+ let added=false;
+ for(const node of document.querySelectorAll('#trendingAppCards [data-trending-app-id]')){
+  const id=node.id,source=node.dataset.trendingAppId;
+  if(!/^trendingApp[A-Za-z]{3,32}$/.test(id)||!/^[a-z0-9-]{3,35}$/.test(source))continue;
+  if(entries.some(e=>e.id===id))continue;
+  const name=node.querySelector('.trapp-title')?.textContent?.trim();
+  if(!name)continue;
+  entries.push({id,title:name+' · Interactive App',feedId:'trending-app-'+source,
+   category:'Apps',feature:source==='termux'?'Edit Termux code inside this card with a blinking prompt; no unapproved execution':
+    'Discover the real publisher app, with sourced Google trend status when available',
+   study:name+' · verified app source, not a fabricated live installation',
+   node,marker:null,count:Number(counts[id])||0});
+  observe.observe(node,{childList:true});added=true;
+ }
+ if(added){
+  updateTabs();predict();if(!active)start();
+  if(!viewerTouched&&!expanded&&spotlightRequested==='trendingAppTermux'){
+   const termux=entries.find(e=>e.id==='trendingAppTermux'&&available(e));
+   if(termux&&termux!==active)show(termux,false);
+  }
+ }
+}
+window.addEventListener('quantaphi:trending-app-cards-ready',registerTrendingAppCards);
+
 
 // Discover widgets mounted after the deferred deck script, including roots that
 // did not exist at its first scan. Reparenting is ignored once registered.
@@ -234,6 +301,8 @@ function registerLateWidgets(){
   observe.observe(node,{childList:true});added=true;
  }
  registerSourceCards();
+ registerTrendingMovieCards();
+ registerTrendingAppCards();
  if(added){updateTabs();predict();if(!active)start();}
 }
 
@@ -491,81 +560,8 @@ function advance(direction){
  const i=active?list.indexOf(active):-1;
  show(list[(i+1+list.length)%list.length]);
 }
-// Continue a *visual shopping* sequence only after its verified companion
-// offers have been presented. Media, forms, followed feeds and user engagement
-// counters must not be consumed by passive auto-advance.
-const showcaseVisited=new Set();
-let showcaseLastInteraction=0,showcaseTransition=false;
-document.addEventListener('pointerdown',event=>{
- if(host.contains(event.target))showcaseLastInteraction=Date.now();
-},{capture:true,passive:true});
-document.addEventListener('keydown',event=>{
- if(host.contains(event.target))showcaseLastInteraction=Date.now();
-},true);
-window.addEventListener('quantaphi:showcase-chapter-complete',async event=>{
- const selected=active;
- if(!selected||selected.feedId!==event.detail?.id||!selected.id.startsWith('source-')||
-  selectedTab!=='public'||expanded||showcaseTransition||document.hidden)return;
- const eligibleSources=eligible().filter(e=>e.id.startsWith('source-')&&
-  e.node?.dataset?.sourceReady==='true').map(e=>({
-   id:e.feedId,title:e.title,category:e.category,
-   description:e.node.querySelector('.iac-intro,.qbp-description,.iqc-description')?.textContent||e.feature,
-   photo:Boolean(e.node.querySelector('.iac-media img[src],.premium-selected img[src],.iqc-media img[src],img[src]')),
-   entry:e
- }));
- try{
-  const {pickNextShowcase,canShowcaseAdvance}=await import('/shopphi-showcase-core.mjs?v=20261101-connected1');
-  const media=[...stage.querySelectorAll('video,audio')];
-  const focused=Boolean(stage.querySelector('input:focus,textarea:focus,select:focus,[contenteditable="true"]:focus'));
-  let next=pickNextShowcase(eligibleSources,selected.feedId,showcaseVisited);
-  // The playlist is circular, but no offer repeats until the current round
-  // exhausts its genuine, image-backed companions.
-  if(!next){
-   showcaseVisited.clear();
-   next=pickNextShowcase(eligibleSources,selected.feedId,showcaseVisited);
-  }
-  const playable=media.some(m=>!m.paused&&!m.ended);
-  const stillVisible=host.getBoundingClientRect().bottom>0&&host.getBoundingClientRect().top<innerHeight;
-  if(!next||!canShowcaseAdvance({visible:stillVisible,hidden:document.hidden,
-   paused:false,reducedMotion:matchMedia('(prefers-reduced-motion: reduce)').matches,
-   focused,playing:playable,editing:focused,
-   recencyMs:Date.now()-showcaseLastInteraction})||active!==selected)return;
-  showcaseVisited.add(selected.feedId);
-  showcaseTransition=true;
-  stage.classList.add('shopphi-hero-fading');
-  setTimeout(()=>{
-   // A visitor can focus a form or start media *during* the fade.
-   // The same safety checks must pass immediately before changing cards.
-   const rect=host.getBoundingClientRect();
-   const nowFocused=Boolean(stage.querySelector('input:focus,textarea:focus,select:focus,[contenteditable="true"]:focus'));
-   const nowPlaying=[...stage.querySelectorAll('video,audio')].some(m=>!m.paused&&!m.ended);
-   const safeNow=canShowcaseAdvance({
-    visible:rect.bottom>0&&rect.top<innerHeight,hidden:document.hidden,
-    paused:false,reducedMotion:matchMedia('(prefers-reduced-motion: reduce)').matches,
-    focused:nowFocused,editing:nowFocused,playing:nowPlaying,
-    recencyMs:Date.now()-showcaseLastInteraction
-   });
-   if(safeNow&&active===selected&&!expanded&&selectedTab==='public'){
-    showcaseVisited.add(next.id);
-    show(next.entry,true,true);
-   }
-   stage.classList.remove('shopphi-hero-fading');
-   showcaseTransition=false;
-  },340);
- }catch{stage.classList.remove('shopphi-hero-fading');showcaseTransition=false;}
-});
-cardoneButton?.addEventListener('click',()=>{
- viewerTouched=true;
- const entry=entries.find(x=>x.id===CARDONE_ID);
- if(!available(entry)){status.textContent='The Cardone card is not available in this page version yet.';return;}
- if(expanded){
-  expanded=false;document.body.classList.remove('oracle-shelf-open');
-  scroll.setAttribute('aria-expanded','false');
-  scroll.textContent='↓ Scroll interactive cards / widgets';
- }
- show(entry);
- host.scrollIntoView?.({block:'start',behavior:'smooth'});
-});
+// The visitor controls the primary Quick Card. Passive ShopPhi rotations may
+// update related offers below it, never replace its player or active controls.
 for(const shortcut of document.querySelectorAll('[data-oracle-spotlight]')){
  shortcut.addEventListener('click',()=>{
   viewerTouched=true;
@@ -599,52 +595,21 @@ for(const button of host.querySelectorAll('[data-oracle-family]')){
   show(chosen);host.scrollIntoView?.({block:'start',behavior:'smooth'});
  });
 }
-// A deliberate short downward gesture from the restored Android header should
-// settle on the deck, even when Chromium's proximity snap threshold is too
-// small for the gap above the carousel. Do not intercept, preventDefault, or
-// modify scrolling when the user is already browsing below the top.
-let topGestureTimer=0;
-function settleTopGesture(deltaY,startedAtTop){
- if(!startedAtTop||deltaY<85||expanded||
-    !window.matchMedia?.('(max-width: 650px) and (pointer: coarse)')?.matches)return;
- const distance=host.getBoundingClientRect().top;
- if(distance<100||distance>1200)return;
- clearTimeout(topGestureTimer);
- topGestureTimer=setTimeout(()=>{
-  if(expanded||window.scrollY<20||window.scrollY>1200)return;
-  const top=host.getBoundingClientRect().top;
-  if(top>45&&top<700)host.scrollIntoView?.({block:'start',behavior:'smooth'});
- },160);
-}
-window.addEventListener('wheel',e=>settleTopGesture(e.deltaY,window.scrollY<35),{passive:true});
-let touchStartY=0,touchStartedAtTop=false;
-window.addEventListener('touchstart',e=>{
- touchStartedAtTop=window.scrollY<35;
- touchStartY=e.touches?.[0]?.clientY??0;
-},{passive:true});
-window.addEventListener('touchend',e=>{
- const endY=e.changedTouches?.[0]?.clientY??touchStartY;
- settleTopGesture(touchStartY-endY,touchStartedAtTop);
- touchStartedAtTop=false;
-},{passive:true});
-// Move the viewport only after a user changes cards, not when the deck
-// rotates automatically. Scroll to the deck (with arrows visible), not into
-// a tall card that could hide navigation above the phone viewport.
-function settleCardViewport(){
- if(!window.matchMedia?.('(max-width: 650px) and (pointer: coarse)')?.matches)return;
- const cardId=active?.id;
- requestAnimationFrame(()=>{
-  if(active?.id!==cardId||expanded)return;
-  host.querySelector('.oracle-card-deck-nav')?.scrollIntoView?.({block:'start',behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches?'auto':'smooth'});
- });
-}
-function moveAndSettle(direction){
- const before=active;
- advance(direction);
- if(active&&active!==before)settleCardViewport();
-}
-next.addEventListener('click',()=>moveAndSettle(1));
-prev.addEventListener('click',()=>moveAndSettle(-1));
+// Card navigation updates the existing viewer in place. Never move the
+// document viewport as a side effect of swipes, guesses or arrow controls.
+// A companion source points to a real already-mounted Quick Card, not a new
+// browser page. Move that original widget into the viewer on explicit tap.
+window.addEventListener('quantaphi:select-source-card',event=>{
+ const id=event.detail?.sourceId;
+ if(typeof id!=='string'||!/^[a-z0-9-]{2,100}$/.test(id))return;
+ const entry=entries.find(e=>e.feedId===id&&e.id==='source-'+id&&available(e));
+ if(!entry){status.textContent='That source card is not available in the current viewer.';return;}
+ viewerTouched=true;selectionVersion++;
+ if(!eligible().includes(entry)){selectedTab='public';updateTabs();}
+ show(entry);
+});
+next.addEventListener('click',()=>advance(1));
+prev.addEventListener('click',()=>advance(-1));
 scroll.addEventListener('click',()=>{
  expanded=!expanded;
  document.body.classList.toggle('oracle-shelf-open',expanded);
@@ -676,7 +641,7 @@ host.addEventListener('click',e=>{
 },true);
 document.body.classList.add('oracle-card-deck-active');
 // Every ready card competes for first placement. The source/museum/product
-// categories and both Cardone cards have no privileged opening positions.
+// categories have no privileged opening positions.
 function chooseOpening(){
  const ready=eligible();if(!ready.length)return null;
  // Each visit starts with another family; 116 accepted brands no longer monopolize
@@ -722,6 +687,8 @@ const observe=new MutationObserver(()=>{
 });
 for(const entry of entries)observe.observe(entry.node,{childList:true,subtree:false,attributes:entry.id==='result',attributeFilter:entry.id==='result'?['hidden']:undefined});
 new MutationObserver(registerLateWidgets).observe(document.querySelector('main.app')||document.body,{childList:true,subtree:true});
+registerTrendingMovieCards(); // Recover async movie feed loaded before Oracle.
+registerTrendingAppCards(); // Recover app card mounts loaded before the carousel.
 // Reads & Realms can relocate itself on an async home/search cycle. Keep
 // exactly one live DOM node and never fight the search-mode owner.
 new MutationObserver(()=>{

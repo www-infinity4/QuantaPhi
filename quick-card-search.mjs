@@ -11,6 +11,14 @@ export function showQuickCardMatches(query){
  const grid=el('div','qsr-grid');host.append(grid);
  for(const card of cards){
   const article=el('article','qsr-card');article.dataset.quickCardMatch=card.id;
+// Improvement: add a visible badge to encourage interaction based on daily evidence (73 views, 0 interactions)
+article.classList.add('search-card-improved');
+article.dataset.improved = 'true'; // evidence: 73 views, 0 interactions
+// Ensure the article can contain absolutely positioned elements
+article.style.position='relative';
+const badge=el('span','search-card-improved-badge','Try it!');
+badge.style.cssText='position:absolute;top:4px;right:4px;background:#ff0;color:#000;padding:2px 4px;font-size:0.75rem;border-radius:4px;';
+article.append(badge);
   if(card.internal&&card.shareImage){const image=el('img','qsr-housing-image');image.src=card.shareImage;image.alt='Home Access · Disability Housing';image.style.cssText='width:100%;height:auto;border-radius:12px;display:block';article.append(image);}
   else article.append(createCardArtwork(card,true));
   const body=el('div','qsr-body'),heading=el('h3'),title=el('a','qsr-title',card.name);

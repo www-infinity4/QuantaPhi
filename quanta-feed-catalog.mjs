@@ -25,7 +25,12 @@ export const DISCOVERY_CARDS=Object.freeze([
  card('vam-annual','VAMWorld Annual Studies','Coin varieties','Rotate through notable VAM discoveries','https://www.vamworld.com/wiki/John_Roberts%27_Annual_Lists','Read collector-selected varieties, die markers and discovery context from the attribution community. Do not mirror unlicensed photographs.',{group:'VAM study'}),
  card('instructables','Instructables','DIY','Build useful projects and circuits','https://www.instructables.com/','Read project steps, components and safety guidance from the original creator before building.'),
  card('vintage-toys','Vintage Toys','Collectibles','Explore old toys and original listings','https://www.ebay.com/b/Vintage-Antique-Toys/19071/bn_1862650','Discover vintage tin toys, radios, slot cars and collectible lots; investigate condition, originality and seller evidence.',{query:'https://www.ebay.com/sch/i.html?_nkw=vintage+toys'}),
- card('antique-collectibles','Antiques and Collectibles','Collectibles','Research antique listings and history','https://www.ebay.com/b/Antiques/20081/bn_1851017','Compare auction descriptions, provenance, repair history and current listings before collecting.',{query:'https://www.ebay.com/sch/i.html?_nkw=antiques'})
+ card('antique-collectibles','Antiques and Collectibles','Collectibles','Research antique listings and history','https://www.ebay.com/b/Antiques/20081/bn_1851017','Compare auction descriptions, provenance, repair history and current listings before collecting.',{query:'https://www.ebay.com/sch/i.html?_nkw=antiques'}),
+ card('pcla-picocela','PCLA · PicoCELA','Technology & stocks','Japan · multi-hop wireless mesh · NASDAQ PCLA','https://picocela.com/en/',
+  'PicoCELA Backhaul Engine (PBE) connects access points through multi-hop Wi-Fi backhaul; PicoManager manages networks in the cloud. Infinity is an original visual theme here, not a verified partnership. PCLA closed at $6.10 on November 6, 2026 (dated reference, not a live quote). A 1-for-30 reverse split in January 2026 means old and new prices are not directly comparable: calculate split-adjusted historical returns and actual share counts. Small stocks are volatile; this is not financial advice.',
+  {official:'https://picocela.com/en/',symbol:'PCLA',exchange:'NASDAQ',group:'Wireless mesh technology',
+   marketUrl:'https://finance.yahoo.com/quote/PCLA/history/',quoteDate:'2026-11-06',quoteCloseUsd:6.10,
+   splitRatio:'1-for-30',status:'Dated stock reference, not live; informational only.'})
 ]);
 export const findDiscovery=id=>DISCOVERY_CARDS.find(x=>x.id===id)||null;
 export function safeDiscovery(card){
