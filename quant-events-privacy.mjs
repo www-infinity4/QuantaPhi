@@ -42,9 +42,9 @@ function humanError(error) {
   const reason=String(error?.message||'');
   if(reason==='verified_wallet_required')return 'Sign into your existing QuantaPhi Wallet in this browser to manage analytics.';
   if(['event_collection_disabled','consent_management_disabled','consent_service_unavailable','service_unavailable'].includes(reason)){
-    return 'This preference service is not active yet. No consent was changed.';
+    return 'This preference service is not active yet. No change could be confirmed.';
   }
-  if(reason==='wallet_session_not_verified')return 'Wallet sign-in could not be verified. No consent was changed.';
+  if(reason==='wallet_session_not_verified')return 'Wallet sign-in could not be verified. No change could be confirmed.';
   if(reason==='analytics_consent_required')return 'Your analytics consent has not been granted.';
   return 'Unable to verify this preference ('+(reason||'connection_failed')+'). No change confirmed.';
 }
