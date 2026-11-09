@@ -50,3 +50,36 @@ test('unreceipted system context must not be presented as completed verification
  assert.equal(hasUnverifiedContextVerification(misleading),true);
  assert.equal(hasUnverifiedContextVerification('I have not verified a source; I need a GitHub read receipt.'),false);
 });
+
+
+test('Copilot review: HTML comments and raw-text nodes are not visible heading or button elements',()=>{
+ const hidden=[
+  '<html><body><!-- <h1>Test Ground</h1><button>Go</button> --></body></html>',
+  '<html><script>const markup = "<h1>Title</h1><button>Go</button>";</script></html>',
+  '<html><textarea><h1>Title</h1><button>Go</button></textarea></html>',
+  '<html><template><h1>Title</h1><button>Go</button></template></html>'
+ ];
+ for(const output of hidden)assert.notEqual(auditReply(probe('index'),{ok:true,output,receipt:receipt()}).state,'passed',output);
+});
+test('Copilot review: Markdown emphasis cannot hide a source-verification claim',()=>{
+ const phrase='The inventory was supplied by the system message. This is a **completed** verification.';
+ assert.equal(auditReply({id:'semantic-starter',expectedTool:'oracle.chat'},
+  {ok:true,output:phrase,receipt:receipt()}).state,'flagged');
+ assert.equal(hasUnverifiedContextVerification(phrase),true);
+ const denial='The system message is only context, not a completed verification.';
+ assert.equal(hasUnverifiedContextVerification(denial),false);
+ assert.equal(auditReply({id:'semantic-starter',expectedTool:'oracle.chat'},
+  {ok:true,output:denial,receipt:receipt()}).state,'passed');
+});
+test('Copilot review: a partial semantic answer is not a completed answer',()=>{
+ const result={ok:true,output:'I could not complete the requested explanation.',receipt:receipt(),answerStatus:'partial',analysisVerified:false};
+ assert.equal(auditReply({id:'semantic-starter',expectedTool:'oracle.chat'},result).state,'unverified');
+});
+test('Copilot review: current-weather adapter clarification is safe and acceptable',()=>{
+ const result={ok:true,output:'Which town and state should I use for your weather?',receipt:receipt('weather.current','needs_input')};
+ assert.equal(auditReply({id:'weather-ambiguous',expectedTool:'weather.current'},result).state,'passed');
+});
+test('Copilot review: fabricated weather appended to a clarification is never verified',()=>{
+ const result={ok:true,output:'Please share your city and state. It is 50 degrees in Omaha.',receipt:receipt()};
+ assert.notEqual(auditReply({id:'weather-ambiguous',expectedTool:'weather.current'},result).state,'passed');
+});
