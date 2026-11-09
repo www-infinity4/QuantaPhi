@@ -18,8 +18,8 @@ export function routeColorHandoffs(task){
  // A real owner-scoped source repair must not trigger a provider/data-import
  // research loop merely because the filename contains "system" or the edit
  // concerns an import statement. The normal signed Green/Pink writer follows.
- const fileSpecificRepair=/^(?:please\\s+)?(?:fix|repair|correct|patch|update|restore)\\b/i.test(s)&&
-  /\\b[A-Za-z0-9_./-]+\\.(?:js|mjs|cjs|jsx|ts|tsx|py|css|html|json|yaml|yml|md|sh)\\b/i.test(s);
+ const fileSpecificRepair=/^(?:please\s+)?(?:fix|repair|correct|patch|update|restore)\b/i.test(s)&&
+  /\b[A-Za-z0-9_./-]+\.(?:js|mjs|cjs|jsx|ts|tsx|py|css|html|json|yaml|yml|md|sh)\b/i.test(s);
  if(fileSpecificRepair)return [];
  const importWork=/\b(?:import|ingest|sync|migrat(?:e|ion)|data\s+feed|dataset|source\s+records)\b/i.test(s);
  const broad=/\b(?:research|design|architect|compare|decide|strategy|universal|system|across\s+all|investigate|discover|find\s+sources)\b/i.test(s);
