@@ -3,348 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T11:31:29.739497Z",
+  "checked_at": "2026-11-09T12:01:58.733978Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "senfronia thompson",
+      "query": "when does gta 6 come out",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-09T11:40:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/paultassi/2026/11/07/an-update-on-a-possible-gta-6-pc-release-date-plans-due-to-ai/",
+        "https://arstechnica.com/gaming/2026/11/could-potential-ai-clones-of-gta-vi-force-a-quicker-official-port/",
+        "https://kotaku.com/former-rockstar-developer-says-they-should-hurry-up-on-gta-6s-pc-version-before-ai-gets-there-first-2000754810"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSu6xoWhkLWZcGeFF80-eey_X7uGe16pvJiOQHOPerHM9RTLMrJ-6NYDO99Dec",
+      "image_credit": "Forbes",
+      "news": [
+        {
+          "url": "https://www.forbes.com/sites/paultassi/2026/11/07/an-update-on-a-possible-gta-6-pc-release-date-plans-due-to-ai/",
+          "title": "An Update On A Possible ‘GTA 6’ PC Release Date Plans, Due To AI",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSu6xoWhkLWZcGeFF80-eey_X7uGe16pvJiOQHOPerHM9RTLMrJ-6NYDO99Dec"
+        },
+        {
+          "url": "https://arstechnica.com/gaming/2026/11/could-potential-ai-clones-of-gta-vi-force-a-quicker-official-port/",
+          "title": "Could potential AI clones of GTA VI force a quicker official port?",
+          "publisher": "Ars Technica",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtBbq1-zllBJdA1YQzjB0uI7SnInGhfpQi_PxkP9CW0NdFqnUihg6dQmwvPvA"
+        },
+        {
+          "url": "https://kotaku.com/former-rockstar-developer-says-they-should-hurry-up-on-gta-6s-pc-version-before-ai-gets-there-first-2000754810",
+          "title": "Former Rockstar Developer Says They Should Hurry Up On GTA 6’s PC Version Before AI Gets There First",
+          "publisher": "Kotaku",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdAm-EVqaddIFlRmWd6STgIjBTJ82Q_nXvejHoo9GP9kVke9zc7YbhiEVihLg"
+        }
+      ]
+    },
+    {
+      "query": "paulina porizkova",
       "approx_searches": "200+",
-      "published_at": "2026-11-09T11:10:00Z",
+      "published_at": "2026-11-09T11:40:00Z",
       "related_news_urls": [
-        "https://www.statesman.com/news/columns/article/senfronia-thompson-texas-house-speaker-new-era-22516981.php",
-        "https://www.houstonchronicle.com/politics/texas-take/article/senfronia-thompson-isn-t-dwelling-racial-22517421.php",
-        "https://www.texastribune.org/2026/11/06/texas-governor-speaker-big-three-women-midterms-2026/"
+        "https://www.nytimes.com/2026/11/09/opinion/paulina-porizkova-nyt-175.html",
+        "https://www.upworthy.com/model-paulina-porizkova-asks-us-to-imagine-a-world-where-older-beauty-is-admired-and-respected/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyvdqwtg5HUBtWW3f83iPRvqxazlyhy2a8ZN-pP1KddxriM4safeFRb1WtbEQ",
-      "image_credit": "Austin American-Statesman",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2EFtqNpeBmzB1inBBDFZdqCbx6dDNiRAT3t4pfSZETU3F3rCGSzXVShV80mI",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.statesman.com/news/columns/article/senfronia-thompson-texas-house-speaker-new-era-22516981.php",
-          "title": "After 54 years in the Texas House, Senfronia Thompson is poised to make history",
-          "publisher": "Austin American-Statesman",
+          "url": "https://www.nytimes.com/2026/11/09/opinion/paulina-porizkova-nyt-175.html",
+          "title": "Opinion | Paulina Porizkova: Why I Now Call Myself a Feminist",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyvdqwtg5HUBtWW3f83iPRvqxazlyhy2a8ZN-pP1KddxriM4safeFRb1WtbEQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2EFtqNpeBmzB1inBBDFZdqCbx6dDNiRAT3t4pfSZETU3F3rCGSzXVShV80mI"
         },
         {
-          "url": "https://www.houstonchronicle.com/politics/texas-take/article/senfronia-thompson-isn-t-dwelling-racial-22517421.php",
-          "title": "The first Black Speaker of the House isn't dwelling on her racial background",
-          "publisher": "Houston Chronicle",
+          "url": "https://www.upworthy.com/model-paulina-porizkova-asks-us-to-imagine-a-world-where-older-beauty-is-admired-and-respected/",
+          "title": "Model Paulina Porizkova asks us to imagine a world where 'older beauty' is admired and respected",
+          "publisher": "Upworthy",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPNsfiXrk4Im1gaK9qExz8jKkJg0zElxzbcdNHIyNSySWTJQ14AB6S7xvWnIw"
-        },
-        {
-          "url": "https://www.texastribune.org/2026/11/06/texas-governor-speaker-big-three-women-midterms-2026/",
-          "title": "Texas’ “Big Three” set to all be women for the first time",
-          "publisher": "The Texas Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJWnSU8PPlHeTpxkkSr7ySerldgzOKUIIpJKYrW0qZxI7IGUmUE_plL9s0VoA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJwRNLKsFDm-YBiweGDQZO0KoVSdkBplCuncJzE-Sm9hfZPRl7oBh_ieWKKxY"
         }
       ]
     },
     {
-      "query": "twilight",
+      "query": "law enforcement",
       "approx_searches": "100+",
-      "published_at": "2026-11-09T11:10:00Z",
+      "published_at": "2026-11-09T11:40:00Z",
       "related_news_urls": [
-        "https://www.whats-on-netflix.com/news/midnight-sun-netflix-two-season-order/",
-        "https://knightedgemedia.com/2026/11/sadie-stanley-julien-grey-will-star-netflixs-twilight-midnight-sun-exclusive/",
-        "https://www.cbr.com/twilight-netflix-reboot-bella-edward/"
+        "https://www.npr.org/2026/11/09/nx-s1-6013575/supreme-court-federal-law-enforcement-prison-rights",
+        "https://www.usatoday.com/story/news/politics/2026/11/08/supreme-court-lawsuits-federal-agents-ice/92630798007/",
+        "https://www.scotusblog.com/2026/11/court-to-hear-argument-on-whether-and-when-federal-officials-can-be-held-liable-for-violations-o/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZTU8TgcFDcTy2vvL_q7YrfClSdzN81DiiqO1U4CujrhydqJk4_lGP4cnM5DM",
-      "image_credit": "What's on Netflix",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9prYL48g7jD7PyBaMCIWyu88nuz8VsgWVagWDeKI8JEV3NGYTiPcVncYncRw",
+      "image_credit": "NPR",
       "news": [
         {
-          "url": "https://www.whats-on-netflix.com/news/midnight-sun-netflix-two-season-order/",
-          "title": "Netflix’s Animated ‘Twilight’ Series Gets Major Update: Two Seasons Confirmed",
-          "publisher": "What's on Netflix",
+          "url": "https://www.npr.org/2026/11/09/nx-s1-6013575/supreme-court-federal-law-enforcement-prison-rights",
+          "title": "Supreme Court weighs effort to shield federal law enforcement as ICE complaints rise",
+          "publisher": "NPR",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZTU8TgcFDcTy2vvL_q7YrfClSdzN81DiiqO1U4CujrhydqJk4_lGP4cnM5DM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9prYL48g7jD7PyBaMCIWyu88nuz8VsgWVagWDeKI8JEV3NGYTiPcVncYncRw"
         },
         {
-          "url": "https://knightedgemedia.com/2026/11/sadie-stanley-julien-grey-will-star-netflixs-twilight-midnight-sun-exclusive/",
-          "title": "Sadie Stanley & Julian Grey Will Co-Star in Netflix’s ‘Twilight: Midnight Sun’ Series (EXCLUSIVE)",
-          "publisher": "Knight Edge Media",
+          "url": "https://www.usatoday.com/story/news/politics/2026/11/08/supreme-court-lawsuits-federal-agents-ice/92630798007/",
+          "title": "Supreme Court case could end lawsuits against federal agents like ICE",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYQFr0w4IqydK83BLSZKDLiEeWS4T53qIyb8c_DJzzTA7d3_gq6RowY1e-jnU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlRorKFw72riD3ub2LYYoWWrsJu2vlISdRwGmOb7R37iLxESX7KmhOMTcVx84"
         },
         {
-          "url": "https://www.cbr.com/twilight-netflix-reboot-bella-edward/",
-          "title": "Netflix's Twilight Reboot Recasts Bella Swan and Edward Cullen",
-          "publisher": "Comic Book Resources",
+          "url": "https://www.scotusblog.com/2026/11/court-to-hear-argument-on-whether-and-when-federal-officials-can-be-held-liable-for-violations-o/",
+          "title": "Court to hear argument on whether and when federal officials can be held liable for violations of the Constitution",
+          "publisher": "SCOTUSblog",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMZBWLEl_b9c3nMn4iBVh8YJFfg_eFlbM9V1AnlpIH8Ji6tS6hvT612BOdLLQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_EoQy8CysBJxKynFFfWAtlCSPQ_de1QuytIqtDlq9EkX0Z3V_nmC0a3NAhi8"
         }
       ]
     },
     {
-      "query": "central florida floods",
+      "query": "stock market bubble",
       "approx_searches": "100+",
-      "published_at": "2026-11-09T11:10:00Z",
+      "published_at": "2026-11-09T11:40:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/2026/11/02/weather/storm-flooding-arizona-colorado-election-day-climate",
-        "https://www.nbcnews.com/weather/floods/floods-severe-weather-beset-parts-us-election-day-rcna607186",
-        "https://cbs12.com/news/local/see-updated-polling-locations-due-to-severe-weather-across-south-florida-florida-news-florida-election-news-flooding-severe-weather"
+        "https://www.cnbc.com/2026/11/08/stock-market-today-live-updates.html",
+        "https://www.bloomberg.com/news/articles/2026-11-09/market-vulnerability-has-been-exposed-for-good-taking-stock",
+        "https://finance.yahoo.com/markets/article/ai-stocks-like-nvidia-micron-and-sandisk-have-been-blown-up-but-keep-this-in-mind-110000652.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVqaoG-Uu7zqdCWv3dJJONsb-GxjO5VoCNKy1HLU1b_Cjo1B_AARSWQRFo-Ow",
-      "image_credit": "CNN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrhYSPM05Do1c7P0sxNzYdt1sHgZUdwwPwbTChyd_bRkpRwUOE86zqgz3V2vY",
+      "image_credit": "CNBC",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/02/weather/storm-flooding-arizona-colorado-election-day-climate",
-          "title": "Storm soaks central US on Election Day after causing deadly flooding, voting disruptions in Southwest",
-          "publisher": "CNN",
+          "url": "https://www.cnbc.com/2026/11/08/stock-market-today-live-updates.html",
+          "title": "Nasdaq futures are lower as investors eye AI trade, brace for more data and earnings: Live updates",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVqaoG-Uu7zqdCWv3dJJONsb-GxjO5VoCNKy1HLU1b_Cjo1B_AARSWQRFo-Ow"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrhYSPM05Do1c7P0sxNzYdt1sHgZUdwwPwbTChyd_bRkpRwUOE86zqgz3V2vY"
         },
         {
-          "url": "https://www.nbcnews.com/weather/floods/floods-severe-weather-beset-parts-us-election-day-rcna607186",
-          "title": "Floods and severe weather beset parts of the U.S. on Election Day",
-          "publisher": "NBC News",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-09/market-vulnerability-has-been-exposed-for-good-taking-stock",
+          "title": "Market Vulnerability Has Been Exposed for Good",
+          "publisher": "Bloomberg.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3Tu8p9-ET5bHUMw8kc4eQeekkZzjCcgegOLP3AKj_grDIuOS3sM_TC7Xk_68"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnUvyV52J_eStzn2MRdkIlOhP2hte27TB3gmR2O3M-MmQJ6WSyuveFMeAD2CM"
         },
         {
-          "url": "https://cbs12.com/news/local/see-updated-polling-locations-due-to-severe-weather-across-south-florida-florida-news-florida-election-news-flooding-severe-weather",
-          "title": "See updated polling locations due to severe weather across South Florida",
-          "publisher": "WPEC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIM6THxh7nh8Zqh2rsabLfB1NRVA4ULJ6qf5pIYBg_fEKIJzvIbOpqDrusMqQ"
-        }
-      ]
-    },
-    {
-      "query": "tsm stock",
-      "approx_searches": "100+",
-      "published_at": "2026-11-09T11:10:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/video/nvidia-amd-tsmc-asml-semiconductor-215745728.html",
-        "https://www.fool.com/investing/2026/11/07/not-nvidia-not-micron-after-the-chip-sell-off-id-b/",
-        "https://www.theglobeandmail.com/investing/markets/stocks/AMD/pressreleases/8725513/this-stock-is-a-nearly-guaranteed-winner-from-the-ai-infrastructure-buildout/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSO8e6mXzDng3BOXGjKrq5iMLbc-Zg9n4sWeHMLULrVUE9lJuICWiM9OofvkJg",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/video/nvidia-amd-tsmc-asml-semiconductor-215745728.html",
-          "title": "NVIDIA, AMD, TSMC And ASML Are His Semiconductor Picks",
+          "url": "https://finance.yahoo.com/markets/article/ai-stocks-like-nvidia-micron-and-sandisk-have-been-blown-up-but-keep-this-in-mind-110000652.html",
+          "title": "AI stocks like Nvidia, Micron, and Sandisk have been blown up, but keep this in mind",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSO8e6mXzDng3BOXGjKrq5iMLbc-Zg9n4sWeHMLULrVUE9lJuICWiM9OofvkJg"
-        },
-        {
-          "url": "https://www.fool.com/investing/2026/11/07/not-nvidia-not-micron-after-the-chip-sell-off-id-b/",
-          "title": "Not Nvidia. Not Micron. After the Chip Sell-Off, I'd Buy This AI Stock and Hold It Forever.",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3fzKwL-Z0ORWL8FC270FV8dv3M2D3vhUayb0rSfvy3SyC8nbDfh1uEF8Y6TA"
-        },
-        {
-          "url": "https://www.theglobeandmail.com/investing/markets/stocks/AMD/pressreleases/8725513/this-stock-is-a-nearly-guaranteed-winner-from-the-ai-infrastructure-buildout/",
-          "title": "This Stock Is a Nearly Guaranteed Winner From the AI Infrastructure Buildout",
-          "publisher": "The Globe and Mail",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQF3Io6lgvl0g8HXULdNChR9i6SxRnf6iUU29m8Wx7ur8A_RzoXff2Hd6KAzvE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0wFSOLLTdQwh-FcKMYaQely8l7qD3mURtKoJwb9RqCnXuVj-fp63AJU5__wU"
         }
       ]
     },
     {
-      "query": "cher",
+      "query": "the young and the restless",
       "approx_searches": "100+",
-      "published_at": "2026-11-09T11:10:00Z",
+      "published_at": "2026-11-09T11:40:00Z",
       "related_news_urls": [
-        "https://www.denverpost.com/2026/11/09/diva-exhibit-gowns-cher-gaga-denver-art-museum/",
-        "https://www.denverartmuseum.org/en/blog/diva-part-fashion-exhibition-part-music-history-lesson",
-        "https://www.westword.com/arts-culture/see-costumes-worn-by-100-iconic-performers-denver-art-museum-40954847/"
+        "https://www.yahoo.com/entertainment/tv/articles/young-restless-spoilers-weekly-adam-051800057.html",
+        "https://michaelfairmantv.com/the-young-and-the-restless-preview-new-episodes-jamey-giddens-dan-oconner-begin-to-air/2026/11/08/",
+        "https://soapoperamagazine.com/the-young-and-the-restless-spoilers/yr-comings-and-goings-november-9-13/11/08/2026/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9NSK8aIyqt-P2fC3O67X9FnEEHMDUmVwaGr_OuEuoTtRFkdNnC7IxE9qaTJo",
-      "image_credit": "The Denver Post",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0wOnNhXm0mTq-x7ARBhNonfBD0BDEsyobF--1D4BhUWLnaQo5vXQ42l9OSmI",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.denverpost.com/2026/11/09/diva-exhibit-gowns-cher-gaga-denver-art-museum/",
-          "title": "'Diva' sashays into Denver with gowns from Cher, Dolly, Gaga and more",
-          "publisher": "The Denver Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9NSK8aIyqt-P2fC3O67X9FnEEHMDUmVwaGr_OuEuoTtRFkdNnC7IxE9qaTJo"
-        },
-        {
-          "url": "https://www.denverartmuseum.org/en/blog/diva-part-fashion-exhibition-part-music-history-lesson",
-          "title": "DIVA is 'part fashion exhibition, part music history lesson, part celebrity time machine'",
-          "publisher": "Denver Art Museum",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBta-Ye2Vv3sMQ38_Nxfw3bDP5F12y0wiYy-StfFaPMJ1COoYnE5VfODbVM0I"
-        },
-        {
-          "url": "https://www.westword.com/arts-culture/see-costumes-worn-by-100-iconic-performers-denver-art-museum-40954847/",
-          "title": "See garments worn by 100 iconic performers in ‘DIVA’ at the DAM",
-          "publisher": "Westword",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoZbXfbtvpfasiQ7sKS_NcIfp078h9P3MYEXxZ4IzI5EwHDXORQ4xAaE6Ff3c"
-        }
-      ]
-    },
-    {
-      "query": "steelers depot",
-      "approx_searches": "100+",
-      "published_at": "2026-11-09T11:00:00Z",
-      "related_news_urls": [
-        "https://www.post-gazette.com/sports/steelers/2026/11/08/steelers-nfl-trade-deadline/stories/202611080083",
-        "https://www.cbssports.com/nfl/news/nfl-trade-deadline-4-trade-options-steelers-super-bowl-contender/",
-        "https://www.behindthesteelcurtain.com/pittsburgh-steelers-news/177584/steelers-veteran-linebacker-tabbed-as-trade-candidate"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTznZKt02hH_iORIby9IVoFSznfq5TBNesAp57CTWi1BISqjuFHb2LkPlsknW0",
-      "image_credit": "Pittsburgh Post-Gazette",
-      "news": [
-        {
-          "url": "https://www.post-gazette.com/sports/steelers/2026/11/08/steelers-nfl-trade-deadline/stories/202611080083",
-          "title": "The Steelers are more interested in depth than difference makers at the NFL trade deadline",
-          "publisher": "Pittsburgh Post-Gazette",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTznZKt02hH_iORIby9IVoFSznfq5TBNesAp57CTWi1BISqjuFHb2LkPlsknW0"
-        },
-        {
-          "url": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-4-trade-options-steelers-super-bowl-contender/",
-          "title": "NFL Trade Deadline: 4 mock trades that would make Steelers a true Super Bowl contender",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_qTAY-h4I7K-VRh7f2y15EahYyPCr4ymrzNm5ZnLagIZb2QFCRvMVV2B-jCY"
-        },
-        {
-          "url": "https://www.behindthesteelcurtain.com/pittsburgh-steelers-news/177584/steelers-veteran-linebacker-tabbed-as-trade-candidate",
-          "title": "Steelers veteran linebacker tabbed as trade candidate",
-          "publisher": "Behind the Steel Curtain",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJjR5e-SZ-p7bdydkMk8uBY5nDTAo2LVmm7XkaeT12iNryMmiXFDt7EK939bc"
-        }
-      ]
-    },
-    {
-      "query": "who is elizabeth holmes",
-      "approx_searches": "100+",
-      "published_at": "2026-11-09T11:00:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/tv/news/snl-druski-whiteface-elizabeth-holmes-nathan-fielder-you-can-see-everything-parody-1236942289/",
-        "https://www.yahoo.com/entertainment/celebrity/articles/michael-b-jordan-austin-butler-182825599.html",
-        "https://www.nbc.com/nbc-insider/watch-druski-november-7-snl-sketches-emma-stone-monologue"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNF0lWJE-Ut28rdcFA-Q1Zv3mDFbzWLD_DCrQpDYvlDrWhpFG8hSQ7U5iUzB0",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/tv/news/snl-druski-whiteface-elizabeth-holmes-nathan-fielder-you-can-see-everything-parody-1236942289/",
-          "title": "‘SNL’: Druski Dons Whiteface as Elizabeth Holmes in ‘You Can See Everything’ Parody",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNF0lWJE-Ut28rdcFA-Q1Zv3mDFbzWLD_DCrQpDYvlDrWhpFG8hSQ7U5iUzB0"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/michael-b-jordan-austin-butler-182825599.html",
-          "title": "Michael B. Jordan and Austin Butler make blink-and-you’ll-miss-em cameos on “SNL”",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/young-restless-spoilers-weekly-adam-051800057.html",
+          "title": "Young and the Restless Spoilers Weekly Update: Adam’s Evidence Could Give Jack the Upper Hand",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeBMX-nxL1LPqvyL3UBlpvgWpdiM7ho5_JBrywn8czkQeygNTrAqc-bhI2yGI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0wOnNhXm0mTq-x7ARBhNonfBD0BDEsyobF--1D4BhUWLnaQo5vXQ42l9OSmI"
         },
         {
-          "url": "https://www.nbc.com/nbc-insider/watch-druski-november-7-snl-sketches-emma-stone-monologue",
-          "title": "Watch All of Druski's SNL Sketches & Monologue from November 7, 2026",
-          "publisher": "NBC TV",
+          "url": "https://michaelfairmantv.com/the-young-and-the-restless-preview-new-episodes-jamey-giddens-dan-oconner-begin-to-air/2026/11/08/",
+          "title": "THE YOUNG AND THE RESTLESS Preview: Episodes From New Co-Head Writers, Jamey Giddens and Dan O'Connor, Begin to Air",
+          "publisher": "Michael Fairman TV",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjrdj55KHftYdkAa2Tdkh5icqKu0f3BATUAaENbF7lMOjGylDoI44PNiqw9F4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAELtR6IcRUT-eWZjSAKktsp_NrjPWp1t9zNs3CNvRJg1T9BuLhfyeL-TVsi4"
+        },
+        {
+          "url": "https://soapoperamagazine.com/the-young-and-the-restless-spoilers/yr-comings-and-goings-november-9-13/11/08/2026/",
+          "title": "Y&R Comings and Goings: A Long-Awaited Reunion Arrives, a Crowd Gathers, and a Doctor Makes Enemies",
+          "publisher": "Soap Opera Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiA68Ti9jMhR_fPEi8E_OakiHimREc2c-JPAkofTp8WsZVax1dFw1Wp2NDkNY"
         }
       ]
     },
     {
-      "query": "growth stock",
+      "query": "dallas weather",
       "approx_searches": "100+",
-      "published_at": "2026-11-09T11:00:00Z",
+      "published_at": "2026-11-09T11:40:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/once-decade-opportunity-1-super-200500894.html",
-        "https://www.fool.com/investing/2026/11/08/is-dutch-bros-stock-a-buy-as-shares-plunge/",
-        "https://www.nrn.com/quick-service/dutch-bros-stock-plummets-amid-competition-concerns"
+        "https://www.fox4news.com/weather/dallas-weather-cooler-temperatures-slight-rain-chances-weekend",
+        "https://www.dallasnews.com/news/weather/article/dallas-weather-cool-cloudy-weekend-tap-north-22512108.php",
+        "https://www.nbcdfw.com/video/video-weather/nbc-5-forecast-overnight-rain-has-pushed-out-cooler-air-pushing-in-with-sunshine/4100212/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJF0OX0BWl8C8orKCJeTCauQI4pzXSmaZLIz50KP-ux614HekiqLSKTlxmdzg",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCRYy3HlCjLnQCkOlIgoNHbypYQvefQRuUkj5pcKIssCbz3zUgXZeSOWM07T8",
+      "image_credit": "FOX 4 News Dallas-Fort Worth",
+      "news": [
+        {
+          "url": "https://www.fox4news.com/weather/dallas-weather-cooler-temperatures-slight-rain-chances-weekend",
+          "title": "Dallas Weather: Cooler temperatures, slight rain chances this weekend",
+          "publisher": "FOX 4 News Dallas-Fort Worth",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCRYy3HlCjLnQCkOlIgoNHbypYQvefQRuUkj5pcKIssCbz3zUgXZeSOWM07T8"
+        },
+        {
+          "url": "https://www.dallasnews.com/news/weather/article/dallas-weather-cool-cloudy-weekend-tap-north-22512108.php",
+          "title": "Dallas weather: Cool, cloudy weekend on tap in North Texas",
+          "publisher": "Dallas News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzLAutXwWFdFXuK167IZYm_qfehOf5vfmER3gsxunP-ynBK7y2FcqHBHU_WPA"
+        },
+        {
+          "url": "https://www.nbcdfw.com/video/video-weather/nbc-5-forecast-overnight-rain-has-pushed-out-cooler-air-pushing-in-with-sunshine/4100212/",
+          "title": "NBC 5 Forecast: Overnight rain has pushed out, cooler air pushing in with sunshine",
+          "publisher": "NBC 5 Dallas-Fort Worth",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgDT2NqjV9PxrkRxAT8X6Q3jCwR8PDf1z_mkh3Nn6WdISL33Grcc-IkBqp-Uc"
+        }
+      ]
+    },
+    {
+      "query": "tradewinds st pete",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T11:40:00Z",
+      "related_news_urls": [
+        "https://www.wtsp.com/article/news/local/pinellascounty/fire-st-pete-beach-tradewinds-resort/67-ad969817-8831-4407-8538-82d80f4f1aaa",
+        "https://www.wfla.com/news/pinellas-county/firefighters-contain-structure-fire-at-st-pete-beach-resort/",
+        "https://www.tampabay.com/news/pinellas/2026/11/08/tradewinds-fire-stpetebeach-resort/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZXR6rxdiZRmjOuPoRAtblPnSR2snnLQ4UPlpzz-HK2abgQTgVaCFrpbYFrOQ",
+      "image_credit": "wtsp.com",
+      "news": [
+        {
+          "url": "https://www.wtsp.com/article/news/local/pinellascounty/fire-st-pete-beach-tradewinds-resort/67-ad969817-8831-4407-8538-82d80f4f1aaa",
+          "title": "Fire at TradeWinds in St. Pete Beach contained after two-alarm response",
+          "publisher": "wtsp.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZXR6rxdiZRmjOuPoRAtblPnSR2snnLQ4UPlpzz-HK2abgQTgVaCFrpbYFrOQ"
+        },
+        {
+          "url": "https://www.wfla.com/news/pinellas-county/firefighters-contain-structure-fire-at-st-pete-beach-resort/",
+          "title": "Firefighters contain structure fire at St. Pete Beach resort",
+          "publisher": "WFLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcrtXV4uZ7TYOugcQDN2Oj3AqghUIlmqtDKTFbwil29KflkhDeOStY4caCkak"
+        },
+        {
+          "url": "https://www.tampabay.com/news/pinellas/2026/11/08/tradewinds-fire-stpetebeach-resort/",
+          "title": "Fire crews respond to blaze at Trade Winds Resort in St. Pete Beach",
+          "publisher": "Tampa Bay Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGuuUpezIgwjmVr9_8q-X7ikWKa59SA4RlZUKtuikVUMyjrVH2fiJFceWejwI"
+        }
+      ]
+    },
+    {
+      "query": "amd stock price",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T11:30:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/technology/ai/articles/lisa-su-expects-80-revenue-142611269.html",
+        "https://seekingalpha.com/article/4964583-amd-100-billion-target-appears-set",
+        "https://arstechnica.com/gadgets/2026/11/amds-record-quarter-data-center-business-doubles-while-gaming-craters/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsbeCoCNUrSIzGARTxhM4oaI30sEQhPZ45HoNE-LAEGM2exG2zd_1mDQWIc3M",
       "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/once-decade-opportunity-1-super-200500894.html",
-          "title": "A Once-in-a-Decade Opportunity: 1 Super Growth Stock Down 58% to Buy and Hold for a Decade",
+          "url": "https://finance.yahoo.com/technology/ai/articles/lisa-su-expects-80-revenue-142611269.html",
+          "title": "Lisa Su Expects 80% Revenue Growth in 2027. AMD Stock Is Still a Strong Buy, But It Demands Flawless Execution.",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJF0OX0BWl8C8orKCJeTCauQI4pzXSmaZLIz50KP-ux614HekiqLSKTlxmdzg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsbeCoCNUrSIzGARTxhM4oaI30sEQhPZ45HoNE-LAEGM2exG2zd_1mDQWIc3M"
         },
         {
-          "url": "https://www.fool.com/investing/2026/11/08/is-dutch-bros-stock-a-buy-as-shares-plunge/",
-          "title": "Is Dutch Bros Stock a Buy as Shares Plunge?",
+          "url": "https://seekingalpha.com/article/4964583-amd-100-billion-target-appears-set",
+          "title": "AMD: $100 Billion Revenue Target Appears Set (NASDAQ:AMD)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn7BCILZmL7SwrjBKDlJiH-R53dSXyjZHlF_--OspeGEp_t3VjKuAOIv7aWUw"
+        },
+        {
+          "url": "https://arstechnica.com/gadgets/2026/11/amds-record-quarter-data-center-business-doubles-while-gaming-craters/",
+          "title": "AMD’s record quarter: Data center business doubles, while gaming craters",
+          "publisher": "Ars Technica",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfllJbhVn70qiLMMAKjLuTvI-LYz18oTQl7rdznhz1wfGaor0XOGXpHaF4C6s"
+        }
+      ]
+    },
+    {
+      "query": "el niño",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T11:30:00Z",
+      "related_news_urls": [
+        "https://es-us.noticias.yahoo.com/blades-brown-campe%C3%B3n-world-wide-203648193.html",
+        "https://www.telemundodelmarva.com/deportes/el-adolescente-blades-brown-gana-en-m-xico-y-es-el-campe-n-m-s/article_fd9d526d-5377-5a94-b567-b7512b66937f.html",
+        "https://es-us.noticias.yahoo.com/ni%C3%B1o-cumpli%C3%B3-sue%C3%B1o-012813663.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlX94KPJyEuEE8v8uTsPaGIX_B77RBr4DQ338WmENrFSZzG8ZmjHX79Ee0v0c",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://es-us.noticias.yahoo.com/blades-brown-campe%C3%B3n-world-wide-203648193.html",
+          "title": "Blades Brown es campeón del World Wide Technology Championship",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlX94KPJyEuEE8v8uTsPaGIX_B77RBr4DQ338WmENrFSZzG8ZmjHX79Ee0v0c"
+        },
+        {
+          "url": "https://www.telemundodelmarva.com/deportes/el-adolescente-blades-brown-gana-en-m-xico-y-es-el-campe-n-m-s/article_fd9d526d-5377-5a94-b567-b7512b66937f.html",
+          "title": "El adolescente Blades Brown gana en México y es el campeón más joven del PGA Tour en 95 años",
+          "publisher": "Telemundo Delmarva",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxoQdWgTJ1Mh7HPUw-OtjFqCv82A57lDm91oJcIQ81kfr3BbPl3pwGayxLA-8"
+        },
+        {
+          "url": "https://es-us.noticias.yahoo.com/ni%C3%B1o-cumpli%C3%B3-sue%C3%B1o-012813663.html",
+          "title": "El niño que cumplió su sueño",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZRm_AhmfQghYpV8_Qy89YuRMtvSAHhL7cQCXnp75RuWy-hf4W14evQls7FXs"
+        }
+      ]
+    },
+    {
+      "query": "avgo stock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T11:30:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/broadcom-just-dropped-15-week-090703801.html",
+        "https://www.fool.com/investing/2026/11/08/broadcom-stock-has-lost-nearly-40-from-its-record-i-d-buy-it-now/",
+        "https://seekingalpha.com/article/4964177-broadcom-the-midterm-selloff-is-a-gift"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8zEptwHVqamweLIcMwuRdlX8stNYLe1x-_XAVYJxAG4MMehmbv8DtLu_sdc4",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/broadcom-just-dropped-15-week-090703801.html",
+          "title": "Broadcom Just Dropped 15% in a Week. Is It Time to Sell, or Load Up?",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8zEptwHVqamweLIcMwuRdlX8stNYLe1x-_XAVYJxAG4MMehmbv8DtLu_sdc4"
+        },
+        {
+          "url": "https://www.fool.com/investing/2026/11/08/broadcom-stock-has-lost-nearly-40-from-its-record-i-d-buy-it-now/",
+          "title": "Broadcom Stock Has Lost Nearly 40% From Its Record. I'd Buy It Now.",
           "publisher": "The Motley Fool",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7UprGL80z1V0pTOm5OO6f9Z2s33vSvBR2iWhPdnMtPM_ISsxJDxN5ofYxlvM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpTvsTYdOKF5uAlKpNghDXsbx1g944xor2ePMvzS35YQI1eANxn93IPIqqBiM"
         },
         {
-          "url": "https://www.nrn.com/quick-service/dutch-bros-stock-plummets-amid-competition-concerns",
-          "title": "Dutch Bros stock plummets amid competition concerns",
-          "publisher": "Nation’s Restaurant News",
+          "url": "https://seekingalpha.com/article/4964177-broadcom-the-midterm-selloff-is-a-gift",
+          "title": "Broadcom: The Midterm Selloff Is A Gift (NASDAQ:AVGO)",
+          "publisher": "Seeking Alpha",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeVbe5fuVu916Kwu58QmRbLzgUr7ty95FDIXBqaPeV3OjI-8oe-Xfk9t4tfNw"
-        }
-      ]
-    },
-    {
-      "query": "olivia culpo",
-      "approx_searches": "100+",
-      "published_at": "2026-11-09T11:00:00Z",
-      "related_news_urls": [
-        "https://people.com/olivia-culpo-takes-baby-son-roman-to-his-first-49ers-game-12244334",
-        "https://nypost.com/2026/11/08/sports/christian-mccaffreys-wife-olivia-culpo-shares-her-49ers-game-breastfeeding-strategy/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROn-pacdnBqEyblrXqQ6RsYMp_bWYNrE51-ZndZRoRYxk1cdRgrHNEABKt2IQ",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/olivia-culpo-takes-baby-son-roman-to-his-first-49ers-game-12244334",
-          "title": "Olivia Culpo Takes Her 5-Week-Old Son Roman to His First 49ers Game: ‘One More Little Fan in the Stands’",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROn-pacdnBqEyblrXqQ6RsYMp_bWYNrE51-ZndZRoRYxk1cdRgrHNEABKt2IQ"
-        },
-        {
-          "url": "https://nypost.com/2026/11/08/sports/christian-mccaffreys-wife-olivia-culpo-shares-her-49ers-game-breastfeeding-strategy/",
-          "title": "Christian McCaffrey’s wife Olivia Culpo shares unfiltered breastfeeding strategy for 49ers game: ‘Who really cares?’",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCGlxQZ85HomfwsbkUgLz5ejsnLrS8GfCdH6JJJr-Xwm2XfV3Hd4CC2VY4MY8"
-        }
-      ]
-    },
-    {
-      "query": "irán",
-      "approx_searches": "100+",
-      "published_at": "2026-11-09T11:00:00Z",
-      "related_news_urls": [
-        "https://www.univision.com/noticias/politica/trump-dice-que-es-altamente-improbable-que-la-guerra-con-iran-se-reanude",
-        "https://cnnespanol.cnn.com/2026/11/08/mundo/trump-iran-ataques-negociaciones-trax",
-        "https://www.wsws.org/es/articles/2026/11/09/exrt-n09.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMStqC_K9_NDTAvLebebd-xard8zoo0LQZ2V-eZ2DZD1odD0ZCyVNhYQxbXHo",
-      "image_credit": "Univision",
-      "news": [
-        {
-          "url": "https://www.univision.com/noticias/politica/trump-dice-que-es-altamente-improbable-que-la-guerra-con-iran-se-reanude",
-          "title": "El presidente Trump dice que es \"altamente improbable\" que se reanuden los ataques contra Irán",
-          "publisher": "Univision",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMStqC_K9_NDTAvLebebd-xard8zoo0LQZ2V-eZ2DZD1odD0ZCyVNhYQxbXHo"
-        },
-        {
-          "url": "https://cnnespanol.cnn.com/2026/11/08/mundo/trump-iran-ataques-negociaciones-trax",
-          "title": "Trump dice que es \"muy poco probable\" que se reanuden los ataques contra Irán si las negociaciones avanzan",
-          "publisher": "CNN en Español",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW0q0ZNEJtXOZGZSlAOrcHkcURYdCdBmWkc3VH-IfO7aSt3LLD-U0xI5Malvo"
-        },
-        {
-          "url": "https://www.wsws.org/es/articles/2026/11/09/exrt-n09.html",
-          "title": "Trump celebra una reunión para planificar la guerra en medio de especulaciones sobre un ataque contra Irán el 9 de noviembre",
-          "publisher": "World Socialist Web Site",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyJ0d4Z-8zJdtqejm5PbK0dv9Lfw6VgrfbEc5Ac6ofA_YYKIhBuR8a8WAcbIE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3RJovtjsS4hrdd4iw0VSLsFmbVPTMWkMWk5WHXgyI_UBy6AAOzy7g5W6my-U"
         }
       ]
     }
