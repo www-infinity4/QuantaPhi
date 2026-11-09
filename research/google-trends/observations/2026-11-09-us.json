@@ -3,9 +3,44 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T10:01:36.195394Z",
+  "checked_at": "2026-11-09T10:31:29.228522Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "lakers kings fan ejected",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T09:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/video/clip/_/id/50388765/fan-ejected-throwing-ball-hard-ref-lakers-kings-game",
+        "https://www.nytimes.com/athletic/7760748/2026/11/06/luka-doncic-referee-half-court-shot/",
+        "https://www.sacbee.com/sports/article317984922.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbvO-kG3Ky7sQZfUTF808iqLklA_X0gkGX515XY88Y16pskMHsGbOIUUc6lkM",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50388765/fan-ejected-throwing-ball-hard-ref-lakers-kings-game",
+          "title": "Fan ejected after throwing ball hard to ref during Lakers-Kings game",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbvO-kG3Ky7sQZfUTF808iqLklA_X0gkGX515XY88Y16pskMHsGbOIUUc6lkM"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7760748/2026/11/06/luka-doncic-referee-half-court-shot/",
+          "title": "Luka Dončić throws ball at referee, gets a technical — then sinks a shot from beyond half court",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwLIa6TjfPP9vsaN61tvwSJ9sy4ezi8Yoc2B4Ib4RAgzAIY4qlyvGO2gXQNgQ"
+        },
+        {
+          "url": "https://www.sacbee.com/sports/article317984922.html",
+          "title": "Kings fan’s ejection — and Lakers star’s reaction — go viral after referee incident",
+          "publisher": "Sacramento Bee",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrE8eUYBNh3dNThGb0S1aBgmTJVuHPXKzF36xoA7uu07Ap83Yzt1JarPse9mw"
+        }
+      ]
+    },
     {
       "query": "the gilded age season 4",
       "approx_searches": "1000+",
@@ -13,7 +48,7 @@
       "related_news_urls": [
         "https://people.com/meet-the-real-life-loves-the-gilded-age-season-4-cast-12236988",
         "https://www.mentalfloss.com/language/slang/gilded-age-society-slang-decoded",
-        "https://www.yahoo.com/entertainment/tv/reviews/articles/gilded-age-season-4-episode-030000826.html"
+        "https://www.vulture.com/article/the-gilded-age-recap-season-4-episode-2-hbo.html"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2qhY_h6R7O-pRYiW3ClRBQMMWB8bpgLkz6UoaOy9bHHZA_8Ff0bVMgHWrBcc",
       "image_credit": "People.com",
@@ -33,11 +68,46 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAqvg_CZpvFjie-utmzLs8hAl-2Pw6dqbK9Ztl_W1sVRX1kKm-N_3VPIt02IY"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/tv/reviews/articles/gilded-age-season-4-episode-030000826.html",
-          "title": "‘The Gilded Age’ Season 4 Episode 2 Ending Explained: Who Tried to Kill George Russell? Morgan Spector Explains Train Daddy’s Wild Choice",
-          "publisher": "Yahoo",
+          "url": "https://www.vulture.com/article/the-gilded-age-recap-season-4-episode-2-hbo.html",
+          "title": "The Gilded Age Recap: A Perfectly Logical Kidnapping",
+          "publisher": "Vulture",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCyD4CvUBZSRqOy9Yb1ksvPNSuehrxjhjYqzsCX-LPSqQzKbLNVuibqZGRTPk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXZlmEJq_rknBvYfv0uLkmJ_9hJEmzuaYfapwkcvE1Ah5lN32s5e7cz4RU1MQ"
+        }
+      ]
+    },
+    {
+      "query": "weather forecast snow storm",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-09T09:30:00Z",
+      "related_news_urls": [
+        "https://www.foxweather.com/weather-news/late-week-snow-northeast-cold-temperatures-us-november-2026",
+        "https://www.localsyr.com/weather/new-noreaster-on-the-way-late-next-week/",
+        "https://www.mcall.com/2026/11/08/lehigh-valley-could-get-severe-weather-thursday-thanks-to-low-pressure-system/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRXSFL6HdXgcDpIQWpT6T3Bg5-8XEwILZOj-S_ij3akbbWe_ekJ9Z9lBpuszo",
+      "image_credit": "FOX Weather",
+      "news": [
+        {
+          "url": "https://www.foxweather.com/weather-news/late-week-snow-northeast-cold-temperatures-us-november-2026",
+          "title": "Potential nor'easter could usher in season's first snow for millions as cold air sweeps across East",
+          "publisher": "FOX Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRXSFL6HdXgcDpIQWpT6T3Bg5-8XEwILZOj-S_ij3akbbWe_ekJ9Z9lBpuszo"
+        },
+        {
+          "url": "https://www.localsyr.com/weather/new-noreaster-on-the-way-late-next-week/",
+          "title": "NEW: Nor’easter on the way late this upcoming week?",
+          "publisher": "WSYR",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT17r5iCxXvzCxZGExSoMiOt8CUdG83TO0J_CFIpxoq3KTtHv_fWTDLDwusmvA"
+        },
+        {
+          "url": "https://www.mcall.com/2026/11/08/lehigh-valley-could-get-severe-weather-thursday-thanks-to-low-pressure-system/",
+          "title": "Coastal storm could bring eastern Pa. severe weather, maybe even snow, this week",
+          "publisher": "The Morning Call",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQHKS8J__NGeuzDbrr-W5EfXsnk6Fut3fAg-58givvgOJJvWB8N4MWCF-QI93g"
         }
       ]
     },
@@ -47,8 +117,8 @@
       "published_at": "2026-11-09T09:30:00Z",
       "related_news_urls": [
         "https://www.espn.com/nfl/story/_/id/50426855/john-harbaugh-says-giants-did-pull-offer-jonathan-taylor",
-        "https://www.nfl.com/news/jonathan-taylor-landing-spots-ranking-top-7-trade-fits-colts-pro-bowl-running-back",
-        "https://www.foxnews.com/outkick-sports/jonathan-taylor-delivers-goodbye-indianapolis-colts-fifth-straight-loss"
+        "https://www.indystar.com/story/sports/nfl/colts/2026/11/09/jonathan-taylor-wont-say-if-he-wants-to-remain-with-colts-as-trade-deadline-nears/92685347007/",
+        "https://www.nfl.com/news/jonathan-taylor-landing-spots-ranking-top-7-trade-fits-colts-pro-bowl-running-back"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxQ7l4Ba-NvZXIrVKoioi4gKU4aL_XaO_sgRdTP7vwuMKJ1hqAy8Q2x5khJy8",
       "image_credit": "ESPN",
@@ -61,53 +131,53 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxQ7l4Ba-NvZXIrVKoioi4gKU4aL_XaO_sgRdTP7vwuMKJ1hqAy8Q2x5khJy8"
         },
         {
+          "url": "https://www.indystar.com/story/sports/nfl/colts/2026/11/09/jonathan-taylor-wont-say-if-he-wants-to-remain-with-colts-as-trade-deadline-nears/92685347007/",
+          "title": "Jonathan Taylor had a chance to say he wants to stay with Colts. He didn't",
+          "publisher": "IndyStar",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDP--UnpXFDd_L0ai3JSAHj9tvcHFMGVgOiPplq_eW1ZWWlfOBK0sMb77prQ0"
+        },
+        {
           "url": "https://www.nfl.com/news/jonathan-taylor-landing-spots-ranking-top-7-trade-fits-colts-pro-bowl-running-back",
           "title": "Jonathan Taylor landing spots: Ranking top 7 trade fits for Colts Pro Bowl running back",
           "publisher": "NFL.com",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPZ_Ilrg0C-q5c0SlpasDnPvQBfJlHYz7ngoP8iJye6T6Pu-fH4LMm-AcWQaw"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick-sports/jonathan-taylor-delivers-goodbye-indianapolis-colts-fifth-straight-loss",
-          "title": "Jonathan Taylor delivers what sounds like a goodbye to Indianapolis after Colts' fifth straight loss",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3xa-D1rD3Hi8kHXrmbXWYC9tnD1lpYCxhtpHMaa-USMMvMPvySBlKmPeUFg4"
         }
       ]
     },
     {
       "query": "hospital",
-      "approx_searches": "5000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-09T09:20:00Z",
       "related_news_urls": [
-        "https://www.theguardian.com/world/2026/nov/09/krakow-shooting-suspected-gunman-dead",
-        "https://www.kcci.com/article/police-gunman-deadly-polish-city-square-shooting-dies/74372828",
-        "https://apnews.com/article/poland-shooting-krakow-market-dead-69a65400657ffd0c8b3fa104bd472b97"
+        "https://www.bbc.com/news/articles/c6y434dw8319o",
+        "https://www.cnn.com/2026/11/09/europe/krakow-shooting-poland-gunman-dead-intl-hnk",
+        "https://www.nbcnews.com/world/europe/krakow-shooting-killed-6-motivated-far-right-views-rcna608080"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ64Kssa_mwTZ9MPsxjtnLJzNA7T6R89DjlFae57MRAYnmZ0mhA33hc9k3QUvM",
-      "image_credit": "The Guardian",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR20la0CQoZKXkwh72Dior4Mwg1aDKDH-FCw58H2mq-6CZxEb5CtgvGhCmAyQk",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.theguardian.com/world/2026/nov/09/krakow-shooting-suspected-gunman-dead",
-          "title": "Kraków shooting suspect who killed six has died, say police in Poland",
-          "publisher": "The Guardian",
+          "url": "https://www.bbc.com/news/articles/c6y434dw8319o",
+          "title": "Krakow shooting suspect has died in hospital, police say",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ64Kssa_mwTZ9MPsxjtnLJzNA7T6R89DjlFae57MRAYnmZ0mhA33hc9k3QUvM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR20la0CQoZKXkwh72Dior4Mwg1aDKDH-FCw58H2mq-6CZxEb5CtgvGhCmAyQk"
         },
         {
-          "url": "https://www.kcci.com/article/police-gunman-deadly-polish-city-square-shooting-dies/74372828",
-          "title": "Police: Gunman who killed at least 6 people in Polish city square dies in hospital",
-          "publisher": "KCCI",
+          "url": "https://www.cnn.com/2026/11/09/europe/krakow-shooting-poland-gunman-dead-intl-hnk",
+          "title": "Gunman who killed at least 6 in Kraków mass shooting has died in hospital",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTte_fLr8RjDGk3OjbXHHLc8lsg8dK-6vnniplys0QJbhzJ9zl9p-NJHnK-UwA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXu4AzDFC4WM5GhFF70ePmX4kI1YTK7O3luPf0YDyk0l-G9MDRa6ucoqTmcio"
         },
         {
-          "url": "https://apnews.com/article/poland-shooting-krakow-market-dead-69a65400657ffd0c8b3fa104bd472b97",
-          "title": "Poles mourn rare mass killing as authorities say attacker had far-right views",
-          "publisher": "AP News",
+          "url": "https://www.nbcnews.com/world/europe/krakow-shooting-killed-6-motivated-far-right-views-rcna608080",
+          "title": "Parents, sister of far-right Kraków shooter found dead in family home",
+          "publisher": "NBC News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy19cQCVoqDWyfhpYbMyOGOnNd5Cvco6x18j_bxDh5Mez3hroI_LH-CbHcAFo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNFeK8vzhzLN-VqcldAGgQ72uAMipHL9YM0CJsJoNZ7hOYR_1HYnH5tGgCnH8"
         }
       ]
     },
@@ -147,8 +217,43 @@
       ]
     },
     {
+      "query": "nfl football",
+      "approx_searches": "200000+",
+      "published_at": "2026-11-09T09:10:00Z",
+      "related_news_urls": [
+        "https://www.nfl.com/news/2026-nfl-season-week-9-what-we-learned-from-sunday-s-games",
+        "https://www.espn.com/nfl/story/_/id/50422026/week-9-overreactions-2026-graziano-trade-deadline-bengals-cowboys",
+        "https://www.bbc.com/sport/american-football/articles/cmdxwxry2pr8o"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdXfPuoKo9B-GVDGBXVJgx9F8moe3OV0DLNWQCc2qVa17BH0LJvhidUisZV80",
+      "image_credit": "NFL.com",
+      "news": [
+        {
+          "url": "https://www.nfl.com/news/2026-nfl-season-week-9-what-we-learned-from-sunday-s-games",
+          "title": "2026 NFL season, Week 9: What We Learned from Sunday's games",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdXfPuoKo9B-GVDGBXVJgx9F8moe3OV0DLNWQCc2qVa17BH0LJvhidUisZV80"
+        },
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50422026/week-9-overreactions-2026-graziano-trade-deadline-bengals-cowboys",
+          "title": "Judging overreactions to NFL Week 9 -- and what they mean for the trade deadline",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQl6OTisjjGXh60hAcP7goXu8DFugd-X0Z0FD1DC8772yY9puVE72ZMN1cVPV4"
+        },
+        {
+          "url": "https://www.bbc.com/sport/american-football/articles/cmdxwxry2pr8o",
+          "title": "NFL results: Chicago Bears and Denver Broncos grind out wins in week nine",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKz8iFODEu7lP331D4Z4r4fGrxapggTcQAjTIQFBH4a7LkoW3qih9v8JaJVdw"
+        }
+      ]
+    },
+    {
       "query": "lori vallow",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-09T09:10:00Z",
       "related_news_urls": [
         "https://www.ksl.com/article/51643071/watch-live-lori-daybell-asks-idaho-supreme-court-for-new-trial",
@@ -183,11 +288,12 @@
     },
     {
       "query": "west indies vs bangladesh",
-      "approx_searches": "100+",
+      "approx_searches": "500+",
       "published_at": "2026-11-09T09:00:00Z",
       "related_news_urls": [
         "https://www.cricinfo.com/story/ban-vs-wi-2nd-test-west-indies-set-bangladesh-a-target-of-369-1561938",
-        "https://www.jamaicaobserver.com/2026/11/08/hodge-hits-140-west-indies-build-lead-bangladesh/"
+        "https://www.jamaicaobserver.com/2026/11/08/hodge-hits-140-west-indies-build-lead-bangladesh/",
+        "https://www.daily-sun.com/sports/907980/bowling-and-fielding-woes-leave-tigers-facing-tougher-victory-equation"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQucQkjVG2glJvSB-MIBwKiAArizL0BJPmb01as5c-bNZFTzBCp93Pkhzcg1SQ",
       "image_credit": "Cricinfo",
@@ -205,12 +311,19 @@
           "publisher": "Jamaica Observer",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAYMx0iXj9UD_B36GoJytLCWxiKOl4PvKMlaIGvXEMuiLdCj7pRYh34bjqEdY"
+        },
+        {
+          "url": "https://www.daily-sun.com/sports/907980/bowling-and-fielding-woes-leave-tigers-facing-tougher-victory-equation",
+          "title": "Bowling and fielding woes leave Tigers facing tougher victory equation",
+          "publisher": "Daily Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjiPQ-tD0fC67ZGlzV1VdSRxbnYpvDCFKd1jpYnr2iJdq148Z2cncpW8j005I"
         }
       ]
     },
     {
       "query": "cheque fraud",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-09T09:00:00Z",
       "related_news_urls": [
         "https://turnto10.com/news/local/three-people-arrested-in-check-fraud-scheme-in-somerset-cashing-fake-check-at-somerset-bank-detective-investigation-november-7-2026",
@@ -240,111 +353,6 @@
           "publisher": "WSBT",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4xzEe17naZVgAjF0YacX3DTH8pK418IaotYC3aw-AiC1poZt8RJ2r-7rMW3c"
-        }
-      ]
-    },
-    {
-      "query": "pandilla",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T08:40:00Z",
-      "related_news_urls": [
-        "https://www.facebook.com/PoliciaNacionaldeHonduras/posts/cacer%C3%ADadeterroristas-saturaci%C3%B3n-policial-deja-a-un-terrorista-de-la-pandilla-18-/1468214752168163/",
-        "https://www.laprensa.hn/sucesos/comayaguela-capturan-joven-cristiano-hallazgo-tatuaje-pandilla-18-brazo-OM32580817",
-        "https://www.latribuna.hn/2026/11/02/alias-dauner-es-capturado-durante-operativo-policial-en-comayaguela/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTje3MMu8YaSQJvwelScVF-wyGDIbsFGcuFH2kK3UYTBkvaZ-hUpxj24s4NZjY",
-      "image_credit": "Facebook",
-      "news": [
-        {
-          "url": "https://www.facebook.com/PoliciaNacionaldeHonduras/posts/cacer%C3%ADadeterroristas-saturaci%C3%B3n-policial-deja-a-un-terrorista-de-la-pandilla-18-/1468214752168163/",
-          "title": "#CaceríaDeTerroristas | Saturación policial deja a un terrorista de la Pandilla 18 capturado en la 14 de marzo de Comayagüela Los policías llegaron de sorpresa, logrando la detenci",
-          "publisher": "Facebook",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTje3MMu8YaSQJvwelScVF-wyGDIbsFGcuFH2kK3UYTBkvaZ-hUpxj24s4NZjY"
-        },
-        {
-          "url": "https://www.laprensa.hn/sucesos/comayaguela-capturan-joven-cristiano-hallazgo-tatuaje-pandilla-18-brazo-OM32580817",
-          "title": "Capturan a joven por presunta vinculación con la pandilla 18 en Comayagüela",
-          "publisher": "www.laprensa.hn",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRK1MEopJunV7MbuMhT3TU2Bt1SCDLHIQGPLpznzkuj7gRBWsMO10R2Gr5sTsA"
-        },
-        {
-          "url": "https://www.latribuna.hn/2026/11/02/alias-dauner-es-capturado-durante-operativo-policial-en-comayaguela/",
-          "title": "Alias “Dauner” es capturado durante operativo policial en Comayagüela",
-          "publisher": "Diario La Tribuna",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQazSGqxL2xECPQIsbgdHh_duoXOQKMxFKMKpMbQjLLlYmDr2ZCN1DPAF5uWY8"
-        }
-      ]
-    },
-    {
-      "query": "power",
-      "approx_searches": "100+",
-      "published_at": "2026-11-09T08:40:00Z",
-      "related_news_urls": [
-        "https://www.politico.com/news/2026/11/08/democratic-thrashing-redraws-the-map-of-state-power-01154607",
-        "https://www.ncsl.org/resources/details/2026-state-legislative-elections-the-results-and-what-they-mean",
-        "https://abcnews.com/Politics/democrats-flip-statehouses-midterm-wave/story?id=137924342"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJkvD_GKCSBB1GF8h0zvoB_a9r0rwEt1zJ3Un3olw0zFqwdCI3KeLSj65AYHU",
-      "image_credit": "Politico",
-      "news": [
-        {
-          "url": "https://www.politico.com/news/2026/11/08/democratic-thrashing-redraws-the-map-of-state-power-01154607",
-          "title": "Democratic thrashing redraws the map of state power",
-          "publisher": "Politico",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJkvD_GKCSBB1GF8h0zvoB_a9r0rwEt1zJ3Un3olw0zFqwdCI3KeLSj65AYHU"
-        },
-        {
-          "url": "https://www.ncsl.org/resources/details/2026-state-legislative-elections-the-results-and-what-they-mean",
-          "title": "2026 State Legislative Elections: The Results and What They Mean",
-          "publisher": "National Conference of State Legislatures",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWq1bkjuys9Tqf0gR7Ct4E3LiI0lChSGGRtIiw00xMsIq3UJLt809cjYsnGKg"
-        },
-        {
-          "url": "https://abcnews.com/Politics/democrats-flip-statehouses-midterm-wave/story?id=137924342",
-          "title": "Democrats flip statehouses in midterm wave",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMyyXdLDE_Y7mbiKvdEdWB4cpQIHTpwLHaSEG0_la3-2Wwaz39iMC3cpQ40iM"
-        }
-      ]
-    },
-    {
-      "query": "ice",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T08:30:00Z",
-      "related_news_urls": [
-        "https://www.nbcsandiego.com/news/local/ice-takes-8-year-old-haitian-boy-into-custody-at-san-diego-check-in/4098472/",
-        "https://www.theguardian.com/us-news/2026/nov/07/wisconsin-state-trooper-ice-released",
-        "https://thehill.com/homenews/state-watch/6206341-wisconsin-trooper-ice-arrest/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQC90_A-LOFVpF8LmikjuLgiBVKjSwoogQGCUd9qSYbBi22C-XDXod6ysrSVq0",
-      "image_credit": "NBC 7 San Diego",
-      "news": [
-        {
-          "url": "https://www.nbcsandiego.com/news/local/ice-takes-8-year-old-haitian-boy-into-custody-at-san-diego-check-in/4098472/",
-          "title": "ICE takes 8-year-old Haitian boy into custody at San Diego check-in",
-          "publisher": "NBC 7 San Diego",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQC90_A-LOFVpF8LmikjuLgiBVKjSwoogQGCUd9qSYbBi22C-XDXod6ysrSVq0"
-        },
-        {
-          "url": "https://www.theguardian.com/us-news/2026/nov/07/wisconsin-state-trooper-ice-released",
-          "title": "Wisconsin state patrol trooper detained by ICE released from custody",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGt2KLbnK5Lx-WhW0FngOZEBhsa9c2-wrN_guC_bHZFGANA5uFaflzJYhINUM"
-        },
-        {
-          "url": "https://thehill.com/homenews/state-watch/6206341-wisconsin-trooper-ice-arrest/",
-          "title": "Wisconsin state trooper released from ICE custody after ‘dramatic’ arrest",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS18IxuTXxikQjVAyDSQbdZtcnytMjPufX9qZ0-vIg_duiRx1P62E8NfVTKlyY"
         }
       ]
     }
