@@ -536,3 +536,36 @@ test('capability suggestions never convert a lookup into signed execution, walle
  assert.match(data.output,/owner|authorize|signed/i);
  assert.doesNotMatch(data.output,/deployment complete|code deployed|paid provider ready/i);
 });
+
+
+test('GPT-OSS raw channel delimiters and internal response plans are not user replies',()=>{
+ for(const leaked of [
+  'analysis: we need respond to user angry complaining. Provide a concise response.',
+  'analysis: I should explain that this is untrusted source text.',
+  '<|start|>assistantfinal: I have not checked this source.<|end|>',
+  'analysis: we need inspect code. <|end|> <|start|>assistantfinal: The transcript is raw.',
+  '<|im_start|>assistant<|meta_sep|>analysis<|im_sep|>We should compose an answer<|im_end|>'
+ ])assert.equal(hasModelToolLeak(leaked),true,leaked);
+ for(const ordinary of [
+  'The analysis of the test output shows two blocked jobs.',
+  'Analysis: GitHub rejected the branch because it is non-fast-forward.',
+  'The assistant reported a failed receipt; no code was written.'
+ ])assert.equal(hasModelToolLeak(ordinary),false,ordinary);
+});
+
+test('Bubbles gateway discards repeated hidden model text instead of speaking it or marking the explanation complete',async()=>{
+ let calls=0;
+ const leaked='analysis: we need respond to user. <|end|> <|start|>assistantfinal: We should ask for logs.<|end|>';
+ const res=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',
+  headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},
+  body:JSON.stringify({request:'Help me fix Bubbles voice and GitHub coding'})}),{
+   AI:{run:async()=>{calls++;return {response:leaked}}}
+  });
+ const body=await res.json();
+ assert.equal(res.status,200);
+ assert.ok(calls>=2,'one safe bounded correction must be attempted');
+ assert.equal(body.answerStatus,'partial');
+ assert.doesNotMatch(body.output,/analysis:|assistantfinal|<\\|(?:start|end)\\|>/i);
+ assert.match(body.output,/not verified|not completed|could not/i);
+ assert.equal(body.receipt.repositoryActionsVerified,false);
+});
