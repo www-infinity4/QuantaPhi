@@ -900,3 +900,50 @@ test('repository plan fails closed after repeated malformed model JSON',async()=
  await assert.rejects(clock.runner(new Request('https://clock/runner/plan',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook',key:'key',leaseId:'lease',evidence:{}})})),/engine_model_json_invalid/);
  assert.equal(modelCalls,2,'Do not run open-ended retries');
 });
+
+
+test('signed Brain plans bounded color advice but never treats it as a provider-backed write',async()=>{
+ const job={id:'TASK-4',instructions:'Research a licensed provider feed and import approved records\n\nExecution plan\n- generated detail not owner scope',acceptance:['Verify source before ingest']};
+ const lease={key:'key',leaseId:'lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,repository:'www-infinity4/QuantaPhi',jobId:'TASK-4',ticketId:'TICKET',job};
+ const memory=new Map([['key',lease]]),seen=[];
+ const ai={run:async(model,input)=>{
+  const system=input.messages?.[0]?.content||'',payload=JSON.parse(input.messages[1].content);
+  if(/the (red|orange|blue) color role/i.test(system)){
+   const color=/the (red|orange|blue) color role/i.exec(system)[1];seen.push(color);
+   assert.doesNotMatch(payload.task,/generated detail/);
+   return {response:JSON.stringify({finding:'Advisory only '+color,nextAction:'Inspect pinned evidence',blockers:[],toolRequests:[]})};
+  }
+  seen.push('plan');
+  assert.equal(payload.evidence.roleHandoffStatus,'model_inference_completed');
+  assert.deepEqual(payload.evidence.roleHandoffs.map(x=>x.role),['red','orange','blue']);
+  assert.equal(payload.evidence.roleHandoffs.every(x=>x.authorizedOperationsPerformed===false),true);
+  return {response:JSON.stringify({summary:'Review provider scope',files:[],subtasks:[],blockers:[]})};
+ }};
+ const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{WRITER_AI:ai});
+ const res=await clock.runner(new Request('https://clock/runner/plan',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook',key:'key',leaseId:'lease',evidence:{pinnedSourceSha:'a'.repeat(40)}})}));
+ assert.equal(res.status,200);
+ const body=await res.json();
+ assert.equal(body.roleHandoffStatus,'model_inference_completed');
+ assert.equal(body.authorizedColorOperationsPerformed,false);
+ assert.deepEqual(seen,['red','orange','blue','plan']);
+});
+test('failed optional color inference cannot claim work or disable the existing scoped planner',async()=>{
+ const job={id:'TASK-5',instructions:'Design a universal renderer architecture',acceptance:['Bounded review']};
+ const lease={key:'key',leaseId:'lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,repository:'www-infinity4/QuantaPhi',jobId:'TASK-5',ticketId:'TICKET',job};
+ const memory=new Map([['key',lease]]);let calls=0;
+ const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{WRITER_AI:{run:async(model,options)=>{
+  calls++;
+  if(/the red color role/i.test(options.messages?.[0]?.content||''))throw Error('color-model-unavailable');
+  const payload=JSON.parse(options.messages[1].content);
+  assert.equal(payload.evidence.roleHandoffStatus,'model_inference_blocked');
+  assert.deepEqual(payload.evidence.roleHandoffs,[]);
+  return {response:JSON.stringify({summary:'Inspect existing source',files:[],subtasks:[],blockers:[]})};
+ }}});
+ const res=await clock.runner(new Request('https://clock/runner/plan',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook',key:'key',leaseId:'lease',evidence:{}})}));
+ assert.equal(res.status,200);
+ const body=await res.json();
+ assert.equal(body.roleHandoffStatus,'model_inference_blocked');
+ assert.deepEqual(body.roleHandoffs,[]);
+ assert.equal(body.authorizedColorOperationsPerformed,false);
+ assert.equal(calls,2);
+});
