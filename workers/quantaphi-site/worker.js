@@ -406,6 +406,11 @@ export default {
   const incoming = new URL(request.url);
   // Source-only private telemetry bridge. No collection until explicitly configured;
   // never fallback to public requests or wallet/Quant ledgers.
+  if(incoming.pathname === '/api/quant-events/consent'){
+   if(env.EVENT_CONSENT_MANAGEMENT_ENABLED!=='true')return Response.json({error:'consent_management_disabled'},{status:503,headers:{'Cache-Control':'no-store'}});
+   if(!env.EVENTS_BRIDGE?.fetch)return Response.json({error:'consent_service_unavailable'},{status:503,headers:{'Cache-Control':'no-store'}});
+   return env.EVENTS_BRIDGE.fetch(request);
+  }
   if(incoming.pathname === '/api/quant-events'){
    if(env.EVENTS_BRIDGE_ENABLED!=='true')return Response.json({error:'event_collection_disabled'},{status:503,headers:{'Cache-Control':'no-store'}});
    if(!env.EVENTS_BRIDGE?.fetch)return Response.json({error:'event_bridge_unavailable'},{status:503,headers:{'Cache-Control':'no-store'}});
