@@ -3,27 +3,279 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T03:31:53.932950Z",
+  "checked_at": "2026-11-09T04:01:39.912206Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "paul george",
+      "query": "ncaa field hockey tournament 2026",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T03:30:00Z",
+      "related_news_urls": [
+        "https://www.ncaa.com/news/fieldhockey/article/2026-11-01/2026-diii-field-hockey-championship-selection-show-info-bracket-schedule",
+        "https://theacc.com/news/2026/11/9/duke-north-carolina-syracuse-earn-2026-ncaa-field-hockey-tournament-berths.aspx",
+        "https://shipraiders.com/news/2026/11/2/rankings-update-field-hockey-remains-second-in-2026-ncaa-power-index.aspx"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8vIfKUbt9G1MBFcDPwwgjiwFZtXwqInz7eShu7Ex9MRkoEAqV_vNaAc_4rJk",
+      "image_credit": "NCAA.com",
+      "news": [
+        {
+          "url": "https://www.ncaa.com/news/fieldhockey/article/2026-11-01/2026-diii-field-hockey-championship-selection-show-info-bracket-schedule",
+          "title": "2026 DIII field hockey championship: Selection show info, bracket, schedule",
+          "publisher": "NCAA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8vIfKUbt9G1MBFcDPwwgjiwFZtXwqInz7eShu7Ex9MRkoEAqV_vNaAc_4rJk"
+        },
+        {
+          "url": "https://theacc.com/news/2026/11/9/duke-north-carolina-syracuse-earn-2026-ncaa-field-hockey-tournament-berths.aspx",
+          "title": "Duke, North Carolina, Syracuse Earn 2026 NCAA Field Hockey Tournament Berths",
+          "publisher": "Atlantic Coast Conference",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8NG9W_flD11YOUSgMQZq0kkmpcLJqfxIHVSpSzSqvfnpTNXH8vkt-i2z1NzA"
+        },
+        {
+          "url": "https://shipraiders.com/news/2026/11/2/rankings-update-field-hockey-remains-second-in-2026-ncaa-power-index.aspx",
+          "title": "RANKINGS UPDATE: Field Hockey remains second in 2026 NCAA Power Index",
+          "publisher": "Shippensburg University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyUkdlInjmLbTS6p0qbfx4c5h6pMfaLNw287b-i8WtvmVJWHYO1HPH7Zizdnk"
+        }
+      ]
+    },
+    {
+      "query": "love is blind",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-09T03:20:00Z",
+      "related_news_urls": [
+        "https://www.netflix.com/tudum/articles/love-is-blind-season-11-reunion-release-date-time",
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/08/love-is-blind-season-11-reunion-recap-boston/92643765007/",
+        "https://people.com/love-is-blind-john-shannon-sarah-williams-divorce-12237430"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2wg65aWwy0XNX66mFl7w-6Kh4dfqM8FNh9UjOuqJL1O6pbLQ_GBa42hm_zGI",
+      "image_credit": "Netflix",
+      "news": [
+        {
+          "url": "https://www.netflix.com/tudum/articles/love-is-blind-season-11-reunion-release-date-time",
+          "title": "When Is the Love Is Blind Season 11 Reunion? Find Out How to Watch Tonight",
+          "publisher": "Netflix",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2wg65aWwy0XNX66mFl7w-6Kh4dfqM8FNh9UjOuqJL1O6pbLQ_GBa42hm_zGI"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/08/love-is-blind-season-11-reunion-recap-boston/92643765007/",
+          "title": "'Love Is Blind' Season 11 reunion bombshells – Cheating, shock engagement",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Cr7rwJarE86XmYuxUzsGGRoAv_covXSidwFZ_xSDHEqq-zvJzMw2F8izH0o"
+        },
+        {
+          "url": "https://people.com/love-is-blind-john-shannon-sarah-williams-divorce-12237430",
+          "title": "‘Love Is Blind’ Stars John Shannon and Sarah Williams, the Only Season 11 Couple to Marry, File for Divorce",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_QVzyJpmp2pwtik_dSGAZVMLq3P0HFydG9mM7Lu63mfvAV9dIf5HiuTIrSvU"
+        }
+      ]
+    },
+    {
+      "query": "ramla ali",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T03:20:00Z",
+      "related_news_urls": [
+        "https://www.reutersconnect.com/item/ramla-ali-and-mikiah-kreps-weigh-in-ahead-of-their-super-bantamweight-world-championship-bout/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUFOQURMMDAwSEpWQVBR",
+        "https://www.boxingnews24.com/boxing-shorts/watch/r4piq27kyrc/",
+        "https://www.dazn.com/en-US/news/boxing/keys-to-victory-ramla-ali-vs-mikiah-kreps-fight-preview-fight-analysis-mvp/1bn6jufjhiuep17emonvn5akbt"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5roNoeBWxlu4b9jjdRhpuMBbP6woCne2FWBYnnrMoYrhOP7p3xlbw6V3Dcao",
+      "image_credit": "Reuters Connect",
+      "news": [
+        {
+          "url": "https://www.reutersconnect.com/item/ramla-ali-and-mikiah-kreps-weigh-in-ahead-of-their-super-bantamweight-world-championship-bout/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUFOQURMMDAwSEpWQVBR",
+          "title": "Licensable picture: Ramla Ali and Mikiah Kreps weigh-in ahead of their super-bantamweight world championship bout",
+          "publisher": "Reuters Connect",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5roNoeBWxlu4b9jjdRhpuMBbP6woCne2FWBYnnrMoYrhOP7p3xlbw6V3Dcao"
+        },
+        {
+          "url": "https://www.boxingnews24.com/boxing-shorts/watch/r4piq27kyrc/",
+          "title": "Ramla Ali STICKS HER TONGUE OUT on Mikiah Kreps at WEIGH-IN 😜",
+          "publisher": "Boxing News 24",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTcfO-XzeHrLPXhnXSUXxRyrR0D8vaYBknOM3oNuRpVE3aJme6oGJCEhtbkLIE"
+        },
+        {
+          "url": "https://www.dazn.com/en-US/news/boxing/keys-to-victory-ramla-ali-vs-mikiah-kreps-fight-preview-fight-analysis-mvp/1bn6jufjhiuep17emonvn5akbt",
+          "title": "Expect the damage to land here in Ramla Ali vs. Mikiah Kreps",
+          "publisher": "DAZN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEXzUKrFECAG7KwWjqK3F7AtJBTzEBqEkvtFIZ-J3LKP0j9TDTndHA7FNHbuA"
+        }
+      ]
+    },
+    {
+      "query": "connor hellebuyck",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T03:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nhl/story/_/id/50383339/hellebuyck-cites-challenging-circumstances-trade-ask",
+        "https://bleacherreport.com/articles/25530922-connor-hellebuycks-status-devils-vs-jets-revealed-goalies-1st-trip-winnipeg-trade",
+        "https://www.tsn.ca/nhl/video/2026/11/04/the-talking-point-can-a-fight-change-the-outcome-of-a-game/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeC1g0qtZfC3dluEsWc7I1XqFev-6-yyHpeEwrC2DfJulq8i9WMz7IIYL7bPE",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nhl/story/_/id/50383339/hellebuyck-cites-challenging-circumstances-trade-ask",
+          "title": "Connor Hellebuyck cites 'challenging circumstances' among reasons for trade ask",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeC1g0qtZfC3dluEsWc7I1XqFev-6-yyHpeEwrC2DfJulq8i9WMz7IIYL7bPE"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25530922-connor-hellebuycks-status-devils-vs-jets-revealed-goalies-1st-trip-winnipeg-trade",
+          "title": "Connor Hellebuyck's Status for Devils vs. Jets Revealed, Goalie's 1st Trip to Winnipeg Since Trade",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR92WGret1zzYpgQxnI5xCTbheeUwGzQr5TC0GUztnFBSPvOVMoW2uUPI8jMyA"
+        },
+        {
+          "url": "https://www.tsn.ca/nhl/video/2026/11/04/the-talking-point-can-a-fight-change-the-outcome-of-a-game/",
+          "title": "The Talking Point: Can a fight change the outcome of a game?",
+          "publisher": "TSN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQo1QgtNXC-hu57jCTNgREiqE1U3_G39DJbs6LJZJv7G-EgUmfJHY0-2H0BgnY"
+        }
+      ]
+    },
+    {
+      "query": "henry cavill",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-09T03:20:00Z",
+      "related_news_urls": [
+        "https://blog.google/products-and-platforms/devices/googlebook/henry-cavill-mustache-protocol-video-game/",
+        "https://9to5google.com/2026/11/04/henry-cavill-mustache-protocol-googlebook/",
+        "https://www.gamesradar.com/games/google-gets-henry-cavill-to-ai-vibe-code-a-game-to-promote-googlebook-promises-to-donate-usd11-to-charity-every-time-someone-plays-it/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBtvZ1IMNcBO1TlEVLvPsEuCiKSFl5lWQbVukdQv5zI1aoQAm2Yw_vKcwSaXs",
+      "image_credit": "blog.google",
+      "news": [
+        {
+          "url": "https://blog.google/products-and-platforms/devices/googlebook/henry-cavill-mustache-protocol-video-game/",
+          "title": "Watch Henry Cavill build a video game on his Googlebook",
+          "publisher": "blog.google",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBtvZ1IMNcBO1TlEVLvPsEuCiKSFl5lWQbVukdQv5zI1aoQAm2Yw_vKcwSaXs"
+        },
+        {
+          "url": "https://9to5google.com/2026/11/04/henry-cavill-mustache-protocol-googlebook/",
+          "title": "Henry Cavill builds 16-bit ‘Mustache Protocol’ game on Googlebook for a good cause [Video]",
+          "publisher": "9to5Google",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRxJsT5_zmNZlt2PZdaCvarEYM5im2p7gIqWLTMwWfOVwe-p6c6KOYd81fJhk"
+        },
+        {
+          "url": "https://www.gamesradar.com/games/google-gets-henry-cavill-to-ai-vibe-code-a-game-to-promote-googlebook-promises-to-donate-usd11-to-charity-every-time-someone-plays-it/",
+          "title": "Google gets Henry Cavill to AI vibe code a game to promote Googlebook, promises to donate $11 to charity every time someone plays it",
+          "publisher": "GamesRadar+",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvm6dXCqAzYrLklY9In1YEoAZB9YVaTxlGNuvzpkSPAkTO-UoT2X--oxTI25M"
+        }
+      ]
+    },
+    {
+      "query": "dane cook brother",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T03:20:00Z",
+      "related_news_urls": [
+        "https://www.rollingstone.com/tv-movies/tv-movie-features/dane-cook-brother-theft-funny-money-interview-1235637778/",
+        "https://www.netflix.com/tudum/articles/funny-money-the-dane-cook-story-release-date-news",
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/dane-cook-mother-warned-him-142500096.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTO8n4wrg5OG6Y01rgOQk0MpdVtN8Y_CyA8KeZp-8SNnRo0L2jRXRY5BTTL1wI",
+      "image_credit": "Rolling Stone",
+      "news": [
+        {
+          "url": "https://www.rollingstone.com/tv-movies/tv-movie-features/dane-cook-brother-theft-funny-money-interview-1235637778/",
+          "title": "Dane Cook's Brother Robbed Him Blind. Now He's Rebuilding His Life -- And Gunning for a Comeback",
+          "publisher": "Rolling Stone",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTO8n4wrg5OG6Y01rgOQk0MpdVtN8Y_CyA8KeZp-8SNnRo0L2jRXRY5BTTL1wI"
+        },
+        {
+          "url": "https://www.netflix.com/tudum/articles/funny-money-the-dane-cook-story-release-date-news",
+          "title": "What to Know About True Crime Doc Funny Money: The Dane Cook Story",
+          "publisher": "Netflix",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRIespd6v6M03qJauQ_NlcSxbK9MKNesIQAoHOrbm8KNkaqu7JJNQB7wAFaLw"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/dane-cook-mother-warned-him-142500096.html",
+          "title": "Dane Cook’s Mother ‘Warned’ Him About Brother Darryl Before Her Death. He Later Embezzled $12 Million from the Comedian",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMrA0AzDQVm-LvNeQhO-MpxLYDSeUuXrYFvMp1lmDDVjQJZ0Oz3e3pnTB_iTU"
+        }
+      ]
+    },
+    {
+      "query": "kyler gordon",
       "approx_searches": "2000+",
       "published_at": "2026-11-09T03:10:00Z",
       "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/08/sports/celtics-bucks-preview-november-8-2026/",
-        "https://www.celticsblog.com/boston-celtics-game-previews/149669/boston-celtics-7-2-at-milwaukee-bucks-1-8-game-10-11-8-26",
-        "https://www.brewhoop.com/bucks-game-previews/80949/milwaukee-vs-boston-celtics-game-preview-discussion-start-time-tv-schedule-injury-report"
+        "https://www.cbssports.com/fantasy/football/news/bears-tyrique-stevenson-injures-hand-on-snf/",
+        "https://chicago.suntimes.com/bears/2026/11/08/bears-buccaneers-kyler-gordon-leaves-game-with-injury",
+        "https://sports.yahoo.com/articles/bears-cb-kyler-gordon-leaves-032506201.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRjlzXQgqdZIBFirwZd9_qqjchM6frPzhnHDXhBKO0jYlTAts0o0LOetBb_pw",
-      "image_credit": "The Boston Globe",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRgtyhxGxEG7i2Okxt9MXO4tXkT6SYFeNJ2RsRVSTb2-axRU5x1XlHHfRx6NM",
+      "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://www.bostonglobe.com/2026/11/08/sports/celtics-bucks-preview-november-8-2026/",
-          "title": "Celtics at Bucks preview: Milwaukee on a five-game losing streak entering Sunday’s prime-time showdown",
-          "publisher": "The Boston Globe",
+          "url": "https://www.cbssports.com/fantasy/football/news/bears-tyrique-stevenson-injures-hand-on-snf/",
+          "title": "Bears' Tyrique Stevenson: Injures hand on SNF",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRjlzXQgqdZIBFirwZd9_qqjchM6frPzhnHDXhBKO0jYlTAts0o0LOetBb_pw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRgtyhxGxEG7i2Okxt9MXO4tXkT6SYFeNJ2RsRVSTb2-axRU5x1XlHHfRx6NM"
+        },
+        {
+          "url": "https://chicago.suntimes.com/bears/2026/11/08/bears-buccaneers-kyler-gordon-leaves-game-with-injury",
+          "title": "Bears CB Kyler Gordon leaves game with injury",
+          "publisher": "Chicago Sun-Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWBpa9j852SZSwrEQg8y_PyESmH7KPZYHYu1G6p0zm25gPfRrLhMTD9yZGBPU"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/bears-cb-kyler-gordon-leaves-032506201.html",
+          "title": "Bears CB Kyler Gordon leaves game early with apparent injury",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXWS80tMoNODJA9VRbrhst0ppB6YMe3Pnlbw5QBCbF7ptpJmneD2Su-RLEZG8"
+        }
+      ]
+    },
+    {
+      "query": "paul george",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-09T03:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/celtics-blow-bucks-third-consecutive-032545961.html",
+        "https://www.foxsports.com/articles/nba/paul-george-and-jayson-tatum-lead-celtics-to-a-11797-victory-over-the-bucks",
+        "https://www.celticsblog.com/boston-celtics-game-previews/149669/boston-celtics-7-2-at-milwaukee-bucks-1-8-game-10-11-8-26"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkcPeWnSJWRyb45yEA9J0fe4jV-Z605ucCa7A6z501zPibbH5v1mqT2Z7Bw0E",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/celtics-blow-bucks-third-consecutive-032545961.html",
+          "title": "Celtics blow out Bucks for third consecutive win",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkcPeWnSJWRyb45yEA9J0fe4jV-Z605ucCa7A6z501zPibbH5v1mqT2Z7Bw0E"
+        },
+        {
+          "url": "https://www.foxsports.com/articles/nba/paul-george-and-jayson-tatum-lead-celtics-to-a-11797-victory-over-the-bucks",
+          "title": "Paul George and Jayson Tatum lead Celtics to a 117-97 victory over the Bucks",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4s4BZOkTNXN3YIPa9D2mGE41CMQSYHPibv39-9pCCL84ruNU6IK4Wzep74lk"
         },
         {
           "url": "https://www.celticsblog.com/boston-celtics-game-previews/149669/boston-celtics-7-2-at-milwaukee-bucks-1-8-game-10-11-8-26",
@@ -31,13 +283,6 @@
           "publisher": "CelticsBlog",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToumSlgBWXj6TkoCcoLz8cNYO-2ELJRCGyOego6BHexg40-wWOoR6ZpgFVRVY"
-        },
-        {
-          "url": "https://www.brewhoop.com/bucks-game-previews/80949/milwaukee-vs-boston-celtics-game-preview-discussion-start-time-tv-schedule-injury-report",
-          "title": "Milwaukee Bucks vs. Boston Celtics Preview & Game Thread: Revenge game",
-          "publisher": "Brew Hoop",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJrBLbl0REU7pKFH8-HKCDpbTUfNSbNgTNXvfr3R0g_MVOJHvvWfizffBoFEA"
         }
       ]
     },
@@ -47,8 +292,8 @@
       "published_at": "2026-11-09T03:10:00Z",
       "related_news_urls": [
         "https://www.espn.com/wnba/story/_/id/50401662/wings-paige-bueckers-azzi-fudd-talk-relationship-pod",
-        "https://www.foxnews.com/outkick-sports/paige-bueckers-azzi-fudd-confirm-breakup-split-year-before-becoming-teammates",
-        "https://www.nbcconnecticut.com/news/local/former-uconn-stars-paige-bueckers-azzi-fudd-announce-that-they-broke-up/3793349/"
+        "https://www.nbcconnecticut.com/news/local/former-uconn-stars-paige-bueckers-azzi-fudd-announce-that-they-broke-up/3793349/",
+        "https://www.foxnews.com/outkick-sports/paige-bueckers-azzi-fudd-confirm-breakup-split-year-before-becoming-teammates"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDZIMC88mFbyEoblYkklKZaCCPF6QEjwit308nLHa0wKcyk2FkPdqlKktxHN8",
       "image_credit": "ESPN",
@@ -61,298 +306,53 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDZIMC88mFbyEoblYkklKZaCCPF6QEjwit308nLHa0wKcyk2FkPdqlKktxHN8"
         },
         {
-          "url": "https://www.foxnews.com/outkick-sports/paige-bueckers-azzi-fudd-confirm-breakup-split-year-before-becoming-teammates",
-          "title": "Paige Bueckers and Azzi Fudd confirm breakup, say they split over a year before becoming teammates",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeJ0rsAeJwzqX7mkl0nUjpM9VsPvW0ZnwMJOxp3cEKU1rERgFxXSA8cfVmzso"
-        },
-        {
           "url": "https://www.nbcconnecticut.com/news/local/former-uconn-stars-paige-bueckers-azzi-fudd-announce-that-they-broke-up/3793349/",
           "title": "Former UConn stars Paige Bueckers, Azzi Fudd announce that they broke up",
           "publisher": "NBC Connecticut",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRzOsSHY-2FK74G7u9EDM1HekfofZHQkXCz08Q9AUZvSdM2ZQigTmNmk0JaxA"
+        },
+        {
+          "url": "https://www.foxnews.com/outkick-sports/paige-bueckers-azzi-fudd-confirm-breakup-split-year-before-becoming-teammates",
+          "title": "Paige Bueckers and Azzi Fudd confirm breakup, say they split over a year before becoming teammates",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeJ0rsAeJwzqX7mkl0nUjpM9VsPvW0ZnwMJOxp3cEKU1rERgFxXSA8cfVmzso"
         }
       ]
     },
     {
-      "query": "pelicans",
+      "query": "mike tomlin",
       "approx_searches": "2000+",
       "published_at": "2026-11-09T03:00:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/clippers-injury-report-vs-pelicans-224719276.html",
-        "https://www.covers.com/nba/pelicans-vs-clippers-prediction-picks-odds-nov-8-2026",
-        "https://www.nytimes.com/athletic/7764968/2026/11/08/pelicans-vs-clippers-stream-how-to-watch-nov-8/"
+        "https://sports.yahoo.com/videos/teams-slow-down-burrow-chase-004020907.html",
+        "https://steelersdepot.com/2026/11/mike-tomlin-gives-formula-to-slow-down-bengals-passing-attack/",
+        "https://www.nbcsports.com/watch/nfl/snf/how-can-teams-slow-down-joe-burrow-jamarr-chase-and-the-bengals-offense"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpFL2RSkIgZ-fd79vQm2mz7KARrwx6ARMcIt4AIbSs2P_FsaSYq9bS33ASdMA",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Tx86yJ2u_9gjl0WPamlQVBaC2qvl2aLRob8IrtNo0nz4lReyd8diEpgQVJY",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/clippers-injury-report-vs-pelicans-224719276.html",
-          "title": "Clippers Injury Report vs. Pelicans: Short-Handed LA Trying to Avoid 8th Straight Loss",
+          "url": "https://sports.yahoo.com/videos/teams-slow-down-burrow-chase-004020907.html",
+          "title": "How can teams slow down Burrow, Chase and Bengals?",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpFL2RSkIgZ-fd79vQm2mz7KARrwx6ARMcIt4AIbSs2P_FsaSYq9bS33ASdMA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Tx86yJ2u_9gjl0WPamlQVBaC2qvl2aLRob8IrtNo0nz4lReyd8diEpgQVJY"
         },
         {
-          "url": "https://www.covers.com/nba/pelicans-vs-clippers-prediction-picks-odds-nov-8-2026",
-          "title": "Pelicans vs Clippers Prediction, Picks & Best Bet for Tonight's NBA Game",
-          "publisher": "Covers.com",
+          "url": "https://steelersdepot.com/2026/11/mike-tomlin-gives-formula-to-slow-down-bengals-passing-attack/",
+          "title": "Mike Tomlin Gives Formula To Slow Down Bengals’ Passing Attack",
+          "publisher": "Steelers Depot",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyJxausS244IiLyb0NUkMqmnhiTMBA2muqAqGNA8uKMKFZ3vqKgTJkb505ano"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSAXLoJTTeQpWdSq3EZYDGJURl-SNUpcembj5cASpaC7yxNcaJvDUjgtMWGts"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7764968/2026/11/08/pelicans-vs-clippers-stream-how-to-watch-nov-8/",
-          "title": "How to watch Pelicans vs. Clippers: TV channel and streaming options for November 8",
-          "publisher": "The New York Times",
+          "url": "https://www.nbcsports.com/watch/nfl/snf/how-can-teams-slow-down-joe-burrow-jamarr-chase-and-the-bengals-offense",
+          "title": "How can teams slow down Burrow, Chase and Bengals?",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoRz8A1GHM2LBTT7L8wpJEkZWYeuwJIrxe8Y6NN2WHp1I2SbMzCi5XTQOIY0E"
-        }
-      ]
-    },
-    {
-      "query": "santi aldama",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T03:00:00Z",
-      "related_news_urls": [
-        "https://www.dallasnews.com/sports/mavericks/article/santi-aldama-mavericks-offense-dallas-debut-nba-22518307.php",
-        "https://www.nba.com/mavs/news/santi-aldama-was-very-impressive-in-his-first-game-with-mavericks",
-        "https://roundtable.io/sports/nba/mavericks/video/mavs-injury-update-major-frontcourt-boost-coming-with-santi-aldama-return"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqiZQ5lepgQre-295yR_4hC8MoaEoo30eyT82WDJBATCndLgSU7eoEuJHEnGo",
-      "image_credit": "Dallas News",
-      "news": [
-        {
-          "url": "https://www.dallasnews.com/sports/mavericks/article/santi-aldama-mavericks-offense-dallas-debut-nba-22518307.php",
-          "title": "How Santi Aldama could change the dynamic of Mavericks' offense after his Dallas debut",
-          "publisher": "Dallas News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqiZQ5lepgQre-295yR_4hC8MoaEoo30eyT82WDJBATCndLgSU7eoEuJHEnGo"
-        },
-        {
-          "url": "https://www.nba.com/mavs/news/santi-aldama-was-very-impressive-in-his-first-game-with-mavericks",
-          "title": "Santi Aldama was very impressive in his first game with Mavericks",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRelwY73ZTZC5jSrcD_np9LnjGvOoaqJVxG7i5Mwi4amtIDcp2LrAUmseNUks4"
-        },
-        {
-          "url": "https://roundtable.io/sports/nba/mavericks/video/mavs-injury-update-major-frontcourt-boost-coming-with-santi-aldama-return",
-          "title": "Video - Mavs Injury Update: Major Frontcourt Boost Coming With Santi Aldama Return?",
-          "publisher": "roundtable.io",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh0bTXEoUegaook9xJnBT5-TV0w2dN4zhAJ6xAh7uEY6pQkxbNL3Y2DVleIGM"
-        }
-      ]
-    },
-    {
-      "query": "silver alert",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T02:50:00Z",
-      "related_news_urls": [
-        "https://www.wkrn.com/news/local-news/have-you-seen-him-silver-alert-issued-for-missing-williamson-county-man/",
-        "https://www.wsmv.com/2026/11/08/man-center-williamson-county-silver-alert-found-dead-tbi-says/",
-        "https://hoodline.com/2026/11/silver-alert-issued-for-missing-brentwood-man-61-last-seen-on-foot-saturday/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRR_tLluY1Jvy98HSLWHUYlUXToelifZUAczYmA2JEjH--P8Fw6FmL1H_w8310",
-      "image_credit": "WKRN News 2",
-      "news": [
-        {
-          "url": "https://www.wkrn.com/news/local-news/have-you-seen-him-silver-alert-issued-for-missing-williamson-county-man/",
-          "title": "Missing Williamson County man found dead after Silver Alert issued",
-          "publisher": "WKRN News 2",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRR_tLluY1Jvy98HSLWHUYlUXToelifZUAczYmA2JEjH--P8Fw6FmL1H_w8310"
-        },
-        {
-          "url": "https://www.wsmv.com/2026/11/08/man-center-williamson-county-silver-alert-found-dead-tbi-says/",
-          "title": "Man at center of Williamson County Silver Alert found dead, TBI says",
-          "publisher": "WSMV",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHBI7RZKfeMHHU26hTsy1NQfZdFL5Q1R3GkMQUSCyqnH1Rl-h_kjBFUbixVmI"
-        },
-        {
-          "url": "https://hoodline.com/2026/11/silver-alert-issued-for-missing-brentwood-man-61-last-seen-on-foot-saturday/",
-          "title": "Silver Alert Issued for Missing Brentwood Man, 61, Last Seen on Foot Saturday",
-          "publisher": "Hoodline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Yy5OUhU-h4dmAzzRXOP9Uzws2tn9kz-dhavBwVTmVu-I14Cx01MJ2KWoeq0"
-        }
-      ]
-    },
-    {
-      "query": "ayo dosunmu",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T02:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/recap/_/gameId/401909947",
-        "https://www.startribune.com/minnesota-timberwolves-utah-jazz-score-today-live-lamelo-ball-stats-anthony-edwards-injury-update/601912402",
-        "https://www.nba.com/timberwolves/photos/wolves-pics-wolves-take-w-over-jazz-11-08-26"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmxns4x3rnOr6UWK_V7PS3qWFnsOtZ11Xk1NSHajnZcjUPEvHj3VI4XHFe0ug",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/recap/_/gameId/401909947",
-          "title": "Timberwolves 115-100 Jazz (Nov 8, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmxns4x3rnOr6UWK_V7PS3qWFnsOtZ11Xk1NSHajnZcjUPEvHj3VI4XHFe0ug"
-        },
-        {
-          "url": "https://www.startribune.com/minnesota-timberwolves-utah-jazz-score-today-live-lamelo-ball-stats-anthony-edwards-injury-update/601912402",
-          "title": "Wolves run win streak to four games, pulling away at home against one-win Jazz",
-          "publisher": "Star Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTZxebxMGfnzWHl7rjNkt8GRjoDA0GF5EZbvUfPywtVDU2HgO1f3EmRRXTLZo"
-        },
-        {
-          "url": "https://www.nba.com/timberwolves/photos/wolves-pics-wolves-take-w-over-jazz-11-08-26",
-          "title": "Wolves Pics: Wolves Take W Over Jazz | 11.08.26",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTt-rO0dZxeiMcTaDVeL_4nwzbBIChwqeDhf2E5zJVLhbTNP6H8I3jbtGEoySI"
-        }
-      ]
-    },
-    {
-      "query": "skye nicolson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T02:40:00Z",
-      "related_news_urls": [
-        "https://www.mostvaluablepromotions.com/mvpw-07-skye-nicolson-retains-wbc-title-against-miyo-yoshida/",
-        "https://www.wvnews.com/sports/pro/yoshida-nicolson-boxing/image_40499aac-b44c-5f52-b23e-a9688474a3a9.html",
-        "https://sports.yahoo.com/articles/miyo-yoshida-fights-third-division-234251864.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMYDAuIoKpthLWq8vEs6NgOcTIdcjCtj1gG14FtI5xP5tqucIcGNlW-RkA12w",
-      "image_credit": "Most Valuable Promotions",
-      "news": [
-        {
-          "url": "https://www.mostvaluablepromotions.com/mvpw-07-skye-nicolson-retains-wbc-title-against-miyo-yoshida/",
-          "title": "MVPW-07: Skye Nicolson Retains WBC Title Against Miyo Yoshida",
-          "publisher": "Most Valuable Promotions",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMYDAuIoKpthLWq8vEs6NgOcTIdcjCtj1gG14FtI5xP5tqucIcGNlW-RkA12w"
-        },
-        {
-          "url": "https://www.wvnews.com/sports/pro/yoshida-nicolson-boxing/image_40499aac-b44c-5f52-b23e-a9688474a3a9.html",
-          "title": "Yoshida Nicolson Boxing",
-          "publisher": "WV News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfz8sezyDclWPT5d2IfqfqNJVf5UYz4R0QNiE1daz0y88jwdz-DYqVTmiJ89g"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/miyo-yoshida-fights-third-division-234251864.html",
-          "title": "Miyo Yoshida Fights For Third Division Title Sunday",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBsye8uTzQDT0dwKUatzHfvPCbXv1fqqG0vNmw_UCijLkwc2RampPn757pmbA"
-        }
-      ]
-    },
-    {
-      "query": "nasa astronauts",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T02:30:00Z",
-      "related_news_urls": [
-        "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/",
-        "https://www.npr.org/2026/11/08/nx-s1-6034002/nasa-astronaut-class-applications-2026",
-        "https://www.washingtonpost.com/nation/2026/11/08/nasa-opens-recruitment-its-next-generation-astronauts/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQEmZCzrUxJFFzgFtuqhvPFOLkTXzcEODiMi4xgd7ZRAnLcU4VaM0n1_IgswQ",
-      "image_credit": "NASA (.gov)",
-      "news": [
-        {
-          "url": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/",
-          "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
-          "publisher": "NASA (.gov)",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQEmZCzrUxJFFzgFtuqhvPFOLkTXzcEODiMi4xgd7ZRAnLcU4VaM0n1_IgswQ"
-        },
-        {
-          "url": "https://www.npr.org/2026/11/08/nx-s1-6034002/nasa-astronaut-class-applications-2026",
-          "title": "NASA is looking for astronauts to live and work on the Moon",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFcgxi6_NvzheSZeahgpSEC4DyF-bXTex8RCigIUQ0f2NDte40MecKsLzRd1A"
-        },
-        {
-          "url": "https://www.washingtonpost.com/nation/2026/11/08/nasa-opens-recruitment-its-next-generation-astronauts/",
-          "title": "NASA opens recruitment for its next generation of astronauts",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlxUMKB5YLMED0KGG5j_yga4DYLVAUOVyKlSTIgaBHltmu1rJBVEDkNBneVOQ"
-        }
-      ]
-    },
-    {
-      "query": "tyler herro",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T02:30:00Z",
-      "related_news_urls": [
-        "https://dknetwork.draftkings.com/2026/11/08/what-happened-to-tyler-herro-live-injury-updates-for-bucks-vs-celtics-on-sunday-11-8-26/",
-        "https://www.bostonglobe.com/2026/11/08/sports/celtics-bucks-preview-november-8-2026/",
-        "https://www.celticsblog.com/boston-celtics-game-previews/149669/boston-celtics-7-2-at-milwaukee-bucks-1-8-game-10-11-8-26"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9bxlPayZgskYXNMdz-PHxCuVUweZRheEeQkwpwIM0w9eyeWX-3G8V4guYwZ8",
-      "image_credit": "DraftKings Network",
-      "news": [
-        {
-          "url": "https://dknetwork.draftkings.com/2026/11/08/what-happened-to-tyler-herro-live-injury-updates-for-bucks-vs-celtics-on-sunday-11-8-26/",
-          "title": "What happened to Tyler Herro? Live injury updates for Bucks vs. Celtics on Sunday 11/8/26",
-          "publisher": "DraftKings Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9bxlPayZgskYXNMdz-PHxCuVUweZRheEeQkwpwIM0w9eyeWX-3G8V4guYwZ8"
-        },
-        {
-          "url": "https://www.bostonglobe.com/2026/11/08/sports/celtics-bucks-preview-november-8-2026/",
-          "title": "Celtics at Bucks preview: Milwaukee on a five-game losing streak entering Sunday’s prime-time showdown",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRjlzXQgqdZIBFirwZd9_qqjchM6frPzhnHDXhBKO0jYlTAts0o0LOetBb_pw"
-        },
-        {
-          "url": "https://www.celticsblog.com/boston-celtics-game-previews/149669/boston-celtics-7-2-at-milwaukee-bucks-1-8-game-10-11-8-26",
-          "title": "Boston Celtics (7-2) at Milwaukee Bucks (1-8) Game #10 11/8/26",
-          "publisher": "CelticsBlog",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToumSlgBWXj6TkoCcoLz8cNYO-2ELJRCGyOego6BHexg40-wWOoR6ZpgFVRVY"
-        }
-      ]
-    },
-    {
-      "query": "shakira",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T02:30:00Z",
-      "related_news_urls": [
-        "https://www.telemundo.com/shows/hoy-dia/famosos/video/captan-a-shakira-paseando-con-su-papa-por-las-calles-de-barranquilla-tmvo13242048",
-        "https://es-us.vida-estilo.yahoo.com/shakira-prepara-llegada-colombia-medio-213218679.html",
-        "https://www.marca.com/co/2026/11/09/shakira-conmueve-cuidar-padre-hospital-complicaciones-salud.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsRmd_1VfbWGY7YA2LeyoGZ9GD_lBsBsK8eUV_0L3Rn6NxLCuyPusBNLoO7lY",
-      "image_credit": "Telemundo",
-      "news": [
-        {
-          "url": "https://www.telemundo.com/shows/hoy-dia/famosos/video/captan-a-shakira-paseando-con-su-papa-por-las-calles-de-barranquilla-tmvo13242048",
-          "title": "Captan a Shakira paseando con su papá por las calles de Barranquilla",
-          "publisher": "Telemundo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsRmd_1VfbWGY7YA2LeyoGZ9GD_lBsBsK8eUV_0L3Rn6NxLCuyPusBNLoO7lY"
-        },
-        {
-          "url": "https://es-us.vida-estilo.yahoo.com/shakira-prepara-llegada-colombia-medio-213218679.html",
-          "title": "Shakira prepara su llegada a Colombia en medio de rumores sobre la salud de su padre",
-          "publisher": "Yahoo en Español Vida y Estilo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFq3KjREa0z_iPkXYDOHLcMwLmy6aXbOdsowadDAuHr0LJLOTe47E4HHKk0oo"
-        },
-        {
-          "url": "https://www.marca.com/co/2026/11/09/shakira-conmueve-cuidar-padre-hospital-complicaciones-salud.html",
-          "title": "Shakira conmueve al cuidar de su padre en el hospital tras complicaciones de salud",
-          "publisher": "MARCA",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIaCxufaOIocaaoJXPQlHzjMt-6cuw0V1GNYn3rkcvEd7EHkY7NKyag5AHEDg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTg1MsL-HuZiHz15ZF6eoDiT2vkhIGhKmULLrRT0mvDiVyp4qc6mHbaPrMBFhA"
         }
       ]
     }
