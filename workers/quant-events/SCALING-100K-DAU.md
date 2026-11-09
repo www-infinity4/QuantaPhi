@@ -25,7 +25,7 @@ Actual request RPS depends on the number of events per POST, client batching, re
 1. **Ingress:** validate authenticated service principal and separately verify the short-lived HMAC subject proof from the trusted existing sign-in adapter; reject unverified user ID; default to no location collection without both signed geo consent and server flag. Enforce `queries` as a structured nonempty array, bounded body/event counts, normalized tags, and finite numbers. Assign `accepted_at_ms = Date.now()` once at ingress and preserve it on all retries.
 2. **Queued path (`INGEST_MODE=queue`):** after successful `EVENT_QUEUE.send(...)`, respond HTTP 202 with `accepted` and `persisted:false`. If enqueue fails or binding is absent, return 503 (do not silently switch to direct). No client receives a fictitious D1 inserted receipt.
 3. **Consumer:** starting configuration: `max_batch_size=5` Queue messages, timeout 3 seconds, 8 retry attempts, a dead-letter queue, and max 2 consumers to start. The consumer can process up to 5 * 100 = 500 events via one atomic `DB.batch` of at most 40 prepared statements (5 user inserts + 5 * 7 multi-row event inserts). Actual D1 write serialization can still create a queue backlog; **benchmark before increasing concurrency**. A D1 failure throws so Queue retries; event primary keys make retry idempotent.
-4. **SQL statement:** group 16 events per `INSERT INTO events ... VALUES... ON CONFLICT(id) DO NOTHING`, 6 bound parameters per row = 96 values, under D1's current 100-bound-parameter limit. `users` uses `ON CONFLICT DO NOTHING` to avoid rewriting profile fields for every event request; first-seen geography is not ongoing geolocation. D1 `batch()` remains atomic at the consumer-invocation level.
+4. **SQL statement:** group 16 events per guarded INSERT, 6 bound parameters per row plus 2 for active-consent/epoch verification = 98 values, within D1's current 100-bound-parameter limit. `users` uses `ON CONFLICT DO NOTHING` to avoid rewriting profile fields for every event request; first-seen geography is not ongoing geolocation. D1 `batch()` remains atomic at the consumer-invocation level.
 5. **Direct mode:** retain `INGEST_MODE=direct` for staging/trusted internal callers only; missing/invalid modes fail 503, not a fallback after Queue outage.
 
 ### Cloudflare platform ceilings to verify before purchase/deploy
@@ -96,3 +96,14 @@ BI tool is **undecided**; provision none now. Publish a stable event schema (v1,
 5. Obtain exact-head repo CI and independent security review. Release through the existing protected QuantaPhi pipeline, monitor a gradual traffic ramp, and verify live D1 records separately from HTTP queue acceptance.
 
 Nothing in this package creates a Cloudflare resource, updates GitHub, merges a PR or deploys a Worker.
+## Consent and delayed-Queue safety (source only, not deployed)
+
+The staged Wallet-verified `/api/quant-events/consent` endpoint provides explicit
+`v1` analytics opt-in, status, and revocation. It is disabled separately from event
+writes by `EVENT_CONSENT_MANAGEMENT_ENABLED`. Queued D1 writes now atomically
+verify the current `quant_event_consents` row is active and its consented epoch is
+no later than the server-assigned event acceptance time. Revoked or old pre-regrant
+Queue messages are not persisted; the conditional event INSERT uses 98 bound
+parameters per full 16-row batch. Existing persisted records, data export and
+user deletion still need a separately reviewed retention/erasure design before
+production activation. Do not represent source tests as live consent proof.
