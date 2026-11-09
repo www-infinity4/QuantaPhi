@@ -109,3 +109,42 @@ test('reset and navigation never persist ROM bytes across documents',()=>{
  assert.match(card,/oracle:card-deactivated/);
  assert.doesNotMatch(player,/sessionStorage|localStorage|readAsDataURL/);
 });
+
+
+test('review: preview gate keeps the NES/SNES card out of public Oracle until explicitly requested',()=>{
+ const html=source('index.html'),script=source('nes-snes-quick-card.js'),deck=source('oracle-card-deck.js');
+ const css=source('oracle-card-deck.css');
+ assert.match(html,/<section id="nesSnesQuickCard"[^>]*\shidden\b/);
+ assert.match(script,/nesSnesPreview/);
+ assert.match(script,/root\.hidden=false/);
+ assert.match(deck,/entry\.node\.hidden/);
+ assert.match(css,/\.oracle-card-deck-active:not\(\.oracle-shelf-open\) main\.app > :is\([^\n]*#nesSnesQuickCard/);
+});
+
+test('review: gateway allows same-origin player framing but does not weaken other routes',async()=>{
+ const worker=source('workers/quantaphi-site/worker.js');
+ const env={URL,Request,Response,Headers,fetch:async()=>new Response('<!doctype html><title>Game</title>',{status:200,headers:{'Content-Type':'text/html','X-Frame-Options':'DENY'}})};
+ vm.createContext(env);
+ vm.runInContext(worker.replace('export default','globalThis.worker='),env);
+ const player=await env.worker.fetch(new Request('https://quantaphi.net/nes-snes-player.html'));
+ assert.equal(player.headers.get('X-Frame-Options'),'SAMEORIGIN');
+ const unrelated=await env.worker.fetch(new Request('https://quantaphi.net/unrelated-private.html'));
+ assert.notEqual(unrelated.headers.get('X-Frame-Options'),'SAMEORIGIN');
+});
+
+test('review: two quick NES Play clicks while header read is pending initialize only once',async()=>{
+ const script=new vm.Script(source('nes-snes-player.html').match(/<script>([\s\S]*?)<\/script>/)[1]);
+ let resolveRead,objects=0,loaders=0;
+ const read=new Promise(resolve=>{resolveRead=resolve});
+ const file={name:'my-homebrew.nes',size:2048,slice:()=>({arrayBuffer:()=>read})};
+ const callbacks={},controls={system:{value:'nes'},romFile:{files:[file]},play:{disabled:false},reset:{},status:{textContent:''}};
+ for(const [id,el] of Object.entries(controls))el.addEventListener=(kind,fn)=>callbacks[id+':'+kind]=fn;
+ const doc={getElementById:id=>controls[id],createElement:tag=>({tagName:tag}),body:{appendChild:()=>{loaders++}}};
+ const win={addEventListener:()=>{}},url={createObjectURL:()=>{objects++;return 'blob:local'},revokeObjectURL:()=>{}};
+ script.runInNewContext({document:doc,window:win,URL:url,Uint8Array,Set,location:{reload(){}}});
+ const first=callbacks['play:click'](),second=callbacks['play:click']();
+ resolveRead(new Uint8Array([0x4e,0x45,0x53,0x1a]).buffer);
+ await Promise.all([first,second]);
+ assert.equal(objects,1);
+ assert.equal(loaders,1);
+});
