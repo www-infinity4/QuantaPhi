@@ -3,118 +3,83 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T15:01:47.151154Z",
+  "checked_at": "2026-11-09T15:31:24.447801Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "katy perry",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T14:40:00Z",
+      "query": "amd stock",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-09T15:10:00Z",
       "related_news_urls": [
-        "https://www.the-independent.com/news/uk/crime/russell-brand-trial-guilty-verdict-katy-perry-b3081463.html",
-        "https://variety.com/2026/global/news/russell-brand-katy-perry-marriage-blocked-rape-trial-1236941174/",
-        "https://stylecaster.com/entertainment/celebrity-news/1234971500/katy-perry-russell-brand-divorce-trial/"
+        "https://finance.yahoo.com/technology/ai/articles/lisa-su-expects-80-revenue-142611269.html",
+        "https://seekingalpha.com/article/4964583-amd-100-billion-target-appears-set",
+        "https://www.appeconomyinsights.com/p/amd-the-2027-leap"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFYsQt3Sd2-bCH0xFerla0nRZ7HILcCKOPvszsc2tdEo13dRTWiaw5qOKNgbg",
-      "image_credit": "The Independent",
-      "news": [
-        {
-          "url": "https://www.the-independent.com/news/uk/crime/russell-brand-trial-guilty-verdict-katy-perry-b3081463.html",
-          "title": "From Katy Perry to drug addiction: What the Russell Brand rape trial jury didn’t hear",
-          "publisher": "The Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFYsQt3Sd2-bCH0xFerla0nRZ7HILcCKOPvszsc2tdEo13dRTWiaw5qOKNgbg"
-        },
-        {
-          "url": "https://variety.com/2026/global/news/russell-brand-katy-perry-marriage-blocked-rape-trial-1236941174/",
-          "title": "Russell Brand’s Marriage to Katy Perry Blocked From Being Mentioned by Prosecution in Rape Trial",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlymeWJw3GaDU8iqbDWQ7sDkiLJVdF67ddUDCtKx749424IylBY63VF5HVgtU"
-        },
-        {
-          "url": "https://stylecaster.com/entertainment/celebrity-news/1234971500/katy-perry-russell-brand-divorce-trial/",
-          "title": "Katy Perry & Russell Brand’s Divorce Faces Fresh News After the Comedian’s Guilty Verdict",
-          "publisher": "StyleCaster",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWl4LQ0fNtYGyqSUxi6bITOYKUVwetjYrFe_XoYJbfDmWcH6exil5ctZ6dfm4"
-        }
-      ]
-    },
-    {
-      "query": "vgt",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T14:40:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/vgt-vs-qqq-tech-etf-140500753.html",
-        "https://www.fool.com/coverage/etfs/2026/10/30/tech-sector-showdown-the-trade-off-between-tactical-concentration-and-low-cost-breadth/",
-        "https://www.stockinvestor.com/etf-talk-a-place-on-the-island/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZO0XLCZp_s_rjgzCbQqRqpjEjWCJw7OOWzlVHE9k4g0ujkvjODi4XodfgJr0",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsbeCoCNUrSIzGARTxhM4oaI30sEQhPZ45HoNE-LAEGM2exG2zd_1mDQWIc3M",
       "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/vgt-vs-qqq-tech-etf-140500753.html",
-          "title": "VGT vs. QQQ: Which Tech ETF Is the Better Long-Term Buy?",
+          "url": "https://finance.yahoo.com/technology/ai/articles/lisa-su-expects-80-revenue-142611269.html",
+          "title": "Lisa Su Expects 80% Revenue Growth in 2027. AMD Stock Is Still a Strong Buy, But It Demands Flawless Execution.",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZO0XLCZp_s_rjgzCbQqRqpjEjWCJw7OOWzlVHE9k4g0ujkvjODi4XodfgJr0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsbeCoCNUrSIzGARTxhM4oaI30sEQhPZ45HoNE-LAEGM2exG2zd_1mDQWIc3M"
         },
         {
-          "url": "https://www.fool.com/coverage/etfs/2026/10/30/tech-sector-showdown-the-trade-off-between-tactical-concentration-and-low-cost-breadth/",
-          "title": "Tech Sector Showdown: The Trade-Off Between Tactical Concentration and Low-Cost Breadth",
-          "publisher": "The Motley Fool",
+          "url": "https://seekingalpha.com/article/4964583-amd-100-billion-target-appears-set",
+          "title": "AMD: $100 Billion Revenue Target Appears Set (NASDAQ:AMD)",
+          "publisher": "Seeking Alpha",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReUhe__ssrVWZsf-kgELBwaDvgYL6H6gx8sRbyUELN_utGIu_7lxH9xM7Btr0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvWMwTEmUOeQn2X3K5B9_5pvKHOdO6Cv8KjvNT82x4bqukZowNsZbZZDId4mE"
         },
         {
-          "url": "https://www.stockinvestor.com/etf-talk-a-place-on-the-island/",
-          "title": "ETF Talk: A Place on the Island",
-          "publisher": "Stock Investor",
+          "url": "https://www.appeconomyinsights.com/p/amd-the-2027-leap",
+          "title": "↗️ AMD: The 2027 Leap",
+          "publisher": "App Economy Insights",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTd8is7khiQWgIrJ2YQ8beUxhT51Ah-Kx1tQ1ndvlHSVEERcYJUctNhMI3-Tws"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkXzVBjuLS2CKphswnjRSN2o_jgwh6UN13ZqRQ2EGT2r5UZOaGGjq7CVKLhX8"
         }
       ]
     },
     {
-      "query": "gamingbible",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T14:40:00Z",
+      "query": "rochelle fleming",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-09T15:10:00Z",
       "related_news_urls": [
-        "https://www.ign.com/articles/selfridges-gta-6-takeover-varsity-jacket",
-        "https://londontheinside.com/grand-theft-auto-vi-vice-city-pops-up-at-selfridges/",
-        "https://news.instant-gaming.com/en/articles/22923-gta-gets-a-huge-pop-up-store-featuring-merchandise-at-selfridges-in-london"
+        "https://www.al.com/life/2026/11/rb-and-disco-legend-dead-at-72-music-reached-audiences-across-the-globe.html",
+        "https://soultracks.com/first-choice-lead-singer-rochelle-fleming-dies/",
+        "https://www.jamaicaobserver.com/2026/11/08/rochelle-fleming-lead-singer-founder-1970s-girl-group-first-choice-died/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpRn9JoN_-6b3PfMCOHnco6rnr6mTWgRHzrMU-EffhHGzvDXmhj9UmUv-T17U",
-      "image_credit": "IGN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSms6nCCdRt9dgfZ06jsORudClX2uyqizVP8IScOelaXA4Z0lQPeJgbesyVbk",
+      "image_credit": "AL.com",
       "news": [
         {
-          "url": "https://www.ign.com/articles/selfridges-gta-6-takeover-varsity-jacket",
-          "title": "Iconic British Retail Store Gets GTA 6 Takeover Featuring Exclusive $3,355 Varsity Jacket",
-          "publisher": "IGN",
+          "url": "https://www.al.com/life/2026/11/rb-and-disco-legend-dead-at-72-music-reached-audiences-across-the-globe.html",
+          "title": "R&B and disco legend dead at 72: ‘Music reached audiences across the globe’",
+          "publisher": "AL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpRn9JoN_-6b3PfMCOHnco6rnr6mTWgRHzrMU-EffhHGzvDXmhj9UmUv-T17U"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSms6nCCdRt9dgfZ06jsORudClX2uyqizVP8IScOelaXA4Z0lQPeJgbesyVbk"
         },
         {
-          "url": "https://londontheinside.com/grand-theft-auto-vi-vice-city-pops-up-at-selfridges/",
-          "title": "Grand Theft Auto VI Vice City Pops Up At Selfridges",
-          "publisher": "London On The Inside",
+          "url": "https://soultracks.com/first-choice-lead-singer-rochelle-fleming-dies/",
+          "title": "First Choice lead singer Rochelle Fleming dies at 72",
+          "publisher": "SoulTracks",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKBnQOzx9RrMpzEEKwWHDA51bH4Evs2MXpOTYoOqhMslOf7JAKCxM5MBejCh8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTE7DhnaajUgOTAocUxHnZTuJsPnfu8RNwdzfFBNGC5nDUjokiFDQ2Hst16Yfc"
         },
         {
-          "url": "https://news.instant-gaming.com/en/articles/22923-gta-gets-a-huge-pop-up-store-featuring-merchandise-at-selfridges-in-london",
-          "title": "GTA gets a huge pop-up store featuring merchandise at Selfridges in London",
-          "publisher": "Instant Gaming News",
+          "url": "https://www.jamaicaobserver.com/2026/11/08/rochelle-fleming-lead-singer-founder-1970s-girl-group-first-choice-died/",
+          "title": "Rochelle Fleming, lead singer and founder of 1970’s girl group First Choice, has died",
+          "publisher": "Jamaica Observer",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTaDg1h59zEldzAUwFXtV5ev81XBfunRRaJ25aOyuYwCXUy8by1jL9dNQxau9E"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCtT9RHDHXchFFlSHWL2iXMAzlLECWgviNg7IX64Pa3ef_pgyHx8UttAQXCoo"
         }
       ]
     },
     {
-      "query": "vti stock",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T14:40:00Z",
+      "query": "vti",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-09T15:10:00Z",
       "related_news_urls": [
         "https://www.fool.com/investing/2026/11/08/2-etfs-id-buy-in-november-and-hold-for-the-next-20/",
         "https://finance.yahoo.com/markets/stocks/articles/adviser-retired-handed-accounts-back-200321123.html",
@@ -147,212 +112,247 @@
       ]
     },
     {
-      "query": "broadcom stock",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T14:40:00Z",
+      "query": "voo",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-09T15:10:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/technology/ai/articles/biggest-ai-opportunity-may-hiding-130409244.html",
-        "https://www.fool.com/investing/2026/11/08/broadcom-stock-has-lost-nearly-40-from-its-record-i-d-buy-it-now/",
-        "https://seekingalpha.com/article/4964177-broadcom-the-midterm-selloff-is-a-gift"
+        "https://g1.globo.com/ro/rondonia/noticia/2026/11/09/passageira-morre-durante-voo-para-rondonia.ghtml",
+        "https://gazetarondonia.com.br/noticia/23300/passageira-morre-durante-voo-com-destino-a-rondonia",
+        "https://newsrondonia.com.br/policia/2026/11/09/passageira-passa-mal-e-morre-em-voo-com-destino-a-porto-velho/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTT66EG4r98QntRUPmMIyJ9L-6s8ZkJ3FZ6cnwcG5qsfZFm3XZQN00puJZB-8Q",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Y5m9eAjxE1jXf_JLQE4k2rfW0Zpq86_q6fTfEfMlHfzyFhev26a3NVo7D6k",
+      "image_credit": "G1",
+      "news": [
+        {
+          "url": "https://g1.globo.com/ro/rondonia/noticia/2026/11/09/passageira-morre-durante-voo-para-rondonia.ghtml",
+          "title": "Passageira morre durante voo que saiu de Brasília com destino a Porto Velho",
+          "publisher": "G1",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Y5m9eAjxE1jXf_JLQE4k2rfW0Zpq86_q6fTfEfMlHfzyFhev26a3NVo7D6k"
+        },
+        {
+          "url": "https://gazetarondonia.com.br/noticia/23300/passageira-morre-durante-voo-com-destino-a-rondonia",
+          "title": "Passageira morre durante voo com destino a Rondônia",
+          "publisher": "Gazeta Rondônia",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSg68RnE2m5VLEevZSymAChsqDX37F0oFXC_WfxUuisc7Fhjqqr7xFJ868pDu8"
+        },
+        {
+          "url": "https://newsrondonia.com.br/policia/2026/11/09/passageira-passa-mal-e-morre-em-voo-com-destino-a-porto-velho/",
+          "title": "Passageira passa mal e morre em voo com destino a Porto Velho",
+          "publisher": "News Rondônia",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0TjLwCyWXEahJGg2C7a6qkLKOIN_KcuYYBYmcL_KArKtrNX-A6v0OyG7OAzw"
+        }
+      ]
+    },
+    {
+      "query": "julianne moore",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T15:10:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/film/awards/jesse-eisenberg-julianne-moore-debut-ai-bad-now-you-see-me-4-1236941541/",
+        "https://thegauntlet.ca/thats-where-everyone-wants-to-be-ciff-2026-presents-jesse-eisenbergs-the-debut/",
+        "https://www.timesdaily.com/2026-nyff---the-debut-premiere/image_3740be5a-9275-4961-a1df-25bc72b9aee3.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZ7fdR0q0JOfV9CLJFZL6kb5tsq4PZ5-wSdgSkUjHGIZhoEClFzNMCVNsyaqA",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/film/awards/jesse-eisenberg-julianne-moore-debut-ai-bad-now-you-see-me-4-1236941541/",
+          "title": "Jesse Eisenberg, Julianne Moore on The Debut, AI and Now You See Me 4",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZ7fdR0q0JOfV9CLJFZL6kb5tsq4PZ5-wSdgSkUjHGIZhoEClFzNMCVNsyaqA"
+        },
+        {
+          "url": "https://thegauntlet.ca/thats-where-everyone-wants-to-be-ciff-2026-presents-jesse-eisenbergs-the-debut/",
+          "title": "\"That's where everyone wants to be...\" CIFF 2026 presents Jesse Eisenberg’s The Debut",
+          "publisher": "The Gauntlet",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkT6yZJirQoNJLRLTdCYh_XQxu8H5_V7XAkj2boIOd7xtXPa5gm94M1shTt3U"
+        },
+        {
+          "url": "https://www.timesdaily.com/2026-nyff---the-debut-premiere/image_3740be5a-9275-4961-a1df-25bc72b9aee3.html",
+          "title": "2026 NYFF - \"The Debut\" Premiere",
+          "publisher": "timesdaily.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSa-XnAE7XW10M9hviYilM8Vfo1e3l7iCQliP7w3ZJmNjJ1CmOSupA1pVkhO20"
+        }
+      ]
+    },
+    {
+      "query": "tqqq",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T15:10:00Z",
+      "related_news_urls": [
+        "https://sg.finance.yahoo.com/news/proshares-trust-tqqq-buys-83-110500104.html",
+        "https://finance.yahoo.com/markets/stocks/articles/proshares-trust-tqqq-adds-apple-110521279.html",
+        "https://www.barrons.com/articles/chip-stocks-leveraged-etfs-sandisk-micron-a7c344d8"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM",
+      "image_credit": "Yahoo Finance Singapore",
+      "news": [
+        {
+          "url": "https://sg.finance.yahoo.com/news/proshares-trust-tqqq-buys-83-110500104.html",
+          "title": "Proshares Trust (TQQQ) Buys $83.0 Million More Apple on Thursday",
+          "publisher": "Yahoo Finance Singapore",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/proshares-trust-tqqq-adds-apple-110521279.html",
+          "title": "Proshares Trust (TQQQ) Adds Apple and Nvidia on Nov. 4",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM"
+        },
+        {
+          "url": "https://www.barrons.com/articles/chip-stocks-leveraged-etfs-sandisk-micron-a7c344d8",
+          "title": "The Chip Stock Bloodbath Is a Case Study in the Risks of Leveraged ETFs",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqiUg-6bUfKIfSLTcNBUUR46-lykatdLwWkRkCKj3DX7KeVybkigjCbsIipLc"
+        }
+      ]
+    },
+    {
+      "query": "josh ford",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T15:10:00Z",
+      "related_news_urls": [
+        "https://www.al.com/alabamafootball/2026/11/josh-ford-set-to-miss-rest-of-alabama-football-season-per-reports.html",
+        "https://247sports.com/college/alabama/article/alabama-tight-end-josh-ford-to-miss-rest-of-season-with-knee-injury-suffered-against-lsu-292441314/",
+        "https://www.si.com/college/alabama/football/alabama-tight-end-expected-to-miss-remainder-of-season-with-knee-injury"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTx4v8HgsMptMkdGUo0fHhMjd8rEtNjUoDd92o45YdJTvLVCWVeRzmGVkGD0-g",
+      "image_credit": "AL.com",
+      "news": [
+        {
+          "url": "https://www.al.com/alabamafootball/2026/11/josh-ford-set-to-miss-rest-of-alabama-football-season-per-reports.html",
+          "title": "Josh Ford set to miss remainder of Alabama football season, per reports",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTx4v8HgsMptMkdGUo0fHhMjd8rEtNjUoDd92o45YdJTvLVCWVeRzmGVkGD0-g"
+        },
+        {
+          "url": "https://247sports.com/college/alabama/article/alabama-tight-end-josh-ford-to-miss-rest-of-season-with-knee-injury-suffered-against-lsu-292441314/",
+          "title": "Alabama tight end Josh Ford to miss rest of season with knee injury suffered against LSU",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThtowwbRChsoAYWvdarNTVWiHh_avJAmYN4Oh7jDKsbNpILWTq7gDu_yREhd0"
+        },
+        {
+          "url": "https://www.si.com/college/alabama/football/alabama-tight-end-expected-to-miss-remainder-of-season-with-knee-injury",
+          "title": "Alabama Tight End Expected to Miss Remainder of Season with Knee Injury",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnKs8Clw6m5hKQgXwGdQ1LGHTuKbHALJrqUXOnnx38C3Dw0qHsWPXHAohmC3U"
+        }
+      ]
+    },
+    {
+      "query": "schd stock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T15:10:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/schd-just-hit-record-high-153500360.html",
+        "https://www.fool.com/retirement/2026/11/09/these-6-dividend-etfs-take-different-routes-to-inc/",
+        "https://seekingalpha.com/article/4963516-schd-a-place-to-hide-in-turbulent-times"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQonwapj55458eb-PkTkmFvFpPxFZVnenPM7xTdP3QZrqxl9ajRUI8h6Oxv16Y",
       "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://finance.yahoo.com/technology/ai/articles/biggest-ai-opportunity-may-hiding-130409244.html",
-          "title": "The Biggest AI Opportunity May Be Hiding Outside the GPU Market",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/schd-just-hit-record-high-153500360.html",
+          "title": "SCHD Just Hit a Record High Following Midterm Election Results. I'd Still Rather Buy This Dividend King for Passive Income.",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTT66EG4r98QntRUPmMIyJ9L-6s8ZkJ3FZ6cnwcG5qsfZFm3XZQN00puJZB-8Q"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQonwapj55458eb-PkTkmFvFpPxFZVnenPM7xTdP3QZrqxl9ajRUI8h6Oxv16Y"
         },
         {
-          "url": "https://www.fool.com/investing/2026/11/08/broadcom-stock-has-lost-nearly-40-from-its-record-i-d-buy-it-now/",
-          "title": "Broadcom Stock Has Lost Nearly 40% From Its Record. I'd Buy It Now.",
+          "url": "https://www.fool.com/retirement/2026/11/09/these-6-dividend-etfs-take-different-routes-to-inc/",
+          "title": "These 6 Dividend ETFs Take Different Routes to Income",
           "publisher": "The Motley Fool",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpTvsTYdOKF5uAlKpNghDXsbx1g944xor2ePMvzS35YQI1eANxn93IPIqqBiM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBr3aI-SJ1QuRROZGgc8jfwWhH5G4qNEs4iTHUdxH7DuM2fsBW3Xy0q26kFT0"
         },
         {
-          "url": "https://seekingalpha.com/article/4964177-broadcom-the-midterm-selloff-is-a-gift",
-          "title": "Broadcom: The Midterm Selloff Is A Gift (NASDAQ:AVGO)",
+          "url": "https://seekingalpha.com/article/4963516-schd-a-place-to-hide-in-turbulent-times",
+          "title": "SCHD: A Place To Hide In Turbulent Times (NYSEARCA:SCHD)",
           "publisher": "Seeking Alpha",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3RJovtjsS4hrdd4iw0VSLsFmbVPTMWkMWk5WHXgyI_UBy6AAOzy7g5W6my-U"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkIg-eGkoftw7wa8NDWGGXnjganmonGL-7oe_4llwKzaR3UFf-3Yxc6oLE_OQ"
         }
       ]
     },
     {
-      "query": "tradingview",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T14:30:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/09/gold-gains-more-than-1percent-as-softer-oil-prices-ease-inflation-worries.html",
-        "https://www.kitco.com/news/article/2026-11-09/gold-silver-rise-iran-diplomacy-pressures-crude-dollar-weakens-kitco-am",
-        "https://www.bloomberg.com/news/articles/2026-11-08/gold-holds-decline-as-us-jobs-data-fan-december-rate-hike-bets"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNUQfRyqQ7AvWD1koWYu9okWUILIsqdqEJ7H3x8WpM2Zoops1vFD8AgwdXBtg",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/09/gold-gains-more-than-1percent-as-softer-oil-prices-ease-inflation-worries.html",
-          "title": "Gold gains as lower oil prices temper inflation fears; US inflation in focus",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNUQfRyqQ7AvWD1koWYu9okWUILIsqdqEJ7H3x8WpM2Zoops1vFD8AgwdXBtg"
-        },
-        {
-          "url": "https://www.kitco.com/news/article/2026-11-09/gold-silver-rise-iran-diplomacy-pressures-crude-dollar-weakens-kitco-am",
-          "title": "Gold, silver rise as Iran diplomacy pressures crude, dollar weakens - Kitco AM Report",
-          "publisher": "Kitco",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6yGBjsuCI-iiZGBxHFmVBVmlRXdGWVfowjm93iBYo2sCxBTcRRkaaA-fBU4A"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-08/gold-holds-decline-as-us-jobs-data-fan-december-rate-hike-bets",
-          "title": "Gold Holds Decline as US Jobs Data Fan December Rate Hike Bets",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ8fiDiJ7IZ6w_3trACZ4642lYklQYpRjBHesXPxb5DxtAhJo5cE65bO06Gi8"
-        }
-      ]
-    },
-    {
-      "query": "doc rivers",
+      "query": "nike stock",
       "approx_searches": "200+",
-      "published_at": "2026-11-09T14:30:00Z",
+      "published_at": "2026-11-09T15:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50432359/giannis-antetokounmpo-speechless-doc-rivers-criticism",
-        "https://www.jsonline.com/story/sports/nba/bucks/2026/11/09/how-relationship-between-giannis-antetokounmpo-and-doc-rivers-led-to-end-of-era/92646542007/",
-        "https://www.miamiherald.com/sports/nba/miami-heat/article317973806.html"
+        "https://finance.yahoo.com/markets/stocks/articles/really-behind-nike-stocks-run-014223058.html",
+        "https://simplywall.st/stocks/us/consumer-durables/nyse-nke/nike/news/earnings-pressure-might-change-the-case-for-investing-in-nik",
+        "https://www.fool.com/investing/2026/11/03/what-would-warren-buffett-do-with-nike-stock-down/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeLX2zbiQDUr3CGzS_rHsiXDQVDx7axFHHUm92aGslqZARTE8A52ZdoaP1rEI",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6kfilIIzw-GCcZrbkwnQSHUPBYJ4L4y98FluMyNiv38kv7hqG_H7QRJ8MFuI",
+      "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://www.espn.com/nba/story/_/id/50432359/giannis-antetokounmpo-speechless-doc-rivers-criticism",
-          "title": "Giannis Antetokounmpo 'speechless' over Doc Rivers barbs, warns against 'bitterness or pettiness'",
-          "publisher": "ESPN",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/really-behind-nike-stocks-run-014223058.html",
+          "title": "What Is Really Behind Nike Stock's Run?",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeLX2zbiQDUr3CGzS_rHsiXDQVDx7axFHHUm92aGslqZARTE8A52ZdoaP1rEI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6kfilIIzw-GCcZrbkwnQSHUPBYJ4L4y98FluMyNiv38kv7hqG_H7QRJ8MFuI"
         },
         {
-          "url": "https://www.jsonline.com/story/sports/nba/bucks/2026/11/09/how-relationship-between-giannis-antetokounmpo-and-doc-rivers-led-to-end-of-era/92646542007/",
-          "title": "How relationship between Giannis and Doc Rivers led to end of era | Takeaways",
-          "publisher": "Milwaukee Journal Sentinel",
+          "url": "https://simplywall.st/stocks/us/consumer-durables/nyse-nke/nike/news/earnings-pressure-might-change-the-case-for-investing-in-nik",
+          "title": "Earnings Pressure Might Change The Case For Investing In Nike (NKE)",
+          "publisher": "Simply Wall St",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxHqXbGrKb66Enql_ZUbMm2bfg4ZPlGPgnjTReFXMxd1noFaxctedIFN4KpEY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeygjbeVoFK1wGqyVhnVlUDoiOW6PLZiPxlyqvitdFGTGUx0NTAz6snfyVyCM"
         },
         {
-          "url": "https://www.miamiherald.com/sports/nba/miami-heat/article317973806.html",
-          "title": "Heat’s Giannis Antetokounmpo reacts to Doc Rivers’ critical comments: ‘I’m speechless’",
-          "publisher": "Miami Herald",
+          "url": "https://www.fool.com/investing/2026/11/03/what-would-warren-buffett-do-with-nike-stock-down/",
+          "title": "What Would Warren Buffett Do With Nike Stock Down 38% in 2026?",
+          "publisher": "The Motley Fool",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZTnSzwQTEtcpy-y4QE9ZnZc1-gUh4N_8xI19t60TQ7kBit90VKaHLKtjXBVk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgM9nNtEZo-9XUOmcsm6hmIxXH5_rLYx5LMkYQexSn8NN8BBr4rxpC2Sg-Xgw"
         }
       ]
     },
     {
-      "query": "avgo",
+      "query": "unh stock",
       "approx_searches": "200+",
-      "published_at": "2026-11-09T14:30:00Z",
+      "published_at": "2026-11-09T15:10:00Z",
       "related_news_urls": [
-        "https://blockchain.news/news/20261109-price-prediction-avgo-tokenized-avgo-is-slipping-under-its",
-        "https://blockchain.news/news/20261107-price-prediction-avgo-buyers-are-defending-the-lower-band",
-        "https://blockchain.news/news/20261108-price-prediction-avgo-bearish-momentum-persists-as-buyers-defend"
+        "https://finance.yahoo.com/markets/stocks/articles/goldman-sachs-gs-riding-busy-173646707.html",
+        "https://finance.yahoo.com/markets/stocks/articles/why-bank-america-td-cowen-184337011.html",
+        "https://www.insidermonkey.com/news/sell-alert-10-high-profile-stocks-just-dumped-by-top-analysts-1862938/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwdGAEh9hxoNK-wkdAjt8Nc-Qix0-tnaZsseC_QR9S8GTLYs0K2jadPqweBqU",
-      "image_credit": "Blockchain News",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPDV9b_pu4uJljgGtwc4-eYV0ktNwoSl_r9F2f_0At-0yyaVuhi0kKHm3jaxk",
+      "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://blockchain.news/news/20261109-price-prediction-avgo-tokenized-avgo-is-slipping-under-its",
-          "title": "AVGO Price Prediction: Tokenized AVGO is slipping under its short-term trend while derivatives lean long",
-          "publisher": "Blockchain News",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/goldman-sachs-gs-riding-busy-173646707.html",
+          "title": "Goldman Sachs (GS) Is Riding a Busy Capital Markets Cycle With Record Quarterly Advisory Revenue",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwdGAEh9hxoNK-wkdAjt8Nc-Qix0-tnaZsseC_QR9S8GTLYs0K2jadPqweBqU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPDV9b_pu4uJljgGtwc4-eYV0ktNwoSl_r9F2f_0At-0yyaVuhi0kKHm3jaxk"
         },
         {
-          "url": "https://blockchain.news/news/20261107-price-prediction-avgo-buyers-are-defending-the-lower-band",
-          "title": "AVGO Price Prediction: Buyers Are Defending the Lower Band, But Trend Resistance Still Dominates",
-          "publisher": "Blockchain News",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-bank-america-td-cowen-184337011.html",
+          "title": "Here’s Why Bank of America and TD Cowen Backed Away From Marvell (MRVL)",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwdGAEh9hxoNK-wkdAjt8Nc-Qix0-tnaZsseC_QR9S8GTLYs0K2jadPqweBqU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQh-phuVtaJsiJhpO6dp8Uh9aMK1gXpXTAv9S7z2hTN6dvnst5unwP9iPXvzcM"
         },
         {
-          "url": "https://blockchain.news/news/20261108-price-prediction-avgo-bearish-momentum-persists-as-buyers-defend",
-          "title": "AVGO Price Prediction: Bearish momentum persists as buyers defend the lower band",
-          "publisher": "Blockchain News",
+          "url": "https://www.insidermonkey.com/news/sell-alert-10-high-profile-stocks-just-dumped-by-top-analysts-1862938/",
+          "title": "Sell Alert: 10 High-Profile Stocks Just Dumped by Top Analysts",
+          "publisher": "Insider Monkey",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwdGAEh9hxoNK-wkdAjt8Nc-Qix0-tnaZsseC_QR9S8GTLYs0K2jadPqweBqU"
-        }
-      ]
-    },
-    {
-      "query": "david muir",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T14:20:00Z",
-      "related_news_urls": [
-        "https://www.irishstar.com/culture/entertainment/david-muir-look-future-ai-37846157",
-        "https://www.hellomagazine.com/us/933839/david-muir-glimpse-birthday-celebrations/",
-        "https://www.themirror.com/entertainment/celebrity-news/gallery/david-muirs-biggest-successes-year-2098817?service=responsive&pageNumber=2"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTytI7yDwq_IXBFlUYPp1MGDHd-u87UCyCqDeY2eYnL63KqmJt8MT4EGvTXIq8",
-      "image_credit": "Irish Star",
-      "news": [
-        {
-          "url": "https://www.irishstar.com/culture/entertainment/david-muir-look-future-ai-37846157",
-          "title": "AI predicts what David Muir will look like in 20 years' time as he celebrates his 53rd birthday",
-          "publisher": "Irish Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTytI7yDwq_IXBFlUYPp1MGDHd-u87UCyCqDeY2eYnL63KqmJt8MT4EGvTXIq8"
-        },
-        {
-          "url": "https://www.hellomagazine.com/us/933839/david-muir-glimpse-birthday-celebrations/",
-          "title": "David Muir shares glimpse into birthday weekend in $7 million lakeside home",
-          "publisher": "HELLO!",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHiLOWbii_WfTHAn-IdidRY92hka2nEZZohAUyNAbKf58aXDlpKABe2rDvBbY"
-        },
-        {
-          "url": "https://www.themirror.com/entertainment/celebrity-news/gallery/david-muirs-biggest-successes-year-2098817?service=responsive&pageNumber=2",
-          "title": "David Muir's biggest successes this year as he celebrates his 53rd birthday",
-          "publisher": "The Mirror US",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXe2fJtTn1kxG_2OFhdxURglP-v9IoUBCRdYMKbVkqzK5byDjfgGrq0SdI3vQ"
-        }
-      ]
-    },
-    {
-      "query": "nbc sunday night football anthem omitted",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-09T14:20:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/outkick-sports/nbc-skips-national-anthem-sunday-night-football-soldier-field-veterans-day-week",
-        "https://thespun.com/nfl/president-trump-demanded-changes-to-nfls-national-anthem-rules",
-        "https://mezha.net/eng/news/mezha-8a745d26c766b46c7dbf98f1_nbc-s_sunday_night/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIStNmS3YlX7zhdGPZ2FpPr0awc4LSpzzfQeGQom75QBv5w44su8gcAn8bJao",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/outkick-sports/nbc-skips-national-anthem-sunday-night-football-soldier-field-veterans-day-week",
-          "title": "NBC skips national anthem on 'Sunday Night Football' from Soldier Field on Veterans Day week",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIStNmS3YlX7zhdGPZ2FpPr0awc4LSpzzfQeGQom75QBv5w44su8gcAn8bJao"
-        },
-        {
-          "url": "https://thespun.com/nfl/president-trump-demanded-changes-to-nfls-national-anthem-rules",
-          "title": "President Trump ‘Demanded’ Changes To NFL’s National Anthem Rules",
-          "publisher": "The Spun",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyP5LrsRmuzAPFUpQoJuqN1E6X1DOSQUaLxwsZ7IdmGIhRX8TLYiAOlZvYOXY"
-        },
-        {
-          "url": "https://mezha.net/eng/news/mezha-8a745d26c766b46c7dbf98f1_nbc-s_sunday_night/",
-          "title": "NBC’s Sunday Night Football broadcast omits national anthem at Soldier Field",
-          "publisher": "Mezha.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUrQli3aM7b_Fw_06SLPncNAcS_P0kFNQUMIheNr4tY-vhyinbVyJ-IoKkM-0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFJ5gMGPzlKe2u2IjYrtyF6hSV516Lot607r7xJ5hVwkerwVgvALcxbzoj-TA"
         }
       ]
     }
