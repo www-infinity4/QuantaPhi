@@ -3,83 +3,118 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T19:31:07.823405Z",
+  "checked_at": "2026-11-09T20:01:39.991707Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "gta vi",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T19:10:00Z",
+      "query": "traffic",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T19:40:00Z",
       "related_news_urls": [
-        "https://www.rockstargames.com/newswire/article/o39o87a435a25a/grand-theft-auto-vi-the-festival",
-        "https://www.yahoo.com/entertainment/music/festivals/articles/cardi-b-travis-scott-don-190615466.html",
-        "https://www.axios.com/local/miami/2026/11/09/gta-vi-announces-one-day-music-festival-in-miami"
+        "https://www.mysanantonio.com/news/local/traffic/article/evans-road-closure-22521074.php",
+        "https://www.nbclosangeles.com/news/local/91-freeway-lane-closures-corona/3967768/",
+        "https://abc7.com/story/91-freeway-eastbound-closure-causes-major-weekend-traffic-headaches-drivers-heading-orange-county-inland-empire/20024200/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTf4JFHWOvAt02qStHSu_s-qv5x4nmVyx0Je7BQtpFqMu3Gd47xZji-JHrw-Yg",
-      "image_credit": "Rockstar Games",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQL-1qTEEXYzzF0zsebTAa6ll-w34kT-hdxvU-ouAWYQuOtORrRysf-yrCcwmQ",
+      "image_credit": "MySA",
       "news": [
         {
-          "url": "https://www.rockstargames.com/newswire/article/o39o87a435a25a/grand-theft-auto-vi-the-festival",
-          "title": "Grand Theft Auto VI: The Festival",
-          "publisher": "Rockstar Games",
+          "url": "https://www.mysanantonio.com/news/local/traffic/article/evans-road-closure-22521074.php",
+          "title": "Traffic incident shuts down road near Rolling Oaks Mall",
+          "publisher": "MySA",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTf4JFHWOvAt02qStHSu_s-qv5x4nmVyx0Je7BQtpFqMu3Gd47xZji-JHrw-Yg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQL-1qTEEXYzzF0zsebTAa6ll-w34kT-hdxvU-ouAWYQuOtORrRysf-yrCcwmQ"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/music/festivals/articles/cardi-b-travis-scott-don-190615466.html",
-          "title": "Cardi B, Travis Scott, Don Toliver & More to Perform at ‘Grand Theft Auto VI’ Festival",
+          "url": "https://www.nbclosangeles.com/news/local/91-freeway-lane-closures-corona/3967768/",
+          "title": "91 Freeway lane closures near Corona cause major traffic delays",
+          "publisher": "NBC Los Angeles",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKGg-AYGxDNVKxrjjKyfi2eUhXf9FzbKemGt1TQM6EK4a1riN8CIKSzcuEFww"
+        },
+        {
+          "url": "https://abc7.com/story/91-freeway-eastbound-closure-causes-major-weekend-traffic-headaches-drivers-heading-orange-county-inland-empire/20024200/",
+          "title": "91 Fwy closure causes major weekend traffic headaches for drivers heading from Orange County to IE",
+          "publisher": "ABC7 Los Angeles",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc_jZu_4ooHezp6iHhn7Co4xHCDHjz_vo6CtXvwTiw0xOiru6JluPhRRT02zU"
+        }
+      ]
+    },
+    {
+      "query": "cruise ship",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-09T19:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/09/us/cruise-ship-worker-pianist-rescued-california-pacific.html",
+        "https://www.yahoo.com/news/us/articles/fishermen-rescue-royal-caribbean-crew-190943991.html",
+        "https://www.bbc.com/news/articles/ck1wvrrgln13o"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSiJQOqZrobJWR0m0IQiqytmeewWlFF-WpX_Xu8_3gYMONTMpB6bvokQGH6TG4",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/09/us/cruise-ship-worker-pianist-rescued-california-pacific.html",
+          "title": "Cruise Ship Employee Is Rescued Off Southern California Coast",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSiJQOqZrobJWR0m0IQiqytmeewWlFF-WpX_Xu8_3gYMONTMpB6bvokQGH6TG4"
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/articles/fishermen-rescue-royal-caribbean-crew-190943991.html",
+          "title": "Fishermen rescue Royal Caribbean crew member who went overboard off California coast",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKkWNE4wyON9fydCnGfUoG7qm3cUYjkGvYqA0t7qTb7ADfBK3u_GCd8iDlkEE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj9Qo8T04718Ii6HJkGOFmDuEAvcg5JutJ7uGIOEUunyIrrT8iLqj4uttn_84"
         },
         {
-          "url": "https://www.axios.com/local/miami/2026/11/09/gta-vi-announces-one-day-music-festival-in-miami",
-          "title": "Rockstar Games to host one-day music festival in Miami for GTF VI",
-          "publisher": "Axios",
+          "url": "https://www.bbc.com/news/articles/ck1wvrrgln13o",
+          "title": "Cruise ship pianist rescued from sea after nine hours in Pacific Ocean",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5gfcVIjc1qoeK4OcmsCQzhewGPrYCkQ4yuKhA-CxxTAwV1LJE477kjDqlC78"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcnTTWIPILDUX5JhhO7lgOI5TZHDxEii3Zu2B5m4mXySdtZngMJwtF2UyP7ic"
         }
       ]
     },
     {
-      "query": "fable 5.2",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T19:00:00Z",
+      "query": "vanderbilt",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T19:30:00Z",
       "related_news_urls": [
-        "https://www.cnbc.com/2026/11/09/anthropic-claude-fable-5-2-mythos-5-2.html",
-        "https://www.bloomberg.com/news/articles/2026-11-09/anthropic-unveils-new-fable-mythos-ai-models-ahead-of-ipo",
-        "https://medium.com/data-science-collective/the-claude-mythos-5-5-leaks-one-by-one-0a8f234b9fbf"
+        "https://www.al.com/alabamafootball/2026/11/live-updates-kalen-deboer-alabama-coaches-talk-lsu-win-vanderbilt.html",
+        "https://www.rollbamaroll.com/alabama-crimson-tide-football/86238/alabama-crimson-tide-vs-vanderbilt-commodores-opening-odds-cover-or-not",
+        "https://sports.yahoo.com/articles/want-vanderbilt-vs-alabama-tickets-153537396.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6bYvb3lqQaCsB37Lc_VKJTNc4A7qafmCxn4JRkRQcr5o9BGpWbEh8OgnLnAM",
-      "image_credit": "CNBC",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvbu_dWFdGS3S9vvb3kGBifPt7-_poOyjuL3nxGauDVOP2v0KwtwX4flrRJC4",
+      "image_credit": "AL.com",
       "news": [
         {
-          "url": "https://www.cnbc.com/2026/11/09/anthropic-claude-fable-5-2-mythos-5-2.html",
-          "title": "Anthropic releases first frontier models since Amodei's call for slowdown as IPO buzz builds",
-          "publisher": "CNBC",
+          "url": "https://www.al.com/alabamafootball/2026/11/live-updates-kalen-deboer-alabama-coaches-talk-lsu-win-vanderbilt.html",
+          "title": "Kalen DeBoer, Alabama coaches talk Keelon Russell health, expanded CFP, Vanderbilt",
+          "publisher": "AL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6bYvb3lqQaCsB37Lc_VKJTNc4A7qafmCxn4JRkRQcr5o9BGpWbEh8OgnLnAM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvbu_dWFdGS3S9vvb3kGBifPt7-_poOyjuL3nxGauDVOP2v0KwtwX4flrRJC4"
         },
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-09/anthropic-unveils-new-fable-mythos-ai-models-ahead-of-ipo",
-          "title": "Anthropic Unveils New Fable, Mythos AI Models Ahead of IPO",
-          "publisher": "Bloomberg.com",
+          "url": "https://www.rollbamaroll.com/alabama-crimson-tide-football/86238/alabama-crimson-tide-vs-vanderbilt-commodores-opening-odds-cover-or-not",
+          "title": "Alabama Crimson Tide vs Vanderbilt Commodores Opening Odds: Cover or Not?",
+          "publisher": "Roll 'Bama Roll",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwbC_02-nQm2F4EHNS5qnwTXsPQvEmeKYdnTXVW-BNMH9iv2vOo0pClKJ9pTk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6Zn3w9-RSTuOqDq2QerQS9_JnrNO7cyP9k3eu2xOa1R2HF5rB9uKleP62xDk"
         },
         {
-          "url": "https://medium.com/data-science-collective/the-claude-mythos-5-5-leaks-one-by-one-0a8f234b9fbf",
-          "title": "The Claude Mythos 5.5 Leaks, One by One",
-          "publisher": "Medium",
+          "url": "https://sports.yahoo.com/articles/want-vanderbilt-vs-alabama-tickets-153537396.html",
+          "title": "Want Vanderbilt vs Alabama tickets? Here are best available prices",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8elZY704FMofs-5aCVMxKm5W3gUyALqgo-OST0avYHYHYlpTjOOdSIiYZDvU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSICQt9A13j2FVe5sTog2TR5AiBhye4J0irHVimdAmftHmjhnAAknadP_LeXk8"
         }
       ]
     },
     {
-      "query": "drummer",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T18:50:00Z",
+      "query": "bobby taylor st louis drummer",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-09T19:10:00Z",
       "related_news_urls": [
         "https://www.pennlive.com/entertainment/2026/11/popular-rock-drummer-dies-after-cancer-battle-he-fought-until-the-bitter-end.html",
         "https://www.vice.com/en/article/veteran-rock-drummer-dies-after-years-long-cancer-battle-as-family-shares-heartbreaking-tribute/",
@@ -112,8 +147,113 @@
       ]
     },
     {
-      "query": "fall out boy tour",
+      "query": "thomas massie",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-09T19:10:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/09/politics/live-news/midterm-election-trump-congress",
+        "https://thehill.com/video-clips/6208667-watch-live-thomas-massie-pete-hegseth-impeachment-articles-press-conference/",
+        "https://www.nbcnews.com/politics/trump-administration/thomas-massie-pete-hegseth-impeachment-house-defense-rcna597989"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRW2w9a_SIZU8_my99NWrHSE78eIsxXHBc3_UEE_lIabz2vIcqI8phwuQJ9azI",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/09/politics/live-news/midterm-election-trump-congress",
+          "title": "GOP congressman introduces articles of impeachment against Hegseth",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRW2w9a_SIZU8_my99NWrHSE78eIsxXHBc3_UEE_lIabz2vIcqI8phwuQJ9azI"
+        },
+        {
+          "url": "https://thehill.com/video-clips/6208667-watch-live-thomas-massie-pete-hegseth-impeachment-articles-press-conference/",
+          "title": "Watch live: Massie speaks amid Hegseth impeachment drive",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTuqinarDs4AlaH0FRFZvCrMmfor7ZT4QoUGZaqpAUCJAUy1-dswXpYapi53F4"
+        },
+        {
+          "url": "https://www.nbcnews.com/politics/trump-administration/thomas-massie-pete-hegseth-impeachment-house-defense-rcna597989",
+          "title": "GOP Rep. Thomas Massie unveils impeachment articles against Defense Secretary Pete Hegseth",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRJN-hCT0EBFfEOtJBHe3btMtev7Q9xqdHhr5V1jzb2XDm9A1syjgepN4c-Bc"
+        }
+      ]
+    },
+    {
+      "query": "gta vi",
       "approx_searches": "2000+",
+      "published_at": "2026-11-09T19:10:00Z",
+      "related_news_urls": [
+        "https://www.rockstargames.com/newswire/article/o39o87a435a25a/grand-theft-auto-vi-the-festival",
+        "https://www.axios.com/local/miami/2026/11/09/gta-vi-announces-one-day-music-festival-in-miami",
+        "https://pitchfork.com/story/gta-vi-is-putting-on-a-music-festival/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTf4JFHWOvAt02qStHSu_s-qv5x4nmVyx0Je7BQtpFqMu3Gd47xZji-JHrw-Yg",
+      "image_credit": "Rockstar Games",
+      "news": [
+        {
+          "url": "https://www.rockstargames.com/newswire/article/o39o87a435a25a/grand-theft-auto-vi-the-festival",
+          "title": "Grand Theft Auto VI: The Festival",
+          "publisher": "Rockstar Games",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTf4JFHWOvAt02qStHSu_s-qv5x4nmVyx0Je7BQtpFqMu3Gd47xZji-JHrw-Yg"
+        },
+        {
+          "url": "https://www.axios.com/local/miami/2026/11/09/gta-vi-announces-one-day-music-festival-in-miami",
+          "title": "Rockstar Games to host one-day music festival in Miami for GTF VI",
+          "publisher": "Axios",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5gfcVIjc1qoeK4OcmsCQzhewGPrYCkQ4yuKhA-CxxTAwV1LJE477kjDqlC78"
+        },
+        {
+          "url": "https://pitchfork.com/story/gta-vi-is-putting-on-a-music-festival/",
+          "title": "GTA VI Is Putting on a Music Festival",
+          "publisher": "Pitchfork",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTekEg6cYz-O-MALdUmw1eDlb6sTzUTAOvnf_EUJI0h6ENGKc-p1zMB9jCU9eM"
+        }
+      ]
+    },
+    {
+      "query": "fable 5.2",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-09T19:00:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/09/anthropic-claude-fable-5-2-mythos-5-2.html",
+        "https://www.bloomberg.com/news/articles/2026-11-09/anthropic-unveils-new-fable-mythos-ai-models-ahead-of-ipo",
+        "https://qz.com/anthropic-claude-fable-mythos-5-2-price-cut-110926"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6bYvb3lqQaCsB37Lc_VKJTNc4A7qafmCxn4JRkRQcr5o9BGpWbEh8OgnLnAM",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/09/anthropic-claude-fable-5-2-mythos-5-2.html",
+          "title": "Anthropic releases first frontier models since Amodei's call for slowdown as IPO buzz builds",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6bYvb3lqQaCsB37Lc_VKJTNc4A7qafmCxn4JRkRQcr5o9BGpWbEh8OgnLnAM"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-09/anthropic-unveils-new-fable-mythos-ai-models-ahead-of-ipo",
+          "title": "Anthropic Unveils New Fable, Mythos AI Models Ahead of IPO",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwbC_02-nQm2F4EHNS5qnwTXsPQvEmeKYdnTXVW-BNMH9iv2vOo0pClKJ9pTk"
+        },
+        {
+          "url": "https://qz.com/anthropic-claude-fable-mythos-5-2-price-cut-110926",
+          "title": "Anthropic releases two new Claude models and cuts prices 20%",
+          "publisher": "Quartz",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaJppM3Q1w7Da_2rTIaHrkHI27qtJh1nzoDotX3XD6wyoaPq2asQcfkiGhrx4"
+        }
+      ]
+    },
+    {
+      "query": "fall out boy tour",
+      "approx_searches": "5000+",
       "published_at": "2026-11-09T18:40:00Z",
       "related_news_urls": [
         "https://www.rollingstone.com/music/music-features/fall-out-boy-interview-tour-dates-new-single-aces-1235654708/",
@@ -148,7 +288,7 @@
     },
     {
       "query": "supper mario broth",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-09T18:40:00Z",
       "related_news_urls": [
         "https://www.ign.com/articles/supper-mario-broth-health-condition",
@@ -182,43 +322,8 @@
       ]
     },
     {
-      "query": "mike tomlin dallas cowboys coaching rumors",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T18:40:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/dak-prescott-cowardice-to-put-the-blame-on-brian-schottenheimer",
-        "https://www.dallascowboys.com/news/tape-talk-film-review-from-cowboys-33-30-overtime-loss-to-cardinals",
-        "https://www.wsj.com/sports/football/gardner-minshew-arizona-cardinals-cowboys-b6d96805"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ10L4zhIu3G18VaipmbF-dH2iOZfv4UyNPRwXpfZTfjGDw8tsMYjhK5pEh_5E",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/dak-prescott-cowardice-to-put-the-blame-on-brian-schottenheimer",
-          "title": "Dak Prescott: “Cowardice” to put blame for Sunday’s loss on Brian Schottenheimer",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ10L4zhIu3G18VaipmbF-dH2iOZfv4UyNPRwXpfZTfjGDw8tsMYjhK5pEh_5E"
-        },
-        {
-          "url": "https://www.dallascowboys.com/news/tape-talk-film-review-from-cowboys-33-30-overtime-loss-to-cardinals",
-          "title": "Tape Talk: Film review from Cowboys' 33-30 overtime loss to Cardinals",
-          "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1yL_bt17S_vZEwjKFOdbZnrfGMgAUxCUiH8OwGbPSbPp5PU1FcL9xHUlGty8"
-        },
-        {
-          "url": "https://www.wsj.com/sports/football/gardner-minshew-arizona-cardinals-cowboys-b6d96805",
-          "title": "The Backup Quarterback Who Conjures Magic Across the NFL",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQOEou93qxBBnp6vE1beJsybdm9SnYu-yHY1leMGwRLnZjhW-t1F6Uvao40OQ"
-        }
-      ]
-    },
-    {
       "query": "activision",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-09T18:40:00Z",
       "related_news_urls": [
         "https://www.invenglobal.com/articles/28288/call-of-duty-cracks-down-on-warzone-agent-lobby-shopping-tool",
@@ -248,111 +353,6 @@
           "publisher": "Eurogamer.net",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRfe2A3IjzsdImZVjTAt_lqBTxAx4j9rH8Q_VkjT6UZHYIQ0WCB6VeNjkgbhbE"
-        }
-      ]
-    },
-    {
-      "query": "andre cisco",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-09T18:30:00Z",
-      "related_news_urls": [
-        "https://www.prideofdetroit.com/detroit-lions-news/180431/detroit-lions-trade-veteran-safety-andre-cisco-new-york-jets",
-        "https://www.nytimes.com/athletic/live-blogs/nfl-trade-deadline-2026-live-updates-news-grades-tracker/V6wZ6DTPEgzk/",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/lions-agree-to-acquire-s-andre-cisco-from-jets"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNnqrDpRkMHQYQAxSQeq2OuznnX4nLHYhL-YL5JEQvtT4HsWaIylQaTYtZ9sc",
-      "image_credit": "Pride Of Detroit",
-      "news": [
-        {
-          "url": "https://www.prideofdetroit.com/detroit-lions-news/180431/detroit-lions-trade-veteran-safety-andre-cisco-new-york-jets",
-          "title": "Detroit Lions trade for veteran safety from Jets",
-          "publisher": "Pride Of Detroit",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNnqrDpRkMHQYQAxSQeq2OuznnX4nLHYhL-YL5JEQvtT4HsWaIylQaTYtZ9sc"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/live-blogs/nfl-trade-deadline-2026-live-updates-news-grades-tracker/V6wZ6DTPEgzk/",
-          "title": "NFL trade deadline 2026 live updates: Jets send Andre Cisco to Lions; Jaguars make 2 moves",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhJc_C-_KE72dcSfRQmJshmhbOtp2NtOd3uAoSKuzBKFRH-GA5p9T-G2G4A30"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/lions-agree-to-acquire-s-andre-cisco-from-jets",
-          "title": "Lions agree to acquire S Andre Cisco from Jets",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3mT-brPZaQOip-bOAh9w7ZPQUzu4SPILjq5xaWEUOmubt29OTOnL5PuLCVoc"
-        }
-      ]
-    },
-    {
-      "query": "ahmed moor",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T18:30:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/us-news/2026/nov/09/john-fetterman-pennsylvania-ahmed-moor",
-        "https://www.inquirer.com/politics/pennsylvania/john-fetterman-challenger-2028-ahmed-moor-20261109.html",
-        "https://thehill.com/homenews/6208182-ahmed-moor-challenges-fetterman/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScep1BnfoXgPbLIMS7y_qUYPufhurVaGCLdSVMq0vH1F6vRroBtbCUcCZBJgc",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/us-news/2026/nov/09/john-fetterman-pennsylvania-ahmed-moor",
-          "title": "John Fetterman to be challenged for Senate seat by democratic socialist born in Gaza",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScep1BnfoXgPbLIMS7y_qUYPufhurVaGCLdSVMq0vH1F6vRroBtbCUcCZBJgc"
-        },
-        {
-          "url": "https://www.inquirer.com/politics/pennsylvania/john-fetterman-challenger-2028-ahmed-moor-20261109.html",
-          "title": "Ahmed Moor, a Gaza-born Philadelphian, is John Fetterman’s first 2028 challenger",
-          "publisher": "Inquirer.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKEl0d8uS4AGHt792eRHp-_qt8Zyigk2Qy5ZIpyii71GqoxETmG-T5q7q2R30"
-        },
-        {
-          "url": "https://thehill.com/homenews/6208182-ahmed-moor-challenges-fetterman/",
-          "title": "First challenger enters race for Fetterman’s seat in 2028",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3uqdbEqZSJeKk4C-q9VqG0J7AWfUnCuyoY63px9ThD6GO2IEAaoei6jD32Nw"
-        }
-      ]
-    },
-    {
-      "query": "pawan kalyan",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T18:20:00Z",
-      "related_news_urls": [
-        "https://timesofindia.indiatimes.com/city/hyderabad/andhra-pradesh-deputy-chief-minister-pawan-kalyan-and-wife-anna-konidela-announce-separation/articleshow/135691684.cms",
-        "https://www.telugu360.com/pawan-kalyan-anna-konidala-divorce-after-13years-of-marriage/",
-        "https://www.socialnews.xyz/2026/11/09/pawan-kalyan-and-anna-konidala-announce-separation-end-13-year-marriage/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9v59aaG_fg7mn3JdIF2_MSumDVpfENGAtSBm6PAUekp8A0LSi4Wlga_-jiTI",
-      "image_credit": "The Times of India",
-      "news": [
-        {
-          "url": "https://timesofindia.indiatimes.com/city/hyderabad/andhra-pradesh-deputy-chief-minister-pawan-kalyan-and-wife-anna-konidela-announce-separation/articleshow/135691684.cms",
-          "title": "Andhra Pradesh deputy chief minister Pawan Kalyan and wife Anna Konidela announce separation",
-          "publisher": "The Times of India",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9v59aaG_fg7mn3JdIF2_MSumDVpfENGAtSBm6PAUekp8A0LSi4Wlga_-jiTI"
-        },
-        {
-          "url": "https://www.telugu360.com/pawan-kalyan-anna-konidala-divorce-after-13years-of-marriage/",
-          "title": "Pawan Kalyan, Anna Konidala Divorce after 13years of marriage",
-          "publisher": "Telugu360",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDVDGn-PA8GsEUya7XocazdJvJdGPoqxOJ2ekIJwTxk6EUEE3UIL7L58L65xU"
-        },
-        {
-          "url": "https://www.socialnews.xyz/2026/11/09/pawan-kalyan-and-anna-konidala-announce-separation-end-13-year-marriage/",
-          "title": "Pawan Kalyan and Anna Konidala Announce Separation, End 13-Year Marriage",
-          "publisher": "Social News XYZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRylayy_4_i9fxMx3EhcuROGThYhfvin57nB25cIQHXmZamarMBrhsNjrNGGIQ"
         }
       ]
     }
