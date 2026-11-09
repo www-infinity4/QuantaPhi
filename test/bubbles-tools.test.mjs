@@ -549,6 +549,9 @@ test('GPT-OSS raw channel delimiters and internal response plans are not user re
  for(const ordinary of [
   'The analysis of the test output shows two blocked jobs.',
   'Analysis: GitHub rejected the branch because it is non-fast-forward.',
+  'Analysis: We have a race condition in the writer.',
+  'Analysis: We need a unique constraint on request_id to prevent duplicate inserts.',
+  'Analysis: I should use the existing repository source to decide which test to run.',
   'The assistant reported a failed receipt; no code was written.'
  ])assert.equal(hasModelToolLeak(ordinary),false,ordinary);
 });
