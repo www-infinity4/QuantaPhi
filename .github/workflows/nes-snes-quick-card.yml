@@ -6,6 +6,8 @@ on:
       - 'oracle-card-deck.js'
       - 'nes-snes-quick-card.js'
       - 'nes-snes-quick-card.css'
+      - 'oracle-card-deck.css'
+      - 'workers/quantaphi-site/worker.js'
       - 'nes-snes-player.html'
       - 'assets/nes-snes-card.svg'
       - 'test/nes-snes-quick-card.test.cjs'
