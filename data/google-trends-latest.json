@@ -3,27 +3,237 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T16:31:37.984230Z",
+  "checked_at": "2026-11-09T17:01:54.703692Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "white house",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T16:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/09/opinion/stephen-miller-roy-cohn-trump.html",
+        "https://www.theguardian.com/us-news/2026/nov/09/stephen-miller-white-house-chief-of-staff",
+        "https://www.axios.com/2026/11/08/richard-walters-white-house-stephen-miller"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR13nKtLcwbj7yJsy3CibaXC7NczSFe2quDQVHj5_KL9TO_sUyNGjtJMW1zdxM",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/09/opinion/stephen-miller-roy-cohn-trump.html",
+          "title": "Opinion | There’s a New Roy Cohn in Town",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR13nKtLcwbj7yJsy3CibaXC7NczSFe2quDQVHj5_KL9TO_sUyNGjtJMW1zdxM"
+        },
+        {
+          "url": "https://www.theguardian.com/us-news/2026/nov/09/stephen-miller-white-house-chief-of-staff",
+          "title": "Hardline Trump aide Stephen Miller takes over as White House chief of staff",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8xXAxbOCYpbC_G6qm1tEQ4FtwEsaGGCkHrVdkABl2nQOkfq-eVg7hjHvMpSk"
+        },
+        {
+          "url": "https://www.axios.com/2026/11/08/richard-walters-white-house-stephen-miller",
+          "title": "Scoop: First major White House departure as Miller takes charge",
+          "publisher": "Axios",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2l0Is52xTzqCRzs048IM68affPzEhOwhf5OT1ebT92nw_nYvMz9Xg3Qdea-Q"
+        }
+      ]
+    },
+    {
+      "query": "stray kids world tour dates",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-09T16:40:00Z",
+      "related_news_urls": [
+        "https://www.baltimoreravens.com/news/stray-kids-announce-2027-world-tour-run-it-across-north-america-europe-and-the-uk",
+        "https://www.usatoday.com/story/shopping/entertainment/tickets/2026/11/09/stray-kids-2027-tickets-tour-schedule/92689903007/",
+        "https://www.wbaltv.com/article/k-pop-stray-kids-baltimore-m-t-bank-stadium-2027/74375872"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTzNvQDHC2t9E5WQsqdxUVzSpQ9tW_MocoAeUpop6l4AyO0CoKxolmfiUwTkU",
+      "image_credit": "Baltimore Ravens",
+      "news": [
+        {
+          "url": "https://www.baltimoreravens.com/news/stray-kids-announce-2027-world-tour-run-it-across-north-america-europe-and-the-uk",
+          "title": "Stray Kids Announce 2027 World Tour ‘Run It’ Across North America, Europe and the UK",
+          "publisher": "Baltimore Ravens",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTzNvQDHC2t9E5WQsqdxUVzSpQ9tW_MocoAeUpop6l4AyO0CoKxolmfiUwTkU"
+        },
+        {
+          "url": "https://www.usatoday.com/story/shopping/entertainment/tickets/2026/11/09/stray-kids-2027-tickets-tour-schedule/92689903007/",
+          "title": "Stray Kids just announced 2027 'Run It' world tour, including 12 U.S. concerts",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoePLCyiGh-YDaTpqDEDXuvxLID8CpRA0YEMzz1bJO8DnyjNL3ZaZBvnRvCW0"
+        },
+        {
+          "url": "https://www.wbaltv.com/article/k-pop-stray-kids-baltimore-m-t-bank-stadium-2027/74375872",
+          "title": "'Stray Kids' coming to Baltimore's M&T Bank Stadium next summer",
+          "publisher": "WBAL-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQi0HEIS0Gc71QSy74BIm14CMR9_72kqIDHon7a1gQ6O9xouPZOxbcjxTqjpE"
+        }
+      ]
+    },
+    {
+      "query": "rockstar games gta vi",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-09T16:30:00Z",
+      "related_news_urls": [
+        "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10",
+        "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/",
+        "https://www.forbes.com/sites/paultassi/2026/11/09/gta-6-online-info-found-in-pre-loaded-gta-6-files-and-backend/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvr3MnhC7loBDcBhBXQOjgXQdBnSX1GgBl8Gp0wCtDiGaqob5Fx5ug4CQtEz4",
+      "image_credit": "Rockstar Games",
+      "news": [
+        {
+          "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10",
+          "title": "Grand Theft Auto VI Pre-Load Begins on November 10",
+          "publisher": "Rockstar Games",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvr3MnhC7loBDcBhBXQOjgXQdBnSX1GgBl8Gp0wCtDiGaqob5Fx5ug4CQtEz4"
+        },
+        {
+          "url": "https://blog.playstation.com/2026/11/03/grand-theft-auto-vi-pre-download-begins-november-10/",
+          "title": "Grand Theft Auto VI pre-download begins November 10",
+          "publisher": "PlayStation.Blog",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyNgZ56vmBZJJNXtBuVMuXt5SrJjkpTULssjmIfrOVOdDg6PUuF-BaAKk2CE8"
+        },
+        {
+          "url": "https://www.forbes.com/sites/paultassi/2026/11/09/gta-6-online-info-found-in-pre-loaded-gta-6-files-and-backend/",
+          "title": "‘GTA 6 Online’ Info Found In Pre-Loaded ‘GTA 6’ Files And Backend",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwrF8DXqlToUK3psdVdfSCpjUNjKZkwepLLR1XgXKaV4__g10bI0xKXSdKFmY"
+        }
+      ]
+    },
+    {
+      "query": "nasa meteor sighting north carolina tennessee",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T16:10:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/news/fireball-north-carolina-tennessee-47000-mph/",
+        "https://www.timesfreepress.com/news/2026/nov/08/fireball-over-chattanooga-was-a-piece-of-an-asteroid-nasa-says/",
+        "https://www.local3news.com/local-news/nasa-fireball-meteor-disintegrated-above-east-ridge-thursday-night/article_6168a581-74cb-4e3c-aadc-df8711fe1da4.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiHkCRpJbx666MskfTf4hi2Gv389BobjMyvjevI7-Oqglq2rnMDlBooJrjFtU",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/news/fireball-north-carolina-tennessee-47000-mph/",
+          "title": "Fireball traveling 47,000 mph lights up sky over North Carolina and Tennessee",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiHkCRpJbx666MskfTf4hi2Gv389BobjMyvjevI7-Oqglq2rnMDlBooJrjFtU"
+        },
+        {
+          "url": "https://www.timesfreepress.com/news/2026/nov/08/fireball-over-chattanooga-was-a-piece-of-an-asteroid-nasa-says/",
+          "title": "Fireball over Chattanooga was a piece of an asteroid, NASA says",
+          "publisher": "Chattanooga Times Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSrJL2hCtm_yM1kxD-cNArUhC6iBrY5_U8rEHFMCTI8UMsvklH6as_ogYu-IRQ"
+        },
+        {
+          "url": "https://www.local3news.com/local-news/nasa-fireball-meteor-disintegrated-above-east-ridge-thursday-night/article_6168a581-74cb-4e3c-aadc-df8711fe1da4.html",
+          "title": "NASA: ‘Fireball’ meteor disintegrated above East Ridge Thursday night",
+          "publisher": "Local 3 News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShBSQgEb6c8iiToW3zB22rIw4lM2ZPtkKn7ndWSwq2FZ9xmZ7uACNEHijWg-c"
+        }
+      ]
+    },
+    {
+      "query": "gta vi xbox series s",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T16:00:00Z",
+      "related_news_urls": [
+        "https://en.gamegpu.com/news/igry/gta-6-na-xbox-series-s-smozhet-rabotat-v-razreshenii-ot-720p-do-1080p",
+        "https://www.engadget.com/2302290/playstation-5-settings-change-before-gta-6/",
+        "https://insider-gaming.com/gta-6-datamine-reveals-possible-120hz-mode-but-no-vrr-support/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtIyijI5UD74DZMboQABSrOFglfeeakq8jqScljH9No_Iu50-htO7vNtsgaFU",
+      "image_credit": "GameGPU",
+      "news": [
+        {
+          "url": "https://en.gamegpu.com/news/igry/gta-6-na-xbox-series-s-smozhet-rabotat-v-razreshenii-ot-720p-do-1080p",
+          "title": "GTA 6 on Xbox Series S will be able to run in resolutions from 720p to 1080p",
+          "publisher": "GameGPU",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtIyijI5UD74DZMboQABSrOFglfeeakq8jqScljH9No_Iu50-htO7vNtsgaFU"
+        },
+        {
+          "url": "https://www.engadget.com/2302290/playstation-5-settings-change-before-gta-6/",
+          "title": "Change These PlayStation 5 Settings Before GTA 6 Comes Out",
+          "publisher": "Engadget",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIE8UWdQws7ZE6cJJJeIYvc7mW_FTIgh1vJfjREEHpmICjOStawgCEKGbSn8o"
+        },
+        {
+          "url": "https://insider-gaming.com/gta-6-datamine-reveals-possible-120hz-mode-but-no-vrr-support/",
+          "title": "GTA 6 Datamine Reveals Possible 120Hz Mode, But No VRR Support",
+          "publisher": "Insider Gaming",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0sWbwhQ3xm3ImtHcmBDjAAsfTaH90atxvW4WSqe1JBns3HW9rll-wNbH7hXY"
+        }
+      ]
+    },
+    {
+      "query": "24 team playoff",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-09T15:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7765656/2026/11/09/college-football-playoff-24-teams-espn-expansion/",
+        "https://collegefootballplayoff.com/news/2026/11/9/24-team-expansion",
+        "https://www.espn.com/video/clip/_/id/50433483"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvUzRY6pe8qqd-nDRcPzSCMFavkT2ZJoOyaQaYvNyTk2YDZcxJF49A9eW-ddA",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7765656/2026/11/09/college-football-playoff-24-teams-espn-expansion/",
+          "title": "ESPN, College Football Playoff agree to details of expansion to 24 teams: Sources - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvUzRY6pe8qqd-nDRcPzSCMFavkT2ZJoOyaQaYvNyTk2YDZcxJF49A9eW-ddA"
+        },
+        {
+          "url": "https://collegefootballplayoff.com/news/2026/11/9/24-team-expansion",
+          "title": "CFP to Expand to 24 Teams Starting with the 2027-28 College Football Season; Announces Exclusive Media Rights Agreement with ESPN to Televise New CFP Games through the 2021-32 Seas",
+          "publisher": "College Football Playoff",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBXwo9vwSrsBfq_dc1MzSqLbSfjqUg7I3_INac-SUEvM7BEZ-k0we6rrzwijw"
+        },
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50433483",
+          "title": "Stephen A. calls for teams to have stronger schedules in light of 24-team CFP",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_aefW81CbVhokIsa4h6xGJPgoD9JJuvelgLj3FAmqbbVG2QyTMNpFbu4l0RE"
+        }
+      ]
+    },
     {
       "query": "sarah jukaku",
       "approx_searches": "1000+",
       "published_at": "2026-11-09T15:50:00Z",
       "related_news_urls": [
-        "https://www.theguardian.com/us-news/2026/nov/08/abdul-el-sayed-michigan-senator-oxford-university-years-phd",
+        "https://www.foxnews.com/politics/democratic-senator-elect-calls-trump-unserious-fool-defending-combative-political-style",
         "https://timesofindia.indiatimes.com/world/us/there-is-only-the-united-states-of-america-erika-kirk-slams-abdul-el-sayeds-arab-america-remark-after-historic-senate-win/articleshow/135686041.cms",
-        "https://www.politico.com/news/2026/11/08/el-sayed-work-with-trump-medicare-01155555"
+        "https://abcnews.com/Politics/abdul-el-sayed-democrats-work-trump-act/story?id=137952241"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0-Yc7rAXTMjNENgNaraBPvpudmoWCAVR8VSwhhIT7ErNUXV9m-kmqJA4gBCs",
-      "image_credit": "The Guardian",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtsLi-Ipv2pENqAIP3QBv6KY7vIv3f_OzIzarck0pf5f8HosX0BcLExs_d76k",
+      "image_credit": "Fox News",
       "news": [
         {
-          "url": "https://www.theguardian.com/us-news/2026/nov/08/abdul-el-sayed-michigan-senator-oxford-university-years-phd",
-          "title": "Abdul El-Sayed’s Oxford years: PhD, political influences and sporting distinction",
-          "publisher": "The Guardian",
+          "url": "https://www.foxnews.com/politics/democratic-senator-elect-calls-trump-unserious-fool-defending-combative-political-style",
+          "title": "Democratic senator-elect calls Trump 'unserious fool' while defending combative political style",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0-Yc7rAXTMjNENgNaraBPvpudmoWCAVR8VSwhhIT7ErNUXV9m-kmqJA4gBCs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtsLi-Ipv2pENqAIP3QBv6KY7vIv3f_OzIzarck0pf5f8HosX0BcLExs_d76k"
         },
         {
           "url": "https://timesofindia.indiatimes.com/world/us/there-is-only-the-united-states-of-america-erika-kirk-slams-abdul-el-sayeds-arab-america-remark-after-historic-senate-win/articleshow/135686041.cms",
@@ -33,81 +243,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1JK-ttQUFCbWc4GvcBR1VUp21MIEgU8R-O8rV6llscjRl57ql5bTCajliKCk"
         },
         {
-          "url": "https://www.politico.com/news/2026/11/08/el-sayed-work-with-trump-medicare-01155555",
-          "title": "El-Sayed says he is ‘happy’ to work with Trump on Medicare for all, other priorities",
-          "publisher": "Politico",
+          "url": "https://abcnews.com/Politics/abdul-el-sayed-democrats-work-trump-act/story?id=137952241",
+          "title": "Abdul El-Sayed says Democrats will work with Trump if 'he wants to act serious'",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxNUzu3fQhRq_UoIQjS1BEaonfqJAENhdwd5mWAzefYbNS3PXCo1fF9pXtaIs"
-        }
-      ]
-    },
-    {
-      "query": "24 team playoff",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T15:50:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/college-football/news/college-football-playoff-format-expanding-to-24-teams-for-2027-season/",
-        "https://sports.yahoo.com/articles/espn-cfp-agree-expanded-playoff-155858540.html",
-        "https://www.nytimes.com/athletic/7765656/2026/11/09/college-football-playoff-24-teams-espn-expansion/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZlyh3037w5YJoEQNAwSD2yOZ4jvp-mDaXHhxSDLyQE5Ui0oIqDgBztIR8yU4",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/college-football/news/college-football-playoff-format-expanding-to-24-teams-for-2027-season/",
-          "title": "College Football Playoff officially expanding to 24 teams for 2027 season",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZlyh3037w5YJoEQNAwSD2yOZ4jvp-mDaXHhxSDLyQE5Ui0oIqDgBztIR8yU4"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/espn-cfp-agree-expanded-playoff-155858540.html",
-          "title": "ESPN, CFP agree to expanded playoff, but at what cost? Details of mega deal",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRl8JaDOhVBtcQkbN5BDiK3wdcjZU6gwQKEiZpO0GR--ESeOs34k_kQGvN5mwg"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7765656/2026/11/09/college-football-playoff-24-teams-espn-expansion/",
-          "title": "ESPN, College Football Playoff agree to details of expansion to 24 teams: Sources",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvUzRY6pe8qqd-nDRcPzSCMFavkT2ZJoOyaQaYvNyTk2YDZcxJF49A9eW-ddA"
-        }
-      ]
-    },
-    {
-      "query": "cfp",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-09T15:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50420955/connelly-how-week-10-biggest-games-won",
-        "https://www.nytimes.com/athletic/7762900/2026/11/08/college-football-playoff-picture-bracket-projections/",
-        "https://sports.yahoo.com/college-football/article/yahoo-top-10-messy-day-of-blowouts-creates-cleaner-picture-of-the-sports-best-061153518.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4oC8q9Ss6d5wxFnt8Nxv05YBgeK4TIkyfGCTT_6osTbuJHix9YJ6v35-aK_k",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50420955/connelly-how-week-10-biggest-games-won",
-          "title": "Connelly: How Week 10's top games were won, what it means for CFP",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4oC8q9Ss6d5wxFnt8Nxv05YBgeK4TIkyfGCTT_6osTbuJHix9YJ6v35-aK_k"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7762900/2026/11/08/college-football-playoff-picture-bracket-projections/",
-          "title": "How did the College Football Playoff picture change after the biggest Saturday of the season?",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT37xFRQkcI4EJ0SPuLXBLv9K_5nixEAXy-cS1OaiBnnt7tCZx_zzYiIFAdK8Q"
-        },
-        {
-          "url": "https://sports.yahoo.com/college-football/article/yahoo-top-10-messy-day-of-blowouts-creates-cleaner-picture-of-the-sports-best-061153518.html",
-          "title": "Yahoo Top 10: Messy day of blowouts creates cleaner picture of the sport's best",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnNZ1uzj5uJ5KIm1zsUJLF3csqaVrRFZKzXtZXsmlmB-2zPY1Y0zdKcgb0E3M"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRN2qKe5vIfEMaH7_txeYZKPZ94mj-ucn_KRrOmumU5rCjHjxE0lQWZRmZa59A"
         }
       ]
     },
@@ -116,13 +256,20 @@
       "approx_searches": "500+",
       "published_at": "2026-11-09T15:50:00Z",
       "related_news_urls": [
+        "https://www.yahoo.com/entertainment/videos/real-reason-gwyneth-paltrow-brad-150000934.html",
         "https://people.com/gwyneth-paltrow-zip-up-sweater-november-2026-12187498",
-        "https://www.imdb.com/fr/news/ni66100983/?ref_=nm_nwr_1",
-        "https://www.therichest.com/gwyneth-paltrow-and-timothe-chalamet-explain-why-they-had-no-intimacy-coordinator-for-their-steamy-marty-supreme-scenes/"
+        "https://www.imdb.com/fr/news/ni66100983/?ref_=nm_nwr_1"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSWd8vuPv2K9cNz1MMl22vfpsLGK2HxmZSzyW00PyZz37aYcQGYzdcITyuiS4",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReBhF2WV4zn_bsUT3ObGf48jKF5AGCowY2nURD6SbmVSCC6DpI45SYN2CuKLU",
+      "image_credit": "Yahoo",
       "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/videos/real-reason-gwyneth-paltrow-brad-150000934.html",
+          "title": "The Real Reason Gwyneth Paltrow And Brad Pitt Called It Quits",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReBhF2WV4zn_bsUT3ObGf48jKF5AGCowY2nURD6SbmVSCC6DpI45SYN2CuKLU"
+        },
         {
           "url": "https://people.com/gwyneth-paltrow-zip-up-sweater-november-2026-12187498",
           "title": "I’m Swapping Bulky Jackets for Gwyneth Paltrow’s Zip-Up Sweater That Makes Fall Outfits Look Instantly Polished",
@@ -136,13 +283,6 @@
           "publisher": "IMDb",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr68HCFzIWVltsioiqkhBt_Ah3sDHM08xguBjt1QZVUsMN40Mc4dg-nCPDU5U"
-        },
-        {
-          "url": "https://www.therichest.com/gwyneth-paltrow-and-timothe-chalamet-explain-why-they-had-no-intimacy-coordinator-for-their-steamy-marty-supreme-scenes/",
-          "title": "Gwyneth Paltrow And Timothée Chalamet Explain Why They Had No Intimacy Coordinator For Their Steamy Marty Supreme Scenes",
-          "publisher": "TheRichest",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbtWR1jczIjcBPqYkpk3ubzTEe-YwCVKjPBF0sFCgCxQ0oe4CdZ1JBM9ZCqyE"
         }
       ]
     },
@@ -152,7 +292,7 @@
       "published_at": "2026-11-09T15:40:00Z",
       "related_news_urls": [
         "https://myfox8.com/weather/blog/is-the-triad-in-for-an-icy-winter-fox8-meteorologist-emily-byrd-shares-2026-27-winter-weather-prediction/",
-        "https://www.mensjournal.com/news/new-forecast-shows-us-states-facing-the-least-snow-this-winter",
+        "https://www.mensjournal.com/news/3-areas-of-the-us-facing-the-most-snow-this-winter",
         "https://www.yahoo.com/news/weather-news/articles/noaa-winter-storm-map-forecasts-121500800.html"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTv7ANNxeZINUk5xRnMBoxcfsa5STkEg2jmF5Rs1QgTSHHLy5Wt220lum-JAOE",
@@ -166,8 +306,8 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTv7ANNxeZINUk5xRnMBoxcfsa5STkEg2jmF5Rs1QgTSHHLy5Wt220lum-JAOE"
         },
         {
-          "url": "https://www.mensjournal.com/news/new-forecast-shows-us-states-facing-the-least-snow-this-winter",
-          "title": "New Forecast Shows US States Facing the Least Snow This Winter",
+          "url": "https://www.mensjournal.com/news/3-areas-of-the-us-facing-the-most-snow-this-winter",
+          "title": "3 Areas of the US Facing the Most Snow This Winter",
           "publisher": "Men's Journal",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6Z99lZAhzo2VT386nOESIj1VDBfDUlvIiNZFiswjr57-aTsX4sOyfzWMgTZg"
@@ -183,12 +323,12 @@
     },
     {
       "query": "national chicken sandwich day",
-      "approx_searches": "500+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-09T15:30:00Z",
       "related_news_urls": [
         "https://www.kvue.com/video/news/local/national-fried-chicken-sandwich-day-november-9-popeyes-chick-fil-a-urban-bird-hot-chicken-austin-deal/269-b34b0cd5-1481-4c7b-8c0d-2d1fba667f4d",
-        "https://www.cbsnews.com/chicago/video/chicagos-do-rite-donuts-celebrates-national-fried-chicken-sandwich-day/",
-        "https://www.13newsnow.com/article/news/nation-world/national-fried-chicken-sandwich-day-freebies-and-deals/507-66e27ec3-0dbe-4b99-bb55-f04f1e84088e"
+        "https://www.13newsnow.com/article/news/nation-world/national-fried-chicken-sandwich-day-freebies-and-deals/507-66e27ec3-0dbe-4b99-bb55-f04f1e84088e",
+        "https://mashable.com/life/national-fried-chicken-sandwich-day-2026-free-food-deals"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPWMhriT9U0KbynctDfW9C2LzCTQjibzaGZIVFun_K-ketkGU1TgKpfvCdH5s",
       "image_credit": "KVUE",
@@ -201,158 +341,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPWMhriT9U0KbynctDfW9C2LzCTQjibzaGZIVFun_K-ketkGU1TgKpfvCdH5s"
         },
         {
-          "url": "https://www.cbsnews.com/chicago/video/chicagos-do-rite-donuts-celebrates-national-fried-chicken-sandwich-day/",
-          "title": "Chicago's Do-Rite Donuts celebrates National Fried Chicken Sandwich Day",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvgARQjpG3aAPTIhBZ0AJSn8FyqXgD-V3_hGcz5pP8jG3IkWb4c4otjGQnlkM"
-        },
-        {
           "url": "https://www.13newsnow.com/article/news/nation-world/national-fried-chicken-sandwich-day-freebies-and-deals/507-66e27ec3-0dbe-4b99-bb55-f04f1e84088e",
           "title": "Fast-food restaurants celebrate National fried chicken sandwich day with freebies and deals",
           "publisher": "13newsnow.com",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfq8-U8c-kL15QrbfJdiLZRHSTHmsVF67aMQ-jYQkBU0wFA5kcMoxUvYfEfzA"
-        }
-      ]
-    },
-    {
-      "query": "hoda kotb",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T15:30:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/articles/hoda-kotb-reunites-jenna-bush-160016738.html",
-        "https://www.yahoo.com/entertainment/tv/articles/hoda-kotb-hosts-today-jenna-154445758.html",
-        "https://www.today.com/popculture/tv/savannah-guthrie-hoda-kotb-first-episode-co-anchors-today-show-rcna604988"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNg2b3esNHPTuo2zx8gM5DsGtqlqkS_II_MLg686fWLcsbG-8h4t4-SJJ86Bo",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/hoda-kotb-reunites-jenna-bush-160016738.html",
-          "title": "Hoda Kotb Reunites with Jenna Bush Hager as Guest Co-Host on “Today”: ‘Like Not a Day Had Passed’",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNg2b3esNHPTuo2zx8gM5DsGtqlqkS_II_MLg686fWLcsbG-8h4t4-SJJ86Bo"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/hoda-kotb-hosts-today-jenna-154445758.html",
-          "title": "Hoda Kotb Hosts ‘Today’ With Jenna Bush Hager Nearly 2 Years After Show Exit",
-          "publisher": "Yahoo",
+          "url": "https://mashable.com/life/national-fried-chicken-sandwich-day-2026-free-food-deals",
+          "title": "National Fried Chicken Sandwich Day 2026 deals: Score free food from Burger King, KFC, McDonald's, and more",
+          "publisher": "Mashable",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7foMwYQDGdAp2ymZtBWc_Ql0iliU5oShMVwuVAbfALAz_8rbYLSpfkfo5LdA"
-        },
-        {
-          "url": "https://www.today.com/popculture/tv/savannah-guthrie-hoda-kotb-first-episode-co-anchors-today-show-rcna604988",
-          "title": "Savannah Guthrie and Hoda Kotb Make History in 2018 as First Women Co-Anchors of TODAY",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSecQKgx917mLG181_bGSJj-lzkT4mmQlAIy3bpa6EAOLP-C36tIlCVHYO7P5c"
-        }
-      ]
-    },
-    {
-      "query": "netflix stock",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T15:30:00Z",
-      "related_news_urls": [
-        "https://www.constructiondive.com/news/tutor-perini-q3-2026-earnings-not-data-centers/874040/",
-        "https://finance.yahoo.com/news/value-investors-buy-tutor-perini-134002788.html",
-        "https://www.constructionbriefing.com/news/q3-update-tutor-perini-skanska-and-bam/8135704.article"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_qzWIyFlpaqN8S7kJKtNspkc94HWatUIhVrKBoHpFY5vLCLXGUL9wAd3scbk",
-      "image_credit": "Construction Dive",
-      "news": [
-        {
-          "url": "https://www.constructiondive.com/news/tutor-perini-q3-2026-earnings-not-data-centers/874040/",
-          "title": "Tutor Perini sees $200B in potential bids. Almost none of them are data centers.",
-          "publisher": "Construction Dive",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_qzWIyFlpaqN8S7kJKtNspkc94HWatUIhVrKBoHpFY5vLCLXGUL9wAd3scbk"
-        },
-        {
-          "url": "https://finance.yahoo.com/news/value-investors-buy-tutor-perini-134002788.html",
-          "title": "Should Value Investors Buy Tutor Perini (TPC) Stock?",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF8BJtsMcu3G_FqG0rLEohOaPkHTf7XldaR_ML69cBaYcuKkIG3hQJZh-bbLE"
-        },
-        {
-          "url": "https://www.constructionbriefing.com/news/q3-update-tutor-perini-skanska-and-bam/8135704.article",
-          "title": "Q3 update: Tutor Perini, Skanska, and Bam",
-          "publisher": "Construction Briefing",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_hvxrCMihBpYsXvzBntfyKMqX97LODdn9P6wS6roD3I_SlYhC1BIQ7vw3nqU"
-        }
-      ]
-    },
-    {
-      "query": "sophie cunningham wnba 3-point snub",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T15:20:00Z",
-      "related_news_urls": [
-        "https://athlonsports.com/wnba/indiana-fever/sophie-cunningham-announces-update-career-move",
-        "https://www.basketballnetwork.net/latest-news/sophie-cunningham-blasts-the-wnba-for-being-left-out-of-three-point-contest",
-        "https://www.marca.com/en/basketball/wnba/indiana-fever/2026/11/08/sophie-cunningham-s-new-plans-face-conflict-with-basketball-as-she-awaits-news-about-her-future.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeEzsxaf5_kkZ1iwy6IRqNEAev6OgeNXs3l7O29V2s6DSHQX4Bvii1spSgA9M",
-      "image_credit": "Athlon Sports",
-      "news": [
-        {
-          "url": "https://athlonsports.com/wnba/indiana-fever/sophie-cunningham-announces-update-career-move",
-          "title": "Sophie Cunningham Announces Update Ahead of Potential Career Move",
-          "publisher": "Athlon Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeEzsxaf5_kkZ1iwy6IRqNEAev6OgeNXs3l7O29V2s6DSHQX4Bvii1spSgA9M"
-        },
-        {
-          "url": "https://www.basketballnetwork.net/latest-news/sophie-cunningham-blasts-the-wnba-for-being-left-out-of-three-point-contest",
-          "title": "\"It's clearly so political\" - Sophie Cunningham calls out WNBA over three-point contest selections",
-          "publisher": "Basketball Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjG_jTYk60dOGyINtThVkl54voF7A1Myq4epA6ZREgbbIWgeTdO5DNnh5cNrE"
-        },
-        {
-          "url": "https://www.marca.com/en/basketball/wnba/indiana-fever/2026/11/08/sophie-cunningham-s-new-plans-face-conflict-with-basketball-as-she-awaits-news-about-her-future.html",
-          "title": "Sophie Cunningham's new plans face a conflict with basketball as she awaits news about her future",
-          "publisher": "MARCA",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToqFCtXrlL6bFbh49A_a8FJrkhlwbGvRFww6SqYY8SiiDu0x2AA_v0f0v_v88"
-        }
-      ]
-    },
-    {
-      "query": "voo stock",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T15:20:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/buy-voo-market-rebounds-125000855.html",
-        "https://www.moomoo.com/community/feed/moomoo-ai-8th-post-117576162869254",
-        "https://www.aol.com/articles/2-brilliant-etfs-im-stocking-133500000.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKClJ7n0WfNGv7zHIa5eJq1HdAILfGr2JWJzhJNW7Um2SDGgzk-_sRZxrzWKQ",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/buy-voo-market-rebounds-125000855.html",
-          "title": "Should You Buy VOO Before the Market Rebounds?",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKClJ7n0WfNGv7zHIa5eJq1HdAILfGr2JWJzhJNW7Um2SDGgzk-_sRZxrzWKQ"
-        },
-        {
-          "url": "https://www.moomoo.com/community/feed/moomoo-ai-8th-post-117576162869254",
-          "title": "moomoo AI 8th Post",
-          "publisher": "Moomoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqhvB-iLLIkp5iScLgBFJH06mNA6kThrsyKkNggL7jP83xh8qwOs3VN9MDNh8"
-        },
-        {
-          "url": "https://www.aol.com/articles/2-brilliant-etfs-im-stocking-133500000.html",
-          "title": "2 Brilliant ETFs I'm Stocking Up On if a Bear Market Is Coming",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYiCNBPa_y1M_oWstClzMETnB8GO7o8HwAiR1sn1JMUQe5UXJT9lzy1AGN7jU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEcjCWWDegk1QRjzWYNYO5GRDmZYEbcmkvZ8qe4K8xV2PwhxGdDl3kVnLroco"
         }
       ]
     }
