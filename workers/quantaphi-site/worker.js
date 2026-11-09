@@ -404,16 +404,18 @@ const LEGACY_HANDOFF_HTML="<!doctype html><html><head><meta charset=\"utf-8\"><m
 export default {
  async fetch(request, env, ctx) {
   const incoming = new URL(request.url);
-  // Source-only private telemetry bridge. No collection until explicitly configured;
-  // never fallback to public requests or wallet/Quant ledgers.
-  if(incoming.pathname === '/api/quant-events/consent'){
-   if(env.EVENT_CONSENT_MANAGEMENT_ENABLED!=='true')return Response.json({error:'consent_management_disabled'},{status:503,headers:{'Cache-Control':'no-store'}});
-   if(!env.EVENTS_BRIDGE?.fetch)return Response.json({error:'consent_service_unavailable'},{status:503,headers:{'Cache-Control':'no-store'}});
-   return env.EVENTS_BRIDGE.fetch(request);
-  }
-  if(incoming.pathname === '/api/quant-events'){
-   if(env.EVENTS_BRIDGE_ENABLED!=='true')return Response.json({error:'event_collection_disabled'},{status:503,headers:{'Cache-Control':'no-store'}});
-   if(!env.EVENTS_BRIDGE?.fetch)return Response.json({error:'event_bridge_unavailable'},{status:503,headers:{'Cache-Control':'no-store'}});
+  // Source-only private telemetry bridge. Both routes fail closed by default.
+  // No live data, wallet or Quant ledger writes when either binding/flag is absent.
+  if(incoming.pathname === '/api/quant-events/consent' || incoming.pathname === '/api/quant-events'){
+   const consent=incoming.pathname==='/api/quant-events/consent';
+   const flag=consent?'EVENT_CONSENT_MANAGEMENT_ENABLED':'EVENTS_BRIDGE_ENABLED';
+   const headers={'Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Vary':'Origin'};
+   const error=env?.[flag]!=='true'
+     ? consent?'consent_management_disabled':'event_collection_disabled'
+     : !env.EVENTS_BRIDGE?.fetch
+       ? consent?'consent_service_unavailable':'event_bridge_unavailable'
+       : null;
+   if(error)return Response.json({error},{status:503,headers});
    return env.EVENTS_BRIDGE.fetch(request);
   }
   if(incoming.pathname.startsWith('/api/bubbles/connections/')){
