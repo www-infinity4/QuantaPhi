@@ -5,7 +5,7 @@ import {DatabaseSync} from 'node:sqlite';
 import worker from '../src/ingest.ts';
 
 const SCHEMA = readFileSync(new URL('../migrations/0001_quant_events.sql', import.meta.url), 'utf8');
-const URL = 'https://quantaphi.org/v1/events';
+const ENDPOINT = 'https://quantaphi.org/v1/events';
 const sample = (n = 2) => ({
   user: {id: 'user-12345678', device_type: ' MOBILE '},
   queries: Array.from({length: n}, (_, i) => ({
@@ -15,7 +15,7 @@ const sample = (n = 2) => ({
   }))
 });
 function request(body, secret = 'local-test-secret') {
-  const r = new Request(URL, {method: 'POST',
+  const r = new Request(ENDPOINT, {method: 'POST',
     headers: {'content-type': 'application/json', authorization: 'Bearer ' + secret},
     body: JSON.stringify(body)});
   r.cf = {region: 'Iowa', regionCode: 'IA', postalCode: '52577'};
