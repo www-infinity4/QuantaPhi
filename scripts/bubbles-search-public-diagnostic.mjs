@@ -21,3 +21,21 @@ for(const target of targets){
   console.log('PUBLIC_BUBBLES_PROBE '+JSON.stringify({target:target.name,error:String(e?.name||'request_failed').slice(0,80),durationMs:Date.now()-t}));
  }
 }
+
+const start=Date.now();
+try{
+ const result=await fetch('https://bubbles-tools.marvaseater.workers.dev/v1/assist',{
+  method:'POST',redirect:'manual',signal:AbortSignal.timeout(25000),
+  headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},
+  body:JSON.stringify({request:'Search the web for radio astronomy with cited sources.'})
+ });
+ const data=await result.json().catch(()=>({}));
+ console.log('PUBLIC_BUBBLES_PROBE '+JSON.stringify({
+  target:'bubbles_web_search',status:result.status,tool:data.receipt?.tool||null,
+  toolStatus:data.receipt?.status||null,searchProvider:data.searchProvider||null,
+  resultCount:Array.isArray(data.sources)?data.sources.length:0,
+  error:typeof data.error==='string'?data.error.slice(0,80):null,
+  durationMs:Date.now()-start
+ }));
+}catch(e){console.log('PUBLIC_BUBBLES_PROBE '+JSON.stringify({
+ target:'bubbles_web_search',error:String(e?.name||'request_failed').slice(0,80),durationMs:Date.now()-start}))}
