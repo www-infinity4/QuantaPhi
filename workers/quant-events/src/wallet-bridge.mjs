@@ -165,3 +165,6 @@ export async function handleWalletEventIngress(request,env) {
     return json({received:parsed.events.length,accepted:parsed.events.length,persisted:false},202);
   } catch {return json({error:'ingestion_unavailable'},503);}
 }
+
+// Separately deployable Worker entrypoint: the site uses a private service binding.
+export default {fetch: handleWalletEventIngress};
