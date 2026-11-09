@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T00:01:43.192455Z",
+  "checked_at": "2026-11-09T00:46:57.985674Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "nets vs mavericks",
+      "query": "treveyon henderson",
       "approx_searches": "2000+",
-      "published_at": "2026-11-08T23:40:00Z",
+      "published_at": "2026-11-09T00:30:00Z",
       "related_news_urls": [
-        "https://www.netsdaily.com/nets-game-previews/115883/nets-vs-mavericks-preview-sunday-night-basketball-in-dallas-slug-brooklyn-nets-dallas-mavericks-preview",
-        "https://www.mavsmoneyball.com/dallas-mavericks-game-coverage/63753/mavericks-nets-preview-dallas-has-a-chance-to-keep-building-at-home",
-        "https://sports.yahoo.com/articles/mavericks-cleanest-injury-report-season-181132763.html"
+        "https://www.espn.com/nfl/story/_/id/50400016/patriots-treveyon-henderson-affected-neurological-symptoms",
+        "https://www.nfl.com/news/pats-treveyon-henderson-says-he-was-hospitalized-after-unusual-emergency-focused-on-recovery",
+        "https://people.com/patriots-treveyon-henderson-thanks-wife-for-her-support-after-hospitalization-12242140"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDnIEEt2zcpSusnyTUTOqm6JMhXLtdJqgmKZdHNOoSCmKAkA9txn7Qb3cNCsM",
-      "image_credit": "NetsDaily",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEER9rhghUlGiEPr8R7UuIs1oRMNnZAPiBWQiuK7mOkEdUsTGYh1wobRI7xAM",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.netsdaily.com/nets-game-previews/115883/nets-vs-mavericks-preview-sunday-night-basketball-in-dallas-slug-brooklyn-nets-dallas-mavericks-preview",
-          "title": "Nets vs. Mavericks Preview: Sunday night basketball in Dallas",
-          "publisher": "NetsDaily",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDnIEEt2zcpSusnyTUTOqm6JMhXLtdJqgmKZdHNOoSCmKAkA9txn7Qb3cNCsM"
-        },
-        {
-          "url": "https://www.mavsmoneyball.com/dallas-mavericks-game-coverage/63753/mavericks-nets-preview-dallas-has-a-chance-to-keep-building-at-home",
-          "title": "Mavericks-Nets preview: Dallas has a chance to keep building at home",
-          "publisher": "Mavs Moneyball",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_va7NgIi_jMHTf3sRn9fh1VKxVbxhkVIAk4zlFY8zcdgG2Z_m0Sc7esLVXa4"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/mavericks-cleanest-injury-report-season-181132763.html",
-          "title": "Mavericks Have Cleanest Injury Report of Season for the Brooklyn Nets",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmgXMEJmz_EQmEsUhYbrEfXJoML6Z78FLIUxTViAiLjIZ29Yl8F6QO9Up-AHY"
-        }
-      ]
-    },
-    {
-      "query": "erin andrews",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T23:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/nfl-legend-tom-brady-reacts-140400871.html",
-        "https://www.sportscapemagazine.com/blog/congratulations-flood-in-as-erin-andrews-marks-three-hundred-nfl-broadcasts",
-        "https://www.sportsbusinessjournal.com/Articles/2026/11/06/erin-andrews-set-for-300th-nfl-game-with-eye-on-more-morning-show-work-growing-fashion-line/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpMYO_A5he46bvtZSC-Cb1a4KiGxEaC9Iz0ORJYVVlv8JbvBuVELs9flkBBjI",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/nfl-legend-tom-brady-reacts-140400871.html",
-          "title": "NFL Legend Tom Brady Reacts to Fox Sports’ Erin Andrews Announcement",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpMYO_A5he46bvtZSC-Cb1a4KiGxEaC9Iz0ORJYVVlv8JbvBuVELs9flkBBjI"
-        },
-        {
-          "url": "https://www.sportscapemagazine.com/blog/congratulations-flood-in-as-erin-andrews-marks-three-hundred-nfl-broadcasts",
-          "title": "Congratulations Flood In as Erin Andrews Marks 300 NFL Broadcasts",
-          "publisher": "Sportscape Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTB-KFQ6CDyRbG6vU7G6gw6-uAv6xEEjPaVSa65kLxFIQwsYxXSZXYDfS36B5A"
-        },
-        {
-          "url": "https://www.sportsbusinessjournal.com/Articles/2026/11/06/erin-andrews-set-for-300th-nfl-game-with-eye-on-more-morning-show-work-growing-fashion-line/",
-          "title": "Erin Andrews set for 300th NFL game, with eye on more morning show work, growing fashion line",
-          "publisher": "Sports Business Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_YBIxBn0AsK8SOywG_sHPyJkWrQmskuBrKiWVNbhvcxu1dN9ffhcBhN9hrPs"
-        }
-      ]
-    },
-    {
-      "query": "quentin grimes",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T23:40:00Z",
-      "related_news_urls": [
-        "https://thesixersense.com/dodging-quentin-grimes-was-76ers-smartest-offseason-decision",
-        "https://www.rotowire.com/basketball/headlines/quentin-grimes-news-starting-against-pistons-538197",
-        "https://www.espn.com/nba/story/_/id/50426497/nuggets-starters-questionable-vs-rockets-plane-delays"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ57fXzZ0URICyOxxbO95rqGBwaDxG8ez0ZBwJeGxLtgvkzvyu6eBvjf_6bZOg",
-      "image_credit": "The Sixer Sense",
-      "news": [
-        {
-          "url": "https://thesixersense.com/dodging-quentin-grimes-was-76ers-smartest-offseason-decision",
-          "title": "Dodging Quentin Grimes was the 76ers' smartest offseason decision",
-          "publisher": "The Sixer Sense",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ57fXzZ0URICyOxxbO95rqGBwaDxG8ez0ZBwJeGxLtgvkzvyu6eBvjf_6bZOg"
-        },
-        {
-          "url": "https://www.rotowire.com/basketball/headlines/quentin-grimes-news-starting-against-pistons-538197",
-          "title": "Quentin Grimes News: Starting against Pistons",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUR5cr3tvaORqNhhUsE9JLrpGv3RoenoVsbRnX7Jxc6Y3AfkY6NVm2hSP8wPA"
-        },
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50426497/nuggets-starters-questionable-vs-rockets-plane-delays",
-          "title": "Nuggets' starters all questionable vs. Rockets after delays leaving Mexico",
+          "url": "https://www.espn.com/nfl/story/_/id/50400016/patriots-treveyon-henderson-affected-neurological-symptoms",
+          "title": "Patriots' TreVeyon Henderson affected by neurological symptoms",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTs6l2xsnhT6EkEk-QIuHOJ4XXBBcmrgI1qmJt99IPqi-GApb0o2wO8yp2G9s"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEER9rhghUlGiEPr8R7UuIs1oRMNnZAPiBWQiuK7mOkEdUsTGYh1wobRI7xAM"
+        },
+        {
+          "url": "https://www.nfl.com/news/pats-treveyon-henderson-says-he-was-hospitalized-after-unusual-emergency-focused-on-recovery",
+          "title": "Pats' TreVeyon Henderson says he was hospitalized after 'unusual' emergency; RB focused on recovery",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTq275OrPffRj3S9bsP9VJkeS7NPVdoeJFEdcN65Cxa3RICe50M2nHHHq83x_4"
+        },
+        {
+          "url": "https://people.com/patriots-treveyon-henderson-thanks-wife-for-her-support-after-hospitalization-12242140",
+          "title": "Patriots’ TreVeyon Henderson Thanks Wife for Her Support After Hospitalization for ‘Unusual Medical Emergency’",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhanNcspFqt0ILqXt49fQYQiZxrqQ9z3_H2bypdryZ_YKY58mf0wD7hQmNEB8"
         }
       ]
     },
     {
-      "query": "nvidia stock price",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-08T23:40:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/prediction-nvidias-palantirs-stock-prices-194600476.html",
-        "https://www.aol.com/articles/stocks-making-noise-ones-actually-173343000.html",
-        "https://pluang.com/en/news-feed/saham-yang-berisik-nvidia-amazon-palantir-pertumbuhan-dan-target-harga-2027"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeh-cSYJEFoAA6AY_YRBpfOQRdTGN3Jl56ON_BnOeYSj8DewJI8Qu7X-2oros",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/prediction-nvidias-palantirs-stock-prices-194600476.html",
-          "title": "Prediction: These Will Be Nvidia's and Palantir's Stock Prices by 2027 (Hint: Only 1 Is a Buy)",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeh-cSYJEFoAA6AY_YRBpfOQRdTGN3Jl56ON_BnOeYSj8DewJI8Qu7X-2oros"
-        },
-        {
-          "url": "https://www.aol.com/articles/stocks-making-noise-ones-actually-173343000.html",
-          "title": "The Stocks Making Noise-And the Ones That Actually Matter",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJn9QO3oXuVQ8cGVsr6zSkP_197R3N1s0SfOGNN3PTPrH1gagjIpJPoSmUjeE"
-        },
-        {
-          "url": "https://pluang.com/en/news-feed/saham-yang-berisik-nvidia-amazon-palantir-pertumbuhan-dan-target-harga-2027",
-          "title": "NVIDIA, Amazon, and Palantir show strong growth but need key milestones to hit bold 2027 price targets.",
-          "publisher": "Pluang",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS20fp_TxgOFmNZI0pYjTv2bU1rCBrsPv9djQX9gjfonGEthDj2-ljAPTsFFiM"
-        }
-      ]
-    },
-    {
-      "query": "quentin johnston",
+      "query": "trent mcduffie",
       "approx_searches": "500+",
-      "published_at": "2026-11-08T23:40:00Z",
+      "published_at": "2026-11-09T00:30:00Z",
       "related_news_urls": [
-        "https://dairylandexpress.com/quentin-johnston-could-become-surprise-packers-trade-target-01m5we2w273q",
-        "https://sports.yahoo.com/articles/chargers-trade-idea-sends-former-061530564.html",
-        "https://heavy.com/sports/nfl/new-york-giants/explore-trade-wide-receiver-quentin-johnston/"
+        "https://www.therams.com/news/trent-mcduffie-and-joe-cardona-among-rams-inactives-for-week-9-2026-at-commanders",
+        "https://www.commanders.com/news/commanders-vs-rams-week-9-injury-report",
+        "https://sports.yahoo.com/articles/week-9-inactives-rams-170324966.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSA3VR4riqos65vzRHj6KN8MWDi8W4ju4Oq-qik44apqeSX6xCEirDDNpE-yPg",
-      "image_credit": "Dairyland Express",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxPAbAcwGBHgDE0rbP7Mla_ldI3iKBtkT4XOYNZBk52H3GWf-KrankQrfMcyY",
+      "image_credit": "Rams",
       "news": [
         {
-          "url": "https://dairylandexpress.com/quentin-johnston-could-become-surprise-packers-trade-target-01m5we2w273q",
-          "title": "Quentin Johnston could become surprise Packers trade target",
-          "publisher": "Dairyland Express",
+          "url": "https://www.therams.com/news/trent-mcduffie-and-joe-cardona-among-rams-inactives-for-week-9-2026-at-commanders",
+          "title": "Trent McDuffie and Joe Cardona among Rams' inactives for Week 9 at Commanders",
+          "publisher": "Rams",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSA3VR4riqos65vzRHj6KN8MWDi8W4ju4Oq-qik44apqeSX6xCEirDDNpE-yPg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxPAbAcwGBHgDE0rbP7Mla_ldI3iKBtkT4XOYNZBk52H3GWf-KrankQrfMcyY"
         },
         {
-          "url": "https://sports.yahoo.com/articles/chargers-trade-idea-sends-former-061530564.html",
-          "title": "Chargers Trade Idea Sends Former First Round Selection to NFC East",
+          "url": "https://www.commanders.com/news/commanders-vs-rams-week-9-injury-report",
+          "title": "Commanders vs. Rams Week 9 injury report",
+          "publisher": "Washington Commanders",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAbLGGjCBRb8nW1E2HCFsIHgHA43Is_tUyyRKIJMhkVh9a1tCpMYJTSx2J6lY"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-9-inactives-rams-170324966.html",
+          "title": "Week 9 inactives for Rams",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTL6Uy4VEtgmcw2hRD6GsdPl7jn5fGRUM6dnfJx64PaSVMCezNs6Y626RemzrA"
-        },
-        {
-          "url": "https://heavy.com/sports/nfl/new-york-giants/explore-trade-wide-receiver-quentin-johnston/",
-          "title": "Giants Urged to Explore Trade for WR & Former 1st-Round Pick",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQswV3oIW7zu9HHDjeSoWFXBbRrP-HVSGxxE2djpCRM2r-bkN-D_AyxRNSPUog"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkBOW_PGuyWKmeHKApPvAD5C-zsbi4r6ehoyNRBsLTlXq4MDeSPzUnGcdrv70"
         }
       ]
     },
     {
-      "query": "star wars ahsoka season 2",
+      "query": "the legend of zelda ocarina of time remake",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-09T00:30:00Z",
+      "related_news_urls": [
+        "https://www.nintendo.com/us/whatsnew/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time-part-1/",
+        "https://www.nytimes.com/2026/11/07/business/media/zelda-ocarina-of-time-remake-nintendo.html",
+        "https://www.nintendolife.com/reviews/nintendo-switch-2/the-legend-of-zelda-ocarina-of-time"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHm55IKYx3CGV3D3v-CkERgYtDZ6OoPHse90qS2ea6XG2mxQmLqOk4cQypz6U",
+      "image_credit": "Nintendo",
+      "news": [
+        {
+          "url": "https://www.nintendo.com/us/whatsnew/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time-part-1/",
+          "title": "Ask the Developer Vol. 24: The Legend of Zelda: Ocarina of Time — Part 1",
+          "publisher": "Nintendo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHm55IKYx3CGV3D3v-CkERgYtDZ6OoPHse90qS2ea6XG2mxQmLqOk4cQypz6U"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/07/business/media/zelda-ocarina-of-time-remake-nintendo.html",
+          "title": "A ‘Legend of Zelda’ Game Is Reborn and ’90s Nostalgia Fans Are All In",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3P4qiGEBirP5kKmJ5FCzywWBXqZpgOM_TbQUWj7h7cfGSdrO_Ce40S8bYH3w"
+        },
+        {
+          "url": "https://www.nintendolife.com/reviews/nintendo-switch-2/the-legend-of-zelda-ocarina-of-time",
+          "title": "Review: The Legend Of Zelda: Ocarina Of Time (Switch 2) - A Stunning Remake, But Not Quite Definitive",
+          "publisher": "Nintendo Life",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEMPLDBJlQKoctLBRJZNXTa13iL4B7TCR41cDGT8tguKYm3CixAmptm8lUWAs"
+        }
+      ]
+    },
+    {
+      "query": "brooke williamson",
       "approx_searches": "500+",
-      "published_at": "2026-11-08T23:40:00Z",
+      "published_at": "2026-11-09T00:30:00Z",
       "related_news_urls": [
-        "https://theholofiles.com/2026/11/08/ahsoka-season-2-animated-characters/",
-        "https://gizmodo.com/ahsoka-season-2-will-feature-more-clone-wars-and-rebels-characters-2000834611",
-        "https://www.starwarsnewsnet.com/?p=184984"
+        "https://www.realtor.com/news/celebrity-real-estate/bobby-flay-brooke-williamson-chefs-home-kitchen-new-york/",
+        "https://www.thespruce.com/bobby-flay-entertaining-at-home-12238424",
+        "https://people.com/people-entertaining-november-2026-12202476"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMCW8JC7kGrjupNyfbocX0eKwXsKIYpyurYOzlIIj91hi55PEHJkLzaYXDQ5U",
-      "image_credit": "The HoloFiles",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJa295LFAciXLzBTuCnMFk0lRgqCbcLMdCv_E_VhzCIjJ73ivQd40mCGyKsL4",
+      "image_credit": "Realtor.com",
       "news": [
         {
-          "url": "https://theholofiles.com/2026/11/08/ahsoka-season-2-animated-characters/",
-          "title": "5 Star Wars Animated Characters Who May Appear in ‘Ahsoka’ Season 2",
-          "publisher": "The HoloFiles",
+          "url": "https://www.realtor.com/news/celebrity-real-estate/bobby-flay-brooke-williamson-chefs-home-kitchen-new-york/",
+          "title": "Inside Bobby Flay and Brooke Williamson's Home Kitchen",
+          "publisher": "Realtor.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMCW8JC7kGrjupNyfbocX0eKwXsKIYpyurYOzlIIj91hi55PEHJkLzaYXDQ5U"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJa295LFAciXLzBTuCnMFk0lRgqCbcLMdCv_E_VhzCIjJ73ivQd40mCGyKsL4"
         },
         {
-          "url": "https://gizmodo.com/ahsoka-season-2-will-feature-more-clone-wars-and-rebels-characters-2000834611",
-          "title": "‘Ahsoka’ Season 2 Will Feature More ‘Clone Wars’ and ‘Rebels’ Characters",
-          "publisher": "Gizmodo",
+          "url": "https://www.thespruce.com/bobby-flay-entertaining-at-home-12238424",
+          "title": "Hosting Thanksgiving This Year? Bobby Flay Swears by a Simple $3 Trick That’s Worth Stealing for Your Table",
+          "publisher": "The Spruce",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTE5u5rUw5jJ919VpsCfjAG0dlzudXeQcPTi5ZPeFqTgniuluEHDN9Et0plebM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvMvQMGDq0p1pLVY7usi5jgiuuGHZ1z2MdIzuRq2QMIKe7DbJ0D43Dp1SHKoY"
         },
         {
-          "url": "https://www.starwarsnewsnet.com/?p=184984",
-          "title": "'Ahsoka' Season 2 Cast Discuss Their Character's Journeys and Using Outdoor Sets This Time",
-          "publisher": "Star Wars News Net",
+          "url": "https://people.com/people-entertaining-november-2026-12202476",
+          "title": "People Entertaining’s November Issue: Inside Bobby Flay and Brooke Williamson’s Thanksgiving Dinner and More",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSabcsvFS3yfAQVgUtxQVxITOgqAv1lLLqWHHnCnHMLb3HlJ5-IdA_gc22UsA4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNTcmU5EuzrS8uLcSvqV-Qn10uj5bSzpnC0-arpkUqzhuR6_EeMLZaupLk3-8"
         }
       ]
     },
     {
-      "query": "new york yankees mlb trades",
+      "query": "eli raridon",
       "approx_searches": "200+",
-      "published_at": "2026-11-08T23:40:00Z",
+      "published_at": "2026-11-09T00:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/yankees-pointless-trade-now-coming-120038233.html",
-        "https://empiresportsmedia.com/new-york-yankees/a-four-player-trade-pitch-asks-the-yankees-for-too-much/",
-        "https://roundtable.io/sports/mlb/yankees/video/yankees-pointless-trade-now-coming-back-to-bite-them"
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/hunter-henry-keisean-nixon-are-active-for-patriots-packers-clash",
+        "https://www.patspulpit.com/new-england-patriots-news/143256/patriots-vs-packers-friday-injury-report-hunter-henry-among-seven-questionable",
+        "https://www.cbssports.com/fantasy/football/news/patriots-hunter-henry-active-for-sundays-game-646595/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzDNVQbl4mUpbHjWqoxPqv736Q9p5r27GsSJYtWZ8n1i3esSGkVSz4QR-Vls0",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/yankees-pointless-trade-now-coming-120038233.html",
-          "title": "Yankees' Pointless Trade Now Coming Back to Bite Them",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzDNVQbl4mUpbHjWqoxPqv736Q9p5r27GsSJYtWZ8n1i3esSGkVSz4QR-Vls0"
-        },
-        {
-          "url": "https://empiresportsmedia.com/new-york-yankees/a-four-player-trade-pitch-asks-the-yankees-for-too-much/",
-          "title": "A four-player trade pitch asks the Yankees for too much",
-          "publisher": "Empire Sports Media",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR530-cQEjNHpWYaAhVYwCYm_oL8pAj47utl1mBs0cank_qr0ASNQLUQi9iWa4"
-        },
-        {
-          "url": "https://roundtable.io/sports/mlb/yankees/video/yankees-pointless-trade-now-coming-back-to-bite-them",
-          "title": "Video - Yankees' Pointless Trade Now Coming Back to Bite Them",
-          "publisher": "roundtable.io",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoSP7WGQ4NuvZou3aWZ9Z8GtOQ3mu9dr5Bwg44LfeW1hk_WdhYR8dQYI-aYjw"
-        }
-      ]
-    },
-    {
-      "query": "nevada basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-08T23:40:00Z",
-      "related_news_urls": [
-        "https://hornetsports.com/news/2026/11/7/womens-basketball-big-night-from-the-backcourt-as-womens-basketball-holds-off-nevada-on-the-road-70-60.aspx",
-        "https://nevadasportsnet.com/sports/wolf-pack-womens/slow-start-dooms-nevada-in-home-debut-as-sacramento-state-leaves-with-70-60-win"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-Maava5A5XcEFGDN7sTzSrVK3kNF2Mf0MeYO6IHm-LiavmFOJ9pVRyJl0AC4",
-      "image_credit": "University of Nevada Athletics",
-      "news": [
-        {
-          "url": "https://hornetsports.com/news/2026/11/7/womens-basketball-big-night-from-the-backcourt-as-womens-basketball-holds-off-nevada-on-the-road-70-60.aspx",
-          "title": "BIG NIGHT FROM THE BACKCOURT AS WOMEN’S BASKETBALL HOLDS OFF NEVADA ON THE ROAD, 70-60",
-          "publisher": "hornetsports.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSI5ADHWyMB379PBLWfSJPwBF0mT2AGiD551txCjBhLZ8airVjy09wJdIfFeo"
-        },
-        {
-          "url": "https://nevadasportsnet.com/sports/wolf-pack-womens/slow-start-dooms-nevada-in-home-debut-as-sacramento-state-leaves-with-70-60-win",
-          "title": "Slow start dooms Nevada in home debut as Sacramento State leaves with 70-60 win",
-          "publisher": "Nevada Sports Net",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUKcglP_b5prxl8HRtN22wS8g1Xpc0f-g4HOlgd_Mkgzeg3Cj6uaURQXLpghI"
-        }
-      ]
-    },
-    {
-      "query": "brock bowers",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-08T23:30:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/brock-bowers-sets-record-for-most-receptions-by-a-te-in-first-three-seasons",
-        "https://www.kvue.com/video/sports/locked-on/lo-bay-area/locked-on-raiders-hit/why-las-vegas-raiders-brock-bowers-is-the-game-changer-everyone-needs-to-watch-right-now/535-fc1c4548-c854-4776-a6b1-02908d3dd3f7",
-        "https://www.fantasypros.com/nfl/news/617025/brock-bowers-finds-end-zone-twice-week-8-win.php"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrmVLJY45MwB8YKjz1EHAtDkLq_Q_BOfsr9YKtwjqYl5Bu-abp18eINbzomGk",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbHaLrO_Oe_2r__diy0C3bY6AfOpHMqHAfSONXJuDh74gXYRUFkPY2DEAER3g",
       "image_credit": "NBC Sports",
       "news": [
         {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/brock-bowers-sets-record-for-most-receptions-by-a-te-in-first-three-seasons",
-          "title": "Brock Bowers sets record for most receptions by a TE in first three seasons",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/hunter-henry-keisean-nixon-are-active-for-patriots-packers-clash",
+          "title": "Hunter Henry, Keisean Nixon are active for Patriots-Packers clash",
           "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrmVLJY45MwB8YKjz1EHAtDkLq_Q_BOfsr9YKtwjqYl5Bu-abp18eINbzomGk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbHaLrO_Oe_2r__diy0C3bY6AfOpHMqHAfSONXJuDh74gXYRUFkPY2DEAER3g"
         },
         {
-          "url": "https://www.kvue.com/video/sports/locked-on/lo-bay-area/locked-on-raiders-hit/why-las-vegas-raiders-brock-bowers-is-the-game-changer-everyone-needs-to-watch-right-now/535-fc1c4548-c854-4776-a6b1-02908d3dd3f7",
-          "title": "Why Las Vegas Raiders’ Brock Bowers Is the Game Changer Everyone Needs to Watch Right Now",
-          "publisher": "KVUE",
+          "url": "https://www.patspulpit.com/new-england-patriots-news/143256/patriots-vs-packers-friday-injury-report-hunter-henry-among-seven-questionable",
+          "title": "Patriots vs. Packers Friday injury report: Hunter Henry among seven questionable",
+          "publisher": "Pats Pulpit",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKjzhjAwGgFvyJFgIBF1eduupi3frlrunzR_k1EMMJrAiFfDLhsmKVtQPKIVc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQepoZSeCmVdDh2T3WtLvyUkPsi5ZDJu0pWkQAuPrpb1phc50oNvkHYAtLP9Q"
         },
         {
-          "url": "https://www.fantasypros.com/nfl/news/617025/brock-bowers-finds-end-zone-twice-week-8-win.php",
-          "title": "Brock Bowers finds the end zone twice in Week 8 win",
-          "publisher": "FantasyPros",
+          "url": "https://www.cbssports.com/fantasy/football/news/patriots-hunter-henry-active-for-sundays-game-646595/",
+          "title": "Patriots' Hunter Henry: Active for Sunday's game",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz1a7S7hnN3jN3Qa944er7dQi7GEGgqZSmPUcEK6za8CEN3L8wsNzefwkQHyo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRgtyhxGxEG7i2Okxt9MXO4tXkT6SYFeNJ2RsRVSTb2-axRU5x1XlHHfRx6NM"
         }
       ]
     },
     {
-      "query": "cade cunningham",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-08T23:30:00Z",
+      "query": "seahawks",
+      "approx_searches": "50000+",
+      "published_at": "2026-11-09T00:20:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/nba/article/76ers-joel-embiid-assessed-postgame-flagrant-1-foul-by-nba-for-kick-to-pistons-cade-cunningham-233828276.html",
-        "https://bleacherreport.com/articles/25529785-joel-embiid-disciplined-kicking-cade-cunningham-viral-video-during-76ers-pistons",
-        "https://www.usatoday.com/story/sports/nba/2026/11/04/joel-embiid-fight-tolu-smith-76ers-pistons/92618821007/"
+        "https://www.foxsports.com/watch/fmc-o824obg1vwnzcsrz",
+        "https://www.seattletimes.com/sports/seahawks/seahawks-vs-cardinals-live-updates-how-to-watch-score/",
+        "https://www.nfl.com/videos/smith-njigba-s-seventh-catch-of-first-half-gets-seahawks-to-cardinals-7-yard-line"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBu-k11cnwvtao2VgWWc9eNm2Od4Bsvpi4wi4B2W4GVic2WabJziFCF3uKeXU",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxYQrP9IHZue-aa0kfcF2suBVTAFyJQattlN3-36UNyJixiV_lkxVWXx2wFIk",
+      "image_credit": "FOX Sports",
+      "news": [
+        {
+          "url": "https://www.foxsports.com/watch/fmc-o824obg1vwnzcsrz",
+          "title": "Drew Lock finds AJ Barner for seven-yard TD, extending Seahawks lead over Cardinals | NFL Highlights",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxYQrP9IHZue-aa0kfcF2suBVTAFyJQattlN3-36UNyJixiV_lkxVWXx2wFIk"
+        },
+        {
+          "url": "https://www.seattletimes.com/sports/seahawks/seahawks-vs-cardinals-live-updates-how-to-watch-score/",
+          "title": "Live: Recap: Seahawks overcome several injuries to hold off Cardinals",
+          "publisher": "The Seattle Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPwGJsypwlRKqWUQKE4ZRdeFQ8Z7mDu1_nEbYEBk-JBKr8dXlS4J95-NNpIQY"
+        },
+        {
+          "url": "https://www.nfl.com/videos/smith-njigba-s-seventh-catch-of-first-half-gets-seahawks-to-cardinals-7-yard-line",
+          "title": "Smith-Njigba's seventh catch of first half gets Seahawks to Cardinals' 7-yard line",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQM_Ozy4IFay3suwGKgbjnhe9M3PMRGFerloDRsoXxA4eXuTyOY9IW8lLfxUQ"
+        }
+      ]
+    },
+    {
+      "query": "corey kiner",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-09T00:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/patriots-hint-bigger-role-underrated-173304922.html",
+        "https://dknetwork.draftkings.com/2026/11/08/corey-kiner-fantasy-football-start-or-sit-advice-for-week-9/",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/corey-kiner-runs-7-times-for-38-yards-vs-dolphins"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpnRMRhOBQycPqF2HPtBx_xxGr0_uv0Z1HZxFyGdh-7JOQIZSN81RBwEyUhWk",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/nba/article/76ers-joel-embiid-assessed-postgame-flagrant-1-foul-by-nba-for-kick-to-pistons-cade-cunningham-233828276.html",
-          "title": "76ers' Joel Embiid assessed postgame flagrant 1 foul by NBA for kick to Pistons' Cade Cunningham",
+          "url": "https://sports.yahoo.com/articles/patriots-hint-bigger-role-underrated-173304922.html",
+          "title": "Patriots Hint at Bigger Role for Underrated RB Amid TreVeyon Henderson Absence",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBu-k11cnwvtao2VgWWc9eNm2Od4Bsvpi4wi4B2W4GVic2WabJziFCF3uKeXU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpnRMRhOBQycPqF2HPtBx_xxGr0_uv0Z1HZxFyGdh-7JOQIZSN81RBwEyUhWk"
         },
         {
-          "url": "https://bleacherreport.com/articles/25529785-joel-embiid-disciplined-kicking-cade-cunningham-viral-video-during-76ers-pistons",
-          "title": "Joel Embiid Disciplined for Kicking Cade Cunningham in Viral Video During 76ers-Pistons",
-          "publisher": "Bleacher Report",
+          "url": "https://dknetwork.draftkings.com/2026/11/08/corey-kiner-fantasy-football-start-or-sit-advice-for-week-9/",
+          "title": "Corey Kiner Fantasy Football Start or Sit Advice for Week 9",
+          "publisher": "DraftKings Network",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTxiEdxhiIXJqeVOM-blkpbPHnKbXGjxtjNat5s7VIciRoWnoOhGygpe9JsAg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhpL-XvajOmFUs_QdvVvTNFMZDfCxdWOcdqNx-6Drc6QaXL_ivuQCKTDpS86w"
         },
         {
-          "url": "https://www.usatoday.com/story/sports/nba/2026/11/04/joel-embiid-fight-tolu-smith-76ers-pistons/92618821007/",
-          "title": "Joel Embiid hit with technical foul for altercation in 76ers-Pistons",
-          "publisher": "USA Today",
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/corey-kiner-runs-7-times-for-38-yards-vs-dolphins",
+          "title": "Corey Kiner runs 7 times for 38 yards vs. Dolphins",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNeduDLIJteW4YcPeU3ECVfwncpXWL5-umyOtrcjXpjMyquxwduIk3dGL2cEs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzT1XU3yGJZ6lguaVpuLCnGw3RQ6twtmQftHhRGwYkc6rrwkSkNGh5XSdj-08"
+        }
+      ]
+    },
+    {
+      "query": "snow weather forecast",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-09T00:20:00Z",
+      "related_news_urls": [
+        "https://www.foxweather.com/weather-news/late-week-snow-northeast-cold-temperatures-us-november-2026",
+        "https://www.localsyr.com/weather/new-noreaster-on-the-way-late-next-week/",
+        "https://www.post-gazette.com/news/weather-news/2026/11/08/weather-pittsburgh-snow-november/stories/202611080069"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRI5CJZhvnEb3v7hOCE5TbyfqqAa1OXyqTRi1Dxv45H4uJZBmKHebXNe6G7gE8",
+      "image_credit": "FOX Weather",
+      "news": [
+        {
+          "url": "https://www.foxweather.com/weather-news/late-week-snow-northeast-cold-temperatures-us-november-2026",
+          "title": "Late-week storm threatens Northeast with season's first snow, will pave way for major split in US temperatures",
+          "publisher": "FOX Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRI5CJZhvnEb3v7hOCE5TbyfqqAa1OXyqTRi1Dxv45H4uJZBmKHebXNe6G7gE8"
+        },
+        {
+          "url": "https://www.localsyr.com/weather/new-noreaster-on-the-way-late-next-week/",
+          "title": "NEW: Nor’easter on the way late this upcoming week?",
+          "publisher": "WSYR",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT17r5iCxXvzCxZGExSoMiOt8CUdG83TO0J_CFIpxoq3KTtHv_fWTDLDwusmvA"
+        },
+        {
+          "url": "https://www.post-gazette.com/news/weather-news/2026/11/08/weather-pittsburgh-snow-november/stories/202611080069",
+          "title": "Sunshine may be swapped for snowflakes as week progresses",
+          "publisher": "Pittsburgh Post-Gazette",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEjU6tn-Yq-uj7-ePdauug8xhZtWmzAUptzIMTKovyJhnyn9rgKCZuUBj2qmU"
+        }
+      ]
+    },
+    {
+      "query": "kyle monangai",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T00:20:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/sunday-night-football-emeka-egbuka-active-kyle-monangai-inactive-for-bucs-bears",
+        "https://sports.yahoo.com/articles/bears-buccaneers-inactives-malik-muhammad-235606292.html",
+        "https://www.chicagotribune.com/2026/11/06/kyle-monangai-chicago-bears-week-9-questionable/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREztsfZm_4X6uWfm0o7KR8MGfeOpbKLLduQaFBkIybIhm5QrDCXddBPbho7tg",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/sunday-night-football-emeka-egbuka-active-kyle-monangai-inactive-for-bucs-bears",
+          "title": "Sunday Night Football: Emeka Egbuka active, Kyle Monangai inactive for Bucs-Bears",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREztsfZm_4X6uWfm0o7KR8MGfeOpbKLLduQaFBkIybIhm5QrDCXddBPbho7tg"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/bears-buccaneers-inactives-malik-muhammad-235606292.html",
+          "title": "Bears-Buccaneers Inactives: Malik Muhammad II and Kyle Monangai still out",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTw4WrwlQe3DRkRyWnSVCbsgTBPWqBfhmterZPc7mZ_2Tjp42-wLrjoDH0qZXY"
+        },
+        {
+          "url": "https://www.chicagotribune.com/2026/11/06/kyle-monangai-chicago-bears-week-9-questionable/",
+          "title": "RB Kyle Monangai returns to Chicago Bears practice — but his status for Sunday night remains up in the air",
+          "publisher": "Chicago Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQZls8n76D9W3OupYjsBzOmmtdbbO_-K5dASu1Yq21k3OEaM7pjrJY-KD2Wlg"
+        }
+      ]
+    },
+    {
+      "query": "cma awards 2026",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T00:20:00Z",
+      "related_news_urls": [
+        "https://www.billboard.com/music/awards/cma-awards-performers-2026-kacey-musgraves-tim-mcgraw-dolly-1236374456/",
+        "https://komonews.com/news/entertainment/ella-langley-cody-johnson-miranda-lambert-to-perform-at-60th-annual-cma-awards-country-music-association-lineup-2026",
+        "https://americansongwriter.com/dolly-parton-to-be-honored-with-special-tribute-during-country-musics-biggest-night/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzClMC0RuJEz6kDxO4WoUnbQcC-Nu-5O_bZUCq-bne3GiRcNOH3WaH92tQSh8",
+      "image_credit": "Billboard",
+      "news": [
+        {
+          "url": "https://www.billboard.com/music/awards/cma-awards-performers-2026-kacey-musgraves-tim-mcgraw-dolly-1236374456/",
+          "title": "2026 CMA Awards Performers: Kacey Musgraves, Ella Langley, Tim McGraw",
+          "publisher": "Billboard",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzClMC0RuJEz6kDxO4WoUnbQcC-Nu-5O_bZUCq-bne3GiRcNOH3WaH92tQSh8"
+        },
+        {
+          "url": "https://komonews.com/news/entertainment/ella-langley-cody-johnson-miranda-lambert-to-perform-at-60th-annual-cma-awards-country-music-association-lineup-2026",
+          "title": "Ella Langley, Cody Johnson, Miranda Lambert to perform at 60th annual CMA Awards",
+          "publisher": "KOMO",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRs86bu_kk2sZjaAwC2_789uOYjn7-ipwrKnFgE-kK6ERObfpvw4wSfiBSgdxE"
+        },
+        {
+          "url": "https://americansongwriter.com/dolly-parton-to-be-honored-with-special-tribute-during-country-musics-biggest-night/",
+          "title": "Dolly Parton to Be Honored With Special Tribute During Country Music’s Biggest Night",
+          "publisher": "American Songwriter",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYcXWrvdUTfnKpgxzyYjoZhsgUH42y6S3ZXfI4-NIUY9NTmj0ui0LI21BibhI"
         }
       ]
     }
