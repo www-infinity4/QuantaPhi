@@ -191,7 +191,12 @@ export function hasModelToolLeak(answer){
  const fakeCall=/["']?name["']?\s*:\s*["'](?:createTicket|githubCreateRepo|githubUpdateFile|githubCreateIssue|github_read_repository|github_read_file|web_read_page|submitWork|dispatchJob|runTool|invokeTool)["']/i.test(text)
   && /["']?arguments["']?\s*:/i.test(text);
  const internalPlan=/\b(?:we|i) need to\s+(?:send|write|compose|provide|respond with|say)\b[\s\S]{0,300}\b(?:invoke|call|execute) (?:the|a|this) tool\b/i.test(text);
- const rawChannel=/<\|(?:im_start|im_sep|channel)[^>]*\|>|(?:^|\n)\s*(?:assistant|analysis)\s+to=\w+/i.test(text);
+ // GPT-OSS can return serialized role/channel delimiters as plain response
+ // text. These are not an assistant final answer or a verified tool result.
+ const rawChannel=/<\|(?:start|end|im_start|im_end|im_sep|meta_sep|eot_id|channel)[^>]*\|>|(?:^|\n)\s*(?:assistant|analysis)\s+to=\w+/i.test(text);
+ // Reject model self-instructions, not legitimate user-facing technical
+ // analysis. A normal "Analysis: GitHub rejected..." remains allowed.
+ const internalDraft=/(?:^|\n)\s*analysis\s*:\s*(?:we|i)\s+(?:(?:need|have)\s+(?:to\s+)?|(?:should|must|will|can)\s+)(?:first\s+|now\s+)?(?:respond|answer|explain|tell|say|compose|draft|provide|ask|output|format|write\s+(?:(?:a|the)\s+)?(?:reply|response|answer))\b/i.test(text);
  const falseSubmission=/(?:^|\n)\s*(?:I(?:'m| am)|We(?:'re| are))?\s*[Ss]ubmitting (?:a|the) (?:repair |work |Robot Brain )?ticket\b/i.test(text);
  const searchDraft=/(?:^|\n)\s*\{\s*"(?:query|tool|tool_name)"\s*:/i.test(text)
   && /\b(?:search for|attempt to fetch|fetch a snippet|call|invoke|tool|top_n)\b/i.test(text);
@@ -202,7 +207,7 @@ export function hasModelToolLeak(answer){
  // unexecuted model instructions, not a completed publisher-page read.
  const rawCursorDraft=/^\s*\{[^{}\n]{0,1000}"(?:cursor|next_cursor|read_cursor|page_token)"\s*:\s*(?:\d+|["'])[^{}\n]{0,500}\}\s*$/i.test(text);
  const actionParameters=/["']action["']\s*:\s*["'](?:(?:github|web|browser|weather|tools?|brain)[._][\w.-]{1,80}|read_repo|read_repository|read_file|search|web_search|commit_files|create_pr|deploy)["'][\s\S]{0,1000}["']parameters["']\s*:/i.test(text);
- return fakeCall||internalPlan||rawChannel||falseSubmission||searchDraft||embeddedToolDraft||rawCursorDraft||actionParameters;
+ return fakeCall||internalPlan||rawChannel||internalDraft||falseSubmission||searchDraft||embeddedToolDraft||rawCursorDraft||actionParameters;
 }
 // A planning fragment is not a final answer even if the source search completed.
 export function hasUnfinishedResearchDraft(answer){
