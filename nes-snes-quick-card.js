@@ -58,5 +58,17 @@ stopButton.addEventListener('click',stop);
 document.addEventListener('oracle:card-deactivated',event=>{
  if(event.detail?.id==='nesSnesQuickCard')stop();
 });
+// The shelf can hide this original card without an oracle:card-deactivated event.
+// Never allow a concealed iframe to keep running gameplay or audio.
+window.addEventListener('quantaphi:switchboard-change',event=>{
+ if(frame&&event.detail?.id!=='nes-snes-player'&&!document.body.classList.contains('oracle-shelf-open'))stop();
+});
+document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();});
+if(typeof MutationObserver==='function'){
+ const monitor=new MutationObserver(()=>{
+  if(frame&&!document.body.classList.contains('oracle-shelf-open')&&!root.closest('#oracleCardStage'))stop();
+ });
+ monitor.observe(document.body,{attributes:true,attributeFilter:['class']});
+}
 window.addEventListener('pagehide',stop);
 })();
