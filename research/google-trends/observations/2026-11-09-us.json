@@ -1,0 +1,352 @@
+{
+  "schema_version": 1,
+  "source": "Google Trends Trending Now RSS",
+  "source_url": "https://trends.google.com/trending/rss?geo=US",
+  "region": "US",
+  "checked_at": "2026-11-09T00:01:43.192455Z",
+  "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
+  "topics": [
+    {
+      "query": "nets vs mavericks",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-08T23:40:00Z",
+      "related_news_urls": [
+        "https://www.netsdaily.com/nets-game-previews/115883/nets-vs-mavericks-preview-sunday-night-basketball-in-dallas-slug-brooklyn-nets-dallas-mavericks-preview",
+        "https://www.mavsmoneyball.com/dallas-mavericks-game-coverage/63753/mavericks-nets-preview-dallas-has-a-chance-to-keep-building-at-home",
+        "https://sports.yahoo.com/articles/mavericks-cleanest-injury-report-season-181132763.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDnIEEt2zcpSusnyTUTOqm6JMhXLtdJqgmKZdHNOoSCmKAkA9txn7Qb3cNCsM",
+      "image_credit": "NetsDaily",
+      "news": [
+        {
+          "url": "https://www.netsdaily.com/nets-game-previews/115883/nets-vs-mavericks-preview-sunday-night-basketball-in-dallas-slug-brooklyn-nets-dallas-mavericks-preview",
+          "title": "Nets vs. Mavericks Preview: Sunday night basketball in Dallas",
+          "publisher": "NetsDaily",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDnIEEt2zcpSusnyTUTOqm6JMhXLtdJqgmKZdHNOoSCmKAkA9txn7Qb3cNCsM"
+        },
+        {
+          "url": "https://www.mavsmoneyball.com/dallas-mavericks-game-coverage/63753/mavericks-nets-preview-dallas-has-a-chance-to-keep-building-at-home",
+          "title": "Mavericks-Nets preview: Dallas has a chance to keep building at home",
+          "publisher": "Mavs Moneyball",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_va7NgIi_jMHTf3sRn9fh1VKxVbxhkVIAk4zlFY8zcdgG2Z_m0Sc7esLVXa4"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/mavericks-cleanest-injury-report-season-181132763.html",
+          "title": "Mavericks Have Cleanest Injury Report of Season for the Brooklyn Nets",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmgXMEJmz_EQmEsUhYbrEfXJoML6Z78FLIUxTViAiLjIZ29Yl8F6QO9Up-AHY"
+        }
+      ]
+    },
+    {
+      "query": "erin andrews",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T23:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/nfl-legend-tom-brady-reacts-140400871.html",
+        "https://www.sportscapemagazine.com/blog/congratulations-flood-in-as-erin-andrews-marks-three-hundred-nfl-broadcasts",
+        "https://www.sportsbusinessjournal.com/Articles/2026/11/06/erin-andrews-set-for-300th-nfl-game-with-eye-on-more-morning-show-work-growing-fashion-line/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpMYO_A5he46bvtZSC-Cb1a4KiGxEaC9Iz0ORJYVVlv8JbvBuVELs9flkBBjI",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/nfl-legend-tom-brady-reacts-140400871.html",
+          "title": "NFL Legend Tom Brady Reacts to Fox Sports’ Erin Andrews Announcement",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpMYO_A5he46bvtZSC-Cb1a4KiGxEaC9Iz0ORJYVVlv8JbvBuVELs9flkBBjI"
+        },
+        {
+          "url": "https://www.sportscapemagazine.com/blog/congratulations-flood-in-as-erin-andrews-marks-three-hundred-nfl-broadcasts",
+          "title": "Congratulations Flood In as Erin Andrews Marks 300 NFL Broadcasts",
+          "publisher": "Sportscape Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTB-KFQ6CDyRbG6vU7G6gw6-uAv6xEEjPaVSa65kLxFIQwsYxXSZXYDfS36B5A"
+        },
+        {
+          "url": "https://www.sportsbusinessjournal.com/Articles/2026/11/06/erin-andrews-set-for-300th-nfl-game-with-eye-on-more-morning-show-work-growing-fashion-line/",
+          "title": "Erin Andrews set for 300th NFL game, with eye on more morning show work, growing fashion line",
+          "publisher": "Sports Business Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_YBIxBn0AsK8SOywG_sHPyJkWrQmskuBrKiWVNbhvcxu1dN9ffhcBhN9hrPs"
+        }
+      ]
+    },
+    {
+      "query": "quentin grimes",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-08T23:40:00Z",
+      "related_news_urls": [
+        "https://thesixersense.com/dodging-quentin-grimes-was-76ers-smartest-offseason-decision",
+        "https://www.rotowire.com/basketball/headlines/quentin-grimes-news-starting-against-pistons-538197",
+        "https://www.espn.com/nba/story/_/id/50426497/nuggets-starters-questionable-vs-rockets-plane-delays"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ57fXzZ0URICyOxxbO95rqGBwaDxG8ez0ZBwJeGxLtgvkzvyu6eBvjf_6bZOg",
+      "image_credit": "The Sixer Sense",
+      "news": [
+        {
+          "url": "https://thesixersense.com/dodging-quentin-grimes-was-76ers-smartest-offseason-decision",
+          "title": "Dodging Quentin Grimes was the 76ers' smartest offseason decision",
+          "publisher": "The Sixer Sense",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ57fXzZ0URICyOxxbO95rqGBwaDxG8ez0ZBwJeGxLtgvkzvyu6eBvjf_6bZOg"
+        },
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/quentin-grimes-news-starting-against-pistons-538197",
+          "title": "Quentin Grimes News: Starting against Pistons",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUR5cr3tvaORqNhhUsE9JLrpGv3RoenoVsbRnX7Jxc6Y3AfkY6NVm2hSP8wPA"
+        },
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50426497/nuggets-starters-questionable-vs-rockets-plane-delays",
+          "title": "Nuggets' starters all questionable vs. Rockets after delays leaving Mexico",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTs6l2xsnhT6EkEk-QIuHOJ4XXBBcmrgI1qmJt99IPqi-GApb0o2wO8yp2G9s"
+        }
+      ]
+    },
+    {
+      "query": "nvidia stock price",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-08T23:40:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/prediction-nvidias-palantirs-stock-prices-194600476.html",
+        "https://www.aol.com/articles/stocks-making-noise-ones-actually-173343000.html",
+        "https://pluang.com/en/news-feed/saham-yang-berisik-nvidia-amazon-palantir-pertumbuhan-dan-target-harga-2027"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeh-cSYJEFoAA6AY_YRBpfOQRdTGN3Jl56ON_BnOeYSj8DewJI8Qu7X-2oros",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/prediction-nvidias-palantirs-stock-prices-194600476.html",
+          "title": "Prediction: These Will Be Nvidia's and Palantir's Stock Prices by 2027 (Hint: Only 1 Is a Buy)",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeh-cSYJEFoAA6AY_YRBpfOQRdTGN3Jl56ON_BnOeYSj8DewJI8Qu7X-2oros"
+        },
+        {
+          "url": "https://www.aol.com/articles/stocks-making-noise-ones-actually-173343000.html",
+          "title": "The Stocks Making Noise-And the Ones That Actually Matter",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJn9QO3oXuVQ8cGVsr6zSkP_197R3N1s0SfOGNN3PTPrH1gagjIpJPoSmUjeE"
+        },
+        {
+          "url": "https://pluang.com/en/news-feed/saham-yang-berisik-nvidia-amazon-palantir-pertumbuhan-dan-target-harga-2027",
+          "title": "NVIDIA, Amazon, and Palantir show strong growth but need key milestones to hit bold 2027 price targets.",
+          "publisher": "Pluang",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS20fp_TxgOFmNZI0pYjTv2bU1rCBrsPv9djQX9gjfonGEthDj2-ljAPTsFFiM"
+        }
+      ]
+    },
+    {
+      "query": "quentin johnston",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T23:40:00Z",
+      "related_news_urls": [
+        "https://dairylandexpress.com/quentin-johnston-could-become-surprise-packers-trade-target-01m5we2w273q",
+        "https://sports.yahoo.com/articles/chargers-trade-idea-sends-former-061530564.html",
+        "https://heavy.com/sports/nfl/new-york-giants/explore-trade-wide-receiver-quentin-johnston/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSA3VR4riqos65vzRHj6KN8MWDi8W4ju4Oq-qik44apqeSX6xCEirDDNpE-yPg",
+      "image_credit": "Dairyland Express",
+      "news": [
+        {
+          "url": "https://dairylandexpress.com/quentin-johnston-could-become-surprise-packers-trade-target-01m5we2w273q",
+          "title": "Quentin Johnston could become surprise Packers trade target",
+          "publisher": "Dairyland Express",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSA3VR4riqos65vzRHj6KN8MWDi8W4ju4Oq-qik44apqeSX6xCEirDDNpE-yPg"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/chargers-trade-idea-sends-former-061530564.html",
+          "title": "Chargers Trade Idea Sends Former First Round Selection to NFC East",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTL6Uy4VEtgmcw2hRD6GsdPl7jn5fGRUM6dnfJx64PaSVMCezNs6Y626RemzrA"
+        },
+        {
+          "url": "https://heavy.com/sports/nfl/new-york-giants/explore-trade-wide-receiver-quentin-johnston/",
+          "title": "Giants Urged to Explore Trade for WR & Former 1st-Round Pick",
+          "publisher": "Heavy.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQswV3oIW7zu9HHDjeSoWFXBbRrP-HVSGxxE2djpCRM2r-bkN-D_AyxRNSPUog"
+        }
+      ]
+    },
+    {
+      "query": "star wars ahsoka season 2",
+      "approx_searches": "500+",
+      "published_at": "2026-11-08T23:40:00Z",
+      "related_news_urls": [
+        "https://theholofiles.com/2026/11/08/ahsoka-season-2-animated-characters/",
+        "https://gizmodo.com/ahsoka-season-2-will-feature-more-clone-wars-and-rebels-characters-2000834611",
+        "https://www.starwarsnewsnet.com/?p=184984"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMCW8JC7kGrjupNyfbocX0eKwXsKIYpyurYOzlIIj91hi55PEHJkLzaYXDQ5U",
+      "image_credit": "The HoloFiles",
+      "news": [
+        {
+          "url": "https://theholofiles.com/2026/11/08/ahsoka-season-2-animated-characters/",
+          "title": "5 Star Wars Animated Characters Who May Appear in ‘Ahsoka’ Season 2",
+          "publisher": "The HoloFiles",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMCW8JC7kGrjupNyfbocX0eKwXsKIYpyurYOzlIIj91hi55PEHJkLzaYXDQ5U"
+        },
+        {
+          "url": "https://gizmodo.com/ahsoka-season-2-will-feature-more-clone-wars-and-rebels-characters-2000834611",
+          "title": "‘Ahsoka’ Season 2 Will Feature More ‘Clone Wars’ and ‘Rebels’ Characters",
+          "publisher": "Gizmodo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTE5u5rUw5jJ919VpsCfjAG0dlzudXeQcPTi5ZPeFqTgniuluEHDN9Et0plebM"
+        },
+        {
+          "url": "https://www.starwarsnewsnet.com/?p=184984",
+          "title": "'Ahsoka' Season 2 Cast Discuss Their Character's Journeys and Using Outdoor Sets This Time",
+          "publisher": "Star Wars News Net",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSabcsvFS3yfAQVgUtxQVxITOgqAv1lLLqWHHnCnHMLb3HlJ5-IdA_gc22UsA4"
+        }
+      ]
+    },
+    {
+      "query": "new york yankees mlb trades",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T23:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/yankees-pointless-trade-now-coming-120038233.html",
+        "https://empiresportsmedia.com/new-york-yankees/a-four-player-trade-pitch-asks-the-yankees-for-too-much/",
+        "https://roundtable.io/sports/mlb/yankees/video/yankees-pointless-trade-now-coming-back-to-bite-them"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzDNVQbl4mUpbHjWqoxPqv736Q9p5r27GsSJYtWZ8n1i3esSGkVSz4QR-Vls0",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/yankees-pointless-trade-now-coming-120038233.html",
+          "title": "Yankees' Pointless Trade Now Coming Back to Bite Them",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzDNVQbl4mUpbHjWqoxPqv736Q9p5r27GsSJYtWZ8n1i3esSGkVSz4QR-Vls0"
+        },
+        {
+          "url": "https://empiresportsmedia.com/new-york-yankees/a-four-player-trade-pitch-asks-the-yankees-for-too-much/",
+          "title": "A four-player trade pitch asks the Yankees for too much",
+          "publisher": "Empire Sports Media",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR530-cQEjNHpWYaAhVYwCYm_oL8pAj47utl1mBs0cank_qr0ASNQLUQi9iWa4"
+        },
+        {
+          "url": "https://roundtable.io/sports/mlb/yankees/video/yankees-pointless-trade-now-coming-back-to-bite-them",
+          "title": "Video - Yankees' Pointless Trade Now Coming Back to Bite Them",
+          "publisher": "roundtable.io",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoSP7WGQ4NuvZou3aWZ9Z8GtOQ3mu9dr5Bwg44LfeW1hk_WdhYR8dQYI-aYjw"
+        }
+      ]
+    },
+    {
+      "query": "nevada basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-08T23:40:00Z",
+      "related_news_urls": [
+        "https://hornetsports.com/news/2026/11/7/womens-basketball-big-night-from-the-backcourt-as-womens-basketball-holds-off-nevada-on-the-road-70-60.aspx",
+        "https://nevadasportsnet.com/sports/wolf-pack-womens/slow-start-dooms-nevada-in-home-debut-as-sacramento-state-leaves-with-70-60-win"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-Maava5A5XcEFGDN7sTzSrVK3kNF2Mf0MeYO6IHm-LiavmFOJ9pVRyJl0AC4",
+      "image_credit": "University of Nevada Athletics",
+      "news": [
+        {
+          "url": "https://hornetsports.com/news/2026/11/7/womens-basketball-big-night-from-the-backcourt-as-womens-basketball-holds-off-nevada-on-the-road-70-60.aspx",
+          "title": "BIG NIGHT FROM THE BACKCOURT AS WOMEN’S BASKETBALL HOLDS OFF NEVADA ON THE ROAD, 70-60",
+          "publisher": "hornetsports.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSI5ADHWyMB379PBLWfSJPwBF0mT2AGiD551txCjBhLZ8airVjy09wJdIfFeo"
+        },
+        {
+          "url": "https://nevadasportsnet.com/sports/wolf-pack-womens/slow-start-dooms-nevada-in-home-debut-as-sacramento-state-leaves-with-70-60-win",
+          "title": "Slow start dooms Nevada in home debut as Sacramento State leaves with 70-60 win",
+          "publisher": "Nevada Sports Net",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUKcglP_b5prxl8HRtN22wS8g1Xpc0f-g4HOlgd_Mkgzeg3Cj6uaURQXLpghI"
+        }
+      ]
+    },
+    {
+      "query": "brock bowers",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-08T23:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/brock-bowers-sets-record-for-most-receptions-by-a-te-in-first-three-seasons",
+        "https://www.kvue.com/video/sports/locked-on/lo-bay-area/locked-on-raiders-hit/why-las-vegas-raiders-brock-bowers-is-the-game-changer-everyone-needs-to-watch-right-now/535-fc1c4548-c854-4776-a6b1-02908d3dd3f7",
+        "https://www.fantasypros.com/nfl/news/617025/brock-bowers-finds-end-zone-twice-week-8-win.php"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrmVLJY45MwB8YKjz1EHAtDkLq_Q_BOfsr9YKtwjqYl5Bu-abp18eINbzomGk",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/brock-bowers-sets-record-for-most-receptions-by-a-te-in-first-three-seasons",
+          "title": "Brock Bowers sets record for most receptions by a TE in first three seasons",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrmVLJY45MwB8YKjz1EHAtDkLq_Q_BOfsr9YKtwjqYl5Bu-abp18eINbzomGk"
+        },
+        {
+          "url": "https://www.kvue.com/video/sports/locked-on/lo-bay-area/locked-on-raiders-hit/why-las-vegas-raiders-brock-bowers-is-the-game-changer-everyone-needs-to-watch-right-now/535-fc1c4548-c854-4776-a6b1-02908d3dd3f7",
+          "title": "Why Las Vegas Raiders’ Brock Bowers Is the Game Changer Everyone Needs to Watch Right Now",
+          "publisher": "KVUE",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKjzhjAwGgFvyJFgIBF1eduupi3frlrunzR_k1EMMJrAiFfDLhsmKVtQPKIVc"
+        },
+        {
+          "url": "https://www.fantasypros.com/nfl/news/617025/brock-bowers-finds-end-zone-twice-week-8-win.php",
+          "title": "Brock Bowers finds the end zone twice in Week 8 win",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz1a7S7hnN3jN3Qa944er7dQi7GEGgqZSmPUcEK6za8CEN3L8wsNzefwkQHyo"
+        }
+      ]
+    },
+    {
+      "query": "cade cunningham",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-08T23:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/nba/article/76ers-joel-embiid-assessed-postgame-flagrant-1-foul-by-nba-for-kick-to-pistons-cade-cunningham-233828276.html",
+        "https://bleacherreport.com/articles/25529785-joel-embiid-disciplined-kicking-cade-cunningham-viral-video-during-76ers-pistons",
+        "https://www.usatoday.com/story/sports/nba/2026/11/04/joel-embiid-fight-tolu-smith-76ers-pistons/92618821007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBu-k11cnwvtao2VgWWc9eNm2Od4Bsvpi4wi4B2W4GVic2WabJziFCF3uKeXU",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/nba/article/76ers-joel-embiid-assessed-postgame-flagrant-1-foul-by-nba-for-kick-to-pistons-cade-cunningham-233828276.html",
+          "title": "76ers' Joel Embiid assessed postgame flagrant 1 foul by NBA for kick to Pistons' Cade Cunningham",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBu-k11cnwvtao2VgWWc9eNm2Od4Bsvpi4wi4B2W4GVic2WabJziFCF3uKeXU"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25529785-joel-embiid-disciplined-kicking-cade-cunningham-viral-video-during-76ers-pistons",
+          "title": "Joel Embiid Disciplined for Kicking Cade Cunningham in Viral Video During 76ers-Pistons",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTxiEdxhiIXJqeVOM-blkpbPHnKbXGjxtjNat5s7VIciRoWnoOhGygpe9JsAg"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/nba/2026/11/04/joel-embiid-fight-tolu-smith-76ers-pistons/92618821007/",
+          "title": "Joel Embiid hit with technical foul for altercation in 76ers-Pistons",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNeduDLIJteW4YcPeU3ECVfwncpXWL5-umyOtrcjXpjMyquxwduIk3dGL2cEs"
+        }
+      ]
+    }
+  ]
+}
