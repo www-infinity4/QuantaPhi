@@ -126,9 +126,9 @@ test('review: gateway allows same-origin player framing but does not weaken othe
  const env={URL,Request,Response,Headers,fetch:async()=>new Response('<!doctype html><title>Game</title>',{status:200,headers:{'Content-Type':'text/html','X-Frame-Options':'DENY'}})};
  vm.createContext(env);
  vm.runInContext(worker.replace(/^import \{videoAPI\} from ['"]\.\/video-api\.mjs['"];?\s*/m,'').replace('export default','globalThis.worker='),env);
- const player=await env.worker.fetch(new Request('https://quantaphi.net/nes-snes-player.html'));
+ const player=await env.worker.fetch(new Request('https://quantaphi.org/nes-snes-player.html'));
  assert.equal(player.headers.get('X-Frame-Options'),'SAMEORIGIN');
- const unrelated=await env.worker.fetch(new Request('https://quantaphi.net/unrelated-private.html'));
+ const unrelated=await env.worker.fetch(new Request('https://quantaphi.org/unrelated-private.html'));
  assert.notEqual(unrelated.headers.get('X-Frame-Options'),'SAMEORIGIN');
 });
 
