@@ -3,41 +3,216 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T17:31:32.054631Z",
+  "checked_at": "2026-11-09T18:01:42.811318Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "james gunn",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T17:10:00Z",
+      "query": "james gunn dcu",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T17:40:00Z",
       "related_news_urls": [
-        "https://www.indiewire.com/news/breaking-news/dc-studios-shakeup-james-gunn-peter-safran-out-jeremy-latcham-1235226240/",
-        "https://www.thewrap.com/culture-lifestyle/culture/james-gunn-and-peter-safran-out-at-dc-studios-jeremy-latcham-named-new-president-and-chief-creative-officer/",
-        "https://thedirect.com/article/james-gunn-green-lantern-costume-dc-lore"
+        "https://www.yahoo.com/entertainment/movies/articles/bill-skarsg-rd-explains-big-230441779.html",
+        "https://theplaylist.net/bill-skarsgard-john-constantine-andy-muschietti-20261109/",
+        "https://www.cbr.com/bill-skarsgard-john-constantine-dc/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9bHPKHbRJ95_1PPfU5zan3HabO7uM_PG8xNTthiuV8jW8dbBk-2IoghXbdVs",
-      "image_credit": "IndieWire",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRB5h20BM0LFqN9XYzFTiwLVy74QPO38QYWygCydoxwbPOI7VBUecyAcX5xQT0",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.indiewire.com/news/breaking-news/dc-studios-shakeup-james-gunn-peter-safran-out-jeremy-latcham-1235226240/",
-          "title": "James Gunn, Peter Safran Out at DC Studios, Jeremy Latcham Hired",
-          "publisher": "IndieWire",
+          "url": "https://www.yahoo.com/entertainment/movies/articles/bill-skarsg-rd-explains-big-230441779.html",
+          "title": "Bill Skarsgård Explains Big Life Lesson He Learned After The Crow Reboot’s Box Office Flopped",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9bHPKHbRJ95_1PPfU5zan3HabO7uM_PG8xNTthiuV8jW8dbBk-2IoghXbdVs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRB5h20BM0LFqN9XYzFTiwLVy74QPO38QYWygCydoxwbPOI7VBUecyAcX5xQT0"
         },
         {
-          "url": "https://www.thewrap.com/culture-lifestyle/culture/james-gunn-and-peter-safran-out-at-dc-studios-jeremy-latcham-named-new-president-and-chief-creative-officer/",
-          "title": "James Gunn and Peter Safran Out at DC Studios, Jeremy Latcham Named New President and Chief Creative Officer",
-          "publisher": "TheWrap",
+          "url": "https://theplaylist.net/bill-skarsgard-john-constantine-andy-muschietti-20261109/",
+          "title": "Bill Skarsgård Says He Wanted To Play DC's John Constantine For 'Flash' Director Andy Muschietti",
+          "publisher": "The Playlist",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEQQZ_2rVsG--txLyvDbTuPQ2-T1v8egx_llG5WHGXfRpxTaRAizu6KizAdwM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQn-S1XYBzlSTLjZ-Wjx9Iiogyc2lRcOHU69YUt0tEu0MyhrN6CgdsYq1i0T5w"
         },
         {
-          "url": "https://thedirect.com/article/james-gunn-green-lantern-costume-dc-lore",
-          "title": "James Gunn's New Green Lantern Costume Permanently Rewrites DC Lore For The Better",
-          "publisher": "The Direct",
+          "url": "https://www.cbr.com/bill-skarsgard-john-constantine-dc/",
+          "title": "Forget Joker, Bill Skarsgard Has Another DC Character He Hopes to Play",
+          "publisher": "Comic Book Resources",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQt3IPANlZjBWdttmi0PG6SlsFu6kc9yTkVU5SPAghbQAQwbHYUSu0Vtx27mzY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGw2UfBXjRMFB6xX6jEf_k1AXJ0QiAZnQp0LAVLb0F568xw_yTBipPZwMZvC4"
+        }
+      ]
+    },
+    {
+      "query": "hegseth impeachment",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T17:40:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/09/politics/live-news/midterm-election-trump-congress",
+        "https://www.axios.com/2026/11/08/pete-hegseth-impeachment-house-republicans-massie",
+        "https://www.nytimes.com/2026/11/08/us/politics/pete-hegseth-impeachment-hakeem-jeffries.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRW2w9a_SIZU8_my99NWrHSE78eIsxXHBc3_UEE_lIabz2vIcqI8phwuQJ9azI",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/09/politics/live-news/midterm-election-trump-congress",
+          "title": "Midterm elections latest: Key GOP congressman sees House approval of Hegseth impeachment ‘far more likely’",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRW2w9a_SIZU8_my99NWrHSE78eIsxXHBc3_UEE_lIabz2vIcqI8phwuQJ9azI"
+        },
+        {
+          "url": "https://www.axios.com/2026/11/08/pete-hegseth-impeachment-house-republicans-massie",
+          "title": "House poised to impeach Pete Hegseth after GOP midterm defeat",
+          "publisher": "Axios",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjReUgl1vwyZ6g2wCB_LzvbLDCqm_TOldUeZyA6WZ1Onf9nm6JJ0BEG8R8Ows"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/08/us/politics/pete-hegseth-impeachment-hakeem-jeffries.html",
+          "title": "Jeffries Backs Impeaching Hegseth as Democrats Push for Accountability",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_-AwjIqlasddp5SMH9CwglIzgDr0ecB0EMyIgn1CpxxynYfk8XtVkOkiUOkM"
+        }
+      ]
+    },
+    {
+      "query": "boeing",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T17:40:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/finance/stocks/boeings-deal-losses-are-coming-into-sharper-view-256c7642",
+        "https://www.seattletimes.com/business/boeing-aerospace/boeing-will-cut-5-of-its-commercial-airplane-workforce/",
+        "https://www.investing.com/news/stock-market-news/boeing-to-cut-5-of-planemaking-divisions-workforce-seattle-times-reports-5012939"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrRsBZkHzIMERoqZ0w6u8DzMXlEZRG6j3ebDSzKe7QjfW9qx68z2-56IR5ZpU",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/finance/stocks/boeings-deal-losses-are-coming-into-sharper-view-256c7642",
+          "title": "Boeing’s Deal Losses Are Coming Into Sharper View",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrRsBZkHzIMERoqZ0w6u8DzMXlEZRG6j3ebDSzKe7QjfW9qx68z2-56IR5ZpU"
+        },
+        {
+          "url": "https://www.seattletimes.com/business/boeing-aerospace/boeing-will-cut-5-of-its-commercial-airplane-workforce/",
+          "title": "Boeing will cut 5% of its commercial airplane workforce",
+          "publisher": "The Seattle Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlj6DNyf--zq4zHyzy-weaiJ970IlIPRQhMWE1hqbku7t3p-GLdiC78zYP9mk"
+        },
+        {
+          "url": "https://www.investing.com/news/stock-market-news/boeing-to-cut-5-of-planemaking-divisions-workforce-seattle-times-reports-5012939",
+          "title": "Boeing to cut 5% of planemaking division’s workforce, Seattle Times reports By Reuters",
+          "publisher": "Investing.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOo8OcvhzqoUP7QKuddkpk1uUNU3HTDXNWQziscCvUcQGJlLLFokbmIlLriyo"
+        }
+      ]
+    },
+    {
+      "query": "playstation plus",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T17:30:00Z",
+      "related_news_urls": [
+        "https://www.gamingbible.com/news/platform/playstation/playstation-plus-confirms-aaa-free-games-early-november-december-554864-20261109",
+        "https://insider-gaming.com/two-new-ps-plus-titles-announced-ahead-of-schedule/",
+        "https://www.psu.com/news/sony-confirms-2-ps-plus-extra-games-ahead-of-november-2026-full-lineup-reveal/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3blYDaGWKOj5a7gdbl7YtCjRB5cFTnwVsMvJ_0ckdhbKYh9eE4tCv9GKAucE",
+      "image_credit": "GAMINGbible",
+      "news": [
+        {
+          "url": "https://www.gamingbible.com/news/platform/playstation/playstation-plus-confirms-aaa-free-games-early-november-december-554864-20261109",
+          "title": "PlayStation Plus confirms two AAA free games early ahead of November and December drops",
+          "publisher": "GAMINGbible",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3blYDaGWKOj5a7gdbl7YtCjRB5cFTnwVsMvJ_0ckdhbKYh9eE4tCv9GKAucE"
+        },
+        {
+          "url": "https://insider-gaming.com/two-new-ps-plus-titles-announced-ahead-of-schedule/",
+          "title": "Two New PS Plus Titles Announced Ahead Of Schedule",
+          "publisher": "Insider Gaming",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT51LBLfKXI_lQ_jiSagw2ugqGO4m-hD1dc6wfUVUxsM_f31TMS6bghz_Ct778"
+        },
+        {
+          "url": "https://www.psu.com/news/sony-confirms-2-ps-plus-extra-games-ahead-of-november-2026-full-lineup-reveal/",
+          "title": "Sony Confirms 2 PS Plus Extra Games Ahead Of November 2026 Full Lineup Reveal",
+          "publisher": "PlayStation Universe",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdm3qBncfpzqV9H964MwcDf430kiIwfXVPQcidm9a3I2bqBf8JWKOx50rJpp4"
+        }
+      ]
+    },
+    {
+      "query": "james gunn",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-09T17:10:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/film/news/james-gunn-peter-safran-fired-dc-jeremy-latcham-1236943091/",
+        "https://deadline.com/2026/11/dc-studios-james-gunn-peter-safran-leaving-1237217374/",
+        "https://www.yahoo.com/entertainment/movies/articles/knew-warner-bros-merger-lead-173517044.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRe3r9xB69BGZXYFVbSo9NVW6np1HMp2fdjqiErYz-KYfLEjrQNY6jMFWQVreM",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/film/news/james-gunn-peter-safran-fired-dc-jeremy-latcham-1236943091/",
+          "title": "James Gunn, Peter Safran Fired at DC Studios; Jeremy Latcham Replaces",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRe3r9xB69BGZXYFVbSo9NVW6np1HMp2fdjqiErYz-KYfLEjrQNY6jMFWQVreM"
+        },
+        {
+          "url": "https://deadline.com/2026/11/dc-studios-james-gunn-peter-safran-leaving-1237217374/",
+          "title": "DC Studios Shakeup: James Gunn & Peter Safran Out, Former Marvel Exec Jeremy Latcham In",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBSzcpr9UcIHbbJP4UQYDE35qE5G568ZA5NTtOn4MDKeS03CjJCDbIVjqu7H8"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/knew-warner-bros-merger-lead-173517044.html",
+          "title": "I Knew The Warner Bros. Merger Would Lead To Major Changes, But I Didn’t See James Gunn Being Replaced",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX5BxVA-e35-SovIE7Ajy4dnJTj9WfvDqx-JqYrub0DPHNsqFgpSNw5gFvFNI"
+        }
+      ]
+    },
+    {
+      "query": "stray kids world tour dates",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-09T16:40:00Z",
+      "related_news_urls": [
+        "https://www.baltimoreravens.com/news/stray-kids-announce-2027-world-tour-run-it-across-north-america-europe-and-the-uk",
+        "https://www.wbaltv.com/article/k-pop-stray-kids-baltimore-m-t-bank-stadium-2027/74375872",
+        "https://www.plenitudearena.com/en/event/stray-kids/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTzNvQDHC2t9E5WQsqdxUVzSpQ9tW_MocoAeUpop6l4AyO0CoKxolmfiUwTkU",
+      "image_credit": "Baltimore Ravens",
+      "news": [
+        {
+          "url": "https://www.baltimoreravens.com/news/stray-kids-announce-2027-world-tour-run-it-across-north-america-europe-and-the-uk",
+          "title": "Stray Kids Announce 2027 World Tour ‘Run It’ Across North America, Europe and the UK",
+          "publisher": "Baltimore Ravens",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTzNvQDHC2t9E5WQsqdxUVzSpQ9tW_MocoAeUpop6l4AyO0CoKxolmfiUwTkU"
+        },
+        {
+          "url": "https://www.wbaltv.com/article/k-pop-stray-kids-baltimore-m-t-bank-stadium-2027/74375872",
+          "title": "'Stray Kids' coming to Baltimore's M&T Bank Stadium next summer",
+          "publisher": "WBAL-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQi0HEIS0Gc71QSy74BIm14CMR9_72kqIDHon7a1gQ6O9xouPZOxbcjxTqjpE"
+        },
+        {
+          "url": "https://www.plenitudearena.com/en/event/stray-kids/",
+          "title": "Stray Kids",
+          "publisher": "www.plenitudearena.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRv1copkYAPDEAzOX202TJFmRbHFblZkY-FvSxhlLas4UCFmuEf-B9YIBiVelM"
         }
       ]
     },
@@ -47,7 +222,7 @@
       "published_at": "2026-11-09T16:40:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/2026/11/09/opinion/stephen-miller-roy-cohn-trump.html",
-        "https://www.wbur.org/hereandnow/2026/11/09/trump-stephen-miller",
+        "https://www.motherjones.com/politics/2026/11/stephen-miller-white-house-chief-of-staff-mob-boss/",
         "https://www.axios.com/2026/11/08/richard-walters-white-house-stephen-miller"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR13nKtLcwbj7yJsy3CibaXC7NczSFe2quDQVHj5_KL9TO_sUyNGjtJMW1zdxM",
@@ -61,11 +236,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR13nKtLcwbj7yJsy3CibaXC7NczSFe2quDQVHj5_KL9TO_sUyNGjtJMW1zdxM"
         },
         {
-          "url": "https://www.wbur.org/hereandnow/2026/11/09/trump-stephen-miller",
-          "title": "What's Trump's appointment of Stephen Miller means for his lame-duck presidency",
-          "publisher": "WBUR",
+          "url": "https://www.motherjones.com/politics/2026/11/stephen-miller-white-house-chief-of-staff-mob-boss/",
+          "title": "It’s Stephen Miller’s First Day as Wannabe Mob Boss",
+          "publisher": "Mother Jones",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOOL32SFcb3RaemkQ3GjxWX2D9E1LFA6huvPTHMlfDSRO6oq2srhdcOSIQaJM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpt_j9CExq8EjcE_V9komxWR567QvXZMVQ4fkwrMF10GRuS6cHzMIIcABOHvc"
         },
         {
           "url": "https://www.axios.com/2026/11/08/richard-walters-white-house-stephen-miller",
@@ -78,29 +253,29 @@
     },
     {
       "query": "rockstar games gta vi",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-09T16:30:00Z",
       "related_news_urls": [
+        "https://www.rockstargames.com/newswire/article/o39o87a435a25a/grand-theft-auto-vi-the-festival",
         "https://pitchfork.com/story/gta-vi-is-putting-on-a-music-festival/",
-        "https://www.rollingstone.com/music/music-news/grand-theft-auto-6-music-festival-1235654527/",
         "https://www.usatoday.com/story/tech/gaming/2026/11/09/gta-6-music-festival-miami-tickets/92689761007/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWANhkpCRwTYIbjXteyO_NRuoe7fs06NiTK3NcgXfbUAj86RRr9ticvNsBLkU",
-      "image_credit": "Pitchfork",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTf4JFHWOvAt02qStHSu_s-qv5x4nmVyx0Je7BQtpFqMu3Gd47xZji-JHrw-Yg",
+      "image_credit": "Rockstar Games",
       "news": [
+        {
+          "url": "https://www.rockstargames.com/newswire/article/o39o87a435a25a/grand-theft-auto-vi-the-festival",
+          "title": "Grand Theft Auto VI: The Festival",
+          "publisher": "Rockstar Games",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTf4JFHWOvAt02qStHSu_s-qv5x4nmVyx0Je7BQtpFqMu3Gd47xZji-JHrw-Yg"
+        },
         {
           "url": "https://pitchfork.com/story/gta-vi-is-putting-on-a-music-festival/",
           "title": "GTA VI Is Putting on a Music Festival",
           "publisher": "Pitchfork",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWANhkpCRwTYIbjXteyO_NRuoe7fs06NiTK3NcgXfbUAj86RRr9ticvNsBLkU"
-        },
-        {
-          "url": "https://www.rollingstone.com/music/music-news/grand-theft-auto-6-music-festival-1235654527/",
-          "title": "Travis Scott, Cardi B, and Justice Lead One-Off ‘Grand Theft Auto 6’ Music Festival",
-          "publisher": "Rolling Stone",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWqLKXCbyaOdp_G1opk5ZioMXNUm-UVEjPsfv2rZTGTlMHQ3-y3tFGtGdrMnU"
         },
         {
           "url": "https://www.usatoday.com/story/tech/gaming/2026/11/09/gta-6-music-festival-miami-tickets/92689761007/",
@@ -148,11 +323,11 @@
     },
     {
       "query": "24 team playoff",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-09T15:50:00Z",
       "related_news_urls": [
         "https://www.espn.com/college-football/story/_/id/50433381/cfp-espn-ink-5-year-17b-deal-expand-field-sources-say",
-        "https://www.koco.com/article/college-football-playoff-doubles-24-teams/74377302",
+        "https://www.nfl.com/news/college-football-playoff-doubles-up-expands-to-24-teams-beginning-next-season",
         "https://www.cnn.com/2026/11/09/sport/college-football-playoff-expansion"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaJeiOzreeoz-RT2cQTseTg7r4_psD5LC-iHwBsDIwJNgH-dUQGa8zXn_-XEA",
@@ -166,11 +341,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaJeiOzreeoz-RT2cQTseTg7r4_psD5LC-iHwBsDIwJNgH-dUQGa8zXn_-XEA"
         },
         {
-          "url": "https://www.koco.com/article/college-football-playoff-doubles-24-teams/74377302",
+          "url": "https://www.nfl.com/news/college-football-playoff-doubles-up-expands-to-24-teams-beginning-next-season",
           "title": "College Football Playoff doubles up, expands to 24 teams beginning next season",
-          "publisher": "KOCO",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4PVWiC6l7YuFESa1R-xJZFJ6RgAJeuP2dCyc6gvVFN9LEL3j35ejLuikH9ok"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwH3kKhPwX39Td4FZAeRvjbXC3HJzVUwaq6ELURULCBR8cktywjs7FdZBwDbw"
         },
         {
           "url": "https://www.cnn.com/2026/11/09/sport/college-football-playoff-expansion",
@@ -178,181 +353,6 @@
           "publisher": "CNN",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0rDdQJSKUsGW2lWORraSsq3SFmrwLrB_I8Hq8Su1N5FJkk6qzyptzOGl_Qzk"
-        }
-      ]
-    },
-    {
-      "query": "sarah jukaku",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T15:50:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/politics/democratic-senator-elect-calls-trump-unserious-fool-defending-combative-political-style",
-        "https://www.yahoo.com/news/politics/articles/abdul-el-sayeds-vow-win-160803896.html",
-        "https://www.nbcchicago.com/entertainment/entertainment-news/abdul-el-sayed-says-life-of-a-showgirl-isnt-taylor-swifts-best-album/4012899/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtsLi-Ipv2pENqAIP3QBv6KY7vIv3f_OzIzarck0pf5f8HosX0BcLExs_d76k",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/politics/democratic-senator-elect-calls-trump-unserious-fool-defending-combative-political-style",
-          "title": "Democratic senator-elect calls Trump 'unserious fool' while defending combative political style",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtsLi-Ipv2pENqAIP3QBv6KY7vIv3f_OzIzarck0pf5f8HosX0BcLExs_d76k"
-        },
-        {
-          "url": "https://www.yahoo.com/news/politics/articles/abdul-el-sayeds-vow-win-160803896.html",
-          "title": "Abdul El-Sayed's Vow to Win by 7 Resurfaces After He Does Exactly That",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWH0RzBJqIQt8xQH2cakZ9WA2iWfM_pxGBliwHxr8JKrxXPXt3mtlr1G7eqW4"
-        },
-        {
-          "url": "https://www.nbcchicago.com/entertainment/entertainment-news/abdul-el-sayed-says-life-of-a-showgirl-isnt-taylor-swifts-best-album/4012899/",
-          "title": "‘Of course not': Abdul El-Sayed says ‘Life of a Showgirl' isn't Taylor Swift's best album",
-          "publisher": "NBC 5 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF6e7ott5WKVu1RDh66HrOQmMI8O2o6PKdWK2x_Lqb9dxRZ4w7JMO6PMlrh_o"
-        }
-      ]
-    },
-    {
-      "query": "gwyneth paltrow",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T15:50:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/tv/news/gwyneth-paltrow-goop-guide-netflix-spotify-video-podcast-1236941245/",
-        "https://people.com/gwyneth-paltrow-zip-up-sweater-november-2026-12187498",
-        "https://www.yahoo.com/entertainment/videos/real-reason-gwyneth-paltrow-brad-150000934.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI3n8ZJdsB2klf0pE7m4-yQONtx3CvCsofynwFlJJOhdRw2ea76buy_ocR7pE",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/tv/news/gwyneth-paltrow-goop-guide-netflix-spotify-video-podcast-1236941245/",
-          "title": "Gwyneth Paltrow Goop Guide Video Podcast Coming to Netflix and Spotify",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI3n8ZJdsB2klf0pE7m4-yQONtx3CvCsofynwFlJJOhdRw2ea76buy_ocR7pE"
-        },
-        {
-          "url": "https://people.com/gwyneth-paltrow-zip-up-sweater-november-2026-12187498",
-          "title": "I’m Swapping Bulky Jackets for Gwyneth Paltrow’s Zip-Up Sweater That Makes Fall Outfits Look Instantly Polished",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSWd8vuPv2K9cNz1MMl22vfpsLGK2HxmZSzyW00PyZz37aYcQGYzdcITyuiS4"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/videos/real-reason-gwyneth-paltrow-brad-150000934.html",
-          "title": "The Real Reason Gwyneth Paltrow And Brad Pitt Called It Quits",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbafcV56oiCQAR8_cg8o9_snfYn5peR6Mdl8rXFt6wf8FX-982nI4qoxPnAg4"
-        }
-      ]
-    },
-    {
-      "query": "snowfall forecast",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T15:40:00Z",
-      "related_news_urls": [
-        "https://myfox8.com/weather/blog/is-the-triad-in-for-an-icy-winter-fox8-meteorologist-emily-byrd-shares-2026-27-winter-weather-prediction/",
-        "https://www.mensjournal.com/news/3-areas-of-the-us-facing-the-most-snow-this-winter",
-        "https://www.yahoo.com/news/weather-news/articles/noaa-winter-storm-map-forecasts-121500800.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTv7ANNxeZINUk5xRnMBoxcfsa5STkEg2jmF5Rs1QgTSHHLy5Wt220lum-JAOE",
-      "image_credit": "FOX8 WGHP",
-      "news": [
-        {
-          "url": "https://myfox8.com/weather/blog/is-the-triad-in-for-an-icy-winter-fox8-meteorologist-emily-byrd-shares-2026-27-winter-weather-prediction/",
-          "title": "Is the Triad in for an icy winter? FOX8 Meteorologist Emily Byrd shares 2026-27 winter weather prediction",
-          "publisher": "FOX8 WGHP",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTv7ANNxeZINUk5xRnMBoxcfsa5STkEg2jmF5Rs1QgTSHHLy5Wt220lum-JAOE"
-        },
-        {
-          "url": "https://www.mensjournal.com/news/3-areas-of-the-us-facing-the-most-snow-this-winter",
-          "title": "3 Areas of the US Facing the Most Snow This Winter",
-          "publisher": "Men's Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6Z99lZAhzo2VT386nOESIj1VDBfDUlvIiNZFiswjr57-aTsX4sOyfzWMgTZg"
-        },
-        {
-          "url": "https://www.yahoo.com/news/weather-news/articles/noaa-winter-storm-map-forecasts-121500800.html",
-          "title": "New NOAA Winter Storm Map Forecasts ‘Heavy Snow’ For 3 States Next Week",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5VukQxzNvchTkBP9lAhmmNNg86eUox97Nl7h36FAZI0HijtU1ckL82uiwfCU"
-        }
-      ]
-    },
-    {
-      "query": "national chicken sandwich day",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T15:30:00Z",
-      "related_news_urls": [
-        "https://www.13newsnow.com/article/news/nation-world/national-fried-chicken-sandwich-day-freebies-and-deals/507-66e27ec3-0dbe-4b99-bb55-f04f1e84088e",
-        "https://mashable.com/life/national-fried-chicken-sandwich-day-2026-free-food-deals",
-        "https://www.cbsnews.com/chicago/video/chicagos-do-rite-donuts-celebrates-national-fried-chicken-sandwich-day/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfq8-U8c-kL15QrbfJdiLZRHSTHmsVF67aMQ-jYQkBU0wFA5kcMoxUvYfEfzA",
-      "image_credit": "13newsnow.com",
-      "news": [
-        {
-          "url": "https://www.13newsnow.com/article/news/nation-world/national-fried-chicken-sandwich-day-freebies-and-deals/507-66e27ec3-0dbe-4b99-bb55-f04f1e84088e",
-          "title": "Fast-food restaurants celebrate National fried chicken sandwich day with freebies and deals",
-          "publisher": "13newsnow.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfq8-U8c-kL15QrbfJdiLZRHSTHmsVF67aMQ-jYQkBU0wFA5kcMoxUvYfEfzA"
-        },
-        {
-          "url": "https://mashable.com/life/national-fried-chicken-sandwich-day-2026-free-food-deals",
-          "title": "National Fried Chicken Sandwich Day 2026 deals: Score free food from Burger King, KFC, McDonald's, and more",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEcjCWWDegk1QRjzWYNYO5GRDmZYEbcmkvZ8qe4K8xV2PwhxGdDl3kVnLroco"
-        },
-        {
-          "url": "https://www.cbsnews.com/chicago/video/chicagos-do-rite-donuts-celebrates-national-fried-chicken-sandwich-day/",
-          "title": "Chicago's Do-Rite Donuts celebrates National Fried Chicken Sandwich Day",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvgARQjpG3aAPTIhBZ0AJSn8FyqXgD-V3_hGcz5pP8jG3IkWb4c4otjGQnlkM"
-        }
-      ]
-    },
-    {
-      "query": "hoda kotb",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T15:30:00Z",
-      "related_news_urls": [
-        "https://people.com/hoda-kotb-reunites-jenna-bush-hager-today-show-guest-cohost-12244580",
-        "https://www.yahoo.com/entertainment/tv/articles/hoda-kotb-hosts-today-jenna-154445758.html",
-        "https://www.imdb.com/news/ni66102686/?ref_=nwc_art_perm"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbkkMCwDBmeZA29PtO9UCinVCPaXzvJchWDFtjjEqxbNv_LEVfK8JQmjaqNO8",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/hoda-kotb-reunites-jenna-bush-hager-today-show-guest-cohost-12244580",
-          "title": "Hoda Kotb Reunites with Jenna Bush Hager as Guest Co-Host on Today : ‘Like Not a Day Had Passed’",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbkkMCwDBmeZA29PtO9UCinVCPaXzvJchWDFtjjEqxbNv_LEVfK8JQmjaqNO8"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/hoda-kotb-hosts-today-jenna-154445758.html",
-          "title": "Hoda Kotb Hosts ‘Today’ With Jenna Bush Hager Nearly 2 Years After Show Exit",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7foMwYQDGdAp2ymZtBWc_Ql0iliU5oShMVwuVAbfALAz_8rbYLSpfkfo5LdA"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66102686/?ref_=nwc_art_perm",
-          "title": "Hoda Kotb Hosts ‘Today’ With Jenna Bush Hager Nearly 2 Years After Show Exit",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ69lg707XL2EEXU8rAL_Dsbq1oymJ0W7yT7veDioUnWmUuI16F8KdcgfG8JVM"
         }
       ]
     }
