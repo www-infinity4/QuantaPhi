@@ -8,6 +8,7 @@ on:
       - 'workers/bubbles-tools/capability-directory.mjs'
       - 'workers/bubbles-tools/worker.mjs'
       - 'test/bubbles-eight-unverified.test.mjs'
+      - 'scripts/bubbles-search-public-diagnostic.mjs'
       - '.github/workflows/bubbles-eight-probe.yml'
   workflow_dispatch:
 permissions:
@@ -26,3 +27,5 @@ jobs:
       - run: node --check bubbles-capability-intent.mjs
       - run: node --check workers/bubbles-tools/capability-directory.mjs
       - run: node --test test/bubbles-eight-unverified.test.mjs test/test-ground-ai.test.mjs test/bubbles-capability-review.test.mjs test/bubbles-live-lookup.test.mjs test/bubbles-search-binding.test.mjs
+      - name: Observe deployed public SearXNG broker independently of Cloudflare dashboard login
+        run: node scripts/bubbles-search-public-diagnostic.mjs
