@@ -49,7 +49,7 @@ The service Bearer `INGEST_TOKEN` authenticates the sending service; it does **n
 - Success responds HTTP 202 with `{"received":2,"accepted":2,"persisted":false}`. This is an enqueue receipt, **not** database persistence.
 - If Queue is down/unbound, HTTP 503; no silent direct-write fallback.
 - The Queue consumer assembles a single atomic `env.DB.batch([...])` from up to five messages (configuration example), with user first-seen inserts and up to 16 event rows per SQL INSERT. A D1 failure causes Queue retries; the `events.id` primary key prevents duplicate insertion.
-- At most **96 bound parameters per INSERT** (16 rows * 6 parameters) and max **100 events per HTTP POST**. One full 100-event HTTP POST becomes 1 user insert + 7 event inserts; up to five Queue messages become no more than 40 prepared statements in the consumer D1 batch.
+- At most **98 bound parameters per queued INSERT** (16 rows * 6 event parameters plus two consent checks) and max **100 events per HTTP POST**. One full 100-event HTTP POST becomes 1 user insert + 7 event inserts; up to five Queue messages become no more than 40 prepared statements in the consumer D1 batch.
 
 **`INGEST_MODE=direct` (explicitly selected staging/test only):** POST immediately writes one atomic `DB.batch` and returns `{received,inserted,duplicates}` with HTTP 201 for newly inserted rows or HTTP 200 for all duplicate IDs. Not the preferred default for unknown high peaks; missing/unknown `INGEST_MODE` fails closed (503) without reading or writing D1.
 
@@ -83,7 +83,7 @@ The site Worker source accepts exactly `/api/quant-events` via a private
 only POST). It is **fail-closed** by default:
 the route returns HTTP 503 `event_collection_disabled` unless an approved
 host-only `EVENTS_BRIDGE_ENABLED=true` configuration is set. No production
-bindings, customer consent UI, or live data writes have been installed.
+bindings, active customer consent UI, or live data writes have been installed.
 
 The bridge **reuses the existing** `walletIdentity(request,env)` in
 `workers/bubbles-connections/router.mjs`, which calls the already available
@@ -105,10 +105,15 @@ The bridge never transfers any Wallet/Quant/GIT/StarCoin balances.
 `quant_event_consents(user_id,purpose,policy_version,consented_at_ms,revoked_at_ms)`.
 Each request must find an active, nonrevoked, matching `v1` analytics consent
 record for the authenticated pseudonymous account in `EVENT_CONSENT_DB`.
-There is **no HTTP grant/write shortcut**, no default opt-in, no auto-populated
-rows and no production consent-collection UI. Explicit user consent must be
-reviewed before implementation. Revocations must prevent further collection;
-legacy raw events require a separately approved retention/erasure procedure.
+An explicit, Wallet-verified `GET/POST /api/quant-events/consent` management endpoint and the
+`quant-events-privacy.html` account UI have now been staged in this PR. Consent management is
+**independently disabled** unless `EVENT_CONSENT_MANAGEMENT_ENABLED=true` in both site and
+bridge Workers; no default opt-in or automatically populated rows exist. A real Wallet token,
+user interaction and `action:grant,opt_in:true,policy_version:v1` are required to grant.
+`action:revoke` records withdrawal immediately. The Queue consumer checks the same D1 consent
+row inside its atomic SQL inserts; queued events accepted before revocation cannot be stored
+afterward, nor resurrected after a new opt-in. Previously persisted events require a
+separately approved retention/export/deletion workflow.
 
 Required private **bridge Worker** future bindings/settings after review:
 - Existing `BOT_WALLET` service binding for verified `/v1/wallet/state`.
@@ -143,3 +148,27 @@ These tests are not live Cloudflare authenticated-account acceptance.
 retention/export/deletion, stage migration to an isolated D1, verify queue
 → database with test-user consent and no money, measure write pressure, and
 explicitly enable telemetry only after a reviewed opt-in experience.
+
+## Separate consent-management controls (source only)
+
+The site Worker routes `/api/quant-events/consent` to the private `EVENTS_BRIDGE`
+service when `EVENT_CONSENT_MANAGEMENT_ENABLED=true` (independent of
+`EVENTS_BRIDGE_ENABLED`, which controls writes). The bridge's
+`src/consent-control.mjs` checks an actual Wallet session, same-origin requests,
+policy `v1`, and the isolated D1 record. The UI uses the existing Wallet token
+resolver. It never posts opt-in on load; an unchecked control cannot grant
+consent. Both the UI and the privacy policy explicitly distinguish the proposed
+first-party event store from existing Google Analytics/AdSense.
+
+Queue persistence now requires active consent *at write time*, and a consent
+start time no later than the event's server-assigned acceptance timestamp. All
+checks run inside `DB.batch` with SQLite's transaction semantics; a replay after
+revocation or renewed opt-in is dropped, rather than counted as a real click.
+This raises the maximum per queued 16-row event INSERT from 96 to **98** bound
+parameters (within D1's 100-parameter ceiling). Only explicit `direct` staging
+mode omits these Queue-consent guards: never enable `direct` in production.
+
+Retained historical events, delayed external exports, formal user erasure, and
+immutable consent audit/reporting remain separate release gates. No deployment,
+Cloudflare resource creation, billing approval, signed-in browser acceptance or
+live consent was performed by staging this source.
