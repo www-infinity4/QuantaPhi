@@ -1,0 +1,22 @@
+name: Test Ground Code Accelerator source verification
+on:
+  pull_request:
+    paths:
+      - 'test-ground-ai/code-accelerator.mjs'
+      - 'test/code-accelerator.test.mjs'
+      - '.github/workflows/test-ground-code-accelerator.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check test/code-accelerator.test.mjs
+      - run: node --test test/code-accelerator.test.mjs
