@@ -69,3 +69,8 @@ No active owner-agent coordinator lease was verified or claimed. Do not overwrit
 - Added RED regression tests first for non-truncation of existing owner messages, rejection of malformed remote source paths, and one shared fresh JS version across four first-party Bubbles entrypoints. GitHub exact-head test run 42564355193 confirmed 3 failures out of 38 before code changes.
 - Repaired the picker to refuse overlength drafts without touching input; tightened source path validation; updated all four Bubbles entrypoints and existing cache-regression assertions to the same fresh JS version. Existing owner/Cloudflare auth and Bubbles source execution behavior remain unchanged.
 - No coordinator lease claimed; review, merge, public readback and Android acceptance remain unverified pending exact-head green CI and independent approval.
+
+## Mobile composer regression (2026-11-09 UTC)
+
+- Added focused regression ensuring Add Template appears on a separate composer row. The original four-control photo/mic/speaker/Send grid remains intact at narrow Android widths, rather than silently moving Send to an isolated fifth slot.
+- New red-check commit `245a7f4bd4f036b3d73645f03b171157ecd4cf6a`; follow-up green check/CI receipt required. Source change is limited to a single DOM insert and this checkpoint; no Cloudflare changes, owner grants or wallet mutations.

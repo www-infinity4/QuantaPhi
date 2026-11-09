@@ -3633,7 +3633,8 @@ repositoryPicker.append(openCardCatalog);
 
 const templateOpen=create('button','ba-control ba-template-open','Add Template');
 templateOpen.type='button';templateOpen.hidden=embedded;templateOpen.setAttribute('aria-expanded','false');
-actions.insertBefore(templateOpen,mic);
+// Keep original photo/mic/speaker/Send controls in their proven four-cell grid.
+composer.insertBefore(templateOpen,actions);
 const templateLibraryPanel=create('section','ba-template-library');
 templateLibraryPanel.hidden=true;templateLibraryPanel.setAttribute('aria-label','Verified Bubbles template library');
 if(conversation.parentNode)conversation.parentNode.insertBefore(templateLibraryPanel,conversation);
