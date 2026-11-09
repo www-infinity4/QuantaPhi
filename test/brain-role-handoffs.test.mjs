@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {extractAssignedColorTask,routeColorHandoffs,runColorHandoffs} from '../workers/infinity-brain-clock/color-handoff.mjs';
+import {colorCoreProfile,colorCoreSystemPrompt} from '../workers/infinity-brain-clock/color-core.mjs';
 
 test('direct scoped repair goes to Green without repeated reading',()=>{
  assert.deepEqual(routeColorHandoffs('Fix bubbles-ai.js playback handler'),[]);
@@ -45,4 +46,25 @@ test('authenticated scoped color task excludes generated execution-plan appendix
  assert.equal(extractAssignedColorTask('Fix bubbles-ai.js code'), 'Fix bubbles-ai.js code');
  assert.equal(extractAssignedColorTask(''), '');
  assert.equal(extractAssignedColorTask('x'.repeat(4000)).length,2400);
+});
+
+test('color reasoning profiles describe bounded overlapping evidence flow, not invented source commits',()=>{
+ const expected={
+  red:/context|snapshot/i,
+  yellow:/discover|filter|extract/i,
+  orange:/destination|target/i,
+  blue:/transport|import/i,
+  green:/overlap|concurren|combined/i,
+  purple:/assimil|readback/i
+ };
+ for(const [color,words] of Object.entries(expected)){
+  const profile=colorCoreProfile(color);
+  assert.match(colorCoreSystemPrompt(profile),words,color);
+  assert.match(colorCoreSystemPrompt(profile),/not a new independent credential/i);
+ }
+ const green=colorCoreSystemPrompt(colorCoreProfile('green'));
+ assert.match(green,/authenticated|authorized/i);
+ assert.match(green,/commit|writer/i);
+ const purple=colorCoreSystemPrompt(colorCoreProfile('purple'));
+ assert.match(purple,/not.*(?:approval|release)|independent.*review/i);
 });
