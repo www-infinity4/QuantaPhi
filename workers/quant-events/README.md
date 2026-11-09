@@ -51,7 +51,7 @@ The service Bearer `INGEST_TOKEN` authenticates the sending service; it does **n
 - The Queue consumer assembles a single atomic `env.DB.batch([...])` from up to five messages (configuration example), with user first-seen inserts and up to 16 event rows per SQL INSERT. A D1 failure causes Queue retries; the `events.id` primary key prevents duplicate insertion.
 - At most **98 bound parameters per queued INSERT** (16 rows * 6 event parameters plus two consent checks) and max **100 events per HTTP POST**. One full 100-event HTTP POST becomes 1 user insert + 7 event inserts; up to five Queue messages become no more than 40 prepared statements in the consumer D1 batch.
 
-**`INGEST_MODE=direct` (explicitly selected staging/test only):** POST immediately writes one atomic `DB.batch` and returns `{received,inserted,duplicates}` with HTTP 201 for newly inserted rows or HTTP 200 for all duplicate IDs. Not the preferred default for unknown high peaks; missing/unknown `INGEST_MODE` fails closed (503) without reading or writing D1.
+**`INGEST_MODE=direct` (explicitly selected staging/test only):** requires a second server-only `DIRECT_STAGING_ALLOWED=true` flag; otherwise returns HTTP 503. Even in staging, D1 `DB.batch` statements atomically verify the active `v1` consent record and epoch. POST writes one guarded atomic `DB.batch` and returns `{received,inserted,duplicates}` with HTTP 201 for newly inserted rows or HTTP 200 for all duplicate IDs. Not the preferred default for unknown high peaks; missing/unknown `INGEST_MODE` fails closed (503) without reading or writing D1.
 
 `users` metadata is **first-seen only** (the insert has `ON CONFLICT DO NOTHING`) to avoid an unnecessary profile UPDATE for each telemetry request. Do not treat this as up-to-date location or device inventory. A separate verified profile update API would be required if those properties must change.
 
@@ -165,8 +165,8 @@ start time no later than the event's server-assigned acceptance timestamp. All
 checks run inside `DB.batch` with SQLite's transaction semantics; a replay after
 revocation or renewed opt-in is dropped, rather than counted as a real click.
 This raises the maximum per queued 16-row event INSERT from 96 to **98** bound
-parameters (within D1's 100-parameter ceiling). Only explicit `direct` staging
-mode omits these Queue-consent guards: never enable `direct` in production.
+parameters (within D1's 100-parameter ceiling). Explicit `direct` staging also uses these same consent guards, and cannot run
+without `DIRECT_STAGING_ALLOWED=true`. Never enable `direct` in production.
 
 Retained historical events, delayed external exports, formal user erasure, and
 immutable consent audit/reporting remain separate release gates. No deployment,
