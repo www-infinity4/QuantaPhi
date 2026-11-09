@@ -41,7 +41,7 @@ test('first-party Bubbles routes explicit inventory questions directly to its ex
  assert.ok(fast>0&&fast<intent&&fast<legacy,'the gateway catalog must precede model intent and local canned inventory');
  const route=ui.slice(fast,intent);
  assert.match(route,/bubblesFetch\(AI,/);
- assert.match(route,/json\.receipt\?\.tool==='bubbles.capabilities'/);
+ assert.match(route,/json\.receipt\?\.tool!=='bubbles.capabilities'/);
  assert.match(route,/display\(reply,'ai'\)/);
  assert.doesNotMatch(route,/directGithubOperation|verifiedOwnerHeaders|\/v1\/intent/);
 });
