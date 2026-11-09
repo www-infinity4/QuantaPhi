@@ -1,0 +1,40 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {parseTemplateCatalog,createTemplateBuildPrompt,loadTemplateCatalog} from '../bubbles-template-picker.mjs';
+const sha='a'.repeat(40);
+const index={schema:'bubbles.template.catalog',version:1,templates:[{id:'media-star',title:'Media Star Creator',path:'templates/media-star.json',category:'Media'}]};
+const template={schema:'bubbles.card-template',version:1,integration:{productionVerified:false,requiresReview:true},id:'media-star',title:'Media Star Creator',description:'Authorized creator media.',source:{repo:'www-infinity4/QuantaPhi',commit:sha,path:'media-star-creator.js'},widgetphi:{schema:'widgetphi.site',version:1,title:'Media Star Creator',cards:[{instanceId:'media1',cardId:'media-star',settings:{title:'Media Star Creator'}}]}};
+test('only allowlisted template paths are accepted',()=>{
+ assert.equal(parseTemplateCatalog(index).length,1);
+ assert.throws(()=>parseTemplateCatalog({...index,templates:[{...index.templates[0],path:'../../.env'}]}));
+ assert.throws(()=>parseTemplateCatalog({...index,templates:[...index.templates,index.templates[0]]}));
+});
+test('read-only catalog loader does not pass credentials and returns verified manifests',async()=>{
+ const calls=[];
+ const fetcher=async (url,opts)=>{calls.push([url,opts]);return {ok:true,status:200,json:async()=>url.endsWith('index.json')?index:template};};
+ const found=await loadTemplateCatalog(fetcher);
+ assert.equal(found.length,1);assert.equal(found[0].id,'media-star');
+ assert.ok(calls.every(([url,opts])=>url.startsWith('https://raw.githubusercontent.com/www-infinity4/Bubbles-Cognitive-Automation/')&&opts.credentials==='omit'));
+});
+test('failed or invalid remote content never becomes an actionable template',async()=>{
+ const bad=await loadTemplateCatalog(async url=>({ok:true,json:async()=>url.endsWith('index.json')?index:{...template,source:{...template.source,commit:'main'}}}));
+ assert.deepEqual(bad,[]);
+ await assert.rejects(()=>loadTemplateCatalog(async()=>({ok:false,status:503})));
+});
+test('add template creates a non-executing editable chat draft and preserves prior words',()=>{
+ const prompt=createTemplateBuildPrompt(template,'Build this into my homepage');
+ assert.match(prompt,/media-star/);assert.match(prompt,/Build this into my homepage/);assert.match(prompt,/review/);
+ assert.ok(prompt.length<=2400);
+});
+test('Bubbles main composer exposes Add Template without removing normal chat or owner guard',()=>{
+ const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ assert.match(ui,/ba-template-open/);
+ assert.match(ui,/mountBubblesTemplatePicker/);
+ assert.match(ui,/createTemplateBuildPrompt/);
+ assert.match(ui,/reusableBuildPlan=!embedded&&ownerReady/);
+ assert.match(ui,/templateLibraryPanel\.hidden=true/);
+ assert.match(ui,/input\.value=prompt/);
+ const html=readFileSync(new URL('../bubbles.html',import.meta.url),'utf8');
+ assert.match(html,/bubbles-ai\.js\?v=20261108-template-library1/);
+});

@@ -5,6 +5,9 @@ on:
       - 'bubbles-ai.js'
       - 'bubbles-project-discovery.mjs'
       - 'bubbles-build-templates.mjs'
+      - 'bubbles-template-picker.mjs'
+      - 'test/bubbles-template-picker.test.mjs'
+      - 'bubbles.html'
       - 'scripts/bubbles-build-template-plan.mjs'
       - 'test/bubbles-build-templates.test.mjs'
       - '.github/workflows/bubbles-build-templates.yml'
@@ -37,4 +40,4 @@ jobs:
           node --check scripts/bubbles-build-template-plan.mjs
       - name: Test template matching, receipts and Bubbles project discovery
         run: |
-          node --test test/bubbles-build-templates.test.mjs test/bubbles-project-discovery.test.mjs
+          node --test test/bubbles-build-templates.test.mjs test/bubbles-template-picker.test.mjs test/bubbles-project-discovery.test.mjs

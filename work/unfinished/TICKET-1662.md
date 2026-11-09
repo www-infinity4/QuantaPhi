@@ -54,3 +54,10 @@ No active owner-agent coordinator lease was verified or claimed. Do not overwrit
 - Last tested code commit before this checkpoint edit: fae8b37bdce5cd7a22c7450947c2199ec8723f43 (follow-up CI pending at handoff)
 - Initial exact-head workflow success: https://github.com/www-infinity4/QuantaPhi/actions/runs/41779323490
 - No coordinator lease claimed or live deployment asserted.
+
+## Current integration follow-up (2026-11-09 UTC)
+
+- Merged current QuantaPhi main into existing PR #1663 while preserving its new owner-chat, identity and developer UI code. Merge/source commit `ac99525a14629a1a58326469227517b9758a4a4e`; no force push or coordinator lease claimed.
+- Added first-party Bubbles `Add Template` control and read-only remote manifest catalog loader from `www-infinity4/Bubbles-Cognitive-Automation` `main`. The seven approved configurations can become editable chat drafts; nothing is silently executed or published. New Bubbles script cache version forces the picker to load after release.
+- Local new picker TDD: observed initial missing-module failure, then four focused tests passed with Node 22. GitHub exact-head suite / independent review / merge / Cloudflare deployment / live signed-in Android acceptance remain separate and pending until verified.
+- Next action: inspect exact-head CI and independent source review; merge only if accepted and prove website assets/load + signed Bubbles source retrieval. Preserve QuantaPhi issue #1662 as open until live acceptance.

@@ -3630,6 +3630,43 @@ repositoryPicker.addEventListener('keydown',event=>{if(event.key==='Escape'){eve
 const openCardCatalog=create('button','ba-control','Card catalog');openCardCatalog.type='button';openCardCatalog.hidden=embedded;
 openCardCatalog.addEventListener('click',()=>void sendMessage('show card catalog'));
 repositoryPicker.append(openCardCatalog);
+
+const templateOpen=create('button','ba-control ba-template-open','Add Template');
+templateOpen.type='button';templateOpen.hidden=embedded;templateOpen.setAttribute('aria-expanded','false');
+actions.insertBefore(templateOpen,mic);
+const templateLibraryPanel=create('section','ba-template-library');
+templateLibraryPanel.hidden=true;templateLibraryPanel.setAttribute('aria-label','Verified Bubbles template library');
+if(conversation.parentNode)conversation.parentNode.insertBefore(templateLibraryPanel,conversation);
+const templateCss=create('style');
+templateCss.textContent='.ba-template-library{padding:12px;border:1px solid #e5ddd6;border-radius:18px;background:#f7f4f0;color:#312722}.ba-template-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,245px),1fr));gap:10px}.ba-template-entry{padding:12px;background:white;border:1px solid #e5ddd6;border-radius:14px;min-width:0}.ba-template-entry img{display:block;width:100%;height:110px;object-fit:contain;background:#faf8f5}.ba-template-entry h3{font-size:17px;line-height:1.4;margin:7px 0}.ba-template-entry p{font-size:14px;line-height:1.5}.ba-template-entry button,.ba-template-open{min-height:44px!important}.ba-template-entry button{max-width:100%}.ba-template-library[hidden]{display:none!important}@media(max-width:400px){.ba-template-library{padding:8px}.ba-template-grid{grid-template-columns:minmax(0,1fr)}}';
+document.head.append(templateCss);
+let templatePickerModule=null;
+templateOpen.addEventListener('click',async()=>{
+ const opening=templateLibraryPanel.hidden;
+ templateLibraryPanel.hidden=!opening;
+ templateOpen.setAttribute('aria-expanded',String(opening));
+ if(!opening)return;
+ templateOpen.disabled=true;
+ try{
+  templatePickerModule=templatePickerModule||await import('/bubbles-template-picker.mjs?v=20261108-live-template1');
+  await templatePickerModule.mountBubblesTemplatePicker({
+   host:templateLibraryPanel,
+   onChoose(template){
+    try{
+     const prompt=templatePickerModule.createTemplateBuildPrompt(template,input.value);
+     if(prompt.length>input.maxLength)throw Error('Template prompt exceeds composer limit');
+     input.value=prompt;input.dispatchEvent(new Event('input',{bubbles:true}));
+     templateLibraryPanel.hidden=true;templateOpen.setAttribute('aria-expanded','false');
+     input.focus();status.textContent='Added '+template.title+' to draft. Tap Send to ask Bubbles to build; no source writes occurred.';
+    }catch(error){status.textContent='Could not add template: '+String(error.message||error).slice(0,130);}
+   }
+  });
+  if(templateLibraryPanel.scrollIntoView)templateLibraryPanel.scrollIntoView({block:'nearest'});
+ }catch(error){
+  templateLibraryPanel.replaceChildren(create('p','ba-muted','GitHub templates unavailable. Chat and the existing card catalog still work.'));
+ }finally{templateOpen.disabled=false;}
+});
+
 composer.addEventListener('submit',event=>{event.preventDefault();void sendMessage(input.value)});
 const screenShareButton=create('button','ba-control','Share current screen');screenShareButton.type='button';
 screenShareButton.setAttribute('aria-pressed','false');
