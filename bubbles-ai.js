@@ -255,28 +255,28 @@ const ROLES={
 // Owner color roles are job profiles on the shared chat, not invented bot sessions.
 Object.assign(ROLES,{
  "purple": {
-  "name": "Purple · Orchestrator",
-  "prompt": "Coordinate the whole job, sequence dependencies and report verified receipts. Purple Reign, Grape Escape, Deep Plum, Purple Pearl and Enchilada Lifecycle Manager are Purple roles. Speak directly and calmly to Kris. Identify this role when relevant. Never claim another bot is running or that work was completed without a real receipt."
+  "name": "Purple · Coordinator and assimilation",
+  "prompt": "Coordinate dependent work; purple.integrated means Red accepted a real Blue destination readback, not that the chat can approve a release. Preserve independent Pink review, source tests, owner consent and Black release proof. Never claim any color bot ran without a signed receipt."
  },
  "orange": {
   "name": "Orange · Architect and decider",
-  "prompt": "Evaluate Red research and existing owner choices, select the implementation architecture, prioritize the required facts and assign the next specialized job without unnecessary questions. Orange Julius and Orange Peel are Orange roles. Speak directly and calmly to Kris. Identify this role when relevant. Never claim another bot is running or that work was completed without a real receipt."
+  "prompt": "Resolve ambiguous targets using known owner intent and sourced evidence. Orange makes bounded decisions, records the selected source version and destination, and does not grant write permission. Orange Julius and Orange Peel are Orange roles. Speak directly and calmly to Kris. Never claim another bot ran or finished without a receipt."
  },
  "blue": {
-  "name": "Blue · Source importer",
-  "prompt": "Import authorized source data through approved adapters, preserve provenance and deduplicate verified records; never claim a database update without a provider receipt. Blueberry is a Blue role. Speak directly and calmly to Kris. Identify this role when relevant. Never claim another bot is running or that work was completed without a real receipt."
+  "name": "Blue · Verified transport",
+  "prompt": "Validate permitted source data and import it through existing scoped adapters. Distinguish a requested transfer from a confirmed provider write, source readback and assimilation; do not claim a database change from model prose. Blueberry is a Blue role. Speak calmly and directly to Kris."
  },
  "green": {
-  "name": "Green · Router and writer",
-  "prompt": "Route to the correct repository and write bounded implementation changes through authorized tools. Greenbeans is a Green role. Speak directly and calmly to Kris. Identify this role when relevant. Never claim another bot is running or that work was completed without a real receipt."
+  "name": "Green · Assembly and engineer",
+  "prompt": "Green represents overlapping Yellow discovery and verified Blue transport, or the authenticated engineer building a real repository artifact. Only a tested source commit earns build_committed; colored dots and model suggestions are not writes. Greenbeans uses the existing scoped writer and hands code to independent Pink review."
  },
  "red": {
-  "name": "Red · GPT research brain",
-  "prompt": "Use full GPT-level reasoning to understand the owner request, inspect available sources, reconcile evidence and assign only necessary follow-up work. A profile alone does not start an autonomous scanner. Speak directly and calmly to Kris. Identify this role when relevant. Never claim another bot is running or that work was completed without a real receipt."
+  "name": "Red · Shared context",
+  "prompt": "Maintain bounded, source-grounded context, select relevant sectors and verify any accepted Blue readback. Never rescan every repository for a known file repair. This profile is not a timer or an independent worker; a verified receipt is required for each source or destination action."
  },
  "yellow": {
-  "name": "Yellow · Micro reader",
-  "prompt": "Inspect details, tap targets, state changes and small defects. Yellow Jacket is a Yellow role. The requested scan cadence is 10 seconds; this profile alone does not start a timer. Speak directly and calmly to Kris. Identify this role when relevant. Never claim another bot is running or that work was completed without a real receipt."
+  "name": "Yellow · Source explorer",
+  "prompt": "Search and filter only relevant permitted source sectors with provenance and bounded effort. Yellow can discover another candidate while Blue transfers a previously approved one. A visible iteration requires an actual source receipt, not an animation or implied ten-second timer."
  },
  "pink": {
   "name": "Pink · Investigator",
@@ -511,7 +511,7 @@ const connections=create('div','ba-connect');
 connections.append(create('strong','','Connections'));
 const provider=create('p','ba-muted','Live now: Oracle Cloudflare AI. Owner Bot tools use your verified QuantaPhi Unified Wallet, not a separate ChatGPT login. Existing Android Bubbles can optionally authorize eligible ChatGPT plan responses.');
 const openai=create('a','ba-link','ChatGPT sign-in requirements ↗');openai.href='https://help.openai.com/en/articles/20001410-sign-in-with-chatgpt';openai.target='_blank';openai.rel='noopener noreferrer';
-const claude=create('a','ba-link','Claude third-party API requirements ↗');claude.href='https://support.claude.com/en/articles/13189465-log-in-to-your-claude-account';claude.target='_blank';claude.rel='noopener noreferrer';
+
 const github=create('a','ba-link','GitHub App permission model ↗');github.href='https://docs.github.com/en/apps/creating-github-apps/about-creating-github-apps/about-creating-github-apps';github.target='_blank';github.rel='noopener noreferrer';
 const gptConnect=create('button','ba-control ba-chatgpt-login','Continue with ChatGPT');
 gptConnect.type='button';gptConnect.hidden=!nativeOverlay;
@@ -522,7 +522,7 @@ gptConnect.addEventListener('click',()=>{
  if(nativeOverlay){nativeGPTSignInRequested=true;gptStatus.textContent='Opening the native Android ChatGPT permission flow. The website never receives your sign-in tokens.'}
  else{gptStatus.textContent='ChatGPT website sign-in requires an approved OpenAI OAuth client ID for QuantaPhi. Until registered, Bubbles uses Oracle; Android Bubbles has its own supported device-local sign-in.';}
 });
-connections.append(provider,gptConnect,gptStatus,openai,claude,github);
+connections.append(provider,gptConnect,gptStatus,openai,github);
 const connectedAccounts=create('details','ba-account-connections');
 connectedAccounts.append(create('summary','','Connect your accounts'));
 connections.append(connectedAccounts);
@@ -1080,6 +1080,9 @@ const actions=create('div','ba-actions');
 const mic=create('button','ba-mic','🎙 Enable listening');mic.type='button';mic.setAttribute('aria-pressed','false');
 const speak=create('button','ba-speak','🔇 Voice off');speak.type='button';speak.setAttribute('aria-pressed','false');
 const send=create('button','ba-send','Send');send.type='submit';
+// Keep Bubbles' original model and owner tools. A third-party website login is
+// not an authenticated API connection, so do not expose a non-working Claude choice.
+const modelChoice={value:'bubbles'};
 actions.append(photoRow,mic,speak,send);composer.append(input,photoPreview,actions);
 // Account connector pairing stays beside the message box in website and APK chat.
 const connectorCodeButton=create('button','ba-control ba-connector-code','Create one-time connection code');
@@ -2385,6 +2388,28 @@ async function consultExternalAi(question,mode='gemini_first',fromVoice=false,re
   else if(config.voice)speakText(completed?'AI consultation finished.':'AI consultation not confirmed.');}
  nativeSpeechPending=false;busy=false;send.disabled=false;setOrbState(voiceEnabled?'listening':'idle');drainVoiceTurns();
 }
+window.__bubblesRecentMessages=()=>messages.slice(-10).map(m=>({role:m.role,text:String(m.text||'').slice(0,600)}));
+// Claude steward: owner-verified Claude that can read source and prepare verified patches. Never deploys.
+async function askClaudeSteward(text,mode){
+ const steward=window.ClaudeSteward;
+ if(!steward||embedded||busy)return false;
+ busy=true;send.disabled=true;setOrbState('busy');
+ display(text,'you');messages.push({role:'user',text});persistChat();
+ let reply='',confirmed=false;
+ try{
+  const result=await steward.ask(text,{mode,evidence:window.__bubblesRecentMessages().slice(0,-1),inline:true});
+  confirmed=result?.ok===true&&typeof result.reply==='string'&&Boolean(result.reply.trim());
+  reply=confirmed?String(result.reply).slice(0,1500):'Claude did not confirm a response. Your draft is preserved; check existing Brain tickets before retrying.';
+  if(result?.patches?.length)reply+='\n\n'+result.patches.length+' proposed patch(es), verified against source but not applied. Open Claude to inspect details.';
+  if(result?.tickets?.length)reply+='\n\n'+result.tickets.map(ticket=>(ticket.deduplicated?'Existing ':'Recorded ')+String(ticket.status||'unknown')+' ticket '+ticket.id).join('; ')+'.';
+  if(result?.partial)reply+='\nClaude stopped early. The listed receipts are partial; no deployment was verified.';
+ }catch(error){reply='Claude steward not confirmed: '+String(error.message||error).slice(0,160)+'.';}
+ display(reply,'ai');messages.push({role:'assistant',text:reply});messages=messages.slice(-400);persistChat();
+ status.textContent=confirmed?'Claude steward replied.':'Claude response not confirmed. Your message remains in the composer.';
+ busy=false;send.disabled=false;setOrbState(voiceEnabled?'listening':'idle');
+ drainVoiceTurns();
+ return confirmed;
+}
 window.addEventListener('bubbles:ai-consult',event=>{
  if(embedded||busy||turnPending||!event?.detail?.question)return;
  if(!['gemini_first','gemini_claude_review','claude_only'].includes(event.detail.mode))return;
@@ -2407,6 +2432,30 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  let failedTurn=false;
  try{
  if(spoken&&await consumeOwnerCodeFromChat(spoken,fromVoice))return;
+ // A deliberate Claude choice applies to the main Bubbles composer and skips
+ // unrelated Oracle/tool routing. No text or attachments may be silently lost.
+ if(!embedded&&modelChoice.value==='claude'){
+  let decision;
+  try{
+   const {routeClaudeTurn}=await import('/bubbles-claude-routing.mjs?v=20261108-claude-choice1');
+   decision=routeClaudeTurn(modelChoice.value,spoken,Boolean(pendingImage||pendingImages.length));
+  }catch(error){
+   status.textContent='Claude routing unavailable: '+String(error.message||error).slice(0,110)+'. Your message was preserved.';
+   return;
+  }
+  if(decision?.mode==='unsupported_image'){
+   status.textContent='Claude currently accepts text only. Switch to Bubbles for attached images; the draft is preserved.';
+   return;
+  }
+  if(decision?.mode==='empty')return;
+  if(!window.ClaudeSteward){
+   status.textContent='Claude is not loaded on this page. No message was sent. Your draft is preserved.';
+   return;
+  }
+  const confirmed=await askClaudeSteward(decision.prompt,decision.mode);
+  if(confirmed)clearSentComposer();
+  return;
+ }
  // A new turn begins without granting credits; Personal Context must verify first.
  if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'turn_started'}}));
  // Read the separately authenticated Bubbles owner archive BEFORE routing tools.
@@ -2454,6 +2503,12 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     return;
    }
   }
+ const stewardAsk=/^(?:(?:hey|ok|okay|please)[,\s]+)*(?:bubbles[,\s]+)?(fix yourself|claude[,:]\s*[\s\S]{3,2400})$/i.exec(spoken);
+ if(stewardAsk&&window.ClaudeSteward&&!embedded){
+  clearSentComposer();
+  const fixing=/^fix yourself/i.test(stewardAsk[1]);
+  if(await askClaudeSteward(fixing?'Fix yourself. Find what Bubbles is getting wrong and prepare the fix.':stewardAsk[1].replace(/^claude[,:]\s*/i,''),fixing?'fix':'chat'))return;
+ }
  const aiConsult=/^(?:bubbles[, ]+)?ask (gemini then claude|gemini|claude)\s*:\s*([\s\S]{3,2400})$/i.exec(spoken);
  if(aiConsult){
   clearSentComposer();
@@ -2618,6 +2673,38 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
     nativeSpeechPending=false;busy=false;send.disabled=false;return;
    }
   }
+ }
+ // Registered Bubbles tool inventory is a first-party, read-only gateway operation.
+ // Do not burn model inference, open a provider popup, or impersonate owner
+ // authorization just to answer "what tools can you use?".
+ const nativeCapabilityDiscovery=!pendingImage&&await import('/bubbles-capability-intent.mjs?v=20261108-shared1')
+  .then(module=>module.isCapabilityDiscoveryQuestion(spoken)).catch(()=>false);
+ if(nativeCapabilityDiscovery){
+  busy=true;send.disabled=true;display(spoken,'you');clearSentComposer();setOrbState('thinking');
+  let reply,voiceSummary;
+  try{
+   const res=await bubblesFetch(AI,{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({request:spoken})},15000);
+   const json=await res.json().catch(()=>({}));
+   if(!res.ok||json.ok!==true||json.receipt?.tool!=='bubbles.capabilities'||json.receipt.status!=='complete')
+    throw Error('verified_capability_receipt_unavailable');
+   reply=String(json.output||'Bubbles found the registered tool directory.').slice(0,3000);
+   const matches=Array.isArray(json.recommendedCapabilities)?json.recommendedCapabilities:[];
+   const names=matches.slice(0,4).map(item=>String(item.title||item.id||'').slice(0,75)).filter(Boolean);
+   voiceSummary='I found '+(names.length?names.join(', '):'my registered tools')+
+    '. An actual tool receipt must confirm any execution. Owner GitHub and Cloudflare changes require authenticated work.';
+   if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',
+    {detail:{type:'tool_receipt',tool:json.receipt.tool,status:json.receipt.status,receiptId:json.receipt.id}}));
+  }catch(error){
+   reply='My live tool directory could not be verified. I have not checked or executed any owner GitHub, Cloudflare, or browser action.';
+   voiceSummary=reply;
+  }
+  display(reply,'ai');messages.push({role:'user',text:spoken},{role:'assistant',text:reply});
+  messages=messages.slice(-400);persistChat();status.textContent=voiceSummary.slice(0,250);
+  if(nativeOverlay&&fromVoice)nativeSpeechReply=voiceSummary;
+  else if(config.voice&&!nativeOverlay)speakText(voiceSummary);
+  nativeSpeechPending=false;busy=false;send.disabled=false;
+  setOrbState(voiceEnabled?'listening':'idle');drainVoiceTurns();return;
  }
  // General semantic route: GPT-OSS chooses among the ACTUAL card catalog
  // and one read-only phone observation. It does not execute model-generated
@@ -3916,9 +4003,17 @@ async function getOwnerToken(){
 }
 async function verifiedOwnerHeaders(){
  if(embedded)throw Error('Guest embed bubbles cannot access the owner Robot Brain.');
- if(ownerReady&&ownerHeaders)return ownerHeaders;
- if(!window.QuantaBrainOwner?.ready)throw Error('Robot Brain owner verification is unavailable on this page.');
- const headers=await Promise.race([window.QuantaBrainOwner.ready,new Promise(resolve=>setTimeout(()=>resolve(null),10000))]);
+ const bridge=window.QuantaBrainOwner;
+ if(ownerReady&&ownerHeaders){
+  const current=typeof bridge?.currentHeaders==='function'?bridge.currentHeaders():ownerHeaders;
+  if(current?.Authorization){ownerHeaders=current;return current;}
+  ownerReady=false;ownerHeaders=null;
+  throw Error('Robot Brain owner session expired; owner tools paused. Chat remains available.');
+ }
+ if(!bridge?.ready)throw Error('Robot Brain owner verification is unavailable on this page.');
+ const proposed=typeof bridge.currentHeaders==='function'?bridge.currentHeaders():null;
+ const waited=proposed||await Promise.race([bridge.ready,new Promise(resolve=>setTimeout(()=>resolve(null),10000))]);
+ const headers=typeof bridge.currentHeaders==='function'?bridge.currentHeaders():waited;
  if(!headers?.Authorization){ownerMode.textContent='Owner tools: not yet verified · say “connect owner tools” for details.';throw Error('Verify your owner Unified Wallet on QuantaPhi. No job was submitted.')}
  ownerHeaders=headers;ownerReady=true;workButton.hidden=nativeOverlay;
  ownerMode.textContent='Signed in to Bubbles & Robot Brain · Wallet verified';syncOwnerIdentity();
@@ -3944,6 +4039,16 @@ async function connectOwner(){
  // Populate actual owner repositories without making the owner open another page.
  if(!repositoryCatalogComplete&&!repositoryCatalogLoading)void loadRepositoryCatalog();
 }
+// Provider OAuth changes are independent of the Robot Brain owner session.
+// Never keep a stale privileged header or blank the current conversation.
+window.addEventListener('bubbles:owner-lost',()=>{
+ ownerReady=false;ownerHeaders=null;
+ ownerMode.textContent='Owner session needs verification · chat and history remain available.';
+ workButton.hidden=true;
+ workStatus.textContent='Owner-only operations paused. Reconnect the existing wallet; Cloudflare sign-in is separate.';
+ if(chatGate){chatGate.dataset.ownerVerified='false';chatGate.hidden=true;}
+});
+window.addEventListener('bubbles:owner-restored',()=>void connectOwner());
 // Two Red macro sectors share an authenticated, purpose-scoped channel.
 // Red-Bubbles observes, acknowledges and delegates approved actions; Red-Brain
 // records dispatch and signed runner receipts. Neither channel grants itself
