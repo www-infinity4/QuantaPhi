@@ -3,6 +3,7 @@
  * route or production bindings are installed by this module.
  */
 import {walletIdentity} from '../../bubbles-connections/router.mjs';
+import {handleEventConsent} from './consent-control.mjs';
 
 const ORIGINS = new Set(['https://quantaphi.org','https://www.quantaphi.org']);
 const EVENT_TYPES = new Set([
@@ -167,4 +168,8 @@ export async function handleWalletEventIngress(request,env) {
 }
 
 // Separately deployable Worker entrypoint: the site uses a private service binding.
-export default {fetch: handleWalletEventIngress};
+export default {fetch(request,env) {
+  return new URL(request.url).pathname==='/api/quant-events/consent'
+    ? handleEventConsent(request,env)
+    : handleWalletEventIngress(request,env);
+}};
