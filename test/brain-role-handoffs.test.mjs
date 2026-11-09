@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {routeColorHandoffs,runColorHandoffs} from '../workers/infinity-brain-clock/color-handoff.mjs';
+import {extractAssignedColorTask,routeColorHandoffs,runColorHandoffs} from '../workers/infinity-brain-clock/color-handoff.mjs';
 
 test('direct scoped repair goes to Green without repeated reading',()=>{
  assert.deepEqual(routeColorHandoffs('Fix bubbles-ai.js playback handler'),[]);
@@ -36,4 +36,13 @@ test('untrusted model output cannot grant write permissions or skip role validat
   toolRequests:['create-cloudflare-master-token']})}}};
  await assert.rejects(runColorHandoffs(ai,{task:'Import approved data',evidence:{}}),/unlisted_appendage/);
  await assert.rejects(runColorHandoffs(null,{task:'Research the architecture',evidence:{}}),/model_unavailable/);
+});
+
+test('authenticated scoped color task excludes generated execution-plan appendix',()=>{
+ const original='Research verified machine-vision tools for Bubbles';
+ const instructions=original+'\n\nExecution plan\n- step 1: draft a schema\n- step 2: inspect files';
+ assert.equal(extractAssignedColorTask(instructions),original);
+ assert.equal(extractAssignedColorTask('Fix bubbles-ai.js code'), 'Fix bubbles-ai.js code');
+ assert.equal(extractAssignedColorTask(''), '');
+ assert.equal(extractAssignedColorTask('x'.repeat(4000)).length,2400);
 });
