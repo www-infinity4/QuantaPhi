@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#20152e">
+<title>Interaction Privacy · QuantaPhi</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,-apple-system,Roboto,sans-serif;letter-spacing:.018em;background:#1e172a;color:#f8f4fb}
+*{box-sizing:border-box}body{margin:0;min-height:100svh;background:radial-gradient(circle at 15% 0%,#524065 0,transparent 43%),#1e172a}
+main{max-width:660px;margin:24px auto;padding:25px;border:1px solid #786591;border-radius:22px;background:#292038;box-shadow:0 12px 40px #100b1a80}
+nav{display:flex;justify-content:space-between;gap:10px;margin:0 auto;max-width:660px;padding:20px 16px 0}a{color:#e3c4f4;text-decoration-thickness:1px;text-underline-offset:4px}
+h1{font-size:clamp(27px,7vw,38px);line-height:1.17;margin:5px 0 14px}p,li{font-size:17px;line-height:1.65}
+.small{color:#d0c2d9;font-size:15px}.choices{border:1px solid #88749a;border-radius:14px;padding:16px;background:#342a44}
+label{display:flex;align-items:flex-start;gap:12px;font-size:17px;line-height:1.5;cursor:pointer}input[type=checkbox]{width:22px;height:22px;flex-shrink:0;accent-color:#b59dcb}
+.controls{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}button{font:inherit;font-size:17px;min-height:48px;min-width:130px;padding:10px 18px;border:1px solid #b1a0c1;border-radius:13px;color:#fff;background:#514064;cursor:pointer}
+button.secondary{background:transparent}button:disabled{opacity:.48;cursor:not-allowed}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6b6f9;outline-offset:3px}
+#status{padding:12px 15px;border:1px solid #7a6a87;border-radius:11px;min-height:52px;margin-top:18px;background:#211a2c}
+@media(max-width:700px){main{margin:14px;padding:20px}nav{padding:15px 18px 0}}
+</style>
+<script defer src="/cloud-wallet-client.js?v=20261013-brain-bridge1"></script>
+<script type="module" src="/quant-events-privacy.mjs"></script>
+</head>
+<body>
+<nav aria-label="QuantaPhi"><a href="/bubbles-accounts.html">Account Connections</a><a href="/privacy.html">Privacy Policy</a></nav>
+<main>
+<p class="small">QuantaPhi · Account privacy</p>
+<h1>Interaction analytics preferences</h1>
+<p>Choose whether QuantaPhi may save your signed-in Quick Card views and actions to improve its own card experience. This is optional. The setting applies only to the proposed first-party Quant event collection service.</p>
+<p class="small">It does not control existing Google Analytics, AdSense, or your Wallet transaction records. Enabling this setting does not mint, spend or transfer coins. Location collection stays off.</p>
+<section class="choices" aria-labelledby="opt-in-heading">
+<h2 id="opt-in-heading">Optional first-party analytics</h2>
+<label><input id="analytics-consent" type="checkbox" disabled><span>I agree to allow QuantaPhi to record my signed-in Quick Card interactions for first-party analytics under policy v1.</span></label>
+<div class="controls">
+<button id="save-consent" type="button" disabled>Allow analytics</button>
+<button id="revoke-consent" type="button" class="secondary" disabled>Turn off analytics</button>
+<button id="refresh-consent" type="button" class="secondary">Check status</button>
+</div>
+</section>
+<div id="status" role="status" aria-live="polite">Checking availability…</div>
+<p class="small">Turning analytics off stops future consented collection through the event bridge once deployed. Events already accepted or stored require separate retention and deletion controls; these are not yet live. The event service remains disabled until reviewed and deployed.</p>
+</main>
+</body>
+</html>
