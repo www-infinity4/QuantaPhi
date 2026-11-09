@@ -59,3 +59,16 @@ test('owner requests to repair Bubbles speech and GitHub/Cloudflare coding use a
  assert.match(ui,/if\(nativeOverlay&&nativeSpeechPending\)nativeSpeechReply=workEvidence/);
  assert.match(ui,/else if\(config.voice&&!nativeOverlay\)speakText\(workEvidence\)/);
 });
+
+test('spoken Cloudflare Worker repair and deployment instructions route to signed Brain work rather than chat',async()=>{
+ const {createRequire}=await import('node:module');
+ const require=createRequire(import.meta.url);
+ const brain=require('../bubbles-brain-actions.js');
+ for(const command of ['Fix the Cloudflare Worker for Bubbles','Deploy the Cloudflare Worker for Bubbles','Please repair the Cloudflare deployment']){
+  assert.equal(brain.classify(command),'queue',command);
+ }
+ assert.equal(brain.firstPartyRepairTarget('Deploy the Cloudflare Worker for Bubbles'),'www-infinity4/QuantaPhi');
+ for(const question of ['What is Cloudflare?','How does a Cloudflare Worker deploy?','Do not deploy the Cloudflare Worker']){
+  assert.equal(brain.classify(question),'chat',question);
+ }
+});
