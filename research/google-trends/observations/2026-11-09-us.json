@@ -3,188 +3,153 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T02:30:51.319417Z",
+  "checked_at": "2026-11-09T03:01:25.285064Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "terremoto",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-09T02:10:00Z",
-      "related_news_urls": [
-        "https://www.telemundo51.com/noticias/mundo/terremoto-sacude-centro-japon-heridos/2846250/",
-        "https://www.univision.com/noticias/mundo/un-terremoto-de-magnitud-preliminar-de-5-7-sacude-japon-reportan-al-menos-22-personas-heridas",
-        "https://www.semana.com/mundo/articulo/videos-muestran-los-momentos-de-angustia-que-vivio-japon-tras-fuerte-terremoto-que-dejo-varios-heridos/202623/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAko_uZi6CcpjLs0BoeEs3NKmGuVcrNjMX7F4h2z99K1eHsKOumC3bwmVToJU",
-      "image_credit": "Telemundo Miami (51)",
-      "news": [
-        {
-          "url": "https://www.telemundo51.com/noticias/mundo/terremoto-sacude-centro-japon-heridos/2846250/",
-          "title": "Al menos 22 heridos tras terremoto de 5.5 en el centro de Japón",
-          "publisher": "Telemundo Miami (51)",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAko_uZi6CcpjLs0BoeEs3NKmGuVcrNjMX7F4h2z99K1eHsKOumC3bwmVToJU"
-        },
-        {
-          "url": "https://www.univision.com/noticias/mundo/un-terremoto-de-magnitud-preliminar-de-5-7-sacude-japon-reportan-al-menos-22-personas-heridas",
-          "title": "Un terremoto de magnitud preliminar de 5.7 sacude Japón; reportan al menos 22 personas heridas",
-          "publisher": "Univision",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhATw2ptlu-EX4uWZiPfFUJEXVzvSW9yqlGzrtzAsSCutZz3HBz3IHh5itfjg"
-        },
-        {
-          "url": "https://www.semana.com/mundo/articulo/videos-muestran-los-momentos-de-angustia-que-vivio-japon-tras-fuerte-terremoto-que-dejo-varios-heridos/202623/",
-          "title": "Videos muestran los momentos de angustia que vivió Japón tras fuerte terremoto que dejó varios heridos",
-          "publisher": "Revista Semana",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWOmwzDxPFaCeq0p1nHsC2DL98c_HCjvcgFshanDg29KhAJS96jlLulONN3xY"
-        }
-      ]
-    },
-    {
-      "query": "iran strikes",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-09T02:10:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/08/trump-iran-strikes-unlikely-talks-hormuz.html",
-        "https://timesofindia.indiatimes.com/business/international-business/brent-crude-falls-over-1-as-trump-signals-fresh-us-strikes-on-iran-are-unlikely/articleshow/135667845.cms",
-        "https://www.cnn.com/2026/11/08/politics/trump-interview-on-iran"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUWT9kdllNKpk6kvCht3pip9w_Sen6jvt8hL1yCDJ8xGv0WQ_X4-jry-KqEyY",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/08/trump-iran-strikes-unlikely-talks-hormuz.html",
-          "title": "Trump says renewed Iran strikes ‘highly unlikely’ if talks progress but warns he could still strike",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUWT9kdllNKpk6kvCht3pip9w_Sen6jvt8hL1yCDJ8xGv0WQ_X4-jry-KqEyY"
-        },
-        {
-          "url": "https://timesofindia.indiatimes.com/business/international-business/brent-crude-falls-over-1-as-trump-signals-fresh-us-strikes-on-iran-are-unlikely/articleshow/135667845.cms",
-          "title": "Brent crude falls over $1 as Trump signals fresh US strikes on Iran are unlikely",
-          "publisher": "The Times of India",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWOFLW4RYCiPAWtnrYKbS5N9iMR1FAIK0s6mBm11qCiXqbK6y8ifZWAVd_rPw"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/08/politics/trump-interview-on-iran",
-          "title": "Trump says renewed attacks on Iran “highly unlikely” if talks show progress",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8raRHnDh84OFnTEj7ow4UYUzKcuKX_FDQf3qrHCb-Lzu219sSZ0rp4qAIM8M"
-        }
-      ]
-    },
-    {
-      "query": "kalif raymond",
+      "query": "ayo dosunmu",
       "approx_searches": "1000+",
-      "published_at": "2026-11-09T02:10:00Z",
+      "published_at": "2026-11-09T02:40:00Z",
       "related_news_urls": [
-        "https://www.chicagotribune.com/2026/11/08/chicago-bears-kalif-raymond-greatest-teammate/",
-        "https://www.chicitysports.com/chicago-bears-free-agency-addition-fitting-ben-johnson-plans-perfectly/",
-        "https://beargoggleson.com/bears-free-agent-check-in-tyrique-stevenson-on-thin-ice-kalif-raymond-steps-up"
+        "https://www.minnpost.com/sports/timberwolves/2026/11/the-dosunmu-dash-im-not-going-to-lie-thats-just-god/",
+        "https://www.aol.com/articles/ayo-dosunmu-stories-explain-chris-221555000.html",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/05/ayo-dosunmu-i-know-i-came-here-at-the-trade-deadline/92634696007/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHnwMv_R1pZJyIEoAarN5BHt7uqfjDkv1c3KoeGrJJrPf9WiCvnzMRZzy4Qlw",
-      "image_credit": "Chicago Tribune",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDQQKUzStP9S9BG-G0Kre4Eypr3QoWviMRxYNLE-BppfYBB5JCQMzDitCPowQ",
+      "image_credit": "MinnPost",
       "news": [
         {
-          "url": "https://www.chicagotribune.com/2026/11/08/chicago-bears-kalif-raymond-greatest-teammate/",
-          "title": "Column: Kalif Raymond arrived as ‘the greatest teammate’ and a playmaker. The Chicago Bears are seeing why.",
-          "publisher": "Chicago Tribune",
+          "url": "https://www.minnpost.com/sports/timberwolves/2026/11/the-dosunmu-dash-im-not-going-to-lie-thats-just-god/",
+          "title": "The Dosunmu Dash: “I’m not going to lie, that’s just God.”",
+          "publisher": "MinnPost",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHnwMv_R1pZJyIEoAarN5BHt7uqfjDkv1c3KoeGrJJrPf9WiCvnzMRZzy4Qlw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDQQKUzStP9S9BG-G0Kre4Eypr3QoWviMRxYNLE-BppfYBB5JCQMzDitCPowQ"
         },
         {
-          "url": "https://www.chicitysports.com/chicago-bears-free-agency-addition-fitting-ben-johnson-plans-perfectly/",
-          "title": "Chicago Bears free agency addition fitting Ben Johnson plans perfectly",
-          "publisher": "ChiCitySports",
+          "url": "https://www.aol.com/articles/ayo-dosunmu-stories-explain-chris-221555000.html",
+          "title": "Ayo Dosunmu’s Stories Explain Chris Finch’s ‘Bad Blood’ Remark",
+          "publisher": "AOL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3YeEelQhp5CVmml6gqqSGnDofvJdfiwjyJuD2fWF78dBnggTLn9Mc4xUSSJU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnHUDXO7wt8qQOG6-MgTsEaNhom8IXXe5WChlYDFi9kq59FMRWGVuZlEYP3zM"
         },
         {
-          "url": "https://beargoggleson.com/bears-free-agent-check-in-tyrique-stevenson-on-thin-ice-kalif-raymond-steps-up",
-          "title": "Bears free agent check-in: Tyrique Stevenson on thin ice, Kalif Raymond steps up",
-          "publisher": "Bear Goggles On",
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/05/ayo-dosunmu-i-know-i-came-here-at-the-trade-deadline/92634696007/",
+          "title": "Ayo Dosunmu: I know I came here at the trade deadline …",
+          "publisher": "HoopsHype",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHVebQ7PKvx6TS3qx_yO9OJ7wgKhunpgNmVxrqtPW-6XfLOpWx6I3j55POrVc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUFRKU3E3O0XL2Z8V_0g9yi67GWLM0vWUcl54b86fUjXq0z1ecGOtmsJ4GW6w"
         }
       ]
     },
     {
-      "query": "field goal",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-09T02:10:00Z",
+      "query": "skye nicolson",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T02:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50427823/reid-no-decision-harrison-butker-chiefs-future",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/andy-reid-on-harrison-butker-im-not-making-any-decisions-right-now",
-        "https://www.kctv5.com/2026/11/08/arrowhead-fans-boo-butker-after-latest-miss/"
+        "https://www.boxingnews24.com/boxing-shorts/watch/vjzz1sp_o7o/",
+        "https://sports.yahoo.com/articles/miyo-yoshida-fights-third-division-234251864.html",
+        "https://www.idahostatejournal.com/sports/national/yoshida-nicolson-boxing/image_d9b32604-f74a-5e35-af88-9fa702a24956.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTDlIgsIKjNPUE1jeXFkKkfXlfelHLRDQ15wGDBI1CW2yYqEKd025U-tL-ZP0",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOpIuOPQAFdqmbzhR9M0_93n6n9CBz2kWXrUAcYWTPHI315vyyfdSxeMiM1uE",
+      "image_credit": "Boxing News 24",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50427823/reid-no-decision-harrison-butker-chiefs-future",
-          "title": "Reid: No decision now on Harrison Butker's Chiefs future",
-          "publisher": "ESPN",
+          "url": "https://www.boxingnews24.com/boxing-shorts/watch/vjzz1sp_o7o/",
+          "title": "Skye Nicolson FLEXES on Miyo Yoshida at WEIGH-IN 💪",
+          "publisher": "Boxing News 24",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTDlIgsIKjNPUE1jeXFkKkfXlfelHLRDQ15wGDBI1CW2yYqEKd025U-tL-ZP0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOpIuOPQAFdqmbzhR9M0_93n6n9CBz2kWXrUAcYWTPHI315vyyfdSxeMiM1uE"
         },
         {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/andy-reid-on-harrison-butker-im-not-making-any-decisions-right-now",
-          "title": "Andy Reid on Harrison Butker: “I’m not making any decisions right now”",
+          "url": "https://sports.yahoo.com/articles/miyo-yoshida-fights-third-division-234251864.html",
+          "title": "Miyo Yoshida Fights For Third Division Title Sunday",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBsye8uTzQDT0dwKUatzHfvPCbXv1fqqG0vNmw_UCijLkwc2RampPn757pmbA"
+        },
+        {
+          "url": "https://www.idahostatejournal.com/sports/national/yoshida-nicolson-boxing/image_d9b32604-f74a-5e35-af88-9fa702a24956.html",
+          "title": "Yoshida Nicolson Boxing",
+          "publisher": "Idaho State Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8nqG7_gjmP8V-aJVpos68CKiwTappN7OE_pcfPB-v-maKF_iUaPrSjEkOeXE"
+        }
+      ]
+    },
+    {
+      "query": "mike evans",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-09T02:30:00Z",
+      "related_news_urls": [
+        "https://www.49ers.com/news/49ers-rule-out-three-wide-receivers-vs-raiders-bosa-returns-to-full-practice-ahead-of-week-9-lvvssf",
+        "https://www.si.com/nfl/49ers/onsi/49ers-receive-sobering-injury-update-mike-evans",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/garafolo-evans-questionable-at-best-for-week-10"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsN9PqYFzM-GlL4C7HWTRbhrGGXkkfFga9OihOTjzo2gIWXIsS2vixlmLwg9A",
+      "image_credit": "San Francisco 49ers",
+      "news": [
+        {
+          "url": "https://www.49ers.com/news/49ers-rule-out-three-wide-receivers-vs-raiders-bosa-returns-to-full-practice-ahead-of-week-9-lvvssf",
+          "title": "49ers Rule Out Three Wide Receivers vs. Raiders; Bosa Returns to Full Practice Ahead of Week 9 #LVvsSF",
+          "publisher": "San Francisco 49ers",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsN9PqYFzM-GlL4C7HWTRbhrGGXkkfFga9OihOTjzo2gIWXIsS2vixlmLwg9A"
+        },
+        {
+          "url": "https://www.si.com/nfl/49ers/onsi/49ers-receive-sobering-injury-update-mike-evans",
+          "title": "49ers Receive Sobering Injury Update on Mike Evans",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ66uLo1xCWY9YORofXa2ZboyAZbrz3X3Xyorc_x6_3VCIF5xT6O7lxOW8WIIQ"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/garafolo-evans-questionable-at-best-for-week-10",
+          "title": "Garafolo: Evans \"questionable at best\" for Week 10",
           "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUv4pZ6aUV__6SWsF_YFomQynzG0AFADN2AHG6S4_9qJQ6LVnfn8uHO-cGNOc"
-        },
-        {
-          "url": "https://www.kctv5.com/2026/11/08/arrowhead-fans-boo-butker-after-latest-miss/",
-          "title": "Arrowhead fans boo Butker after latest miss",
-          "publisher": "KCTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS79zvy_fFyvLrqCY72LjRYMTG9EyCbCvxpDTzZOs1DEltfqmj0syuBylZxOxo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3RVaM8V3d9KzydX-ekgxl_tVieN7rz_DJseUB4WkoqcttvMtEnsDzfeSMB2A"
         }
       ]
     },
     {
-      "query": "zyon mccollum",
+      "query": "nasa astronauts",
       "approx_searches": "500+",
-      "published_at": "2026-11-09T02:10:00Z",
+      "published_at": "2026-11-09T02:30:00Z",
       "related_news_urls": [
-        "https://www.joebucsfan.com/2026/11/will-definitely-tell-us-where-were-at/",
-        "https://www.nfl.com/videos/zyon-mccollum-secures-bucs-fourth-interception-of-the-day-against-michael-penix-jr",
-        "https://www.nbcsports.com/watch/nfl/chris-simms-unbuttoned/bucs-cb-zyon-mccollum-discusses-turnaround-experience-playing-in-monsoon"
+        "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/",
+        "https://www.npr.org/2026/11/08/nx-s1-6034002/nasa-astronaut-class-applications-2026",
+        "https://www.washingtonpost.com/nation/2026/11/08/nasa-opens-recruitment-its-next-generation-astronauts/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxjxuCyEnvUdKb0LgnHuU1Di3M9cunTq21Zf1zom6zbeTTTDPmNdxG6vBZBVw",
-      "image_credit": "JoeBucsFan.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQEmZCzrUxJFFzgFtuqhvPFOLkTXzcEODiMi4xgd7ZRAnLcU4VaM0n1_IgswQ",
+      "image_credit": "NASA (.gov)",
       "news": [
         {
-          "url": "https://www.joebucsfan.com/2026/11/will-definitely-tell-us-where-were-at/",
-          "title": "“Will Definitely Tell Us Where We’re At”",
-          "publisher": "JoeBucsFan.com",
+          "url": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/",
+          "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
+          "publisher": "NASA (.gov)",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxjxuCyEnvUdKb0LgnHuU1Di3M9cunTq21Zf1zom6zbeTTTDPmNdxG6vBZBVw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQEmZCzrUxJFFzgFtuqhvPFOLkTXzcEODiMi4xgd7ZRAnLcU4VaM0n1_IgswQ"
         },
         {
-          "url": "https://www.nfl.com/videos/zyon-mccollum-secures-bucs-fourth-interception-of-the-day-against-michael-penix-jr",
-          "title": "Zyon McCollum secures Bucs' fourth interception of the day against Michael Penix Jr.",
-          "publisher": "NFL.com",
+          "url": "https://www.npr.org/2026/11/08/nx-s1-6034002/nasa-astronaut-class-applications-2026",
+          "title": "NASA is looking for astronauts to live and work on the Moon",
+          "publisher": "NPR",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKn5ij5kluwEL9qCjftB10vmxUX_7SF6uBkTzPYozMRVYIcI21f2WyCKMcvug"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFcgxi6_NvzheSZeahgpSEC4DyF-bXTex8RCigIUQ0f2NDte40MecKsLzRd1A"
         },
         {
-          "url": "https://www.nbcsports.com/watch/nfl/chris-simms-unbuttoned/bucs-cb-zyon-mccollum-discusses-turnaround-experience-playing-in-monsoon",
-          "title": "McCollum: Bucs' monsoon both a dream and challenge",
-          "publisher": "NBC Sports",
+          "url": "https://www.washingtonpost.com/nation/2026/11/08/nasa-opens-recruitment-its-next-generation-astronauts/",
+          "title": "NASA opens recruitment for its next generation of astronauts",
+          "publisher": "The Washington Post",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRfFYjbBSrnsRWZQh3ZcmIvpAXA9VuzFbkV4BiXk4Inf27cBE8IeveztuB3nRU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlxUMKB5YLMED0KGG5j_yga4DYLVAUOVyKlSTIgaBHltmu1rJBVEDkNBneVOQ"
         }
       ]
     },
     {
-      "query": "bucks",
+      "query": "tyler herro",
       "approx_searches": "2000+",
-      "published_at": "2026-11-09T02:00:00Z",
+      "published_at": "2026-11-09T02:30:00Z",
       "related_news_urls": [
         "https://www.bostonglobe.com/2026/11/08/sports/celtics-bucks-preview-november-8-2026/",
         "https://www.celticsblog.com/boston-celtics-game-previews/149669/boston-celtics-7-2-at-milwaukee-bucks-1-8-game-10-11-8-26",
@@ -205,7 +170,7 @@
           "title": "Boston Celtics (7-2) at Milwaukee Bucks (1-8) Game #10 11/8/26",
           "publisher": "CelticsBlog",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOhp23olLGnvm25xdDFr16iBGSvKzuOJNw5jgVa_ZDBzEqs-WptlmUDxbW9xc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToumSlgBWXj6TkoCcoLz8cNYO-2ELJRCGyOego6BHexg40-wWOoR6ZpgFVRVY"
         },
         {
           "url": "https://sportsbook.fanduel.com/basketball/nba/boston-celtics-@-milwaukee-bucks-36286504",
@@ -217,142 +182,177 @@
       ]
     },
     {
-      "query": "roschon johnson",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T02:00:00Z",
+      "query": "cairo santos",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T02:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/videos/week-9-roschon-johnson-fantasy-181816561.html",
-        "https://www.fantasypros.com/nfl/news/617423/roschon-johnson-quiet-win-monday.php",
-        "https://www.cbssports.com/fantasy/football/news/bears-roschon-johnson-six-touches-as-no-2-back-in-week-8/"
+        "https://sports.yahoo.com/articles/patrick-mannelly-talks-heart-health-162428053.html",
+        "https://ontapsportsnet.com/nfl/chicago-bears/patrick-mannelly-heartflow-gamefilm-bears/",
+        "https://abc7chicago.com/post/bucs-bears-game-today-bucky-irving-tampa-bay-buccaneers-visit-dandre-swift-chicago-soldier-field/20024649/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjJzEmRjwQrCmUdgNui0QqC8b-AQp2wwHVdbIMJqc87XSMJk4by6_t8A4NwXE",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiSLh5d23I0aSStEc7InQDK1rmtTZlUh3k3rcFwdbObATkvow4DNh37kSKguc",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/videos/week-9-roschon-johnson-fantasy-181816561.html",
-          "title": "Week 9 Roschon Johnson Fantasy Start or Sit 2026",
+          "url": "https://sports.yahoo.com/articles/patrick-mannelly-talks-heart-health-162428053.html",
+          "title": "Patrick Mannelly talks heart health, Bears season, Cairo Santos & more",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjJzEmRjwQrCmUdgNui0QqC8b-AQp2wwHVdbIMJqc87XSMJk4by6_t8A4NwXE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiSLh5d23I0aSStEc7InQDK1rmtTZlUh3k3rcFwdbObATkvow4DNh37kSKguc"
         },
         {
-          "url": "https://www.fantasypros.com/nfl/news/617423/roschon-johnson-quiet-win-monday.php",
-          "title": "Roschon Johnson quiet in win Monday",
-          "publisher": "FantasyPros",
+          "url": "https://ontapsportsnet.com/nfl/chicago-bears/patrick-mannelly-heartflow-gamefilm-bears/",
+          "title": "Get Ahead of the Game: Patrick Mannelly on His Mom, His Heart, and What Former Players Can't See Coming",
+          "publisher": "On Tap Sports Net",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTI6B76hMFoOFey-4x6tWf7U8NknPFBiwQa5Kp0Gs2xvRlSvhQQfHih6m7tVPk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRp0qOO6gLzcJmGciAzSzHgMLdnQ9osnc_QbrUxxlONXNIaN_5QMYFynFzsJVk"
         },
         {
-          "url": "https://www.cbssports.com/fantasy/football/news/bears-roschon-johnson-six-touches-as-no-2-back-in-week-8/",
-          "title": "Bears' Roschon Johnson: Six touches as No. 2 back in Week 8",
-          "publisher": "CBS Sports",
+          "url": "https://abc7chicago.com/post/bucs-bears-game-today-bucky-irving-tampa-bay-buccaneers-visit-dandre-swift-chicago-soldier-field/20024649/",
+          "title": "Bucs-Bears game today: Bucky Irving and Tampa Bay Buccaneers visit D'Andre Swift and Chicago Bears at Soldier Field",
+          "publisher": "ABC7 Chicago",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRgtyhxGxEG7i2Okxt9MXO4tXkT6SYFeNJ2RsRVSTb2-axRU5x1XlHHfRx6NM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_5JQkiuAaztdj-75LCCAyrD8PDztsJ_w40A6UA4rsVaWXF4Yj6o1-eE6I3Ho"
         }
       ]
     },
     {
-      "query": "jaylon johnson",
+      "query": "shakira",
       "approx_searches": "500+",
-      "published_at": "2026-11-09T02:00:00Z",
+      "published_at": "2026-11-09T02:30:00Z",
       "related_news_urls": [
-        "https://bearswire.usatoday.com/story/sports/nfl/bears/2026/11/06/bears-malik-muhammad-jaylon-johnson-comments/92636263007/",
-        "https://sports.yahoo.com/articles/why-2027-nfl-draft-says-160003989.html",
-        "https://www.chicagotribune.com/2026/11/02/chicago-bears-jaylon-johnson-critics/"
+        "https://www.telemundo.com/shows/hoy-dia/famosos/video/captan-a-shakira-paseando-con-su-papa-por-las-calles-de-barranquilla-tmvo13242048",
+        "https://es-us.vida-estilo.yahoo.com/shakira-prepara-llegada-colombia-medio-213218679.html",
+        "https://www.marca.com/co/2026/11/09/shakira-conmueve-cuidar-padre-hospital-complicaciones-salud.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7udPigGGK5erkuW2Gd25RhxRWEsh8mWzub4VstFSWI1kF6L2N3ZvJFwaOt-A",
-      "image_credit": "Bears Wire",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsRmd_1VfbWGY7YA2LeyoGZ9GD_lBsBsK8eUV_0L3Rn6NxLCuyPusBNLoO7lY",
+      "image_credit": "Telemundo",
       "news": [
         {
-          "url": "https://bearswire.usatoday.com/story/sports/nfl/bears/2026/11/06/bears-malik-muhammad-jaylon-johnson-comments/92636263007/",
-          "title": "Bears rookie Malik Muhammad has strong words regarding Jaylon Johnson",
-          "publisher": "Bears Wire",
+          "url": "https://www.telemundo.com/shows/hoy-dia/famosos/video/captan-a-shakira-paseando-con-su-papa-por-las-calles-de-barranquilla-tmvo13242048",
+          "title": "Captan a Shakira paseando con su papá por las calles de Barranquilla",
+          "publisher": "Telemundo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7udPigGGK5erkuW2Gd25RhxRWEsh8mWzub4VstFSWI1kF6L2N3ZvJFwaOt-A"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsRmd_1VfbWGY7YA2LeyoGZ9GD_lBsBsK8eUV_0L3Rn6NxLCuyPusBNLoO7lY"
         },
         {
-          "url": "https://sports.yahoo.com/articles/why-2027-nfl-draft-says-160003989.html",
-          "title": "Why the 2027 NFL Draft Says Ryan Poles Must Trade for a Cornerback Now",
-          "publisher": "Yahoo Sports",
+          "url": "https://es-us.vida-estilo.yahoo.com/shakira-prepara-llegada-colombia-medio-213218679.html",
+          "title": "Shakira prepara su llegada a Colombia en medio de rumores sobre la salud de su padre",
+          "publisher": "Yahoo en Español Vida y Estilo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTYcNj-DXgi6IVhi-QXFk5DkK6nSOYAWiPdliJLesZtRUJoHJcP6vt7A1iOrU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFq3KjREa0z_iPkXYDOHLcMwLmy6aXbOdsowadDAuHr0LJLOTe47E4HHKk0oo"
         },
         {
-          "url": "https://www.chicagotribune.com/2026/11/02/chicago-bears-jaylon-johnson-critics/",
-          "title": "Amid outside noise, Chicago Bears CB Jaylon Johnson is his harshest critic: ‘I’ve just got to get it done’",
-          "publisher": "Chicago Tribune",
+          "url": "https://www.marca.com/co/2026/11/09/shakira-conmueve-cuidar-padre-hospital-complicaciones-salud.html",
+          "title": "Shakira conmueve al cuidar de su padre en el hospital tras complicaciones de salud",
+          "publisher": "MARCA",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzfgjnygTkC-z3gKRSMiyLwhVOH_fU-HOc-rsmCPh3fKQhd8p6vWYPrBIEjSc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIaCxufaOIocaaoJXPQlHzjMt-6cuw0V1GNYn3rkcvEd7EHkY7NKyag5AHEDg"
         }
       ]
     },
     {
-      "query": "universitario vs cd moquegua",
+      "query": "gilded age cast",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T02:30:00Z",
+      "related_news_urls": [
+        "https://people.com/meet-the-real-life-loves-the-gilded-age-season-4-cast-12236988",
+        "https://www.mentalfloss.com/entertainment/tv/real-historical-figures-gilded-ag",
+        "https://www.justjared.com/2026/11/08/the-gilded-age-cast-real-life-relationships-married-divorced-single/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2qhY_h6R7O-pRYiW3ClRBQMMWB8bpgLkz6UoaOy9bHHZA_8Ff0bVMgHWrBcc",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/meet-the-real-life-loves-the-gilded-age-season-4-cast-12236988",
+          "title": "Meet ‘The Gilded Age’ Season 4 Cast’s Real-Life Partners",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2qhY_h6R7O-pRYiW3ClRBQMMWB8bpgLkz6UoaOy9bHHZA_8Ff0bVMgHWrBcc"
+        },
+        {
+          "url": "https://www.mentalfloss.com/entertainment/tv/real-historical-figures-gilded-ag",
+          "title": "10 Real-Life Historical Figures in HBO’s 'The Gilded Age'",
+          "publisher": "Mental Floss",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRej4wZq-FN5NTRy7Wo0nZRbp5eHHeJ443QlielXoKxM6NVHX831SruFImHu4g"
+        },
+        {
+          "url": "https://www.justjared.com/2026/11/08/the-gilded-age-cast-real-life-relationships-married-divorced-single/",
+          "title": "'The Gilded Age' Cast Real-Life Relationships Revealed: Who's Married, Divorced or Single?",
+          "publisher": "Just Jared",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEFvewkZCLisSdi7yojjBUGonX2LNM_VqtcHJyUr5U5Pp4B40iO2ARaN5CEZs"
+        }
+      ]
+    },
+    {
+      "query": "karely ruiz",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T02:30:00Z",
+      "related_news_urls": [
+        "https://www.infobae.com/mexico/2026/11/08/karely-ruiz-denuncia-que-le-quitaron-su-ropa-interior-antes-de-entrar-a-la-mansion-vip-2-que-paso/",
+        "https://www.milenio.com/espectaculos/television/a-que-hora-empieza-la-mansion-vip-2-hoy-8-noviembre",
+        "https://www.tvynovelas.com/famosos/el-oscuro-pasado-de-bellakath-nueva-integrante-de-la-mansion-vip"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvsEzMYJb25RKfdCVHmF_D7df8L5MohinYQyK1f8Yy1MRMuwLueCCLJoyalXs",
+      "image_credit": "Infobae",
+      "news": [
+        {
+          "url": "https://www.infobae.com/mexico/2026/11/08/karely-ruiz-denuncia-que-le-quitaron-su-ropa-interior-antes-de-entrar-a-la-mansion-vip-2-que-paso/",
+          "title": "Karely Ruiz denuncia que le quitaron su ropa interior antes de entrar a La Mansión VIP 2: qué pasó",
+          "publisher": "Infobae",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvsEzMYJb25RKfdCVHmF_D7df8L5MohinYQyK1f8Yy1MRMuwLueCCLJoyalXs"
+        },
+        {
+          "url": "https://www.milenio.com/espectaculos/television/a-que-hora-empieza-la-mansion-vip-2-hoy-8-noviembre",
+          "title": "¿A qué HORA ver La Mansión VIP 2? Horario para ver el ESTRENO y el 24/7 del reality de HotSpanish",
+          "publisher": "MILENIO",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRALNQ9m_tqUTP5fiqKpvXK79K0R7EbmQ6wKMEm-tlx6sgD359AGtToLE7tDwM"
+        },
+        {
+          "url": "https://www.tvynovelas.com/famosos/el-oscuro-pasado-de-bellakath-nueva-integrante-de-la-mansion-vip",
+          "title": "El oscuro pasado de Bellakath, nueva integrante de La Mansión VIP",
+          "publisher": "TVyNovelas",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFRwVWhfkyamf5hv70tH9RBhatOssnsh1quZCl7lgksv1L3TY3hNGK4JJ0miE"
+        }
+      ]
+    },
+    {
+      "query": "sabonis",
       "approx_searches": "200+",
-      "published_at": "2026-11-09T02:00:00Z",
+      "published_at": "2026-11-09T02:30:00Z",
       "related_news_urls": [
-        "https://rpp.pe/futbol/descentralizado/universitario-vs-cd-moquegua-sin-alzugaray-lista-de-convocados-para-penultima-fecha-del-torneo-clausura-2026-liga1-noticia-1716634",
-        "https://depor.com/futbol-peruano/descentralizado/donde-ver-alianza-lima-vs-los-chankas-en-vivo-canales-de-tv-via-liga-1-max-directv-movistar-tv-futbol-libre-tv-liga-1-video-noticia/",
-        "https://betsson.sport/es/noticias/futbol/liga-1-peru/universitario-ante-una-nueva-oportunidad-el-clausura-no-admite-otro-tropiezo-antes-de-visitar-a-huancayo/"
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/domantas-sabonis-knee-questionable-sunday",
+        "https://www.rotowire.com/basketball/headlines/domantas-sabonis-injury-downgraded-to-questionable-sunday-538204",
+        "https://heatnation.com/team-news/heat-vs-kings-full-injury-report-released-ahead-of-sunday-matchup/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdFfjBpoHkBugWdUoD9GiKO1F6rD4v_iicyNx99LJq6XCbxasacPNKVx4OdOI",
-      "image_credit": "RPP Noticias",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR-F7-6Gxi7ptvY8d8P4Dlbgq56Tso1su6ZgMUZ6J800B-K5HU0-Au4in3eig",
+      "image_credit": "NBC Sports",
       "news": [
         {
-          "url": "https://rpp.pe/futbol/descentralizado/universitario-vs-cd-moquegua-sin-alzugaray-lista-de-convocados-para-penultima-fecha-del-torneo-clausura-2026-liga1-noticia-1716634",
-          "title": "Universitario sale a ganar: los convocados de la 'U' para el vital partido frente a CD Moquegua",
-          "publisher": "RPP Noticias",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/domantas-sabonis-knee-questionable-sunday",
+          "title": "Domantas Sabonis (knee) questionable Sunday",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdFfjBpoHkBugWdUoD9GiKO1F6rD4v_iicyNx99LJq6XCbxasacPNKVx4OdOI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR-F7-6Gxi7ptvY8d8P4Dlbgq56Tso1su6ZgMUZ6J800B-K5HU0-Au4in3eig"
         },
         {
-          "url": "https://depor.com/futbol-peruano/descentralizado/donde-ver-alianza-lima-vs-los-chankas-en-vivo-canales-de-tv-via-liga-1-max-directv-movistar-tv-futbol-libre-tv-liga-1-video-noticia/",
-          "title": "¿Dónde se vio Alianza Lima vs. Los Chankas (1-1) por el Torneo Clausura? Video, resumen y goles",
-          "publisher": "Depor",
+          "url": "https://www.rotowire.com/basketball/headlines/domantas-sabonis-injury-downgraded-to-questionable-sunday-538204",
+          "title": "Domantas Sabonis Injury: Downgraded to questionable Sunday",
+          "publisher": "RotoWire",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4R5t7vi4mHkho_WrPDR5uDeuZrhwMzDlWJg9eRArBHKCsgLCoE13kNgDvXuI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDEKKD1tc2MDOLzJn9PnVrOyaSUeFZeSYtPwF8ZH8hcfWzZY5MT9L-qiqxBzw"
         },
         {
-          "url": "https://betsson.sport/es/noticias/futbol/liga-1-peru/universitario-ante-una-nueva-oportunidad-el-clausura-no-admite-otro-tropiezo-antes-de-visitar-a-huancayo/",
-          "title": "Universitario, ante una nueva oportunidad: el Clausura no admite otro tropiezo antes de visitar a Huancayo",
-          "publisher": "betsson.sport",
+          "url": "https://heatnation.com/team-news/heat-vs-kings-full-injury-report-released-ahead-of-sunday-matchup/",
+          "title": "Heat vs. Kings full injury report released ahead of Sunday matchup",
+          "publisher": "Heat Nation",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAwFawPERpT8GwrmJwlEqnH9SnIRuvqrs_C2njs8TJzDI5Tgsvd7KgvT01Dqo"
-        }
-      ]
-    },
-    {
-      "query": "al michaels",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T01:50:00Z",
-      "related_news_urls": [
-        "https://www.cleveland.com/news/2026/11/al-michaels-4-minute-bedtime-story-on-thursday-night-football-gets-fans-talking.html",
-        "https://www.the-sun.com/sport/17265228/al-michaels-retire-thursday-night-football-jaguars-ravens/",
-        "https://www.essentiallysports.com/nfl-active-news-jaguars-al-michaels-under-fire-as-fans-call-for-retirement-over-major-broadcasting-error-during-jaguars-ravens-clash/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRTXXocx5c8_zfyV-TAaXQx2hLmOVnLWZq0WQRoBk_QCyzgVcxoc-D_oIbTYQ",
-      "image_credit": "Cleveland.com",
-      "news": [
-        {
-          "url": "https://www.cleveland.com/news/2026/11/al-michaels-4-minute-bedtime-story-on-thursday-night-football-gets-fans-talking.html",
-          "title": "Al Michaels’ 4-minute ‘bedtime story’ on Thursday Night Football gets fans talking",
-          "publisher": "Cleveland.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRTXXocx5c8_zfyV-TAaXQx2hLmOVnLWZq0WQRoBk_QCyzgVcxoc-D_oIbTYQ"
-        },
-        {
-          "url": "https://www.the-sun.com/sport/17265228/al-michaels-retire-thursday-night-football-jaguars-ravens/",
-          "title": "NFL fans beg Al Michaels to RETIRE after broadcaster struggles through TNF – ‘it’s time to hang it up’",
-          "publisher": "The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfs5dSo8ddVIMh-xd6cfo_cNbODDFI1Gej7dWvOpB-K8R0paAKL-5b1OSpaSA"
-        },
-        {
-          "url": "https://www.essentiallysports.com/nfl-active-news-jaguars-al-michaels-under-fire-as-fans-call-for-retirement-over-major-broadcasting-error-during-jaguars-ravens-clash/",
-          "title": "Al Michaels Under Fire as Fans Call for Retirement Over Major Broadcasting Error During Jaguars-Ravens Clash",
-          "publisher": "EssentiallySports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrgKB0RclFtRzQsbV5pNnICnv4JAdc49zfji0cl1vNzfSUx45bz5lBGf2FsyQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPufKxwQaQxfsJtFgvDUi3ShIDAwRmRK78d-DQCAs9-33ELH0JqDqH3DqiUSQ"
         }
       ]
     }
