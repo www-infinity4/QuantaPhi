@@ -11,8 +11,7 @@ const wallet='Explain whether this chat can verify StarCoin, Quant and Infinity-
 const channels='What real tool would verify that StarQuest, Omni TV, Chiller and ShopLC are playable now? Do not claim playback without browser evidence.';
 
 test('JSON and HTML draft-only replies pass syntax/structure, not GitHub writes',()=>{
- const json='\\`\\`\\`json\\n{"name":"test-ground-ai","version":"1.0.0","repository":"www-infinity4/QuantaPhi","capabilities":["read"]}\\n\\`\\`\\`'
-  .replaceAll('\\\\`','`');
+ const json = '```json\n{"name":"test-ground-ai","version":"1.0.0","repository":"www-infinity4/QuantaPhi","capabilities":["read"]}\n```';
  assert.equal(auditReply(probe('json'),{ok:true,output:json,receipt:receipt()}).state,'passed');
  assert.equal(auditReply(probe('index'),{ok:true,output:'<html><main><h1>Test Ground</h1><button>Go</button></main></html>',receipt:receipt()}).state,'passed');
  assert.equal(auditReply(probe('json'),{ok:true,output:'{bad-json}',receipt:receipt()}).state,'unverified');
