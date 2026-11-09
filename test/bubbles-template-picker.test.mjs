@@ -36,5 +36,5 @@ test('Bubbles main composer exposes Add Template without removing normal chat or
  assert.match(ui,/templateLibraryPanel\.hidden=true/);
  assert.match(ui,/input\.value=prompt/);
  const html=readFileSync(new URL('../bubbles.html',import.meta.url),'utf8');
- assert.match(html,/bubbles-ai\.js\?v=20261108-template-library1/);
+ assert.match(html,/bubbles-ai\.js\?v=20261108-native-bubbles3/);
 });

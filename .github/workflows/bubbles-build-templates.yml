@@ -17,6 +17,9 @@ on:
       - 'bubbles-ai.js'
       - 'bubbles-project-discovery.mjs'
       - 'bubbles-build-templates.mjs'
+      - 'bubbles-template-picker.mjs'
+      - 'test/bubbles-template-picker.test.mjs'
+      - 'bubbles.html'
       - 'scripts/bubbles-build-template-plan.mjs'
       - 'test/bubbles-build-templates.test.mjs'
 permissions:
@@ -37,6 +40,7 @@ jobs:
           node --check bubbles-ai.js
           node --check bubbles-project-discovery.mjs
           node --check bubbles-build-templates.mjs
+          node --check bubbles-template-picker.mjs
           node --check scripts/bubbles-build-template-plan.mjs
       - name: Test template matching, receipts and Bubbles project discovery
         run: |
