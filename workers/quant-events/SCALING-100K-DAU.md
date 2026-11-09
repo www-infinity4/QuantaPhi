@@ -22,11 +22,11 @@ Actual request RPS depends on the number of events per POST, client batching, re
 
 ## Ingestion and batching decisions
 
-1. **Ingress:** validate authenticated service principal; obtain user ID from the verified upstream identity, not arbitrary browser JSON. Enforce `queries` as a structured nonempty array, bounded body/event counts, normalized tags, and finite numbers. Assign `accepted_at_ms = Date.now()` once at ingress and preserve it on all retries.
+1. **Ingress:** validate authenticated service principal and separately verify the short-lived HMAC subject proof from the trusted existing sign-in adapter; reject unverified user ID; default to no location collection without both signed geo consent and server flag. Enforce `queries` as a structured nonempty array, bounded body/event counts, normalized tags, and finite numbers. Assign `accepted_at_ms = Date.now()` once at ingress and preserve it on all retries.
 2. **Queued path (`INGEST_MODE=queue`):** after successful `EVENT_QUEUE.send(...)`, respond HTTP 202 with `accepted` and `persisted:false`. If enqueue fails or binding is absent, return 503 (do not silently switch to direct). No client receives a fictitious D1 inserted receipt.
 3. **Consumer:** starting configuration: `max_batch_size=5` Queue messages, timeout 3 seconds, 8 retry attempts, a dead-letter queue, and max 2 consumers to start. The consumer can process up to 5 * 100 = 500 events via one atomic `DB.batch` of at most 40 prepared statements (5 user inserts + 5 * 7 multi-row event inserts). Actual D1 write serialization can still create a queue backlog; **benchmark before increasing concurrency**. A D1 failure throws so Queue retries; event primary keys make retry idempotent.
 4. **SQL statement:** group 16 events per `INSERT INTO events ... VALUES... ON CONFLICT(id) DO NOTHING`, 6 bound parameters per row = 96 values, under D1's current 100-bound-parameter limit. `users` uses `ON CONFLICT DO NOTHING` to avoid rewriting profile fields for every event request; first-seen geography is not ongoing geolocation. D1 `batch()` remains atomic at the consumer-invocation level.
-5. **Direct fallback:** retain `INGEST_MODE=direct` for staging/trusted internal callers only. It is an explicitly configured mode, not a fallback after a queue outage.
+5. **Direct mode:** retain `INGEST_MODE=direct` for staging/trusted internal callers only; missing/invalid modes fail 503, not a fallback after Queue outage.
 
 ### Cloudflare platform ceilings to verify before purchase/deploy
 
