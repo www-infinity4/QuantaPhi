@@ -1,0 +1,83 @@
+name: Quant Events private Worker staging (no production tracking)
+on:
+  pull_request:
+    paths: ['workers/quant-events/**', '.github/workflows/quant-events-worker-staging.yml']
+  push:
+    branches: [main]
+    paths: ['workers/quant-events/wrangler.staging.jsonc', 'workers/quant-events/src/ingest.ts', '.github/workflows/quant-events-worker-staging.yml']
+permissions:
+  contents: read
+concurrency:
+  group: quant-events-private-staging
+  cancel-in-progress: false
+jobs:
+  verify-and-stage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify private staging and Quant Events regressions
+        run: |
+          node --experimental-strip-types --test workers/quant-events/tests/*.test.mjs
+          python3 - <<'PY'
+          import json, pathlib
+          cfg=json.loads(pathlib.Path('workers/quant-events/wrangler.staging.jsonc').read_text())
+          assert cfg['name']=='quantaphi-quant-events-worker-staging'
+          assert cfg['main']=='src/ingest.ts'
+          assert cfg['workers_dev'] is False and cfg['routes']==[]
+          assert cfg['d1_databases'][0]['database_id']=='d87794f4-a150-469c-bf08-c1055807b145'
+          assert cfg['queues']['consumers'][0]['max_concurrency']==1
+          assert not cfg['queues'].get('producers')
+          assert not {'INGEST_TOKEN','USER_IDENTITY_HMAC_SECRET'} & set(cfg['vars'])
+          print('Staging-only bindings verified')
+          PY
+      - name: Build exact TypeScript Worker without deploying
+        run: |
+          npx --yes wrangler@4 deploy --config workers/quant-events/wrangler.staging.jsonc --dry-run --outdir /tmp/quant-events-staging
+          find /tmp/quant-events-staging -type f -name '*.js' -size +100c -print | grep -q .
+      - name: Deploy only after merge to main with scoped Cloudflare credentials
+        if: github.event_name == 'push'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          set -eo pipefail
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo '::error::Cloudflare credentials unavailable, no Worker deployed.'
+            exit 1
+          fi
+          test "$CLOUDFLARE_ACCOUNT_ID" = 'ef25728c096c6ba92cf510caa2058003'
+          npx --yes wrangler@4 deploy --config workers/quant-events/wrangler.staging.jsonc --keep-vars
+      - name: Verify D1 and consumer are limited to staging
+        if: github.event_name == 'push'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          set -eo pipefail
+          curl --silent --show-error --fail-with-body -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/scripts/quantaphi-quant-events-worker-staging/settings" -o /tmp/quant-events-worker.json
+          curl --silent --show-error --fail-with-body -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/queues/5ecd94ff71ce4bafb65443486813e5dd/consumers" -o /tmp/quant-events-consumers.json
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const s=JSON.parse(fs.readFileSync('/tmp/quant-events-worker.json','utf8'));
+          const q=JSON.parse(fs.readFileSync('/tmp/quant-events-consumers.json','utf8'));
+          if(!s.success||!q.success)throw Error('Cloudflare readback denied');
+          const bindings=new Map((s.result?.bindings||[]).map(b=>[b.name,b]));
+          if(bindings.get('DB')?.type!=='d1'||bindings.get('DB')?.id!=='d87794f4-a150-469c-bf08-c1055807b145')throw Error('Wrong D1 binding');
+          if(bindings.get('INGEST_MODE')?.text!=='queue')throw Error('Queue mode missing');
+          for(const k of ['INGEST_TOKEN','USER_IDENTITY_HMAC_SECRET','EVENT_QUEUE'])if(bindings.has(k))throw Error('Forbidden secret/producer: '+k);
+          if(!(q.result||[]).some(c=>c.type==='worker'&&c.script_name==='quantaphi-quant-events-worker-staging'))throw Error('Worker consumer not attached');
+          if((q.result||[]).some(c=>c.type==='http_pull'))throw Error('HTTP pull consumer not retired');
+          console.log('Isolated Worker, staging D1 and push consumer verified');
+          NODE
+      - name: Record truthful staging scope
+        if: always()
+        run: |
+          echo "## Quant Events staging: $GITHUB_SHA" >> "$GITHUB_STEP_SUMMARY"
+          echo "PR runs perform source tests and Wrangler dry-run only." >> "$GITHUB_STEP_SUMMARY"
+          echo "Push to main deploys only the private staging Worker, not customer tracking." >> "$GITHUB_STEP_SUMMARY"
