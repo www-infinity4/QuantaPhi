@@ -3,98 +3,231 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T22:31:03.121979Z",
+  "checked_at": "2026-11-09T23:01:25.780428Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "dj moore",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T22:10:00Z",
+      "query": "lakers vs hawks",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T22:40:00Z",
       "related_news_urls": [
-        "https://www.si.com/nfl/bills/onsi/week-9-injuries-monday-night-football-status-bills-dj-moore-dalton-kincaid-keon-coleman",
-        "https://www.democratandchronicle.com/story/sports/football/nfl/bills/2026/11/09/is-dj-moore-playing-today-bills-vikings-week-9/92676189007/",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-05/dj-moore-shoulder-limited-in-non-contact-jersey"
+        "https://www.silverscreenandroll.com/lakers-game-previews/128614/lakers-vs-hawks-discussion-injury-report-how-to-watch-tv-stream-start-time-luka-doncic-cj-mccolum",
+        "https://soaringdownsouth.com/doncic-absence-hawks-focus-towards-meeting",
+        "https://www.si.com/nba/hawks/onsi/los-angeles-lakers-atlanta-hawks-preview-injuries-odds-score-prediction-starters-01m6vq8h6r1v"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOovogWLH67Z-33wXR8uZ-nDAAprA5c7oXhTml8nTRXllcfb3rUwp-OZsq4-o",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCMWdjXGGqK9uGF_mjPEBPEPzObanXJVcB0Hk1MTqey0xNX-Ims5QekZtdj-U",
+      "image_credit": "Silver Screen and Roll",
+      "news": [
+        {
+          "url": "https://www.silverscreenandroll.com/lakers-game-previews/128614/lakers-vs-hawks-discussion-injury-report-how-to-watch-tv-stream-start-time-luka-doncic-cj-mccolum",
+          "title": "Lakers vs. Hawks Preview: Streaking teams collide",
+          "publisher": "Silver Screen and Roll",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCMWdjXGGqK9uGF_mjPEBPEPzObanXJVcB0Hk1MTqey0xNX-Ims5QekZtdj-U"
+        },
+        {
+          "url": "https://soaringdownsouth.com/doncic-absence-hawks-focus-towards-meeting",
+          "title": "Luka Doncic absence should concern Hawks as focus shifts towards their meeting",
+          "publisher": "Soaring Down South",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWVhBKhJ2mzMbGnCTBV0ty8iaUeUtXu3ls77thct5rgw9O8qrzHFSwln4LNF4"
+        },
+        {
+          "url": "https://www.si.com/nba/hawks/onsi/los-angeles-lakers-atlanta-hawks-preview-injuries-odds-score-prediction-starters-01m6vq8h6r1v",
+          "title": "Los Angeles Lakers - Atlanta Hawks Preview: Injuries, Odds, Score Prediction & Starters",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJ7DdbAqigAEKTJT4NduoTpQfTfAAGzW63fqtDOc_4zhPe6U348wfmihT3JXE"
+        }
+      ]
+    },
+    {
+      "query": "2027 nfl mock draft",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T22:40:00Z",
+      "related_news_urls": [
+        "https://www.si.com/nfl/draft/onsi/news/2027-nfl-mock-draft-first-round-projection-looks-completely-different",
+        "https://www.foxsports.com/stories/nfl/2027-nfl-mock-draft-drew-mestemaker-first-6-qbs-selected-first-round",
+        "https://www.sbnation.com/nfl/1135599/2027-draft-chargers-titans-dolphins-jets"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRETsO4Q77dP4uwqk1w0Kk8jrZKqZWPKDeFF2kRv2N0e9Gyt7sJw1esYbQ2KVk",
       "image_credit": "Sports Illustrated",
       "news": [
         {
-          "url": "https://www.si.com/nfl/bills/onsi/week-9-injuries-monday-night-football-status-bills-dj-moore-dalton-kincaid-keon-coleman",
-          "title": "Monday Night Football Injury Status for Bills' DJ Moore, Dalton Kincaid, Keon Coleman",
+          "url": "https://www.si.com/nfl/draft/onsi/news/2027-nfl-mock-draft-first-round-projection-looks-completely-different",
+          "title": "2027 NFL Mock Draft: First-Round Projection Looks Completely Different",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOovogWLH67Z-33wXR8uZ-nDAAprA5c7oXhTml8nTRXllcfb3rUwp-OZsq4-o"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRETsO4Q77dP4uwqk1w0Kk8jrZKqZWPKDeFF2kRv2N0e9Gyt7sJw1esYbQ2KVk"
         },
         {
-          "url": "https://www.democratandchronicle.com/story/sports/football/nfl/bills/2026/11/09/is-dj-moore-playing-today-bills-vikings-week-9/92676189007/",
-          "title": "Is D.J. Moore playing today? Latest on Bills receiver for Week 9",
-          "publisher": "Democrat and Chronicle",
+          "url": "https://www.foxsports.com/stories/nfl/2027-nfl-mock-draft-drew-mestemaker-first-6-qbs-selected-first-round",
+          "title": "2027 NFL Mock Draft: Drew Mestemaker First Of 6 QBs Selected In First Round",
+          "publisher": "FOX Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYaHCYa59RAgSPTJM3pvdPQhiqHe7kV5WZ8zHT_bgJVTWT4ebf12cX-W5kTI4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBvyMb43dvMvLmSCQYMZ5oCLS2vnX6Z-q5USyX3c5BJaD_p1IyMYMTdnV-Cdw"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-05/dj-moore-shoulder-limited-in-non-contact-jersey",
-          "title": "DJ Moore (shoulder) limited in non-contact jersey",
-          "publisher": "NBC Sports",
+          "url": "https://www.sbnation.com/nfl/1135599/2027-draft-chargers-titans-dolphins-jets",
+          "title": "Chargers remain in control for the first pick in 2027 NFL Draft",
+          "publisher": "SB Nation",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScgDA9BjQeoY7DUdFF_oM50x6SCyvAWNCjj3aP0P76X6r7LfwyMn1tJhvwU5M"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpbQTExu5UAhFf_vFbo0extU9EcHh5xBvKd9_QCTCDh4tFSnBPHvZYBcW7Kjw"
         }
       ]
     },
     {
-      "query": "mirra andreeva",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T22:10:00Z",
+      "query": "michael carrick",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-09T22:30:00Z",
       "related_news_urls": [
-        "https://athlonsports.com/tennis/mirra-andreeva-dating-history-does-the-tennis-star-have-a-boyfriend",
-        "https://www.nytimes.com/athletic/7764226/2026/11/09/wta-finals-coco-gauff-jessica-pegula-hot-mic/",
-        "https://www.theguardian.com/sport/2026/nov/05/wta-finals-jessica-pegula-mirra-andreeva-hot-mic-diva-apology"
+        "https://www.nytimes.com/athletic/7768165/2026/11/09/michael-carrick-sacked-manchester-united/",
+        "https://www.espn.com/soccer/story/_/id/50430657/transfer-rumors-news-man-united-hire-usmnt-pochettino-replace-carrick",
+        "https://www.theguardian.com/football/2026/nov/09/manchester-united-michael-carrick-jason-wilcox-review-sacking"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCaEwu165DzdC4xWYRLRkOZghPDOzv62uFkP2izFX2BT7udwN5XwoRwwi2P-k",
-      "image_credit": "Athlon Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIIc4G5fgXoPZaSID6hCVjJZsR68CVt51zhuVm5RulqX1m86dIKLU6v6TddHQ",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://athlonsports.com/tennis/mirra-andreeva-dating-history-does-the-tennis-star-have-a-boyfriend",
-          "title": "Mirra Andreeva Dating History: Does the Tennis Star Have a Boyfriend?",
-          "publisher": "Athlon Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCaEwu165DzdC4xWYRLRkOZghPDOzv62uFkP2izFX2BT7udwN5XwoRwwi2P-k"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7764226/2026/11/09/wta-finals-coco-gauff-jessica-pegula-hot-mic/",
-          "title": "Why Coco Gauff did her talking about the WTA Finals hot mic on the court",
+          "url": "https://www.nytimes.com/athletic/7768165/2026/11/09/michael-carrick-sacked-manchester-united/",
+          "title": "Manchester United expected to sack Michael Carrick as head coach - The Athletic",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc3uvtDT2vviDy4wT5JtIqFJpqKnS8x2Z1em9qG8LX3FznInXs-hwXojFbshc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIIc4G5fgXoPZaSID6hCVjJZsR68CVt51zhuVm5RulqX1m86dIKLU6v6TddHQ"
         },
         {
-          "url": "https://www.theguardian.com/sport/2026/nov/05/wta-finals-jessica-pegula-mirra-andreeva-hot-mic-diva-apology",
-          "title": "WTA apologizes after hot mic captures Pegula’s ‘diva’ remarks about Andreeva",
+          "url": "https://www.espn.com/soccer/story/_/id/50430657/transfer-rumors-news-man-united-hire-usmnt-pochettino-replace-carrick",
+          "title": "Transfer rumors, news: Man United to hire USMNT's Pochettino to replace Carrick?",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6CZFfj1qeDvQFhE40Ic-5UDYPc4uNbONw3-RbqHJ7C4dIiyPd80qksk6AirY"
+        },
+        {
+          "url": "https://www.theguardian.com/football/2026/nov/09/manchester-united-michael-carrick-jason-wilcox-review-sacking",
+          "title": "Michael Carrick facing Manchester United axe amid review by Jason Wilcox",
           "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbn8Dbn6pkEYhhTGRNsVrxPN4HIsaBzlyGrkA_Uqtjm57V0-X0WM9iCWouBtI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSG1k-z-h7hXChHhgBf5xpsX0mC_SpgHKZx-E59rdeKYlZ-XmQJUAJAEubFYc"
         }
       ]
     },
     {
-      "query": "how long is puka out for",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T22:10:00Z",
+      "query": "sony playstation handheld",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-09T22:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/steelers-trade-brian-thomas-jr-203046057.html",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/report-sounds-like-jags-will-listen-to-btj-offers",
-        "https://bleacherreport.com/articles/25530668-new-nfl-trade-rumors-brian-thomas-jr-josh-downs-calvin-ridley-amid-chiefs-steelers-buzz"
+        "https://www.theverge.com/news/1029822/sony-playstation-portal-japan-model-additional-storage",
+        "https://kotaku.com/sony-playstation-portal-japan-only-internal-storage-ps5-streaming-2000754915",
+        "https://www.ign.com/articles/sony-launches-new-ps-portal-model-in-japan-with-internal-storage-for-future-functionality-changes-official-name"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk39GpPhy1biCmo21YSB5Z7d1C8YTvDoKcCUajwJVb7xKo43E0-sgr0GBL2tw",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLaSJVcoXVKSeAjjdL8RT6yLpX02pmiYBVgmZHy42D9ltGzZCO_-7TMpXi7Jg",
+      "image_credit": "The Verge",
+      "news": [
+        {
+          "url": "https://www.theverge.com/news/1029822/sony-playstation-portal-japan-model-additional-storage",
+          "title": "Sony’s new PlayStation Portal handheld includes ‘additional’ internal storage",
+          "publisher": "The Verge",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLaSJVcoXVKSeAjjdL8RT6yLpX02pmiYBVgmZHy42D9ltGzZCO_-7TMpXi7Jg"
+        },
+        {
+          "url": "https://kotaku.com/sony-playstation-portal-japan-only-internal-storage-ps5-streaming-2000754915",
+          "title": "Sony Announces New Japan-Only PlayStation Portal With Internal Storage",
+          "publisher": "Kotaku",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzNnCPXRgB6gRgDXsCU00gbG5-xCsxeKxNJdQHW5VLH80de1zPMmJK5FJNUAM"
+        },
+        {
+          "url": "https://www.ign.com/articles/sony-launches-new-ps-portal-model-in-japan-with-internal-storage-for-future-functionality-changes-official-name",
+          "title": "Sony Launches New PS Portal Model in Japan With Internal Storage for 'Future Functionality,' Changes Official Name",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-NEhbxfNXSstvTNdPkG_zFX3dJTnynU15bvctPf6lxMDPefGieLas32YLFJM"
+        }
+      ]
+    },
+    {
+      "query": "rick hendrick denny hamlin chevrolet dispute",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-09T22:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/rick-hendrick-publicly-trashes-denny-165255933.html",
+        "https://www.nascar.com/news-media/2026/11/06/craftsman-truck-series-clinched-2026-title-homestead-miami/",
+        "https://www.jayski.com/2026/11/06/truck-series-championship-race-post-race-inspection-report/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzFar-u2FwloMRro0KxY1SOyVtLWE3kBLNVJhYFlqmz0F4zrWKG9_XA1jZ8rw",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/steelers-trade-brian-thomas-jr-203046057.html",
-          "title": "Will Steelers trade for Brian Thomas Jr.? What fans should know",
+          "url": "https://sports.yahoo.com/articles/rick-hendrick-publicly-trashes-denny-165255933.html",
+          "title": "Rick Hendrick Publicly Trashes Denny Hamlin’s Chevrolet - HMS Favoritism Claims",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk39GpPhy1biCmo21YSB5Z7d1C8YTvDoKcCUajwJVb7xKo43E0-sgr0GBL2tw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzFar-u2FwloMRro0KxY1SOyVtLWE3kBLNVJhYFlqmz0F4zrWKG9_XA1jZ8rw"
         },
+        {
+          "url": "https://www.nascar.com/news-media/2026/11/06/craftsman-truck-series-clinched-2026-title-homestead-miami/",
+          "title": "Honeycutt storms through Chase to clinch first Truck Series title",
+          "publisher": "NASCAR.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRALmvvNmRfbuYCAuxLR6EPG3xzByuWc-Q8I2rpAx5xdpsunv_zwxvZUMFxrJg"
+        },
+        {
+          "url": "https://www.jayski.com/2026/11/06/truck-series-championship-race-post-race-inspection-report/",
+          "title": "Truck Series Championship Race post-race inspection report",
+          "publisher": "Jayski",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEIXu6iFNINeg21BYDsyIzCU50g9Dw2ew-Z_oHNrlXxVSQCwhX2Wlie0DCpuc"
+        }
+      ]
+    },
+    {
+      "query": "elina svitolina",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T22:30:00Z",
+      "related_news_urls": [
+        "https://athlonsports.com/tennis/how-to-watch-mirra-andreeva-vs-elina-svitolina-wta-finals-start-time-live-streaming",
+        "https://www.sportytrader.com/us/picks/mirra-andreeva-elina-svitolina-386426/",
+        "https://tennisuptodate.com/wta/live-wta-finals-mirra-andreeva-to-open-campaign-against-elina-svitolina"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzlDk5QdbjVWrt-oVEdrF2g2j1uq3Uuzrb5h7xkafx0Wd0tVCOu7hIkb2XA4s",
+      "image_credit": "Athlon Sports",
+      "news": [
+        {
+          "url": "https://athlonsports.com/tennis/how-to-watch-mirra-andreeva-vs-elina-svitolina-wta-finals-start-time-live-streaming",
+          "title": "What Time Does Mirra Andreeva vs Elina Svitolina WTA Finals Match Start?",
+          "publisher": "Athlon Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzlDk5QdbjVWrt-oVEdrF2g2j1uq3Uuzrb5h7xkafx0Wd0tVCOu7hIkb2XA4s"
+        },
+        {
+          "url": "https://www.sportytrader.com/us/picks/mirra-andreeva-elina-svitolina-386426/",
+          "title": "Mirra Andreeva vs Elina Svitolina Prediction & Picks - WTA Finals",
+          "publisher": "SportyTrader",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL3tPwfHiTB-9VFOCjHqpgyyON4jfUVFv2tUdhjH5hTKDLUV7lnKhJqqdwWE8"
+        },
+        {
+          "url": "https://tennisuptodate.com/wta/live-wta-finals-mirra-andreeva-to-open-campaign-against-elina-svitolina",
+          "title": "LIVE WTA Finals | Mirra Andreeva to open campaign against Elina Svitolina",
+          "publisher": "Tennisuptodate.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXxmnfq6Z16WhqeNRxX8I0lYN5yHf4FGXORKKSE1ZFQuSF3_qiGEXTXLjqLzQ"
+        }
+      ]
+    },
+    {
+      "query": "brian thomas jr",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-09T22:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/report-sounds-like-jags-will-listen-to-btj-offers",
+        "https://bleacherreport.com/articles/25530668-new-nfl-trade-rumors-brian-thomas-jr-josh-downs-calvin-ridley-amid-chiefs-steelers-buzz",
+        "https://www.si.com/nfl/jaguars/onsi/4-thoughts-on-the-jacksonville-entering-the-trade-deadline-the-brian-thomas-jr-stance"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPUltWeawqI-13KCjpQ0gFErTXjKnw6oAoAF0QZBnJN7mEddXAlNXalOVbwWo",
+      "image_credit": "NBC Sports",
+      "news": [
         {
           "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/report-sounds-like-jags-will-listen-to-btj-offers",
           "title": "Report: Sounds like Jags will listen to BTJ offers",
@@ -108,251 +241,118 @@
           "publisher": "Bleacher Report",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUURxKhHD0eZDcUS7t3lXFGGyz3lFWJvVbmmI_Bi1T1zuFdQV17EQlo_BCpk4"
+        },
+        {
+          "url": "https://www.si.com/nfl/jaguars/onsi/4-thoughts-on-the-jacksonville-entering-the-trade-deadline-the-brian-thomas-jr-stance",
+          "title": "4 Thoughts on the Jaguars Entering the Trade Deadline: The Brian Thomas Jr. Stance",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJTXn4kvuEG0RaSyt1j_3TkgxC95_RYmQq_z8mNrd7v0zTYC5eTzfZ82JQtN4"
         }
       ]
     },
     {
-      "query": "eagles draft picks 2027",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T22:00:00Z",
+      "query": "is austin reaves playing tonight",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-09T22:30:00Z",
       "related_news_urls": [
-        "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/updating-eagles-2027-draft-pick-after-7th-straight-loss/765550/",
-        "https://bleacherreport.com/articles/25530849-updated-2027-nfl-draft-order-after-week-9-results-who-could-chargers-eagles-take",
-        "https://www.bleedinggreennation.com/philadelphia-eagles-draft/189900/nfl-mock-draft-2027-eagles-land-jeremiah-smith"
+        "https://www.espn.com/nba/story/_/id/50429321/reaves-scores-43-doncic-absence-lead-lakers-pistons",
+        "https://sports.yahoo.com/articles/lakers-major-luka-doncic-injury-210916581.html",
+        "https://www.latimes.com/sports/lakers/story/2026-11-08/los-angeles-lakers-detroit-pistons-nba-game-recap"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRj75uUIhR_pILhAdaxwVa71eLLSyA3_cXKwhINKtTWVkP0bPo5PSKbhF6IMF0",
-      "image_credit": "NBC Sports Philadelphia",
-      "news": [
-        {
-          "url": "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/updating-eagles-2027-draft-pick-after-7th-straight-loss/765550/",
-          "title": "Updating Eagles' 2027 draft pick after 7th straight loss",
-          "publisher": "NBC Sports Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRj75uUIhR_pILhAdaxwVa71eLLSyA3_cXKwhINKtTWVkP0bPo5PSKbhF6IMF0"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25530849-updated-2027-nfl-draft-order-after-week-9-results-who-could-chargers-eagles-take",
-          "title": "Updated 2027 NFL Draft Order After Week 9 Results, Who Could Chargers & Eagles Take?",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmw_0-i18dxdjUn4bfUPe_6YYTnH88gbKA_24TxbDdW4NtCGH8WW4OtbvmxLA"
-        },
-        {
-          "url": "https://www.bleedinggreennation.com/philadelphia-eagles-draft/189900/nfl-mock-draft-2027-eagles-land-jeremiah-smith",
-          "title": "NFL Mock Draft 2027: Eagles land Jeremiah Smith",
-          "publisher": "Bleeding Green Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiLWGLQDEULH0KQxiSW4E7lghX9zprNm1pjtaogDWeS_Ew0iYFQSJ-c59_JVM"
-        }
-      ]
-    },
-    {
-      "query": "jonathan taylor patriots",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T22:00:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/outkick-sports/jonathan-taylor-delivers-goodbye-indianapolis-colts-fifth-straight-loss",
-        "https://www.indystar.com/story/sports/nfl/colts/2026/11/09/colts-jonathan-taylor-offers-possible-goodbye-indianapolis-ahead-nfl-trade-deadline/92694223007/",
-        "https://www.profootballrumors.com/2026/11/colts-rejected-giants-offer-of-second-and-fifth-rounder-for-rb-jonathan-taylor-new-york-has-revoked-offer"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3xa-D1rD3Hi8kHXrmbXWYC9tnD1lpYCxhtpHMaa-USMMvMPvySBlKmPeUFg4",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/outkick-sports/jonathan-taylor-delivers-goodbye-indianapolis-colts-fifth-straight-loss",
-          "title": "Jonathan Taylor delivers what sounds like a goodbye to Indianapolis after Colts' fifth straight loss",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3xa-D1rD3Hi8kHXrmbXWYC9tnD1lpYCxhtpHMaa-USMMvMPvySBlKmPeUFg4"
-        },
-        {
-          "url": "https://www.indystar.com/story/sports/nfl/colts/2026/11/09/colts-jonathan-taylor-offers-possible-goodbye-indianapolis-ahead-nfl-trade-deadline/92694223007/",
-          "title": "Jonathan Taylor offers emotional goodbye to Indy after final game before trade deadline",
-          "publisher": "IndyStar",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRplY9RsPdYT7RXzvFyo_vAKjJWVOhsqCsXElW00adcKe_U7FAAuSCFBj3uNQ"
-        },
-        {
-          "url": "https://www.profootballrumors.com/2026/11/colts-rejected-giants-offer-of-second-and-fifth-rounder-for-rb-jonathan-taylor-new-york-has-revoked-offer",
-          "title": "Colts Rejected Giants' Offer Of Second- And Fifth-Rounder For RB Jonathan Taylor; New York Has Revoked Offer",
-          "publisher": "ProFootballRumors.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVbm9YmBJZ6Ez27UNba5z-ebxMSfRKZHshAAHRvre-k5yBQb3y0ilbEVv3Y7w"
-        }
-      ]
-    },
-    {
-      "query": "is dana white going to be press secretary",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T22:00:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/08/us/politics/trump-joke-dana-white-press-secretary.html",
-        "https://www.forbes.com/sites/conormurray/2026/11/09/trump-posts-ai-videos-of-dana-white-as-press-secretary-despite-saying-he-was-kidding-with-job-offer/",
-        "https://www.cnn.com/2026/11/07/politics/dana-white-trump-press-secretary"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoOL-QznZXYtYU6DUYbrRHVS7wKY1e9SAROG2YRlynbr33SV_IUHtemLGvv_Y",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/08/us/politics/trump-joke-dana-white-press-secretary.html",
-          "title": "Trump Was ‘Only Kidding’ in Asking Dana White to Be His Press Secretary",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoOL-QznZXYtYU6DUYbrRHVS7wKY1e9SAROG2YRlynbr33SV_IUHtemLGvv_Y"
-        },
-        {
-          "url": "https://www.forbes.com/sites/conormurray/2026/11/09/trump-posts-ai-videos-of-dana-white-as-press-secretary-despite-saying-he-was-kidding-with-job-offer/",
-          "title": "Trump Posts AI Videos Of Dana White As Press Secretary—Despite Saying He Was ‘Kidding’ With Job Offer",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSR90R3s9JooJ4G9uqTOIH49QQph6xtQOYNIiBgqEZ33i8oV2788d4Zu0hkXuQ"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/07/politics/dana-white-trump-press-secretary",
-          "title": "UFC CEO Dana White declines Trump’s offer to become press secretary, source says",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-BiLphEDyNGFDkMXdkbMk0wwjm5v5ZlVIIaobyRo6-JPVILKfV5M-BSdbDUM"
-        }
-      ]
-    },
-    {
-      "query": "matthew farwell",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T22:00:00Z",
-      "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/09/metro/sandra-birchmore-jury-deliberations/",
-        "https://www.boston.com/news/crime/2026/11/09/sandra-birchmore-matthew-farwell-trial-jury-deadlocked/",
-        "https://www.cbsnews.com/news/matthew-farwell-trial-sandra-birchmore-key-moments/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUDfg2ZZr2mkwtpt5z8QX8F7EH-TL04tiOXONApU1HtyPaKh2kdk6e4lc1TH8",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/09/metro/sandra-birchmore-jury-deliberations/",
-          "title": "Jury says it’s deadlocked in Matthew Farwell’s trial in death of Sandra Birchmore",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUDfg2ZZr2mkwtpt5z8QX8F7EH-TL04tiOXONApU1HtyPaKh2kdk6e4lc1TH8"
-        },
-        {
-          "url": "https://www.boston.com/news/crime/2026/11/09/sandra-birchmore-matthew-farwell-trial-jury-deadlocked/",
-          "title": "Jury deadlocked, sent home for day in trial of Sandra Birchmore's alleged killer, Matthew Farwell",
-          "publisher": "Boston.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_UvLSRFnMniPglR0-9BAwQV_lNlIlV-PbClbwfEawzf9FSYtDIVu3DfSEJHc"
-        },
-        {
-          "url": "https://www.cbsnews.com/news/matthew-farwell-trial-sandra-birchmore-key-moments/",
-          "title": "Key moments from trial of Matthew Farwell, ex-cop charged with killing Sandra Birchmore",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0Z-mA2ACr2mzVuoYVCpaMZ2OOklQ8p5N_cybUnyn8CVXvQEB9oMSiI1jYk38"
-        }
-      ]
-    },
-    {
-      "query": "diana taylor",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T22:00:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/09/nyregion/michael-bloomberg-married-diana-taylor.html",
-        "https://www.townandcountrymag.com/society/money-and-power/a74379398/michael-bloomberg-diana-taylor-wedding/",
-        "https://vinnews.com/2026/11/09/mike-bloomberg-marries-longtime-partner-diana-taylor-in-private-new-york-ceremony/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSA7T5vmq9o3QU66wEfw_CgrSdvV__8p7rl2YUITdj_F1bV03A2BkI2aotp-6U",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/09/nyregion/michael-bloomberg-married-diana-taylor.html",
-          "title": "Michael Bloomberg Marries Diana Taylor, a Merger 25 Years in the Making",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSA7T5vmq9o3QU66wEfw_CgrSdvV__8p7rl2YUITdj_F1bV03A2BkI2aotp-6U"
-        },
-        {
-          "url": "https://www.townandcountrymag.com/society/money-and-power/a74379398/michael-bloomberg-diana-taylor-wedding/",
-          "title": "Michael Bloomberg Marries Diana Taylor",
-          "publisher": "Town & Country Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQCzgR-okJPgUxn2ycZyOW9I9i97J94tKLdhwE-JeWCR11ZTTI_jiGDuCr0iV8"
-        },
-        {
-          "url": "https://vinnews.com/2026/11/09/mike-bloomberg-marries-longtime-partner-diana-taylor-in-private-new-york-ceremony/",
-          "title": "Mike Bloomberg Marries longtime Partner Diana Taylor in Private New York Ceremony",
-          "publisher": "VINnews",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlVO8H9_3vk2vvOuydo8dPVbdy-WAKkgaD0UZKDncPQ3EIpP-jB4aO8RlyTI"
-        }
-      ]
-    },
-    {
-      "query": "pete rose",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T21:50:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/sports/trump-says-he-would-give-baseball-player-pete-rose-pardon-2026-11-09/",
-        "https://www.investing.com/news/general-news/trump-says-he-would-give-baseball-player-pete-rose-a-pardon-5013414",
-        "https://www.investing.com/news/politics-news/head-of-us-justice-departments-civil-division-has-resigned-says-blanche-5012648"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdjgc_Rqq2aA3-LB0nTSpK5IAMFJObtqNMdp3CdrdW-JcWr6LbyQwmyHh_eFM",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/sports/trump-says-he-would-give-baseball-player-pete-rose-pardon-2026-11-09/",
-          "title": "Trump says he would give baseball player Pete Rose a pardon",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdjgc_Rqq2aA3-LB0nTSpK5IAMFJObtqNMdp3CdrdW-JcWr6LbyQwmyHh_eFM"
-        },
-        {
-          "url": "https://www.investing.com/news/general-news/trump-says-he-would-give-baseball-player-pete-rose-a-pardon-5013414",
-          "title": "Trump says he would give baseball player Pete Rose a pardon By Reuters",
-          "publisher": "Investing.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCT_TFU-EBBFtZauAJNcK8bRi5O_9LcrDV6bl4DcTWP9fJUPokjgSJwmheBgI"
-        },
-        {
-          "url": "https://www.investing.com/news/politics-news/head-of-us-justice-departments-civil-division-has-resigned-says-blanche-5012648",
-          "title": "Head of US Justice Department’s civil division has resigned, says Blanche By Reuters",
-          "publisher": "Investing.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQC9_jAaol_Ir80JlRM7T6IbOImYW_WpnjvIEwYcRR4iG_RLXRTWZx-qSIHJSU"
-        }
-      ]
-    },
-    {
-      "query": "adam schefter",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T21:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50427666/multi-drop-game-irks-colts-wr-downs-trade-deadline-nears",
-        "https://triblive.com/sports/first-call-steelers-may-need-to-work-trade-compensation-for-josh-downs-pens-getting-sharks-at-the-right-time/",
-        "https://www.indystar.com/story/sports/columnists/gregg-doyel/2026/11/08/indianapolis-colts-josh-downs-dallas-cowboys-nfl-trade-deadline-jonathan-taylor/92502104007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShS0MC-o4ULxBs71dqBc5epltzJiEf5RIBG_C4-aQeLMPb3GPyzjLzVwqU8gc",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmZqbg2VCtp76Z6SLjYm1xIV_JNV7HhFZGKpjK7dKVzDO3o-_UWDnU_QbRe1Y",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50427666/multi-drop-game-irks-colts-wr-downs-trade-deadline-nears",
-          "title": "Multidrop game in Colts' loss irks WR Josh Downs as trade deadline looms",
+          "url": "https://www.espn.com/nba/story/_/id/50429321/reaves-scores-43-doncic-absence-lead-lakers-pistons",
+          "title": "Reaves scores 43 in Doncic's absence to lead Lakers past Pistons",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShS0MC-o4ULxBs71dqBc5epltzJiEf5RIBG_C4-aQeLMPb3GPyzjLzVwqU8gc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmZqbg2VCtp76Z6SLjYm1xIV_JNV7HhFZGKpjK7dKVzDO3o-_UWDnU_QbRe1Y"
         },
         {
-          "url": "https://triblive.com/sports/first-call-steelers-may-need-to-work-trade-compensation-for-josh-downs-pens-getting-sharks-at-the-right-time/",
-          "title": "First Call: Steelers may need to work trade compensation for Josh Downs; Pens getting Sharks at the right time",
-          "publisher": "TribLIVE.com",
+          "url": "https://sports.yahoo.com/articles/lakers-major-luka-doncic-injury-210916581.html",
+          "title": "Lakers Get Major Luka Doncic Injury Boost Ahead of Hawks Clash",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIdBiIjvvnxj759Dzkl-Bf_t0N9lQ2GcHAB_VyI71oqEyEEgxiLlonaX7wheQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2PdA_bLz_bT8O5zs9AD2SKbdejLzOZYFv-Kk5MLXCWAzoH_rMFqLlq1lzY6U"
         },
         {
-          "url": "https://www.indystar.com/story/sports/columnists/gregg-doyel/2026/11/08/indianapolis-colts-josh-downs-dallas-cowboys-nfl-trade-deadline-jonathan-taylor/92502104007/",
-          "title": "Doyel: Colts spiral continues against Cowboys, with Josh Downs playing a starring role",
-          "publisher": "IndyStar",
+          "url": "https://www.latimes.com/sports/lakers/story/2026-11-08/los-angeles-lakers-detroit-pistons-nba-game-recap",
+          "title": "Austin Reaves steps up in Luka Doncic’s absence to lead Lakers over Pistons",
+          "publisher": "Los Angeles Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0cWmoe9SUOP3b3PQWuMsQwenLO6Irp6F0ml0JTnIohwSwE0Ta-8qUNdpnGSE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEIllO7td-z1q_numpVvhIVxH74tOXtB3NAXRAiNf5wXpgmw-j735jBiVuM0s"
+        }
+      ]
+    },
+    {
+      "query": "cboe volatility index",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T22:30:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/article/the-vix-volatility-index-just-spiked-70-heres-what-history-suggests-comes-next-125333946.html",
+        "https://www.cnbc.com/2026/11/06/wall-streets-fear-gauge-may-be-flashing-a-buy-sign.html",
+        "https://www.reuters.com/business/wall-street-fear-gauge-jumps-most-since-liberation-day-ai-trade-stumbles-2026-11-05/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQr4iMzWMt2JVJTobpd-njJlSN0h77Sf3yyqwoWlQYc6LYJXpoHFtbKjvFopw",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/article/the-vix-volatility-index-just-spiked-70-heres-what-history-suggests-comes-next-125333946.html",
+          "title": "The VIX volatility index just spiked 70%. Here's what history suggests comes next.",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQr4iMzWMt2JVJTobpd-njJlSN0h77Sf3yyqwoWlQYc6LYJXpoHFtbKjvFopw"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/06/wall-streets-fear-gauge-may-be-flashing-a-buy-sign.html",
+          "title": "Wall Street's fear gauge may be flashing a buy sign",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtU0KHWTty4IK3IDi5mhp8K8U2uW8Rc2gk0pidY3MyBgCOz7z77V9OLUdBY-0"
+        },
+        {
+          "url": "https://www.reuters.com/business/wall-street-fear-gauge-jumps-most-since-liberation-day-ai-trade-stumbles-2026-11-05/",
+          "title": "Phones 'explode' on Wall Street as 'steamroller' shows up for the AI trade",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8vhF9kotCfLXmWBT4UGGu8R4sCjHSQVFmhXCOVzJDKTZYF6qDM8_k0ZJSa1o"
+        }
+      ]
+    },
+    {
+      "query": "dow jones industrial average",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-09T22:20:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/08/stock-market-today-live-updates.html",
+        "https://www.wsj.com/finance/stocks/u-s-stocks-climb-as-investors-regain-confidence-56de5af0",
+        "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxTc9aBEYjL_E4kxzqcezQ2MGZM63m__WCyIEt1mWV29siMeKXUGtt0DbGJeI",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/08/stock-market-today-live-updates.html",
+          "title": "Dow surges 1,100 points, Nasdaq climbs more than 2% as tech rebounds from last week’s tumult: Live updates",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxTc9aBEYjL_E4kxzqcezQ2MGZM63m__WCyIEt1mWV29siMeKXUGtt0DbGJeI"
+        },
+        {
+          "url": "https://www.wsj.com/finance/stocks/u-s-stocks-climb-as-investors-regain-confidence-56de5af0",
+          "title": "U.S. Stocks Climb as Investors Regain Confidence",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxnFg7EQ0IiimBEY_tdOBoW_RTmYTDkLcWrwtLus9ZLMtWoEgCFwC4E2cuOGo"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html",
+          "title": "Stock market today: Nasdaq surges despite Nvidia stock slide, Dow and S&P 500 rally as AI tech trade rises",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkCGrkBVEBngktrsOY44IiJ5cY3zzNV-HQWAyF5t1pp3fnM4yI-uL2iAkVzxA"
         }
       ]
     }
