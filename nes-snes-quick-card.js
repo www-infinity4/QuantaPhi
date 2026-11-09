@@ -5,11 +5,15 @@
 'use strict';
 const root=document.getElementById('nesSnesQuickCard');
 if(!root)return;
+// The public release remains gated until real browser and Android acceptance.
+// Explicit owner preview: /?card=nes&nesSnesPreview=1
+if(new URLSearchParams(window.location.search).get('nesSnesPreview')!=='1')return;
+root.hidden=false;
 root.classList.add('card','nes-snes-card');
 const html=`
   <div class="nes-snes-hero">
     <img src="/assets/nes-snes-card.svg" alt="Original pixel-art controller and arcade landscape for NES and SNES emulation" width="960" height="540" loading="lazy" decoding="async">
-    <span class="nes-snes-label">INFINITY ® · ORIGINAL GAME CARD</span>
+    <span class="nes-snes-label">INFINITY ® · GAME PREVIEW · DEVICE TEST PENDING</span>
   </div>
   <div class="nes-snes-content">
     <h2>NES / SNES · Play your games</h2>
