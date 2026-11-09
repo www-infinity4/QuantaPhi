@@ -3,17 +3,122 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T00:46:57.985674Z",
+  "checked_at": "2026-11-09T01:01:18.492006Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "chris godwin",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T00:40:00Z",
+      "related_news_urls": [
+        "https://www.yardbarker.com/nfl/articles/predicted_stat_line_buccaneers_wr_chris_godwin_vs_chicago/s1_17135_44534719",
+        "https://dknetwork.draftkings.com/2026/11/07/chris-godwin-fantasy-football-start-or-sit-advice-for-week-9/",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/godwin-blanked-in-week-8-win-vs-atlanta"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLqf1iop-zWjUb6UOb0XKhT89qhkK-R7AkCTN8ERTn9ga3-WVrMI-mDeXrS_o",
+      "image_credit": "Yardbarker",
+      "news": [
+        {
+          "url": "https://www.yardbarker.com/nfl/articles/predicted_stat_line_buccaneers_wr_chris_godwin_vs_chicago/s1_17135_44534719",
+          "title": "Predicted Stat Line: Buccaneers WR Chris Godwin vs Chicago",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLqf1iop-zWjUb6UOb0XKhT89qhkK-R7AkCTN8ERTn9ga3-WVrMI-mDeXrS_o"
+        },
+        {
+          "url": "https://dknetwork.draftkings.com/2026/11/07/chris-godwin-fantasy-football-start-or-sit-advice-for-week-9/",
+          "title": "Chris Godwin Fantasy Football Start or Sit Advice for Week 9",
+          "publisher": "DraftKings Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOGheJaDIOdikssL_9dT877h9Bn4PasFiTPggc3GbMfAa8Khy5RYpYbbRGWfk"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/godwin-blanked-in-week-8-win-vs-atlanta",
+          "title": "Godwin blanked in Week 8 win vs. Atlanta",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQl9Fj6O9NaPyfsnhDes0-Cuywc8fjYozwE5DcGfDyM9Os5WH2-JU1NjMW7YG8"
+        }
+      ]
+    },
+    {
+      "query": "macaulay culkin",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T00:40:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/inside-complex-lives-8-culkin-152654652.html",
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/10/30/nocturne-apple-tv-rory-culkin-siblings-kieran-macaulay-culkin/92262653007/",
+        "https://www.yahoo.com/entertainment/tv/articles/rory-culkin-shares-silver-lining-130110754.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCtGjgOaWrASTM1o7-B0DwMC7O2AhdiLzw8XC6QRbhjCvGG-nh4lJL7CddPI4",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/inside-complex-lives-8-culkin-152654652.html",
+          "title": "Inside the complex lives of the 8 Culkin siblings: From ultra-close bonds to tragedy",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCtGjgOaWrASTM1o7-B0DwMC7O2AhdiLzw8XC6QRbhjCvGG-nh4lJL7CddPI4"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/10/30/nocturne-apple-tv-rory-culkin-siblings-kieran-macaulay-culkin/92262653007/",
+          "title": "Rory Culkin shares 'silver lining' of being 'locked in closets' by his siblings",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVG9r72_AeN9rhGS5rKOb5u7Th6ZBw-qtYjzriUhi53NLwgPfjNN5_X0SrHQ4"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/rory-culkin-shares-silver-lining-130110754.html",
+          "title": "Rory Culkin shares 'silver lining' of being 'locked in closets' by his siblings",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSN1mrXB0RoV6Hihq1Fe_rKSdV3V4G1-ZUtSFpAsz_-c1rLR5j9ULo4D-qv0GY"
+        }
+      ]
+    },
+    {
+      "query": "nfl week 10",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-09T00:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50414462/week-10-ap-college-football-poll-reaction-next-top-25",
+        "https://www.foxsports.com/stories/college-football/rankings-week-10-notre-dame-georgia-ucla-utah-ohio-state",
+        "https://www.ksl.com/article/51644498/josh-furlongs-ap-top-25-another-no-1-team-falls-as-ucla-utah-make-their-move"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2Q777p5Y4duqUg6ua09erA1bG1kzZeSW4zvOLJwKkgx5JWJUANwsa-v2rfFU",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50414462/week-10-ap-college-football-poll-reaction-next-top-25",
+          "title": "AP college football Week 10 poll reaction: What's next for Top 25",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2Q777p5Y4duqUg6ua09erA1bG1kzZeSW4zvOLJwKkgx5JWJUANwsa-v2rfFU"
+        },
+        {
+          "url": "https://www.foxsports.com/stories/college-football/rankings-week-10-notre-dame-georgia-ucla-utah-ohio-state",
+          "title": "College Football Rankings: New No. 1 Team As CFB Chaos And Upsets Reign Supreme",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRg-3ZW4XnLjTvpyNu6zUOtYzQgiYEiu6HDzG-d8VgzpL_02NauBagehQerLo0"
+        },
+        {
+          "url": "https://www.ksl.com/article/51644498/josh-furlongs-ap-top-25-another-no-1-team-falls-as-ucla-utah-make-their-move",
+          "title": "Josh Furlong's AP Top 25: Another No. 1 team falls as UCLA, Utah make their move",
+          "publisher": "KSL News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOBJgCQt6j3gpUM6p1SxsdkTZLo-ATc2ebSHvciRdbaz3zrEVCZRfyrNeNrP0"
+        }
+      ]
+    },
     {
       "query": "treveyon henderson",
       "approx_searches": "2000+",
       "published_at": "2026-11-09T00:30:00Z",
       "related_news_urls": [
         "https://www.espn.com/nfl/story/_/id/50400016/patriots-treveyon-henderson-affected-neurological-symptoms",
-        "https://www.nfl.com/news/pats-treveyon-henderson-says-he-was-hospitalized-after-unusual-emergency-focused-on-recovery",
-        "https://people.com/patriots-treveyon-henderson-thanks-wife-for-her-support-after-hospitalization-12242140"
+        "https://people.com/patriots-treveyon-henderson-thanks-wife-for-her-support-after-hospitalization-12242140",
+        "https://www.nfl.com/news/pats-treveyon-henderson-says-he-was-hospitalized-after-unusual-emergency-focused-on-recovery"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEER9rhghUlGiEPr8R7UuIs1oRMNnZAPiBWQiuK7mOkEdUsTGYh1wobRI7xAM",
       "image_credit": "ESPN",
@@ -26,53 +131,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEER9rhghUlGiEPr8R7UuIs1oRMNnZAPiBWQiuK7mOkEdUsTGYh1wobRI7xAM"
         },
         {
-          "url": "https://www.nfl.com/news/pats-treveyon-henderson-says-he-was-hospitalized-after-unusual-emergency-focused-on-recovery",
-          "title": "Pats' TreVeyon Henderson says he was hospitalized after 'unusual' emergency; RB focused on recovery",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTq275OrPffRj3S9bsP9VJkeS7NPVdoeJFEdcN65Cxa3RICe50M2nHHHq83x_4"
-        },
-        {
           "url": "https://people.com/patriots-treveyon-henderson-thanks-wife-for-her-support-after-hospitalization-12242140",
           "title": "Patriots’ TreVeyon Henderson Thanks Wife for Her Support After Hospitalization for ‘Unusual Medical Emergency’",
           "publisher": "People.com",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhanNcspFqt0ILqXt49fQYQiZxrqQ9z3_H2bypdryZ_YKY58mf0wD7hQmNEB8"
-        }
-      ]
-    },
-    {
-      "query": "trent mcduffie",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T00:30:00Z",
-      "related_news_urls": [
-        "https://www.therams.com/news/trent-mcduffie-and-joe-cardona-among-rams-inactives-for-week-9-2026-at-commanders",
-        "https://www.commanders.com/news/commanders-vs-rams-week-9-injury-report",
-        "https://sports.yahoo.com/articles/week-9-inactives-rams-170324966.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxPAbAcwGBHgDE0rbP7Mla_ldI3iKBtkT4XOYNZBk52H3GWf-KrankQrfMcyY",
-      "image_credit": "Rams",
-      "news": [
-        {
-          "url": "https://www.therams.com/news/trent-mcduffie-and-joe-cardona-among-rams-inactives-for-week-9-2026-at-commanders",
-          "title": "Trent McDuffie and Joe Cardona among Rams' inactives for Week 9 at Commanders",
-          "publisher": "Rams",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxPAbAcwGBHgDE0rbP7Mla_ldI3iKBtkT4XOYNZBk52H3GWf-KrankQrfMcyY"
         },
         {
-          "url": "https://www.commanders.com/news/commanders-vs-rams-week-9-injury-report",
-          "title": "Commanders vs. Rams Week 9 injury report",
-          "publisher": "Washington Commanders",
+          "url": "https://www.nfl.com/news/pats-treveyon-henderson-says-he-was-hospitalized-after-unusual-emergency-focused-on-recovery",
+          "title": "Pats' TreVeyon Henderson says he was hospitalized after 'unusual' emergency; RB focused on recovery",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAbLGGjCBRb8nW1E2HCFsIHgHA43Is_tUyyRKIJMhkVh9a1tCpMYJTSx2J6lY"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/week-9-inactives-rams-170324966.html",
-          "title": "Week 9 inactives for Rams",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkBOW_PGuyWKmeHKApPvAD5C-zsbi4r6ehoyNRBsLTlXq4MDeSPzUnGcdrv70"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTq275OrPffRj3S9bsP9VJkeS7NPVdoeJFEdcN65Cxa3RICe50M2nHHHq83x_4"
         }
       ]
     },
@@ -108,6 +178,41 @@
           "publisher": "Nintendo Life",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEMPLDBJlQKoctLBRJZNXTa13iL4B7TCR41cDGT8tguKYm3CixAmptm8lUWAs"
+        }
+      ]
+    },
+    {
+      "query": "trent mcduffie",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T00:30:00Z",
+      "related_news_urls": [
+        "https://www.therams.com/news/trent-mcduffie-and-joe-cardona-among-rams-inactives-for-week-9-2026-at-commanders",
+        "https://www.commanders.com/news/commanders-vs-rams-week-9-injury-report",
+        "https://theramswire.usatoday.com/story/sports/nfl/rams/2026/11/08/rams-commanders-inactives-mcduffie-curl-parkinson/92677659007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxPAbAcwGBHgDE0rbP7Mla_ldI3iKBtkT4XOYNZBk52H3GWf-KrankQrfMcyY",
+      "image_credit": "Rams",
+      "news": [
+        {
+          "url": "https://www.therams.com/news/trent-mcduffie-and-joe-cardona-among-rams-inactives-for-week-9-2026-at-commanders",
+          "title": "Trent McDuffie and Joe Cardona among Rams' inactives for Week 9 at Commanders",
+          "publisher": "Rams",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxPAbAcwGBHgDE0rbP7Mla_ldI3iKBtkT4XOYNZBk52H3GWf-KrankQrfMcyY"
+        },
+        {
+          "url": "https://www.commanders.com/news/commanders-vs-rams-week-9-injury-report",
+          "title": "Commanders vs. Rams Week 9 injury report",
+          "publisher": "Washington Commanders",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAbLGGjCBRb8nW1E2HCFsIHgHA43Is_tUyyRKIJMhkVh9a1tCpMYJTSx2J6lY"
+        },
+        {
+          "url": "https://theramswire.usatoday.com/story/sports/nfl/rams/2026/11/08/rams-commanders-inactives-mcduffie-curl-parkinson/92677659007/",
+          "title": "Rams-Commanders inactives: Are McDuffie, Curl and Parkinson playing?",
+          "publisher": "Rams Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFLX2FawfXNVv5p9pfwUQ4mcRo9mPs_RqqtU7YM4dVnNiy6ZJegNdAgyFFfSQ"
         }
       ]
     },
@@ -182,177 +287,72 @@
       ]
     },
     {
-      "query": "seahawks",
-      "approx_searches": "50000+",
-      "published_at": "2026-11-09T00:20:00Z",
+      "query": "will campbell",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T00:30:00Z",
       "related_news_urls": [
-        "https://www.foxsports.com/watch/fmc-o824obg1vwnzcsrz",
-        "https://www.seattletimes.com/sports/seahawks/seahawks-vs-cardinals-live-updates-how-to-watch-score/",
-        "https://www.nfl.com/videos/smith-njigba-s-seventh-catch-of-first-half-gets-seahawks-to-cardinals-7-yard-line"
+        "https://www.cbssports.com/fantasy/football/news/patriots-will-campbell-suffers-knee-injury/",
+        "https://patriotswire.usatoday.com/story/sports/nfl/patriots/2026/11/07/2026-numbers-show-year-2-leap-patriots-will-campbell/92565019007/",
+        "https://sports.yahoo.com/articles/patriots-qb-drake-maye-reveals-180307439.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxYQrP9IHZue-aa0kfcF2suBVTAFyJQattlN3-36UNyJixiV_lkxVWXx2wFIk",
-      "image_credit": "FOX Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRgtyhxGxEG7i2Okxt9MXO4tXkT6SYFeNJ2RsRVSTb2-axRU5x1XlHHfRx6NM",
+      "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://www.foxsports.com/watch/fmc-o824obg1vwnzcsrz",
-          "title": "Drew Lock finds AJ Barner for seven-yard TD, extending Seahawks lead over Cardinals | NFL Highlights",
-          "publisher": "FOX Sports",
+          "url": "https://www.cbssports.com/fantasy/football/news/patriots-will-campbell-suffers-knee-injury/",
+          "title": "Patriots' Will Campbell: Suffers knee injury",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxYQrP9IHZue-aa0kfcF2suBVTAFyJQattlN3-36UNyJixiV_lkxVWXx2wFIk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRgtyhxGxEG7i2Okxt9MXO4tXkT6SYFeNJ2RsRVSTb2-axRU5x1XlHHfRx6NM"
         },
         {
-          "url": "https://www.seattletimes.com/sports/seahawks/seahawks-vs-cardinals-live-updates-how-to-watch-score/",
-          "title": "Live: Recap: Seahawks overcome several injuries to hold off Cardinals",
-          "publisher": "The Seattle Times",
+          "url": "https://patriotswire.usatoday.com/story/sports/nfl/patriots/2026/11/07/2026-numbers-show-year-2-leap-patriots-will-campbell/92565019007/",
+          "title": "Early 2026 numbers show big Year 2 leap from Patriots OL Will Campbell",
+          "publisher": "Patriots Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPwGJsypwlRKqWUQKE4ZRdeFQ8Z7mDu1_nEbYEBk-JBKr8dXlS4J95-NNpIQY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSRKlQ7P9xjBqkYCng6Rx2kszQlViwlA9RzGmhoGzUh7YrN-34u5HFRLuSfqE"
         },
         {
-          "url": "https://www.nfl.com/videos/smith-njigba-s-seventh-catch-of-first-half-gets-seahawks-to-cardinals-7-yard-line",
-          "title": "Smith-Njigba's seventh catch of first half gets Seahawks to Cardinals' 7-yard line",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQM_Ozy4IFay3suwGKgbjnhe9M3PMRGFerloDRsoXxA4eXuTyOY9IW8lLfxUQ"
-        }
-      ]
-    },
-    {
-      "query": "corey kiner",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T00:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/patriots-hint-bigger-role-underrated-173304922.html",
-        "https://dknetwork.draftkings.com/2026/11/08/corey-kiner-fantasy-football-start-or-sit-advice-for-week-9/",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/corey-kiner-runs-7-times-for-38-yards-vs-dolphins"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpnRMRhOBQycPqF2HPtBx_xxGr0_uv0Z1HZxFyGdh-7JOQIZSN81RBwEyUhWk",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/patriots-hint-bigger-role-underrated-173304922.html",
-          "title": "Patriots Hint at Bigger Role for Underrated RB Amid TreVeyon Henderson Absence",
+          "url": "https://sports.yahoo.com/articles/patriots-qb-drake-maye-reveals-180307439.html",
+          "title": "Patriots QB Drake Maye reveals one Year 2 leap has impressed him",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpnRMRhOBQycPqF2HPtBx_xxGr0_uv0Z1HZxFyGdh-7JOQIZSN81RBwEyUhWk"
-        },
-        {
-          "url": "https://dknetwork.draftkings.com/2026/11/08/corey-kiner-fantasy-football-start-or-sit-advice-for-week-9/",
-          "title": "Corey Kiner Fantasy Football Start or Sit Advice for Week 9",
-          "publisher": "DraftKings Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhpL-XvajOmFUs_QdvVvTNFMZDfCxdWOcdqNx-6Drc6QaXL_ivuQCKTDpS86w"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-01/corey-kiner-runs-7-times-for-38-yards-vs-dolphins",
-          "title": "Corey Kiner runs 7 times for 38 yards vs. Dolphins",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzT1XU3yGJZ6lguaVpuLCnGw3RQ6twtmQftHhRGwYkc6rrwkSkNGh5XSdj-08"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4X4GtgNMsydj7p_hq5JlSyJhbb_LHkYDNITKg9zTkQvEuDoWQHOdIbPxHE3c"
         }
       ]
     },
     {
-      "query": "snow weather forecast",
-      "approx_searches": "2000+",
+      "query": "sunday night football tonight",
+      "approx_searches": "5000+",
       "published_at": "2026-11-09T00:20:00Z",
       "related_news_urls": [
-        "https://www.foxweather.com/weather-news/late-week-snow-northeast-cold-temperatures-us-november-2026",
-        "https://www.localsyr.com/weather/new-noreaster-on-the-way-late-next-week/",
-        "https://www.post-gazette.com/news/weather-news/2026/11/08/weather-pittsburgh-snow-november/stories/202611080069"
+        "https://www.app.com/story/sports/nfl/2026/11/08/sunday-night-football-chicago-bears-tampa-bay-buccaneers/92610498007/",
+        "https://www.app.com/story/sports/nfl/2026/11/01/sunday-night-football-washington-commanders-philadelphia-eagles/92493458007/",
+        "https://www.nytimes.com/athletic/7764633/2026/11/08/mike-tirico-snf-broadcast-health-issue-noah-eagle/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRI5CJZhvnEb3v7hOCE5TbyfqqAa1OXyqTRi1Dxv45H4uJZBmKHebXNe6G7gE8",
-      "image_credit": "FOX Weather",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXh0EoBfciD3RXcH7XMFfsY7SMDU1-E1ZL67nIg-i-s42_owNG_3rC2d81bxw",
+      "image_credit": "Asbury Park Press",
       "news": [
         {
-          "url": "https://www.foxweather.com/weather-news/late-week-snow-northeast-cold-temperatures-us-november-2026",
-          "title": "Late-week storm threatens Northeast with season's first snow, will pave way for major split in US temperatures",
-          "publisher": "FOX Weather",
+          "url": "https://www.app.com/story/sports/nfl/2026/11/08/sunday-night-football-chicago-bears-tampa-bay-buccaneers/92610498007/",
+          "title": "What channel is Sunday Night Football tonight? What time is Sunday Night Football?",
+          "publisher": "Asbury Park Press",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRI5CJZhvnEb3v7hOCE5TbyfqqAa1OXyqTRi1Dxv45H4uJZBmKHebXNe6G7gE8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXh0EoBfciD3RXcH7XMFfsY7SMDU1-E1ZL67nIg-i-s42_owNG_3rC2d81bxw"
         },
         {
-          "url": "https://www.localsyr.com/weather/new-noreaster-on-the-way-late-next-week/",
-          "title": "NEW: Nor’easter on the way late this upcoming week?",
-          "publisher": "WSYR",
+          "url": "https://www.app.com/story/sports/nfl/2026/11/01/sunday-night-football-washington-commanders-philadelphia-eagles/92493458007/",
+          "title": "What channel are the Eagles on? What channel is Sunday Night Football?",
+          "publisher": "Asbury Park Press",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT17r5iCxXvzCxZGExSoMiOt8CUdG83TO0J_CFIpxoq3KTtHv_fWTDLDwusmvA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-XSgCjz_fUM0CyvIByLmDcjpt51v3O49vFeqgp0W-ABS-U7adOF_Idm52VmM"
         },
         {
-          "url": "https://www.post-gazette.com/news/weather-news/2026/11/08/weather-pittsburgh-snow-november/stories/202611080069",
-          "title": "Sunshine may be swapped for snowflakes as week progresses",
-          "publisher": "Pittsburgh Post-Gazette",
+          "url": "https://www.nytimes.com/athletic/7764633/2026/11/08/mike-tirico-snf-broadcast-health-issue-noah-eagle/",
+          "title": "Mike Tirico to miss Bears-Buccaneers SNF broadcast with health issue - The Athletic",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEjU6tn-Yq-uj7-ePdauug8xhZtWmzAUptzIMTKovyJhnyn9rgKCZuUBj2qmU"
-        }
-      ]
-    },
-    {
-      "query": "kyle monangai",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T00:20:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/sunday-night-football-emeka-egbuka-active-kyle-monangai-inactive-for-bucs-bears",
-        "https://sports.yahoo.com/articles/bears-buccaneers-inactives-malik-muhammad-235606292.html",
-        "https://www.chicagotribune.com/2026/11/06/kyle-monangai-chicago-bears-week-9-questionable/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREztsfZm_4X6uWfm0o7KR8MGfeOpbKLLduQaFBkIybIhm5QrDCXddBPbho7tg",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/sunday-night-football-emeka-egbuka-active-kyle-monangai-inactive-for-bucs-bears",
-          "title": "Sunday Night Football: Emeka Egbuka active, Kyle Monangai inactive for Bucs-Bears",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREztsfZm_4X6uWfm0o7KR8MGfeOpbKLLduQaFBkIybIhm5QrDCXddBPbho7tg"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/bears-buccaneers-inactives-malik-muhammad-235606292.html",
-          "title": "Bears-Buccaneers Inactives: Malik Muhammad II and Kyle Monangai still out",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTw4WrwlQe3DRkRyWnSVCbsgTBPWqBfhmterZPc7mZ_2Tjp42-wLrjoDH0qZXY"
-        },
-        {
-          "url": "https://www.chicagotribune.com/2026/11/06/kyle-monangai-chicago-bears-week-9-questionable/",
-          "title": "RB Kyle Monangai returns to Chicago Bears practice — but his status for Sunday night remains up in the air",
-          "publisher": "Chicago Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQZls8n76D9W3OupYjsBzOmmtdbbO_-K5dASu1Yq21k3OEaM7pjrJY-KD2Wlg"
-        }
-      ]
-    },
-    {
-      "query": "cma awards 2026",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T00:20:00Z",
-      "related_news_urls": [
-        "https://www.billboard.com/music/awards/cma-awards-performers-2026-kacey-musgraves-tim-mcgraw-dolly-1236374456/",
-        "https://komonews.com/news/entertainment/ella-langley-cody-johnson-miranda-lambert-to-perform-at-60th-annual-cma-awards-country-music-association-lineup-2026",
-        "https://americansongwriter.com/dolly-parton-to-be-honored-with-special-tribute-during-country-musics-biggest-night/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzClMC0RuJEz6kDxO4WoUnbQcC-Nu-5O_bZUCq-bne3GiRcNOH3WaH92tQSh8",
-      "image_credit": "Billboard",
-      "news": [
-        {
-          "url": "https://www.billboard.com/music/awards/cma-awards-performers-2026-kacey-musgraves-tim-mcgraw-dolly-1236374456/",
-          "title": "2026 CMA Awards Performers: Kacey Musgraves, Ella Langley, Tim McGraw",
-          "publisher": "Billboard",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzClMC0RuJEz6kDxO4WoUnbQcC-Nu-5O_bZUCq-bne3GiRcNOH3WaH92tQSh8"
-        },
-        {
-          "url": "https://komonews.com/news/entertainment/ella-langley-cody-johnson-miranda-lambert-to-perform-at-60th-annual-cma-awards-country-music-association-lineup-2026",
-          "title": "Ella Langley, Cody Johnson, Miranda Lambert to perform at 60th annual CMA Awards",
-          "publisher": "KOMO",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRs86bu_kk2sZjaAwC2_789uOYjn7-ipwrKnFgE-kK6ERObfpvw4wSfiBSgdxE"
-        },
-        {
-          "url": "https://americansongwriter.com/dolly-parton-to-be-honored-with-special-tribute-during-country-musics-biggest-night/",
-          "title": "Dolly Parton to Be Honored With Special Tribute During Country Music’s Biggest Night",
-          "publisher": "American Songwriter",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYcXWrvdUTfnKpgxzyYjoZhsgUH42y6S3ZXfI4-NIUY9NTmj0ui0LI21BibhI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFiI4mX5usE9S9KeILKQWnNsLFMIUNqPfcCXhiXesXFYfdr7livt1US9Jon40"
         }
       ]
     }
