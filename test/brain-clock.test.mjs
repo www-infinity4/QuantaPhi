@@ -36,9 +36,11 @@ const agentSkillsUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFil
 const runnerRequestSource=(await fs.readFile(new URL('../workers/infinity-brain-clock/runner-request.mjs',import.meta.url),'utf8')).replace('./alarm-retry.mjs',alarmUrl).replace('./ticket-selector.mjs',selectorUrl);
 const runnerRequestUrl='data:text/javascript;base64,'+Buffer.from(runnerRequestSource).toString('base64');
 const colorCoreUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/color-core.mjs',import.meta.url))).toString('base64');
+const colorHandoffSource=(await fs.readFile(new URL('../workers/infinity-brain-clock/color-handoff.mjs',import.meta.url),'utf8')).replace('./color-core.mjs',colorCoreUrl);
+const colorHandoffUrl='data:text/javascript;base64,'+Buffer.from(colorHandoffSource).toString('base64');
 const assignedJobScopeUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/assigned-job-scope.mjs',import.meta.url))).toString('base64');
 const ownerAuditDraftUrl='data:text/javascript;base64,'+Buffer.from((await fs.readFile(new URL('../workers/infinity-brain-clock/owner-audit-draft.mjs',import.meta.url),'utf8')).replace('./conversation-work-audit.mjs',new URL('../workers/infinity-brain-clock/conversation-work-audit.mjs',import.meta.url).href)).toString('base64');
-const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./continuity-snapshot.mjs",new URL("../workers/infinity-brain-clock/continuity-snapshot.mjs",import.meta.url).href).replace("./color-core.mjs",colorCoreUrl).replace("./assigned-job-scope.mjs",assignedJobScopeUrl).replace("./technical-handoff.mjs",handoffUrl).replace('./source-review.mjs',sourceReviewUrl).replace("./phone-tool.mjs",phoneUrl).replace("./conversation-memory.mjs",conversationUrl).replace('./owner-audit-draft.mjs',ownerAuditDraftUrl).replace("./red-sectors.mjs",redUrl).replace("./alarm-retry.mjs",alarmUrl).replace("./owner-task-clock.mjs",clockUrl).replace("./autopilot-triage.mjs",autopilotUrl).replace("./agent-skills.mjs",agentSkillsUrl).replace("./runner-request.mjs",runnerRequestUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./ticket-selector.mjs',selectorUrl).replace('./runner-candidate-page.mjs',new URL('../workers/infinity-brain-clock/runner-candidate-page.mjs',import.meta.url).href).replace('./runner-claim-idle.mjs',runnerIdleUrl).replace('./deferred-recovery.mjs',recoveryUrl).replace('./ticket-status.mjs',ticketStatusUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
+const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./continuity-snapshot.mjs",new URL("../workers/infinity-brain-clock/continuity-snapshot.mjs",import.meta.url).href).replace("./color-core.mjs",colorCoreUrl).replace("./color-handoff.mjs",colorHandoffUrl).replace("./assigned-job-scope.mjs",assignedJobScopeUrl).replace("./technical-handoff.mjs",handoffUrl).replace('./source-review.mjs',sourceReviewUrl).replace("./phone-tool.mjs",phoneUrl).replace("./conversation-memory.mjs",conversationUrl).replace('./owner-audit-draft.mjs',ownerAuditDraftUrl).replace("./red-sectors.mjs",redUrl).replace("./alarm-retry.mjs",alarmUrl).replace("./owner-task-clock.mjs",clockUrl).replace("./autopilot-triage.mjs",autopilotUrl).replace("./agent-skills.mjs",agentSkillsUrl).replace("./runner-request.mjs",runnerRequestUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./ticket-selector.mjs',selectorUrl).replace('./runner-candidate-page.mjs',new URL('../workers/infinity-brain-clock/runner-candidate-page.mjs',import.meta.url).href).replace('./runner-claim-idle.mjs',runnerIdleUrl).replace('./deferred-recovery.mjs',recoveryUrl).replace('./ticket-status.mjs',ticketStatusUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
 const {default:brainWorker,BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source.replace('./runner-progress.mjs',new URL('../workers/infinity-brain-clock/runner-progress.mjs',import.meta.url).href).replace('./quick-card-browser.mjs',new URL('../workers/infinity-brain-clock/quick-card-browser.mjs',import.meta.url).href).replace('./direct-github.mjs',directGithubUrl).replace('./github-credential.mjs',credentialUrl).replace('./cloudflare-token-broker.mjs',cloudflareBrokerUrl).replace('./cloudflare-oauth-bootstrap.mjs',cloudflareBootstrapUrl).replace('./merge-receipt.mjs',mergeUrl)).toString('base64'));
 test('quick-card browser HTTP route denies guests and wrong origins before forwarding',async()=>{
  let forwarded=0;
@@ -897,4 +899,82 @@ test('repository plan fails closed after repeated malformed model JSON',async()=
  const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{WRITER_AI:{run:async()=>{modelCalls++;return {response:"{'invalid':'output'}"}}}});
  await assert.rejects(clock.runner(new Request('https://clock/runner/plan',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook',key:'key',leaseId:'lease',evidence:{}})})),/engine_model_json_invalid/);
  assert.equal(modelCalls,2,'Do not run open-ended retries');
+});
+
+
+test('signed Brain plans bounded color advice but never treats it as a provider-backed write',async()=>{
+ const job={id:'TASK-4',instructions:'Research a licensed provider feed and import approved records\n\nExecution plan\n- generated detail not owner scope',acceptance:['Verify source before ingest']};
+ const lease={key:'key',leaseId:'lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,repository:'www-infinity4/QuantaPhi',jobId:'TASK-4',ticketId:'TICKET',job};
+ const memory=new Map([['key',lease]]),seen=[];
+ const ai={run:async(model,input)=>{
+  const system=input.messages?.[0]?.content||'',payload=JSON.parse(input.messages[1].content);
+  if(/the (red|orange|blue) color role/i.test(system)){
+   const color=/the (red|orange|blue) color role/i.exec(system)[1];seen.push(color);
+   assert.doesNotMatch(payload.task,/generated detail/);
+   return {response:JSON.stringify({finding:'Advisory only '+color,nextAction:'Inspect pinned evidence',blockers:[],toolRequests:[]})};
+  }
+  seen.push('plan');
+  assert.equal(payload.evidence.roleHandoffStatus,'model_inference_completed');
+  assert.deepEqual(payload.evidence.roleHandoffs.map(x=>x.role),['red','orange','blue']);
+  assert.equal(payload.evidence.roleHandoffs.every(x=>x.authorizedOperationsPerformed===false),true);
+  return {response:JSON.stringify({summary:'Review provider scope',files:[],subtasks:[],blockers:[]})};
+ }};
+ const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{WRITER_AI:ai});
+ const res=await clock.runner(new Request('https://clock/runner/plan',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook',key:'key',leaseId:'lease',evidence:{pinnedSourceSha:'a'.repeat(40)}})}));
+ assert.equal(res.status,200);
+ const body=await res.json();
+ assert.equal(body.roleHandoffStatus,'model_inference_completed');
+ assert.equal(body.authorizedColorOperationsPerformed,false);
+ assert.deepEqual(seen,['red','orange','blue','plan']);
+});
+test('failed optional color inference cannot claim work or disable the existing scoped planner',async()=>{
+ const job={id:'TASK-5',instructions:'Design a universal renderer architecture',acceptance:['Bounded review']};
+ const lease={key:'key',leaseId:'lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,repository:'www-infinity4/QuantaPhi',jobId:'TASK-5',ticketId:'TICKET',job};
+ const memory=new Map([['key',lease]]);let calls=0;
+ const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{WRITER_AI:{run:async(model,options)=>{
+  calls++;
+  if(/the red color role/i.test(options.messages?.[0]?.content||''))throw Error('color-model-unavailable');
+  const payload=JSON.parse(options.messages[1].content);
+  assert.equal(payload.evidence.roleHandoffStatus,'model_inference_blocked');
+  assert.deepEqual(payload.evidence.roleHandoffs,[]);
+  return {response:JSON.stringify({summary:'Inspect existing source',files:[],subtasks:[],blockers:[]})};
+ }}});
+ const res=await clock.runner(new Request('https://clock/runner/plan',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook',key:'key',leaseId:'lease',evidence:{}})}));
+ assert.equal(res.status,200);
+ const body=await res.json();
+ assert.equal(body.roleHandoffStatus,'model_inference_blocked');
+ assert.deepEqual(body.roleHandoffs,[]);
+ assert.equal(body.authorizedColorOperationsPerformed,false);
+ assert.equal(calls,2);
+});
+
+
+test('signed runner-supplied color findings are reused without duplicate model inference',async()=>{
+ const job={id:'TASK-6',instructions:'Research the approved dataset and import verified source records',acceptance:['Review before any write']};
+ const lease={key:'key',leaseId:'lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,
+  repository:'www-infinity4/QuantaPhi',jobId:'TASK-6',ticketId:'TICKET',job};
+ const memory=new Map([['key',lease]]);
+ const findings={red:{finding:'Pinned source',nextAction:'Verify',blockers:[],requestedAppendages:[]},
+  orange:{finding:'Destination chosen',nextAction:'Apply source policy',blockers:[],requestedAppendages:[]}};
+ let aiCalls=0;
+ const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{
+  WRITER_AI:{run:async(model,options)=>{
+   aiCalls++;
+   assert.doesNotMatch(options.messages[0].content,/the (red|orange|blue) color role/i);
+   const payload=JSON.parse(options.messages[1].content);
+   assert.deepEqual(payload.evidence.colorFindings,findings);
+   assert.deepEqual(payload.evidence.roleHandoffs,[]);
+   assert.equal(payload.evidence.roleHandoffStatus,'runner_route_supplied');
+   return {response:JSON.stringify({summary:'Use runner source and existing scope',files:[],subtasks:[],blockers:[]})};
+  }}
+ });
+ const res=await clock.runner(new Request('https://clock/runner/plan',{method:'POST',
+  body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook',key:'key',leaseId:'lease',
+   evidence:{colorFindings:findings,runtime:{baseSha:'a'.repeat(40)}}})}));
+ assert.equal(res.status,200);
+ const result=await res.json();
+ assert.equal(result.roleHandoffStatus,'runner_route_supplied');
+ assert.equal(result.authorizedColorOperationsPerformed,false);
+ assert.deepEqual(result.roleHandoffs,[]);
+ assert.equal(aiCalls,1);
 });

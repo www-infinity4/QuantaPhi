@@ -74,3 +74,9 @@ No active owner-agent coordinator lease was verified or claimed. Do not overwrit
 
 - Added focused regression ensuring Add Template appears on a separate composer row. The original four-control photo/mic/speaker/Send grid remains intact at narrow Android widths, rather than silently moving Send to an isolated fifth slot.
 - New red-check commit `245a7f4bd4f036b3d73645f03b171157ecd4cf6a`; follow-up green check/CI receipt required. Source change is limited to a single DOM insert and this checkpoint; no Cloudflare changes, owner grants or wallet mutations.
+
+## Reconcile signed color GPT roles from later QuantaPhi main (2026-11-09 UTC)
+
+- Main advanced to `6d3a5e5985d2c549525ec247e776b4e4dd6e5c2c` via merged #1321, modifying six color role definitions in `bubbles-ai.js` after #1663's exact-head 79/79 green suite. The earlier PR branch lacks these newer definitions; replacing main chat with its older copy would regress the color brain.
+- Reconciliation: two-parent merge of #1663 head `e82bbbf8e39d52348aaf5dcc06ef755ec4157dae` and newer main `6d3a5e5985d2c549525ec247e776b4e4dd6e5c2c`. Base is the complete current main tree. Overlay only the existing PR's changed files by exact tree blob SHA; compose `bubbles-ai.js` from newer main, adding the minimal template planner + Add Template picker block. Keep newer role prompts unchanged.
+- Added regression to test the six signed role definitions alongside Add Template. Earlier feature head lacked all six by exact source inspection. Verify merged head with complete CI, independent GitHub approval, permitted merge, Cloudflare edge and signed Android separately. No owner token, wallet, Cloudflare or deployment changes.

@@ -63,3 +63,11 @@ test('Add Template lives in its own composer row so Send stays with the four ori
  assert.match(ui,/composer\.insertBefore\(templateOpen,actions\)/);
  assert.doesNotMatch(ui,/actions\.insertBefore\(templateOpen,mic\)/);
 });
+
+// Earlier feature head lacked all six current signed color role scopes (source RED).
+test('Add Template preserves signed color GPT role handoffs from latest QuantaPhi main',()=>{
+ const chat=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ for(const label of ["Purple · Coordinator and assimilation","Orange · Architect and decider","Blue · Verified transport","Green · Assembly and engineer","Red · Shared context","Yellow · Source explorer"])assert.ok(chat.includes(label),'missing signed color role: '+label);
+ assert.match(chat,/const templateOpen=create\('button','ba-control ba-template-open','Add Template'\)/);
+ assert.match(chat,/reusableBuildPlan=!embedded&&ownerReady/);
+});
