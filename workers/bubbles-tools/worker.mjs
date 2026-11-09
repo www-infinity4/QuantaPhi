@@ -1,4 +1,5 @@
 import {hasUnverifiedContextVerification} from '../../bubbles-evidence-provenance.mjs';
+export {hasUnverifiedContextVerification};
 import {ecosystemContextFor} from './ecosystem.mjs';
 import {isCapabilityDiscoveryQuestion,capabilityDirectory,capabilityDirectoryReply,capabilityContextFor,recommendCapabilities} from './capability-directory.mjs';
 import {wantsPublicX,publicXRead} from './public-x.mjs';
