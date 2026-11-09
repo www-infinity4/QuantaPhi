@@ -3,62 +3,244 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T03:01:25.285064Z",
+  "checked_at": "2026-11-09T03:31:53.932950Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "paul george",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-09T03:10:00Z",
+      "related_news_urls": [
+        "https://www.bostonglobe.com/2026/11/08/sports/celtics-bucks-preview-november-8-2026/",
+        "https://www.celticsblog.com/boston-celtics-game-previews/149669/boston-celtics-7-2-at-milwaukee-bucks-1-8-game-10-11-8-26",
+        "https://www.brewhoop.com/bucks-game-previews/80949/milwaukee-vs-boston-celtics-game-preview-discussion-start-time-tv-schedule-injury-report"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRjlzXQgqdZIBFirwZd9_qqjchM6frPzhnHDXhBKO0jYlTAts0o0LOetBb_pw",
+      "image_credit": "The Boston Globe",
+      "news": [
+        {
+          "url": "https://www.bostonglobe.com/2026/11/08/sports/celtics-bucks-preview-november-8-2026/",
+          "title": "Celtics at Bucks preview: Milwaukee on a five-game losing streak entering Sunday’s prime-time showdown",
+          "publisher": "The Boston Globe",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRjlzXQgqdZIBFirwZd9_qqjchM6frPzhnHDXhBKO0jYlTAts0o0LOetBb_pw"
+        },
+        {
+          "url": "https://www.celticsblog.com/boston-celtics-game-previews/149669/boston-celtics-7-2-at-milwaukee-bucks-1-8-game-10-11-8-26",
+          "title": "Boston Celtics (7-2) at Milwaukee Bucks (1-8) Game #10 11/8/26",
+          "publisher": "CelticsBlog",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToumSlgBWXj6TkoCcoLz8cNYO-2ELJRCGyOego6BHexg40-wWOoR6ZpgFVRVY"
+        },
+        {
+          "url": "https://www.brewhoop.com/bucks-game-previews/80949/milwaukee-vs-boston-celtics-game-preview-discussion-start-time-tv-schedule-injury-report",
+          "title": "Milwaukee Bucks vs. Boston Celtics Preview & Game Thread: Revenge game",
+          "publisher": "Brew Hoop",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJrBLbl0REU7pKFH8-HKCDpbTUfNSbNgTNXvfr3R0g_MVOJHvvWfizffBoFEA"
+        }
+      ]
+    },
+    {
+      "query": "paige bueckers",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-09T03:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/wnba/story/_/id/50401662/wings-paige-bueckers-azzi-fudd-talk-relationship-pod",
+        "https://www.foxnews.com/outkick-sports/paige-bueckers-azzi-fudd-confirm-breakup-split-year-before-becoming-teammates",
+        "https://www.nbcconnecticut.com/news/local/former-uconn-stars-paige-bueckers-azzi-fudd-announce-that-they-broke-up/3793349/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDZIMC88mFbyEoblYkklKZaCCPF6QEjwit308nLHa0wKcyk2FkPdqlKktxHN8",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/wnba/story/_/id/50401662/wings-paige-bueckers-azzi-fudd-talk-relationship-pod",
+          "title": "Wings' Paige Bueckers, Azzi Fudd talk relationship on pod",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDZIMC88mFbyEoblYkklKZaCCPF6QEjwit308nLHa0wKcyk2FkPdqlKktxHN8"
+        },
+        {
+          "url": "https://www.foxnews.com/outkick-sports/paige-bueckers-azzi-fudd-confirm-breakup-split-year-before-becoming-teammates",
+          "title": "Paige Bueckers and Azzi Fudd confirm breakup, say they split over a year before becoming teammates",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeJ0rsAeJwzqX7mkl0nUjpM9VsPvW0ZnwMJOxp3cEKU1rERgFxXSA8cfVmzso"
+        },
+        {
+          "url": "https://www.nbcconnecticut.com/news/local/former-uconn-stars-paige-bueckers-azzi-fudd-announce-that-they-broke-up/3793349/",
+          "title": "Former UConn stars Paige Bueckers, Azzi Fudd announce that they broke up",
+          "publisher": "NBC Connecticut",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRzOsSHY-2FK74G7u9EDM1HekfofZHQkXCz08Q9AUZvSdM2ZQigTmNmk0JaxA"
+        }
+      ]
+    },
+    {
+      "query": "pelicans",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-09T03:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/clippers-injury-report-vs-pelicans-224719276.html",
+        "https://www.covers.com/nba/pelicans-vs-clippers-prediction-picks-odds-nov-8-2026",
+        "https://www.nytimes.com/athletic/7764968/2026/11/08/pelicans-vs-clippers-stream-how-to-watch-nov-8/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpFL2RSkIgZ-fd79vQm2mz7KARrwx6ARMcIt4AIbSs2P_FsaSYq9bS33ASdMA",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/clippers-injury-report-vs-pelicans-224719276.html",
+          "title": "Clippers Injury Report vs. Pelicans: Short-Handed LA Trying to Avoid 8th Straight Loss",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpFL2RSkIgZ-fd79vQm2mz7KARrwx6ARMcIt4AIbSs2P_FsaSYq9bS33ASdMA"
+        },
+        {
+          "url": "https://www.covers.com/nba/pelicans-vs-clippers-prediction-picks-odds-nov-8-2026",
+          "title": "Pelicans vs Clippers Prediction, Picks & Best Bet for Tonight's NBA Game",
+          "publisher": "Covers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyJxausS244IiLyb0NUkMqmnhiTMBA2muqAqGNA8uKMKFZ3vqKgTJkb505ano"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7764968/2026/11/08/pelicans-vs-clippers-stream-how-to-watch-nov-8/",
+          "title": "How to watch Pelicans vs. Clippers: TV channel and streaming options for November 8",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoRz8A1GHM2LBTT7L8wpJEkZWYeuwJIrxe8Y6NN2WHp1I2SbMzCi5XTQOIY0E"
+        }
+      ]
+    },
+    {
+      "query": "santi aldama",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T03:00:00Z",
+      "related_news_urls": [
+        "https://www.dallasnews.com/sports/mavericks/article/santi-aldama-mavericks-offense-dallas-debut-nba-22518307.php",
+        "https://www.nba.com/mavs/news/santi-aldama-was-very-impressive-in-his-first-game-with-mavericks",
+        "https://roundtable.io/sports/nba/mavericks/video/mavs-injury-update-major-frontcourt-boost-coming-with-santi-aldama-return"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqiZQ5lepgQre-295yR_4hC8MoaEoo30eyT82WDJBATCndLgSU7eoEuJHEnGo",
+      "image_credit": "Dallas News",
+      "news": [
+        {
+          "url": "https://www.dallasnews.com/sports/mavericks/article/santi-aldama-mavericks-offense-dallas-debut-nba-22518307.php",
+          "title": "How Santi Aldama could change the dynamic of Mavericks' offense after his Dallas debut",
+          "publisher": "Dallas News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqiZQ5lepgQre-295yR_4hC8MoaEoo30eyT82WDJBATCndLgSU7eoEuJHEnGo"
+        },
+        {
+          "url": "https://www.nba.com/mavs/news/santi-aldama-was-very-impressive-in-his-first-game-with-mavericks",
+          "title": "Santi Aldama was very impressive in his first game with Mavericks",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRelwY73ZTZC5jSrcD_np9LnjGvOoaqJVxG7i5Mwi4amtIDcp2LrAUmseNUks4"
+        },
+        {
+          "url": "https://roundtable.io/sports/nba/mavericks/video/mavs-injury-update-major-frontcourt-boost-coming-with-santi-aldama-return",
+          "title": "Video - Mavs Injury Update: Major Frontcourt Boost Coming With Santi Aldama Return?",
+          "publisher": "roundtable.io",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh0bTXEoUegaook9xJnBT5-TV0w2dN4zhAJ6xAh7uEY6pQkxbNL3Y2DVleIGM"
+        }
+      ]
+    },
+    {
+      "query": "silver alert",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T02:50:00Z",
+      "related_news_urls": [
+        "https://www.wkrn.com/news/local-news/have-you-seen-him-silver-alert-issued-for-missing-williamson-county-man/",
+        "https://www.wsmv.com/2026/11/08/man-center-williamson-county-silver-alert-found-dead-tbi-says/",
+        "https://hoodline.com/2026/11/silver-alert-issued-for-missing-brentwood-man-61-last-seen-on-foot-saturday/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRR_tLluY1Jvy98HSLWHUYlUXToelifZUAczYmA2JEjH--P8Fw6FmL1H_w8310",
+      "image_credit": "WKRN News 2",
+      "news": [
+        {
+          "url": "https://www.wkrn.com/news/local-news/have-you-seen-him-silver-alert-issued-for-missing-williamson-county-man/",
+          "title": "Missing Williamson County man found dead after Silver Alert issued",
+          "publisher": "WKRN News 2",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRR_tLluY1Jvy98HSLWHUYlUXToelifZUAczYmA2JEjH--P8Fw6FmL1H_w8310"
+        },
+        {
+          "url": "https://www.wsmv.com/2026/11/08/man-center-williamson-county-silver-alert-found-dead-tbi-says/",
+          "title": "Man at center of Williamson County Silver Alert found dead, TBI says",
+          "publisher": "WSMV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHBI7RZKfeMHHU26hTsy1NQfZdFL5Q1R3GkMQUSCyqnH1Rl-h_kjBFUbixVmI"
+        },
+        {
+          "url": "https://hoodline.com/2026/11/silver-alert-issued-for-missing-brentwood-man-61-last-seen-on-foot-saturday/",
+          "title": "Silver Alert Issued for Missing Brentwood Man, 61, Last Seen on Foot Saturday",
+          "publisher": "Hoodline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Yy5OUhU-h4dmAzzRXOP9Uzws2tn9kz-dhavBwVTmVu-I14Cx01MJ2KWoeq0"
+        }
+      ]
+    },
     {
       "query": "ayo dosunmu",
       "approx_searches": "1000+",
       "published_at": "2026-11-09T02:40:00Z",
       "related_news_urls": [
-        "https://www.minnpost.com/sports/timberwolves/2026/11/the-dosunmu-dash-im-not-going-to-lie-thats-just-god/",
-        "https://www.aol.com/articles/ayo-dosunmu-stories-explain-chris-221555000.html",
-        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/05/ayo-dosunmu-i-know-i-came-here-at-the-trade-deadline/92634696007/"
+        "https://www.espn.com/nba/recap/_/gameId/401909947",
+        "https://www.startribune.com/minnesota-timberwolves-utah-jazz-score-today-live-lamelo-ball-stats-anthony-edwards-injury-update/601912402",
+        "https://www.nba.com/timberwolves/photos/wolves-pics-wolves-take-w-over-jazz-11-08-26"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDQQKUzStP9S9BG-G0Kre4Eypr3QoWviMRxYNLE-BppfYBB5JCQMzDitCPowQ",
-      "image_credit": "MinnPost",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmxns4x3rnOr6UWK_V7PS3qWFnsOtZ11Xk1NSHajnZcjUPEvHj3VI4XHFe0ug",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.minnpost.com/sports/timberwolves/2026/11/the-dosunmu-dash-im-not-going-to-lie-thats-just-god/",
-          "title": "The Dosunmu Dash: “I’m not going to lie, that’s just God.”",
-          "publisher": "MinnPost",
+          "url": "https://www.espn.com/nba/recap/_/gameId/401909947",
+          "title": "Timberwolves 115-100 Jazz (Nov 8, 2026) Game Recap",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDQQKUzStP9S9BG-G0Kre4Eypr3QoWviMRxYNLE-BppfYBB5JCQMzDitCPowQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmxns4x3rnOr6UWK_V7PS3qWFnsOtZ11Xk1NSHajnZcjUPEvHj3VI4XHFe0ug"
         },
         {
-          "url": "https://www.aol.com/articles/ayo-dosunmu-stories-explain-chris-221555000.html",
-          "title": "Ayo Dosunmu’s Stories Explain Chris Finch’s ‘Bad Blood’ Remark",
-          "publisher": "AOL.com",
+          "url": "https://www.startribune.com/minnesota-timberwolves-utah-jazz-score-today-live-lamelo-ball-stats-anthony-edwards-injury-update/601912402",
+          "title": "Wolves run win streak to four games, pulling away at home against one-win Jazz",
+          "publisher": "Star Tribune",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnHUDXO7wt8qQOG6-MgTsEaNhom8IXXe5WChlYDFi9kq59FMRWGVuZlEYP3zM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTZxebxMGfnzWHl7rjNkt8GRjoDA0GF5EZbvUfPywtVDU2HgO1f3EmRRXTLZo"
         },
         {
-          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/05/ayo-dosunmu-i-know-i-came-here-at-the-trade-deadline/92634696007/",
-          "title": "Ayo Dosunmu: I know I came here at the trade deadline …",
-          "publisher": "HoopsHype",
+          "url": "https://www.nba.com/timberwolves/photos/wolves-pics-wolves-take-w-over-jazz-11-08-26",
+          "title": "Wolves Pics: Wolves Take W Over Jazz | 11.08.26",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUFRKU3E3O0XL2Z8V_0g9yi67GWLM0vWUcl54b86fUjXq0z1ecGOtmsJ4GW6w"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTt-rO0dZxeiMcTaDVeL_4nwzbBIChwqeDhf2E5zJVLhbTNP6H8I3jbtGEoySI"
         }
       ]
     },
     {
       "query": "skye nicolson",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-09T02:40:00Z",
       "related_news_urls": [
-        "https://www.boxingnews24.com/boxing-shorts/watch/vjzz1sp_o7o/",
-        "https://sports.yahoo.com/articles/miyo-yoshida-fights-third-division-234251864.html",
-        "https://www.idahostatejournal.com/sports/national/yoshida-nicolson-boxing/image_d9b32604-f74a-5e35-af88-9fa702a24956.html"
+        "https://www.mostvaluablepromotions.com/mvpw-07-skye-nicolson-retains-wbc-title-against-miyo-yoshida/",
+        "https://www.wvnews.com/sports/pro/yoshida-nicolson-boxing/image_40499aac-b44c-5f52-b23e-a9688474a3a9.html",
+        "https://sports.yahoo.com/articles/miyo-yoshida-fights-third-division-234251864.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOpIuOPQAFdqmbzhR9M0_93n6n9CBz2kWXrUAcYWTPHI315vyyfdSxeMiM1uE",
-      "image_credit": "Boxing News 24",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMYDAuIoKpthLWq8vEs6NgOcTIdcjCtj1gG14FtI5xP5tqucIcGNlW-RkA12w",
+      "image_credit": "Most Valuable Promotions",
       "news": [
         {
-          "url": "https://www.boxingnews24.com/boxing-shorts/watch/vjzz1sp_o7o/",
-          "title": "Skye Nicolson FLEXES on Miyo Yoshida at WEIGH-IN 💪",
-          "publisher": "Boxing News 24",
+          "url": "https://www.mostvaluablepromotions.com/mvpw-07-skye-nicolson-retains-wbc-title-against-miyo-yoshida/",
+          "title": "MVPW-07: Skye Nicolson Retains WBC Title Against Miyo Yoshida",
+          "publisher": "Most Valuable Promotions",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOpIuOPQAFdqmbzhR9M0_93n6n9CBz2kWXrUAcYWTPHI315vyyfdSxeMiM1uE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMYDAuIoKpthLWq8vEs6NgOcTIdcjCtj1gG14FtI5xP5tqucIcGNlW-RkA12w"
+        },
+        {
+          "url": "https://www.wvnews.com/sports/pro/yoshida-nicolson-boxing/image_40499aac-b44c-5f52-b23e-a9688474a3a9.html",
+          "title": "Yoshida Nicolson Boxing",
+          "publisher": "WV News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfz8sezyDclWPT5d2IfqfqNJVf5UYz4R0QNiE1daz0y88jwdz-DYqVTmiJ89g"
         },
         {
           "url": "https://sports.yahoo.com/articles/miyo-yoshida-fights-third-division-234251864.html",
@@ -66,54 +248,12 @@
           "publisher": "Yahoo Sports",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBsye8uTzQDT0dwKUatzHfvPCbXv1fqqG0vNmw_UCijLkwc2RampPn757pmbA"
-        },
-        {
-          "url": "https://www.idahostatejournal.com/sports/national/yoshida-nicolson-boxing/image_d9b32604-f74a-5e35-af88-9fa702a24956.html",
-          "title": "Yoshida Nicolson Boxing",
-          "publisher": "Idaho State Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8nqG7_gjmP8V-aJVpos68CKiwTappN7OE_pcfPB-v-maKF_iUaPrSjEkOeXE"
-        }
-      ]
-    },
-    {
-      "query": "mike evans",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T02:30:00Z",
-      "related_news_urls": [
-        "https://www.49ers.com/news/49ers-rule-out-three-wide-receivers-vs-raiders-bosa-returns-to-full-practice-ahead-of-week-9-lvvssf",
-        "https://www.si.com/nfl/49ers/onsi/49ers-receive-sobering-injury-update-mike-evans",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/garafolo-evans-questionable-at-best-for-week-10"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsN9PqYFzM-GlL4C7HWTRbhrGGXkkfFga9OihOTjzo2gIWXIsS2vixlmLwg9A",
-      "image_credit": "San Francisco 49ers",
-      "news": [
-        {
-          "url": "https://www.49ers.com/news/49ers-rule-out-three-wide-receivers-vs-raiders-bosa-returns-to-full-practice-ahead-of-week-9-lvvssf",
-          "title": "49ers Rule Out Three Wide Receivers vs. Raiders; Bosa Returns to Full Practice Ahead of Week 9 #LVvsSF",
-          "publisher": "San Francisco 49ers",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsN9PqYFzM-GlL4C7HWTRbhrGGXkkfFga9OihOTjzo2gIWXIsS2vixlmLwg9A"
-        },
-        {
-          "url": "https://www.si.com/nfl/49ers/onsi/49ers-receive-sobering-injury-update-mike-evans",
-          "title": "49ers Receive Sobering Injury Update on Mike Evans",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ66uLo1xCWY9YORofXa2ZboyAZbrz3X3Xyorc_x6_3VCIF5xT6O7lxOW8WIIQ"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/garafolo-evans-questionable-at-best-for-week-10",
-          "title": "Garafolo: Evans \"questionable at best\" for Week 10",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3RVaM8V3d9KzydX-ekgxl_tVieN7rz_DJseUB4WkoqcttvMtEnsDzfeSMB2A"
         }
       ]
     },
     {
       "query": "nasa astronauts",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-09T02:30:00Z",
       "related_news_urls": [
         "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/",
@@ -148,16 +288,23 @@
     },
     {
       "query": "tyler herro",
-      "approx_searches": "2000+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-09T02:30:00Z",
       "related_news_urls": [
+        "https://dknetwork.draftkings.com/2026/11/08/what-happened-to-tyler-herro-live-injury-updates-for-bucks-vs-celtics-on-sunday-11-8-26/",
         "https://www.bostonglobe.com/2026/11/08/sports/celtics-bucks-preview-november-8-2026/",
-        "https://www.celticsblog.com/boston-celtics-game-previews/149669/boston-celtics-7-2-at-milwaukee-bucks-1-8-game-10-11-8-26",
-        "https://sportsbook.fanduel.com/basketball/nba/boston-celtics-@-milwaukee-bucks-36286504"
+        "https://www.celticsblog.com/boston-celtics-game-previews/149669/boston-celtics-7-2-at-milwaukee-bucks-1-8-game-10-11-8-26"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRjlzXQgqdZIBFirwZd9_qqjchM6frPzhnHDXhBKO0jYlTAts0o0LOetBb_pw",
-      "image_credit": "The Boston Globe",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9bxlPayZgskYXNMdz-PHxCuVUweZRheEeQkwpwIM0w9eyeWX-3G8V4guYwZ8",
+      "image_credit": "DraftKings Network",
       "news": [
+        {
+          "url": "https://dknetwork.draftkings.com/2026/11/08/what-happened-to-tyler-herro-live-injury-updates-for-bucks-vs-celtics-on-sunday-11-8-26/",
+          "title": "What happened to Tyler Herro? Live injury updates for Bucks vs. Celtics on Sunday 11/8/26",
+          "publisher": "DraftKings Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9bxlPayZgskYXNMdz-PHxCuVUweZRheEeQkwpwIM0w9eyeWX-3G8V4guYwZ8"
+        },
         {
           "url": "https://www.bostonglobe.com/2026/11/08/sports/celtics-bucks-preview-november-8-2026/",
           "title": "Celtics at Bucks preview: Milwaukee on a five-game losing streak entering Sunday’s prime-time showdown",
@@ -171,54 +318,12 @@
           "publisher": "CelticsBlog",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToumSlgBWXj6TkoCcoLz8cNYO-2ELJRCGyOego6BHexg40-wWOoR6ZpgFVRVY"
-        },
-        {
-          "url": "https://sportsbook.fanduel.com/basketball/nba/boston-celtics-@-milwaukee-bucks-36286504",
-          "title": "Boston Celtics @ Milwaukee Bucks Odds",
-          "publisher": "FanDuel Sportsbook",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSad9ciGe8ffcbL4L11kQ1-UrSAfdQMCoY7n1Xxy8PsRfooEWXuCHnfmUtnCMA"
-        }
-      ]
-    },
-    {
-      "query": "cairo santos",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T02:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/patrick-mannelly-talks-heart-health-162428053.html",
-        "https://ontapsportsnet.com/nfl/chicago-bears/patrick-mannelly-heartflow-gamefilm-bears/",
-        "https://abc7chicago.com/post/bucs-bears-game-today-bucky-irving-tampa-bay-buccaneers-visit-dandre-swift-chicago-soldier-field/20024649/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiSLh5d23I0aSStEc7InQDK1rmtTZlUh3k3rcFwdbObATkvow4DNh37kSKguc",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/patrick-mannelly-talks-heart-health-162428053.html",
-          "title": "Patrick Mannelly talks heart health, Bears season, Cairo Santos & more",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiSLh5d23I0aSStEc7InQDK1rmtTZlUh3k3rcFwdbObATkvow4DNh37kSKguc"
-        },
-        {
-          "url": "https://ontapsportsnet.com/nfl/chicago-bears/patrick-mannelly-heartflow-gamefilm-bears/",
-          "title": "Get Ahead of the Game: Patrick Mannelly on His Mom, His Heart, and What Former Players Can't See Coming",
-          "publisher": "On Tap Sports Net",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRp0qOO6gLzcJmGciAzSzHgMLdnQ9osnc_QbrUxxlONXNIaN_5QMYFynFzsJVk"
-        },
-        {
-          "url": "https://abc7chicago.com/post/bucs-bears-game-today-bucky-irving-tampa-bay-buccaneers-visit-dandre-swift-chicago-soldier-field/20024649/",
-          "title": "Bucs-Bears game today: Bucky Irving and Tampa Bay Buccaneers visit D'Andre Swift and Chicago Bears at Soldier Field",
-          "publisher": "ABC7 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_5JQkiuAaztdj-75LCCAyrD8PDztsJ_w40A6UA4rsVaWXF4Yj6o1-eE6I3Ho"
         }
       ]
     },
     {
       "query": "shakira",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-09T02:30:00Z",
       "related_news_urls": [
         "https://www.telemundo.com/shows/hoy-dia/famosos/video/captan-a-shakira-paseando-con-su-papa-por-las-calles-de-barranquilla-tmvo13242048",
@@ -248,111 +353,6 @@
           "publisher": "MARCA",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIaCxufaOIocaaoJXPQlHzjMt-6cuw0V1GNYn3rkcvEd7EHkY7NKyag5AHEDg"
-        }
-      ]
-    },
-    {
-      "query": "gilded age cast",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T02:30:00Z",
-      "related_news_urls": [
-        "https://people.com/meet-the-real-life-loves-the-gilded-age-season-4-cast-12236988",
-        "https://www.mentalfloss.com/entertainment/tv/real-historical-figures-gilded-ag",
-        "https://www.justjared.com/2026/11/08/the-gilded-age-cast-real-life-relationships-married-divorced-single/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2qhY_h6R7O-pRYiW3ClRBQMMWB8bpgLkz6UoaOy9bHHZA_8Ff0bVMgHWrBcc",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/meet-the-real-life-loves-the-gilded-age-season-4-cast-12236988",
-          "title": "Meet ‘The Gilded Age’ Season 4 Cast’s Real-Life Partners",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2qhY_h6R7O-pRYiW3ClRBQMMWB8bpgLkz6UoaOy9bHHZA_8Ff0bVMgHWrBcc"
-        },
-        {
-          "url": "https://www.mentalfloss.com/entertainment/tv/real-historical-figures-gilded-ag",
-          "title": "10 Real-Life Historical Figures in HBO’s 'The Gilded Age'",
-          "publisher": "Mental Floss",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRej4wZq-FN5NTRy7Wo0nZRbp5eHHeJ443QlielXoKxM6NVHX831SruFImHu4g"
-        },
-        {
-          "url": "https://www.justjared.com/2026/11/08/the-gilded-age-cast-real-life-relationships-married-divorced-single/",
-          "title": "'The Gilded Age' Cast Real-Life Relationships Revealed: Who's Married, Divorced or Single?",
-          "publisher": "Just Jared",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEFvewkZCLisSdi7yojjBUGonX2LNM_VqtcHJyUr5U5Pp4B40iO2ARaN5CEZs"
-        }
-      ]
-    },
-    {
-      "query": "karely ruiz",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T02:30:00Z",
-      "related_news_urls": [
-        "https://www.infobae.com/mexico/2026/11/08/karely-ruiz-denuncia-que-le-quitaron-su-ropa-interior-antes-de-entrar-a-la-mansion-vip-2-que-paso/",
-        "https://www.milenio.com/espectaculos/television/a-que-hora-empieza-la-mansion-vip-2-hoy-8-noviembre",
-        "https://www.tvynovelas.com/famosos/el-oscuro-pasado-de-bellakath-nueva-integrante-de-la-mansion-vip"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvsEzMYJb25RKfdCVHmF_D7df8L5MohinYQyK1f8Yy1MRMuwLueCCLJoyalXs",
-      "image_credit": "Infobae",
-      "news": [
-        {
-          "url": "https://www.infobae.com/mexico/2026/11/08/karely-ruiz-denuncia-que-le-quitaron-su-ropa-interior-antes-de-entrar-a-la-mansion-vip-2-que-paso/",
-          "title": "Karely Ruiz denuncia que le quitaron su ropa interior antes de entrar a La Mansión VIP 2: qué pasó",
-          "publisher": "Infobae",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvsEzMYJb25RKfdCVHmF_D7df8L5MohinYQyK1f8Yy1MRMuwLueCCLJoyalXs"
-        },
-        {
-          "url": "https://www.milenio.com/espectaculos/television/a-que-hora-empieza-la-mansion-vip-2-hoy-8-noviembre",
-          "title": "¿A qué HORA ver La Mansión VIP 2? Horario para ver el ESTRENO y el 24/7 del reality de HotSpanish",
-          "publisher": "MILENIO",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRALNQ9m_tqUTP5fiqKpvXK79K0R7EbmQ6wKMEm-tlx6sgD359AGtToLE7tDwM"
-        },
-        {
-          "url": "https://www.tvynovelas.com/famosos/el-oscuro-pasado-de-bellakath-nueva-integrante-de-la-mansion-vip",
-          "title": "El oscuro pasado de Bellakath, nueva integrante de La Mansión VIP",
-          "publisher": "TVyNovelas",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFRwVWhfkyamf5hv70tH9RBhatOssnsh1quZCl7lgksv1L3TY3hNGK4JJ0miE"
-        }
-      ]
-    },
-    {
-      "query": "sabonis",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T02:30:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/domantas-sabonis-knee-questionable-sunday",
-        "https://www.rotowire.com/basketball/headlines/domantas-sabonis-injury-downgraded-to-questionable-sunday-538204",
-        "https://heatnation.com/team-news/heat-vs-kings-full-injury-report-released-ahead-of-sunday-matchup/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR-F7-6Gxi7ptvY8d8P4Dlbgq56Tso1su6ZgMUZ6J800B-K5HU0-Au4in3eig",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/domantas-sabonis-knee-questionable-sunday",
-          "title": "Domantas Sabonis (knee) questionable Sunday",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR-F7-6Gxi7ptvY8d8P4Dlbgq56Tso1su6ZgMUZ6J800B-K5HU0-Au4in3eig"
-        },
-        {
-          "url": "https://www.rotowire.com/basketball/headlines/domantas-sabonis-injury-downgraded-to-questionable-sunday-538204",
-          "title": "Domantas Sabonis Injury: Downgraded to questionable Sunday",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDEKKD1tc2MDOLzJn9PnVrOyaSUeFZeSYtPwF8ZH8hcfWzZY5MT9L-qiqxBzw"
-        },
-        {
-          "url": "https://heatnation.com/team-news/heat-vs-kings-full-injury-report-released-ahead-of-sunday-matchup/",
-          "title": "Heat vs. Kings full injury report released ahead of Sunday matchup",
-          "publisher": "Heat Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPufKxwQaQxfsJtFgvDUi3ShIDAwRmRK78d-DQCAs9-33ELH0JqDqH3DqiUSQ"
         }
       ]
     }
