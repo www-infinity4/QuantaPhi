@@ -22,6 +22,7 @@ interface Env {
   EVENT_QUEUE?: QueueProducer;
   INGEST_TOKEN: string;
   INGEST_MODE?: 'direct' | 'queue';
+  DIRECT_STAGING_ALLOWED?: string;
   USER_IDENTITY_HMAC_SECRET?: string;
   GEO_STORAGE_ENABLED?: string;
 }
@@ -282,9 +283,12 @@ export default {
       }
     }
     if(mode!=='direct') return response({error:'invalid INGEST_MODE configuration'},503);
+    // Production must use Queues. Direct writes are a deliberate staging-only
+    // exception, and even there SQL must enforce the current consent row.
+    if(env.DIRECT_STAGING_ALLOWED!=='true') return response({error:'direct ingestion disabled'},503);
     if(!env.DB) return response({error:'database unavailable'},503);
     try {
-      const {inserted,totalEvents}=await persist(env.DB,[{data:parsed.data,item}]);
+      const {inserted,totalEvents}=await persist(env.DB,[{data:parsed.data,item}],true);
       return response({received:totalEvents,inserted,duplicates:totalEvents-inserted},inserted?201:200);
     } catch {
       console.error('D1 ingest failed');
