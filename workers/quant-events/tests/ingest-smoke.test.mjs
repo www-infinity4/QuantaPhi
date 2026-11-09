@@ -5,10 +5,12 @@ import {readFileSync} from 'node:fs';
 import {DatabaseSync} from 'node:sqlite';
 import worker from '../src/ingest.ts';
 
-const SCHEMA = readFileSync(new URL('../migrations/0001_quant_events.sql', import.meta.url), 'utf8');
+const USER_ID='ev_'+'a'.repeat(64);
+const SCHEMA = ['../migrations/0001_quant_events.sql','../migrations/0002_quant_event_consents.sql']
+  .map(file=>readFileSync(new URL(file,import.meta.url),'utf8')).join('\n');
 const ENDPOINT = 'https://quantaphi.org/v1/events';
 const sample = (n = 2) => ({
-  user: {id: 'user-12345678', device_type: ' MOBILE '},
+  user: {id: USER_ID, device_type: ' MOBILE '},
   queries: Array.from({length: n}, (_, i) => ({
     id: 'event-' + String(i).padStart(8, '0'),
     event_type: '  Watches   Football ',
@@ -16,7 +18,7 @@ const sample = (n = 2) => ({
   }))
 });
 const SIGNING_SECRET = 'test-identity-secret';
-function signedHeaders(userId = 'user-12345678', geo = '1') {
+function signedHeaders(userId = USER_ID, geo = '1') {
   const ts=String(Date.now());
   const signature=createHmac('sha256',SIGNING_SECRET).update('v1\n'+userId+'\n'+ts+'\n'+geo).digest('hex');
   return {'x-quant-identity-time':ts,'x-quant-identity-geo':geo,'x-quant-identity-signature':signature};
@@ -32,6 +34,8 @@ function dbFixture() {
   const sqlite = new DatabaseSync(':memory:');
   sqlite.exec('PRAGMA foreign_keys=ON');
   sqlite.exec(SCHEMA);
+  sqlite.prepare('INSERT INTO quant_event_consents (user_id,purpose,policy_version,consented_at_ms) VALUES(?,?,?,?)')
+    .run(USER_ID,'analytics','v1',Date.now()-1000);
   const DB = {
     prepare(sql) {return {bind(...args) {return {sql,args};}};},
     async batch(statements) {
@@ -116,7 +120,7 @@ test('foreign-key deletion removes user-owned events',async()=>{
   const {DB,sqlite}=dbFixture();
   try{
     await worker.fetch(request(sample()),{DB,INGEST_TOKEN:'local-test-secret',USER_IDENTITY_HMAC_SECRET:SIGNING_SECRET,GEO_STORAGE_ENABLED:'true',INGEST_MODE:'direct'});
-    sqlite.prepare('DELETE FROM users WHERE id=?').run('user-12345678');
+    sqlite.prepare('DELETE FROM users WHERE id=?').run(USER_ID);
     assert.equal(sqlite.prepare('SELECT count(*) n FROM events').get().n,0);
   }finally{sqlite.close();}
 });
