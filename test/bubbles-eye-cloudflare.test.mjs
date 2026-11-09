@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {checkEyeClaims,routeEyeCapture,capturePublicBubbles,EYE_WORKFLOW,EYE_AUDIENCE} from '../workers/bubbles-cloud-browser/eye-capture.mjs';
+import {diagnoseCapsule} from '../tools/eye/diagnose.mjs';
 const now=1800000000;
 const claims={iss:'https://token.actions.githubusercontent.com',aud:EYE_AUDIENCE,
  repository:'www-infinity4/QuantaPhi',repository_id:'1380883643',workflow_ref:EYE_WORKFLOW,
@@ -57,4 +58,24 @@ test('reject screenshot failures and always close the disposable Chrome session'
  const {env,inspect}=fakeBrowser({failure:true});
  await assert.rejects(capturePublicBubbles(env,'desktop',{pause:async()=>{}}),/eye_screenshot_invalid/);
  assert.equal(inspect().closed,1);
+});
+
+test('no clean visual result without verified screenshots',()=>{
+ const result=diagnoseCapsule({purple:{accepted:false},orange:{overflow:false}});
+ assert.equal(result.status,'capture_unverified');
+ assert.equal(result.looks_ok,false);
+ assert.equal(result.patch_hypothesis,null);
+});
+test('a verified clean capsule can be accepted without paid model inference',()=>{
+ const result=diagnoseCapsule({purple:{accepted:true},orange:{overflow:false,
+  brokenImages:[],overlaps:[],offscreenRight:[],blankCanvases:[]},errors:[]});
+ assert.equal(result.status,'clean');assert.equal(result.looks_ok,true);assert.deepEqual(result.evidence,[]);
+});
+test('observed defects remain reviewable evidence, never fabricated source edits',()=>{
+ const result=diagnoseCapsule({purple:{accepted:true},orange:{overflow:true,
+  brokenImages:[{alt:'missing'}],overlaps:[{a:'Go',b:'Next'}],offscreenRight:[],blankCanvases:[]},
+  errors:[{kind:'http_404'}]});
+ assert.equal(result.status,'issues_observed');assert.equal(result.looks_ok,false);
+ assert.equal(result.severity,'medium');assert.equal(result.patch_hypothesis,null);
+ assert.deepEqual(result.evidence,['horizontal_overflow','broken_images:1','overlapping_controls:1','browser_errors:1']);
 });
