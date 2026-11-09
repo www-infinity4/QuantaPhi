@@ -1,19 +1,31 @@
 # QuantaPhi · Cloudflare D1 event ingestion, 100k+ DAU profile
 
-**Status:** security-reviewed source proposal staged on QuantaPhi draft PR #1884; **not merged, migrated or deployed**. Read [`SCALING-100K-DAU.md`](./SCALING-100K-DAU.md) for scaling decisions, read-only Cloudflare schema observations, budget/privacy gates, and BI options.
+**Status:** source PR #1884 remains unmerged; isolated Cloudflare staging D1 and Queues exist with **synthetic HTTP pull → D1 canary readback**. No live Worker deployment, consent workflow activation, production event collection or Wallet integration was enabled. Read [`SCALING-100K-DAU.md`](./SCALING-100K-DAU.md) for scaling decisions, read-only Cloudflare schema observations, budget/privacy gates, and BI options.
 
 ## Package contents
 
 | File | Purpose |
 |---|---|
-| `migrations/0001_quant_events.sql` | New `users`/`events` tables, compound user/type/time index, time retention index |
-| `src/ingest.ts` | Strictly validated trusted POST ingestion; D1 multi-row prepared statements and optional Cloudflare Queue consumer |
-| `wrangler.queue.example.jsonc` | **Example only** of a Queues-backed Worker profile, not a live configuration |
-| `tests/ingest.test.mjs` | Existing endpoint regression/security tests |
-| `tests/scaling.test.mjs` | Multi-row, Queue acceptance, retry, timestamp, fail-closed tests |
-| `tests/sqlite-worker.test.mjs` | Real in-memory SQLite HTTP replay and Queue consumer integration tests |
-| `tests/test_schema.py` | SQLite schema, index query plan, FK, timestamp and deletion tests |
-| `tests/identity-security.test.mjs` | Signed user identity, consent gating, and fail-closed ingestion tests |
+| `migrations/0001_quant_events.sql` | Isolated `users`/`events` tables, compound user/type/time and retention indexes |
+| `migrations/0002_quant_event_consents.sql` | Explicit per-user opt-in/revocation records |
+| `src/ingest.ts` | Trusted signed-identity ingress, Queue producer/consumer, transactional consent guards |
+| `src/wallet-bridge.mjs` | Wallet-verified private service-bound bridge; no browser signing secrets |
+| `src/consent-control.mjs` | Explicit Wallet-authenticated grant, revoke and status service |
+| `wrangler.queue.example.jsonc` | Example Queue/D1 binding layout; not deployed |
+| `wrangler.bridge.example.jsonc` | Example Wallet/consent/ingestion service bindings; not deployed |
+| `tests/bridge-ingest-integration.test.mjs` | Synthetic end-to-end Wallet, consent, signature, Queue test |
+| `tests/consent-control.test.mjs` | Real SQLite consent grant, status and revocation |
+| `tests/copilot-review-regressions.test.mjs` | Response security, error semantics, HMAC cache, diagnostics and documentation |
+| `tests/identity-security.test.mjs` | HMAC identity and geo-consent security boundaries |
+| `tests/ingest-smoke.test.mjs` | D1/SQLite ingestion, deduplication and batching |
+| `tests/privacy-page.test.mjs` | Disabled opt-in UI and account page contracts |
+| `tests/queue-consent.test.mjs` | Consent-gated D1 consumer, revocation replay and staging lock |
+| `tests/site-route.test.mjs` | Fail-closed site Worker routes |
+| `tests/wallet-bridge.test.mjs` | Verified Wallet subject, bridge signing and privacy constraints |
+| `.github/workflows/quant-events-ingestion.yml` | Node 22, real SQLite and schema CI coverage |
+| `/quant-events-privacy.html`, `/quant-events-privacy.mjs` | Optional first-party analytics preferences UI |
+
+All paths above are repository paths relative to `workers/quant-events/` except root-level paths explicitly prefixed with `/` and the workflow at repository root.
 
 ## Event request contract
 
