@@ -5,6 +5,13 @@ import {
  COLOR_MODEL,colorCoreProfile,colorCoreSystemPrompt,validateColorThoughtResponse
 } from './color-core.mjs';
 
+export function extractAssignedColorTask(instructions){
+ if(typeof instructions!=='string')return '';
+ const source=instructions.trim().slice(0,12000);
+ const marker=/\n\s*\nExecution plan\b/i.exec(source);
+ return (marker?source.slice(0,marker.index):source).trim().slice(0,2400);
+}
+
 export function routeColorHandoffs(task){
  const s=String(task||'').trim();
  if(!s)return [];
