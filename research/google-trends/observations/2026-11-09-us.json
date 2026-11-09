@@ -3,12 +3,12 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T06:44:16.781404Z",
+  "checked_at": "2026-11-09T07:01:36.830662Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
       "query": "michaella love is blind",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-09T06:30:00Z",
       "related_news_urls": [
         "https://www.netflix.com/tudum/articles/love-is-blind-season-11-matt-beekeeper-michaella-interview",
@@ -151,13 +151,20 @@
       "approx_searches": "200+",
       "published_at": "2026-11-09T06:00:00Z",
       "related_news_urls": [
+        "https://www.ntdtv.com/gb/2026/11/08/a104149097.html",
         "https://www.aboluowang.com/2026/1109/2455188.html",
-        "https://zj.ifeng.com/c/8xrjfAVyI0A",
-        "https://zj.ifeng.com/c/8xu533m1wVC"
+        "https://zj.ifeng.com/c/8xrjfAVyI0A"
       ],
       "image_url": null,
-      "image_credit": "阿波罗新闻网",
+      "image_credit": "新唐人電視台",
       "news": [
+        {
+          "url": "https://www.ntdtv.com/gb/2026/11/08/a104149097.html",
+          "title": "杭州臨平萬達廣場驚傳持槍搶劫案 多人死亡（視頻）",
+          "publisher": "新唐人電視台",
+          "description": "",
+          "image_url": null
+        },
         {
           "url": "https://www.aboluowang.com/2026/1109/2455188.html",
           "title": "杭州惊传持枪抢劫案 多人死亡",
@@ -171,13 +178,6 @@
           "publisher": "凤凰网",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSR0lZeUfBimLi2RWJCn3m_eSRWMgAdhEvp4exmBlKtkEqtA02MydA6EMVey00"
-        },
-        {
-          "url": "https://zj.ifeng.com/c/8xu533m1wVC",
-          "title": "杭州又多一个“谷”！临平为何瞄准国际美妆？",
-          "publisher": "凤凰网",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhbdNewMQw0OjIxUPIAcvZHRiKnmREEYIXcu-a9SPch2vpdRWD7ADl0EoRww0"
         }
       ]
     },
@@ -291,19 +291,19 @@
       "approx_searches": "200+",
       "published_at": "2026-11-09T05:20:00Z",
       "related_news_urls": [
-        "https://www.hotnewhiphop.com/1016056-claressa-sheilds-gervonta-davis-beef-shakur",
+        "https://sports.yahoo.com/articles/claressa-shields-makes-serious-allegation-022348427.html",
         "https://www.instagram.com/p/DfVaxrWAbi5/",
-        "https://sports.yahoo.com/articles/claressa-shields-makes-serious-allegation-022348427.html"
+        "https://www.hotnewhiphop.com/1016056-claressa-sheilds-gervonta-davis-beef-shakur"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpG_yRhjJWZ73MKr9CG40XlD2M2TGs0K5Gw4GQquRm1USq68AQc4dYmvUYcQo",
-      "image_credit": "HotNewHipHop",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0xTNTbPWqXIg41XI5MGatg3SdKocxf-k8ypLSxq9cV_XUhJz0KAk5ljBynfg",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.hotnewhiphop.com/1016056-claressa-sheilds-gervonta-davis-beef-shakur",
-          "title": "Claressa Shields Isn't Done With Gervonta Davis As Feud Gets Personal",
-          "publisher": "HotNewHipHop",
+          "url": "https://sports.yahoo.com/articles/claressa-shields-makes-serious-allegation-022348427.html",
+          "title": "Claressa Shields Makes Serious Allegation Against Gervonta Davis — 'I Saw It With My Own Two Eyes'",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpG_yRhjJWZ73MKr9CG40XlD2M2TGs0K5Gw4GQquRm1USq68AQc4dYmvUYcQo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0xTNTbPWqXIg41XI5MGatg3SdKocxf-k8ypLSxq9cV_XUhJz0KAk5ljBynfg"
         },
         {
           "url": "https://www.instagram.com/p/DfVaxrWAbi5/",
@@ -313,11 +313,11 @@
           "image_url": null
         },
         {
-          "url": "https://sports.yahoo.com/articles/claressa-shields-makes-serious-allegation-022348427.html",
-          "title": "Claressa Shields Makes Serious Allegation Against Gervonta Davis — 'I Saw It With My Own Two Eyes'",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.hotnewhiphop.com/1016056-claressa-sheilds-gervonta-davis-beef-shakur",
+          "title": "Claressa Shields Isn't Done With Gervonta Davis As Feud Gets Personal",
+          "publisher": "HotNewHipHop",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0xTNTbPWqXIg41XI5MGatg3SdKocxf-k8ypLSxq9cV_XUhJz0KAk5ljBynfg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpG_yRhjJWZ73MKr9CG40XlD2M2TGs0K5Gw4GQquRm1USq68AQc4dYmvUYcQo"
         }
       ]
     },
