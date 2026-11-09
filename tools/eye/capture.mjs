@@ -65,8 +65,8 @@ export async function run(){
   yellow:{mobile:observed.mobile.yellow,desktop:observed.desktop.yellow},orange,errors,
   purple:{accepted,reason:accepted?'four_screenshots_present':'screenshots_missing'},
   fullHeightClipped:{mobile:observed.mobile.fullHeightClipped,desktop:observed.desktop.fullHeightClipped}};
- await writeFile(output+'/capsule.json',JSON.stringify(capsule,null,2)+'\\n');
- await writeFile(output+'/diagnosis.json',JSON.stringify(diagnoseCapsule(capsule),null,2)+'\\n');
+ await writeFile(output+'/capsule.json',JSON.stringify(capsule,null,2)+'\n');
+ await writeFile(output+'/diagnosis.json',JSON.stringify(diagnoseCapsule(capsule),null,2)+'\n');
  if(!accepted)throw Error('eye_capture_unverified');
  console.log('BUBBLES_EYE_ACCEPTED '+JSON.stringify({accepted:true,viewports:['mobile','desktop'],images:4,
   problems:diagnoseCapsule(capsule).evidence.length,patchApplied:false}));
