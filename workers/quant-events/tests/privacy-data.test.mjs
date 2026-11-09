@@ -5,6 +5,7 @@ import {readFileSync} from 'node:fs';
 import {DatabaseSync} from 'node:sqlite';
 import {handleEventData} from '../src/privacy-data.mjs';
 import ingest from '../src/ingest.ts';
+import site from '../../quantaphi-site/worker.js';
 
 const token='sq_'+'p'.repeat(40);
 const secret='staging-synthetic-privacy-data-secret';
@@ -145,4 +146,35 @@ test('failed or missing atomic batch must never claim erasure succeeded',async()
       assert.equal(count(f.sql,'events'),1);
     }
   }finally{f.close();}
+});
+
+test('site export and erase route remains disabled without separate flag and service',async()=>{
+  const req=new Request(url,{headers:{Origin:'https://quantaphi.org'}});
+  const disabled=await site.fetch(req,{EVENTS_BRIDGE:{async fetch(){throw Error('must not call');}}},{});
+  assert.equal(disabled.status,503);
+  assert.equal(disabled.headers.get('x-content-type-options'),'nosniff');
+  assert.equal((await disabled.json()).error,'data_management_disabled');
+  const noService=await site.fetch(req,{EVENT_DATA_MANAGEMENT_ENABLED:'true'},{});
+  assert.equal(noService.status,503);
+  assert.equal((await noService.json()).error,'data_service_unavailable');
+  let forwarded=0;
+  const allowed=await site.fetch(req,{EVENT_DATA_MANAGEMENT_ENABLED:'true',
+    EVENTS_BRIDGE:{async fetch(r){forwarded++;assert.equal(r.url,req.url);return Response.json({events:[],nextCursor:null});}}
+  },{});
+  assert.equal(allowed.status,200);
+  assert.equal(forwarded,1);
+});
+test('Android-readable privacy UI has deliberate export and erase controls',()=>{
+  const page=readFileSync(new URL('../../../quant-events-privacy.html',import.meta.url),'utf8');
+  const script=readFileSync(new URL('../../../quant-events-privacy.mjs',import.meta.url),'utf8');
+  assert.match(page,/id="export-events"/);
+  assert.match(page,/id="confirm-erasure" type="checkbox"/);
+  assert.match(page,/id="erase-events"[^>]+disabled/);
+  assert.match(page,/This does not erase your Wallet, purchases, or coins/);
+  assert.match(script,/exportButton\.addEventListener\('click'/);
+  assert.match(script,/eraseButton\.addEventListener\('click'/);
+  assert.match(script,/if\(!complete\)throw Error\('export_too_large'\)/);
+  assert.match(script,/confirm:'DELETE_MY_ANALYTICS'/);
+  assert.match(script,/answer\.erased!==true/);
+  assert.doesNotMatch(script,/localStorage\.setItem\([^)]*INGEST_TOKEN/);
 });
