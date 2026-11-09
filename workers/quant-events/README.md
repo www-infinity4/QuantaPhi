@@ -21,6 +21,7 @@
 | `tests/privacy-page.test.mjs` | Disabled opt-in UI and account page contracts |
 | `tests/queue-consent.test.mjs` | Consent-gated D1 consumer, revocation replay and staging lock |
 | `tests/site-route.test.mjs` | Fail-closed site Worker routes |
+| `tests/staging-deploy-gate.test.mjs` | Private Worker staging configuration and release-gated CI contract |
 | `tests/wallet-bridge.test.mjs` | Verified Wallet subject, bridge signing and privacy constraints |
 | `.github/workflows/quant-events-ingestion.yml` | Node 22, real SQLite and schema CI coverage |
 | `/quant-events-privacy.html`, `/quant-events-privacy.mjs` | Optional first-party analytics preferences UI |
@@ -192,3 +193,20 @@ live consent was performed by staging this source.
 - Isolated Cloudflare D1 `quantaphi-quant-events-staging` (not production) contains both SQL migrations; staging Queue and DLQ have a small HTTP pull test consumer. Synthetic events were pushed/pulled, consent-gated SQL inserted and read back once, second event was stopped after revocation, both messages were acknowledged, and test records were subsequently removed (final `users=0,events=0,quant_event_consents=0`). Neither the production `quant-ai` nor Wallet D1 was touched.
 - The live site Worker `quantaphi-site` lacks `EVENTS_BRIDGE` and `EVENTS_BRIDGE_ENABLED`/`EVENT_CONSENT_MANAGEMENT_ENABLED` bindings; deployment readback last seen November 6, 2026. Source merge **does not** indicate activation of the new routes. Cloudflare staging was checked via API rather than the actual repo Worker consumer; do not claim a Worker deployment or completed 100k DAU load validation.
 - Further release gates: deploy isolated staging Worker **using the exact compiled source**, set private bindings/secrets only in staging, test real browser Wallet sign-in and explicit consent, verify live Queue → D1 write and revoke/delete, define retention/export/erasure and financial cost caps, obtain independent privacy/security acceptance before turning customer analytics on.
+
+## November 9 isolated Worker staging execution (PR #1889)
+
+The proposed `wrangler.staging.jsonc` runs the **merged** `src/ingest.ts` as
+`quantaphi-quant-events-worker-staging`. It binds only the separate staging D1
+and the existing staging Queue as a push consumer, with `workers_dev=false`,
+no domain routes, no Queue producer, no trusted caller secret, and no Wallet
+connection. The Worker’s HTTP ingress must return 401 without the intentionally
+absent `INGEST_TOKEN`. Queue delivery remains opt-in controlled through D1.
+
+The GitHub workflow `.github/workflows/quant-events-worker-staging.yml` tests
+and dry-runs on pull requests. Only a merged push to `main` with existing scoped
+Cloudflare Actions credentials can deploy this **staging Worker**. The existing
+HTTP pull test consumer must be retired before attaching the Worker consumer:
+Cloudflare supports only one consumer type per queue. Release acceptance still
+requires real push Queue → Worker `queue` handler → staging D1 readback, revoke
+and cleanup. This does not activate customer profiling or merge any accounts.
