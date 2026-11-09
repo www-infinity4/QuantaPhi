@@ -3,9 +3,114 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T09:01:43.167616Z",
+  "checked_at": "2026-11-09T09:31:27.600143Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "west indies vs bangladesh",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T09:00:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/series/west-indies-in-bangladesh-2026-27-1553291/bangladesh-vs-west-indies-2nd-test-1553296/ball-by-ball-commentary",
+        "https://inshorts.com/en/news/who-holds-the-record-for-highest-individual-test-score-for-each-nation--1794070087134",
+        "https://www.newagebd.net/video/444/Bangladesh-batsman-Towhid-Hridoy-speaks-to-reporters"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8tgLKM_JHkKkqsF0DJpHwgQiYah8fQ-VCRJ8XSFrjTBf2qbu_b4P1Z-8iDKw",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/series/west-indies-in-bangladesh-2026-27-1553291/bangladesh-vs-west-indies-2nd-test-1553296/ball-by-ball-commentary",
+          "title": "Ball by Ball Commentary & Live Score - BAN vs WI, 2nd Test",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8tgLKM_JHkKkqsF0DJpHwgQiYah8fQ-VCRJ8XSFrjTBf2qbu_b4P1Z-8iDKw"
+        },
+        {
+          "url": "https://inshorts.com/en/news/who-holds-the-record-for-highest-individual-test-score-for-each-nation--1794070087134",
+          "title": "Who holds the record for highest individual Test score for each nation? | SA's Mulder scored 367* vs Zimbabwe in 2025 | Inshorts",
+          "publisher": "Inshorts",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTelraXLkGAigR47nR2_7Li59f7YAL88fQOjkDnQ8Tbef-CVxRZ861K3rXIv3U"
+        },
+        {
+          "url": "https://www.newagebd.net/video/444/Bangladesh-batsman-Towhid-Hridoy-speaks-to-reporters",
+          "title": "Bangladesh batsman Towhid Hridoy speaks to reporters",
+          "publisher": "New Age BD",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm0a5NZyA2k_AGemQ8H6F5mZ8lCYPuYOJCKJccw1GtVHnQiFO66gpEIa5WnIw"
+        }
+      ]
+    },
+    {
+      "query": "cheque fraud",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T09:00:00Z",
+      "related_news_urls": [
+        "https://turnto10.com/news/local/three-people-arrested-in-check-fraud-scheme-in-somerset-cashing-fake-check-at-somerset-bank-detective-investigation-november-7-2026",
+        "https://fallriverreporter.com/fall-river-and-swansea-residents-busted-in-alleged-somerset-fraud-scheme/",
+        "https://wsbt.com/news/local/check-fraud-arrest-woman-decades-gas-vehicle-traffic-stop-police-investigation-warrant-rochester-warsaw-montgomery-county-indiana"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8vV3BNNuXXx7XjbkKLtQ6JMoF86L5K0ikNaM3NOVAjcVEYXH0MQKGeJJhgO4",
+      "image_credit": "WJAR",
+      "news": [
+        {
+          "url": "https://turnto10.com/news/local/three-people-arrested-in-check-fraud-scheme-in-somerset-cashing-fake-check-at-somerset-bank-detective-investigation-november-7-2026",
+          "title": "Three people arrested in check fraud scheme in Somerset",
+          "publisher": "WJAR",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8vV3BNNuXXx7XjbkKLtQ6JMoF86L5K0ikNaM3NOVAjcVEYXH0MQKGeJJhgO4"
+        },
+        {
+          "url": "https://fallriverreporter.com/fall-river-and-swansea-residents-busted-in-alleged-somerset-fraud-scheme/",
+          "title": "Fall River and Swansea residents busted in alleged Somerset fraud scheme",
+          "publisher": "Fall River Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSfL7d0-OvMkyL9uiHnnSZKXdBpqi2PK0M3muy0uEYkSyrOmC9YTLaThO4Vvw"
+        },
+        {
+          "url": "https://wsbt.com/news/local/check-fraud-arrest-woman-decades-gas-vehicle-traffic-stop-police-investigation-warrant-rochester-warsaw-montgomery-county-indiana",
+          "title": "Rochester woman arrested, faces 20-year-old check fraud charges",
+          "publisher": "WSBT",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4xzEe17naZVgAjF0YacX3DTH8pK418IaotYC3aw-AiC1poZt8RJ2r-7rMW3c"
+        }
+      ]
+    },
+    {
+      "query": "power",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T08:40:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/world/russian-forces-launch-missile-attack-ukrainian-capital-kyiv-mayor-says-2026-11-07/",
+        "https://www.rferl.org/a/ukraine-power-restore-russia-zaporizhzhya-abudhabi/33893359.html",
+        "https://apnews.com/article/russia-ukraine-war-kyiv-talks-abu-dhabi-b042adf1f95848f5d233da866a72e312"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHw7NYUbrFDkToC2XVUVXfbvRBIhURaKX4kcsNteLF0COplA8tV5AsdbOms7c",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/world/russian-forces-launch-missile-attack-ukrainian-capital-kyiv-mayor-says-2026-11-07/",
+          "title": "Russia pounds power facilities around Kyiv, damages major bridge",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHw7NYUbrFDkToC2XVUVXfbvRBIhURaKX4kcsNteLF0COplA8tV5AsdbOms7c"
+        },
+        {
+          "url": "https://www.rferl.org/a/ukraine-power-restore-russia-zaporizhzhya-abudhabi/33893359.html",
+          "title": "Ukraine Battles To Restore Power After Russian Attacks, As Trump Hints At Potential Territorial Changes",
+          "publisher": "Radio Free Europe/Radio Liberty",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRM0QF3dkSICYuyP7-VqAenjKmusKDErzTH0y_XWObNdQ9ybiJBIRL7bVpGtFM"
+        },
+        {
+          "url": "https://apnews.com/article/russia-ukraine-war-kyiv-talks-abu-dhabi-b042adf1f95848f5d233da866a72e312",
+          "title": "Drone and missile attacks wound 9 in Ukraine as country prepares for talks with Russia and US",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQ75sDy6YObcAfOk89a1e2OwOsNs6pmdkztARcsluHDo7lxWayFel8S6dwun0"
+        }
+      ]
+    },
     {
       "query": "pandilla",
       "approx_searches": "100+",
@@ -42,48 +147,13 @@
       ]
     },
     {
-      "query": "power",
-      "approx_searches": "100+",
-      "published_at": "2026-11-09T08:40:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/world/zaporizhzhia-nuclear-plant-loses-external-power-supply-russian-installed-2026-11-08/",
-        "https://thehill.com/policy/international/6206805-ukraine-nuclear-safety-threatened/",
-        "https://www.yahoo.com/news/world/articles/zaporizhzhia-nuclear-power-plant-restores-001500507.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwN5pD948a43MwTivwOeXG0NDujrqGZvCBD4xmgPhgD8itPj8cXpOmz4UZSr0",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/world/zaporizhzhia-nuclear-plant-loses-external-power-supply-russian-installed-2026-11-08/",
-          "title": "Power restored to Zaporizhzhia nuclear plant, IAEA says",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwN5pD948a43MwTivwOeXG0NDujrqGZvCBD4xmgPhgD8itPj8cXpOmz4UZSr0"
-        },
-        {
-          "url": "https://thehill.com/policy/international/6206805-ukraine-nuclear-safety-threatened/",
-          "title": "Ukrainian nuclear plant switches to generators after losing final power line",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5CNYDdQM_52TiK1zaMrx09c0n6ZhndYHUdrT2128BwTlxVtGxMwoDz_B1yhU"
-        },
-        {
-          "url": "https://www.yahoo.com/news/world/articles/zaporizhzhia-nuclear-power-plant-restores-001500507.html",
-          "title": "Zaporizhzhia Nuclear Power Plant restores external power supply after blackout",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlNNpDL90YpP_fL1-khRkxmBGss4KF6L_i-KaEb_OtYZIllIc6gFsmEJb1dQ0"
-        }
-      ]
-    },
-    {
       "query": "ice",
       "approx_searches": "200+",
       "published_at": "2026-11-09T08:30:00Z",
       "related_news_urls": [
         "https://www.nbcsandiego.com/news/local/ice-takes-8-year-old-haitian-boy-into-custody-at-san-diego-check-in/4098472/",
-        "https://www.news10.com/news/national/mullin-says-deportations-will-continue/",
-        "https://www.tribuneindia.com/news/usa-news/despite-midterm-losses-trump-admin-intensifies-deportations-under-new-chief-of-staff-stephen-miller-report/"
+        "https://www.theguardian.com/us-news/2026/nov/07/wisconsin-state-trooper-ice-released",
+        "https://thehill.com/homenews/state-watch/6206341-wisconsin-trooper-ice-arrest/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQC90_A-LOFVpF8LmikjuLgiBVKjSwoogQGCUd9qSYbBi22C-XDXod6ysrSVq0",
       "image_credit": "NBC 7 San Diego",
@@ -96,18 +166,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQC90_A-LOFVpF8LmikjuLgiBVKjSwoogQGCUd9qSYbBi22C-XDXod6ysrSVq0"
         },
         {
-          "url": "https://www.news10.com/news/national/mullin-says-deportations-will-continue/",
-          "title": "Mullin says deportations will continue",
-          "publisher": "NEWS10 ABC",
+          "url": "https://www.theguardian.com/us-news/2026/nov/07/wisconsin-state-trooper-ice-released",
+          "title": "Wisconsin state patrol trooper detained by ICE released from custody",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKN6FSpizG18mKGkMYzZL4WNCDIVSqzDe6nyzECZJc8WihBe-hYNS6YGI5jnQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGt2KLbnK5Lx-WhW0FngOZEBhsa9c2-wrN_guC_bHZFGANA5uFaflzJYhINUM"
         },
         {
-          "url": "https://www.tribuneindia.com/news/usa-news/despite-midterm-losses-trump-admin-intensifies-deportations-under-new-chief-of-staff-stephen-miller-report/",
-          "title": "Despite midterm losses, Trump admin intensifies deportations under new Chief of Staff Stephen Miller: Report",
-          "publisher": "The Tribune",
+          "url": "https://thehill.com/homenews/state-watch/6206341-wisconsin-trooper-ice-arrest/",
+          "title": "Wisconsin state trooper released from ICE custody after ‘dramatic’ arrest",
+          "publisher": "The Hill",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPA51ILjgvE4BN2jXCsJThedxV834bVobtRhsGCc8917yzXtA2s7n1xYU3RyM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS18IxuTXxikQjVAyDSQbdZtcnytMjPufX9qZ0-vIg_duiRx1P62E8NfVTKlyY"
         }
       ]
     },
@@ -118,7 +188,7 @@
       "related_news_urls": [
         "https://weather.com/2026/11/06/news/trending/video/hawaii-kilauea-lava-fountain-episode-56-eruption",
         "https://bigislandnow.com/2026/11/06/volcano-watch-such-great-heights-measuring-kilaueas-lava-fountains/",
-        "https://komonews.com/weather/weather-whys/why-has-mount-kilauea-volcano-been-erupting-for-so-long-lava-fountains-660-feet-summit-eruption-magma-reservoirs"
+        "https://www.foxweather.com/weather-news/hawaii-kilauea-volcano-erupt-56th-episode"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYDVY2kE3XhosZTpaysiDECVZ4MyxZDsPab9XYZSUaSs8-orhlHcIDQvFI3pQ",
       "image_credit": "The Weather Channel",
@@ -138,11 +208,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRspiePvSFCfWTgUfg1YzFZsyVYlCIGQMTpCd2bWD5u-eYuZKsfIF31PtUn8RY"
         },
         {
-          "url": "https://komonews.com/weather/weather-whys/why-has-mount-kilauea-volcano-been-erupting-for-so-long-lava-fountains-660-feet-summit-eruption-magma-reservoirs",
-          "title": "Why has Mount Kilauea been erupting for so long?",
-          "publisher": "KOMO",
+          "url": "https://www.foxweather.com/weather-news/hawaii-kilauea-volcano-erupt-56th-episode",
+          "title": "Hawaii's Kīlauea experiences 56th eruption episode, spewing lava hundreds of feet high in latest activity",
+          "publisher": "FOX Weather",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSiBYeK9ffH_rR0Sv0uX_K5JOskDhYAW0vkX5erEpQbuZIgHh32GUU-AxXQEEA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQG7gMPCxcq3zzu9j1RZE2-7vtl_CBIAvBt2TBhI_0ejUBujrclgpa3p2Rl1nU"
         }
       ]
     },
@@ -283,68 +353,6 @@
           "publisher": "The Times of India",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRBz77aiibXeQghkk7i6mhQt7jnUDe1bhFBfFvg-v-Sg36JkzZ4u3QdgK1GID4"
-        }
-      ]
-    },
-    {
-      "query": "steve sarkisian texas longhorns comments",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T07:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50411883/arch-manning-defense-help-no-7-texas-rally-missouri",
-        "https://sports.yahoo.com/articles/terrible-call-game-needs-investigated-223036749.html",
-        "https://www.columbiamissourian.com/sports/mizzou_football/fumbled-opportunity-bad-breaks-mistakes-prove-costly-in-mizzous-loss-to-no-7-texas/article_978f8142-efc5-4c4e-8711-350aa1ff3913.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJU1MF4LlgWEySOd9Ruymzdqk1u7qhz3WY5waZ3Ft_VoUJm7mV3riUKdU8aKI",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50411883/arch-manning-defense-help-no-7-texas-rally-missouri",
-          "title": "'We just refuse to go away': Sarkisian lauds Longhorns after 34-20 victory",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJU1MF4LlgWEySOd9Ruymzdqk1u7qhz3WY5waZ3Ft_VoUJm7mV3riUKdU8aKI"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/terrible-call-game-needs-investigated-223036749.html",
-          "title": "‘Terrible Call,’ ‘This Game Needs to Be Investigated’ — David Pollack, CFB Fans Call Out Controversial Officiating in Texas-Missouri Clash",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSUFxKwsMDxauTpsgC_C8xZCuTTHY1ShevJqeIQlmMDcDQcag-T0VkGfdGA5E"
-        },
-        {
-          "url": "https://www.columbiamissourian.com/sports/mizzou_football/fumbled-opportunity-bad-breaks-mistakes-prove-costly-in-mizzous-loss-to-no-7-texas/article_978f8142-efc5-4c4e-8711-350aa1ff3913.html",
-          "title": "Fumbled opportunity: Bad breaks, mistakes prove costly in Mizzou's loss to No. 7 Texas",
-          "publisher": "Columbia Missourian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLw38UQCpRbqjpXMJMWEUHj4hhEJ4jsnK-1P-55etn7p3KDLak8ToChF1E9lA"
-        }
-      ]
-    },
-    {
-      "query": "destruction allstars delisted playstation store",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T07:20:00Z",
-      "related_news_urls": [
-        "https://www.cbr.com/playstation-game-official-shut-down-november-2026/",
-        "https://opencritic.com/news/39261/playstation-game-is-permanently-shutting-down-on-november-25"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6wmMeb2GfAmQ1XqgaQTisJ8l1cth-XzdXXgm4w6yLOBBVtcYMABO0Se7upKg",
-      "image_credit": "Comic Book Resources",
-      "news": [
-        {
-          "url": "https://www.cbr.com/playstation-game-official-shut-down-november-2026/",
-          "title": "PlayStation Game Will Officially Shut Down November 25",
-          "publisher": "Comic Book Resources",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6wmMeb2GfAmQ1XqgaQTisJ8l1cth-XzdXXgm4w6yLOBBVtcYMABO0Se7upKg"
-        },
-        {
-          "url": "https://opencritic.com/news/39261/playstation-game-is-permanently-shutting-down-on-november-25",
-          "title": "PlayStation Game is Permanently Shutting Down on November 25",
-          "publisher": "OpenCritic",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScf8izxcBrZuaUz_VbkKPVTLHk45gRXyMs2wvRWUPpDM5zKP6un6qMWeNGGHM"
         }
       ]
     }
