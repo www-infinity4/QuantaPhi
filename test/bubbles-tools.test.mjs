@@ -565,7 +565,7 @@ test('Bubbles gateway discards repeated hidden model text instead of speaking it
  assert.equal(res.status,200);
  assert.ok(calls>=2,'one safe bounded correction must be attempted');
  assert.equal(body.answerStatus,'partial');
- assert.doesNotMatch(body.output,/analysis:|assistantfinal|<\\|(?:start|end)\\|>/i);
+ assert.doesNotMatch(body.output,/analysis:|assistantfinal|<\|(?:start|end)\|>/i);
  assert.match(body.output,/not verified|not completed|could not/i);
  assert.equal(body.receipt.repositoryActionsVerified,false);
 });
