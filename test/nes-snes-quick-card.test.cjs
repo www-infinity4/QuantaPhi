@@ -148,3 +148,13 @@ test('review: two quick NES Play clicks while header read is pending initialize 
  assert.equal(objects,1);
  assert.equal(loaders,1);
 });
+
+
+test('review: preview Share preserves its opt-in flag, and hidden emulator is stopped',()=>{
+ const deck=source('oracle-card-deck.js'),card=source('nes-snes-quick-card.js');
+ assert.match(deck,/displayed\.id==='nesSnesQuickCard'\?'&nesSnesPreview=1'/);
+ assert.match(card,/quantaphi:switchboard-change/);
+ assert.match(card,/oracle-shelf-open/);
+ assert.match(card,/visibilitychange/);
+ assert.match(card,/stop\(\)/);
+});
