@@ -34,6 +34,10 @@ const ITEMS=Object.freeze([
   description:'Analyze a user-provided image through the existing Cloudflare Gemma reader.'},
  {id:'bubbles.transcribe',title:'Bubbles voice transcription',scope:'public-read',model:true,
   description:'Transcribe explicitly supplied audio with the existing Cloudflare AI adapter.'},
+ {id:'bubbles.cloud_browser',title:'Owner-scoped Cloudflare Chrome inspection',scope:'owner-only',brain:true,
+  description:'Existing BROWSER-bound Cloudflare Chrome can inspect public pages with fresh sessions. Actual media playback requires a measured player state, not a screenshot alone.'},
+ {id:'wallet.account_receipts',title:'Account-scoped Cloudflare D1 wallet receipts',scope:'client-only',
+  description:'QuantaPhi first-party wallet client reads the signed account ledger; public chat cannot read private balances and no blockchain explorer is assumed.'},
  {id:'quick_card.open',title:'Existing Quick Card selection',scope:'client-only',
   description:'Open or play registered cards in the website/Android interface; not a server action.'},
  {id:'github.create_repository',title:'Signed GitHub repository creation',scope:'owner-only',brain:true,
@@ -67,7 +71,8 @@ export function recommendCapabilities(question,env={}){
  const ids=[];
  const add=(...values)=>{for(const id of values)if(!ids.includes(id))ids.push(id);};
  // The requested *operation* wins over generic discovery verbs such as "show".
- const commitWrite=/\bcommit(?:ting)?\s+(?:to\b|(?:a|an|the|my|this|that|some|new)\s+(?:file|files|change|changes|code|patch|source)\b|(?:file|files|change|changes|code|patch|source|work)\b|with\s+git\b)|\bmake\s+(?:a\s+)?commit\b/i.test(q);
+ const commitWrite=/\bcommit(?:ting)?\s+(?:the|these|those)\s+(?:json|html|index|files?|patch|changes?|code)\b/i.test(q)||
+  /\bcommit(?:ting)?\s+(?:to\b|(?:a|an|the|my|this|that|some|new)\s+(?:file|files|change|changes|code|patch|source)\b|(?:file|files|change|changes|code|patch|source|work)\b|with\s+git\b)|\bmake\s+(?:a\s+)?commit\b/i.test(q);
  const commitRead=!commitWrite&&/\bcommits?\b/.test(q)&&
   /\b(?:read|view|inspect|show|list|fetch|explain|find)\b/.test(q);
  const privateMemory=/\b(?:saved|private|personal|owner|conversation)\b.{0,55}\b(?:memory|memories|recall|context)\b|\bmy\b.{0,55}\b(?:saved|private|owner|conversation)\b.{0,55}\b(?:memory|recall|context)\b/i.test(q);
@@ -93,6 +98,8 @@ export function recommendCapabilities(question,env={}){
  if(/\b(?:weather|forecast|temperature|rain)\b/.test(q))add('weather.current');
  if(/\b(?:news|headlines?)\b/.test(q))add('news.headlines');
  if(/\b(?:quick cards?|cards?|carousel|media player)\b/.test(q))add('quick_card.open');
+ if(/\b(?:playable|playback|video|tv|starquest|omni tv|chiller|shoplc)\b/.test(q))add('bubbles.cloud_browser','quick_card.open');
+ if(/\b(?:starcoin|quants?|wallet|ledger)\b/.test(q)&&/\b(?:verify|read|check|receipts?|balances?)\b/.test(q))add('wallet.account_receipts');
  if(!privateMemory&&!publicMemoryTest&&/\b(?:memory|memories|context|remember|recall)\b/.test(q))
   add('bubbles.memory.owner');
  if(/\b(?:resonance|calculator|frequency|inductance)\b/.test(q))
@@ -114,6 +121,8 @@ export function capabilityDirectoryReply(env={},question=''){
   '. Ordinary chat uses oracle.chat; Quick Cards operate through their existing page/Android interface. '+
   'Separate, signed owner adapters: '+ownerItems.join(', ')+
   '. Owner sign-in and per-action authorization are required for GitHub writes or Robot Brain work. '+
+  'Wallet balances and receipts are held in account-scoped Cloudflare D1 / first-party ledger adapters, not assumed to be a public blockchain. '+
+  'Cloudflare Browser is an owner-approved Chrome inspection route; actual TV playback requires independent player-state and stream evidence. '+
   'This is a directory, not a completed tool invocation. A real tool receipt must confirm each action.';
 }
 
