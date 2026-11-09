@@ -2677,7 +2677,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // Registered Bubbles tool inventory is a first-party, read-only gateway operation.
  // Do not burn model inference, open a provider popup, or impersonate owner
  // authorization just to answer "what tools can you use?".
- const nativeCapabilityDiscovery=!pendingImage&&/^(?:(?:hey|hi|hello)[,\s]+)?(?:bubbles[,\s]+)?(?:(?:what|which)\s+(?:(?:are|is|do)\s+)?(?:(?:your|the|available|existing|registered)\s+)?(?:tools?|skills?|capabilities|abilities)\b|(?:show|list|find|discover|locate)\s+(?:(?:me|us)\s+)?(?:(?:your|existing|available|registered|bubbles)\s+){1,3}(?:tools?|skills?|capabilities|abilities)\b|(?:where|how)\b.{0,75}\b(?:your|bubbles|available|existing)\b.{0,50}\b(?:tools?|skills?|capabilities|abilities)\b|do\s+you\s+have\s+(?:tools?|skills?|capabilities|abilities)\b|what\s+can\s+you\s+do\b)/i.test(spoken);
+ const nativeCapabilityDiscovery=!pendingImage&&await import('/bubbles-capability-intent.mjs?v=20261108-shared1')
+  .then(module=>module.isCapabilityDiscoveryQuestion(spoken)).catch(()=>false);
  if(nativeCapabilityDiscovery){
   busy=true;send.disabled=true;display(spoken,'you');clearSentComposer();setOrbState('thinking');
   let reply,voiceSummary;
