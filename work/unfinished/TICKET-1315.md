@@ -60,3 +60,13 @@ Explainable in-app ranking, sponsor disclosure, consented metrics and zero unrel
 
 ## Session receipt
 GitHub issue created during the owner-request scoping session; checkpoint staged in a documentation-only branch. No real implementation, provider consent, commercial payout or outside send has occurred.
+
+## November 8, 2026 CT · Quant event ingestion source stage
+
+- Reused canonical issue [#1315](https://github.com/www-infinity4/QuantaPhi/issues/1315); related to genuine click telemetry in #1674. **No new ticket or coordinator lease claimed.** Isolated clean-main branch `feat/quant-events-d1-queue-1315-20261108`, draft [PR #1884](https://github.com/www-infinity4/QuantaPhi/pull/1884).
+- Staged `workers/quant-events/` with separate, **unapplied** D1 `users/events` schema (epoch milliseconds, compound user/type/time index, idempotent event keys), authenticated trusted Worker ingestion, Queues/DLQ config *example*, and Node 22/Python SQLite CI smoke workflow. `quant-ai.quant_events` and all Quanta/StarCoin/GIT/wallet ledgers were not modified.
+- Source package verification before GitHub stage: **17 Node and 4 Python SQLite tests passed; local TypeScript type-check passed**. Initial new GitHub workflow failed on a test-only `const URL` shadowing error; fixed in `dd8feadb5388f7619e6dc1012dd5ca60f9cdbbef`. Fresh exact-head GitHub CI status is **pending verification** and must be inspected before review.
+- Status **source staged, production unverified**; not merged, no D1 migrations, Queue/DLQ provisioning, secret/binding changes, tracked production events, BI writes, credits or payouts.
+- Estimate: issue-wide progress remains **18% as last documented** pending accepted opt-in personal ranking/real sponsorship and actual release receipts. Session: one focused source-staging continuation; remaining sessions unknown.
+- Gate: existing signed account/user verification, behavioral and postal metadata consent, documented retention and erasure, explicit infrastructure budget, isolated staging D1 migration, queue backlog/load verification, exact-head CI and independent security review.
+- **Next single executable action:** verify [PR #1884](https://github.com/www-infinity4/QuantaPhi/pull/1884) exact-head CI and resolve its failures; then pass isolated backend to independent reviewer. No production rollout yet.
