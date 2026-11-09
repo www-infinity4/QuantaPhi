@@ -1,3 +1,27 @@
+---
+issue: 961
+project: "NES and SNES original Oracle Quick Card"
+state: review_pending
+dot: "🟡"
+progress_percent: 43
+progress_basis: "Estimate 3 of 7 acceptance milestones: source discovery, implemented original card and focused CI; review, merge, live readback and Android physical acceptance pending"
+sessions_spent: 1
+sessions_remaining_estimate: unknown
+agent: "ChatGPT · source implementation; independent reviewer not yet assigned"
+lease_id: null
+fence: null
+lease_expires_at: null
+task_session_id: null
+repo: www-infinity4/QuantaPhi
+branch: feature/nes-snes-oracle-card-961-20261109
+pr: "https://github.com/www-infinity4/QuantaPhi/pull/1894"
+merged: false
+deployed: false
+live_verified: false
+blocker: "Final exact-head CI and independent source review are required before merge; real Android playback and Cloudflare deployment are unverified"
+next_action: "Obtain independent source review for PR #1894 and verify passing exact-head checks before guarded merge"
+---
+
 # TICKET-961 · NES/SNES original Oracle Quick Card integration
 
 - Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/961 (existing staged game-release program)
