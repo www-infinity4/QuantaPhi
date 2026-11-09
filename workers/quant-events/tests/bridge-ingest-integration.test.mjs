@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {DatabaseSync} from 'node:sqlite';
 import {readFileSync} from 'node:fs';
 import site from '../../quantaphi-site/worker.js';
+import {handleWalletEventIngress} from '../src/wallet-bridge.mjs';
 import ingress from '../src/ingest.ts';
 
 const TOKEN='sq_'+'a'.repeat(40);
@@ -54,12 +55,13 @@ test('existing site Wallet identity -> consent -> signed ingestion -> Queue work
         return Response.json({ok:true,user:{id:317}});
       }},
       EVENT_CONSENT_DB:{
-        prepare(q){return{
-          bind(id,purpose){return{async first(){
-            const row=sqlite.prepare(q).get(id,purpose);
-            return row||null;
-          }}};
-        }}
+        prepare(q){
+          return {
+            bind(id,purpose){
+              return {async first(){return sqlite.prepare(q).get(id,purpose)||null;}};
+            }
+          };
+        }
       },
       EVENTS_SERVICE:{async fetch(r){
         return ingress.fetch(r,{
@@ -71,6 +73,7 @@ test('existing site Wallet identity -> consent -> signed ingestion -> Queue work
         });
       }}
     };
+    env.EVENTS_BRIDGE={fetch(req){return handleWalletEventIngress(req,env);}};
     assert.equal((await site.fetch(request(),env,{})).status,403);
     // Simulate a previously audited, explicit server-side consent issuance.
     const key=await crypto.subtle.importKey('raw',new TextEncoder().encode(secret),{name:'HMAC',hash:'SHA-256'},false,['sign']);
