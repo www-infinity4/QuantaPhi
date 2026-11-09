@@ -460,7 +460,19 @@ export class BrainClock extends DurableObject{
    // A color thought is advisory, not a GitHub edit, authorized import,
    // new permission, wallet credit or completion receipt.
    let roleHandoffs=[],roleHandoffStatus='not_needed';
-   if(path==='/runner/plan'){
+   // The Moltnook runner has already performed need-based color inference
+   // under this signed lease and pinned runtime source. Never run another
+   // Red/Orange/Blue chain merely because a planner is retrying the same job.
+   // Submitted colorFindings remain advisory input, not verified writes.
+   const suppliedColorFindings=body.evidence?.colorFindings;
+   const sourceSha=body.evidence?.runtime?.baseSha;
+   const runnerRouteSupplied=path==='/runner/plan'&&
+    suppliedColorFindings&&typeof suppliedColorFindings==='object'&&
+    !Array.isArray(suppliedColorFindings)&&
+    /^[a-f0-9]{40}$/.test(sourceSha||'')&&
+    (body.evidence?.baseSha==null||body.evidence.baseSha===sourceSha);
+   if(runnerRouteSupplied)roleHandoffStatus='runner_route_supplied';
+   else if(path==='/runner/plan'){
     const task=extractAssignedColorTask(assigned.instructions);
     try{
      roleHandoffs=await runColorHandoffs(this.env.WRITER_AI,{task,evidence:{
