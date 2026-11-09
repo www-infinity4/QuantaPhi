@@ -68,3 +68,20 @@ test('color reasoning profiles describe bounded overlapping evidence flow, not i
  const purple=colorCoreSystemPrompt(colorCoreProfile('purple'));
  assert.match(purple,/not.*(?:approval|release)|independent.*review/i);
 });
+
+test('known file-specific Green repairs bypass research even when filenames or text contain import/system',()=>{
+ assert.deepEqual(routeColorHandoffs('Fix the import statement in bubbles-ai.js'),[]);
+ assert.deepEqual(routeColorHandoffs('Repair the exact src/system.js playback handler'),[]);
+ assert.deepEqual(routeColorHandoffs('Patch the import syntax in src/loader.mjs'),[]);
+ assert.deepEqual(routeColorHandoffs('Research permitted sources for a new import pipeline'),['red','orange','blue']);
+});
+
+test('color GPT input must remain intact JSON and fails closed before oversized inference',async()=>{
+ let called=0;
+ const ai={run:async()=>{called++;return {response:'{}'};}};
+ await assert.rejects(runColorHandoffs(ai,{
+  task:'Research a safe source pipeline '+('A'.repeat(10500)),
+  evidence:{pinned:'B'.repeat(7600)}
+ }),/color_handoff_prompt_too_large/);
+ assert.equal(called,0,'never send truncated JSON or silently drop source evidence');
+});
