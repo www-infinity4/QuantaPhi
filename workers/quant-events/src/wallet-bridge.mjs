@@ -17,7 +17,7 @@ const enc = new TextEncoder();
 function json(body,status) {
   return Response.json(body,{status,headers:{
     'Cache-Control':'no-store',
-    'X-Content-Type-Options':'nosiff'
+    'X-Content-Type-Options':'nosniff'
   }});
 }
 function record(value) {
