@@ -76,6 +76,6 @@ test('observed defects remain reviewable evidence, never fabricated source edits
   brokenImages:[{alt:'missing'}],overlaps:[{a:'Go',b:'Next'}],offscreenRight:[],blankCanvases:[]},
   errors:[{kind:'http_404'}]});
  assert.equal(result.status,'issues_observed');assert.equal(result.looks_ok,false);
- assert.equal(result.severity,'medium');assert.equal(result.patch_hypothesis,null);
+ assert.equal(result.severity,'high');assert.equal(result.patch_hypothesis,null);
  assert.deepEqual(result.evidence,['horizontal_overflow','broken_images:1','overlapping_controls:1','browser_errors:1']);
 });
