@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'workers/bubbles-tools/**'
+      - 'bubbles-capability-intent.mjs'
       - 'scripts/verify-bubbles-live-tools.mjs'
       - 'test/bubbles-live-tool-acceptance.test.mjs'
       - 'test/bubbles-search-binding.test.mjs'
@@ -18,6 +19,7 @@ on:
     branches: [main]
     paths:
       - 'workers/bubbles-tools/**'
+      - 'bubbles-capability-intent.mjs'
       - 'scripts/verify-bubbles-live-tools.mjs'
       - '.github/workflows/deploy-bubbles-semantic-tools.yml'
   workflow_dispatch:
