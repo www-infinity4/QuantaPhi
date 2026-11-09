@@ -1,7 +1,8 @@
 /**
  * QuantaPhi first-party telemetry ingestion. Standalone Worker module.
  * - INGEST_MODE=queue: recommended at high traffic; accepted != persisted.
- * - INGEST_MODE=direct (or omitted): compatible immediate D1 writes.
+ * - INGEST_MODE=direct: explicitly configured isolated staging only.
+ * - Missing INGEST_MODE or server-signed identity fails closed.
  *
  * This is a trusted server-to-server endpoint. Do NOT expose INGEST_TOKEN to
  * browser/PWA clients or accept an unverified client-supplied user ID.
@@ -21,6 +22,8 @@ interface Env {
   EVENT_QUEUE?: QueueProducer;
   INGEST_TOKEN: string;
   INGEST_MODE?: 'direct' | 'queue';
+  USER_IDENTITY_HMAC_SECRET?: string;
+  GEO_STORAGE_ENABLED?: string;
 }
 
 type CfGeo = {
@@ -117,6 +120,28 @@ function getEdge(request: Request): EdgeData {
     postalCode: cleanEdge(cf?.postalCode, 20),
   };
 }
+/**
+ * A separate trusted identity Worker must sign the authenticated user subject,
+ * not any browser-provided ID, using a secret distinct from INGEST_TOKEN.
+ * The caller sets signed geo=1 only after confirming current user consent.
+ * This staged contract does not by itself wire QuantaPhi's sign-in adapter.
+ */
+async function verifyIdentity(request: Request, userId: string, secret: string): Promise<{geoConsent:boolean}|null> {
+  const tsText = request.headers.get('x-quant-identity-time') ?? '';
+  const geo = request.headers.get('x-quant-identity-geo');
+  const hex = request.headers.get('x-quant-identity-signature') ?? '';
+  if (!/^[0-9]{13}$/.test(tsText) || !/^[a-f0-9]{64}$/i.test(hex) || (geo !== '0' && geo !== '1')) return null;
+  const ts = Number(tsText);
+  const now = Date.now();
+  if (!Number.isSafeInteger(ts) || ts <= 0 || Math.abs(now - ts) > 5 * 60 * 1000) return null;
+  const key = await crypto.subtle.importKey('raw', new TextEncoder().encode(secret),
+    { name:'HMAC', hash:'SHA-256' }, false, ['verify']);
+  const sig = Uint8Array.from(hex.match(/../g)!, part => parseInt(part, 16));
+  const message = new TextEncoder().encode(`v1\n${userId}\n${ts}\n${geo}`);
+  const verified = await crypto.subtle.verify('HMAC', key, sig, message);
+  return verified ? {geoConsent: geo === '1'} : null;
+}
+
 function toQueueItem(data: IngestPayload, edge: EdgeData, acceptedAtMs: number): QueueItem {
   return {
     schema_version: 1,
@@ -218,8 +243,16 @@ export default {
 
     const parsed=parsePayload(payload);
     if (!parsed.data) return response({error:parsed.error},parsed.status);
-    const item=toQueueItem(parsed.data,getEdge(request),Date.now());
-    const mode=env.INGEST_MODE??'direct';
+    if (!env.USER_IDENTITY_HMAC_SECRET) return response({error:'identity verifier unavailable'},503);
+    let identity: {geoConsent:boolean}|null;
+    try { identity = await verifyIdentity(request, parsed.data.userId, env.USER_IDENTITY_HMAC_SECRET); }
+    catch { return response({error:'identity verifier unavailable'},503); }
+    if (!identity) return response({error:'unverified user identity'},401);
+    // Only store edge metadata with both a signed consent claim and a reviewed server rollout flag.
+    const geoAllowed = identity.geoConsent && env.GEO_STORAGE_ENABLED === 'true';
+    const edge:EdgeData = geoAllowed ? getEdge(request) : {region:null,stateCode:null,postalCode:null};
+    const item=toQueueItem(parsed.data,edge,Date.now());
+    const mode=env.INGEST_MODE;
     if (mode==='queue') {
       if (!env.EVENT_QUEUE) return response({error:'queue unavailable'},503);
       try {
