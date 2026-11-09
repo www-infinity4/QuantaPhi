@@ -196,7 +196,7 @@ export function hasModelToolLeak(answer){
  const rawChannel=/<\|(?:start|end|im_start|im_end|im_sep|meta_sep|eot_id|channel)[^>]*\|>|(?:^|\n)\s*(?:assistant|analysis)\s+to=\w+/i.test(text);
  // Reject model self-instructions, not legitimate user-facing technical
  // analysis. A normal "Analysis: GitHub rejected..." remains allowed.
- const internalDraft=/(?:^|\n)\s*analysis\s*:\s*(?:we|i)\s+(?:need|should|must|have|will|can)\b/i.test(text);
+ const internalDraft=/(?:^|\n)\s*analysis\s*:\s*(?:we|i)\s+(?:(?:need|have)\s+(?:to\s+)?|(?:should|must|will|can)\s+)(?:first\s+|now\s+)?(?:respond|answer|explain|tell|say|compose|draft|provide|ask|output|format|write\s+(?:(?:a|the)\s+)?(?:reply|response|answer))\b/i.test(text);
  const falseSubmission=/(?:^|\n)\s*(?:I(?:'m| am)|We(?:'re| are))?\s*[Ss]ubmitting (?:a|the) (?:repair |work |Robot Brain )?ticket\b/i.test(text);
  const searchDraft=/(?:^|\n)\s*\{\s*"(?:query|tool|tool_name)"\s*:/i.test(text)
   && /\b(?:search for|attempt to fetch|fetch a snippet|call|invoke|tool|top_n)\b/i.test(text);
