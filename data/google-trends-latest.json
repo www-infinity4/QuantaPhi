@@ -3,12 +3,311 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T13:30:57.944728Z",
+  "checked_at": "2026-11-09T14:01:23.516327Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "hogwarts legacy 2",
+      "query": "levar burton",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T13:40:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/levar-burtons-memoir-explores-estranged-221100711.html",
+        "https://thelagosreview.ng/levar-burtons-memoir-explores-estranged-dad-mum-career/",
+        "https://www.detpress.com/abcnews/pressrelease/guest-lineup-on-americas-most-watched-daytime-talk-show-the-view-nov-9-13/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQkEewUyyT01Z3nueijra5Zer9r2ni-1wXjCRJ8b-FYRszF1xHH9S2o6wMZqc",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/levar-burtons-memoir-explores-estranged-221100711.html",
+          "title": "LeVar Burton's Memoir Explores His Estranged Father's Impact on His Life",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQkEewUyyT01Z3nueijra5Zer9r2ni-1wXjCRJ8b-FYRszF1xHH9S2o6wMZqc"
+        },
+        {
+          "url": "https://thelagosreview.ng/levar-burtons-memoir-explores-estranged-dad-mum-career/",
+          "title": "LeVar Burton’s memoir explores estranged dad, mum, career",
+          "publisher": "The Lagos Review",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXR991ltEOQXn9TPqWT_8QCY9l3ztHIDw3gJYT-6PuGUQT9RJjDIGWRUsm60c"
+        },
+        {
+          "url": "https://www.detpress.com/abcnews/pressrelease/guest-lineup-on-americas-most-watched-daytime-talk-show-the-view-nov-9-13/",
+          "title": "GUEST LINEUP ON AMERICA’S MOST-WATCHED DAYTIME TALK SHOW, ‘THE VIEW,’ NOV. 9-13",
+          "publisher": "Detpress",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQn8HTq4AcRKWKZ140wMgtujuKovARIZgiyyrtkA3CejQLBA8qFWmTiOF334Hg"
+        }
+      ]
+    },
+    {
+      "query": "borna gojo",
       "approx_searches": "200+",
+      "published_at": "2026-11-09T13:40:00Z",
+      "related_news_urls": [
+        "https://oddsscanner.com/us/basketball/maryland-vs-virginia",
+        "https://oddsscanner.com/us/tennis/thiago-augustin-tirante-vs-jaume-munar",
+        "https://oddsscanner.com/us/tennis/elias-ymer-vs-juan-manuel-cerundolo"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTirIv8RW34FmI4qxLE3Ifi8PLjDJuiLTj36ZmkywQ8jJltD2Aj6V9NQ-tsjg",
+      "image_credit": "Odds Scanner",
+      "news": [
+        {
+          "url": "https://oddsscanner.com/us/basketball/maryland-vs-virginia",
+          "title": "Maryland vs Virginia » Best Odds and Stats",
+          "publisher": "Odds Scanner",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTirIv8RW34FmI4qxLE3Ifi8PLjDJuiLTj36ZmkywQ8jJltD2Aj6V9NQ-tsjg"
+        },
+        {
+          "url": "https://oddsscanner.com/us/tennis/thiago-augustin-tirante-vs-jaume-munar",
+          "title": "Thiago Augustin Tirante vs Jaume Munar » Best Odds and Stats",
+          "publisher": "Odds Scanner",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTirIv8RW34FmI4qxLE3Ifi8PLjDJuiLTj36ZmkywQ8jJltD2Aj6V9NQ-tsjg"
+        },
+        {
+          "url": "https://oddsscanner.com/us/tennis/elias-ymer-vs-juan-manuel-cerundolo",
+          "title": "Elias Ymer vs Juan Manuel Cerundolo » Best Odds and Stats",
+          "publisher": "Odds Scanner",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTirIv8RW34FmI4qxLE3Ifi8PLjDJuiLTj36ZmkywQ8jJltD2Aj6V9NQ-tsjg"
+        }
+      ]
+    },
+    {
+      "query": "julia louis-dreyfus",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T13:30:00Z",
+      "related_news_urls": [
+        "https://geektyrant.com/news/julia-louis-dreyfus-amp-cecily-strong-to-star-in-apple-limited-series-based-on-article-the-nanny-squatter"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNce9bcIk2k-L34zqRPxA3sMpgepttxKCENcyV2reUU3xJfnZW5ocOgCGtItM",
+      "image_credit": "GeekTyrant",
+      "news": [
+        {
+          "url": "https://geektyrant.com/news/julia-louis-dreyfus-amp-cecily-strong-to-star-in-apple-limited-series-based-on-article-the-nanny-squatter",
+          "title": "Julia Louis-Dreyfus & Cecily Strong to Star In Apple Limited Series Based on Article THE NANNY SQUATTER",
+          "publisher": "GeekTyrant",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNce9bcIk2k-L34zqRPxA3sMpgepttxKCENcyV2reUU3xJfnZW5ocOgCGtItM"
+        }
+      ]
+    },
+    {
+      "query": "astronaut applications",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-09T13:30:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/science/2026/nov/08/nasa-astronauts-moon-applications-open",
+        "https://www.today.com/video/nasa-opens-applications-for-its-new-class-of-astronauts-273121349908",
+        "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdZ_hWWREkwSQeAE8qZLQOoY2lxDKW5JiZeEopUyOrDDU1x0O1ulxcjx9qpMI",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/science/2026/nov/08/nasa-astronauts-moon-applications-open",
+          "title": "Nasa seeks next generation of astronauts to live and work on the moon",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdZ_hWWREkwSQeAE8qZLQOoY2lxDKW5JiZeEopUyOrDDU1x0O1ulxcjx9qpMI"
+        },
+        {
+          "url": "https://www.today.com/video/nasa-opens-applications-for-its-new-class-of-astronauts-273121349908",
+          "title": "NASA Opens Applications for Its New Class of Astronauts",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt6m1GJznqyo0FANSCP91Z7yEXcxm6mP-jF4UhChfa4frF9wT7vij2_tfG3mU"
+        },
+        {
+          "url": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/",
+          "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
+          "publisher": "NASA (.gov)",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQEmZCzrUxJFFzgFtuqhvPFOLkTXzcEODiMi4xgd7ZRAnLcU4VaM0n1_IgswQ"
+        }
+      ]
+    },
+    {
+      "query": "walker scobell",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T13:30:00Z",
+      "related_news_urls": [
+        "https://people.com/percy-jackson-leah-sava-jeffries-shuts-down-romance-speculation-costar-walker-scobell-clear-this-up-12240534",
+        "https://www.thenews.com.pk/latest/1422775-leah-sava-jeffries-addresses-romance-rumors-with-percy-jackson-co-star-walker-scobell",
+        "https://www.geo.tv/latest/690119-percy-jackson-leah-sava-jeffries-debunks-walker-scobell-romance-rumours"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSU7K1IrYz9wXGVChpk9OfEddrxe82yYtwKKp9J3JGzawHjQU7l7UzMLQOM4tw",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/percy-jackson-leah-sava-jeffries-shuts-down-romance-speculation-costar-walker-scobell-clear-this-up-12240534",
+          "title": "‘Percy Jackson’ Star Leah Sava Jeffries Addresses Walker Scobell Romance Speculation",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSU7K1IrYz9wXGVChpk9OfEddrxe82yYtwKKp9J3JGzawHjQU7l7UzMLQOM4tw"
+        },
+        {
+          "url": "https://www.thenews.com.pk/latest/1422775-leah-sava-jeffries-addresses-romance-rumors-with-percy-jackson-co-star-walker-scobell",
+          "title": "Leah Sava Jeffries addresses romance rumors with 'Percy Jackson' co-star Walker Scobell",
+          "publisher": "The News International",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTO2YEbFriM2qqwQgrYoJ7d4Sjm7Pp2EwTbM8cHE0EdCPiutkWJcXjK3tC4-yU"
+        },
+        {
+          "url": "https://www.geo.tv/latest/690119-percy-jackson-leah-sava-jeffries-debunks-walker-scobell-romance-rumours",
+          "title": "'Percy Jackson' Leah Sava Jeffries debunks Walker Scobell romance rumours",
+          "publisher": "Geo News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuaWN8OIsv_XXBqIEEFMYVycRBsnp0K-TFNz03eY2lQ2c5Y07dYXtMUcE4eC0"
+        }
+      ]
+    },
+    {
+      "query": "gma deals and steals",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T13:30:00Z",
+      "related_news_urls": [
+        "https://abcnews.com/GMA/Shop/gma-deals-steals-holiday-gifting/story?id=137915584",
+        "https://www.goodmorningamerica.com/shop/story/abc-secret-savings-november-savings-special-137910498",
+        "https://www.yahoo.com/news/videos/abc-secret-savings-spectacular-november-100305060.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-EKvhu7-ZYaENqGKUhYD5RBXJQO5_OPChDQCvHQvZDRVH6-YkIHEWp0ej6RI",
+      "image_credit": "ABC News - Breaking News, Latest News and Videos",
+      "news": [
+        {
+          "url": "https://abcnews.com/GMA/Shop/gma-deals-steals-holiday-gifting/story?id=137915584",
+          "title": "'GMA' Deals & Steals for holiday gifting",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-EKvhu7-ZYaENqGKUhYD5RBXJQO5_OPChDQCvHQvZDRVH6-YkIHEWp0ej6RI"
+        },
+        {
+          "url": "https://www.goodmorningamerica.com/shop/story/abc-secret-savings-november-savings-special-137910498",
+          "title": "ABC Secret Savings: November Savings Special",
+          "publisher": "Good Morning America",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfz--is_6lDVurHNLQpZNYXFvZ720um4hpQodpmnQO-wg2aG1k2z4myNq-KRo"
+        },
+        {
+          "url": "https://www.yahoo.com/news/videos/abc-secret-savings-spectacular-november-100305060.html",
+          "title": "ABC Secret Savings Spectacular for November",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSws69A0OeuMKFfCY3-oFztbuihHbBoSg90qP9Eqir7AeyxJyzairdEjrVEZDU"
+        }
+      ]
+    },
+    {
+      "query": "anjali sud",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T13:30:00Z",
+      "related_news_urls": [
+        "https://www.hollywoodreporter.com/business/digital/siriusxm-names-tubi-ceo-anjali-sud-new-leader-1236750788/",
+        "https://qz.com/siriusxm-anjali-sud-tubi-next-ceo-110926",
+        "https://www.billboard.com/pro/anjali-sud-tubi-replace-jennifer-witz-siriusxm-ceo/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBVyZqvcV0GsoqP4799chpcH24Rlm1wFOwGZc5xH1ZcyFt_rzcVf6qlaD3DzY",
+      "image_credit": "The Hollywood Reporter",
+      "news": [
+        {
+          "url": "https://www.hollywoodreporter.com/business/digital/siriusxm-names-tubi-ceo-anjali-sud-new-leader-1236750788/",
+          "title": "SiriusXM Names Tubi CEO Anjali Sud New Leader",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBVyZqvcV0GsoqP4799chpcH24Rlm1wFOwGZc5xH1ZcyFt_rzcVf6qlaD3DzY"
+        },
+        {
+          "url": "https://qz.com/siriusxm-anjali-sud-tubi-next-ceo-110926",
+          "title": "SiriusXM plans to name former Tubi CEO Anjali Sud as next CEO",
+          "publisher": "Quartz",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjudlmMS-DciyvJXnK8Au7b77Q-epQH4LEn71-Zgoys7m1jvXIgxs0bSdtyzg"
+        },
+        {
+          "url": "https://www.billboard.com/pro/anjali-sud-tubi-replace-jennifer-witz-siriusxm-ceo/",
+          "title": "Tubi CEO Anjali Sud to Replace Jennifer Witz As SiriusXM CEO",
+          "publisher": "Billboard",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzLBs7rU56TUqHuUDyIQMPUVEWTCjQVJfOe0SpHlWuQQWFtjtWbkE1xbvILLE"
+        }
+      ]
+    },
+    {
+      "query": "cloud gaming",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T13:20:00Z",
+      "related_news_urls": [
+        "https://www.ign.com/articles/former-playstation-boss-says-sony-doesnt-need-a-ps6-for-1200-it-needs-a-ps5-for-300",
+        "https://www.vgchartz.com/article/469593/shawn-layden-innovation-needs-to-come-not-from-making-ps6-for-1200-its-to-make-another-ps5-for-300/",
+        "https://wccftech.com/playstation-6-more-teraflops-mistake-playstation-portal-cloud-gaming-solution/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYPxL4vAFGsKfN9-tRFcA9xj4NRf_24-E5grMV7lnhgbisWDS6KLgOk-hrEmM",
+      "image_credit": "IGN",
+      "news": [
+        {
+          "url": "https://www.ign.com/articles/former-playstation-boss-says-sony-doesnt-need-a-ps6-for-1200-it-needs-a-ps5-for-300",
+          "title": "'I Think We Have Enough Power in the Machine' — Former PlayStation Boss Shawn Layden Calls on Sony to Prioritize Making a Cheaper Console Amid Rumors of a Pricey PS6",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYPxL4vAFGsKfN9-tRFcA9xj4NRf_24-E5grMV7lnhgbisWDS6KLgOk-hrEmM"
+        },
+        {
+          "url": "https://www.vgchartz.com/article/469593/shawn-layden-innovation-needs-to-come-not-from-making-ps6-for-1200-its-to-make-another-ps5-for-300/",
+          "title": "Shawn Layden: 'Innovation Needs to Come Not From Making PS6 for $1,200, It's to Make Another PS5 for $300'",
+          "publisher": "VGChartz",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc5kNGnn78WCDsNqHPKhH4xN2xE_7AXkOW2DV7LClNSbucvq2V7QmWAsH8hw"
+        },
+        {
+          "url": "https://wccftech.com/playstation-6-more-teraflops-mistake-playstation-portal-cloud-gaming-solution/",
+          "title": "A PlayStation 6 At $1000+ With Just More “Teraflops” Could Be A Mistake, Yet The PlayStation Portal and Cloud Gaming Present The Solution",
+          "publisher": "Wccftech",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxEhYA8YFhPGcu_7TRh9PqpTaeR19J2-iXB6r-rbBQFL0xxmzUcjGj2qVy1Hk"
+        }
+      ]
+    },
+    {
+      "query": "ugo humbert",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-09T13:10:00Z",
+      "related_news_urls": [
+        "https://lastwordonsports.com/tennis/2026/11/08/atp-stockholm-day-2-predictions-including-ugo-humbert-vs-adolfo-daniel-vallejo/",
+        "https://www.skysports.com/tennis/watch/5947996432295079112/bybit-stockholm-open-2026",
+        "https://www.sportytrader.com/us/picks/adolfo-daniel-vallejo-ugo-humbert-386415/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkkfuCqtlcZaWtzwPmXxljkD5FZeWp7-gUwIUjHz2SDFJYBt-tVpoYitJo4Ok",
+      "image_credit": "Last Word On Sports",
+      "news": [
+        {
+          "url": "https://lastwordonsports.com/tennis/2026/11/08/atp-stockholm-day-2-predictions-including-ugo-humbert-vs-adolfo-daniel-vallejo/",
+          "title": "ATP Stockholm Day 2 Predictions Including Ugo Humbert vs Adolfo Daniel Vallejo",
+          "publisher": "Last Word On Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkkfuCqtlcZaWtzwPmXxljkD5FZeWp7-gUwIUjHz2SDFJYBt-tVpoYitJo4Ok"
+        },
+        {
+          "url": "https://www.skysports.com/tennis/watch/5947996432295079112/bybit-stockholm-open-2026",
+          "title": "Sports News, Transfers, Scores | Watch Live Sport",
+          "publisher": "Sky Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4UQlVdq1lXhdMww1LAEk9BKhTWJn_e_LjKJYiCJ-MPPSOu3aT1VqjQTdQLeU"
+        },
+        {
+          "url": "https://www.sportytrader.com/us/picks/adolfo-daniel-vallejo-ugo-humbert-386415/",
+          "title": "Adolfo Daniel Vallejo vs Ugo Humbert Prediction & Picks - Stockholm Open",
+          "publisher": "SportyTrader",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6vlijhywSQulgQ6kOg0SbgDpHsprIbZeWSiDvZHXWZiokyqfNg2Cg3IyY2Fk"
+        }
+      ]
+    },
+    {
+      "query": "hogwarts legacy 2",
+      "approx_searches": "500+",
       "published_at": "2026-11-09T13:10:00Z",
       "related_news_urls": [
         "https://www.imdb.com/news/ni66100826/?ref_=ttnw_art_perm",
@@ -38,321 +337,6 @@
           "publisher": "OpenCritic",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVlq9s3wmJUaWPLaR_XDu_n45jeJUmWuXFEei-yKouaN7QBZj0xnx0M2TzjGY"
-        }
-      ]
-    },
-    {
-      "query": "ugo humbert",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T13:10:00Z",
-      "related_news_urls": [
-        "https://www.atptour.com/en/video/highlights-cerundolo-ousts-home-hope-ymer-earns-first-atp-tour-indoor-hard-win-stockholm-2026",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/f0ca227d-fd87-41ba-aa28-08651bbcccaa/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/alastair-gray-vs-darwin-blanch-nov-09-2026/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHc9Z7uy1vn5EQpuEVjOUFhNMTTs5dAkIfF_aqgSbepwjUswZBa01OM3KBTzg",
-      "image_credit": "ATP Tour",
-      "news": [
-        {
-          "url": "https://www.atptour.com/en/video/highlights-cerundolo-ousts-home-hope-ymer-earns-first-atp-tour-indoor-hard-win-stockholm-2026",
-          "title": "Highlights: Cerundolo ousts home hope Ymer, earns first ATP Tour indoor hard win Stockholm 2026 | ATP Tour | Tennis",
-          "publisher": "ATP Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHc9Z7uy1vn5EQpuEVjOUFhNMTTs5dAkIfF_aqgSbepwjUswZBa01OM3KBTzg"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/f0ca227d-fd87-41ba-aa28-08651bbcccaa/",
-          "title": "November 10, 2026: Jessica Pegula vs Marta Kostyuk Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAQMkfQn0AoP5f5x6bl21_2KsnE-myKZ841qVBkDtUzndDPg7RpthoZ4MMlbg"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/alastair-gray-vs-darwin-blanch-nov-09-2026/",
-          "title": "November 9, 2026: Alastair Gray vs Darwin Blanch Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJ7ZPp-Vk4sApj2ISsq-M9l3FCoEkRs33XhinuZtCRz_kc3suTncKdYMoip6U"
-        }
-      ]
-    },
-    {
-      "query": "beth holloway",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T13:10:00Z",
-      "related_news_urls": [
-        "https://www.today.com/parents/beth-holloway-now-rcna607831",
-        "https://people.com/bombshells-from-taken-natalee-holloway-netflix-12233176",
-        "https://www.yahoo.com/entertainment/tv/articles/disturbing-true-crime-documentary-officially-054330008.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAWgVwXyMsZFfJeUVV4uvQgmvz-jWratu3ErLYbkCoLaUq01naPH57h0UmF2w",
-      "image_credit": "TODAY.com",
-      "news": [
-        {
-          "url": "https://www.today.com/parents/beth-holloway-now-rcna607831",
-          "title": "Beth Holloway Recalls the Moment She Came Face to Face with Daughter Natalee’s Killer in 2005: ‘He Knows’",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAWgVwXyMsZFfJeUVV4uvQgmvz-jWratu3ErLYbkCoLaUq01naPH57h0UmF2w"
-        },
-        {
-          "url": "https://people.com/bombshells-from-taken-natalee-holloway-netflix-12233176",
-          "title": "8 Disturbing Bombshells from ‘Taken: Natalee Holloway’",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUjrqmlKMFeJjv1XZYt4Oqp0Ij105ILLO0qzlfoLuSbb88E30Ky380cHRtxQQ"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/disturbing-true-crime-documentary-officially-054330008.html",
-          "title": "Disturbing True Crime Documentary is Officially the No. 1 Series on Netflix Just Two Days After Its Debut",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBUFFrIUKCP_VQij3nccXdSzbBck-dfEJmGSq6Q3H4uV-FunthEVy9A0gemDY"
-        }
-      ]
-    },
-    {
-      "query": "nfl trade deadline",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T13:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50389499/2026-nfl-trade-deadline-offers-experts-taylor-woolen-pollard",
-        "https://www.nytimes.com/athletic/live-blogs/nfl-trade-deadline-2026-live-updates-news-grades-tracker/V6wZ6DTPEgzk/",
-        "https://www.cbssports.com/nfl/news/10-nfl-trades-deadline-derrick-henry-patriots-budda-baker-bills/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsgheOxZ5rzRbCByrq7Bxie6y5e8XpTrJfiBOFTmTDu3-zi1WJqBIvQN09W1Q",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50389499/2026-nfl-trade-deadline-offers-experts-taylor-woolen-pollard",
-          "title": "2026 NFL trade deadline: Proposing deals for Tony Pollard, Riq Woolen, others",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsgheOxZ5rzRbCByrq7Bxie6y5e8XpTrJfiBOFTmTDu3-zi1WJqBIvQN09W1Q"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/live-blogs/nfl-trade-deadline-2026-live-updates-news-grades-tracker/V6wZ6DTPEgzk/",
-          "title": "NFL trade deadline 2026 live updates: News, analysis and reaction to every deal",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqdzgl7M7uxdxy0cX_n6h4FGy5CVOjsFjTCF0G7SLj7_eVLPdBedqS5b3nvS8"
-        },
-        {
-          "url": "https://www.cbssports.com/nfl/news/10-nfl-trades-deadline-derrick-henry-patriots-budda-baker-bills/",
-          "title": "10 NFL trades that need to happen: Derrick Henry to Patriots, Budda Baker to Bills among options",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCR3cBiyC1lARnDsXceUw2Qnu0lyYLmEF_XjRN-Bw8iz-iAgYWI9rmMOdTFWc"
-        }
-      ]
-    },
-    {
-      "query": "will mcdonald",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T13:00:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-will-mcdonald-requests-a-trade-away-from-the-jets",
-        "https://athlonsports.com/nfl/san-francisco-49ers/analyst-49ers-fit-underrated-afc-edge-rusher",
-        "https://roundtable.io/sports/nfl/jets/news/aaron-glenn-and-darren-mougey-likely-have-different-jets-deadline-hope"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0Ht6mjDEzyPpMTeScj5MPMz9JPWaJjz8eg7Ps1TTVkaxSeHf-1lLnXgEab5g",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-will-mcdonald-requests-a-trade-away-from-the-jets",
-          "title": "Report: Will McDonald requests a trade away from the Jets",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0Ht6mjDEzyPpMTeScj5MPMz9JPWaJjz8eg7Ps1TTVkaxSeHf-1lLnXgEab5g"
-        },
-        {
-          "url": "https://athlonsports.com/nfl/san-francisco-49ers/analyst-49ers-fit-underrated-afc-edge-rusher",
-          "title": "Analyst Suggests 49ers Are a Fit for Underrated AFC Edge Rusher",
-          "publisher": "Athlon Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7u-FQeBEKL1XOLCwZGVkOIyM2n2xPgpv6qsRguAOWRs7_-OGQPuXxakc8sTk"
-        },
-        {
-          "url": "https://roundtable.io/sports/nfl/jets/news/aaron-glenn-and-darren-mougey-likely-have-different-jets-deadline-hope",
-          "title": "Aaron Glenn and Darren Mougey Likely Have Different Jets Deadline Hope",
-          "publisher": "roundtable.io",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXLaEQooEEUG4NIKosFPfkGyxo9wZCYR5bV7-hzfSTqvh2rdJOKxNz523Any0"
-        }
-      ]
-    },
-    {
-      "query": "what did dave chappelle say about charlie kirk",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-09T13:00:00Z",
-      "related_news_urls": [
-        "https://thehill.com/media/6207297-erika-kirk-dave-chappelle-joke-charlie-kirk-beyond-disgusting/",
-        "https://variety.com/2026/digital/news/dave-chappelles-charlie-kirk-joke-erika-kirk-responds-1236942735/",
-        "https://deadline.com/2026/11/charlie-kirk-widow-jokes-beyond-disgusting-dave-chappelle-1237216849/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyw97-P9Uf6igzFB3C2BazLgqOn2n-zcJwYMZJXUS8c1YkgHPn9h_zlzgqYsM",
-      "image_credit": "The Hill",
-      "news": [
-        {
-          "url": "https://thehill.com/media/6207297-erika-kirk-dave-chappelle-joke-charlie-kirk-beyond-disgusting/",
-          "title": "Kirk finds Dave Chappelle’s joke about husband’s murder ‘beyond disgusting’",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyw97-P9Uf6igzFB3C2BazLgqOn2n-zcJwYMZJXUS8c1YkgHPn9h_zlzgqYsM"
-        },
-        {
-          "url": "https://variety.com/2026/digital/news/dave-chappelles-charlie-kirk-joke-erika-kirk-responds-1236942735/",
-          "title": "Dave Chappelle’s Charlie Kirk Joke Prompts Response from Erika Kirk: Using the ‘Destruction of a Human Life’ as a ‘Punchline Is Beyond Disgusting’",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrKN2BzeIuPpXll9UlwPLH0SvmHfC4omsNyrgnVjQTaYZTxgyOqJ92a0d-njw"
-        },
-        {
-          "url": "https://deadline.com/2026/11/charlie-kirk-widow-jokes-beyond-disgusting-dave-chappelle-1237216849/",
-          "title": "Charlie Kirk’s Widow Calls Jokes About Him “Beyond Disgusting” After Outcry Over Dave Chappelle Stand-Up",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkGL7zeHlGZTQ49O64fB3XCCIWE-t4p33sL89m4LDYRi74bMoabzoDcCULk3U"
-        }
-      ]
-    },
-    {
-      "query": "jessie bates",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-09T12:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50432277/sources-jaguars-get-jessie-bates-iii-trade-falcons",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jaguars-agree-to-trade-for-falcons-s-jessie-bates",
-        "https://sports.yahoo.com/articles/jaguars-reportedly-acquiring-falcons-pro-130945355.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7SUqRPZkXagG-DHIPnAqv3Ox5xs7nA1eRfcESsGp-lf4flDkVXmHI0lldbAo",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50432277/sources-jaguars-get-jessie-bates-iii-trade-falcons",
-          "title": "Sources - Jaguars bolster secondary, land Jessie Bates III in trade with Falcons",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7SUqRPZkXagG-DHIPnAqv3Ox5xs7nA1eRfcESsGp-lf4flDkVXmHI0lldbAo"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jaguars-agree-to-trade-for-falcons-s-jessie-bates",
-          "title": "Jaguars agree to trade for Falcons S Jessie Bates",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTHOHtjUUWccfBvwy4so8ECrCG1Z0_RZppNddRKTArnfGNescSm_ei_OXmLi8"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/jaguars-reportedly-acquiring-falcons-pro-130945355.html",
-          "title": "Jaguars reportedly acquiring Falcons' Pro Bowl safety in major trade",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8WN3xVQqwNgpipOBRi9iiJQc4WNg6T8U2qYtakQpOtYFVGin54eZmtWlWOlY"
-        }
-      ]
-    },
-    {
-      "query": "st",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T12:50:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/travel/mysterious-blood-soaked-relic-linked-history-most-beloved-saint-st-francis-assisi-goes-display",
-        "https://www.foxnews.com/video/6408037507112",
-        "https://www.wtsp.com/article/news/local/pinellascounty/fire-st-pete-beach-tradewinds-resort/67-ad969817-8831-4407-8538-82d80f4f1aaa"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtVsWYxOydX-MoL6yqgTdooVpkZMH3H1daSPPYAOzP0srcRyZTskLO7Ahjt9o",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/travel/mysterious-blood-soaked-relic-linked-history-most-beloved-saint-st-francis-assisi-goes-display",
-          "title": "Mysterious blood-soaked relic linked to history's most beloved saint, St. Francis of Assisi, goes on display",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtVsWYxOydX-MoL6yqgTdooVpkZMH3H1daSPPYAOzP0srcRyZTskLO7Ahjt9o"
-        },
-        {
-          "url": "https://www.foxnews.com/video/6408037507112",
-          "title": "Why St. Francis' wounds hold special significance for Christians: expert",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgvIFCmZBzvAyr6jvE7JNHhsORzw4nEpNJhhLojCHVjNssazI6ieD3B2Ps-3c"
-        },
-        {
-          "url": "https://www.wtsp.com/article/news/local/pinellascounty/fire-st-pete-beach-tradewinds-resort/67-ad969817-8831-4407-8538-82d80f4f1aaa",
-          "title": "Fire at TradeWinds in St. Pete Beach contained after 2-alarm response",
-          "publisher": "wtsp.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZXR6rxdiZRmjOuPoRAtblPnSR2snnLQ4UPlpzz-HK2abgQTgVaCFrpbYFrOQ"
-        }
-      ]
-    },
-    {
-      "query": "are schools closed on veterans day",
-      "approx_searches": "100+",
-      "published_at": "2026-11-09T12:50:00Z",
-      "related_news_urls": [
-        "https://www.wcjb.com/2026/11/09/alachua-county-veterans-services-hosting-annual-veterans-day-celebration/",
-        "https://www.heraldtribune.com/story/news/education/2026/11/09/school-in-florida-veterans-day/92623963007/",
-        "https://www.wtxl.com/news/local-news/veterans-day-closures-trash-schedule-changes-and-more-in-big-bend-and-georgia"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEQlxjsQqwpa19mJOcCrXjp5UhYOGNqyv1VTeurYWGlmRXap9LEtu80hDq5wM",
-      "image_credit": "WCJB",
-      "news": [
-        {
-          "url": "https://www.wcjb.com/2026/11/09/alachua-county-veterans-services-hosting-annual-veterans-day-celebration/",
-          "title": "Alachua County Veterans Services hosting annual Veterans Day celebration",
-          "publisher": "WCJB",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEQlxjsQqwpa19mJOcCrXjp5UhYOGNqyv1VTeurYWGlmRXap9LEtu80hDq5wM"
-        },
-        {
-          "url": "https://www.heraldtribune.com/story/news/education/2026/11/09/school-in-florida-veterans-day/92623963007/",
-          "title": "Why aren't all Florida schools closed for Veterans Day? See list by county",
-          "publisher": "Sarasota Herald-Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVHTXYhAJnHg9AjOwPC9-O3Wkh-ZAzGlRpisVTgOuiL6nAgFi_GTVDmk3kcVA"
-        },
-        {
-          "url": "https://www.wtxl.com/news/local-news/veterans-day-closures-trash-schedule-changes-and-more-in-big-bend-and-georgia",
-          "title": "Veterans Day closures, trash schedule changes, and more in Big Bend and Georgia",
-          "publisher": "WTXL ABC 27 Tallahassee News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrzsAjsskqhJECnT0m6CRXg_ga8e5nrWufo6eMfP6GsFt1v6BDGtn91anWz9g"
-        }
-      ]
-    },
-    {
-      "query": "robby discher",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T12:40:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/ohio-state/article/ohio-state-football-parts-ways-with-special-teams-coordinator-robby-discher-292437972/",
-        "https://www.cleveland.com/osu/2026/11/ohio-state-coordinator-fired-after-blowout-loss-to-oregon-football-report.html",
-        "https://www.footballscoop.com/2026/11/09/sources-ohio-state-making-coordinator-change-special-teams-coordinator-robby-discher-out"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSs1thSMYEihQKSvW6W1_yyLacJrahJ-Vgx2NisCn3LUNK-Jt2kKpSX68VbOG8",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/ohio-state/article/ohio-state-football-parts-ways-with-special-teams-coordinator-robby-discher-292437972/",
-          "title": "Ohio State parts ways with special teams coordinator Robby Discher",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSs1thSMYEihQKSvW6W1_yyLacJrahJ-Vgx2NisCn3LUNK-Jt2kKpSX68VbOG8"
-        },
-        {
-          "url": "https://www.cleveland.com/osu/2026/11/ohio-state-coordinator-fired-after-blowout-loss-to-oregon-football-report.html",
-          "title": "Ohio State coordinator fired after blowout loss to Oregon football: Report",
-          "publisher": "Cleveland.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFLZibyG62K7h-OsiYQ-76O4FVV1loXQxbGWwrgUbbBpeZPHdLIG2mKyBbcJ4"
-        },
-        {
-          "url": "https://www.footballscoop.com/2026/11/09/sources-ohio-state-making-coordinator-change-special-teams-coordinator-robby-discher-out",
-          "title": "Sources: Ohio State Making Coordinator Change, Special Teams Coordinator Robby Discher out",
-          "publisher": "FootballScoop.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5qeKXrsIq0TZpTFkWMPjq8sKxz_t5IG1QHfzFxTBCEoa39tfvuOX9HI_rVQ4"
         }
       ]
     }
