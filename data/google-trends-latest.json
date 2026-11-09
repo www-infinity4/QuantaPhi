@@ -3,28 +3,336 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T13:01:24.080294Z",
+  "checked_at": "2026-11-09T13:30:57.944728Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "hogwarts legacy 2",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T13:10:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66100826/?ref_=ttnw_art_perm",
+        "https://collider.com/hogwarts-legacy-2-officially-confirmed/",
+        "https://opencritic.com/news/39278/hogwarts-legacy-2-officially-unveiled-by-warner-bros-"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNpeQALzVQR0lEYP-vq-NTbfD44IKH7pzvVj9j38OcK4EDcU2G3Alv6DL0Rn4",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66100826/?ref_=ttnw_art_perm",
+          "title": "Hogwarts Legacy 2 Officially Unveiled By Warner Bros.",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNpeQALzVQR0lEYP-vq-NTbfD44IKH7pzvVj9j38OcK4EDcU2G3Alv6DL0Rn4"
+        },
+        {
+          "url": "https://collider.com/hogwarts-legacy-2-officially-confirmed/",
+          "title": "‘Hogwarts Legacy 2’ Is Officially Happening",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8dKjZF6duXSmk64Q_G_uqVA6eYUryVfijRWFWBcBWc3ucUSgJpjI--srO13Q"
+        },
+        {
+          "url": "https://opencritic.com/news/39278/hogwarts-legacy-2-officially-unveiled-by-warner-bros-",
+          "title": "Hogwarts Legacy 2 Officially Unveiled By Warner Bros.",
+          "publisher": "OpenCritic",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVlq9s3wmJUaWPLaR_XDu_n45jeJUmWuXFEei-yKouaN7QBZj0xnx0M2TzjGY"
+        }
+      ]
+    },
+    {
+      "query": "ugo humbert",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T13:10:00Z",
+      "related_news_urls": [
+        "https://www.atptour.com/en/video/highlights-cerundolo-ousts-home-hope-ymer-earns-first-atp-tour-indoor-hard-win-stockholm-2026",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/f0ca227d-fd87-41ba-aa28-08651bbcccaa/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/alastair-gray-vs-darwin-blanch-nov-09-2026/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHc9Z7uy1vn5EQpuEVjOUFhNMTTs5dAkIfF_aqgSbepwjUswZBa01OM3KBTzg",
+      "image_credit": "ATP Tour",
+      "news": [
+        {
+          "url": "https://www.atptour.com/en/video/highlights-cerundolo-ousts-home-hope-ymer-earns-first-atp-tour-indoor-hard-win-stockholm-2026",
+          "title": "Highlights: Cerundolo ousts home hope Ymer, earns first ATP Tour indoor hard win Stockholm 2026 | ATP Tour | Tennis",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHc9Z7uy1vn5EQpuEVjOUFhNMTTs5dAkIfF_aqgSbepwjUswZBa01OM3KBTzg"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/f0ca227d-fd87-41ba-aa28-08651bbcccaa/",
+          "title": "November 10, 2026: Jessica Pegula vs Marta Kostyuk Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAQMkfQn0AoP5f5x6bl21_2KsnE-myKZ841qVBkDtUzndDPg7RpthoZ4MMlbg"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/alastair-gray-vs-darwin-blanch-nov-09-2026/",
+          "title": "November 9, 2026: Alastair Gray vs Darwin Blanch Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJ7ZPp-Vk4sApj2ISsq-M9l3FCoEkRs33XhinuZtCRz_kc3suTncKdYMoip6U"
+        }
+      ]
+    },
+    {
+      "query": "beth holloway",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T13:10:00Z",
+      "related_news_urls": [
+        "https://www.today.com/parents/beth-holloway-now-rcna607831",
+        "https://people.com/bombshells-from-taken-natalee-holloway-netflix-12233176",
+        "https://www.yahoo.com/entertainment/tv/articles/disturbing-true-crime-documentary-officially-054330008.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAWgVwXyMsZFfJeUVV4uvQgmvz-jWratu3ErLYbkCoLaUq01naPH57h0UmF2w",
+      "image_credit": "TODAY.com",
+      "news": [
+        {
+          "url": "https://www.today.com/parents/beth-holloway-now-rcna607831",
+          "title": "Beth Holloway Recalls the Moment She Came Face to Face with Daughter Natalee’s Killer in 2005: ‘He Knows’",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAWgVwXyMsZFfJeUVV4uvQgmvz-jWratu3ErLYbkCoLaUq01naPH57h0UmF2w"
+        },
+        {
+          "url": "https://people.com/bombshells-from-taken-natalee-holloway-netflix-12233176",
+          "title": "8 Disturbing Bombshells from ‘Taken: Natalee Holloway’",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUjrqmlKMFeJjv1XZYt4Oqp0Ij105ILLO0qzlfoLuSbb88E30Ky380cHRtxQQ"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/disturbing-true-crime-documentary-officially-054330008.html",
+          "title": "Disturbing True Crime Documentary is Officially the No. 1 Series on Netflix Just Two Days After Its Debut",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBUFFrIUKCP_VQij3nccXdSzbBck-dfEJmGSq6Q3H4uV-FunthEVy9A0gemDY"
+        }
+      ]
+    },
+    {
+      "query": "nfl trade deadline",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-09T13:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50389499/2026-nfl-trade-deadline-offers-experts-taylor-woolen-pollard",
+        "https://www.nytimes.com/athletic/live-blogs/nfl-trade-deadline-2026-live-updates-news-grades-tracker/V6wZ6DTPEgzk/",
+        "https://www.cbssports.com/nfl/news/10-nfl-trades-deadline-derrick-henry-patriots-budda-baker-bills/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsgheOxZ5rzRbCByrq7Bxie6y5e8XpTrJfiBOFTmTDu3-zi1WJqBIvQN09W1Q",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50389499/2026-nfl-trade-deadline-offers-experts-taylor-woolen-pollard",
+          "title": "2026 NFL trade deadline: Proposing deals for Tony Pollard, Riq Woolen, others",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsgheOxZ5rzRbCByrq7Bxie6y5e8XpTrJfiBOFTmTDu3-zi1WJqBIvQN09W1Q"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/live-blogs/nfl-trade-deadline-2026-live-updates-news-grades-tracker/V6wZ6DTPEgzk/",
+          "title": "NFL trade deadline 2026 live updates: News, analysis and reaction to every deal",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqdzgl7M7uxdxy0cX_n6h4FGy5CVOjsFjTCF0G7SLj7_eVLPdBedqS5b3nvS8"
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/news/10-nfl-trades-deadline-derrick-henry-patriots-budda-baker-bills/",
+          "title": "10 NFL trades that need to happen: Derrick Henry to Patriots, Budda Baker to Bills among options",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCR3cBiyC1lARnDsXceUw2Qnu0lyYLmEF_XjRN-Bw8iz-iAgYWI9rmMOdTFWc"
+        }
+      ]
+    },
+    {
+      "query": "will mcdonald",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T13:00:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-will-mcdonald-requests-a-trade-away-from-the-jets",
+        "https://athlonsports.com/nfl/san-francisco-49ers/analyst-49ers-fit-underrated-afc-edge-rusher",
+        "https://roundtable.io/sports/nfl/jets/news/aaron-glenn-and-darren-mougey-likely-have-different-jets-deadline-hope"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0Ht6mjDEzyPpMTeScj5MPMz9JPWaJjz8eg7Ps1TTVkaxSeHf-1lLnXgEab5g",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-will-mcdonald-requests-a-trade-away-from-the-jets",
+          "title": "Report: Will McDonald requests a trade away from the Jets",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0Ht6mjDEzyPpMTeScj5MPMz9JPWaJjz8eg7Ps1TTVkaxSeHf-1lLnXgEab5g"
+        },
+        {
+          "url": "https://athlonsports.com/nfl/san-francisco-49ers/analyst-49ers-fit-underrated-afc-edge-rusher",
+          "title": "Analyst Suggests 49ers Are a Fit for Underrated AFC Edge Rusher",
+          "publisher": "Athlon Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7u-FQeBEKL1XOLCwZGVkOIyM2n2xPgpv6qsRguAOWRs7_-OGQPuXxakc8sTk"
+        },
+        {
+          "url": "https://roundtable.io/sports/nfl/jets/news/aaron-glenn-and-darren-mougey-likely-have-different-jets-deadline-hope",
+          "title": "Aaron Glenn and Darren Mougey Likely Have Different Jets Deadline Hope",
+          "publisher": "roundtable.io",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXLaEQooEEUG4NIKosFPfkGyxo9wZCYR5bV7-hzfSTqvh2rdJOKxNz523Any0"
+        }
+      ]
+    },
+    {
+      "query": "what did dave chappelle say about charlie kirk",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-09T13:00:00Z",
+      "related_news_urls": [
+        "https://thehill.com/media/6207297-erika-kirk-dave-chappelle-joke-charlie-kirk-beyond-disgusting/",
+        "https://variety.com/2026/digital/news/dave-chappelles-charlie-kirk-joke-erika-kirk-responds-1236942735/",
+        "https://deadline.com/2026/11/charlie-kirk-widow-jokes-beyond-disgusting-dave-chappelle-1237216849/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyw97-P9Uf6igzFB3C2BazLgqOn2n-zcJwYMZJXUS8c1YkgHPn9h_zlzgqYsM",
+      "image_credit": "The Hill",
+      "news": [
+        {
+          "url": "https://thehill.com/media/6207297-erika-kirk-dave-chappelle-joke-charlie-kirk-beyond-disgusting/",
+          "title": "Kirk finds Dave Chappelle’s joke about husband’s murder ‘beyond disgusting’",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyw97-P9Uf6igzFB3C2BazLgqOn2n-zcJwYMZJXUS8c1YkgHPn9h_zlzgqYsM"
+        },
+        {
+          "url": "https://variety.com/2026/digital/news/dave-chappelles-charlie-kirk-joke-erika-kirk-responds-1236942735/",
+          "title": "Dave Chappelle’s Charlie Kirk Joke Prompts Response from Erika Kirk: Using the ‘Destruction of a Human Life’ as a ‘Punchline Is Beyond Disgusting’",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrKN2BzeIuPpXll9UlwPLH0SvmHfC4omsNyrgnVjQTaYZTxgyOqJ92a0d-njw"
+        },
+        {
+          "url": "https://deadline.com/2026/11/charlie-kirk-widow-jokes-beyond-disgusting-dave-chappelle-1237216849/",
+          "title": "Charlie Kirk’s Widow Calls Jokes About Him “Beyond Disgusting” After Outcry Over Dave Chappelle Stand-Up",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkGL7zeHlGZTQ49O64fB3XCCIWE-t4p33sL89m4LDYRi74bMoabzoDcCULk3U"
+        }
+      ]
+    },
+    {
+      "query": "jessie bates",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-09T12:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50432277/sources-jaguars-get-jessie-bates-iii-trade-falcons",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jaguars-agree-to-trade-for-falcons-s-jessie-bates",
+        "https://sports.yahoo.com/articles/jaguars-reportedly-acquiring-falcons-pro-130945355.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7SUqRPZkXagG-DHIPnAqv3Ox5xs7nA1eRfcESsGp-lf4flDkVXmHI0lldbAo",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50432277/sources-jaguars-get-jessie-bates-iii-trade-falcons",
+          "title": "Sources - Jaguars bolster secondary, land Jessie Bates III in trade with Falcons",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7SUqRPZkXagG-DHIPnAqv3Ox5xs7nA1eRfcESsGp-lf4flDkVXmHI0lldbAo"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jaguars-agree-to-trade-for-falcons-s-jessie-bates",
+          "title": "Jaguars agree to trade for Falcons S Jessie Bates",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTHOHtjUUWccfBvwy4so8ECrCG1Z0_RZppNddRKTArnfGNescSm_ei_OXmLi8"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/jaguars-reportedly-acquiring-falcons-pro-130945355.html",
+          "title": "Jaguars reportedly acquiring Falcons' Pro Bowl safety in major trade",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8WN3xVQqwNgpipOBRi9iiJQc4WNg6T8U2qYtakQpOtYFVGin54eZmtWlWOlY"
+        }
+      ]
+    },
+    {
+      "query": "st",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T12:50:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/travel/mysterious-blood-soaked-relic-linked-history-most-beloved-saint-st-francis-assisi-goes-display",
+        "https://www.foxnews.com/video/6408037507112",
+        "https://www.wtsp.com/article/news/local/pinellascounty/fire-st-pete-beach-tradewinds-resort/67-ad969817-8831-4407-8538-82d80f4f1aaa"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtVsWYxOydX-MoL6yqgTdooVpkZMH3H1daSPPYAOzP0srcRyZTskLO7Ahjt9o",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/travel/mysterious-blood-soaked-relic-linked-history-most-beloved-saint-st-francis-assisi-goes-display",
+          "title": "Mysterious blood-soaked relic linked to history's most beloved saint, St. Francis of Assisi, goes on display",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtVsWYxOydX-MoL6yqgTdooVpkZMH3H1daSPPYAOzP0srcRyZTskLO7Ahjt9o"
+        },
+        {
+          "url": "https://www.foxnews.com/video/6408037507112",
+          "title": "Why St. Francis' wounds hold special significance for Christians: expert",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgvIFCmZBzvAyr6jvE7JNHhsORzw4nEpNJhhLojCHVjNssazI6ieD3B2Ps-3c"
+        },
+        {
+          "url": "https://www.wtsp.com/article/news/local/pinellascounty/fire-st-pete-beach-tradewinds-resort/67-ad969817-8831-4407-8538-82d80f4f1aaa",
+          "title": "Fire at TradeWinds in St. Pete Beach contained after 2-alarm response",
+          "publisher": "wtsp.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZXR6rxdiZRmjOuPoRAtblPnSR2snnLQ4UPlpzz-HK2abgQTgVaCFrpbYFrOQ"
+        }
+      ]
+    },
+    {
+      "query": "are schools closed on veterans day",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T12:50:00Z",
+      "related_news_urls": [
+        "https://www.wcjb.com/2026/11/09/alachua-county-veterans-services-hosting-annual-veterans-day-celebration/",
+        "https://www.heraldtribune.com/story/news/education/2026/11/09/school-in-florida-veterans-day/92623963007/",
+        "https://www.wtxl.com/news/local-news/veterans-day-closures-trash-schedule-changes-and-more-in-big-bend-and-georgia"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEQlxjsQqwpa19mJOcCrXjp5UhYOGNqyv1VTeurYWGlmRXap9LEtu80hDq5wM",
+      "image_credit": "WCJB",
+      "news": [
+        {
+          "url": "https://www.wcjb.com/2026/11/09/alachua-county-veterans-services-hosting-annual-veterans-day-celebration/",
+          "title": "Alachua County Veterans Services hosting annual Veterans Day celebration",
+          "publisher": "WCJB",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEQlxjsQqwpa19mJOcCrXjp5UhYOGNqyv1VTeurYWGlmRXap9LEtu80hDq5wM"
+        },
+        {
+          "url": "https://www.heraldtribune.com/story/news/education/2026/11/09/school-in-florida-veterans-day/92623963007/",
+          "title": "Why aren't all Florida schools closed for Veterans Day? See list by county",
+          "publisher": "Sarasota Herald-Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVHTXYhAJnHg9AjOwPC9-O3Wkh-ZAzGlRpisVTgOuiL6nAgFi_GTVDmk3kcVA"
+        },
+        {
+          "url": "https://www.wtxl.com/news/local-news/veterans-day-closures-trash-schedule-changes-and-more-in-big-bend-and-georgia",
+          "title": "Veterans Day closures, trash schedule changes, and more in Big Bend and Georgia",
+          "publisher": "WTXL ABC 27 Tallahassee News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrzsAjsskqhJECnT0m6CRXg_ga8e5nrWufo6eMfP6GsFt1v6BDGtn91anWz9g"
+        }
+      ]
+    },
     {
       "query": "robby discher",
       "approx_searches": "200+",
       "published_at": "2026-11-09T12:40:00Z",
       "related_news_urls": [
-        "https://www.on3.com/teams/ohio-state-buckeyes/news/ohio-state-buckeyes-football-special-teams-coordinator-robbie-discher-fired/",
         "https://247sports.com/college/ohio-state/article/ohio-state-football-parts-ways-with-special-teams-coordinator-robby-discher-292437972/",
-        "https://heavy.com/sports/college-football/ohio-state-buckeyes/ohio-state-fires-coach-after-oregon-loss/"
+        "https://www.cleveland.com/osu/2026/11/ohio-state-coordinator-fired-after-blowout-loss-to-oregon-football-report.html",
+        "https://www.footballscoop.com/2026/11/09/sources-ohio-state-making-coordinator-change-special-teams-coordinator-robby-discher-out"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdYOkuUW198_Algni8jqcG2fgkSTHOHk-XXBWXF-E7ESSYAL52Ok_2AgU_nzs",
-      "image_credit": "On3",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSs1thSMYEihQKSvW6W1_yyLacJrahJ-Vgx2NisCn3LUNK-Jt2kKpSX68VbOG8",
+      "image_credit": "247Sports",
       "news": [
-        {
-          "url": "https://www.on3.com/teams/ohio-state-buckeyes/news/ohio-state-buckeyes-football-special-teams-coordinator-robbie-discher-fired/",
-          "title": "Ohio State fires special teams coordinator Robby Discher",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdYOkuUW198_Algni8jqcG2fgkSTHOHk-XXBWXF-E7ESSYAL52Ok_2AgU_nzs"
-        },
         {
           "url": "https://247sports.com/college/ohio-state/article/ohio-state-football-parts-ways-with-special-teams-coordinator-robby-discher-292437972/",
           "title": "Ohio State parts ways with special teams coordinator Robby Discher",
@@ -33,318 +341,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSs1thSMYEihQKSvW6W1_yyLacJrahJ-Vgx2NisCn3LUNK-Jt2kKpSX68VbOG8"
         },
         {
-          "url": "https://heavy.com/sports/college-football/ohio-state-buckeyes/ohio-state-fires-coach-after-oregon-loss/",
-          "title": "Ohio State Fires Coach After Oregon Loss",
-          "publisher": "Heavy.com",
+          "url": "https://www.cleveland.com/osu/2026/11/ohio-state-coordinator-fired-after-blowout-loss-to-oregon-football-report.html",
+          "title": "Ohio State coordinator fired after blowout loss to Oregon football: Report",
+          "publisher": "Cleveland.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4xq6WGp1BXLuFRY8JD04UAPOIVPC4WTiDKq9ixZ3HUGwdq8PBXW4vsJcSkvY"
-        }
-      ]
-    },
-    {
-      "query": "when is gta 6 coming out",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T12:30:00Z",
-      "related_news_urls": [
-        "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10",
-        "https://corporate.charter.com/newsroom/spectrum-giving-free-gig-speed-lift-thanksgiving-grand-theft-auto",
-        "https://www.bgr.com/2308570/things-to-do-before-installing-gta-6-ps5-xbox/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvr3MnhC7loBDcBhBXQOjgXQdBnSX1GgBl8Gp0wCtDiGaqob5Fx5ug4CQtEz4",
-      "image_credit": "Rockstar Games",
-      "news": [
-        {
-          "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10",
-          "title": "Grand Theft Auto VI Pre-Load Begins on November 10",
-          "publisher": "Rockstar Games",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvr3MnhC7loBDcBhBXQOjgXQdBnSX1GgBl8Gp0wCtDiGaqob5Fx5ug4CQtEz4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFLZibyG62K7h-OsiYQ-76O4FVV1loXQxbGWwrgUbbBpeZPHdLIG2mKyBbcJ4"
         },
         {
-          "url": "https://corporate.charter.com/newsroom/spectrum-giving-free-gig-speed-lift-thanksgiving-grand-theft-auto",
-          "title": "Download Grand Theft Auto VI Faster and Get to Leonida Sooner With Spectrum Internet Gig",
-          "publisher": "Charter Communications",
+          "url": "https://www.footballscoop.com/2026/11/09/sources-ohio-state-making-coordinator-change-special-teams-coordinator-robby-discher-out",
+          "title": "Sources: Ohio State Making Coordinator Change, Special Teams Coordinator Robby Discher out",
+          "publisher": "FootballScoop.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLrldBUNUxrprrQdaGkYX-IyU3QqIHF3o_gPJ8nNZdwM-7CUvyPxPcKlXOanM"
-        },
-        {
-          "url": "https://www.bgr.com/2308570/things-to-do-before-installing-gta-6-ps5-xbox/",
-          "title": "5 Things You Need To Do Before You Install Grand Theft Auto 6",
-          "publisher": "BGR",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP-QCKWv6igNJtizFGcUP9dIS86tuMUwNI_8-D8XjBDAlWCSvSEYlel3tkgCQ"
-        }
-      ]
-    },
-    {
-      "query": "argentina",
-      "approx_searches": "100+",
-      "published_at": "2026-11-09T12:30:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/miami/video/pope-visits-argentina/",
-        "https://www.ncronline.org/vatican/pope-leo-arrives-argentina-under-shadow-his-predecessor",
-        "https://www.latimes.com/world-nation/story/2026-11-08/in-argentina-pope-tells-milei-that-people-not-economy-should-come-first"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2QxFtvzIl_zBxnyfHu7-_EOFJDPTiWZZQwj3HXWpRD43DAB-csEKAhqgRH6I",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/miami/video/pope-visits-argentina/",
-          "title": "Pope visits Argentina",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2QxFtvzIl_zBxnyfHu7-_EOFJDPTiWZZQwj3HXWpRD43DAB-csEKAhqgRH6I"
-        },
-        {
-          "url": "https://www.ncronline.org/vatican/pope-leo-arrives-argentina-under-shadow-his-predecessor",
-          "title": "Pope Leo arrives in Argentina under the shadow of his predecessor",
-          "publisher": "National Catholic Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN0MN4CxfEQxEzbQ2SfTW-5JyzaKuH0c6H_tOoK1R_1BOth-s5zUaTOUkTitA"
-        },
-        {
-          "url": "https://www.latimes.com/world-nation/story/2026-11-08/in-argentina-pope-tells-milei-that-people-not-economy-should-come-first",
-          "title": "Pope arrives in Argentina and tells Milei that people, not the economy, should come first",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuJ2waZ8klBOCgofo6ACMKqouzmuDdtttwVyJ_Ok3yKDdkH8xMKQ8KzAFa3Pc"
-        }
-      ]
-    },
-    {
-      "query": "covid symptoms 2026",
-      "approx_searches": "100+",
-      "published_at": "2026-11-09T12:30:00Z",
-      "related_news_urls": [
-        "https://triblive.com/local/regional/whats-making-you-sick-pittsburgh-doctors-explain-the-viruses-circulating-this-fall/",
-        "https://www.13wmaz.com/video/news/national/cold-flu-covid-or-rsv-how-to-tell-the-difference-this-respiratory-virus-season/93-60d2b67a-0d14-4c6a-a31a-e2bb60963b15",
-        "https://www.statesboroherald.com/local/locally-owned/one-test-four-answers/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQf8v6Jfok6OTP-z3NEuJbMfzJhNiaw-QpnVpaxPUNi8VpXBiaZzBAaFGMLd04",
-      "image_credit": "TribLIVE.com",
-      "news": [
-        {
-          "url": "https://triblive.com/local/regional/whats-making-you-sick-pittsburgh-doctors-explain-the-viruses-circulating-this-fall/",
-          "title": "What’s making you sick? Pittsburgh doctors explain the viruses circulating this fall",
-          "publisher": "TribLIVE.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQf8v6Jfok6OTP-z3NEuJbMfzJhNiaw-QpnVpaxPUNi8VpXBiaZzBAaFGMLd04"
-        },
-        {
-          "url": "https://www.13wmaz.com/video/news/national/cold-flu-covid-or-rsv-how-to-tell-the-difference-this-respiratory-virus-season/93-60d2b67a-0d14-4c6a-a31a-e2bb60963b15",
-          "title": "Cold, flu, COVID or RSV? How to tell the difference this respiratory virus season",
-          "publisher": "13WMAZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRw40OB0xdRWSuKtHSQhxn3bFUGSWlJDSOx_VqWa2D_I5eQ4opNwB-1fNxeCg"
-        },
-        {
-          "url": "https://www.statesboroherald.com/local/locally-owned/one-test-four-answers/",
-          "title": "One Test, Four Answers",
-          "publisher": "Statesboro Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr1xxaEf6Y6ZcYa7aJa7ctIge5eSIxRIFVH2aSvoyTiEp8t1SpEAq3ezZOi84"
-        }
-      ]
-    },
-    {
-      "query": "laura gallacher",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T12:20:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/live/c670ppzjwxpnt",
-        "https://www.nbcnews.com/world/united-kingdom/russell-brand-sentenced-years-british-jail-rcna607799",
-        "https://www.theguardian.com/uk-news/live/2026/nov/09/russell-brand-sentencing-rape-sexual-assault-live-news-updates"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEYZr1XaHKc0biimqrDV1Jzy07olz6_NqJX-GP5o54q4r-ksw6MhRQ77hrImo",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/live/c670ppzjwxpnt",
-          "title": "Russell Brand sentencing for rape and sexual assault: Follow live",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEYZr1XaHKc0biimqrDV1Jzy07olz6_NqJX-GP5o54q4r-ksw6MhRQ77hrImo"
-        },
-        {
-          "url": "https://www.nbcnews.com/world/united-kingdom/russell-brand-sentenced-years-british-jail-rcna607799",
-          "title": "Russell Brand awaits sentencing as he faces ‘significant’ prison time for rape and sexual assaults",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmrNszKrfpifDNXRpfipVHVBhBXeMDr-AWzVZG0ryoxeruJagpa0UYIuLPuFY"
-        },
-        {
-          "url": "https://www.theguardian.com/uk-news/live/2026/nov/09/russell-brand-sentencing-rape-sexual-assault-live-news-updates",
-          "title": "Prosecution calls for long jail term as Russell Brand is sentenced for rape and sexual assault – latest updates",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaNr0Hh-JCFyk2YZD1QdnOP_mXMKe1sfvwUUi8n6ZqEp1g7ARTDvD5vPx0BRU"
-        }
-      ]
-    },
-    {
-      "query": "soxl stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T12:20:00Z",
-      "related_news_urls": [
-        "https://blockchain.news/news/20261109-price-prediction-soxl-heavy-selling-oversold-signals-and-crowded",
-        "https://blockchain.news/news/20261107-price-prediction-soxl-oversold-read-but-the-downtrend-still",
-        "https://blockchain.news/news/20261103-price-prediction-soxl-a-98-decline-compresses-the-futures"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcIh5okZ8Ru3VFNNdGhh0JgmWP8XFMq1XTA8P37Yg9CUUZy6YT1f_eq3FuiTQ",
-      "image_credit": "Blockchain News",
-      "news": [
-        {
-          "url": "https://blockchain.news/news/20261109-price-prediction-soxl-heavy-selling-oversold-signals-and-crowded",
-          "title": "SOXL Price Prediction: Heavy selling, oversold signals, and crowded long positioning",
-          "publisher": "Blockchain News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcIh5okZ8Ru3VFNNdGhh0JgmWP8XFMq1XTA8P37Yg9CUUZy6YT1f_eq3FuiTQ"
-        },
-        {
-          "url": "https://blockchain.news/news/20261107-price-prediction-soxl-oversold-read-but-the-downtrend-still",
-          "title": "SOXL Price Prediction: Oversold read, but the downtrend still sets the tone",
-          "publisher": "Blockchain News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcIh5okZ8Ru3VFNNdGhh0JgmWP8XFMq1XTA8P37Yg9CUUZy6YT1f_eq3FuiTQ"
-        },
-        {
-          "url": "https://blockchain.news/news/20261103-price-prediction-soxl-a-98-decline-compresses-the-futures",
-          "title": "SOXL Price Prediction: A 9.8% Decline Compresses the Futures Contract to Its Bollinger Floor",
-          "publisher": "Blockchain News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKUGK9qMDs2hAn9QJgNZ_E3eT1DM86ywUnYnAzLNZq1r2MlfX9726SwkzfYoI"
-        }
-      ]
-    },
-    {
-      "query": "2027 nfl draft first round order",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T12:20:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/nfl/news/2027-nfl-draft-order-team-needs/",
-        "https://www.foxsports.com/stories/nfl/2027-nfl-mock-draft-drew-mestemaker-first-6-qbs-selected-first-round",
-        "https://www.nytimes.com/athletic/7748330/2026/11/03/projected-2027-nfl-draft-order-eagles-jets/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpr2bvvSNsTEx5vDPyHbkPoXQ7pP2bY2uhF7e9NhJRxQD4Y2-hA-Z3ZFn_iLw",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/nfl/news/2027-nfl-draft-order-team-needs/",
-          "title": "2027 NFL Draft order, team needs: Full first-round picks for all 32 teams",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpr2bvvSNsTEx5vDPyHbkPoXQ7pP2bY2uhF7e9NhJRxQD4Y2-hA-Z3ZFn_iLw"
-        },
-        {
-          "url": "https://www.foxsports.com/stories/nfl/2027-nfl-mock-draft-drew-mestemaker-first-6-qbs-selected-first-round",
-          "title": "2027 NFL Mock Draft: Drew Mestemaker First Of 6 QBs Selected In First Round",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBvyMb43dvMvLmSCQYMZ5oCLS2vnX6Z-q5USyX3c5BJaD_p1IyMYMTdnV-Cdw"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7748330/2026/11/03/projected-2027-nfl-draft-order-eagles-jets/",
-          "title": "Projected 2027 NFL Draft Order: Jets could load up early in Round 1; Eagles in top 5? - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTajz9pCcw0THJYcdGzWpJSRIr6bKXIol-3HXWSTiq-hbLUY_BuBmSwFyZWSuA"
-        }
-      ]
-    },
-    {
-      "query": "noaa weather",
-      "approx_searches": "100+",
-      "published_at": "2026-11-09T12:20:00Z",
-      "related_news_urls": [
-        "https://www.noaa.gov/news-release/noaa-weather-modeling-hits-key-milestone-with-rapid-refresh-forecast-system-debut",
-        "https://www.kxan.com/weather/weather-blog/noaa-launches-new-weather-model-retires-several-others/",
-        "https://www.capitalweather.com/say-goodbye-to-the-model-that-nailed-snowcrete/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYTfmi4O5PhoP6DxllFFc8yh3a1iZH1QZQf6Wj-qNSA-LKUiQJDFJ96A-RE-8",
-      "image_credit": "NOAA (.gov)",
-      "news": [
-        {
-          "url": "https://www.noaa.gov/news-release/noaa-weather-modeling-hits-key-milestone-with-rapid-refresh-forecast-system-debut",
-          "title": "NOAA weather modeling hits key milestone with Rapid Refresh Forecast System debut",
-          "publisher": "NOAA (.gov)",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYTfmi4O5PhoP6DxllFFc8yh3a1iZH1QZQf6Wj-qNSA-LKUiQJDFJ96A-RE-8"
-        },
-        {
-          "url": "https://www.kxan.com/weather/weather-blog/noaa-launches-new-weather-model-retires-several-others/",
-          "title": "NOAA launches new weather model, retires several others",
-          "publisher": "KXAN Austin",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaPkpPiJF9-ySACL0aDi6beW1oELf24ItQ07CmeYhFmcagRa6AkeHuQG1N7y8"
-        },
-        {
-          "url": "https://www.capitalweather.com/say-goodbye-to-the-model-that-nailed-snowcrete/",
-          "title": "Say goodbye to the model that nailed Snowcrete",
-          "publisher": "Capital Weather",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdZtit-FgYRAfdutI5WIP3WAJ9Wzv_tO4thy9eloKKZ5vsRcBt1HdLpMv5QL8"
-        }
-      ]
-    },
-    {
-      "query": "goldman sachs treasury yields outlook",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T12:10:00Z",
-      "related_news_urls": [
-        "https://thedarksideoftheboom.substack.com/p/bonds-redemption-goldman-sees-the",
-        "https://richtv.io/news/goldman-says-the-pieces-are-in-place-for-a-shift-in-treasury-yields-global-10-years",
-        "https://www.ad-hoc-news.de/boerse/news/corporate-news/goldman-sachs-stock-weighs-treasury-yield-range-as-volatility-eases/70481038"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2QJh4_BHgFePW7HUxfTXNbzTA5XMnqUjzjN0caDUZwSqpdPCQM8AsKlKrUBI",
-      "image_credit": "The Dark Side Of The Boom",
-      "news": [
-        {
-          "url": "https://thedarksideoftheboom.substack.com/p/bonds-redemption-goldman-sees-the",
-          "title": "Bonds' Redemption: Goldman Sees the Treasury Rally Finding Its Feet",
-          "publisher": "The Dark Side Of The Boom",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2QJh4_BHgFePW7HUxfTXNbzTA5XMnqUjzjN0caDUZwSqpdPCQM8AsKlKrUBI"
-        },
-        {
-          "url": "https://richtv.io/news/goldman-says-the-pieces-are-in-place-for-a-shift-in-treasury-yields-global-10-years",
-          "title": "Goldman says 'the pieces are in place' for a shift in Treasury yields, global 10-years",
-          "publisher": "Rich Picks Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRS03xBF8KgNH_tDFJPHgNzOIXGfMOtK_cluTzdHYQK-6q8J_K2QNWIzKLYLKk"
-        },
-        {
-          "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/goldman-sachs-stock-weighs-treasury-yield-range-as-volatility-eases/70481038",
-          "title": "Goldman Sachs stock weighs Treasury yield range as volatility eases",
-          "publisher": "ad-hoc-news.de",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7wDc0vQEEICAdzz7pic7BXvbUehNnl58cbYInljRcLMA5GhboCD8z6QWmd6w"
-        }
-      ]
-    },
-    {
-      "query": "british airways boeing 787 pittsburgh grounded",
-      "approx_searches": "100+",
-      "published_at": "2026-11-09T12:10:00Z",
-      "related_news_urls": [
-        "https://simpleflying.com/british-airways-boeing-787-stranded-pittsburgh-2-months-complicated-repairs/",
-        "https://aviationa2z.com/index.php/2026/11/09/british-airways-boeing-787-stranded-in-pittsburgh-for-over-70-days/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDushKir-0K4AnQUHXczA8Akx37saCXHkf-7-_Pc7-yNqKyEhrfBwUSXvLaoA",
-      "image_credit": "Simple Flying",
-      "news": [
-        {
-          "url": "https://simpleflying.com/british-airways-boeing-787-stranded-pittsburgh-2-months-complicated-repairs/",
-          "title": "British Airways Boeing 787 Stranded In Pittsburgh For 2 Months Due To Complicated Repairs",
-          "publisher": "Simple Flying",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDushKir-0K4AnQUHXczA8Akx37saCXHkf-7-_Pc7-yNqKyEhrfBwUSXvLaoA"
-        },
-        {
-          "url": "https://aviationa2z.com/index.php/2026/11/09/british-airways-boeing-787-stranded-in-pittsburgh-for-over-70-days/",
-          "title": "British Airways Boeing 787 Stranded in Pittsburgh for Over 70 Days After Ground Collision",
-          "publisher": "Aviation A2Z",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyBanKWQPLc8s2DAp4OsaYhltbWPi_KQ3op-qVKeegyL4H0zWGESFnDa1bQik"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5qeKXrsIq0TZpTFkWMPjq8sKxz_t5IG1QHfzFxTBCEoa39tfvuOX9HI_rVQ4"
         }
       ]
     }
