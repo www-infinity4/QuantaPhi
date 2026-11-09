@@ -22,9 +22,9 @@ export function isCapabilityDiscoveryQuestion(input){
 
  // Questions ABOUT a restricted capability are not commands to perform it.
  // Route them to the source-backed directory, not a GitHub commit reader.
- if(/^(?:explain|tell me)\\s+which\\b.{0,120}\\b(?:tools?|adapters?|capabilities)\\b.{0,90}\\b(?:can|could|would)\\s+(?:commit|merge|deploy|save)\\b/i.test(q))return true;
- if(/^(?:what|which)\\s+(?:real|existing|registered)?\\s*tools?\\s+(?:would|can|could)\\b.{0,100}\\b(?:verify|test|check)\\b/i.test(q))return true;
- if(/^(?:explain|tell me)\\s+whether\\s+(?:this\\s+)?chat\\s+can\\s+(?:verify|read|check)\\b.{0,160}\\b(?:wallet|ledger|starcoin|quants?)\\b/i.test(q))return true;
+ if(/^(?:explain|tell me)\s+which\b.{0,120}\b(?:tools?|adapters?|capabilities)\b.{0,90}\b(?:can|could|would)\s+(?:commit|merge|deploy|save)\b/i.test(q))return true;
+ if(/^(?:what|which)\s+(?:real|existing|registered)?\s*tools?\s+(?:would|can|could)\b.{0,100}\b(?:verify|test|check)\b/i.test(q))return true;
+ if(/^(?:explain|tell me)\s+whether\s+(?:this\s+)?chat\s+can\s+(?:verify|read|check)\b.{0,160}\b(?:wallet|ledger|starcoin|quants?)\b/i.test(q))return true;
  if(!/\b(?:tools?|skills?|capabilities|abilities)\b/i.test(q))return false;
  return /^(?:(?:what|which)\s+(?:(?:are|is|do)\s+)?(?:(?:your|the|available|existing|registered)\s+)?(?:tools?|skills?|capabilities|abilities)\b|(?:where|how)\b.{0,75}\b(?:your|bubbles|available|existing)\b.{0,50}\b(?:tools?|skills?|capabilities|abilities)\b|(?:show|list|find|discover|locate)\s+(?:(?:me|us)\s+)?(?:(?:your|existing|available|registered|bubbles)\s+){0,3}(?:tools?|skills?|capabilities|abilities)\b|(?:can|could|would)\s+you\s+(?:show|list|find|locate|describe|tell)\b.{0,55}\b(?:your|existing|available)\s+(?:tools?|skills?|capabilities|abilities)\b|do\s+you\s+have\s+(?:tools?|skills?|capabilities|abilities)\b)/i.test(q);
 }
