@@ -60,7 +60,7 @@ test('schema creates the user/type/millisecond index', () => {
 test('fails closed for missing queries, bad numbers, and wrong token', async () => {
   const {DB,sqlite} = dbFixture();
   try {
-    const env = {DB,INGEST_TOKEN:'local-test-secret',USER_IDENTITY_HMAC_SECRET:SIGNING_SECRET,GEO_STORAGE_ENABLED:'true',INGEST_MODE:'direct'};
+    const env = {DB,INGEST_TOKEN:'local-test-secret',USER_IDENTITY_HMAC_SECRET:SIGNING_SECRET,GEO_STORAGE_ENABLED:'true',INGEST_MODE:'direct',DIRECT_STAGING_ALLOWED:'true'};
     assert.equal((await worker.fetch(request({user:sample().user}), env)).status,400);
     const bad = sample(); bad.queries[0].numerical_value = '1.5';
     assert.equal((await worker.fetch(request(bad),env)).status,422);
@@ -71,7 +71,7 @@ test('fails closed for missing queries, bad numbers, and wrong token', async () 
 test('direct HTTP ingestion normalizes, timestamps and deduplicates replay', async () => {
   const {DB,sqlite} = dbFixture();
   try {
-    const env = {DB,INGEST_TOKEN:'local-test-secret',USER_IDENTITY_HMAC_SECRET:SIGNING_SECRET,GEO_STORAGE_ENABLED:'true',INGEST_MODE:'direct'};
+    const env = {DB,INGEST_TOKEN:'local-test-secret',USER_IDENTITY_HMAC_SECRET:SIGNING_SECRET,GEO_STORAGE_ENABLED:'true',INGEST_MODE:'direct',DIRECT_STAGING_ALLOWED:'true'};
     assert.equal((await worker.fetch(request(sample()),env)).status,201);
     assert.deepEqual(await (await worker.fetch(request(sample()),env)).json(),{received:2,inserted:0,duplicates:2});
     assert.equal(sqlite.prepare('SELECT count(*) n FROM events').get().n,2);
@@ -88,7 +88,7 @@ test('100 events use seven multi-row INSERTs with at most 100 bindings',async()=
     calls.push(stmts);
     return stmts.map(st=>({meta:{changes:st.sql.includes('INSERT INTO events')?(st.sql.match(/\(\?, \?, \?, \?, \?, \?\)/g)||[]).length:1}}));
   }};
-  const r=await worker.fetch(request(sample(100)),{DB,INGEST_TOKEN:'local-test-secret',USER_IDENTITY_HMAC_SECRET:SIGNING_SECRET,GEO_STORAGE_ENABLED:'true',INGEST_MODE:'direct'});
+  const r=await worker.fetch(request(sample(100)),{DB,INGEST_TOKEN:'local-test-secret',USER_IDENTITY_HMAC_SECRET:SIGNING_SECRET,GEO_STORAGE_ENABLED:'true',INGEST_MODE:'direct',DIRECT_STAGING_ALLOWED:'true'});
   assert.equal(r.status,201);
   assert.equal(calls[0].length,8);
   assert.ok(calls[0].every(s=>s.args.length<=100));
@@ -119,7 +119,7 @@ test('queue unavailable fails closed without direct database writes', async()=>{
 test('foreign-key deletion removes user-owned events',async()=>{
   const {DB,sqlite}=dbFixture();
   try{
-    await worker.fetch(request(sample()),{DB,INGEST_TOKEN:'local-test-secret',USER_IDENTITY_HMAC_SECRET:SIGNING_SECRET,GEO_STORAGE_ENABLED:'true',INGEST_MODE:'direct'});
+    await worker.fetch(request(sample()),{DB,INGEST_TOKEN:'local-test-secret',USER_IDENTITY_HMAC_SECRET:SIGNING_SECRET,GEO_STORAGE_ENABLED:'true',INGEST_MODE:'direct',DIRECT_STAGING_ALLOWED:'true'});
     sqlite.prepare('DELETE FROM users WHERE id=?').run(USER_ID);
     assert.equal(sqlite.prepare('SELECT count(*) n FROM events').get().n,0);
   }finally{sqlite.close();}
