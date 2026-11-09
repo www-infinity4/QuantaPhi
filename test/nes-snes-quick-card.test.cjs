@@ -71,7 +71,7 @@ test('NES/SNES player inline script parses and does not load a core before a use
  },window:{addEventListener:()=>{}},location:{reload:()=>{}},
  URL:{createObjectURL:()=>{throw Error('Unexpected blob before valid selection')},revokeObjectURL:()=>{}},
  Uint8Array,Set};
- vm.runInNewContext(playerScript,frame);
+ playerScript.runInNewContext(frame);
  assert.equal(appended.length,0,'no emulator loader before a ROM and a play click');
  await callbacks['play:click']();
  assert.match(elements.status.textContent,/Choose a compatible/);
@@ -89,7 +89,7 @@ test('valid user-provided NES file starts the correct emulator configuration, wi
  const doc={getElementById:id=>controls[id],createElement:tag=>({tagName:tag}),body:{appendChild:s=>appended.push(s)}};
  const win={addEventListener:()=>{}};
  const context={document:doc,window:win,location:{reload:()=>{}},URL:objUrl,Uint8Array,Set};
- vm.runInNewContext(script,context);
+ script.runInNewContext(context);
  await callbacks['play:click']();
  assert.equal(controls.play.disabled,true);
  assert.equal(win.EJS_core,'nes');
