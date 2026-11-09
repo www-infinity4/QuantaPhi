@@ -11,13 +11,14 @@
 // Site Worker future service binding, preserving all its existing bindings:
 //   {"binding":"EVENTS_BRIDGE","service":"REPLACE_REVIEWED_BRIDGE_NAME"}
 // Site Worker future vars (default OFF):
-//   {"EVENTS_BRIDGE_ENABLED":"false"}
+//   {"EVENTS_BRIDGE_ENABLED":"false", "EVENT_CONSENT_MANAGEMENT_ENABLED":"false"}
 {
   "name": "REPLACE_REVIEWED_BRIDGE_NAME",
   "main": "src/wallet-bridge.mjs",
   "compatibility_date": "2026-11-08",
   "vars": {
-    "EVENTS_BRIDGE_ENABLED": "false"
+    "EVENTS_BRIDGE_ENABLED": "false",
+    "EVENT_CONSENT_MANAGEMENT_ENABLED": "false"
   },
   "services": [
     {"binding": "BOT_WALLET", "service": "REPLACE_VERIFIED_UNIFIED_WALLET_WORKER"},
