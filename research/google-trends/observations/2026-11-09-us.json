@@ -3,356 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T11:01:30.482086Z",
+  "checked_at": "2026-11-09T11:31:29.739497Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "servicio de ciudadanía e inmigración de los estados unidos",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T10:40:00Z",
-      "related_news_urls": [
-        "https://www.periodicocubano.com/uscis-endurece-revision-de-ciudadania-que-deben-saber-los-cubanos-que-reciben-ayudas-publicas-o-tienen-hijos-en-la-isla/",
-        "https://www.cibercuba.com/noticias/2026-11-06-u1-e199894-s27061-nid345065-nuevo-memorando-uscis-ayudas-publicas-manutencion",
-        "https://www.directoriocubano.info/estados-unidos/ciudadania-estadounidense-ayudas-manutencion-uscis/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDIcnTXm-VbUNbKP-BFkmS-676jkd1daVQAi6nFKfEKNvHpnbXChAor2ZUvOY",
-      "image_credit": "Periódico Cubano",
-      "news": [
-        {
-          "url": "https://www.periodicocubano.com/uscis-endurece-revision-de-ciudadania-que-deben-saber-los-cubanos-que-reciben-ayudas-publicas-o-tienen-hijos-en-la-isla/",
-          "title": "USCIS endurece revisión de ciudadanía ¿Qué deben saber los cubanos que reciben ayudas públicas o tienen hi ...",
-          "publisher": "Periódico Cubano",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDIcnTXm-VbUNbKP-BFkmS-676jkd1daVQAi6nFKfEKNvHpnbXChAor2ZUvOY"
-        },
-        {
-          "url": "https://www.cibercuba.com/noticias/2026-11-06-u1-e199894-s27061-nid345065-nuevo-memorando-uscis-ayudas-publicas-manutencion",
-          "title": "Nuevo memorando de USCIS: ayudas públicas, manutención de hijos y deudas de patrocinador pesarán en la...",
-          "publisher": "CiberCuba",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaI86qaTOQhsDKiHea2rNjchbkmyYp7nhiYOfyc3F1_X0Q6JIFkpSfXaVzbLo"
-        },
-        {
-          "url": "https://www.directoriocubano.info/estados-unidos/ciudadania-estadounidense-ayudas-manutencion-uscis/",
-          "title": "Nuevo peligro para obtener la Ciudadanía Americana: USCIS amplía la revisión de ayudas y manutención",
-          "publisher": "Directorio Cubano",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSovb5fFeNM6voIAUG6xgS8ht5sEwnxvFMsyz0HZcBhUBvIEO_M4KFRviRA1mY"
-        }
-      ]
-    },
-    {
-      "query": "malik nabers fox broadcast criticism",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T10:40:00Z",
-      "related_news_urls": [
-        "https://heavy.com/sports/nfl/new-york-giants/wide-receiver-malik-nabers-terrible-behavior/",
-        "https://www.espn.com/nfl/story/_/id/50429684/giants-malik-nabers-takes-issue-fox-telecast",
-        "https://www.foxnews.com/outkick-sports/giants-star-wideout-blasts-analyst-questioning-sideline-behavior-win-against-eagles"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzlgEvcr7z5ZW4f09ow-iH_3LfRXLpvtSLifJOc4jsdSAY6XSSLg9z9A2_6_I",
-      "image_credit": "Heavy.com",
-      "news": [
-        {
-          "url": "https://heavy.com/sports/nfl/new-york-giants/wide-receiver-malik-nabers-terrible-behavior/",
-          "title": "Giants Star Blasted Over ‘Terrible’ Body Language & Dropped TD Pass",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzlgEvcr7z5ZW4f09ow-iH_3LfRXLpvtSLifJOc4jsdSAY6XSSLg9z9A2_6_I"
-        },
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50429684/giants-malik-nabers-takes-issue-fox-telecast",
-          "title": "Giants' Malik Nabers takes issue with Greg Olsen, Fox for comments during game",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlWF4MdltyfUDUfwFqGjOEaWeXzdjUukynJvj1Qrp-v_dJbMdC2W4FBEMa6UU"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick-sports/giants-star-wideout-blasts-analyst-questioning-sideline-behavior-win-against-eagles",
-          "title": "Giants star wideout blasts analyst for questioning sideline behavior during win against Eagles",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNcgtmbaGOviLaVipbf2WhPkg7yLRZwUAC7uTAb6XWZ0kEr1AhZuv99LVNqeE"
-        }
-      ]
-    },
-    {
-      "query": "san antonio weather",
+      "query": "senfronia thompson",
       "approx_searches": "200+",
-      "published_at": "2026-11-09T10:40:00Z",
+      "published_at": "2026-11-09T11:10:00Z",
       "related_news_urls": [
-        "https://www.mysanantonio.com/news/weather/article/seaworld-san-antonio-closes-22519716.php",
-        "https://www.fox7austin.com/weather/austin-weather-sunday-rain-flood-risk",
-        "https://abcnews.com/US/south-texas-bracing-flash-flooding-governor-bolsters-emergency/story?id=137952523"
+        "https://www.statesman.com/news/columns/article/senfronia-thompson-texas-house-speaker-new-era-22516981.php",
+        "https://www.houstonchronicle.com/politics/texas-take/article/senfronia-thompson-isn-t-dwelling-racial-22517421.php",
+        "https://www.texastribune.org/2026/11/06/texas-governor-speaker-big-three-women-midterms-2026/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTPpP5bA1tslMWWvMvtdPvOFq15HE9D1GI_DpB-bwU6Nux0YGLCBH-7mh5jAQ",
-      "image_credit": "MySA",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyvdqwtg5HUBtWW3f83iPRvqxazlyhy2a8ZN-pP1KddxriM4safeFRb1WtbEQ",
+      "image_credit": "Austin American-Statesman",
       "news": [
         {
-          "url": "https://www.mysanantonio.com/news/weather/article/seaworld-san-antonio-closes-22519716.php",
-          "title": "Rainy, chilly weather shuts down San Antonio theme park for the day",
-          "publisher": "MySA",
+          "url": "https://www.statesman.com/news/columns/article/senfronia-thompson-texas-house-speaker-new-era-22516981.php",
+          "title": "After 54 years in the Texas House, Senfronia Thompson is poised to make history",
+          "publisher": "Austin American-Statesman",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTPpP5bA1tslMWWvMvtdPvOFq15HE9D1GI_DpB-bwU6Nux0YGLCBH-7mh5jAQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyvdqwtg5HUBtWW3f83iPRvqxazlyhy2a8ZN-pP1KddxriM4safeFRb1WtbEQ"
         },
         {
-          "url": "https://www.fox7austin.com/weather/austin-weather-sunday-rain-flood-risk",
-          "title": "Austin weather: Sunday rain and flood risk",
-          "publisher": "FOX 7 Austin",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTn-VQyjeSeMvTLvEyL75ZJbc62p3Rkh9UFjnrRwBPsFeHPLxrHD1PvKGLKu9s"
-        },
-        {
-          "url": "https://abcnews.com/US/south-texas-bracing-flash-flooding-governor-bolsters-emergency/story?id=137952523",
-          "title": "South Texas bracing for more flash flooding; governor bolsters emergency response",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMu8daUOw3HQ6qd2gRNUB9Nri8MOhFOe230eq4kFVCou1EoRNEkGskbj-cjCo"
-        }
-      ]
-    },
-    {
-      "query": "notre dame fighting irish football",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T10:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50416773/notre-dame-fends-rally-dethrone-top-ranked-miami",
-        "https://apnews.com/article/miami-notre-dame-score-college-football-dc2fecb79fcc40e4f2e1fb62fabec4b0",
-        "https://www.cbssports.com/college-football/news/cj-carr-finally-gets-his-signature-win-and-the-heisman-lead-for-notre-dame/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHVEcojnkzJRScLmMiX6A54xkPHNXUseRYnucanl0RnuBshrP1vJ6Grxd_0hs",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50416773/notre-dame-fends-rally-dethrone-top-ranked-miami",
-          "title": "In CFP campaign, Marcus Freeman, Notre Dame 'leave no doubt' in win over Miami",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHVEcojnkzJRScLmMiX6A54xkPHNXUseRYnucanl0RnuBshrP1vJ6Grxd_0hs"
-        },
-        {
-          "url": "https://apnews.com/article/miami-notre-dame-score-college-football-dc2fecb79fcc40e4f2e1fb62fabec4b0",
-          "title": "No. 4 Notre Dame takes big lead, then holds off No. 1 Miami 31-24 in a classic",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfXGd8woa4egsIH4Z4dbNqZtDl1CXzsWVSDqjxwHpASIgA6KGhzuF_RySn8PQ"
-        },
-        {
-          "url": "https://www.cbssports.com/college-football/news/cj-carr-finally-gets-his-signature-win-and-the-heisman-lead-for-notre-dame/",
-          "title": "A boy no more: CJ Carr finally gets his signature win, and the Heisman lead, for Notre Dame",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHcEVlmup11twsd4Gvh5y3VGMRPw-dD64IuuJTnLXLCN-QBnar9I5EI-IMXtY"
-        }
-      ]
-    },
-    {
-      "query": "weather forecast",
-      "approx_searches": "100+",
-      "published_at": "2026-11-09T10:40:00Z",
-      "related_news_urls": [
-        "https://weather.com/2026/11/09/science/space/how-space-trash-could-affect-weather-ozone-and-your-forecast",
-        "https://spacenews.com/the-cost-of-operating-amid-debris/",
-        "https://www.newindianexpress.com/editorial/quick-take/2026/Nov/05/quick-take-cleaning-space-junk"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRarKfC1HgMNopWcA8VmaOcZQJVTegYoWI6TTJ5FYQgrYD4CrUTAaNoARMgO30",
-      "image_credit": "The Weather Channel",
-      "news": [
-        {
-          "url": "https://weather.com/2026/11/09/science/space/how-space-trash-could-affect-weather-ozone-and-your-forecast",
-          "title": "How space trash could affect weather, ozone and your forecast",
-          "publisher": "The Weather Channel",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRarKfC1HgMNopWcA8VmaOcZQJVTegYoWI6TTJ5FYQgrYD4CrUTAaNoARMgO30"
-        },
-        {
-          "url": "https://spacenews.com/the-cost-of-operating-amid-debris/",
-          "title": "The cost of operating amid debris",
-          "publisher": "SpaceNews",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0IjxP6fb0ZtHHQhIksz4IcDEqngIJbEVXlCQajjy03jihvqt7Ul9_0yn_l3g"
-        },
-        {
-          "url": "https://www.newindianexpress.com/editorial/quick-take/2026/Nov/05/quick-take-cleaning-space-junk",
-          "title": "Quick Take | Cleaning space junk",
-          "publisher": "The New Indian Express",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ76qPsF2P736_17UeaxfGjufqlFcLFTR38agLB7gyJ3YvUNdk3VZyLpWLt_yM"
-        }
-      ]
-    },
-    {
-      "query": "weather houston",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T10:40:00Z",
-      "related_news_urls": [
-        "https://www.fox26houston.com/weather/houston-weather-slight-rain-chances-ahead-midweek-cold-front",
-        "https://www.click2houston.com/news/local/2026/11/08/live-radar-showers-and-moderate-rain-moving-into-southeast-texas/",
-        "https://www.houstonchronicle.com/news/houston-weather/forecast/article/texas-weather-sunday-rain-storms-forecast-22518358.php"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwPxK883Wt5K63WQJ9P5RXWBsN1f8jHIADWpJ3F5asUi_lfxy53t3EWqmEpqY",
-      "image_credit": "FOX 26 Houston",
-      "news": [
-        {
-          "url": "https://www.fox26houston.com/weather/houston-weather-slight-rain-chances-ahead-midweek-cold-front",
-          "title": "Houston weather: Slight rain chances ahead of midweek cold front",
-          "publisher": "FOX 26 Houston",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwPxK883Wt5K63WQJ9P5RXWBsN1f8jHIADWpJ3F5asUi_lfxy53t3EWqmEpqY"
-        },
-        {
-          "url": "https://www.click2houston.com/news/local/2026/11/08/live-radar-showers-and-moderate-rain-moving-into-southeast-texas/",
-          "title": "LIVE RADAR: Showers and moderate rain moving into Southeast Texas",
-          "publisher": "Click2Houston",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGuEdiog4uGcO1RSsHzp-wy-oh5DSa8apP4nVvFO4iKv70d0JYwjp4gDdWBYI"
-        },
-        {
-          "url": "https://www.houstonchronicle.com/news/houston-weather/forecast/article/texas-weather-sunday-rain-storms-forecast-22518358.php",
-          "title": "Houston weather: Rain likely Sunday. When will it be heaviest?",
+          "url": "https://www.houstonchronicle.com/politics/texas-take/article/senfronia-thompson-isn-t-dwelling-racial-22517421.php",
+          "title": "The first Black Speaker of the House isn't dwelling on her racial background",
           "publisher": "Houston Chronicle",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbj--iqPHGhd1D5lZTWLfX_5k5Xb6qYOSwnq1kVYoTroiCyX9IpB8j7GhYV1I"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPNsfiXrk4Im1gaK9qExz8jKkJg0zElxzbcdNHIyNSySWTJQ14AB6S7xvWnIw"
+        },
+        {
+          "url": "https://www.texastribune.org/2026/11/06/texas-governor-speaker-big-three-women-midterms-2026/",
+          "title": "Texas’ “Big Three” set to all be women for the first time",
+          "publisher": "The Texas Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJWnSU8PPlHeTpxkkSr7ySerldgzOKUIIpJKYrW0qZxI7IGUmUE_plL9s0VoA"
         }
       ]
     },
     {
-      "query": "treasury department",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T10:30:00Z",
+      "query": "twilight",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T11:10:00Z",
       "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/financial/events/30-year-us-treasury-yield-15-min-526928-target-nov-09-2026/",
-        "https://www.coinbase.com/en-sg/predictions/event/KX2YRRATEEVENT-23DEC260845",
-        "https://robinhood.com/us/en/prediction-markets/financial/events/30-year-us-treasury-yield-15-min-525917-target-nov-06-2026/"
+        "https://www.whats-on-netflix.com/news/midnight-sun-netflix-two-season-order/",
+        "https://knightedgemedia.com/2026/11/sadie-stanley-julien-grey-will-star-netflixs-twilight-midnight-sun-exclusive/",
+        "https://www.cbr.com/twilight-netflix-reboot-bella-edward/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYK9Ep0-WTDkXCfrFH6dkrXVkadf6rWh3C9udZqdX58sTMFKGaN41HrLw7Tos",
-      "image_credit": "Robinhood",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZTU8TgcFDcTy2vvL_q7YrfClSdzN81DiiqO1U4CujrhydqJk4_lGP4cnM5DM",
+      "image_credit": "What's on Netflix",
       "news": [
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/financial/events/30-year-us-treasury-yield-15-min-526928-target-nov-09-2026/",
-          "title": "November 9, 2026: 30-year U.S. Treasury yield 15 min · 5:15–5:30 AM EST Financial Prediction Market",
-          "publisher": "Robinhood",
+          "url": "https://www.whats-on-netflix.com/news/midnight-sun-netflix-two-season-order/",
+          "title": "Netflix’s Animated ‘Twilight’ Series Gets Major Update: Two Seasons Confirmed",
+          "publisher": "What's on Netflix",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYK9Ep0-WTDkXCfrFH6dkrXVkadf6rWh3C9udZqdX58sTMFKGaN41HrLw7Tos"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZTU8TgcFDcTy2vvL_q7YrfClSdzN81DiiqO1U4CujrhydqJk4_lGP4cnM5DM"
         },
         {
-          "url": "https://www.coinbase.com/en-sg/predictions/event/KX2YRRATEEVENT-23DEC260845",
-          "title": "US 2Y Treasury yield at 8:45am ET · PCE and GDP",
-          "publisher": "Coinbase",
+          "url": "https://knightedgemedia.com/2026/11/sadie-stanley-julien-grey-will-star-netflixs-twilight-midnight-sun-exclusive/",
+          "title": "Sadie Stanley & Julian Grey Will Co-Star in Netflix’s ‘Twilight: Midnight Sun’ Series (EXCLUSIVE)",
+          "publisher": "Knight Edge Media",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtlv4wEEHi8uXNCTHBBIdZ2rUZtVp8OMhJgUFnLMqb2UJJQ1_wRphySbCj_fc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYQFr0w4IqydK83BLSZKDLiEeWS4T53qIyb8c_DJzzTA7d3_gq6RowY1e-jnU"
         },
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/financial/events/30-year-us-treasury-yield-15-min-525917-target-nov-06-2026/",
-          "title": "November 6, 2026: 30-year U.S. Treasury yield 15 min · 3:30–3:45 PM EST Financial Prediction Market",
-          "publisher": "Robinhood",
+          "url": "https://www.cbr.com/twilight-netflix-reboot-bella-edward/",
+          "title": "Netflix's Twilight Reboot Recasts Bella Swan and Edward Cullen",
+          "publisher": "Comic Book Resources",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Y9mpP4bIQKxTds7-cijLwHiu3l9Ytpc_Qy1vston0meFrhreSrWojRInbdk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMZBWLEl_b9c3nMn4iBVh8YJFfg_eFlbM9V1AnlpIH8Ji6tS6hvT612BOdLLQ"
         }
       ]
     },
     {
-      "query": "tom holland",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T10:30:00Z",
+      "query": "central florida floods",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T11:10:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/tom-holland-had-real-fear-154609080.html",
-        "https://screenrant.com/spider-man-5-movie-theories/",
-        "https://www.yardbarker.com/entertainment/articles/tom_holland_revealed_christopher_nolans_attention_to_detail_through_one_hilarious_costume_fitting/s1_17785_44534120"
+        "https://www.cnn.com/2026/11/02/weather/storm-flooding-arizona-colorado-election-day-climate",
+        "https://www.nbcnews.com/weather/floods/floods-severe-weather-beset-parts-us-election-day-rcna607186",
+        "https://cbs12.com/news/local/see-updated-polling-locations-due-to-severe-weather-across-south-florida-florida-news-florida-election-news-flooding-severe-weather"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSdTrvf1CkD_tEYSKagMOJStd7mgnWjKb4T1hx_Pw5qIBDTCNfgkDhGMKVROg",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVqaoG-Uu7zqdCWv3dJJONsb-GxjO5VoCNKy1HLU1b_Cjo1B_AARSWQRFo-Ow",
+      "image_credit": "CNN",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/tom-holland-had-real-fear-154609080.html",
-          "title": "Tom Holland Had A ‘Real Fear’ Of Vomiting In His Spidey Suit. How It Got Fixed",
+          "url": "https://www.cnn.com/2026/11/02/weather/storm-flooding-arizona-colorado-election-day-climate",
+          "title": "Storm soaks central US on Election Day after causing deadly flooding, voting disruptions in Southwest",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVqaoG-Uu7zqdCWv3dJJONsb-GxjO5VoCNKy1HLU1b_Cjo1B_AARSWQRFo-Ow"
+        },
+        {
+          "url": "https://www.nbcnews.com/weather/floods/floods-severe-weather-beset-parts-us-election-day-rcna607186",
+          "title": "Floods and severe weather beset parts of the U.S. on Election Day",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3Tu8p9-ET5bHUMw8kc4eQeekkZzjCcgegOLP3AKj_grDIuOS3sM_TC7Xk_68"
+        },
+        {
+          "url": "https://cbs12.com/news/local/see-updated-polling-locations-due-to-severe-weather-across-south-florida-florida-news-florida-election-news-flooding-severe-weather",
+          "title": "See updated polling locations due to severe weather across South Florida",
+          "publisher": "WPEC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIM6THxh7nh8Zqh2rsabLfB1NRVA4ULJ6qf5pIYBg_fEKIJzvIbOpqDrusMqQ"
+        }
+      ]
+    },
+    {
+      "query": "tsm stock",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T11:10:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/video/nvidia-amd-tsmc-asml-semiconductor-215745728.html",
+        "https://www.fool.com/investing/2026/11/07/not-nvidia-not-micron-after-the-chip-sell-off-id-b/",
+        "https://www.theglobeandmail.com/investing/markets/stocks/AMD/pressreleases/8725513/this-stock-is-a-nearly-guaranteed-winner-from-the-ai-infrastructure-buildout/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSO8e6mXzDng3BOXGjKrq5iMLbc-Zg9n4sWeHMLULrVUE9lJuICWiM9OofvkJg",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/video/nvidia-amd-tsmc-asml-semiconductor-215745728.html",
+          "title": "NVIDIA, AMD, TSMC And ASML Are His Semiconductor Picks",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSO8e6mXzDng3BOXGjKrq5iMLbc-Zg9n4sWeHMLULrVUE9lJuICWiM9OofvkJg"
+        },
+        {
+          "url": "https://www.fool.com/investing/2026/11/07/not-nvidia-not-micron-after-the-chip-sell-off-id-b/",
+          "title": "Not Nvidia. Not Micron. After the Chip Sell-Off, I'd Buy This AI Stock and Hold It Forever.",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3fzKwL-Z0ORWL8FC270FV8dv3M2D3vhUayb0rSfvy3SyC8nbDfh1uEF8Y6TA"
+        },
+        {
+          "url": "https://www.theglobeandmail.com/investing/markets/stocks/AMD/pressreleases/8725513/this-stock-is-a-nearly-guaranteed-winner-from-the-ai-infrastructure-buildout/",
+          "title": "This Stock Is a Nearly Guaranteed Winner From the AI Infrastructure Buildout",
+          "publisher": "The Globe and Mail",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQF3Io6lgvl0g8HXULdNChR9i6SxRnf6iUU29m8Wx7ur8A_RzoXff2Hd6KAzvE"
+        }
+      ]
+    },
+    {
+      "query": "cher",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T11:10:00Z",
+      "related_news_urls": [
+        "https://www.denverpost.com/2026/11/09/diva-exhibit-gowns-cher-gaga-denver-art-museum/",
+        "https://www.denverartmuseum.org/en/blog/diva-part-fashion-exhibition-part-music-history-lesson",
+        "https://www.westword.com/arts-culture/see-costumes-worn-by-100-iconic-performers-denver-art-museum-40954847/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9NSK8aIyqt-P2fC3O67X9FnEEHMDUmVwaGr_OuEuoTtRFkdNnC7IxE9qaTJo",
+      "image_credit": "The Denver Post",
+      "news": [
+        {
+          "url": "https://www.denverpost.com/2026/11/09/diva-exhibit-gowns-cher-gaga-denver-art-museum/",
+          "title": "'Diva' sashays into Denver with gowns from Cher, Dolly, Gaga and more",
+          "publisher": "The Denver Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9NSK8aIyqt-P2fC3O67X9FnEEHMDUmVwaGr_OuEuoTtRFkdNnC7IxE9qaTJo"
+        },
+        {
+          "url": "https://www.denverartmuseum.org/en/blog/diva-part-fashion-exhibition-part-music-history-lesson",
+          "title": "DIVA is 'part fashion exhibition, part music history lesson, part celebrity time machine'",
+          "publisher": "Denver Art Museum",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBta-Ye2Vv3sMQ38_Nxfw3bDP5F12y0wiYy-StfFaPMJ1COoYnE5VfODbVM0I"
+        },
+        {
+          "url": "https://www.westword.com/arts-culture/see-costumes-worn-by-100-iconic-performers-denver-art-museum-40954847/",
+          "title": "See garments worn by 100 iconic performers in ‘DIVA’ at the DAM",
+          "publisher": "Westword",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoZbXfbtvpfasiQ7sKS_NcIfp078h9P3MYEXxZ4IzI5EwHDXORQ4xAaE6Ff3c"
+        }
+      ]
+    },
+    {
+      "query": "steelers depot",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T11:00:00Z",
+      "related_news_urls": [
+        "https://www.post-gazette.com/sports/steelers/2026/11/08/steelers-nfl-trade-deadline/stories/202611080083",
+        "https://www.cbssports.com/nfl/news/nfl-trade-deadline-4-trade-options-steelers-super-bowl-contender/",
+        "https://www.behindthesteelcurtain.com/pittsburgh-steelers-news/177584/steelers-veteran-linebacker-tabbed-as-trade-candidate"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTznZKt02hH_iORIby9IVoFSznfq5TBNesAp57CTWi1BISqjuFHb2LkPlsknW0",
+      "image_credit": "Pittsburgh Post-Gazette",
+      "news": [
+        {
+          "url": "https://www.post-gazette.com/sports/steelers/2026/11/08/steelers-nfl-trade-deadline/stories/202611080083",
+          "title": "The Steelers are more interested in depth than difference makers at the NFL trade deadline",
+          "publisher": "Pittsburgh Post-Gazette",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTznZKt02hH_iORIby9IVoFSznfq5TBNesAp57CTWi1BISqjuFHb2LkPlsknW0"
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-4-trade-options-steelers-super-bowl-contender/",
+          "title": "NFL Trade Deadline: 4 mock trades that would make Steelers a true Super Bowl contender",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_qTAY-h4I7K-VRh7f2y15EahYyPCr4ymrzNm5ZnLagIZb2QFCRvMVV2B-jCY"
+        },
+        {
+          "url": "https://www.behindthesteelcurtain.com/pittsburgh-steelers-news/177584/steelers-veteran-linebacker-tabbed-as-trade-candidate",
+          "title": "Steelers veteran linebacker tabbed as trade candidate",
+          "publisher": "Behind the Steel Curtain",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJjR5e-SZ-p7bdydkMk8uBY5nDTAo2LVmm7XkaeT12iNryMmiXFDt7EK939bc"
+        }
+      ]
+    },
+    {
+      "query": "who is elizabeth holmes",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T11:00:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/tv/news/snl-druski-whiteface-elizabeth-holmes-nathan-fielder-you-can-see-everything-parody-1236942289/",
+        "https://www.yahoo.com/entertainment/celebrity/articles/michael-b-jordan-austin-butler-182825599.html",
+        "https://www.nbc.com/nbc-insider/watch-druski-november-7-snl-sketches-emma-stone-monologue"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNF0lWJE-Ut28rdcFA-Q1Zv3mDFbzWLD_DCrQpDYvlDrWhpFG8hSQ7U5iUzB0",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/tv/news/snl-druski-whiteface-elizabeth-holmes-nathan-fielder-you-can-see-everything-parody-1236942289/",
+          "title": "‘SNL’: Druski Dons Whiteface as Elizabeth Holmes in ‘You Can See Everything’ Parody",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNF0lWJE-Ut28rdcFA-Q1Zv3mDFbzWLD_DCrQpDYvlDrWhpFG8hSQ7U5iUzB0"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/michael-b-jordan-austin-butler-182825599.html",
+          "title": "Michael B. Jordan and Austin Butler make blink-and-you’ll-miss-em cameos on “SNL”",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSdTrvf1CkD_tEYSKagMOJStd7mgnWjKb4T1hx_Pw5qIBDTCNfgkDhGMKVROg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeBMX-nxL1LPqvyL3UBlpvgWpdiM7ho5_JBrywn8czkQeygNTrAqc-bhI2yGI"
         },
         {
-          "url": "https://screenrant.com/spider-man-5-movie-theories/",
-          "title": "7 Best Theories About Spider-Man 5 After Brand New Day's Ending",
-          "publisher": "ScreenRant",
+          "url": "https://www.nbc.com/nbc-insider/watch-druski-november-7-snl-sketches-emma-stone-monologue",
+          "title": "Watch All of Druski's SNL Sketches & Monologue from November 7, 2026",
+          "publisher": "NBC TV",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRBXDE3u4Q1bLvTwhUcVj3H3CLUpRquDe3hH1apTCBc9_0YvWEu7DDhz4WPSyI"
-        },
-        {
-          "url": "https://www.yardbarker.com/entertainment/articles/tom_holland_revealed_christopher_nolans_attention_to_detail_through_one_hilarious_costume_fitting/s1_17785_44534120",
-          "title": "Tom Holland Revealed Christopher Nolan’s Attention to Detail Through One Hilarious Costume Fitting",
-          "publisher": "Yardbarker",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8jodhLIfTbMKmUITqDpLQUaSXw902FoTOeCpyoaP-PFHQDfopgLITx9vE_iE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjrdj55KHftYdkAa2Tdkh5icqKu0f3BATUAaENbF7lMOjGylDoI44PNiqw9F4"
         }
       ]
     },
     {
-      "query": "search warrant",
+      "query": "growth stock",
       "approx_searches": "100+",
-      "published_at": "2026-11-09T10:30:00Z",
+      "published_at": "2026-11-09T11:00:00Z",
       "related_news_urls": [
-        "https://www.21alivenews.com/2026/11/08/fwpd-search-warrant-served-south-lafayette-street/",
-        "https://www.wane.com/top-stories/fwpd-serving-search-warrant-at-south-side-home/",
-        "https://wowo.com/search-warrant-served-at-south-lafayette-street-home/"
+        "https://finance.yahoo.com/markets/stocks/articles/once-decade-opportunity-1-super-200500894.html",
+        "https://www.fool.com/investing/2026/11/08/is-dutch-bros-stock-a-buy-as-shares-plunge/",
+        "https://www.nrn.com/quick-service/dutch-bros-stock-plummets-amid-competition-concerns"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcprFl_hINNLXDExDXP52VxG5y9jz_TbCsiCw8z-N3qtKrfmgLCcnRN_uqhWE",
-      "image_credit": "WPTA | 21Alive | Fort Wayne, IN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJF0OX0BWl8C8orKCJeTCauQI4pzXSmaZLIz50KP-ux614HekiqLSKTlxmdzg",
+      "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://www.21alivenews.com/2026/11/08/fwpd-search-warrant-served-south-lafayette-street/",
-          "title": "FWPD: Search warrant served at South Lafayette Street",
-          "publisher": "WPTA | 21Alive | Fort Wayne, IN",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/once-decade-opportunity-1-super-200500894.html",
+          "title": "A Once-in-a-Decade Opportunity: 1 Super Growth Stock Down 58% to Buy and Hold for a Decade",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcprFl_hINNLXDExDXP52VxG5y9jz_TbCsiCw8z-N3qtKrfmgLCcnRN_uqhWE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJF0OX0BWl8C8orKCJeTCauQI4pzXSmaZLIz50KP-ux614HekiqLSKTlxmdzg"
         },
         {
-          "url": "https://www.wane.com/top-stories/fwpd-serving-search-warrant-at-south-side-home/",
-          "title": "FWPD serving search warrant at south side home",
-          "publisher": "WANE 15",
+          "url": "https://www.fool.com/investing/2026/11/08/is-dutch-bros-stock-a-buy-as-shares-plunge/",
+          "title": "Is Dutch Bros Stock a Buy as Shares Plunge?",
+          "publisher": "The Motley Fool",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQHJiMqlB00ZIo_1ZT0ZqBTpHmhHy70LhPPBdPvUXrc2wT8GxA-QnHl4ze8_vQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7UprGL80z1V0pTOm5OO6f9Z2s33vSvBR2iWhPdnMtPM_ISsxJDxN5ofYxlvM"
         },
         {
-          "url": "https://wowo.com/search-warrant-served-at-south-lafayette-street-home/",
-          "title": "Search Warrant Served At South Lafayette Street Home",
-          "publisher": "WOWO",
+          "url": "https://www.nrn.com/quick-service/dutch-bros-stock-plummets-amid-competition-concerns",
+          "title": "Dutch Bros stock plummets amid competition concerns",
+          "publisher": "Nation’s Restaurant News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSIxeXaeCzvB5Qugx0s_t7OegzrR_i7YlEQll_b5Hv085WcCZFqkx1LkxIctY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeVbe5fuVu916Kwu58QmRbLzgUr7ty95FDIXBqaPeV3OjI-8oe-Xfk9t4tfNw"
         }
       ]
     },
     {
-      "query": "amber heard",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T10:30:00Z",
+      "query": "olivia culpo",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T11:00:00Z",
       "related_news_urls": [
-        "https://www.theguardian.com/film/2026/nov/07/johnny-depp-ebenezer-film-scrooge-hollywood",
-        "https://www.indiewire.com/features/general/johnny-depp-comeback-paramount-ebenezer-promotion-controversy-1235225408/",
-        "https://pagesix.com/2026/11/03/society/johnny-depp-hosts-private-ebenezer-screening-teyana-taylor-throws-vip-party-and-more-sightings/"
+        "https://people.com/olivia-culpo-takes-baby-son-roman-to-his-first-49ers-game-12244334",
+        "https://nypost.com/2026/11/08/sports/christian-mccaffreys-wife-olivia-culpo-shares-her-49ers-game-breastfeeding-strategy/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3XNbTVUvgtPyS3L3nepumdeUQZFMGHFJwaxi57vnk3KsvwlI0k0RDbpd5r3I",
-      "image_credit": "The Guardian",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROn-pacdnBqEyblrXqQ6RsYMp_bWYNrE51-ZndZRoRYxk1cdRgrHNEABKt2IQ",
+      "image_credit": "People.com",
       "news": [
         {
-          "url": "https://www.theguardian.com/film/2026/nov/07/johnny-depp-ebenezer-film-scrooge-hollywood",
-          "title": "Hollywood banks on Ebenezer to bring Johnny Depp in from the cold",
-          "publisher": "The Guardian",
+          "url": "https://people.com/olivia-culpo-takes-baby-son-roman-to-his-first-49ers-game-12244334",
+          "title": "Olivia Culpo Takes Her 5-Week-Old Son Roman to His First 49ers Game: ‘One More Little Fan in the Stands’",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3XNbTVUvgtPyS3L3nepumdeUQZFMGHFJwaxi57vnk3KsvwlI0k0RDbpd5r3I"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROn-pacdnBqEyblrXqQ6RsYMp_bWYNrE51-ZndZRoRYxk1cdRgrHNEABKt2IQ"
         },
         {
-          "url": "https://www.indiewire.com/features/general/johnny-depp-comeback-paramount-ebenezer-promotion-controversy-1235225408/",
-          "title": "The Johnny Depp Comeback Hits Judgment Day with ‘Ebenezer’: How Paramount Is Carefully Reintroducing the Controversial Star",
-          "publisher": "IndieWire",
+          "url": "https://nypost.com/2026/11/08/sports/christian-mccaffreys-wife-olivia-culpo-shares-her-49ers-game-breastfeeding-strategy/",
+          "title": "Christian McCaffrey’s wife Olivia Culpo shares unfiltered breastfeeding strategy for 49ers game: ‘Who really cares?’",
+          "publisher": "New York Post",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAlxh8CUg3FCe_ePRsZULTaWyQM-KDbKhwmjQQnUElZmHQeUqBamabVpSRh8g"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCGlxQZ85HomfwsbkUgLz5ejsnLrS8GfCdH6JJJr-Xwm2XfV3Hd4CC2VY4MY8"
+        }
+      ]
+    },
+    {
+      "query": "irán",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T11:00:00Z",
+      "related_news_urls": [
+        "https://www.univision.com/noticias/politica/trump-dice-que-es-altamente-improbable-que-la-guerra-con-iran-se-reanude",
+        "https://cnnespanol.cnn.com/2026/11/08/mundo/trump-iran-ataques-negociaciones-trax",
+        "https://www.wsws.org/es/articles/2026/11/09/exrt-n09.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMStqC_K9_NDTAvLebebd-xard8zoo0LQZ2V-eZ2DZD1odD0ZCyVNhYQxbXHo",
+      "image_credit": "Univision",
+      "news": [
+        {
+          "url": "https://www.univision.com/noticias/politica/trump-dice-que-es-altamente-improbable-que-la-guerra-con-iran-se-reanude",
+          "title": "El presidente Trump dice que es \"altamente improbable\" que se reanuden los ataques contra Irán",
+          "publisher": "Univision",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMStqC_K9_NDTAvLebebd-xard8zoo0LQZ2V-eZ2DZD1odD0ZCyVNhYQxbXHo"
         },
         {
-          "url": "https://pagesix.com/2026/11/03/society/johnny-depp-hosts-private-ebenezer-screening-teyana-taylor-throws-vip-party-and-more-sightings/",
-          "title": "Johnny Depp hosts private 'Ebenezer' screening, Teyana Taylor throws VIP party and more sightings",
-          "publisher": "Page Six",
+          "url": "https://cnnespanol.cnn.com/2026/11/08/mundo/trump-iran-ataques-negociaciones-trax",
+          "title": "Trump dice que es \"muy poco probable\" que se reanuden los ataques contra Irán si las negociaciones avanzan",
+          "publisher": "CNN en Español",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnpjDftnXnf-Vr0ADpmUQT4ePzn0jfSu9s7fikBwdz2CgkWpFf5TzRi0RiSkc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW0q0ZNEJtXOZGZSlAOrcHkcURYdCdBmWkc3VH-IfO7aSt3LLD-U0xI5Malvo"
+        },
+        {
+          "url": "https://www.wsws.org/es/articles/2026/11/09/exrt-n09.html",
+          "title": "Trump celebra una reunión para planificar la guerra en medio de especulaciones sobre un ataque contra Irán el 9 de noviembre",
+          "publisher": "World Socialist Web Site",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyJ0d4Z-8zJdtqejm5PbK0dv9Lfw6VgrfbEc5Ac6ofA_YYKIhBuR8a8WAcbIE"
         }
       ]
     }
