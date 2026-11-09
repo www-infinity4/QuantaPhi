@@ -1,5 +1,4 @@
 import {videoAPI} from './video-api.mjs';
-import {handleWalletEventIngress} from '../quant-events/src/wallet-bridge.mjs';
 const EDGE_VERSION = 'quantaphi-org-service-20261029-housing-v15';
 const CANONICAL_ORIGIN = 'https://quantaphi.org';
 // Static public crawler documents, independent of GitHub at request time.
@@ -407,7 +406,11 @@ export default {
   const incoming = new URL(request.url);
   // Source-only private telemetry bridge. No collection until explicitly configured;
   // never fallback to public requests or wallet/Quant ledgers.
-  if(incoming.pathname === '/api/quant-events')return handleWalletEventIngress(request,env);
+  if(incoming.pathname === '/api/quant-events'){
+   if(env.EVENTS_BRIDGE_ENABLED!=='true')return Response.json({error:'event_collection_disabled'},{status:503,headers:{'Cache-Control':'no-store'}});
+   if(!env.EVENTS_BRIDGE?.fetch)return Response.json({error:'event_bridge_unavailable'},{status:503,headers:{'Cache-Control':'no-store'}});
+   return env.EVENTS_BRIDGE.fetch(request);
+  }
   if(incoming.pathname.startsWith('/api/bubbles/connections/')){
    if(!env.BUBBLES_CONNECTIONS)return Response.json({ok:false,error:'connections_not_configured'},{status:503,headers:{'Cache-Control':'no-store'}});
    return env.BUBBLES_CONNECTIONS.fetch(request);
