@@ -3,178 +3,248 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T02:01:19.073486Z",
+  "checked_at": "2026-11-09T02:30:51.319417Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "cliff booth",
+      "query": "terremoto",
       "approx_searches": "5000+",
-      "published_at": "2026-11-09T01:40:00Z",
+      "published_at": "2026-11-09T02:10:00Z",
       "related_news_urls": [
-        "https://www.imdb.com/title/tt36408401/mediaviewer/rm2333078530/?ref_=tt_ov_i",
-        "https://www.yahoo.com/entertainment/movies/trailers/articles/cliff-booth-trailer-addresses-once-160000250.html",
-        "https://deadline.com/2026/11/imax-ceo-cliff-booth-theatrical-window-debate-netflix-film-1237214415/"
+        "https://www.telemundo51.com/noticias/mundo/terremoto-sacude-centro-japon-heridos/2846250/",
+        "https://www.univision.com/noticias/mundo/un-terremoto-de-magnitud-preliminar-de-5-7-sacude-japon-reportan-al-menos-22-personas-heridas",
+        "https://www.semana.com/mundo/articulo/videos-muestran-los-momentos-de-angustia-que-vivio-japon-tras-fuerte-terremoto-que-dejo-varios-heridos/202623/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3sdMRAWJOvLUmM_bNsxJZEm_WAiThaS4h4Ky9KFvR4kHc9s80JrjRJU064Qo",
-      "image_credit": "IMDb",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAko_uZi6CcpjLs0BoeEs3NKmGuVcrNjMX7F4h2z99K1eHsKOumC3bwmVToJU",
+      "image_credit": "Telemundo Miami (51)",
       "news": [
         {
-          "url": "https://www.imdb.com/title/tt36408401/mediaviewer/rm2333078530/?ref_=tt_ov_i",
-          "title": "The Further Mis-Adventures of Cliff Booth (2026)",
-          "publisher": "IMDb",
+          "url": "https://www.telemundo51.com/noticias/mundo/terremoto-sacude-centro-japon-heridos/2846250/",
+          "title": "Al menos 22 heridos tras terremoto de 5.5 en el centro de Japón",
+          "publisher": "Telemundo Miami (51)",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3sdMRAWJOvLUmM_bNsxJZEm_WAiThaS4h4Ky9KFvR4kHc9s80JrjRJU064Qo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAko_uZi6CcpjLs0BoeEs3NKmGuVcrNjMX7F4h2z99K1eHsKOumC3bwmVToJU"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/movies/trailers/articles/cliff-booth-trailer-addresses-once-160000250.html",
-          "title": "New Cliff Booth Trailer Addresses Once Upon a Time in Hollywood’s Biggest Problem",
-          "publisher": "Yahoo",
+          "url": "https://www.univision.com/noticias/mundo/un-terremoto-de-magnitud-preliminar-de-5-7-sacude-japon-reportan-al-menos-22-personas-heridas",
+          "title": "Un terremoto de magnitud preliminar de 5.7 sacude Japón; reportan al menos 22 personas heridas",
+          "publisher": "Univision",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkN8eOFF4xQUyj33NRft4ZWctgMWuKlhLG8SeETbbdEo-YYP2-WwnKQ68XIpI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhATw2ptlu-EX4uWZiPfFUJEXVzvSW9yqlGzrtzAsSCutZz3HBz3IHh5itfjg"
         },
         {
-          "url": "https://deadline.com/2026/11/imax-ceo-cliff-booth-theatrical-window-debate-netflix-film-1237214415/",
-          "title": "Imax CEO Wades Into ‘Cliff Booth’ Debate: “Frankly, I Don’t Understand”",
-          "publisher": "Deadline",
+          "url": "https://www.semana.com/mundo/articulo/videos-muestran-los-momentos-de-angustia-que-vivio-japon-tras-fuerte-terremoto-que-dejo-varios-heridos/202623/",
+          "title": "Videos muestran los momentos de angustia que vivió Japón tras fuerte terremoto que dejó varios heridos",
+          "publisher": "Revista Semana",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9hkV8i6Lflk5x_1kqXprhx4O25ky7rEE6vR07jl-fCQaBzLxYCCbUnwchu4o"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWOmwzDxPFaCeq0p1nHsC2DL98c_HCjvcgFshanDg29KhAJS96jlLulONN3xY"
         }
       ]
     },
     {
-      "query": "brad pitt",
+      "query": "iran strikes",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-09T02:10:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/08/trump-iran-strikes-unlikely-talks-hormuz.html",
+        "https://timesofindia.indiatimes.com/business/international-business/brent-crude-falls-over-1-as-trump-signals-fresh-us-strikes-on-iran-are-unlikely/articleshow/135667845.cms",
+        "https://www.cnn.com/2026/11/08/politics/trump-interview-on-iran"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUWT9kdllNKpk6kvCht3pip9w_Sen6jvt8hL1yCDJ8xGv0WQ_X4-jry-KqEyY",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/08/trump-iran-strikes-unlikely-talks-hormuz.html",
+          "title": "Trump says renewed Iran strikes ‘highly unlikely’ if talks progress but warns he could still strike",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUWT9kdllNKpk6kvCht3pip9w_Sen6jvt8hL1yCDJ8xGv0WQ_X4-jry-KqEyY"
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/business/international-business/brent-crude-falls-over-1-as-trump-signals-fresh-us-strikes-on-iran-are-unlikely/articleshow/135667845.cms",
+          "title": "Brent crude falls over $1 as Trump signals fresh US strikes on Iran are unlikely",
+          "publisher": "The Times of India",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWOFLW4RYCiPAWtnrYKbS5N9iMR1FAIK0s6mBm11qCiXqbK6y8ifZWAVd_rPw"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/08/politics/trump-interview-on-iran",
+          "title": "Trump says renewed attacks on Iran “highly unlikely” if talks show progress",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8raRHnDh84OFnTEj7ow4UYUzKcuKX_FDQf3qrHCb-Lzu219sSZ0rp4qAIM8M"
+        }
+      ]
+    },
+    {
+      "query": "kalif raymond",
       "approx_searches": "1000+",
-      "published_at": "2026-11-09T01:40:00Z",
+      "published_at": "2026-11-09T02:10:00Z",
       "related_news_urls": [
-        "https://people.com/angelina-jolie-brad-pitt-daughter-vivienne-officially-drops-pitt-12207066",
-        "https://pagesix.com/2026/11/07/celebrity-news/brad-pitts-estranged-children-preparing-one-last-devastating-break-from-heartbroken-dad/",
-        "https://www.euronews.com/2026/11/03/vivienne-jolie-legally-drops-estranged-dad-brad-pitts-name"
+        "https://www.chicagotribune.com/2026/11/08/chicago-bears-kalif-raymond-greatest-teammate/",
+        "https://www.chicitysports.com/chicago-bears-free-agency-addition-fitting-ben-johnson-plans-perfectly/",
+        "https://beargoggleson.com/bears-free-agent-check-in-tyrique-stevenson-on-thin-ice-kalif-raymond-steps-up"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkCSt3UYCQvMyhGfeG6ITHqj2uin93DGPGq_zD0hH3oQus7QBKoy1nZxeXzLU",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHnwMv_R1pZJyIEoAarN5BHt7uqfjDkv1c3KoeGrJJrPf9WiCvnzMRZzy4Qlw",
+      "image_credit": "Chicago Tribune",
       "news": [
         {
-          "url": "https://people.com/angelina-jolie-brad-pitt-daughter-vivienne-officially-drops-pitt-12207066",
-          "title": "Angelina Jolie and Brad Pitt’s Daughter Vivienne Becomes Fourth Child to Officially Drop Pitt from Last Name",
-          "publisher": "People.com",
+          "url": "https://www.chicagotribune.com/2026/11/08/chicago-bears-kalif-raymond-greatest-teammate/",
+          "title": "Column: Kalif Raymond arrived as ‘the greatest teammate’ and a playmaker. The Chicago Bears are seeing why.",
+          "publisher": "Chicago Tribune",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkCSt3UYCQvMyhGfeG6ITHqj2uin93DGPGq_zD0hH3oQus7QBKoy1nZxeXzLU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHnwMv_R1pZJyIEoAarN5BHt7uqfjDkv1c3KoeGrJJrPf9WiCvnzMRZzy4Qlw"
         },
         {
-          "url": "https://pagesix.com/2026/11/07/celebrity-news/brad-pitts-estranged-children-preparing-one-last-devastating-break-from-heartbroken-dad/",
-          "title": "Exclusive | Brad Pitt's estranged children preparing one last devastating break from 'heartbroken' dad",
-          "publisher": "Page Six",
+          "url": "https://www.chicitysports.com/chicago-bears-free-agency-addition-fitting-ben-johnson-plans-perfectly/",
+          "title": "Chicago Bears free agency addition fitting Ben Johnson plans perfectly",
+          "publisher": "ChiCitySports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQE-Gh7Rg3gaNlF2qJMAoDDD1WB68Pj25y2Zcswo82HlPCm9lRGoeBgkumTbg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3YeEelQhp5CVmml6gqqSGnDofvJdfiwjyJuD2fWF78dBnggTLn9Mc4xUSSJU"
         },
         {
-          "url": "https://www.euronews.com/2026/11/03/vivienne-jolie-legally-drops-estranged-dad-brad-pitts-name",
-          "title": "Vivienne Jolie legally drops estranged dad Brad Pitt’s name",
-          "publisher": "Euronews.com",
+          "url": "https://beargoggleson.com/bears-free-agent-check-in-tyrique-stevenson-on-thin-ice-kalif-raymond-steps-up",
+          "title": "Bears free agent check-in: Tyrique Stevenson on thin ice, Kalif Raymond steps up",
+          "publisher": "Bear Goggles On",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8ihBmIKG74_9HJWO9khG-q-33uVGKA_X-b2op29JddPctXNtqEdVIdVj3j-E"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHVebQ7PKvx6TS3qx_yO9OJ7wgKhunpgNmVxrqtPW-6XfLOpWx6I3j55POrVc"
         }
       ]
     },
     {
-      "query": "worlds 2026",
+      "query": "field goal",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-09T02:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50427823/reid-no-decision-harrison-butker-chiefs-future",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/andy-reid-on-harrison-butker-im-not-making-any-decisions-right-now",
+        "https://www.kctv5.com/2026/11/08/arrowhead-fans-boo-butker-after-latest-miss/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTDlIgsIKjNPUE1jeXFkKkfXlfelHLRDQ15wGDBI1CW2yYqEKd025U-tL-ZP0",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50427823/reid-no-decision-harrison-butker-chiefs-future",
+          "title": "Reid: No decision now on Harrison Butker's Chiefs future",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTDlIgsIKjNPUE1jeXFkKkfXlfelHLRDQ15wGDBI1CW2yYqEKd025U-tL-ZP0"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/andy-reid-on-harrison-butker-im-not-making-any-decisions-right-now",
+          "title": "Andy Reid on Harrison Butker: “I’m not making any decisions right now”",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUv4pZ6aUV__6SWsF_YFomQynzG0AFADN2AHG6S4_9qJQ6LVnfn8uHO-cGNOc"
+        },
+        {
+          "url": "https://www.kctv5.com/2026/11/08/arrowhead-fans-boo-butker-after-latest-miss/",
+          "title": "Arrowhead fans boo Butker after latest miss",
+          "publisher": "KCTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS79zvy_fFyvLrqCY72LjRYMTG9EyCbCvxpDTzZOs1DEltfqmj0syuBylZxOxo"
+        }
+      ]
+    },
+    {
+      "query": "zyon mccollum",
       "approx_searches": "500+",
-      "published_at": "2026-11-09T01:40:00Z",
+      "published_at": "2026-11-09T02:10:00Z",
       "related_news_urls": [
-        "https://alienwarearena.com/ucf/show/2176599/boards/alienware-pulse/News/team-liquid-alienware-bows-out-of-the-swiss-stage-at-worlds-2026/",
-        "https://siege.gg/matches/9071-mjr-intl-team-liquid-vs-virtuspro",
-        "https://www.sheepesports.com/en/articles/gen-g-sweep-ig-and-become-the-first-finalists-of-worlds-2026/en"
+        "https://www.joebucsfan.com/2026/11/will-definitely-tell-us-where-were-at/",
+        "https://www.nfl.com/videos/zyon-mccollum-secures-bucs-fourth-interception-of-the-day-against-michael-penix-jr",
+        "https://www.nbcsports.com/watch/nfl/chris-simms-unbuttoned/bucs-cb-zyon-mccollum-discusses-turnaround-experience-playing-in-monsoon"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkyCQW-_YpS0M23xrt03KRrEi7VnUR2rkAnVaeJxGkXSQT5ifCre-dHIoGqtQ",
-      "image_credit": "Alienware Arena",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxjxuCyEnvUdKb0LgnHuU1Di3M9cunTq21Zf1zom6zbeTTTDPmNdxG6vBZBVw",
+      "image_credit": "JoeBucsFan.com",
       "news": [
         {
-          "url": "https://alienwarearena.com/ucf/show/2176599/boards/alienware-pulse/News/team-liquid-alienware-bows-out-of-the-swiss-stage-at-worlds-2026/",
-          "title": "Team Liquid Alienware bows out of the Swiss Stage at Worlds 2026.",
-          "publisher": "Alienware Arena",
+          "url": "https://www.joebucsfan.com/2026/11/will-definitely-tell-us-where-were-at/",
+          "title": "“Will Definitely Tell Us Where We’re At”",
+          "publisher": "JoeBucsFan.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkyCQW-_YpS0M23xrt03KRrEi7VnUR2rkAnVaeJxGkXSQT5ifCre-dHIoGqtQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxjxuCyEnvUdKb0LgnHuU1Di3M9cunTq21Zf1zom6zbeTTTDPmNdxG6vBZBVw"
         },
         {
-          "url": "https://siege.gg/matches/9071-mjr-intl-team-liquid-vs-virtuspro",
-          "title": "Team Liquid vs Virtus.pro, Major Osaka (08/11/2026)",
-          "publisher": "SiegeGG",
+          "url": "https://www.nfl.com/videos/zyon-mccollum-secures-bucs-fourth-interception-of-the-day-against-michael-penix-jr",
+          "title": "Zyon McCollum secures Bucs' fourth interception of the day against Michael Penix Jr.",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEEzVUjdqASRgV4c0i7qtyZ8O1y8JrDCJEDerefUkTTAZQA-lAp7_e7Am5Cns"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKn5ij5kluwEL9qCjftB10vmxUX_7SF6uBkTzPYozMRVYIcI21f2WyCKMcvug"
         },
         {
-          "url": "https://www.sheepesports.com/en/articles/gen-g-sweep-ig-and-become-the-first-finalists-of-worlds-2026/en",
-          "title": "Gen.G sweep IG and become the first finalists of Worlds 2026",
-          "publisher": "Sheep Esports",
+          "url": "https://www.nbcsports.com/watch/nfl/chris-simms-unbuttoned/bucs-cb-zyon-mccollum-discusses-turnaround-experience-playing-in-monsoon",
+          "title": "McCollum: Bucs' monsoon both a dream and challenge",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSN4azF8UyrULbeoZfB1w81Mf0hNcqsu3gnYiXnKXlhMCUvoLTPLaUYvvkWclo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRfFYjbBSrnsRWZQh3ZcmIvpAXA9VuzFbkV4BiXk4Inf27cBE8IeveztuB3nRU"
         }
       ]
     },
     {
-      "query": "violent night 2",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-09T01:30:00Z",
+      "query": "bucks",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-09T02:00:00Z",
       "related_news_urls": [
-        "https://www.boxofficepro.com/long-range-forecast-will-moviegoers-say-ho-ho-ho-or-no-no-no-to-violent-night-2/",
-        "https://geektyrant.com/news/santa-and-mrs-claus-kick-some-ass-in-funny-new-violent-night-2-featurette",
-        "https://www.imdb.com/news/ni66100363/?ref_=ttnw_art_perm"
+        "https://www.bostonglobe.com/2026/11/08/sports/celtics-bucks-preview-november-8-2026/",
+        "https://www.celticsblog.com/boston-celtics-game-previews/149669/boston-celtics-7-2-at-milwaukee-bucks-1-8-game-10-11-8-26",
+        "https://sportsbook.fanduel.com/basketball/nba/boston-celtics-@-milwaukee-bucks-36286504"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMNAOQfWPJ4VnrHfpZjVDu20dNvPDfZFv4aEeV0FQDOnrDKG3k4iyDPbX783k",
-      "image_credit": "Boxoffice Pro",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRjlzXQgqdZIBFirwZd9_qqjchM6frPzhnHDXhBKO0jYlTAts0o0LOetBb_pw",
+      "image_credit": "The Boston Globe",
       "news": [
         {
-          "url": "https://www.boxofficepro.com/long-range-forecast-will-moviegoers-say-ho-ho-ho-or-no-no-no-to-violent-night-2/",
-          "title": "Long Range Forecast: Will Moviegoers Say Ho-Ho-Ho or No-No-No to VIOLENT NIGHT 2?",
-          "publisher": "Boxoffice Pro",
+          "url": "https://www.bostonglobe.com/2026/11/08/sports/celtics-bucks-preview-november-8-2026/",
+          "title": "Celtics at Bucks preview: Milwaukee on a five-game losing streak entering Sunday’s prime-time showdown",
+          "publisher": "The Boston Globe",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMNAOQfWPJ4VnrHfpZjVDu20dNvPDfZFv4aEeV0FQDOnrDKG3k4iyDPbX783k"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRjlzXQgqdZIBFirwZd9_qqjchM6frPzhnHDXhBKO0jYlTAts0o0LOetBb_pw"
         },
         {
-          "url": "https://geektyrant.com/news/santa-and-mrs-claus-kick-some-ass-in-funny-new-violent-night-2-featurette",
-          "title": "Santa and Mrs. Claus Kick Some Ass in Funny New VIOLENT NIGHT 2 Featurette",
-          "publisher": "GeekTyrant",
+          "url": "https://www.celticsblog.com/boston-celtics-game-previews/149669/boston-celtics-7-2-at-milwaukee-bucks-1-8-game-10-11-8-26",
+          "title": "Boston Celtics (7-2) at Milwaukee Bucks (1-8) Game #10 11/8/26",
+          "publisher": "CelticsBlog",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUv_J5Myz1tSsPK30Vy8uUWeXCHpa6qjGrMV1r2oKicSWuDWE7AioobKQUw-E"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOhp23olLGnvm25xdDFr16iBGSvKzuOJNw5jgVa_ZDBzEqs-WptlmUDxbW9xc"
         },
         {
-          "url": "https://www.imdb.com/news/ni66100363/?ref_=ttnw_art_perm",
-          "title": "David Harbour Is Officially Back in Action in Clip From Next Month's Violent New Sequel",
-          "publisher": "IMDb",
+          "url": "https://sportsbook.fanduel.com/basketball/nba/boston-celtics-@-milwaukee-bucks-36286504",
+          "title": "Boston Celtics @ Milwaukee Bucks Odds",
+          "publisher": "FanDuel Sportsbook",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnSgYJ_Zdvrmwc6hsbgbuNMNitPtmSa_CoQx0xyjQsnh6mxxVDbeWEjMAufMg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSad9ciGe8ffcbL4L11kQ1-UrSAfdQMCoY7n1Xxy8PsRfooEWXuCHnfmUtnCMA"
         }
       ]
     },
     {
-      "query": "cole kmet",
+      "query": "roschon johnson",
       "approx_searches": "1000+",
-      "published_at": "2026-11-09T01:30:00Z",
+      "published_at": "2026-11-09T02:00:00Z",
       "related_news_urls": [
-        "https://chicago.suntimes.com/bears/2026/11/05/catch-22-bears-sam-roush-tight-end-stephen-carlson-trent-dilfer-world-difference-nfl",
-        "https://247sports.com/nfl/chicago-bears/article/chicago-bears-stat-pack-week-8-with-cole-kmet-out-a-big-opportunity-awaits-rookie-sam-roush--291836369/",
-        "https://www.cbssports.com/fantasy/football/news/bears-sam-roush-logs-season-high-snap-total-but-no-targets/"
+        "https://sports.yahoo.com/videos/week-9-roschon-johnson-fantasy-181816561.html",
+        "https://www.fantasypros.com/nfl/news/617423/roschon-johnson-quiet-win-monday.php",
+        "https://www.cbssports.com/fantasy/football/news/bears-roschon-johnson-six-touches-as-no-2-back-in-week-8/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSM_oZhYbdnFf__HerlJYFP-z0TV3DOpVdA0JYuwmjHOmDVgCu2ANnsz-PIpUM",
-      "image_credit": "Chicago Sun-Times",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjJzEmRjwQrCmUdgNui0QqC8b-AQp2wwHVdbIMJqc87XSMJk4by6_t8A4NwXE",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://chicago.suntimes.com/bears/2026/11/05/catch-22-bears-sam-roush-tight-end-stephen-carlson-trent-dilfer-world-difference-nfl",
-          "title": "CATCH-22: Bears TE Sam Roush hoping to make a world of difference",
-          "publisher": "Chicago Sun-Times",
+          "url": "https://sports.yahoo.com/videos/week-9-roschon-johnson-fantasy-181816561.html",
+          "title": "Week 9 Roschon Johnson Fantasy Start or Sit 2026",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSM_oZhYbdnFf__HerlJYFP-z0TV3DOpVdA0JYuwmjHOmDVgCu2ANnsz-PIpUM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjJzEmRjwQrCmUdgNui0QqC8b-AQp2wwHVdbIMJqc87XSMJk4by6_t8A4NwXE"
         },
         {
-          "url": "https://247sports.com/nfl/chicago-bears/article/chicago-bears-stat-pack-week-8-with-cole-kmet-out-a-big-opportunity-awaits-rookie-sam-roush--291836369/",
-          "title": "Chicago Bears Stat Pack Week 8: With Cole Kmet out, a big opportunity awaits rookie Sam Roush",
-          "publisher": "247Sports",
+          "url": "https://www.fantasypros.com/nfl/news/617423/roschon-johnson-quiet-win-monday.php",
+          "title": "Roschon Johnson quiet in win Monday",
+          "publisher": "FantasyPros",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGN094Oer2LwulN_aUBbaELXNvR7WrLbemV3Q7ehBAg1LD5vOf_kNgR4E4oPY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTI6B76hMFoOFey-4x6tWf7U8NknPFBiwQa5Kp0Gs2xvRlSvhQQfHih6m7tVPk"
         },
         {
-          "url": "https://www.cbssports.com/fantasy/football/news/bears-sam-roush-logs-season-high-snap-total-but-no-targets/",
-          "title": "Bears' Sam Roush: Logs season-high snap total, but no targets",
+          "url": "https://www.cbssports.com/fantasy/football/news/bears-roschon-johnson-six-touches-as-no-2-back-in-week-8/",
+          "title": "Bears' Roschon Johnson: Six touches as No. 2 back in Week 8",
           "publisher": "CBS Sports",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRgtyhxGxEG7i2Okxt9MXO4tXkT6SYFeNJ2RsRVSTb2-axRU5x1XlHHfRx6NM"
@@ -182,177 +252,107 @@
       ]
     },
     {
-      "query": "pittsburgh vs penn state",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T01:30:00Z",
-      "related_news_urls": [
-        "https://gopsusports.com/news/2026/11/7/game-day-penn-state-mbb-vs-pittsburgh",
-        "https://www.blackshoediaries.com/mens-basketball/92119/penn-state-vs-pitt-preview-can-the-nittany-lions-win-the-battle-of-the-cats",
-        "https://247sports.com/college/pittsburgh/article/pitt-penn-state-basketball-preview-where-to-watch-philadelphia-palestra-150th-meeting-292396553/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRThGJDOYd5_P8oWtip1cH68pM4FyzkTK4V6LcjTI_xcTJPh1iqKLtRLKwhxD4",
-      "image_credit": "gopsusports.com",
-      "news": [
-        {
-          "url": "https://gopsusports.com/news/2026/11/7/game-day-penn-state-mbb-vs-pittsburgh",
-          "title": "GAME DAY: Penn State MBB vs. Pittsburgh",
-          "publisher": "gopsusports.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRThGJDOYd5_P8oWtip1cH68pM4FyzkTK4V6LcjTI_xcTJPh1iqKLtRLKwhxD4"
-        },
-        {
-          "url": "https://www.blackshoediaries.com/mens-basketball/92119/penn-state-vs-pitt-preview-can-the-nittany-lions-win-the-battle-of-the-cats",
-          "title": "Penn State vs. Pitt Preview: Can the Nittany Lions Win the Battle of the Cats?",
-          "publisher": "Black Shoe Diaries",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScQoiLBQdUK9KgjlirryW7hCZLtpmLdUZrmOyMG2aJ_68-B1v0HvhOL3-yKZY"
-        },
-        {
-          "url": "https://247sports.com/college/pittsburgh/article/pitt-penn-state-basketball-preview-where-to-watch-philadelphia-palestra-150th-meeting-292396553/",
-          "title": "Staff picks: Can Pitt pick up a rivalry win over Penn State in Philadelphia?",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRCa_Lv6403e_Q-AhBB9_R3gnO5aSU6vrVsX-YtTkKpHufWIE_iLKveGoqoQA"
-        }
-      ]
-    },
-    {
-      "query": "sean payton denver broncos news",
+      "query": "jaylon johnson",
       "approx_searches": "500+",
-      "published_at": "2026-11-09T01:30:00Z",
+      "published_at": "2026-11-09T02:00:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50427121/payton-challenge-results-key-interception-broncos-win",
-        "https://sports.yahoo.com/nfl/article/broncos-db-devon-key-awarded-wild-interception-in-the-panthers-end-zone-after-denver-challenge-203611948.html",
-        "https://www.foxsports.com/articles/nfl/broncos-game-management-directors-quick-decision-helps-denver-beat-carolina-on-overturned-call"
+        "https://bearswire.usatoday.com/story/sports/nfl/bears/2026/11/06/bears-malik-muhammad-jaylon-johnson-comments/92636263007/",
+        "https://sports.yahoo.com/articles/why-2027-nfl-draft-says-160003989.html",
+        "https://www.chicagotribune.com/2026/11/02/chicago-bears-jaylon-johnson-critics/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZME-d4nGcxl87ZKYzJvf2pjY_037WiLiE2kDU0PlpuERnPyJhyNQ3257r5zg",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7udPigGGK5erkuW2Gd25RhxRWEsh8mWzub4VstFSWI1kF6L2N3ZvJFwaOt-A",
+      "image_credit": "Bears Wire",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50427121/payton-challenge-results-key-interception-broncos-win",
-          "title": "Sean Payton's replay challenge results in key interception in Broncos' victory",
-          "publisher": "ESPN",
+          "url": "https://bearswire.usatoday.com/story/sports/nfl/bears/2026/11/06/bears-malik-muhammad-jaylon-johnson-comments/92636263007/",
+          "title": "Bears rookie Malik Muhammad has strong words regarding Jaylon Johnson",
+          "publisher": "Bears Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZME-d4nGcxl87ZKYzJvf2pjY_037WiLiE2kDU0PlpuERnPyJhyNQ3257r5zg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7udPigGGK5erkuW2Gd25RhxRWEsh8mWzub4VstFSWI1kF6L2N3ZvJFwaOt-A"
         },
         {
-          "url": "https://sports.yahoo.com/nfl/article/broncos-db-devon-key-awarded-wild-interception-in-the-panthers-end-zone-after-denver-challenge-203611948.html",
-          "title": "Broncos DB Devon Key awarded wild interception in the Panthers' end zone after Denver challenge",
+          "url": "https://sports.yahoo.com/articles/why-2027-nfl-draft-says-160003989.html",
+          "title": "Why the 2027 NFL Draft Says Ryan Poles Must Trade for a Cornerback Now",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6_XG1AaNGd3MP4-BGW-4G_Um1OhOY_Vnyb3r7T12kw5tUm7wBNofeInT9Aig"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTYcNj-DXgi6IVhi-QXFk5DkK6nSOYAWiPdliJLesZtRUJoHJcP6vt7A1iOrU"
         },
         {
-          "url": "https://www.foxsports.com/articles/nfl/broncos-game-management-directors-quick-decision-helps-denver-beat-carolina-on-overturned-call",
-          "title": "Broncos' game management director's quick decision helps Denver beat Carolina on overturned call",
-          "publisher": "FOX Sports",
+          "url": "https://www.chicagotribune.com/2026/11/02/chicago-bears-jaylon-johnson-critics/",
+          "title": "Amid outside noise, Chicago Bears CB Jaylon Johnson is his harshest critic: ‘I’ve just got to get it done’",
+          "publisher": "Chicago Tribune",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZZbMDYyeJQpeciPrvCnbboR9O0J49FLr4Mwf6F2WyEgGvcuYLtPUOQwqclDs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzfgjnygTkC-z3gKRSMiyLwhVOH_fU-HOc-rsmCPh3fKQhd8p6vWYPrBIEjSc"
         }
       ]
     },
     {
-      "query": "worlds",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T01:30:00Z",
+      "query": "universitario vs cd moquegua",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T02:00:00Z",
       "related_news_urls": [
-        "https://www.sciencealert.com/the-worlds-biggest-sea-of-sand-shows-no-trace-of-ancient-humans-heres-why",
-        "https://archaeologymag.com/2026/11/stone-water-early-human-settlement-desert/",
-        "https://phys.org/news/2026-11-early-humans-access-ancient-arabian.html"
+        "https://rpp.pe/futbol/descentralizado/universitario-vs-cd-moquegua-sin-alzugaray-lista-de-convocados-para-penultima-fecha-del-torneo-clausura-2026-liga1-noticia-1716634",
+        "https://depor.com/futbol-peruano/descentralizado/donde-ver-alianza-lima-vs-los-chankas-en-vivo-canales-de-tv-via-liga-1-max-directv-movistar-tv-futbol-libre-tv-liga-1-video-noticia/",
+        "https://betsson.sport/es/noticias/futbol/liga-1-peru/universitario-ante-una-nueva-oportunidad-el-clausura-no-admite-otro-tropiezo-antes-de-visitar-a-huancayo/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRoCfacsEVq0rGEsR9tb_MrtsEOBKODXX71SnkKOrsqCbJGmyuTdSCY6q0bdE",
-      "image_credit": "ScienceAlert",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdFfjBpoHkBugWdUoD9GiKO1F6rD4v_iicyNx99LJq6XCbxasacPNKVx4OdOI",
+      "image_credit": "RPP Noticias",
       "news": [
         {
-          "url": "https://www.sciencealert.com/the-worlds-biggest-sea-of-sand-shows-no-trace-of-ancient-humans-heres-why",
-          "title": "The World's Biggest Sea of Sand Shows No Trace of Ancient Humans. Here's Why.",
-          "publisher": "ScienceAlert",
+          "url": "https://rpp.pe/futbol/descentralizado/universitario-vs-cd-moquegua-sin-alzugaray-lista-de-convocados-para-penultima-fecha-del-torneo-clausura-2026-liga1-noticia-1716634",
+          "title": "Universitario sale a ganar: los convocados de la 'U' para el vital partido frente a CD Moquegua",
+          "publisher": "RPP Noticias",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRoCfacsEVq0rGEsR9tb_MrtsEOBKODXX71SnkKOrsqCbJGmyuTdSCY6q0bdE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdFfjBpoHkBugWdUoD9GiKO1F6rD4v_iicyNx99LJq6XCbxasacPNKVx4OdOI"
         },
         {
-          "url": "https://archaeologymag.com/2026/11/stone-water-early-human-settlement-desert/",
-          "title": "Stone and water together shaped where early humans settled in Arabia’s desert, study finds",
-          "publisher": "Archaeology News Online Magazine",
+          "url": "https://depor.com/futbol-peruano/descentralizado/donde-ver-alianza-lima-vs-los-chankas-en-vivo-canales-de-tv-via-liga-1-max-directv-movistar-tv-futbol-libre-tv-liga-1-video-noticia/",
+          "title": "¿Dónde se vio Alianza Lima vs. Los Chankas (1-1) por el Torneo Clausura? Video, resumen y goles",
+          "publisher": "Depor",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTWaAWAdNAB_wawYu5Sh5v6g6rY-3gBP4-apFgUBUkA06MoK_NjYsJ5WLVO70"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4R5t7vi4mHkho_WrPDR5uDeuZrhwMzDlWJg9eRArBHKCsgLCoE13kNgDvXuI"
         },
         {
-          "url": "https://phys.org/news/2026-11-early-humans-access-ancient-arabian.html",
-          "title": "Early humans needed more than access to water to settle ancient Arabian deserts",
-          "publisher": "Phys.org",
+          "url": "https://betsson.sport/es/noticias/futbol/liga-1-peru/universitario-ante-una-nueva-oportunidad-el-clausura-no-admite-otro-tropiezo-antes-de-visitar-a-huancayo/",
+          "title": "Universitario, ante una nueva oportunidad: el Clausura no admite otro tropiezo antes de visitar a Huancayo",
+          "publisher": "betsson.sport",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQb0nTeqkfo_iFPGLrUJC9YW084m8b-uWrfZit10uThJVuhIk2MXQPXC3SQYMM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAwFawPERpT8GwrmJwlEqnH9SnIRuvqrs_C2njs8TJzDI5Tgsvd7KgvT01Dqo"
         }
       ]
     },
     {
-      "query": "ali liebert",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T01:30:00Z",
-      "related_news_urls": [
-        "https://parade.com/entertainment/james-denton-says-his-new-father-daughter-christmas-drama-has-the-best-scenes-ive-ever-done-at-hallmark-exclusive",
-        "https://rissiwrites.com/2026/11/a-season-of-promises-unique-lesson-on-joy.html",
-        "https://www.fantasylandnews.com/2026/11/08/a-season-of-promises-review-hallmarks-family-grief-story-is-not-your-typical-romcom/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvVKqV0cGFQqQ-TiLlG3Ox4XW4YWQ8mr_a-v746WxgWVadXuac7nvlSYpa3nc",
-      "image_credit": "Parade Magazine",
-      "news": [
-        {
-          "url": "https://parade.com/entertainment/james-denton-says-his-new-father-daughter-christmas-drama-has-the-best-scenes-ive-ever-done-at-hallmark-exclusive",
-          "title": "James Denton Says His New Father-Daughter Christmas Drama Has the Best Scenes 'I've Ever Done' at Hallmark (Exclusive)",
-          "publisher": "Parade Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvVKqV0cGFQqQ-TiLlG3Ox4XW4YWQ8mr_a-v746WxgWVadXuac7nvlSYpa3nc"
-        },
-        {
-          "url": "https://rissiwrites.com/2026/11/a-season-of-promises-unique-lesson-on-joy.html",
-          "title": "‘A SEASON OF PROMISES’: HOW JOY TEACHES UNIQUE LESSON",
-          "publisher": "RissiWrites.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiINqYRFuOHOrtX7xQdC7XXPjFGxno6nPgW0oA4BGoC0sKzC4aUCZm0Uc4lNA"
-        },
-        {
-          "url": "https://www.fantasylandnews.com/2026/11/08/a-season-of-promises-review-hallmarks-family-grief-story-is-not-your-typical-romcom/",
-          "title": "A Season of Promises Review: Hallmark’s Family Grief Story Is Not Your Typical Romcom",
-          "publisher": "Fantasy Land News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-UOFuN3LY9_vZbNimpdEbjTc8RNnEhukNXY-KHRPCEiQCKozbo-EtyQVat3Q"
-        }
-      ]
-    },
-    {
-      "query": "usc women's basketball",
+      "query": "al michaels",
       "approx_searches": "1000+",
-      "published_at": "2026-11-09T01:30:00Z",
+      "published_at": "2026-11-09T01:50:00Z",
       "related_news_urls": [
-        "https://www.oregonlive.com/tv/2026/11/where-to-watch-utah-state-vs-usc-basketball-for-free-today.html",
-        "https://usctrojans.com/news/2026/11/7/no-3-usc-womens-basketball-primed-for-home-opener-against-utah-statet",
-        "https://www.nytimes.com/athletic/7764601/2026/11/08/utah-state-vs-usc-stream-how-to-watch-nov-8/"
+        "https://www.cleveland.com/news/2026/11/al-michaels-4-minute-bedtime-story-on-thursday-night-football-gets-fans-talking.html",
+        "https://www.the-sun.com/sport/17265228/al-michaels-retire-thursday-night-football-jaguars-ravens/",
+        "https://www.essentiallysports.com/nfl-active-news-jaguars-al-michaels-under-fire-as-fans-call-for-retirement-over-major-broadcasting-error-during-jaguars-ravens-clash/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVAajAG4SIdCQKjiGnV7zvYJ-q_sCylX37LVOGKzug-0AP21NUv-amjGz7Grs",
-      "image_credit": "OregonLive.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRTXXocx5c8_zfyV-TAaXQx2hLmOVnLWZq0WQRoBk_QCyzgVcxoc-D_oIbTYQ",
+      "image_credit": "Cleveland.com",
       "news": [
         {
-          "url": "https://www.oregonlive.com/tv/2026/11/where-to-watch-utah-state-vs-usc-basketball-for-free-today.html",
-          "title": "Where to watch Utah State vs. USC basketball for free today",
-          "publisher": "OregonLive.com",
+          "url": "https://www.cleveland.com/news/2026/11/al-michaels-4-minute-bedtime-story-on-thursday-night-football-gets-fans-talking.html",
+          "title": "Al Michaels’ 4-minute ‘bedtime story’ on Thursday Night Football gets fans talking",
+          "publisher": "Cleveland.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVAajAG4SIdCQKjiGnV7zvYJ-q_sCylX37LVOGKzug-0AP21NUv-amjGz7Grs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRTXXocx5c8_zfyV-TAaXQx2hLmOVnLWZq0WQRoBk_QCyzgVcxoc-D_oIbTYQ"
         },
         {
-          "url": "https://usctrojans.com/news/2026/11/7/no-3-usc-womens-basketball-primed-for-home-opener-against-utah-statet",
-          "title": "No. 3 USC Women's Basketball Primed for Home Opener Against Utah State",
-          "publisher": "USC Athletics",
+          "url": "https://www.the-sun.com/sport/17265228/al-michaels-retire-thursday-night-football-jaguars-ravens/",
+          "title": "NFL fans beg Al Michaels to RETIRE after broadcaster struggles through TNF – ‘it’s time to hang it up’",
+          "publisher": "The Sun",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFmW_jaiMXrM_H9i841RFK-XLpzWKcTFKq41XwXSd2ZK5tFo46mGHQP7KLPAs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfs5dSo8ddVIMh-xd6cfo_cNbODDFI1Gej7dWvOpB-K8R0paAKL-5b1OSpaSA"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7764601/2026/11/08/utah-state-vs-usc-stream-how-to-watch-nov-8/",
-          "title": "How to watch Utah State vs. USC women’s basketball: TV channel and streaming options for November 8",
-          "publisher": "The New York Times",
+          "url": "https://www.essentiallysports.com/nfl-active-news-jaguars-al-michaels-under-fire-as-fans-call-for-retirement-over-major-broadcasting-error-during-jaguars-ravens-clash/",
+          "title": "Al Michaels Under Fire as Fans Call for Retirement Over Major Broadcasting Error During Jaguars-Ravens Clash",
+          "publisher": "EssentiallySports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHgaXGhIPo7qtDG_D4urEhO8eCwYIMai-uYADIU6n1SGPadSDy9QYGcl0gtlc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrgKB0RclFtRzQsbV5pNnICnv4JAdc49zfji0cl1vNzfSUx45bz5lBGf2FsyQ"
         }
       ]
     }
