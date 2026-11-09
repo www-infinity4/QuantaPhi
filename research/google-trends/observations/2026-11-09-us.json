@@ -3,9 +3,149 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T07:01:36.830662Z",
+  "checked_at": "2026-11-09T07:31:26.395501Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "elon musk spacex telecom acquisition",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T07:00:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/video/why-musks-telecom-play-is-no-hail-mary-fix-185825477.html",
+        "https://www.marketwatch.com/story/elon-musk-opens-the-door-for-a-big-spacex-acquisition-4f62bcad",
+        "https://www.bloomberg.com/news/articles/2026-11-05/how-musk-s-starlink-can-challenge-at-t-verizon-and-t-mobile"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3yDjri-p1_pXqxuoQDnLUhptGvYInVmnQkvXlWPKhDiBSUmXfiqi-Rx49hg0",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/video/why-musks-telecom-play-is-no-hail-mary-fix-185825477.html",
+          "title": "Why Musk's telecom play is no 'Hail Mary' fix",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3yDjri-p1_pXqxuoQDnLUhptGvYInVmnQkvXlWPKhDiBSUmXfiqi-Rx49hg0"
+        },
+        {
+          "url": "https://www.marketwatch.com/story/elon-musk-opens-the-door-for-a-big-spacex-acquisition-4f62bcad",
+          "title": "Elon Musk opens the door for a big SpaceX acquisition",
+          "publisher": "MarketWatch",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPf-K1jWqWAN_g1VOG9fzRG2lQNFJhqLgU6IGBmSf1Uo_iQ2t19GuwOmx_iD8"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-05/how-musk-s-starlink-can-challenge-at-t-verizon-and-t-mobile",
+          "title": "How Musk Plans to Shake Up the US Wireless Industry",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGqSXSMg4LHFGQ60HUz997ev7TWIvnSqX4fZeZOVi1kNHnNnNlgmGBOdqKUZs"
+        }
+      ]
+    },
+    {
+      "query": "10",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-09T06:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50408585/projecting-2026-playoff-top-12-week-10-cfp",
+        "https://sports.yahoo.com/college-football/article/yahoo-top-10-messy-day-of-blowouts-creates-cleaner-picture-of-the-sports-best-061153518.html",
+        "https://www.cbssports.com/college-football/news/week-10-cfb-overreactions-lane-kiffin-alabama-problem-spenders-coaches/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2xhJvKzuTnUauvnDHFyhxqovw49SxhPY13v19ZPf3HkG2iKGZtLR2J_eId_M",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50408585/projecting-2026-playoff-top-12-week-10-cfp",
+          "title": "College Football Playoff top 12 projection after Week 10",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2xhJvKzuTnUauvnDHFyhxqovw49SxhPY13v19ZPf3HkG2iKGZtLR2J_eId_M"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/article/yahoo-top-10-messy-day-of-blowouts-creates-cleaner-picture-of-the-sports-best-061153518.html",
+          "title": "Yahoo Top 10: Messy day of blowouts creates cleaner picture of the sport's best",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnNZ1uzj5uJ5KIm1zsUJLF3csqaVrRFZKzXtZXsmlmB-2zPY1Y0zdKcgb0E3M"
+        },
+        {
+          "url": "https://www.cbssports.com/college-football/news/week-10-cfb-overreactions-lane-kiffin-alabama-problem-spenders-coaches/",
+          "title": "Week 10 CFB Overreactions: Cash is still king, first-year coaches in trouble and Lane Kiffin's Alabama problem",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0J3KgySRmSI6Px9PUm4qkle_HOJ9lXs1SXQAPbBiNgYOmj0g01vnYAxGUdxg"
+        }
+      ]
+    },
+    {
+      "query": "joseph baena",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-09T06:50:00Z",
+      "related_news_urls": [
+        "https://people.com/arnold-schwarzenegger-son-joseph-baena-places-in-top-5-pro-debut-natural-bodybuilding-competition-12243669",
+        "https://pagesix.com/2026/11/08/celebrity-news/arnold-schwarzeneggers-son-joseph-baena-29-places-in-top-5-at-bodybuilding-competition/",
+        "https://www.tmz.com/people/cash-hudson/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS329_K5ghFtluLzfSFcIHAor8j8s8PNA_sYxw692UYGzXHplQheR4lMg89MqA",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/arnold-schwarzenegger-son-joseph-baena-places-in-top-5-pro-debut-natural-bodybuilding-competition-12243669",
+          "title": "Arnold Schwarzenegger’s Son Joseph Baena Places in Top 5 in ‘Pro Debut’ at Natural Bodybuilding Competition",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS329_K5ghFtluLzfSFcIHAor8j8s8PNA_sYxw692UYGzXHplQheR4lMg89MqA"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/08/celebrity-news/arnold-schwarzeneggers-son-joseph-baena-29-places-in-top-5-at-bodybuilding-competition/",
+          "title": "Arnold Schwarzenegger's son Joseph Baena, 29, places in top 5 at bodybuilding competition",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvHKjx1LYT8q2vvN-nXmGGgQoA4rgs-edQ17Z-FeB3ba4OJ1madHqNEWpGPPg"
+        },
+        {
+          "url": "https://www.tmz.com/people/cash-hudson/",
+          "title": "Cash Hudson (Slash's son): News and Updates",
+          "publisher": "TMZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmt8E9h88oAxj2UTwy93rnsgxrs8DvTVEw2m0X575M0bdwGQXr7b_Smlrz-n0"
+        }
+      ]
+    },
+    {
+      "query": "visionquest episode 8",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-09T06:40:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66094426/?ref_=nmnw_art_perm",
+        "https://thedirect.com/article/marvel-studios-visionquest-season-2-promo",
+        "https://geektyrant.com/news/video-promo-for-the-final-episode-of-visionquest-teases-one-final-surprise"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHY08TDloscLhKrjjQi68KEHselh44ODlBCun1sz747t6XKt7EJGn0spDKizk",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66094426/?ref_=nmnw_art_perm",
+          "title": "‘VisionQuest’ Episode 8 Release Date, Time and Where to Watch the Finale",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHY08TDloscLhKrjjQi68KEHselh44ODlBCun1sz747t6XKt7EJGn0spDKizk"
+        },
+        {
+          "url": "https://thedirect.com/article/marvel-studios-visionquest-season-2-promo",
+          "title": "Marvel Studios Might Have Just Teased VisionQuest Season 2 In New Promo",
+          "publisher": "The Direct",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTw0CRWjKMowfi7zdJEGWLakEAEh1Nxt8D3xo7cnlMYqeSShWXjTcGM4qMFu_I"
+        },
+        {
+          "url": "https://geektyrant.com/news/video-promo-for-the-final-episode-of-visionquest-teases-one-final-surprise",
+          "title": "Video Promo for the Final Episode of VISIONQUEST Teases \"One Final Surprise\"",
+          "publisher": "GeekTyrant",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTixLmJX5vyLR1IAgeOoeCCRgl1HfAALMnoQzitEkcXwwDABWiDhlhqOf8e-5g"
+        }
+      ]
+    },
     {
       "query": "michaella love is blind",
       "approx_searches": "200+",
@@ -113,7 +253,7 @@
     },
     {
       "query": "magda linette",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-09T06:00:00Z",
       "related_news_urls": [
         "https://przegladsportowy.onet.pl/tenis/magda-linette-janice-tjen-na-zywo-polka-gra-w-wielkim-finale/mcynx26",
@@ -148,7 +288,7 @@
     },
     {
       "query": "杭州临平",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-09T06:00:00Z",
       "related_news_urls": [
         "https://www.ntdtv.com/gb/2026/11/08/a104149097.html",
@@ -183,7 +323,7 @@
     },
     {
       "query": "denzel washington",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-09T06:00:00Z",
       "related_news_urls": [
         "https://www.tvline.com/2303841/denzel-washington-final-tv-role-animated-hbo-kids-show/",
@@ -213,146 +353,6 @@
           "publisher": "MovieWeb",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTuWCgfA9Xs_BIwx0CBOSVq2kpx3xK86lGPe7SE3lXkAMqbdLcAUdF3raWco9w"
-        }
-      ]
-    },
-    {
-      "query": "janice tjen",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T05:50:00Z",
-      "related_news_urls": [
-        "https://www.wtatennis.com/news/4606329/rain-postpones-chennai-title-match-between-tjen-linett",
-        "https://www.thehindu.com/sport/tennis/chennai-open-tennis-singles-final-postponed-due-to-rain-and-air-quality/article71681215.ece",
-        "https://timesofindia.indiatimes.com/sports/badminton/diwali-fireworks-rain-force-chennai-open-final-between-janice-tjen-and-magda-linette-to-be-postponed/articleshow/135669675.cms"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8qfSXpmOHlmOIrur7rf1tCdTf1sbv4foTq-D8BqH268nwdnXWxUxDlZ-G1lw",
-      "image_credit": "WTA Tennis",
-      "news": [
-        {
-          "url": "https://www.wtatennis.com/news/4606329/rain-postpones-chennai-title-match-between-tjen-linett",
-          "title": "Rain postpones Chennai title match between Tjen, Linette",
-          "publisher": "WTA Tennis",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8qfSXpmOHlmOIrur7rf1tCdTf1sbv4foTq-D8BqH268nwdnXWxUxDlZ-G1lw"
-        },
-        {
-          "url": "https://www.thehindu.com/sport/tennis/chennai-open-tennis-singles-final-postponed-due-to-rain-and-air-quality/article71681215.ece",
-          "title": "Chennai Open tennis: Singles final postponed due to rain, unhealthy air quality",
-          "publisher": "The Hindu",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOC6mAhk0qjo9yf8ExerDX4bDXVtB0zBUUo1xt40vORmJdswbF1kgp8vNYc7U"
-        },
-        {
-          "url": "https://timesofindia.indiatimes.com/sports/badminton/diwali-fireworks-rain-force-chennai-open-final-between-janice-tjen-and-magda-linette-to-be-postponed/articleshow/135669675.cms",
-          "title": "Diwali fireworks, rain force Chennai Open final between Janice Tjen and Magda Linette to be postponed",
-          "publisher": "The Times of India",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF8KCmdrjxID8uSxx819jjHw5Z3iy6qv7pFbhPAyxHVqL-TAyOZYdWnULsYz4"
-        }
-      ]
-    },
-    {
-      "query": "delhi aqi",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T05:30:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/business/environment/delhi-air-quality-deteriorates-revellers-mark-diwali-with-illegal-fireworks-2026-11-09/",
-        "https://www.dw.com/en/india-delhi-chokes-on-most-polluted-diwali-eve-in-10-years/live-79883248",
-        "https://www.thehindu.com/news/cities/Delhi/air-pollution-over-50-times-who-limit-in-parts-of-delhi-as-people-defy-ban-on-firecrackers-on-deepavali/article71681210.ece"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTK4txzVIO_6D71qiw_wCoj38YrM7PMjoBeGEiGNGHZkZxojnHsoJYuXsfIkYA",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/business/environment/delhi-air-quality-deteriorates-revellers-mark-diwali-with-illegal-fireworks-2026-11-09/",
-          "title": "Delhi air quality deteriorates as revellers mark Diwali with illegal fireworks",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTK4txzVIO_6D71qiw_wCoj38YrM7PMjoBeGEiGNGHZkZxojnHsoJYuXsfIkYA"
-        },
-        {
-          "url": "https://www.dw.com/en/india-delhi-chokes-on-most-polluted-diwali-eve-in-10-years/live-79883248",
-          "title": "India: Delhi chokes on most polluted Diwali eve in 10 years",
-          "publisher": "DW.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhoku61qu-W7i_SYXq_rCqix7-XuMy-wgh-4ntWBk2omeIcd9XEvlderFufaA"
-        },
-        {
-          "url": "https://www.thehindu.com/news/cities/Delhi/air-pollution-over-50-times-who-limit-in-parts-of-delhi-as-people-defy-ban-on-firecrackers-on-deepavali/article71681210.ece",
-          "title": "Air pollution over 66 times WHO limit in parts of Delhi as people defy ban on firecrackers on Deepavali",
-          "publisher": "The Hindu",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwoQa6pkLCDK8ooEs1NM-Okb_jVoNRkQbY5NQJPSI0gpW0VowcMonk3ffxfWw"
-        }
-      ]
-    },
-    {
-      "query": "claressa shields",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T05:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/claressa-shields-makes-serious-allegation-022348427.html",
-        "https://www.instagram.com/p/DfVaxrWAbi5/",
-        "https://www.hotnewhiphop.com/1016056-claressa-sheilds-gervonta-davis-beef-shakur"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0xTNTbPWqXIg41XI5MGatg3SdKocxf-k8ypLSxq9cV_XUhJz0KAk5ljBynfg",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/claressa-shields-makes-serious-allegation-022348427.html",
-          "title": "Claressa Shields Makes Serious Allegation Against Gervonta Davis — 'I Saw It With My Own Two Eyes'",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0xTNTbPWqXIg41XI5MGatg3SdKocxf-k8ypLSxq9cV_XUhJz0KAk5ljBynfg"
-        },
-        {
-          "url": "https://www.instagram.com/p/DfVaxrWAbi5/",
-          "title": "Chile! #Papoose and #GervontaDavis are going at it after the boxer said #ClaressaShields’ outfit was a “hot a** mess.” 📹📷 (@popoutmagazine @gettyimages )✍🏾#TSRStaffAS",
-          "publisher": "Instagram",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://www.hotnewhiphop.com/1016056-claressa-sheilds-gervonta-davis-beef-shakur",
-          "title": "Claressa Shields Isn't Done With Gervonta Davis As Feud Gets Personal",
-          "publisher": "HotNewHipHop",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpG_yRhjJWZ73MKr9CG40XlD2M2TGs0K5Gw4GQquRm1USq68AQc4dYmvUYcQo"
-        }
-      ]
-    },
-    {
-      "query": "mv odyssey cruise ship detained",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T05:00:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/news/odyssey-forever-cruise-arrested-at-singapore-port/",
-        "https://www.reuters.com/world/asia-pacific/cruise-ship-leaves-cambodia-after-forcing-hundreds-passengers-off-2026-11-04/",
-        "https://www.nytimes.com/2026/11/06/travel/villa-vie-residences-odyssey-cruise.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDYEuxn-WmcZFKYAgLHVpmijMptT4fqGfkOh3Hgs1b8OV-VZ3yIHJn9tfWl7I",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/news/odyssey-forever-cruise-arrested-at-singapore-port/",
-          "title": "\"Forever cruise\" arrested at Singapore port, court records show",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDYEuxn-WmcZFKYAgLHVpmijMptT4fqGfkOh3Hgs1b8OV-VZ3yIHJn9tfWl7I"
-        },
-        {
-          "url": "https://www.reuters.com/world/asia-pacific/cruise-ship-leaves-cambodia-after-forcing-hundreds-passengers-off-2026-11-04/",
-          "title": "Cruise ship leaves Cambodia after forcing hundreds of passengers off",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShp5I_vYYaW2vPEnn6yh-pUVTRR_tciydaVp6qgNZnH7u9amLa_855YnQ67hc"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/06/travel/villa-vie-residences-odyssey-cruise.html",
-          "title": "They Spent Millions to Keep Their Dream Cruise Afloat. It Died Anyway.",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwO_j1w909sXynu_QXh0e7GlKdI89A-mdYWVFc7ggoJarle3uc_gq3xM9fPwk"
         }
       ]
     }
