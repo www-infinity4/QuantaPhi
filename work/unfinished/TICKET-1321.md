@@ -61,3 +61,12 @@ Pure packet selection rejects unchanged blocked same-head retries and foreign le
 The source-only adapter from merged #1858 was reviewed after its merge. The seven initial defects were addressed under existing issue #1321 in PR #1865, and its four follow-on findings have now been fixed in branch code at `c267eb837297547306720c299d61185aa72db623`. These guard against a concurrent checkpoint update overwriting provider receipts, replay of legacy running checkpoints with unknown operations, evicted done/blocked history making cached candidates eligible again, and legacy blocked/observed receipts incorrectly marking an action complete. Regressions were added before the fixes, and **8 of 8 exact-code-head checks passed**.
 
 This source implementation is **not** a deployed authenticated Continuity Builder or a live two-run acceptance receipt. Never report a fake Green dot, real Blue write, production merge or wallet payout from the synthetic adapter tests. A reviewed Brain-to-coordinator signed integration and provider-backed readback remain the next work under this same issue.
+
+
+## November 8 CT · original color PR reconciliation
+
+- Continued **existing** Brain PR #1778 on branch `feat/brain-role-handoffs-1321-20261107` rather than making another ticket or paid Copilot session.
+- Reconciled its CI workflow runners, Bubbles role profiles, isolated Brain test importer, and signed `/runner/plan` source against current `main` to retain recent Bubbles safety patches. The earlier branch was 27 commits behind and had dirty mergeability.
+- Additional conditional Workers AI model handoffs remain **advisory only**. A failed Red/Orange/Blue thought is reported as `model_inference_blocked`, not a Green patch or permission failure; signed Green/Pink/GitHub execution remains separately required.
+- Implementing and reviewing source is **not** production integration of concurrent Yellow discovery + Blue transport, destination readback, or Green iteration-dot ledger. No provider-backed source import/DB write, merge, deployment, signed owner job or phone acceptance is inferred here.
+- Next executable gate: exact-head Brain role-handoff tests, full Brain diagnostic CI and merge-conflict review, then a permitted merge and separate signed runner deployment/readback. If blocker persists, rotate to other genuine owner work rather than asking already-answered questions.
