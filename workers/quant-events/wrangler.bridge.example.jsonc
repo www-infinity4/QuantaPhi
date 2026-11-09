@@ -1,0 +1,33 @@
+// TEMPLATE ONLY. Do not deploy and do not replace existing site Worker bindings.
+// Create a private Wallet-verified event bridge only after independent security
+// review and explicit Cloudflare budget approval for isolated D1/Queues.
+// No public route for this Worker: the site forwards through EVENTS_BRIDGE
+// service binding only after the separately configured feature flag.
+//
+// Secrets to provision separately in Cloudflare, NEVER in this file:
+//   USER_IDENTITY_HMAC_SECRET (same as the event ingest Worker)
+//   INGEST_TOKEN (same as event ingest Worker's service-bearer secret)
+//
+// Site Worker future service binding, preserving all its existing bindings:
+//   {"binding":"EVENTS_BRIDGE","service":"REPLACE_REVIEWED_BRIDGE_NAME"}
+// Site Worker future vars (default OFF):
+//   {"EVENTS_BRIDGE_ENABLED":"false"}
+{
+  "name": "REPLACE_REVIEWED_BRIDGE_NAME",
+  "main": "src/wallet-bridge.mjs",
+  "compatibility_date": "2026-11-08",
+  "vars": {
+    "EVENTS_BRIDGE_ENABLED": "false"
+  },
+  "services": [
+    {"binding": "BOT_WALLET", "service": "REPLACE_VERIFIED_UNIFIED_WALLET_WORKER"},
+    {"binding": "EVENTS_SERVICE", "service": "REPLACE_ISOLATED_INGEST_WORKER"}
+  ],
+  "d1_databases": [
+    {
+      "binding": "EVENT_CONSENT_DB",
+      "database_name": "quantaphi-events",
+      "database_id": "REPLACE_WITH_APPROVED_ISOLATED_D1_ID"
+    }
+  ]
+}
