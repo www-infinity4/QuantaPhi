@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T15:31:24.447801Z",
+  "checked_at": "2026-11-09T16:01:40.554204Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "amd stock",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-09T15:10:00Z",
+      "query": "snowfall forecast",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T15:40:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/technology/ai/articles/lisa-su-expects-80-revenue-142611269.html",
-        "https://seekingalpha.com/article/4964583-amd-100-billion-target-appears-set",
-        "https://www.appeconomyinsights.com/p/amd-the-2027-leap"
+        "https://www.mensjournal.com/news/new-forecast-shows-us-states-facing-the-least-snow-this-winter",
+        "https://www.yahoo.com/news/weather-news/articles/noaa-winter-storm-map-forecasts-121500800.html",
+        "https://www.firstcoastnews.com/article/news/nation-world/storms-snow-early-season-frost-possible-noaa-outlook/507-284455d3-ab16-4c37-bc69-0c18cc4c6c0b"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsbeCoCNUrSIzGARTxhM4oaI30sEQhPZ45HoNE-LAEGM2exG2zd_1mDQWIc3M",
-      "image_credit": "Yahoo Finance",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6Z99lZAhzo2VT386nOESIj1VDBfDUlvIiNZFiswjr57-aTsX4sOyfzWMgTZg",
+      "image_credit": "Men's Journal",
       "news": [
         {
-          "url": "https://finance.yahoo.com/technology/ai/articles/lisa-su-expects-80-revenue-142611269.html",
-          "title": "Lisa Su Expects 80% Revenue Growth in 2027. AMD Stock Is Still a Strong Buy, But It Demands Flawless Execution.",
-          "publisher": "Yahoo Finance",
+          "url": "https://www.mensjournal.com/news/new-forecast-shows-us-states-facing-the-least-snow-this-winter",
+          "title": "New Forecast Shows US States Facing the Least Snow This Winter",
+          "publisher": "Men's Journal",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsbeCoCNUrSIzGARTxhM4oaI30sEQhPZ45HoNE-LAEGM2exG2zd_1mDQWIc3M"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6Z99lZAhzo2VT386nOESIj1VDBfDUlvIiNZFiswjr57-aTsX4sOyfzWMgTZg"
         },
         {
-          "url": "https://seekingalpha.com/article/4964583-amd-100-billion-target-appears-set",
-          "title": "AMD: $100 Billion Revenue Target Appears Set (NASDAQ:AMD)",
-          "publisher": "Seeking Alpha",
+          "url": "https://www.yahoo.com/news/weather-news/articles/noaa-winter-storm-map-forecasts-121500800.html",
+          "title": "New NOAA Winter Storm Map Forecasts ‘Heavy Snow’ For 3 States Next Week",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvWMwTEmUOeQn2X3K5B9_5pvKHOdO6Cv8KjvNT82x4bqukZowNsZbZZDId4mE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5VukQxzNvchTkBP9lAhmmNNg86eUox97Nl7h36FAZI0HijtU1ckL82uiwfCU"
         },
         {
-          "url": "https://www.appeconomyinsights.com/p/amd-the-2027-leap",
-          "title": "↗️ AMD: The 2027 Leap",
-          "publisher": "App Economy Insights",
+          "url": "https://www.firstcoastnews.com/article/news/nation-world/storms-snow-early-season-frost-possible-noaa-outlook/507-284455d3-ab16-4c37-bc69-0c18cc4c6c0b",
+          "title": "Storms, snow and early-season frost possible across parts of the US, NOAA outlook says",
+          "publisher": "firstcoastnews.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkXzVBjuLS2CKphswnjRSN2o_jgwh6UN13ZqRQ2EGT2r5UZOaGGjq7CVKLhX8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx7uD8aSDV-mvKQxOHpARtYHxEP0bA7EvmKNj9GDL2Ij4wCpXmqKv1a5dkYz0"
         }
       ]
     },
     {
-      "query": "rochelle fleming",
+      "query": "national chicken sandwich day",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T15:30:00Z",
+      "related_news_urls": [
+        "https://www.kvue.com/video/news/local/national-fried-chicken-sandwich-day-november-9-popeyes-chick-fil-a-urban-bird-hot-chicken-austin-deal/269-b34b0cd5-1481-4c7b-8c0d-2d1fba667f4d",
+        "https://www.fox43.com/article/news/nation-world/national-fried-chicken-sandwich-day-freebies-and-deals/507-66e27ec3-0dbe-4b99-bb55-f04f1e84088e",
+        "https://www.usatoday.com/story/money/food/2026/11/09/national-fried-chicken-sandwich-day-deals-2026/92642109007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPWMhriT9U0KbynctDfW9C2LzCTQjibzaGZIVFun_K-ketkGU1TgKpfvCdH5s",
+      "image_credit": "KVUE",
+      "news": [
+        {
+          "url": "https://www.kvue.com/video/news/local/national-fried-chicken-sandwich-day-november-9-popeyes-chick-fil-a-urban-bird-hot-chicken-austin-deal/269-b34b0cd5-1481-4c7b-8c0d-2d1fba667f4d",
+          "title": "Nov. 9 is National Fried Chicken Sandwich Day",
+          "publisher": "KVUE",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPWMhriT9U0KbynctDfW9C2LzCTQjibzaGZIVFun_K-ketkGU1TgKpfvCdH5s"
+        },
+        {
+          "url": "https://www.fox43.com/article/news/nation-world/national-fried-chicken-sandwich-day-freebies-and-deals/507-66e27ec3-0dbe-4b99-bb55-f04f1e84088e",
+          "title": "Fast-food restaurants celebrate National Fried Chicken Sandwich Day with freebies and deals",
+          "publisher": "FOX43",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfq8-U8c-kL15QrbfJdiLZRHSTHmsVF67aMQ-jYQkBU0wFA5kcMoxUvYfEfzA"
+        },
+        {
+          "url": "https://www.usatoday.com/story/money/food/2026/11/09/national-fried-chicken-sandwich-day-deals-2026/92642109007/",
+          "title": "It's National Fried Chicken Sandwich Day! See deals from Popeyes, more",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_igHWBi8kwYuAdkhKRT0_7_H1aDtm8KMCozDhfEJ60olt0pOv7JVuRRhUqfg"
+        }
+      ]
+    },
+    {
+      "query": "netflix stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T15:30:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/news/value-investors-buy-tutor-perini-134002788.html",
+        "https://www.constructionbriefing.com/news/q3-update-tutor-perini-skanska-and-bam/8135704.article",
+        "https://www.tradingview.com/news/marketbeat:84745a5f3094b:0-what-tutor-perini-tpc-said-on-its-q3-earnings-call/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF8BJtsMcu3G_FqG0rLEohOaPkHTf7XldaR_ML69cBaYcuKkIG3hQJZh-bbLE",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/news/value-investors-buy-tutor-perini-134002788.html",
+          "title": "Should Value Investors Buy Tutor Perini (TPC) Stock?",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF8BJtsMcu3G_FqG0rLEohOaPkHTf7XldaR_ML69cBaYcuKkIG3hQJZh-bbLE"
+        },
+        {
+          "url": "https://www.constructionbriefing.com/news/q3-update-tutor-perini-skanska-and-bam/8135704.article",
+          "title": "Q3 update: Tutor Perini, Skanska, and Bam",
+          "publisher": "Construction Briefing",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_hvxrCMihBpYsXvzBntfyKMqX97LODdn9P6wS6roD3I_SlYhC1BIQ7vw3nqU"
+        },
+        {
+          "url": "https://www.tradingview.com/news/marketbeat:84745a5f3094b:0-what-tutor-perini-tpc-said-on-its-q3-earnings-call/",
+          "title": "What Tutor Perini (TPC) Said on Its Q3 Earnings Call",
+          "publisher": "TradingView",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
+        }
+      ]
+    },
+    {
+      "query": "sophie cunningham wnba 3-point snub",
       "approx_searches": "1000+",
-      "published_at": "2026-11-09T15:10:00Z",
+      "published_at": "2026-11-09T15:20:00Z",
       "related_news_urls": [
-        "https://www.al.com/life/2026/11/rb-and-disco-legend-dead-at-72-music-reached-audiences-across-the-globe.html",
-        "https://soultracks.com/first-choice-lead-singer-rochelle-fleming-dies/",
-        "https://www.jamaicaobserver.com/2026/11/08/rochelle-fleming-lead-singer-founder-1970s-girl-group-first-choice-died/"
+        "https://sports.yahoo.com/articles/sophie-cunningham-rather-win-dancing-104400884.html",
+        "https://athlonsports.com/wnba/indiana-fever/sophie-cunningham-announces-update-career-move",
+        "https://www.basketballnetwork.net/latest-news/sophie-cunningham-blasts-the-wnba-for-being-left-out-of-three-point-contest"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSms6nCCdRt9dgfZ06jsORudClX2uyqizVP8IScOelaXA4Z0lQPeJgbesyVbk",
-      "image_credit": "AL.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpIEff0L_nEHlqz4xBABz4cBIYBx6GThYEyOryCHxqf2nePstLrqJt5gEBKqc",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.al.com/life/2026/11/rb-and-disco-legend-dead-at-72-music-reached-audiences-across-the-globe.html",
-          "title": "R&B and disco legend dead at 72: ‘Music reached audiences across the globe’",
-          "publisher": "AL.com",
+          "url": "https://sports.yahoo.com/articles/sophie-cunningham-rather-win-dancing-104400884.html",
+          "title": "Sophie Cunningham Would Rather Win Dancing With the Stars Than a WNBA 3-Point Title",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSms6nCCdRt9dgfZ06jsORudClX2uyqizVP8IScOelaXA4Z0lQPeJgbesyVbk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpIEff0L_nEHlqz4xBABz4cBIYBx6GThYEyOryCHxqf2nePstLrqJt5gEBKqc"
         },
         {
-          "url": "https://soultracks.com/first-choice-lead-singer-rochelle-fleming-dies/",
-          "title": "First Choice lead singer Rochelle Fleming dies at 72",
-          "publisher": "SoulTracks",
+          "url": "https://athlonsports.com/wnba/indiana-fever/sophie-cunningham-announces-update-career-move",
+          "title": "Sophie Cunningham Announces Update Ahead of Potential Career Move",
+          "publisher": "Athlon Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTE7DhnaajUgOTAocUxHnZTuJsPnfu8RNwdzfFBNGC5nDUjokiFDQ2Hst16Yfc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeEzsxaf5_kkZ1iwy6IRqNEAev6OgeNXs3l7O29V2s6DSHQX4Bvii1spSgA9M"
         },
         {
-          "url": "https://www.jamaicaobserver.com/2026/11/08/rochelle-fleming-lead-singer-founder-1970s-girl-group-first-choice-died/",
-          "title": "Rochelle Fleming, lead singer and founder of 1970’s girl group First Choice, has died",
-          "publisher": "Jamaica Observer",
+          "url": "https://www.basketballnetwork.net/latest-news/sophie-cunningham-blasts-the-wnba-for-being-left-out-of-three-point-contest",
+          "title": "\"It's clearly so political\" - Sophie Cunningham calls out WNBA over three-point contest selections",
+          "publisher": "Basketball Network",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCtT9RHDHXchFFlSHWL2iXMAzlLECWgviNg7IX64Pa3ef_pgyHx8UttAQXCoo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjG_jTYk60dOGyINtThVkl54voF7A1Myq4epA6ZREgbbIWgeTdO5DNnh5cNrE"
         }
       ]
     },
     {
-      "query": "vti",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T15:10:00Z",
-      "related_news_urls": [
-        "https://www.fool.com/investing/2026/11/08/2-etfs-id-buy-in-november-and-hold-for-the-next-20/",
-        "https://finance.yahoo.com/markets/stocks/articles/adviser-retired-handed-accounts-back-200321123.html",
-        "https://abc3340.com/money/investing/vanguard-etfs-secure-retirement-savings"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7Ctki_9S5kuZ3twtPBqh-98Z7PmBGSA8N03XDVOk_RZsXreiVr19EIAsUczw",
-      "image_credit": "The Motley Fool",
-      "news": [
-        {
-          "url": "https://www.fool.com/investing/2026/11/08/2-etfs-id-buy-in-november-and-hold-for-the-next-20/",
-          "title": "2 ETFs I'd Buy in November and Hold for the Next 20 Years",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7Ctki_9S5kuZ3twtPBqh-98Z7PmBGSA8N03XDVOk_RZsXreiVr19EIAsUczw"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/adviser-retired-handed-accounts-back-200321123.html",
-          "title": "Your Adviser Retired and Handed the Accounts Back at 71? These 3 ETFs Are a Portfolio You Can Run Yourself",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOpebPK8XoF0eOdAMhKwtwxCOR4ZH5PMa6H7RgKMnA0BkO2rmBtBbeFzr80Qg"
-        },
-        {
-          "url": "https://abc3340.com/money/investing/vanguard-etfs-secure-retirement-savings",
-          "title": "4 Vanguard ETFs Could Secure Retirement Savings if You Make This Move",
-          "publisher": "WBMA",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFpJvPkHfLVwczMejJUUPJI4hivCP0lvTuWoa9m1EjYMP-lgWM9rWRRnSl7N8"
-        }
-      ]
-    },
-    {
-      "query": "voo",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T15:10:00Z",
-      "related_news_urls": [
-        "https://g1.globo.com/ro/rondonia/noticia/2026/11/09/passageira-morre-durante-voo-para-rondonia.ghtml",
-        "https://gazetarondonia.com.br/noticia/23300/passageira-morre-durante-voo-com-destino-a-rondonia",
-        "https://newsrondonia.com.br/policia/2026/11/09/passageira-passa-mal-e-morre-em-voo-com-destino-a-porto-velho/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Y5m9eAjxE1jXf_JLQE4k2rfW0Zpq86_q6fTfEfMlHfzyFhev26a3NVo7D6k",
-      "image_credit": "G1",
-      "news": [
-        {
-          "url": "https://g1.globo.com/ro/rondonia/noticia/2026/11/09/passageira-morre-durante-voo-para-rondonia.ghtml",
-          "title": "Passageira morre durante voo que saiu de Brasília com destino a Porto Velho",
-          "publisher": "G1",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Y5m9eAjxE1jXf_JLQE4k2rfW0Zpq86_q6fTfEfMlHfzyFhev26a3NVo7D6k"
-        },
-        {
-          "url": "https://gazetarondonia.com.br/noticia/23300/passageira-morre-durante-voo-com-destino-a-rondonia",
-          "title": "Passageira morre durante voo com destino a Rondônia",
-          "publisher": "Gazeta Rondônia",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSg68RnE2m5VLEevZSymAChsqDX37F0oFXC_WfxUuisc7Fhjqqr7xFJ868pDu8"
-        },
-        {
-          "url": "https://newsrondonia.com.br/policia/2026/11/09/passageira-passa-mal-e-morre-em-voo-com-destino-a-porto-velho/",
-          "title": "Passageira passa mal e morre em voo com destino a Porto Velho",
-          "publisher": "News Rondônia",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0TjLwCyWXEahJGg2C7a6qkLKOIN_KcuYYBYmcL_KArKtrNX-A6v0OyG7OAzw"
-        }
-      ]
-    },
-    {
-      "query": "julianne moore",
+      "query": "mark matthews",
       "approx_searches": "500+",
-      "published_at": "2026-11-09T15:10:00Z",
+      "published_at": "2026-11-09T15:20:00Z",
       "related_news_urls": [
-        "https://variety.com/2026/film/awards/jesse-eisenberg-julianne-moore-debut-ai-bad-now-you-see-me-4-1236941541/",
-        "https://thegauntlet.ca/thats-where-everyone-wants-to-be-ciff-2026-presents-jesse-eisenbergs-the-debut/",
-        "https://www.timesdaily.com/2026-nyff---the-debut-premiere/image_3740be5a-9275-4961-a1df-25bc72b9aee3.html"
+        "https://www.espn.com/college-football/story/_/id/50422944/sources-5-star-ot-recruit-matthews-decommits-texas-am",
+        "https://sports.yahoo.com/articles/georgia-football-lands-commitment-nations-150317361.html",
+        "https://www.usatoday.com/story/sports/high-school/football/2026/11/09/mark-matthews-commits-to-georgia-five-star-ot-joins-bulldogs-2027-class/92689299007/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZ7fdR0q0JOfV9CLJFZL6kb5tsq4PZ5-wSdgSkUjHGIZhoEClFzNMCVNsyaqA",
-      "image_credit": "Variety",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFa0z2bD3BkI5lrLx9bjmsgap11vovhnNCEEiU6meuAtDWm37ipJcImeIpH3A",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://variety.com/2026/film/awards/jesse-eisenberg-julianne-moore-debut-ai-bad-now-you-see-me-4-1236941541/",
-          "title": "Jesse Eisenberg, Julianne Moore on The Debut, AI and Now You See Me 4",
-          "publisher": "Variety",
+          "url": "https://www.espn.com/college-football/story/_/id/50422944/sources-5-star-ot-recruit-matthews-decommits-texas-am",
+          "title": "Sources: Five-star OT recruit Matthews decommits from Texas A&M; Miami lurking",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZ7fdR0q0JOfV9CLJFZL6kb5tsq4PZ5-wSdgSkUjHGIZhoEClFzNMCVNsyaqA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFa0z2bD3BkI5lrLx9bjmsgap11vovhnNCEEiU6meuAtDWm37ipJcImeIpH3A"
         },
         {
-          "url": "https://thegauntlet.ca/thats-where-everyone-wants-to-be-ciff-2026-presents-jesse-eisenbergs-the-debut/",
-          "title": "\"That's where everyone wants to be...\" CIFF 2026 presents Jesse Eisenberg’s The Debut",
-          "publisher": "The Gauntlet",
+          "url": "https://sports.yahoo.com/articles/georgia-football-lands-commitment-nations-150317361.html",
+          "title": "Georgia football lands commitment from nation's top offensive tackle",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkT6yZJirQoNJLRLTdCYh_XQxu8H5_V7XAkj2boIOd7xtXPa5gm94M1shTt3U"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNb7OkpwJLdPvOqGHv7kHmiYTXD2oy6w_FW27slyGdtJoBqH6gzaCcqnEB4VA"
         },
         {
-          "url": "https://www.timesdaily.com/2026-nyff---the-debut-premiere/image_3740be5a-9275-4961-a1df-25bc72b9aee3.html",
-          "title": "2026 NYFF - \"The Debut\" Premiere",
-          "publisher": "timesdaily.com",
+          "url": "https://www.usatoday.com/story/sports/high-school/football/2026/11/09/mark-matthews-commits-to-georgia-five-star-ot-joins-bulldogs-2027-class/92689299007/",
+          "title": "Georgia football lands commitment from five-star OT Mark Matthews",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSa-XnAE7XW10M9hviYilM8Vfo1e3l7iCQliP7w3ZJmNjJ1CmOSupA1pVkhO20"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSekvLH5iBjI9aK1uXqRQjEAwuJFUgFZdK9RRhhyt-h2QSVjXZyjNGJZC_e4eU"
         }
       ]
     },
     {
-      "query": "tqqq",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T15:10:00Z",
+      "query": "voo stock",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-09T15:20:00Z",
       "related_news_urls": [
-        "https://sg.finance.yahoo.com/news/proshares-trust-tqqq-buys-83-110500104.html",
-        "https://finance.yahoo.com/markets/stocks/articles/proshares-trust-tqqq-adds-apple-110521279.html",
-        "https://www.barrons.com/articles/chip-stocks-leveraged-etfs-sandisk-micron-a7c344d8"
+        "https://finance.yahoo.com/markets/stocks/articles/buy-voo-market-rebounds-125000855.html",
+        "https://www.moomoo.com/community/feed/moomoo-ai-8th-post-117576162869254",
+        "https://www.aol.com/articles/2-brilliant-etfs-im-stocking-133500000.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM",
-      "image_credit": "Yahoo Finance Singapore",
-      "news": [
-        {
-          "url": "https://sg.finance.yahoo.com/news/proshares-trust-tqqq-buys-83-110500104.html",
-          "title": "Proshares Trust (TQQQ) Buys $83.0 Million More Apple on Thursday",
-          "publisher": "Yahoo Finance Singapore",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/proshares-trust-tqqq-adds-apple-110521279.html",
-          "title": "Proshares Trust (TQQQ) Adds Apple and Nvidia on Nov. 4",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM"
-        },
-        {
-          "url": "https://www.barrons.com/articles/chip-stocks-leveraged-etfs-sandisk-micron-a7c344d8",
-          "title": "The Chip Stock Bloodbath Is a Case Study in the Risks of Leveraged ETFs",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqiUg-6bUfKIfSLTcNBUUR46-lykatdLwWkRkCKj3DX7KeVybkigjCbsIipLc"
-        }
-      ]
-    },
-    {
-      "query": "josh ford",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T15:10:00Z",
-      "related_news_urls": [
-        "https://www.al.com/alabamafootball/2026/11/josh-ford-set-to-miss-rest-of-alabama-football-season-per-reports.html",
-        "https://247sports.com/college/alabama/article/alabama-tight-end-josh-ford-to-miss-rest-of-season-with-knee-injury-suffered-against-lsu-292441314/",
-        "https://www.si.com/college/alabama/football/alabama-tight-end-expected-to-miss-remainder-of-season-with-knee-injury"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTx4v8HgsMptMkdGUo0fHhMjd8rEtNjUoDd92o45YdJTvLVCWVeRzmGVkGD0-g",
-      "image_credit": "AL.com",
-      "news": [
-        {
-          "url": "https://www.al.com/alabamafootball/2026/11/josh-ford-set-to-miss-rest-of-alabama-football-season-per-reports.html",
-          "title": "Josh Ford set to miss remainder of Alabama football season, per reports",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTx4v8HgsMptMkdGUo0fHhMjd8rEtNjUoDd92o45YdJTvLVCWVeRzmGVkGD0-g"
-        },
-        {
-          "url": "https://247sports.com/college/alabama/article/alabama-tight-end-josh-ford-to-miss-rest-of-season-with-knee-injury-suffered-against-lsu-292441314/",
-          "title": "Alabama tight end Josh Ford to miss rest of season with knee injury suffered against LSU",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThtowwbRChsoAYWvdarNTVWiHh_avJAmYN4Oh7jDKsbNpILWTq7gDu_yREhd0"
-        },
-        {
-          "url": "https://www.si.com/college/alabama/football/alabama-tight-end-expected-to-miss-remainder-of-season-with-knee-injury",
-          "title": "Alabama Tight End Expected to Miss Remainder of Season with Knee Injury",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnKs8Clw6m5hKQgXwGdQ1LGHTuKbHALJrqUXOnnx38C3Dw0qHsWPXHAohmC3U"
-        }
-      ]
-    },
-    {
-      "query": "schd stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T15:10:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/schd-just-hit-record-high-153500360.html",
-        "https://www.fool.com/retirement/2026/11/09/these-6-dividend-etfs-take-different-routes-to-inc/",
-        "https://seekingalpha.com/article/4963516-schd-a-place-to-hide-in-turbulent-times"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQonwapj55458eb-PkTkmFvFpPxFZVnenPM7xTdP3QZrqxl9ajRUI8h6Oxv16Y",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKClJ7n0WfNGv7zHIa5eJq1HdAILfGr2JWJzhJNW7Um2SDGgzk-_sRZxrzWKQ",
       "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/schd-just-hit-record-high-153500360.html",
-          "title": "SCHD Just Hit a Record High Following Midterm Election Results. I'd Still Rather Buy This Dividend King for Passive Income.",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/buy-voo-market-rebounds-125000855.html",
+          "title": "Should You Buy VOO Before the Market Rebounds?",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQonwapj55458eb-PkTkmFvFpPxFZVnenPM7xTdP3QZrqxl9ajRUI8h6Oxv16Y"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKClJ7n0WfNGv7zHIa5eJq1HdAILfGr2JWJzhJNW7Um2SDGgzk-_sRZxrzWKQ"
         },
         {
-          "url": "https://www.fool.com/retirement/2026/11/09/these-6-dividend-etfs-take-different-routes-to-inc/",
-          "title": "These 6 Dividend ETFs Take Different Routes to Income",
-          "publisher": "The Motley Fool",
+          "url": "https://www.moomoo.com/community/feed/moomoo-ai-8th-post-117576162869254",
+          "title": "moomoo AI 8th Post",
+          "publisher": "Moomoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBr3aI-SJ1QuRROZGgc8jfwWhH5G4qNEs4iTHUdxH7DuM2fsBW3Xy0q26kFT0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqhvB-iLLIkp5iScLgBFJH06mNA6kThrsyKkNggL7jP83xh8qwOs3VN9MDNh8"
         },
         {
-          "url": "https://seekingalpha.com/article/4963516-schd-a-place-to-hide-in-turbulent-times",
-          "title": "SCHD: A Place To Hide In Turbulent Times (NYSEARCA:SCHD)",
+          "url": "https://www.aol.com/articles/2-brilliant-etfs-im-stocking-133500000.html",
+          "title": "2 Brilliant ETFs I'm Stocking Up On if a Bear Market Is Coming",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYiCNBPa_y1M_oWstClzMETnB8GO7o8HwAiR1sn1JMUQe5UXJT9lzy1AGN7jU"
+        }
+      ]
+    },
+    {
+      "query": "rklb",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T15:20:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/why-nov-9-could-huge-210500172.html",
+        "https://www.barchart.com/story/news/8701748/dear-rocket-lab-stock-fans-mark-your-calendars-for-november-9",
+        "https://www.tikr.com/blog/rocket-lab-reports-monday-with-neutron-pushed-to-2027-and-its-cfo-selling-17-million-of-stock?"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrk0eB8-W6oQspGePCVx35s4dR1uD2-qkNRFKSREl7BoebDm6qllzUWfDeYac",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-nov-9-could-huge-210500172.html",
+          "title": "Why Nov. 9 Could Be a Huge Day for Rocket Lab Investors",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrk0eB8-W6oQspGePCVx35s4dR1uD2-qkNRFKSREl7BoebDm6qllzUWfDeYac"
+        },
+        {
+          "url": "https://www.barchart.com/story/news/8701748/dear-rocket-lab-stock-fans-mark-your-calendars-for-november-9",
+          "title": "Dear Rocket Lab Stock Fans, Mark Your Calendars for November 9",
+          "publisher": "Barchart.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWXsRHqlA2Ctrvmyx30w6zjqKZta83j9FJb_Z1OokxdlbufziODMP3iwvRI4s"
+        },
+        {
+          "url": "https://www.tikr.com/blog/rocket-lab-reports-monday-with-neutron-pushed-to-2027-and-its-cfo-selling-17-million-of-stock?",
+          "title": "Rocket Lab Reports Monday With Neutron Pushed to 2027 and Its CFO Selling $17 Million of Stock",
+          "publisher": "TIKR.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxzx9iAn34U_aLSnE4sbCh5hG4o0p5N7RmLgsBR0pB2Ol4ZNQ4ikCD1g-gpNo"
+        }
+      ]
+    },
+    {
+      "query": "oil price today",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T15:20:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/news/oil-falls-open-trump-says-235002807.html",
+        "https://www.wsj.com/finance/commodities-futures/oil-prices-fall-staying-below-100-as-trump-plays-down-new-iran-strikes-27dc3911",
+        "https://www.bloomberg.com/news/articles/2026-11-09/oil-falls-on-unconfirmed-report-that-iran-eased-hormuz-demands"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmGWO_vTyYDobmpdJ-DgNR4uSl_KvZpIYWKjeHUwP2pTVDG6D6WLnJZWAlv3I",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/news/oil-falls-open-trump-says-235002807.html",
+          "title": "Oil falls as Trump signals restraint on Iran despite fresh shipping attacks",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmGWO_vTyYDobmpdJ-DgNR4uSl_KvZpIYWKjeHUwP2pTVDG6D6WLnJZWAlv3I"
+        },
+        {
+          "url": "https://www.wsj.com/finance/commodities-futures/oil-prices-fall-staying-below-100-as-trump-plays-down-new-iran-strikes-27dc3911",
+          "title": "Oil Slides More Than 3% as Trump Downplays Prospect of New Iran Strikes",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1Hfpx1zmdyS3XejjFedJsqT_93gLIqUQ5amZesD__Jx-kBrlOlkbFM9hmq8Y"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-09/oil-falls-on-unconfirmed-report-that-iran-eased-hormuz-demands",
+          "title": "Oil Falls on Unconfirmed Report That Iran Eased Hormuz Demands",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7uh4LdNYnd4m8VbOABf4-5foGsurIjJqwKlD7XHNCyoCAJxBBq7LfS-MidVw"
+        }
+      ]
+    },
+    {
+      "query": "djia today",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T15:20:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/07/investing/ai-nerves-diversify-portfolio",
+        "https://finance.yahoo.com/markets/stocks/articles/tech-set-still-sway-us-110503862.html",
+        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-09-2026/card/-flash-heard-why-nvidia-s-troubles-don-t-spell-doom-for-the-ai-trade-4Rl15PEuphjDelK9S9gz"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsPE5u9_RBuPcg6OND-XzX_cRjJorFyDi8rWi1onIifbjernObLxYxf4JwTiU",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/07/investing/ai-nerves-diversify-portfolio",
+          "title": "How this key lesson can protect your 401(k) savings from deep AI stock losses",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsPE5u9_RBuPcg6OND-XzX_cRjJorFyDi8rWi1onIifbjernObLxYxf4JwTiU"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/tech-set-still-sway-us-110503862.html",
+          "title": "Tech set to still sway US stock market's course despite AI-driven swoon",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIehujQ9-QKtk2ln-1A9CxfY5oowe0ZhT0aE-rP1awKL_k1X6nIlhm3ZTB8_s"
+        },
+        {
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-09-2026/card/-flash-heard-why-nvidia-s-troubles-don-t-spell-doom-for-the-ai-trade-4Rl15PEuphjDelK9S9gz",
+          "title": "⚡Flash Heard: Why Nvidia’s Troubles Don’t Spell Doom for the AI Trade",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5OjCOOJ_DxUoogygATHkAw-5VUrtDxyHga_zjG2jhh4EIVnEluaAmmO1gX4"
+        }
+      ]
+    },
+    {
+      "query": "oklo stock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T15:20:00Z",
+      "related_news_urls": [
+        "https://mlq.ai/news/oklo-jumps-23-after-q3-results-as-idaho-reactor-moves-into-structural-construction/",
+        "https://seekingalpha.com/news/4668778-nuclear-stocks-surge-as-oklo-results-spark-rally-for-reactors-uranium-suppliers",
+        "https://finance.yahoo.com/markets/stocks/articles/oklo-3-key-takeaways-long-012705786.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnMT45KUr0E21oKpkgiNUbHDzIbErT7PyrBeXCjZPk2S1HZzP20oVbw0Xiefg",
+      "image_credit": "MLQ.ai",
+      "news": [
+        {
+          "url": "https://mlq.ai/news/oklo-jumps-23-after-q3-results-as-idaho-reactor-moves-into-structural-construction/",
+          "title": "Oklo jumps 23% after Q3 results as Idaho reactor moves into structural construction",
+          "publisher": "MLQ.ai",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnMT45KUr0E21oKpkgiNUbHDzIbErT7PyrBeXCjZPk2S1HZzP20oVbw0Xiefg"
+        },
+        {
+          "url": "https://seekingalpha.com/news/4668778-nuclear-stocks-surge-as-oklo-results-spark-rally-for-reactors-uranium-suppliers",
+          "title": "Nuclear stocks surge as Oklo results spark rally for reactors, uranium suppliers (OKLO:NYSE)",
           "publisher": "Seeking Alpha",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkIg-eGkoftw7wa8NDWGGXnjganmonGL-7oe_4llwKzaR3UFf-3Yxc6oLE_OQ"
-        }
-      ]
-    },
-    {
-      "query": "nike stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T15:10:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/really-behind-nike-stocks-run-014223058.html",
-        "https://simplywall.st/stocks/us/consumer-durables/nyse-nke/nike/news/earnings-pressure-might-change-the-case-for-investing-in-nik",
-        "https://www.fool.com/investing/2026/11/03/what-would-warren-buffett-do-with-nike-stock-down/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6kfilIIzw-GCcZrbkwnQSHUPBYJ4L4y98FluMyNiv38kv7hqG_H7QRJ8MFuI",
-      "image_credit": "Yahoo Finance",
-      "news": [
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwZK5wGOiq-gZzYfn2EDfu7BaHQrN1yFN5VFOtFN-NvGix43Ht_dLzUZtOOXk"
+        },
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/really-behind-nike-stocks-run-014223058.html",
-          "title": "What Is Really Behind Nike Stock's Run?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/oklo-3-key-takeaways-long-012705786.html",
+          "title": "Oklo: 3 Key Takeaways for Long-Term Investors",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6kfilIIzw-GCcZrbkwnQSHUPBYJ4L4y98FluMyNiv38kv7hqG_H7QRJ8MFuI"
-        },
-        {
-          "url": "https://simplywall.st/stocks/us/consumer-durables/nyse-nke/nike/news/earnings-pressure-might-change-the-case-for-investing-in-nik",
-          "title": "Earnings Pressure Might Change The Case For Investing In Nike (NKE)",
-          "publisher": "Simply Wall St",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeygjbeVoFK1wGqyVhnVlUDoiOW6PLZiPxlyqvitdFGTGUx0NTAz6snfyVyCM"
-        },
-        {
-          "url": "https://www.fool.com/investing/2026/11/03/what-would-warren-buffett-do-with-nike-stock-down/",
-          "title": "What Would Warren Buffett Do With Nike Stock Down 38% in 2026?",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgM9nNtEZo-9XUOmcsm6hmIxXH5_rLYx5LMkYQexSn8NN8BBr4rxpC2Sg-Xgw"
-        }
-      ]
-    },
-    {
-      "query": "unh stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T15:10:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/goldman-sachs-gs-riding-busy-173646707.html",
-        "https://finance.yahoo.com/markets/stocks/articles/why-bank-america-td-cowen-184337011.html",
-        "https://www.insidermonkey.com/news/sell-alert-10-high-profile-stocks-just-dumped-by-top-analysts-1862938/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPDV9b_pu4uJljgGtwc4-eYV0ktNwoSl_r9F2f_0At-0yyaVuhi0kKHm3jaxk",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/goldman-sachs-gs-riding-busy-173646707.html",
-          "title": "Goldman Sachs (GS) Is Riding a Busy Capital Markets Cycle With Record Quarterly Advisory Revenue",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPDV9b_pu4uJljgGtwc4-eYV0ktNwoSl_r9F2f_0At-0yyaVuhi0kKHm3jaxk"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-bank-america-td-cowen-184337011.html",
-          "title": "Here’s Why Bank of America and TD Cowen Backed Away From Marvell (MRVL)",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQh-phuVtaJsiJhpO6dp8Uh9aMK1gXpXTAv9S7z2hTN6dvnst5unwP9iPXvzcM"
-        },
-        {
-          "url": "https://www.insidermonkey.com/news/sell-alert-10-high-profile-stocks-just-dumped-by-top-analysts-1862938/",
-          "title": "Sell Alert: 10 High-Profile Stocks Just Dumped by Top Analysts",
-          "publisher": "Insider Monkey",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFJ5gMGPzlKe2u2IjYrtyF6hSV516Lot607r7xJ5hVwkerwVgvALcxbzoj-TA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKg5pCw0YCRzx_vpurevyts2HgNx_AHW93-wkZxIC6Xp1-4fZ34KTERWD5KZY"
         }
       ]
     }
