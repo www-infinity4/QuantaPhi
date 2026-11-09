@@ -947,3 +947,34 @@ test('failed optional color inference cannot claim work or disable the existing 
  assert.equal(body.authorizedColorOperationsPerformed,false);
  assert.equal(calls,2);
 });
+
+
+test('signed runner-supplied color findings are reused without duplicate model inference',async()=>{
+ const job={id:'TASK-6',instructions:'Research the approved dataset and import verified source records',acceptance:['Review before any write']};
+ const lease={key:'key',leaseId:'lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,
+  repository:'www-infinity4/QuantaPhi',jobId:'TASK-6',ticketId:'TICKET',job};
+ const memory=new Map([['key',lease]]);
+ const findings={red:{finding:'Pinned source',nextAction:'Verify',blockers:[],requestedAppendages:[]},
+  orange:{finding:'Destination chosen',nextAction:'Apply source policy',blockers:[],requestedAppendages:[]}};
+ let aiCalls=0;
+ const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{
+  WRITER_AI:{run:async(model,options)=>{
+   aiCalls++;
+   assert.doesNotMatch(options.messages[0].content,/the (red|orange|blue) color role/i);
+   const payload=JSON.parse(options.messages[1].content);
+   assert.deepEqual(payload.evidence.colorFindings,findings);
+   assert.deepEqual(payload.evidence.roleHandoffs,[]);
+   assert.equal(payload.evidence.roleHandoffStatus,'runner_route_supplied');
+   return {response:JSON.stringify({summary:'Use runner source and existing scope',files:[],subtasks:[],blockers:[]})};
+  }}
+ });
+ const res=await clock.runner(new Request('https://clock/runner/plan',{method:'POST',
+  body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook',key:'key',leaseId:'lease',
+   evidence:{colorFindings:findings,runtime:{baseSha:'a'.repeat(40)}}})}));
+ assert.equal(res.status,200);
+ const result=await res.json();
+ assert.equal(result.roleHandoffStatus,'runner_route_supplied');
+ assert.equal(result.authorizedColorOperationsPerformed,false);
+ assert.deepEqual(result.roleHandoffs,[]);
+ assert.equal(aiCalls,1);
+});
