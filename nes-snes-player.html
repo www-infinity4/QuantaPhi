@@ -49,7 +49,7 @@ const input=document.getElementById('romFile');
 const play=document.getElementById('play');
 const reset=document.getElementById('reset');
 const status=document.getElementById('status');
-let currentBlob='',started=false;
+let currentBlob='',started=false,pending=false;
 const say=text=>{status.textContent=text;};
 const extOf=name=>String(name||'').toLowerCase().match(/\.(nes|sfc|smc)$/)?.[1]||'';
 reset.addEventListener('click',()=>location.reload());
@@ -60,22 +60,24 @@ input.addEventListener('change',()=>{
  else say('Select a .nes, .sfc or .smc game file.');
 });
 play.addEventListener('click',async()=>{
- if(started)return;
+ if(started||pending)return;
  const file=input.files?.[0],ext=extOf(file?.name);
  if(!file||!ext){say('Choose a compatible .nes, .sfc or .smc file first.');return;}
  if(!file.size||file.size>32*1024*1024){say('File must be between 1 byte and 32 MB.');return;}
  const expected=ext==='nes'?'nes':'snes';
  if(!allowed.has(system.value)||system.value!==expected){say('The file extension does not match the selected system. Choose '+expected.toUpperCase()+'.');return;}
+ // Lock before asynchronous file-header inspection to prevent a second Play.
+ pending=true;play.disabled=true;
  if(ext==='nes'){
   try{
    const bytes=new Uint8Array(await file.slice(0,4).arrayBuffer());
    if(bytes[0]!==0x4e||bytes[1]!==0x45||bytes[2]!==0x53||bytes[3]!==0x1a){
-    say('Not a supported NES ROM header. Choose an authorized iNES file.');return;
+    say('Not a supported NES ROM header. Choose an authorized iNES file.');pending=false;play.disabled=false;return;
    }
-  }catch{say('Could not read the selected file on this device.');return;}
+  }catch{say('Could not read the selected file on this device.');pending=false;play.disabled=false;return;}
  }
- started=true;
- play.disabled=true;input.disabled=true;system.disabled=true;
+ started=true;pending=false;
+ input.disabled=true;system.disabled=true;
  currentBlob=URL.createObjectURL(file);
  window.EJS_player='#game';
  window.EJS_core=expected;
