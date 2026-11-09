@@ -3,12 +3,292 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T23:01:25.780428Z",
+  "checked_at": "2026-11-09T23:31:30.031229Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "cavaliers vs hornets",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-09T23:00:00Z",
+      "related_news_urls": [
+        "https://establishtherun.com/nba-matchups-november-9-2/",
+        "https://www.cleveland.com/cavs/2026/11/cavs-at-hornets-preview-odds-injury-report-tv.html",
+        "https://www.si.com/nba/hornets/onsi/score-predictions-for-tonight-s-matchup-between-the-cleveland-cavaliers-and-charlotte-hornets"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgS3yIQdty91CzYUV87NhpjDPhRqzjCfSRZ0qdNjZL9tAjxx08TaYUqM0TI0E",
+      "image_credit": "Establish The Run",
+      "news": [
+        {
+          "url": "https://establishtherun.com/nba-matchups-november-9-2/",
+          "title": "NBA Matchups: November 9",
+          "publisher": "Establish The Run",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgS3yIQdty91CzYUV87NhpjDPhRqzjCfSRZ0qdNjZL9tAjxx08TaYUqM0TI0E"
+        },
+        {
+          "url": "https://www.cleveland.com/cavs/2026/11/cavs-at-hornets-preview-odds-injury-report-tv.html",
+          "title": "Cavs at Hornets: preview, odds, injury report, TV",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTu6ec_HecsiTtDe_yM38JOUqlO7stxt-sf1RgJnb27w1B6ndIyyOLsthxSvhc"
+        },
+        {
+          "url": "https://www.si.com/nba/hornets/onsi/score-predictions-for-tonight-s-matchup-between-the-cleveland-cavaliers-and-charlotte-hornets",
+          "title": "Score Predictions for Tonight's Matchup Between the Cleveland Cavaliers and Charlotte Hornets",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCiWtriJxoim2fGJx3SQJ6-au1OnjEfySr6ku8mvtGXofqMy2w-dQNhksiu9k"
+        }
+      ]
+    },
+    {
+      "query": "wizards vs pistons",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-09T23:00:00Z",
+      "related_news_urls": [
+        "https://www.bulletsforever.com/washington-wizards-preview/73948/washington-wizards-detroit-pistons-nba-game-preview",
+        "https://www.covers.com/nba/wizards-vs-pistons-prediction-picks-odds-nov-9-2026",
+        "https://www.si.com/nba/pistons/onsi/pistons-vs-wizards-can-detroit-end-two-game-skid-preview-and-a-prediction-01m70tatz80n"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtc73nn45JhG_E8VwEcLnr6wDYBTFwW7U9bIHtg-FhX7-e9xFwkS9DtDUZa90",
+      "image_credit": "Bullets Forever",
+      "news": [
+        {
+          "url": "https://www.bulletsforever.com/washington-wizards-preview/73948/washington-wizards-detroit-pistons-nba-game-preview",
+          "title": "Preview: The Wizards play the Pistons on Monday night",
+          "publisher": "Bullets Forever",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtc73nn45JhG_E8VwEcLnr6wDYBTFwW7U9bIHtg-FhX7-e9xFwkS9DtDUZa90"
+        },
+        {
+          "url": "https://www.covers.com/nba/wizards-vs-pistons-prediction-picks-odds-nov-9-2026",
+          "title": "Wizards vs Pistons Prediction, Top Picks & Best Bet for Tonight's NBA Game",
+          "publisher": "Covers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReURU2S2CzrOrAdJAhoxFmCzxYyL9ayLgUY3AguH1BU-FJwICbcDOpoOgjVLM"
+        },
+        {
+          "url": "https://www.si.com/nba/pistons/onsi/pistons-vs-wizards-can-detroit-end-two-game-skid-preview-and-a-prediction-01m70tatz80n",
+          "title": "Pistons vs. Wizards: Can Detroit End Two-Game Skid, Preview and a Prediction",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSAJ9aShHMx3fUpchKE19X0cIncsbuJ0nWlIl14u2NuVOYVTF-sRfRAujNvKo"
+        }
+      ]
+    },
+    {
+      "query": "jordon hudson",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-09T23:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50436013/belichick-ex-girlfriend-hudson-files-suit-ring-cam-video",
+        "https://www.foxnews.com/outkick-sports/jordon-hudson-files-lawsuit-damages-shirtless-bill-belichick-video-leak",
+        "https://www.nbcnews.com/news/us-news/jordon-hudson-sues-airbnb-hosts-blaming-shirtless-bill-belichick-video-rcna608299"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQb63r-Z1zXsZIGwYkTHCZaWC3eSDj4a_VPUYT0a7FnxoivdOAiSOLbLzsfxlw",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50436013/belichick-ex-girlfriend-hudson-files-suit-ring-cam-video",
+          "title": "Bill Belichick's ex-girlfriend Jordon Hudson sues over 2023 ring cam video",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQb63r-Z1zXsZIGwYkTHCZaWC3eSDj4a_VPUYT0a7FnxoivdOAiSOLbLzsfxlw"
+        },
+        {
+          "url": "https://www.foxnews.com/outkick-sports/jordon-hudson-files-lawsuit-damages-shirtless-bill-belichick-video-leak",
+          "title": "Jordon Hudson reportedly files lawsuit seeking damages over shirtless Bill Belichick video leak",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0rg6ADkIxmXO8bhYv8stZjzSiKbYRqgylLCf3w9MHjDNoxYIh8tONAsUUFDc"
+        },
+        {
+          "url": "https://www.nbcnews.com/news/us-news/jordon-hudson-sues-airbnb-hosts-blaming-shirtless-bill-belichick-video-rcna608299",
+          "title": "Jordon Hudson sues Airbnb hosts, blaming them for shirtless Bill Belichick video",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjT4D0mOpM4nsXrhPc4b13BelPLQmgyc5JsdvyKtR7eqs8GPgbeqN7S0O3R4Y"
+        }
+      ]
+    },
+    {
+      "query": "marshall vs ohio state",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T23:00:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/ohio-state/longformarticle/ohio-state-buckeyes-mens-basketball-preview-vs-marshall-thundering-herd-292432334/",
+        "https://sports.yahoo.com/articles/watch-ohio-state-men-basketball-203100967.html",
+        "https://www.cbssports.com/betting/news/ohio-state-marshall-prediction-odds-time-2026-college-basketball-picks-monday-november-9/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZjEuAV1XUh8E9NQBvOPpYdIF43U9VT7OZ6kasiDLe-FIisvnAdGSSbx02maw",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/ohio-state/longformarticle/ohio-state-buckeyes-mens-basketball-preview-vs-marshall-thundering-herd-292432334/",
+          "title": "What To Watch: Buckeyes look for more consistent showing vs. Marshall",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZjEuAV1XUh8E9NQBvOPpYdIF43U9VT7OZ6kasiDLe-FIisvnAdGSSbx02maw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/watch-ohio-state-men-basketball-203100967.html",
+          "title": "Here’s how to watch Ohio State men’s basketball vs. Marshall",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvtV33kn0PBdGsBiHZvezenr-9Lkh2RDwcadRZDsA0HIQb50JTQLGGqIQ4i2Q"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/ohio-state-marshall-prediction-odds-time-2026-college-basketball-picks-monday-november-9/",
+          "title": "Ohio State vs. Marshall prediction, odds, time: 2026 college basketball picks for Nov. 9 from proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTptGzqj0LixAjxeC-PYCaC5iv60J9YY46GuyiO7eznvgNWUUYHzfCCL-koCzE"
+        }
+      ]
+    },
+    {
+      "query": "carlos jimenez ice lawsuit 25m",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T23:00:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/us-news/2026/nov/09/citizen-shot-ice-officer-lawsuit-california",
+        "https://www.newsweek.com/us-citizen-shot-ice-agent-files-25m-lawsuit-12686101",
+        "https://www.latimes.com/california/story/2026-11-05/assault-charge-dropped-against-citizen-ice-allegedly-shot-from-behind"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlZtj2i4DvnnCL6_dx0vwTaCxMc4hW6cSvTVx0bywZhkrtcc9vj6Zb-WJQfL4",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/us-news/2026/nov/09/citizen-shot-ice-officer-lawsuit-california",
+          "title": "US citizen shot by ICE officer near children’s bus stop sues government for $25m",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlZtj2i4DvnnCL6_dx0vwTaCxMc4hW6cSvTVx0bywZhkrtcc9vj6Zb-WJQfL4"
+        },
+        {
+          "url": "https://www.newsweek.com/us-citizen-shot-ice-agent-files-25m-lawsuit-12686101",
+          "title": "US Citizen Shot by ICE Agent Files $25M Lawsuit",
+          "publisher": "Newsweek",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQI9wYzrJaGXTHsRcH_RVLktMU-qmkgty4V0lrMHVSz1b5RaW_zrHkWaydfwMI"
+        },
+        {
+          "url": "https://www.latimes.com/california/story/2026-11-05/assault-charge-dropped-against-citizen-ice-allegedly-shot-from-behind",
+          "title": "Assault charge dropped against U.S. citizen ICE allegedly shot from behind; lawyers say this isn't over",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQh-KSWEa40NW8DsRw_CpeKaHbGzsNj_zRbD5Yo-LRZSV7spHeQV6711s2g6DA"
+        }
+      ]
+    },
+    {
+      "query": "aaron jones",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T23:00:00Z",
+      "related_news_urls": [
+        "https://www.elpasotimes.com/story/sports/football/nfl/2026/11/09/aaron-jones-on-gma-monday-night-football-tonight-buffalo-bills-vs-minnesota-vikings/92696819007/",
+        "https://www.steelers.com/news/kolb-is-the-steelers-salute-to-service-nominee-x6981",
+        "https://www.bengals.com/news/the-conversation-landon-robinson-rookie-salute-to-service-nominee-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6QufL3CdKuwJE0ok10vUczbjzjc_gGzUd--rIFC4K140IjNZ_CYGOe2TJ0sU",
+      "image_credit": "El Paso Times",
+      "news": [
+        {
+          "url": "https://www.elpasotimes.com/story/sports/football/nfl/2026/11/09/aaron-jones-on-gma-monday-night-football-tonight-buffalo-bills-vs-minnesota-vikings/92696819007/",
+          "title": "'It's showtime.' El Paso's Aaron Jones and Vikings vs. Bills on MNF",
+          "publisher": "El Paso Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6QufL3CdKuwJE0ok10vUczbjzjc_gGzUd--rIFC4K140IjNZ_CYGOe2TJ0sU"
+        },
+        {
+          "url": "https://www.steelers.com/news/kolb-is-the-steelers-salute-to-service-nominee-x6981",
+          "title": "Kolb is the Steelers Salute to Service nominee",
+          "publisher": "Steelers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSd-bU-REx8wdB020dn7rp_FhKjNid4h8xp_KHk8__s6RQhBGzOwY7Z2AMvSZg"
+        },
+        {
+          "url": "https://www.bengals.com/news/the-conversation-landon-robinson-rookie-salute-to-service-nominee-2026",
+          "title": "The Conversation | A Salute To Landon Robinson: 'Service Is The Ultimate Form Of Love'",
+          "publisher": "Cincinnati Bengals",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5iUQvbW1lF1i-KPGW9E5lQjKsYWuUZCbkfrsriqnduMvmZL7oBhDF8SIx7pQ"
+        }
+      ]
+    },
+    {
+      "query": "carson beck",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-09T22:50:00Z",
+      "related_news_urls": [
+        "https://arizonasports.com/nfl/arizona-cardinals/pros-and-cons-should-the-cardinals-just-go-to-carson-beck-now",
+        "https://www.spokesman.com/stories/2026/nov/08/gardner-minshew-famed-wsu-qb-fired-up-for-pnw-retu/",
+        "https://www.seattletimes.com/sports/seahawks/cardinals-gardner-minshew-eager-for-northwest-return-to-face-seahawks/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReA5XOCJ30us4uGntx_xhYGvOUahi2lMpzFaW6YXwPGnOwPkjxQwVlu8DaHlc",
+      "image_credit": "Arizona Sports",
+      "news": [
+        {
+          "url": "https://arizonasports.com/nfl/arizona-cardinals/pros-and-cons-should-the-cardinals-just-go-to-carson-beck-now",
+          "title": "Pros and cons: Should the Cardinals just go to Carson Beck now?",
+          "publisher": "Arizona Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReA5XOCJ30us4uGntx_xhYGvOUahi2lMpzFaW6YXwPGnOwPkjxQwVlu8DaHlc"
+        },
+        {
+          "url": "https://www.spokesman.com/stories/2026/nov/08/gardner-minshew-famed-wsu-qb-fired-up-for-pnw-retu/",
+          "title": "Gardner Minshew, famed WSU QB, ‘fired up’ for PNW return to face Seahawks",
+          "publisher": "The Spokesman-Review",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWPKXCWWIN9CqcHPoDFFWmEVYyVHKVRpd5on9MWVLxGhCyFub_olmhlSEE3iE"
+        },
+        {
+          "url": "https://www.seattletimes.com/sports/seahawks/cardinals-gardner-minshew-eager-for-northwest-return-to-face-seahawks/",
+          "title": "WSU great 'fired up' for PNW return to face Seahawks",
+          "publisher": "The Seattle Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-N8Nojytq98qx_pe__jlFhoELom2tQqjWRwA_aX4G-lea1elMn95N8b6SitQ"
+        }
+      ]
+    },
+    {
+      "query": "indiana basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T22:50:00Z",
+      "related_news_urls": [
+        "https://www.foxsports.com/stories/mens-college-basketball/how-watch-syracuse-vs-indiana-tv-channel-live-stream-time-nov-9-2026",
+        "https://dailyorange.com/2026/11/syracuse-mens-basketball-indiana-beat-writer-predictions/",
+        "https://www.syracuse.com/tv/2026/11/where-to-watch-syracuse-vs-indiana-basketball-for-free-today.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPaKUy3UUYdO33_1aXG9iwmMUK-CQ7zbzTlRYNO_QtBt5PpCqQXLzd6qaieuI",
+      "image_credit": "FOX Sports",
+      "news": [
+        {
+          "url": "https://www.foxsports.com/stories/mens-college-basketball/how-watch-syracuse-vs-indiana-tv-channel-live-stream-time-nov-9-2026",
+          "title": "How to Watch Syracuse vs. Indiana: TV Channel, Live Stream, Time",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPaKUy3UUYdO33_1aXG9iwmMUK-CQ7zbzTlRYNO_QtBt5PpCqQXLzd6qaieuI"
+        },
+        {
+          "url": "https://dailyorange.com/2026/11/syracuse-mens-basketball-indiana-beat-writer-predictions/",
+          "title": "Beat writers split on whether Syracuse can win 1st Quad 1 game vs. Indiana",
+          "publisher": "The Daily Orange",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPBOHOxKdDn7zJR7vCSpLdjp2mf316T95417kfmMF7XSIwF6HGVqa1J-ZEKOY"
+        },
+        {
+          "url": "https://www.syracuse.com/tv/2026/11/where-to-watch-syracuse-vs-indiana-basketball-for-free-today.html",
+          "title": "Where to watch Syracuse vs. Indiana basketball for free today",
+          "publisher": "Syracuse.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQee06UibIViVGdf2uOo3G_7aBG7PQXmj0mySxWLV7BeRA1lCVUIp4LOLOBrlE"
+        }
+      ]
+    },
+    {
       "query": "lakers vs hawks",
-      "approx_searches": "200+",
+      "approx_searches": "10000+",
       "published_at": "2026-11-09T22:40:00Z",
       "related_news_urls": [
         "https://www.silverscreenandroll.com/lakers-game-previews/128614/lakers-vs-hawks-discussion-injury-report-how-to-watch-tv-stream-start-time-luka-doncic-cj-mccolum",
@@ -42,317 +322,37 @@
       ]
     },
     {
-      "query": "2027 nfl mock draft",
-      "approx_searches": "500+",
+      "query": "jonathan taylor nfl trade rumors",
+      "approx_searches": "5000+",
       "published_at": "2026-11-09T22:40:00Z",
       "related_news_urls": [
-        "https://www.si.com/nfl/draft/onsi/news/2027-nfl-mock-draft-first-round-projection-looks-completely-different",
-        "https://www.foxsports.com/stories/nfl/2027-nfl-mock-draft-drew-mestemaker-first-6-qbs-selected-first-round",
-        "https://www.sbnation.com/nfl/1135599/2027-draft-chargers-titans-dolphins-jets"
+        "https://www.espn.com/nfl/story/_/id/50426855/john-harbaugh-says-giants-did-pull-offer-jonathan-taylor",
+        "https://www.foxnews.com/video/6408153055112",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/espn-could-be-big-11th-hour-trade-offer-for-jt"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRETsO4Q77dP4uwqk1w0Kk8jrZKqZWPKDeFF2kRv2N0e9Gyt7sJw1esYbQ2KVk",
-      "image_credit": "Sports Illustrated",
-      "news": [
-        {
-          "url": "https://www.si.com/nfl/draft/onsi/news/2027-nfl-mock-draft-first-round-projection-looks-completely-different",
-          "title": "2027 NFL Mock Draft: First-Round Projection Looks Completely Different",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRETsO4Q77dP4uwqk1w0Kk8jrZKqZWPKDeFF2kRv2N0e9Gyt7sJw1esYbQ2KVk"
-        },
-        {
-          "url": "https://www.foxsports.com/stories/nfl/2027-nfl-mock-draft-drew-mestemaker-first-6-qbs-selected-first-round",
-          "title": "2027 NFL Mock Draft: Drew Mestemaker First Of 6 QBs Selected In First Round",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBvyMb43dvMvLmSCQYMZ5oCLS2vnX6Z-q5USyX3c5BJaD_p1IyMYMTdnV-Cdw"
-        },
-        {
-          "url": "https://www.sbnation.com/nfl/1135599/2027-draft-chargers-titans-dolphins-jets",
-          "title": "Chargers remain in control for the first pick in 2027 NFL Draft",
-          "publisher": "SB Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpbQTExu5UAhFf_vFbo0extU9EcHh5xBvKd9_QCTCDh4tFSnBPHvZYBcW7Kjw"
-        }
-      ]
-    },
-    {
-      "query": "michael carrick",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T22:30:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7768165/2026/11/09/michael-carrick-sacked-manchester-united/",
-        "https://www.espn.com/soccer/story/_/id/50430657/transfer-rumors-news-man-united-hire-usmnt-pochettino-replace-carrick",
-        "https://www.theguardian.com/football/2026/nov/09/manchester-united-michael-carrick-jason-wilcox-review-sacking"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIIc4G5fgXoPZaSID6hCVjJZsR68CVt51zhuVm5RulqX1m86dIKLU6v6TddHQ",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7768165/2026/11/09/michael-carrick-sacked-manchester-united/",
-          "title": "Manchester United expected to sack Michael Carrick as head coach - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIIc4G5fgXoPZaSID6hCVjJZsR68CVt51zhuVm5RulqX1m86dIKLU6v6TddHQ"
-        },
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50430657/transfer-rumors-news-man-united-hire-usmnt-pochettino-replace-carrick",
-          "title": "Transfer rumors, news: Man United to hire USMNT's Pochettino to replace Carrick?",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6CZFfj1qeDvQFhE40Ic-5UDYPc4uNbONw3-RbqHJ7C4dIiyPd80qksk6AirY"
-        },
-        {
-          "url": "https://www.theguardian.com/football/2026/nov/09/manchester-united-michael-carrick-jason-wilcox-review-sacking",
-          "title": "Michael Carrick facing Manchester United axe amid review by Jason Wilcox",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSG1k-z-h7hXChHhgBf5xpsX0mC_SpgHKZx-E59rdeKYlZ-XmQJUAJAEubFYc"
-        }
-      ]
-    },
-    {
-      "query": "sony playstation handheld",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-09T22:30:00Z",
-      "related_news_urls": [
-        "https://www.theverge.com/news/1029822/sony-playstation-portal-japan-model-additional-storage",
-        "https://kotaku.com/sony-playstation-portal-japan-only-internal-storage-ps5-streaming-2000754915",
-        "https://www.ign.com/articles/sony-launches-new-ps-portal-model-in-japan-with-internal-storage-for-future-functionality-changes-official-name"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLaSJVcoXVKSeAjjdL8RT6yLpX02pmiYBVgmZHy42D9ltGzZCO_-7TMpXi7Jg",
-      "image_credit": "The Verge",
-      "news": [
-        {
-          "url": "https://www.theverge.com/news/1029822/sony-playstation-portal-japan-model-additional-storage",
-          "title": "Sony’s new PlayStation Portal handheld includes ‘additional’ internal storage",
-          "publisher": "The Verge",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLaSJVcoXVKSeAjjdL8RT6yLpX02pmiYBVgmZHy42D9ltGzZCO_-7TMpXi7Jg"
-        },
-        {
-          "url": "https://kotaku.com/sony-playstation-portal-japan-only-internal-storage-ps5-streaming-2000754915",
-          "title": "Sony Announces New Japan-Only PlayStation Portal With Internal Storage",
-          "publisher": "Kotaku",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzNnCPXRgB6gRgDXsCU00gbG5-xCsxeKxNJdQHW5VLH80de1zPMmJK5FJNUAM"
-        },
-        {
-          "url": "https://www.ign.com/articles/sony-launches-new-ps-portal-model-in-japan-with-internal-storage-for-future-functionality-changes-official-name",
-          "title": "Sony Launches New PS Portal Model in Japan With Internal Storage for 'Future Functionality,' Changes Official Name",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-NEhbxfNXSstvTNdPkG_zFX3dJTnynU15bvctPf6lxMDPefGieLas32YLFJM"
-        }
-      ]
-    },
-    {
-      "query": "rick hendrick denny hamlin chevrolet dispute",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T22:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/rick-hendrick-publicly-trashes-denny-165255933.html",
-        "https://www.nascar.com/news-media/2026/11/06/craftsman-truck-series-clinched-2026-title-homestead-miami/",
-        "https://www.jayski.com/2026/11/06/truck-series-championship-race-post-race-inspection-report/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzFar-u2FwloMRro0KxY1SOyVtLWE3kBLNVJhYFlqmz0F4zrWKG9_XA1jZ8rw",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/rick-hendrick-publicly-trashes-denny-165255933.html",
-          "title": "Rick Hendrick Publicly Trashes Denny Hamlin’s Chevrolet - HMS Favoritism Claims",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzFar-u2FwloMRro0KxY1SOyVtLWE3kBLNVJhYFlqmz0F4zrWKG9_XA1jZ8rw"
-        },
-        {
-          "url": "https://www.nascar.com/news-media/2026/11/06/craftsman-truck-series-clinched-2026-title-homestead-miami/",
-          "title": "Honeycutt storms through Chase to clinch first Truck Series title",
-          "publisher": "NASCAR.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRALmvvNmRfbuYCAuxLR6EPG3xzByuWc-Q8I2rpAx5xdpsunv_zwxvZUMFxrJg"
-        },
-        {
-          "url": "https://www.jayski.com/2026/11/06/truck-series-championship-race-post-race-inspection-report/",
-          "title": "Truck Series Championship Race post-race inspection report",
-          "publisher": "Jayski",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEIXu6iFNINeg21BYDsyIzCU50g9Dw2ew-Z_oHNrlXxVSQCwhX2Wlie0DCpuc"
-        }
-      ]
-    },
-    {
-      "query": "elina svitolina",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T22:30:00Z",
-      "related_news_urls": [
-        "https://athlonsports.com/tennis/how-to-watch-mirra-andreeva-vs-elina-svitolina-wta-finals-start-time-live-streaming",
-        "https://www.sportytrader.com/us/picks/mirra-andreeva-elina-svitolina-386426/",
-        "https://tennisuptodate.com/wta/live-wta-finals-mirra-andreeva-to-open-campaign-against-elina-svitolina"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzlDk5QdbjVWrt-oVEdrF2g2j1uq3Uuzrb5h7xkafx0Wd0tVCOu7hIkb2XA4s",
-      "image_credit": "Athlon Sports",
-      "news": [
-        {
-          "url": "https://athlonsports.com/tennis/how-to-watch-mirra-andreeva-vs-elina-svitolina-wta-finals-start-time-live-streaming",
-          "title": "What Time Does Mirra Andreeva vs Elina Svitolina WTA Finals Match Start?",
-          "publisher": "Athlon Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzlDk5QdbjVWrt-oVEdrF2g2j1uq3Uuzrb5h7xkafx0Wd0tVCOu7hIkb2XA4s"
-        },
-        {
-          "url": "https://www.sportytrader.com/us/picks/mirra-andreeva-elina-svitolina-386426/",
-          "title": "Mirra Andreeva vs Elina Svitolina Prediction & Picks - WTA Finals",
-          "publisher": "SportyTrader",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL3tPwfHiTB-9VFOCjHqpgyyON4jfUVFv2tUdhjH5hTKDLUV7lnKhJqqdwWE8"
-        },
-        {
-          "url": "https://tennisuptodate.com/wta/live-wta-finals-mirra-andreeva-to-open-campaign-against-elina-svitolina",
-          "title": "LIVE WTA Finals | Mirra Andreeva to open campaign against Elina Svitolina",
-          "publisher": "Tennisuptodate.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXxmnfq6Z16WhqeNRxX8I0lYN5yHf4FGXORKKSE1ZFQuSF3_qiGEXTXLjqLzQ"
-        }
-      ]
-    },
-    {
-      "query": "brian thomas jr",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T22:30:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/report-sounds-like-jags-will-listen-to-btj-offers",
-        "https://bleacherreport.com/articles/25530668-new-nfl-trade-rumors-brian-thomas-jr-josh-downs-calvin-ridley-amid-chiefs-steelers-buzz",
-        "https://www.si.com/nfl/jaguars/onsi/4-thoughts-on-the-jacksonville-entering-the-trade-deadline-the-brian-thomas-jr-stance"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPUltWeawqI-13KCjpQ0gFErTXjKnw6oAoAF0QZBnJN7mEddXAlNXalOVbwWo",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/report-sounds-like-jags-will-listen-to-btj-offers",
-          "title": "Report: Sounds like Jags will listen to BTJ offers",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPUltWeawqI-13KCjpQ0gFErTXjKnw6oAoAF0QZBnJN7mEddXAlNXalOVbwWo"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25530668-new-nfl-trade-rumors-brian-thomas-jr-josh-downs-calvin-ridley-amid-chiefs-steelers-buzz",
-          "title": "New NFL Trade Rumors on Brian Thomas Jr., Josh Downs, Calvin Ridley amid Chiefs, Steelers Buzz",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUURxKhHD0eZDcUS7t3lXFGGyz3lFWJvVbmmI_Bi1T1zuFdQV17EQlo_BCpk4"
-        },
-        {
-          "url": "https://www.si.com/nfl/jaguars/onsi/4-thoughts-on-the-jacksonville-entering-the-trade-deadline-the-brian-thomas-jr-stance",
-          "title": "4 Thoughts on the Jaguars Entering the Trade Deadline: The Brian Thomas Jr. Stance",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJTXn4kvuEG0RaSyt1j_3TkgxC95_RYmQq_z8mNrd7v0zTYC5eTzfZ82JQtN4"
-        }
-      ]
-    },
-    {
-      "query": "is austin reaves playing tonight",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-09T22:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50429321/reaves-scores-43-doncic-absence-lead-lakers-pistons",
-        "https://sports.yahoo.com/articles/lakers-major-luka-doncic-injury-210916581.html",
-        "https://www.latimes.com/sports/lakers/story/2026-11-08/los-angeles-lakers-detroit-pistons-nba-game-recap"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmZqbg2VCtp76Z6SLjYm1xIV_JNV7HhFZGKpjK7dKVzDO3o-_UWDnU_QbRe1Y",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxQ7l4Ba-NvZXIrVKoioi4gKU4aL_XaO_sgRdTP7vwuMKJ1hqAy8Q2x5khJy8",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nba/story/_/id/50429321/reaves-scores-43-doncic-absence-lead-lakers-pistons",
-          "title": "Reaves scores 43 in Doncic's absence to lead Lakers past Pistons",
+          "url": "https://www.espn.com/nfl/story/_/id/50426855/john-harbaugh-says-giants-did-pull-offer-jonathan-taylor",
+          "title": "John Harbaugh: Giants did pull offer for Jonathan Taylor but 'things do change'",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmZqbg2VCtp76Z6SLjYm1xIV_JNV7HhFZGKpjK7dKVzDO3o-_UWDnU_QbRe1Y"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxQ7l4Ba-NvZXIrVKoioi4gKU4aL_XaO_sgRdTP7vwuMKJ1hqAy8Q2x5khJy8"
         },
         {
-          "url": "https://sports.yahoo.com/articles/lakers-major-luka-doncic-injury-210916581.html",
-          "title": "Lakers Get Major Luka Doncic Injury Boost Ahead of Hawks Clash",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.foxnews.com/video/6408153055112",
+          "title": "Ex-NFL QB Nick Foles on whether Colts should trade Jonathan Taylor",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2PdA_bLz_bT8O5zs9AD2SKbdejLzOZYFv-Kk5MLXCWAzoH_rMFqLlq1lzY6U"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3pWM5zIcbIZQXdSbWUslSClqC-c0tWnl7KNuPW9wMgIjM-HyW6VQhJZbjwc8"
         },
         {
-          "url": "https://www.latimes.com/sports/lakers/story/2026-11-08/los-angeles-lakers-detroit-pistons-nba-game-recap",
-          "title": "Austin Reaves steps up in Luka Doncic’s absence to lead Lakers over Pistons",
-          "publisher": "Los Angeles Times",
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/espn-could-be-big-11th-hour-trade-offer-for-jt",
+          "title": "ESPN: Colts could get 11th-hour offer for Taylor",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEIllO7td-z1q_numpVvhIVxH74tOXtB3NAXRAiNf5wXpgmw-j735jBiVuM0s"
-        }
-      ]
-    },
-    {
-      "query": "cboe volatility index",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T22:30:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/article/the-vix-volatility-index-just-spiked-70-heres-what-history-suggests-comes-next-125333946.html",
-        "https://www.cnbc.com/2026/11/06/wall-streets-fear-gauge-may-be-flashing-a-buy-sign.html",
-        "https://www.reuters.com/business/wall-street-fear-gauge-jumps-most-since-liberation-day-ai-trade-stumbles-2026-11-05/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQr4iMzWMt2JVJTobpd-njJlSN0h77Sf3yyqwoWlQYc6LYJXpoHFtbKjvFopw",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/article/the-vix-volatility-index-just-spiked-70-heres-what-history-suggests-comes-next-125333946.html",
-          "title": "The VIX volatility index just spiked 70%. Here's what history suggests comes next.",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQr4iMzWMt2JVJTobpd-njJlSN0h77Sf3yyqwoWlQYc6LYJXpoHFtbKjvFopw"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/06/wall-streets-fear-gauge-may-be-flashing-a-buy-sign.html",
-          "title": "Wall Street's fear gauge may be flashing a buy sign",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtU0KHWTty4IK3IDi5mhp8K8U2uW8Rc2gk0pidY3MyBgCOz7z77V9OLUdBY-0"
-        },
-        {
-          "url": "https://www.reuters.com/business/wall-street-fear-gauge-jumps-most-since-liberation-day-ai-trade-stumbles-2026-11-05/",
-          "title": "Phones 'explode' on Wall Street as 'steamroller' shows up for the AI trade",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8vhF9kotCfLXmWBT4UGGu8R4sCjHSQVFmhXCOVzJDKTZYF6qDM8_k0ZJSa1o"
-        }
-      ]
-    },
-    {
-      "query": "dow jones industrial average",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-09T22:20:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/08/stock-market-today-live-updates.html",
-        "https://www.wsj.com/finance/stocks/u-s-stocks-climb-as-investors-regain-confidence-56de5af0",
-        "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxTc9aBEYjL_E4kxzqcezQ2MGZM63m__WCyIEt1mWV29siMeKXUGtt0DbGJeI",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/08/stock-market-today-live-updates.html",
-          "title": "Dow surges 1,100 points, Nasdaq climbs more than 2% as tech rebounds from last week’s tumult: Live updates",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxTc9aBEYjL_E4kxzqcezQ2MGZM63m__WCyIEt1mWV29siMeKXUGtt0DbGJeI"
-        },
-        {
-          "url": "https://www.wsj.com/finance/stocks/u-s-stocks-climb-as-investors-regain-confidence-56de5af0",
-          "title": "U.S. Stocks Climb as Investors Regain Confidence",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxnFg7EQ0IiimBEY_tdOBoW_RTmYTDkLcWrwtLus9ZLMtWoEgCFwC4E2cuOGo"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html",
-          "title": "Stock market today: Nasdaq surges despite Nvidia stock slide, Dow and S&P 500 rally as AI tech trade rises",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkCGrkBVEBngktrsOY44IiJ5cY3zzNV-HQWAyF5t1pp3fnM4yI-uL2iAkVzxA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbRClWSvfMfncC-2cHudjZJZqcn0IKWxSGN-qXfKbRfonKBBBZA-rYC_A6tLM"
         }
       ]
     }
