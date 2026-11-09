@@ -45,3 +45,17 @@ test('first-party Bubbles routes explicit inventory questions directly to its ex
  assert.match(route,/display\(reply,'ai'\)/);
  assert.doesNotMatch(route,/directGithubOperation|verifiedOwnerHeaders|\/v1\/intent/);
 });
+
+test('owner requests to repair Bubbles speech and GitHub/Cloudflare coding use authenticated Brain work, not a model claim',async()=>{
+ const {createRequire}=await import('node:module');
+ const require=createRequire(import.meta.url);
+ const brain=require('../bubbles-brain-actions.js');
+ const request='Fix Bubbles to speak and do code and GitHub and Cloudflare as planned';
+ assert.equal(brain.firstPartyRepairTarget(request),'www-infinity4/QuantaPhi');
+ assert.equal(brain.classify(request),'queue');
+ const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ assert.match(ui,/if\(knownQuantaRepair\)directCoding=false/);
+ assert.match(ui,/const ticket=await submitWork\(request,'explicit-user-command',imageWorkEvidence\)/);
+ assert.match(ui,/if\(nativeOverlay&&nativeSpeechPending\)nativeSpeechReply=workEvidence/);
+ assert.match(ui,/else if\(config.voice&&!nativeOverlay\)speakText\(workEvidence\)/);
+});
