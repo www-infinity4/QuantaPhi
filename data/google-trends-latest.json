@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T04:01:39.912206Z",
+  "checked_at": "2026-11-09T04:31:36.411684Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ncaa field hockey tournament 2026",
+      "query": "tabla general liga mx",
       "approx_searches": "200+",
-      "published_at": "2026-11-09T03:30:00Z",
+      "published_at": "2026-11-09T04:10:00Z",
       "related_news_urls": [
-        "https://www.ncaa.com/news/fieldhockey/article/2026-11-01/2026-diii-field-hockey-championship-selection-show-info-bracket-schedule",
-        "https://theacc.com/news/2026/11/9/duke-north-carolina-syracuse-earn-2026-ncaa-field-hockey-tournament-berths.aspx",
-        "https://shipraiders.com/news/2026/11/2/rankings-update-field-hockey-remains-second-in-2026-ncaa-power-index.aspx"
+        "https://www.mediotiempo.com/futbol/liga-mx/asi-se-jugara-la-liguilla-al-momento-clasificados-partidos-confirmados",
+        "https://www.foxdeportes.com/liga-mx/nota/a-falta-de-2-fechas-el-primer-y-ultimo-lugar-del-apertura-2026-siguen-en-disputa",
+        "https://www.tvazteca.com/aztecadeportes/el-liderato-esta-en-el-aire-cierre-de-infarto-en-la-liga-mx-apertura-2026/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8vIfKUbt9G1MBFcDPwwgjiwFZtXwqInz7eShu7Ex9MRkoEAqV_vNaAc_4rJk",
-      "image_credit": "NCAA.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC3yTeVe49ri9s_UjWtMqt1cWXGLuwcA7F-7l8_iJCW88THVdjLJI-Wg8_Dl8",
+      "image_credit": "Mediotiempo",
       "news": [
         {
-          "url": "https://www.ncaa.com/news/fieldhockey/article/2026-11-01/2026-diii-field-hockey-championship-selection-show-info-bracket-schedule",
-          "title": "2026 DIII field hockey championship: Selection show info, bracket, schedule",
-          "publisher": "NCAA.com",
+          "url": "https://www.mediotiempo.com/futbol/liga-mx/asi-se-jugara-la-liguilla-al-momento-clasificados-partidos-confirmados",
+          "title": "Así se jugará la Liguilla del Apertura 2026 AL MOMENTO: clasificados y partidos EN VIVO",
+          "publisher": "Mediotiempo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8vIfKUbt9G1MBFcDPwwgjiwFZtXwqInz7eShu7Ex9MRkoEAqV_vNaAc_4rJk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC3yTeVe49ri9s_UjWtMqt1cWXGLuwcA7F-7l8_iJCW88THVdjLJI-Wg8_Dl8"
         },
         {
-          "url": "https://theacc.com/news/2026/11/9/duke-north-carolina-syracuse-earn-2026-ncaa-field-hockey-tournament-berths.aspx",
-          "title": "Duke, North Carolina, Syracuse Earn 2026 NCAA Field Hockey Tournament Berths",
-          "publisher": "Atlantic Coast Conference",
+          "url": "https://www.foxdeportes.com/liga-mx/nota/a-falta-de-2-fechas-el-primer-y-ultimo-lugar-del-apertura-2026-siguen-en-disputa",
+          "title": "A falta de 2 fechas, el primer y último lugar del Apertura 2026 siguen en disputa",
+          "publisher": "FOX Deportes",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8NG9W_flD11YOUSgMQZq0kkmpcLJqfxIHVSpSzSqvfnpTNXH8vkt-i2z1NzA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpd-nCZ2cxyLEHYACVXlv7sHtfxYawjNm0LzdFf2Ofa20yIEclSiBY0jz2UUA"
         },
         {
-          "url": "https://shipraiders.com/news/2026/11/2/rankings-update-field-hockey-remains-second-in-2026-ncaa-power-index.aspx",
-          "title": "RANKINGS UPDATE: Field Hockey remains second in 2026 NCAA Power Index",
-          "publisher": "Shippensburg University Athletics",
+          "url": "https://www.tvazteca.com/aztecadeportes/el-liderato-esta-en-el-aire-cierre-de-infarto-en-la-liga-mx-apertura-2026/",
+          "title": "¡EL LIDERATO ESTÁ EN EL AIRE! ⚽ ¡CIERRE DE INFARTO EN LA LIGA MX! | Apertura 2026",
+          "publisher": "TV Azteca",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyUkdlInjmLbTS6p0qbfx4c5h6pMfaLNw287b-i8WtvmVJWHYO1HPH7Zizdnk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBQVqLlaTp8vExWGp4qwWrrdz0UQxhDPWG-gnBfAzrypAQHzx_AHS9RGxR4mk"
         }
       ]
     },
     {
-      "query": "love is blind",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-09T03:20:00Z",
+      "query": "keegan murray",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T04:10:00Z",
       "related_news_urls": [
-        "https://www.netflix.com/tudum/articles/love-is-blind-season-11-reunion-release-date-time",
-        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/08/love-is-blind-season-11-reunion-recap-boston/92643765007/",
-        "https://people.com/love-is-blind-john-shannon-sarah-williams-divorce-12237430"
+        "https://www.hoopsrumors.com/2026/11/pacific-notes-murray-black-hachimura-ighodaro.html",
+        "https://sports.yahoo.com/articles/kings-injury-report-keegan-murray-165211488.html",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/keegan-murray-ankle-upgraded-to-available"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2wg65aWwy0XNX66mFl7w-6Kh4dfqM8FNh9UjOuqJL1O6pbLQ_GBa42hm_zGI",
-      "image_credit": "Netflix",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaoLfR_sDICqBc3xeGmN0bjttYLxv0fjHReXIKzaOanjYE8nNQxO9I6I9SX6k",
+      "image_credit": "Hoops Rumors",
       "news": [
         {
-          "url": "https://www.netflix.com/tudum/articles/love-is-blind-season-11-reunion-release-date-time",
-          "title": "When Is the Love Is Blind Season 11 Reunion? Find Out How to Watch Tonight",
-          "publisher": "Netflix",
+          "url": "https://www.hoopsrumors.com/2026/11/pacific-notes-murray-black-hachimura-ighodaro.html",
+          "title": "Pacific Notes: Murray, Black, Hachimura, Ighodaro",
+          "publisher": "Hoops Rumors",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2wg65aWwy0XNX66mFl7w-6Kh4dfqM8FNh9UjOuqJL1O6pbLQ_GBa42hm_zGI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaoLfR_sDICqBc3xeGmN0bjttYLxv0fjHReXIKzaOanjYE8nNQxO9I6I9SX6k"
         },
         {
-          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/08/love-is-blind-season-11-reunion-recap-boston/92643765007/",
-          "title": "'Love Is Blind' Season 11 reunion bombshells – Cheating, shock engagement",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Cr7rwJarE86XmYuxUzsGGRoAv_covXSidwFZ_xSDHEqq-zvJzMw2F8izH0o"
-        },
-        {
-          "url": "https://people.com/love-is-blind-john-shannon-sarah-williams-divorce-12237430",
-          "title": "‘Love Is Blind’ Stars John Shannon and Sarah Williams, the Only Season 11 Couple to Marry, File for Divorce",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_QVzyJpmp2pwtik_dSGAZVMLq3P0HFydG9mM7Lu63mfvAV9dIf5HiuTIrSvU"
-        }
-      ]
-    },
-    {
-      "query": "ramla ali",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T03:20:00Z",
-      "related_news_urls": [
-        "https://www.reutersconnect.com/item/ramla-ali-and-mikiah-kreps-weigh-in-ahead-of-their-super-bantamweight-world-championship-bout/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUFOQURMMDAwSEpWQVBR",
-        "https://www.boxingnews24.com/boxing-shorts/watch/r4piq27kyrc/",
-        "https://www.dazn.com/en-US/news/boxing/keys-to-victory-ramla-ali-vs-mikiah-kreps-fight-preview-fight-analysis-mvp/1bn6jufjhiuep17emonvn5akbt"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5roNoeBWxlu4b9jjdRhpuMBbP6woCne2FWBYnnrMoYrhOP7p3xlbw6V3Dcao",
-      "image_credit": "Reuters Connect",
-      "news": [
-        {
-          "url": "https://www.reutersconnect.com/item/ramla-ali-and-mikiah-kreps-weigh-in-ahead-of-their-super-bantamweight-world-championship-bout/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUFOQURMMDAwSEpWQVBR",
-          "title": "Licensable picture: Ramla Ali and Mikiah Kreps weigh-in ahead of their super-bantamweight world championship bout",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5roNoeBWxlu4b9jjdRhpuMBbP6woCne2FWBYnnrMoYrhOP7p3xlbw6V3Dcao"
-        },
-        {
-          "url": "https://www.boxingnews24.com/boxing-shorts/watch/r4piq27kyrc/",
-          "title": "Ramla Ali STICKS HER TONGUE OUT on Mikiah Kreps at WEIGH-IN 😜",
-          "publisher": "Boxing News 24",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTcfO-XzeHrLPXhnXSUXxRyrR0D8vaYBknOM3oNuRpVE3aJme6oGJCEhtbkLIE"
-        },
-        {
-          "url": "https://www.dazn.com/en-US/news/boxing/keys-to-victory-ramla-ali-vs-mikiah-kreps-fight-preview-fight-analysis-mvp/1bn6jufjhiuep17emonvn5akbt",
-          "title": "Expect the damage to land here in Ramla Ali vs. Mikiah Kreps",
-          "publisher": "DAZN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEXzUKrFECAG7KwWjqK3F7AtJBTzEBqEkvtFIZ-J3LKP0j9TDTndHA7FNHbuA"
-        }
-      ]
-    },
-    {
-      "query": "connor hellebuyck",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T03:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nhl/story/_/id/50383339/hellebuyck-cites-challenging-circumstances-trade-ask",
-        "https://bleacherreport.com/articles/25530922-connor-hellebuycks-status-devils-vs-jets-revealed-goalies-1st-trip-winnipeg-trade",
-        "https://www.tsn.ca/nhl/video/2026/11/04/the-talking-point-can-a-fight-change-the-outcome-of-a-game/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeC1g0qtZfC3dluEsWc7I1XqFev-6-yyHpeEwrC2DfJulq8i9WMz7IIYL7bPE",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nhl/story/_/id/50383339/hellebuyck-cites-challenging-circumstances-trade-ask",
-          "title": "Connor Hellebuyck cites 'challenging circumstances' among reasons for trade ask",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeC1g0qtZfC3dluEsWc7I1XqFev-6-yyHpeEwrC2DfJulq8i9WMz7IIYL7bPE"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25530922-connor-hellebuycks-status-devils-vs-jets-revealed-goalies-1st-trip-winnipeg-trade",
-          "title": "Connor Hellebuyck's Status for Devils vs. Jets Revealed, Goalie's 1st Trip to Winnipeg Since Trade",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR92WGret1zzYpgQxnI5xCTbheeUwGzQr5TC0GUztnFBSPvOVMoW2uUPI8jMyA"
-        },
-        {
-          "url": "https://www.tsn.ca/nhl/video/2026/11/04/the-talking-point-can-a-fight-change-the-outcome-of-a-game/",
-          "title": "The Talking Point: Can a fight change the outcome of a game?",
-          "publisher": "TSN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQo1QgtNXC-hu57jCTNgREiqE1U3_G39DJbs6LJZJv7G-EgUmfJHY0-2H0BgnY"
-        }
-      ]
-    },
-    {
-      "query": "henry cavill",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T03:20:00Z",
-      "related_news_urls": [
-        "https://blog.google/products-and-platforms/devices/googlebook/henry-cavill-mustache-protocol-video-game/",
-        "https://9to5google.com/2026/11/04/henry-cavill-mustache-protocol-googlebook/",
-        "https://www.gamesradar.com/games/google-gets-henry-cavill-to-ai-vibe-code-a-game-to-promote-googlebook-promises-to-donate-usd11-to-charity-every-time-someone-plays-it/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBtvZ1IMNcBO1TlEVLvPsEuCiKSFl5lWQbVukdQv5zI1aoQAm2Yw_vKcwSaXs",
-      "image_credit": "blog.google",
-      "news": [
-        {
-          "url": "https://blog.google/products-and-platforms/devices/googlebook/henry-cavill-mustache-protocol-video-game/",
-          "title": "Watch Henry Cavill build a video game on his Googlebook",
-          "publisher": "blog.google",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBtvZ1IMNcBO1TlEVLvPsEuCiKSFl5lWQbVukdQv5zI1aoQAm2Yw_vKcwSaXs"
-        },
-        {
-          "url": "https://9to5google.com/2026/11/04/henry-cavill-mustache-protocol-googlebook/",
-          "title": "Henry Cavill builds 16-bit ‘Mustache Protocol’ game on Googlebook for a good cause [Video]",
-          "publisher": "9to5Google",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRxJsT5_zmNZlt2PZdaCvarEYM5im2p7gIqWLTMwWfOVwe-p6c6KOYd81fJhk"
-        },
-        {
-          "url": "https://www.gamesradar.com/games/google-gets-henry-cavill-to-ai-vibe-code-a-game-to-promote-googlebook-promises-to-donate-usd11-to-charity-every-time-someone-plays-it/",
-          "title": "Google gets Henry Cavill to AI vibe code a game to promote Googlebook, promises to donate $11 to charity every time someone plays it",
-          "publisher": "GamesRadar+",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvm6dXCqAzYrLklY9In1YEoAZB9YVaTxlGNuvzpkSPAkTO-UoT2X--oxTI25M"
-        }
-      ]
-    },
-    {
-      "query": "dane cook brother",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T03:20:00Z",
-      "related_news_urls": [
-        "https://www.rollingstone.com/tv-movies/tv-movie-features/dane-cook-brother-theft-funny-money-interview-1235637778/",
-        "https://www.netflix.com/tudum/articles/funny-money-the-dane-cook-story-release-date-news",
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/dane-cook-mother-warned-him-142500096.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTO8n4wrg5OG6Y01rgOQk0MpdVtN8Y_CyA8KeZp-8SNnRo0L2jRXRY5BTTL1wI",
-      "image_credit": "Rolling Stone",
-      "news": [
-        {
-          "url": "https://www.rollingstone.com/tv-movies/tv-movie-features/dane-cook-brother-theft-funny-money-interview-1235637778/",
-          "title": "Dane Cook's Brother Robbed Him Blind. Now He's Rebuilding His Life -- And Gunning for a Comeback",
-          "publisher": "Rolling Stone",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTO8n4wrg5OG6Y01rgOQk0MpdVtN8Y_CyA8KeZp-8SNnRo0L2jRXRY5BTTL1wI"
-        },
-        {
-          "url": "https://www.netflix.com/tudum/articles/funny-money-the-dane-cook-story-release-date-news",
-          "title": "What to Know About True Crime Doc Funny Money: The Dane Cook Story",
-          "publisher": "Netflix",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRIespd6v6M03qJauQ_NlcSxbK9MKNesIQAoHOrbm8KNkaqu7JJNQB7wAFaLw"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/dane-cook-mother-warned-him-142500096.html",
-          "title": "Dane Cook’s Mother ‘Warned’ Him About Brother Darryl Before Her Death. He Later Embezzled $12 Million from the Comedian",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMrA0AzDQVm-LvNeQhO-MpxLYDSeUuXrYFvMp1lmDDVjQJZ0Oz3e3pnTB_iTU"
-        }
-      ]
-    },
-    {
-      "query": "kyler gordon",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T03:10:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/fantasy/football/news/bears-tyrique-stevenson-injures-hand-on-snf/",
-        "https://chicago.suntimes.com/bears/2026/11/08/bears-buccaneers-kyler-gordon-leaves-game-with-injury",
-        "https://sports.yahoo.com/articles/bears-cb-kyler-gordon-leaves-032506201.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRgtyhxGxEG7i2Okxt9MXO4tXkT6SYFeNJ2RsRVSTb2-axRU5x1XlHHfRx6NM",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/bears-tyrique-stevenson-injures-hand-on-snf/",
-          "title": "Bears' Tyrique Stevenson: Injures hand on SNF",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRgtyhxGxEG7i2Okxt9MXO4tXkT6SYFeNJ2RsRVSTb2-axRU5x1XlHHfRx6NM"
-        },
-        {
-          "url": "https://chicago.suntimes.com/bears/2026/11/08/bears-buccaneers-kyler-gordon-leaves-game-with-injury",
-          "title": "Bears CB Kyler Gordon leaves game with injury",
-          "publisher": "Chicago Sun-Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWBpa9j852SZSwrEQg8y_PyESmH7KPZYHYu1G6p0zm25gPfRrLhMTD9yZGBPU"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/bears-cb-kyler-gordon-leaves-032506201.html",
-          "title": "Bears CB Kyler Gordon leaves game early with apparent injury",
+          "url": "https://sports.yahoo.com/articles/kings-injury-report-keegan-murray-165211488.html",
+          "title": "Kings Injury Report: Keegan Murray Receives Status Update vs. Heat",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXWS80tMoNODJA9VRbrhst0ppB6YMe3Pnlbw5QBCbF7ptpJmneD2Su-RLEZG8"
-        }
-      ]
-    },
-    {
-      "query": "paul george",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-09T03:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/celtics-blow-bucks-third-consecutive-032545961.html",
-        "https://www.foxsports.com/articles/nba/paul-george-and-jayson-tatum-lead-celtics-to-a-11797-victory-over-the-bucks",
-        "https://www.celticsblog.com/boston-celtics-game-previews/149669/boston-celtics-7-2-at-milwaukee-bucks-1-8-game-10-11-8-26"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkcPeWnSJWRyb45yEA9J0fe4jV-Z605ucCa7A6z501zPibbH5v1mqT2Z7Bw0E",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/celtics-blow-bucks-third-consecutive-032545961.html",
-          "title": "Celtics blow out Bucks for third consecutive win",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkcPeWnSJWRyb45yEA9J0fe4jV-Z605ucCa7A6z501zPibbH5v1mqT2Z7Bw0E"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSI3By3uQSupESaxgaHDmcAOj7l5zSKsEUQIrnievxaYnx3QdCim54botq80eg"
         },
         {
-          "url": "https://www.foxsports.com/articles/nba/paul-george-and-jayson-tatum-lead-celtics-to-a-11797-victory-over-the-bucks",
-          "title": "Paul George and Jayson Tatum lead Celtics to a 117-97 victory over the Bucks",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4s4BZOkTNXN3YIPa9D2mGE41CMQSYHPibv39-9pCCL84ruNU6IK4Wzep74lk"
-        },
-        {
-          "url": "https://www.celticsblog.com/boston-celtics-game-previews/149669/boston-celtics-7-2-at-milwaukee-bucks-1-8-game-10-11-8-26",
-          "title": "Boston Celtics (7-2) at Milwaukee Bucks (1-8) Game #10 11/8/26",
-          "publisher": "CelticsBlog",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToumSlgBWXj6TkoCcoLz8cNYO-2ELJRCGyOego6BHexg40-wWOoR6ZpgFVRVY"
-        }
-      ]
-    },
-    {
-      "query": "paige bueckers",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T03:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/wnba/story/_/id/50401662/wings-paige-bueckers-azzi-fudd-talk-relationship-pod",
-        "https://www.nbcconnecticut.com/news/local/former-uconn-stars-paige-bueckers-azzi-fudd-announce-that-they-broke-up/3793349/",
-        "https://www.foxnews.com/outkick-sports/paige-bueckers-azzi-fudd-confirm-breakup-split-year-before-becoming-teammates"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDZIMC88mFbyEoblYkklKZaCCPF6QEjwit308nLHa0wKcyk2FkPdqlKktxHN8",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/wnba/story/_/id/50401662/wings-paige-bueckers-azzi-fudd-talk-relationship-pod",
-          "title": "Wings' Paige Bueckers, Azzi Fudd talk relationship on pod",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDZIMC88mFbyEoblYkklKZaCCPF6QEjwit308nLHa0wKcyk2FkPdqlKktxHN8"
-        },
-        {
-          "url": "https://www.nbcconnecticut.com/news/local/former-uconn-stars-paige-bueckers-azzi-fudd-announce-that-they-broke-up/3793349/",
-          "title": "Former UConn stars Paige Bueckers, Azzi Fudd announce that they broke up",
-          "publisher": "NBC Connecticut",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRzOsSHY-2FK74G7u9EDM1HekfofZHQkXCz08Q9AUZvSdM2ZQigTmNmk0JaxA"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick-sports/paige-bueckers-azzi-fudd-confirm-breakup-split-year-before-becoming-teammates",
-          "title": "Paige Bueckers and Azzi Fudd confirm breakup, say they split over a year before becoming teammates",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeJ0rsAeJwzqX7mkl0nUjpM9VsPvW0ZnwMJOxp3cEKU1rERgFxXSA8cfVmzso"
-        }
-      ]
-    },
-    {
-      "query": "mike tomlin",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T03:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/videos/teams-slow-down-burrow-chase-004020907.html",
-        "https://steelersdepot.com/2026/11/mike-tomlin-gives-formula-to-slow-down-bengals-passing-attack/",
-        "https://www.nbcsports.com/watch/nfl/snf/how-can-teams-slow-down-joe-burrow-jamarr-chase-and-the-bengals-offense"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Tx86yJ2u_9gjl0WPamlQVBaC2qvl2aLRob8IrtNo0nz4lReyd8diEpgQVJY",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/videos/teams-slow-down-burrow-chase-004020907.html",
-          "title": "How can teams slow down Burrow, Chase and Bengals?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Tx86yJ2u_9gjl0WPamlQVBaC2qvl2aLRob8IrtNo0nz4lReyd8diEpgQVJY"
-        },
-        {
-          "url": "https://steelersdepot.com/2026/11/mike-tomlin-gives-formula-to-slow-down-bengals-passing-attack/",
-          "title": "Mike Tomlin Gives Formula To Slow Down Bengals’ Passing Attack",
-          "publisher": "Steelers Depot",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSAXLoJTTeQpWdSq3EZYDGJURl-SNUpcembj5cASpaC7yxNcaJvDUjgtMWGts"
-        },
-        {
-          "url": "https://www.nbcsports.com/watch/nfl/snf/how-can-teams-slow-down-joe-burrow-jamarr-chase-and-the-bengals-offense",
-          "title": "How can teams slow down Burrow, Chase and Bengals?",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/keegan-murray-ankle-upgraded-to-available",
+          "title": "Keegan Murray (ankle) upgraded to available",
           "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTg1MsL-HuZiHz15ZF6eoDiT2vkhIGhKmULLrRT0mvDiVyp4qc6mHbaPrMBFhA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCeYjXkR4_QNQpRY5Hla74oJVbZnBNBzVq-5gXSrMz1A6holz0cle2wIONyJ0"
+        }
+      ]
+    },
+    {
+      "query": "santa barbara half marathon",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T04:10:00Z",
+      "related_news_urls": [
+        "https://www.noozhawk.com/19-santa-barbara-half-marathon-runners-taken-to-area-hospitals/",
+        "https://abc7.com/post/more-dozen-runners-fall-ill-during-santa-barbara-half-marathon-cottage-health-hospital-treating-least-19-people/20025183/",
+        "https://keyt.com/news/top-stories/2026/11/08/multiple-hospitalizations-from-santa-barbara-half-marathon-under-investigation/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKxvbyZexzUTiMVkeA5IwigJfLxBHxnENyqdqTKmE8ffzu9z2WXjKP1iXbnyM",
+      "image_credit": "Noozhawk",
+      "news": [
+        {
+          "url": "https://www.noozhawk.com/19-santa-barbara-half-marathon-runners-taken-to-area-hospitals/",
+          "title": "Police Investigate 'Suspicious Circumstances' after 19 Santa Barbara Half Marathon Runners Taken to Hospitals",
+          "publisher": "Noozhawk",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKxvbyZexzUTiMVkeA5IwigJfLxBHxnENyqdqTKmE8ffzu9z2WXjKP1iXbnyM"
+        },
+        {
+          "url": "https://abc7.com/post/more-dozen-runners-fall-ill-during-santa-barbara-half-marathon-cottage-health-hospital-treating-least-19-people/20025183/",
+          "title": "More than a dozen runners fall ill during Santa Barbara half marathon, Cottage Health Hospital treating at least 19 people",
+          "publisher": "ABC7 Los Angeles",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuOcxiwy3tPA8NcAdG9E_j-6FleWah7pbzBcLd4EvPnXJ2k2a3BE4SykuGIR4"
+        },
+        {
+          "url": "https://keyt.com/news/top-stories/2026/11/08/multiple-hospitalizations-from-santa-barbara-half-marathon-under-investigation/",
+          "title": "Multiple hospitalizations from Santa Barbara half-marathon under investigation",
+          "publisher": "News Channel 3-12",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoO0dRyhvlIPELX2_4tCh2apBAWtxcoD1UmqLinTtr8IJbfyO5H-0Wk0G58Bw"
+        }
+      ]
+    },
+    {
+      "query": "wichita state basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T04:10:00Z",
+      "related_news_urls": [
+        "https://goshockers.com/news/2026/11/6/mens-basketball-mbb-preview-vs-21-usc-nov-8.aspx",
+        "https://www.kansas.com/sports/college/wichita-state/article317971317.html",
+        "https://www.covers.com/ncaab/usc-vs-wichita-state-prediction-picks-odds-nov-8-2026"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrSQpg8243IS1-VVbhsG06rlnGnCLp5_4nGVAAQAshqVez7IrDt0Hynz8BLVY",
+      "image_credit": "Wichita State Athletics",
+      "news": [
+        {
+          "url": "https://goshockers.com/news/2026/11/6/mens-basketball-mbb-preview-vs-21-usc-nov-8.aspx",
+          "title": "MBB Preview: vs. #21 USC (Nov. 8)",
+          "publisher": "Wichita State Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrSQpg8243IS1-VVbhsG06rlnGnCLp5_4nGVAAQAshqVez7IrDt0Hynz8BLVY"
+        },
+        {
+          "url": "https://www.kansas.com/sports/college/wichita-state/article317971317.html",
+          "title": "Wichita State vs. USC: Can Paul Mills solve a giant matchup problem?",
+          "publisher": "Wichita Eagle",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwGbxZMnT5uvEw3m7g57TcglTAIeyqXq_eavmPJFfKUn-SQyihH8FXqfglkeA"
+        },
+        {
+          "url": "https://www.covers.com/ncaab/usc-vs-wichita-state-prediction-picks-odds-nov-8-2026",
+          "title": "USC vs Wichita State Prediction, Picks & Odds for Tonight's College Basketball Game",
+          "publisher": "Covers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9VSxcZvTsRCEWh5SwfiACLPs5io7u8jWBxB5uvy23ppdS1WflskXPAuvWadw"
+        }
+      ]
+    },
+    {
+      "query": "oj simpson",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-09T04:00:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/us/9-mystery-fingerprints-oj-simpson-murder-case-could-hold-new-clues-more-than-30-years-later",
+        "https://people.com/did-o-j-simpson-have-an-accomplice-new-docuseries-revisits-theory-behind-nicole-brown-simpson-and-ron-goldman-s-murders-12238692",
+        "https://www.realityblurred.com/realitytv/2026/11/does-ojs-accomplice-make-its-case-true-crime/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRs3SKXlP4C_YnojlwBbDqleWU00jT0tuTo314uSPY5XCnZ8_eHjLHj85EFV6k",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/us/9-mystery-fingerprints-oj-simpson-murder-case-could-hold-new-clues-more-than-30-years-later",
+          "title": "9 mystery fingerprints from OJ Simpson murder case could hold new clues more than 30 years later",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRs3SKXlP4C_YnojlwBbDqleWU00jT0tuTo314uSPY5XCnZ8_eHjLHj85EFV6k"
+        },
+        {
+          "url": "https://people.com/did-o-j-simpson-have-an-accomplice-new-docuseries-revisits-theory-behind-nicole-brown-simpson-and-ron-goldman-s-murders-12238692",
+          "title": "O.J. Simpson Accomplice Theory in Double Murder Revisited in New Docuseries",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQW9KzYP69ge1QQ_istfwDHCN9EUXpcBAp0T7tn3DQ4uaa9wGN1d1mzy-Lvxdc"
+        },
+        {
+          "url": "https://www.realityblurred.com/realitytv/2026/11/does-ojs-accomplice-make-its-case-true-crime/",
+          "title": "Does OJ’s Accomplice make its case?",
+          "publisher": "Reality Blurred",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpObecXdoEeqwOwqNd4yw0kPkDtF-ryw-rlde2E4vOeUijhZq4VZLIa6rYpuk"
+        }
+      ]
+    },
+    {
+      "query": "terrell owens",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T04:00:00Z",
+      "related_news_urls": [
+        "https://blog.utc.edu/news/2026/11/everyone-loves-a-parade-a-new-route-a-new-rally-and-a-new-utc-homecoming-tradition/",
+        "https://www.timesfreepress.com/news/2026/nov/03/t-o-brings-ochocinco-to-chattanooga-for-utc-homecoming/",
+        "https://www.hits96.com/utc-homecoming-brings-nfl-legends-free-football-tickets-and-a-big-celebration-to-chattanooga-this-saturday/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXUiPgp_l7pCpxm6M4ONT-14l1wzhqp6jAZqpEFT_xVeUCOBWULvztGeSdrNw",
+      "image_credit": "University of Tennessee at Chattanooga",
+      "news": [
+        {
+          "url": "https://blog.utc.edu/news/2026/11/everyone-loves-a-parade-a-new-route-a-new-rally-and-a-new-utc-homecoming-tradition/",
+          "title": "Everyone loves a parade: A new route, a new rally and a new UTC Homecoming tradition",
+          "publisher": "University of Tennessee at Chattanooga",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXUiPgp_l7pCpxm6M4ONT-14l1wzhqp6jAZqpEFT_xVeUCOBWULvztGeSdrNw"
+        },
+        {
+          "url": "https://www.timesfreepress.com/news/2026/nov/03/t-o-brings-ochocinco-to-chattanooga-for-utc-homecoming/",
+          "title": "T.O. bringing Ochocinco to UTC homecoming",
+          "publisher": "Chattanooga Times Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiH4r8IxdG7mndgGxgDDtxkRoITzjLahXFZUkE1qFhd7gH2e1o94rm8l2czFQ"
+        },
+        {
+          "url": "https://www.hits96.com/utc-homecoming-brings-nfl-legends-free-football-tickets-and-a-big-celebration-to-chattanooga-this-saturday/",
+          "title": "UTC Homecoming Brings NFL Legends, Free Football Tickets and a Big Celebration to Chattanooga This Saturday!",
+          "publisher": "Hits 96 | WDOD-FM",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuwXshGP74VzmGsqHWIkCBWbB4sykn7S0Z7JxCSVTmGyThTgKv5FiqNxCjL9c"
+        }
+      ]
+    },
+    {
+      "query": "vision quest episode 8",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T03:50:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66094426/?ref_=nmnw_art_perm",
+        "https://thedirect.com/article/marvel-studios-visionquest-season-2-promo",
+        "https://wevegotbackissues.com/2026/11/05/visionquest-season-finale-trailer/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHY08TDloscLhKrjjQi68KEHselh44ODlBCun1sz747t6XKt7EJGn0spDKizk",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66094426/?ref_=nmnw_art_perm",
+          "title": "‘VisionQuest’ Episode 8 Release Date, Time and Where to Watch the Finale",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHY08TDloscLhKrjjQi68KEHselh44ODlBCun1sz747t6XKt7EJGn0spDKizk"
+        },
+        {
+          "url": "https://thedirect.com/article/marvel-studios-visionquest-season-2-promo",
+          "title": "Marvel Studios Might Have Just Teased VisionQuest Season 2 In New Promo",
+          "publisher": "The Direct",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTw0CRWjKMowfi7zdJEGWLakEAEh1Nxt8D3xo7cnlMYqeSShWXjTcGM4qMFu_I"
+        },
+        {
+          "url": "https://wevegotbackissues.com/2026/11/05/visionquest-season-finale-trailer/",
+          "title": "VisionQuest Season Finale Trailer Released by Marvel on Disney+",
+          "publisher": "https://wevegotbackissues.com/",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJbAFMg9vyfdamVxM457qn1S2FXLeR7hxDJaPWqVK11zD2FV8Olet4l1o1BZE"
+        }
+      ]
+    },
+    {
+      "query": "ben stiller",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T03:50:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/tv/articles/ariana-grande-sings-o-christmas-020620844.html",
+        "https://headlineplanet.com/home/2026/11/09/first-look-ben-stiller-robert-de-niro-ariana-grande-lil-baby-appear-on-sundays-tonight-show-starring-jimmy-fallon/",
+        "https://latenighter.com/news/tonight-show-75th-anniversary-nbc-tentpole/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjlPQFs52swjq7AXZkkXxRD4au7eXZev67XgltyS5PVO2l-lFdKKPWB_HQB5s",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/ariana-grande-sings-o-christmas-020620844.html",
+          "title": "Ariana Grande Sings ‘O Christmas Tree’ With Robert De Niro & Ben Stiller on ‘Tonight Show’: Exclusive Preview",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjlPQFs52swjq7AXZkkXxRD4au7eXZev67XgltyS5PVO2l-lFdKKPWB_HQB5s"
+        },
+        {
+          "url": "https://headlineplanet.com/home/2026/11/09/first-look-ben-stiller-robert-de-niro-ariana-grande-lil-baby-appear-on-sundays-tonight-show-starring-jimmy-fallon/",
+          "title": "First Look: Ben Stiller, Robert De Niro, Ariana Grande, Lil Baby Appear On Sunday’s “Tonight Sh...",
+          "publisher": "Headline Planet",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6wAqbu5HovqmUDeLAWKPWRjhlDim-9PzAxCg5R3N7OfHLxS2DGSqFP1N_g_0"
+        },
+        {
+          "url": "https://latenighter.com/news/tonight-show-75th-anniversary-nbc-tentpole/",
+          "title": "'Tonight Show' 75th Anniversary ‘Next in Line’ for NBC Tentpole Push",
+          "publisher": "LateNighter",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfNCUDEvjCefwjzgViL3_5OGEXHU8s_8vO9nd-EaC-oIW_CBktYOlnaLN-5q0"
+        }
+      ]
+    },
+    {
+      "query": "clippers vs pelicans",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-09T03:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/clippers-injury-report-vs-pelicans-224719276.html",
+        "https://www.usatoday.com/sports/nba/event/2026/3018633/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NBA&tile=1",
+        "https://www.covers.com/nba/pelicans-vs-clippers-prediction-picks-odds-nov-8-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpFL2RSkIgZ-fd79vQm2mz7KARrwx6ARMcIt4AIbSs2P_FsaSYq9bS33ASdMA",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/clippers-injury-report-vs-pelicans-224719276.html",
+          "title": "Clippers Injury Report vs. Pelicans: Short-Handed LA Trying to Avoid 8th Straight Loss",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpFL2RSkIgZ-fd79vQm2mz7KARrwx6ARMcIt4AIbSs2P_FsaSYq9bS33ASdMA"
+        },
+        {
+          "url": "https://www.usatoday.com/sports/nba/event/2026/3018633/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NBA&tile=1",
+          "title": "New Orleans Pelicans at Los Angeles Clippers - NBA Game Summary - Nov 08, 2026",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReEmW-VC12hM-HsU1WHtHXhiSv85RwZsQZQHT0-H97dUTeAbSCqiqapFMboo0"
+        },
+        {
+          "url": "https://www.covers.com/nba/pelicans-vs-clippers-prediction-picks-odds-nov-8-2026",
+          "title": "Pelicans vs Clippers Prediction, Picks & Best Bet for Tonight's NBA Game",
+          "publisher": "Covers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyJxausS244IiLyb0NUkMqmnhiTMBA2muqAqGNA8uKMKFZ3vqKgTJkb505ano"
+        }
+      ]
+    },
+    {
+      "query": "miles killebrew",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T03:40:00Z",
+      "related_news_urls": [
+        "https://www.mississippivalleypublishing.com/buccaneers-miles-killebrew-on-what-goes-into-blocking-a-punt-and-the-teams-resurgence/video_cdbbe239-0b55-5295-964d-ef8575441783.html",
+        "https://www.record-eagle.com/ap/sports/buccaneers-special-teams-ace-miles-killebrew-saw-calmness-that-led-to-the-teams-turnaround/article_dc062667-c9dc-5583-b2bc-203e892d85dd.html",
+        "https://www.wtsp.com/video/sports/nfl/buccaneers/the-one-buc-miles-killebrew/67-67f116a8-3970-499f-bc37-c2068caf67f7"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRiSBZVKOpCQywuybQE0D9yTqFBPPWiDiqcC0JLS7ta7pZip89dN_Om8kIpSjc",
+      "image_credit": "Daily Gate City",
+      "news": [
+        {
+          "url": "https://www.mississippivalleypublishing.com/buccaneers-miles-killebrew-on-what-goes-into-blocking-a-punt-and-the-teams-resurgence/video_cdbbe239-0b55-5295-964d-ef8575441783.html",
+          "title": "Buccaneers' Miles Killebrew on what goes into blocking a punt and the team's resurgence",
+          "publisher": "Daily Gate City",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRiSBZVKOpCQywuybQE0D9yTqFBPPWiDiqcC0JLS7ta7pZip89dN_Om8kIpSjc"
+        },
+        {
+          "url": "https://www.record-eagle.com/ap/sports/buccaneers-special-teams-ace-miles-killebrew-saw-calmness-that-led-to-the-teams-turnaround/article_dc062667-c9dc-5583-b2bc-203e892d85dd.html",
+          "title": "Buccaneers special teams ace Miles Killebrew saw 'calmness' that led to the team's turnaround",
+          "publisher": "record-eagle.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlotutoRcL_G1brfM5eRNvV7SWkL7Tz0ynGockpRZKrSESY0g-xCVTXDOosrY"
+        },
+        {
+          "url": "https://www.wtsp.com/video/sports/nfl/buccaneers/the-one-buc-miles-killebrew/67-67f116a8-3970-499f-bc37-c2068caf67f7",
+          "title": "The One Buc: Miles Killebrew",
+          "publisher": "wtsp.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNi_bOekYJxRDaOX6lc16Z8zSczKBYNGFGQ8T0cSjoHAL7knBiyVU46lbmnpc"
         }
       ]
     }
