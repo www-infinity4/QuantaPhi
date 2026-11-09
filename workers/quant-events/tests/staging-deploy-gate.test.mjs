@@ -43,4 +43,7 @@ test('deployment workflow has read-only PR checks and hard-gated main-only stagi
   assert.match(s,/wrangler@4 deploy --config workers\/quant-events\/wrangler\.staging\.jsonc/);
   assert.doesNotMatch(s,/quantaphi-site\/wrangler/);
   assert.doesNotMatch(s,/--env production/);
+  // Live Cloudflare Queue API returns its Worker name in the `script` field.
+  assert.match(s,/c\.script===['\"]quantaphi-quant-events-worker-staging['\"]/);
+  assert.doesNotMatch(s,/c\.script_name===['\"]quantaphi-quant-events-worker-staging['\"]/);
 });
