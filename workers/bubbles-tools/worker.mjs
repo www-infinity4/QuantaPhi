@@ -183,6 +183,12 @@ export function hasUnverifiedActionClaim(userRequest,answer){
  if(/\b(?:merged into (?:the )?main|deployed to (?:production|your site)|pushed to main)\b/i.test(text)&&/\b(?:we|I|our|code|repository|branch|adapter|changes)\b/i.test(text))return true;
  return false;
 }
+// A system prompt or the current conversation is context, not completed source verification.
+export function hasUnverifiedContextVerification(answer){
+ const text=clean(answer,8000).replace(/\\*/g,'');
+ return /\\b(?:system message|conversation context)\\b[\\s\\S]{0,260}\\b(?:completed|verified)\\s+verification\\b/i.test(text)||
+  /\\b(?:completed|verified)\\s+verification\\b[\\s\\S]{0,260}\\b(?:system message|conversation context)\\b/i.test(text);
+}
 // Model text is not a tool invocation. Workers AI chat can emit planning
 // prose or fabricated createTicket JSON instead of a user-facing reply.
 // Reject the draft before it reaches the floating bubble or Android TTS.
@@ -829,7 +835,7 @@ async function gptReply(request,env,input,receipt,evidence=null,userRequest=''){
  let output=result?.response||result?.choices?.[0]?.message?.content;
  if(typeof output!=='string'||!output.trim())throw Error('empty_gpt_response');
  // One bounded correction; never fabricate a repository edit or execute a job.
- const dubious=()=>hasUnusableModelOutput(output)||isGenericBuildReply(userRequest,output)||hasUnverifiedActionClaim(userRequest,output)||hasModelToolLeak(output)||
+ const dubious=()=>hasUnusableModelOutput(output)||isGenericBuildReply(userRequest,output)||hasUnverifiedActionClaim(userRequest,output)||hasUnverifiedContextVerification(output)||hasModelToolLeak(output)||
   (Boolean(evidence)&&/\b(?:research|explain|summari[sz]e|analy[sz]e|compare|project)\b/i.test(userRequest)&&hasUnfinishedResearchDraft(output));
  if(dubious()){
   try{
