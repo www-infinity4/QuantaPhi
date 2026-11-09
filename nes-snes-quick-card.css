@@ -1,0 +1,23 @@
+/* Original Oracle Octaves game card: accessible at 320-720px and Android. */
+.nes-snes-card{padding:0!important;overflow:hidden;max-width:100%;background:#faf7ff;border:1px solid #d8cbe8;color:#251b37}
+.nes-snes-hero{position:relative;background:#171334}
+.nes-snes-hero img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.nes-snes-label{position:absolute;left:12px;top:12px;border-radius:999px;padding:7px 11px;color:#fff;background:#211335dd;font-size:12px;font-weight:800;letter-spacing:.06em}
+.nes-snes-content{padding:clamp(15px,4vw,24px)}
+.nes-snes-content h2{margin:4px 0 10px;font-size:clamp(23px,5vw,30px);line-height:1.2;color:#241a39}
+.nes-snes-content p{font-size:17px;line-height:1.5;color:#493d56}
+.nes-snes-actions{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}
+.nes-snes-actions button{font:750 17px/1.3 system-ui,sans-serif;min-height:48px;border-radius:13px;padding:12px 15px;touch-action:manipulation;background:#5d2d95;color:#fff}
+.nes-snes-actions button:last-child{background:#fff;color:#402c55;border:1px solid #a699b6}
+.nes-snes-actions button:disabled{opacity:.48;cursor:not-allowed}
+.nes-snes-actions button:focus-visible{outline:3px solid #edbd55;outline-offset:3px}
+.nes-snes-status{font-weight:700;min-height:28px}
+.nes-snes-slot{width:100%;overflow:hidden}
+.nes-snes-slot iframe{display:block;width:100%;height:660px;border:1px solid #aea0c3;border-radius:14px;background:#111226}
+.nes-snes-content .nes-snes-note{font-size:14px;line-height:1.55;color:#62576e}
+@media(max-width:420px){
+ .nes-snes-content{padding:14px}
+ .nes-snes-actions button{width:100%;min-height:48px}
+ .nes-snes-slot iframe{height:590px}
+}
+@media(prefers-reduced-motion:reduce){.nes-snes-actions button{transition:none}}
