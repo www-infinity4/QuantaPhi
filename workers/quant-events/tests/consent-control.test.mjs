@@ -21,6 +21,7 @@ function fixture(){
       async first(){return stmt.get(...args)||null;},
       async run(){const r=stmt.run(...args);return {success:true,meta:{changes:r.changes}};}
     };}}}
+    }
   };
   return {sqlite,calls,env};
 }
