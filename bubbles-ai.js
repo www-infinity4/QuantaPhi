@@ -2674,6 +2674,37 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    }
   }
  }
+ // Registered Bubbles tool inventory is a first-party, read-only gateway operation.
+ // Do not burn model inference, open a provider popup, or impersonate owner
+ // authorization just to answer "what tools can you use?".
+ const nativeCapabilityDiscovery=!pendingImage&&/^(?:(?:hey|hi|hello)[,\s]+)?(?:bubbles[,\s]+)?(?:(?:what|which)\s+(?:(?:are|is|do)\s+)?(?:(?:your|the|available|existing|registered)\s+)?(?:tools?|skills?|capabilities|abilities)\b|(?:show|list|find|discover|locate)\s+(?:(?:me|us)\s+)?(?:(?:your|existing|available|registered|bubbles)\s+){1,3}(?:tools?|skills?|capabilities|abilities)\b|(?:where|how)\b.{0,75}\b(?:your|bubbles|available|existing)\b.{0,50}\b(?:tools?|skills?|capabilities|abilities)\b|do\s+you\s+have\s+(?:tools?|skills?|capabilities|abilities)\b|what\s+can\s+you\s+do\b)/i.test(spoken);
+ if(nativeCapabilityDiscovery){
+  busy=true;send.disabled=true;display(spoken,'you');clearSentComposer();setOrbState('thinking');
+  let reply,voiceSummary;
+  try{
+   const res=await bubblesFetch(AI,{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({request:spoken})},15000);
+   const json=await res.json().catch(()=>({}));
+   if(!res.ok||json.ok!==true||json.receipt?.tool!=='bubbles.capabilities'||json.receipt.status!=='complete')
+    throw Error('verified_capability_receipt_unavailable');
+   reply=String(json.output||'Bubbles found the registered tool directory.').slice(0,3000);
+   const matches=Array.isArray(json.recommendedCapabilities)?json.recommendedCapabilities:[];
+   const names=matches.slice(0,4).map(item=>String(item.title||item.id||'').slice(0,75)).filter(Boolean);
+   voiceSummary='I found '+(names.length?names.join(', '):'my registered tools')+
+    '. An actual tool receipt must confirm any execution. Owner GitHub and Cloudflare changes require authenticated work.';
+   if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',
+    {detail:{type:'tool_receipt',tool:json.receipt.tool,status:json.receipt.status,receiptId:json.receipt.id}}));
+  }catch(error){
+   reply='My live tool directory could not be verified. I have not checked or executed any owner GitHub, Cloudflare, or browser action.';
+   voiceSummary=reply;
+  }
+  display(reply,'ai');messages.push({role:'user',text:spoken},{role:'assistant',text:reply});
+  messages=messages.slice(-400);persistChat();status.textContent=voiceSummary.slice(0,250);
+  if(nativeOverlay&&fromVoice)nativeSpeechReply=voiceSummary;
+  else if(config.voice&&!nativeOverlay)speakText(voiceSummary);
+  nativeSpeechPending=false;busy=false;send.disabled=false;
+  setOrbState(voiceEnabled?'listening':'idle');drainVoiceTurns();return;
+ }
  // General semantic route: GPT-OSS chooses among the ACTUAL card catalog
  // and one read-only phone observation. It does not execute model-generated
  // permissions, repository writes, taps, payments or arbitrary scripts.
