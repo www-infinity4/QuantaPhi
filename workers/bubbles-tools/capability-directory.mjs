@@ -49,6 +49,7 @@ export function isCapabilityDiscoveryQuestion(input){
  const q=raw.replace(/^(?:(?:please|hey|hi|hello|okay|ok|bubbles)[\s,:]+)+/i,'').trim();
  // Inventory means Bubbles' registered abilities, not arbitrary tools on the internet
  // or a file whose name happens to contain "tools".
+ if(/^(?:what can you do|what are you capable of)[.!?]*$/i.test(q))return true;
  if(!/\b(?:tools?|skills?|capabilities|abilities)\b/i.test(q))return false;
  return /^(?:(?:what|which)\s+(?:(?:are|is)\s+)?(?:(?:your|the|available|existing|registered)\s+)?(?:tools?|skills?|capabilities|abilities)\b|(?:where|how)\b.{0,75}\b(?:your|bubbles|available|existing)\b.{0,50}\b(?:tools?|skills?|capabilities|abilities)\b|(?:show|list|find|discover|locate)\s+(?:(?:me|us)\s+)?(?:(?:your|existing|available|registered|bubbles)\s+){1,3}(?:tools?|skills?|capabilities|abilities)\b|(?:can|could|would)\s+you\s+(?:show|list|find|locate|describe|tell)\b.{0,55}\b(?:your|existing|available)\s+(?:tools?|skills?|capabilities|abilities)\b|do\s+you\s+have\s+(?:tools?|skills?|capabilities|abilities)\b)/i.test(q);
 }
