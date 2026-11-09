@@ -3,41 +3,146 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T05:31:31.113433Z",
+  "checked_at": "2026-11-09T06:01:47.256063Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "nfl standings",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-09T05:10:00Z",
+      "query": "juju watkins",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-09T05:30:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50426396/jets-frustrated-geno-smith-membou",
-        "https://nypost.com/2026/11/08/sports/reeling-jets-regress-in-blowout-loss-to-chiefs/",
-        "https://www.nydailynews.com/2026/11/07/mike-lupica-time-for-the-jets-to-press-reset-on-their-reset/"
+        "https://www.foxnews.com/video/6408120473112",
+        "https://www.espn.com/womens-college-basketball/recap/_/gameId/401927106",
+        "https://www.cbssports.com/watch/nfl/video/highlights-utah-state-at-no-3-usc-118"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBSD-T4VeqVJFrtGT2Oscg5cGk5pt82gdk1RKpvdBxlj-5q0gtxK3oxk96OzU",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTRuja7QxwnYV3uNtZcgcOnmyVF21C3qXvPhTaOa4LMG3HQwFqkXzcFDp3FZc",
+      "image_credit": "Fox News",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50426396/jets-frustrated-geno-smith-membou",
-          "title": "Jets begin to unravel on and off field as losing streak hits 4 games",
+          "url": "https://www.foxnews.com/video/6408120473112",
+          "title": "Utah State Aggies vs No. 3 USC Trojans Highlights | Women's College Basketball",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTRuja7QxwnYV3uNtZcgcOnmyVF21C3qXvPhTaOa4LMG3HQwFqkXzcFDp3FZc"
+        },
+        {
+          "url": "https://www.espn.com/womens-college-basketball/recap/_/gameId/401927106",
+          "title": "USC 118-40 Utah State (Nov 8, 2026) Game Recap",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBSD-T4VeqVJFrtGT2Oscg5cGk5pt82gdk1RKpvdBxlj-5q0gtxK3oxk96OzU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5HhPf0P3eVP63dNuLcuvGGkPEmxG2szzX2SshFtz2WnyPvTnO8DoNWBTgkVk"
         },
         {
-          "url": "https://nypost.com/2026/11/08/sports/reeling-jets-regress-in-blowout-loss-to-chiefs/",
-          "title": "Reeling Jets regress in blowout loss to Chiefs",
-          "publisher": "New York Post",
+          "url": "https://www.cbssports.com/watch/nfl/video/highlights-utah-state-at-no-3-usc-118",
+          "title": "NCAAW Highlights: Utah State at No. 3 USC (11/8) Stream of National Football League",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSokjPhUNVT6JcAcYqPVkg78p_AdQlS5a5EJFLBI_PIlBQqOmVqPb-brANONrQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThoJkNidAlwDOOxWph4ZH6Lx2DoCsbHs57jCsdfEokxOsjBYkrmA55GPCwoXM"
+        }
+      ]
+    },
+    {
+      "query": "delhi aqi",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T05:30:00Z",
+      "related_news_urls": [
+        "https://www.dw.com/en/india-delhi-chokes-on-most-polluted-diwali-eve-in-10-years/live-79883248",
+        "https://www.yahoo.com/news/world/articles/indian-capital-chokes-pollution-diwali-040704612.html",
+        "https://www.wral.com/news/ap/f3ba1-new-delhi-wakes-to-toxic-smog-after-diwali-as-firecrackers-add-to-seasonal-pollution-crisis/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhoku61qu-W7i_SYXq_rCqix7-XuMy-wgh-4ntWBk2omeIcd9XEvlderFufaA",
+      "image_credit": "DW.com",
+      "news": [
+        {
+          "url": "https://www.dw.com/en/india-delhi-chokes-on-most-polluted-diwali-eve-in-10-years/live-79883248",
+          "title": "India: Delhi chokes on most polluted Diwali eve in 10 years",
+          "publisher": "DW.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhoku61qu-W7i_SYXq_rCqix7-XuMy-wgh-4ntWBk2omeIcd9XEvlderFufaA"
         },
         {
-          "url": "https://www.nydailynews.com/2026/11/07/mike-lupica-time-for-the-jets-to-press-reset-on-their-reset/",
-          "title": "Mike Lupica: Time for the Jets to press reset on their reset",
-          "publisher": "New York Daily News",
+          "url": "https://www.yahoo.com/news/world/articles/indian-capital-chokes-pollution-diwali-040704612.html",
+          "title": "Indian capital chokes with pollution after Diwali fireworks",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFxSSRDSl0BiYO0I-3ToPZ-_VTfHz5nj3ryjX1BHqyF6MyVyBD9uT8kqM5918"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoKpNE4h9VKIDP5lnGvs3uERaKn9Hd3_BQ-DZgcdTbsV78m30pamPyU2YHX8E"
+        },
+        {
+          "url": "https://www.wral.com/news/ap/f3ba1-new-delhi-wakes-to-toxic-smog-after-diwali-as-firecrackers-add-to-seasonal-pollution-crisis/",
+          "title": "New Delhi wakes to toxic smog after Diwali as firecrackers add to seasonal pollution crisis",
+          "publisher": "WRAL",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVGmWdefhDcd0pRmf288rL-5sFle5X9JlbrBJLM7240DYR6HFwsvZIKvAXQ2Q"
+        }
+      ]
+    },
+    {
+      "query": "carson wentz",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T05:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/nfl/breaking-news/article/carson-wentz-to-start-at-qb-for-vikings-on-monday-night-vs-bills-with-kyler-murray-nursing-hamstring-injury-182733631.html",
+        "https://www.nfl.com/news/vikings-to-start-carson-wentz-vs-bills-kyler-murray-hamstring",
+        "https://bringmethesports.com/report-kyler-murrays-hamstring-strain-may-keep-him-out-beyond-bills-game"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvGlMpvlFF3T_r_QKzY-XFiZxSs3sTA6RqbxdSF3qxrrQ-yv58dtVSK_iXqYk",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/nfl/breaking-news/article/carson-wentz-to-start-at-qb-for-vikings-on-monday-night-vs-bills-with-kyler-murray-nursing-hamstring-injury-182733631.html",
+          "title": "Carson Wentz to start at QB for Vikings on Monday night vs. Bills, with Kyler Murray nursing hamstring injury",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvGlMpvlFF3T_r_QKzY-XFiZxSs3sTA6RqbxdSF3qxrrQ-yv58dtVSK_iXqYk"
+        },
+        {
+          "url": "https://www.nfl.com/news/vikings-to-start-carson-wentz-vs-bills-kyler-murray-hamstring",
+          "title": "Vikings to start Carson Wentz vs. Bills on Monday with Kyler Murray battling hamstring injury",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOI54QC0nZL4aySkqbhOx9TBg1KhR0-vGSaBw0kVWjTavuEYSGxJYmjy1Su6U"
+        },
+        {
+          "url": "https://bringmethesports.com/report-kyler-murrays-hamstring-strain-may-keep-him-out-beyond-bills-game",
+          "title": "Report: Kyler Murray’s hamstring strain may keep him out beyond Bills game",
+          "publisher": "Bring Me the Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqs9WI2gdcEaWEe7P3ZhNKN5QQd1_k4EkkW_labCGWjo47A4-cuyGiiP9iDxs"
+        }
+      ]
+    },
+    {
+      "query": "claressa shields",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T05:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/claressa-shields-makes-serious-allegation-022348427.html",
+        "https://www.instagram.com/p/DfVaxrWAbi5/",
+        "https://www.hotnewhiphop.com/1016056-claressa-sheilds-gervonta-davis-beef-shakur"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0xTNTbPWqXIg41XI5MGatg3SdKocxf-k8ypLSxq9cV_XUhJz0KAk5ljBynfg",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/claressa-shields-makes-serious-allegation-022348427.html",
+          "title": "Claressa Shields Makes Serious Allegation Against Gervonta Davis — 'I Saw It With My Own Two Eyes'",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0xTNTbPWqXIg41XI5MGatg3SdKocxf-k8ypLSxq9cV_XUhJz0KAk5ljBynfg"
+        },
+        {
+          "url": "https://www.instagram.com/p/DfVaxrWAbi5/",
+          "title": "Chile! #Papoose and #GervontaDavis are going at it after the boxer said #ClaressaShields’ outfit was a “hot a** mess.” 📹📷 (@popoutmagazine @gettyimages )✍🏾#TSRStaffAS",
+          "publisher": "Instagram",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://www.hotnewhiphop.com/1016056-claressa-sheilds-gervonta-davis-beef-shakur",
+          "title": "Claressa Shields Isn't Done With Gervonta Davis As Feud Gets Personal",
+          "publisher": "HotNewHipHop",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpG_yRhjJWZ73MKr9CG40XlD2M2TGs0K5Gw4GQquRm1USq68AQc4dYmvUYcQo"
         }
       ]
     },
@@ -85,7 +190,7 @@
         "https://www.covers.com/sport/basketball/ncaab/matchup/394911/picks",
         "https://www.dimers.com/news/best-bets-11-08-2026-ac"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-hYvvU8Fdyaub-QnNAgEZZ9H540kcmu5JWauguvOqcRhcDKqJwPmT09FP62Q",
       "image_credit": "Sportsgambler",
       "news": [
         {
@@ -93,7 +198,7 @@
           "title": "UT Arlington vs Hawaii Prediction, Picks & Odds | 08 Nov 2026",
           "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-hYvvU8Fdyaub-QnNAgEZZ9H540kcmu5JWauguvOqcRhcDKqJwPmT09FP62Q"
         },
         {
           "url": "https://www.covers.com/sport/basketball/ncaab/matchup/394911/picks",
@@ -151,20 +256,13 @@
       "approx_searches": "200+",
       "published_at": "2026-11-09T05:00:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/nba/news/giannis-antetokounmpo-leads-heat-past-kings-with-29-points/",
         "https://www.sun-sentinel.com/2026/11/08/windermans-view-spoelstra-sends-wakeup-call-to-wiggins-in-win-with-rotation-remix/",
-        "https://www.si.com/nba/heat/onsi/the-miami-heat-make-a-starting-lineup-change-01m6yztdcqy2"
+        "https://www.si.com/nba/heat/onsi/the-miami-heat-make-a-starting-lineup-change-01m6yztdcqy2",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/mia-starts-mitchell-klay-larsson-giannis-bam"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnLuJyGE-4fvkpkhhFpY-KsXN2Bt_GwESwcn8jwJiK_oJLd0rhId20iDjdsJ0",
-      "image_credit": "CBS Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc2l4qQ0MJOLheUQ_EW89ktHgPeQmvDQy3Ht16I2EcwfH7GI1zeEZ8Ij5fX5E",
+      "image_credit": "Sun Sentinel",
       "news": [
-        {
-          "url": "https://www.cbssports.com/nba/news/giannis-antetokounmpo-leads-heat-past-kings-with-29-points/",
-          "title": "Giannis Antetokounmpo leads Heat past Kings with 29 points",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnLuJyGE-4fvkpkhhFpY-KsXN2Bt_GwESwcn8jwJiK_oJLd0rhId20iDjdsJ0"
-        },
         {
           "url": "https://www.sun-sentinel.com/2026/11/08/windermans-view-spoelstra-sends-wakeup-call-to-wiggins-in-win-with-rotation-remix/",
           "title": "Winderman’s view: Heat’s Spoelstra sends wakeup call to Wiggins in win with rotation remix",
@@ -178,12 +276,19 @@
           "publisher": "Sports Illustrated",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBFFHsRBirTR7a_l3_qk-tMGukSqoXlRF2duNRSAML5qu36ohzLwuDwCLpxmk"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/mia-starts-mitchell-klay-larsson-giannis-bam",
+          "title": "MIA starts Mitchell, Klay, Larsson, Giannis, Bam",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRanQyGh496i04uLMwJStfsiE_DbAnPp7XqUcQnAU38laIb0iPduRUqvKFSwVE"
         }
       ]
     },
     {
       "query": "nfc standings",
-      "approx_searches": "2000+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-09T04:50:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/articles/nfc-west-standings-show-why-050033343.html",
@@ -213,41 +318,6 @@
           "publisher": "Rams Wire",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRALILQ5Su3vlzH0PlBxTzMa9i-HIFtXxUFGtH9zyZ0vJX81e_3rjANG5EPl7c"
-        }
-      ]
-    },
-    {
-      "query": "vikings qb",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T04:50:00Z",
-      "related_news_urls": [
-        "https://bringmethenews.com/minnesota-sports/sunday-vikings-trade-buzz-on-jonathan-taylor-kirk-cousins-daniel-jones",
-        "https://www.espn.com/video/clip/_/id/50413783/vikings-qb-situation-starting-take-shape",
-        "https://www.startribune.com/minnesota-vikings-nfl-trade-deadline-moves-2026-jonathan-taylor-budda-baker-gm-nolan-teasley-targets/601908775"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTxNtTvdWXaY4Ly_H8inbV0u6seShHvGRGzqF3PZokzaUONo2FfzU9v6cZCGY",
-      "image_credit": "Bring Me The News",
-      "news": [
-        {
-          "url": "https://bringmethenews.com/minnesota-sports/sunday-vikings-trade-buzz-on-jonathan-taylor-kirk-cousins-daniel-jones",
-          "title": "Sunday Vikings trade buzz on Jonathan Taylor, Kirk Cousins, Daniel Jones",
-          "publisher": "Bring Me The News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTxNtTvdWXaY4Ly_H8inbV0u6seShHvGRGzqF3PZokzaUONo2FfzU9v6cZCGY"
-        },
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50413783/vikings-qb-situation-starting-take-shape",
-          "title": "Vikings' QB situation starting to take shape",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCfvIUhgJwS3gidHeQwuZdtUo4HZzDcz7gUdeV7UPlVlIwLQxsuynRbzwekV0"
-        },
-        {
-          "url": "https://www.startribune.com/minnesota-vikings-nfl-trade-deadline-moves-2026-jonathan-taylor-budda-baker-gm-nolan-teasley-targets/601908775",
-          "title": "Vikings have trade deadline decisions to make beyond QB. Four positions to watch.",
-          "publisher": "Star Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZCRnjk07ar52kt49Rklvlvn1E5v6G96Yf1k8rDNYFuvthM2Zcsd80GisXCec"
         }
       ]
     },
@@ -283,76 +353,6 @@
           "publisher": "Heavy.com",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHznYzgRrNyl3rYBzZo1_yn6wyDLnz5NRhcsMOK68D0Ns4vhdsFya62fxcsIQ"
-        }
-      ]
-    },
-    {
-      "query": "nick jonas",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T04:50:00Z",
-      "related_news_urls": [
-        "https://people.com/nick-jonas-shares-what-he-resents-about-having-diabetes-12238940",
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/nick-jonas-reveals-unpredictability-life-024302015.html",
-        "https://www.hmenews.com/article/dexcom-invites-diabetes-community-to-share-their-journey-with-the-disease"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0WKywdGp6X3B6CqlmhGJIz5wemaOLq3S2Y5I2RGq7uHhDDjYdbWvJEZv-77k",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/nick-jonas-shares-what-he-resents-about-having-diabetes-12238940",
-          "title": "Nick Jonas Shares What He ‘Resents’ About Having Diabetes in a Candid Open Letter to the Disease",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0WKywdGp6X3B6CqlmhGJIz5wemaOLq3S2Y5I2RGq7uHhDDjYdbWvJEZv-77k"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/nick-jonas-reveals-unpredictability-life-024302015.html",
-          "title": "Nick Jonas reveals 'unpredictability' of life with diabetes",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7oTsJxIwE5BeoJUVCOF8AghL2Fln7mq8ayYzmsaaAeXOLZPNBRHfcXpDuFYs"
-        },
-        {
-          "url": "https://www.hmenews.com/article/dexcom-invites-diabetes-community-to-share-their-journey-with-the-disease",
-          "title": "Dexcom invites diabetes community to share their journey with the disease",
-          "publisher": "HME News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRI0pGQaRPLi9cPT1eRCJWGPY0cbyDiABddiD47xVBQtwqlCGoUc4YPzbaN_mA"
-        }
-      ]
-    },
-    {
-      "query": "bella coola bear trail search",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T04:50:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/news/grizzly-bear-kills-woman-daughter-canada-search/",
-        "https://www.nytimes.com/2026/11/05/world/canada/canada-grizzly-bear-attack-mother-daughter-killed.html",
-        "https://www.foxnews.com/world/canadian-mother-daughter-dead-suspected-grizzly-bear-attack-hiking-trail"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkoO-GFQCSXXgYzktuyrYJFy70hQU2_5oGu1gGtj1F022eDEP5lfNX-LUGYqk",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/news/grizzly-bear-kills-woman-daughter-canada-search/",
-          "title": "Grim details emerge after apparent grizzly bear attack kills woman and daughter in Canada",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkoO-GFQCSXXgYzktuyrYJFy70hQU2_5oGu1gGtj1F022eDEP5lfNX-LUGYqk"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/05/world/canada/canada-grizzly-bear-attack-mother-daughter-killed.html",
-          "title": "Canadian Officials Search for Bears After Mother and Daughter Are Killed on Hike",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVXw4_6GeUlaJleH63bRhhGChPe6PMGc0gil556DJ6CJj3pPsf9cqBOS0SPC8"
-        },
-        {
-          "url": "https://www.foxnews.com/world/canadian-mother-daughter-dead-suspected-grizzly-bear-attack-hiking-trail",
-          "title": "Canadian mother and daughter dead after suspected grizzly bear attack on hiking trail",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9vFo8R2ymj_idDx9a6cUfymZiYMMOtsK6Cwwzik-RsQV93ddvCziEdcVSa54"
         }
       ]
     }
