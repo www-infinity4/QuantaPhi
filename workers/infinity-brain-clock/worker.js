@@ -2,7 +2,7 @@ import {attachTechnicalHandoff} from './technical-handoff.mjs';
 import {ownerContinuitySnapshot} from './continuity-snapshot.mjs';
 import {COLOR_MODEL,colorCoreProfile,colorCoreSystemPrompt,validateColorThoughtRequest,validateColorThoughtResponse} from './color-core.mjs';
 import {scopedRepositoryJob} from './assigned-job-scope.mjs';
-import {runColorHandoffs} from './color-handoff.mjs';
+import {extractAssignedColorTask,runColorHandoffs} from './color-handoff.mjs';
 import {pinnedPinkReview,pinkReviewHasActiveRepair,validatePinkSourceReceipt,completePinkReviewInContext,prioritizeReadOnlyPinkReviews} from './source-review.mjs';
 import {conversationMemory} from './conversation-memory.mjs';
 import {validateOwnerAuditDraft} from './owner-audit-draft.mjs';
@@ -461,7 +461,7 @@ export class BrainClock extends DurableObject{
    // new permission, wallet credit or completion receipt.
    let roleHandoffs=[],roleHandoffStatus='not_needed';
    if(path==='/runner/plan'){
-    const task=String(assigned.instructions||'').split(/\\n\\nExecution plan/)[0].slice(0,2400);
+    const task=extractAssignedColorTask(assigned.instructions);
     try{
      roleHandoffs=await runColorHandoffs(this.env.WRITER_AI,{task,evidence:{
       repository:lease.repository,jobId:lease.jobId,
