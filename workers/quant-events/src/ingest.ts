@@ -63,7 +63,7 @@ const EVENT_ID_PATTERN = /^[a-zA-Z0-9._:-]{8,128}$/;
 function response(body: object, status: number): Response {
   return Response.json(body, {
     status,
-    headers: { 'Cache-Control': 'no-store' },
+    headers: { 'Cache-Control': 'no-store', 'X-Content-Type-Options':'nosniff','Vary':'Origin' },
   });
 }
 function normalizeTag(value: unknown, max: number): string | null {
@@ -82,31 +82,31 @@ function cleanEdge(value: unknown, max: number): string | null {
 function parsePayload(payload: unknown): { data?: IngestPayload; status: number; error?: string } {
   if (!isRecord(payload) || !Array.isArray(payload.queries) ||
       payload.queries.length === 0 || payload.queries.length > MAX_EVENTS) {
-    return { status: 400, error: 'queries must be a nonempty array of at most 100 structured events' };
+    return { status: 400, error: 'queries_required' };
   }
   if (!isRecord(payload.user) || typeof payload.user.id !== 'string') {
-    return { status: 422, error: 'user.id is required' };
+    return { status: 422, error: 'user_id_required' };
   }
   const userId = payload.user.id.trim();
   if (!EVENT_ID_PATTERN.test(userId)) {
-    return { status: 422, error: 'user.id must be 8-128 safe characters' };
+    return { status: 422, error: 'invalid_user_id' };
   }
   const deviceValue = payload.user.device_type;
   const deviceType = deviceValue === undefined ? 'unknown' : normalizeTag(deviceValue, 12);
   if (!deviceType || !['mobile', 'tablet', 'desktop', 'unknown'].includes(deviceType)) {
-    return { status: 422, error: 'invalid user.device_type' };
+    return { status: 422, error: 'invalid_device_type' };
   }
   const seen = new Set<string>();
   const events: EventRow[] = [];
   for (const item of payload.queries) {
     if (!isRecord(item) || typeof item.id !== 'string' || !EVENT_ID_PATTERN.test(item.id) || seen.has(item.id)) {
-      return { status: 422, error: 'each query needs a unique event id (8-128 safe characters)' };
+      return { status: 422, error: 'invalid_event_id' };
     }
     const eventType = normalizeTag(item.event_type, 120);
     const targetEntity = normalizeTag(item.target_entity, 240);
     if (!eventType || !targetEntity || typeof item.numerical_value !== 'number' ||
         !Number.isFinite(item.numerical_value)) {
-      return { status: 422, error: 'invalid event_type, target_entity, or numerical_value' };
+      return { status: 422, error: 'invalid_event' };
     }
     seen.add(item.id);
     events.push({ id: item.id, event_type: eventType, target_entity: targetEntity, numerical_value: item.numerical_value });
@@ -127,6 +127,17 @@ function getEdge(request: Request): EdgeData {
  * The caller sets signed geo=1 only after confirming current user consent.
  * This staged contract does not by itself wire QuantaPhi's sign-in adapter.
  */
+// Cache the current verification key per isolate, rotating when a signing secret changes.
+let cachedIdentityKey: {secret:string;key:Promise<CryptoKey>}|undefined;
+function hmacKey(secret:string):Promise<CryptoKey> {
+  if(!cachedIdentityKey || cachedIdentityKey.secret!==secret) {
+    const key=crypto.subtle.importKey('raw',new TextEncoder().encode(secret),
+      {name:'HMAC',hash:'SHA-256'},false,['verify']);
+    cachedIdentityKey={secret,key};
+    key.catch(()=>{if(cachedIdentityKey?.key===key)cachedIdentityKey=undefined;});
+  }
+  return cachedIdentityKey.key;
+}
 async function verifyIdentity(request: Request, userId: string, secret: string): Promise<{geoConsent:boolean}|null> {
   const tsText = request.headers.get('x-quant-identity-time') ?? '';
   const geo = request.headers.get('x-quant-identity-geo');
@@ -135,8 +146,7 @@ async function verifyIdentity(request: Request, userId: string, secret: string):
   const ts = Number(tsText);
   const now = Date.now();
   if (!Number.isSafeInteger(ts) || ts <= 0 || Math.abs(now - ts) > 5 * 60 * 1000) return null;
-  const key = await crypto.subtle.importKey('raw', new TextEncoder().encode(secret),
-    { name:'HMAC', hash:'SHA-256' }, false, ['verify']);
+  const key = await hmacKey(secret);
   const sig = Uint8Array.from(hex.match(/../g)!, part => parseInt(part, 16));
   const message = new TextEncoder().encode(`v1\n${userId}\n${ts}\n${geo}`);
   const verified = await crypto.subtle.verify('HMAC', key, sig, message);
@@ -234,65 +244,69 @@ async function persist(db: DB, packets: Array<{data:IngestPayload;item:QueueItem
 
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
-    if (new URL(request.url).pathname !== '/v1/events') return response({error:'not found'},404);
-    if (request.method !== 'POST') return response({error:'POST required'},405);
+    if (new URL(request.url).pathname !== '/v1/events') return response({error:'not_found'},404);
+    if (request.method !== 'POST') return response({error:'post_required'},405);
     if (!env.INGEST_TOKEN || request.headers.get('authorization') !== `Bearer ${env.INGEST_TOKEN}`)
       return response({error:'unauthorized'},401);
     if (!/^application\/json(?:\s*;|$)/i.test(request.headers.get('content-type')??''))
-      return response({error:'application/json required'},415);
+      return response({error:'json_required'},415);
     const contentLength=Number(request.headers.get('content-length')??0);
-    if (contentLength>MAX_BODY_BYTES) return response({error:'body too large'},413);
+    if (contentLength>MAX_BODY_BYTES) return response({error:'body_too_large'},413);
 
     let payload:unknown;
     try {
       // Enforce the limit while reading, even when Content-Length is omitted.
       const reader=request.body?.getReader();
-      if (!reader) return response({error:'malformed JSON'},400);
+      if (!reader) return response({error:'malformed_json'},400);
       const decoder=new TextDecoder('utf-8',{fatal:true});
       let json='';let bytes=0;
       while(true) {
         const part=await reader.read();if(part.done) break;
         bytes+=part.value.byteLength;
-        if(bytes>MAX_BODY_BYTES) {await reader.cancel();return response({error:'body too large'},413);}
+        if(bytes>MAX_BODY_BYTES) {await reader.cancel();return response({error:'body_too_large'},413);}
         json+=decoder.decode(part.value,{stream:true});
       }
       json+=decoder.decode();
       payload=JSON.parse(json);
-    } catch {return response({error:'malformed JSON'},400);}
+    } catch {return response({error:'malformed_json'},400);}
 
     const parsed=parsePayload(payload);
     if (!parsed.data) return response({error:parsed.error},parsed.status);
-    if (!env.USER_IDENTITY_HMAC_SECRET) return response({error:'identity verifier unavailable'},503);
+    if (!env.USER_IDENTITY_HMAC_SECRET) return response({error:'identity_verifier_unavailable'},503);
     let identity: {geoConsent:boolean}|null;
     try { identity = await verifyIdentity(request, parsed.data.userId, env.USER_IDENTITY_HMAC_SECRET); }
-    catch { return response({error:'identity verifier unavailable'},503); }
-    if (!identity) return response({error:'unverified user identity'},401);
+    catch { return response({error:'identity_verifier_unavailable'},503); }
+    if (!identity) return response({error:'unverified_user_identity'},401);
     // Only store edge metadata with both a signed consent claim and a reviewed server rollout flag.
     const geoAllowed = identity.geoConsent && env.GEO_STORAGE_ENABLED === 'true';
     const edge:EdgeData = geoAllowed ? getEdge(request) : {region:null,stateCode:null,postalCode:null};
     const item=toQueueItem(parsed.data,edge,Date.now());
     const mode=env.INGEST_MODE;
     if (mode==='queue') {
-      if (!env.EVENT_QUEUE) return response({error:'queue unavailable'},503);
+      if (!env.EVENT_QUEUE) return response({error:'queue_unavailable'},503);
       try {
         await env.EVENT_QUEUE.send(item);
         // Durable Queue acceptance is NOT a D1 commit. Never report inserted here.
         return response({received:item.queries.length,accepted:item.queries.length,persisted:false},202);
       } catch {
-        return response({error:'queue temporarily unavailable'},503);
+        return response({error:'queue_temporarily_unavailable'},503);
       }
     }
-    if(mode!=='direct') return response({error:'invalid INGEST_MODE configuration'},503);
+    if(mode!=='direct') return response({error:'invalid_ingest_mode'},503);
     // Production must use Queues. Direct writes are a deliberate staging-only
     // exception, and even there SQL must enforce the current consent row.
-    if(env.DIRECT_STAGING_ALLOWED!=='true') return response({error:'direct ingestion disabled'},503);
-    if(!env.DB) return response({error:'database unavailable'},503);
+    if(env.DIRECT_STAGING_ALLOWED!=='true') return response({error:'direct_ingestion_disabled'},503);
+    if(!env.DB) return response({error:'database_unavailable'},503);
     try {
       const {inserted,totalEvents}=await persist(env.DB,[{data:parsed.data,item}],true);
       return response({received:totalEvents,inserted,duplicates:totalEvents-inserted},inserted?201:200);
-    } catch {
-      console.error('D1 ingest failed');
-      return response({error:'database temporarily unavailable'},503);
+    } catch (error) {
+      // Staging-only path: log the D1 failure, never the request payload or bearer.
+      const details=error instanceof Error
+        ? {name:error.name,message:error.message,stack:error.stack}
+        : {name:'UnknownError'};
+      console.error('D1 ingest failed',details);
+      return response({error:'database_temporarily_unavailable'},503);
     }
   },
   async queue(batch: {messages:Array<{body:unknown}>},env:Env): Promise<void> {
