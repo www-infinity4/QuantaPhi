@@ -72,3 +72,38 @@ test('spoken Cloudflare Worker repair and deployment instructions route to signe
   assert.equal(brain.classify(question),'chat',question);
  }
 });
+
+test('one capability-intent predicate handles browser and Cloudflare gateway consistently',async()=>{
+ const shared=await import('../bubbles-capability-intent.mjs');
+ for(const request of [
+  'Please list your tools','Bubbles, what tools and skills do you have?',
+  'What can you do for me?','Which tools can read GitHub?',
+  'Find your existing tools for searching the web'
+ ])assert.equal(shared.isCapabilityDiscoveryQuestion(request),true,request);
+ for(const request of [
+  'Show existing tools.js in www-infinity4/QuantaPhi repository',
+  'Show bubbles-live-tools.js in www-infinity4/QuantaPhi repository',
+  'What tools are described at https://example.com/tools? Read and summarize that page.',
+  'Find online JavaScript debugging tools','Fix the Bubbles tool directory'
+ ])assert.equal(shared.isCapabilityDiscoveryQuestion(request),false,request);
+ const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ const gateway=readFileSync(new URL('../workers/bubbles-tools/capability-directory.mjs',import.meta.url),'utf8');
+ assert.match(ui,/import\('\/bubbles-capability-intent\.mjs\?v=/);
+ assert.match(gateway,/from '\.\.\/\.\.\/bubbles-capability-intent\.mjs'/);
+ assert.doesNotMatch(ui,/const nativeCapabilityDiscovery=!pendingImage&&\/\^/);
+ assert.equal(isCapabilityDiscoveryQuestion,shared.isCapabilityDiscoveryQuestion);
+});
+
+test('source-read and owner-write discovery must return the correct actual adapter',()=>{
+ for(const question of [
+  'Show your existing tools to commit changes',
+  'Which tools can commit to GitHub?',
+  'Which tools can commit a file to GitHub?'
+ ])assert.equal(recommendCapabilities(question,{BRAIN:{}})[0]?.id,'robot_brain.owner_work',question);
+ assert.equal(recommendCapabilities('Which tool can read a GitHub commit?')[0]?.id,'github.read_commit');
+ for(const question of [
+  'Which tools can test recall of my saved owner memory?',
+  'What tools can access my private conversation memory?'
+ ])assert.equal(recommendCapabilities(question,{BRAIN:{}})[0]?.id,'bubbles.memory.owner',question);
+ assert.equal(recommendCapabilities('Which tools can run an Organic Computation memory benchmark?')[0]?.id,'organic.memory_benchmark');
+});
