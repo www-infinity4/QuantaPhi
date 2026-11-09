@@ -3,12 +3,117 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T19:01:35.253605Z",
+  "checked_at": "2026-11-09T19:31:07.823405Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "fall out boy tour",
+      "query": "gta vi",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-09T19:10:00Z",
+      "related_news_urls": [
+        "https://www.rockstargames.com/newswire/article/o39o87a435a25a/grand-theft-auto-vi-the-festival",
+        "https://www.yahoo.com/entertainment/music/festivals/articles/cardi-b-travis-scott-don-190615466.html",
+        "https://www.axios.com/local/miami/2026/11/09/gta-vi-announces-one-day-music-festival-in-miami"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTf4JFHWOvAt02qStHSu_s-qv5x4nmVyx0Je7BQtpFqMu3Gd47xZji-JHrw-Yg",
+      "image_credit": "Rockstar Games",
+      "news": [
+        {
+          "url": "https://www.rockstargames.com/newswire/article/o39o87a435a25a/grand-theft-auto-vi-the-festival",
+          "title": "Grand Theft Auto VI: The Festival",
+          "publisher": "Rockstar Games",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTf4JFHWOvAt02qStHSu_s-qv5x4nmVyx0Je7BQtpFqMu3Gd47xZji-JHrw-Yg"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/music/festivals/articles/cardi-b-travis-scott-don-190615466.html",
+          "title": "Cardi B, Travis Scott, Don Toliver & More to Perform at ‘Grand Theft Auto VI’ Festival",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKkWNE4wyON9fydCnGfUoG7qm3cUYjkGvYqA0t7qTb7ADfBK3u_GCd8iDlkEE"
+        },
+        {
+          "url": "https://www.axios.com/local/miami/2026/11/09/gta-vi-announces-one-day-music-festival-in-miami",
+          "title": "Rockstar Games to host one-day music festival in Miami for GTF VI",
+          "publisher": "Axios",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5gfcVIjc1qoeK4OcmsCQzhewGPrYCkQ4yuKhA-CxxTAwV1LJE477kjDqlC78"
+        }
+      ]
+    },
+    {
+      "query": "fable 5.2",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-09T19:00:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/09/anthropic-claude-fable-5-2-mythos-5-2.html",
+        "https://www.bloomberg.com/news/articles/2026-11-09/anthropic-unveils-new-fable-mythos-ai-models-ahead-of-ipo",
+        "https://medium.com/data-science-collective/the-claude-mythos-5-5-leaks-one-by-one-0a8f234b9fbf"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6bYvb3lqQaCsB37Lc_VKJTNc4A7qafmCxn4JRkRQcr5o9BGpWbEh8OgnLnAM",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/09/anthropic-claude-fable-5-2-mythos-5-2.html",
+          "title": "Anthropic releases first frontier models since Amodei's call for slowdown as IPO buzz builds",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6bYvb3lqQaCsB37Lc_VKJTNc4A7qafmCxn4JRkRQcr5o9BGpWbEh8OgnLnAM"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-09/anthropic-unveils-new-fable-mythos-ai-models-ahead-of-ipo",
+          "title": "Anthropic Unveils New Fable, Mythos AI Models Ahead of IPO",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwbC_02-nQm2F4EHNS5qnwTXsPQvEmeKYdnTXVW-BNMH9iv2vOo0pClKJ9pTk"
+        },
+        {
+          "url": "https://medium.com/data-science-collective/the-claude-mythos-5-5-leaks-one-by-one-0a8f234b9fbf",
+          "title": "The Claude Mythos 5.5 Leaks, One by One",
+          "publisher": "Medium",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8elZY704FMofs-5aCVMxKm5W3gUyALqgo-OST0avYHYHYlpTjOOdSIiYZDvU"
+        }
+      ]
+    },
+    {
+      "query": "drummer",
       "approx_searches": "1000+",
+      "published_at": "2026-11-09T18:50:00Z",
+      "related_news_urls": [
+        "https://www.pennlive.com/entertainment/2026/11/popular-rock-drummer-dies-after-cancer-battle-he-fought-until-the-bitter-end.html",
+        "https://www.vice.com/en/article/veteran-rock-drummer-dies-after-years-long-cancer-battle-as-family-shares-heartbreaking-tribute/",
+        "https://www.syracuse.com/entertainment/2026/11/80s-rock-band-member-exits-lineup-ahead-of-new-tour-dates.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPlRdxr_37RNlqxfE5CAj5c16JSbr21Ue7fZ_ME9Z_rdJYDYnS5AewjJw-I74",
+      "image_credit": "PennLive.com",
+      "news": [
+        {
+          "url": "https://www.pennlive.com/entertainment/2026/11/popular-rock-drummer-dies-after-cancer-battle-he-fought-until-the-bitter-end.html",
+          "title": "Popular rock drummer dies after cancer battle: ‘He fought until the bitter end’",
+          "publisher": "PennLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPlRdxr_37RNlqxfE5CAj5c16JSbr21Ue7fZ_ME9Z_rdJYDYnS5AewjJw-I74"
+        },
+        {
+          "url": "https://www.vice.com/en/article/veteran-rock-drummer-dies-after-years-long-cancer-battle-as-family-shares-heartbreaking-tribute/",
+          "title": "Veteran Rock Drummer Dies After Years-Long Cancer Battle as Family Shares Heartbreaking Tribute",
+          "publisher": "VICE",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCtcYZsTO81pZH60blKaWLIztx0KbfNeCkAhSJ1QRXbW4-_l0qAPcUqhvZies"
+        },
+        {
+          "url": "https://www.syracuse.com/entertainment/2026/11/80s-rock-band-member-exits-lineup-ahead-of-new-tour-dates.html",
+          "title": "‘80s rock band member exits lineup ahead of new tour dates",
+          "publisher": "Syracuse.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7aDYycIFB5LfVOQzqZzRawapWdJDFVXRBSbp1gMMOIolNJoCjRXnG58o4Nao"
+        }
+      ]
+    },
+    {
+      "query": "fall out boy tour",
+      "approx_searches": "2000+",
       "published_at": "2026-11-09T18:40:00Z",
       "related_news_urls": [
         "https://www.rollingstone.com/music/music-features/fall-out-boy-interview-tour-dates-new-single-aces-1235654708/",
@@ -38,41 +143,6 @@
           "publisher": "Detroit Free Press",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3fwBImagqQBNfmnPuvHfFWCXGpSR23SQqIBkEAC-JKBH6xDYzUZtcTvCSJBw"
-        }
-      ]
-    },
-    {
-      "query": "activision",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T18:40:00Z",
-      "related_news_urls": [
-        "https://www.invenglobal.com/articles/28288/call-of-duty-cracks-down-on-warzone-agent-lobby-shopping-tool",
-        "https://ixbt.games/en/news/2026/11/09/activision-nacala-borbu-s-prilozeniem-warzone-agent-pozvoliaiushhim-vybirat-slabyx-protivnikov-v-call-of-duty-warzone.html",
-        "https://www.eurogamer.net/call-of-duty-warzone-agent-cheating-software-shutdown"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvB2IC7O7AyInvqPvOFlZCFNsbZ2ClFZ3fcSeCksYMjXXzSHMM3YiE1vQaNuc",
-      "image_credit": "Inven Global",
-      "news": [
-        {
-          "url": "https://www.invenglobal.com/articles/28288/call-of-duty-cracks-down-on-warzone-agent-lobby-shopping-tool",
-          "title": "Call of Duty cracks down on Warzone Agent lobby-shopping tool",
-          "publisher": "Inven Global",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvB2IC7O7AyInvqPvOFlZCFNsbZ2ClFZ3fcSeCksYMjXXzSHMM3YiE1vQaNuc"
-        },
-        {
-          "url": "https://ixbt.games/en/news/2026/11/09/activision-nacala-borbu-s-prilozeniem-warzone-agent-pozvoliaiushhim-vybirat-slabyx-protivnikov-v-call-of-duty-warzone.html",
-          "title": "Activision begins crackdown on Warzone Agent app that allows picking weak opponents in Call of Duty: Warzone",
-          "publisher": "iXBT.games",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjdBjmpKJ-0B1A07pQjUa54CpsdtN1RvT2M7uaqRkxmhu1b1-B5YeITx69ebA"
-        },
-        {
-          "url": "https://www.eurogamer.net/call-of-duty-warzone-agent-cheating-software-shutdown",
-          "title": "Activision cracking down on popular Call of Duty: Warzone app that basically constituted cheating",
-          "publisher": "Eurogamer.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRfe2A3IjzsdImZVjTAt_lqBTxAx4j9rH8Q_VkjT6UZHYIQ0WCB6VeNjkgbhbE"
         }
       ]
     },
@@ -147,37 +217,72 @@
       ]
     },
     {
+      "query": "activision",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T18:40:00Z",
+      "related_news_urls": [
+        "https://www.invenglobal.com/articles/28288/call-of-duty-cracks-down-on-warzone-agent-lobby-shopping-tool",
+        "https://ixbt.games/en/news/2026/11/09/activision-nacala-borbu-s-prilozeniem-warzone-agent-pozvoliaiushhim-vybirat-slabyx-protivnikov-v-call-of-duty-warzone.html",
+        "https://www.eurogamer.net/call-of-duty-warzone-agent-cheating-software-shutdown"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvB2IC7O7AyInvqPvOFlZCFNsbZ2ClFZ3fcSeCksYMjXXzSHMM3YiE1vQaNuc",
+      "image_credit": "Inven Global",
+      "news": [
+        {
+          "url": "https://www.invenglobal.com/articles/28288/call-of-duty-cracks-down-on-warzone-agent-lobby-shopping-tool",
+          "title": "Call of Duty cracks down on Warzone Agent lobby-shopping tool",
+          "publisher": "Inven Global",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvB2IC7O7AyInvqPvOFlZCFNsbZ2ClFZ3fcSeCksYMjXXzSHMM3YiE1vQaNuc"
+        },
+        {
+          "url": "https://ixbt.games/en/news/2026/11/09/activision-nacala-borbu-s-prilozeniem-warzone-agent-pozvoliaiushhim-vybirat-slabyx-protivnikov-v-call-of-duty-warzone.html",
+          "title": "Activision begins crackdown on Warzone Agent app that allows picking weak opponents in Call of Duty: Warzone",
+          "publisher": "iXBT.games",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjdBjmpKJ-0B1A07pQjUa54CpsdtN1RvT2M7uaqRkxmhu1b1-B5YeITx69ebA"
+        },
+        {
+          "url": "https://www.eurogamer.net/call-of-duty-warzone-agent-cheating-software-shutdown",
+          "title": "Activision cracking down on popular Call of Duty: Warzone app that basically constituted cheating",
+          "publisher": "Eurogamer.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRfe2A3IjzsdImZVjTAt_lqBTxAx4j9rH8Q_VkjT6UZHYIQ0WCB6VeNjkgbhbE"
+        }
+      ]
+    },
+    {
       "query": "andre cisco",
-      "approx_searches": "5000+",
+      "approx_searches": "10000+",
       "published_at": "2026-11-09T18:30:00Z",
       "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/lions-agree-to-acquire-s-andre-cisco-from-jets",
-        "https://www.detroitnews.com/story/sports/nfl/lions/2026/11/09/detroit-lions-trade-andre-cisco-stats-new-york-jets-safety/92693765007/",
-        "https://heavy.com/sports/nfl/jacksonville-jaguars/ex-jaguars-star-traded-lions/"
+        "https://www.prideofdetroit.com/detroit-lions-news/180431/detroit-lions-trade-veteran-safety-andre-cisco-new-york-jets",
+        "https://www.nytimes.com/athletic/live-blogs/nfl-trade-deadline-2026-live-updates-news-grades-tracker/V6wZ6DTPEgzk/",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/lions-agree-to-acquire-s-andre-cisco-from-jets"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3mT-brPZaQOip-bOAh9w7ZPQUzu4SPILjq5xaWEUOmubt29OTOnL5PuLCVoc",
-      "image_credit": "NBC Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNnqrDpRkMHQYQAxSQeq2OuznnX4nLHYhL-YL5JEQvtT4HsWaIylQaTYtZ9sc",
+      "image_credit": "Pride Of Detroit",
       "news": [
+        {
+          "url": "https://www.prideofdetroit.com/detroit-lions-news/180431/detroit-lions-trade-veteran-safety-andre-cisco-new-york-jets",
+          "title": "Detroit Lions trade for veteran safety from Jets",
+          "publisher": "Pride Of Detroit",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNnqrDpRkMHQYQAxSQeq2OuznnX4nLHYhL-YL5JEQvtT4HsWaIylQaTYtZ9sc"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/live-blogs/nfl-trade-deadline-2026-live-updates-news-grades-tracker/V6wZ6DTPEgzk/",
+          "title": "NFL trade deadline 2026 live updates: Jets send Andre Cisco to Lions; Jaguars make 2 moves",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhJc_C-_KE72dcSfRQmJshmhbOtp2NtOd3uAoSKuzBKFRH-GA5p9T-G2G4A30"
+        },
         {
           "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/lions-agree-to-acquire-s-andre-cisco-from-jets",
           "title": "Lions agree to acquire S Andre Cisco from Jets",
           "publisher": "NBC Sports",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3mT-brPZaQOip-bOAh9w7ZPQUzu4SPILjq5xaWEUOmubt29OTOnL5PuLCVoc"
-        },
-        {
-          "url": "https://www.detroitnews.com/story/sports/nfl/lions/2026/11/09/detroit-lions-trade-andre-cisco-stats-new-york-jets-safety/92693765007/",
-          "title": "Lions to land safety Andre Cisco in trade with Jets: reports",
-          "publisher": "The Detroit News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSouajUe0c6sI-3KTJmgnPxCmyTC6NDdyjmNZR7nFy9TJOm4pld2gQ4ROOCn54"
-        },
-        {
-          "url": "https://heavy.com/sports/nfl/jacksonville-jaguars/ex-jaguars-star-traded-lions/",
-          "title": "Ex-Jaguars Star Traded to Lions",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCAHTC1M9P_3MeWnp8GkuZc9IGoCfA19rW9jid84yzfMkI5ALNr-jWonyKORc"
         }
       ]
     },
@@ -186,19 +291,19 @@
       "approx_searches": "500+",
       "published_at": "2026-11-09T18:30:00Z",
       "related_news_urls": [
-        "https://thehill.com/homenews/6208182-ahmed-moor-challenges-fetterman/",
+        "https://www.theguardian.com/us-news/2026/nov/09/john-fetterman-pennsylvania-ahmed-moor",
         "https://www.inquirer.com/politics/pennsylvania/john-fetterman-challenger-2028-ahmed-moor-20261109.html",
-        "https://www.newsweek.com/john-fetterman-gets-first-2028-challenger-who-is-ahmed-moor-12687316"
+        "https://thehill.com/homenews/6208182-ahmed-moor-challenges-fetterman/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3uqdbEqZSJeKk4C-q9VqG0J7AWfUnCuyoY63px9ThD6GO2IEAaoei6jD32Nw",
-      "image_credit": "The Hill",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScep1BnfoXgPbLIMS7y_qUYPufhurVaGCLdSVMq0vH1F6vRroBtbCUcCZBJgc",
+      "image_credit": "The Guardian",
       "news": [
         {
-          "url": "https://thehill.com/homenews/6208182-ahmed-moor-challenges-fetterman/",
-          "title": "First challenger enters race for Fetterman’s seat in 2028",
-          "publisher": "The Hill",
+          "url": "https://www.theguardian.com/us-news/2026/nov/09/john-fetterman-pennsylvania-ahmed-moor",
+          "title": "John Fetterman to be challenged for Senate seat by democratic socialist born in Gaza",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3uqdbEqZSJeKk4C-q9VqG0J7AWfUnCuyoY63px9ThD6GO2IEAaoei6jD32Nw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScep1BnfoXgPbLIMS7y_qUYPufhurVaGCLdSVMq0vH1F6vRroBtbCUcCZBJgc"
         },
         {
           "url": "https://www.inquirer.com/politics/pennsylvania/john-fetterman-challenger-2028-ahmed-moor-20261109.html",
@@ -208,143 +313,46 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKEl0d8uS4AGHt792eRHp-_qt8Zyigk2Qy5ZIpyii71GqoxETmG-T5q7q2R30"
         },
         {
-          "url": "https://www.newsweek.com/john-fetterman-gets-first-2028-challenger-who-is-ahmed-moor-12687316",
-          "title": "John Fetterman Gets His First 2028 Challenger",
-          "publisher": "Newsweek",
+          "url": "https://thehill.com/homenews/6208182-ahmed-moor-challenges-fetterman/",
+          "title": "First challenger enters race for Fetterman’s seat in 2028",
+          "publisher": "The Hill",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXECU1Z3ytFHbs0GnD_P5UNPafqGpZbtkGfyDFc6Q2Rjlo-C7tRj5dFD2ePCM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3uqdbEqZSJeKk4C-q9VqG0J7AWfUnCuyoY63px9ThD6GO2IEAaoei6jD32Nw"
         }
       ]
     },
     {
-      "query": "davon godchaux",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-09T18:10:00Z",
-      "related_news_urls": [
-        "https://www.fox8live.com/2026/11/09/eve-deadline-saints-trade-dt-davon-godchaux-jaguars-reports-says/",
-        "https://www.yardbarker.com/nfl/articles/trade_jaguars_trade_for_saints_dt_davon_godchaux/s1_17039_44538269"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzz4ftcMVbOQNuFVYcDXIAvyH_SiD8iTlfeeKbso0An5XvJuDI6wAY0HXaCIE",
-      "image_credit": "FOX 8 Live WVUE",
-      "news": [
-        {
-          "url": "https://www.fox8live.com/2026/11/09/eve-deadline-saints-trade-dt-davon-godchaux-jaguars-reports-says/",
-          "title": "On eve of deadline, Saints trade DT Davon Godchaux to Jaguars, reports says",
-          "publisher": "FOX 8 Live WVUE",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzz4ftcMVbOQNuFVYcDXIAvyH_SiD8iTlfeeKbso0An5XvJuDI6wAY0HXaCIE"
-        },
-        {
-          "url": "https://www.yardbarker.com/nfl/articles/trade_jaguars_trade_for_saints_dt_davon_godchaux/s1_17039_44538269",
-          "title": "Trade: Jaguars Trade For Saints DT Davon Godchaux",
-          "publisher": "Yardbarker",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQy0vF05aNz_OJyD19WApWjc_6LMlaWgQyKmJrXVAnMrlZMci8FtzfEUOLT1fs"
-        }
-      ]
-    },
-    {
-      "query": "princess of wales",
+      "query": "pawan kalyan",
       "approx_searches": "1000+",
-      "published_at": "2026-11-09T18:10:00Z",
+      "published_at": "2026-11-09T18:20:00Z",
       "related_news_urls": [
-        "https://people.com/prince-george-returns-boarding-school-after-half-term-break-with-family-12244591",
-        "https://www.instyle.com/prince-george-returns-eton-college-extended-break-12244788",
-        "https://closeronline.co.uk/celebrity/news/kates-emotional-reunion-shes-missed-him-terribly-familys-more-important-than-anything/"
+        "https://timesofindia.indiatimes.com/city/hyderabad/andhra-pradesh-deputy-chief-minister-pawan-kalyan-and-wife-anna-konidela-announce-separation/articleshow/135691684.cms",
+        "https://www.telugu360.com/pawan-kalyan-anna-konidala-divorce-after-13years-of-marriage/",
+        "https://www.socialnews.xyz/2026/11/09/pawan-kalyan-and-anna-konidala-announce-separation-end-13-year-marriage/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThlSvZN9QTBLx8M_0XPOicxSfbEA0rzA4bgUNS94IwJmoWcQJeoL4oAtD2_Bs",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9v59aaG_fg7mn3JdIF2_MSumDVpfENGAtSBm6PAUekp8A0LSi4Wlga_-jiTI",
+      "image_credit": "The Times of India",
       "news": [
         {
-          "url": "https://people.com/prince-george-returns-boarding-school-after-half-term-break-with-family-12244591",
-          "title": "Prince George Returns to Boarding School After Half-Term Break Spent with Family",
-          "publisher": "People.com",
+          "url": "https://timesofindia.indiatimes.com/city/hyderabad/andhra-pradesh-deputy-chief-minister-pawan-kalyan-and-wife-anna-konidela-announce-separation/articleshow/135691684.cms",
+          "title": "Andhra Pradesh deputy chief minister Pawan Kalyan and wife Anna Konidela announce separation",
+          "publisher": "The Times of India",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThlSvZN9QTBLx8M_0XPOicxSfbEA0rzA4bgUNS94IwJmoWcQJeoL4oAtD2_Bs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9v59aaG_fg7mn3JdIF2_MSumDVpfENGAtSBm6PAUekp8A0LSi4Wlga_-jiTI"
         },
         {
-          "url": "https://www.instyle.com/prince-george-returns-eton-college-extended-break-12244788",
-          "title": "Prince George Returns to $89,000 a Year Boarding School Eton College After Milestone",
-          "publisher": "InStyle",
+          "url": "https://www.telugu360.com/pawan-kalyan-anna-konidala-divorce-after-13years-of-marriage/",
+          "title": "Pawan Kalyan, Anna Konidala Divorce after 13years of marriage",
+          "publisher": "Telugu360",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDHkSu41C_HiBPWpsad_rHOF5AYBNfKtSbVdcc2ysg50WWePHzNEJnZywLdG0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDVDGn-PA8GsEUya7XocazdJvJdGPoqxOJ2ekIJwTxk6EUEE3UIL7L58L65xU"
         },
         {
-          "url": "https://closeronline.co.uk/celebrity/news/kates-emotional-reunion-shes-missed-him-terribly-familys-more-important-than-anything/",
-          "title": "Kate’s emotional reunion: ‘She’s missed him terribly – family’s more important than anything’",
-          "publisher": "Closer",
+          "url": "https://www.socialnews.xyz/2026/11/09/pawan-kalyan-and-anna-konidala-announce-separation-end-13-year-marriage/",
+          "title": "Pawan Kalyan and Anna Konidala Announce Separation, End 13-Year Marriage",
+          "publisher": "Social News XYZ",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9l4YKoMrstp_89Xy4q34yebwvLzxXb6L-Lq_LkhdnKyZl1cLjjHd5P9gY5VA"
-        }
-      ]
-    },
-    {
-      "query": "college basketball rankings",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T18:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mens-college-basketball/story/_/id/50434211/ucla-climbs-top-10-men-ap-hoops-poll-florida-no-1",
-        "https://www.cbssports.com/college-basketball/news/ap-top-25-rankings-ucla-virginia-jump-arizona-arkansas-drop/",
-        "https://www.ncaa.com/news/basketball-men/article/2026-11-08/duke-tops-andy-katzs-mens-basketball-power-44-rankings-after-week-1"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRl7ddjaHWXZs3YxW8CbSC_CPkyNH6FtJQHv-_hARErS5ERez_AIrBcnetnBBE",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50434211/ucla-climbs-top-10-men-ap-hoops-poll-florida-no-1",
-          "title": "UCLA hops into top 10 of men's AP Top 25 hoops poll, while Florida remains No. 1",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRl7ddjaHWXZs3YxW8CbSC_CPkyNH6FtJQHv-_hARErS5ERez_AIrBcnetnBBE"
-        },
-        {
-          "url": "https://www.cbssports.com/college-basketball/news/ap-top-25-rankings-ucla-virginia-jump-arizona-arkansas-drop/",
-          "title": "UCLA, Virginia jump in AP Top 25 poll after big wins; Arizona, Arkansas drop in college basketball rankings",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS44c5Z7FRQu3amKWuOE8U5sPGsz_928qhA416hQf0qmay1tVAPD5RHlyqYqvE"
-        },
-        {
-          "url": "https://www.ncaa.com/news/basketball-men/article/2026-11-08/duke-tops-andy-katzs-mens-basketball-power-44-rankings-after-week-1",
-          "title": "Duke tops Andy Katz's men's basketball Power 44 rankings after Week 1",
-          "publisher": "NCAA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5bH2gX7GA5Kve4asVxajRGgaFp7joS9oul4vm2oXlQ-PKVJkA0BOVftayp50"
-        }
-      ]
-    },
-    {
-      "query": "frío",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T18:00:00Z",
-      "related_news_urls": [
-        "https://es-us.noticias.yahoo.com/clima-m%C3%A9xico-domingo-8-noviembre-125418045.html",
-        "https://www.elsiglodetorreon.com.mx/noticia/2026/preven-descenso-de-temperatura-en-la-comarca-lagunera-con-minimas-de-hasta-10-grados-para-el-martes.html",
-        "https://vanguardia.com.mx/informacion/se-aproxima-gran-masa-de-aire-frio-a-mexico-junto-al-frente-frio-4-azotaran-con-heladas-de-5-grados-lluvias-granizadas-y-fuertes-rafagas-de-viento-DI24681637"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRH1Ziz87NhwQEfrt-Mw-NZ7lObwOjwd6Atb5a10GBjd_rMGaVG8Vhpr9gd9zg",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://es-us.noticias.yahoo.com/clima-m%C3%A9xico-domingo-8-noviembre-125418045.html",
-          "title": "Clima en México este domingo 8 de noviembre: frente frío 4 provocará lluvias intensas en estos estados",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRH1Ziz87NhwQEfrt-Mw-NZ7lObwOjwd6Atb5a10GBjd_rMGaVG8Vhpr9gd9zg"
-        },
-        {
-          "url": "https://www.elsiglodetorreon.com.mx/noticia/2026/preven-descenso-de-temperatura-en-la-comarca-lagunera-con-minimas-de-hasta-10-grados-para-el-martes.html",
-          "title": "Prevén descenso de temperatura en la Comarca Lagunera con mínimas de hasta 10 grados para el martes",
-          "publisher": "El Siglo de Torreón",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTMHiINwOeq3giFBbdXvTfpcFtO5TnnN6UgtNaacM1Wmjf9wkXP9yFupgY6Dk"
-        },
-        {
-          "url": "https://vanguardia.com.mx/informacion/se-aproxima-gran-masa-de-aire-frio-a-mexico-junto-al-frente-frio-4-azotaran-con-heladas-de-5-grados-lluvias-granizadas-y-fuertes-rafagas-de-viento-DI24681637",
-          "title": "Se aproxima Gran Masa de Aire Frío a México; junto al Frente Frío 4, azotarán con heladas de -5 grados, lluvias granizadas y fuertes ráfagas de viento de hasta 70 km/h",
-          "publisher": "vanguardia.com.mx",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTI46Ph6kty4TKXoUvIujrSWgTsKr9p7VcITexQhVtfc-ho6Gl-Netwgd0h8Ms"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRylayy_4_i9fxMx3EhcuROGThYhfvin57nB25cIQHXmZamarMBrhsNjrNGGIQ"
         }
       ]
     }
