@@ -3,41 +3,208 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T09:31:27.600143Z",
+  "checked_at": "2026-11-09T10:01:36.195394Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "the gilded age season 4",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-09T09:40:00Z",
+      "related_news_urls": [
+        "https://people.com/meet-the-real-life-loves-the-gilded-age-season-4-cast-12236988",
+        "https://www.mentalfloss.com/language/slang/gilded-age-society-slang-decoded",
+        "https://www.yahoo.com/entertainment/tv/reviews/articles/gilded-age-season-4-episode-030000826.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2qhY_h6R7O-pRYiW3ClRBQMMWB8bpgLkz6UoaOy9bHHZA_8Ff0bVMgHWrBcc",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/meet-the-real-life-loves-the-gilded-age-season-4-cast-12236988",
+          "title": "Meet ‘The Gilded Age’ Season 4 Cast’s Real-Life Partners",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2qhY_h6R7O-pRYiW3ClRBQMMWB8bpgLkz6UoaOy9bHHZA_8Ff0bVMgHWrBcc"
+        },
+        {
+          "url": "https://www.mentalfloss.com/language/slang/gilded-age-society-slang-decoded",
+          "title": "From 'Dollar Princess' to 'The Four Hundred,' Decoding the Gilded Age's High-Society Slang",
+          "publisher": "Mental Floss",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAqvg_CZpvFjie-utmzLs8hAl-2Pw6dqbK9Ztl_W1sVRX1kKm-N_3VPIt02IY"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/reviews/articles/gilded-age-season-4-episode-030000826.html",
+          "title": "‘The Gilded Age’ Season 4 Episode 2 Ending Explained: Who Tried to Kill George Russell? Morgan Spector Explains Train Daddy’s Wild Choice",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCyD4CvUBZSRqOy9Yb1ksvPNSuehrxjhjYqzsCX-LPSqQzKbLNVuibqZGRTPk"
+        }
+      ]
+    },
+    {
+      "query": "jonathan taylor trade",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-09T09:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50426855/john-harbaugh-says-giants-did-pull-offer-jonathan-taylor",
+        "https://www.nfl.com/news/jonathan-taylor-landing-spots-ranking-top-7-trade-fits-colts-pro-bowl-running-back",
+        "https://www.foxnews.com/outkick-sports/jonathan-taylor-delivers-goodbye-indianapolis-colts-fifth-straight-loss"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxQ7l4Ba-NvZXIrVKoioi4gKU4aL_XaO_sgRdTP7vwuMKJ1hqAy8Q2x5khJy8",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50426855/john-harbaugh-says-giants-did-pull-offer-jonathan-taylor",
+          "title": "John Harbaugh: Giants did pull offer for Jonathan Taylor but 'things do change'",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxQ7l4Ba-NvZXIrVKoioi4gKU4aL_XaO_sgRdTP7vwuMKJ1hqAy8Q2x5khJy8"
+        },
+        {
+          "url": "https://www.nfl.com/news/jonathan-taylor-landing-spots-ranking-top-7-trade-fits-colts-pro-bowl-running-back",
+          "title": "Jonathan Taylor landing spots: Ranking top 7 trade fits for Colts Pro Bowl running back",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPZ_Ilrg0C-q5c0SlpasDnPvQBfJlHYz7ngoP8iJye6T6Pu-fH4LMm-AcWQaw"
+        },
+        {
+          "url": "https://www.foxnews.com/outkick-sports/jonathan-taylor-delivers-goodbye-indianapolis-colts-fifth-straight-loss",
+          "title": "Jonathan Taylor delivers what sounds like a goodbye to Indianapolis after Colts' fifth straight loss",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3xa-D1rD3Hi8kHXrmbXWYC9tnD1lpYCxhtpHMaa-USMMvMPvySBlKmPeUFg4"
+        }
+      ]
+    },
+    {
+      "query": "hospital",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-09T09:20:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/world/2026/nov/09/krakow-shooting-suspected-gunman-dead",
+        "https://www.kcci.com/article/police-gunman-deadly-polish-city-square-shooting-dies/74372828",
+        "https://apnews.com/article/poland-shooting-krakow-market-dead-69a65400657ffd0c8b3fa104bd472b97"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ64Kssa_mwTZ9MPsxjtnLJzNA7T6R89DjlFae57MRAYnmZ0mhA33hc9k3QUvM",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/world/2026/nov/09/krakow-shooting-suspected-gunman-dead",
+          "title": "Kraków shooting suspect who killed six has died, say police in Poland",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ64Kssa_mwTZ9MPsxjtnLJzNA7T6R89DjlFae57MRAYnmZ0mhA33hc9k3QUvM"
+        },
+        {
+          "url": "https://www.kcci.com/article/police-gunman-deadly-polish-city-square-shooting-dies/74372828",
+          "title": "Police: Gunman who killed at least 6 people in Polish city square dies in hospital",
+          "publisher": "KCCI",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTte_fLr8RjDGk3OjbXHHLc8lsg8dK-6vnniplys0QJbhzJ9zl9p-NJHnK-UwA"
+        },
+        {
+          "url": "https://apnews.com/article/poland-shooting-krakow-market-dead-69a65400657ffd0c8b3fa104bd472b97",
+          "title": "Poles mourn rare mass killing as authorities say attacker had far-right views",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy19cQCVoqDWyfhpYbMyOGOnNd5Cvco6x18j_bxDh5Mez3hroI_LH-CbHcAFo"
+        }
+      ]
+    },
+    {
+      "query": "planned parenthood",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T09:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/07/us/politics/doj-texas-fraud-lawsuit-planned-parenthood.html",
+        "https://www.texastribune.org/2026/11/08/texas-planned-parenthood-lawsuit-justice-department/",
+        "https://www.reuters.com/legal/government/justice-department-joins-texas-lawsuit-against-planned-parenthood-2026-11-07/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWxHj4hDiLHuy44v9fUv0unhM3CymMsEx3MFfgLjJFDolceN9ZCTr_dYANpfM",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/07/us/politics/doj-texas-fraud-lawsuit-planned-parenthood.html",
+          "title": "Justice Department Intervenes in Planned Parenthood Lawsuit in Texas",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWxHj4hDiLHuy44v9fUv0unhM3CymMsEx3MFfgLjJFDolceN9ZCTr_dYANpfM"
+        },
+        {
+          "url": "https://www.texastribune.org/2026/11/08/texas-planned-parenthood-lawsuit-justice-department/",
+          "title": "Feds plan to take over Texas lawsuit against Planned Parenthood",
+          "publisher": "The Texas Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-sAdIpUn948V5qLs4YNcFcV4jc05TUNHaLnnrNedG8pLBfNvGCra-GnbzthQ"
+        },
+        {
+          "url": "https://www.reuters.com/legal/government/justice-department-joins-texas-lawsuit-against-planned-parenthood-2026-11-07/",
+          "title": "Justice Department joins Texas lawsuit against Planned Parenthood",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRho-rROWzk1mQ7Gt_ghvGyUQrg0H3X1GU3I_V5eHunug0PvuUcpUDeB3P5jTM"
+        }
+      ]
+    },
+    {
+      "query": "lori vallow",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T09:10:00Z",
+      "related_news_urls": [
+        "https://www.ksl.com/article/51643071/watch-live-lori-daybell-asks-idaho-supreme-court-for-new-trial",
+        "https://idahonews.com/news/local/jj-vallows-grandfather-responds-as-lori-vallow-seeks-to-overturn-murder-convictions",
+        "https://www.idahocountyfreepress.com/news/state/idaho-supreme-court-hears-appeal-on-sixth-amendment-grounds/article_294ae6d3-5bb8-517f-a8d1-f939aad73ee9.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREY3CoCD31AiVMullGOvKWOOshaOjvMrRJpgH9XlhspZXDUgeXhABcgMc4s5E",
+      "image_credit": "KSL",
+      "news": [
+        {
+          "url": "https://www.ksl.com/article/51643071/watch-live-lori-daybell-asks-idaho-supreme-court-for-new-trial",
+          "title": "Prosecution, defense exchange arguments as Lori Daybell asks for new trial",
+          "publisher": "KSL",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREY3CoCD31AiVMullGOvKWOOshaOjvMrRJpgH9XlhspZXDUgeXhABcgMc4s5E"
+        },
+        {
+          "url": "https://idahonews.com/news/local/jj-vallows-grandfather-responds-as-lori-vallow-seeks-to-overturn-murder-convictions",
+          "title": "J.J. Vallow's grandfather responds as Lori Vallow seeks to overturn murder convictions",
+          "publisher": "KBOI",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRn1bpfuRtDFijoKSYp2VR5c7eSWT06e3tF5NrNo0eG4F3f0nnDq7C5kM0ZFw"
+        },
+        {
+          "url": "https://www.idahocountyfreepress.com/news/state/idaho-supreme-court-hears-appeal-on-sixth-amendment-grounds/article_294ae6d3-5bb8-517f-a8d1-f939aad73ee9.html",
+          "title": "Vallow’s appeal raises concerns about rights in murder trial",
+          "publisher": "Idaho County Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRY6qRwizNqSqxmYrOwIXx9PuUandQA9RKO4QwhVgO7ckmpA9rioUtiAckK6Hk"
+        }
+      ]
+    },
+    {
       "query": "west indies vs bangladesh",
-      "approx_searches": "500+",
+      "approx_searches": "100+",
       "published_at": "2026-11-09T09:00:00Z",
       "related_news_urls": [
-        "https://www.cricinfo.com/series/west-indies-in-bangladesh-2026-27-1553291/bangladesh-vs-west-indies-2nd-test-1553296/ball-by-ball-commentary",
-        "https://inshorts.com/en/news/who-holds-the-record-for-highest-individual-test-score-for-each-nation--1794070087134",
-        "https://www.newagebd.net/video/444/Bangladesh-batsman-Towhid-Hridoy-speaks-to-reporters"
+        "https://www.cricinfo.com/story/ban-vs-wi-2nd-test-west-indies-set-bangladesh-a-target-of-369-1561938",
+        "https://www.jamaicaobserver.com/2026/11/08/hodge-hits-140-west-indies-build-lead-bangladesh/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8tgLKM_JHkKkqsF0DJpHwgQiYah8fQ-VCRJ8XSFrjTBf2qbu_b4P1Z-8iDKw",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQucQkjVG2glJvSB-MIBwKiAArizL0BJPmb01as5c-bNZFTzBCp93Pkhzcg1SQ",
       "image_credit": "Cricinfo",
       "news": [
         {
-          "url": "https://www.cricinfo.com/series/west-indies-in-bangladesh-2026-27-1553291/bangladesh-vs-west-indies-2nd-test-1553296/ball-by-ball-commentary",
-          "title": "Ball by Ball Commentary & Live Score - BAN vs WI, 2nd Test",
+          "url": "https://www.cricinfo.com/story/ban-vs-wi-2nd-test-west-indies-set-bangladesh-a-target-of-369-1561938",
+          "title": "West Indies set Bangladesh a target of 369",
           "publisher": "Cricinfo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8tgLKM_JHkKkqsF0DJpHwgQiYah8fQ-VCRJ8XSFrjTBf2qbu_b4P1Z-8iDKw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQucQkjVG2glJvSB-MIBwKiAArizL0BJPmb01as5c-bNZFTzBCp93Pkhzcg1SQ"
         },
         {
-          "url": "https://inshorts.com/en/news/who-holds-the-record-for-highest-individual-test-score-for-each-nation--1794070087134",
-          "title": "Who holds the record for highest individual Test score for each nation? | SA's Mulder scored 367* vs Zimbabwe in 2025 | Inshorts",
-          "publisher": "Inshorts",
+          "url": "https://www.jamaicaobserver.com/2026/11/08/hodge-hits-140-west-indies-build-lead-bangladesh/",
+          "title": "Hodge hits 140 as West Indies build lead over Bangladesh",
+          "publisher": "Jamaica Observer",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTelraXLkGAigR47nR2_7Li59f7YAL88fQOjkDnQ8Tbef-CVxRZ861K3rXIv3U"
-        },
-        {
-          "url": "https://www.newagebd.net/video/444/Bangladesh-batsman-Towhid-Hridoy-speaks-to-reporters",
-          "title": "Bangladesh batsman Towhid Hridoy speaks to reporters",
-          "publisher": "New Age BD",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm0a5NZyA2k_AGemQ8H6F5mZ8lCYPuYOJCKJccw1GtVHnQiFO66gpEIa5WnIw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAYMx0iXj9UD_B36GoJytLCWxiKOl4PvKMlaIGvXEMuiLdCj7pRYh34bjqEdY"
         }
       ]
     },
@@ -77,43 +244,8 @@
       ]
     },
     {
-      "query": "power",
-      "approx_searches": "100+",
-      "published_at": "2026-11-09T08:40:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/world/russian-forces-launch-missile-attack-ukrainian-capital-kyiv-mayor-says-2026-11-07/",
-        "https://www.rferl.org/a/ukraine-power-restore-russia-zaporizhzhya-abudhabi/33893359.html",
-        "https://apnews.com/article/russia-ukraine-war-kyiv-talks-abu-dhabi-b042adf1f95848f5d233da866a72e312"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHw7NYUbrFDkToC2XVUVXfbvRBIhURaKX4kcsNteLF0COplA8tV5AsdbOms7c",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/world/russian-forces-launch-missile-attack-ukrainian-capital-kyiv-mayor-says-2026-11-07/",
-          "title": "Russia pounds power facilities around Kyiv, damages major bridge",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHw7NYUbrFDkToC2XVUVXfbvRBIhURaKX4kcsNteLF0COplA8tV5AsdbOms7c"
-        },
-        {
-          "url": "https://www.rferl.org/a/ukraine-power-restore-russia-zaporizhzhya-abudhabi/33893359.html",
-          "title": "Ukraine Battles To Restore Power After Russian Attacks, As Trump Hints At Potential Territorial Changes",
-          "publisher": "Radio Free Europe/Radio Liberty",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRM0QF3dkSICYuyP7-VqAenjKmusKDErzTH0y_XWObNdQ9ybiJBIRL7bVpGtFM"
-        },
-        {
-          "url": "https://apnews.com/article/russia-ukraine-war-kyiv-talks-abu-dhabi-b042adf1f95848f5d233da866a72e312",
-          "title": "Drone and missile attacks wound 9 in Ukraine as country prepares for talks with Russia and US",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQ75sDy6YObcAfOk89a1e2OwOsNs6pmdkztARcsluHDo7lxWayFel8S6dwun0"
-        }
-      ]
-    },
-    {
       "query": "pandilla",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-09T08:40:00Z",
       "related_news_urls": [
         "https://www.facebook.com/PoliciaNacionaldeHonduras/posts/cacer%C3%ADadeterroristas-saturaci%C3%B3n-policial-deja-a-un-terrorista-de-la-pandilla-18-/1468214752168163/",
@@ -143,6 +275,41 @@
           "publisher": "Diario La Tribuna",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQazSGqxL2xECPQIsbgdHh_duoXOQKMxFKMKpMbQjLLlYmDr2ZCN1DPAF5uWY8"
+        }
+      ]
+    },
+    {
+      "query": "power",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T08:40:00Z",
+      "related_news_urls": [
+        "https://www.politico.com/news/2026/11/08/democratic-thrashing-redraws-the-map-of-state-power-01154607",
+        "https://www.ncsl.org/resources/details/2026-state-legislative-elections-the-results-and-what-they-mean",
+        "https://abcnews.com/Politics/democrats-flip-statehouses-midterm-wave/story?id=137924342"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJkvD_GKCSBB1GF8h0zvoB_a9r0rwEt1zJ3Un3olw0zFqwdCI3KeLSj65AYHU",
+      "image_credit": "Politico",
+      "news": [
+        {
+          "url": "https://www.politico.com/news/2026/11/08/democratic-thrashing-redraws-the-map-of-state-power-01154607",
+          "title": "Democratic thrashing redraws the map of state power",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJkvD_GKCSBB1GF8h0zvoB_a9r0rwEt1zJ3Un3olw0zFqwdCI3KeLSj65AYHU"
+        },
+        {
+          "url": "https://www.ncsl.org/resources/details/2026-state-legislative-elections-the-results-and-what-they-mean",
+          "title": "2026 State Legislative Elections: The Results and What They Mean",
+          "publisher": "National Conference of State Legislatures",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWq1bkjuys9Tqf0gR7Ct4E3LiI0lChSGGRtIiw00xMsIq3UJLt809cjYsnGKg"
+        },
+        {
+          "url": "https://abcnews.com/Politics/democrats-flip-statehouses-midterm-wave/story?id=137924342",
+          "title": "Democrats flip statehouses in midterm wave",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMyyXdLDE_Y7mbiKvdEdWB4cpQIHTpwLHaSEG0_la3-2Wwaz39iMC3cpQ40iM"
         }
       ]
     },
@@ -178,181 +345,6 @@
           "publisher": "The Hill",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS18IxuTXxikQjVAyDSQbdZtcnytMjPufX9qZ0-vIg_duiRx1P62E8NfVTKlyY"
-        }
-      ]
-    },
-    {
-      "query": "volcano",
-      "approx_searches": "100+",
-      "published_at": "2026-11-09T08:20:00Z",
-      "related_news_urls": [
-        "https://weather.com/2026/11/06/news/trending/video/hawaii-kilauea-lava-fountain-episode-56-eruption",
-        "https://bigislandnow.com/2026/11/06/volcano-watch-such-great-heights-measuring-kilaueas-lava-fountains/",
-        "https://www.foxweather.com/weather-news/hawaii-kilauea-volcano-erupt-56th-episode"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYDVY2kE3XhosZTpaysiDECVZ4MyxZDsPab9XYZSUaSs8-orhlHcIDQvFI3pQ",
-      "image_credit": "The Weather Channel",
-      "news": [
-        {
-          "url": "https://weather.com/2026/11/06/news/trending/video/hawaii-kilauea-lava-fountain-episode-56-eruption",
-          "title": "Kilauea volcano erupts: See the 660-foot lava fountain",
-          "publisher": "The Weather Channel",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYDVY2kE3XhosZTpaysiDECVZ4MyxZDsPab9XYZSUaSs8-orhlHcIDQvFI3pQ"
-        },
-        {
-          "url": "https://bigislandnow.com/2026/11/06/volcano-watch-such-great-heights-measuring-kilaueas-lava-fountains/",
-          "title": "Volcano Watch: Such great heights; measuring Kīlauea’s lava fountains",
-          "publisher": "Big Island Now",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRspiePvSFCfWTgUfg1YzFZsyVYlCIGQMTpCd2bWD5u-eYuZKsfIF31PtUn8RY"
-        },
-        {
-          "url": "https://www.foxweather.com/weather-news/hawaii-kilauea-volcano-erupt-56th-episode",
-          "title": "Hawaii's Kīlauea experiences 56th eruption episode, spewing lava hundreds of feet high in latest activity",
-          "publisher": "FOX Weather",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQG7gMPCxcq3zzu9j1RZE2-7vtl_CBIAvBt2TBhI_0ejUBujrclgpa3p2Rl1nU"
-        }
-      ]
-    },
-    {
-      "query": "attack on titan",
-      "approx_searches": "100+",
-      "published_at": "2026-11-09T08:10:00Z",
-      "related_news_urls": [
-        "https://www.crunchyroll.com/ko/news/features/2026/11/8/anime-villains-zeke-jaeger",
-        "https://www.imdb.com/news/ni66095873/?ref_=ttnw_art_perm",
-        "https://comicbook.com/anime/feature/3-years-ago-attack-on-titan-finale-proved-why-it-remains-a-modern-classic/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1VOLA-VSALGus0yU-7O5qA_sswlMcAJXtXZiWnyisuplPeL8bFWaaGoWgAaI",
-      "image_credit": "Crunchyroll",
-      "news": [
-        {
-          "url": "https://www.crunchyroll.com/ko/news/features/2026/11/8/anime-villains-zeke-jaeger",
-          "title": "Release the Villains: Zeke Jaeger Is Attack on Titan’s Ultimate Agent of Chaos",
-          "publisher": "Crunchyroll",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1VOLA-VSALGus0yU-7O5qA_sswlMcAJXtXZiWnyisuplPeL8bFWaaGoWgAaI"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66095873/?ref_=ttnw_art_perm",
-          "title": "89-Episode Dark Fantasy Action Masterpiece With a \"Perfect\" Ending Stages Streaming Comeback 3 Years Later",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfHkGHcnXZZRt1AyAtTeT1_nhAZBpxnpTRjB9A-JNk2BxKCqHe5HAjOyp1aNo"
-        },
-        {
-          "url": "https://comicbook.com/anime/feature/3-years-ago-attack-on-titan-finale-proved-why-it-remains-a-modern-classic/",
-          "title": "3 Years Ago, Attack on Titan Finale Proved Why It Remains a Modern Classic",
-          "publisher": "ComicBook.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROX7md6mYyYU1uADcMR5-4R7DEngEPeFKdsoAkSZonNvl6JeGU0y-nHrexfiw"
-        }
-      ]
-    },
-    {
-      "query": "top",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-09T08:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50422780/georgia-begins-second-stint-season-ap-no-1",
-        "https://www.foxnews.com/outkick-sports/week-10-ap-poll-georgia-rightfully-take-over-top-spot-voters-continue-award-usc-no-reason",
-        "https://bleacherreport.com/articles/25530602-ap-college-football-poll-2026-week-11-rankings-released-top-risers-and-fallers"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmix0OUBJRc5_kjM3YAYSu34q0baVSJtaTzi8FEQ8RHdlKwnAAHgRxmuAZQPI",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50422780/georgia-begins-second-stint-season-ap-no-1",
-          "title": "Georgia back at No. 1 in AP Top 25 ahead of Utah, Irish; Buckeyes drop to 21st",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmix0OUBJRc5_kjM3YAYSu34q0baVSJtaTzi8FEQ8RHdlKwnAAHgRxmuAZQPI"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick-sports/week-10-ap-poll-georgia-rightfully-take-over-top-spot-voters-continue-award-usc-no-reason",
-          "title": "Week 10 AP Poll sees Georgia rightfully take over top spot while voters continue to award USC for no reason",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8u3_1f_aA4hhTiEr-qaGnoW15e-L2Jn4iftijq2kSRsoLhMMShQ5H6GGnL4Y"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25530602-ap-college-football-poll-2026-week-11-rankings-released-top-risers-and-fallers",
-          "title": "AP College Football Poll 2026 Week 11 Rankings Released with Top Risers and Fallers",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgEXO1vXpfIMolJzz3C6VqgiGvccuId_kQA3uiH2jdTIIEAxikiS4i3vwVvEQ"
-        }
-      ]
-    },
-    {
-      "query": "jennifer aniston",
-      "approx_searches": "100+",
-      "published_at": "2026-11-09T08:00:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/articles/friends-jennifer-aniston-starred-forgotten-191200025.html",
-        "https://www.imdb.com/fr/news/ni66099017/?ref_=nwc_art_perm",
-        "https://www.imdb.com/news/ni66099017/?ref_=nwc_art_perm"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbXSVJfTqDy4H6N3guO_WaWVu7ix7wN9hou7tfua0hwbZc6uarjIkHPGGFIvU",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/friends-jennifer-aniston-starred-forgotten-191200025.html",
-          "title": "Before Friends, Jennifer Aniston Starred In A Forgotten '90s Sketch Comedy Show",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbXSVJfTqDy4H6N3guO_WaWVu7ix7wN9hou7tfua0hwbZc6uarjIkHPGGFIvU"
-        },
-        {
-          "url": "https://www.imdb.com/fr/news/ni66099017/?ref_=nwc_art_perm",
-          "title": "Before Friends, Jennifer Aniston Starred In A Forgotten '90s Sketch Comedy Show",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwSQr9Lm3lPm3eEMu36VlrgoImcU-UJDhRMcWo1UpgmOaRvdqWYHz3p79Odac"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66099017/?ref_=nwc_art_perm",
-          "title": "Before Friends, Jennifer Aniston Starred In A Forgotten '90s Sketch Comedy Show",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwSQr9Lm3lPm3eEMu36VlrgoImcU-UJDhRMcWo1UpgmOaRvdqWYHz3p79Odac"
-        }
-      ]
-    },
-    {
-      "query": "peaky blinders netflix six seasons",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T07:40:00Z",
-      "related_news_urls": [
-        "https://collider.com/peaky-blinders-netflix-tom-hardy-streaming-binge/",
-        "https://soaplandtv.co.uk/article/could-peaky-blinders-help-bring-millions-in-tourism-spending-to-the-west-midlands",
-        "https://timesofindia.indiatimes.com/world/uk/peaky-blinders-helped-put-birmingham-on-the-global-tourism-map-a-new-study-estimates-film-and-tv-links-could-bring-66-97-million-to-the-west-midlands/articleshow/135532755.cms"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRz8h5J61hhYJBfu_F8dgJoO7urGCtOtxEwxwfuo7WJoSSXjqxSXpedtfih7IE",
-      "image_credit": "Collider",
-      "news": [
-        {
-          "url": "https://collider.com/peaky-blinders-netflix-tom-hardy-streaming-binge/",
-          "title": "Tom Hardy’s Epic 6-Season Crime Series Is a Near-Perfect Netflix Binge",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRz8h5J61hhYJBfu_F8dgJoO7urGCtOtxEwxwfuo7WJoSSXjqxSXpedtfih7IE"
-        },
-        {
-          "url": "https://soaplandtv.co.uk/article/could-peaky-blinders-help-bring-millions-in-tourism-spending-to-the-west-midlands",
-          "title": "Could Peaky Blinders Help Bring Millions in Tourism Spending to the West Midlands?",
-          "publisher": "SoaplandTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSx-_-FT8EzDVbsoOdL2bSL3g16I7xu-SzSJu2osRBBIoAh9K34W4YFlgFNBM"
-        },
-        {
-          "url": "https://timesofindia.indiatimes.com/world/uk/peaky-blinders-helped-put-birmingham-on-the-global-tourism-map-a-new-study-estimates-film-and-tv-links-could-bring-66-97-million-to-the-west-midlands/articleshow/135532755.cms",
-          "title": "Peaky Blinders helped put Birmingham on the global tourism map; a new study estimates film and TV links c",
-          "publisher": "The Times of India",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRBz77aiibXeQghkk7i6mhQt7jnUDe1bhFBfFvg-v-Sg36JkzZ4u3QdgK1GID4"
         }
       ]
     }
