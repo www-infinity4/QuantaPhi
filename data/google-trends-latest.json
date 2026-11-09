@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T05:01:23.603503Z",
+  "checked_at": "2026-11-09T05:31:31.113433Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "darius acuff jr.",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T04:40:00Z",
+      "query": "nfl standings",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-09T05:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/fantasy/basketball/story/_/id/50392857/fantasy-basketball-tips-nba-betting-picks-today",
-        "https://www.covers.com/nba/top-picks-nov-8-2026",
-        "https://www.fanduel.com/research/nba-props-today-player-prop-bets-saturday-nov-7"
+        "https://www.espn.com/nfl/story/_/id/50426396/jets-frustrated-geno-smith-membou",
+        "https://nypost.com/2026/11/08/sports/reeling-jets-regress-in-blowout-loss-to-chiefs/",
+        "https://www.nydailynews.com/2026/11/07/mike-lupica-time-for-the-jets-to-press-reset-on-their-reset/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFSCT7C7EU7_gWGJdwGhp3m0MwLvmapA-tBcD14E7qGrhYnoVYc78fS4GPHbU",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBSD-T4VeqVJFrtGT2Oscg5cGk5pt82gdk1RKpvdBxlj-5q0gtxK3oxk96OzU",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/fantasy/basketball/story/_/id/50392857/fantasy-basketball-tips-nba-betting-picks-today",
-          "title": "Sunday's fantasy hoops adds, NBA bets to make: Nets, Clippers offer value",
+          "url": "https://www.espn.com/nfl/story/_/id/50426396/jets-frustrated-geno-smith-membou",
+          "title": "Jets begin to unravel on and off field as losing streak hits 4 games",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFSCT7C7EU7_gWGJdwGhp3m0MwLvmapA-tBcD14E7qGrhYnoVYc78fS4GPHbU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBSD-T4VeqVJFrtGT2Oscg5cGk5pt82gdk1RKpvdBxlj-5q0gtxK3oxk96OzU"
         },
         {
-          "url": "https://www.covers.com/nba/top-picks-nov-8-2026",
-          "title": "NBA Best Bets Today: Top Picks From Every Game Preview",
-          "publisher": "Covers.com",
+          "url": "https://nypost.com/2026/11/08/sports/reeling-jets-regress-in-blowout-loss-to-chiefs/",
+          "title": "Reeling Jets regress in blowout loss to Chiefs",
+          "publisher": "New York Post",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlgMbDHDZniRkWPCxWiOxOSCNd_1UJF7jRJNcWYIz9T7IuTycOz9qI4QuHoH4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSokjPhUNVT6JcAcYqPVkg78p_AdQlS5a5EJFLBI_PIlBQqOmVqPb-brANONrQ"
         },
         {
-          "url": "https://www.fanduel.com/research/nba-props-today-player-prop-bets-saturday-nov-7",
-          "title": "NBA Props Today: 3 Best NBA Player Prop Bets for Saturday, Nov. 7",
-          "publisher": "FanDuel",
+          "url": "https://www.nydailynews.com/2026/11/07/mike-lupica-time-for-the-jets-to-press-reset-on-their-reset/",
+          "title": "Mike Lupica: Time for the Jets to press reset on their reset",
+          "publisher": "New York Daily News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3rj4gb7z0tNrFNdk8129Z7Ls8GM8_S-fYCxPwx0rBmwA6haMiQFe0RUjMdCA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFxSSRDSl0BiYO0I-3ToPZ-_VTfHz5nj3ryjX1BHqyF6MyVyBD9uT8kqM5918"
         }
       ]
     },
     {
-      "query": "hawaii basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T04:40:00Z",
-      "related_news_urls": [
-        "https://hawaiiathletics.com/news/2026/11/6/mens-basketball-bows-open-rainbow-classic-with-record-breaking-rout-of-bethesda.aspx",
-        "https://www.hawaiinewsnow.com/2026/11/07/hawaii-sets-new-record-116-44-win-against-bethesda/",
-        "https://www.staradvertiser.com/2026/11/06/photo-gallery/mens-basketball-hawaii-vs-bethesda-11-6-26/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfEqYpcxghvCVad0EPOYoWDb4Kqxnt4exXRBTDDuwX8tHQPPCJMAzCrJL86lw",
-      "image_credit": "Hawaii athletics",
-      "news": [
-        {
-          "url": "https://hawaiiathletics.com/news/2026/11/6/mens-basketball-bows-open-rainbow-classic-with-record-breaking-rout-of-bethesda.aspx",
-          "title": "'Bows Open Rainbow Classic with Record-Breaking Rout of Bethesda",
-          "publisher": "Hawaii athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfEqYpcxghvCVad0EPOYoWDb4Kqxnt4exXRBTDDuwX8tHQPPCJMAzCrJL86lw"
-        },
-        {
-          "url": "https://www.hawaiinewsnow.com/2026/11/07/hawaii-sets-new-record-116-44-win-against-bethesda/",
-          "title": "Hawaii sets new record in 116-44 win against Bethesda",
-          "publisher": "Hawaii News Now",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAkYPLx5tRMYmGoB8rwjJxar_72STebvHDqQ8GxrOj3ENHGEKQQP2CtM3X8z8"
-        },
-        {
-          "url": "https://www.staradvertiser.com/2026/11/06/photo-gallery/mens-basketball-hawaii-vs-bethesda-11-6-26/",
-          "title": "Men’s basketball: Hawaii vs. Bethesda (11/6/26)",
-          "publisher": "Honolulu Star-Advertiser",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcie8DjRcNbnEUWjAKE_nHX4gLhul-xlRyYixf-ndSNr9BKHL27tfyzB_ArR0"
-        }
-      ]
-    },
-    {
-      "query": "pak vs sl",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T04:30:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/series/sri-lanka-in-pakistan-2026-27-1550703/pakistan-vs-sri-lanka-1st-test-1550711/match-preview",
-        "https://www.dawn.com/news/2043046",
-        "https://www.cricbuzz.com/cricket-news/140820/pakistan-trio-get-maiden-call-ups-for-sri-lanka-tests-cricbuzzcom"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0JhT7_KkyiO29mAfIkywhtMpaK-dQxjNV-71tIjbwW95P98Qj33EkhUPxapQ",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/series/sri-lanka-in-pakistan-2026-27-1550703/pakistan-vs-sri-lanka-1st-test-1550711/match-preview",
-          "title": "Pakistan and Sri Lanka begin their search for a way forward in Tests",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0JhT7_KkyiO29mAfIkywhtMpaK-dQxjNV-71tIjbwW95P98Qj33EkhUPxapQ"
-        },
-        {
-          "url": "https://www.dawn.com/news/2043046",
-          "title": "Babar Azam says selection not in his hands as youthful Pakistan face Sri Lanka",
-          "publisher": "Dawn",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWvgdjMurxGoGhypr2RFrQclgPR5Qu4CWgZ6tvZdQNDWHcuyJNpwfATafX730"
-        },
-        {
-          "url": "https://www.cricbuzz.com/cricket-news/140820/pakistan-trio-get-maiden-call-ups-for-sri-lanka-tests-cricbuzzcom",
-          "title": "Pakistan trio get maiden call-ups for Sri Lanka Tests",
-          "publisher": "Cricbuzz",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLR5lKuYQK-CtSzuSSXtPZwJ7Ou9bw4yPoxwC95IUvstCxpuZtDQAdheJmdz4"
-        }
-      ]
-    },
-    {
-      "query": "zach lavine",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T04:30:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/klay-thompson-sinks-seven-three-pointers-vs-sac",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/darius-acuff-jr-goes-for-32-points-10-assists",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/bam-adebayo-records-18-8-4-3-line-vs-sacramento"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRanQyGh496i04uLMwJStfsiE_DbAnPp7XqUcQnAU38laIb0iPduRUqvKFSwVE",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/klay-thompson-sinks-seven-three-pointers-vs-sac",
-          "title": "Klay Thompson sinks seven three-pointers vs. SAC",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRanQyGh496i04uLMwJStfsiE_DbAnPp7XqUcQnAU38laIb0iPduRUqvKFSwVE"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/darius-acuff-jr-goes-for-32-points-10-assists",
-          "title": "Darius Acuff Jr. goes for 32 points, 10 assists",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJzBzaj4zP8J5wmYl4s_gSnV_F8-TEwzfhjM9SL_cmge4l6lE1AgeFr6UykvQ"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/bam-adebayo-records-18-8-4-3-line-vs-sacramento",
-          "title": "Bam Adebayo records 18/8/4/3 line vs. Sacramento",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmWtyf5ThVBk-QtlSLeNW8OOBTadnaFfOxLMQsqDPW_mKEn2lcELbdSpT_vFA"
-        }
-      ]
-    },
-    {
-      "query": "president joe biden",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T04:20:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/08/politics/biden-cancer-promoting-memoir",
-        "https://www.nytimes.com/2026/11/08/us/politics/biden-cancer-health-memoir.html",
-        "https://www.foxnews.com/politics/joe-biden-says-cancer-slowed-him-down-limiting-memoir-promotion-tour"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDIer8i60lU6h6_zzDA3M6p7BheZ0xSGy6EI__joSitIQ7U4xXYGk-t6oMhWM",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/08/politics/biden-cancer-promoting-memoir",
-          "title": "Joe Biden says cancer will limit him from promoting his upcoming memoir",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDIer8i60lU6h6_zzDA3M6p7BheZ0xSGy6EI__joSitIQ7U4xXYGk-t6oMhWM"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/08/us/politics/biden-cancer-health-memoir.html",
-          "title": "Biden Says Health to Limit Book Promotion as Cancer ‘Slows Me Down’",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTq-SM0fKfYMN-L7KCsbob52hrXpfmTvH4EGpGnPGd09fy0K2TffRDeq2_N44I"
-        },
-        {
-          "url": "https://www.foxnews.com/politics/joe-biden-says-cancer-slowed-him-down-limiting-memoir-promotion-tour",
-          "title": "Joe Biden says cancer slowed him down, limiting memoir promotion tour",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHBGoSr4iw5XV1uJfpeDWkpTWHRQYDyDw_sstYhDl4qH3jXJDDXO5OpLWMR3Y"
-        }
-      ]
-    },
-    {
-      "query": "tabla liga mx",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T04:20:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17483717/liga-mx-horarios-canales-jornada-16-apertura-2026",
-        "https://www.record.com.mx/historia/asi-marcha-la-tabla-general-del-apertura-2026-hoy-8-de-noviembre-2026110814043915863",
-        "https://www.foxsports.com.mx/2026/11/08/chivas-dejo-ir-el-liderato-cruz-azul-esta-en-la-cima-liga-mx-tabla-general-de-posiciones-tras-la-jornada-16-del-torneo-apertura-2026/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9bJvvns18K_Qblyv9rwXS2WUznAdhdJb6hHkpf-Y1U0HWaDie5NUYv9CF3K0",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17483717/liga-mx-horarios-canales-jornada-16-apertura-2026",
-          "title": "Liga MX: Horarios y cómo ver la Jornada 16",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9bJvvns18K_Qblyv9rwXS2WUznAdhdJb6hHkpf-Y1U0HWaDie5NUYv9CF3K0"
-        },
-        {
-          "url": "https://www.record.com.mx/historia/asi-marcha-la-tabla-general-del-apertura-2026-hoy-8-de-noviembre-2026110814043915863",
-          "title": "Así marcha la Tabla General del Apertura 2026 hoy 8 de noviembre",
-          "publisher": "Récord",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKr1v9TnEYp1QlWhXeU_B46kERTXzOFDLSFUrkLL-ss4MjrxPWY4Jh98qZJrI"
-        },
-        {
-          "url": "https://www.foxsports.com.mx/2026/11/08/chivas-dejo-ir-el-liderato-cruz-azul-esta-en-la-cima-liga-mx-tabla-general-de-posiciones-tras-la-jornada-16-del-torneo-apertura-2026/",
-          "title": "¡Chivas dejó ir el liderato, Cruz Azul está en la cima! Así quedó la Tabla tras la J16 del Apertura 2026",
-          "publisher": "Fox Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCPXWtbE1GKkvgT4xLlsXlQyjBnksBkDkM8W1GtFZvo5-z5F6_igs9gQ8atC0"
-        }
-      ]
-    },
-    {
-      "query": "ceedee lamb fourth quarter fumble",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-09T04:20:00Z",
-      "related_news_urls": [
-        "https://www.dallascowboys.com/news/ceedee-lamb-powers-cowboys-to-much-needed-win-vs-colts-but-expects-more",
-        "https://www.foxsports.com/watch-vertical/fmc-qc51vowpvkb561xy",
-        "https://www.foxnews.com/outkick-sports/dallas-cowboys-wide-receiver-ceedee-lamb-involved-wild-catch-and-run-fumble-sums-todays-action"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRlJRZv0Z76WY47mksC0_stgEuCOKLPB6w-c3nKFYYsmuUS4lb7GNLI_zlhI4s",
-      "image_credit": "Dallas Cowboys | Official Site of the Dallas Cowboys",
-      "news": [
-        {
-          "url": "https://www.dallascowboys.com/news/ceedee-lamb-powers-cowboys-to-much-needed-win-vs-colts-but-expects-more",
-          "title": "CeeDee Lamb powers Cowboys to much-needed win vs. Colts, but expects more",
-          "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRlJRZv0Z76WY47mksC0_stgEuCOKLPB6w-c3nKFYYsmuUS4lb7GNLI_zlhI4s"
-        },
-        {
-          "url": "https://www.foxsports.com/watch-vertical/fmc-qc51vowpvkb561xy",
-          "title": "CeeDee Lamb was not happy",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJD0m4b7FScMlCt3RpQwq5jUDfOdubyyNhB4N9oIYYAyxSv3V7iw5NcwVNjfE"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick-sports/dallas-cowboys-wide-receiver-ceedee-lamb-involved-wild-catch-and-run-fumble-sums-todays-action",
-          "title": "Dallas Cowboys wide receiver CeeDee Lamb involved in wild catch-and-run fumble that sums up today's action",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTshlsq1ZNEC-sHZvOnctVlg7msCO_BFSmZdIUdmQOXclRJc0ObdB4b6AsLejc"
-        }
-      ]
-    },
-    {
-      "query": "calvin ridley",
+      "query": "caroline dubois",
       "approx_searches": "200+",
-      "published_at": "2026-11-09T04:20:00Z",
+      "published_at": "2026-11-09T05:00:00Z",
       "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/titans-wr-calvin-ridley-was-involved-in-an-incident-at-nashville-international-airport",
-        "https://sports.yahoo.com/articles/titans-wr-calvin-ridley-involved-035913190.html",
-        "https://sports.yahoo.com/articles/titans-calvin-ridley-involved-incident-040236334.html"
+        "https://www.espn.com/boxing/story/_/id/50378020/caroline-dubois-alycia-baumgardner-disrespectful-boxing",
+        "https://www.bbc.com/sport/boxing/articles/c6y8l1318k8zo",
+        "https://bleacherreport.com/articles/25529217-alycia-baumgardner-talks-claressa-shields-rivalry-next-fight-mvp-and-more-br-interview"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWph85RvlBxwZzoubv7UWg62BFf_tQXI5zijFvokLEBE70PAvVHjsacT2fXU4",
-      "image_credit": "NBC Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8QMO1cMp2lBPxf7YkM4u44aB3JAA1xGr8WvJFbmwwVA7Gicz1csYGPyxbiBM",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/titans-wr-calvin-ridley-was-involved-in-an-incident-at-nashville-international-airport",
-          "title": "Titans WR Calvin Ridley was involved in an incident at Nashville International Airport",
-          "publisher": "NBC Sports",
+          "url": "https://www.espn.com/boxing/story/_/id/50378020/caroline-dubois-alycia-baumgardner-disrespectful-boxing",
+          "title": "Caroline Dubois calls out 'disrespectful' Alycia Baumgardner, eyes '27 clash",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWph85RvlBxwZzoubv7UWg62BFf_tQXI5zijFvokLEBE70PAvVHjsacT2fXU4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8QMO1cMp2lBPxf7YkM4u44aB3JAA1xGr8WvJFbmwwVA7Gicz1csYGPyxbiBM"
         },
         {
-          "url": "https://sports.yahoo.com/articles/titans-wr-calvin-ridley-involved-035913190.html",
-          "title": "Titans WR Calvin Ridley involved in incident at Nashville International Airport",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.bbc.com/sport/boxing/articles/c6y8l1318k8zo",
+          "title": "Turhan vs Baumgardner: Briton Caroline Dubois targeting Alycia Baumgardner & dreams of undisputed",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrubDhwmYGD4k5LGsfW42GocsUOWDJXEBVbM4_L1MsLS4_XRvcvvnQdnnktP8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTA-9pT-NDdkVizIJfUnF3OKAuFYzjGbdRTGwlnPfHbQkl5tu3vOJWiYfGT5B4"
         },
         {
-          "url": "https://sports.yahoo.com/articles/titans-calvin-ridley-involved-incident-040236334.html",
-          "title": "Titans' Calvin Ridley involved in incident at Nashville International",
-          "publisher": "Yahoo Sports",
+          "url": "https://bleacherreport.com/articles/25529217-alycia-baumgardner-talks-claressa-shields-rivalry-next-fight-mvp-and-more-br-interview",
+          "title": "Alycia Baumgardner Talks Claressa Shields Rivalry, Next Fight with MVP and More in B/R Interview",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLNkelqtWU5ZVuvP9FHSg11RmLgiaEjewTfI0uHF5xg6yU7Gqi3373cclcuH0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUIaiIW787cIFa_Iranslz4DrvN7ClKtSLVi6zrt3xCYK8fVoUojsZjBi3-zI"
         }
       ]
     },
     {
-      "query": "robert de niro",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T04:20:00Z",
+      "query": "ut arlington vs hawaii",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T05:00:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/01/movies/michael-mann-shooting.html",
-        "https://www.hollywoodreporter.com/movies/movie-news/adam-driver-heat-2-role-michael-mann-shooting-update-1236748736/",
-        "https://variety.com/2026/film/news/michael-mann-shot-himself-gun-range-accident-1236936667/"
+        "https://www.sportsgambler.com/betting-tips/basketball/ut-arlington-mavericks-vs-hawaii-rainbow-warriors-prediction-odds-2026-11-08/",
+        "https://www.covers.com/sport/basketball/ncaab/matchup/394911/picks",
+        "https://www.dimers.com/news/best-bets-11-08-2026-ac"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCrnevsi9bl4S6RHuQn1QK8LZ7wYu9dVeFKoRDdpRmdO7tU6yNDgS-bFpK-Lc",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w",
+      "image_credit": "Sportsgambler",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/01/movies/michael-mann-shooting.html",
-          "title": "Michael Mann Accidentally Shoots Himself at Los Angeles Gun Range",
-          "publisher": "The New York Times",
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/ut-arlington-mavericks-vs-hawaii-rainbow-warriors-prediction-odds-2026-11-08/",
+          "title": "UT Arlington vs Hawaii Prediction, Picks & Odds | 08 Nov 2026",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCrnevsi9bl4S6RHuQn1QK8LZ7wYu9dVeFKoRDdpRmdO7tU6yNDgS-bFpK-Lc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w"
         },
         {
-          "url": "https://www.hollywoodreporter.com/movies/movie-news/adam-driver-heat-2-role-michael-mann-shooting-update-1236748736/",
-          "title": "Adam Driver Confirms ‘Heat 2’ Villain Role, Shares Michael Mann Update After Accidental Shooting",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXsVBMsWJBj69y9fP2at9yyQ7fUeSieLbxaL_7nLuvBoQyvihcG6BsanT4Xs0"
-        },
-        {
-          "url": "https://variety.com/2026/film/news/michael-mann-shot-himself-gun-range-accident-1236936667/",
-          "title": "Michael Mann Hospitalized After Accidentally Shooting Himself in the Leg at Los Angeles Gun Range",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXuK_qaQGf0fwWtyEUY7KcHv9Y7px1psDw6yKp3yJOnsBXfqZn1h04Dd6elm4"
-        }
-      ]
-    },
-    {
-      "query": "wichita state basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T04:10:00Z",
-      "related_news_urls": [
-        "https://goshockers.com/news/2026/11/6/mens-basketball-mbb-preview-vs-21-usc-nov-8.aspx",
-        "https://www.kansas.com/sports/college/wichita-state/article317971317.html",
-        "https://www.covers.com/ncaab/usc-vs-wichita-state-prediction-picks-odds-nov-8-2026"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrSQpg8243IS1-VVbhsG06rlnGnCLp5_4nGVAAQAshqVez7IrDt0Hynz8BLVY",
-      "image_credit": "Wichita State Athletics",
-      "news": [
-        {
-          "url": "https://goshockers.com/news/2026/11/6/mens-basketball-mbb-preview-vs-21-usc-nov-8.aspx",
-          "title": "MBB Preview: vs. #21 USC (Nov. 8)",
-          "publisher": "Wichita State Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrSQpg8243IS1-VVbhsG06rlnGnCLp5_4nGVAAQAshqVez7IrDt0Hynz8BLVY"
-        },
-        {
-          "url": "https://www.kansas.com/sports/college/wichita-state/article317971317.html",
-          "title": "Wichita State vs. USC: Can Paul Mills solve a giant matchup problem?",
-          "publisher": "Wichita Eagle",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwGbxZMnT5uvEw3m7g57TcglTAIeyqXq_eavmPJFfKUn-SQyihH8FXqfglkeA"
-        },
-        {
-          "url": "https://www.covers.com/ncaab/usc-vs-wichita-state-prediction-picks-odds-nov-8-2026",
-          "title": "USC vs Wichita State Prediction, Picks & Odds for Tonight's College Basketball Game",
+          "url": "https://www.covers.com/sport/basketball/ncaab/matchup/394911/picks",
+          "title": "UT Arlington Mavericks vs Hawai'i Rainbow Warriors Prediction, Picks, Prop Bets For November 08, 2026 - NCAAB",
           "publisher": "Covers.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9VSxcZvTsRCEWh5SwfiACLPs5io7u8jWBxB5uvy23ppdS1WflskXPAuvWadw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_Z5MEDG1FkeA9waZgZsnKqc0Z35NWJ3ksctR0cX-3nfEczKnL4gGK-4w_R5A"
+        },
+        {
+          "url": "https://www.dimers.com/news/best-bets-11-08-2026-ac",
+          "title": "Best bets today for all sports: Sunday's picks include Heat vs. Kings NBA play [11/8/2026]",
+          "publisher": "Dimers",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSU0_hsrIBAGGpXxBbmB7wZwsN8WkTC6_VCqbai-6n2UlqSRia87YGtEmvQFMA"
+        }
+      ]
+    },
+    {
+      "query": "mv odyssey cruise ship detained",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T05:00:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/news/odyssey-forever-cruise-arrested-at-singapore-port/",
+        "https://www.reuters.com/world/asia-pacific/cruise-ship-leaves-cambodia-after-forcing-hundreds-passengers-off-2026-11-04/",
+        "https://www.nytimes.com/2026/11/06/travel/villa-vie-residences-odyssey-cruise.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDYEuxn-WmcZFKYAgLHVpmijMptT4fqGfkOh3Hgs1b8OV-VZ3yIHJn9tfWl7I",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/news/odyssey-forever-cruise-arrested-at-singapore-port/",
+          "title": "\"Forever cruise\" arrested at Singapore port, court records show",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDYEuxn-WmcZFKYAgLHVpmijMptT4fqGfkOh3Hgs1b8OV-VZ3yIHJn9tfWl7I"
+        },
+        {
+          "url": "https://www.reuters.com/world/asia-pacific/cruise-ship-leaves-cambodia-after-forcing-hundreds-passengers-off-2026-11-04/",
+          "title": "Cruise ship leaves Cambodia after forcing hundreds of passengers off",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShp5I_vYYaW2vPEnn6yh-pUVTRR_tciydaVp6qgNZnH7u9amLa_855YnQ67hc"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/06/travel/villa-vie-residences-odyssey-cruise.html",
+          "title": "They Spent Millions to Keep Their Dream Cruise Afloat. It Died Anyway.",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwO_j1w909sXynu_QXh0e7GlKdI89A-mdYWVFc7ggoJarle3uc_gq3xM9fPwk"
+        }
+      ]
+    },
+    {
+      "query": "pelle larsson",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T05:00:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/nba/news/giannis-antetokounmpo-leads-heat-past-kings-with-29-points/",
+        "https://www.sun-sentinel.com/2026/11/08/windermans-view-spoelstra-sends-wakeup-call-to-wiggins-in-win-with-rotation-remix/",
+        "https://www.si.com/nba/heat/onsi/the-miami-heat-make-a-starting-lineup-change-01m6yztdcqy2"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnLuJyGE-4fvkpkhhFpY-KsXN2Bt_GwESwcn8jwJiK_oJLd0rhId20iDjdsJ0",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/nba/news/giannis-antetokounmpo-leads-heat-past-kings-with-29-points/",
+          "title": "Giannis Antetokounmpo leads Heat past Kings with 29 points",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnLuJyGE-4fvkpkhhFpY-KsXN2Bt_GwESwcn8jwJiK_oJLd0rhId20iDjdsJ0"
+        },
+        {
+          "url": "https://www.sun-sentinel.com/2026/11/08/windermans-view-spoelstra-sends-wakeup-call-to-wiggins-in-win-with-rotation-remix/",
+          "title": "Winderman’s view: Heat’s Spoelstra sends wakeup call to Wiggins in win with rotation remix",
+          "publisher": "Sun Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc2l4qQ0MJOLheUQ_EW89ktHgPeQmvDQy3Ht16I2EcwfH7GI1zeEZ8Ij5fX5E"
+        },
+        {
+          "url": "https://www.si.com/nba/heat/onsi/the-miami-heat-make-a-starting-lineup-change-01m6yztdcqy2",
+          "title": "The Miami Heat Make a Starting Lineup Change",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBFFHsRBirTR7a_l3_qk-tMGukSqoXlRF2duNRSAML5qu36ohzLwuDwCLpxmk"
+        }
+      ]
+    },
+    {
+      "query": "nfc standings",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-09T04:50:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/nfc-west-standings-show-why-050033343.html",
+        "https://www.foxla.com/video/fmc-3q4sscolx47fjhtv",
+        "https://theramswire.usatoday.com/story/sports/nfl/rams/2026/11/03/rams-nfc-west-standings-49ers-seahawks/92584541007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmUJZ0aDmaxma2EAAfwgHwOpkVPBtlWHXuKK3p2D3kWfNuzPomczfylXM4seI",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/nfc-west-standings-show-why-050033343.html",
+          "title": "NFC West standings show why 49ers Week 9 win was so important",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmUJZ0aDmaxma2EAAfwgHwOpkVPBtlWHXuKK3p2D3kWfNuzPomczfylXM4seI"
+        },
+        {
+          "url": "https://www.foxla.com/video/fmc-3q4sscolx47fjhtv",
+          "title": "NFC West Huddle: Is the NFC North the toughest division now?",
+          "publisher": "FOX 11 Los Angeles",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX6JoR2XeRt5v9SYMKDU6TYhBYr2PkfmwvvOEA13DuWaXrZk9YxWBsVHETiKo"
+        },
+        {
+          "url": "https://theramswire.usatoday.com/story/sports/nfl/rams/2026/11/03/rams-nfc-west-standings-49ers-seahawks/92584541007/",
+          "title": "NFC West standings: Rams gain ground on 49ers, pull even with Seahawks",
+          "publisher": "Rams Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRALILQ5Su3vlzH0PlBxTzMa9i-HIFtXxUFGtH9zyZ0vJX81e_3rjANG5EPl7c"
+        }
+      ]
+    },
+    {
+      "query": "vikings qb",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-09T04:50:00Z",
+      "related_news_urls": [
+        "https://bringmethenews.com/minnesota-sports/sunday-vikings-trade-buzz-on-jonathan-taylor-kirk-cousins-daniel-jones",
+        "https://www.espn.com/video/clip/_/id/50413783/vikings-qb-situation-starting-take-shape",
+        "https://www.startribune.com/minnesota-vikings-nfl-trade-deadline-moves-2026-jonathan-taylor-budda-baker-gm-nolan-teasley-targets/601908775"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTxNtTvdWXaY4Ly_H8inbV0u6seShHvGRGzqF3PZokzaUONo2FfzU9v6cZCGY",
+      "image_credit": "Bring Me The News",
+      "news": [
+        {
+          "url": "https://bringmethenews.com/minnesota-sports/sunday-vikings-trade-buzz-on-jonathan-taylor-kirk-cousins-daniel-jones",
+          "title": "Sunday Vikings trade buzz on Jonathan Taylor, Kirk Cousins, Daniel Jones",
+          "publisher": "Bring Me The News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTxNtTvdWXaY4Ly_H8inbV0u6seShHvGRGzqF3PZokzaUONo2FfzU9v6cZCGY"
+        },
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50413783/vikings-qb-situation-starting-take-shape",
+          "title": "Vikings' QB situation starting to take shape",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCfvIUhgJwS3gidHeQwuZdtUo4HZzDcz7gUdeV7UPlVlIwLQxsuynRbzwekV0"
+        },
+        {
+          "url": "https://www.startribune.com/minnesota-vikings-nfl-trade-deadline-moves-2026-jonathan-taylor-budda-baker-gm-nolan-teasley-targets/601908775",
+          "title": "Vikings have trade deadline decisions to make beyond QB. Four positions to watch.",
+          "publisher": "Star Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZCRnjk07ar52kt49Rklvlvn1E5v6G96Yf1k8rDNYFuvthM2Zcsd80GisXCec"
+        }
+      ]
+    },
+    {
+      "query": "cole irvin",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T04:50:00Z",
+      "related_news_urls": [
+        "https://heavy.com/sports/mlb/los-angeles-dodgers/cole-irvin-release-veteran-pitcher-sudden-move/",
+        "https://sports.yahoo.com/articles/los-angeles-dodgers-release-7-191107025.html",
+        "https://heavy.com/sports/mlb/los-angeles-dodgers/yency-almonte-immediately-release-veteran-pitcher/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyKHtfzWNUKfQSWM7YE_lyqTBzuGWdS1OwtVtKBiQdbiD0ENhmNCHyLpB5NJ0",
+      "image_credit": "Heavy.com",
+      "news": [
+        {
+          "url": "https://heavy.com/sports/mlb/los-angeles-dodgers/cole-irvin-release-veteran-pitcher-sudden-move/",
+          "title": "Los Angeles Dodgers Release 7-Year MLB Veteran Pitcher in Sudden Move",
+          "publisher": "Heavy.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyKHtfzWNUKfQSWM7YE_lyqTBzuGWdS1OwtVtKBiQdbiD0ENhmNCHyLpB5NJ0"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/los-angeles-dodgers-release-7-191107025.html",
+          "title": "Los Angeles Dodgers Release 7-Year MLB Veteran Pitcher in Sudden Move",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXlndAhOEkrvmNUdMmcmCpWyL6mb52S_7P5ioKeEGyeL1dGvlBSyY48DZxI3k"
+        },
+        {
+          "url": "https://heavy.com/sports/mlb/los-angeles-dodgers/yency-almonte-immediately-release-veteran-pitcher/",
+          "title": "Los Angeles Dodgers Immediately Release 7-Year MLB Veteran Pitcher",
+          "publisher": "Heavy.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHznYzgRrNyl3rYBzZo1_yn6wyDLnz5NRhcsMOK68D0Ns4vhdsFya62fxcsIQ"
+        }
+      ]
+    },
+    {
+      "query": "nick jonas",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T04:50:00Z",
+      "related_news_urls": [
+        "https://people.com/nick-jonas-shares-what-he-resents-about-having-diabetes-12238940",
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/nick-jonas-reveals-unpredictability-life-024302015.html",
+        "https://www.hmenews.com/article/dexcom-invites-diabetes-community-to-share-their-journey-with-the-disease"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0WKywdGp6X3B6CqlmhGJIz5wemaOLq3S2Y5I2RGq7uHhDDjYdbWvJEZv-77k",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/nick-jonas-shares-what-he-resents-about-having-diabetes-12238940",
+          "title": "Nick Jonas Shares What He ‘Resents’ About Having Diabetes in a Candid Open Letter to the Disease",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0WKywdGp6X3B6CqlmhGJIz5wemaOLq3S2Y5I2RGq7uHhDDjYdbWvJEZv-77k"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/nick-jonas-reveals-unpredictability-life-024302015.html",
+          "title": "Nick Jonas reveals 'unpredictability' of life with diabetes",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7oTsJxIwE5BeoJUVCOF8AghL2Fln7mq8ayYzmsaaAeXOLZPNBRHfcXpDuFYs"
+        },
+        {
+          "url": "https://www.hmenews.com/article/dexcom-invites-diabetes-community-to-share-their-journey-with-the-disease",
+          "title": "Dexcom invites diabetes community to share their journey with the disease",
+          "publisher": "HME News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRI0pGQaRPLi9cPT1eRCJWGPY0cbyDiABddiD47xVBQtwqlCGoUc4YPzbaN_mA"
+        }
+      ]
+    },
+    {
+      "query": "bella coola bear trail search",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T04:50:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/news/grizzly-bear-kills-woman-daughter-canada-search/",
+        "https://www.nytimes.com/2026/11/05/world/canada/canada-grizzly-bear-attack-mother-daughter-killed.html",
+        "https://www.foxnews.com/world/canadian-mother-daughter-dead-suspected-grizzly-bear-attack-hiking-trail"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkoO-GFQCSXXgYzktuyrYJFy70hQU2_5oGu1gGtj1F022eDEP5lfNX-LUGYqk",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/news/grizzly-bear-kills-woman-daughter-canada-search/",
+          "title": "Grim details emerge after apparent grizzly bear attack kills woman and daughter in Canada",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkoO-GFQCSXXgYzktuyrYJFy70hQU2_5oGu1gGtj1F022eDEP5lfNX-LUGYqk"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/05/world/canada/canada-grizzly-bear-attack-mother-daughter-killed.html",
+          "title": "Canadian Officials Search for Bears After Mother and Daughter Are Killed on Hike",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVXw4_6GeUlaJleH63bRhhGChPe6PMGc0gil556DJ6CJj3pPsf9cqBOS0SPC8"
+        },
+        {
+          "url": "https://www.foxnews.com/world/canadian-mother-daughter-dead-suspected-grizzly-bear-attack-hiking-trail",
+          "title": "Canadian mother and daughter dead after suspected grizzly bear attack on hiking trail",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9vFo8R2ymj_idDx9a6cUfymZiYMMOtsK6Cwwzik-RsQV93ddvCziEdcVSa54"
         }
       ]
     }
