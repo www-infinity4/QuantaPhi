@@ -66,13 +66,19 @@ export function recommendCapabilities(question,env={}){
  const q=String(question||'').toLowerCase().slice(0,600);
  const ids=[];
  const add=(...values)=>{for(const id of values)if(!ids.includes(id))ids.push(id);};
- const commitRead=/\bcommits?\b/.test(q)&&/\b(?:read|view|inspect|show|list|fetch|explain|find)\b/.test(q);
- const publicMemoryTest=/\b(?:organic\s+computation|memory|recall|pattern)\b/.test(q)&&
-  /\b(?:benchmark|simulat(?:e|ion)|test|trials?|digital)\b/.test(q);
- if(commitRead)add('github.read_commit');
- if(publicMemoryTest)add('organic.memory_benchmark');
- if(/\b(?:deploy|deployment|code changes?|modif(?:y|ication)|edit|write|repair|fix|build|merge|push)\b/.test(q)||
-    /\b(?:commit|committing)\s+(?:my\s+|the\s+)?(?:code|changes|files|patch|work)\b|\bmake\s+(?:a\s+)?commit\b/.test(q))
+ // The requested *operation* wins over generic discovery verbs such as "show".
+ const commitWrite=/\bcommit(?:ting)?\s+(?:to\b|(?:a|an|the|my|this|that|some|new)\s+(?:file|files|change|changes|code|patch|source)\b|(?:file|files|change|changes|code|patch|source|work)\b|with\s+git\b)|\bmake\s+(?:a\s+)?commit\b/i.test(q);
+ const commitRead=!commitWrite&&/\bcommits?\b/.test(q)&&
+  /\b(?:read|view|inspect|show|list|fetch|explain|find)\b/.test(q);
+ const privateMemory=/\b(?:saved|private|personal|owner|conversation)\b.{0,55}\b(?:memory|memories|recall|context)\b|\bmy\b.{0,55}\b(?:saved|private|owner|conversation)\b.{0,55}\b(?:memory|recall|context)\b/i.test(q);
+ const publicMemoryTest=!privateMemory&&
+  (/\borganic\s+computation\b/.test(q)||/\b(?:software(?:-only)?|digital)\b.{0,55}\b(?:memory|recall|benchmark)\b/.test(q))&&
+  /\b(?:benchmark|simulat(?:e|ion)|trials?|digital|software(?:-only)?)\b/.test(q);
+ if(commitWrite)add('robot_brain.owner_work');
+ else if(commitRead)add('github.read_commit');
+ if(privateMemory)add('bubbles.memory.owner');
+ else if(publicMemoryTest)add('organic.memory_benchmark');
+ if(/\b(?:deploy|deployment|code changes?|modif(?:y|ication)|edit|write|repair|fix|build|merge|push)\b/.test(q))
   add('robot_brain.owner_work');
  if(/\b(?:create|make|start)\b/.test(q)&&/\b(?:git(?:hub)?|repositor(?:y|ies)|repos?)\b/.test(q))
   add('github.create_repository');
@@ -87,7 +93,7 @@ export function recommendCapabilities(question,env={}){
  if(/\b(?:weather|forecast|temperature|rain)\b/.test(q))add('weather.current');
  if(/\b(?:news|headlines?)\b/.test(q))add('news.headlines');
  if(/\b(?:quick cards?|cards?|carousel|media player)\b/.test(q))add('quick_card.open');
- if(!publicMemoryTest&&/\b(?:memory|memories|context|remember|recall)\b/.test(q))
+ if(!privateMemory&&!publicMemoryTest&&/\b(?:memory|memories|context|remember|recall)\b/.test(q))
   add('bubbles.memory.owner');
  if(/\b(?:resonance|calculator|frequency|inductance)\b/.test(q))
   add('resonance.calculate');
