@@ -3,9 +3,71 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T07:31:26.395501Z",
+  "checked_at": "2026-11-09T08:01:40.016631Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "steve sarkisian texas longhorns comments",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T07:40:00Z",
+      "related_news_urls": [
+        "https://www.burntorangenation.com/texas-longhorns-football/106959/texas-longhorns-toughness-steve-sarkisian-missouri",
+        "https://www.foxnews.com/outkick-sports/steve-sarkisian-started-campaign-texas-longhorns-ridiculous-big-game-comments",
+        "https://247sports.com/college/texas/article/were-big-game-hunters-its-the-right-time-to-take-texas-seriously-as-a-title-contender-the-first-word-292400210/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOuKd7D8QsdzHpYR9cx41LtR6SUaHHZL0a16lKgcx9XLewa1WuXb-eD0VQdx0",
+      "image_credit": "Burnt Orange Nation",
+      "news": [
+        {
+          "url": "https://www.burntorangenation.com/texas-longhorns-football/106959/texas-longhorns-toughness-steve-sarkisian-missouri",
+          "title": "Steve Sarkisian lauds the undeniable toughness of his Texas team",
+          "publisher": "Burnt Orange Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOuKd7D8QsdzHpYR9cx41LtR6SUaHHZL0a16lKgcx9XLewa1WuXb-eD0VQdx0"
+        },
+        {
+          "url": "https://www.foxnews.com/outkick-sports/steve-sarkisian-started-campaign-texas-longhorns-ridiculous-big-game-comments",
+          "title": "Steve Sarkisian has already started his campaign for Texas Longhorns with ridiculous 'big game' comments",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWH6TDA345K8y7Be4i6RNIlM7Q1Eomlw6Jwy8EneP3hKO_uzFZxab5QHM8IP4"
+        },
+        {
+          "url": "https://247sports.com/college/texas/article/were-big-game-hunters-its-the-right-time-to-take-texas-seriously-as-a-title-contender-the-first-word-292400210/",
+          "title": "'We're big game hunters' -- It's the right time to take Texas seriously as a title contender: The First Word",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAREDfYv_DDW6k1jCpYv9N9ydDpO8C8a9rChpenidFLq7sMGLJLZYGiw70Yvs"
+        }
+      ]
+    },
+    {
+      "query": "destruction allstars delisted playstation store",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T07:20:00Z",
+      "related_news_urls": [
+        "https://www.cbr.com/playstation-game-official-shut-down-november-2026/",
+        "https://opencritic.com/news/39261/playstation-game-is-permanently-shutting-down-on-november-25"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6wmMeb2GfAmQ1XqgaQTisJ8l1cth-XzdXXgm4w6yLOBBVtcYMABO0Se7upKg",
+      "image_credit": "Comic Book Resources",
+      "news": [
+        {
+          "url": "https://www.cbr.com/playstation-game-official-shut-down-november-2026/",
+          "title": "PlayStation Game Will Officially Shut Down November 25",
+          "publisher": "Comic Book Resources",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6wmMeb2GfAmQ1XqgaQTisJ8l1cth-XzdXXgm4w6yLOBBVtcYMABO0Se7upKg"
+        },
+        {
+          "url": "https://opencritic.com/news/39261/playstation-game-is-permanently-shutting-down-on-november-25",
+          "title": "PlayStation Game is Permanently Shutting Down on November 25",
+          "publisher": "OpenCritic",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScf8izxcBrZuaUz_VbkKPVTLHk45gRXyMs2wvRWUPpDM5zKP6un6qMWeNGGHM"
+        }
+      ]
+    },
     {
       "query": "elon musk spacex telecom acquisition",
       "approx_searches": "100+",
@@ -112,13 +174,48 @@
       ]
     },
     {
+      "query": "杭州枪击",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T06:40:00Z",
+      "related_news_urls": [
+        "https://www.ntdtv.com/gb/2026/11/08/a104149097.html",
+        "https://www.aboluowang.com/2026/1109/2455188.html",
+        "https://zj.ifeng.com/c/8xrjfAVyI0A"
+      ],
+      "image_url": null,
+      "image_credit": "新唐人電視台",
+      "news": [
+        {
+          "url": "https://www.ntdtv.com/gb/2026/11/08/a104149097.html",
+          "title": "杭州臨平萬達廣場驚傳持槍搶劫案 多人死亡（視頻）",
+          "publisher": "新唐人電視台",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://www.aboluowang.com/2026/1109/2455188.html",
+          "title": "杭州惊传持枪抢劫案 多人死亡",
+          "publisher": "阿波罗新闻网",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://zj.ifeng.com/c/8xrjfAVyI0A",
+          "title": "2026无界艺术时尚周开幕式暨文旅时尚产业大会在临平举行",
+          "publisher": "凤凰网",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSR0lZeUfBimLi2RWJCn3m_eSRWMgAdhEvp4exmBlKtkEqtA02MydA6EMVey00"
+        }
+      ]
+    },
+    {
       "query": "visionquest episode 8",
       "approx_searches": "1000+",
       "published_at": "2026-11-09T06:40:00Z",
       "related_news_urls": [
         "https://www.imdb.com/news/ni66094426/?ref_=nmnw_art_perm",
         "https://thedirect.com/article/marvel-studios-visionquest-season-2-promo",
-        "https://geektyrant.com/news/video-promo-for-the-final-episode-of-visionquest-teases-one-final-surprise"
+        "https://www.comicbasics.com/new-visionquest-clip-puts-visions-grief-over-wanda-front-and-center/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHY08TDloscLhKrjjQi68KEHselh44ODlBCun1sz747t6XKt7EJGn0spDKizk",
       "image_credit": "IMDb",
@@ -138,17 +235,17 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTw0CRWjKMowfi7zdJEGWLakEAEh1Nxt8D3xo7cnlMYqeSShWXjTcGM4qMFu_I"
         },
         {
-          "url": "https://geektyrant.com/news/video-promo-for-the-final-episode-of-visionquest-teases-one-final-surprise",
-          "title": "Video Promo for the Final Episode of VISIONQUEST Teases \"One Final Surprise\"",
-          "publisher": "GeekTyrant",
+          "url": "https://www.comicbasics.com/new-visionquest-clip-puts-visions-grief-over-wanda-front-and-center/",
+          "title": "New ‘VisionQuest’ Clip Puts Vision’s Grief Over Wanda Front and Center",
+          "publisher": "Comic Basics",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTixLmJX5vyLR1IAgeOoeCCRgl1HfAALMnoQzitEkcXwwDABWiDhlhqOf8e-5g"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSH4aBsPQpOaq24Eeol8pPnjORRv1K2_1PGH3q2U3v2oV0LG5r6-aAqwYrnQBQ"
         }
       ]
     },
     {
       "query": "michaella love is blind",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-09T06:30:00Z",
       "related_news_urls": [
         "https://www.netflix.com/tudum/articles/love-is-blind-season-11-matt-beekeeper-michaella-interview",
@@ -186,33 +283,33 @@
       "approx_searches": "100+",
       "published_at": "2026-11-09T06:20:00Z",
       "related_news_urls": [
-        "https://www.wthr.com/article/sports/wnba/indiana-fever/caitlin-clark-tonight-show-starring-jimmy-fallon-interview-nbc-friday-night/531-f18c83ef-65cf-4c1b-9bc0-c25b8fd5687e",
-        "https://www.soleretriever.com/news/articles/caitlin-clark-gifts-jimmy-fallon-nike-caitlin-1-friendship-bracelet",
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/caitlin-clark-goes-12-16-135608006.html"
+        "https://www.bostonglobe.com/2026/11/08/arts/comics-come-home/",
+        "https://www.bostonmagazine.com/arts-entertainment/2026/11/04/comics-come-home-2026/",
+        "https://985thesportshub.com/2026/11/02/win-tickets-to-comics-come-home/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVLkrFkTJu3hBIDNMw8jkHbkUZ0ymWFOCf2sb4_FBR2_bWLEAs0cQDyuuJahw",
-      "image_credit": "WTHR",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkhUBrbCKrNO_m4ChMxjEjRP_VJyofxpfy6bFhxjdq1pzQ5ke1ApxWf0cdogU",
+      "image_credit": "The Boston Globe",
       "news": [
         {
-          "url": "https://www.wthr.com/article/sports/wnba/indiana-fever/caitlin-clark-tonight-show-starring-jimmy-fallon-interview-nbc-friday-night/531-f18c83ef-65cf-4c1b-9bc0-c25b8fd5687e",
-          "title": "Caitlin Clark caps big week with 'Tonight Show' appearance",
-          "publisher": "WTHR",
+          "url": "https://www.bostonglobe.com/2026/11/08/arts/comics-come-home/",
+          "title": "Jimmy Fallon, Jon Stewart, and more bring the laughs to Boston for Comics Come Home’s 30th anniversary",
+          "publisher": "The Boston Globe",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVLkrFkTJu3hBIDNMw8jkHbkUZ0ymWFOCf2sb4_FBR2_bWLEAs0cQDyuuJahw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkhUBrbCKrNO_m4ChMxjEjRP_VJyofxpfy6bFhxjdq1pzQ5ke1ApxWf0cdogU"
         },
         {
-          "url": "https://www.soleretriever.com/news/articles/caitlin-clark-gifts-jimmy-fallon-nike-caitlin-1-friendship-bracelet",
-          "title": "Caitlin Clark Gifts Jimmy Fallon the Taylor Swift-Inspired Nike Caitlin 1 Friendship Bracelet",
-          "publisher": "Sole Retriever",
+          "url": "https://www.bostonmagazine.com/arts-entertainment/2026/11/04/comics-come-home-2026/",
+          "title": "Comics Come Home 2026: Cam Neely and Denis Leary’s Fundraiser Turns 30",
+          "publisher": "Boston Magazine",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_fC65D4djtQxVZvzKZA2LAucwAkAznqR4_Nqw9B7TSJnjQ-Ma0CU6aDQzeL4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXGatoYST5WFPzUBGyJSTcEBQsyEvV6LTqhWJ4trPfUrmT_fwYH74zsby3AIE"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/caitlin-clark-goes-12-16-135608006.html",
-          "title": "Caitlin Clark Goes 12-for-16 While Shooting Cheeseballs Into Jimmy Fallon's Mouth in 24 Seconds",
-          "publisher": "Yahoo",
+          "url": "https://985thesportshub.com/2026/11/02/win-tickets-to-comics-come-home/",
+          "title": "Win Tickets To Comics Come Home",
+          "publisher": "98.5 The Sports Hub",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTP0VmqwxRPs-alrE1UY6QrGsAMj3XJMbMcH2WxuC28DMR8Pz7WN2_Q95uvOd4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPnRavZnF-IE8QRnROmWp-fVs28Xaup3Pqtr0Un83WYggVNKFG4NgaRhtA1-Q"
         }
       ]
     },
@@ -248,111 +345,6 @@
           "publisher": "Charter Communications",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLrldBUNUxrprrQdaGkYX-IyU3QqIHF3o_gPJ8nNZdwM-7CUvyPxPcKlXOanM"
-        }
-      ]
-    },
-    {
-      "query": "magda linette",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T06:00:00Z",
-      "related_news_urls": [
-        "https://przegladsportowy.onet.pl/tenis/magda-linette-janice-tjen-na-zywo-polka-gra-w-wielkim-finale/mcynx26",
-        "https://www.polsatsport.pl/wiadomosc/2026-11-08/wta-w-chennai-magda-linette-janice-tjen-relacja-live-i-wynik-na-zywo/",
-        "https://sportowefakty.wp.pl/sportowybar/1283124/jest-ustawiona-do-konca-zycia-ma-miliony-na-koncie"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjVdhw4nP5HjHREZKrNfNh9KlNYwIIilf2NM6GD-9WxbQ7cY0JhdnqelaWi_E",
-      "image_credit": "Przegląd Sportowy",
-      "news": [
-        {
-          "url": "https://przegladsportowy.onet.pl/tenis/magda-linette-janice-tjen-na-zywo-polka-gra-w-wielkim-finale/mcynx26",
-          "title": "Magda Linette - Janice Tjen NA ŻYWO. Polka gra w wielkim finale",
-          "publisher": "Przegląd Sportowy",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjVdhw4nP5HjHREZKrNfNh9KlNYwIIilf2NM6GD-9WxbQ7cY0JhdnqelaWi_E"
-        },
-        {
-          "url": "https://www.polsatsport.pl/wiadomosc/2026-11-08/wta-w-chennai-magda-linette-janice-tjen-relacja-live-i-wynik-na-zywo/",
-          "title": "WTA w Chennai: Magda Linette - Janice Tjen. Relacja live i wynik na żywo",
-          "publisher": "www.polsatsport.pl",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTh5Zwg6qzga87JqGDSg-lyxTTTiSfe8wDNzp51YnLt4SsA7fmghjZDx8fDspY"
-        },
-        {
-          "url": "https://sportowefakty.wp.pl/sportowybar/1283124/jest-ustawiona-do-konca-zycia-ma-miliony-na-koncie",
-          "title": "Jest \"ustawiona\" do końca życia. Ma miliony na koncie",
-          "publisher": "SportoweFakty",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjZ9i5pdGnEXOOkcsasLTmT6ca5OxUk_mc18BpxWppIWJ0y97sXCvLZXVs8Uk"
-        }
-      ]
-    },
-    {
-      "query": "杭州临平",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T06:00:00Z",
-      "related_news_urls": [
-        "https://www.ntdtv.com/gb/2026/11/08/a104149097.html",
-        "https://www.aboluowang.com/2026/1109/2455188.html",
-        "https://zj.ifeng.com/c/8xrjfAVyI0A"
-      ],
-      "image_url": null,
-      "image_credit": "新唐人電視台",
-      "news": [
-        {
-          "url": "https://www.ntdtv.com/gb/2026/11/08/a104149097.html",
-          "title": "杭州臨平萬達廣場驚傳持槍搶劫案 多人死亡（視頻）",
-          "publisher": "新唐人電視台",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://www.aboluowang.com/2026/1109/2455188.html",
-          "title": "杭州惊传持枪抢劫案 多人死亡",
-          "publisher": "阿波罗新闻网",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://zj.ifeng.com/c/8xrjfAVyI0A",
-          "title": "2026无界艺术时尚周开幕式暨文旅时尚产业大会在临平举行",
-          "publisher": "凤凰网",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSR0lZeUfBimLi2RWJCn3m_eSRWMgAdhEvp4exmBlKtkEqtA02MydA6EMVey00"
-        }
-      ]
-    },
-    {
-      "query": "denzel washington",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T06:00:00Z",
-      "related_news_urls": [
-        "https://www.tvline.com/2303841/denzel-washington-final-tv-role-animated-hbo-kids-show/",
-        "https://www.imdb.com/news/ni66099970/?ref_=tt_nwr_1",
-        "https://movieweb.com/2-guns-washington-wahlberg-action-thriller-stream-youtube-november-2026/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnZHKjYhrSvaFQkOYU87oz9lOfieeaNgkqpypWGGEb0-6CZn8sTo-2pG-yfqQ",
-      "image_credit": "TVLine",
-      "news": [
-        {
-          "url": "https://www.tvline.com/2303841/denzel-washington-final-tv-role-animated-hbo-kids-show/",
-          "title": "Denzel Washington's Final TV Role Was On An Animated HBO Kids' Show",
-          "publisher": "TVLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnZHKjYhrSvaFQkOYU87oz9lOfieeaNgkqpypWGGEb0-6CZn8sTo-2pG-yfqQ"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66099970/?ref_=tt_nwr_1",
-          "title": "Denzel Washington's Final TV Role Was On An Animated HBO Kids' Show",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaFmM6HqpyB_w5lia9bTxgCCWa0YMihRCv-aoSALvFs8jN1wZus3nPFHfvOiQ"
-        },
-        {
-          "url": "https://movieweb.com/2-guns-washington-wahlberg-action-thriller-stream-youtube-november-2026/",
-          "title": "Denzel Washington & Mark Wahlberg's 109-Minute Action Thriller Is Streaming Free After Being Cut From Netflix",
-          "publisher": "MovieWeb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTuWCgfA9Xs_BIwx0CBOSVq2kpx3xK86lGPe7SE3lXkAMqbdLcAUdF3raWco9w"
         }
       ]
     }
