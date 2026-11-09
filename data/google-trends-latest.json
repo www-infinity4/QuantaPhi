@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T21:01:31.529491Z",
+  "checked_at": "2026-11-09T21:31:32.068017Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "lauren boebert results",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T20:40:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/09/politics/lauren-boebert-lose-reelection-eileen-laubacher",
-        "https://www.nbcnews.com/politics/2026-elections/colorado-us-house-district-4-results",
-        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-colorado-us-house-4.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk60UfMg4uq8qcWU3Gr-UI6CUNDG4akzjshpDwFUMTRIeZQLBMZ2W5ZFi8UIQ",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/09/politics/lauren-boebert-lose-reelection-eileen-laubacher",
-          "title": "GOP Rep. Lauren Boebert will lose reelection to Democrat Eileen Laubacher in Colorado, CNN projects",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk60UfMg4uq8qcWU3Gr-UI6CUNDG4akzjshpDwFUMTRIeZQLBMZ2W5ZFi8UIQ"
-        },
-        {
-          "url": "https://www.nbcnews.com/politics/2026-elections/colorado-us-house-district-4-results",
-          "title": "Colorado House District 4 Midterm Election 2026: Live Results",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRA-84ftLC9S4MUfoDmDtErRixiuH6u1k-9I8pZCm8Vn8ZSYcFWriCdaBWwlIs"
-        },
-        {
-          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-colorado-us-house-4.html",
-          "title": "Colorado Fourth Congressional District 2026: Live Election Results, Boebert vs. Laubacher",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8OstSZUYQvuRqFn-yrvQ0TdXcxQKmWisL0H-1KSYiswIHpolfOXADTPuXDdQ"
-        }
-      ]
-    },
-    {
-      "query": "carla hall",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T20:20:00Z",
-      "related_news_urls": [
-        "https://www.the-sun.com/tv/17269680/food-network-carla-hall-quit-fired-holiday-baking-championship/",
-        "https://www.aol.com/articles/why-fans-think-food-network-044047000.html",
-        "https://parade.com/food/carla-hall-reportedly-wont-return-to-food-network-after-years-on-its-popular-baking-shows"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQzH76I1q0K0V5clQmQiDbyxoF5Q8zAULQoooUiyAn3GAtLoEkvc4czlZZIvI",
-      "image_credit": "The Sun",
-      "news": [
-        {
-          "url": "https://www.the-sun.com/tv/17269680/food-network-carla-hall-quit-fired-holiday-baking-championship/",
-          "title": "Beloved Food Network judge will not return to ANY show as 'business relationship has ended'",
-          "publisher": "The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQzH76I1q0K0V5clQmQiDbyxoF5Q8zAULQoooUiyAn3GAtLoEkvc4czlZZIvI"
-        },
-        {
-          "url": "https://www.aol.com/articles/why-fans-think-food-network-044047000.html",
-          "title": "Why Fans Think Food Network Judge Carla Hall Is Leaving: Rumors Explained",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTS1Q8SfApQC22wUXu57c5_xNSF0AAIcDc6tO8ICMKsUWx9R4m7a4joIFSbX1Y"
-        },
-        {
-          "url": "https://parade.com/food/carla-hall-reportedly-wont-return-to-food-network-after-years-on-its-popular-baking-shows",
-          "title": "Carla Hall Reportedly Won't Return to Food Network After Years on Its Popular Baking Shows",
-          "publisher": "Parade Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTt-XIxciUkJ4CADxMpjhMEl69auUBxA9r2kEeJbVSd_PK6JuvZCHYtIUtiagg"
-        }
-      ]
-    },
-    {
-      "query": "tiger",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T20:20:00Z",
-      "related_news_urls": [
-        "https://www.wbrz.com/news/after-losing-to-alabama-in-tiger-stadium-lane-kiffin-looks-ahead-to-lsu-s-matchup-against-texas/",
-        "https://www.nola.com/sports/lsu/lsu-football-texas-kickoff-time/article_da8c8c1f-1fb1-4326-b1b3-3d66e45f73fe.html",
-        "https://www.usatoday.com/story/shopping/sports/tickets/2026/11/09/lsu-vs-texas-college-football-tickets/92689652007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRX3oE4foalz6QpEi5ar6jNYZ-XRM3ZBjwzk8tzdZQuZuMQEG2fym8JaTxukxc",
-      "image_credit": "WBRZ",
-      "news": [
-        {
-          "url": "https://www.wbrz.com/news/after-losing-to-alabama-in-tiger-stadium-lane-kiffin-looks-ahead-to-lsu-s-matchup-against-texas/",
-          "title": "Kiffin says LSU must execute better late in games as Tigers prepare for Texas",
-          "publisher": "WBRZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRX3oE4foalz6QpEi5ar6jNYZ-XRM3ZBjwzk8tzdZQuZuMQEG2fym8JaTxukxc"
-        },
-        {
-          "url": "https://www.nola.com/sports/lsu/lsu-football-texas-kickoff-time/article_da8c8c1f-1fb1-4326-b1b3-3d66e45f73fe.html",
-          "title": "Despite a loss, LSU received good news about its kickoff time with Texas",
-          "publisher": "NOLA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8ISG7yhKSX0q8CknynSNBDPt5LwnuJbG2DEMSsRhQvrjBXK_35VxAAUzXI48"
-        },
-        {
-          "url": "https://www.usatoday.com/story/shopping/sports/tickets/2026/11/09/lsu-vs-texas-college-football-tickets/92689652007/",
-          "title": "LSU vs Texas football tickets for this weekend start at over $300",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSk9F1lEnCsffw-Nzq9GfLodSjDTvsG30WfXlYnTFtlHj9zGn8Dmfx2thuLxLI"
-        }
-      ]
-    },
-    {
-      "query": "aryna sabalenka",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T20:10:00Z",
-      "related_news_urls": [
-        "https://www.wtatennis.com/news/4606429/wta-finals-2026-day-2-preview-can-aryna-sabalenka-even-series-with-karolina-muchova",
-        "https://www.tennisworldusa.org/tennis/news/WTA_Tennis/171322/karolina-muchova-explains-why-her-game-matches-up-so-well-against-aryna-sabalenka/",
-        "https://tennishead.net/brad-gilbert-suggests-why-he-thinks-karolina-muchova-could-beat-aryna-sabalenka-at-the-wta-finals/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUsfAeCI1Bl34vCmg-yfJIf_JapRj_QGuOUvxwXCF7SQ5zbgXJHPtaEsuwMdk",
-      "image_credit": "WTA Tennis",
-      "news": [
-        {
-          "url": "https://www.wtatennis.com/news/4606429/wta-finals-2026-day-2-preview-can-aryna-sabalenka-even-series-with-karolina-muchova",
-          "title": "FAGE WTA Finals Day 2 preview: Can Sabalenka even series with Muchova?",
-          "publisher": "WTA Tennis",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUsfAeCI1Bl34vCmg-yfJIf_JapRj_QGuOUvxwXCF7SQ5zbgXJHPtaEsuwMdk"
-        },
-        {
-          "url": "https://www.tennisworldusa.org/tennis/news/WTA_Tennis/171322/karolina-muchova-explains-why-her-game-matches-up-so-well-against-aryna-sabalenka/",
-          "title": "Karolina Muchova explains why her game matches up so well against Aryna Sabalenka",
-          "publisher": "Tennis World USA",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCx2fvqCatrZN9pOsg6HpNBjMyaY-LcAITRQCdYu8D1GYvXU7jQFCM5gNFzbI"
-        },
-        {
-          "url": "https://tennishead.net/brad-gilbert-suggests-why-he-thinks-karolina-muchova-could-beat-aryna-sabalenka-at-the-wta-finals/",
-          "title": "Brad Gilbert suggests why he thinks Karolina Muchova could beat Aryna Sabalenka at the WTA Finals",
-          "publisher": "Tennishead",
-          "description": "",
-          "image_url": null
-        }
-      ]
-    },
-    {
-      "query": "tony stewart",
+      "query": "hims stock",
       "approx_searches": "500+",
-      "published_at": "2026-11-09T20:00:00Z",
+      "published_at": "2026-11-09T21:10:00Z",
       "related_news_urls": [
-        "https://racingnews.co/2026/11/09/tony-stewart-says-he-would-fire-everyone-at-nascar/",
-        "https://www.whiskeyriff.com/2026/11/08/cleaning-house-at-the-top-tony-stewart-says-hed-fire-everyone-if-he-became-nascar-commissioner/",
-        "https://sports.yahoo.com/articles/tony-stewart-says-fire-nascar-182738564.html"
+        "https://www.barrons.com/articles/hims-hers-earnings-stock-price-7869b1b3",
+        "https://www.benzinga.com/trading-ideas/movers/26/11/63056929/hims-and-hers-stock-plunges-before-earnings-what-to-watch",
+        "https://www.quiverquant.com/news/Hims+%26+Hers+Health+Shares+Fall+as+Investors+Weigh+Recent+GLP-1+Expansion+and+Upcoming+Earnings"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSERlJhBmksF3T7kK0WTiefdzD7zcxmAvViPJv37kTGDgnhdN2bw4lGrhlL9NE",
-      "image_credit": "RacingNews.co",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuucMpcuMJAc1R9QZEO1ARR56remCsjZK11dlfY8ujZIMBsf29rFU099nL9tw",
+      "image_credit": "Barron's",
       "news": [
         {
-          "url": "https://racingnews.co/2026/11/09/tony-stewart-says-he-would-fire-everyone-at-nascar/",
-          "title": "Tony Stewart says he would fire everyone at NASCAR (Video)",
-          "publisher": "RacingNews.co",
+          "url": "https://www.barrons.com/articles/hims-hers-earnings-stock-price-7869b1b3",
+          "title": "Hims & Hers Stock Is Falling Ahead of Earnings. What to Expect.",
+          "publisher": "Barron's",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSERlJhBmksF3T7kK0WTiefdzD7zcxmAvViPJv37kTGDgnhdN2bw4lGrhlL9NE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuucMpcuMJAc1R9QZEO1ARR56remCsjZK11dlfY8ujZIMBsf29rFU099nL9tw"
         },
         {
-          "url": "https://www.whiskeyriff.com/2026/11/08/cleaning-house-at-the-top-tony-stewart-says-hed-fire-everyone-if-he-became-nascar-commissioner/",
-          "title": "“Cleaning House At The Top” – Tony Stewart Says He’d Fire Everyone If He Became NASCAR Commissioner",
-          "publisher": "Whiskey Riff",
+          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63056929/hims-and-hers-stock-plunges-before-earnings-what-to-watch",
+          "title": "Hims & Hers Stock Plunges Before Earnings: What to Watch",
+          "publisher": "Benzinga",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeX2-lwM-Sql4VlklFmyJc7xR8dNNdcONnJFd1L0prPPNpVkq4-x7cX_Gk5pE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWx_HX5QEEPDtMaaZYT8uDYtk1IA8m8etMo9BXEhpq30N-P7X2lCWvY29o49g"
         },
         {
-          "url": "https://sports.yahoo.com/articles/tony-stewart-says-fire-nascar-182738564.html",
-          "title": "Tony Stewart Says He Would Fire NASCAR’s Entire Upper Management",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.quiverquant.com/news/Hims+%26+Hers+Health+Shares+Fall+as+Investors+Weigh+Recent+GLP-1+Expansion+and+Upcoming+Earnings",
+          "title": "Hims & Hers Health Shares Fall as Investors Weigh Recent GLP-1 Expansion and Upcoming Earnings",
+          "publisher": "Quiver Quantitative",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSj6hSZFTCsewVBkZSlKVn5uxCuVGC-hE_yE0Iv0J5Gnxg4cyvZ5KQtgK7mDXg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQksfm4zkE1EDxMw0XwyR3lie4mTm5SjDvGhV4jh6dyD7R3yW3AGyTfddS_fa0"
         }
       ]
     },
     {
-      "query": "playstation",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T19:50:00Z",
-      "related_news_urls": [
-        "https://www.theverge.com/news/1029822/sony-playstation-portal-japan-model-additional-storage",
-        "https://www.polygon.com/sony-playstation-portal-japan-only-internal-storage/",
-        "https://www.ign.com/articles/sony-launches-new-ps-portal-model-in-japan-with-internal-storage-for-future-functionality-changes-official-name"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLaSJVcoXVKSeAjjdL8RT6yLpX02pmiYBVgmZHy42D9ltGzZCO_-7TMpXi7Jg",
-      "image_credit": "The Verge",
-      "news": [
-        {
-          "url": "https://www.theverge.com/news/1029822/sony-playstation-portal-japan-model-additional-storage",
-          "title": "Sony’s new PlayStation Portal handheld includes ‘additional’ internal storage",
-          "publisher": "The Verge",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLaSJVcoXVKSeAjjdL8RT6yLpX02pmiYBVgmZHy42D9ltGzZCO_-7TMpXi7Jg"
-        },
-        {
-          "url": "https://www.polygon.com/sony-playstation-portal-japan-only-internal-storage/",
-          "title": "Sony Officially Announces New Playstation Handheld",
-          "publisher": "Polygon.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQ6XcIV4CzHapMgVVdMUtURbGkDyoTC5jaHolgZCsrDzsyG57McSn40ly_8xk"
-        },
-        {
-          "url": "https://www.ign.com/articles/sony-launches-new-ps-portal-model-in-japan-with-internal-storage-for-future-functionality-changes-official-name",
-          "title": "Sony Launches New PS Portal Model in Japan With Internal Storage for 'Future Functionality,' Changes Official Name",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-NEhbxfNXSstvTNdPkG_zFX3dJTnynU15bvctPf6lxMDPefGieLas32YLFJM"
-        }
-      ]
-    },
-    {
-      "query": "mark zuckerberg net worth 200 billion",
+      "query": "big bend national park",
       "approx_searches": "500+",
-      "published_at": "2026-11-09T19:50:00Z",
+      "published_at": "2026-11-09T21:10:00Z",
       "related_news_urls": [
-        "https://fortune.com/2026/11/07/zuckerberg-chan-daughters-inheritance-99-percent-pledge/",
-        "https://pluang.com/en/news-feed/pensiunan-saham-meta-zuckerberg-fortune-200-miliar-investasi",
-        "https://timesofindia.indiatimes.com/technology/tech-news/mark-zuckerberg-and-priscilla-chan-have-pledged-to-donate-99-of-their-meta-shares-heres-the-open-letter-they-wrote-to-their-eldest-daughter-maxima-in-2015-it-makes-a-promises-that-/articleshow/135635095.cms"
+        "https://www.nytimes.com/2026/11/09/us/politics/supreme-court-border-wall-trump.html",
+        "https://www.ksat.com/news/local/2026/11/09/trumps-big-bend-border-wall-construction-can-resume-after-us-supreme-court-ruling/",
+        "https://www.nbcnews.com/politics/supreme-court/supreme-court-trump-border-wall-big-bend-texas-rcna604916"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREgrnCN0LLBCUV935bIvAxPxfOYMtkKNrmdFxfCItoFs4P_X_2RcEJAtYDElE",
-      "image_credit": "Fortune",
-      "news": [
-        {
-          "url": "https://fortune.com/2026/11/07/zuckerberg-chan-daughters-inheritance-99-percent-pledge/",
-          "title": "Mark Zuckerberg’s fortune tops $200 billion. His 3 daughters won’t inherit most of it",
-          "publisher": "Fortune",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREgrnCN0LLBCUV935bIvAxPxfOYMtkKNrmdFxfCItoFs4P_X_2RcEJAtYDElE"
-        },
-        {
-          "url": "https://pluang.com/en/news-feed/pensiunan-saham-meta-zuckerberg-fortune-200-miliar-investasi",
-          "title": "Retiree's 1,000 Meta shares grew 16x, holding t...",
-          "publisher": "Pluang",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTV5Bflw7LcyePXtu2U74mExc3whqj5VwQd032CidunmP2WFloQOxm19pJ2muM"
-        },
-        {
-          "url": "https://timesofindia.indiatimes.com/technology/tech-news/mark-zuckerberg-and-priscilla-chan-have-pledged-to-donate-99-of-their-meta-shares-heres-the-open-letter-they-wrote-to-their-eldest-daughter-maxima-in-2015-it-makes-a-promises-that-/articleshow/135635095.cms",
-          "title": "Mark Zuckerberg and Priscilla Chan have pledged to donate 99% of their Meta shares; here's the open lette",
-          "publisher": "The Times of India",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1Yi2IEUkK5ALCO1TdvCJPf943VKH2Keef3vA75e159Owv_1VaRQDFrrmG0kI"
-        }
-      ]
-    },
-    {
-      "query": "traffic",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T19:40:00Z",
-      "related_news_urls": [
-        "https://www.mysanantonio.com/news/local/traffic/article/evans-road-closure-22521074.php",
-        "https://www.nbclosangeles.com/news/local/91-freeway-lane-closures-corona/3967768/",
-        "https://abc7.com/story/91-freeway-eastbound-closure-causes-major-weekend-traffic-headaches-drivers-heading-orange-county-inland-empire/20024200/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQL-1qTEEXYzzF0zsebTAa6ll-w34kT-hdxvU-ouAWYQuOtORrRysf-yrCcwmQ",
-      "image_credit": "MySA",
-      "news": [
-        {
-          "url": "https://www.mysanantonio.com/news/local/traffic/article/evans-road-closure-22521074.php",
-          "title": "Traffic incident shuts down road near Rolling Oaks Mall",
-          "publisher": "MySA",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQL-1qTEEXYzzF0zsebTAa6ll-w34kT-hdxvU-ouAWYQuOtORrRysf-yrCcwmQ"
-        },
-        {
-          "url": "https://www.nbclosangeles.com/news/local/91-freeway-lane-closures-corona/3967768/",
-          "title": "91 Freeway lane closures near Corona cause major traffic delays",
-          "publisher": "NBC Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKGg-AYGxDNVKxrjjKyfi2eUhXf9FzbKemGt1TQM6EK4a1riN8CIKSzcuEFww"
-        },
-        {
-          "url": "https://abc7.com/story/91-freeway-eastbound-closure-causes-major-weekend-traffic-headaches-drivers-heading-orange-county-inland-empire/20024200/",
-          "title": "91 Fwy closure causes major weekend traffic headaches for drivers heading from Orange County to IE",
-          "publisher": "ABC7 Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc_jZu_4ooHezp6iHhn7Co4xHCDHjz_vo6CtXvwTiw0xOiru6JluPhRRT02zU"
-        }
-      ]
-    },
-    {
-      "query": "vanderbilt",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T19:30:00Z",
-      "related_news_urls": [
-        "https://www.al.com/alabamafootball/2026/11/live-updates-kalen-deboer-alabama-coaches-talk-lsu-win-vanderbilt.html",
-        "https://www.rollbamaroll.com/alabama-crimson-tide-football/86238/alabama-crimson-tide-vs-vanderbilt-commodores-opening-odds-cover-or-not",
-        "https://www.si.com/college/alabama/what-alabama-learned-from-its-2024-loss-at-vanderbilt"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvbu_dWFdGS3S9vvb3kGBifPt7-_poOyjuL3nxGauDVOP2v0KwtwX4flrRJC4",
-      "image_credit": "AL.com",
-      "news": [
-        {
-          "url": "https://www.al.com/alabamafootball/2026/11/live-updates-kalen-deboer-alabama-coaches-talk-lsu-win-vanderbilt.html",
-          "title": "Kalen DeBoer, Alabama coaches talk Keelon Russell health, expanded CFP, Vanderbilt",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvbu_dWFdGS3S9vvb3kGBifPt7-_poOyjuL3nxGauDVOP2v0KwtwX4flrRJC4"
-        },
-        {
-          "url": "https://www.rollbamaroll.com/alabama-crimson-tide-football/86238/alabama-crimson-tide-vs-vanderbilt-commodores-opening-odds-cover-or-not",
-          "title": "Alabama Crimson Tide vs Vanderbilt Commodores Opening Odds: Cover or Not?",
-          "publisher": "Roll 'Bama Roll",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1oYh5P3zrU4BaUekGmEJpBYSDSXa2ShiJ_NDmwOtF2RZDdMRlJoOGxqYp1o8"
-        },
-        {
-          "url": "https://www.si.com/college/alabama/what-alabama-learned-from-its-2024-loss-at-vanderbilt",
-          "title": "What Alabama Learned From Its 2024 Loss at Vanderbilt",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSswZWPgpwhLL0cdhG1KqGzwKAZ177YFCmgZLi1I4Q2uyYBIEen1N8XIrB_kaE"
-        }
-      ]
-    },
-    {
-      "query": "thomas massie",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-09T19:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/09/us/hegseth-impeachment-massie.html",
-        "https://www.cnn.com/2026/11/09/politics/live-news/midterm-election-trump-congress",
-        "https://www.washingtonpost.com/national-security/2026/11/09/hegseth-impeachment-effort-begins-house-focused-iran-war/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8Oi7aRqtTmdqEVDwHHsoleTfit9EvgBISsidNOfCceLIOPJcGbEDNa2-oB9E",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1b-FWGk0MyXwYbBozfAHq_AH3KB68tKChGGehY3jbmIz1Kfpc1BfsgkTxpYc",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/09/us/hegseth-impeachment-massie.html",
-          "title": "Massie Calls Up Impeachment Charges Against Hegseth",
+          "url": "https://www.nytimes.com/2026/11/09/us/politics/supreme-court-border-wall-trump.html",
+          "title": "Supreme Court Allows Construction of Trump’s Border Wall in Big Bend",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8Oi7aRqtTmdqEVDwHHsoleTfit9EvgBISsidNOfCceLIOPJcGbEDNa2-oB9E"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1b-FWGk0MyXwYbBozfAHq_AH3KB68tKChGGehY3jbmIz1Kfpc1BfsgkTxpYc"
         },
         {
-          "url": "https://www.cnn.com/2026/11/09/politics/live-news/midterm-election-trump-congress",
-          "title": "GOP congressman introduces articles of impeachment against Hegseth",
+          "url": "https://www.ksat.com/news/local/2026/11/09/trumps-big-bend-border-wall-construction-can-resume-after-us-supreme-court-ruling/",
+          "title": "Trump’s Big Bend border wall construction can resume after U.S. Supreme Court ruling",
+          "publisher": "KSAT",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNwjEHNWN8tnYVmFbv4dKTr9LKKheUICM61SLeNnLcV46yf3rNDsNSEQo7dtc"
+        },
+        {
+          "url": "https://www.nbcnews.com/politics/supreme-court/supreme-court-trump-border-wall-big-bend-texas-rcna604916",
+          "title": "Supreme Court paves way for Trump to build a section of his border wall in the Big Bend area of Texas",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4c5S9IWcuUzWSTj_f9Y8tqHWVcOGOZLeYRvCzjWtJWpvWnuZ2GW6IFYg4MqI"
+        }
+      ]
+    },
+    {
+      "query": "asts stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T21:10:00Z",
+      "related_news_urls": [
+        "https://www.barchart.com/story/news/8725718/dear-ast-spacemobile-stock-fans-mark-your-calendars-for-november-9",
+        "https://www.proactiveinvestors.com/companies/news/1101452/ast-spacemobile-shares-jump-ahead-of-q3-results-as-dealmaking-gathers-pace-1101452.html",
+        "https://www.investing.com/news/analyst-ratings/cantor-fitzgerald-reiterates-overweight-rating-on-ast-spacemobile-stock-93CH-5011412"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-NGFMGjHPBJGts13quRlVUH3ZFcTKUrD3kowxtlz7NC-FofTjq0Sxrpqpx_w",
+      "image_credit": "Barchart.com",
+      "news": [
+        {
+          "url": "https://www.barchart.com/story/news/8725718/dear-ast-spacemobile-stock-fans-mark-your-calendars-for-november-9",
+          "title": "Dear AST SpaceMobile Stock Fans, Mark Your Calendars for November 9",
+          "publisher": "Barchart.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-NGFMGjHPBJGts13quRlVUH3ZFcTKUrD3kowxtlz7NC-FofTjq0Sxrpqpx_w"
+        },
+        {
+          "url": "https://www.proactiveinvestors.com/companies/news/1101452/ast-spacemobile-shares-jump-ahead-of-q3-results-as-dealmaking-gathers-pace-1101452.html",
+          "title": "AST SpaceMobile shares jump ahead of Q3 results as dealmaking gathers pace",
+          "publisher": "Proactive financial news",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2fq0F0mjCIkJ-INS96Z6ZbFV_oc_TkrZsm91T4P8CU1bGnr_9iwDLfOlyYX4"
+        },
+        {
+          "url": "https://www.investing.com/news/analyst-ratings/cantor-fitzgerald-reiterates-overweight-rating-on-ast-spacemobile-stock-93CH-5011412",
+          "title": "Cantor Fitzgerald reiterates Overweight rating on AST Spacemobile stock",
+          "publisher": "Investing.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrlO2Eii_bNDbTFOglT2dUH0Udd7vLQS6_GMdww4rL1On38LFhfNM43m2eivM"
+        }
+      ]
+    },
+    {
+      "query": "cyberattack",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T21:10:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cmg474vk6dyqo",
+        "https://www.usnews.com/news/u-s-news-decision-points/articles/2026-11-09/the-new-cold-war-hackers-are-targeting-internet-connected-freezers",
+        "https://www.theatlantic.com/technology/2026/11/fridge-hacks-europe-supermarkets/689328/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQy9zvokxLBn93Q3Ap140jNhmZ75muT6HRE8LHg2HacPhhKmuIQ0oSHkYcqgos",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cmg474vk6dyqo",
+          "title": "France accuses Iran of supermarket fridge hacking",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQy9zvokxLBn93Q3Ap140jNhmZ75muT6HRE8LHg2HacPhhKmuIQ0oSHkYcqgos"
+        },
+        {
+          "url": "https://www.usnews.com/news/u-s-news-decision-points/articles/2026-11-09/the-new-cold-war-hackers-are-targeting-internet-connected-freezers",
+          "title": "The New Cold War: Hackers Are Targeting Internet-Connected Freezers",
+          "publisher": "U.S. News & World Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2suNuT2URT20jK-BUeqfo0dfnZ9qjGdyju1bKYauCqVLLg0DlmNXV33coklw"
+        },
+        {
+          "url": "https://www.theatlantic.com/technology/2026/11/fridge-hacks-europe-supermarkets/689328/",
+          "title": "Perhaps Connecting Fridges to the Internet Was a Bad Idea",
+          "publisher": "The Atlantic",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGlnyyh3cAXz1S5KK-7YxZ_EyN-kUaeBN2425H4vfAHE4GBwpOVzEwYDIk6wU"
+        }
+      ]
+    },
+    {
+      "query": "booker prize 2026",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T21:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/06/books/booker-prize-readers-vote.html",
+        "https://www.theguardian.com/books/2026/nov/07/narrative-threads-how-to-write-a-booker-shortlisted-novel-by-marlon-james-douglas-stuart-elizabeth-strout-and-more",
+        "https://www.irishtimes.com/culture/books/2026/11/07/ive-read-the-whole-booker-2026-shortlist-two-novels-are-brilliant-on-living-through-the-mess-of-the-2020s/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPouuJnvJaNsYl3E6VVJxQtoQH9cUBW8be3TP3sr9wKyZBfarW-5qybukhFMU",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/06/books/booker-prize-readers-vote.html",
+          "title": "The Booker Prize Is Monday. Which of These 6 Titles Should Win?",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPouuJnvJaNsYl3E6VVJxQtoQH9cUBW8be3TP3sr9wKyZBfarW-5qybukhFMU"
+        },
+        {
+          "url": "https://www.theguardian.com/books/2026/nov/07/narrative-threads-how-to-write-a-booker-shortlisted-novel-by-marlon-james-douglas-stuart-elizabeth-strout-and-more",
+          "title": "Narrative threads: How to write a Booker-shortlisted novel, by Marlon James, Douglas Stuart, Elizabeth Strout and more",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4fvRCYJWJowkYIWf2nfhAvS3AijTv9jg50tIxJYKs-M460lSyGjUuPw78tsY"
+        },
+        {
+          "url": "https://www.irishtimes.com/culture/books/2026/11/07/ive-read-the-whole-booker-2026-shortlist-two-novels-are-brilliant-on-living-through-the-mess-of-the-2020s/",
+          "title": "I’ve read the Booker 2026 shortlist. Two novels are brilliant on living through the mess of the 2020s",
+          "publisher": "The Irish Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUwHRegsGPjFet57XW1CUt7ai9BQOelsnR6FbMRMlZ9ydUpQW8Cy5SarNUdz8"
+        }
+      ]
+    },
+    {
+      "query": "ttd stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T21:00:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/why-trade-desk-stock-skyrocketed-170008124.html",
+        "https://www.barrons.com/articles/trade-desk-earnings-stock-price-7ac7ae25",
+        "https://247wallst.com/investing/2026/11/09/the-trade-desk-climbs-6-ahead-of-earnings-magnite-gains-2-applovin-dips/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRl59MilAMhFjPaWGDPK69rDFCEhyvxdZzfQ7ZYPc3S0kkHj9J7Ra8WbIsNXw",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-trade-desk-stock-skyrocketed-170008124.html",
+          "title": "Why The Trade Desk Stock Skyrocketed Today",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRl59MilAMhFjPaWGDPK69rDFCEhyvxdZzfQ7ZYPc3S0kkHj9J7Ra8WbIsNXw"
+        },
+        {
+          "url": "https://www.barrons.com/articles/trade-desk-earnings-stock-price-7ac7ae25",
+          "title": "Trade Desk’s ‘Lost Year’ Won’t Be Rescued by Earnings, Say Analysts",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbTtC-IGFAO_ZRSZqnQCqtItlBRZ83VoLBpXeSgq81bQnsIWuCVFi8t-s3mzQ"
+        },
+        {
+          "url": "https://247wallst.com/investing/2026/11/09/the-trade-desk-climbs-6-ahead-of-earnings-magnite-gains-2-applovin-dips/",
+          "title": "The Trade Desk Jumps 8% Ahead of Earnings; Magnite Gains 2%, AppLovin Dips",
+          "publisher": "24/7 Wall St.",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsF6sVSjqEnZyv603NS3vR9d6ha_51SMpF5d7svFnKIHGWvb4KB3eB6XHfpEw"
+        }
+      ]
+    },
+    {
+      "query": "rklb stock",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-09T21:00:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/why-nov-9-could-huge-210500172.html",
+        "https://www.benzinga.com/trading-ideas/movers/26/11/63032947/rocket-lab-earnings-loom-heres-what-investors-need-to-know",
+        "https://www.tikr.com/blog/rocket-lab-reports-monday-with-neutron-pushed-to-2027-and-its-cfo-selling-17-million-of-stock"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrk0eB8-W6oQspGePCVx35s4dR1uD2-qkNRFKSREl7BoebDm6qllzUWfDeYac",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-nov-9-could-huge-210500172.html",
+          "title": "Why Nov. 9 Could Be a Huge Day for Rocket Lab Investors",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrk0eB8-W6oQspGePCVx35s4dR1uD2-qkNRFKSREl7BoebDm6qllzUWfDeYac"
+        },
+        {
+          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63032947/rocket-lab-earnings-loom-heres-what-investors-need-to-know",
+          "title": "Rocket Lab Earnings Loom: Here’s What Investors Need to Know",
+          "publisher": "Benzinga",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHnv-DTsY8dPBatvhQOTcHo7Znjx2oGkcFYaPoEYp3dmUkKHirFmYtTkQ91kU"
+        },
+        {
+          "url": "https://www.tikr.com/blog/rocket-lab-reports-monday-with-neutron-pushed-to-2027-and-its-cfo-selling-17-million-of-stock",
+          "title": "Rocket Lab Reports Monday With Neutron Pushed to 2027 and Its CFO Selling $17 Million of Stock",
+          "publisher": "TIKR.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxzx9iAn34U_aLSnE4sbCh5hG4o0p5N7RmLgsBR0pB2Ol4ZNQ4ikCD1g-gpNo"
+        }
+      ]
+    },
+    {
+      "query": "melvin council jr",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T21:00:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/college-basketball/news/kansas-melvin-council-injury/",
+        "https://www.kansascity.com/sports/college/big-12/university-of-kansas/article318001064.html",
+        "https://sports.yahoo.com/articles/kansas-suffers-critical-injury-ahead-204320128.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQD8pdKFteUwglloXl3fSG6Wg53WCkG9tgCuRzR81Ez0CQ_KGFC9v-IkVWNVUE",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/college-basketball/news/kansas-melvin-council-injury/",
+          "title": "Kansas star guard Melvin Council Jr. out until Big 12 play starts after breaking foot in practice",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQD8pdKFteUwglloXl3fSG6Wg53WCkG9tgCuRzR81Ez0CQ_KGFC9v-IkVWNVUE"
+        },
+        {
+          "url": "https://www.kansascity.com/sports/college/big-12/university-of-kansas/article318001064.html",
+          "title": "KU basketball guard Melvin Council breaks foot. Bill Self gives recovery timeline",
+          "publisher": "Kansas City Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkhyzT5Ha1EQgnMSNdjC4EcO_YrD0V_dhcIEe6JIwYEaFk5bcHCsO4rw3Sbng"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/kansas-suffers-critical-injury-ahead-204320128.html",
+          "title": "Kansas suffers critical injury ahead of Kentucky matchup in Champions Classic",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKdWXc97s5m66Dlbjh4ZKZUuAYM01F0566QqXUP5OGqgwCCTIlEqCTlDmNWNU"
+        }
+      ]
+    },
+    {
+      "query": "tyler robinson",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T21:00:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/09/us/tyler-robinson-charlie-kirk-trial",
+        "https://www.foxnews.com/video/6408150849112",
+        "https://www.nytimes.com/2026/11/09/us/charlie-kirk-murder-trial-date.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu8OUquNcXQTMbIobccJsWAT2_Higr69k_UB66VO4NQBGB5b0DGJXFqO_wkUQ",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/09/us/tyler-robinson-charlie-kirk-trial",
+          "title": "Judge sets trial date for Charlie Kirk’s accused killer for summer 2028",
           "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRW2w9a_SIZU8_my99NWrHSE78eIsxXHBc3_UEE_lIabz2vIcqI8phwuQJ9azI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu8OUquNcXQTMbIobccJsWAT2_Higr69k_UB66VO4NQBGB5b0DGJXFqO_wkUQ"
         },
         {
-          "url": "https://www.washingtonpost.com/national-security/2026/11/09/hegseth-impeachment-effort-begins-house-focused-iran-war/",
-          "title": "Hegseth impeachment effort begins in House, focused on Iran war",
-          "publisher": "The Washington Post",
+          "url": "https://www.foxnews.com/video/6408150849112",
+          "title": "WATCH LIVE: Tyler Robinson judge to give trial date ruling in assassination of Charlie Kirk",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRo3i7pIgxQI5rUk_0hhTDrNB17j151z-BEIzjIe3szMPDO7_n5uxp-yPFR1o"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVLYpvKsGKWjx3eHbB8h5Flqg7yV9uPOTtawdnsWPwKMC6dQ2rE_12FX3K32M"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/09/us/charlie-kirk-murder-trial-date.html",
+          "title": "Man Accused of Murdering Charlie Kirk to Go on Trial in 2028",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTggQwa-vR4FJr1gad0ShQ6PY3l92Qvmho0EluMIHaDs6dFvIXhi_SW6dzqPiE"
+        }
+      ]
+    },
+    {
+      "query": "sebastian lelio",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T20:50:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/film/2026/nov/06/sebastian-lelio-chilean-director-dies",
+        "https://apnews.com/article/sebastian-lelio-obit-oscar-chile-19766b7805a7c9557146600a068069b0",
+        "https://variety.com/2026/film/global/sanfic-prizes-monguen-narciso-sebastian-lelio-remembered-1236942162/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpBTCEUdqy54YSPvMY2v3YhPV7VBN3DaVEyeTqULBj-0gI0b8MaY1X6Uz6nUw",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/film/2026/nov/06/sebastian-lelio-chilean-director-dies",
+          "title": "Sebastián Lelio, director of A Fantastic Woman and Gloria, dies aged 52",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpBTCEUdqy54YSPvMY2v3YhPV7VBN3DaVEyeTqULBj-0gI0b8MaY1X6Uz6nUw"
+        },
+        {
+          "url": "https://apnews.com/article/sebastian-lelio-obit-oscar-chile-19766b7805a7c9557146600a068069b0",
+          "title": "Oscar-winning Chilean filmmaker Sebastián Lelio dies at 52",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQu6QTZOa2OhHbaNP604oxo5Uc1drAjLpiiJ55rHGYZW6hiYlx2iDVFMdMQlwg"
+        },
+        {
+          "url": "https://variety.com/2026/film/global/sanfic-prizes-monguen-narciso-sebastian-lelio-remembered-1236942162/",
+          "title": "Sanfic Prizes: 'Monguen,' 'Narciso' Win, Sebastián Lelio Is Remembered",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwDMZ-arS6BnSGhNmzMjiGYjwVihKFO1VdjMko26baNLC3ADCrmJRPLsGj6DM"
         }
       ]
     }
