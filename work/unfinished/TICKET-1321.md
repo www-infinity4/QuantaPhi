@@ -7,14 +7,14 @@ state: review_pending
 dot: "🟡"
 progress_percent: 38
 progress_basis: "3 of 8 milestones source-verified: bounded selector, durable D1 packet adapter, and post-review race/dedupe regressions. Authenticated production caller, live actions, independent acceptance and delivery remain open."
-sessions_spent: 9
+sessions_spent: 10
 sessions_remaining_estimate: "unknown; requires signed Brain-to-coordinator integration"
 agent: "GPT continuation on existing #1321; no issued coordinator lease"
 lease_id: null
 lease_expires_at: null
 task_session_id: null
 fence: null
-last_observed_at_utc: "2026-11-08T22:09:06.002Z"
+last_observed_at_utc: "2026-11-09T03:05:01Z"
 repo: www-infinity4/QuantaPhi
 branch: fix/continuity-1321-checkpoint-durability
 head_sha: c267eb837297547306720c299d61185aa72db623
@@ -61,3 +61,12 @@ Pure packet selection rejects unchanged blocked same-head retries and foreign le
 The source-only adapter from merged #1858 was reviewed after its merge. The seven initial defects were addressed under existing issue #1321 in PR #1865, and its four follow-on findings have now been fixed in branch code at `c267eb837297547306720c299d61185aa72db623`. These guard against a concurrent checkpoint update overwriting provider receipts, replay of legacy running checkpoints with unknown operations, evicted done/blocked history making cached candidates eligible again, and legacy blocked/observed receipts incorrectly marking an action complete. Regressions were added before the fixes, and **8 of 8 exact-code-head checks passed**.
 
 This source implementation is **not** a deployed authenticated Continuity Builder or a live two-run acceptance receipt. Never report a fake Green dot, real Blue write, production merge or wallet payout from the synthetic adapter tests. A reviewed Brain-to-coordinator signed integration and provider-backed readback remain the next work under this same issue.
+
+## Session 10 — November 9, 2026: owner-authorized PR #1883 repair
+
+The owner handoff at [PR comment 6731031528](https://github.com/www-infinity4/QuantaPhi/pull/1883#issuecomment-6731031528) assigned the existing Follow/carousel/Image Studio regression work on branch `fix/follow-neutral-carousel-image-pro-20261108`. The source repair now adds fresh-read/write/readback Follow persistence, merge-safe navigation progress, truthful storage errors, a single Follow control per carousel context, neutral Next-card labels, and a prompt-first blue Image Studio. Cross-device wallet synchronization remains explicitly out of scope.
+
+- Evidence: focused Node suites passed 61/61; `test/oracle-image-studio.browser.cjs` and `test/phi-media-studio.browser.cjs` passed using the installed Chromium binary. Browser checks at 320/360/393px confirmed the studio fits its container, keeps 16px prompt text, uses the blue surface, and exposes a 48px primary action.
+- CI: run 42552532201 failed on the pre-repair head `f642849ae1512a039d12cc996d79e652be289623` because the new tests imported the not-yet-implemented exports. Post-repair exact-head CI is pending; no merge, deployment, or live Android acceptance is claimed.
+- Continuity executor acceptance remains 38% (3/8 milestones); this front-end PR does not establish a signed runner, provider write, or production acceptance. The source commit and exact-head CI receipt will be recorded in the PR thread after the existing branch is updated.
+- Next action: push this bounded repair to PR #1883, verify exact-head CI and independent review, then continue the signed Brain-to-coordinator work under this issue without conflating the two acceptance tracks.

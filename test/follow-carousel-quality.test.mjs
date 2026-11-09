@@ -21,6 +21,9 @@ test('Follow write preserves concurrent card/star/count state and confirms readb
 });
 test('blocked storage never falsely claims Follow succeeded',()=>{
  const db=mock();db.deny();assert.equal(commitFollowing(db,'card-a').ok,false);
+ const read=mock();
+ const ignoresWrites={getItem:read.getItem,setItem:()=>{}};
+ assert.equal(commitFollowing(ignoresWrites,'card-a').ok,false);
 });
 test('navigation progress must not reset newly followed cards or Quant counts',()=>{
  const db=mock({following:['card-new'],counts:{'radio':7},viewed:{'radio':3},advance:4});
@@ -34,9 +37,13 @@ test('navigation progress must not reset newly followed cards or Quant counts',(
 });
 test('featured and detail views do not display duplicate Follow on top of toolbar',()=>{
  const src=file('quanta-feed.mjs');
+ const deck=file('oracle-card-deck.js'),actions=file('quanta-card-actions.mjs');
  assert.doesNotMatch(src,/buttons\.append\(followButton\(selected,refresh\)\)/);
  assert.doesNotMatch(src,/actions\.append\(followButton\(card,renderDetailAgain\)\)/);
  assert.match(src,/mountCardTools\(tools,selected\)/);
+ assert.match(deck,/\{showFollow:false\}/);
+ assert.match(deck,/follow\.hidden=!active\|\|active\.id\.startsWith\('source-'\)/);
+ assert.match(actions,/if\(options\.showFollow!==false\)/);
 });
 test('carousel explains rotation neutrally without describing the visitor or diagnosing pages',()=>{
  const oracle=file('oracle-card-deck.js'),feed=file('quanta-feed.mjs');

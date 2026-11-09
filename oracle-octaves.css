@@ -19,7 +19,7 @@ body.oracle-octaves-page dialog::backdrop{background:#30243e66}
 body.oracle-octaves-page :is(a,button,input,select,textarea,summary):focus-visible,body.oracle-octaves-home :is(a,button,input,select,textarea,summary):focus-visible{outline:3px solid #8654de!important;outline-offset:3px}
 body.oracle-octaves-page button:disabled{opacity:.55;cursor:not-allowed}
 /* Card surfaces stay white; color is carried by borders, badges and primary actions. */
-body.oracle-octaves-home :is(.qzone,.mcard,.card,.sponsorBoard,.icp-shell,.ib-story,.sw-card,.pi-panel,.pi-audit,.fs-card,.mp-card,.fsr-card,.ms-creator-card,.pp-card,.hphi-card,.phi-media-studio){background:#fff!important;color:var(--oo-ink)!important;border:1px solid var(--oo-line)!important;border-radius:24px!important;box-shadow:0 8px 24px #38144716!important}
+body.oracle-octaves-home :is(.qzone,.mcard,.card,.sponsorBoard,.icp-shell,.ib-story,.sw-card,.pi-audit,.fs-card,.mp-card,.fsr-card,.ms-creator-card,.pp-card,.hphi-card,.phi-media-studio){background:#fff!important;color:var(--oo-ink)!important;border:1px solid var(--oo-line)!important;border-radius:24px!important;box-shadow:0 8px 24px #38144716!important}
 body.oracle-octaves-home :is(.qzone,.mcard,.icp-shell,.ib-story,.sw-card,.fs-card,.mp-card,.fsr-card,.ms-creator-card) :is(h2,h3,h4,strong,summary){color:#482563!important;text-shadow:none}
 body.oracle-octaves-home :is(.qzone,.mcard,.icp-shell,.ib-story,.sw-card,.fs-card,.mp-card,.fsr-card,.ms-creator-card) :is(p,li,label,small,.ib-full,.ib-summary,.icp-fine,.icp-status,.ib-build>span){color:#594967!important;font-size:15px;line-height:1.65}
 body.oracle-octaves-home :is(.qzone,.mcard,.icp-shell,.ib-story,.sw-card,.fs-card,.mp-card,.fsr-card,.ms-creator-card) a:not([class*="btn"]):not(.ib-build-link){color:#5f2c91!important}
@@ -29,7 +29,6 @@ body.oracle-octaves-home #infiniteBook :is(.ib-illustration-caption,.ib-details 
 body.oracle-octaves-home :is(.qzone,.mcard,.icp-shell,.ib-story,.sw-card,.fs-card,.mp-card,.fsr-card,.ms-creator-card) :is(button,.ib-build-link,.fs-phi,.mp-play,.fsr-play){min-height:44px!important;border-radius:999px!important;padding:10px 14px!important;font-size:14px!important;line-height:1.4!important;background:#f5edfc!important;color:#532885!important;border:1px solid #bda2d3!important;box-shadow:none!important}
 body.oracle-octaves-home :is(.sw-primary,.fs-next,.fsr-roll,.mp-play){background:#5f2c91!important;color:#fff!important}
 body.oracle-octaves-home :is(.qzone,.sw-card,.fs-card,.mp-card,.fsr-card,.ms-creator-card) :is(input,select,textarea){background:#fff!important;color:#30243e!important;font-size:16px}
-body.oracle-octaves-home #phiImageBuilder.oracle-image-studio :is(.pi-panel,.pi-audit,.pi-result){background:#fff!important;border:1px solid #a6c4e5!important;box-shadow:0 8px 24px #38144712!important}
 body.oracle-octaves-home #infinityConcepts .icp-serial{color:#79571b!important}
 body.oracle-octaves-page [hidden],body.oracle-octaves-home [hidden]{display:none!important}
 @media(max-width:430px){body.oracle-octaves-page :is(.panel,.toolbar,.story-card){padding:17px}body.oracle-octaves-home :is(.ib-story,.sw-card,.fs-card,.mp-card,.fsr-card){padding:17px!important}}
