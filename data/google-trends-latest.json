@@ -3,9 +3,184 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T14:01:23.516327Z",
+  "checked_at": "2026-11-09T14:31:28.814654Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "xbox cloud gaming",
+      "approx_searches": "500+",
+      "published_at": "2026-11-09T14:00:00Z",
+      "related_news_urls": [
+        "https://news.xbox.com/en-us/2026/11/05/a-faster-simpler-xbox-experience-is-coming-to-pc-web-and-cloud/",
+        "https://www.techpowerup.com/354525/new-xbox-pc-app-claims-60-faster-launch-times-and-ux-improvements",
+        "https://www.purexbox.com/news/2026/11/xbox-pc-app-receives-significant-upgrade-starting-today-plus-more-cloud-gaming-improvements"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmY4Z4DTlQTQ2Fk0vFO3zsiWX7TzLxLyJ2Q4hMej6Z-29j1KBD3FbtCqYOMiI",
+      "image_credit": "XBOX Wire",
+      "news": [
+        {
+          "url": "https://news.xbox.com/en-us/2026/11/05/a-faster-simpler-xbox-experience-is-coming-to-pc-web-and-cloud/",
+          "title": "A Faster, Simpler XBOX Experience Is Coming to PC, Web and Cloud",
+          "publisher": "XBOX Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmY4Z4DTlQTQ2Fk0vFO3zsiWX7TzLxLyJ2Q4hMej6Z-29j1KBD3FbtCqYOMiI"
+        },
+        {
+          "url": "https://www.techpowerup.com/354525/new-xbox-pc-app-claims-60-faster-launch-times-and-ux-improvements",
+          "title": "New Xbox PC App Claims 60% Faster Launch Times and UX Improvements",
+          "publisher": "TechPowerUp",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbK6JweNv8wB9OpDf4LqVHfw3vLkXnEClU8nPGSkNLhHLlysIRo6wNhm4EUuM"
+        },
+        {
+          "url": "https://www.purexbox.com/news/2026/11/xbox-pc-app-receives-significant-upgrade-starting-today-plus-more-cloud-gaming-improvements",
+          "title": "Xbox PC App Receives Significant Upgrade Starting Today, Plus More Cloud Gaming Improvements",
+          "publisher": "Pure Xbox",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9Soi5JZDrc7dnx16EKXnJiH90aJOpH2pTWT6yPc5Lzmz-jFbx9yEWeD8xIl4"
+        }
+      ]
+    },
+    {
+      "query": "little giant ladder recall",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T14:00:00Z",
+      "related_news_urls": [
+        "https://www.foxbusiness.com/retail/millions-ladders-recalled-nationwide-after-numerous-reports-head-injuries-skull-fractures",
+        "https://www.cpsc.gov/Recalls/2027/Little-Giant-Recalls-Ladders-with-Rapid-Locks-Due-to-Risk-of-Serious-Injury-from-Fall-Hazard",
+        "https://www.al.com/news/2026/11/over-36-million-ladders-sold-at-lowes-and-costco-recalled-after-reports-of-serious-injuries.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw4m3-TC-Rdbo2aF1Nh7bGEI6dZ3VBOVtkn1L5eb7Q4KweWuDnX8C0VwejF6I",
+      "image_credit": "Fox Business",
+      "news": [
+        {
+          "url": "https://www.foxbusiness.com/retail/millions-ladders-recalled-nationwide-after-numerous-reports-head-injuries-skull-fractures",
+          "title": "Millions of ladders recalled nationwide after numerous reports of head injuries, skull fractures",
+          "publisher": "Fox Business",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw4m3-TC-Rdbo2aF1Nh7bGEI6dZ3VBOVtkn1L5eb7Q4KweWuDnX8C0VwejF6I"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2027/Little-Giant-Recalls-Ladders-with-Rapid-Locks-Due-to-Risk-of-Serious-Injury-from-Fall-Hazard",
+          "title": "Little Giant Recalls Ladders with Rapid Locks Due to Risk of Serious Injury from Fall Hazard",
+          "publisher": "CPSC.gov",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1xG8Lx2pITEPJEreNk5NeKuDD58qV_3q1llrLwRlfl0ObYzyWl4racBRu3Vg"
+        },
+        {
+          "url": "https://www.al.com/news/2026/11/over-36-million-ladders-sold-at-lowes-and-costco-recalled-after-reports-of-serious-injuries.html",
+          "title": "Over 3.6 million ladders sold at Lowe’s and Costco recalled after reports of serious injuries",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZRaSALSO1XLOw3qgGTSA8Sm7nB8iQeKGWnS9HG4v6Z8O8u0ztzrJW5WBHBR4"
+        }
+      ]
+    },
+    {
+      "query": "fortnite token",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T14:00:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/paultassi/2026/11/08/fortnite-reveals-pirate-shop-token-drop-rates-and-they-are-bad/",
+        "https://www.ign.com/wikis/fortnite/All_Free_Treasure_Chest_Rewards_List_-_Odds_and_Schedule",
+        "https://www.vice.com/en/article/fortnite-pirate-shop-token-how-to-get/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJQgpLmJ928Zb-p3hxjlZuoREFUtrPNF2U1FffQFOCmn9cav0Y_YQe5alUk0c",
+      "image_credit": "Forbes",
+      "news": [
+        {
+          "url": "https://www.forbes.com/sites/paultassi/2026/11/08/fortnite-reveals-pirate-shop-token-drop-rates-and-they-are-bad/",
+          "title": "‘Fortnite’ Reveals Pirate Shop Token Drop Rates, And They Are Bad",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJQgpLmJ928Zb-p3hxjlZuoREFUtrPNF2U1FffQFOCmn9cav0Y_YQe5alUk0c"
+        },
+        {
+          "url": "https://www.ign.com/wikis/fortnite/All_Free_Treasure_Chest_Rewards_List_-_Odds_and_Schedule",
+          "title": "All Free Treasure Chest Rewards List - Odds and Schedule",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa4Pi_7jZv4PEHLLkAzCEkpMA6OjIu2gfxC6t8lruzcwaYCmyBkz_LElZWbkY"
+        },
+        {
+          "url": "https://www.vice.com/en/article/fortnite-pirate-shop-token-how-to-get/",
+          "title": "How to Get a Fortnite Pirate Shop Token and Claim Free Shop Items",
+          "publisher": "VICE",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTy0XSR0DSYgtX7vH_zNz1xvUDo3npMi6SDXDfRJI2Fpf7I7f4n-mA1TS53hhY"
+        }
+      ]
+    },
+    {
+      "query": "what time does the stock market open",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T14:00:00Z",
+      "related_news_urls": [
+        "https://news.futunn.com/en/post/1003815185/it-s-set-5-23-nasdaq-will-officially-enter-the",
+        "https://www.lw.com/en/insights/recent-developments-for-directors-november-2026",
+        "https://ua.news/en/dovkolo-svitu/brokeri-pivdennoyi-koreyi-zaprovadiat-23-godinni-torgi-aktsiiami-ssha-korea-herald"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjE6aj244CezSRBLwqHbL8dv2lTPhIIIcGqa_y8JYz17WJyUKtu4jU25HDdIg",
+      "image_credit": "富途牛牛",
+      "news": [
+        {
+          "url": "https://news.futunn.com/en/post/1003815185/it-s-set-5-23-nasdaq-will-officially-enter-the",
+          "title": "It's set: 5×23! Nasdaq will officially enter the 23-hour trading era on December 6.",
+          "publisher": "富途牛牛",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjE6aj244CezSRBLwqHbL8dv2lTPhIIIcGqa_y8JYz17WJyUKtu4jU25HDdIg"
+        },
+        {
+          "url": "https://www.lw.com/en/insights/recent-developments-for-directors-november-2026",
+          "title": "Recent Developments for Directors — November 2026",
+          "publisher": "Latham & Watkins LLP",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3NNu4UzUUBsfPyjCSxBL9s3JFDlxg_2dqotsHdSbyN31ygFdX-L8Yp0HgzQ"
+        },
+        {
+          "url": "https://ua.news/en/dovkolo-svitu/brokeri-pivdennoyi-koreyi-zaprovadiat-23-godinni-torgi-aktsiiami-ssha-korea-herald",
+          "title": "South Korean brokers to introduce 23-hour trading in US stocks — Korea Herald",
+          "publisher": "UA.NEWS",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTA4CfdRXTuGSsIFgY2P-Am4emFkz2Rc3SA2-MSGJgN7GSjflyL_50Olt9-SgU"
+        }
+      ]
+    },
+    {
+      "query": "kaia jordan gerber",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T13:50:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/entertainment/celebrities/2026/11/08/kaia-gerber-grief-quote-after-brother-presley-gerber-death/92683671007/",
+        "https://people.com/kaia-gerber-says-grief-comes-in-waves-following-brother-presley-death-12244370",
+        "https://hypebeast.com/2026/11/jw-anderson-ugg-collaboration-campaign-starring-kaia-gerber-dev-hynes-release-info"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyXcHFVrAPiGLr7tmOAgMIkWAV7RjAokyNfm7dy2upYm2ef7SwS9R9Cown1CA",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/entertainment/celebrities/2026/11/08/kaia-gerber-grief-quote-after-brother-presley-gerber-death/92683671007/",
+          "title": "Kaia Gerber posts about grief and loss following brother's death at 27",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyXcHFVrAPiGLr7tmOAgMIkWAV7RjAokyNfm7dy2upYm2ef7SwS9R9Cown1CA"
+        },
+        {
+          "url": "https://people.com/kaia-gerber-says-grief-comes-in-waves-following-brother-presley-death-12244370",
+          "title": "Kaia Gerber Shares Emotional Quote About Grief Coming ‘in Waves’ Following Brother Presley’s Death at 27",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0RFCLcyg7S7EefssMG2wtaKBIeFrIQATWHdyCElUv_owlTfPjNiB9-eXSZEY"
+        },
+        {
+          "url": "https://hypebeast.com/2026/11/jw-anderson-ugg-collaboration-campaign-starring-kaia-gerber-dev-hynes-release-info",
+          "title": "JW Anderson Unveils UGG Collaboration Campaign Starring Kaia Gerber and Dev Hynes",
+          "publisher": "Hypebeast",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOOPV2Ja17amxUhIing8NLR4U5QQGNtXkQEe_MH6LfZO_CsU0pZrm7d2rrFMY"
+        }
+      ]
+    },
     {
       "query": "levar burton",
       "approx_searches": "500+",
@@ -77,6 +252,76 @@
       ]
     },
     {
+      "query": "oil price",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T13:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/04/climate/trump-fossil-fuel-energy-policy-election.html",
+        "https://apnews.com/article/elections-midterms-climate-policy-clean-energy-trump-b193e352f5905acc0e921a13ee237a4a",
+        "https://grist.org/elections/midterms-2026-blue-wave-climate-races-data-centers/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTD7jz88ShZFw_LfJldfQR6GNPcocxYNvf2a8PD54osLjPohdgrb918I2y_Gs",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/04/climate/trump-fossil-fuel-energy-policy-election.html",
+          "title": "How Trump’s Energy Policies Helped Trigger Tuesday’s Election Rout",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTD7jz88ShZFw_LfJldfQR6GNPcocxYNvf2a8PD54osLjPohdgrb918I2y_Gs"
+        },
+        {
+          "url": "https://apnews.com/article/elections-midterms-climate-policy-clean-energy-trump-b193e352f5905acc0e921a13ee237a4a",
+          "title": "Democrats plan to push clean energy to lower bills and challenge Trump’s fossil fuel agenda",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWxpL_lU8GjZIHMMn0CzMoHlZIsxkX-k6auYYPpdwjfkGHNxj5g6N7Lhmj1oA"
+        },
+        {
+          "url": "https://grist.org/elections/midterms-2026-blue-wave-climate-races-data-centers/",
+          "title": "What a historic ‘blue wave’ midterm means for climate action",
+          "publisher": "Grist",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkkErczF4BHLtfoxqZbLE0RlvJyUo38REFv_BDzj91bq5rFXEt7PD-1oswb-o"
+        }
+      ]
+    },
+    {
+      "query": "astronaut applications",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-09T13:30:00Z",
+      "related_news_urls": [
+        "https://www.npr.org/2026/11/08/nx-s1-6034002/nasa-astronaut-class-applications-2026",
+        "https://www.foxnews.com/video/6408135746112",
+        "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFcgxi6_NvzheSZeahgpSEC4DyF-bXTex8RCigIUQ0f2NDte40MecKsLzRd1A",
+      "image_credit": "NPR",
+      "news": [
+        {
+          "url": "https://www.npr.org/2026/11/08/nx-s1-6034002/nasa-astronaut-class-applications-2026",
+          "title": "NASA is looking for astronauts to live and work on the Moon",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFcgxi6_NvzheSZeahgpSEC4DyF-bXTex8RCigIUQ0f2NDte40MecKsLzRd1A"
+        },
+        {
+          "url": "https://www.foxnews.com/video/6408135746112",
+          "title": "NASA officially HIRING for moon base",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbSt0X9lJsWaDXRI5U2E8MHsP_NUy1vSSiZjUKKGTum7V9ueMZZRiSnTvzrQg"
+        },
+        {
+          "url": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/",
+          "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
+          "publisher": "NASA (.gov)",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQEmZCzrUxJFFzgFtuqhvPFOLkTXzcEODiMi4xgd7ZRAnLcU4VaM0n1_IgswQ"
+        }
+      ]
+    },
+    {
       "query": "julia louis-dreyfus",
       "approx_searches": "500+",
       "published_at": "2026-11-09T13:30:00Z",
@@ -92,251 +337,6 @@
           "publisher": "GeekTyrant",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNce9bcIk2k-L34zqRPxA3sMpgepttxKCENcyV2reUU3xJfnZW5ocOgCGtItM"
-        }
-      ]
-    },
-    {
-      "query": "astronaut applications",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T13:30:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/science/2026/nov/08/nasa-astronauts-moon-applications-open",
-        "https://www.today.com/video/nasa-opens-applications-for-its-new-class-of-astronauts-273121349908",
-        "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdZ_hWWREkwSQeAE8qZLQOoY2lxDKW5JiZeEopUyOrDDU1x0O1ulxcjx9qpMI",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/science/2026/nov/08/nasa-astronauts-moon-applications-open",
-          "title": "Nasa seeks next generation of astronauts to live and work on the moon",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdZ_hWWREkwSQeAE8qZLQOoY2lxDKW5JiZeEopUyOrDDU1x0O1ulxcjx9qpMI"
-        },
-        {
-          "url": "https://www.today.com/video/nasa-opens-applications-for-its-new-class-of-astronauts-273121349908",
-          "title": "NASA Opens Applications for Its New Class of Astronauts",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt6m1GJznqyo0FANSCP91Z7yEXcxm6mP-jF4UhChfa4frF9wT7vij2_tfG3mU"
-        },
-        {
-          "url": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/",
-          "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
-          "publisher": "NASA (.gov)",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQEmZCzrUxJFFzgFtuqhvPFOLkTXzcEODiMi4xgd7ZRAnLcU4VaM0n1_IgswQ"
-        }
-      ]
-    },
-    {
-      "query": "walker scobell",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T13:30:00Z",
-      "related_news_urls": [
-        "https://people.com/percy-jackson-leah-sava-jeffries-shuts-down-romance-speculation-costar-walker-scobell-clear-this-up-12240534",
-        "https://www.thenews.com.pk/latest/1422775-leah-sava-jeffries-addresses-romance-rumors-with-percy-jackson-co-star-walker-scobell",
-        "https://www.geo.tv/latest/690119-percy-jackson-leah-sava-jeffries-debunks-walker-scobell-romance-rumours"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSU7K1IrYz9wXGVChpk9OfEddrxe82yYtwKKp9J3JGzawHjQU7l7UzMLQOM4tw",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/percy-jackson-leah-sava-jeffries-shuts-down-romance-speculation-costar-walker-scobell-clear-this-up-12240534",
-          "title": "‘Percy Jackson’ Star Leah Sava Jeffries Addresses Walker Scobell Romance Speculation",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSU7K1IrYz9wXGVChpk9OfEddrxe82yYtwKKp9J3JGzawHjQU7l7UzMLQOM4tw"
-        },
-        {
-          "url": "https://www.thenews.com.pk/latest/1422775-leah-sava-jeffries-addresses-romance-rumors-with-percy-jackson-co-star-walker-scobell",
-          "title": "Leah Sava Jeffries addresses romance rumors with 'Percy Jackson' co-star Walker Scobell",
-          "publisher": "The News International",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTO2YEbFriM2qqwQgrYoJ7d4Sjm7Pp2EwTbM8cHE0EdCPiutkWJcXjK3tC4-yU"
-        },
-        {
-          "url": "https://www.geo.tv/latest/690119-percy-jackson-leah-sava-jeffries-debunks-walker-scobell-romance-rumours",
-          "title": "'Percy Jackson' Leah Sava Jeffries debunks Walker Scobell romance rumours",
-          "publisher": "Geo News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuaWN8OIsv_XXBqIEEFMYVycRBsnp0K-TFNz03eY2lQ2c5Y07dYXtMUcE4eC0"
-        }
-      ]
-    },
-    {
-      "query": "gma deals and steals",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T13:30:00Z",
-      "related_news_urls": [
-        "https://abcnews.com/GMA/Shop/gma-deals-steals-holiday-gifting/story?id=137915584",
-        "https://www.goodmorningamerica.com/shop/story/abc-secret-savings-november-savings-special-137910498",
-        "https://www.yahoo.com/news/videos/abc-secret-savings-spectacular-november-100305060.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-EKvhu7-ZYaENqGKUhYD5RBXJQO5_OPChDQCvHQvZDRVH6-YkIHEWp0ej6RI",
-      "image_credit": "ABC News - Breaking News, Latest News and Videos",
-      "news": [
-        {
-          "url": "https://abcnews.com/GMA/Shop/gma-deals-steals-holiday-gifting/story?id=137915584",
-          "title": "'GMA' Deals & Steals for holiday gifting",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-EKvhu7-ZYaENqGKUhYD5RBXJQO5_OPChDQCvHQvZDRVH6-YkIHEWp0ej6RI"
-        },
-        {
-          "url": "https://www.goodmorningamerica.com/shop/story/abc-secret-savings-november-savings-special-137910498",
-          "title": "ABC Secret Savings: November Savings Special",
-          "publisher": "Good Morning America",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfz--is_6lDVurHNLQpZNYXFvZ720um4hpQodpmnQO-wg2aG1k2z4myNq-KRo"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/abc-secret-savings-spectacular-november-100305060.html",
-          "title": "ABC Secret Savings Spectacular for November",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSws69A0OeuMKFfCY3-oFztbuihHbBoSg90qP9Eqir7AeyxJyzairdEjrVEZDU"
-        }
-      ]
-    },
-    {
-      "query": "anjali sud",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T13:30:00Z",
-      "related_news_urls": [
-        "https://www.hollywoodreporter.com/business/digital/siriusxm-names-tubi-ceo-anjali-sud-new-leader-1236750788/",
-        "https://qz.com/siriusxm-anjali-sud-tubi-next-ceo-110926",
-        "https://www.billboard.com/pro/anjali-sud-tubi-replace-jennifer-witz-siriusxm-ceo/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBVyZqvcV0GsoqP4799chpcH24Rlm1wFOwGZc5xH1ZcyFt_rzcVf6qlaD3DzY",
-      "image_credit": "The Hollywood Reporter",
-      "news": [
-        {
-          "url": "https://www.hollywoodreporter.com/business/digital/siriusxm-names-tubi-ceo-anjali-sud-new-leader-1236750788/",
-          "title": "SiriusXM Names Tubi CEO Anjali Sud New Leader",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBVyZqvcV0GsoqP4799chpcH24Rlm1wFOwGZc5xH1ZcyFt_rzcVf6qlaD3DzY"
-        },
-        {
-          "url": "https://qz.com/siriusxm-anjali-sud-tubi-next-ceo-110926",
-          "title": "SiriusXM plans to name former Tubi CEO Anjali Sud as next CEO",
-          "publisher": "Quartz",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjudlmMS-DciyvJXnK8Au7b77Q-epQH4LEn71-Zgoys7m1jvXIgxs0bSdtyzg"
-        },
-        {
-          "url": "https://www.billboard.com/pro/anjali-sud-tubi-replace-jennifer-witz-siriusxm-ceo/",
-          "title": "Tubi CEO Anjali Sud to Replace Jennifer Witz As SiriusXM CEO",
-          "publisher": "Billboard",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzLBs7rU56TUqHuUDyIQMPUVEWTCjQVJfOe0SpHlWuQQWFtjtWbkE1xbvILLE"
-        }
-      ]
-    },
-    {
-      "query": "cloud gaming",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T13:20:00Z",
-      "related_news_urls": [
-        "https://www.ign.com/articles/former-playstation-boss-says-sony-doesnt-need-a-ps6-for-1200-it-needs-a-ps5-for-300",
-        "https://www.vgchartz.com/article/469593/shawn-layden-innovation-needs-to-come-not-from-making-ps6-for-1200-its-to-make-another-ps5-for-300/",
-        "https://wccftech.com/playstation-6-more-teraflops-mistake-playstation-portal-cloud-gaming-solution/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYPxL4vAFGsKfN9-tRFcA9xj4NRf_24-E5grMV7lnhgbisWDS6KLgOk-hrEmM",
-      "image_credit": "IGN",
-      "news": [
-        {
-          "url": "https://www.ign.com/articles/former-playstation-boss-says-sony-doesnt-need-a-ps6-for-1200-it-needs-a-ps5-for-300",
-          "title": "'I Think We Have Enough Power in the Machine' — Former PlayStation Boss Shawn Layden Calls on Sony to Prioritize Making a Cheaper Console Amid Rumors of a Pricey PS6",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYPxL4vAFGsKfN9-tRFcA9xj4NRf_24-E5grMV7lnhgbisWDS6KLgOk-hrEmM"
-        },
-        {
-          "url": "https://www.vgchartz.com/article/469593/shawn-layden-innovation-needs-to-come-not-from-making-ps6-for-1200-its-to-make-another-ps5-for-300/",
-          "title": "Shawn Layden: 'Innovation Needs to Come Not From Making PS6 for $1,200, It's to Make Another PS5 for $300'",
-          "publisher": "VGChartz",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc5kNGnn78WCDsNqHPKhH4xN2xE_7AXkOW2DV7LClNSbucvq2V7QmWAsH8hw"
-        },
-        {
-          "url": "https://wccftech.com/playstation-6-more-teraflops-mistake-playstation-portal-cloud-gaming-solution/",
-          "title": "A PlayStation 6 At $1000+ With Just More “Teraflops” Could Be A Mistake, Yet The PlayStation Portal and Cloud Gaming Present The Solution",
-          "publisher": "Wccftech",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxEhYA8YFhPGcu_7TRh9PqpTaeR19J2-iXB6r-rbBQFL0xxmzUcjGj2qVy1Hk"
-        }
-      ]
-    },
-    {
-      "query": "ugo humbert",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T13:10:00Z",
-      "related_news_urls": [
-        "https://lastwordonsports.com/tennis/2026/11/08/atp-stockholm-day-2-predictions-including-ugo-humbert-vs-adolfo-daniel-vallejo/",
-        "https://www.skysports.com/tennis/watch/5947996432295079112/bybit-stockholm-open-2026",
-        "https://www.sportytrader.com/us/picks/adolfo-daniel-vallejo-ugo-humbert-386415/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkkfuCqtlcZaWtzwPmXxljkD5FZeWp7-gUwIUjHz2SDFJYBt-tVpoYitJo4Ok",
-      "image_credit": "Last Word On Sports",
-      "news": [
-        {
-          "url": "https://lastwordonsports.com/tennis/2026/11/08/atp-stockholm-day-2-predictions-including-ugo-humbert-vs-adolfo-daniel-vallejo/",
-          "title": "ATP Stockholm Day 2 Predictions Including Ugo Humbert vs Adolfo Daniel Vallejo",
-          "publisher": "Last Word On Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkkfuCqtlcZaWtzwPmXxljkD5FZeWp7-gUwIUjHz2SDFJYBt-tVpoYitJo4Ok"
-        },
-        {
-          "url": "https://www.skysports.com/tennis/watch/5947996432295079112/bybit-stockholm-open-2026",
-          "title": "Sports News, Transfers, Scores | Watch Live Sport",
-          "publisher": "Sky Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4UQlVdq1lXhdMww1LAEk9BKhTWJn_e_LjKJYiCJ-MPPSOu3aT1VqjQTdQLeU"
-        },
-        {
-          "url": "https://www.sportytrader.com/us/picks/adolfo-daniel-vallejo-ugo-humbert-386415/",
-          "title": "Adolfo Daniel Vallejo vs Ugo Humbert Prediction & Picks - Stockholm Open",
-          "publisher": "SportyTrader",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6vlijhywSQulgQ6kOg0SbgDpHsprIbZeWSiDvZHXWZiokyqfNg2Cg3IyY2Fk"
-        }
-      ]
-    },
-    {
-      "query": "hogwarts legacy 2",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T13:10:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66100826/?ref_=ttnw_art_perm",
-        "https://collider.com/hogwarts-legacy-2-officially-confirmed/",
-        "https://opencritic.com/news/39278/hogwarts-legacy-2-officially-unveiled-by-warner-bros-"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNpeQALzVQR0lEYP-vq-NTbfD44IKH7pzvVj9j38OcK4EDcU2G3Alv6DL0Rn4",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66100826/?ref_=ttnw_art_perm",
-          "title": "Hogwarts Legacy 2 Officially Unveiled By Warner Bros.",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNpeQALzVQR0lEYP-vq-NTbfD44IKH7pzvVj9j38OcK4EDcU2G3Alv6DL0Rn4"
-        },
-        {
-          "url": "https://collider.com/hogwarts-legacy-2-officially-confirmed/",
-          "title": "‘Hogwarts Legacy 2’ Is Officially Happening",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8dKjZF6duXSmk64Q_G_uqVA6eYUryVfijRWFWBcBWc3ucUSgJpjI--srO13Q"
-        },
-        {
-          "url": "https://opencritic.com/news/39278/hogwarts-legacy-2-officially-unveiled-by-warner-bros-",
-          "title": "Hogwarts Legacy 2 Officially Unveiled By Warner Bros.",
-          "publisher": "OpenCritic",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVlq9s3wmJUaWPLaR_XDu_n45jeJUmWuXFEei-yKouaN7QBZj0xnx0M2TzjGY"
         }
       ]
     }
