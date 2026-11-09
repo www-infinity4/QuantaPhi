@@ -3,16 +3,156 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-09T12:33:27.803863Z",
+  "checked_at": "2026-11-09T13:01:24.080294Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "robby discher",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T12:40:00Z",
+      "related_news_urls": [
+        "https://www.on3.com/teams/ohio-state-buckeyes/news/ohio-state-buckeyes-football-special-teams-coordinator-robbie-discher-fired/",
+        "https://247sports.com/college/ohio-state/article/ohio-state-football-parts-ways-with-special-teams-coordinator-robby-discher-292437972/",
+        "https://heavy.com/sports/college-football/ohio-state-buckeyes/ohio-state-fires-coach-after-oregon-loss/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdYOkuUW198_Algni8jqcG2fgkSTHOHk-XXBWXF-E7ESSYAL52Ok_2AgU_nzs",
+      "image_credit": "On3",
+      "news": [
+        {
+          "url": "https://www.on3.com/teams/ohio-state-buckeyes/news/ohio-state-buckeyes-football-special-teams-coordinator-robbie-discher-fired/",
+          "title": "Ohio State fires special teams coordinator Robby Discher",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdYOkuUW198_Algni8jqcG2fgkSTHOHk-XXBWXF-E7ESSYAL52Ok_2AgU_nzs"
+        },
+        {
+          "url": "https://247sports.com/college/ohio-state/article/ohio-state-football-parts-ways-with-special-teams-coordinator-robby-discher-292437972/",
+          "title": "Ohio State parts ways with special teams coordinator Robby Discher",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSs1thSMYEihQKSvW6W1_yyLacJrahJ-Vgx2NisCn3LUNK-Jt2kKpSX68VbOG8"
+        },
+        {
+          "url": "https://heavy.com/sports/college-football/ohio-state-buckeyes/ohio-state-fires-coach-after-oregon-loss/",
+          "title": "Ohio State Fires Coach After Oregon Loss",
+          "publisher": "Heavy.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4xq6WGp1BXLuFRY8JD04UAPOIVPC4WTiDKq9ixZ3HUGwdq8PBXW4vsJcSkvY"
+        }
+      ]
+    },
+    {
+      "query": "when is gta 6 coming out",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-09T12:30:00Z",
+      "related_news_urls": [
+        "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10",
+        "https://corporate.charter.com/newsroom/spectrum-giving-free-gig-speed-lift-thanksgiving-grand-theft-auto",
+        "https://www.bgr.com/2308570/things-to-do-before-installing-gta-6-ps5-xbox/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvr3MnhC7loBDcBhBXQOjgXQdBnSX1GgBl8Gp0wCtDiGaqob5Fx5ug4CQtEz4",
+      "image_credit": "Rockstar Games",
+      "news": [
+        {
+          "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10",
+          "title": "Grand Theft Auto VI Pre-Load Begins on November 10",
+          "publisher": "Rockstar Games",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvr3MnhC7loBDcBhBXQOjgXQdBnSX1GgBl8Gp0wCtDiGaqob5Fx5ug4CQtEz4"
+        },
+        {
+          "url": "https://corporate.charter.com/newsroom/spectrum-giving-free-gig-speed-lift-thanksgiving-grand-theft-auto",
+          "title": "Download Grand Theft Auto VI Faster and Get to Leonida Sooner With Spectrum Internet Gig",
+          "publisher": "Charter Communications",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLrldBUNUxrprrQdaGkYX-IyU3QqIHF3o_gPJ8nNZdwM-7CUvyPxPcKlXOanM"
+        },
+        {
+          "url": "https://www.bgr.com/2308570/things-to-do-before-installing-gta-6-ps5-xbox/",
+          "title": "5 Things You Need To Do Before You Install Grand Theft Auto 6",
+          "publisher": "BGR",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP-QCKWv6igNJtizFGcUP9dIS86tuMUwNI_8-D8XjBDAlWCSvSEYlel3tkgCQ"
+        }
+      ]
+    },
+    {
+      "query": "argentina",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T12:30:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/miami/video/pope-visits-argentina/",
+        "https://www.ncronline.org/vatican/pope-leo-arrives-argentina-under-shadow-his-predecessor",
+        "https://www.latimes.com/world-nation/story/2026-11-08/in-argentina-pope-tells-milei-that-people-not-economy-should-come-first"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2QxFtvzIl_zBxnyfHu7-_EOFJDPTiWZZQwj3HXWpRD43DAB-csEKAhqgRH6I",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/miami/video/pope-visits-argentina/",
+          "title": "Pope visits Argentina",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2QxFtvzIl_zBxnyfHu7-_EOFJDPTiWZZQwj3HXWpRD43DAB-csEKAhqgRH6I"
+        },
+        {
+          "url": "https://www.ncronline.org/vatican/pope-leo-arrives-argentina-under-shadow-his-predecessor",
+          "title": "Pope Leo arrives in Argentina under the shadow of his predecessor",
+          "publisher": "National Catholic Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN0MN4CxfEQxEzbQ2SfTW-5JyzaKuH0c6H_tOoK1R_1BOth-s5zUaTOUkTitA"
+        },
+        {
+          "url": "https://www.latimes.com/world-nation/story/2026-11-08/in-argentina-pope-tells-milei-that-people-not-economy-should-come-first",
+          "title": "Pope arrives in Argentina and tells Milei that people, not the economy, should come first",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuJ2waZ8klBOCgofo6ACMKqouzmuDdtttwVyJ_Ok3yKDdkH8xMKQ8KzAFa3Pc"
+        }
+      ]
+    },
+    {
+      "query": "covid symptoms 2026",
+      "approx_searches": "100+",
+      "published_at": "2026-11-09T12:30:00Z",
+      "related_news_urls": [
+        "https://triblive.com/local/regional/whats-making-you-sick-pittsburgh-doctors-explain-the-viruses-circulating-this-fall/",
+        "https://www.13wmaz.com/video/news/national/cold-flu-covid-or-rsv-how-to-tell-the-difference-this-respiratory-virus-season/93-60d2b67a-0d14-4c6a-a31a-e2bb60963b15",
+        "https://www.statesboroherald.com/local/locally-owned/one-test-four-answers/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQf8v6Jfok6OTP-z3NEuJbMfzJhNiaw-QpnVpaxPUNi8VpXBiaZzBAaFGMLd04",
+      "image_credit": "TribLIVE.com",
+      "news": [
+        {
+          "url": "https://triblive.com/local/regional/whats-making-you-sick-pittsburgh-doctors-explain-the-viruses-circulating-this-fall/",
+          "title": "What’s making you sick? Pittsburgh doctors explain the viruses circulating this fall",
+          "publisher": "TribLIVE.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQf8v6Jfok6OTP-z3NEuJbMfzJhNiaw-QpnVpaxPUNi8VpXBiaZzBAaFGMLd04"
+        },
+        {
+          "url": "https://www.13wmaz.com/video/news/national/cold-flu-covid-or-rsv-how-to-tell-the-difference-this-respiratory-virus-season/93-60d2b67a-0d14-4c6a-a31a-e2bb60963b15",
+          "title": "Cold, flu, COVID or RSV? How to tell the difference this respiratory virus season",
+          "publisher": "13WMAZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRw40OB0xdRWSuKtHSQhxn3bFUGSWlJDSOx_VqWa2D_I5eQ4opNwB-1fNxeCg"
+        },
+        {
+          "url": "https://www.statesboroherald.com/local/locally-owned/one-test-four-answers/",
+          "title": "One Test, Four Answers",
+          "publisher": "Statesboro Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr1xxaEf6Y6ZcYa7aJa7ctIge5eSIxRIFVH2aSvoyTiEp8t1SpEAq3ezZOi84"
+        }
+      ]
+    },
     {
       "query": "laura gallacher",
       "approx_searches": "200+",
       "published_at": "2026-11-09T12:20:00Z",
       "related_news_urls": [
         "https://www.bbc.com/news/live/c670ppzjwxpnt",
-        "https://www.10tv.com/article/news/nation-world/russell-brand-faces-sentencing-significant-prison-term-rape-sexual-assault/507-0f53d6e5-5689-400c-9a6b-85d2d835a887",
+        "https://www.nbcnews.com/world/united-kingdom/russell-brand-sentenced-years-british-jail-rcna607799",
         "https://www.theguardian.com/uk-news/live/2026/nov/09/russell-brand-sentencing-rape-sexual-assault-live-news-updates"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEYZr1XaHKc0biimqrDV1Jzy07olz6_NqJX-GP5o54q4r-ksw6MhRQ77hrImo",
@@ -20,24 +160,59 @@
       "news": [
         {
           "url": "https://www.bbc.com/news/live/c670ppzjwxpnt",
-          "title": "Russell Brand sentencing: Follow live",
+          "title": "Russell Brand sentencing for rape and sexual assault: Follow live",
           "publisher": "BBC",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEYZr1XaHKc0biimqrDV1Jzy07olz6_NqJX-GP5o54q4r-ksw6MhRQ77hrImo"
         },
         {
-          "url": "https://www.10tv.com/article/news/nation-world/russell-brand-faces-sentencing-significant-prison-term-rape-sexual-assault/507-0f53d6e5-5689-400c-9a6b-85d2d835a887",
-          "title": "Russell Brand faces sentencing and significant prison term for rape and sexual assaults",
-          "publisher": "10TV",
+          "url": "https://www.nbcnews.com/world/united-kingdom/russell-brand-sentenced-years-british-jail-rcna607799",
+          "title": "Russell Brand awaits sentencing as he faces ‘significant’ prison time for rape and sexual assaults",
+          "publisher": "NBC News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbRCuBnObn5lI6N9opuW5fs8vyk6Xg7V91y8YUEUsBTgkTBMSzgHrHN_Z25yU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmrNszKrfpifDNXRpfipVHVBhBXeMDr-AWzVZG0ryoxeruJagpa0UYIuLPuFY"
         },
         {
           "url": "https://www.theguardian.com/uk-news/live/2026/nov/09/russell-brand-sentencing-rape-sexual-assault-live-news-updates",
-          "title": "Russell Brand to be sentenced for rape and sexual assault today – latest updates",
+          "title": "Prosecution calls for long jail term as Russell Brand is sentenced for rape and sexual assault – latest updates",
           "publisher": "The Guardian",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaNr0Hh-JCFyk2YZD1QdnOP_mXMKe1sfvwUUi8n6ZqEp1g7ARTDvD5vPx0BRU"
+        }
+      ]
+    },
+    {
+      "query": "soxl stock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-09T12:20:00Z",
+      "related_news_urls": [
+        "https://blockchain.news/news/20261109-price-prediction-soxl-heavy-selling-oversold-signals-and-crowded",
+        "https://blockchain.news/news/20261107-price-prediction-soxl-oversold-read-but-the-downtrend-still",
+        "https://blockchain.news/news/20261103-price-prediction-soxl-a-98-decline-compresses-the-futures"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcIh5okZ8Ru3VFNNdGhh0JgmWP8XFMq1XTA8P37Yg9CUUZy6YT1f_eq3FuiTQ",
+      "image_credit": "Blockchain News",
+      "news": [
+        {
+          "url": "https://blockchain.news/news/20261109-price-prediction-soxl-heavy-selling-oversold-signals-and-crowded",
+          "title": "SOXL Price Prediction: Heavy selling, oversold signals, and crowded long positioning",
+          "publisher": "Blockchain News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcIh5okZ8Ru3VFNNdGhh0JgmWP8XFMq1XTA8P37Yg9CUUZy6YT1f_eq3FuiTQ"
+        },
+        {
+          "url": "https://blockchain.news/news/20261107-price-prediction-soxl-oversold-read-but-the-downtrend-still",
+          "title": "SOXL Price Prediction: Oversold read, but the downtrend still sets the tone",
+          "publisher": "Blockchain News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcIh5okZ8Ru3VFNNdGhh0JgmWP8XFMq1XTA8P37Yg9CUUZy6YT1f_eq3FuiTQ"
+        },
+        {
+          "url": "https://blockchain.news/news/20261103-price-prediction-soxl-a-98-decline-compresses-the-futures",
+          "title": "SOXL Price Prediction: A 9.8% Decline Compresses the Futures Contract to Its Bollinger Floor",
+          "publisher": "Blockchain News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKUGK9qMDs2hAn9QJgNZ_E3eT1DM86ywUnYnAzLNZq1r2MlfX9726SwkzfYoI"
         }
       ]
     },
@@ -50,7 +225,7 @@
         "https://www.foxsports.com/stories/nfl/2027-nfl-mock-draft-drew-mestemaker-first-6-qbs-selected-first-round",
         "https://www.nytimes.com/athletic/7748330/2026/11/03/projected-2027-nfl-draft-order-eagles-jets/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgkrO5IWedHLnLu-2mOVRnOFNzvHtBRICKX7HMBiZxqsFdz0yT5a7kVCqJO04",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpr2bvvSNsTEx5vDPyHbkPoXQ7pP2bY2uhF7e9NhJRxQD4Y2-hA-Z3ZFn_iLw",
       "image_credit": "CBS Sports",
       "news": [
         {
@@ -58,7 +233,7 @@
           "title": "2027 NFL Draft order, team needs: Full first-round picks for all 32 teams",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgkrO5IWedHLnLu-2mOVRnOFNzvHtBRICKX7HMBiZxqsFdz0yT5a7kVCqJO04"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpr2bvvSNsTEx5vDPyHbkPoXQ7pP2bY2uhF7e9NhJRxQD4Y2-hA-Z3ZFn_iLw"
         },
         {
           "url": "https://www.foxsports.com/stories/nfl/2027-nfl-mock-draft-drew-mestemaker-first-6-qbs-selected-first-round",
@@ -73,41 +248,6 @@
           "publisher": "The New York Times",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTajz9pCcw0THJYcdGzWpJSRIr6bKXIol-3HXWSTiq-hbLUY_BuBmSwFyZWSuA"
-        }
-      ]
-    },
-    {
-      "query": "soxl stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T12:20:00Z",
-      "related_news_urls": [
-        "https://blockchain.news/news/20261107-price-prediction-soxl-oversold-read-but-the-downtrend-still",
-        "https://blockchain.news/news/20261109-price-prediction-soxl-heavy-selling-oversold-signals-and-crowded",
-        "https://blockchain.news/news/20261103-price-prediction-soxl-a-98-decline-compresses-the-futures"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcIh5okZ8Ru3VFNNdGhh0JgmWP8XFMq1XTA8P37Yg9CUUZy6YT1f_eq3FuiTQ",
-      "image_credit": "Blockchain News",
-      "news": [
-        {
-          "url": "https://blockchain.news/news/20261107-price-prediction-soxl-oversold-read-but-the-downtrend-still",
-          "title": "SOXL Price Prediction: Oversold read, but the downtrend still sets the tone",
-          "publisher": "Blockchain News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcIh5okZ8Ru3VFNNdGhh0JgmWP8XFMq1XTA8P37Yg9CUUZy6YT1f_eq3FuiTQ"
-        },
-        {
-          "url": "https://blockchain.news/news/20261109-price-prediction-soxl-heavy-selling-oversold-signals-and-crowded",
-          "title": "SOXL Price Prediction: Heavy selling, oversold signals, and crowded long positioning",
-          "publisher": "Blockchain News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcIh5okZ8Ru3VFNNdGhh0JgmWP8XFMq1XTA8P37Yg9CUUZy6YT1f_eq3FuiTQ"
-        },
-        {
-          "url": "https://blockchain.news/news/20261103-price-prediction-soxl-a-98-decline-compresses-the-futures",
-          "title": "SOXL Price Prediction: A 9.8% Decline Compresses the Futures Contract to Its Bollinger Floor",
-          "publisher": "Blockchain News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKUGK9qMDs2hAn9QJgNZ_E3eT1DM86ywUnYnAzLNZq1r2MlfX9726SwkzfYoI"
         }
       ]
     },
@@ -148,11 +288,12 @@
     },
     {
       "query": "goldman sachs treasury yields outlook",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-09T12:10:00Z",
       "related_news_urls": [
         "https://thedarksideoftheboom.substack.com/p/bonds-redemption-goldman-sees-the",
-        "https://richtv.io/news/goldman-says-the-pieces-are-in-place-for-a-shift-in-treasury-yields-global-10-years"
+        "https://richtv.io/news/goldman-says-the-pieces-are-in-place-for-a-shift-in-treasury-yields-global-10-years",
+        "https://www.ad-hoc-news.de/boerse/news/corporate-news/goldman-sachs-stock-weighs-treasury-yield-range-as-volatility-eases/70481038"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2QJh4_BHgFePW7HUxfTXNbzTA5XMnqUjzjN0caDUZwSqpdPCQM8AsKlKrUBI",
       "image_credit": "The Dark Side Of The Boom",
@@ -170,41 +311,13 @@
           "publisher": "Rich Picks Daily",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRS03xBF8KgNH_tDFJPHgNzOIXGfMOtK_cluTzdHYQK-6q8J_K2QNWIzKLYLKk"
-        }
-      ]
-    },
-    {
-      "query": "teddy riner",
-      "approx_searches": "100+",
-      "published_at": "2026-11-09T12:10:00Z",
-      "related_news_urls": [
-        "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-je-suis-candidat-pour-dire-quon-peut-relever-la-france-teddy-riner-se-lance-dans-la-competition-09-11-2026-36MFSFMWDFGATLM2YGR3MDF4QI.php",
-        "https://www.lemonde.fr/politique/article/2026/11/09/teddy-riner-annonce-etre-candidat-a-l-election-presidentielle-pousse-par-la-colere-sociale-et-l-envie-de-federer-les-francais_6808643_823448.html",
-        "https://www.lefigaro.fr/elections/presidentielles/en-direct-presidentielle-2027-le-pen-melenchon-sondage-philippe-wauquiez-candidat-droite-salaires-20261109"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ28RICGKs9MDBFCwF9A9h5bha6q55NkrbV6yQXoHy6bPXstRkJhmfe30ldW4",
-      "image_credit": "Le Parisien",
-      "news": [
-        {
-          "url": "https://www.leparisien.fr/elections/presidentielle/presidentielle-2027-je-suis-candidat-pour-dire-quon-peut-relever-la-france-teddy-riner-se-lance-dans-la-competition-09-11-2026-36MFSFMWDFGATLM2YGR3MDF4QI.php",
-          "title": "Présidentielle 2027 : « Je suis candidat pour dire qu’on peut relever la France », Teddy Riner se lance dans la compétition",
-          "publisher": "Le Parisien",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ28RICGKs9MDBFCwF9A9h5bha6q55NkrbV6yQXoHy6bPXstRkJhmfe30ldW4"
         },
         {
-          "url": "https://www.lemonde.fr/politique/article/2026/11/09/teddy-riner-annonce-etre-candidat-a-l-election-presidentielle-pousse-par-la-colere-sociale-et-l-envie-de-federer-les-francais_6808643_823448.html",
-          "title": "Teddy Riner annonce être candidat à l’élection présidentielle de 2027, poussé par la « colère » sociale et l’envie de « fédérer » les Français",
-          "publisher": "Le Monde.fr",
+          "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/goldman-sachs-stock-weighs-treasury-yield-range-as-volatility-eases/70481038",
+          "title": "Goldman Sachs stock weighs Treasury yield range as volatility eases",
+          "publisher": "ad-hoc-news.de",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTMKh44U_O_CsQNCrAnoQ-98ykQtVg3IRX3FieKkjSMNB_Vh-g6Z8z00WvJjuM"
-        },
-        {
-          "url": "https://www.lefigaro.fr/elections/presidentielles/en-direct-presidentielle-2027-le-pen-melenchon-sondage-philippe-wauquiez-candidat-droite-salaires-20261109",
-          "title": "EN DIRECT - Présidentielle 2027 : le champion olympique de judo Teddy Riner annonce sa candidature pour «relever la France»",
-          "publisher": "Le Figaro",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7gnvYNJxHK5VtzjFSeher36Tvi7v_10EF918mO7O1zf4F6QN6bs5ob7UEX8g"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7wDc0vQEEICAdzz7pic7BXvbUehNnl58cbYInljRcLMA5GhboCD8z6QWmd6w"
         }
       ]
     },
@@ -232,111 +345,6 @@
           "publisher": "Aviation A2Z",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyBanKWQPLc8s2DAp4OsaYhltbWPi_KQ3op-qVKeegyL4H0zWGESFnDa1bQik"
-        }
-      ]
-    },
-    {
-      "query": "weather.com",
-      "approx_searches": "100+",
-      "published_at": "2026-11-09T12:10:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/news/weather-news/articles/jet-stream-decides-gets-most-101934211.html",
-        "https://www.yahoo.com/news/weather-news/articles/break-storms-sunday-evening-more-232937641.html",
-        "https://www.seattletimes.com/seattle-news/weather/seattle-weather-weeks-of-rain-ahead/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTqJOX7EYsECC91eoJgkMFcQy0Sl842PYtVTlRNewyZbHADvzgsWFHbvabDZk",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/news/weather-news/articles/jet-stream-decides-gets-most-101934211.html",
-          "title": "How the jet stream decides who gets the most snow: West vs. East",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTqJOX7EYsECC91eoJgkMFcQy0Sl842PYtVTlRNewyZbHADvzgsWFHbvabDZk"
-        },
-        {
-          "url": "https://www.yahoo.com/news/weather-news/articles/break-storms-sunday-evening-more-232937641.html",
-          "title": "Break from storms Sunday evening, more unsettled weather on the way",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhf0N6G7FeLZyRG5LgHpGHTyfXdDCVDS6Gke3TsEvISWQOrDR25ImJObicP-g"
-        },
-        {
-          "url": "https://www.seattletimes.com/seattle-news/weather/seattle-weather-weeks-of-rain-ahead/",
-          "title": "November is looking wetter than normal in Western WA",
-          "publisher": "The Seattle Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFvJkAGrzgaECslAroiJyKZnVB7E6i26zaXwhwwIGZCspc4Vg6ZUeLXrsWIXA"
-        }
-      ]
-    },
-    {
-      "query": "iraq",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T12:00:00Z",
-      "related_news_urls": [
-        "https://www.aljazeera.com/news/liveblog/2026/11/8/iran-war-live-explosions-hit-qeshm-us-moves-to-block-land-supply-routes",
-        "https://www.reuters.com/business/energy/production-suspended-iraqs-khor-mor-gas-field-after-drone-attack-sources-say-2026-11-08/",
-        "https://www.scmp.com/news/world/middle-east/article/3373721/attack-iraq-gas-complex-disrupts-supply-regions-power-plants-authorities-say"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPAoGqy3m9UfHH_YjDBOmvC4VYtcmi2wAnmG9xzsT4rQnF8QCD9hQj1hkHs3E",
-      "image_credit": "Al Jazeera",
-      "news": [
-        {
-          "url": "https://www.aljazeera.com/news/liveblog/2026/11/8/iran-war-live-explosions-hit-qeshm-us-moves-to-block-land-supply-routes",
-          "title": "Iran war updates: Drone hits northern Iraq; US blamed for Qeshm strikes",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPAoGqy3m9UfHH_YjDBOmvC4VYtcmi2wAnmG9xzsT4rQnF8QCD9hQj1hkHs3E"
-        },
-        {
-          "url": "https://www.reuters.com/business/energy/production-suspended-iraqs-khor-mor-gas-field-after-drone-attack-sources-say-2026-11-08/",
-          "title": "Iraq's Khor Mor gas field suspends output after drone attack, operator says",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPk2W3ho6_zlHesoKeTeRoJaOquXcJoiM5jKiPuJUlGzWLb41fE7N9qlM1SDI"
-        },
-        {
-          "url": "https://www.scmp.com/news/world/middle-east/article/3373721/attack-iraq-gas-complex-disrupts-supply-regions-power-plants-authorities-say",
-          "title": "Drone attack on Iraq gas complex causes power outages",
-          "publisher": "SCMP",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1SfN7IJVHCiODpDKrmzcAEScToZGX-xwlHTjCPFDMRxd5ynIkh3GSXfPnZrk"
-        }
-      ]
-    },
-    {
-      "query": "погода",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T12:00:00Z",
-      "related_news_urls": [
-        "https://www.rbc.ua/ukr/news/nichni-morozi-zminyatsya-poteplinnyam-18-1794215726.html",
-        "https://fakty.ua/ru/481848-vo-vlasti-ciklonov-na-nedele-9---15-noyabrya-vsyu-ukrainu-nakroyut-dozhdi-s-mokrym-snegom",
-        "https://tsn.ua/ru/ukrayina/v-ukraine-udaryat-morozy-do-9deg-prognoz-pogody-na-9-noyabrya-po-regionam-karta-3211363.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7MmpF0K8xahF6EZNtPE9xzCr4ZeO8C2Z5YZ1DbDJlwnljlLk2AVwZXpr2ukU",
-      "image_credit": "РБК-Україна",
-      "news": [
-        {
-          "url": "https://www.rbc.ua/ukr/news/nichni-morozi-zminyatsya-poteplinnyam-18-1794215726.html",
-          "title": "Ночные морозы сменятся потеплением до +18: прогноз погоды в Украине на 10-14 ноября",
-          "publisher": "РБК-Україна",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7MmpF0K8xahF6EZNtPE9xzCr4ZeO8C2Z5YZ1DbDJlwnljlLk2AVwZXpr2ukU"
-        },
-        {
-          "url": "https://fakty.ua/ru/481848-vo-vlasti-ciklonov-na-nedele-9---15-noyabrya-vsyu-ukrainu-nakroyut-dozhdi-s-mokrym-snegom",
-          "title": "Во власти циклонов: на неделе 9 — 15 ноября всю Украину накроют дожди...",
-          "publisher": "ФАКТЫ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_lyhPIlZDlfVdwi-4UAEKCwqmQfrkbRcS0dFXLPUqCAbQqWWKs7JiQzHzUnU"
-        },
-        {
-          "url": "https://tsn.ua/ru/ukrayina/v-ukraine-udaryat-morozy-do-9deg-prognoz-pogody-na-9-noyabrya-po-regionam-karta-3211363.html",
-          "title": "В Украине ударят морозы до -9°: прогноз погоды на 9 ноября по регионам (карта)",
-          "publisher": "ТСН",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtvnt0E8Xt3RAWjYVADZjTMu0VFQuotFP3Wv0Bt7aOPDkD_5vJAZALfR9Z-J4"
         }
       ]
     }
