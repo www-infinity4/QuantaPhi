@@ -71,7 +71,7 @@ jobs:
           if(bindings.get('DB')?.type!=='d1'||bindings.get('DB')?.id!=='d87794f4-a150-469c-bf08-c1055807b145')throw Error('Wrong D1 binding');
           if(bindings.get('INGEST_MODE')?.text!=='queue')throw Error('Queue mode missing');
           for(const k of ['INGEST_TOKEN','USER_IDENTITY_HMAC_SECRET','EVENT_QUEUE'])if(bindings.has(k))throw Error('Forbidden secret/producer: '+k);
-          if(!(q.result||[]).some(c=>c.type==='worker'&&c.script_name==='quantaphi-quant-events-worker-staging'))throw Error('Worker consumer not attached');
+          if(!(q.result||[]).some(c=>c.type==='worker'&&c.script==='quantaphi-quant-events-worker-staging'))throw Error('Worker consumer not attached');
           if((q.result||[]).some(c=>c.type==='http_pull'))throw Error('HTTP pull consumer not retired');
           console.log('Isolated Worker, staging D1 and push consumer verified');
           NODE
