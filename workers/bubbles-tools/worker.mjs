@@ -185,9 +185,9 @@ export function hasUnverifiedActionClaim(userRequest,answer){
 }
 // A system prompt or the current conversation is context, not completed source verification.
 export function hasUnverifiedContextVerification(answer){
- const text=clean(answer,8000).replace(/\\*/g,'');
- return /\\b(?:system message|conversation context)\\b[\\s\\S]{0,260}\\b(?:completed|verified)\\s+verification\\b/i.test(text)||
-  /\\b(?:completed|verified)\\s+verification\\b[\\s\\S]{0,260}\\b(?:system message|conversation context)\\b/i.test(text);
+ const text=clean(answer,8000).replace(/\*/g,'');
+ return /\b(?:system message|conversation context)\b[\s\S]{0,260}\b(?:completed|verified)\s+verification\b/i.test(text)||
+  /\b(?:completed|verified)\s+verification\b[\s\S]{0,260}\b(?:system message|conversation context)\b/i.test(text);
 }
 // Model text is not a tool invocation. Workers AI chat can emit planning
 // prose or fabricated createTicket JSON instead of a user-facing reply.
