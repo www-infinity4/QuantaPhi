@@ -100,3 +100,12 @@ test('valid user-provided NES file starts the correct emulator configuration, wi
  win.EJS_onGameStart();
  assert.match(controls.status.textContent,/Game started/);
 });
+
+test('reset and navigation never persist ROM bytes across documents',()=>{
+ const player=source('nes-snes-player.html');
+ const card=source('nes-snes-quick-card.js');
+ assert.match(player,/reset\.addEventListener\('click',\(\)=>location\.reload\(\)\)/);
+ assert.match(player,/URL\.revokeObjectURL\(currentBlob\)/);
+ assert.match(card,/oracle:card-deactivated/);
+ assert.doesNotMatch(player,/sessionStorage|localStorage|readAsDataURL/);
+});
