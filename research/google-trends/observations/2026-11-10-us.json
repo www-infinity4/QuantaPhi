@@ -3,76 +3,111 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T15:01:22.770355Z",
+  "checked_at": "2026-11-10T15:31:29.382641Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "wow forever patch notes",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T15:10:00Z",
+      "related_news_urls": [
+        "https://www.windowscentral.com/gaming/blizzard/world-of-warcraft-civil-war-erupts-as-retail-andys-beg-blizzard-to-make-wow-forever-easier",
+        "https://www.tomshardware.com/video-games/pc-gaming/wow-forever-launch-used-70-480-cpu-cores-and-251-terabytes-of-ram-3-924-virtual-machines-powered-one-of-world-of-warcrafts-smoothest-launches-ever",
+        "https://www.techpowerup.com/354583/wow-forever-sets-a-new-franchise-record-for-peak-concurrent-players"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBZFLuCBNoM5n0jrkZyc9Hwax9qYZ3GeYsam8fKs9nypsMSAp-mxj4JusQF5k",
+      "image_credit": "Windows Central",
+      "news": [
+        {
+          "url": "https://www.windowscentral.com/gaming/blizzard/world-of-warcraft-civil-war-erupts-as-retail-andys-beg-blizzard-to-make-wow-forever-easier",
+          "title": "World of Warcraft civil war erupts as 'retail Andys' beg Blizzard to make WoW: Forever easier. They should ignore it.",
+          "publisher": "Windows Central",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBZFLuCBNoM5n0jrkZyc9Hwax9qYZ3GeYsam8fKs9nypsMSAp-mxj4JusQF5k"
+        },
+        {
+          "url": "https://www.tomshardware.com/video-games/pc-gaming/wow-forever-launch-used-70-480-cpu-cores-and-251-terabytes-of-ram-3-924-virtual-machines-powered-one-of-world-of-warcrafts-smoothest-launches-ever",
+          "title": "WoW: Forever launch used 70,480 CPU cores and 251 terabytes of RAM — 3,924 virtual machines powered one of World of Warcraft's smoothest launches ever",
+          "publisher": "Tom's Hardware",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQSWi4Wv-eoEYpOw_YAD277FhkyqX_um_wamW7SQU24RQDcgoyvo7_hl6wp4o"
+        },
+        {
+          "url": "https://www.techpowerup.com/354583/wow-forever-sets-a-new-franchise-record-for-peak-concurrent-players",
+          "title": "WoW: Forever Sets a New Franchise Record for Peak Concurrent Players",
+          "publisher": "TechPowerUp",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHAh3fKOg9wEwecT2i64_5idUSV6ijJ7ijn2BnxvxIKxAzE6s_IXETE8bnR8Y"
+        }
+      ]
+    },
+    {
+      "query": "arthur rinderknech",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T14:50:00Z",
+      "related_news_urls": [
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/shevchenko-vs-ruud-nov-11-2026/",
+        "https://www.bleachernation.com/picks/2026/11/08/rinderknech-vs-kecmanovic-prediction-at-the-stockholm-open-tuesday-november-10/",
+        "https://en.tennistemple.com/match/rinderknech-kecmanovic-stockholm-2026/9569394/comments"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQo8WiCkuz_9peJILDv0RgX3_aaLBiQ2Q61kcVM-UzVxTY-94fnlfLqKwjgM-E",
+      "image_credit": "Robinhood",
+      "news": [
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/shevchenko-vs-ruud-nov-11-2026/",
+          "title": "November 11, 2026: Shevchenko vs Ruud Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQo8WiCkuz_9peJILDv0RgX3_aaLBiQ2Q61kcVM-UzVxTY-94fnlfLqKwjgM-E"
+        },
+        {
+          "url": "https://www.bleachernation.com/picks/2026/11/08/rinderknech-vs-kecmanovic-prediction-at-the-stockholm-open-tuesday-november-10/",
+          "title": "Rinderknech vs. Kecmanovic Prediction at the Stockholm Open – Tuesday, November 10",
+          "publisher": "Bleacher Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS63VFWscMitFCQmtdYcJ8gSlDYJ1Stc16ubYT2DAxd0Mm6ytzcAPSVc8mcwL4"
+        },
+        {
+          "url": "https://en.tennistemple.com/match/rinderknech-kecmanovic-stockholm-2026/9569394/comments",
+          "title": "Rinderknech vs Kecmanovic : Comments • Stockholm 2026",
+          "publisher": "TennisTemple",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRziH7qORQJwscqMxF9-TybM0BuWqD08ZzLdBid_AObaoiBu4TyjTTXIp1150Q"
+        }
+      ]
+    },
     {
       "query": "ayesha curry",
       "approx_searches": "500+",
       "published_at": "2026-11-10T14:30:00Z",
       "related_news_urls": [
-        "https://nypost.com/2026/11/05/sports/steph-curry-wife-ayesha-viral-kissing-scene/",
-        "https://timesofindia.indiatimes.com/sports/nba/top-stories/i-didnt-want-kids-or-marriage-stephen-currys-wife-ayesha-currys-comments-about-their-marriage-resurface-as-her-new-movie-sparks-a-heated-debate/articleshow/135615769.cms",
-        "https://www.hotnewhiphop.com/1016214-gilbert-arenas-ayesha-curry-comments-second-chance-holiday"
+        "https://www.today.com/video/ayesha-curry-talks-starring-in-second-chance-holiday-273194565752",
+        "https://www.yahoo.com/entertainment/celebrity/articles/jemele-hills-opinion-ayesha-curry-000000304.html",
+        "https://nypost.com/2026/11/05/sports/steph-curry-wife-ayesha-viral-kissing-scene/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5NVDsW5qadvxSA_Ruj4argC6a32erqYrL0ed4wRkgtZE7tyAO8U2n7fQoSmk",
-      "image_credit": "New York Post",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQivfCIYNt2zCb0F7xZ-5nlZJH5oILgMaBJwDiJ7gQN998q5Evd5sLdiYgdnVs",
+      "image_credit": "TODAY.com",
       "news": [
+        {
+          "url": "https://www.today.com/video/ayesha-curry-talks-starring-in-second-chance-holiday-273194565752",
+          "title": "Ayesha Curry Talks New Rom-Com With a Holiday Spin",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQivfCIYNt2zCb0F7xZ-5nlZJH5oILgMaBJwDiJ7gQN998q5Evd5sLdiYgdnVs"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/jemele-hills-opinion-ayesha-curry-000000304.html",
+          "title": "Jemele Hill's Opinion On Ayesha Curry 'Controversy' Divides NBA Fans",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSG6CHIO9gOoOXR1RaJMX6gfJYl7J6wHsiTtn-Gt8RuSoAtQmzAr3D1fl5q_c"
+        },
         {
           "url": "https://nypost.com/2026/11/05/sports/steph-curry-wife-ayesha-viral-kissing-scene/",
           "title": "Steph Curry’s post after wife Ayesha’s viral kissing scene speaks volumes",
           "publisher": "New York Post",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5NVDsW5qadvxSA_Ruj4argC6a32erqYrL0ed4wRkgtZE7tyAO8U2n7fQoSmk"
-        },
-        {
-          "url": "https://timesofindia.indiatimes.com/sports/nba/top-stories/i-didnt-want-kids-or-marriage-stephen-currys-wife-ayesha-currys-comments-about-their-marriage-resurface-as-her-new-movie-sparks-a-heated-debate/articleshow/135615769.cms",
-          "title": "“I didn’t want kids or marriage”: Stephen Curry’s wife Ayesha Curry’s comments about their marriage resur",
-          "publisher": "The Times of India",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlbGSkjP_k8EuAPyHm_-YI4RKTJ5Wv_C-0LGfgCGmp0AXysafUxWIbku1iY60"
-        },
-        {
-          "url": "https://www.hotnewhiphop.com/1016214-gilbert-arenas-ayesha-curry-comments-second-chance-holiday",
-          "title": "Gilbert Arenas Makes Disrespectful Comments About Ayesha Curry Amid Roku Movie Criticism",
-          "publisher": "HotNewHipHop",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRESKaWEgLztHCzZA40651NUWv5msx_12kFw4Sy0dK2MkLpLDiznjaDrLgAxu8"
-        }
-      ]
-    },
-    {
-      "query": "adam schefter",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T14:20:00Z",
-      "related_news_urls": [
-        "https://www.9news.com/article/sports/nfl/denver-broncos/mike-klis/denver-bronco-notes-reasons-for-and-against-making-a-trade-mike-klis-insider/73-569edad2-a1f4-4cd0-9a12-aa703ddd967f",
-        "https://sports.yahoo.com/articles/broncos-trade-pitch-swaps-draft-132508955.html",
-        "https://www.denverpost.com/2026/11/09/broncos-analysis-parker-gabriel-7-thoughts-trade-deadline-jonah-coleman-ja-quan-mcmillian-extension/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdtVqWAHUC8b26WFa_uB-5lYodtVV2UkWmgSJvjUC-DAWTpgWuTXqo7bwntQU",
-      "image_credit": "9News",
-      "news": [
-        {
-          "url": "https://www.9news.com/article/sports/nfl/denver-broncos/mike-klis/denver-bronco-notes-reasons-for-and-against-making-a-trade-mike-klis-insider/73-569edad2-a1f4-4cd0-9a12-aa703ddd967f",
-          "title": "Bronco notes: Reasons for and against making a trade",
-          "publisher": "9News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdtVqWAHUC8b26WFa_uB-5lYodtVV2UkWmgSJvjUC-DAWTpgWuTXqo7bwntQU"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/broncos-trade-pitch-swaps-draft-132508955.html",
-          "title": "Broncos Trade Pitch Swaps Draft Pick for 1,000-Yard RB",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxnA7zD0Et3sfoQAlv4LczM56vQXVtCRgG0xxJfIft9Llw7e26iWdIDxyFeE8"
-        },
-        {
-          "url": "https://www.denverpost.com/2026/11/09/broncos-analysis-parker-gabriel-7-thoughts-trade-deadline-jonah-coleman-ja-quan-mcmillian-extension/",
-          "title": "Parker Gabriel’s 7 Thoughts after Broncos survive Carolina: Sizing up the trade deadline and Denver’s status going into bye week",
-          "publisher": "The Denver Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSC5KUKbVM8rvXOc9rFiRmfnGy_L_IbSvaTIHtqCGyO1y67tdQvpYbyS-33UIs"
         }
       ]
     },
@@ -82,8 +117,8 @@
       "published_at": "2026-11-10T14:10:00Z",
       "related_news_urls": [
         "https://www.cnn.com/2026/11/09/politics/mississippi-senate-hyde-smith-colom-campaign",
-        "https://www.clarionledger.com/story/news/politics/elections/2026/11/10/hyde-smith-vs-colom-when-will-we-know-who-won-senate-race-in-mississippi/92699345007/",
-        "https://apnews.com/projects/elections-2026/mississippi-us-senate-results/"
+        "https://apnews.com/projects/elections-2026/mississippi-us-senate-results/",
+        "https://www.washingtonpost.com/elections/2026/11/09/democrat-scott-colom-attacks-cook-reports-accuracy/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrH_TQ9MXsgyjWpDxOnFK9hS3QTr_ve10V3pfDu8fXAzzYPwsfezyAeWnmXyM",
       "image_credit": "CNN",
@@ -96,18 +131,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrH_TQ9MXsgyjWpDxOnFK9hS3QTr_ve10V3pfDu8fXAzzYPwsfezyAeWnmXyM"
         },
         {
-          "url": "https://www.clarionledger.com/story/news/politics/elections/2026/11/10/hyde-smith-vs-colom-when-will-we-know-who-won-senate-race-in-mississippi/92699345007/",
-          "title": "When will Mississippi know who won US Senate race? Key deadlines today",
-          "publisher": "The Clarion-Ledger",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQap4UGJdMWlC82-Bbbbw3tHMH8lFOElYjaKsUVJpNV6KYamTylJmmjMtlJZ04"
-        },
-        {
           "url": "https://apnews.com/projects/elections-2026/mississippi-us-senate-results/",
           "title": "Mississippi U.S. Senate Election Live Results 2026",
           "publisher": "AP News",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9oEasnTDRUr2q-TjRibhJWnth8kxzHe5jfe3GfDfY-gXR0YEwlFWtnaG6Fng"
+        },
+        {
+          "url": "https://www.washingtonpost.com/elections/2026/11/09/democrat-scott-colom-attacks-cook-reports-accuracy/",
+          "title": "Mississippi Senate candidate Scott Colom attacks Cook Political Report accuracy",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTP2r_qfjqsE4rmac_d0Llxn1xN_9KyeOSQlXPZnqN7ptAcCEy5jFgzANzuVPU"
         }
       ]
     },
@@ -116,39 +151,39 @@
       "approx_searches": "500+",
       "published_at": "2026-11-10T14:10:00Z",
       "related_news_urls": [
-        "https://www.rockpapershotgun.com/its-a-brave-new-world-gta-6s-pc-port-will-release-sooner-than-you-think-to-avoid-losing-money-to-ai-rip-offs-says-former-rockstar-tech-director",
-        "https://www.theverge.com/news/1030714/gta-vi-xbox-cloud-gaming-support",
-        "https://arstechnica.com/gaming/2026/11/could-potential-ai-clones-of-gta-vi-force-a-quicker-official-port/"
+        "https://www.fivereasonssports.com/news/top-cloud-gaming-services-in-2026-which-work-best-for-fast-paced-games/",
+        "https://www.ign.com/articles/former-playstation-boss-says-sony-doesnt-need-a-ps6-for-1200-it-needs-a-ps5-for-300",
+        "https://www.vgchartz.com/article/469593/shawn-layden-innovation-needs-to-come-not-from-making-ps6-for-1200-its-to-make-another-ps5-for-300/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIcSYiQp4LCYT2ET2e2PNDwT7JGsG2yuo5smKwTSnJ0UvYg-ilMsAJDecmJC8",
-      "image_credit": "Rock Paper Shotgun",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxhjwFU014QEWRJLbDitLg7EbyiV9okKD5qpyOXx_bf7slRex0Stja13XN-ZI",
+      "image_credit": "Five Reasons Sports Network",
       "news": [
         {
-          "url": "https://www.rockpapershotgun.com/its-a-brave-new-world-gta-6s-pc-port-will-release-sooner-than-you-think-to-avoid-losing-money-to-ai-rip-offs-says-former-rockstar-tech-director",
-          "title": "\"It's a brave new world\": GTA 6's PC port will release sooner than you think to avoid losing money to AI rip-offs, says former Rockstar tech director",
-          "publisher": "Rock Paper Shotgun",
+          "url": "https://www.fivereasonssports.com/news/top-cloud-gaming-services-in-2026-which-work-best-for-fast-paced-games/",
+          "title": "Top Cloud Gaming Services in 2026: Which Work Best for Fast-Paced Games?",
+          "publisher": "Five Reasons Sports Network",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIcSYiQp4LCYT2ET2e2PNDwT7JGsG2yuo5smKwTSnJ0UvYg-ilMsAJDecmJC8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxhjwFU014QEWRJLbDitLg7EbyiV9okKD5qpyOXx_bf7slRex0Stja13XN-ZI"
         },
         {
-          "url": "https://www.theverge.com/news/1030714/gta-vi-xbox-cloud-gaming-support",
-          "title": "GTA VI will be available on Xbox Cloud Gaming for Xbox One consoles",
-          "publisher": "The Verge",
+          "url": "https://www.ign.com/articles/former-playstation-boss-says-sony-doesnt-need-a-ps6-for-1200-it-needs-a-ps5-for-300",
+          "title": "'I Think We Have Enough Power in the Machine' — Former PlayStation Boss Shawn Layden Calls on Sony to Prioritize Making a Cheaper Console Amid Rumors of a Pricey PS6",
+          "publisher": "IGN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMklF1Y8DtTPlldT2JHPAYQFF4bWcTvfsYs9pvnGd4EqxkHKPBZhY7ASI58TU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYPxL4vAFGsKfN9-tRFcA9xj4NRf_24-E5grMV7lnhgbisWDS6KLgOk-hrEmM"
         },
         {
-          "url": "https://arstechnica.com/gaming/2026/11/could-potential-ai-clones-of-gta-vi-force-a-quicker-official-port/",
-          "title": "Could potential AI clones of GTA VI force a quicker official port?",
-          "publisher": "Ars Technica",
+          "url": "https://www.vgchartz.com/article/469593/shawn-layden-innovation-needs-to-come-not-from-making-ps6-for-1200-its-to-make-another-ps5-for-300/",
+          "title": "Shawn Layden: 'Innovation Needs to Come Not From Making PS6 for $1,200, It's to Make Another PS5 for $300'",
+          "publisher": "VGChartz",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtBbq1-zllBJdA1YQzjB0uI7SnInGhfpQi_PxkP9CW0NdFqnUihg6dQmwvPvA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc5kNGnn78WCDsNqHPKhH4xN2xE_7AXkOW2DV7LClNSbucvq2V7QmWAsH8hw"
         }
       ]
     },
     {
       "query": "big walk game ai",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-10T14:00:00Z",
       "related_news_urls": [
         "https://aftermath.site/big-walk-ai-igf-jurors-controversy/",
@@ -183,11 +218,11 @@
     },
     {
       "query": "jordan elliott",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-10T13:50:00Z",
       "related_news_urls": [
         "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-dt-jordan-elliott-to-work-out-for-bears",
-        "https://sports.yahoo.com/articles/bears-working-jeffery-simmons-former-141026483.html",
+        "https://sports.yahoo.com/articles/former-tennessee-titans-dt-jordan-144802201.html",
         "https://roundtable.io/sports/nfl/titans/players/former-titans-dl-jordan-elliott-getting-second-chance-in-the-nfl"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRw7Y6P212sul0eeqgJq2mBHlc_K-nMhn87T7YKiAUsiGYy92_MammTsAwxqjs",
@@ -201,8 +236,8 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRw7Y6P212sul0eeqgJq2mBHlc_K-nMhn87T7YKiAUsiGYy92_MammTsAwxqjs"
         },
         {
-          "url": "https://sports.yahoo.com/articles/bears-working-jeffery-simmons-former-141026483.html",
-          "title": "Bears working out Jeffery Simmons' former Titans teammate",
+          "url": "https://sports.yahoo.com/articles/former-tennessee-titans-dt-jordan-144802201.html",
+          "title": "Former Tennessee Titans DT Jordan Elliott working out with Chicago Bears, per report",
           "publisher": "Yahoo Sports",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPXVIIQLUU5w4cxY2wAZgFG_Od5vga1GmgpGEY4na4wUTqhFAIS0kMlzSutkw"
@@ -221,19 +256,19 @@
       "approx_searches": "200+",
       "published_at": "2026-11-10T13:50:00Z",
       "related_news_urls": [
-        "https://www.businessinsider.com/jeff-bezos-lauren-sanchez-bezos-best-worst-outfits-2026-11",
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/best-worst-fashion-moments-jeff-141403929.html",
         "https://africa.businessinsider.com/entertainment/the-best-and-worst-fashion-moments-jeff-bezos-and-lauren-sanchez-bezos-have-had-this/v9dvrte",
         "https://timesofindia.indiatimes.com/technology/tech-news/in-2024-jeff-bezos-paid-87-million-for-a-third-mansion-on-miamis-billionaire-bunker-he-and-lauren-snchez-bezos-transformed-the-temporary-home-with-exotic-gardens-a-private-gym-and-a-pickleball-court/articleshow/135699583.cms"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQyWp_aX_h9bVqjbkgkhcWngSZTFBJiqWl-Lycd0fpALBGph239fs283a4OtGQ",
-      "image_credit": "Business Insider",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpr1UV7Q6rSkGzPkx77Wf4GiyNDl632jW3UGquP0rlUJw9vMhkubTxyoKpnOU",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.businessinsider.com/jeff-bezos-lauren-sanchez-bezos-best-worst-outfits-2026-11",
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/best-worst-fashion-moments-jeff-141403929.html",
           "title": "The best and worst fashion moments Jeff Bezos and Lauren Sánchez Bezos have had this year",
-          "publisher": "Business Insider",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQyWp_aX_h9bVqjbkgkhcWngSZTFBJiqWl-Lycd0fpALBGph239fs283a4OtGQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpr1UV7Q6rSkGzPkx77Wf4GiyNDl632jW3UGquP0rlUJw9vMhkubTxyoKpnOU"
         },
         {
           "url": "https://africa.businessinsider.com/entertainment/the-best-and-worst-fashion-moments-jeff-bezos-and-lauren-sanchez-bezos-have-had-this/v9dvrte",
@@ -256,7 +291,7 @@
       "approx_searches": "10000+",
       "published_at": "2026-11-10T13:40:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/father-young-country-music-singer-130100524.html",
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/father-young-country-music-singer-130100094.html",
         "https://www.wtxl.com/news/local-news/in-your-neighborhood/wakulla-county/wakulla-county-musician-c-j-beach-dies-in-a-weekend-car-accident-leaving-the-music-community-in-mourning",
         "https://pagesix.com/2026/11/09/celebrity-news/promising-country-music-star-dies-at-just-22-after-devastating-car-crash/"
       ],
@@ -264,7 +299,7 @@
       "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/father-young-country-music-singer-130100524.html",
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/father-young-country-music-singer-130100094.html",
           "title": "Father of young country music singer killed in crash makes plea: ‘In memory of my son’",
           "publisher": "Yahoo",
           "description": "",
@@ -292,8 +327,8 @@
       "published_at": "2026-11-10T13:40:00Z",
       "related_news_urls": [
         "https://www.fox5vegas.com/2026/11/06/attorney-who-represented-keffe-d-tupac-murder-trial-reportedly-dies/",
-        "https://www.cnn.com/2026/11/09/us/michael-sanft-duane-davis-lawyer-death",
-        "https://www.abajournal.com/news/article/lawyer-who-defended-tupac-shakurs-killer-found-dead-inside-his-vegas-home"
+        "https://news3lv.com/news/local/duane-davis-appeals-tupac-shakur-murder-conviction-to-nevada-supreme-court",
+        "https://www.cnn.com/2026/11/09/us/michael-sanft-duane-davis-lawyer-death"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQD65KSxWGdH4vhWwtHHpt99wbKiTW7yufmAANBFoeaORCcueikCmVRfdui4kQ",
       "image_credit": "FOX5 Vegas",
@@ -306,53 +341,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQD65KSxWGdH4vhWwtHHpt99wbKiTW7yufmAANBFoeaORCcueikCmVRfdui4kQ"
         },
         {
+          "url": "https://news3lv.com/news/local/duane-davis-appeals-tupac-shakur-murder-conviction-to-nevada-supreme-court",
+          "title": "Duane Davis appeals Tupac Shakur murder conviction to Nevada Supreme Court",
+          "publisher": "KSNV",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK-wP__8k9H9qKE1VNf80G1gu8oxD2USp3_oeH-5UrPrx6BcnTPPnl7qojIIs"
+        },
+        {
           "url": "https://www.cnn.com/2026/11/09/us/michael-sanft-duane-davis-lawyer-death",
           "title": "Michael Sanft, lawyer for man convicted of Tupac Shakur’s murder, dies at 55",
           "publisher": "CNN",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn-JG-JGqXP0JxKYRvNT0RZv1IZvQayrfGWiKmeOhGVMSgEIxPDqEVCc9G2z0"
-        },
-        {
-          "url": "https://www.abajournal.com/news/article/lawyer-who-defended-tupac-shakurs-killer-found-dead-inside-his-vegas-home",
-          "title": "Defense attorney in Tupac Shakur murder trial discovered dead inside his Vegas home",
-          "publisher": "ABA Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaGFYKtmtZRkSoXZ3mSc9kA11-rQ3vSCv07IQli5vLzg9lNC7sWDtwkGGGCko"
-        }
-      ]
-    },
-    {
-      "query": "lorenzo sonego",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T13:40:00Z",
-      "related_news_urls": [
-        "https://lastwordonsports.com/tennis/2026/11/09/atp-stockholm-day-3-predictions-musetti-samuel/",
-        "https://britwatchsports.com/tennis-atp-stockholm-2026-samuel-eases-past-borg-to-set-musetti-showdown/",
-        "https://www.bets.com.au/tennis/atp-tour/lorenzo-musetti-vs-toby-samuel-atp-stockholm-tips-prediction-live-stream-20261109-0013/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTu9Vuur7hUq7k3uF9U4Mb9WNDnQyjM4DdaL2-UacphDPeIBiLbivlDbNMBS8I",
-      "image_credit": "Last Word On Sports",
-      "news": [
-        {
-          "url": "https://lastwordonsports.com/tennis/2026/11/09/atp-stockholm-day-3-predictions-musetti-samuel/",
-          "title": "ATP Stockholm Day 3 Predictions Including Lorenzo Musetti vs Toby Samuel",
-          "publisher": "Last Word On Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTu9Vuur7hUq7k3uF9U4Mb9WNDnQyjM4DdaL2-UacphDPeIBiLbivlDbNMBS8I"
-        },
-        {
-          "url": "https://britwatchsports.com/tennis-atp-stockholm-2026-samuel-eases-past-borg-to-set-musetti-showdown/",
-          "title": "Tennis | ATP Stockholm 2026 | Samuel eases past Borg to set Musetti showdown",
-          "publisher": "Britwatch Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTTeY2bGZ0unXE8kVDauOnwlTSy1VOmFCHJQTtlYs1F2Wj714JBooZ8Kjbkiw"
-        },
-        {
-          "url": "https://www.bets.com.au/tennis/atp-tour/lorenzo-musetti-vs-toby-samuel-atp-stockholm-tips-prediction-live-stream-20261109-0013/",
-          "title": "Lorenzo Musetti vs Toby Samuel ATP Stockholm Tips, Prediction & Live Stream - Musetti targets quarter-finals",
-          "publisher": "Bets.com.au",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfOTZ5r3pFWt9PON9Q8RWExoD_oZvaKPsh8PRNfBHD30WpJ7Nvo0GxYzAYX3c"
         }
       ]
     }
