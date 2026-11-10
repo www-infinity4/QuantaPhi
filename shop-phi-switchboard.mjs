@@ -18,7 +18,7 @@ export function nextCompanionPage(page,total){
 export function companionRotationAllowed({total=0,visible=false,pageHidden=false,focused=false,shelfOpen=false,paused=false,reducedMotion=false}={}){
  return total>2&&visible&&!pageHidden&&!focused&&!shelfOpen&&!paused&&!reducedMotion;
 }
-const SENSITIVE=/\b(religion|church|politic|election|race|ethnic|medical|health|disability|sexual|addiction|therapy|cannabis|dispensary|marijuana|tobacco|cigars?|nicotine|21\+|adult|vapes?|thc)\b/i;
+const SENSITIVE=/(?:\b(?:religion|church|politic|election|race|ethnic|medical|health|disability|sexual|addiction|therapy|cannabis|dispensary|marijuana|tobacco|cigars?|nicotine|adult|vapes?|thc)\b|21\+)/i;
 const LANES=Object.freeze([
  {id:'travel',match:/\b(miami vice|tropical vacations?|beach travel|florida tourism|palm tree vacation)\b/i,
   topics:['tropical vacation','Florida travel','beach destination','hotel stays','travel guides','travel accessories'],
