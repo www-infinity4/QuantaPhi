@@ -3,9 +3,141 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T09:01:42.255803Z",
+  "checked_at": "2026-11-10T09:31:21.606293Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "chicago heights",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T09:10:00Z",
+      "related_news_urls": [
+        "https://abc7chicago.com/post/chicago-heights-news-police-seek-help-identifying-owner-nickelodeon-jacket-found-human-remains-elmwood/20028550/",
+        "https://www.fox32chicago.com/news/human-remains-garbage-can-chicago-suburb",
+        "https://wgntv.com/news/south-suburbs/human-remains-found-inside-garbage-can-in-south-suburban-chicago-heights-authorities-confirm/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTP2zsR-xjhDyREkgCY7PmIwlBO3_pRJ5OyV_DUtqa19Mun3zhMlS9P-gWbJA",
+      "image_credit": "ABC7 Chicago",
+      "news": [
+        {
+          "url": "https://abc7chicago.com/post/chicago-heights-news-police-seek-help-identifying-owner-nickelodeon-jacket-found-human-remains-elmwood/20028550/",
+          "title": "Chicago Heights news: Police seek help identifying owner of 'Nickelodeon' jacket found with human remains near Chicago and Elmwood",
+          "publisher": "ABC7 Chicago",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTP2zsR-xjhDyREkgCY7PmIwlBO3_pRJ5OyV_DUtqa19Mun3zhMlS9P-gWbJA"
+        },
+        {
+          "url": "https://www.fox32chicago.com/news/human-remains-garbage-can-chicago-suburb",
+          "title": "Chicago Heights police seek jacket owner after human remains found",
+          "publisher": "FOX 32 Chicago",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNISXseKSn05cTZoU3Gd6pSyPgpv4TJzjyzJcmdwPBT5uT353JCD2hxAEGG1s"
+        },
+        {
+          "url": "https://wgntv.com/news/south-suburbs/human-remains-found-inside-garbage-can-in-south-suburban-chicago-heights-authorities-confirm/",
+          "title": "Human remains found inside garbage can in south suburban Chicago Heights, authorities confirm",
+          "publisher": "WGN-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr8BLkXEPq-Zox39JXUtB80yDJrQF7yijJxYIj5pbA9-s5xNlGnyMBJ--G3No"
+        }
+      ]
+    },
+    {
+      "query": "stargate sg-1",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T09:00:00Z",
+      "related_news_urls": [
+        "https://en.softonic.com/articles/stargate-sg-1-gets-a-new-collectible-next-month-horus-guard-helmet",
+        "https://www.polygon.com/stargate-james-spader-streaming-free-pluto-tv-november-2026/",
+        "https://www.cbr.com/stargate-movie-streaming-free-pluto-tv-november-2026/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk7pYIupppba6iQ8BbjqyeS70_hxTlRYho2sraCl9kdS0megYrvaVkgYorjiM",
+      "image_credit": "Softonic",
+      "news": [
+        {
+          "url": "https://en.softonic.com/articles/stargate-sg-1-gets-a-new-collectible-next-month-horus-guard-helmet",
+          "title": "Stargate SG-1 gets a new collectible next month: Horus Guard helmet",
+          "publisher": "Softonic",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk7pYIupppba6iQ8BbjqyeS70_hxTlRYho2sraCl9kdS0megYrvaVkgYorjiM"
+        },
+        {
+          "url": "https://www.polygon.com/stargate-james-spader-streaming-free-pluto-tv-november-2026/",
+          "title": "32 Years Later, James Spader’s Near-Perfect Sci-Fi Adventure Blasts Onto Free Streaming",
+          "publisher": "Polygon.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6tmrTZQawXBFTThNfEhGr9K7fIqL3bwIjgXrefou4xX3bsi_H8U_wAh8Lfho"
+        },
+        {
+          "url": "https://www.cbr.com/stargate-movie-streaming-free-pluto-tv-november-2026/",
+          "title": "Kurt Russell's '90s Sci-Fi Classic Is Streaming for Free Ahead of Prime Video Reboot",
+          "publisher": "Comic Book Resources",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3jEY00dcfI6KGcp_VIxTU5KgeoMrVZTjvcWMoYcCrJVHikgLTfWRqIrsZdXo"
+        }
+      ]
+    },
+    {
+      "query": "epstein",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T09:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cm86z6w59gggo",
+        "https://www.bbc.co.uk/news/videos/cmqxnxgwqrqlo",
+        "https://ua.news/en/dovkolo-svitu/model-zaiavila-shcho-prezident-mc2-vidpraviv-yiyi-do-epshteina-bbc-news"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhj5tkyCuZxGR8NdtVWgtJAuF6JkxtyhbtIdDk5j7zI0b4I70bZlLVSs-swfs",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cm86z6w59gggo",
+          "title": "Epstein associate who still runs model agency 'put me in danger' says abuse survivor",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhj5tkyCuZxGR8NdtVWgtJAuF6JkxtyhbtIdDk5j7zI0b4I70bZlLVSs-swfs"
+        },
+        {
+          "url": "https://www.bbc.co.uk/news/videos/cmqxnxgwqrqlo",
+          "title": "How model agencies helped Epstein access victims",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeyzW2YP7smHiRyHVX9vGLDui6z8PAmq7hVCWDZ4BRoi9zx48ZusrWJcTWyOk"
+        },
+        {
+          "url": "https://ua.news/en/dovkolo-svitu/model-zaiavila-shcho-prezident-mc2-vidpraviv-yiyi-do-epshteina-bbc-news",
+          "title": "Model says MC2 president sent her to Epstein — BBC News",
+          "publisher": "UA.NEWS",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTprtFj6PtCUhjL9SO-aSMY52a4okToB4iZCiv98ebsXUeX7y2unNMsZ6_lpX4"
+        }
+      ]
+    },
+    {
+      "query": "bob boone",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T08:50:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/phillies-world-series-champion-father-080359288.html",
+        "https://www.si.com/mlb/angels/onsi/bob-boone-cause-of-death"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSagxi7mO0wDIYRil0CWirIPT416_WA_SbrwgR7EGmNyTTSGVh7g-JwN_5h7_0",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/phillies-world-series-champion-father-080359288.html",
+          "title": "Phillies World Series champion, father of Yankees’ Aaron Boone, dies at 78",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSagxi7mO0wDIYRil0CWirIPT416_WA_SbrwgR7EGmNyTTSGVh7g-JwN_5h7_0"
+        },
+        {
+          "url": "https://www.si.com/mlb/angels/onsi/bob-boone-cause-of-death",
+          "title": "Former Angels All-Star, Postseason Hero, Dies at 78",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqLZ2jLB_JTQg2Ql_nSKEEV75OztXWqgVE5EFLa3emIoSHJT8e1ulMn4YX2Fc"
+        }
+      ]
+    },
     {
       "query": "cox",
       "approx_searches": "100+",
@@ -46,20 +178,13 @@
       "approx_searches": "100+",
       "published_at": "2026-11-10T08:30:00Z",
       "related_news_urls": [
-        "https://cn.nytimes.com/usa/20261110/nvidia-megaspeed-investigation-huang/",
         "https://www.bbc.com/zhongwen/articles/cjr4y41lv6zko/simp",
-        "https://www.zaobao.com.sg/news/world/story20261110-9974063"
+        "https://cn.nytimes.com/usa/20261110/nvidia-megaspeed-investigation-huang/",
+        "https://wenews.caixin.com/2026-11-10/102503026.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRktzrpUH--lpEI-2RLpFWGwdMaEo06I1rGANqCfV3MeAwKu4Yrtpw4pXbMcfs",
-      "image_credit": "纽约时报中文网",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPMy4JAIszsZ6BIkqUYl587z6LucXZwEOM0prIXz4XIbi219erVy379LZd0rA",
+      "image_credit": "BBC",
       "news": [
-        {
-          "url": "https://cn.nytimes.com/usa/20261110/nvidia-megaspeed-investigation-huang/",
-          "title": "美国商务部就芯片展开的调查在英伟达介入后中止",
-          "publisher": "纽约时报中文网",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRktzrpUH--lpEI-2RLpFWGwdMaEo06I1rGANqCfV3MeAwKu4Yrtpw4pXbMcfs"
-        },
         {
           "url": "https://www.bbc.com/zhongwen/articles/cjr4y41lv6zko/simp",
           "title": "黄仁勋婚外情：被指为中共间谍的黄乐是谁？",
@@ -68,11 +193,53 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPMy4JAIszsZ6BIkqUYl587z6LucXZwEOM0prIXz4XIbi219erVy379LZd0rA"
         },
         {
-          "url": "https://www.zaobao.com.sg/news/world/story20261110-9974063",
-          "title": "黄仁勋绯闻对象黄乐是谁？",
-          "publisher": "联合早报",
+          "url": "https://cn.nytimes.com/usa/20261110/nvidia-megaspeed-investigation-huang/",
+          "title": "美国商务部就芯片展开的调查在英伟达介入后中止",
+          "publisher": "纽约时报中文网",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSiiCcfl8w7RI0TMqcq8VjUijZ1btcu0E5YzFhWwpo6nBu0kPzFpHeepRV_ljE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRktzrpUH--lpEI-2RLpFWGwdMaEo06I1rGANqCfV3MeAwKu4Yrtpw4pXbMcfs"
+        },
+        {
+          "url": "https://wenews.caixin.com/2026-11-10/102503026.html",
+          "title": "和熙私募往事 Alice Huang与康伟的高光与挫折",
+          "publisher": "财新",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRI2whjAQ3Cp0d0FP870yIUWU3BVtAacC66tKv0n_SILOqIwXSlYYJdQWVRZIs"
+        }
+      ]
+    },
+    {
+      "query": "tony stewart nascar",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-10T08:20:00Z",
+      "related_news_urls": [
+        "https://racingnews.co/2026/11/09/tony-stewart-says-he-would-fire-everyone-at-nascar/",
+        "https://www.whiskeyriff.com/2026/11/08/cleaning-house-at-the-top-tony-stewart-says-hed-fire-everyone-if-he-became-nascar-commissioner/",
+        "https://journalarta.com/en/2026/11/10/tony-stewart-would-fire-all-nascar-upper-management/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSERlJhBmksF3T7kK0WTiefdzD7zcxmAvViPJv37kTGDgnhdN2bw4lGrhlL9NE",
+      "image_credit": "RacingNews.co",
+      "news": [
+        {
+          "url": "https://racingnews.co/2026/11/09/tony-stewart-says-he-would-fire-everyone-at-nascar/",
+          "title": "Tony Stewart says he would fire everyone at NASCAR (Video)",
+          "publisher": "RacingNews.co",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSERlJhBmksF3T7kK0WTiefdzD7zcxmAvViPJv37kTGDgnhdN2bw4lGrhlL9NE"
+        },
+        {
+          "url": "https://www.whiskeyriff.com/2026/11/08/cleaning-house-at-the-top-tony-stewart-says-hed-fire-everyone-if-he-became-nascar-commissioner/",
+          "title": "“Cleaning House At The Top” – Tony Stewart Says He’d Fire Everyone If He Became NASCAR Commissioner",
+          "publisher": "Whiskey Riff",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeX2-lwM-Sql4VlklFmyJc7xR8dNNdcONnJFd1L0prPPNpVkq4-x7cX_Gk5pE"
+        },
+        {
+          "url": "https://journalarta.com/en/2026/11/10/tony-stewart-would-fire-all-nascar-upper-management/",
+          "title": "Tony Stewart Would Fire All of NASCAR’s Upper Management on Day One",
+          "publisher": "JournalArta",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREyvmg_jOcngB8BFndVblhHYUAhiYoMPxphodZf9ypFkoehtlyme4_r0YdMIU"
         }
       ]
     },
@@ -83,7 +250,7 @@
       "related_news_urls": [
         "https://www.nytimes.com/wirecutter/money/best-early-black-friday-deals-2026/",
         "https://mashable.com/tech/amazon-black-friday-2026-everything-to-know",
-        "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-09"
+        "https://www.seriouseats.com/best-early-black-friday-amazon-deals-2026-12186267"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhrviGjKvbX7XK8PRGYzSDC-2LV5RyzjelZuW541DfyIz0s0WfNsGcrC6_HwA",
       "image_credit": "The New York Times",
@@ -103,11 +270,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoR58vjW_I1JlaeNZlUINeI4vd6LXs9T5BpW-wqB7LFMb-ZD8sM9iLUkZLf3w"
         },
         {
-          "url": "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-09",
-          "title": "I found 39 early Black Friday deals worth shopping ahead of Thanksgiving week",
-          "publisher": "CNN",
+          "url": "https://www.seriouseats.com/best-early-black-friday-amazon-deals-2026-12186267",
+          "title": "Amazon’s Black Friday Sale Starts Now With These 32 Secret Deals",
+          "publisher": "Serious Eats",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQhbRIHYv9B_ABSbMYRzK_tlL28iY2zu514OAg-JxoFevpkGAbpKOowefAGWg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3nXxL3Nb_xBXwGT32HIlX8NM5WhSPOwKuBDRvOTs3WwR7x-NvBynSuCguRak"
         }
       ]
     },
@@ -152,7 +319,7 @@
       "published_at": "2026-11-10T08:00:00Z",
       "related_news_urls": [
         "https://www.bbc.com/news/articles/c95ynylr8j6xo",
-        "https://www.yahoo.com/entertainment/celebrity/articles/producer-jemima-goldsmith-accuses-russell-073057249.html",
+        "https://deadline.com/2026/11/jemima-goldsmith-accuses-russell-brand-of-violence-abuse-1237218315/",
         "https://pagesix.com/2026/11/09/celebrity-news/russell-brands-ex-accuses-him-of-violent-abuse-hours-after-rape-sentencing/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRAnZqmWdeKxHb5jr0KH24fD6rVcdUu0h216gcGh4CvUhAAdtgfnXtgLKKPUA",
@@ -166,11 +333,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRAnZqmWdeKxHb5jr0KH24fD6rVcdUu0h216gcGh4CvUhAAdtgfnXtgLKKPUA"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/producer-jemima-goldsmith-accuses-russell-073057249.html",
+          "url": "https://deadline.com/2026/11/jemima-goldsmith-accuses-russell-brand-of-violence-abuse-1237218315/",
           "title": "Producer Jemima Goldsmith Accuses Russell Brand of “Violence, Coercive Control & Abuse”",
-          "publisher": "Yahoo",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCfhVa6pmy6YLxQm6ORcM4KS_Ci1Hv4fkJRuGDUCfCAwswBhJ7KX2qcM5NAq4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRK9sqKQpiAWjlBGKCUTQC4ALqNZnElx5XEJIQfEEYdC22w-u7RVncwFNF6NIc"
         },
         {
           "url": "https://pagesix.com/2026/11/09/celebrity-news/russell-brands-ex-accuses-him-of-violent-abuse-hours-after-rape-sentencing/",
@@ -178,181 +345,6 @@
           "publisher": "Page Six",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbw0RkX8KTex-hCuJb_-gswZ-BA0w2_6bOPMk62DzKKjmSmxeN4xIc02lMCA8"
-        }
-      ]
-    },
-    {
-      "query": "oj simpson",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T08:00:00Z",
-      "related_news_urls": [
-        "https://brobible.com/sports/article/oj-simpson-documentary-hot-mic-accomplice-claim/",
-        "https://people.com/did-o-j-simpson-have-an-accomplice-new-docuseries-revisits-theory-behind-nicole-brown-simpson-and-ron-goldman-s-murders-12238692",
-        "https://www.realityblurred.com/realitytv/2026/11/does-ojs-accomplice-make-its-case-true-crime/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTBeZ0dMjPYB_EcPYvpcTRPsHLd6YIW0n26YYNX58wSeRqS6Zo550tO_wZzAs",
-      "image_credit": "BroBible",
-      "news": [
-        {
-          "url": "https://brobible.com/sports/article/oj-simpson-documentary-hot-mic-accomplice-claim/",
-          "title": "OJ Simpson Documentary Captures Hot Mic Moment Claiming Friend Of 'The Juice' Confessed To 1994 Murders",
-          "publisher": "BroBible",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTBeZ0dMjPYB_EcPYvpcTRPsHLd6YIW0n26YYNX58wSeRqS6Zo550tO_wZzAs"
-        },
-        {
-          "url": "https://people.com/did-o-j-simpson-have-an-accomplice-new-docuseries-revisits-theory-behind-nicole-brown-simpson-and-ron-goldman-s-murders-12238692",
-          "title": "O.J. Simpson Accomplice Theory in Double Murder Revisited in New Docuseries",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQW9KzYP69ge1QQ_istfwDHCN9EUXpcBAp0T7tn3DQ4uaa9wGN1d1mzy-Lvxdc"
-        },
-        {
-          "url": "https://www.realityblurred.com/realitytv/2026/11/does-ojs-accomplice-make-its-case-true-crime/",
-          "title": "Does OJ’s Accomplice make its case?",
-          "publisher": "Reality Blurred",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpObecXdoEeqwOwqNd4yw0kPkDtF-ryw-rlde2E4vOeUijhZq4VZLIa6rYpuk"
-        }
-      ]
-    },
-    {
-      "query": "sam darnold",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T07:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50434130/seahawks-start-drew-lock-vs-raiders-mike-macdonald-says",
-        "https://www.nfl.com/news/sam-darnold-ruled-out-for-seahawks-week-10-game-vs-raiders-drew-lock-expected-to-start-again",
-        "https://www.seahawks.com/news/seahawks-qb-drew-lock-cool-as-can-be-starting-in-place-of-an-injured-sam-darnold"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_as8Eh5qREEf3u5sHYVP0yWhU5mU5GBb2zvnsevpht1s_OJT-vOivrAzktxY",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50434130/seahawks-start-drew-lock-vs-raiders-mike-macdonald-says",
-          "title": "Seahawks to start QB Drew Lock vs. Raiders, giving Sam Darnold more time to heal",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_as8Eh5qREEf3u5sHYVP0yWhU5mU5GBb2zvnsevpht1s_OJT-vOivrAzktxY"
-        },
-        {
-          "url": "https://www.nfl.com/news/sam-darnold-ruled-out-for-seahawks-week-10-game-vs-raiders-drew-lock-expected-to-start-again",
-          "title": "Sam Darnold ruled out for Seahawks' Week 10 game vs. Raiders; Drew Lock expected to start again",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTf1YB9zfkfP3vHwENUu_xcE6RnLzkJSmd3YBjgwL2xtu8bYzH-JH8k-nPzsH4"
-        },
-        {
-          "url": "https://www.seahawks.com/news/seahawks-qb-drew-lock-cool-as-can-be-starting-in-place-of-an-injured-sam-darnold",
-          "title": "Seahawks QB Drew Lock ‘Cool As Can Be’ Starting In Place Of An Injured Sam Darnold",
-          "publisher": "Seattle Seahawks",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5pbMELOmx1h2-xvIzcRA13syPrnHAxGcJx8-ym4iyIL5qwuYV5alok8EEcG8"
-        }
-      ]
-    },
-    {
-      "query": "grand theft auto vi",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T07:40:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/business/earnings/take-two-interactive-software-reports-lower-revenue-ahead-of-gta-vi-launch-76cb22cb",
-        "https://www.bloomberg.com/news/articles/2026-11-09/take-two-s-nba-2k-sales-miss-expectations-due-to-grand-theft-auto-vi",
-        "https://finance.yahoo.com/markets/stocks/articles/two-nasdaq-ttwo-reports-sales-222639488.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBCUODacdmolWXeHgB6w6uh_nsRumPTlfUk-8gwOvLgFu6NI7f62_4bbBW8Pw",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/business/earnings/take-two-interactive-software-reports-lower-revenue-ahead-of-gta-vi-launch-76cb22cb",
-          "title": "Take-Two Interactive Software Reports Lower Revenue Ahead of ‘GTA VI’ Launch",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBCUODacdmolWXeHgB6w6uh_nsRumPTlfUk-8gwOvLgFu6NI7f62_4bbBW8Pw"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-09/take-two-s-nba-2k-sales-miss-expectations-due-to-grand-theft-auto-vi",
-          "title": "Take-Two’s ‘NBA 2K’ Sales Disappoint Due to ‘Grand Theft Auto VI’",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZvXYVelz7A20mu33MUV1dgbAVfAy6-8aJx8T0Lh_6DgpxGbtoZADiX7Q-kbs"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/two-nasdaq-ttwo-reports-sales-222639488.html",
-          "title": "Take-Two (NASDAQ:TTWO) reports sales below analyst estimates in Q3 CY2026 earnings",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHIZnjip-j-23T3P17HVZj6qqblLf5LOzJk8WkYYVF-V6GU1_a1F4uieMAMp4"
-        }
-      ]
-    },
-    {
-      "query": "amanda nunes",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T07:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/amanda-nunes-6-old-daughter-053513594.html",
-        "https://www.forbes.com/sites/brianmazique/2026/11/09/ronda-rousey-lost-only-two-mma-fights-her-former-training-partner-already-beat-one-of-those-women-and-faces-the-other-saturday-at-madison-square-garden/",
-        "https://www.mmaweekly.com/news/ufc-334-embedded-episode-1-well-see-who-wants-it"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UNE_X4TIDFcsqu-Uaqg1qt5t4VT9_nuhbN7SYLNAkigAuU2HvoDuUo9AHis",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/amanda-nunes-6-old-daughter-053513594.html",
-          "title": "Amanda Nunes’ 6-Year-Old Daughter Just Gave Her the Game Plan to Beat Kayla Harrison at UFC 334",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UNE_X4TIDFcsqu-Uaqg1qt5t4VT9_nuhbN7SYLNAkigAuU2HvoDuUo9AHis"
-        },
-        {
-          "url": "https://www.forbes.com/sites/brianmazique/2026/11/09/ronda-rousey-lost-only-two-mma-fights-her-former-training-partner-already-beat-one-of-those-women-and-faces-the-other-saturday-at-madison-square-garden/",
-          "title": "UFC 334: Kayla Harrison Vs. Amanda Nunes - Date, Time and How to Watch",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuOenuW23j9yeqoYIax16BGRcfIOparGGxz2Ki0DcseP47kBoOpDfkH-7GKKU"
-        },
-        {
-          "url": "https://www.mmaweekly.com/news/ufc-334-embedded-episode-1-well-see-who-wants-it",
-          "title": "UFC 334 Embedded, Episode 1: ‘We’ll see who wants it’",
-          "publisher": "MMAWeekly.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStsrE6z6sAlWYWaae8FQgnTxJbOXKSWCzy61U-fa4-NyKachFulCzjrDthpR0"
-        }
-      ]
-    },
-    {
-      "query": "lake powell",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T07:30:00Z",
-      "related_news_urls": [
-        "https://www.sfgate.com/news/article/reservoir-water-22522040.php",
-        "https://kutv.com/news/local/lake-powells-rising-water-levels-buy-upper-basin-states-more-time",
-        "https://news3lv.com/news/local/lake-mead-rises-after-storms-but-winter-snowpack-will-be-key-to-more-relief-lake-powell-colorado-river-water-conservation-drought"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo3GbZKr4EBmlBrMNbvq8BQHzQud1-79BbExNnSpWZEOrtKo4UNC3G-7b5jNw",
-      "image_credit": "SFGATE",
-      "news": [
-        {
-          "url": "https://www.sfgate.com/news/article/reservoir-water-22522040.php",
-          "title": "US reservoir at crisis level adds 20 feet of water after storms",
-          "publisher": "SFGATE",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo3GbZKr4EBmlBrMNbvq8BQHzQud1-79BbExNnSpWZEOrtKo4UNC3G-7b5jNw"
-        },
-        {
-          "url": "https://kutv.com/news/local/lake-powells-rising-water-levels-buy-upper-basin-states-more-time",
-          "title": "Lake Powell's rising water levels buy Upper Basin states more time",
-          "publisher": "KUTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQs9G90DARkW_rOQkbKyxqSbtvb3S8hjd2Unj_DI_fNEx1LqkUBm1N7J_CrYZo"
-        },
-        {
-          "url": "https://news3lv.com/news/local/lake-mead-rises-after-storms-but-winter-snowpack-will-be-key-to-more-relief-lake-powell-colorado-river-water-conservation-drought",
-          "title": "Lake Mead rises after storms, but winter snowpack will be key to more relief",
-          "publisher": "KSNV",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCaxhHjlyl06uAqfEPopbGSkDjtKiuzLLcRfpeFPHTC4Kv_VHMJD409PrUimY"
         }
       ]
     }
