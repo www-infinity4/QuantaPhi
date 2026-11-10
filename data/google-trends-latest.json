@@ -3,9 +3,219 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T22:01:32.782015Z",
+  "checked_at": "2026-11-10T22:31:09.214354Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "naresh bhatt",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T22:10:00Z",
+      "related_news_urls": [
+        "https://www.wusa9.com/article/news/crime/naresh-bhatt-murder-trial/how-to-watch-naresh-bhatt-murder-trial-verdict-live-on-wusa9/65-22cae713-36f9-4b0f-b4e9-b0a2299cf341",
+        "https://wtop.com/virginia/2026/11/jury-deliberates-in-murder-trial-of-manassas-park-man-charged-with-killing-his-wife/",
+        "https://abc7chicago.com/post/naresh-bhatt-murder-trial-virginia-man-says-he-dismembered-missing-wife-mamta-kafle-bhats-body-2024/20029925/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwvJTWP_QjFyFsz-T2TEw4vUff3i-OJiHlSprOhD1r17mNw1n13Q2-FXjQPH0",
+      "image_credit": "WUSA9",
+      "news": [
+        {
+          "url": "https://www.wusa9.com/article/news/crime/naresh-bhatt-murder-trial/how-to-watch-naresh-bhatt-murder-trial-verdict-live-on-wusa9/65-22cae713-36f9-4b0f-b4e9-b0a2299cf341",
+          "title": "How to watch the Naresh Bhatt murder trial verdict live on WUSA9",
+          "publisher": "WUSA9",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwvJTWP_QjFyFsz-T2TEw4vUff3i-OJiHlSprOhD1r17mNw1n13Q2-FXjQPH0"
+        },
+        {
+          "url": "https://wtop.com/virginia/2026/11/jury-deliberates-in-murder-trial-of-manassas-park-man-charged-with-killing-his-wife/",
+          "title": "Jury deliberates in murder trial of Manassas Park man charged with killing, dismembering wife",
+          "publisher": "WTOP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYLIg9p2uMEj-lmYZr_zSJuByln1ZFWBT9Zx4_CMjvJaNTmf7XNMiQqzj03zc"
+        },
+        {
+          "url": "https://abc7chicago.com/post/naresh-bhatt-murder-trial-virginia-man-says-he-dismembered-missing-wife-mamta-kafle-bhats-body-2024/20029925/",
+          "title": "Naresh Bhatt murder trial: Virginia man says he dismembered missing wife Mamta Kafle Bhat's body in 2024",
+          "publisher": "ABC7 Chicago",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_5JQkiuAaztdj-75LCCAyrD8PDztsJ_w40A6UA4rsVaWXF4Yj6o1-eE6I3Ho"
+        }
+      ]
+    },
+    {
+      "query": "president trump",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T22:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/10/us/politics/biden-trump-letter.html",
+        "https://apnews.com/article/joe-biden-donald-trump-letter-memoir-d26a89a4e1d6fb1d0cf439bcc050daeb",
+        "https://www.thedailybeast.com/joe-biden-reveals-weird-trump-moment-that-left-him-speechless"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRo4M8lYZRZL83-O4V-dHJ7XooC8CkRoN7o9CJcnHvZC2P0fNSXta1DlcqjZnU",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/10/us/politics/biden-trump-letter.html",
+          "title": "‘I Know How Much You Love the American People,’ Trump Told Biden in 2021 Letter",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRo4M8lYZRZL83-O4V-dHJ7XooC8CkRoN7o9CJcnHvZC2P0fNSXta1DlcqjZnU"
+        },
+        {
+          "url": "https://apnews.com/article/joe-biden-donald-trump-letter-memoir-d26a89a4e1d6fb1d0cf439bcc050daeb",
+          "title": "A note to ‘46’: Donald Trump’s private message to Joe Biden emerges in new White House memoir",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS159go5v_ylrk9cFfm56tmY-xJZ08i1b4hEWvjzZ_Zjcc8D4Xy4uFpsUzJJcU"
+        },
+        {
+          "url": "https://www.thedailybeast.com/joe-biden-reveals-weird-trump-moment-that-left-him-speechless",
+          "title": "Joe Biden Reveals Weird Trump Moment That Left Him Speechless",
+          "publisher": "The Daily Beast",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCN1fD1GZpnI7haRYGMLdDqLq9uHJ_uClvsZMYvYiT0InXYgbJPZccI2ROJL8"
+        }
+      ]
+    },
+    {
+      "query": "inflación",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T22:00:00Z",
+      "related_news_urls": [
+        "https://www.expressnews.com/business/article/aumenta-inflaci-n-en-eeuu-indicio-de-que-alza-22522910.php",
+        "https://elpais.com/economia/2026-11-10/la-inflacion-se-modera-en-octubre-en-estados-unidos-por-el-abaratamiento-de-la-energia.html",
+        "https://cnnespanol.cnn.com/2026/11/10/economia/inflacion-estados-unidos-octubre-2026-trax"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-cpJ1216q5UJFKcWf9eMBMoVHyFEyb0fipuF-F4lS2Hbb7QT6VQV8M0sGW6I",
+      "image_credit": "San Antonio Express-News",
+      "news": [
+        {
+          "url": "https://www.expressnews.com/business/article/aumenta-inflaci-n-en-eeuu-indicio-de-que-alza-22522910.php",
+          "title": "Aumenta inflación en EEUU, indicio de que alza de precios sigue siendo un desafío",
+          "publisher": "San Antonio Express-News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-cpJ1216q5UJFKcWf9eMBMoVHyFEyb0fipuF-F4lS2Hbb7QT6VQV8M0sGW6I"
+        },
+        {
+          "url": "https://elpais.com/economia/2026-11-10/la-inflacion-se-modera-en-octubre-en-estados-unidos-por-el-abaratamiento-de-la-energia.html",
+          "title": "La inflación en Estados Unidos se modera en octubre menos de lo esperado y decepciona a los inversores",
+          "publisher": "EL PAÍS",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrE26JisQ2zgFh8T6CGC_kDC6Kbq-IJhXo84KznFJI_UKtfVn2PyS6mCl3tgQ"
+        },
+        {
+          "url": "https://cnnespanol.cnn.com/2026/11/10/economia/inflacion-estados-unidos-octubre-2026-trax",
+          "title": "La inflación en EE.UU. subió más de lo esperado el mes pasado",
+          "publisher": "CNN en Español",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRo8t1dytChY-cL_9tRKwjZTdUeo1_agklN9anxSsjbjO6MWsxnYm6gZSMZOhI"
+        }
+      ]
+    },
+    {
+      "query": "macrumors",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T22:00:00Z",
+      "related_news_urls": [
+        "https://www.macrumors.com/2026/11/10/apple-releases-airpods-firmware-9b47/",
+        "https://appleinsider.com/articles/26/11/10/new-airpods-firmware-has-been-released-by-apple",
+        "https://www.zdnet.com/tech/airpods-ios-27-features/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6DuVgwJLF3K1MlfRlRvRY6oJ0p_21n6Ac19CNDOCyciyn9KLsUFO4Z4ZhEY",
+      "image_credit": "MacRumors",
+      "news": [
+        {
+          "url": "https://www.macrumors.com/2026/11/10/apple-releases-airpods-firmware-9b47/",
+          "title": "Apple Releases New AirPods Firmware",
+          "publisher": "MacRumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6DuVgwJLF3K1MlfRlRvRY6oJ0p_21n6Ac19CNDOCyciyn9KLsUFO4Z4ZhEY"
+        },
+        {
+          "url": "https://appleinsider.com/articles/26/11/10/new-airpods-firmware-has-been-released-by-apple",
+          "title": "New AirPods firmware has been released by Apple",
+          "publisher": "AppleInsider",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIC0wrgwJ3LdN7j4-s-gGQQzw5PhG85HS6EEHiDOOdU5i6ZMmgxkPNxD_fH1k"
+        },
+        {
+          "url": "https://www.zdnet.com/tech/airpods-ios-27-features/",
+          "title": "Your AirPods got better in iOS 27 – three new ways I’m using them",
+          "publisher": "ZDNET",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEFcFrrG1Rgp0Fq-RwsuwQ-vhFKR5zTTo4QuyFFF8Xn-mYSNm6-SWmabzgPyk"
+        }
+      ]
+    },
+    {
+      "query": "oregon",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-10T21:50:00Z",
+      "related_news_urls": [
+        "https://www.foxweather.com/earth-space/magnitude-4-3-earthquake-rattles-wallowa-county-oregon-morning-moderate-shaking",
+        "https://kval.com/news/local/eugene-man-arrested-after-assaulting-9-year-old-playing-ding-dong-ditch",
+        "https://www.oregonlive.com/crime/2026/11/43-magnitude-earthquake-rattles-eastern-oregon-no-damage-reported.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSOwp7Woald8xqGoV-CJLy0jYFONZXj-CZlHv3hxbJNQPZ1M15irOI-LujwzY",
+      "image_credit": "FOX Weather",
+      "news": [
+        {
+          "url": "https://www.foxweather.com/earth-space/magnitude-4-3-earthquake-rattles-wallowa-county-oregon-morning-moderate-shaking",
+          "title": "Magnitude 4.3 earthquake rattles Oregon city with moderate shaking reported",
+          "publisher": "FOX Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSOwp7Woald8xqGoV-CJLy0jYFONZXj-CZlHv3hxbJNQPZ1M15irOI-LujwzY"
+        },
+        {
+          "url": "https://kval.com/news/local/eugene-man-arrested-after-assaulting-9-year-old-playing-ding-dong-ditch",
+          "title": "Eugene man arrested after assaulting 9-year-old playing ding-dong-ditch",
+          "publisher": "KVAL",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQ5tDt6RhCn7sHQNkQbhV-t1is3UOR9Y4w2PgpKhSoTpHJtOiqJ-Y5TFsr7RE"
+        },
+        {
+          "url": "https://www.oregonlive.com/crime/2026/11/43-magnitude-earthquake-rattles-eastern-oregon-no-damage-reported.html",
+          "title": "4.3 magnitude earthquake rattles eastern Oregon, no damage reported",
+          "publisher": "OregonLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJYEvR7be6VpS_KORZq_qNZcOHoIFHRKoVEoMbm3kLtZS4bU4XbsGiBAP57ak"
+        }
+      ]
+    },
+    {
+      "query": "pedro guerrero",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T21:50:00Z",
+      "related_news_urls": [
+        "https://www.mlb.com/news/pedro-guerrero-hired-as-dodgers-hitting-coach",
+        "https://www.mlbtraderumors.com/2026/11/dodgers-hire-pedro-guerrero-as-hitting-coach.html",
+        "https://sports.yahoo.com/articles/max-muncy-sounds-off-departure-210000480.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZBbs9WGTfr6L3xAazlmwXJohsaH3LsZsL1hNcJEj6sDnVRErnRtWhMlWadXw",
+      "image_credit": "MLB.com",
+      "news": [
+        {
+          "url": "https://www.mlb.com/news/pedro-guerrero-hired-as-dodgers-hitting-coach",
+          "title": "Dodgers hire Guerrero from Marlins to be hitting coach",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZBbs9WGTfr6L3xAazlmwXJohsaH3LsZsL1hNcJEj6sDnVRErnRtWhMlWadXw"
+        },
+        {
+          "url": "https://www.mlbtraderumors.com/2026/11/dodgers-hire-pedro-guerrero-as-hitting-coach.html",
+          "title": "Dodgers Hire Pedro Guerrero As Hitting Coach",
+          "publisher": "MLB Trade Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL2bKXlffIieBPzyT51_jQLbf5-AHpcefdI0OerkgDrdvI0fgVPyo288UBk50"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/max-muncy-sounds-off-departure-210000480.html",
+          "title": "Max Muncy Sounds Off on Departure of Dodgers Hitting Coach Aaron Bates",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdSSPil3VIaB6kQ9V-YEH91UyrGjPhMix7E-gymt141k_XTYj8ztV6La9Ht3A"
+        }
+      ]
+    },
     {
       "query": "the fall and rise of reggie dinkins",
       "approx_searches": "200+",
@@ -13,7 +223,7 @@
       "related_news_urls": [
         "https://www.avclub.com/the-fall-and-rise-of-reggie-dinkins-s2-e2-review",
         "https://www.indiewire.com/criticism/shows/the-fall-and-rise-of-reggie-dinkins-season-2-review-1235224563/",
-        "https://bleedingcool.com/tv/reggie-dinkins-star-jalyn-hall-on-carmelo-delilah-kodjoe-more/"
+        "https://www.givememyremote.com/remote/tag/the-fall-and-rise-of-reggie-dinkins-the-spaghetti-loop-cast/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8TmqcN3d_pGsnZjF4wizA7iJ89GZmqjUPb0LoqMZf-2Xg7hhFWuq2P9Xehkk",
       "image_credit": "A.V. Club",
@@ -33,33 +243,26 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1mg8SuVjmRfxmEcvAV4xmFJtg7a-tl4pl3bidMHrwWt4wswdUSsY0waOu6Ho"
         },
         {
-          "url": "https://bleedingcool.com/tv/reggie-dinkins-star-jalyn-hall-on-carmelo-delilah-kodjoe-more/",
-          "title": "Reggie Dinkins Star Jalyn Hall on Carmelo-Delilah, Kodjoe & More",
-          "publisher": "Bleeding Cool News",
+          "url": "https://www.givememyremote.com/remote/tag/the-fall-and-rise-of-reggie-dinkins-the-spaghetti-loop-cast/",
+          "title": "THE FALL AND RISE OF REGGIE DINKINS: 'The Spaghetti Loop' cast",
+          "publisher": "Give Me My Remote",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaoo05YkYQ2ncRa7T_bL2ZXNViLNXBZztpWNEKi49amRQaQsGnYbQ1IPAG0Bk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZmjFkzuuT-Sruy4mrME_yiQfpDfkjTrUW9Be57be7Vipua2k5qvf5YdZuuxY"
         }
       ]
     },
     {
       "query": "matvei michkov",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-10T21:30:00Z",
       "related_news_urls": [
-        "https://www.prohockeyrumors.com/2026/11/matvei-michkov-to-seek-trade-from-flyers.html",
         "https://bleacherreport.com/articles/25531874-flyers-matvei-michkov-reportedly-eyeing-trade-latest-nhl-rumors-amid-contract-year",
-        "https://dose.ca/2026/11/10/breaking-news-matvei-michkov-would-like-a-fresh-start-somewhere-other-than-philadelphia/"
+        "https://www.prohockeyrumors.com/2026/11/matvei-michkov-to-seek-trade-from-flyers.html",
+        "https://sports.yahoo.com/articles/early-reports-matvei-michkov-trade-151203603.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSNb6L5Pe73oMgByXsvr6UoQ1CY0fQ0Z2ByKx6x9e-_k5w8IsFMCnmunhUlQs",
-      "image_credit": "Pro Hockey Rumors",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREz8CfHPwpqvwLPp2IW6zPdrEtveyjUNzE7Yy0Fju6vJCb_tMIuDCb1OEli_Y",
+      "image_credit": "Bleacher Report",
       "news": [
-        {
-          "url": "https://www.prohockeyrumors.com/2026/11/matvei-michkov-to-seek-trade-from-flyers.html",
-          "title": "Matvei Michkov To Seek Trade From Flyers",
-          "publisher": "Pro Hockey Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSNb6L5Pe73oMgByXsvr6UoQ1CY0fQ0Z2ByKx6x9e-_k5w8IsFMCnmunhUlQs"
-        },
         {
           "url": "https://bleacherreport.com/articles/25531874-flyers-matvei-michkov-reportedly-eyeing-trade-latest-nhl-rumors-amid-contract-year",
           "title": "Flyers' Matvei Michkov Reportedly Eyeing Trade, Latest NHL Rumors amid Contract Year",
@@ -68,46 +271,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREz8CfHPwpqvwLPp2IW6zPdrEtveyjUNzE7Yy0Fju6vJCb_tMIuDCb1OEli_Y"
         },
         {
-          "url": "https://dose.ca/2026/11/10/breaking-news-matvei-michkov-would-like-a-fresh-start-somewhere-other-than-philadelphia/",
-          "title": "BREAKING NEWS: Matvei Michkov would like a fresh start (somewhere other than Philadelphia)",
-          "publisher": "Dose.ca",
+          "url": "https://www.prohockeyrumors.com/2026/11/matvei-michkov-to-seek-trade-from-flyers.html",
+          "title": "Matvei Michkov To Seek Trade From Flyers",
+          "publisher": "Pro Hockey Rumors",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRCEg9wlcbT6Pebp8QkL6pGTmHsuw1cG3UESTE02myY2_cifMdXz2M7txkfSc"
-        }
-      ]
-    },
-    {
-      "query": "soldier",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T21:30:00Z",
-      "related_news_urls": [
-        "https://www.washingtonpost.com/world/2026/11/10/us-army-officer-arrested-uk-suspicion-trying-steal-secrets-russia/",
-        "https://www.cnn.com/2026/11/10/uk/us-army-soldier-arrested-uk-alleged-espionage-russia",
-        "https://www.theguardian.com/uk-news/2026/nov/10/uk-counter-terrorism-police-arrest-member-of-us-army-in-gloucestershire"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjeQ7RurbkRxwwVS3Uc3pKcVJCtaOHunVrI5qRyOogAXU77CwmnYFz7QM070I",
-      "image_credit": "The Washington Post",
-      "news": [
-        {
-          "url": "https://www.washingtonpost.com/world/2026/11/10/us-army-officer-arrested-uk-suspicion-trying-steal-secrets-russia/",
-          "title": "U.S. Army officer arrested in U.K. on suspicion of trying to steal secrets for Russia",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjeQ7RurbkRxwwVS3Uc3pKcVJCtaOHunVrI5qRyOogAXU77CwmnYFz7QM070I"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSNb6L5Pe73oMgByXsvr6UoQ1CY0fQ0Z2ByKx6x9e-_k5w8IsFMCnmunhUlQs"
         },
         {
-          "url": "https://www.cnn.com/2026/11/10/uk/us-army-soldier-arrested-uk-alleged-espionage-russia",
-          "title": "US Army soldier arrested in UK on suspicion of espionage related to Russia",
-          "publisher": "CNN",
+          "url": "https://sports.yahoo.com/articles/early-reports-matvei-michkov-trade-151203603.html",
+          "title": "Early reports of a Matvei Michkov trade to Minnesota after last night's blow up",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLoWuqJCtGkBz8f-6XqgUktwPPrTYrtek5PFB-8yUFvDtrEjbRlZR6WUwL-jc"
-        },
-        {
-          "url": "https://www.theguardian.com/uk-news/2026/nov/10/uk-counter-terrorism-police-arrest-member-of-us-army-in-gloucestershire",
-          "title": "UK counter-terrorism police arrest senior US soldier with alleged links to Russia",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTi-saNETql91rhipT7bLcFNoHatidIVbEEhcKvao6mCgyIK5AoTlY_pU7s44E"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQljDBnQo9V9a1spmATfI9Pr4UGlXHTPq0lT6n2V0JEzURCxSxXnpQXBGjbUdM"
         }
       ]
     },
@@ -117,8 +292,8 @@
       "published_at": "2026-11-10T21:30:00Z",
       "related_news_urls": [
         "https://www.cnbc.com/2026/11/10/trump-cspan-call-elections.html",
-        "https://www.newsweek.com/mysterious-woman-giggles-during-trumps-surprise-call-with-cspan-12692402",
-        "https://rollcall.com/factbase/trump/transcript/donald-trump-interview-mimi-geerges-c-span-washington-journal-november-9-2026/"
+        "https://thehill.com/homenews/administration/6210232-donald-trump-immigration-hegseth-impeachment-cspan-show/",
+        "https://www.newsweek.com/mysterious-woman-giggles-during-trumps-surprise-call-with-cspan-12692402"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2KhAuXnQdlVjZQO2rYIbwLqiDs281b8bieTS7nnJP7GaKMX1-EBN3CVzeE_M",
       "image_credit": "CNBC",
@@ -131,228 +306,53 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2KhAuXnQdlVjZQO2rYIbwLqiDs281b8bieTS7nnJP7GaKMX1-EBN3CVzeE_M"
         },
         {
+          "url": "https://thehill.com/homenews/administration/6210232-donald-trump-immigration-hegseth-impeachment-cspan-show/",
+          "title": "Trump calls into premiere of C-SPAN’s new nighttime show",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsnVUS5gmNih_dT2l5z5J6JPPY0XgYH5P1Q5en_zN_ixQevQP0cz4kaLiphzY"
+        },
+        {
           "url": "https://www.newsweek.com/mysterious-woman-giggles-during-trumps-surprise-call-with-cspan-12692402",
           "title": "Mysterious Woman Giggles During Trump’s Surprise Call With CSPAN",
           "publisher": "Newsweek",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_7HEviCjGcBQv3kiECKQviFGQt8atCGIUfEvB62msbMPYesMEMEd7RTHrxLs"
-        },
-        {
-          "url": "https://rollcall.com/factbase/trump/transcript/donald-trump-interview-mimi-geerges-c-span-washington-journal-november-9-2026/",
-          "title": "Interview: Donald Trump Calls In for an Interview on C-SPAN's Washington Journal - November 9, 2026",
-          "publisher": "Roll Call",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkWznSSoeXjgnYcn-7GXv8yCl6sGWGGVoJlUs8H6B9gJnt5gqb8T3HFIJd67Y"
         }
       ]
     },
     {
-      "query": "dolphins schedule",
-      "approx_searches": "500+",
+      "query": "soldier",
+      "approx_searches": "1000+",
       "published_at": "2026-11-10T21:30:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50443653/source-dolphins-captain-zach-sieler-rest-season",
-        "https://www.miamidolphins.com/news/dolphins-make-roster-moves-x8063",
-        "https://www.miamiherald.com/sports/nfl/miami-dolphins/article317803979.html"
+        "https://www.washingtonpost.com/world/2026/11/10/us-army-officer-arrested-uk-suspicion-trying-steal-secrets-russia/",
+        "https://www.wfla.com/news/national/us-soldier-assigned-to-nato-unit-arrested-in-britain-on-suspicion-of-espionage-linked-to-russia/",
+        "https://www.cnn.com/2026/11/10/uk/us-army-soldier-arrested-uk-alleged-espionage-russia"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-kB-G6JOR0wJHRIZhvF_4Kj64o6iRLVmZTPAuLwQ-EDD8A5NJVnGAvcgBvCg",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjeQ7RurbkRxwwVS3Uc3pKcVJCtaOHunVrI5qRyOogAXU77CwmnYFz7QM070I",
+      "image_credit": "The Washington Post",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50443653/source-dolphins-captain-zach-sieler-rest-season",
-          "title": "Source: Dolphins captain Zach Sieler out for rest of season with ruptured biceps",
-          "publisher": "ESPN",
+          "url": "https://www.washingtonpost.com/world/2026/11/10/us-army-officer-arrested-uk-suspicion-trying-steal-secrets-russia/",
+          "title": "U.S. Army officer arrested in U.K. on suspicion of trying to steal secrets for Russia",
+          "publisher": "The Washington Post",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-kB-G6JOR0wJHRIZhvF_4Kj64o6iRLVmZTPAuLwQ-EDD8A5NJVnGAvcgBvCg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjeQ7RurbkRxwwVS3Uc3pKcVJCtaOHunVrI5qRyOogAXU77CwmnYFz7QM070I"
         },
         {
-          "url": "https://www.miamidolphins.com/news/dolphins-make-roster-moves-x8063",
-          "title": "Dolphins make roster moves",
-          "publisher": "Miami Dolphins",
+          "url": "https://www.wfla.com/news/national/us-soldier-assigned-to-nato-unit-arrested-in-britain-on-suspicion-of-espionage-linked-to-russia/",
+          "title": "US soldier assigned to NATO unit arrested in Britain on suspicion of espionage linked to Russia",
+          "publisher": "WFLA",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_SFMwUE0DBwTokCDV-JF8Ne_u1-u65gdB3neXYz-u5r7PKhQQ7SzIC5cuVDQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSc7XvAHuILpQZ63VbVartf8sGkWGbkXx5jwHMAtHT5MV3HAt_YCkvzC5z9vtE"
         },
         {
-          "url": "https://www.miamiherald.com/sports/nfl/miami-dolphins/article317803979.html",
-          "title": "Dolphins’ Sieler out for year with biceps injury",
-          "publisher": "Miami Herald",
+          "url": "https://www.cnn.com/2026/11/10/uk/us-army-soldier-arrested-uk-alleged-espionage-russia",
+          "title": "US Army soldier arrested in UK on suspicion of espionage related to Russia",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsvPyWLNRWx5LD_7j0rPeeWbroynalvwI5DOL4JjWLRPnxyvGGggDNM7CVG2M"
-        }
-      ]
-    },
-    {
-      "query": "xavier smith",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-10T21:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50435879/rams-nacua-likely-hit-ir-mcl-pcl-sprain-turf-toe",
-        "https://www.cbssports.com/fantasy/football/news/puka-nacua-injury-fallout-no-replacing-a-fantasy-unicorn/",
-        "https://www.nfl.com/news/rams-wr-puka-nacua-likely-to-be-placed-on-injured-reserve-with-turf-toe-sprained-mcl-and-pcl"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgljrxRk3HfRtqHZ7xkf8tC9rrI8N5nmGL8qEkw1cGmQcuPl2ZRHvPUCWR2bo",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50435879/rams-nacua-likely-hit-ir-mcl-pcl-sprain-turf-toe",
-          "title": "Rams' Nacua likely to hit IR with MCL, PCL sprain, turf toe",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgljrxRk3HfRtqHZ7xkf8tC9rrI8N5nmGL8qEkw1cGmQcuPl2ZRHvPUCWR2bo"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/puka-nacua-injury-fallout-no-replacing-a-fantasy-unicorn/",
-          "title": "Puka Nacua injury fallout: No replacing a Fantasy unicorn, but these trade and waiver WRs can soften the blow",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSODSShStwjycAbWqdL6mSvtSPH-QerSP7UMxk2_84Sp7n2V-k6EPp-HiJOArg"
-        },
-        {
-          "url": "https://www.nfl.com/news/rams-wr-puka-nacua-likely-to-be-placed-on-injured-reserve-with-turf-toe-sprained-mcl-and-pcl",
-          "title": "Rams WR Puka Nacua likely to be placed on injured reserve with turf toe, sprained MCL and PCL",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ144L8dftQEMz2ysJ70GljGDgQjvWI2BYu53uzUyGkBtQTs5astZFVwLlt_nw"
-        }
-      ]
-    },
-    {
-      "query": "jaylen brown stats",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T21:20:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/nba/news/re-grading-jaylen-brown-paul-george-trade-celtics-76ers/",
-        "https://www.inquirer.com/sixers/76ers-jaylen-brown-jayson-tatum-boston-celtics-vj-edgecombe-lebron-james-20261110.html",
-        "https://www.libertyballers.com/76ers-analysis/101467/re-grading-sixers-trade-for-jaylen-brown-ahead-of-first-celtics-game-paul-george"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTatWCrlYQ76qYwIJp61ZUPyGBrQTO71Vze3L7UL5zUCEujwmSuJluJsVXkrpY",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/nba/news/re-grading-jaylen-brown-paul-george-trade-celtics-76ers/",
-          "title": "Re-grading the Jaylen Brown-Paul George trade: Celtics' grade has greatly improved, 76ers' mark stays perfect",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTatWCrlYQ76qYwIJp61ZUPyGBrQTO71Vze3L7UL5zUCEujwmSuJluJsVXkrpY"
-        },
-        {
-          "url": "https://www.inquirer.com/sixers/76ers-jaylen-brown-jayson-tatum-boston-celtics-vj-edgecombe-lebron-james-20261110.html",
-          "title": "Jaylen Brown was traded in part because of his advanced stats. These numbers show his worth to the Sixers so far.",
-          "publisher": "Inquirer.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSghavVBvb8AOxSM7LOWukmbvLn4LzyxgVCbY0TcYyy5q4yzXv64pTrrr1aMa4"
-        },
-        {
-          "url": "https://www.libertyballers.com/76ers-analysis/101467/re-grading-sixers-trade-for-jaylen-brown-ahead-of-first-celtics-game-paul-george",
-          "title": "Re-grading the Sixers’ trade for Jaylen Brown ahead of first Celtics game",
-          "publisher": "Liberty Ballers",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9vbIYSRJuRw0Xk9QT07jd5aOUIYR_Ls3PlLt4QsKLkp1FhzW1y1O3M3HnGqA"
-        }
-      ]
-    },
-    {
-      "query": "maria bartiromo",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T21:20:00Z",
-      "related_news_urls": [
-        "https://www.crainsnewyork.com/real-estate/residential/cny-maria-bartiromo-sells-upper-east-townhouse-20261110/",
-        "https://www.imdb.com/it/news/ni66032958/",
-        "https://www.imdb.com/it/news/ni66032782/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpJRkK81DU0CKJwrj8LngnmkYyvRTmmntqbIHy2gThF8z2U8OXNzhCOw3HkS8",
-      "image_credit": "Crain's New York Business",
-      "news": [
-        {
-          "url": "https://www.crainsnewyork.com/real-estate/residential/cny-maria-bartiromo-sells-upper-east-townhouse-20261110/",
-          "title": "Ousted Fox anchor Maria Bartiromo sells Manhattan townhouse",
-          "publisher": "Crain's New York Business",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpJRkK81DU0CKJwrj8LngnmkYyvRTmmntqbIHy2gThF8z2U8OXNzhCOw3HkS8"
-        },
-        {
-          "url": "https://www.imdb.com/it/news/ni66032958/",
-          "title": "Larry Kudlow Takes Over Maria Bartiromo’s Sunday Fox News Slot Through Midterms",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOppy6EDFK08uvUtBo1MN1S2oAW4U9KrLftWO9ANT9-f4gpRM9-wciymPkpX0"
-        },
-        {
-          "url": "https://www.imdb.com/it/news/ni66032782/",
-          "title": "Fox News Assigns Larry Kudlow to Anchor Maria Bartiromo’s ‘Sunday Morning Futures’ Through Midterms",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7zA5LU9JN6fWtLLv3O66-ojfaWdqYwDXlgjTDKjTSEzkMNzl0haX9kowceNk"
-        }
-      ]
-    },
-    {
-      "query": "strait of hormuz news",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T21:20:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/business/energy/tankers-continue-burn-middle-east-despite-hopes-de-escalation-2026-11-10/",
-        "https://www.aljazeera.com/video/newsfeed/2026/11/9/irgc-strikes-three-tankers-near-hormuz-over-us",
-        "https://www.timesofisrael.com/liveblog_entry/irans-top-security-official-says-us-should-stop-manufacturing-fake-news-about-imaginary-talks/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTv5cm_h1G-oa93Ba5seBP83MirAOYbgZyOY0aXu_eTOx0gN0mS_tJNi4wWydU",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/business/energy/tankers-continue-burn-middle-east-despite-hopes-de-escalation-2026-11-10/",
-          "title": "Tankers continue to burn in the Middle East despite hopes for de-escalation",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTv5cm_h1G-oa93Ba5seBP83MirAOYbgZyOY0aXu_eTOx0gN0mS_tJNi4wWydU"
-        },
-        {
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/irgc-strikes-three-tankers-near-hormuz-over-us",
-          "title": "IRGC strikes three tankers near Hormuz over ‘US links’",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRL2RGhxKmpIvPQtdKwrVK6m5_iodVvjbViG6gD9bOvxYzPSNkRIFGWWWkKreQ"
-        },
-        {
-          "url": "https://www.timesofisrael.com/liveblog_entry/irans-top-security-official-says-us-should-stop-manufacturing-fake-news-about-imaginary-talks/",
-          "title": "Iran's top security official says US should stop manufacturing 'fake news about imaginary talks'",
-          "publisher": "The Times of Israel",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_EI9XhYIlIlGZxpUOrk1zDbD3qOxiWy-qW0eOR3bfxCvRXeJLoS348ZL3mPY"
-        }
-      ]
-    },
-    {
-      "query": "jobe cerny",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T21:20:00Z",
-      "related_news_urls": [
-        "https://www.strangfuneral.org/obituaries/jobe-cerny?ttm_pid=212765924&ttm_affiliate=legacypro&ttm_affiliatetype=standard&ttm_campaign=legacy",
-        "https://www.hollywoodreporter.com/tv/tv-news/jobe-cerny-dead-pillsbury-doughboy-word-of-promise-1236752126/",
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/jobe-cerny-pillsbury-doughboy-voice-211009120.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAo_enL8ZvzImmWdUxgaCr8pLcqdStziIEKsasg2RgLvfBvJFeLSYej9K7oKQ",
-      "image_credit": "Strang Funeral Chapel & Crematorium, Ltd",
-      "news": [
-        {
-          "url": "https://www.strangfuneral.org/obituaries/jobe-cerny?ttm_pid=212765924&ttm_affiliate=legacypro&ttm_affiliatetype=standard&ttm_campaign=legacy",
-          "title": "JoBe Cerny Obituary Oct 30, 2026",
-          "publisher": "Strang Funeral Chapel & Crematorium, Ltd",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAo_enL8ZvzImmWdUxgaCr8pLcqdStziIEKsasg2RgLvfBvJFeLSYej9K7oKQ"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/tv/tv-news/jobe-cerny-dead-pillsbury-doughboy-word-of-promise-1236752126/",
-          "title": "JoBe Cerny, Actor, Director and Voice of the Pillsbury Doughboy, Dies at 78",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjjZw1yPdK7SCPIda10vICUvlNWllKxznVhd1AqKJSwQzuJFX8duWo1tg-gu8"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/jobe-cerny-pillsbury-doughboy-voice-211009120.html",
-          "title": "JoBe Cerny, Pillsbury Doughboy Voice Actor, Dead at 78 Following Battle With Alzheimer’s Disease",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRs5e-xCHtccg3dT9Wsm1loa_tAxArRMGltYYJCAwxbX_TA-_X9zisqEy6czso"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLoWuqJCtGkBz8f-6XqgUktwPPrTYrtek5PFB-8yUFvDtrEjbRlZR6WUwL-jc"
         }
       ]
     }
