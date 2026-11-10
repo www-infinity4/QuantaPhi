@@ -3,41 +3,146 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T14:31:33.444042Z",
+  "checked_at": "2026-11-10T15:01:22.770355Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "cloud gaming",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T14:10:00Z",
+      "query": "ayesha curry",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T14:30:00Z",
       "related_news_urls": [
-        "https://www.vgchartz.com/article/469593/shawn-layden-innovation-needs-to-come-not-from-making-ps6-for-1200-its-to-make-another-ps5-for-300/",
-        "https://wccftech.com/playstation-6-more-teraflops-mistake-playstation-portal-cloud-gaming-solution/",
-        "https://www.indy100.com/gaming/ps6-live-release-date-price-updates"
+        "https://nypost.com/2026/11/05/sports/steph-curry-wife-ayesha-viral-kissing-scene/",
+        "https://timesofindia.indiatimes.com/sports/nba/top-stories/i-didnt-want-kids-or-marriage-stephen-currys-wife-ayesha-currys-comments-about-their-marriage-resurface-as-her-new-movie-sparks-a-heated-debate/articleshow/135615769.cms",
+        "https://www.hotnewhiphop.com/1016214-gilbert-arenas-ayesha-curry-comments-second-chance-holiday"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc5kNGnn78WCDsNqHPKhH4xN2xE_7AXkOW2DV7LClNSbucvq2V7QmWAsH8hw",
-      "image_credit": "VGChartz",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5NVDsW5qadvxSA_Ruj4argC6a32erqYrL0ed4wRkgtZE7tyAO8U2n7fQoSmk",
+      "image_credit": "New York Post",
       "news": [
         {
-          "url": "https://www.vgchartz.com/article/469593/shawn-layden-innovation-needs-to-come-not-from-making-ps6-for-1200-its-to-make-another-ps5-for-300/",
-          "title": "Shawn Layden: 'Innovation Needs to Come Not From Making PS6 for $1,200, It's to Make Another PS5 for $300'",
-          "publisher": "VGChartz",
+          "url": "https://nypost.com/2026/11/05/sports/steph-curry-wife-ayesha-viral-kissing-scene/",
+          "title": "Steph Curry’s post after wife Ayesha’s viral kissing scene speaks volumes",
+          "publisher": "New York Post",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc5kNGnn78WCDsNqHPKhH4xN2xE_7AXkOW2DV7LClNSbucvq2V7QmWAsH8hw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5NVDsW5qadvxSA_Ruj4argC6a32erqYrL0ed4wRkgtZE7tyAO8U2n7fQoSmk"
         },
         {
-          "url": "https://wccftech.com/playstation-6-more-teraflops-mistake-playstation-portal-cloud-gaming-solution/",
-          "title": "A PlayStation 6 At $1000+ With Just More “Teraflops” Could Be A Mistake, Yet The PlayStation Portal and Cloud Gaming Present The Solution",
-          "publisher": "Wccftech",
+          "url": "https://timesofindia.indiatimes.com/sports/nba/top-stories/i-didnt-want-kids-or-marriage-stephen-currys-wife-ayesha-currys-comments-about-their-marriage-resurface-as-her-new-movie-sparks-a-heated-debate/articleshow/135615769.cms",
+          "title": "“I didn’t want kids or marriage”: Stephen Curry’s wife Ayesha Curry’s comments about their marriage resur",
+          "publisher": "The Times of India",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxEhYA8YFhPGcu_7TRh9PqpTaeR19J2-iXB6r-rbBQFL0xxmzUcjGj2qVy1Hk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlbGSkjP_k8EuAPyHm_-YI4RKTJ5Wv_C-0LGfgCGmp0AXysafUxWIbku1iY60"
         },
         {
-          "url": "https://www.indy100.com/gaming/ps6-live-release-date-price-updates",
-          "title": "PS6 LIVE: Cheaper next-gen console should be priority says former PlayStation boss",
-          "publisher": "Indy100",
+          "url": "https://www.hotnewhiphop.com/1016214-gilbert-arenas-ayesha-curry-comments-second-chance-holiday",
+          "title": "Gilbert Arenas Makes Disrespectful Comments About Ayesha Curry Amid Roku Movie Criticism",
+          "publisher": "HotNewHipHop",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3K4yPezlv-RO7yd34k8pn1ZKz8qkS8Ji0w2I6g5CkofTH7It_MJzpT_I5nHc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRESKaWEgLztHCzZA40651NUWv5msx_12kFw4Sy0dK2MkLpLDiznjaDrLgAxu8"
+        }
+      ]
+    },
+    {
+      "query": "adam schefter",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T14:20:00Z",
+      "related_news_urls": [
+        "https://www.9news.com/article/sports/nfl/denver-broncos/mike-klis/denver-bronco-notes-reasons-for-and-against-making-a-trade-mike-klis-insider/73-569edad2-a1f4-4cd0-9a12-aa703ddd967f",
+        "https://sports.yahoo.com/articles/broncos-trade-pitch-swaps-draft-132508955.html",
+        "https://www.denverpost.com/2026/11/09/broncos-analysis-parker-gabriel-7-thoughts-trade-deadline-jonah-coleman-ja-quan-mcmillian-extension/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdtVqWAHUC8b26WFa_uB-5lYodtVV2UkWmgSJvjUC-DAWTpgWuTXqo7bwntQU",
+      "image_credit": "9News",
+      "news": [
+        {
+          "url": "https://www.9news.com/article/sports/nfl/denver-broncos/mike-klis/denver-bronco-notes-reasons-for-and-against-making-a-trade-mike-klis-insider/73-569edad2-a1f4-4cd0-9a12-aa703ddd967f",
+          "title": "Bronco notes: Reasons for and against making a trade",
+          "publisher": "9News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdtVqWAHUC8b26WFa_uB-5lYodtVV2UkWmgSJvjUC-DAWTpgWuTXqo7bwntQU"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/broncos-trade-pitch-swaps-draft-132508955.html",
+          "title": "Broncos Trade Pitch Swaps Draft Pick for 1,000-Yard RB",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxnA7zD0Et3sfoQAlv4LczM56vQXVtCRgG0xxJfIft9Llw7e26iWdIDxyFeE8"
+        },
+        {
+          "url": "https://www.denverpost.com/2026/11/09/broncos-analysis-parker-gabriel-7-thoughts-trade-deadline-jonah-coleman-ja-quan-mcmillian-extension/",
+          "title": "Parker Gabriel’s 7 Thoughts after Broncos survive Carolina: Sizing up the trade deadline and Denver’s status going into bye week",
+          "publisher": "The Denver Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSC5KUKbVM8rvXOc9rFiRmfnGy_L_IbSvaTIHtqCGyO1y67tdQvpYbyS-33UIs"
+        }
+      ]
+    },
+    {
+      "query": "mississippi senate race election results",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-10T14:10:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/09/politics/mississippi-senate-hyde-smith-colom-campaign",
+        "https://www.clarionledger.com/story/news/politics/elections/2026/11/10/hyde-smith-vs-colom-when-will-we-know-who-won-senate-race-in-mississippi/92699345007/",
+        "https://apnews.com/projects/elections-2026/mississippi-us-senate-results/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrH_TQ9MXsgyjWpDxOnFK9hS3QTr_ve10V3pfDu8fXAzzYPwsfezyAeWnmXyM",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/09/politics/mississippi-senate-hyde-smith-colom-campaign",
+          "title": "‘Where is Cindy Hyde-Smith?’: In a nail-biter Senate race, the incumbent stays out of view in Mississippi",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrH_TQ9MXsgyjWpDxOnFK9hS3QTr_ve10V3pfDu8fXAzzYPwsfezyAeWnmXyM"
+        },
+        {
+          "url": "https://www.clarionledger.com/story/news/politics/elections/2026/11/10/hyde-smith-vs-colom-when-will-we-know-who-won-senate-race-in-mississippi/92699345007/",
+          "title": "When will Mississippi know who won US Senate race? Key deadlines today",
+          "publisher": "The Clarion-Ledger",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQap4UGJdMWlC82-Bbbbw3tHMH8lFOElYjaKsUVJpNV6KYamTylJmmjMtlJZ04"
+        },
+        {
+          "url": "https://apnews.com/projects/elections-2026/mississippi-us-senate-results/",
+          "title": "Mississippi U.S. Senate Election Live Results 2026",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9oEasnTDRUr2q-TjRibhJWnth8kxzHe5jfe3GfDfY-gXR0YEwlFWtnaG6Fng"
+        }
+      ]
+    },
+    {
+      "query": "cloud gaming",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T14:10:00Z",
+      "related_news_urls": [
+        "https://www.rockpapershotgun.com/its-a-brave-new-world-gta-6s-pc-port-will-release-sooner-than-you-think-to-avoid-losing-money-to-ai-rip-offs-says-former-rockstar-tech-director",
+        "https://www.theverge.com/news/1030714/gta-vi-xbox-cloud-gaming-support",
+        "https://arstechnica.com/gaming/2026/11/could-potential-ai-clones-of-gta-vi-force-a-quicker-official-port/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIcSYiQp4LCYT2ET2e2PNDwT7JGsG2yuo5smKwTSnJ0UvYg-ilMsAJDecmJC8",
+      "image_credit": "Rock Paper Shotgun",
+      "news": [
+        {
+          "url": "https://www.rockpapershotgun.com/its-a-brave-new-world-gta-6s-pc-port-will-release-sooner-than-you-think-to-avoid-losing-money-to-ai-rip-offs-says-former-rockstar-tech-director",
+          "title": "\"It's a brave new world\": GTA 6's PC port will release sooner than you think to avoid losing money to AI rip-offs, says former Rockstar tech director",
+          "publisher": "Rock Paper Shotgun",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIcSYiQp4LCYT2ET2e2PNDwT7JGsG2yuo5smKwTSnJ0UvYg-ilMsAJDecmJC8"
+        },
+        {
+          "url": "https://www.theverge.com/news/1030714/gta-vi-xbox-cloud-gaming-support",
+          "title": "GTA VI will be available on Xbox Cloud Gaming for Xbox One consoles",
+          "publisher": "The Verge",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMklF1Y8DtTPlldT2JHPAYQFF4bWcTvfsYs9pvnGd4EqxkHKPBZhY7ASI58TU"
+        },
+        {
+          "url": "https://arstechnica.com/gaming/2026/11/could-potential-ai-clones-of-gta-vi-force-a-quicker-official-port/",
+          "title": "Could potential AI clones of GTA VI force a quicker official port?",
+          "publisher": "Ars Technica",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtBbq1-zllBJdA1YQzjB0uI7SnInGhfpQi_PxkP9CW0NdFqnUihg6dQmwvPvA"
         }
       ]
     },
@@ -83,7 +188,7 @@
       "related_news_urls": [
         "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-dt-jordan-elliott-to-work-out-for-bears",
         "https://sports.yahoo.com/articles/bears-working-jeffery-simmons-former-141026483.html",
-        "https://www.chicitysports.com/chicago-bears-interested-signing-jeffery-simmons-former-teammate/"
+        "https://roundtable.io/sports/nfl/titans/players/former-titans-dl-jordan-elliott-getting-second-chance-in-the-nfl"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRw7Y6P212sul0eeqgJq2mBHlc_K-nMhn87T7YKiAUsiGYy92_MammTsAwxqjs",
       "image_credit": "NBC Sports",
@@ -103,11 +208,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPXVIIQLUU5w4cxY2wAZgFG_Od5vga1GmgpGEY4na4wUTqhFAIS0kMlzSutkw"
         },
         {
-          "url": "https://www.chicitysports.com/chicago-bears-interested-signing-jeffery-simmons-former-teammate/",
-          "title": "Chicago Bears interested signing Jeffery Simmons’ former teammate",
-          "publisher": "ChiCitySports",
+          "url": "https://roundtable.io/sports/nfl/titans/players/former-titans-dl-jordan-elliott-getting-second-chance-in-the-nfl",
+          "title": "Former Titans DL Jordan Elliott Getting Second Chance in the NFL",
+          "publisher": "roundtable.io",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKegHJx0mzBUXQxPy90OMfbPDVwGGHV7JAX1vTwRlWTJihZW54lr-auXk0LxI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2XK01FNBjhwo8M8Qf-fNL7iArMDyU_PgASXpBsRfLiPsDARO709SKGgeKDZI"
         }
       ]
     },
@@ -147,78 +252,43 @@
       ]
     },
     {
-      "query": "inflation report today",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T13:50:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/09/stock-market-today-live-updates.html",
-        "https://www.investors.com/news/cpi-inflation-oct-federal-reserve-waller-sp-500/",
-        "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQQsAhLIbfuG2srB2fo5DI5VJSS3wTVnzNhrDtCubgTaaCGSnaICVFD7F5k9I",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/09/stock-market-today-live-updates.html",
-          "title": "S&P 500 futures drop after higher-than-expected CPI reignites inflation concern: Live updates",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQQsAhLIbfuG2srB2fo5DI5VJSS3wTVnzNhrDtCubgTaaCGSnaICVFD7F5k9I"
-        },
-        {
-          "url": "https://www.investors.com/news/cpi-inflation-oct-federal-reserve-waller-sp-500/",
-          "title": "CPI Inflation Stays Hot, Sealing Fed Rate Hike After Hawkish Waller; S&P 500 Falls (Live Coverage)",
-          "publisher": "Investor's Business Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcoo0RkupIVRei04z6AtET5m_w-WIvDoM_mJmMerZN_T5qxPe4BA5MoyjRzd4"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html",
-          "title": "Stock market today: S&P 500 and Nasdaq futures sink, Dow wavers after CPI data, new Anthropic IPO filing",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSl3GeXPUjKTUyP4bx6soicbiRKoi-JByFNT4Y1E2bchxuPSrH8oR8YiMK2Qb0"
-        }
-      ]
-    },
-    {
       "query": "country music singer dies",
-      "approx_searches": "5000+",
+      "approx_searches": "10000+",
       "published_at": "2026-11-10T13:40:00Z",
       "related_news_urls": [
-        "https://www.pennlive.com/entertainment/2026/11/rising-country-music-singer-dies-in-wreck-at-22-the-world-lost-an-amazing-talent.html",
-        "https://www.lehighvalleylive.com/entertainment/2026/11/father-of-young-country-music-singer-killed-in-crash-makes-plea-in-memory-of-my-son.html",
-        "https://americansongwriter.com/rising-country-singer-dead-at-22-after-tragic-car-crash-just-hours-after-his-final-performance/"
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/father-young-country-music-singer-130100524.html",
+        "https://www.wtxl.com/news/local-news/in-your-neighborhood/wakulla-county/wakulla-county-musician-c-j-beach-dies-in-a-weekend-car-accident-leaving-the-music-community-in-mourning",
+        "https://pagesix.com/2026/11/09/celebrity-news/promising-country-music-star-dies-at-just-22-after-devastating-car-crash/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUa3pdNhr2syQK-9GUnteQgm-d1apnZ47KZFDRWd9BMTj7g2SfgDqa8B8C9d0",
-      "image_credit": "PennLive.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQi0Lo-9Y90ic0YnLqwxUBpRaUi8z5cjyI0VXcivuL_mgqbupzrhv8kIzgQgYE",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.pennlive.com/entertainment/2026/11/rising-country-music-singer-dies-in-wreck-at-22-the-world-lost-an-amazing-talent.html",
-          "title": "Rising country music singer dies in wreck at 22: ‘The world lost an amazing talent’",
-          "publisher": "PennLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUa3pdNhr2syQK-9GUnteQgm-d1apnZ47KZFDRWd9BMTj7g2SfgDqa8B8C9d0"
-        },
-        {
-          "url": "https://www.lehighvalleylive.com/entertainment/2026/11/father-of-young-country-music-singer-killed-in-crash-makes-plea-in-memory-of-my-son.html",
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/father-young-country-music-singer-130100524.html",
           "title": "Father of young country music singer killed in crash makes plea: ‘In memory of my son’",
-          "publisher": "Lehighvalleylive.com",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUUZ-ovfJxyxtJfqv87JOXKVz7ORzPNd8GOMToxqrs456wCQptKzAwNzuIoLU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQi0Lo-9Y90ic0YnLqwxUBpRaUi8z5cjyI0VXcivuL_mgqbupzrhv8kIzgQgYE"
         },
         {
-          "url": "https://americansongwriter.com/rising-country-singer-dead-at-22-after-tragic-car-crash-just-hours-after-his-final-performance/",
-          "title": "Rising Country Singer Dead at 22 After Tragic Car Crash, Just Hours After His Final Performance",
-          "publisher": "American Songwriter",
+          "url": "https://www.wtxl.com/news/local-news/in-your-neighborhood/wakulla-county/wakulla-county-musician-c-j-beach-dies-in-a-weekend-car-accident-leaving-the-music-community-in-mourning",
+          "title": "Wakulla County musician C.J. Beach dies in a weekend car accident, leaving the music community in mourning",
+          "publisher": "WTXL ABC 27 Tallahassee News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRE7DqwXsGeik5B2v0dpf2z9e5yaq9nB2gPBOoarYdr-aLNoFUCBALrPz4U8CE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4n__XY5-z9VvFnNwe0eAKIpbRr9ULD3Gj43E7Me_KeJrICqXKUATZCQQcsq0"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/09/celebrity-news/promising-country-music-star-dies-at-just-22-after-devastating-car-crash/",
+          "title": "Promising country music star dies at just 22 after devastating car crash",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSanN3do_3t_Q8pfjeuZSziOMXryRszS_urql86u9SuaabKlF8vW5iApMv5fqw"
         }
       ]
     },
     {
       "query": "michael sanft attorney",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-10T13:40:00Z",
       "related_news_urls": [
         "https://www.fox5vegas.com/2026/11/06/attorney-who-represented-keffe-d-tupac-murder-trial-reportedly-dies/",
@@ -252,107 +322,37 @@
       ]
     },
     {
-      "query": "gary sinise",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-10T13:30:00Z",
+      "query": "lorenzo sonego",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T13:40:00Z",
       "related_news_urls": [
-        "https://www.forbes.com/sites/timlammers/2026/11/07/documentary-about-gary-sinise-helping-veterans-lands-distribution-and-debuts-on-digital-this-week/",
-        "https://www.detroitnews.com/press-release/story/198051/freestyle-digital-media-releases-documentary-feature-the-ballad-of-lieutenant-dan/",
-        "https://www.indiewire.com/news/general-news/ballad-of-lieutenant-dan-documentary-gary-sinise-acquired-1235225475/"
+        "https://lastwordonsports.com/tennis/2026/11/09/atp-stockholm-day-3-predictions-musetti-samuel/",
+        "https://britwatchsports.com/tennis-atp-stockholm-2026-samuel-eases-past-borg-to-set-musetti-showdown/",
+        "https://www.bets.com.au/tennis/atp-tour/lorenzo-musetti-vs-toby-samuel-atp-stockholm-tips-prediction-live-stream-20261109-0013/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8IBPNXrUHszHYfEro-iTXo9fJpVSzrlQQfp-xU70DWw1Y6BmZq2D9-r0Okg0",
-      "image_credit": "Forbes",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTu9Vuur7hUq7k3uF9U4Mb9WNDnQyjM4DdaL2-UacphDPeIBiLbivlDbNMBS8I",
+      "image_credit": "Last Word On Sports",
       "news": [
         {
-          "url": "https://www.forbes.com/sites/timlammers/2026/11/07/documentary-about-gary-sinise-helping-veterans-lands-distribution-and-debuts-on-digital-this-week/",
-          "title": "Gary Sinise Documentary 'The Ballad Of Lieutenant Dan' Arrives On Streaming This Week",
-          "publisher": "Forbes",
+          "url": "https://lastwordonsports.com/tennis/2026/11/09/atp-stockholm-day-3-predictions-musetti-samuel/",
+          "title": "ATP Stockholm Day 3 Predictions Including Lorenzo Musetti vs Toby Samuel",
+          "publisher": "Last Word On Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8IBPNXrUHszHYfEro-iTXo9fJpVSzrlQQfp-xU70DWw1Y6BmZq2D9-r0Okg0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTu9Vuur7hUq7k3uF9U4Mb9WNDnQyjM4DdaL2-UacphDPeIBiLbivlDbNMBS8I"
         },
         {
-          "url": "https://www.detroitnews.com/press-release/story/198051/freestyle-digital-media-releases-documentary-feature-the-ballad-of-lieutenant-dan/",
-          "title": "FREESTYLE DIGITAL MEDIA RELEASES DOCUMENTARY FEATURE “THE BALLAD OF LIEUTENANT DAN”",
-          "publisher": "The Detroit News",
+          "url": "https://britwatchsports.com/tennis-atp-stockholm-2026-samuel-eases-past-borg-to-set-musetti-showdown/",
+          "title": "Tennis | ATP Stockholm 2026 | Samuel eases past Borg to set Musetti showdown",
+          "publisher": "Britwatch Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiPkXWRC2EkgUDSTDXfe8xPNqoomptgSwWyPvhCWY8kv2qAz5WCn_Nkq_pQYw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTTeY2bGZ0unXE8kVDauOnwlTSy1VOmFCHJQTtlYs1F2Wj714JBooZ8Kjbkiw"
         },
         {
-          "url": "https://www.indiewire.com/news/general-news/ballad-of-lieutenant-dan-documentary-gary-sinise-acquired-1235225475/",
-          "title": "'The Ballad of Lieutenant Dan' Acquired by Freestyle Digital Media",
-          "publisher": "IndieWire",
+          "url": "https://www.bets.com.au/tennis/atp-tour/lorenzo-musetti-vs-toby-samuel-atp-stockholm-tips-prediction-live-stream-20261109-0013/",
+          "title": "Lorenzo Musetti vs Toby Samuel ATP Stockholm Tips, Prediction & Live Stream - Musetti targets quarter-finals",
+          "publisher": "Bets.com.au",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0RQdjak7JKpXUZRdiodn7KaFmwMVUJr9Ihxk1fQIXA0vmObgqF32f8jGynRQ"
-        }
-      ]
-    },
-    {
-      "query": "tradingview",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-10T13:30:00Z",
-      "related_news_urls": [
-        "https://www.globenewswire.com/news-release/2026/11/10/3399291/0/en/yieldmax-etfs-announces-weekly-distributions-for-group-1-etfs.html",
-        "https://www.tradingview.com/news/seekingalpha:0ff01d90a094b:0-micron-nvidia-lam-research-removed-from-bofa-s-us-1-list/",
-        "https://markets.businessinsider.com/news/stocks/yieldmax-etfs-announces-weekly-distributions-for-group-2-etfs-1036714061"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS92vbyr9wMmacPRw6DqLqM1kTn9bnAoy53GAnexxw8Heyoz0RU0ISUgbhHjVw",
-      "image_credit": "GlobeNewswire",
-      "news": [
-        {
-          "url": "https://www.globenewswire.com/news-release/2026/11/10/3399291/0/en/yieldmax-etfs-announces-weekly-distributions-for-group-1-etfs.html",
-          "title": "YieldMax® ETFs Announces Weekly Distributions for Group 1 ETFs",
-          "publisher": "GlobeNewswire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS92vbyr9wMmacPRw6DqLqM1kTn9bnAoy53GAnexxw8Heyoz0RU0ISUgbhHjVw"
-        },
-        {
-          "url": "https://www.tradingview.com/news/seekingalpha:0ff01d90a094b:0-micron-nvidia-lam-research-removed-from-bofa-s-us-1-list/",
-          "title": "Micron, Nvidia, Lam Research removed from BofA's US 1 list",
-          "publisher": "TradingView",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
-        },
-        {
-          "url": "https://markets.businessinsider.com/news/stocks/yieldmax-etfs-announces-weekly-distributions-for-group-2-etfs-1036714061",
-          "title": "YieldMax® ETFs Announces Weekly Distributions for Group 2 ETFs",
-          "publisher": "markets.businessinsider.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQx-AbMNWDiajewm0dZaAxz3FeLw_IjhcWb0bPnhzLe5VibqH5_0uuRNHnSWIk"
-        }
-      ]
-    },
-    {
-      "query": "gary sinise son",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T13:30:00Z",
-      "related_news_urls": [
-        "https://www.today.com/video/gary-sinise-talks-love-loss-and-resilience-in-moving-memoir-273192005824",
-        "https://ew.com/forrest-gump-gary-sinise-son-mac-final-moments-before-death-12238898",
-        "https://people.com/gary-sinise-what-it-would-take-for-him-to-return-to-acting-after-6-years-exclusive-12237969"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYl4TwH_ICol-AD0EhJksA8jH3jqohKnV4w4MBagTip-6ublEfv3UxMF6UNjA",
-      "image_credit": "TODAY.com",
-      "news": [
-        {
-          "url": "https://www.today.com/video/gary-sinise-talks-love-loss-and-resilience-in-moving-memoir-273192005824",
-          "title": "Gary Sinise Talks Love, Loss and Resilience in Moving Memoir",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYl4TwH_ICol-AD0EhJksA8jH3jqohKnV4w4MBagTip-6ublEfv3UxMF6UNjA"
-        },
-        {
-          "url": "https://ew.com/forrest-gump-gary-sinise-son-mac-final-moments-before-death-12238898",
-          "title": "Forrest Gump star Gary Sinise details son Mac’s final moments before death at 33: ‘Hard to wrap my head around’",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8hQI759Fjgo7ZTbVYZa-4e1stQO2HrVMyerNki6undEiYXap4Jz5ttsawZuE"
-        },
-        {
-          "url": "https://people.com/gary-sinise-what-it-would-take-for-him-to-return-to-acting-after-6-years-exclusive-12237969",
-          "title": "Gary Sinise Shares What It Would Take for Him to Return to Acting After 6 Years (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTc8tSUpKu4a02fhzYbBVRxLlmYO5T8zIDXfSBwat7gz0cQ97jHr58kUAYpVT0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfOTZ5r3pFWt9PON9Q8RWExoD_oZvaKPsh8PRNfBHD30WpJ7Nvo0GxYzAYX3c"
         }
       ]
     }
