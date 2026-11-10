@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-10T07:19:17.024460Z",
+  "checked_at": "2026-11-10T08:22:25.020356Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -371,17 +371,17 @@
     },
     "gmc-sierra-2026": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T02:22:12.789612Z",
+      "attempted_at": "2026-11-10T08:22:25.020356Z",
       "items": []
     },
     "gmc-denali-2026": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T02:22:12.789612Z",
+      "attempted_at": "2026-11-10T08:22:25.020356Z",
       "items": []
     },
     "carhartt-shop": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T02:22:12.789612Z",
+      "attempted_at": "2026-11-10T08:22:25.020356Z",
       "items": [
         {
           "url": "https://www.carhartt.com/product/104392?icid=2026-11-03_hp__prdpk_none_clickable_pdp_out-gft_outerwear-shovel-104392_allvisitors_lifestyle_21634",
@@ -389,7 +389,7 @@
           "title": "HeMen's Washed Duck Sierra Jacket",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T02:22:12.789612Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Clothing"
         },
         {
@@ -398,7 +398,7 @@
           "title": "Outerwear for the family",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T02:22:12.789612Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Clothing"
         },
         {
@@ -407,7 +407,7 @@
           "title": "Outerwear for the family",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T02:22:12.789612Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Clothing"
         },
         {
@@ -416,7 +416,7 @@
           "title": "Men's Washed Duck Active Jac",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T02:22:12.789612Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Clothing"
         }
       ]
@@ -1800,7 +1800,7 @@
     },
     "denver-sams-no3": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T02:22:12.789612Z",
+      "attempted_at": "2026-11-10T08:22:25.020356Z",
       "items": [
         {
           "url": "https://samsno3.com/",
@@ -1808,7 +1808,7 @@
           "title": "Sam's No. 3 - Denver's Best Diner",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T02:22:12.789612Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Restaurants"
         },
         {
@@ -1817,7 +1817,7 @@
           "title": "Sam's No. 3 - Denver's Best Diner",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T02:22:12.789612Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Restaurants"
         },
         {
@@ -1826,7 +1826,7 @@
           "title": "Sam's No. 3 - Denver's Best Diner",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T02:22:12.789612Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Restaurants"
         },
         {
@@ -1835,19 +1835,19 @@
           "title": "Sam's No. 3 - Denver's Best Diner",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T02:22:12.789612Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Restaurants"
         }
       ]
     },
     "denver-work-and-class": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T02:22:12.789612Z",
+      "attempted_at": "2026-11-10T08:22:25.020356Z",
       "items": []
     },
     "denver-major-tom": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T02:22:12.789612Z",
+      "attempted_at": "2026-11-10T08:22:25.020356Z",
       "items": [
         {
           "url": "https://majortomdenver.com/",
@@ -1855,7 +1855,7 @@
           "title": "Major Tom",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T02:22:12.789612Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Restaurants"
         },
         {
@@ -1864,14 +1864,14 @@
           "title": "Major Tom | RiNo Restaurant, Dinner, Champagne & Cocktails | Denver",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T02:22:12.789612Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Restaurants"
         }
       ]
     },
     "denver-steubens": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T02:22:12.789612Z",
+      "attempted_at": "2026-11-10T08:22:25.020356Z",
       "items": [
         {
           "url": "https://steubens.com/",
@@ -1879,7 +1879,7 @@
           "title": "Steubens - Uptown, Denver, CO",
           "kind": "website",
           "description": "American Regional Classics, Steuben’s is named after a restaurant in Boston that my Great Uncles, Max and Joe, opened in 1945. Steuben's became a famous Boston restaurant, nightclub, ...",
-          "checked_at": "2026-11-10T02:22:12.789612Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Restaurants"
         },
         {
@@ -1888,7 +1888,7 @@
           "title": "slideshow photo number 1",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T02:22:12.789612Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Restaurants"
         },
         {
@@ -1897,7 +1897,7 @@
           "title": "slideshow photo number 2",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T02:22:12.789612Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Restaurants"
         },
         {
@@ -1906,19 +1906,19 @@
           "title": "slideshow photo number 3",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T02:22:12.789612Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Restaurants"
         }
       ]
     },
     "denver-hampton-social": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T02:22:12.789612Z",
+      "attempted_at": "2026-11-10T08:22:25.020356Z",
       "items": []
     },
     "denver-rhein-haus": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T02:22:12.789612Z",
+      "attempted_at": "2026-11-10T08:22:25.020356Z",
       "items": [
         {
           "url": "https://www.rheinhausdenver.com/",
@@ -1926,7 +1926,7 @@
           "title": "Rhein Haus Denver | Experience Bavarian Dining Today",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T02:22:12.789612Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Restaurants"
         },
         {
@@ -1935,7 +1935,7 @@
           "title": "Rhein Haus Denver | Experience Bavarian Dining Today",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T02:22:12.789612Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Restaurants"
         },
         {
@@ -1944,7 +1944,7 @@
           "title": "Rhein Haus Denver | Experience Bavarian Dining Today",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T02:22:12.789612Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Restaurants"
         },
         {
@@ -1953,19 +1953,19 @@
           "title": "Rhein Haus Denver | Experience Bavarian Dining Today",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T02:22:12.789612Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Restaurants"
         }
       ]
     },
     "denver-atomic-cowboy": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T02:22:12.789612Z",
+      "attempted_at": "2026-11-10T08:22:25.020356Z",
       "items": []
     },
     "denver-casa-bonita": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T02:22:12.789612Z",
+      "attempted_at": "2026-11-10T08:22:25.020356Z",
       "items": [
         {
           "url": "https://www.casabonitadenver.com/",
@@ -1973,7 +1973,7 @@
           "title": "Casa Bonita",
           "kind": "website",
           "description": "The Greatest Restaurant in the World!",
-          "checked_at": "2026-11-10T02:22:12.789612Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Restaurants"
         },
         {
@@ -1982,7 +1982,7 @@
           "title": "Shop Official Merchandise",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T02:22:12.789612Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Restaurants"
         },
         {
@@ -1991,7 +1991,7 @@
           "title": "View Our Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T02:22:12.789612Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Restaurants"
         },
         {
@@ -2000,7 +2000,7 @@
           "title": "Prepare For Your Visit",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T02:22:12.789612Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Restaurants"
         }
       ]
@@ -2608,7 +2608,7 @@
     },
     "durable-rada-cutlery": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T01:18:23.641294Z",
+      "attempted_at": "2026-11-10T08:22:25.020356Z",
       "items": [
         {
           "url": "https://radakitchenstore.com/",
@@ -2616,7 +2616,7 @@
           "title": "Rada Kitchen Store | Rada Cutlery Personal Shopping & Gifts",
           "kind": "website",
           "description": "Shop for Rada Cutlery kitchen knives, cooking utensils, cookbooks and other 100% USA Made kitchen products from Rada Mfg. Co. Purchase for yourself or as gifts.",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2625,7 +2625,7 @@
           "title": "Rada Kitchen Store",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2634,7 +2634,7 @@
           "title": "Rada Kitchen Store",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2643,7 +2643,7 @@
           "title": "Rada Kitchen Store | Rada Cutlery Personal Shopping & Gifts",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2652,7 +2652,7 @@
           "title": "Wedding Register Gift Set",
           "kind": "product",
           "description": "$16.95 This four-piece Wedding Register Gift Set includes knives that make the future of any kitchen just a little bit brighter. All four knives were made with a specific purpose in mind, yet can be used on all kinds of foods, making them incredibly versatile ",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools",
           "offer": null
         },
@@ -2662,7 +2662,7 @@
           "title": "Housewarming Gift Set",
           "kind": "product",
           "description": "$16.95 Rada’s three-piece Housewarming Gift Set includes these incredible knives—Regular Paring, Utility/Steak, and Slicer. All are highly rated thanks to their high quality, usefulness, and good looks. In blade sizes 3¼ʺ, 4⅞ʺ, and 7ʺ, these multi-taskers are ",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools",
           "offer": null
         },
@@ -2672,7 +2672,7 @@
           "title": "Meal Prep Gift Set",
           "kind": "product",
           "description": "$16.95 If you know someone who loves to cook but is short on time, this is the set for them. It includes our Granny Paring, Heavy Duty Paring, Super Parer, and Vegetable Peeler. These are the go-to items for tasks that require precision, dependable control, an",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools",
           "offer": null
         }
@@ -2680,7 +2680,7 @@
     },
     "durable-wusthof": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T01:18:23.641294Z",
+      "attempted_at": "2026-11-10T08:22:25.020356Z",
       "items": [
         {
           "url": "https://wusthof.com/",
@@ -2688,7 +2688,7 @@
           "title": "a Wusthof Amici series knife",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2697,7 +2697,7 @@
           "title": "a Wusthof amici 1814 knife",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2706,7 +2706,7 @@
           "title": "a Classic Wusthof knife",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2715,7 +2715,7 @@
           "title": "A Wusthof Classic knife handle in the Wild Blueberry",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2724,7 +2724,7 @@
           "title": "WÜSTHOF Digital Gift Card",
           "kind": "product",
           "description": "Whatever the occasion — birthday, wedding, housewarming, or holiday — give a WÜSTHOF Digital Gift Card, the best choice for any special event. The lucky recipient will make the right choice from a wonderful selection of the world’s best knives from a company w",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "25.0",
@@ -2739,7 +2739,7 @@
           "title": "Classic Ikon Hand-Held Knife Sharpener",
           "kind": "product",
           "description": "The easiest way to sharpen knives and to keep them sharp. This 2-stage pull-through, V-shaped Knife Sharpener with diamond rods and ceramic steels is particularly suitable for those who do not feel comfortable using Sharpening Steels or Whetstones. With this S",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "85.0",
@@ -2754,7 +2754,7 @@
           "title": "a Wusthof Amici series knife",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2763,14 +2763,14 @@
           "title": "a Wusthof amici 1814 knife",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-zwilling-j-a-henckels": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T01:18:23.641294Z",
+      "attempted_at": "2026-11-10T08:22:25.020356Z",
       "items": [
         {
           "url": "https://www.zwilling.com/us/",
@@ -2778,7 +2778,7 @@
           "title": "ZWILLING, It's a culinary world",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2787,7 +2787,7 @@
           "title": "Zwilling",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2796,7 +2796,7 @@
           "title": "Image of ZWILLING Four Star 8-inch Chef's Knife on a sleek black background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2805,14 +2805,14 @@
           "title": "Image of ZWILLING Peak Fry Pan on a black background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-mauviel": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T01:18:23.641294Z",
+      "attempted_at": "2026-11-10T08:22:25.020356Z",
       "items": [
         {
           "url": "https://mauviel-usa.com/",
@@ -2820,7 +2820,7 @@
           "title": "Mauviel 1830",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2829,7 +2829,7 @@
           "title": "Gifts for every cook, every budget",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2838,7 +2838,7 @@
           "title": "Mauviel M'Heritage M'250 B 10-piece cookware set with brass handles, including pots and pans in stainless steel finish.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2847,7 +2847,7 @@
           "title": "Mauviel M'Heritage M'250 B 10-piece cookware set with brass handles, includes saucepans, frying pans, and stockpots on a kitchen countertop.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2856,7 +2856,7 @@
           "title": "Mauviel 1830 M'Heritage M'250 B 10-Piece Cookware Set, Brass Handles",
           "kind": "product",
           "description": "The 10-Piece set Includes: 2.7-Qt Sauce Pan With Lid 3.3-Qt Sauce Pan With Lid 3.3-Qt Saute Pan With Lid 10.2-In Frying Pan 11.8-In Frying Pan 6.1-Qt Stewpan With Lid Bilaminated copper stainless steel. Polished copper outside 90% - Stainless steel inside 10%.",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools",
           "offer": null
         },
@@ -2866,7 +2866,7 @@
           "title": "Mauviel 1830 M'Heritage M'150 B 12-Piece Copper Cookware Set With Brass Handles",
           "kind": "product",
           "description": "Set includes: 1.9-qt Sauce Pan with lid 2.8-qt Sauce Pan with lid 3.5-qt Sauce Pan with lid 3.3-qt Saute pan 3.7-qt Chef Pan 7.9 in Frying pan 10.2-in Frying pan 6.3-qt Stewpan with lid Bilaminated copper stainless steel. Polished copper outside 90% - Stainles",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "2499.95",
@@ -2881,7 +2881,7 @@
           "title": "Mauviel 1830 M'Heritage M'150 B 10-Piece Copper Cookware Set With Brass Handles",
           "kind": "product",
           "description": "Set includes 1.9-qt Sauce pan With Lid 3.5-qt Sauce pan With Lid 3.3-qt Sauté pan With Lid 10.2-in Frying Pan 11.8-in Frying Pan 6.3-qt Stewpan With Lid Bilaminated copper stainless steel. Polished copper outside 90% - Stainless steel inside 10%. Copper Thickn",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "2149.95",
@@ -2894,12 +2894,12 @@
     },
     "durable-framework-computers": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T01:18:23.641294Z",
+      "attempted_at": "2026-11-10T08:22:25.020356Z",
       "items": []
     },
     "durable-fairphone": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T01:18:23.641294Z",
+      "attempted_at": "2026-11-10T08:22:25.020356Z",
       "items": [
         {
           "url": "https://www.fairphone.com/",
@@ -2907,7 +2907,7 @@
           "title": "Hand holding a blue Fairphone Gen 6+ in front of pink spring blossom",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2916,7 +2916,7 @@
           "title": "Hand holding a green Fairphone Gen 6+, rear view, in front of sunlit grass",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2925,7 +2925,7 @@
           "title": "Fairtrade certification mark",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2934,7 +2934,7 @@
           "title": "EcoVadis Platinum Medal, recognizing Fairphone for sustainability.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2943,7 +2943,7 @@
           "title": "EcoVadis Platinum Medal, recognizing Fairphone for sustainability.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2952,7 +2952,7 @@
           "title": "30W USB-C Fast Charger",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2961,7 +2961,7 @@
           "title": "USB-C Long Life Charging Cable",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2970,14 +2970,14 @@
           "title": "Fairbuds XL Headphones USB-C - mini jack 3.5mm Cable",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-system76": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T01:18:23.641294Z",
+      "attempted_at": "2026-11-10T08:22:25.020356Z",
       "items": [
         {
           "url": "https://system76.com/",
@@ -2985,7 +2985,7 @@
           "title": "the New Thelio Prime",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -2994,7 +2994,7 @@
           "title": "the New Adder Pro",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3003,7 +3003,7 @@
           "title": "the New Lemur Pro now in 14in and 16in sizes",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3012,14 +3012,14 @@
           "title": "Thelio Mira desktop",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-pine64": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T01:18:23.641294Z",
+      "attempted_at": "2026-11-10T08:22:25.020356Z",
       "items": [
         {
           "url": "https://pine64.org/",
@@ -3027,7 +3027,7 @@
           "title": "PINE64",
           "kind": "website",
           "description": "PINE64 is a large, vibrant and diverse community and creates software, documentation and projects. Founded in 2015, it is known for affordable devices that promote user freedom.",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3036,7 +3036,7 @@
           "title": "RockPro64",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3045,7 +3045,7 @@
           "title": "Quartz64 Model B",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3054,14 +3054,14 @@
           "title": "Star64 featuring RISC-V",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-mnt-research": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T01:18:23.641294Z",
+      "attempted_at": "2026-11-10T08:22:25.020356Z",
       "items": [
         {
           "url": "https://mntre.com/",
@@ -3069,7 +3069,7 @@
           "title": "MNT Research GmbH",
           "kind": "website",
           "description": "MNT Research makes open source hardware laptops, mobile devices and keyboards that are modular and repairable. Designed and assembled in Berlin, EU.",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3078,7 +3078,7 @@
           "title": "MNT Pocket Reform - purple",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3087,7 +3087,7 @@
           "title": "space themed illustration of a magical Pocket Reform(3D shapes are coming out of the screen) with two tattooed hands typing",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3096,7 +3096,7 @@
           "title": "an illustration of a person using MNT Pocket Reform on a sofa with their dog chilling nearby",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3105,7 +3105,7 @@
           "title": "illustration of a cafe with two people using Pocket Reform and a cat sitting on a chair.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3114,7 +3114,7 @@
           "title": "MNT ZZ9000 R-3, Black Version",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3123,7 +3123,7 @@
           "title": "MNT ZZ9000AX Audio Module (Back)",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3132,24 +3132,24 @@
           "title": "MNT ZZ9000 Heatsink, Top",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-thinkpad-classic-t-series": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T01:18:23.641294Z",
+      "attempted_at": "2026-11-10T08:22:25.020356Z",
       "items": []
     },
     "durable-noctua": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T01:18:23.641294Z",
+      "attempted_at": "2026-11-10T08:22:25.020356Z",
       "items": []
     },
     "durable-seasonic": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T01:18:23.641294Z",
+      "attempted_at": "2026-11-10T08:22:25.020356Z",
       "items": [
         {
           "url": "https://seasonic.com/atx3-prime-tx/",
@@ -3157,7 +3157,7 @@
           "title": "ATX3-PRIME-TX-1600-1300-PX-1600-back",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3166,7 +3166,7 @@
           "title": "ATX3 PRIME TX-1600-1300-PX-1600-back",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3175,7 +3175,7 @@
           "title": "PRIME-Fanless-TX-700-600",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3184,14 +3184,14 @@
           "title": "PRIME Fanless PX-500-450 back",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
     },
     "durable-ifixit": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T01:18:23.641294Z",
+      "attempted_at": "2026-11-10T08:22:25.020356Z",
       "items": [
         {
           "url": "https://www.ifixit.com/",
@@ -3199,16 +3199,16 @@
           "title": "iFixit: The Free Repair Manual",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
           "url": "https://www.ifixit.com/",
-          "image": "https://www.ifixit.com/_next/image?url=https%3A%2F%2Fifixit-strapi-uploads.s3.us-east-1.amazonaws.com%2Fi_Phone_Battery_banner_5d13433a9b.jpg&w=1920&q=75",
-          "title": "iPhone 13 Battery",
+          "image": "https://www.ifixit.com/_next/image?url=https%3A%2F%2Fifixit-strapi-uploads.s3.us-east-1.amazonaws.com%2FPro_Tech_Toolkit_Hero_Banner_156ac6a773.jpg&w=1920&q=75",
+          "title": "Pro Tech Toolkit",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3217,7 +3217,7 @@
           "title": "A person repairing a laptop",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3226,7 +3226,7 @@
           "title": "Assortment of quality parts and tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3235,7 +3235,7 @@
           "title": "iFixit Gear: Shirts, Stickers, Posters, and Patches | iFixit",
           "kind": "website",
           "description": "Original iFixit shirts, stickers, posters, patches, and bags for people who'd rather fix it than toss it.",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3244,7 +3244,7 @@
           "title": "iFixit Apparel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3253,7 +3253,7 @@
           "title": "iFixit Stickers",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         },
         {
@@ -3262,7 +3262,7 @@
           "title": "iFixit Posters",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T01:18:23.641294Z",
+          "checked_at": "2026-11-10T08:22:25.020356Z",
           "category": "Hardware, Electronics & Enclosures"
         }
       ]
