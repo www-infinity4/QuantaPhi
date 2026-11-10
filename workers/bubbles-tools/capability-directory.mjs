@@ -68,13 +68,18 @@ export function capabilityDirectory(env={}){
  */
 export function recommendCapabilities(question,env={}){
  const q=String(question||'').toLowerCase().slice(0,600);
+ // Remove excluded operations from recommendations, never from the user's request.
+ // A later independent clause ("and which tool can merge?") remains actionable.
+ const actionable=q.replace(/\b(?:without|do not|don't|never|no need to|not to)\b[\s\S]*?(?=(?:,\s*(?:(?:and|but)\s+)?(?:which|what|how|can|could|would)\b)|[.!?;]|$)/gi,' ');
+ // A literal owner/repo reference is a GitHub source, but arbitrary URL paths are not.
+ const namedRepository=/\b[a-z0-9][a-z0-9_.-]{0,38}\/[a-z0-9_][a-z0-9_.-]{0,99}\b/i.test(q.replace(/https?:\/\/\S+/gi,''));
  const ids=[];
  const add=(...values)=>{for(const id of values)if(!ids.includes(id))ids.push(id);};
  // The requested *operation* wins over generic discovery verbs such as "show".
- const commitWrite=/\bcommit(?:ting)?\s+(?:the|these|those)\s+(?:json|html|index|files?|patch|changes?|code)\b/i.test(q)||
-  /\bcommit(?:ting)?\s+(?:to\b|(?:a|an|the|my|this|that|some|new)\s+(?:file|files|change|changes|code|patch|source)\b|(?:file|files|change|changes|code|patch|source|work)\b|with\s+git\b)|\bmake\s+(?:a\s+)?commit\b/i.test(q);
- const commitRead=!commitWrite&&/\bcommits?\b/.test(q)&&
-  /\b(?:read|view|inspect|show|list|fetch|explain|find)\b/.test(q);
+ const commitWrite=/\bcommit(?:ting)?\s+(?:the|these|those)\s+(?:json|html|index|files?|patch|changes?|code)\b/i.test(actionable)||
+  /\bcommit(?:ting)?\s+(?:to\b|(?:a|an|the|my|this|that|some|new)\s+(?:file|files|change|changes|code|patch|source)\b|(?:file|files|change|changes|code|patch|source|work)\b|with\s+git\b)|\bmake\s+(?:a\s+)?commit\b/i.test(actionable);
+ const commitRead=!commitWrite&&/\bcommits?\b/.test(actionable)&&
+  /\b(?:read|view|inspect|show|list|fetch|explain|find)\b/.test(actionable);
  const privateMemory=/\b(?:saved|private|personal|owner|conversation)\b.{0,55}\b(?:memory|memories|recall|context)\b|\bmy\b.{0,55}\b(?:saved|private|owner|conversation)\b.{0,55}\b(?:memory|recall|context)\b/i.test(q);
  const publicMemoryTest=!privateMemory&&
   (/\borganic\s+computation\b/.test(q)||/\b(?:software(?:-only)?|digital)\b.{0,55}\b(?:memory|recall|benchmark)\b/.test(q))&&
@@ -83,11 +88,11 @@ export function recommendCapabilities(question,env={}){
  else if(commitRead)add('github.read_commit');
  if(privateMemory)add('bubbles.memory.owner');
  else if(publicMemoryTest)add('organic.memory_benchmark');
- if(/\b(?:deploy|deployment|code changes?|modif(?:y|ication)|edit|write|repair|fix|build|merge|push)\b/.test(q))
+ if(/\b(?:deploy|deployment|code changes?|modif(?:y|ication)|edit|write|repair|fix|build|merge|push)\b/.test(actionable))
   add('robot_brain.owner_work');
- if(/\b(?:create|make|start)\b/.test(q)&&/\b(?:git(?:hub)?|repositor(?:y|ies)|repos?)\b/.test(q))
+ if(/\b(?:create|make|start)\b/.test(actionable)&&/\b(?:git(?:hub)?|repositor(?:y|ies)|repos?)\b/.test(actionable))
   add('github.create_repository');
- if(/\b(?:git(?:hub)?|repositor(?:y|ies)|repos?)\b/.test(q)&&/\b(?:read|view|inspect|open|source|file|browse|search|access|find)\b/.test(q))
+ if((namedRepository||/\b(?:git(?:hub)?|repositor(?:y|ies)|repos?)\b/.test(actionable))&&/\b(?:read|view|inspect|open|source|file|browse|search|access|find)\b/.test(q))
   add('github.read_repository','github.read_file');
  if(/\b(?:images?|photos?|pictures?|screenshots?|vision|visual|ocr)\b/.test(q))
   add('bubbles.image_read');
