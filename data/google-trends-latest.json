@@ -3,356 +3,332 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T03:01:22.375913Z",
+  "checked_at": "2026-11-10T03:31:28.131526Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "china",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-10T02:40:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/tech/ai/jensen-huang-apologized-to-nvidia-for-his-infidelity-his-kids-are-on-staff-190f3176",
-        "https://www.benzinga.com/markets/tech/26/11/63077533/nvidia-jensen-huang-sued-class-action-megaspeed-alice-huang-chinese-spy",
-        "https://www.cnbc.com/2026/11/09/trump-jensen-huang-nvidia-chinese-spy.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKFBDKs28rM5Ym-vGeOcnPF0IoRe38P8vQiB_1M-QNIMatYJr4bGTfUYFamck",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/tech/ai/jensen-huang-apologized-to-nvidia-for-his-infidelity-his-kids-are-on-staff-190f3176",
-          "title": "Jensen Huang Apologized to Nvidia for His Infidelity. His Kids Are on Staff.",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKFBDKs28rM5Ym-vGeOcnPF0IoRe38P8vQiB_1M-QNIMatYJr4bGTfUYFamck"
-        },
-        {
-          "url": "https://www.benzinga.com/markets/tech/26/11/63077533/nvidia-jensen-huang-sued-class-action-megaspeed-alice-huang-chinese-spy",
-          "title": "Nvidia Shareholder Sues Over CEO Jensen Huang Spy Affair Claims - NVIDIA (NASDAQ:NVDA)",
-          "publisher": "Benzinga",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR--OFvVQCVf-ACMm3qD-skhczVwYLZnn15kf721VMaZRFafug51a48e71cqcs"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/09/trump-jensen-huang-nvidia-chinese-spy.html",
-          "title": "Trump says Jensen Huang told him Monday he didn't know paramour 'was a spy'",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsoHoHgjf6zFLFl5zb2WSnou-ASjjdneN0VJJXrSo2T6ajl5Dg7zNO814ut6w"
-        }
-      ]
-    },
-    {
-      "query": "patriots depth chart",
+      "query": "mavs game",
       "approx_searches": "500+",
-      "published_at": "2026-11-10T02:40:00Z",
+      "published_at": "2026-11-10T03:10:00Z",
       "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/08/sports/patriots-arent-making-excuses-their-near-catastrophic-injury-run-has-only-gotten-worse/",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/patriots-dont-expect-ben-brown-to-play-in-week-10-waiting-for-rhamondre-stevenson-mri-results",
-        "https://www.nbcsportsboston.com/nfl/new-england-patriots/patriots-injury-updates-latest-info-aj-brown-rhamondre-stevenson/812631/"
+        "https://www.espn.com/nba/story/_/id/50437538/cooper-flagg-peanut-butter-jelly",
+        "https://roundtable.io/sports/nba/mavericks/news/whys-cooper-flagg-eating-a-sandwich-during-dallas-mavs-game",
+        "https://sports.yahoo.com/articles/mavericks-star-cooper-flagg-gets-212251307.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTg47n6UNqscQIgiBVjHPLTBVaZkbZ58MxVSEKukLcXeOPTSrzlt3pLUCtZ4QI",
-      "image_credit": "The Boston Globe",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSO8yXNlJ9Z2Vc4mec2XBFYpOY3Fd8ry_0_oto7KjCkICEU12T8-TNGKcrXZB0",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.bostonglobe.com/2026/11/08/sports/patriots-arent-making-excuses-their-near-catastrophic-injury-run-has-only-gotten-worse/",
-          "title": "The Patriots aren’t making excuses, but their near-catastrophic injury run has only gotten worse",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTg47n6UNqscQIgiBVjHPLTBVaZkbZ58MxVSEKukLcXeOPTSrzlt3pLUCtZ4QI"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/patriots-dont-expect-ben-brown-to-play-in-week-10-waiting-for-rhamondre-stevenson-mri-results",
-          "title": "Patriots don't expect Ben Brown to play in Week 10, waiting for Rhamondre Stevenson MRI results",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtBbEiBZ2Kjs0O6wmeKuAwZj7hUXeho2JiZCCjXIuG-ifXJ7HjPbpUkej22xg"
-        },
-        {
-          "url": "https://www.nbcsportsboston.com/nfl/new-england-patriots/patriots-injury-updates-latest-info-aj-brown-rhamondre-stevenson/812631/",
-          "title": "Patriots injury updates: Latest info on A.J. Brown, Rhamondre Stevenson and more",
-          "publisher": "NBC Sports Boston",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlXNgewRwfUqi99tjzeA6TDddmkl9hCf83fmoXybLikopJIRWRcfk0s0WKBp8"
-        }
-      ]
-    },
-    {
-      "query": "pascal siakam",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T02:40:00Z",
-      "related_news_urls": [
-        "https://www.indystar.com/videos/sports/nba/pacers/2026/11/07/siakam-i-thought-our-force-and-energy-was-way-better-in-the-second-half/92670952007/",
-        "https://clutchpoints.com/nba/indiana-pacers/pacers-news-pascal-siakam-reaches-wild-personal-milestone-in-just-a-half-vs-mavericks",
-        "https://sports.yahoo.com/articles/mavericks-vs-pacers-preview-injury-002521200.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQH_6oUKy5n9ihm97_Bhrwf8Mmgl8YuJAlz04mwUxXZSDYcufSlcyKPNW0Tyiw",
-      "image_credit": "IndyStar",
-      "news": [
-        {
-          "url": "https://www.indystar.com/videos/sports/nba/pacers/2026/11/07/siakam-i-thought-our-force-and-energy-was-way-better-in-the-second-half/92670952007/",
-          "title": "Pacers Pascal Siakam: 'I thought our force and energy was way better in the second half\"",
-          "publisher": "IndyStar",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQH_6oUKy5n9ihm97_Bhrwf8Mmgl8YuJAlz04mwUxXZSDYcufSlcyKPNW0Tyiw"
-        },
-        {
-          "url": "https://clutchpoints.com/nba/indiana-pacers/pacers-news-pascal-siakam-reaches-wild-personal-milestone-in-just-a-half-vs-mavericks",
-          "title": "Pascal Siakam Reaches Wild Personal Milestone In Just A Half Of Pacers-Mavericks",
-          "publisher": "ClutchPoints",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT36eJVGxO7-4OQelDpjkvay7lfG4mBo6ux7yX4nRM5bdxAHeJYSFD2xcIgykQ"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/mavericks-vs-pacers-preview-injury-002521200.html",
-          "title": "Mavericks vs Pacers Preview and Injury Report: Closing out the homestand",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKZBiOJJkBFeckb8hIfVZ2bVd7ayFfTL_zNxOQZKD_RewFtMPM52N0LgqFCkQ"
-        }
-      ]
-    },
-    {
-      "query": "flight recorder",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T02:40:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/09/us/florida-learjet-crash-voice-recorder",
-        "https://www.nytimes.com/2026/11/07/us/florida-jet-crash-father-pilot.html",
-        "https://www.usatoday.com/story/news/nation/2026/11/09/florida-jet-crash-learjet-update-ntsb/92688703007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOCq3yNnh3eaX9oWxLQw1n42Yif_57o-Ayd-qTPUjBEQ6EPMFN2nxd-J2Ze1E",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/09/us/florida-learjet-crash-voice-recorder",
-          "title": "Investigators recover cockpit voice recorder from fatal Learjet crash site",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOCq3yNnh3eaX9oWxLQw1n42Yif_57o-Ayd-qTPUjBEQ6EPMFN2nxd-J2Ze1E"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/07/us/florida-jet-crash-father-pilot.html",
-          "title": "Father Calls Daughter, the Co-Pilot Killed in Florida Crash, ‘a Hero’",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQS9eAF8heE9SuYJkxHVcalZGlWB9VKUKX5y8KRvayGBi9ZGX67ZGfowp12atM"
-        },
-        {
-          "url": "https://www.usatoday.com/story/news/nation/2026/11/09/florida-jet-crash-learjet-update-ntsb/92688703007/",
-          "title": "Investigators find wings, engine of downed Learjet plane",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_yCeEftzq-qntS79pwZbSJAF-80EceIddKxPTBJX9Mw2klKSNbBGqdwwQIVc"
-        }
-      ]
-    },
-    {
-      "query": "will reichard",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T02:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/reichard-end-vikings-kicking-curse-181909540.html",
-        "https://www.rotoballer.com/player-news/high-scoring-potential-for-will-reichard-in-week-9/1986873",
-        "https://www.buffalobills.com/news/buffalo-bills-at-minnesota-vikings-where-to-watch-stream-and-listen-mnf-week-9"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzJ5GNQx9jCYZ9AaHRKzSbl5S538CxSB8nElGbzNMv6Bgocox2-Be_yGm9ezM",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/reichard-end-vikings-kicking-curse-181909540.html",
-          "title": "Will Reichard Will End the Vikings’ Kicking Curse",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzJ5GNQx9jCYZ9AaHRKzSbl5S538CxSB8nElGbzNMv6Bgocox2-Be_yGm9ezM"
-        },
-        {
-          "url": "https://www.rotoballer.com/player-news/high-scoring-potential-for-will-reichard-in-week-9/1986873",
-          "title": "Will Reichard Week 9 Outlook for Fantasy Football (2026)",
-          "publisher": "RotoBaller",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqfA-gFvEUsymda79qaKRM-amoJSDbEY9uNCNBepUFBZvIkN9LBKrXR8Cy3WI"
-        },
-        {
-          "url": "https://www.buffalobills.com/news/buffalo-bills-at-minnesota-vikings-where-to-watch-stream-and-listen-mnf-week-9",
-          "title": "Buffalo Bills at Minnesota Vikings | Where to watch, stream and listen | MNF Week 9",
-          "publisher": "Buffalo Bills",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQeovBp1L8RO7O_2kz391PerWBkDy3wP1MOp6ozhCli91QRZ59vhRXPfF47Uck"
-        }
-      ]
-    },
-    {
-      "query": "nintendo switch black friday",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T02:30:00Z",
-      "related_news_urls": [
-        "https://mashable.com/tech/nov-9-nintendo-switch-2-deal",
-        "https://lifehacker.com/tech/nintendo-switch-2-sale-early-black-friday-2026",
-        "https://www.ign.com/articles/samsung-p9-nintendo-switch-2-memory-card-deal-november-2026"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkCwfPlSALAicmzH76I52iowQmdJ6bLK-1iW9e9hPJ7mcLAAUTPSdexzZns04",
-      "image_credit": "Mashable",
-      "news": [
-        {
-          "url": "https://mashable.com/tech/nov-9-nintendo-switch-2-deal",
-          "title": "The Nintendo Switch 2 gets a rare deal way ahead of Black Friday",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkCwfPlSALAicmzH76I52iowQmdJ6bLK-1iW9e9hPJ7mcLAAUTPSdexzZns04"
-        },
-        {
-          "url": "https://lifehacker.com/tech/nintendo-switch-2-sale-early-black-friday-2026",
-          "title": "The Nintendo Switch 2 Is Actually on Sale Ahead of Black Friday",
-          "publisher": "Lifehacker",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9eO_5naT-QyjH63-LCHMg4rnR6RWkM0BTIdnd8w-yS_s7JnAlQJupEFL9BA"
-        },
-        {
-          "url": "https://www.ign.com/articles/samsung-p9-nintendo-switch-2-memory-card-deal-november-2026",
-          "title": "Save Up to 40% Off Samsung Nintendo Switch 2 Memory Cards Ahead of Black Friday",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSP7XGvxnSEp46FZec6Zrsmbdaeiz7SvB2W0ZVu9qfWY1bVD2UwWqt1tmevG4g"
-        }
-      ]
-    },
-    {
-      "query": "josh hokit",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T02:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/ufc-legend-shares-honest-assessment-000518542.html",
-        "https://www.sherdog.com/news/news/Josh-Hokit-says-Jon-Jones-win-gives-him-blueprint-to-beat-Ciryl-Gane-203563",
-        "https://www.mmafighting.com/ufc/519486/ufc-334-roundtable-is-josh-hokit-about-to-be-the-one-true-heavyweight-king"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXqVyk3uKAZKgc-V54857MO5MIgvaNAecjsiGRKQyANSOp0od1FPmhmiBSweY",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/ufc-legend-shares-honest-assessment-000518542.html",
-          "title": "UFC Legend Shares Honest Assessment of Ciryl Gane Ahead of Josh Hokit Fight",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXqVyk3uKAZKgc-V54857MO5MIgvaNAecjsiGRKQyANSOp0od1FPmhmiBSweY"
-        },
-        {
-          "url": "https://www.sherdog.com/news/news/Josh-Hokit-says-Jon-Jones-win-gives-him-blueprint-to-beat-Ciryl-Gane-203563",
-          "title": "Josh Hokit says Jon Jones' win gives him blueprint to beat Ciryl Gane",
-          "publisher": "Sherdog",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZBpfw4ffHB0tLonpQzdIaXSaiBtWRAEFYbYXZ4tY7b3b0Bgy4BB0TTInFbaA"
-        },
-        {
-          "url": "https://www.mmafighting.com/ufc/519486/ufc-334-roundtable-is-josh-hokit-about-to-be-the-one-true-heavyweight-king",
-          "title": "UFC 334 roundtable: Is Josh Hokit about to be the one true heavyweight king?",
-          "publisher": "MMA Fighting",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRt3JVUm7n5tWUNiz8DOauaoLeeD7JWxxr1OX4FPlHU7NeTfwvDuoHKKzJ74vk"
-        }
-      ]
-    },
-    {
-      "query": "meat recall",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T02:20:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/money/consumer-protection/recalls-alerts/2026/11/09/usda-frozen-meat-public-health-alert/92695951007/",
-        "https://www.newsnationnow.com/us-news/recalls/allergy-alert-frozen-snacks-undeclared-sesame-fish/",
-        "https://www.cleveland.com/entertainment/2026/11/health-alert-issued-for-3-meat-poultry-products.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRD68pXOsYpA9HdmXgZoMlxkYchN1l3tuybUB6zKdMsilBysjrz7u_wLsY2reI",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/money/consumer-protection/recalls-alerts/2026/11/09/usda-frozen-meat-public-health-alert/92695951007/",
-          "title": "USDA warns: Don't eat these frozen meat products",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRD68pXOsYpA9HdmXgZoMlxkYchN1l3tuybUB6zKdMsilBysjrz7u_wLsY2reI"
-        },
-        {
-          "url": "https://www.newsnationnow.com/us-news/recalls/allergy-alert-frozen-snacks-undeclared-sesame-fish/",
-          "title": "Popular frozen snacks may contain hidden allergens, USDA warns",
-          "publisher": "NewsNation",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQTSZ9WIeoCAV4W6w-zBl7oEoGamDUS6b9iZsT47-uRexnbREl_0x2-Fei1Rs"
-        },
-        {
-          "url": "https://www.cleveland.com/entertainment/2026/11/health-alert-issued-for-3-meat-poultry-products.html",
-          "title": "Health alert issued for 3 meat, poultry products",
-          "publisher": "Cleveland.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfWtmkCPDMGW5AiAedoJfegpzEreCFGrQOxJ3RsDIuH9rdt5RquwFosvf8Isc"
-        }
-      ]
-    },
-    {
-      "query": "erin andrews",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T02:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/nfl-legend-tom-brady-reacts-140400871.html",
-        "https://www.sportsbusinessjournal.com/Articles/2026/11/09/media-speed-reads/",
-        "https://www.aol.com/articles/congratulations-flood-brittany-mahomes-tom-032012000.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpMYO_A5he46bvtZSC-Cb1a4KiGxEaC9Iz0ORJYVVlv8JbvBuVELs9flkBBjI",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/nfl-legend-tom-brady-reacts-140400871.html",
-          "title": "NFL Legend Tom Brady Reacts to Fox Sports’ Erin Andrews Announcement",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpMYO_A5he46bvtZSC-Cb1a4KiGxEaC9Iz0ORJYVVlv8JbvBuVELs9flkBBjI"
-        },
-        {
-          "url": "https://www.sportsbusinessjournal.com/Articles/2026/11/09/media-speed-reads/",
-          "title": "Media speed reads",
-          "publisher": "Sports Business Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDXTqRkTlyZKEwFxXsujzI2CIU_07G1tAi1TbKosieUWiSCcF1DPiJiXyRtH8"
-        },
-        {
-          "url": "https://www.aol.com/articles/congratulations-flood-brittany-mahomes-tom-032012000.html",
-          "title": "Congratulations Flood in From Brittany Mahomes, Tom Brady & Others as Erin Andrews Reaches FOX Career Milestone",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFBBAWqdkzTG1In1io9X7Du9-T2S5FLMmjzw_LQDKidgL-8TDdu7XG1FtWddM"
-        }
-      ]
-    },
-    {
-      "query": "donovan mitchell",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T02:20:00Z",
-      "related_news_urls": [
-        "https://sports.betmgm.com/en/blog/nba/donovan-mitchell-props-odds-gaa/",
-        "https://www.espn.com/nba/recap?gameId=401909953",
-        "https://www.nba.com/hornets/photos/hornets-vs-cavaliers-gallery-11-09-26"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYz5zMLKpPjuII4wQUJPHfklbqj-kalLG8jlVXrL8Kz8Z2X2sATFIkOGn1H2I",
-      "image_credit": "sports.betmgm.com",
-      "news": [
-        {
-          "url": "https://sports.betmgm.com/en/blog/nba/donovan-mitchell-props-odds-gaa/",
-          "title": "Donovan Mitchell Props Today: Pts, Rebs, Asts, 3PT",
-          "publisher": "sports.betmgm.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYz5zMLKpPjuII4wQUJPHfklbqj-kalLG8jlVXrL8Kz8Z2X2sATFIkOGn1H2I"
-        },
-        {
-          "url": "https://www.espn.com/nba/recap?gameId=401909953",
-          "title": "Hornets 124-112 Cavaliers (Nov 9, 2026) Game Recap",
+          "url": "https://www.espn.com/nba/story/_/id/50437538/cooper-flagg-peanut-butter-jelly",
+          "title": "Cooper Flagg breaks down in-game peanut butter and jelly sandwich",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrjBaN4caPVHgQruBjAr0NeUmV6Fy8LHtt6D8P_0x0K-0ejSYFxzjH0YhsBrg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSO8yXNlJ9Z2Vc4mec2XBFYpOY3Fd8ry_0_oto7KjCkICEU12T8-TNGKcrXZB0"
         },
         {
-          "url": "https://www.nba.com/hornets/photos/hornets-vs-cavaliers-gallery-11-09-26",
-          "title": "Hornets vs Cavaliers Gallery ‑ 11/09/26",
-          "publisher": "NBA.com",
+          "url": "https://roundtable.io/sports/nba/mavericks/news/whys-cooper-flagg-eating-a-sandwich-during-dallas-mavs-game",
+          "title": "Why's Cooper Flagg Eating A Sandwich During Dallas Mavs Game?",
+          "publisher": "roundtable.io",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQI-HhtwYpsouZmWT2Z4idm0Ly4vAjD10NZp4i683z49GtvKDkQ7GiMST1BhKs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCXqlo9Hlv1pm74_S1BZthvDWKnawlIV8bsa1TKtzGF0Kh7x89Ki7ztg9Scpg"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/mavericks-star-cooper-flagg-gets-212251307.html",
+          "title": "Mavericks Star Cooper Flagg Gets Honest About Viral Eating And Weight Gain",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ6KD_K_2iXlk6MAQnCta8IqfT9a8aPfUv2_s7vdZsEwwiJn7aTgBAaEJP6cU"
+        }
+      ]
+    },
+    {
+      "query": "jordan poole",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T03:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/jordan-poole-play-vs-warriors-233602718.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQme4WTPjv0TADGxghbzxaYCDCrJi2ju7uRZdNdnfOjPm5pZejQ8wFme0LEttU",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/jordan-poole-play-vs-warriors-233602718.html",
+          "title": "Will Jordan Poole play vs Warriors as Pelicans come to Chase?",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQme4WTPjv0TADGxghbzxaYCDCrJi2ju7uRZdNdnfOjPm5pZejQ8wFme0LEttU"
+        }
+      ]
+    },
+    {
+      "query": "is dana white the press secretary",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-10T03:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/08/us/politics/trump-joke-dana-white-press-secretary.html",
+        "https://www.yahoo.com/news/politics/articles/did-trump-really-offer-ufc-024602889.html",
+        "https://www.espn.com/mma/ufc/story/_/id/50427992/trump-says-press-secretary-offer-ufc-white-was-joke"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoOL-QznZXYtYU6DUYbrRHVS7wKY1e9SAROG2YRlynbr33SV_IUHtemLGvv_Y",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/08/us/politics/trump-joke-dana-white-press-secretary.html",
+          "title": "Trump Was ‘Only Kidding’ in Asking Dana White to Be His Press Secretary",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoOL-QznZXYtYU6DUYbrRHVS7wKY1e9SAROG2YRlynbr33SV_IUHtemLGvv_Y"
+        },
+        {
+          "url": "https://www.yahoo.com/news/politics/articles/did-trump-really-offer-ufc-024602889.html",
+          "title": "Did Trump Really Offer UFC CEO Dana White The Job of White House Press Secretary?",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTc89UsZR1CJ7EgoNwXdQYqQhTjvOX1t90kwSU2WlOtvZpO01Qdj_YwyaQIbUE"
+        },
+        {
+          "url": "https://www.espn.com/mma/ufc/story/_/id/50427992/trump-says-press-secretary-offer-ufc-white-was-joke",
+          "title": "Trump says White House press secretary offer to UFC's White was a joke",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6ENIMXai-ujhT2RDR11sI-QJxyBafme1BwQ3x1QyZCMO9Wpob87aWr3j7EWM"
+        }
+      ]
+    },
+    {
+      "query": "boston u vs northwestern",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T03:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/northwestern-vs-boston-watch-betting-001947676.html",
+        "https://www.foxsports.com/stories/mens-college-basketball/how-watch-boston-university-vs-northwestern-tv-channel-live-stream-time-nov-9-2026",
+        "https://nusports.com/news/2026/11/9/northwestern-hosts-boston-university-in-monday-night-showdown"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjDhM9dOxk-7uHybVxWR80dmlwWV7ZSZYnvv1rmsnXOJOYSKGQFKW3wy51XKQ",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/northwestern-vs-boston-watch-betting-001947676.html",
+          "title": "Northwestern vs. Boston: How to Watch, Betting Odds and Injury Report",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjDhM9dOxk-7uHybVxWR80dmlwWV7ZSZYnvv1rmsnXOJOYSKGQFKW3wy51XKQ"
+        },
+        {
+          "url": "https://www.foxsports.com/stories/mens-college-basketball/how-watch-boston-university-vs-northwestern-tv-channel-live-stream-time-nov-9-2026",
+          "title": "How to Watch Boston University vs. Northwestern: TV Channel, Live Stream, Time",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSWpQTJpB0YIhdyz2SOk_8FxRzJ15yZAI_TsLJDWzMtArFq0zvggd7jfVHxto"
+        },
+        {
+          "url": "https://nusports.com/news/2026/11/9/northwestern-hosts-boston-university-in-monday-night-showdown",
+          "title": "Northwestern Hosts Boston University in Monday Night Showdown",
+          "publisher": "Northwestern Wildcats",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLa-l4zX-iK9PeCYqqYCNPAi-xdTMSPRXl15XP3ixKZKzJu3AzOsH08qbVvmI"
+        }
+      ]
+    },
+    {
+      "query": "jim caviezel",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T03:00:00Z",
+      "related_news_urls": [
+        "https://ewtn.co.uk/vod-the-world-over-full-episode-caviezel-in-ghost-soldier-the-us-midterms-more-november-5-2026/",
+        "https://mycharisma.com/culture/jim-caviezel-exposes-the-spiritual-battle-behind-hollywoods-new-biblical-epic/",
+        "https://ewtn.co.uk/article-from-savior-to-tyrant-jim-caviezel-on-portraying-king-herod-in-zero-a-d/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRykqz5dsR3Vp9QiqLcGvcSHV0e6HhRfsGj2q2AiGwWdMCv8QA38owO1qj56F8",
+      "image_credit": "EWTN Great Britain",
+      "news": [
+        {
+          "url": "https://ewtn.co.uk/vod-the-world-over-full-episode-caviezel-in-ghost-soldier-the-us-midterms-more-november-5-2026/",
+          "title": "The World Over | Full Episode: Caviezel in Ghost Soldier, The US Midterms, & More | November 5, 2026",
+          "publisher": "EWTN Great Britain",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRykqz5dsR3Vp9QiqLcGvcSHV0e6HhRfsGj2q2AiGwWdMCv8QA38owO1qj56F8"
+        },
+        {
+          "url": "https://mycharisma.com/culture/jim-caviezel-exposes-the-spiritual-battle-behind-hollywoods-new-biblical-epic/",
+          "title": "Jim Caviezel Exposes the Spiritual Battle Behind Hollywood’s New Biblical Epic",
+          "publisher": "Charisma Magazine Online",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZ7-EANAGh0diopOGopf8tdyW2wYCWkPF55B_jIGbl9gbOgS44pzp7fFrwh2I"
+        },
+        {
+          "url": "https://ewtn.co.uk/article-from-savior-to-tyrant-jim-caviezel-on-portraying-king-herod-in-zero-a-d/",
+          "title": "From Savior to Tyrant: Jim Caviezel on Portraying King Herod in ‘Zero A.D.’",
+          "publisher": "EWTN Great Britain",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKhOwdciAkhxcfl2-Vzf_Dp6xAVCfEhrNKfggP3PH9hBbzYFdhZccqy-WJLeI"
+        }
+      ]
+    },
+    {
+      "query": "punkie johnson",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T03:00:00Z",
+      "related_news_urls": [
+        "https://ew.com/punkie-johnson-lorne-michaels-got-mad-wearing-strap-on-snl-12245198",
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/punkie-johnson-says-lorne-michaels-221012416.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXDEbiT4ZQQBb4lukmSiFmqRL6gqV4Hp0yiP1h_XfwVnuNO4kiasLcNBVoEzU",
+      "image_credit": "Entertainment Weekly",
+      "news": [
+        {
+          "url": "https://ew.com/punkie-johnson-lorne-michaels-got-mad-wearing-strap-on-snl-12245198",
+          "title": "‘SNL’ alum says she wore strap-on during show: ‘I’m keeping my d--- on!’",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXDEbiT4ZQQBb4lukmSiFmqRL6gqV4Hp0yiP1h_XfwVnuNO4kiasLcNBVoEzU"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/punkie-johnson-says-lorne-michaels-221012416.html",
+          "title": "Punkie Johnson says Lorne Michaels got mad when she wore a strap-on under dresses on “SNL”: ‘I’m keeping my d--- on!’",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkEHpCnzHv4xYpTJ8GTGX4HeFyPzu58c86WkcjJHkiOrk82cu4J90zuVh5Hlw"
+        }
+      ]
+    },
+    {
+      "query": "jason kelce",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T02:50:00Z",
+      "related_news_urls": [
+        "https://www.eonline.com/news/1437927/jason-kelces-wife-kylie-kelce-weighs-in-on-idea-of-baby-no-5",
+        "https://www.yahoo.com/entertainment/videos/kylie-kelce-ready-baby-no-143051481.html",
+        "https://people.com/kylie-kelce-reveals-joke-people-make-about-her-and-jason-having-fifth-baby-12236485"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUv1v1B5aWiVeX1fMnHVYmMXfrWlTG4TtFT4fH2al5Y5v2xRxFBUEjcSo0IP4",
+      "image_credit": "E! News",
+      "news": [
+        {
+          "url": "https://www.eonline.com/news/1437927/jason-kelces-wife-kylie-kelce-weighs-in-on-idea-of-baby-no-5",
+          "title": "Is Kylie Kelce Ready for Baby No. 5 With Jason Kelce? She Says...",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUv1v1B5aWiVeX1fMnHVYmMXfrWlTG4TtFT4fH2al5Y5v2xRxFBUEjcSo0IP4"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/videos/kylie-kelce-ready-baby-no-143051481.html",
+          "title": "Is Kylie Kelce Ready for Baby No. 5 With Jason Kelce? She Says...",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8X46h3lnSsR5ekZ0_Z2XWDPj-XZ7xiMRPHDDdMxtuNX-BkdSbDv9C2CjsKOM"
+        },
+        {
+          "url": "https://people.com/kylie-kelce-reveals-joke-people-make-about-her-and-jason-having-fifth-baby-12236485",
+          "title": "Kylie Kelce Shares the Joke People Often Make About Her and Husband Jason Kelce Having a Fifth Baby",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-mbc1VvXXeuarI1ps23OxoTB9ExIzJWRTYff8Ah7Wgqeeh7UzKx6r9zaJ3ac"
+        }
+      ]
+    },
+    {
+      "query": "lakers standings",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T02:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50436025/bronny-james-gets-verbal-exchange-pistons-fans-lakers-win",
+        "https://sports.yahoo.com/nba/breaking-news/article/austin-reaves-has-sideline-chat-with-pistons-fan-punctuates-43-point-game-in-lakers-win-with-dagger-3-and-wave-goodbye-024217417.html",
+        "https://bleacherreport.com/articles/25531305-viral-video-bronny-james-nba-fan-addressed-pistons-spokesperson-following-lakers-game"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgOlyJW9XktTtOVjw1fbo1bLQSXP0cHGG80CuuTUb9cZYit8ja_Ikh_cVh86k",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50436025/bronny-james-gets-verbal-exchange-pistons-fans-lakers-win",
+          "title": "Bronny James gets into verbal exchange with Pistons fans during Lakers' win",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgOlyJW9XktTtOVjw1fbo1bLQSXP0cHGG80CuuTUb9cZYit8ja_Ikh_cVh86k"
+        },
+        {
+          "url": "https://sports.yahoo.com/nba/breaking-news/article/austin-reaves-has-sideline-chat-with-pistons-fan-punctuates-43-point-game-in-lakers-win-with-dagger-3-and-wave-goodbye-024217417.html",
+          "title": "Austin Reaves has sideline chat with Pistons fan, punctuates 43-point game in Lakers win with dagger 3 and wave goodbye",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxWvPrmWblLzTiYUpuZD73i_HdVbXPg9XmWhLE09wZSLhWTVDX5hEH8CeGhVU"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25531305-viral-video-bronny-james-nba-fan-addressed-pistons-spokesperson-following-lakers-game",
+          "title": "Viral Video of Bronny James, NBA Fan Addressed by Pistons Spokesperson Following Lakers Game",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnRm6MnVcs8NshvAMKkyGkh-YpkQ3ie6fcf9UiTLXFSSe53HoLrW1T9gOHgnM"
+        }
+      ]
+    },
+    {
+      "query": "lsu basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T02:50:00Z",
+      "related_news_urls": [
+        "https://www.theadvocate.com/no-lsuvslatech-110926-854-mj-jpg/image_8630d504-8b4c-54cc-afd4-d74f21a75ece.html",
+        "https://www.nola.com/sports/lsu/lsu-basketball-win-louisiana-tech-force-turnovers-will-wade/article_f1102eb6-afad-44b1-9790-bc606840fa55.html",
+        "https://www.on3.com/sites/bleed-tech-blue/news/wenger-and-the-bulldogs-look-to-spoil-will-wades-fast-start-at-lsu/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLCv58B9T1zPyots1n6IhtAcbV2sEUvmCWr5ZRA5flVyBlCyaETW92XqqfF9I",
+      "image_credit": "The Advocate",
+      "news": [
+        {
+          "url": "https://www.theadvocate.com/no-lsuvslatech-110926-854-mj-jpg/image_8630d504-8b4c-54cc-afd4-d74f21a75ece.html",
+          "title": "NO.lsuvslatech.110926_854 MJ.JPG",
+          "publisher": "The Advocate",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLCv58B9T1zPyots1n6IhtAcbV2sEUvmCWr5ZRA5flVyBlCyaETW92XqqfF9I"
+        },
+        {
+          "url": "https://www.nola.com/sports/lsu/lsu-basketball-win-louisiana-tech-force-turnovers-will-wade/article_f1102eb6-afad-44b1-9790-bc606840fa55.html",
+          "title": "LSU basketball’s ability to force turnovers shines in blowout win over Louisiana Tech",
+          "publisher": "NOLA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_qwRa6o7g-q6pDd3XM0eNdhb4ltIZoXrd1ONdUnKCH-dgLQAV4loK91BCUFU"
+        },
+        {
+          "url": "https://www.on3.com/sites/bleed-tech-blue/news/wenger-and-the-bulldogs-look-to-spoil-will-wades-fast-start-at-lsu/",
+          "title": "Wenger and the Bulldogs Look to Spoil Will Wade’s Fast Start at LSU",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0pLwCzbAYvjNR_u83xqqRPUdTn69vPgZAR04qW_bqQPVTQRStUHYP44i3i7M"
+        }
+      ]
+    },
+    {
+      "query": "keleki latu",
+      "approx_searches": "50000+",
+      "published_at": "2026-11-10T02:40:00Z",
+      "related_news_urls": [
+        "https://www.chicagobears.com/video/full-highlights-bears-27-24-snf-win-over-buccaneers",
+        "https://www.clevelandbrowns.com/video/joe-thomas-half-hour-wk-9-cleveland-browns-daily-11-09-26",
+        "https://www.nfl.com/videos/wentz-pinpoints-addison-along-the-sideline-for-12-yard-gain-inside-bills-territory"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpA8re0ha_vZPBEMZiUTvn3FamqjXuOIf2AHOcKklgTlm2ZqIS55ZYYeg_dLk",
+      "image_credit": "Chicago Bears",
+      "news": [
+        {
+          "url": "https://www.chicagobears.com/video/full-highlights-bears-27-24-snf-win-over-buccaneers",
+          "title": "FULL HIGHLIGHTS: Bears' 27-24 SNF win over Buccaneers",
+          "publisher": "Chicago Bears",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpA8re0ha_vZPBEMZiUTvn3FamqjXuOIf2AHOcKklgTlm2ZqIS55ZYYeg_dLk"
+        },
+        {
+          "url": "https://www.clevelandbrowns.com/video/joe-thomas-half-hour-wk-9-cleveland-browns-daily-11-09-26",
+          "title": "Joe Thomas Half Hour WK 9 - Cleveland Browns Daily - 11.09.26",
+          "publisher": "Cleveland Browns",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLbczH65lUE944leH8j43oIlOuQJsU_YFJ2thdj-i2k2s2OhFcN-qlzFdF8KM"
+        },
+        {
+          "url": "https://www.nfl.com/videos/wentz-pinpoints-addison-along-the-sideline-for-12-yard-gain-inside-bills-territory",
+          "title": "Wentz pinpoints Addison along the sideline for 12-yard gain inside Bills' territory",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4oyM4bjr3pNlaST_tdU5HoezoTsoGFoNLLvhBp8fgewli8BqH4zx0mMkdh2M"
         }
       ]
     }
