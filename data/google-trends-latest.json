@@ -3,41 +3,216 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T04:01:26.459445Z",
+  "checked_at": "2026-11-10T04:31:12.712547Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "purdue basketball",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-10T03:40:00Z",
+      "query": "daniel jones",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T04:10:00Z",
       "related_news_urls": [
-        "https://www.foxnews.com/video/6408164202112",
-        "https://www.indystar.com/story/sports/college/purdue/2026/11/08/purdue-basketball-game-tonight-vs-illinois-state-start-time-how-to-watch-stream/92677069007/",
-        "https://www.hammerandrails.com/purdue-mens-basketball/62196/purdue-mens-basketball-game-3-preview-purdue-0-2-vs-illinois-state-1-1"
+        "https://www.espn.com/nfl/story/_/id/50403440/sources-colts-engaged-daniel-jones-trade-talks",
+        "https://www.foxnews.com/outkick-sports/proof-team-trading-daniel-jones-nfl-trade-deadline-chasing-fools-gold",
+        "https://www.nfl.com/news/trade-talk-latest-on-colts-qb-daniel-jones-chargers-lb-khalil-mack-ahead-of-deadline"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBKDFLRyaElqcyFl3XsjBpLPVKWzn4r2dqfwfUjGJTJIo4IsTXAQmLudi9_nU",
-      "image_credit": "Fox News",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD9QS164El3VCEBhsL06eebAaIKRD-7mTn559TEHJ9gPOWM7H61FVnOaZDtY8",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.foxnews.com/video/6408164202112",
-          "title": "Noah Cleveland Rolls and Finishes With Slam Dunk And The Foul, Trimming Illinois State's Deficit vs Purdue",
+          "url": "https://www.espn.com/nfl/story/_/id/50403440/sources-colts-engaged-daniel-jones-trade-talks",
+          "title": "Colts in Daniel Jones trade talks as multiple teams call about QB, sources say",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD9QS164El3VCEBhsL06eebAaIKRD-7mTn559TEHJ9gPOWM7H61FVnOaZDtY8"
+        },
+        {
+          "url": "https://www.foxnews.com/outkick-sports/proof-team-trading-daniel-jones-nfl-trade-deadline-chasing-fools-gold",
+          "title": "More proof that any team trading for Daniel Jones at the NFL trade deadline is chasing fool's gold",
           "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBKDFLRyaElqcyFl3XsjBpLPVKWzn4r2dqfwfUjGJTJIo4IsTXAQmLudi9_nU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVFsctIbc5uFYmStquyrvM8MjCiptCBDLewRSKFN9DXpF-zZ7ydwWsFq8RBok"
         },
         {
-          "url": "https://www.indystar.com/story/sports/college/purdue/2026/11/08/purdue-basketball-game-tonight-vs-illinois-state-start-time-how-to-watch-stream/92677069007/",
-          "title": "Purdue basketball vs Illinois State start time, where to watch, roster, schedule tonight, Nov. 9",
-          "publisher": "IndyStar",
+          "url": "https://www.nfl.com/news/trade-talk-latest-on-colts-qb-daniel-jones-chargers-lb-khalil-mack-ahead-of-deadline",
+          "title": "Trade talk: Latest on Colts QB Daniel Jones, Chargers LB Khalil Mack ahead of deadline",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2BGwaTNngN4WZvtT8L6AEYxf72OnywhhKJRGGb-XMphN8UXwFr82hHS03ngI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThrkweIxX33ex0H2IdobI63-XGGfNtq0zOAMPJPWi1bInGGmUs_S4FKqmVIjs"
+        }
+      ]
+    },
+    {
+      "query": "aaron jones sr",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T04:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50434104/jordyn-tyson-saints-debut-promise-rookie-mistakes",
+        "https://www.nfl.com/videos/jordyn-tyson-fumbles-the-football-to-the-browns-right-after-making-his-first-nfl-catch",
+        "https://www.nola.com/sports/saints/jordyn-tyson-s-nfl-debut-included-his-first-big-mistake-and-an-important-response/article_43a91ba3-96a2-4593-bef9-dd7082838d70.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ602QVtHi2t2pZR-NpVn1ddcj4G6Qwkj2K-VmnkRvlLgV9EGkV_2bU528gHfg",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50434104/jordyn-tyson-saints-debut-promise-rookie-mistakes",
+          "title": "Jordyn Tyson's Saints debut showed promise, rookie mistakes",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ602QVtHi2t2pZR-NpVn1ddcj4G6Qwkj2K-VmnkRvlLgV9EGkV_2bU528gHfg"
         },
         {
-          "url": "https://www.hammerandrails.com/purdue-mens-basketball/62196/purdue-mens-basketball-game-3-preview-purdue-0-2-vs-illinois-state-1-1",
-          "title": "Purdue Men’s Basketball Game 3 Preview: Purdue (0-2) vs. Illinois State (1-1)",
-          "publisher": "Hammer and Rails",
+          "url": "https://www.nfl.com/videos/jordyn-tyson-fumbles-the-football-to-the-browns-right-after-making-his-first-nfl-catch",
+          "title": "New Orleans Saints wide receiver Jordyn Tyson fumbles the football to the Browns right after making his first NFL catch",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiAeJAMmuqVLyIcTYnDcjGMNDwBRL7kOAOXY1kF7aAFvj5NzU7J_ezhzuVjr4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXqigLCk0if3_eLIEkumy6f_2Smr4nVlHR6jaGWZrW2HP6RwCaHPo9VgqcMWk"
+        },
+        {
+          "url": "https://www.nola.com/sports/saints/jordyn-tyson-s-nfl-debut-included-his-first-big-mistake-and-an-important-response/article_43a91ba3-96a2-4593-bef9-dd7082838d70.html",
+          "title": "Jordyn Tyson’s NFL debut included his first big mistake and an important response",
+          "publisher": "NOLA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvQL51F6CTmbZLhUD3-q1fuc33z3zMljHaiwWgnjBBhuJfzKIzwKA4LJeRkCg"
+        }
+      ]
+    },
+    {
+      "query": "coachella 2027",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T04:10:00Z",
+      "related_news_urls": [
+        "https://www.sfgate.com/sf-culture/article/coachella-headliners-leak-22522136.php",
+        "https://www.yahoo.com/entertainment/music/festivals/articles/did-sza-just-confirm-coachella-225220811.html",
+        "https://inmusicblog.com/news/sza-coachella-2027-headliners-dua-lipa-tame-impala/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu7m26jqmr36TZGo8p0VvVhPnAo6GovpILVjEHMwDniQ8nsYVehoDOaJdyDjc",
+      "image_credit": "SFGATE",
+      "news": [
+        {
+          "url": "https://www.sfgate.com/sf-culture/article/coachella-headliners-leak-22522136.php",
+          "title": "SZA appears to leak Coachella 2027 headliners",
+          "publisher": "SFGATE",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu7m26jqmr36TZGo8p0VvVhPnAo6GovpILVjEHMwDniQ8nsYVehoDOaJdyDjc"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/music/festivals/articles/did-sza-just-confirm-coachella-225220811.html",
+          "title": "Did SZA just confirm Coachella 2027 headliner rumors? Fans think so",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdxQiL2dswIpMD2IT6q0g7rf5IpxkIAPThBF1PpYGCtzbZBt8rc45SgZItxEc"
+        },
+        {
+          "url": "https://inmusicblog.com/news/sza-coachella-2027-headliners-dua-lipa-tame-impala/",
+          "title": "SZA Seemingly Confirms Dua Lipa and Tame Impala as Coachella 2027 Headliners",
+          "publisher": "InMusic Blog",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWB5cE7rJyur27B6zmizX7fl5dCxvVYlktHWlIZdsBPUsxxFQ-PHzPVgjXaoY"
+        }
+      ]
+    },
+    {
+      "query": "new zealand national cricket team vs india national cricket team match scorecard",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T04:00:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/story/two-extremes-few-answers-india-s-search-for-a-settled-pace-attack-1561806",
+        "https://sports.yahoo.com/articles/zealand-vs-india-3rd-odi-010002935.html",
+        "https://www.cnet.com/tech/services-and-software/new-zealand-vs-india-how-to-watch-3rd-odi-cricket-live-from-anywhere/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTI90oeAiQNbMsUNxuf9pRTHfxUUlUYap5pEDhwDj4LRTNgLneON9cOpe9bxg",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/story/two-extremes-few-answers-india-s-search-for-a-settled-pace-attack-1561806",
+          "title": "Two extremes, few answers: India's search for a settled pace attack",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTI90oeAiQNbMsUNxuf9pRTHfxUUlUYap5pEDhwDj4LRTNgLneON9cOpe9bxg"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/zealand-vs-india-3rd-odi-010002935.html",
+          "title": "New Zealand vs. India 3rd ODI live score, win probability and chances of victory in Hamilton",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeGZ0vDbz2l1nq7ZVHygLD_a7cdezjlOiAVDT816mkqPnab2lgF3XWplhgn4w"
+        },
+        {
+          "url": "https://www.cnet.com/tech/services-and-software/new-zealand-vs-india-how-to-watch-3rd-odi-cricket-live-from-anywhere/",
+          "title": "New Zealand vs. India: How to Watch 3rd ODI Cricket Live From Anywhere",
+          "publisher": "CNET",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-v25tmLKf2aM1VTMUWPEmqQE0FugShkDv024Ri-4fOP8HJEzydEagM36LDj0"
+        }
+      ]
+    },
+    {
+      "query": "saddiq bey",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T03:50:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/nor-starts-fears-murray-jones-bey-matkovic",
+        "https://www.rotowire.com/basketball/headlines/saddiq-bey-news-drawing-first-start-of-season-538395",
+        "https://www.cbssports.com/fantasy/basketball/news/pelicans-herbert-jones-starting-monday/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsu0nMAzCgvVkF9ARLb4JmUvwmLkLJ3VsrnaCWzUwesQOwLqQ7HByI6J9CjRE",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/nor-starts-fears-murray-jones-bey-matkovic",
+          "title": "NOR starts Fears, Murray, Jones, Bey, Matković",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsu0nMAzCgvVkF9ARLb4JmUvwmLkLJ3VsrnaCWzUwesQOwLqQ7HByI6J9CjRE"
+        },
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/saddiq-bey-news-drawing-first-start-of-season-538395",
+          "title": "Saddiq Bey News: Drawing first start of season",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCpgsxj4C8xjk0npzZVGOIXrjotzMrE4jzFZjqczEKX4igt5CR-W2FwmlGgXU"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/pelicans-herbert-jones-starting-monday/",
+          "title": "Pelicans' Herbert Jones: Starting Monday",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnLuJyGE-4fvkpkhhFpY-KsXN2Bt_GwESwcn8jwJiK_oJLd0rhId20iDjdsJ0"
+        }
+      ]
+    },
+    {
+      "query": "jeffrey epstein",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T03:50:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cm86z6w59gggo",
+        "https://www.bbc.co.uk/news/videos/cmqxnxgwqrqlo",
+        "https://ua.news/en/dovkolo-svitu/model-zaiavila-shcho-prezident-mc2-vidpraviv-yiyi-do-epshteina-bbc-news"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhj5tkyCuZxGR8NdtVWgtJAuF6JkxtyhbtIdDk5j7zI0b4I70bZlLVSs-swfs",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cm86z6w59gggo",
+          "title": "Epstein associate who still runs model agency 'put me in danger' says abuse survivor",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhj5tkyCuZxGR8NdtVWgtJAuF6JkxtyhbtIdDk5j7zI0b4I70bZlLVSs-swfs"
+        },
+        {
+          "url": "https://www.bbc.co.uk/news/videos/cmqxnxgwqrqlo",
+          "title": "How model agencies helped Epstein access victims",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeyzW2YP7smHiRyHVX9vGLDui6z8PAmq7hVCWDZ4BRoi9zx48ZusrWJcTWyOk"
+        },
+        {
+          "url": "https://ua.news/en/dovkolo-svitu/model-zaiavila-shcho-prezident-mc2-vidpraviv-yiyi-do-epshteina-bbc-news",
+          "title": "Model says MC2 president sent her to Epstein — BBC News",
+          "publisher": "UA.NEWS",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTprtFj6PtCUhjL9SO-aSMY52a4okToB4iZCiv98ebsXUeX7y2unNMsZ6_lpX4"
         }
       ]
     },
@@ -77,128 +252,58 @@
       ]
     },
     {
-      "query": "zion williamson",
+      "query": "new orleans pelicans vs golden state warriors match player stats",
       "approx_searches": "1000+",
       "published_at": "2026-11-10T03:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/nba/article/pelicans-zion-williamson-to-miss-first-game-of-2026-27-season-out-for-rest-vs-warriors-224448869.html",
-        "https://basketnews.com/news-259147-pelicans-reveal-brutal-zion-williamson-final-status-vs-warriors.html",
-        "https://www.rotowire.com/basketball/headlines/zion-williamson-news-sitting-out-monday-538347"
+        "https://sports.yahoo.com/articles/warriors-great-news-pelicans-game-195706096.html",
+        "https://www.usatoday.com/sports/nba/event/2026/3018479/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NBA&tile=2",
+        "https://www.nytimes.com/athletic/7769305/2026/11/09/pelicans-vs-warriors-stream-how-to-watch-nov-9/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQARbXnKyvyS73AMewYZOLwWdmj9m9juj1tGsKclZPngLMMlM7SstjZYExFtrE",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcWHLJnlEt6jJWKtHC5N1SBRCefq_2bYrVdpgFlBFZ9cuskr8jD-gdwlXYV1Y",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/nba/article/pelicans-zion-williamson-to-miss-first-game-of-2026-27-season-out-for-rest-vs-warriors-224448869.html",
-          "title": "Pelicans' Zion Williamson to miss first game of 2026-27 season, out for rest vs. Warriors",
+          "url": "https://sports.yahoo.com/articles/warriors-great-news-pelicans-game-195706096.html",
+          "title": "Warriors Get Great News Before Pelicans Game Amid Record-Setting Run",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQARbXnKyvyS73AMewYZOLwWdmj9m9juj1tGsKclZPngLMMlM7SstjZYExFtrE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcWHLJnlEt6jJWKtHC5N1SBRCefq_2bYrVdpgFlBFZ9cuskr8jD-gdwlXYV1Y"
         },
         {
-          "url": "https://basketnews.com/news-259147-pelicans-reveal-brutal-zion-williamson-final-status-vs-warriors.html",
-          "title": "Pelicans reveal brutal Zion Williamson final status vs. Warriors",
-          "publisher": "BasketNews.com",
+          "url": "https://www.usatoday.com/sports/nba/event/2026/3018479/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NBA&tile=2",
+          "title": "New Orleans Pelicans at Golden State Warriors - NBA Game Summary - Nov 09, 2026",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxpm3bxIaFvV5skgv5pVllzwAyIU3rL6oueMJsFbmIUhQA2uwWomDAmk6nJy4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-i1P2UBS5xN9qdK_t3RraJUnnbw-3vi6cRFbk9JAHp_lqhAKkhPIm4taVeWA"
         },
         {
-          "url": "https://www.rotowire.com/basketball/headlines/zion-williamson-news-sitting-out-monday-538347",
-          "title": "Zion Williamson News: Sitting out Monday",
-          "publisher": "RotoWire",
+          "url": "https://www.nytimes.com/athletic/7769305/2026/11/09/pelicans-vs-warriors-stream-how-to-watch-nov-9/",
+          "title": "How to watch Pelicans vs. Warriors: TV channel and streaming options for November 9",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKEYpXaplWunSnBYAU9yffi9hcE7LqvNoqNhSUg-I04FcQsudzTCU35M5hc5I"
-        }
-      ]
-    },
-    {
-      "query": "dejounte murray",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T03:40:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/fantasy/basketball/news/pelicans-dejounte-murray-season-worst-outing-in-rout/",
-        "https://www.fantasypros.com/nba/news/618799/dejounte-murray-quiet-loss-to-clippers.php",
-        "https://www.rotowire.com/basketball/headlines/dejounte-murray-news-season-worst-outing-in-rout-538346"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnLuJyGE-4fvkpkhhFpY-KsXN2Bt_GwESwcn8jwJiK_oJLd0rhId20iDjdsJ0",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/pelicans-dejounte-murray-season-worst-outing-in-rout/",
-          "title": "Pelicans' Dejounte Murray: Season-worst outing in rout",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnLuJyGE-4fvkpkhhFpY-KsXN2Bt_GwESwcn8jwJiK_oJLd0rhId20iDjdsJ0"
-        },
-        {
-          "url": "https://www.fantasypros.com/nba/news/618799/dejounte-murray-quiet-loss-to-clippers.php",
-          "title": "Dejounte Murray quiet in loss to Clippers",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQE-FDpwPgG2MPsG5qFtMwcDiWIaBJDHl1mED7NkpSetKVBEHqgvk7JzBWQpLc"
-        },
-        {
-          "url": "https://www.rotowire.com/basketball/headlines/dejounte-murray-news-season-worst-outing-in-rout-538346",
-          "title": "Dejounte Murray News: Season-worst outing in rout",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDSC0d2m7E2Yvh9mgd0I-l0erN3_R5GawuvTk11G6YjynwMLo-Xn_V_IAU4RE"
-        }
-      ]
-    },
-    {
-      "query": "ben hutton",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T03:40:00Z",
-      "related_news_urls": [
-        "https://nhl.com/video/nyi-sjs-hutton-scores-goal-against-yaroslav-askarov-6408166005112",
-        "https://www.lighthousehockey.com/islanders-news-headlines/45458/islanders-news-ben-hutton-practice-injuries",
-        "https://nypost.com/2026/11/08/sports/ben-hutton-supplants-scott-mayfield-in-islanders-lineup/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-jqrrLNcjall8zd3ymWzdGs7F5qG4Pm4HpccXZguYYkEx3yDw65FsklLF7Es",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://nhl.com/video/nyi-sjs-hutton-scores-goal-against-yaroslav-askarov-6408166005112",
-          "title": "Hutton's first goal with Islanders",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-jqrrLNcjall8zd3ymWzdGs7F5qG4Pm4HpccXZguYYkEx3yDw65FsklLF7Es"
-        },
-        {
-          "url": "https://www.lighthousehockey.com/islanders-news-headlines/45458/islanders-news-ben-hutton-practice-injuries",
-          "title": "Islanders News: Practicing and waiting",
-          "publisher": "Lighthouse Hockey",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8yImRWnJx8Rc9hN0mfat02zuXX5f4m5516kvNBpqNzsExsyJL2vJt5KAvtl4"
-        },
-        {
-          "url": "https://nypost.com/2026/11/08/sports/ben-hutton-supplants-scott-mayfield-in-islanders-lineup/",
-          "title": "Ben Hutton supplants Scott Mayfield in Islanders’ lineup",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQYoDJLCCdTtUaimilobBUWd5OdIOCEJ_ghqONsLmzpiS_QgPbV9o_v50cLVk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9OuaHvKIHMN3hnLdphDkGdrrJ5xhzv8MQxFBko3jeBynlO_F47U8DccPW6vg"
         }
       ]
     },
     {
       "query": "daisy ridley",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-10T03:40:00Z",
       "related_news_urls": [
-        "https://deadline.com/2026/11/obsession-afm-2026-preview-hot-list-1237217117/",
+        "https://www.yahoo.com/entertainment/movies/articles/quest-next-obsession-movies-jeremy-034154299.html",
         "https://www.hollywoodreporter.com/lists/afm-hotlist-2026-josh-brolin-daisy-ridley-james-mcavoy/",
-        "https://www.mediaplaynews.com/american-film-market-opens-with-focus-on-ai-production-and-new-business-models/"
+        "https://deadline.com/2026/11/obsession-afm-2026-preview-hot-list-1237217117/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpYuRSERnletw56Q2WzBRP0DrFhIVg_EYVW7z6EEDdOdj7W3bLxSGxrOzceQc",
-      "image_credit": "Deadline",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYF_oHoJoxs7ExuAtbxmcDwWTG1q8WocBYjbuixs5R4jW9YocbekLORAlMZZ0",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://deadline.com/2026/11/obsession-afm-2026-preview-hot-list-1237217117/",
-          "title": "'Obsession' Hunt Continues: AFM 2026 Market Preview & Analysis",
-          "publisher": "Deadline",
+          "url": "https://www.yahoo.com/entertainment/movies/articles/quest-next-obsession-movies-jeremy-034154299.html",
+          "title": "Quest for Next Obsession Is on With Movies From Jeremy Renner, Idris Elba & More",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpYuRSERnletw56Q2WzBRP0DrFhIVg_EYVW7z6EEDdOdj7W3bLxSGxrOzceQc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYF_oHoJoxs7ExuAtbxmcDwWTG1q8WocBYjbuixs5R4jW9YocbekLORAlMZZ0"
         },
         {
           "url": "https://www.hollywoodreporter.com/lists/afm-hotlist-2026-josh-brolin-daisy-ridley-james-mcavoy/",
@@ -208,151 +313,46 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpM4EYbInDdMOoDwm0eV_vy1BUaj3ktvRBXRMzRKEo6oRGOaqevjE9XUk35E"
         },
         {
-          "url": "https://www.mediaplaynews.com/american-film-market-opens-with-focus-on-ai-production-and-new-business-models/",
-          "title": "American Film Market Opens With Focus on AI, Production and New Business Models",
-          "publisher": "Media Play News",
+          "url": "https://deadline.com/2026/11/obsession-afm-2026-preview-hot-list-1237217117/",
+          "title": "'Obsession' Hunt Continues: AFM 2026 Market Preview & Analysis",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYiUJDji_DroH9ien_GhxBKg6kZlEak4obTEl_i7a7YFFYW-B3wLCn-lN5sdQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpYuRSERnletw56Q2WzBRP0DrFhIVg_EYVW7z6EEDdOdj7W3bLxSGxrOzceQc"
         }
       ]
     },
     {
-      "query": "katt williams",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T03:40:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/katt-williams-opens-horrific-childhood-153746638.html",
-        "https://finance.biggo.com/news/12fa16a2fddc26f9",
-        "https://www.pressreader.com/usa/usa-today-us-edition/20261102/282063398980768"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5zOKx5RU_yUb9CBVW5gnjZO8WSyaGiH9oJGIVD93yy8XgFnIFfFTPCDZ89uw",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/katt-williams-opens-horrific-childhood-153746638.html",
-          "title": "Katt Williams opens up about horrific childhood abuse, recalls being “tied up to a pole in the basement” for questioning parents’ religious beliefs",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5zOKx5RU_yUb9CBVW5gnjZO8WSyaGiH9oJGIVD93yy8XgFnIFfFTPCDZ89uw"
-        },
-        {
-          "url": "https://finance.biggo.com/news/12fa16a2fddc26f9",
-          "title": "Katt Williams Says He Outworked 300 Comedians to Build a Self-Funded Stand-Up Empire",
-          "publisher": "BigGo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqPspjx1oftfOzxVJEoZ-tg93nxbLSu4svHUX7JtHplIr4YSVqrjfhYU9-68E"
-        },
-        {
-          "url": "https://www.pressreader.com/usa/usa-today-us-edition/20261102/282063398980768",
-          "title": "Katt Williams doesn’t shy from ‘ugly’ truth in ‘Lives’",
-          "publisher": "PressReader",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNxEckgO01NJL2iFeLpP73uxS7y5e_brZ0K3L9i2uW2qtCr1kL1Exl_V4VyPs"
-        }
-      ]
-    },
-    {
-      "query": "michael strahan",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T03:40:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7766474/2026/11/09/arvell-reese-new-york-giants-rookie-of-the-year/",
-        "https://www.cleveland.com/osu/2026/11/this-former-ohio-state-glenville-star-just-broke-an-nfl-record-buckeye-breakfast.html",
-        "https://www.giants.com/video/cb-greg-newsome-ii-on-arvell-reese-he-s-unbelievable"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDR45DkK2D8cNUQb_cfMssZHglGZgr50Q6HlPHH7miJUTcK92n5jJpCZ98E8g",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7766474/2026/11/09/arvell-reese-new-york-giants-rookie-of-the-year/",
-          "title": "Giants’ Arvell Reese torments Eagles, bolsters Defensive Rookie of the Year case",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDR45DkK2D8cNUQb_cfMssZHglGZgr50Q6HlPHH7miJUTcK92n5jJpCZ98E8g"
-        },
-        {
-          "url": "https://www.cleveland.com/osu/2026/11/this-former-ohio-state-glenville-star-just-broke-an-nfl-record-buckeye-breakfast.html",
-          "title": "This former Ohio State, Glenville star just broke an NFL record: Buckeye Breakfast",
-          "publisher": "Cleveland.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgBg_0YAcr4Cm8ZANiCrqPGKfFZ9PHtzbxKq6DAteZHjG4WuH1lzQQIqLZO54"
-        },
-        {
-          "url": "https://www.giants.com/video/cb-greg-newsome-ii-on-arvell-reese-he-s-unbelievable",
-          "title": "CB Greg Newsome II on Arvell Reese: 'He's unbelievable'",
-          "publisher": "Giants.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkS_XToybvy4oeMwF-yCM9GiHJvwdLOi2O3w8Uz0hZQ8G09RW5_2VB-EZ11sY"
-        }
-      ]
-    },
-    {
-      "query": "election results mississippi senate race",
+      "query": "jamal murray",
       "approx_searches": "1000+",
-      "published_at": "2026-11-10T03:30:00Z",
+      "published_at": "2026-11-10T03:40:00Z",
       "related_news_urls": [
-        "https://apnews.com/projects/elections-2026/mississippi-us-senate-results/",
-        "https://www.cnn.com/2026/11/09/politics/mississippi-senate-hyde-smith-colom-campaign",
-        "https://www.washingtonpost.com/elections/2026/11/09/democrat-scott-colom-attacks-cook-reports-accuracy/"
+        "https://www.espn.com/nba/recap/_/gameId/401909957",
+        "https://www.denverpost.com/2026/11/09/nuggets-rockets-score-jamal-murray-kevin-durant/",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/kevin-durant-posts-23-12-8-stat-line-vs-denver"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9oEasnTDRUr2q-TjRibhJWnth8kxzHe5jfe3GfDfY-gXR0YEwlFWtnaG6Fng",
-      "image_credit": "AP News",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJpTiaR8a5NMShzX7xMEs9J1phvFRef8jupc2u_as-5cXNMbiGrytTeKz4a4E",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://apnews.com/projects/elections-2026/mississippi-us-senate-results/",
-          "title": "Mississippi U.S. Senate Election Live Results 2026",
-          "publisher": "AP News",
+          "url": "https://www.espn.com/nba/recap/_/gameId/401909957",
+          "title": "Rockets 110-100 Nuggets (Nov 9, 2026) Game Recap",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9oEasnTDRUr2q-TjRibhJWnth8kxzHe5jfe3GfDfY-gXR0YEwlFWtnaG6Fng"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJpTiaR8a5NMShzX7xMEs9J1phvFRef8jupc2u_as-5cXNMbiGrytTeKz4a4E"
         },
         {
-          "url": "https://www.cnn.com/2026/11/09/politics/mississippi-senate-hyde-smith-colom-campaign",
-          "title": "‘Where is Cindy Hyde-Smith?’: In a nail-biter Senate race, the incumbent stays out of view in Mississippi",
-          "publisher": "CNN",
+          "url": "https://www.denverpost.com/2026/11/09/nuggets-rockets-score-jamal-murray-kevin-durant/",
+          "title": "Nuggets can’t find enough offense outside Jamal Murray in loss to Rockets",
+          "publisher": "The Denver Post",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrH_TQ9MXsgyjWpDxOnFK9hS3QTr_ve10V3pfDu8fXAzzYPwsfezyAeWnmXyM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeI1A7YDOrF4nmr9Nl34kS13RTKXteXH0yJv3IbGDM7wVMNru1IBWjqPFyjEU"
         },
         {
-          "url": "https://www.washingtonpost.com/elections/2026/11/09/democrat-scott-colom-attacks-cook-reports-accuracy/",
-          "title": "Mississippi Senate candidate Scott Colom attacks Cook Political Report accuracy",
-          "publisher": "The Washington Post",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/kevin-durant-posts-23-12-8-stat-line-vs-denver",
+          "title": "Kevin Durant posts 23/12/8 stat line vs. Denver",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTP2r_qfjqsE4rmac_d0Llxn1xN_9KyeOSQlXPZnqN7ptAcCEy5jFgzANzuVPU"
-        }
-      ]
-    },
-    {
-      "query": "denver nuggets vs houston rockets match player stats",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T03:30:00Z",
-      "related_news_urls": [
-        "https://www.covers.com/sport/basketball/nba/matchup/388692",
-        "https://sports.betmgm.com/en/blog/ncaab/green-bay-st-thomas-prediction-odds-picks-nov-8-college-basketball-jaa/",
-        "https://abcnews.com/Sports/wireStory/saint-thomas-tommies-play-green-bay-phoenix-conference-137951252"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmQUjSqjfXuWClUNdNKWBTSehoGyfQfwptqzZA0uBfcP2h_7zq8CiFTMCRFio",
-      "image_credit": "Covers.com",
-      "news": [
-        {
-          "url": "https://www.covers.com/sport/basketball/nba/matchup/388692",
-          "title": "Grizzlies vs Raptors Game Overview, Match Player Stats, Injuries, Records - NBA Game on November 09, 2026",
-          "publisher": "Covers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmQUjSqjfXuWClUNdNKWBTSehoGyfQfwptqzZA0uBfcP2h_7zq8CiFTMCRFio"
-        },
-        {
-          "url": "https://sports.betmgm.com/en/blog/ncaab/green-bay-st-thomas-prediction-odds-picks-nov-8-college-basketball-jaa/",
-          "title": "Green Bay vs St. Thomas Prediction, Odds & Best Bets Today – NCAAB, Nov. 8",
-          "publisher": "sports.betmgm.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWNbDJpVAGEouB_Gx416W98HNYv73Fpryzse4qUgpR6QHrUPmevUm89dHohiI"
-        },
-        {
-          "url": "https://abcnews.com/Sports/wireStory/saint-thomas-tommies-play-green-bay-phoenix-conference-137951252",
-          "title": "Saint Thomas Tommies play the Green Bay Phoenix in non-conference play",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnAXuNjFpZC1-r3b4tjIgOqXdrgCSTTew6u5rc3xoVkPvrQ-uxkBhne9UckDs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEibuKpkNSfprW4V6Zhbo4IlV62HlFlJ9UcBiVlchRsTujhyqZsjo-ucuV9Sw"
         }
       ]
     }
