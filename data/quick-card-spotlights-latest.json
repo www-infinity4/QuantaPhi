@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-10T16:19:33.267818Z",
+  "checked_at": "2026-11-10T17:18:22.062464Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -1273,7 +1273,7 @@
     },
     "durable-klein-tools": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T11:17:53.668250Z",
+      "attempted_at": "2026-11-10T17:18:22.062464Z",
       "items": [
         {
           "url": "https://www.kleintools.com/",
@@ -1281,7 +1281,7 @@
           "title": "Klein Tools - For Professionals since 1857 | Klein Tools",
           "kind": "website",
           "description": "Klein Tools is committed to American Manufacturing, since 1857. For over 160 years, Klein Tools has remained dedicated to professional tradesmen worldwide, with a commitment to manufacturing the world's finest hand tools right here in America. We don't just ma",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1290,7 +1290,7 @@
           "title": "Klein Tools logo",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1299,7 +1299,7 @@
           "title": "Low-Profile Design. Reliable Performance.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1308,7 +1308,7 @@
           "title": "Low-Profile Design. Reliable Performance.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1317,7 +1317,7 @@
           "title": "Products by Industry",
           "kind": "website",
           "description": "Klein Tools is committed to American Manufacturing, since 1857. For over 160 years, Klein Tools has remained dedicated to professional tradesmen worldwide, with a commitment to manufacturing the world's finest hand tools right here in America. We don't just ma",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1326,7 +1326,7 @@
           "title": "Contractor Supply & Jobsite Materials",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1335,7 +1335,7 @@
           "title": "Steel, Concrete, Construction and Iron Worker",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1344,14 +1344,14 @@
           "title": "Most Popular | Klein Tools",
           "kind": "website",
           "description": "Klein Tools is committed to American Manufacturing, since 1857. For over 160 years, Klein Tools has remained dedicated to professional tradesmen worldwide, with a commitment to manufacturing the world's finest hand tools right here in America. We don't just ma",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-lodge-cast-iron": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T11:17:53.668250Z",
+      "attempted_at": "2026-11-10T17:18:22.062464Z",
       "items": [
         {
           "url": "https://www.lodgecastiron.com/collections/luxe-enamel",
@@ -1359,7 +1359,7 @@
           "title": "Lodge Cast Iron | USA Made Cookware, Bakeware, Pans & More",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1368,7 +1368,7 @@
           "title": "Lodge Cast Iron | USA Made Cookware, Bakeware, Pans & More",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1377,7 +1377,7 @@
           "title": "Lodge Cast Iron | USA Made Cookware, Bakeware, Pans & More",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1386,74 +1386,62 @@
           "title": "Lodge Cast Iron | USA Made Cookware, Bakeware, Pans & More",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
           "url": "https://www.lodgecastiron.com/products/nutcracker-2026-holiday-mini-skillet",
-          "image": "https://www.lodgecastiron.com/cdn/shop/files/3000x3000_LMSWIN26_5.jpg?v=1790704113&width=1920",
+          "image": "https://www.lodgecastiron.com/cdn/shop/files/3000x3000_LMSWIN26_5_1024x1024.jpg?v=1790704113",
           "title": "Nutcracker 2026 Holiday Mini Skillet",
           "kind": "product",
           "description": "Our annual Holiday Mini Skillet tradition continues with a limited-edition nutcracker design! Packed in a special holiday gift box, this skillet is the ultimate stocking stuffer. Complete with a yellow ribbon, the piece can be displayed in your kitchen or even",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "16.95",
             "currency": "USD",
             "evidence": "jsonld-offer",
-            "availability": "http://schema.org/InStock"
+            "availability": "http://schema.org/InStock",
+            "valid_until": "2027-11-10T23:59:59+00:00"
           }
         },
         {
           "url": "https://www.lodgecastiron.com/products/custom-skillets",
-          "image": "https://www.lodgecastiron.com/cdn/shop/files/TExt_HolidayContent_3000x3000_WEB.jpg?v=1792694974&width=1920",
-          "title": "Custom Skillets - Engraved Text",
+          "image": "https://www.lodgecastiron.com/cdn/shop/files/TExt_HolidayContent_3000x3000_WEB_1024x1024.jpg?v=1792694974",
+          "title": "Custom Skillets",
           "kind": "product",
-          "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "description": "Put a personal touch on your favorite 10.25\" cast iron skillet. Just a heads up! If you choose to cook with this skillet, the engraved section on the bottom of the skillet will darken within a few times of using over heat. We think this adds extra personality,",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "99.99",
             "currency": "USD",
             "evidence": "jsonld-offer",
-            "availability": "http://schema.org/InStock"
+            "availability": "http://schema.org/InStock",
+            "valid_until": "2027-11-10T23:59:59+00:00"
           }
         },
         {
-          "url": "https://www.lodgecastiron.com/products/custom-skillets",
-          "image": "https://www.lodgecastiron.com/cdn/shop/files/3000x3000_Customization_Design_Updates_Father-sDay.png?v=1779904591&width=1920",
-          "title": "Custom Skillets - Engraved Award",
+          "url": "https://www.lodgecastiron.com/products/round-cast-iron-classic-skillet",
+          "image": "https://www.lodgecastiron.com/cdn/shop/files/L14SK3_L_1024x1024.jpg?v=1742328297",
+          "title": "Classic Cast Iron Skillets",
           "kind": "product",
-          "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "description": "A time-tested skillet that’s loved for its great heat retention, incredible durability, and ability to make almost any recipe you dream up. The naturally seasoned cooking surface is ready to go, straight from the foundry. Slidey eggs and perfectly seared steak",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
-            "price": "99.99",
+            "price": "12.95",
             "currency": "USD",
             "evidence": "jsonld-offer",
-            "availability": "http://schema.org/InStock"
-          }
-        },
-        {
-          "url": "https://www.lodgecastiron.com/products/custom-skillets",
-          "image": "https://www.lodgecastiron.com/cdn/shop/files/Star_Template_3_3000x3000_980e3a52-ff50-40e5-a638-12497300077e.jpg?v=1774973759&width=1920",
-          "title": "Custom Skillets - Engraved Honor",
-          "kind": "product",
-          "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
-          "category": "Infrastructure & Physical Tools",
-          "offer": {
-            "price": "99.99",
-            "currency": "USD",
-            "evidence": "jsonld-offer",
-            "availability": "http://schema.org/InStock"
+            "availability": "http://schema.org/InStock",
+            "valid_until": "2027-11-10T23:59:59+00:00"
           }
         }
       ]
     },
     "durable-le-creuset": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T11:17:53.668250Z",
+      "attempted_at": "2026-11-10T17:18:22.062464Z",
       "items": [
         {
           "url": "https://www.lecreuset.com/signature-roaster/20184US.html?psize=5-1/4-qt.",
@@ -1461,7 +1449,7 @@
           "title": "provence",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1470,7 +1458,7 @@
           "title": "All products with special offers",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1479,7 +1467,7 @@
           "title": "oval oven",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1488,14 +1476,14 @@
           "title": "Products with special offers",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-smithey-ironware": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T11:17:53.668250Z",
+      "attempted_at": "2026-11-10T17:18:22.062464Z",
       "items": [
         {
           "url": "https://smithey.com",
@@ -1503,7 +1491,7 @@
           "title": "Smithey Ironware Company | Premium Cast Iron Cookware",
           "kind": "website",
           "description": "Smithey Ironware Co. designs and manufactures heirloom quality cast iron and carbon steel cookware in Charleston, SC. From skillets to Dutch ovens, roasters to our hand-forged wok, Smithey crafts tools for your kitchen that will last a lifetime.",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1512,7 +1500,7 @@
           "title": "Seasoned: The Art and Craft of Cast Iron Cooking by Smithey, a hardcover cookbook with a cast iron skillet on its green cover.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1521,7 +1509,7 @@
           "title": "Seasoning Oil",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1530,7 +1518,7 @@
           "title": "Mighty Spatula",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1539,7 +1527,7 @@
           "title": "Glass Lids",
           "kind": "product",
           "description": "Carefully crafted to fit our core skillets, Smithey’s glass lids are thoughtfully designed using high-quality tempered glass and complete with a gold finished cast stainless steel knob and rim. Use them for steaming, braising, reducing sauces, and saving your ",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "30.0",
@@ -1554,7 +1542,7 @@
           "title": "No. 12 Skillet",
           "kind": "product",
           "description": "Our best-selling cast iron skillet, the No. 12, will elevate your cast iron cooking. Designed with slightly more surface area and depth than the No. 10, the No. 12 is the perfect size for families of four or those who cook to have leftovers. With our signature",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "220.0",
@@ -1569,7 +1557,7 @@
           "title": "Farmhouse Skillet",
           "kind": "product",
           "description": "A genuine “farmhouse” skillet, inspired by American blacksmith design of the 18th and 19th century, the Smithey 12” carbon steel skillet is as much of a work of art as it is a cooking tool. Limited in nature and forged by hand, each Farmhouse skillet is crafte",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "300.0",
@@ -1597,7 +1585,7 @@
     },
     "durable-all-clad": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T11:17:53.668250Z",
+      "attempted_at": "2026-11-10T17:18:22.062464Z",
       "items": [
         {
           "url": "https://www.all-clad.com/fall-cooking-with-all-clad",
@@ -1605,7 +1593,7 @@
           "title": "Fall Cooking with All-Clad. Shop Now.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1614,7 +1602,7 @@
           "title": "Graphite Core Lightness and precision. Explore.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1623,7 +1611,7 @@
           "title": "Cleaning and Care. Learn More.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1632,14 +1620,14 @@
           "title": "Built to Outlast. Explore the Legacy.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-fissler": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T11:17:53.668250Z",
+      "attempted_at": "2026-11-10T17:18:22.062464Z",
       "items": [
         {
           "url": "https://us.fissler.com/",
@@ -1647,7 +1635,7 @@
           "title": "The Fissler logo is shown in red on a white background.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1656,7 +1644,7 @@
           "title": "AST_SA_2369652;1dd0cc2993126794fc10d80bc365c38a;PROD_997233",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1665,7 +1653,7 @@
           "title": "AST_SA_2734561;70d876d44e546ec50f3350fbd59cddca;PROD_2612542,SI_2578497",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1674,7 +1662,7 @@
           "title": "AST_SA_2369603;95dd21ae8cda1c978a0f48764173f7ec;PROD_1458837,SI_1459707,SI_2199679,SI_2199680",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1683,7 +1671,7 @@
           "title": "The World of Pressure Cooking –The Ultimate Guide to The Healthy Cooker® with 150+ Recipes, Techniques & History –Hardcover",
           "kind": "product",
           "description": "Unlock the full potential of The Healthy Cooker™ — the smarter way to pressure cook! The World of Pressure Cooking offers over 150 mouthwatering recipes, expert tips, and an in - depth look at the science and history behind this game - changing cooking method.",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "39.95",
@@ -1699,7 +1687,7 @@
           "title": "Pan Protector, 2 Piece Set",
           "kind": "product",
           "description": "​Safeguard your cookware with the Fissler Pan Protector, 2 Piece Set. Designed to prevent damage from stacking, these polyester felt protectors create a cushioned layer between pots, pans, and other cookware. Slip-resistant and heat-resistant, they are ideal f",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "29.95",
@@ -1715,7 +1703,7 @@
           "title": "Vitavit® Premium Pressure Cooker",
           "kind": "product",
           "description": "Discover The Healthy Cooker®, the award-winning Vitavit® Premium by Fissler, made in Germany for fast, healthy, and safe stovetop cooking. Designed to help you eat better with less effort, it cooks up to 70% faster than traditional methods while preserving up ",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "369.95",
@@ -1738,7 +1726,7 @@
     },
     "durable-zojirushi": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T11:17:53.668250Z",
+      "attempted_at": "2026-11-10T17:18:22.062464Z",
       "items": [
         {
           "url": "https://store.zojirushi.com/",
@@ -1746,7 +1734,7 @@
           "title": "Zojirushi x Lundberg Family Farms Bundle Campaign Banner: With every purchase of a Pressure IH, IH, or Micom Rice Cooker, claim two 2lb. packs of Lundberg Organic Rice Bundle for f",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1755,7 +1743,7 @@
           "title": "Woman in a city, taking out a Zojirushi GoCafe mug in turquoise white gradient color, from her purse.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1764,7 +1752,7 @@
           "title": "NL-EAC White Rice Cooker on a wooden countertop.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1773,7 +1761,7 @@
           "title": "Zojirushi Collection",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1782,7 +1770,7 @@
           "title": "NL-EAC10 Control Panel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1791,7 +1779,7 @@
           "title": "NL-EAC Video Screen Shot",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1800,7 +1788,7 @@
           "title": "Micro computer automatically adjusts cooking temperature and time",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1809,7 +1797,7 @@
           "title": "Black thick double nonstick coated inner cooking pan",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
@@ -2383,7 +2371,7 @@
     },
     "durable-vitamix": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T11:17:53.668250Z",
+      "attempted_at": "2026-11-10T17:18:22.062464Z",
       "items": [
         {
           "url": "https://www.vitamix.com/us/en_us/",
@@ -2391,7 +2379,7 @@
           "title": "High Performance Blenders - Blending Machines | Vitamix",
           "kind": "website",
           "description": "Vitamix is one of the most trusted brands in high performance blending technology for your home and business. Experience a Vitamix machine today!",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2400,7 +2388,7 @@
           "title": "Personal Blending | Vitamix",
           "kind": "website",
           "description": "Blend, store, and take on the go – all in the same container. Blending Cups and Bowls are easy to use and designed to maximize the versatility and convenience of your blender.",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2409,7 +2397,7 @@
           "title": "Ion™ Portable Blender",
           "kind": "product",
           "description": "The first portable Vitamix blender delivers blending performance in a compact, cordless design - perfect for blending on the go. With its modern, durable build and one-button operation, the Ion™ effortlessly creates smoothies, shakes, or other drinks, whe",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "149.95",
@@ -2424,7 +2412,7 @@
           "title": "Ascent® X5 with Stainless Steel Container",
           "kind": "product",
           "description": "Ascent X5 features a 48-ounce Stainless Steel Container, an automatic Self-Cleaning Program, and ten Blending Programs. Add SELF-DETECT® containers and attachments to build a customized blending system designed to fit your needs.",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "599.95",
@@ -2479,12 +2467,12 @@
     },
     "durable-ankarsrum": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T11:17:53.668250Z",
+      "attempted_at": "2026-11-10T17:18:22.062464Z",
       "items": []
     },
     "durable-bialetti": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T11:17:53.668250Z",
+      "attempted_at": "2026-11-10T17:18:22.062464Z",
       "items": [
         {
           "url": "https://www.bialetti.com/us_en",
@@ -2492,7 +2480,7 @@
           "title": "homepage-slider-US",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2501,7 +2489,7 @@
           "title": "US_signature-series",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2510,7 +2498,7 @@
           "title": "US_signature-series",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2519,7 +2507,7 @@
           "title": "Moka express Bialetti",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2528,7 +2516,7 @@
           "title": "Gift Ideas & Bundles",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2537,7 +2525,7 @@
           "title": "Bialetti Amore Italia 6-Cup Moka Induction Gift Set",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2546,7 +2534,7 @@
           "title": "Bialetti Amore Italia 6-Cup Moka Induction Gift Set",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2555,14 +2543,14 @@
           "title": "Bialetti Ultimate Moka Collection",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-technivorm-moccamaster": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T11:17:53.668250Z",
+      "attempted_at": "2026-11-10T17:18:22.062464Z",
       "items": [
         {
           "url": "https://us.moccamaster.com/",
@@ -2570,7 +2558,7 @@
           "title": "Moccamaster USA: Premium Pour-Over Coffee Brewers",
           "kind": "website",
           "description": "Coffee brewers handmade in the Netherlands out of high-quality, sustainable materials, built to last a lifetime. Dedicated to seeking the real taste of coffee.",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2579,7 +2567,7 @@
           "title": "layout",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2588,7 +2576,7 @@
           "title": "layout",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2597,7 +2585,7 @@
           "title": "Off-White KBGV Select glass carafe coffee brewer on a kitchen counter.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -2606,7 +2594,7 @@
           "title": "Moccamaster KM5 Burr Grinder",
           "kind": "product",
           "description": "The Moccamaster KM5 Burr Grinder contains a powerful, direct-drive motor that grinds coffee quickly and efficiently, and its static-reducing dispensing spout creates a mess-free grinding experience. The stepless knob allows for the finest adjustment of the 50 ",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "349.0",
@@ -2622,7 +2610,7 @@
           "title": "Moccamaster KBGV Coffee Maker – SCA/ECBC Certified Filter Brewer",
           "kind": "product",
           "description": "The Moccamaster KBGV Coffee Maker is a premium SCA-certified filter coffee brewer designed to brew pour-over-quality coffee at home. Handmade in the Netherlands, the KBGV delivers precise brewing temperature, even water distribution, and exceptional durability",
-          "checked_at": "2026-11-10T11:17:53.668250Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "369.0",
@@ -3919,12 +3907,12 @@
     },
     "durable-casio-g-shock-classic-line": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T10:19:12.716729Z",
+      "attempted_at": "2026-11-10T17:18:22.062464Z",
       "items": []
     },
     "durable-seiko-mechanical-automatic": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T10:19:12.716729Z",
+      "attempted_at": "2026-11-10T17:18:22.062464Z",
       "items": [
         {
           "url": "https://www.seikowatches.com/us-en/products/diamondcollection",
@@ -3932,7 +3920,7 @@
           "title": "photo of diamond collection",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3941,7 +3929,7 @@
           "title": "image of new model",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3950,7 +3938,7 @@
           "title": "image of limited edition watch",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3959,7 +3947,7 @@
           "title": "image of diver category",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3968,7 +3956,7 @@
           "title": "King Seiko | Seiko Watch Corporation",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3977,7 +3965,7 @@
           "title": "Prospex | Seiko Watch Corporation",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3986,19 +3974,19 @@
           "title": "Presage | Seiko Watch Corporation",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-rolex": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T10:19:12.716729Z",
+      "attempted_at": "2026-11-10T17:18:22.062464Z",
       "items": []
     },
     "durable-patek-philippe": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T10:19:12.716729Z",
+      "attempted_at": "2026-11-10T17:18:22.062464Z",
       "items": [
         {
           "url": "https://www.patek.com/en",
@@ -4006,22 +3994,22 @@
           "title": "Patek Philippe Official Site | Luxury Watches for Men & Ladies",
           "kind": "website",
           "description": "Official website of the last family-owned Genevan luxury watch manufacturer. Enter the Patek Philippe universe to discover our watches and savoir-faire.",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-pelican-cases": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T10:19:12.716729Z",
+      "attempted_at": "2026-11-10T17:18:22.062464Z",
       "items": [
         {
           "url": "https://www.pelican.com/us/en",
-          "image": "https://pelicanweb-prod.s3.us-west-1.amazonaws.com/public/promos/hero/images/1170_hp.jpg",
-          "title": "The 1170 Now in Pink",
+          "image": "https://pelicanweb-prod.s3.us-west-1.amazonaws.com/public/promos/hero/images/cases-hp-hero-desktop-c.jpg",
+          "title": "The Original Protective Case",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4030,7 +4018,7 @@
           "title": "pelican atx30 angled black 02",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4039,7 +4027,7 @@
           "title": "pelican 1615 air case check in airline case",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4048,7 +4036,7 @@
           "title": "pelican atx22 angled black 02",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4057,7 +4045,7 @@
           "title": "1170PF1 Protector",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4066,7 +4054,7 @@
           "title": "1615 Air",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4075,7 +4063,7 @@
           "title": "1535 Air",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4084,14 +4072,14 @@
           "title": "1510 Protector",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-nanuk": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T10:19:12.716729Z",
+      "attempted_at": "2026-11-10T17:18:22.062464Z",
       "items": [
         {
           "url": "https://nanuk.com",
@@ -4099,7 +4087,7 @@
           "title": "NANUK Hard Cases - Durable, Protective Cases for Your Gear",
           "kind": "website",
           "description": "Discover NANUK hard cases in various sizes and colors, perfect for drones, cameras, medical equipment, and more. Made in North America for ultimate protection. Shop Online Now.",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4108,7 +4096,7 @@
           "title": "A tan Nanuk 935 best selling protection case, a rugged rolling hard case with its telescoping handle extended and wheels visible, floats against a light grey background.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4117,7 +4105,7 @@
           "title": "A black Nanuk N-EDC 20 bag with a roll-top buckle closure and a water bottle in its side pocket is presented floating against a light gray background, highlighting its functionalit",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4126,7 +4114,7 @@
           "title": "A black Nanuk 905 hard case, part of the Nanuk bags and cases line, floats at an angle on a clean white background, highlighting its textured surface, handle, and latches.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4135,7 +4123,7 @@
           "title": "NANUK 935 - Black / Cubed Foam / Regular Wheels",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "254.95",
@@ -4150,7 +4138,7 @@
           "title": "NANUK 935 - Black / Cubed Foam / Heavy Duty Wheels",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "289.95",
@@ -4165,7 +4153,7 @@
           "title": "NANUK 935 - Black / Padded Divider / Regular Wheels",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "319.95",
@@ -4180,7 +4168,7 @@
           "title": "NANUK 935 - Black / Padded Divider / Heavy Duty Wheels",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "349.95",
@@ -4193,7 +4181,7 @@
     },
     "durable-zippo": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T10:19:12.716729Z",
+      "attempted_at": "2026-11-10T17:18:22.062464Z",
       "items": [
         {
           "url": "https://zippo.com/collections/refillable-butane-inserts",
@@ -4201,7 +4189,7 @@
           "title": "Four butane inserts in colorful cases.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4210,7 +4198,7 @@
           "title": "Two classic Pipe Inserts - Brass and Chrome",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4219,7 +4207,7 @@
           "title": "Zippo Bit Safe 4-in-1 Screwdriver Lighter Insert standing at a 3/4 angle with the Phillips head and other screw bits displayed.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4228,7 +4216,7 @@
           "title": "Three packages each of Zippo wicks and flints on a white background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4237,7 +4225,7 @@
           "title": "Double Arc Rechargeable Lighter Insert",
           "kind": "product",
           "description": "Take the customization process one step further with your choice of flame type. The Double Arc Rechargeable Insert features two powerful plasma beams that ignite at the press of a button, offering a flameless and windproof flame source that can easily be recha",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "26.95",
@@ -4252,7 +4240,7 @@
           "title": "Bit Safe Screwdriver Insert",
           "kind": "product",
           "description": "The Bit Safe Lighter Insert packs a functional screwdriver into your favorite Zippo case*, adding compact utility to your everyday carry. Remove the 4-in-1 insert from your case and quickly and easily swap between the onboard Phillips, flathead and Torx screwd",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "19.95",
@@ -4267,7 +4255,7 @@
           "title": "Cotton and Felt Replacement Kit",
           "kind": "product",
           "description": "Keep your windproof lighter working at optimal performance with Zippo's Cotton and Felt Replacement Kit. Kit includes enough absorbent cotton for one windproof lighter fuel reservoir and a replacement felt pad. Genuine Zippo cotton and felt replacement kit for",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "6.95",
@@ -4280,7 +4268,7 @@
     },
     "durable-ronson": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T10:19:12.716729Z",
+      "attempted_at": "2026-11-10T17:18:22.062464Z",
       "items": [
         {
           "url": "https://kb.zippo.com/?hsLang=en",
@@ -4288,7 +4276,7 @@
           "title": "Zippo Logo",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4297,14 +4285,14 @@
           "title": "Z-Lo-Br_ZippoLockupHorizontal-2cReverse",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-maglite": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T10:19:12.716729Z",
+      "attempted_at": "2026-11-10T17:18:22.062464Z",
       "items": [
         {
           "url": "https://maglite.com/collections/everyday",
@@ -4312,7 +4300,7 @@
           "title": "Home & Everyday",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4321,7 +4309,7 @@
           "title": "Outdoors & Travel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4330,7 +4318,7 @@
           "title": "Duty & Professional",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4339,7 +4327,7 @@
           "title": "Tactical & Military",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4348,7 +4336,7 @@
           "title": "Maglite® ML300L® 4-Cell D LED Flashlight –511-Meter Beam, Up to 434-Hour Runtime, 1,002 Lumens, 4 D-Cell Power, Quick Focus®, QuickClik® Multi-Mode Operation",
           "kind": "product",
           "description": "The Maglite® ML300L® 4D LED Flashlight is a full-size, high-performance flashlight built for home emergency preparedness, professional work, security, roadside use, camping, outdoor activities, and other situations where dependable long-range illumination and ",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "59.99",
@@ -4363,7 +4351,7 @@
           "title": "Maglite® Complete Home Flashlight Bundle - ML300L 4D Full Size, Mini Maglite Pro LED Compact Size, and Solitaire LED Small Keychain Size Flashlights - Black",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "80.72",
@@ -4378,7 +4366,7 @@
           "title": "Maglite® ML150LR Rechargeable LED Flashlight – 458-Meter Beam, 1,082 Lumens, 52,555 Candela & Up to 79-Hour Runtime, Quick Focus®, QuickClik® & Fast-Charging LiFePO4 Power - Black ",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "129.99",
@@ -4393,7 +4381,7 @@
           "title": "Maglite® ML150LR Rechargeable LED Flashlight – 458-Meter Beam, 1,082 Lumens, 52,555 Candela & Up to 79-Hour Runtime, Quick Focus®, QuickClik® & Fast-Charging LiFePO4 Power - Black ",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "119.99",
@@ -4406,7 +4394,7 @@
     },
     "durable-surefire": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T10:19:12.716729Z",
+      "attempted_at": "2026-11-10T17:18:22.062464Z",
       "items": [
         {
           "url": "https://www.surefire.com/categories/illumination/",
@@ -4414,7 +4402,7 @@
           "title": "Illumination",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4423,7 +4411,7 @@
           "title": "Suppressors",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4432,7 +4420,7 @@
           "title": "EarPro",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4441,14 +4429,14 @@
           "title": "Parts & Accessories",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-toyota-land-cruiser-hilux-industrial-platforms": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T10:19:12.716729Z",
+      "attempted_at": "2026-11-10T17:18:22.062464Z",
       "items": [
         {
           "url": "https://global.toyota/en/",
@@ -4456,7 +4444,7 @@
           "title": "Toyota Motor Corporation Official Global Website",
           "kind": "website",
           "description": "Toyota Motor Corporation Official Global Website―company, ir, newsroom, mobility, sustainability.",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4465,7 +4453,7 @@
           "title": "TMC's FY2027 2Q Financial Results Press Briefing",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4474,7 +4462,7 @@
           "title": "TMC's FY2027 2Q Financial Results Press Briefing",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4483,7 +4471,7 @@
           "title": "Toyota Launches New Hilux in Japan",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4517,7 +4505,7 @@
     },
     "durable-chris-king": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T10:19:12.716729Z",
+      "attempted_at": "2026-11-10T17:18:22.062464Z",
       "items": [
         {
           "url": "https://chrisking.com",
@@ -4525,7 +4513,7 @@
           "title": "Chris King Precision Components",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4534,7 +4522,7 @@
           "title": "ThreadFit™ 24",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4543,7 +4531,7 @@
           "title": "ThreadFit™ 24",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4552,7 +4540,7 @@
           "title": "ThreadFit™ 24",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4561,7 +4549,7 @@
           "title": "ThreadFit™ 24",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4570,7 +4558,7 @@
           "title": "ThreadFit™ 30",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4579,7 +4567,7 @@
           "title": "ThreadFit™ 30",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4588,14 +4576,14 @@
           "title": "ThreadFit™ 30",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T10:19:12.716729Z",
+          "checked_at": "2026-11-10T17:18:22.062464Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-shimano-deore-xt-xtr-mechanical": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T10:19:12.716729Z",
+      "attempted_at": "2026-11-10T17:18:22.062464Z",
       "items": []
     },
     "durable-phil-wood": {
