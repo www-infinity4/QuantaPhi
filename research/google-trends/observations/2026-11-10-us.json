@@ -3,348 +3,340 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T06:01:29.208050Z",
+  "checked_at": "2026-11-10T06:34:50.669825Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "macklin celebrini",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T05:40:00Z",
+      "query": "new zealand vs india",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-10T06:20:00Z",
       "related_news_urls": [
-        "https://www.newsday.com/sports/columnists/andrew-gross/islanders-andrew-gross-c30r10dm",
-        "https://nypost.com/2026/11/09/sports/matthew-schaefer-macklin-celebrini-should-be-next-big-nhl-rivalry/",
-        "https://www.nhl.com/video/sjs-min-celebrini-scores-goal-against-jesper-wallstedt-6408049744112"
+        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-odi-1539439/match-report",
+        "https://sports.yahoo.com/articles/rohit-sharma-score-today-zealand-032415103.html",
+        "https://www.wral.com/news/ap/421d4-rain-delays-the-toss-in-the-3rd-cricket-odi-between-new-zealand-and-india/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCwj8n50YwYmpaAeZk__i1V7Ny9q28ZZUuFIm0SmvG7ClzrIeLAuAu8nK8-VM",
-      "image_credit": "Newsday",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSj7EgRi5C0R__d29oK25qh-MUt_PUL57sqyoAJQdLwzCOWN6-NWDAB2X5YGPY",
+      "image_credit": "Cricinfo",
       "news": [
         {
-          "url": "https://www.newsday.com/sports/columnists/andrew-gross/islanders-andrew-gross-c30r10dm",
-          "title": "Andrew Gross: It's always a treat when the Islanders' Matthew Schaefer and the Sharks' Macklin Celebrini face each other",
-          "publisher": "Newsday",
+          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-odi-1539439/match-report",
+          "title": "India hold on to series lead after washout as New Zealand's winning streak ends",
+          "publisher": "Cricinfo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCwj8n50YwYmpaAeZk__i1V7Ny9q28ZZUuFIm0SmvG7ClzrIeLAuAu8nK8-VM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSj7EgRi5C0R__d29oK25qh-MUt_PUL57sqyoAJQdLwzCOWN6-NWDAB2X5YGPY"
         },
         {
-          "url": "https://nypost.com/2026/11/09/sports/matthew-schaefer-macklin-celebrini-should-be-next-big-nhl-rivalry/",
-          "title": "Matthew Schaefer-Macklin Celebrini should be next big NHL rivalry",
-          "publisher": "New York Post",
+          "url": "https://sports.yahoo.com/articles/rohit-sharma-score-today-zealand-032415103.html",
+          "title": "Rohit Sharma score today for New Zealand vs. India 3rd ODI in Hamilton",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSR44QjHVFALzGD0o0P_wjfY5ngmHSA6ggcWqxw_Z2Pm8STOz6b_L21tKhDPk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5tde4AWvSfkcmW2aa67NuS2M3143OZQf6tzWkAg2_cMI0hy8m_IM9WAzjDJ0"
         },
         {
-          "url": "https://www.nhl.com/video/sjs-min-celebrini-scores-goal-against-jesper-wallstedt-6408049744112",
-          "title": "Celebrini's tip-in goal",
-          "publisher": "NHL.com",
+          "url": "https://www.wral.com/news/ap/421d4-rain-delays-the-toss-in-the-3rd-cricket-odi-between-new-zealand-and-india/",
+          "title": "India wins the toss, bowls as rain threatens the 3rd ODI against New Zealand",
+          "publisher": "WRAL",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVo1nZf51XZRQLgsC82ZOy8_3pWhJ36mQMdrtYfbspJlU7EPU9tZrYOkTkZxw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZlf4m4deX--Au0fBCJmW8ru9B39t0H8GBVX_cKUo5HF02KfGtEzR0Zmhwxfc"
         }
       ]
     },
     {
-      "query": "bill murray",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-10T05:30:00Z",
+      "query": "henry cavill",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T06:20:00Z",
       "related_news_urls": [
-        "https://www.lohud.com/picture-gallery/life/food/restaurants/2026/11/03/bill-murray-visits-yonkers-bar-on-halloween/92591199007/",
-        "https://www.yahoo.com/entertainment/celebrity/articles/bill-murray-spends-halloween-yonkers-090353607.html",
-        "https://www.news.com.au/entertainment/celebrity-life/celebrity-photos/hollywood-legend-bill-murray-spotted-pulling-beers-in-bar/news-story/503290ac0f414ea93e173c33b9564f06"
+        "https://blog.google/products-and-platforms/devices/googlebook/henry-cavill-mustache-protocol-video-game/",
+        "https://9to5google.com/2026/11/04/henry-cavill-mustache-protocol-googlebook/",
+        "https://www.yahoo.com/entertainment/celebrity/articles/psa-henry-cavills-back-mustache-211118347.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRccrBEmmzj2Mcbsu1Dx4Ijyit-G5XVGPaJCY2lpMSNbS6iFBiUBT0Sal6CghI",
-      "image_credit": "Lohud",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBtvZ1IMNcBO1TlEVLvPsEuCiKSFl5lWQbVukdQv5zI1aoQAm2Yw_vKcwSaXs",
+      "image_credit": "blog.google",
       "news": [
         {
-          "url": "https://www.lohud.com/picture-gallery/life/food/restaurants/2026/11/03/bill-murray-visits-yonkers-bar-on-halloween/92591199007/",
-          "title": "Bill Murray visits Yonkers bar on Halloween",
-          "publisher": "Lohud",
+          "url": "https://blog.google/products-and-platforms/devices/googlebook/henry-cavill-mustache-protocol-video-game/",
+          "title": "Watch Henry Cavill build a video game on his Googlebook",
+          "publisher": "blog.google",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRccrBEmmzj2Mcbsu1Dx4Ijyit-G5XVGPaJCY2lpMSNbS6iFBiUBT0Sal6CghI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBtvZ1IMNcBO1TlEVLvPsEuCiKSFl5lWQbVukdQv5zI1aoQAm2Yw_vKcwSaXs"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/bill-murray-spends-halloween-yonkers-090353607.html",
-          "title": "Bill Murray spends Halloween at a Yonkers bar",
+          "url": "https://9to5google.com/2026/11/04/henry-cavill-mustache-protocol-googlebook/",
+          "title": "Henry Cavill builds 16-bit ‘Mustache Protocol’ game on Googlebook for a good cause [Video]",
+          "publisher": "9to5Google",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRxJsT5_zmNZlt2PZdaCvarEYM5im2p7gIqWLTMwWfOVwe-p6c6KOYd81fJhk"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/psa-henry-cavills-back-mustache-211118347.html",
+          "title": "PSA: Henry Cavill's Back With The Mustache For Movember (And Totally Pulls It Off)",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5qQL8keGGKbxh0ZHip2ZtMOOr3CN0bEgH3Px6OQ63Y-W99wcrn_nPxHzW-I8"
-        },
-        {
-          "url": "https://www.news.com.au/entertainment/celebrity-life/celebrity-photos/hollywood-legend-bill-murray-spotted-pulling-beers-in-bar/news-story/503290ac0f414ea93e173c33b9564f06",
-          "title": "Hollywood legend spotted pulling beers in bar",
-          "publisher": "News.com.au",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQU7fvfrcGcxkfeKcZTdJJzxVcvGKJ-_S_8TQLa8qmFYFarlheINDp59xhp7UY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxAm9nW_X8QDxvvP3EufCbiyWxGG0dq_hyiomKYidsfPOpdQ0syAE2xeWc-Ac"
         }
       ]
     },
     {
-      "query": "nintendo switch firmware",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T05:30:00Z",
+      "query": "heated rivalry theaters",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T06:20:00Z",
       "related_news_urls": [
-        "https://www.nintendo.com/us/whatsnew/coming-soon-gift-digital-games-to-family-group-members/",
-        "https://nintendoeverything.com/nintendo-switch-2-and-switch-update-23-5-0-out-now-patch-notes-new-gifting-feature-and-more/"
+        "https://variety.com/2026/tv/news/heated-rivalry-fans-theaters-rerelease-1236943493/",
+        "https://www.inc.com/hauwa-otori/heated-rivalry-theatrical-release-box-office-strategy/91425033",
+        "https://www.imdb.com/pt/news/ni66102596/?ref_=nwc_art_perm"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDmQkJYjB6bju3zo9IG5_KYlu4FMCXE2awoA_GFuV4f3krPIZTgkr2HrQVf9E",
-      "image_credit": "Nintendo",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUhwhv2OaLlCwcbhnn5T0r00gAWtoZhHVzPHwVNYt7k7gtk-JlDnA6TRyO4IA",
+      "image_credit": "Variety",
       "news": [
         {
-          "url": "https://www.nintendo.com/us/whatsnew/coming-soon-gift-digital-games-to-family-group-members/",
-          "title": "Coming soon: Gift digital games to family group members",
-          "publisher": "Nintendo",
+          "url": "https://variety.com/2026/tv/news/heated-rivalry-fans-theaters-rerelease-1236943493/",
+          "title": "‘Heated Rivalry’ Superfans Hit Theaters for Shane and Ilya on the Big Screen: ‘They Invented Chemistry’",
+          "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDmQkJYjB6bju3zo9IG5_KYlu4FMCXE2awoA_GFuV4f3krPIZTgkr2HrQVf9E"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUhwhv2OaLlCwcbhnn5T0r00gAWtoZhHVzPHwVNYt7k7gtk-JlDnA6TRyO4IA"
         },
         {
-          "url": "https://nintendoeverything.com/nintendo-switch-2-and-switch-update-23-5-0-out-now-patch-notes-new-gifting-feature-and-more/",
-          "title": "Nintendo Switch 2 and Switch update 23.5.0 out now, patch notes - new gifting feature and more",
-          "publisher": "Nintendo Everything",
+          "url": "https://www.inc.com/hauwa-otori/heated-rivalry-theatrical-release-box-office-strategy/91425033",
+          "title": "Fans Just Dropped $1M in Presales to Watch 'Heated Rivalry' in Movie Theaters—11 Months After Its Premiere",
+          "publisher": "Inc.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSssaef9LrUlXnQwu2qqLICJnEbqwQuqhyoI-Kiw86d3J9Wz7zC8D5xj9U3GrA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdlJzbndzRUFDuhzQBy00Vtb85-gAtrKIbIvh9CdYYVcMD4JKPngnapUO6l-k"
+        },
+        {
+          "url": "https://www.imdb.com/pt/news/ni66102596/?ref_=nwc_art_perm",
+          "title": "‘Heated Rivalry’ Final Episodes to Release in 4Dx at Regal Theaters",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR04GuGTZ8_IeRHagmZf5P1ZK5S4Pbg2AsChulT2n8nTrsWn3I5xgmt8GDuZmA"
         }
       ]
     },
     {
-      "query": "warriors",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-10T05:20:00Z",
+      "query": "government jobs",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T06:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/stephen-curry-brandin-podziemski-score-053323284.html",
-        "https://www.mercurynews.com/2026/11/09/warriors-pelicans-steph-curry-jordan-poole-lendeborg/",
-        "https://www.nba.com/watch/video/stephen-curry-with-25-points-vs-new-orleans-pelicans?plsrc=nba&collection=steph-curry"
+        "https://www.bbc.com/news/articles/cw1m4d8vjvppo",
+        "https://news.sky.com/story/civil-servant-who-juggled-up-to-five-government-jobs-guilty-of-fraud-13610264",
+        "https://www.thetimes.com/uk/crime/article/civil-servant-five-jobs-accused-bullying-mother-home-d7nl57k26"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXKBd_ukTzMYJCSY5ci_iv_KMAE2yKJCGjOQFaWXOdSa57lEoaKXqqSPRsz1I",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/stephen-curry-brandin-podziemski-score-053323284.html",
-          "title": "Stephen Curry, Brandin Podziemski each score 25 as Warriors run away from Pelicans for 138-87 win",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXKBd_ukTzMYJCSY5ci_iv_KMAE2yKJCGjOQFaWXOdSa57lEoaKXqqSPRsz1I"
-        },
-        {
-          "url": "https://www.mercurynews.com/2026/11/09/warriors-pelicans-steph-curry-jordan-poole-lendeborg/",
-          "title": "Red hot Warriors smoke Pelicans by 51 to win eighth in a row",
-          "publisher": "The Mercury News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7PfF0jQpb2xo3Z_K61rbxIaqw3ijbusOCeQffhmNtYsvNEVvWRkrMCSfQNI4"
-        },
-        {
-          "url": "https://www.nba.com/watch/video/stephen-curry-with-25-points-vs-new-orleans-pelicans?plsrc=nba&collection=steph-curry",
-          "title": "Stephen Curry with 25 Points vs. New Orleans Pelicans",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV-YOY0HZjh2p6BxEAAAvIPEU79DyOsS6kSRhmGDufLpphzgdGMM_eqD481cA"
-        }
-      ]
-    },
-    {
-      "query": "minnesota vikings quarterback situation",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-10T05:20:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/sports/nfl/columnist/nate-davis/2026/11/09/vikings-quarterback-nfl-trade-deadline-kyler-murray-carson-wentz/92677448007/",
-        "https://thevikingage.com/kevin-oconnell-cant-keep-masking-minnesota-vikings-quarterback-chaos-forever",
-        "https://www.dailynorseman.com/minnesota-vikings-roster/101195/the-kyler-murray-experiment-is-over"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIc8-1PlwQrd7Uoh-O76mGiqDW9RN0-9JwCr_vDckiUe3nltAL9zZkJ_tzPFQ",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/sports/nfl/columnist/nate-davis/2026/11/09/vikings-quarterback-nfl-trade-deadline-kyler-murray-carson-wentz/92677448007/",
-          "title": "Vikings are dead in the water unless they solve QB problem in next 24 hours | Opinion",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIc8-1PlwQrd7Uoh-O76mGiqDW9RN0-9JwCr_vDckiUe3nltAL9zZkJ_tzPFQ"
-        },
-        {
-          "url": "https://thevikingage.com/kevin-oconnell-cant-keep-masking-minnesota-vikings-quarterback-chaos-forever",
-          "title": "Kevin O'Connell can't keep masking Vikings' quarterback chaos forever",
-          "publisher": "The Viking Age",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT01uNj4HXsvhlYRwPtgV8HeYZ5s69qoboo72-rbeUYmljU1fteqQ3CD8hLltE"
-        },
-        {
-          "url": "https://www.dailynorseman.com/minnesota-vikings-roster/101195/the-kyler-murray-experiment-is-over",
-          "title": "The Kyler Murray Experiment is Over",
-          "publisher": "Daily Norseman",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkGDRTXNAiE8djpxgnrOJ-J2bqEiJq09ZeYRJRLaj_KB7Nigk09UEIX0Hu2T4"
-        }
-      ]
-    },
-    {
-      "query": "brandin podziemski",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-10T05:20:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-10/brandin-podziemski-hits-five-triples-scores-25",
-        "https://www.nbcsportsbayarea.com/video/nba/golden-state-warriors/brandin-podziemski-interview-watch-11/1977873/",
-        "https://sports.yahoo.com/articles/steve-kerr-sends-strong-brandin-205541648.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc4nN4xg5xUOoZWVAZG71YQmT7UBIKHwBdNjGswK7bjSShwwnacaAowX8_bJA",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-10/brandin-podziemski-hits-five-triples-scores-25",
-          "title": "Brandin Podziemski hits five triples, scores 25",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc4nN4xg5xUOoZWVAZG71YQmT7UBIKHwBdNjGswK7bjSShwwnacaAowX8_bJA"
-        },
-        {
-          "url": "https://www.nbcsportsbayarea.com/video/nba/golden-state-warriors/brandin-podziemski-interview-watch-11/1977873/",
-          "title": "Brandin Podziemski confident in Warriors' potential after OT win vs. Magic",
-          "publisher": "NBC Sports Bay Area & California",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE14v2Ec063ICPiznbIbzTp_lUoCjI1x2qAZiG-ddPanrC2T8CPvXfOGFi0qU"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/steve-kerr-sends-strong-brandin-205541648.html",
-          "title": "Steve Kerr Sends Strong Brandin Podziemski Message Ahead of Magic Game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqP9EmXVgDeltpKVuYOMftz-Us06bOGFHQXP04_vcUrgKbsGVjEze0UFcXimQ"
-        }
-      ]
-    },
-    {
-      "query": "julian reese",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T05:10:00Z",
-      "related_news_urls": [
-        "https://www.marieclaire.com/fashion/celebrity-style/angel-reese-zebra-print-matching-set-the-attico-watch-strap-heels/",
-        "https://sports.yahoo.com/articles/angel-reese-rocks-chic-zebra-195658529.html",
-        "https://www.marca.com/en/basketball/wnba/atlanta-dream/2026/11/10/man-tries-flirting-with-angel-reese-courtside-but-gets-her-name-completely-wrong-video.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOpMqU2JrVnqHpnOsuqB-sU_OSnVj3V8n54W2aJU9uqAduFrr3Xg6BZ_zfaP4",
-      "image_credit": "Marie Claire",
-      "news": [
-        {
-          "url": "https://www.marieclaire.com/fashion/celebrity-style/angel-reese-zebra-print-matching-set-the-attico-watch-strap-heels/",
-          "title": "Angel Reese Goes All In on Fashion's New Favorite Neutral With a Zebra Print Matching Set and Watch Strap Pumps",
-          "publisher": "Marie Claire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOpMqU2JrVnqHpnOsuqB-sU_OSnVj3V8n54W2aJU9uqAduFrr3Xg6BZ_zfaP4"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/angel-reese-rocks-chic-zebra-195658529.html",
-          "title": "Angel Reese rocks chic zebra print outfit to support brother Julian at Pelicans-Timberwolves game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTo9qVZ5YRmosLlG6k1YH0eLyYfbhSPAfjxmzQ9575dZRUSudt5S39AbyQPhvk"
-        },
-        {
-          "url": "https://www.marca.com/en/basketball/wnba/atlanta-dream/2026/11/10/man-tries-flirting-with-angel-reese-courtside-but-gets-her-name-completely-wrong-video.html",
-          "title": "Man tries flirting with Angel Reese courtside but gets her name completely wrong",
-          "publisher": "MARCA",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSNs-dJslJ-Zo08d5uF8yJ_3im-vzMUg507nVguPD1G96_monCLd-CJ3xzq6s"
-        }
-      ]
-    },
-    {
-      "query": "xbox vs ps5 gta 6 specs",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T05:10:00Z",
-      "related_news_urls": [
-        "https://www.techpowerup.com/354626/gta-vi-game-data-suggests-pssr-update-with-120-hz-support-and-ps5-pro-high-cpu-frequency-mode",
-        "https://www.usatoday.com/story/shopping/deals/retailers/amazon/2026/11/09/gta-6-preload-upgrades-essentials/92695867007/",
-        "https://en.gamegpu.com/news/igry/gta-6-na-xbox-series-s-smozhet-rabotat-v-razreshenii-ot-720p-do-1080p"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2tHg5y6sVBO9fuTsJm0YwGFfxpIAnoLPlYhSxTeyBz5DrUcicilu37aVA1RY",
-      "image_credit": "TechPowerUp",
-      "news": [
-        {
-          "url": "https://www.techpowerup.com/354626/gta-vi-game-data-suggests-pssr-update-with-120-hz-support-and-ps5-pro-high-cpu-frequency-mode",
-          "title": "GTA VI Game Data Suggests PSSR Update With 120 Hz Support and PS5 Pro \"High CPU Frequency Mode\"",
-          "publisher": "TechPowerUp",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2tHg5y6sVBO9fuTsJm0YwGFfxpIAnoLPlYhSxTeyBz5DrUcicilu37aVA1RY"
-        },
-        {
-          "url": "https://www.usatoday.com/story/shopping/deals/retailers/amazon/2026/11/09/gta-6-preload-upgrades-essentials/92695867007/",
-          "title": "GTA 6 is almost here and these gaming essentials can upgrade your setup",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvNQI4VapsqJ85y_HoW5SX66n1wIVxdNPgjZV1lZwn8yqnb4C2D1Rcvltgy9E"
-        },
-        {
-          "url": "https://en.gamegpu.com/news/igry/gta-6-na-xbox-series-s-smozhet-rabotat-v-razreshenii-ot-720p-do-1080p",
-          "title": "GTA 6 on Xbox Series S will be able to run in resolutions from 720p to 1080p",
-          "publisher": "GameGPU",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtIyijI5UD74DZMboQABSrOFglfeeakq8jqScljH9No_Iu50-htO7vNtsgaFU"
-        }
-      ]
-    },
-    {
-      "query": "celtics vs 76ers",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T05:10:00Z",
-      "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/09/sports/jayson-tatum-jaylen-brown-relationship/",
-        "https://sports.yahoo.com/articles/blame-lot-media-marcus-smart-012146091.html",
-        "https://www.espn.com/nba/story/_/id/50427885/jaylen-brown-says-talk-tatum-ahead-76ers-celtics"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvf0U3lOmOWMOaaU3pMweJ6MaLy5W6PL093OeAuRf42mWdNHEPM8XTvL4jH2s",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/09/sports/jayson-tatum-jaylen-brown-relationship/",
-          "title": "Inside the final days of Jaylen Brown and Jayson Tatum’s tenure as Celtics teammates",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvf0U3lOmOWMOaaU3pMweJ6MaLy5W6PL093OeAuRf42mWdNHEPM8XTvL4jH2s"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/blame-lot-media-marcus-smart-012146091.html",
-          "title": "“I blame a lot of it on the media” – Marcus Smart points fingers over Jayson Tatum-Jaylen Brown breakup",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJhP2egjgfdiOgDzfCII3ahyWVKr5iyi9Bkg4iPZ4oj7wyGAMSCiwZUUqr32w"
-        },
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50427885/jaylen-brown-says-talk-tatum-ahead-76ers-celtics",
-          "title": "Jaylen Brown says 'nothing to talk about' with Tatum ahead of Celtics-76ers",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7V7LGrLsaZ5wMJ0AwfUhT1xzEDFJj4kc7spfx8xXzbw99300_eYX4neUntAE"
-        }
-      ]
-    },
-    {
-      "query": "uefa nations league",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T05:10:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/articles/c9e8ll62rp68o",
-        "https://www.nytimes.com/athletic/7756674/2026/11/06/england-squad-palmer-croatia-spain/",
-        "https://www.espn.com/soccer/story/_/id/50400302/xabi-alonso-cole-palmer-chelsea-england-snub"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgNQKleTrnNF66v7thdp5ZXE67fj-aW_Io9-uippGd4CaBe3U2vgs64RgMoFo",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSWSzLZ_40M4S53lH9nj_U4bEe5nCoqTfA1jwNmV70axLlS2YwFqEcmiWoQso",
       "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/articles/c9e8ll62rp68o",
-          "title": "Cole Palmer: Is Chelsea forward's England career over under Thomas Tuchel?",
+          "url": "https://www.bbc.com/news/articles/cw1m4d8vjvppo",
+          "title": "How a civil servant got away with juggling five jobs for so long",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgNQKleTrnNF66v7thdp5ZXE67fj-aW_Io9-uippGd4CaBe3U2vgs64RgMoFo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSWSzLZ_40M4S53lH9nj_U4bEe5nCoqTfA1jwNmV70axLlS2YwFqEcmiWoQso"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7756674/2026/11/06/england-squad-palmer-croatia-spain/",
-          "title": "Cole Palmer left out of England squad, Josh King and Jobe Bellingham included - The Athletic",
-          "publisher": "The New York Times",
+          "url": "https://news.sky.com/story/civil-servant-who-juggled-up-to-five-government-jobs-guilty-of-fraud-13610264",
+          "title": "Civil servant who juggled up to five government jobs guilty of fraud",
+          "publisher": "Sky News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUr6jIZvhnuD8nu-SlHZt3E9ZMov4iM69ZaYhArouNe0FYiYjy9ymt6ECOvtU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSb4nnAaUZ7LkLcuMGhstaTTcCLepPEDJWqVHQvT5GjrPXWIsVRSpK20OffhCw"
         },
         {
-          "url": "https://www.espn.com/soccer/story/_/id/50400302/xabi-alonso-cole-palmer-chelsea-england-snub",
-          "title": "Chelsea's Xabi Alonso 'very happy' with Cole Palmer despite England omission",
+          "url": "https://www.thetimes.com/uk/crime/article/civil-servant-five-jobs-accused-bullying-mother-home-d7nl57k26",
+          "title": "Civil servant with five jobs accused of bullying mother for £2m home",
+          "publisher": "The Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZbHKdfB7OzMRUCsKrO1KWa6qU8QdNfSup4WJPGm-0ISqYp_MhHbYlfStnYmo"
+        }
+      ]
+    },
+    {
+      "query": "julia louis-dreyfus",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T06:00:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66100325/?ref_=nmnw_art_perm"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEZq8-xbWWAZa7wa4StyGocYjRmQY-XvRlniaeStmx6tNKi5wu_WfbLGleBIQ",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66100325/?ref_=nmnw_art_perm",
+          "title": "Late Night with Seth Meyers: Julia Louis-Dreyfus, Jamie Dornan",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEZq8-xbWWAZa7wa4StyGocYjRmQY-XvRlniaeStmx6tNKi5wu_WfbLGleBIQ"
+        }
+      ]
+    },
+    {
+      "query": "ivar stenberg",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T06:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/video/clip/_/id/50439492/tyler-toffoli-scores-goal-vs-islanders",
+        "https://sports.yahoo.com/articles/sharks-3-islanders-2-blood-060426862.html",
+        "https://www.mercurynews.com/2026/11/09/san-jose-sharks-new-york-islanders-macklin-celebrini-instant-analysis/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBHnJTh010NmD8xNWDYD3GPVeERmRnWpoH7VUmhklQl69L84-Ou7f8EulCfJs",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50439492/tyler-toffoli-scores-goal-vs-islanders",
+          "title": "Tyler Toffoli scores goal vs. Islanders",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQaGxY6hmarPBmZ6CeN3W3Ofa87blxQahshjqUdAsr7o-J13sL1Uqis_oRrmak"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBHnJTh010NmD8xNWDYD3GPVeERmRnWpoH7VUmhklQl69L84-Ou7f8EulCfJs"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/sharks-3-islanders-2-blood-060426862.html",
+          "title": "Sharks 3*, Islanders 2 (SO*): After blood boils, settled with a shooting contest",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtl7PWfRV5kykkuTwowvbeps7Fgapazihj3NYJ6mzER5ixlq51lsrezZMvIRA"
+        },
+        {
+          "url": "https://www.mercurynews.com/2026/11/09/san-jose-sharks-new-york-islanders-macklin-celebrini-instant-analysis/",
+          "title": "Sharks instant analysis: Exhausting, emotional win ends San Jose’s five-game skid",
+          "publisher": "The Mercury News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxQgCSzUvsSstvJBcf-8oEe8LeZBkWot-QyHfI4cF54clX4VlFtJyp3RvVWfQ"
+        }
+      ]
+    },
+    {
+      "query": "karely ruiz",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T06:00:00Z",
+      "related_news_urls": [
+        "https://www.lavozarizona.com/story/entretenimiento/2026/11/09/donde-ver-la-mansion-vip-el-hotspanish-y-sus-participantes/92688972007/",
+        "https://www.elfinanciero.com.mx/entretenimiento/2026/11/08/la-mansion-vip-2-en-vivo-que-paso-en-el-estreno-del-reality-show/",
+        "https://www.tiempo.com.mx/espectaculos/la-mansion-vip-habitantes-hot-spanish-reality-show-youtube/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3y4qGni8rO4WzEhlkidKxI6HJ8Fsvvw5K9j4GSaYUDH01wWapXOWTQVDypVI",
+      "image_credit": "azcentral.com and The Arizona Republic",
+      "news": [
+        {
+          "url": "https://www.lavozarizona.com/story/entretenimiento/2026/11/09/donde-ver-la-mansion-vip-el-hotspanish-y-sus-participantes/92688972007/",
+          "title": "¿Dónde ver 'La Mansión VIP' y quiénes son sus participantes?Karely Ruiz lanza inesperada revelación",
+          "publisher": "azcentral.com and The Arizona Republic",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3y4qGni8rO4WzEhlkidKxI6HJ8Fsvvw5K9j4GSaYUDH01wWapXOWTQVDypVI"
+        },
+        {
+          "url": "https://www.elfinanciero.com.mx/entretenimiento/2026/11/08/la-mansion-vip-2-en-vivo-que-paso-en-el-estreno-del-reality-show/",
+          "title": "Estreno de ‘La Mansión VIP 2’: Así quedaron los cuartos en el arranque del reality show",
+          "publisher": "El Financiero",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8xhIilxLI-PlBz-3FfnXZ0l-3D2UbNN2OSO8613CTuLGXQQw0OeuvSEwfppc"
+        },
+        {
+          "url": "https://www.tiempo.com.mx/espectaculos/la-mansion-vip-habitantes-hot-spanish-reality-show-youtube/",
+          "title": "Ellos son los habitantes de La Mansión VIP",
+          "publisher": "Tiempo La Noticia Digital",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOWliVBdPYep3bR_u0T9J5sPFl1bdVLtPYnHuc7uMm9bfrgHmRCoIGF-olYP4"
+        }
+      ]
+    },
+    {
+      "query": "francis lawrence",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T06:00:00Z",
+      "related_news_urls": [
+        "https://www.avclub.com/hunger-games-sunrise-on-the-reaping-director-plutarch-heavensbee-spinoff-ideas",
+        "https://tribune.com.pk/story/2639292/hunger-games-director-francis-lawrence-pitches-plutarch-prequel-after-sunrise-on-the-reaping",
+        "https://winteriscoming.net/will-there-be-another-hunger-games-book-who-will-be-protagonist"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSl110OdmcaUYF-R0F9kCMa9Mny6G9hc9P32a_PBhzQlRfGf26SFp8kU4GCz3k",
+      "image_credit": "A.V. Club",
+      "news": [
+        {
+          "url": "https://www.avclub.com/hunger-games-sunrise-on-the-reaping-director-plutarch-heavensbee-spinoff-ideas",
+          "title": "Sunrise On The Reaping director thinks Plutarch Heavensbee could lead his own Hunger Games",
+          "publisher": "A.V. Club",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSl110OdmcaUYF-R0F9kCMa9Mny6G9hc9P32a_PBhzQlRfGf26SFp8kU4GCz3k"
+        },
+        {
+          "url": "https://tribune.com.pk/story/2639292/hunger-games-director-francis-lawrence-pitches-plutarch-prequel-after-sunrise-on-the-reaping",
+          "title": "Hunger Games director Francis Lawrence pitches Plutarch prequel after 'Sunrise on the Reaping'",
+          "publisher": "The Express Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDZC08v4Ebswf3ZgptIaop9OA-X0w-pHX8K8RHb0mDPBdsftUrnf3cmDy9lEg"
+        },
+        {
+          "url": "https://winteriscoming.net/will-there-be-another-hunger-games-book-who-will-be-protagonist",
+          "title": "Will there be another Hunger Games book and who will be its protagonist?",
+          "publisher": "Winter is Coming",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmPnbS-jMnwuE_FzB8ouCgIACCES5zryxKBiRAm8NNrA4GznHloQaeryo9J2o"
+        }
+      ]
+    },
+    {
+      "query": "andy richter",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T05:50:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/movies/articles/andy-richter-says-elf-may-210000358.html",
+        "https://parade.com/entertainment/in-1995-a-struggling-jewish-writer-penned-a-christmas-movie-no-one-wanted-to-make-31-years-later-its-a-comedy-classic",
+        "https://www.hollywoodreporter.com/movies/movie-features/elf-oral-history-will-ferrell-chris-farley-andy-richter-1236747109/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC0omoOWRuIojpkiViKqpx74cA89Cdb1coWUrlVtzBcP_NktPcLCp5F9cMKjI",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/andy-richter-says-elf-may-210000358.html",
+          "title": "Andy Richter Says “Elf” May Be a ‘Classic’ Now, but They Were ‘Rolling the Dice’ with ‘Risky’ Movie Over 20 Years Ago (Exclusive)",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC0omoOWRuIojpkiViKqpx74cA89Cdb1coWUrlVtzBcP_NktPcLCp5F9cMKjI"
+        },
+        {
+          "url": "https://parade.com/entertainment/in-1995-a-struggling-jewish-writer-penned-a-christmas-movie-no-one-wanted-to-make-31-years-later-its-a-comedy-classic",
+          "title": "In 1995, a struggling Jewish writer penned a Christmas movie no one wanted to make; 31 years later, it's a comedy classic",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0cpqZU-wxU8JJu9EBwl0rzZwv4QZZkMa32T1tmf2iXlmMwGdKGLue5-abqQo"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/movies/movie-features/elf-oral-history-will-ferrell-chris-farley-andy-richter-1236747109/",
+          "title": "The Origins of ‘Elf’: How Will Ferrell Came to Replace Chris Farley in the Christmas Classic",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQL-EfLgCCiFQ48HYg6OX1Fz_J4rxP_mr5F2aaNQAvp6xt2XHZMeWHedwrTi1Y"
+        }
+      ]
+    },
+    {
+      "query": "steve buscemi",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T05:50:00Z",
+      "related_news_urls": [
+        "https://www.hollywoodreporter.com/business/digital/steve-buscemi-refuses-appear-hot-ones-1236751410/",
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/fargo-steve-buscemi-refuses-appear-051100766.html",
+        "https://www.vulture.com/article/hot-ones-steve-buscemi.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXrC5flZZ2NJJRwV3Rek84sHC6z136S13IGZf3fbCVPZXTMP4tsrdsJCSI7PU",
+      "image_credit": "The Hollywood Reporter",
+      "news": [
+        {
+          "url": "https://www.hollywoodreporter.com/business/digital/steve-buscemi-refuses-appear-hot-ones-1236751410/",
+          "title": "Steve Buscemi Reveals Which Show He Refuses to Appear on: “I Don’t Care How Much You Paid Me”",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXrC5flZZ2NJJRwV3Rek84sHC6z136S13IGZf3fbCVPZXTMP4tsrdsJCSI7PU"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/fargo-steve-buscemi-refuses-appear-051100766.html",
+          "title": "Fargo’s Steve Buscemi Refuses to Appear on Popular Show for One Fiery Reason",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpKbo5R8ltWTJBofAFlfJSWFFLYGi1VOwN_VNoNlWLr57uLZUBmw9yKOflzcc"
+        },
+        {
+          "url": "https://www.vulture.com/article/hot-ones-steve-buscemi.html",
+          "title": "‘Hot Ones’ Makes Steve Buscemi ‘Confused’ and ‘Angry’",
+          "publisher": "Vulture",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5y6IkxuzTn9iWhbTY8Ef_H_81z7-eFiUUsoqrNgIUQIJdR_ompr0s447s-Y4"
         }
       ]
     }
