@@ -3,17 +3,122 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T16:01:59.949857Z",
+  "checked_at": "2026-11-10T16:31:20.819081Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ring drone cam",
+      "query": "action thriller",
       "approx_searches": "500+",
-      "published_at": "2026-11-10T15:30:00Z",
+      "published_at": "2026-11-10T16:10:00Z",
+      "related_news_urls": [
+        "https://movieweb.com/the-awakening-trailer-streaming-action-thriller/",
+        "https://www.imdb.com/news/ni66102638/?ref_=nmnw_art_perm",
+        "https://geektyrant.com/news/the-awakening-trailer-unleashes-an-ancient-evil-on-an-elite-military-squad-in-the-colombian-jungle"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXha0ZKrcVTGlGB5ej30vvVmJpkrrdPWJmODpPXgVHrCCzVdw_099cUJrBUyI",
+      "image_credit": "MovieWeb",
+      "news": [
+        {
+          "url": "https://movieweb.com/the-awakening-trailer-streaming-action-thriller/",
+          "title": "Forget Predator, a New 96-Minute Military Action Thriller Substitute Officially Hits Streaming",
+          "publisher": "MovieWeb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXha0ZKrcVTGlGB5ej30vvVmJpkrrdPWJmODpPXgVHrCCzVdw_099cUJrBUyI"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66102638/?ref_=nmnw_art_perm",
+          "title": "The Awakening review: a promising Predator-style setup gets lost in the darkness",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZtaNN-j6IgBHuntuLaVsST9_Up3n-132WUs9YvFqd8onSn3__7T0famRzqCE"
+        },
+        {
+          "url": "https://geektyrant.com/news/the-awakening-trailer-unleashes-an-ancient-evil-on-an-elite-military-squad-in-the-colombian-jungle",
+          "title": "THE AWAKENING Trailer Unleashes an Ancient Evil on an Elite Military Squad in the Colombian Jungle",
+          "publisher": "GeekTyrant",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjeT8f1KfSPaXTl8_dlPCmoHNTepgv9UVR6V2Y0epmP4xUo2NC_vviujhWjlE"
+        }
+      ]
+    },
+    {
+      "query": "deebo samuel",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T16:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7768819/2026/11/09/49ers-deebo-samuel-mike-evans-injuries/",
+        "https://nypost.com/2026/11/09/sports/49ers-star-receivers-mike-evans-and-deebo-samuel-head-in-opposite-injury-directions/",
+        "https://www.49ers.com/news/49ers-rule-out-three-wide-receivers-vs-raiders-bosa-returns-to-full-practice-ahead-of-week-9-lvvssf"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK440-wJoSeiis2FByBqDMj4Q3g6wyPc6StoU1MdvMt3ebtaloT68dlN2cS6Y",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7768819/2026/11/09/49ers-deebo-samuel-mike-evans-injuries/",
+          "title": "49ers minutia minute: Deebo Samuel, CJ West expected back; Mike Evans still on hold",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK440-wJoSeiis2FByBqDMj4Q3g6wyPc6StoU1MdvMt3ebtaloT68dlN2cS6Y"
+        },
+        {
+          "url": "https://nypost.com/2026/11/09/sports/49ers-star-receivers-mike-evans-and-deebo-samuel-head-in-opposite-injury-directions/",
+          "title": "49ers star receivers Mike Evans and Deebo Samuel head in opposite injury directions",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkS17UFc49jK3m1HOdsgt650Jas9o1MFvqCWrzb3YSoBbW0Z-edrg9oEpLkKE"
+        },
+        {
+          "url": "https://www.49ers.com/news/49ers-rule-out-three-wide-receivers-vs-raiders-bosa-returns-to-full-practice-ahead-of-week-9-lvvssf",
+          "title": "49ers Rule Out Three Wide Receivers vs. Raiders; Bosa Returns to Full Practice Ahead of Week 9 #LVvsSF",
+          "publisher": "San Francisco 49ers",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsN9PqYFzM-GlL4C7HWTRbhrGGXkkfFga9OihOTjzo2gIWXIsS2vixlmLwg9A"
+        }
+      ]
+    },
+    {
+      "query": "arnold ebiketie",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-10T15:50:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/bengals-trade-eagles-edge-rusher-160823518.html",
+        "https://www.pennlive.com/philadelphiaeagles/2026/11/eagles-trade-former-penn-state-standout-to-afc-contender.html",
+        "https://bengalswire.usatoday.com/story/sports/nfl/bengals/2026/11/10/bengals-trade-eagles-arnold-ebiketie-nfl-deadline/92706815007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0mp-4jXabhZ35jVLHsZkyNrZGWm7gFEKkeJaw6bHJp-uG9S2ZyGfYUaKx1vI",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/bengals-trade-eagles-edge-rusher-160823518.html",
+          "title": "Bengals to trade for Eagles' edge rusher to bolster depth chart",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0mp-4jXabhZ35jVLHsZkyNrZGWm7gFEKkeJaw6bHJp-uG9S2ZyGfYUaKx1vI"
+        },
+        {
+          "url": "https://www.pennlive.com/philadelphiaeagles/2026/11/eagles-trade-former-penn-state-standout-to-afc-contender.html",
+          "title": "Eagles trade former Penn State standout to AFC contender",
+          "publisher": "PennLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvKRD4oxka8B0r_lhhHq83iGTuh6-tLW9ix5esgFfOReWvM28_fTFCLuBirw4"
+        },
+        {
+          "url": "https://bengalswire.usatoday.com/story/sports/nfl/bengals/2026/11/10/bengals-trade-eagles-arnold-ebiketie-nfl-deadline/92706815007/",
+          "title": "Bengals to trade for Eagles DE Arnold Ebiketie at NFL deadline",
+          "publisher": "Bengals Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmEg0ao2l0JWrzz2DBbphmXHEAOWyx9FimiEQrjHlSe6f7HkW_UyEh9QIfXTw"
+        }
+      ]
+    },
+    {
+      "query": "ring drone camera",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-10T15:50:00Z",
       "related_news_urls": [
         "https://www.cnbc.com/2026/11/10/amazons-ring-unveils-flying-drone-robot-to-patrol-homes-businesses.html",
-        "https://www.aboutamazon.com/news/devices/ring-drone-cam-rover-cam-security-robot",
-        "https://www.cbsnews.com/video/would-you-let-a-drone-fly-inside-your-home-for-security/"
+        "https://www.nbcnews.com/tech/tech-news/amazons-ring-debuts-security-robots-drone-rcna608538",
+        "https://www.aboutamazon.com/news/devices/ring-drone-cam-rover-cam-security-robot"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShXHqWDGtyzkwTUW_E-VQkkOFlzyhJJjBC6asN0wtbOwes8i2Yh_Vjm992G6o",
       "image_credit": "CNBC",
@@ -26,24 +131,59 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShXHqWDGtyzkwTUW_E-VQkkOFlzyhJJjBC6asN0wtbOwes8i2Yh_Vjm992G6o"
         },
         {
+          "url": "https://www.nbcnews.com/tech/tech-news/amazons-ring-debuts-security-robots-drone-rcna608538",
+          "title": "Amazon’s Ring debuts security robots including a drone",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUKXd95Wv-XQuZtkvgIUk4JrbiKJjwUA2xDk2KH3l1v1RUGNYt0YyWR0Lr65I"
+        },
+        {
           "url": "https://www.aboutamazon.com/news/devices/ring-drone-cam-rover-cam-security-robot",
           "title": "Ring announces Ring Robotics, ushering in a new era of security",
           "publisher": "About Amazon",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDLRaWMjxv4v6bC6JEBv5XCpmlImhje1_i_sFCaQ8Nci3vFjn-Tspx1rMRYb0"
+        }
+      ]
+    },
+    {
+      "query": "mcdonalds pokemon",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T15:50:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/money/food/2026/11/10/mcdonalds-pokemon-happy-meal-toys-cards/92687817007/",
+        "https://www.pokemon.com/us/news/pokemon-happy-meals-return-to-mcdonalds-in-canada",
+        "https://qz.com/mcdonalds-pokemon-happy-meal-toys-trading-cards-111026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuqMkUKiKlvy4zEUbE9ygLo-FUe3uOXaRAZ9bbYYshnz9xhrhg75jCSgLyfng",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/money/food/2026/11/10/mcdonalds-pokemon-happy-meal-toys-cards/92687817007/",
+          "title": "Gotta catch 'em all! You can get McDonald's Pokémon Happy Meal today",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuqMkUKiKlvy4zEUbE9ygLo-FUe3uOXaRAZ9bbYYshnz9xhrhg75jCSgLyfng"
         },
         {
-          "url": "https://www.cbsnews.com/video/would-you-let-a-drone-fly-inside-your-home-for-security/",
-          "title": "Would you let a drone fly inside your home for security?",
-          "publisher": "CBS News",
+          "url": "https://www.pokemon.com/us/news/pokemon-happy-meals-return-to-mcdonalds-in-canada",
+          "title": "Pokémon Happy Meals Return to McDonald’s in Canada",
+          "publisher": "Pokemon.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRu9a4xJbneNEJ51DpP4Hz2MqwI8tDAZSCewKQI_5pRBv3M-7uNXUkyX0c_Sg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_fx1kVrzBrtGp6i8n9n5rwAaBBsMwuKfiVUMJPv2E5HmfdKEx9bZ1Nk-poec"
+        },
+        {
+          "url": "https://qz.com/mcdonalds-pokemon-happy-meal-toys-trading-cards-111026",
+          "title": "McDonald's is launching a Pokémon Happy Meal with 15 toys and trading cards",
+          "publisher": "qz.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWRPzkBT1CyjA243keIkU6b4Yai0x39YfG5Zhz1S7eJNvfeSlsLGHFM0KnQuY"
         }
       ]
     },
     {
       "query": "wow forever patch notes",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-10T15:10:00Z",
       "related_news_urls": [
         "https://www.gamedeveloper.com/pc/world-of-warcraft-forever-is-the-mmorpg-s-biggest-launch-in-player-numbers",
@@ -78,11 +218,11 @@
     },
     {
       "query": "arthur rinderknech",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-10T14:50:00Z",
       "related_news_urls": [
         "https://robinhood.com/us/en/prediction-markets/tennis/events/taylor-fritz-vs-cameron-norrie-set-1-winner-nov-11-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/viktor-durasovic-vs-alexander-shevchenko-set-1-winner-nov-07-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/nikoloz-basilashvili-vs-francesco-passaro-set-2-winner-nov-07-2026/",
         "https://robinhood.com/us/en/prediction-markets/tennis/events/olle-wallin-vs-lorenzo-sonego-set-2-winner-nov-07-2026/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRS_NSgIJh8ncgOj7ZM2QWU48H8IyT3S-NF0FrnEudECgT_mC0YXnyCc_qphtw",
@@ -90,17 +230,17 @@
       "news": [
         {
           "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/taylor-fritz-vs-cameron-norrie-set-1-winner-nov-11-2026/",
-          "title": "November 11, 2026: Taylor Fritz vs Cameron Norrie: Set 1 Winner Prediction Market",
+          "title": "November 11, 2026: Taylor Fritz vs Cameron Norrie: Set 1 Winner Tennis Prediction Market",
           "publisher": "Robinhood",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRS_NSgIJh8ncgOj7ZM2QWU48H8IyT3S-NF0FrnEudECgT_mC0YXnyCc_qphtw"
         },
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/viktor-durasovic-vs-alexander-shevchenko-set-1-winner-nov-07-2026/",
-          "title": "November 7, 2026: Viktor Durasovic vs Alexander Shevchenko: Set 1 Winner Tennis Prediction Market",
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/nikoloz-basilashvili-vs-francesco-passaro-set-2-winner-nov-07-2026/",
+          "title": "November 7, 2026: Nikoloz Basilashvili vs Francesco Passaro: Set 2 Winner Tennis Prediction Market",
           "publisher": "Robinhood",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz5EKiv4oZzCLeBwbR1F9HDqSupi0EfsxDcwswJYCPZsbsCt-ZFPwbLKEvihI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfZ-N3rhzt-752XyYr9-PcTgUW9xDfMvn1amLsvWuEp5yqUwFmgAF3YC-t4wQ"
         },
         {
           "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/olle-wallin-vs-lorenzo-sonego-set-2-winner-nov-07-2026/",
@@ -108,6 +248,41 @@
           "publisher": "Robinhood",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS47si_lFDnHZt2Ee6Psvrvaz-SDRymA65qXkY8r_lBtd1SdQW-B9TKHCZHQcE"
+        }
+      ]
+    },
+    {
+      "query": "cpi inflation data",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-10T14:30:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+        "https://www.nytimes.com/live/2026/11/10/business/inflation-cpi-report-october",
+        "https://www.wsj.com/livecoverage/stock-market-cpi-inflation-11-10-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE_TxbY8eOu4roWtyr6P9CX4yoUTaxRYBXRKyQZ3NQdPUHU0W0seo8J6SJPic",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+          "title": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE_TxbY8eOu4roWtyr6P9CX4yoUTaxRYBXRKyQZ3NQdPUHU0W0seo8J6SJPic"
+        },
+        {
+          "url": "https://www.nytimes.com/live/2026/11/10/business/inflation-cpi-report-october",
+          "title": "CPI Live Updates: Inflation Persists in U.S. Economy",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSb6K2QPTgpkdayLskkOLfE-k1d0X4E2nWRSW6aEi64Zf6KePEZbRj1xQT3BMQ"
+        },
+        {
+          "url": "https://www.wsj.com/livecoverage/stock-market-cpi-inflation-11-10-2026",
+          "title": "Stock Market Today: Dow Opens Lower After Inflation Report — Live Updates",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyJDZAgRuUpMAaL1e4twCWs8TQWCZkYtMPSrzJmsVygwb4MUn_v3XUxkOsmiQ"
         }
       ]
     },
@@ -147,196 +322,37 @@
       ]
     },
     {
-      "query": "chris o'donnell",
-      "approx_searches": "1000+",
+      "query": "adam schefter",
+      "approx_searches": "20000+",
       "published_at": "2026-11-10T14:20:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/news/videos/chris-odonnell-talks-9-1-090842750.html"
+        "https://www.cbssports.com/nfl/news/2026-nfl-trade-deadline-vikings-quarterback-options-kirk-cousins/",
+        "https://bleacherreport.com/articles/25531467-vikings-will-explore-their-options-qb-trade-deadline-nfl-insider-says-amid-cousins-buzz",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/the-vikings-need-to-trade-for-a-quarterback-tomorrow"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTD0PMdsrtIJTVzuQcpE_b-Y9rnw2ITe0FbtUhVJWOzCH7YRNIVV67j6uhEjl4",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaLZP1RWv2_7v6FNukohv7Z4uyTfEhllDDYQys8Zjdyg1JsumSnaDuVkWmNTI",
+      "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://www.yahoo.com/news/videos/chris-odonnell-talks-9-1-090842750.html",
-          "title": "Chris O'Donnell talks '9-1-1: Nashville'",
-          "publisher": "Yahoo",
+          "url": "https://www.cbssports.com/nfl/news/2026-nfl-trade-deadline-vikings-quarterback-options-kirk-cousins/",
+          "title": "2026 NFL trade deadline: Ranking Vikings quarterback options with Kirk Cousins as best fit in Minnesota",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTD0PMdsrtIJTVzuQcpE_b-Y9rnw2ITe0FbtUhVJWOzCH7YRNIVV67j6uhEjl4"
-        }
-      ]
-    },
-    {
-      "query": "mississippi senate race election results",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-10T14:10:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/09/politics/mississippi-senate-hyde-smith-colom-campaign",
-        "https://apnews.com/projects/elections-2026/mississippi-us-senate-results/",
-        "https://www.washingtonpost.com/elections/2026/11/09/democrat-scott-colom-attacks-cook-reports-accuracy/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrH_TQ9MXsgyjWpDxOnFK9hS3QTr_ve10V3pfDu8fXAzzYPwsfezyAeWnmXyM",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/09/politics/mississippi-senate-hyde-smith-colom-campaign",
-          "title": "‘Where is Cindy Hyde-Smith?’: In a nail-biter Senate race, the incumbent stays out of view in Mississippi",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrH_TQ9MXsgyjWpDxOnFK9hS3QTr_ve10V3pfDu8fXAzzYPwsfezyAeWnmXyM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaLZP1RWv2_7v6FNukohv7Z4uyTfEhllDDYQys8Zjdyg1JsumSnaDuVkWmNTI"
         },
         {
-          "url": "https://apnews.com/projects/elections-2026/mississippi-us-senate-results/",
-          "title": "Mississippi U.S. Senate Election Live Results 2026",
-          "publisher": "AP News",
+          "url": "https://bleacherreport.com/articles/25531467-vikings-will-explore-their-options-qb-trade-deadline-nfl-insider-says-amid-cousins-buzz",
+          "title": "Vikings Will 'Explore Their Options' At QB Before Trade Deadline, NFL Insider Says amid Cousins Buzz",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9oEasnTDRUr2q-TjRibhJWnth8kxzHe5jfe3GfDfY-gXR0YEwlFWtnaG6Fng"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR136YJGY4vZCzad-k5Y6CtJ0LYfOv5cnB7VxOI5EdIyncKwfBwHgQAkUz3F3o"
         },
         {
-          "url": "https://www.washingtonpost.com/elections/2026/11/09/democrat-scott-colom-attacks-cook-reports-accuracy/",
-          "title": "Mississippi Senate candidate Scott Colom attacks Cook Political Report accuracy",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTP2r_qfjqsE4rmac_d0Llxn1xN_9KyeOSQlXPZnqN7ptAcCEy5jFgzANzuVPU"
-        }
-      ]
-    },
-    {
-      "query": "big walk game ai",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-10T14:00:00Z",
-      "related_news_urls": [
-        "https://aftermath.site/big-walk-ai-igf-jurors-controversy/",
-        "https://www.gamesindustry.biz/house-house-clarifies-use-of-ai-tools-in-big-walks-final-stage-of-development",
-        "https://www.videogameschronicle.com/news/big-walk-studio-says-it-used-ai-sparingly-in-response-to-indie-award-jury-statement-against-its-use/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9976bLrVZZ5AMVCcuDS_I1DzbJ92atEFRALbFWBspC9MYfyIfbzwQ-Y3eoGI",
-      "image_credit": "Aftermath",
-      "news": [
-        {
-          "url": "https://aftermath.site/big-walk-ai-igf-jurors-controversy/",
-          "title": "Big Walk Used AI In 'The Final Stretch' Of Development, Kicking Off Intense Awards Debate",
-          "publisher": "Aftermath",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9976bLrVZZ5AMVCcuDS_I1DzbJ92atEFRALbFWBspC9MYfyIfbzwQ-Y3eoGI"
-        },
-        {
-          "url": "https://www.gamesindustry.biz/house-house-clarifies-use-of-ai-tools-in-big-walks-final-stage-of-development",
-          "title": "House House clarifies use of AI tools in Big Walk's \"final stage of development\"",
-          "publisher": "GamesIndustry.biz",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMisnedsI-MoSXj0CT_O3T3CblHtCT-HC2kcQeMj_MxK9ypgN8ERGWQrPYX1c"
-        },
-        {
-          "url": "https://www.videogameschronicle.com/news/big-walk-studio-says-it-used-ai-sparingly-in-response-to-indie-award-jury-statement-against-its-use/",
-          "title": "Big Walk studio says it used AI ‘sparingly’ in response to indie award jury statement against its use",
-          "publisher": "Video Games Chronicle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDRULpWolZ3R_12aKls2QuvzO2t2EN31MUVNSbjnFDugOaIOBn_25cydhXTHw"
-        }
-      ]
-    },
-    {
-      "query": "jordan elliott",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T13:50:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-dt-jordan-elliott-to-work-out-for-bears",
-        "https://sports.yahoo.com/articles/former-tennessee-titans-dt-jordan-144802201.html",
-        "https://roundtable.io/sports/nfl/titans/players/former-titans-dl-jordan-elliott-getting-second-chance-in-the-nfl"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRw7Y6P212sul0eeqgJq2mBHlc_K-nMhn87T7YKiAUsiGYy92_MammTsAwxqjs",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-dt-jordan-elliott-to-work-out-for-bears",
-          "title": "Report: DT Jordan Elliott to work out for Bears",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/the-vikings-need-to-trade-for-a-quarterback-tomorrow",
+          "title": "The Vikings need to trade for a quarterback tomorrow",
           "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRw7Y6P212sul0eeqgJq2mBHlc_K-nMhn87T7YKiAUsiGYy92_MammTsAwxqjs"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/former-tennessee-titans-dt-jordan-144802201.html",
-          "title": "Former Tennessee Titans DT Jordan Elliott working out with Chicago Bears, per report",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPXVIIQLUU5w4cxY2wAZgFG_Od5vga1GmgpGEY4na4wUTqhFAIS0kMlzSutkw"
-        },
-        {
-          "url": "https://roundtable.io/sports/nfl/titans/players/former-titans-dl-jordan-elliott-getting-second-chance-in-the-nfl",
-          "title": "Former Titans DL Jordan Elliott Getting Second Chance in the NFL",
-          "publisher": "roundtable.io",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2XK01FNBjhwo8M8Qf-fNL7iArMDyU_PgASXpBsRfLiPsDARO709SKGgeKDZI"
-        }
-      ]
-    },
-    {
-      "query": "lauren sanchez",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T13:50:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/best-worst-fashion-moments-jeff-141403929.html",
-        "https://africa.businessinsider.com/entertainment/the-best-and-worst-fashion-moments-jeff-bezos-and-lauren-sanchez-bezos-have-had-this/v9dvrte",
-        "https://timesofindia.indiatimes.com/technology/tech-news/in-2024-jeff-bezos-paid-87-million-for-a-third-mansion-on-miamis-billionaire-bunker-he-and-lauren-snchez-bezos-transformed-the-temporary-home-with-exotic-gardens-a-private-gym-and-a-pickleball-court/articleshow/135699583.cms"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpr1UV7Q6rSkGzPkx77Wf4GiyNDl632jW3UGquP0rlUJw9vMhkubTxyoKpnOU",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/best-worst-fashion-moments-jeff-141403929.html",
-          "title": "The best and worst fashion moments Jeff Bezos and Lauren Sánchez Bezos have had this year",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpr1UV7Q6rSkGzPkx77Wf4GiyNDl632jW3UGquP0rlUJw9vMhkubTxyoKpnOU"
-        },
-        {
-          "url": "https://africa.businessinsider.com/entertainment/the-best-and-worst-fashion-moments-jeff-bezos-and-lauren-sanchez-bezos-have-had-this/v9dvrte",
-          "title": "The best and worst fashion moments Jeff Bezos and Lauren Sánchez Bezos have had this year",
-          "publisher": "Business Insider Africa",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkMV2UsrL0oxzhCfzC9un0AWPy3BZNu0ccJRXEHDO8F3duW7kjdxpau7f6AQg"
-        },
-        {
-          "url": "https://timesofindia.indiatimes.com/technology/tech-news/in-2024-jeff-bezos-paid-87-million-for-a-third-mansion-on-miamis-billionaire-bunker-he-and-lauren-snchez-bezos-transformed-the-temporary-home-with-exotic-gardens-a-private-gym-and-a-pickleball-court/articleshow/135699583.cms",
-          "title": "In 2024, Jeff Bezos paid $87 million for a third mansion on Miami's Billionaire Bunker; he and Lauren Sán",
-          "publisher": "The Times of India",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyJI25rRLHJPMM6y-RC_kK51bjYKasGpg2_kSAcngUlX9uT53WnKpAOJ4TlCI"
-        }
-      ]
-    },
-    {
-      "query": "country music singer dies",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-10T13:40:00Z",
-      "related_news_urls": [
-        "https://www.pennlive.com/entertainment/2026/11/prayers-are-pouring-in-after-beloved-country-music-singer-dies-in-crash-at-22.html",
-        "https://www.wtxl.com/news/local-news/in-your-neighborhood/wakulla-county/wakulla-county-musician-c-j-beach-dies-in-a-weekend-car-accident-leaving-the-music-community-in-mourning",
-        "https://americansongwriter.com/rising-country-singer-dead-at-22-after-tragic-car-crash-just-hours-after-his-final-performance/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkzVhS0Bzbu-rCFbRnswZYThbdVMIozai520lunD24Up2Opc-czixzE_hn7ZE",
-      "image_credit": "PennLive.com",
-      "news": [
-        {
-          "url": "https://www.pennlive.com/entertainment/2026/11/prayers-are-pouring-in-after-beloved-country-music-singer-dies-in-crash-at-22.html",
-          "title": "Prayers are pouring in after beloved country music singer dies in crash at 22",
-          "publisher": "PennLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkzVhS0Bzbu-rCFbRnswZYThbdVMIozai520lunD24Up2Opc-czixzE_hn7ZE"
-        },
-        {
-          "url": "https://www.wtxl.com/news/local-news/in-your-neighborhood/wakulla-county/wakulla-county-musician-c-j-beach-dies-in-a-weekend-car-accident-leaving-the-music-community-in-mourning",
-          "title": "Wakulla County musician C.J. Beach dies in a weekend car accident, leaving the music community in mourning",
-          "publisher": "WTXL ABC 27 Tallahassee News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4n__XY5-z9VvFnNwe0eAKIpbRr9ULD3Gj43E7Me_KeJrICqXKUATZCQQcsq0"
-        },
-        {
-          "url": "https://americansongwriter.com/rising-country-singer-dead-at-22-after-tragic-car-crash-just-hours-after-his-final-performance/",
-          "title": "Rising Country Singer Dead at 22 After Tragic Car Crash, Just Hours After His Final Performance",
-          "publisher": "American Songwriter",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRE7DqwXsGeik5B2v0dpf2z9e5yaq9nB2gPBOoarYdr-aLNoFUCBALrPz4U8CE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzHmSzGedMYI2al5x0aica3NHKCMhpAg2wAxZukmASpSb3bZ3mLLAgZCB6q8Y"
         }
       ]
     }
