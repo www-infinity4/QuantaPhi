@@ -76,7 +76,7 @@ test('integration retains swipe gestures, review gate and the existing original 
  const restrictedCard=readFileSync(new URL('../restricted-ad-card.mjs',import.meta.url),'utf8');
  assert.match(home,/oracle-age-preference\.js/);
  assert.match(home,/shopphi-story-player\.css/);
- assert.match(deck,/agePolicy\?\.noteSkipped/);
+ assert.match(deck,/agePolicy\.noteSkipped/);
  assert.match(deck,/pointerup/);
  assert.match(deck,/oracle:card-deactivated/);
  assert.match(shop,/createShopPhiStoryPlayer/);
