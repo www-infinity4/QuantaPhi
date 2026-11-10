@@ -549,7 +549,7 @@ function show(entry,remember=true,automatic=false){
 function advance(direction){
  viewerTouched=true;selectionVersion++;
  // Leaving an adult card with Next is a visitor skip, not inferred consent.
- if(direction>0&&active&&agePolicy?.isAdult(active)){agePolicy.noteSkipped();}
+ if(direction>0&&active&&agePolicy?.isAdult(active)&&!agePolicy.read().browsingThisVisit){agePolicy.noteSkipped();}
  const list=eligible();
  if(!list.length){status.textContent=selectedTab==='following'?'Follow a card in Public first.':'The original interactive cards are still initializing.';return}
  if(direction<0){
