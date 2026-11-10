@@ -1,0 +1,17 @@
+/* Oracle Octaves optional ad-story tray; original movie, player and card remain live. */
+#shopPhiStoryPlayer{max-width:1100px;margin:16px auto 22px;padding:20px;color:#f4f1fb;background:linear-gradient(120deg,#1b1a33,#14192e);border:1px solid #716294;border-radius:20px;font:400 17px/1.5 system-ui,sans-serif}
+#shopPhiStoryPlayer[hidden]{display:none!important}
+.shopphi-story-heading{font:600 clamp(21px,4vw,27px)/1.25 Georgia,serif;margin:0 0 6px;color:#e1cf9b}
+.shopphi-story-info{margin:0 0 13px;color:#c2c5d5}
+.shopphi-story-visual{position:relative;touch-action:pan-y;border-radius:16px;overflow:hidden;min-height:150px;max-height:430px;background:#10172a;display:grid;justify-items:center}
+.shopphi-story-image{display:block;max-width:100%;max-height:370px;width:100%;height:clamp(185px,39vw,350px);object-fit:contain;background:#121827;animation:shopphi-story-enter .6s ease both}
+.shopphi-story-title{justify-self:stretch;padding:8px 12px 0;font-size:18px}
+.shopphi-story-position{justify-self:stretch;padding:0 12px 12px;color:#c4b8f0;font-size:15px}
+.shopphi-story-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:12px}
+.shopphi-story-button,.shopphi-story-link{min-height:48px;border-radius:10px;padding:11px 16px;font:650 16px/1.4 system-ui,sans-serif;border:1px solid #79749c;color:#f5f1ff;background:#34304e;text-decoration:none;cursor:pointer}
+.shopphi-story-play{background:#b8a5ed;color:#171327}
+.shopphi-story-button:disabled{opacity:.45;cursor:default}
+.shopphi-story-button:focus-visible,.shopphi-story-link:focus-visible{outline:3px solid #92dbd3;outline-offset:3px}
+@keyframes shopphi-story-enter{from{opacity:.12}to{opacity:1}}
+@media(max-width:600px){#shopPhiStoryPlayer{padding:16px;margin:12px 8px 20px}.shopphi-story-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.shopphi-story-button,.shopphi-story-link{display:grid;place-items:center;padding:10px;font-size:16px;min-width:0}}
+@media(prefers-reduced-motion:reduce){#shopPhiStoryPlayer *{animation:none!important;transition:none!important}}
