@@ -2,9 +2,21 @@
   "schema_version": 1,
   "source": "Google Trends RSS + publisher trailer RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
-  "checked_at": "2026-11-10T20:04:06.817867Z",
+  "checked_at": "2026-11-10T20:32:37.037323Z",
   "source_note": "Google trending titles are independently matched to source-backed trailer uploads. Other cards are labelled NEW TRAILER, not Google-trending. These are previews, not full movies.",
   "items": [
+    {
+      "id": "7SO6VhCk5l4",
+      "title": "Pendulum",
+      "video_id": "7SO6VhCk5l4",
+      "video_title": "Pendulum Trailer #1 (2027)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-10T20:07:30Z",
+      "source_url": "https://www.youtube.com/watch?v=7SO6VhCk5l4",
+      "poster": "https://i.ytimg.com/vi/7SO6VhCk5l4/hqdefault.jpg",
+      "google_trending": false
+    },
     {
       "id": "gKiWSvAjNG0",
       "title": "Clashing Through the Snow",
