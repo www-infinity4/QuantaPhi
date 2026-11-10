@@ -3,156 +3,156 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T23:01:30.176154Z",
+  "checked_at": "2026-11-10T23:31:24.873686Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "cher",
+      "query": "capitals vs senators",
       "approx_searches": "500+",
-      "published_at": "2026-11-10T22:40:00Z",
+      "published_at": "2026-11-10T23:10:00Z",
       "related_news_urls": [
-        "https://www.the-sun.com/entertainment/17285783/cher-goddaughter-jessie-jo-stark-topless-playboy/",
-        "https://www.dailystar.co.uk/showbiz/chers-goddaughter-jesse-jo-stark-37864121",
-        "https://www.yahoo.com/entertainment/celebrity/articles/woman-finds-2-stranded-strangers-184500063.html"
+        "https://www.nhl.com/news/washington-capitals-ottawa-senators-game-preview-november-10-2026",
+        "https://www.nytimes.com/athletic/7770608/2026/11/10/capitals-vs-senators-stream-how-to-watch-nov-10/",
+        "https://www.yardbarker.com/nhl/articles/washington_takes_on_ottawa_tuesday_at_canadian_tire_centre/s1_17668_44543481"
       ],
-      "image_url": null,
-      "image_credit": "The Sun",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://www.the-sun.com/entertainment/17285783/cher-goddaughter-jessie-jo-stark-topless-playboy/",
-          "title": "Cher’s goddaughter Jesse Jo Stark strips topless for Playboy as she poses for racy mag",
-          "publisher": "The Sun",
+          "url": "https://www.nhl.com/news/washington-capitals-ottawa-senators-game-preview-november-10-2026",
+          "title": "Capitals at Senators projected lineups",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": null
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
         },
         {
-          "url": "https://www.dailystar.co.uk/showbiz/chers-goddaughter-jesse-jo-stark-37864121",
-          "title": "Cher’s goddaughter Jesse Jo Stark goes topless for racy Playboy shoot",
-          "publisher": "Daily Star",
+          "url": "https://www.nytimes.com/athletic/7770608/2026/11/10/capitals-vs-senators-stream-how-to-watch-nov-10/",
+          "title": "How to watch Capitals vs. Senators: TV channel and streaming options for November 10",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSroSfxzSvvKh_fXvrZsNPaLyLxB5oXb-6EskDyn1U0ZbUiu4oJxtSEF4N3Ax0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0IZj8QD9fTFgSDRrQZYvTkn3Us4dEbI73YbCuNhFGbZldtV5NdrKElDkq6Sk"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/woman-finds-2-stranded-strangers-184500063.html",
-          "title": "Woman finds 2 stranded strangers outside her house who say they won dinner at Cher’s Malibu home, so she Googles it after they leave",
-          "publisher": "Yahoo",
+          "url": "https://www.yardbarker.com/nhl/articles/washington_takes_on_ottawa_tuesday_at_canadian_tire_centre/s1_17668_44543481",
+          "title": "Washington Takes on Ottawa Tuesday at Canadian Tire Centre",
+          "publisher": "Yardbarker",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSe6Gfd9SPUqINnyMICfdPBOcAYM9krCOoRIEtpLaFvAB4UzJwTY84CtdP1Yrk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfZmKOTX_9QMQFYpyKF2v29nuQAo6auPFwJv3LAHtRojqEnFJ0CFn71a6IdTw"
         }
       ]
     },
     {
-      "query": "nascar awards banquet 2026",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T22:40:00Z",
+      "query": "devils vs jets",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T23:10:00Z",
       "related_news_urls": [
-        "https://www.nascar.com/news-media/2026/11/10/kyle-larson-to-experience-different-kind-of-racing-by-running-marathon-in-offseason/",
-        "https://www.tennessean.com/story/sports/nascar/2026/11/10/nascar-banquet-awards-tv-schedule-cup-series/92698873007/",
-        "https://heavy.com/sports/nascar/2026-awards-ceremony-how-to-watch/"
+        "https://www.nhl.com/news/connor-hellebuyck-not-starting-against-jets-in-winnipeg-a-disappointment-scott-arniel-says",
+        "https://sports.yahoo.com/videos/connor-hellebuyck-opens-why-asked-224854830.html",
+        "https://www.cbc.ca/news/canada/manitoba/connor-hellebuyck-return-to-winnipeg-9.7416133"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDHoJkJc0nCH2tyk7ey_kKJe53j_Pxc9ORewMz3bBYRDLXTKi2bWJYSZYUtug",
-      "image_credit": "NASCAR.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMjvQyCxjwdJdz4t5a0NwBRIIh12JYnUliFW83DibLV_XjY8LkIuIZ46Llckc",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://www.nascar.com/news-media/2026/11/10/kyle-larson-to-experience-different-kind-of-racing-by-running-marathon-in-offseason/",
-          "title": "Kyle Larson to experience different kind of racing by running marathon in offseason",
-          "publisher": "NASCAR.com",
+          "url": "https://www.nhl.com/news/connor-hellebuyck-not-starting-against-jets-in-winnipeg-a-disappointment-scott-arniel-says",
+          "title": "Hellebuyck not starting against Jets in Winnipeg a ‘disappointment,’ Arniel says",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDHoJkJc0nCH2tyk7ey_kKJe53j_Pxc9ORewMz3bBYRDLXTKi2bWJYSZYUtug"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMjvQyCxjwdJdz4t5a0NwBRIIh12JYnUliFW83DibLV_XjY8LkIuIZ46Llckc"
         },
         {
-          "url": "https://www.tennessean.com/story/sports/nascar/2026/11/10/nascar-banquet-awards-tv-schedule-cup-series/92698873007/",
-          "title": "What channel is the NASCAR banquet on today? Time, TV schedule for the NASCAR Awards show",
-          "publisher": "The Tennessean",
+          "url": "https://sports.yahoo.com/videos/connor-hellebuyck-opens-why-asked-224854830.html",
+          "title": "Connor Hellebuyck Opens Up On Why He Asked For A Trade From The Winnipeg Jets",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuRiHhGbwRnHE3NXF59JIt2CwISvCaxY4eEi0hBm4OUsrdCp6Vqb05q4g1a0c"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTehdL0qJNoSpnn706sE4fAP0TC4mRbYPNOc0Eqzl1rCY8usgws7hAyK4Ymrpk"
         },
         {
-          "url": "https://heavy.com/sports/nascar/2026-awards-ceremony-how-to-watch/",
-          "title": "When Is the 2026 NASCAR Awards Ceremony? Date, Time and How to Watch",
-          "publisher": "Heavy.com",
+          "url": "https://www.cbc.ca/news/canada/manitoba/connor-hellebuyck-return-to-winnipeg-9.7416133",
+          "title": "Connor Hellebuyck tells media online death threats, family played roles in trade demand",
+          "publisher": "CBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd1MNC2oqEJHSbLYJVledPMz7B0lUzByTzc3cN8VcJyOekR2EUgkgQQ3kq_jk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqsfuP2hTvpCIiruejsQcCb9vsLOk_nhTU9he5i9fyKKG6wTRx9g70BT6TLk8"
         }
       ]
     },
     {
-      "query": "corey gamble",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T22:40:00Z",
+      "query": "kent state vs bowling green",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T23:10:00Z",
       "related_news_urls": [
-        "https://people.com/kris-jenner-celebrates-corey-gamble-46th-birthday-tribute-12247602",
-        "https://www.instagram.com/p/DfkSI2FyMxS/",
-        "https://www.eonline.com/news/1437867/kris-jenners-boyfriend-corey-gamble-calls-her-wife-in-birthday-tribute"
+        "https://www.cbssports.com/betting/news/kent-state-bowling-green-prediction-odds-time-week-11-maction-picks-bets/",
+        "https://www.usatoday.com/sports/ncaaf/event/2026/2975025/summary/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=2",
+        "https://bgfalconmedia.com/184088/sports/falcon-football-set-to-host-golden-flashes-in-tuesday-maction/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVeejaW1ZahDJm3vr_gGdukoMLVBA8Osv-9mH7znMTOUZ7c34fJ4gQfGYd7L8",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcIu_UCoXht0kgIzDZCd1GoAp44o3rYjTT5yQls7j29bRqp9I-_8kMsVtdk68",
+      "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://people.com/kris-jenner-celebrates-corey-gamble-46th-birthday-tribute-12247602",
-          "title": "Kris Jenner Celebrates Boyfriend Corey Gamble’s 46th Birthday: ‘I Feel So Lucky to Do Life with You’",
-          "publisher": "People.com",
+          "url": "https://www.cbssports.com/betting/news/kent-state-bowling-green-prediction-odds-time-week-11-maction-picks-bets/",
+          "title": "Kent State vs. Bowling Green odds, prediction, time: Week 11 MACtion picks by proven model",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVeejaW1ZahDJm3vr_gGdukoMLVBA8Osv-9mH7znMTOUZ7c34fJ4gQfGYd7L8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcIu_UCoXht0kgIzDZCd1GoAp44o3rYjTT5yQls7j29bRqp9I-_8kMsVtdk68"
         },
         {
-          "url": "https://www.instagram.com/p/DfkSI2FyMxS/",
-          "title": "#TSRBirfdayz: #KrisJenner shares some sweet words as she wishes her man #CoreyGamble a Happy 46th Birthday. 🎉🎈 ✍🏾: #TSRStaffJW",
-          "publisher": "Instagram",
+          "url": "https://www.usatoday.com/sports/ncaaf/event/2026/2975025/summary/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=2",
+          "title": "Kent State Golden Flashes at Bowling Green Falcons - NCAAF Game Summary - Nov 10, 2026",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTS1glnyKEG5YpnMFe5GC96SOT0HOdR1mvGTDQ5ade6skVLn0aZEHfhOWDT3wg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUCw9wEKfYMTXEBSAP9y31Yi55bUKNE5Vg0cWU6p3ofPjw9SSQosBRt6HmjYk"
         },
         {
-          "url": "https://www.eonline.com/news/1437867/kris-jenners-boyfriend-corey-gamble-calls-her-wife-in-birthday-tribute",
-          "title": "Corey Gamble Calls Kris Jenner His \"Wife\" in Eyebrow-Raising Tribute",
-          "publisher": "E! News",
+          "url": "https://bgfalconmedia.com/184088/sports/falcon-football-set-to-host-golden-flashes-in-tuesday-maction/",
+          "title": "Falcon football set to host Golden Flashes in Tuesday MACtion",
+          "publisher": "BG Falcon Media",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKO2FUh31XbiXBWnGwTiJV7IB892ObPzXo8qyYfeVKe9qwRmGT_j3Bo_79sgE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzgYmo-SOp0LAAhVkWUbyQ_pWmbo1_70rM1n684Dbr7Jhth97TFUJvuP3Izn8"
         }
       ]
     },
     {
-      "query": "jp crawford",
+      "query": "donna kelce",
       "approx_searches": "200+",
-      "published_at": "2026-11-10T22:40:00Z",
+      "published_at": "2026-11-10T23:10:00Z",
       "related_news_urls": [
-        "https://www.seattletimes.com/sports/mariners/mariners-are-parting-ways-with-veteran-shortstop-j-p-crawford/",
-        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-10/darwinzon-hernandez-hopes-to-return-to-mlb",
-        "https://redbirdrants.com/j-p-crawford-could-help-the-cardinals-but-his-fit-is-more-awkward-than-it-seems"
+        "https://timesofindia.indiatimes.com/sports/nfl/news/donna-kelces-355000-property-move-puts-travis-kelce-and-jason-kelces-inheritance-in-focus/articleshow/135701104.cms",
+        "https://www.realtor.com/news/celebrity-real-estate/donna-kelce-sells-florida-condo-after-major-renovation/",
+        "https://www.instyle.com/donna-kelce-sells-florida-condo-485000-profit-12240418"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYmTvOnFrHzImOb6OfhadNmqMzbI3kpcZXDwXSBY6SegrAs0noYQV3UmDQQPU",
-      "image_credit": "The Seattle Times",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBoRvgGo5q2KeXtLNbNwLoB_1FzxrY951dKZ1oldGCM5PAFe28lIpZzEa5tmI",
+      "image_credit": "The Times of India",
       "news": [
         {
-          "url": "https://www.seattletimes.com/sports/mariners/mariners-are-parting-ways-with-veteran-shortstop-j-p-crawford/",
-          "title": "Mariners moving on from longest-tenured player",
-          "publisher": "The Seattle Times",
+          "url": "https://timesofindia.indiatimes.com/sports/nfl/news/donna-kelces-355000-property-move-puts-travis-kelce-and-jason-kelces-inheritance-in-focus/articleshow/135701104.cms",
+          "title": "Donna Kelce's $355,000 property move puts Travis Kelce and Jason Kelce's inheritance in focus",
+          "publisher": "The Times of India",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYmTvOnFrHzImOb6OfhadNmqMzbI3kpcZXDwXSBY6SegrAs0noYQV3UmDQQPU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBoRvgGo5q2KeXtLNbNwLoB_1FzxrY951dKZ1oldGCM5PAFe28lIpZzEa5tmI"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-10/darwinzon-hernandez-hopes-to-return-to-mlb",
-          "title": "Darwinzon Hernández hopes to return to MLB",
-          "publisher": "NBC Sports",
+          "url": "https://www.realtor.com/news/celebrity-real-estate/donna-kelce-sells-florida-condo-after-major-renovation/",
+          "title": "Donna Kelce Sells Florida Condo for $485K—Less Than a Year After Major Makeover",
+          "publisher": "Realtor.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSw3P1_ngq8Kf5qyNSVcJ0KJ-Qf99Hd4Ig7DVcB2m5Eo7uqIFfN14BnE_0Wu7w"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAwxb8ZsVYS9EqjdgP4fh1GJwy3u8jqkJKjL6ZVr5rOYODrD2Eayf7XqhsWO8"
         },
         {
-          "url": "https://redbirdrants.com/j-p-crawford-could-help-the-cardinals-but-his-fit-is-more-awkward-than-it-seems",
-          "title": "J.P. Crawford could help the Cardinals, but his fit is more awkward than it seems",
-          "publisher": "Redbird Rants",
+          "url": "https://www.instyle.com/donna-kelce-sells-florida-condo-485000-profit-12240418",
+          "title": "Travis Kelce’s Mom Donna Sells Her Newly Remodeled Florida Condo for This Major Real Estate Upgrade",
+          "publisher": "InStyle",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrsMZXiCZ-7epVWI26UQcGxVuR3KhcmNygmVM1xEohdohXCUSBFpKo3yDscQA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQN0RLJqTwAMFwWpp2AGyXMZ3Lm4qJNlhbJgcAHbrehnlr9A7EPvzwHZNbYG7Q"
         }
       ]
     },
     {
-      "query": "florida vs florida state prediction",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T22:40:00Z",
+      "query": "florida vs florida state",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-10T23:00:00Z",
       "related_news_urls": [
         "https://floridagators.com/news/2026/11/9/mens-basketball-stuff-florida-at-fsu-nov-10-2026",
-        "https://247sports.com/college/florida-state/longformarticle/fsu-basketball-florida-preview-luke-loucks-292454686/",
+        "https://www.si.com/college/florida/no-1-florida-gators-keys-vs-uniquely-scary-florida-state-seminoles",
         "https://sports.yahoo.com/articles/florida-state-basketball-vs-florida-220110178.html"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVgdUFpjZefAbJx6zZeTiTzYWVhuvwZh6agYDZ32g2jVrOVTEsRryOT7ruY0g",
@@ -166,11 +166,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVgdUFpjZefAbJx6zZeTiTzYWVhuvwZh6agYDZ32g2jVrOVTEsRryOT7ruY0g"
         },
         {
-          "url": "https://247sports.com/college/florida-state/longformarticle/fsu-basketball-florida-preview-luke-loucks-292454686/",
-          "title": "Loucks, FSU excited to take on No. 1 Florida, battle the talented and physical Gators",
-          "publisher": "247Sports",
+          "url": "https://www.si.com/college/florida/no-1-florida-gators-keys-vs-uniquely-scary-florida-state-seminoles",
+          "title": "No. 1 Florida Gators Keys vs. 'Uniquely Scary' Florida State Seminoles",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2jHgwiWntOaT7kGoLNCimiQ3MunXAB8cbqqVPvmkqeEvIGG5x7xypcFVNq48"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpOPYp1DLq3lt_xcPYUQoMAju7zckOlvX4W6QXfkFkedjNyDnGtx_9CVjM9dU"
         },
         {
           "url": "https://sports.yahoo.com/articles/florida-state-basketball-vs-florida-220110178.html",
@@ -182,177 +182,177 @@
       ]
     },
     {
-      "query": "florence pugh",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T22:30:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66105021/?ref_=ttnw_art_perm",
-        "https://comicbook.com/movies/news/avengers-doomsday-dune-star-florence-pugh-reveals-which-movie-to-watch-first-on-dunesday/",
-        "https://screenrant.com/avengers-doomsday-dune-3-december-release-order-recommendation-florence-pugh/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwZaQVHbh4Izmm1xaarji8Sc6Lx340bzyk4VOYjyuH2oMv7HWQ3PiY9hbp-QY",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66105021/?ref_=ttnw_art_perm",
-          "title": "Florence Pugh Reveals Her Ideal Dunesday Viewing Order for ‘Dune: Part Three’ and ‘Avengers: Doomsday’",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwZaQVHbh4Izmm1xaarji8Sc6Lx340bzyk4VOYjyuH2oMv7HWQ3PiY9hbp-QY"
-        },
-        {
-          "url": "https://comicbook.com/movies/news/avengers-doomsday-dune-star-florence-pugh-reveals-which-movie-to-watch-first-on-dunesday/",
-          "title": "Avengers: Doomsday & Dune Star Florence Pugh Reveals Which Movie to Watch First on Dunesday",
-          "publisher": "ComicBook.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUFSykqpRVt4mt_PMLN7ExiACIBZmKq7wz-kMfm8mA2c7orBf0vboevC5DXqA"
-        },
-        {
-          "url": "https://screenrant.com/avengers-doomsday-dune-3-december-release-order-recommendation-florence-pugh/",
-          "title": "Avengers: Doomsday & Dune: Part 3's Release Date Watch Order Officially Recommended By Star Florence Pugh",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_30Ztz9s4NYRhpsuzu9m4YCuVcArr56GLaLr5dudXiu0mmP45SDl_YJzYC_g"
-        }
-      ]
-    },
-    {
-      "query": "cboe volatility index",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T22:30:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/video/2026/11/09/fundstrats-tom-lee-markets-are-a-lot-safer-than-people-think.html",
-        "https://fundstratdirect.com/macro-strategy/macro-minute/2026/11/09/video-macro-minute-more-evidence-bottom-is-in-stocks-rally-on-bad-news-and/",
-        "https://www.benzinga.com/markets/tech/26/11/62904872/dan-ives-warns-chip-stocks-arent-done-falling-sees-another-12-drop-but-tom-lee-calls-ai-selloff-an-overreaction-predicts-20-tech-rally"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMrD2rvmphK9sX9RQfxAKrscX7ORkS22Wdicbem4kp7fhG72KdWzwlKCzrf_I",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/video/2026/11/09/fundstrats-tom-lee-markets-are-a-lot-safer-than-people-think.html",
-          "title": "Fundstrat's Tom Lee: Markets are a lot safer than people think",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMrD2rvmphK9sX9RQfxAKrscX7ORkS22Wdicbem4kp7fhG72KdWzwlKCzrf_I"
-        },
-        {
-          "url": "https://fundstratdirect.com/macro-strategy/macro-minute/2026/11/09/video-macro-minute-more-evidence-bottom-is-in-stocks-rally-on-bad-news-and/",
-          "title": "Video: Macro Minute: More evidence bottom is in: stocks rally on bad news. And also, VIX term structure uninverted",
-          "publisher": "Fundstrat Direct",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJa19qQlT45LKSKewxHwsrL4erjGGSu-d41RVut4AEmi3i5JwT41TtkchP54U"
-        },
-        {
-          "url": "https://www.benzinga.com/markets/tech/26/11/62904872/dan-ives-warns-chip-stocks-arent-done-falling-sees-another-12-drop-but-tom-lee-calls-ai-selloff-an-overreaction-predicts-20-tech-rally",
-          "title": "Dan Ives Warns Chip Stocks Aren't Done Falling, Sees Another 12% Drop — But Tom Lee Calls AI Selloff an '",
-          "publisher": "Benzinga",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6F2iLSB8zidiqlhreM0sfd9kUVC6HOiHItOxvk7hfDuxmVzOgxUO1j-MKfAQ"
-        }
-      ]
-    },
-    {
-      "query": "costco stock",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T22:30:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/costco-wholesale-corporation-declares-30-211500905.html",
-        "https://seekingalpha.com/news/4670188-costco-gains-after-announcing-its-first-special-dividend-in-almost-three-years",
-        "https://finbold.com/costco-to-pay-dividends-next-week-heres-how-much-100-cost-shares-will-earn/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/costco-wholesale-corporation-declares-30-211500905.html",
-          "title": "Costco Wholesale Corporation Declares $30 Special Cash Dividend and Reauthorizes Stock Repurchase Program",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM"
-        },
-        {
-          "url": "https://seekingalpha.com/news/4670188-costco-gains-after-announcing-its-first-special-dividend-in-almost-three-years",
-          "title": "Costco gains after announcing its first special dividend in almost three years (COST:NASDAQ)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDp2FDAaWGOCiPTR8mTKXSf5fwhr2l3qmkgbsfZVrExXLAqbc5o95zlZ5pyMw"
-        },
-        {
-          "url": "https://finbold.com/costco-to-pay-dividends-next-week-heres-how-much-100-cost-shares-will-earn/",
-          "title": "Costco to pay dividends next week; Here’s how much 100 COST shares will earn",
-          "publisher": "Finbold",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCCRyVu2OEOzWzlXShAFlxdhcWO_F0h2hz7IWcOvHKovcs3vFzAsIL5uu4r2M"
-        }
-      ]
-    },
-    {
-      "query": "linda nosková",
+      "query": "avalanche vs maple leafs",
       "approx_searches": "1000+",
-      "published_at": "2026-11-10T22:20:00Z",
+      "published_at": "2026-11-10T23:00:00Z",
       "related_news_urls": [
-        "https://www.wtatennis.com/news/4606909/fage-wta-finals-day-2-preview-will-linda-noskova-or-coco-gauff-advance-to-semis",
-        "https://sports.yahoo.com/articles/tough-jessica-pegula-taken-aback-095333222.html",
-        "https://www.bbc.com/sport/tennis/articles/c3x2w9w078kko"
+        "https://www.nhl.com/news/colorado-avalanche-toronto-maple-leafs-game-preview-november-10-2026",
+        "https://www.si.com/nhl/avalanche/onsi/3-players-to-watch-for-colorado-avalanche-vs-toronto-maple-leafs",
+        "https://www.covers.com/nhl/avalanche-vs-maple-leafs-prediction-picks-nov-10-2026"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5AlElRbVagNPmzvooJNx2RJat9nIbctXSv-cdeuaFJj10mC56udt4TD4a3Pc",
-      "image_credit": "WTA Tennis",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://www.wtatennis.com/news/4606909/fage-wta-finals-day-2-preview-will-linda-noskova-or-coco-gauff-advance-to-semis",
-          "title": "FAGE WTA Finals Day 3 preview and advancement scenarios for Noskova and Gauff",
-          "publisher": "WTA Tennis",
+          "url": "https://www.nhl.com/news/colorado-avalanche-toronto-maple-leafs-game-preview-november-10-2026",
+          "title": "Avalanche at Maple Leafs projected lineups",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5AlElRbVagNPmzvooJNx2RJat9nIbctXSv-cdeuaFJj10mC56udt4TD4a3Pc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
         },
         {
-          "url": "https://sports.yahoo.com/articles/tough-jessica-pegula-taken-aback-095333222.html",
-          "title": "“It’s Tough” – Jessica Pegula Taken Aback by Coco Gauff’s “Insane” Physicality After WTA Finals Loss",
+          "url": "https://www.si.com/nhl/avalanche/onsi/3-players-to-watch-for-colorado-avalanche-vs-toronto-maple-leafs",
+          "title": "3 Players to Watch for Colorado Avalanche vs. Toronto Maple Leafs",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWl_UFB_JzCRQBLe2sjJm9DXIkB_tDQ2bcIWKmVPNK0P0nsdf_XH-PvLph2Ng"
+        },
+        {
+          "url": "https://www.covers.com/nhl/avalanche-vs-maple-leafs-prediction-picks-nov-10-2026",
+          "title": "Avalanche vs Maple Leafs Prediction, Picks & Odds for Tonight’s NHL Game",
+          "publisher": "Covers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs6q0wOb7EOa0I7OeFHd15-5P6K6zZ8xQIoZcBRi00u2g0-ALrKx0cnkqVur4"
+        }
+      ]
+    },
+    {
+      "query": "wild vs canadiens",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T23:00:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/canadiens/news/min-mtl-what-you-need-to-know-nov-10-2026",
+        "https://www.covers.com/nhl/wild-vs-canadiens-prediction-picks-nov-10-2026",
+        "https://www.nytimes.com/athletic/7770624/2026/11/10/wild-vs-canadiens-stream-how-to-watch-nov-10/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnBqoPrHPfZ--FXG5hnoR4zkQuxjOiTHojzlZBXs9y3RPfhYU8olQLd5XOmp0",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/canadiens/news/min-mtl-what-you-need-to-know-nov-10-2026",
+          "title": "MIN@MTL: What you need to know | Montréal Canadiens",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnBqoPrHPfZ--FXG5hnoR4zkQuxjOiTHojzlZBXs9y3RPfhYU8olQLd5XOmp0"
+        },
+        {
+          "url": "https://www.covers.com/nhl/wild-vs-canadiens-prediction-picks-nov-10-2026",
+          "title": "Wild vs Canadiens Prediction, Picks & Odds for Tonight’s NHL Game",
+          "publisher": "Covers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDuHFERwkzBG3Q5unXH5ilSGpgykFZN5KmbPQlWLWbkUnbTrItyefrEloRyac"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7770624/2026/11/10/wild-vs-canadiens-stream-how-to-watch-nov-10/",
+          "title": "How to watch Wild vs. Canadiens: TV channel and streaming options for November 10",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqLM5ooYGDYq7OGdV1uZP11qwc4lNQNA6CZOK_2Or57hTSoECOTTnpJukqxaQ"
+        }
+      ]
+    },
+    {
+      "query": "michigan state basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T23:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mens-college-basketball/story/_/id/50436123/champions-classic-2026-duke-michigan-state-kansas-kentucky",
+        "https://sports.yahoo.com/articles/champions-classic-live-updates-start-230126505.html",
+        "https://www.cbssports.com/college-basketball/news/champions-classic-nba-draft-guide-duke-kansas-kentucky/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQB61aHJJPWxESh2zxOcVY4_PXkGH5b6WAdueLRY5NjSibwW0FP7uRIcW6bHsE",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50436123/champions-classic-2026-duke-michigan-state-kansas-kentucky",
+          "title": "Champions Classic 2026: Previewing Michigan State-Duke, Kansas-Kentucky",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQB61aHJJPWxESh2zxOcVY4_PXkGH5b6WAdueLRY5NjSibwW0FP7uRIcW6bHsE"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/champions-classic-live-updates-start-230126505.html",
+          "title": "Champions Classic live updates: Start time, TV, predictions for Duke-Michigan State, Kentucky-Kansas",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9o_GVx8MVHKUcfLv30FYELSHkNivTxCjf6_RTHMNjkmmNItEcRGrJkGiLvLo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJDsBDX-uXXJ7uSzgmKvukX7TdtKV29GZOHQjTBx_38xbVf5rs-pk65pZrW6o"
         },
         {
-          "url": "https://www.bbc.com/sport/tennis/articles/c3x2w9w078kko",
-          "title": "WTA Finals: Coco Gauff beats Jessica Pegula and Linda Noskova beats Marta Kostyuk",
-          "publisher": "BBC",
+          "url": "https://www.cbssports.com/college-basketball/news/champions-classic-nba-draft-guide-duke-kansas-kentucky/",
+          "title": "Champions Classic NBA Draft guide: Who scouts will be watching in college basketball's high-profile showcase",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQx4RcYxF-cyYhgD4MRhZTYTwvb60a7FJtwXNftLdZ9aGg67EhteQ6MDGaw-tY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRl07nIM7401Q7RexKP_7ddh6Fhpf0UQHdmn6A1i4SxQwqXux9WrgrX9Wy0cM0"
         }
       ]
     },
     {
-      "query": "naresh bhatt",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-10T22:10:00Z",
+      "query": "packers sign kenny fletcher jr",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T23:00:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/2026/11/10/us/naresh-bhatt-murder-trial-virginia",
-        "https://www.wusa9.com/article/news/crime/naresh-bhatt-murder-trial/naresh-bhatt-murder-trial-guilty-verdict-mamta-kafle-bhatt/65-30de82dd-d2e6-48e2-956d-02220880d649",
-        "https://wtop.com/virginia/2026/11/jury-deliberates-in-murder-trial-of-manassas-park-man-charged-with-killing-his-wife/"
+        "https://www.packers.com/news/packers-announce-roster-move-nov-10-2026",
+        "https://packerswire.usatoday.com/story/sports/nfl/packers/2026/11/10/packers-trade-deadline-recap-0-deals-1-practice-squad-signing/92713827007/",
+        "https://www.fox61.com/video/sports/locked-on/lo-wisconsin/locked-on-packers-hit/good-decision-the-packers-made-the-right-call-by-not-making-a-trade/535-a03637eb-cebe-4182-b5e1-bdfb428886a4"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7bsOisf5L9p3uwuBfl9HQWmi37hGTa5liqbzE8zmmtKk3v3YT5LTlij2mBYg",
-      "image_credit": "CNN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQH05tH9TltULFHDgFymwanDyYBBnFPdTFjRMdja1u-Gw0PEuKfjf56dxHqRmU",
+      "image_credit": "Green Bay Packers – packers.com",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/10/us/naresh-bhatt-murder-trial-virginia",
-          "title": "Jury reaches verdict in murder trial of Virginia man who admitted dismembering his wife but denies killing her",
-          "publisher": "CNN",
+          "url": "https://www.packers.com/news/packers-announce-roster-move-nov-10-2026",
+          "title": "Packers announce roster move | Nov. 10, 2026",
+          "publisher": "Green Bay Packers – packers.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7bsOisf5L9p3uwuBfl9HQWmi37hGTa5liqbzE8zmmtKk3v3YT5LTlij2mBYg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQH05tH9TltULFHDgFymwanDyYBBnFPdTFjRMdja1u-Gw0PEuKfjf56dxHqRmU"
         },
         {
-          "url": "https://www.wusa9.com/article/news/crime/naresh-bhatt-murder-trial/naresh-bhatt-murder-trial-guilty-verdict-mamta-kafle-bhatt/65-30de82dd-d2e6-48e2-956d-02220880d649",
-          "title": "Naresh Bhatt found guilty of murdering missing wife Mamta Kafle Bhatt, jury decides",
-          "publisher": "WUSA9",
+          "url": "https://packerswire.usatoday.com/story/sports/nfl/packers/2026/11/10/packers-trade-deadline-recap-0-deals-1-practice-squad-signing/92713827007/",
+          "title": "Packers trade deadline recap: 0 deals, 1 practice squad signing",
+          "publisher": "Packers Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwvJTWP_QjFyFsz-T2TEw4vUff3i-OJiHlSprOhD1r17mNw1n13Q2-FXjQPH0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHZj2ki1Bk3U-cJoEzBeg9jpttPrHosIdUGEyTKZWX4SZvS9M1yVhpQeaWeLk"
         },
         {
-          "url": "https://wtop.com/virginia/2026/11/jury-deliberates-in-murder-trial-of-manassas-park-man-charged-with-killing-his-wife/",
-          "title": "Jury finds Manassas Park man Naresh Bhatt guilty of murdering, dismembering wife",
-          "publisher": "WTOP News",
+          "url": "https://www.fox61.com/video/sports/locked-on/lo-wisconsin/locked-on-packers-hit/good-decision-the-packers-made-the-right-call-by-not-making-a-trade/535-a03637eb-cebe-4182-b5e1-bdfb428886a4",
+          "title": "GOOD DECISION: The Packers Made the RIGHT Call by NOT Making a Trade",
+          "publisher": "fox61.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYLIg9p2uMEj-lmYZr_zSJuByln1ZFWBT9Zx4_CMjvJaNTmf7XNMiQqzj03zc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRadhpP747KDg524YSj-kNGQO-6elF_0mzGBWIA-wUfKXNxFCreBmUmiBz4BCg"
+        }
+      ]
+    },
+    {
+      "query": "silver rail elementary school",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T23:00:00Z",
+      "related_news_urls": [
+        "https://katu.com/news/local/silver-rail-elementary-school-bend-oregon-teacher-becky-drury-hurt-shootings-returns-home",
+        "https://www.kgw.com/article/news/local/bend-school-shooting/bend-teacher-injured-silver-rail-shooting-out-hospital/283-375d0411-db93-4ba4-8f27-ed8605335563",
+        "https://bendbulletin.com/2026/11/09/silver-rail-shooting-survivor-becky-drury-returns-home-after-four-surgeries/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwWiCoOz7wlUODAOjYLcJOS05jybUlcDdM2uBw4-F6UwD6_36UEp132DGSyvo",
+      "image_credit": "KATU",
+      "news": [
+        {
+          "url": "https://katu.com/news/local/silver-rail-elementary-school-bend-oregon-teacher-becky-drury-hurt-shootings-returns-home",
+          "title": "Teacher seriously hurt in Bend school shooting returns home after four surgeries",
+          "publisher": "KATU",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwWiCoOz7wlUODAOjYLcJOS05jybUlcDdM2uBw4-F6UwD6_36UEp132DGSyvo"
+        },
+        {
+          "url": "https://www.kgw.com/article/news/local/bend-school-shooting/bend-teacher-injured-silver-rail-shooting-out-hospital/283-375d0411-db93-4ba4-8f27-ed8605335563",
+          "title": "Bend teacher injured in Silver Rail shooting out of hospital",
+          "publisher": "KGW",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdwMgQpVogCTKP5nuh7pnu2Dltg9_6lWuD0qiqAyLTsjcy466bXScOnMivsLI"
+        },
+        {
+          "url": "https://bendbulletin.com/2026/11/09/silver-rail-shooting-survivor-becky-drury-returns-home-after-four-surgeries/",
+          "title": "Silver Rail shooting survivor Becky Drury returns home after four surgeries",
+          "publisher": "Bend Bulletin",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzfeydy42H2F7kEQfEQzNjsYh6w_PtnYMHg2yRe3d2lkWJYqXrG0SHhTcjq5A"
         }
       ]
     }
