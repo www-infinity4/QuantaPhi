@@ -311,8 +311,8 @@ function registerLateWidgets(){
 registerSourceCards();
 const readDirections=()=>{try{return directionApi.cleanFeedState(JSON.parse(localStorage.getItem(directionApi.FEED_STORAGE_KEY)||'{}'))}catch{return directionApi.cleanFeedState({})}};
 function storeDirections(){if(!directionApi||!feedState)return;try{localStorage.setItem(directionApi.FEED_STORAGE_KEY,JSON.stringify(feedState))}catch{}}
-function liveCatalog(){return entries.filter(available).filter(e=>agePolicy?agePolicy.canAutoShow(e):!/21\\+|adult|dispensary|cannabis/i.test(e.category)).filter(e=>selectedTab!=='for-you'||!nonProfiling(e)).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
-function eligible(){const cards=entries.filter(available).filter(e=>agePolicy?agePolicy.canAutoShow(e):!/21\\+|adult|dispensary|cannabis/i.test(e.category));return selectedTab==='following'&&feedState?
+function liveCatalog(){return entries.filter(available).filter(e=>agePolicy?agePolicy.canAutoShow(e):!/21\+|adult|dispensary|cannabis/i.test(e.category)).filter(e=>selectedTab!=='for-you'||!nonProfiling(e)).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
+function eligible(){const cards=entries.filter(available).filter(e=>agePolicy?agePolicy.canAutoShow(e):!/21\+|adult|dispensary|cannabis/i.test(e.category));return selectedTab==='following'&&feedState?
  cards.filter(e=>feedState.following.includes(e.feedId)):cards;}
 function updateTabs(){
  updateInventory();
