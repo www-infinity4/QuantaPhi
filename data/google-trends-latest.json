@@ -3,9 +3,114 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T08:01:40.585740Z",
+  "checked_at": "2026-11-10T08:31:30.516655Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "football trade deadline",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T08:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/nfl/article/15-players-to-watch-amid-nfl-trade-deadline-buzz-033058936.html",
+        "https://www.nytimes.com/athletic/7760719/2026/11/07/nfl-trade-deadline-derrick-henry-colts-jets/",
+        "https://www.nfl.com/videos/ian-rapoport-on-teams-to-watch-ahead-of-tuesday-s-4-pm-trade-deadline-gmfb"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSm3_SSt4735PgX2IXaxfLJ6mQ7Pmo90a7TYxCJjHNsm4FIG2CRbPROTsa33b0",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/nfl/article/15-players-to-watch-amid-nfl-trade-deadline-buzz-033058936.html",
+          "title": "15 players to watch amid NFL trade deadline buzz",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSm3_SSt4735PgX2IXaxfLJ6mQ7Pmo90a7TYxCJjHNsm4FIG2CRbPROTsa33b0"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7760719/2026/11/07/nfl-trade-deadline-derrick-henry-colts-jets/",
+          "title": "What I’m hearing about Derrick Henry, Jonathan Taylor, Garrett Wilson rumors at the NFL trade deadline - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8mZSq4FStm5NvSlLFwmy70epYAByO1ojswTC39gwnnX7snSWFqPe-zv7_BWg"
+        },
+        {
+          "url": "https://www.nfl.com/videos/ian-rapoport-on-teams-to-watch-ahead-of-tuesday-s-4-pm-trade-deadline-gmfb",
+          "title": "Ian Rapoport on teams to watch ahead of Tuesday's 4 pm trade deadline | 'GMFB'",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRr3jVpkpkhm92vz8bE9_oPGsjIlkg76l1DuCp66hyuXjVHA5JfiuhYnPl1JWQ"
+        }
+      ]
+    },
+    {
+      "query": "theo james",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T08:10:00Z",
+      "related_news_urls": [
+        "https://www.redcarpet-fashionawards.com/2026/11/09/kaya-scodelarios-rerun-at-netflixs-the-gentlemen-event/",
+        "https://www.fashiontimes.co.uk/kaya-scodelario-white-fringed-gown-netflix-event-1767355",
+        "https://www.adelaidenow.com.au/entertainment/celebrity-life/theo-james-kaya-scodelario-and-more-attend-the-gentlemen-event/video/90b2914225ef9917915b64a0b2cace45"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVfppAn0YCkTpl1-dqTxvV1dHrihc4pSEsMETSzna2DZ9mzAeJ2PHHFBGVnQQ",
+      "image_credit": "Red Carpet Fashion Awards",
+      "news": [
+        {
+          "url": "https://www.redcarpet-fashionawards.com/2026/11/09/kaya-scodelarios-rerun-at-netflixs-the-gentlemen-event/",
+          "title": "Kaya Scodelario’s Rerun at Netflix’s ‘The Gentlemen’ Event",
+          "publisher": "Red Carpet Fashion Awards",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVfppAn0YCkTpl1-dqTxvV1dHrihc4pSEsMETSzna2DZ9mzAeJ2PHHFBGVnQQ"
+        },
+        {
+          "url": "https://www.fashiontimes.co.uk/kaya-scodelario-white-fringed-gown-netflix-event-1767355",
+          "title": "Kaya Scodelario's White Gown Earns a 'Paper Shredder Eleganza' Verdict at Netflix's LA Event With Theo James",
+          "publisher": "Fashion Times UK",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSq6LiPjFl3ugAfGFMYgkgzLm4RS2N_lFtCT_-cCiuh2uMTMXX1We7ujWkLKmM"
+        },
+        {
+          "url": "https://www.adelaidenow.com.au/entertainment/celebrity-life/theo-james-kaya-scodelario-and-more-attend-the-gentlemen-event/video/90b2914225ef9917915b64a0b2cace45",
+          "title": "Theo James, Kaya Scodelario and more attend ‘The Gentlemen’ event",
+          "publisher": "Adelaide Now",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrwmy4niwH_3NEDZWrQAtGDYNoM78LexiYdqiAouvJOwPdfB0XtWET2SFGSFo"
+        }
+      ]
+    },
+    {
+      "query": "oj simpson",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T08:00:00Z",
+      "related_news_urls": [
+        "https://brobible.com/sports/article/oj-simpson-documentary-hot-mic-accomplice-claim/",
+        "https://people.com/did-o-j-simpson-have-an-accomplice-new-docuseries-revisits-theory-behind-nicole-brown-simpson-and-ron-goldman-s-murders-12238692",
+        "https://www.realityblurred.com/realitytv/2026/11/does-ojs-accomplice-make-its-case-true-crime/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTBeZ0dMjPYB_EcPYvpcTRPsHLd6YIW0n26YYNX58wSeRqS6Zo550tO_wZzAs",
+      "image_credit": "BroBible",
+      "news": [
+        {
+          "url": "https://brobible.com/sports/article/oj-simpson-documentary-hot-mic-accomplice-claim/",
+          "title": "OJ Simpson Documentary Captures Hot Mic Moment Claiming Friend Of 'The Juice' Confessed To 1994 Murders",
+          "publisher": "BroBible",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTBeZ0dMjPYB_EcPYvpcTRPsHLd6YIW0n26YYNX58wSeRqS6Zo550tO_wZzAs"
+        },
+        {
+          "url": "https://people.com/did-o-j-simpson-have-an-accomplice-new-docuseries-revisits-theory-behind-nicole-brown-simpson-and-ron-goldman-s-murders-12238692",
+          "title": "O.J. Simpson Accomplice Theory in Double Murder Revisited in New Docuseries",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQW9KzYP69ge1QQ_istfwDHCN9EUXpcBAp0T7tn3DQ4uaa9wGN1d1mzy-Lvxdc"
+        },
+        {
+          "url": "https://www.realityblurred.com/realitytv/2026/11/does-ojs-accomplice-make-its-case-true-crime/",
+          "title": "Does OJ’s Accomplice make its case?",
+          "publisher": "Reality Blurred",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpObecXdoEeqwOwqNd4yw0kPkDtF-ryw-rlde2E4vOeUijhZq4VZLIa6rYpuk"
+        }
+      ]
+    },
     {
       "query": "sam darnold",
       "approx_searches": "500+",
@@ -42,13 +147,83 @@
       ]
     },
     {
+      "query": "grand theft auto vi",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T07:40:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/business/earnings/take-two-interactive-software-reports-lower-revenue-ahead-of-gta-vi-launch-76cb22cb",
+        "https://www.bloomberg.com/news/articles/2026-11-09/take-two-s-nba-2k-sales-miss-expectations-due-to-grand-theft-auto-vi",
+        "https://finance.yahoo.com/markets/live/earnings-live-updates-november-9-2026-take-two-coreweave-220550675.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBCUODacdmolWXeHgB6w6uh_nsRumPTlfUk-8gwOvLgFu6NI7f62_4bbBW8Pw",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/business/earnings/take-two-interactive-software-reports-lower-revenue-ahead-of-gta-vi-launch-76cb22cb",
+          "title": "Take-Two Interactive Software Reports Lower Revenue Ahead of ‘GTA VI’ Launch",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBCUODacdmolWXeHgB6w6uh_nsRumPTlfUk-8gwOvLgFu6NI7f62_4bbBW8Pw"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-09/take-two-s-nba-2k-sales-miss-expectations-due-to-grand-theft-auto-vi",
+          "title": "Take-Two’s ‘NBA 2K’ Sales Disappoint Due to ‘Grand Theft Auto VI’",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZvXYVelz7A20mu33MUV1dgbAVfAy6-8aJx8T0Lh_6DgpxGbtoZADiX7Q-kbs"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/live/earnings-live-updates-november-9-2026-take-two-coreweave-220550675.html",
+          "title": "Earnings live updates: 'Grand Theft Auto VI' preorders hit 'unprecedented levels,' Take-Two CEO says",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6t7h4BZhywl38dE7sZhvHugTSFpH8b9QFAvh86pe8FU8RB89Ip4pyieCQWi0"
+        }
+      ]
+    },
+    {
+      "query": "amanda nunes",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T07:30:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/brianmazique/2026/11/09/ronda-rousey-lost-only-two-mma-fights-her-former-training-partner-already-beat-one-of-those-women-and-faces-the-other-saturday-at-madison-square-garden/",
+        "https://sports.yahoo.com/articles/ufc-334-embedded-episode-1-001139360.html",
+        "https://boxingnews.com/news/ufc-334-countdown-harrison-nunes-gane"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuOenuW23j9yeqoYIax16BGRcfIOparGGxz2Ki0DcseP47kBoOpDfkH-7GKKU",
+      "image_credit": "Forbes",
+      "news": [
+        {
+          "url": "https://www.forbes.com/sites/brianmazique/2026/11/09/ronda-rousey-lost-only-two-mma-fights-her-former-training-partner-already-beat-one-of-those-women-and-faces-the-other-saturday-at-madison-square-garden/",
+          "title": "UFC 334: Kayla Harrison Vs. Amanda Nunes - Date, Time and How to Watch",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuOenuW23j9yeqoYIax16BGRcfIOparGGxz2Ki0DcseP47kBoOpDfkH-7GKKU"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/ufc-334-embedded-episode-1-001139360.html",
+          "title": "UFC 334 Embedded, Episode 1: 'We'll see who wants it'",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5DeLKTYUPu12szEwJx9U-Lg7ARVN-zcOrLa8jiQJGy30rIjSfgMIveBTd2pI"
+        },
+        {
+          "url": "https://boxingnews.com/news/ufc-334-countdown-harrison-nunes-gane",
+          "title": "UFC Releases Countdown To UFC 334 Featuring Harrison-Nunes",
+          "publisher": "boxingnews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmbFxb8ja9J0q6EHHA6kkYDmfDfsgepkrcuMi_G0e-lJ4HlFO8FtUjJ2pr-7M"
+        }
+      ]
+    },
+    {
       "query": "lake powell",
       "approx_searches": "100+",
       "published_at": "2026-11-10T07:30:00Z",
       "related_news_urls": [
         "https://www.sfgate.com/news/article/reservoir-water-22522040.php",
-        "https://news3lv.com/news/local/lake-mead-rises-after-storms-but-winter-snowpack-will-be-key-to-more-relief-lake-powell-colorado-river-water-conservation-drought",
-        "https://kutv.com/news/local/lake-powells-rising-water-levels-buy-upper-basin-states-more-time"
+        "https://kutv.com/news/local/lake-powells-rising-water-levels-buy-upper-basin-states-more-time",
+        "https://news3lv.com/news/local/lake-mead-rises-after-storms-but-winter-snowpack-will-be-key-to-more-relief-lake-powell-colorado-river-water-conservation-drought"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo3GbZKr4EBmlBrMNbvq8BQHzQud1-79BbExNnSpWZEOrtKo4UNC3G-7b5jNw",
       "image_credit": "SFGATE",
@@ -61,53 +236,53 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo3GbZKr4EBmlBrMNbvq8BQHzQud1-79BbExNnSpWZEOrtKo4UNC3G-7b5jNw"
         },
         {
-          "url": "https://news3lv.com/news/local/lake-mead-rises-after-storms-but-winter-snowpack-will-be-key-to-more-relief-lake-powell-colorado-river-water-conservation-drought",
-          "title": "Lake Mead rises after storms, but winter snowpack will be key to more relief",
-          "publisher": "KSNV",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCaxhHjlyl06uAqfEPopbGSkDjtKiuzLLcRfpeFPHTC4Kv_VHMJD409PrUimY"
-        },
-        {
           "url": "https://kutv.com/news/local/lake-powells-rising-water-levels-buy-upper-basin-states-more-time",
           "title": "Lake Powell's rising water levels buy Upper Basin states more time",
           "publisher": "KUTV",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQs9G90DARkW_rOQkbKyxqSbtvb3S8hjd2Unj_DI_fNEx1LqkUBm1N7J_CrYZo"
+        },
+        {
+          "url": "https://news3lv.com/news/local/lake-mead-rises-after-storms-but-winter-snowpack-will-be-key-to-more-relief-lake-powell-colorado-river-water-conservation-drought",
+          "title": "Lake Mead rises after storms, but winter snowpack will be key to more relief",
+          "publisher": "KSNV",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCaxhHjlyl06uAqfEPopbGSkDjtKiuzLLcRfpeFPHTC4Kv_VHMJD409PrUimY"
         }
       ]
     },
     {
-      "query": "amanda nunes",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T07:30:00Z",
+      "query": "pluto",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T07:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/ufc-334-embedded-episode-1-001139360.html",
-        "https://athlonsports.com/mma/ufc-334-5-reasons-amanda-nunes-vs-kayla-harrison-is-womens-mmas-biggest-fight-of-2026",
-        "https://boxingnews.com/news/ufc-334-countdown-harrison-nunes-gane"
+        "https://www.espn.com/nfl/story/_/id/50433760/source-browns-returning-deshaun-watson-qb1-week-10",
+        "https://www.nfl.com/news/browns-todd-monken-fails-to-commit-to-a-starting-qb-ahead-of-game-vs-texans",
+        "https://andscape.com/features/shedeur-sanders-browns-saints-overtime-quarterback/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5DeLKTYUPu12szEwJx9U-Lg7ARVN-zcOrLa8jiQJGy30rIjSfgMIveBTd2pI",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0tQDEgOOO_jnZm8047GT43gTiY2o-TG5VuKzp6vpJSjTKB9IfT1ByA1PdK_E",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/ufc-334-embedded-episode-1-001139360.html",
-          "title": "UFC 334 Embedded, Episode 1: 'We'll see who wants it'",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.espn.com/nfl/story/_/id/50433760/source-browns-returning-deshaun-watson-qb1-week-10",
+          "title": "Source: Browns returning to Watson as QB1 despite Sanders' strong fill-in start",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5DeLKTYUPu12szEwJx9U-Lg7ARVN-zcOrLa8jiQJGy30rIjSfgMIveBTd2pI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0tQDEgOOO_jnZm8047GT43gTiY2o-TG5VuKzp6vpJSjTKB9IfT1ByA1PdK_E"
         },
         {
-          "url": "https://athlonsports.com/mma/ufc-334-5-reasons-amanda-nunes-vs-kayla-harrison-is-womens-mmas-biggest-fight-of-2026",
-          "title": "UFC 334: 5 Reasons Amanda Nunes vs. Kayla Harrison Is Women's MMA's Biggest Fight of 2026",
-          "publisher": "Athlon Sports",
+          "url": "https://www.nfl.com/news/browns-todd-monken-fails-to-commit-to-a-starting-qb-ahead-of-game-vs-texans",
+          "title": "Browns' Todd Monken fails to commit to a starting QB ahead of game vs. Texans",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIdaFgCHbMJfHiKacttf0sQys6kPCyv1mcDTzTopT6E9NRGuV6j38pYoHvUu8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcv43olVKJm92Ao1eJL5R851sm3QmTmPtKS8q32PcIw7WVvk0rlASgFQr5sjE"
         },
         {
-          "url": "https://boxingnews.com/news/ufc-334-countdown-harrison-nunes-gane",
-          "title": "UFC Releases Countdown To UFC 334 Featuring Harrison-Nunes",
-          "publisher": "boxingnews.com",
+          "url": "https://andscape.com/features/shedeur-sanders-browns-saints-overtime-quarterback/",
+          "title": "Shedeur Sanders ignites Cleveland Browns quarterback chatter again",
+          "publisher": "Andscape",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmbFxb8ja9J0q6EHHA6kkYDmfDfsgepkrcuMi_G0e-lJ4HlFO8FtUjJ2pr-7M"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIV-nVNmoyKYnACn2GlvMf16NaDx_ZHRDynpqXo_HER6GIHjnfVcNFMACxHc4"
         }
       ]
     },
@@ -178,181 +353,6 @@
           "publisher": "Collider",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTl9KGxnceqeDu36mMJl1fqZeS-mGa1YJRlg7PyIIk47Nw9h5p5CWkUAS_Kn0s"
-        }
-      ]
-    },
-    {
-      "query": "pluto",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T07:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50433760/source-browns-returning-deshaun-watson-qb1-week-10",
-        "https://www.nfl.com/news/browns-todd-monken-fails-to-commit-to-a-starting-qb-ahead-of-game-vs-texans",
-        "https://andscape.com/features/shedeur-sanders-browns-saints-overtime-quarterback/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0tQDEgOOO_jnZm8047GT43gTiY2o-TG5VuKzp6vpJSjTKB9IfT1ByA1PdK_E",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50433760/source-browns-returning-deshaun-watson-qb1-week-10",
-          "title": "Source: Browns returning to Watson as QB1 despite Sanders' strong fill-in start",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0tQDEgOOO_jnZm8047GT43gTiY2o-TG5VuKzp6vpJSjTKB9IfT1ByA1PdK_E"
-        },
-        {
-          "url": "https://www.nfl.com/news/browns-todd-monken-fails-to-commit-to-a-starting-qb-ahead-of-game-vs-texans",
-          "title": "Browns' Todd Monken fails to commit to a starting QB ahead of game vs. Texans",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcv43olVKJm92Ao1eJL5R851sm3QmTmPtKS8q32PcIw7WVvk0rlASgFQr5sjE"
-        },
-        {
-          "url": "https://andscape.com/features/shedeur-sanders-browns-saints-overtime-quarterback/",
-          "title": "Shedeur Sanders ignites Cleveland Browns quarterback chatter again",
-          "publisher": "Andscape",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIV-nVNmoyKYnACn2GlvMf16NaDx_ZHRDynpqXo_HER6GIHjnfVcNFMACxHc4"
-        }
-      ]
-    },
-    {
-      "query": "gabourey sidibe",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T07:00:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/articles/gabourey-sidibe-calls-raven-symon-044044699.html",
-        "https://ew.com/gabourey-sidibe-confronts-raven-symone-past-beef-12240080",
-        "https://www.tmz.com/people/miranda-maday/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiaO5DSrLfnllpgyxHPMdtYse8-pwUts7hCEFal6BXcTg4vNEubLd2pSkXFOE",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/gabourey-sidibe-calls-raven-symon-044044699.html",
-          "title": "Gabourey Sidibe Calls out Raven-Symoné for Once Making People ‘Promise to Not Be Friends with Me’: ‘I Thought You Didn’t Like Me’",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiaO5DSrLfnllpgyxHPMdtYse8-pwUts7hCEFal6BXcTg4vNEubLd2pSkXFOE"
-        },
-        {
-          "url": "https://ew.com/gabourey-sidibe-confronts-raven-symone-past-beef-12240080",
-          "title": "Gabourey Sidibe confronts Raven-Symoné over past beef, dynamic on Empire set: ‘Treated me like you didn’t like me’",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTA_KMQ5CXErJKVD4trBy2PMUiT8aqQ-MarJUrvMkiRIy30ZAPzAkDt25wVjM0"
-        },
-        {
-          "url": "https://www.tmz.com/people/miranda-maday/",
-          "title": "Miranda Maday (Raven-Symone's wife): News and Updates",
-          "publisher": "TMZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBwfQpCGO6iuWlaN5g08yVQYhkxyVp7ep6tthuuszDk21lyCIDwXHlDHFCCcs"
-        }
-      ]
-    },
-    {
-      "query": "disability",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T06:50:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/world/us-sues-lyft-alleges-it-denied-rides-passengers-with-service-dogs-wheelchairs-2026-11-10/",
-        "https://www.nytimes.com/2026/11/10/us/lyft-disability-lawsuit-doj.html",
-        "https://www.wpbf.com/article/doj-department-of-justice-sues-lyft-alleged-discrimination-passengers-disabilities-service-animals/74382115"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTl8_eFV2HGw58uCvPfvKiAp61ngNM_qOAvkjLuLWht58OaWI_Ga-pUqxRheoc",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/world/us-sues-lyft-alleges-it-denied-rides-passengers-with-service-dogs-wheelchairs-2026-11-10/",
-          "title": "US sues Lyft, alleges discrimination against disabled riders",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTl8_eFV2HGw58uCvPfvKiAp61ngNM_qOAvkjLuLWht58OaWI_Ga-pUqxRheoc"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/10/us/lyft-disability-lawsuit-doj.html",
-          "title": "Justice Dept. Accuses Lyft of Disability Discrimination in Lawsuit",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNwYLDa4-meuoxBOHBVcrYPflsjK1cGqBFYjxtqXMJaj_wHKjSorrhldkNKc8"
-        },
-        {
-          "url": "https://www.wpbf.com/article/doj-department-of-justice-sues-lyft-alleged-discrimination-passengers-disabilities-service-animals/74382115",
-          "title": "Department of Justice sues Lyft for alleged discrimination against passengers with disabilities",
-          "publisher": "WPBF",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzP5O8TcK7FOgnYJp9o4pHq2CDL-HRvFkimBCfEaKoU8tpzfrVXSv7tCUFB7Q"
-        }
-      ]
-    },
-    {
-      "query": "adria arjona",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T06:30:00Z",
-      "related_news_urls": [
-        "https://www.ign.com/videos/criminal-official-teaser-trailer",
-        "https://www.koin.com/news/portland/prime-video-unveils-teaser-for-portland-filmed-series-based-on-graphic-novels/",
-        "https://www.themoviebox.net/p/tv-trailers-of-the-week-criminal-bad-monkey-yellowjackets-percy-jackson-trinity-blue-eye-samurai"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlbiZfIja0jQsg4vght6HD3ddxrBkrXC6DEbtzAJmt50kPkdCwRL9VQIdcoYk",
-      "image_credit": "IGN",
-      "news": [
-        {
-          "url": "https://www.ign.com/videos/criminal-official-teaser-trailer",
-          "title": "Criminal - Official Teaser Trailer",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlbiZfIja0jQsg4vght6HD3ddxrBkrXC6DEbtzAJmt50kPkdCwRL9VQIdcoYk"
-        },
-        {
-          "url": "https://www.koin.com/news/portland/prime-video-unveils-teaser-for-portland-filmed-series-based-on-graphic-novels/",
-          "title": "Prime Video unveils teaser for Portland-filmed series based on graphic novels",
-          "publisher": "KOIN.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMjXq6SJChvLUIBQi8FLfhwGkbqOs9jBonlr-aWIwcYHGrESI6tUYVd-_YHc8"
-        },
-        {
-          "url": "https://www.themoviebox.net/p/tv-trailers-of-the-week-criminal-bad-monkey-yellowjackets-percy-jackson-trinity-blue-eye-samurai",
-          "title": "TV Trailers of the Week: Criminal, Bad Monkey: S2, Yellowjackets: S4, Percy Jackson and the Olympians: S3, Trinity, Blue Eye Samurai: S2 and More",
-          "publisher": "TheMovieBox",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6kS3PIPuh32LfP1ixYzYOZUDH_RjJF_aVRe9_AIKAsaKQBUYXOu03TldyrgI"
-        }
-      ]
-    },
-    {
-      "query": "olivia cooke",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T06:30:00Z",
-      "related_news_urls": [
-        "https://www.gq-magazine.co.uk/article/olivia-cook-interview-house-of-the-dragon-slow-horses-9-11-26",
-        "https://www.hollywoodreporter.com/tv/tv-news/olivia-cooke-house-of-the-dragon-fandom-social-media-break-1236751448/",
-        "https://variety.com/2026/tv/news/olivia-cooke-house-of-the-dragon-fandom-1236943620/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIuH6zI2huTq-4EZDhWacp_fRjJZdoMuy3peFUffTR2XU0C12magovi-2piqs",
-      "image_credit": "British GQ",
-      "news": [
-        {
-          "url": "https://www.gq-magazine.co.uk/article/olivia-cook-interview-house-of-the-dragon-slow-horses-9-11-26",
-          "title": "Olivia Cooke on her wild Slow Horses return, House of the Dragon's fans and overcoming burnout",
-          "publisher": "British GQ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIuH6zI2huTq-4EZDhWacp_fRjJZdoMuy3peFUffTR2XU0C12magovi-2piqs"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/tv/tv-news/olivia-cooke-house-of-the-dragon-fandom-social-media-break-1236751448/",
-          "title": "Olivia Cooke Says ‘House of the Dragon’ Fandom Led to Her Social Media Break: “A Lot of Ugliness”",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfG6HkSJPky2azJzQ6s1RK2uRDF6373z2tYTmarC3lIdZyIrFtEjmkzgczzRg"
-        },
-        {
-          "url": "https://variety.com/2026/tv/news/olivia-cooke-house-of-the-dragon-fandom-1236943620/",
-          "title": "Olivia Cooke Says ‘House of the Dragon’ Fandom Led Her to Step Away From Social Media: ‘There’s a Lot of Ugliness,’ ‘Misogyny’ and ‘Racism’",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgMzwRGiixAqjOd5nCKnzV7gFd8HrtsHjDwoCCpXeHkfysJHqydH_Rvq-j6eE"
         }
       ]
     }
