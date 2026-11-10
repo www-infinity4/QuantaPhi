@@ -3,12 +3,152 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T16:31:20.819081Z",
+  "checked_at": "2026-11-10T17:01:35.261090Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "action thriller",
+      "query": "whoopi goldberg",
       "approx_searches": "500+",
+      "published_at": "2026-11-10T16:40:00Z",
+      "related_news_urls": [
+        "https://www.tvinsider.com/1302413/the-view-whoopi-goldberg-message-trump-midterm-results/",
+        "https://ew.com/the-view-alyssa-farah-griffin-maga-movement-dead-donald-trump-betrayed-12240164",
+        "https://ca.style.yahoo.com/views-ana-navarro-predicts-donald-233656802.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSH7D_mQ-KAGMjqz8r3E3lEMNdChEbhGrLqeEqLUU8jHMYmHcfCQ_8XXXLuGqU",
+      "image_credit": "TV Insider",
+      "news": [
+        {
+          "url": "https://www.tvinsider.com/1302413/the-view-whoopi-goldberg-message-trump-midterm-results/",
+          "title": "'The View': Whoopi Goldberg Delivers Spicy Message to Trump About Midterms",
+          "publisher": "TV Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSH7D_mQ-KAGMjqz8r3E3lEMNdChEbhGrLqeEqLUU8jHMYmHcfCQ_8XXXLuGqU"
+        },
+        {
+          "url": "https://ew.com/the-view-alyssa-farah-griffin-maga-movement-dead-donald-trump-betrayed-12240164",
+          "title": "Ex-Trump staffer, ‘View’ star says presient ‘betrayed’ supporters, MAGA ‘officially dead’",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQNtbrVjmcO0oV3-wblj8KkMWeUcPttidKTZpm1-5aa67MY3jnKVN-YaMCMyU"
+        },
+        {
+          "url": "https://ca.style.yahoo.com/views-ana-navarro-predicts-donald-233656802.html",
+          "title": "The View's Ana Navarro Predicts Donald Trump Will ‘Fall Off the Cliff of Sanity' and ‘Go Completely Unhinged' After GOP Midterm Losses",
+          "publisher": "Yahoo Lifestyle Canada",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkWHlqosSjO0_TpUvUKcbpsn_CUEHl7B9Ann0dT1kbOy31d6W-c5BPqpCuq_o"
+        }
+      ]
+    },
+    {
+      "query": "levar burton",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-10T16:30:00Z",
+      "related_news_urls": [
+        "https://people.com/levar-burton-dont-take-my-word-for-it-interview-exclusive-12245092",
+        "https://www.cbsnews.com/video/reading-rainbow-host-levar-burton-on-his-new-memoir/",
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/star-trek-icon-releases-must-154625427.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTf369zH1rAbvnfzKccA-2Dk2aYShl8-N0kebwSi-f_Tr-Tm11iwWyBznCBRD4",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/levar-burton-dont-take-my-word-for-it-interview-exclusive-12245092",
+          "title": "LeVar Burton Looks Back on How Roots, Star Trek and Reading Rainbow Shaped His Life Offscreen (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTf369zH1rAbvnfzKccA-2Dk2aYShl8-N0kebwSi-f_Tr-Tm11iwWyBznCBRD4"
+        },
+        {
+          "url": "https://www.cbsnews.com/video/reading-rainbow-host-levar-burton-on-his-new-memoir/",
+          "title": "\"Reading Rainbow\" host LeVar Burton on his new memoir",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIywke698BTMpYLtb4XbX_0ChI68zPhM9KbDPk6fcBBmuypu6na3E_DVevC-g"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/star-trek-icon-releases-must-154625427.html",
+          "title": "Star Trek icon releases must-read memoir (and sets nationwide book tour)",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjHUHgYYEWM4GJ6akaU2JJkbkFwPhtAAanjjUn5WiJk9KiEHW9sNXK_HsdFxk"
+        }
+      ]
+    },
+    {
+      "query": "greg schiano",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T16:30:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/sports/ncaaf/bigten/2026/11/10/greg-schiano-returning-to-rutgers-football-2027-buyout-contract/92707237007/",
+        "https://www.nj.com/rutgersfootball/2026/11/rutgers-to-bring-back-coach-greg-schiano-for-2027-season-sources-say.html",
+        "https://www.nytimes.com/athletic/7656909/2026/11/10/greg-schiano-returning-rutgers-2027/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQT_iJYPpiNzy8Dd1-hfv9MYqtffs03u4xitJtep5w49cpYaHRw5Hvg_WKFGko",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/sports/ncaaf/bigten/2026/11/10/greg-schiano-returning-to-rutgers-football-2027-buyout-contract/92707237007/",
+          "title": "Rutgers’ Greg Schiano decision is puzzling. The money may explain it",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQT_iJYPpiNzy8Dd1-hfv9MYqtffs03u4xitJtep5w49cpYaHRw5Hvg_WKFGko"
+        },
+        {
+          "url": "https://www.nj.com/rutgersfootball/2026/11/rutgers-to-bring-back-coach-greg-schiano-for-2027-season-sources-say.html",
+          "title": "Rutgers to bring back coach Greg Schiano for 2027 season, sources say",
+          "publisher": "NJ.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_9FBRonwuK5t4N_xf6Xt-sdhUC5qSKcq3nQieP6J4NgHjatdydr3WT5MLhSc"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7656909/2026/11/10/greg-schiano-returning-rutgers-2027/",
+          "title": "Rutgers bringing back Greg Schiano in 2027: Sources",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQij5eMdCixoWkQfWXS-EFQtZ0ES_FIGB7A1B0RFlSviBBLTFHB_mehec3o9-E"
+        }
+      ]
+    },
+    {
+      "query": "49ers–raiders rivalry",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T16:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7769107/2026/11/09/raiders-49ers-fans-fights-arrests/",
+        "https://www.foxnews.com/outkick-sports/49ers-raiders-fans-nasty-brawl-outside-levis-stadium-heated-rivalry-explodes-parking-lot",
+        "https://www.ktvu.com/video/fmc-79e63k8d0lrir8ct"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaKriaHGE7pBf_zq7XbIBhFdkGR-0MmlH6nb4NHmnBnk1v-eQvL95PWS19mYo",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7769107/2026/11/09/raiders-49ers-fans-fights-arrests/",
+          "title": "Raiders-49ers game had 45 ejections, 11 arrests, police say",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaKriaHGE7pBf_zq7XbIBhFdkGR-0MmlH6nb4NHmnBnk1v-eQvL95PWS19mYo"
+        },
+        {
+          "url": "https://www.foxnews.com/outkick-sports/49ers-raiders-fans-nasty-brawl-outside-levis-stadium-heated-rivalry-explodes-parking-lot",
+          "title": "49ers, Raiders fans get into nasty brawl outside of Levi's Stadium as heated rivalry explodes in parking lot",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTUXSezZgQzoo2SWQ5grONJ6jP-Kx-wequF5Mc9olpHgNXWVVyf7_pOJWBk3k"
+        },
+        {
+          "url": "https://www.ktvu.com/video/fmc-79e63k8d0lrir8ct",
+          "title": "Video: Fight between Raiders, 49ers fans at Levi's Stadium",
+          "publisher": "KTVU",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmT1tJF9yxOHfxe2K87qQ4-AqEOaVY3K7fQEuAOPr1VVv934Sao8Rpeb_E5WM"
+        }
+      ]
+    },
+    {
+      "query": "action thriller",
+      "approx_searches": "1000+",
       "published_at": "2026-11-10T16:10:00Z",
       "related_news_urls": [
         "https://movieweb.com/the-awakening-trailer-streaming-action-thriller/",
@@ -47,8 +187,8 @@
       "published_at": "2026-11-10T16:10:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/athletic/7768819/2026/11/09/49ers-deebo-samuel-mike-evans-injuries/",
-        "https://nypost.com/2026/11/09/sports/49ers-star-receivers-mike-evans-and-deebo-samuel-head-in-opposite-injury-directions/",
-        "https://www.49ers.com/news/49ers-rule-out-three-wide-receivers-vs-raiders-bosa-returns-to-full-practice-ahead-of-week-9-lvvssf"
+        "https://www.cbssports.com/fantasy/football/news/49ers-mike-evans-not-trending-toward-week-10-return/",
+        "https://nypost.com/2026/11/09/sports/49ers-star-receivers-mike-evans-and-deebo-samuel-head-in-opposite-injury-directions/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK440-wJoSeiis2FByBqDMj4Q3g6wyPc6StoU1MdvMt3ebtaloT68dlN2cS6Y",
       "image_credit": "The New York Times",
@@ -61,94 +201,59 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK440-wJoSeiis2FByBqDMj4Q3g6wyPc6StoU1MdvMt3ebtaloT68dlN2cS6Y"
         },
         {
+          "url": "https://www.cbssports.com/fantasy/football/news/49ers-mike-evans-not-trending-toward-week-10-return/",
+          "title": "49ers' Mike Evans: Not trending toward Week 10 return",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-irHhjWYJgtR92JuShT7hMtFE05nvkZz7IVOT-9Dx8_4yjVQBY2HDazJ3Fjc"
+        },
+        {
           "url": "https://nypost.com/2026/11/09/sports/49ers-star-receivers-mike-evans-and-deebo-samuel-head-in-opposite-injury-directions/",
           "title": "49ers star receivers Mike Evans and Deebo Samuel head in opposite injury directions",
           "publisher": "New York Post",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkS17UFc49jK3m1HOdsgt650Jas9o1MFvqCWrzb3YSoBbW0Z-edrg9oEpLkKE"
-        },
-        {
-          "url": "https://www.49ers.com/news/49ers-rule-out-three-wide-receivers-vs-raiders-bosa-returns-to-full-practice-ahead-of-week-9-lvvssf",
-          "title": "49ers Rule Out Three Wide Receivers vs. Raiders; Bosa Returns to Full Practice Ahead of Week 9 #LVvsSF",
-          "publisher": "San Francisco 49ers",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsN9PqYFzM-GlL4C7HWTRbhrGGXkkfFga9OihOTjzo2gIWXIsS2vixlmLwg9A"
         }
       ]
     },
     {
       "query": "arnold ebiketie",
-      "approx_searches": "5000+",
+      "approx_searches": "20000+",
       "published_at": "2026-11-10T15:50:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/bengals-trade-eagles-edge-rusher-160823518.html",
-        "https://www.pennlive.com/philadelphiaeagles/2026/11/eagles-trade-former-penn-state-standout-to-afc-contender.html",
-        "https://bengalswire.usatoday.com/story/sports/nfl/bengals/2026/11/10/bengals-trade-eagles-arnold-ebiketie-nfl-deadline/92706815007/"
+        "https://www.espn.com/nfl/story/_/id/50443229/bengals-trade-eagles-lb-arnold-ebiketie-sources-say",
+        "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/eagles-trade-arnold-ebiketie-bengals-deadline-howie-roseman/765852/",
+        "https://www.bleedinggreennation.com/news/190055/eagles-bengals-trade-arnold-ebiketie-to-cincinnati"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0mp-4jXabhZ35jVLHsZkyNrZGWm7gFEKkeJaw6bHJp-uG9S2ZyGfYUaKx1vI",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBi_BcN13REO6WmJDRnPFLVTCbTcp95Xi_4AXKokQ-iIEYSa1IktHHcrJdyX0",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/bengals-trade-eagles-edge-rusher-160823518.html",
-          "title": "Bengals to trade for Eagles' edge rusher to bolster depth chart",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.espn.com/nfl/story/_/id/50443229/bengals-trade-eagles-lb-arnold-ebiketie-sources-say",
+          "title": "Bengals trade for Eagles LB Arnold Ebiketie, sources say",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0mp-4jXabhZ35jVLHsZkyNrZGWm7gFEKkeJaw6bHJp-uG9S2ZyGfYUaKx1vI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBi_BcN13REO6WmJDRnPFLVTCbTcp95Xi_4AXKokQ-iIEYSa1IktHHcrJdyX0"
         },
         {
-          "url": "https://www.pennlive.com/philadelphiaeagles/2026/11/eagles-trade-former-penn-state-standout-to-afc-contender.html",
-          "title": "Eagles trade former Penn State standout to AFC contender",
-          "publisher": "PennLive.com",
+          "url": "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/eagles-trade-arnold-ebiketie-bengals-deadline-howie-roseman/765852/",
+          "title": "Eagles make another trade, ship edge rusher to Bengals",
+          "publisher": "NBC Sports Philadelphia",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvKRD4oxka8B0r_lhhHq83iGTuh6-tLW9ix5esgFfOReWvM28_fTFCLuBirw4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYK2l0Ki6eWYx0-f7z1vVhsM08MsGTS-GmiqCF1HPorR6jn4v1maJTb9GOg3o"
         },
         {
-          "url": "https://bengalswire.usatoday.com/story/sports/nfl/bengals/2026/11/10/bengals-trade-eagles-arnold-ebiketie-nfl-deadline/92706815007/",
-          "title": "Bengals to trade for Eagles DE Arnold Ebiketie at NFL deadline",
-          "publisher": "Bengals Wire",
+          "url": "https://www.bleedinggreennation.com/news/190055/eagles-bengals-trade-arnold-ebiketie-to-cincinnati",
+          "title": "Eagles-Bengals trade: Arnold Ebiketie to Cincinnati",
+          "publisher": "Bleeding Green Nation",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmEg0ao2l0JWrzz2DBbphmXHEAOWyx9FimiEQrjHlSe6f7HkW_UyEh9QIfXTw"
-        }
-      ]
-    },
-    {
-      "query": "ring drone camera",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-10T15:50:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/10/amazons-ring-unveils-flying-drone-robot-to-patrol-homes-businesses.html",
-        "https://www.nbcnews.com/tech/tech-news/amazons-ring-debuts-security-robots-drone-rcna608538",
-        "https://www.aboutamazon.com/news/devices/ring-drone-cam-rover-cam-security-robot"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShXHqWDGtyzkwTUW_E-VQkkOFlzyhJJjBC6asN0wtbOwes8i2Yh_Vjm992G6o",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/10/amazons-ring-unveils-flying-drone-robot-to-patrol-homes-businesses.html",
-          "title": "Amazon's Ring unveils flying drone and robot to patrol homes and businesses",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShXHqWDGtyzkwTUW_E-VQkkOFlzyhJJjBC6asN0wtbOwes8i2Yh_Vjm992G6o"
-        },
-        {
-          "url": "https://www.nbcnews.com/tech/tech-news/amazons-ring-debuts-security-robots-drone-rcna608538",
-          "title": "Amazon’s Ring debuts security robots including a drone",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUKXd95Wv-XQuZtkvgIUk4JrbiKJjwUA2xDk2KH3l1v1RUGNYt0YyWR0Lr65I"
-        },
-        {
-          "url": "https://www.aboutamazon.com/news/devices/ring-drone-cam-rover-cam-security-robot",
-          "title": "Ring announces Ring Robotics, ushering in a new era of security",
-          "publisher": "About Amazon",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDLRaWMjxv4v6bC6JEBv5XCpmlImhje1_i_sFCaQ8Nci3vFjn-Tspx1rMRYb0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfV7PLmn-_L7FjJYtEs322WEo7S6_dm8iA21EhzZd5LElgbR__zHkhHe-b8uc"
         }
       ]
     },
     {
       "query": "mcdonalds pokemon",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-10T15:50:00Z",
       "related_news_urls": [
         "https://www.usatoday.com/story/money/food/2026/11/10/mcdonalds-pokemon-happy-meal-toys-cards/92687817007/",
@@ -178,6 +283,41 @@
           "publisher": "qz.com",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWRPzkBT1CyjA243keIkU6b4Yai0x39YfG5Zhz1S7eJNvfeSlsLGHFM0KnQuY"
+        }
+      ]
+    },
+    {
+      "query": "ring drone cam",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-10T15:30:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/10/amazons-ring-unveils-flying-drone-robot-to-patrol-homes-businesses.html",
+        "https://www.nbcnews.com/tech/tech-news/amazons-ring-debuts-security-robots-drone-rcna608538",
+        "https://www.aboutamazon.com/news/devices/ring-drone-cam-rover-cam-security-robot"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShXHqWDGtyzkwTUW_E-VQkkOFlzyhJJjBC6asN0wtbOwes8i2Yh_Vjm992G6o",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/10/amazons-ring-unveils-flying-drone-robot-to-patrol-homes-businesses.html",
+          "title": "Amazon's Ring unveils flying drone and robot to patrol homes and businesses",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShXHqWDGtyzkwTUW_E-VQkkOFlzyhJJjBC6asN0wtbOwes8i2Yh_Vjm992G6o"
+        },
+        {
+          "url": "https://www.nbcnews.com/tech/tech-news/amazons-ring-debuts-security-robots-drone-rcna608538",
+          "title": "Amazon’s Ring debuts security robots including a drone",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUKXd95Wv-XQuZtkvgIUk4JrbiKJjwUA2xDk2KH3l1v1RUGNYt0YyWR0Lr65I"
+        },
+        {
+          "url": "https://www.aboutamazon.com/news/devices/ring-drone-cam-rover-cam-security-robot",
+          "title": "Ring announces Ring Robotics, ushering in a new era of security",
+          "publisher": "About Amazon",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDLRaWMjxv4v6bC6JEBv5XCpmlImhje1_i_sFCaQ8Nci3vFjn-Tspx1rMRYb0"
         }
       ]
     },
@@ -213,146 +353,6 @@
           "publisher": "Tom's Hardware",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQSWi4Wv-eoEYpOw_YAD277FhkyqX_um_wamW7SQU24RQDcgoyvo7_hl6wp4o"
-        }
-      ]
-    },
-    {
-      "query": "arthur rinderknech",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-10T14:50:00Z",
-      "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/taylor-fritz-vs-cameron-norrie-set-1-winner-nov-11-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/nikoloz-basilashvili-vs-francesco-passaro-set-2-winner-nov-07-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/olle-wallin-vs-lorenzo-sonego-set-2-winner-nov-07-2026/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRS_NSgIJh8ncgOj7ZM2QWU48H8IyT3S-NF0FrnEudECgT_mC0YXnyCc_qphtw",
-      "image_credit": "Robinhood",
-      "news": [
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/taylor-fritz-vs-cameron-norrie-set-1-winner-nov-11-2026/",
-          "title": "November 11, 2026: Taylor Fritz vs Cameron Norrie: Set 1 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRS_NSgIJh8ncgOj7ZM2QWU48H8IyT3S-NF0FrnEudECgT_mC0YXnyCc_qphtw"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/nikoloz-basilashvili-vs-francesco-passaro-set-2-winner-nov-07-2026/",
-          "title": "November 7, 2026: Nikoloz Basilashvili vs Francesco Passaro: Set 2 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfZ-N3rhzt-752XyYr9-PcTgUW9xDfMvn1amLsvWuEp5yqUwFmgAF3YC-t4wQ"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/olle-wallin-vs-lorenzo-sonego-set-2-winner-nov-07-2026/",
-          "title": "November 7, 2026: Olle Wallin vs Lorenzo Sonego: Set 2 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS47si_lFDnHZt2Ee6Psvrvaz-SDRymA65qXkY8r_lBtd1SdQW-B9TKHCZHQcE"
-        }
-      ]
-    },
-    {
-      "query": "cpi inflation data",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-10T14:30:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
-        "https://www.nytimes.com/live/2026/11/10/business/inflation-cpi-report-october",
-        "https://www.wsj.com/livecoverage/stock-market-cpi-inflation-11-10-2026"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE_TxbY8eOu4roWtyr6P9CX4yoUTaxRYBXRKyQZ3NQdPUHU0W0seo8J6SJPic",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
-          "title": "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE_TxbY8eOu4roWtyr6P9CX4yoUTaxRYBXRKyQZ3NQdPUHU0W0seo8J6SJPic"
-        },
-        {
-          "url": "https://www.nytimes.com/live/2026/11/10/business/inflation-cpi-report-october",
-          "title": "CPI Live Updates: Inflation Persists in U.S. Economy",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSb6K2QPTgpkdayLskkOLfE-k1d0X4E2nWRSW6aEi64Zf6KePEZbRj1xQT3BMQ"
-        },
-        {
-          "url": "https://www.wsj.com/livecoverage/stock-market-cpi-inflation-11-10-2026",
-          "title": "Stock Market Today: Dow Opens Lower After Inflation Report — Live Updates",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyJDZAgRuUpMAaL1e4twCWs8TQWCZkYtMPSrzJmsVygwb4MUn_v3XUxkOsmiQ"
-        }
-      ]
-    },
-    {
-      "query": "ayesha curry",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T14:30:00Z",
-      "related_news_urls": [
-        "https://www.today.com/video/ayesha-curry-talks-starring-in-second-chance-holiday-273194565752",
-        "https://www.yahoo.com/entertainment/celebrity/articles/jemele-hills-opinion-ayesha-curry-000000304.html",
-        "https://nypost.com/2026/11/05/sports/steph-curry-wife-ayesha-viral-kissing-scene/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQivfCIYNt2zCb0F7xZ-5nlZJH5oILgMaBJwDiJ7gQN998q5Evd5sLdiYgdnVs",
-      "image_credit": "TODAY.com",
-      "news": [
-        {
-          "url": "https://www.today.com/video/ayesha-curry-talks-starring-in-second-chance-holiday-273194565752",
-          "title": "Ayesha Curry Talks New Rom-Com With a Holiday Spin",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQivfCIYNt2zCb0F7xZ-5nlZJH5oILgMaBJwDiJ7gQN998q5Evd5sLdiYgdnVs"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/jemele-hills-opinion-ayesha-curry-000000304.html",
-          "title": "Jemele Hill's Opinion On Ayesha Curry 'Controversy' Divides NBA Fans",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSG6CHIO9gOoOXR1RaJMX6gfJYl7J6wHsiTtn-Gt8RuSoAtQmzAr3D1fl5q_c"
-        },
-        {
-          "url": "https://nypost.com/2026/11/05/sports/steph-curry-wife-ayesha-viral-kissing-scene/",
-          "title": "Steph Curry’s post after wife Ayesha’s viral kissing scene speaks volumes",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5NVDsW5qadvxSA_Ruj4argC6a32erqYrL0ed4wRkgtZE7tyAO8U2n7fQoSmk"
-        }
-      ]
-    },
-    {
-      "query": "adam schefter",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-10T14:20:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/nfl/news/2026-nfl-trade-deadline-vikings-quarterback-options-kirk-cousins/",
-        "https://bleacherreport.com/articles/25531467-vikings-will-explore-their-options-qb-trade-deadline-nfl-insider-says-amid-cousins-buzz",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/the-vikings-need-to-trade-for-a-quarterback-tomorrow"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaLZP1RWv2_7v6FNukohv7Z4uyTfEhllDDYQys8Zjdyg1JsumSnaDuVkWmNTI",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/nfl/news/2026-nfl-trade-deadline-vikings-quarterback-options-kirk-cousins/",
-          "title": "2026 NFL trade deadline: Ranking Vikings quarterback options with Kirk Cousins as best fit in Minnesota",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaLZP1RWv2_7v6FNukohv7Z4uyTfEhllDDYQys8Zjdyg1JsumSnaDuVkWmNTI"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25531467-vikings-will-explore-their-options-qb-trade-deadline-nfl-insider-says-amid-cousins-buzz",
-          "title": "Vikings Will 'Explore Their Options' At QB Before Trade Deadline, NFL Insider Says amid Cousins Buzz",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR136YJGY4vZCzad-k5Y6CtJ0LYfOv5cnB7VxOI5EdIyncKwfBwHgQAkUz3F3o"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/the-vikings-need-to-trade-for-a-quarterback-tomorrow",
-          "title": "The Vikings need to trade for a quarterback tomorrow",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzHmSzGedMYI2al5x0aica3NHKCMhpAg2wAxZukmASpSb3bZ3mLLAgZCB6q8Y"
         }
       ]
     }
