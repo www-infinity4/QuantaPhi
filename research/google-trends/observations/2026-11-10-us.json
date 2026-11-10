@@ -3,41 +3,111 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T08:31:30.516655Z",
+  "checked_at": "2026-11-10T09:01:42.255803Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "football trade deadline",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T08:10:00Z",
+      "query": "cox",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T08:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/nfl/article/15-players-to-watch-amid-nfl-trade-deadline-buzz-033058936.html",
-        "https://www.nytimes.com/athletic/7760719/2026/11/07/nfl-trade-deadline-derrick-henry-colts-jets/",
-        "https://www.nfl.com/videos/ian-rapoport-on-teams-to-watch-ahead-of-tuesday-s-4-pm-trade-deadline-gmfb"
+        "https://www.sltrib.com/news/politics/2026/11/09/utah-elections-cox-points-gop/",
+        "https://www.ksl.com/article/51644744/utah-house-democrats-wins-come-with-mixed-feelings-over-loss-of-some-moderate-republicans",
+        "https://kutv.com/news/politics/gov-cox-says-utah-republicans-must-rebuild-voter-trust-after-major-midterm-election-losse"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSm3_SSt4735PgX2IXaxfLJ6mQ7Pmo90a7TYxCJjHNsm4FIG2CRbPROTsa33b0",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqt4cgzWPWupqP6xVO3QUpPrZ-kzDeXAV5YvfGVZG6bHHFabjJwPWigvpikEU",
+      "image_credit": "The Salt Lake Tribune",
       "news": [
         {
-          "url": "https://sports.yahoo.com/nfl/article/15-players-to-watch-amid-nfl-trade-deadline-buzz-033058936.html",
-          "title": "15 players to watch amid NFL trade deadline buzz",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.sltrib.com/news/politics/2026/11/09/utah-elections-cox-points-gop/",
+          "title": "Gov. Cox: Ignoring voters on redistricting led to GOP’s big Utah Legislature loss",
+          "publisher": "The Salt Lake Tribune",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSm3_SSt4735PgX2IXaxfLJ6mQ7Pmo90a7TYxCJjHNsm4FIG2CRbPROTsa33b0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqt4cgzWPWupqP6xVO3QUpPrZ-kzDeXAV5YvfGVZG6bHHFabjJwPWigvpikEU"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7760719/2026/11/07/nfl-trade-deadline-derrick-henry-colts-jets/",
-          "title": "What I’m hearing about Derrick Henry, Jonathan Taylor, Garrett Wilson rumors at the NFL trade deadline - The Athletic",
+          "url": "https://www.ksl.com/article/51644744/utah-house-democrats-wins-come-with-mixed-feelings-over-loss-of-some-moderate-republicans",
+          "title": "Utah House Democrats' wins come with mixed feelings over loss of some moderate Republicans",
+          "publisher": "KSL News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMr1IZG5NsIWjRLGJdC07X-ie-6hipTgvHQcDWkZi3FhGc3FbJAlEVjB-oqfE"
+        },
+        {
+          "url": "https://kutv.com/news/politics/gov-cox-says-utah-republicans-must-rebuild-voter-trust-after-major-midterm-election-losse",
+          "title": "Gov. Cox says Utah Republicans must rebuild voter trust after major midterm losses",
+          "publisher": "KUTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSoOf4zx9lrRzVNNgEwd4kAhsLyvRY-2efKI0N9stDBZCnjrV76I99ObPKEioc"
+        }
+      ]
+    },
+    {
+      "query": "黄乐",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T08:30:00Z",
+      "related_news_urls": [
+        "https://cn.nytimes.com/usa/20261110/nvidia-megaspeed-investigation-huang/",
+        "https://www.bbc.com/zhongwen/articles/cjr4y41lv6zko/simp",
+        "https://www.zaobao.com.sg/news/world/story20261110-9974063"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRktzrpUH--lpEI-2RLpFWGwdMaEo06I1rGANqCfV3MeAwKu4Yrtpw4pXbMcfs",
+      "image_credit": "纽约时报中文网",
+      "news": [
+        {
+          "url": "https://cn.nytimes.com/usa/20261110/nvidia-megaspeed-investigation-huang/",
+          "title": "美国商务部就芯片展开的调查在英伟达介入后中止",
+          "publisher": "纽约时报中文网",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRktzrpUH--lpEI-2RLpFWGwdMaEo06I1rGANqCfV3MeAwKu4Yrtpw4pXbMcfs"
+        },
+        {
+          "url": "https://www.bbc.com/zhongwen/articles/cjr4y41lv6zko/simp",
+          "title": "黄仁勋婚外情：被指为中共间谍的黄乐是谁？",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPMy4JAIszsZ6BIkqUYl587z6LucXZwEOM0prIXz4XIbi219erVy379LZd0rA"
+        },
+        {
+          "url": "https://www.zaobao.com.sg/news/world/story20261110-9974063",
+          "title": "黄仁勋绯闻对象黄乐是谁？",
+          "publisher": "联合早报",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSiiCcfl8w7RI0TMqcq8VjUijZ1btcu0E5YzFhWwpo6nBu0kPzFpHeepRV_ljE"
+        }
+      ]
+    },
+    {
+      "query": "when is black friday 2026",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T08:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/wirecutter/money/best-early-black-friday-deals-2026/",
+        "https://mashable.com/tech/amazon-black-friday-2026-everything-to-know",
+        "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-09"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhrviGjKvbX7XK8PRGYzSDC-2LV5RyzjelZuW541DfyIz0s0WfNsGcrC6_HwA",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/wirecutter/money/best-early-black-friday-deals-2026/",
+          "title": "All the Very Best Black Friday Deals We’ve Already Found",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8mZSq4FStm5NvSlLFwmy70epYAByO1ojswTC39gwnnX7snSWFqPe-zv7_BWg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhrviGjKvbX7XK8PRGYzSDC-2LV5RyzjelZuW541DfyIz0s0WfNsGcrC6_HwA"
         },
         {
-          "url": "https://www.nfl.com/videos/ian-rapoport-on-teams-to-watch-ahead-of-tuesday-s-4-pm-trade-deadline-gmfb",
-          "title": "Ian Rapoport on teams to watch ahead of Tuesday's 4 pm trade deadline | 'GMFB'",
-          "publisher": "NFL.com",
+          "url": "https://mashable.com/tech/amazon-black-friday-2026-everything-to-know",
+          "title": "Amazon just announced the dates of its extra-long Black Friday Week sale: Everything we know so far",
+          "publisher": "Mashable",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRr3jVpkpkhm92vz8bE9_oPGsjIlkg76l1DuCp66hyuXjVHA5JfiuhYnPl1JWQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoR58vjW_I1JlaeNZlUINeI4vd6LXs9T5BpW-wqB7LFMb-ZD8sM9iLUkZLf3w"
+        },
+        {
+          "url": "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-09",
+          "title": "I found 39 early Black Friday deals worth shopping ahead of Thanksgiving week",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQhbRIHYv9B_ABSbMYRzK_tlL28iY2zu514OAg-JxoFevpkGAbpKOowefAGWg"
         }
       ]
     },
@@ -73,6 +143,41 @@
           "publisher": "Adelaide Now",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrwmy4niwH_3NEDZWrQAtGDYNoM78LexiYdqiAouvJOwPdfB0XtWET2SFGSFo"
+        }
+      ]
+    },
+    {
+      "query": "jemima goldsmith",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T08:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/c95ynylr8j6xo",
+        "https://www.yahoo.com/entertainment/celebrity/articles/producer-jemima-goldsmith-accuses-russell-073057249.html",
+        "https://pagesix.com/2026/11/09/celebrity-news/russell-brands-ex-accuses-him-of-violent-abuse-hours-after-rape-sentencing/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRAnZqmWdeKxHb5jr0KH24fD6rVcdUu0h216gcGh4CvUhAAdtgfnXtgLKKPUA",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/c95ynylr8j6xo",
+          "title": "Jemima Goldsmith accuses Russell Brand of violence and abuse against her",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRAnZqmWdeKxHb5jr0KH24fD6rVcdUu0h216gcGh4CvUhAAdtgfnXtgLKKPUA"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/producer-jemima-goldsmith-accuses-russell-073057249.html",
+          "title": "Producer Jemima Goldsmith Accuses Russell Brand of “Violence, Coercive Control & Abuse”",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCfhVa6pmy6YLxQm6ORcM4KS_Ci1Hv4fkJRuGDUCfCAwswBhJ7KX2qcM5NAq4"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/09/celebrity-news/russell-brands-ex-accuses-him-of-violent-abuse-hours-after-rape-sentencing/",
+          "title": "Russell Brand’s ex accuses him of violent abuse hours after rape sentencing",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbw0RkX8KTex-hCuJb_-gswZ-BA0w2_6bOPMk62DzKKjmSmxeN4xIc02lMCA8"
         }
       ]
     },
@@ -113,7 +218,7 @@
     },
     {
       "query": "sam darnold",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-10T07:40:00Z",
       "related_news_urls": [
         "https://www.espn.com/nfl/story/_/id/50434130/seahawks-start-drew-lock-vs-raiders-mike-macdonald-says",
@@ -148,12 +253,12 @@
     },
     {
       "query": "grand theft auto vi",
-      "approx_searches": "1000+",
+      "approx_searches": "200+",
       "published_at": "2026-11-10T07:40:00Z",
       "related_news_urls": [
         "https://www.wsj.com/business/earnings/take-two-interactive-software-reports-lower-revenue-ahead-of-gta-vi-launch-76cb22cb",
         "https://www.bloomberg.com/news/articles/2026-11-09/take-two-s-nba-2k-sales-miss-expectations-due-to-grand-theft-auto-vi",
-        "https://finance.yahoo.com/markets/live/earnings-live-updates-november-9-2026-take-two-coreweave-220550675.html"
+        "https://finance.yahoo.com/markets/stocks/articles/two-nasdaq-ttwo-reports-sales-222639488.html"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBCUODacdmolWXeHgB6w6uh_nsRumPTlfUk-8gwOvLgFu6NI7f62_4bbBW8Pw",
       "image_credit": "WSJ",
@@ -173,11 +278,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZvXYVelz7A20mu33MUV1dgbAVfAy6-8aJx8T0Lh_6DgpxGbtoZADiX7Q-kbs"
         },
         {
-          "url": "https://finance.yahoo.com/markets/live/earnings-live-updates-november-9-2026-take-two-coreweave-220550675.html",
-          "title": "Earnings live updates: 'Grand Theft Auto VI' preorders hit 'unprecedented levels,' Take-Two CEO says",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/two-nasdaq-ttwo-reports-sales-222639488.html",
+          "title": "Take-Two (NASDAQ:TTWO) reports sales below analyst estimates in Q3 CY2026 earnings",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6t7h4BZhywl38dE7sZhvHugTSFpH8b9QFAvh86pe8FU8RB89Ip4pyieCQWi0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHIZnjip-j-23T3P17HVZj6qqblLf5LOzJk8WkYYVF-V6GU1_a1F4uieMAMp4"
         }
       ]
     },
@@ -186,13 +291,20 @@
       "approx_searches": "200+",
       "published_at": "2026-11-10T07:30:00Z",
       "related_news_urls": [
+        "https://sports.yahoo.com/articles/amanda-nunes-6-old-daughter-053513594.html",
         "https://www.forbes.com/sites/brianmazique/2026/11/09/ronda-rousey-lost-only-two-mma-fights-her-former-training-partner-already-beat-one-of-those-women-and-faces-the-other-saturday-at-madison-square-garden/",
-        "https://sports.yahoo.com/articles/ufc-334-embedded-episode-1-001139360.html",
-        "https://boxingnews.com/news/ufc-334-countdown-harrison-nunes-gane"
+        "https://www.mmaweekly.com/news/ufc-334-embedded-episode-1-well-see-who-wants-it"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuOenuW23j9yeqoYIax16BGRcfIOparGGxz2Ki0DcseP47kBoOpDfkH-7GKKU",
-      "image_credit": "Forbes",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UNE_X4TIDFcsqu-Uaqg1qt5t4VT9_nuhbN7SYLNAkigAuU2HvoDuUo9AHis",
+      "image_credit": "Yahoo Sports",
       "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/amanda-nunes-6-old-daughter-053513594.html",
+          "title": "Amanda Nunes’ 6-Year-Old Daughter Just Gave Her the Game Plan to Beat Kayla Harrison at UFC 334",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UNE_X4TIDFcsqu-Uaqg1qt5t4VT9_nuhbN7SYLNAkigAuU2HvoDuUo9AHis"
+        },
         {
           "url": "https://www.forbes.com/sites/brianmazique/2026/11/09/ronda-rousey-lost-only-two-mma-fights-her-former-training-partner-already-beat-one-of-those-women-and-faces-the-other-saturday-at-madison-square-garden/",
           "title": "UFC 334: Kayla Harrison Vs. Amanda Nunes - Date, Time and How to Watch",
@@ -201,24 +313,17 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuOenuW23j9yeqoYIax16BGRcfIOparGGxz2Ki0DcseP47kBoOpDfkH-7GKKU"
         },
         {
-          "url": "https://sports.yahoo.com/articles/ufc-334-embedded-episode-1-001139360.html",
-          "title": "UFC 334 Embedded, Episode 1: 'We'll see who wants it'",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.mmaweekly.com/news/ufc-334-embedded-episode-1-well-see-who-wants-it",
+          "title": "UFC 334 Embedded, Episode 1: ‘We’ll see who wants it’",
+          "publisher": "MMAWeekly.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5DeLKTYUPu12szEwJx9U-Lg7ARVN-zcOrLa8jiQJGy30rIjSfgMIveBTd2pI"
-        },
-        {
-          "url": "https://boxingnews.com/news/ufc-334-countdown-harrison-nunes-gane",
-          "title": "UFC Releases Countdown To UFC 334 Featuring Harrison-Nunes",
-          "publisher": "boxingnews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmbFxb8ja9J0q6EHHA6kkYDmfDfsgepkrcuMi_G0e-lJ4HlFO8FtUjJ2pr-7M"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStsrE6z6sAlWYWaae8FQgnTxJbOXKSWCzy61U-fa4-NyKachFulCzjrDthpR0"
         }
       ]
     },
     {
       "query": "lake powell",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-10T07:30:00Z",
       "related_news_urls": [
         "https://www.sfgate.com/news/article/reservoir-water-22522040.php",
@@ -248,111 +353,6 @@
           "publisher": "KSNV",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCaxhHjlyl06uAqfEPopbGSkDjtKiuzLLcRfpeFPHTC4Kv_VHMJD409PrUimY"
-        }
-      ]
-    },
-    {
-      "query": "pluto",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T07:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50433760/source-browns-returning-deshaun-watson-qb1-week-10",
-        "https://www.nfl.com/news/browns-todd-monken-fails-to-commit-to-a-starting-qb-ahead-of-game-vs-texans",
-        "https://andscape.com/features/shedeur-sanders-browns-saints-overtime-quarterback/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0tQDEgOOO_jnZm8047GT43gTiY2o-TG5VuKzp6vpJSjTKB9IfT1ByA1PdK_E",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50433760/source-browns-returning-deshaun-watson-qb1-week-10",
-          "title": "Source: Browns returning to Watson as QB1 despite Sanders' strong fill-in start",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0tQDEgOOO_jnZm8047GT43gTiY2o-TG5VuKzp6vpJSjTKB9IfT1ByA1PdK_E"
-        },
-        {
-          "url": "https://www.nfl.com/news/browns-todd-monken-fails-to-commit-to-a-starting-qb-ahead-of-game-vs-texans",
-          "title": "Browns' Todd Monken fails to commit to a starting QB ahead of game vs. Texans",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcv43olVKJm92Ao1eJL5R851sm3QmTmPtKS8q32PcIw7WVvk0rlASgFQr5sjE"
-        },
-        {
-          "url": "https://andscape.com/features/shedeur-sanders-browns-saints-overtime-quarterback/",
-          "title": "Shedeur Sanders ignites Cleveland Browns quarterback chatter again",
-          "publisher": "Andscape",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIV-nVNmoyKYnACn2GlvMf16NaDx_ZHRDynpqXo_HER6GIHjnfVcNFMACxHc4"
-        }
-      ]
-    },
-    {
-      "query": "aldo de nigris",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T07:10:00Z",
-      "related_news_urls": [
-        "https://www.lavozarizona.com/story/entretenimiento/2026/11/09/donde-ver-la-mansion-vip-el-hotspanish-y-sus-participantes/92688972007/",
-        "https://www.elfinanciero.com.mx/entretenimiento/2026/11/08/la-mansion-vip-2-en-vivo-que-paso-en-el-estreno-del-reality-show/",
-        "https://www.tiempo.com.mx/espectaculos/la-mansion-vip-habitantes-hot-spanish-reality-show-youtube/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3y4qGni8rO4WzEhlkidKxI6HJ8Fsvvw5K9j4GSaYUDH01wWapXOWTQVDypVI",
-      "image_credit": "azcentral.com and The Arizona Republic",
-      "news": [
-        {
-          "url": "https://www.lavozarizona.com/story/entretenimiento/2026/11/09/donde-ver-la-mansion-vip-el-hotspanish-y-sus-participantes/92688972007/",
-          "title": "¿Dónde ver 'La Mansión VIP' y quiénes son sus participantes?Karely Ruiz lanza inesperada revelación",
-          "publisher": "azcentral.com and The Arizona Republic",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3y4qGni8rO4WzEhlkidKxI6HJ8Fsvvw5K9j4GSaYUDH01wWapXOWTQVDypVI"
-        },
-        {
-          "url": "https://www.elfinanciero.com.mx/entretenimiento/2026/11/08/la-mansion-vip-2-en-vivo-que-paso-en-el-estreno-del-reality-show/",
-          "title": "Estreno de ‘La Mansión VIP 2’: Así quedaron los cuartos en el arranque del reality show",
-          "publisher": "El Financiero",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8xhIilxLI-PlBz-3FfnXZ0l-3D2UbNN2OSO8613CTuLGXQQw0OeuvSEwfppc"
-        },
-        {
-          "url": "https://www.tiempo.com.mx/espectaculos/la-mansion-vip-habitantes-hot-spanish-reality-show-youtube/",
-          "title": "Ellos son los habitantes de La Mansión VIP",
-          "publisher": "Tiempo La Noticia Digital",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOWliVBdPYep3bR_u0T9J5sPFl1bdVLtPYnHuc7uMm9bfrgHmRCoIGF-olYP4"
-        }
-      ]
-    },
-    {
-      "query": "leonardo dicaprio",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T07:10:00Z",
-      "related_news_urls": [
-        "https://nofilmschool.com/roles-dicaprio-turned-down",
-        "https://www.imdb.com/de/news/ni66101241/?ref_=nm_nwr_1",
-        "https://collider.com/body-of-lies-streaming-apple-tv-november-2026/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0tBx6fgGAEoOqCO8J8Rom5tFTUcU0woCKlu9NdyiYq2f0SMGgbU8ppOfZEe8",
-      "image_credit": "No Film School",
-      "news": [
-        {
-          "url": "https://nofilmschool.com/roles-dicaprio-turned-down",
-          "title": "Huge Acting Roles That Leonardo DiCaprio Turned Down",
-          "publisher": "No Film School",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0tBx6fgGAEoOqCO8J8Rom5tFTUcU0woCKlu9NdyiYq2f0SMGgbU8ppOfZEe8"
-        },
-        {
-          "url": "https://www.imdb.com/de/news/ni66101241/?ref_=nm_nwr_1",
-          "title": "In Just 1 Day, Ridley Scott's 128-Minute DiCaprio Action Thriller Officially Takes Over Streaming",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRU9Q_RB8JH4gbVtpbXiLovPGY7r3cc5kpTr4Skr_KXAFuvm560rmNRYqgNy8"
-        },
-        {
-          "url": "https://collider.com/body-of-lies-streaming-apple-tv-november-2026/",
-          "title": "Russell Crowe and Leonardo DiCaprio’s CIA Thriller Officially Hits Apple TV",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTl9KGxnceqeDu36mMJl1fqZeS-mGa1YJRlg7PyIIk47Nw9h5p5CWkUAS_Kn0s"
         }
       ]
     }
