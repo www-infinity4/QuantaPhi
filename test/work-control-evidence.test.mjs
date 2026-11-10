@@ -50,3 +50,41 @@ test('import cannot carry GitHub verification forward',()=>{
   const out=validateImport(input);
   assert.equal(deriveGates(out.tickets[0]).source.level,'none');
 });
+
+
+test('later change requests defeat an earlier approval even when comment-only reviews do not',()=>{
+ const sha='e'.repeat(40);
+ const g=(reviewers)=>deriveGates(ticket({github:{headSha:sha,author:'owner',changedFiles:['x'],reviewers}}));
+ const approved={user:'reviewer',state:'APPROVED',commit_id:sha};
+ const commented={user:'reviewer',state:'COMMENTED',commit_id:sha};
+ const changes={user:'reviewer',state:'CHANGES_REQUESTED',commit_id:sha};
+ assert.equal(g([approved,commented]).review.level,'confirmed');
+ assert.equal(g([approved,commented,changes]).review.level,'none');
+});
+test('manual pass cannot obscure authoritative GitHub failed or pending CI',()=>{
+ const sha='f'.repeat(40);
+ const manual={gate:'ci',result:'pass',source:'manual',url:'https://github.com/test/workflow',sha,command:'test'};
+ for(const checks of [[{status:'completed',conclusion:'failure'}],[{status:'in_progress',conclusion:null}]]){
+  const gates=deriveGates(ticket({github:{headSha:sha,checks:{sha,items:checks}},evidence:[manual]}));
+  assert.ok(['failed','pending'].includes(gates.ci.level));
+ }
+});
+test('later manual failure takes precedence over an earlier manually logged success',()=>{
+ const sha='1'.repeat(40);
+ const evidence=[
+  {gate:'browser',result:'pass',source:'manual',url:'https://example.org/passed',sha,device:'Android'},
+  {gate:'browser',result:'fail',source:'manual',url:'https://example.org/failed',sha,device:'Android'}
+ ];
+ assert.equal(deriveGates(ticket({evidence})).browser.level,'failed');
+});
+test('restoring a workspace preserves all 301+ historic evidence receipts',()=>{
+ const evidence=Array.from({length:304},(_,i)=>({gate:'browser',result:i===303?'fail':'pass',source:'manual',id:'EV-'+i,url:'https://example.org/receipt/'+i,sha:'1'.repeat(40),device:'Android'}));
+ const restored=validateImport({schema:1,tickets:[{id:'T1',title:'Large ledger',evidence}]});
+ assert.equal(restored.tickets[0].evidence.length,304);
+ assert.equal(restored.tickets[0].evidence[303].result,'fail');
+});
+test('inspection source checks review pagination and PR identity before updating evidence',()=>{
+ assert.match(html,/async function githubPages/);
+ assert.match(html,/C\.safePrNumber\(t\.prNumber\)!==pr/);
+ assert.match(html,/reviewRows/);
+});
