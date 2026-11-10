@@ -18,7 +18,7 @@ export function nextCompanionPage(page,total){
 export function companionRotationAllowed({total=0,visible=false,pageHidden=false,focused=false,shelfOpen=false,paused=false,reducedMotion=false}={}){
  return total>2&&visible&&!pageHidden&&!focused&&!shelfOpen&&!paused&&!reducedMotion;
 }
-const SENSITIVE=/\b(religion|church|politic|election|race|ethnic|medical|health|disability|sexual|addiction|therapy)\b/i;
+const SENSITIVE=/\b(religion|church|politic|election|race|ethnic|medical|health|disability|sexual|addiction|therapy|cannabis|dispensary|marijuana|tobacco|cigars?|nicotine|21\+|adult|vapes?|thc)\b/i;
 const LANES=Object.freeze([
  {id:'travel',match:/\b(miami vice|tropical vacations?|beach travel|florida tourism|palm tree vacation)\b/i,
   topics:['tropical vacation','Florida travel','beach destination','hotel stays','travel guides','travel accessories'],
@@ -87,6 +87,8 @@ export function normalizeCandidate(raw={}){
  if(type==='shop-item'&&raw.status!=='published')return null;
  const images=[...new Set((Array.isArray(raw.images)?raw.images:[]).map(item=>httpsUrl(typeof item==='string'?item:item?.src)).filter(Boolean))].slice(0,6);
  const image=httpsUrl(raw.image)||images[0]||'';
+ // General ShopPhi recommendations never use medical/21+ viewing as advertising intent.
+ if(SENSITIVE.test([raw.category,title,raw.description,raw.contextTopic].join(' '))||raw.ageRestricted===true)return null;
  return {id,title,url,image,images,type,
   creativeApproved:raw.creativeApproved===true,
   // Keep the signed/publicly validated state through later candidate ranking.
