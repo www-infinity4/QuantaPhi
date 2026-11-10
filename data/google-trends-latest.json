@@ -3,12 +3,117 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T18:31:32.583095Z",
+  "checked_at": "2026-11-10T19:01:37.909486Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "abc, nbc cbs evening news ratings",
+      "query": "49ers news",
       "approx_searches": "500+",
+      "published_at": "2026-11-10T18:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50433470/san-francisco-49ers-jaden-dugger-jordan-watkins",
+        "https://www.49ers.com/news/purdy-reaches-100-passing-tds-mccaffrey-breaks-nfl-record-stats-and-facts-from-lvvssf",
+        "https://www.sfchronicle.com/sports/49ers/article/49ers-game-review-sacks-salty-brock-22521020.php"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkRIr-XStdUOs2PxnFK1CUrv1eEQE8Ox7dWiQC6Kw1BWrv2jR5TCxeS-EDXB8",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50433470/san-francisco-49ers-jaden-dugger-jordan-watkins",
+          "title": "The key behind 49ers' 7-1 start? Big contributions from the team's youth",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkRIr-XStdUOs2PxnFK1CUrv1eEQE8Ox7dWiQC6Kw1BWrv2jR5TCxeS-EDXB8"
+        },
+        {
+          "url": "https://www.49ers.com/news/purdy-reaches-100-passing-tds-mccaffrey-breaks-nfl-record-stats-and-facts-from-lvvssf",
+          "title": "Purdy Reaches 100 Passing TDs, McCaffrey Breaks NFL Record; Stats and Facts from #LVvsSF",
+          "publisher": "San Francisco 49ers",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaqdAu5_Kvufjl6y581Pn17Hz-6vHyuVez4kNFJ6Xpgys-WYY58HsOwnhw7KA"
+        },
+        {
+          "url": "https://www.sfchronicle.com/sports/49ers/article/49ers-game-review-sacks-salty-brock-22521020.php",
+          "title": "49ers game review: The sack-less, new-look defense; ‘salty’ Brock Purdy and Kyle Shanahan",
+          "publisher": "San Francisco Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjeYA8AFKJ9rh9A8khbMyhGQEyAJHkOH4VIOtfs-oso6sBxVBfEmI0R22otuU"
+        }
+      ]
+    },
+    {
+      "query": "keenan allen",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-10T18:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-10/colts-deal-wr-not-that-one-keenan-allen-to-49ers",
+        "https://www.profootballrumors.com/2026/11/49ers-to-acquire-wr-keenan-allen",
+        "https://nfltraderumors.co/trade-49ers-trading-for-colts-wr-keenan-allen/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpxUkH9JuVNKN1vC5CJGARcDfVInIGcryx6pHyAXF8B4BpPrRr8tNMj6s6ykA",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-10/colts-deal-wr-not-that-one-keenan-allen-to-49ers",
+          "title": "Colts deal WR, not that one: Keenan Allen to 49ers",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpxUkH9JuVNKN1vC5CJGARcDfVInIGcryx6pHyAXF8B4BpPrRr8tNMj6s6ykA"
+        },
+        {
+          "url": "https://www.profootballrumors.com/2026/11/49ers-to-acquire-wr-keenan-allen",
+          "title": "49ers To Acquire WR Keenan Allen",
+          "publisher": "ProFootballRumors.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGUoD_2drbkH4kiUb0Cv7kodGytXIZdJJIPfRzHbTpOgC5AIbI9wSI2VogVsc"
+        },
+        {
+          "url": "https://nfltraderumors.co/trade-49ers-trading-for-colts-wr-keenan-allen/",
+          "title": "TRADE: 49ers Trading For Colts WR Keenan Allen",
+          "publisher": "NFLTradeRumors.co",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNhT9tONDzr_1AufKlso4QxHQTtMm3zjVXSsgjEUgrSLCvXjBYDRq305LFDC8"
+        }
+      ]
+    },
+    {
+      "query": "michelle randolph",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T18:30:00Z",
+      "related_news_urls": [
+        "https://deadline.com/2026/11/clashing-through-the-snow-trailer-christopher-briney-1237218035/",
+        "https://people.com/christopher-briney-michelle-randolph-clashing-through-the-snow-trailer-12246871",
+        "https://www.yahoo.com/entertainment/movies/trailers/articles/julia-fox-paris-hilton-christmas-163829933.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRHEUASLEz2DdMcwnIHD_R3I0ki-2mZRYMeU3Rorck1eZdbQwasGoRWsIVymg",
+      "image_credit": "Deadline",
+      "news": [
+        {
+          "url": "https://deadline.com/2026/11/clashing-through-the-snow-trailer-christopher-briney-1237218035/",
+          "title": "'Clashing Through The Snow Trailer' Sees Christopher Briney As Editor",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRHEUASLEz2DdMcwnIHD_R3I0ki-2mZRYMeU3Rorck1eZdbQwasGoRWsIVymg"
+        },
+        {
+          "url": "https://people.com/christopher-briney-michelle-randolph-clashing-through-the-snow-trailer-12246871",
+          "title": "Christopher Briney, Michelle Randolph Star in ‘Clashing Through the Snow’ Trailer",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTN4DRIGIKLopKB5BUH4dtRFxaJyMju7rPSUcuDKikJWgZBE5Thx6QKMsXdNxc"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/trailers/articles/julia-fox-paris-hilton-christmas-163829933.html",
+          "title": "Julia Fox & Paris Hilton’s New Christmas Comedy Movie Gets Hilarious Prime Video Trailer",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpOltvKTa68_FT2iryflE7O87ne5g2N7wmES9QaOSPvMDhkF0sy6p7TPupe_k"
+        }
+      ]
+    },
+    {
+      "query": "abc, nbc cbs evening news ratings",
+      "approx_searches": "1000+",
       "published_at": "2026-11-10T18:00:00Z",
       "related_news_urls": [
         "https://www.adweek.com/tvnewser/week-of-oct-26-2026-evening-news-ratings/",
@@ -43,36 +148,36 @@
     },
     {
       "query": "blackman high school",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-10T17:50:00Z",
       "related_news_urls": [
-        "https://www.wsmv.com/2026/11/10/murfreesboro-schools-secure-safe-under-precautionary-lockdown-after-reported-threat/",
-        "https://sports.yahoo.com/articles/butler-leads-green-hill-21-052539393.html",
-        "https://www.tennessean.com/story/sports/high-school/football/2026/11/06/will-butler-mr-football-snub-tssaa-football-playoffs-green-hill-blackman/92612249007/"
+        "https://fox17.com/news/local/blackman-high-school-in-murfreesboro-placed-on-lockdown-after-bomb-threat",
+        "https://www.facebook.com/RCSOTN/videos/live-with-public-safety-director-chris-clark-with-a-statement-at-blackman-high-s/1181752497509713/",
+        "https://cedarnews.net/newstasks/1133490/blackman-high-school-murfreesboro-placed-lockdown-bomb/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjj7S8vBZd9-jMLet5wwiBDiGbvShYZ6QVrVpNGzc1n0CDUiBEVuNi5KOo-XY",
-      "image_credit": "WSMV",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6j6ub8cKdfRdYLkqy7Lm5rrs3xf12hNsu0EoxcLOU_FdCzu8Y-JQBH1u3Kcc",
+      "image_credit": "WZTV",
       "news": [
         {
-          "url": "https://www.wsmv.com/2026/11/10/murfreesboro-schools-secure-safe-under-precautionary-lockdown-after-reported-threat/",
-          "title": "Murfreesboro schools ‘secure and safe,’ under ‘precautionary lockdown’ after reported threat",
-          "publisher": "WSMV",
+          "url": "https://fox17.com/news/local/blackman-high-school-in-murfreesboro-placed-on-lockdown-after-bomb-threat",
+          "title": "Blackman High School in Murfreesboro placed on lockdown after bomb threat",
+          "publisher": "WZTV",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjj7S8vBZd9-jMLet5wwiBDiGbvShYZ6QVrVpNGzc1n0CDUiBEVuNi5KOo-XY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6j6ub8cKdfRdYLkqy7Lm5rrs3xf12hNsu0EoxcLOU_FdCzu8Y-JQBH1u3Kcc"
         },
         {
-          "url": "https://sports.yahoo.com/articles/butler-leads-green-hill-21-052539393.html",
-          "title": "Will Butler leads Green Hill to 21-14 win over over Blackman",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.facebook.com/RCSOTN/videos/live-with-public-safety-director-chris-clark-with-a-statement-at-blackman-high-s/1181752497509713/",
+          "title": "Rutherford County Sheriff's Office. . Live with Public Safety Director Chris Clark with a statement at Blackman High School.",
+          "publisher": "Facebook",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQftTwh-Upe72iVVTby8vlKUc1vT0Od3UZQ4LD8SFjd8lqCtNM-6AVfJblraqY"
+          "image_url": null
         },
         {
-          "url": "https://www.tennessean.com/story/sports/high-school/football/2026/11/06/will-butler-mr-football-snub-tssaa-football-playoffs-green-hill-blackman/92612249007/",
-          "title": "How Will Butler used Mr. Football snub to lead Green Hill past Blackman",
-          "publisher": "The Tennessean",
+          "url": "https://cedarnews.net/newstasks/1133490/blackman-high-school-murfreesboro-placed-lockdown-bomb/",
+          "title": "Blackman High School in Murfreesboro placed on lockdown after bomb threat",
+          "publisher": "cedarnews.net",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShxbQAYdK437TXpq49P3HUfwhF43250KmFkXv70BRHmMTMm3anaVFwQIiKuQU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIW1P-LudY3vjQ1MJSY89Qe9p1xjBHtd92SHsDZfFaac7ZL9GQ075KYsn-KqU"
         }
       ]
     },
@@ -81,33 +186,25 @@
       "approx_searches": "2000+",
       "published_at": "2026-11-10T17:50:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/07/business/media/zelda-ocarina-of-time-remake-nintendo.html",
-        "https://mashable.com/entertainment/zelda-ocarina-of-time-switch-2-metacritic-records",
-        "https://www.nintendo.com/us/whatsnew/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time-part-1/"
+        "https://www.nintendo.com/us/whatsnew/coming-soon-gift-digital-games-to-family-group-members/",
+        "https://www.ign.com/articles/nintendo-switch-and-switch-2-update-adds-support-for-eshop-game-gifting-just-in-time-for-christmas-but-theres-a-catch"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3P4qiGEBirP5kKmJ5FCzywWBXqZpgOM_TbQUWj7h7cfGSdrO_Ce40S8bYH3w",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDmQkJYjB6bju3zo9IG5_KYlu4FMCXE2awoA_GFuV4f3krPIZTgkr2HrQVf9E",
+      "image_credit": "Nintendo",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/07/business/media/zelda-ocarina-of-time-remake-nintendo.html",
-          "title": "A ‘Legend of Zelda’ Game Is Reborn and ’90s Nostalgia Fans Are All In",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3P4qiGEBirP5kKmJ5FCzywWBXqZpgOM_TbQUWj7h7cfGSdrO_Ce40S8bYH3w"
-        },
-        {
-          "url": "https://mashable.com/entertainment/zelda-ocarina-of-time-switch-2-metacritic-records",
-          "title": "'The Ocarina of Time' remake is setting Metacritic records left and right",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRghmIGiGPCgfRzGiXO0GjBw-CO8B0nbM_xCM4is-6jUGWDG3XCQ11FppreVU8"
-        },
-        {
-          "url": "https://www.nintendo.com/us/whatsnew/ask-the-developer-vol-24-the-legend-of-zelda-ocarina-of-time-part-1/",
-          "title": "Ask the Developer Vol. 24: The Legend of Zelda: Ocarina of Time — Part 1",
+          "url": "https://www.nintendo.com/us/whatsnew/coming-soon-gift-digital-games-to-family-group-members/",
+          "title": "Coming soon: Gift digital games to family group members",
           "publisher": "Nintendo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHm55IKYx3CGV3D3v-CkERgYtDZ6OoPHse90qS2ea6XG2mxQmLqOk4cQypz6U"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDmQkJYjB6bju3zo9IG5_KYlu4FMCXE2awoA_GFuV4f3krPIZTgkr2HrQVf9E"
+        },
+        {
+          "url": "https://www.ign.com/articles/nintendo-switch-and-switch-2-update-adds-support-for-eshop-game-gifting-just-in-time-for-christmas-but-theres-a-catch",
+          "title": "Nintendo Switch and Switch 2 Update Ver. 23.5.0 Out Now — Check Out the Patch Notes",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSegUJvUsm1JTxDgQO7kAVZVNrK_TocqWufsc9daDvKiHRHUXUTbRfNOKrwA8E"
         }
       ]
     },
@@ -221,130 +318,33 @@
       "approx_searches": "500+",
       "published_at": "2026-11-10T17:40:00Z",
       "related_news_urls": [
-        "https://abc6onyourside.com/news/local/video-shows-men-on-fire-at-osu-fraternity-event-ohio-state-columbus-university-indianola-avenue-sigma-alpha-epsilon-sae-social-media-viral-police-cpd-cfd",
-        "https://www.yahoo.com/news/us/articles/ohio-state-frat-fire-investigation-162532861.html",
-        "https://www.nbcnews.com/news/us-news/ohio-state-university-investigating-fraternity-video-appears-show-two-rcna608313"
+        "https://www.dispatch.com/story/news/local/2026/11/10/hazing-investigation-underway-ohio-state-video-police-records-reveal/92705561007/",
+        "https://www.bostonglobe.com/2026/11/10/nation/ohio-state-fraternity-suspended-flames/",
+        "https://www.cnn.com/2026/11/09/us/ohio-state-fraternity-sigma-alpha-epsilon-fire-fight"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUSHBjdyfT_JctNb2nG07Zo9L5deQy66aCzCVR7opo5L0CtguUobcM2tMogpA",
-      "image_credit": "WSYX",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOIsuwQa8cSPnHhXcqwp9SOSfgUhpJc_h7RJNWVaisiNjGEUUDmYJ6nXwew9g",
+      "image_credit": "The Columbus Dispatch",
       "news": [
         {
-          "url": "https://abc6onyourside.com/news/local/video-shows-men-on-fire-at-osu-fraternity-event-ohio-state-columbus-university-indianola-avenue-sigma-alpha-epsilon-sae-social-media-viral-police-cpd-cfd",
-          "title": "Video shows men on fire at OSU fraternity event",
-          "publisher": "WSYX",
+          "url": "https://www.dispatch.com/story/news/local/2026/11/10/hazing-investigation-underway-ohio-state-video-police-records-reveal/92705561007/",
+          "title": "Hazing investigation underway over Ohio State video, police records reveal",
+          "publisher": "The Columbus Dispatch",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUSHBjdyfT_JctNb2nG07Zo9L5deQy66aCzCVR7opo5L0CtguUobcM2tMogpA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOIsuwQa8cSPnHhXcqwp9SOSfgUhpJc_h7RJNWVaisiNjGEUUDmYJ6nXwew9g"
         },
         {
-          "url": "https://www.yahoo.com/news/us/articles/ohio-state-frat-fire-investigation-162532861.html",
-          "title": "Ohio State frat fire: Investigation into potential hazing underway",
-          "publisher": "Yahoo",
+          "url": "https://www.bostonglobe.com/2026/11/10/nation/ohio-state-fraternity-suspended-flames/",
+          "title": "Ohio State suspends fraternity while investigating a video showing men engulfed in flames",
+          "publisher": "The Boston Globe",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRH9MhPUGQLFdChWyMChyqzZT94OS5u4jc-Wgp2dnpQt6ipLPg40wYDMBj0Zso"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT84fXd2w8NLg8pYAwwMyoERaGcnxRqOt0kuBiI7rbiYxC5V8SfxVnWL_hLHr4"
         },
         {
-          "url": "https://www.nbcnews.com/news/us-news/ohio-state-university-investigating-fraternity-video-appears-show-two-rcna608313",
-          "title": "Ohio State University investigating fraternity after video appears to show two people on fire",
-          "publisher": "NBC News",
+          "url": "https://www.cnn.com/2026/11/09/us/ohio-state-fraternity-sigma-alpha-epsilon-fire-fight",
+          "title": "Ohio State fraternity placed on interim suspension after video shows two people on fire",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpmDH7H2nLSC7uWp1QxSQsX557OQl62TItmx3JYJp2DyBKfABrg-6eZWQeQmk"
-        }
-      ]
-    },
-    {
-      "query": "amazon ring drone camera",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-10T17:30:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/10/amazons-ring-unveils-flying-drone-robot-to-patrol-homes-businesses.html",
-        "https://www.aboutamazon.com/news/devices/ring-drone-cam-rover-cam-security-robot",
-        "https://www.reuters.com/technology/amazons-ring-launches-flying-camera-autonomous-security-robot-2026-11-10/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShXHqWDGtyzkwTUW_E-VQkkOFlzyhJJjBC6asN0wtbOwes8i2Yh_Vjm992G6o",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/10/amazons-ring-unveils-flying-drone-robot-to-patrol-homes-businesses.html",
-          "title": "Amazon's Ring unveils flying drone and robot to patrol homes and businesses",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShXHqWDGtyzkwTUW_E-VQkkOFlzyhJJjBC6asN0wtbOwes8i2Yh_Vjm992G6o"
-        },
-        {
-          "url": "https://www.aboutamazon.com/news/devices/ring-drone-cam-rover-cam-security-robot",
-          "title": "Ring announces Ring Robotics, ushering in a new era of security",
-          "publisher": "About Amazon",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDLRaWMjxv4v6bC6JEBv5XCpmlImhje1_i_sFCaQ8Nci3vFjn-Tspx1rMRYb0"
-        },
-        {
-          "url": "https://www.reuters.com/technology/amazons-ring-launches-flying-camera-autonomous-security-robot-2026-11-10/",
-          "title": "Amazon's Ring launches flying camera, autonomous security robot",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlIca5ZZY5S5FaWtWRNQRUwjNRq_4QD6vsh18J5xGg-f7hplOoTjnLBx99Ios"
-        }
-      ]
-    },
-    {
-      "query": "holger rune",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T17:30:00Z",
-      "related_news_urls": [
-        "https://www.atptour.com/en/news/rune-stockholm-2026-preview-feature",
-        "https://sports.yahoo.com/articles/holger-rune-handed-nightmare-draw-120000849.html",
-        "https://lastwordonsports.com/tennis/2026/11/09/atp-stockholm-best-bets-rune-bergs/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT01QPLmlyhhqLQJHD36FWkUWepQM5fykAdPYFI-4sy35zOGWnTvVI3uK5oPLQ",
-      "image_credit": "ATP Tour",
-      "news": [
-        {
-          "url": "https://www.atptour.com/en/news/rune-stockholm-2026-preview-feature",
-          "title": "Rune reflects on 'scary' injury as he embraces Stockholm return",
-          "publisher": "ATP Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT01QPLmlyhhqLQJHD36FWkUWepQM5fykAdPYFI-4sy35zOGWnTvVI3uK5oPLQ"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/holger-rune-handed-nightmare-draw-120000849.html",
-          "title": "Holger Rune handed nightmare draw upon his return to Stockholm one year after injury",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7W1IbRd3493Zjg2s5fNwZEBV5jB8fesgWHQGzKFiHmKVQZmjZyHyWUJ5RnYg"
-        },
-        {
-          "url": "https://lastwordonsports.com/tennis/2026/11/09/atp-stockholm-best-bets-rune-bergs/",
-          "title": "ATP Stockholm Best Bets Including Holger Rune Vs Zizou Bergs",
-          "publisher": "Last Word On Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRT0pDnIYZ0ZnExzkoR02jkmwe2Z9IU0RlCXMg6issz4QSFgcGZNeslMgf-x1M"
-        }
-      ]
-    },
-    {
-      "query": "northville high school",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T17:30:00Z",
-      "related_news_urls": [
-        "https://www.clickondetroit.com/news/local/2026/11/10/threatening-phone-call-prompts-northville-high-school-to-go-into-lockdown/",
-        "https://www.wxyz.com/news/northville-high-school-on-lockdown-after-threatening-phone-call-six-mile-road-closed"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThTjHM0QflH5fGq3GgoZVQ9rUVZdlLEKDyBJHFiapiTpLBpp6cFaOzxTxaS8A",
-      "image_credit": "ClickOnDetroit | WDIV Local 4",
-      "news": [
-        {
-          "url": "https://www.clickondetroit.com/news/local/2026/11/10/threatening-phone-call-prompts-northville-high-school-to-go-into-lockdown/",
-          "title": "Threatening phone call prompts Northville High School to go into lockdown",
-          "publisher": "ClickOnDetroit | WDIV Local 4",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThTjHM0QflH5fGq3GgoZVQ9rUVZdlLEKDyBJHFiapiTpLBpp6cFaOzxTxaS8A"
-        },
-        {
-          "url": "https://www.wxyz.com/news/northville-high-school-on-lockdown-after-threatening-phone-call-six-mile-road-closed",
-          "title": "Northville High School on lockdown after threatening phone call; Six Mile Road closed",
-          "publisher": "WXYZ Channel 7",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxXHoD8dKvXP2Kshxi_AvAfq3h5hVT74lyvojU3PHOuqVyKRTitAauxPARCgU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhLaXpR3QdUZH3UBLQTtSow7Uez1eUlm8wk0Zp89u-TajZ0_q_N0lku6GWmHU"
         }
       ]
     }
