@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T05:01:36.353643Z",
+  "checked_at": "2026-11-10T05:31:30.676773Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "victor wembanyama",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-10T04:40:00Z",
+      "query": "julian reese",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T05:10:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/athletic/7769507/2026/11/09/victor-wembanyama-george-gervin-finger-roll-nba-spurs/",
-        "https://sports.yahoo.com/nba/breaking-news/article/victor-wembanyama-nearly-had-a-triple-double-with-blocks-in-just-25-minutes-in-historic-blowout-win-over-suns-042442764.html",
-        "https://airalamo.com/the-spurs-high-point-differential-says-they-re-ahead-of-schedule-again"
+        "https://www.marieclaire.com/fashion/celebrity-style/angel-reese-zebra-print-matching-set-the-attico-watch-strap-heels/",
+        "https://sports.yahoo.com/articles/angel-reese-rocks-chic-zebra-195658529.html",
+        "https://www.marca.com/en/basketball/wnba/atlanta-dream/2026/11/10/man-tries-flirting-with-angel-reese-courtside-but-gets-her-name-completely-wrong-video.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxhsFRSKSCCfwYehk6kODJ7ByhDKgbg2J-8scX8hZNBgeabqX3X_m2xkPBlvM",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOpMqU2JrVnqHpnOsuqB-sU_OSnVj3V8n54W2aJU9uqAduFrr3Xg6BZ_zfaP4",
+      "image_credit": "Marie Claire",
       "news": [
         {
-          "url": "https://www.nytimes.com/athletic/7769507/2026/11/09/victor-wembanyama-george-gervin-finger-roll-nba-spurs/",
-          "title": "Victor Wembanyama channels George Gervin via finger roll in latest gem performance",
-          "publisher": "The New York Times",
+          "url": "https://www.marieclaire.com/fashion/celebrity-style/angel-reese-zebra-print-matching-set-the-attico-watch-strap-heels/",
+          "title": "Angel Reese Goes All In on Fashion's New Favorite Neutral With a Zebra Print Matching Set and Watch Strap Pumps",
+          "publisher": "Marie Claire",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxhsFRSKSCCfwYehk6kODJ7ByhDKgbg2J-8scX8hZNBgeabqX3X_m2xkPBlvM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOpMqU2JrVnqHpnOsuqB-sU_OSnVj3V8n54W2aJU9uqAduFrr3Xg6BZ_zfaP4"
         },
         {
-          "url": "https://sports.yahoo.com/nba/breaking-news/article/victor-wembanyama-nearly-had-a-triple-double-with-blocks-in-just-25-minutes-in-historic-blowout-win-over-suns-042442764.html",
-          "title": "Victor Wembanyama nearly had a triple-double with blocks, in just 25 minutes, in historic blowout win over Suns",
+          "url": "https://sports.yahoo.com/articles/angel-reese-rocks-chic-zebra-195658529.html",
+          "title": "Angel Reese rocks chic zebra print outfit to support brother Julian at Pelicans-Timberwolves game",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuLCYXmn9BP5mjQwAGgSFgTNNCYaqlYgfC1rsxSUkhBDDT9Db6gZXhGLF2bAA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTo9qVZ5YRmosLlG6k1YH0eLyYfbhSPAfjxmzQ9575dZRUSudt5S39AbyQPhvk"
         },
         {
-          "url": "https://airalamo.com/the-spurs-high-point-differential-says-they-re-ahead-of-schedule-again",
-          "title": "The Spurs' high point differential says they're ahead of schedule (again)",
-          "publisher": "Air Alamo",
+          "url": "https://www.marca.com/en/basketball/wnba/atlanta-dream/2026/11/10/man-tries-flirting-with-angel-reese-courtside-but-gets-her-name-completely-wrong-video.html",
+          "title": "Man tries flirting with Angel Reese courtside but gets her name completely wrong",
+          "publisher": "MARCA",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSv30c8G4kTGjAtjfsHSzLIWcb1Fs6PsO7qQn6_T_EwYfji1XmlrDX9lldgy1c"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSNs-dJslJ-Zo08d5uF8yJ_3im-vzMUg507nVguPD1G96_monCLd-CJ3xzq6s"
         }
       ]
     },
     {
-      "query": "new hunger games movie",
+      "query": "celtics vs 76ers",
       "approx_searches": "200+",
-      "published_at": "2026-11-10T04:40:00Z",
+      "published_at": "2026-11-10T05:10:00Z",
       "related_news_urls": [
-        "https://people.com/tom-blyth-says-he-and-rachel-zegler-are-infinitely-linked-since-starring-together-in-hunger-games-prequel-film-exclusive-12240781",
-        "https://en.vijesti.me/fun/showbiz/835466/The-Hunger-Games-stars-remained-close-even-after-filming",
-        "https://www.thenews.com.pk/latest/1423002-tom-blyth-opens-up-about-crazy-bond-with-hunger-games-co-star-rachel-zegler"
+        "https://www.bostonglobe.com/2026/11/09/sports/jayson-tatum-jaylen-brown-relationship/",
+        "https://sports.yahoo.com/articles/blame-lot-media-marcus-smart-012146091.html",
+        "https://www.espn.com/nba/story/_/id/50427885/jaylen-brown-says-talk-tatum-ahead-76ers-celtics"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbSfuJRp6klBz5-YYZss0HV6PlhZGt49ypuCbXzIOw58p3IPwSL2N70sGgkBU",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvf0U3lOmOWMOaaU3pMweJ6MaLy5W6PL093OeAuRf42mWdNHEPM8XTvL4jH2s",
+      "image_credit": "The Boston Globe",
       "news": [
         {
-          "url": "https://people.com/tom-blyth-says-he-and-rachel-zegler-are-infinitely-linked-since-starring-together-in-hunger-games-prequel-film-exclusive-12240781",
-          "title": "Tom Blyth on Friendship with Rachel Zegler Since Filming ‘Hunger Games’ Prequel Film (Exclusive)",
-          "publisher": "People.com",
+          "url": "https://www.bostonglobe.com/2026/11/09/sports/jayson-tatum-jaylen-brown-relationship/",
+          "title": "Inside the final days of Jaylen Brown and Jayson Tatum’s tenure as Celtics teammates",
+          "publisher": "The Boston Globe",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbSfuJRp6klBz5-YYZss0HV6PlhZGt49ypuCbXzIOw58p3IPwSL2N70sGgkBU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvf0U3lOmOWMOaaU3pMweJ6MaLy5W6PL093OeAuRf42mWdNHEPM8XTvL4jH2s"
         },
         {
-          "url": "https://en.vijesti.me/fun/showbiz/835466/The-Hunger-Games-stars-remained-close-even-after-filming",
-          "title": "The stars of \"The Hunger Games\" remained close even after filming",
-          "publisher": "vijesti.me",
+          "url": "https://sports.yahoo.com/articles/blame-lot-media-marcus-smart-012146091.html",
+          "title": "“I blame a lot of it on the media” – Marcus Smart points fingers over Jayson Tatum-Jaylen Brown breakup",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcgHILo_oqbaZgHwzhXAI4m35Mobgmfvlwt_aolRfzKkM4HKz29yGRrC_EdVM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJhP2egjgfdiOgDzfCII3ahyWVKr5iyi9Bkg4iPZ4oj7wyGAMSCiwZUUqr32w"
         },
         {
-          "url": "https://www.thenews.com.pk/latest/1423002-tom-blyth-opens-up-about-crazy-bond-with-hunger-games-co-star-rachel-zegler",
-          "title": "Tom Blyth opens up about his 'crazy' bond with 'Hunger Games' co-star Rachel Zegler",
-          "publisher": "The News International",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTro9bJ8kurxQ3LNUp7YOVW1JLjgPuRE_vSNig7GbygXNnLw_pYvs8w4uFBAAU"
-        }
-      ]
-    },
-    {
-      "query": "oregon state basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T04:40:00Z",
-      "related_news_urls": [
-        "https://www.oregonlive.com/beavers/2026/11/jenna-villas-career-night-leads-oregon-state-womens-basketball-past-eastern-washington.html",
-        "https://osubeavers.com/news/2026/11/8/womens-basketball-three-point-barrage-keys-home-win",
-        "https://goeags.com/news/2026/11/8/womens-basketball-eagles-fall-to-beavers-on-the-road2.aspx"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQODI-_FoCKtzw2U4dZtc5QgWhqummbQF5UJ5jVRJMJg4U6HevRKfMZjA-BKVM",
-      "image_credit": "OregonLive.com",
-      "news": [
-        {
-          "url": "https://www.oregonlive.com/beavers/2026/11/jenna-villas-career-night-leads-oregon-state-womens-basketball-past-eastern-washington.html",
-          "title": "Villa’s career night leads OSU women’s basketball past Eastern Washington",
-          "publisher": "OregonLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQODI-_FoCKtzw2U4dZtc5QgWhqummbQF5UJ5jVRJMJg4U6HevRKfMZjA-BKVM"
-        },
-        {
-          "url": "https://osubeavers.com/news/2026/11/8/womens-basketball-three-point-barrage-keys-home-win",
-          "title": "Three-Point Barrage Keys Home Win",
-          "publisher": "Oregon State University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTid7dgoBPANyrhhzomGUM02MshJooYjaOT_OH2Ydg8mojsBzlNSnmGe054Xxs"
-        },
-        {
-          "url": "https://goeags.com/news/2026/11/8/womens-basketball-eagles-fall-to-beavers-on-the-road2.aspx",
-          "title": "Eagles Fall to Beavers on the Road",
-          "publisher": "Eastern Washington University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoHpOS_RvOFC5_6oQaYAuw06yckBVmNf4Vmpb4ETwWo1_czIWRcq-CL9jg-wg"
-        }
-      ]
-    },
-    {
-      "query": "portland vs hawaii prediction",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T04:40:00Z",
-      "related_news_urls": [
-        "https://www.sportsgambler.com/betting-tips/basketball/portland-pilots-vs-hawaii-rainbow-warriors-prediction-odds-2026-11-09/",
-        "https://www.dunkelindex.com/news/hawaii-portland-ncaa-basketball-dunkel-predictions-11-10-2026",
-        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401930195"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-hYvvU8Fdyaub-QnNAgEZZ9H540kcmu5JWauguvOqcRhcDKqJwPmT09FP62Q",
-      "image_credit": "Sportsgambler",
-      "news": [
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/portland-pilots-vs-hawaii-rainbow-warriors-prediction-odds-2026-11-09/",
-          "title": "Portland vs Hawaii Prediction, Picks & Odds | 09 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-hYvvU8Fdyaub-QnNAgEZZ9H540kcmu5JWauguvOqcRhcDKqJwPmT09FP62Q"
-        },
-        {
-          "url": "https://www.dunkelindex.com/news/hawaii-portland-ncaa-basketball-dunkel-predictions-11-10-2026",
-          "title": "Hawaii vs. Portland Dunkel Predictions & Vegas Odds - Nov. 10",
-          "publisher": "The Dunkel Index",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRd20CTjHVKYEWzanlvCR9z-A7XnYzJUHRf70VSVhZWFyqz86pN5tSr71YGM8Y"
-        },
-        {
-          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401930195",
-          "title": "Portland 130-56 Bethesda (Nov 8, 2026) Game Recap",
+          "url": "https://www.espn.com/nba/story/_/id/50427885/jaylen-brown-says-talk-tatum-ahead-76ers-celtics",
+          "title": "Jaylen Brown says 'nothing to talk about' with Tatum ahead of Celtics-76ers",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS118o2S-XN_Uhv2vM45BFLRbg-_HoMVZuzg6Uh8ZtMWp5T5SGQlMK1XKmpWN4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7V7LGrLsaZ5wMJ0AwfUhT1xzEDFJj4kc7spfx8xXzbw99300_eYX4neUntAE"
         }
       ]
     },
     {
-      "query": "tommy hilfiger",
+      "query": "uefa nations league",
       "approx_searches": "200+",
-      "published_at": "2026-11-10T04:40:00Z",
+      "published_at": "2026-11-10T05:10:00Z",
       "related_news_urls": [
-        "https://www.instyle.com/mariah-carey-looks-unrecognizable-punk-makeup-halloween-costume-12206370",
-        "https://wwd.com/pop-culture/culture-news/gallery/gucci-holiday-campaign-2026-photos-1239395795/",
-        "https://www.today.com/popculture/mariah-carey-its-time-video-2026-rcna606896"
+        "https://www.bbc.com/sport/football/articles/c9e8ll62rp68o",
+        "https://www.nytimes.com/athletic/7756674/2026/11/06/england-squad-palmer-croatia-spain/",
+        "https://www.espn.com/soccer/story/_/id/50400302/xabi-alonso-cole-palmer-chelsea-england-snub"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjubDfKhtPQdBJ4OnDkgVsmsYQ3SY2eQuM9TU57faCncNN4x1MXHI3E20Znhk",
-      "image_credit": "InStyle",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgNQKleTrnNF66v7thdp5ZXE67fj-aW_Io9-uippGd4CaBe3U2vgs64RgMoFo",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.instyle.com/mariah-carey-looks-unrecognizable-punk-makeup-halloween-costume-12206370",
-          "title": "Mariah Carey Looks Unrecognizable in Sequin Punk Makeup for Halloween",
-          "publisher": "InStyle",
+          "url": "https://www.bbc.com/sport/football/articles/c9e8ll62rp68o",
+          "title": "Cole Palmer: Is Chelsea forward's England career over under Thomas Tuchel?",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjubDfKhtPQdBJ4OnDkgVsmsYQ3SY2eQuM9TU57faCncNN4x1MXHI3E20Znhk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgNQKleTrnNF66v7thdp5ZXE67fj-aW_Io9-uippGd4CaBe3U2vgs64RgMoFo"
         },
         {
-          "url": "https://wwd.com/pop-culture/culture-news/gallery/gucci-holiday-campaign-2026-photos-1239395795/",
-          "title": "Gucci’s 2026 Holiday Campaign, Photos",
-          "publisher": "WWD",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXj_EGN4fZ26KVOi86YIZInwGh96wdjGVwC2qgtdrfXUR5wDu1WoVDuJHYWrk"
-        },
-        {
-          "url": "https://www.today.com/popculture/mariah-carey-its-time-video-2026-rcna606896",
-          "title": "As Halloween Ends, Mariah Carey, Queen of Christmas, Officially Declares ‘It’s Time’",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQstOOIq__4hUHrCX_snrQCKcL9UoEK5_hi0UqXEsz1l2vSs92-ap6OZJls0Kc"
-        }
-      ]
-    },
-    {
-      "query": "switch 2 update",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T04:40:00Z",
-      "related_news_urls": [
-        "https://www.nintendo.com/us/whatsnew/coming-soon-gift-digital-games-to-family-group-members/",
-        "https://shattered.io/switch-2-system-update-tracker-python-12-steps-2026/",
-        "https://mp1st.com/news/new-nintendo-switch-2-system-update-23-5-0-adds-gifting-for-family-accounts"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDmQkJYjB6bju3zo9IG5_KYlu4FMCXE2awoA_GFuV4f3krPIZTgkr2HrQVf9E",
-      "image_credit": "Nintendo",
-      "news": [
-        {
-          "url": "https://www.nintendo.com/us/whatsnew/coming-soon-gift-digital-games-to-family-group-members/",
-          "title": "Coming soon: Gift digital games to family group members",
-          "publisher": "Nintendo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDmQkJYjB6bju3zo9IG5_KYlu4FMCXE2awoA_GFuV4f3krPIZTgkr2HrQVf9E"
-        },
-        {
-          "url": "https://shattered.io/switch-2-system-update-tracker-python-12-steps-2026/",
-          "title": "Switch 2 System Update Tracker: 12 Steps, 60 Min [2026]",
-          "publisher": "shattered.io",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDKoa4L6ioZLQfQMvVR2rFouk1des07ulEi5hsBTfys3ivvXdYRARDHC4zFPw"
-        },
-        {
-          "url": "https://mp1st.com/news/new-nintendo-switch-2-system-update-23-5-0-adds-gifting-for-family-accounts",
-          "title": "New Nintendo Switch 2 System Update 23.5.0 Adds Gifting for Family Accounts",
-          "publisher": "MP1st",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3LbT19mWjBGg1asKNaH4l3RjIaptHwYcm3-_i622IYhuMI4ia8CSCGBMjO5c"
-        }
-      ]
-    },
-    {
-      "query": "nfl standings",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-10T04:30:00Z",
-      "related_news_urls": [
-        "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-monday-nov-9",
-        "https://www.espn.com/nfl/story/_/id/50435734/bills-vikings-josh-allen-carson-wentz-mnf",
-        "https://www.nytimes.com/athletic/7769236/2026/11/09/bills-vikings-nfl-monday-night-football-score-result-takeaways/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6v-iv6QUTx1ICdMYzw1ULFOTWyhKWRWRvhwTTvPBbIBZXdKvBkyfcHn3g13s",
-      "image_credit": "NFL.com",
-      "news": [
-        {
-          "url": "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-monday-nov-9",
-          "title": "NFL news roundup: J.J. McCarthy expected to play Week 10; Justin Herbert avoids finger fracture",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6v-iv6QUTx1ICdMYzw1ULFOTWyhKWRWRvhwTTvPBbIBZXdKvBkyfcHn3g13s"
-        },
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50435734/bills-vikings-josh-allen-carson-wentz-mnf",
-          "title": "Josh Allen leads Bills to win over tough Vikings' defense",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS36ovdqNhL621N65mF-12EPHKh3GTEE9F_xGqMi_sOUTB9wZt0mFCpHujjy7M"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7769236/2026/11/09/bills-vikings-nfl-monday-night-football-score-result-takeaways/",
-          "title": "Bills shut down Carson Wentz, Vikings in win. Where does Minnesota turn at QB?",
+          "url": "https://www.nytimes.com/athletic/7756674/2026/11/06/england-squad-palmer-croatia-spain/",
+          "title": "Cole Palmer left out of England squad, Josh King and Jobe Bellingham included - The Athletic",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzRajf7EvxS6uwfywTbw_GpZn3egPgRM9R_xDnXiuTKHiIYU9GmMP5y1XQSwE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUr6jIZvhnuD8nu-SlHZt3E9ZMov4iM69ZaYhArouNe0FYiYjy9ymt6ECOvtU"
+        },
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50400302/xabi-alonso-cole-palmer-chelsea-england-snub",
+          "title": "Chelsea's Xabi Alonso 'very happy' with Cole Palmer despite England omission",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQaGxY6hmarPBmZ6CeN3W3Ofa87blxQahshjqUdAsr7o-J13sL1Uqis_oRrmak"
         }
       ]
     },
     {
-      "query": "afc standings",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-10T04:30:00Z",
+      "query": "stanford basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T05:10:00Z",
       "related_news_urls": [
-        "https://bleacherreport.com/articles/25530814-nfl-playoff-bracket-picture-2026-27-and-afc-nfc-standings-after-week-9-snf",
-        "https://www.si.com/nfl/2026-nfl-playoff-picture-week-9-jordan-love-keeps-packers-alive-in-nfc-wild-card-race",
-        "https://www.cbssports.com/nfl/news/predicting-the-full-14-team-nfl-playoff-bracket-week-9-bears/"
+        "https://www.on3.com/sites/cardinal-sports-report/news/preview-stanford-mens-basketball-welcomes-rice-to-maples-pavilion/",
+        "https://www.accuscore.com/game/cmw8f8att1uccqp013oqpl53w",
+        "https://sportssd.iheart.com/content/2026-11-09-rice-vs-stanford-predictions-nov-9/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcjAngM5bSKnDHeScWeLHHBybXR0zhAzvrHIRDYoY0O9fV8vrZqWzgIkxIO2Y",
-      "image_credit": "Bleacher Report",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBAKPq6HXIvZiqyYoRPyrx8cF0bL1_NRWN-m3wgtnNQYScfmiG6nOYJKfsfb4",
+      "image_credit": "On3",
       "news": [
         {
-          "url": "https://bleacherreport.com/articles/25530814-nfl-playoff-bracket-picture-2026-27-and-afc-nfc-standings-after-week-9-snf",
-          "title": "NFL Playoff Bracket Picture 2026-27 and AFC, NFC Standings After Week 9 SNF",
-          "publisher": "Bleacher Report",
+          "url": "https://www.on3.com/sites/cardinal-sports-report/news/preview-stanford-mens-basketball-welcomes-rice-to-maples-pavilion/",
+          "title": "Preview: Stanford Men’s Basketball welcomes Rice to Maples Pavilion",
+          "publisher": "On3",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcjAngM5bSKnDHeScWeLHHBybXR0zhAzvrHIRDYoY0O9fV8vrZqWzgIkxIO2Y"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBAKPq6HXIvZiqyYoRPyrx8cF0bL1_NRWN-m3wgtnNQYScfmiG6nOYJKfsfb4"
         },
         {
-          "url": "https://www.si.com/nfl/2026-nfl-playoff-picture-week-9-jordan-love-keeps-packers-alive-in-nfc-wild-card-race",
-          "title": "2026 NFL Playoff Picture, Week 9: Buccaneers Squander NFC South Lead With Tight Loss to Bears",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.accuscore.com/game/cmw8f8att1uccqp013oqpl53w",
+          "title": "Rice vs Stanford Prediction (Nov 9): Stanford 93% — Odds & Live Score",
+          "publisher": "AccuScore",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4dOOha0xfHq4RfoIw96gQx2SJWBeQfc2tUx-NRTDMtjLAdGuNXdfQTxhCIOw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjT2wpAtsPxyEN4OK3nasgb2BAYCyqSdypR9WgUG07OMqHt0D79kLDyAAnRgs"
         },
         {
-          "url": "https://www.cbssports.com/nfl/news/predicting-the-full-14-team-nfl-playoff-bracket-week-9-bears/",
-          "title": "Predicting the full 14-team NFL playoff bracket entering Week 9: Bears make Super Bowl run",
+          "url": "https://sportssd.iheart.com/content/2026-11-09-rice-vs-stanford-predictions-nov-9/",
+          "title": "Rice vs. Stanford Predictions - Nov. 9",
+          "publisher": "San Diego Sports 760",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnV6n26Ketcz3HURclKDtgnXBIItSIm-a3h1GlGhTDsq9hoNiWEQFkDCwSc6M"
+        }
+      ]
+    },
+    {
+      "query": "wainwright",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T05:00:00Z",
+      "related_news_urls": [
+        "https://globalnews.ca/news/12143238/patient-update-wainwright/",
+        "https://edmontonjournal.com/opinion/columnists/opinion-donate-blood-wainwright-remembrance",
+        "https://nationalpost.com/opinion/letters-armed-forces-represent-the-best-of-us/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGYPWeqP2nSqEUicZHIItS_7ofkt5fT9IRnNI3cAuc84jnmVwz_NYJPv0zs8U",
+      "image_credit": "Global News",
+      "news": [
+        {
+          "url": "https://globalnews.ca/news/12143238/patient-update-wainwright/",
+          "title": "15 soldiers on ventilators, 9 critical after deadly CFB Wainwright fire",
+          "publisher": "Global News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGYPWeqP2nSqEUicZHIItS_7ofkt5fT9IRnNI3cAuc84jnmVwz_NYJPv0zs8U"
+        },
+        {
+          "url": "https://edmontonjournal.com/opinion/columnists/opinion-donate-blood-wainwright-remembrance",
+          "title": "Opinion: Give back to those who sacrificed for Canada by giving blood",
+          "publisher": "Edmonton Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_eEsoF3NGtwURB7JM88MmvZqu0kaLLVswNL2AOSY55ofKgTwiq_hkFQ_yY-g"
+        },
+        {
+          "url": "https://nationalpost.com/opinion/letters-armed-forces-represent-the-best-of-us/",
+          "title": "Letters: Armed Forces ‘represent the best of us’",
+          "publisher": "National Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxVPEf62AatqvLWinhRmZqtBnYvQS_FkCmn4U-FYXQpazHfkV5rFq_9d6-DTw"
+        }
+      ]
+    },
+    {
+      "query": "brandon williams",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T05:00:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/lauri-markkanen-wrist-questionable-tuesday",
+        "https://clutchpoints.com/nba/golden-state-warriors/warriors-news-golden-state-loses-guard-injury-pelicans-blowout",
+        "https://www.espn.com/video/clip/_/id/50415658/brandon-williams-gets-hoop-harm"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKPPLBia_UTEE7mZy-tgB7lddFhkkKwDV_Y7scX2fhgS-jgQszNc-xmR6fCRI",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/lauri-markkanen-wrist-questionable-tuesday",
+          "title": "Lauri Markkanen (wrist) questionable Tuesday",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKPPLBia_UTEE7mZy-tgB7lddFhkkKwDV_Y7scX2fhgS-jgQszNc-xmR6fCRI"
+        },
+        {
+          "url": "https://clutchpoints.com/nba/golden-state-warriors/warriors-news-golden-state-loses-guard-injury-pelicans-blowout",
+          "title": "Warriors lose guard to injury amid Pelicans blowout",
+          "publisher": "ClutchPoints",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvCnkxYUhVFOlj6OkDy7lP0X02eLYd3SXmfK6gBCgdeijNSrOr40cx2tZjLws"
+        },
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50415658/brandon-williams-gets-hoop-harm",
+          "title": "Brandon Williams gets the hoop and the harm",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThOmX1eN_TRgm4lbXsjAu29hahZXgab_d-Yhu0VyMRaJEZgElluO4bNyp6KbY"
+        }
+      ]
+    },
+    {
+      "query": "jimmy butler",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T05:00:00Z",
+      "related_news_urls": [
+        "https://basketnews.com/news-259062-warriors-could-get-major-boost-sooner-than-expected-amid-great-start.html",
+        "https://sports.yahoo.com/articles/warriors-hopes-raised-jimmy-butler-172009839.html",
+        "https://athlonsports.com/nba/golden-state-warriors/warriors-facing-trade-decision-after-jimmy-butler-injury-update"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFUgCy2YDz-YkAsvOrt8-YHDXbX-jBp8T1fmppBhBSCwqK9RbrI87rEr6E7nI",
+      "image_credit": "BasketNews.com",
+      "news": [
+        {
+          "url": "https://basketnews.com/news-259062-warriors-could-get-major-boost-sooner-than-expected-amid-great-start.html",
+          "title": "Warriors could get major boost sooner than expected amid great start",
+          "publisher": "BasketNews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFUgCy2YDz-YkAsvOrt8-YHDXbX-jBp8T1fmppBhBSCwqK9RbrI87rEr6E7nI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/warriors-hopes-raised-jimmy-butler-172009839.html",
+          "title": "Warriors’ Hopes Raised as Jimmy Butler ‘Ramping Up’ for Return",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkAn8HDX5WM5KuTY9FLL6d4X-QQ2WjWxSAd4AYb98IM8HXtqPInHZu0RQZXbE"
+        },
+        {
+          "url": "https://athlonsports.com/nba/golden-state-warriors/warriors-facing-trade-decision-after-jimmy-butler-injury-update",
+          "title": "Warriors Facing Trade Decision After Jimmy Butler News",
+          "publisher": "Athlon Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1aTOGKid7Q_voghfx2RkqRTpqzsraHR35KiWZAPCjQ7BOknV1T-ZCfCa1HC0"
+        }
+      ]
+    },
+    {
+      "query": "gui santos",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T05:00:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/gary-payton-ii-knee-downgraded-to-out-monday",
+        "https://bluemanhoop.com/warriors-winning-streak-has-allowed-gui-santos-concerns-to-fly-under-the-radar",
+        "https://www.rotoballer.com/player-news/gui-santos-back-in-the-lineup-saturday/1987061"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdSsJpUme2EXEJ6-cPZVlbrnpAGbl4X5AMQg7YZoWTf81Q31oS72mzoC2W4No",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/gary-payton-ii-knee-downgraded-to-out-monday",
+          "title": "Gary Payton II (knee) downgraded to out Monday",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdSsJpUme2EXEJ6-cPZVlbrnpAGbl4X5AMQg7YZoWTf81Q31oS72mzoC2W4No"
+        },
+        {
+          "url": "https://bluemanhoop.com/warriors-winning-streak-has-allowed-gui-santos-concerns-to-fly-under-the-radar",
+          "title": "Warriors' winning streak has allowed Gui Santos concerns to fly under the radar",
+          "publisher": "Blue Man Hoop",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWi4Gq7_10JFpMRQ1czbH4vCxdTR2xnUuwMt07KXw7szDMeRBjwziY16Nk7Io"
+        },
+        {
+          "url": "https://www.rotoballer.com/player-news/gui-santos-back-in-the-lineup-saturday/1987061",
+          "title": "Gui Santos Back in the Lineup Saturday - NBA News | Fantasy Basketball",
+          "publisher": "RotoBaller",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7uv9K6eCGxpL1j2jh90Zux3kLqj2p20jP96f1Mdh85syLifkN8qGvslf-lKI"
+        }
+      ]
+    },
+    {
+      "query": "airplane",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-10T05:00:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/09/boeing-layoffs-commercial-airplane.html",
+        "https://www.axios.com/local/seattle/2026/11/09/boeing-commercial-airplanes-layoffs-seattle-puget-sound",
+        "https://www.reuters.com/business/aerospace-defense/boeing-cut-5-planemaking-divisions-workforce-seattle-times-reports-2026-11-09/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAiPiiZGNu1GNtagYqROjA6LqS8l0j5DoBC7NknVQpnEQyCnOFeMw5Ag5ta7Y",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/09/boeing-layoffs-commercial-airplane.html",
+          "title": "Boeing to cut 5% of commercial airplane workers as production increase takes longer than expected",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAiPiiZGNu1GNtagYqROjA6LqS8l0j5DoBC7NknVQpnEQyCnOFeMw5Ag5ta7Y"
+        },
+        {
+          "url": "https://www.axios.com/local/seattle/2026/11/09/boeing-commercial-airplanes-layoffs-seattle-puget-sound",
+          "title": "Boeing plans 5% workforce reduction amid production troubles",
+          "publisher": "Axios",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjchyl4G1r7YAHcJIxm-Ix-XxU5Cy1CtGw7AJCsyNP7a_KzrOxFh-orQ1Hf5g"
+        },
+        {
+          "url": "https://www.reuters.com/business/aerospace-defense/boeing-cut-5-planemaking-divisions-workforce-seattle-times-reports-2026-11-09/",
+          "title": "Boeing to cut 5% of commercial jet workforce amid production struggles",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbnYIBdtji6d7PMJ-x8slZuY2ulscoeqUr5jGsHNheBSu_up9nPAQcyfZSXXg"
+        }
+      ]
+    },
+    {
+      "query": "portland basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T05:00:00Z",
+      "related_news_urls": [
+        "https://portlandpilots.com/news/2026/11/8/mens-basketball-portland-bigs-dominant-in-win-over-bethesda-at-rainbow-classic.aspx",
+        "https://www.cbssports.com/college-basketball/news/james-odonnell-has-29-and-20-as-portland-routs-bethesda-130-56/",
+        "https://www.bhpioneer.com/national_news/portland-defeats-bethesda-ca-130-56-at-rainbow-classic/article_eea00cd7-7a7c-58d6-88e6-166266e5002e.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQEzW4yp_gNHK1HnqwHasChQplJ5NmDvPKIE89XW_cD4tV_4qv7-80rIqJr54",
+      "image_credit": "University of Portland Athletics",
+      "news": [
+        {
+          "url": "https://portlandpilots.com/news/2026/11/8/mens-basketball-portland-bigs-dominant-in-win-over-bethesda-at-rainbow-classic.aspx",
+          "title": "Portland Bigs Dominant in Win Over Bethesda at Rainbow Classic - University of Portland Athletics",
+          "publisher": "University of Portland Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQEzW4yp_gNHK1HnqwHasChQplJ5NmDvPKIE89XW_cD4tV_4qv7-80rIqJr54"
+        },
+        {
+          "url": "https://www.cbssports.com/college-basketball/news/james-odonnell-has-29-and-20-as-portland-routs-bethesda-130-56/",
+          "title": "James O'Donnell has 29 and 20 as Portland routs Bethesda 130-56",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnQby2WrQO8dIO4WMHkMWpqAKds8YJJNz8envxOvrRaMX4Mj6gqqxPgyAmCeQ"
-        }
-      ]
-    },
-    {
-      "query": "bears standings",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-10T04:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50430415/caleb-williams-4-interceptions-bears-win-buccaneers",
-        "https://www.chicagobears.com/news/5-things-we-learned-from-bears-coach-ben-johnson-in-week-9-win",
-        "https://www.chicagotribune.com/2026/11/09/chicago-bears-caleb-williams-fixes/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVoMlpKKBIOJk0OFQ829Ed0S1jCXT9-GCGU-gvuMGT46aSe7pUqPucDdOkU3c",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50430415/caleb-williams-4-interceptions-bears-win-buccaneers",
-          "title": "Caleb Williams unfazed by 4 interceptions as Bears pull out win vs. Bucs",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVoMlpKKBIOJk0OFQ829Ed0S1jCXT9-GCGU-gvuMGT46aSe7pUqPucDdOkU3c"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQD8pdKFteUwglloXl3fSG6Wg53WCkG9tgCuRzR81Ez0CQ_KGFC9v-IkVWNVUE"
         },
         {
-          "url": "https://www.chicagobears.com/news/5-things-we-learned-from-bears-coach-ben-johnson-in-week-9-win",
-          "title": "5 things we learned from Bears coach Ben Johnson in Week 9 win",
-          "publisher": "Chicago Bears",
+          "url": "https://www.bhpioneer.com/national_news/portland-defeats-bethesda-ca-130-56-at-rainbow-classic/article_eea00cd7-7a7c-58d6-88e6-166266e5002e.html",
+          "title": "Portland defeats Bethesda (CA) 130-56 at Rainbow Classic",
+          "publisher": "Black Hills Pioneer",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSE1tfMiEPpKBPZIewrDkppkfXKNI3dtSJLSPTURqDD9IrJ_a8R4mJG5KzLIqU"
-        },
-        {
-          "url": "https://www.chicagotribune.com/2026/11/09/chicago-bears-caleb-williams-fixes/",
-          "title": "3 things we learned from Chicago Bears on Monday: With some fixes, ‘we can really, really make a run at it’",
-          "publisher": "Chicago Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrH8_Yjd3ytv3wsUkwqt9Wd80lJGi_MBnu8LgE8jMPHBN6ffctPS9iEoR3Iw0"
-        }
-      ]
-    },
-    {
-      "query": "jeremiah fears",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T04:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/fantasy/article/the-playlist-fantasy-basketball-waiver-wire-adds-and-schedule-breakdown-for-week-4-of-2026-27-155149078.html",
-        "https://www.nba.com/news/nba-fantasy-high-score-perfect-lineup-from-week-3",
-        "https://www.espn.com/fantasy/basketball/story/_/id/50383545/fantasy-basketball-rookie-watch-nba-2026-2027"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrLQb0buztgUFIDSfwakES0TdRiNN8zYCN-bCcy0bRXIraz2EU1qgIUrxSgt0",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/fantasy/article/the-playlist-fantasy-basketball-waiver-wire-adds-and-schedule-breakdown-for-week-4-of-2026-27-155149078.html",
-          "title": "The Playlist: Fantasy basketball waiver-wire adds and schedule breakdown for Week 4 of 2026-27",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrLQb0buztgUFIDSfwakES0TdRiNN8zYCN-bCcy0bRXIraz2EU1qgIUrxSgt0"
-        },
-        {
-          "url": "https://www.nba.com/news/nba-fantasy-high-score-perfect-lineup-from-week-3",
-          "title": "NBA Fantasy: High Score perfect lineup from Week 3",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtvNiGnH3sPu_zWGVQymjbYn6xC4r9DqQvxcD1M6cqFm-tiyh9Egk92zA-BuY"
-        },
-        {
-          "url": "https://www.espn.com/fantasy/basketball/story/_/id/50383545/fantasy-basketball-rookie-watch-nba-2026-2027",
-          "title": "Fantasy basketball rookie watch: Who's standing out and who's worth monitoring",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdyBl6tD0Z8LNsbnSjYRFTkuYdHvlvkDwCj0cFpdSEl-vbUYXGIgT_TLi1sn4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6wqyZnkW35_7Sqg6tUMfO3Hdx-1VCqT8phrPLarWuHnvLklCnCO7n_VPfbig"
         }
       ]
     }
