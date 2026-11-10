@@ -3,9 +3,219 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T07:01:37.097108Z",
+  "checked_at": "2026-11-10T07:30:52.983571Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "jamie dornan",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T07:10:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66100325/?ref_=nmnw_art_perm",
+        "https://www.esquire.com/uk/culture/tv/a74375747/best-british-tv-shows-to-watch-9-november/",
+        "https://www.cosmopolitan.com/uk/entertainment/a74373993/matthew-rhys-jamie-dornan-death-and-nightingales/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEZq8-xbWWAZa7wa4StyGocYjRmQY-XvRlniaeStmx6tNKi5wu_WfbLGleBIQ",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66100325/?ref_=nmnw_art_perm",
+          "title": "Late Night with Seth Meyers: Julia Louis-Dreyfus, Jamie Dornan",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEZq8-xbWWAZa7wa4StyGocYjRmQY-XvRlniaeStmx6tNKi5wu_WfbLGleBIQ"
+        },
+        {
+          "url": "https://www.esquire.com/uk/culture/tv/a74375747/best-british-tv-shows-to-watch-9-november/",
+          "title": "\"Tune Into This Jamie Dornan Thriller\": The 7 Best British Shows to Watch This Week on BBC, Channel 4 & More",
+          "publisher": "Esquire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3ydSWE01m1YB_HwfU3nQm_iZfPqi5nzXXgy9uhY0FyvWiLpJL52Q3B-NIhUE"
+        },
+        {
+          "url": "https://www.cosmopolitan.com/uk/entertainment/a74373993/matthew-rhys-jamie-dornan-death-and-nightingales/",
+          "title": "'A heartbreaking hidden gem': This dark drama starring Matthew Rhys and Jamie Dornan deserves your attention",
+          "publisher": "Cosmopolitan",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTu1hXz6h8uYlAIVCoEMBiwXVls3LY0GfWpsqVCI8vu0L-QP7yG1SfNUjWAKw"
+        }
+      ]
+    },
+    {
+      "query": "leonardo dicaprio",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T07:10:00Z",
+      "related_news_urls": [
+        "https://nofilmschool.com/roles-dicaprio-turned-down",
+        "https://www.imdb.com/de/news/ni66101241/?ref_=nm_nwr_1",
+        "https://collider.com/body-of-lies-streaming-apple-tv-november-2026/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0tBx6fgGAEoOqCO8J8Rom5tFTUcU0woCKlu9NdyiYq2f0SMGgbU8ppOfZEe8",
+      "image_credit": "No Film School",
+      "news": [
+        {
+          "url": "https://nofilmschool.com/roles-dicaprio-turned-down",
+          "title": "Huge Acting Roles That Leonardo DiCaprio Turned Down",
+          "publisher": "No Film School",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0tBx6fgGAEoOqCO8J8Rom5tFTUcU0woCKlu9NdyiYq2f0SMGgbU8ppOfZEe8"
+        },
+        {
+          "url": "https://www.imdb.com/de/news/ni66101241/?ref_=nm_nwr_1",
+          "title": "In Just 1 Day, Ridley Scott's 128-Minute DiCaprio Action Thriller Officially Takes Over Streaming",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRU9Q_RB8JH4gbVtpbXiLovPGY7r3cc5kpTr4Skr_KXAFuvm560rmNRYqgNy8"
+        },
+        {
+          "url": "https://collider.com/body-of-lies-streaming-apple-tv-november-2026/",
+          "title": "Russell Crowe and Leonardo DiCaprio’s CIA Thriller Officially Hits Apple TV",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTl9KGxnceqeDu36mMJl1fqZeS-mGa1YJRlg7PyIIk47Nw9h5p5CWkUAS_Kn0s"
+        }
+      ]
+    },
+    {
+      "query": "kayla harrison",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T07:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/ufc-334-embedded-episode-1-001139360.html",
+        "https://athlonsports.com/mma/ufc-334-5-reasons-amanda-nunes-vs-kayla-harrison-is-womens-mmas-biggest-fight-of-2026",
+        "https://boxingnews.com/news/ufc-334-countdown-harrison-nunes-gane"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5DeLKTYUPu12szEwJx9U-Lg7ARVN-zcOrLa8jiQJGy30rIjSfgMIveBTd2pI",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/ufc-334-embedded-episode-1-001139360.html",
+          "title": "UFC 334 Embedded, Episode 1: 'We'll see who wants it'",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5DeLKTYUPu12szEwJx9U-Lg7ARVN-zcOrLa8jiQJGy30rIjSfgMIveBTd2pI"
+        },
+        {
+          "url": "https://athlonsports.com/mma/ufc-334-5-reasons-amanda-nunes-vs-kayla-harrison-is-womens-mmas-biggest-fight-of-2026",
+          "title": "UFC 334: 5 Reasons Amanda Nunes vs. Kayla Harrison Is Women's MMA's Biggest Fight of 2026",
+          "publisher": "Athlon Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIdaFgCHbMJfHiKacttf0sQys6kPCyv1mcDTzTopT6E9NRGuV6j38pYoHvUu8"
+        },
+        {
+          "url": "https://boxingnews.com/news/ufc-334-countdown-harrison-nunes-gane",
+          "title": "UFC Releases Countdown To UFC 334 Featuring Harrison-Nunes",
+          "publisher": "boxingnews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmbFxb8ja9J0q6EHHA6kkYDmfDfsgepkrcuMi_G0e-lJ4HlFO8FtUjJ2pr-7M"
+        }
+      ]
+    },
+    {
+      "query": "pluto",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T07:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50433760/source-browns-returning-deshaun-watson-qb1-week-10",
+        "https://www.nfl.com/news/browns-todd-monken-fails-to-commit-to-a-starting-qb-ahead-of-game-vs-texans",
+        "https://andscape.com/features/shedeur-sanders-browns-saints-overtime-quarterback/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0tQDEgOOO_jnZm8047GT43gTiY2o-TG5VuKzp6vpJSjTKB9IfT1ByA1PdK_E",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50433760/source-browns-returning-deshaun-watson-qb1-week-10",
+          "title": "Source: Browns returning to Watson as QB1 despite Sanders' strong fill-in start",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0tQDEgOOO_jnZm8047GT43gTiY2o-TG5VuKzp6vpJSjTKB9IfT1ByA1PdK_E"
+        },
+        {
+          "url": "https://www.nfl.com/news/browns-todd-monken-fails-to-commit-to-a-starting-qb-ahead-of-game-vs-texans",
+          "title": "Browns' Todd Monken fails to commit to a starting QB ahead of game vs. Texans",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcv43olVKJm92Ao1eJL5R851sm3QmTmPtKS8q32PcIw7WVvk0rlASgFQr5sjE"
+        },
+        {
+          "url": "https://andscape.com/features/shedeur-sanders-browns-saints-overtime-quarterback/",
+          "title": "Shedeur Sanders ignites Cleveland Browns quarterback chatter again",
+          "publisher": "Andscape",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIV-nVNmoyKYnACn2GlvMf16NaDx_ZHRDynpqXo_HER6GIHjnfVcNFMACxHc4"
+        }
+      ]
+    },
+    {
+      "query": "gabourey sidibe",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T07:00:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/articles/gabourey-sidibe-calls-raven-symon-044044699.html",
+        "https://ew.com/gabourey-sidibe-confronts-raven-symone-past-beef-12240080",
+        "https://www.tmz.com/people/miranda-maday/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiaO5DSrLfnllpgyxHPMdtYse8-pwUts7hCEFal6BXcTg4vNEubLd2pSkXFOE",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/gabourey-sidibe-calls-raven-symon-044044699.html",
+          "title": "Gabourey Sidibe Calls out Raven-Symoné for Once Making People ‘Promise to Not Be Friends with Me’: ‘I Thought You Didn’t Like Me’",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiaO5DSrLfnllpgyxHPMdtYse8-pwUts7hCEFal6BXcTg4vNEubLd2pSkXFOE"
+        },
+        {
+          "url": "https://ew.com/gabourey-sidibe-confronts-raven-symone-past-beef-12240080",
+          "title": "Gabourey Sidibe confronts Raven-Symoné over past beef, dynamic on Empire set: ‘Treated me like you didn’t like me’",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTA_KMQ5CXErJKVD4trBy2PMUiT8aqQ-MarJUrvMkiRIy30ZAPzAkDt25wVjM0"
+        },
+        {
+          "url": "https://www.tmz.com/people/miranda-maday/",
+          "title": "Miranda Maday (Raven-Symone's wife): News and Updates",
+          "publisher": "TMZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBwfQpCGO6iuWlaN5g08yVQYhkxyVp7ep6tthuuszDk21lyCIDwXHlDHFCCcs"
+        }
+      ]
+    },
+    {
+      "query": "disability",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T06:50:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/world/us-sues-lyft-alleges-it-denied-rides-passengers-with-service-dogs-wheelchairs-2026-11-10/",
+        "https://www.nytimes.com/2026/11/10/us/lyft-disability-lawsuit-doj.html",
+        "https://www.wpbf.com/article/doj-department-of-justice-sues-lyft-alleged-discrimination-passengers-disabilities-service-animals/74382115"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTl8_eFV2HGw58uCvPfvKiAp61ngNM_qOAvkjLuLWht58OaWI_Ga-pUqxRheoc",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/world/us-sues-lyft-alleges-it-denied-rides-passengers-with-service-dogs-wheelchairs-2026-11-10/",
+          "title": "US sues Lyft, alleges discrimination against disabled riders",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTl8_eFV2HGw58uCvPfvKiAp61ngNM_qOAvkjLuLWht58OaWI_Ga-pUqxRheoc"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/10/us/lyft-disability-lawsuit-doj.html",
+          "title": "Justice Dept. Accuses Lyft of Disability Discrimination in Lawsuit",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNwYLDa4-meuoxBOHBVcrYPflsjK1cGqBFYjxtqXMJaj_wHKjSorrhldkNKc8"
+        },
+        {
+          "url": "https://www.wpbf.com/article/doj-department-of-justice-sues-lyft-alleged-discrimination-passengers-disabilities-service-animals/74382115",
+          "title": "Department of Justice sues Lyft for alleged discrimination against passengers with disabilities",
+          "publisher": "WPBF",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzP5O8TcK7FOgnYJp9o4pHq2CDL-HRvFkimBCfEaKoU8tpzfrVXSv7tCUFB7Q"
+        }
+      ]
+    },
     {
       "query": "adria arjona",
       "approx_searches": "100+",
@@ -81,19 +291,26 @@
       "approx_searches": "2000+",
       "published_at": "2026-11-10T06:20:00Z",
       "related_news_urls": [
-        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-odi-1539439/match-report",
-        "https://sports.yahoo.com/articles/rohit-sharma-score-today-zealand-032415103.html",
-        "https://www.wral.com/news/ap/421d4-rain-delays-the-toss-in-the-3rd-cricket-odi-between-new-zealand-and-india/"
+        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-odi-1539439/ball-by-ball-commentary",
+        "https://www.espn.com/cricket/series/24469/report/1539439/new-zealand-vs-india-3rd-odi-24469",
+        "https://sports.yahoo.com/articles/rohit-sharma-score-today-zealand-032415103.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSj7EgRi5C0R__d29oK25qh-MUt_PUL57sqyoAJQdLwzCOWN6-NWDAB2X5YGPY",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThy7aDzvYziA0s8IF_o8yxkiXbCHDb4Hn_0s7u6NPQNwEYOhzzkOAAfgOpox8",
       "image_credit": "Cricinfo",
       "news": [
         {
-          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-odi-1539439/match-report",
-          "title": "India hold on to series lead after washout as New Zealand's winning streak ends",
+          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-odi-1539439/ball-by-ball-commentary",
+          "title": "Ball by Ball Commentary & Live Score - NZ vs IND, 3rd ODI",
           "publisher": "Cricinfo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSj7EgRi5C0R__d29oK25qh-MUt_PUL57sqyoAJQdLwzCOWN6-NWDAB2X5YGPY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThy7aDzvYziA0s8IF_o8yxkiXbCHDb4Hn_0s7u6NPQNwEYOhzzkOAAfgOpox8"
+        },
+        {
+          "url": "https://www.espn.com/cricket/series/24469/report/1539439/new-zealand-vs-india-3rd-odi-24469",
+          "title": "Recent Match Report - New Zealand vs India 3rd ODI 2026 | cricinfo.com",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEWapRM03h0E5hb-3NspdI1QySqIl2hMPgtZHGTLLfU9uBgGPH5UNpES-KZG8"
         },
         {
           "url": "https://sports.yahoo.com/articles/rohit-sharma-score-today-zealand-032415103.html",
@@ -101,13 +318,6 @@
           "publisher": "Yahoo Sports",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5tde4AWvSfkcmW2aa67NuS2M3143OZQf6tzWkAg2_cMI0hy8m_IM9WAzjDJ0"
-        },
-        {
-          "url": "https://www.wral.com/news/ap/421d4-rain-delays-the-toss-in-the-3rd-cricket-odi-between-new-zealand-and-india/",
-          "title": "India wins the toss, bowls as rain threatens the 3rd ODI against New Zealand",
-          "publisher": "WRAL",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZlf4m4deX--Au0fBCJmW8ru9B39t0H8GBVX_cKUo5HF02KfGtEzR0Zmhwxfc"
         }
       ]
     },
@@ -143,200 +353,6 @@
           "publisher": "9to5Google",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRxJsT5_zmNZlt2PZdaCvarEYM5im2p7gIqWLTMwWfOVwe-p6c6KOYd81fJhk"
-        }
-      ]
-    },
-    {
-      "query": "heated rivalry theaters",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T06:20:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/tv/news/heated-rivalry-fans-theaters-rerelease-1236943493/",
-        "https://www.imdb.com/news/ni66102569/?ref_=int_nwr_1",
-        "https://www.inc.com/hauwa-otori/heated-rivalry-theatrical-release-box-office-strategy/91425033"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUhwhv2OaLlCwcbhnn5T0r00gAWtoZhHVzPHwVNYt7k7gtk-JlDnA6TRyO4IA",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/tv/news/heated-rivalry-fans-theaters-rerelease-1236943493/",
-          "title": "‘Heated Rivalry’ Superfans Hit Theaters for Shane and Ilya on the Big Screen: ‘They Invented Chemistry’",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUhwhv2OaLlCwcbhnn5T0r00gAWtoZhHVzPHwVNYt7k7gtk-JlDnA6TRyO4IA"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66102569/?ref_=int_nwr_1",
-          "title": "‘Heated Rivalry’ Final Episodes to Release in 4Dx at Regal Theaters",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR04GuGTZ8_IeRHagmZf5P1ZK5S4Pbg2AsChulT2n8nTrsWn3I5xgmt8GDuZmA"
-        },
-        {
-          "url": "https://www.inc.com/hauwa-otori/heated-rivalry-theatrical-release-box-office-strategy/91425033",
-          "title": "Fans Just Dropped $1M in Presales to Watch 'Heated Rivalry' in Movie Theaters—11 Months After Its Premiere",
-          "publisher": "Inc.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdlJzbndzRUFDuhzQBy00Vtb85-gAtrKIbIvh9CdYYVcMD4JKPngnapUO6l-k"
-        }
-      ]
-    },
-    {
-      "query": "government jobs",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T06:10:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/cw1m4d8vjvppo",
-        "https://news.sky.com/story/civil-servant-who-juggled-up-to-five-government-jobs-guilty-of-fraud-13610264",
-        "https://www.thetimes.com/uk/crime/article/civil-servant-five-jobs-accused-bullying-mother-home-d7nl57k26"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSWSzLZ_40M4S53lH9nj_U4bEe5nCoqTfA1jwNmV70axLlS2YwFqEcmiWoQso",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/cw1m4d8vjvppo",
-          "title": "How a civil servant got away with juggling five jobs for so long",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSWSzLZ_40M4S53lH9nj_U4bEe5nCoqTfA1jwNmV70axLlS2YwFqEcmiWoQso"
-        },
-        {
-          "url": "https://news.sky.com/story/civil-servant-who-juggled-up-to-five-government-jobs-guilty-of-fraud-13610264",
-          "title": "Civil servant who juggled up to five government jobs guilty of fraud",
-          "publisher": "Sky News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSb4nnAaUZ7LkLcuMGhstaTTcCLepPEDJWqVHQvT5GjrPXWIsVRSpK20OffhCw"
-        },
-        {
-          "url": "https://www.thetimes.com/uk/crime/article/civil-servant-five-jobs-accused-bullying-mother-home-d7nl57k26",
-          "title": "Civil servant with five jobs accused of bullying mother for £2m home",
-          "publisher": "The Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZbHKdfB7OzMRUCsKrO1KWa6qU8QdNfSup4WJPGm-0ISqYp_MhHbYlfStnYmo"
-        }
-      ]
-    },
-    {
-      "query": "julia louis-dreyfus",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T06:00:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/fr/news/ni66100325/?ref_=tt_nwr_1"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIijyGKl18aYHBF-gIy8sm99T7KzxtL7veeqghL8m-qrJdxVK8TbRK70cUNGs",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/fr/news/ni66100325/?ref_=tt_nwr_1",
-          "title": "Late Night with Seth Meyers: Julia Louis-Dreyfus, Jamie Dornan",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIijyGKl18aYHBF-gIy8sm99T7KzxtL7veeqghL8m-qrJdxVK8TbRK70cUNGs"
-        }
-      ]
-    },
-    {
-      "query": "karely ruiz",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T06:00:00Z",
-      "related_news_urls": [
-        "https://www.lavozarizona.com/story/entretenimiento/2026/11/09/donde-ver-la-mansion-vip-el-hotspanish-y-sus-participantes/92688972007/",
-        "https://www.elfinanciero.com.mx/entretenimiento/2026/11/08/la-mansion-vip-2-en-vivo-que-paso-en-el-estreno-del-reality-show/",
-        "https://www.tiempo.com.mx/espectaculos/la-mansion-vip-habitantes-hot-spanish-reality-show-youtube/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3y4qGni8rO4WzEhlkidKxI6HJ8Fsvvw5K9j4GSaYUDH01wWapXOWTQVDypVI",
-      "image_credit": "azcentral.com and The Arizona Republic",
-      "news": [
-        {
-          "url": "https://www.lavozarizona.com/story/entretenimiento/2026/11/09/donde-ver-la-mansion-vip-el-hotspanish-y-sus-participantes/92688972007/",
-          "title": "¿Dónde ver 'La Mansión VIP' y quiénes son sus participantes?Karely Ruiz lanza inesperada revelación",
-          "publisher": "azcentral.com and The Arizona Republic",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3y4qGni8rO4WzEhlkidKxI6HJ8Fsvvw5K9j4GSaYUDH01wWapXOWTQVDypVI"
-        },
-        {
-          "url": "https://www.elfinanciero.com.mx/entretenimiento/2026/11/08/la-mansion-vip-2-en-vivo-que-paso-en-el-estreno-del-reality-show/",
-          "title": "Estreno de ‘La Mansión VIP 2’: Así quedaron los cuartos en el arranque del reality show",
-          "publisher": "El Financiero",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8xhIilxLI-PlBz-3FfnXZ0l-3D2UbNN2OSO8613CTuLGXQQw0OeuvSEwfppc"
-        },
-        {
-          "url": "https://www.tiempo.com.mx/espectaculos/la-mansion-vip-habitantes-hot-spanish-reality-show-youtube/",
-          "title": "Ellos son los habitantes de La Mansión VIP",
-          "publisher": "Tiempo La Noticia Digital",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOWliVBdPYep3bR_u0T9J5sPFl1bdVLtPYnHuc7uMm9bfrgHmRCoIGF-olYP4"
-        }
-      ]
-    },
-    {
-      "query": "francis lawrence",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T06:00:00Z",
-      "related_news_urls": [
-        "https://www.avclub.com/hunger-games-sunrise-on-the-reaping-director-plutarch-heavensbee-spinoff-ideas",
-        "https://www.thewrap.com/creative-content/movies/sunrise-on-the-reaping-director-makes-a-pitch-for-next-hunger-games-prequel/",
-        "https://www.cinemablend.com/movies/sunrise-on-the-reapings-director-and-cast-reveal-which-prequel-they-want-to-see-next"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSl110OdmcaUYF-R0F9kCMa9Mny6G9hc9P32a_PBhzQlRfGf26SFp8kU4GCz3k",
-      "image_credit": "A.V. Club",
-      "news": [
-        {
-          "url": "https://www.avclub.com/hunger-games-sunrise-on-the-reaping-director-plutarch-heavensbee-spinoff-ideas",
-          "title": "Sunrise On The Reaping director thinks Plutarch Heavensbee could lead his own Hunger Games",
-          "publisher": "A.V. Club",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSl110OdmcaUYF-R0F9kCMa9Mny6G9hc9P32a_PBhzQlRfGf26SFp8kU4GCz3k"
-        },
-        {
-          "url": "https://www.thewrap.com/creative-content/movies/sunrise-on-the-reaping-director-makes-a-pitch-for-next-hunger-games-prequel/",
-          "title": "‘Sunrise on the Reaping’ Director Makes a Pitch for Next ‘Hunger Games’ Prequel: ‘Could Be Really Interesting’",
-          "publisher": "TheWrap",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTUTNzFO_KmD-TmAjWMDhxeeQyWaOhBcewJ4YRRyfmdnbxBlOekC4tbg3NdTA"
-        },
-        {
-          "url": "https://www.cinemablend.com/movies/sunrise-on-the-reapings-director-and-cast-reveal-which-prequel-they-want-to-see-next",
-          "title": "Sunrise On The Reaping’s Director And Cast Reveal Which Prequel They Want To See Next",
-          "publisher": "Cinemablend",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpavmUs6r9qHMuskqii0CB7CyeYrBhPPNoZzVgi80qkPAVutYB--eH2DpZHzU"
-        }
-      ]
-    },
-    {
-      "query": "andy richter",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T05:50:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/movies/articles/andy-richter-says-elf-may-210000358.html",
-        "https://parade.com/entertainment/in-1995-a-struggling-jewish-writer-penned-a-christmas-movie-no-one-wanted-to-make-31-years-later-its-a-comedy-classic",
-        "https://www.hollywoodreporter.com/movies/movie-features/elf-oral-history-will-ferrell-chris-farley-andy-richter-1236747109/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC0omoOWRuIojpkiViKqpx74cA89Cdb1coWUrlVtzBcP_NktPcLCp5F9cMKjI",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/andy-richter-says-elf-may-210000358.html",
-          "title": "Andy Richter Says “Elf” May Be a ‘Classic’ Now, but They Were ‘Rolling the Dice’ with ‘Risky’ Movie Over 20 Years Ago (Exclusive)",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC0omoOWRuIojpkiViKqpx74cA89Cdb1coWUrlVtzBcP_NktPcLCp5F9cMKjI"
-        },
-        {
-          "url": "https://parade.com/entertainment/in-1995-a-struggling-jewish-writer-penned-a-christmas-movie-no-one-wanted-to-make-31-years-later-its-a-comedy-classic",
-          "title": "In 1995, a struggling Jewish writer penned a Christmas movie no one wanted to make; 31 years later, it's a comedy classic",
-          "publisher": "Parade Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0cpqZU-wxU8JJu9EBwl0rzZwv4QZZkMa32T1tmf2iXlmMwGdKGLue5-abqQo"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/movies/movie-features/elf-oral-history-will-ferrell-chris-farley-andy-richter-1236747109/",
-          "title": "The Origins of ‘Elf’: How Will Ferrell Came to Replace Chris Farley in the Christmas Classic",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQL-EfLgCCiFQ48HYg6OX1Fz_J4rxP_mr5F2aaNQAvp6xt2XHZMeWHedwrTi1Y"
         }
       ]
     }
