@@ -3,41 +3,146 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T07:30:52.983571Z",
+  "checked_at": "2026-11-10T08:01:40.585740Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "jamie dornan",
+      "query": "sam darnold",
       "approx_searches": "500+",
-      "published_at": "2026-11-10T07:10:00Z",
+      "published_at": "2026-11-10T07:40:00Z",
       "related_news_urls": [
-        "https://www.imdb.com/news/ni66100325/?ref_=nmnw_art_perm",
-        "https://www.esquire.com/uk/culture/tv/a74375747/best-british-tv-shows-to-watch-9-november/",
-        "https://www.cosmopolitan.com/uk/entertainment/a74373993/matthew-rhys-jamie-dornan-death-and-nightingales/"
+        "https://www.espn.com/nfl/story/_/id/50434130/seahawks-start-drew-lock-vs-raiders-mike-macdonald-says",
+        "https://www.nfl.com/news/sam-darnold-ruled-out-for-seahawks-week-10-game-vs-raiders-drew-lock-expected-to-start-again",
+        "https://www.seahawks.com/news/seahawks-qb-drew-lock-cool-as-can-be-starting-in-place-of-an-injured-sam-darnold"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEZq8-xbWWAZa7wa4StyGocYjRmQY-XvRlniaeStmx6tNKi5wu_WfbLGleBIQ",
-      "image_credit": "IMDb",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_as8Eh5qREEf3u5sHYVP0yWhU5mU5GBb2zvnsevpht1s_OJT-vOivrAzktxY",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.imdb.com/news/ni66100325/?ref_=nmnw_art_perm",
-          "title": "Late Night with Seth Meyers: Julia Louis-Dreyfus, Jamie Dornan",
-          "publisher": "IMDb",
+          "url": "https://www.espn.com/nfl/story/_/id/50434130/seahawks-start-drew-lock-vs-raiders-mike-macdonald-says",
+          "title": "Seahawks to start QB Drew Lock vs. Raiders, giving Sam Darnold more time to heal",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEZq8-xbWWAZa7wa4StyGocYjRmQY-XvRlniaeStmx6tNKi5wu_WfbLGleBIQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_as8Eh5qREEf3u5sHYVP0yWhU5mU5GBb2zvnsevpht1s_OJT-vOivrAzktxY"
         },
         {
-          "url": "https://www.esquire.com/uk/culture/tv/a74375747/best-british-tv-shows-to-watch-9-november/",
-          "title": "\"Tune Into This Jamie Dornan Thriller\": The 7 Best British Shows to Watch This Week on BBC, Channel 4 & More",
-          "publisher": "Esquire",
+          "url": "https://www.nfl.com/news/sam-darnold-ruled-out-for-seahawks-week-10-game-vs-raiders-drew-lock-expected-to-start-again",
+          "title": "Sam Darnold ruled out for Seahawks' Week 10 game vs. Raiders; Drew Lock expected to start again",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3ydSWE01m1YB_HwfU3nQm_iZfPqi5nzXXgy9uhY0FyvWiLpJL52Q3B-NIhUE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTf1YB9zfkfP3vHwENUu_xcE6RnLzkJSmd3YBjgwL2xtu8bYzH-JH8k-nPzsH4"
         },
         {
-          "url": "https://www.cosmopolitan.com/uk/entertainment/a74373993/matthew-rhys-jamie-dornan-death-and-nightingales/",
-          "title": "'A heartbreaking hidden gem': This dark drama starring Matthew Rhys and Jamie Dornan deserves your attention",
-          "publisher": "Cosmopolitan",
+          "url": "https://www.seahawks.com/news/seahawks-qb-drew-lock-cool-as-can-be-starting-in-place-of-an-injured-sam-darnold",
+          "title": "Seahawks QB Drew Lock ‘Cool As Can Be’ Starting In Place Of An Injured Sam Darnold",
+          "publisher": "Seattle Seahawks",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTu1hXz6h8uYlAIVCoEMBiwXVls3LY0GfWpsqVCI8vu0L-QP7yG1SfNUjWAKw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5pbMELOmx1h2-xvIzcRA13syPrnHAxGcJx8-ym4iyIL5qwuYV5alok8EEcG8"
+        }
+      ]
+    },
+    {
+      "query": "lake powell",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T07:30:00Z",
+      "related_news_urls": [
+        "https://www.sfgate.com/news/article/reservoir-water-22522040.php",
+        "https://news3lv.com/news/local/lake-mead-rises-after-storms-but-winter-snowpack-will-be-key-to-more-relief-lake-powell-colorado-river-water-conservation-drought",
+        "https://kutv.com/news/local/lake-powells-rising-water-levels-buy-upper-basin-states-more-time"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo3GbZKr4EBmlBrMNbvq8BQHzQud1-79BbExNnSpWZEOrtKo4UNC3G-7b5jNw",
+      "image_credit": "SFGATE",
+      "news": [
+        {
+          "url": "https://www.sfgate.com/news/article/reservoir-water-22522040.php",
+          "title": "US reservoir at crisis level adds 20 feet of water after storms",
+          "publisher": "SFGATE",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo3GbZKr4EBmlBrMNbvq8BQHzQud1-79BbExNnSpWZEOrtKo4UNC3G-7b5jNw"
+        },
+        {
+          "url": "https://news3lv.com/news/local/lake-mead-rises-after-storms-but-winter-snowpack-will-be-key-to-more-relief-lake-powell-colorado-river-water-conservation-drought",
+          "title": "Lake Mead rises after storms, but winter snowpack will be key to more relief",
+          "publisher": "KSNV",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCaxhHjlyl06uAqfEPopbGSkDjtKiuzLLcRfpeFPHTC4Kv_VHMJD409PrUimY"
+        },
+        {
+          "url": "https://kutv.com/news/local/lake-powells-rising-water-levels-buy-upper-basin-states-more-time",
+          "title": "Lake Powell's rising water levels buy Upper Basin states more time",
+          "publisher": "KUTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQs9G90DARkW_rOQkbKyxqSbtvb3S8hjd2Unj_DI_fNEx1LqkUBm1N7J_CrYZo"
+        }
+      ]
+    },
+    {
+      "query": "amanda nunes",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T07:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/ufc-334-embedded-episode-1-001139360.html",
+        "https://athlonsports.com/mma/ufc-334-5-reasons-amanda-nunes-vs-kayla-harrison-is-womens-mmas-biggest-fight-of-2026",
+        "https://boxingnews.com/news/ufc-334-countdown-harrison-nunes-gane"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5DeLKTYUPu12szEwJx9U-Lg7ARVN-zcOrLa8jiQJGy30rIjSfgMIveBTd2pI",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/ufc-334-embedded-episode-1-001139360.html",
+          "title": "UFC 334 Embedded, Episode 1: 'We'll see who wants it'",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5DeLKTYUPu12szEwJx9U-Lg7ARVN-zcOrLa8jiQJGy30rIjSfgMIveBTd2pI"
+        },
+        {
+          "url": "https://athlonsports.com/mma/ufc-334-5-reasons-amanda-nunes-vs-kayla-harrison-is-womens-mmas-biggest-fight-of-2026",
+          "title": "UFC 334: 5 Reasons Amanda Nunes vs. Kayla Harrison Is Women's MMA's Biggest Fight of 2026",
+          "publisher": "Athlon Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIdaFgCHbMJfHiKacttf0sQys6kPCyv1mcDTzTopT6E9NRGuV6j38pYoHvUu8"
+        },
+        {
+          "url": "https://boxingnews.com/news/ufc-334-countdown-harrison-nunes-gane",
+          "title": "UFC Releases Countdown To UFC 334 Featuring Harrison-Nunes",
+          "publisher": "boxingnews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmbFxb8ja9J0q6EHHA6kkYDmfDfsgepkrcuMi_G0e-lJ4HlFO8FtUjJ2pr-7M"
+        }
+      ]
+    },
+    {
+      "query": "aldo de nigris",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T07:10:00Z",
+      "related_news_urls": [
+        "https://www.lavozarizona.com/story/entretenimiento/2026/11/09/donde-ver-la-mansion-vip-el-hotspanish-y-sus-participantes/92688972007/",
+        "https://www.elfinanciero.com.mx/entretenimiento/2026/11/08/la-mansion-vip-2-en-vivo-que-paso-en-el-estreno-del-reality-show/",
+        "https://www.tiempo.com.mx/espectaculos/la-mansion-vip-habitantes-hot-spanish-reality-show-youtube/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3y4qGni8rO4WzEhlkidKxI6HJ8Fsvvw5K9j4GSaYUDH01wWapXOWTQVDypVI",
+      "image_credit": "azcentral.com and The Arizona Republic",
+      "news": [
+        {
+          "url": "https://www.lavozarizona.com/story/entretenimiento/2026/11/09/donde-ver-la-mansion-vip-el-hotspanish-y-sus-participantes/92688972007/",
+          "title": "¿Dónde ver 'La Mansión VIP' y quiénes son sus participantes?Karely Ruiz lanza inesperada revelación",
+          "publisher": "azcentral.com and The Arizona Republic",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3y4qGni8rO4WzEhlkidKxI6HJ8Fsvvw5K9j4GSaYUDH01wWapXOWTQVDypVI"
+        },
+        {
+          "url": "https://www.elfinanciero.com.mx/entretenimiento/2026/11/08/la-mansion-vip-2-en-vivo-que-paso-en-el-estreno-del-reality-show/",
+          "title": "Estreno de ‘La Mansión VIP 2’: Así quedaron los cuartos en el arranque del reality show",
+          "publisher": "El Financiero",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8xhIilxLI-PlBz-3FfnXZ0l-3D2UbNN2OSO8613CTuLGXQQw0OeuvSEwfppc"
+        },
+        {
+          "url": "https://www.tiempo.com.mx/espectaculos/la-mansion-vip-habitantes-hot-spanish-reality-show-youtube/",
+          "title": "Ellos son los habitantes de La Mansión VIP",
+          "publisher": "Tiempo La Noticia Digital",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOWliVBdPYep3bR_u0T9J5sPFl1bdVLtPYnHuc7uMm9bfrgHmRCoIGF-olYP4"
         }
       ]
     },
@@ -73,41 +178,6 @@
           "publisher": "Collider",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTl9KGxnceqeDu36mMJl1fqZeS-mGa1YJRlg7PyIIk47Nw9h5p5CWkUAS_Kn0s"
-        }
-      ]
-    },
-    {
-      "query": "kayla harrison",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T07:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/ufc-334-embedded-episode-1-001139360.html",
-        "https://athlonsports.com/mma/ufc-334-5-reasons-amanda-nunes-vs-kayla-harrison-is-womens-mmas-biggest-fight-of-2026",
-        "https://boxingnews.com/news/ufc-334-countdown-harrison-nunes-gane"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5DeLKTYUPu12szEwJx9U-Lg7ARVN-zcOrLa8jiQJGy30rIjSfgMIveBTd2pI",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/ufc-334-embedded-episode-1-001139360.html",
-          "title": "UFC 334 Embedded, Episode 1: 'We'll see who wants it'",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5DeLKTYUPu12szEwJx9U-Lg7ARVN-zcOrLa8jiQJGy30rIjSfgMIveBTd2pI"
-        },
-        {
-          "url": "https://athlonsports.com/mma/ufc-334-5-reasons-amanda-nunes-vs-kayla-harrison-is-womens-mmas-biggest-fight-of-2026",
-          "title": "UFC 334: 5 Reasons Amanda Nunes vs. Kayla Harrison Is Women's MMA's Biggest Fight of 2026",
-          "publisher": "Athlon Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIdaFgCHbMJfHiKacttf0sQys6kPCyv1mcDTzTopT6E9NRGuV6j38pYoHvUu8"
-        },
-        {
-          "url": "https://boxingnews.com/news/ufc-334-countdown-harrison-nunes-gane",
-          "title": "UFC Releases Countdown To UFC 334 Featuring Harrison-Nunes",
-          "publisher": "boxingnews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmbFxb8ja9J0q6EHHA6kkYDmfDfsgepkrcuMi_G0e-lJ4HlFO8FtUjJ2pr-7M"
         }
       ]
     },
@@ -218,36 +288,36 @@
     },
     {
       "query": "adria arjona",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-10T06:30:00Z",
       "related_news_urls": [
-        "https://www.imdb.com/news/ni66098597/?ref_=nmnw_art_perm",
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/adria-arjona-toasts-her-women-160451581.html",
-        "https://www.justjared.com/2026/11/06/adria-arjona-gets-boyfriend-jason-momoas-support-while-being-named-face-of-the-future-at-women-in-film-party/"
+        "https://www.ign.com/videos/criminal-official-teaser-trailer",
+        "https://www.koin.com/news/portland/prime-video-unveils-teaser-for-portland-filmed-series-based-on-graphic-novels/",
+        "https://www.themoviebox.net/p/tv-trailers-of-the-week-criminal-bad-monkey-yellowjackets-percy-jackson-trinity-blue-eye-samurai"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjjfN9bHEylVl_ogMsw9VMsvCsDM3CCH5SD6WlXY713cwsoqY1w3VijjUhXv0",
-      "image_credit": "IMDb",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlbiZfIja0jQsg4vght6HD3ddxrBkrXC6DEbtzAJmt50kPkdCwRL9VQIdcoYk",
+      "image_credit": "IGN",
       "news": [
         {
-          "url": "https://www.imdb.com/news/ni66098597/?ref_=nmnw_art_perm",
-          "title": "Jason Momoa and Adria Arjona Turn Heads in Hollywood After Major Fashion Milestone",
-          "publisher": "IMDb",
+          "url": "https://www.ign.com/videos/criminal-official-teaser-trailer",
+          "title": "Criminal - Official Teaser Trailer",
+          "publisher": "IGN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjjfN9bHEylVl_ogMsw9VMsvCsDM3CCH5SD6WlXY713cwsoqY1w3VijjUhXv0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlbiZfIja0jQsg4vght6HD3ddxrBkrXC6DEbtzAJmt50kPkdCwRL9VQIdcoYk"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/adria-arjona-toasts-her-women-160451581.html",
-          "title": "Adria Arjona Toasts Her Women in Film Honor With Max Mara at the Chateau Marmont",
-          "publisher": "Yahoo",
+          "url": "https://www.koin.com/news/portland/prime-video-unveils-teaser-for-portland-filmed-series-based-on-graphic-novels/",
+          "title": "Prime Video unveils teaser for Portland-filmed series based on graphic novels",
+          "publisher": "KOIN.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPRg_mo4VEQQpqf1qAUqlMVpiQWxV26re_932GZ7C0y4v-BENPV6HYjlUo8hU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMjXq6SJChvLUIBQi8FLfhwGkbqOs9jBonlr-aWIwcYHGrESI6tUYVd-_YHc8"
         },
         {
-          "url": "https://www.justjared.com/2026/11/06/adria-arjona-gets-boyfriend-jason-momoas-support-while-being-named-face-of-the-future-at-women-in-film-party/",
-          "title": "Adria Arjona Gets Boyfriend Jason Momoa's Support While Being Named 'Face of the Future' at Women in Film Party",
-          "publisher": "Just Jared",
+          "url": "https://www.themoviebox.net/p/tv-trailers-of-the-week-criminal-bad-monkey-yellowjackets-percy-jackson-trinity-blue-eye-samurai",
+          "title": "TV Trailers of the Week: Criminal, Bad Monkey: S2, Yellowjackets: S4, Percy Jackson and the Olympians: S3, Trinity, Blue Eye Samurai: S2 and More",
+          "publisher": "TheMovieBox",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzdPJLsE1nmwFvbLseMKwC1VTaZQTLHBH0aGAu38_Rhnx4CH_ykSiag4NgTs4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6kS3PIPuh32LfP1ixYzYOZUDH_RjJF_aVRe9_AIKAsaKQBUYXOu03TldyrgI"
         }
       ]
     },
@@ -283,76 +353,6 @@
           "publisher": "Variety",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgMzwRGiixAqjOd5nCKnzV7gFd8HrtsHjDwoCCpXeHkfysJHqydH_Rvq-j6eE"
-        }
-      ]
-    },
-    {
-      "query": "new zealand vs india",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-10T06:20:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-odi-1539439/ball-by-ball-commentary",
-        "https://www.espn.com/cricket/series/24469/report/1539439/new-zealand-vs-india-3rd-odi-24469",
-        "https://sports.yahoo.com/articles/rohit-sharma-score-today-zealand-032415103.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThy7aDzvYziA0s8IF_o8yxkiXbCHDb4Hn_0s7u6NPQNwEYOhzzkOAAfgOpox8",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-3rd-odi-1539439/ball-by-ball-commentary",
-          "title": "Ball by Ball Commentary & Live Score - NZ vs IND, 3rd ODI",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThy7aDzvYziA0s8IF_o8yxkiXbCHDb4Hn_0s7u6NPQNwEYOhzzkOAAfgOpox8"
-        },
-        {
-          "url": "https://www.espn.com/cricket/series/24469/report/1539439/new-zealand-vs-india-3rd-odi-24469",
-          "title": "Recent Match Report - New Zealand vs India 3rd ODI 2026 | cricinfo.com",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEWapRM03h0E5hb-3NspdI1QySqIl2hMPgtZHGTLLfU9uBgGPH5UNpES-KZG8"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/rohit-sharma-score-today-zealand-032415103.html",
-          "title": "Rohit Sharma score today for New Zealand vs. India 3rd ODI in Hamilton",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5tde4AWvSfkcmW2aa67NuS2M3143OZQf6tzWkAg2_cMI0hy8m_IM9WAzjDJ0"
-        }
-      ]
-    },
-    {
-      "query": "henry cavill",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T06:20:00Z",
-      "related_news_urls": [
-        "https://blog.google/products-and-platforms/devices/googlebook/henry-cavill-mustache-protocol-video-game/",
-        "https://www.yahoo.com/entertainment/celebrity/articles/mustached-henry-cavill-returns-iconic-054614692.html",
-        "https://9to5google.com/2026/11/04/henry-cavill-mustache-protocol-googlebook/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBtvZ1IMNcBO1TlEVLvPsEuCiKSFl5lWQbVukdQv5zI1aoQAm2Yw_vKcwSaXs",
-      "image_credit": "blog.google",
-      "news": [
-        {
-          "url": "https://blog.google/products-and-platforms/devices/googlebook/henry-cavill-mustache-protocol-video-game/",
-          "title": "Watch Henry Cavill build a video game on his Googlebook",
-          "publisher": "blog.google",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBtvZ1IMNcBO1TlEVLvPsEuCiKSFl5lWQbVukdQv5zI1aoQAm2Yw_vKcwSaXs"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/mustached-henry-cavill-returns-iconic-054614692.html",
-          "title": "Mustached Henry Cavill Returns With His Iconic Arm Reload",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgQ8AH0SIws-ZTW6m3BM4Wk8qvqpclfGjznyESAxvXGoj0wFVNgAygtY_fIxU"
-        },
-        {
-          "url": "https://9to5google.com/2026/11/04/henry-cavill-mustache-protocol-googlebook/",
-          "title": "Henry Cavill builds 16-bit ‘Mustache Protocol’ game on Googlebook for a good cause [Video]",
-          "publisher": "9to5Google",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRxJsT5_zmNZlt2PZdaCvarEYM5im2p7gIqWLTMwWfOVwe-p6c6KOYd81fJhk"
         }
       ]
     }
