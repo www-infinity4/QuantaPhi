@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T11:01:43.141052Z",
+  "checked_at": "2026-11-10T11:31:32.845369Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ceedee lamb fourth quarter fumble",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T10:40:00Z",
+      "query": "nfl scores",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-10T11:10:00Z",
       "related_news_urls": [
-        "https://www.dallascowboys.com/news/ceedee-lamb-powers-cowboys-to-much-needed-win-vs-colts-but-expects-more",
-        "https://www.colts.com/video/highlights-ceedee-lamb-fumbles-kenneth-harris-recovers-vs-dallas-cowboys",
-        "https://www.foxnews.com/outkick-sports/dallas-cowboys-wide-receiver-ceedee-lamb-involved-wild-catch-and-run-fumble-sums-todays-action"
+        "https://www.espn.com/nfl/story/_/id/50381724/week-9-picks-predictions-schedule-fantasy-odds-2026",
+        "https://www.foxsports.com/stories/nfl/nfl-cfb-weekend-recap-bettors-were-praying-day-like-this",
+        "https://www.cbssports.com/betting/news/nfl-picks-ai-score-predictions-best-bets-correct-scores-every-week-9-2026-game/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRlJRZv0Z76WY47mksC0_stgEuCOKLPB6w-c3nKFYYsmuUS4lb7GNLI_zlhI4s",
-      "image_credit": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT224uoeAVXgVhxPh6IqToL9OsKRr9NRUhuztfbRDDaTjC57bSzh5bKxijS36w",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.dallascowboys.com/news/ceedee-lamb-powers-cowboys-to-much-needed-win-vs-colts-but-expects-more",
-          "title": "CeeDee Lamb powers Cowboys to much-needed win vs. Colts, but expects more",
-          "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+          "url": "https://www.espn.com/nfl/story/_/id/50381724/week-9-picks-predictions-schedule-fantasy-odds-2026",
+          "title": "NFL Week 9 preview: Picks, predictions, schedule, betting odds, fantasy tips",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRlJRZv0Z76WY47mksC0_stgEuCOKLPB6w-c3nKFYYsmuUS4lb7GNLI_zlhI4s"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT224uoeAVXgVhxPh6IqToL9OsKRr9NRUhuztfbRDDaTjC57bSzh5bKxijS36w"
         },
         {
-          "url": "https://www.colts.com/video/highlights-ceedee-lamb-fumbles-kenneth-harris-recovers-vs-dallas-cowboys",
-          "title": "HIGHLIGHTS | Can't-Miss Play: Stunning turn of events! CeeDee Lamb's long gain ends with chaotic fumble inside red zone recovered by CB Kenneth Harris",
-          "publisher": "Colts.com",
+          "url": "https://www.foxsports.com/stories/nfl/nfl-cfb-weekend-recap-bettors-were-praying-day-like-this",
+          "title": "NFL, CFB Weekend Recap: 'Bettors Were Praying For A Day Like This'",
+          "publisher": "FOX Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0uFbXIguR7AoAce4uixrpaAk5SSMnL1_Oqkqrf84ykNZMGsX-ASgPymjRdwQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfdqbPf7Gp4Kt7ADkQIgF_1CIL0K4NX_x3q5nf9zveKxI30FULrjHI5uU2cQs"
         },
         {
-          "url": "https://www.foxnews.com/outkick-sports/dallas-cowboys-wide-receiver-ceedee-lamb-involved-wild-catch-and-run-fumble-sums-todays-action",
-          "title": "Dallas Cowboys wide receiver CeeDee Lamb involved in wild catch-and-run fumble that sums up today's action",
-          "publisher": "Fox News",
+          "url": "https://www.cbssports.com/betting/news/nfl-picks-ai-score-predictions-best-bets-correct-scores-every-week-9-2026-game/",
+          "title": "Self-learning AI releases NFL picks, score predictions for every Week 9 game",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTshlsq1ZNEC-sHZvOnctVlg7msCO_BFSmZdIUdmQOXclRJc0ObdB4b6AsLejc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQOLpzPc_M6n_qpozHSvAqikNev501BUWrAAzM10d5JdPPU748n7gmH9dta8o"
         }
       ]
     },
     {
-      "query": "dancing with the stars grammy night",
+      "query": "keira knightley",
       "approx_searches": "100+",
-      "published_at": "2026-11-10T10:40:00Z",
+      "published_at": "2026-11-10T11:10:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/articles/dancing-stars-week-9-see-102303932.html",
-        "https://www.forbes.com/sites/monicamercuri/2026/11/09/dancing-with-the-stars-grammy-night-will-feature-iconic-songs-dance-offs-and-performances/",
-        "https://www.cinemablend.com/television/im-ready-see-maura-higgins-dance-thong-song-dwts-after-criticisms"
+        "https://deadline.com/2026/11/keira-knightley-fans-quoting-love-actually-1237218199/",
+        "https://variety.com/2026/film/news/keira-knightley-love-actually-fans-1236943826/",
+        "https://www.justjared.com/2026/11/09/keira-knightley-makes-surprising-love-actually-comments-23-years-after-its-release/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYJO9cqlu9D4r6HR-NI285VG-ma6UA39ciTH9ioJdiSvHzMLl-khZGdYSLq7Q",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQu8kEspYBz-L4GeogDy4quIW6jY7sbldnREGgADoRgirzoGb634cffTtaP0Ds",
+      "image_credit": "Deadline",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/dancing-stars-week-9-see-102303932.html",
-          "title": "'Dancing with the Stars' Week 9: See all the songs, dances for Grammy Night",
-          "publisher": "Yahoo",
+          "url": "https://deadline.com/2026/11/keira-knightley-fans-quoting-love-actually-1237218199/",
+          "title": "Keira Knightley On Fans Quoting ‘Love Actually’ To Her: “It Means Nothing To Me”",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYJO9cqlu9D4r6HR-NI285VG-ma6UA39ciTH9ioJdiSvHzMLl-khZGdYSLq7Q"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQu8kEspYBz-L4GeogDy4quIW6jY7sbldnREGgADoRgirzoGb634cffTtaP0Ds"
         },
         {
-          "url": "https://www.forbes.com/sites/monicamercuri/2026/11/09/dancing-with-the-stars-grammy-night-will-feature-iconic-songs-dance-offs-and-performances/",
-          "title": "‘Dancing With The Stars’ Grammy Night Will Feature Iconic Songs, Dance-Offs And Performances",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQj4O92dml0MJsGLb16ozKhIHj-NNmFhGqlf-MT5gMsxf3HESGtywuW4NzPjqI"
-        },
-        {
-          "url": "https://www.cinemablend.com/television/im-ready-see-maura-higgins-dance-thong-song-dwts-after-criticisms",
-          "title": "I'm Ready To See Maura Higgins ‘Shaking That Thing Like Who's The Ish’ On DWTS After Criticisms",
-          "publisher": "Cinemablend",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTU5pFcAtVsky2WQWS_-gzeqsDlDgj9yiZQdGpopLgtoqBKAZ_OiM9EIDa0rmM"
-        }
-      ]
-    },
-    {
-      "query": "ice",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T10:40:00Z",
-      "related_news_urls": [
-        "https://www.nbcsandiego.com/news/local/ice-takes-8-year-old-haitian-boy-into-custody-at-san-diego-check-in/4098472/",
-        "https://www.morninghoney.com/p/ice-detains-8-year-old-haitian-boy-with-uncle-after-dads-deportation-but-advocate-says-there-was-no-reason",
-        "https://www.nbcbayarea.com/news/local/sister-uc-berkeley-students-ice-sfo/4170595/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQC90_A-LOFVpF8LmikjuLgiBVKjSwoogQGCUd9qSYbBi22C-XDXod6ysrSVq0",
-      "image_credit": "NBC 7 San Diego",
-      "news": [
-        {
-          "url": "https://www.nbcsandiego.com/news/local/ice-takes-8-year-old-haitian-boy-into-custody-at-san-diego-check-in/4098472/",
-          "title": "ICE takes 8-year-old Haitian boy into custody at San Diego check-in",
-          "publisher": "NBC 7 San Diego",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQC90_A-LOFVpF8LmikjuLgiBVKjSwoogQGCUd9qSYbBi22C-XDXod6ysrSVq0"
-        },
-        {
-          "url": "https://www.morninghoney.com/p/ice-detains-8-year-old-haitian-boy-with-uncle-after-dads-deportation-but-advocate-says-there-was-no-reason",
-          "title": "San Diego Third Grader Placed in Federal ICE Custody",
-          "publisher": "Morning Honey",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-9tjAV3d_JuKpx-mE-rDoLJRS_w8F2MzqgLICcx7D4cyKnr9EOsKuJyNgXEI"
-        },
-        {
-          "url": "https://www.nbcbayarea.com/news/local/sister-uc-berkeley-students-ice-sfo/4170595/",
-          "title": "‘I'm devastated': Sister of UC Berkeley student detained by ICE at SFO speaks out",
-          "publisher": "NBC Bay Area",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW9ouN7yp-_i0mMbe2tHWB3kX71yAvNZgPGoOG51AUIdRl18AB3FvzGnQGVKY"
-        }
-      ]
-    },
-    {
-      "query": "tyler kolek",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T10:40:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/outkick-sports/knicks-guard-walks-back-comment-taylor-swift-fake-fan-swifties-wife-attack",
-        "https://www.nytimes.com/athletic/7762791/2026/11/08/taylor-swift-knicks-fandom-tyler-kolek-apology/",
-        "https://www.nbcnews.com/pop-culture/pop-culture-news/taylor-swift-fakest-celeb-knicks-fan-players-say-team-rushes-defense-rcna607909"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFy8qVYQSHkMrPL2Jo2Uuh536Sc9iHq8NzWgrMIj0D4K7oQA7ZZdJvk7hLIAw",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/outkick-sports/knicks-guard-walks-back-comment-taylor-swift-fake-fan-swifties-wife-attack",
-          "title": "Knicks guard walks back comment about Taylor Swift being fake fan after Swifties, including his wife, attack",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFy8qVYQSHkMrPL2Jo2Uuh536Sc9iHq8NzWgrMIj0D4K7oQA7ZZdJvk7hLIAw"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7762791/2026/11/08/taylor-swift-knicks-fandom-tyler-kolek-apology/",
-          "title": "After calling Taylor Swift a ‘performative’ Knicks fan, Tyler Kolek says he ‘misspoke’ - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5A6OJyGDU3DZl4YgtheE9zzYMGanAfQ-gTNDjTdStjVhd96C1smNjWXceOXM"
-        },
-        {
-          "url": "https://www.nbcnews.com/pop-culture/pop-culture-news/taylor-swift-fakest-celeb-knicks-fan-players-say-team-rushes-defense-rcna607909",
-          "title": "Taylor Swift is the ‘fakest’ celeb Knicks fan, players say; team rushes to her defense",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRULsshbb6FgM73xwu-26d6itw8urIA0m2gW0_Fc0JCk6hBSgM5SwoZ1TKhX1M"
-        }
-      ]
-    },
-    {
-      "query": "cardi b",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T10:30:00Z",
-      "related_news_urls": [
-        "https://pitchfork.com/story/gta-vi-is-putting-on-a-music-festival/",
-        "https://hypebeast.com/2026/11/rockstar-games-playstation-announce-grand-theft-auto-vi-festival-miami-cactus-jack-travis-scott-don-toliver-cardi-b-justice",
-        "https://www.billboard.com/music/rb-hip-hop/gta-6-festival-lineup-cardi-b-travis-scott-1236378019/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTekEg6cYz-O-MALdUmw1eDlb6sTzUTAOvnf_EUJI0h6ENGKc-p1zMB9jCU9eM",
-      "image_credit": "Pitchfork",
-      "news": [
-        {
-          "url": "https://pitchfork.com/story/gta-vi-is-putting-on-a-music-festival/",
-          "title": "GTA VI Is Putting on a Music Festival",
-          "publisher": "Pitchfork",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTekEg6cYz-O-MALdUmw1eDlb6sTzUTAOvnf_EUJI0h6ENGKc-p1zMB9jCU9eM"
-        },
-        {
-          "url": "https://hypebeast.com/2026/11/rockstar-games-playstation-announce-grand-theft-auto-vi-festival-miami-cactus-jack-travis-scott-don-toliver-cardi-b-justice",
-          "title": "Rockstar Games and PlayStation Announce 'Grand Theft Auto VI: The Festival' in Miami",
-          "publisher": "Hypebeast",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJUR9asD0OcX_ob1ATWjzC2UiF7G6c_aAAiT0TzJS57nrOQ9UB2Dvh02OyV8E"
-        },
-        {
-          "url": "https://www.billboard.com/music/rb-hip-hop/gta-6-festival-lineup-cardi-b-travis-scott-1236378019/",
-          "title": "Cardi B, Travis Scott, Don Toliver & More to Perform at ‘Grand Theft Auto VI’ Festival",
-          "publisher": "Billboard",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgPMDvobkJmjfBmu8-FNbWTVrG72oeg7-7Tz3c34UymaOegBSgKvesrUmrxpc"
-        }
-      ]
-    },
-    {
-      "query": "mac jones trade deadline rumors",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T10:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/nfl-trade-deadline-49ers-insane-053520589.html",
-        "https://ninerswire.usatoday.com/story/sports/nfl/niners/2026/11/03/ravens-could-be-targeting-former-49ers-backup-qb/92587071007/",
-        "https://nfltraderumors.co/49ers-would-have-to-be-really-motivated-to-trade-qb-mac-jones/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKPghjWtXyU6_BwiYGH2fPjFM2MrKzPbwJzI7FqY40uXgP8DyrVlge8uDjEVU",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/nfl-trade-deadline-49ers-insane-053520589.html",
-          "title": "NFL trade deadline: 49ers would be insane to make deal with Vikings",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKPghjWtXyU6_BwiYGH2fPjFM2MrKzPbwJzI7FqY40uXgP8DyrVlge8uDjEVU"
-        },
-        {
-          "url": "https://ninerswire.usatoday.com/story/sports/nfl/niners/2026/11/03/ravens-could-be-targeting-former-49ers-backup-qb/92587071007/",
-          "title": "Ravens could be targeting former 49ers backup QB",
-          "publisher": "Niners Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9lxxjzDniOfyOExFL-zKf6baugaCeyjr9iwxb00HmRGNdywgkyVjxAJo__g0"
-        },
-        {
-          "url": "https://nfltraderumors.co/49ers-would-have-to-be-really-motivated-to-trade-qb-mac-jones/",
-          "title": "49ers Would ‘Have To Be Really Motivated’ To Trade QB Mac Jones",
-          "publisher": "NFLTradeRumors.co",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPyZxVuNgncDClenrNFzX-E7UFBRKMHEFWM0HvVX9ssqq5X1-wwHgNB3zDfRw"
-        }
-      ]
-    },
-    {
-      "query": "spectrum outage",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T10:20:00Z",
-      "related_news_urls": [
-        "https://mymotherlode.com/news/local/11289816/major-internet-outage-sparked-by-alleged-thieves.html",
-        "https://www.ledger.news/news/at-t-internet-service-outage-leads-to-multiple-arrests/article_627c8a58-d74e-4581-a823-d66867cc1f09.html",
-        "https://www.crimevoice.com/2026/11/05/infrastructure-vandalism-cut-internet-across-amador-and-san-joaquin-counties-suspects-in-custody/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKGm9EcF2-JFdd-V_oVYTPPb1BttCZgB2N-riG9lXL3X7WgmG-8OXyEPm8Rhk",
-      "image_credit": "myMotherLode.com",
-      "news": [
-        {
-          "url": "https://mymotherlode.com/news/local/11289816/major-internet-outage-sparked-by-alleged-thieves.html",
-          "title": "Major Internet Outage Sparked By Alleged Thieves",
-          "publisher": "myMotherLode.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKGm9EcF2-JFdd-V_oVYTPPb1BttCZgB2N-riG9lXL3X7WgmG-8OXyEPm8Rhk"
-        },
-        {
-          "url": "https://www.ledger.news/news/at-t-internet-service-outage-leads-to-multiple-arrests/article_627c8a58-d74e-4581-a823-d66867cc1f09.html",
-          "title": "AT&T internet service outage leads to multiple arrests",
-          "publisher": "Ledger Dispatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMBzn97vMmkNPanM5AKmbS6jIkrG7UXfZ0J6u5MFp7R_JHAnUKvG1v4sQvJpU"
-        },
-        {
-          "url": "https://www.crimevoice.com/2026/11/05/infrastructure-vandalism-cut-internet-across-amador-and-san-joaquin-counties-suspects-in-custody/",
-          "title": "Infrastructure Vandalism Cut Internet Across Amador and San Joaquin Counties, Suspects In Custody",
-          "publisher": "Crime Voice",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxZomRaztLL7_vzr_M2GOGKoqGHytuWSlwRhHoWFn-QTRPCpe_UhuAnePl60Y"
-        }
-      ]
-    },
-    {
-      "query": "mike evans",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T10:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7768819/2026/11/09/49ers-deebo-samuel-mike-evans-injuries/",
-        "https://www.49ers.com/news/49ers-rule-out-three-wide-receivers-vs-raiders-bosa-returns-to-full-practice-ahead-of-week-9-lvvssf",
-        "https://nypost.com/2026/11/09/sports/49ers-star-receivers-mike-evans-and-deebo-samuel-head-in-opposite-injury-directions/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK440-wJoSeiis2FByBqDMj4Q3g6wyPc6StoU1MdvMt3ebtaloT68dlN2cS6Y",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7768819/2026/11/09/49ers-deebo-samuel-mike-evans-injuries/",
-          "title": "49ers minutia minute: Deebo Samuel, CJ West expected back; Mike Evans still on hold",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK440-wJoSeiis2FByBqDMj4Q3g6wyPc6StoU1MdvMt3ebtaloT68dlN2cS6Y"
-        },
-        {
-          "url": "https://www.49ers.com/news/49ers-rule-out-three-wide-receivers-vs-raiders-bosa-returns-to-full-practice-ahead-of-week-9-lvvssf",
-          "title": "49ers Rule Out Three Wide Receivers vs. Raiders; Bosa Returns to Full Practice Ahead of Week 9 #LVvsSF",
-          "publisher": "San Francisco 49ers",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsN9PqYFzM-GlL4C7HWTRbhrGGXkkfFga9OihOTjzo2gIWXIsS2vixlmLwg9A"
-        },
-        {
-          "url": "https://nypost.com/2026/11/09/sports/49ers-star-receivers-mike-evans-and-deebo-samuel-head-in-opposite-injury-directions/",
-          "title": "49ers star receivers Mike Evans and Deebo Samuel head in opposite injury directions",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkS17UFc49jK3m1HOdsgt650Jas9o1MFvqCWrzb3YSoBbW0Z-edrg9oEpLkKE"
-        }
-      ]
-    },
-    {
-      "query": "movie times",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T10:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/10/movies/movie-theaters-gen-z.html",
-        "https://blogs.timesofisrael.com/memphis-movie-a-jewish-literary-discovery/",
-        "https://variety.com/2026/tv/news/jet-lag-the-game-season-20-premiere-theater-tickets-sale-1236940302/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEx6asG1IDW8-uNEetEhdB7J71M2snt3Lbf9-WH9s8ob3pUeVLvUwG0kqNFcQ",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/10/movies/movie-theaters-gen-z.html",
-          "title": "The Rise of the Gen Z Cinephile",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEx6asG1IDW8-uNEetEhdB7J71M2snt3Lbf9-WH9s8ob3pUeVLvUwG0kqNFcQ"
-        },
-        {
-          "url": "https://blogs.timesofisrael.com/memphis-movie-a-jewish-literary-discovery/",
-          "title": "The Blogs: Memphis Movie-A Jewish Literary Discovery",
-          "publisher": "The Times of Israel",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQl1OyhWl6APEdb4GhXtsZXh2I07ubD-XPQXsqsK_zxfYl4vpahmGhytzNkmA8"
-        },
-        {
-          "url": "https://variety.com/2026/tv/news/jet-lag-the-game-season-20-premiere-theater-tickets-sale-1236940302/",
-          "title": "‘Jet Lag: The Game’ Heads to Movie Theaters Across US, UK and Canada for Season 20 ‘Hide and Seek: Italy’ Premiere (EXCLUSIVE)",
+          "url": "https://variety.com/2026/film/news/keira-knightley-love-actually-fans-1236943826/",
+          "title": "Keira Knightley Says 'It Means Nothing' to Her When Fans Quote 'Love Actually'",
           "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcowfCBKaa6XGNfbWywcFbsTArjur60uCvHxtzCFkk9Us2KKqESQo71F7kYvE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAwiEMU1gCfV9BbcMB_Fo7c8JiRbzjz_mCndvrv4QkA7gFeWUPOgi1vn8KqRs"
+        },
+        {
+          "url": "https://www.justjared.com/2026/11/09/keira-knightley-makes-surprising-love-actually-comments-23-years-after-its-release/",
+          "title": "Keira Knightley Makes Surprising ‘Love Actually’ Comments, 23 Years After Its Release",
+          "publisher": "Just Jared",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTt_VrmSOeCYcc5T7bVG82N5A3MiUhpdWVPb_iZQQYx6YFxgREwYmQi5bM4McY"
         }
       ]
     },
     {
-      "query": "caitlin clark",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T10:00:00Z",
+      "query": "joel embiid 76ers offense congested",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T11:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/sophie-cunningham-kelsey-mitchell-others-011151565.html",
-        "https://pennathletics.com/news/2026/11/8/mens-basketball-health-update.aspx",
-        "https://www.12onyourside.com/2026/11/08/uofr-basketball-player-diagnosed-with-cancer/"
+        "https://thesixersense.com/joel-embiid-blunt-assessment-76ers-sounds-like-cry-for-help",
+        "https://www.phillyvoice.com/sixers-news-76ers-analysis-joel-embiid-shooting-stats-tyrese-maxey-nick-nurse-nba-rumors-cle/",
+        "https://deadspin.com/joel-embiids-decline-could-become-a-major-problem-for-the-76ers/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkhvzrJPfioix-vMmPJnDDt4wuaaYp-Os3Sh0EHboDxKQ9qgQqZPq0WZFdHCk",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTet3L-Dysd0xANMwyErezByUP2S3u_eSpA7EFmKqnVHsk7NdZmjBBNbSE5zhQ",
+      "image_credit": "The Sixer Sense",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/sophie-cunningham-kelsey-mitchell-others-011151565.html",
-          "title": "Sophie Cunningham, Kelsey Mitchell & Others React After Caitlin Clark’s Boyfriend Connor McCaffery Shares Heartbreaking Family Update",
-          "publisher": "Yahoo Sports",
+          "url": "https://thesixersense.com/joel-embiid-blunt-assessment-76ers-sounds-like-cry-for-help",
+          "title": "Joel Embiid's blunt assessment of the 76ers sounds like a cry for help",
+          "publisher": "The Sixer Sense",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkhvzrJPfioix-vMmPJnDDt4wuaaYp-Os3Sh0EHboDxKQ9qgQqZPq0WZFdHCk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTet3L-Dysd0xANMwyErezByUP2S3u_eSpA7EFmKqnVHsk7NdZmjBBNbSE5zhQ"
         },
         {
-          "url": "https://pennathletics.com/news/2026/11/8/mens-basketball-health-update.aspx",
-          "title": "Statement from Coach McCaffery on the Health of Jack McCaffery",
-          "publisher": "University of Pennsylvania Athletics",
+          "url": "https://www.phillyvoice.com/sixers-news-76ers-analysis-joel-embiid-shooting-stats-tyrese-maxey-nick-nurse-nba-rumors-cle/",
+          "title": "Sixers vow to 'pour confidence' into struggling Joel Embiid after 0-for-9 line",
+          "publisher": "PhillyVoice",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQh6VwqWGUL0Kg7W4_9STI_OzdwOdTzMIKXexfNNh2wDr2VCnSvBqczhcuUecs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGIu-X21ruOjfSmiKFxghYT1p7S-KfklN3diIeqlERARyk_F29BkgJEhBnbIo"
         },
         {
-          "url": "https://www.12onyourside.com/2026/11/08/uofr-basketball-player-diagnosed-with-cancer/",
-          "title": "UofR basketball player diagnosed with cancer",
-          "publisher": "WWBT",
+          "url": "https://deadspin.com/joel-embiids-decline-could-become-a-major-problem-for-the-76ers/",
+          "title": "Joel Embiid’s Decline Could Become a Major Problem for the 76ers",
+          "publisher": "Deadspin",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQA0h5egb0s8-_rwn4tP_5mWntvW2Vr5KAHWfmRgVL-nGbN1EudqfVlkmlNto4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSD8xZ7OkV8wS8ICnJFxPigpu-BYEXzS493iYxd4pYCec1bkFxI_keiPNcFe8"
+        }
+      ]
+    },
+    {
+      "query": "bryson dechambeau",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T11:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/golf/story/_/id/50423626/bryson-dechambeau-says-no-regrets-liv-golf-move",
+        "https://www.golfchannel.com/pga-tour/news/the-road-for-liv-golf-players-to-return-remains-under-construction",
+        "https://www.golfdigest.com/story/bryson-dechambeau-pga-tour-liv-golf-dpwt-2026"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRk-VZCdDc310_DHszXVjQ2sHa5gSt8weIuQFTNB8fif_WV4CRIUbeFr5LwOY",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/golf/story/_/id/50423626/bryson-dechambeau-says-no-regrets-liv-golf-move",
+          "title": "Bryson DeChambeau: No regrets about LIV Golf move, passion remains growing game",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRk-VZCdDc310_DHszXVjQ2sHa5gSt8weIuQFTNB8fif_WV4CRIUbeFr5LwOY"
+        },
+        {
+          "url": "https://www.golfchannel.com/pga-tour/news/the-road-for-liv-golf-players-to-return-remains-under-construction",
+          "title": "The road for LIV Golf players to return remains under construction",
+          "publisher": "Golf Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR47JScgAzPuwBxHw1z2U4EWettxWqpBgXD5veu_wryFXG4AGm5GXkMEmMhSuk"
+        },
+        {
+          "url": "https://www.golfdigest.com/story/bryson-dechambeau-pga-tour-liv-golf-dpwt-2026",
+          "title": "What the PGA Tour does with Bryson DeChambeau will show what it learned from its war with LIV Golf",
+          "publisher": "Golf Digest",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTaQvGILcJ5ealkWSbKfG5GJiUAYc5V-logpwiS9xMb1paSDbQB3uSB8I2JXVY"
+        }
+      ]
+    },
+    {
+      "query": "charlotte weather",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T11:10:00Z",
+      "related_news_urls": [
+        "https://www.charlotteobserver.com/news/weather-news/article317991321.html",
+        "https://www.wyff4.com/article/cold-front-upstate-frost-mountain-snow/74369043",
+        "https://www.wbtv.com/2026/11/08/first-alert-warmer-start-week-before-showers-big-cold-snap-next-weekend/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR654DnNDWjhcd5dTyjRSJLOkxDyVq68kFO4uaAv0Ipvl5RjeAQDCXJlmu6pUo",
+      "image_credit": "Charlotte Observer",
+      "news": [
+        {
+          "url": "https://www.charlotteobserver.com/news/weather-news/article317991321.html",
+          "title": "Big drop in temperatures headed to Charlotte. Here’s when to prepare for freeze",
+          "publisher": "Charlotte Observer",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR654DnNDWjhcd5dTyjRSJLOkxDyVq68kFO4uaAv0Ipvl5RjeAQDCXJlmu6pUo"
+        },
+        {
+          "url": "https://www.wyff4.com/article/cold-front-upstate-frost-mountain-snow/74369043",
+          "title": "Cold snap could bring frost, freeze and mountain snow next weekend",
+          "publisher": "WYFF",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVl-2xbk2h5XIjwewj9xWafkxcgmYYaIdY6clT7GTcwodMHqPx-2fD_-SN7po"
+        },
+        {
+          "url": "https://www.wbtv.com/2026/11/08/first-alert-warmer-start-week-before-showers-big-cold-snap-next-weekend/",
+          "title": "Tracking a warming trend in the Carolinas before a big cold snap next weekend",
+          "publisher": "WBTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHKCDLqeExwWS44NgSXxBKWsO4gU_QvEudHbF9-wv0tsFYiO-5K8_5PDaV1KI"
+        }
+      ]
+    },
+    {
+      "query": "weather philadelphia",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T11:10:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/philadelphia/video/sunny-tuesday-in-philadelphia-region-tracking-storms/",
+        "https://www.fox43.com/video/weather/forecast/milder-with-more-sun-and-easing-winds-through-veterans-day/521-cdbcb34c-fb09-49a8-95f2-03ee1d22ae35",
+        "https://www.nbcphiladelphia.com/weather/stories-weather/bright-breezy-tuesday-2/4494407/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM6OuJNp9NuxS3h6EeXa_UODUyQzPu-LIpz_rke6x05NkPOCSnIQeEFwwMHb8",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/philadelphia/video/sunny-tuesday-in-philadelphia-region-tracking-storms/",
+          "title": "Sunny Tuesday in Philadelphia region, tracking storms",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM6OuJNp9NuxS3h6EeXa_UODUyQzPu-LIpz_rke6x05NkPOCSnIQeEFwwMHb8"
+        },
+        {
+          "url": "https://www.fox43.com/video/weather/forecast/milder-with-more-sun-and-easing-winds-through-veterans-day/521-cdbcb34c-fb09-49a8-95f2-03ee1d22ae35",
+          "title": "Milder with more sun and easing winds through Veterans Day",
+          "publisher": "FOX43",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfEV_j3bZGo6ilkGWkqAV_5Es54ZKH_HU4TM3X33PqhLxGBzRuegQyWGoSdt4"
+        },
+        {
+          "url": "https://www.nbcphiladelphia.com/weather/stories-weather/bright-breezy-tuesday-2/4494407/",
+          "title": "Bright and breezy Tuesday for Philadelphia region",
+          "publisher": "NBC10 Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtgzvQuGxw8dQzSyA5h-OjEY_QzlUvJyQJwTBuHVdodpKQFGvIFzpDKKoO83A"
+        }
+      ]
+    },
+    {
+      "query": "weather houston",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T11:10:00Z",
+      "related_news_urls": [
+        "https://www.chron.com/weather/article/cold-front-lows-30s-texas-houston-22519827.php",
+        "https://spacecityweather.com/houston-may-see-some-not-so-cold-november-rain-also-our-annual-fundraiser-kicks-off-today/",
+        "https://www.click2houston.com/news/local/2026/11/08/live-radar-showers-and-moderate-rain-moving-into-southeast-texas/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfpGnsPBANQSh7comNLC_aZeddiVdkHyPPNyAOcEOHFfmnOT4Tcw44fxIwni4",
+      "image_credit": "Chron",
+      "news": [
+        {
+          "url": "https://www.chron.com/weather/article/cold-front-lows-30s-texas-houston-22519827.php",
+          "title": "Cold front could bring Houston area lows near freezing territory",
+          "publisher": "Chron",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfpGnsPBANQSh7comNLC_aZeddiVdkHyPPNyAOcEOHFfmnOT4Tcw44fxIwni4"
+        },
+        {
+          "url": "https://spacecityweather.com/houston-may-see-some-not-so-cold-november-rain-also-our-annual-fundraiser-kicks-off-today/",
+          "title": "Houston may see some not-so-cold November rain, also our annual fundraiser kicks off today",
+          "publisher": "Space City Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Bal_03eIhWe9O3rloK0be7P2uOpha77ic8_zNKnCCrij783epCi_ImnL8gw"
+        },
+        {
+          "url": "https://www.click2houston.com/news/local/2026/11/08/live-radar-showers-and-moderate-rain-moving-into-southeast-texas/",
+          "title": "LIVE RADAR: Showers and moderate rain moving into Southeast Texas",
+          "publisher": "Click2Houston",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGuEdiog4uGcO1RSsHzp-wy-oh5DSa8apP4nVvFO4iKv70d0JYwjp4gDdWBYI"
+        }
+      ]
+    },
+    {
+      "query": "medicaid",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T11:10:00Z",
+      "related_news_urls": [
+        "https://www.texastribune.org/2026/11/09/texas-medicaid-expansion-gina-hinojosa/",
+        "https://www.jsonline.com/story/news/politics/2026/11/09/medicaid-expansion-in-doubt-even-with-wisconsin-democrats-in-control/92628521007/",
+        "https://www.statnews.com/2026/11/10/medicaid-expansion-holdout-states-midterm-election-power-shift/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvJFOFkNcxOAiPDtEw0gMevu_e_X1mtj6c7lORAEKuqiHnrep26XzJABNW_3I",
+      "image_credit": "The Texas Tribune",
+      "news": [
+        {
+          "url": "https://www.texastribune.org/2026/11/09/texas-medicaid-expansion-gina-hinojosa/",
+          "title": "Gov.-elect Hinojosa wants to expand Medicaid in Texas. An executive order won’t make that happen.",
+          "publisher": "The Texas Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvJFOFkNcxOAiPDtEw0gMevu_e_X1mtj6c7lORAEKuqiHnrep26XzJABNW_3I"
+        },
+        {
+          "url": "https://www.jsonline.com/story/news/politics/2026/11/09/medicaid-expansion-in-doubt-even-with-wisconsin-democrats-in-control/92628521007/",
+          "title": "Medicaid expansion in doubt even with Wisconsin Democrats in control",
+          "publisher": "Milwaukee Journal Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLHbd_i25F0Ye6uTw0a0MhN9DTYlGlxmYvV8fuLSNe5kBBRQRmFGcgVHKvIiw"
+        },
+        {
+          "url": "https://www.statnews.com/2026/11/10/medicaid-expansion-holdout-states-midterm-election-power-shift/",
+          "title": "State Democratic wins make Medicaid expansion a possibility for more than a million people",
+          "publisher": "STAT",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR71hfeyv08FFn56IW9N648i4b5QmUEIvG-SR8uRUCR3VhlhgiGpotOoKKgCkw"
+        }
+      ]
+    },
+    {
+      "query": "noaa weather",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T11:10:00Z",
+      "related_news_urls": [
+        "https://www.kxan.com/weather/weather-blog/noaa-launches-new-weather-model-retires-several-others/",
+        "https://www.noaa.gov/news-release/noaa-weather-modeling-hits-key-milestone-with-rapid-refresh-forecast-system-debut",
+        "https://www.wkbn.com/weather/noaa-upgrades-forecasting-with-new-weather-model/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaPkpPiJF9-ySACL0aDi6beW1oELf24ItQ07CmeYhFmcagRa6AkeHuQG1N7y8",
+      "image_credit": "KXAN Austin",
+      "news": [
+        {
+          "url": "https://www.kxan.com/weather/weather-blog/noaa-launches-new-weather-model-retires-several-others/",
+          "title": "NOAA launches new weather model, retires several others",
+          "publisher": "KXAN Austin",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaPkpPiJF9-ySACL0aDi6beW1oELf24ItQ07CmeYhFmcagRa6AkeHuQG1N7y8"
+        },
+        {
+          "url": "https://www.noaa.gov/news-release/noaa-weather-modeling-hits-key-milestone-with-rapid-refresh-forecast-system-debut",
+          "title": "NOAA weather modeling hits key milestone with Rapid Refresh Forecast System debut",
+          "publisher": "NOAA (.gov)",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYTfmi4O5PhoP6DxllFFc8yh3a1iZH1QZQf6Wj-qNSA-LKUiQJDFJ96A-RE-8"
+        },
+        {
+          "url": "https://www.wkbn.com/weather/noaa-upgrades-forecasting-with-new-weather-model/",
+          "title": "NOAA Upgrades Forecasting With New Weather Model",
+          "publisher": "WKBN.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSI7hu_ijGCmDURf0bG4GeJy9EtOYu-vupIBgeOu6_FGB6v_wAVLqVKmG3Dy7E"
+        }
+      ]
+    },
+    {
+      "query": "when is veterans day 2026",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T11:00:00Z",
+      "related_news_urls": [
+        "https://www.legion.org/information-center/news/veterans-day/2026/november/veterans-day-deals-and-discounts",
+        "https://www.wavy.com/living-local/2026-hampton-roads-veterans-day-deals-and-events/",
+        "https://www.texomashomepage.com/news/local-news/restaurants-with-deals-for-veterans-day/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ2OvG2N0LQy7D2gZ7EpCM3_Wq8IfhWXhr3vdlL6ypIYNqGaYi4C7Q7qTUSlF8",
+      "image_credit": "The American Legion",
+      "news": [
+        {
+          "url": "https://www.legion.org/information-center/news/veterans-day/2026/november/veterans-day-deals-and-discounts",
+          "title": "Veterans Day 2026 Free Meals, Freebies and Deals",
+          "publisher": "The American Legion",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ2OvG2N0LQy7D2gZ7EpCM3_Wq8IfhWXhr3vdlL6ypIYNqGaYi4C7Q7qTUSlF8"
+        },
+        {
+          "url": "https://www.wavy.com/living-local/2026-hampton-roads-veterans-day-deals-and-events/",
+          "title": "2026 Hampton Roads Veterans Day deals and events",
+          "publisher": "WAVY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkpXJUuD7nmgkWKG3fsM6CYshsYGKHvdjMSnafBF9uLMeRNAm9onOQYRWFb9U"
+        },
+        {
+          "url": "https://www.texomashomepage.com/news/local-news/restaurants-with-deals-for-veterans-day/",
+          "title": "Restaurants with deals for Veterans Day",
+          "publisher": "Texomashomepage.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTL1cxzMRstzMGyicJ1odSCfTmVfnmoHIaJmeyo4mdEOO4MI1QT9vu2zB_pP6A"
         }
       ]
     }
