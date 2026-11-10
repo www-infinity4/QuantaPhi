@@ -3,9 +3,79 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T06:34:50.669825Z",
+  "checked_at": "2026-11-10T07:01:37.097108Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "adria arjona",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T06:30:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66098597/?ref_=nmnw_art_perm",
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/adria-arjona-toasts-her-women-160451581.html",
+        "https://www.justjared.com/2026/11/06/adria-arjona-gets-boyfriend-jason-momoas-support-while-being-named-face-of-the-future-at-women-in-film-party/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjjfN9bHEylVl_ogMsw9VMsvCsDM3CCH5SD6WlXY713cwsoqY1w3VijjUhXv0",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66098597/?ref_=nmnw_art_perm",
+          "title": "Jason Momoa and Adria Arjona Turn Heads in Hollywood After Major Fashion Milestone",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjjfN9bHEylVl_ogMsw9VMsvCsDM3CCH5SD6WlXY713cwsoqY1w3VijjUhXv0"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/adria-arjona-toasts-her-women-160451581.html",
+          "title": "Adria Arjona Toasts Her Women in Film Honor With Max Mara at the Chateau Marmont",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPRg_mo4VEQQpqf1qAUqlMVpiQWxV26re_932GZ7C0y4v-BENPV6HYjlUo8hU"
+        },
+        {
+          "url": "https://www.justjared.com/2026/11/06/adria-arjona-gets-boyfriend-jason-momoas-support-while-being-named-face-of-the-future-at-women-in-film-party/",
+          "title": "Adria Arjona Gets Boyfriend Jason Momoa's Support While Being Named 'Face of the Future' at Women in Film Party",
+          "publisher": "Just Jared",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzdPJLsE1nmwFvbLseMKwC1VTaZQTLHBH0aGAu38_Rhnx4CH_ykSiag4NgTs4"
+        }
+      ]
+    },
+    {
+      "query": "olivia cooke",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T06:30:00Z",
+      "related_news_urls": [
+        "https://www.gq-magazine.co.uk/article/olivia-cook-interview-house-of-the-dragon-slow-horses-9-11-26",
+        "https://www.hollywoodreporter.com/tv/tv-news/olivia-cooke-house-of-the-dragon-fandom-social-media-break-1236751448/",
+        "https://variety.com/2026/tv/news/olivia-cooke-house-of-the-dragon-fandom-1236943620/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIuH6zI2huTq-4EZDhWacp_fRjJZdoMuy3peFUffTR2XU0C12magovi-2piqs",
+      "image_credit": "British GQ",
+      "news": [
+        {
+          "url": "https://www.gq-magazine.co.uk/article/olivia-cook-interview-house-of-the-dragon-slow-horses-9-11-26",
+          "title": "Olivia Cooke on her wild Slow Horses return, House of the Dragon's fans and overcoming burnout",
+          "publisher": "British GQ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIuH6zI2huTq-4EZDhWacp_fRjJZdoMuy3peFUffTR2XU0C12magovi-2piqs"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/tv/tv-news/olivia-cooke-house-of-the-dragon-fandom-social-media-break-1236751448/",
+          "title": "Olivia Cooke Says ‘House of the Dragon’ Fandom Led to Her Social Media Break: “A Lot of Ugliness”",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfG6HkSJPky2azJzQ6s1RK2uRDF6373z2tYTmarC3lIdZyIrFtEjmkzgczzRg"
+        },
+        {
+          "url": "https://variety.com/2026/tv/news/olivia-cooke-house-of-the-dragon-fandom-1236943620/",
+          "title": "Olivia Cooke Says ‘House of the Dragon’ Fandom Led Her to Step Away From Social Media: ‘There’s a Lot of Ugliness,’ ‘Misogyny’ and ‘Racism’",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgMzwRGiixAqjOd5nCKnzV7gFd8HrtsHjDwoCCpXeHkfysJHqydH_Rvq-j6eE"
+        }
+      ]
+    },
     {
       "query": "new zealand vs india",
       "approx_searches": "2000+",
@@ -47,8 +117,8 @@
       "published_at": "2026-11-10T06:20:00Z",
       "related_news_urls": [
         "https://blog.google/products-and-platforms/devices/googlebook/henry-cavill-mustache-protocol-video-game/",
-        "https://9to5google.com/2026/11/04/henry-cavill-mustache-protocol-googlebook/",
-        "https://www.yahoo.com/entertainment/celebrity/articles/psa-henry-cavills-back-mustache-211118347.html"
+        "https://www.yahoo.com/entertainment/celebrity/articles/mustached-henry-cavill-returns-iconic-054614692.html",
+        "https://9to5google.com/2026/11/04/henry-cavill-mustache-protocol-googlebook/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBtvZ1IMNcBO1TlEVLvPsEuCiKSFl5lWQbVukdQv5zI1aoQAm2Yw_vKcwSaXs",
       "image_credit": "blog.google",
@@ -61,18 +131,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBtvZ1IMNcBO1TlEVLvPsEuCiKSFl5lWQbVukdQv5zI1aoQAm2Yw_vKcwSaXs"
         },
         {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/mustached-henry-cavill-returns-iconic-054614692.html",
+          "title": "Mustached Henry Cavill Returns With His Iconic Arm Reload",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgQ8AH0SIws-ZTW6m3BM4Wk8qvqpclfGjznyESAxvXGoj0wFVNgAygtY_fIxU"
+        },
+        {
           "url": "https://9to5google.com/2026/11/04/henry-cavill-mustache-protocol-googlebook/",
           "title": "Henry Cavill builds 16-bit ‘Mustache Protocol’ game on Googlebook for a good cause [Video]",
           "publisher": "9to5Google",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRxJsT5_zmNZlt2PZdaCvarEYM5im2p7gIqWLTMwWfOVwe-p6c6KOYd81fJhk"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/psa-henry-cavills-back-mustache-211118347.html",
-          "title": "PSA: Henry Cavill's Back With The Mustache For Movember (And Totally Pulls It Off)",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxAm9nW_X8QDxvvP3EufCbiyWxGG0dq_hyiomKYidsfPOpdQ0syAE2xeWc-Ac"
         }
       ]
     },
@@ -82,8 +152,8 @@
       "published_at": "2026-11-10T06:20:00Z",
       "related_news_urls": [
         "https://variety.com/2026/tv/news/heated-rivalry-fans-theaters-rerelease-1236943493/",
-        "https://www.inc.com/hauwa-otori/heated-rivalry-theatrical-release-box-office-strategy/91425033",
-        "https://www.imdb.com/pt/news/ni66102596/?ref_=nwc_art_perm"
+        "https://www.imdb.com/news/ni66102569/?ref_=int_nwr_1",
+        "https://www.inc.com/hauwa-otori/heated-rivalry-theatrical-release-box-office-strategy/91425033"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUhwhv2OaLlCwcbhnn5T0r00gAWtoZhHVzPHwVNYt7k7gtk-JlDnA6TRyO4IA",
       "image_credit": "Variety",
@@ -96,18 +166,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUhwhv2OaLlCwcbhnn5T0r00gAWtoZhHVzPHwVNYt7k7gtk-JlDnA6TRyO4IA"
         },
         {
+          "url": "https://www.imdb.com/news/ni66102569/?ref_=int_nwr_1",
+          "title": "‘Heated Rivalry’ Final Episodes to Release in 4Dx at Regal Theaters",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR04GuGTZ8_IeRHagmZf5P1ZK5S4Pbg2AsChulT2n8nTrsWn3I5xgmt8GDuZmA"
+        },
+        {
           "url": "https://www.inc.com/hauwa-otori/heated-rivalry-theatrical-release-box-office-strategy/91425033",
           "title": "Fans Just Dropped $1M in Presales to Watch 'Heated Rivalry' in Movie Theaters—11 Months After Its Premiere",
           "publisher": "Inc.com",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdlJzbndzRUFDuhzQBy00Vtb85-gAtrKIbIvh9CdYYVcMD4JKPngnapUO6l-k"
-        },
-        {
-          "url": "https://www.imdb.com/pt/news/ni66102596/?ref_=nwc_art_perm",
-          "title": "‘Heated Rivalry’ Final Episodes to Release in 4Dx at Regal Theaters",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR04GuGTZ8_IeRHagmZf5P1ZK5S4Pbg2AsChulT2n8nTrsWn3I5xgmt8GDuZmA"
         }
       ]
     },
@@ -151,52 +221,17 @@
       "approx_searches": "200+",
       "published_at": "2026-11-10T06:00:00Z",
       "related_news_urls": [
-        "https://www.imdb.com/news/ni66100325/?ref_=nmnw_art_perm"
+        "https://www.imdb.com/fr/news/ni66100325/?ref_=tt_nwr_1"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEZq8-xbWWAZa7wa4StyGocYjRmQY-XvRlniaeStmx6tNKi5wu_WfbLGleBIQ",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIijyGKl18aYHBF-gIy8sm99T7KzxtL7veeqghL8m-qrJdxVK8TbRK70cUNGs",
       "image_credit": "IMDb",
       "news": [
         {
-          "url": "https://www.imdb.com/news/ni66100325/?ref_=nmnw_art_perm",
+          "url": "https://www.imdb.com/fr/news/ni66100325/?ref_=tt_nwr_1",
           "title": "Late Night with Seth Meyers: Julia Louis-Dreyfus, Jamie Dornan",
           "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEZq8-xbWWAZa7wa4StyGocYjRmQY-XvRlniaeStmx6tNKi5wu_WfbLGleBIQ"
-        }
-      ]
-    },
-    {
-      "query": "ivar stenberg",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T06:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50439492/tyler-toffoli-scores-goal-vs-islanders",
-        "https://sports.yahoo.com/articles/sharks-3-islanders-2-blood-060426862.html",
-        "https://www.mercurynews.com/2026/11/09/san-jose-sharks-new-york-islanders-macklin-celebrini-instant-analysis/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBHnJTh010NmD8xNWDYD3GPVeERmRnWpoH7VUmhklQl69L84-Ou7f8EulCfJs",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50439492/tyler-toffoli-scores-goal-vs-islanders",
-          "title": "Tyler Toffoli scores goal vs. Islanders",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBHnJTh010NmD8xNWDYD3GPVeERmRnWpoH7VUmhklQl69L84-Ou7f8EulCfJs"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/sharks-3-islanders-2-blood-060426862.html",
-          "title": "Sharks 3*, Islanders 2 (SO*): After blood boils, settled with a shooting contest",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtl7PWfRV5kykkuTwowvbeps7Fgapazihj3NYJ6mzER5ixlq51lsrezZMvIRA"
-        },
-        {
-          "url": "https://www.mercurynews.com/2026/11/09/san-jose-sharks-new-york-islanders-macklin-celebrini-instant-analysis/",
-          "title": "Sharks instant analysis: Exhausting, emotional win ends San Jose’s five-game skid",
-          "publisher": "The Mercury News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxQgCSzUvsSstvJBcf-8oEe8LeZBkWot-QyHfI4cF54clX4VlFtJyp3RvVWfQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIijyGKl18aYHBF-gIy8sm99T7KzxtL7veeqghL8m-qrJdxVK8TbRK70cUNGs"
         }
       ]
     },
@@ -241,8 +276,8 @@
       "published_at": "2026-11-10T06:00:00Z",
       "related_news_urls": [
         "https://www.avclub.com/hunger-games-sunrise-on-the-reaping-director-plutarch-heavensbee-spinoff-ideas",
-        "https://tribune.com.pk/story/2639292/hunger-games-director-francis-lawrence-pitches-plutarch-prequel-after-sunrise-on-the-reaping",
-        "https://winteriscoming.net/will-there-be-another-hunger-games-book-who-will-be-protagonist"
+        "https://www.thewrap.com/creative-content/movies/sunrise-on-the-reaping-director-makes-a-pitch-for-next-hunger-games-prequel/",
+        "https://www.cinemablend.com/movies/sunrise-on-the-reapings-director-and-cast-reveal-which-prequel-they-want-to-see-next"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSl110OdmcaUYF-R0F9kCMa9Mny6G9hc9P32a_PBhzQlRfGf26SFp8kU4GCz3k",
       "image_credit": "A.V. Club",
@@ -255,18 +290,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSl110OdmcaUYF-R0F9kCMa9Mny6G9hc9P32a_PBhzQlRfGf26SFp8kU4GCz3k"
         },
         {
-          "url": "https://tribune.com.pk/story/2639292/hunger-games-director-francis-lawrence-pitches-plutarch-prequel-after-sunrise-on-the-reaping",
-          "title": "Hunger Games director Francis Lawrence pitches Plutarch prequel after 'Sunrise on the Reaping'",
-          "publisher": "The Express Tribune",
+          "url": "https://www.thewrap.com/creative-content/movies/sunrise-on-the-reaping-director-makes-a-pitch-for-next-hunger-games-prequel/",
+          "title": "‘Sunrise on the Reaping’ Director Makes a Pitch for Next ‘Hunger Games’ Prequel: ‘Could Be Really Interesting’",
+          "publisher": "TheWrap",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDZC08v4Ebswf3ZgptIaop9OA-X0w-pHX8K8RHb0mDPBdsftUrnf3cmDy9lEg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTUTNzFO_KmD-TmAjWMDhxeeQyWaOhBcewJ4YRRyfmdnbxBlOekC4tbg3NdTA"
         },
         {
-          "url": "https://winteriscoming.net/will-there-be-another-hunger-games-book-who-will-be-protagonist",
-          "title": "Will there be another Hunger Games book and who will be its protagonist?",
-          "publisher": "Winter is Coming",
+          "url": "https://www.cinemablend.com/movies/sunrise-on-the-reapings-director-and-cast-reveal-which-prequel-they-want-to-see-next",
+          "title": "Sunrise On The Reaping’s Director And Cast Reveal Which Prequel They Want To See Next",
+          "publisher": "Cinemablend",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmPnbS-jMnwuE_FzB8ouCgIACCES5zryxKBiRAm8NNrA4GznHloQaeryo9J2o"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpavmUs6r9qHMuskqii0CB7CyeYrBhPPNoZzVgi80qkPAVutYB--eH2DpZHzU"
         }
       ]
     },
@@ -302,41 +337,6 @@
           "publisher": "The Hollywood Reporter",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQL-EfLgCCiFQ48HYg6OX1Fz_J4rxP_mr5F2aaNQAvp6xt2XHZMeWHedwrTi1Y"
-        }
-      ]
-    },
-    {
-      "query": "steve buscemi",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T05:50:00Z",
-      "related_news_urls": [
-        "https://www.hollywoodreporter.com/business/digital/steve-buscemi-refuses-appear-hot-ones-1236751410/",
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/fargo-steve-buscemi-refuses-appear-051100766.html",
-        "https://www.vulture.com/article/hot-ones-steve-buscemi.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXrC5flZZ2NJJRwV3Rek84sHC6z136S13IGZf3fbCVPZXTMP4tsrdsJCSI7PU",
-      "image_credit": "The Hollywood Reporter",
-      "news": [
-        {
-          "url": "https://www.hollywoodreporter.com/business/digital/steve-buscemi-refuses-appear-hot-ones-1236751410/",
-          "title": "Steve Buscemi Reveals Which Show He Refuses to Appear on: “I Don’t Care How Much You Paid Me”",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXrC5flZZ2NJJRwV3Rek84sHC6z136S13IGZf3fbCVPZXTMP4tsrdsJCSI7PU"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/fargo-steve-buscemi-refuses-appear-051100766.html",
-          "title": "Fargo’s Steve Buscemi Refuses to Appear on Popular Show for One Fiery Reason",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpKbo5R8ltWTJBofAFlfJSWFFLYGi1VOwN_VNoNlWLr57uLZUBmw9yKOflzcc"
-        },
-        {
-          "url": "https://www.vulture.com/article/hot-ones-steve-buscemi.html",
-          "title": "‘Hot Ones’ Makes Steve Buscemi ‘Confused’ and ‘Angry’",
-          "publisher": "Vulture",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5y6IkxuzTn9iWhbTY8Ef_H_81z7-eFiUUsoqrNgIUQIJdR_ompr0s447s-Y4"
         }
       ]
     }
