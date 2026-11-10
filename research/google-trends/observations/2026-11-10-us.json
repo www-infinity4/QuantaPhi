@@ -3,340 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T02:31:12.508532Z",
+  "checked_at": "2026-11-10T03:01:22.375913Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "carson daly",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-10T02:10:00Z",
+      "query": "china",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-10T02:40:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/articles/blake-shelton-riley-green-more-175814534.html",
-        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/07/carson-daly-saturday-today-gig-today-show-laura-jarrett/92625170007/",
-        "https://nbcuniversalnewsgroup.com/nbcnews/2026/11/05/carson-daly-named-co-anchor-of-saturday-today/"
+        "https://www.wsj.com/tech/ai/jensen-huang-apologized-to-nvidia-for-his-infidelity-his-kids-are-on-staff-190f3176",
+        "https://www.benzinga.com/markets/tech/26/11/63077533/nvidia-jensen-huang-sued-class-action-megaspeed-alice-huang-chinese-spy",
+        "https://www.cnbc.com/2026/11/09/trump-jensen-huang-nvidia-chinese-spy.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnsU_vurNh9VGXTyQC_0eKOOKZ-IuysxTY_4k1iAWzIMYT52eoirVcFrOWib4",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKFBDKs28rM5Ym-vGeOcnPF0IoRe38P8vQiB_1M-QNIMatYJr4bGTfUYFamck",
+      "image_credit": "WSJ",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/blake-shelton-riley-green-more-175814534.html",
-          "title": "Blake Shelton, Riley Green And More Voice Coaches Have Thoughts On Carson Daly’s New Today Show Gig",
-          "publisher": "Yahoo",
+          "url": "https://www.wsj.com/tech/ai/jensen-huang-apologized-to-nvidia-for-his-infidelity-his-kids-are-on-staff-190f3176",
+          "title": "Jensen Huang Apologized to Nvidia for His Infidelity. His Kids Are on Staff.",
+          "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnsU_vurNh9VGXTyQC_0eKOOKZ-IuysxTY_4k1iAWzIMYT52eoirVcFrOWib4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKFBDKs28rM5Ym-vGeOcnPF0IoRe38P8vQiB_1M-QNIMatYJr4bGTfUYFamck"
         },
         {
-          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/07/carson-daly-saturday-today-gig-today-show-laura-jarrett/92625170007/",
-          "title": "Carson Daly says new role gives 'Today' family 'a good reason' to celebrate | Exclusive",
-          "publisher": "USA Today",
+          "url": "https://www.benzinga.com/markets/tech/26/11/63077533/nvidia-jensen-huang-sued-class-action-megaspeed-alice-huang-chinese-spy",
+          "title": "Nvidia Shareholder Sues Over CEO Jensen Huang Spy Affair Claims - NVIDIA (NASDAQ:NVDA)",
+          "publisher": "Benzinga",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2MP-qTnyUOx5V8ZbAGr2ZRgZjYOzsg5fGrrgKg-0M4etRM0FO-gQGPkaHP0M"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR--OFvVQCVf-ACMm3qD-skhczVwYLZnn15kf721VMaZRFafug51a48e71cqcs"
         },
         {
-          "url": "https://nbcuniversalnewsgroup.com/nbcnews/2026/11/05/carson-daly-named-co-anchor-of-saturday-today/",
-          "title": "CARSON DALY NAMED CO-ANCHOR OF ‘SATURDAY TODAY’ - NBC News Press Releases",
-          "publisher": "NBCUniversal News Group",
+          "url": "https://www.cnbc.com/2026/11/09/trump-jensen-huang-nvidia-chinese-spy.html",
+          "title": "Trump says Jensen Huang told him Monday he didn't know paramour 'was a spy'",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR84A-x3V3PV01g4tTOxGowmyBVVp5oItiLG8uPNdkc0aF5_bgDRLlGS9TbvbQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsoHoHgjf6zFLFl5zb2WSnou-ASjjdneN0VJJXrSo2T6ajl5Dg7zNO814ut6w"
         }
       ]
     },
     {
-      "query": "drew brees",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T02:10:00Z",
+      "query": "patriots depth chart",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T02:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/raiders-cousins-joins-tom-brady-213005477.html",
-        "https://sports.yahoo.com/videos/kirk-cousins-joined-drew-brees-052159157.html"
+        "https://www.bostonglobe.com/2026/11/08/sports/patriots-arent-making-excuses-their-near-catastrophic-injury-run-has-only-gotten-worse/",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/patriots-dont-expect-ben-brown-to-play-in-week-10-waiting-for-rhamondre-stevenson-mri-results",
+        "https://www.nbcsportsboston.com/nfl/new-england-patriots/patriots-injury-updates-latest-info-aj-brown-rhamondre-stevenson/812631/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbUou63qh2tAqQGMoEi1WzNQhb7z2oskv22dI2uusL9RhYkEfTyFgheOqILgo",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTg47n6UNqscQIgiBVjHPLTBVaZkbZ58MxVSEKukLcXeOPTSrzlt3pLUCtZ4QI",
+      "image_credit": "The Boston Globe",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/raiders-cousins-joins-tom-brady-213005477.html",
-          "title": "Raiders' Cousins Joins Tom Brady, Drew Brees in Rare NFL Company",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.bostonglobe.com/2026/11/08/sports/patriots-arent-making-excuses-their-near-catastrophic-injury-run-has-only-gotten-worse/",
+          "title": "The Patriots aren’t making excuses, but their near-catastrophic injury run has only gotten worse",
+          "publisher": "The Boston Globe",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbUou63qh2tAqQGMoEi1WzNQhb7z2oskv22dI2uusL9RhYkEfTyFgheOqILgo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTg47n6UNqscQIgiBVjHPLTBVaZkbZ58MxVSEKukLcXeOPTSrzlt3pLUCtZ4QI"
         },
         {
-          "url": "https://sports.yahoo.com/videos/kirk-cousins-joined-drew-brees-052159157.html",
-          "title": "Kirk Cousins Joined Drew Brees in Rare NFL History",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoBjbtppUydUeIGDhLUTtQcTonuN12MqMmiYfO7smA3viEPKrctzQw7wR9mnY"
-        }
-      ]
-    },
-    {
-      "query": "kirk cousins",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-10T02:10:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kirk-cousins-becomes-an-option-for-a-contender-like-the-vikings",
-        "https://www.usatoday.com/story/sports/nfl/2026/11/09/nfl-trade-deadline-qbs-candidates-kirk-cousins/92629169007/",
-        "https://sports.yahoo.com/articles/raiders-kirk-cousins-drops-deadline-181950074.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdCjutvqpmPx09cByI5VrZ7ohRQdU8Lt4Eay-dPV2ttHnHNVG6u-6tbJ_tZao",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kirk-cousins-becomes-an-option-for-a-contender-like-the-vikings",
-          "title": "Kirk Cousins becomes an option for a contender, like the Vikings",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/patriots-dont-expect-ben-brown-to-play-in-week-10-waiting-for-rhamondre-stevenson-mri-results",
+          "title": "Patriots don't expect Ben Brown to play in Week 10, waiting for Rhamondre Stevenson MRI results",
           "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdCjutvqpmPx09cByI5VrZ7ohRQdU8Lt4Eay-dPV2ttHnHNVG6u-6tbJ_tZao"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtBbEiBZ2Kjs0O6wmeKuAwZj7hUXeho2JiZCCjXIuG-ifXJ7HjPbpUkej22xg"
         },
         {
-          "url": "https://www.usatoday.com/story/sports/nfl/2026/11/09/nfl-trade-deadline-qbs-candidates-kirk-cousins/92629169007/",
-          "title": "NFL QB trade options include Kirk Cousins, Anthony Richardson and...who?",
-          "publisher": "USA Today",
+          "url": "https://www.nbcsportsboston.com/nfl/new-england-patriots/patriots-injury-updates-latest-info-aj-brown-rhamondre-stevenson/812631/",
+          "title": "Patriots injury updates: Latest info on A.J. Brown, Rhamondre Stevenson and more",
+          "publisher": "NBC Sports Boston",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXtwOSCJAiPHJuSIMvl8Jy6OOegGRROXK4RHgWtPfz2bZBNfH9n8PahwdVo_w"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/raiders-kirk-cousins-drops-deadline-181950074.html",
-          "title": "Raiders' Kirk Cousins drops deadline bombshell on letting 'decision-makers make decisions'",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5IbEVWXo9Sz7NdGgjCb-kihn1SQmvgKdx-pwu_ypAqmyf8h2fvIkDtjzRuvI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlXNgewRwfUqi99tjzeA6TDddmkl9hCf83fmoXybLikopJIRWRcfk0s0WKBp8"
         }
       ]
     },
     {
-      "query": "islanders vs sharks",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T02:10:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/news/new-york-islanders-san-jose-sharks-game-preview-november-9-2026",
-        "https://sports.yahoo.com/articles/players-watch-york-islanders-vs-000636387.html",
-        "https://eyesonisles.com/ny-islanders-face-a-critical-california-trip-that-could-make-or-break-their-november-01m70944hd1v"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/news/new-york-islanders-san-jose-sharks-game-preview-november-9-2026",
-          "title": "Islanders at Sharks projected lineups",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/players-watch-york-islanders-vs-000636387.html",
-          "title": "Players to Watch: New York Islanders vs San Jose Sharks",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShLnXbT7BQX8UMx3J7KQTEoXtaWnJR3Fd3GDSyulbJnoaYBZGBlQaBFCpk_us"
-        },
-        {
-          "url": "https://eyesonisles.com/ny-islanders-face-a-critical-california-trip-that-could-make-or-break-their-november-01m70944hd1v",
-          "title": "NY Islanders face a critical California trip that could make or break their November",
-          "publisher": "Eyes On Isles",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-MrnX5j7WiJ-_Y-Seo8D63hSe0e9XGjNzGRbbblaQU0Tvi6yXFJYrRTpDbkw"
-        }
-      ]
-    },
-    {
-      "query": "tony romo",
+      "query": "pascal siakam",
       "approx_searches": "500+",
-      "published_at": "2026-11-10T02:10:00Z",
+      "published_at": "2026-11-10T02:40:00Z",
       "related_news_urls": [
-        "https://insidethestar.com/the-11-former-cowboys-players-to-build-a-coaching-staff",
-        "https://insidethestar.com/the-cowboys-team-id-build-with-campbell-romo-and-lee"
+        "https://www.indystar.com/videos/sports/nba/pacers/2026/11/07/siakam-i-thought-our-force-and-energy-was-way-better-in-the-second-half/92670952007/",
+        "https://clutchpoints.com/nba/indiana-pacers/pacers-news-pascal-siakam-reaches-wild-personal-milestone-in-just-a-half-vs-mavericks",
+        "https://sports.yahoo.com/articles/mavericks-vs-pacers-preview-injury-002521200.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkdOJRLLd__blrvnwlV4EPRHGYEfaaJ8D_zpJDkdtsXqy47Cp_AMAizr8JVUw",
-      "image_credit": "Inside The Star",
-      "news": [
-        {
-          "url": "https://insidethestar.com/the-11-former-cowboys-players-to-build-a-coaching-staff",
-          "title": "The 11 Former Cowboys’ Players to Build a Coaching Staff",
-          "publisher": "Inside The Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkdOJRLLd__blrvnwlV4EPRHGYEfaaJ8D_zpJDkdtsXqy47Cp_AMAizr8JVUw"
-        },
-        {
-          "url": "https://insidethestar.com/the-cowboys-team-id-build-with-campbell-romo-and-lee",
-          "title": "The Cowboys Team I’d Build With Campbell, Romo, and Lee",
-          "publisher": "Inside The Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGyrbmrbdNwpEQ69VfunqRAfbGjxCtCwiHbqNmmOxqgxxSnpvWMVDSvXTDX0Q"
-        }
-      ]
-    },
-    {
-      "query": "rey mysterio",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T02:10:00Z",
-      "related_news_urls": [
-        "https://www.wwe.com/videos/rey-mysterio-and-marisela-pena-accused-of-having-an-affair-h-roes-inmortales-xviii",
-        "https://www.postwrestling.com/2026/11/07/rey-mysterio-suspended-as-aaa-general-manager-accused-of-affair-with-marisela-pena/",
-        "https://www.fightful.com/wrestling/rey-mysterio-suspended-from-aaa-in-storyline-accused-of-having-affair-with-marisela-pena/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcCLE4ho2Xvd3veMs9bl4oDgNp_0liTvHwXsy8I74Y7Bvce0IP9L_XJ0QyJ1Y",
-      "image_credit": "WWE",
-      "news": [
-        {
-          "url": "https://www.wwe.com/videos/rey-mysterio-and-marisela-pena-accused-of-having-an-affair-h-roes-inmortales-xviii",
-          "title": "Rey Mysterio and Marisela Pena accused of having an AFFAIR!: Héroes Inmortales XVIII highlights",
-          "publisher": "WWE",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcCLE4ho2Xvd3veMs9bl4oDgNp_0liTvHwXsy8I74Y7Bvce0IP9L_XJ0QyJ1Y"
-        },
-        {
-          "url": "https://www.postwrestling.com/2026/11/07/rey-mysterio-suspended-as-aaa-general-manager-accused-of-affair-with-marisela-pena/",
-          "title": "Rey Mysterio suspended as AAA General Manager, accused of affair with Marisela Peña in Héroes Inmortales closing angle",
-          "publisher": "POST Wrestling",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzbk6Y5rH7IXFISuOCx4b7tFxSK1Qqfcohi84husfZW8CVGZroTu4UV8sWLgo"
-        },
-        {
-          "url": "https://www.fightful.com/wrestling/rey-mysterio-suspended-from-aaa-in-storyline-accused-of-having-affair-with-marisela-pena/",
-          "title": "Rey Mysterio Suspended From AAA In Storyline, Accused Of Having Affair With Marisela Peña",
-          "publisher": "Fightful",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrR3ZUAqG1DlKlohDg9VU3uNNwO5Hpvnr5EPM6aIT6pangdKmEZ-QlqdkvyI4"
-        }
-      ]
-    },
-    {
-      "query": "jalen johnson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T02:10:00Z",
-      "related_news_urls": [
-        "https://www.peachtreehoops.com/atlanta-hawks-game-threads/73565/los-angeles-lakers-atlanta-hawks-start-time-tv-streaming-radio-game-thread",
-        "https://www.nba.com/watch/video/fantastic-finish-hawks-complete-comeback-vs-nets?plsrc=nba&collection=top-trending-videos",
-        "https://www.espn.com/nba/recap/_/gameId/401909939"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCMWdjXGGqK9uGF_mjPEBPEPzObanXJVcB0Hk1MTqey0xNX-Ims5QekZtdj-U",
-      "image_credit": "Peachtree Hoops",
-      "news": [
-        {
-          "url": "https://www.peachtreehoops.com/atlanta-hawks-game-threads/73565/los-angeles-lakers-atlanta-hawks-start-time-tv-streaming-radio-game-thread",
-          "title": "Lakers at Hawks: start time, TV, streaming, radio, game thread",
-          "publisher": "Peachtree Hoops",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCMWdjXGGqK9uGF_mjPEBPEPzObanXJVcB0Hk1MTqey0xNX-Ims5QekZtdj-U"
-        },
-        {
-          "url": "https://www.nba.com/watch/video/fantastic-finish-hawks-complete-comeback-vs-nets?plsrc=nba&collection=top-trending-videos",
-          "title": "Fantastic Finish: Hawks complete comeback vs. Nets",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwCWWBy9cvgTXbIi08kJH_JWWnpcC2CLy4I-XXH58kQKy6cEn9LjvhqNcew68"
-        },
-        {
-          "url": "https://www.espn.com/nba/recap/_/gameId/401909939",
-          "title": "Hawks 124-121 Nets (Nov 7, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4dfY7JNkWX1SMAOzpVDzzkmodWPP73NwZz7YRR4ETjeUsRpdHUS50da4_WHQ"
-        }
-      ]
-    },
-    {
-      "query": "kingston flemings",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T02:10:00Z",
-      "related_news_urls": [
-        "https://soaringdownsouth.com/flemings-winning-job-terrify-conference",
-        "https://sports.yahoo.com/articles/fantasy-basketball-weekend-streamers-kingston-155254606.html",
-        "https://medicinehatnews.com/sports/national-sports/2026/11/06/alexander-walkers-28-points-lead-hawks-past-wizards-young-scores-23-in-return-to-atlanta/attachment/890b294a2d4254ebf496c24804aefa64a1fca7feb5726637c0182bf6dff4a327/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOY6Ixq7GXYtcegy5VF7vVUaZ28ZMsMSa5PpA8_SN6HW-enHnrhmvsZf1JU8Y",
-      "image_credit": "Soaring Down South",
-      "news": [
-        {
-          "url": "https://soaringdownsouth.com/flemings-winning-job-terrify-conference",
-          "title": "Kingston Flemings already winning Hawks job should terrify Eastern Conference",
-          "publisher": "Soaring Down South",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOY6Ixq7GXYtcegy5VF7vVUaZ28ZMsMSa5PpA8_SN6HW-enHnrhmvsZf1JU8Y"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/fantasy-basketball-weekend-streamers-kingston-155254606.html",
-          "title": "Fantasy Basketball Weekend Streamers: Kingston Flemings, Brayden Burries take over as starters",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyo6yOwdWCk5kkCe5epaVAPUnj3nQXdQcwVD0cJQMykmNrfLqzCi8gcyBQyBM"
-        },
-        {
-          "url": "https://medicinehatnews.com/sports/national-sports/2026/11/06/alexander-walkers-28-points-lead-hawks-past-wizards-young-scores-23-in-return-to-atlanta/attachment/890b294a2d4254ebf496c24804aefa64a1fca7feb5726637c0182bf6dff4a327/",
-          "title": "890b294a2d4254ebf496c24804aefa64a1fca7feb5726637c0182bf6dff4a327",
-          "publisher": "Medicine Hat News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu1Bv9-eRulOhXMLykRg-q3RJ5bD5g5ZkWh1-BFWq8Y0UuGqmRFaMyRTMBuY4"
-        }
-      ]
-    },
-    {
-      "query": "illinois state basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T02:10:00Z",
-      "related_news_urls": [
-        "https://www.indystar.com/story/sports/college/purdue/2026/11/08/purdue-basketball-game-tonight-vs-illinois-state-start-time-how-to-watch-stream/92677069007/",
-        "https://www.hammerandrails.com/purdue-mens-basketball/62196/purdue-mens-basketball-game-3-preview-purdue-0-2-vs-illinois-state-1-1",
-        "https://www.on3.com/teams/purdue-boilermakers/news/goldandblack-com-purdue-basketball-preview-illinois-state/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2BGwaTNngN4WZvtT8L6AEYxf72OnywhhKJRGGb-XMphN8UXwFr82hHS03ngI",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQH_6oUKy5n9ihm97_Bhrwf8Mmgl8YuJAlz04mwUxXZSDYcufSlcyKPNW0Tyiw",
       "image_credit": "IndyStar",
       "news": [
         {
-          "url": "https://www.indystar.com/story/sports/college/purdue/2026/11/08/purdue-basketball-game-tonight-vs-illinois-state-start-time-how-to-watch-stream/92677069007/",
-          "title": "Purdue basketball vs Illinois State start time, where to watch, roster, schedule tonight, Nov. 9",
+          "url": "https://www.indystar.com/videos/sports/nba/pacers/2026/11/07/siakam-i-thought-our-force-and-energy-was-way-better-in-the-second-half/92670952007/",
+          "title": "Pacers Pascal Siakam: 'I thought our force and energy was way better in the second half\"",
           "publisher": "IndyStar",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2BGwaTNngN4WZvtT8L6AEYxf72OnywhhKJRGGb-XMphN8UXwFr82hHS03ngI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQH_6oUKy5n9ihm97_Bhrwf8Mmgl8YuJAlz04mwUxXZSDYcufSlcyKPNW0Tyiw"
         },
         {
-          "url": "https://www.hammerandrails.com/purdue-mens-basketball/62196/purdue-mens-basketball-game-3-preview-purdue-0-2-vs-illinois-state-1-1",
-          "title": "Purdue Men’s Basketball Game 3 Preview: Purdue (0-2) vs. Illinois State (1-1)",
-          "publisher": "Hammer and Rails",
+          "url": "https://clutchpoints.com/nba/indiana-pacers/pacers-news-pascal-siakam-reaches-wild-personal-milestone-in-just-a-half-vs-mavericks",
+          "title": "Pascal Siakam Reaches Wild Personal Milestone In Just A Half Of Pacers-Mavericks",
+          "publisher": "ClutchPoints",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiAeJAMmuqVLyIcTYnDcjGMNDwBRL7kOAOXY1kF7aAFvj5NzU7J_ezhzuVjr4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT36eJVGxO7-4OQelDpjkvay7lfG4mBo6ux7yX4nRM5bdxAHeJYSFD2xcIgykQ"
         },
         {
-          "url": "https://www.on3.com/teams/purdue-boilermakers/news/goldandblack-com-purdue-basketball-preview-illinois-state/",
-          "title": "GoldandBlack.com Purdue Basketball Preview: Illinois State",
-          "publisher": "On3",
+          "url": "https://sports.yahoo.com/articles/mavericks-vs-pacers-preview-injury-002521200.html",
+          "title": "Mavericks vs Pacers Preview and Injury Report: Closing out the homestand",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlfj4SDC64ddENcWJBsBrBZ17okxjSclhzEivd1Ya9RZ1CyJ1qq8HQ7CmFS6s"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKZBiOJJkBFeckb8hIfVZ2bVd7ayFfTL_zNxOQZKD_RewFtMPM52N0LgqFCkQ"
         }
       ]
     },
     {
-      "query": "paris hilton",
+      "query": "flight recorder",
       "approx_searches": "500+",
-      "published_at": "2026-11-10T02:10:00Z",
+      "published_at": "2026-11-10T02:40:00Z",
       "related_news_urls": [
-        "https://robbreport.com/shelter/celebrity-homes/gallery/paris-hilton-rental-house-in-photos-1238820096/",
-        "https://www.aol.com/articles/paris-hiltons-former-la-home-160028000.html",
-        "https://timesofindia.indiatimes.com/real-estate/news/paris-hilton-and-her-husband-rented-a-63-million-mansions-neighbour-for-160000-a-month-their-former-beverly-park-home-is-now-seeking-159000-in-monthly-rent/articleshow/135674077.cms"
+        "https://www.cnn.com/2026/11/09/us/florida-learjet-crash-voice-recorder",
+        "https://www.nytimes.com/2026/11/07/us/florida-jet-crash-father-pilot.html",
+        "https://www.usatoday.com/story/news/nation/2026/11/09/florida-jet-crash-learjet-update-ntsb/92688703007/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeOj5BrYDXXHhYseyd7DjyOcBldelRzrfZnrF0D-wcQtGzKc8kALo0LDVKVwg",
-      "image_credit": "Robb Report",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOCq3yNnh3eaX9oWxLQw1n42Yif_57o-Ayd-qTPUjBEQ6EPMFN2nxd-J2Ze1E",
+      "image_credit": "CNN",
       "news": [
         {
-          "url": "https://robbreport.com/shelter/celebrity-homes/gallery/paris-hilton-rental-house-in-photos-1238820096/",
-          "title": "Paris Hilton’s Former Beverly Park Rental House in Photos",
-          "publisher": "Robb Report",
+          "url": "https://www.cnn.com/2026/11/09/us/florida-learjet-crash-voice-recorder",
+          "title": "Investigators recover cockpit voice recorder from fatal Learjet crash site",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeOj5BrYDXXHhYseyd7DjyOcBldelRzrfZnrF0D-wcQtGzKc8kALo0LDVKVwg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOCq3yNnh3eaX9oWxLQw1n42Yif_57o-Ayd-qTPUjBEQ6EPMFN2nxd-J2Ze1E"
         },
         {
-          "url": "https://www.aol.com/articles/paris-hiltons-former-la-home-160028000.html",
-          "title": "Paris Hilton's Former LA Home Has a Rent Price Most Americans Can't Imagine",
+          "url": "https://www.nytimes.com/2026/11/07/us/florida-jet-crash-father-pilot.html",
+          "title": "Father Calls Daughter, the Co-Pilot Killed in Florida Crash, ‘a Hero’",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQS9eAF8heE9SuYJkxHVcalZGlWB9VKUKX5y8KRvayGBi9ZGX67ZGfowp12atM"
+        },
+        {
+          "url": "https://www.usatoday.com/story/news/nation/2026/11/09/florida-jet-crash-learjet-update-ntsb/92688703007/",
+          "title": "Investigators find wings, engine of downed Learjet plane",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_yCeEftzq-qntS79pwZbSJAF-80EceIddKxPTBJX9Mw2klKSNbBGqdwwQIVc"
+        }
+      ]
+    },
+    {
+      "query": "will reichard",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T02:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/reichard-end-vikings-kicking-curse-181909540.html",
+        "https://www.rotoballer.com/player-news/high-scoring-potential-for-will-reichard-in-week-9/1986873",
+        "https://www.buffalobills.com/news/buffalo-bills-at-minnesota-vikings-where-to-watch-stream-and-listen-mnf-week-9"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzJ5GNQx9jCYZ9AaHRKzSbl5S538CxSB8nElGbzNMv6Bgocox2-Be_yGm9ezM",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/reichard-end-vikings-kicking-curse-181909540.html",
+          "title": "Will Reichard Will End the Vikings’ Kicking Curse",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzJ5GNQx9jCYZ9AaHRKzSbl5S538CxSB8nElGbzNMv6Bgocox2-Be_yGm9ezM"
+        },
+        {
+          "url": "https://www.rotoballer.com/player-news/high-scoring-potential-for-will-reichard-in-week-9/1986873",
+          "title": "Will Reichard Week 9 Outlook for Fantasy Football (2026)",
+          "publisher": "RotoBaller",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqfA-gFvEUsymda79qaKRM-amoJSDbEY9uNCNBepUFBZvIkN9LBKrXR8Cy3WI"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/buffalo-bills-at-minnesota-vikings-where-to-watch-stream-and-listen-mnf-week-9",
+          "title": "Buffalo Bills at Minnesota Vikings | Where to watch, stream and listen | MNF Week 9",
+          "publisher": "Buffalo Bills",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQeovBp1L8RO7O_2kz391PerWBkDy3wP1MOp6ozhCli91QRZ59vhRXPfF47Uck"
+        }
+      ]
+    },
+    {
+      "query": "nintendo switch black friday",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T02:30:00Z",
+      "related_news_urls": [
+        "https://mashable.com/tech/nov-9-nintendo-switch-2-deal",
+        "https://lifehacker.com/tech/nintendo-switch-2-sale-early-black-friday-2026",
+        "https://www.ign.com/articles/samsung-p9-nintendo-switch-2-memory-card-deal-november-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkCwfPlSALAicmzH76I52iowQmdJ6bLK-1iW9e9hPJ7mcLAAUTPSdexzZns04",
+      "image_credit": "Mashable",
+      "news": [
+        {
+          "url": "https://mashable.com/tech/nov-9-nintendo-switch-2-deal",
+          "title": "The Nintendo Switch 2 gets a rare deal way ahead of Black Friday",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkCwfPlSALAicmzH76I52iowQmdJ6bLK-1iW9e9hPJ7mcLAAUTPSdexzZns04"
+        },
+        {
+          "url": "https://lifehacker.com/tech/nintendo-switch-2-sale-early-black-friday-2026",
+          "title": "The Nintendo Switch 2 Is Actually on Sale Ahead of Black Friday",
+          "publisher": "Lifehacker",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9eO_5naT-QyjH63-LCHMg4rnR6RWkM0BTIdnd8w-yS_s7JnAlQJupEFL9BA"
+        },
+        {
+          "url": "https://www.ign.com/articles/samsung-p9-nintendo-switch-2-memory-card-deal-november-2026",
+          "title": "Save Up to 40% Off Samsung Nintendo Switch 2 Memory Cards Ahead of Black Friday",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSP7XGvxnSEp46FZec6Zrsmbdaeiz7SvB2W0ZVu9qfWY1bVD2UwWqt1tmevG4g"
+        }
+      ]
+    },
+    {
+      "query": "josh hokit",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T02:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/ufc-legend-shares-honest-assessment-000518542.html",
+        "https://www.sherdog.com/news/news/Josh-Hokit-says-Jon-Jones-win-gives-him-blueprint-to-beat-Ciryl-Gane-203563",
+        "https://www.mmafighting.com/ufc/519486/ufc-334-roundtable-is-josh-hokit-about-to-be-the-one-true-heavyweight-king"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXqVyk3uKAZKgc-V54857MO5MIgvaNAecjsiGRKQyANSOp0od1FPmhmiBSweY",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/ufc-legend-shares-honest-assessment-000518542.html",
+          "title": "UFC Legend Shares Honest Assessment of Ciryl Gane Ahead of Josh Hokit Fight",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXqVyk3uKAZKgc-V54857MO5MIgvaNAecjsiGRKQyANSOp0od1FPmhmiBSweY"
+        },
+        {
+          "url": "https://www.sherdog.com/news/news/Josh-Hokit-says-Jon-Jones-win-gives-him-blueprint-to-beat-Ciryl-Gane-203563",
+          "title": "Josh Hokit says Jon Jones' win gives him blueprint to beat Ciryl Gane",
+          "publisher": "Sherdog",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZBpfw4ffHB0tLonpQzdIaXSaiBtWRAEFYbYXZ4tY7b3b0Bgy4BB0TTInFbaA"
+        },
+        {
+          "url": "https://www.mmafighting.com/ufc/519486/ufc-334-roundtable-is-josh-hokit-about-to-be-the-one-true-heavyweight-king",
+          "title": "UFC 334 roundtable: Is Josh Hokit about to be the one true heavyweight king?",
+          "publisher": "MMA Fighting",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRt3JVUm7n5tWUNiz8DOauaoLeeD7JWxxr1OX4FPlHU7NeTfwvDuoHKKzJ74vk"
+        }
+      ]
+    },
+    {
+      "query": "meat recall",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T02:20:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/money/consumer-protection/recalls-alerts/2026/11/09/usda-frozen-meat-public-health-alert/92695951007/",
+        "https://www.newsnationnow.com/us-news/recalls/allergy-alert-frozen-snacks-undeclared-sesame-fish/",
+        "https://www.cleveland.com/entertainment/2026/11/health-alert-issued-for-3-meat-poultry-products.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRD68pXOsYpA9HdmXgZoMlxkYchN1l3tuybUB6zKdMsilBysjrz7u_wLsY2reI",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/money/consumer-protection/recalls-alerts/2026/11/09/usda-frozen-meat-public-health-alert/92695951007/",
+          "title": "USDA warns: Don't eat these frozen meat products",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRD68pXOsYpA9HdmXgZoMlxkYchN1l3tuybUB6zKdMsilBysjrz7u_wLsY2reI"
+        },
+        {
+          "url": "https://www.newsnationnow.com/us-news/recalls/allergy-alert-frozen-snacks-undeclared-sesame-fish/",
+          "title": "Popular frozen snacks may contain hidden allergens, USDA warns",
+          "publisher": "NewsNation",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQTSZ9WIeoCAV4W6w-zBl7oEoGamDUS6b9iZsT47-uRexnbREl_0x2-Fei1Rs"
+        },
+        {
+          "url": "https://www.cleveland.com/entertainment/2026/11/health-alert-issued-for-3-meat-poultry-products.html",
+          "title": "Health alert issued for 3 meat, poultry products",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfWtmkCPDMGW5AiAedoJfegpzEreCFGrQOxJ3RsDIuH9rdt5RquwFosvf8Isc"
+        }
+      ]
+    },
+    {
+      "query": "erin andrews",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T02:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/nfl-legend-tom-brady-reacts-140400871.html",
+        "https://www.sportsbusinessjournal.com/Articles/2026/11/09/media-speed-reads/",
+        "https://www.aol.com/articles/congratulations-flood-brittany-mahomes-tom-032012000.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpMYO_A5he46bvtZSC-Cb1a4KiGxEaC9Iz0ORJYVVlv8JbvBuVELs9flkBBjI",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/nfl-legend-tom-brady-reacts-140400871.html",
+          "title": "NFL Legend Tom Brady Reacts to Fox Sports’ Erin Andrews Announcement",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpMYO_A5he46bvtZSC-Cb1a4KiGxEaC9Iz0ORJYVVlv8JbvBuVELs9flkBBjI"
+        },
+        {
+          "url": "https://www.sportsbusinessjournal.com/Articles/2026/11/09/media-speed-reads/",
+          "title": "Media speed reads",
+          "publisher": "Sports Business Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDXTqRkTlyZKEwFxXsujzI2CIU_07G1tAi1TbKosieUWiSCcF1DPiJiXyRtH8"
+        },
+        {
+          "url": "https://www.aol.com/articles/congratulations-flood-brittany-mahomes-tom-032012000.html",
+          "title": "Congratulations Flood in From Brittany Mahomes, Tom Brady & Others as Erin Andrews Reaches FOX Career Milestone",
           "publisher": "AOL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbttfrmZPVt9OXIhrKORBJ1a2OqYPi1L6c2YDxULQANPu3HSx3ULRGYOtcS98"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFBBAWqdkzTG1In1io9X7Du9-T2S5FLMmjzw_LQDKidgL-8TDdu7XG1FtWddM"
+        }
+      ]
+    },
+    {
+      "query": "donovan mitchell",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T02:20:00Z",
+      "related_news_urls": [
+        "https://sports.betmgm.com/en/blog/nba/donovan-mitchell-props-odds-gaa/",
+        "https://www.espn.com/nba/recap?gameId=401909953",
+        "https://www.nba.com/hornets/photos/hornets-vs-cavaliers-gallery-11-09-26"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYz5zMLKpPjuII4wQUJPHfklbqj-kalLG8jlVXrL8Kz8Z2X2sATFIkOGn1H2I",
+      "image_credit": "sports.betmgm.com",
+      "news": [
+        {
+          "url": "https://sports.betmgm.com/en/blog/nba/donovan-mitchell-props-odds-gaa/",
+          "title": "Donovan Mitchell Props Today: Pts, Rebs, Asts, 3PT",
+          "publisher": "sports.betmgm.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYz5zMLKpPjuII4wQUJPHfklbqj-kalLG8jlVXrL8Kz8Z2X2sATFIkOGn1H2I"
         },
         {
-          "url": "https://timesofindia.indiatimes.com/real-estate/news/paris-hilton-and-her-husband-rented-a-63-million-mansions-neighbour-for-160000-a-month-their-former-beverly-park-home-is-now-seeking-159000-in-monthly-rent/articleshow/135674077.cms",
-          "title": "Paris Hilton and her husband rented a $63 million mansion's neighbour for $160,000 a month; their former",
-          "publisher": "The Times of India",
+          "url": "https://www.espn.com/nba/recap?gameId=401909953",
+          "title": "Hornets 124-112 Cavaliers (Nov 9, 2026) Game Recap",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBAMaX3OYreWMSfjPq99optWvO1u8lGJEPWEXLcfd7wSR9_bHDQlbrd-g6yV0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrjBaN4caPVHgQruBjAr0NeUmV6Fy8LHtt6D8P_0x0K-0ejSYFxzjH0YhsBrg"
+        },
+        {
+          "url": "https://www.nba.com/hornets/photos/hornets-vs-cavaliers-gallery-11-09-26",
+          "title": "Hornets vs Cavaliers Gallery ‑ 11/09/26",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQI-HhtwYpsouZmWT2Z4idm0Ly4vAjD10NZp4i683z49GtvKDkQ7GiMST1BhKs"
         }
       ]
     }
