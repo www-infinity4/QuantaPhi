@@ -15,3 +15,7 @@
 @keyframes shopphi-story-enter{from{opacity:.12}to{opacity:1}}
 @media(max-width:600px){#shopPhiStoryPlayer{padding:16px;margin:12px 8px 20px}.shopphi-story-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.shopphi-story-button,.shopphi-story-link{display:grid;place-items:center;padding:10px;font-size:16px;min-width:0}}
 @media(prefers-reduced-motion:reduce){#shopPhiStoryPlayer *{animation:none!important;transition:none!important}}
+
+/* Horizontal swipes navigate only when started on non-interactive card artwork; vertical scroll stays native. */
+#oracleCardStage{touch-action:pan-y}
+#oracleCardStage :is(img,video){-webkit-user-drag:none}
