@@ -3,28 +3,336 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T09:31:21.606293Z",
+  "checked_at": "2026-11-10T10:01:23.290694Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "meri brown",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T09:40:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/sister-wives-star-meri-brown-161352260.html",
+        "https://www.usmagazine.com/entertainment/news/sister-wives-meri-claims-ex-kody-would-choose-her-clothes/",
+        "https://www.realitytea.com/2026/11/09/sister-wives-meri-brown-kody-controlling-clothing-habit-2/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3UhwcIkCAcQ0uJ5h6oQcdREW2wOlMuYMBSAAvWJWO0mkF5IvRv9MQXR6YINU",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/sister-wives-star-meri-brown-161352260.html",
+          "title": "‘Sister Wives’ Star Meri Brown Reveals Ex Kody Wanted Wives to Match, Would ‘Choose’ Her Clothes",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3UhwcIkCAcQ0uJ5h6oQcdREW2wOlMuYMBSAAvWJWO0mkF5IvRv9MQXR6YINU"
+        },
+        {
+          "url": "https://www.usmagazine.com/entertainment/news/sister-wives-meri-claims-ex-kody-would-choose-her-clothes/",
+          "title": "Sister Wives’ Meri Brown Claims Ex-Husband Kody Would ‘Choose’ Her Clothes, Wanted Wives to Match",
+          "publisher": "Us Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6FQNOeq7gmmWquO_BA3wm8x_xmxRIPfmx3es0YhaALTTx01R4HJYnF_SCb04"
+        },
+        {
+          "url": "https://www.realitytea.com/2026/11/09/sister-wives-meri-brown-kody-controlling-clothing-habit-2/",
+          "title": "‘Sister Wives’ Meri Brown Exposes Kody’s ‘Very Controlling’ Habit",
+          "publisher": "Reality Tea",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgXoKraCYd-471ktEFNk7Jk8ooiTjNyx8dHIm_32Cnng7Z9T4ebdrb5KFZgok"
+        }
+      ]
+    },
+    {
+      "query": "nintendo zelda ocarina",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T09:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/07/business/media/zelda-ocarina-of-time-remake-nintendo.html",
+        "https://mashable.com/entertainment/zelda-ocarina-of-time-switch-2-metacritic-records",
+        "https://www.techpowerup.com/354592/zelda-ocarina-of-time-remake-gets-a-native-pc-port-through-static-recompilation"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3P4qiGEBirP5kKmJ5FCzywWBXqZpgOM_TbQUWj7h7cfGSdrO_Ce40S8bYH3w",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/07/business/media/zelda-ocarina-of-time-remake-nintendo.html",
+          "title": "A ‘Legend of Zelda’ Game Is Reborn and ’90s Nostalgia Fans Are All In",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3P4qiGEBirP5kKmJ5FCzywWBXqZpgOM_TbQUWj7h7cfGSdrO_Ce40S8bYH3w"
+        },
+        {
+          "url": "https://mashable.com/entertainment/zelda-ocarina-of-time-switch-2-metacritic-records",
+          "title": "'The Ocarina of Time' remake is setting Metacritic records left and right",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRghmIGiGPCgfRzGiXO0GjBw-CO8B0nbM_xCM4is-6jUGWDG3XCQ11FppreVU8"
+        },
+        {
+          "url": "https://www.techpowerup.com/354592/zelda-ocarina-of-time-remake-gets-a-native-pc-port-through-static-recompilation",
+          "title": "Zelda: Ocarina of Time Remake Gets a Native PC Port Through Static Recompilation",
+          "publisher": "TechPowerUp",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmrJUzVebc9qE3TtwCDnL0AVA84A0rZBljSlXCWZjsWyLmcgRattUmAVTRZ4E"
+        }
+      ]
+    },
+    {
+      "query": "ss united states",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T09:40:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/08/travel/ss-united-states-sinking-artificial-reef-hnk",
+        "https://www.wkrg.com/northwest-florida/okaloosa-county/sinking-of-ss-united-states-moved-up-due-to-unsafe-weather-conditions/",
+        "https://www.fox10tv.com/2026/11/09/ss-united-states-leaves-mobile-final-voyage/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7jo4kEru5r7he-vj71ZqVP70NAH0kqFhD514LN9XAoXoCYKCRxnxlqbStq6w",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/08/travel/ss-united-states-sinking-artificial-reef-hnk",
+          "title": "As this storied ship is sunk to become an artificial reef and scuba spot, it concludes the ocean liner era",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7jo4kEru5r7he-vj71ZqVP70NAH0kqFhD514LN9XAoXoCYKCRxnxlqbStq6w"
+        },
+        {
+          "url": "https://www.wkrg.com/northwest-florida/okaloosa-county/sinking-of-ss-united-states-moved-up-due-to-unsafe-weather-conditions/",
+          "title": "Sinking of SS United States moved up due to unsafe weather conditions",
+          "publisher": "WKRG",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHCFQffSzbeYLRgHluZInsIi_5KmztiEgqIlk1O1ZIyN0u50WC5h5LeIXoijY"
+        },
+        {
+          "url": "https://www.fox10tv.com/2026/11/09/ss-united-states-leaves-mobile-final-voyage/",
+          "title": "SS United States leaves Mobile for final voyage",
+          "publisher": "Fox 10 News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0dvJg8Xfi1KUs9wwoLA5-aCUlvqJtwa4i5i_PYKmsUdcPySMCw8s6vvZy0sc"
+        }
+      ]
+    },
+    {
+      "query": "trial",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T09:40:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/09/us/tyler-robinson-charlie-kirk-trial",
+        "https://www.npr.org/2026/11/10/nx-s1-6032715/trial-for-charlie-kirks-accused-killer-to-begin-in-summer-2028",
+        "https://www.foxnews.com/us/michael-ruiz-tyler-robinson-judge-give-long-awaited-trial-date-ruling-assassination-charlie-kirk"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu8OUquNcXQTMbIobccJsWAT2_Higr69k_UB66VO4NQBGB5b0DGJXFqO_wkUQ",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/09/us/tyler-robinson-charlie-kirk-trial",
+          "title": "Judge sets trial date for Charlie Kirk’s accused killer for summer 2028",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu8OUquNcXQTMbIobccJsWAT2_Higr69k_UB66VO4NQBGB5b0DGJXFqO_wkUQ"
+        },
+        {
+          "url": "https://www.npr.org/2026/11/10/nx-s1-6032715/trial-for-charlie-kirks-accused-killer-to-begin-in-summer-2028",
+          "title": "Trial for Charlie Kirk’s accused killer to begin in summer 2028",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://www.foxnews.com/us/michael-ruiz-tyler-robinson-judge-give-long-awaited-trial-date-ruling-assassination-charlie-kirk",
+          "title": "MICHAEL RUIZ: Tyler Robinson judge to give long-awaited trial date ruling in assassination of Charlie Kirk",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFXFtt2yi5wXxRyeaqIzGk8BnueiyVpE1xQRBMLlkgNQHQmETaHNIXQtf6I3g"
+        }
+      ]
+    },
+    {
+      "query": "ryan gosling",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T09:40:00Z",
+      "related_news_urls": [
+        "https://ew.com/nicolas-cage-reacts-to-ryan-gosling-taking-over-as-ghost-rider-12238383",
+        "https://www.yahoo.com/entertainment/movies/articles/does-nicolas-cage-think-ryan-160410479.html",
+        "https://www.reutersconnect.com/item/uncaptioned-nicolas-cage-reacts-to-ryan-goslings-upcoming-ghost-rider-movie/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX09XU0hCQzEyMDMzMjk"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9Va8rjKvZA1I3sD6oJmk7tfdwQvdeecOasMyV9PzD3py623VXMfICNbkQAsQ",
+      "image_credit": "Entertainment Weekly",
+      "news": [
+        {
+          "url": "https://ew.com/nicolas-cage-reacts-to-ryan-gosling-taking-over-as-ghost-rider-12238383",
+          "title": "Nicolas Cage reacts to Ryan Gosling taking over as Ghost Rider",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9Va8rjKvZA1I3sD6oJmk7tfdwQvdeecOasMyV9PzD3py623VXMfICNbkQAsQ"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/does-nicolas-cage-think-ryan-160410479.html",
+          "title": "What Does Nicolas Cage Think of Ryan Gosling’s Ghost Rider Reboot? He Says…",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-JONoTz8j5gxDcuRYpSW9OjyZDOIH-qpvZ3JOsJC_M6oGYX34P7XAPWGVozQ"
+        },
+        {
+          "url": "https://www.reutersconnect.com/item/uncaptioned-nicolas-cage-reacts-to-ryan-goslings-upcoming-ghost-rider-movie/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX09XU0hCQzEyMDMzMjk",
+          "title": "Licensable video: UNCAPTIONED: Nicolas Cage reacts to Ryan Gosling's upcoming Ghost Rider movie",
+          "publisher": "Reuters Connect",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKZPXNds_z4T1Segpujtik8r1vEnEKRAxxaaSoP66CWGeppsiwnBtf2w-cujM"
+        }
+      ]
+    },
+    {
+      "query": "earls kitchen bar surcharge reaction",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T09:30:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/food-drink/restaurant-admin-fees-spark-backlash-diners-question-what-theyre-paying",
+        "https://www.yahoo.com/lifestyle/articles/restaurant-customer-says-harassed-extorted-110051343.html",
+        "https://nypost.com/2026/11/04/lifestyle/diner-fumes-over-sneaky-admin-fee-on-earls-kitchen-bill/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHDwdyTTBF65IrGlHuSaoVLAw4I-ydh5BViruBAdh3MhPEyvrHF4KvbclVGWc",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/food-drink/restaurant-admin-fees-spark-backlash-diners-question-what-theyre-paying",
+          "title": "Restaurant 'admin' fees spark backlash as diners question what they're paying for",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHDwdyTTBF65IrGlHuSaoVLAw4I-ydh5BViruBAdh3MhPEyvrHF4KvbclVGWc"
+        },
+        {
+          "url": "https://www.yahoo.com/lifestyle/articles/restaurant-customer-says-harassed-extorted-110051343.html",
+          "title": "Restaurant Customer Says He Was ‘Harassed and Extorted’ After Bill Included an ‘Admin Fee’",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTe8SHwFWmf4LSQm00pRVw0FFS25Le7Qi67ie_1I-qBGqb40Mgp6oIzVHV3Z7Y"
+        },
+        {
+          "url": "https://nypost.com/2026/11/04/lifestyle/diner-fumes-over-sneaky-admin-fee-on-earls-kitchen-bill/",
+          "title": "‘Harassed and extorted’: Diner slams restaurant’s sneaky ‘admin fee’",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0rWAkd_tTnjw2TOlvUximDUFCnn7JwNsRRBaEIbCF9fXBoKzo4NMfBPNNkis"
+        }
+      ]
+    },
+    {
+      "query": "week 10 waiver wire",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T09:30:00Z",
+      "related_news_urls": [
+        "https://www.nfl.com/news/2026-nfl-fantasy-football-waiver-wire-week-10-jordyn-tyson-tank-dell-headline-top-15-targets",
+        "https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50392903/nfl-week-9-fantasy-football-winners-losers-injuries-rankings",
+        "https://bleacherreport.com/articles/25530941-week-10-waiver-wire-pickups-highlighted-audric-estime-corey-kiner-seth-mcgowan"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqZ9aqNgoss93gxJXXD_OCL_8v5JhhRUvYQdv6_zPnCsBwvYccjkdGs3in8mM",
+      "image_credit": "NFL.com",
+      "news": [
+        {
+          "url": "https://www.nfl.com/news/2026-nfl-fantasy-football-waiver-wire-week-10-jordyn-tyson-tank-dell-headline-top-15-targets",
+          "title": "2026 NFL fantasy football waiver wire, Week 10: Jordyn Tyson, Tank Dell headline top 15 targets",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqZ9aqNgoss93gxJXXD_OCL_8v5JhhRUvYQdv6_zPnCsBwvYccjkdGs3in8mM"
+        },
+        {
+          "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50392903/nfl-week-9-fantasy-football-winners-losers-injuries-rankings",
+          "title": "Week 9 winners and losers: Lamb, Walker come up big, Gibbs, Taylor disappoint",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5TVEAQuFhzSW3KNrlHkX5qkYvbMbdmpZmzzXXnitrcc8bEBuzxz_7DMc3COU"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25530941-week-10-waiver-wire-pickups-highlighted-audric-estime-corey-kiner-seth-mcgowan",
+          "title": "Week 10 Waiver Wire Pickups Highlighted by Audric Estime, Corey Kiner, Seth McGowan",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWPM2HxLJ0wgMk8btb7BP2-3rTJZG77FrgijVhWTGE-xO7b0hvgTtO0ufV3L0"
+        }
+      ]
+    },
+    {
+      "query": "shilo sanders",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T09:20:00Z",
+      "related_news_urls": [
+        "https://timesofindia.indiatimes.com/sports/nfl/news/but-its-outrageous-deion-sanders-son-shilo-sanders-blasts-new-yorks-12000-rent-prices-as-11-89-million-bankruptcy-case-continues/articleshow/135624495.cms",
+        "https://sports.ndtv.com/us/nfl/shilo-sanders-opens-up-about-his-biggest-frustration-with-new-york-after-weeks-of-searching-for-a-new-home-12295306",
+        "https://www.essentiallysports.com/nfl-legends-news-its-outrageous-deion-sanders-son-shilo-doesnt-hold-back-against-new-york-real-estate-prices-amid-bankruptcy-trial/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQj1A_UdlpU197WZSvlctwJ_O3RJKz5qNg7E_pDSLFlxCbUMMgMXUyyrRBIDIo",
+      "image_credit": "The Times of India",
+      "news": [
+        {
+          "url": "https://timesofindia.indiatimes.com/sports/nfl/news/but-its-outrageous-deion-sanders-son-shilo-sanders-blasts-new-yorks-12000-rent-prices-as-11-89-million-bankruptcy-case-continues/articleshow/135624495.cms",
+          "title": "“But it's outrageous”: Deion Sanders’ son Shilo Sanders blasts New York’s $12,000 rent prices as $11.89 m",
+          "publisher": "The Times of India",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQj1A_UdlpU197WZSvlctwJ_O3RJKz5qNg7E_pDSLFlxCbUMMgMXUyyrRBIDIo"
+        },
+        {
+          "url": "https://sports.ndtv.com/us/nfl/shilo-sanders-opens-up-about-his-biggest-frustration-with-new-york-after-weeks-of-searching-for-a-new-home-12295306",
+          "title": "Shilo Sanders Opens Up About His Biggest Frustration With New York After Weeks Of Searching For A New Home",
+          "publisher": "NDTV Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPXLnddMS7ckP2MnArIIhWi9vOQoyvT9uS80CkEbqGYayscOSXVAp8LvOO5-g"
+        },
+        {
+          "url": "https://www.essentiallysports.com/nfl-legends-news-its-outrageous-deion-sanders-son-shilo-doesnt-hold-back-against-new-york-real-estate-prices-amid-bankruptcy-trial/",
+          "title": "“It’s Outrageous”: Deion Sanders’ Son Shilo Doesn’t Hold Back Against New York Real Estate Prices Amid Bankruptcy Trial",
+          "publisher": "EssentiallySports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Zu5zZP9tEnJPCc_HwEuQX_FC0gb9CEIFXFz7GbHpLcOb0-Ef0tKUEzGtlZc"
+        }
+      ]
+    },
+    {
+      "query": "silo",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T09:20:00Z",
+      "related_news_urls": [
+        "https://screenrant.com/tim-robbins-silo-season-4-joining-monarch-prequel-apple-tv/",
+        "https://www.macrumors.com/2026/11/04/apple-tv-reportedly-planning-silo-spinoff/",
+        "https://www.imdb.com/news/ni66101402/?ref_=int_nwr_7"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRp5UIg4vBChFmO9xvIsy_23jUEE9AjDKNKgAYellFlxMQz9PyEKR-8RGgiRR8",
+      "image_credit": "ScreenRant",
+      "news": [
+        {
+          "url": "https://screenrant.com/tim-robbins-silo-season-4-joining-monarch-prequel-apple-tv/",
+          "title": "Silo Season 4's Loss Gives Another Apple TV Sci-Fi Series A Major Boost",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRp5UIg4vBChFmO9xvIsy_23jUEE9AjDKNKgAYellFlxMQz9PyEKR-8RGgiRR8"
+        },
+        {
+          "url": "https://www.macrumors.com/2026/11/04/apple-tv-reportedly-planning-silo-spinoff/",
+          "title": "Apple TV Reportedly Planning 'Silo' Spinoff",
+          "publisher": "MacRumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXwPh5Ysi0PNtXq6gryvqB0tPFt3xaUS-FrcA5Oi6i0bjsvTiJROESDBr-0tg"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66101402/?ref_=int_nwr_7",
+          "title": "Silo Star’s Never-Before-Seen Pilot Episode Is Now Free To Watch",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnKmxRknaLfwyJhQ7u_qjYJ0O9v5HturBmwiBtrRfevUvKv2wtO37AnvBy86Q"
+        }
+      ]
+    },
     {
       "query": "chicago heights",
       "approx_searches": "100+",
       "published_at": "2026-11-10T09:10:00Z",
       "related_news_urls": [
-        "https://abc7chicago.com/post/chicago-heights-news-police-seek-help-identifying-owner-nickelodeon-jacket-found-human-remains-elmwood/20028550/",
         "https://www.fox32chicago.com/news/human-remains-garbage-can-chicago-suburb",
-        "https://wgntv.com/news/south-suburbs/human-remains-found-inside-garbage-can-in-south-suburban-chicago-heights-authorities-confirm/"
+        "https://wgntv.com/news/south-suburbs/human-remains-found-inside-garbage-can-in-south-suburban-chicago-heights-authorities-confirm/",
+        "https://patch.com/illinois/chicagoheights/human-remains-found-garbage-can-chicago-heights-pd"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTP2zsR-xjhDyREkgCY7PmIwlBO3_pRJ5OyV_DUtqa19Mun3zhMlS9P-gWbJA",
-      "image_credit": "ABC7 Chicago",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNISXseKSn05cTZoU3Gd6pSyPgpv4TJzjyzJcmdwPBT5uT353JCD2hxAEGG1s",
+      "image_credit": "FOX 32 Chicago",
       "news": [
-        {
-          "url": "https://abc7chicago.com/post/chicago-heights-news-police-seek-help-identifying-owner-nickelodeon-jacket-found-human-remains-elmwood/20028550/",
-          "title": "Chicago Heights news: Police seek help identifying owner of 'Nickelodeon' jacket found with human remains near Chicago and Elmwood",
-          "publisher": "ABC7 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTP2zsR-xjhDyREkgCY7PmIwlBO3_pRJ5OyV_DUtqa19Mun3zhMlS9P-gWbJA"
-        },
         {
           "url": "https://www.fox32chicago.com/news/human-remains-garbage-can-chicago-suburb",
           "title": "Chicago Heights police seek jacket owner after human remains found",
@@ -38,313 +346,13 @@
           "publisher": "WGN-TV",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr8BLkXEPq-Zox39JXUtB80yDJrQF7yijJxYIj5pbA9-s5xNlGnyMBJ--G3No"
-        }
-      ]
-    },
-    {
-      "query": "stargate sg-1",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T09:00:00Z",
-      "related_news_urls": [
-        "https://en.softonic.com/articles/stargate-sg-1-gets-a-new-collectible-next-month-horus-guard-helmet",
-        "https://www.polygon.com/stargate-james-spader-streaming-free-pluto-tv-november-2026/",
-        "https://www.cbr.com/stargate-movie-streaming-free-pluto-tv-november-2026/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk7pYIupppba6iQ8BbjqyeS70_hxTlRYho2sraCl9kdS0megYrvaVkgYorjiM",
-      "image_credit": "Softonic",
-      "news": [
-        {
-          "url": "https://en.softonic.com/articles/stargate-sg-1-gets-a-new-collectible-next-month-horus-guard-helmet",
-          "title": "Stargate SG-1 gets a new collectible next month: Horus Guard helmet",
-          "publisher": "Softonic",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk7pYIupppba6iQ8BbjqyeS70_hxTlRYho2sraCl9kdS0megYrvaVkgYorjiM"
         },
         {
-          "url": "https://www.polygon.com/stargate-james-spader-streaming-free-pluto-tv-november-2026/",
-          "title": "32 Years Later, James Spader’s Near-Perfect Sci-Fi Adventure Blasts Onto Free Streaming",
-          "publisher": "Polygon.com",
+          "url": "https://patch.com/illinois/chicagoheights/human-remains-found-garbage-can-chicago-heights-pd",
+          "title": "Human Remains Found In Garbage Can: Chicago Heights PD",
+          "publisher": "Patch",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6tmrTZQawXBFTThNfEhGr9K7fIqL3bwIjgXrefou4xX3bsi_H8U_wAh8Lfho"
-        },
-        {
-          "url": "https://www.cbr.com/stargate-movie-streaming-free-pluto-tv-november-2026/",
-          "title": "Kurt Russell's '90s Sci-Fi Classic Is Streaming for Free Ahead of Prime Video Reboot",
-          "publisher": "Comic Book Resources",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3jEY00dcfI6KGcp_VIxTU5KgeoMrVZTjvcWMoYcCrJVHikgLTfWRqIrsZdXo"
-        }
-      ]
-    },
-    {
-      "query": "epstein",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T09:00:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/cm86z6w59gggo",
-        "https://www.bbc.co.uk/news/videos/cmqxnxgwqrqlo",
-        "https://ua.news/en/dovkolo-svitu/model-zaiavila-shcho-prezident-mc2-vidpraviv-yiyi-do-epshteina-bbc-news"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhj5tkyCuZxGR8NdtVWgtJAuF6JkxtyhbtIdDk5j7zI0b4I70bZlLVSs-swfs",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/cm86z6w59gggo",
-          "title": "Epstein associate who still runs model agency 'put me in danger' says abuse survivor",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhj5tkyCuZxGR8NdtVWgtJAuF6JkxtyhbtIdDk5j7zI0b4I70bZlLVSs-swfs"
-        },
-        {
-          "url": "https://www.bbc.co.uk/news/videos/cmqxnxgwqrqlo",
-          "title": "How model agencies helped Epstein access victims",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeyzW2YP7smHiRyHVX9vGLDui6z8PAmq7hVCWDZ4BRoi9zx48ZusrWJcTWyOk"
-        },
-        {
-          "url": "https://ua.news/en/dovkolo-svitu/model-zaiavila-shcho-prezident-mc2-vidpraviv-yiyi-do-epshteina-bbc-news",
-          "title": "Model says MC2 president sent her to Epstein — BBC News",
-          "publisher": "UA.NEWS",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTprtFj6PtCUhjL9SO-aSMY52a4okToB4iZCiv98ebsXUeX7y2unNMsZ6_lpX4"
-        }
-      ]
-    },
-    {
-      "query": "bob boone",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T08:50:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/phillies-world-series-champion-father-080359288.html",
-        "https://www.si.com/mlb/angels/onsi/bob-boone-cause-of-death"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSagxi7mO0wDIYRil0CWirIPT416_WA_SbrwgR7EGmNyTTSGVh7g-JwN_5h7_0",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/phillies-world-series-champion-father-080359288.html",
-          "title": "Phillies World Series champion, father of Yankees’ Aaron Boone, dies at 78",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSagxi7mO0wDIYRil0CWirIPT416_WA_SbrwgR7EGmNyTTSGVh7g-JwN_5h7_0"
-        },
-        {
-          "url": "https://www.si.com/mlb/angels/onsi/bob-boone-cause-of-death",
-          "title": "Former Angels All-Star, Postseason Hero, Dies at 78",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqLZ2jLB_JTQg2Ql_nSKEEV75OztXWqgVE5EFLa3emIoSHJT8e1ulMn4YX2Fc"
-        }
-      ]
-    },
-    {
-      "query": "cox",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T08:40:00Z",
-      "related_news_urls": [
-        "https://www.sltrib.com/news/politics/2026/11/09/utah-elections-cox-points-gop/",
-        "https://www.ksl.com/article/51644744/utah-house-democrats-wins-come-with-mixed-feelings-over-loss-of-some-moderate-republicans",
-        "https://kutv.com/news/politics/gov-cox-says-utah-republicans-must-rebuild-voter-trust-after-major-midterm-election-losse"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqt4cgzWPWupqP6xVO3QUpPrZ-kzDeXAV5YvfGVZG6bHHFabjJwPWigvpikEU",
-      "image_credit": "The Salt Lake Tribune",
-      "news": [
-        {
-          "url": "https://www.sltrib.com/news/politics/2026/11/09/utah-elections-cox-points-gop/",
-          "title": "Gov. Cox: Ignoring voters on redistricting led to GOP’s big Utah Legislature loss",
-          "publisher": "The Salt Lake Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqt4cgzWPWupqP6xVO3QUpPrZ-kzDeXAV5YvfGVZG6bHHFabjJwPWigvpikEU"
-        },
-        {
-          "url": "https://www.ksl.com/article/51644744/utah-house-democrats-wins-come-with-mixed-feelings-over-loss-of-some-moderate-republicans",
-          "title": "Utah House Democrats' wins come with mixed feelings over loss of some moderate Republicans",
-          "publisher": "KSL News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMr1IZG5NsIWjRLGJdC07X-ie-6hipTgvHQcDWkZi3FhGc3FbJAlEVjB-oqfE"
-        },
-        {
-          "url": "https://kutv.com/news/politics/gov-cox-says-utah-republicans-must-rebuild-voter-trust-after-major-midterm-election-losse",
-          "title": "Gov. Cox says Utah Republicans must rebuild voter trust after major midterm losses",
-          "publisher": "KUTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSoOf4zx9lrRzVNNgEwd4kAhsLyvRY-2efKI0N9stDBZCnjrV76I99ObPKEioc"
-        }
-      ]
-    },
-    {
-      "query": "黄乐",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T08:30:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/zhongwen/articles/cjr4y41lv6zko/simp",
-        "https://cn.nytimes.com/usa/20261110/nvidia-megaspeed-investigation-huang/",
-        "https://wenews.caixin.com/2026-11-10/102503026.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPMy4JAIszsZ6BIkqUYl587z6LucXZwEOM0prIXz4XIbi219erVy379LZd0rA",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/zhongwen/articles/cjr4y41lv6zko/simp",
-          "title": "黄仁勋婚外情：被指为中共间谍的黄乐是谁？",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPMy4JAIszsZ6BIkqUYl587z6LucXZwEOM0prIXz4XIbi219erVy379LZd0rA"
-        },
-        {
-          "url": "https://cn.nytimes.com/usa/20261110/nvidia-megaspeed-investigation-huang/",
-          "title": "美国商务部就芯片展开的调查在英伟达介入后中止",
-          "publisher": "纽约时报中文网",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRktzrpUH--lpEI-2RLpFWGwdMaEo06I1rGANqCfV3MeAwKu4Yrtpw4pXbMcfs"
-        },
-        {
-          "url": "https://wenews.caixin.com/2026-11-10/102503026.html",
-          "title": "和熙私募往事 Alice Huang与康伟的高光与挫折",
-          "publisher": "财新",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRI2whjAQ3Cp0d0FP870yIUWU3BVtAacC66tKv0n_SILOqIwXSlYYJdQWVRZIs"
-        }
-      ]
-    },
-    {
-      "query": "tony stewart nascar",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-10T08:20:00Z",
-      "related_news_urls": [
-        "https://racingnews.co/2026/11/09/tony-stewart-says-he-would-fire-everyone-at-nascar/",
-        "https://www.whiskeyriff.com/2026/11/08/cleaning-house-at-the-top-tony-stewart-says-hed-fire-everyone-if-he-became-nascar-commissioner/",
-        "https://journalarta.com/en/2026/11/10/tony-stewart-would-fire-all-nascar-upper-management/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSERlJhBmksF3T7kK0WTiefdzD7zcxmAvViPJv37kTGDgnhdN2bw4lGrhlL9NE",
-      "image_credit": "RacingNews.co",
-      "news": [
-        {
-          "url": "https://racingnews.co/2026/11/09/tony-stewart-says-he-would-fire-everyone-at-nascar/",
-          "title": "Tony Stewart says he would fire everyone at NASCAR (Video)",
-          "publisher": "RacingNews.co",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSERlJhBmksF3T7kK0WTiefdzD7zcxmAvViPJv37kTGDgnhdN2bw4lGrhlL9NE"
-        },
-        {
-          "url": "https://www.whiskeyriff.com/2026/11/08/cleaning-house-at-the-top-tony-stewart-says-hed-fire-everyone-if-he-became-nascar-commissioner/",
-          "title": "“Cleaning House At The Top” – Tony Stewart Says He’d Fire Everyone If He Became NASCAR Commissioner",
-          "publisher": "Whiskey Riff",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeX2-lwM-Sql4VlklFmyJc7xR8dNNdcONnJFd1L0prPPNpVkq4-x7cX_Gk5pE"
-        },
-        {
-          "url": "https://journalarta.com/en/2026/11/10/tony-stewart-would-fire-all-nascar-upper-management/",
-          "title": "Tony Stewart Would Fire All of NASCAR’s Upper Management on Day One",
-          "publisher": "JournalArta",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREyvmg_jOcngB8BFndVblhHYUAhiYoMPxphodZf9ypFkoehtlyme4_r0YdMIU"
-        }
-      ]
-    },
-    {
-      "query": "when is black friday 2026",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T08:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/wirecutter/money/best-early-black-friday-deals-2026/",
-        "https://mashable.com/tech/amazon-black-friday-2026-everything-to-know",
-        "https://www.seriouseats.com/best-early-black-friday-amazon-deals-2026-12186267"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhrviGjKvbX7XK8PRGYzSDC-2LV5RyzjelZuW541DfyIz0s0WfNsGcrC6_HwA",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/wirecutter/money/best-early-black-friday-deals-2026/",
-          "title": "All the Very Best Black Friday Deals We’ve Already Found",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhrviGjKvbX7XK8PRGYzSDC-2LV5RyzjelZuW541DfyIz0s0WfNsGcrC6_HwA"
-        },
-        {
-          "url": "https://mashable.com/tech/amazon-black-friday-2026-everything-to-know",
-          "title": "Amazon just announced the dates of its extra-long Black Friday Week sale: Everything we know so far",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoR58vjW_I1JlaeNZlUINeI4vd6LXs9T5BpW-wqB7LFMb-ZD8sM9iLUkZLf3w"
-        },
-        {
-          "url": "https://www.seriouseats.com/best-early-black-friday-amazon-deals-2026-12186267",
-          "title": "Amazon’s Black Friday Sale Starts Now With These 32 Secret Deals",
-          "publisher": "Serious Eats",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3nXxL3Nb_xBXwGT32HIlX8NM5WhSPOwKuBDRvOTs3WwR7x-NvBynSuCguRak"
-        }
-      ]
-    },
-    {
-      "query": "theo james",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T08:10:00Z",
-      "related_news_urls": [
-        "https://www.redcarpet-fashionawards.com/2026/11/09/kaya-scodelarios-rerun-at-netflixs-the-gentlemen-event/",
-        "https://www.fashiontimes.co.uk/kaya-scodelario-white-fringed-gown-netflix-event-1767355",
-        "https://www.adelaidenow.com.au/entertainment/celebrity-life/theo-james-kaya-scodelario-and-more-attend-the-gentlemen-event/video/90b2914225ef9917915b64a0b2cace45"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVfppAn0YCkTpl1-dqTxvV1dHrihc4pSEsMETSzna2DZ9mzAeJ2PHHFBGVnQQ",
-      "image_credit": "Red Carpet Fashion Awards",
-      "news": [
-        {
-          "url": "https://www.redcarpet-fashionawards.com/2026/11/09/kaya-scodelarios-rerun-at-netflixs-the-gentlemen-event/",
-          "title": "Kaya Scodelario’s Rerun at Netflix’s ‘The Gentlemen’ Event",
-          "publisher": "Red Carpet Fashion Awards",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVfppAn0YCkTpl1-dqTxvV1dHrihc4pSEsMETSzna2DZ9mzAeJ2PHHFBGVnQQ"
-        },
-        {
-          "url": "https://www.fashiontimes.co.uk/kaya-scodelario-white-fringed-gown-netflix-event-1767355",
-          "title": "Kaya Scodelario's White Gown Earns a 'Paper Shredder Eleganza' Verdict at Netflix's LA Event With Theo James",
-          "publisher": "Fashion Times UK",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSq6LiPjFl3ugAfGFMYgkgzLm4RS2N_lFtCT_-cCiuh2uMTMXX1We7ujWkLKmM"
-        },
-        {
-          "url": "https://www.adelaidenow.com.au/entertainment/celebrity-life/theo-james-kaya-scodelario-and-more-attend-the-gentlemen-event/video/90b2914225ef9917915b64a0b2cace45",
-          "title": "Theo James, Kaya Scodelario and more attend ‘The Gentlemen’ event",
-          "publisher": "Adelaide Now",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrwmy4niwH_3NEDZWrQAtGDYNoM78LexiYdqiAouvJOwPdfB0XtWET2SFGSFo"
-        }
-      ]
-    },
-    {
-      "query": "jemima goldsmith",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T08:00:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/c95ynylr8j6xo",
-        "https://deadline.com/2026/11/jemima-goldsmith-accuses-russell-brand-of-violence-abuse-1237218315/",
-        "https://pagesix.com/2026/11/09/celebrity-news/russell-brands-ex-accuses-him-of-violent-abuse-hours-after-rape-sentencing/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRAnZqmWdeKxHb5jr0KH24fD6rVcdUu0h216gcGh4CvUhAAdtgfnXtgLKKPUA",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/c95ynylr8j6xo",
-          "title": "Jemima Goldsmith accuses Russell Brand of violence and abuse against her",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRAnZqmWdeKxHb5jr0KH24fD6rVcdUu0h216gcGh4CvUhAAdtgfnXtgLKKPUA"
-        },
-        {
-          "url": "https://deadline.com/2026/11/jemima-goldsmith-accuses-russell-brand-of-violence-abuse-1237218315/",
-          "title": "Producer Jemima Goldsmith Accuses Russell Brand of “Violence, Coercive Control & Abuse”",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRK9sqKQpiAWjlBGKCUTQC4ALqNZnElx5XEJIQfEEYdC22w-u7RVncwFNF6NIc"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/09/celebrity-news/russell-brands-ex-accuses-him-of-violent-abuse-hours-after-rape-sentencing/",
-          "title": "Russell Brand’s ex accuses him of violent abuse hours after rape sentencing",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbw0RkX8KTex-hCuJb_-gswZ-BA0w2_6bOPMk62DzKKjmSmxeN4xIc02lMCA8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrmFhI_RgygD8Qp5PZvAM-IJr0PezNBqjFJz-6siiyhisWkWAn7mV_bkGnuvM"
         }
       ]
     }
