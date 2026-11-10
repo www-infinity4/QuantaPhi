@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T01:01:42.864904Z",
+  "checked_at": "2026-11-10T01:31:36.277789Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "justin jefferson",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-10T00:40:00Z",
+      "query": "carmelo anthony",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T01:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50408415/vikings-justin-jefferson-miraculous-catch-bills-2022",
-        "https://www.nytimes.com/athletic/7753776/2026/11/05/justin-jefferson-vikings-offense-trade-deadline-silence/",
-        "https://www.startribune.com/minnesota-vikings-offense-kyler-murray-justin-jefferson-stats-nfl-film-breakdown-buffalo-bills-mnf/601906308"
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/lala-anthony-recalls-marriage-anxiety-155435914.html",
+        "https://www.complex.com/sports/a/bernadette-giacomazzo/carmelo-anthony-marriage-cheating-allegations-lala-anthony",
+        "https://www.essentiallysports.com/nba-legends-basketball-news-i-never-slept-carmelo-anthonys-ex-wife-la-la-claims-nba-players-cheat-in-least-expected-cities/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsfMScxJQgVdOiLjgB8DaNl7eQFYXS4W-n4qUPxICcFB9LcPogeMnpIIjloGQ",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNWZ8WQ1dWKIqW_CqxXuNWnGQATduyisnVKQ-cxpNqbWm3uvvQvc8jO1sE_1E",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50408415/vikings-justin-jefferson-miraculous-catch-bills-2022",
-          "title": "Inside Justin Jefferson's miraculous catch for Vikings versus Bills in 2022",
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/lala-anthony-recalls-marriage-anxiety-155435914.html",
+          "title": "LaLa Anthony Recalls Marriage Anxiety With Carmelo Anthony",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNWZ8WQ1dWKIqW_CqxXuNWnGQATduyisnVKQ-cxpNqbWm3uvvQvc8jO1sE_1E"
+        },
+        {
+          "url": "https://www.complex.com/sports/a/bernadette-giacomazzo/carmelo-anthony-marriage-cheating-allegations-lala-anthony",
+          "title": "LaLa Anthony Recalls Sleepless Nights Over Carmelo Anthony's Alleged Cheating: 'I Never Slept'",
+          "publisher": "Complex",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJsyykajfbJ-fNDJo8EDaWtNJ3y7_L84SNQjzrowyVErvKachdC2M48aDduYI"
+        },
+        {
+          "url": "https://www.essentiallysports.com/nba-legends-basketball-news-i-never-slept-carmelo-anthonys-ex-wife-la-la-claims-nba-players-cheat-in-least-expected-cities/",
+          "title": "“I Never Slept”: Carmelo Anthony’s Ex-Wife La La Claims NBA Players Cheat in Least Expected Cities",
+          "publisher": "EssentiallySports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7KmhrAvqztMJqqI2I57vH-O1UzvCz-OkixKNO_rzRydViQq2QttaN1JlAGaQ"
+        }
+      ]
+    },
+    {
+      "query": "mel gibson",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T01:10:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/movies/articles/1996-film-ranked-among-mel-120508021.html",
+        "https://dapsmagic.com/2026/11/ransom-disney-this-day-november-8-1996/",
+        "https://movieweb.com/flight-risk-mark-wahlberg-mel-gibson-streaming-hbo-max-november-2026/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEA3P59nrnEshbUcAd3jPQ-ZRiH0oyKcAZmaVkR1M2XS98HC4e_smbSir5A90",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/1996-film-ranked-among-mel-120508021.html",
+          "title": "1996 Film, Ranked Among Mel Gibson's Best Movies, Now Called 'Pure Poison' By Critics",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEA3P59nrnEshbUcAd3jPQ-ZRiH0oyKcAZmaVkR1M2XS98HC4e_smbSir5A90"
+        },
+        {
+          "url": "https://dapsmagic.com/2026/11/ransom-disney-this-day-november-8-1996/",
+          "title": "Ransom | DISNEY THIS DAY | November 8, 1996",
+          "publisher": "Daps Magic",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwhancJxLTucJ9YtAL9GNpwMooJv7OOg5udtRyYNR4A2G-thM3OxAKqFG3B0M"
+        },
+        {
+          "url": "https://movieweb.com/flight-risk-mark-wahlberg-mel-gibson-streaming-hbo-max-november-2026/",
+          "title": "Mark Wahlberg & Mel Gibson's 91-Minute Action Thriller Is Officially Being Cut From Streaming",
+          "publisher": "MovieWeb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaDgqDYSJdU6E1RMvg0O-WrnLut5qmjZ_4BXdl0-DkbNjXy6oYVEgyWmIF6yY"
+        }
+      ]
+    },
+    {
+      "query": "siue vs missouri",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T01:10:00Z",
+      "related_news_urls": [
+        "https://www.rockmnation.com/missouri-tigers-basketball/162871/mbb-preview-crowe-looking-to-lead-bounceback-performance-against-siue",
+        "https://www.stltoday.com/sports/college/mizzou/article_2a41b602-aa7a-46a3-9f42-8f4bc1a06932.html",
+        "https://247sports.com/college/missouri/article/mizzou-basketball-tiger-tip-off-preview-siue-292428234/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtr1tBlueG6rXCxUrobi7tHr30WHPAxz960-5o_mF-5cyDx7uOh9TThJ4abC4",
+      "image_credit": "Rock M Nation",
+      "news": [
+        {
+          "url": "https://www.rockmnation.com/missouri-tigers-basketball/162871/mbb-preview-crowe-looking-to-lead-bounceback-performance-against-siue",
+          "title": "MBB Preview/Live Thread: Crowe looking to lead bounceback performance against SIUE",
+          "publisher": "Rock M Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtr1tBlueG6rXCxUrobi7tHr30WHPAxz960-5o_mF-5cyDx7uOh9TThJ4abC4"
+        },
+        {
+          "url": "https://www.stltoday.com/sports/college/mizzou/article_2a41b602-aa7a-46a3-9f42-8f4bc1a06932.html",
+          "title": "How to watch Mizzou Tigers basketball vs. SIUE Cougars: TV, live stream, game time",
+          "publisher": "STLtoday.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVH4YRY6lLSD6SBXrbGLfMpHI2hNuJtjNb_BLSbOgDehwj8IFrgWbo4WSCQwA"
+        },
+        {
+          "url": "https://247sports.com/college/missouri/article/mizzou-basketball-tiger-tip-off-preview-siue-292428234/",
+          "title": "Tiger Tip-Off Preview: SIUE",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTu14mEZSliw5qFEdOKgvE-3_GMFhSVyuP0CB4cSY8fCkYwDHqJUjMt3X1x3x4"
+        }
+      ]
+    },
+    {
+      "query": "spurs vs suns",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-10T01:00:00Z",
+      "related_news_urls": [
+        "https://www.poundingtherock.com/spurs-game-previews/109591/game-preview-san-antonio-spurs-vs-phoenix-suns",
+        "https://www.brightsideofthesun.com/suns-game/113341/victor-wembanyama-spurs-suns-matchup-three-point-shooting",
+        "https://sports.yahoo.com/articles/preview-suns-face-tall-task-171031068.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGWZlU8hJQwn0apt7qJjca42RfQOqNCAU481U94EHKPsfiXEUKw12yhWkoQD8",
+      "image_credit": "Pounding The Rock",
+      "news": [
+        {
+          "url": "https://www.poundingtherock.com/spurs-game-previews/109591/game-preview-san-antonio-spurs-vs-phoenix-suns",
+          "title": "Game Preview: San Antonio Spurs vs Phoenix Suns",
+          "publisher": "Pounding The Rock",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGWZlU8hJQwn0apt7qJjca42RfQOqNCAU481U94EHKPsfiXEUKw12yhWkoQD8"
+        },
+        {
+          "url": "https://www.brightsideofthesun.com/suns-game/113341/victor-wembanyama-spurs-suns-matchup-three-point-shooting",
+          "title": "Game Preview: Phoenix looks to carry its defensive momentum into matchup with San Antonio",
+          "publisher": "Bright Side Of The Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_Y8zH61jo2gOeB8BYtjYXcuCgfKv_W7vX5rnfGTJQJTc5XMEMRHKvUYqkZ7I"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/preview-suns-face-tall-task-171031068.html",
+          "title": "Preview: Suns Face Tall Task Tonight vs Spurs",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9A12CbCdCHuEfZ_RAftS4Y5wdNkHdyQ3BzjsjcssNmDzJkK2A4WBwNviSn9g"
+        }
+      ]
+    },
+    {
+      "query": "troy aikman",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-10T01:00:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/sports/nfl/2026/11/09/troy-aikman-joe-buck-monday-night-football/92697285007/",
+        "https://www.nytimes.com/athletic/7748870/2026/11/02/andrew-marchand-questions-sports-media/",
+        "https://sports.yahoo.com/articles/ryan-clark-believes-espn-making-212411454.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR57U0jNdswu9mUH7TrUX2DcRjB-s_zQbcUWxnD-ELBlpAuytKHSYqH-XsQi-4",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/sports/nfl/2026/11/09/troy-aikman-joe-buck-monday-night-football/92697285007/",
+          "title": "ESPN breaks fans' hearts instead of bank in Troy Aikman, Joe Buck drama | Opinion",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR57U0jNdswu9mUH7TrUX2DcRjB-s_zQbcUWxnD-ELBlpAuytKHSYqH-XsQi-4"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7748870/2026/11/02/andrew-marchand-questions-sports-media/",
+          "title": "Live Q&A: Andrew Marchand on his latest Aikman-Buck reporting and more - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwMZfAhmIhPg_rAC-yS0-zIYV9bYAsRwSWM4tEJsvrVL5-vhbDu2catJzr4bA"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/ryan-clark-believes-espn-making-212411454.html",
+          "title": "Ryan Clark Believes ESPN Is Making Troy Aikman Look Like ‘Bad Guy’ Amid Contract Tensions",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR32RaL20_qtjMVlp8HdCaZllfonX0LQnHVwUUB8Hqw4i1tmRjPAu7PtmmseJw"
+        }
+      ]
+    },
+    {
+      "query": "grayson allen",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-10T01:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/fantasy/article/the-playlist-fantasy-basketball-waiver-wire-adds-and-schedule-breakdown-for-week-4-of-2026-27-155149078.html",
+        "https://www.nba.com/news/nba-fantasy-salary-cap-edition-week-3-recap",
+        "https://www.espn.com/fantasy/basketball/story/_/id/50383545/fantasy-basketball-rookie-watch-nba-2026-2027"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrLQb0buztgUFIDSfwakES0TdRiNN8zYCN-bCcy0bRXIraz2EU1qgIUrxSgt0",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/fantasy/article/the-playlist-fantasy-basketball-waiver-wire-adds-and-schedule-breakdown-for-week-4-of-2026-27-155149078.html",
+          "title": "The Playlist: Fantasy basketball waiver-wire adds and schedule breakdown for Week 4 of 2026-27",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrLQb0buztgUFIDSfwakES0TdRiNN8zYCN-bCcy0bRXIraz2EU1qgIUrxSgt0"
+        },
+        {
+          "url": "https://www.nba.com/news/nba-fantasy-salary-cap-edition-week-3-recap",
+          "title": "NBA Fantasy Salary Cap Edition: Week 3 recap",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDGKrZQ0GY4u49sEmXRTI4k5vdnFKLC4unUNWoCo-3-fxpDtr211TjFXJfxW0"
+        },
+        {
+          "url": "https://www.espn.com/fantasy/basketball/story/_/id/50383545/fantasy-basketball-rookie-watch-nba-2026-2027",
+          "title": "Fantasy basketball rookie watch: Who's standing out and who's worth monitoring",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsfMScxJQgVdOiLjgB8DaNl7eQFYXS4W-n4qUPxICcFB9LcPogeMnpIIjloGQ"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7753776/2026/11/05/justin-jefferson-vikings-offense-trade-deadline-silence/",
-          "title": "Why Justin Jefferson’s silence is deafening when it comes to the Vikings’ offense - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwiYHoIFd1aeWefl-ToUb0K3wbF4KGfCoIExmvKahgwNUsVsOhHwuWM021wOE"
-        },
-        {
-          "url": "https://www.startribune.com/minnesota-vikings-offense-kyler-murray-justin-jefferson-stats-nfl-film-breakdown-buffalo-bills-mnf/601906308",
-          "title": "Justin Jefferson keeps getting open. Here’s why the Vikings aren’t capitalizing.",
-          "publisher": "Star Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXqT8m4dsWH14GC11_rx_z7QCQkCfyl8XLtQ1_GUazY4-Jmw7V8b8J-1WhEIQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdyBl6tD0Z8LNsbnSjYRFTkuYdHvlvkDwCj0cFpdSEl-vbUYXGIgT_TLi1sn4"
         }
       ]
     },
     {
-      "query": "adrian peterson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T00:40:00Z",
+      "query": "amy robach",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T01:00:00Z",
       "related_news_urls": [
-        "https://www.vikings.com/news/adrian-peterson-ring-of-honor-weekend-2026",
-        "https://www.startribune.com/adrian-peterson-ring-of-honor-minnesota-vikings-buffalo-bills-monday-night-football-game-nfl-week-9/601908776",
-        "https://www.nytimes.com/athletic/7762552/2026/11/09/adrian-peterson-vikings-ring-of-honor-mnf/"
+        "https://www.yahoo.com/entertainment/tv/articles/name-tune-amy-robach-beats-204214095.html",
+        "https://www.usmagazine.com/entertainment/news/t-j-holmes-amy-robach-have-romantic-moment-on-name-that-tune/",
+        "https://www.imdb.com/es/news/ni66103256/?ref_=nwc_art_perm"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZCTg-LUKhWxDa4sL7Zsq5BVGnJNqJABvFEJ66RcnO94iw8Rg_2IOrgf-FhXY",
-      "image_credit": "Minnesota Vikings",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS27CCnGHcYhcontRipW9xyMNGJdWri6LS2DNis4e6PgT0sRUjgTzaODmzifXI",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.vikings.com/news/adrian-peterson-ring-of-honor-weekend-2026",
-          "title": "Mailbag: Adrian Peterson’s Vikings Ring of Honor Weekend",
-          "publisher": "Minnesota Vikings",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/name-tune-amy-robach-beats-204214095.html",
+          "title": "‘Name That Tune’: Amy Robach Beats Husband T.J. Holmes",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZCTg-LUKhWxDa4sL7Zsq5BVGnJNqJABvFEJ66RcnO94iw8Rg_2IOrgf-FhXY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS27CCnGHcYhcontRipW9xyMNGJdWri6LS2DNis4e6PgT0sRUjgTzaODmzifXI"
         },
         {
-          "url": "https://www.startribune.com/adrian-peterson-ring-of-honor-minnesota-vikings-buffalo-bills-monday-night-football-game-nfl-week-9/601908776",
-          "title": "As Adrian Peterson enters Vikings’ Ring of Honor, one game remains on his mind",
-          "publisher": "Star Tribune",
+          "url": "https://www.usmagazine.com/entertainment/news/t-j-holmes-amy-robach-have-romantic-moment-on-name-that-tune/",
+          "title": "T.J. Holmes and Amy Robach Share Sweet Moment on ‘Name That Tune’: ‘Romance Is in the Air’",
+          "publisher": "Us Weekly",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVlJAX05T9D-svdGbOxB8zWOYOo-ny7kmbUCzaSSjpFMZQJAcOlzYrf_rTp-8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_T8VOtea659J05_wB94RrHjJxw-J1gE9F9K17asIFh-3n5aZwiT1MHocmx3o"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7762552/2026/11/09/adrian-peterson-vikings-ring-of-honor-mnf/",
-          "title": "Adrian Peterson’s Ring of Honor induction conjures up great memories for Vikings",
-          "publisher": "The New York Times",
+          "url": "https://www.imdb.com/es/news/ni66103256/?ref_=nwc_art_perm",
+          "title": "‘Name That Tune’: Amy Robach Feels a Glow After Solving Frank Sinatra Hit Against Husband T.J. Holmes",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1UAVTJ1sYHHhDi75N7LqhWuC-y5VjaU9erwtjwVMGmhhtcvt6Q7Xo5_7Hbns"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqZX_pKb2WU8tmCmZu7Km0LEep7Qqjbfe-I_gS83HtebvKYfNlEifYV_in4LY"
         }
       ]
     },
     {
-      "query": "cameron carr",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T00:40:00Z",
+      "query": "hailee steinfeld",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T01:00:00Z",
       "related_news_urls": [
-        "https://www.ocregister.com/2026/11/09/lakers-1st-round-pick-cameron-carr-to-play-with-reaves-grimes-out/",
-        "https://lakeshowlife.com/quentin-grimes-injury-dictate-how-badly-lakers-presently-need-cameron-carr",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-29/isaiah-joe-hip-questionable-vs-brooklyn"
+        "https://people.com/hailee-steinfeld-shares-the-sweet-aspect-of-motherhood-she-didn-t-expect-after-welcoming-her-baby-girl-12245174",
+        "https://www.aol.com/articles/hailee-steinfeld-smart-cookie-baby-133000000.html",
+        "https://www.broadwayworld.com/bwwtv/article/Hailee-Steinfeld-Discusses-Voicing-the-Lead-in-HEXED-and-Life-as-a-Mom-to-Her-6-Month-Old-20261105"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5e_PpBXQv8Rb8RSUykO0JaHgoSaYkMd8TTbNlguCPW2pclsK0baHmBxlDI8o",
-      "image_credit": "Orange County Register",
-      "news": [
-        {
-          "url": "https://www.ocregister.com/2026/11/09/lakers-1st-round-pick-cameron-carr-to-play-with-reaves-grimes-out/",
-          "title": "Lakers’ 1st-round pick Cameron Carr to play with Reaves, Grimes out",
-          "publisher": "Orange County Register",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5e_PpBXQv8Rb8RSUykO0JaHgoSaYkMd8TTbNlguCPW2pclsK0baHmBxlDI8o"
-        },
-        {
-          "url": "https://lakeshowlife.com/quentin-grimes-injury-dictate-how-badly-lakers-presently-need-cameron-carr",
-          "title": "Quentin Grimes injury will dictate how badly the Lakers presently need Cameron Carr",
-          "publisher": "Lake Show Life",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY7oZHpwougEPStJmonmVFmmg8TJNIJFTP97JrikYy0xM4JbECyuQrV8It32M"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-29/isaiah-joe-hip-questionable-vs-brooklyn",
-          "title": "Isaiah Joe (hip) questionable vs. Brooklyn",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTofIqe1JdAQZAbrq92tjI3BFVQ0zKI_VuV4gqXWMcnoWsTdSg8GMH711kViqQ"
-        }
-      ]
-    },
-    {
-      "query": "elizabeth siders",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T00:40:00Z",
-      "related_news_urls": [
-        "https://people.com/judge-declares-ohio-house-of-horrors-mother-not-competent-to-stand-trial-orders-treatment-12245526",
-        "https://abc6onyourside.com/news/local/house-ohio-hamden-vinton-county-horrors-suspect-ruled-incompetent-christina-siders-gary-elizabeth-jr-sr-junior-senior-stand-trial-more-treatment-ahead",
-        "https://www.yahoo.com/news/us/articles/vinton-county-mother-found-competent-223754287.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRu7zBiE-56fAhTaXpAlVKT25fGVjOrdJYTTL-bT4M7smC5kD9bARlYpTmlWK8",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnjijs4Oav9unKqsj1hQ3uc08MP64A4eJpn7kEa_Qu5gymDXD9M5P5VRFvzMA",
       "image_credit": "People.com",
       "news": [
         {
-          "url": "https://people.com/judge-declares-ohio-house-of-horrors-mother-not-competent-to-stand-trial-orders-treatment-12245526",
-          "title": "Judge Declares Family Member In Ohio ‘House of Horrors’ Case Unfit To Stand Trial",
+          "url": "https://people.com/hailee-steinfeld-shares-the-sweet-aspect-of-motherhood-she-didn-t-expect-after-welcoming-her-baby-girl-12245174",
+          "title": "Hailee Steinfeld Reveals the Unexpected Thing She’s Learned from Motherhood Since Welcoming Her Baby Girl",
           "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRu7zBiE-56fAhTaXpAlVKT25fGVjOrdJYTTL-bT4M7smC5kD9bARlYpTmlWK8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnjijs4Oav9unKqsj1hQ3uc08MP64A4eJpn7kEa_Qu5gymDXD9M5P5VRFvzMA"
         },
         {
-          "url": "https://abc6onyourside.com/news/local/house-ohio-hamden-vinton-county-horrors-suspect-ruled-incompetent-christina-siders-gary-elizabeth-jr-sr-junior-senior-stand-trial-more-treatment-ahead",
-          "title": "Ohio 'House of Horrors' -- Mom of 16, currently pregnant, ruled competent to stand trial",
-          "publisher": "WSYX",
+          "url": "https://www.aol.com/articles/hailee-steinfeld-smart-cookie-baby-133000000.html",
+          "title": "Hailee Steinfeld’s ‘Smart Cookie’ Baby Daughter Is a ‘Genius’ on the Move",
+          "publisher": "AOL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRrEF0Gy77htQ8eC4qv1ZrW9pRqyMu5e5MY6kBTVfPFCgLbNyTgReJTkpIJ7o"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6SVhiSUSTqFVHjL28ckjpaADiqtvhN-P5lRXsccIqdZu73oDT03KS2P4X2KM"
         },
         {
-          "url": "https://www.yahoo.com/news/us/articles/vinton-county-mother-found-competent-223754287.html",
-          "title": "Vinton County mother found competent to stand trial, but not grandmother",
-          "publisher": "Yahoo",
+          "url": "https://www.broadwayworld.com/bwwtv/article/Hailee-Steinfeld-Discusses-Voicing-the-Lead-in-HEXED-and-Life-as-a-Mom-to-Her-6-Month-Old-20261105",
+          "title": "Hailee Steinfeld Discusses Voicing the Lead in HEXED and Life as a Mom to Her 6-Month-Old",
+          "publisher": "BroadwayWorld",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQctGYv6Utv9YynvgNqKBSo6ah4qdzyHc2VqjOZLmbnC1nNMZ6onmPAmJE5rlY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZWmAjpYT5UDt9wC_Bmw_8494byF0wOkouAX_oDXixGWIs3er2h-hmjRY0tx4"
         }
       ]
     },
     {
-      "query": "dyson daniels",
+      "query": "josh allen wife",
       "approx_searches": "500+",
-      "published_at": "2026-11-10T00:40:00Z",
+      "published_at": "2026-11-10T01:00:00Z",
       "related_news_urls": [
-        "https://soaringdownsouth.com/daniels-achievement-silence-hawks-critics",
-        "https://www.codesports.com.au/basketball/nba/supercoach-news/nba-2026-kristaps-porzingis-steps-away-from-basketball-as-draymond-green-reacts-golden-state-warriors-latest-news/news-story/4dd119bf0b65633bcad68020291b0e64",
-        "https://www.fantasypros.com/nba/news/618342/dyson-daniels-flirts-with-triple-double-fridays-win-over-wizards.php"
+        "https://www.thehealthy.com/aging/healthy-aging/how-i-healthspan-josh-allen/",
+        "https://www.si.com/onsi/athlete-lifestyle/josh-allen-gives-rare-interview-dad-life-wife-hailee-steinfeld-new-baby",
+        "https://heavy.com/sports/nfl/buffalo-bills/josh-allen-shares-personal-news-before-vikings-game/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXJUuVi55GwLj13qnMH6paBoQCa8BCoKQ66YX3rCh5qblkLL63YCrwEO5X1Fo",
-      "image_credit": "Soaring Down South",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP44QSdRAuEtK1HLSCabQtr3ZP91cqiNYtnbtMKO3z8Hnf4Nl7a8ofX1F45R0",
+      "image_credit": "The Healthy @Reader's Digest",
       "news": [
         {
-          "url": "https://soaringdownsouth.com/daniels-achievement-silence-hawks-critics",
-          "title": "Dyson Daniels' historic achievement should silence Hawks critics",
-          "publisher": "Soaring Down South",
+          "url": "https://www.thehealthy.com/aging/healthy-aging/how-i-healthspan-josh-allen/",
+          "title": "The Longevity ‘Hacks’ That Keep Josh Allen at His Competitive Best",
+          "publisher": "The Healthy @Reader's Digest",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXJUuVi55GwLj13qnMH6paBoQCa8BCoKQ66YX3rCh5qblkLL63YCrwEO5X1Fo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP44QSdRAuEtK1HLSCabQtr3ZP91cqiNYtnbtMKO3z8Hnf4Nl7a8ofX1F45R0"
         },
         {
-          "url": "https://www.codesports.com.au/basketball/nba/supercoach-news/nba-2026-kristaps-porzingis-steps-away-from-basketball-as-draymond-green-reacts-golden-state-warriors-latest-news/news-story/4dd119bf0b65633bcad68020291b0e64",
-          "title": "King James’ historic night to forget; Aussie star produces monster performance – NBA Wrap",
-          "publisher": "CODE Sports",
+          "url": "https://www.si.com/onsi/athlete-lifestyle/josh-allen-gives-rare-interview-dad-life-wife-hailee-steinfeld-new-baby",
+          "title": "Josh Allen Gives Rare Interview on Dad Life, Wife Hailee Steinfeld, New Baby",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-p7p-Z7F6Zq8f1x3-dkElUbivodAimdld4h_J80mmuwSTdWgi5uCLbwmXUeE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2f_vT6RKquYD5yA-D8SRzNStxvCs4o4PpgynaHff87P1kFr8epkr1o9ejVew"
         },
         {
-          "url": "https://www.fantasypros.com/nba/news/618342/dyson-daniels-flirts-with-triple-double-fridays-win-over-wizards.php",
-          "title": "Dyson Daniels flirts with triple-double in Friday's win over Wizards",
-          "publisher": "FantasyPros",
+          "url": "https://heavy.com/sports/nfl/buffalo-bills/josh-allen-shares-personal-news-before-vikings-game/",
+          "title": "Bills QB Josh Allen Shares Personal News Before Vikings Game",
+          "publisher": "Heavy.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9TDk9mrBnW8qWxc2kabrmSQTO9REXR6XHmPSHJqhjGtKUsJRqFQrM9Or7CgM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1w4NS9MlQF-pTJHqJWK4c_CBi3TT-hehpBbk3xnIy55K5Nke7iGv6uwtedIk"
         }
       ]
     },
     {
-      "query": "john collins",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T00:40:00Z",
+      "query": "ausar thompson",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T01:00:00Z",
       "related_news_urls": [
-        "https://pistonpowered.com/john-collins-struggles-start-with-jalen-duren-detroit-pistons",
-        "https://www.rotowire.com/basketball/headlines/john-collins-news-quiet-in-loss-538315",
-        "https://www.si.com/nba/pistons/onsi/the-pistons-biggest-offseason-addition-is-already-making-a-difference-in-detroit-01m6eha1d22v"
+        "https://pistonpowered.com/ausar-thompson-rebounding-unlock-pistons-small-ball-lineups",
+        "https://www.hoopsrumors.com/2026/11/central-notes-thompson-joe-watson-tyson-buzelis.html",
+        "https://www.usatoday.com/sports/nba/event/2026/3018462/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NBA&tile=8"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIDcLAokWeaf4a9fgR93rRChFyPXkFnyvF0DQLtPaRvEVLLh52pvyLnSwTkSI",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlzD8MQi6ILrqbXyU7UbxBlZYLn1jmtxCfj_KGRBsFpe6XTGw3eMRYusSUPu4",
       "image_credit": "PistonPowered",
       "news": [
         {
-          "url": "https://pistonpowered.com/john-collins-struggles-start-with-jalen-duren-detroit-pistons",
-          "title": "John Collins' struggles start with Jalen Duren",
+          "url": "https://pistonpowered.com/ausar-thompson-rebounding-unlock-pistons-small-ball-lineups",
+          "title": "Ausar Thompson's rebounding can unlock the Pistons' small ball lineups",
           "publisher": "PistonPowered",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIDcLAokWeaf4a9fgR93rRChFyPXkFnyvF0DQLtPaRvEVLLh52pvyLnSwTkSI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlzD8MQi6ILrqbXyU7UbxBlZYLn1jmtxCfj_KGRBsFpe6XTGw3eMRYusSUPu4"
         },
         {
-          "url": "https://www.rotowire.com/basketball/headlines/john-collins-news-quiet-in-loss-538315",
-          "title": "John Collins News: Quiet in loss",
-          "publisher": "RotoWire",
+          "url": "https://www.hoopsrumors.com/2026/11/central-notes-thompson-joe-watson-tyson-buzelis.html",
+          "title": "Central Notes: Thompson, Joe, Watson, Tyson, Buzelis",
+          "publisher": "Hoops Rumors",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRGZ2xFpSs8gin9AaF0R8sg4LTX8sK3VNo9_PTH_8Wsu7lrJzHa_JiGT3MeZk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8uozYscQ7I5BHVGs2X79pkRSR80Nwn8jlfyy0p4TqkxVrmpOjY6yktXkPo2k"
         },
         {
-          "url": "https://www.si.com/nba/pistons/onsi/the-pistons-biggest-offseason-addition-is-already-making-a-difference-in-detroit-01m6eha1d22v",
-          "title": "The Pistons' Biggest Offseason Addition Is Already Making a Difference in Detroit",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.usatoday.com/sports/nba/event/2026/3018462/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NBA&tile=8",
+          "title": "Philadelphia 76ers at Detroit Pistons - NBA Game Summary - Nov 04, 2026",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdKGTz0EaQuoVi_WUEM2KMvt2nZgXxJuqU_1d23N836r4cUwfsHy2EloEcBCY"
-        }
-      ]
-    },
-    {
-      "query": "mlb awards",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T00:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mlb/story/_/id/50391276/2026-season-awards-mvp-cy-young-al-nl",
-        "https://www.mlb.com/news/when-is-the-mlb-awards-show-date-time-channel",
-        "https://bleacherreport.com/articles/25529914-mlb-mvp-2026-odds-and-predictions-yordan-alvarez-pete-crow-armstrong-more"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgGODeugcYGYTy_2Y2MY5QSksRzjoJC0-qQzBlIW9QfavcCS5WohVWDxNTadE",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mlb/story/_/id/50391276/2026-season-awards-mvp-cy-young-al-nl",
-          "title": "Who will win MVP? Cy Young? Picks, analysis for 2026 MLB awards week",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgGODeugcYGYTy_2Y2MY5QSksRzjoJC0-qQzBlIW9QfavcCS5WohVWDxNTadE"
-        },
-        {
-          "url": "https://www.mlb.com/news/when-is-the-mlb-awards-show-date-time-channel",
-          "title": "Everything you need to know about the 2026 MLB Awards show",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTg52tESkZVpYo4sAkSiJVQKmCEgTEEof8zfdGVxAkoyYOhVdHr5ChcYH8ZVsc"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25529914-mlb-mvp-2026-odds-and-predictions-yordan-alvarez-pete-crow-armstrong-more",
-          "title": "MLB MVP 2026 Odds and Predictions for Yordan Alvarez, Pete Crow-Armstrong, More",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3WhZUpwaS8Kiw-mdw5rZPz6gM6LjSY-OApBOXTJAq7b8tS32rpPxAG7efBT8"
-        }
-      ]
-    },
-    {
-      "query": "vikings quarterback",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T00:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50433758/giants-feel-fairly-good-qb-mccarthy-playing-thursday",
-        "https://www.nfl.com/videos/j-j-mccarthy-expected-to-play-vs-commanders-the-nfl-report",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/john-harbaugh-says-it-looks-like-qb-j-j-mccarthy-hip-will-be-able-to-play-on-thursday"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTECulNCMBvWLVf5AHOzqfJIeNYmERVcMDJFed9GTHp5nsTsu6opBIVcg3znE",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50433758/giants-feel-fairly-good-qb-mccarthy-playing-thursday",
-          "title": "Harbaugh: Giants 'feel fairly good' about McCarthy (hip) playing vs. Commanders",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTECulNCMBvWLVf5AHOzqfJIeNYmERVcMDJFed9GTHp5nsTsu6opBIVcg3znE"
-        },
-        {
-          "url": "https://www.nfl.com/videos/j-j-mccarthy-expected-to-play-vs-commanders-the-nfl-report",
-          "title": "New York Giants quarterback J.J. McCarthy expected to play vs. Commanders | 'The NFL Report'",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDklDjZvKtnvWK90CKyiDQlDdbnLLzEVDXigOJJRyFIA_2V7561fuqEQWmLwg"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/john-harbaugh-says-it-looks-like-qb-j-j-mccarthy-hip-will-be-able-to-play-on-thursday",
-          "title": "John Harbaugh says it \"looks like\" QB J.J. McCarthy (hip) will be able to play on Thursday",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_MsnMt8XDP8LZ4M5DqbL4uGmcm8aNeHWXu9D8ZVBgT4Ea5H1HUR3VNF0Ppb4"
-        }
-      ]
-    },
-    {
-      "query": "pistons vs wizards",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T00:40:00Z",
-      "related_news_urls": [
-        "https://www.bulletsforever.com/washington-wizards-preview/73948/washington-wizards-detroit-pistons-nba-game-preview",
-        "https://sports.yahoo.com/articles/wizards-pistons-discussion-223000851.html",
-        "https://www.covers.com/nba/wizards-vs-pistons-prediction-picks-odds-nov-9-2026"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtc73nn45JhG_E8VwEcLnr6wDYBTFwW7U9bIHtg-FhX7-e9xFwkS9DtDUZa90",
-      "image_credit": "Bullets Forever",
-      "news": [
-        {
-          "url": "https://www.bulletsforever.com/washington-wizards-preview/73948/washington-wizards-detroit-pistons-nba-game-preview",
-          "title": "Preview: The Wizards play the Pistons on Monday night",
-          "publisher": "Bullets Forever",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtc73nn45JhG_E8VwEcLnr6wDYBTFwW7U9bIHtg-FhX7-e9xFwkS9DtDUZa90"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/wizards-pistons-discussion-223000851.html",
-          "title": "Wizards at Pistons Discussion",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ371wvZlcHPgIzhFqN1Xe2fl1w9M8iKAbjM7T5gA8Md-wXP81LFugsheWbRes"
-        },
-        {
-          "url": "https://www.covers.com/nba/wizards-vs-pistons-prediction-picks-odds-nov-9-2026",
-          "title": "Wizards vs Pistons Prediction, Top Picks & Best Bet for Tonight's NBA Game",
-          "publisher": "Covers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReURU2S2CzrOrAdJAhoxFmCzxYyL9ayLgUY3AguH1BU-FJwICbcDOpoOgjVLM"
-        }
-      ]
-    },
-    {
-      "query": "nuggets vs rockets",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-10T00:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50426497/nuggets-starters-questionable-vs-rockets-plane-delays",
-        "https://sports.yahoo.com/articles/rockets-vs-nuggets-injury-report-235743590.html",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/giannis-antetokounmpo-wrist-probable-tuesday"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTs6l2xsnhT6EkEk-QIuHOJ4XXBBcmrgI1qmJt99IPqi-GApb0o2wO8yp2G9s",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50426497/nuggets-starters-questionable-vs-rockets-plane-delays",
-          "title": "Nuggets' starters all questionable vs. Rockets after delays leaving Mexico",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTs6l2xsnhT6EkEk-QIuHOJ4XXBBcmrgI1qmJt99IPqi-GApb0o2wO8yp2G9s"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/rockets-vs-nuggets-injury-report-235743590.html",
-          "title": "Rockets vs Nuggets Injury Report as Jokić and Murray Get Upgraded",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMZpRdxgZM8fz0cy_zIU0NS1S2I1kukkoJ_H-W91uUDRa7K5CqEK7JJ-vcNVw"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/giannis-antetokounmpo-wrist-probable-tuesday",
-          "title": "Giannis Antetokounmpo (wrist) probable Tuesday",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ47YmOC-9SmgjMsECSfTdI3ZsGMvW6wHB7qWDarn0oicDj4Prm-jgLvnpCBvk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyJHC7upnYaxJRHN7raywAoKQgipzOz2wF-n68ys-Yz0OCMC1UqZgN26YQ2og"
         }
       ]
     }
