@@ -3,328 +3,13 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T00:42:41.121260Z",
+  "checked_at": "2026-11-10T01:01:42.864904Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ryan seacrest",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T00:20:00Z",
-      "related_news_urls": [
-        "https://www.tvinsider.com/1301728/wheel-of-fortune-ryan-seacrest-shocked-after-contestant-loses-113k/",
-        "https://www.eonline.com/news/1437821/wheel-of-fortunes-ryan-seacrest-reacts-to-players-s50-000-loss",
-        "https://closerweekly.com/ryan-seacrest-comforts-wheel-of-fortune-contestant-who-missed-out-on-50k-prize/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOl9QxFTYD0bOLYk_RsCm04c937Z2GeHIs7zP-VolzNFI0rTNrtzssqP1nFPM",
-      "image_credit": "TV Insider",
-      "news": [
-        {
-          "url": "https://www.tvinsider.com/1301728/wheel-of-fortune-ryan-seacrest-shocked-after-contestant-loses-113k/",
-          "title": "‘Wheel of Fortune’: Ryan Seacrest Shocked After Contestant Loses Out on $113,000",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOl9QxFTYD0bOLYk_RsCm04c937Z2GeHIs7zP-VolzNFI0rTNrtzssqP1nFPM"
-        },
-        {
-          "url": "https://www.eonline.com/news/1437821/wheel-of-fortunes-ryan-seacrest-reacts-to-players-s50-000-loss",
-          "title": "See Wheel of Fortune’s Ryan Seacrest Comfort Player After $50,000 Loss",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPGLnwAMvZeT_SWv7Wv8fX_3A-IaLC3NRlDZCq290hoHNflG5Yc4xjf-pqMUI"
-        },
-        {
-          "url": "https://closerweekly.com/ryan-seacrest-comforts-wheel-of-fortune-contestant-who-missed-out-on-50k-prize/",
-          "title": "Ryan Seacrest Comforts ‘Wheel of Fortune’ Contestant Who Missed Out on $50K Prize",
-          "publisher": "closerweekly.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdE7vdCvX1QHwa_wEUV5ZJc8Eh9_T2KmnMJy3EkO_f4FyeCq5w7s9jGcdvyaU"
-        }
-      ]
-    },
-    {
-      "query": "grambling st vs texas",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T00:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/no-7-texas-vs-grambling-235106172.html",
-        "https://www.bleachernation.com/how-to-watch/2026/11/09/how-to-watch-texas-longhorns-vs-grambling-tigers-live-stream-or-on-tv/",
-        "https://www.fanduel.com/research/texas-vs-grambling-college-basketball-predictions-odds-picks-best-bets-for-11-9-2026"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKrlLLzfqpCLREf-nBV7GueLi3n77UIcuUpUCkkgeVQ9miGcDEeG7MPNJ-cX4",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/no-7-texas-vs-grambling-235106172.html",
-          "title": "No. 7 Texas vs. Grambling State gamethread",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKrlLLzfqpCLREf-nBV7GueLi3n77UIcuUpUCkkgeVQ9miGcDEeG7MPNJ-cX4"
-        },
-        {
-          "url": "https://www.bleachernation.com/how-to-watch/2026/11/09/how-to-watch-texas-longhorns-vs-grambling-tigers-live-stream-or-on-tv/",
-          "title": "How to Watch Texas Longhorns vs. Grambling Tigers: Live Stream or on TV",
-          "publisher": "Bleacher Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlvNXAhvkiC8wDBhrmDbY-_QRPb6oAuUeVJQgLiEwDgMT5xncHnTXnmtOl1co"
-        },
-        {
-          "url": "https://www.fanduel.com/research/texas-vs-grambling-college-basketball-predictions-odds-picks-best-bets-for-11-9-2026",
-          "title": "Texas vs Grambling College Basketball Prediction, Odds, Picks, Best Bets for Nov. 9",
-          "publisher": "FanDuel",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxjvoaXCe59i8RuOj1QLFEzSW1lDUsOQ_pC8qkQiDzsHm4AgNsC_rY1a-e7Eg"
-        }
-      ]
-    },
-    {
-      "query": "grand theft auto 6",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-10T00:20:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/games/2026/nov/09/grand-theft-auto-creators-gta",
-        "https://variety.com/2026/gaming/news/gta-6-preorders-expectations-launch-1236943278/",
-        "https://finance.yahoo.com/media-advertising/articles/gta-6-estimated-digital-pre-174009699.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVwe5DkKg8lE67K9u2TTzGjHP2D0EUYTsxP5fSZm4A6xIi3A_VnNEILuFNlDc",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/games/2026/nov/09/grand-theft-auto-creators-gta",
-          "title": "Crime pays: how Grand Theft Auto became a cultural colossus",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVwe5DkKg8lE67K9u2TTzGjHP2D0EUYTsxP5fSZm4A6xIi3A_VnNEILuFNlDc"
-        },
-        {
-          "url": "https://variety.com/2026/gaming/news/gta-6-preorders-expectations-launch-1236943278/",
-          "title": "‘GTA 6’ Presales ‘Far in Excess’ of Expectations Ahead of Next Week’s Launch, Take-Two CEO Says",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSe6D2hdsqu3Gusi3vyff-3VGSyM80FVd48wlWhpzECpRRdvlqqyJy62MZaT_o"
-        },
-        {
-          "url": "https://finance.yahoo.com/media-advertising/articles/gta-6-estimated-digital-pre-174009699.html",
-          "title": "GTA 6 Estimated Digital Pre-Orders Near 8 Million, with PS5 Claiming 74% of Demand",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8eGFgt1_9SCLaTghN5OOGWoXJnBmt5G5kAbvP9IvtqLuQusYEDj4n3zD5e_o"
-        }
-      ]
-    },
-    {
-      "query": "mlb rookie of the year 2026",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T00:20:00Z",
-      "related_news_urls": [
-        "https://www.mlb.com/news/2026-mlb-rookie-of-the-year-award-winners",
-        "https://www.detroitnews.com/story/sports/mlb/tigers/2026/11/09/detroit-tigers-kevin-mcgonigle-about-to-learn-if-hes-american-league-rookie-of-year/92677666007/",
-        "https://sports.yahoo.com/articles/al-nl-rookie-watch-mlbs-153124058.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZb9tOwQawxKUYUUY2n25LBN8urA1-InLRkuP3JWyhdy1U84nfDMwGq4fDPEY",
-      "image_credit": "MLB.com",
-      "news": [
-        {
-          "url": "https://www.mlb.com/news/2026-mlb-rookie-of-the-year-award-winners",
-          "title": "Rookie of the Year announcement kicks off Awards Week (7 p.m. ET on MLB Network, MLB+)",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZb9tOwQawxKUYUUY2n25LBN8urA1-InLRkuP3JWyhdy1U84nfDMwGq4fDPEY"
-        },
-        {
-          "url": "https://www.detroitnews.com/story/sports/mlb/tigers/2026/11/09/detroit-tigers-kevin-mcgonigle-about-to-learn-if-hes-american-league-rookie-of-year/92677666007/",
-          "title": "Kevin McGonigle, likely AL rookie of year, gives Tigers prospects hope",
-          "publisher": "The Detroit News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKTISQzJ74fUEsChsBSD3CK89u_o2HSGaAQOouvItWJgrYrG-dleLjZSMINGM"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/al-nl-rookie-watch-mlbs-153124058.html",
-          "title": "AL, NL Rookie of the Year: How to watch as MLB's awards season begins",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxaHElu5Bvlt4XiJSrTcIIAJPL1ZFJULhAQ9sLG2rkYYUAc-g7Ue_M2o7jJdU"
-        }
-      ]
-    },
-    {
-      "query": "rangers vs oilers",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T00:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nhl/story/_/id/50421719/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-        "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-9-2026",
-        "https://www.foreverblueshirts.com/new-york-rangers-news/preview-lines-notes-how-to-watch-visit-oilers-trying-win-4th-straight"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfyY4i-CwJg4GArsBjNRHNGI_TmljuHlwEEd0J3sZ6A2CMee1NjEqE_qyUkTQ",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nhl/story/_/id/50421719/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-          "title": "NHL Tonight: Guide to Rangers-Oilers, Flyers-Canucks, Islanders-Sharks",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfyY4i-CwJg4GArsBjNRHNGI_TmljuHlwEEd0J3sZ6A2CMee1NjEqE_qyUkTQ"
-        },
-        {
-          "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-9-2026",
-          "title": "NHL On Tap: McDavid looks to extend season-opening point streak for Oilers",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtk1W7U6IsFchS-KOR-rsRhdsjmju3jFRyVRPvfM0z1cx5S_xXkXC3IZzmhDY"
-        },
-        {
-          "url": "https://www.foreverblueshirts.com/new-york-rangers-news/preview-lines-notes-how-to-watch-visit-oilers-trying-win-4th-straight",
-          "title": "Rangers lines, notes, how to watch visit vs. Oilers, trying to win 4th straight",
-          "publisher": "Forever Blueshirts",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT739ZqlMOiPp2lHzJ_-buVlBMX3JOtkbKixgUMLqdZ_3ljItoYDrfG12exMAo"
-        }
-      ]
-    },
-    {
-      "query": "wagner vs uconn",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T00:10:00Z",
-      "related_news_urls": [
-        "https://www.courant.com/2026/11/08/uconn-men-host-wagner-former-center-youssouf-singare-in-gampel-opener-monday-night-how-to-watch/",
-        "https://sports.yahoo.com/articles/uconn-mens-basketball-vs-wagner-223043321.html",
-        "https://www.nytimes.com/athletic/7767959/2026/11/09/wagner-vs-uconn-stream-how-to-watch-nov-9/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUmHnd4eZgvC1kUb8CdMLuTA16e-wT_iGS9A84XJdRCyF4YtDM7aY0dofCQPY",
-      "image_credit": "Hartford Courant",
-      "news": [
-        {
-          "url": "https://www.courant.com/2026/11/08/uconn-men-host-wagner-former-center-youssouf-singare-in-gampel-opener-monday-night-how-to-watch/",
-          "title": "UConn men host Wagner, former center Youssouf Singare, in Gampel opener Monday night: How to watch",
-          "publisher": "Hartford Courant",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUmHnd4eZgvC1kUb8CdMLuTA16e-wT_iGS9A84XJdRCyF4YtDM7aY0dofCQPY"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/uconn-mens-basketball-vs-wagner-223043321.html",
-          "title": "UConn men's basketball vs Wagner | Live updates",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2rUPTRmFvvTe4IkYoaTfJRQUaI-b4NVVbS0t0jlbJFA5999G-dhOBEEtpdEM"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7767959/2026/11/09/wagner-vs-uconn-stream-how-to-watch-nov-9/",
-          "title": "How to watch Wagner vs. UConn men’s basketball: TV channel and streaming options for November 9",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnubvLLibm5EySuK-Hh8nsReU_UKEthyZrKqfX0N4qedQF8GKTHRtux1kIG6U"
-        }
-      ]
-    },
-    {
-      "query": "alabama basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T00:10:00Z",
-      "related_news_urls": [
-        "https://www.on3.com/teams/alabama-crimson-tide/news/how-to-watch-listen-to-no-20-alabama-basketball-vs-oakland/",
-        "https://www.si.com/college/alabama/basketball/oakland-at-no-18-alabama-basketball-game-central-rundown",
-        "https://sports.yahoo.com/articles/alabama-basketball-vs-oakland-live-223030433.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPOPgU7vEkYYTAjHkhRMloL9IcGyIRvHtl8GUx1FPHcMngOZNKNRzenP8QcxI",
-      "image_credit": "On3",
-      "news": [
-        {
-          "url": "https://www.on3.com/teams/alabama-crimson-tide/news/how-to-watch-listen-to-no-20-alabama-basketball-vs-oakland/",
-          "title": "How to watch, listen to No. 20 Alabama basketball vs. Oakland",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPOPgU7vEkYYTAjHkhRMloL9IcGyIRvHtl8GUx1FPHcMngOZNKNRzenP8QcxI"
-        },
-        {
-          "url": "https://www.si.com/college/alabama/basketball/oakland-at-no-18-alabama-basketball-game-central-rundown",
-          "title": "Oakland at No. 18 Alabama Basketball: Game Central Rundown",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWPGN47K5IDRe3o5Z0AhGPsSEPzUiU8NimBQqd5Jg5axVtg1rIv79FuBMyrfM"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/alabama-basketball-vs-oakland-live-223030433.html",
-          "title": "Alabama basketball vs Oakland live score updates, highlights as Aden Holloway returns",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNdCbg6zY9KWJuDehWe5ZSTKAmjMqq6BbhLt19heBdoQPLDbc5CIxljOURJG4"
-        }
-      ]
-    },
-    {
-      "query": "junior vs cúcuta deportivo",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T00:10:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17488974/junior-vs-cucuta-fecha-18-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
-        "https://www.elheraldo.co/deportes/2026/11/08/junior-vs-cucuta-deportivo-sin-nada-que-pelear/",
-        "https://www.boyacaradio.com/noticia.php?id=65075"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThGxgxeBs8_zJZEwLpzKwLrProDztu64FHETG_Zfdn4hSG25H0tNYt5Ex7Gqk",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17488974/junior-vs-cucuta-fecha-18-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
-          "title": "Cuándo juegan Junior vs. Cúcuta por Liga BetPlay: equipo, fecha, hora y TV en vivo",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThGxgxeBs8_zJZEwLpzKwLrProDztu64FHETG_Zfdn4hSG25H0tNYt5Ex7Gqk"
-        },
-        {
-          "url": "https://www.elheraldo.co/deportes/2026/11/08/junior-vs-cucuta-deportivo-sin-nada-que-pelear/",
-          "title": "Junior vs. Cúcuta Deportivo: sin nada que pelear",
-          "publisher": "ELHERALDO.CO",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSR0LLA612KqUoUnSCJzxeBox6A5AjtyyX2ulXUq9zQbtU4HyCWg0yZPWthga4"
-        },
-        {
-          "url": "https://www.boyacaradio.com/noticia.php?id=65075",
-          "title": "Junior y Cúcuta cerrarán este lunes la penúltima fecha de la Liga Dimayor",
-          "publisher": "Boyaca Radio",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_yb8OVbHzs1vbGxpy1Tr67o3SBUPK_5_Y2ic_O3OgCR34VP-3Nb27VnN-BwE"
-        }
-      ]
-    },
-    {
-      "query": "volleyball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T00:10:00Z",
-      "related_news_urls": [
-        "https://www.ocregister.com/2026/11/09/thirteen-orange-county-girls-volleyball-teams-to-play-in-socal-regional/",
-        "https://www.pjstar.com/story/sports/high-school/volleyball/2026/11/05/ihsa-volleyball-roundup-two-peoria-area-teams-advance-to-super-sectionals/92623945007/",
-        "https://www.centralillinoisproud.com/sports/local-sports/four-area-schools-play-in-volleyball-super-sectionals-monday/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5PyA6KdCftbay2VUdHRzP-k829VvADCIVOWeqyHVlCXNgkafeYxIQHQSlDFg",
-      "image_credit": "Orange County Register",
-      "news": [
-        {
-          "url": "https://www.ocregister.com/2026/11/09/thirteen-orange-county-girls-volleyball-teams-to-play-in-socal-regional/",
-          "title": "Thirteen Orange County girls volleyball teams to play in SoCal Regional",
-          "publisher": "Orange County Register",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5PyA6KdCftbay2VUdHRzP-k829VvADCIVOWeqyHVlCXNgkafeYxIQHQSlDFg"
-        },
-        {
-          "url": "https://www.pjstar.com/story/sports/high-school/volleyball/2026/11/05/ihsa-volleyball-roundup-two-peoria-area-teams-advance-to-super-sectionals/92623945007/",
-          "title": "IHSA volleyball: Two Peoria-area teams advance to the 2026 Elite Eight",
-          "publisher": "Peoria Journal Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRolpyfGjveYFdWg7Xs8PdGM4OjiyRvBDueLvvoh94Xd5F27rRkw07uwqGMoWU"
-        },
-        {
-          "url": "https://www.centralillinoisproud.com/sports/local-sports/four-area-schools-play-in-volleyball-super-sectionals-monday/",
-          "title": "Four area schools play in volleyball super-sectionals Monday",
-          "publisher": "CIProud.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPRS6PWIo6ILboY_DhmQXJ2yPUPnYF2tP8QAsFw2ORsOy0_CmVvOCm5mob3X4"
-        }
-      ]
-    },
-    {
-      "query": "vikings record",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T00:10:00Z",
+      "query": "justin jefferson",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-10T00:40:00Z",
       "related_news_urls": [
         "https://www.espn.com/nfl/story/_/id/50408415/vikings-justin-jefferson-miraculous-catch-bills-2022",
         "https://www.nytimes.com/athletic/7753776/2026/11/05/justin-jefferson-vikings-offense-trade-deadline-silence/",
@@ -353,6 +38,321 @@
           "publisher": "Star Tribune",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXqT8m4dsWH14GC11_rx_z7QCQkCfyl8XLtQ1_GUazY4-Jmw7V8b8J-1WhEIQ"
+        }
+      ]
+    },
+    {
+      "query": "adrian peterson",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T00:40:00Z",
+      "related_news_urls": [
+        "https://www.vikings.com/news/adrian-peterson-ring-of-honor-weekend-2026",
+        "https://www.startribune.com/adrian-peterson-ring-of-honor-minnesota-vikings-buffalo-bills-monday-night-football-game-nfl-week-9/601908776",
+        "https://www.nytimes.com/athletic/7762552/2026/11/09/adrian-peterson-vikings-ring-of-honor-mnf/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZCTg-LUKhWxDa4sL7Zsq5BVGnJNqJABvFEJ66RcnO94iw8Rg_2IOrgf-FhXY",
+      "image_credit": "Minnesota Vikings",
+      "news": [
+        {
+          "url": "https://www.vikings.com/news/adrian-peterson-ring-of-honor-weekend-2026",
+          "title": "Mailbag: Adrian Peterson’s Vikings Ring of Honor Weekend",
+          "publisher": "Minnesota Vikings",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZCTg-LUKhWxDa4sL7Zsq5BVGnJNqJABvFEJ66RcnO94iw8Rg_2IOrgf-FhXY"
+        },
+        {
+          "url": "https://www.startribune.com/adrian-peterson-ring-of-honor-minnesota-vikings-buffalo-bills-monday-night-football-game-nfl-week-9/601908776",
+          "title": "As Adrian Peterson enters Vikings’ Ring of Honor, one game remains on his mind",
+          "publisher": "Star Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVlJAX05T9D-svdGbOxB8zWOYOo-ny7kmbUCzaSSjpFMZQJAcOlzYrf_rTp-8"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7762552/2026/11/09/adrian-peterson-vikings-ring-of-honor-mnf/",
+          "title": "Adrian Peterson’s Ring of Honor induction conjures up great memories for Vikings",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1UAVTJ1sYHHhDi75N7LqhWuC-y5VjaU9erwtjwVMGmhhtcvt6Q7Xo5_7Hbns"
+        }
+      ]
+    },
+    {
+      "query": "cameron carr",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T00:40:00Z",
+      "related_news_urls": [
+        "https://www.ocregister.com/2026/11/09/lakers-1st-round-pick-cameron-carr-to-play-with-reaves-grimes-out/",
+        "https://lakeshowlife.com/quentin-grimes-injury-dictate-how-badly-lakers-presently-need-cameron-carr",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-29/isaiah-joe-hip-questionable-vs-brooklyn"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5e_PpBXQv8Rb8RSUykO0JaHgoSaYkMd8TTbNlguCPW2pclsK0baHmBxlDI8o",
+      "image_credit": "Orange County Register",
+      "news": [
+        {
+          "url": "https://www.ocregister.com/2026/11/09/lakers-1st-round-pick-cameron-carr-to-play-with-reaves-grimes-out/",
+          "title": "Lakers’ 1st-round pick Cameron Carr to play with Reaves, Grimes out",
+          "publisher": "Orange County Register",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5e_PpBXQv8Rb8RSUykO0JaHgoSaYkMd8TTbNlguCPW2pclsK0baHmBxlDI8o"
+        },
+        {
+          "url": "https://lakeshowlife.com/quentin-grimes-injury-dictate-how-badly-lakers-presently-need-cameron-carr",
+          "title": "Quentin Grimes injury will dictate how badly the Lakers presently need Cameron Carr",
+          "publisher": "Lake Show Life",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY7oZHpwougEPStJmonmVFmmg8TJNIJFTP97JrikYy0xM4JbECyuQrV8It32M"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-29/isaiah-joe-hip-questionable-vs-brooklyn",
+          "title": "Isaiah Joe (hip) questionable vs. Brooklyn",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTofIqe1JdAQZAbrq92tjI3BFVQ0zKI_VuV4gqXWMcnoWsTdSg8GMH711kViqQ"
+        }
+      ]
+    },
+    {
+      "query": "elizabeth siders",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T00:40:00Z",
+      "related_news_urls": [
+        "https://people.com/judge-declares-ohio-house-of-horrors-mother-not-competent-to-stand-trial-orders-treatment-12245526",
+        "https://abc6onyourside.com/news/local/house-ohio-hamden-vinton-county-horrors-suspect-ruled-incompetent-christina-siders-gary-elizabeth-jr-sr-junior-senior-stand-trial-more-treatment-ahead",
+        "https://www.yahoo.com/news/us/articles/vinton-county-mother-found-competent-223754287.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRu7zBiE-56fAhTaXpAlVKT25fGVjOrdJYTTL-bT4M7smC5kD9bARlYpTmlWK8",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/judge-declares-ohio-house-of-horrors-mother-not-competent-to-stand-trial-orders-treatment-12245526",
+          "title": "Judge Declares Family Member In Ohio ‘House of Horrors’ Case Unfit To Stand Trial",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRu7zBiE-56fAhTaXpAlVKT25fGVjOrdJYTTL-bT4M7smC5kD9bARlYpTmlWK8"
+        },
+        {
+          "url": "https://abc6onyourside.com/news/local/house-ohio-hamden-vinton-county-horrors-suspect-ruled-incompetent-christina-siders-gary-elizabeth-jr-sr-junior-senior-stand-trial-more-treatment-ahead",
+          "title": "Ohio 'House of Horrors' -- Mom of 16, currently pregnant, ruled competent to stand trial",
+          "publisher": "WSYX",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRrEF0Gy77htQ8eC4qv1ZrW9pRqyMu5e5MY6kBTVfPFCgLbNyTgReJTkpIJ7o"
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/articles/vinton-county-mother-found-competent-223754287.html",
+          "title": "Vinton County mother found competent to stand trial, but not grandmother",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQctGYv6Utv9YynvgNqKBSo6ah4qdzyHc2VqjOZLmbnC1nNMZ6onmPAmJE5rlY"
+        }
+      ]
+    },
+    {
+      "query": "dyson daniels",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T00:40:00Z",
+      "related_news_urls": [
+        "https://soaringdownsouth.com/daniels-achievement-silence-hawks-critics",
+        "https://www.codesports.com.au/basketball/nba/supercoach-news/nba-2026-kristaps-porzingis-steps-away-from-basketball-as-draymond-green-reacts-golden-state-warriors-latest-news/news-story/4dd119bf0b65633bcad68020291b0e64",
+        "https://www.fantasypros.com/nba/news/618342/dyson-daniels-flirts-with-triple-double-fridays-win-over-wizards.php"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXJUuVi55GwLj13qnMH6paBoQCa8BCoKQ66YX3rCh5qblkLL63YCrwEO5X1Fo",
+      "image_credit": "Soaring Down South",
+      "news": [
+        {
+          "url": "https://soaringdownsouth.com/daniels-achievement-silence-hawks-critics",
+          "title": "Dyson Daniels' historic achievement should silence Hawks critics",
+          "publisher": "Soaring Down South",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXJUuVi55GwLj13qnMH6paBoQCa8BCoKQ66YX3rCh5qblkLL63YCrwEO5X1Fo"
+        },
+        {
+          "url": "https://www.codesports.com.au/basketball/nba/supercoach-news/nba-2026-kristaps-porzingis-steps-away-from-basketball-as-draymond-green-reacts-golden-state-warriors-latest-news/news-story/4dd119bf0b65633bcad68020291b0e64",
+          "title": "King James’ historic night to forget; Aussie star produces monster performance – NBA Wrap",
+          "publisher": "CODE Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-p7p-Z7F6Zq8f1x3-dkElUbivodAimdld4h_J80mmuwSTdWgi5uCLbwmXUeE"
+        },
+        {
+          "url": "https://www.fantasypros.com/nba/news/618342/dyson-daniels-flirts-with-triple-double-fridays-win-over-wizards.php",
+          "title": "Dyson Daniels flirts with triple-double in Friday's win over Wizards",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9TDk9mrBnW8qWxc2kabrmSQTO9REXR6XHmPSHJqhjGtKUsJRqFQrM9Or7CgM"
+        }
+      ]
+    },
+    {
+      "query": "john collins",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T00:40:00Z",
+      "related_news_urls": [
+        "https://pistonpowered.com/john-collins-struggles-start-with-jalen-duren-detroit-pistons",
+        "https://www.rotowire.com/basketball/headlines/john-collins-news-quiet-in-loss-538315",
+        "https://www.si.com/nba/pistons/onsi/the-pistons-biggest-offseason-addition-is-already-making-a-difference-in-detroit-01m6eha1d22v"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIDcLAokWeaf4a9fgR93rRChFyPXkFnyvF0DQLtPaRvEVLLh52pvyLnSwTkSI",
+      "image_credit": "PistonPowered",
+      "news": [
+        {
+          "url": "https://pistonpowered.com/john-collins-struggles-start-with-jalen-duren-detroit-pistons",
+          "title": "John Collins' struggles start with Jalen Duren",
+          "publisher": "PistonPowered",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIDcLAokWeaf4a9fgR93rRChFyPXkFnyvF0DQLtPaRvEVLLh52pvyLnSwTkSI"
+        },
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/john-collins-news-quiet-in-loss-538315",
+          "title": "John Collins News: Quiet in loss",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRGZ2xFpSs8gin9AaF0R8sg4LTX8sK3VNo9_PTH_8Wsu7lrJzHa_JiGT3MeZk"
+        },
+        {
+          "url": "https://www.si.com/nba/pistons/onsi/the-pistons-biggest-offseason-addition-is-already-making-a-difference-in-detroit-01m6eha1d22v",
+          "title": "The Pistons' Biggest Offseason Addition Is Already Making a Difference in Detroit",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdKGTz0EaQuoVi_WUEM2KMvt2nZgXxJuqU_1d23N836r4cUwfsHy2EloEcBCY"
+        }
+      ]
+    },
+    {
+      "query": "mlb awards",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T00:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mlb/story/_/id/50391276/2026-season-awards-mvp-cy-young-al-nl",
+        "https://www.mlb.com/news/when-is-the-mlb-awards-show-date-time-channel",
+        "https://bleacherreport.com/articles/25529914-mlb-mvp-2026-odds-and-predictions-yordan-alvarez-pete-crow-armstrong-more"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgGODeugcYGYTy_2Y2MY5QSksRzjoJC0-qQzBlIW9QfavcCS5WohVWDxNTadE",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mlb/story/_/id/50391276/2026-season-awards-mvp-cy-young-al-nl",
+          "title": "Who will win MVP? Cy Young? Picks, analysis for 2026 MLB awards week",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgGODeugcYGYTy_2Y2MY5QSksRzjoJC0-qQzBlIW9QfavcCS5WohVWDxNTadE"
+        },
+        {
+          "url": "https://www.mlb.com/news/when-is-the-mlb-awards-show-date-time-channel",
+          "title": "Everything you need to know about the 2026 MLB Awards show",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTg52tESkZVpYo4sAkSiJVQKmCEgTEEof8zfdGVxAkoyYOhVdHr5ChcYH8ZVsc"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25529914-mlb-mvp-2026-odds-and-predictions-yordan-alvarez-pete-crow-armstrong-more",
+          "title": "MLB MVP 2026 Odds and Predictions for Yordan Alvarez, Pete Crow-Armstrong, More",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3WhZUpwaS8Kiw-mdw5rZPz6gM6LjSY-OApBOXTJAq7b8tS32rpPxAG7efBT8"
+        }
+      ]
+    },
+    {
+      "query": "vikings quarterback",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T00:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50433758/giants-feel-fairly-good-qb-mccarthy-playing-thursday",
+        "https://www.nfl.com/videos/j-j-mccarthy-expected-to-play-vs-commanders-the-nfl-report",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/john-harbaugh-says-it-looks-like-qb-j-j-mccarthy-hip-will-be-able-to-play-on-thursday"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTECulNCMBvWLVf5AHOzqfJIeNYmERVcMDJFed9GTHp5nsTsu6opBIVcg3znE",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50433758/giants-feel-fairly-good-qb-mccarthy-playing-thursday",
+          "title": "Harbaugh: Giants 'feel fairly good' about McCarthy (hip) playing vs. Commanders",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTECulNCMBvWLVf5AHOzqfJIeNYmERVcMDJFed9GTHp5nsTsu6opBIVcg3znE"
+        },
+        {
+          "url": "https://www.nfl.com/videos/j-j-mccarthy-expected-to-play-vs-commanders-the-nfl-report",
+          "title": "New York Giants quarterback J.J. McCarthy expected to play vs. Commanders | 'The NFL Report'",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDklDjZvKtnvWK90CKyiDQlDdbnLLzEVDXigOJJRyFIA_2V7561fuqEQWmLwg"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/john-harbaugh-says-it-looks-like-qb-j-j-mccarthy-hip-will-be-able-to-play-on-thursday",
+          "title": "John Harbaugh says it \"looks like\" QB J.J. McCarthy (hip) will be able to play on Thursday",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_MsnMt8XDP8LZ4M5DqbL4uGmcm8aNeHWXu9D8ZVBgT4Ea5H1HUR3VNF0Ppb4"
+        }
+      ]
+    },
+    {
+      "query": "pistons vs wizards",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T00:40:00Z",
+      "related_news_urls": [
+        "https://www.bulletsforever.com/washington-wizards-preview/73948/washington-wizards-detroit-pistons-nba-game-preview",
+        "https://sports.yahoo.com/articles/wizards-pistons-discussion-223000851.html",
+        "https://www.covers.com/nba/wizards-vs-pistons-prediction-picks-odds-nov-9-2026"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtc73nn45JhG_E8VwEcLnr6wDYBTFwW7U9bIHtg-FhX7-e9xFwkS9DtDUZa90",
+      "image_credit": "Bullets Forever",
+      "news": [
+        {
+          "url": "https://www.bulletsforever.com/washington-wizards-preview/73948/washington-wizards-detroit-pistons-nba-game-preview",
+          "title": "Preview: The Wizards play the Pistons on Monday night",
+          "publisher": "Bullets Forever",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtc73nn45JhG_E8VwEcLnr6wDYBTFwW7U9bIHtg-FhX7-e9xFwkS9DtDUZa90"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/wizards-pistons-discussion-223000851.html",
+          "title": "Wizards at Pistons Discussion",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ371wvZlcHPgIzhFqN1Xe2fl1w9M8iKAbjM7T5gA8Md-wXP81LFugsheWbRes"
+        },
+        {
+          "url": "https://www.covers.com/nba/wizards-vs-pistons-prediction-picks-odds-nov-9-2026",
+          "title": "Wizards vs Pistons Prediction, Top Picks & Best Bet for Tonight's NBA Game",
+          "publisher": "Covers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReURU2S2CzrOrAdJAhoxFmCzxYyL9ayLgUY3AguH1BU-FJwICbcDOpoOgjVLM"
+        }
+      ]
+    },
+    {
+      "query": "nuggets vs rockets",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-10T00:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50426497/nuggets-starters-questionable-vs-rockets-plane-delays",
+        "https://sports.yahoo.com/articles/rockets-vs-nuggets-injury-report-235743590.html",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/giannis-antetokounmpo-wrist-probable-tuesday"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTs6l2xsnhT6EkEk-QIuHOJ4XXBBcmrgI1qmJt99IPqi-GApb0o2wO8yp2G9s",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50426497/nuggets-starters-questionable-vs-rockets-plane-delays",
+          "title": "Nuggets' starters all questionable vs. Rockets after delays leaving Mexico",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTs6l2xsnhT6EkEk-QIuHOJ4XXBBcmrgI1qmJt99IPqi-GApb0o2wO8yp2G9s"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/rockets-vs-nuggets-injury-report-235743590.html",
+          "title": "Rockets vs Nuggets Injury Report as Jokić and Murray Get Upgraded",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMZpRdxgZM8fz0cy_zIU0NS1S2I1kukkoJ_H-W91uUDRa7K5CqEK7JJ-vcNVw"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/giannis-antetokounmpo-wrist-probable-tuesday",
+          "title": "Giannis Antetokounmpo (wrist) probable Tuesday",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ47YmOC-9SmgjMsECSfTdI3ZsGMvW6wHB7qWDarn0oicDj4Prm-jgLvnpCBvk"
         }
       ]
     }
