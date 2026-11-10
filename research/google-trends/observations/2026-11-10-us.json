@@ -3,9 +3,289 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T10:31:30.653780Z",
+  "checked_at": "2026-11-10T11:01:43.141052Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "ceedee lamb fourth quarter fumble",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T10:40:00Z",
+      "related_news_urls": [
+        "https://www.dallascowboys.com/news/ceedee-lamb-powers-cowboys-to-much-needed-win-vs-colts-but-expects-more",
+        "https://www.colts.com/video/highlights-ceedee-lamb-fumbles-kenneth-harris-recovers-vs-dallas-cowboys",
+        "https://www.foxnews.com/outkick-sports/dallas-cowboys-wide-receiver-ceedee-lamb-involved-wild-catch-and-run-fumble-sums-todays-action"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRlJRZv0Z76WY47mksC0_stgEuCOKLPB6w-c3nKFYYsmuUS4lb7GNLI_zlhI4s",
+      "image_credit": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+      "news": [
+        {
+          "url": "https://www.dallascowboys.com/news/ceedee-lamb-powers-cowboys-to-much-needed-win-vs-colts-but-expects-more",
+          "title": "CeeDee Lamb powers Cowboys to much-needed win vs. Colts, but expects more",
+          "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRlJRZv0Z76WY47mksC0_stgEuCOKLPB6w-c3nKFYYsmuUS4lb7GNLI_zlhI4s"
+        },
+        {
+          "url": "https://www.colts.com/video/highlights-ceedee-lamb-fumbles-kenneth-harris-recovers-vs-dallas-cowboys",
+          "title": "HIGHLIGHTS | Can't-Miss Play: Stunning turn of events! CeeDee Lamb's long gain ends with chaotic fumble inside red zone recovered by CB Kenneth Harris",
+          "publisher": "Colts.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0uFbXIguR7AoAce4uixrpaAk5SSMnL1_Oqkqrf84ykNZMGsX-ASgPymjRdwQ"
+        },
+        {
+          "url": "https://www.foxnews.com/outkick-sports/dallas-cowboys-wide-receiver-ceedee-lamb-involved-wild-catch-and-run-fumble-sums-todays-action",
+          "title": "Dallas Cowboys wide receiver CeeDee Lamb involved in wild catch-and-run fumble that sums up today's action",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTshlsq1ZNEC-sHZvOnctVlg7msCO_BFSmZdIUdmQOXclRJc0ObdB4b6AsLejc"
+        }
+      ]
+    },
+    {
+      "query": "dancing with the stars grammy night",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T10:40:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/tv/articles/dancing-stars-week-9-see-102303932.html",
+        "https://www.forbes.com/sites/monicamercuri/2026/11/09/dancing-with-the-stars-grammy-night-will-feature-iconic-songs-dance-offs-and-performances/",
+        "https://www.cinemablend.com/television/im-ready-see-maura-higgins-dance-thong-song-dwts-after-criticisms"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYJO9cqlu9D4r6HR-NI285VG-ma6UA39ciTH9ioJdiSvHzMLl-khZGdYSLq7Q",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/dancing-stars-week-9-see-102303932.html",
+          "title": "'Dancing with the Stars' Week 9: See all the songs, dances for Grammy Night",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYJO9cqlu9D4r6HR-NI285VG-ma6UA39ciTH9ioJdiSvHzMLl-khZGdYSLq7Q"
+        },
+        {
+          "url": "https://www.forbes.com/sites/monicamercuri/2026/11/09/dancing-with-the-stars-grammy-night-will-feature-iconic-songs-dance-offs-and-performances/",
+          "title": "‘Dancing With The Stars’ Grammy Night Will Feature Iconic Songs, Dance-Offs And Performances",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQj4O92dml0MJsGLb16ozKhIHj-NNmFhGqlf-MT5gMsxf3HESGtywuW4NzPjqI"
+        },
+        {
+          "url": "https://www.cinemablend.com/television/im-ready-see-maura-higgins-dance-thong-song-dwts-after-criticisms",
+          "title": "I'm Ready To See Maura Higgins ‘Shaking That Thing Like Who's The Ish’ On DWTS After Criticisms",
+          "publisher": "Cinemablend",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTU5pFcAtVsky2WQWS_-gzeqsDlDgj9yiZQdGpopLgtoqBKAZ_OiM9EIDa0rmM"
+        }
+      ]
+    },
+    {
+      "query": "ice",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T10:40:00Z",
+      "related_news_urls": [
+        "https://www.nbcsandiego.com/news/local/ice-takes-8-year-old-haitian-boy-into-custody-at-san-diego-check-in/4098472/",
+        "https://www.morninghoney.com/p/ice-detains-8-year-old-haitian-boy-with-uncle-after-dads-deportation-but-advocate-says-there-was-no-reason",
+        "https://www.nbcbayarea.com/news/local/sister-uc-berkeley-students-ice-sfo/4170595/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQC90_A-LOFVpF8LmikjuLgiBVKjSwoogQGCUd9qSYbBi22C-XDXod6ysrSVq0",
+      "image_credit": "NBC 7 San Diego",
+      "news": [
+        {
+          "url": "https://www.nbcsandiego.com/news/local/ice-takes-8-year-old-haitian-boy-into-custody-at-san-diego-check-in/4098472/",
+          "title": "ICE takes 8-year-old Haitian boy into custody at San Diego check-in",
+          "publisher": "NBC 7 San Diego",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQC90_A-LOFVpF8LmikjuLgiBVKjSwoogQGCUd9qSYbBi22C-XDXod6ysrSVq0"
+        },
+        {
+          "url": "https://www.morninghoney.com/p/ice-detains-8-year-old-haitian-boy-with-uncle-after-dads-deportation-but-advocate-says-there-was-no-reason",
+          "title": "San Diego Third Grader Placed in Federal ICE Custody",
+          "publisher": "Morning Honey",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-9tjAV3d_JuKpx-mE-rDoLJRS_w8F2MzqgLICcx7D4cyKnr9EOsKuJyNgXEI"
+        },
+        {
+          "url": "https://www.nbcbayarea.com/news/local/sister-uc-berkeley-students-ice-sfo/4170595/",
+          "title": "‘I'm devastated': Sister of UC Berkeley student detained by ICE at SFO speaks out",
+          "publisher": "NBC Bay Area",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW9ouN7yp-_i0mMbe2tHWB3kX71yAvNZgPGoOG51AUIdRl18AB3FvzGnQGVKY"
+        }
+      ]
+    },
+    {
+      "query": "tyler kolek",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T10:40:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-sports/knicks-guard-walks-back-comment-taylor-swift-fake-fan-swifties-wife-attack",
+        "https://www.nytimes.com/athletic/7762791/2026/11/08/taylor-swift-knicks-fandom-tyler-kolek-apology/",
+        "https://www.nbcnews.com/pop-culture/pop-culture-news/taylor-swift-fakest-celeb-knicks-fan-players-say-team-rushes-defense-rcna607909"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFy8qVYQSHkMrPL2Jo2Uuh536Sc9iHq8NzWgrMIj0D4K7oQA7ZZdJvk7hLIAw",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/outkick-sports/knicks-guard-walks-back-comment-taylor-swift-fake-fan-swifties-wife-attack",
+          "title": "Knicks guard walks back comment about Taylor Swift being fake fan after Swifties, including his wife, attack",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFy8qVYQSHkMrPL2Jo2Uuh536Sc9iHq8NzWgrMIj0D4K7oQA7ZZdJvk7hLIAw"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7762791/2026/11/08/taylor-swift-knicks-fandom-tyler-kolek-apology/",
+          "title": "After calling Taylor Swift a ‘performative’ Knicks fan, Tyler Kolek says he ‘misspoke’ - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5A6OJyGDU3DZl4YgtheE9zzYMGanAfQ-gTNDjTdStjVhd96C1smNjWXceOXM"
+        },
+        {
+          "url": "https://www.nbcnews.com/pop-culture/pop-culture-news/taylor-swift-fakest-celeb-knicks-fan-players-say-team-rushes-defense-rcna607909",
+          "title": "Taylor Swift is the ‘fakest’ celeb Knicks fan, players say; team rushes to her defense",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRULsshbb6FgM73xwu-26d6itw8urIA0m2gW0_Fc0JCk6hBSgM5SwoZ1TKhX1M"
+        }
+      ]
+    },
+    {
+      "query": "cardi b",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T10:30:00Z",
+      "related_news_urls": [
+        "https://pitchfork.com/story/gta-vi-is-putting-on-a-music-festival/",
+        "https://hypebeast.com/2026/11/rockstar-games-playstation-announce-grand-theft-auto-vi-festival-miami-cactus-jack-travis-scott-don-toliver-cardi-b-justice",
+        "https://www.billboard.com/music/rb-hip-hop/gta-6-festival-lineup-cardi-b-travis-scott-1236378019/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTekEg6cYz-O-MALdUmw1eDlb6sTzUTAOvnf_EUJI0h6ENGKc-p1zMB9jCU9eM",
+      "image_credit": "Pitchfork",
+      "news": [
+        {
+          "url": "https://pitchfork.com/story/gta-vi-is-putting-on-a-music-festival/",
+          "title": "GTA VI Is Putting on a Music Festival",
+          "publisher": "Pitchfork",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTekEg6cYz-O-MALdUmw1eDlb6sTzUTAOvnf_EUJI0h6ENGKc-p1zMB9jCU9eM"
+        },
+        {
+          "url": "https://hypebeast.com/2026/11/rockstar-games-playstation-announce-grand-theft-auto-vi-festival-miami-cactus-jack-travis-scott-don-toliver-cardi-b-justice",
+          "title": "Rockstar Games and PlayStation Announce 'Grand Theft Auto VI: The Festival' in Miami",
+          "publisher": "Hypebeast",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJUR9asD0OcX_ob1ATWjzC2UiF7G6c_aAAiT0TzJS57nrOQ9UB2Dvh02OyV8E"
+        },
+        {
+          "url": "https://www.billboard.com/music/rb-hip-hop/gta-6-festival-lineup-cardi-b-travis-scott-1236378019/",
+          "title": "Cardi B, Travis Scott, Don Toliver & More to Perform at ‘Grand Theft Auto VI’ Festival",
+          "publisher": "Billboard",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgPMDvobkJmjfBmu8-FNbWTVrG72oeg7-7Tz3c34UymaOegBSgKvesrUmrxpc"
+        }
+      ]
+    },
+    {
+      "query": "mac jones trade deadline rumors",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T10:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/nfl-trade-deadline-49ers-insane-053520589.html",
+        "https://ninerswire.usatoday.com/story/sports/nfl/niners/2026/11/03/ravens-could-be-targeting-former-49ers-backup-qb/92587071007/",
+        "https://nfltraderumors.co/49ers-would-have-to-be-really-motivated-to-trade-qb-mac-jones/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKPghjWtXyU6_BwiYGH2fPjFM2MrKzPbwJzI7FqY40uXgP8DyrVlge8uDjEVU",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/nfl-trade-deadline-49ers-insane-053520589.html",
+          "title": "NFL trade deadline: 49ers would be insane to make deal with Vikings",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKPghjWtXyU6_BwiYGH2fPjFM2MrKzPbwJzI7FqY40uXgP8DyrVlge8uDjEVU"
+        },
+        {
+          "url": "https://ninerswire.usatoday.com/story/sports/nfl/niners/2026/11/03/ravens-could-be-targeting-former-49ers-backup-qb/92587071007/",
+          "title": "Ravens could be targeting former 49ers backup QB",
+          "publisher": "Niners Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9lxxjzDniOfyOExFL-zKf6baugaCeyjr9iwxb00HmRGNdywgkyVjxAJo__g0"
+        },
+        {
+          "url": "https://nfltraderumors.co/49ers-would-have-to-be-really-motivated-to-trade-qb-mac-jones/",
+          "title": "49ers Would ‘Have To Be Really Motivated’ To Trade QB Mac Jones",
+          "publisher": "NFLTradeRumors.co",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPyZxVuNgncDClenrNFzX-E7UFBRKMHEFWM0HvVX9ssqq5X1-wwHgNB3zDfRw"
+        }
+      ]
+    },
+    {
+      "query": "spectrum outage",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T10:20:00Z",
+      "related_news_urls": [
+        "https://mymotherlode.com/news/local/11289816/major-internet-outage-sparked-by-alleged-thieves.html",
+        "https://www.ledger.news/news/at-t-internet-service-outage-leads-to-multiple-arrests/article_627c8a58-d74e-4581-a823-d66867cc1f09.html",
+        "https://www.crimevoice.com/2026/11/05/infrastructure-vandalism-cut-internet-across-amador-and-san-joaquin-counties-suspects-in-custody/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKGm9EcF2-JFdd-V_oVYTPPb1BttCZgB2N-riG9lXL3X7WgmG-8OXyEPm8Rhk",
+      "image_credit": "myMotherLode.com",
+      "news": [
+        {
+          "url": "https://mymotherlode.com/news/local/11289816/major-internet-outage-sparked-by-alleged-thieves.html",
+          "title": "Major Internet Outage Sparked By Alleged Thieves",
+          "publisher": "myMotherLode.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKGm9EcF2-JFdd-V_oVYTPPb1BttCZgB2N-riG9lXL3X7WgmG-8OXyEPm8Rhk"
+        },
+        {
+          "url": "https://www.ledger.news/news/at-t-internet-service-outage-leads-to-multiple-arrests/article_627c8a58-d74e-4581-a823-d66867cc1f09.html",
+          "title": "AT&T internet service outage leads to multiple arrests",
+          "publisher": "Ledger Dispatch",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMBzn97vMmkNPanM5AKmbS6jIkrG7UXfZ0J6u5MFp7R_JHAnUKvG1v4sQvJpU"
+        },
+        {
+          "url": "https://www.crimevoice.com/2026/11/05/infrastructure-vandalism-cut-internet-across-amador-and-san-joaquin-counties-suspects-in-custody/",
+          "title": "Infrastructure Vandalism Cut Internet Across Amador and San Joaquin Counties, Suspects In Custody",
+          "publisher": "Crime Voice",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxZomRaztLL7_vzr_M2GOGKoqGHytuWSlwRhHoWFn-QTRPCpe_UhuAnePl60Y"
+        }
+      ]
+    },
+    {
+      "query": "mike evans",
+      "approx_searches": "100+",
+      "published_at": "2026-11-10T10:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7768819/2026/11/09/49ers-deebo-samuel-mike-evans-injuries/",
+        "https://www.49ers.com/news/49ers-rule-out-three-wide-receivers-vs-raiders-bosa-returns-to-full-practice-ahead-of-week-9-lvvssf",
+        "https://nypost.com/2026/11/09/sports/49ers-star-receivers-mike-evans-and-deebo-samuel-head-in-opposite-injury-directions/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK440-wJoSeiis2FByBqDMj4Q3g6wyPc6StoU1MdvMt3ebtaloT68dlN2cS6Y",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7768819/2026/11/09/49ers-deebo-samuel-mike-evans-injuries/",
+          "title": "49ers minutia minute: Deebo Samuel, CJ West expected back; Mike Evans still on hold",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK440-wJoSeiis2FByBqDMj4Q3g6wyPc6StoU1MdvMt3ebtaloT68dlN2cS6Y"
+        },
+        {
+          "url": "https://www.49ers.com/news/49ers-rule-out-three-wide-receivers-vs-raiders-bosa-returns-to-full-practice-ahead-of-week-9-lvvssf",
+          "title": "49ers Rule Out Three Wide Receivers vs. Raiders; Bosa Returns to Full Practice Ahead of Week 9 #LVvsSF",
+          "publisher": "San Francisco 49ers",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsN9PqYFzM-GlL4C7HWTRbhrGGXkkfFga9OihOTjzo2gIWXIsS2vixlmLwg9A"
+        },
+        {
+          "url": "https://nypost.com/2026/11/09/sports/49ers-star-receivers-mike-evans-and-deebo-samuel-head-in-opposite-injury-directions/",
+          "title": "49ers star receivers Mike Evans and Deebo Samuel head in opposite injury directions",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkS17UFc49jK3m1HOdsgt650Jas9o1MFvqCWrzb3YSoBbW0Z-edrg9oEpLkKE"
+        }
+      ]
+    },
     {
       "query": "movie times",
       "approx_searches": "500+",
@@ -46,20 +326,13 @@
       "approx_searches": "200+",
       "published_at": "2026-11-10T10:00:00Z",
       "related_news_urls": [
-        "https://pennathletics.com/news/2026/11/8/mens-basketball-health-update.aspx",
         "https://sports.yahoo.com/articles/sophie-cunningham-kelsey-mitchell-others-011151565.html",
-        "https://people.com/connor-mccaffery-s-20-year-old-brother-on-indefinite-medical-leave-from-college-team-after-cancer-diagnosis-12245692"
+        "https://pennathletics.com/news/2026/11/8/mens-basketball-health-update.aspx",
+        "https://www.12onyourside.com/2026/11/08/uofr-basketball-player-diagnosed-with-cancer/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQh6VwqWGUL0Kg7W4_9STI_OzdwOdTzMIKXexfNNh2wDr2VCnSvBqczhcuUecs",
-      "image_credit": "University of Pennsylvania Athletics",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkhvzrJPfioix-vMmPJnDDt4wuaaYp-Os3Sh0EHboDxKQ9qgQqZPq0WZFdHCk",
+      "image_credit": "Yahoo Sports",
       "news": [
-        {
-          "url": "https://pennathletics.com/news/2026/11/8/mens-basketball-health-update.aspx",
-          "title": "Statement from Coach McCaffery on the Health of Jack McCaffery",
-          "publisher": "University of Pennsylvania Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQh6VwqWGUL0Kg7W4_9STI_OzdwOdTzMIKXexfNNh2wDr2VCnSvBqczhcuUecs"
-        },
         {
           "url": "https://sports.yahoo.com/articles/sophie-cunningham-kelsey-mitchell-others-011151565.html",
           "title": "Sophie Cunningham, Kelsey Mitchell & Others React After Caitlin Clark’s Boyfriend Connor McCaffery Shares Heartbreaking Family Update",
@@ -68,291 +341,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkhvzrJPfioix-vMmPJnDDt4wuaaYp-Os3Sh0EHboDxKQ9qgQqZPq0WZFdHCk"
         },
         {
-          "url": "https://people.com/connor-mccaffery-s-20-year-old-brother-on-indefinite-medical-leave-from-college-team-after-cancer-diagnosis-12245692",
-          "title": "Connor McCaffery’s 20-Year-Old Brother on Indefinite Medical Leave from College Team After Cancer Diagnosis",
-          "publisher": "People.com",
+          "url": "https://pennathletics.com/news/2026/11/8/mens-basketball-health-update.aspx",
+          "title": "Statement from Coach McCaffery on the Health of Jack McCaffery",
+          "publisher": "University of Pennsylvania Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRzVhzMIL72Qwpoy1qwbBQe6kDq5NId175u-0CIyeHQM1hcWI0TdLCsjLzrmg"
-        }
-      ]
-    },
-    {
-      "query": "senator mitch mcconnell",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T10:00:00Z",
-      "related_news_urls": [
-        "https://www.baltimoresun.com/2026/11/09/mcconnells-lack-of-response-in-video-to-gop-midterm-losses-draws-backlash/",
-        "https://wset.com/news/nation-world/mitch-mcconnells-lack-of-response-to-gop-midterm-loss-draws-backlash",
-        "https://www.snopes.com/fact-check/mcconnell-midterm-response-video/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSMNuflAalKd7Im6Epn_e7InVwM7JNAlhgj0VJ4Iz0J9k-jQFR_vXEpfazGas",
-      "image_credit": "Baltimore Sun",
-      "news": [
-        {
-          "url": "https://www.baltimoresun.com/2026/11/09/mcconnells-lack-of-response-in-video-to-gop-midterm-losses-draws-backlash/",
-          "title": "McConnell’s lack of response in video to GOP midterm losses draws backlash",
-          "publisher": "Baltimore Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSMNuflAalKd7Im6Epn_e7InVwM7JNAlhgj0VJ4Iz0J9k-jQFR_vXEpfazGas"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQh6VwqWGUL0Kg7W4_9STI_OzdwOdTzMIKXexfNNh2wDr2VCnSvBqczhcuUecs"
         },
         {
-          "url": "https://wset.com/news/nation-world/mitch-mcconnells-lack-of-response-to-gop-midterm-loss-draws-backlash",
-          "title": "Mitch McConnell's lack of response to GOP midterm loss draws backlash",
-          "publisher": "WSET",
+          "url": "https://www.12onyourside.com/2026/11/08/uofr-basketball-player-diagnosed-with-cancer/",
+          "title": "UofR basketball player diagnosed with cancer",
+          "publisher": "WWBT",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbDrIouoPMlpOHQU4KlTUM-Qj2W-Bn0JlyyobBVT__YbRoUAoekqz2AY4BC24"
-        },
-        {
-          "url": "https://www.snopes.com/fact-check/mcconnell-midterm-response-video/",
-          "title": "Does video show Mitch McConnell appearing unresponsive when asked for midterms reaction?",
-          "publisher": "Snopes.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs8XckjLPKDNSS04oKThvoVLGVpgJvkuHVX5Vm_p5eitJcq8pwvCdgVIcv_B0"
-        }
-      ]
-    },
-    {
-      "query": "ct lottery",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T10:00:00Z",
-      "related_news_urls": [
-        "https://www.norwichbulletin.com/story/news/lottery/2026/11/05/connecticut-lottery-results-thursday-november-5-2026/92637071007/",
-        "https://www.nhregister.com/news/article/connecticut-powerball-player-wins-100k-22521339.php",
-        "https://patch.com/connecticut/westhartford/visit-west-hartford-turns-big-ct-lottery-win"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJnCysHzecVqHo8CyxXUVPlx0UOdoh85m545LrzSZjyMxsBh0z6kHbX1mbIos",
-      "image_credit": "Norwich Bulletin",
-      "news": [
-        {
-          "url": "https://www.norwichbulletin.com/story/news/lottery/2026/11/05/connecticut-lottery-results-thursday-november-5-2026/92637071007/",
-          "title": "CT Lottery Cash 5, Play3 winning numbers for Nov. 5, 2026",
-          "publisher": "Norwich Bulletin",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJnCysHzecVqHo8CyxXUVPlx0UOdoh85m545LrzSZjyMxsBh0z6kHbX1mbIos"
-        },
-        {
-          "url": "https://www.nhregister.com/news/article/connecticut-powerball-player-wins-100k-22521339.php",
-          "title": "Connecticut lottery player won country’s biggest Powerball prize Saturday",
-          "publisher": "New Haven Register",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTkSk7yqXRTEjsL6PZdxU1CPGNFKguIyQngvtJpuOkp0RYSeb1sLrD3AxP29Q"
-        },
-        {
-          "url": "https://patch.com/connecticut/westhartford/visit-west-hartford-turns-big-ct-lottery-win",
-          "title": "Visit To West Hartford Turns Into Big CT Lottery Win",
-          "publisher": "Patch",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQvHkw3rKiwgY2LXHgEccHQfaAYsWjvdpws4pE96GhSeHjF5uWSt7CbbNCmhc"
-        }
-      ]
-    },
-    {
-      "query": "steelers news",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T10:00:00Z",
-      "related_news_urls": [
-        "https://www.post-gazette.com/sports/steelers/2026/11/09/steelers-bengals-nfl-primetime-matchup-joe-burrow/stories/202611090027",
-        "https://www.steelers.com/news/dey-are-who-the-steelers-thought-dey-were",
-        "https://triblive.com/sports/madden-monday-despite-recent-steelers-surge-a-loss-in-cincinnati-feels-likely/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPhsQ7sU_tR6PhJsvVvi5T52V4HTNQhCONPe2drVFLxXTKAEjPwy7grplVmX8",
-      "image_credit": "Pittsburgh Post-Gazette",
-      "news": [
-        {
-          "url": "https://www.post-gazette.com/sports/steelers/2026/11/09/steelers-bengals-nfl-primetime-matchup-joe-burrow/stories/202611090027",
-          "title": "The perfect script is written for the Steelers’ national TV showdown against the Bengals",
-          "publisher": "Pittsburgh Post-Gazette",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPhsQ7sU_tR6PhJsvVvi5T52V4HTNQhCONPe2drVFLxXTKAEjPwy7grplVmX8"
-        },
-        {
-          "url": "https://www.steelers.com/news/dey-are-who-the-steelers-thought-dey-were",
-          "title": "Dey are who the Steelers thought dey were",
-          "publisher": "Steelers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCXCPgR7cVVT8NsjeibK0wBBdp9Z8c3cuOxFori1EXkZPXOF3zgMXNrKVQL2g"
-        },
-        {
-          "url": "https://triblive.com/sports/madden-monday-despite-recent-steelers-surge-a-loss-in-cincinnati-feels-likely/",
-          "title": "Madden Monday: Despite Steelers’ recent surge, a loss in Cincinnati feels likely",
-          "publisher": "TribLIVE.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTT8i0PTpfFY5_GGvAGD_IM1pOyGs_kCZtlMxqGWx2nIpjMEQvVtidXX_Q0Ohw"
-        }
-      ]
-    },
-    {
-      "query": "nintendo zelda ocarina",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T09:40:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/07/business/media/zelda-ocarina-of-time-remake-nintendo.html",
-        "https://mashable.com/entertainment/zelda-ocarina-of-time-switch-2-metacritic-records",
-        "https://www.forbes.com/sites/paultassi/2026/11/09/the-ocarina-of-time-remake-sets-an-all-time-metacritic-score-record/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3P4qiGEBirP5kKmJ5FCzywWBXqZpgOM_TbQUWj7h7cfGSdrO_Ce40S8bYH3w",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/07/business/media/zelda-ocarina-of-time-remake-nintendo.html",
-          "title": "A ‘Legend of Zelda’ Game Is Reborn and ’90s Nostalgia Fans Are All In",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3P4qiGEBirP5kKmJ5FCzywWBXqZpgOM_TbQUWj7h7cfGSdrO_Ce40S8bYH3w"
-        },
-        {
-          "url": "https://mashable.com/entertainment/zelda-ocarina-of-time-switch-2-metacritic-records",
-          "title": "'The Ocarina of Time' remake is setting Metacritic records left and right",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRghmIGiGPCgfRzGiXO0GjBw-CO8B0nbM_xCM4is-6jUGWDG3XCQ11FppreVU8"
-        },
-        {
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/09/the-ocarina-of-time-remake-sets-an-all-time-metacritic-score-record/",
-          "title": "The ‘Legend Of Zelda: Ocarina Of Time’ Remake Sets An All-Time Metacritic Score Record",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIsWkWOF9-teJXBa-0VuGCviTKS8I5KmWndGLsuirO3skc_etORDOYgJttho8"
-        }
-      ]
-    },
-    {
-      "query": "meri brown",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T09:40:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/sister-wives-star-meri-brown-161352260.html",
-        "https://www.usmagazine.com/entertainment/news/sister-wives-meri-claims-ex-kody-would-choose-her-clothes/",
-        "https://www.realitytea.com/2026/11/09/sister-wives-meri-brown-kody-controlling-clothing-habit-2/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3UhwcIkCAcQ0uJ5h6oQcdREW2wOlMuYMBSAAvWJWO0mkF5IvRv9MQXR6YINU",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/sister-wives-star-meri-brown-161352260.html",
-          "title": "‘Sister Wives’ Star Meri Brown Reveals Ex Kody Wanted Wives to Match, Would ‘Choose’ Her Clothes",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3UhwcIkCAcQ0uJ5h6oQcdREW2wOlMuYMBSAAvWJWO0mkF5IvRv9MQXR6YINU"
-        },
-        {
-          "url": "https://www.usmagazine.com/entertainment/news/sister-wives-meri-claims-ex-kody-would-choose-her-clothes/",
-          "title": "Sister Wives’ Meri Brown Claims Ex-Husband Kody Would ‘Choose’ Her Clothes, Wanted Wives to Match",
-          "publisher": "Us Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6FQNOeq7gmmWquO_BA3wm8x_xmxRIPfmx3es0YhaALTTx01R4HJYnF_SCb04"
-        },
-        {
-          "url": "https://www.realitytea.com/2026/11/09/sister-wives-meri-brown-kody-controlling-clothing-habit-2/",
-          "title": "‘Sister Wives’ Meri Brown Exposes Kody’s ‘Very Controlling’ Habit",
-          "publisher": "Reality Tea",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgXoKraCYd-471ktEFNk7Jk8ooiTjNyx8dHIm_32Cnng7Z9T4ebdrb5KFZgok"
-        }
-      ]
-    },
-    {
-      "query": "trial",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T09:40:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/09/us/tyler-robinson-charlie-kirk-trial",
-        "https://www.npr.org/2026/11/10/nx-s1-6032715/trial-for-charlie-kirks-accused-killer-to-begin-in-summer-2028",
-        "https://www.foxnews.com/us/michael-ruiz-tyler-robinson-judge-give-long-awaited-trial-date-ruling-assassination-charlie-kirk"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu8OUquNcXQTMbIobccJsWAT2_Higr69k_UB66VO4NQBGB5b0DGJXFqO_wkUQ",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/09/us/tyler-robinson-charlie-kirk-trial",
-          "title": "Judge sets trial date for Charlie Kirk’s accused killer for summer 2028",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu8OUquNcXQTMbIobccJsWAT2_Higr69k_UB66VO4NQBGB5b0DGJXFqO_wkUQ"
-        },
-        {
-          "url": "https://www.npr.org/2026/11/10/nx-s1-6032715/trial-for-charlie-kirks-accused-killer-to-begin-in-summer-2028",
-          "title": "Trial for Charlie Kirk’s accused killer to begin in summer 2028",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://www.foxnews.com/us/michael-ruiz-tyler-robinson-judge-give-long-awaited-trial-date-ruling-assassination-charlie-kirk",
-          "title": "MICHAEL RUIZ: Tyler Robinson judge to give long-awaited trial date ruling in assassination of Charlie Kirk",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFXFtt2yi5wXxRyeaqIzGk8BnueiyVpE1xQRBMLlkgNQHQmETaHNIXQtf6I3g"
-        }
-      ]
-    },
-    {
-      "query": "ryan gosling",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T09:40:00Z",
-      "related_news_urls": [
-        "https://ew.com/nicolas-cage-reacts-to-ryan-gosling-taking-over-as-ghost-rider-12238383",
-        "https://www.yahoo.com/entertainment/movies/articles/does-nicolas-cage-think-ryan-160410479.html",
-        "https://www.reutersconnect.com/item/uncaptioned-nicolas-cage-reacts-to-ryan-goslings-upcoming-ghost-rider-movie/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX09XU0hCQzEyMDMzMjk"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9Va8rjKvZA1I3sD6oJmk7tfdwQvdeecOasMyV9PzD3py623VXMfICNbkQAsQ",
-      "image_credit": "Entertainment Weekly",
-      "news": [
-        {
-          "url": "https://ew.com/nicolas-cage-reacts-to-ryan-gosling-taking-over-as-ghost-rider-12238383",
-          "title": "Nicolas Cage reacts to Ryan Gosling taking over as Ghost Rider",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9Va8rjKvZA1I3sD6oJmk7tfdwQvdeecOasMyV9PzD3py623VXMfICNbkQAsQ"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/does-nicolas-cage-think-ryan-160410479.html",
-          "title": "What Does Nicolas Cage Think of Ryan Gosling’s Ghost Rider Reboot? He Says…",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-JONoTz8j5gxDcuRYpSW9OjyZDOIH-qpvZ3JOsJC_M6oGYX34P7XAPWGVozQ"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/uncaptioned-nicolas-cage-reacts-to-ryan-goslings-upcoming-ghost-rider-movie/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX09XU0hCQzEyMDMzMjk",
-          "title": "Licensable video: UNCAPTIONED: Nicolas Cage reacts to Ryan Gosling's upcoming Ghost Rider movie",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKZPXNds_z4T1Segpujtik8r1vEnEKRAxxaaSoP66CWGeppsiwnBtf2w-cujM"
-        }
-      ]
-    },
-    {
-      "query": "ss united states",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T09:40:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/08/travel/ss-united-states-sinking-artificial-reef-hnk",
-        "https://www.wkrg.com/northwest-florida/okaloosa-county/sinking-of-ss-united-states-moved-up-due-to-unsafe-weather-conditions/",
-        "https://www.fox10tv.com/2026/11/09/ss-united-states-leaves-mobile-final-voyage/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7jo4kEru5r7he-vj71ZqVP70NAH0kqFhD514LN9XAoXoCYKCRxnxlqbStq6w",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/08/travel/ss-united-states-sinking-artificial-reef-hnk",
-          "title": "As this storied ship is sunk to become an artificial reef and scuba spot, it concludes the ocean liner era",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7jo4kEru5r7he-vj71ZqVP70NAH0kqFhD514LN9XAoXoCYKCRxnxlqbStq6w"
-        },
-        {
-          "url": "https://www.wkrg.com/northwest-florida/okaloosa-county/sinking-of-ss-united-states-moved-up-due-to-unsafe-weather-conditions/",
-          "title": "Sinking of SS United States moved up due to unsafe weather conditions",
-          "publisher": "WKRG",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHCFQffSzbeYLRgHluZInsIi_5KmztiEgqIlk1O1ZIyN0u50WC5h5LeIXoijY"
-        },
-        {
-          "url": "https://www.fox10tv.com/2026/11/09/ss-united-states-leaves-mobile-final-voyage/",
-          "title": "SS United States leaves Mobile for final voyage",
-          "publisher": "Fox 10 News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0dvJg8Xfi1KUs9wwoLA5-aCUlvqJtwa4i5i_PYKmsUdcPySMCw8s6vvZy0sc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQA0h5egb0s8-_rwn4tP_5mWntvW2Vr5KAHWfmRgVL-nGbN1EudqfVlkmlNto4"
         }
       ]
     }
