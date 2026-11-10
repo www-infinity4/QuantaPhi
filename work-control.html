@@ -93,7 +93,7 @@
    }
    if(sha&&String(gh.author||'').trim()&&Array.isArray(gh.reviewers)){
       const latestByUser=new Map();
-      gh.reviewers.forEach(x=>{if(x&&x.user)latestByUser.set(x.user.toLowerCase(),x);});
+      gh.reviewers.forEach(x=>{if(x&&x.user&&['APPROVED','CHANGES_REQUESTED','DISMISSED'].includes(x.state))latestByUser.set(x.user.toLowerCase(),x);});
       const approved=[...latestByUser.values()].some(x=>x.state==='APPROVED'&&x.commit_id===sha&&x.user.toLowerCase()!==String(gh.author||'').toLowerCase());
       if(approved) g.review=gate('confirmed','Independent GitHub approval was observed for the exact source head');
    }
@@ -101,7 +101,7 @@
    for(const e of (ticket.evidence||[])){
       if(!stages.includes(e.gate)||e.gate==='proposed')continue;
       if(!safeUrl(e.url))continue;
-      if(['fail','blocked'].includes(e.result)){if(['none','planned'].includes(g[e.gate].level))g[e.gate]=gate(e.result==='fail'?'failed':'blocked','User-entered failure/blocker; independently unverified');continue;}
+      if(['fail','blocked'].includes(e.result)){if(!['confirmed','failed','pending'].includes(g[e.gate].level))g[e.gate]=gate(e.result==='fail'?'failed':'blocked','User-entered failure/blocker; independently unverified');continue;}
       if(!['pass','observed'].includes(e.result))continue;
       let complete=false;
       switch(e.gate){
@@ -117,7 +117,7 @@
       const allowedSha=(['merge','deployment','browser'].includes(e.gate)&&isSha(gh.merge?.mergeCommitSha)&&String(e.sha).toLowerCase()===gh.merge.mergeCommitSha.toLowerCase())||isAtHead(e.sha,sha);
       if(!allowedSha){
         if(g[e.gate].level==='none')g[e.gate]=gate('stale','Receipt references a different commit than the observed source head');
-      } else if(g[e.gate].level!=='confirmed'){
+      } else if(!['confirmed','failed','pending','blocked'].includes(g[e.gate].level)){
         g[e.gate]=gate('recorded','User-entered link and details; external verification still required');
       }
    }
@@ -130,7 +130,7 @@
    if(!raw||typeof raw!=='object'||!txt(raw.title,240).trim())throw Error('Ticket '+(i+1)+' has no title.');
    const id=txt(raw.id,80)||'IMPORTED-'+(i+1);
    if(seen.has(id))throw Error('Duplicate ticket ID: '+id);seen.add(id);
-   const evidence=Array.isArray(raw.evidence)?raw.evidence.slice(0,300).map((r,j)=>({
+   const evidence=Array.isArray(raw.evidence)?raw.evidence.map((r,j)=>({
      id:txt(r.id,80)||'IMPORT-'+j,gate:stages.includes(r.gate)?r.gate:'proposed',source:'manual',result:['pass','fail','observed','blocked'].includes(r.result)?r.result:'observed',url:safeUrl(r.url),sha:txt(r.sha,80),observer:txt(r.observer,160),command:txt(r.command,600),filePaths:txt(r.filePaths,2500),deploymentId:txt(r.deploymentId,200),device:txt(r.device,200),screenshotUrl:safeUrl(r.screenshotUrl),environment:txt(r.environment,200),readback:txt(r.readback,600),timestamp:txt(r.timestamp,60),notes:txt(r.notes,3000)
    })):[];
    // Imported GitHub data is intentionally treated as stale until a new public readback.
@@ -220,13 +220,52 @@ function exportBackup(){const data={schema:1,exportedAt:new Date().toISOString()
 async function importBackup(){const file=$('#importFile').files?.[0];if(!file){toast('Choose a JSON file first.');return;}try{const raw=JSON.parse(await file.text());const parsed=C.validateImport(raw);if(!confirm(`Replace ${state.tickets.length} local tickets with ${parsed.tickets.length} imported tickets?`))return;state.tickets=parsed.tickets;state.selectedId=parsed.tickets[0]?.id||'';state.issueObservations={};state.githubError='';save();$('#importDialog').close();navigate('tickets');toast('Imported as unverified local records.');}catch(err){toast('Import rejected: '+err.message);}}
 async function githubJson(url){const response=await fetch(url,{headers:{'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'},credentials:'omit',cache:'no-store'});if(!response.ok)throw Error(`GitHub GET ${response.status}; possibly private, rate-limited or unavailable`);return response.json();}
 function normalizeChecks(runs,statuses,sha){const list=[];if(Array.isArray(runs?.check_runs))runs.check_runs.forEach(x=>list.push({name:String(x.name||'unnamed'),status:String(x.status||'unknown'),conclusion:String(x.conclusion||'unknown'),url:C.safeUrl(x.html_url)}));if(Array.isArray(statuses?.statuses))statuses.statuses.forEach(x=>list.push({name:String(x.context||'commit status'),status:x.state==='pending'?'pending':'completed',conclusion:x.state==='success'?'success':x.state==='pending'?'pending':'failure',url:C.safeUrl(x.target_url)}));return {sha,items:list};}
-async function inspectGithub(id){const t=state.tickets.find(x=>x.id===id);if(!t)return;const pr=C.safePrNumber(t.prNumber);if(!C.isSafeRepo(t.repo)||!pr){toast('Pin a valid repository and PR number first.');return;}state.githubSyncing=id;state.githubError='';render();try{const root=`https://api.github.com/repos/${t.repo}`;const pull=await githubJson(`${root}/pulls/${pr}`);if(String(pull.base?.repo?.full_name||'').toLowerCase()!==t.repo.toLowerCase())throw Error('GitHub PR belongs to a different repository.');const sha=pull.head?.sha;if(!C.isSha(sha))throw Error('GitHub did not return a valid head SHA.');const [files,checks,statuses,reviews]=await Promise.allSettled([githubJson(`${root}/pulls/${pr}/files?per_page=100`),githubJson(`${root}/commits/${sha}/check-runs?per_page=100`),githubJson(`${root}/commits/${sha}/status`),githubJson(`${root}/pulls/${pr}/reviews?per_page=100`)]);
- const ok=x=>x.status==='fulfilled'?x.value:null;
- const fileRows=ok(files),checkRows=ok(checks),statusRows=ok(statuses),reviewRows=ok(reviews);
- const notes=[!fileRows?'file listing':null,!checkRows?'check runs':null,!statusRows?'commit statuses':null,!reviewRows?'reviews':null].filter(Boolean);
- t.github={headSha:sha,author:pull.user?.login||'',prUrl:C.safeUrl(pull.html_url),changedFiles:Array.isArray(fileRows)?fileRows.map(x=>x.filename).filter(Boolean):[],checks:checkRows||statusRows?normalizeChecks(checkRows,statusRows,sha):null,reviewers:Array.isArray(reviewRows)?reviewRows.filter(x=>x.user?.login).map(x=>({user:x.user.login,state:x.state,commit_id:x.commit_id})):[],merge:pull.merged_at&&C.isSha(pull.merge_commit_sha)?{mergedAt:pull.merged_at,mergeCommitSha:pull.merge_commit_sha}:null,observedAt:new Date().toISOString(),warnings:notes};
- toast('GitHub inspected (read-only). '+(notes.length?'Some endpoints unavailable: '+notes.join(', '):'Cloudflare and Android remain unverified.'));
- }catch(e){state.githubError=String(e.message||e);toast('GitHub readback unavailable; no evidence promoted.');}finally{state.githubSyncing='';render();}}
+async function githubPages(url,maxPages=20){
+ const rows=[];
+ for(let page=1;page<=maxPages;page++){
+  const separator=url.includes('?')?'&':'?';
+  const result=await githubJson(url+separator+'per_page=100&page='+page);
+  if(!Array.isArray(result))throw Error('GitHub returned an invalid page.');
+  rows.push(...result);
+  if(result.length<100)return rows;
+ }
+ throw Error('GitHub review/file history exceeds the safe page limit; verification withheld.');
+}
+async function inspectGithub(id){
+ const t=state.tickets.find(x=>x.id===id);if(!t)return;
+ const pr=C.safePrNumber(t.prNumber),repo=t.repo;
+ if(!C.isSafeRepo(repo)||!pr){toast('Pin a valid repository and PR number first.');return;}
+ state.githubSyncing=id;state.githubError='';render();
+ try{
+  const root=`https://api.github.com/repos/${repo}`;
+  const pull=await githubJson(`${root}/pulls/${pr}`);
+  if(String(pull.base?.repo?.full_name||'').toLowerCase()!==repo.toLowerCase())throw Error('GitHub PR belongs to a different repository.');
+  const sha=pull.head?.sha;
+  if(!C.isSha(sha))throw Error('GitHub did not return a valid head SHA.');
+  const [files,checks,statuses,reviews]=await Promise.allSettled([
+   githubPages(`${root}/pulls/${pr}/files`),
+   githubJson(`${root}/commits/${sha}/check-runs?per_page=100`),
+   githubJson(`${root}/commits/${sha}/status`),
+   githubPages(`${root}/pulls/${pr}/reviews`)
+  ]);
+  // Never attach an async readback if the ticket was reassigned while in flight.
+  if(t.repo!==repo||C.safePrNumber(t.prNumber)!==pr||!state.tickets.includes(t))
+   throw Error('Ticket repository/PR changed during inspection. Retry on the new ticket.');
+  const ok=x=>x.status==='fulfilled'?x.value:null;
+  const fileRows=ok(files),checkRows=ok(checks),statusRows=ok(statuses),reviewRows=ok(reviews);
+  const notes=[!fileRows?'file listing':null,!checkRows?'check runs':null,!statusRows?'commit statuses':null,!reviewRows?'reviews':null].filter(Boolean);
+  const checksComplete=checkRows&&Array.isArray(checkRows.check_runs)&&Number(checkRows.total_count||0)<=checkRows.check_runs.length;
+  if(checkRows&&!checksComplete)notes.push('check runs incomplete; CI withheld');
+  t.github={headSha:sha,author:pull.user?.login||'',prUrl:C.safeUrl(pull.html_url),
+   changedFiles:Array.isArray(fileRows)?fileRows.map(x=>x.filename).filter(Boolean):[],
+   checks:checkRows&&!checksComplete?null:(checkRows||statusRows?normalizeChecks(checkRows,statusRows,sha):null),
+   reviewers:Array.isArray(reviewRows)?reviewRows.filter(x=>x.user?.login).map(x=>({user:x.user.login,state:x.state,commit_id:x.commit_id})):[],
+   merge:pull.merged_at&&C.isSha(pull.merge_commit_sha)?{mergedAt:pull.merged_at,mergeCommitSha:pull.merge_commit_sha}:null,
+   observedAt:new Date().toISOString(),warnings:notes};
+  toast('GitHub inspected (read-only). '+(notes.length?'Some endpoints unavailable: '+notes.join(', '):'Cloudflare and Android remain unverified.'));
+ }catch(e){state.githubError=String(e.message||e);toast('GitHub readback unavailable; no evidence promoted.');}
+ finally{state.githubSyncing='';render();}
+}
 async function inspectIssue(id){const t=state.tickets.find(x=>x.id===id);if(!t)return;const match=String(t.issueUrl).match(/^https:\/\/github\.com\/([^/]+)\/([^/]+)\/issues\/(\d+)\/?$/i);if(!match){toast('Ticket needs a standard GitHub issue URL.');return;}state.githubSyncing=id;render();try{const issue=await githubJson(`https://api.github.com/repos/${match[1]}/${match[2]}/issues/${match[3]}`);state.issueObservations[id]={state:String(issue.state||'unknown'),observedAt:new Date().toLocaleString(),title:String(issue.title||'')};toast('Issue state read from public GitHub; not counted as code evidence.');}catch(e){state.githubError=String(e.message||e);toast('Unable to read GitHub issue; evidence unchanged.');}finally{state.githubSyncing='';render();}}
 
 async function inspectRepo(repo){
