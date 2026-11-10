@@ -3,9 +3,219 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T12:32:08.964283Z",
+  "checked_at": "2026-11-10T13:01:21.743988Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "david williams",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T12:40:00Z",
+      "related_news_urls": [
+        "https://www.outlookindia.com/art-entertainment/hollywood/david-walliams-reportedly-dropped-from-the-road-to-nevermore-amid-misconduct-allegations",
+        "https://www.imdb.com/de/news/ni66086947/?ref_=nwc_art_perm",
+        "https://wheretowatch.tv/tv-news-2/david-walliams-cbbc-specials-remain-on-iplayer/29/10/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0q5xsupDSZBBeZKVffuVIV-ZQGihnAIe7GAhwZta4ZGT8c6F_Egi-QwUwQgg",
+      "image_credit": "Outlook India",
+      "news": [
+        {
+          "url": "https://www.outlookindia.com/art-entertainment/hollywood/david-walliams-reportedly-dropped-from-the-road-to-nevermore-amid-misconduct-allegations",
+          "title": "David Walliams Reportedly Dropped From The Road To Nevermore Amid Misconduct Allegations",
+          "publisher": "Outlook India",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0q5xsupDSZBBeZKVffuVIV-ZQGihnAIe7GAhwZta4ZGT8c6F_Egi-QwUwQgg"
+        },
+        {
+          "url": "https://www.imdb.com/de/news/ni66086947/?ref_=nwc_art_perm",
+          "title": "UK Comedian David Walliams Removed from Movie Amid Misconduct Allegations (Report)",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQyIqtY-SZuQp9aaOmwHCd8hnVaNXB_dVhNxn_LCqwNx_hqr2XRf2TrEagNe48"
+        },
+        {
+          "url": "https://wheretowatch.tv/tv-news-2/david-walliams-cbbc-specials-remain-on-iplayer/29/10/",
+          "title": "David Walliams’ CBBC specials remain on iPlayer despite reports he's been axed from film for misconduct",
+          "publisher": "wheretowatch.tv",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbXUp1wDBswS1uMjjLe73RuEsY0sHB4_I1vYAs7ZM8tJE5wg81fHxrL98X8iE"
+        }
+      ]
+    },
+    {
+      "query": "david walliams",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-10T12:30:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/tv-and-radio/ng-interactive/2026/nov/10/david-walliams-accused-sex-grooming-allegations-young-women",
+        "https://www.bbc.com/news/live/c6m2d0e91e18t",
+        "https://pagesix.com/2026/11/10/celebrity-news/comedian-david-walliams-is-named-as-anonymous-celebrity-in-sexual-misconduct-allegations-after-failed-attempt-to-conceal-his-identity/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI9oMy0PHj4moM-ZWTXv9WXkxyYscY6gvZJCwqhpjSvr7B7ts6klK-AyF3hIo",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/tv-and-radio/ng-interactive/2026/nov/10/david-walliams-accused-sex-grooming-allegations-young-women",
+          "title": "‘It wasn’t long until he asked me if I’d ever had sex before’: David Walliams accused of preying on young women for sex",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI9oMy0PHj4moM-ZWTXv9WXkxyYscY6gvZJCwqhpjSvr7B7ts6klK-AyF3hIo"
+        },
+        {
+          "url": "https://www.bbc.com/news/live/c6m2d0e91e18t",
+          "title": "David Walliams named as celebrity who tried to block publication of sexual misconduct allegations",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFq0Y-Iob-MM28wks0HPj4iqk2mTO3F-DEqISCupa4Bl_yOQQRqAQz1-NFj10"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/10/celebrity-news/comedian-david-walliams-is-named-as-anonymous-celebrity-in-sexual-misconduct-allegations-after-failed-attempt-to-conceal-his-identity/",
+          "title": "Anonymous celebrity in sexual misconduct scandal is named after failed bid to conceal his identity",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvjOJ39uwzLqHM043bdqVGkzDzhgYy1_Zot-HUlGtOx79938yaetFG7wIJ6Kk"
+        }
+      ]
+    },
+    {
+      "query": "income",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T12:30:00Z",
+      "related_news_urls": [
+        "https://www.tradingview.com/news/reuters.com,2026-11-10:newsml_PLX0N3694:0-brief-kalaris-therapeutics-inc-q3-operating-income-usd-11-811-million/",
+        "https://www.marketscreener.com/news/hemlo-swings-to-q3-adjusted-net-income-yoy-ce785edadc89f627",
+        "https://kalkine.ca/news/mining/hemlo-mining-tsxhmmc-stock-surges-929-as-gold-rebounds-and-the-owner-operator-ramp-up-stays-in-focus"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY",
+      "image_credit": "TradingView",
+      "news": [
+        {
+          "url": "https://www.tradingview.com/news/reuters.com,2026-11-10:newsml_PLX0N3694:0-brief-kalaris-therapeutics-inc-q3-operating-income-usd-11-811-million/",
+          "title": "BRIEF-Kalaris Therapeutics Inc Q3 Operating Income USD -11.811 Million",
+          "publisher": "TradingView",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
+        },
+        {
+          "url": "https://www.marketscreener.com/news/hemlo-swings-to-q3-adjusted-net-income-yoy-ce785edadc89f627",
+          "title": "Hemlo Swings to Q3 Adjusted Net Income YoY",
+          "publisher": "marketscreener.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPuxWj7tkYMSvKGoX7NzEZz0BBMMXuApZaHREAEYQz65r76BF00urimbtCt8I"
+        },
+        {
+          "url": "https://kalkine.ca/news/mining/hemlo-mining-tsxhmmc-stock-surges-929-as-gold-rebounds-and-the-owner-operator-ramp-up-stays-in-focus",
+          "title": "Hemlo Mining (TSX:HMMC) Stock Surges 9.29% as Gold Rebounds and the Owner-Operator Ramp-Up Stays in Focus",
+          "publisher": "kalkine.ca",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3NwA3rLWb_qFW16OGrJdgUcdt1NdxrfDxW1MQaMhKZMSy5vcqJeuvjVh2GAw"
+        }
+      ]
+    },
+    {
+      "query": "todd monken browns quarterback decision",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T12:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50433760/source-browns-returning-deshaun-watson-qb1-week-10",
+        "https://www.nfl.com/news/browns-todd-monken-fails-to-commit-to-a-starting-qb-ahead-of-game-vs-texans",
+        "https://andscape.com/features/shedeur-sanders-browns-saints-overtime-quarterback/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0tQDEgOOO_jnZm8047GT43gTiY2o-TG5VuKzp6vpJSjTKB9IfT1ByA1PdK_E",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50433760/source-browns-returning-deshaun-watson-qb1-week-10",
+          "title": "Source: Browns returning to Watson as QB1 despite Sanders' strong fill-in start",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0tQDEgOOO_jnZm8047GT43gTiY2o-TG5VuKzp6vpJSjTKB9IfT1ByA1PdK_E"
+        },
+        {
+          "url": "https://www.nfl.com/news/browns-todd-monken-fails-to-commit-to-a-starting-qb-ahead-of-game-vs-texans",
+          "title": "Browns' Todd Monken fails to commit to a starting QB ahead of game vs. Texans",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcv43olVKJm92Ao1eJL5R851sm3QmTmPtKS8q32PcIw7WVvk0rlASgFQr5sjE"
+        },
+        {
+          "url": "https://andscape.com/features/shedeur-sanders-browns-saints-overtime-quarterback/",
+          "title": "Shedeur Sanders ignites Cleveland Browns quarterback chatter again",
+          "publisher": "Andscape",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIV-nVNmoyKYnACn2GlvMf16NaDx_ZHRDynpqXo_HER6GIHjnfVcNFMACxHc4"
+        }
+      ]
+    },
+    {
+      "query": "anthropic ipo",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T12:20:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/finance/stocks/anthropic-to-seek-1-3-trillion-valuation-in-ipo-8337b669",
+        "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html",
+        "https://www.reuters.com/business/anthropic-aims-raise-up-693-billion-blockbuster-ipo-2026-11-10/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnTDRdxyZAnaopiSfzSzdmrH2n0xqnzcQiycagGRjkOQdLlatn5uObK6Z9tHU",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/finance/stocks/anthropic-to-seek-1-3-trillion-valuation-in-ipo-8337b669",
+          "title": "Anthropic to Seek $1.3 Trillion Valuation in IPO",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnTDRdxyZAnaopiSfzSzdmrH2n0xqnzcQiycagGRjkOQdLlatn5uObK6Z9tHU"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html",
+          "title": "Anthropic sets price range of $70 to $78 in upcoming IPO as AI lab marches towards Nasdaq",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMY_tin70sWURdBN9Vd8-39DO3P4m51NSF9ZRBJp-qeGvMhkGF-oIfeKlr0vE"
+        },
+        {
+          "url": "https://www.reuters.com/business/anthropic-aims-raise-up-693-billion-blockbuster-ipo-2026-11-10/",
+          "title": "EXCLUSIVE: Anthropic’s nearly $70 billion IPO plan briefly circulated to banks, then retracted",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnynoabhXI52VTuWrDzBeamx6pLheKtHsi0NmyBo55HDtnrhvCAn4G2kdP-pc"
+        }
+      ]
+    },
+    {
+      "query": "vitamin k deficiency bleeding",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T12:20:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/10/health/vitamin-k-infant-bleeding",
+        "https://www.nytimes.com/2026/11/05/well/live/vitamin-k-shot-newborn-bleeding.html",
+        "https://www.axios.com/2026/11/10/vitamin-k-shot-bleeding-us-infants"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfiLwOR5xqtR2dz4DT3rBdchXmegswEkTccPlkR5PIiCZCgOCi_qNtqjwq3Qc",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/10/health/vitamin-k-infant-bleeding",
+          "title": "An 11-day-old baby couldn’t stop bleeding. For hours, the ER didn’t provide a critical vitamin shot.",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfiLwOR5xqtR2dz4DT3rBdchXmegswEkTccPlkR5PIiCZCgOCi_qNtqjwq3Qc"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/05/well/live/vitamin-k-shot-newborn-bleeding.html",
+          "title": "Infant Bleeding Surged as Parents Rejected Vitamin K Shots, Studies Find",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkEVXvsg6WwttUhCz5Hu8JLJcPsC5kGN5Fp1RSMYrXX17Wgni3YRuz5J4Ualc"
+        },
+        {
+          "url": "https://www.axios.com/2026/11/10/vitamin-k-shot-bleeding-us-infants",
+          "title": "More newborns are missing a routine vitamin K shot",
+          "publisher": "Axios",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTorl0bL0hI7pRsvtxTra1gubAouc4ThdIqD6K8sPvFm7d2_62ZV77VV2PdvOY"
+        }
+      ]
+    },
     {
       "query": "john malkovich",
       "approx_searches": "500+",
@@ -42,37 +252,72 @@
       ]
     },
     {
-      "query": "vitamin k deficiency bleeding",
+      "query": "juan manuel cerundolo",
       "approx_searches": "200+",
       "published_at": "2026-11-10T12:20:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/05/well/live/vitamin-k-shot-newborn-bleeding.html",
-        "https://www.axios.com/2026/11/10/vitamin-k-shot-bleeding-us-infants",
-        "https://abcnews.com/Health/parents-declining-vitamin-shots-newborns-putting-babies-risk/story?id=137823394"
+        "https://www.atptour.com/en/news/rune-stockholm-2026-preview-feature",
+        "https://sports.yahoo.com/articles/holger-rune-handed-nightmare-draw-120000849.html",
+        "https://lastwordonsports.com/tennis/2026/11/09/atp-stockholm-best-bets-rune-bergs/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkEVXvsg6WwttUhCz5Hu8JLJcPsC5kGN5Fp1RSMYrXX17Wgni3YRuz5J4Ualc",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT01QPLmlyhhqLQJHD36FWkUWepQM5fykAdPYFI-4sy35zOGWnTvVI3uK5oPLQ",
+      "image_credit": "ATP Tour",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/05/well/live/vitamin-k-shot-newborn-bleeding.html",
-          "title": "Infant Bleeding Surged as Parents Rejected Vitamin K Shots, Studies Find",
-          "publisher": "The New York Times",
+          "url": "https://www.atptour.com/en/news/rune-stockholm-2026-preview-feature",
+          "title": "Rune reflects on 'scary' injury as he embraces Stockholm return",
+          "publisher": "ATP Tour",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkEVXvsg6WwttUhCz5Hu8JLJcPsC5kGN5Fp1RSMYrXX17Wgni3YRuz5J4Ualc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT01QPLmlyhhqLQJHD36FWkUWepQM5fykAdPYFI-4sy35zOGWnTvVI3uK5oPLQ"
         },
         {
-          "url": "https://www.axios.com/2026/11/10/vitamin-k-shot-bleeding-us-infants",
-          "title": "More newborns are missing a routine vitamin K shot",
-          "publisher": "Axios",
+          "url": "https://sports.yahoo.com/articles/holger-rune-handed-nightmare-draw-120000849.html",
+          "title": "Holger Rune handed nightmare draw upon his return to Stockholm one year after injury",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTorl0bL0hI7pRsvtxTra1gubAouc4ThdIqD6K8sPvFm7d2_62ZV77VV2PdvOY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7W1IbRd3493Zjg2s5fNwZEBV5jB8fesgWHQGzKFiHmKVQZmjZyHyWUJ5RnYg"
         },
         {
-          "url": "https://abcnews.com/Health/parents-declining-vitamin-shots-newborns-putting-babies-risk/story?id=137823394",
-          "title": "More parents are declining vitamin K shots for newborns, putting more babies at risk of bleeding: Study",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "url": "https://lastwordonsports.com/tennis/2026/11/09/atp-stockholm-best-bets-rune-bergs/",
+          "title": "ATP Stockholm Best Bets Including Holger Rune Vs Zizou Bergs",
+          "publisher": "Last Word On Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2-Id16XInfD-LzVG6zxlBJDJ4q_wR_qt-vHe5gCSyypyiFB4xORGlwf8VolE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRT0pDnIYZ0ZnExzkoR02jkmwe2Z9IU0RlCXMg6issz4QSFgcGZNeslMgf-x1M"
+        }
+      ]
+    },
+    {
+      "query": "alex michelsen",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T12:10:00Z",
+      "related_news_urls": [
+        "https://www.atptour.com/en/video/highlights-cerundolo-ousts-home-hope-ymer-earns-first-atp-tour-indoor-hard-win-stockholm-2026",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/ab804b72-3994-48ac-8251-46f9c0d8c5e8/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/alex-michelsen-vs-yannick-hanfmann-nov-09-2026/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHc9Z7uy1vn5EQpuEVjOUFhNMTTs5dAkIfF_aqgSbepwjUswZBa01OM3KBTzg",
+      "image_credit": "ATP Tour",
+      "news": [
+        {
+          "url": "https://www.atptour.com/en/video/highlights-cerundolo-ousts-home-hope-ymer-earns-first-atp-tour-indoor-hard-win-stockholm-2026",
+          "title": "Highlights: Cerundolo ousts home hope Ymer, earns first ATP Tour indoor hard win Stockholm 2026 | ATP Tour | Tennis",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHc9Z7uy1vn5EQpuEVjOUFhNMTTs5dAkIfF_aqgSbepwjUswZBa01OM3KBTzg"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/ab804b72-3994-48ac-8251-46f9c0d8c5e8/",
+          "title": "November 11, 2026: Julia Grabher vs Irene Burillo Escorihuela Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCZDlo1kiuZ5an1B_9maquUy9SD_RSzhHqK-B4It-yVCFkPQ5_iX07DWqhfsA"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/alex-michelsen-vs-yannick-hanfmann-nov-09-2026/",
+          "title": "November 9, 2026: Alex Michelsen vs Yannick Hanfmann Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfTYQugoMLAkEWFKOGjiTdqylsqYmZiQK-Eesqccm-DXWRUWi1DsrODOCl7fs"
         }
       ]
     },
@@ -108,251 +353,6 @@
           "publisher": "ComicBook.com",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAL9KVvpLiAKliZOGzQy2mknm07YmrLtgkueyYOrno-iyajNC1axyGwzzSFIA"
-        }
-      ]
-    },
-    {
-      "query": "troy aikman monday night football",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-10T12:10:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/outkick-sports/troy-aikman-pokes-fun-espn-contract-standoff-bills-vikings-monday-night-football-broadcast",
-        "https://www.usatoday.com/story/sports/nfl/2026/11/09/troy-aikman-joe-buck-monday-night-football/92697285007/",
-        "https://sports.yahoo.com/articles/wild-dig-could-feel-awkwardness-061849337.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0A4ykQenvVVx8iDlj2RF7LWgF-RNL7YHisiBaSVGPbZfChsNDRfrbAPjoUXU",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/outkick-sports/troy-aikman-pokes-fun-espn-contract-standoff-bills-vikings-monday-night-football-broadcast",
-          "title": "Troy Aikman pokes fun at ESPN contract standoff during Bills-Vikings Monday Night Football broadcast",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0A4ykQenvVVx8iDlj2RF7LWgF-RNL7YHisiBaSVGPbZfChsNDRfrbAPjoUXU"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/nfl/2026/11/09/troy-aikman-joe-buck-monday-night-football/92697285007/",
-          "title": "ESPN breaks fans' hearts instead of bank in Troy Aikman, Joe Buck drama | Opinion",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR57U0jNdswu9mUH7TrUX2DcRjB-s_zQbcUWxnD-ELBlpAuytKHSYqH-XsQi-4"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/wild-dig-could-feel-awkwardness-061849337.html",
-          "title": "‘A Wild Dig,’ ‘You Could Feel the Awkwardness’ — Former Packers QB, Fans React to Troy Aikman’s Loan Joke Amid Reported Tension With Joe Buck",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWBHPOV2xFma-qLb2_n3Ao3CKBmrGEHd1fNuX0l3d5jWxKLAW4fk5MI5S3Mz8"
-        }
-      ]
-    },
-    {
-      "query": "kaleb johnson",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T12:10:00Z",
-      "related_news_urls": [
-        "https://www.packersnews.com/story/sports/nfl/packers/2026/11/08/green-bay-packers-running-back-kaleb-johnson-adds-spark-to-run-game/92664854007/",
-        "https://www.nfl.com/videos/kaleb-johnson-s-first-nfl-touchdown-boosts-packers-lead-to-23-7-vs-patriots",
-        "https://www.nytimes.com/athletic/7768948/2026/11/10/kaleb-johnson-packers-josh-jacobs-injury/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSklaGVCDZCt_L1pTE_16XG3Ipg6c4exzsD28r4_wCW4ScjN7bm6A0ESu3Vheo",
-      "image_credit": "PackersNews.com",
-      "news": [
-        {
-          "url": "https://www.packersnews.com/story/sports/nfl/packers/2026/11/08/green-bay-packers-running-back-kaleb-johnson-adds-spark-to-run-game/92664854007/",
-          "title": "Kaleb Johnson has best performance of any Packers running back this season",
-          "publisher": "PackersNews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSklaGVCDZCt_L1pTE_16XG3Ipg6c4exzsD28r4_wCW4ScjN7bm6A0ESu3Vheo"
-        },
-        {
-          "url": "https://www.nfl.com/videos/kaleb-johnson-s-first-nfl-touchdown-boosts-packers-lead-to-23-7-vs-patriots",
-          "title": "Kaleb Johnson's first NFL touchdown boosts Packers' lead to 23-7 vs. Patriots",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWlCUJJdSRuRw1mmQm9P5fcLlk219FOeBqwzmLxHH676U67tCTjtlnhQvVGRE"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7768948/2026/11/10/kaleb-johnson-packers-josh-jacobs-injury/",
-          "title": "With Josh Jacobs sidelined, Packers should let Kaleb Johnson lead the backfield",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTA43AQtFXpgQCHNgavef2aZn452C0M1abxiszKGqGSm4OemlGkka0qU2kFKH0"
-        }
-      ]
-    },
-    {
-      "query": "houston weather",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T12:10:00Z",
-      "related_news_urls": [
-        "https://www.fox7austin.com/weather/austin-weather-sunday-rain-flood-risk",
-        "https://www.ksat.com/weather/2026/11/10/a-break-from-the-rain-starts-later-today/",
-        "https://www.click2houston.com/weather/2026/11/09/tracking-another-wave-of-showers-moving-into-houston-monday/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTn-VQyjeSeMvTLvEyL75ZJbc62p3Rkh9UFjnrRwBPsFeHPLxrHD1PvKGLKu9s",
-      "image_credit": "FOX 7 Austin",
-      "news": [
-        {
-          "url": "https://www.fox7austin.com/weather/austin-weather-sunday-rain-flood-risk",
-          "title": "Austin weather: Sunday rain and flood risk",
-          "publisher": "FOX 7 Austin",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTn-VQyjeSeMvTLvEyL75ZJbc62p3Rkh9UFjnrRwBPsFeHPLxrHD1PvKGLKu9s"
-        },
-        {
-          "url": "https://www.ksat.com/weather/2026/11/10/a-break-from-the-rain-starts-later-today/",
-          "title": "A break from the rain starts later today",
-          "publisher": "KSAT",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDnDtINOL_GF8nPKFtBntyDVB_mF2XNPS95ykJsJ4HgQHXA1VtEsLIwmQBrBI"
-        },
-        {
-          "url": "https://www.click2houston.com/weather/2026/11/09/tracking-another-wave-of-showers-moving-into-houston-monday/",
-          "title": "Showers continue, clearing for Veterans Day, and a cold front early Thursday",
-          "publisher": "Click2Houston",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8FMinjKfrlLzwK__1SJ0-F0p8ANjndyyGU4xwCJVhm_icAascZDDG0tVfndk"
-        }
-      ]
-    },
-    {
-      "query": "cpi",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T12:10:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html",
-        "https://www.nytimes.com/live/2026/11/10/business/inflation-cpi-report-october",
-        "https://www.reuters.com/business/us-consumer-prices-expected-have-risen-slower-pace-october-2026-11-10/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeQI6PdVCavwbfOR_1OpNF_CrkE_7bdomRnAqQEAS8tU9us3eq1kQyCFDOCU4",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html",
-          "title": "A key report for where inflation stood in October comes out Tuesday. Here's what to expect",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeQI6PdVCavwbfOR_1OpNF_CrkE_7bdomRnAqQEAS8tU9us3eq1kQyCFDOCU4"
-        },
-        {
-          "url": "https://www.nytimes.com/live/2026/11/10/business/inflation-cpi-report-october",
-          "title": "CPI Live Updates: Report to Provide Status Check on Inflation",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRola36Dp-HV2wizEhuRHSdvHMrtRSyrj8O3pdXBbfC7owwswH9SuyrEiYN2Uk"
-        },
-        {
-          "url": "https://www.reuters.com/business/us-consumer-prices-expected-have-risen-slower-pace-october-2026-11-10/",
-          "title": "US consumer prices expected to have risen at slower pace in October",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGg3kt-hxIjKAilU1tfJxAcXaoKcyaCb1xZ4FITFTFdT8mT1K2MTm0Hdzv4S4"
-        }
-      ]
-    },
-    {
-      "query": "weather san antonio",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T12:10:00Z",
-      "related_news_urls": [
-        "https://foxsanantonio.com/news/local/san-antonios-soggy-stretch-gives-way-to-a-drier-forecast",
-        "https://www.ksat.com/weather/2026/11/03/quick-round-of-showers-this-morning-then-lower-humidity/",
-        "https://www.ksat.com/video/weather/2026/11/03/temperatures-return-back-to-average/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRaCdxtQw7Pwdpfvv4kNFpyrfcUOOQDbOefQ5OseNQ9XOYnxUjbM0DvmoI8P4",
-      "image_credit": "KABB",
-      "news": [
-        {
-          "url": "https://foxsanantonio.com/news/local/san-antonios-soggy-stretch-gives-way-to-a-drier-forecast",
-          "title": "San Antonio’s soggy stretch gives way to a drier forecast",
-          "publisher": "KABB",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRaCdxtQw7Pwdpfvv4kNFpyrfcUOOQDbOefQ5OseNQ9XOYnxUjbM0DvmoI8P4"
-        },
-        {
-          "url": "https://www.ksat.com/weather/2026/11/03/quick-round-of-showers-this-morning-then-lower-humidity/",
-          "title": "Cooler mornings, low humidity, weekend wildcard",
-          "publisher": "KSAT",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS684q13BOEwlhPBOyAeKVYZkB6p3HPXt9HviyPMfCrIbWHKSOxy4RCrwH1QBs"
-        },
-        {
-          "url": "https://www.ksat.com/video/weather/2026/11/03/temperatures-return-back-to-average/",
-          "title": "Temperatures return back to average",
-          "publisher": "KSAT",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPmto36j_-ALKONXC4myFPzKv_pHEGdBx32YY8OPFsxx4raOspmGFbeYXIYOk"
-        }
-      ]
-    },
-    {
-      "query": "travis etienne",
-      "approx_searches": "100+",
-      "published_at": "2026-11-10T12:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/travis-etienne-return-injury-timeline-205318579.html",
-        "https://www.fantasyguru.com/saints-saints-weighing-whether-to-open-travis-etienne-jr-s-return-window",
-        "https://www.thefantasyfootballers.com/news/645589/travis-etienne-chance-to-practice-in-week-9/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTGtvZ3722TXROUDNnf6L2z3MdZMKEfuDyHFtrtAdFCMKFXV9jTHVcVVqGSKg",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/travis-etienne-return-injury-timeline-205318579.html",
-          "title": "When Will Travis Etienne Return? Injury Timeline for Saints RB",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTGtvZ3722TXROUDNnf6L2z3MdZMKEfuDyHFtrtAdFCMKFXV9jTHVcVVqGSKg"
-        },
-        {
-          "url": "https://www.fantasyguru.com/saints-saints-weighing-whether-to-open-travis-etienne-jr-s-return-window",
-          "title": "Saints | Saints weighing whether to open Travis Etienne Jr.’s return window",
-          "publisher": "Fantasy Guru",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRljbonK4B15lnT7OYur9R4QaNIwSZoukS92TFzxVwiTkBErOhQc3jkFAnvS70"
-        },
-        {
-          "url": "https://www.thefantasyfootballers.com/news/645589/travis-etienne-chance-to-practice-in-week-9/",
-          "title": "Travis Etienne Jr. Chance to practice in Week 9",
-          "publisher": "Fantasy Footballers Podcast",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnf988RWNP9ljrbsxB1y1mTecuX77XsoVMM0sZIP1PjJmh1DlvElx0ieJe_1c"
-        }
-      ]
-    },
-    {
-      "query": "oviedo",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T12:00:00Z",
-      "related_news_urls": [
-        "https://www.elmundo.es/espana/2026/11/10/6af2d90ae85ecebb328b459d.html",
-        "https://es-us.noticias.yahoo.com/agente-polic%C3%ADa-muere-resulta-herido-113947137.html",
-        "https://www.elconfidencial.com/espana/2026-11-10/al-menos-un-policia-muerto-y-varios-heridos-en-un-tiroteo-y-una-explosion-en-oviedo_4461910/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1stjRq4Cnx9594oSOH6vUcqwVU-8-hlFU3qwIHxVX0qANkIm9XmcTaV5UsfA",
-      "image_credit": "El Mundo",
-      "news": [
-        {
-          "url": "https://www.elmundo.es/espana/2026/11/10/6af2d90ae85ecebb328b459d.html",
-          "title": "Muere un policía y otro resulta herido con la amputación de una pierna por la explosión de una mochila en Oviedo tras un tiroteo cuyo autor permanece huido y armado",
-          "publisher": "El Mundo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1stjRq4Cnx9594oSOH6vUcqwVU-8-hlFU3qwIHxVX0qANkIm9XmcTaV5UsfA"
-        },
-        {
-          "url": "https://es-us.noticias.yahoo.com/agente-polic%C3%ADa-muere-resulta-herido-113947137.html",
-          "title": "Un agente de la Policía muere y otro resulta herido por la explosión de una mochila en el norte de España",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsziKUIsMNBskzuxDmK7Cc-MS_C8-fLOG0b0oQzfu8bmpNOO6ZLiDp6rtMTC4"
-        },
-        {
-          "url": "https://www.elconfidencial.com/espana/2026-11-10/al-menos-un-policia-muerto-y-varios-heridos-en-un-tiroteo-y-una-explosion-en-oviedo_4461910/",
-          "title": "Qué se sabe del tiroteo y la explosión en Oviedo: qué ha pasado en Villafría, víctimas y qué investiga la Policía",
-          "publisher": "El Confidencial",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrTSqA5QDLJvSihYyKLgI9Q_yYGBwYfrbPG-puyolXt-NwnoKVofF9tspIZyA"
         }
       ]
     }
