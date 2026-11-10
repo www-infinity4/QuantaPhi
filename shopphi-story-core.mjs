@@ -1,7 +1,7 @@
 /* One approved source-backed card = one story page; its 1-6 real images play
  * once in order, then the next approved page begins. No synthetic creatives. */
 export const MAX_STORY_SLIDES=6;
-const restricted=/\b(21\+|cannabis|dispensary|tobacco|nicotine|cigar|vape|alcohol|beer|wine|liquor|marijuana|thc|medical|diagnosis)\b/i;
+const restricted=/(?:\b(?:cannabis|dispensary|tobacco|nicotine|cigar|vape|alcohol|beer|wine|liquor|marijuana|thc|medical|diagnosis)\b|21\+)/i;
 function safeUrl(value){
  try{const u=new URL(String(value||''));if(u.protocol!=='https:'||u.username||u.password||!u.hostname.includes('.')||u.href.length>1800)return '';return u.href;}
  catch{return '';}
