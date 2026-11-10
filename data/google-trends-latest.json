@@ -3,9 +3,211 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T05:31:30.676773Z",
+  "checked_at": "2026-11-10T06:01:29.208050Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "macklin celebrini",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T05:40:00Z",
+      "related_news_urls": [
+        "https://www.newsday.com/sports/columnists/andrew-gross/islanders-andrew-gross-c30r10dm",
+        "https://nypost.com/2026/11/09/sports/matthew-schaefer-macklin-celebrini-should-be-next-big-nhl-rivalry/",
+        "https://www.nhl.com/video/sjs-min-celebrini-scores-goal-against-jesper-wallstedt-6408049744112"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCwj8n50YwYmpaAeZk__i1V7Ny9q28ZZUuFIm0SmvG7ClzrIeLAuAu8nK8-VM",
+      "image_credit": "Newsday",
+      "news": [
+        {
+          "url": "https://www.newsday.com/sports/columnists/andrew-gross/islanders-andrew-gross-c30r10dm",
+          "title": "Andrew Gross: It's always a treat when the Islanders' Matthew Schaefer and the Sharks' Macklin Celebrini face each other",
+          "publisher": "Newsday",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCwj8n50YwYmpaAeZk__i1V7Ny9q28ZZUuFIm0SmvG7ClzrIeLAuAu8nK8-VM"
+        },
+        {
+          "url": "https://nypost.com/2026/11/09/sports/matthew-schaefer-macklin-celebrini-should-be-next-big-nhl-rivalry/",
+          "title": "Matthew Schaefer-Macklin Celebrini should be next big NHL rivalry",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSR44QjHVFALzGD0o0P_wjfY5ngmHSA6ggcWqxw_Z2Pm8STOz6b_L21tKhDPk"
+        },
+        {
+          "url": "https://www.nhl.com/video/sjs-min-celebrini-scores-goal-against-jesper-wallstedt-6408049744112",
+          "title": "Celebrini's tip-in goal",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVo1nZf51XZRQLgsC82ZOy8_3pWhJ36mQMdrtYfbspJlU7EPU9tZrYOkTkZxw"
+        }
+      ]
+    },
+    {
+      "query": "bill murray",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-10T05:30:00Z",
+      "related_news_urls": [
+        "https://www.lohud.com/picture-gallery/life/food/restaurants/2026/11/03/bill-murray-visits-yonkers-bar-on-halloween/92591199007/",
+        "https://www.yahoo.com/entertainment/celebrity/articles/bill-murray-spends-halloween-yonkers-090353607.html",
+        "https://www.news.com.au/entertainment/celebrity-life/celebrity-photos/hollywood-legend-bill-murray-spotted-pulling-beers-in-bar/news-story/503290ac0f414ea93e173c33b9564f06"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRccrBEmmzj2Mcbsu1Dx4Ijyit-G5XVGPaJCY2lpMSNbS6iFBiUBT0Sal6CghI",
+      "image_credit": "Lohud",
+      "news": [
+        {
+          "url": "https://www.lohud.com/picture-gallery/life/food/restaurants/2026/11/03/bill-murray-visits-yonkers-bar-on-halloween/92591199007/",
+          "title": "Bill Murray visits Yonkers bar on Halloween",
+          "publisher": "Lohud",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRccrBEmmzj2Mcbsu1Dx4Ijyit-G5XVGPaJCY2lpMSNbS6iFBiUBT0Sal6CghI"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/bill-murray-spends-halloween-yonkers-090353607.html",
+          "title": "Bill Murray spends Halloween at a Yonkers bar",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5qQL8keGGKbxh0ZHip2ZtMOOr3CN0bEgH3Px6OQ63Y-W99wcrn_nPxHzW-I8"
+        },
+        {
+          "url": "https://www.news.com.au/entertainment/celebrity-life/celebrity-photos/hollywood-legend-bill-murray-spotted-pulling-beers-in-bar/news-story/503290ac0f414ea93e173c33b9564f06",
+          "title": "Hollywood legend spotted pulling beers in bar",
+          "publisher": "News.com.au",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQU7fvfrcGcxkfeKcZTdJJzxVcvGKJ-_S_8TQLa8qmFYFarlheINDp59xhp7UY"
+        }
+      ]
+    },
+    {
+      "query": "nintendo switch firmware",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T05:30:00Z",
+      "related_news_urls": [
+        "https://www.nintendo.com/us/whatsnew/coming-soon-gift-digital-games-to-family-group-members/",
+        "https://nintendoeverything.com/nintendo-switch-2-and-switch-update-23-5-0-out-now-patch-notes-new-gifting-feature-and-more/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDmQkJYjB6bju3zo9IG5_KYlu4FMCXE2awoA_GFuV4f3krPIZTgkr2HrQVf9E",
+      "image_credit": "Nintendo",
+      "news": [
+        {
+          "url": "https://www.nintendo.com/us/whatsnew/coming-soon-gift-digital-games-to-family-group-members/",
+          "title": "Coming soon: Gift digital games to family group members",
+          "publisher": "Nintendo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDmQkJYjB6bju3zo9IG5_KYlu4FMCXE2awoA_GFuV4f3krPIZTgkr2HrQVf9E"
+        },
+        {
+          "url": "https://nintendoeverything.com/nintendo-switch-2-and-switch-update-23-5-0-out-now-patch-notes-new-gifting-feature-and-more/",
+          "title": "Nintendo Switch 2 and Switch update 23.5.0 out now, patch notes - new gifting feature and more",
+          "publisher": "Nintendo Everything",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSssaef9LrUlXnQwu2qqLICJnEbqwQuqhyoI-Kiw86d3J9Wz7zC8D5xj9U3GrA"
+        }
+      ]
+    },
+    {
+      "query": "warriors",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-10T05:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/stephen-curry-brandin-podziemski-score-053323284.html",
+        "https://www.mercurynews.com/2026/11/09/warriors-pelicans-steph-curry-jordan-poole-lendeborg/",
+        "https://www.nba.com/watch/video/stephen-curry-with-25-points-vs-new-orleans-pelicans?plsrc=nba&collection=steph-curry"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXKBd_ukTzMYJCSY5ci_iv_KMAE2yKJCGjOQFaWXOdSa57lEoaKXqqSPRsz1I",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/stephen-curry-brandin-podziemski-score-053323284.html",
+          "title": "Stephen Curry, Brandin Podziemski each score 25 as Warriors run away from Pelicans for 138-87 win",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXKBd_ukTzMYJCSY5ci_iv_KMAE2yKJCGjOQFaWXOdSa57lEoaKXqqSPRsz1I"
+        },
+        {
+          "url": "https://www.mercurynews.com/2026/11/09/warriors-pelicans-steph-curry-jordan-poole-lendeborg/",
+          "title": "Red hot Warriors smoke Pelicans by 51 to win eighth in a row",
+          "publisher": "The Mercury News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7PfF0jQpb2xo3Z_K61rbxIaqw3ijbusOCeQffhmNtYsvNEVvWRkrMCSfQNI4"
+        },
+        {
+          "url": "https://www.nba.com/watch/video/stephen-curry-with-25-points-vs-new-orleans-pelicans?plsrc=nba&collection=steph-curry",
+          "title": "Stephen Curry with 25 Points vs. New Orleans Pelicans",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV-YOY0HZjh2p6BxEAAAvIPEU79DyOsS6kSRhmGDufLpphzgdGMM_eqD481cA"
+        }
+      ]
+    },
+    {
+      "query": "minnesota vikings quarterback situation",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-10T05:20:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/sports/nfl/columnist/nate-davis/2026/11/09/vikings-quarterback-nfl-trade-deadline-kyler-murray-carson-wentz/92677448007/",
+        "https://thevikingage.com/kevin-oconnell-cant-keep-masking-minnesota-vikings-quarterback-chaos-forever",
+        "https://www.dailynorseman.com/minnesota-vikings-roster/101195/the-kyler-murray-experiment-is-over"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIc8-1PlwQrd7Uoh-O76mGiqDW9RN0-9JwCr_vDckiUe3nltAL9zZkJ_tzPFQ",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/sports/nfl/columnist/nate-davis/2026/11/09/vikings-quarterback-nfl-trade-deadline-kyler-murray-carson-wentz/92677448007/",
+          "title": "Vikings are dead in the water unless they solve QB problem in next 24 hours | Opinion",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIc8-1PlwQrd7Uoh-O76mGiqDW9RN0-9JwCr_vDckiUe3nltAL9zZkJ_tzPFQ"
+        },
+        {
+          "url": "https://thevikingage.com/kevin-oconnell-cant-keep-masking-minnesota-vikings-quarterback-chaos-forever",
+          "title": "Kevin O'Connell can't keep masking Vikings' quarterback chaos forever",
+          "publisher": "The Viking Age",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT01uNj4HXsvhlYRwPtgV8HeYZ5s69qoboo72-rbeUYmljU1fteqQ3CD8hLltE"
+        },
+        {
+          "url": "https://www.dailynorseman.com/minnesota-vikings-roster/101195/the-kyler-murray-experiment-is-over",
+          "title": "The Kyler Murray Experiment is Over",
+          "publisher": "Daily Norseman",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkGDRTXNAiE8djpxgnrOJ-J2bqEiJq09ZeYRJRLaj_KB7Nigk09UEIX0Hu2T4"
+        }
+      ]
+    },
+    {
+      "query": "brandin podziemski",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-10T05:20:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-10/brandin-podziemski-hits-five-triples-scores-25",
+        "https://www.nbcsportsbayarea.com/video/nba/golden-state-warriors/brandin-podziemski-interview-watch-11/1977873/",
+        "https://sports.yahoo.com/articles/steve-kerr-sends-strong-brandin-205541648.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc4nN4xg5xUOoZWVAZG71YQmT7UBIKHwBdNjGswK7bjSShwwnacaAowX8_bJA",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-10/brandin-podziemski-hits-five-triples-scores-25",
+          "title": "Brandin Podziemski hits five triples, scores 25",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc4nN4xg5xUOoZWVAZG71YQmT7UBIKHwBdNjGswK7bjSShwwnacaAowX8_bJA"
+        },
+        {
+          "url": "https://www.nbcsportsbayarea.com/video/nba/golden-state-warriors/brandin-podziemski-interview-watch-11/1977873/",
+          "title": "Brandin Podziemski confident in Warriors' potential after OT win vs. Magic",
+          "publisher": "NBC Sports Bay Area & California",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE14v2Ec063ICPiznbIbzTp_lUoCjI1x2qAZiG-ddPanrC2T8CPvXfOGFi0qU"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/steve-kerr-sends-strong-brandin-205541648.html",
+          "title": "Steve Kerr Sends Strong Brandin Podziemski Message Ahead of Magic Game",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqP9EmXVgDeltpKVuYOMftz-Us06bOGFHQXP04_vcUrgKbsGVjEze0UFcXimQ"
+        }
+      ]
+    },
     {
       "query": "julian reese",
       "approx_searches": "200+",
@@ -38,6 +240,41 @@
           "publisher": "MARCA",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSNs-dJslJ-Zo08d5uF8yJ_3im-vzMUg507nVguPD1G96_monCLd-CJ3xzq6s"
+        }
+      ]
+    },
+    {
+      "query": "xbox vs ps5 gta 6 specs",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T05:10:00Z",
+      "related_news_urls": [
+        "https://www.techpowerup.com/354626/gta-vi-game-data-suggests-pssr-update-with-120-hz-support-and-ps5-pro-high-cpu-frequency-mode",
+        "https://www.usatoday.com/story/shopping/deals/retailers/amazon/2026/11/09/gta-6-preload-upgrades-essentials/92695867007/",
+        "https://en.gamegpu.com/news/igry/gta-6-na-xbox-series-s-smozhet-rabotat-v-razreshenii-ot-720p-do-1080p"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2tHg5y6sVBO9fuTsJm0YwGFfxpIAnoLPlYhSxTeyBz5DrUcicilu37aVA1RY",
+      "image_credit": "TechPowerUp",
+      "news": [
+        {
+          "url": "https://www.techpowerup.com/354626/gta-vi-game-data-suggests-pssr-update-with-120-hz-support-and-ps5-pro-high-cpu-frequency-mode",
+          "title": "GTA VI Game Data Suggests PSSR Update With 120 Hz Support and PS5 Pro \"High CPU Frequency Mode\"",
+          "publisher": "TechPowerUp",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2tHg5y6sVBO9fuTsJm0YwGFfxpIAnoLPlYhSxTeyBz5DrUcicilu37aVA1RY"
+        },
+        {
+          "url": "https://www.usatoday.com/story/shopping/deals/retailers/amazon/2026/11/09/gta-6-preload-upgrades-essentials/92695867007/",
+          "title": "GTA 6 is almost here and these gaming essentials can upgrade your setup",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvNQI4VapsqJ85y_HoW5SX66n1wIVxdNPgjZV1lZwn8yqnb4C2D1Rcvltgy9E"
+        },
+        {
+          "url": "https://en.gamegpu.com/news/igry/gta-6-na-xbox-series-s-smozhet-rabotat-v-razreshenii-ot-720p-do-1080p",
+          "title": "GTA 6 on Xbox Series S will be able to run in resolutions from 720p to 1080p",
+          "publisher": "GameGPU",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtIyijI5UD74DZMboQABSrOFglfeeakq8jqScljH9No_Iu50-htO7vNtsgaFU"
         }
       ]
     },
@@ -108,251 +345,6 @@
           "publisher": "ESPN",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQaGxY6hmarPBmZ6CeN3W3Ofa87blxQahshjqUdAsr7o-J13sL1Uqis_oRrmak"
-        }
-      ]
-    },
-    {
-      "query": "stanford basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T05:10:00Z",
-      "related_news_urls": [
-        "https://www.on3.com/sites/cardinal-sports-report/news/preview-stanford-mens-basketball-welcomes-rice-to-maples-pavilion/",
-        "https://www.accuscore.com/game/cmw8f8att1uccqp013oqpl53w",
-        "https://sportssd.iheart.com/content/2026-11-09-rice-vs-stanford-predictions-nov-9/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBAKPq6HXIvZiqyYoRPyrx8cF0bL1_NRWN-m3wgtnNQYScfmiG6nOYJKfsfb4",
-      "image_credit": "On3",
-      "news": [
-        {
-          "url": "https://www.on3.com/sites/cardinal-sports-report/news/preview-stanford-mens-basketball-welcomes-rice-to-maples-pavilion/",
-          "title": "Preview: Stanford Men’s Basketball welcomes Rice to Maples Pavilion",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBAKPq6HXIvZiqyYoRPyrx8cF0bL1_NRWN-m3wgtnNQYScfmiG6nOYJKfsfb4"
-        },
-        {
-          "url": "https://www.accuscore.com/game/cmw8f8att1uccqp013oqpl53w",
-          "title": "Rice vs Stanford Prediction (Nov 9): Stanford 93% — Odds & Live Score",
-          "publisher": "AccuScore",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjT2wpAtsPxyEN4OK3nasgb2BAYCyqSdypR9WgUG07OMqHt0D79kLDyAAnRgs"
-        },
-        {
-          "url": "https://sportssd.iheart.com/content/2026-11-09-rice-vs-stanford-predictions-nov-9/",
-          "title": "Rice vs. Stanford Predictions - Nov. 9",
-          "publisher": "San Diego Sports 760",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnV6n26Ketcz3HURclKDtgnXBIItSIm-a3h1GlGhTDsq9hoNiWEQFkDCwSc6M"
-        }
-      ]
-    },
-    {
-      "query": "wainwright",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T05:00:00Z",
-      "related_news_urls": [
-        "https://globalnews.ca/news/12143238/patient-update-wainwright/",
-        "https://edmontonjournal.com/opinion/columnists/opinion-donate-blood-wainwright-remembrance",
-        "https://nationalpost.com/opinion/letters-armed-forces-represent-the-best-of-us/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGYPWeqP2nSqEUicZHIItS_7ofkt5fT9IRnNI3cAuc84jnmVwz_NYJPv0zs8U",
-      "image_credit": "Global News",
-      "news": [
-        {
-          "url": "https://globalnews.ca/news/12143238/patient-update-wainwright/",
-          "title": "15 soldiers on ventilators, 9 critical after deadly CFB Wainwright fire",
-          "publisher": "Global News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGYPWeqP2nSqEUicZHIItS_7ofkt5fT9IRnNI3cAuc84jnmVwz_NYJPv0zs8U"
-        },
-        {
-          "url": "https://edmontonjournal.com/opinion/columnists/opinion-donate-blood-wainwright-remembrance",
-          "title": "Opinion: Give back to those who sacrificed for Canada by giving blood",
-          "publisher": "Edmonton Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_eEsoF3NGtwURB7JM88MmvZqu0kaLLVswNL2AOSY55ofKgTwiq_hkFQ_yY-g"
-        },
-        {
-          "url": "https://nationalpost.com/opinion/letters-armed-forces-represent-the-best-of-us/",
-          "title": "Letters: Armed Forces ‘represent the best of us’",
-          "publisher": "National Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxVPEf62AatqvLWinhRmZqtBnYvQS_FkCmn4U-FYXQpazHfkV5rFq_9d6-DTw"
-        }
-      ]
-    },
-    {
-      "query": "brandon williams",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T05:00:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/lauri-markkanen-wrist-questionable-tuesday",
-        "https://clutchpoints.com/nba/golden-state-warriors/warriors-news-golden-state-loses-guard-injury-pelicans-blowout",
-        "https://www.espn.com/video/clip/_/id/50415658/brandon-williams-gets-hoop-harm"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKPPLBia_UTEE7mZy-tgB7lddFhkkKwDV_Y7scX2fhgS-jgQszNc-xmR6fCRI",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/lauri-markkanen-wrist-questionable-tuesday",
-          "title": "Lauri Markkanen (wrist) questionable Tuesday",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKPPLBia_UTEE7mZy-tgB7lddFhkkKwDV_Y7scX2fhgS-jgQszNc-xmR6fCRI"
-        },
-        {
-          "url": "https://clutchpoints.com/nba/golden-state-warriors/warriors-news-golden-state-loses-guard-injury-pelicans-blowout",
-          "title": "Warriors lose guard to injury amid Pelicans blowout",
-          "publisher": "ClutchPoints",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvCnkxYUhVFOlj6OkDy7lP0X02eLYd3SXmfK6gBCgdeijNSrOr40cx2tZjLws"
-        },
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50415658/brandon-williams-gets-hoop-harm",
-          "title": "Brandon Williams gets the hoop and the harm",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThOmX1eN_TRgm4lbXsjAu29hahZXgab_d-Yhu0VyMRaJEZgElluO4bNyp6KbY"
-        }
-      ]
-    },
-    {
-      "query": "jimmy butler",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T05:00:00Z",
-      "related_news_urls": [
-        "https://basketnews.com/news-259062-warriors-could-get-major-boost-sooner-than-expected-amid-great-start.html",
-        "https://sports.yahoo.com/articles/warriors-hopes-raised-jimmy-butler-172009839.html",
-        "https://athlonsports.com/nba/golden-state-warriors/warriors-facing-trade-decision-after-jimmy-butler-injury-update"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFUgCy2YDz-YkAsvOrt8-YHDXbX-jBp8T1fmppBhBSCwqK9RbrI87rEr6E7nI",
-      "image_credit": "BasketNews.com",
-      "news": [
-        {
-          "url": "https://basketnews.com/news-259062-warriors-could-get-major-boost-sooner-than-expected-amid-great-start.html",
-          "title": "Warriors could get major boost sooner than expected amid great start",
-          "publisher": "BasketNews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFUgCy2YDz-YkAsvOrt8-YHDXbX-jBp8T1fmppBhBSCwqK9RbrI87rEr6E7nI"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/warriors-hopes-raised-jimmy-butler-172009839.html",
-          "title": "Warriors’ Hopes Raised as Jimmy Butler ‘Ramping Up’ for Return",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkAn8HDX5WM5KuTY9FLL6d4X-QQ2WjWxSAd4AYb98IM8HXtqPInHZu0RQZXbE"
-        },
-        {
-          "url": "https://athlonsports.com/nba/golden-state-warriors/warriors-facing-trade-decision-after-jimmy-butler-injury-update",
-          "title": "Warriors Facing Trade Decision After Jimmy Butler News",
-          "publisher": "Athlon Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1aTOGKid7Q_voghfx2RkqRTpqzsraHR35KiWZAPCjQ7BOknV1T-ZCfCa1HC0"
-        }
-      ]
-    },
-    {
-      "query": "gui santos",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T05:00:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/gary-payton-ii-knee-downgraded-to-out-monday",
-        "https://bluemanhoop.com/warriors-winning-streak-has-allowed-gui-santos-concerns-to-fly-under-the-radar",
-        "https://www.rotoballer.com/player-news/gui-santos-back-in-the-lineup-saturday/1987061"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdSsJpUme2EXEJ6-cPZVlbrnpAGbl4X5AMQg7YZoWTf81Q31oS72mzoC2W4No",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/gary-payton-ii-knee-downgraded-to-out-monday",
-          "title": "Gary Payton II (knee) downgraded to out Monday",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdSsJpUme2EXEJ6-cPZVlbrnpAGbl4X5AMQg7YZoWTf81Q31oS72mzoC2W4No"
-        },
-        {
-          "url": "https://bluemanhoop.com/warriors-winning-streak-has-allowed-gui-santos-concerns-to-fly-under-the-radar",
-          "title": "Warriors' winning streak has allowed Gui Santos concerns to fly under the radar",
-          "publisher": "Blue Man Hoop",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWi4Gq7_10JFpMRQ1czbH4vCxdTR2xnUuwMt07KXw7szDMeRBjwziY16Nk7Io"
-        },
-        {
-          "url": "https://www.rotoballer.com/player-news/gui-santos-back-in-the-lineup-saturday/1987061",
-          "title": "Gui Santos Back in the Lineup Saturday - NBA News | Fantasy Basketball",
-          "publisher": "RotoBaller",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7uv9K6eCGxpL1j2jh90Zux3kLqj2p20jP96f1Mdh85syLifkN8qGvslf-lKI"
-        }
-      ]
-    },
-    {
-      "query": "airplane",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-10T05:00:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/09/boeing-layoffs-commercial-airplane.html",
-        "https://www.axios.com/local/seattle/2026/11/09/boeing-commercial-airplanes-layoffs-seattle-puget-sound",
-        "https://www.reuters.com/business/aerospace-defense/boeing-cut-5-planemaking-divisions-workforce-seattle-times-reports-2026-11-09/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAiPiiZGNu1GNtagYqROjA6LqS8l0j5DoBC7NknVQpnEQyCnOFeMw5Ag5ta7Y",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/09/boeing-layoffs-commercial-airplane.html",
-          "title": "Boeing to cut 5% of commercial airplane workers as production increase takes longer than expected",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAiPiiZGNu1GNtagYqROjA6LqS8l0j5DoBC7NknVQpnEQyCnOFeMw5Ag5ta7Y"
-        },
-        {
-          "url": "https://www.axios.com/local/seattle/2026/11/09/boeing-commercial-airplanes-layoffs-seattle-puget-sound",
-          "title": "Boeing plans 5% workforce reduction amid production troubles",
-          "publisher": "Axios",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjchyl4G1r7YAHcJIxm-Ix-XxU5Cy1CtGw7AJCsyNP7a_KzrOxFh-orQ1Hf5g"
-        },
-        {
-          "url": "https://www.reuters.com/business/aerospace-defense/boeing-cut-5-planemaking-divisions-workforce-seattle-times-reports-2026-11-09/",
-          "title": "Boeing to cut 5% of commercial jet workforce amid production struggles",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbnYIBdtji6d7PMJ-x8slZuY2ulscoeqUr5jGsHNheBSu_up9nPAQcyfZSXXg"
-        }
-      ]
-    },
-    {
-      "query": "portland basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T05:00:00Z",
-      "related_news_urls": [
-        "https://portlandpilots.com/news/2026/11/8/mens-basketball-portland-bigs-dominant-in-win-over-bethesda-at-rainbow-classic.aspx",
-        "https://www.cbssports.com/college-basketball/news/james-odonnell-has-29-and-20-as-portland-routs-bethesda-130-56/",
-        "https://www.bhpioneer.com/national_news/portland-defeats-bethesda-ca-130-56-at-rainbow-classic/article_eea00cd7-7a7c-58d6-88e6-166266e5002e.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQEzW4yp_gNHK1HnqwHasChQplJ5NmDvPKIE89XW_cD4tV_4qv7-80rIqJr54",
-      "image_credit": "University of Portland Athletics",
-      "news": [
-        {
-          "url": "https://portlandpilots.com/news/2026/11/8/mens-basketball-portland-bigs-dominant-in-win-over-bethesda-at-rainbow-classic.aspx",
-          "title": "Portland Bigs Dominant in Win Over Bethesda at Rainbow Classic - University of Portland Athletics",
-          "publisher": "University of Portland Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQEzW4yp_gNHK1HnqwHasChQplJ5NmDvPKIE89XW_cD4tV_4qv7-80rIqJr54"
-        },
-        {
-          "url": "https://www.cbssports.com/college-basketball/news/james-odonnell-has-29-and-20-as-portland-routs-bethesda-130-56/",
-          "title": "James O'Donnell has 29 and 20 as Portland routs Bethesda 130-56",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQD8pdKFteUwglloXl3fSG6Wg53WCkG9tgCuRzR81Ez0CQ_KGFC9v-IkVWNVUE"
-        },
-        {
-          "url": "https://www.bhpioneer.com/national_news/portland-defeats-bethesda-ca-130-56-at-rainbow-classic/article_eea00cd7-7a7c-58d6-88e6-166266e5002e.html",
-          "title": "Portland defeats Bethesda (CA) 130-56 at Rainbow Classic",
-          "publisher": "Black Hills Pioneer",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6wqyZnkW35_7Sqg6tUMfO3Hdx-1VCqT8phrPLarWuHnvLklCnCO7n_VPfbig"
         }
       ]
     }
