@@ -1,0 +1,27 @@
+name: QuantaPhi Work Control evidence gates
+on:
+  pull_request:
+    paths:
+      - "work-control.html"
+      - "docs/WORK-CONTROL.md"
+      - "test/work-control-evidence.test.mjs"
+      - ".github/workflows/work-control-evidence.yml"
+  push:
+    branches: [main]
+    paths:
+      - "work-control.html"
+      - "test/work-control-evidence.test.mjs"
+      - ".github/workflows/work-control-evidence.yml"
+permissions:
+  contents: read
+jobs:
+  work-control-evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify read-only board syntax and receipt gates
+        run: node --test test/work-control-evidence.test.mjs
