@@ -3,83 +3,258 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T00:01:45.233865Z",
+  "checked_at": "2026-11-10T00:42:41.121260Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "grizzlies vs raptors",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T23:40:00Z",
+      "query": "ryan seacrest",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T00:20:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/grizzlies-vs-raptors-injury-report-173946328.html",
-        "https://www.sportsnet.ca/nba/article/raptors-barnes-quickley-murray-boyles-out-vs-grizzlies/",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/bilal-coulibaly-hand-downgraded-to-out-monday"
+        "https://www.tvinsider.com/1301728/wheel-of-fortune-ryan-seacrest-shocked-after-contestant-loses-113k/",
+        "https://www.eonline.com/news/1437821/wheel-of-fortunes-ryan-seacrest-reacts-to-players-s50-000-loss",
+        "https://closerweekly.com/ryan-seacrest-comforts-wheel-of-fortune-contestant-who-missed-out-on-50k-prize/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSY1oCq0V-jKxBiE7HgVsrZyrMcTpf46eJJUGZX7yTAw3A3AHhsA-C9YuYxPn0",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOl9QxFTYD0bOLYk_RsCm04c937Z2GeHIs7zP-VolzNFI0rTNrtzssqP1nFPM",
+      "image_credit": "TV Insider",
+      "news": [
+        {
+          "url": "https://www.tvinsider.com/1301728/wheel-of-fortune-ryan-seacrest-shocked-after-contestant-loses-113k/",
+          "title": "‘Wheel of Fortune’: Ryan Seacrest Shocked After Contestant Loses Out on $113,000",
+          "publisher": "TV Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOl9QxFTYD0bOLYk_RsCm04c937Z2GeHIs7zP-VolzNFI0rTNrtzssqP1nFPM"
+        },
+        {
+          "url": "https://www.eonline.com/news/1437821/wheel-of-fortunes-ryan-seacrest-reacts-to-players-s50-000-loss",
+          "title": "See Wheel of Fortune’s Ryan Seacrest Comfort Player After $50,000 Loss",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPGLnwAMvZeT_SWv7Wv8fX_3A-IaLC3NRlDZCq290hoHNflG5Yc4xjf-pqMUI"
+        },
+        {
+          "url": "https://closerweekly.com/ryan-seacrest-comforts-wheel-of-fortune-contestant-who-missed-out-on-50k-prize/",
+          "title": "Ryan Seacrest Comforts ‘Wheel of Fortune’ Contestant Who Missed Out on $50K Prize",
+          "publisher": "closerweekly.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdE7vdCvX1QHwa_wEUV5ZJc8Eh9_T2KmnMJy3EkO_f4FyeCq5w7s9jGcdvyaU"
+        }
+      ]
+    },
+    {
+      "query": "grambling st vs texas",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T00:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/no-7-texas-vs-grambling-235106172.html",
+        "https://www.bleachernation.com/how-to-watch/2026/11/09/how-to-watch-texas-longhorns-vs-grambling-tigers-live-stream-or-on-tv/",
+        "https://www.fanduel.com/research/texas-vs-grambling-college-basketball-predictions-odds-picks-best-bets-for-11-9-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKrlLLzfqpCLREf-nBV7GueLi3n77UIcuUpUCkkgeVQ9miGcDEeG7MPNJ-cX4",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/grizzlies-vs-raptors-injury-report-173946328.html",
-          "title": "Grizzlies vs. Raptors injury report: Scottie Barnes, Immanuel Quickley the names to watch with Kawhi Leonard still out",
+          "url": "https://sports.yahoo.com/articles/no-7-texas-vs-grambling-235106172.html",
+          "title": "No. 7 Texas vs. Grambling State gamethread",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSY1oCq0V-jKxBiE7HgVsrZyrMcTpf46eJJUGZX7yTAw3A3AHhsA-C9YuYxPn0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKrlLLzfqpCLREf-nBV7GueLi3n77UIcuUpUCkkgeVQ9miGcDEeG7MPNJ-cX4"
         },
         {
-          "url": "https://www.sportsnet.ca/nba/article/raptors-barnes-quickley-murray-boyles-out-vs-grizzlies/",
-          "title": "Raptors' Barnes, Quickley, Murray-Boyles out vs. Grizzlies",
-          "publisher": "Sportsnet.ca",
+          "url": "https://www.bleachernation.com/how-to-watch/2026/11/09/how-to-watch-texas-longhorns-vs-grambling-tigers-live-stream-or-on-tv/",
+          "title": "How to Watch Texas Longhorns vs. Grambling Tigers: Live Stream or on TV",
+          "publisher": "Bleacher Nation",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRVSt7utVHxVravOcmcSX-4Jl_BDws807Mh37hAcxgpOWPaZ59ly8UUVXoO_E"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlvNXAhvkiC8wDBhrmDbY-_QRPb6oAuUeVJQgLiEwDgMT5xncHnTXnmtOl1co"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/bilal-coulibaly-hand-downgraded-to-out-monday",
-          "title": "Bilal Coulibaly (hand) downgraded to out Monday",
-          "publisher": "NBC Sports",
+          "url": "https://www.fanduel.com/research/texas-vs-grambling-college-basketball-predictions-odds-picks-best-bets-for-11-9-2026",
+          "title": "Texas vs Grambling College Basketball Prediction, Odds, Picks, Best Bets for Nov. 9",
+          "publisher": "FanDuel",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4CXBH_PCQfgG7JIqBRdUzr0L_MXENpTUqFQm6fLc5opw_hUm6miidmm2siwY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxjvoaXCe59i8RuOj1QLFEzSW1lDUsOQ_pC8qkQiDzsHm4AgNsC_rY1a-e7Eg"
         }
       ]
     },
     {
-      "query": "claudia sheinbaum",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-09T23:40:00Z",
+      "query": "grand theft auto 6",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-10T00:20:00Z",
       "related_news_urls": [
-        "https://es-us.noticias.yahoo.com/m%C3%A9xico-alcanza-r%C3%A9cord-empleo-formal-144404865.html",
-        "https://www.reforma.com/se-registran-161-077-nuevos-empleos-mayor-cifra-en-8-meses/ar3311219",
-        "https://gentetlx.com.mx/2026/11/09/la-prosperidad-compartida-funciona-y-da-resultados-para-el-pueblo-ana-lilia-rivera/"
+        "https://www.theguardian.com/games/2026/nov/09/grand-theft-auto-creators-gta",
+        "https://variety.com/2026/gaming/news/gta-6-preorders-expectations-launch-1236943278/",
+        "https://finance.yahoo.com/media-advertising/articles/gta-6-estimated-digital-pre-174009699.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBzZbjgLgQ_hylLNurbFsacWYDZEcSO88uqIIRm8sET9eETbT69DbIYtap3yo",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVwe5DkKg8lE67K9u2TTzGjHP2D0EUYTsxP5fSZm4A6xIi3A_VnNEILuFNlDc",
+      "image_credit": "The Guardian",
       "news": [
         {
-          "url": "https://es-us.noticias.yahoo.com/m%C3%A9xico-alcanza-r%C3%A9cord-empleo-formal-144404865.html",
-          "title": "México alcanza récord de empleo formal con 23.8 millones de puestos: Sheinbaum",
-          "publisher": "Yahoo",
+          "url": "https://www.theguardian.com/games/2026/nov/09/grand-theft-auto-creators-gta",
+          "title": "Crime pays: how Grand Theft Auto became a cultural colossus",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBzZbjgLgQ_hylLNurbFsacWYDZEcSO88uqIIRm8sET9eETbT69DbIYtap3yo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVwe5DkKg8lE67K9u2TTzGjHP2D0EUYTsxP5fSZm4A6xIi3A_VnNEILuFNlDc"
         },
         {
-          "url": "https://www.reforma.com/se-registran-161-077-nuevos-empleos-mayor-cifra-en-8-meses/ar3311219",
-          "title": "Se registran 161,077 nuevos empleos; mayor cifra en 8 meses",
-          "publisher": "Reforma",
+          "url": "https://variety.com/2026/gaming/news/gta-6-preorders-expectations-launch-1236943278/",
+          "title": "‘GTA 6’ Presales ‘Far in Excess’ of Expectations Ahead of Next Week’s Launch, Take-Two CEO Says",
+          "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRk3M1oBlZG4ZG8ex-PYPUXJOV79udmLeMSlx4nvvj_NlM_VdlyeIkrqNy9XAs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSe6D2hdsqu3Gusi3vyff-3VGSyM80FVd48wlWhpzECpRRdvlqqyJy62MZaT_o"
         },
         {
-          "url": "https://gentetlx.com.mx/2026/11/09/la-prosperidad-compartida-funciona-y-da-resultados-para-el-pueblo-ana-lilia-rivera/",
-          "title": "La prosperidad compartida funciona y da resultados para el pueblo: Ana Lilia Rivera",
-          "publisher": "Gente Tlx",
+          "url": "https://finance.yahoo.com/media-advertising/articles/gta-6-estimated-digital-pre-174009699.html",
+          "title": "GTA 6 Estimated Digital Pre-Orders Near 8 Million, with PS5 Claiming 74% of Demand",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpM0WTia06B1-twgXt4TC992KSlLNNi5p3IZ_BaFKC04e0CTvkk7Jit9oOxO4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8eGFgt1_9SCLaTghN5OOGWoXJnBmt5G5kAbvP9IvtqLuQusYEDj4n3zD5e_o"
         }
       ]
     },
     {
-      "query": "junior - cúcuta",
+      "query": "mlb rookie of the year 2026",
       "approx_searches": "500+",
-      "published_at": "2026-11-09T23:40:00Z",
+      "published_at": "2026-11-10T00:20:00Z",
+      "related_news_urls": [
+        "https://www.mlb.com/news/2026-mlb-rookie-of-the-year-award-winners",
+        "https://www.detroitnews.com/story/sports/mlb/tigers/2026/11/09/detroit-tigers-kevin-mcgonigle-about-to-learn-if-hes-american-league-rookie-of-year/92677666007/",
+        "https://sports.yahoo.com/articles/al-nl-rookie-watch-mlbs-153124058.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZb9tOwQawxKUYUUY2n25LBN8urA1-InLRkuP3JWyhdy1U84nfDMwGq4fDPEY",
+      "image_credit": "MLB.com",
+      "news": [
+        {
+          "url": "https://www.mlb.com/news/2026-mlb-rookie-of-the-year-award-winners",
+          "title": "Rookie of the Year announcement kicks off Awards Week (7 p.m. ET on MLB Network, MLB+)",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZb9tOwQawxKUYUUY2n25LBN8urA1-InLRkuP3JWyhdy1U84nfDMwGq4fDPEY"
+        },
+        {
+          "url": "https://www.detroitnews.com/story/sports/mlb/tigers/2026/11/09/detroit-tigers-kevin-mcgonigle-about-to-learn-if-hes-american-league-rookie-of-year/92677666007/",
+          "title": "Kevin McGonigle, likely AL rookie of year, gives Tigers prospects hope",
+          "publisher": "The Detroit News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKTISQzJ74fUEsChsBSD3CK89u_o2HSGaAQOouvItWJgrYrG-dleLjZSMINGM"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/al-nl-rookie-watch-mlbs-153124058.html",
+          "title": "AL, NL Rookie of the Year: How to watch as MLB's awards season begins",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxaHElu5Bvlt4XiJSrTcIIAJPL1ZFJULhAQ9sLG2rkYYUAc-g7Ue_M2o7jJdU"
+        }
+      ]
+    },
+    {
+      "query": "rangers vs oilers",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T00:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nhl/story/_/id/50421719/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
+        "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-9-2026",
+        "https://www.foreverblueshirts.com/new-york-rangers-news/preview-lines-notes-how-to-watch-visit-oilers-trying-win-4th-straight"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfyY4i-CwJg4GArsBjNRHNGI_TmljuHlwEEd0J3sZ6A2CMee1NjEqE_qyUkTQ",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nhl/story/_/id/50421719/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
+          "title": "NHL Tonight: Guide to Rangers-Oilers, Flyers-Canucks, Islanders-Sharks",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfyY4i-CwJg4GArsBjNRHNGI_TmljuHlwEEd0J3sZ6A2CMee1NjEqE_qyUkTQ"
+        },
+        {
+          "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-9-2026",
+          "title": "NHL On Tap: McDavid looks to extend season-opening point streak for Oilers",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtk1W7U6IsFchS-KOR-rsRhdsjmju3jFRyVRPvfM0z1cx5S_xXkXC3IZzmhDY"
+        },
+        {
+          "url": "https://www.foreverblueshirts.com/new-york-rangers-news/preview-lines-notes-how-to-watch-visit-oilers-trying-win-4th-straight",
+          "title": "Rangers lines, notes, how to watch visit vs. Oilers, trying to win 4th straight",
+          "publisher": "Forever Blueshirts",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT739ZqlMOiPp2lHzJ_-buVlBMX3JOtkbKixgUMLqdZ_3ljItoYDrfG12exMAo"
+        }
+      ]
+    },
+    {
+      "query": "wagner vs uconn",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T00:10:00Z",
+      "related_news_urls": [
+        "https://www.courant.com/2026/11/08/uconn-men-host-wagner-former-center-youssouf-singare-in-gampel-opener-monday-night-how-to-watch/",
+        "https://sports.yahoo.com/articles/uconn-mens-basketball-vs-wagner-223043321.html",
+        "https://www.nytimes.com/athletic/7767959/2026/11/09/wagner-vs-uconn-stream-how-to-watch-nov-9/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUmHnd4eZgvC1kUb8CdMLuTA16e-wT_iGS9A84XJdRCyF4YtDM7aY0dofCQPY",
+      "image_credit": "Hartford Courant",
+      "news": [
+        {
+          "url": "https://www.courant.com/2026/11/08/uconn-men-host-wagner-former-center-youssouf-singare-in-gampel-opener-monday-night-how-to-watch/",
+          "title": "UConn men host Wagner, former center Youssouf Singare, in Gampel opener Monday night: How to watch",
+          "publisher": "Hartford Courant",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUmHnd4eZgvC1kUb8CdMLuTA16e-wT_iGS9A84XJdRCyF4YtDM7aY0dofCQPY"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/uconn-mens-basketball-vs-wagner-223043321.html",
+          "title": "UConn men's basketball vs Wagner | Live updates",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2rUPTRmFvvTe4IkYoaTfJRQUaI-b4NVVbS0t0jlbJFA5999G-dhOBEEtpdEM"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7767959/2026/11/09/wagner-vs-uconn-stream-how-to-watch-nov-9/",
+          "title": "How to watch Wagner vs. UConn men’s basketball: TV channel and streaming options for November 9",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnubvLLibm5EySuK-Hh8nsReU_UKEthyZrKqfX0N4qedQF8GKTHRtux1kIG6U"
+        }
+      ]
+    },
+    {
+      "query": "alabama basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T00:10:00Z",
+      "related_news_urls": [
+        "https://www.on3.com/teams/alabama-crimson-tide/news/how-to-watch-listen-to-no-20-alabama-basketball-vs-oakland/",
+        "https://www.si.com/college/alabama/basketball/oakland-at-no-18-alabama-basketball-game-central-rundown",
+        "https://sports.yahoo.com/articles/alabama-basketball-vs-oakland-live-223030433.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPOPgU7vEkYYTAjHkhRMloL9IcGyIRvHtl8GUx1FPHcMngOZNKNRzenP8QcxI",
+      "image_credit": "On3",
+      "news": [
+        {
+          "url": "https://www.on3.com/teams/alabama-crimson-tide/news/how-to-watch-listen-to-no-20-alabama-basketball-vs-oakland/",
+          "title": "How to watch, listen to No. 20 Alabama basketball vs. Oakland",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPOPgU7vEkYYTAjHkhRMloL9IcGyIRvHtl8GUx1FPHcMngOZNKNRzenP8QcxI"
+        },
+        {
+          "url": "https://www.si.com/college/alabama/basketball/oakland-at-no-18-alabama-basketball-game-central-rundown",
+          "title": "Oakland at No. 18 Alabama Basketball: Game Central Rundown",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWPGN47K5IDRe3o5Z0AhGPsSEPzUiU8NimBQqd5Jg5axVtg1rIv79FuBMyrfM"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/alabama-basketball-vs-oakland-live-223030433.html",
+          "title": "Alabama basketball vs Oakland live score updates, highlights as Aden Holloway returns",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNdCbg6zY9KWJuDehWe5ZSTKAmjMqq6BbhLt19heBdoQPLDbc5CIxljOURJG4"
+        }
+      ]
+    },
+    {
+      "query": "junior vs cúcuta deportivo",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T00:10:00Z",
       "related_news_urls": [
         "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17488974/junior-vs-cucuta-fecha-18-liga-betplay-equipo-fecha-hora-y-tv-en-vivo",
         "https://www.elheraldo.co/deportes/2026/11/08/junior-vs-cucuta-deportivo-sin-nada-que-pelear/",
@@ -112,247 +287,72 @@
       ]
     },
     {
-      "query": "what time is the voice on tonight",
+      "query": "volleyball",
       "approx_searches": "500+",
-      "published_at": "2026-11-09T23:40:00Z",
+      "published_at": "2026-11-10T00:10:00Z",
       "related_news_urls": [
-        "https://www.cleveland.com/tv/2026/11/the-voice-season-30-live-shows-how-to-watch-free-tonight.html",
-        "https://www.nbc.com/nbc-insider/how-to-vote-the-voice-season-30",
-        "https://www.today.com/popculture/tv/the-voice-teams-season-30-live-shows-rcna607559"
+        "https://www.ocregister.com/2026/11/09/thirteen-orange-county-girls-volleyball-teams-to-play-in-socal-regional/",
+        "https://www.pjstar.com/story/sports/high-school/volleyball/2026/11/05/ihsa-volleyball-roundup-two-peoria-area-teams-advance-to-super-sectionals/92623945007/",
+        "https://www.centralillinoisproud.com/sports/local-sports/four-area-schools-play-in-volleyball-super-sectionals-monday/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2-9V-H1Z3nz-iTmXL6jaQmDlD12MvXgOR--ouJUS4uk6VXxjpz7Sk2-ePabQ",
-      "image_credit": "Cleveland.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5PyA6KdCftbay2VUdHRzP-k829VvADCIVOWeqyHVlCXNgkafeYxIQHQSlDFg",
+      "image_credit": "Orange County Register",
       "news": [
         {
-          "url": "https://www.cleveland.com/tv/2026/11/the-voice-season-30-live-shows-how-to-watch-free-tonight.html",
-          "title": "‘The Voice’ season 30 Live Shows: How to watch free tonight",
-          "publisher": "Cleveland.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2-9V-H1Z3nz-iTmXL6jaQmDlD12MvXgOR--ouJUS4uk6VXxjpz7Sk2-ePabQ"
-        },
-        {
-          "url": "https://www.nbc.com/nbc-insider/how-to-vote-the-voice-season-30",
-          "title": "The Complete Guide to Voting on The Voice Season 30: Rules, Timing, and More",
-          "publisher": "NBC TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYIMLiakoXr1APH2J1B6DyNd79wHgqzstn6CwFsfrKsCVOGksVV-NrmHgrng0"
-        },
-        {
-          "url": "https://www.today.com/popculture/tv/the-voice-teams-season-30-live-shows-rcna607559",
-          "title": "‘The Voice’ Is Headed to the Live Shows. Meet the Singers on Team Adam, Riley, Kelly and Queen",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTo0nNQBR8rB_ggzVwFHKixElan_RnoL8znTvjBBPHeOftUHMe1u57WpQH4LnA"
-        }
-      ]
-    },
-    {
-      "query": "cj beach",
-      "approx_searches": "200+",
-      "published_at": "2026-11-09T23:40:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/country-singer-cj-beach-dead-184545992.html",
-        "https://pagesix.com/2026/11/09/celebrity-news/promising-country-music-star-dies-at-just-22-after-devastating-car-crash/",
-        "https://www.pennlive.com/entertainment/2026/11/rising-country-music-singer-dies-in-wreck-at-22-the-world-lost-an-amazing-talent.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSq4wdgo5v4DD-Yj4WlcKrU95wNorQBLX5GhB4wPUjXoJCj7siI-osx3Ll4J9s",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/country-singer-cj-beach-dead-184545992.html",
-          "title": "Country Singer CJ Beach Dead at 22 Following Tragic Car Crash Just Hours After His Final Show",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSq4wdgo5v4DD-Yj4WlcKrU95wNorQBLX5GhB4wPUjXoJCj7siI-osx3Ll4J9s"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/09/celebrity-news/promising-country-music-star-dies-at-just-22-after-devastating-car-crash/",
-          "title": "Promising country music star dies at just 22 after devastating car crash",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSanN3do_3t_Q8pfjeuZSziOMXryRszS_urql86u9SuaabKlF8vW5iApMv5fqw"
-        },
-        {
-          "url": "https://www.pennlive.com/entertainment/2026/11/rising-country-music-singer-dies-in-wreck-at-22-the-world-lost-an-amazing-talent.html",
-          "title": "Rising country music singer dies in wreck at 22: ‘The world lost an amazing talent’",
-          "publisher": "PennLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUa3pdNhr2syQK-9GUnteQgm-d1apnZ47KZFDRWd9BMTj7g2SfgDqa8B8C9d0"
-        }
-      ]
-    },
-    {
-      "query": "syracuse vs indiana",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-09T23:30:00Z",
-      "related_news_urls": [
-        "https://www.syracuse.com/orangebasketball/2026/11/syracuse-basketball-vs-indiana-live-score-updates.html",
-        "https://dailyorange.com/2026/11/syracuse-mens-basketball-indiana-beat-writer-predictions/",
-        "https://www.idsnews.com/article/2026/11/indiana-mens-basketball-syracuse-indianapolis-devries-iu"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0oaBl0JF0h-5jRNca7JhGBtimOlPuXzcDHB3KaM1XJ-UU3n7tgon8pAQkqXA",
-      "image_credit": "Syracuse.com",
-      "news": [
-        {
-          "url": "https://www.syracuse.com/orangebasketball/2026/11/syracuse-basketball-vs-indiana-live-score-updates.html",
-          "title": "Syracuse basketball vs. Indiana: Live score, updates",
-          "publisher": "Syracuse.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0oaBl0JF0h-5jRNca7JhGBtimOlPuXzcDHB3KaM1XJ-UU3n7tgon8pAQkqXA"
-        },
-        {
-          "url": "https://dailyorange.com/2026/11/syracuse-mens-basketball-indiana-beat-writer-predictions/",
-          "title": "Beat writers split on whether Syracuse can win 1st Quad 1 game vs. Indiana",
-          "publisher": "The Daily Orange",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPBOHOxKdDn7zJR7vCSpLdjp2mf316T95417kfmMF7XSIwF6HGVqa1J-ZEKOY"
-        },
-        {
-          "url": "https://www.idsnews.com/article/2026/11/indiana-mens-basketball-syracuse-indianapolis-devries-iu",
-          "title": "Indiana men’s basketball set to face Syracuse on Monday in Indianapolis",
-          "publisher": "Indiana Daily Student",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTuX-JQOQrXh5RDC24oIsu6jDdUq2jX0uU41J7R9M2RAepjhSugJd9T4nLNMhI"
-        }
-      ]
-    },
-    {
-      "query": "jet blast",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T23:30:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/09/us/plane-rolls-over-jet-blast",
-        "https://www.foxnews.com/video/6408154746112",
-        "https://www.ocregister.com/2026/11/08/2-escape-injury-when-strong-winds-flip-over-small-plane-at-john-wayne-airport/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRx1QaeiBC3RbL6uSb3QC8FCKU6K1RlLoPS5AurVfvhavg-qVZN6_yS0Y9GtAI",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/09/us/plane-rolls-over-jet-blast",
-          "title": "Plane rolls over after being hit by blast from jet engines",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRx1QaeiBC3RbL6uSb3QC8FCKU6K1RlLoPS5AurVfvhavg-qVZN6_yS0Y9GtAI"
-        },
-        {
-          "url": "https://www.foxnews.com/video/6408154746112",
-          "title": "Small plane flips upside down from jet blast at California airport with two aboard",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS68VJ7T68OG2Q-ntNsqUq2cS5hwVvWLzQOMCa89Q02x1eVTs_kXTRTLsRQv1o"
-        },
-        {
-          "url": "https://www.ocregister.com/2026/11/08/2-escape-injury-when-strong-winds-flip-over-small-plane-at-john-wayne-airport/",
-          "title": "2 escape injury when small plane flips over at John Wayne Airport",
+          "url": "https://www.ocregister.com/2026/11/09/thirteen-orange-county-girls-volleyball-teams-to-play-in-socal-regional/",
+          "title": "Thirteen Orange County girls volleyball teams to play in SoCal Regional",
           "publisher": "Orange County Register",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0ucKGBiC6bVTeR5ScptVa7h9NiR1gl9aeIBIn3iTSwa4kSnP2vlEAIdatfOY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5PyA6KdCftbay2VUdHRzP-k829VvADCIVOWeqyHVlCXNgkafeYxIQHQSlDFg"
+        },
+        {
+          "url": "https://www.pjstar.com/story/sports/high-school/volleyball/2026/11/05/ihsa-volleyball-roundup-two-peoria-area-teams-advance-to-super-sectionals/92623945007/",
+          "title": "IHSA volleyball: Two Peoria-area teams advance to the 2026 Elite Eight",
+          "publisher": "Peoria Journal Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRolpyfGjveYFdWg7Xs8PdGM4OjiyRvBDueLvvoh94Xd5F27rRkw07uwqGMoWU"
+        },
+        {
+          "url": "https://www.centralillinoisproud.com/sports/local-sports/four-area-schools-play-in-volleyball-super-sectionals-monday/",
+          "title": "Four area schools play in volleyball super-sectionals Monday",
+          "publisher": "CIProud.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPRS6PWIo6ILboY_DhmQXJ2yPUPnYF2tP8QAsFw2ORsOy0_CmVvOCm5mob3X4"
         }
       ]
     },
     {
-      "query": "bills schedule",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-09T23:20:00Z",
+      "query": "vikings record",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T00:10:00Z",
       "related_news_urls": [
-        "https://www.buffalobills.com/news/s-geno-stone-and-wr-trent-sherfield-sr-elevated-wr-joshua-palmer-placed-on-injured-reserve-week-9",
-        "https://www.buffalorumblings.com/buffalo-bills-injuries/144832/buffalo-bills-josh-palmer-injured-reserve-ahead-of-nfl-trade-deadline",
-        "https://sports.yahoo.com/articles/bills-place-wide-receiver-injured-215704389.html"
+        "https://www.espn.com/nfl/story/_/id/50408415/vikings-justin-jefferson-miraculous-catch-bills-2022",
+        "https://www.nytimes.com/athletic/7753776/2026/11/05/justin-jefferson-vikings-offense-trade-deadline-silence/",
+        "https://www.startribune.com/minnesota-vikings-offense-kyler-murray-justin-jefferson-stats-nfl-film-breakdown-buffalo-bills-mnf/601906308"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGUp-N6TR0BR9A5f4by8LHdCIJd8KTZrasEuxc8XDiJAqHk7tQ_Ah3tbXNrWA",
-      "image_credit": "Buffalo Bills",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsfMScxJQgVdOiLjgB8DaNl7eQFYXS4W-n4qUPxICcFB9LcPogeMnpIIjloGQ",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.buffalobills.com/news/s-geno-stone-and-wr-trent-sherfield-sr-elevated-wr-joshua-palmer-placed-on-injured-reserve-week-9",
-          "title": "S Geno Stone and WR Trent Sherfield Sr. elevated, WR Joshua Palmer placed on Injured Reserve | Week 9",
-          "publisher": "Buffalo Bills",
+          "url": "https://www.espn.com/nfl/story/_/id/50408415/vikings-justin-jefferson-miraculous-catch-bills-2022",
+          "title": "Inside Justin Jefferson's miraculous catch for Vikings versus Bills in 2022",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGUp-N6TR0BR9A5f4by8LHdCIJd8KTZrasEuxc8XDiJAqHk7tQ_Ah3tbXNrWA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsfMScxJQgVdOiLjgB8DaNl7eQFYXS4W-n4qUPxICcFB9LcPogeMnpIIjloGQ"
         },
         {
-          "url": "https://www.buffalorumblings.com/buffalo-bills-injuries/144832/buffalo-bills-josh-palmer-injured-reserve-ahead-of-nfl-trade-deadline",
-          "title": "Bills place Josh Palmer on injured reserve",
-          "publisher": "Buffalo Rumblings",
+          "url": "https://www.nytimes.com/athletic/7753776/2026/11/05/justin-jefferson-vikings-offense-trade-deadline-silence/",
+          "title": "Why Justin Jefferson’s silence is deafening when it comes to the Vikings’ offense - The Athletic",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3Bl0rCfsZAD2QwsDcU1xAAD4uUmhT8hHRYe6ZETg_W4OSb2hSVrDOjx6vSzU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwiYHoIFd1aeWefl-ToUb0K3wbF4KGfCoIExmvKahgwNUsVsOhHwuWM021wOE"
         },
         {
-          "url": "https://sports.yahoo.com/articles/bills-place-wide-receiver-injured-215704389.html",
-          "title": "Bills place wide receiver on injured reserve hours before Monday Night Football",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.startribune.com/minnesota-vikings-offense-kyler-murray-justin-jefferson-stats-nfl-film-breakdown-buffalo-bills-mnf/601906308",
+          "title": "Justin Jefferson keeps getting open. Here’s why the Vikings aren’t capitalizing.",
+          "publisher": "Star Tribune",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFcjvpVNQFA_8FZ8YvnHOkKv4VST_fSB_mQOusyTHMIA5t8HuUs25dAM5yJE8"
-        }
-      ]
-    },
-    {
-      "query": "tutu atwell",
-      "approx_searches": "500+",
-      "published_at": "2026-11-09T23:20:00Z",
-      "related_news_urls": [
-        "https://ramblinfan.com/tutu-atwell-blew-golden-opportunity-earn-larger-role-rams-need-seize",
-        "https://www.fantasypros.com/nfl/news/618829/tutu-atwell-has-two-catches-win.php",
-        "https://www.nfl.com/videos/stafford-s-40-yard-deep-ball-to-atwell-gives-rams-red-zone-access-against-chargers"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRD4CMy1tPij9qw0DMSSXEJSdt1lWowoVl2NhJjalqE_zt_HVAbRNIFPAfT9ek",
-      "image_credit": "Ramblin' Fan",
-      "news": [
-        {
-          "url": "https://ramblinfan.com/tutu-atwell-blew-golden-opportunity-earn-larger-role-rams-need-seize",
-          "title": "Tutu Atwell blew golden opportunity to earn larger role Rams need someone to seize",
-          "publisher": "Ramblin' Fan",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRD4CMy1tPij9qw0DMSSXEJSdt1lWowoVl2NhJjalqE_zt_HVAbRNIFPAfT9ek"
-        },
-        {
-          "url": "https://www.fantasypros.com/nfl/news/618829/tutu-atwell-has-two-catches-win.php",
-          "title": "Tutu Atwell has two catches in win",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsRHcHBuQp4fQ0ABbIBRjEce_-NDhKms_0q6aOE2NwNs2WfMQ1SsjhLefUf4U"
-        },
-        {
-          "url": "https://www.nfl.com/videos/stafford-s-40-yard-deep-ball-to-atwell-gives-rams-red-zone-access-against-chargers",
-          "title": "Stafford's 40-yard deep ball to Atwell gives Rams red-zone access against Chargers",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQckIhZbOU83lfVBkgT5juKb7kJpXvy_9jNJ8Q_CRqCMajo4qG4WOd5DvjgcaU"
-        }
-      ]
-    },
-    {
-      "query": "cavaliers vs hornets",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-09T23:00:00Z",
-      "related_news_urls": [
-        "https://establishtherun.com/nba-matchups-november-9-2/",
-        "https://www.cleveland.com/cavs/2026/11/cavs-at-hornets-preview-odds-injury-report-tv.html",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/cha-starts-white-james-allen-reid-kalkbrenner"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgS3yIQdty91CzYUV87NhpjDPhRqzjCfSRZ0qdNjZL9tAjxx08TaYUqM0TI0E",
-      "image_credit": "Establish The Run",
-      "news": [
-        {
-          "url": "https://establishtherun.com/nba-matchups-november-9-2/",
-          "title": "NBA Matchups: November 9",
-          "publisher": "Establish The Run",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgS3yIQdty91CzYUV87NhpjDPhRqzjCfSRZ0qdNjZL9tAjxx08TaYUqM0TI0E"
-        },
-        {
-          "url": "https://www.cleveland.com/cavs/2026/11/cavs-at-hornets-preview-odds-injury-report-tv.html",
-          "title": "Cavs at Hornets: preview, odds, injury report, TV",
-          "publisher": "Cleveland.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTu6ec_HecsiTtDe_yM38JOUqlO7stxt-sf1RgJnb27w1B6ndIyyOLsthxSvhc"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/cha-starts-white-james-allen-reid-kalkbrenner",
-          "title": "CHA starts White, James, Allen, Reid, Kalkbrenner",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSrAPWYwgsIQnnyzV8SXnrGQoUKH0qJvZ-iAtq26kCiMiVZwhxSYoXVTxe0hx0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXqT8m4dsWH14GC11_rx_z7QCQkCfyl8XLtQ1_GUazY4-Jmw7V8b8J-1WhEIQ"
         }
       ]
     }
