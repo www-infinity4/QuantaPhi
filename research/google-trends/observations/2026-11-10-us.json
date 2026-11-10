@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T04:31:12.712547Z",
+  "checked_at": "2026-11-10T05:01:36.353643Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "daniel jones",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T04:10:00Z",
+      "query": "victor wembanyama",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-10T04:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50403440/sources-colts-engaged-daniel-jones-trade-talks",
-        "https://www.foxnews.com/outkick-sports/proof-team-trading-daniel-jones-nfl-trade-deadline-chasing-fools-gold",
-        "https://www.nfl.com/news/trade-talk-latest-on-colts-qb-daniel-jones-chargers-lb-khalil-mack-ahead-of-deadline"
+        "https://www.nytimes.com/athletic/7769507/2026/11/09/victor-wembanyama-george-gervin-finger-roll-nba-spurs/",
+        "https://sports.yahoo.com/nba/breaking-news/article/victor-wembanyama-nearly-had-a-triple-double-with-blocks-in-just-25-minutes-in-historic-blowout-win-over-suns-042442764.html",
+        "https://airalamo.com/the-spurs-high-point-differential-says-they-re-ahead-of-schedule-again"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD9QS164El3VCEBhsL06eebAaIKRD-7mTn559TEHJ9gPOWM7H61FVnOaZDtY8",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxhsFRSKSCCfwYehk6kODJ7ByhDKgbg2J-8scX8hZNBgeabqX3X_m2xkPBlvM",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50403440/sources-colts-engaged-daniel-jones-trade-talks",
-          "title": "Colts in Daniel Jones trade talks as multiple teams call about QB, sources say",
-          "publisher": "ESPN",
+          "url": "https://www.nytimes.com/athletic/7769507/2026/11/09/victor-wembanyama-george-gervin-finger-roll-nba-spurs/",
+          "title": "Victor Wembanyama channels George Gervin via finger roll in latest gem performance",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD9QS164El3VCEBhsL06eebAaIKRD-7mTn559TEHJ9gPOWM7H61FVnOaZDtY8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxhsFRSKSCCfwYehk6kODJ7ByhDKgbg2J-8scX8hZNBgeabqX3X_m2xkPBlvM"
         },
         {
-          "url": "https://www.foxnews.com/outkick-sports/proof-team-trading-daniel-jones-nfl-trade-deadline-chasing-fools-gold",
-          "title": "More proof that any team trading for Daniel Jones at the NFL trade deadline is chasing fool's gold",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVFsctIbc5uFYmStquyrvM8MjCiptCBDLewRSKFN9DXpF-zZ7ydwWsFq8RBok"
-        },
-        {
-          "url": "https://www.nfl.com/news/trade-talk-latest-on-colts-qb-daniel-jones-chargers-lb-khalil-mack-ahead-of-deadline",
-          "title": "Trade talk: Latest on Colts QB Daniel Jones, Chargers LB Khalil Mack ahead of deadline",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThrkweIxX33ex0H2IdobI63-XGGfNtq0zOAMPJPWi1bInGGmUs_S4FKqmVIjs"
-        }
-      ]
-    },
-    {
-      "query": "aaron jones sr",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T04:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50434104/jordyn-tyson-saints-debut-promise-rookie-mistakes",
-        "https://www.nfl.com/videos/jordyn-tyson-fumbles-the-football-to-the-browns-right-after-making-his-first-nfl-catch",
-        "https://www.nola.com/sports/saints/jordyn-tyson-s-nfl-debut-included-his-first-big-mistake-and-an-important-response/article_43a91ba3-96a2-4593-bef9-dd7082838d70.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ602QVtHi2t2pZR-NpVn1ddcj4G6Qwkj2K-VmnkRvlLgV9EGkV_2bU528gHfg",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50434104/jordyn-tyson-saints-debut-promise-rookie-mistakes",
-          "title": "Jordyn Tyson's Saints debut showed promise, rookie mistakes",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ602QVtHi2t2pZR-NpVn1ddcj4G6Qwkj2K-VmnkRvlLgV9EGkV_2bU528gHfg"
-        },
-        {
-          "url": "https://www.nfl.com/videos/jordyn-tyson-fumbles-the-football-to-the-browns-right-after-making-his-first-nfl-catch",
-          "title": "New Orleans Saints wide receiver Jordyn Tyson fumbles the football to the Browns right after making his first NFL catch",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXqigLCk0if3_eLIEkumy6f_2Smr4nVlHR6jaGWZrW2HP6RwCaHPo9VgqcMWk"
-        },
-        {
-          "url": "https://www.nola.com/sports/saints/jordyn-tyson-s-nfl-debut-included-his-first-big-mistake-and-an-important-response/article_43a91ba3-96a2-4593-bef9-dd7082838d70.html",
-          "title": "Jordyn Tyson’s NFL debut included his first big mistake and an important response",
-          "publisher": "NOLA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvQL51F6CTmbZLhUD3-q1fuc33z3zMljHaiwWgnjBBhuJfzKIzwKA4LJeRkCg"
-        }
-      ]
-    },
-    {
-      "query": "coachella 2027",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T04:10:00Z",
-      "related_news_urls": [
-        "https://www.sfgate.com/sf-culture/article/coachella-headliners-leak-22522136.php",
-        "https://www.yahoo.com/entertainment/music/festivals/articles/did-sza-just-confirm-coachella-225220811.html",
-        "https://inmusicblog.com/news/sza-coachella-2027-headliners-dua-lipa-tame-impala/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu7m26jqmr36TZGo8p0VvVhPnAo6GovpILVjEHMwDniQ8nsYVehoDOaJdyDjc",
-      "image_credit": "SFGATE",
-      "news": [
-        {
-          "url": "https://www.sfgate.com/sf-culture/article/coachella-headliners-leak-22522136.php",
-          "title": "SZA appears to leak Coachella 2027 headliners",
-          "publisher": "SFGATE",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu7m26jqmr36TZGo8p0VvVhPnAo6GovpILVjEHMwDniQ8nsYVehoDOaJdyDjc"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/music/festivals/articles/did-sza-just-confirm-coachella-225220811.html",
-          "title": "Did SZA just confirm Coachella 2027 headliner rumors? Fans think so",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdxQiL2dswIpMD2IT6q0g7rf5IpxkIAPThBF1PpYGCtzbZBt8rc45SgZItxEc"
-        },
-        {
-          "url": "https://inmusicblog.com/news/sza-coachella-2027-headliners-dua-lipa-tame-impala/",
-          "title": "SZA Seemingly Confirms Dua Lipa and Tame Impala as Coachella 2027 Headliners",
-          "publisher": "InMusic Blog",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWB5cE7rJyur27B6zmizX7fl5dCxvVYlktHWlIZdsBPUsxxFQ-PHzPVgjXaoY"
-        }
-      ]
-    },
-    {
-      "query": "new zealand national cricket team vs india national cricket team match scorecard",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T04:00:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/story/two-extremes-few-answers-india-s-search-for-a-settled-pace-attack-1561806",
-        "https://sports.yahoo.com/articles/zealand-vs-india-3rd-odi-010002935.html",
-        "https://www.cnet.com/tech/services-and-software/new-zealand-vs-india-how-to-watch-3rd-odi-cricket-live-from-anywhere/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTI90oeAiQNbMsUNxuf9pRTHfxUUlUYap5pEDhwDj4LRTNgLneON9cOpe9bxg",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/story/two-extremes-few-answers-india-s-search-for-a-settled-pace-attack-1561806",
-          "title": "Two extremes, few answers: India's search for a settled pace attack",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTI90oeAiQNbMsUNxuf9pRTHfxUUlUYap5pEDhwDj4LRTNgLneON9cOpe9bxg"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/zealand-vs-india-3rd-odi-010002935.html",
-          "title": "New Zealand vs. India 3rd ODI live score, win probability and chances of victory in Hamilton",
+          "url": "https://sports.yahoo.com/nba/breaking-news/article/victor-wembanyama-nearly-had-a-triple-double-with-blocks-in-just-25-minutes-in-historic-blowout-win-over-suns-042442764.html",
+          "title": "Victor Wembanyama nearly had a triple-double with blocks, in just 25 minutes, in historic blowout win over Suns",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeGZ0vDbz2l1nq7ZVHygLD_a7cdezjlOiAVDT816mkqPnab2lgF3XWplhgn4w"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuLCYXmn9BP5mjQwAGgSFgTNNCYaqlYgfC1rsxSUkhBDDT9Db6gZXhGLF2bAA"
         },
         {
-          "url": "https://www.cnet.com/tech/services-and-software/new-zealand-vs-india-how-to-watch-3rd-odi-cricket-live-from-anywhere/",
-          "title": "New Zealand vs. India: How to Watch 3rd ODI Cricket Live From Anywhere",
-          "publisher": "CNET",
+          "url": "https://airalamo.com/the-spurs-high-point-differential-says-they-re-ahead-of-schedule-again",
+          "title": "The Spurs' high point differential says they're ahead of schedule (again)",
+          "publisher": "Air Alamo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-v25tmLKf2aM1VTMUWPEmqQE0FugShkDv024Ri-4fOP8HJEzydEagM36LDj0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSv30c8G4kTGjAtjfsHSzLIWcb1Fs6PsO7qQn6_T_EwYfji1XmlrDX9lldgy1c"
         }
       ]
     },
     {
-      "query": "saddiq bey",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T03:50:00Z",
+      "query": "new hunger games movie",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T04:40:00Z",
       "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/nor-starts-fears-murray-jones-bey-matkovic",
-        "https://www.rotowire.com/basketball/headlines/saddiq-bey-news-drawing-first-start-of-season-538395",
-        "https://www.cbssports.com/fantasy/basketball/news/pelicans-herbert-jones-starting-monday/"
+        "https://people.com/tom-blyth-says-he-and-rachel-zegler-are-infinitely-linked-since-starring-together-in-hunger-games-prequel-film-exclusive-12240781",
+        "https://en.vijesti.me/fun/showbiz/835466/The-Hunger-Games-stars-remained-close-even-after-filming",
+        "https://www.thenews.com.pk/latest/1423002-tom-blyth-opens-up-about-crazy-bond-with-hunger-games-co-star-rachel-zegler"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsu0nMAzCgvVkF9ARLb4JmUvwmLkLJ3VsrnaCWzUwesQOwLqQ7HByI6J9CjRE",
-      "image_credit": "NBC Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbSfuJRp6klBz5-YYZss0HV6PlhZGt49ypuCbXzIOw58p3IPwSL2N70sGgkBU",
+      "image_credit": "People.com",
       "news": [
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/nor-starts-fears-murray-jones-bey-matkovic",
-          "title": "NOR starts Fears, Murray, Jones, Bey, Matković",
-          "publisher": "NBC Sports",
+          "url": "https://people.com/tom-blyth-says-he-and-rachel-zegler-are-infinitely-linked-since-starring-together-in-hunger-games-prequel-film-exclusive-12240781",
+          "title": "Tom Blyth on Friendship with Rachel Zegler Since Filming ‘Hunger Games’ Prequel Film (Exclusive)",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsu0nMAzCgvVkF9ARLb4JmUvwmLkLJ3VsrnaCWzUwesQOwLqQ7HByI6J9CjRE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbSfuJRp6klBz5-YYZss0HV6PlhZGt49ypuCbXzIOw58p3IPwSL2N70sGgkBU"
         },
         {
-          "url": "https://www.rotowire.com/basketball/headlines/saddiq-bey-news-drawing-first-start-of-season-538395",
-          "title": "Saddiq Bey News: Drawing first start of season",
-          "publisher": "RotoWire",
+          "url": "https://en.vijesti.me/fun/showbiz/835466/The-Hunger-Games-stars-remained-close-even-after-filming",
+          "title": "The stars of \"The Hunger Games\" remained close even after filming",
+          "publisher": "vijesti.me",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCpgsxj4C8xjk0npzZVGOIXrjotzMrE4jzFZjqczEKX4igt5CR-W2FwmlGgXU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcgHILo_oqbaZgHwzhXAI4m35Mobgmfvlwt_aolRfzKkM4HKz29yGRrC_EdVM"
         },
         {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/pelicans-herbert-jones-starting-monday/",
-          "title": "Pelicans' Herbert Jones: Starting Monday",
+          "url": "https://www.thenews.com.pk/latest/1423002-tom-blyth-opens-up-about-crazy-bond-with-hunger-games-co-star-rachel-zegler",
+          "title": "Tom Blyth opens up about his 'crazy' bond with 'Hunger Games' co-star Rachel Zegler",
+          "publisher": "The News International",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTro9bJ8kurxQ3LNUp7YOVW1JLjgPuRE_vSNig7GbygXNnLw_pYvs8w4uFBAAU"
+        }
+      ]
+    },
+    {
+      "query": "oregon state basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T04:40:00Z",
+      "related_news_urls": [
+        "https://www.oregonlive.com/beavers/2026/11/jenna-villas-career-night-leads-oregon-state-womens-basketball-past-eastern-washington.html",
+        "https://osubeavers.com/news/2026/11/8/womens-basketball-three-point-barrage-keys-home-win",
+        "https://goeags.com/news/2026/11/8/womens-basketball-eagles-fall-to-beavers-on-the-road2.aspx"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQODI-_FoCKtzw2U4dZtc5QgWhqummbQF5UJ5jVRJMJg4U6HevRKfMZjA-BKVM",
+      "image_credit": "OregonLive.com",
+      "news": [
+        {
+          "url": "https://www.oregonlive.com/beavers/2026/11/jenna-villas-career-night-leads-oregon-state-womens-basketball-past-eastern-washington.html",
+          "title": "Villa’s career night leads OSU women’s basketball past Eastern Washington",
+          "publisher": "OregonLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQODI-_FoCKtzw2U4dZtc5QgWhqummbQF5UJ5jVRJMJg4U6HevRKfMZjA-BKVM"
+        },
+        {
+          "url": "https://osubeavers.com/news/2026/11/8/womens-basketball-three-point-barrage-keys-home-win",
+          "title": "Three-Point Barrage Keys Home Win",
+          "publisher": "Oregon State University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTid7dgoBPANyrhhzomGUM02MshJooYjaOT_OH2Ydg8mojsBzlNSnmGe054Xxs"
+        },
+        {
+          "url": "https://goeags.com/news/2026/11/8/womens-basketball-eagles-fall-to-beavers-on-the-road2.aspx",
+          "title": "Eagles Fall to Beavers on the Road",
+          "publisher": "Eastern Washington University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoHpOS_RvOFC5_6oQaYAuw06yckBVmNf4Vmpb4ETwWo1_czIWRcq-CL9jg-wg"
+        }
+      ]
+    },
+    {
+      "query": "portland vs hawaii prediction",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T04:40:00Z",
+      "related_news_urls": [
+        "https://www.sportsgambler.com/betting-tips/basketball/portland-pilots-vs-hawaii-rainbow-warriors-prediction-odds-2026-11-09/",
+        "https://www.dunkelindex.com/news/hawaii-portland-ncaa-basketball-dunkel-predictions-11-10-2026",
+        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401930195"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-hYvvU8Fdyaub-QnNAgEZZ9H540kcmu5JWauguvOqcRhcDKqJwPmT09FP62Q",
+      "image_credit": "Sportsgambler",
+      "news": [
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/portland-pilots-vs-hawaii-rainbow-warriors-prediction-odds-2026-11-09/",
+          "title": "Portland vs Hawaii Prediction, Picks & Odds | 09 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-hYvvU8Fdyaub-QnNAgEZZ9H540kcmu5JWauguvOqcRhcDKqJwPmT09FP62Q"
+        },
+        {
+          "url": "https://www.dunkelindex.com/news/hawaii-portland-ncaa-basketball-dunkel-predictions-11-10-2026",
+          "title": "Hawaii vs. Portland Dunkel Predictions & Vegas Odds - Nov. 10",
+          "publisher": "The Dunkel Index",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRd20CTjHVKYEWzanlvCR9z-A7XnYzJUHRf70VSVhZWFyqz86pN5tSr71YGM8Y"
+        },
+        {
+          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401930195",
+          "title": "Portland 130-56 Bethesda (Nov 8, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS118o2S-XN_Uhv2vM45BFLRbg-_HoMVZuzg6Uh8ZtMWp5T5SGQlMK1XKmpWN4"
+        }
+      ]
+    },
+    {
+      "query": "tommy hilfiger",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T04:40:00Z",
+      "related_news_urls": [
+        "https://www.instyle.com/mariah-carey-looks-unrecognizable-punk-makeup-halloween-costume-12206370",
+        "https://wwd.com/pop-culture/culture-news/gallery/gucci-holiday-campaign-2026-photos-1239395795/",
+        "https://www.today.com/popculture/mariah-carey-its-time-video-2026-rcna606896"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjubDfKhtPQdBJ4OnDkgVsmsYQ3SY2eQuM9TU57faCncNN4x1MXHI3E20Znhk",
+      "image_credit": "InStyle",
+      "news": [
+        {
+          "url": "https://www.instyle.com/mariah-carey-looks-unrecognizable-punk-makeup-halloween-costume-12206370",
+          "title": "Mariah Carey Looks Unrecognizable in Sequin Punk Makeup for Halloween",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjubDfKhtPQdBJ4OnDkgVsmsYQ3SY2eQuM9TU57faCncNN4x1MXHI3E20Znhk"
+        },
+        {
+          "url": "https://wwd.com/pop-culture/culture-news/gallery/gucci-holiday-campaign-2026-photos-1239395795/",
+          "title": "Gucci’s 2026 Holiday Campaign, Photos",
+          "publisher": "WWD",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXj_EGN4fZ26KVOi86YIZInwGh96wdjGVwC2qgtdrfXUR5wDu1WoVDuJHYWrk"
+        },
+        {
+          "url": "https://www.today.com/popculture/mariah-carey-its-time-video-2026-rcna606896",
+          "title": "As Halloween Ends, Mariah Carey, Queen of Christmas, Officially Declares ‘It’s Time’",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQstOOIq__4hUHrCX_snrQCKcL9UoEK5_hi0UqXEsz1l2vSs92-ap6OZJls0Kc"
+        }
+      ]
+    },
+    {
+      "query": "switch 2 update",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T04:40:00Z",
+      "related_news_urls": [
+        "https://www.nintendo.com/us/whatsnew/coming-soon-gift-digital-games-to-family-group-members/",
+        "https://shattered.io/switch-2-system-update-tracker-python-12-steps-2026/",
+        "https://mp1st.com/news/new-nintendo-switch-2-system-update-23-5-0-adds-gifting-for-family-accounts"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDmQkJYjB6bju3zo9IG5_KYlu4FMCXE2awoA_GFuV4f3krPIZTgkr2HrQVf9E",
+      "image_credit": "Nintendo",
+      "news": [
+        {
+          "url": "https://www.nintendo.com/us/whatsnew/coming-soon-gift-digital-games-to-family-group-members/",
+          "title": "Coming soon: Gift digital games to family group members",
+          "publisher": "Nintendo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDmQkJYjB6bju3zo9IG5_KYlu4FMCXE2awoA_GFuV4f3krPIZTgkr2HrQVf9E"
+        },
+        {
+          "url": "https://shattered.io/switch-2-system-update-tracker-python-12-steps-2026/",
+          "title": "Switch 2 System Update Tracker: 12 Steps, 60 Min [2026]",
+          "publisher": "shattered.io",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDKoa4L6ioZLQfQMvVR2rFouk1des07ulEi5hsBTfys3ivvXdYRARDHC4zFPw"
+        },
+        {
+          "url": "https://mp1st.com/news/new-nintendo-switch-2-system-update-23-5-0-adds-gifting-for-family-accounts",
+          "title": "New Nintendo Switch 2 System Update 23.5.0 Adds Gifting for Family Accounts",
+          "publisher": "MP1st",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3LbT19mWjBGg1asKNaH4l3RjIaptHwYcm3-_i622IYhuMI4ia8CSCGBMjO5c"
+        }
+      ]
+    },
+    {
+      "query": "nfl standings",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-10T04:30:00Z",
+      "related_news_urls": [
+        "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-monday-nov-9",
+        "https://www.espn.com/nfl/story/_/id/50435734/bills-vikings-josh-allen-carson-wentz-mnf",
+        "https://www.nytimes.com/athletic/7769236/2026/11/09/bills-vikings-nfl-monday-night-football-score-result-takeaways/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6v-iv6QUTx1ICdMYzw1ULFOTWyhKWRWRvhwTTvPBbIBZXdKvBkyfcHn3g13s",
+      "image_credit": "NFL.com",
+      "news": [
+        {
+          "url": "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-monday-nov-9",
+          "title": "NFL news roundup: J.J. McCarthy expected to play Week 10; Justin Herbert avoids finger fracture",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6v-iv6QUTx1ICdMYzw1ULFOTWyhKWRWRvhwTTvPBbIBZXdKvBkyfcHn3g13s"
+        },
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50435734/bills-vikings-josh-allen-carson-wentz-mnf",
+          "title": "Josh Allen leads Bills to win over tough Vikings' defense",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS36ovdqNhL621N65mF-12EPHKh3GTEE9F_xGqMi_sOUTB9wZt0mFCpHujjy7M"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7769236/2026/11/09/bills-vikings-nfl-monday-night-football-score-result-takeaways/",
+          "title": "Bills shut down Carson Wentz, Vikings in win. Where does Minnesota turn at QB?",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzRajf7EvxS6uwfywTbw_GpZn3egPgRM9R_xDnXiuTKHiIYU9GmMP5y1XQSwE"
+        }
+      ]
+    },
+    {
+      "query": "afc standings",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-10T04:30:00Z",
+      "related_news_urls": [
+        "https://bleacherreport.com/articles/25530814-nfl-playoff-bracket-picture-2026-27-and-afc-nfc-standings-after-week-9-snf",
+        "https://www.si.com/nfl/2026-nfl-playoff-picture-week-9-jordan-love-keeps-packers-alive-in-nfc-wild-card-race",
+        "https://www.cbssports.com/nfl/news/predicting-the-full-14-team-nfl-playoff-bracket-week-9-bears/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcjAngM5bSKnDHeScWeLHHBybXR0zhAzvrHIRDYoY0O9fV8vrZqWzgIkxIO2Y",
+      "image_credit": "Bleacher Report",
+      "news": [
+        {
+          "url": "https://bleacherreport.com/articles/25530814-nfl-playoff-bracket-picture-2026-27-and-afc-nfc-standings-after-week-9-snf",
+          "title": "NFL Playoff Bracket Picture 2026-27 and AFC, NFC Standings After Week 9 SNF",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcjAngM5bSKnDHeScWeLHHBybXR0zhAzvrHIRDYoY0O9fV8vrZqWzgIkxIO2Y"
+        },
+        {
+          "url": "https://www.si.com/nfl/2026-nfl-playoff-picture-week-9-jordan-love-keeps-packers-alive-in-nfc-wild-card-race",
+          "title": "2026 NFL Playoff Picture, Week 9: Buccaneers Squander NFC South Lead With Tight Loss to Bears",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4dOOha0xfHq4RfoIw96gQx2SJWBeQfc2tUx-NRTDMtjLAdGuNXdfQTxhCIOw"
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/news/predicting-the-full-14-team-nfl-playoff-bracket-week-9-bears/",
+          "title": "Predicting the full 14-team NFL playoff bracket entering Week 9: Bears make Super Bowl run",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnLuJyGE-4fvkpkhhFpY-KsXN2Bt_GwESwcn8jwJiK_oJLd0rhId20iDjdsJ0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnQby2WrQO8dIO4WMHkMWpqAKds8YJJNz8envxOvrRaMX4Mj6gqqxPgyAmCeQ"
         }
       ]
     },
     {
-      "query": "jeffrey epstein",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T03:50:00Z",
+      "query": "bears standings",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-10T04:30:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/news/articles/cm86z6w59gggo",
-        "https://www.bbc.co.uk/news/videos/cmqxnxgwqrqlo",
-        "https://ua.news/en/dovkolo-svitu/model-zaiavila-shcho-prezident-mc2-vidpraviv-yiyi-do-epshteina-bbc-news"
+        "https://www.espn.com/nfl/story/_/id/50430415/caleb-williams-4-interceptions-bears-win-buccaneers",
+        "https://www.chicagobears.com/news/5-things-we-learned-from-bears-coach-ben-johnson-in-week-9-win",
+        "https://www.chicagotribune.com/2026/11/09/chicago-bears-caleb-williams-fixes/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhj5tkyCuZxGR8NdtVWgtJAuF6JkxtyhbtIdDk5j7zI0b4I70bZlLVSs-swfs",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/cm86z6w59gggo",
-          "title": "Epstein associate who still runs model agency 'put me in danger' says abuse survivor",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhj5tkyCuZxGR8NdtVWgtJAuF6JkxtyhbtIdDk5j7zI0b4I70bZlLVSs-swfs"
-        },
-        {
-          "url": "https://www.bbc.co.uk/news/videos/cmqxnxgwqrqlo",
-          "title": "How model agencies helped Epstein access victims",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeyzW2YP7smHiRyHVX9vGLDui6z8PAmq7hVCWDZ4BRoi9zx48ZusrWJcTWyOk"
-        },
-        {
-          "url": "https://ua.news/en/dovkolo-svitu/model-zaiavila-shcho-prezident-mc2-vidpraviv-yiyi-do-epshteina-bbc-news",
-          "title": "Model says MC2 president sent her to Epstein — BBC News",
-          "publisher": "UA.NEWS",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTprtFj6PtCUhjL9SO-aSMY52a4okToB4iZCiv98ebsXUeX7y2unNMsZ6_lpX4"
-        }
-      ]
-    },
-    {
-      "query": "cooper flagg",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-10T03:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50437538/cooper-flagg-peanut-butter-jelly",
-        "https://roundtable.io/sports/nba/mavericks/news/whys-cooper-flagg-eating-a-sandwich-during-dallas-mavs-game",
-        "https://sports.yahoo.com/articles/mavericks-star-cooper-flagg-gets-212251307.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSO8yXNlJ9Z2Vc4mec2XBFYpOY3Fd8ry_0_oto7KjCkICEU12T8-TNGKcrXZB0",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVoMlpKKBIOJk0OFQ829Ed0S1jCXT9-GCGU-gvuMGT46aSe7pUqPucDdOkU3c",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nba/story/_/id/50437538/cooper-flagg-peanut-butter-jelly",
-          "title": "Cooper Flagg breaks down in-game peanut butter and jelly sandwich",
+          "url": "https://www.espn.com/nfl/story/_/id/50430415/caleb-williams-4-interceptions-bears-win-buccaneers",
+          "title": "Caleb Williams unfazed by 4 interceptions as Bears pull out win vs. Bucs",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSO8yXNlJ9Z2Vc4mec2XBFYpOY3Fd8ry_0_oto7KjCkICEU12T8-TNGKcrXZB0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVoMlpKKBIOJk0OFQ829Ed0S1jCXT9-GCGU-gvuMGT46aSe7pUqPucDdOkU3c"
         },
         {
-          "url": "https://roundtable.io/sports/nba/mavericks/news/whys-cooper-flagg-eating-a-sandwich-during-dallas-mavs-game",
-          "title": "Why's Cooper Flagg Eating A Sandwich During Dallas Mavs Game?",
-          "publisher": "roundtable.io",
+          "url": "https://www.chicagobears.com/news/5-things-we-learned-from-bears-coach-ben-johnson-in-week-9-win",
+          "title": "5 things we learned from Bears coach Ben Johnson in Week 9 win",
+          "publisher": "Chicago Bears",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCXqlo9Hlv1pm74_S1BZthvDWKnawlIV8bsa1TKtzGF0Kh7x89Ki7ztg9Scpg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSE1tfMiEPpKBPZIewrDkppkfXKNI3dtSJLSPTURqDD9IrJ_a8R4mJG5KzLIqU"
         },
         {
-          "url": "https://sports.yahoo.com/articles/mavericks-star-cooper-flagg-gets-212251307.html",
-          "title": "Mavericks Star Cooper Flagg Gets Honest About Viral Eating And Weight Gain",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.chicagotribune.com/2026/11/09/chicago-bears-caleb-williams-fixes/",
+          "title": "3 things we learned from Chicago Bears on Monday: With some fixes, ‘we can really, really make a run at it’",
+          "publisher": "Chicago Tribune",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ6KD_K_2iXlk6MAQnCta8IqfT9a8aPfUv2_s7vdZsEwwiJn7aTgBAaEJP6cU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrH8_Yjd3ytv3wsUkwqt9Wd80lJGi_MBnu8LgE8jMPHBN6ffctPS9iEoR3Iw0"
         }
       ]
     },
     {
-      "query": "new orleans pelicans vs golden state warriors match player stats",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T03:40:00Z",
+      "query": "jeremiah fears",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T04:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/warriors-great-news-pelicans-game-195706096.html",
-        "https://www.usatoday.com/sports/nba/event/2026/3018479/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NBA&tile=2",
-        "https://www.nytimes.com/athletic/7769305/2026/11/09/pelicans-vs-warriors-stream-how-to-watch-nov-9/"
+        "https://sports.yahoo.com/fantasy/article/the-playlist-fantasy-basketball-waiver-wire-adds-and-schedule-breakdown-for-week-4-of-2026-27-155149078.html",
+        "https://www.nba.com/news/nba-fantasy-high-score-perfect-lineup-from-week-3",
+        "https://www.espn.com/fantasy/basketball/story/_/id/50383545/fantasy-basketball-rookie-watch-nba-2026-2027"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcWHLJnlEt6jJWKtHC5N1SBRCefq_2bYrVdpgFlBFZ9cuskr8jD-gdwlXYV1Y",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrLQb0buztgUFIDSfwakES0TdRiNN8zYCN-bCcy0bRXIraz2EU1qgIUrxSgt0",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/warriors-great-news-pelicans-game-195706096.html",
-          "title": "Warriors Get Great News Before Pelicans Game Amid Record-Setting Run",
+          "url": "https://sports.yahoo.com/fantasy/article/the-playlist-fantasy-basketball-waiver-wire-adds-and-schedule-breakdown-for-week-4-of-2026-27-155149078.html",
+          "title": "The Playlist: Fantasy basketball waiver-wire adds and schedule breakdown for Week 4 of 2026-27",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcWHLJnlEt6jJWKtHC5N1SBRCefq_2bYrVdpgFlBFZ9cuskr8jD-gdwlXYV1Y"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrLQb0buztgUFIDSfwakES0TdRiNN8zYCN-bCcy0bRXIraz2EU1qgIUrxSgt0"
         },
         {
-          "url": "https://www.usatoday.com/sports/nba/event/2026/3018479/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NBA&tile=2",
-          "title": "New Orleans Pelicans at Golden State Warriors - NBA Game Summary - Nov 09, 2026",
-          "publisher": "USA Today",
+          "url": "https://www.nba.com/news/nba-fantasy-high-score-perfect-lineup-from-week-3",
+          "title": "NBA Fantasy: High Score perfect lineup from Week 3",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-i1P2UBS5xN9qdK_t3RraJUnnbw-3vi6cRFbk9JAHp_lqhAKkhPIm4taVeWA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtvNiGnH3sPu_zWGVQymjbYn6xC4r9DqQvxcD1M6cqFm-tiyh9Egk92zA-BuY"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7769305/2026/11/09/pelicans-vs-warriors-stream-how-to-watch-nov-9/",
-          "title": "How to watch Pelicans vs. Warriors: TV channel and streaming options for November 9",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9OuaHvKIHMN3hnLdphDkGdrrJ5xhzv8MQxFBko3jeBynlO_F47U8DccPW6vg"
-        }
-      ]
-    },
-    {
-      "query": "daisy ridley",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T03:40:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/movies/articles/quest-next-obsession-movies-jeremy-034154299.html",
-        "https://www.hollywoodreporter.com/lists/afm-hotlist-2026-josh-brolin-daisy-ridley-james-mcavoy/",
-        "https://deadline.com/2026/11/obsession-afm-2026-preview-hot-list-1237217117/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYF_oHoJoxs7ExuAtbxmcDwWTG1q8WocBYjbuixs5R4jW9YocbekLORAlMZZ0",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/quest-next-obsession-movies-jeremy-034154299.html",
-          "title": "Quest for Next Obsession Is on With Movies From Jeremy Renner, Idris Elba & More",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYF_oHoJoxs7ExuAtbxmcDwWTG1q8WocBYjbuixs5R4jW9YocbekLORAlMZZ0"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/lists/afm-hotlist-2026-josh-brolin-daisy-ridley-james-mcavoy/",
-          "title": "Julianne Moore, Josh Brolin and Daisy Ridley Lead the Buzziest Titles at AFM",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpM4EYbInDdMOoDwm0eV_vy1BUaj3ktvRBXRMzRKEo6oRGOaqevjE9XUk35E"
-        },
-        {
-          "url": "https://deadline.com/2026/11/obsession-afm-2026-preview-hot-list-1237217117/",
-          "title": "'Obsession' Hunt Continues: AFM 2026 Market Preview & Analysis",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpYuRSERnletw56Q2WzBRP0DrFhIVg_EYVW7z6EEDdOdj7W3bLxSGxrOzceQc"
-        }
-      ]
-    },
-    {
-      "query": "jamal murray",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T03:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/recap/_/gameId/401909957",
-        "https://www.denverpost.com/2026/11/09/nuggets-rockets-score-jamal-murray-kevin-durant/",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/kevin-durant-posts-23-12-8-stat-line-vs-denver"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJpTiaR8a5NMShzX7xMEs9J1phvFRef8jupc2u_as-5cXNMbiGrytTeKz4a4E",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/recap/_/gameId/401909957",
-          "title": "Rockets 110-100 Nuggets (Nov 9, 2026) Game Recap",
+          "url": "https://www.espn.com/fantasy/basketball/story/_/id/50383545/fantasy-basketball-rookie-watch-nba-2026-2027",
+          "title": "Fantasy basketball rookie watch: Who's standing out and who's worth monitoring",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJpTiaR8a5NMShzX7xMEs9J1phvFRef8jupc2u_as-5cXNMbiGrytTeKz4a4E"
-        },
-        {
-          "url": "https://www.denverpost.com/2026/11/09/nuggets-rockets-score-jamal-murray-kevin-durant/",
-          "title": "Nuggets can’t find enough offense outside Jamal Murray in loss to Rockets",
-          "publisher": "The Denver Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeI1A7YDOrF4nmr9Nl34kS13RTKXteXH0yJv3IbGDM7wVMNru1IBWjqPFyjEU"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/kevin-durant-posts-23-12-8-stat-line-vs-denver",
-          "title": "Kevin Durant posts 23/12/8 stat line vs. Denver",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEibuKpkNSfprW4V6Zhbo4IlV62HlFlJ9UcBiVlchRsTujhyqZsjo-ucuV9Sw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdyBl6tD0Z8LNsbnSjYRFTkuYdHvlvkDwCj0cFpdSEl-vbUYXGIgT_TLi1sn4"
         }
       ]
     }
