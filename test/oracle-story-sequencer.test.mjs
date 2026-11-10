@@ -67,3 +67,29 @@ test('recommendations require source context and never classify an adult scene a
  assert.equal(chooseContextualStories({title:'Syntax error',category:'Developer tools'},candidates).some(x=>x.id==='code'),true);
  assert.deepEqual(chooseContextualStories({title:'Cigar scene',category:'21+ movie'},candidates),[]);
 });
+
+
+test('integration retains swipe gestures, review gate and the existing original movie player',()=>{
+ const deck=readFileSync(new URL('../oracle-card-deck.js',import.meta.url),'utf8');
+ const home=readFileSync(new URL('../index.html',import.meta.url),'utf8');
+ const shop=readFileSync(new URL('../shop-phi-switchboard.mjs',import.meta.url),'utf8');
+ const restrictedCard=readFileSync(new URL('../restricted-ad-card.mjs',import.meta.url),'utf8');
+ assert.match(home,/oracle-age-preference\.js/);
+ assert.match(home,/shopphi-story-player\.css/);
+ assert.match(deck,/agePolicy\?\.noteSkipped/);
+ assert.match(deck,/pointerup/);
+ assert.match(deck,/oracle:card-deactivated/);
+ assert.match(shop,/createShopPhiStoryPlayer/);
+ assert.match(shop,/storyPlayer\.setCards/);
+ assert.match(restrictedCard,/quantaphi:age-preference/);
+ assert.doesNotMatch(shop,/document\.querySelector\('video'\)\.pause/);
+});
+test('medicine and tobacco context cannot request ordinary sponsored companions',async()=>{
+ const {contextFor,normalizeCandidate}=await import('../shop-phi-switchboard.mjs');
+ assert.equal(contextFor({title:'Up in Smoke — cigar and cannabis scene',category:'Movies'}).sensitive,true);
+ assert.equal(contextFor({title:'Medical remedy',category:'Health'}).sensitive,true);
+ assert.equal(normalizeCandidate({id:'smoke',title:'Cigar bundles',category:'Tobacco',type:'sponsored',url:'https://example.org/cigar'}),null);
+ assert.equal(normalizeCandidate({id:'basic',title:'Carrot seeds',category:'Gardening',type:'published-card',status:'approved',url:'https://example.org/carrot',images:['https://example.org/a.jpg','https://example.org/b.jpg']}).images.length,2);
+ assert.equal(contextFor({title:'Miami Vice vacation',category:'Movies'}).id,'travel');
+ assert.equal(contextFor({title:'Debug syntax error',category:'Developer'}).id,'developer');
+});
