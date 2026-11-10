@@ -3,12 +3,222 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T14:01:38.234941Z",
+  "checked_at": "2026-11-10T14:31:33.444042Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "michael sanft attorney",
+      "query": "cloud gaming",
       "approx_searches": "200+",
+      "published_at": "2026-11-10T14:10:00Z",
+      "related_news_urls": [
+        "https://www.vgchartz.com/article/469593/shawn-layden-innovation-needs-to-come-not-from-making-ps6-for-1200-its-to-make-another-ps5-for-300/",
+        "https://wccftech.com/playstation-6-more-teraflops-mistake-playstation-portal-cloud-gaming-solution/",
+        "https://www.indy100.com/gaming/ps6-live-release-date-price-updates"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc5kNGnn78WCDsNqHPKhH4xN2xE_7AXkOW2DV7LClNSbucvq2V7QmWAsH8hw",
+      "image_credit": "VGChartz",
+      "news": [
+        {
+          "url": "https://www.vgchartz.com/article/469593/shawn-layden-innovation-needs-to-come-not-from-making-ps6-for-1200-its-to-make-another-ps5-for-300/",
+          "title": "Shawn Layden: 'Innovation Needs to Come Not From Making PS6 for $1,200, It's to Make Another PS5 for $300'",
+          "publisher": "VGChartz",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc5kNGnn78WCDsNqHPKhH4xN2xE_7AXkOW2DV7LClNSbucvq2V7QmWAsH8hw"
+        },
+        {
+          "url": "https://wccftech.com/playstation-6-more-teraflops-mistake-playstation-portal-cloud-gaming-solution/",
+          "title": "A PlayStation 6 At $1000+ With Just More “Teraflops” Could Be A Mistake, Yet The PlayStation Portal and Cloud Gaming Present The Solution",
+          "publisher": "Wccftech",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxEhYA8YFhPGcu_7TRh9PqpTaeR19J2-iXB6r-rbBQFL0xxmzUcjGj2qVy1Hk"
+        },
+        {
+          "url": "https://www.indy100.com/gaming/ps6-live-release-date-price-updates",
+          "title": "PS6 LIVE: Cheaper next-gen console should be priority says former PlayStation boss",
+          "publisher": "Indy100",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3K4yPezlv-RO7yd34k8pn1ZKz8qkS8Ji0w2I6g5CkofTH7It_MJzpT_I5nHc"
+        }
+      ]
+    },
+    {
+      "query": "big walk game ai",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T14:00:00Z",
+      "related_news_urls": [
+        "https://aftermath.site/big-walk-ai-igf-jurors-controversy/",
+        "https://www.gamesindustry.biz/house-house-clarifies-use-of-ai-tools-in-big-walks-final-stage-of-development",
+        "https://www.videogameschronicle.com/news/big-walk-studio-says-it-used-ai-sparingly-in-response-to-indie-award-jury-statement-against-its-use/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9976bLrVZZ5AMVCcuDS_I1DzbJ92atEFRALbFWBspC9MYfyIfbzwQ-Y3eoGI",
+      "image_credit": "Aftermath",
+      "news": [
+        {
+          "url": "https://aftermath.site/big-walk-ai-igf-jurors-controversy/",
+          "title": "Big Walk Used AI In 'The Final Stretch' Of Development, Kicking Off Intense Awards Debate",
+          "publisher": "Aftermath",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9976bLrVZZ5AMVCcuDS_I1DzbJ92atEFRALbFWBspC9MYfyIfbzwQ-Y3eoGI"
+        },
+        {
+          "url": "https://www.gamesindustry.biz/house-house-clarifies-use-of-ai-tools-in-big-walks-final-stage-of-development",
+          "title": "House House clarifies use of AI tools in Big Walk's \"final stage of development\"",
+          "publisher": "GamesIndustry.biz",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMisnedsI-MoSXj0CT_O3T3CblHtCT-HC2kcQeMj_MxK9ypgN8ERGWQrPYX1c"
+        },
+        {
+          "url": "https://www.videogameschronicle.com/news/big-walk-studio-says-it-used-ai-sparingly-in-response-to-indie-award-jury-statement-against-its-use/",
+          "title": "Big Walk studio says it used AI ‘sparingly’ in response to indie award jury statement against its use",
+          "publisher": "Video Games Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDRULpWolZ3R_12aKls2QuvzO2t2EN31MUVNSbjnFDugOaIOBn_25cydhXTHw"
+        }
+      ]
+    },
+    {
+      "query": "jordan elliott",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T13:50:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-dt-jordan-elliott-to-work-out-for-bears",
+        "https://sports.yahoo.com/articles/bears-working-jeffery-simmons-former-141026483.html",
+        "https://www.chicitysports.com/chicago-bears-interested-signing-jeffery-simmons-former-teammate/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRw7Y6P212sul0eeqgJq2mBHlc_K-nMhn87T7YKiAUsiGYy92_MammTsAwxqjs",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-dt-jordan-elliott-to-work-out-for-bears",
+          "title": "Report: DT Jordan Elliott to work out for Bears",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRw7Y6P212sul0eeqgJq2mBHlc_K-nMhn87T7YKiAUsiGYy92_MammTsAwxqjs"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/bears-working-jeffery-simmons-former-141026483.html",
+          "title": "Bears working out Jeffery Simmons' former Titans teammate",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPXVIIQLUU5w4cxY2wAZgFG_Od5vga1GmgpGEY4na4wUTqhFAIS0kMlzSutkw"
+        },
+        {
+          "url": "https://www.chicitysports.com/chicago-bears-interested-signing-jeffery-simmons-former-teammate/",
+          "title": "Chicago Bears interested signing Jeffery Simmons’ former teammate",
+          "publisher": "ChiCitySports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKegHJx0mzBUXQxPy90OMfbPDVwGGHV7JAX1vTwRlWTJihZW54lr-auXk0LxI"
+        }
+      ]
+    },
+    {
+      "query": "lauren sanchez",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T13:50:00Z",
+      "related_news_urls": [
+        "https://www.businessinsider.com/jeff-bezos-lauren-sanchez-bezos-best-worst-outfits-2026-11",
+        "https://africa.businessinsider.com/entertainment/the-best-and-worst-fashion-moments-jeff-bezos-and-lauren-sanchez-bezos-have-had-this/v9dvrte",
+        "https://timesofindia.indiatimes.com/technology/tech-news/in-2024-jeff-bezos-paid-87-million-for-a-third-mansion-on-miamis-billionaire-bunker-he-and-lauren-snchez-bezos-transformed-the-temporary-home-with-exotic-gardens-a-private-gym-and-a-pickleball-court/articleshow/135699583.cms"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQyWp_aX_h9bVqjbkgkhcWngSZTFBJiqWl-Lycd0fpALBGph239fs283a4OtGQ",
+      "image_credit": "Business Insider",
+      "news": [
+        {
+          "url": "https://www.businessinsider.com/jeff-bezos-lauren-sanchez-bezos-best-worst-outfits-2026-11",
+          "title": "The best and worst fashion moments Jeff Bezos and Lauren Sánchez Bezos have had this year",
+          "publisher": "Business Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQyWp_aX_h9bVqjbkgkhcWngSZTFBJiqWl-Lycd0fpALBGph239fs283a4OtGQ"
+        },
+        {
+          "url": "https://africa.businessinsider.com/entertainment/the-best-and-worst-fashion-moments-jeff-bezos-and-lauren-sanchez-bezos-have-had-this/v9dvrte",
+          "title": "The best and worst fashion moments Jeff Bezos and Lauren Sánchez Bezos have had this year",
+          "publisher": "Business Insider Africa",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkMV2UsrL0oxzhCfzC9un0AWPy3BZNu0ccJRXEHDO8F3duW7kjdxpau7f6AQg"
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/in-2024-jeff-bezos-paid-87-million-for-a-third-mansion-on-miamis-billionaire-bunker-he-and-lauren-snchez-bezos-transformed-the-temporary-home-with-exotic-gardens-a-private-gym-and-a-pickleball-court/articleshow/135699583.cms",
+          "title": "In 2024, Jeff Bezos paid $87 million for a third mansion on Miami's Billionaire Bunker; he and Lauren Sán",
+          "publisher": "The Times of India",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyJI25rRLHJPMM6y-RC_kK51bjYKasGpg2_kSAcngUlX9uT53WnKpAOJ4TlCI"
+        }
+      ]
+    },
+    {
+      "query": "inflation report today",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T13:50:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/09/stock-market-today-live-updates.html",
+        "https://www.investors.com/news/cpi-inflation-oct-federal-reserve-waller-sp-500/",
+        "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQQsAhLIbfuG2srB2fo5DI5VJSS3wTVnzNhrDtCubgTaaCGSnaICVFD7F5k9I",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/09/stock-market-today-live-updates.html",
+          "title": "S&P 500 futures drop after higher-than-expected CPI reignites inflation concern: Live updates",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQQsAhLIbfuG2srB2fo5DI5VJSS3wTVnzNhrDtCubgTaaCGSnaICVFD7F5k9I"
+        },
+        {
+          "url": "https://www.investors.com/news/cpi-inflation-oct-federal-reserve-waller-sp-500/",
+          "title": "CPI Inflation Stays Hot, Sealing Fed Rate Hike After Hawkish Waller; S&P 500 Falls (Live Coverage)",
+          "publisher": "Investor's Business Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcoo0RkupIVRei04z6AtET5m_w-WIvDoM_mJmMerZN_T5qxPe4BA5MoyjRzd4"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html",
+          "title": "Stock market today: S&P 500 and Nasdaq futures sink, Dow wavers after CPI data, new Anthropic IPO filing",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSl3GeXPUjKTUyP4bx6soicbiRKoi-JByFNT4Y1E2bchxuPSrH8oR8YiMK2Qb0"
+        }
+      ]
+    },
+    {
+      "query": "country music singer dies",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-10T13:40:00Z",
+      "related_news_urls": [
+        "https://www.pennlive.com/entertainment/2026/11/rising-country-music-singer-dies-in-wreck-at-22-the-world-lost-an-amazing-talent.html",
+        "https://www.lehighvalleylive.com/entertainment/2026/11/father-of-young-country-music-singer-killed-in-crash-makes-plea-in-memory-of-my-son.html",
+        "https://americansongwriter.com/rising-country-singer-dead-at-22-after-tragic-car-crash-just-hours-after-his-final-performance/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUa3pdNhr2syQK-9GUnteQgm-d1apnZ47KZFDRWd9BMTj7g2SfgDqa8B8C9d0",
+      "image_credit": "PennLive.com",
+      "news": [
+        {
+          "url": "https://www.pennlive.com/entertainment/2026/11/rising-country-music-singer-dies-in-wreck-at-22-the-world-lost-an-amazing-talent.html",
+          "title": "Rising country music singer dies in wreck at 22: ‘The world lost an amazing talent’",
+          "publisher": "PennLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUa3pdNhr2syQK-9GUnteQgm-d1apnZ47KZFDRWd9BMTj7g2SfgDqa8B8C9d0"
+        },
+        {
+          "url": "https://www.lehighvalleylive.com/entertainment/2026/11/father-of-young-country-music-singer-killed-in-crash-makes-plea-in-memory-of-my-son.html",
+          "title": "Father of young country music singer killed in crash makes plea: ‘In memory of my son’",
+          "publisher": "Lehighvalleylive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUUZ-ovfJxyxtJfqv87JOXKVz7ORzPNd8GOMToxqrs456wCQptKzAwNzuIoLU"
+        },
+        {
+          "url": "https://americansongwriter.com/rising-country-singer-dead-at-22-after-tragic-car-crash-just-hours-after-his-final-performance/",
+          "title": "Rising Country Singer Dead at 22 After Tragic Car Crash, Just Hours After His Final Performance",
+          "publisher": "American Songwriter",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRE7DqwXsGeik5B2v0dpf2z9e5yaq9nB2gPBOoarYdr-aLNoFUCBALrPz4U8CE"
+        }
+      ]
+    },
+    {
+      "query": "michael sanft attorney",
+      "approx_searches": "500+",
       "published_at": "2026-11-10T13:40:00Z",
       "related_news_urls": [
         "https://www.fox5vegas.com/2026/11/06/attorney-who-represented-keffe-d-tupac-murder-trial-reportedly-dies/",
@@ -46,39 +256,39 @@
       "approx_searches": "2000+",
       "published_at": "2026-11-10T13:30:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/forrest-gump-star-gary-sinise-130000584.html",
-        "https://people.com/gary-sinise-what-it-would-take-for-him-to-return-to-acting-after-6-years-exclusive-12237969",
-        "https://www.simivalleyacorn.com/articles/finding-grace-in-the-storm/"
+        "https://www.forbes.com/sites/timlammers/2026/11/07/documentary-about-gary-sinise-helping-veterans-lands-distribution-and-debuts-on-digital-this-week/",
+        "https://www.detroitnews.com/press-release/story/198051/freestyle-digital-media-releases-documentary-feature-the-ballad-of-lieutenant-dan/",
+        "https://www.indiewire.com/news/general-news/ballad-of-lieutenant-dan-documentary-gary-sinise-acquired-1235225475/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBBAwoIJZSu3aXFrjo6mNNft2p4kQXV6Sh9DyB8aiuziB8Y0pOCHG2-6VOCIY",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8IBPNXrUHszHYfEro-iTXo9fJpVSzrlQQfp-xU70DWw1Y6BmZq2D9-r0Okg0",
+      "image_credit": "Forbes",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/forrest-gump-star-gary-sinise-130000584.html",
-          "title": "“Forrest Gump” star Gary Sinise details son Mac’s final moments before death at 33: ‘Hard to wrap my head around’",
-          "publisher": "Yahoo",
+          "url": "https://www.forbes.com/sites/timlammers/2026/11/07/documentary-about-gary-sinise-helping-veterans-lands-distribution-and-debuts-on-digital-this-week/",
+          "title": "Gary Sinise Documentary 'The Ballad Of Lieutenant Dan' Arrives On Streaming This Week",
+          "publisher": "Forbes",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBBAwoIJZSu3aXFrjo6mNNft2p4kQXV6Sh9DyB8aiuziB8Y0pOCHG2-6VOCIY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8IBPNXrUHszHYfEro-iTXo9fJpVSzrlQQfp-xU70DWw1Y6BmZq2D9-r0Okg0"
         },
         {
-          "url": "https://people.com/gary-sinise-what-it-would-take-for-him-to-return-to-acting-after-6-years-exclusive-12237969",
-          "title": "Gary Sinise Shares What It Would Take for Him to Return to Acting After 6 Years (Exclusive)",
-          "publisher": "People.com",
+          "url": "https://www.detroitnews.com/press-release/story/198051/freestyle-digital-media-releases-documentary-feature-the-ballad-of-lieutenant-dan/",
+          "title": "FREESTYLE DIGITAL MEDIA RELEASES DOCUMENTARY FEATURE “THE BALLAD OF LIEUTENANT DAN”",
+          "publisher": "The Detroit News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTc8tSUpKu4a02fhzYbBVRxLlmYO5T8zIDXfSBwat7gz0cQ97jHr58kUAYpVT0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiPkXWRC2EkgUDSTDXfe8xPNqoomptgSwWyPvhCWY8kv2qAz5WCn_Nkq_pQYw"
         },
         {
-          "url": "https://www.simivalleyacorn.com/articles/finding-grace-in-the-storm/",
-          "title": "Finding grace in the storm",
-          "publisher": "Simi Valley Acorn",
+          "url": "https://www.indiewire.com/news/general-news/ballad-of-lieutenant-dan-documentary-gary-sinise-acquired-1235225475/",
+          "title": "'The Ballad of Lieutenant Dan' Acquired by Freestyle Digital Media",
+          "publisher": "IndieWire",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3pbZ7cMHpAZwwwx6YVoOgGKuC6tNM7xIJlOzd5DF9mU_zIIE2VaZX3_aWP5g"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0RQdjak7JKpXUZRdiodn7KaFmwMVUJr9Ihxk1fQIXA0vmObgqF32f8jGynRQ"
         }
       ]
     },
     {
       "query": "tradingview",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-10T13:30:00Z",
       "related_news_urls": [
         "https://www.globenewswire.com/news-release/2026/11/10/3399291/0/en/yieldmax-etfs-announces-weekly-distributions-for-group-1-etfs.html",
@@ -112,247 +322,37 @@
       ]
     },
     {
-      "query": "gma deals and steals",
-      "approx_searches": "500+",
+      "query": "gary sinise son",
+      "approx_searches": "1000+",
       "published_at": "2026-11-10T13:30:00Z",
       "related_news_urls": [
-        "https://www.goodmorningamerica.com/shop/story/gma-deals-steals-kristin-cavallari-119-137980372",
-        "https://abcnews.com/GMA/Shop/abc-secret-savings-november-savings-special/story?id=137910498",
-        "https://www.yahoo.com/news/videos/abc-secret-savings-spectacular-november-100305060.html"
+        "https://www.today.com/video/gary-sinise-talks-love-loss-and-resilience-in-moving-memoir-273192005824",
+        "https://ew.com/forrest-gump-gary-sinise-son-mac-final-moments-before-death-12238898",
+        "https://people.com/gary-sinise-what-it-would-take-for-him-to-return-to-acting-after-6-years-exclusive-12237969"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdcIOJQ9YsadWbmpOLX1dEworK_EWYrWeEZMqX3YhIwGJrzOtBov10knDMQz4",
-      "image_credit": "Good Morning America",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYl4TwH_ICol-AD0EhJksA8jH3jqohKnV4w4MBagTip-6ublEfv3UxMF6UNjA",
+      "image_credit": "TODAY.com",
       "news": [
         {
-          "url": "https://www.goodmorningamerica.com/shop/story/gma-deals-steals-kristin-cavallari-119-137980372",
-          "title": "'GMA' Deals & Steals with Kristin Cavallari 11/9",
-          "publisher": "Good Morning America",
+          "url": "https://www.today.com/video/gary-sinise-talks-love-loss-and-resilience-in-moving-memoir-273192005824",
+          "title": "Gary Sinise Talks Love, Loss and Resilience in Moving Memoir",
+          "publisher": "TODAY.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdcIOJQ9YsadWbmpOLX1dEworK_EWYrWeEZMqX3YhIwGJrzOtBov10knDMQz4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYl4TwH_ICol-AD0EhJksA8jH3jqohKnV4w4MBagTip-6ublEfv3UxMF6UNjA"
         },
         {
-          "url": "https://abcnews.com/GMA/Shop/abc-secret-savings-november-savings-special/story?id=137910498",
-          "title": "ABC Secret Savings: November Savings Special",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "url": "https://ew.com/forrest-gump-gary-sinise-son-mac-final-moments-before-death-12238898",
+          "title": "Forrest Gump star Gary Sinise details son Mac’s final moments before death at 33: ‘Hard to wrap my head around’",
+          "publisher": "Entertainment Weekly",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgUmdaVgI6a_03mGa6mJN25N9H4b-z6kictkZNmQCca_GzZKT4HLqBjdRwYQA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8hQI759Fjgo7ZTbVYZa-4e1stQO2HrVMyerNki6undEiYXap4Jz5ttsawZuE"
         },
         {
-          "url": "https://www.yahoo.com/news/videos/abc-secret-savings-spectacular-november-100305060.html",
-          "title": "ABC Secret Savings Spectacular for November",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSws69A0OeuMKFfCY3-oFztbuihHbBoSg90qP9Eqir7AeyxJyzairdEjrVEZDU"
-        }
-      ]
-    },
-    {
-      "query": "pwhl",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T13:30:00Z",
-      "related_news_urls": [
-        "https://www.detroitnews.com/story/sports/other/2026/11/10/pwhl-unveils-nickname-logo-for-detroit-other-expansion-franchises/92700719007/",
-        "https://www.cbsnews.com/detroit/news/pwhl-detroit-clutch-team-name/",
-        "https://www.clickondetroit.com/sports/2026/11/09/pwhl-expansion-teams-get-names-detroit-clutch-san-jose-sea-lions-vegas-vanguards-hamilton-havoc/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSffZO90Ig5YCVgxGDMV_hx1dXrHol55OwBeDAo85DDGEwXdvmjQ7WDqR77dtY",
-      "image_credit": "The Detroit News",
-      "news": [
-        {
-          "url": "https://www.detroitnews.com/story/sports/other/2026/11/10/pwhl-unveils-nickname-logo-for-detroit-other-expansion-franchises/92700719007/",
-          "title": "What will Detroit's PWHL team be called? We finally have an answer",
-          "publisher": "The Detroit News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSffZO90Ig5YCVgxGDMV_hx1dXrHol55OwBeDAo85DDGEwXdvmjQ7WDqR77dtY"
-        },
-        {
-          "url": "https://www.cbsnews.com/detroit/news/pwhl-detroit-clutch-team-name/",
-          "title": "PWHL Detroit adopts Detroit Clutch as team name",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3KjKsMxmzsbCh7f2uhIM9PGpUnU0cfYRBeu9D0goUvx0pdynTMwRPwLKFKdU"
-        },
-        {
-          "url": "https://www.clickondetroit.com/sports/2026/11/09/pwhl-expansion-teams-get-names-detroit-clutch-san-jose-sea-lions-vegas-vanguards-hamilton-havoc/",
-          "title": "PWHL expansion teams get names: Detroit Clutch, San Jose Sea Lions, Vegas Vanguards, Hamilton Havoc",
-          "publisher": "ClickOnDetroit | WDIV Local 4",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQrsZ2unvDLr66PcCj0JHPkNjf5pyfjugslsqid13fWgWlMT-M1L68QK0ErP8"
-        }
-      ]
-    },
-    {
-      "query": "ed gallrein",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T13:30:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-mississippi-us-senate.html",
-        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-senate.html",
-        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-governor.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ2SzE2rixkW2-Ud2QNzlA7_Cspq2EaauvuqNq9JBRz1uscq4oQHC6xpT6ojyE",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-mississippi-us-senate.html",
-          "title": "Mississippi U.S. Senate 2026: Live Midterm Election Results, Hyde-Smith vs. Colom",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ2SzE2rixkW2-Ud2QNzlA7_Cspq2EaauvuqNq9JBRz1uscq4oQHC6xpT6ojyE"
-        },
-        {
-          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-senate.html",
-          "title": "U.S. Senate Election Results",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2AuHGmRxQRkJxccJiL1SwsmhrGlyQFLC0h9bAEY9ze1d-ba1iYaOJCAuCmrE"
-        },
-        {
-          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-governor.html",
-          "title": "U.S. Governor Midterm Elections 2026: Live Results",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5eAN7UbnOaOyZMgN1ApQP_FEPg5u5BREID_8FDO3605Fr9Im__uy1BVzoyp4"
-        }
-      ]
-    },
-    {
-      "query": "jordan fisher",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T13:20:00Z",
-      "related_news_urls": [
-        "https://www.hollywoodreporter.com/lifestyle/arts/jordan-fisher-prince-role-broadway-adaptation-purple-rain-1236751251/",
-        "https://www.broadway.com/buzz/207923/jordan-fisher-to-star-in-princes-purple-rain-on-broadway/",
-        "https://www.yahoo.com/entertainment/tv/articles/broadway-finds-prince-jordan-fisher-133033156.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSacWqojiXhxudsCFAIujZSc4JAzZHUz8Z20MadwuY93ht4ITgUj4ADv-9YVQE",
-      "image_credit": "The Hollywood Reporter",
-      "news": [
-        {
-          "url": "https://www.hollywoodreporter.com/lifestyle/arts/jordan-fisher-prince-role-broadway-adaptation-purple-rain-1236751251/",
-          "title": "Jordan Fisher Takes on Prince’s Role in Broadway Adaptation of ‘Purple Rain’",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSacWqojiXhxudsCFAIujZSc4JAzZHUz8Z20MadwuY93ht4ITgUj4ADv-9YVQE"
-        },
-        {
-          "url": "https://www.broadway.com/buzz/207923/jordan-fisher-to-star-in-princes-purple-rain-on-broadway/",
-          "title": "Jordan Fisher to Star in Prince’s Purple Rain on Broadway",
-          "publisher": "Broadway Shows",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRabfRBIEbHK4mKtm5FKbShCm26vLD6oLpNaqDJZqyodjPjsd_IhoBDgXLzXRE"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/broadway-finds-prince-jordan-fisher-133033156.html",
-          "title": "Broadway finds its Prince: Jordan Fisher cast as 'The Boy' in 'Purple Rain' musical",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjKDuZL39OXFITIqnqCauARvnfnkzjvBmvZ3jc5UdMkkGLHoJBL6gYdnbYU0w"
-        }
-      ]
-    },
-    {
-      "query": "oviedo, spain",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T13:20:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/cwm262pzezy0o",
-        "https://www.washingtonpost.com/world/2026/11/10/spain-police-killed-explosive/6d0b1ddc-dd08-11f1-912c-4fbb80d73f7f_story.html",
-        "https://www.telegraph.co.uk/world-news/2026/11/10/police-officer-killed-another-loses-leg-spain-rucksack-bomb/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTal58Yi_pziZEl8TP5bP9YmzlPIBjplRcKwJNTY_xbCTrFA_wQIF7fOhxeznk",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/cwm262pzezy0o",
-          "title": "Police officer dies and another injured after backpack explosion in Oviedo",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTal58Yi_pziZEl8TP5bP9YmzlPIBjplRcKwJNTY_xbCTrFA_wQIF7fOhxeznk"
-        },
-        {
-          "url": "https://www.washingtonpost.com/world/2026/11/10/spain-police-killed-explosive/6d0b1ddc-dd08-11f1-912c-4fbb80d73f7f_story.html",
-          "title": "Explosive device kills a police officer in northern Spain",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVwHECkoA5VGs5ozm6aL26FNEKpZIULJUyVQvooVdvVYHECgmvymnOk2DP-z4"
-        },
-        {
-          "url": "https://www.telegraph.co.uk/world-news/2026/11/10/police-officer-killed-another-loses-leg-spain-rucksack-bomb/",
-          "title": "Police officer killed and another loses leg in Spain rucksack bombing",
-          "publisher": "The Telegraph",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVb5fZ60HicYrengNNhNH6lSPWyHOpicUeFPpliLM-l8lqQTPk-_G5x_8o_ss"
-        }
-      ]
-    },
-    {
-      "query": "dustin hoffman",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-10T13:10:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/books/2026/nov/09/look-at-me-by-dustin-hoffman-review-an-era-defining-actor-says-his-piece",
-        "https://people.com/dustin-hoffman-denies-sexual-misconduct-allegations-in-new-memoir-12245225",
-        "https://www.usatoday.com/story/entertainment/books/2026/11/10/dustin-hoffman-memoir-biggest-revelations/92690720007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQK6hmox7_0QUJnrO6Trh6vgU1bKnWTECfNYLZAaELoNGcvHnX6_jacqPboCrY",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/books/2026/nov/09/look-at-me-by-dustin-hoffman-review-an-era-defining-actor-says-his-piece",
-          "title": "Look at Me by Dustin Hoffman review – an era-defining actor says his piece",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQK6hmox7_0QUJnrO6Trh6vgU1bKnWTECfNYLZAaELoNGcvHnX6_jacqPboCrY"
-        },
-        {
-          "url": "https://people.com/dustin-hoffman-denies-sexual-misconduct-allegations-in-new-memoir-12245225",
-          "title": "Dustin Hoffman Denies Sexual Misconduct Allegations in New Memoir",
+          "url": "https://people.com/gary-sinise-what-it-would-take-for-him-to-return-to-acting-after-6-years-exclusive-12237969",
+          "title": "Gary Sinise Shares What It Would Take for Him to Return to Acting After 6 Years (Exclusive)",
           "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBRyW4HB_Tm80Hh6_goH1_FPh5N6VG3M0uZw4hHQD1vqRnHSuWTqk_Yl2Bw_M"
-        },
-        {
-          "url": "https://www.usatoday.com/story/entertainment/books/2026/11/10/dustin-hoffman-memoir-biggest-revelations/92690720007/",
-          "title": "Dustin Hoffman once 'shocked' Meryl Streep with this violent improv",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSu8S-G-ddyXFaDuAtx3vgyjGgUzlxfd4Qt1-GX7GlP3U84jXh7sw3Y3jvt4hQ"
-        }
-      ]
-    },
-    {
-      "query": "india national under-19 cricket team vs united arab emirates national under-19 cricket team standings",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T13:10:00Z",
-      "related_news_urls": [
-        "https://timesofindia.indiatimes.com/sports/cricket/news/aaryavir-sehwags-sensational-160-powers-india-u19-to-70-run-victory-over-uae-seal-asia-cup-semi-final-berth/articleshow/135711359.cms",
-        "https://sports.yahoo.com/articles/u-19-asia-cup-2026-093702334.html",
-        "https://sportstar.thehindu.com/cricket/india-defeats-uae-books-place-in-under-19-asia-cup-semifinals/article71686188.ece"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnQ_c1lXOqgTdt-hxIIA0Janvo9NfZcwApIHxoZrLlIbppS9rAAA34CQpePH8",
-      "image_credit": "The Times of India",
-      "news": [
-        {
-          "url": "https://timesofindia.indiatimes.com/sports/cricket/news/aaryavir-sehwags-sensational-160-powers-india-u19-to-70-run-victory-over-uae-seal-asia-cup-semi-final-berth/articleshow/135711359.cms",
-          "title": "Aaryavir Sehwag's sensational 160 powers India U19 to 70-run victory over UAE, seal Asia Cup semi-final b",
-          "publisher": "The Times of India",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnQ_c1lXOqgTdt-hxIIA0Janvo9NfZcwApIHxoZrLlIbppS9rAAA34CQpePH8"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/u-19-asia-cup-2026-093702334.html",
-          "title": "U-19 Asia Cup 2026: Aaryavir Sehwag smashes 160 as India post massive total against UAE after Pakistan debacle",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTh8MzgLHoHBoAzVB2B4LqZcdRwGWkm0nO4-Alf-gyzh7kMTBC-UJj0t64vBKo"
-        },
-        {
-          "url": "https://sportstar.thehindu.com/cricket/india-defeats-uae-books-place-in-under-19-asia-cup-semifinals/article71686188.ece",
-          "title": "India defeats UAE, books place in Under-19 Asia Cup semifinals",
-          "publisher": "Sportstar",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtxcttvezUQnoCFquQJA3CyBhWTh5GlgWuDXb8Ti6bC8CDSsn3n-GxErIWoZU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTc8tSUpKu4a02fhzYbBVRxLlmYO5T8zIDXfSBwat7gz0cQ97jHr58kUAYpVT0"
         }
       ]
     }
