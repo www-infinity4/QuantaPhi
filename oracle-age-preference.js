@@ -18,7 +18,7 @@ function isAdult(e){
   /21\+|adult|dispensary|cannabis|tobacco|nicotine/i.test(category)||
   /^21\+[\s·:-]/i.test(title);
 }
-function read(){return {skipped:readStore(SKIP)==='1',nonAdultSince:count()};}
+function read(){return {skipped:readStore(SKIP)==='1',nonAdultSince:count(),browsingThisVisit};}
 function canAutoShow(e){
  if(!isAdult(e))return true;
  if(read().skipped)return false;
