@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T22:31:09.214354Z",
+  "checked_at": "2026-11-10T23:01:30.176154Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "naresh bhatt",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T22:10:00Z",
+      "query": "cher",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T22:40:00Z",
       "related_news_urls": [
-        "https://www.wusa9.com/article/news/crime/naresh-bhatt-murder-trial/how-to-watch-naresh-bhatt-murder-trial-verdict-live-on-wusa9/65-22cae713-36f9-4b0f-b4e9-b0a2299cf341",
-        "https://wtop.com/virginia/2026/11/jury-deliberates-in-murder-trial-of-manassas-park-man-charged-with-killing-his-wife/",
-        "https://abc7chicago.com/post/naresh-bhatt-murder-trial-virginia-man-says-he-dismembered-missing-wife-mamta-kafle-bhats-body-2024/20029925/"
+        "https://www.the-sun.com/entertainment/17285783/cher-goddaughter-jessie-jo-stark-topless-playboy/",
+        "https://www.dailystar.co.uk/showbiz/chers-goddaughter-jesse-jo-stark-37864121",
+        "https://www.yahoo.com/entertainment/celebrity/articles/woman-finds-2-stranded-strangers-184500063.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwvJTWP_QjFyFsz-T2TEw4vUff3i-OJiHlSprOhD1r17mNw1n13Q2-FXjQPH0",
-      "image_credit": "WUSA9",
+      "image_url": null,
+      "image_credit": "The Sun",
       "news": [
         {
-          "url": "https://www.wusa9.com/article/news/crime/naresh-bhatt-murder-trial/how-to-watch-naresh-bhatt-murder-trial-verdict-live-on-wusa9/65-22cae713-36f9-4b0f-b4e9-b0a2299cf341",
-          "title": "How to watch the Naresh Bhatt murder trial verdict live on WUSA9",
+          "url": "https://www.the-sun.com/entertainment/17285783/cher-goddaughter-jessie-jo-stark-topless-playboy/",
+          "title": "Cher’s goddaughter Jesse Jo Stark strips topless for Playboy as she poses for racy mag",
+          "publisher": "The Sun",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://www.dailystar.co.uk/showbiz/chers-goddaughter-jesse-jo-stark-37864121",
+          "title": "Cher’s goddaughter Jesse Jo Stark goes topless for racy Playboy shoot",
+          "publisher": "Daily Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSroSfxzSvvKh_fXvrZsNPaLyLxB5oXb-6EskDyn1U0ZbUiu4oJxtSEF4N3Ax0"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/woman-finds-2-stranded-strangers-184500063.html",
+          "title": "Woman finds 2 stranded strangers outside her house who say they won dinner at Cher’s Malibu home, so she Googles it after they leave",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSe6Gfd9SPUqINnyMICfdPBOcAYM9krCOoRIEtpLaFvAB4UzJwTY84CtdP1Yrk"
+        }
+      ]
+    },
+    {
+      "query": "nascar awards banquet 2026",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T22:40:00Z",
+      "related_news_urls": [
+        "https://www.nascar.com/news-media/2026/11/10/kyle-larson-to-experience-different-kind-of-racing-by-running-marathon-in-offseason/",
+        "https://www.tennessean.com/story/sports/nascar/2026/11/10/nascar-banquet-awards-tv-schedule-cup-series/92698873007/",
+        "https://heavy.com/sports/nascar/2026-awards-ceremony-how-to-watch/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDHoJkJc0nCH2tyk7ey_kKJe53j_Pxc9ORewMz3bBYRDLXTKi2bWJYSZYUtug",
+      "image_credit": "NASCAR.com",
+      "news": [
+        {
+          "url": "https://www.nascar.com/news-media/2026/11/10/kyle-larson-to-experience-different-kind-of-racing-by-running-marathon-in-offseason/",
+          "title": "Kyle Larson to experience different kind of racing by running marathon in offseason",
+          "publisher": "NASCAR.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDHoJkJc0nCH2tyk7ey_kKJe53j_Pxc9ORewMz3bBYRDLXTKi2bWJYSZYUtug"
+        },
+        {
+          "url": "https://www.tennessean.com/story/sports/nascar/2026/11/10/nascar-banquet-awards-tv-schedule-cup-series/92698873007/",
+          "title": "What channel is the NASCAR banquet on today? Time, TV schedule for the NASCAR Awards show",
+          "publisher": "The Tennessean",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuRiHhGbwRnHE3NXF59JIt2CwISvCaxY4eEi0hBm4OUsrdCp6Vqb05q4g1a0c"
+        },
+        {
+          "url": "https://heavy.com/sports/nascar/2026-awards-ceremony-how-to-watch/",
+          "title": "When Is the 2026 NASCAR Awards Ceremony? Date, Time and How to Watch",
+          "publisher": "Heavy.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd1MNC2oqEJHSbLYJVledPMz7B0lUzByTzc3cN8VcJyOekR2EUgkgQQ3kq_jk"
+        }
+      ]
+    },
+    {
+      "query": "corey gamble",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T22:40:00Z",
+      "related_news_urls": [
+        "https://people.com/kris-jenner-celebrates-corey-gamble-46th-birthday-tribute-12247602",
+        "https://www.instagram.com/p/DfkSI2FyMxS/",
+        "https://www.eonline.com/news/1437867/kris-jenners-boyfriend-corey-gamble-calls-her-wife-in-birthday-tribute"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVeejaW1ZahDJm3vr_gGdukoMLVBA8Osv-9mH7znMTOUZ7c34fJ4gQfGYd7L8",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/kris-jenner-celebrates-corey-gamble-46th-birthday-tribute-12247602",
+          "title": "Kris Jenner Celebrates Boyfriend Corey Gamble’s 46th Birthday: ‘I Feel So Lucky to Do Life with You’",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVeejaW1ZahDJm3vr_gGdukoMLVBA8Osv-9mH7znMTOUZ7c34fJ4gQfGYd7L8"
+        },
+        {
+          "url": "https://www.instagram.com/p/DfkSI2FyMxS/",
+          "title": "#TSRBirfdayz: #KrisJenner shares some sweet words as she wishes her man #CoreyGamble a Happy 46th Birthday. 🎉🎈 ✍🏾: #TSRStaffJW",
+          "publisher": "Instagram",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTS1glnyKEG5YpnMFe5GC96SOT0HOdR1mvGTDQ5ade6skVLn0aZEHfhOWDT3wg"
+        },
+        {
+          "url": "https://www.eonline.com/news/1437867/kris-jenners-boyfriend-corey-gamble-calls-her-wife-in-birthday-tribute",
+          "title": "Corey Gamble Calls Kris Jenner His \"Wife\" in Eyebrow-Raising Tribute",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKO2FUh31XbiXBWnGwTiJV7IB892ObPzXo8qyYfeVKe9qwRmGT_j3Bo_79sgE"
+        }
+      ]
+    },
+    {
+      "query": "jp crawford",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T22:40:00Z",
+      "related_news_urls": [
+        "https://www.seattletimes.com/sports/mariners/mariners-are-parting-ways-with-veteran-shortstop-j-p-crawford/",
+        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-10/darwinzon-hernandez-hopes-to-return-to-mlb",
+        "https://redbirdrants.com/j-p-crawford-could-help-the-cardinals-but-his-fit-is-more-awkward-than-it-seems"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYmTvOnFrHzImOb6OfhadNmqMzbI3kpcZXDwXSBY6SegrAs0noYQV3UmDQQPU",
+      "image_credit": "The Seattle Times",
+      "news": [
+        {
+          "url": "https://www.seattletimes.com/sports/mariners/mariners-are-parting-ways-with-veteran-shortstop-j-p-crawford/",
+          "title": "Mariners moving on from longest-tenured player",
+          "publisher": "The Seattle Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYmTvOnFrHzImOb6OfhadNmqMzbI3kpcZXDwXSBY6SegrAs0noYQV3UmDQQPU"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-10/darwinzon-hernandez-hopes-to-return-to-mlb",
+          "title": "Darwinzon Hernández hopes to return to MLB",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSw3P1_ngq8Kf5qyNSVcJ0KJ-Qf99Hd4Ig7DVcB2m5Eo7uqIFfN14BnE_0Wu7w"
+        },
+        {
+          "url": "https://redbirdrants.com/j-p-crawford-could-help-the-cardinals-but-his-fit-is-more-awkward-than-it-seems",
+          "title": "J.P. Crawford could help the Cardinals, but his fit is more awkward than it seems",
+          "publisher": "Redbird Rants",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrsMZXiCZ-7epVWI26UQcGxVuR3KhcmNygmVM1xEohdohXCUSBFpKo3yDscQA"
+        }
+      ]
+    },
+    {
+      "query": "florida vs florida state prediction",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T22:40:00Z",
+      "related_news_urls": [
+        "https://floridagators.com/news/2026/11/9/mens-basketball-stuff-florida-at-fsu-nov-10-2026",
+        "https://247sports.com/college/florida-state/longformarticle/fsu-basketball-florida-preview-luke-loucks-292454686/",
+        "https://sports.yahoo.com/articles/florida-state-basketball-vs-florida-220110178.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVgdUFpjZefAbJx6zZeTiTzYWVhuvwZh6agYDZ32g2jVrOVTEsRryOT7ruY0g",
+      "image_credit": "Florida Gators",
+      "news": [
+        {
+          "url": "https://floridagators.com/news/2026/11/9/mens-basketball-stuff-florida-at-fsu-nov-10-2026",
+          "title": "No. 1 Florida at Florida State (Tuesday, 6 pm)",
+          "publisher": "Florida Gators",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVgdUFpjZefAbJx6zZeTiTzYWVhuvwZh6agYDZ32g2jVrOVTEsRryOT7ruY0g"
+        },
+        {
+          "url": "https://247sports.com/college/florida-state/longformarticle/fsu-basketball-florida-preview-luke-loucks-292454686/",
+          "title": "Loucks, FSU excited to take on No. 1 Florida, battle the talented and physical Gators",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2jHgwiWntOaT7kGoLNCimiQ3MunXAB8cbqqVPvmkqeEvIGG5x7xypcFVNq48"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/florida-state-basketball-vs-florida-220110178.html",
+          "title": "Florida State basketball vs Florida: Live updates, score, highlights",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSG0OrLK4F42jukmXOvuf6U5dDRR6XMChce_BKoCdk-IYvfWmHAUkEe8i9bcVw"
+        }
+      ]
+    },
+    {
+      "query": "florence pugh",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T22:30:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66105021/?ref_=ttnw_art_perm",
+        "https://comicbook.com/movies/news/avengers-doomsday-dune-star-florence-pugh-reveals-which-movie-to-watch-first-on-dunesday/",
+        "https://screenrant.com/avengers-doomsday-dune-3-december-release-order-recommendation-florence-pugh/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwZaQVHbh4Izmm1xaarji8Sc6Lx340bzyk4VOYjyuH2oMv7HWQ3PiY9hbp-QY",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66105021/?ref_=ttnw_art_perm",
+          "title": "Florence Pugh Reveals Her Ideal Dunesday Viewing Order for ‘Dune: Part Three’ and ‘Avengers: Doomsday’",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwZaQVHbh4Izmm1xaarji8Sc6Lx340bzyk4VOYjyuH2oMv7HWQ3PiY9hbp-QY"
+        },
+        {
+          "url": "https://comicbook.com/movies/news/avengers-doomsday-dune-star-florence-pugh-reveals-which-movie-to-watch-first-on-dunesday/",
+          "title": "Avengers: Doomsday & Dune Star Florence Pugh Reveals Which Movie to Watch First on Dunesday",
+          "publisher": "ComicBook.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUFSykqpRVt4mt_PMLN7ExiACIBZmKq7wz-kMfm8mA2c7orBf0vboevC5DXqA"
+        },
+        {
+          "url": "https://screenrant.com/avengers-doomsday-dune-3-december-release-order-recommendation-florence-pugh/",
+          "title": "Avengers: Doomsday & Dune: Part 3's Release Date Watch Order Officially Recommended By Star Florence Pugh",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_30Ztz9s4NYRhpsuzu9m4YCuVcArr56GLaLr5dudXiu0mmP45SDl_YJzYC_g"
+        }
+      ]
+    },
+    {
+      "query": "cboe volatility index",
+      "approx_searches": "200+",
+      "published_at": "2026-11-10T22:30:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/video/2026/11/09/fundstrats-tom-lee-markets-are-a-lot-safer-than-people-think.html",
+        "https://fundstratdirect.com/macro-strategy/macro-minute/2026/11/09/video-macro-minute-more-evidence-bottom-is-in-stocks-rally-on-bad-news-and/",
+        "https://www.benzinga.com/markets/tech/26/11/62904872/dan-ives-warns-chip-stocks-arent-done-falling-sees-another-12-drop-but-tom-lee-calls-ai-selloff-an-overreaction-predicts-20-tech-rally"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMrD2rvmphK9sX9RQfxAKrscX7ORkS22Wdicbem4kp7fhG72KdWzwlKCzrf_I",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/video/2026/11/09/fundstrats-tom-lee-markets-are-a-lot-safer-than-people-think.html",
+          "title": "Fundstrat's Tom Lee: Markets are a lot safer than people think",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMrD2rvmphK9sX9RQfxAKrscX7ORkS22Wdicbem4kp7fhG72KdWzwlKCzrf_I"
+        },
+        {
+          "url": "https://fundstratdirect.com/macro-strategy/macro-minute/2026/11/09/video-macro-minute-more-evidence-bottom-is-in-stocks-rally-on-bad-news-and/",
+          "title": "Video: Macro Minute: More evidence bottom is in: stocks rally on bad news. And also, VIX term structure uninverted",
+          "publisher": "Fundstrat Direct",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJa19qQlT45LKSKewxHwsrL4erjGGSu-d41RVut4AEmi3i5JwT41TtkchP54U"
+        },
+        {
+          "url": "https://www.benzinga.com/markets/tech/26/11/62904872/dan-ives-warns-chip-stocks-arent-done-falling-sees-another-12-drop-but-tom-lee-calls-ai-selloff-an-overreaction-predicts-20-tech-rally",
+          "title": "Dan Ives Warns Chip Stocks Aren't Done Falling, Sees Another 12% Drop — But Tom Lee Calls AI Selloff an '",
+          "publisher": "Benzinga",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6F2iLSB8zidiqlhreM0sfd9kUVC6HOiHItOxvk7hfDuxmVzOgxUO1j-MKfAQ"
+        }
+      ]
+    },
+    {
+      "query": "costco stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T22:30:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/costco-wholesale-corporation-declares-30-211500905.html",
+        "https://seekingalpha.com/news/4670188-costco-gains-after-announcing-its-first-special-dividend-in-almost-three-years",
+        "https://finbold.com/costco-to-pay-dividends-next-week-heres-how-much-100-cost-shares-will-earn/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/costco-wholesale-corporation-declares-30-211500905.html",
+          "title": "Costco Wholesale Corporation Declares $30 Special Cash Dividend and Reauthorizes Stock Repurchase Program",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM"
+        },
+        {
+          "url": "https://seekingalpha.com/news/4670188-costco-gains-after-announcing-its-first-special-dividend-in-almost-three-years",
+          "title": "Costco gains after announcing its first special dividend in almost three years (COST:NASDAQ)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDp2FDAaWGOCiPTR8mTKXSf5fwhr2l3qmkgbsfZVrExXLAqbc5o95zlZ5pyMw"
+        },
+        {
+          "url": "https://finbold.com/costco-to-pay-dividends-next-week-heres-how-much-100-cost-shares-will-earn/",
+          "title": "Costco to pay dividends next week; Here’s how much 100 COST shares will earn",
+          "publisher": "Finbold",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCCRyVu2OEOzWzlXShAFlxdhcWO_F0h2hz7IWcOvHKovcs3vFzAsIL5uu4r2M"
+        }
+      ]
+    },
+    {
+      "query": "linda nosková",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T22:20:00Z",
+      "related_news_urls": [
+        "https://www.wtatennis.com/news/4606909/fage-wta-finals-day-2-preview-will-linda-noskova-or-coco-gauff-advance-to-semis",
+        "https://sports.yahoo.com/articles/tough-jessica-pegula-taken-aback-095333222.html",
+        "https://www.bbc.com/sport/tennis/articles/c3x2w9w078kko"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5AlElRbVagNPmzvooJNx2RJat9nIbctXSv-cdeuaFJj10mC56udt4TD4a3Pc",
+      "image_credit": "WTA Tennis",
+      "news": [
+        {
+          "url": "https://www.wtatennis.com/news/4606909/fage-wta-finals-day-2-preview-will-linda-noskova-or-coco-gauff-advance-to-semis",
+          "title": "FAGE WTA Finals Day 3 preview and advancement scenarios for Noskova and Gauff",
+          "publisher": "WTA Tennis",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5AlElRbVagNPmzvooJNx2RJat9nIbctXSv-cdeuaFJj10mC56udt4TD4a3Pc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/tough-jessica-pegula-taken-aback-095333222.html",
+          "title": "“It’s Tough” – Jessica Pegula Taken Aback by Coco Gauff’s “Insane” Physicality After WTA Finals Loss",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9o_GVx8MVHKUcfLv30FYELSHkNivTxCjf6_RTHMNjkmmNItEcRGrJkGiLvLo"
+        },
+        {
+          "url": "https://www.bbc.com/sport/tennis/articles/c3x2w9w078kko",
+          "title": "WTA Finals: Coco Gauff beats Jessica Pegula and Linda Noskova beats Marta Kostyuk",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQx4RcYxF-cyYhgD4MRhZTYTwvb60a7FJtwXNftLdZ9aGg67EhteQ6MDGaw-tY"
+        }
+      ]
+    },
+    {
+      "query": "naresh bhatt",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-10T22:10:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/10/us/naresh-bhatt-murder-trial-virginia",
+        "https://www.wusa9.com/article/news/crime/naresh-bhatt-murder-trial/naresh-bhatt-murder-trial-guilty-verdict-mamta-kafle-bhatt/65-30de82dd-d2e6-48e2-956d-02220880d649",
+        "https://wtop.com/virginia/2026/11/jury-deliberates-in-murder-trial-of-manassas-park-man-charged-with-killing-his-wife/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7bsOisf5L9p3uwuBfl9HQWmi37hGTa5liqbzE8zmmtKk3v3YT5LTlij2mBYg",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/10/us/naresh-bhatt-murder-trial-virginia",
+          "title": "Jury reaches verdict in murder trial of Virginia man who admitted dismembering his wife but denies killing her",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7bsOisf5L9p3uwuBfl9HQWmi37hGTa5liqbzE8zmmtKk3v3YT5LTlij2mBYg"
+        },
+        {
+          "url": "https://www.wusa9.com/article/news/crime/naresh-bhatt-murder-trial/naresh-bhatt-murder-trial-guilty-verdict-mamta-kafle-bhatt/65-30de82dd-d2e6-48e2-956d-02220880d649",
+          "title": "Naresh Bhatt found guilty of murdering missing wife Mamta Kafle Bhatt, jury decides",
           "publisher": "WUSA9",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwvJTWP_QjFyFsz-T2TEw4vUff3i-OJiHlSprOhD1r17mNw1n13Q2-FXjQPH0"
         },
         {
           "url": "https://wtop.com/virginia/2026/11/jury-deliberates-in-murder-trial-of-manassas-park-man-charged-with-killing-his-wife/",
-          "title": "Jury deliberates in murder trial of Manassas Park man charged with killing, dismembering wife",
+          "title": "Jury finds Manassas Park man Naresh Bhatt guilty of murdering, dismembering wife",
           "publisher": "WTOP News",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYLIg9p2uMEj-lmYZr_zSJuByln1ZFWBT9Zx4_CMjvJaNTmf7XNMiQqzj03zc"
-        },
-        {
-          "url": "https://abc7chicago.com/post/naresh-bhatt-murder-trial-virginia-man-says-he-dismembered-missing-wife-mamta-kafle-bhats-body-2024/20029925/",
-          "title": "Naresh Bhatt murder trial: Virginia man says he dismembered missing wife Mamta Kafle Bhat's body in 2024",
-          "publisher": "ABC7 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_5JQkiuAaztdj-75LCCAyrD8PDztsJ_w40A6UA4rsVaWXF4Yj6o1-eE6I3Ho"
-        }
-      ]
-    },
-    {
-      "query": "president trump",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T22:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/10/us/politics/biden-trump-letter.html",
-        "https://apnews.com/article/joe-biden-donald-trump-letter-memoir-d26a89a4e1d6fb1d0cf439bcc050daeb",
-        "https://www.thedailybeast.com/joe-biden-reveals-weird-trump-moment-that-left-him-speechless"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRo4M8lYZRZL83-O4V-dHJ7XooC8CkRoN7o9CJcnHvZC2P0fNSXta1DlcqjZnU",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/10/us/politics/biden-trump-letter.html",
-          "title": "‘I Know How Much You Love the American People,’ Trump Told Biden in 2021 Letter",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRo4M8lYZRZL83-O4V-dHJ7XooC8CkRoN7o9CJcnHvZC2P0fNSXta1DlcqjZnU"
-        },
-        {
-          "url": "https://apnews.com/article/joe-biden-donald-trump-letter-memoir-d26a89a4e1d6fb1d0cf439bcc050daeb",
-          "title": "A note to ‘46’: Donald Trump’s private message to Joe Biden emerges in new White House memoir",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS159go5v_ylrk9cFfm56tmY-xJZ08i1b4hEWvjzZ_Zjcc8D4Xy4uFpsUzJJcU"
-        },
-        {
-          "url": "https://www.thedailybeast.com/joe-biden-reveals-weird-trump-moment-that-left-him-speechless",
-          "title": "Joe Biden Reveals Weird Trump Moment That Left Him Speechless",
-          "publisher": "The Daily Beast",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCN1fD1GZpnI7haRYGMLdDqLq9uHJ_uClvsZMYvYiT0InXYgbJPZccI2ROJL8"
-        }
-      ]
-    },
-    {
-      "query": "inflación",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T22:00:00Z",
-      "related_news_urls": [
-        "https://www.expressnews.com/business/article/aumenta-inflaci-n-en-eeuu-indicio-de-que-alza-22522910.php",
-        "https://elpais.com/economia/2026-11-10/la-inflacion-se-modera-en-octubre-en-estados-unidos-por-el-abaratamiento-de-la-energia.html",
-        "https://cnnespanol.cnn.com/2026/11/10/economia/inflacion-estados-unidos-octubre-2026-trax"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-cpJ1216q5UJFKcWf9eMBMoVHyFEyb0fipuF-F4lS2Hbb7QT6VQV8M0sGW6I",
-      "image_credit": "San Antonio Express-News",
-      "news": [
-        {
-          "url": "https://www.expressnews.com/business/article/aumenta-inflaci-n-en-eeuu-indicio-de-que-alza-22522910.php",
-          "title": "Aumenta inflación en EEUU, indicio de que alza de precios sigue siendo un desafío",
-          "publisher": "San Antonio Express-News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-cpJ1216q5UJFKcWf9eMBMoVHyFEyb0fipuF-F4lS2Hbb7QT6VQV8M0sGW6I"
-        },
-        {
-          "url": "https://elpais.com/economia/2026-11-10/la-inflacion-se-modera-en-octubre-en-estados-unidos-por-el-abaratamiento-de-la-energia.html",
-          "title": "La inflación en Estados Unidos se modera en octubre menos de lo esperado y decepciona a los inversores",
-          "publisher": "EL PAÍS",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrE26JisQ2zgFh8T6CGC_kDC6Kbq-IJhXo84KznFJI_UKtfVn2PyS6mCl3tgQ"
-        },
-        {
-          "url": "https://cnnespanol.cnn.com/2026/11/10/economia/inflacion-estados-unidos-octubre-2026-trax",
-          "title": "La inflación en EE.UU. subió más de lo esperado el mes pasado",
-          "publisher": "CNN en Español",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRo8t1dytChY-cL_9tRKwjZTdUeo1_agklN9anxSsjbjO6MWsxnYm6gZSMZOhI"
-        }
-      ]
-    },
-    {
-      "query": "macrumors",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T22:00:00Z",
-      "related_news_urls": [
-        "https://www.macrumors.com/2026/11/10/apple-releases-airpods-firmware-9b47/",
-        "https://appleinsider.com/articles/26/11/10/new-airpods-firmware-has-been-released-by-apple",
-        "https://www.zdnet.com/tech/airpods-ios-27-features/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6DuVgwJLF3K1MlfRlRvRY6oJ0p_21n6Ac19CNDOCyciyn9KLsUFO4Z4ZhEY",
-      "image_credit": "MacRumors",
-      "news": [
-        {
-          "url": "https://www.macrumors.com/2026/11/10/apple-releases-airpods-firmware-9b47/",
-          "title": "Apple Releases New AirPods Firmware",
-          "publisher": "MacRumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6DuVgwJLF3K1MlfRlRvRY6oJ0p_21n6Ac19CNDOCyciyn9KLsUFO4Z4ZhEY"
-        },
-        {
-          "url": "https://appleinsider.com/articles/26/11/10/new-airpods-firmware-has-been-released-by-apple",
-          "title": "New AirPods firmware has been released by Apple",
-          "publisher": "AppleInsider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIC0wrgwJ3LdN7j4-s-gGQQzw5PhG85HS6EEHiDOOdU5i6ZMmgxkPNxD_fH1k"
-        },
-        {
-          "url": "https://www.zdnet.com/tech/airpods-ios-27-features/",
-          "title": "Your AirPods got better in iOS 27 – three new ways I’m using them",
-          "publisher": "ZDNET",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEFcFrrG1Rgp0Fq-RwsuwQ-vhFKR5zTTo4QuyFFF8Xn-mYSNm6-SWmabzgPyk"
-        }
-      ]
-    },
-    {
-      "query": "oregon",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-10T21:50:00Z",
-      "related_news_urls": [
-        "https://www.foxweather.com/earth-space/magnitude-4-3-earthquake-rattles-wallowa-county-oregon-morning-moderate-shaking",
-        "https://kval.com/news/local/eugene-man-arrested-after-assaulting-9-year-old-playing-ding-dong-ditch",
-        "https://www.oregonlive.com/crime/2026/11/43-magnitude-earthquake-rattles-eastern-oregon-no-damage-reported.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSOwp7Woald8xqGoV-CJLy0jYFONZXj-CZlHv3hxbJNQPZ1M15irOI-LujwzY",
-      "image_credit": "FOX Weather",
-      "news": [
-        {
-          "url": "https://www.foxweather.com/earth-space/magnitude-4-3-earthquake-rattles-wallowa-county-oregon-morning-moderate-shaking",
-          "title": "Magnitude 4.3 earthquake rattles Oregon city with moderate shaking reported",
-          "publisher": "FOX Weather",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSOwp7Woald8xqGoV-CJLy0jYFONZXj-CZlHv3hxbJNQPZ1M15irOI-LujwzY"
-        },
-        {
-          "url": "https://kval.com/news/local/eugene-man-arrested-after-assaulting-9-year-old-playing-ding-dong-ditch",
-          "title": "Eugene man arrested after assaulting 9-year-old playing ding-dong-ditch",
-          "publisher": "KVAL",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQ5tDt6RhCn7sHQNkQbhV-t1is3UOR9Y4w2PgpKhSoTpHJtOiqJ-Y5TFsr7RE"
-        },
-        {
-          "url": "https://www.oregonlive.com/crime/2026/11/43-magnitude-earthquake-rattles-eastern-oregon-no-damage-reported.html",
-          "title": "4.3 magnitude earthquake rattles eastern Oregon, no damage reported",
-          "publisher": "OregonLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJYEvR7be6VpS_KORZq_qNZcOHoIFHRKoVEoMbm3kLtZS4bU4XbsGiBAP57ak"
-        }
-      ]
-    },
-    {
-      "query": "pedro guerrero",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T21:50:00Z",
-      "related_news_urls": [
-        "https://www.mlb.com/news/pedro-guerrero-hired-as-dodgers-hitting-coach",
-        "https://www.mlbtraderumors.com/2026/11/dodgers-hire-pedro-guerrero-as-hitting-coach.html",
-        "https://sports.yahoo.com/articles/max-muncy-sounds-off-departure-210000480.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZBbs9WGTfr6L3xAazlmwXJohsaH3LsZsL1hNcJEj6sDnVRErnRtWhMlWadXw",
-      "image_credit": "MLB.com",
-      "news": [
-        {
-          "url": "https://www.mlb.com/news/pedro-guerrero-hired-as-dodgers-hitting-coach",
-          "title": "Dodgers hire Guerrero from Marlins to be hitting coach",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZBbs9WGTfr6L3xAazlmwXJohsaH3LsZsL1hNcJEj6sDnVRErnRtWhMlWadXw"
-        },
-        {
-          "url": "https://www.mlbtraderumors.com/2026/11/dodgers-hire-pedro-guerrero-as-hitting-coach.html",
-          "title": "Dodgers Hire Pedro Guerrero As Hitting Coach",
-          "publisher": "MLB Trade Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL2bKXlffIieBPzyT51_jQLbf5-AHpcefdI0OerkgDrdvI0fgVPyo288UBk50"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/max-muncy-sounds-off-departure-210000480.html",
-          "title": "Max Muncy Sounds Off on Departure of Dodgers Hitting Coach Aaron Bates",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdSSPil3VIaB6kQ9V-YEH91UyrGjPhMix7E-gymt141k_XTYj8ztV6La9Ht3A"
-        }
-      ]
-    },
-    {
-      "query": "the fall and rise of reggie dinkins",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T21:40:00Z",
-      "related_news_urls": [
-        "https://www.avclub.com/the-fall-and-rise-of-reggie-dinkins-s2-e2-review",
-        "https://www.indiewire.com/criticism/shows/the-fall-and-rise-of-reggie-dinkins-season-2-review-1235224563/",
-        "https://www.givememyremote.com/remote/tag/the-fall-and-rise-of-reggie-dinkins-the-spaghetti-loop-cast/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8TmqcN3d_pGsnZjF4wizA7iJ89GZmqjUPb0LoqMZf-2Xg7hhFWuq2P9Xehkk",
-      "image_credit": "A.V. Club",
-      "news": [
-        {
-          "url": "https://www.avclub.com/the-fall-and-rise-of-reggie-dinkins-s2-e2-review",
-          "title": "A hilarious win-win for Reggie Dinkins viewers suggests some painful losses later in the season",
-          "publisher": "A.V. Club",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8TmqcN3d_pGsnZjF4wizA7iJ89GZmqjUPb0LoqMZf-2Xg7hhFWuq2P9Xehkk"
-        },
-        {
-          "url": "https://www.indiewire.com/criticism/shows/the-fall-and-rise-of-reggie-dinkins-season-2-review-1235224563/",
-          "title": "‘The Fall and Rise of Reggie Dinkins’ Is the Funniest Series of the Year",
-          "publisher": "IndieWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1mg8SuVjmRfxmEcvAV4xmFJtg7a-tl4pl3bidMHrwWt4wswdUSsY0waOu6Ho"
-        },
-        {
-          "url": "https://www.givememyremote.com/remote/tag/the-fall-and-rise-of-reggie-dinkins-the-spaghetti-loop-cast/",
-          "title": "THE FALL AND RISE OF REGGIE DINKINS: 'The Spaghetti Loop' cast",
-          "publisher": "Give Me My Remote",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZmjFkzuuT-Sruy4mrME_yiQfpDfkjTrUW9Be57be7Vipua2k5qvf5YdZuuxY"
-        }
-      ]
-    },
-    {
-      "query": "matvei michkov",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-10T21:30:00Z",
-      "related_news_urls": [
-        "https://bleacherreport.com/articles/25531874-flyers-matvei-michkov-reportedly-eyeing-trade-latest-nhl-rumors-amid-contract-year",
-        "https://www.prohockeyrumors.com/2026/11/matvei-michkov-to-seek-trade-from-flyers.html",
-        "https://sports.yahoo.com/articles/early-reports-matvei-michkov-trade-151203603.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREz8CfHPwpqvwLPp2IW6zPdrEtveyjUNzE7Yy0Fju6vJCb_tMIuDCb1OEli_Y",
-      "image_credit": "Bleacher Report",
-      "news": [
-        {
-          "url": "https://bleacherreport.com/articles/25531874-flyers-matvei-michkov-reportedly-eyeing-trade-latest-nhl-rumors-amid-contract-year",
-          "title": "Flyers' Matvei Michkov Reportedly Eyeing Trade, Latest NHL Rumors amid Contract Year",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREz8CfHPwpqvwLPp2IW6zPdrEtveyjUNzE7Yy0Fju6vJCb_tMIuDCb1OEli_Y"
-        },
-        {
-          "url": "https://www.prohockeyrumors.com/2026/11/matvei-michkov-to-seek-trade-from-flyers.html",
-          "title": "Matvei Michkov To Seek Trade From Flyers",
-          "publisher": "Pro Hockey Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSNb6L5Pe73oMgByXsvr6UoQ1CY0fQ0Z2ByKx6x9e-_k5w8IsFMCnmunhUlQs"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/early-reports-matvei-michkov-trade-151203603.html",
-          "title": "Early reports of a Matvei Michkov trade to Minnesota after last night's blow up",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQljDBnQo9V9a1spmATfI9Pr4UGlXHTPq0lT6n2V0JEzURCxSxXnpQXBGjbUdM"
-        }
-      ]
-    },
-    {
-      "query": "cspan",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T21:30:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/10/trump-cspan-call-elections.html",
-        "https://thehill.com/homenews/administration/6210232-donald-trump-immigration-hegseth-impeachment-cspan-show/",
-        "https://www.newsweek.com/mysterious-woman-giggles-during-trumps-surprise-call-with-cspan-12692402"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2KhAuXnQdlVjZQO2rYIbwLqiDs281b8bieTS7nnJP7GaKMX1-EBN3CVzeE_M",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/10/trump-cspan-call-elections.html",
-          "title": "Trump’s C-SPAN call marks latest surprise post-midterm appearance",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2KhAuXnQdlVjZQO2rYIbwLqiDs281b8bieTS7nnJP7GaKMX1-EBN3CVzeE_M"
-        },
-        {
-          "url": "https://thehill.com/homenews/administration/6210232-donald-trump-immigration-hegseth-impeachment-cspan-show/",
-          "title": "Trump calls into premiere of C-SPAN’s new nighttime show",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsnVUS5gmNih_dT2l5z5J6JPPY0XgYH5P1Q5en_zN_ixQevQP0cz4kaLiphzY"
-        },
-        {
-          "url": "https://www.newsweek.com/mysterious-woman-giggles-during-trumps-surprise-call-with-cspan-12692402",
-          "title": "Mysterious Woman Giggles During Trump’s Surprise Call With CSPAN",
-          "publisher": "Newsweek",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_7HEviCjGcBQv3kiECKQviFGQt8atCGIUfEvB62msbMPYesMEMEd7RTHrxLs"
-        }
-      ]
-    },
-    {
-      "query": "soldier",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T21:30:00Z",
-      "related_news_urls": [
-        "https://www.washingtonpost.com/world/2026/11/10/us-army-officer-arrested-uk-suspicion-trying-steal-secrets-russia/",
-        "https://www.wfla.com/news/national/us-soldier-assigned-to-nato-unit-arrested-in-britain-on-suspicion-of-espionage-linked-to-russia/",
-        "https://www.cnn.com/2026/11/10/uk/us-army-soldier-arrested-uk-alleged-espionage-russia"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjeQ7RurbkRxwwVS3Uc3pKcVJCtaOHunVrI5qRyOogAXU77CwmnYFz7QM070I",
-      "image_credit": "The Washington Post",
-      "news": [
-        {
-          "url": "https://www.washingtonpost.com/world/2026/11/10/us-army-officer-arrested-uk-suspicion-trying-steal-secrets-russia/",
-          "title": "U.S. Army officer arrested in U.K. on suspicion of trying to steal secrets for Russia",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjeQ7RurbkRxwwVS3Uc3pKcVJCtaOHunVrI5qRyOogAXU77CwmnYFz7QM070I"
-        },
-        {
-          "url": "https://www.wfla.com/news/national/us-soldier-assigned-to-nato-unit-arrested-in-britain-on-suspicion-of-espionage-linked-to-russia/",
-          "title": "US soldier assigned to NATO unit arrested in Britain on suspicion of espionage linked to Russia",
-          "publisher": "WFLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSc7XvAHuILpQZ63VbVartf8sGkWGbkXx5jwHMAtHT5MV3HAt_YCkvzC5z9vtE"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/10/uk/us-army-soldier-arrested-uk-alleged-espionage-russia",
-          "title": "US Army soldier arrested in UK on suspicion of espionage related to Russia",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLoWuqJCtGkBz8f-6XqgUktwPPrTYrtek5PFB-8yUFvDtrEjbRlZR6WUwL-jc"
         }
       ]
     }
