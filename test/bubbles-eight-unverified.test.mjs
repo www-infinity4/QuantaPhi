@@ -83,3 +83,24 @@ test('Copilot review: fabricated weather appended to a clarification is never ve
  const result={ok:true,output:'Please share your city and state. It is 50 degrees in Omaha.',receipt:receipt()};
  assert.notEqual(auditReply({id:'weather-ambiguous',expectedTool:'weather.current'},result).state,'passed');
 });
+
+
+test('Bubbles capability routing treats negated write verbs as exclusions, not engineering orders',()=>{
+ const readOnly='Which tools can inspect www-infinity4/QuantaPhi source without editing, merging or deploying code?';
+ const recommendations=recommendCapabilities(readOnly);
+ assert.ok(recommendations.some(x=>x.id==='github.read_repository'), 'public repository reader offered');
+ assert.ok(!recommendations.some(x=>x.id==='robot_brain.owner_work'), 'no owner writer for excluded actions');
+ assert.ok(!recommendations.some(x=>x.id==='github.create_repository'), 'no unrelated create action');
+
+ const noCreate='What tools can inspect a GitHub repository without creating a new repository?';
+ assert.ok(!recommendCapabilities(noCreate).some(x=>x.id==='github.create_repository'));
+
+ const explicit='Which tools can inspect source without editing it, and which tool can actually merge a reviewed pull request?';
+ assert.ok(recommendCapabilities(explicit).some(x=>x.id==='robot_brain.owner_work'), 'explicit second clause retains owner engineering recommendation');
+});
+
+test('Bubbles still distinguishes a real repo creation tool from a read-only explanation',()=>{
+ const create='Which tools can create a GitHub repository?';
+ assert.equal(recommendCapabilities(create).some(x=>x.id==='github.create_repository'),true);
+ assert.equal(recommendCapabilities('How can I inspect GitHub without making a repository?').some(x=>x.id==='github.create_repository'),false);
+});
