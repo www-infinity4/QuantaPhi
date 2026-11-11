@@ -4,15 +4,15 @@ const ACTIONS=new Set(['write_test','edit_code','fix_ci','reply_review','request
 const key=p=>[p.repo,p.issue,p.headSha].join('#');
 // Existing issue identity is stable across sessions. A dependency is *not*
 // satisfied by an unverified PR, model response or an in-memory claim.
-const DEPENDENCY=/^[-\\w.]+\\/[-\\w.]+#[1-9][0-9]*$/;
+const DEPENDENCY=/^[-\w.]+\/[-\w.]+#[1-9][0-9]*$/;
 const issueId=p=>p.repo+'#'+p.issue;
 const sourcePaths=p=>Array.isArray(p.scopePaths)&&p.scopePaths.length?p.scopePaths:[p.nextSourcePath];
-const pathOverlap=(a,b)=>a===b||a.startsWith(b.replace(/\\/$/,'')+'/')||b.startsWith(a.replace(/\\/$/,'')+'/');
+const pathOverlap=(a,b)=>a===b||a.startsWith(b.replace(/\/$/,'')+'/')||b.startsWith(a.replace(/\/$/,'')+'/');
 export function scopesOverlap(a,b){
  return sourcePaths(a).some(x=>sourcePaths(b).some(y=>pathOverlap(x,y)));
 }
 export function validPacket(p){
- return Boolean(p&&typeof p.repo==='string'&&/^[-\\w.]+\\/[-\\w.]+$/.test(p.repo)&&
+ return Boolean(p&&typeof p.repo==='string'&&/^[-\w.]+\/[-\w.]+$/.test(p.repo)&&
  Number.isSafeInteger(p.issue)&&p.issue>0&&typeof p.headSha==='string'&&/^[a-f0-9]{40}$/i.test(p.headSha)&&
  ACTIONS.has(p.nextAction)&&STATES.has(p.state||'ready')&&Number.isFinite(p.priority)&&p.priority>=0&&p.priority<=100&&
  typeof p.nextSourcePath==='string'&&p.nextSourcePath.length>0&&p.nextSourcePath.length<512&&
