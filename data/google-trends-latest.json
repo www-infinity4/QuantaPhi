@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T00:01:56.949918Z",
+  "checked_at": "2026-11-11T00:43:50.084366Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "panthers vs blue jackets",
+      "query": "ryan seacrest",
       "approx_searches": "1000+",
-      "published_at": "2026-11-10T23:40:00Z",
+      "published_at": "2026-11-11T00:30:00Z",
       "related_news_urls": [
-        "https://www.litterboxcats.com/florida-panthers-at-columbus-blue-jackets-gameday-19-2026-27-nhl-schedule/",
-        "https://www.nhl.com/news/florida-panthers-columbus-blue-jackets-game-preview-november-10-2026",
-        "https://sports.yahoo.com/articles/panthers-vs-blue-jackets-prediction-180757826.html"
+        "https://www.usatoday.com/story/sports/high-school/football/2026/11/10/ryan-seacrest-dunwoody-georgia-high-school-football-first-stadium/92630959007/",
+        "https://roanoke.com/sports/high-school/image_16f13a07-7ede-5388-bd5f-7582ccd88b76.html",
+        "https://www.wsbradio.com/news/local/school-board-advances-27-million-plan-renovate-stadium-named-after-ryan-seacrest/PDSMYEQJ7NGUTIS4F3HRTORQZ4/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9ztxnpSZcFj9bLRiL1ozyHi3pZ6fUHG4XdqgbzXrCb-yvIzWjbE3gqkpkuGI",
-      "image_credit": "Litter Box Cats",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRtErz5xuJGDOMGKxQ-CZkLpIya1GjviEzlzytqAdD2ENbsGgeqyFqi-iv2RA",
+      "image_credit": "USA Today",
       "news": [
         {
-          "url": "https://www.litterboxcats.com/florida-panthers-at-columbus-blue-jackets-gameday-19-2026-27-nhl-schedule/",
-          "title": "Gameday 19: Florida Panthers at Columbus Blue Jackets",
-          "publisher": "Litter Box Cats",
+          "url": "https://www.usatoday.com/story/sports/high-school/football/2026/11/10/ryan-seacrest-dunwoody-georgia-high-school-football-first-stadium/92630959007/",
+          "title": "How Ryan Seacrest is giving his old high school football team something it never had",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9ztxnpSZcFj9bLRiL1ozyHi3pZ6fUHG4XdqgbzXrCb-yvIzWjbE3gqkpkuGI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRtErz5xuJGDOMGKxQ-CZkLpIya1GjviEzlzytqAdD2ENbsGgeqyFqi-iv2RA"
         },
         {
-          "url": "https://www.nhl.com/news/florida-panthers-columbus-blue-jackets-game-preview-november-10-2026",
-          "title": "Panthers at Blue Jackets projected lineups",
-          "publisher": "NHL.com",
+          "url": "https://roanoke.com/sports/high-school/image_16f13a07-7ede-5388-bd5f-7582ccd88b76.html",
+          "title": "Ryan Seacrest played defensive back for Dunwoody (GA) High School for two years before graduating in 1993.",
+          "publisher": "Roanoke Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRG1Kbkl5C7LIdY-pRUhA74FRpRpToM6YQrL4JkipdBua9UMk9E5HRH1oc5rNw"
         },
         {
-          "url": "https://sports.yahoo.com/articles/panthers-vs-blue-jackets-prediction-180757826.html",
-          "title": "Panthers vs Blue Jackets Prediction, Picks, NHL Odds for Tuesday, November 10",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.wsbradio.com/news/local/school-board-advances-27-million-plan-renovate-stadium-named-after-ryan-seacrest/PDSMYEQJ7NGUTIS4F3HRTORQZ4/",
+          "title": "School board advances $2.7 million plan to renovate stadium named after Ryan Seacrest",
+          "publisher": "95.5 WSB",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXgEigkm1lIdagu7NwCb1N5WwPixdEvDuwUiYNqqjY1V8kZqox-I5LT1A70pE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFTSovmtKBo9OYDVJmHe1lIMHf3XqtvPw4bQUAPhgIkRZ9KDIejjZXRa8Q_Uc"
         }
       ]
     },
     {
-      "query": "illinois basketball",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-10T23:40:00Z",
-      "related_news_urls": [
-        "https://fightingillini.com/news/2026/11/9/mens-basketball-no-3-illini-visit-no-16-texas-tech-in-ranked-road-test-tuesday",
-        "https://texastech.com/news/2026/11/8/mens-basketball-no-19-tech-hosts-no-3-illinois-on-tuesday",
-        "https://247sports.com/college/illinois/article/illinois-fighting-illini-basketball-texas-tech-dra-gibbs-lawhorn-injury-update-football-javari-barnett-292512797/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRypIq2MSfaWyDNEPTFJodIGL3jMVk2Jb6UPKTFjTs5S6F923NcQtJLRH9sR1E",
-      "image_credit": "University of Illinois Athletics",
-      "news": [
-        {
-          "url": "https://fightingillini.com/news/2026/11/9/mens-basketball-no-3-illini-visit-no-16-texas-tech-in-ranked-road-test-tuesday",
-          "title": "No. 3 Illini Visit No. 16 Texas Tech in Ranked Road Test Tuesday - University of Illinois Athletics",
-          "publisher": "University of Illinois Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRypIq2MSfaWyDNEPTFJodIGL3jMVk2Jb6UPKTFjTs5S6F923NcQtJLRH9sR1E"
-        },
-        {
-          "url": "https://texastech.com/news/2026/11/8/mens-basketball-no-19-tech-hosts-no-3-illinois-on-tuesday",
-          "title": "No. 16 Tech hosts No. 3 Illinois on Tuesday - Texas Tech Red Raiders",
-          "publisher": "Texas Tech Red Raiders",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0XlzV77qX2YxPqW-jHn9WqALhWZojVcE7kLduiAlHTLt93agz4kee5tkzZ2I"
-        },
-        {
-          "url": "https://247sports.com/college/illinois/article/illinois-fighting-illini-basketball-texas-tech-dra-gibbs-lawhorn-injury-update-football-javari-barnett-292512797/",
-          "title": "Illini Inquirer AM: GIbbs-Lawhorn, Illini face off in ranked matchup; Impact of Javari Barnett's injury",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpBGX_HEXYLASU6gxJcOVF3uPvxngPg8ffglBNIR-3lvSJIiOlIh919EtnJA8"
-        }
-      ]
-    },
-    {
-      "query": "western michigan football",
+      "query": "will venable",
       "approx_searches": "500+",
-      "published_at": "2026-11-10T23:40:00Z",
+      "published_at": "2026-11-11T00:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/akron-football-score-live-updates-223114012.html",
-        "https://www.cbssports.com/prediction/news/western-michigan-vs-akron-odds-picks-cfb-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus/",
-        "https://collegefootballnews.com/college-football/western-michigan-vs-akron-prediction-2026"
+        "https://www.mlb.com/news/2026-mlb-manager-of-the-year-award-winners",
+        "https://www.axios.com/local/chicago/2026/11/11/white-sox-will-venable-manager-of-year-2026",
+        "https://www.jsonline.com/story/sports/mlb/brewers/2026/11/10/pat-murphy-up-for-third-straight-nl-manager-of-year-award-tonight/92705272007/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGvCZjkMW_dFnlndHW1t4M1iP4e2K7fAs_x0wXBYqoelDl6WQONnNLKNcY3jI",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6YD8MdeONxidOdAdnbp60od9jYlmiWKr8oYTnqv58BvMWMe0xRwUF3CenI1k",
+      "image_credit": "MLB.com",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/akron-football-score-live-updates-223114012.html",
-          "title": "Akron football score, live updates vs. Western Michigan. Zips seek MAC upset",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.mlb.com/news/2026-mlb-manager-of-the-year-award-winners",
+          "title": "This year's Manager of the Year winners are ... (Watch on MLB Network, MLB+)",
+          "publisher": "MLB.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGvCZjkMW_dFnlndHW1t4M1iP4e2K7fAs_x0wXBYqoelDl6WQONnNLKNcY3jI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6YD8MdeONxidOdAdnbp60od9jYlmiWKr8oYTnqv58BvMWMe0xRwUF3CenI1k"
         },
         {
-          "url": "https://www.cbssports.com/prediction/news/western-michigan-vs-akron-odds-picks-cfb-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus/",
-          "title": "Western Michigan vs. Akron odds, picks, CFB predictions: Use Kalshi promo code CBSSPORTS55 for $55 bonus",
-          "publisher": "CBS Sports",
+          "url": "https://www.axios.com/local/chicago/2026/11/11/white-sox-will-venable-manager-of-year-2026",
+          "title": "White Sox manager Will Venable wins AL Manager of the Year after historic turnaround",
+          "publisher": "Axios",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF6h8g1_9OlOfDsKVm2kwXjmj1Xc1MZ7t-DLuC0rLZ3NCgRS0LMUcNgVqM430"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSG9EcMCFwRYFI8_ITy47NM70edTOVcNxQWxeBrnJd715PSiaDu3zbRFf8WNno"
         },
         {
-          "url": "https://collegefootballnews.com/college-football/western-michigan-vs-akron-prediction-2026",
-          "title": "Western Michigan vs Akron Prediction: Can the Broncos Keep Their Focus?",
-          "publisher": "College Football News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQoS7Rki6EdIUX7nKRWSgf9tVbfVr2CalYRSiBn5xr8dvKumNTiTbjFFRlQ7F0"
-        }
-      ]
-    },
-    {
-      "query": "steven tyler",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T23:40:00Z",
-      "related_news_urls": [
-        "https://www.rollingstone.com/music/music-news/steven-tyler-child-sex-abuse-trial-julia-misley-aerosmith-1235654761/",
-        "https://www.billboard.com/pro/steven-tyler-teen-bride-sexual-abuse-lawsuit-trial-2027/",
-        "https://consequence.net/2026/11/judge-sets-new-date-steven-tyler-trial/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyURf5hamLIcoGo6Y57rU3hxlxZ3PmzZtdhfzx9u4FDYIDRmM0GiAUh7MGWKQ",
-      "image_credit": "Rolling Stone",
-      "news": [
-        {
-          "url": "https://www.rollingstone.com/music/music-news/steven-tyler-child-sex-abuse-trial-julia-misley-aerosmith-1235654761/",
-          "title": "Judge Sets Steven Tyler Sex Assault Trial Date",
-          "publisher": "Rolling Stone",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyURf5hamLIcoGo6Y57rU3hxlxZ3PmzZtdhfzx9u4FDYIDRmM0GiAUh7MGWKQ"
-        },
-        {
-          "url": "https://www.billboard.com/pro/steven-tyler-teen-bride-sexual-abuse-lawsuit-trial-2027/",
-          "title": "Steven Tyler ‘Teen Bride’ Sex Abuse Trial Set for 2027 — And the Scope of the Case Could Widen Again",
-          "publisher": "Billboard",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZXn8yzTJowXKTS82mpQcgpsAH96JwtBNE1_51Hh9yDZc3flwYZbt5vWioGcw"
-        },
-        {
-          "url": "https://consequence.net/2026/11/judge-sets-new-date-steven-tyler-trial/",
-          "title": "Judge Sets New Date for Steven Tyler’s Sexual Assault Trial",
-          "publisher": "Consequence of Sound",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCpC6j3OP88lTL5NDrYqeULPGXJhbf67A48ec5Hp2svAG3xxEQQfyeLEsxka8"
-        }
-      ]
-    },
-    {
-      "query": "rutgers basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-10T23:40:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/rutgers/article/rutgers-vs-njit-preview-how-to-watch-tv-radio-live-thread-292471991/",
-        "https://sports.yahoo.com/articles/rutgers-basketball-vs-njit-game-223000601.html",
-        "https://www.sportsgambler.com/betting-tips/basketball/njit-highlanders-vs-rutgers-scarlet-knights-prediction-odds-2026-11-10/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxrjK5m2dHhmhRtKYVjwNg5hAkNQUVip6519PELpr8gSo5cRFXBx5hDeE2mhw",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/rutgers/article/rutgers-vs-njit-preview-how-to-watch-tv-radio-live-thread-292471991/",
-          "title": "Rutgers vs NJIT Preview: How to watch, TV, radio, live thread",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxrjK5m2dHhmhRtKYVjwNg5hAkNQUVip6519PELpr8gSo5cRFXBx5hDeE2mhw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/rutgers-basketball-vs-njit-game-223000601.html",
-          "title": "Rutgers Basketball vs. NJIT Game Thread",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7vBjpmEzNRW6wd4JTvKtH8gICP-val5URAHf0U6AqwKdXktI6iQJ6BqoFjUk"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/njit-highlanders-vs-rutgers-scarlet-knights-prediction-odds-2026-11-10/",
-          "title": "NJIT vs Rutgers Prediction, Picks & Odds | 10 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnTK4eFdPE1SvYEbvFwOHkLfEeQvcYAIDIiLh2O-A13r6dm0UAfdFBTQX-81M"
-        }
-      ]
-    },
-    {
-      "query": "bucks vs knicks",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-10T23:30:00Z",
-      "related_news_urls": [
-        "https://www.jsonline.com/story/sports/nba/bucks/2026/11/10/milwaukee-bucks-vs-new-york-knicks-injury-report-starters/92704845007/",
-        "https://sports.yahoo.com/articles/knicks-could-catch-break-2-214004270.html",
-        "https://www.cbssports.com/betting/news/knicks-bucks-prediction-odds-time-2026-nba-picks-best-bets-tuesday-november-10/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgyjrdEeGKePuj2hzA-4NCAIhd5g-GgjzPu0YBW-v09kW2_51HEC91hXxYxJM",
-      "image_credit": "Milwaukee Journal Sentinel",
-      "news": [
-        {
-          "url": "https://www.jsonline.com/story/sports/nba/bucks/2026/11/10/milwaukee-bucks-vs-new-york-knicks-injury-report-starters/92704845007/",
-          "title": "Bucks vs. Knicks, Milwaukee faces injury concerns for first time",
+          "url": "https://www.jsonline.com/story/sports/mlb/brewers/2026/11/10/pat-murphy-up-for-third-straight-nl-manager-of-year-award-tonight/92705272007/",
+          "title": "Will Pat Murphy win NL manager of the year again? We find out tonight",
           "publisher": "Milwaukee Journal Sentinel",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgyjrdEeGKePuj2hzA-4NCAIhd5g-GgjzPu0YBW-v09kW2_51HEC91hXxYxJM"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/knicks-could-catch-break-2-214004270.html",
-          "title": "Knicks Could Catch Break as 2 Key Bucks Face Uncertainty Ahead of Kith Night",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyphhoNIvfGiZ4pQw8e2WdYL39hSBnt3nMsSbgovJ0i1et45ZN23czp-lgsZg"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/knicks-bucks-prediction-odds-time-2026-nba-picks-best-bets-tuesday-november-10/",
-          "title": "Knicks vs. Bucks prediction, odds, time: 2026 NBA picks for Tuesday, Nov. 10 from proven model",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSO2NUuV2YKDy5Hk_qTUZ0FNQi1mVNIjaWhyPu9aCKdGbEMPY_09vrPN49AMWw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9TfvcGvjNGJ0qvGm0kb4G2ogohYnNPrOSKvq4utAziEKEB3q2qDXkcL689-g"
         }
       ]
     },
     {
-      "query": "duke basketball",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-10T23:20:00Z",
+      "query": "ncaa men's basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T00:30:00Z",
       "related_news_urls": [
-        "https://www.espn.com/mens-college-basketball/story/_/id/50436123/champions-classic-2026-duke-michigan-state-kansas-kentucky",
-        "https://www.cbssports.com/prediction/news/polymarket-promo-code-cbssports-score-25-bonus-for-duke-vs-michigan-state-picks-2026-champions-classic/",
-        "https://www.detroitnews.com/story/sports/college/michigan-state-university/2026/11/09/michigan-state-spartans-duke-champions-classic-jasiah-jervis/92692554007/"
+        "https://aamusports.com/news/2026/11/9/mens-basketball-graham-paces-aamu-in-loss-to-depaul.aspx",
+        "https://www.bleachernation.com/picks/2026/11/09/swac-basketball-predictions-computer-picks-and-best-bets-november-10/",
+        "https://depaulbluedemons.com/news/2026/11/9/mens-basketball-depaul-handles-business-monday-against-alabama-am"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQB61aHJJPWxESh2zxOcVY4_PXkGH5b6WAdueLRY5NjSibwW0FP7uRIcW6bHsE",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXFOA34EM_r-yQvdcdWaHGYXJb_4owYFBk4wCpwFIwWPzLB8Y07CfKOmdTAJ8",
+      "image_credit": "Alabama A&M Athletics",
+      "news": [
+        {
+          "url": "https://aamusports.com/news/2026/11/9/mens-basketball-graham-paces-aamu-in-loss-to-depaul.aspx",
+          "title": "Graham Paces AAMU in Loss to DePaul",
+          "publisher": "Alabama A&M Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXFOA34EM_r-yQvdcdWaHGYXJb_4owYFBk4wCpwFIwWPzLB8Y07CfKOmdTAJ8"
+        },
+        {
+          "url": "https://www.bleachernation.com/picks/2026/11/09/swac-basketball-predictions-computer-picks-and-best-bets-november-10/",
+          "title": "SWAC Basketball Predictions, Computer Picks and Best Bets | November 10",
+          "publisher": "Bleacher Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2iUpuDEvm5XLu_bifKqIAT528povigNswMREyaWmaRLGer8rk0dZVsDZgWn0"
+        },
+        {
+          "url": "https://depaulbluedemons.com/news/2026/11/9/mens-basketball-depaul-handles-business-monday-against-alabama-am",
+          "title": "DePaul Handles Business Monday Against Alabama A&M",
+          "publisher": "DePaul University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNTjXzfMJORqJP5wg_jwdTQ0emcEd3e2YKf_Y6bQEEdqyiaw5iJqlB2EgA2zw"
+        }
+      ]
+    },
+    {
+      "query": "cayden boozer",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T00:30:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/sports/ncaab/2026/11/10/cayden-boozer-duke-cameron-boozer-grizzlies-bone-marrow-registry/92691841007/",
+        "https://www.applevalleynewsnow.com/news/shareable-stories/duke-blue-devils-basketball-player-cayden-boozer-visited-blood-stem-cell-transplant-patients-and-donors/image_cc1b920a-c2c3-5d39-825d-c207cfe18ba4.html",
+        "https://tulsaworld.com/life-entertainment/nation-world/wellness/image_ed34d53c-39cf-5a24-ad39-daadddb33289.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9Z2n0lzlavHK6lrSPFNV0GyJPut9Tj_A-ZH5iSRWJ4uRcQ3ZYMCq2sFCUUW4",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/sports/ncaab/2026/11/10/cayden-boozer-duke-cameron-boozer-grizzlies-bone-marrow-registry/92691841007/",
+          "title": "‘We saved your life’: The remarkable bond connecting Cayden, Cameron and Carmani Boozer",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9Z2n0lzlavHK6lrSPFNV0GyJPut9Tj_A-ZH5iSRWJ4uRcQ3ZYMCq2sFCUUW4"
+        },
+        {
+          "url": "https://www.applevalleynewsnow.com/news/shareable-stories/duke-blue-devils-basketball-player-cayden-boozer-visited-blood-stem-cell-transplant-patients-and-donors/image_cc1b920a-c2c3-5d39-825d-c207cfe18ba4.html",
+          "title": "Duke Blue Devils basketball player Cayden Boozer visited blood stem cell transplant patients and donors at the Duke University Hospital in October 2026. Boozer and his twin brother",
+          "publisher": "AppleValleyNewsNow.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbV47JGb6FzS83cSst3S2vELMFGSTvvBdnk2wsildVYJSFG79v9tX_8pNtcFo"
+        },
+        {
+          "url": "https://tulsaworld.com/life-entertainment/nation-world/wellness/image_ed34d53c-39cf-5a24-ad39-daadddb33289.html",
+          "title": "Duke Blue Devils basketball player Cayden Boozer visited blood stem cell transplant patients and donors at the Duke University Hospital in October 2026. Boozer and his twin brother",
+          "publisher": "Tulsa World",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF6uTlJilacG9tfWMZb928hFzOulOMvcPCvKqT7xkwjm1dXRvCR5mR1hhpzno"
+        }
+      ]
+    },
+    {
+      "query": "charlie sheen",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T00:30:00Z",
+      "related_news_urls": [
+        "https://adage.com/creativity/work/aa-home-instead-save-jeanie/",
+        "https://www.mediapost.com/publications/article/419296/ferris-bueller-sequel-ad-reunites-jennifer-grey.html",
+        "https://people.com/charlie-sheen-and-jennifer-grey-reunite-for-ferris-bueller-inspired-holiday-commercial-40-years-later-12247061"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOvblOV8E1-aI3p7F6o_ZmLLF2lA5rybcE5xzUw4zt3PJFTsLkFWdHLnZLwDQ",
+      "image_credit": "Ad Age",
+      "news": [
+        {
+          "url": "https://adage.com/creativity/work/aa-home-instead-save-jeanie/",
+          "title": "Home Instead reunites Jennifer Grey and Charlie Sheen for holiday ad",
+          "publisher": "Ad Age",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOvblOV8E1-aI3p7F6o_ZmLLF2lA5rybcE5xzUw4zt3PJFTsLkFWdHLnZLwDQ"
+        },
+        {
+          "url": "https://www.mediapost.com/publications/article/419296/ferris-bueller-sequel-ad-reunites-jennifer-grey.html",
+          "title": "'Ferris Bueller' Sequel Ad Reunites Jennifer Grey, Charlie Sheen 11/09/2026",
+          "publisher": "MediaPost",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQg0NsO2Pg79uJQdc7OrW3E94wnawwuJUi-atmI66cXDheGiTvPE3KgOM-lOFk"
+        },
+        {
+          "url": "https://people.com/charlie-sheen-and-jennifer-grey-reunite-for-ferris-bueller-inspired-holiday-commercial-40-years-later-12247061",
+          "title": "Charlie Sheen and Jennifer Grey Reunite for ‘Ferris Bueller’-Inspired Holiday Commercial 40 Years Later",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToToQytwbc2hl3wg60I4CL-xYqpuwQOS_0xy2-Ogl9JbvbtOU4PVGBee1le6U"
+        }
+      ]
+    },
+    {
+      "query": "georgetown basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T00:30:00Z",
+      "related_news_urls": [
+        "https://www.testudotimes.com/maryland-terps-basketball/95015/takeaways-from-maryland-mens-basketballs-86-74-crosstown-loss-to-georgetown",
+        "https://247sports.com/college/maryland/article/as-prep-begins-for-rivalry-game-against-no-9-virginia-maryland-learned-some-tough-lessons-in-first-loss-292454269/",
+        "https://www.washingtonpost.com/sports/2026/11/07/georgetown-thumps-maryland-retain-local-bragging-rights/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRBrqQNUf_vRVgN6q0kig9tC3ISdOqUBc-R2jN-xADAQPdWQ-qrre5YPtKaFGE",
+      "image_credit": "Testudo Times",
+      "news": [
+        {
+          "url": "https://www.testudotimes.com/maryland-terps-basketball/95015/takeaways-from-maryland-mens-basketballs-86-74-crosstown-loss-to-georgetown",
+          "title": "Takeaways from Maryland men’s basketball’s 86-74 crosstown loss to Georgetown",
+          "publisher": "Testudo Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRBrqQNUf_vRVgN6q0kig9tC3ISdOqUBc-R2jN-xADAQPdWQ-qrre5YPtKaFGE"
+        },
+        {
+          "url": "https://247sports.com/college/maryland/article/as-prep-begins-for-rivalry-game-against-no-9-virginia-maryland-learned-some-tough-lessons-in-first-loss-292454269/",
+          "title": "As prep begins for rivalry game against No. 9 Virginia, Maryland learned some tough lessons in first loss",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Sj3cP6knfXTf6XO_6oV8WeYFtC_y9OCE6iTrPJA2UACU_fjy_Ts8nCTeA6g"
+        },
+        {
+          "url": "https://www.washingtonpost.com/sports/2026/11/07/georgetown-thumps-maryland-retain-local-bragging-rights/",
+          "title": "Georgetown thumps Maryland to retain local bragging rights",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRx7Va7EOATGT1sMnpPxmTQfDNK1gOvG3nXEHC4N41s9s6ZusdcSg2dq0IaC8s"
+        }
+      ]
+    },
+    {
+      "query": "wild game",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T00:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nhl/recap/_/gameId/401892670",
+        "https://www.nhl.com/video/tbl-min-kucherov-scores-ppg-against-calvin-pickard-6408089760112",
+        "https://www.startribune.com/minnesota-wild-tampa-bay-lightning-score-today-quinn-hughes-kirill-kaprizov-stats-live-nhl-updates/601904569"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXMN8Q2iMa2mTxQtoZv1GGXw05tMmwsk75BXMTR6LQhHZTwhlRUbl_Ievy1sQ",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50436123/champions-classic-2026-duke-michigan-state-kansas-kentucky",
-          "title": "Champions Classic 2026: Previewing Michigan State-Duke, Kansas-Kentucky",
+          "url": "https://www.espn.com/nhl/recap/_/gameId/401892670",
+          "title": "Lightning 4-3 Wild (Nov 7, 2026) Game Recap",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQB61aHJJPWxESh2zxOcVY4_PXkGH5b6WAdueLRY5NjSibwW0FP7uRIcW6bHsE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXMN8Q2iMa2mTxQtoZv1GGXw05tMmwsk75BXMTR6LQhHZTwhlRUbl_Ievy1sQ"
         },
         {
-          "url": "https://www.cbssports.com/prediction/news/polymarket-promo-code-cbssports-score-25-bonus-for-duke-vs-michigan-state-picks-2026-champions-classic/",
-          "title": "Polymarket promo code CBSSPORTS: Score $25 bonus for Duke vs. Michigan State picks, 2026 Champions Classic",
-          "publisher": "CBS Sports",
+          "url": "https://www.nhl.com/video/tbl-min-kucherov-scores-ppg-against-calvin-pickard-6408089760112",
+          "title": "Kucherov's PPG wins it in OT",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc1N3pgRbYNrAxfLu_5nWNnQ17Nx5Il6KQaAs6Fd1CL3L19uUvkkZZtbUzlpg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCepZaOp1FLKrV7UGTBpM_lXIPHLFJCaNDR7gEszK8J-bnkcOzn-s6wVsTcFE"
         },
         {
-          "url": "https://www.detroitnews.com/story/sports/college/michigan-state-university/2026/11/09/michigan-state-spartans-duke-champions-classic-jasiah-jervis/92692554007/",
-          "title": "Duke test will show how much Jasiah Jervis brings to Michigan State lineup",
-          "publisher": "The Detroit News",
+          "url": "https://www.startribune.com/minnesota-wild-tampa-bay-lightning-score-today-quinn-hughes-kirill-kaprizov-stats-live-nhl-updates/601904569",
+          "title": "Wild, undone by penalties, blow two-goal lead and fall to Lightning in OT",
+          "publisher": "Star Tribune",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqDR01HQNxwVjGIJFKNrm6cJYyzckz_OR8jM9A7YY1KrkLdND86tui9-Rp7sM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSE4h0PXHYP9m2qzX-OQQjjgcHpiDaMZj4sYFMIw9jaDF4Eum_aOqIH-r9JwnQ"
         }
       ]
     },
     {
-      "query": "rick van vactor",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T23:20:00Z",
+      "query": "la salle vs villanova",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T00:30:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/articles/tlc-star-arrested-domestic-violence-172612134.html",
-        "https://popculture.com/celebrity/news/90-day-fiance-cast-member-arrested-on-domestic-violence-charges/",
-        "https://www.complex.com/pop-culture/a/bernadette-giacomazzo/90-day-fiance-rick-van-vactor-domestic-violence-arrest"
+        "https://sports.yahoo.com/articles/villanova-wildcats-1-1-vs-233000185.html",
+        "https://goexplorers.com/news/2026/11/9/mens-basketball-la-salle-heads-to-the-main-line-for-big-5-matchup-with-villanova.aspx",
+        "https://phlsportsnow.com/villanova-preview-bulletin-board-material-as-cats-host-la-salle/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZAFW4iiN9ZsfW8kAO4wGRvqyKYSX6udLp31U5TVHoa5F6b5JGIvb0H5qRzP0",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQllUVDei0T3U4XrYF4RggmE7SUh9dYm-m1BkHKVtwaTEe8XLb87TjpoiONrAE",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/tlc-star-arrested-domestic-violence-172612134.html",
-          "title": "TLC star arrested on domestic violence charge",
+          "url": "https://sports.yahoo.com/articles/villanova-wildcats-1-1-vs-233000185.html",
+          "title": "Villanova Wildcats (1-1) vs La Salle Explorers (1-1): Game Chat",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQllUVDei0T3U4XrYF4RggmE7SUh9dYm-m1BkHKVtwaTEe8XLb87TjpoiONrAE"
+        },
+        {
+          "url": "https://goexplorers.com/news/2026/11/9/mens-basketball-la-salle-heads-to-the-main-line-for-big-5-matchup-with-villanova.aspx",
+          "title": "Men's Basketball Prepares For Big 5 Matchup With Villanova",
+          "publisher": "La Salle University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRaSnijDFgRRG0ZnvXSd8cJmo87yBpxh-vtYzzwD98TBwdvjXQhEvU64qNtgjs"
+        },
+        {
+          "url": "https://phlsportsnow.com/villanova-preview-bulletin-board-material-as-cats-host-la-salle/",
+          "title": "Villanova Preview: Bulletin Board Material as ‘Cats Host La Salle?",
+          "publisher": "Philadelphia Sports Now",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRI8Yj85v-ALOeRJF2zXdH4Q9NigZdMoXrethmITZZpoTYSWmkwmg4esd_OpYE"
+        }
+      ]
+    },
+    {
+      "query": "cma awards 2026",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T00:30:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/entertainment/music/2026/11/10/country-music-cma-awards-2026-diversity/92710378007/",
+        "https://www.yahoo.com/entertainment/music/articles/cma-awards-2026-includes-no-110133161.html",
+        "https://www.rollingstone.com/music/music-country/2026-cma-awards-performers-chris-stapleton-mumford-and-sons-1235655086/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRORb2lbjAUPQKK6DFAxHYeDLH92dUJwXrJnt9JBeOjkC8uYZbH82jgffnjcmI",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/entertainment/music/2026/11/10/country-music-cma-awards-2026-diversity/92710378007/",
+          "title": "CMA Awards 2026 includes no nominations for people of color | Exclusive",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRORb2lbjAUPQKK6DFAxHYeDLH92dUJwXrJnt9JBeOjkC8uYZbH82jgffnjcmI"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/music/articles/cma-awards-2026-includes-no-110133161.html",
+          "title": "CMA Awards 2026 includes no nominations for people of color | Exclusive",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZAFW4iiN9ZsfW8kAO4wGRvqyKYSX6udLp31U5TVHoa5F6b5JGIvb0H5qRzP0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTz2pFI21NoFFBXH4VmyNHLlacPEGSO-sGHhoJPS3_yk0YF1z95Vd0pWhEqJ-E"
         },
         {
-          "url": "https://popculture.com/celebrity/news/90-day-fiance-cast-member-arrested-on-domestic-violence-charges/",
-          "title": "’90 Day Fiancé’ Cast Member Arrested on Domestic Violence Charges",
-          "publisher": "PopCulture.com",
+          "url": "https://www.rollingstone.com/music/music-country/2026-cma-awards-performers-chris-stapleton-mumford-and-sons-1235655086/",
+          "title": "Mumford & Sons, Halestorm, Chris Stapleton Set to Perform at 2026 CMA Awards",
+          "publisher": "Rolling Stone",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9DOmVfp7UHiINIbT3WxG6urHe3tkA5-dX-SygGf6VbVZA6_9_pmOv0gqTIYg"
-        },
-        {
-          "url": "https://www.complex.com/pop-culture/a/bernadette-giacomazzo/90-day-fiance-rick-van-vactor-domestic-violence-arrest",
-          "title": "'90 Day Fiancé' Star Rick Van Vactor Claims Girlfriend Started Fight That Led to His Arrest",
-          "publisher": "Complex",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNChFYwGpbKXBqzsbxBM7k-TutLlRDPoFEZRUQHbR6frrOLCCyB-IUQN7ZbOU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkwats1_xArKTKKVLkO_0XL_9FiGfma0Nhxzq1nS6EKs41UfvK54PlcgRp4yU"
         }
       ]
     },
     {
-      "query": "iowa basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T23:20:00Z",
+      "query": "memphis vs vanderbilt",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T00:20:00Z",
       "related_news_urls": [
-        "https://www.hawkcentral.com/story/sports/college/iowa/basketball-men/2026/11/10/iowa-basketball-score-virginia-tech-live-updates-highlights--live/92701819007/",
-        "https://hawkeyesports.com/news/2026/11/8/mbb-notes-virginia-tech-in-sioux-city",
-        "https://techsideline.com/subscription/2026/11/10/hokies-mbb-faces-iowa-sioux-city"
+        "https://www.commercialappeal.com/story/sports/college/memphis-tigers/2026/11/10/memphis-basketball-vanderbilt-live-score-updates--live/92321115007/",
+        "https://www.tennessean.com/story/sports/college/vanderbilt/2026/11/10/vanderbilt-basketball-memphis-tv-channel-today-time/92698870007/",
+        "https://sports.yahoo.com/articles/game-3-memphis-state-tigers-234500047.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-c_ArzRaG62ehZh4ckBWcDEvIWaMmsEtvsDErCstyWCCx739zdYgaNkfIOzI",
-      "image_credit": "Hawk Central",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReWWP_2o1dxVQvcelRPSjrUgAN4HA7E8E80Z_hFl93-Pcnx1Huy5UlS60-zZ8",
+      "image_credit": "The Commercial Appeal",
       "news": [
         {
-          "url": "https://www.hawkcentral.com/story/sports/college/iowa/basketball-men/2026/11/10/iowa-basketball-score-virginia-tech-live-updates-highlights--live/92701819007/",
-          "title": "Iowa basketball vs Virginia Tech, score, live updates, highlights",
-          "publisher": "Hawk Central",
+          "url": "https://www.commercialappeal.com/story/sports/college/memphis-tigers/2026/11/10/memphis-basketball-vanderbilt-live-score-updates--live/92321115007/",
+          "title": "Memphis basketball vs Vanderbilt score, live updates, start time, TV channel",
+          "publisher": "The Commercial Appeal",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-c_ArzRaG62ehZh4ckBWcDEvIWaMmsEtvsDErCstyWCCx739zdYgaNkfIOzI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReWWP_2o1dxVQvcelRPSjrUgAN4HA7E8E80Z_hFl93-Pcnx1Huy5UlS60-zZ8"
         },
         {
-          "url": "https://hawkeyesports.com/news/2026/11/8/mbb-notes-virginia-tech-in-sioux-city",
-          "title": "MBB Notes: Virginia Tech in Sioux City",
-          "publisher": "Iowa Hawkeyes Athletics",
+          "url": "https://www.tennessean.com/story/sports/college/vanderbilt/2026/11/10/vanderbilt-basketball-memphis-tv-channel-today-time/92698870007/",
+          "title": "What channel is Vanderbilt basketball vs Memphis on today? Time, TV schedule",
+          "publisher": "The Tennessean",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvzOyWN1veQJwGqBtKg1pkqvBHph4BLKF2wKNtJehXElt7xs-y6w3HtDRSlYg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkM6dfR5Ya5HzexFINK1ee22XvQqwnPcTn6dpEtk3JIfPir5OnuYcAFMzybPk"
         },
         {
-          "url": "https://techsideline.com/subscription/2026/11/10/hokies-mbb-faces-iowa-sioux-city",
-          "title": "Hokies Men’s Basketball Faces Iowa In Sioux City",
-          "publisher": "TechSideline",
+          "url": "https://sports.yahoo.com/articles/game-3-memphis-state-tigers-234500047.html",
+          "title": "Game 3: Memphis State Tigers at Vanderbilt Commodores – Open Game Thread",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9Qcl0cpq4c7eYLsoMxWcgwr4JRQVpnhw-WyDjB-NM_C2rAnCw6pI6s_GZDIQ"
-        }
-      ]
-    },
-    {
-      "query": "drummer",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T23:20:00Z",
-      "related_news_urls": [
-        "https://www.stltoday.com/life-entertainment/local/music/article_c997393e-9256-481b-ad32-6c0b34ca73a5.html",
-        "https://www.freep.com/story/entertainment/people/2026/11/10/st-louis-musician-bobby-taylor-dies-squamous-cell-cancer-cause/92703940007/",
-        "https://www.vice.com/en/article/veteran-rock-drummer-dies-after-years-long-cancer-battle-as-family-shares-heartbreaking-tribute/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnYF0UU0bAIfzNDig9oSycPsJDem4tK_4an673i4QJLf4RB2S9hzkFgO7x9ao",
-      "image_credit": "STLtoday.com",
-      "news": [
-        {
-          "url": "https://www.stltoday.com/life-entertainment/local/music/article_c997393e-9256-481b-ad32-6c0b34ca73a5.html",
-          "title": "St. Louis drummer Bobby Taylor, who played in many local bands, dies at 58",
-          "publisher": "STLtoday.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnYF0UU0bAIfzNDig9oSycPsJDem4tK_4an673i4QJLf4RB2S9hzkFgO7x9ao"
-        },
-        {
-          "url": "https://www.freep.com/story/entertainment/people/2026/11/10/st-louis-musician-bobby-taylor-dies-squamous-cell-cancer-cause/92703940007/",
-          "title": "Longtime rock drummer Bobby Taylor dies at 58. Cause of death announced",
-          "publisher": "Detroit Free Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdPD4K6S2FX2ap4ni4zLslPNCOcov4k_8e7HWxLb7OPN5HJgVM1wfBUrxoykU"
-        },
-        {
-          "url": "https://www.vice.com/en/article/veteran-rock-drummer-dies-after-years-long-cancer-battle-as-family-shares-heartbreaking-tribute/",
-          "title": "Veteran Rock Drummer Dies After Years-Long Cancer Battle as Family Shares Heartbreaking Tribute",
-          "publisher": "VICE",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCtcYZsTO81pZH60blKaWLIztx0KbfNeCkAhSJ1QRXbW4-_l0qAPcUqhvZies"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgrutRILKCQVzs_Y0ukcDFLdMslnjj2OzO76jJJIrCVdIqFR7wchNjma8QzTk"
         }
       ]
     }
