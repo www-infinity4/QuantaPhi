@@ -29,13 +29,14 @@ export function suggestNuances(response){
      .map(x=>x.slice(0,220)).slice(0,5);
    const linked=Array.isArray(c.linkedTickets)?c.linkedTickets.length:0;
    const repo=String(c.repositorySuggestion||'');
-   const canDraft=reconciled&&c.status==='candidate_needs_repository_inspection'&&c.repositoryVerified===false&&REPO.test(repo)
+   const existingIssueUrl=c.id==='infinity-nuances'?'https://github.com/www-infinity4/QuantaPhi/issues/1923':null;
+   const canDraft=!existingIssueUrl&&reconciled&&c.status==='candidate_needs_repository_inspection'&&c.repositoryVerified===false&&REPO.test(repo)
      &&Array.isArray(c.linkedTickets)&&!linked&&ids.length>0;
    return {id:c.id,title:String(c.title||c.id).slice(0,100),repository:repo,
     repositoryVerified:false,verified:false,mentions:Math.max(0,Number(c.mentions)||0),
     evidenceCount:ids.length,evidenceIds:ids,
     excerpts:(Array.isArray(c.evidence)?c.evidence:[]).slice(0,3).map(e=>String(e?.excerpt||'').slice(0,320)),
-    constraints,linkedTickets:linked,canDraft,
+    constraints,linkedTickets:linked,existingIssueUrl,canDraft,
     improvement:improvements[c.id]||'Review these earlier owner requests against the exact repository, newer corrections and existing tickets before proposing a change.',
     status:'proposal_not_source_verified'};
   }).sort((a,b)=>{
