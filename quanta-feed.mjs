@@ -7,7 +7,7 @@ import {mountSpaceSource} from './quanta-feed-spaces.mjs';
 import {cards as BUBBLES_CARDS} from './bubbles-card-catalog.mjs';
 import {loadOwnQuantScores} from './quanta-feed-quants.mjs';
 import {openQuickCardPreview,safeLocalCardUrl} from './quick-card-preview.mjs';
-import {FEED_STORAGE_KEY,FEED_TABS,cleanFeedState,feedCandidates,nextFeedCard,nextFeedDirection,markViewed,markOpened,toggleFollowing,toggleInterest} from './quanta-feed-rank.mjs';
+import {FEED_STORAGE_KEY,FEED_TABS,cleanFeedState,feedCandidates,nextFeedCard,nextFeedDirection,markViewed,markOpened,toggleFollowing,toggleInterest,hideFeedCard} from './quanta-feed-rank.mjs';
 import {INTEREST_DEPARTMENTS} from './quanta-context-placement.mjs';
 import {registerVisibleCard} from './quanta-feed-exposure.mjs';
 
@@ -70,6 +70,16 @@ function followButton(card,refresh){
   state=toggleFollowing(safeRead(),card.id);persist();refresh();shareChange();
  });return b;
 }
+function hideButton(card,refresh){
+ const btn=create('button','qf-button qf-not-for-me','Not for me');btn.type='button';
+ btn.setAttribute('aria-label','Hide '+card.name+' from my discovery feeds');
+ btn.addEventListener('click',()=>{
+  state=hideFeedCard(safeRead(),card.id);
+  if(current===card.id)current='';
+  persist();refresh();shareChange();
+ });
+ return btn;
+}
 function makeTile(card,refresh){
  const tile=create('article','qf-tile');tile.dataset.cardId=card.id;
  const art=createCardArtwork(card,true);
@@ -83,6 +93,7 @@ function makeTile(card,refresh){
   const openBtn=create('button','qf-button','Open card');openBtn.type='button';openBtn.addEventListener('click',()=>open(card));buttons.append(openBtn);
  }
  if(card.origin!=='source')buttons.append(followButton(card,refresh));
+ buttons.append(hideButton(card,refresh));
  tile.append(art,topic,title,desc);
  if(card.origin==='source'){
   const inline=create('div','qf-inline-tool');mountCardTools(inline,card);tile.append(inline);
@@ -124,7 +135,14 @@ function renderHome(){
    });
    chips.append(chip);
   }
-  chooser.append(chips);host.append(chooser);
+  chooser.append(chips);
+  if(state.hidden?.length){
+   const reset=create('button','qf-interest-chip','Restore '+state.hidden.length+' hidden card(s)');
+   reset.type='button';reset.addEventListener('click',()=>{
+    state={...safeRead(),hidden:[]};persist();renderHome();shareChange();
+   });chooser.append(reset);
+  }
+  host.append(chooser);
  }
  const status=create('p','qf-muted');status.id='quantaFeedStatus';status.setAttribute('role','status');host.append(status);
  const feature=create('div','qf-feature');feature.id='quantaFeedFeature';host.append(feature);
@@ -168,6 +186,7 @@ function renderHome(){
    openBtn.addEventListener('click',()=>open(selected));buttons.append(openBtn);
   }
   if(selected.origin!=='source')buttons.append(followButton(selected,refresh));
+  buttons.append(hideButton(selected,refresh));
   if(selected.origin!=='source'||!['google','bing'].includes(selected.id)){
    const original=create('a','qf-link','Original source ↗');original.href=selected.url;original.target='_blank';original.rel='noopener noreferrer';buttons.append(original);
   }
