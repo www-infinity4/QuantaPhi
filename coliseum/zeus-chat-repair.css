@@ -1,79 +1,89 @@
-/* Zeus 2026-11-02: content-first light chat, no simulated paid releases. */
-:root{color:#263238;background:#f8f9fb;color-scheme:light}
-body{color:#263238;background:#f8f9fb}
-.topbar{background:#fff;border-bottom:1px solid #e1e5e9;color:#263238}
-.brand,.home-link{color:#263238}
-.layout{max-width:1050px}
-.hero{display:block;min-height:0;padding:22px 0 12px;border:0}
-.hero-art{display:none}
-.hero-copy h1{font-size:clamp(30px,6vw,46px);margin:2px 0 8px;letter-spacing:-.03em;color:#263238}
-.hero-copy h1 em{color:#263238}
-.hero-lead{color:#263238;font-size:17px;font-weight:600}
-.hero-copy>p:not(.eyebrow),.hero-copy>p:not(.hero-lead):not(.eyebrow){color:#56626b}
-.eyebrow{color:#536776}
-.hero-buttons{margin:14px 0 4px}
-.primary{background:#fff;color:#263238;border:1px solid #bac6d0}
-.secondary{background:#f5f7f8;color:#263238;border:1px solid #c8d0d7}
+/* Zeus Work Order 001: preserve the existing Oracle Octaves / thunder-arena identity.
+   Chat first, dark-blue/gold original materials; no fictitious rooms, subscriptions or responses. */
+:root{color:#e7eef5;background:#081421;color-scheme:dark}
+body{color:#e7eef5;background:radial-gradient(ellipse at 75% 5%,#16304c 0%,transparent 35%),#081421}
+.topbar{background:#091827;border-color:#91acd122;color:#e7eef5}
+.brand,.home-link{color:#eaf1f7}
+.layout{max-width:1080px}
+.hero{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(110px,19%);align-items:center;min-height:0;gap:16px;padding:26px 0 18px;border-bottom:1px solid #416485}
+.hero-art{display:grid;grid-column:2;grid-row:1;min-height:178px;border-radius:20px}
+.hero-art::before{inset:17px 28px}.hero-art::after{inset:34px 46px}
+.hero-art .lightning{font-size:clamp(76px,10vw,140px)}
+.hero-art .temple{letter-spacing:.22em;font-size:8px}
+.hero-copy{grid-column:1;grid-row:1;min-width:0}
+.hero-copy h1{font-size:clamp(32px,6vw,52px);margin:4px 0 10px;letter-spacing:-.035em;color:#f5d08a}
+.hero-lead{font-size:clamp(17px,2vw,22px);font-weight:700;color:#eff6fa}
+.hero-copy>p:not(.eyebrow):not(.hero-lead){color:#bbcad7}
+.eyebrow{color:#f0c784}
+.hero-buttons{margin:12px 0 4px}
+.primary{background:linear-gradient(145deg,#e1ad58,#f7cf83);color:#132133;border-color:#f2d093}
+.secondary{background:#152b40;color:#eaf3fa;border-color:#567187}
 .hero-buttons #zeusAskBuilder,.hero-buttons+.fineprint{display:none!important}
 .models,.plans{display:none!important}
-.arena{padding:14px 0 20px}
-.arena h2,.arena-heading p,.arena-heading .eyebrow{color:#263238}
+.arena{padding:18px 0 20px}
+.arena h2,.arena-heading p{color:#e7eef5}
 .arena-heading{margin-bottom:12px}
-.local-pill{color:#536776;background:#fff;border-color:#d6dfe5}
+.local-pill{color:#b1d4e5;background:#10283d;border-color:#416585}
 .arena-layout{display:flex;flex-direction:column-reverse;gap:14px}
-.workzone,.rooms{width:100%;background:#fff;border:1px solid #d9e0e6;color:#263238;box-shadow:0 2px 12px #1d34430b}
+.workzone,.rooms{width:100%;background:#0f2439;border:1px solid #416585;color:#e7eef5;box-shadow:0 4px 14px #0003}
 .rooms{padding:12px}
 .workzone{padding:clamp(12px,2vw,20px)}
-.workzone-top{border-bottom:1px solid #e3e8ec}
-.workzone-top h3{color:#263238}
-.mode-toggle{background:#eff2f4}
-.mode-toggle button{color:#455861}
-.mode-toggle button[aria-pressed="true"]{background:#fff;color:#263238;box-shadow:0 1px 5px #1d34431f}
-.notice{background:#f4f7f8;color:#425663;border-color:#dde5e9}
-.workzone h4{margin:11px 0 8px;color:#263238}
-.fineprint,.room-btn span,.idea-date{color:#5a6872}
-.zeus-assistant-mount{width:100%;min-width:0;padding:6px;border:1px solid #d9e0e6;border-radius:14px;background:#fff}
-#zeusAssistantStatus{margin:3px 6px 8px;font-size:12px;color:#536776}
+.workzone-top{border-bottom-color:#49637a}
+.workzone-top h3,.workzone h4{color:#f4d49b}
+.mode-toggle{background:#061422}
+.mode-toggle button{color:#c3d4e1;min-height:44px}
+.mode-toggle button[aria-pressed="true"]{background:#eec276;color:#102034}
+.notice{background:#193851;color:#e2ecf5;border-color:#395a71}
+.fineprint,.room-btn span,.idea-date{color:#b7c8d7}
+.zeus-assistant-mount{width:100%;min-width:0;padding:6px;border:1px solid #416585;border-radius:14px;background:#122c43}
+#zeusAssistantStatus{margin:4px 8px 10px;font-size:14px;color:#d6e6f1}
 #zeusAssistantFrame{display:block;width:100%;height:clamp(410px,67dvh,780px);border:0;border-radius:10px;background:#fff}
-#zeusLocalNotes{margin-top:13px;padding:10px;border:1px solid #dbe2e7;border-radius:10px}
-#zeusLocalNotes summary{color:#3e5260;cursor:pointer;font-weight:650}
+#zeusLocalNotes{margin-top:13px;padding:10px;border:1px solid #416585;border-radius:10px}
+#zeusLocalNotes summary{color:#f0d399;cursor:pointer;font-weight:700}
 #zeusLocalNotes .pitch-form{margin-top:10px}
-.room-btn,.sector-btn{background:#f4f6f7;color:#344651;border-color:#dde4e8}
-.room-btn.active,.sector-btn.active{background:#e7eff4;color:#263238;border-color:#98afbe}
-.pitch-form label,.idea-card p,.chat-note p{color:#263238}
-.pitch-form input,.pitch-form textarea{background:#fff;color:#263238;border-color:#b4c4cf}
-.idea-card,.chat-note{background:#f7f9fa;border-color:#d7e0e6;color:#263238}
-.idea-actions button{background:#f4f6f7;color:#263238;border:1px solid #b5c5cf}
-.blank{color:#5d6a73;border-color:#d2dce2}
-.switchline{border-color:#e3e8ec;color:#263238}
-.switchline span{color:#536776}
-.how{padding-top:18px;border-color:#dfe5e8}
-.how h2{color:#263238}
-.how-grid article{background:#fff;border-color:#d9e0e6}
-.how-grid h3,.how-grid p{color:#263238}
-footer,footer a{color:#52616a}
-@media(max-width:500px){.hero{padding:12px 0 4px}.hero-buttons a{width:auto;flex:1}.arena{padding-top:8px}.workzone-top{flex-wrap:wrap}.mode-toggle{width:100%}.mode-toggle button{flex:1}#zeusAssistantFrame{height:calc(100dvh - 218px);min-height:440px}}
-
-/* Instant Zeus quest entry: one real textbox with a compact Send action. */
-.zeus-quest-form{display:grid;gap:8px;margin:17px 0 10px;max-width:850px}
-.zeus-quest-form label{font:700 16px/1.4 system-ui,sans-serif;color:#263238;letter-spacing:.01em}
-.zeus-quest-compose{display:grid;grid-template-columns:minmax(0,1fr) 86px;align-items:stretch;gap:9px}
-#zeusQuestInput{width:100%;min-width:0;min-height:62px;resize:vertical;border:1px solid #b5c1cb;border-radius:12px;background:#fff;color:#263238;padding:13px 14px;font:500 18px/1.45 system-ui,sans-serif;letter-spacing:.012em;box-shadow:none}
-#zeusQuestInput::placeholder{color:#687983;opacity:1}
-#zeusQuestInput:focus-visible,#zeusQuestSend:focus-visible{outline:3px solid #427c98;outline-offset:2px}
-#zeusQuestSend{min-height:54px;align-self:stretch;padding:8px 11px;background:#fff;color:#263238;border:1px solid #9babb6;border-radius:12px;font:750 17px system-ui,sans-serif}
-#zeusQuestSend:disabled{opacity:.6;cursor:wait}
-.zeus-quest-status{font:500 13px/1.5 system-ui,sans-serif;color:#52616b!important;margin:0!important;min-height:19px}
-@media(max-width:420px){.zeus-quest-compose{grid-template-columns:minmax(0,1fr) 75px;gap:7px}#zeusQuestInput{font-size:17px}#zeusQuestSend{font-size:16px;padding:6px}}
-
-/* Keep Zeus a chat, not six different prototype cards competing for attention. */
+.room-btn,.sector-btn{background:#162e46;color:#dce7f2;border-color:#476680;min-height:44px}
+.room-btn.active,.sector-btn.active{background:#29465c;color:#ffda95;border-color:#cf9d55}
+.pitch-form label,.idea-card p,.chat-note p{color:#e7eef5}
+.pitch-form input,.pitch-form textarea{background:#0a192a;color:#eff6ff;border-color:#57748a;font-size:16px}
+.idea-card,.chat-note{background:#132d44;border-color:#45617c;color:#e7eef5}
+.idea-actions button{background:#193c55;color:#eff6ff;border:1px solid #607b92;min-height:44px}
+.blank{color:#c0d0dd;border-color:#60768d}
+.switchline{border-color:#45617c;color:#e7eef5}
+.switchline span{color:#bfcedd}
+.how{padding-top:18px;border-color:#416585}
+.how h2{color:#f5d08a}
+.how-grid article{background:#10273b;border-color:#42617a}
+.how-grid h3,.how-grid p{color:#dfebf5}
+footer,footer a{color:#bbccda}
+.zeus-quest-form{display:grid;gap:9px;margin:15px 0 10px;max-width:850px}
+.zeus-quest-form label{font:700 17px/1.4 system-ui,sans-serif;color:#f5d08a;letter-spacing:.01em}
+.zeus-quest-compose{display:grid;grid-template-columns:minmax(0,1fr) minmax(80px,96px);align-items:stretch;gap:9px}
+#zeusQuestInput{width:100%;min-width:0;min-height:65px;resize:vertical;border:1px solid #7594ae;border-radius:12px;background:#0e253b;color:#f5faff;padding:13px 14px;font:500 18px/1.5 system-ui,sans-serif;letter-spacing:.012em;box-shadow:none}
+#zeusQuestInput::placeholder{color:#b2c9d9;opacity:1}
+#zeusQuestInput:focus-visible,#zeusQuestSend:focus-visible{outline:3px solid #f3d28a;outline-offset:2px}
+#zeusQuestSend{min-height:54px;align-self:stretch;padding:8px 11px;background:linear-gradient(145deg,#dba754,#ffdb90);color:#122032;border:1px solid #e9c479;border-radius:12px;font:750 17px system-ui,sans-serif}
+#zeusQuestSend:disabled{opacity:.65;cursor:wait}
+.zeus-quest-status{font:500 15px/1.5 system-ui,sans-serif;color:#d4e1ed!important;margin:0!important;min-height:24px}
+.zeus-quest-reply{max-width:850px;margin:10px 0 8px;padding:14px 16px;white-space:pre-wrap;overflow-wrap:anywhere;border:1px solid #7b9db7;border-radius:12px;background:#153650;color:#ecf7ff;font:500 17px/1.6 system-ui,sans-serif;letter-spacing:.012em}
+.zeus-quest-reply[hidden]{display:none}
 body[data-zeus-mode="chat"] .rooms,
 body[data-zeus-mode="chat"] .switchline,
 body[data-zeus-mode="chat"] .coliseum-live{display:none!important}
 body[data-zeus-mode="chat"] #chatPane{display:block;min-width:0}
 body[data-zeus-mode="chat"] .arena-layout{display:block}
 body[data-zeus-mode="build"] .zeus-assistant-mount{display:none}
-
-/* A confirmed Bubbles answer is rendered as text, never interpreted as HTML. */
-.zeus-quest-reply{max-width:850px;margin:10px 0 8px;padding:14px 16px;white-space:pre-wrap;overflow-wrap:anywhere;border:1px solid #a7bfcb;border-radius:12px;background:#eff5f8;color:#233b49;font:500 17px/1.6 system-ui,sans-serif;letter-spacing:.012em}
-.zeus-quest-reply[hidden]{display:none}
+@media(max-width:500px){
+ .hero{grid-template-columns:minmax(0,1fr);padding:14px 0 9px}
+ .hero-copy{grid-column:1;grid-row:1;z-index:1;padding-right:0}
+ .hero-art{grid-column:1;grid-row:1;justify-self:end;align-self:start;min-height:96px;width:90px;opacity:.24;pointer-events:none}
+ .hero-art .lightning{font-size:80px}.hero-art .temple{display:none}
+ .hero-copy h1{font-size:37px}
+ .hero-buttons a{width:auto;flex:1}
+ .arena{padding-top:10px}
+ .workzone-top{flex-wrap:wrap}
+ .mode-toggle{width:100%}.mode-toggle button{flex:1}
+ #zeusAssistantFrame{height:calc(100dvh - 218px);min-height:440px}
+ .zeus-quest-compose{grid-template-columns:minmax(0,1fr) 80px;gap:7px}
+ #zeusQuestInput{font-size:17px}
+ #zeusQuestSend{font-size:16px;padding:6px}
+}
