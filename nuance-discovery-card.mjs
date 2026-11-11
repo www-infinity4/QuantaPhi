@@ -3,7 +3,7 @@ import {mountCardActions} from './quanta-card-actions.mjs';
 const root=document.getElementById('nuanceDiscoveryCard');
 if(root){
  root.innerHTML=`<article class="nd-card" aria-labelledby="nd-title">
-  <div class="qcx-art nd-art" data-theme="research" role="img" aria-label="Original Infinity OS research artwork with 41 interconnected cart nodes">
+  <div class="qcx-art nd-art" data-theme="research" role="img" aria-label="Abstract Infinity OS research motif and the number 41">
    <span class="qcx-art-kicker">INFINITY OS · CART 004 / NUANCES</span>
    <span class="qcx-art-mark">∞ 41</span>
    <span class="qcx-art-name">Original decisions → verified project improvements</span>
@@ -47,6 +47,14 @@ if(root){
    return {res,body};
   }finally{clearTimeout(timeout)}
  };
+ const clearProtected=()=>{
+  if(!window.QuantaBrainOwner?.currentHeaders?.()?.Authorization){
+   ++serial;host.replaceChildren();status.textContent='Owner session unavailable. Private findings hidden.';
+  }
+ };
+ window.addEventListener('pageshow',clearProtected);
+ document.addEventListener('visibilitychange',()=>{if(!document.hidden)clearProtected();});
+ window.addEventListener('bubbles:owner-locked',clearProtected);
  const refresh=async()=>{
   if(active)return;
   active=true;const requestId=++serial;button.disabled=true;host.replaceChildren();
@@ -77,6 +85,11 @@ if(root){
     for(const constraint of suggestion.constraints.slice(0,2))panel.append(node('p','nd-constraint','Owner constraint: '+constraint));
     if(suggestion.excerpts[0])panel.append(node('blockquote','nd-excerpt','Source excerpt: '+suggestion.excerpts[0]));
     panel.append(node('p','nd-muted','Suggested repository: '+suggestion.repository+' (not independently verified). '+(suggestion.linkedTickets?'Existing linked ticket(s); review first.':'No explicit linked ticket in this audit snapshot.')));
+    if(suggestion.existingIssueUrl){
+     const existing=node('a','nd-link','Continue existing Infinity OS ticket #1923');
+     existing.href=suggestion.existingIssueUrl;existing.target='_blank';existing.rel='noopener noreferrer';
+     panel.append(existing);
+    }
     const step=node('p','nd-status',suggestion.canDraft?'Review draft available; source verification and owner confirmation still required.':'Discovery only — more source or ticket reconciliation required.');
     if(suggestion.canDraft){
      const action=node('button','nd-draft','Prepare review-only draft');action.type='button';
