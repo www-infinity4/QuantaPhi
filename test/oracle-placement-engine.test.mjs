@@ -40,7 +40,7 @@ test('verified lunch ad can run when region/time is verified; business unknown h
 });
 test('seasonal mismatch, expiry and unreviewed paid campaign fail closed',()=>{
  const base={id:'winter-gear',type:'sponsored',approved:true,reviewed:true,createdAt:'2026-11-02T00:00:00Z',
-  startsAt:'2026-11-01T00:00:00Z',endsAt:'2026-12-31T23:59:59Z',season:'winter'};
+  startsAt:'2026-11-01T00:00:00Z',endsAt:'2026-12-31T23:59:59Z',season:'winter',image:'https://example.org/winter.jpg',sourceUrl:'https://example.org/winter'};
  assert.equal(placementPolicy(base,{now}).eligible,true);
  assert.equal(placementPolicy(base,{now:new Date('2026-07-10T12:30:00-05:00')}).eligible,false);
  assert.equal(placementPolicy({...base,endsAt:'2026-11-08T00:00:00Z'},{now}).eligible,false);
