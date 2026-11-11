@@ -3,9 +3,184 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T19:01:29.304025Z",
+  "checked_at": "2026-11-11T19:31:13.503315Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "uc davis basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T19:10:00Z",
+      "related_news_urls": [
+        "https://www.sportsgambler.com/betting-tips/basketball/incarnate-word-cardinals-vs-uc-davis-aggies-prediction-odds-2026-11-11/",
+        "https://ats.io/matchup/college-basketball/incarnate-word-cardinals-vs-uc-davis-aggies-prediction-11-11-2026/",
+        "https://ucdavisaggies.com/news/2026/11/10/mens-basketball-aggies-close-homestand-against-incarnate-word-on-veterans-day.aspx"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UDqjKXIbW7x9dQN8Ss3-Y6v-vrwu1qj2_Q5yqnYAK2950VubtMmtj6A4Mzo",
+      "image_credit": "Sportsgambler",
+      "news": [
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/incarnate-word-cardinals-vs-uc-davis-aggies-prediction-odds-2026-11-11/",
+          "title": "Incarnate Word vs UC Davis Prediction, Picks & Odds | 11 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UDqjKXIbW7x9dQN8Ss3-Y6v-vrwu1qj2_Q5yqnYAK2950VubtMmtj6A4Mzo"
+        },
+        {
+          "url": "https://ats.io/matchup/college-basketball/incarnate-word-cardinals-vs-uc-davis-aggies-prediction-11-11-2026/",
+          "title": "Incarnate Word vs UC Davis Prediction - Nov. 11, 2026",
+          "publisher": "ATS.io",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvCZe2vvvi1X4rRyV-gq7hW9iFoSEjr40PE0H2dKfROZjtXjvhBmWTgNIdtC0"
+        },
+        {
+          "url": "https://ucdavisaggies.com/news/2026/11/10/mens-basketball-aggies-close-homestand-against-incarnate-word-on-veterans-day.aspx",
+          "title": "Aggies Close Homestand Against Incarnate Word on Veterans Day",
+          "publisher": "UC Davis Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUFrNvG_URLrck5_ZGPuuKlXsiq0eFDV20FRQD1_h-mV9TRyhSUGuD1TQo-C4"
+        }
+      ]
+    },
+    {
+      "query": "pep guardiola",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T19:10:00Z",
+      "related_news_urls": [
+        "https://www.expressnews.com/sports/article/lyon-recurre-a-vicens-como-tecnico-tras-la-22522880.php",
+        "https://es-us.noticias.yahoo.com/deportes/respaldo-guardiola-t%C3%A9cnico-espa%C3%B1ol-rivaliza-200956552.html",
+        "https://www.beinsports.com/es-us/football/ligue-1/articles/el-entrenador-del-olympique-de-lyon-confirma-su-objetivo-2026-11-10"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfTPLaJZjAcygCLiRFIU1e3ni_ZttEWkOEM-PDtNhqC7awrlhZ7rKDKLYe2_U",
+      "image_credit": "San Antonio Express-News",
+      "news": [
+        {
+          "url": "https://www.expressnews.com/sports/article/lyon-recurre-a-vicens-como-tecnico-tras-la-22522880.php",
+          "title": "Lyon recurre a Vicens como técnico tras la repentina salida de Fonseca",
+          "publisher": "San Antonio Express-News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfTPLaJZjAcygCLiRFIU1e3ni_ZttEWkOEM-PDtNhqC7awrlhZ7rKDKLYe2_U"
+        },
+        {
+          "url": "https://es-us.noticias.yahoo.com/deportes/respaldo-guardiola-t%C3%A9cnico-espa%C3%B1ol-rivaliza-200956552.html",
+          "title": "Con el respaldo de Guardiola: un técnico español rivaliza con Enrique en Francia",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsq-s_UHBkJlUOO6Z6SG2KzljIEcwvnS6k4XCJlKYHCQeGHoGOHU5EJBJ8Dus"
+        },
+        {
+          "url": "https://www.beinsports.com/es-us/football/ligue-1/articles/el-entrenador-del-olympique-de-lyon-confirma-su-objetivo-2026-11-10",
+          "title": "El entrenador del Olympique de Lyon confirma su objetivo",
+          "publisher": "beIN SPORTS",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7hOr-i-7MxknxICbADGVaFXQvHhZ8TFvQ_IrvecZddxbYSA_-vrHjQLxZuf4"
+        }
+      ]
+    },
+    {
+      "query": "michael jackson estate value $2 billion",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T19:00:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/mattcraig/2026/11/11/michael-jacksons-estate-is-now-worth-2-billion-but-his-daughter-says-she-cant-access-it/",
+        "https://www.nytimes.com/2026/11/03/arts/paris-jackson-michael-jackson-estate.html",
+        "https://people.com/paris-jackson-seeks-600-million-transfer-from-michael-jackson-estate-to-family-trust-12208764"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX3CwInZboCwva-d8z3UbXvfx7y92SChO2LfapCES1Gb01umVKdhdlmiAJB4w",
+      "image_credit": "Forbes",
+      "news": [
+        {
+          "url": "https://www.forbes.com/sites/mattcraig/2026/11/11/michael-jacksons-estate-is-now-worth-2-billion-but-his-daughter-says-she-cant-access-it/",
+          "title": "Michael Jackson’s Estate Is Now Worth $2 Billion. His Daughter Says She Can’t Access It",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX3CwInZboCwva-d8z3UbXvfx7y92SChO2LfapCES1Gb01umVKdhdlmiAJB4w"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/03/arts/paris-jackson-michael-jackson-estate.html",
+          "title": "Paris Jackson Asks Father’s Estate to Fund $600M to Family Trust",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNdIpaBuhCbHQPRFWzNaj7Ew1I4DsJpb6G2KDMfgOxRYTCKwfai-HxLXRjhgU"
+        },
+        {
+          "url": "https://people.com/paris-jackson-seeks-600-million-transfer-from-michael-jackson-estate-to-family-trust-12208764",
+          "title": "Paris Jackson Seeks $600 Million from Michael Jackson Estate to Her Family Trust",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4oR93sgIJczfkphosR8XpZ9TNU98jkS1hGsU1SNlWxo8wAm238MQKHrlV6Go"
+        }
+      ]
+    },
+    {
+      "query": "confession movie",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T18:50:00Z",
+      "related_news_urls": [
+        "https://slate.com/culture/2026/11/confession-movie-2026-daily-wire-ben-shapiro-rob-lowe-james-franco.html",
+        "https://www.hollywoodreporter.com/movies/movie-reviews/confession-review-rob-lowe-james-franco-nick-nolte-1236751013/",
+        "https://www.awardsdaily.com/2026/11/11/confession-is-a-great-leap-forward-for-the-daily-wire/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCVTW8UnpAcJPmDzc23Vb4BtyvcRL4gbgfYpsEkAehilr7uOBrOZ5XOIGf488",
+      "image_credit": "Slate Magazine",
+      "news": [
+        {
+          "url": "https://slate.com/culture/2026/11/confession-movie-2026-daily-wire-ben-shapiro-rob-lowe-james-franco.html",
+          "title": "Ben Shapiro’s Screenwriting Debut Is Here. It’s … a Movie, All Right.",
+          "publisher": "Slate Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCVTW8UnpAcJPmDzc23Vb4BtyvcRL4gbgfYpsEkAehilr7uOBrOZ5XOIGf488"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/movies/movie-reviews/confession-review-rob-lowe-james-franco-nick-nolte-1236751013/",
+          "title": "'Confession' Review: Rob Lowe, James Franco in Ben Shapiro-Penned Film",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuY2yAv6K5zMhFUSA5wM5WHxby9FhrtXubws4fqaP_BHPqMBqshuFU4xZUBiE"
+        },
+        {
+          "url": "https://www.awardsdaily.com/2026/11/11/confession-is-a-great-leap-forward-for-the-daily-wire/",
+          "title": "“Confession” Is A Great Leap Forward for The Daily Wire",
+          "publisher": "Awards Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxkmaAeHYSuTk2QL-_4H3Ld7clqKwBHOUixTV62_G0-ANgMruGMQ7Ny1eNOvY"
+        }
+      ]
+    },
+    {
+      "query": "dartmouth basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T18:50:00Z",
+      "related_news_urls": [
+        "https://www.sportsgambler.com/betting-tips/basketball/dartmouth-big-green-vs-albany-great-danes-prediction-odds-2026-11-11/",
+        "https://www.actionnetwork.com/ncaab/dartmouth-big-green-vs-albany-great-danes-prediction-pick-odds-college-basketball-wednesday-november-11",
+        "https://ats.io/matchup/college-basketball/dartmouth-big-green-vs-albany-great-danes-prediction-11-11-2026/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UDqjKXIbW7x9dQN8Ss3-Y6v-vrwu1qj2_Q5yqnYAK2950VubtMmtj6A4Mzo",
+      "image_credit": "Sportsgambler",
+      "news": [
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/dartmouth-big-green-vs-albany-great-danes-prediction-odds-2026-11-11/",
+          "title": "Dartmouth vs Albany Prediction, Picks & Odds | 11 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UDqjKXIbW7x9dQN8Ss3-Y6v-vrwu1qj2_Q5yqnYAK2950VubtMmtj6A4Mzo"
+        },
+        {
+          "url": "https://www.actionnetwork.com/ncaab/dartmouth-big-green-vs-albany-great-danes-prediction-pick-odds-college-basketball-wednesday-november-11",
+          "title": "Dartmouth vs Albany Prediction, Pick, College Basketball Odds for Wednesday, Nov. 11",
+          "publisher": "Action Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfJngjiVtfiV1C9_a5QJL1Ogdns1rXTr6M1iBPqi9_vEPL3JhDqK2iQeZS974"
+        },
+        {
+          "url": "https://ats.io/matchup/college-basketball/dartmouth-big-green-vs-albany-great-danes-prediction-11-11-2026/",
+          "title": "Dartmouth vs Albany Prediction - Nov. 11, 2026",
+          "publisher": "ATS.io",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqcLR5BFm25dUhV-q_zo3S5YF5GlmL6mYjV_gH2VYtttzMEuXBDWib5lfMzCk"
+        }
+      ]
+    },
     {
       "query": "ilia topuria",
       "approx_searches": "500+",
@@ -47,7 +222,7 @@
       "published_at": "2026-11-11T18:30:00Z",
       "related_news_urls": [
         "https://www.espn.com/nba/story/_/id/50454130/sources-jazz-star-lauri-markkanen-least-1-month",
-        "https://utahjazz.com/news/lauri-markkanen-injury-update",
+        "https://www.hoopsrumors.com/2026/11/lauri-markkanen-to-miss-at-least-four-weeks-with-hand-fractures.html",
         "https://bleacherreport.com/articles/25532308-lauri-markkanen-injured-latest-news-jazz-stars-timeline-return-after-hand-fracture"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLVTyI5BMmpnFGGFXkvO_rYFB9sGszQT6r_AxlTqvZ15Q8AgTzDwUmtWRz5fE",
@@ -61,11 +236,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLVTyI5BMmpnFGGFXkvO_rYFB9sGszQT6r_AxlTqvZ15Q8AgTzDwUmtWRz5fE"
         },
         {
-          "url": "https://utahjazz.com/news/lauri-markkanen-injury-update",
-          "title": "Lauri Markkanen Injury Update",
-          "publisher": "NBA.com",
+          "url": "https://www.hoopsrumors.com/2026/11/lauri-markkanen-to-miss-at-least-four-weeks-with-hand-fractures.html",
+          "title": "Lauri Markkanen To Miss At Least Four Weeks With Hand Fractures",
+          "publisher": "Hoops Rumors",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOmi0fzjsRq0bZzEqq1wZcoa1seLzvE9vdXjqKMqjpzT6nq8ZuEqYJvKNJK_o"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVkTkiJCnnxGNNryBKwCNtSm8B6I3WM-49LaVj75hTCq0Tk__cc3IMntulBGU"
         },
         {
           "url": "https://bleacherreport.com/articles/25532308-lauri-markkanen-injured-latest-news-jazz-stars-timeline-return-after-hand-fracture",
@@ -82,7 +257,7 @@
       "published_at": "2026-11-11T18:10:00Z",
       "related_news_urls": [
         "https://www.espn.com/nfl/story/_/id/50442934/week-10-buzz-fantasy-predictions-graziano-fowler-2026-trades",
-        "https://sports.yahoo.com/articles/2026-nfl-trade-deadline-winners-180550558.html",
+        "https://sports.yahoo.com/nfl/article/the-top-5-biggest-impact-deadline-trades-including-jaguars-and-bears-shooting-for-a-super-bowl-222036590.html",
         "https://www.nytimes.com/athletic/7771590/2026/11/11/nfl-trade-deadline-2026-winners-losers/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQn24Ypisn0SlKQSL52jiwW3LAyUPeMVNnANYSNuxz3Mm1q0oRLNt27AlqV65E",
@@ -96,11 +271,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQn24Ypisn0SlKQSL52jiwW3LAyUPeMVNnANYSNuxz3Mm1q0oRLNt27AlqV65E"
         },
         {
-          "url": "https://sports.yahoo.com/articles/2026-nfl-trade-deadline-winners-180550558.html",
-          "title": "2026 NFL Trade Deadline Winners and Losers: Jaguars Go All In, Chargers and Steelers Fall Short",
+          "url": "https://sports.yahoo.com/nfl/article/the-top-5-biggest-impact-deadline-trades-including-jaguars-and-bears-shooting-for-a-super-bowl-222036590.html",
+          "title": "The top 5 biggest impact deadline trades, including Jaguars and Bears shooting for a Super Bowl",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1E6E8mURSwLv_c-3rvZnQhFiOGVcH9Wuy4xEuWS1xnVPTq58flMbXMpzlPOU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzJiYk1hszIEw94M6sFZhqZhzFc6f_NQTTq12Gl4cshRwjMfojJRnbmK23zjk"
         },
         {
           "url": "https://www.nytimes.com/athletic/7771590/2026/11/11/nfl-trade-deadline-2026-winners-losers/",
@@ -113,7 +288,7 @@
     },
     {
       "query": "los angeles lakers bronny james",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-11T18:00:00Z",
       "related_news_urls": [
         "https://www.foxnews.com/outkick-sports/lebron-james-gone-bronny-still-cant-play-lakers-need-finally-cut-him-loose",
@@ -152,8 +327,8 @@
       "published_at": "2026-11-11T17:40:00Z",
       "related_news_urls": [
         "https://www.ksat.com/news/local/2026/11/11/free-landfill-day-in-san-antonio-this-weekend-what-you-can-bring/",
-        "https://www.newser.com/story/399741/bill-gates-landfill-investments-clash-with-his-climate-crusade.html",
-        "https://www.propublica.org/article/bill-gates-republic-landfill-methane-pollution"
+        "https://www.propublica.org/article/bill-gates-republic-landfill-methane-pollution",
+        "https://www.newser.com/story/399741/bill-gates-landfill-investments-clash-with-his-climate-crusade.html"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRnya-kCbjTRw5odqSyhwZQ_8hHvx-mCRxHjtIyzJHE7Hpox0jQy3DJ3b_4vI",
       "image_credit": "KSAT",
@@ -166,193 +341,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRnya-kCbjTRw5odqSyhwZQ_8hHvx-mCRxHjtIyzJHE7Hpox0jQy3DJ3b_4vI"
         },
         {
-          "url": "https://www.newser.com/story/399741/bill-gates-landfill-investments-clash-with-his-climate-crusade.html",
-          "title": "Bill Gates' Landfill Investments Clash With His Climate Crusade",
-          "publisher": "Newser",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQN7lmsRJVqvsnQD9A3XdlAbcXdHgQUX6q1SnKHABA1NLSWPQm4L_SI0j-vcs4"
-        },
-        {
           "url": "https://www.propublica.org/article/bill-gates-republic-landfill-methane-pollution",
           "title": "Bill Gates Wants to Stop Global Warming. He’s Earned Billions From Climate-Polluting Landfills.",
           "publisher": "ProPublica",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSkk_3u8vv_EWZI26ziSccidragq2WSRcDx61hFjPxG376_5AFffkiz9E8BXlc"
-        }
-      ]
-    },
-    {
-      "query": "casper ruud",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T17:30:00Z",
-      "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/6ac259cb-f6d1-4ad9-ad46-b86e2a0c58e8/",
-        "https://www.atptour.com/en/video/highlights-cerundolo-ousts-home-hope-ymer-earns-first-atp-tour-indoor-hard-win-stockholm-2026",
-        "https://www.skysports.com/tennis/watch/6539326264435598112/bybit-stockholm-open-2026"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSt-2Bwr-vscngnppAr-IfVY2v34yAD-M9yXZEKfKPu_QkpZSCmtWKdLOTD-BI",
-      "image_credit": "Robinhood",
-      "news": [
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/6ac259cb-f6d1-4ad9-ad46-b86e2a0c58e8/",
-          "title": "November 11, 2026: Marina Bassols Ribera vs Maria Lourdes Carle Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSt-2Bwr-vscngnppAr-IfVY2v34yAD-M9yXZEKfKPu_QkpZSCmtWKdLOTD-BI"
         },
         {
-          "url": "https://www.atptour.com/en/video/highlights-cerundolo-ousts-home-hope-ymer-earns-first-atp-tour-indoor-hard-win-stockholm-2026",
-          "title": "Highlights: Cerundolo ousts home hope Ymer, earns first ATP Tour indoor hard win Stockholm 2026 | ATP Tour | Tennis",
-          "publisher": "ATP Tour",
+          "url": "https://www.newser.com/story/399741/bill-gates-landfill-investments-clash-with-his-climate-crusade.html",
+          "title": "Bill Gates' Landfill Investments Clash With His Climate Crusade",
+          "publisher": "Newser",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHc9Z7uy1vn5EQpuEVjOUFhNMTTs5dAkIfF_aqgSbepwjUswZBa01OM3KBTzg"
-        },
-        {
-          "url": "https://www.skysports.com/tennis/watch/6539326264435598112/bybit-stockholm-open-2026",
-          "title": "Sports News, Transfers, Scores | Watch Live Sport",
-          "publisher": "Sky Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkoMFiM3npO8n6pKywMQv3eC98yguApLgFNiYh657bdrwFhzoZcRVF3-Ng7Xc"
-        }
-      ]
-    },
-    {
-      "query": "will scharf",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T17:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/11/us/politics/trump-democrats-congress-oversight-committee.html",
-        "https://www.nbcnews.com/politics/white-house/white-house-warns-congressional-democrats-investigating-us-may-crime-rcna608752",
-        "https://www.theguardian.com/us-news/2026/nov/11/democrat-investigation-white-house-letter-garcia"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTCT-eWrVa1cTKjxYXeyimkaZw6bjF6Xm4-rzN7lTeCwNCO7VOMX5c4SwTOuE",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/11/us/politics/trump-democrats-congress-oversight-committee.html",
-          "title": "White House Threatens Congress, Saying Aggressive Investigations Could Be Crime",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTCT-eWrVa1cTKjxYXeyimkaZw6bjF6Xm4-rzN7lTeCwNCO7VOMX5c4SwTOuE"
-        },
-        {
-          "url": "https://www.nbcnews.com/politics/white-house/white-house-warns-congressional-democrats-investigating-us-may-crime-rcna608752",
-          "title": "White House warns congressional Democrats: Investigating us may be a crime",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuVuU1qI1cQYnHCrEW5xiQhVkpvVsaq2A-rLL0IzWWJLdmmuafpg148QiUCew"
-        },
-        {
-          "url": "https://www.theguardian.com/us-news/2026/nov/11/democrat-investigation-white-house-letter-garcia",
-          "title": "Democrat says Trump has ‘something to hide’ after White House threatens oversight efforts",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRg-djQXbWNNpZg0dZ23eyRi9ReLSyA-_yhwEa-fKjAct0CgvUxwjigmR92bnY"
-        }
-      ]
-    },
-    {
-      "query": "applebees menu",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T17:10:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/small-business/articles/applebee-menu-innovation-pipeline-boosting-152618923.html",
-        "https://www.applebees.com/en/news/2026/veterans-day",
-        "https://www.clickondetroit.com/news/local/2026/11/11/these-metro-detroit-businesses-are-offering-freebies-for-military-members-this-veterans-day/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPNnn_oSI3Q0kwi8H2EPEIC3n_kK4NkiYM0LgdlV_409VHqqb3D2qZExqnSGw",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/small-business/articles/applebee-menu-innovation-pipeline-boosting-152618923.html",
-          "title": "How Applebee’s menu innovation pipeline is boosting traffic and spend",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPNnn_oSI3Q0kwi8H2EPEIC3n_kK4NkiYM0LgdlV_409VHqqb3D2qZExqnSGw"
-        },
-        {
-          "url": "https://www.applebees.com/en/news/2026/veterans-day",
-          "title": "Applebee’s® Honors Veterans & Active Duty Military with Free Meals on Veterans Day",
-          "publisher": "Applebee's",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXlCs38FbMbLzMNIJpvRMPuwFbg_nZ8si5FdNY84hLXzXhF0eEey8COH-nHr8"
-        },
-        {
-          "url": "https://www.clickondetroit.com/news/local/2026/11/11/these-metro-detroit-businesses-are-offering-freebies-for-military-members-this-veterans-day/",
-          "title": "These Metro Detroit businesses are offering freebies for military members this Veterans Day",
-          "publisher": "ClickOnDetroit | WDIV Local 4",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRlPraHzWpvwSmJ_VSajHG7wf4tsZhlyCBoMdelpS1JZWEf7q50e6dn5gboPM"
-        }
-      ]
-    },
-    {
-      "query": "russian ambassador to us",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T17:00:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/11/europe/russian-ambassador-to-us-dies-intl",
-        "https://thehill.com/policy/international/6213787-alexander-darchiev-russian-ambassador-us-death/",
-        "https://www.theguardian.com/world/2026/nov/11/russia-ambassador-dies-alexander-darchiev"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDtk-aLfa0M3eH_-1rIbt03IWhhi2Us_mz3aKt_SfJ916LAtP-KUNf2l9ORLE",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/11/europe/russian-ambassador-to-us-dies-intl",
-          "title": "Russian ambassador to US dies suddenly, foreign ministry says",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDtk-aLfa0M3eH_-1rIbt03IWhhi2Us_mz3aKt_SfJ916LAtP-KUNf2l9ORLE"
-        },
-        {
-          "url": "https://thehill.com/policy/international/6213787-alexander-darchiev-russian-ambassador-us-death/",
-          "title": "Russia announces sudden death of ambassador to US",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzvWwOg3CsLYNqm-2UlTGOdyO45Q_JuW2cSNPCuZSPkwKsSbi4Shhw9HvpP7M"
-        },
-        {
-          "url": "https://www.theguardian.com/world/2026/nov/11/russia-ambassador-dies-alexander-darchiev",
-          "title": "Russia’s ambassador to the United States dies, aged 66",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvuDMO8YoUgItc2y_DEgGsqkkX4qyRvABuuSb_f7J14p33tIBWX87J3y1A7lk"
-        }
-      ]
-    },
-    {
-      "query": "chipotle tattoo deal",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T17:00:00Z",
-      "related_news_urls": [
-        "https://newsroom.chipotle.com/2026-11-09-CHIPOTLE-BRINGS-BACK-RECORD-BREAKING-TATTED-LIKE-A-CHIPOTLE-BAG-BOGO-ON-FRIDAY,-NOVEMBER-13",
-        "https://www.9news.com/article/news/nation-world/chipotle-tattoo-bogo-deal-friday-13th/507-f05731fa-a2bb-4ea7-8a00-35dbd0aec5f9",
-        "https://www.newsday.com/business/chipotle-tattoos-bogo-d89eamrr"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtY3EIvbGAluxDIsVW1FUb4sMlIf96XbcX1M2qrhJEqwVSkDqBbB4LjUhTa4I",
-      "image_credit": "Chipotle",
-      "news": [
-        {
-          "url": "https://newsroom.chipotle.com/2026-11-09-CHIPOTLE-BRINGS-BACK-RECORD-BREAKING-TATTED-LIKE-A-CHIPOTLE-BAG-BOGO-ON-FRIDAY,-NOVEMBER-13",
-          "title": "CHIPOTLE BRINGS BACK RECORD-BREAKING \"TATTED LIKE A CHIPOTLE BAG\" BOGO ON FRIDAY, NOVEMBER 13",
-          "publisher": "Chipotle",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtY3EIvbGAluxDIsVW1FUb4sMlIf96XbcX1M2qrhJEqwVSkDqBbB4LjUhTa4I"
-        },
-        {
-          "url": "https://www.9news.com/article/news/nation-world/chipotle-tattoo-bogo-deal-friday-13th/507-f05731fa-a2bb-4ea7-8a00-35dbd0aec5f9",
-          "title": "Chipotle brings back tattoo BOGO deal on Friday the 13th",
-          "publisher": "9News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoUXPDXjr1adPFJ7YeeSOLUqK0OB1y5DDyOTMcp1S47zb8MkioqqIx9khmKjA"
-        },
-        {
-          "url": "https://www.newsday.com/business/chipotle-tattoos-bogo-d89eamrr",
-          "title": "Chipotle promo giving BOGO deals to people with tattoos on Friday",
-          "publisher": "Newsday",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQ5RkYuCtB6IrZfjn_eFSCnrIWSo7qpql1SyGEUK3pFkMoWZavqifF30KPzgs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQN7lmsRJVqvsnQD9A3XdlAbcXdHgQUX6q1SnKHABA1NLSWPQm4L_SI0j-vcs4"
         }
       ]
     }
