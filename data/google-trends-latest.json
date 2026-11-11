@@ -3,82 +3,117 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T21:31:23.248193Z",
+  "checked_at": "2026-11-11T22:01:31.340124Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "frankie muniz",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T21:10:00Z",
+      "query": "building collapse nyc",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T21:40:00Z",
       "related_news_urls": [
-        "https://pagesix.com/2026/11/11/celebrity-news/frankie-muniz-rushed-to-hospital-after-shocking-practice-incident-ahead-of-florida-race/",
-        "https://www.nascar.com/news-media/2026/11/11/frankie-muniz-transported-to-medical-facility-after-incident-at-daytona/",
-        "https://sports.yahoo.com/articles/frankie-muniz-hospitalized-following-daytona-210803024.html"
+        "https://abc7ny.com/post/flatbush-partial-building-collapse-brooklyn-reported-people-trapped/20033903/",
+        "https://brooklyn.news12.com/building-collapses-in-flatbush-multiple-people-trapped",
+        "https://www.cnn.com/2026/11/11/us/brooklyn-new-york-building-collapse"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfc55ePDDaloBpVQ-ztF_YeJqWt83Wz3ed1jsco4hTuYu8zUy3AhVKdegcxkw",
-      "image_credit": "Page Six",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4odmSBt3uERPcMheRV0-x7_QIbkV0Z3m_RgngZWvXSFeOLudZlJGWVvjgVM",
+      "image_credit": "ABC7 New York",
       "news": [
         {
-          "url": "https://pagesix.com/2026/11/11/celebrity-news/frankie-muniz-rushed-to-hospital-after-shocking-practice-incident-ahead-of-florida-race/",
-          "title": "Frankie Muniz rushed to hospital after crashing his car during practice ahead of Florida race",
-          "publisher": "Page Six",
+          "url": "https://abc7ny.com/post/flatbush-partial-building-collapse-brooklyn-reported-people-trapped/20033903/",
+          "title": "Flatbush partial building collapse in Brooklyn with reported people trapped",
+          "publisher": "ABC7 New York",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfc55ePDDaloBpVQ-ztF_YeJqWt83Wz3ed1jsco4hTuYu8zUy3AhVKdegcxkw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4odmSBt3uERPcMheRV0-x7_QIbkV0Z3m_RgngZWvXSFeOLudZlJGWVvjgVM"
         },
+        {
+          "url": "https://brooklyn.news12.com/building-collapses-in-flatbush-multiple-people-trapped",
+          "title": "Building Collapses In Flatbush Multiple People Trapped",
+          "publisher": "News12 | Brooklyn",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMWDzfaiLuq96pAqnc0Dkie5Fw1ogIDb4-8xRf2-5quNAHg4K5BNILjX_bXr8"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/11/us/brooklyn-new-york-building-collapse",
+          "title": "Brooklyn building collapses, leaving people trapped under rubble",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS459bPJhEdzSmSetg6H-7EqmfuzcjNOXthyZgitO0c098lPSEPcBGjK3QMWXs"
+        }
+      ]
+    },
+    {
+      "query": "nick wright",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T21:30:00Z",
+      "related_news_urls": [
+        "https://www.thebulwark.com/p/nick-wright-and-anderson-clayton",
+        "https://sports.yahoo.com/articles/nick-wright-says-three-nfl-124000359.html",
+        "https://www.buffalorumblings.com/buffalo-bills-history/144366/buffalo-bills-record-book-week-9-josh-allen-james-cook-greg-rousseau-chase-history"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9S5Xf1bQOARZDLSm5Pv6TMl6OU4sv7PJaPTfYdPcizmNETkhQDWVtaGOKghI",
+      "image_credit": "The Bulwark",
+      "news": [
+        {
+          "url": "https://www.thebulwark.com/p/nick-wright-and-anderson-clayton",
+          "title": "Nick Wright & Anderson Clayton: Did the Fever Break?",
+          "publisher": "The Bulwark",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9S5Xf1bQOARZDLSm5Pv6TMl6OU4sv7PJaPTfYdPcizmNETkhQDWVtaGOKghI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/nick-wright-says-three-nfl-124000359.html",
+          "title": "Nick Wright says there are three NFL players who have clearly been better than Josh Allen in MVP race",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQvwJNwOB_3a8XsL7Q2BlrkrUSj-XkV4NQSyUkSUavMo9qy3Bh_a8NudNfyDI"
+        },
+        {
+          "url": "https://www.buffalorumblings.com/buffalo-bills-history/144366/buffalo-bills-record-book-week-9-josh-allen-james-cook-greg-rousseau-chase-history",
+          "title": "Pencils, erasers, and permanent markers: The Bills’ Week 9 record Book",
+          "publisher": "Buffalo Rumblings",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDIYfbAgCFVl8fhsZmpSzy6PvLHrf6wQb7MO07VwO1_KYnuraMhyXKk9qnv8U"
+        }
+      ]
+    },
+    {
+      "query": "frankie muniz",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T21:10:00Z",
+      "related_news_urls": [
+        "https://www.nascar.com/news-media/2026/11/11/frankie-muniz-transported-to-medical-facility-after-incident-at-daytona/",
+        "https://people.com/frankie-muniz-rushed-to-hospital-after-crashing-during-daytona-practice-12249481",
+        "https://www.motorsport.com/general/news/frankie-muniz-transported-to-daytona-hospital-after-practice-crash/10873949/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR42kHEh7wqWDZQDj4C224eCR5LN_-a42WLhaiJPL3Ywe5obVEG4nHLPc9PpA8",
+      "image_credit": "NASCAR.com",
+      "news": [
         {
           "url": "https://www.nascar.com/news-media/2026/11/11/frankie-muniz-transported-to-medical-facility-after-incident-at-daytona/",
           "title": "Frankie Muniz transported to medical facility after incident at Daytona",
           "publisher": "NASCAR.com",
           "description": "",
-          "image_url": null
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR42kHEh7wqWDZQDj4C224eCR5LN_-a42WLhaiJPL3Ywe5obVEG4nHLPc9PpA8"
         },
         {
-          "url": "https://sports.yahoo.com/articles/frankie-muniz-hospitalized-following-daytona-210803024.html",
-          "title": "Frankie Muniz Hospitalized Following Daytona Crash",
-          "publisher": "Yahoo Sports",
+          "url": "https://people.com/frankie-muniz-rushed-to-hospital-after-crashing-during-daytona-practice-12249481",
+          "title": "Frankie Muniz Rushed to Hospital After Crashing During Daytona Practice",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7AHtVGHlsLAp_DD8DvlrWhEVz5WgDlJcKJkWIZzqqdN7slXtBQiuNTAgSHXg"
-        }
-      ]
-    },
-    {
-      "query": "softbank $3.7 billion turbine loss",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T21:10:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/business/energy-oil/masayoshi-sons-huge-bet-on-electrical-turbines-backfires-b51f160c",
-        "https://www.bloomberg.com/news/articles/2026-11-11/softbank-group-shares-drop-10-after-booking-7-billion-loss",
-        "https://www.ft.com/content/e19c86dc-9437-4827-a5ae-14bd4033037b?syn-25a6b1a6=1"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3M-ahqXL-LANP33CZdKdrxoZntRTup5stbXzbhrM6frLIC_VFzlK0_isGU4o",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/business/energy-oil/masayoshi-sons-huge-bet-on-electrical-turbines-backfires-b51f160c",
-          "title": "Masayoshi Son’s Huge Bet on Electrical Turbines Backfires",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3M-ahqXL-LANP33CZdKdrxoZntRTup5stbXzbhrM6frLIC_VFzlK0_isGU4o"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTrHkfMOyzsZlc-qU9dTW0JQS8vM2QTfmVZOzh0s6x6kol2Vd0uu4zhExiWdM"
         },
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-11/softbank-group-shares-drop-10-after-booking-7-billion-loss",
-          "title": "SoftBank Group Shares Drop 11% After Booking $7 Billion Loss",
-          "publisher": "Bloomberg.com",
+          "url": "https://www.motorsport.com/general/news/frankie-muniz-transported-to-daytona-hospital-after-practice-crash/10873949/",
+          "title": "Frankie Muniz transported to hospital after Daytona practice crash",
+          "publisher": "Motorsport.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMEkU9pRSBymmwYuVlZjWA_ozyM2Inmihf0So66Mduos1ruPL4uwvM51-Ow-0"
-        },
-        {
-          "url": "https://www.ft.com/content/e19c86dc-9437-4827-a5ae-14bd4033037b?syn-25a6b1a6=1",
-          "title": "Tech sell-off raises risks for SoftBank’s massive AI bet",
-          "publisher": "Financial Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNQXuSgWCObIx7GTmjrShe03nR7Kww8qtvqoNY16GjzOqgWmUpvOQNOkcZeAo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTs4KexvWtvZytKZ6Bp9iGk6PyYRNiax1NQWbqosAutDO0D4pe52Wvx6UrsBO4"
         }
       ]
     },
     {
       "query": "mortgage interest rates",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-11T21:10:00Z",
       "related_news_urls": [
         "https://www.cnbc.com/2026/11/11/mortgage-rates-jump-sharply-higher-after-easing-for-4-straight-weeks.html",
@@ -108,6 +143,41 @@
           "publisher": "Yahoo Finance",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkqeMQIA9xIKzp-5YxvKCyq_fzqKWe-GGU7faB1k9ymCFpFw74fzuM_Ds42EM"
+        }
+      ]
+    },
+    {
+      "query": "softbank $3.7 billion turbine loss",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T21:10:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/business/energy-oil/masayoshi-sons-huge-bet-on-electrical-turbines-backfires-b51f160c",
+        "https://www.bloomberg.com/news/articles/2026-11-11/softbank-group-shares-drop-10-after-booking-7-billion-loss",
+        "https://www.ft.com/content/e19c86dc-9437-4827-a5ae-14bd4033037b?syn-25a6b1a6=1"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3M-ahqXL-LANP33CZdKdrxoZntRTup5stbXzbhrM6frLIC_VFzlK0_isGU4o",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/business/energy-oil/masayoshi-sons-huge-bet-on-electrical-turbines-backfires-b51f160c",
+          "title": "Masayoshi Son’s Huge Bet on Electrical Turbines Backfires",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3M-ahqXL-LANP33CZdKdrxoZntRTup5stbXzbhrM6frLIC_VFzlK0_isGU4o"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-11/softbank-group-shares-drop-10-after-booking-7-billion-loss",
+          "title": "SoftBank Group Shares Drop 11% After Booking $7 Billion Loss",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMEkU9pRSBymmwYuVlZjWA_ozyM2Inmihf0So66Mduos1ruPL4uwvM51-Ow-0"
+        },
+        {
+          "url": "https://www.ft.com/content/e19c86dc-9437-4827-a5ae-14bd4033037b?syn-25a6b1a6=1",
+          "title": "Tech sell-off raises risks for SoftBank’s massive AI bet",
+          "publisher": "Financial Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNQXuSgWCObIx7GTmjrShe03nR7Kww8qtvqoNY16GjzOqgWmUpvOQNOkcZeAo"
         }
       ]
     },
@@ -151,13 +221,20 @@
       "approx_searches": "500+",
       "published_at": "2026-11-11T21:00:00Z",
       "related_news_urls": [
+        "https://www.hollywoodreporter.com/tv/tv-news/randall-england-dead-general-hospital-1236753374/",
         "https://deadline.com/2026/11/randall-england-dead-1237220596/",
-        "https://www.thedailybeast.com/general-hospital-actor-randall-england-dies-of-cancer",
-        "https://www.wideopencountry.com/general-hospital-actor-dies-at-75-following-cancer-battle/"
+        "https://www.thedailybeast.com/general-hospital-actor-randall-england-dies-of-cancer"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRD-XW69nSdm7rZ2lSfFX26tMf6dlSiyjmLc_RUiTZkDLk8pAN8kxPzSciuWE",
-      "image_credit": "Deadline",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0jQeVMt3CXXwE5RIz3yFEUlirPpwqODKx3rS80g0Cz3pZdMncr0KSFiIIWrs",
+      "image_credit": "The Hollywood Reporter",
       "news": [
+        {
+          "url": "https://www.hollywoodreporter.com/tv/tv-news/randall-england-dead-general-hospital-1236753374/",
+          "title": "Randall England, ‘General Hospital’ Actor, Dies at 75",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0jQeVMt3CXXwE5RIz3yFEUlirPpwqODKx3rS80g0Cz3pZdMncr0KSFiIIWrs"
+        },
         {
           "url": "https://deadline.com/2026/11/randall-england-dead-1237220596/",
           "title": "Randall England Dies: Actor Who Played ‘General Hospital’ Villain Was 75",
@@ -171,13 +248,76 @@
           "publisher": "The Daily Beast",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS26f9TiTORjFh8FzbpwbTqk7RaMdoktRggsBmKDbNhLSfFYR96Vpcqwx5tyCw"
+        }
+      ]
+    },
+    {
+      "query": "ayanna pressley",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T21:00:00Z",
+      "related_news_urls": [
+        "https://pressley.house.gov/2026/11/09/watch-pressley-on-ms-now-this-is-our-moment-and-we-have-a-mandate-from-the-people-to-match-their-energy/",
+        "https://www.commondreams.org/news/ayanna-pressley-for-speaker",
+        "https://mezha.net/eng/news/mezha-1e8f9ba3e193be983edb0930_ayanna_pressley_urges/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKX6Zg944ZCf6yjUE_0uawLUg8xRyvig9AJslYgN7Msjt28e7xi6f93UwdPAE",
+      "image_credit": "House.gov",
+      "news": [
+        {
+          "url": "https://pressley.house.gov/2026/11/09/watch-pressley-on-ms-now-this-is-our-moment-and-we-have-a-mandate-from-the-people-to-match-their-energy/",
+          "title": "WATCH: Pressley on MS NOW: “This Is Our Moment, And We Have A Mandate From The People To Match Their Energy”",
+          "publisher": "House.gov",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKX6Zg944ZCf6yjUE_0uawLUg8xRyvig9AJslYgN7Msjt28e7xi6f93UwdPAE"
         },
         {
-          "url": "https://www.wideopencountry.com/general-hospital-actor-dies-at-75-following-cancer-battle/",
-          "title": "‘General Hospital’ Actor Dies at 75 Following Cancer Battle",
-          "publisher": "Wide Open Country",
+          "url": "https://www.commondreams.org/news/ayanna-pressley-for-speaker",
+          "title": "Petition Aimed at Drafting Ayanna Pressley to Challenge Hakeem Jeffries for Speaker Picks Up Steam",
+          "publisher": "Common Dreams",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSys948ULe-cEmi6opxWTct44qZUsJ3KPt64OyqH5_ZaN32OqJ-NAgJbQBKRRo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0OquVqv7xW41w3sUB8pWRkrEajmuTUq7p2imXlFX8jsq7QOybVA-hn1BKyAE"
+        },
+        {
+          "url": "https://mezha.net/eng/news/mezha-1e8f9ba3e193be983edb0930_ayanna_pressley_urges/",
+          "title": "Ayanna Pressley urges Democrats to use their power to pursue far-left policies",
+          "publisher": "Mezha.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxRfBae4VZnmbivBMFc3NAZdX9FbATEwelR76x0A91tyDX_4OV3dGTzL5Gv_A"
+        }
+      ]
+    },
+    {
+      "query": "karolina muchova",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T21:00:00Z",
+      "related_news_urls": [
+        "https://www.wtatennis.com/videos/4607482/rivalry-rewind_-the-best-of-elina-svitolina-vs-karolina-muchova",
+        "https://www.bleachernation.com/picks/2026/11/10/svitolina-vs-muchova-prediction-at-the-akron-wta-finals-guadalajara-wednesday-november-11/",
+        "https://www.tennis365.com/tennis-news/elina-svitolina-karolina-muchova-speak-wta-finals-clash"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQwSwltnshdIix3egtuCdxGsYbc0-hZQc3uM_T2vRE-OUf4Irnj1aOKe3dhtg",
+      "image_credit": "WTA Tennis",
+      "news": [
+        {
+          "url": "https://www.wtatennis.com/videos/4607482/rivalry-rewind_-the-best-of-elina-svitolina-vs-karolina-muchova",
+          "title": "Rivalry Rewind: The best of Karolina Muchova vs. Elina Svitolina",
+          "publisher": "WTA Tennis",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQwSwltnshdIix3egtuCdxGsYbc0-hZQc3uM_T2vRE-OUf4Irnj1aOKe3dhtg"
+        },
+        {
+          "url": "https://www.bleachernation.com/picks/2026/11/10/svitolina-vs-muchova-prediction-at-the-akron-wta-finals-guadalajara-wednesday-november-11/",
+          "title": "Svitolina vs. Muchova Prediction at the Akron WTA Finals Guadalajara - Wednesday, November 11",
+          "publisher": "Bleacher Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsu7AaeJMyVQjFXP-PoigyPYUSxgEuGHJrhQIXTAzhwfX84zH6NTDZvH_buS0"
+        },
+        {
+          "url": "https://www.tennis365.com/tennis-news/elina-svitolina-karolina-muchova-speak-wta-finals-clash",
+          "title": "Elina Svitolina and Karolina Muchova speak out about their crucial WTA Finals clash",
+          "publisher": "Tennis365",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROEH6Jm3pCcE536F_Lgso_9zTK2-GlrYEue490jApsXB8RuvnSG3AfBOp6Yg4"
         }
       ]
     },
@@ -213,146 +353,6 @@
           "publisher": "ATS.io",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaCd1kjvtk_9CrhTwAjLeCU4py9Nsn_0XgCzgUMEBXkzmEEPWeSTw-Y3zJZ_Y"
-        }
-      ]
-    },
-    {
-      "query": "ayesha curry",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T20:30:00Z",
-      "related_news_urls": [
-        "https://bleacherreport.com/articles/25532341-stephen-curry-calls-out-gilbert-arenas-nick-young-video-after-criticism-wife-ayesha",
-        "https://www.foxnews.com/outkick-sports/ayesha-curry-says-husband-steph-curry-nba-pregame-habits-inspired-movie-character-responds-backlash",
-        "https://www.yahoo.com/entertainment/celebrity/articles/stephen-curry-inspired-ayesha-curry-192045223.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBaH0kiYpNpuF5Z6dpdWVNkZ9ltnt2Fl54JR8_iXipNIj3jC9D1cYl8UAXdTg",
-      "image_credit": "Bleacher Report",
-      "news": [
-        {
-          "url": "https://bleacherreport.com/articles/25532341-stephen-curry-calls-out-gilbert-arenas-nick-young-video-after-criticism-wife-ayesha",
-          "title": "Stephen Curry Calls Out Gilbert Arenas, Nick Young in Video After Criticism of Wife Ayesha",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBaH0kiYpNpuF5Z6dpdWVNkZ9ltnt2Fl54JR8_iXipNIj3jC9D1cYl8UAXdTg"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick-sports/ayesha-curry-says-husband-steph-curry-nba-pregame-habits-inspired-movie-character-responds-backlash",
-          "title": "Ayesha Curry says husband Steph Curry's NBA pregame habits inspired her movie character, responds to backlash",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRA9-QTrSPZcbBecsGb7mmyDaWjHSNFXp3soDLzznOiVqWKusTqKS1Q4e8YxU"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/stephen-curry-inspired-ayesha-curry-192045223.html",
-          "title": "How Stephen Curry inspired Ayesha Curry in Christmas rom-com role that has everybody talking about kissing scene",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRVCXytfpJRsTMdHcaKhg0QC7PH8VO1HM8MmKOyDDR6UDT2nxtO-ENwZqfIKU"
-        }
-      ]
-    },
-    {
-      "query": "air force basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T20:30:00Z",
-      "related_news_urls": [
-        "https://www.sportsgambler.com/betting-tips/basketball/loyola-chicago-ramblers-vs-air-force-falcons-prediction-odds-2026-11-11/",
-        "https://www.bleachernation.com/picks/2026/11/11/a-10-basketball-predictions-computer-picks-and-best-bets-november-11-2/",
-        "https://ats.io/matchup/college-basketball/loyola-chi-ramblers-vs-air-force-falcons-prediction-11-11-2026/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-hYvvU8Fdyaub-QnNAgEZZ9H540kcmu5JWauguvOqcRhcDKqJwPmT09FP62Q",
-      "image_credit": "Sportsgambler",
-      "news": [
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/loyola-chicago-ramblers-vs-air-force-falcons-prediction-odds-2026-11-11/",
-          "title": "Loyola Chicago vs Air Force Prediction, Picks & Odds | 11 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-hYvvU8Fdyaub-QnNAgEZZ9H540kcmu5JWauguvOqcRhcDKqJwPmT09FP62Q"
-        },
-        {
-          "url": "https://www.bleachernation.com/picks/2026/11/11/a-10-basketball-predictions-computer-picks-and-best-bets-november-11-2/",
-          "title": "A-10 Basketball Predictions, Computer Picks and Best Bets | November 11",
-          "publisher": "Bleacher Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSym0hp4diZLSxPO_zyCUiug1-5jt109TCa8MvXnLOW_mg7BxwLkiLEo-mwPd8"
-        },
-        {
-          "url": "https://ats.io/matchup/college-basketball/loyola-chi-ramblers-vs-air-force-falcons-prediction-11-11-2026/",
-          "title": "Loyola Chicago Ramblers vs Air Force Prediction",
-          "publisher": "ATS.io",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ7tPrsfWpI7EjH5Azdos8TA2mpr3_gFXprU-dgrCsCxMfq1i9IeoKQz5KrWyw"
-        }
-      ]
-    },
-    {
-      "query": "roadster",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T20:30:00Z",
-      "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-11/porsche-ceo-throws-shade-at-tesla-roadster-spectacle",
-        "https://electrek.co/2026/11/11/porsche-ceo-tesla-flying-roadster-stunt/",
-        "https://nypost.com/2026/11/11/business/porsche-ceo-takes-swipe-at-teslas-flying-car-spectacle-effects-and-shows/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuhtyg1p01Lh7JM-0kJFc7n1UOiZ4kFYE6Ld9GH9eSVq5B0XBJD5oM0pTtucc",
-      "image_credit": "Bloomberg.com",
-      "news": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-11/porsche-ceo-throws-shade-at-tesla-roadster-spectacle",
-          "title": "Porsche CEO Throws Shade at Tesla Roadster Spectacle",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuhtyg1p01Lh7JM-0kJFc7n1UOiZ4kFYE6Ld9GH9eSVq5B0XBJD5oM0pTtucc"
-        },
-        {
-          "url": "https://electrek.co/2026/11/11/porsche-ceo-tesla-flying-roadster-stunt/",
-          "title": "Porsche CEO takes a shot at Tesla’s ‘flying’ Roadster stunt show",
-          "publisher": "Electrek",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxzCwD90AYRSAsvezmu7cN_kAZAx93ATOJ57rmP9gv6NL57XY-7aumIZ7Tw7o"
-        },
-        {
-          "url": "https://nypost.com/2026/11/11/business/porsche-ceo-takes-swipe-at-teslas-flying-car-spectacle-effects-and-shows/",
-          "title": "Porsche CEO takes swipe at Tesla’s flying car spectacle: ‘Effects and shows’",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDBSgp7ONymkHvWr68pw-l5PW7tlHJE4BZwwc-vN-GWgbVgypuJocQfTnxb2s"
-        }
-      ]
-    },
-    {
-      "query": "weather chicago",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T20:30:00Z",
-      "related_news_urls": [
-        "https://abc7chicago.com/post/chicago-il-area-weather-forecast-week-could-include-1st-snowfall-season/20030999/",
-        "https://wgntv.com/weather/chicago-weather-wednesday-11112026/",
-        "https://www.fox32chicago.com/weather/chicago-weather-forecast-cold-snow-chance"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTO9oBmcOgB4oNrMPlWsRzd9PufaisnqVNvvhMo2cqjFhH6az-2YXd8OTeS2Jw",
-      "image_credit": "ABC7 Chicago",
-      "news": [
-        {
-          "url": "https://abc7chicago.com/post/chicago-il-area-weather-forecast-week-could-include-1st-snowfall-season/20030999/",
-          "title": "Chicago, IL-area weather forecast this week could include 1st snowfall of season",
-          "publisher": "ABC7 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTO9oBmcOgB4oNrMPlWsRzd9PufaisnqVNvvhMo2cqjFhH6az-2YXd8OTeS2Jw"
-        },
-        {
-          "url": "https://wgntv.com/weather/chicago-weather-wednesday-11112026/",
-          "title": "Wednesday forecast: Showers, isolated thunderstorms develop as coldest air of season moves into Chicagoland",
-          "publisher": "WGN-TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSIATM4NOOkQwSuCa9fi-1Kcnor7g7l2MkiSs6Es27SkuyHbdD62wIFh_OlR4"
-        },
-        {
-          "url": "https://www.fox32chicago.com/weather/chicago-weather-forecast-cold-snow-chance",
-          "title": "Chicago weather: Colder stretch ahead as snow chances shift toward 'Michiana'",
-          "publisher": "FOX 32 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtsv6RM09IhN2rhUHpPyIf1QRHd6fbPsDrlDMjLyCAuPSvkXjDmG2ZL10tQck"
         }
       ]
     }
