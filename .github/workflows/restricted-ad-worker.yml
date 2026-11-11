@@ -28,3 +28,5 @@ jobs:
           node --check restricted-ad-policy.mjs
       - name: Prove denied by default, consent enforcement and reviewed creative delivery
         run: node --test test/restricted-ad-policy.test.mjs test/restricted-ads-worker.test.mjs
+      - name: Verify D1 migration adds required expiring campaign evidence without approving old rows
+        run: python3 -m unittest discover -s test -p 'test_restricted_ads_migrations.py' -v
