@@ -2172,8 +2172,14 @@ function toggle(open){
 // A host-page orb opens this iframe only on explicit visitor interaction.
 // No owner job, microphone or permission is activated by this display signal.
 if(embedded)window.addEventListener('message',event=>{
- if(event.source!==window.parent||event.data?.type!=='quantaphi:bubbles:open'||event.data.id!==bubbleId)return;
+ if(event.source!==window.parent||event.origin!==window.location.origin||
+  event.data?.type!=='quantaphi:bubbles:open'||event.data.id!==bubbleId)return;
  toggle(true);
+ // A reloaded Zeus iframe must acknowledge the parent's fresh open request.
+ // Do not treat a prior document's ready event as proof this instance works.
+ if(bubbleId==='coliseum-zeus-assistant')window.parent.postMessage({
+  type:'quantaphi:bubbles:ready',id:bubbleId
+ },window.location.origin);
 });
 launcher.addEventListener('click',()=>{if(dragSuppressed){dragSuppressed=false;return}if(embedded){toggle(!showing);return}if(!voiceEnabled){toggle(true);void startVoice()}else toggle(!showing)});
 launchCard.addEventListener('click',()=>{toggle(true);if(!voiceEnabled)void startVoice()});
