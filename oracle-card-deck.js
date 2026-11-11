@@ -5,6 +5,7 @@
 'use strict';
 const host=document.getElementById('oracleCardDeck'),stage=document.getElementById('oracleCardStage');
 if(!host||!stage)return;
+const agePolicy=window.QuantaAgePreferences;
 const now=document.getElementById('oracleCardNow'),status=document.getElementById('oracleCardStatus'),
  next=document.getElementById('oracleCardNext'),prev=document.getElementById('oracleCardPrevious'),scroll=document.getElementById('oracleCardScroll');
 const choices=[
@@ -310,8 +311,8 @@ function registerLateWidgets(){
 registerSourceCards();
 const readDirections=()=>{try{return directionApi.cleanFeedState(JSON.parse(localStorage.getItem(directionApi.FEED_STORAGE_KEY)||'{}'))}catch{return directionApi.cleanFeedState({})}};
 function storeDirections(){if(!directionApi||!feedState)return;try{localStorage.setItem(directionApi.FEED_STORAGE_KEY,JSON.stringify(feedState))}catch{}}
-function liveCatalog(){return entries.filter(available).filter(e=>selectedTab!=='for-you'||!nonProfiling(e)).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
-function eligible(){const cards=entries.filter(available);return selectedTab==='following'&&feedState?
+function liveCatalog(){return entries.filter(available).filter(e=>agePolicy?agePolicy.canAutoShow(e):!/21\+|adult|dispensary|cannabis/i.test(e.category)).filter(e=>selectedTab!=='for-you'||!nonProfiling(e)).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
+function eligible(){const cards=entries.filter(available).filter(e=>agePolicy?agePolicy.canAutoShow(e):!/21\+|adult|dispensary|cannabis/i.test(e.category));return selectedTab==='following'&&feedState?
  cards.filter(e=>feedState.following.includes(e.feedId)):cards;}
 function updateTabs(){
  updateInventory();
@@ -506,6 +507,7 @@ function show(entry,remember=true,automatic=false){
  const marker=document.createComment('Oracle card original location: '+entry.id);
  entry.node.parentNode.insertBefore(marker,entry.node);entry.marker=marker;
  presentOriginal(entry);primeCardImage(entry,true);stage.append(entry.node);active=entry;
+ agePolicy?.noteShown(entry);
  stage.dataset.switchboardId=entry.feedId;
  stage.dataset.switchboardTitle=entry.title;
  stage.dataset.switchboardCategory=entry.category;
@@ -546,6 +548,8 @@ function show(entry,remember=true,automatic=false){
 }
 function advance(direction){
  viewerTouched=true;selectionVersion++;
+ // Leaving an adult card with Next is a visitor skip, not inferred consent.
+ if(direction>0&&active&&agePolicy?.isAdult(active)&&!agePolicy.read().browsingThisVisit){agePolicy.noteSkipped();}
  const list=eligible();
  if(!list.length){status.textContent=selectedTab==='following'?'Follow a card in Public first.':'The original interactive cards are still initializing.';return}
  if(direction<0){
@@ -610,6 +614,26 @@ window.addEventListener('quantaphi:select-source-card',event=>{
 });
 next.addEventListener('click',()=>advance(1));
 prev.addEventListener('click',()=>advance(-1));
+// Swipe the original card surface only. Never intercept interactive controls,
+// nested editors, players or ordinary vertical scrolling on Android.
+let oracleGesture=null;
+stage.addEventListener('pointerdown',event=>{
+ if(event.pointerType==='mouse'||event.target.closest('button,a,input,textarea,select,video,audio,iframe,[contenteditable],[role="button"],[data-no-swipe]'))return;
+ oracleGesture={id:event.pointerId,x:event.clientX,y:event.clientY};
+},{passive:true});
+stage.addEventListener('pointerup',event=>{
+ const g=oracleGesture;oracleGesture=null;
+ if(!g||event.pointerId!==g.id)return;
+ const dx=event.clientX-g.x,dy=event.clientY-g.y;
+ if(Math.abs(dx)<75||Math.abs(dx)<Math.abs(dy)*1.5)return;
+ advance(dx<0?1:-1);
+},{passive:true});
+stage.addEventListener('pointercancel',()=>{oracleGesture=null});
+window.addEventListener('quantaphi:age-preference',event=>{
+ if(event.detail?.action==='browse')agePolicy?.acknowledgeBrowse();
+ if(event.detail?.action==='skip')agePolicy?.noteSkipped();
+ updateTabs();predict();
+});
 scroll.addEventListener('click',()=>{
  expanded=!expanded;
  document.body.classList.toggle('oracle-shelf-open',expanded);
