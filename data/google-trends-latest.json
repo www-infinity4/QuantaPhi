@@ -3,262 +3,227 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-10T23:31:24.873686Z",
+  "checked_at": "2026-11-11T00:01:56.949918Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "capitals vs senators",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T23:10:00Z",
+      "query": "panthers vs blue jackets",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-10T23:40:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/news/washington-capitals-ottawa-senators-game-preview-november-10-2026",
-        "https://www.nytimes.com/athletic/7770608/2026/11/10/capitals-vs-senators-stream-how-to-watch-nov-10/",
-        "https://www.yardbarker.com/nhl/articles/washington_takes_on_ottawa_tuesday_at_canadian_tire_centre/s1_17668_44543481"
+        "https://www.litterboxcats.com/florida-panthers-at-columbus-blue-jackets-gameday-19-2026-27-nhl-schedule/",
+        "https://www.nhl.com/news/florida-panthers-columbus-blue-jackets-game-preview-november-10-2026",
+        "https://sports.yahoo.com/articles/panthers-vs-blue-jackets-prediction-180757826.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
-      "image_credit": "NHL.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9ztxnpSZcFj9bLRiL1ozyHi3pZ6fUHG4XdqgbzXrCb-yvIzWjbE3gqkpkuGI",
+      "image_credit": "Litter Box Cats",
       "news": [
         {
-          "url": "https://www.nhl.com/news/washington-capitals-ottawa-senators-game-preview-november-10-2026",
-          "title": "Capitals at Senators projected lineups",
+          "url": "https://www.litterboxcats.com/florida-panthers-at-columbus-blue-jackets-gameday-19-2026-27-nhl-schedule/",
+          "title": "Gameday 19: Florida Panthers at Columbus Blue Jackets",
+          "publisher": "Litter Box Cats",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9ztxnpSZcFj9bLRiL1ozyHi3pZ6fUHG4XdqgbzXrCb-yvIzWjbE3gqkpkuGI"
+        },
+        {
+          "url": "https://www.nhl.com/news/florida-panthers-columbus-blue-jackets-game-preview-november-10-2026",
+          "title": "Panthers at Blue Jackets projected lineups",
           "publisher": "NHL.com",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7770608/2026/11/10/capitals-vs-senators-stream-how-to-watch-nov-10/",
-          "title": "How to watch Capitals vs. Senators: TV channel and streaming options for November 10",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0IZj8QD9fTFgSDRrQZYvTkn3Us4dEbI73YbCuNhFGbZldtV5NdrKElDkq6Sk"
-        },
-        {
-          "url": "https://www.yardbarker.com/nhl/articles/washington_takes_on_ottawa_tuesday_at_canadian_tire_centre/s1_17668_44543481",
-          "title": "Washington Takes on Ottawa Tuesday at Canadian Tire Centre",
-          "publisher": "Yardbarker",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfZmKOTX_9QMQFYpyKF2v29nuQAo6auPFwJv3LAHtRojqEnFJ0CFn71a6IdTw"
-        }
-      ]
-    },
-    {
-      "query": "devils vs jets",
-      "approx_searches": "500+",
-      "published_at": "2026-11-10T23:10:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/news/connor-hellebuyck-not-starting-against-jets-in-winnipeg-a-disappointment-scott-arniel-says",
-        "https://sports.yahoo.com/videos/connor-hellebuyck-opens-why-asked-224854830.html",
-        "https://www.cbc.ca/news/canada/manitoba/connor-hellebuyck-return-to-winnipeg-9.7416133"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMjvQyCxjwdJdz4t5a0NwBRIIh12JYnUliFW83DibLV_XjY8LkIuIZ46Llckc",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/news/connor-hellebuyck-not-starting-against-jets-in-winnipeg-a-disappointment-scott-arniel-says",
-          "title": "Hellebuyck not starting against Jets in Winnipeg a ‘disappointment,’ Arniel says",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMjvQyCxjwdJdz4t5a0NwBRIIh12JYnUliFW83DibLV_XjY8LkIuIZ46Llckc"
-        },
-        {
-          "url": "https://sports.yahoo.com/videos/connor-hellebuyck-opens-why-asked-224854830.html",
-          "title": "Connor Hellebuyck Opens Up On Why He Asked For A Trade From The Winnipeg Jets",
+          "url": "https://sports.yahoo.com/articles/panthers-vs-blue-jackets-prediction-180757826.html",
+          "title": "Panthers vs Blue Jackets Prediction, Picks, NHL Odds for Tuesday, November 10",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTehdL0qJNoSpnn706sE4fAP0TC4mRbYPNOc0Eqzl1rCY8usgws7hAyK4Ymrpk"
-        },
-        {
-          "url": "https://www.cbc.ca/news/canada/manitoba/connor-hellebuyck-return-to-winnipeg-9.7416133",
-          "title": "Connor Hellebuyck tells media online death threats, family played roles in trade demand",
-          "publisher": "CBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqsfuP2hTvpCIiruejsQcCb9vsLOk_nhTU9he5i9fyKKG6wTRx9g70BT6TLk8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXgEigkm1lIdagu7NwCb1N5WwPixdEvDuwUiYNqqjY1V8kZqox-I5LT1A70pE"
         }
       ]
     },
     {
-      "query": "kent state vs bowling green",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T23:10:00Z",
+      "query": "illinois basketball",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-10T23:40:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/betting/news/kent-state-bowling-green-prediction-odds-time-week-11-maction-picks-bets/",
-        "https://www.usatoday.com/sports/ncaaf/event/2026/2975025/summary/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=2",
-        "https://bgfalconmedia.com/184088/sports/falcon-football-set-to-host-golden-flashes-in-tuesday-maction/"
+        "https://fightingillini.com/news/2026/11/9/mens-basketball-no-3-illini-visit-no-16-texas-tech-in-ranked-road-test-tuesday",
+        "https://texastech.com/news/2026/11/8/mens-basketball-no-19-tech-hosts-no-3-illinois-on-tuesday",
+        "https://247sports.com/college/illinois/article/illinois-fighting-illini-basketball-texas-tech-dra-gibbs-lawhorn-injury-update-football-javari-barnett-292512797/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcIu_UCoXht0kgIzDZCd1GoAp44o3rYjTT5yQls7j29bRqp9I-_8kMsVtdk68",
-      "image_credit": "CBS Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRypIq2MSfaWyDNEPTFJodIGL3jMVk2Jb6UPKTFjTs5S6F923NcQtJLRH9sR1E",
+      "image_credit": "University of Illinois Athletics",
       "news": [
         {
-          "url": "https://www.cbssports.com/betting/news/kent-state-bowling-green-prediction-odds-time-week-11-maction-picks-bets/",
-          "title": "Kent State vs. Bowling Green odds, prediction, time: Week 11 MACtion picks by proven model",
+          "url": "https://fightingillini.com/news/2026/11/9/mens-basketball-no-3-illini-visit-no-16-texas-tech-in-ranked-road-test-tuesday",
+          "title": "No. 3 Illini Visit No. 16 Texas Tech in Ranked Road Test Tuesday - University of Illinois Athletics",
+          "publisher": "University of Illinois Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRypIq2MSfaWyDNEPTFJodIGL3jMVk2Jb6UPKTFjTs5S6F923NcQtJLRH9sR1E"
+        },
+        {
+          "url": "https://texastech.com/news/2026/11/8/mens-basketball-no-19-tech-hosts-no-3-illinois-on-tuesday",
+          "title": "No. 16 Tech hosts No. 3 Illinois on Tuesday - Texas Tech Red Raiders",
+          "publisher": "Texas Tech Red Raiders",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0XlzV77qX2YxPqW-jHn9WqALhWZojVcE7kLduiAlHTLt93agz4kee5tkzZ2I"
+        },
+        {
+          "url": "https://247sports.com/college/illinois/article/illinois-fighting-illini-basketball-texas-tech-dra-gibbs-lawhorn-injury-update-football-javari-barnett-292512797/",
+          "title": "Illini Inquirer AM: GIbbs-Lawhorn, Illini face off in ranked matchup; Impact of Javari Barnett's injury",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpBGX_HEXYLASU6gxJcOVF3uPvxngPg8ffglBNIR-3lvSJIiOlIh919EtnJA8"
+        }
+      ]
+    },
+    {
+      "query": "western michigan football",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T23:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/akron-football-score-live-updates-223114012.html",
+        "https://www.cbssports.com/prediction/news/western-michigan-vs-akron-odds-picks-cfb-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus/",
+        "https://collegefootballnews.com/college-football/western-michigan-vs-akron-prediction-2026"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGvCZjkMW_dFnlndHW1t4M1iP4e2K7fAs_x0wXBYqoelDl6WQONnNLKNcY3jI",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/akron-football-score-live-updates-223114012.html",
+          "title": "Akron football score, live updates vs. Western Michigan. Zips seek MAC upset",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGvCZjkMW_dFnlndHW1t4M1iP4e2K7fAs_x0wXBYqoelDl6WQONnNLKNcY3jI"
+        },
+        {
+          "url": "https://www.cbssports.com/prediction/news/western-michigan-vs-akron-odds-picks-cfb-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus/",
+          "title": "Western Michigan vs. Akron odds, picks, CFB predictions: Use Kalshi promo code CBSSPORTS55 for $55 bonus",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcIu_UCoXht0kgIzDZCd1GoAp44o3rYjTT5yQls7j29bRqp9I-_8kMsVtdk68"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF6h8g1_9OlOfDsKVm2kwXjmj1Xc1MZ7t-DLuC0rLZ3NCgRS0LMUcNgVqM430"
         },
         {
-          "url": "https://www.usatoday.com/sports/ncaaf/event/2026/2975025/summary/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NCAAF&tile=2",
-          "title": "Kent State Golden Flashes at Bowling Green Falcons - NCAAF Game Summary - Nov 10, 2026",
-          "publisher": "USA Today",
+          "url": "https://collegefootballnews.com/college-football/western-michigan-vs-akron-prediction-2026",
+          "title": "Western Michigan vs Akron Prediction: Can the Broncos Keep Their Focus?",
+          "publisher": "College Football News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUCw9wEKfYMTXEBSAP9y31Yi55bUKNE5Vg0cWU6p3ofPjw9SSQosBRt6HmjYk"
-        },
-        {
-          "url": "https://bgfalconmedia.com/184088/sports/falcon-football-set-to-host-golden-flashes-in-tuesday-maction/",
-          "title": "Falcon football set to host Golden Flashes in Tuesday MACtion",
-          "publisher": "BG Falcon Media",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzgYmo-SOp0LAAhVkWUbyQ_pWmbo1_70rM1n684Dbr7Jhth97TFUJvuP3Izn8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQoS7Rki6EdIUX7nKRWSgf9tVbfVr2CalYRSiBn5xr8dvKumNTiTbjFFRlQ7F0"
         }
       ]
     },
     {
-      "query": "donna kelce",
+      "query": "steven tyler",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T23:40:00Z",
+      "related_news_urls": [
+        "https://www.rollingstone.com/music/music-news/steven-tyler-child-sex-abuse-trial-julia-misley-aerosmith-1235654761/",
+        "https://www.billboard.com/pro/steven-tyler-teen-bride-sexual-abuse-lawsuit-trial-2027/",
+        "https://consequence.net/2026/11/judge-sets-new-date-steven-tyler-trial/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyURf5hamLIcoGo6Y57rU3hxlxZ3PmzZtdhfzx9u4FDYIDRmM0GiAUh7MGWKQ",
+      "image_credit": "Rolling Stone",
+      "news": [
+        {
+          "url": "https://www.rollingstone.com/music/music-news/steven-tyler-child-sex-abuse-trial-julia-misley-aerosmith-1235654761/",
+          "title": "Judge Sets Steven Tyler Sex Assault Trial Date",
+          "publisher": "Rolling Stone",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyURf5hamLIcoGo6Y57rU3hxlxZ3PmzZtdhfzx9u4FDYIDRmM0GiAUh7MGWKQ"
+        },
+        {
+          "url": "https://www.billboard.com/pro/steven-tyler-teen-bride-sexual-abuse-lawsuit-trial-2027/",
+          "title": "Steven Tyler ‘Teen Bride’ Sex Abuse Trial Set for 2027 — And the Scope of the Case Could Widen Again",
+          "publisher": "Billboard",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZXn8yzTJowXKTS82mpQcgpsAH96JwtBNE1_51Hh9yDZc3flwYZbt5vWioGcw"
+        },
+        {
+          "url": "https://consequence.net/2026/11/judge-sets-new-date-steven-tyler-trial/",
+          "title": "Judge Sets New Date for Steven Tyler’s Sexual Assault Trial",
+          "publisher": "Consequence of Sound",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCpC6j3OP88lTL5NDrYqeULPGXJhbf67A48ec5Hp2svAG3xxEQQfyeLEsxka8"
+        }
+      ]
+    },
+    {
+      "query": "rutgers basketball",
       "approx_searches": "200+",
-      "published_at": "2026-11-10T23:10:00Z",
+      "published_at": "2026-11-10T23:40:00Z",
       "related_news_urls": [
-        "https://timesofindia.indiatimes.com/sports/nfl/news/donna-kelces-355000-property-move-puts-travis-kelce-and-jason-kelces-inheritance-in-focus/articleshow/135701104.cms",
-        "https://www.realtor.com/news/celebrity-real-estate/donna-kelce-sells-florida-condo-after-major-renovation/",
-        "https://www.instyle.com/donna-kelce-sells-florida-condo-485000-profit-12240418"
+        "https://247sports.com/college/rutgers/article/rutgers-vs-njit-preview-how-to-watch-tv-radio-live-thread-292471991/",
+        "https://sports.yahoo.com/articles/rutgers-basketball-vs-njit-game-223000601.html",
+        "https://www.sportsgambler.com/betting-tips/basketball/njit-highlanders-vs-rutgers-scarlet-knights-prediction-odds-2026-11-10/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBoRvgGo5q2KeXtLNbNwLoB_1FzxrY951dKZ1oldGCM5PAFe28lIpZzEa5tmI",
-      "image_credit": "The Times of India",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxrjK5m2dHhmhRtKYVjwNg5hAkNQUVip6519PELpr8gSo5cRFXBx5hDeE2mhw",
+      "image_credit": "247Sports",
       "news": [
         {
-          "url": "https://timesofindia.indiatimes.com/sports/nfl/news/donna-kelces-355000-property-move-puts-travis-kelce-and-jason-kelces-inheritance-in-focus/articleshow/135701104.cms",
-          "title": "Donna Kelce's $355,000 property move puts Travis Kelce and Jason Kelce's inheritance in focus",
-          "publisher": "The Times of India",
+          "url": "https://247sports.com/college/rutgers/article/rutgers-vs-njit-preview-how-to-watch-tv-radio-live-thread-292471991/",
+          "title": "Rutgers vs NJIT Preview: How to watch, TV, radio, live thread",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBoRvgGo5q2KeXtLNbNwLoB_1FzxrY951dKZ1oldGCM5PAFe28lIpZzEa5tmI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxrjK5m2dHhmhRtKYVjwNg5hAkNQUVip6519PELpr8gSo5cRFXBx5hDeE2mhw"
         },
         {
-          "url": "https://www.realtor.com/news/celebrity-real-estate/donna-kelce-sells-florida-condo-after-major-renovation/",
-          "title": "Donna Kelce Sells Florida Condo for $485K—Less Than a Year After Major Makeover",
-          "publisher": "Realtor.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAwxb8ZsVYS9EqjdgP4fh1GJwy3u8jqkJKjL6ZVr5rOYODrD2Eayf7XqhsWO8"
-        },
-        {
-          "url": "https://www.instyle.com/donna-kelce-sells-florida-condo-485000-profit-12240418",
-          "title": "Travis Kelce’s Mom Donna Sells Her Newly Remodeled Florida Condo for This Major Real Estate Upgrade",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQN0RLJqTwAMFwWpp2AGyXMZ3Lm4qJNlhbJgcAHbrehnlr9A7EPvzwHZNbYG7Q"
-        }
-      ]
-    },
-    {
-      "query": "florida vs florida state",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-10T23:00:00Z",
-      "related_news_urls": [
-        "https://floridagators.com/news/2026/11/9/mens-basketball-stuff-florida-at-fsu-nov-10-2026",
-        "https://www.si.com/college/florida/no-1-florida-gators-keys-vs-uniquely-scary-florida-state-seminoles",
-        "https://sports.yahoo.com/articles/florida-state-basketball-vs-florida-220110178.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVgdUFpjZefAbJx6zZeTiTzYWVhuvwZh6agYDZ32g2jVrOVTEsRryOT7ruY0g",
-      "image_credit": "Florida Gators",
-      "news": [
-        {
-          "url": "https://floridagators.com/news/2026/11/9/mens-basketball-stuff-florida-at-fsu-nov-10-2026",
-          "title": "No. 1 Florida at Florida State (Tuesday, 6 pm)",
-          "publisher": "Florida Gators",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVgdUFpjZefAbJx6zZeTiTzYWVhuvwZh6agYDZ32g2jVrOVTEsRryOT7ruY0g"
-        },
-        {
-          "url": "https://www.si.com/college/florida/no-1-florida-gators-keys-vs-uniquely-scary-florida-state-seminoles",
-          "title": "No. 1 Florida Gators Keys vs. 'Uniquely Scary' Florida State Seminoles",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpOPYp1DLq3lt_xcPYUQoMAju7zckOlvX4W6QXfkFkedjNyDnGtx_9CVjM9dU"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/florida-state-basketball-vs-florida-220110178.html",
-          "title": "Florida State basketball vs Florida: Live updates, score, highlights",
+          "url": "https://sports.yahoo.com/articles/rutgers-basketball-vs-njit-game-223000601.html",
+          "title": "Rutgers Basketball vs. NJIT Game Thread",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSG0OrLK4F42jukmXOvuf6U5dDRR6XMChce_BKoCdk-IYvfWmHAUkEe8i9bcVw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7vBjpmEzNRW6wd4JTvKtH8gICP-val5URAHf0U6AqwKdXktI6iQJ6BqoFjUk"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/njit-highlanders-vs-rutgers-scarlet-knights-prediction-odds-2026-11-10/",
+          "title": "NJIT vs Rutgers Prediction, Picks & Odds | 10 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnTK4eFdPE1SvYEbvFwOHkLfEeQvcYAIDIiLh2O-A13r6dm0UAfdFBTQX-81M"
         }
       ]
     },
     {
-      "query": "avalanche vs maple leafs",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T23:00:00Z",
+      "query": "bucks vs knicks",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-10T23:30:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/news/colorado-avalanche-toronto-maple-leafs-game-preview-november-10-2026",
-        "https://www.si.com/nhl/avalanche/onsi/3-players-to-watch-for-colorado-avalanche-vs-toronto-maple-leafs",
-        "https://www.covers.com/nhl/avalanche-vs-maple-leafs-prediction-picks-nov-10-2026"
+        "https://www.jsonline.com/story/sports/nba/bucks/2026/11/10/milwaukee-bucks-vs-new-york-knicks-injury-report-starters/92704845007/",
+        "https://sports.yahoo.com/articles/knicks-could-catch-break-2-214004270.html",
+        "https://www.cbssports.com/betting/news/knicks-bucks-prediction-odds-time-2026-nba-picks-best-bets-tuesday-november-10/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
-      "image_credit": "NHL.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgyjrdEeGKePuj2hzA-4NCAIhd5g-GgjzPu0YBW-v09kW2_51HEC91hXxYxJM",
+      "image_credit": "Milwaukee Journal Sentinel",
       "news": [
         {
-          "url": "https://www.nhl.com/news/colorado-avalanche-toronto-maple-leafs-game-preview-november-10-2026",
-          "title": "Avalanche at Maple Leafs projected lineups",
-          "publisher": "NHL.com",
+          "url": "https://www.jsonline.com/story/sports/nba/bucks/2026/11/10/milwaukee-bucks-vs-new-york-knicks-injury-report-starters/92704845007/",
+          "title": "Bucks vs. Knicks, Milwaukee faces injury concerns for first time",
+          "publisher": "Milwaukee Journal Sentinel",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgyjrdEeGKePuj2hzA-4NCAIhd5g-GgjzPu0YBW-v09kW2_51HEC91hXxYxJM"
         },
         {
-          "url": "https://www.si.com/nhl/avalanche/onsi/3-players-to-watch-for-colorado-avalanche-vs-toronto-maple-leafs",
-          "title": "3 Players to Watch for Colorado Avalanche vs. Toronto Maple Leafs",
-          "publisher": "Sports Illustrated",
+          "url": "https://sports.yahoo.com/articles/knicks-could-catch-break-2-214004270.html",
+          "title": "Knicks Could Catch Break as 2 Key Bucks Face Uncertainty Ahead of Kith Night",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWl_UFB_JzCRQBLe2sjJm9DXIkB_tDQ2bcIWKmVPNK0P0nsdf_XH-PvLph2Ng"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyphhoNIvfGiZ4pQw8e2WdYL39hSBnt3nMsSbgovJ0i1et45ZN23czp-lgsZg"
         },
         {
-          "url": "https://www.covers.com/nhl/avalanche-vs-maple-leafs-prediction-picks-nov-10-2026",
-          "title": "Avalanche vs Maple Leafs Prediction, Picks & Odds for Tonight’s NHL Game",
-          "publisher": "Covers.com",
+          "url": "https://www.cbssports.com/betting/news/knicks-bucks-prediction-odds-time-2026-nba-picks-best-bets-tuesday-november-10/",
+          "title": "Knicks vs. Bucks prediction, odds, time: 2026 NBA picks for Tuesday, Nov. 10 from proven model",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs6q0wOb7EOa0I7OeFHd15-5P6K6zZ8xQIoZcBRi00u2g0-ALrKx0cnkqVur4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSO2NUuV2YKDy5Hk_qTUZ0FNQi1mVNIjaWhyPu9aCKdGbEMPY_09vrPN49AMWw"
         }
       ]
     },
     {
-      "query": "wild vs canadiens",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T23:00:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/canadiens/news/min-mtl-what-you-need-to-know-nov-10-2026",
-        "https://www.covers.com/nhl/wild-vs-canadiens-prediction-picks-nov-10-2026",
-        "https://www.nytimes.com/athletic/7770624/2026/11/10/wild-vs-canadiens-stream-how-to-watch-nov-10/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnBqoPrHPfZ--FXG5hnoR4zkQuxjOiTHojzlZBXs9y3RPfhYU8olQLd5XOmp0",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/canadiens/news/min-mtl-what-you-need-to-know-nov-10-2026",
-          "title": "MIN@MTL: What you need to know | Montréal Canadiens",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnBqoPrHPfZ--FXG5hnoR4zkQuxjOiTHojzlZBXs9y3RPfhYU8olQLd5XOmp0"
-        },
-        {
-          "url": "https://www.covers.com/nhl/wild-vs-canadiens-prediction-picks-nov-10-2026",
-          "title": "Wild vs Canadiens Prediction, Picks & Odds for Tonight’s NHL Game",
-          "publisher": "Covers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDuHFERwkzBG3Q5unXH5ilSGpgykFZN5KmbPQlWLWbkUnbTrItyefrEloRyac"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7770624/2026/11/10/wild-vs-canadiens-stream-how-to-watch-nov-10/",
-          "title": "How to watch Wild vs. Canadiens: TV channel and streaming options for November 10",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqLM5ooYGDYq7OGdV1uZP11qwc4lNQNA6CZOK_2Or57hTSoECOTTnpJukqxaQ"
-        }
-      ]
-    },
-    {
-      "query": "michigan state basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T23:00:00Z",
+      "query": "duke basketball",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-10T23:20:00Z",
       "related_news_urls": [
         "https://www.espn.com/mens-college-basketball/story/_/id/50436123/champions-classic-2026-duke-michigan-state-kansas-kentucky",
-        "https://sports.yahoo.com/articles/champions-classic-live-updates-start-230126505.html",
-        "https://www.cbssports.com/college-basketball/news/champions-classic-nba-draft-guide-duke-kansas-kentucky/"
+        "https://www.cbssports.com/prediction/news/polymarket-promo-code-cbssports-score-25-bonus-for-duke-vs-michigan-state-picks-2026-champions-classic/",
+        "https://www.detroitnews.com/story/sports/college/michigan-state-university/2026/11/09/michigan-state-spartans-duke-champions-classic-jasiah-jervis/92692554007/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQB61aHJJPWxESh2zxOcVY4_PXkGH5b6WAdueLRY5NjSibwW0FP7uRIcW6bHsE",
       "image_credit": "ESPN",
@@ -271,88 +236,123 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQB61aHJJPWxESh2zxOcVY4_PXkGH5b6WAdueLRY5NjSibwW0FP7uRIcW6bHsE"
         },
         {
-          "url": "https://sports.yahoo.com/articles/champions-classic-live-updates-start-230126505.html",
-          "title": "Champions Classic live updates: Start time, TV, predictions for Duke-Michigan State, Kentucky-Kansas",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJDsBDX-uXXJ7uSzgmKvukX7TdtKV29GZOHQjTBx_38xbVf5rs-pk65pZrW6o"
-        },
-        {
-          "url": "https://www.cbssports.com/college-basketball/news/champions-classic-nba-draft-guide-duke-kansas-kentucky/",
-          "title": "Champions Classic NBA Draft guide: Who scouts will be watching in college basketball's high-profile showcase",
+          "url": "https://www.cbssports.com/prediction/news/polymarket-promo-code-cbssports-score-25-bonus-for-duke-vs-michigan-state-picks-2026-champions-classic/",
+          "title": "Polymarket promo code CBSSPORTS: Score $25 bonus for Duke vs. Michigan State picks, 2026 Champions Classic",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRl07nIM7401Q7RexKP_7ddh6Fhpf0UQHdmn6A1i4SxQwqXux9WrgrX9Wy0cM0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc1N3pgRbYNrAxfLu_5nWNnQ17Nx5Il6KQaAs6Fd1CL3L19uUvkkZZtbUzlpg"
+        },
+        {
+          "url": "https://www.detroitnews.com/story/sports/college/michigan-state-university/2026/11/09/michigan-state-spartans-duke-champions-classic-jasiah-jervis/92692554007/",
+          "title": "Duke test will show how much Jasiah Jervis brings to Michigan State lineup",
+          "publisher": "The Detroit News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqDR01HQNxwVjGIJFKNrm6cJYyzckz_OR8jM9A7YY1KrkLdND86tui9-Rp7sM"
         }
       ]
     },
     {
-      "query": "packers sign kenny fletcher jr",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-10T23:00:00Z",
-      "related_news_urls": [
-        "https://www.packers.com/news/packers-announce-roster-move-nov-10-2026",
-        "https://packerswire.usatoday.com/story/sports/nfl/packers/2026/11/10/packers-trade-deadline-recap-0-deals-1-practice-squad-signing/92713827007/",
-        "https://www.fox61.com/video/sports/locked-on/lo-wisconsin/locked-on-packers-hit/good-decision-the-packers-made-the-right-call-by-not-making-a-trade/535-a03637eb-cebe-4182-b5e1-bdfb428886a4"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQH05tH9TltULFHDgFymwanDyYBBnFPdTFjRMdja1u-Gw0PEuKfjf56dxHqRmU",
-      "image_credit": "Green Bay Packers – packers.com",
-      "news": [
-        {
-          "url": "https://www.packers.com/news/packers-announce-roster-move-nov-10-2026",
-          "title": "Packers announce roster move | Nov. 10, 2026",
-          "publisher": "Green Bay Packers – packers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQH05tH9TltULFHDgFymwanDyYBBnFPdTFjRMdja1u-Gw0PEuKfjf56dxHqRmU"
-        },
-        {
-          "url": "https://packerswire.usatoday.com/story/sports/nfl/packers/2026/11/10/packers-trade-deadline-recap-0-deals-1-practice-squad-signing/92713827007/",
-          "title": "Packers trade deadline recap: 0 deals, 1 practice squad signing",
-          "publisher": "Packers Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHZj2ki1Bk3U-cJoEzBeg9jpttPrHosIdUGEyTKZWX4SZvS9M1yVhpQeaWeLk"
-        },
-        {
-          "url": "https://www.fox61.com/video/sports/locked-on/lo-wisconsin/locked-on-packers-hit/good-decision-the-packers-made-the-right-call-by-not-making-a-trade/535-a03637eb-cebe-4182-b5e1-bdfb428886a4",
-          "title": "GOOD DECISION: The Packers Made the RIGHT Call by NOT Making a Trade",
-          "publisher": "fox61.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRadhpP747KDg524YSj-kNGQO-6elF_0mzGBWIA-wUfKXNxFCreBmUmiBz4BCg"
-        }
-      ]
-    },
-    {
-      "query": "silver rail elementary school",
+      "query": "rick van vactor",
       "approx_searches": "500+",
-      "published_at": "2026-11-10T23:00:00Z",
+      "published_at": "2026-11-10T23:20:00Z",
       "related_news_urls": [
-        "https://katu.com/news/local/silver-rail-elementary-school-bend-oregon-teacher-becky-drury-hurt-shootings-returns-home",
-        "https://www.kgw.com/article/news/local/bend-school-shooting/bend-teacher-injured-silver-rail-shooting-out-hospital/283-375d0411-db93-4ba4-8f27-ed8605335563",
-        "https://bendbulletin.com/2026/11/09/silver-rail-shooting-survivor-becky-drury-returns-home-after-four-surgeries/"
+        "https://www.yahoo.com/entertainment/celebrity/articles/tlc-star-arrested-domestic-violence-172612134.html",
+        "https://popculture.com/celebrity/news/90-day-fiance-cast-member-arrested-on-domestic-violence-charges/",
+        "https://www.complex.com/pop-culture/a/bernadette-giacomazzo/90-day-fiance-rick-van-vactor-domestic-violence-arrest"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwWiCoOz7wlUODAOjYLcJOS05jybUlcDdM2uBw4-F6UwD6_36UEp132DGSyvo",
-      "image_credit": "KATU",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZAFW4iiN9ZsfW8kAO4wGRvqyKYSX6udLp31U5TVHoa5F6b5JGIvb0H5qRzP0",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://katu.com/news/local/silver-rail-elementary-school-bend-oregon-teacher-becky-drury-hurt-shootings-returns-home",
-          "title": "Teacher seriously hurt in Bend school shooting returns home after four surgeries",
-          "publisher": "KATU",
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/tlc-star-arrested-domestic-violence-172612134.html",
+          "title": "TLC star arrested on domestic violence charge",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwWiCoOz7wlUODAOjYLcJOS05jybUlcDdM2uBw4-F6UwD6_36UEp132DGSyvo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZAFW4iiN9ZsfW8kAO4wGRvqyKYSX6udLp31U5TVHoa5F6b5JGIvb0H5qRzP0"
         },
         {
-          "url": "https://www.kgw.com/article/news/local/bend-school-shooting/bend-teacher-injured-silver-rail-shooting-out-hospital/283-375d0411-db93-4ba4-8f27-ed8605335563",
-          "title": "Bend teacher injured in Silver Rail shooting out of hospital",
-          "publisher": "KGW",
+          "url": "https://popculture.com/celebrity/news/90-day-fiance-cast-member-arrested-on-domestic-violence-charges/",
+          "title": "’90 Day Fiancé’ Cast Member Arrested on Domestic Violence Charges",
+          "publisher": "PopCulture.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdwMgQpVogCTKP5nuh7pnu2Dltg9_6lWuD0qiqAyLTsjcy466bXScOnMivsLI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9DOmVfp7UHiINIbT3WxG6urHe3tkA5-dX-SygGf6VbVZA6_9_pmOv0gqTIYg"
         },
         {
-          "url": "https://bendbulletin.com/2026/11/09/silver-rail-shooting-survivor-becky-drury-returns-home-after-four-surgeries/",
-          "title": "Silver Rail shooting survivor Becky Drury returns home after four surgeries",
-          "publisher": "Bend Bulletin",
+          "url": "https://www.complex.com/pop-culture/a/bernadette-giacomazzo/90-day-fiance-rick-van-vactor-domestic-violence-arrest",
+          "title": "'90 Day Fiancé' Star Rick Van Vactor Claims Girlfriend Started Fight That Led to His Arrest",
+          "publisher": "Complex",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzfeydy42H2F7kEQfEQzNjsYh6w_PtnYMHg2yRe3d2lkWJYqXrG0SHhTcjq5A"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNChFYwGpbKXBqzsbxBM7k-TutLlRDPoFEZRUQHbR6frrOLCCyB-IUQN7ZbOU"
+        }
+      ]
+    },
+    {
+      "query": "iowa basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T23:20:00Z",
+      "related_news_urls": [
+        "https://www.hawkcentral.com/story/sports/college/iowa/basketball-men/2026/11/10/iowa-basketball-score-virginia-tech-live-updates-highlights--live/92701819007/",
+        "https://hawkeyesports.com/news/2026/11/8/mbb-notes-virginia-tech-in-sioux-city",
+        "https://techsideline.com/subscription/2026/11/10/hokies-mbb-faces-iowa-sioux-city"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-c_ArzRaG62ehZh4ckBWcDEvIWaMmsEtvsDErCstyWCCx739zdYgaNkfIOzI",
+      "image_credit": "Hawk Central",
+      "news": [
+        {
+          "url": "https://www.hawkcentral.com/story/sports/college/iowa/basketball-men/2026/11/10/iowa-basketball-score-virginia-tech-live-updates-highlights--live/92701819007/",
+          "title": "Iowa basketball vs Virginia Tech, score, live updates, highlights",
+          "publisher": "Hawk Central",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-c_ArzRaG62ehZh4ckBWcDEvIWaMmsEtvsDErCstyWCCx739zdYgaNkfIOzI"
+        },
+        {
+          "url": "https://hawkeyesports.com/news/2026/11/8/mbb-notes-virginia-tech-in-sioux-city",
+          "title": "MBB Notes: Virginia Tech in Sioux City",
+          "publisher": "Iowa Hawkeyes Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvzOyWN1veQJwGqBtKg1pkqvBHph4BLKF2wKNtJehXElt7xs-y6w3HtDRSlYg"
+        },
+        {
+          "url": "https://techsideline.com/subscription/2026/11/10/hokies-mbb-faces-iowa-sioux-city",
+          "title": "Hokies Men’s Basketball Faces Iowa In Sioux City",
+          "publisher": "TechSideline",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9Qcl0cpq4c7eYLsoMxWcgwr4JRQVpnhw-WyDjB-NM_C2rAnCw6pI6s_GZDIQ"
+        }
+      ]
+    },
+    {
+      "query": "drummer",
+      "approx_searches": "500+",
+      "published_at": "2026-11-10T23:20:00Z",
+      "related_news_urls": [
+        "https://www.stltoday.com/life-entertainment/local/music/article_c997393e-9256-481b-ad32-6c0b34ca73a5.html",
+        "https://www.freep.com/story/entertainment/people/2026/11/10/st-louis-musician-bobby-taylor-dies-squamous-cell-cancer-cause/92703940007/",
+        "https://www.vice.com/en/article/veteran-rock-drummer-dies-after-years-long-cancer-battle-as-family-shares-heartbreaking-tribute/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnYF0UU0bAIfzNDig9oSycPsJDem4tK_4an673i4QJLf4RB2S9hzkFgO7x9ao",
+      "image_credit": "STLtoday.com",
+      "news": [
+        {
+          "url": "https://www.stltoday.com/life-entertainment/local/music/article_c997393e-9256-481b-ad32-6c0b34ca73a5.html",
+          "title": "St. Louis drummer Bobby Taylor, who played in many local bands, dies at 58",
+          "publisher": "STLtoday.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnYF0UU0bAIfzNDig9oSycPsJDem4tK_4an673i4QJLf4RB2S9hzkFgO7x9ao"
+        },
+        {
+          "url": "https://www.freep.com/story/entertainment/people/2026/11/10/st-louis-musician-bobby-taylor-dies-squamous-cell-cancer-cause/92703940007/",
+          "title": "Longtime rock drummer Bobby Taylor dies at 58. Cause of death announced",
+          "publisher": "Detroit Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdPD4K6S2FX2ap4ni4zLslPNCOcov4k_8e7HWxLb7OPN5HJgVM1wfBUrxoykU"
+        },
+        {
+          "url": "https://www.vice.com/en/article/veteran-rock-drummer-dies-after-years-long-cancer-battle-as-family-shares-heartbreaking-tribute/",
+          "title": "Veteran Rock Drummer Dies After Years-Long Cancer Battle as Family Shares Heartbreaking Tribute",
+          "publisher": "VICE",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCtcYZsTO81pZH60blKaWLIztx0KbfNeCkAhSJ1QRXbW4-_l0qAPcUqhvZies"
         }
       ]
     }
