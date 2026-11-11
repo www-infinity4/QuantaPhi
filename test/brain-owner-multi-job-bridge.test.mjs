@@ -4,8 +4,9 @@ import {submitApprovedBridgeWork,checkOwnerRunnerRequest} from '../workers/infin
 
 const claims={run_id:'424242'};
 const sourceSha='a'.repeat(40);
+const conversationReceipts=[0,1].map(turn=>({turn,state:'complete',tool:'oracle.chat',toolStatus:'complete',outputSha256:'b'.repeat(64)}));
 const body={repository:'www-infinity4/QuantaPhi',request:'Complete the signed Bubbles continuous handoff for #1921.',
- orderId:'avatar-1921-session-02',sourceSha,
+ orderId:'avatar-1921-session-02',sourceSha,conversationReceipts,
  jobs:[
   {id:'TASK-1',instructions:'Inspect signed Bubbles handoff receipts and correct any source failures.',dependencies:[]},
   {id:'TASK-2',instructions:'After TASK-1 has verified completion, continue durable runner integration.',dependencies:['TASK-1']}
@@ -32,6 +33,9 @@ test('two owner-approved jobs enter the existing D1 ticket with a real dependenc
  const submitted=h.calls.find(x=>x.type==='submit').packet;
  assert.equal(submitted.context.submission_id,'gpt-owner-order-avatar-1921-session-02');
  assert.equal(submitted.context.source_sha,sourceSha);
+ assert.equal(submitted.context.signed_conversation.run_id,'424242');
+ assert.equal(submitted.context.signed_conversation.turn_receipts.length,2);
+ assert.deepEqual(submitted.context.signed_conversation.turn_receipts,conversationReceipts);
  assert.deepEqual(submitted.context.color_jobs.map(x=>[x.id,x.dependencies]),[
   ['TASK-1',[]],['TASK-2',['TASK-1']]]);
  assert.ok(submitted.context.color_jobs.every(x=>x.executor==='repository-engine'));
@@ -65,6 +69,9 @@ test('invalid chains fail before consent or D1 access',async()=>{
   {...body,jobs:[body.jobs[0],{...body.jobs[1],dependencies:['TASK-3']}]},
   {...body,jobs:[{...body.jobs[0],dependencies:['TASK-2']},body.jobs[1]]},
   {...body,sourceSha:'head'},
+  {...body,conversationReceipts:[]},
+  {...body,conversationReceipts:[conversationReceipts[0],{...conversationReceipts[1],outputSha256:'tampered'}]},
+  {...body,conversationReceipts:[conversationReceipts[0],{...conversationReceipts[1],toolStatus:'failed'}]},
   {...body,orderId:'../../secret'},
   {...body,jobs:[{...body.jobs[0],instructions:'x'.repeat(1801)},body.jobs[1]]}
  ];
