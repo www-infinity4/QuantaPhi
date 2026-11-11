@@ -3,6 +3,8 @@ on:
   pull_request:
     paths:
       - 'index.html'
+      - 'iowa-live-radio-cards.js'
+      - 'test/oracle-radio-media-placement.test.mjs'
       - 'oracle-card-deck.js'
       - 'oracle-card-deck.css'
       - 'oracle-age-preference.js'
@@ -62,6 +64,6 @@ jobs:
           node --check quick-card-builder.js
       - name: Run source and behavioral regressions
         run: |
-          node --test test/oracle-feed-persistence.test.mjs test/oracle-placement-engine.test.mjs test/oracle-story-sequencer.test.mjs test/quanta-card-feed.test.mjs test/quanta-feed-visible-impressions.test.mjs tests/shop-phi-switchboard.test.mjs test/quick-card-publisher.test.mjs test/adult-lifestyle-catalog.test.mjs
+          node --test test/oracle-radio-media-placement.test.mjs test/oracle-feed-persistence.test.mjs test/oracle-placement-engine.test.mjs test/oracle-story-sequencer.test.mjs test/quanta-card-feed.test.mjs test/quanta-feed-visible-impressions.test.mjs tests/shop-phi-switchboard.test.mjs test/quick-card-publisher.test.mjs test/adult-lifestyle-catalog.test.mjs
       - name: Check whitespace
         run: git diff --check ${{ github.event.pull_request.base.sha || github.event.before }} HEAD
