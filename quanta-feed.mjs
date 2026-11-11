@@ -1,4 +1,5 @@
 import {QUICK_CARD_SOURCES} from './source-quick-cards.mjs';
+import {suggestFeedSearch} from './quanta-feed-search-assist.mjs';
 import {INFINITY_ACCEPTED_BRANDS} from './infinity-accepted-catalog.mjs';
 import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261102-cardimages1';
 import {SCIENCE_CARDS} from './science-quick-cards.mjs';
@@ -97,8 +98,32 @@ function renderHome(){
  host.append(heading);
  const search=create('input','qf-search');search.type='search';search.placeholder='Search QuantaPhi cards, radios, coins, science…';
  search.autocomplete='off';search.value=query;search.setAttribute('aria-label','Search QuantaPhi cards');
- search.addEventListener('input',()=>{query=search.value.slice(0,120);showCount=16;current='';renderResults(false);});
- host.append(search);
+ const suggestions=create('div','qf-search-suggestions');
+ suggestions.id='quantaFeedSearchSuggestions';suggestions.hidden=true;
+ suggestions.setAttribute('role','region');suggestions.setAttribute('aria-label','Source-backed search suggestions');
+ search.setAttribute('aria-controls',suggestions.id);search.setAttribute('aria-expanded','false');
+ const closeSuggestions=()=>{suggestions.hidden=true;search.setAttribute('aria-expanded','false');};
+ const showSuggestions=()=>{
+  const matches=suggestFeedSearch(ALL_FEED_CARDS,search.value);
+  suggestions.replaceChildren();
+  for(const suggestion of matches){
+   const item=create('div','qf-suggestion');
+   const fill=create('button','qf-suggestion-fill',suggestion.label+' · '+suggestion.category);
+   fill.type='button';fill.addEventListener('click',()=>{
+    query=suggestion.label;search.value=query;showCount=16;current='';
+    renderResults(false);search.focus();closeSuggestions();
+   });
+   const source=create('a','qf-suggestion-source','Original source');
+   source.href=suggestion.sourceUrl;source.target='_blank';source.rel='noopener noreferrer';
+   item.append(fill,source);suggestions.append(item);
+  }
+  suggestions.hidden=matches.length===0;
+  search.setAttribute('aria-expanded',String(matches.length>0));
+ };
+ search.addEventListener('input',()=>{query=search.value.slice(0,120);showCount=16;current='';renderResults(false);showSuggestions();});
+ search.addEventListener('focus',showSuggestions);
+ search.addEventListener('keydown',event=>{if(event.key==='Escape')closeSuggestions();});
+ host.append(search,suggestions);
  const tabs=create('div','qf-tabs');tabs.setAttribute('role','tablist');tabs.setAttribute('aria-label','QuantaPhi feed');
  for(const name of FEED_TABS){
   const b=create('button','qf-tab'+(tab===name?' qf-active':''),name==='for-you'?'For You':name==='following'?'Following':'Public');
