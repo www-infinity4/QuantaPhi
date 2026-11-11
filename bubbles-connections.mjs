@@ -1,3 +1,4 @@
+import {summarizeProviderVerification} from './bubbles-provider-verification.mjs';
 const API = '/api/bubbles/connections';
 const GOOGLE_HANDOFF_TIMEOUT_MS=45000;
 const CLOUDFLARE_HANDOFF_TIMEOUT_MS=45000;
@@ -254,6 +255,34 @@ export function mountConnections(container,{token}) {
   const paired=()=>{try{const value=JSON.parse(sessionStorage.getItem(sessionKey)||'null');return value?.expiresAt>Date.now()?value.token:'';}catch{return '';}};
   const client=new AccountConnections({token:async()=>{const session=paired();if(session)return session;try{return await token();}catch{return '';}}}),section=element('section','','ba-connection-section'),status=element('p','Choose an account service.','ba-muted');
   const refresh=element('button','Check connected accounts','ba-control'),catalog=element('div','','ba-provider-catalog'),accounts=element('div','');
+  catalog.id='bubblesProviderCatalog';
+  const verification=element('section','','ba-verification-center'),verificationRows=element('div','','ba-verification-list');
+  verification.id='bubblesVerificationCenter';
+  verification.setAttribute('aria-label','Provider Verification Center');
+  verification.append(element('h2','Verification Center'),
+    element('p','Google, GitHub and Cloudflare are checked separately against this wallet-bound session. Provider sign-in does not authorize owner-only builds.','ba-muted'),verificationRows);
+  const renderVerification=(providers,accountData,verifiedSession=true)=>{
+    const states=summarizeProviderVerification(providers,accountData,{verifiedSession});
+    verificationRows.replaceChildren();
+    for(const provider of states){
+      const card=element('article','','ba-verification-row');card.dataset.status=provider.status;
+      const mark=provider.connected?'✓ ':'',title=element('h3',mark+provider.label+' · '+provider.status.replaceAll('_',' '));
+      card.append(title,element('p',provider.explanation,'ba-muted'));
+      if(provider.accountLabel)card.append(element('p','Account: '+provider.accountLabel,'ba-muted'));
+      card.append(element('p',provider.verifiedAt?'Last verified: '+new Date(provider.verifiedAt).toLocaleString():
+        'Last verified: not available from provider records','ba-muted'));
+      if(provider.updatedAt)card.append(element('p','Server record updated: '+new Date(provider.updatedAt).toLocaleString(),'ba-muted'));
+      if(provider.connected)card.append(element('p',provider.grantedActions.length?
+        'Recorded capability grants: '+provider.grantedActions.join(', '):
+        'No account-level tool grants recorded. Sign-in alone does not permit tool execution.','ba-muted'));
+      if(provider.connected&&provider.missingActions.length)card.append(element('p','Not approved / unavailable: '+provider.missingActions.join(', '),'ba-muted'));
+      if(provider.reconnectAvailable&&(!provider.connected||provider.missingActions.length)){
+        const link=element('a',provider.connected?'Review provider permissions below':'Sign in or reconnect below','ba-control');
+        link.href='#bubblesProviderCatalog';card.append(link);
+      }
+      verificationRows.append(card);
+    }
+  };
   const cancel=element('button','Cancel sign-in','ba-control');cancel.type='button';cancel.hidden=true;
   refresh.type='button';status.setAttribute('role','status');
   const scopes=element('fieldset',''),googleStatus=element('p','','ba-muted');
@@ -268,7 +297,8 @@ export function mountConnections(container,{token}) {
   for(const [name,action] of [['Find Drive files','drive.read'],['Read spreadsheets','sheets.read'],['Read calendar events','calendar.read'],['Read Gmail messages','gmail.read']]) {
     const label=element('label',''),check=document.createElement('input');check.type='checkbox';check.value=action;label.append(check,document.createTextNode(' '+name+' '));scopes.append(label);selections.push(check);
   }
-  section.append(element('h2','Your accounts'),status,catalog,cancel,accounts,refresh);container.append(section);
+  section.append(element('h2','Your accounts'),status,verification,catalog,cancel,accounts,refresh);container.append(section);
+  renderVerification(null,null,false);
   const walletEmail=element('section','','ba-provider-card ba-wallet-email');
   walletEmail.append(element('h2','StarCoin wallet email updates'),
     element('p','Verify your wallet balance in real time. Choose a daily or weekly email preference after you connect a Google-verified address. Email delivery is not active until a sender is configured.','ba-muted'));
@@ -341,6 +371,7 @@ export function mountConnections(container,{token}) {
       // An account read started before OAuth finished must not repaint older
       // sign-in buttons after the verified connection has been loaded.
       if(version!==loadVersion)return;
+      renderVerification(data,dataAccounts,true);
       catalog.replaceChildren();accounts.replaceChildren();
       const activeConnection=account=>account.status==='connected'&&
         Number.isFinite(account.expiresAt)&&account.expiresAt>Date.now()+30000;
