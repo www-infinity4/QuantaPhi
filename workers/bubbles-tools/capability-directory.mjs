@@ -90,9 +90,9 @@ export function recommendCapabilities(question,env={}){
  else if(publicMemoryTest)add('organic.memory_benchmark');
  if(/\b(?:deploy|deployment|code changes?|modif(?:y|ication)|edit|write|repair|fix|build|merge|push)\b/.test(actionable))
   add('robot_brain.owner_work');
- if(/\b(?:create|make|start)\b/.test(actionable)&&/\b(?:git(?:hub)?|repositor(?:y|ies)|repos?|source)\b/.test(actionable))
+ if(/\b(?:create|make|start)\b/.test(actionable)&&/\b(?:git(?:hub)?|repositor(?:y|ies)|repos?)\b/.test(actionable))
   add('github.create_repository');
- if((namedRepository||/\b(?:git(?:hub)?|repositor(?:y|ies)|repos?)\b/.test(actionable))&&/\b(?:read|view|inspect|open|source|file|browse|search|access|find)\b/.test(q))
+ if((namedRepository||/\b(?:git(?:hub)?|repositor(?:y|ies)|repos?|source)\b/.test(actionable))&&/\b(?:read|view|inspect|open|source|file|browse|search|access|find)\b/.test(q))
   add('github.read_repository','github.read_file');
  if(/\b(?:images?|photos?|pictures?|screenshots?|vision|visual|ocr)\b/.test(q))
   add('bubbles.image_read');
