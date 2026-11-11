@@ -3,52 +3,227 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T16:31:26.714637Z",
+  "checked_at": "2026-11-11T17:02:11.080187Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "usman nurmagomedov",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T16:10:00Z",
+      "query": "vanguard",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-11T16:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/beneil-dariush-surprised-really-freaking-171020193.html",
-        "https://mmasucka.com/news/usman-nurmagomedov-reportedly-signs-with-ufc-ahead-of-ufc-334/",
-        "https://nyfights.com/news/usman-nurmagomedov-manager-denies-false-ufc-signing-rumors/"
+        "https://www.bloomberg.com/news/articles/2026-11-10/vanguard-inks-4-billion-of-private-debt-to-fund-altruist-deal",
+        "https://riabiz.com/a/2026/11/10/vanguard-just-scored-a-4-billion-private-placement-to-close-its-46-billion-altruist-deal-by-years-end-but-it-comes-with-at-least-a-200-million-annual-drag-on-its-legendary-at-cost-model",
+        "https://simplywall.st/stocks/us/banks/nyse-bac/bank-of-america/news/bank-of-america-bac-arranged-4-billion-in-private-debt-for-a"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9PvAxIxCguhrCiIhXqmsPgVRgvrmapL_5Gc-jZ5eDuzub-7zCe1_CbYUcsjQ",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgOuEhbSZ-rVqzpznGyiqoxU88lV-dmEK2tcMGJbjHPr1wr0li3Ppn6HT_Z8U",
+      "image_credit": "Bloomberg.com",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/beneil-dariush-surprised-really-freaking-171020193.html",
-          "title": "Beneil Dariush surprised 'really freaking good' Usman Nurmagomedov isn't in UFC already",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-10/vanguard-inks-4-billion-of-private-debt-to-fund-altruist-deal",
+          "title": "Vanguard Inks $4 Billion of Private Debt to Fund Altruist Deal",
+          "publisher": "Bloomberg.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9PvAxIxCguhrCiIhXqmsPgVRgvrmapL_5Gc-jZ5eDuzub-7zCe1_CbYUcsjQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgOuEhbSZ-rVqzpznGyiqoxU88lV-dmEK2tcMGJbjHPr1wr0li3Ppn6HT_Z8U"
         },
         {
-          "url": "https://mmasucka.com/news/usman-nurmagomedov-reportedly-signs-with-ufc-ahead-of-ufc-334/",
-          "title": "Usman Nurmagomedov Rumored to Join UFC for Next Fight",
-          "publisher": "MMA Sucka",
+          "url": "https://riabiz.com/a/2026/11/10/vanguard-just-scored-a-4-billion-private-placement-to-close-its-46-billion-altruist-deal-by-years-end-but-it-comes-with-at-least-a-200-million-annual-drag-on-its-legendary-at-cost-model",
+          "title": "Vanguard just scored a $4-billion private placement to close its $4.6-billion Altruist deal by year's end, but it comes with at least a $200-million annual drag on its legendary at",
+          "publisher": "RIABiz",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2NcOx_0qyA1diWbhNgYCbWRNn1PK_CW1DMZtrPT653cA1ShH5VmUSjGPxkSU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ75krBxJ-Xqx4f-LAdcB1DtlhEd3O8GPTS-_o0cdx_VqmPzR_bJ8SwzlhE7N8"
         },
         {
-          "url": "https://nyfights.com/news/usman-nurmagomedov-manager-denies-false-ufc-signing-rumors/",
-          "title": "Usman Nurmagomedov’s Manager Drops Blunt Truth on ‘False’ Promotion Switch Reports",
-          "publisher": "NY Fights",
+          "url": "https://simplywall.st/stocks/us/banks/nyse-bac/bank-of-america/news/bank-of-america-bac-arranged-4-billion-in-private-debt-for-a",
+          "title": "Bank of America (BAC) Arranged $4 Billion In Private Debt For A Wealth Deal",
+          "publisher": "Simply Wall St",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8FoS7TJiGYTIAhlmuV-Hier85AVD6ZAIiAjfSp1_HvU2OlYKvuxF4JoEPHWQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtr2IMFTCXP1kBD8aBXH78xOwjkWe_n83xphi8q3NXUJbAHZnFE6oWZwySKhc"
+        }
+      ]
+    },
+    {
+      "query": "rex ryan",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T16:30:00Z",
+      "related_news_urls": [
+        "https://www.nashville.gov/departments/police/news/former-nfl-coach-surrendered-booking-morning",
+        "https://www.tmz.com/2026/11/11/rex-ryan-arrested-for-hitting-pedestrians-running-over-feet/",
+        "https://www.wsmv.com/2026/11/11/former-nfl-coach-rex-ryan-facing-charges-after-truck-allegedly-hit-pedestrians-nashville-police-say/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQM9AnNAcig8J2e76-uAYHubv-jVmrv6wkXTuQXA5bpYjBTD9TsG0vJHygwfqs",
+      "image_credit": "Nashville.gov",
+      "news": [
+        {
+          "url": "https://www.nashville.gov/departments/police/news/former-nfl-coach-surrendered-booking-morning",
+          "title": "Former NFL Coach surrendered for booking this morning",
+          "publisher": "Nashville.gov",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQM9AnNAcig8J2e76-uAYHubv-jVmrv6wkXTuQXA5bpYjBTD9TsG0vJHygwfqs"
+        },
+        {
+          "url": "https://www.tmz.com/2026/11/11/rex-ryan-arrested-for-hitting-pedestrians-running-over-feet/",
+          "title": "Rex Ryan Arrested For Allegedly Hitting 2 Pedestrians, Running Over Their Feet",
+          "publisher": "TMZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5oNJsrzjIzJasnrbddQ2GOFCfsxfn41ovy9KF7socbsZ9fR3vNNhmJVjxuiU"
+        },
+        {
+          "url": "https://www.wsmv.com/2026/11/11/former-nfl-coach-rex-ryan-facing-charges-after-truck-allegedly-hit-pedestrians-nashville-police-say/",
+          "title": "Former NFL coach Rex Ryan facing charges after truck allegedly hit pedestrians in Nashville, police say",
+          "publisher": "WSMV",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqKS4BhC2RXLL5UsRNRAvnmfL7sNxstFVjQDYhjodAMjpTtsWJwdeOjBVyWUI"
+        }
+      ]
+    },
+    {
+      "query": "east texas a&m basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T16:30:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/betting/news/fairleigh-dickinson-east-texas-a-m-prediction-odds-time-2026-college-basketball-picks-november-11/",
+        "https://www.foxsports.com/articles/cbk/diakite-leads-east-texas-am-against-fairleigh-dickinson-after-23point-game",
+        "https://www.sportsline.com/insiders/fairleigh-dickinson-vs-east-texas-a-m-odds-proven-model-reveals-2026-college-basketball-picks-for-wednesday-matchup/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5ECgrqjxmXcSjzYGXnrTHQ68mTwtfaPJlRsJxubAjvC1gelNH6TWaLvSVekk",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/betting/news/fairleigh-dickinson-east-texas-a-m-prediction-odds-time-2026-college-basketball-picks-november-11/",
+          "title": "Fairleigh Dickinson vs. East Texas A&M prediction, odds: 2026 college basketball picks by proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5ECgrqjxmXcSjzYGXnrTHQ68mTwtfaPJlRsJxubAjvC1gelNH6TWaLvSVekk"
+        },
+        {
+          "url": "https://www.foxsports.com/articles/cbk/diakite-leads-east-texas-am-against-fairleigh-dickinson-after-23point-game",
+          "title": "Diakite leads East Texas A&M against Fairleigh Dickinson after 23-point game",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4s4BZOkTNXN3YIPa9D2mGE41CMQSYHPibv39-9pCCL84ruNU6IK4Wzep74lk"
+        },
+        {
+          "url": "https://www.sportsline.com/insiders/fairleigh-dickinson-vs-east-texas-a-m-odds-proven-model-reveals-2026-college-basketball-picks-for-wednesday-matchup/",
+          "title": "Fairleigh Dickinson vs. East Texas A&M odds: Proven model reveals 2026 college basketball picks for Wednesday matchup",
+          "publisher": "SportsLine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwUO-7Ym35HgW5TdKBcBAL7RCasia1FSDP6vfZD5PivaGWBVJk1vzYL9vyWTc"
+        }
+      ]
+    },
+    {
+      "query": "suspect",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T16:20:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/09/us/suspected-cruise-ship-killing",
+        "https://www.today.com/news/cruise-ship-death-murder-charges-msc-seascape-jason-watford-rcna608729",
+        "https://www.click2houston.com/news/local/2026/11/10/child-found-in-cruise-ship-murder-room-after-east-texas-man-charged-in-wifes-death-at-sea/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1eHbyqtAsCazGebO66AzDIOdLnbk75zFiTB1S6cSiNYh2nHVm6h6ir1sOsLg",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/09/us/suspected-cruise-ship-killing",
+          "title": "Man charged after wife found dead in room aboard a cruise ship hours after departing Galveston",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1eHbyqtAsCazGebO66AzDIOdLnbk75zFiTB1S6cSiNYh2nHVm6h6ir1sOsLg"
+        },
+        {
+          "url": "https://www.today.com/news/cruise-ship-death-murder-charges-msc-seascape-jason-watford-rcna608729",
+          "title": "What We Know About the Alleged Killing On the MSC Seascape Cruise Ship",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDABa-VudY9cxhwvdqagtW4bF0OURBgJI1f2XRZygSm--CvExzfX8KZEj306A"
+        },
+        {
+          "url": "https://www.click2houston.com/news/local/2026/11/10/child-found-in-cruise-ship-murder-room-after-east-texas-man-charged-in-wifes-death-at-sea/",
+          "title": "Child found in cabin where East Texas man allegedly killed wife on cruise ship out of Galveston",
+          "publisher": "Click2Houston",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbmbG3npXVKkr_VMGDjd7_az02XK3tOSJQFIjKKZynoNIfPtuJ0VXxJcLsQvQ"
+        }
+      ]
+    },
+    {
+      "query": "saudi arabia",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T16:20:00Z",
+      "related_news_urls": [
+        "https://www.ft.com/content/c844b957-3c98-43a3-b02e-2d0f5368bd49?syn-25a6b1a6=1",
+        "https://www.wsj.com/business/energy-oil/opecs-oil-production-nears-prewar-levels-on-saudi-rebound-70ffcc13",
+        "https://www.reuters.com/business/energy/saudi-arabia-leads-further-jump-opec-oil-output-despite-war-2026-11-11/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQdTmJ2UVVxpFHh_huu07XYhL1rc7ehKEKPbFZWMZaTHl-4qkBWAHqvYpyvsg",
+      "image_credit": "Financial Times",
+      "news": [
+        {
+          "url": "https://www.ft.com/content/c844b957-3c98-43a3-b02e-2d0f5368bd49?syn-25a6b1a6=1",
+          "title": "Saudi oil production rebounds close to prewar levels",
+          "publisher": "Financial Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQdTmJ2UVVxpFHh_huu07XYhL1rc7ehKEKPbFZWMZaTHl-4qkBWAHqvYpyvsg"
+        },
+        {
+          "url": "https://www.wsj.com/business/energy-oil/opecs-oil-production-nears-prewar-levels-on-saudi-rebound-70ffcc13",
+          "title": "OPEC’s Oil Production Nears Prewar Levels on Saudi Rebound",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6jPlGaKvwqQpbETWKiZp07KH_Kk1IyxNRSsmuoAhTAP1FoMNTgZTLTl8eVrk"
+        },
+        {
+          "url": "https://www.reuters.com/business/energy/saudi-arabia-leads-further-jump-opec-oil-output-despite-war-2026-11-11/",
+          "title": "OPEC+ oil output in October nears pre-Iran war rate, led by Saudi Arabia",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH7FPfxQ5mGH-j8NL9_UGxBixuqJLpi4lZ12G6lPEY0IE38q8oQhOuTo53Bjc"
+        }
+      ]
+    },
+    {
+      "query": "usman nurmagomedov",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-11T16:10:00Z",
+      "related_news_urls": [
+        "https://bloodyelbow.com/2026/11/11/merab-dvalishvili-left-pouring-with-blood-as-he-claims-usman-nurmagomedov-and-team-attacked-him/",
+        "https://www.givemesport.com/ufc-merab-dvalishvili-footage-jumped-by-usman-nurmagomedov/",
+        "https://www.mmanews.com/article/merab-dvalishvili-claims-usman-nurmagomedov-ambushed-him"
+      ],
+      "image_url": null,
+      "image_credit": "Bloody Elbow",
+      "news": [
+        {
+          "url": "https://bloodyelbow.com/2026/11/11/merab-dvalishvili-left-pouring-with-blood-as-he-claims-usman-nurmagomedov-and-team-attacked-him/",
+          "title": "Merab Dvalishvili left pouring with blood as he claims Usman Nurmagomedov and team attacked him",
+          "publisher": "Bloody Elbow",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://www.givemesport.com/ufc-merab-dvalishvili-footage-jumped-by-usman-nurmagomedov/",
+          "title": "UFC's Merab Dvalishvili Shares Shock Footage of His Face After Being Jumped by Usman Nurmagomedov",
+          "publisher": "GiveMeSport",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVqVUHBH9W5OzVYs2ymIMrKnX6aJ96RTxPL9lkKjVGrCGgRwGsyAI6p_zB_PU"
+        },
+        {
+          "url": "https://www.mmanews.com/article/merab-dvalishvili-claims-usman-nurmagomedov-ambushed-him",
+          "title": "Merab Dvalishvili Claims Usman Nurmagomedov Ambushed Him",
+          "publisher": "MMANews.com",
+          "description": "",
+          "image_url": null
         }
       ]
     },
     {
       "query": "whoopi goldberg",
-      "approx_searches": "500+",
+      "approx_searches": "200+",
       "published_at": "2026-11-11T16:10:00Z",
       "related_news_urls": [
         "https://www.tvinsider.com/1302712/the-view-whoopi-goldberg-message-pete-hegseth-democrat-party-leadership-fight/",
-        "https://www.yahoo.com/entertainment/articles/watch-view-debates-pete-hegseth-033403065.html",
-        "https://www.foxnews.com/media/whoopi-goldberg-warns-democrats-take-care-business-after-midterm-wins"
+        "https://www.foxnews.com/media/whoopi-goldberg-warns-democrats-take-care-business-after-midterm-wins",
+        "https://www.yahoo.com/entertainment/articles/watch-view-debates-pete-hegseth-033403065.html"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBImQwR1RxmXe-apJ1AsxX8gBSItPTNwNUVK6gT-0vVwbqGLQUfUsxxhn2zF8",
       "image_credit": "TV Insider",
@@ -61,18 +236,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBImQwR1RxmXe-apJ1AsxX8gBSItPTNwNUVK6gT-0vVwbqGLQUfUsxxhn2zF8"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/articles/watch-view-debates-pete-hegseth-033403065.html",
-          "title": "WATCH: The View Debates Pete Hegseth Impeachment Articles [Video]",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyF8XUU49GlF_lYrjE2BfopupywivRAp0etW86z477cN-_DjD_4L4JJ2hsS60"
-        },
-        {
           "url": "https://www.foxnews.com/media/whoopi-goldberg-warns-democrats-take-care-business-after-midterm-wins",
           "title": "Whoopi Goldberg warns Democrats to 'take care of business' after midterm wins",
           "publisher": "Fox News",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKXFuUDxXogVI22N5mlxqeI7Rxqz9VAxszQUBiSlEAsW5PX5XU_1fHFb7Ucwk"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/articles/watch-view-debates-pete-hegseth-033403065.html",
+          "title": "WATCH: The View Debates Pete Hegseth Impeachment Articles [Video]",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyF8XUU49GlF_lYrjE2BfopupywivRAp0etW86z477cN-_DjD_4L4JJ2hsS60"
         }
       ]
     },
@@ -118,7 +293,7 @@
       "related_news_urls": [
         "https://people.com/travis-kelce-plans-to-enlist-wife-taylor-swift-for-next-new-heights-podcast-event-12248830",
         "https://heavy.com/sports/nfl/kansas-city-chiefs/travis-kelce-taylor-swift-jason-new-heights-request/",
-        "https://abcnews.com/GMA/Culture/pink-announces-1st-las-vegas-residency-sphere-2027/story?id=137982096"
+        "https://www.usatoday.com/story/shopping/entertainment/concert-tickets/2026/11/11/buy-pink-tickets-the-sphere-las-vegas-2027-residency/92723672007/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT69-KHZH-engvmHBYLGPJf249RGAV4lamG2Lm5a3hlUg9_RE3hKH6n_G7IPak",
       "image_credit": "People.com",
@@ -138,71 +313,17 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcOl2WkbeS2FSTwBeYj_nC-P-6l-DyqFEAC66UAK-Lh-eiC7wcv4lR8KvP4zM"
         },
         {
-          "url": "https://abcnews.com/GMA/Culture/pink-announces-1st-las-vegas-residency-sphere-2027/story?id=137982096",
-          "title": "Pink announces 1st Las Vegas residency at Sphere in 2027",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "url": "https://www.usatoday.com/story/shopping/entertainment/concert-tickets/2026/11/11/buy-pink-tickets-the-sphere-las-vegas-2027-residency/92723672007/",
+          "title": "Pink first solo female artist to perform at The Sphere, shop tickets",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQCFDHZeKN6LncWNG28RvbDghGitxqQw-hFRTvHUlOEsdYqk6zjU84J5cMj6w"
-        }
-      ]
-    },
-    {
-      "query": "obama presidential library",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T15:40:00Z",
-      "related_news_urls": [
-        "https://thegeorgiasun.com/georgia-people/georgia-artists-work-featured-in-the-obama-presidential-library/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTp5H-6F757KYdhxrluayPGXTBX96XjVaSDCZ_bCnz_wT_gMAq6i_MPpuarN-Y",
-      "image_credit": "The Georgia Sun",
-      "news": [
-        {
-          "url": "https://thegeorgiasun.com/georgia-people/georgia-artists-work-featured-in-the-obama-presidential-library/",
-          "title": "Georgia artist’s work featured in the Obama Presidential Library",
-          "publisher": "The Georgia Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTp5H-6F757KYdhxrluayPGXTBX96XjVaSDCZ_bCnz_wT_gMAq6i_MPpuarN-Y"
-        }
-      ]
-    },
-    {
-      "query": "ugo humbert",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T15:40:00Z",
-      "related_news_urls": [
-        "https://sportsbook.fanduel.com/tennis/atp-stockholm-2026/borna-gojo-v-ugo-humbert-36299653",
-        "https://www.tennismajors.com/atp/stockholm-open-atp-250-atp/borg-and-dahlin-beaten-as-all-three-swedish-wildcards-fall-in-stockholm-866561.html",
-        "https://www.skysports.com/tennis/watch/5947996432295079112/bybit-stockholm-open-2026"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA",
-      "image_credit": "FanDuel Sportsbook",
-      "news": [
-        {
-          "url": "https://sportsbook.fanduel.com/tennis/atp-stockholm-2026/borna-gojo-v-ugo-humbert-36299653",
-          "title": "Borna Gojo v Ugo Humbert Odds",
-          "publisher": "FanDuel Sportsbook",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA"
-        },
-        {
-          "url": "https://www.tennismajors.com/atp/stockholm-open-atp-250-atp/borg-and-dahlin-beaten-as-all-three-swedish-wildcards-fall-in-stockholm-866561.html",
-          "title": "Borg and Dahlin beaten as all three Swedish wildcards fall in Stockholm",
-          "publisher": "Tennis Majors",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt3KKwpm1ckQoYhewf3K9KpfDLdZQ0k0_iUemsd6WnJ0c5HLUORtRgWadm5l8"
-        },
-        {
-          "url": "https://www.skysports.com/tennis/watch/5947996432295079112/bybit-stockholm-open-2026",
-          "title": "Sports News, Transfers, Scores | Watch Live Sport",
-          "publisher": "Sky Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbya26hsWFOG1R7EaBi03nAaEk84wj2cLdvZT-AL2V7NTRn4N2KYKOPpauT3U"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOES30ZL3FfxifgIBqPMcjAOFBV7pORHzn4jT1rDXuhnXRCm_hYjoxTozWEIY"
         }
       ]
     },
     {
       "query": "tatjana maria",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-11T15:40:00Z",
       "related_news_urls": [
         "https://en.tennistemple.com/match/maria-tubello-sopo-2026/9569777/"
@@ -216,111 +337,6 @@
           "publisher": "TennisTemple",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAWxDXIOGfaMo1yRYqGzhtOzwV2VValpx_Q9cnuq7zFrUfUpOPltJOELS7UjM"
-        }
-      ]
-    },
-    {
-      "query": "caleb williams baker mayfield interaction",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T15:40:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jonah-jackson-on-luke-goedekes-grievances-this-is-football-man",
-        "https://chicago.suntimes.com/bears/2026/11/09/bears-buccaneers-qb-baker-mayfield-accuse-mimicking-snap-count-cadence",
-        "https://www.pewterreport.com/bucs-todd-bowles-right-plays-baker-mayfield/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Ta5m9cVB-onepYUFtV6NJobVUjAswxAK5sHmvKrmiHAV17TcTiCVlONLLu4",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jonah-jackson-on-luke-goedekes-grievances-this-is-football-man",
-          "title": "Jonah Jackson on Luke Goedeke’s grievances: “This is football, man”",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Ta5m9cVB-onepYUFtV6NJobVUjAswxAK5sHmvKrmiHAV17TcTiCVlONLLu4"
-        },
-        {
-          "url": "https://chicago.suntimes.com/bears/2026/11/09/bears-buccaneers-qb-baker-mayfield-accuse-mimicking-snap-count-cadence",
-          "title": "Bucs QB Baker Mayfield accuses Bears of mimicking his cadence",
-          "publisher": "Chicago Sun-Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFFNepO1QS8HL6QpHyYh7V4Wj7uSSXNAu86NI3ojpjwOy1aJ3PYzD0emK5CrM"
-        },
-        {
-          "url": "https://www.pewterreport.com/bucs-todd-bowles-right-plays-baker-mayfield/",
-          "title": "Bucs’ Todd Bowles: It’s A “Challenge” To Get Right Plays For Baker Mayfield",
-          "publisher": "Pewter Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfFhGTieAtxWQcG5nmG6d_3tqP-i7FPZQu7vyJJBcl6dbqV6osKIHk2L9oZ1Q"
-        }
-      ]
-    },
-    {
-      "query": "brad ausmus",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T15:30:00Z",
-      "related_news_urls": [
-        "https://www.mlbtraderumors.com/2026/11/astros-expected-to-name-brad-ausmus-manager.html",
-        "https://www.mlb.com/news/randy-flores-discusses-next-astros-manager",
-        "https://www.stltoday.com/sports/professional/mlb/cardinals/article_cd0090c1-3cd2-4cb9-8009-ed01b8ad2366.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoslplvoNK5C7aA81MH0qLQcdY-gc_UkbafAAxJo5CangTi2G3Y6-yGaF0xjc",
-      "image_credit": "MLB Trade Rumors",
-      "news": [
-        {
-          "url": "https://www.mlbtraderumors.com/2026/11/astros-expected-to-name-brad-ausmus-manager.html",
-          "title": "Astros Expected To Name Brad Ausmus Manager",
-          "publisher": "MLB Trade Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoslplvoNK5C7aA81MH0qLQcdY-gc_UkbafAAxJo5CangTi2G3Y6-yGaF0xjc"
-        },
-        {
-          "url": "https://www.mlb.com/news/randy-flores-discusses-next-astros-manager",
-          "title": "Flores in final stages of finding Astros' next manager",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLCwltHykb91RCrat5aqf4diZaGN4_lGPh0PBzNOohjBNYc6VBQgtM4q58bBM"
-        },
-        {
-          "url": "https://www.stltoday.com/sports/professional/mlb/cardinals/article_cd0090c1-3cd2-4cb9-8009-ed01b8ad2366.html",
-          "title": "Albert Pujols isn't the only Cardinals tie new GM Randy Flores could pull into Astros' orbit",
-          "publisher": "STLtoday.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSH-q8i10pF9LDucGh3Vn844Gcq4qgjkpaC7mvWehpxSj0gQJrIzlJXqJqiWUM"
-        }
-      ]
-    },
-    {
-      "query": "gary trent jr",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T15:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50427876/heat-lakers-knicks-76ers-roster-decisions",
-        "https://behindthebuckpass.com/gary-trent-jrs-horrific-contract-worse-bucks-g-leaugers",
-        "https://sports.yahoo.com/articles/nba-19-teams-face-roster-180205042.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8umGaY7Rs5Nqr76agvW-d34ryPqdHQtjFsjBPImuwBuP5nfq7zNAHsGKIxNM",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50427876/heat-lakers-knicks-76ers-roster-decisions",
-          "title": "Bobby Marks' NBA core danger tiers: 19 teams with major decisions looming",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8umGaY7Rs5Nqr76agvW-d34ryPqdHQtjFsjBPImuwBuP5nfq7zNAHsGKIxNM"
-        },
-        {
-          "url": "https://behindthebuckpass.com/gary-trent-jrs-horrific-contract-worse-bucks-g-leaugers",
-          "title": "Gary Trent Jr.'s horrific contract made even worse by Bucks G Leaugers",
-          "publisher": "Behind the Buck Pass",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMCIPOINrPh-iogjCO1MxJk45-E7-A2tPysEtxmvrvRN4dVvqF04jAO-vkuKw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/nba-19-teams-face-roster-180205042.html",
-          "title": "NBA’s 19 Teams Face Roster Danger As Bucks And Heat Struggle",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIeJawMtho59hLfxhzJijliNORczXEQeX-BD7atTHuGYT5jdktuXd_l_2ZNr8"
         }
       ]
     }
