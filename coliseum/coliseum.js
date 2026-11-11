@@ -102,10 +102,13 @@ function mountZeusAssistant(){
  const openChat=()=>iframe.contentWindow?.postMessage({type:'quantaphi:bubbles:open',id},window.location.origin);
  // An iframe load alone can also be a 404 or challenge. Only the script can send ready.
  iframe.addEventListener('load',()=>{
+  // A navigating/reloaded iframe is a new script instance. Its prior ready
+  // event cannot authorize delivery to the replacement document.
+  zeusAssistantReady=false;
+  status.textContent='Waiting for the verified Bubbles conversation to initialize…';
+  // Explicitly request fresh readiness: the child might have sent its first
+  // ready event before the parent's load handler ran.
   openChat();
-  status.textContent=zeusAssistantReady?
-   'Bubbles conversation initialized. Send your question to get an AI reply.':
-   'Waiting for the verified Bubbles conversation to initialize…';
  });
  window.addEventListener('message',event=>{
   if(event.origin!==window.location.origin||event.source!==iframe?.contentWindow||
