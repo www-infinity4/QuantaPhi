@@ -1,0 +1,17 @@
+# Ticket 1923 · Infinity OS Cart 003/004 → Nuance Discovery
+
+- Canonical owner issue: https://github.com/www-infinity4/QuantaPhi/issues/1923
+- Existing related work: #929 (owner archive reconciliation), #1921 (signed continuation), #1918 (D1 coordination), #1917; do not create duplicate engine
+- Same reviewed branch / PR: `feat/infinity-os-nuance-discovery-1923` / https://github.com/www-infinity4/QuantaPhi/pull/1924
+- Original context: November 25, 2025 Cart 003 Computers and Cart 004 Nuances; 41 primary carts + 41 calculator twins, original filenames and research routing. Historical conversation references recovered, but the full transcript has **not** been imported/verified. Never promote third-party quotes or assistant claims into owner instructions.
+- Later owner constraints: reuse C13B0, QuantaPhi native Quick Cards, Oracle Octaves styling, signed Bubbles/GitHub owner execution, Android readability, original preferences, no wallet permission expansion, real acceptance receipts.
+- Repo-scoped source: `workers/infinity-brain-clock/conversation-work-audit.mjs`, `nuance-discovery-core.mjs`, `nuance-discovery-card.mjs`, `nuance-discovery-card.css`, `bubbles-card-catalog.mjs`, `index.html`, `test/nuance-discovery.test.mjs`.
+- Current state: **source_staged / review_pending**. New regression tests were committed first. No verified exact-head CI, independent GitHub approval, merge, production deploy, browser or Android acceptance in this session.
+- Scope completed in source: added a historical Cart 003/004 candidate to the existing owner-partitioned work-audit; safe source-derived improvement view model; existing owner-session readback and guarded review-only draft submission; card entry, Oracle styles, mobile controls and shared card actions. This is **not** a full historical archive import or an autonomous coding job.
+- Source-read restrictions: the card sends only owner-verified authenticated requests to the existing Brain. The server owns archive partition and draft source ID verification. No private transcripts are written to public GitHub, no new credentials or job grants, no wallet writes.
+- Estimated progress: 4/9 scoped source-to-production acceptance gates (source research, tests authored, implementation staged, card registration) ≈ 44%; CI, independent review, merge eligibility, authorized deployment and browser/Android proof remain. This is an estimate, not completion.
+- Sessions spent: 1. Remaining sessions: unknown; depends on CI, independent review, Cloudflare staging and owner's imported full original thread.
+- Missing original imports: verbatim 2025-11-25 thread, original `cart003_computers.py`, `cart004_nuances.py`, original `cart000_run_all.py`, 41 paired calculator sources unless independently located. Do not fabricate their existence in current QuantaPhi.
+- Next single executable action: run and inspect `node --test test/nuance-discovery.test.mjs` and established QuantaPhi test suites on exact PR head; fix red results, then request independent Pink review.
+- Next unresolved source-grounded improvement after this acceptance: owner-authorized import of the original Cart 003/004 conversation with message-level provenance into the existing private Bubbles archive, deduped against issue #1923; do **not** start without the established importer and active owner grant.
+- Last update: 2026-11-11 UTC. No executor lease claimed in this chat; do not displace an active signed runner lease.
