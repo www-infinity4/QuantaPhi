@@ -3,356 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T22:31:26.588500Z",
+  "checked_at": "2026-11-11T23:01:29.015871Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "jensen huang second affair",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T22:10:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/investingclub/2026/11/11/were-adding-a-chipmaker-to-our-bullpen-watchlist-and-downgrading-another-name.html",
-        "https://www.cnbc.com/investingclub/2026/11/11/jim-cramers-plan-for-our-intel-position-plus-a-rotation-loser-to-buy-here.html",
-        "https://www.cnbc.com/2026/11/11/stephanie-link-buying-dicks-dks.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEcYqulftgCsGxQmCHtXOLagpOHHmuRiZeuENoCf1SX2nXsGe_488CWmq1sCE",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/investingclub/2026/11/11/were-adding-a-chipmaker-to-our-bullpen-watchlist-and-downgrading-another-name.html",
-          "title": "We're adding a chipmaker to our Bullpen watchlist and downgrading another name",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEcYqulftgCsGxQmCHtXOLagpOHHmuRiZeuENoCf1SX2nXsGe_488CWmq1sCE"
-        },
-        {
-          "url": "https://www.cnbc.com/investingclub/2026/11/11/jim-cramers-plan-for-our-intel-position-plus-a-rotation-loser-to-buy-here.html",
-          "title": "Jim Cramer's plan for our Intel position. Plus, a rotation loser to buy here",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9LL0badeWQ95wFyxNZofHF0zKoze_4K6CGoWM0tpOxSb90sdgqeUZwkDfQb4"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/11/stephanie-link-buying-dicks-dks.html",
-          "title": "Insiders are starting to buy this retail turnaround story, so I am too",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiQOa0nGrbGAXidInM_7VFZ64D_gjMM5swpMN77ObI0Mbp2XVO2AKpCrxPRkY"
-        }
-      ]
-    },
-    {
-      "query": "new york",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T22:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/10/style/pride-bar-hells-kitchen-ai.html",
-        "https://www.queerty.com/owner-of-controversial-pride-bar-responds-to-criticism-this-is-a-gay-bar-do-i-have-to-hide-it-20261111/",
-        "https://abc7ny.com/post/flatbush-partial-building-collapse-brooklyn-reported-people-trapped/20033903/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4d6NOgs8DaMlusBcvKACL_L7M8fvXKDNlnq58Jq0VvJLAhDnlagakzlXdklY",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/10/style/pride-bar-hells-kitchen-ai.html",
-          "title": "Did AI Make This NYC Gay Bar?",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4d6NOgs8DaMlusBcvKACL_L7M8fvXKDNlnq58Jq0VvJLAhDnlagakzlXdklY"
-        },
-        {
-          "url": "https://www.queerty.com/owner-of-controversial-pride-bar-responds-to-criticism-this-is-a-gay-bar-do-i-have-to-hide-it-20261111/",
-          "title": "Owner of controversial PRIDE bar responds to criticism: \"This is a gay bar. Do I have to hide it?\"",
-          "publisher": "Queerty",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_YScmnvRQx8ugRdo1oEfi9BruDitutnpQHa3EJC7R54kgU5iHNEN0QKdCdQ"
-        },
-        {
-          "url": "https://abc7ny.com/post/flatbush-partial-building-collapse-brooklyn-reported-people-trapped/20033903/",
-          "title": "Brooklyn building collapse: People trapped, several injured in Flatbush",
-          "publisher": "ABC7 New York",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4odmSBt3uERPcMheRV0-x7_QIbkV0Z3m_RgngZWvXSFeOLudZlJGWVvjgVM"
-        }
-      ]
-    },
-    {
-      "query": "kimberly powell nvidia",
+      "query": "snow",
       "approx_searches": "10000+",
-      "published_at": "2026-11-11T22:00:00Z",
+      "published_at": "2026-11-11T22:40:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
-        "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
-        "https://www.cnn.com/2026/11/11/tech/jensen-huang-nvidia-affair-profile"
+        "https://www.bostonglobe.com/2026/11/09/metro/noreaster-snow-boston-new-england/",
+        "https://www.yahoo.com/news/weather-news/articles/coastal-storm-way-chilly-rain-202603494.html",
+        "https://www.cnn.com/2026/11/10/weather/winter-storm-eastern-us-cold-snap-climate"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDKCVVyUCCYyYSrjxTpqYVH7wwROEBvAlv_q8WRccDV6Hk3TUr6fineIAx8Bs",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQf81ug1LEu36dnPjiaAXKGNuUUAfhEubk3JN_iDxvOsXGHizgxd1lYypYClg",
+      "image_credit": "The Boston Globe",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
-          "title": "Jensen Huang Said to Have Had Relationship With Nvidia Executive Who Reports to Him",
-          "publisher": "The New York Times",
+          "url": "https://www.bostonglobe.com/2026/11/09/metro/noreaster-snow-boston-new-england/",
+          "title": "Nor’easter forecast: Here’s when and where the snow and rain are expected in New England",
+          "publisher": "The Boston Globe",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDKCVVyUCCYyYSrjxTpqYVH7wwROEBvAlv_q8WRccDV6Hk3TUr6fineIAx8Bs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQf81ug1LEu36dnPjiaAXKGNuUUAfhEubk3JN_iDxvOsXGHizgxd1lYypYClg"
         },
         {
-          "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
-          "title": "Statement From NVIDIA Board of Directors",
-          "publisher": "NVIDIA Newsroom",
+          "url": "https://www.yahoo.com/news/weather-news/articles/coastal-storm-way-chilly-rain-202603494.html",
+          "title": "Coastal storm on the way with chilly rain, gusty winds, colder temps in N.J.",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjCZHNG_dz8zbGDFGEGKs9xpu7wXxXPIT8CfNOdPbPkHVJx6XLsDgjnbLWNdQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrXHNIL9Y-Q_D_yBaxQjPeFVffxDkae6h_uG4pN_OkhjnnHjlP4K3fKcg41kE"
         },
         {
-          "url": "https://www.cnn.com/2026/11/11/tech/jensen-huang-nvidia-affair-profile",
-          "title": "Jensen Huang dreamed up Nvidia at a Denny’s. The spy scandal threatens decades of his life’s work.",
+          "url": "https://www.cnn.com/2026/11/10/weather/winter-storm-eastern-us-cold-snap-climate",
+          "title": "First snow, coldest air in months headed for eastern US in wake of storm",
           "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlPZvAXjOegGMPdfg289M4c4FRDV66St_IQXR-xljh470tMPOpcfGZdgj1b3A"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqC6EOp1YiPHPORrWNUfiYh9gQeROWIhiduA-uukJZela4psUWma8JQazT7GU"
         }
       ]
     },
     {
-      "query": "nyc",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T22:00:00Z",
+      "query": "aryna sabalenka",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-11T22:40:00Z",
       "related_news_urls": [
-        "https://abc7ny.com/post/javits-frimpong-murder-17-year-old-custody-connection-death-bronx-teen/20033069/",
-        "https://ny1.com/nyc/all-boroughs/news/2026/11/11/teen-arrested-in-killing-of-15-year-old-bronx-student",
-        "https://www.nytimes.com/2026/11/11/nyregion/nyc-bronx-murder-arrest-javits-frimpong.html"
+        "https://www.wtatennis.com/news/4607397/fage-wta-finals-day-4-preview-how-aryna-sabalenka-and-mirra-andreeva-can-advance",
+        "https://sports.yahoo.com/articles/aryna-sabalenka-speaks-beating-karolina-090000310.html",
+        "https://www.espn.com/tennis/story/_/id/50437046/aryna-sabalenka-mirra-andreeva-win-wta-finals"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPSFujp5ErumkUNFNAlz7HtrieKbkryf3Je16zKWLDJOl2qmvRRNpVOBLC2_M",
-      "image_credit": "ABC7 New York",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-acwUPTJNctj-RcTsWgwbFbbmRcQSz0mWrRyR3EEjcVhqLR1vEpfzQy9Y_7g",
+      "image_credit": "WTA Tennis",
       "news": [
         {
-          "url": "https://abc7ny.com/post/javits-frimpong-murder-17-year-old-custody-connection-death-bronx-teen/20033069/",
-          "title": "Javits Frimpong shooting: 17-year-old charged with murder",
-          "publisher": "ABC7 New York",
+          "url": "https://www.wtatennis.com/news/4607397/fage-wta-finals-day-4-preview-how-aryna-sabalenka-and-mirra-andreeva-can-advance",
+          "title": "FAGE WTA Finals Day 4 preview: How Sabalenka and Andreeva can advance",
+          "publisher": "WTA Tennis",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPSFujp5ErumkUNFNAlz7HtrieKbkryf3Je16zKWLDJOl2qmvRRNpVOBLC2_M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-acwUPTJNctj-RcTsWgwbFbbmRcQSz0mWrRyR3EEjcVhqLR1vEpfzQy9Y_7g"
         },
         {
-          "url": "https://ny1.com/nyc/all-boroughs/news/2026/11/11/teen-arrested-in-killing-of-15-year-old-bronx-student",
-          "title": "Teen arrested in killing of 15-year-old Javits Frimpong",
-          "publisher": "Spectrum News NY1",
+          "url": "https://sports.yahoo.com/articles/aryna-sabalenka-speaks-beating-karolina-090000310.html",
+          "title": "Aryna Sabalenka speaks after beating Karolina Muchova in her first match at the WTA Finals",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHyHF7_QV0DETKBM7joR_BFFng9aC7bQJh2JNvFBkoBuIEr-u6wWbIaqFcrjM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcf5iP64Ff4u9ZBDzje_jq33msXpbNcZRmTHPPCJvNw5lybwmuZt14CxDvPBI"
         },
         {
-          "url": "https://www.nytimes.com/2026/11/11/nyregion/nyc-bronx-murder-arrest-javits-frimpong.html",
-          "title": "He Was Killed at Age 15. Now a 17-Year-Old Is Arrested in His Murder.",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWSvmaSamv8Fm02wnhqp0du3Q5zOOReMJuT6Kzs9ZVCaxM7XOPCwq-Y7naMWU"
-        }
-      ]
-    },
-    {
-      "query": "the vow chris harrison",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T22:00:00Z",
-      "related_news_urls": [
-        "https://www.latimes.com/entertainment-arts/tv/story/2026-11-11/chris-harrison-the-vow-fox-nation-the-bachelor",
-        "https://www.hollywoodreporter.com/tv/tv-features/chris-harrison-the-bachelor-firing-blessing-not-canceled-1236751150/",
-        "https://www.foxnews.com/entertainment/the-vow-chris-harrison-back-reality-dating-tv-fox-nation-series"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4ut1x6cZ27sg9bR37lm_-c4_bosCHbrJ1DS_chjgbP6aMw4L1D6uQvzCiMao",
-      "image_credit": "Los Angeles Times",
-      "news": [
-        {
-          "url": "https://www.latimes.com/entertainment-arts/tv/story/2026-11-11/chris-harrison-the-vow-fox-nation-the-bachelor",
-          "title": "Chris Harrison calls his exit from 'The Bachelor' 'a gut punch.' But he's excited about 'The Vow'",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4ut1x6cZ27sg9bR37lm_-c4_bosCHbrJ1DS_chjgbP6aMw4L1D6uQvzCiMao"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/tv/tv-features/chris-harrison-the-bachelor-firing-blessing-not-canceled-1236751150/",
-          "title": "Chris Harrison Says Being Fired From ‘The Bachelor’ Was a “Blessing,” Not a Cancellation",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQr6k8K-oBAruWnugA20iJokiW7HPCR9UK-axusmVd0vZnJYmsfvxlsHYoFNCY"
-        },
-        {
-          "url": "https://www.foxnews.com/entertainment/the-vow-chris-harrison-back-reality-dating-tv-fox-nation-series",
-          "title": "'The Vow' brings Chris Harrison back to reality dating TV: What to know about the Fox Nation series",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN0MUO2RXCpcDR69QKaz6_m-wG-smi-CsbXgCF8yypWlG113U_D-ENpKbdXNo"
-        }
-      ]
-    },
-    {
-      "query": "payroll",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T22:00:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/11/social-security-benefits-taxable-payroll-gdp.html",
-        "https://finance.yahoo.com/economy/policy/articles/social-security-could-shrink-2032-142019972.html",
-        "https://qz.com/aarp-income-shifts-social-security-trust-fund-111126"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6jIiPNuC-CiNqONjDXwnXwQbiEhzcLOi4xnv3SPKQ9dQvrCDbfjeimA0LYTk",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/11/social-security-benefits-taxable-payroll-gdp.html",
-          "title": "Social Security could pay full benefits until 2059 if taxable payroll kept pace with GDP: AARP report",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6jIiPNuC-CiNqONjDXwnXwQbiEhzcLOi4xnv3SPKQ9dQvrCDbfjeimA0LYTk"
-        },
-        {
-          "url": "https://finance.yahoo.com/economy/policy/articles/social-security-could-shrink-2032-142019972.html",
-          "title": "Social Security could shrink by 2032 — how to check your benefits",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZZY0oMIwjLecc44wRBQzXcIn2yCpC1fmtkTOW_Yws5TrVFpKdCfsVyR11Kek"
-        },
-        {
-          "url": "https://qz.com/aarp-income-shifts-social-security-trust-fund-111126",
-          "title": "Shifting income patterns cut 25 years from Social Security's projected lifespan, AARP says",
-          "publisher": "Quartz",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMnuDGbYjUT3Fr6YxY-7FLFPi3PH3nZTA3dAuhRk47A6_KTc1p9k-xmWR68z0"
-        }
-      ]
-    },
-    {
-      "query": "severe thunderstorm watch",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T21:50:00Z",
-      "related_news_urls": [
-        "https://www.wlky.com/article/warm-wednesday-evening-storm-chances/74397468",
-        "https://www.whas11.com/article/weather/weather-impact/weather-impact-alert-thunderstorm-kentucky-indiana/417-31b018bd-0727-4427-bcc7-292b306203fb",
-        "https://www.kbsi23.com/weather/wednesday-evening-storm-chance-another-small-chance-thursday/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxkgje00zpWQUZThiKAu37IMYN6LKBdVEmdiK9lBGnG0BB33wuU3xSRA3sA2I",
-      "image_credit": "WLKY",
-      "news": [
-        {
-          "url": "https://www.wlky.com/article/warm-wednesday-evening-storm-chances/74397468",
-          "title": "Warm Wednesday, evening storm chances",
-          "publisher": "WLKY",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxkgje00zpWQUZThiKAu37IMYN6LKBdVEmdiK9lBGnG0BB33wuU3xSRA3sA2I"
-        },
-        {
-          "url": "https://www.whas11.com/article/weather/weather-impact/weather-impact-alert-thunderstorm-kentucky-indiana/417-31b018bd-0727-4427-bcc7-292b306203fb",
-          "title": "Severe Thunderstorm Watch issued for these Kentucky, Indiana counties | Latest alerts",
-          "publisher": "WHAS11",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWfm0aOkTbfjwHPbqo3gfjAOX56K_tFAshL1RM1Yi6FzEarIGLr0chh08B-iA"
-        },
-        {
-          "url": "https://www.kbsi23.com/weather/wednesday-evening-storm-chance-another-small-chance-thursday/",
-          "title": "Wednesday Evening Storm Chance, Another Small Chance Thursday",
-          "publisher": "www.kbsi23.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3JYzQqLFxCd2LFZUFxj4QkBlNNmxM6hHIoQlyDD5ouHN2ndJszLe3k_Ha7k8"
-        }
-      ]
-    },
-    {
-      "query": "kamario taylor",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T21:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50455234/sources-kamario-taylor-return-mississippi-state-27",
-        "https://bleacherreport.com/articles/25532349-kamario-taylor-becomes-highest-paid-qb-cfb-latest-rumors-new-mississippi-state-contract",
-        "https://www.usatoday.com/story/sports/ncaaf/2026/11/11/kamario-taylor-mississippi-state-deal-contract-football-nil/92731900007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT24QXJ7y8nomUu3xcFC_iWQhS9xmLdLWhUoNmo-GFviU7D0cGsm6nj8SFFteM",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50455234/sources-kamario-taylor-return-mississippi-state-27",
-          "title": "Sources: Kamario Taylor finalizing deal to return to Mississippi State in '27",
+          "url": "https://www.espn.com/tennis/story/_/id/50437046/aryna-sabalenka-mirra-andreeva-win-wta-finals",
+          "title": "Aryna Sabalenka picks up first win at WTA Finals, faces Mirra Andreeva next",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT24QXJ7y8nomUu3xcFC_iWQhS9xmLdLWhUoNmo-GFviU7D0cGsm6nj8SFFteM"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25532349-kamario-taylor-becomes-highest-paid-qb-cfb-latest-rumors-new-mississippi-state-contract",
-          "title": "Kamario Taylor Becomes Highest-Paid QB in CFB, Latest Rumors on New Mississippi State Contract",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHTCc9KbYw1SZ7Xr-WKmXcbfuhTD3S7q_qJPnw9YGgwzokAdNgWjD2Mf6q5hw"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/ncaaf/2026/11/11/kamario-taylor-mississippi-state-deal-contract-football-nil/92731900007/",
-          "title": "Kamario Taylor is heading back to Mississippi State football. How much will he be earning?",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRoIhHznQUHQNQqEtpaV8fxMDQkRVrwyFQH6bnFWwHf6fZaKQerpU6OChfpKc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDQbvcES79Qh9pbHQ0QCWn_s6T-tQZw1KbnqBs38Szp4kFG0IvixBXCacjQW4"
         }
       ]
     },
     {
-      "query": "pat tillman",
+      "query": "kaylee hottle",
       "approx_searches": "500+",
-      "published_at": "2026-11-11T21:50:00Z",
+      "published_at": "2026-11-11T22:40:00Z",
       "related_news_urls": [
-        "https://apnews.com/article/pat-tillman-f8fc5920c9e94012476ff37b6c49142e",
-        "https://www.wenatcheeworld.com/sports/pat-tillman-still-inspiring-millions-22-years-after-his-death-in-afghanistan/article_37430775-8b68-42f4-ab98-456aa40fdcb4.html",
-        "https://ktar.com/arizona-restaurant-news/pat-tillman-foundation-five-guys"
+        "https://www.tmz.com/2026/11/11/kaylee-hottle-being-replaced-by-sister-in-upcoming-film/",
+        "https://www.nine.com.au/entertainment/celebrity/kaylee-hottle-death-final-movie-role-sister-taking-over-filmih-update-20261112-p61dh4.html",
+        "https://people.com/godzilla-actress-kaylee-hottle-s-sister-will-step-in-for-her-in-unfinished-final-movie-after-her-death-12249266"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQS6yW2trGznQlrFkiks-IUMPQ0qOWC0wZqVTOZSJPacT2jKqapPK1lG5L2fp8",
-      "image_credit": "AP News",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoH8lKQGVRbi3Qvea1EnFzmvboRl-N5WImE8amWbTgNHATg7kjUvTefVMEEyY",
+      "image_credit": "TMZ",
       "news": [
         {
-          "url": "https://apnews.com/article/pat-tillman-f8fc5920c9e94012476ff37b6c49142e",
-          "title": "Pat Tillman still inspiring millions 22 years after his death in Afghanistan",
+          "url": "https://www.tmz.com/2026/11/11/kaylee-hottle-being-replaced-by-sister-in-upcoming-film/",
+          "title": "Late 'Godzilla' Actor Kaylee Hottle Replaced by Deaf Sister in Upcoming Film",
+          "publisher": "TMZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoH8lKQGVRbi3Qvea1EnFzmvboRl-N5WImE8amWbTgNHATg7kjUvTefVMEEyY"
+        },
+        {
+          "url": "https://www.nine.com.au/entertainment/celebrity/kaylee-hottle-death-final-movie-role-sister-taking-over-filmih-update-20261112-p61dh4.html",
+          "title": "Child star Kaylee Hottle’s sister to finish filming her final movie role, after her death at age 18",
+          "publisher": "Nine.com.au",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9SM1IYQrNN5QpH_d2sla7ygFeemT0VIvpa9Qn9RKlnlzs1gr8XUyBLUimuOo"
+        },
+        {
+          "url": "https://people.com/godzilla-actress-kaylee-hottle-s-sister-will-step-in-for-her-in-unfinished-final-movie-after-her-death-12249266",
+          "title": "‘Godzilla’ Actress Kaylee Hottle’s Sister Will Step in for Her in Unfinished Final Movie After Her Death at 18",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBsl5A9_LSx-8fWYhH56dbm_4I0HCgJ6ld7CeGEaBThqJeek95kVCJ729s-GA"
+        }
+      ]
+    },
+    {
+      "query": "navy basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T22:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/penn-vs-navy-prediction-pick-113007904.html",
+        "https://navysports.com/news/2026/11/10/mens-basketball-13th-annual-veterans-classic-to-be-played-wednesday.aspx?path=me",
+        "https://apnews.com/article/mens-college-basketball-pennsylvania-navy-midshipmen-college-basketball-college-sports-25d547eb92ec4d21b3ef456d42e5db38"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUavk-iVpVbCDQKr_YPn2Bm2n3o1eE3VAsNtSmiU1_M_yACrojS0Rbn5-TbOw",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/penn-vs-navy-prediction-pick-113007904.html",
+          "title": "Penn vs Navy Prediction, Pick, College Basketball Odds for Wednesday, Nov. 11",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUavk-iVpVbCDQKr_YPn2Bm2n3o1eE3VAsNtSmiU1_M_yACrojS0Rbn5-TbOw"
+        },
+        {
+          "url": "https://navysports.com/news/2026/11/10/mens-basketball-13th-annual-veterans-classic-to-be-played-wednesday.aspx?path=me",
+          "title": "13th Annual Veterans Classic to be Played Wednesday",
+          "publisher": "Naval Academy Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRE9M4U53RjAsxiQEaHSkql9alWIk0QWU3ZNbPlMY3Lyc-fU7u9KrF5gwDN2u8"
+        },
+        {
+          "url": "https://apnews.com/article/mens-college-basketball-pennsylvania-navy-midshipmen-college-basketball-college-sports-25d547eb92ec4d21b3ef456d42e5db38",
+          "title": "Power leads Pennsylvania against Navy after 23-point game",
           "publisher": "AP News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQS6yW2trGznQlrFkiks-IUMPQ0qOWC0wZqVTOZSJPacT2jKqapPK1lG5L2fp8"
-        },
-        {
-          "url": "https://www.wenatcheeworld.com/sports/pat-tillman-still-inspiring-millions-22-years-after-his-death-in-afghanistan/article_37430775-8b68-42f4-ab98-456aa40fdcb4.html",
-          "title": "Pat Tillman still inspiring millions 22 years after his death in Afghanistan",
-          "publisher": "The Wenatchee World",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdcYMuluWP20iTl3w1BEUj4ssdEX32ShY6fDCXzbhZKxEkmhMOKhnYXvuAGLw"
-        },
-        {
-          "url": "https://ktar.com/arizona-restaurant-news/pat-tillman-foundation-five-guys",
-          "title": "Five Guys donating portion of Arizona sales to Pat Tillman Foundation on Veterans Day",
-          "publisher": "KTAR News 92.3 FM",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRD6sVrg8IUSn59ylR_DUR66EXS_awqHsh1o-W6fo1CrPpq6FF9j_2Wnw4kKzQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyxytuQ4aGf2BOxfux9vnLUnsxmXV6_4vU1gfZLf7dr_vdaPit7PYKHCUsALk"
         }
       ]
     },
     {
-      "query": "building collapse nyc",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-11T21:40:00Z",
+      "query": "buffalo vs ball state prediction",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T22:40:00Z",
       "related_news_urls": [
-        "https://abc7ny.com/post/flatbush-partial-building-collapse-brooklyn-reported-people-trapped/20033903/",
-        "https://www.cnn.com/2026/11/11/us/brooklyn-new-york-building-collapse",
-        "https://ny1.com/nyc/all-boroughs/news/2026/11/11/people-trapped-in-collapsed-brooklyn-building--fdny-says"
+        "https://sportsbook.fanduel.com/football/ncaa-football-games/buffalo-@-ball-state-36280934",
+        "https://www.cbssports.com/betting/news/buffalo-ball-state-prediction-odds-time-2026-college-football-week-11-wednesday-maction-picks-best-bets/",
+        "https://www.espn.com/watch/player/_/eventCalendarId/401866461"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4odmSBt3uERPcMheRV0-x7_QIbkV0Z3m_RgngZWvXSFeOLudZlJGWVvjgVM",
-      "image_credit": "ABC7 New York",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtz--XBN2v1-Y-_DMMhCr9mR46QuLi9Tt-ogBS2FhK0NPl-Hta0ILQD09tyQY",
+      "image_credit": "FanDuel Sportsbook",
       "news": [
         {
-          "url": "https://abc7ny.com/post/flatbush-partial-building-collapse-brooklyn-reported-people-trapped/20033903/",
-          "title": "Brooklyn building collapse: People trapped, several injured in Flatbush",
-          "publisher": "ABC7 New York",
+          "url": "https://sportsbook.fanduel.com/football/ncaa-football-games/buffalo-@-ball-state-36280934",
+          "title": "Buffalo @ Ball State Odds",
+          "publisher": "FanDuel Sportsbook",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4odmSBt3uERPcMheRV0-x7_QIbkV0Z3m_RgngZWvXSFeOLudZlJGWVvjgVM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtz--XBN2v1-Y-_DMMhCr9mR46QuLi9Tt-ogBS2FhK0NPl-Hta0ILQD09tyQY"
         },
         {
-          "url": "https://www.cnn.com/2026/11/11/us/brooklyn-new-york-building-collapse",
-          "title": "Brooklyn building collapses, leaving people trapped under rubble",
+          "url": "https://www.cbssports.com/betting/news/buffalo-ball-state-prediction-odds-time-2026-college-football-week-11-wednesday-maction-picks-best-bets/",
+          "title": "Buffalo vs. Ball State odds, prediction, time: Week 11 Wednesday MACtion picks from proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4RK5ifgo2WSaU5hWBMfbNIAFHadPcYaiwMjWX4KOUN8mS0bHH1xJJY10jBK0"
+        },
+        {
+          "url": "https://www.espn.com/watch/player/_/eventCalendarId/401866461",
+          "title": "Buffalo vs. Ball State",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYCxxMsvzGKgji_ju9C17ddS8mIoyojYzcJriRhU08nmk7zeYgKULtdYjmp0c"
+        }
+      ]
+    },
+    {
+      "query": "colom",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-11T22:30:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/11/politics/live-news/hegseth-impeachment-congress",
+        "https://www.reuters.com/world/us/democrat-scott-colom-defeats-incumbent-cindy-hyde-smith-cnn-projects-2026-11-11/",
+        "https://www.bloomberg.com/news/articles/2026-11-11/democrat-colom-wins-mississippi-senate-race-cnn-projects"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRN_-t5ROoiO4WB_I_ZIMMu8J2vf-CQp2XtXomV5JpP5h97Npnq-tJOnmrsT4k",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/11/politics/live-news/hegseth-impeachment-congress",
+          "title": "Live updates: Democrat Scott Colom will win a US Senate seat in deep-red Mississippi, CNN projects",
           "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS459bPJhEdzSmSetg6H-7EqmfuzcjNOXthyZgitO0c098lPSEPcBGjK3QMWXs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRN_-t5ROoiO4WB_I_ZIMMu8J2vf-CQp2XtXomV5JpP5h97Npnq-tJOnmrsT4k"
         },
         {
-          "url": "https://ny1.com/nyc/all-boroughs/news/2026/11/11/people-trapped-in-collapsed-brooklyn-building--fdny-says",
-          "title": "People trapped in collapsed Brooklyn building, FDNY says",
-          "publisher": "Spectrum News NY1",
+          "url": "https://www.reuters.com/world/us/democrat-scott-colom-defeats-incumbent-cindy-hyde-smith-cnn-projects-2026-11-11/",
+          "title": "Democrat Scott Colom defeats incumbent Cindy Hyde-Smith, CNN projects",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJh_mr7NFXxm77eCmhFlX3lIBlMGDWK1ZWwIMiY37SFqIKoJNQK2ySNNL3L9Y"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThOA0S27Gn_4dEQeDzryyGtbOHBT84kBRxkvjNVEQHu2GOXIvdOz0cMV6PZS0"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-11/democrat-colom-wins-mississippi-senate-race-cnn-projects",
+          "title": "Democrat Scott Colom Wins Mississippi Senate Race, CNN Projects",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXvZEXuDJuEWnOkjjHmsRgxS_y3t42ccRWt030YtkO3DMhYwvOdf6cFSm6MAg"
+        }
+      ]
+    },
+    {
+      "query": "hulu",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-11T22:30:00Z",
+      "related_news_urls": [
+        "https://lifehacker.com/entertainment/10-hacks-every-hulu-user-should-know?utm_medium=RSS",
+        "https://www.imdb.com/news/ni66106410/?ref_=nm_nwr_1"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3L7luyp4NA2ihqUZE-OmPZyJDqkIg4RoSwfNl90I5VHqfQFxAsADWrkOZvpg",
+      "image_credit": "Lifehacker",
+      "news": [
+        {
+          "url": "https://lifehacker.com/entertainment/10-hacks-every-hulu-user-should-know?utm_medium=RSS",
+          "title": "10 Hacks Every Hulu User Should Know",
+          "publisher": "Lifehacker",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3L7luyp4NA2ihqUZE-OmPZyJDqkIg4RoSwfNl90I5VHqfQFxAsADWrkOZvpg"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66106410/?ref_=nm_nwr_1",
+          "title": "‘The Circle’ Season 8 Cast Revealed: 11 Players Including Hannah Brown, Sasha Farber & More Reality Stars!",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3vUx5RaHuJvNl5urxXopDPB-7_AgQIwAbQF1hpSL-ZXQ3Mx3j8O9mbIEXgJY"
+        }
+      ]
+    },
+    {
+      "query": "cma awards 2026",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T22:30:00Z",
+      "related_news_urls": [
+        "https://www.eonline.com/news/1438024/taylor-swift-is-not-performing-in-dolly-parton-tribute-at-cma-awards-2026",
+        "https://www.yahoo.com/entertainment/music/articles/taylor-swift-first-cma-awards-210314151.html",
+        "https://www.imdb.com/de/news/ni66106819/?ref_=nwc_art_perm"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSX3vYNxHNc0xG2UXHQJFqkwQtPeAxyjvZdLGP0HPTLbRHnzhPAkcn_mqQDSac",
+      "image_credit": "E! News",
+      "news": [
+        {
+          "url": "https://www.eonline.com/news/1438024/taylor-swift-is-not-performing-in-dolly-parton-tribute-at-cma-awards-2026",
+          "title": "Is Taylor Swift Participating in the Dolly Parton Tribute at CMA Awards 2026? The Truth",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSX3vYNxHNc0xG2UXHQJFqkwQtPeAxyjvZdLGP0HPTLbRHnzhPAkcn_mqQDSac"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/music/articles/taylor-swift-first-cma-awards-210314151.html",
+          "title": "Taylor Swift’s First CMA Awards Appearance in 10 Years May Include a Surprise Dolly Parton Tribute",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcuMHPrTdtdgOzyhQDO-v_5r0qyxF4vieIxsA0VqF_T5Q9quAiSH0ZfGvkznI"
+        },
+        {
+          "url": "https://www.imdb.com/de/news/ni66106819/?ref_=nwc_art_perm",
+          "title": "Is Taylor Swift Performing at CMA Awards 2026? Here’s What’s Being Reported",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYg7w-I00UkXHMY3gpinDs9EJa4rHUSkekj_e5l-9kU19ydqWZXESpuXkYxUQ"
+        }
+      ]
+    },
+    {
+      "query": "marquette basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T22:30:00Z",
+      "related_news_urls": [
+        "https://www.freep.com/story/sports/college/university-michigan/wolverines/2026/11/11/michigan-basketball-marquette-prediction-pick/92723862007/",
+        "https://mgoblue.com/news/2026/11/9/mens-basketball-u-m-to-return-home-to-host-marquette-on-military-appreciation-night",
+        "https://umhoops.com/2026/11/11/game-3-marquette-at-michigan-preview/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6uZ7f6tsaagDQEamNs6UX6J3qc5xdgP_65HjgxYu3Ol7VDqhlUlvJzkA-YPs",
+      "image_credit": "Detroit Free Press",
+      "news": [
+        {
+          "url": "https://www.freep.com/story/sports/college/university-michigan/wolverines/2026/11/11/michigan-basketball-marquette-prediction-pick/92723862007/",
+          "title": "Michigan basketball has a test against Marquette's swarming Shaka Smart defense",
+          "publisher": "Detroit Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6uZ7f6tsaagDQEamNs6UX6J3qc5xdgP_65HjgxYu3Ol7VDqhlUlvJzkA-YPs"
+        },
+        {
+          "url": "https://mgoblue.com/news/2026/11/9/mens-basketball-u-m-to-return-home-to-host-marquette-on-military-appreciation-night",
+          "title": "U-M to Return Home to Host Marquette on Military Appreciation Night",
+          "publisher": "University of Michigan Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQartX6fEQ0lC7wm2FaAU7I8DNd633iJOGKHfqGqLdHDyAJy9LesDBxmtHajQ"
+        },
+        {
+          "url": "https://umhoops.com/2026/11/11/game-3-marquette-at-michigan-preview/",
+          "title": "Game 3: Marquette at Michigan Preview",
+          "publisher": "UM Hoops.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRueZkKppPRjbKZ_aAIK-1FRThdbJoaIfHwPv9uj_iDlo3CXbQto7GbZYt_qiY"
+        }
+      ]
+    },
+    {
+      "query": "winter weather advisory",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T22:30:00Z",
+      "related_news_urls": [
+        "https://www.clickondetroit.com/weather/2026/11/11/cooler-weather-and-lake-effect-snow-potential-arrive-across-southeast-michigan/",
+        "https://www.uppermichiganssource.com/2026/11/11/first-alert-weather-days-due-multi-day-lake-effect-snow-event/",
+        "https://www.mlive.com/weather/2026/11/winter-weather-advisory-issued-seasons-first-long-duration-snow-could-drop-up-to-10-inches.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAzudNgplF3_OMJFajGCVq97WwIsk1SkouxsVGMIdNEYzluyAjo6BQVta8PCo",
+      "image_credit": "ClickOnDetroit | WDIV Local 4",
+      "news": [
+        {
+          "url": "https://www.clickondetroit.com/weather/2026/11/11/cooler-weather-and-lake-effect-snow-potential-arrive-across-southeast-michigan/",
+          "title": "Cooler weather and lake-effect snow potential arrive across Southeast Michigan",
+          "publisher": "ClickOnDetroit | WDIV Local 4",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAzudNgplF3_OMJFajGCVq97WwIsk1SkouxsVGMIdNEYzluyAjo6BQVta8PCo"
+        },
+        {
+          "url": "https://www.uppermichiganssource.com/2026/11/11/first-alert-weather-days-due-multi-day-lake-effect-snow-event/",
+          "title": "First Alert Weather Days due to multi day lake effect snow event",
+          "publisher": "Upper Michigan's Source",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjgJYw2ikJEn6F0iHJLkEKNEi7wIO6bE7Nt_7juPaxhWr_Y2bTNYTQWFDHt14"
+        },
+        {
+          "url": "https://www.mlive.com/weather/2026/11/winter-weather-advisory-issued-seasons-first-long-duration-snow-could-drop-up-to-10-inches.html",
+          "title": "Winter Weather Advisory issued: Season’s first long-duration snow could drop up to 10 inches",
+          "publisher": "MLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT68waIAL8roh2myTgpxiOKk6K47mmq3-4aVbAQzzu-wDyyMkgqqyTvHFcWXSw"
         }
       ]
     }
