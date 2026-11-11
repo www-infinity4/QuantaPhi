@@ -101,3 +101,22 @@ export function freshApprovedCreatives(payload,{now=new Date(),maxAgeDays=45}={}
  }
  return out;
 }
+
+/* Provider-returned AdPhi creative. Missing provenance or rights never
+ * becomes a paid campaign, image-source grant or builder prefill. */
+export function freshBrokerCreative(ad,{now=new Date()}={}){
+ if(!ad||typeof ad!=='object')return null;
+ const review=ad.creativeApproved===true&&ad.approved===true&&ad.reviewed===true;
+ const data={...ad,type:'sponsored',approved:review,reviewed:review,category:ad.category,
+  title:ad.title,description:ad.body,image:ad.imageUrl,
+  sourceUrl:ad.destinationUrl,startsAt:ad.startsAt,endsAt:ad.endsAt,
+  createdAt:ad.createdAt,updatedAt:ad.updatedAt};
+ if(!placementPolicy(data,{now}).eligible)return null;
+ const images=[...new Set([...(Array.isArray(ad.images)?ad.images:[]),ad.imageUrl]
+  .map(v=>validUrl(typeof v==='string'?v:v?.src)).filter(Boolean))].slice(0,6);
+ if(!images.length)return null;
+ return {id:safeText(ad.id||ad.campaignId).slice(0,90),title:safeText(ad.title).slice(0,85),
+  description:safeText(ad.body).slice(0,350),website:validUrl(ad.destinationUrl),
+  image:images[0],images,createdAt:ad.createdAt||ad.updatedAt,
+  sponsor:safeText(ad.advertiser).slice(0,85),source:'verified-adphi',rightsVerified:true};
+}
