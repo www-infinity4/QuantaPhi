@@ -3,12 +3,257 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T11:01:43.928473Z",
+  "checked_at": "2026-11-11T11:31:05.751383Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "notre dame fighting irish football",
+      "query": "ohio state buckeyes football",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T11:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50444070/ohio-state-stick-fahey-qb-vs-northwestern",
+        "https://www.dispatch.com/story/sports/college/football/2026/11/09/urban-meyer-tavien-st-clair-remained-benched-vs-oregon-luke-fahey/92697231007/",
+        "https://www.cleveland.com/osu/2026/11/ryan-day-announces-starting-qb-for-ohio-state-football-vs-northwestern.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZzO21mSaxETAzYNLU85l98ZULEc1dGAuwxiu9D3dR_s45HTuSgrUBFV_H6Gs",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50444070/ohio-state-stick-fahey-qb-vs-northwestern",
+          "title": "Ohio State to stick with Fahey at QB vs. Northwestern",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZzO21mSaxETAzYNLU85l98ZULEc1dGAuwxiu9D3dR_s45HTuSgrUBFV_H6Gs"
+        },
+        {
+          "url": "https://www.dispatch.com/story/sports/college/football/2026/11/09/urban-meyer-tavien-st-clair-remained-benched-vs-oregon-luke-fahey/92697231007/",
+          "title": "Urban Meyer perplexed why Tavien St. Clair did not get reps vs Oregon",
+          "publisher": "The Columbus Dispatch",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROaa6uKJv_Ehrp6uiagAbkqh8E4wX6M68Rz3qzDR44aj2grH590UHGYkm76X8"
+        },
+        {
+          "url": "https://www.cleveland.com/osu/2026/11/ryan-day-announces-starting-qb-for-ohio-state-football-vs-northwestern.html",
+          "title": "Ryan Day announces starting QB for Ohio State football vs. Northwestern",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAy8p4lZRznbCaUFjlcLlfK1HWNC0QlH32rO7YHRfkinL5kcQDlhLQCkOVEME"
+        }
+      ]
+    },
+    {
+      "query": "khloé kardashian",
       "approx_searches": "100+",
+      "published_at": "2026-11-11T11:10:00Z",
+      "related_news_urls": [
+        "https://people.com/khloe-kardashian-trims-her-home-with-beautiful-majestic-holiday-lights-12246457",
+        "https://www.yahoo.com/entertainment/celebrity/articles/khlo-kardashian-unveils-spectacular-winter-132448533.html",
+        "https://www.eonline.com/news/1437983/see-khloe-kardashians-absolutely-spectacular-holiday-lights-on-her-house"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZ0b2P2PIajm86Cm0_kMMVfh9ifVfYinBlmlN2ZmR-5E677RZAZ8jQxRsjAgY",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/khloe-kardashian-trims-her-home-with-beautiful-majestic-holiday-lights-12246457",
+          "title": "Khloé Kardashian Gives Her Home a Glow Up with Thousands of ‘Beautiful and Majestic’ Holiday Lights",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZ0b2P2PIajm86Cm0_kMMVfh9ifVfYinBlmlN2ZmR-5E677RZAZ8jQxRsjAgY"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/khlo-kardashian-unveils-spectacular-winter-132448533.html",
+          "title": "Khloé Kardashian unveils 'spectacular' winter wonderland transformation at $17 million home",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV8vac9eQGKoVJmQ-bisoCg_L2SuDq53vdHO2tiyFrziK7tsIdou6InUCdo04"
+        },
+        {
+          "url": "https://www.eonline.com/news/1437983/see-khloe-kardashians-absolutely-spectacular-holiday-lights-on-her-house",
+          "title": "Khloe Kardashian's Over-the-Top Holiday Home Transformation Needs to Be Seen to Be Believed",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtjelaj6NkkEseuB81YerMmbnrcSMDKKUPqDuVq6th2AapcivgJqpOji7G2wQ"
+        }
+      ]
+    },
+    {
+      "query": "connor hellebuyck",
+      "approx_searches": "100+",
+      "published_at": "2026-11-11T11:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nhl/story/_/id/50449980/connor-hellebuyck-booed-pregame-winnipeg-return-jets-go-beat-devils",
+        "https://www.nhl.com/news/connor-hellebuyck-says-concerns-for-family-uncertain-career-path-led-to-winnipeg-jets-trade",
+        "https://www.cbc.ca/news/canada/manitoba/connor-hellebuyck-return-to-winnipeg-9.7416133"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfubSDbfXAjyzQ5dIf2rgyF3PRebzXYRbO7vJMrxoyrcV_TH2G6M07jAhckhg",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nhl/story/_/id/50449980/connor-hellebuyck-booed-pregame-winnipeg-return-jets-go-beat-devils",
+          "title": "Connor Hellebuyck booed pregame in Winnipeg return as Jets go on to beat Devils",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfubSDbfXAjyzQ5dIf2rgyF3PRebzXYRbO7vJMrxoyrcV_TH2G6M07jAhckhg"
+        },
+        {
+          "url": "https://www.nhl.com/news/connor-hellebuyck-says-concerns-for-family-uncertain-career-path-led-to-winnipeg-jets-trade",
+          "title": "Hellebuyck says concerns for family, uncertain career path made him ask Jets for trade",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbmE3JR-AirCBuiCnQ9Wf5v_YF1NxOl9F7Vkx6PrOEdpNuCxC3716CVwr40lM"
+        },
+        {
+          "url": "https://www.cbc.ca/news/canada/manitoba/connor-hellebuyck-return-to-winnipeg-9.7416133",
+          "title": "Connor Hellebuyck tells media online death threats, family played roles in trade demand",
+          "publisher": "CBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqsfuP2hTvpCIiruejsQcCb9vsLOk_nhTU9he5i9fyKKG6wTRx9g70BT6TLk8"
+        }
+      ]
+    },
+    {
+      "query": "are banks closed today",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T11:00:00Z",
+      "related_news_urls": [
+        "https://www.freep.com/story/news/local/michigan/2026/11/11/veterans-day-mail-banks-stores-open-closed-federal-holiday-michigan/92704013007/",
+        "https://www.yahoo.com/news/us/articles/banks-post-offices-schools-closed-100117331.html",
+        "https://www.the-sun.com/news/17285156/usps-mail-delivery-stopped-veterans-day/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQygYuT2cpFh-ZP3yxeqIpiA2j_16rCnEvzrpAm7nmyfi9T5xjPbS1x3_y42cc",
+      "image_credit": "Detroit Free Press",
+      "news": [
+        {
+          "url": "https://www.freep.com/story/news/local/michigan/2026/11/11/veterans-day-mail-banks-stores-open-closed-federal-holiday-michigan/92704013007/",
+          "title": "Is there mail on Veterans Day? What's open and closed today",
+          "publisher": "Detroit Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQygYuT2cpFh-ZP3yxeqIpiA2j_16rCnEvzrpAm7nmyfi9T5xjPbS1x3_y42cc"
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/articles/banks-post-offices-schools-closed-100117331.html",
+          "title": "Are banks, post offices, schools closed today in Louisiana?",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTngXxDX2-gvMQBgzLc_8wbnYVu7h58pNzu3rbhJXArBaQMkAU4ReEF-rkMi-s"
+        },
+        {
+          "url": "https://www.the-sun.com/news/17285156/usps-mail-delivery-stopped-veterans-day/",
+          "title": "Americans warned USPS will stop delivering mail TOMORROW and iconic blue collection boxes will not be emptied",
+          "publisher": "The Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThrgxsvf6MaMqretQ-ppuUBoCpMceANIFqaYh4QRs5Yijz15yt1O-EnpM12ek"
+        }
+      ]
+    },
+    {
+      "query": "pick 3",
+      "approx_searches": "100+",
+      "published_at": "2026-11-11T11:00:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/news/articles/kentucky-lottery-cash-ball-pick-043015725.html",
+        "https://www.aol.com/articles/kentucky-lottery-cash-ball-pick-043029000.html",
+        "https://www.courier-journal.com/story/news/local/2026/11/05/kentucky-lottery-results-thursday-november-5-2026/92637214007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTGUTge-ro2yAhJf1uhQvOQw460SWQ7vaItmre4DGz6blzU6WtIyAN6YWv6AA",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/news/articles/kentucky-lottery-cash-ball-pick-043015725.html",
+          "title": "Kentucky Lottery Cash Ball, Pick 3 Evening winning numbers for Nov. 10, 2026",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTGUTge-ro2yAhJf1uhQvOQw460SWQ7vaItmre4DGz6blzU6WtIyAN6YWv6AA"
+        },
+        {
+          "url": "https://www.aol.com/articles/kentucky-lottery-cash-ball-pick-043029000.html",
+          "title": "Kentucky Lottery Cash Ball, Pick 3 Evening winning numbers for Nov. 4, 2026",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbuAnylOsKqrm1Mq0x9ukOD5kY4778eVjyx_L9Egyb7osHF757PtahYCQHUEs"
+        },
+        {
+          "url": "https://www.courier-journal.com/story/news/local/2026/11/05/kentucky-lottery-results-thursday-november-5-2026/92637214007/",
+          "title": "Kentucky Lottery Cash Ball, Pick 3 Evening winning numbers for Nov. 5, 2026",
+          "publisher": "The Courier-Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxxaOPr_G1nJKlNlxbbOW5Vil9q5N6OVWb82OLqMfRzwg_Pyw83pW78zh7Yb0"
+        }
+      ]
+    },
+    {
+      "query": "holiday today",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-11T10:50:00Z",
+      "related_news_urls": [
+        "https://about.starbucks.com/press/2026/starbucks-launches-new-bearista-glass-cold-cup-surprise-box-collection-with-characters-including-rare-golden-bearista/",
+        "https://abc7.com/story/starbucks-debuts-5-new-bearista-cups-holiday-season/20029540/",
+        "https://www.yahoo.com/news/us/article/starbucks-5-new-holiday-bear-cups-go-on-sale-today--including-a-rare-golden-bear-105157585.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdONvLccKsRKZn-pwNvvqIWxvh1_H31azGrSWydZ2yjzVwnzE8QwdBrKIL0zQ",
+      "image_credit": "Starbucks",
+      "news": [
+        {
+          "url": "https://about.starbucks.com/press/2026/starbucks-launches-new-bearista-glass-cold-cup-surprise-box-collection-with-characters-including-rare-golden-bearista/",
+          "title": "Starbucks launches new Bearista™ Glass Cold Cup Surprise Box collection with characters including rare golden bearista",
+          "publisher": "Starbucks",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdONvLccKsRKZn-pwNvvqIWxvh1_H31azGrSWydZ2yjzVwnzE8QwdBrKIL0zQ"
+        },
+        {
+          "url": "https://abc7.com/story/starbucks-debuts-5-new-bearista-cups-holiday-season/20029540/",
+          "title": "Starbucks debuts 5 new Bearista cups for the holiday season",
+          "publisher": "ABC7 Los Angeles",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6RDz1mOaWrw6471laxDmeTm3jNUUo7GevTZEJH5W9v26H8AAFqOs-pvxFKLw"
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/article/starbucks-5-new-holiday-bear-cups-go-on-sale-today--including-a-rare-golden-bear-105157585.html",
+          "title": "Starbucks' 5 new holiday Bear cups go on sale today — including a rare 'golden bear'",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNn2Ocookzq-_ntgb9tK27ovcOUFiTVIPY7OpMHTt0xkfC4t84MAg5YW-NQB8"
+        }
+      ]
+    },
+    {
+      "query": "mega millions",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-11T10:40:00Z",
+      "related_news_urls": [
+        "https://www.wkyc.com/article/news/lottery/winning-mega-millions-numbers-529-million-jackpot-tuesday-november-10-2026-drawing-results-ohio-lottery-winners/95-e566f35a-1311-4eb4-b113-9942c5468f78",
+        "https://www.northjersey.com/story/news/nation/2026/11/10/mega-millions-winning-numbers-drawing-for-tuesday-nov-10-2026-anyone-win-jackpot/92717737007/",
+        "https://www.forbes.com/sites/siladityaray/2026/11/11/mega-millions-jackpot-tops-550-million-heres-what-the-winner-could-take-home/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7mZdNw6_9yuXwKL357bdgmA1SkVSbUjGd-XtnjObq_5IrxhATZg43bGGIC-I",
+      "image_credit": "WKYC",
+      "news": [
+        {
+          "url": "https://www.wkyc.com/article/news/lottery/winning-mega-millions-numbers-529-million-jackpot-tuesday-november-10-2026-drawing-results-ohio-lottery-winners/95-e566f35a-1311-4eb4-b113-9942c5468f78",
+          "title": "Winning Mega Millions numbers for the $529 million jackpot on Tuesday, Nov. 10, 2026: See all the prizes hit in Ohio",
+          "publisher": "WKYC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7mZdNw6_9yuXwKL357bdgmA1SkVSbUjGd-XtnjObq_5IrxhATZg43bGGIC-I"
+        },
+        {
+          "url": "https://www.northjersey.com/story/news/nation/2026/11/10/mega-millions-winning-numbers-drawing-for-tuesday-nov-10-2026-anyone-win-jackpot/92717737007/",
+          "title": "Mega Millions winning numbers for Tuesday, Nov. 10. Check your tickets",
+          "publisher": "Bergen Record",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR476txshgn_oyW5ioeF9Gl-Tmkl25ft7fwj7LL-v_kSVwBIaNxxRsCcY2vI0A"
+        },
+        {
+          "url": "https://www.forbes.com/sites/siladityaray/2026/11/11/mega-millions-jackpot-tops-550-million-heres-what-the-winner-could-take-home/",
+          "title": "Mega Millions Jackpot Tops $550 Million—Here’s What The Winner Could Take Home",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToBwWT1R8YfNYmineRDLc6ZUofX6cn5yEOanQQQKDDMpRtFMbHkZsKXp2sQG0"
+        }
+      ]
+    },
+    {
+      "query": "notre dame fighting irish football",
+      "approx_searches": "200+",
       "published_at": "2026-11-11T10:40:00Z",
       "related_news_urls": [
         "https://www.cbssports.com/college-football/news/notre-dame-guards-against-post-miami-letdown-vs-boston-college/",
@@ -42,24 +287,52 @@
       ]
     },
     {
+      "query": "chick fil a veterans day",
+      "approx_searches": "100+",
+      "published_at": "2026-11-11T10:40:00Z",
+      "related_news_urls": [
+        "https://www.military.com/is-chick-fil-a-offering-a-free-veterans-day-meal",
+        "https://www.rocketcitynow.com/article/news/national/military-news/chick-fil-a-locations-madison-offering-free-meals-on-veterans-day/525-4a9a49ea-ac4b-4c77-bb14-6c9c444203a1?fbclid=IwY2xjawVf-BZleHRuA2FlbQIxMQBwZG9mBWJyaWQRMWk0aGl4VlBOT3NHcmdrbE9zcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEfDJSGVtZK7QQSV-dv39wIEX5zjZgoocnrV2ngxtaRLVgJxzg6BIGtISScb5k_aem_Hg9EIRNvSMWSyqKHEDPWAQ",
+        "https://www.wnct.com/local-news/greenville-chick-fil-a-offers-free-veterans-day-boxed-meals/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjd7IguIkAu7lgflwy0QZNQTq9tDx4WZUQRmzOVIzu9pg1Yei9aPl3Xv4M9Lc",
+      "image_credit": "Military.com",
+      "news": [
+        {
+          "url": "https://www.military.com/is-chick-fil-a-offering-a-free-veterans-day-meal",
+          "title": "Is Chick-fil-A Offering a Free Veterans Day Meal?",
+          "publisher": "Military.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjd7IguIkAu7lgflwy0QZNQTq9tDx4WZUQRmzOVIzu9pg1Yei9aPl3Xv4M9Lc"
+        },
+        {
+          "url": "https://www.rocketcitynow.com/article/news/national/military-news/chick-fil-a-locations-madison-offering-free-meals-on-veterans-day/525-4a9a49ea-ac4b-4c77-bb14-6c9c444203a1?fbclid=IwY2xjawVf-BZleHRuA2FlbQIxMQBwZG9mBWJyaWQRMWk0aGl4VlBOT3NHcmdrbE9zcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEfDJSGVtZK7QQSV-dv39wIEX5zjZgoocnrV2ngxtaRLVgJxzg6BIGtISScb5k_aem_Hg9EIRNvSMWSyqKHEDPWAQ",
+          "title": "Chick-fil-A locations in Madison offering free meals to veterans",
+          "publisher": "rocketcitynow.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_VY-_05azGCVl8eSkc2m6uqlhW-M_WLX04mOM_nQ5Rc5IjzoZubqNwCTpxV8"
+        },
+        {
+          "url": "https://www.wnct.com/local-news/greenville-chick-fil-a-offers-free-veterans-day-boxed-meals/",
+          "title": "Greenville Chick-fil-A to offer free Veterans Day boxed meals",
+          "publisher": "WNCT",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuycHdqo2njgITBNPQXdgWbzlGUGYM0YXl98zBUmzc7_nkm80zwPZq94z45dw"
+        }
+      ]
+    },
+    {
       "query": "ga lottery",
       "approx_searches": "100+",
       "published_at": "2026-11-11T10:40:00Z",
       "related_news_urls": [
-        "https://www.aol.com/articles/georgia-lottery-cash-3-cash-051010000.html",
         "https://www.augustachronicle.com/story/news/local/2026/11/09/georgia-lottery-results-sunday-november-8-2026/92686531007/",
-        "https://www.1011now.com/video/2026/11/10/local-lottery-players-have-big-day-saturday/"
+        "https://www.wrdw.com/2026/11/05/powerball-ticket-sold-augusta-wins-50000/",
+        "https://thebrunswicknews.com/news/local_news/two-local-lottery-players-win-nearly-2-million/article_dbfaf5da-da62-42d1-b400-aefa9dabd25a.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMh9bksuSwT768lAY5cUCR5MLtKBOBVg4Q7F9jwhLEUEXRGUcAAxXpteMr0Vc",
-      "image_credit": "AOL.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfNMpe1s9X0_UHpX0KQ7MffpVxWwK8VN67TKMkK5QfPUpwsVV06thCpsLyurk",
+      "image_credit": "The Augusta Chronicle",
       "news": [
-        {
-          "url": "https://www.aol.com/articles/georgia-lottery-cash-3-cash-051010000.html",
-          "title": "Georgia Lottery Cash 3, Cash 4 results for Nov. 1, 2026",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMh9bksuSwT768lAY5cUCR5MLtKBOBVg4Q7F9jwhLEUEXRGUcAAxXpteMr0Vc"
-        },
         {
           "url": "https://www.augustachronicle.com/story/news/local/2026/11/09/georgia-lottery-results-sunday-november-8-2026/92686531007/",
           "title": "Georgia Lottery Cash 3, Cash 4 results for Nov. 8, 2026",
@@ -68,291 +341,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfNMpe1s9X0_UHpX0KQ7MffpVxWwK8VN67TKMkK5QfPUpwsVV06thCpsLyurk"
         },
         {
-          "url": "https://www.1011now.com/video/2026/11/10/local-lottery-players-have-big-day-saturday/",
-          "title": "Local lottery players have big day Saturday",
-          "publisher": "KOLN | Nebraska Local News, Weather, Sports | Lincoln, NE",
+          "url": "https://www.wrdw.com/2026/11/05/powerball-ticket-sold-augusta-wins-50000/",
+          "title": "Powerball ticket sold in Augusta wins $50,000",
+          "publisher": "WRDW",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRaur5Q_hvqNXwM-By26aSXtFoC7BcFePzHs5G5BsRgtl9jaF83s6KnL7shITM"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 release",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-11T10:30:00Z",
-      "related_news_urls": [
-        "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
-        "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/",
-        "https://www.digitalfoundry.net/news/2026/11/gta-6-ps5-pro-upgrades-finally-revealed-frame-rate-upscaling-ray-tracing-confirmed"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk",
-      "image_credit": "XBOX Wire",
-      "news": [
-        {
-          "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
-          "title": "Grand Theft Auto VI Comes to XBOX One and XBOX Series X|S Through XBOX Cloud Gaming on November 19",
-          "publisher": "XBOX Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvTEnr-Ezf_AXhVGEN839_lSlNqXZUHaum2QW_o_iNzfaCltSt7GHdRpTvUq4"
         },
         {
-          "url": "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/",
-          "title": "Pre-load Grand Theft Auto VI on PS5 starting today",
-          "publisher": "PlayStation.Blog",
+          "url": "https://thebrunswicknews.com/news/local_news/two-local-lottery-players-win-nearly-2-million/article_dbfaf5da-da62-42d1-b400-aefa9dabd25a.html",
+          "title": "Two local lottery players win nearly $2 million",
+          "publisher": "The Brunswick News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmQPZtB1cfmtJ8v-9159sSJpw2Cr8v495zAc5tM6Spqsus45lZErGPllHDXDY"
-        },
-        {
-          "url": "https://www.digitalfoundry.net/news/2026/11/gta-6-ps5-pro-upgrades-finally-revealed-frame-rate-upscaling-ray-tracing-confirmed",
-          "title": "GTA 6 PS5 Pro Upgrades Finally Revealed: Frame-Rate, Upscaling, Ray Tracing Confirmed",
-          "publisher": "Digital Foundry",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSeo0hEFvXTDNU7DfQ6NDA4FLUbfdawphueHFHwwh1qTCuMNjFyGHw4K8TvD18"
-        }
-      ]
-    },
-    {
-      "query": "boston red sox",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T10:30:00Z",
-      "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/10/sports/red-sox-craig-breslow-roster-moves/",
-        "https://www.audacy.com/weei/sports/red-sox/what-we-learned-from-the-first-day-of-the-gm-meetings",
-        "https://www.mlb.com/news/red-sox-reddit-ama-ahead-of-2026-offseason-with-reporter-ian-browne"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUMeqli2m3PH9zz_N8Z6VuBfcfMeXbd7XMSr0CpPy4ps94yKxQtIhVFMN0qlk",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/10/sports/red-sox-craig-breslow-roster-moves/",
-          "title": "System thinned by last season’s big trade swings could be limit on Craig Breslow, Red Sox this winter",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUMeqli2m3PH9zz_N8Z6VuBfcfMeXbd7XMSr0CpPy4ps94yKxQtIhVFMN0qlk"
-        },
-        {
-          "url": "https://www.audacy.com/weei/sports/red-sox/what-we-learned-from-the-first-day-of-the-gm-meetings",
-          "title": "What we learned from the first day of the GM Meetings",
-          "publisher": "Audacy",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdV5K88omXNS587gON7y-CT3NIvSrCPPmBT-aOUVhhCaRTUqqZU8wd-kCU98Y"
-        },
-        {
-          "url": "https://www.mlb.com/news/red-sox-reddit-ama-ahead-of-2026-offseason-with-reporter-ian-browne",
-          "title": "Offseason approach, Whitlock, pitching depth among hot Reddit AMA topics",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8KKDn5iGBG1tjqOyBMip8sqlZm3aNBP_5IurX9JNPdyyR6of_kvgp86ihK0I"
-        }
-      ]
-    },
-    {
-      "query": "ct lottery",
-      "approx_searches": "100+",
-      "published_at": "2026-11-11T10:30:00Z",
-      "related_news_urls": [
-        "https://www.norwichbulletin.com/story/news/lottery/2026/11/08/connecticut-lottery-results-sunday-november-8-2026/92686056007/",
-        "https://patch.com/connecticut/westhartford/visit-west-hartford-turns-big-ct-lottery-win",
-        "https://www.ctinsider.com/news/article/connecticut-powerball-player-wins-100k-22521339.php"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJnCysHzecVqHo8CyxXUVPlx0UOdoh85m545LrzSZjyMxsBh0z6kHbX1mbIos",
-      "image_credit": "Norwich Bulletin",
-      "news": [
-        {
-          "url": "https://www.norwichbulletin.com/story/news/lottery/2026/11/08/connecticut-lottery-results-sunday-november-8-2026/92686056007/",
-          "title": "CT Lottery Cash 5, Play3 winning numbers for Nov. 8, 2026",
-          "publisher": "Norwich Bulletin",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJnCysHzecVqHo8CyxXUVPlx0UOdoh85m545LrzSZjyMxsBh0z6kHbX1mbIos"
-        },
-        {
-          "url": "https://patch.com/connecticut/westhartford/visit-west-hartford-turns-big-ct-lottery-win",
-          "title": "Visit To West Hartford Turns Into Big CT Lottery Win",
-          "publisher": "Patch",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQvHkw3rKiwgY2LXHgEccHQfaAYsWjvdpws4pE96GhSeHjF5uWSt7CbbNCmhc"
-        },
-        {
-          "url": "https://www.ctinsider.com/news/article/connecticut-powerball-player-wins-100k-22521339.php",
-          "title": "Connecticut lottery player won country’s biggest Powerball prize Saturday",
-          "publisher": "CT Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTkSk7yqXRTEjsL6PZdxU1CPGNFKguIyQngvtJpuOkp0RYSeb1sLrD3AxP29Q"
-        }
-      ]
-    },
-    {
-      "query": "jennifer aniston",
-      "approx_searches": "100+",
-      "published_at": "2026-11-11T10:10:00Z",
-      "related_news_urls": [
-        "https://www.elle.com/beauty/hair/a74347544/jennifer-aniston-hair-routine-lolavie-hairspray/",
-        "https://pagesix.com/2026/11/10/style/jennifer-aniston-reveals-which-fellow-celebrity-gives-her-hair-envy/",
-        "https://people.com/jennifer-aniston-says-sandra-bullock-lolavie-supporter-since-day-1-12245523"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROb7XDv4yS4gZtlkzqaZ22bwJ94aeJ0Oxyv9HNEDqGeMrZ-ADyDkaVu9_FW4M",
-      "image_credit": "ELLE",
-      "news": [
-        {
-          "url": "https://www.elle.com/beauty/hair/a74347544/jennifer-aniston-hair-routine-lolavie-hairspray/",
-          "title": "Jennifer Aniston Says ‘The Rachel’ Was Anything But Effortless",
-          "publisher": "ELLE",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROb7XDv4yS4gZtlkzqaZ22bwJ94aeJ0Oxyv9HNEDqGeMrZ-ADyDkaVu9_FW4M"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/10/style/jennifer-aniston-reveals-which-fellow-celebrity-gives-her-hair-envy/",
-          "title": "Jennifer Aniston reveals which fellow A-lister gives her ‘hair envy’",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRC7PSYPcZbIpOfJ0aJG1Y8kHR-JbZyxRsdEje64jGkEP9qu0z92JOK4SPrlUU"
-        },
-        {
-          "url": "https://people.com/jennifer-aniston-says-sandra-bullock-lolavie-supporter-since-day-1-12245523",
-          "title": "Jennifer Aniston Shouts Out Close Friend Sandra Bullock for Being a LolaVie Supporter Since ‘Day One’",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcJHrDIPiIpDif3AgD8kLeS8KtwZLKXjAcjBlNdH7j_kENsQbRzYfG90c8iqE"
-        }
-      ]
-    },
-    {
-      "query": "davante adams",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T10:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50435879/rams-nacua-likely-hit-ir-mcl-pcl-sprain-turf-toe",
-        "https://www.cbssports.com/fantasy/football/news/puka-nacua-injury-fallout-no-replacing-a-fantasy-unicorn/",
-        "https://bleacherreport.com/articles/25531395-sean-mcvay-addresses-trade-possibilities-after-puka-nacua-injury-amid-nfl-rumors-deadline"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgljrxRk3HfRtqHZ7xkf8tC9rrI8N5nmGL8qEkw1cGmQcuPl2ZRHvPUCWR2bo",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50435879/rams-nacua-likely-hit-ir-mcl-pcl-sprain-turf-toe",
-          "title": "Rams' Nacua likely to hit IR with MCL, PCL sprain, turf toe",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgljrxRk3HfRtqHZ7xkf8tC9rrI8N5nmGL8qEkw1cGmQcuPl2ZRHvPUCWR2bo"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/puka-nacua-injury-fallout-no-replacing-a-fantasy-unicorn/",
-          "title": "Puka Nacua injury fallout: No replacing a Fantasy unicorn, but these trade and waiver WRs can soften the blow",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSODSShStwjycAbWqdL6mSvtSPH-QerSP7UMxk2_84Sp7n2V-k6EPp-HiJOArg"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25531395-sean-mcvay-addresses-trade-possibilities-after-puka-nacua-injury-amid-nfl-rumors-deadline",
-          "title": "Sean McVay Addresses Trade Possibilities After Puka Nacua Injury amid NFL Rumors Before Deadline",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGGu2tgRfFwxBHnM5b5KllrMVzhmDQob4Eva8ov6_IOwQb0QcxDKYOjpuNCPs"
-        }
-      ]
-    },
-    {
-      "query": "arby's",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T10:00:00Z",
-      "related_news_urls": [
-        "https://www.tastingtable.com/2310967/arbys-sides-ranked-worst-to-best/",
-        "https://sporked.com/article/arbys-mac-and-cheese/",
-        "https://www.today.com/food/restaurants/largest-arbys-world-colonial-heights-virginia-rcna608360"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsjCM4lmrV3el7htLgC4DBdTEN0LTehLEw8uwmtliqNLGEhSnE4Qw_EU5BYoo",
-      "image_credit": "Tasting Table",
-      "news": [
-        {
-          "url": "https://www.tastingtable.com/2310967/arbys-sides-ranked-worst-to-best/",
-          "title": "6 Arby's Sides, Ranked Worst To Best",
-          "publisher": "Tasting Table",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsjCM4lmrV3el7htLgC4DBdTEN0LTehLEw8uwmtliqNLGEhSnE4Qw_EU5BYoo"
-        },
-        {
-          "url": "https://sporked.com/article/arbys-mac-and-cheese/",
-          "title": "This Arby’s Side Might Be One Of The Best Fast Food Items Out There",
-          "publisher": "Sporked",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAeXa2KILK2PVBxTFl4mZ5nd5iNePnO9j2FIo64nyrp00VWSPvJrPB-cZE8EM"
-        },
-        {
-          "url": "https://www.today.com/food/restaurants/largest-arbys-world-colonial-heights-virginia-rcna608360",
-          "title": "Inside the Largest Arby’s in the World: It Has More Than Meats the Eye",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYadqHxRm_JuWKYLGkGRVC81P48LW7wRMttG65_wV8dmNgxB9hgKwnXJwk8e8"
-        }
-      ]
-    },
-    {
-      "query": "whitney purvis",
-      "approx_searches": "100+",
-      "published_at": "2026-11-11T10:00:00Z",
-      "related_news_urls": [
-        "https://people.com/16-and-pregnant-alum-whitney-purvis-pleads-guilty-to-involuntary-manslaughter-12248213",
-        "https://www.courttv.com/news/mtvs-16-and-pregnant-star-enters-guilty-plea-after-texts-uncover-delivery-to-dead-victims-home/",
-        "https://www.wsbtv.com/news/georgia/former-16-pregnant-star-takes-plea-georgia-mans-deadly-overdose/GDIFC5DDYZG3HLVPRD7TG5IRJU/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHeHVDTZSUUfuW3zwK1Oe0jta7T6KhMndbzB2I8mizjhZYaFPW_v8OwQBa8pM",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/16-and-pregnant-alum-whitney-purvis-pleads-guilty-to-involuntary-manslaughter-12248213",
-          "title": "‘16 & Pregnant’ Alum Whitney Purvis Pleads Guilty to Involuntary Manslaughter",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHeHVDTZSUUfuW3zwK1Oe0jta7T6KhMndbzB2I8mizjhZYaFPW_v8OwQBa8pM"
-        },
-        {
-          "url": "https://www.courttv.com/news/mtvs-16-and-pregnant-star-enters-guilty-plea-after-texts-uncover-delivery-to-dead-victims-home/",
-          "title": "'16 and Pregnant' star Whitney Purvis takes plea in man's death",
-          "publisher": "Court TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE6f_lVnzobVJbdF8Fz7otA8jE2D2ON_FzUqOVRC60AdjMh6cxH3Ut0Il4ZgM"
-        },
-        {
-          "url": "https://www.wsbtv.com/news/georgia/former-16-pregnant-star-takes-plea-georgia-mans-deadly-overdose/GDIFC5DDYZG3HLVPRD7TG5IRJU/",
-          "title": "Former ‘16 and Pregnant’ star takes plea in Georgia man’s deadly overdose",
-          "publisher": "WSB-TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNz-Fq4IhntkE2w6C8fMg2K-LAWT18qO5kND-r7zqegUfmF6WPnyaph1Cyabg"
-        }
-      ]
-    },
-    {
-      "query": "konata mumpfield",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T10:00:00Z",
-      "related_news_urls": [
-        "https://www.ninersnation.com/san-francisco-49ers-injuries/165578/rams-poach-wide-receiver-from-the-49ers-practice-squad-gracen-halton-heads-to-the-ir",
-        "https://ninerswire.usatoday.com/story/sports/nfl/niners/2026/11/10/49ers-xavier-smith-signs-the-los-angeles-rams/92714007007/",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-10/rams-send-jordan-whittington-to-ir"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCDQgbPDbEAUujPL8xQzhG_euSap0jDuLhswLWDRcQ4RF0jDO6yCwyHp4iKNM",
-      "image_credit": "Niners Nation",
-      "news": [
-        {
-          "url": "https://www.ninersnation.com/san-francisco-49ers-injuries/165578/rams-poach-wide-receiver-from-the-49ers-practice-squad-gracen-halton-heads-to-the-ir",
-          "title": "Rams poach wide receiver from the 49ers’ practice squad; Gracen Halton heads to the IR",
-          "publisher": "Niners Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCDQgbPDbEAUujPL8xQzhG_euSap0jDuLhswLWDRcQ4RF0jDO6yCwyHp4iKNM"
-        },
-        {
-          "url": "https://ninerswire.usatoday.com/story/sports/nfl/niners/2026/11/10/49ers-xavier-smith-signs-the-los-angeles-rams/92714007007/",
-          "title": "NFC West rival steals WR from 49ers heading into Week 10",
-          "publisher": "Niners Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXyCdSehwMs6GHCdAWGaoNL34Tf_F64l1Urou5QX2NDocyo3nMsvktaDUJpyg"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-10/rams-send-jordan-whittington-to-ir",
-          "title": "Rams send Jordan Whittington to IR",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH9r1hEjQ-WDqFxQnVxaqdPgrwNabZprG_u2NbY3e560J5RJz_I8L5tb74t-g"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYk5fdFIPPpoj88yc89WblEzordoVsp7_2oszO9R_40PEPCfmsz8qUx7AsVZc"
         }
       ]
     }
