@@ -73,3 +73,10 @@ test('Zeus integration busts stale Bubbles script versions after deployment',()=
  const html=read('bubbles.html');
  assert.match(html,/bubbles-ai\.js\?v=20261111-zeus-terminal1/);
 });
+
+test('Start Quest opens the original Zeus chat path and focuses the real composer',()=>{
+ const html=read('coliseum/index.html'),js=read('coliseum/coliseum.js');
+ assert.match(html,/id="zeusStartQuest"/);
+ assert.match(js,/el\('zeusStartQuest'\)\?\.addEventListener\('click'/);
+ assert.match(js,/questInput\.focus\(\)/);
+});
