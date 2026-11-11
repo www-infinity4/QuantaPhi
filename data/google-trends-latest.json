@@ -3,34 +3,342 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T22:01:31.340124Z",
+  "checked_at": "2026-11-11T22:31:26.588500Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "building collapse nyc",
+      "query": "jensen huang second affair",
       "approx_searches": "500+",
+      "published_at": "2026-11-11T22:10:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/investingclub/2026/11/11/were-adding-a-chipmaker-to-our-bullpen-watchlist-and-downgrading-another-name.html",
+        "https://www.cnbc.com/investingclub/2026/11/11/jim-cramers-plan-for-our-intel-position-plus-a-rotation-loser-to-buy-here.html",
+        "https://www.cnbc.com/2026/11/11/stephanie-link-buying-dicks-dks.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEcYqulftgCsGxQmCHtXOLagpOHHmuRiZeuENoCf1SX2nXsGe_488CWmq1sCE",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/investingclub/2026/11/11/were-adding-a-chipmaker-to-our-bullpen-watchlist-and-downgrading-another-name.html",
+          "title": "We're adding a chipmaker to our Bullpen watchlist and downgrading another name",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEcYqulftgCsGxQmCHtXOLagpOHHmuRiZeuENoCf1SX2nXsGe_488CWmq1sCE"
+        },
+        {
+          "url": "https://www.cnbc.com/investingclub/2026/11/11/jim-cramers-plan-for-our-intel-position-plus-a-rotation-loser-to-buy-here.html",
+          "title": "Jim Cramer's plan for our Intel position. Plus, a rotation loser to buy here",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9LL0badeWQ95wFyxNZofHF0zKoze_4K6CGoWM0tpOxSb90sdgqeUZwkDfQb4"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/11/stephanie-link-buying-dicks-dks.html",
+          "title": "Insiders are starting to buy this retail turnaround story, so I am too",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiQOa0nGrbGAXidInM_7VFZ64D_gjMM5swpMN77ObI0Mbp2XVO2AKpCrxPRkY"
+        }
+      ]
+    },
+    {
+      "query": "new york",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T22:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/10/style/pride-bar-hells-kitchen-ai.html",
+        "https://www.queerty.com/owner-of-controversial-pride-bar-responds-to-criticism-this-is-a-gay-bar-do-i-have-to-hide-it-20261111/",
+        "https://abc7ny.com/post/flatbush-partial-building-collapse-brooklyn-reported-people-trapped/20033903/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4d6NOgs8DaMlusBcvKACL_L7M8fvXKDNlnq58Jq0VvJLAhDnlagakzlXdklY",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/10/style/pride-bar-hells-kitchen-ai.html",
+          "title": "Did AI Make This NYC Gay Bar?",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4d6NOgs8DaMlusBcvKACL_L7M8fvXKDNlnq58Jq0VvJLAhDnlagakzlXdklY"
+        },
+        {
+          "url": "https://www.queerty.com/owner-of-controversial-pride-bar-responds-to-criticism-this-is-a-gay-bar-do-i-have-to-hide-it-20261111/",
+          "title": "Owner of controversial PRIDE bar responds to criticism: \"This is a gay bar. Do I have to hide it?\"",
+          "publisher": "Queerty",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_YScmnvRQx8ugRdo1oEfi9BruDitutnpQHa3EJC7R54kgU5iHNEN0QKdCdQ"
+        },
+        {
+          "url": "https://abc7ny.com/post/flatbush-partial-building-collapse-brooklyn-reported-people-trapped/20033903/",
+          "title": "Brooklyn building collapse: People trapped, several injured in Flatbush",
+          "publisher": "ABC7 New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4odmSBt3uERPcMheRV0-x7_QIbkV0Z3m_RgngZWvXSFeOLudZlJGWVvjgVM"
+        }
+      ]
+    },
+    {
+      "query": "kimberly powell nvidia",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-11T22:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
+        "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+        "https://www.cnn.com/2026/11/11/tech/jensen-huang-nvidia-affair-profile"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDKCVVyUCCYyYSrjxTpqYVH7wwROEBvAlv_q8WRccDV6Hk3TUr6fineIAx8Bs",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
+          "title": "Jensen Huang Said to Have Had Relationship With Nvidia Executive Who Reports to Him",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDKCVVyUCCYyYSrjxTpqYVH7wwROEBvAlv_q8WRccDV6Hk3TUr6fineIAx8Bs"
+        },
+        {
+          "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+          "title": "Statement From NVIDIA Board of Directors",
+          "publisher": "NVIDIA Newsroom",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjCZHNG_dz8zbGDFGEGKs9xpu7wXxXPIT8CfNOdPbPkHVJx6XLsDgjnbLWNdQ"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/11/tech/jensen-huang-nvidia-affair-profile",
+          "title": "Jensen Huang dreamed up Nvidia at a Denny’s. The spy scandal threatens decades of his life’s work.",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlPZvAXjOegGMPdfg289M4c4FRDV66St_IQXR-xljh470tMPOpcfGZdgj1b3A"
+        }
+      ]
+    },
+    {
+      "query": "nyc",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T22:00:00Z",
+      "related_news_urls": [
+        "https://abc7ny.com/post/javits-frimpong-murder-17-year-old-custody-connection-death-bronx-teen/20033069/",
+        "https://ny1.com/nyc/all-boroughs/news/2026/11/11/teen-arrested-in-killing-of-15-year-old-bronx-student",
+        "https://www.nytimes.com/2026/11/11/nyregion/nyc-bronx-murder-arrest-javits-frimpong.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPSFujp5ErumkUNFNAlz7HtrieKbkryf3Je16zKWLDJOl2qmvRRNpVOBLC2_M",
+      "image_credit": "ABC7 New York",
+      "news": [
+        {
+          "url": "https://abc7ny.com/post/javits-frimpong-murder-17-year-old-custody-connection-death-bronx-teen/20033069/",
+          "title": "Javits Frimpong shooting: 17-year-old charged with murder",
+          "publisher": "ABC7 New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPSFujp5ErumkUNFNAlz7HtrieKbkryf3Je16zKWLDJOl2qmvRRNpVOBLC2_M"
+        },
+        {
+          "url": "https://ny1.com/nyc/all-boroughs/news/2026/11/11/teen-arrested-in-killing-of-15-year-old-bronx-student",
+          "title": "Teen arrested in killing of 15-year-old Javits Frimpong",
+          "publisher": "Spectrum News NY1",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHyHF7_QV0DETKBM7joR_BFFng9aC7bQJh2JNvFBkoBuIEr-u6wWbIaqFcrjM"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/11/nyregion/nyc-bronx-murder-arrest-javits-frimpong.html",
+          "title": "He Was Killed at Age 15. Now a 17-Year-Old Is Arrested in His Murder.",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWSvmaSamv8Fm02wnhqp0du3Q5zOOReMJuT6Kzs9ZVCaxM7XOPCwq-Y7naMWU"
+        }
+      ]
+    },
+    {
+      "query": "the vow chris harrison",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T22:00:00Z",
+      "related_news_urls": [
+        "https://www.latimes.com/entertainment-arts/tv/story/2026-11-11/chris-harrison-the-vow-fox-nation-the-bachelor",
+        "https://www.hollywoodreporter.com/tv/tv-features/chris-harrison-the-bachelor-firing-blessing-not-canceled-1236751150/",
+        "https://www.foxnews.com/entertainment/the-vow-chris-harrison-back-reality-dating-tv-fox-nation-series"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4ut1x6cZ27sg9bR37lm_-c4_bosCHbrJ1DS_chjgbP6aMw4L1D6uQvzCiMao",
+      "image_credit": "Los Angeles Times",
+      "news": [
+        {
+          "url": "https://www.latimes.com/entertainment-arts/tv/story/2026-11-11/chris-harrison-the-vow-fox-nation-the-bachelor",
+          "title": "Chris Harrison calls his exit from 'The Bachelor' 'a gut punch.' But he's excited about 'The Vow'",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4ut1x6cZ27sg9bR37lm_-c4_bosCHbrJ1DS_chjgbP6aMw4L1D6uQvzCiMao"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/tv/tv-features/chris-harrison-the-bachelor-firing-blessing-not-canceled-1236751150/",
+          "title": "Chris Harrison Says Being Fired From ‘The Bachelor’ Was a “Blessing,” Not a Cancellation",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQr6k8K-oBAruWnugA20iJokiW7HPCR9UK-axusmVd0vZnJYmsfvxlsHYoFNCY"
+        },
+        {
+          "url": "https://www.foxnews.com/entertainment/the-vow-chris-harrison-back-reality-dating-tv-fox-nation-series",
+          "title": "'The Vow' brings Chris Harrison back to reality dating TV: What to know about the Fox Nation series",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN0MUO2RXCpcDR69QKaz6_m-wG-smi-CsbXgCF8yypWlG113U_D-ENpKbdXNo"
+        }
+      ]
+    },
+    {
+      "query": "payroll",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T22:00:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/11/social-security-benefits-taxable-payroll-gdp.html",
+        "https://finance.yahoo.com/economy/policy/articles/social-security-could-shrink-2032-142019972.html",
+        "https://qz.com/aarp-income-shifts-social-security-trust-fund-111126"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6jIiPNuC-CiNqONjDXwnXwQbiEhzcLOi4xnv3SPKQ9dQvrCDbfjeimA0LYTk",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/11/social-security-benefits-taxable-payroll-gdp.html",
+          "title": "Social Security could pay full benefits until 2059 if taxable payroll kept pace with GDP: AARP report",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6jIiPNuC-CiNqONjDXwnXwQbiEhzcLOi4xnv3SPKQ9dQvrCDbfjeimA0LYTk"
+        },
+        {
+          "url": "https://finance.yahoo.com/economy/policy/articles/social-security-could-shrink-2032-142019972.html",
+          "title": "Social Security could shrink by 2032 — how to check your benefits",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZZY0oMIwjLecc44wRBQzXcIn2yCpC1fmtkTOW_Yws5TrVFpKdCfsVyR11Kek"
+        },
+        {
+          "url": "https://qz.com/aarp-income-shifts-social-security-trust-fund-111126",
+          "title": "Shifting income patterns cut 25 years from Social Security's projected lifespan, AARP says",
+          "publisher": "Quartz",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMnuDGbYjUT3Fr6YxY-7FLFPi3PH3nZTA3dAuhRk47A6_KTc1p9k-xmWR68z0"
+        }
+      ]
+    },
+    {
+      "query": "severe thunderstorm watch",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T21:50:00Z",
+      "related_news_urls": [
+        "https://www.wlky.com/article/warm-wednesday-evening-storm-chances/74397468",
+        "https://www.whas11.com/article/weather/weather-impact/weather-impact-alert-thunderstorm-kentucky-indiana/417-31b018bd-0727-4427-bcc7-292b306203fb",
+        "https://www.kbsi23.com/weather/wednesday-evening-storm-chance-another-small-chance-thursday/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxkgje00zpWQUZThiKAu37IMYN6LKBdVEmdiK9lBGnG0BB33wuU3xSRA3sA2I",
+      "image_credit": "WLKY",
+      "news": [
+        {
+          "url": "https://www.wlky.com/article/warm-wednesday-evening-storm-chances/74397468",
+          "title": "Warm Wednesday, evening storm chances",
+          "publisher": "WLKY",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxkgje00zpWQUZThiKAu37IMYN6LKBdVEmdiK9lBGnG0BB33wuU3xSRA3sA2I"
+        },
+        {
+          "url": "https://www.whas11.com/article/weather/weather-impact/weather-impact-alert-thunderstorm-kentucky-indiana/417-31b018bd-0727-4427-bcc7-292b306203fb",
+          "title": "Severe Thunderstorm Watch issued for these Kentucky, Indiana counties | Latest alerts",
+          "publisher": "WHAS11",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWfm0aOkTbfjwHPbqo3gfjAOX56K_tFAshL1RM1Yi6FzEarIGLr0chh08B-iA"
+        },
+        {
+          "url": "https://www.kbsi23.com/weather/wednesday-evening-storm-chance-another-small-chance-thursday/",
+          "title": "Wednesday Evening Storm Chance, Another Small Chance Thursday",
+          "publisher": "www.kbsi23.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3JYzQqLFxCd2LFZUFxj4QkBlNNmxM6hHIoQlyDD5ouHN2ndJszLe3k_Ha7k8"
+        }
+      ]
+    },
+    {
+      "query": "kamario taylor",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T21:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50455234/sources-kamario-taylor-return-mississippi-state-27",
+        "https://bleacherreport.com/articles/25532349-kamario-taylor-becomes-highest-paid-qb-cfb-latest-rumors-new-mississippi-state-contract",
+        "https://www.usatoday.com/story/sports/ncaaf/2026/11/11/kamario-taylor-mississippi-state-deal-contract-football-nil/92731900007/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT24QXJ7y8nomUu3xcFC_iWQhS9xmLdLWhUoNmo-GFviU7D0cGsm6nj8SFFteM",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50455234/sources-kamario-taylor-return-mississippi-state-27",
+          "title": "Sources: Kamario Taylor finalizing deal to return to Mississippi State in '27",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT24QXJ7y8nomUu3xcFC_iWQhS9xmLdLWhUoNmo-GFviU7D0cGsm6nj8SFFteM"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25532349-kamario-taylor-becomes-highest-paid-qb-cfb-latest-rumors-new-mississippi-state-contract",
+          "title": "Kamario Taylor Becomes Highest-Paid QB in CFB, Latest Rumors on New Mississippi State Contract",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHTCc9KbYw1SZ7Xr-WKmXcbfuhTD3S7q_qJPnw9YGgwzokAdNgWjD2Mf6q5hw"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/ncaaf/2026/11/11/kamario-taylor-mississippi-state-deal-contract-football-nil/92731900007/",
+          "title": "Kamario Taylor is heading back to Mississippi State football. How much will he be earning?",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRoIhHznQUHQNQqEtpaV8fxMDQkRVrwyFQH6bnFWwHf6fZaKQerpU6OChfpKc"
+        }
+      ]
+    },
+    {
+      "query": "pat tillman",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T21:50:00Z",
+      "related_news_urls": [
+        "https://apnews.com/article/pat-tillman-f8fc5920c9e94012476ff37b6c49142e",
+        "https://www.wenatcheeworld.com/sports/pat-tillman-still-inspiring-millions-22-years-after-his-death-in-afghanistan/article_37430775-8b68-42f4-ab98-456aa40fdcb4.html",
+        "https://ktar.com/arizona-restaurant-news/pat-tillman-foundation-five-guys"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQS6yW2trGznQlrFkiks-IUMPQ0qOWC0wZqVTOZSJPacT2jKqapPK1lG5L2fp8",
+      "image_credit": "AP News",
+      "news": [
+        {
+          "url": "https://apnews.com/article/pat-tillman-f8fc5920c9e94012476ff37b6c49142e",
+          "title": "Pat Tillman still inspiring millions 22 years after his death in Afghanistan",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQS6yW2trGznQlrFkiks-IUMPQ0qOWC0wZqVTOZSJPacT2jKqapPK1lG5L2fp8"
+        },
+        {
+          "url": "https://www.wenatcheeworld.com/sports/pat-tillman-still-inspiring-millions-22-years-after-his-death-in-afghanistan/article_37430775-8b68-42f4-ab98-456aa40fdcb4.html",
+          "title": "Pat Tillman still inspiring millions 22 years after his death in Afghanistan",
+          "publisher": "The Wenatchee World",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdcYMuluWP20iTl3w1BEUj4ssdEX32ShY6fDCXzbhZKxEkmhMOKhnYXvuAGLw"
+        },
+        {
+          "url": "https://ktar.com/arizona-restaurant-news/pat-tillman-foundation-five-guys",
+          "title": "Five Guys donating portion of Arizona sales to Pat Tillman Foundation on Veterans Day",
+          "publisher": "KTAR News 92.3 FM",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRD6sVrg8IUSn59ylR_DUR66EXS_awqHsh1o-W6fo1CrPpq6FF9j_2Wnw4kKzQ"
+        }
+      ]
+    },
+    {
+      "query": "building collapse nyc",
+      "approx_searches": "20000+",
       "published_at": "2026-11-11T21:40:00Z",
       "related_news_urls": [
         "https://abc7ny.com/post/flatbush-partial-building-collapse-brooklyn-reported-people-trapped/20033903/",
-        "https://brooklyn.news12.com/building-collapses-in-flatbush-multiple-people-trapped",
-        "https://www.cnn.com/2026/11/11/us/brooklyn-new-york-building-collapse"
+        "https://www.cnn.com/2026/11/11/us/brooklyn-new-york-building-collapse",
+        "https://ny1.com/nyc/all-boroughs/news/2026/11/11/people-trapped-in-collapsed-brooklyn-building--fdny-says"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4odmSBt3uERPcMheRV0-x7_QIbkV0Z3m_RgngZWvXSFeOLudZlJGWVvjgVM",
       "image_credit": "ABC7 New York",
       "news": [
         {
           "url": "https://abc7ny.com/post/flatbush-partial-building-collapse-brooklyn-reported-people-trapped/20033903/",
-          "title": "Flatbush partial building collapse in Brooklyn with reported people trapped",
+          "title": "Brooklyn building collapse: People trapped, several injured in Flatbush",
           "publisher": "ABC7 New York",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4odmSBt3uERPcMheRV0-x7_QIbkV0Z3m_RgngZWvXSFeOLudZlJGWVvjgVM"
-        },
-        {
-          "url": "https://brooklyn.news12.com/building-collapses-in-flatbush-multiple-people-trapped",
-          "title": "Building Collapses In Flatbush Multiple People Trapped",
-          "publisher": "News12 | Brooklyn",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMWDzfaiLuq96pAqnc0Dkie5Fw1ogIDb4-8xRf2-5quNAHg4K5BNILjX_bXr8"
         },
         {
           "url": "https://www.cnn.com/2026/11/11/us/brooklyn-new-york-building-collapse",
@@ -38,321 +346,13 @@
           "publisher": "CNN",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS459bPJhEdzSmSetg6H-7EqmfuzcjNOXthyZgitO0c098lPSEPcBGjK3QMWXs"
-        }
-      ]
-    },
-    {
-      "query": "nick wright",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T21:30:00Z",
-      "related_news_urls": [
-        "https://www.thebulwark.com/p/nick-wright-and-anderson-clayton",
-        "https://sports.yahoo.com/articles/nick-wright-says-three-nfl-124000359.html",
-        "https://www.buffalorumblings.com/buffalo-bills-history/144366/buffalo-bills-record-book-week-9-josh-allen-james-cook-greg-rousseau-chase-history"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9S5Xf1bQOARZDLSm5Pv6TMl6OU4sv7PJaPTfYdPcizmNETkhQDWVtaGOKghI",
-      "image_credit": "The Bulwark",
-      "news": [
-        {
-          "url": "https://www.thebulwark.com/p/nick-wright-and-anderson-clayton",
-          "title": "Nick Wright & Anderson Clayton: Did the Fever Break?",
-          "publisher": "The Bulwark",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9S5Xf1bQOARZDLSm5Pv6TMl6OU4sv7PJaPTfYdPcizmNETkhQDWVtaGOKghI"
         },
         {
-          "url": "https://sports.yahoo.com/articles/nick-wright-says-three-nfl-124000359.html",
-          "title": "Nick Wright says there are three NFL players who have clearly been better than Josh Allen in MVP race",
-          "publisher": "Yahoo Sports",
+          "url": "https://ny1.com/nyc/all-boroughs/news/2026/11/11/people-trapped-in-collapsed-brooklyn-building--fdny-says",
+          "title": "People trapped in collapsed Brooklyn building, FDNY says",
+          "publisher": "Spectrum News NY1",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQvwJNwOB_3a8XsL7Q2BlrkrUSj-XkV4NQSyUkSUavMo9qy3Bh_a8NudNfyDI"
-        },
-        {
-          "url": "https://www.buffalorumblings.com/buffalo-bills-history/144366/buffalo-bills-record-book-week-9-josh-allen-james-cook-greg-rousseau-chase-history",
-          "title": "Pencils, erasers, and permanent markers: The Bills’ Week 9 record Book",
-          "publisher": "Buffalo Rumblings",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDIYfbAgCFVl8fhsZmpSzy6PvLHrf6wQb7MO07VwO1_KYnuraMhyXKk9qnv8U"
-        }
-      ]
-    },
-    {
-      "query": "frankie muniz",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T21:10:00Z",
-      "related_news_urls": [
-        "https://www.nascar.com/news-media/2026/11/11/frankie-muniz-transported-to-medical-facility-after-incident-at-daytona/",
-        "https://people.com/frankie-muniz-rushed-to-hospital-after-crashing-during-daytona-practice-12249481",
-        "https://www.motorsport.com/general/news/frankie-muniz-transported-to-daytona-hospital-after-practice-crash/10873949/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR42kHEh7wqWDZQDj4C224eCR5LN_-a42WLhaiJPL3Ywe5obVEG4nHLPc9PpA8",
-      "image_credit": "NASCAR.com",
-      "news": [
-        {
-          "url": "https://www.nascar.com/news-media/2026/11/11/frankie-muniz-transported-to-medical-facility-after-incident-at-daytona/",
-          "title": "Frankie Muniz transported to medical facility after incident at Daytona",
-          "publisher": "NASCAR.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR42kHEh7wqWDZQDj4C224eCR5LN_-a42WLhaiJPL3Ywe5obVEG4nHLPc9PpA8"
-        },
-        {
-          "url": "https://people.com/frankie-muniz-rushed-to-hospital-after-crashing-during-daytona-practice-12249481",
-          "title": "Frankie Muniz Rushed to Hospital After Crashing During Daytona Practice",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTrHkfMOyzsZlc-qU9dTW0JQS8vM2QTfmVZOzh0s6x6kol2Vd0uu4zhExiWdM"
-        },
-        {
-          "url": "https://www.motorsport.com/general/news/frankie-muniz-transported-to-daytona-hospital-after-practice-crash/10873949/",
-          "title": "Frankie Muniz transported to hospital after Daytona practice crash",
-          "publisher": "Motorsport.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTs4KexvWtvZytKZ6Bp9iGk6PyYRNiax1NQWbqosAutDO0D4pe52Wvx6UrsBO4"
-        }
-      ]
-    },
-    {
-      "query": "mortgage interest rates",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T21:10:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/11/mortgage-rates-jump-sharply-higher-after-easing-for-4-straight-weeks.html",
-        "https://www.mortgagenewsdaily.com/markets/mortgage-rates-11102026",
-        "https://finance.yahoo.com/real-estate/articles/us-mortgage-rates-fall-fourth-120000840.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkp0seBTMw9bJnYU7fHxkK0eUirEePWQo80cJDAp77EoI9Umbg2ud5ZsUHgdc",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/11/mortgage-rates-jump-sharply-higher-after-easing-for-4-straight-weeks.html",
-          "title": "Mortgage rates jump sharply higher, after easing for four straight weeks. Here's why",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkp0seBTMw9bJnYU7fHxkK0eUirEePWQo80cJDAp77EoI9Umbg2ud5ZsUHgdc"
-        },
-        {
-          "url": "https://www.mortgagenewsdaily.com/markets/mortgage-rates-11102026",
-          "title": "Mortgage Rate Sharply Higher After Inflation Data",
-          "publisher": "Mortgage News Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmjtScukkrsD0TAovW7Xi6Xqhu7CXs_heEX5h2W-9jH3aM8NivfHkZgMFK2mY"
-        },
-        {
-          "url": "https://finance.yahoo.com/real-estate/articles/us-mortgage-rates-fall-fourth-120000840.html",
-          "title": "US Mortgage Rates Fall for Fourth Week, Lifting Home Purchases",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkqeMQIA9xIKzp-5YxvKCyq_fzqKWe-GGU7faB1k9ymCFpFw74fzuM_Ds42EM"
-        }
-      ]
-    },
-    {
-      "query": "softbank $3.7 billion turbine loss",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T21:10:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/business/energy-oil/masayoshi-sons-huge-bet-on-electrical-turbines-backfires-b51f160c",
-        "https://www.bloomberg.com/news/articles/2026-11-11/softbank-group-shares-drop-10-after-booking-7-billion-loss",
-        "https://www.ft.com/content/e19c86dc-9437-4827-a5ae-14bd4033037b?syn-25a6b1a6=1"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3M-ahqXL-LANP33CZdKdrxoZntRTup5stbXzbhrM6frLIC_VFzlK0_isGU4o",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/business/energy-oil/masayoshi-sons-huge-bet-on-electrical-turbines-backfires-b51f160c",
-          "title": "Masayoshi Son’s Huge Bet on Electrical Turbines Backfires",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3M-ahqXL-LANP33CZdKdrxoZntRTup5stbXzbhrM6frLIC_VFzlK0_isGU4o"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-11/softbank-group-shares-drop-10-after-booking-7-billion-loss",
-          "title": "SoftBank Group Shares Drop 11% After Booking $7 Billion Loss",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMEkU9pRSBymmwYuVlZjWA_ozyM2Inmihf0So66Mduos1ruPL4uwvM51-Ow-0"
-        },
-        {
-          "url": "https://www.ft.com/content/e19c86dc-9437-4827-a5ae-14bd4033037b?syn-25a6b1a6=1",
-          "title": "Tech sell-off raises risks for SoftBank’s massive AI bet",
-          "publisher": "Financial Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNQXuSgWCObIx7GTmjrShe03nR7Kww8qtvqoNY16GjzOqgWmUpvOQNOkcZeAo"
-        }
-      ]
-    },
-    {
-      "query": "muchova",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T21:10:00Z",
-      "related_news_urls": [
-        "https://www.wtatennis.com/news/4607397/fage-wta-finals-day-4-preview-how-aryna-sabalenka-and-mirra-andreeva-can-advance",
-        "https://sports.yahoo.com/articles/aryna-sabalenka-speaks-beating-karolina-090000310.html",
-        "https://www.espn.com/tennis/story/_/id/50437046/aryna-sabalenka-mirra-andreeva-win-wta-finals"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-acwUPTJNctj-RcTsWgwbFbbmRcQSz0mWrRyR3EEjcVhqLR1vEpfzQy9Y_7g",
-      "image_credit": "WTA Tennis",
-      "news": [
-        {
-          "url": "https://www.wtatennis.com/news/4607397/fage-wta-finals-day-4-preview-how-aryna-sabalenka-and-mirra-andreeva-can-advance",
-          "title": "FAGE WTA Finals Day 4 preview: How Sabalenka and Andreeva can advance",
-          "publisher": "WTA Tennis",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-acwUPTJNctj-RcTsWgwbFbbmRcQSz0mWrRyR3EEjcVhqLR1vEpfzQy9Y_7g"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/aryna-sabalenka-speaks-beating-karolina-090000310.html",
-          "title": "Aryna Sabalenka speaks after beating Karolina Muchova in her first match at the WTA Finals",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcf5iP64Ff4u9ZBDzje_jq33msXpbNcZRmTHPPCJvNw5lybwmuZt14CxDvPBI"
-        },
-        {
-          "url": "https://www.espn.com/tennis/story/_/id/50437046/aryna-sabalenka-mirra-andreeva-win-wta-finals",
-          "title": "Aryna Sabalenka picks up first win at WTA Finals, faces Mirra Andreeva next",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDQbvcES79Qh9pbHQ0QCWn_s6T-tQZw1KbnqBs38Szp4kFG0IvixBXCacjQW4"
-        }
-      ]
-    },
-    {
-      "query": "randall england",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T21:00:00Z",
-      "related_news_urls": [
-        "https://www.hollywoodreporter.com/tv/tv-news/randall-england-dead-general-hospital-1236753374/",
-        "https://deadline.com/2026/11/randall-england-dead-1237220596/",
-        "https://www.thedailybeast.com/general-hospital-actor-randall-england-dies-of-cancer"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0jQeVMt3CXXwE5RIz3yFEUlirPpwqODKx3rS80g0Cz3pZdMncr0KSFiIIWrs",
-      "image_credit": "The Hollywood Reporter",
-      "news": [
-        {
-          "url": "https://www.hollywoodreporter.com/tv/tv-news/randall-england-dead-general-hospital-1236753374/",
-          "title": "Randall England, ‘General Hospital’ Actor, Dies at 75",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0jQeVMt3CXXwE5RIz3yFEUlirPpwqODKx3rS80g0Cz3pZdMncr0KSFiIIWrs"
-        },
-        {
-          "url": "https://deadline.com/2026/11/randall-england-dead-1237220596/",
-          "title": "Randall England Dies: Actor Who Played ‘General Hospital’ Villain Was 75",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRD-XW69nSdm7rZ2lSfFX26tMf6dlSiyjmLc_RUiTZkDLk8pAN8kxPzSciuWE"
-        },
-        {
-          "url": "https://www.thedailybeast.com/general-hospital-actor-randall-england-dies-of-cancer",
-          "title": "Soap Opera Actor Dead at 75",
-          "publisher": "The Daily Beast",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS26f9TiTORjFh8FzbpwbTqk7RaMdoktRggsBmKDbNhLSfFYR96Vpcqwx5tyCw"
-        }
-      ]
-    },
-    {
-      "query": "ayanna pressley",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T21:00:00Z",
-      "related_news_urls": [
-        "https://pressley.house.gov/2026/11/09/watch-pressley-on-ms-now-this-is-our-moment-and-we-have-a-mandate-from-the-people-to-match-their-energy/",
-        "https://www.commondreams.org/news/ayanna-pressley-for-speaker",
-        "https://mezha.net/eng/news/mezha-1e8f9ba3e193be983edb0930_ayanna_pressley_urges/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKX6Zg944ZCf6yjUE_0uawLUg8xRyvig9AJslYgN7Msjt28e7xi6f93UwdPAE",
-      "image_credit": "House.gov",
-      "news": [
-        {
-          "url": "https://pressley.house.gov/2026/11/09/watch-pressley-on-ms-now-this-is-our-moment-and-we-have-a-mandate-from-the-people-to-match-their-energy/",
-          "title": "WATCH: Pressley on MS NOW: “This Is Our Moment, And We Have A Mandate From The People To Match Their Energy”",
-          "publisher": "House.gov",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKX6Zg944ZCf6yjUE_0uawLUg8xRyvig9AJslYgN7Msjt28e7xi6f93UwdPAE"
-        },
-        {
-          "url": "https://www.commondreams.org/news/ayanna-pressley-for-speaker",
-          "title": "Petition Aimed at Drafting Ayanna Pressley to Challenge Hakeem Jeffries for Speaker Picks Up Steam",
-          "publisher": "Common Dreams",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0OquVqv7xW41w3sUB8pWRkrEajmuTUq7p2imXlFX8jsq7QOybVA-hn1BKyAE"
-        },
-        {
-          "url": "https://mezha.net/eng/news/mezha-1e8f9ba3e193be983edb0930_ayanna_pressley_urges/",
-          "title": "Ayanna Pressley urges Democrats to use their power to pursue far-left policies",
-          "publisher": "Mezha.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxRfBae4VZnmbivBMFc3NAZdX9FbATEwelR76x0A91tyDX_4OV3dGTzL5Gv_A"
-        }
-      ]
-    },
-    {
-      "query": "karolina muchova",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T21:00:00Z",
-      "related_news_urls": [
-        "https://www.wtatennis.com/videos/4607482/rivalry-rewind_-the-best-of-elina-svitolina-vs-karolina-muchova",
-        "https://www.bleachernation.com/picks/2026/11/10/svitolina-vs-muchova-prediction-at-the-akron-wta-finals-guadalajara-wednesday-november-11/",
-        "https://www.tennis365.com/tennis-news/elina-svitolina-karolina-muchova-speak-wta-finals-clash"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQwSwltnshdIix3egtuCdxGsYbc0-hZQc3uM_T2vRE-OUf4Irnj1aOKe3dhtg",
-      "image_credit": "WTA Tennis",
-      "news": [
-        {
-          "url": "https://www.wtatennis.com/videos/4607482/rivalry-rewind_-the-best-of-elina-svitolina-vs-karolina-muchova",
-          "title": "Rivalry Rewind: The best of Karolina Muchova vs. Elina Svitolina",
-          "publisher": "WTA Tennis",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQwSwltnshdIix3egtuCdxGsYbc0-hZQc3uM_T2vRE-OUf4Irnj1aOKe3dhtg"
-        },
-        {
-          "url": "https://www.bleachernation.com/picks/2026/11/10/svitolina-vs-muchova-prediction-at-the-akron-wta-finals-guadalajara-wednesday-november-11/",
-          "title": "Svitolina vs. Muchova Prediction at the Akron WTA Finals Guadalajara - Wednesday, November 11",
-          "publisher": "Bleacher Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsu7AaeJMyVQjFXP-PoigyPYUSxgEuGHJrhQIXTAzhwfX84zH6NTDZvH_buS0"
-        },
-        {
-          "url": "https://www.tennis365.com/tennis-news/elina-svitolina-karolina-muchova-speak-wta-finals-clash",
-          "title": "Elina Svitolina and Karolina Muchova speak out about their crucial WTA Finals clash",
-          "publisher": "Tennis365",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROEH6Jm3pCcE536F_Lgso_9zTK2-GlrYEue490jApsXB8RuvnSG3AfBOp6Yg4"
-        }
-      ]
-    },
-    {
-      "query": "south florida basketball",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T20:50:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/betting/news/saint-josephs-vs-south-florida-cbb-picks-wednesday-matinee-special-from-annapolis-on-veterans-day/",
-        "https://sports.yahoo.com/articles/saint-joe-vs-usf-prediction-110039243.html",
-        "https://ats.io/matchup/college-basketball/south-florida-bulls-vs-saint-joseph-s-hawks-prediction-11-11-2026/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwvPBqc4iS6O75pe1oF8PSy0YASVTRz-Zx7ZNPagSBa0FLX0pZ-O51XHeoGfw",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/betting/news/saint-josephs-vs-south-florida-cbb-picks-wednesday-matinee-special-from-annapolis-on-veterans-day/",
-          "title": "Saint Joseph's vs. South Florida CBB picks: Wednesday matinee special from Annapolis on Veterans Day",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwvPBqc4iS6O75pe1oF8PSy0YASVTRz-Zx7ZNPagSBa0FLX0pZ-O51XHeoGfw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/saint-joe-vs-usf-prediction-110039243.html",
-          "title": "Saint Joe’s vs USF Prediction, Pick, College Basketball Odds for Wednesday, Nov. 11",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROy9mwUKD1y18f00ol-7ZhClfCVWm-fLZ95GxLtZvxSwL6eRznCvRAtMI_Ct8"
-        },
-        {
-          "url": "https://ats.io/matchup/college-basketball/south-florida-bulls-vs-saint-joseph-s-hawks-prediction-11-11-2026/",
-          "title": "South Florida Bulls vs Saint Joseph's Hawks Prediction - November 11, 2026",
-          "publisher": "ATS.io",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaCd1kjvtk_9CrhTwAjLeCU4py9Nsn_0XgCzgUMEBXkzmEEPWeSTw-Y3zJZ_Y"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJh_mr7NFXxm77eCmhFlX3lIBlMGDWK1ZWwIMiY37SFqIKoJNQK2ySNNL3L9Y"
         }
       ]
     }
