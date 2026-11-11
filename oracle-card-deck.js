@@ -8,6 +8,7 @@ if(!host||!stage)return;
 const agePolicy=window.QuantaAgePreferences;
 const categoryPicker=document.getElementById('oracleCardDepartment');
 const saveCategory=document.getElementById('oracleSaveDepartment');
+const hideCard=document.getElementById('oracleCardHide');
 let selectedDepartment='all',departmentApi=null;
 const now=document.getElementById('oracleCardNow'),status=document.getElementById('oracleCardStatus'),
  next=document.getElementById('oracleCardNext'),prev=document.getElementById('oracleCardPrevious'),scroll=document.getElementById('oracleCardScroll');
@@ -320,7 +321,7 @@ function adultAllowed(entry){
  return agePolicy?agePolicy.canAutoShow(entry):!/21\+|adult|dispensary|cannabis/i.test(entry.category);
 }
 function eligible(){
- const cards=entries.filter(available).filter(adultAllowed).filter(e=>
+ const cards=entries.filter(available).filter(adultAllowed).filter(e=>!(feedState?.hidden||[]).includes(e.feedId)).filter(e=>
   selectedDepartment==='all'||Boolean(departmentApi?.matchesDepartment(e,selectedDepartment)));
  if(selectedTab==='following')return cards.filter(e=>(feedState?.following||[]).includes(e.feedId));
  if(selectedTab==='for-you')return cards.filter(e=>{
@@ -335,6 +336,7 @@ function liveCatalog(){return eligible().map(e=>({id:e.feedId,name:e.title,categ
  feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
 function updateTabs(){
  updateInventory();
+ if(hideCard)hideCard.hidden=!active||!directionApi||Boolean(agePolicy?.isPreference(active));
  if(saveCategory&&categoryPicker){
   const valid=departmentApi?.INTEREST_DEPARTMENTS.some(d=>d.id===selectedDepartment);
   saveCategory.hidden=!valid;
@@ -503,6 +505,16 @@ Promise.all([import('/quanta-feed-rank.mjs?v=20261110-explicit-for-you1'),
   if(!active){const first=eligible()[0];if(first)show(first,false);
    else{now.textContent='No cards in this category';status.textContent='Choose a different carousel or save this department to For You.';}}
   updateTabs();predict();
+ });
+ hideCard?.addEventListener('click',()=>{
+  if(!active||!directionApi)return;
+  const hiddenId=active.feedId;
+  feedState=directionApi.hideFeedCard(readDirections(),hiddenId);storeDirections();
+  returnActive();const next=eligible()[0];if(next)show(next,false);
+  else{now.textContent='All cards in this category hidden or unavailable';
+    status.textContent='Change the category or restore hidden cards in your For You settings.';}
+  updateTabs();predict();
+  window.dispatchEvent(new CustomEvent('quantaphi:feed-updated',{detail:{origin:'oracle-viewer'}}));
  });
  saveCategory?.addEventListener('click',()=>{
   if(!directionApi||!departmentApi?.INTEREST_DEPARTMENTS.some(d=>d.id===selectedDepartment))return;
