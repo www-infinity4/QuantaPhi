@@ -2,9 +2,21 @@
   "schema_version": 1,
   "source": "Google Trends RSS + publisher trailer RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
-  "checked_at": "2026-11-11T16:32:57.564093Z",
+  "checked_at": "2026-11-11T17:04:14.597213Z",
   "source_note": "Google trending titles are independently matched to source-backed trailer uploads. Other cards are labelled NEW TRAILER, not Google-trending. These are previews, not full movies.",
   "items": [
+    {
+      "id": "1ZckqYSZyBk",
+      "title": "Lords of War",
+      "video_id": "1ZckqYSZyBk",
+      "video_title": "Lords of War Teaser Trailer #2 (2027)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-11T16:23:57Z",
+      "source_url": "https://www.youtube.com/watch?v=1ZckqYSZyBk",
+      "poster": "https://i.ytimg.com/vi/1ZckqYSZyBk/hqdefault.jpg",
+      "google_trending": false
+    },
     {
       "id": "7SO6VhCk5l4",
       "title": "Pendulum",
