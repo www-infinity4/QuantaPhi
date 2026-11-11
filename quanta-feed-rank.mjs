@@ -9,6 +9,7 @@ const bounded=n=>Number.isFinite(n)&&n>0?Math.min(5000,Math.floor(n)):0;
 export const cleanFeedState=raw=>{
  const r=raw&&typeof raw==='object'&&!Array.isArray(raw)?raw:{};
  const following=[...new Set((Array.isArray(r.following)?r.following:[]).filter(validId).slice(0,800))];
+ const hidden=[...new Set((Array.isArray(r.hidden)?r.hidden:[]).filter(validId).slice(0,800))];
  const interests=[...new Set((Array.isArray(r.interests)?r.interests:[]).filter(x=>typeof x==='string'&&DEPARTMENTS.some(d=>d.id===x&&!['all','healthcare','adult'].includes(x))).slice(0,15))];
  const counts={},viewed={},transitions={};
  for(const [key,val] of Object.entries(r.counts||{}).slice(0,900))if(validId(key)&&bounded(val))counts[key]=bounded(val);
@@ -20,7 +21,7 @@ export const cleanFeedState=raw=>{
   for(const [to,n] of Object.entries(row).slice(0,80))if(validId(to)&&to!==from&&bounded(n))edges[to]=bounded(n);
   if(Object.keys(edges).length)transitions[from]=edges;
  }
- return {version:3,following,interests,counts,viewed,transitions,
+ return {version:3,following,hidden,interests,counts,viewed,transitions,
   lastUsed:validId(r.lastUsed)?r.lastUsed:'',
   advance:Math.max(0,Math.min(100000,Number(r.advance)||0))};
 };
@@ -68,7 +69,7 @@ export function feedCandidates(cards,tab,state,query=''){
  const q=String(query).trim().toLowerCase().slice(0,120);
  const following=new Set(state.following||[]), interests=new Set(state.interests||[]);
  const eligible=card=>!['sponsored','public-service'].includes(card.type)||placementPolicy(card).eligible;
- const filtered=cards.filter(c=>eligible(c)&&
+ const filtered=cards.filter(c=>eligible(c)&&!(state.hidden||[]).includes(c.id)&&
   (tab!=='following'||following.has(c.id))&&
   (tab!=='for-you'||following.has(c.id)||interests.has(departmentFor(c)))&&
   (!q||[c.name,c.category,c.feature,c.study].join(' ').toLowerCase().includes(q)));
@@ -145,6 +146,7 @@ export const markOpened=(state,id,fromId=state.lastUsed)=>({
   ...state.transitions,[fromId]:{...(state.transitions?.[fromId]||{}),
    [id]:Math.min(5000,(state.transitions?.[fromId]?.[id]||0)+1)}}:state.transitions||{}
 });
+export const hideFeedCard=(state,id)=>({...state,hidden:validId(id)?[...new Set([...(state.hidden||[]),id])].slice(-800):state.hidden||[]});
 export const toggleInterest=(state,department)=>({
  ...state,interests:!DEPARTMENTS.some(x=>x.id===department&&!['all','healthcare','adult'].includes(department))?(state.interests||[]):
  (state.interests||[]).includes(department)?(state.interests||[]).filter(x=>x!==department):[...(state.interests||[]),department]
