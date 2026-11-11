@@ -1,6 +1,7 @@
 import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261102-cardimages1';
 import {findDiscovery} from './quanta-feed-catalog.mjs';
 import {mountOfficialViewer} from './quanta-official-viewer.mjs';
+import {mountAvatarAiCard} from './avatar-ai-card.mjs';
 import {MOTORCYCLE_SOURCES} from './motorcycle-quick-cards.mjs';
 import {lookupQuickCard} from './quick-card-search-core.mjs?v=20261028-search1';
 /* Infinity source quick cards — official links and one consented Bubbles specialist.
@@ -17,6 +18,7 @@ export const QUICK_CARD_SOURCES=Object.freeze([
  source('facebook','Facebook','Social','Local groups and events','https://www.facebook.com/','https://www.facebook.com/events/','Help signed-in users navigate groups, events and voluntary local interests without assuming their location.','Facebook local items require Facebook sign-in and explicit location consent. This independent card cannot read private feeds.'), 
  source('instagram','Instagram','Social','Explore photos and reels','https://www.instagram.com/','https://www.instagram.com/explore/','Explain image attribution and discover explicitly authorized media via supported Instagram APIs or embeds.','Explore photos and reels at Instagram. Real images require authorized media/official embeds, not scraped CDN images.'), 
  source('chatgpt','ChatGPT','AI','Open the real ChatGPT website and sign in','https://chatgpt.com/','https://chatgpt.com/','Open the original ChatGPT app and authenticate on chatgpt.com, without copying credentials or impersonating its sessions.','One-tap official sign-in and an optional real website frame. Framing depends on the provider and browser; your private conversation is not synchronized to QuantaPhi.'),
+ source('avatar-ai','Avatar AI','AI · Personal context','Carry your Avatar AI prompt into ChatGPT','https://chatgpt.com/','https://chatgpt.com/','Help the visitor copy or drag a reusable starter prompt into their own ChatGPT account, where only authorized memories and connected sources can be used.','Public suggestion, not account sync, automatic chat scanning, an autonomous agent, or a paid subscription. The visitor chooses when to paste and send.'),
  source('gemini','Google Gemini','AI · Planning','Ask Gemini first through Bubbles','https://gemini.google.com/','https://gemini.google.com/','Gemini offers the first research/engineering plan. Independently check model advice before acting.','Use the real Gemini API only with verified Bubbles owner access, or continue in the official Gemini app.'),
  source('claude','Anthropic Claude','AI · Review','Review the Gemini plan with Claude','https://claude.ai/','https://claude.ai/','Claude independently reviews proposed changes, tests and possible hazards; no generated text is execution authorization.','The card can ask Bubbles for an authenticated Anthropic API response, if configured; otherwise use the official Claude interface.'),
  source('copilot','GitHub Copilot','AI · Coding','Review work with GitHub Copilot','https://github.com/copilot','https://github.com/copilot/agents','GitHub Copilot cloud agent can work on appropriately enabled repositories through approved GitHub issues and PRs.','Open the official GitHub Copilot interface. This card does not inherit private repository permissions or claim a direct Copilot chat API.'), 
@@ -50,7 +52,7 @@ export const ACTIVE_SOURCE_CARDS=Object.freeze([
 export const PUBLIC_SOURCE_IDS=Object.freeze([
  'google','bing','youtube','reddit','x','tiktok','starmaker','fox-one','fox-one-live-news',
  'cnn','fox-news','yahoo-news','tv-guide','facebook','instagram','whatsapp',
- 'chatgpt','gemini','claude','copilot','harley-davidson','indian-motorcycle','pcla-picocela'
+ 'chatgpt','avatar-ai','gemini','claude','copilot','harley-davidson','indian-motorcycle','pcla-picocela'
 ]);
 export const isPublicSourceCard=card=>Boolean(card&&PUBLIC_SOURCE_IDS.includes(card.id));
 export const findSourceCard=id=>{
@@ -213,6 +215,7 @@ function starterCard(card){
  if(card.id!=='google'&&card.id!=='bing')item.append(el('p','iqc-kind',card.kind));
  const tools=el('div','iqc-inline-tools');mountCardTools(tools,card);item.append(tools);
  if(card.id==='chatgpt')mountOfficialViewer(item,card.id);
+ if(card.id==='avatar-ai')mountAvatarAiCard(item);
  askAiTools(item,card);
  // Search cards are already complete with their own actual search fields.
  if(!['google','bing'].includes(card.id)){
@@ -250,6 +253,7 @@ function mountDetail(){
  host.append(el('p','iqc-kind','INFINITY 2026® · SOURCE EXPERIENCE'),createCardArtwork(card),el('h1','',card.name),el('h2','',card.feature));
  const tools=el('div','iqc-tools');mountCardTools(tools,card);host.append(tools);
  if(card.id==='chatgpt')mountOfficialViewer(host,card.id);
+ if(card.id==='avatar-ai')mountAvatarAiCard(host);
  askAiTools(host,card);
  const actions=el('div','iqc-actions');if(card.id==='starmaker'){const studio=link('Search songs + record your voice in QuantaPhi ↗','/studio/','iqc-primary');studio.target='_self';actions.append(studio);const mini=link('Try portable interactive card ↗','/starmaker-embed.html','iqc-primary');mini.target='_self';actions.append(mini)}actions.append(link('Visit original '+card.name+' ↗',card.official));if(card.secondUrl)actions.append(link(card.secondLabel||'Another official service ↗',card.secondUrl));host.append(actions);
  const about=el('section','iqc-feature');about.append(el('h3','','Ask '+card.name+' Bubbles'),el('p','','An independent Bubbles specialist opens at the bottom right. Your existing account connection remains subject to its normal sign-in and consent checks.'),el('p','iqc-muted','No messages, social account feeds, location, recordings or contact information are transferred to the third-party provider by this preview. Any future submission must show its destination, file and consent before sending.'));host.append(about);
