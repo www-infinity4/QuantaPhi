@@ -51,3 +51,15 @@ test('independent lanes prevent overlapping source changes but backfill distinct
   p(65,{priority:90,nextSourcePath:'src/elsewhere.mjs'})];
  assert.deepEqual(selectActionPackets(wider,{limit:2}).map(x=>x.issue),[63,65]);
 });
+
+test('a declared scope cannot hide the actual write target from conflict detection',()=>{
+ const first=p(70,{priority:99,nextSourcePath:'src/critical.mjs',scopePaths:['src/unrelated.mjs']});
+ const conflicting=p(71,{priority:90,nextSourcePath:'src/critical.mjs'});
+ const safe=p(72,{priority:80,nextSourcePath:'src/safe.mjs'});
+ assert.deepEqual(selectActionPackets([first,conflicting,safe],{limit:2}).map(x=>x.issue),[70,72]);
+});
+test('source write targets must be repository-relative safe paths',()=>{
+ assert.equal(validPacket(p(75,{nextSourcePath:'../src/private.mjs'})),false);
+ assert.equal(validPacket(p(76,{nextSourcePath:'/src/absolute.mjs'})),false);
+ assert.equal(validPacket(p(77,{nextSourcePath:'src\\\\escaped.mjs'})),false);
+});
