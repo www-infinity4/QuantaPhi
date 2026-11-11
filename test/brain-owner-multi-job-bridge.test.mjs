@@ -91,7 +91,8 @@ test('the existing signed runner claims job two only after verified job one comp
  assert.equal(pending.eligible,false);
  assert.equal(pending.reason,'dependency_pending');
  const sourceOnly=checkOwnerRunnerRequest(second,{deps:[{status:'committed_unverified'}]});
- assert.equal(sourceOnly.eligible,true); // Existing runner's documented source milestone.
+ assert.equal(sourceOnly.eligible,false); // A source-only commit is not a reviewed, eligible predecessor.
+ assert.equal(sourceOnly.reason,'dependency_pending');
  const released=checkOwnerRunnerRequest(second,{deps:[{status:'merged_verified'}]});
  assert.equal(released.eligible,true);
  const claimed=checkOwnerRunnerRequest({...second,status:'working',progress:{
