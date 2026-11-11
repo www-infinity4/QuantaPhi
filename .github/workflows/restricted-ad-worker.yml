@@ -5,12 +5,16 @@ on:
       - 'workers/restricted-ads/**'
       - 'restricted-ad-policy.mjs'
       - 'test/restricted-ads-worker.test.mjs'
+      - 'test/test_restricted_ads_migrations.py'
+      - 'work/unfinished/TICKET-1905.md'
       - '.github/workflows/restricted-ad-worker.yml'
   push:
     branches: [main]
     paths:
       - 'workers/restricted-ads/**'
       - 'test/restricted-ads-worker.test.mjs'
+      - 'test/test_restricted_ads_migrations.py'
+      - 'work/unfinished/TICKET-1905.md'
       - '.github/workflows/restricted-ad-worker.yml'
 jobs:
   age-verification:
