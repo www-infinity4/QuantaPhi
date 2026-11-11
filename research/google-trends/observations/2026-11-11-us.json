@@ -3,9 +3,211 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T19:31:13.503315Z",
+  "checked_at": "2026-11-11T20:01:38.903582Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "american airlines international route cancellations 2027",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T19:40:00Z",
+      "related_news_urls": [
+        "https://simpleflying.com/american-cancels-8-international-routes/",
+        "https://thecancunsun.com/tulum-flight-collapse-only-2-us-routes-will-remain-by-february/",
+        "https://www.thetravel.com/delta-and-united-airlines-cancel-flights-to-mexico-vacation-spot-despite-brand-new-airport/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9w1VzKAIKadS9ddM2Jk4rqw5Jbat_k2K26lChqd5_e69BhBHU1qsYN6ZFp98",
+      "image_credit": "Simple Flying",
+      "news": [
+        {
+          "url": "https://simpleflying.com/american-cancels-8-international-routes/",
+          "title": "American Airlines Cancels 8 International Routes: See Full List Now",
+          "publisher": "Simple Flying",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9w1VzKAIKadS9ddM2Jk4rqw5Jbat_k2K26lChqd5_e69BhBHU1qsYN6ZFp98"
+        },
+        {
+          "url": "https://thecancunsun.com/tulum-flight-collapse-only-2-us-routes-will-remain-by-february/",
+          "title": "Tulum Flight Collapse: Only 2 US Routes Will Remain By February",
+          "publisher": "Cancun Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRElg4185mSpDVVakxPkDXlZ-1F_pXJHvkEsLv9xd7tM8G44xLd4S0ZHok08fg"
+        },
+        {
+          "url": "https://www.thetravel.com/delta-and-united-airlines-cancel-flights-to-mexico-vacation-spot-despite-brand-new-airport/",
+          "title": "Delta And United Airlines Cancel Flights To Mexico Vacation Spot Despite Brand-New Airport",
+          "publisher": "TheTravel",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqiYVLBOq6itQxCEjYMcRcouPhT95wyYgmdgtaRZhYBr7j8k-xXXWKEGjz1FU"
+        }
+      ]
+    },
+    {
+      "query": "lucia gta 6",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-11T19:40:00Z",
+      "related_news_urls": [
+        "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
+        "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10",
+        "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk",
+      "image_credit": "XBOX Wire",
+      "news": [
+        {
+          "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
+          "title": "Grand Theft Auto VI Comes to XBOX One and XBOX Series X|S Through XBOX Cloud Gaming on November 19",
+          "publisher": "XBOX Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk"
+        },
+        {
+          "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10",
+          "title": "Grand Theft Auto VI Pre-Load Begins on November 10",
+          "publisher": "Rockstar Games",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvr3MnhC7loBDcBhBXQOjgXQdBnSX1GgBl8Gp0wCtDiGaqob5Fx5ug4CQtEz4"
+        },
+        {
+          "url": "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/",
+          "title": "Pre-load Grand Theft Auto VI on PS5 starting today",
+          "publisher": "PlayStation.Blog",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmQPZtB1cfmtJ8v-9159sSJpw2Cr8v495zAc5tM6Spqsus45lZErGPllHDXDY"
+        }
+      ]
+    },
+    {
+      "query": "chase young",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T19:30:00Z",
+      "related_news_urls": [
+        "https://whodatdish.com/saints-look-smarter-than-ever-after-trade-deadline-comes-and-goes-01m73pfzdb7m",
+        "https://saintswire.usatoday.com/story/sports/nfl/saints/2026/11/05/nfl-trade-deadline-bills-jaguars-saints-justin-reid/92631678007/",
+        "https://athlonsports.com/nfl/new-orleans-saints/saints-trade-deadline-chase-young-nathan-shepherd"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-xVBtzhcgf-7Zx7iEuSI45RSGyRkPoR0BLmGxi0RTxs6OxZATCGgPDf8RDvE",
+      "image_credit": "whodatdish.com",
+      "news": [
+        {
+          "url": "https://whodatdish.com/saints-look-smarter-than-ever-after-trade-deadline-comes-and-goes-01m73pfzdb7m",
+          "title": "Saints look smarter than ever after trade deadline comes and goes",
+          "publisher": "whodatdish.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-xVBtzhcgf-7Zx7iEuSI45RSGyRkPoR0BLmGxi0RTxs6OxZATCGgPDf8RDvE"
+        },
+        {
+          "url": "https://saintswire.usatoday.com/story/sports/nfl/saints/2026/11/05/nfl-trade-deadline-bills-jaguars-saints-justin-reid/92631678007/",
+          "title": "NFL trade deadline: 3 teams that could deal for Saints DB Justin Reid",
+          "publisher": "Saints Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbmaF0BmMdUXO6VhhPUFaaYj-y2nXE26VXolhH4NAgQyzp6hg63_2KLtnMCXM"
+        },
+        {
+          "url": "https://athlonsports.com/nfl/new-orleans-saints/saints-trade-deadline-chase-young-nathan-shepherd",
+          "title": "Best Trade Saints Can Still Make Before 4 p.m. Deadline Isn’t Chase Young",
+          "publisher": "Athlon Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtYWfBxldmjV2rLVh5Nw4eK2j2yM4pLeV3MyHDGE_Cv_QmFaLz0lNNYh4hHPc"
+        }
+      ]
+    },
+    {
+      "query": "adults season 3",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T19:20:00Z",
+      "related_news_urls": [
+        "https://deadline.com/2026/11/adults-renewed-season-3-fx-1237220654/",
+        "https://theankler.com/john-landgraf-on-adults-renewal-disney-reorg-and-why-tv-needs-chaos/",
+        "https://www.hollywoodreporter.com/tv/tv-news/adults-fx-comedy-adults-third-season-renewed-1236753149/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTczdvAHpmQyC9i7hv-3jXxMNAzY8ttqlqrpVKxDiAW_2UYAF7XDHJIYlAnERw",
+      "image_credit": "Deadline",
+      "news": [
+        {
+          "url": "https://deadline.com/2026/11/adults-renewed-season-3-fx-1237220654/",
+          "title": "‘Adults’ Renewed For Season 3 At FX",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTczdvAHpmQyC9i7hv-3jXxMNAzY8ttqlqrpVKxDiAW_2UYAF7XDHJIYlAnERw"
+        },
+        {
+          "url": "https://theankler.com/john-landgraf-on-adults-renewal-disney-reorg-and-why-tv-needs-chaos/",
+          "title": "John Landgraf on ‘Adults’ Renewal, Disney Reorg and Why TV Needs Chaos",
+          "publisher": "The Ankler",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhylCtICk9hsZgafIeS2fJQ7Kyy8CuCZuBGKcswjHcYInD9cf90if9RMQ9Qwg"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/tv/tv-news/adults-fx-comedy-adults-third-season-renewed-1236753149/",
+          "title": "'Adults': FX Gives Gen Z Comedy Third Season Renewal",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTuwtPSdxR8jUHLNx1_V49gbB3BsF3xgVg_pxcyKAHqZqrDOuJE0SrC3EiRApM"
+        }
+      ]
+    },
+    {
+      "query": "pep guardiola",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T19:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7773820/2026/11/11/pep-guardiola-pochettino-manchester-united-usmnt-coach-candidate/",
+        "https://bleacherreport.com/articles/25532321-pep-guardiola-reportedly-top-target-usmnt-amid-mauricio-pochettino-manchester-united-rumors",
+        "https://www.cbssports.com/soccer/news/usmnt-coaching-candidates-could-pep-guardiola-potentially-replace-mauricio-pochettino/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVxTxqyXprfv03aSJcxjetgodx2f8Oj5ospE4dlaAtGsvL8BNXGSKmkLXMIUM",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7773820/2026/11/11/pep-guardiola-pochettino-manchester-united-usmnt-coach-candidate/",
+          "title": "Pep Guardiola expected to be a top USMNT target if Manchester United snares Pochettino - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVxTxqyXprfv03aSJcxjetgodx2f8Oj5ospE4dlaAtGsvL8BNXGSKmkLXMIUM"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25532321-pep-guardiola-reportedly-top-target-usmnt-amid-mauricio-pochettino-manchester-united-rumors",
+          "title": "Pep Guardiola Reportedly 'Top Target' for USMNT amid Mauricio Pochettino, Manchester United Rumors",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSP5u9swP7sgHB77gbyKtTRW7XULafgtN9q43FZHhvexGbS3ZtymDKWuWCv18Y"
+        },
+        {
+          "url": "https://www.cbssports.com/soccer/news/usmnt-coaching-candidates-could-pep-guardiola-potentially-replace-mauricio-pochettino/",
+          "title": "USMNT coaching candidates: Could Pep Guardiola potentially replace Mauricio Pochettino?",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrhguOIH2_xiImPO7RkgV8D-chkEDvwTGKQgyAxgj5q33HO1TC-_0wfnXxrwY"
+        }
+      ]
+    },
+    {
+      "query": "billy gray",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T19:10:00Z",
+      "related_news_urls": [
+        "https://people.com/former-child-star-billy-gray-makes-rare-public-appearance-after-retiring-from-acting-12249030",
+        "https://www.yahoo.com/entertainment/celebrity/articles/father-knows-best-alum-88-190948492.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJeJCGZYoyX7yGtx27LyGX1RO0IexbRljcO_sY1FTfOVZOXKKY5ZAX5WAWXHs",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/former-child-star-billy-gray-makes-rare-public-appearance-after-retiring-from-acting-12249030",
+          "title": "Former Child Star Billy Gray, 88, Makes Rare Public Appearance 46 Years After Retiring from Acting",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJeJCGZYoyX7yGtx27LyGX1RO0IexbRljcO_sY1FTfOVZOXKKY5ZAX5WAWXHs"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/father-knows-best-alum-88-190948492.html",
+          "title": "‘Father Knows Best’ Alum, 88, Looks Unrecognizable in Rare Public Outing",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnWK8U0Dsywi1chGP8v4DhBMmFjRCf6X5Ookd6uXz888t-i-LqbbvQRpLwaeE"
+        }
+      ]
+    },
     {
       "query": "uc davis basketball",
       "approx_searches": "500+",
@@ -15,7 +217,7 @@
         "https://ats.io/matchup/college-basketball/incarnate-word-cardinals-vs-uc-davis-aggies-prediction-11-11-2026/",
         "https://ucdavisaggies.com/news/2026/11/10/mens-basketball-aggies-close-homestand-against-incarnate-word-on-veterans-day.aspx"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UDqjKXIbW7x9dQN8Ss3-Y6v-vrwu1qj2_Q5yqnYAK2950VubtMmtj6A4Mzo",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnTK4eFdPE1SvYEbvFwOHkLfEeQvcYAIDIiLh2O-A13r6dm0UAfdFBTQX-81M",
       "image_credit": "Sportsgambler",
       "news": [
         {
@@ -23,7 +225,7 @@
           "title": "Incarnate Word vs UC Davis Prediction, Picks & Odds | 11 Nov 2026",
           "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UDqjKXIbW7x9dQN8Ss3-Y6v-vrwu1qj2_Q5yqnYAK2950VubtMmtj6A4Mzo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnTK4eFdPE1SvYEbvFwOHkLfEeQvcYAIDIiLh2O-A13r6dm0UAfdFBTQX-81M"
         },
         {
           "url": "https://ats.io/matchup/college-basketball/incarnate-word-cardinals-vs-uc-davis-aggies-prediction-11-11-2026/",
@@ -42,37 +244,37 @@
       ]
     },
     {
-      "query": "pep guardiola",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T19:10:00Z",
+      "query": "joao below deck",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T19:00:00Z",
       "related_news_urls": [
-        "https://www.expressnews.com/sports/article/lyon-recurre-a-vicens-como-tecnico-tras-la-22522880.php",
-        "https://es-us.noticias.yahoo.com/deportes/respaldo-guardiola-t%C3%A9cnico-espa%C3%B1ol-rivaliza-200956552.html",
-        "https://www.beinsports.com/es-us/football/ligue-1/articles/el-entrenador-del-olympique-de-lyon-confirma-su-objetivo-2026-11-10"
+        "https://pagesix.com/2026/11/11/celebrity-news/below-deck-alum-arrested-in-turkey-after-fistfight-leaves-17-year-old-dead-as-video-shows-brutal-brawl/",
+        "https://www.irishstar.com/culture/entertainment/reality-tv-star-arrested-after-37867950",
+        "https://www.tmz.com/2026/11/11/below-deck-alum-arrested-in-turkey-after-minor-he-fist-fought-died/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfTPLaJZjAcygCLiRFIU1e3ni_ZttEWkOEM-PDtNhqC7awrlhZ7rKDKLYe2_U",
-      "image_credit": "San Antonio Express-News",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaz_FnMMg8ImLkknXv_4mpWdUNVrWNPDPIazFILJpUl3i_aXrV3ekHiFpoaow",
+      "image_credit": "Page Six",
       "news": [
         {
-          "url": "https://www.expressnews.com/sports/article/lyon-recurre-a-vicens-como-tecnico-tras-la-22522880.php",
-          "title": "Lyon recurre a Vicens como técnico tras la repentina salida de Fonseca",
-          "publisher": "San Antonio Express-News",
+          "url": "https://pagesix.com/2026/11/11/celebrity-news/below-deck-alum-arrested-in-turkey-after-fistfight-leaves-17-year-old-dead-as-video-shows-brutal-brawl/",
+          "title": "‘Below Deck’ alum arrested in Turkey after fistfight leaves 17-year-old dead as video shows brutal brawl",
+          "publisher": "Page Six",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfTPLaJZjAcygCLiRFIU1e3ni_ZttEWkOEM-PDtNhqC7awrlhZ7rKDKLYe2_U"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaz_FnMMg8ImLkknXv_4mpWdUNVrWNPDPIazFILJpUl3i_aXrV3ekHiFpoaow"
         },
         {
-          "url": "https://es-us.noticias.yahoo.com/deportes/respaldo-guardiola-t%C3%A9cnico-espa%C3%B1ol-rivaliza-200956552.html",
-          "title": "Con el respaldo de Guardiola: un técnico español rivaliza con Enrique en Francia",
-          "publisher": "Yahoo",
+          "url": "https://www.irishstar.com/culture/entertainment/reality-tv-star-arrested-after-37867950",
+          "title": "Reality TV star arrested after fistfight leaves 17-year-old dead",
+          "publisher": "Irish Star",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsq-s_UHBkJlUOO6Z6SG2KzljIEcwvnS6k4XCJlKYHCQeGHoGOHU5EJBJ8Dus"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfkDd5WK31kHRxr3SzvJxVMNK2CpBvq5HaQg-ixzR_ukyZb5_XFpN_eLJo5Co"
         },
         {
-          "url": "https://www.beinsports.com/es-us/football/ligue-1/articles/el-entrenador-del-olympique-de-lyon-confirma-su-objetivo-2026-11-10",
-          "title": "El entrenador del Olympique de Lyon confirma su objetivo",
-          "publisher": "beIN SPORTS",
+          "url": "https://www.tmz.com/2026/11/11/below-deck-alum-arrested-in-turkey-after-minor-he-fist-fought-died/",
+          "title": "'Below Deck' Alum João Franco & Brother Karlos Arrested in Turkey After Deadly Brawl: Report",
+          "publisher": "TMZ",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7hOr-i-7MxknxICbADGVaFXQvHhZ8TFvQ_IrvecZddxbYSA_-vrHjQLxZuf4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLVsrTfDPxXsCaRD-FTSz9a7GLCceVgdOLrRGJDgssNJXPURSdoCQJEQyfQA8"
         }
       ]
     },
@@ -112,41 +314,6 @@
       ]
     },
     {
-      "query": "confession movie",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T18:50:00Z",
-      "related_news_urls": [
-        "https://slate.com/culture/2026/11/confession-movie-2026-daily-wire-ben-shapiro-rob-lowe-james-franco.html",
-        "https://www.hollywoodreporter.com/movies/movie-reviews/confession-review-rob-lowe-james-franco-nick-nolte-1236751013/",
-        "https://www.awardsdaily.com/2026/11/11/confession-is-a-great-leap-forward-for-the-daily-wire/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCVTW8UnpAcJPmDzc23Vb4BtyvcRL4gbgfYpsEkAehilr7uOBrOZ5XOIGf488",
-      "image_credit": "Slate Magazine",
-      "news": [
-        {
-          "url": "https://slate.com/culture/2026/11/confession-movie-2026-daily-wire-ben-shapiro-rob-lowe-james-franco.html",
-          "title": "Ben Shapiro’s Screenwriting Debut Is Here. It’s … a Movie, All Right.",
-          "publisher": "Slate Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCVTW8UnpAcJPmDzc23Vb4BtyvcRL4gbgfYpsEkAehilr7uOBrOZ5XOIGf488"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/movies/movie-reviews/confession-review-rob-lowe-james-franco-nick-nolte-1236751013/",
-          "title": "'Confession' Review: Rob Lowe, James Franco in Ben Shapiro-Penned Film",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuY2yAv6K5zMhFUSA5wM5WHxby9FhrtXubws4fqaP_BHPqMBqshuFU4xZUBiE"
-        },
-        {
-          "url": "https://www.awardsdaily.com/2026/11/11/confession-is-a-great-leap-forward-for-the-daily-wire/",
-          "title": "“Confession” Is A Great Leap Forward for The Daily Wire",
-          "publisher": "Awards Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxkmaAeHYSuTk2QL-_4H3Ld7clqKwBHOUixTV62_G0-ANgMruGMQ7Ny1eNOvY"
-        }
-      ]
-    },
-    {
       "query": "dartmouth basketball",
       "approx_searches": "200+",
       "published_at": "2026-11-11T18:50:00Z",
@@ -178,181 +345,6 @@
           "publisher": "ATS.io",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqcLR5BFm25dUhV-q_zo3S5YF5GlmL6mYjV_gH2VYtttzMEuXBDWib5lfMzCk"
-        }
-      ]
-    },
-    {
-      "query": "ilia topuria",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T18:40:00Z",
-      "related_news_urls": [
-        "https://mmajunkie.usatoday.com/story/sports/ufc/2026/11/09/ufc-ilia-topuria-paddy-pimblett-sausage-body-dominate/92689203007/",
-        "https://www.sherdog.com/news/news/Ilia-Topuria-says-brother-may-have-saved-his-career-in-Justin-Gaethje-loss-203540",
-        "https://www.centraloregondaily.com/sports/ilia-topuria-reveals-targeted-ufc-return-timeline-the-fire-is-bigger/article_74a0b747-acd1-5959-b4e2-27d1719908e0.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7lD_pvbuV1VgKSV4lRXCrH1wnTEGLNG1hfL4ByL2MYKaDjpY6q5KUKCN2RpY",
-      "image_credit": "MMA Junkie",
-      "news": [
-        {
-          "url": "https://mmajunkie.usatoday.com/story/sports/ufc/2026/11/09/ufc-ilia-topuria-paddy-pimblett-sausage-body-dominate/92689203007/",
-          "title": "Ilia Topuria: Paddy Pimblett is 'someone you can dominate,' unlike Justin Gaethje",
-          "publisher": "MMA Junkie",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7lD_pvbuV1VgKSV4lRXCrH1wnTEGLNG1hfL4ByL2MYKaDjpY6q5KUKCN2RpY"
-        },
-        {
-          "url": "https://www.sherdog.com/news/news/Ilia-Topuria-says-brother-may-have-saved-his-career-in-Justin-Gaethje-loss-203540",
-          "title": "Ilia Topuria says brother may have saved his career in Justin Gaethje loss",
-          "publisher": "Sherdog",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT25AkX1G036bpgQ2nJE-fhWPayq6rxKvnONLZFrjdbbxBr1oL5_y9W3ppCipc"
-        },
-        {
-          "url": "https://www.centraloregondaily.com/sports/ilia-topuria-reveals-targeted-ufc-return-timeline-the-fire-is-bigger/article_74a0b747-acd1-5959-b4e2-27d1719908e0.html",
-          "title": "Ilia Topuria reveals targeted UFC return timeline: 'The fire is bigger'",
-          "publisher": "Central Oregon Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRMu8x3-8X1SVOfzPcTvCTxSmCGJD8iyi5Q0-M2Ime8hODikWjowlC7WN2X78"
-        }
-      ]
-    },
-    {
-      "query": "lauri markkanen",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T18:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50454130/sources-jazz-star-lauri-markkanen-least-1-month",
-        "https://www.hoopsrumors.com/2026/11/lauri-markkanen-to-miss-at-least-four-weeks-with-hand-fractures.html",
-        "https://bleacherreport.com/articles/25532308-lauri-markkanen-injured-latest-news-jazz-stars-timeline-return-after-hand-fracture"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLVTyI5BMmpnFGGFXkvO_rYFB9sGszQT6r_AxlTqvZ15Q8AgTzDwUmtWRz5fE",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50454130/sources-jazz-star-lauri-markkanen-least-1-month",
-          "title": "Sources: Jazz star Lauri Markkanen out at least 1 month with fractured hand",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLVTyI5BMmpnFGGFXkvO_rYFB9sGszQT6r_AxlTqvZ15Q8AgTzDwUmtWRz5fE"
-        },
-        {
-          "url": "https://www.hoopsrumors.com/2026/11/lauri-markkanen-to-miss-at-least-four-weeks-with-hand-fractures.html",
-          "title": "Lauri Markkanen To Miss At Least Four Weeks With Hand Fractures",
-          "publisher": "Hoops Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVkTkiJCnnxGNNryBKwCNtSm8B6I3WM-49LaVj75hTCq0Tk__cc3IMntulBGU"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25532308-lauri-markkanen-injured-latest-news-jazz-stars-timeline-return-after-hand-fracture",
-          "title": "Lauri Markkanen Injured, Latest News on Jazz Star's Timeline to Return After Hand Fracture",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmhlogJUraTB33rH2oKNqDDuhvHnaZZLPjPyjgLhg-Y1ctF1IH_15SkT8BvJA"
-        }
-      ]
-    },
-    {
-      "query": "nfl football trade deadline",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-11T18:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50442934/week-10-buzz-fantasy-predictions-graziano-fowler-2026-trades",
-        "https://sports.yahoo.com/nfl/article/the-top-5-biggest-impact-deadline-trades-including-jaguars-and-bears-shooting-for-a-super-bowl-222036590.html",
-        "https://www.nytimes.com/athletic/7771590/2026/11/11/nfl-trade-deadline-2026-winners-losers/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQn24Ypisn0SlKQSL52jiwW3LAyUPeMVNnANYSNuxz3Mm1q0oRLNt27AlqV65E",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50442934/week-10-buzz-fantasy-predictions-graziano-fowler-2026-trades",
-          "title": "NFL Week 10 latest intel, buzz questions, fantasy tips, post-trade deadline news",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQn24Ypisn0SlKQSL52jiwW3LAyUPeMVNnANYSNuxz3Mm1q0oRLNt27AlqV65E"
-        },
-        {
-          "url": "https://sports.yahoo.com/nfl/article/the-top-5-biggest-impact-deadline-trades-including-jaguars-and-bears-shooting-for-a-super-bowl-222036590.html",
-          "title": "The top 5 biggest impact deadline trades, including Jaguars and Bears shooting for a Super Bowl",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzJiYk1hszIEw94M6sFZhqZhzFc6f_NQTTq12Gl4cshRwjMfojJRnbmK23zjk"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7771590/2026/11/11/nfl-trade-deadline-2026-winners-losers/",
-          "title": "NFL trade deadline winners, losers: Vikings find QB, Jags go all-in, Jonathan Taylor stranded - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXU1WbBNBxC9vBxT-vGdbRwhihw3EbAAFY7DfL6cWaRQJtfeNB4wijaUj-Bow"
-        }
-      ]
-    },
-    {
-      "query": "los angeles lakers bronny james",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T18:00:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/outkick-sports/lebron-james-gone-bronny-still-cant-play-lakers-need-finally-cut-him-loose",
-        "https://basketnews.com/news-258829-former-no-1-nba-draft-pick-blasts-bronny-james-over-lakers-roster-spot.html",
-        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/05/tell-me-this-is-a-joke-lebron-come-on-dog-bronnie/92622388007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsG_lGeqpBGk_PeCQxbM5W1NAcsw6Gm8rStySrLRc2_Jq_HzhxBxkg1DZda2Q",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/outkick-sports/lebron-james-gone-bronny-still-cant-play-lakers-need-finally-cut-him-loose",
-          "title": "LeBron James is gone, Bronny still can't play, and the Lakers need to finally cut him loose",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsG_lGeqpBGk_PeCQxbM5W1NAcsw6Gm8rStySrLRc2_Jq_HzhxBxkg1DZda2Q"
-        },
-        {
-          "url": "https://basketnews.com/news-258829-former-no-1-nba-draft-pick-blasts-bronny-james-over-lakers-roster-spot.html",
-          "title": "Former No. 1 NBA Draft pick blasts Bronny James over Lakers roster spot",
-          "publisher": "BasketNews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT06AVSv59uNR99Cs9j6JNKF4zCE6veEssMcVzgDteYFpgmRIOoAsJ1Wk_YnGA"
-        },
-        {
-          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/05/tell-me-this-is-a-joke-lebron-come-on-dog-bronnie/92622388007/",
-          "title": "“Tell me this is a joke…LeBron, come on, dog. Bronnie …",
-          "publisher": "HoopsHype",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReueYqWEglPeodwW5PecAh73eYaVB0z41dPsTcsqNE_61n3uz7DtzR65-iY60"
-        }
-      ]
-    },
-    {
-      "query": "landfill",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T17:40:00Z",
-      "related_news_urls": [
-        "https://www.ksat.com/news/local/2026/11/11/free-landfill-day-in-san-antonio-this-weekend-what-you-can-bring/",
-        "https://www.propublica.org/article/bill-gates-republic-landfill-methane-pollution",
-        "https://www.newser.com/story/399741/bill-gates-landfill-investments-clash-with-his-climate-crusade.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRnya-kCbjTRw5odqSyhwZQ_8hHvx-mCRxHjtIyzJHE7Hpox0jQy3DJ3b_4vI",
-      "image_credit": "KSAT",
-      "news": [
-        {
-          "url": "https://www.ksat.com/news/local/2026/11/11/free-landfill-day-in-san-antonio-this-weekend-what-you-can-bring/",
-          "title": "Free landfill day in San Antonio this weekend: What you can bring",
-          "publisher": "KSAT",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRnya-kCbjTRw5odqSyhwZQ_8hHvx-mCRxHjtIyzJHE7Hpox0jQy3DJ3b_4vI"
-        },
-        {
-          "url": "https://www.propublica.org/article/bill-gates-republic-landfill-methane-pollution",
-          "title": "Bill Gates Wants to Stop Global Warming. He’s Earned Billions From Climate-Polluting Landfills.",
-          "publisher": "ProPublica",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSkk_3u8vv_EWZI26ziSccidragq2WSRcDx61hFjPxG376_5AFffkiz9E8BXlc"
-        },
-        {
-          "url": "https://www.newser.com/story/399741/bill-gates-landfill-investments-clash-with-his-climate-crusade.html",
-          "title": "Bill Gates' Landfill Investments Clash With His Climate Crusade",
-          "publisher": "Newser",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQN7lmsRJVqvsnQD9A3XdlAbcXdHgQUX6q1SnKHABA1NLSWPQm4L_SI0j-vcs4"
         }
       ]
     }
