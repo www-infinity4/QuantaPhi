@@ -134,3 +134,10 @@ test('review regression: unpunctuated independent clause retains explicitly requ
  assert.ok(recommended.some(x=>x.id==='github.read_repository'));
  assert.ok(recommended.some(x=>x.id==='robot_brain.owner_work'));
 });
+
+test('live-regression: one labeled JSON code fence remains a valid draft after a short introduction',()=>{
+ const example='Here is a minimal JSON manifest:\n\n```json\n{"name":"test-ground-ai","version":"0.1.0","repository":"www-infinity4/QuantaPhi","capabilities":["read"]}\n```';
+ assert.equal(auditReply(probe('json'),{ok:true,output:example,receipt:receipt()}).state,'passed');
+ const twoBlocks=example+'\n```json\n{"name":"other","version":"1","repository":"repo","capabilities":[]}\n```';
+ assert.notEqual(auditReply(probe('json'),{ok:true,output:twoBlocks,receipt:receipt()}).state,'passed');
+});
