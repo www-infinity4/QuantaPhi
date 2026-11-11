@@ -112,7 +112,7 @@ function mountedGate(t,payload,{startFails=false,walletMissing=false,oauthReturn
  t.after(()=>{globalThis.fetch=original;});
  return {controller:mountBubblesSigninGate({root,host,prefix:chat?'chat':''}),get:root.getElementById,calls,popups};
 }
-const partialGate=()=>({ready:false,providers:{
+const partialGate=()=>({ok:true,walletVerified:true,ready:false,providers:{
  github:{configured:true,connected:true,permissionsApproved:true},
  cloudflare:{configured:true,connected:false,permissionsApproved:false,scopeSetupRequired:true,
   authorizationActions:['account.read','projects.build','ledger.read']}
