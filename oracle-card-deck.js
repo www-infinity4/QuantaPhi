@@ -332,7 +332,7 @@ function eligible(){
  });
  return cards;
 }
-function liveCatalog(){return eligible().map(e=>({id:e.feedId,name:e.title,category:e.category,
+function liveCatalog(){return eligible().filter(e=>selectedTab!=='for-you'||!nonProfiling(e)).map(e=>({id:e.feedId,name:e.title,category:e.category,
  feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
 function updateTabs(){
  updateInventory();
