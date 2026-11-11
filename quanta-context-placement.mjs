@@ -24,7 +24,7 @@ export function departmentFor(card={}){
  const text=[id,cat,safeText(card.name||card.title)].join(' ').toLowerCase();
  if(/21\+|\b(dispensary|cannabis|adult store)\b|^adult-|^dispensary-|brucebannerweedmaps|infinityadultcontentcard|adult-content-preferences/.test(text))return 'adult';
  if(/\b(health|medical|screening|clinic|pharmacy|mychart)\b/.test(cat))return 'healthcare';
- if(/\b(sport|nfl|nba|mlb|nhl|football|baseball|basketball|hockey|soccer|team|olympic)\b/.test(cat)||/\b(nfl|nba|mlb|sports?|scores?|packers|lions|world.series)\b|googletrend(nba|mlb)|world-series/.test(id))return 'sports';
+ if(/\b(sports?|nfl|nba|mlb|nhl|football|baseball|basketball|hockey|soccer|team|olympic)\b/.test(cat)||/\b(nfl|nba|mlb|sports?|scores?|packers|lions|world.series)\b|googletrend(nba|mlb)|world-series/.test(id))return 'sports';
  if(/\b(news|journalis|civic|government|public.servic|politic)\b/.test(cat)||/\b(news|headline|breaking)\b/.test(id))return 'news';
  if(/\b(restaur|food|grocer|recipe|dining|pizza|produce|burger|coffee|cook)\b/.test(cat))return 'restaurants';
  if(/\b(develop|code|programming|builder|software|ai tools|computing)\b/.test(cat)||/\b(phiProjectActions|developer|termux|code.phi|bubbles.aicard)\b/i.test(id))return 'developers';
