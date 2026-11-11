@@ -17,6 +17,7 @@ const validHistory=d=>d&&d.version===1&&Array.isArray(d.threads)&&d.threads.leng
  t.sessions.every(s=>Array.isArray(s.items)&&s.items.length<=40));
 const read=()=>{try{const v=JSON.parse(localStorage.getItem(STORE)||'null');return validHistory(v)?v:newHistory()}catch{return newHistory()}};
 let history=read(),selected=history.threads[0]?.id||null,focusedSessionId=null;
+let projectTitleDraft=''; // preserves an unfinished project name across local tracker redraws
 const arena=document.getElementById('arena');
 if(arena){
  const root=el('section','zeus-history');root.id='zeusSessionHistory';root.setAttribute('aria-labelledby','zeusHistoryTitle');
@@ -73,11 +74,20 @@ if(arena){
   side.replaceChildren(el('h3','','Project threads'));
   const form=el('form','zeus-history-new');
   const title=field('New project or topic title');title.required=true;title.minLength=3;title.maxLength=90;
+  title.value=projectTitleDraft;
+  title.addEventListener('input',()=>{projectTitleDraft=title.value});
   const add=el('button','primary','Create project thread');add.type='submit';form.append(title,add);
-  const createProjectThread=()=>mutate(()=>{
-   const t=createThread(history,title.value);
-   selected=t.id;focusedSessionId=null;
-  },'Created a private project thread');
+  const createProjectThread=()=>{
+   // A different history action may redraw the form after the visitor typed.
+   // Use the last edited draft rather than submitting a newly blank field.
+   const requested=title.value.trim()?title.value:projectTitleDraft;
+   const created=mutate(()=>{
+    const thread=createThread(history,requested);
+    selected=thread.id;focusedSessionId=null;return thread;
+   },'Created a private project thread');
+   // Clear only after the local write succeeds; a failed save keeps the draft.
+   if(created){projectTitleDraft='';const next=side.querySelector('.zeus-history-new input');if(next)next.value='';}
+  };
   // Prevent any browser-native navigation from a tap or Enter even if a form
   // submit listener is delayed or another script's handler intervenes.
   add.addEventListener('click',e=>{e.preventDefault();createProjectThread()});

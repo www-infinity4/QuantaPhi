@@ -90,3 +90,18 @@ test('yellow extraction exactly routes to blue pending import without inventing 
  await page.reload({waitUntil:'domcontentloaded'});
  await expect(first(page,'.zeus-status')).toContainText('Import or AI answer needed');
 });
+
+test('unsent local project title survives a tracker redraw and creates exactly one new thread',async({page})=>{
+ await page.goto(base+'/coliseum/',{waitUntil:'domcontentloaded'});
+ const selector='input[aria-label="New project or topic title"]';
+ await first(page,selector).fill('Initial science project');
+ await page.getByRole('button',{name:'Create project thread'}).click();
+ await expect(first(page,'.zeus-current-head')).toContainText('Initial science project');
+ await first(page,selector).fill('Source extraction with exact whitespace');
+ await first(page,'.zeus-history-threads .zeus-thread').last().click(); // forces renderSide()
+ await expect(first(page,selector)).toHaveValue('Source extraction with exact whitespace');
+ await page.getByRole('button',{name:'Create project thread'}).click();
+ await expect(first(page,'.zeus-current-head')).toContainText('Source extraction with exact whitespace');
+ await expect(first(page,'.zeus-history-threads .zeus-thread')).toHaveCount(2);
+ await expect(first(page,selector)).toHaveValue('');
+});
