@@ -133,3 +133,40 @@ test('Start Quest opens the connected Zeus chat and focuses the composer without
  }));
  expect(after).toEqual(before);
 });
+
+test('reloaded iframe requires fresh Bubbles readiness before accepting a new quest',async({page})=>{
+ let frameLoads=0;
+ await page.route('**/bubbles.html?**',async route=>{
+  frameLoads++;
+  const initial=frameLoads===1;
+  const body=`<!doctype html><html><body>
+   <script>
+   const first=${initial};
+   window.addEventListener('message',event=>{
+    if(event.source!==parent||event.origin!==location.origin)return;
+    const d=event.data;
+    if(d?.type==='quantaphi:bubbles:open'&&first)
+     parent.postMessage({type:'quantaphi:bubbles:ready',id:'coliseum-zeus-assistant'},location.origin);
+    if(d?.type!=='quantaphi:bubbles:quest')return;
+    document.body.dataset.received=d.prompt;
+    parent.postMessage({type:'quantaphi:bubbles:quest-ack',id:d.id,requestId:d.requestId,status:'accepted'},location.origin);
+    parent.postMessage({type:'quantaphi:bubbles:quest-result',id:d.id,requestId:d.requestId,status:'complete',reply:'New frame reply'},location.origin);
+   });
+   if(first)parent.postMessage({type:'quantaphi:bubbles:ready',id:'coliseum-zeus-assistant'},location.origin);
+   </script></body></html>`;
+  await route.fulfill({status:200,contentType:'text/html',body});
+ });
+ await page.goto(base+'/coliseum/',{waitUntil:'domcontentloaded'});
+ await expect(page.locator('#zeusAssistantStatus')).toContainText('initialized');
+ await page.locator('#zeusAssistantFrame').evaluate(frame=>{frame.src='/bubbles.html?embed=1&reload=2'});
+ await expect.poll(()=>frameLoads).toBe(2);
+ await expect(page.locator('#zeusAssistantStatus')).toContainText('Waiting for the verified Bubbles conversation');
+ await page.locator('#zeusQuestInput').fill('A message after child navigation');
+ await page.locator('#zeusQuestSend').click();
+ expect(await page.frameLocator('#zeusAssistantFrame').locator('body').getAttribute('data-received')).toBeNull();
+ await page.frameLocator('#zeusAssistantFrame').locator('body').evaluate(()=>{
+  parent.postMessage({type:'quantaphi:bubbles:ready',id:'coliseum-zeus-assistant'},location.origin);
+ });
+ await expect(page.locator('#zeusQuestReply')).toHaveText('New frame reply');
+ await expect(page.locator('#zeusQuestInput')).toHaveValue('');
+});
