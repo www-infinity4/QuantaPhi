@@ -11,6 +11,7 @@ on:
       - 'test/zeus-quest-browser.spec.mjs'
       - 'playwright.zeus-quest.config.mjs'
       - 'bubbles-ai.js'
+      - 'bubbles.html'
       - 'test/zeus-session-history-browser.spec.mjs'
       - 'playwright.zeus-session-history.config.mjs'
       - 'oracle-card-deck.js'
