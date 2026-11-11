@@ -21,7 +21,7 @@ const priority=['infinity-nuances','conversation-memory','autonomous-building','
 export function suggestNuances(response){
  if(!response||!['work-audit-reconcile','work-audit-sweep'].includes(response.mode)||!Array.isArray(response.candidates))return [];
  const reconciled=response.mode==='work-audit-reconcile'&&response.ticketInventoryTruncated===false;
- return response.candidates.filter(c=>c&&TOPIC.test(c.id||'')&&c.status==='candidate_needs_repository_inspection')
+ return response.candidates.filter(c=>c&&TOPIC.test(c.id||''))
   .map(c=>{
    const ids=[...new Set((Array.isArray(c.evidence)?c.evidence:[])
     .map(e=>e?.messageId).filter(id=>ID.test(id||'')))].slice(0,8);
@@ -29,7 +29,7 @@ export function suggestNuances(response){
      .map(x=>x.slice(0,220)).slice(0,5);
    const linked=Array.isArray(c.linkedTickets)?c.linkedTickets.length:0;
    const repo=String(c.repositorySuggestion||'');
-   const canDraft=reconciled&&c.repositoryVerified===false&&REPO.test(repo)
+   const canDraft=reconciled&&c.status==='candidate_needs_repository_inspection'&&c.repositoryVerified===false&&REPO.test(repo)
      &&Array.isArray(c.linkedTickets)&&!linked&&ids.length>0;
    return {id:c.id,title:String(c.title||c.id).slice(0,100),repository:repo,
     repositoryVerified:false,verified:false,mentions:Math.max(0,Number(c.mentions)||0),
