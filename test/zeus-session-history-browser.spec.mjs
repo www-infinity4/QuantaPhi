@@ -55,6 +55,10 @@ test('yellow extraction exactly routes to blue pending import without inventing 
  await page.goto(base+'/coliseum/',{waitUntil:'domcontentloaded'});
  await first(page,'input[aria-label="New project or topic title"]').fill('Source extraction');
  await page.getByRole('button',{name:'Create project thread'}).click();
+ // Assert the observed active session before touching its classification form;
+ // a delayed/failed thread creation must not look like a random select timeout.
+ await expect(first(page,'.zeus-current-head')).toContainText('Source extraction');
+ await expect(first(page,'select[aria-label="Work classification"]')).toBeVisible();
  await first(page,'select[aria-label="Work classification"]').selectOption('extraction');
  const raw='  Verbatim original wording.\nLine two has extra spacing.  ';
  await first(page,'textarea[aria-label="Write a task or paste the exact extract"]').fill(raw);
