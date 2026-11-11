@@ -256,8 +256,16 @@ function mountDetail(){
  if(card.id==='avatar-ai')mountAvatarAiCard(host);
  askAiTools(host,card);
  const actions=el('div','iqc-actions');if(card.id==='starmaker'){const studio=link('Search songs + record your voice in QuantaPhi ↗','/studio/','iqc-primary');studio.target='_self';actions.append(studio);const mini=link('Try portable interactive card ↗','/starmaker-embed.html','iqc-primary');mini.target='_self';actions.append(mini)}actions.append(link(card.id==='avatar-ai'?'Open ChatGPT · prompt destination':'Visit original '+card.name+' ↗',card.official));if(card.secondUrl)actions.append(link(card.secondLabel||'Another official service ↗',card.secondUrl));host.append(actions);
- const about=el('section','iqc-feature');about.append(el('h3','','Ask '+card.name+' Bubbles'),el('p','','An independent Bubbles specialist opens at the bottom right. Your existing account connection remains subject to its normal sign-in and consent checks.'),el('p','iqc-muted','No messages, social account feeds, location, recordings or contact information are transferred to the third-party provider by this preview. Any future submission must show its destination, file and consent before sending.'));host.append(about);
- installBubble(card);
+ const about=el('section','iqc-feature');
+ if(card.id==='avatar-ai'){
+  about.append(el('h3','','Start your partial Avatar AI in ChatGPT'),
+   el('p','','This QuantaPhi card supplies a reusable prompt, not an AI login or automatic conversation reader. ChatGPT works with whatever personal context, files and connected sources your own ChatGPT account can actually access.'),
+   el('p','iqc-muted','Copy the prompt, open ChatGPT, paste and send. Review any proposed changes there. Ongoing scans and agent-to-agent background updates are future integrations, not enabled by this card.'));
+ }else{
+  about.append(el('h3','','Ask '+card.name+' Bubbles'),el('p','','An independent Bubbles specialist opens at the bottom right. Your existing account connection remains subject to its normal sign-in and consent checks.'),el('p','iqc-muted','No messages, social account feeds, location, recordings or contact information are transferred to the third-party provider by this preview. Any future submission must show its destination, file and consent before sending.'));
+  installBubble(card);
+ }
+ host.append(about);
 }
 if(typeof document!=='undefined'){
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{mountShelf();mountDetail()},{once:true});
