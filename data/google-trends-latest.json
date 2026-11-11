@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T23:01:29.015871Z",
+  "checked_at": "2026-11-11T23:31:17.766101Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "snow",
+      "query": "cavaliers vs knicks",
       "approx_searches": "10000+",
-      "published_at": "2026-11-11T22:40:00Z",
+      "published_at": "2026-11-11T23:10:00Z",
       "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/09/metro/noreaster-snow-boston-new-england/",
-        "https://www.yahoo.com/news/weather-news/articles/coastal-storm-way-chilly-rain-202603494.html",
-        "https://www.cnn.com/2026/11/10/weather/winter-storm-eastern-us-cold-snap-climate"
+        "https://sports.yahoo.com/articles/watch-cavaliers-vs-knicks-nba-230000591.html",
+        "https://bleacherreport.com/liveblogs/25532364-cleveland-cavaliers-vs-new-york-knicks-live-nba-updates-scores-and-highlights",
+        "https://www.espn.com/nba/recap/_/gameId/401909940"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQf81ug1LEu36dnPjiaAXKGNuUUAfhEubk3JN_iDxvOsXGHizgxd1lYypYClg",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/09/metro/noreaster-snow-boston-new-england/",
-          "title": "Nor’easter forecast: Here’s when and where the snow and rain are expected in New England",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQf81ug1LEu36dnPjiaAXKGNuUUAfhEubk3JN_iDxvOsXGHizgxd1lYypYClg"
-        },
-        {
-          "url": "https://www.yahoo.com/news/weather-news/articles/coastal-storm-way-chilly-rain-202603494.html",
-          "title": "Coastal storm on the way with chilly rain, gusty winds, colder temps in N.J.",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrXHNIL9Y-Q_D_yBaxQjPeFVffxDkae6h_uG4pN_OkhjnnHjlP4K3fKcg41kE"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/10/weather/winter-storm-eastern-us-cold-snap-climate",
-          "title": "First snow, coldest air in months headed for eastern US in wake of storm",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqC6EOp1YiPHPORrWNUfiYh9gQeROWIhiduA-uukJZela4psUWma8JQazT7GU"
-        }
-      ]
-    },
-    {
-      "query": "aryna sabalenka",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T22:40:00Z",
-      "related_news_urls": [
-        "https://www.wtatennis.com/news/4607397/fage-wta-finals-day-4-preview-how-aryna-sabalenka-and-mirra-andreeva-can-advance",
-        "https://sports.yahoo.com/articles/aryna-sabalenka-speaks-beating-karolina-090000310.html",
-        "https://www.espn.com/tennis/story/_/id/50437046/aryna-sabalenka-mirra-andreeva-win-wta-finals"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-acwUPTJNctj-RcTsWgwbFbbmRcQSz0mWrRyR3EEjcVhqLR1vEpfzQy9Y_7g",
-      "image_credit": "WTA Tennis",
-      "news": [
-        {
-          "url": "https://www.wtatennis.com/news/4607397/fage-wta-finals-day-4-preview-how-aryna-sabalenka-and-mirra-andreeva-can-advance",
-          "title": "FAGE WTA Finals Day 4 preview: How Sabalenka and Andreeva can advance",
-          "publisher": "WTA Tennis",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-acwUPTJNctj-RcTsWgwbFbbmRcQSz0mWrRyR3EEjcVhqLR1vEpfzQy9Y_7g"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/aryna-sabalenka-speaks-beating-karolina-090000310.html",
-          "title": "Aryna Sabalenka speaks after beating Karolina Muchova in her first match at the WTA Finals",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcf5iP64Ff4u9ZBDzje_jq33msXpbNcZRmTHPPCJvNw5lybwmuZt14CxDvPBI"
-        },
-        {
-          "url": "https://www.espn.com/tennis/story/_/id/50437046/aryna-sabalenka-mirra-andreeva-win-wta-finals",
-          "title": "Aryna Sabalenka picks up first win at WTA Finals, faces Mirra Andreeva next",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDQbvcES79Qh9pbHQ0QCWn_s6T-tQZw1KbnqBs38Szp4kFG0IvixBXCacjQW4"
-        }
-      ]
-    },
-    {
-      "query": "kaylee hottle",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T22:40:00Z",
-      "related_news_urls": [
-        "https://www.tmz.com/2026/11/11/kaylee-hottle-being-replaced-by-sister-in-upcoming-film/",
-        "https://www.nine.com.au/entertainment/celebrity/kaylee-hottle-death-final-movie-role-sister-taking-over-filmih-update-20261112-p61dh4.html",
-        "https://people.com/godzilla-actress-kaylee-hottle-s-sister-will-step-in-for-her-in-unfinished-final-movie-after-her-death-12249266"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoH8lKQGVRbi3Qvea1EnFzmvboRl-N5WImE8amWbTgNHATg7kjUvTefVMEEyY",
-      "image_credit": "TMZ",
-      "news": [
-        {
-          "url": "https://www.tmz.com/2026/11/11/kaylee-hottle-being-replaced-by-sister-in-upcoming-film/",
-          "title": "Late 'Godzilla' Actor Kaylee Hottle Replaced by Deaf Sister in Upcoming Film",
-          "publisher": "TMZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoH8lKQGVRbi3Qvea1EnFzmvboRl-N5WImE8amWbTgNHATg7kjUvTefVMEEyY"
-        },
-        {
-          "url": "https://www.nine.com.au/entertainment/celebrity/kaylee-hottle-death-final-movie-role-sister-taking-over-filmih-update-20261112-p61dh4.html",
-          "title": "Child star Kaylee Hottle’s sister to finish filming her final movie role, after her death at age 18",
-          "publisher": "Nine.com.au",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9SM1IYQrNN5QpH_d2sla7ygFeemT0VIvpa9Qn9RKlnlzs1gr8XUyBLUimuOo"
-        },
-        {
-          "url": "https://people.com/godzilla-actress-kaylee-hottle-s-sister-will-step-in-for-her-in-unfinished-final-movie-after-her-death-12249266",
-          "title": "‘Godzilla’ Actress Kaylee Hottle’s Sister Will Step in for Her in Unfinished Final Movie After Her Death at 18",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBsl5A9_LSx-8fWYhH56dbm_4I0HCgJ6ld7CeGEaBThqJeek95kVCJ729s-GA"
-        }
-      ]
-    },
-    {
-      "query": "navy basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T22:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/penn-vs-navy-prediction-pick-113007904.html",
-        "https://navysports.com/news/2026/11/10/mens-basketball-13th-annual-veterans-classic-to-be-played-wednesday.aspx?path=me",
-        "https://apnews.com/article/mens-college-basketball-pennsylvania-navy-midshipmen-college-basketball-college-sports-25d547eb92ec4d21b3ef456d42e5db38"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUavk-iVpVbCDQKr_YPn2Bm2n3o1eE3VAsNtSmiU1_M_yACrojS0Rbn5-TbOw",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQocdReh2zruuzDAyuqTSq4EhUO3MZHIzNuzQCpyMOX4cyiHz0-2Fo1eYjEu6k",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/penn-vs-navy-prediction-pick-113007904.html",
-          "title": "Penn vs Navy Prediction, Pick, College Basketball Odds for Wednesday, Nov. 11",
+          "url": "https://sports.yahoo.com/articles/watch-cavaliers-vs-knicks-nba-230000591.html",
+          "title": "How to watch Cavaliers vs Knicks: NBA, live stream, TV channel, start time",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUavk-iVpVbCDQKr_YPn2Bm2n3o1eE3VAsNtSmiU1_M_yACrojS0Rbn5-TbOw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQocdReh2zruuzDAyuqTSq4EhUO3MZHIzNuzQCpyMOX4cyiHz0-2Fo1eYjEu6k"
         },
         {
-          "url": "https://navysports.com/news/2026/11/10/mens-basketball-13th-annual-veterans-classic-to-be-played-wednesday.aspx?path=me",
-          "title": "13th Annual Veterans Classic to be Played Wednesday",
-          "publisher": "Naval Academy Athletics",
+          "url": "https://bleacherreport.com/liveblogs/25532364-cleveland-cavaliers-vs-new-york-knicks-live-nba-updates-scores-and-highlights",
+          "title": "Cleveland Cavaliers vs. New York Knicks Live NBA Updates, Scores and Highlights",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRE9M4U53RjAsxiQEaHSkql9alWIk0QWU3ZNbPlMY3Lyc-fU7u9KrF5gwDN2u8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDwrkTzMYSMhjv04zoqzZR6ETNFu5LEni7pEJ9TqAMGbmCjT29uiwQVAm1bu0"
         },
         {
-          "url": "https://apnews.com/article/mens-college-basketball-pennsylvania-navy-midshipmen-college-basketball-college-sports-25d547eb92ec4d21b3ef456d42e5db38",
-          "title": "Power leads Pennsylvania against Navy after 23-point game",
-          "publisher": "AP News",
+          "url": "https://www.espn.com/nba/recap/_/gameId/401909940",
+          "title": "Knicks 109-97 Cavaliers (Nov 7, 2026) Game Recap",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyxytuQ4aGf2BOxfux9vnLUnsxmXV6_4vU1gfZLf7dr_vdaPit7PYKHCUsALk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4fZ_pc-ef4onVBk9kT7T6V9wRlvwf8eeGLPEklM3jCeWSnLuvddXDAPKAkMw"
         }
       ]
     },
     {
-      "query": "buffalo vs ball state prediction",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T22:40:00Z",
+      "query": "lightning vs sabres",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T23:10:00Z",
       "related_news_urls": [
-        "https://sportsbook.fanduel.com/football/ncaa-football-games/buffalo-@-ball-state-36280934",
-        "https://www.cbssports.com/betting/news/buffalo-ball-state-prediction-odds-time-2026-college-football-week-11-wednesday-maction-picks-best-bets/",
-        "https://www.espn.com/watch/player/_/eventCalendarId/401866461"
+        "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-11-2026",
+        "https://www.audacy.com/wgr550/sports/sabres/let-the-games-begin",
+        "https://www.foxnews.com/outkick/tampa-bay-lightning-visit-buffalo-sabres-goalies-struggling-stop-pucks-season"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtz--XBN2v1-Y-_DMMhCr9mR46QuLi9Tt-ogBS2FhK0NPl-Hta0ILQD09tyQY",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOTARCWo_J2RTi3h_6yA4_nrcrlf5vui2R2U1vh-c6ZfiNUozvy338tcBhUwo",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-11-2026",
+          "title": "NHL On Tap: Lightning, Sabres kick off Veterans Appreciation Night doubleheader on TNT",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOTARCWo_J2RTi3h_6yA4_nrcrlf5vui2R2U1vh-c6ZfiNUozvy338tcBhUwo"
+        },
+        {
+          "url": "https://www.audacy.com/wgr550/sports/sabres/let-the-games-begin",
+          "title": "Let the games begin",
+          "publisher": "Audacy",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdcnWiZWAOMByZnvjZiHSoCFDZp8AT6suNE9kVkat_uryS2I_nWGm0-vpfGps"
+        },
+        {
+          "url": "https://www.foxnews.com/outkick/tampa-bay-lightning-visit-buffalo-sabres-goalies-struggling-stop-pucks-season",
+          "title": "Tampa Bay Lightning visit Buffalo Sabres with both goalies struggling to stop pucks this season",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUhSNqmqdFyKQZoPI83waiqvau_FXMT4fk3UND0bsDaprPX7J1Bjncn5ys9gA"
+        }
+      ]
+    },
+    {
+      "query": "phil mickelson",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T23:10:00Z",
+      "related_news_urls": [
+        "https://www.golfchannel.com/ncaa/news/most-high-profile-class-ever-florida-state-officially-signs-miles-russell-charlie-woods",
+        "https://www.eonline.com/news/1437908/tiger-woods-elin-nordegren-reunite-for-son-charlies-college-golf-signing",
+        "https://people.com/all-about-tiger-woods-kids-12244587"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbz_98jQqSV4TMDGD6a6lmc_E2PH3G3UpfLM_FV6unFI3z_mVPmLk26t2sWQ4",
+      "image_credit": "Golf Channel",
+      "news": [
+        {
+          "url": "https://www.golfchannel.com/ncaa/news/most-high-profile-class-ever-florida-state-officially-signs-miles-russell-charlie-woods",
+          "title": "Most high-profile class ever? Florida State officially signs Miles Russell, Charlie Woods",
+          "publisher": "Golf Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbz_98jQqSV4TMDGD6a6lmc_E2PH3G3UpfLM_FV6unFI3z_mVPmLk26t2sWQ4"
+        },
+        {
+          "url": "https://www.eonline.com/news/1437908/tiger-woods-elin-nordegren-reunite-for-son-charlies-college-golf-signing",
+          "title": "Tiger Woods and Ex Elin Nordegren Reunite to Support Son Charlie as He Tees Up College Golf Career",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4Tz3-Z9EEvrL9bCE1DMebK-URlw8ViA93PKfnMCVae_ObL9d6avoHcyyFVwI"
+        },
+        {
+          "url": "https://people.com/all-about-tiger-woods-kids-12244587",
+          "title": "Everything to Know About Tiger Woods’ 2 Kids, Daughter Sam and Son Charlie",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNBrkbUHIhSqRG0wHjd2UhHfz01KC4ZRJcSTDVfSx7V9UHVMCqOR6G0WNKSrQ"
+        }
+      ]
+    },
+    {
+      "query": "chicago fire over the edge",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T23:10:00Z",
+      "related_news_urls": [
+        "https://seat42f.com/chicago-fire-season-15-episode-6-photos/",
+        "https://film-book.com/chicago-fire-season-15-episode-6-over-the-edge-tv-show-trailer/",
+        "https://fangirlish.com/2026/11/09/chicago-fire-season-15-episode-6-preview-over-the-edge/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQecBeCFrGY-04qemwcqoQOMCW1ExO8G9T6wON_iOW3Nfi3rga8Tu_vP0uS5Kk",
+      "image_credit": "Seat42F",
+      "news": [
+        {
+          "url": "https://seat42f.com/chicago-fire-season-15-episode-6-photos/",
+          "title": "Chicago Fire Season 15 Episode 6 Photos: “Over the Edge” Airs Tonight on NBC",
+          "publisher": "Seat42F",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQecBeCFrGY-04qemwcqoQOMCW1ExO8G9T6wON_iOW3Nfi3rga8Tu_vP0uS5Kk"
+        },
+        {
+          "url": "https://film-book.com/chicago-fire-season-15-episode-6-over-the-edge-tv-show-trailer/",
+          "title": "Chicago Fire: Season 15, Episode 6: Over the Edge TV Show Trailer",
+          "publisher": "Film-Book.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7d0zlbFU35-YKFWGGHH-RUqaf-4usSGSAJkowXGMncwIn4lA4pB_WlHOxGT8"
+        },
+        {
+          "url": "https://fangirlish.com/2026/11/09/chicago-fire-season-15-episode-6-preview-over-the-edge/",
+          "title": "Chicago Fire Season 15, Episode 6 Preview: ‘Over the Edge’",
+          "publisher": "Fangirlish",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhfKjNneWJYu5c4Lpu9V2ODzXzclcCv9lwkglXqd74lVkQ3c9TnSTB4aFEzbo"
+        }
+      ]
+    },
+    {
+      "query": "celtics vs raptors",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-11T23:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/boston-celtics-9-2-toronto-210000066.html",
+        "https://nesn.com/boston-celtics/news/celtics-paul-george-status-update-vs-76ers/fdf763a16ec53e9eb8b280c4",
+        "https://www.si.com/nba/celtics/onsi/tired-celtics-vs-shorthanded-raptors-injury-report-3-keys-and-a-prediction-01m76b63h3hb"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqalheCE4qhnnTHFcks6OBALF-Z3bH4vOjChG9xeus5vuPrGt7SYBU7L7TPR4",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/boston-celtics-9-2-toronto-210000066.html",
+          "title": "Boston Celtics (9-2) at Toronto Raptors (5-5) Game #12 11/11/26",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqalheCE4qhnnTHFcks6OBALF-Z3bH4vOjChG9xeus5vuPrGt7SYBU7L7TPR4"
+        },
+        {
+          "url": "https://nesn.com/boston-celtics/news/celtics-paul-george-status-update-vs-76ers/fdf763a16ec53e9eb8b280c4",
+          "title": "Celtics Share Paul George Status Update After Explosive Performance vs. 76ers",
+          "publisher": "NESN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgs_s9pD94NKbEQ8MoR9ziwXtgH_msnL1jpmlqiC0sAxjzNROv9L_EKc78ceo"
+        },
+        {
+          "url": "https://www.si.com/nba/celtics/onsi/tired-celtics-vs-shorthanded-raptors-injury-report-3-keys-and-a-prediction-01m76b63h3hb",
+          "title": "Tired Celtics vs. Shorthanded Raptors: Injury Report, 3 Keys, and a Prediction",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQz26bdRRicIYDMDUbLIPl3n_83dT-R5nxycnI0Q5wO0TX4MfkxpPfSYuJbVh0"
+        }
+      ]
+    },
+    {
+      "query": "wizards vs pacers",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-11T23:00:00Z",
+      "related_news_urls": [
+        "https://sportsbook.fanduel.com/basketball/nba/washington-wizards-@-indiana-pacers-36298489",
+        "https://www.sportsgambler.com/betting-tips/basketball/washington-wizards-vs-indiana-pacers-prediction-odds-6019811/",
+        "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-wizards-vs-pacers-sacramento-st-vs-central-michigan-and-more/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKpB37eVtJ35GtEJ9HMZb-r-V089BFg_zwuuzJSZB6qWwQelizt5DrOCkL9lM",
       "image_credit": "FanDuel Sportsbook",
       "news": [
         {
-          "url": "https://sportsbook.fanduel.com/football/ncaa-football-games/buffalo-@-ball-state-36280934",
-          "title": "Buffalo @ Ball State Odds",
+          "url": "https://sportsbook.fanduel.com/basketball/nba/washington-wizards-@-indiana-pacers-36298489",
+          "title": "Washington Wizards @ Indiana Pacers Odds",
           "publisher": "FanDuel Sportsbook",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtz--XBN2v1-Y-_DMMhCr9mR46QuLi9Tt-ogBS2FhK0NPl-Hta0ILQD09tyQY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKpB37eVtJ35GtEJ9HMZb-r-V089BFg_zwuuzJSZB6qWwQelizt5DrOCkL9lM"
         },
         {
-          "url": "https://www.cbssports.com/betting/news/buffalo-ball-state-prediction-odds-time-2026-college-football-week-11-wednesday-maction-picks-best-bets/",
-          "title": "Buffalo vs. Ball State odds, prediction, time: Week 11 Wednesday MACtion picks from proven model",
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/washington-wizards-vs-indiana-pacers-prediction-odds-6019811/",
+          "title": "Washington Wizards vs Indiana Pacers Prediction, Picks & Odds | NBA Wednesday",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdDtFXhCA57u0LcSvIYCTxfw7fpY9_A44wLe2sZcW8eS0yfNHndbFnlcZOckc"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-wizards-vs-pacers-sacramento-st-vs-central-michigan-and-more/",
+          "title": "Today's top games to watch, best bets, odds: Wizards vs. Pacers, Sacramento St. vs. Central Michigan and more",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4RK5ifgo2WSaU5hWBMfbNIAFHadPcYaiwMjWX4KOUN8mS0bHH1xJJY10jBK0"
-        },
-        {
-          "url": "https://www.espn.com/watch/player/_/eventCalendarId/401866461",
-          "title": "Buffalo vs. Ball State",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYCxxMsvzGKgji_ju9C17ddS8mIoyojYzcJriRhU08nmk7zeYgKULtdYjmp0c"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSro-B21Fj9BUX_N0YrlegqF1t00ka8q0jFFUn6eoBFItJQ0Qic-tP1hmvlaxQ"
         }
       ]
     },
     {
-      "query": "colom",
+      "query": "amd stock",
       "approx_searches": "5000+",
-      "published_at": "2026-11-11T22:30:00Z",
+      "published_at": "2026-11-11T23:00:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/2026/11/11/politics/live-news/hegseth-impeachment-congress",
-        "https://www.reuters.com/world/us/democrat-scott-colom-defeats-incumbent-cindy-hyde-smith-cnn-projects-2026-11-11/",
-        "https://www.bloomberg.com/news/articles/2026-11-11/democrat-colom-wins-mississippi-senate-race-cnn-projects"
+        "https://finance.yahoo.com/markets/stocks/articles/why-advanced-micro-devices-stock-175422041.html",
+        "https://www.fool.com/investing/2026/11/11/lisa-su-just-delivered-fantastic-news-for-amd-inve/",
+        "https://seekingalpha.com/article/4966414-amd-buy-as-data-center-revenue-expands-on-challenger-status"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRN_-t5ROoiO4WB_I_ZIMMu8J2vf-CQp2XtXomV5JpP5h97Npnq-tJOnmrsT4k",
-      "image_credit": "CNN",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-gr71e5EVgBFBhxeQIz7aohqWohBTAOAzzxWHyDTLP9pDXDg8Lz3frqgwSOg",
+      "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/11/politics/live-news/hegseth-impeachment-congress",
-          "title": "Live updates: Democrat Scott Colom will win a US Senate seat in deep-red Mississippi, CNN projects",
-          "publisher": "CNN",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-advanced-micro-devices-stock-175422041.html",
+          "title": "Why Advanced Micro Devices Stock Popped Today",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRN_-t5ROoiO4WB_I_ZIMMu8J2vf-CQp2XtXomV5JpP5h97Npnq-tJOnmrsT4k"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-gr71e5EVgBFBhxeQIz7aohqWohBTAOAzzxWHyDTLP9pDXDg8Lz3frqgwSOg"
         },
         {
-          "url": "https://www.reuters.com/world/us/democrat-scott-colom-defeats-incumbent-cindy-hyde-smith-cnn-projects-2026-11-11/",
-          "title": "Democrat Scott Colom defeats incumbent Cindy Hyde-Smith, CNN projects",
-          "publisher": "Reuters",
+          "url": "https://www.fool.com/investing/2026/11/11/lisa-su-just-delivered-fantastic-news-for-amd-inve/",
+          "title": "Lisa Su Just Delivered Fantastic News for AMD Investors",
+          "publisher": "The Motley Fool",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThOA0S27Gn_4dEQeDzryyGtbOHBT84kBRxkvjNVEQHu2GOXIvdOz0cMV6PZS0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCCmG5hjQQODrdMLQ4nLiUtuj8DgEXSz5GUS2gKS_2_Yl3A9u5UTZTIpIA7H4"
         },
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-11/democrat-colom-wins-mississippi-senate-race-cnn-projects",
-          "title": "Democrat Scott Colom Wins Mississippi Senate Race, CNN Projects",
-          "publisher": "Bloomberg.com",
+          "url": "https://seekingalpha.com/article/4966414-amd-buy-as-data-center-revenue-expands-on-challenger-status",
+          "title": "AMD: Buy As Data Center Revenue Expands On Challenger Status",
+          "publisher": "Seeking Alpha",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXvZEXuDJuEWnOkjjHmsRgxS_y3t42ccRWt030YtkO3DMhYwvOdf6cFSm6MAg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjS4O1cnUXirMUhVxkM7sqi8V4uAJ2vZcVQ5beWABMCyGRlXdcFWgMcCk-1mI"
         }
       ]
     },
     {
-      "query": "hulu",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-11T22:30:00Z",
-      "related_news_urls": [
-        "https://lifehacker.com/entertainment/10-hacks-every-hulu-user-should-know?utm_medium=RSS",
-        "https://www.imdb.com/news/ni66106410/?ref_=nm_nwr_1"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3L7luyp4NA2ihqUZE-OmPZyJDqkIg4RoSwfNl90I5VHqfQFxAsADWrkOZvpg",
-      "image_credit": "Lifehacker",
-      "news": [
-        {
-          "url": "https://lifehacker.com/entertainment/10-hacks-every-hulu-user-should-know?utm_medium=RSS",
-          "title": "10 Hacks Every Hulu User Should Know",
-          "publisher": "Lifehacker",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3L7luyp4NA2ihqUZE-OmPZyJDqkIg4RoSwfNl90I5VHqfQFxAsADWrkOZvpg"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66106410/?ref_=nm_nwr_1",
-          "title": "‘The Circle’ Season 8 Cast Revealed: 11 Players Including Hannah Brown, Sasha Farber & More Reality Stars!",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3vUx5RaHuJvNl5urxXopDPB-7_AgQIwAbQF1hpSL-ZXQ3Mx3j8O9mbIEXgJY"
-        }
-      ]
-    },
-    {
-      "query": "cma awards 2026",
+      "query": "bethesda skyrim 15th anniversary remaster",
       "approx_searches": "500+",
-      "published_at": "2026-11-11T22:30:00Z",
+      "published_at": "2026-11-11T22:50:00Z",
       "related_news_urls": [
-        "https://www.eonline.com/news/1438024/taylor-swift-is-not-performing-in-dolly-parton-tribute-at-cma-awards-2026",
-        "https://www.yahoo.com/entertainment/music/articles/taylor-swift-first-cma-awards-210314151.html",
-        "https://www.imdb.com/de/news/ni66106819/?ref_=nwc_art_perm"
+        "https://www.gamingbible.com/news/skyrim-unexpected-remaster-15th-anniversary-bethesda-game-120844-20261111",
+        "https://www.ign.com/articles/how-skyrim-found-a-second-life-as-cozy-game",
+        "https://www.videogameschronicle.com/news/fan-mod-beyond-skyrim-bruma-gets-huge-update-and-playstation-port/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSX3vYNxHNc0xG2UXHQJFqkwQtPeAxyjvZdLGP0HPTLbRHnzhPAkcn_mqQDSac",
-      "image_credit": "E! News",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-IP3JaIII_Yrv-heAbIspuq8sFqecfjS0xpyCzFagZdQGrhwHXs1KsH0zqdk",
+      "image_credit": "GAMINGbible",
       "news": [
         {
-          "url": "https://www.eonline.com/news/1438024/taylor-swift-is-not-performing-in-dolly-parton-tribute-at-cma-awards-2026",
-          "title": "Is Taylor Swift Participating in the Dolly Parton Tribute at CMA Awards 2026? The Truth",
-          "publisher": "E! News",
+          "url": "https://www.gamingbible.com/news/skyrim-unexpected-remaster-15th-anniversary-bethesda-game-120844-20261111",
+          "title": "Skyrim confirms unexpected remaster on 15th anniversary of Bethesda game",
+          "publisher": "GAMINGbible",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSX3vYNxHNc0xG2UXHQJFqkwQtPeAxyjvZdLGP0HPTLbRHnzhPAkcn_mqQDSac"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-IP3JaIII_Yrv-heAbIspuq8sFqecfjS0xpyCzFagZdQGrhwHXs1KsH0zqdk"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/music/articles/taylor-swift-first-cma-awards-210314151.html",
-          "title": "Taylor Swift’s First CMA Awards Appearance in 10 Years May Include a Surprise Dolly Parton Tribute",
-          "publisher": "Yahoo",
+          "url": "https://www.ign.com/articles/how-skyrim-found-a-second-life-as-cozy-game",
+          "title": "How Skyrim Found a Second Life as a Cozy Game",
+          "publisher": "IGN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcuMHPrTdtdgOzyhQDO-v_5r0qyxF4vieIxsA0VqF_T5Q9quAiSH0ZfGvkznI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqzTuEeAHIuysfa7OVT97iaPkThsA5kK7m1tu_XpAHxbsXiua4p5thGDb0cKU"
         },
         {
-          "url": "https://www.imdb.com/de/news/ni66106819/?ref_=nwc_art_perm",
-          "title": "Is Taylor Swift Performing at CMA Awards 2026? Here’s What’s Being Reported",
-          "publisher": "IMDb",
+          "url": "https://www.videogameschronicle.com/news/fan-mod-beyond-skyrim-bruma-gets-huge-update-and-playstation-port/",
+          "title": "Fan mod Beyond Skyrim: Bruma gets huge update and PlayStation port",
+          "publisher": "Video Games Chronicle",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYg7w-I00UkXHMY3gpinDs9EJa4rHUSkekj_e5l-9kU19ydqWZXESpuXkYxUQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAomJ57VsrlF4L-b4M0PiitWXCnX6vU4nfi3v1OC6Q3p16AGDM7PAqFVDMe1g"
         }
       ]
     },
     {
-      "query": "marquette basketball",
+      "query": "avgo stock",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T22:50:00Z",
+      "related_news_urls": [
+        "https://www.benzinga.com/markets/tech/26/11/63145055/what-is-going-on-with-broadcom-stock-on-wednesday",
+        "https://seekingalpha.com/article/4966465-broadcom-cheaper-to-own-one-of-the-best-stories-on-the-market",
+        "https://finance.yahoo.com/markets/stocks/articles/broadcom-just-had-best-day-135350246.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBOMkV86HZeTBiCYs60o95MArKKZZMw7ZlexYwquPngRPKLYR2wJKtj1mnvrw",
+      "image_credit": "Benzinga",
+      "news": [
+        {
+          "url": "https://www.benzinga.com/markets/tech/26/11/63145055/what-is-going-on-with-broadcom-stock-on-wednesday",
+          "title": "What Is Going on With Broadcom Stock on Wednesday?",
+          "publisher": "Benzinga",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBOMkV86HZeTBiCYs60o95MArKKZZMw7ZlexYwquPngRPKLYR2wJKtj1mnvrw"
+        },
+        {
+          "url": "https://seekingalpha.com/article/4966465-broadcom-cheaper-to-own-one-of-the-best-stories-on-the-market",
+          "title": "Broadcom: Cheaper To Own One Of The Best Stories On The Market (NASDAQ:AVGO)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3RJovtjsS4hrdd4iw0VSLsFmbVPTMWkMWk5WHXgyI_UBy6AAOzy7g5W6my-U"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/broadcom-just-had-best-day-135350246.html",
+          "title": "Broadcom Just Had Its Best Day in Nearly a Year, Back Above $1.5 Trillion",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkrMqPgdeRZ8st3xRdpjCEYelmIu0nhfGvMOYbbG2-dkWRJohs6kIVBSUdYX4"
+        }
+      ]
+    },
+    {
+      "query": "week 10 start e m sit em",
       "approx_searches": "500+",
-      "published_at": "2026-11-11T22:30:00Z",
+      "published_at": "2026-11-11T22:50:00Z",
       "related_news_urls": [
-        "https://www.freep.com/story/sports/college/university-michigan/wolverines/2026/11/11/michigan-basketball-marquette-prediction-pick/92723862007/",
-        "https://mgoblue.com/news/2026/11/9/mens-basketball-u-m-to-return-home-to-host-marquette-on-military-appreciation-night",
-        "https://umhoops.com/2026/11/11/game-3-marquette-at-michigan-preview/"
+        "https://www.nfl.com/news/nfl-fantasy-2026-start-em-sit-em-wide-receivers-for-week-10",
+        "https://www.cbssports.com/fantasy/football/news/fantasy-football-2026-start-em-sit-em-rb-in-week-10/",
+        "https://sports.yahoo.com/fantasy/article/week-10-fantasy-football-rankings-202201311.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6uZ7f6tsaagDQEamNs6UX6J3qc5xdgP_65HjgxYu3Ol7VDqhlUlvJzkA-YPs",
-      "image_credit": "Detroit Free Press",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUaSAhhoKVxHcNMWB07lX9NDWUl884w6j9ZnWHOasc_yeRB7LG-J1nQUiktPk",
+      "image_credit": "NFL.com",
       "news": [
         {
-          "url": "https://www.freep.com/story/sports/college/university-michigan/wolverines/2026/11/11/michigan-basketball-marquette-prediction-pick/92723862007/",
-          "title": "Michigan basketball has a test against Marquette's swarming Shaka Smart defense",
-          "publisher": "Detroit Free Press",
+          "url": "https://www.nfl.com/news/nfl-fantasy-2026-start-em-sit-em-wide-receivers-for-week-10",
+          "title": "NFL Fantasy 2026 Start 'Em, Sit 'Em: Wide receivers for Week 10",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6uZ7f6tsaagDQEamNs6UX6J3qc5xdgP_65HjgxYu3Ol7VDqhlUlvJzkA-YPs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUaSAhhoKVxHcNMWB07lX9NDWUl884w6j9ZnWHOasc_yeRB7LG-J1nQUiktPk"
         },
         {
-          "url": "https://mgoblue.com/news/2026/11/9/mens-basketball-u-m-to-return-home-to-host-marquette-on-military-appreciation-night",
-          "title": "U-M to Return Home to Host Marquette on Military Appreciation Night",
-          "publisher": "University of Michigan Athletics",
+          "url": "https://www.cbssports.com/fantasy/football/news/fantasy-football-2026-start-em-sit-em-rb-in-week-10/",
+          "title": "Fantasy football Start 'Em, Sit 'Em RB in Week 10: Tony Pollard looks to stay hot despite another tough test",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQartX6fEQ0lC7wm2FaAU7I8DNd633iJOGKHfqGqLdHDyAJy9LesDBxmtHajQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkOTeHrbzOb_A8F8In5jBcCfq2QNm9I09gHiHoJBzLM5u8vorNRrf7rn-jtWE"
         },
         {
-          "url": "https://umhoops.com/2026/11/11/game-3-marquette-at-michigan-preview/",
-          "title": "Game 3: Marquette at Michigan Preview",
-          "publisher": "UM Hoops.com",
+          "url": "https://sports.yahoo.com/fantasy/article/week-10-fantasy-football-rankings-202201311.html",
+          "title": "Week 10 Fantasy Football Rankings",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRueZkKppPRjbKZ_aAIK-1FRThdbJoaIfHwPv9uj_iDlo3CXbQto7GbZYt_qiY"
-        }
-      ]
-    },
-    {
-      "query": "winter weather advisory",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T22:30:00Z",
-      "related_news_urls": [
-        "https://www.clickondetroit.com/weather/2026/11/11/cooler-weather-and-lake-effect-snow-potential-arrive-across-southeast-michigan/",
-        "https://www.uppermichiganssource.com/2026/11/11/first-alert-weather-days-due-multi-day-lake-effect-snow-event/",
-        "https://www.mlive.com/weather/2026/11/winter-weather-advisory-issued-seasons-first-long-duration-snow-could-drop-up-to-10-inches.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAzudNgplF3_OMJFajGCVq97WwIsk1SkouxsVGMIdNEYzluyAjo6BQVta8PCo",
-      "image_credit": "ClickOnDetroit | WDIV Local 4",
-      "news": [
-        {
-          "url": "https://www.clickondetroit.com/weather/2026/11/11/cooler-weather-and-lake-effect-snow-potential-arrive-across-southeast-michigan/",
-          "title": "Cooler weather and lake-effect snow potential arrive across Southeast Michigan",
-          "publisher": "ClickOnDetroit | WDIV Local 4",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAzudNgplF3_OMJFajGCVq97WwIsk1SkouxsVGMIdNEYzluyAjo6BQVta8PCo"
-        },
-        {
-          "url": "https://www.uppermichiganssource.com/2026/11/11/first-alert-weather-days-due-multi-day-lake-effect-snow-event/",
-          "title": "First Alert Weather Days due to multi day lake effect snow event",
-          "publisher": "Upper Michigan's Source",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjgJYw2ikJEn6F0iHJLkEKNEi7wIO6bE7Nt_7juPaxhWr_Y2bTNYTQWFDHt14"
-        },
-        {
-          "url": "https://www.mlive.com/weather/2026/11/winter-weather-advisory-issued-seasons-first-long-duration-snow-could-drop-up-to-10-inches.html",
-          "title": "Winter Weather Advisory issued: Season’s first long-duration snow could drop up to 10 inches",
-          "publisher": "MLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT68waIAL8roh2myTgpxiOKk6K47mmq3-4aVbAQzzu-wDyyMkgqqyTvHFcWXSw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_fjGIzMkjO3eB4mhAA4xvSFWrNmm46P9FTRTPgL0Cl_lJmoKatGQx-ZqUa24"
         }
       ]
     }
