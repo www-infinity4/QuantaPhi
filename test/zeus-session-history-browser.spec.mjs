@@ -98,6 +98,9 @@ test('unsent local project title survives a tracker redraw and creates exactly o
  await page.getByRole('button',{name:'Create project thread'}).click();
  await expect(first(page,'.zeus-current-head')).toContainText('Initial science project');
  await first(page,selector).fill('Source extraction with exact whitespace');
+ // A page refresh and a local-history redraw must both preserve this unsent title.
+ await page.reload({waitUntil:'domcontentloaded'});
+ await expect(first(page,selector)).toHaveValue('Source extraction with exact whitespace');
  await first(page,'.zeus-history-threads .zeus-thread').last().click(); // forces renderSide()
  await expect(first(page,selector)).toHaveValue('Source extraction with exact whitespace');
  await page.getByRole('button',{name:'Create project thread'}).click();

@@ -17,7 +17,10 @@ const validHistory=d=>d&&d.version===1&&Array.isArray(d.threads)&&d.threads.leng
  t.sessions.every(s=>Array.isArray(s.items)&&s.items.length<=40));
 const read=()=>{try{const v=JSON.parse(localStorage.getItem(STORE)||'null');return validHistory(v)?v:newHistory()}catch{return newHistory()}};
 let history=read(),selected=history.threads[0]?.id||null,focusedSessionId=null;
-let projectTitleDraft=''; // preserves an unfinished project name across local tracker redraws
+const PROJECT_TITLE_DRAFT_KEY='infinity:zeus-project-title-draft:v1';
+let projectTitleDraft=''; // session-local, never a cloud/account history write
+try{projectTitleDraft=sessionStorage.getItem(PROJECT_TITLE_DRAFT_KEY)||''}catch{}
+const persistProjectTitle=()=>{try{sessionStorage.setItem(PROJECT_TITLE_DRAFT_KEY,projectTitleDraft)}catch{}};
 const arena=document.getElementById('arena');
 if(arena){
  const root=el('section','zeus-history');root.id='zeusSessionHistory';root.setAttribute('aria-labelledby','zeusHistoryTitle');
@@ -75,7 +78,7 @@ if(arena){
   const form=el('form','zeus-history-new');
   const title=field('New project or topic title');title.required=true;title.minLength=3;title.maxLength=90;
   title.value=projectTitleDraft;
-  title.addEventListener('input',()=>{projectTitleDraft=title.value});
+  title.addEventListener('input',()=>{projectTitleDraft=title.value;persistProjectTitle()});
   const add=el('button','primary','Create project thread');add.type='submit';form.append(title,add);
   const createProjectThread=()=>{
    // A different history action may redraw the form after the visitor typed.
@@ -86,7 +89,7 @@ if(arena){
     selected=thread.id;focusedSessionId=null;return thread;
    },'Created a private project thread');
    // Clear only after the local write succeeds; a failed save keeps the draft.
-   if(created){projectTitleDraft='';const next=side.querySelector('.zeus-history-new input');if(next)next.value='';}
+   if(created){projectTitleDraft='';persistProjectTitle();const next=side.querySelector('.zeus-history-new input');if(next)next.value='';}
   };
   // Prevent any browser-native navigation from a tap or Enter even if a form
   // submit listener is delayed or another script's handler intervenes.
