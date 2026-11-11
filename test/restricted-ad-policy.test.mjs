@@ -8,6 +8,10 @@ const offer=(extra={})=>({
  id:'licensed-editorial-01',category:'cannabis',approved:true,
  advertiser:'Authorized publisher',license_id:'license-reference-001',
  approved_jurisdictions:['US-CO'],reviewed_at:'2026-10-30T10:00:00Z',
+ // Synthetic reviewed campaign fixture; never a real merchant license or deal.
+ rights_cleared:true,rights_expires_at:'2026-11-30T23:59:59Z',
+ campaign_starts_at:'2026-10-25T00:00:00Z',campaign_ends_at:'2026-11-15T23:59:59Z',
+ sponsor_agreement_id:'fixture-only-no-commercial-agreement',
  title:'Verified independent source',description:'Editorial publisher notice.',
  image:'https://publisher.example.com/creative.jpg',
  url:'https://publisher.example.com/information',
