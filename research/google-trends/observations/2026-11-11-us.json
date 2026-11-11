@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T01:01:23.047131Z",
+  "checked_at": "2026-11-11T01:31:24.483125Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "unc basketball",
+      "query": "clippers vs suns",
       "approx_searches": "2000+",
-      "published_at": "2026-11-11T00:40:00Z",
+      "published_at": "2026-11-11T01:10:00Z",
       "related_news_urls": [
-        "https://www.on3.com/teams/north-carolina-tar-heels/news/unc-wyoming-preview-tar-heels-looking-to-stack-performances-against-cowboys/",
-        "https://sports.yahoo.com/articles/unc-vs-wyoming-live-discussion-233000638.html",
-        "https://tarheeltribune.com/2026/11/08/wyoming-at-unc-tv-info-stats-scouting-cowboys-and-notes/"
+        "https://www.covers.com/sport/basketball/nba/matchup/388699/picks",
+        "https://www.brightsideofthesun.com/suns-game/113404/game-preview-phoenix-aims-to-bounce-back-vs-clippers",
+        "https://sports.yahoo.com/articles/seven-players-listed-clippers-vs-202639885.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfQx-7RNNIYYVIez22_6JJV3i2zA3SZAY8cw1OqPWg1oL7loWfW6_rfgY9UHA",
-      "image_credit": "On3",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVQctPRbJPfxrxz467sxqMm4nnzRXcljfWseGhin6hH_Pqfs51In2RDAH1MoY",
+      "image_credit": "Covers.com",
       "news": [
         {
-          "url": "https://www.on3.com/teams/north-carolina-tar-heels/news/unc-wyoming-preview-tar-heels-looking-to-stack-performances-against-cowboys/",
-          "title": "UNC-Wyoming Preview: Tar Heels Looking to Stack Performances Against Cowboys",
-          "publisher": "On3",
+          "url": "https://www.covers.com/sport/basketball/nba/matchup/388699/picks",
+          "title": "Clippers vs Suns Prediction, Picks, Prop Bets For November 10, 2026 - NBA",
+          "publisher": "Covers.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfQx-7RNNIYYVIez22_6JJV3i2zA3SZAY8cw1OqPWg1oL7loWfW6_rfgY9UHA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVQctPRbJPfxrxz467sxqMm4nnzRXcljfWseGhin6hH_Pqfs51In2RDAH1MoY"
         },
         {
-          "url": "https://sports.yahoo.com/articles/unc-vs-wyoming-live-discussion-233000638.html",
-          "title": "UNC vs. Wyoming Live Discussion",
+          "url": "https://www.brightsideofthesun.com/suns-game/113404/game-preview-phoenix-aims-to-bounce-back-vs-clippers",
+          "title": "Game Preview: Phoenix aims to bounce back vs. Clippers",
+          "publisher": "Bright Side Of The Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQ5bv3Hq56y4kSjLpcvOGzTzPD0AP4rGO6Ki53FqkGpumIVv1CtIgEIrTqeiU"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/seven-players-listed-clippers-vs-202639885.html",
+          "title": "Seven Players Listed on Clippers vs Suns Injury Report",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN5sGhfEcLfzoIzXu00i9aB4Fru1ZitSUReONjDKKGhKqZxhycpXYavLqVUJk"
-        },
-        {
-          "url": "https://tarheeltribune.com/2026/11/08/wyoming-at-unc-tv-info-stats-scouting-cowboys-and-notes/",
-          "title": "Wyoming at UNC: TV info, stats, scouting Cowboys, notes and lineup combinations",
-          "publisher": "Tar Heel Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRihm2wnYHFzaMJFJCRznuFTD0FoDFQPyOpHBvvFz8WNjhIF47-2e-8kdJPplU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDZGoZUPiQd2-HlAvuwNKZLMRMBEoIMiwVaCaXIppiNdN6qML9z-zGNlf9DY8"
         }
       ]
     },
     {
-      "query": "ku basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T00:40:00Z",
-      "related_news_urls": [
-        "https://ukathletics.com/news/2026/11/09/big-blue-preview-kentucky-vs-kansas-2/",
-        "https://www.cbssports.com/college-basketball/news/kentucky-kansas-live-updates-score-college-basketball-2026/live/",
-        "https://www.kentucky.com/sports/spt-columns-blogs/mark-story/article317989057.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQo_a41QCHCyUp6A0BiMiFwegmBtogwK7s5RjihIPTJ4hYNqAYp5LBGo-JEOA",
-      "image_credit": "UKAthletics",
-      "news": [
-        {
-          "url": "https://ukathletics.com/news/2026/11/09/big-blue-preview-kentucky-vs-kansas-2/",
-          "title": "Big Blue Preview: Kentucky vs. Kansas",
-          "publisher": "UKAthletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQo_a41QCHCyUp6A0BiMiFwegmBtogwK7s5RjihIPTJ4hYNqAYp5LBGo-JEOA"
-        },
-        {
-          "url": "https://www.cbssports.com/college-basketball/news/kentucky-kansas-live-updates-score-college-basketball-2026/live/",
-          "title": "Kentucky vs. Kansas live updates: Wildcats take on Jayhawks in blue-blood showdown at Champions Classic",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtIKI9pfqLRe8RmdIwG1_jEadAeNEqCwQ2I4mXgKeibcNfocnfQlSAqBDlfbk"
-        },
-        {
-          "url": "https://www.kentucky.com/sports/spt-columns-blogs/mark-story/article317989057.html",
-          "title": "Where to watch, how to follow the Kentucky men’s basketball game vs. Kansas",
-          "publisher": "Lexington Herald Leader",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEpmkkkfu75qP_Dz0L3JdbHLWt0KBAAizccb4vrQvGS0XT1yS-G-UpMTLAZu8"
-        }
-      ]
-    },
-    {
-      "query": "nc state basketball",
+      "query": "mcneese vs lsu",
       "approx_searches": "500+",
-      "published_at": "2026-11-11T00:40:00Z",
+      "published_at": "2026-11-11T01:10:00Z",
       "related_news_urls": [
-        "https://www.backingthepack.com/nc-state-basketball/42267/game-thread-presbyterian-vs-nc-state",
-        "https://sports.yahoo.com/articles/game-thread-presbyterian-vs-nc-234500103.html",
-        "https://insidepacksports.com/s/19685/pregame-hoops-talk-presbyterian-mbb"
+        "https://mcneesesports.com/news/2026/11/9/womens-basketball-wbb-cowgirls-travel-to-no-9-lsu-on-tuesday.aspx",
+        "https://www.nytimes.com/athletic/7770904/2026/11/10/mcneese-vs-lsu-stream-how-to-watch-nov-10/",
+        "https://www.theadvertiser.com/story/sports/college/lsu/2026/11/10/lsu-womens-basketball-mcneese-state-live-score-updates-analysis--live/92642036007/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUHJ_-lQuPzXjEuWBUu2pWL9_mgm9YXEMBoFB2GVBJM42hftvU4wS-04quNHw",
-      "image_credit": "Backing The Pack",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZWYWSUsuEfQvwi8hvVq4TdIfNgBZpT0BCiPKkx7RepWkFtXr8phDJuM8JLbY",
+      "image_credit": "McNeese State University Athletics",
       "news": [
         {
-          "url": "https://www.backingthepack.com/nc-state-basketball/42267/game-thread-presbyterian-vs-nc-state",
-          "title": "Game thread: Presbyterian vs. NC State",
-          "publisher": "Backing The Pack",
+          "url": "https://mcneesesports.com/news/2026/11/9/womens-basketball-wbb-cowgirls-travel-to-no-9-lsu-on-tuesday.aspx",
+          "title": "WBB: Cowgirls Travel To No. 9 LSU On Tuesday",
+          "publisher": "McNeese State University Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUHJ_-lQuPzXjEuWBUu2pWL9_mgm9YXEMBoFB2GVBJM42hftvU4wS-04quNHw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZWYWSUsuEfQvwi8hvVq4TdIfNgBZpT0BCiPKkx7RepWkFtXr8phDJuM8JLbY"
         },
         {
-          "url": "https://sports.yahoo.com/articles/game-thread-presbyterian-vs-nc-234500103.html",
-          "title": "Game thread: Presbyterian vs. NC State",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.nytimes.com/athletic/7770904/2026/11/10/mcneese-vs-lsu-stream-how-to-watch-nov-10/",
+          "title": "How to watch McNeese vs. LSU women’s basketball: TV channel and streaming options for November 10",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRaDLCkJIBHa0dDvIWw4vsoFYk1Gc8Syn_A2tWUrN5_ur4ie1hWDBsH89MYbLk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSEmltt_c9I7Xs2-VvPGwLDH6NxaF4bgDeQ9n2gOOXG-14W2DnW-Yc7kisM7g"
         },
         {
-          "url": "https://insidepacksports.com/s/19685/pregame-hoops-talk-presbyterian-mbb",
-          "title": "PREGAME HOOPS TALK: Presbyterian (MBB)",
-          "publisher": "Inside Pack Sports",
+          "url": "https://www.theadvertiser.com/story/sports/college/lsu/2026/11/10/lsu-womens-basketball-mcneese-state-live-score-updates-analysis--live/92642036007/",
+          "title": "LSU women's basketball vs McNeese State live score updates, analysis",
+          "publisher": "The Daily Advertiser | Lafayette, Louisiana",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNyLiZBxLBl1w7-DTr0yXSmPbrqL42fqGWt5zUn8hWIvj9tVXgeEG7v65GWWI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS912Ftap6_3HpvzhwLr2a-p3xg7dkbc7fbI6tGOa_Zfs4bdLG2Ec6n_znY8_M"
         }
       ]
     },
     {
-      "query": "glp 1 vision loss",
+      "query": "thomas haugh",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T01:10:00Z",
+      "related_news_urls": [
+        "https://www.wruf.com/headlines/2026/11/10/florida-trio-headline-espn-2027-nba-draft-board/",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/10/thomas-haugh-23-florida-senior-6-9-forward-could/92706052007/",
+        "https://sports.yahoo.com/articles/thomas-haugh-lands-list-2027-174929844.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBo82WfMnt6y4sJ1T6X7guoF7trB1B9sw-fNr8v1mqTKQXA3QPNEhsNhHvvgA",
+      "image_credit": "WRUF 98.1 FM",
+      "news": [
+        {
+          "url": "https://www.wruf.com/headlines/2026/11/10/florida-trio-headline-espn-2027-nba-draft-board/",
+          "title": "Florida Trio Headline ESPN 2027 NBA Draft Board",
+          "publisher": "WRUF 98.1 FM",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBo82WfMnt6y4sJ1T6X7guoF7trB1B9sw-fNr8v1mqTKQXA3QPNEhsNhHvvgA"
+        },
+        {
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/10/thomas-haugh-23-florida-senior-6-9-forward-could/92706052007/",
+          "title": "Thomas Haugh, 23, Florida senior, 6-9 forward. Could …",
+          "publisher": "HoopsHype",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9vwoh6ekUNbE5n9M71eoXFmVNWIQMA14EgXvT5KClUn-AiicRxrhL2SeaZkU"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/thomas-haugh-lands-list-2027-174929844.html",
+          "title": "Thomas Haugh lands on list of 2027 NBA Draft prospects to watch",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAwaDPzlJh8AxXmzB8k054lX5Th3qJKCIavjPxepigJ1vwddfafBzeEpBLSCg"
+        }
+      ]
+    },
+    {
+      "query": "heat vs jazz",
       "approx_searches": "5000+",
-      "published_at": "2026-11-11T00:40:00Z",
+      "published_at": "2026-11-11T01:00:00Z",
       "related_news_urls": [
-        "https://www.foxbusiness.com/healthcare/fda-orders-new-warning-labels-ozempic-wegovy-over-rare-risk-permanent-vision-loss",
-        "https://www.cbsnews.com/atlanta/video/new-warning-labels-placed-on-glp-1-drugs/",
-        "https://www.theguardian.com/us-news/2026/nov/10/fda-glp-1-weight-loss-blindness-risk"
+        "https://utahjazz.com/news/preview-utah-jazz-return-home-to-host-miami-heat",
+        "https://sportsbook.fanduel.com/basketball/nba/miami-heat-@-utah-jazz-36295141",
+        "https://www.slcdunk.com/utah-jazz-game-coverage/70652/jazz-vs-heat-preview-the-rise-of-darryn-peterson-is-here"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDtQkABAiToRN29GCtJVEkxcGKKXNbcyiapcoyECvPG95yBf6sZ0JpR0fwH1s",
-      "image_credit": "Fox Business",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzrgbcWLV5CK9zTKMS1yBfinKD8H5E3bGHInxUY5E89LPeRd5xgv1926M-kPw",
+      "image_credit": "NBA.com",
       "news": [
         {
-          "url": "https://www.foxbusiness.com/healthcare/fda-orders-new-warning-labels-ozempic-wegovy-over-rare-risk-permanent-vision-loss",
-          "title": "FDA orders new warning labels on Ozempic, Wegovy over rare risk of permanent vision loss",
-          "publisher": "Fox Business",
+          "url": "https://utahjazz.com/news/preview-utah-jazz-return-home-to-host-miami-heat",
+          "title": "Preview: Utah Jazz Return Home to Host Miami Heat",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDtQkABAiToRN29GCtJVEkxcGKKXNbcyiapcoyECvPG95yBf6sZ0JpR0fwH1s"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzrgbcWLV5CK9zTKMS1yBfinKD8H5E3bGHInxUY5E89LPeRd5xgv1926M-kPw"
         },
         {
-          "url": "https://www.cbsnews.com/atlanta/video/new-warning-labels-placed-on-glp-1-drugs/",
-          "title": "New warning labels placed on GLP-1 drugs",
-          "publisher": "CBS News",
+          "url": "https://sportsbook.fanduel.com/basketball/nba/miami-heat-@-utah-jazz-36295141",
+          "title": "Miami Heat @ Utah Jazz Odds",
+          "publisher": "FanDuel Sportsbook",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2k5VNi-x4RN77knHzbSEFKyCVLlch1gKPKQ3l-BwD1ZUxHRu9cu4A1pZcXOc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKpB37eVtJ35GtEJ9HMZb-r-V089BFg_zwuuzJSZB6qWwQelizt5DrOCkL9lM"
         },
         {
-          "url": "https://www.theguardian.com/us-news/2026/nov/10/fda-glp-1-weight-loss-blindness-risk",
-          "title": "FDA warns of rare eye condition causing blindness from GLP-1 weight loss medications",
-          "publisher": "The Guardian",
+          "url": "https://www.slcdunk.com/utah-jazz-game-coverage/70652/jazz-vs-heat-preview-the-rise-of-darryn-peterson-is-here",
+          "title": "Jazz vs Heat Preview: The rise of Darryn Peterson is here",
+          "publisher": "SLC Dunk",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS76vqGUkK_uwWckV7bFWRmVQBN-QPx4cjpXpRAJxZA1hwTksIz62fu5PGJS8M"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-gzoqSUp0GLWXV1AAPnwPf689AzY3kmhXGbN-5Z6_VxF72WQEJkjGCLv6q1c"
         }
       ]
     },
     {
-      "query": "mel gibson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T00:40:00Z",
+      "query": "iowa state basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T01:00:00Z",
       "related_news_urls": [
-        "https://movieweb.com/hunting-season-mel-gibson-stream-prime-video-november-2026/",
-        "https://www.imdb.com/news/ni66103951/?ref_=tt_nwr_1",
-        "https://www.yahoo.com/entertainment/movies/articles/1996-film-ranked-among-mel-120508021.html"
+        "https://www.desmoinesregister.com/story/sports/college/iowa-state/basketball-mens/2026/11/10/iowa-state-basketball-southern-tv-channel-stream-time-cyclones/92670778007/",
+        "https://sports.yahoo.com/articles/watch-listen-iowa-state-versus-000000442.html",
+        "https://www.si.com/college/iowa-state/latest-news/one-bold-prediction-for-iowa-state-basketball-vs-southern"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuZUpp66TkdiyWC1FVFZm5dRm_8Lhzh5DBA61DkScIPbhJyygGHmq2101Zvw0",
-      "image_credit": "MovieWeb",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSubgpTpp8sG938WoVcP0VuCHBa2kR9uZHHfcu8SMXd9u8JGDRxYFM8TBPpGGA",
+      "image_credit": "The Des Moines Register",
       "news": [
         {
-          "url": "https://movieweb.com/hunting-season-mel-gibson-stream-prime-video-november-2026/",
-          "title": "Amazon Scores Big as Mel Gibson's New 93-Minute Action Thriller Becomes the Biggest Hit on Streaming",
-          "publisher": "MovieWeb",
+          "url": "https://www.desmoinesregister.com/story/sports/college/iowa-state/basketball-mens/2026/11/10/iowa-state-basketball-southern-tv-channel-stream-time-cyclones/92670778007/",
+          "title": "How to watch Iowa State basketball vs Southern today | TV, time",
+          "publisher": "The Des Moines Register",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuZUpp66TkdiyWC1FVFZm5dRm_8Lhzh5DBA61DkScIPbhJyygGHmq2101Zvw0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSubgpTpp8sG938WoVcP0VuCHBa2kR9uZHHfcu8SMXd9u8JGDRxYFM8TBPpGGA"
         },
         {
-          "url": "https://www.imdb.com/news/ni66103951/?ref_=tt_nwr_1",
-          "title": "Mel Gibson’s New Action Thriller on Prime Video Is Taken Meets Gran Torino",
-          "publisher": "IMDb",
+          "url": "https://sports.yahoo.com/articles/watch-listen-iowa-state-versus-000000442.html",
+          "title": "How to watch or listen to Iowa State versus Southern",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR21myTMUqZHhCP13ITjS5-slZl_rgN1DQQQhT1WgL-lcbfub_fSojn8s0nJNc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTn6sqKJbNs5uR2OFc97ukPs1dxYJkpFv19E8NPUd_wYwtd5mOsAGLh8P0ZPec"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/1996-film-ranked-among-mel-120508021.html",
-          "title": "1996 Film, Ranked Among Mel Gibson's Best Movies, Now Called 'Pure Poison' By Critics",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEA3P59nrnEshbUcAd3jPQ-ZRiH0oyKcAZmaVkR1M2XS98HC4e_smbSir5A90"
-        }
-      ]
-    },
-    {
-      "query": "cbb",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T00:40:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/betting/news/draftkings-promo-code-score-200-bonus-free-nba-league-pass-celtics-76ers-duke-michigan-state-nba-cbb/",
-        "https://www.si.com/betting-promo/draftkings-promo-code-bet-5-get-200-in-bonus-bets-for-boston-vs-philadelphia-01m7317y9x2y",
-        "https://wtop.com/news/2026/11/draftkings-promo-code-spend-5-get-200-bonus-for-nba-games-tonight/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0UWtdjR6YwDAMqpPYBonf3U36cjy-A2fRzC9-eptGCgHyrNjDbkB88O0umi8",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/betting/news/draftkings-promo-code-score-200-bonus-free-nba-league-pass-celtics-76ers-duke-michigan-state-nba-cbb/",
-          "title": "DraftKings promo code: Score $200 bonus + free NBA League Pass on Celtics-76ers, Duke-Michigan State, NBA, CBB",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0UWtdjR6YwDAMqpPYBonf3U36cjy-A2fRzC9-eptGCgHyrNjDbkB88O0umi8"
-        },
-        {
-          "url": "https://www.si.com/betting-promo/draftkings-promo-code-bet-5-get-200-in-bonus-bets-for-boston-vs-philadelphia-01m7317y9x2y",
-          "title": "DraftKings Promo Code: Bet $5, Get $200 in Bonus Bets for Boston vs. Philadelphia",
+          "url": "https://www.si.com/college/iowa-state/latest-news/one-bold-prediction-for-iowa-state-basketball-vs-southern",
+          "title": "One Bold Prediction for Iowa State Basketball vs. Southern",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuMU89dtrhUEQfJgf46c_VnlaVgImZGukA7kzZMxfOnDLz8WcqzY0rJy_JcO0"
-        },
-        {
-          "url": "https://wtop.com/news/2026/11/draftkings-promo-code-spend-5-get-200-bonus-for-nba-games-tonight/",
-          "title": "DraftKings Promo Code: Spend $5, Get $200 Bonus for NBA Games Tonight",
-          "publisher": "WTOP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgK8MlZPE7jI9rJWUR5ezV9T5pNzX5suJ8K24Bs9IgduDdbV5e4zrvpo4m9lo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSseBhz6SchhRhpOXxmRh4gersyeFyBLVdBKh864T1pVaLhv4H2sdaMwYmzmus"
         }
       ]
     },
     {
-      "query": "is giannis playing today",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T00:40:00Z",
+      "query": "milwaukee bucks",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T01:00:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/heat-injury-giannis-antetokounmpo-playing-214925478.html",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-10/josh-hart-illness-downgraded-to-out-tuesday",
-        "https://www.fantasypros.com/nba/news/618943/giannis-antetokounmpo-wrist-listed-probable-tuesday.php"
+        "https://www.espn.com/nba/story/_/id/50436679/doc-rivers-apologized-antetokounmpo-clarifies-critiques",
+        "https://sports.yahoo.com/articles/doc-rivers-gives-insight-giannis-003034038.html",
+        "https://www.sun-sentinel.com/2026/11/10/doc-rivers-giannis-antetokounmpo-comment-apology/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6G9A-4wejj7PQ9x4YizdUq9Rn1yswmWO_TKH4smpBq-skgTVTFJiOaKpiD7A",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/heat-injury-giannis-antetokounmpo-playing-214925478.html",
-          "title": "Heat Injury Update: Is Giannis Antetokounmpo Playing Tonight vs. Jazz?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6G9A-4wejj7PQ9x4YizdUq9Rn1yswmWO_TKH4smpBq-skgTVTFJiOaKpiD7A"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-10/josh-hart-illness-downgraded-to-out-tuesday",
-          "title": "Josh Hart (illness) downgraded to out Tuesday",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHjSIbop4v0rQd7TH8il7B_nmBNxm37f-VLnG_SCWJoYWAbZDRCr2LIz7sNEQ"
-        },
-        {
-          "url": "https://www.fantasypros.com/nba/news/618943/giannis-antetokounmpo-wrist-listed-probable-tuesday.php",
-          "title": "Giannis Antetokounmpo (wrist) listed probable Tuesday",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwPFMUizOmLBlX1NvZnhp6jUHzM61vDFjL2Ic_h08GAD1vFpJ71ohEzx8_Nxw"
-        }
-      ]
-    },
-    {
-      "query": "united flight",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T00:40:00Z",
-      "related_news_urls": [
-        "https://www.wwltv.com/article/news/crime/man-accused-of-making-bomb-threat-on-plane-landing-at-msy-airport-police-crime-investigation-safety/289-8042e728-dd7c-479d-8822-f8f836bd718b",
-        "https://abc7ny.com/post/passenger-arrested-claiming-have-bomb-newark-new-orleans-flight/20031564/",
-        "https://www.wdsu.com/article/man-arrested-at-louis-armstrong-international-after-advising-crew-he-had-a-bomb/74384204"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR13L3C_eZOE0_TWihVcy4F89CX_-vnAVetvht7N70z5ZeDVS-lv8JayCk-QZY",
-      "image_credit": "WWLTV.com",
-      "news": [
-        {
-          "url": "https://www.wwltv.com/article/news/crime/man-accused-of-making-bomb-threat-on-plane-landing-at-msy-airport-police-crime-investigation-safety/289-8042e728-dd7c-479d-8822-f8f836bd718b",
-          "title": "Man accused of claiming he had bomb on plane arrested at New Orleans airport",
-          "publisher": "WWLTV.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR13L3C_eZOE0_TWihVcy4F89CX_-vnAVetvht7N70z5ZeDVS-lv8JayCk-QZY"
-        },
-        {
-          "url": "https://abc7ny.com/post/passenger-arrested-claiming-have-bomb-newark-new-orleans-flight/20031564/",
-          "title": "Passenger arrested after claiming to have bomb on Newark-to-New Orleans flight",
-          "publisher": "ABC7 New York",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4odmSBt3uERPcMheRV0-x7_QIbkV0Z3m_RgngZWvXSFeOLudZlJGWVvjgVM"
-        },
-        {
-          "url": "https://www.wdsu.com/article/man-arrested-at-louis-armstrong-international-after-advising-crew-he-had-a-bomb/74384204",
-          "title": "Man arrested at Louis Armstrong International Airport after claiming he had a bomb",
-          "publisher": "WDSU",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXzm1U_AZBmJPw-80VPN1XWnj_9sFn2NqJqetNszsC-5sdeAzrBPk1LB2VVcY"
-        }
-      ]
-    },
-    {
-      "query": "cfp rankings",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-11T00:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50422353/cfp-playoff-2026-bubble-watch-week-10",
-        "https://sports.yahoo.com/articles/where-watch-second-release-2026-002805263.html",
-        "https://www.ncaa.com/news/football/article/2026-11-08/college-football-playoff-rankings-predictions-what-2026s-second-cfp-top-25-bracket"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAaO-emTDSUPjUM-DZObV488072YslORGwv0wOSPUkp10oaaL4lIlcHKc1vBw",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdNGXW_li98h-C-Sbu-35O1YOKJsJJHeepvciWFkm6MCndvTFxLIG0y5q1fj8",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/college-football/story/_/id/50422353/cfp-playoff-2026-bubble-watch-week-10",
-          "title": "College Football Playoff Bubble Watch after Week 10",
+          "url": "https://www.espn.com/nba/story/_/id/50436679/doc-rivers-apologized-antetokounmpo-clarifies-critiques",
+          "title": "Doc Rivers says he apologized to Giannis Antetokounmpo while clarifying critique",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAaO-emTDSUPjUM-DZObV488072YslORGwv0wOSPUkp10oaaL4lIlcHKc1vBw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdNGXW_li98h-C-Sbu-35O1YOKJsJJHeepvciWFkm6MCndvTFxLIG0y5q1fj8"
         },
         {
-          "url": "https://sports.yahoo.com/articles/where-watch-second-release-2026-002805263.html",
-          "title": "Where and how to watch the second release of the 2026 CFP rankings",
+          "url": "https://sports.yahoo.com/articles/doc-rivers-gives-insight-giannis-003034038.html",
+          "title": "Doc Rivers Gives Insight Into Giannis Antetokounmpo’s Bucks Exit",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRW_I1JlJLDRdnEGDHsOZFaznSQ2aTZrpyWKBtfVAoT-Skb_QxCtJMxL7rzMM8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXi46fJewvWzTyikK43kV61J21Ax3-zOyeZV3pwNwXbqO-GXawGNvPGMZfs2I"
         },
         {
-          "url": "https://www.ncaa.com/news/football/article/2026-11-08/college-football-playoff-rankings-predictions-what-2026s-second-cfp-top-25-bracket",
-          "title": "College Football Playoff rankings predictions: Bracket, top 25 projections for Week 11",
-          "publisher": "NCAA.com",
+          "url": "https://www.sun-sentinel.com/2026/11/10/doc-rivers-giannis-antetokounmpo-comment-apology/",
+          "title": "Doc Rivers apologizes for Giannis comments: ‘I hate this and feel bad about it’",
+          "publisher": "Sun Sentinel",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI7rEVxz5kzi5hU_0LLIWaLFMQX06GVfeSH-zsASKRAevZ53RlJmGw-RacFlA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPNWuJS3b_f6i0czqfkDQ_3W2U3StDek_poc2aKac6K57fkBEX6bVazrOXITk"
         }
       ]
     },
     {
-      "query": "ryan seacrest",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T00:30:00Z",
+      "query": "grammys 2026",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T01:00:00Z",
       "related_news_urls": [
-        "https://www.usatoday.com/story/sports/high-school/football/2026/11/10/ryan-seacrest-dunwoody-georgia-high-school-football-first-stadium/92630959007/",
-        "https://roanoke.com/sports/high-school/image_16f13a07-7ede-5388-bd5f-7582ccd88b76.html",
-        "https://www.wsbradio.com/news/local/school-board-advances-27-million-plan-renovate-stadium-named-after-ryan-seacrest/PDSMYEQJ7NGUTIS4F3HRTORQZ4/"
+        "https://www.billboard.com/music/latin/latin-grammys-2026-predictions-who-will-win-1236378615/",
+        "https://www.wishtv.com/lifestyle/latin-grammy-awards-gift-lounge-offers-stars-exclusive-gifts-ahead-of-ceremony/",
+        "https://www.mystateline.com/gooddaystateline/the-latin-grammys-are-here-and-so-is-the-gift-lounge/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRtErz5xuJGDOMGKxQ-CZkLpIya1GjviEzlzytqAdD2ENbsGgeqyFqi-iv2RA",
-      "image_credit": "USA Today",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuV-1n8U4CDWuUVz35j8wmVuzLYVmRKkgrBpU8-CLxJjgrj18a_1h9Zy7JQJI",
+      "image_credit": "Billboard",
       "news": [
         {
-          "url": "https://www.usatoday.com/story/sports/high-school/football/2026/11/10/ryan-seacrest-dunwoody-georgia-high-school-football-first-stadium/92630959007/",
-          "title": "How Ryan Seacrest is giving his old high school football team something it never had",
-          "publisher": "USA Today",
+          "url": "https://www.billboard.com/music/latin/latin-grammys-2026-predictions-who-will-win-1236378615/",
+          "title": "Latin Grammy Awards 2026 Predictions: Who Will Win the Top Honors?",
+          "publisher": "Billboard",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRtErz5xuJGDOMGKxQ-CZkLpIya1GjviEzlzytqAdD2ENbsGgeqyFqi-iv2RA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuV-1n8U4CDWuUVz35j8wmVuzLYVmRKkgrBpU8-CLxJjgrj18a_1h9Zy7JQJI"
         },
         {
-          "url": "https://roanoke.com/sports/high-school/image_16f13a07-7ede-5388-bd5f-7582ccd88b76.html",
-          "title": "Ryan Seacrest played defensive back for Dunwoody (GA) High School for two years before graduating in 1993.",
-          "publisher": "Roanoke Times",
+          "url": "https://www.wishtv.com/lifestyle/latin-grammy-awards-gift-lounge-offers-stars-exclusive-gifts-ahead-of-ceremony/",
+          "title": "Latin Grammy Awards gift lounge offers stars exclusive gifts ahead of ceremony",
+          "publisher": "WISH-TV",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRG1Kbkl5C7LIdY-pRUhA74FRpRpToM6YQrL4JkipdBua9UMk9E5HRH1oc5rNw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrqqBA4EQl-T9byAikCeWHVsyAKCGR3h2Nrtz-u_Nty7bxTawvdRYneIIgP0k"
         },
         {
-          "url": "https://www.wsbradio.com/news/local/school-board-advances-27-million-plan-renovate-stadium-named-after-ryan-seacrest/PDSMYEQJ7NGUTIS4F3HRTORQZ4/",
-          "title": "School board advances $2.7 million plan to renovate stadium named after Ryan Seacrest",
-          "publisher": "95.5 WSB",
+          "url": "https://www.mystateline.com/gooddaystateline/the-latin-grammys-are-here-and-so-is-the-gift-lounge/",
+          "title": "The Latin Grammy’s Are Here and So Is the Gift Lounge!",
+          "publisher": "MyStateline",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFTSovmtKBo9OYDVJmHe1lIMHf3XqtvPw4bQUAPhgIkRZ9KDIejjZXRa8Q_Uc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqk-wUZNNIjGtekBEHVQzN5xITLPp3Pq3Mi7rF11pVEF9fknwT2c31OWKKQtU"
+        }
+      ]
+    },
+    {
+      "query": "kristen saban",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T01:00:00Z",
+      "related_news_urls": [
+        "https://www.tuscaloosanews.com/story/sports/columns/2026/11/09/good-riddance-to-the-sec-title-game-that-alabama-football-once-dominated/92508273007/",
+        "https://www.al.com/alabamafootball/2026/11/does-alabama-even-want-to-play-in-final-sec-championship-game-what-kalen-deboer-said.html",
+        "https://sports.yahoo.com/articles/rip-nick-sabans-daughter-devastated-155313228.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkR0qqcJvLqssqH9V3mvRUkg-BzcUSb8kuyEl3QCMhj4h-1y2Iuq-63ASbACM",
+      "image_credit": "The Tuscaloosa News",
+      "news": [
+        {
+          "url": "https://www.tuscaloosanews.com/story/sports/columns/2026/11/09/good-riddance-to-the-sec-title-game-that-alabama-football-once-dominated/92508273007/",
+          "title": "Good riddance to SECCG that Alabama football once dominated | Goodbread",
+          "publisher": "The Tuscaloosa News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkR0qqcJvLqssqH9V3mvRUkg-BzcUSb8kuyEl3QCMhj4h-1y2Iuq-63ASbACM"
+        },
+        {
+          "url": "https://www.al.com/alabamafootball/2026/11/does-alabama-even-want-to-play-in-final-sec-championship-game-what-kalen-deboer-said.html",
+          "title": "Does Alabama even want to play in final SEC championship game? What Kalen DeBoer said",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ51E9JgxV2_tofwIdutgLIed9qIEi6mjjVPxZCIkOS5GxwmyYD9C4D-kJrBwE"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/rip-nick-sabans-daughter-devastated-155313228.html",
+          "title": "\"RIP\": Nick Saban's Daughter Devastated After New College Football Change",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNN1w9FmwV7aF08wOAKCZqWusIG-Ref8Rgd8XG0aSatowphF0wqfGJsOcnTVE"
+        }
+      ]
+    },
+    {
+      "query": "warhammer survivors",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T01:00:00Z",
+      "related_news_urls": [
+        "https://news.xbox.com/en-us/2026/11/10/warhammer-survivors-gloomspite-gitz/",
+        "https://www.polygon.com/warhammer-survivors-impressions/",
+        "https://www.cnet.com/tech/warhammer-survivors-review/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeuraY9WeGMq2H3-mMOFHAQ0lTKNSdlD0mE1BZDzywfm29Hdvv1qcf0Xnqpnw",
+      "image_credit": "XBOX Wire",
+      "news": [
+        {
+          "url": "https://news.xbox.com/en-us/2026/11/10/warhammer-survivors-gloomspite-gitz/",
+          "title": "Warhammer Survivors Out Now on XBOX Game Pass! Defeat the Gloomspite Gitz With These Tips",
+          "publisher": "XBOX Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeuraY9WeGMq2H3-mMOFHAQ0lTKNSdlD0mE1BZDzywfm29Hdvv1qcf0Xnqpnw"
+        },
+        {
+          "url": "https://www.polygon.com/warhammer-survivors-impressions/",
+          "title": "Warhammer Survivors Isn’t Good Enough to Be a Vampire Survivors Replacement",
+          "publisher": "Polygon.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRC05PVGhBC0GCtCLghAR26K6K78gWs3zGhtM9166x1gmTGGNqvlow-bWark_8"
+        },
+        {
+          "url": "https://www.cnet.com/tech/warhammer-survivors-review/",
+          "title": "Warhammer Survivors Isn’t Much More Than a Vampire Survivors Reskin, Which Is (Mostly) OK",
+          "publisher": "CNET",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj8S03fAUBZnwVsE4CRufMKJrSz9VB9v73gToFzv10aYxCTq8T0k2bk2r_d_k"
+        }
+      ]
+    },
+    {
+      "query": "college football playoff rankings",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-11T00:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50445136/eli-drinkwitz-questions-need-conferences-24-team-cfp",
+        "https://katu.com/news/local/oregon-head-coach-dan-lanning-college-football-playoff-expansion-ncaaf-football-oregon-ducks-state-beavers-big-ten-sports-playoffs-espn",
+        "https://www.nytimes.com/athletic/7768535/2026/11/09/college-football-playoff-expansion-winners-losers/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdUiKM7TjJiOWDPTijc3bP3DIhvngTYHCJtbeqM9maVva8yfk0oe3P37ZuOEk",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50445136/eli-drinkwitz-questions-need-conferences-24-team-cfp",
+          "title": "Missouri's Eli Drinkwitz questions need for conferences in 24-team CFP era",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdUiKM7TjJiOWDPTijc3bP3DIhvngTYHCJtbeqM9maVva8yfk0oe3P37ZuOEk"
+        },
+        {
+          "url": "https://katu.com/news/local/oregon-head-coach-dan-lanning-college-football-playoff-expansion-ncaaf-football-oregon-ducks-state-beavers-big-ten-sports-playoffs-espn",
+          "title": "Ducks Head Coach responds to College Football Playoff expansion news",
+          "publisher": "KATU",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOAJyj0nQYTp9OZWBa_9vZT_FLwEwkVmn2F2vevRpAo_Gph976dLFnBXJ51lM"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7768535/2026/11/09/college-football-playoff-expansion-winners-losers/",
+          "title": "College Football Playoff expansion winners and losers, from fans to bowls to the Big Ten",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQuXqrls9mMNgz7h0nEzlwFblv5P_lTAY0eipNkExoKb7bkw-cPwfPg8RPlluE"
         }
       ]
     }
