@@ -3,48 +3,328 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T04:31:20.120714Z",
+  "checked_at": "2026-11-11T05:01:32.083773Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "nancy pelosi",
+      "query": "aday mara",
       "approx_searches": "500+",
-      "published_at": "2026-11-11T04:10:00Z",
+      "published_at": "2026-11-11T04:40:00Z",
       "related_news_urls": [
-        "https://thehill.com/homenews/house/6211133-pelosi-advises-against-kicking-stevens-out-of-house-democratic-caucus/",
-        "https://www.cbsnews.com/detroit/video/rep-nancy-pelosi-speaks-out-against-expelling-haley-stevens/",
-        "https://www.washingtonpost.com/politics/2026/11/10/pelosi-does-not-support-kicking-rep-haley-stevens-out-democratic-caucus/"
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/aday-mara-to-make-first-career-start-wednesday",
+        "https://sports.yahoo.com/articles/thunders-frontcourt-dominated-far-season-000002231.html",
+        "https://www.oklahoman.com/story/sports/nba/thunder/2026/11/10/okc-thunder-stats-shai-gilgeous-alexander-nba-schedule/92697694007/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOpjjUyAQa2vEhKXqj5RXK-JNtQmM43jv3InyO-vyGO_YczEZYyFrX-rmy4Hg",
-      "image_credit": "The Hill",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZ2LBFdTwXbJVxrq-xjo5ncfvB5UZ2_czSsorPQ8KGn1VXTpIg8xT-jOe2CY4",
+      "image_credit": "NBC Sports",
       "news": [
         {
-          "url": "https://thehill.com/homenews/house/6211133-pelosi-advises-against-kicking-stevens-out-of-house-democratic-caucus/",
-          "title": "Pelosi advises against kicking Stevens out of House Democratic caucus",
-          "publisher": "The Hill",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-04/aday-mara-to-make-first-career-start-wednesday",
+          "title": "Aday Mara to make first career start Wednesday",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOpjjUyAQa2vEhKXqj5RXK-JNtQmM43jv3InyO-vyGO_YczEZYyFrX-rmy4Hg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZ2LBFdTwXbJVxrq-xjo5ncfvB5UZ2_czSsorPQ8KGn1VXTpIg8xT-jOe2CY4"
         },
         {
-          "url": "https://www.cbsnews.com/detroit/video/rep-nancy-pelosi-speaks-out-against-expelling-haley-stevens/",
-          "title": "Rep. Nancy Pelosi speaks out against expelling Haley Stevens",
-          "publisher": "CBS News",
+          "url": "https://sports.yahoo.com/articles/thunders-frontcourt-dominated-far-season-000002231.html",
+          "title": "The Thunder's Frontcourt Has Dominated So Far This Season",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRMb56IGl4SSF924Kfr0dmmVHzYr2lLVO91R2KkBRmAaG56aBuU3qS-qtgk8w"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOx0MaDCU9W0PeCl-_LqHxMogYSrCPu3X8d78VJS0ZMm5yGoxKEu8dDQ3Lf44"
         },
         {
-          "url": "https://www.washingtonpost.com/politics/2026/11/10/pelosi-does-not-support-kicking-rep-haley-stevens-out-democratic-caucus/",
-          "title": "Pelosi does not support kicking Rep. Haley Stevens out of Democratic caucus",
-          "publisher": "The Washington Post",
+          "url": "https://www.oklahoman.com/story/sports/nba/thunder/2026/11/10/okc-thunder-stats-shai-gilgeous-alexander-nba-schedule/92697694007/",
+          "title": "10 OKC Thunder stats to know after surprising start for Shai Gilgeous-Alexander & Co.",
+          "publisher": "The Oklahoman",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_ZYnNopVyZflLIGn3yqOr2Rd1ud0Chvotx_AFyPw6hxqLoNolmg6XMDcMkoE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIa_e43R2Gzswctvq3nObesEBxiQDRXfrc85vHZ8jL64BLZX3YTmDS0DMXKkk"
         }
       ]
     },
     {
-      "query": "weather houston",
+      "query": "burt reynolds",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T04:40:00Z",
+      "related_news_urls": [
+        "https://insidepulse.com/2026/11/10/toy-robot-video-brings-christmas-treats-of-wesley-snipes-burt-reynolds-and-kiss/",
+        "https://whysoblu.com/toy-robots-dec-releases-passenger-57-sharkys-machine-detroit-rock-city-arrive-on-4k/",
+        "https://whysoblu.com/toy-robots-dec-releases-passenger-57-sharkys-machine-detroit-rock-city-arrive-on-4k/sharkys-machine-4k/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHESbV4N18KMzFuhw8Wzw2Dm-v2ECzE9chIPPb57qGDGEwGxQfUXZ1eUwsNxs",
+      "image_credit": "Inside Pulse",
+      "news": [
+        {
+          "url": "https://insidepulse.com/2026/11/10/toy-robot-video-brings-christmas-treats-of-wesley-snipes-burt-reynolds-and-kiss/",
+          "title": "Toy Robot Video brings Christmas treats of Wesley Snipes, Burt Reynolds and Kiss!!!",
+          "publisher": "Inside Pulse",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHESbV4N18KMzFuhw8Wzw2Dm-v2ECzE9chIPPb57qGDGEwGxQfUXZ1eUwsNxs"
+        },
+        {
+          "url": "https://whysoblu.com/toy-robots-dec-releases-passenger-57-sharkys-machine-detroit-rock-city-arrive-on-4k/",
+          "title": "Toy Robot's Dec Releases: Passenger 57, Sharky's Machine & Detroit Rock City Arrive on 4K!",
+          "publisher": "Why So Blu?",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ72AvG4fZIoGqu-PcXp9QYM8k2qmLqghf7O51Psiq5vk2W1PJp8Hz0dH7wqMU"
+        },
+        {
+          "url": "https://whysoblu.com/toy-robots-dec-releases-passenger-57-sharkys-machine-detroit-rock-city-arrive-on-4k/sharkys-machine-4k/",
+          "title": "Sharky’s Machine 4K",
+          "publisher": "Why So Blu?",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlNdpkytehzkT1PKMkbBZzdYk7uSwwJHM8Xx18YKNgbEUTloPJu3I4jdaSnjY"
+        }
+      ]
+    },
+    {
+      "query": "karely ruiz",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T04:40:00Z",
+      "related_news_urls": [
+        "https://www.facebook.com/MilenioDiario/photos/-a-una-invitada-no-se-le-trata-as%C3%AD-karely-ruiz-y-bellakath-discuten-en-la-mansi%C3%B3/1676383557852442/",
+        "https://www.milenio.com/espectaculos/famosos/karely-ruiz-bellakath-discuten-mansion-vip-2",
+        "https://www.tvnotas.com.mx/espectaculos-mexico/paola-suarez-y-karely-se-van-a-los-golpes-en-la-mansion-vip-tras-retarla-a-subirse-al-ring-protagonizan-pelea"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJtyU-COZIF8aQOUquhyQsrTKrBKRpcR7YUSPtJORAGQ3KMFlbawc2s_Q11Fc",
+      "image_credit": "Facebook",
+      "news": [
+        {
+          "url": "https://www.facebook.com/MilenioDiario/photos/-a-una-invitada-no-se-le-trata-as%C3%AD-karely-ruiz-y-bellakath-discuten-en-la-mansi%C3%B3/1676383557852442/",
+          "title": "📸 “A una invitada no se le trata así”: Karely Ruiz y Bellakath discuten en La Mansión VIP sobre una supuesta colaboración que no se llevó a cabo https://mile.io/4zE7BZT",
+          "publisher": "Facebook",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJtyU-COZIF8aQOUquhyQsrTKrBKRpcR7YUSPtJORAGQ3KMFlbawc2s_Q11Fc"
+        },
+        {
+          "url": "https://www.milenio.com/espectaculos/famosos/karely-ruiz-bellakath-discuten-mansion-vip-2",
+          "title": "“A una invitada no se le trata así”: Karely Ruiz y Bellakath DISCUTEN en La Mansión VIP; esto se reclamaron",
+          "publisher": "Milenio",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsesNTrk3Kt_SaXy1WHK4bnVhGW4RqVhxa7cbQaVuE2-QyPVW4MSfpWucvZwg"
+        },
+        {
+          "url": "https://www.tvnotas.com.mx/espectaculos-mexico/paola-suarez-y-karely-se-van-a-los-golpes-en-la-mansion-vip-tras-retarla-a-subirse-al-ring-protagonizan-pelea",
+          "title": "¿Paola Suárez y Karely se van a los golpes en ‘La mansión VIP’? Tras retarla a subirse al ring, protagonizan",
+          "publisher": "TVNotas",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsvAmEBuSUtBx5RM8XvxglvnsL1vPVvOgRgDA82SB4Ce9JCreZ1gwVacI4ty8"
+        }
+      ]
+    },
+    {
+      "query": "kenpom",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T04:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/florida-still-tops-espns-bracketology-154135579.html",
+        "https://gatorswire.usatoday.com/story/sports/college/gators/mens-basketball/2026/11/09/florida-gators-basketball-power-index-rankings-ratings-record-predictions-week-1/92688310007/",
+        "https://sports.yahoo.com/articles/where-kenpom-ranks-florida-college-144904706.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgAuoaZrvHxmyhMEBeAq3payRp9S0uiSwHzfXivVzRiPVRTf-JorKjQZxKYTw",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/florida-still-tops-espns-bracketology-154135579.html",
+          "title": "Florida still tops ESPN's bracketology after season's opening week",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgAuoaZrvHxmyhMEBeAq3payRp9S0uiSwHzfXivVzRiPVRTf-JorKjQZxKYTw"
+        },
+        {
+          "url": "https://gatorswire.usatoday.com/story/sports/college/gators/mens-basketball/2026/11/09/florida-gators-basketball-power-index-rankings-ratings-record-predictions-week-1/92688310007/",
+          "title": "Where Florida ranks in Basketball Power Index after season's first week",
+          "publisher": "Gators Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyo7SRoiwnIZFmHMLl7Hrmp3oaR6PNoCuZ9HnagCRTwYr3ag5KuNtYp7uTo2c"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/where-kenpom-ranks-florida-college-144904706.html",
+          "title": "Where KenPom ranks Florida after college basketball's opening week",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1fIuZLAvbs_U_tFobuSGz__heXp_ItekhM1LOhpGB46lDtAS9OF2q8110tS8"
+        }
+      ]
+    },
+    {
+      "query": "malik monk",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T04:40:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/fantasy/basketball/news/kings-malik-monk-chips-in-nine-points/",
+        "https://www.fantasypros.com/nba/news/617444/malik-monk-drops-24-points-monday.php",
+        "https://www.nba.com/watch/video/malik-monk-11-02-26-mavericks?plsrc=nba&collection=kings-post-game-pressers"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnLuJyGE-4fvkpkhhFpY-KsXN2Bt_GwESwcn8jwJiK_oJLd0rhId20iDjdsJ0",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/kings-malik-monk-chips-in-nine-points/",
+          "title": "Kings' Malik Monk: Chips in nine points",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnLuJyGE-4fvkpkhhFpY-KsXN2Bt_GwESwcn8jwJiK_oJLd0rhId20iDjdsJ0"
+        },
+        {
+          "url": "https://www.fantasypros.com/nba/news/617444/malik-monk-drops-24-points-monday.php",
+          "title": "Malik Monk drops 24 points Monday",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsXBML4tKDfN5C_IHyk2zMVaifwWk5OS2QsTecONb7dbw5n37cUx4xNloEzJM"
+        },
+        {
+          "url": "https://www.nba.com/watch/video/malik-monk-11-02-26-mavericks?plsrc=nba&collection=kings-post-game-pressers",
+          "title": "Malik Monk - 11/02/26 @ Mavericks",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTugXMq2yohn7TIkxByXQO09MkCXmzVk864OXHiTStXcPef2zctYRSeoa6lQ7o"
+        }
+      ]
+    },
+    {
+      "query": "sidy cissoko",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T04:30:00Z",
+      "related_news_urls": [
+        "https://www.blazersedge.com/trail-blazers-news/118225/blazers-move-scoot-henderson-out-of-starting-lineup-versus-thunder",
+        "https://www.rotowire.com/basketball/headlines/sidy-cissoko-news-starting-tuesday-538531",
+        "https://www.espn.com/video/clip/_/id/50416541"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9jtw4ymgfOyUJbPZ2y94fMdwYdTwPLM2Uh5I38kzJDkQrkakODyVtwYcLuRg",
+      "image_credit": "Blazer's Edge",
+      "news": [
+        {
+          "url": "https://www.blazersedge.com/trail-blazers-news/118225/blazers-move-scoot-henderson-out-of-starting-lineup-versus-thunder",
+          "title": "Blazers Move Scoot Henderson Out of Starting Lineup Versus Thunder",
+          "publisher": "Blazer's Edge",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9jtw4ymgfOyUJbPZ2y94fMdwYdTwPLM2Uh5I38kzJDkQrkakODyVtwYcLuRg"
+        },
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/sidy-cissoko-news-starting-tuesday-538531",
+          "title": "Sidy Cissoko News: Starting Tuesday",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR45nMbWnXmpjhp9-I2L1BIxOSRBnwdh_93z7TwCG1W9cLBS0yP8-fpkbM0sSk"
+        },
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50416541",
+          "title": "Sidy Cissoko fights off defender for and-1",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjJcNQ80uj2Gpzw3Z1pjWgd7houtjhkbwevawZneETRfSJHmM2kZiEjCddF-4"
+        }
+      ]
+    },
+    {
+      "query": "jazz vs heat",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T04:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/final-injury-report-heat-jazz-220000162.html",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-10/tristan-da-silva-calf-downgraded-to-out-tuesday",
+        "https://www.rotoballer.com/player-news/giannis-antetokounmpo-expected-to-play-tuesday/1989275"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ17twKXIw3p1Cdvn6IritTNZ8ZTB-4tsDpgPsBs2PJDtOAMLXo4nYc46Kd7n4",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/final-injury-report-heat-jazz-220000162.html",
+          "title": "Final Injury Report for Heat-Jazz: Will Giannis Antetokounmpo, Lauri Markkanen Play?",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ17twKXIw3p1Cdvn6IritTNZ8ZTB-4tsDpgPsBs2PJDtOAMLXo4nYc46Kd7n4"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-10/tristan-da-silva-calf-downgraded-to-out-tuesday",
+          "title": "Tristan da Silva (calf) downgraded to out Tuesday",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdKFwV9y0ZeUXEGWgKVOOHHGpKYm0VZQ5yF2Ym0fNc2TfHNTUCJwaZ0JhTnBY"
+        },
+        {
+          "url": "https://www.rotoballer.com/player-news/giannis-antetokounmpo-expected-to-play-tuesday/1989275",
+          "title": "Giannis Antetokounmpo Expected to Play Tuesday - NBA News | Fantasy Basketball",
+          "publisher": "RotoBaller",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7uv9K6eCGxpL1j2jh90Zux3kLqj2p20jP96f1Mdh85syLifkN8qGvslf-lKI"
+        }
+      ]
+    },
+    {
+      "query": "sam claflin",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T04:30:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/movies/articles/sam-claflin-great-idea-hunger-180310711.html",
+        "https://hollywoodlife.com/feature/will-finnick-odair-get-hunger-games-book-movie-5582645/",
+        "https://www.imdb.com/news/ni66103279/?ref_=int_nwr_4"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBk4Nv4ChLkajC-g-B-v9nahvXNZ8kzgpUOt5VBqfIzTFzbBQPw5egd7zrwyQ",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/sam-claflin-great-idea-hunger-180310711.html",
+          "title": "Sam Claflin Has A Great Idea For A Hunger Games Prequel (And The Role He Could Play In It)",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBk4Nv4ChLkajC-g-B-v9nahvXNZ8kzgpUOt5VBqfIzTFzbBQPw5egd7zrwyQ"
+        },
+        {
+          "url": "https://hollywoodlife.com/feature/will-finnick-odair-get-hunger-games-book-movie-5582645/",
+          "title": "Will Finnick Odair Get a ‘Hunger Games’ Book & Movie? Sam Claflin Has an Idea",
+          "publisher": "Hollywood Life",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ1GJ2yDRNPa6jXZ1fCJKzqEbeJ25nnpuvVvEriW22c7OOGOsWKOkp-OiUzn8"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66103279/?ref_=int_nwr_4",
+          "title": "Sam Claflin & Girlfriend Dar Zuzovsky Make Rare Red Carpet Appearance at ‘Ebenezer’ Global Premiere in London!",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9WsDAm7AoLllXMOrbBUmUtLU1XXG58xQe6WqP9yuC60-5Ph5rIi2Jd6k3oaI"
+        }
+      ]
+    },
+    {
+      "query": "mega millions numbers",
       "approx_searches": "1000+",
-      "published_at": "2026-11-11T04:10:00Z",
+      "published_at": "2026-11-11T04:20:00Z",
+      "related_news_urls": [
+        "https://www.detroitnews.com/story/news/lottery/2026/11/10/mega-millions-numbers-for-tuesday-november-10/92719695007/",
+        "https://www.sctimes.com/story/news/local/2026/11/10/minnesota-lottery-results-tuesday-november-10-2026/92720027007/",
+        "https://www.cleveland.com/lottery/2026/11/mega-millions-numbers-for-tuesday-nov-10-2026-jackpot-529-million.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_LNbGuwqVWmE6mtOtcZwk3lTOfTfQfZPokiVdDCmG80z2DlSHCbRucxRbsvk",
+      "image_credit": "The Detroit News",
+      "news": [
+        {
+          "url": "https://www.detroitnews.com/story/news/lottery/2026/11/10/mega-millions-numbers-for-tuesday-november-10/92719695007/",
+          "title": "Mega Millions numbers for Tuesday, Nov. 10",
+          "publisher": "The Detroit News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_LNbGuwqVWmE6mtOtcZwk3lTOfTfQfZPokiVdDCmG80z2DlSHCbRucxRbsvk"
+        },
+        {
+          "url": "https://www.sctimes.com/story/news/local/2026/11/10/minnesota-lottery-results-tuesday-november-10-2026/92720027007/",
+          "title": "MN Lottery Results: Mega Millions, Pick 3 winning numbers for Nov. 10, 2026",
+          "publisher": "St. Cloud Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdCijAwpHdA0f9AZCTbQyzssa3OrBpz0TzcS2H96OZL6L_GSfQUfmwd6GMwZc"
+        },
+        {
+          "url": "https://www.cleveland.com/lottery/2026/11/mega-millions-numbers-for-tuesday-nov-10-2026-jackpot-529-million.html",
+          "title": "Mega Millions numbers for Tuesday, Nov. 10, 2026; jackpot $529 million",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSl3O2wgOW-a1EM3Vu86NJrbGkCZOATMpM2Ym2mq36WiCGOQukVdLjr7Che46c"
+        }
+      ]
+    },
+    {
+      "query": "houston weather",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-11T04:20:00Z",
       "related_news_urls": [
         "https://www.click2houston.com/news/local/2026/11/08/live-radar-showers-and-moderate-rain-moving-into-southeast-texas/",
         "https://www.khou.com/article/weather/houston-texas-weather-forecast-update/285-eef90a85-8b4b-472f-b573-d23213b4f4b1",
@@ -73,286 +353,6 @@
           "publisher": "Space City Weather",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Bal_03eIhWe9O3rloK0be7P2uOpha77ic8_zNKnCCrij783epCi_ImnL8gw"
-        }
-      ]
-    },
-    {
-      "query": "jakob chychrun",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T04:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nhl/recap?gameId=401892685",
-        "https://www.nhl.com/news/washington-capitals-ottawa-senators-game-recap-november-10-2026",
-        "https://sports.yahoo.com/articles/hutsons-overtime-goal-gives-capitals-025824317.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0TMcEPa7t-WiigsZqSQ3PV1BaxH0W1odXiYqdvP_wuTmeiZWZW3BWf7EQjPo",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nhl/recap?gameId=401892685",
-          "title": "Capitals 3-2 Senators (Nov 10, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0TMcEPa7t-WiigsZqSQ3PV1BaxH0W1odXiYqdvP_wuTmeiZWZW3BWf7EQjPo"
-        },
-        {
-          "url": "https://www.nhl.com/news/washington-capitals-ottawa-senators-game-recap-november-10-2026",
-          "title": "Hutson scores in OT, Capitals rally past Senators",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYTHHyf3nstwtetMnAyd1-bDFNQXct4KsdXbxOFzHuVRckZ0eKOHkzTVpyVqk"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/hutsons-overtime-goal-gives-capitals-025824317.html",
-          "title": "Hutson's Overtime Goal Gives Capitals A 3-2 Win Over Senators",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSK2wfeO5OK37SWNcAn9pvvc0s6Jq9pNeyKNNNC3Metp43IjpCTSUkTH4HHJYs"
-        }
-      ]
-    },
-    {
-      "query": "mega millions drawing",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T04:10:00Z",
-      "related_news_urls": [
-        "https://www.detroitnews.com/story/news/lottery/2026/11/10/mega-millions-numbers-for-tuesday-november-10/92719695007/",
-        "https://www.usatoday.com/story/money/lottery/2026/11/10/mega-millions-jackpot-nov-10-2026/92714614007/",
-        "https://www.yahoo.com/news/us/articles/mega-millions-winning-numbers-tuesday-033031266.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_LNbGuwqVWmE6mtOtcZwk3lTOfTfQfZPokiVdDCmG80z2DlSHCbRucxRbsvk",
-      "image_credit": "The Detroit News",
-      "news": [
-        {
-          "url": "https://www.detroitnews.com/story/news/lottery/2026/11/10/mega-millions-numbers-for-tuesday-november-10/92719695007/",
-          "title": "Mega Millions numbers for Tuesday, Nov. 10",
-          "publisher": "The Detroit News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_LNbGuwqVWmE6mtOtcZwk3lTOfTfQfZPokiVdDCmG80z2DlSHCbRucxRbsvk"
-        },
-        {
-          "url": "https://www.usatoday.com/story/money/lottery/2026/11/10/mega-millions-jackpot-nov-10-2026/92714614007/",
-          "title": "Mega Millions jackpot hits $529M for Nov. 10 drawing. What to know",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9UsvlC_Nv04h28xpU0Bnfn_e4sr-pZxnMza6kx9N8Na3mM9PjOMxLaVoizIs"
-        },
-        {
-          "url": "https://www.yahoo.com/news/us/articles/mega-millions-winning-numbers-tuesday-033031266.html",
-          "title": "Mega Millions winning numbers for Tuesday, Nov. 10. Check your tickets",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrDEZ_hCj8XXhTqDQ51VdaWhfmma4NH5E9ntMUEKxjbe67bcnlh55kpgzEr9E"
-        }
-      ]
-    },
-    {
-      "query": "usc women's basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T04:10:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/womens-college-basketball/news/juju-watkins-returns-as-south-carolina-and-usc-meet-again-in-a-fast-growing-rivalry",
-        "https://sports.yahoo.com/articles/uscs-juju-watkins-saniyah-hall-013551144.html",
-        "https://247sports.com/college/usc/article/usc-women-of-troy-guard-juju-watkins-national-player-of-the-week-usbwa-associated-press-292535737/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfeqcNbP6Jxc1Tx4JYavgdzQhrBG3CFveSLspphEVaJjkD8KxjqosrA_teBZo",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/womens-college-basketball/news/juju-watkins-returns-as-south-carolina-and-usc-meet-again-in-a-fast-growing-rivalry",
-          "title": "JuJu Watkins returns as South Carolina and USC meet again in a fast-growing rivalry",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfeqcNbP6Jxc1Tx4JYavgdzQhrBG3CFveSLspphEVaJjkD8KxjqosrA_teBZo"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/uscs-juju-watkins-saniyah-hall-013551144.html",
-          "title": "USC's Juju Watkins, Saniyah Hall earn Big Ten honors for opening week",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpXhLQAK6ljcASQdti_UB0mPjxKDFmR3RZXDiojRWzXBcfWVl2tBc_9LV6ul0"
-        },
-        {
-          "url": "https://247sports.com/college/usc/article/usc-women-of-troy-guard-juju-watkins-national-player-of-the-week-usbwa-associated-press-292535737/",
-          "title": "USC's JuJu Watkins earns National Player of the Week honors",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIJZuYCTBE6e6qFufHtY0b4sTnp6wz2MIhBqwuV8BRIaSDnPRt7M3XQhMvmEY"
-        }
-      ]
-    },
-    {
-      "query": "isaiah hartenstein",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T04:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/probably-just-playing-team-think-210056499.html",
-        "https://www.si.com/nba/thunder/onsi/isaiah-hartenstein-continues-to-fill-his-role-perfectly",
-        "https://www.fantasypros.com/nba/news/617974/isaiah-hartenstein-racks-up-12-boards-win.php"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS04qWr60sv6OOSGy2nqaobk1tFp3aAPK66AMETNDeazz4UgcYull2NisYnKJM",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/probably-just-playing-team-think-210056499.html",
-          "title": "“Probably just playing as a team. I think we’ve done a …",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS04qWr60sv6OOSGy2nqaobk1tFp3aAPK66AMETNDeazz4UgcYull2NisYnKJM"
-        },
-        {
-          "url": "https://www.si.com/nba/thunder/onsi/isaiah-hartenstein-continues-to-fill-his-role-perfectly",
-          "title": "Isaiah Hartenstein Continues To Fill His Role Perfectly",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-viZpgMLDd5KDPehJcOjm2a7XZCzIAP8JZiYLUEicNZdJtM0NcOL70UkzTWA"
-        },
-        {
-          "url": "https://www.fantasypros.com/nba/news/617974/isaiah-hartenstein-racks-up-12-boards-win.php",
-          "title": "Isaiah Hartenstein racks up 12 boards in win",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG3ePMfGx_UErN6ixj8QRFfsCsgKslhttSmfS-YEGdkDhyFt_Mo_196D0SGyA"
-        }
-      ]
-    },
-    {
-      "query": "trump usda snap benefits change",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T04:10:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/10/trump-administration-moves-to-cut-food-stamps-for-6point3-million-people.html",
-        "https://thehill.com/homenews/administration/6211586-usda-snap-eligibility-proposal/",
-        "https://www.nytimes.com/2026/11/10/us/snap-eligibility-food-stamps-trump.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNS283YXwXDnSnC-Q61SuR2-n5d30kbr4i6O5kkk8G-hbhwGj5XsnHiSojfgA",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/10/trump-administration-moves-to-cut-food-stamps-for-6point3-million-people.html",
-          "title": "Trump administration moves to cut food stamps for 6.3 million people",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNS283YXwXDnSnC-Q61SuR2-n5d30kbr4i6O5kkk8G-hbhwGj5XsnHiSojfgA"
-        },
-        {
-          "url": "https://thehill.com/homenews/administration/6211586-usda-snap-eligibility-proposal/",
-          "title": "New USDA proposal moves to kick millions from SNAP",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgUsltvVfUqpD1f9o9jkEEU6LKKRS9qOxtpNQ0Da21zrOs0TYUFkndiKtU5eA"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/10/us/snap-eligibility-food-stamps-trump.html",
-          "title": "Trump Administration Moves to Further Limit SNAP Eligibility, Affecting Millions",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE0dIIA-baXAlWtI7N6vgkCxKUWRCJ8Rh6lF_STOioav6546FHojoDmPalPpw"
-        }
-      ]
-    },
-    {
-      "query": "49ers stadium",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T04:10:00Z",
-      "related_news_urls": [
-        "https://abc7news.com/post/san-francisco-49ers-las-vegas-raiders-fans-ejected-arrested-violent-fights-levis-stadium-santa-clara-police/20029103/",
-        "https://www.mercurynews.com/2026/11/10/arrest-made-in-unconscious-mans-beating-at-49ers-raiders-game/",
-        "https://www.nbcbayarea.com/news/local/levis-stadium-fight-video-arrest/4173833/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRC3q65PrUmY9RYOZCVbO1WfRqPFflv4H0i_lqoXYvH8mZradYnvlRot2KNwLE",
-      "image_credit": "ABC7 Bay Area",
-      "news": [
-        {
-          "url": "https://abc7news.com/post/san-francisco-49ers-las-vegas-raiders-fans-ejected-arrested-violent-fights-levis-stadium-santa-clara-police/20029103/",
-          "title": "San Francisco 49ers and Las Vegas Raiders fans ejected, arrested after violent fights at Levi's Stadium: Santa Clara police",
-          "publisher": "ABC7 Bay Area",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRC3q65PrUmY9RYOZCVbO1WfRqPFflv4H0i_lqoXYvH8mZradYnvlRot2KNwLE"
-        },
-        {
-          "url": "https://www.mercurynews.com/2026/11/10/arrest-made-in-unconscious-mans-beating-at-49ers-raiders-game/",
-          "title": "Arrest made in unconscious man’s beating at 49ers-Raiders game",
-          "publisher": "The Mercury News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxXD8dhN1dI1GJQWGy5LbL-C_2GVBEmKvpMFyZHbnYyHCpcf2a8-o3WFPiiRI"
-        },
-        {
-          "url": "https://www.nbcbayarea.com/news/local/levis-stadium-fight-video-arrest/4173833/",
-          "title": "Police arrest man seen in video attacking unconscious person at Levi's Stadium parking lot",
-          "publisher": "NBC Bay Area",
-          "description": "",
-          "image_url": null
-        }
-      ]
-    },
-    {
-      "query": "okc",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T04:00:00Z",
-      "related_news_urls": [
-        "https://www.koco.com/article/oklahoma-city-homicide-deadly-shooting-burton-wesley-morris/74387029",
-        "https://kfor.com/news/local/police-investigating-fatal-shooting-at-nw-oklahoma-city-apartment-complex/",
-        "https://www.news9.com/crime/man-found-shot-police-northwest-oklahoma-city-apartment-investigation"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRo_h2T_DAVoyJY7wOmekb7fqyTykcpAr_2SLEjvHUWR1W6wWIMfDQmnOBxwk8",
-      "image_credit": "KOCO",
-      "news": [
-        {
-          "url": "https://www.koco.com/article/oklahoma-city-homicide-deadly-shooting-burton-wesley-morris/74387029",
-          "title": "Homicide investigation underway after shooting victim found dead at OKC apartment complex",
-          "publisher": "KOCO",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRo_h2T_DAVoyJY7wOmekb7fqyTykcpAr_2SLEjvHUWR1W6wWIMfDQmnOBxwk8"
-        },
-        {
-          "url": "https://kfor.com/news/local/police-investigating-fatal-shooting-at-nw-oklahoma-city-apartment-complex/",
-          "title": "Police investigating fatal shooting at NW Oklahoma City apartment complex",
-          "publisher": "KFOR",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzvpbe4eX27OYyQeTnj_tYDmDOx92FSYNoFCvugeFyQwPcdvpaMf0pbkcHhEw"
-        },
-        {
-          "url": "https://www.news9.com/crime/man-found-shot-police-northwest-oklahoma-city-apartment-investigation",
-          "title": "Man found shot to death outside northwest Oklahoma City apartment",
-          "publisher": "News 9",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8qMVHy87m-jcZmW78lhcKajPPbpGjoas4zYeVhKUk1soLsJEWPy8d2NUj5ik"
-        }
-      ]
-    },
-    {
-      "query": "pumas - tigres uanl",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T04:00:00Z",
-      "related_news_urls": [
-        "https://www.si.com/mx/liga-mx/liga-femenil-tigres-derroto-3-2-a-pumas-en-el-inicio-de-la-liguilla",
-        "https://www.elnorte.com/vamos-por-la-final-diana-ordonez/ar3311367?grrecs=1&widget=portadasecciontrending-elnorte-cancha&reftype=portada&ckrecommendationid=RID-5f-4c9d-9d16-4fc711f7fd40-CID-f7e61c",
-        "https://gamavision.com/noticias/amazonas-inician-el-camino-rumbo-al-campeonato-en-cu"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThJC6Q1KGELWjUR1T2m-PXtLQOXg85Gmm5NITkIchHQpDe8ASsEmhTKqzY4G4",
-      "image_credit": "Sports Illustrated",
-      "news": [
-        {
-          "url": "https://www.si.com/mx/liga-mx/liga-femenil-tigres-derroto-3-2-a-pumas-en-el-inicio-de-la-liguilla",
-          "title": "Liga Femenil: Tigres derrotó 3-2 a Pumas en el inicio de la Liguilla",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThJC6Q1KGELWjUR1T2m-PXtLQOXg85Gmm5NITkIchHQpDe8ASsEmhTKqzY4G4"
-        },
-        {
-          "url": "https://www.elnorte.com/vamos-por-la-final-diana-ordonez/ar3311367?grrecs=1&widget=portadasecciontrending-elnorte-cancha&reftype=portada&ckrecommendationid=RID-5f-4c9d-9d16-4fc711f7fd40-CID-f7e61c",
-          "title": "Vamos por la Final.- Diana Ordóñez",
-          "publisher": "El Norte",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbAXeR3_2JeLrL2MdyKbSwS9YBjTcx6ljhGKPjaqXEG6Q884iOoeqjIQ_iyNE"
-        },
-        {
-          "url": "https://gamavision.com/noticias/amazonas-inician-el-camino-rumbo-al-campeonato-en-cu",
-          "title": "Amazonas inician el camino rumbo al campeonato en C.U.",
-          "publisher": "gamavisión",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSmIjHvP5DNSFjkNJ5xztstB8OID2btd9LnrPbXRrZ7dRoKFuM-HpYc5SOIvY"
         }
       ]
     }
