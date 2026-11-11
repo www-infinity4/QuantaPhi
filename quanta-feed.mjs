@@ -7,7 +7,8 @@ import {mountSpaceSource} from './quanta-feed-spaces.mjs';
 import {cards as BUBBLES_CARDS} from './bubbles-card-catalog.mjs';
 import {loadOwnQuantScores} from './quanta-feed-quants.mjs';
 import {openQuickCardPreview,safeLocalCardUrl} from './quick-card-preview.mjs';
-import {FEED_STORAGE_KEY,FEED_TABS,cleanFeedState,feedCandidates,nextFeedCard,nextFeedDirection,markViewed,markOpened,toggleFollowing} from './quanta-feed-rank.mjs';
+import {FEED_STORAGE_KEY,FEED_TABS,cleanFeedState,feedCandidates,nextFeedCard,nextFeedDirection,markViewed,markOpened,toggleFollowing,toggleInterest} from './quanta-feed-rank.mjs';
+import {INTEREST_DEPARTMENTS} from './quanta-context-placement.mjs';
 
 const fromSources=QUICK_CARD_SOURCES.map(c=>({
  id:c.id,name:c.name,category:c.kind,feature:c.feature,study:c.details,
@@ -105,6 +106,25 @@ function renderHome(){
   b.type='button';b.setAttribute('role','tab');b.setAttribute('aria-selected',String(tab===name));
   b.addEventListener('click',()=>{tab=name;current='';lastReason='';showCount=16;renderHome();});tabs.append(b);
  }host.append(tabs);
+ // For You begins with visitor-chosen departments and real Following, never
+ // inferred gender, health conditions, or raw assistant/chat searches.
+ if(tab==='for-you'){
+  const chooser=create('section','qf-interest-chooser');
+  chooser.setAttribute('aria-label','Choose your For You categories');
+  chooser.append(create('h3','','Choose what For You should show'),
+   create('p','qf-muted','Choose topics or Follow a card. Public stays wider and keeps discovering new, relevant sources.'));
+  const chips=create('div','qf-interest-chips');chips.setAttribute('role','group');chips.setAttribute('aria-label','For You interests');
+  for(const d of INTEREST_DEPARTMENTS){
+   const selected=(state.interests||[]).includes(d.id);
+   const chip=create('button','qf-interest-chip'+(selected?' qf-interest-active':''),(selected?'✓ ':'+ ')+d.label);
+   chip.type='button';chip.setAttribute('aria-pressed',String(selected));
+   chip.addEventListener('click',()=>{
+    state=toggleInterest(safeRead(),d.id);persist();shareChange();renderHome();
+   });
+   chips.append(chip);
+  }
+  chooser.append(chips);host.append(chooser);
+ }
  const status=create('p','qf-muted');status.id='quantaFeedStatus';status.setAttribute('role','status');host.append(status);
  const feature=create('div','qf-feature');feature.id='quantaFeedFeature';host.append(feature);
  const controls=create('div','qf-controls');
@@ -121,11 +141,11 @@ function renderHome(){
  const grid=create('div','qf-grid');grid.id='quantaFeedGrid';host.append(grid);
  const more=create('button','qf-more','Show more cards');more.type='button';
  more.addEventListener('click',()=>{showCount+=16;renderResults(false);});host.append(more);
- const privacy=create('p','qf-muted qf-note','For You uses signed-in Quant search interests when available and otherwise this browser’s card interactions. Following is saved on this device for now; cross-device wallet sync is not yet enabled. No banking or brokerage credentials are read or saved by this feed.');
+ const privacy=create('p','qf-muted qf-note','For You displays only chosen departments and followed cards. Your first-party card interactions and optional authenticated Quant interests affect order within those choices. Following is saved on this device; cross-device sync is not verified. No private medical records, raw prompts, banking data or inferred gender are used for ad targeting.');
  host.append(privacy);
  function renderResults(nextCard){
   const ranked=feedCandidates(ALL_FEED_CARDS,tab,ranking(),query);
-  if(!ranked.length){feature.replaceChildren(create('p','qf-empty',tab==='following'?'No followed cards yet. Open Public and tap + Follow.':'No matches. Try another search.'));grid.replaceChildren();more.hidden=true;next.disabled=true;status.textContent='No matching cards';return;}
+  if(!ranked.length){feature.replaceChildren(create('p','qf-empty',tab==='following'?'No followed cards yet. Open Public and tap + Follow.':tab==='for-you'?'Choose a For You category above or Follow some cards in Public.':'No matches. Try another search.'));grid.replaceChildren();more.hidden=true;next.disabled=true;status.textContent='No matching cards';return;}
   if(!current||!ranked.some(c=>c.id===current)){
    const pick=nextFeedCard(ALL_FEED_CARDS,tab,ranking(),current,query);
    current=pick?.id||ranked[0].id;
@@ -153,7 +173,7 @@ function renderHome(){
   grid.replaceChildren();
   for(const c of ranked.slice(0,showCount))grid.append(makeTile(c,refresh));
   status.textContent=tab==='following'?ranked.length+' followed cards':tab==='for-you'?
-    ranked.length+' suggested cards · '+(quantConnected?'your signed-in Quant interests + card activity':'your card interactions on this device'):
+    ranked.length+' selected cards · chosen topics + Following'+(quantConnected?' · Quant order within choices':''):
     ranked.length+' public cards · unseen first when using Next';
   more.hidden=ranked.length<=showCount;next.disabled=ranked.length===1;
  }
