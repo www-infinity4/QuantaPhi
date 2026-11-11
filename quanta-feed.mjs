@@ -9,6 +9,7 @@ import {loadOwnQuantScores} from './quanta-feed-quants.mjs';
 import {openQuickCardPreview,safeLocalCardUrl} from './quick-card-preview.mjs';
 import {FEED_STORAGE_KEY,FEED_TABS,cleanFeedState,feedCandidates,nextFeedCard,nextFeedDirection,markViewed,markOpened,toggleFollowing,toggleInterest} from './quanta-feed-rank.mjs';
 import {INTEREST_DEPARTMENTS} from './quanta-context-placement.mjs';
+import {registerVisibleCard} from './quanta-feed-exposure.mjs';
 
 const fromSources=QUICK_CARD_SOURCES.map(c=>({
  id:c.id,name:c.name,category:c.kind,feature:c.feature,study:c.details,
@@ -34,7 +35,7 @@ export const ALL_FEED_CARDS=Object.freeze([...new Map([...fromAccepted,...fromSo
 export const feedCard=id=>ALL_FEED_CARDS.find(c=>c.id===id)||null;
 const create=(tag,cl,text)=>{const node=document.createElement(tag);if(cl)node.className=cl;if(text!==undefined)node.textContent=text;return node;};
 const safeRead=()=>{try{return cleanFeedState(JSON.parse(localStorage.getItem(FEED_STORAGE_KEY)||'{}'));}catch{return cleanFeedState({});}};
-let state=safeRead(),tab='public',current='',query='',showCount=16,lastReason='';
+let state=safeRead(),tab='public',current='',query='',showCount=16,lastReason='',lastVisibleCardId='';
 // Quant signals are derived in memory from the authenticated user’s existing ledger.
 // They are NEVER written to anonymous localStorage.
 let quantScores={},quantConnected=false,quantAttempted=false;
@@ -131,7 +132,6 @@ function renderHome(){
  const next=create('button','qf-button','Next unseen card →');next.type='button';
  next.addEventListener('click',()=>{
   const prior=current;
-  if(prior)state=markViewed(state,prior);
   const pick=nextFeedDirection(ALL_FEED_CARDS,tab,ranking(),prior,query);
   current=pick.card?.id||'';
   lastReason=pick.reason||'';
@@ -151,6 +151,11 @@ function renderHome(){
    current=pick?.id||ranked[0].id;
   }
   const selected=ranked.find(c=>c.id===current)||ranked[0];
+  // Only count a genuinely visible new feature card once. The same DOM
+  // render, new query keystroke, or hidden tab is not a new impression.
+  const exposure=registerVisibleCard(safeRead(),selected,{lastId:lastVisibleCardId,visible:!document.hidden});
+  lastVisibleCardId=exposure.lastId;
+  if(exposure.recorded){state=exposure.state;persist();}
   const visual=createCardArtwork(selected);
   const info=create('div','qf-feature-copy');
   info.append(create('p','qf-topic',selected.category),create('h3','',selected.name),
@@ -231,6 +236,9 @@ if(typeof document!=='undefined'){
   if(event.detail?.origin==='public-feed')return;
   state=safeRead();
   if(document.getElementById('quantaDiscoveryFeed'))renderHome();
+ });
+ document.addEventListener('visibilitychange',()=>{
+  if(!document.hidden&&document.getElementById('quantaDiscoveryFeed'))renderHome();
  });
  const mount=()=>{renderHome();renderDetail();};
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mount,{once:true});else mount();
