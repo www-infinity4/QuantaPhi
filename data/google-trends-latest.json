@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T13:31:08.234014Z",
+  "checked_at": "2026-11-11T14:01:27.661787Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "george stephanopoulos",
+      "query": "amy robach",
       "approx_searches": "200+",
-      "published_at": "2026-11-11T13:10:00Z",
+      "published_at": "2026-11-11T13:40:00Z",
       "related_news_urls": [
-        "https://people.com/michael-j-fox-george-stephanopoulos-hollywood-walk-of-fame-ceremony-12239129",
-        "https://sg.news.yahoo.com/george-stephanopoulos-65-poses-wife-160544300.html",
-        "https://abcnews.com/GMA/Culture/watch-george-stephanopoulos-robin-roberts-walk-fame-ceremony/story?id=137852275"
+        "https://www.yahoo.com/entertainment/tv/articles/amy-robach-t-j-holmes-102339057.html",
+        "https://www.imdb.com/es/news/ni66103256/?ref_=nwc_art_perm",
+        "https://www.aol.com/articles/exclusive-amy-robach-t-j-111500000.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTf-92frUo2B3K657-Vfh3PmeyDF_1A3Zki3EdB70HxyB_jYoljt1rU44Cth-A",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/michael-j-fox-george-stephanopoulos-hollywood-walk-of-fame-ceremony-12239129",
-          "title": "Michael J. Fox Honors Longtime Friend George Stephanopoulos with Funny Speech at Walk of Fame Ceremony",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTf-92frUo2B3K657-Vfh3PmeyDF_1A3Zki3EdB70HxyB_jYoljt1rU44Cth-A"
-        },
-        {
-          "url": "https://sg.news.yahoo.com/george-stephanopoulos-65-poses-wife-160544300.html",
-          "title": "George Stephanopoulos, 65, Poses With Wife Ali Wentworth and Their Two Daughters Elliot, 24, and Harper, 21, for Career Milestone",
-          "publisher": "Yahoo News Singapore",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTLJxshyjuGYCaZQfqyEp9Eh623_Nb0oqEcT-wqQhG920TBh6XV_QNCfA_1IE"
-        },
-        {
-          "url": "https://abcnews.com/GMA/Culture/watch-george-stephanopoulos-robin-roberts-walk-fame-ceremony/story?id=137852275",
-          "title": "'GMA' co-anchors George Stephanopoulos, Robin Roberts receive stars on Hollywood Walk of Fame",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsj-O8XyrB28G4xHAaj075NiFtUDmILIjOwjXtNrO_yhIInQe-moVrrkHcCfw"
-        }
-      ]
-    },
-    {
-      "query": "tennis court",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T13:10:00Z",
-      "related_news_urls": [
-        "https://dc.urbanturf.com/articles/blog/bowling_alley_tennis_court_car_gallery_ai_imagines_a_55_million_home_in_the/25182",
-        "https://www.thewestmorlandgazette.co.uk/news/26716371.emma-raducanu-swaps-tennis-court-lake-district-adventure/",
-        "https://www.thesun.co.uk/sport/40986472/emma-raducanu-instagram-lake-district-tennis-news/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj5Xfbh6hW4NOdZsTdnc1INrhEDRXWFA1ekpEydWvuhgQ17_8zUTU3H7_vuRw",
-      "image_credit": "UrbanTurf",
-      "news": [
-        {
-          "url": "https://dc.urbanturf.com/articles/blog/bowling_alley_tennis_court_car_gallery_ai_imagines_a_55_million_home_in_the/25182",
-          "title": "Bowling Alley, Tennis Court, Car Gallery: AI Imagines A $55 Million Home In The DC Area",
-          "publisher": "UrbanTurf",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj5Xfbh6hW4NOdZsTdnc1INrhEDRXWFA1ekpEydWvuhgQ17_8zUTU3H7_vuRw"
-        },
-        {
-          "url": "https://www.thewestmorlandgazette.co.uk/news/26716371.emma-raducanu-swaps-tennis-court-lake-district-adventure/",
-          "title": "Emma Raducanu swaps tennis court for Lake District trip",
-          "publisher": "Westmorland Gazette",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCnCiFgvEK6CK2WMKHKsdZW08dTJI1_Zlg46dL2vxMTN-Sgv-FF0oovoBMF-M"
-        },
-        {
-          "url": "https://www.thesun.co.uk/sport/40986472/emma-raducanu-instagram-lake-district-tennis-news/",
-          "title": "Emma Raducanu impresses in different sport as tennis star enjoys Lake District 'timeout' after injury-hit year",
-          "publisher": "The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRQ38B_qca_iC1gzt3KE-h6nwxm_nmtuy5Vp5byTdTv3Uk0GOMndawliabiU8"
-        }
-      ]
-    },
-    {
-      "query": "november 11",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T13:00:00Z",
-      "related_news_urls": [
-        "https://www.12onyourside.com/2026/11/09/critically-missing-adult-alert-possibly-armed-man-hopewell/",
-        "https://www.kgns.tv/video/2026/11/09/victim-identified-i-35-crash/",
-        "https://www.1011now.com/video/2026/11/09/multi-vehicle-crash-south-lincoln-kills-two-people/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9RjlfMHMpUs2Bkndj0_CwQtQqo0tPkRTYg9knzbHjenqnmr9C3sly3cV_Vrk",
-      "image_credit": "WWBT",
-      "news": [
-        {
-          "url": "https://www.12onyourside.com/2026/11/09/critically-missing-adult-alert-possibly-armed-man-hopewell/",
-          "title": "Missing Hopewell man found safe",
-          "publisher": "WWBT",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9RjlfMHMpUs2Bkndj0_CwQtQqo0tPkRTYg9knzbHjenqnmr9C3sly3cV_Vrk"
-        },
-        {
-          "url": "https://www.kgns.tv/video/2026/11/09/victim-identified-i-35-crash/",
-          "title": "Victim identified in I 35 crash",
-          "publisher": "KGNS",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQduFJZIXDKdAxrqoner3TBAZRMI34rdI-vrBeX6HdwHWuXD9p0pY6nOAGvC9w"
-        },
-        {
-          "url": "https://www.1011now.com/video/2026/11/09/multi-vehicle-crash-south-lincoln-kills-two-people/",
-          "title": "Multi-vehicle crash in south Lincoln kills two people",
-          "publisher": "KOLN | Nebraska Local News, Weather, Sports | Lincoln, NE",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzB7hTsSkxh_JZUygeL735h9D7YAdsZqZkDD6962H-WF4z0l8Mi1Wgp-6Ska8"
-        }
-      ]
-    },
-    {
-      "query": "veterans day breakfast",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T13:00:00Z",
-      "related_news_urls": [
-        "https://www.wqad.com/article/entertainment/events/veterans-day-events-freebies-iowa-illinois-quad-cities-parades-ceremonies/526-373d3070-df90-49a0-b91c-8f03bfb7eb1f",
-        "https://www.kshb.com/news/local-news/missouri/jackson-county/free-veterans-day-breakfast-at-participating-hy-vee-locations",
-        "https://norfolkdailynews.com/news/veterans-to-receive-free-meals-ice-cream-in-norfolk-on-wednesday/article_dc60591c-8210-4938-92cd-2b50913e9453.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSs7lV3CVbcv07nUI2e-mLQzrKP8zwWd8KU1WLpQjs7I6yDnj5uDihYPcO7IhM",
-      "image_credit": "WQAD",
-      "news": [
-        {
-          "url": "https://www.wqad.com/article/entertainment/events/veterans-day-events-freebies-iowa-illinois-quad-cities-parades-ceremonies/526-373d3070-df90-49a0-b91c-8f03bfb7eb1f",
-          "title": "Veterans Day events and freebies for vets around the Quad Cities",
-          "publisher": "WQAD",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSs7lV3CVbcv07nUI2e-mLQzrKP8zwWd8KU1WLpQjs7I6yDnj5uDihYPcO7IhM"
-        },
-        {
-          "url": "https://www.kshb.com/news/local-news/missouri/jackson-county/free-veterans-day-breakfast-at-participating-hy-vee-locations",
-          "title": "Free Veterans Day Breakfast at participating Hy-Vee locations",
-          "publisher": "KSHB 41 Kansas City",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtK5AVm2tvFbgQGz7J7l9hU7akj1Y-tJAUGCwzxXt-vN-qHxLteNcPz9F2HuY"
-        },
-        {
-          "url": "https://norfolkdailynews.com/news/veterans-to-receive-free-meals-ice-cream-in-norfolk-on-wednesday/article_dc60591c-8210-4938-92cd-2b50913e9453.html",
-          "title": "Veterans to receive free meals, ice cream in Norfolk on Wednesday",
-          "publisher": "The Norfolk Daily News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTum7ZR8abRQTB1dyItk67NAAMML-1sf-Jer3RyK913D9FBbE2W57BpJb51VUU"
-        }
-      ]
-    },
-    {
-      "query": "meg ryan",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T13:00:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/youve-got-mail-redo-jason-orley-directing-warner-bros-1237218654/",
-        "https://www.today.com/video/-you-ve-got-mail-reboot-in-the-works-at-warner-bros-273264197984",
-        "https://ew.com/new-youve-got-mail-movie-in-works-at-warner-bros-12247499"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTW4WZwyMs8jgmpYjYCi9IFRUk73y-vUb7RZrFGGDMXWZ5_fQ9AEsLKrTDwPnM",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/youve-got-mail-redo-jason-orley-directing-warner-bros-1237218654/",
-          "title": "‘You’ve Got Mail’: Jason Orley Directing New Take On Rom-Com For Warner Bros.",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTW4WZwyMs8jgmpYjYCi9IFRUk73y-vUb7RZrFGGDMXWZ5_fQ9AEsLKrTDwPnM"
-        },
-        {
-          "url": "https://www.today.com/video/-you-ve-got-mail-reboot-in-the-works-at-warner-bros-273264197984",
-          "title": "'You've Got Mail' Reboot in the Works at Warner Bros.",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4Qih019s2WNdp5xon_rLYAWgRUmauWRWG8C4jkF4Lm64wl_3igHObw3wqA7w"
-        },
-        {
-          "url": "https://ew.com/new-youve-got-mail-movie-in-works-at-warner-bros-12247499",
-          "title": "New ‘You’ve Got Mail’ movie in the works at Warner Bros.",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvrNFmqgZTH2AT5YyUMwxtxpovjiTX46bAsenM9fCqobC2AVAyjYTU_GiFT1g"
-        }
-      ]
-    },
-    {
-      "query": "veterans day parade nyc",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T12:40:00Z",
-      "related_news_urls": [
-        "https://abc7ny.com/post/veterans-day-parade-2026-what-know-how-watch-nyc-celebration-military-service-members/20020077/",
-        "https://www.cbsnews.com/newyork/video/veterans-day-parade-set-to-kick-off-in-nyc/",
-        "https://www.yahoo.com/news/us/articles/107th-annual-veterans-day-parade-110220476.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8NKD0ighQNNvQ7ht5Cy4kB3GhdgSq-_-bplsn3c2hhxJB7G_ao7Fd_eACHJ4",
-      "image_credit": "ABC7 New York",
-      "news": [
-        {
-          "url": "https://abc7ny.com/post/veterans-day-parade-2026-what-know-how-watch-nyc-celebration-military-service-members/20020077/",
-          "title": "Veterans Day Parade 2026: What to know, how to watch th NYC celebration of military service members",
-          "publisher": "ABC7 New York",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8NKD0ighQNNvQ7ht5Cy4kB3GhdgSq-_-bplsn3c2hhxJB7G_ao7Fd_eACHJ4"
-        },
-        {
-          "url": "https://www.cbsnews.com/newyork/video/veterans-day-parade-set-to-kick-off-in-nyc/",
-          "title": "Veterans Day Parade set to kick off in NYC",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqbSDAoHloxbgjyVzFppO_2uRoKuGeFYbHLfeaRpQIlM3tO271XsffdBMzAN0"
-        },
-        {
-          "url": "https://www.yahoo.com/news/us/articles/107th-annual-veterans-day-parade-110220476.html",
-          "title": "107th annual Veterans Day parade kicks off in Manhattan",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSO49MqCKA_L2lCkYuoKB9hrGInXkh5rsA8_H2MVkjJozRt8uLHrJa1KwgKW0I"
-        }
-      ]
-    },
-    {
-      "query": "ibm",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T12:40:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/technology/ibm-end-visa-green-card-sponsorship-most-roles-its-consulting-arm-2026-11-10/",
-        "https://www.bloomberg.com/news/articles/2026-11-10/ibm-to-end-immigration-sponsorship-for-roles-in-biggest-unit",
-        "https://www.aljazeera.com/news/2026/11/10/ibms-biggest-division-ends-most-us-foreign-worker-sponsorships"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtHc48pWsdoCGs0aBz8c5TuWJZyG1Am7vilugxK8jYkiT42-WtpU0-voxV0Pk",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/technology/ibm-end-visa-green-card-sponsorship-most-roles-its-consulting-arm-2026-11-10/",
-          "title": "IBM to end visa, green card sponsorship for most roles in its Consulting arm",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtHc48pWsdoCGs0aBz8c5TuWJZyG1Am7vilugxK8jYkiT42-WtpU0-voxV0Pk"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-10/ibm-to-end-immigration-sponsorship-for-roles-in-biggest-unit",
-          "title": "IBM to End Immigration Sponsorship for Roles in Biggest Unit",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNdTNOx0exS15XTSKeQecFHTfjdsM8IRmBVnxnWkPCR7nr3eN_qIrFvtUiJ0I"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/10/ibms-biggest-division-ends-most-us-foreign-worker-sponsorships",
-          "title": "IBM’s biggest division ends most US foreign worker sponsorships",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnWJfxxRtrGKBUKXKyfCyGVA-IgHTfSENXRqpxsEZEI-SKOb2zQyNT0INc5Ro"
-        }
-      ]
-    },
-    {
-      "query": "trump-xi summit",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T12:40:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/world/china/u-s-balks-at-chinas-demand-for-tightly-scripted-trump-xi-putin-summit-77001908",
-        "https://www.csis.org/analysis/trilateral-denuclearization-false-promises-or-way-forward",
-        "https://www.scmp.com/news/china/diplomacy/article/3374003/china-russia-and-us-try-nail-down-ai-nuclear-agenda-time-apec-talks"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-MqRosnP4kfvNzqW0tmJVaWo2zLOKbCXj4RSOyiUxvRsJy7borexZR5zIN5A",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/world/china/u-s-balks-at-chinas-demand-for-tightly-scripted-trump-xi-putin-summit-77001908",
-          "title": "Exclusive | U.S. Balks at China’s Demand for Tightly Scripted Trump-Xi-Putin Summit",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-MqRosnP4kfvNzqW0tmJVaWo2zLOKbCXj4RSOyiUxvRsJy7borexZR5zIN5A"
-        },
-        {
-          "url": "https://www.csis.org/analysis/trilateral-denuclearization-false-promises-or-way-forward",
-          "title": "Trilateral “Denuclearization”: False Promises or Way Forward?",
-          "publisher": "CSIS | Center for Strategic and International Studies",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmJKMkL8GU_6OrRtoJHQuAIRqyycXIawyBhuB7zUgeED_ggmOXTmjiysgOspo"
-        },
-        {
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3374003/china-russia-and-us-try-nail-down-ai-nuclear-agenda-time-apec-talks",
-          "title": "Exclusive | China, Russia and US try to nail down AI nuclear agenda in time for Apec talks",
-          "publisher": "South China Morning Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUQtyZUriPI43IhLz6qg2rWVKfQjZGBgZU5YgS__eFTa1lxCnVSOvHVp20MYo"
-        }
-      ]
-    },
-    {
-      "query": "dylan dreyer",
-      "approx_searches": "100+",
-      "published_at": "2026-11-11T12:40:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/articles/dylan-dreyer-takes-jab-today-152325091.html",
-        "https://www.hellomagazine.com/us/933919/dylan-dreyer-calls-out-today-co-star/",
-        "https://www.tvinsider.com/1302682/emilie-ikeda-pregnancy-update-today-nbc/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMWBK61LiKRxuwnnlhQ63RoYO4VU66O1JcHks9MSsejbsteXev-lgKqm6pjoM",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIvHs0mnksUi44bL_WWoj5rF6IyC-APtGBNczSNolZPfW3n2cAN84okTuOS_Y",
       "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/dylan-dreyer-takes-jab-today-152325091.html",
-          "title": "Dylan Dreyer takes jab at TODAY co-star and shocked Al Roker jumps to their defense",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/amy-robach-t-j-holmes-102339057.html",
+          "title": "Amy Robach and T.J. Holmes make TV comeback just days after their exes' wedding",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMWBK61LiKRxuwnnlhQ63RoYO4VU66O1JcHks9MSsejbsteXev-lgKqm6pjoM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIvHs0mnksUi44bL_WWoj5rF6IyC-APtGBNczSNolZPfW3n2cAN84okTuOS_Y"
         },
         {
-          "url": "https://www.hellomagazine.com/us/933919/dylan-dreyer-calls-out-today-co-star/",
-          "title": "Dylan Dreyer calls out TODAY co-stars and shocked Al Roker jumps to their defense",
-          "publisher": "HELLO!",
+          "url": "https://www.imdb.com/es/news/ni66103256/?ref_=nwc_art_perm",
+          "title": "‘Name That Tune’: Amy Robach Feels a Glow After Solving Frank Sinatra Hit Against Husband T.J. Holmes",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOikaOxGuwhHPLTeJ0yV-DeKfXsDJKSD-2MtwKdVMVjTCPrIw-ohzdu-9Itp0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqZX_pKb2WU8tmCmZu7Km0LEep7Qqjbfe-I_gS83HtebvKYfNlEifYV_in4LY"
         },
         {
-          "url": "https://www.tvinsider.com/1302682/emilie-ikeda-pregnancy-update-today-nbc/",
-          "title": "‘Today’ Host Shares Exciting Pregnancy Update After Surprise Announcement",
-          "publisher": "TV Insider",
+          "url": "https://www.aol.com/articles/exclusive-amy-robach-t-j-111500000.html",
+          "title": "EXCLUSIVE: Amy Robach and T.J. Holmes 'Eye TV Comeback After Wedding'",
+          "publisher": "AOL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzZhRGuxDxxyscmYaQ6RZr7GQWUxRMjerlHVbTDUe_34J_V4jHJ6qrY5UPvcU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQu_00My3EcQBoA13dRKG2QjoyWY6RVzolpx63D__ZkdZ0G6e1yXOs6P8Gf9do"
         }
       ]
     },
     {
-      "query": "measles symptoms",
-      "approx_searches": "100+",
-      "published_at": "2026-11-11T12:40:00Z",
+      "query": "gma deals and steals today",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T13:40:00Z",
       "related_news_urls": [
-        "https://www.dhakatribune.com/bangladesh/health/424315/measles-outbreak-death-toll-reaches-1-295-as-six",
-        "https://thefinancialexpress.com.bd/health/health-minister-takes-blame-for-measles-deaths",
-        "https://www.bssnews.net/news/444552"
+        "https://www.goodmorningamerica.com/shop/story/gma-deals-steals-kristin-cavallari-119-137980372",
+        "https://abcnews.com/GMA/Shop/gma-deals-steals-kristin-cavallari-119/story?id=137980372",
+        "https://www.yahoo.com/news/videos/abc-secret-savings-spectacular-november-100305060.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxkWYSm6jWubNtJzC9VWEsQ_Z3Kgpnn34GyEIRVWEY6Zi3dqvuKvYk0YRHmO0",
-      "image_credit": "Dhaka Tribune",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwZdqGUf7gvy2Yl5EWExH8jOXoSDVt5XeWpgYadv3jFNVO6qN0_JLMyG2wgGU",
+      "image_credit": "Good Morning America",
       "news": [
         {
-          "url": "https://www.dhakatribune.com/bangladesh/health/424315/measles-outbreak-death-toll-reaches-1-295-as-six",
-          "title": "Measles outbreak: Death toll reaches 1,295 as six die in 24 hours",
-          "publisher": "Dhaka Tribune",
+          "url": "https://www.goodmorningamerica.com/shop/story/gma-deals-steals-kristin-cavallari-119-137980372",
+          "title": "'GMA' Deals & Steals with John Legend",
+          "publisher": "Good Morning America",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxkWYSm6jWubNtJzC9VWEsQ_Z3Kgpnn34GyEIRVWEY6Zi3dqvuKvYk0YRHmO0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwZdqGUf7gvy2Yl5EWExH8jOXoSDVt5XeWpgYadv3jFNVO6qN0_JLMyG2wgGU"
         },
         {
-          "url": "https://thefinancialexpress.com.bd/health/health-minister-takes-blame-for-measles-deaths",
-          "title": "Health minister takes blame for measles deaths",
-          "publisher": "The Financial Express",
+          "url": "https://abcnews.com/GMA/Shop/gma-deals-steals-kristin-cavallari-119/story?id=137980372",
+          "title": "'GMA' Deals & Steals with Kristin Cavallari",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5fJ9O4IE5BDWtLYGJcJ6mvQjrM8Mcd2Agq4vMQTh_1FPTAiVfL6YIRlQFE5E"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgW_2pJvb7NPMjIdIzPBSsA6QO4JRybcxUEcCE5FFuwUVSYpQ6rzJS_zoVIV4"
         },
         {
-          "url": "https://www.bssnews.net/news/444552",
-          "title": "Six more children die with measles symptoms",
-          "publisher": "Bangladesh Sangbad Sangstha (BSS)",
+          "url": "https://www.yahoo.com/news/videos/abc-secret-savings-spectacular-november-100305060.html",
+          "title": "ABC Secret Savings Spectacular for November",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPcNbHmDuLT42ZYozpwi15CWrMYBjX2_SDZ9QtwkCojPWeh0t3zSVfORdpd-g"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSws69A0OeuMKFfCY3-oFztbuihHbBoSg90qP9Eqir7AeyxJyzairdEjrVEZDU"
+        }
+      ]
+    },
+    {
+      "query": "carrie coon",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T13:40:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66105039/?ref_=int_nwr_4",
+        "https://www.thewrap.com/culture-lifestyle/culture/carrie-coon-hbo-post-merger-soft/",
+        "https://www.imdb.com/de/news/ni66105039/?ref_=nwc_art_perm"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJOIdvF5ZLU0KediafYIzYMF3Uom_4dVxuGZzeDbmochd6m2JgFd6USZVJjg8",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66105039/?ref_=int_nwr_4",
+          "title": "Carrie Coon Hopes HBO Doesn’t Get ‘Soft Around the Edges’ After Skydance Merger",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJOIdvF5ZLU0KediafYIzYMF3Uom_4dVxuGZzeDbmochd6m2JgFd6USZVJjg8"
+        },
+        {
+          "url": "https://www.thewrap.com/culture-lifestyle/culture/carrie-coon-hbo-post-merger-soft/",
+          "title": "Carrie Coon Hopes HBO Doesn’t Get ‘Soft Around the Edges’ After Skydance Merger",
+          "publisher": "TheWrap",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTR6-HQD8cliQaGJURzturF6dGdXdeSheECoyTtlzLQri2miQnVjTVB0rnLj2o"
+        },
+        {
+          "url": "https://www.imdb.com/de/news/ni66105039/?ref_=nwc_art_perm",
+          "title": "Carrie Coon Hopes HBO Doesn’t Get ‘Soft Around the Edges’ After Skydance Merger",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJOIdvF5ZLU0KediafYIzYMF3Uom_4dVxuGZzeDbmochd6m2JgFd6USZVJjg8"
+        }
+      ]
+    },
+    {
+      "query": "john madden",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T13:40:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/lifestyle/nicolas-cage-transformed-within-madden-co-star-kathryn-hahn-says-2026-11-10/",
+        "https://abcnews.com/video/138002370/",
+        "https://www.ks95.com/nicolas-cage-opens-up-about-playing-john-madden-finding-happiness-in-his-life/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGQKoNtzzIqjf8mHlS-PmTm3FsMGu82uVVFtbjHgYTdoelTEHdD9MUavOPcd8",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/lifestyle/nicolas-cage-transformed-within-madden-co-star-kathryn-hahn-says-2026-11-10/",
+          "title": "Nicolas Cage transformed ‘from within’ for ‘Madden,’ co-star Kathryn Hahn says",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGQKoNtzzIqjf8mHlS-PmTm3FsMGu82uVVFtbjHgYTdoelTEHdD9MUavOPcd8"
+        },
+        {
+          "url": "https://abcnews.com/video/138002370/",
+          "title": "Video Nicolas Cage stars in 'Madden'",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlQLVgJGBW58o5gagFPbOooM3Se2FSJcm1BmHRAU3tx52pv3RPx_TRdxxMLDA"
+        },
+        {
+          "url": "https://www.ks95.com/nicolas-cage-opens-up-about-playing-john-madden-finding-happiness-in-his-life/",
+          "title": "Nicolas Cage opens up about playing John Madden, finding happiness in his life",
+          "publisher": "KS95 94.5",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYWXJJ-QniteVbrdFo830XGKD23UHmvFLFK9iY4ox-vEGsfJBA86PokE4MBZs"
+        }
+      ]
+    },
+    {
+      "query": "gma deals and steals",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T13:30:00Z",
+      "related_news_urls": [
+        "https://abcnews.com/GMA/Shop/gma-deals-steals-kristin-cavallari-119/story?id=137980372",
+        "https://www.yahoo.com/news/videos/abc-secret-savings-spectacular-november-100305060.html",
+        "https://abcnews.com/GMA/Shop/abc-secret-savings-november-savings-special/story?id=137910498"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgW_2pJvb7NPMjIdIzPBSsA6QO4JRybcxUEcCE5FFuwUVSYpQ6rzJS_zoVIV4",
+      "image_credit": "ABC News - Breaking News, Latest News and Videos",
+      "news": [
+        {
+          "url": "https://abcnews.com/GMA/Shop/gma-deals-steals-kristin-cavallari-119/story?id=137980372",
+          "title": "'GMA' Deals & Steals with Kristin Cavallari",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgW_2pJvb7NPMjIdIzPBSsA6QO4JRybcxUEcCE5FFuwUVSYpQ6rzJS_zoVIV4"
+        },
+        {
+          "url": "https://www.yahoo.com/news/videos/abc-secret-savings-spectacular-november-100305060.html",
+          "title": "ABC Secret Savings Spectacular for November",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSws69A0OeuMKFfCY3-oFztbuihHbBoSg90qP9Eqir7AeyxJyzairdEjrVEZDU"
+        },
+        {
+          "url": "https://abcnews.com/GMA/Shop/abc-secret-savings-november-savings-special/story?id=137910498",
+          "title": "ABC Secret Savings: November Savings Special",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgUmdaVgI6a_03mGa6mJN25N9H4b-z6kictkZNmQCca_GzZKT4HLqBjdRwYQA"
+        }
+      ]
+    },
+    {
+      "query": "why do we celebrate veterans day",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T13:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/11/us/iran-war-deaths-survivors-veterans-day.html",
+        "https://www.ms.now/opinion/veterans-day-pete-hegseth-iran-war",
+        "https://www.usatoday.com/story/news/nation/2026/11/11/veterans-day-2026-federal-holiday/92711988007/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLqu7fLl4x7abptLNtpjBwEU1kJP_qDTQMbslnyD8TkACuAI33wXu2dV7P76Y",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/11/us/iran-war-deaths-survivors-veterans-day.html",
+          "title": "Honor and Anguish: A Veterans Day When the Losses Are New",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLqu7fLl4x7abptLNtpjBwEU1kJP_qDTQMbslnyD8TkACuAI33wXu2dV7P76Y"
+        },
+        {
+          "url": "https://www.ms.now/opinion/veterans-day-pete-hegseth-iran-war",
+          "title": "Opinion | This Veterans Day, it's even more important to celebrate American values",
+          "publisher": "MS NOW",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuBPuPI4gwZVjfhPwhDN1VzDo4DLKoFPqhq3Ag_thuwOk74fD-g0yeZU5hZpI"
+        },
+        {
+          "url": "https://www.usatoday.com/story/news/nation/2026/11/11/veterans-day-2026-federal-holiday/92711988007/",
+          "title": "Is Veterans Day a federal holiday? What to know about Nov. 11",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTTALWQvggDp6q-DDBu0oF1FJxt2wM7QXDCndTucI0fh9OcMqwHMsRy6FVjKM"
+        }
+      ]
+    },
+    {
+      "query": "space force",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T13:30:00Z",
+      "related_news_urls": [
+        "https://www.spacex.com/launches/ussf266",
+        "https://www.ksby.com/news/launch-tracker/spacex-falcon-9-launch-planned-for-monday-evening-out-of-vandenberg-sfb",
+        "https://spacenews.com/eighteen-launches-no-program-names-a-call-for-disclosure/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzxrlHVXWSOjQ8IJXJTBkrryC5codpcP3ZFpMrkqHB-b8VcCbA_Dieb9l_HFg",
+      "image_credit": "SpaceX",
+      "news": [
+        {
+          "url": "https://www.spacex.com/launches/ussf266",
+          "title": "USSF-266 Mission",
+          "publisher": "SpaceX",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzxrlHVXWSOjQ8IJXJTBkrryC5codpcP3ZFpMrkqHB-b8VcCbA_Dieb9l_HFg"
+        },
+        {
+          "url": "https://www.ksby.com/news/launch-tracker/spacex-falcon-9-launch-planned-for-monday-evening-out-of-vandenberg-sfb",
+          "title": "SpaceX Falcon 9 launch planned for Wednesday evening out of Vandenberg SFB",
+          "publisher": "KSBY News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmx1hKgrzM1TpKVoAG99gJpG6dP6HfAgFJ26nUgdFpordueYEv9Yh3YTHKWLg"
+        },
+        {
+          "url": "https://spacenews.com/eighteen-launches-no-program-names-a-call-for-disclosure/",
+          "title": "Eighteen launches, no program names: a call for disclosure",
+          "publisher": "SpaceNews",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShQolHxLoC_-EV_yvI2-PG0ecSJvM6kM7ISKmWpF7f-mX60KiP8B53uK9SPg4"
+        }
+      ]
+    },
+    {
+      "query": "jenna bush hager",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T13:20:00Z",
+      "related_news_urls": [
+        "https://www.today.com/video/jenna-bush-hager-recounts-7-year-old-son-s-questions-about-past-boyfriends-273202245588",
+        "https://pagesix.com/2026/11/10/parents/jenna-bush-hager-details-awkward-conversation-with-son-hal-7-about-her-ex-boyfriends/",
+        "https://www.yahoo.com/entertainment/celebrity/articles/todays-jenna-bush-hagers-probing-155401518.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzX7SUj1r3hSSgC-d3mkDDixJITg1qkINOyWhJ3LfiNdKgPGTFuxMIjpIwEno",
+      "image_credit": "TODAY.com",
+      "news": [
+        {
+          "url": "https://www.today.com/video/jenna-bush-hager-recounts-7-year-old-son-s-questions-about-past-boyfriends-273202245588",
+          "title": "Jenna Bush Hager Recounts 7-Year-Old Son’s Questions About Past Boyfriends",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzX7SUj1r3hSSgC-d3mkDDixJITg1qkINOyWhJ3LfiNdKgPGTFuxMIjpIwEno"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/10/parents/jenna-bush-hager-details-awkward-conversation-with-son-hal-7-about-her-ex-boyfriends/",
+          "title": "Jenna Bush Hager details awkward conversation with son Hal, 7, about her ex-boyfriends",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2DBAYYQwSQgGojs94alC3q4dg-7CLqe0fMKHNIX5ryJvc5ZXy-4kWgFlmCww"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/todays-jenna-bush-hagers-probing-155401518.html",
+          "title": "TODAY's Jenna Bush Hager's probing question from 7-year-old son about relationship with husband",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-FH1rpKOfIkxO0EA6IaxxF-CG6hklaxnvElJhn-IJ2g6fplEtciAGLkPRMJQ"
+        }
+      ]
+    },
+    {
+      "query": "dakota meyer",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T13:20:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/politics/dakota-meyer-survived-battle-thought-would-kill-him-15-years-after-leaving-marines-went-back",
+        "https://www.yahoo.com/news/videos/why-medal-honor-recipient-dakota-224732362.html",
+        "https://tippahnews.com/national-news/dakota-meyer-reenlisted-in-marine-corps-in-2025-completed-reconnaissance-training-in-his-late-30s/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW6rf8yNsx9_yuEU9Z_IhcU0qAWAJNrvbMVig2Y1YK-19dAaFGKlfDk4R8HQc",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/politics/dakota-meyer-survived-battle-thought-would-kill-him-15-years-after-leaving-marines-went-back",
+          "title": "Dakota Meyer survived a battle he thought would kill him. 15 years after leaving the Marines, he went back",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW6rf8yNsx9_yuEU9Z_IhcU0qAWAJNrvbMVig2Y1YK-19dAaFGKlfDk4R8HQc"
+        },
+        {
+          "url": "https://www.yahoo.com/news/videos/why-medal-honor-recipient-dakota-224732362.html",
+          "title": "Why Medal of Honor recipient Dakota Meyer returned to the Marines after 15 years",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0hdx_cMbuqJ8njZm9GpkhGrYMiAhAmPUZbwIcsUTYH4tJYVJZw9SRzmMnpE0"
+        },
+        {
+          "url": "https://tippahnews.com/national-news/dakota-meyer-reenlisted-in-marine-corps-in-2025-completed-reconnaissance-training-in-his-late-30s/",
+          "title": "Dakota Meyer reenlisted in Marine Corps in 2025, completed reconnaissance training in his late 30s",
+          "publisher": "Tippah News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmSTWoNTJVcCwnUzuILFZAdhaVnWlO0JJp7HufpyFHbLhnhm1GDK3znXVrf1M"
+        }
+      ]
+    },
+    {
+      "query": "army",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-11T13:20:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/11/us-army-soldier-russia-espionage-arrest.html",
+        "https://6abc.com/story/us-soldier-accused-spying-russia-arrested-uk-officials/20032791/",
+        "https://www.theguardian.com/uk-news/2026/nov/10/uk-counter-terrorism-police-arrest-member-of-us-army-in-gloucestershire"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQttaLpDw-t3bJTtBEF2lG2jBCuZYBXeDPThWAeQ4wWtPse6zpgBwVn5l7WfXE",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/11/us-army-soldier-russia-espionage-arrest.html",
+          "title": "American soldier arrested on suspicion of spying for Russia",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQttaLpDw-t3bJTtBEF2lG2jBCuZYBXeDPThWAeQ4wWtPse6zpgBwVn5l7WfXE"
+        },
+        {
+          "url": "https://6abc.com/story/us-soldier-accused-spying-russia-arrested-uk-officials/20032791/",
+          "title": "US soldier accused of spying for Russia arrested in the UK: Officials",
+          "publisher": "6abc Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCOfMcrYf5_80gfL8tkRIDASduKzpC63LFOpeJMAb-G_dF3jJGB9B1P_z5p2M"
+        },
+        {
+          "url": "https://www.theguardian.com/uk-news/2026/nov/10/uk-counter-terrorism-police-arrest-member-of-us-army-in-gloucestershire",
+          "title": "UK counter-terrorism police arrest senior US soldier with alleged links to Russia",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTi-saNETql91rhipT7bLcFNoHatidIVbEEhcKvao6mCgyIK5AoTlY_pU7s44E"
         }
       ]
     }
