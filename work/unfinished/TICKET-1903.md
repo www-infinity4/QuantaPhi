@@ -58,7 +58,7 @@ Status: `source_tested` (chat response and styling only). Dot: 🟡 unfinished. 
 
 ## Next executable action
 Inspect exact-head Coliseum CI and independent security review on #1484; verify a **real** hosted answer on an authorized staging/production browser without owner/wallet credential shortcuts. Resolve #1270 conflicts with main, then test signed-in two-account wallet isolation. Keep #1271 release-locked until private Cloudflare D1/R2 provisioning, explicit consent and two-account Android/browser recovery prove safe. Merge each eligible reviewed change only after all applicable gates, then obtain separate Cloudflare production and live/Android receipts.
- 
+
 ## Session 08 · branch reconciliation and regression receipts (2026-11-11)
 - RED regression test commit: 9ffab3ffea8f1dee356d4635e0bd18a6e4cf840e. The draft branch was previously unmergeable, so no RED CI assertion is claimed.
 - Child-navigation readiness repair: 3a17cb4f2bc63b5ef12566e042d0b043d37fcf7c and e1937a878ae73441497b29b0013ab89d861c31b5.
