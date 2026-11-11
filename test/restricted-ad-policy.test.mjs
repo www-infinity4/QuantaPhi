@@ -45,3 +45,26 @@ test('rotate without immediately repeating the last creative',()=>{
  assert.equal(chooseNextCreative([rows[0]],'a',[]).id,'a');
  assert.equal(chooseNextCreative([],null,[]),null);
 });
+
+test('a 21+ sponsored campaign requires rights, contract and current flight windows',()=>{
+ const verified={
+  rights_cleared:true,rights_expires_at:'2026-11-30T23:59:59Z',
+  campaign_starts_at:'2026-10-25T00:00:00Z',campaign_ends_at:'2026-11-15T23:59:59Z',
+  sponsor_agreement_id:'publisher-approved-agreement-01'
+ };
+ assert.ok(eligibleCreative(offer(verified),decision,now),'complete authorized campaign can pass');
+ for(const invalid of [
+  {rights_cleared:false},{rights_expires_at:''},
+  {rights_expires_at:'2026-10-31T00:00:00Z'},
+  {campaign_starts_at:''},{campaign_starts_at:'2026-11-02T00:00:00Z'},
+  {campaign_ends_at:''},{campaign_ends_at:'2026-10-31T00:00:00Z'},
+  {sponsor_agreement_id:''}
+ ]){
+  assert.equal(eligibleCreative(offer({...verified,...invalid}),decision,now),null,
+   'unverified rights, agreement or campaign must fail closed: '+JSON.stringify(invalid));
+ }
+ assert.equal(eligibleCreative(offer({...verified,rights_expires_at:'malformed'}),decision,now),null);
+ assert.equal(eligibleCreative(offer({...verified,campaign_ends_at:'malformed'}),decision,now),null);
+ assert.equal(eligibleCreative(offer({...verified,campaign_starts_at:'2026-11-10T00:00:00Z',campaign_ends_at:'2026-11-01T00:00:00Z'}),decision,now),null);
+ assert.equal(eligibleCreative(offer(verified),decision,Date.parse('2026-12-01T00:00:00Z')),null);
+});
