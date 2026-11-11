@@ -49,7 +49,7 @@ test('Bubbles busy refuses delivery without deleting the user question',async({p
  const msg='Make a restoration checklist for a vintage radio';
  await page.locator('#zeusQuestInput').fill(msg);
  await page.locator('#zeusQuestInput').press('Enter');
- await expect(page.locator('#zeusQuestStatus')).toContainText('Bubbles is working');
+ await expect(page.locator('#zeusQuestStatus')).toContainText('Bubbles is busy');
  await expect(page.locator('#zeusQuestInput')).toHaveValue(msg);
  await expect(page.locator('#zeusQuestSend')).toBeEnabled();
 });
