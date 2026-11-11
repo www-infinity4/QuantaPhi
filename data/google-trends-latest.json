@@ -3,19 +3,194 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T13:01:38.247256Z",
+  "checked_at": "2026-11-11T13:31:08.234014Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "veterans day parade nyc",
+      "query": "george stephanopoulos",
       "approx_searches": "200+",
+      "published_at": "2026-11-11T13:10:00Z",
+      "related_news_urls": [
+        "https://people.com/michael-j-fox-george-stephanopoulos-hollywood-walk-of-fame-ceremony-12239129",
+        "https://sg.news.yahoo.com/george-stephanopoulos-65-poses-wife-160544300.html",
+        "https://abcnews.com/GMA/Culture/watch-george-stephanopoulos-robin-roberts-walk-fame-ceremony/story?id=137852275"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTf-92frUo2B3K657-Vfh3PmeyDF_1A3Zki3EdB70HxyB_jYoljt1rU44Cth-A",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/michael-j-fox-george-stephanopoulos-hollywood-walk-of-fame-ceremony-12239129",
+          "title": "Michael J. Fox Honors Longtime Friend George Stephanopoulos with Funny Speech at Walk of Fame Ceremony",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTf-92frUo2B3K657-Vfh3PmeyDF_1A3Zki3EdB70HxyB_jYoljt1rU44Cth-A"
+        },
+        {
+          "url": "https://sg.news.yahoo.com/george-stephanopoulos-65-poses-wife-160544300.html",
+          "title": "George Stephanopoulos, 65, Poses With Wife Ali Wentworth and Their Two Daughters Elliot, 24, and Harper, 21, for Career Milestone",
+          "publisher": "Yahoo News Singapore",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTLJxshyjuGYCaZQfqyEp9Eh623_Nb0oqEcT-wqQhG920TBh6XV_QNCfA_1IE"
+        },
+        {
+          "url": "https://abcnews.com/GMA/Culture/watch-george-stephanopoulos-robin-roberts-walk-fame-ceremony/story?id=137852275",
+          "title": "'GMA' co-anchors George Stephanopoulos, Robin Roberts receive stars on Hollywood Walk of Fame",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsj-O8XyrB28G4xHAaj075NiFtUDmILIjOwjXtNrO_yhIInQe-moVrrkHcCfw"
+        }
+      ]
+    },
+    {
+      "query": "tennis court",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T13:10:00Z",
+      "related_news_urls": [
+        "https://dc.urbanturf.com/articles/blog/bowling_alley_tennis_court_car_gallery_ai_imagines_a_55_million_home_in_the/25182",
+        "https://www.thewestmorlandgazette.co.uk/news/26716371.emma-raducanu-swaps-tennis-court-lake-district-adventure/",
+        "https://www.thesun.co.uk/sport/40986472/emma-raducanu-instagram-lake-district-tennis-news/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj5Xfbh6hW4NOdZsTdnc1INrhEDRXWFA1ekpEydWvuhgQ17_8zUTU3H7_vuRw",
+      "image_credit": "UrbanTurf",
+      "news": [
+        {
+          "url": "https://dc.urbanturf.com/articles/blog/bowling_alley_tennis_court_car_gallery_ai_imagines_a_55_million_home_in_the/25182",
+          "title": "Bowling Alley, Tennis Court, Car Gallery: AI Imagines A $55 Million Home In The DC Area",
+          "publisher": "UrbanTurf",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj5Xfbh6hW4NOdZsTdnc1INrhEDRXWFA1ekpEydWvuhgQ17_8zUTU3H7_vuRw"
+        },
+        {
+          "url": "https://www.thewestmorlandgazette.co.uk/news/26716371.emma-raducanu-swaps-tennis-court-lake-district-adventure/",
+          "title": "Emma Raducanu swaps tennis court for Lake District trip",
+          "publisher": "Westmorland Gazette",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCnCiFgvEK6CK2WMKHKsdZW08dTJI1_Zlg46dL2vxMTN-Sgv-FF0oovoBMF-M"
+        },
+        {
+          "url": "https://www.thesun.co.uk/sport/40986472/emma-raducanu-instagram-lake-district-tennis-news/",
+          "title": "Emma Raducanu impresses in different sport as tennis star enjoys Lake District 'timeout' after injury-hit year",
+          "publisher": "The Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRQ38B_qca_iC1gzt3KE-h6nwxm_nmtuy5Vp5byTdTv3Uk0GOMndawliabiU8"
+        }
+      ]
+    },
+    {
+      "query": "november 11",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T13:00:00Z",
+      "related_news_urls": [
+        "https://www.12onyourside.com/2026/11/09/critically-missing-adult-alert-possibly-armed-man-hopewell/",
+        "https://www.kgns.tv/video/2026/11/09/victim-identified-i-35-crash/",
+        "https://www.1011now.com/video/2026/11/09/multi-vehicle-crash-south-lincoln-kills-two-people/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9RjlfMHMpUs2Bkndj0_CwQtQqo0tPkRTYg9knzbHjenqnmr9C3sly3cV_Vrk",
+      "image_credit": "WWBT",
+      "news": [
+        {
+          "url": "https://www.12onyourside.com/2026/11/09/critically-missing-adult-alert-possibly-armed-man-hopewell/",
+          "title": "Missing Hopewell man found safe",
+          "publisher": "WWBT",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9RjlfMHMpUs2Bkndj0_CwQtQqo0tPkRTYg9knzbHjenqnmr9C3sly3cV_Vrk"
+        },
+        {
+          "url": "https://www.kgns.tv/video/2026/11/09/victim-identified-i-35-crash/",
+          "title": "Victim identified in I 35 crash",
+          "publisher": "KGNS",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQduFJZIXDKdAxrqoner3TBAZRMI34rdI-vrBeX6HdwHWuXD9p0pY6nOAGvC9w"
+        },
+        {
+          "url": "https://www.1011now.com/video/2026/11/09/multi-vehicle-crash-south-lincoln-kills-two-people/",
+          "title": "Multi-vehicle crash in south Lincoln kills two people",
+          "publisher": "KOLN | Nebraska Local News, Weather, Sports | Lincoln, NE",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzB7hTsSkxh_JZUygeL735h9D7YAdsZqZkDD6962H-WF4z0l8Mi1Wgp-6Ska8"
+        }
+      ]
+    },
+    {
+      "query": "veterans day breakfast",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T13:00:00Z",
+      "related_news_urls": [
+        "https://www.wqad.com/article/entertainment/events/veterans-day-events-freebies-iowa-illinois-quad-cities-parades-ceremonies/526-373d3070-df90-49a0-b91c-8f03bfb7eb1f",
+        "https://www.kshb.com/news/local-news/missouri/jackson-county/free-veterans-day-breakfast-at-participating-hy-vee-locations",
+        "https://norfolkdailynews.com/news/veterans-to-receive-free-meals-ice-cream-in-norfolk-on-wednesday/article_dc60591c-8210-4938-92cd-2b50913e9453.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSs7lV3CVbcv07nUI2e-mLQzrKP8zwWd8KU1WLpQjs7I6yDnj5uDihYPcO7IhM",
+      "image_credit": "WQAD",
+      "news": [
+        {
+          "url": "https://www.wqad.com/article/entertainment/events/veterans-day-events-freebies-iowa-illinois-quad-cities-parades-ceremonies/526-373d3070-df90-49a0-b91c-8f03bfb7eb1f",
+          "title": "Veterans Day events and freebies for vets around the Quad Cities",
+          "publisher": "WQAD",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSs7lV3CVbcv07nUI2e-mLQzrKP8zwWd8KU1WLpQjs7I6yDnj5uDihYPcO7IhM"
+        },
+        {
+          "url": "https://www.kshb.com/news/local-news/missouri/jackson-county/free-veterans-day-breakfast-at-participating-hy-vee-locations",
+          "title": "Free Veterans Day Breakfast at participating Hy-Vee locations",
+          "publisher": "KSHB 41 Kansas City",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtK5AVm2tvFbgQGz7J7l9hU7akj1Y-tJAUGCwzxXt-vN-qHxLteNcPz9F2HuY"
+        },
+        {
+          "url": "https://norfolkdailynews.com/news/veterans-to-receive-free-meals-ice-cream-in-norfolk-on-wednesday/article_dc60591c-8210-4938-92cd-2b50913e9453.html",
+          "title": "Veterans to receive free meals, ice cream in Norfolk on Wednesday",
+          "publisher": "The Norfolk Daily News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTum7ZR8abRQTB1dyItk67NAAMML-1sf-Jer3RyK913D9FBbE2W57BpJb51VUU"
+        }
+      ]
+    },
+    {
+      "query": "meg ryan",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T13:00:00Z",
+      "related_news_urls": [
+        "https://deadline.com/2026/11/youve-got-mail-redo-jason-orley-directing-warner-bros-1237218654/",
+        "https://www.today.com/video/-you-ve-got-mail-reboot-in-the-works-at-warner-bros-273264197984",
+        "https://ew.com/new-youve-got-mail-movie-in-works-at-warner-bros-12247499"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTW4WZwyMs8jgmpYjYCi9IFRUk73y-vUb7RZrFGGDMXWZ5_fQ9AEsLKrTDwPnM",
+      "image_credit": "Deadline",
+      "news": [
+        {
+          "url": "https://deadline.com/2026/11/youve-got-mail-redo-jason-orley-directing-warner-bros-1237218654/",
+          "title": "‘You’ve Got Mail’: Jason Orley Directing New Take On Rom-Com For Warner Bros.",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTW4WZwyMs8jgmpYjYCi9IFRUk73y-vUb7RZrFGGDMXWZ5_fQ9AEsLKrTDwPnM"
+        },
+        {
+          "url": "https://www.today.com/video/-you-ve-got-mail-reboot-in-the-works-at-warner-bros-273264197984",
+          "title": "'You've Got Mail' Reboot in the Works at Warner Bros.",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4Qih019s2WNdp5xon_rLYAWgRUmauWRWG8C4jkF4Lm64wl_3igHObw3wqA7w"
+        },
+        {
+          "url": "https://ew.com/new-youve-got-mail-movie-in-works-at-warner-bros-12247499",
+          "title": "New ‘You’ve Got Mail’ movie in the works at Warner Bros.",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvrNFmqgZTH2AT5YyUMwxtxpovjiTX46bAsenM9fCqobC2AVAyjYTU_GiFT1g"
+        }
+      ]
+    },
+    {
+      "query": "veterans day parade nyc",
+      "approx_searches": "500+",
       "published_at": "2026-11-11T12:40:00Z",
       "related_news_urls": [
         "https://abc7ny.com/post/veterans-day-parade-2026-what-know-how-watch-nyc-celebration-military-service-members/20020077/",
         "https://www.cbsnews.com/newyork/video/veterans-day-parade-set-to-kick-off-in-nyc/",
-        "https://www.silive.com/nyc/2026/11/veterans-day-2026-heres-whats-open-closed-in-nyc-on-wednesday.html"
+        "https://www.yahoo.com/news/us/articles/107th-annual-veterans-day-parade-110220476.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4odmSBt3uERPcMheRV0-x7_QIbkV0Z3m_RgngZWvXSFeOLudZlJGWVvjgVM",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8NKD0ighQNNvQ7ht5Cy4kB3GhdgSq-_-bplsn3c2hhxJB7G_ao7Fd_eACHJ4",
       "image_credit": "ABC7 New York",
       "news": [
         {
@@ -23,7 +198,7 @@
           "title": "Veterans Day Parade 2026: What to know, how to watch th NYC celebration of military service members",
           "publisher": "ABC7 New York",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4odmSBt3uERPcMheRV0-x7_QIbkV0Z3m_RgngZWvXSFeOLudZlJGWVvjgVM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8NKD0ighQNNvQ7ht5Cy4kB3GhdgSq-_-bplsn3c2hhxJB7G_ao7Fd_eACHJ4"
         },
         {
           "url": "https://www.cbsnews.com/newyork/video/veterans-day-parade-set-to-kick-off-in-nyc/",
@@ -33,11 +208,46 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqbSDAoHloxbgjyVzFppO_2uRoKuGeFYbHLfeaRpQIlM3tO271XsffdBMzAN0"
         },
         {
-          "url": "https://www.silive.com/nyc/2026/11/veterans-day-2026-heres-whats-open-closed-in-nyc-on-wednesday.html",
-          "title": "Veterans Day 2026: Here’s what’s open, closed in NYC on Wednesday",
-          "publisher": "SILive.com",
+          "url": "https://www.yahoo.com/news/us/articles/107th-annual-veterans-day-parade-110220476.html",
+          "title": "107th annual Veterans Day parade kicks off in Manhattan",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScpWkAKDqNwnUCHVa_klmB8YLdry5EzSDTmIkVkiCB1y2Oyn9gSJQgp54iwsg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSO49MqCKA_L2lCkYuoKB9hrGInXkh5rsA8_H2MVkjJozRt8uLHrJa1KwgKW0I"
+        }
+      ]
+    },
+    {
+      "query": "ibm",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T12:40:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/technology/ibm-end-visa-green-card-sponsorship-most-roles-its-consulting-arm-2026-11-10/",
+        "https://www.bloomberg.com/news/articles/2026-11-10/ibm-to-end-immigration-sponsorship-for-roles-in-biggest-unit",
+        "https://www.aljazeera.com/news/2026/11/10/ibms-biggest-division-ends-most-us-foreign-worker-sponsorships"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtHc48pWsdoCGs0aBz8c5TuWJZyG1Am7vilugxK8jYkiT42-WtpU0-voxV0Pk",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/technology/ibm-end-visa-green-card-sponsorship-most-roles-its-consulting-arm-2026-11-10/",
+          "title": "IBM to end visa, green card sponsorship for most roles in its Consulting arm",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtHc48pWsdoCGs0aBz8c5TuWJZyG1Am7vilugxK8jYkiT42-WtpU0-voxV0Pk"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-10/ibm-to-end-immigration-sponsorship-for-roles-in-biggest-unit",
+          "title": "IBM to End Immigration Sponsorship for Roles in Biggest Unit",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNdTNOx0exS15XTSKeQecFHTfjdsM8IRmBVnxnWkPCR7nr3eN_qIrFvtUiJ0I"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/10/ibms-biggest-division-ends-most-us-foreign-worker-sponsorships",
+          "title": "IBM’s biggest division ends most US foreign worker sponsorships",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnWJfxxRtrGKBUKXKyfCyGVA-IgHTfSENXRqpxsEZEI-SKOb2zQyNT0INc5Ro"
         }
       ]
     },
@@ -72,7 +282,7 @@
           "title": "Exclusive | China, Russia and US try to nail down AI nuclear agenda in time for Apec talks",
           "publisher": "South China Morning Post",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpMHFtiXTtJmDq1j2psLiiTLSfhP1wE1c-mMlRRGpGZG1tQe30IXqHEK-PsjU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUQtyZUriPI43IhLz6qg2rWVKfQjZGBgZU5YgS__eFTa1lxCnVSOvHVp20MYo"
         }
       ]
     },
@@ -81,68 +291,33 @@
       "approx_searches": "100+",
       "published_at": "2026-11-11T12:40:00Z",
       "related_news_urls": [
-        "https://www.tvinsider.com/1302682/emilie-ikeda-pregnancy-update-today-nbc/",
-        "https://www.imdb.com/es/news/ni66104503/?ref_=nwc_art_perm",
-        "https://www.yahoo.com/entertainment/tv/articles/dylan-dreyer-takes-jab-today-152325091.html"
+        "https://www.yahoo.com/entertainment/tv/articles/dylan-dreyer-takes-jab-today-152325091.html",
+        "https://www.hellomagazine.com/us/933919/dylan-dreyer-calls-out-today-co-star/",
+        "https://www.tvinsider.com/1302682/emilie-ikeda-pregnancy-update-today-nbc/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzZhRGuxDxxyscmYaQ6RZr7GQWUxRMjerlHVbTDUe_34J_V4jHJ6qrY5UPvcU",
-      "image_credit": "TV Insider",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMWBK61LiKRxuwnnlhQ63RoYO4VU66O1JcHks9MSsejbsteXev-lgKqm6pjoM",
+      "image_credit": "Yahoo",
       "news": [
-        {
-          "url": "https://www.tvinsider.com/1302682/emilie-ikeda-pregnancy-update-today-nbc/",
-          "title": "‘Today’ Host Shares Exciting Pregnancy Update After Surprise Announcement",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzZhRGuxDxxyscmYaQ6RZr7GQWUxRMjerlHVbTDUe_34J_V4jHJ6qrY5UPvcU"
-        },
-        {
-          "url": "https://www.imdb.com/es/news/ni66104503/?ref_=nwc_art_perm",
-          "title": "‘Today’ Host Shares Exciting Pregnancy Update After Surprise Announcement",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZLi6JcXBLiA03f02zORDMCFybX-2yeSJwBBycPxzkYiHYFWSbEJRFlcZpgzg"
-        },
         {
           "url": "https://www.yahoo.com/entertainment/tv/articles/dylan-dreyer-takes-jab-today-152325091.html",
           "title": "Dylan Dreyer takes jab at TODAY co-star and shocked Al Roker jumps to their defense",
           "publisher": "Yahoo",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMWBK61LiKRxuwnnlhQ63RoYO4VU66O1JcHks9MSsejbsteXev-lgKqm6pjoM"
-        }
-      ]
-    },
-    {
-      "query": "noah's ark discovery",
-      "approx_searches": "100+",
-      "published_at": "2026-11-11T12:40:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/travel/noahs-ark-site-yields-first-look-charred-wood-fragments-recovered-deep-below-soil",
-        "https://www.news24.com.au/world/flood-of-new-evidence-ancient-wood-discovery-fuels-fresh-noahs-ark-speculation/news-story/ca846bb2fc08b9d2f3a0723efefa92e7",
-        "https://ca.news.yahoo.com/scientists-finally-testing-linked-noah-182428708.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKYsvaWKuD2_n-G1w9m8JxVHY_JJ4msIq42MZkBq79iGP0dQsnRxvqUFWmuOw",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/travel/noahs-ark-site-yields-first-look-charred-wood-fragments-recovered-deep-below-soil",
-          "title": "Noah's Ark site yields first look at charred wood fragments recovered deep below soil",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKYsvaWKuD2_n-G1w9m8JxVHY_JJ4msIq42MZkBq79iGP0dQsnRxvqUFWmuOw"
         },
         {
-          "url": "https://www.news24.com.au/world/flood-of-new-evidence-ancient-wood-discovery-fuels-fresh-noahs-ark-speculation/news-story/ca846bb2fc08b9d2f3a0723efefa92e7",
-          "title": "Flood of new evidence? Wood fragments revive Noah’s Ark mystery",
-          "publisher": "News24",
+          "url": "https://www.hellomagazine.com/us/933919/dylan-dreyer-calls-out-today-co-star/",
+          "title": "Dylan Dreyer calls out TODAY co-stars and shocked Al Roker jumps to their defense",
+          "publisher": "HELLO!",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKLVjoV9yT7qygfgB9w-THXT4LtHc4URugoa6d9qAfQkya9J8ukn8YsBfepPY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOikaOxGuwhHPLTeJ0yV-DeKfXsDJKSD-2MtwKdVMVjTCPrIw-ohzdu-9Itp0"
         },
         {
-          "url": "https://ca.news.yahoo.com/scientists-finally-testing-linked-noah-182428708.html",
-          "title": "Scientists Are Finally Testing the Site Linked to Noah’s Ark",
-          "publisher": "Yahoo News Canada",
+          "url": "https://www.tvinsider.com/1302682/emilie-ikeda-pregnancy-update-today-nbc/",
+          "title": "‘Today’ Host Shares Exciting Pregnancy Update After Surprise Announcement",
+          "publisher": "TV Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbJU3cpFDs5NlsXgVcD79GQiPfeL3F68Fhh_cu_dBD_REzdFXui8mbTMpFyGA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzZhRGuxDxxyscmYaQ6RZr7GQWUxRMjerlHVbTDUe_34J_V4jHJ6qrY5UPvcU"
         }
       ]
     },
@@ -178,181 +353,6 @@
           "publisher": "Bangladesh Sangbad Sangstha (BSS)",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPcNbHmDuLT42ZYozpwi15CWrMYBjX2_SDZ9QtwkCojPWeh0t3zSVfORdpd-g"
-        }
-      ]
-    },
-    {
-      "query": "dunkin veterans day",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T12:30:00Z",
-      "related_news_urls": [
-        "https://www.nwahomepage.com/news/local-news/fayetteville-donut-shop-salutes-veterans-with-free-offers/",
-        "https://www.wsoctv.com/news/local/krispy-kreme-offering-free-coffee-doughnuts-veterans-wednesday/QAK2CGKCFBDMTJHGGSEDR42F7U/",
-        "https://news.dunkindonuts.com/blog/dunkin-R-salutes-military-members-this-veterans-day"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmALZRCa4rQ7_l58vRz3F1hEUpmqS4zHfUPtKV7Ze0NlOUpKBcR3AEHZmB_7I",
-      "image_credit": "KNWA FOX24",
-      "news": [
-        {
-          "url": "https://www.nwahomepage.com/news/local-news/fayetteville-donut-shop-salutes-veterans-with-free-offers/",
-          "title": "Fayetteville donut shop salutes veterans with free offers",
-          "publisher": "KNWA FOX24",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmALZRCa4rQ7_l58vRz3F1hEUpmqS4zHfUPtKV7Ze0NlOUpKBcR3AEHZmB_7I"
-        },
-        {
-          "url": "https://www.wsoctv.com/news/local/krispy-kreme-offering-free-coffee-doughnuts-veterans-wednesday/QAK2CGKCFBDMTJHGGSEDR42F7U/",
-          "title": "Krispy Kreme offering free coffee, doughnuts for Veterans on Wednesday",
-          "publisher": "WSOC TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRb-H27xbhdn6P4q_6aCXhN-kmoCQjGxuT4B-UnxHT6XpCG4W_I85rY42seRyc"
-        },
-        {
-          "url": "https://news.dunkindonuts.com/blog/dunkin-R-salutes-military-members-this-veterans-day",
-          "title": "Dunkin'® Salutes Military Members This Veterans Day",
-          "publisher": "Dunkin",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoskMjo6asjsfDZlZWLC0XngHvvuK9xNfb4qco05JTCr_9hFEy5yrXie8UGiY"
-        }
-      ]
-    },
-    {
-      "query": "stock market open today",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-11T12:30:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/economy/central-banking/fed-forced-to-confront-case-for-bigger-and-faster-rate-rises-ac181706",
-        "https://www.fool.com/investing/2026/11/11/could-the-latest-inflation-data-trigger-a-stock-market-crash/",
-        "https://www.cnn.com/2026/11/10/investing/bond-yields-inflation-fed"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHxcyxmwph_LXtAg3Aphs_mRjgcnG2Mo3AL-ej2CAF_27FK7-DCgWeez8j1W8",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/economy/central-banking/fed-forced-to-confront-case-for-bigger-and-faster-rate-rises-ac181706",
-          "title": "Fed Forced to Confront Case for Bigger and Faster Rate Rises",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHxcyxmwph_LXtAg3Aphs_mRjgcnG2Mo3AL-ej2CAF_27FK7-DCgWeez8j1W8"
-        },
-        {
-          "url": "https://www.fool.com/investing/2026/11/11/could-the-latest-inflation-data-trigger-a-stock-market-crash/",
-          "title": "Could the Latest Inflation Data Trigger a Stock Market Crash?",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy5tGVfKMTBz0xClR_rhIZ6wsolQm8MIqqI7fXE7_LdHBsTDUO4Kts_QPFDVA"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/10/investing/bond-yields-inflation-fed",
-          "title": "Bond yields surge most in 19 months as traders brace for Fed rate hikes",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5Rn1AMnD5iWOVRiY65OoImQ-HyVM5C9E50XJ6AklBITlfDfXTeK1nipM7hi4"
-        }
-      ]
-    },
-    {
-      "query": "veterans day parade",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T12:30:00Z",
-      "related_news_urls": [
-        "https://www.azcentral.com/story/news/traffic-transportation/2026/11/11/traffic-to-increase-during-veterans-day-parade-in-phoenix/92717954007/",
-        "https://www.yourvalley.net/scottsdale-independent/stories/honoring-those-who-served-why-i-still-do-this-work-after-30-years,738764",
-        "https://www.axios.com/local/scottsdale/2026/11/10/scottsdale-veterans-day-2026-navy-concert-hike-salt-river"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4nwACk8Ut0GcbfeY4756GltHpiINFBwUwSFVAFqIoHMmKVWh76WJJu66QrIo",
-      "image_credit": "azcentral.com and The Arizona Republic",
-      "news": [
-        {
-          "url": "https://www.azcentral.com/story/news/traffic-transportation/2026/11/11/traffic-to-increase-during-veterans-day-parade-in-phoenix/92717954007/",
-          "title": "Phoenix Veterans Day Parade has new route. Here's how to avoid traffic",
-          "publisher": "azcentral.com and The Arizona Republic",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4nwACk8Ut0GcbfeY4756GltHpiINFBwUwSFVAFqIoHMmKVWh76WJJu66QrIo"
-        },
-        {
-          "url": "https://www.yourvalley.net/scottsdale-independent/stories/honoring-those-who-served-why-i-still-do-this-work-after-30-years,738764",
-          "title": "Honoring those who served: Why I still do this work after 30 years",
-          "publisher": "Your Valley",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTul9ndsiYc9TyjEP0Mb7MT-KZ0TAyn2Nlcgb9KHo9xVVNSeSlMc3z03P3KqgM"
-        },
-        {
-          "url": "https://www.axios.com/local/scottsdale/2026/11/10/scottsdale-veterans-day-2026-navy-concert-hike-salt-river",
-          "title": "5 ways to mark Veterans Day in Scottsdale this week",
-          "publisher": "Axios",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTB4TuNtWkaDajtjvv-7H_QYrCfKnyYP_3bTkix3pzRon_WblCY_HEMoxe3XGY"
-        }
-      ]
-    },
-    {
-      "query": "vietnam war",
-      "approx_searches": "100+",
-      "published_at": "2026-11-11T12:30:00Z",
-      "related_news_urls": [
-        "https://floridapolitics.com/archives/829944-st-petersburg-to-honor-2-vietnam-war-veterans-at-veterans-day-ceremony/",
-        "https://www.cbs8.com/article/news/politics/immigration-news/disabled-veteran-fights-keep-wife-from-deportation/509-299a4904-3560-483e-a9f4-fcfd3cf708cd",
-        "https://www.nbcsandiego.com/news/local/vietnam-war-veteran-fights-stop-his-wifes-deportation/4100107/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT58uHVjCJbzZOfuxMa3cho68wJpp0iN678pVWhn6cENtW1Qs7pB3RBd-xU7HA",
-      "image_credit": "Florida Politics",
-      "news": [
-        {
-          "url": "https://floridapolitics.com/archives/829944-st-petersburg-to-honor-2-vietnam-war-veterans-at-veterans-day-ceremony/",
-          "title": "St. Petersburg to honor 2 Vietnam War veterans at Veterans Day ceremony",
-          "publisher": "Florida Politics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT58uHVjCJbzZOfuxMa3cho68wJpp0iN678pVWhn6cENtW1Qs7pB3RBd-xU7HA"
-        },
-        {
-          "url": "https://www.cbs8.com/article/news/politics/immigration-news/disabled-veteran-fights-keep-wife-from-deportation/509-299a4904-3560-483e-a9f4-fcfd3cf708cd",
-          "title": "Disabled veteran fights to keep wife from deportation after ICE arrest in San Diego",
-          "publisher": "cbs8.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS9Qa-9W_DiKe58CAOhKrqi0VTo-aOF2_dBuBHTNCOJ9ad1wPRCxSCzpAPUAw"
-        },
-        {
-          "url": "https://www.nbcsandiego.com/news/local/vietnam-war-veteran-fights-stop-his-wifes-deportation/4100107/",
-          "title": "Vietnam war veteran fights to stop his wife's deportation",
-          "publisher": "NBC 7 San Diego",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAEy4yBsHCYUU-bPFhm66d6o58tf8J9fMfEDwvFAdRSEvV2oTHctyhQRJdbho"
-        }
-      ]
-    },
-    {
-      "query": "north royalton",
-      "approx_searches": "100+",
-      "published_at": "2026-11-11T12:30:00Z",
-      "related_news_urls": [
-        "https://www.wkyc.com/article/news/local/cuyahoga-county/3-dead-north-royalton-unwanted-guest-tiffany-drive/95-d69a191c-4de9-40d5-ae9e-bbecc3b2331f",
-        "https://www.cleveland19.com/2026/11/11/swat-stand-off-ends-north-royalton-home/",
-        "https://fox8.com/news/i-team/i-team-police-investigate-homicide-scene-in-north-royalton-multiple-victims-possible/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5-4l7L2-ypNuPNokUeRetYCbuBEXDtWNaxj3JFCMk_2LcG43PRflXPOdZx-0",
-      "image_credit": "WKYC",
-      "news": [
-        {
-          "url": "https://www.wkyc.com/article/news/local/cuyahoga-county/3-dead-north-royalton-unwanted-guest-tiffany-drive/95-d69a191c-4de9-40d5-ae9e-bbecc3b2331f",
-          "title": "3 found dead after ‘unwanted guest call’ at North Royalton home",
-          "publisher": "WKYC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5-4l7L2-ypNuPNokUeRetYCbuBEXDtWNaxj3JFCMk_2LcG43PRflXPOdZx-0"
-        },
-        {
-          "url": "https://www.cleveland19.com/2026/11/11/swat-stand-off-ends-north-royalton-home/",
-          "title": "SWAT stand-off ends at North Royalton home",
-          "publisher": "Cleveland 19 News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSilukBHaqOFuMzr3SF7z9Md741iJeOqQvPFpr38jOP9FiavR5z906rajxnKjg"
-        },
-        {
-          "url": "https://fox8.com/news/i-team/i-team-police-investigate-homicide-scene-in-north-royalton-multiple-victims-possible/",
-          "title": "Police investigate homicide scene in North Royalton; multiple victims possible: I-Team",
-          "publisher": "FOX 8 News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0xYKXASsLmmX7x3yt8xyZWr6TvFIWvBn1jTjCyCyM3Ml5QG7YhmlY4Xgwnp8"
         }
       ]
     }
