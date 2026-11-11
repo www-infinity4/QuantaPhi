@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T02:01:21.222407Z",
+  "checked_at": "2026-11-11T02:31:19.744753Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "val chmerkovskiy",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T01:40:00Z",
+      "query": "harry shum jr",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-11T02:10:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/lindsey-vonn-says-never-never-140000653.html",
-        "https://www.aol.com/articles/exclusive-val-chmerkovskiy-faces-career-130000000.html",
-        "https://people.com/carrie-ann-inaba-val-chmerkovskiy-have-long-conversation-dancing-with-the-stars-ballroom-12197803"
+        "https://people.com/all-about-harry-shum-jr-daughter-12247398",
+        "https://www.imdb.com/news/ni66104690/?ref_=nwc_art_perm",
+        "https://www.today.com/popculture/tv/jenna-johnson-broke-nose-dwts-grammy-night-rcna608675"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9N75uO9LHkM4LSEIUgpUCPmJZTX0z0r7mvz1RHQcQ5Smg79ynBUS5S_GKN6k",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/lindsey-vonn-says-never-never-140000653.html",
-          "title": "Lindsey Vonn Says 'Never Say Never' to 'Dancing with the Stars'",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9N75uO9LHkM4LSEIUgpUCPmJZTX0z0r7mvz1RHQcQ5Smg79ynBUS5S_GKN6k"
-        },
-        {
-          "url": "https://www.aol.com/articles/exclusive-val-chmerkovskiy-faces-career-130000000.html",
-          "title": "EXCLUSIVE: Val Chmerkovskiy Faces Career Setback After Carrie Ann Inaba Row",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnvTS0fD18eiTlS9a-yiN4zJzSbzbRC2jeGR8B4eiQJQv9k3QUIwfUF-EqhuA"
-        },
-        {
-          "url": "https://people.com/carrie-ann-inaba-val-chmerkovskiy-have-long-conversation-dancing-with-the-stars-ballroom-12197803",
-          "title": "Carrie Ann Inaba and Val Chmerkovskiy Clear the Air in ‘Dancing with the Stars’ Ballroom",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTP5_E_Znab3dI0tSdiQmgAUGRhyzEpViUjNGcS5v5LSFv4PEKjbyiMaTtptM8"
-        }
-      ]
-    },
-    {
-      "query": "julianne hough",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T01:40:00Z",
-      "related_news_urls": [
-        "https://www.the-sun.com/tv/17280828/dwts-hosts-alfonso-ribeiro-julianne-hough-salaries-pay-2026/",
-        "https://www.yahoo.com/entertainment/tv/articles/dancing-stars-host-alfonso-ribeiro-230822387.html",
-        "https://www.cosmopolitan.com/entertainment/tv/a74385505/alfonso-ribeiro-julianne-hough-dancing-with-the-stars-salary/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBGAmdIiIOA09hANeOlZsvzlOFg8HjJpTRil95mzRt29RJURJIdnhgoY8h1O8",
-      "image_credit": "The Sun",
-      "news": [
-        {
-          "url": "https://www.the-sun.com/tv/17280828/dwts-hosts-alfonso-ribeiro-julianne-hough-salaries-pay-2026/",
-          "title": "DWTS co-hosts Alfonso and Julianne's salaries revealed as one makes ‘MUCH more’",
-          "publisher": "The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBGAmdIiIOA09hANeOlZsvzlOFg8HjJpTRil95mzRt29RJURJIdnhgoY8h1O8"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/dancing-stars-host-alfonso-ribeiro-230822387.html",
-          "title": "‘Dancing with the Stars’ Host Alfonso Ribeiro Makes ‘Significantly More’ Than Cohost Julianne Hough",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoSd75Zy2Bq0NKQKtr-0mvZX4rJ-Nvhn18KLrrc7_k9mzfYUEbZUctIjJM2GI"
-        },
-        {
-          "url": "https://www.cosmopolitan.com/entertainment/tv/a74385505/alfonso-ribeiro-julianne-hough-dancing-with-the-stars-salary/",
-          "title": "Alfonso Ribeiro and Julianne Hough’s Exact ‘DWTS’ Salaries Revealed by a Show Source",
-          "publisher": "Cosmopolitan",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-YIgjGcHaH_lH_Mh27qCFB0qIMLkK6RPpYuX82MhVhs00SzG9lV5VXosuAuo"
-        }
-      ]
-    },
-    {
-      "query": "channing tatum",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T01:40:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/movies/articles/sorry-channing-tatum-marvel-x-182648719.html",
-        "https://screenrant.com/gambit-mcu-solo-movie-chances-update-channing-tatum/",
-        "https://www.cinemablend.com/movies/channing-tatum-reveals-gambit-related-mistake-nearly-made-deadpool-wolverine"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTcOQE_fH4Jd5Xep_ubLGW7H_G51QmkMAodAWN76XQ5XotG-nghO8F6LoybfyY",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/sorry-channing-tatum-marvel-x-182648719.html",
-          "title": "Sorry, Channing Tatum, but Marvel’s X-Men Future Can’t Be Held Hostage by Its Past",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTcOQE_fH4Jd5Xep_ubLGW7H_G51QmkMAodAWN76XQ5XotG-nghO8F6LoybfyY"
-        },
-        {
-          "url": "https://screenrant.com/gambit-mcu-solo-movie-chances-update-channing-tatum/",
-          "title": "Gambit's Solo MCU Movie Chances Get New Update From Channing Tatum",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGFEzsZso55twZHPhJpgeLdzSWokB7lh7dv9legLtbubEMI5nkbhiUhsm7tZ0"
-        },
-        {
-          "url": "https://www.cinemablend.com/movies/channing-tatum-reveals-gambit-related-mistake-nearly-made-deadpool-wolverine",
-          "title": "The Gambit-Related Mistake Channing Tatum Nearly Made: ‘It Would’ve Just Been A Catastrophe’",
-          "publisher": "Cinemablend",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjGn7B2FXyJ4iPXNtcq8EZOYqrDtBwFa4v5eDl0QQu2v7WKQOnuMT_pIq8FS0"
-        }
-      ]
-    },
-    {
-      "query": "clima para amanhã",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T01:40:00Z",
-      "related_news_urls": [
-        "https://imediato.ncnews.com.br/2026/11/10/alerta-de-chuva-defesa-civil-preve-temporal-em-manaus-nesta-terca-feira-e-orienta-moradores/",
-        "https://novo2026.portaldoholanda.com.br/manaus/clima-para-amanha-em-manaus-tarde-de-calor-da-lugar-a-pancadas-no-fim-do-dia",
-        "https://www.otempo.com.br/tempo/2026/11/10/inmet-poe-maraba-e-mais-1-cidade-do-para-em-alerta-amarelo-para-chuva-de-ate-50-mm-dia"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSC4TUvjyLLz9NjTQP1fXoHBMnAX-wEDraCCExoIRgcWrDVjsUxeGjyv2_i5s8",
-      "image_credit": "Imediato Online",
-      "news": [
-        {
-          "url": "https://imediato.ncnews.com.br/2026/11/10/alerta-de-chuva-defesa-civil-preve-temporal-em-manaus-nesta-terca-feira-e-orienta-moradores/",
-          "title": "ALERTA DE CHUVA: Defesa Civil prevê temporal em Manaus nesta terça-feira e orienta moradores",
-          "publisher": "Imediato Online",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSC4TUvjyLLz9NjTQP1fXoHBMnAX-wEDraCCExoIRgcWrDVjsUxeGjyv2_i5s8"
-        },
-        {
-          "url": "https://novo2026.portaldoholanda.com.br/manaus/clima-para-amanha-em-manaus-tarde-de-calor-da-lugar-a-pancadas-no-fim-do-dia",
-          "title": "Clima para amanhã em Manaus: tarde de calor dá lugar a pancadas no fim do dia",
-          "publisher": "Portal do Holanda",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBuVxEY40d8VbE0COlDm4gAk2-JbAV6ynWQ6ZOnL_3M5dZqD1pE3-UERXMybw"
-        },
-        {
-          "url": "https://www.otempo.com.br/tempo/2026/11/10/inmet-poe-maraba-e-mais-1-cidade-do-para-em-alerta-amarelo-para-chuva-de-ate-50-mm-dia",
-          "title": "Inmet põe Marabá e mais 1 cidade do Pará em alerta amarelo para chuva de até 50 mm/dia",
-          "publisher": "O Tempo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLRWLneJHJybYNTJhtUrzr3Z1c7Rj_zpJ2tzUmUPKPYL7CTmAWDWbLaD0NMAA"
-        }
-      ]
-    },
-    {
-      "query": "ncis cast",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T01:40:00Z",
-      "related_news_urls": [
-        "https://people.com/see-ncis-cast-kids-appearing-in-franchise-12244670",
-        "https://www.cbsnews.com/gooddaysacramento/video/new-episode-of-ncis/",
-        "https://www.yahoo.com/entertainment/tv/articles/katrina-law-daughter-making-her-111100997.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRRW708T8uIiA0XeHFnGpkU7rUo4zDgHmpzszdO37KHrHZ7M0LS8OBTBMsRZI",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhc54dP5XWqobpmHMPpSgvrTXfeO9MgQeqzpccV2sgNluINhRuBexzwSH-Cyo",
       "image_credit": "People.com",
       "news": [
         {
-          "url": "https://people.com/see-ncis-cast-kids-appearing-in-franchise-12244670",
-          "title": "4 ‘NCIS’ Stars Who Acted Alongside Their Kids in the Franchise",
+          "url": "https://people.com/all-about-harry-shum-jr-daughter-12247398",
+          "title": "All About Harry Shum Jr.’s Daughter, Xia",
           "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRRW708T8uIiA0XeHFnGpkU7rUo4zDgHmpzszdO37KHrHZ7M0LS8OBTBMsRZI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhc54dP5XWqobpmHMPpSgvrTXfeO9MgQeqzpccV2sgNluINhRuBexzwSH-Cyo"
         },
         {
-          "url": "https://www.cbsnews.com/gooddaysacramento/video/new-episode-of-ncis/",
-          "title": "New episode of NCIS!",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROUG9Phh5DyDeBonfQJJTlPbRwNC0VifjXzNrn8V1aM7On2h8-nV6rvTuaheE"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/katrina-law-daughter-making-her-111100997.html",
-          "title": "Katrina Law’s Daughter Is Making Her Acting Debut on ‘NCIS’—and the Cast Had the Sweetest Reaction (Exclusive)",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDD_jQefvGiV_eklq6C9igJqxuObQcy8yTWMktP6Q5UZUMQKai8mRCbb5EZZw"
-        }
-      ]
-    },
-    {
-      "query": "saving private ryan",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T01:40:00Z",
-      "related_news_urls": [
-        "https://huntingtonnow.com/event/veterans-day-saving-private-ryan-at-cinema-arts-centre/",
-        "https://collider.com/most-intense-movie-scenes-all-time-ranked/",
-        "https://www.imdb.com/news/ni66104324/?ref_=nmnw_art_perm"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRaa0K-ojaYSxlFDciL3CLHBjLinfbA1sizF87NyYlKUxHIxnW6OwRANgWwqU",
-      "image_credit": "Huntington Now",
-      "news": [
-        {
-          "url": "https://huntingtonnow.com/event/veterans-day-saving-private-ryan-at-cinema-arts-centre/",
-          "title": "Veterans Day: ‘Saving Private Ryan’ at Cinema Arts Centre",
-          "publisher": "Huntington Now",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRaa0K-ojaYSxlFDciL3CLHBjLinfbA1sizF87NyYlKUxHIxnW6OwRANgWwqU"
-        },
-        {
-          "url": "https://collider.com/most-intense-movie-scenes-all-time-ranked/",
-          "title": "The 10 Most Intense Movie Scenes of All Time, Ranked",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAv1msR78PGIk9ephHfrX9e9Cunq3VuEYr4A00JQQuQdwEg9Pp03iNQnV_ejA"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66104324/?ref_=nmnw_art_perm",
-          "title": "‘Saving Private Ryan’ Meets ‘Looper’ in the Sci-Fi Cult Classic Officially Taking Streaming by Storm",
+          "url": "https://www.imdb.com/news/ni66104690/?ref_=nwc_art_perm",
+          "title": "Jenna Johnson Reveals Painful Injury Ahead of ‘DWTS’: Will She Compete Tonight?",
           "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSArGCo-oWqzKHHVAE5kw-Byn_Ib7_LT8S8HG8DFTwxBWq1dNZeZeBANzhJpiQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBwrB8loTXxWgUCYH6cyONdpioclKMplaucSiGzG9fT6RE5fwMie3XF3o9qfo"
+        },
+        {
+          "url": "https://www.today.com/popculture/tv/jenna-johnson-broke-nose-dwts-grammy-night-rcna608675",
+          "title": "Jenna Johnson to Dance With a Broken Nose During ‘DWTS’ Grammy Night",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiWRrNA5yQpXwePzw7Cm9KlumHpW_2HqMq7IYvXhE-JWK7f3HxUAoKMw0NNdM"
         }
       ]
     },
     {
-      "query": "wisconsin basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T01:40:00Z",
+      "query": "magic vs kings",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-11T02:10:00Z",
       "related_news_urls": [
-        "https://www.jsonline.com/story/sports/college/uw/2026/11/10/watch-wisconsin-basketball-vs-fairfield-tonight-time-tv-channel/92698377007/",
-        "https://uwbadgers.com/news/2026/11/9/mens-basketball-five-things-to-know-badgers-host-stags-tuesday-night",
-        "https://www.buckys5thquarter.com/wisconsin-badgers-mens-basketball/91608/wisconsin-badgers-basketball-news-how-to-watch-tuesday-game-fairfield-stags-greg-gard-nolan-winter"
+        "https://www.si.com/betting/magic-vs-kings-prediction-odds-and-best-nba-prop-bets-for-tuesday-nov-10-2026",
+        "https://kingsherald.com/articles/kings-vs-magic-preview-can-we-finally-win-at-home/",
+        "https://orlandomagic.com/news/orlando-magic-sacramento-kings-game-preview-injury-report-20261110"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTb4fHEkpwjRbWF1v7tdOZMijECZw9qEGMy8JHlfyyah2y2G11EiQ_gGh50pGA",
-      "image_credit": "Milwaukee Journal Sentinel",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHfEfkdbmoeJNDqiE0qk7TTaFbzrRiTagjiunI7QrzlerHTldrfkWOJ06DHqE",
+      "image_credit": "Sports Illustrated",
       "news": [
         {
-          "url": "https://www.jsonline.com/story/sports/college/uw/2026/11/10/watch-wisconsin-basketball-vs-fairfield-tonight-time-tv-channel/92698377007/",
-          "title": "What channel is Wisconsin basketball on tonight? Time, TV, streaming",
-          "publisher": "Milwaukee Journal Sentinel",
+          "url": "https://www.si.com/betting/magic-vs-kings-prediction-odds-and-best-nba-prop-bets-for-tuesday-nov-10-2026",
+          "title": "Magic vs. Kings Prediction, Odds and Best NBA Prop Bets for Tuesday, Nov. 10",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTb4fHEkpwjRbWF1v7tdOZMijECZw9qEGMy8JHlfyyah2y2G11EiQ_gGh50pGA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHfEfkdbmoeJNDqiE0qk7TTaFbzrRiTagjiunI7QrzlerHTldrfkWOJ06DHqE"
         },
         {
-          "url": "https://uwbadgers.com/news/2026/11/9/mens-basketball-five-things-to-know-badgers-host-stags-tuesday-night",
-          "title": "Five Things to Know: Badgers host Stags Tuesday night",
-          "publisher": "Wisconsin Badgers",
+          "url": "https://kingsherald.com/articles/kings-vs-magic-preview-can-we-finally-win-at-home/",
+          "title": "Kings vs. Magic Preview: Can we finally win at home?",
+          "publisher": "The Kings Herald",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZFcP0Ezp0Iua_oFWFARsNBIlddzQWa5TL7UpDSHRntpm1U3IzDOn_QqnoXhM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3jgNyIOQRu2uxbya8bu2oNhqEqS_k8NqpGcAK6NVJFM1wQLfg2QsqO_uxifw"
         },
         {
-          "url": "https://www.buckys5thquarter.com/wisconsin-badgers-mens-basketball/91608/wisconsin-badgers-basketball-news-how-to-watch-tuesday-game-fairfield-stags-greg-gard-nolan-winter",
-          "title": "How to watch Wisconsin’s game on Tuesday + betting odds",
-          "publisher": "Bucky's 5th Quarter",
+          "url": "https://orlandomagic.com/news/orlando-magic-sacramento-kings-game-preview-injury-report-20261110",
+          "title": "Orlando Magic at Sacramento Kings: Game Preview",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzDbYQabYgxZqnlUOLmc7d59rUB_AvIYEB5EP4OzwoDxPpWpC6NkCGTxZE1tE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyujWI9DIzT943LpYr0bZ3QUQV9WlWnUWbeOex5C-TI6lsPZ4kxcUdX6u1z64"
         }
       ]
     },
     {
-      "query": "secret lives of mormon wives",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T01:40:00Z",
+      "query": "jenna johnson",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-11T02:10:00Z",
       "related_news_urls": [
-        "https://people.com/pregnant-jen-affleck-doing-the-best-that-i-can-amid-divorce-from-zac-exclusive-12245372",
-        "https://www.the-sun.com/tv/17267874/dwts-jen-affleck-husband-zac-nightmare-mormon-wives-divorce/",
-        "https://www.tmz.com/2026/11/04/jen-affleck-files-for-divorce/"
+        "https://www.imdb.com/news/ni66104690/?ref_=nwc_art_perm",
+        "https://www.today.com/popculture/tv/jenna-johnson-broke-nose-dwts-grammy-night-rcna608675",
+        "https://people.com/jenna-johnson-breaks-nose-during-dancing-with-the-stars-rehearsals-12247375"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyl3gjQr7H2nyA2W1ZMjfhpQ6C_Vc1xOCpOQHmZO93yhkj_3WnMiNHd0NWQcY",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBwrB8loTXxWgUCYH6cyONdpioclKMplaucSiGzG9fT6RE5fwMie3XF3o9qfo",
+      "image_credit": "IMDb",
       "news": [
         {
-          "url": "https://people.com/pregnant-jen-affleck-doing-the-best-that-i-can-amid-divorce-from-zac-exclusive-12245372",
-          "title": "Pregnant Jen Affleck ‘Doing the Best That I Can’ amid Divorce from Zac (Exclusive)",
+          "url": "https://www.imdb.com/news/ni66104690/?ref_=nwc_art_perm",
+          "title": "Jenna Johnson Reveals Painful Injury Ahead of ‘DWTS’: Will She Compete Tonight?",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBwrB8loTXxWgUCYH6cyONdpioclKMplaucSiGzG9fT6RE5fwMie3XF3o9qfo"
+        },
+        {
+          "url": "https://www.today.com/popculture/tv/jenna-johnson-broke-nose-dwts-grammy-night-rcna608675",
+          "title": "Jenna Johnson to Dance With a Broken Nose During ‘DWTS’ Grammy Night",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiWRrNA5yQpXwePzw7Cm9KlumHpW_2HqMq7IYvXhE-JWK7f3HxUAoKMw0NNdM"
+        },
+        {
+          "url": "https://people.com/jenna-johnson-breaks-nose-during-dancing-with-the-stars-rehearsals-12247375",
+          "title": "‘Dancing with the Stars’ Pro Jenna Johnson Reveals She Broke Her Nose the Night Before Live Show",
           "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyl3gjQr7H2nyA2W1ZMjfhpQ6C_Vc1xOCpOQHmZO93yhkj_3WnMiNHd0NWQcY"
-        },
-        {
-          "url": "https://www.the-sun.com/tv/17267874/dwts-jen-affleck-husband-zac-nightmare-mormon-wives-divorce/",
-          "title": "Jen Affleck's 'controlling' husband Zac was a 'nightmare' while filming DWTS",
-          "publisher": "The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLgvtoL2DqEU-mQo_86TCNqDL9eJ5hzcAQWp0ycbvUA6vAMUCUUNFPthX9w-w"
-        },
-        {
-          "url": "https://www.tmz.com/2026/11/04/jen-affleck-files-for-divorce/",
-          "title": "'Mormon Wives' Star Jen Affleck Files for Divorce From Zac Affleck",
-          "publisher": "TMZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRg8Amqio3K0kaTmhE2xd_1-3B6lSxOhf4XORqq3HhhobBIUGCevJeBhV1nnGQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBmLbiX3yY60BDjI6CFgMIr8vMBbmM-vNr2QhwXNt0FvuEuJe5qYlfVaOUt0w"
         }
       ]
     },
     {
-      "query": "boston",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T01:40:00Z",
+      "query": "trisha paytas",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T02:10:00Z",
       "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/10/business/boston-housing-costs/",
-        "https://www.masslive.com/boston/2026/11/this-is-how-much-you-have-to-earn-to-buy-a-house-in-greater-boston-report-finds.html",
-        "https://www.axios.com/local/boston/2026/11/10/greater-boston-earn-181k-to-afford-home"
+        "https://www.washingtonpost.com/style/2026/11/10/trisha-paytas-would-do-anything-be-famous-i-get-why-people-hate-me/",
+        "https://www.rollingstone.com/culture/culture-features/trisha-paytas-frenemies-ethan-klein-memoir-1235653204/",
+        "https://www.vulture.com/article/trisha-paytas-memoir-stories-youtube-drama.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3TyEevQumZ1BsqQSBiNFvye2bvmtPZmh67lC9GfycSBJ6Zu1mpbrjRWcZfBc",
-      "image_credit": "The Boston Globe",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2hWY_6_FHq3dfbAUysDyZHmNnWgoIXO-huT4I8UwqggiP6f_0kzHSdv-fTg4",
+      "image_credit": "The Washington Post",
       "news": [
         {
-          "url": "https://www.bostonglobe.com/2026/11/10/business/boston-housing-costs/",
-          "title": "Homes in a ‘low-priced town’ in Greater Boston are now $600,000, a new report says. Here are five striking findings.",
-          "publisher": "The Boston Globe",
+          "url": "https://www.washingtonpost.com/style/2026/11/10/trisha-paytas-would-do-anything-be-famous-i-get-why-people-hate-me/",
+          "title": "Column | The woman who survived 1,000 cancellations and lived to tell the tale",
+          "publisher": "The Washington Post",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3TyEevQumZ1BsqQSBiNFvye2bvmtPZmh67lC9GfycSBJ6Zu1mpbrjRWcZfBc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2hWY_6_FHq3dfbAUysDyZHmNnWgoIXO-huT4I8UwqggiP6f_0kzHSdv-fTg4"
         },
         {
-          "url": "https://www.masslive.com/boston/2026/11/this-is-how-much-you-have-to-earn-to-buy-a-house-in-greater-boston-report-finds.html",
-          "title": "This is what you have to earn to buy a house in Greater Boston. Fewer than 1 in 5 renters make enough",
+          "url": "https://www.rollingstone.com/culture/culture-features/trisha-paytas-frenemies-ethan-klein-memoir-1235653204/",
+          "title": "Trisha Paytas Is Finally Opening Up About the ‘Frenemies’ Split With Ethan Klein",
+          "publisher": "Rolling Stone",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDVV25mtPViv1n7RAUJc1xtGjbbzMNlNYrQZUxdLA09oNRxLagm9rdwsLSDDQ"
+        },
+        {
+          "url": "https://www.vulture.com/article/trisha-paytas-memoir-stories-youtube-drama.html",
+          "title": "What Trisha Paytas Says About Her YouTuber Frenemies in New Memoir",
+          "publisher": "Vulture",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0FUeLHBzCrxnO1Myv4-kGBKUmXqcCAfa0amT7Sr_8_VcQjdg51J_DUSBdVbs"
+        }
+      ]
+    },
+    {
+      "query": "predators vs kings",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T02:10:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-10-2026",
+        "https://lakingsinsider.com/2026/11/10/11-10-preview-zuccarello-to-play-tonight-ceci-in-gustafsson-out-day-to-day-laviolette-on-communication-special-teams-impact/",
+        "https://www.al.com/tv/2026/11/how-to-watch-the-nashville-predators-vs-los-angeles-kings-tonight.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREIu1CxLJO_jgZUsIT8-HK_9LkIxH59GxurXLA0Gd7Y9m-F7tx05HPZ5FFms4",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-10-2026",
+          "title": "NHL On Tap: Josi one point from 800 when Predators visit Kings",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREIu1CxLJO_jgZUsIT8-HK_9LkIxH59GxurXLA0Gd7Y9m-F7tx05HPZ5FFms4"
+        },
+        {
+          "url": "https://lakingsinsider.com/2026/11/10/11-10-preview-zuccarello-to-play-tonight-ceci-in-gustafsson-out-day-to-day-laviolette-on-communication-special-teams-impact/",
+          "title": "11/10 Preview - Zuccarello To Play Tonight + Ceci In, Gustafsson out \"day-to-day\", Laviolette on communication, special teams impact",
+          "publisher": "LA Kings Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBrGxaMzEBZDNmaINKDK531SL-HUjiI2QksKeJZl7nHsLFMsx3hmi8G8NI2XI"
+        },
+        {
+          "url": "https://www.al.com/tv/2026/11/how-to-watch-the-nashville-predators-vs-los-angeles-kings-tonight.html",
+          "title": "How to watch the Nashville Predators vs. Los Angeles Kings tonight",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwJXJpXj2aiqNl4DxqRhQPCIGxOkGMCcNacS2VtVFAHbVT26vCB-UPYb2FquA"
+        }
+      ]
+    },
+    {
+      "query": "jenny mccarthy",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T02:10:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/jenny-mccarthy-shares-emotional-breakdown-150700011.html",
+        "https://ew.com/jenny-mccarthy-threw-away-all-donnie-wahlberg-clothes-mold-ptsd-12247909",
+        "https://pagesix.com/2026/11/10/celebrity-news/jenny-mccarthys-health-struggles-pushed-her-to-nervous-breakdown/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2ENfFt2jniHP2dkhDvmCq33TeM00K5QlTUfeLLM-65VIRrXJuvFnL0afRqsk",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/jenny-mccarthy-shares-emotional-breakdown-150700011.html",
+          "title": "Jenny McCarthy Shares Emotional Breakdown in Vegas Over Health Fears During Donnie's Show",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2ENfFt2jniHP2dkhDvmCq33TeM00K5QlTUfeLLM-65VIRrXJuvFnL0afRqsk"
+        },
+        {
+          "url": "https://ew.com/jenny-mccarthy-threw-away-all-donnie-wahlberg-clothes-mold-ptsd-12247909",
+          "title": "Jenny McCarthy says she threw away all of husband Donnie Wahlberg’s clothes due to mold PTSD",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmfBol368-6tyS1A3A54OBWiYBT5upq615e40p9HSiavN8LmgyxzZ7G4DX3k4"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/10/celebrity-news/jenny-mccarthys-health-struggles-pushed-her-to-nervous-breakdown/",
+          "title": "Jenny McCarthy's health struggles pushed her to nervous breakdown",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyLXmK8_FeIri803K_r26-X6srKmCMqDk1Qq_jpGOAFxoHevfs6Blu68tcfb8"
+        }
+      ]
+    },
+    {
+      "query": "jennifer beals",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T02:10:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/ncis-york-star-jennifer-beals-230000256.html",
+        "https://www.tvinsider.com/1302196/ncis-new-york-robyn-wells-dog-team-relationships-jennifer-beals-interview/",
+        "https://www.nbcnewyork.com/video/entertainment-videos/jennifer-beals-talks-flashdance-taylor-swift-and-percy-jackson/6568642/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTai-mt52E2WIxlIhlSrbjBE4PTib81Ezys2SbM36t32YhN5RnsNZt8lVXFknA",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/ncis-york-star-jennifer-beals-230000256.html",
+          "title": "NCIS: New York Star Jennifer Beals Sheds Light On Robyn's Backstory — And Gushes About Her On-Screen Dog",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTai-mt52E2WIxlIhlSrbjBE4PTib81Ezys2SbM36t32YhN5RnsNZt8lVXFknA"
+        },
+        {
+          "url": "https://www.tvinsider.com/1302196/ncis-new-york-robyn-wells-dog-team-relationships-jennifer-beals-interview/",
+          "title": "'NCIS: New York's Jennifer Beals Describes Robyn as the Boss & Talks Casting Her Dog (Exclusive)",
+          "publisher": "TV Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZ6MNKEaKs9tgvQPZGN3y4FW6jNZUfuC36DgAN6GwWuXwZQ5E7LALvA3pc8JI"
+        },
+        {
+          "url": "https://www.nbcnewyork.com/video/entertainment-videos/jennifer-beals-talks-flashdance-taylor-swift-and-percy-jackson/6568642/",
+          "title": "Jennifer Beals talks ‘Flashdance,' Taylor Swift and ‘Percy Jackson'",
+          "publisher": "NBC New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5yEsoNnikKZj0oKWR8KFq6y_aqzqyBhBfhliVyRPzpAzLt-6Dl6VpprzsT9I"
+        }
+      ]
+    },
+    {
+      "query": "mike conley",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T02:10:00Z",
+      "related_news_urls": [
+        "https://www.celticsblog.com/boston-celtics-news/149787/mike-conley-celtics-bucks-joe-mazzulla-starting-lineup",
+        "https://sports.yahoo.com/videos/mazzulla-calls-conley-extension-coaching-215757900.html",
+        "https://hardwoodhoudini.com/joe-mazzulla-may-taking-player-empowerment-too-far-wild-starting-lineup"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSu5RlwiYdDXeqSS_FZ87pWnuLe9mVJ7cfj4SK-Y1Sug6AbQweu2cRLrLagOd0",
+      "image_credit": "CelticsBlog",
+      "news": [
+        {
+          "url": "https://www.celticsblog.com/boston-celtics-news/149787/mike-conley-celtics-bucks-joe-mazzulla-starting-lineup",
+          "title": "The story behind Mike Conley’s first Celtics start: “I thought they were joking”",
+          "publisher": "CelticsBlog",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSu5RlwiYdDXeqSS_FZ87pWnuLe9mVJ7cfj4SK-Y1Sug6AbQweu2cRLrLagOd0"
+        },
+        {
+          "url": "https://sports.yahoo.com/videos/mazzulla-calls-conley-extension-coaching-215757900.html",
+          "title": "Mazzulla calls Conley ‘an extension of the coaching staff'",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVTtc8K-quTNAiK5H-ZU_Tb-y0VqZpUmB6D26hbkNCIFQk7J9PfHa-7oC4wYc"
+        },
+        {
+          "url": "https://hardwoodhoudini.com/joe-mazzulla-may-taking-player-empowerment-too-far-wild-starting-lineup",
+          "title": "Joe Mazzulla may be taking player empowerment too far with wild starting lineup",
+          "publisher": "Hardwood Houdini",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFhQTwF4vPkngXfuDmgIbD7kj8nrJX-qRdSeBr_SPtL7nGpvawJ-yD8i81apY"
+        }
+      ]
+    },
+    {
+      "query": "kentavious caldwell-pope",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T02:10:00Z",
+      "related_news_urls": [
+        "https://www.sportsline.com/insiders/nba-dfs-2026-top-fanduel-draftkings-picks-lineups-advice-for-tuesday-nov-10/",
+        "https://www.fanduel.com/research/nba-picks-today-3-nba-predictions-and-best-bets-for-tuesday-nov-10",
+        "https://www.si.com/betting/nba-best-bets-today-predictions-prop-bets-for-jalen-brunson-celtics-76ers-giannis-thunder"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6DV75ANoeU4vG55HS3v9uAFf56MaIUomwFfnWe3rTnA4JiD8BMEtyH7obFck",
+      "image_credit": "SportsLine",
+      "news": [
+        {
+          "url": "https://www.sportsline.com/insiders/nba-dfs-2026-top-fanduel-draftkings-picks-lineups-advice-for-tuesday-nov-10/",
+          "title": "NBA DFS, 2026: Top FanDuel, DraftKings picks, lineups, advice for Tuesday, Nov. 10",
+          "publisher": "SportsLine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6DV75ANoeU4vG55HS3v9uAFf56MaIUomwFfnWe3rTnA4JiD8BMEtyH7obFck"
+        },
+        {
+          "url": "https://www.fanduel.com/research/nba-picks-today-3-nba-predictions-and-best-bets-for-tuesday-nov-10",
+          "title": "NBA Picks Today: 3 NBA Predictions and Best Bets for Tuesday, Nov. 10",
+          "publisher": "FanDuel",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJFRC2FETjkFMnkalE_NZsmabmNVSQn5QdStMCNvOOil5MtN_-5WG7hTlb19w"
+        },
+        {
+          "url": "https://www.si.com/betting/nba-best-bets-today-predictions-prop-bets-for-jalen-brunson-celtics-76ers-giannis-thunder",
+          "title": "Peter’s Points: NBA Best Bets Today (Predictions, Prop Bets for Jalen Brunson, Celtics-76ers, Giannis, Thunder)",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSD1-mb5bjzhG4ua0l8Z4ZhZ6XxeYtIQyJnGS8lQhlwihl76F8kwZdqVTcZuOo"
+        }
+      ]
+    },
+    {
+      "query": "joel embiid",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-11T02:00:00Z",
+      "related_news_urls": [
+        "https://www.phillyvoice.com/sixers-vs-celtics-76ers-injury-report-news-analysis-adem-bona-dominick-barlow-jaylen-brown-jayson-tatum-chi/",
+        "https://www.masslive.com/celtics/2026/11/celtics-get-fortunate-injury-news-ahead-of-76ers-clash.html",
+        "https://www.libertyballers.com/76ers-injury-report/101431/adem-bona-out-joel-embiid-not-listed-on-injury-report-for-sixers-big-tilt-with-boston"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgEBXCuTK6FwiqzgsOk5MjiF5nB4KJnSpHXeHHd4cJCLj1uajdJlNd2m314Dg",
+      "image_credit": "PhillyVoice",
+      "news": [
+        {
+          "url": "https://www.phillyvoice.com/sixers-vs-celtics-76ers-injury-report-news-analysis-adem-bona-dominick-barlow-jaylen-brown-jayson-tatum-chi/",
+          "title": "Full injury reports for Sixers-Celtics on Tuesday",
+          "publisher": "PhillyVoice",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgEBXCuTK6FwiqzgsOk5MjiF5nB4KJnSpHXeHHd4cJCLj1uajdJlNd2m314Dg"
+        },
+        {
+          "url": "https://www.masslive.com/celtics/2026/11/celtics-get-fortunate-injury-news-ahead-of-76ers-clash.html",
+          "title": "Celtics get fortunate injury news ahead of 76ers clash",
           "publisher": "MassLive.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmXqg1tFJZ6P-4IE9GmhCcHasIh5HodJvDSy-oak8YQrobQcxS-BvyLnROppI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwOZcMkx5l9vJdBZSUzYkES2ctVFMmQTsAlt9i24BMwmhgZTQRn9pCeYJRFic"
         },
         {
-          "url": "https://www.axios.com/local/boston/2026/11/10/greater-boston-earn-181k-to-afford-home",
-          "title": "Greater Boston renters need to make $181K to afford a starter home",
-          "publisher": "Axios",
+          "url": "https://www.libertyballers.com/76ers-injury-report/101431/adem-bona-out-joel-embiid-not-listed-on-injury-report-for-sixers-big-tilt-with-boston",
+          "title": "Adem Bona out, Joel Embiid not listed on injury report for Sixers’ big tilt with Boston",
+          "publisher": "Liberty Ballers",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxNrg4GK_YmpbsXVqbB1TO9LGIL2qszPwanO2uz5eGzsUIis8Ipbf9dKeFbwU"
-        }
-      ]
-    },
-    {
-      "query": "kendall jenner jacob elordi the row",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T01:40:00Z",
-      "related_news_urls": [
-        "https://www.vogue.com/article/kendall-jenner-introduces-jacob-elordi-to-the-row-2026-11-10",
-        "https://www.marieclaire.com/fashion/celebrity-style/kendall-jenner-jacob-elordi-new-york-jeans-looks/",
-        "https://www.whowhatwear.com/fashion/celebrity-style/flared-jeans-with-boots-kendall-jenner"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNPrVJrAKP1S-lhZi7ATAcL5hAFYlq7x30x8J8GhGDf7M3hERmrIbSJvGDShk",
-      "image_credit": "Vogue",
-      "news": [
-        {
-          "url": "https://www.vogue.com/article/kendall-jenner-introduces-jacob-elordi-to-the-row-2026-11-10",
-          "title": "Kendall Jenner Introduces Jacob Elordi to Her Other Love: The Row",
-          "publisher": "Vogue",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNPrVJrAKP1S-lhZi7ATAcL5hAFYlq7x30x8J8GhGDf7M3hERmrIbSJvGDShk"
-        },
-        {
-          "url": "https://www.marieclaire.com/fashion/celebrity-style/kendall-jenner-jacob-elordi-new-york-jeans-looks/",
-          "title": "Kendall Jenner and Jacob Elordi Complement Each Other's \"Cute Jeans\"",
-          "publisher": "Marie Claire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTQSgAD3R2UQWP2eN-zsjbb-eRokARQ7_ZQwZy1aAoBfoSRpW6gdtsrJlzgUI"
-        },
-        {
-          "url": "https://www.whowhatwear.com/fashion/celebrity-style/flared-jeans-with-boots-kendall-jenner",
-          "title": "Kendall Jenner Isn't Wearing Flared Blue Jeans With Heels or Flats—She's Wearing These Anti-Trend Boots",
-          "publisher": "Who What Wear",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQisZIhti8WtvaGudk8pEuZls3YVQCDcJ2XbIza1jxi260V7sg-M6p2KEz-sM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1PLjzrqa9yI3JF8nAajTAh9K1TQY20TIylkNWjcSG6AifFwC5h-mYlK4S8DA"
         }
       ]
     }
