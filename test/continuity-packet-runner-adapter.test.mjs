@@ -466,3 +466,32 @@ test('D1 packet pass persists verified dependency requirements and reports sourc
   assert.ok(result.skipped.some(s=>s.issue===92&&s.reason==='source_overlap'));
  }finally{d.close()}
 });
+
+test('dependency completion resumes same-version inventory without history reread or replay', async () => {
+ const d=database();
+ try{
+  const first=await claim(d.db,AT,AT,'dependency-first');
+  let scans=0,executions=0;
+  const before=await runPacketPass({
+   db:d.db,claim:first,ownerScope:OWNER_SCOPE,ownerId:OWNER,sourceVersion:SHA,now:AT+1,
+   loadCandidates:async()=>{scans++;return [packet(80,{dependencies:[REPO+'#79']})];},
+   executePacket:async()=>{executions++;throw Error('missing dependency must not execute')}
+  });
+  assert.equal(before.status,'dependency_pending');
+  assert.equal(executions,0);
+  const second=await claim(d.db,AT+INTERVAL,AT+INTERVAL,'dependency-second');
+  const after=await runPacketPass({
+   db:d.db,claim:second,ownerScope:OWNER_SCOPE,ownerId:OWNER,sourceVersion:SHA,now:AT+INTERVAL+1,
+   completedDependencies:[REPO+'#79'],
+   loadCandidates:async()=>{scans++;throw Error('same source version must not rescan');},
+   executePacket:async(work,{idempotencyKey})=>{executions++;return {
+    receipt:receipt(work,work.nextAction,'changed',idempotencyKey,{
+     providerConfirmed:true,artifactUrl:'https://github.com/www-infinity4/QuantaPhi/commit/abc123'
+    })
+   }}
+  });
+  assert.equal(after.status,'processed');
+  assert.equal(scans,1);
+  assert.equal(executions,1);
+ }finally{d.close()}
+});
