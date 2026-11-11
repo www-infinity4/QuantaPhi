@@ -6,7 +6,8 @@ const key=p=>[p.repo,p.issue,p.headSha].join('#');
 // satisfied by an unverified PR, model response or an in-memory claim.
 const DEPENDENCY=/^[-\w.]+\/[-\w.]+#[1-9][0-9]*$/;
 const issueId=p=>p.repo+'#'+p.issue;
-const sourcePaths=p=>Array.isArray(p.scopePaths)&&p.scopePaths.length?p.scopePaths:[p.nextSourcePath];
+// A declared file scope cannot omit the actual target of an execution.
+const sourcePaths=p=>[...(Array.isArray(p.scopePaths)?p.scopePaths:[]),p.nextSourcePath];
 const pathOverlap=(a,b)=>a===b||a.startsWith(b.replace(/\/$/,'')+'/')||b.startsWith(a.replace(/\/$/,'')+'/');
 export function scopesOverlap(a,b){
  return sourcePaths(a).some(x=>sourcePaths(b).some(y=>pathOverlap(x,y)));
@@ -16,6 +17,8 @@ export function validPacket(p){
  Number.isSafeInteger(p.issue)&&p.issue>0&&typeof p.headSha==='string'&&/^[a-f0-9]{40}$/i.test(p.headSha)&&
  ACTIONS.has(p.nextAction)&&STATES.has(p.state||'ready')&&Number.isFinite(p.priority)&&p.priority>=0&&p.priority<=100&&
  typeof p.nextSourcePath==='string'&&p.nextSourcePath.length>0&&p.nextSourcePath.length<512&&
+ !p.nextSourcePath.startsWith('/')&&!p.nextSourcePath.includes('\\')&&
+ p.nextSourcePath.split('/').every(segment=>segment&&segment!=='.'&&segment!=='..')&&
  (p.estimatedMinutes===undefined||(Number.isSafeInteger(p.estimatedMinutes)&&p.estimatedMinutes>0&&p.estimatedMinutes<=480))&&
  (p.dependencies===undefined||(Array.isArray(p.dependencies)&&p.dependencies.length<=24&&
  new Set(p.dependencies).size===p.dependencies.length&&p.dependencies.every(d=>typeof d==='string'&&DEPENDENCY.test(d)&&d!==issueId(p))))&&
