@@ -6,6 +6,9 @@
 const host=document.getElementById('oracleCardDeck'),stage=document.getElementById('oracleCardStage');
 if(!host||!stage)return;
 const agePolicy=window.QuantaAgePreferences;
+const categoryPicker=document.getElementById('oracleCardDepartment');
+const saveCategory=document.getElementById('oracleSaveDepartment');
+let selectedDepartment='all',departmentApi=null;
 const now=document.getElementById('oracleCardNow'),status=document.getElementById('oracleCardStatus'),
  next=document.getElementById('oracleCardNext'),prev=document.getElementById('oracleCardPrevious'),scroll=document.getElementById('oracleCardScroll');
 const choices=[
@@ -311,11 +314,35 @@ function registerLateWidgets(){
 registerSourceCards();
 const readDirections=()=>{try{return directionApi.cleanFeedState(JSON.parse(localStorage.getItem(directionApi.FEED_STORAGE_KEY)||'{}'))}catch{return directionApi.cleanFeedState({})}};
 function storeDirections(){if(!directionApi||!feedState)return;try{localStorage.setItem(directionApi.FEED_STORAGE_KEY,JSON.stringify(feedState))}catch{}}
-function liveCatalog(){return entries.filter(available).filter(e=>agePolicy?agePolicy.canAutoShow(e):!/21\+|adult|dispensary|cannabis/i.test(e.category)).filter(e=>selectedTab!=='for-you'||!nonProfiling(e)).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
-function eligible(){const cards=entries.filter(available).filter(e=>agePolicy?agePolicy.canAutoShow(e):!/21\+|adult|dispensary|cannabis/i.test(e.category));return selectedTab==='following'&&feedState?
- cards.filter(e=>feedState.following.includes(e.feedId)):cards;}
+function adultAllowed(entry){
+ if(selectedDepartment==='adult')return agePolicy?.isPreference(entry)||
+  Boolean(agePolicy?.read().browsingThisVisit&&agePolicy?.isAdult(entry));
+ return agePolicy?agePolicy.canAutoShow(entry):!/21\+|adult|dispensary|cannabis/i.test(entry.category);
+}
+function eligible(){
+ const cards=entries.filter(available).filter(adultAllowed).filter(e=>
+  selectedDepartment==='all'||Boolean(departmentApi?.matchesDepartment(e,selectedDepartment)));
+ if(selectedTab==='following')return cards.filter(e=>(feedState?.following||[]).includes(e.feedId));
+ if(selectedTab==='for-you')return cards.filter(e=>{
+  if(nonProfiling(e))return false;
+  const mine=(feedState?.following||[]).includes(e.feedId);
+  const category=departmentApi?.departmentFor(e);
+  return mine||Boolean(category&&(feedState?.interests||[]).includes(category));
+ });
+ return cards;
+}
+function liveCatalog(){return eligible().map(e=>({id:e.feedId,name:e.title,category:e.category,
+ feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
 function updateTabs(){
  updateInventory();
+ if(saveCategory&&categoryPicker){
+  const valid=departmentApi?.INTEREST_DEPARTMENTS.some(d=>d.id===selectedDepartment);
+  saveCategory.hidden=!valid;
+  const selected=(feedState?.interests||[]).includes(selectedDepartment);
+  saveCategory.textContent=selected?'✓ In For You':'+ Add to For You';
+  saveCategory.setAttribute('aria-pressed',String(selected));
+ }
+
   for(const button of host.querySelectorAll('[data-oracle-family]')){
   const count=eligible().filter(e=>cardFamily(e)===button.dataset.oracleFamily).length;
   button.disabled=count===0;
@@ -371,7 +398,7 @@ function predict(){
  proposed=null;
  if(expanded)return;
  const possible=eligible();
- if(!possible.length){next.disabled=true;reason.textContent='Your Following view is empty. Return to Public and add a card with + Follow.';return;}
+ if(!possible.length){next.disabled=true;reason.textContent=selectedTab==='for-you'?'Choose a department and tap Add to For You, or Follow a card in Public.':selectedTab==='following'?'Following is empty. Follow a card from Public first.':'No ready cards in this category. Choose another carousel.';return;}
  if(directionApi&&feedState){
   const present=liveCatalog();
   const context={...feedState,catalog:present,quantScores:quantWeights};
@@ -423,9 +450,12 @@ tabButtons.forEach(b=>b.addEventListener('click',()=>{
  if(active)seenByTab[selectedTab].add(active.feedId);
  feedState=directionApi?readDirections():feedState;
  updateTabs();
- if(selectedTab==='following'&&!eligible().some(e=>e===active)){
-  returnActive();const first=eligible()[0];if(first)show(first,false);else{
-   now.textContent='No followed interactive cards';status.textContent='Use Public and tap + Follow on any live card.';
+ if(!eligible().includes(active)){
+  returnActive();const first=eligible()[0];if(first)show(first,false);
+  else{
+   now.textContent=selectedTab==='for-you'?'Choose your For You interests':selectedTab==='following'?'No followed interactive cards':'No cards in this category';
+   status.textContent=selectedTab==='for-you'?'Use Add to For You on a selected category or Follow an original card.':
+    selectedTab==='following'?'Use Public and tap + Follow on any live card.':'Select a different category to discover original cards.';
   }
  }
  if(selectedTab==='for-you')void connectQuant({select:true,revision});
@@ -457,13 +487,35 @@ void import('/following-publisher-feed.mjs?v=20261031-following1').then(({mountF
  });
  followingPublisherFeed?.sync({tab:selectedTab});
 }).catch(()=>{const target=document.getElementById('oracleFollowingFeed');if(target)target.hidden=true;});
-Promise.all([import('/quanta-feed-rank.mjs?v=20261027-infinity-accepted2'),
+Promise.all([import('/quanta-feed-rank.mjs?v=20261110-explicit-for-you1'),
  import('/quanta-feed-quants.mjs?v=20261024-directions1'),
  import('/quanta-carousel-balance.mjs?v=20261027-all-families1')]).then(([r,q,f])=>{
  directionApi=r;quantApi=q;familyApi=f;feedState=readDirections();updateTabs();
  if(selectedTab==='for-you')void connectQuant();
  predict();
 }).catch(()=>{reason.textContent='Card directions are not available; original interactive cards are still usable.'});
+// This selector filters one original Oracle carousel; nothing is cloned,
+ // and current players are deactivated with the existing returnActive path.
+ categoryPicker?.addEventListener('change',()=>{
+  viewerTouched=true;selectionVersion++;
+  selectedDepartment=categoryPicker.value||'all';visited.length=0;
+  if(active&&!eligible().includes(active))returnActive();
+  if(!active){const first=eligible()[0];if(first)show(first,false);
+   else{now.textContent='No cards in this category';status.textContent='Choose a different carousel or save this department to For You.';}}
+  updateTabs();predict();
+ });
+ saveCategory?.addEventListener('click',()=>{
+  if(!directionApi||!departmentApi?.INTEREST_DEPARTMENTS.some(d=>d.id===selectedDepartment))return;
+  feedState=directionApi.toggleInterest(readDirections(),selectedDepartment);storeDirections();
+  updateTabs();
+  if(selectedTab==='for-you'&&!eligible().includes(active)){returnActive();const first=eligible()[0];if(first)show(first,false);}
+  predict();
+  window.dispatchEvent(new CustomEvent('quantaphi:feed-updated',{detail:{origin:'oracle-viewer'}}));
+ });
+ void import('/quanta-context-placement.mjs?v=20261110-1').then(api=>{
+  departmentApi=api;updateTabs();if(active&&!eligible().includes(active))returnActive();
+  if(!active){const first=eligible()[0];if(first)show(first,false);}predict();
+ }).catch(()=>{status.textContent='Category selection is unavailable; your original cards remain accessible.';});
 function available(entry){
  if(!entry?.node?.isConnected)return false;
  if(entry.node.hidden)return false;
