@@ -64,6 +64,8 @@ Check the PR's exact-head CI, especially `test/avatar-ai-card.test.mjs`, `test/s
 
 ## Engineering Session 01 integration checkpoint
 
+- Owner-scoped Nuance Discovery stays behind authenticated Brain headers; the public Avatar AI card is only a portable ChatGPT prompt and cannot access private owner history.
+
 - Test-first integration regression committed on PR #1924 branch: `134a2b34a7920598fe675650e0bb1899c7e35b9c`, corrected test literal escaping at `e515242be8bb4d0c933a85695911e200c59d9002`.
 - Integrate all #1925 source paths with second Git parent, preserving #1924's private Nuance card and owner-only Brain audit and #1925's visitor-neutral public card.
 - Keep one #1923 ticket and one routing index row. Exact-head CI, independent approval, merge, deployment and browser/Android receipts still required. No original full archive import or continuous autonomous service is claimed.
