@@ -9,6 +9,7 @@ async function fakeBubbles(page,mode='complete'){
   const body=`<!doctype html><html><head><meta charset="utf-8"></head><body>
   <h1>Controlled Bubbles test conversation</h1><div id="received"></div>
   <script>
+  parent.postMessage({type:'quantaphi:bubbles:ready',id:'coliseum-zeus-assistant'},location.origin);
   window.addEventListener('message',event=>{
    if(event.origin!==location.origin||event.source!==parent)return;
    const d=event.data;
@@ -93,4 +94,27 @@ test('typed draft survives a Zeus page refresh and is never auto-sent',async({pa
  await page.reload({waitUntil:'domcontentloaded'});
  await expect(page.locator('#zeusQuestInput')).toHaveValue('An unsent multiline plan');
  await expect(page.locator('#zeusQuestReply')).toBeHidden();
+});
+
+test('404 iframe load cannot falsely declare Bubbles ready or erase Zeus draft',async({page})=>{
+ await page.route('**/bubbles.html?**',route=>route.fulfill({status:404,contentType:'text/html',body:'<html><body>Not found</body></html>'}));
+ await page.goto(base+'/coliseum/',{waitUntil:'domcontentloaded'});
+ await expect(page.locator('#zeusAssistantStatus')).toContainText('Waiting for the verified Bubbles conversation');
+ await page.locator('#zeusQuestInput').fill('Do not lose my message');
+ await page.locator('#zeusQuestSend').click();
+ await expect(page.locator('#zeusQuestInput')).toHaveValue('Do not lose my message');
+ await expect(page.locator('#zeusQuestReply')).toBeHidden();
+});
+test('Zeus remains usable and within viewport at Android screen widths',async({page})=>{
+ await fakeBubbles(page);
+ for(const width of [320,360,393,430]){
+  await page.setViewportSize({width,height:800});
+  await page.goto(base+'/coliseum/',{waitUntil:'domcontentloaded'});
+  await expect(page.locator('#zeusQuestInput')).toBeVisible();
+  await expect(page.locator('#zeusQuestSend')).toBeVisible();
+  const box=await page.locator('#zeusQuestSend').boundingBox();
+  expect(box?.height).toBeGreaterThanOrEqual(44);
+  expect(box?.width).toBeGreaterThanOrEqual(44);
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBeTruthy();
+ }
 });
