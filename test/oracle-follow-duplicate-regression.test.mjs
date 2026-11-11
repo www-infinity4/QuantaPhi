@@ -25,3 +25,10 @@ test('Oracle and feed recommendations present the next card without personal-sou
  assert.doesNotMatch(feed,/Next direction · '\+lastReason/);
  assert.match(oracle,/Next card:/);
 });
+
+test('source-backed Quick Cards keep the sole Oracle Follow control visible',()=>{
+ const oracle=source('oracle-card-deck.js');
+ assert.match(oracle,/follow\.hidden=!active;/,
+  'Following must support authorized source and publisher cards, not only local widgets');
+ assert.doesNotMatch(oracle,/follow\.hidden=!active\|\|active\.id\.startsWith\('source-'\)/);
+});
