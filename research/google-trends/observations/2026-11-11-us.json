@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T11:31:05.751383Z",
+  "checked_at": "2026-11-11T12:02:00.131211Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ohio state buckeyes football",
+      "query": "nbis stock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T11:40:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/nbis-stock-jumps-over-11-081534815.html",
+        "https://www.barchart.com/story/news/8766647/ahead-of-nebius-earnings-here-s-what-barchart-data-says-comes-next-for-nbis-stock",
+        "https://seekingalpha.com/article/4965657-nebius-the-first-domino-in-the-ai-collapse"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4oJXN70nz6-Hlm_iByfisuZFRsaNoOke68PnDsUO7ieNd1N6S0B0aGtRDd1U",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nbis-stock-jumps-over-11-081534815.html",
+          "title": "NBIS Stock Jumps Over 11% On CoreWeave Boost: Analysts Expect Over Six-Fold Growth In Sales In Upcoming Q3 Report",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4oJXN70nz6-Hlm_iByfisuZFRsaNoOke68PnDsUO7ieNd1N6S0B0aGtRDd1U"
+        },
+        {
+          "url": "https://www.barchart.com/story/news/8766647/ahead-of-nebius-earnings-here-s-what-barchart-data-says-comes-next-for-nbis-stock",
+          "title": "Ahead of Nebius Earnings, Here's What Barchart Data Says Comes Next for NBIS Stock",
+          "publisher": "Barchart.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ7bNiSbJG7enqMW12UrjE29El2CmSGa_qwVY5vqa5p-YVU-g18503H5IfZEsE"
+        },
+        {
+          "url": "https://seekingalpha.com/article/4965657-nebius-the-first-domino-in-the-ai-collapse",
+          "title": "Nebius: The First Domino In The AI Collapse (NASDAQ:NBIS)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTN83x9y23Ey49Wn_NILOO-sWo7av5m9y3QtuqI0_zQd-w6U-6D02AW5aNtUN4"
+        }
+      ]
+    },
+    {
+      "query": "aeropuerto internacional de miami",
+      "approx_searches": "100+",
+      "published_at": "2026-11-11T11:40:00Z",
+      "related_news_urls": [
+        "https://www.infobae.com/estados-unidos/2026/11/10/el-aeropuerto-de-miami-ocupa-el-cuarto-puesto-entre-los-peores-hubs-del-pais-y-encabeza-el-indice-de-severidad-de-disrupciones/",
+        "https://www.elnuevoherald.com/entretenimiento/article318010485.html",
+        "https://www.tvn-2.com/entretenimiento/musica/maluma-sorprende-concierto-aeropuerto-miami-anuncia-gira-mundial_1_2270379.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6shzH7bMKjDX8Ad6D2rAHUXZ8tWyaU1frQr1WxehfvZU9bWjorBlgbjIafho",
+      "image_credit": "Infobae",
+      "news": [
+        {
+          "url": "https://www.infobae.com/estados-unidos/2026/11/10/el-aeropuerto-de-miami-ocupa-el-cuarto-puesto-entre-los-peores-hubs-del-pais-y-encabeza-el-indice-de-severidad-de-disrupciones/",
+          "title": "El aeropuerto de Miami ocupa el cuarto puesto entre los peores hubs del país y encabeza el índice de severidad de disrupciones",
+          "publisher": "Infobae",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6shzH7bMKjDX8Ad6D2rAHUXZ8tWyaU1frQr1WxehfvZU9bWjorBlgbjIafho"
+        },
+        {
+          "url": "https://www.elnuevoherald.com/entretenimiento/article318010485.html",
+          "title": "¡Sorpresa! Esta es la razón por la que Maluma apareció en el aeropuerto de Miami",
+          "publisher": "El Nuevo Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQm1nHEaZkkCo2vx-St71VYGv8bS4L32JzyzzR8aupIjg8mnQZyAmSSE8-Cs4"
+        },
+        {
+          "url": "https://www.tvn-2.com/entretenimiento/musica/maluma-sorprende-concierto-aeropuerto-miami-anuncia-gira-mundial_1_2270379.html",
+          "title": "Maluma sorprende con concierto en aeropuerto de Miami y anuncia gira mundial",
+          "publisher": "TVN Panamá",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTB8J5o5yl_IP5BhD9xQSCiBaDjSammmYd9gEUDEXWRyKXprXxF40ienGJNoFw"
+        }
+      ]
+    },
+    {
+      "query": "washington capitals",
       "approx_searches": "500+",
-      "published_at": "2026-11-11T11:10:00Z",
+      "published_at": "2026-11-11T11:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50444070/ohio-state-stick-fahey-qb-vs-northwestern",
-        "https://www.dispatch.com/story/sports/college/football/2026/11/09/urban-meyer-tavien-st-clair-remained-benched-vs-oregon-luke-fahey/92697231007/",
-        "https://www.cleveland.com/osu/2026/11/ryan-day-announces-starting-qb-for-ohio-state-football-vs-northwestern.html"
+        "https://www.nhl.com/news/washington-capitals-ottawa-senators-game-recap-november-10-2026",
+        "https://www.espn.com/video/clip/_/id/50448939",
+        "https://sports.yahoo.com/videos/capitals-eke-win-ottawa-despite-033335608.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZzO21mSaxETAzYNLU85l98ZULEc1dGAuwxiu9D3dR_s45HTuSgrUBFV_H6Gs",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYTHHyf3nstwtetMnAyd1-bDFNQXct4KsdXbxOFzHuVRckZ0eKOHkzTVpyVqk",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://www.espn.com/college-football/story/_/id/50444070/ohio-state-stick-fahey-qb-vs-northwestern",
-          "title": "Ohio State to stick with Fahey at QB vs. Northwestern",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZzO21mSaxETAzYNLU85l98ZULEc1dGAuwxiu9D3dR_s45HTuSgrUBFV_H6Gs"
-        },
-        {
-          "url": "https://www.dispatch.com/story/sports/college/football/2026/11/09/urban-meyer-tavien-st-clair-remained-benched-vs-oregon-luke-fahey/92697231007/",
-          "title": "Urban Meyer perplexed why Tavien St. Clair did not get reps vs Oregon",
-          "publisher": "The Columbus Dispatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROaa6uKJv_Ehrp6uiagAbkqh8E4wX6M68Rz3qzDR44aj2grH590UHGYkm76X8"
-        },
-        {
-          "url": "https://www.cleveland.com/osu/2026/11/ryan-day-announces-starting-qb-for-ohio-state-football-vs-northwestern.html",
-          "title": "Ryan Day announces starting QB for Ohio State football vs. Northwestern",
-          "publisher": "Cleveland.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAy8p4lZRznbCaUFjlcLlfK1HWNC0QlH32rO7YHRfkinL5kcQDlhLQCkOVEME"
-        }
-      ]
-    },
-    {
-      "query": "khloé kardashian",
-      "approx_searches": "100+",
-      "published_at": "2026-11-11T11:10:00Z",
-      "related_news_urls": [
-        "https://people.com/khloe-kardashian-trims-her-home-with-beautiful-majestic-holiday-lights-12246457",
-        "https://www.yahoo.com/entertainment/celebrity/articles/khlo-kardashian-unveils-spectacular-winter-132448533.html",
-        "https://www.eonline.com/news/1437983/see-khloe-kardashians-absolutely-spectacular-holiday-lights-on-her-house"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZ0b2P2PIajm86Cm0_kMMVfh9ifVfYinBlmlN2ZmR-5E677RZAZ8jQxRsjAgY",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/khloe-kardashian-trims-her-home-with-beautiful-majestic-holiday-lights-12246457",
-          "title": "Khloé Kardashian Gives Her Home a Glow Up with Thousands of ‘Beautiful and Majestic’ Holiday Lights",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZ0b2P2PIajm86Cm0_kMMVfh9ifVfYinBlmlN2ZmR-5E677RZAZ8jQxRsjAgY"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/khlo-kardashian-unveils-spectacular-winter-132448533.html",
-          "title": "Khloé Kardashian unveils 'spectacular' winter wonderland transformation at $17 million home",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV8vac9eQGKoVJmQ-bisoCg_L2SuDq53vdHO2tiyFrziK7tsIdou6InUCdo04"
-        },
-        {
-          "url": "https://www.eonline.com/news/1437983/see-khloe-kardashians-absolutely-spectacular-holiday-lights-on-her-house",
-          "title": "Khloe Kardashian's Over-the-Top Holiday Home Transformation Needs to Be Seen to Be Believed",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtjelaj6NkkEseuB81YerMmbnrcSMDKKUPqDuVq6th2AapcivgJqpOji7G2wQ"
-        }
-      ]
-    },
-    {
-      "query": "connor hellebuyck",
-      "approx_searches": "100+",
-      "published_at": "2026-11-11T11:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nhl/story/_/id/50449980/connor-hellebuyck-booed-pregame-winnipeg-return-jets-go-beat-devils",
-        "https://www.nhl.com/news/connor-hellebuyck-says-concerns-for-family-uncertain-career-path-led-to-winnipeg-jets-trade",
-        "https://www.cbc.ca/news/canada/manitoba/connor-hellebuyck-return-to-winnipeg-9.7416133"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfubSDbfXAjyzQ5dIf2rgyF3PRebzXYRbO7vJMrxoyrcV_TH2G6M07jAhckhg",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nhl/story/_/id/50449980/connor-hellebuyck-booed-pregame-winnipeg-return-jets-go-beat-devils",
-          "title": "Connor Hellebuyck booed pregame in Winnipeg return as Jets go on to beat Devils",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfubSDbfXAjyzQ5dIf2rgyF3PRebzXYRbO7vJMrxoyrcV_TH2G6M07jAhckhg"
-        },
-        {
-          "url": "https://www.nhl.com/news/connor-hellebuyck-says-concerns-for-family-uncertain-career-path-led-to-winnipeg-jets-trade",
-          "title": "Hellebuyck says concerns for family, uncertain career path made him ask Jets for trade",
+          "url": "https://www.nhl.com/news/washington-capitals-ottawa-senators-game-recap-november-10-2026",
+          "title": "Hutson scores in OT, Capitals rally past Senators",
           "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbmE3JR-AirCBuiCnQ9Wf5v_YF1NxOl9F7Vkx6PrOEdpNuCxC3716CVwr40lM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYTHHyf3nstwtetMnAyd1-bDFNQXct4KsdXbxOFzHuVRckZ0eKOHkzTVpyVqk"
         },
         {
-          "url": "https://www.cbc.ca/news/canada/manitoba/connor-hellebuyck-return-to-winnipeg-9.7416133",
-          "title": "Connor Hellebuyck tells media online death threats, family played roles in trade demand",
-          "publisher": "CBC",
+          "url": "https://www.espn.com/video/clip/_/id/50448939",
+          "title": "Cole Hutson nets OT winner for Capitals",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqsfuP2hTvpCIiruejsQcCb9vsLOk_nhTU9he5i9fyKKG6wTRx9g70BT6TLk8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6MtBjPxOMF42barQcrk8MM4O_8qXg66GcK9S1rD7ztRbFJrdpjn2L9B9ISPc"
+        },
+        {
+          "url": "https://sports.yahoo.com/videos/capitals-eke-win-ottawa-despite-033335608.html",
+          "title": "Capitals eke out win in Ottawa despite 'worst period of the season'",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvUBZlCqj0Hv9jCdAC8QdiOVs1ZAayykU4C9wCSpwZQc_YlN1_rgqbKcDsUHA"
         }
       ]
     },
     {
-      "query": "are banks closed today",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T11:00:00Z",
+      "query": "eagles final chart topper 1979",
+      "approx_searches": "100+",
+      "published_at": "2026-11-11T11:30:00Z",
       "related_news_urls": [
-        "https://www.freep.com/story/news/local/michigan/2026/11/11/veterans-day-mail-banks-stores-open-closed-federal-holiday-michigan/92704013007/",
-        "https://www.yahoo.com/news/us/articles/banks-post-offices-schools-closed-100117331.html",
-        "https://www.the-sun.com/news/17285156/usps-mail-delivery-stopped-veterans-day/"
+        "https://americansongwriter.com/on-this-day-in-1979-the-eagles-scored-their-final-no-1-hit-with-a-song-co-written-by-glenn-freys-former-roommate-and-a-classic-rock-legend/",
+        "https://www.yahoo.com/entertainment/music/articles/1979-hit-blocked-donna-summer-041700929.html",
+        "https://www.grunge.com/2305972/no-1-song-november-7-1979-heartache-tonight-eagles/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQygYuT2cpFh-ZP3yxeqIpiA2j_16rCnEvzrpAm7nmyfi9T5xjPbS1x3_y42cc",
-      "image_credit": "Detroit Free Press",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkQPvR3cloZ1dy5NBEobWSkjcfgnkZxKq6JLRkMW3hlrxjU_eBrWg2piFZGes",
+      "image_credit": "American Songwriter",
       "news": [
         {
-          "url": "https://www.freep.com/story/news/local/michigan/2026/11/11/veterans-day-mail-banks-stores-open-closed-federal-holiday-michigan/92704013007/",
-          "title": "Is there mail on Veterans Day? What's open and closed today",
-          "publisher": "Detroit Free Press",
+          "url": "https://americansongwriter.com/on-this-day-in-1979-the-eagles-scored-their-final-no-1-hit-with-a-song-co-written-by-glenn-freys-former-roommate-and-a-classic-rock-legend/",
+          "title": "On This Day in 1979, the Eagles Scored Their Final No. 1 Hit with a Song Co-Written by Glenn Frey’s Former Roommate and a Classic Rock Legend",
+          "publisher": "American Songwriter",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQygYuT2cpFh-ZP3yxeqIpiA2j_16rCnEvzrpAm7nmyfi9T5xjPbS1x3_y42cc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkQPvR3cloZ1dy5NBEobWSkjcfgnkZxKq6JLRkMW3hlrxjU_eBrWg2piFZGes"
         },
         {
-          "url": "https://www.yahoo.com/news/us/articles/banks-post-offices-schools-closed-100117331.html",
-          "title": "Are banks, post offices, schools closed today in Louisiana?",
+          "url": "https://www.yahoo.com/entertainment/music/articles/1979-hit-blocked-donna-summer-041700929.html",
+          "title": "1979 Hit Blocked Donna Summer From No. 1 47 Years Ago Today, Then Became the Final Statement of a Dying Era of California Rock",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTngXxDX2-gvMQBgzLc_8wbnYVu7h58pNzu3rbhJXArBaQMkAU4ReEF-rkMi-s"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRG-E6beKPcvFwVdQZeNC1MowBAlrc1xEMUW6snc12F1p1aXeGuRj7-2koe6b8"
         },
         {
-          "url": "https://www.the-sun.com/news/17285156/usps-mail-delivery-stopped-veterans-day/",
-          "title": "Americans warned USPS will stop delivering mail TOMORROW and iconic blue collection boxes will not be emptied",
-          "publisher": "The Sun",
+          "url": "https://www.grunge.com/2305972/no-1-song-november-7-1979-heartache-tonight-eagles/",
+          "title": "1979 No. 1, Featuring A Bob Seger Writing Cred, Topped The Charts 47 Years Ago Today",
+          "publisher": "Grunge",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThrgxsvf6MaMqretQ-ppuUBoCpMceANIFqaYh4QRs5Yijz15yt1O-EnpM12ek"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTI_SQFL_EFme1jnnHaVHhF-VAKpeVy5DiCmNBneoS-uqdtbjKTDQ6WUWCkPFY"
         }
       ]
     },
     {
-      "query": "pick 3",
+      "query": "veterans day parade 2026",
       "approx_searches": "100+",
-      "published_at": "2026-11-11T11:00:00Z",
+      "published_at": "2026-11-11T11:30:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/news/articles/kentucky-lottery-cash-ball-pick-043015725.html",
-        "https://www.aol.com/articles/kentucky-lottery-cash-ball-pick-043029000.html",
-        "https://www.courier-journal.com/story/news/local/2026/11/05/kentucky-lottery-results-thursday-november-5-2026/92637214007/"
+        "https://abc7ny.com/post/veterans-day-parade-2026-what-know-how-watch-nyc-celebration-military-service-members/20020077/",
+        "https://www.cbsnews.com/newyork/video/veterans-day-parade-set-to-kick-off-in-nyc/",
+        "https://www.silive.com/nyc/2026/11/veterans-day-2026-heres-whats-open-closed-in-nyc-on-wednesday.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTGUTge-ro2yAhJf1uhQvOQw460SWQ7vaItmre4DGz6blzU6WtIyAN6YWv6AA",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4odmSBt3uERPcMheRV0-x7_QIbkV0Z3m_RgngZWvXSFeOLudZlJGWVvjgVM",
+      "image_credit": "ABC7 New York",
+      "news": [
+        {
+          "url": "https://abc7ny.com/post/veterans-day-parade-2026-what-know-how-watch-nyc-celebration-military-service-members/20020077/",
+          "title": "Veterans Day Parade 2026: What to know, how to watch th NYC celebration of military service members",
+          "publisher": "ABC7 New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4odmSBt3uERPcMheRV0-x7_QIbkV0Z3m_RgngZWvXSFeOLudZlJGWVvjgVM"
+        },
+        {
+          "url": "https://www.cbsnews.com/newyork/video/veterans-day-parade-set-to-kick-off-in-nyc/",
+          "title": "Veterans Day Parade set to kick off in NYC",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqbSDAoHloxbgjyVzFppO_2uRoKuGeFYbHLfeaRpQIlM3tO271XsffdBMzAN0"
+        },
+        {
+          "url": "https://www.silive.com/nyc/2026/11/veterans-day-2026-heres-whats-open-closed-in-nyc-on-wednesday.html",
+          "title": "Veterans Day 2026: Here’s what’s open, closed in NYC on Wednesday",
+          "publisher": "SILive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScpWkAKDqNwnUCHVa_klmB8YLdry5EzSDTmIkVkiCB1y2Oyn9gSJQgp54iwsg"
+        }
+      ]
+    },
+    {
+      "query": "lorenzo sonego",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T11:30:00Z",
+      "related_news_urls": [
+        "https://www.atptour.com/en/video/highlights-musetti-marches-into-stockholm-2026-qfs",
+        "https://lastwordonsports.com/tennis/2026/11/09/atp-stockholm-day-3-predictions-musetti-samuel/",
+        "https://sportsbook.fanduel.com/tennis/atp-stockholm-2026/lorenzo-musetti-v-toby-samuel-36302622"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaS7rOe9w3WWJVzeHG3PRNS88JwBIajZocz36dENQNkhl4h4UmhMLBPfaJh3w",
+      "image_credit": "ATP Tour",
+      "news": [
+        {
+          "url": "https://www.atptour.com/en/video/highlights-musetti-marches-into-stockholm-2026-qfs",
+          "title": "Highlights: Musetti marches into Stockholm 2026 QFs",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaS7rOe9w3WWJVzeHG3PRNS88JwBIajZocz36dENQNkhl4h4UmhMLBPfaJh3w"
+        },
+        {
+          "url": "https://lastwordonsports.com/tennis/2026/11/09/atp-stockholm-day-3-predictions-musetti-samuel/",
+          "title": "ATP Stockholm Day 3 Predictions Including Lorenzo Musetti vs Toby Samuel",
+          "publisher": "Last Word On Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTu9Vuur7hUq7k3uF9U4Mb9WNDnQyjM4DdaL2-UacphDPeIBiLbivlDbNMBS8I"
+        },
+        {
+          "url": "https://sportsbook.fanduel.com/tennis/atp-stockholm-2026/lorenzo-musetti-v-toby-samuel-36302622",
+          "title": "Lorenzo Musetti v Toby Samuel Odds",
+          "publisher": "FanDuel Sportsbook",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA"
+        }
+      ]
+    },
+    {
+      "query": "rider strong",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T11:30:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/boy-meets-world-star-rider-120000193.html",
+        "https://variety.com/2026/tv/news/danielle-fishel-girl-meets-world-pay-disliked-boundaries-1236941905/",
+        "https://www.usatoday.com/story/entertainment/books/2026/11/10/boy-meets-world-book-meets-world/92497141007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5Rcj5kP1WEu5HYvWMkk12DxFDw7Nz2hYhZr5F_MxMpOY8X-94b1yk_EtelnQ",
       "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.yahoo.com/news/articles/kentucky-lottery-cash-ball-pick-043015725.html",
-          "title": "Kentucky Lottery Cash Ball, Pick 3 Evening winning numbers for Nov. 10, 2026",
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/boy-meets-world-star-rider-120000193.html",
+          "title": "“Boy Meets World” star Rider Strong felt ‘screwed’ by final season pay amid Ben Savage’s ‘huge pay increase’",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTGUTge-ro2yAhJf1uhQvOQw460SWQ7vaItmre4DGz6blzU6WtIyAN6YWv6AA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5Rcj5kP1WEu5HYvWMkk12DxFDw7Nz2hYhZr5F_MxMpOY8X-94b1yk_EtelnQ"
         },
         {
-          "url": "https://www.aol.com/articles/kentucky-lottery-cash-ball-pick-043029000.html",
-          "title": "Kentucky Lottery Cash Ball, Pick 3 Evening winning numbers for Nov. 4, 2026",
-          "publisher": "AOL.com",
+          "url": "https://variety.com/2026/tv/news/danielle-fishel-girl-meets-world-pay-disliked-boundaries-1236941905/",
+          "title": "Danielle Fishel on 'Girl Meets World' Pay, Being Disliked for Boundaries",
+          "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbuAnylOsKqrm1Mq0x9ukOD5kY4778eVjyx_L9Egyb7osHF757PtahYCQHUEs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUBJel043g1CaWBLPi9E2uaxbqqG45QVPgBQMkoGqfvu4g1vV-zpF4aSDU3IU"
         },
         {
-          "url": "https://www.courier-journal.com/story/news/local/2026/11/05/kentucky-lottery-results-thursday-november-5-2026/92637214007/",
-          "title": "Kentucky Lottery Cash Ball, Pick 3 Evening winning numbers for Nov. 5, 2026",
-          "publisher": "The Courier-Journal",
+          "url": "https://www.usatoday.com/story/entertainment/books/2026/11/10/boy-meets-world-book-meets-world/92497141007/",
+          "title": "‘Boy Meets World’ cast reveals salaries, show firings and Ben Savage rift",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxxaOPr_G1nJKlNlxbbOW5Vil9q5N6OVWb82OLqMfRzwg_Pyw83pW78zh7Yb0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBwLpbI_6K_k5ZGOo9qUsk4FRdbUxD8zIRxOUe1lj32mjddKYG6rRbylsEQvc"
         }
       ]
     },
     {
-      "query": "holiday today",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T10:50:00Z",
+      "query": "ios 27.2 1",
+      "approx_searches": "100+",
+      "published_at": "2026-11-11T11:30:00Z",
       "related_news_urls": [
-        "https://about.starbucks.com/press/2026/starbucks-launches-new-bearista-glass-cold-cup-surprise-box-collection-with-characters-including-rare-golden-bearista/",
-        "https://abc7.com/story/starbucks-debuts-5-new-bearista-cups-holiday-season/20029540/",
-        "https://www.yahoo.com/news/us/article/starbucks-5-new-holiday-bear-cups-go-on-sale-today--including-a-rare-golden-bear-105157585.html"
+        "https://www.forbes.com/sites/kateoflahertyuk/2026/11/10/ios-2721-new-update-warning-issued-to-iphone-users/",
+        "https://www.cnet.com/tech/services-and-software/ios-27-2-1-bug-security-fixes/",
+        "https://thehackernews.com/2026/11/apple-patches-imessage-group-chat.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdONvLccKsRKZn-pwNvvqIWxvh1_H31azGrSWydZ2yjzVwnzE8QwdBrKIL0zQ",
-      "image_credit": "Starbucks",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFW3Rz1JQHLY6WDya2ITi7F1b33KvD9Xh1rQKcXL4gLMzvhW7UKo8d0Nps8D0",
+      "image_credit": "Forbes",
       "news": [
         {
-          "url": "https://about.starbucks.com/press/2026/starbucks-launches-new-bearista-glass-cold-cup-surprise-box-collection-with-characters-including-rare-golden-bearista/",
-          "title": "Starbucks launches new Bearista™ Glass Cold Cup Surprise Box collection with characters including rare golden bearista",
-          "publisher": "Starbucks",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdONvLccKsRKZn-pwNvvqIWxvh1_H31azGrSWydZ2yjzVwnzE8QwdBrKIL0zQ"
-        },
-        {
-          "url": "https://abc7.com/story/starbucks-debuts-5-new-bearista-cups-holiday-season/20029540/",
-          "title": "Starbucks debuts 5 new Bearista cups for the holiday season",
-          "publisher": "ABC7 Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6RDz1mOaWrw6471laxDmeTm3jNUUo7GevTZEJH5W9v26H8AAFqOs-pvxFKLw"
-        },
-        {
-          "url": "https://www.yahoo.com/news/us/article/starbucks-5-new-holiday-bear-cups-go-on-sale-today--including-a-rare-golden-bear-105157585.html",
-          "title": "Starbucks' 5 new holiday Bear cups go on sale today — including a rare 'golden bear'",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNn2Ocookzq-_ntgb9tK27ovcOUFiTVIPY7OpMHTt0xkfC4t84MAg5YW-NQB8"
-        }
-      ]
-    },
-    {
-      "query": "mega millions",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T10:40:00Z",
-      "related_news_urls": [
-        "https://www.wkyc.com/article/news/lottery/winning-mega-millions-numbers-529-million-jackpot-tuesday-november-10-2026-drawing-results-ohio-lottery-winners/95-e566f35a-1311-4eb4-b113-9942c5468f78",
-        "https://www.northjersey.com/story/news/nation/2026/11/10/mega-millions-winning-numbers-drawing-for-tuesday-nov-10-2026-anyone-win-jackpot/92717737007/",
-        "https://www.forbes.com/sites/siladityaray/2026/11/11/mega-millions-jackpot-tops-550-million-heres-what-the-winner-could-take-home/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7mZdNw6_9yuXwKL357bdgmA1SkVSbUjGd-XtnjObq_5IrxhATZg43bGGIC-I",
-      "image_credit": "WKYC",
-      "news": [
-        {
-          "url": "https://www.wkyc.com/article/news/lottery/winning-mega-millions-numbers-529-million-jackpot-tuesday-november-10-2026-drawing-results-ohio-lottery-winners/95-e566f35a-1311-4eb4-b113-9942c5468f78",
-          "title": "Winning Mega Millions numbers for the $529 million jackpot on Tuesday, Nov. 10, 2026: See all the prizes hit in Ohio",
-          "publisher": "WKYC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7mZdNw6_9yuXwKL357bdgmA1SkVSbUjGd-XtnjObq_5IrxhATZg43bGGIC-I"
-        },
-        {
-          "url": "https://www.northjersey.com/story/news/nation/2026/11/10/mega-millions-winning-numbers-drawing-for-tuesday-nov-10-2026-anyone-win-jackpot/92717737007/",
-          "title": "Mega Millions winning numbers for Tuesday, Nov. 10. Check your tickets",
-          "publisher": "Bergen Record",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR476txshgn_oyW5ioeF9Gl-Tmkl25ft7fwj7LL-v_kSVwBIaNxxRsCcY2vI0A"
-        },
-        {
-          "url": "https://www.forbes.com/sites/siladityaray/2026/11/11/mega-millions-jackpot-tops-550-million-heres-what-the-winner-could-take-home/",
-          "title": "Mega Millions Jackpot Tops $550 Million—Here’s What The Winner Could Take Home",
+          "url": "https://www.forbes.com/sites/kateoflahertyuk/2026/11/10/ios-2721-new-update-warning-issued-to-iphone-users/",
+          "title": "iOS 27.2.1—New Update Warning Issued To iPhone Users",
           "publisher": "Forbes",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToBwWT1R8YfNYmineRDLc6ZUofX6cn5yEOanQQQKDDMpRtFMbHkZsKXp2sQG0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFW3Rz1JQHLY6WDya2ITi7F1b33KvD9Xh1rQKcXL4gLMzvhW7UKo8d0Nps8D0"
+        },
+        {
+          "url": "https://www.cnet.com/tech/services-and-software/ios-27-2-1-bug-security-fixes/",
+          "title": "You Should Download iOS 27.2.1 Now for a Handful of Security Fixes",
+          "publisher": "CNET",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT42OJt5CjPao2cIfFmENfw6x2t9Z-Glb_1-gisN4-oSKQk_Ge3qylLdQeINjM"
+        },
+        {
+          "url": "https://thehackernews.com/2026/11/apple-patches-imessage-group-chat.html",
+          "title": "Apple Patches iMessage Group Chat Privacy Flaws and Bluetooth Pairing Vulnerabilities",
+          "publisher": "The Hacker News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkYZmJHzbNXNQm3dIsKlH0OFcgHlkDAw_ZXqxhjofr3ZOXN5-4ml9nmvLdWdQ"
         }
       ]
     },
     {
-      "query": "notre dame fighting irish football",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T10:40:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/college-football/news/notre-dame-guards-against-post-miami-letdown-vs-boston-college/",
-        "https://247sports.com/college/notre-dame/article/instant-analysis-notre-dame-fighting-irish-college-football-players-turn-attention-to-boston-college-eagles-292542263/",
-        "https://www.uhnd.com/football/2026/11/10/notre-dame-football-primer-irish-host-boston-college-in-29th-holy-war/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5NX-CpZXvPvoFj-yCc2ghCWOsaKpn4JbQ_zrHb_auswZRlEmPoOF3E5kVaNc",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/college-football/news/notre-dame-guards-against-post-miami-letdown-vs-boston-college/",
-          "title": "Notre Dame guards against post-Miami letdown vs. Boston College",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5NX-CpZXvPvoFj-yCc2ghCWOsaKpn4JbQ_zrHb_auswZRlEmPoOF3E5kVaNc"
-        },
-        {
-          "url": "https://247sports.com/college/notre-dame/article/instant-analysis-notre-dame-fighting-irish-college-football-players-turn-attention-to-boston-college-eagles-292542263/",
-          "title": "Instant Analysis: Notre Dame Football Players Turn Attention to Boston College",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQts2lDwByOXELX1ksnPLaAZzTJfGghr3OAPCO6lSAjIUlQ7XRWtREDlQw-zkw"
-        },
-        {
-          "url": "https://www.uhnd.com/football/2026/11/10/notre-dame-football-primer-irish-host-boston-college-in-29th-holy-war/",
-          "title": "Notre Dame Football Primer: Irish host Boston College in 29th Holy War",
-          "publisher": "UHND.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFQbDCrnodiaVlvIxYHmktlik0THeHiNSu9EXSaqzRStdsJa-KEL5-SzTIzmo"
-        }
-      ]
-    },
-    {
-      "query": "chick fil a veterans day",
+      "query": "ryan wedding",
       "approx_searches": "100+",
-      "published_at": "2026-11-11T10:40:00Z",
+      "published_at": "2026-11-11T11:30:00Z",
       "related_news_urls": [
-        "https://www.military.com/is-chick-fil-a-offering-a-free-veterans-day-meal",
-        "https://www.rocketcitynow.com/article/news/national/military-news/chick-fil-a-locations-madison-offering-free-meals-on-veterans-day/525-4a9a49ea-ac4b-4c77-bb14-6c9c444203a1?fbclid=IwY2xjawVf-BZleHRuA2FlbQIxMQBwZG9mBWJyaWQRMWk0aGl4VlBOT3NHcmdrbE9zcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEfDJSGVtZK7QQSV-dv39wIEX5zjZgoocnrV2ngxtaRLVgJxzg6BIGtISScb5k_aem_Hg9EIRNvSMWSyqKHEDPWAQ",
-        "https://www.wnct.com/local-news/greenville-chick-fil-a-offers-free-veterans-day-boxed-meals/"
+        "https://www.latimes.com/california/story/2026-11-10/fugitive-helped-olympian-run-drug-cartel-evade-arrest-feds-allege",
+        "https://www.thestar.com/news/canada/ryan-wedding-joined-a-100k-monthly-subscription-service-for-mexican-cartel-leaders-u-s-prosecutors/article_e6fd08b4-a7c5-49e2-8726-a44feb2afc44.html",
+        "https://ca.news.yahoo.com/edgar-aaron-vazquez-alvarado-known-231915331.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjd7IguIkAu7lgflwy0QZNQTq9tDx4WZUQRmzOVIzu9pg1Yei9aPl3Xv4M9Lc",
-      "image_credit": "Military.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXRWmo6dxhpTM9mOVVskHuxvoWL2AmWpKwi-RI-ksaVxBt3lkxnj0-cmr55_U",
+      "image_credit": "Los Angeles Times",
       "news": [
         {
-          "url": "https://www.military.com/is-chick-fil-a-offering-a-free-veterans-day-meal",
-          "title": "Is Chick-fil-A Offering a Free Veterans Day Meal?",
-          "publisher": "Military.com",
+          "url": "https://www.latimes.com/california/story/2026-11-10/fugitive-helped-olympian-run-drug-cartel-evade-arrest-feds-allege",
+          "title": "Fugitive gang member helped Olympian run drug cartel and evade arrest, feds allege",
+          "publisher": "Los Angeles Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjd7IguIkAu7lgflwy0QZNQTq9tDx4WZUQRmzOVIzu9pg1Yei9aPl3Xv4M9Lc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXRWmo6dxhpTM9mOVVskHuxvoWL2AmWpKwi-RI-ksaVxBt3lkxnj0-cmr55_U"
         },
         {
-          "url": "https://www.rocketcitynow.com/article/news/national/military-news/chick-fil-a-locations-madison-offering-free-meals-on-veterans-day/525-4a9a49ea-ac4b-4c77-bb14-6c9c444203a1?fbclid=IwY2xjawVf-BZleHRuA2FlbQIxMQBwZG9mBWJyaWQRMWk0aGl4VlBOT3NHcmdrbE9zcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEfDJSGVtZK7QQSV-dv39wIEX5zjZgoocnrV2ngxtaRLVgJxzg6BIGtISScb5k_aem_Hg9EIRNvSMWSyqKHEDPWAQ",
-          "title": "Chick-fil-A locations in Madison offering free meals to veterans",
-          "publisher": "rocketcitynow.com",
+          "url": "https://www.thestar.com/news/canada/ryan-wedding-joined-a-100k-monthly-subscription-service-for-mexican-cartel-leaders-u-s-prosecutors/article_e6fd08b4-a7c5-49e2-8726-a44feb2afc44.html",
+          "title": "Ryan Wedding joined a $100,000 monthly subscription service for Mexican cartel leaders: U.S. prosecutors",
+          "publisher": "Toronto Star",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_VY-_05azGCVl8eSkc2m6uqlhW-M_WLX04mOM_nQ5Rc5IjzoZubqNwCTpxV8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz3pcNzAteEbTyku6IRA62peF86d62upBKd79ZCqWMZB6WCkQtTVlAYZKEf5g"
         },
         {
-          "url": "https://www.wnct.com/local-news/greenville-chick-fil-a-offers-free-veterans-day-boxed-meals/",
-          "title": "Greenville Chick-fil-A to offer free Veterans Day boxed meals",
-          "publisher": "WNCT",
+          "url": "https://ca.news.yahoo.com/edgar-aaron-vazquez-alvarado-known-231915331.html",
+          "title": "Edgar Aaron Vazquez Alvarado, known as 'The General,' left, is accused of helping alleged drug smuggler Ryan Wedding, right, evade capture in Mexico. Vazquez was shot dead in an op",
+          "publisher": "Yahoo News Canada",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuycHdqo2njgITBNPQXdgWbzlGUGYM0YXl98zBUmzc7_nkm80zwPZq94z45dw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR--beM8b2wTKdwCrIwb41HR7pmeoVxMEnJiAtc_27yFrPZ_Zd95CFvmHev5r4"
         }
       ]
     },
     {
-      "query": "ga lottery",
+      "query": "remembrance day",
       "approx_searches": "100+",
-      "published_at": "2026-11-11T10:40:00Z",
+      "published_at": "2026-11-11T11:20:00Z",
       "related_news_urls": [
-        "https://www.augustachronicle.com/story/news/local/2026/11/09/georgia-lottery-results-sunday-november-8-2026/92686531007/",
-        "https://www.wrdw.com/2026/11/05/powerball-ticket-sold-augusta-wins-50000/",
-        "https://thebrunswicknews.com/news/local_news/two-local-lottery-players-win-nearly-2-million/article_dbfaf5da-da62-42d1-b400-aefa9dabd25a.html"
+        "https://www.thestar.com/news/canada/canadians-gather-for-remembrance-day-ceremonies-across-the-country/article_e3a1a240-e16a-5d52-b585-aad2b9d2549d.html",
+        "https://calgarysun.com/opinion/letters/letters-nov-11-2026-a-day-for-the-heroes",
+        "https://thenorthernview.com/2026/11/11/quiz-considering-the-effects-of-war/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfNMpe1s9X0_UHpX0KQ7MffpVxWwK8VN67TKMkK5QfPUpwsVV06thCpsLyurk",
-      "image_credit": "The Augusta Chronicle",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSZbgcEkdh11EiJh0dzLVGpK-MqsPChCUjg7YI2uS0u1jOZU8yIAaSbJo3W-A",
+      "image_credit": "Toronto Star",
       "news": [
         {
-          "url": "https://www.augustachronicle.com/story/news/local/2026/11/09/georgia-lottery-results-sunday-november-8-2026/92686531007/",
-          "title": "Georgia Lottery Cash 3, Cash 4 results for Nov. 8, 2026",
-          "publisher": "The Augusta Chronicle",
+          "url": "https://www.thestar.com/news/canada/canadians-gather-for-remembrance-day-ceremonies-across-the-country/article_e3a1a240-e16a-5d52-b585-aad2b9d2549d.html",
+          "title": "Canadians gather for Remembrance Day ceremonies across the country",
+          "publisher": "Toronto Star",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfNMpe1s9X0_UHpX0KQ7MffpVxWwK8VN67TKMkK5QfPUpwsVV06thCpsLyurk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSZbgcEkdh11EiJh0dzLVGpK-MqsPChCUjg7YI2uS0u1jOZU8yIAaSbJo3W-A"
         },
         {
-          "url": "https://www.wrdw.com/2026/11/05/powerball-ticket-sold-augusta-wins-50000/",
-          "title": "Powerball ticket sold in Augusta wins $50,000",
-          "publisher": "WRDW",
+          "url": "https://calgarysun.com/opinion/letters/letters-nov-11-2026-a-day-for-the-heroes",
+          "title": "Letters, Nov. 11, 2026: 'A day for the heroes'",
+          "publisher": "Calgary Sun",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvTEnr-Ezf_AXhVGEN839_lSlNqXZUHaum2QW_o_iNzfaCltSt7GHdRpTvUq4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTz8r21zqeT__3YUV_pirBnAzzphkHKvN6Lm-FpmOiIVsMV6ddaTcZc8t6rybg"
         },
         {
-          "url": "https://thebrunswicknews.com/news/local_news/two-local-lottery-players-win-nearly-2-million/article_dbfaf5da-da62-42d1-b400-aefa9dabd25a.html",
-          "title": "Two local lottery players win nearly $2 million",
-          "publisher": "The Brunswick News",
+          "url": "https://thenorthernview.com/2026/11/11/quiz-considering-the-effects-of-war/",
+          "title": "QUIZ: Considering the effects of war",
+          "publisher": "The Northern View",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYk5fdFIPPpoj88yc89WblEzordoVsp7_2oszO9R_40PEPCfmsz8qUx7AsVZc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMGluutkvSiH_6uaJyZg9vpp5AwTsSO2DmSC1kNmsoEcRHBZgO44BPGmhQbps"
         }
       ]
     }
