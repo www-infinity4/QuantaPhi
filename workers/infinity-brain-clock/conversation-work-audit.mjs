@@ -1,5 +1,6 @@
 /* Read-only owner-conversation work discovery; no ticket creation, credentials or export. */
 const topics=[
+ ['infinity-nuances','Infinity OS Cart 003/004 nuance discovery','QuantaPhi',/\b(?:cart\s*0*0?[34]\b|nuances?\b|infinity\s+os\b|41\s+(?:main\s+)?carts?\b|calculator\s+twins?\b)\b/i],
  ['owner-delegation','ChatGPT–Bubbles owner connection','QuantaPhi',/\b(?:owner (?:mode|chat|access|session)|five.day (?:owner|session)|5.day session|connect (?:yourself|gpt|chatgpt) (?:to|with) bubbles|hook (?:in|into) (?:bubbles|owner)|robot brain access)\b/i],
  ['conversation-memory','Bubbles conversation retrieval and memory','QuantaPhi',/\b(?:memory|memories|synapse|conversation (?:history|archive|context|categor|fold)|parse (?:my |older |old )?(?:messages|conversations)|remember (?:my|previous)|grammarphi)\b/i],
  ['autonomous-building','Autonomous repository build and verification','QuantaPhi',/\b(?:self.build|build(?:ing)? (?:itself|on its own)|automatic(?:ally)? (?:build|upgrade|repair)|autonom(?:ous|ation)|repo(?:sitor(?:y|ies))? (?:not |in)?(?:fully )?built|unfinished (?:projects|repos|builds)|test ground ai|brain runner|github (?:commits?|pull requests?|prs?|repos?(?:itor(?:y|ies))?|tools?))\b/i],
