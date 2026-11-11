@@ -75,3 +75,34 @@ test('registered native Quick Card reuses existing Oracle card actions and owner
  assert.match(ui,/from_work_audit|reviewDraftRequest/);
  assert.doesNotMatch(ui,/localStorage\.setItem|wallet\.mint|start_immediately:true/);
 });
+
+test('Avatar AI public prompt and owner-scoped Nuance Discovery coexist in the Oracle homepage',()=>{
+ const home=readFileSync('index.html','utf8');
+ const publicSource=readFileSync('source-quick-cards.mjs','utf8');
+ const publicCard=readFileSync('avatar-ai-card.mjs','utf8');
+ const privateCard=readFileSync('nuance-discovery-card.mjs','utf8');
+ const detail=readFileSync('source-quick-card.html','utf8');
+ const catalog=readFileSync('bubbles-card-catalog.mjs','utf8');
+ assert.match(home,/nuance-discovery-card\\.mjs/);
+ assert.match(home,/avatar-ai-card\\.css/);
+ assert.match(publicSource,/source\\('avatar-ai'/);
+ assert.match(publicSource,/mountAvatarAiCard/);
+ assert.match(detail,/avatar-ai-card\\.css/);
+ assert.match(catalog,/app\\('nuance-discovery'/);
+ assert.match(privateCard,/QuantaBrainOwner.*|currentHeaders/);
+ assert.doesNotMatch(publicCard,/QuantaBrainOwner|work-audit-reconcile|Authorization|sessionStorage|localStorage|fetch\\(/);
+});
+
+test('both Avatar AI and Nuance Discovery have one canonical unfinished ticket',()=>{
+ const index=readFileSync('work/unfinished/INDEX.md','utf8');
+ const ticket=readFileSync('work/unfinished/TICKET-1923.md','utf8');
+ const rows=index.split('\\n').filter(line=>line.startsWith('| ')&&line.includes('[#1923]'));
+ assert.equal(rows.length,1,'exactly one index entry should reference the shared issue');
+ assert.match(rows[0],/Avatar AI/);
+ assert.match(rows[0],/Nuance Discovery/);
+ assert.match(ticket,/^---\\nissue: 1923\\n/);
+ assert.match(ticket,/public.*Avatar AI|Avatar AI.*public/i);
+ assert.match(ticket,/owner.*Nuance Discovery|Nuance Discovery.*owner/i);
+ assert.match(ticket,/#1924/);
+ assert.match(ticket,/#1925/);
+});
