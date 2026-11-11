@@ -5,7 +5,7 @@ import {summarizeGate,mountBubblesSigninGate} from '../bubbles-signin-gate.mjs';
 import {cloudflareAdapter} from '../workers/bubbles-connections/providers.mjs';
 
 test('both real authorizations must be server-confirmed before gate says ready',()=>{
- const valid={ready:true,providers:{
+ const valid={ok:true,walletVerified:true,ready:true,providers:{
   github:{configured:true,connected:true,permissionsApproved:true,label:'gh-account'},
   cloudflare:{configured:true,connected:true,permissionsApproved:true,label:'cf-account',missingActions:[]}
  }};
@@ -16,7 +16,7 @@ test('both real authorizations must be server-confirmed before gate says ready',
  assert.equal(result.state,'ready');
 });
 test('browser content cannot turn a disconnected or unconfigured provider into a valid connection',()=>{
- const misconfigured={ready:true,providers:{
+ const misconfigured={ok:true,walletVerified:true,ready:true,providers:{
   github:{configured:false,connected:true,permissionsApproved:true,label:'unverified'},
   cloudflare:{configured:true,connected:true,permissionsApproved:false,missingActions:['projects.build']}
  }};
@@ -112,7 +112,7 @@ function mountedGate(t,payload,{startFails=false,walletMissing=false,oauthReturn
  t.after(()=>{globalThis.fetch=original;});
  return {controller:mountBubblesSigninGate({root,host,prefix:chat?'chat':''}),get:root.getElementById,calls,popups};
 }
-const partialGate=()=>({ready:false,providers:{
+const partialGate=()=>({ok:true,walletVerified:true,ready:false,providers:{
  github:{configured:true,connected:true,permissionsApproved:true},
  cloudflare:{configured:true,connected:false,permissionsApproved:false,scopeSetupRequired:true,
   authorizationActions:['account.read','projects.build','ledger.read']}
