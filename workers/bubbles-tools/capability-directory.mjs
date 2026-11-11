@@ -70,7 +70,7 @@ export function recommendCapabilities(question,env={}){
  const q=String(question||'').toLowerCase().slice(0,600);
  // Remove excluded operations from recommendations, never from the user's request.
  // A later independent clause ("and which tool can merge?") remains actionable.
- const actionable=q.replace(/\b(?:without|do not|don't|never|no need to|not to)\b[\s\S]*?(?=(?:,\s*(?:(?:and|but)\s+)?(?:which|what|how|can|could|would)\b)|[.!?;]|$)/gi,' ');
+ const actionable=q.replace(/\b(?:without|do not|don't|never|no need to|not to)\b[\s\S]*?(?=(?:(?:,\s*|\s+)(?:(?:and|but)\s+)?(?:which|what|how|can|could|would)\b)|[.!?;]|$)/gi,' ');
  // A literal owner/repo reference is a GitHub source, but arbitrary URL paths are not.
  const namedRepository=/\b[a-z0-9][a-z0-9_.-]{0,38}\/[a-z0-9_][a-z0-9_.-]{0,99}\b/i.test(q.replace(/https?:\/\/\S+/gi,''));
  const ids=[];
