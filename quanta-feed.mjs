@@ -157,7 +157,7 @@ function renderHome(){
   const prior=current;
   const pick=nextFeedDirection(ALL_FEED_CARDS,tab,ranking(),prior,query);
   current=pick.card?.id||'';
-  lastReason=pick.reason||'';
+  lastReason=pick.card?'Next card: '+pick.card.name:'';
   persist();renderResults(false);
  });
  controls.append(next);host.append(controls);
@@ -190,13 +190,12 @@ function renderHome(){
    const openBtn=create('button','qf-button','Open interactive card');openBtn.type='button';
    openBtn.addEventListener('click',()=>open(selected));buttons.append(openBtn);
   }
-  if(selected.origin!=='source')buttons.append(followButton(selected,refresh));
   buttons.append(hideButton(selected,refresh));
   if(selected.origin!=='source'||!['google','bing'].includes(selected.id)){
    const original=create('a','qf-link','Original source ↗');original.href=selected.url;original.target='_blank';original.rel='noopener noreferrer';buttons.append(original);
   }
   info.append(buttons);
-  const direction=create('p','qf-direction',lastReason?'Next direction · '+lastReason:'Select a card to explore, then use Next to continue a related activity.');
+  const direction=create('p','qf-direction',lastReason||'Select a card, then choose Next to continue.');
   info.append(direction);
   feature.replaceChildren(visual,info);
   grid.replaceChildren();
@@ -227,7 +226,6 @@ function renderDetail(){
  createCardArtwork(card),create('h1','',card.name),
  create('h2','',card.feature),create('p','qf-muted',card.study));
  const actions=create('div','qf-actions');
- actions.append(followButton(card,renderDetailAgain));
  const source=create('a','qf-button','Open verified original source ↗');
  source.href=card.url;source.target='_blank';source.rel='noopener noreferrer';actions.append(source);
  if(card.random)actions.append(create('p','qf-muted','Every click on Wikipedia random can open a different original article.'));
@@ -253,7 +251,6 @@ function renderDetail(){
  embed.dataset.bubbleInstructions=('Independent research specialist for '+card.name+'. '+card.study+
  ' Original source: '+card.url+'. No account-data permission, payments, prices or session access unless verified by a separate account connector. Never invent source dates or results.').slice(0,800);
  document.body.append(embed);
- function renderDetailAgain(){const b=host.querySelector('.qf-follow');if(!b)return;const yes=state.following.includes(card.id);b.textContent=yes?'✓ Following':'+ Follow';b.classList.toggle('qf-saved',yes);b.setAttribute('aria-pressed',String(yes));}
 }
 if(typeof document!=='undefined'){
  window.addEventListener('quantaphi:feed-updated',event=>{
