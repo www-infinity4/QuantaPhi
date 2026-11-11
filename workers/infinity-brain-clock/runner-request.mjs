@@ -113,6 +113,12 @@ export function checkOwnerRunnerRequest(
     return { eligible: false, reason: technicalSourceEvidenceNeeded(blockerText)?
       'technical_source_evidence_required':'owner_decision_required' };
   }
+  // Repository engine source commits are not verified completion. The Brain's
+  // outer claim gate independently enforces this; preserve it here too so
+  // callers cannot treat committed_unverified as authority for a next job.
+  if(job.executor==='repository-engine'&&deps.some(dep=>
+      !['merged_verified','deployed_verified','complete'].includes(dep.status)))
+    return {eligible:false,reason:'dependency_pending'};
   return eligibleForRetry(job, { now, prior, lease, retry, deps });
 }
 
