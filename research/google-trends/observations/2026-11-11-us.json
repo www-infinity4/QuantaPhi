@@ -3,52 +3,52 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T14:31:33.074325Z",
+  "checked_at": "2026-11-11T15:01:17.915280Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ron howard",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T14:10:00Z",
+      "query": "kurt warner",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T14:20:00Z",
       "related_news_urls": [
-        "https://www.economist.com/the-world-in-brief/2026/11/11/aaef91a3-e53c-4519-86cb-fb983f3464e8",
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/avedon-gracefully-constructed-documentary-great-140005227.html",
-        "https://www.theguardian.com/film/2026/nov/10/richard-avedon-photography-netflix-documentary"
+        "https://www.essentiallysports.com/nfl-active-news-deserves-it-more-than-i-ever-did-rams-legend-kurt-warner-makes-emotional-plea-to-all-thirty-two-nfl-teams-for-his-qb-sons-career/",
+        "https://www.espn.com/nfl/story/_/id/50430415/caleb-williams-4-interceptions-bears-win-buccaneers",
+        "https://sports.yahoo.com/articles/chicago-bears-won-clunker-part-135451303.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeV1eIMfOBsYPGZ5rkuwWx-g-wOjIK4Pxx3ZXcftwIZ5LJnXDF9eFjj3R3BAc",
-      "image_credit": "The Economist",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRacsuu8whF3vl9OcYhLB-M50DuytdEniWQoZZaat5DYLhllcNqt6XtCnqUf_0",
+      "image_credit": "EssentiallySports",
       "news": [
         {
-          "url": "https://www.economist.com/the-world-in-brief/2026/11/11/aaef91a3-e53c-4519-86cb-fb983f3464e8",
-          "title": "Turning the lens on a celebrated photographer",
-          "publisher": "The Economist",
+          "url": "https://www.essentiallysports.com/nfl-active-news-deserves-it-more-than-i-ever-did-rams-legend-kurt-warner-makes-emotional-plea-to-all-thirty-two-nfl-teams-for-his-qb-sons-career/",
+          "title": "“Deserves It More Than I Ever Did”: Rams Legend Kurt Warner Makes Emotional Plea to All 32 NFL Teams for His QB Son’s Career",
+          "publisher": "EssentiallySports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeV1eIMfOBsYPGZ5rkuwWx-g-wOjIK4Pxx3ZXcftwIZ5LJnXDF9eFjj3R3BAc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRacsuu8whF3vl9OcYhLB-M50DuytdEniWQoZZaat5DYLhllcNqt6XtCnqUf_0"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/avedon-gracefully-constructed-documentary-great-140005227.html",
-          "title": "Avedon Is a Gracefully Constructed Documentary About a Great American Photographer",
-          "publisher": "Yahoo",
+          "url": "https://www.espn.com/nfl/story/_/id/50430415/caleb-williams-4-interceptions-bears-win-buccaneers",
+          "title": "Caleb Williams unfazed by 4 interceptions as Bears pull out win vs. Bucs",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBxyhAq3_jhHqxAa0rajCe1xHrC0XAuQpMgEYjQooP05MFxfTDdIlBqH-aTUg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVoMlpKKBIOJk0OFQ829Ed0S1jCXT9-GCGU-gvuMGT46aSe7pUqPucDdOkU3c"
         },
         {
-          "url": "https://www.theguardian.com/film/2026/nov/10/richard-avedon-photography-netflix-documentary",
-          "title": "‘I’m looking for faces which surprise me’: how Richard Avedon photographed the soul of his subjects",
-          "publisher": "The Guardian",
+          "url": "https://sports.yahoo.com/articles/chicago-bears-won-clunker-part-135451303.html",
+          "title": "Chicago Bears won a clunker, which is part of winning recipe in NFL",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgN0Rb8u9lrVUTZe3HsZVi45Z0b2657UCuv17keobwGIjquxk7fz23Ykc6wc4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAEWynvK7GqcOStORouxAx83QikiQ0LbFq1Y75n2GrD613lA1tcNeARQ4ydEQ"
         }
       ]
     },
     {
       "query": "cynthia nixon",
-      "approx_searches": "200+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-11T14:10:00Z",
       "related_news_urls": [
         "https://www.queerty.com/benito-skinners-drip-cynthia-nixons-favorite-lesbian-a-walk-through-gay-history-20261108/",
-        "https://www.vulture.com/article/the-gilded-age-taylor-trensch-interview.html",
-        "https://decider.com/2026/11/09/who-plays-oliver-the-new-footman-on-the-gilded-age-meet-taylor-trensch/"
+        "https://www.goldderby.com/music/2026/olivia-rodrigo-plagiarism-grammys-christmas-song-analysis/",
+        "https://www.billboard.com/music/music-news/olivia-rodrigo-new-song-take-me-home-4-christmas-video-1236375403/"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSM4njfSbjTys1MSSb-7gQYUuhevtf6hKVNKjEOY30bahTXnD5PlTcn6Zlw0vQ",
       "image_credit": "Queerty",
@@ -61,18 +61,88 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSM4njfSbjTys1MSSb-7gQYUuhevtf6hKVNKjEOY30bahTXnD5PlTcn6Zlw0vQ"
         },
         {
-          "url": "https://www.vulture.com/article/the-gilded-age-taylor-trensch-interview.html",
-          "title": "‘The Gilded Age’ New Footman Taylor Trensch Spills Milk, Tea",
-          "publisher": "Vulture",
+          "url": "https://www.goldderby.com/music/2026/olivia-rodrigo-plagiarism-grammys-christmas-song-analysis/",
+          "title": "Why Olivia Rodrigo’s Chrismas song ‘controversy’ won’t sink her Grammys odds",
+          "publisher": "Gold Derby",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9XC0OMHEecoNFyqf5sA8nuDrmBpA9IoKfXylj99JdMz6EpoycBxgj4AasHSI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVdpL0O-E5wjhpKtmghOznMUmLWBXBgu8_E2DqE-Cbwfsp0_FtRHi3AaXOL-A"
         },
         {
-          "url": "https://decider.com/2026/11/09/who-plays-oliver-the-new-footman-on-the-gilded-age-meet-taylor-trensch/",
-          "title": "‘The Gilded Age’ star Cynthia Nixon explains why Ada hired the “somewhat incompetent” Oliver as footman",
-          "publisher": "Decider",
+          "url": "https://www.billboard.com/music/music-news/olivia-rodrigo-new-song-take-me-home-4-christmas-video-1236375403/",
+          "title": "Olivia Rodrigo Unwraps Holiday Single ‘Take Me Home (4 Christmas)’: Stream It Now",
+          "publisher": "Billboard",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-XgJ9LTmwxJFve-zCYjvQNOFdeyyKFzx_oINqug5vclOW_JRS5-x8rL7lKcM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQO1cfvr0CtyneURI0wdYCFjPb3te_pQ6gzLQr6einB-lPDeyS8xWHY1ExqsWc"
+        }
+      ]
+    },
+    {
+      "query": "ron howard",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T14:10:00Z",
+      "related_news_urls": [
+        "https://www.economist.com/the-world-in-brief/2026/11/11/aaef91a3-e53c-4519-86cb-fb983f3464e8",
+        "https://www.today.com/video/ron-howard-shares-rare-look-at-photographer-richard-avedon-273270341604",
+        "https://www.wsj.com/arts-culture/television/avedon-review-netflixs-documentary-on-a-defining-portraitist-55215590"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeV1eIMfOBsYPGZ5rkuwWx-g-wOjIK4Pxx3ZXcftwIZ5LJnXDF9eFjj3R3BAc",
+      "image_credit": "The Economist",
+      "news": [
+        {
+          "url": "https://www.economist.com/the-world-in-brief/2026/11/11/aaef91a3-e53c-4519-86cb-fb983f3464e8",
+          "title": "Turning the lens on a celebrated photographer",
+          "publisher": "The Economist",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeV1eIMfOBsYPGZ5rkuwWx-g-wOjIK4Pxx3ZXcftwIZ5LJnXDF9eFjj3R3BAc"
+        },
+        {
+          "url": "https://www.today.com/video/ron-howard-shares-rare-look-at-photographer-richard-avedon-273270341604",
+          "title": "Ron Howard Shares Rare Look at Photographer Richard Avedon",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBlRmHywUhMaglIjRibj1UY7h9-Unql-QqQiXZm8rLH_hVVse8GBoBpqhRhfg"
+        },
+        {
+          "url": "https://www.wsj.com/arts-culture/television/avedon-review-netflixs-documentary-on-a-defining-portraitist-55215590",
+          "title": "‘Avedon’ Review: Netflix’s Documentary on a Defining Portraitist",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ4XcAwLmpkUFHh9VM0Y1Km1A8xoqH23NajRP1tIEH4CBdhIzdZI-HXxEnlSo"
+        }
+      ]
+    },
+    {
+      "query": "air force",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T14:10:00Z",
+      "related_news_urls": [
+        "https://www.washingtonpost.com/world/2026/11/10/us-aircraft-abruptly-depart-second-uk-base/",
+        "https://www.wsj.com/world/middle-east/u-s-aircraft-evacuated-from-second-u-k-base-due-to-iran-threat-835a8b58",
+        "https://www.bbc.com/news/articles/c32l4lw12z7po"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTz2F6BLFGuAV84-ab9SRJe_1fJ-2ncg_uAsihDnN3Tg3CT3bUFmrWbEt0yunk",
+      "image_credit": "The Washington Post",
+      "news": [
+        {
+          "url": "https://www.washingtonpost.com/world/2026/11/10/us-aircraft-abruptly-depart-second-uk-base/",
+          "title": "U.S. aircraft abruptly depart a second U.K. base",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTz2F6BLFGuAV84-ab9SRJe_1fJ-2ncg_uAsihDnN3Tg3CT3bUFmrWbEt0yunk"
+        },
+        {
+          "url": "https://www.wsj.com/world/middle-east/u-s-aircraft-evacuated-from-second-u-k-base-due-to-iran-threat-835a8b58",
+          "title": "Exclusive | U.S. Aircraft Evacuated From Second U.K. Base Due to Iran Threat",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSH_wK7NX1r2ddMCbCyZz2MwsGAJvxw2lSO5f_WE9o36jjBhR3fkf3uhjab3cM"
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/c32l4lw12z7po",
+          "title": "More than 12 US military aircraft leave second UK base",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTm-HvjQEblqtK-GSIKhjbQIFHNMLUbTjVPa4Xk61qPUnk_DxQNOuzHWktNn7U"
         }
       ]
     },
@@ -117,8 +187,8 @@
       "published_at": "2026-11-11T14:00:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/mlb/article/blue-jays-gm-denounces-anthony-santanders-anti-islam-social-media-posts-extremely-disappointing-024159310.html",
-        "https://www.cbssports.com/mlb/news/blue-jays-anthony-santander-ross-atkins-anti-muslim/",
-        "https://www.mlb.com/news/ross-atkins-disappointed-in-anthony-santander-for-social-media-posts"
+        "https://www.thestar.com/sports/blue-jays/anthony-santander-hasn-t-apologized-for-amplifying-anti-muslim-posts-blue-jays-fans-deserve-better/article_955e5b41-58b2-4676-a971-ccf1a6641de6.html",
+        "https://www.espn.com/mlb/story/_/id/50399679/anthony-santander-anti-muslim-posts-represent-team"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOZcJltkLOSgZGeQUWH1FsyOMZHxuq2TVdGKAFO8uuYN7pS8i4O476E-uEoGc",
       "image_credit": "Yahoo Sports",
@@ -131,18 +201,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOZcJltkLOSgZGeQUWH1FsyOMZHxuq2TVdGKAFO8uuYN7pS8i4O476E-uEoGc"
         },
         {
-          "url": "https://www.cbssports.com/mlb/news/blue-jays-anthony-santander-ross-atkins-anti-muslim/",
-          "title": "Blue Jays executive responds to Anthony Santander's 'extremely disappointing' anti-Muslim social media posts",
-          "publisher": "CBS Sports",
+          "url": "https://www.thestar.com/sports/blue-jays/anthony-santander-hasn-t-apologized-for-amplifying-anti-muslim-posts-blue-jays-fans-deserve-better/article_955e5b41-58b2-4676-a971-ccf1a6641de6.html",
+          "title": "Gregor Chisholm: Blue Jays told Anthony Santander to apologize for amplifying anti-Muslim hate. He’s chosen silence",
+          "publisher": "Toronto Star",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAks0gRmX72dOn7fdRGfrMiRI7oP1vG8EpXTvOD_cT_itUEmUvDcJloZQdskg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDSFXnCeShGbQkges97SWEpOj8sjCShRRi4Jt3k0Y6MJDvAA6ftXogSdwgRN4"
         },
         {
-          "url": "https://www.mlb.com/news/ross-atkins-disappointed-in-anthony-santander-for-social-media-posts",
-          "title": "Blue Jays GM Atkins says Santander's social media posts were 'extremely concerning, extremely disappointing'",
-          "publisher": "MLB.com",
+          "url": "https://www.espn.com/mlb/story/_/id/50399679/anthony-santander-anti-muslim-posts-represent-team",
+          "title": "Blue Jays - Santander's anti-Muslim posts don't represent team",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3UgZqiO08aKpgExfaVJpOU9ozFT1CAs39Oidj-xk29I-yK0TSQ7gxkIaQWrc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfoPb4xGeQRnX0XaqJlkc6h-vgywvW1lVRLt4yAx3KGdjBO2gcOep4jwGgIOg"
         }
       ]
     },
@@ -283,76 +353,6 @@
           "publisher": "KS95 94.5",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYWXJJ-QniteVbrdFo830XGKD23UHmvFLFK9iY4ox-vEGsfJBA86PokE4MBZs"
-        }
-      ]
-    },
-    {
-      "query": "gma deals and steals",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T13:30:00Z",
-      "related_news_urls": [
-        "https://abcnews.com/GMA/Shop/gma-deals-steals-kristin-cavallari-119/story?id=137980372",
-        "https://www.goodmorningamerica.com/shop/story/gma-deals-steals-holiday-gifting-137915584",
-        "https://abc7chicago.com/post/abc-secret-savings-best-deals-sales-november-2026/20025029/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWqv4oTNQBH_lH3N4EnTu6v1pcNwUFT7hoMu-XCYX5yl0q3dLqCJhe8DBNcB8",
-      "image_credit": "ABC News - Breaking News, Latest News and Videos",
-      "news": [
-        {
-          "url": "https://abcnews.com/GMA/Shop/gma-deals-steals-kristin-cavallari-119/story?id=137980372",
-          "title": "'GMA' Deals & Steals with John Legend",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWqv4oTNQBH_lH3N4EnTu6v1pcNwUFT7hoMu-XCYX5yl0q3dLqCJhe8DBNcB8"
-        },
-        {
-          "url": "https://www.goodmorningamerica.com/shop/story/gma-deals-steals-holiday-gifting-137915584",
-          "title": "'GMA' Deals & Steals for holiday gifting",
-          "publisher": "Good Morning America",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ-Xe6AXK2tJF6ISjQa8cjcwiLZxmvQlmoH-FAxFmR1hbfAVdHSo6vNJLJ1Kc"
-        },
-        {
-          "url": "https://abc7chicago.com/post/abc-secret-savings-best-deals-sales-november-2026/20025029/",
-          "title": "ABC Secret Savings: Best deals and sales for November 2026",
-          "publisher": "ABC7 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTN3g6L__aDzSpuNTFBcr3CnOoOUKJHs2OQpcHtaKpK2Tc1emoCX6RuIdBAEg4"
-        }
-      ]
-    },
-    {
-      "query": "why do we celebrate veterans day",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T13:30:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/11/us/iran-war-deaths-survivors-veterans-day.html",
-        "https://www.foxnews.com/opinion/dakota-meyer-veterans-took-oath-defend-america-no-expiration-date",
-        "https://www.ms.now/opinion/veterans-day-pete-hegseth-iran-war"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLqu7fLl4x7abptLNtpjBwEU1kJP_qDTQMbslnyD8TkACuAI33wXu2dV7P76Y",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/11/us/iran-war-deaths-survivors-veterans-day.html",
-          "title": "Honor and Anguish: A Veterans Day When the Losses Are New",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLqu7fLl4x7abptLNtpjBwEU1kJP_qDTQMbslnyD8TkACuAI33wXu2dV7P76Y"
-        },
-        {
-          "url": "https://www.foxnews.com/opinion/dakota-meyer-veterans-took-oath-defend-america-no-expiration-date",
-          "title": "DAKOTA MEYER: Veterans took an oath to defend America. It has no expiration date",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNEgzVluO81u-4tQ5JtQrm21KisbPwA4yTFHeTEjjspeBQqVVgFrWeFzINjNg"
-        },
-        {
-          "url": "https://www.ms.now/opinion/veterans-day-pete-hegseth-iran-war",
-          "title": "Opinion | This Veterans Day, it's even more important to celebrate American values",
-          "publisher": "MS NOW",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuBPuPI4gwZVjfhPwhDN1VzDo4DLKoFPqhq3Ag_thuwOk74fD-g0yeZU5hZpI"
         }
       ]
     }
