@@ -7,13 +7,20 @@ import {technicalSourceEvidenceNeeded} from './ticket-selector.mjs';
 // The five-day bridge may enqueue source work, never impersonate a wallet,
 // approve blocked jobs, release production, or obtain a writer lease.
 export async function submitApprovedBridgeWork({request,claims,body,submit,dispatch,fetcher=fetch}) {
-  const chainRequested=body&&('jobs' in body||'orderId' in body||'sourceSha' in body);
+  const chainRequested=body&&('jobs' in body||'orderId' in body||'sourceSha' in body||'conversationReceipts' in body);
   let chain=null;
   if(chainRequested){
-   if(!body||Object.keys(body).some(k=>!['repository','request','jobs','orderId','sourceSha'].includes(k))||
+   if(!body||Object.keys(body).some(k=>!['repository','request','jobs','orderId','sourceSha','conversationReceipts'].includes(k))||
       !/^avatar-[a-z0-9][a-z0-9-]{7,70}$/.test(body.orderId||'')||
       !/^[a-f0-9]{40}$/.test(body.sourceSha||'')||
-      !Array.isArray(body.jobs)||body.jobs.length<2||body.jobs.length>8)
+      !Array.isArray(body.jobs)||body.jobs.length<2||body.jobs.length>8||
+      !Array.isArray(body.conversationReceipts)||body.conversationReceipts.length!==2||
+      body.conversationReceipts.some((receipt,i)=>
+       !receipt||typeof receipt!=='object'||Array.isArray(receipt)||
+       Object.keys(receipt).some(key=>!['turn','state','tool','toolStatus','outputSha256'].includes(key))||
+       receipt.turn!==i||receipt.state!=='complete'||receipt.toolStatus!=='complete'||
+       !/^[a-z][a-z0-9._-]{0,79}$/.test(receipt.tool||'')||
+       !/^[a-f0-9]{64}$/.test(receipt.outputSha256||'')))
     return {status:400,result:{ok:false,error:'invalid_owner_bridge_chain'}};
    const previous=new Set();
    chain=[];
@@ -31,7 +38,7 @@ export async function submitApprovedBridgeWork({request,claims,body,submit,dispa
    }
   }
   if(!body||Object.keys(body).some(k=>!(chainRequested?
-       ['repository','request','jobs','orderId','sourceSha']:['repository','request']).includes(k))||
+       ['repository','request','jobs','orderId','sourceSha','conversationReceipts']:['repository','request']).includes(k))||
     !['www-infinity4/QuantaPhi','www-infinity4/RecordB'].includes(body.repository)||
     typeof body.request!=='string'||!body.request.trim()||body.request.length>1800)
     return {status:400,result:{ok:false,error:'invalid_owner_bridge_work'}};
@@ -59,7 +66,10 @@ export async function submitApprovedBridgeWork({request,claims,body,submit,dispa
     source_url:'https://github.com/www-infinity4/Moltnook/actions/runs/'+claims.run_id,
     title:text.slice(0,120),request:text,repository,context:{kind:'robot-directions',
       submission_id:submissionId,repositories:[repository],approval:'existing-five-day-bridge',
-      ...(chain?{work_order_id:body.orderId,source_sha:body.sourceSha}:{}),
+      ...(chain?{work_order_id:body.orderId,source_sha:body.sourceSha,
+        signed_conversation:{run_id:claims.run_id,
+         workflow:'www-infinity4/Moltnook/.github/workflows/bubbles-owner-message.yml@refs/heads/main',
+         turn_receipts:body.conversationReceipts}}:{}),
       color_jobs:jobs
     }});
   if(!saved.result?.ok||!saved.result.ticket?.id) return saved;
