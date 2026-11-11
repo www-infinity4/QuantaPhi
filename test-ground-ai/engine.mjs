@@ -16,7 +16,12 @@ export const TESTS=Object.freeze([
 // Each test is scored against the action it ACTUALLY requests. Drafts and
 // safe no-location clarifications must not require nonexistent write receipts.
 function verifiedDraft(id,output){
- const text=output.replace(/^```(?:json|html)?\s*/i,'').replace(/\s*```$/,'').trim();
+ // Natural chat may introduce exactly one fenced draft. Only score that code,
+ // never a prose claim, an unrelated language, or ambiguous multiple drafts.
+ const fences=[...output.matchAll(/```([a-z]*)[ \t]*\r?\n([\s\S]*?)```/gi)];
+ if(fences.length>1)return false;
+ if(fences.length===1&&fences[0][1]&&fences[0][1].toLowerCase()!==id)return false;
+ const text=(fences.length===1?fences[0][2]:output).trim();
  if(id==='json'){
   try{
    const value=JSON.parse(text);
