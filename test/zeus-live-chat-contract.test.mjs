@@ -49,3 +49,13 @@ test('Bubbles accepts Zeus user text with the same sendMessage engine and no own
  assert.match(bubbles,/busy\|\|turnPending/);
  assert.doesNotMatch(bubbles,/sendNativeText\(prompt/);
 });
+
+test('Zeus distinguishes accepting a prompt from receiving a confirmed Bubbles answer',()=>{
+ const host=read('coliseum/coliseum.js'),engine=read('bubbles-ai.js');
+ assert.match(engine,/quantaphi:bubbles:quest-result/,'the embedded engine must return a terminal result');
+ assert.match(engine,/messages\.slice\(before\)/,'the result must be derived from actual recorded chat messages');
+ assert.match(host,/quantaphi:bubbles:quest-result/,'the parent must consume the terminal result');
+ assert.match(host,/data\.status==='complete'/,'the parent must distinguish success from errors');
+ assert.match(host,/zeusQuestReply/,'the confirmed answer must be visible in Zeus itself');
+ assert.doesNotMatch(host,/Question accepted by Bubbles\. The AI reply appears/,'acceptance is not answer evidence');
+});
