@@ -3,12 +3,82 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T18:01:21.584243Z",
+  "checked_at": "2026-11-11T18:31:31.136032Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "nfl football trade deadline",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-11T18:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50442934/week-10-buzz-fantasy-predictions-graziano-fowler-2026-trades",
+        "https://sports.yahoo.com/nfl/article/the-top-5-biggest-impact-deadline-trades-including-jaguars-and-bears-shooting-for-a-super-bowl-222036590.html",
+        "https://www.nytimes.com/athletic/7771590/2026/11/11/nfl-trade-deadline-2026-winners-losers/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQn24Ypisn0SlKQSL52jiwW3LAyUPeMVNnANYSNuxz3Mm1q0oRLNt27AlqV65E",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50442934/week-10-buzz-fantasy-predictions-graziano-fowler-2026-trades",
+          "title": "NFL Week 10 latest intel, buzz questions, fantasy tips, post-trade deadline news",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQn24Ypisn0SlKQSL52jiwW3LAyUPeMVNnANYSNuxz3Mm1q0oRLNt27AlqV65E"
+        },
+        {
+          "url": "https://sports.yahoo.com/nfl/article/the-top-5-biggest-impact-deadline-trades-including-jaguars-and-bears-shooting-for-a-super-bowl-222036590.html",
+          "title": "The top 5 biggest impact deadline trades, including Jaguars and Bears shooting for a Super Bowl",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzJiYk1hszIEw94M6sFZhqZhzFc6f_NQTTq12Gl4cshRwjMfojJRnbmK23zjk"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7771590/2026/11/11/nfl-trade-deadline-2026-winners-losers/",
+          "title": "NFL trade deadline winners, losers: Vikings find QB, Jags go all-in, Jonathan Taylor stranded - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXU1WbBNBxC9vBxT-vGdbRwhihw3EbAAFY7DfL6cWaRQJtfeNB4wijaUj-Bow"
+        }
+      ]
+    },
+    {
+      "query": "los angeles lakers bronny james",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T18:00:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-sports/lebron-james-gone-bronny-still-cant-play-lakers-need-finally-cut-him-loose",
+        "https://basketnews.com/news-258829-former-no-1-nba-draft-pick-blasts-bronny-james-over-lakers-roster-spot.html",
+        "https://fadeawayworld.net/nba/los-angeles-lakers/kenyon-martin-defends-lebron-james-for-helping-bronny-reach-the-nba-despite-not-being-ready"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsG_lGeqpBGk_PeCQxbM5W1NAcsw6Gm8rStySrLRc2_Jq_HzhxBxkg1DZda2Q",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/outkick-sports/lebron-james-gone-bronny-still-cant-play-lakers-need-finally-cut-him-loose",
+          "title": "LeBron James is gone, Bronny still can't play, and the Lakers need to finally cut him loose",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsG_lGeqpBGk_PeCQxbM5W1NAcsw6Gm8rStySrLRc2_Jq_HzhxBxkg1DZda2Q"
+        },
+        {
+          "url": "https://basketnews.com/news-258829-former-no-1-nba-draft-pick-blasts-bronny-james-over-lakers-roster-spot.html",
+          "title": "Former No. 1 NBA Draft pick blasts Bronny James over Lakers roster spot",
+          "publisher": "BasketNews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT06AVSv59uNR99Cs9j6JNKF4zCE6veEssMcVzgDteYFpgmRIOoAsJ1Wk_YnGA"
+        },
+        {
+          "url": "https://fadeawayworld.net/nba/los-angeles-lakers/kenyon-martin-defends-lebron-james-for-helping-bronny-reach-the-nba-despite-not-being-ready",
+          "title": "Kenyon Martin Defends LeBron James For Helping Bronny Reach The NBA Despite Not Being Ready",
+          "publisher": "Fadeaway World",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9Le4qpAb2PiJKBm8PlzFa1tVoY8eKIUCzMXfFjg2_rGHNfcJxC5eKfJI4YY0"
+        }
+      ]
+    },
+    {
       "query": "landfill",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-11T17:40:00Z",
       "related_news_urls": [
         "https://www.newser.com/story/399741/bill-gates-landfill-investments-clash-with-his-climate-crusade.html",
@@ -46,33 +116,33 @@
       "approx_searches": "1000+",
       "published_at": "2026-11-11T17:30:00Z",
       "related_news_urls": [
-        "https://www.atptour.com/en/news/stockholm-2026-scouting-report",
-        "https://www.yardbarker.com/tennis/articles/davidovich_fokina_vacherot_and_berrettini_among_14_players_to_withdraw_from_stockholm_open/s1_17460_44526929",
-        "https://www.thetennisgazette.com/opinion/taylor-fritz-handed-bad-news-after-losing-to-carlos-alcaraz-in-paris-as-stockholm-draw-is-announced/"
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/767254ce-2a9b-4098-8b8f-c02fcf472131/",
+        "https://www.atptour.com/en/video/highlights-cerundolo-ousts-home-hope-ymer-earns-first-atp-tour-indoor-hard-win-stockholm-2026",
+        "https://www.skysports.com/tennis/watch/6539326264435598112/bybit-stockholm-open-2026"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4lJIvl9TuXj83uXKICkTZuIlxpYGXDASJQ1nNR3gXk3aF85H5KADi1B3bekY",
-      "image_credit": "ATP Tour",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQK4T3PS4v4pZc_K4i4TPU5NzKhNE52olz2QQPdSlCP_ubfbO9_sAOOpzY2UDA",
+      "image_credit": "Robinhood",
       "news": [
         {
-          "url": "https://www.atptour.com/en/news/stockholm-2026-scouting-report",
-          "title": "5 things to watch in Stockholm: Fritz, Ruud, Musetti & more",
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/767254ce-2a9b-4098-8b8f-c02fcf472131/",
+          "title": "November 12, 2026: Linda Noskova vs Jessica Pegula Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQK4T3PS4v4pZc_K4i4TPU5NzKhNE52olz2QQPdSlCP_ubfbO9_sAOOpzY2UDA"
+        },
+        {
+          "url": "https://www.atptour.com/en/video/highlights-cerundolo-ousts-home-hope-ymer-earns-first-atp-tour-indoor-hard-win-stockholm-2026",
+          "title": "Highlights: Cerundolo ousts home hope Ymer, earns first ATP Tour indoor hard win Stockholm 2026 | ATP Tour | Tennis",
           "publisher": "ATP Tour",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4lJIvl9TuXj83uXKICkTZuIlxpYGXDASJQ1nNR3gXk3aF85H5KADi1B3bekY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHc9Z7uy1vn5EQpuEVjOUFhNMTTs5dAkIfF_aqgSbepwjUswZBa01OM3KBTzg"
         },
         {
-          "url": "https://www.yardbarker.com/tennis/articles/davidovich_fokina_vacherot_and_berrettini_among_14_players_to_withdraw_from_stockholm_open/s1_17460_44526929",
-          "title": "Davidovich Fokina, Vacherot and Berrettini among 14 players to withdraw from Stockholm Open",
-          "publisher": "Yardbarker",
+          "url": "https://www.skysports.com/tennis/watch/6539326264435598112/bybit-stockholm-open-2026",
+          "title": "Sports News, Transfers, Scores | Watch Live Sport",
+          "publisher": "Sky Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQwJ-AgBdbljC4phWVV4OrujtKzo9gFJ75d_wTZdvgbf6mCU_8-xvGfa6XV_k"
-        },
-        {
-          "url": "https://www.thetennisgazette.com/opinion/taylor-fritz-handed-bad-news-after-losing-to-carlos-alcaraz-in-paris-as-stockholm-draw-is-announced/",
-          "title": "Taylor Fritz handed bad news after losing to Carlos Alcaraz in Paris as Stockholm draw is announced",
-          "publisher": "The Tennis Gazette",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqtJ3gC85ml-SoYl-3VlrkP0Dh4uZAizCMcxK2rXnZRCPlbTvl1DlUeQzz-OM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkoMFiM3npO8n6pKywMQv3eC98yguApLgFNiYh657bdrwFhzoZcRVF3-Ng7Xc"
         }
       ]
     },
@@ -117,7 +187,7 @@
       "published_at": "2026-11-11T17:20:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/2026/11/11/us/politics/trump-democrats-congress-oversight-committee.html",
-        "https://www.nbclosangeles.com/news/politics/white-house-democrats-planned-probes-criminality/3968967/",
+        "https://www.politico.com/live-updates/2026/11/11/congress/white-house-puts-garcia-on-notice-01160683",
         "https://www.cnn.com/2026/11/11/politics/live-news/hegseth-impeachment-congress"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTCT-eWrVa1cTKjxYXeyimkaZw6bjF6Xm4-rzN7lTeCwNCO7VOMX5c4SwTOuE",
@@ -131,11 +201,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTCT-eWrVa1cTKjxYXeyimkaZw6bjF6Xm4-rzN7lTeCwNCO7VOMX5c4SwTOuE"
         },
         {
-          "url": "https://www.nbclosangeles.com/news/politics/white-house-democrats-planned-probes-criminality/3968967/",
-          "title": "White House lawyer warns Democrats that threats of oversight are ‘blatant criminality'",
-          "publisher": "NBC Los Angeles",
+          "url": "https://www.politico.com/live-updates/2026/11/11/congress/white-house-puts-garcia-on-notice-01160683",
+          "title": "White House threatens criminal investigation into Democrats’ oversight efforts",
+          "publisher": "Politico",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4y2HARA0ggnCPv6K_Eq1og-Fq1CxJ1ZyqaiuEeWmJsvxkz2lkF88pd8OuKQA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4J90SoLaXo6RejLrM3eDNwcPWCwFiLd25e-0Gxgn4swHSJNfxRED9nVV5D5w"
         },
         {
           "url": "https://www.cnn.com/2026/11/11/politics/live-news/hegseth-impeachment-congress",
@@ -148,12 +218,12 @@
     },
     {
       "query": "applebees menu",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-11T17:10:00Z",
       "related_news_urls": [
         "https://finance.yahoo.com/small-business/articles/applebee-menu-innovation-pipeline-boosting-152618923.html",
         "https://www.applebees.com/en/news/2026/veterans-day",
-        "https://www.cbsnews.com/miami/video/south-florida-events-held-to-mark-veterans-day/"
+        "https://www.clickondetroit.com/news/local/2026/11/11/these-metro-detroit-businesses-are-offering-freebies-for-military-members-this-veterans-day/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPNnn_oSI3Q0kwi8H2EPEIC3n_kK4NkiYM0LgdlV_409VHqqb3D2qZExqnSGw",
       "image_credit": "Yahoo Finance",
@@ -173,32 +243,39 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXlCs38FbMbLzMNIJpvRMPuwFbg_nZ8si5FdNY84hLXzXhF0eEey8COH-nHr8"
         },
         {
-          "url": "https://www.cbsnews.com/miami/video/south-florida-events-held-to-mark-veterans-day/",
-          "title": "South Florida events held to mark Veterans Day",
-          "publisher": "CBS News",
+          "url": "https://www.clickondetroit.com/news/local/2026/11/11/these-metro-detroit-businesses-are-offering-freebies-for-military-members-this-veterans-day/",
+          "title": "These Metro Detroit businesses are offering freebies for military members this Veterans Day",
+          "publisher": "ClickOnDetroit | WDIV Local 4",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKf74UgVomJ5sqo8sXmKNgaGm82XzPdlghf_Obp9TWffbrsJ3DUPbeFa-Hw5U"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRlPraHzWpvwSmJ_VSajHG7wf4tsZhlyCBoMdelpS1JZWEf7q50e6dn5gboPM"
         }
       ]
     },
     {
       "query": "russian ambassador to us",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-11T17:00:00Z",
       "related_news_urls": [
         "https://www.cnn.com/2026/11/11/europe/russian-ambassador-to-us-dies-intl",
-        "https://abcnews.com/Politics/alexander-darchiev-russias-ambassador-united-states-dead-66/story?id=138048433",
-        "https://www.themoscowtimes.com/2026/11/11/russian-ambassador-to-the-united-states-dies-a94232"
+        "https://www.theguardian.com/world/2026/nov/11/russia-ambassador-dies-alexander-darchiev",
+        "https://abcnews.com/Politics/alexander-darchiev-russias-ambassador-united-states-dead-66/story?id=138048433"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS459bPJhEdzSmSetg6H-7EqmfuzcjNOXthyZgitO0c098lPSEPcBGjK3QMWXs",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDtk-aLfa0M3eH_-1rIbt03IWhhi2Us_mz3aKt_SfJ916LAtP-KUNf2l9ORLE",
       "image_credit": "CNN",
       "news": [
         {
           "url": "https://www.cnn.com/2026/11/11/europe/russian-ambassador-to-us-dies-intl",
-          "title": "Russian ambassador to US dies, foreign ministry says",
+          "title": "Russian ambassador to US dies suddenly, foreign ministry says",
           "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS459bPJhEdzSmSetg6H-7EqmfuzcjNOXthyZgitO0c098lPSEPcBGjK3QMWXs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDtk-aLfa0M3eH_-1rIbt03IWhhi2Us_mz3aKt_SfJ916LAtP-KUNf2l9ORLE"
+        },
+        {
+          "url": "https://www.theguardian.com/world/2026/nov/11/russia-ambassador-dies-alexander-darchiev",
+          "title": "Russia’s ambassador to the United States dies, aged 66",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvuDMO8YoUgItc2y_DEgGsqkkX4qyRvABuuSb_f7J14p33tIBWX87J3y1A7lk"
         },
         {
           "url": "https://abcnews.com/Politics/alexander-darchiev-russias-ambassador-united-states-dead-66/story?id=138048433",
@@ -206,19 +283,12 @@
           "publisher": "ABC News - Breaking News, Latest News and Videos",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqONMHCgvKYE5nPt453Fxwpmdl60X7OdFlEllnCLGNRCygupkbwBkYuqu657k"
-        },
-        {
-          "url": "https://www.themoscowtimes.com/2026/11/11/russian-ambassador-to-the-united-states-dies-a94232",
-          "title": "Russian Ambassador to the United States Dies",
-          "publisher": "The Moscow Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQK13_1qpvqVgYLAGPmS2bbqYfxtj2xMzocmQRpLY-WPv7l1IyW4XYRAdvI2C4"
         }
       ]
     },
     {
       "query": "chipotle tattoo deal",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-11T17:00:00Z",
       "related_news_urls": [
         "https://newsroom.chipotle.com/2026-11-09-CHIPOTLE-BRINGS-BACK-RECORD-BREAKING-TATTED-LIKE-A-CHIPOTLE-BAG-BOGO-ON-FRIDAY,-NOVEMBER-13",
@@ -283,76 +353,6 @@
           "publisher": "TheStreet",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUllmmrg_1SAj4AuZIow-q7ynE0n6iHvq_coCMZEajxGaUSE0UPfcf8EVMVsA"
-        }
-      ]
-    },
-    {
-      "query": "rex ryan",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-11T16:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nfl/article/espn-analyst-rex-ryan-arrested-after-allegedly-striking-2-pedestrians-with-his-truck-running-over-their-feet-170156903.html",
-        "https://www.nashville.gov/departments/police/news/former-nfl-coach-surrendered-booking-morning",
-        "https://www.wsmv.com/2026/11/11/former-nfl-coach-rex-ryan-facing-charges-after-truck-allegedly-hit-pedestrians-nashville-police-say/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNRVsH2QrxwWs4QePxmkSCk0_yIe4zimIC8YvhiG_XZbm1Iam_UVt_fyHyWgo",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/nfl/article/espn-analyst-rex-ryan-arrested-after-allegedly-striking-2-pedestrians-with-his-truck-running-over-their-feet-170156903.html",
-          "title": "ESPN analyst Rex Ryan arrested after allegedly striking 2 pedestrians with his truck, running over their feet",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNRVsH2QrxwWs4QePxmkSCk0_yIe4zimIC8YvhiG_XZbm1Iam_UVt_fyHyWgo"
-        },
-        {
-          "url": "https://www.nashville.gov/departments/police/news/former-nfl-coach-surrendered-booking-morning",
-          "title": "Former NFL Coach surrendered for booking this morning",
-          "publisher": "Nashville.gov",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7HkwDvGnMEKkoaMxLXS1qcosFh4g_TIzMQYOIBKCe__l7999SaUkd7A3ny9M"
-        },
-        {
-          "url": "https://www.wsmv.com/2026/11/11/former-nfl-coach-rex-ryan-facing-charges-after-truck-allegedly-hit-pedestrians-nashville-police-say/",
-          "title": "Former NFL coach Rex Ryan facing charges after truck allegedly hit pedestrians in Nashville, police say",
-          "publisher": "WSMV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqKS4BhC2RXLL5UsRNRAvnmfL7sNxstFVjQDYhjodAMjpTtsWJwdeOjBVyWUI"
-        }
-      ]
-    },
-    {
-      "query": "east texas a&m basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T16:30:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/betting/news/fairleigh-dickinson-east-texas-a-m-prediction-odds-time-2026-college-basketball-picks-november-11/",
-        "https://www.foxsports.com/articles/cbk/diakite-leads-east-texas-am-against-fairleigh-dickinson-after-23point-game",
-        "https://www.sportsline.com/insiders/fairleigh-dickinson-vs-east-texas-a-m-odds-proven-model-reveals-2026-college-basketball-picks-for-wednesday-matchup/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5ECgrqjxmXcSjzYGXnrTHQ68mTwtfaPJlRsJxubAjvC1gelNH6TWaLvSVekk",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/betting/news/fairleigh-dickinson-east-texas-a-m-prediction-odds-time-2026-college-basketball-picks-november-11/",
-          "title": "Fairleigh Dickinson vs. East Texas A&M prediction, odds: 2026 college basketball picks by proven model",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5ECgrqjxmXcSjzYGXnrTHQ68mTwtfaPJlRsJxubAjvC1gelNH6TWaLvSVekk"
-        },
-        {
-          "url": "https://www.foxsports.com/articles/cbk/diakite-leads-east-texas-am-against-fairleigh-dickinson-after-23point-game",
-          "title": "Diakite leads East Texas A&M against Fairleigh Dickinson after 23-point game",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4s4BZOkTNXN3YIPa9D2mGE41CMQSYHPibv39-9pCCL84ruNU6IK4Wzep74lk"
-        },
-        {
-          "url": "https://www.sportsline.com/insiders/fairleigh-dickinson-vs-east-texas-a-m-odds-proven-model-reveals-2026-college-basketball-picks-for-wednesday-matchup/",
-          "title": "Fairleigh Dickinson vs. East Texas A&M odds: Proven model reveals 2026 college basketball picks for Wednesday matchup",
-          "publisher": "SportsLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwUO-7Ym35HgW5TdKBcBAL7RCasia1FSDP6vfZD5PivaGWBVJk1vzYL9vyWTc"
         }
       ]
     }
