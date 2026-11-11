@@ -3,322 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T04:01:26.060044Z",
+  "checked_at": "2026-11-11T04:31:20.120714Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ryan weiss",
+      "query": "nancy pelosi",
       "approx_searches": "500+",
-      "published_at": "2026-11-11T03:40:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
-    },
-    {
-      "query": "la kings",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T03:40:00Z",
+      "published_at": "2026-11-11T04:10:00Z",
       "related_news_urls": [
-        "https://lakingsinsider.com/2026/11/10/11-10-preview-zuccarello-to-play-tonight-ceci-in-gustafsson-out-day-to-day-laviolette-on-communication-special-teams-impact/",
-        "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-10-2026",
-        "https://sports.yahoo.com/articles/nashville-predators-los-angeles-kings-220142581.html"
+        "https://thehill.com/homenews/house/6211133-pelosi-advises-against-kicking-stevens-out-of-house-democratic-caucus/",
+        "https://www.cbsnews.com/detroit/video/rep-nancy-pelosi-speaks-out-against-expelling-haley-stevens/",
+        "https://www.washingtonpost.com/politics/2026/11/10/pelosi-does-not-support-kicking-rep-haley-stevens-out-democratic-caucus/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBrGxaMzEBZDNmaINKDK531SL-HUjiI2QksKeJZl7nHsLFMsx3hmi8G8NI2XI",
-      "image_credit": "LA Kings Insider",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOpjjUyAQa2vEhKXqj5RXK-JNtQmM43jv3InyO-vyGO_YczEZYyFrX-rmy4Hg",
+      "image_credit": "The Hill",
       "news": [
         {
-          "url": "https://lakingsinsider.com/2026/11/10/11-10-preview-zuccarello-to-play-tonight-ceci-in-gustafsson-out-day-to-day-laviolette-on-communication-special-teams-impact/",
-          "title": "11/10 Preview - Zuccarello To Play Tonight + Ceci In, Gustafsson out \"day-to-day\", Laviolette on communication, special teams impact",
-          "publisher": "LA Kings Insider",
+          "url": "https://thehill.com/homenews/house/6211133-pelosi-advises-against-kicking-stevens-out-of-house-democratic-caucus/",
+          "title": "Pelosi advises against kicking Stevens out of House Democratic caucus",
+          "publisher": "The Hill",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBrGxaMzEBZDNmaINKDK531SL-HUjiI2QksKeJZl7nHsLFMsx3hmi8G8NI2XI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOpjjUyAQa2vEhKXqj5RXK-JNtQmM43jv3InyO-vyGO_YczEZYyFrX-rmy4Hg"
         },
         {
-          "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-10-2026",
-          "title": "NHL On Tap: Josi one point from 800 when Predators visit Kings",
-          "publisher": "NHL.com",
+          "url": "https://www.cbsnews.com/detroit/video/rep-nancy-pelosi-speaks-out-against-expelling-haley-stevens/",
+          "title": "Rep. Nancy Pelosi speaks out against expelling Haley Stevens",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREIu1CxLJO_jgZUsIT8-HK_9LkIxH59GxurXLA0Gd7Y9m-F7tx05HPZ5FFms4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRMb56IGl4SSF924Kfr0dmmVHzYr2lLVO91R2KkBRmAaG56aBuU3qS-qtgk8w"
         },
         {
-          "url": "https://sports.yahoo.com/articles/nashville-predators-los-angeles-kings-220142581.html",
-          "title": "Nashville Predators at Los Angeles Kings: Game Central, How To Watch, Injury Updates",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.washingtonpost.com/politics/2026/11/10/pelosi-does-not-support-kicking-rep-haley-stevens-out-democratic-caucus/",
+          "title": "Pelosi does not support kicking Rep. Haley Stevens out of Democratic caucus",
+          "publisher": "The Washington Post",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJh7Z86-KigofBoeTRwCi5JUxFEbTPinCAc9suyBePGxZeVu4a5M2EcvwTMSU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_ZYnNopVyZflLIGn3yqOr2Rd1ud0Chvotx_AFyPw6hxqLoNolmg6XMDcMkoE"
         }
       ]
     },
     {
-      "query": "pelle larsson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T03:40:00Z",
+      "query": "weather houston",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T04:10:00Z",
       "related_news_urls": [
-        "https://bleacherreport.com/articles/25530902-new-nba-rumors-update-kevin-porter-jrs-potential-landing-spots-after-bucks-exit",
-        "https://allucanheat.com/tim-hardaway-jr-s-struggles-may-push-heat-toward-desperate-kevin-porter-jr-gamble",
-        "https://behindthebuckpass.com/miami-easily-kevin-porter-jr-best-path-bucks-exit"
+        "https://www.click2houston.com/news/local/2026/11/08/live-radar-showers-and-moderate-rain-moving-into-southeast-texas/",
+        "https://www.khou.com/article/weather/houston-texas-weather-forecast-update/285-eef90a85-8b4b-472f-b573-d23213b4f4b1",
+        "https://spacecityweather.com/houston-may-see-some-not-so-cold-november-rain-also-our-annual-fundraiser-kicks-off-today/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmAiXY3uJFIaa0xbwMTJecmHz0gakajuCNtIrOa-XtgQy8fos6e7LLBLwWQMc",
-      "image_credit": "Bleacher Report",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGuEdiog4uGcO1RSsHzp-wy-oh5DSa8apP4nVvFO4iKv70d0JYwjp4gDdWBYI",
+      "image_credit": "Click2Houston",
       "news": [
         {
-          "url": "https://bleacherreport.com/articles/25530902-new-nba-rumors-update-kevin-porter-jrs-potential-landing-spots-after-bucks-exit",
-          "title": "New NBA Rumors Update Kevin Porter Jr.'s Potential Landing Spots After Bucks Exit",
-          "publisher": "Bleacher Report",
+          "url": "https://www.click2houston.com/news/local/2026/11/08/live-radar-showers-and-moderate-rain-moving-into-southeast-texas/",
+          "title": "LIVE RADAR: Heavier storms moving into Houston area",
+          "publisher": "Click2Houston",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmAiXY3uJFIaa0xbwMTJecmHz0gakajuCNtIrOa-XtgQy8fos6e7LLBLwWQMc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGuEdiog4uGcO1RSsHzp-wy-oh5DSa8apP4nVvFO4iKv70d0JYwjp4gDdWBYI"
         },
         {
-          "url": "https://allucanheat.com/tim-hardaway-jr-s-struggles-may-push-heat-toward-desperate-kevin-porter-jr-gamble",
-          "title": "Tim Hardaway Jr.’s struggles may push Heat toward desperate Kevin Porter Jr. gamble",
-          "publisher": "All U Can Heat",
+          "url": "https://www.khou.com/article/weather/houston-texas-weather-forecast-update/285-eef90a85-8b4b-472f-b573-d23213b4f4b1",
+          "title": "Weather Impact Alert: Heavy downpours could cause ponding during evening, morning commutes",
+          "publisher": "KHOU",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT99MoC1f1i0STOFUaTl6U9aM-CnSx2vdO_nTxvAilKfgZI9z8nuzurDKxvTxw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT69nPlx5xsUvdEqIduMKXJB5vDCZ_9XN0o9KBRt_jeYvOGRneUdQ9zZBDKHp0"
         },
         {
-          "url": "https://behindthebuckpass.com/miami-easily-kevin-porter-jr-best-path-bucks-exit",
-          "title": "Miami is easily Kevin Porter Jr.'s best path forward after messy Bucks exit",
-          "publisher": "Behind the Buck Pass",
+          "url": "https://spacecityweather.com/houston-may-see-some-not-so-cold-november-rain-also-our-annual-fundraiser-kicks-off-today/",
+          "title": "Houston may see some not-so-cold November rain, also our annual fundraiser kicks off today",
+          "publisher": "Space City Weather",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFLYpwnw_sJ0uI9pFzfbLvDiIZWxwXy8J3ig4XFpqTlUcpSDUctDgOjWEzdyo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Bal_03eIhWe9O3rloK0be7P2uOpha77ic8_zNKnCCrij783epCi_ImnL8gw"
         }
       ]
     },
     {
-      "query": "igf games",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-11T03:40:00Z",
+      "query": "jakob chychrun",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T04:10:00Z",
       "related_news_urls": [
-        "https://aftermath.site/big-walk-ai-igf-jurors-controversy/",
-        "https://www.gamesindustry.biz/house-house-clarifies-use-of-ai-tools-in-big-walks-final-stage-of-development",
-        "https://www.theverge.com/games/1030994/big-walk-independent-games-festival-igf-ai"
+        "https://www.espn.com/nhl/recap?gameId=401892685",
+        "https://www.nhl.com/news/washington-capitals-ottawa-senators-game-recap-november-10-2026",
+        "https://sports.yahoo.com/articles/hutsons-overtime-goal-gives-capitals-025824317.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9976bLrVZZ5AMVCcuDS_I1DzbJ92atEFRALbFWBspC9MYfyIfbzwQ-Y3eoGI",
-      "image_credit": "Aftermath",
-      "news": [
-        {
-          "url": "https://aftermath.site/big-walk-ai-igf-jurors-controversy/",
-          "title": "Big Walk Used AI In 'The Final Stretch' Of Development, Kicking Off Intense Awards Debate",
-          "publisher": "Aftermath",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9976bLrVZZ5AMVCcuDS_I1DzbJ92atEFRALbFWBspC9MYfyIfbzwQ-Y3eoGI"
-        },
-        {
-          "url": "https://www.gamesindustry.biz/house-house-clarifies-use-of-ai-tools-in-big-walks-final-stage-of-development",
-          "title": "House House clarifies use of AI tools in Big Walk's \"final stage of development\"",
-          "publisher": "GamesIndustry.biz",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMisnedsI-MoSXj0CT_O3T3CblHtCT-HC2kcQeMj_MxK9ypgN8ERGWQrPYX1c"
-        },
-        {
-          "url": "https://www.theverge.com/games/1030994/big-walk-independent-games-festival-igf-ai",
-          "title": "The indie game community is in disarray over AI and Big Walk",
-          "publisher": "The Verge",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW9fZC8Y6fLPwJwF85tsHVcvtBvX1wTg6HoPu21zK37lkkh9SnRKluRFIyrmk"
-        }
-      ]
-    },
-    {
-      "query": "cameron diaz",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T03:40:00Z",
-      "related_news_urls": [
-        "https://www.darkhorizons.com/trailer-cameron-diaz-in-netflixs-bad-day/",
-        "https://variety.com/2026/film/news/bad-day-trailer-cameron-diaz-netflix-1236939650/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe11XGRin0gW9QFGegmb0N1Aaen-lmSqDYaupAdrffm__jDixg01LnRo1MEQU",
-      "image_credit": "Dark Horizons",
-      "news": [
-        {
-          "url": "https://www.darkhorizons.com/trailer-cameron-diaz-in-netflixs-bad-day/",
-          "title": "Trailer: Cameron Diaz In Netflix’s “Bad Day”",
-          "publisher": "Dark Horizons",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe11XGRin0gW9QFGegmb0N1Aaen-lmSqDYaupAdrffm__jDixg01LnRo1MEQU"
-        },
-        {
-          "url": "https://variety.com/2026/film/news/bad-day-trailer-cameron-diaz-netflix-1236939650/",
-          "title": "‘Bad Day’ Trailer: Cameron Diaz Is a Single Mom Who Accidentally Robs a Bank in Netflix Comedy",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMYpPK65bFj_jAPSOBDhlAOCx9JDlPwe8EKoYngNc_HzU5Y6npKjOnYIVQfwQ"
-        }
-      ]
-    },
-    {
-      "query": "bill self",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T03:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909785",
-        "https://www.kansascity.com/sports/college/big-12/university-of-kansas/article317965491.html",
-        "https://www2.kusports.com/sports/college/basketball-men/2026/nov/05/preview-ku-continues-opening-week-against-middle-tennessee/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGCT4wGMUM6f2ZcXHpv-r9MTR_WAIfsDSndWRUX3e0k0Pg8ksa5oKqovxVddw",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0TMcEPa7t-WiigsZqSQ3PV1BaxH0W1odXiYqdvP_wuTmeiZWZW3BWf7EQjPo",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909785",
-          "title": "Kansas 89-45 Middle Tennessee (Nov 6, 2026) Game Recap",
+          "url": "https://www.espn.com/nhl/recap?gameId=401892685",
+          "title": "Capitals 3-2 Senators (Nov 10, 2026) Game Recap",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGCT4wGMUM6f2ZcXHpv-r9MTR_WAIfsDSndWRUX3e0k0Pg8ksa5oKqovxVddw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0TMcEPa7t-WiigsZqSQ3PV1BaxH0W1odXiYqdvP_wuTmeiZWZW3BWf7EQjPo"
         },
         {
-          "url": "https://www.kansascity.com/sports/college/big-12/university-of-kansas/article317965491.html",
-          "title": "Kansas Jayhawks crush MTSU in hoops. Jayhawks’ attention shifts to Kentucky next",
-          "publisher": "Kansas City Star",
+          "url": "https://www.nhl.com/news/washington-capitals-ottawa-senators-game-recap-november-10-2026",
+          "title": "Hutson scores in OT, Capitals rally past Senators",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7yX0AVAYI8pKuauEorDwhOzLlzrdFwtEDBT7LYETwyjxU2LO7aeF0gWMK52k"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYTHHyf3nstwtetMnAyd1-bDFNQXct4KsdXbxOFzHuVRckZ0eKOHkzTVpyVqk"
         },
         {
-          "url": "https://www2.kusports.com/sports/college/basketball-men/2026/nov/05/preview-ku-continues-opening-week-against-middle-tennessee/",
-          "title": "Preview: KU continues opening week against Middle Tennessee",
-          "publisher": "KU Sports",
+          "url": "https://sports.yahoo.com/articles/hutsons-overtime-goal-gives-capitals-025824317.html",
+          "title": "Hutson's Overtime Goal Gives Capitals A 3-2 Win Over Senators",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGT6JR6SanAu_evKG8kRwKqmx-oMvNlCZ4jp9gBRQTVGpIvxz_ZZ_SVU7fVlQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSK2wfeO5OK37SWNcAn9pvvc0s6Jq9pNeyKNNNC3Metp43IjpCTSUkTH4HHJYs"
         }
       ]
     },
     {
-      "query": "kings game",
+      "query": "mega millions drawing",
       "approx_searches": "200+",
-      "published_at": "2026-11-11T03:40:00Z",
+      "published_at": "2026-11-11T04:10:00Z",
       "related_news_urls": [
-        "https://www.si.com/betting/magic-vs-kings-prediction-odds-and-best-nba-prop-bets-for-tuesday-nov-10-2026",
-        "https://kingsherald.com/articles/kings-vs-magic-preview-can-we-finally-win-at-home/",
-        "https://orlandomagic.com/news/orlando-magic-sacramento-kings-game-preview-injury-report-20261110"
+        "https://www.detroitnews.com/story/news/lottery/2026/11/10/mega-millions-numbers-for-tuesday-november-10/92719695007/",
+        "https://www.usatoday.com/story/money/lottery/2026/11/10/mega-millions-jackpot-nov-10-2026/92714614007/",
+        "https://www.yahoo.com/news/us/articles/mega-millions-winning-numbers-tuesday-033031266.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHfEfkdbmoeJNDqiE0qk7TTaFbzrRiTagjiunI7QrzlerHTldrfkWOJ06DHqE",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_LNbGuwqVWmE6mtOtcZwk3lTOfTfQfZPokiVdDCmG80z2DlSHCbRucxRbsvk",
+      "image_credit": "The Detroit News",
+      "news": [
+        {
+          "url": "https://www.detroitnews.com/story/news/lottery/2026/11/10/mega-millions-numbers-for-tuesday-november-10/92719695007/",
+          "title": "Mega Millions numbers for Tuesday, Nov. 10",
+          "publisher": "The Detroit News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_LNbGuwqVWmE6mtOtcZwk3lTOfTfQfZPokiVdDCmG80z2DlSHCbRucxRbsvk"
+        },
+        {
+          "url": "https://www.usatoday.com/story/money/lottery/2026/11/10/mega-millions-jackpot-nov-10-2026/92714614007/",
+          "title": "Mega Millions jackpot hits $529M for Nov. 10 drawing. What to know",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9UsvlC_Nv04h28xpU0Bnfn_e4sr-pZxnMza6kx9N8Na3mM9PjOMxLaVoizIs"
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/articles/mega-millions-winning-numbers-tuesday-033031266.html",
+          "title": "Mega Millions winning numbers for Tuesday, Nov. 10. Check your tickets",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrDEZ_hCj8XXhTqDQ51VdaWhfmma4NH5E9ntMUEKxjbe67bcnlh55kpgzEr9E"
+        }
+      ]
+    },
+    {
+      "query": "usc women's basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T04:10:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/womens-college-basketball/news/juju-watkins-returns-as-south-carolina-and-usc-meet-again-in-a-fast-growing-rivalry",
+        "https://sports.yahoo.com/articles/uscs-juju-watkins-saniyah-hall-013551144.html",
+        "https://247sports.com/college/usc/article/usc-women-of-troy-guard-juju-watkins-national-player-of-the-week-usbwa-associated-press-292535737/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfeqcNbP6Jxc1Tx4JYavgdzQhrBG3CFveSLspphEVaJjkD8KxjqosrA_teBZo",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/womens-college-basketball/news/juju-watkins-returns-as-south-carolina-and-usc-meet-again-in-a-fast-growing-rivalry",
+          "title": "JuJu Watkins returns as South Carolina and USC meet again in a fast-growing rivalry",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfeqcNbP6Jxc1Tx4JYavgdzQhrBG3CFveSLspphEVaJjkD8KxjqosrA_teBZo"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/uscs-juju-watkins-saniyah-hall-013551144.html",
+          "title": "USC's Juju Watkins, Saniyah Hall earn Big Ten honors for opening week",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpXhLQAK6ljcASQdti_UB0mPjxKDFmR3RZXDiojRWzXBcfWVl2tBc_9LV6ul0"
+        },
+        {
+          "url": "https://247sports.com/college/usc/article/usc-women-of-troy-guard-juju-watkins-national-player-of-the-week-usbwa-associated-press-292535737/",
+          "title": "USC's JuJu Watkins earns National Player of the Week honors",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIJZuYCTBE6e6qFufHtY0b4sTnp6wz2MIhBqwuV8BRIaSDnPRt7M3XQhMvmEY"
+        }
+      ]
+    },
+    {
+      "query": "isaiah hartenstein",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T04:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/probably-just-playing-team-think-210056499.html",
+        "https://www.si.com/nba/thunder/onsi/isaiah-hartenstein-continues-to-fill-his-role-perfectly",
+        "https://www.fantasypros.com/nba/news/617974/isaiah-hartenstein-racks-up-12-boards-win.php"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS04qWr60sv6OOSGy2nqaobk1tFp3aAPK66AMETNDeazz4UgcYull2NisYnKJM",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/probably-just-playing-team-think-210056499.html",
+          "title": "“Probably just playing as a team. I think we’ve done a …",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS04qWr60sv6OOSGy2nqaobk1tFp3aAPK66AMETNDeazz4UgcYull2NisYnKJM"
+        },
+        {
+          "url": "https://www.si.com/nba/thunder/onsi/isaiah-hartenstein-continues-to-fill-his-role-perfectly",
+          "title": "Isaiah Hartenstein Continues To Fill His Role Perfectly",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-viZpgMLDd5KDPehJcOjm2a7XZCzIAP8JZiYLUEicNZdJtM0NcOL70UkzTWA"
+        },
+        {
+          "url": "https://www.fantasypros.com/nba/news/617974/isaiah-hartenstein-racks-up-12-boards-win.php",
+          "title": "Isaiah Hartenstein racks up 12 boards in win",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG3ePMfGx_UErN6ixj8QRFfsCsgKslhttSmfS-YEGdkDhyFt_Mo_196D0SGyA"
+        }
+      ]
+    },
+    {
+      "query": "trump usda snap benefits change",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T04:10:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/10/trump-administration-moves-to-cut-food-stamps-for-6point3-million-people.html",
+        "https://thehill.com/homenews/administration/6211586-usda-snap-eligibility-proposal/",
+        "https://www.nytimes.com/2026/11/10/us/snap-eligibility-food-stamps-trump.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNS283YXwXDnSnC-Q61SuR2-n5d30kbr4i6O5kkk8G-hbhwGj5XsnHiSojfgA",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/10/trump-administration-moves-to-cut-food-stamps-for-6point3-million-people.html",
+          "title": "Trump administration moves to cut food stamps for 6.3 million people",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNS283YXwXDnSnC-Q61SuR2-n5d30kbr4i6O5kkk8G-hbhwGj5XsnHiSojfgA"
+        },
+        {
+          "url": "https://thehill.com/homenews/administration/6211586-usda-snap-eligibility-proposal/",
+          "title": "New USDA proposal moves to kick millions from SNAP",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgUsltvVfUqpD1f9o9jkEEU6LKKRS9qOxtpNQ0Da21zrOs0TYUFkndiKtU5eA"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/10/us/snap-eligibility-food-stamps-trump.html",
+          "title": "Trump Administration Moves to Further Limit SNAP Eligibility, Affecting Millions",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE0dIIA-baXAlWtI7N6vgkCxKUWRCJ8Rh6lF_STOioav6546FHojoDmPalPpw"
+        }
+      ]
+    },
+    {
+      "query": "49ers stadium",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T04:10:00Z",
+      "related_news_urls": [
+        "https://abc7news.com/post/san-francisco-49ers-las-vegas-raiders-fans-ejected-arrested-violent-fights-levis-stadium-santa-clara-police/20029103/",
+        "https://www.mercurynews.com/2026/11/10/arrest-made-in-unconscious-mans-beating-at-49ers-raiders-game/",
+        "https://www.nbcbayarea.com/news/local/levis-stadium-fight-video-arrest/4173833/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRC3q65PrUmY9RYOZCVbO1WfRqPFflv4H0i_lqoXYvH8mZradYnvlRot2KNwLE",
+      "image_credit": "ABC7 Bay Area",
+      "news": [
+        {
+          "url": "https://abc7news.com/post/san-francisco-49ers-las-vegas-raiders-fans-ejected-arrested-violent-fights-levis-stadium-santa-clara-police/20029103/",
+          "title": "San Francisco 49ers and Las Vegas Raiders fans ejected, arrested after violent fights at Levi's Stadium: Santa Clara police",
+          "publisher": "ABC7 Bay Area",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRC3q65PrUmY9RYOZCVbO1WfRqPFflv4H0i_lqoXYvH8mZradYnvlRot2KNwLE"
+        },
+        {
+          "url": "https://www.mercurynews.com/2026/11/10/arrest-made-in-unconscious-mans-beating-at-49ers-raiders-game/",
+          "title": "Arrest made in unconscious man’s beating at 49ers-Raiders game",
+          "publisher": "The Mercury News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxXD8dhN1dI1GJQWGy5LbL-C_2GVBEmKvpMFyZHbnYyHCpcf2a8-o3WFPiiRI"
+        },
+        {
+          "url": "https://www.nbcbayarea.com/news/local/levis-stadium-fight-video-arrest/4173833/",
+          "title": "Police arrest man seen in video attacking unconscious person at Levi's Stadium parking lot",
+          "publisher": "NBC Bay Area",
+          "description": "",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "query": "okc",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-11T04:00:00Z",
+      "related_news_urls": [
+        "https://www.koco.com/article/oklahoma-city-homicide-deadly-shooting-burton-wesley-morris/74387029",
+        "https://kfor.com/news/local/police-investigating-fatal-shooting-at-nw-oklahoma-city-apartment-complex/",
+        "https://www.news9.com/crime/man-found-shot-police-northwest-oklahoma-city-apartment-investigation"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRo_h2T_DAVoyJY7wOmekb7fqyTykcpAr_2SLEjvHUWR1W6wWIMfDQmnOBxwk8",
+      "image_credit": "KOCO",
+      "news": [
+        {
+          "url": "https://www.koco.com/article/oklahoma-city-homicide-deadly-shooting-burton-wesley-morris/74387029",
+          "title": "Homicide investigation underway after shooting victim found dead at OKC apartment complex",
+          "publisher": "KOCO",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRo_h2T_DAVoyJY7wOmekb7fqyTykcpAr_2SLEjvHUWR1W6wWIMfDQmnOBxwk8"
+        },
+        {
+          "url": "https://kfor.com/news/local/police-investigating-fatal-shooting-at-nw-oklahoma-city-apartment-complex/",
+          "title": "Police investigating fatal shooting at NW Oklahoma City apartment complex",
+          "publisher": "KFOR",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzvpbe4eX27OYyQeTnj_tYDmDOx92FSYNoFCvugeFyQwPcdvpaMf0pbkcHhEw"
+        },
+        {
+          "url": "https://www.news9.com/crime/man-found-shot-police-northwest-oklahoma-city-apartment-investigation",
+          "title": "Man found shot to death outside northwest Oklahoma City apartment",
+          "publisher": "News 9",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8qMVHy87m-jcZmW78lhcKajPPbpGjoas4zYeVhKUk1soLsJEWPy8d2NUj5ik"
+        }
+      ]
+    },
+    {
+      "query": "pumas - tigres uanl",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T04:00:00Z",
+      "related_news_urls": [
+        "https://www.si.com/mx/liga-mx/liga-femenil-tigres-derroto-3-2-a-pumas-en-el-inicio-de-la-liguilla",
+        "https://www.elnorte.com/vamos-por-la-final-diana-ordonez/ar3311367?grrecs=1&widget=portadasecciontrending-elnorte-cancha&reftype=portada&ckrecommendationid=RID-5f-4c9d-9d16-4fc711f7fd40-CID-f7e61c",
+        "https://gamavision.com/noticias/amazonas-inician-el-camino-rumbo-al-campeonato-en-cu"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThJC6Q1KGELWjUR1T2m-PXtLQOXg85Gmm5NITkIchHQpDe8ASsEmhTKqzY4G4",
       "image_credit": "Sports Illustrated",
       "news": [
         {
-          "url": "https://www.si.com/betting/magic-vs-kings-prediction-odds-and-best-nba-prop-bets-for-tuesday-nov-10-2026",
-          "title": "Magic vs. Kings Prediction, Odds and Best NBA Prop Bets for Tuesday, Nov. 10",
+          "url": "https://www.si.com/mx/liga-mx/liga-femenil-tigres-derroto-3-2-a-pumas-en-el-inicio-de-la-liguilla",
+          "title": "Liga Femenil: Tigres derrotó 3-2 a Pumas en el inicio de la Liguilla",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHfEfkdbmoeJNDqiE0qk7TTaFbzrRiTagjiunI7QrzlerHTldrfkWOJ06DHqE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThJC6Q1KGELWjUR1T2m-PXtLQOXg85Gmm5NITkIchHQpDe8ASsEmhTKqzY4G4"
         },
         {
-          "url": "https://kingsherald.com/articles/kings-vs-magic-preview-can-we-finally-win-at-home/",
-          "title": "Kings vs. Magic Preview: Can we finally win at home?",
-          "publisher": "The Kings Herald",
+          "url": "https://www.elnorte.com/vamos-por-la-final-diana-ordonez/ar3311367?grrecs=1&widget=portadasecciontrending-elnorte-cancha&reftype=portada&ckrecommendationid=RID-5f-4c9d-9d16-4fc711f7fd40-CID-f7e61c",
+          "title": "Vamos por la Final.- Diana Ordóñez",
+          "publisher": "El Norte",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3jgNyIOQRu2uxbya8bu2oNhqEqS_k8NqpGcAK6NVJFM1wQLfg2QsqO_uxifw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbAXeR3_2JeLrL2MdyKbSwS9YBjTcx6ljhGKPjaqXEG6Q884iOoeqjIQ_iyNE"
         },
         {
-          "url": "https://orlandomagic.com/news/orlando-magic-sacramento-kings-game-preview-injury-report-20261110",
-          "title": "Orlando Magic at Sacramento Kings: Game Preview",
-          "publisher": "NBA.com",
+          "url": "https://gamavision.com/noticias/amazonas-inician-el-camino-rumbo-al-campeonato-en-cu",
+          "title": "Amazonas inician el camino rumbo al campeonato en C.U.",
+          "publisher": "gamavisión",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyujWI9DIzT943LpYr0bZ3QUQV9WlWnUWbeOex5C-TI6lsPZ4kxcUdX6u1z64"
-        }
-      ]
-    },
-    {
-      "query": "darryn peterson",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T03:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/recap/_/gameId/401909947",
-        "https://www.canishoopus.com/timberwolves-scores-results/71691/game-recap-minnesota-timberwolves-utah-jazz-ayo-dosunmu",
-        "https://www.startribune.com/minnesota-timberwolves-utah-jazz-score-today-live-lamelo-ball-stats-anthony-edwards-injury-update/601912402"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTa-Kt1HEZJExobpuRXd7drsqv0SI1YGzP8Yy0KEFzZm4AScaThJflOB7Y-Z8",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/recap/_/gameId/401909947",
-          "title": "Timberwolves 115-100 Jazz (Nov 8, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTa-Kt1HEZJExobpuRXd7drsqv0SI1YGzP8Yy0KEFzZm4AScaThJflOB7Y-Z8"
-        },
-        {
-          "url": "https://www.canishoopus.com/timberwolves-scores-results/71691/game-recap-minnesota-timberwolves-utah-jazz-ayo-dosunmu",
-          "title": "NBA Game Recap: Wolves 115, Jazz 100: Yet Another Complete Performance",
-          "publisher": "Canis Hoopus",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRemG5Oq2UTtj2x5fyzEIDdQ33X7sMNnmjVYYqL7fh4U5dyj9tvMARnWNGYbZg"
-        },
-        {
-          "url": "https://www.startribune.com/minnesota-timberwolves-utah-jazz-score-today-live-lamelo-ball-stats-anthony-edwards-injury-update/601912402",
-          "title": "Timberwolves run win streak to four as LaMelo Ball, Ayo Dosunmu power past Jazz",
-          "publisher": "Star Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnsiAv5nTgo5Q303oe_osDfnYK_023lK4UTD2Z3yV3fUryiSY-4lOOgXo0uKg"
-        }
-      ]
-    },
-    {
-      "query": "dwyane wade",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T03:30:00Z",
-      "related_news_urls": [
-        "https://www.chosun.com/english/sports-en/2026/11/10/25PNAYW7LVBQFCXGR3GGE42RJ4/",
-        "https://www.essentiallysports.com/nba-legends-basketball-news-scariest-part-of-guarding-steph-curry-dwyane-wade-pinpoints-warriors-stars-unique-trait-amid-eight-game-winning-streak/",
-        "https://www.basketballnetwork.net/off-the-court/dwyane-wade-reveals-what-makes-curry-so-dangerous"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVmYea67ogQZnsz4FU8giKQk4ztYthTLjTHBEKAVjmhEVRYmsBYDrIiRK1nUo",
-      "image_credit": "조선일보",
-      "news": [
-        {
-          "url": "https://www.chosun.com/english/sports-en/2026/11/10/25PNAYW7LVBQFCXGR3GGE42RJ4/",
-          "title": "Stephen Curry's Off-Ball Movement: A Hidden Weapon",
-          "publisher": "조선일보",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVmYea67ogQZnsz4FU8giKQk4ztYthTLjTHBEKAVjmhEVRYmsBYDrIiRK1nUo"
-        },
-        {
-          "url": "https://www.essentiallysports.com/nba-legends-basketball-news-scariest-part-of-guarding-steph-curry-dwyane-wade-pinpoints-warriors-stars-unique-trait-amid-eight-game-winning-streak/",
-          "title": "“Scariest Part of Guarding Steph Curry”: Dwyane Wade Pinpoints Warriors Star’s Unique Trait Amid 8-Game Winning Streak",
-          "publisher": "EssentiallySports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwW0IxohUCSsL8Vkz26KgXFR-A6wZBnAkGwPTh-aV3qHxHLEkfp3nJmVZ0fYo"
-        },
-        {
-          "url": "https://www.basketballnetwork.net/off-the-court/dwyane-wade-reveals-what-makes-curry-so-dangerous",
-          "title": "\"Steph on the floor is an assist for everybody\" – Dwyane Wade reveals what makes Curry so dangerous",
-          "publisher": "Basketball Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2o7ncSaxoy_T3NwlvUFR1l1y60xfYryUhiA2o0ZRUu5_Li0Fo9sO5_-BZqQk"
-        }
-      ]
-    },
-    {
-      "query": "anthony black",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T03:30:00Z",
-      "related_news_urls": [
-        "https://www.fantasypros.com/nba/news/618867/anthony-black-fills-stat-sheet-loss-to-warriors.php",
-        "https://sports.yahoo.com/articles/sean-sweeney-addresses-anthony-blacks-175937590.html",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/anthony-black-exits-during-ot-due-to-cramping"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu8DO-sOZ0LY05xpILhTiLTMHkNp7mVI4nbqju54GCVMERuWjkUCBekNg4vEQ",
-      "image_credit": "FantasyPros",
-      "news": [
-        {
-          "url": "https://www.fantasypros.com/nba/news/618867/anthony-black-fills-stat-sheet-loss-to-warriors.php",
-          "title": "Anthony Black fills stat sheet in loss to Warriors",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu8DO-sOZ0LY05xpILhTiLTMHkNp7mVI4nbqju54GCVMERuWjkUCBekNg4vEQ"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/sean-sweeney-addresses-anthony-blacks-175937590.html",
-          "title": "Sean Sweeney Addresses Anthony Black's Injury, Orlando Magic's Overtime Loss",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsl7vcc-edtL15IF1pweaYnyEEqQb_vF3lG4Z1Zjiokvetk7d_0IfoFvGfvmY"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/anthony-black-exits-during-ot-due-to-cramping",
-          "title": "Anthony Black exits during OT due to cramping",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdKFwV9y0ZeUXEGWgKVOOHHGpKYm0VZQ5yF2Ym0fNc2TfHNTUCJwaZ0JhTnBY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSmIjHvP5DNSFjkNJ5xztstB8OID2btd9LnrPbXRrZ7dRoKFuM-HpYc5SOIvY"
         }
       ]
     }
