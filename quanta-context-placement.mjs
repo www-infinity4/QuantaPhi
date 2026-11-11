@@ -106,6 +106,10 @@ export function freshApprovedCreatives(payload,{now=new Date(),maxAgeDays=45}={}
  * becomes a paid campaign, image-source grant or builder prefill. */
 export function freshBrokerCreative(ad,{now=new Date()}={}){
  if(!ad||typeof ad!=='object')return null;
+ // AdPhi's content-review flags do not establish reuse rights for its imagery.
+ // Trust explicit provider-side rights attestation only while it remains valid.
+ const rightsExpires=validDate(ad.rights_expires_at),agreement=safeText(ad.sponsor_agreement_id);
+ if(ad.rights_cleared!==true||!rightsExpires||rightsExpires<=now.getTime()||agreement.length<8)return null;
  const review=ad.creativeApproved===true&&ad.approved===true&&ad.reviewed===true;
  const data={...ad,type:'sponsored',approved:review,reviewed:review,category:ad.category,
   title:ad.title,description:ad.body,image:ad.imageUrl,
