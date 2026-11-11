@@ -1,0 +1,114 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {submitApprovedBridgeWork,checkOwnerRunnerRequest} from '../workers/infinity-brain-clock/runner-request.mjs';
+
+const claims={run_id:'424242'};
+const sourceSha='a'.repeat(40);
+const conversationReceipts=[0,1].map(turn=>({turn,state:'complete',tool:'oracle.chat',toolStatus:'complete',outputSha256:'b'.repeat(64)}));
+const body={repository:'www-infinity4/QuantaPhi',request:'Complete the signed Bubbles continuous handoff for #1921.',
+ orderId:'avatar-1921-session-02',sourceSha,conversationReceipts,
+ jobs:[
+  {id:'TASK-1',instructions:'Inspect signed Bubbles handoff receipts and correct any source failures.',dependencies:[]},
+  {id:'TASK-2',instructions:'After TASK-1 has verified completion, continue durable runner integration.',dependencies:['TASK-1']}
+ ]};
+function harness(options={}){
+ const calls=[];
+ const request=new Request('https://brain/owner/bridge-work',{headers:{Authorization:'Bearer synthetic'}});
+ const run=(payload=body)=>submitApprovedBridgeWork({
+  request,claims,body:payload,
+  fetcher:async(url,args)=>{calls.push({type:'grant',url,body:JSON.parse(args.body)});return Response.json(
+   options.grant??{ok:true,jobId:'chatgpt_runner_424242'},{status:options.http??200});},
+  submit:async packet=>{calls.push({type:'submit',packet});return options.saved??{
+   status:200,result:{ok:true,deduplicated:false,startRequested:true,
+    ticket:{id:'IW-test',repository:packet.repository,request:packet.request,context:packet.context,status:'ready'}}};},
+  dispatch:async id=>{calls.push({type:'dispatch',id});return {status:'queued_for_runner'};}
+ });
+ return {run,calls};
+}
+test('two owner-approved jobs enter the existing D1 ticket with a real dependency edge',async()=>{
+ const h=harness();const receipt=await h.run();
+ assert.equal(receipt.status,200);
+ assert.equal(receipt.result.completed,false);
+ assert.equal(receipt.result.jobCount,2);
+ const submitted=h.calls.find(x=>x.type==='submit').packet;
+ assert.equal(submitted.context.submission_id,'gpt-owner-order-avatar-1921-session-02');
+ assert.equal(submitted.context.source_sha,sourceSha);
+ assert.equal(submitted.context.signed_conversation.run_id,'424242');
+ assert.equal(submitted.context.signed_conversation.turn_receipts.length,2);
+ assert.deepEqual(submitted.context.signed_conversation.turn_receipts,conversationReceipts);
+ assert.deepEqual(submitted.context.color_jobs.map(x=>[x.id,x.dependencies]),[
+  ['TASK-1',[]],['TASK-2',['TASK-1']]]);
+ assert.ok(submitted.context.color_jobs.every(x=>x.executor==='repository-engine'));
+ assert.equal(h.calls.filter(x=>x.type==='dispatch').length,1);
+});
+test('same signed order retries idempotently and does not dispatch a second time',async()=>{
+ let ticket;
+ const first=harness();await first.run();
+ ticket=first.calls.find(x=>x.type==='submit').packet;
+ const replay=harness({saved:{status:200,result:{ok:true,deduplicated:true,startRequested:false,
+  ticket:{id:'IW-test',repository:ticket.repository,request:ticket.request,context:ticket.context,status:'working'}}}});
+ const response=await replay.run();
+ assert.equal(response.status,200);
+ assert.equal(response.result.deduplicated,true);
+ assert.equal(replay.calls.filter(x=>x.type==='dispatch').length,0);
+});
+test('an order ID cannot be replayed with altered steps or source SHA',async()=>{
+ const first=harness();await first.run();
+ const p=first.calls.find(x=>x.type==='submit').packet;
+ const saved={status:200,result:{ok:true,deduplicated:true,startRequested:false,
+  ticket:{id:'IW-test',repository:p.repository,request:p.request,context:p.context,status:'ready'}}};
+ const replay=harness({saved});
+ const changed={...body,jobs:[body.jobs[0],{...body.jobs[1],instructions:'Changed work order'}]};
+ assert.equal((await replay.run(changed)).status,409);
+ assert.equal((await replay.run({...body,sourceSha:'b'.repeat(40)})).status,409);
+ assert.equal(replay.calls.filter(x=>x.type==='dispatch').length,0);
+});
+test('invalid chains fail before consent or D1 access',async()=>{
+ const cases=[
+  {...body,jobs:[body.jobs[0],{...body.jobs[0]}]},
+  {...body,jobs:[body.jobs[0],{...body.jobs[1],dependencies:['TASK-3']}]},
+  {...body,jobs:[{...body.jobs[0],dependencies:['TASK-2']},body.jobs[1]]},
+  {...body,sourceSha:'head'},
+  {...body,conversationReceipts:[]},
+  {...body,conversationReceipts:[conversationReceipts[0],{...conversationReceipts[1],outputSha256:'tampered'}]},
+  {...body,conversationReceipts:[conversationReceipts[0],{...conversationReceipts[1],toolStatus:'failed'}]},
+  {...body,orderId:'../../secret'},
+  {...body,jobs:[{...body.jobs[0],instructions:'x'.repeat(1801)},body.jobs[1]]}
+ ];
+ for(const candidate of cases){
+  const h=harness();
+  const r=await h.run(candidate);
+  assert.equal(r.status,400);
+  assert.equal(h.calls.length,0);
+ }
+});
+test('revoked or expired grant blocks an entire chain before persistence',async()=>{
+ for(const opts of [{http:403,grant:{ok:false}},{grant:{ok:false}},{grant:{ok:true,jobId:'chatgpt_runner_other'}}]){
+  const h=harness(opts);const r=await h.run();
+  assert.equal(r.status,403);
+  assert.deepEqual(h.calls.map(x=>x.type),['grant']);
+ }
+});
+
+test('the existing signed runner claims job two only after verified job one completion',async()=>{
+ const h=harness();await h.run();
+ const graph=h.calls.find(x=>x.type==='submit').packet.context.color_jobs;
+ const second={...graph[1],status:'queued'};
+ const pending=checkOwnerRunnerRequest(second,{deps:[{status:'queued'}]});
+ assert.equal(pending.eligible,false);
+ assert.equal(pending.reason,'dependency_pending');
+ const sourceOnly=checkOwnerRunnerRequest(second,{deps:[{status:'committed_unverified'}]});
+ assert.equal(sourceOnly.eligible,false); // A source-only commit is not a reviewed, eligible predecessor.
+ assert.equal(sourceOnly.reason,'dependency_pending');
+ const released=checkOwnerRunnerRequest(second,{deps:[{status:'merged_verified'}]});
+ assert.equal(released.eligible,true);
+ const claimed=checkOwnerRunnerRequest({...second,status:'working',progress:{
+  runUrl:'https://github.com/www-infinity4/Moltnook/actions/runs/12345',
+  attemptedAt:new Date().toISOString()}},{deps:[{status:'merged_verified'}],now:Date.now()});
+ assert.equal(claimed.eligible,false);
+ assert.equal(claimed.reason,'recent_runner_receipt');
+ const duplicate=checkOwnerRunnerRequest(second,{deps:[{status:'merged_verified'}],
+  prior:{status:'committed_unverified'}});
+ assert.equal(duplicate.eligible,false);
+ assert.equal(duplicate.reason,'awaiting_merge_or_complete');
+});

@@ -7,7 +7,38 @@ import {technicalSourceEvidenceNeeded} from './ticket-selector.mjs';
 // The five-day bridge may enqueue source work, never impersonate a wallet,
 // approve blocked jobs, release production, or obtain a writer lease.
 export async function submitApprovedBridgeWork({request,claims,body,submit,dispatch,fetcher=fetch}) {
-  if(!body||Object.keys(body).some(k=>!['repository','request'].includes(k))||
+  const chainRequested=body&&('jobs' in body||'orderId' in body||'sourceSha' in body||'conversationReceipts' in body);
+  let chain=null;
+  if(chainRequested){
+   if(!body||Object.keys(body).some(k=>!['repository','request','jobs','orderId','sourceSha','conversationReceipts'].includes(k))||
+      !/^avatar-[a-z0-9][a-z0-9-]{7,70}$/.test(body.orderId||'')||
+      !/^[a-f0-9]{40}$/.test(body.sourceSha||'')||
+      !Array.isArray(body.jobs)||body.jobs.length<2||body.jobs.length>8||
+      !Array.isArray(body.conversationReceipts)||body.conversationReceipts.length!==2||
+      body.conversationReceipts.some((receipt,i)=>
+       !receipt||typeof receipt!=='object'||Array.isArray(receipt)||
+       Object.keys(receipt).some(key=>!['turn','state','tool','toolStatus','outputSha256'].includes(key))||
+       receipt.turn!==i||receipt.state!=='complete'||receipt.toolStatus!=='complete'||
+       !/^[a-z][a-z0-9._-]{0,79}$/.test(receipt.tool||'')||
+       !/^[a-f0-9]{64}$/.test(receipt.outputSha256||'')))
+    return {status:400,result:{ok:false,error:'invalid_owner_bridge_chain'}};
+   const previous=new Set();
+   chain=[];
+   for(let i=0;i<body.jobs.length;i++){
+    const job=body.jobs[i],id='TASK-'+(i+1);
+    if(!job||Object.keys(job).some(k=>!['id','instructions','dependencies'].includes(k))||
+       job.id!==id||typeof job.instructions!=='string'||
+       !job.instructions.trim()||job.instructions.length>1800||
+       !Array.isArray(job.dependencies)||new Set(job.dependencies).size!==job.dependencies.length||
+       job.dependencies.some(dep=>!previous.has(dep))||
+       (i>0&&job.dependencies.length===0))
+     return {status:400,result:{ok:false,error:'invalid_owner_bridge_chain'}};
+    chain.push({id,instructions:job.instructions.trim(),dependencies:[...job.dependencies]});
+    previous.add(id);
+   }
+  }
+  if(!body||Object.keys(body).some(k=>!(chainRequested?
+       ['repository','request','jobs','orderId','sourceSha','conversationReceipts']:['repository','request']).includes(k))||
     !['www-infinity4/QuantaPhi','www-infinity4/RecordB'].includes(body.repository)||
     typeof body.request!=='string'||!body.request.trim()||body.request.length>1800)
     return {status:400,result:{ok:false,error:'invalid_owner_bridge_work'}};
@@ -20,20 +51,45 @@ export async function submitApprovedBridgeWork({request,claims,body,submit,dispa
   if(!approval.ok||proof.ok!==true||proof.jobId!=='chatgpt_runner_'+claims.run_id)
     return {status:403,result:{ok:false,error:'owner_bridge_approval_unavailable'}};
   const text=body.request.trim(),repository=body.repository;
+  const acceptance=[
+    'Reproduce the assigned source failure and implement a bounded repair.',
+    'Pass relevant regression tests and independent Pink/GPT Purple review before publishing a PR.',
+    'Report actual commit, test and PR receipts; keep production and Android hardware acceptance separate.'
+  ];
+  const jobs=chain?chain.map((job,i)=>({
+   ...job,agent:'greenbeans',executor:'repository-engine',repository,
+   title:'Avatar AI continuation stage '+(i+1),acceptance
+  })):[{id:'TASK-1',agent:'greenbeans',executor:'repository-engine',repository,
+    title:'Implement owner repair with independent review',instructions:text,dependencies:[],acceptance}];
+  const submissionId=chain?'gpt-owner-order-'+body.orderId:'gpt-owner-work-'+claims.run_id;
   const saved=await submit({start_immediately:true,source_app:'Bubbles approved GPT work bridge',
     source_url:'https://github.com/www-infinity4/Moltnook/actions/runs/'+claims.run_id,
     title:text.slice(0,120),request:text,repository,context:{kind:'robot-directions',
-      submission_id:'gpt-owner-work-'+claims.run_id,repositories:[repository],approval:'existing-five-day-bridge',
-      color_jobs:[{id:'TASK-1',agent:'greenbeans',executor:'repository-engine',repository,
-        title:'Implement owner repair with independent review',instructions:text,dependencies:[],
-        acceptance:['Reproduce the assigned source failure and implement a bounded repair.',
-          'Pass relevant regression tests and independent Pink/GPT Purple review before publishing a PR.',
-          'Report actual commit, test and PR receipts; keep production and Android hardware acceptance separate.']}]
+      submission_id:submissionId,repositories:[repository],approval:'existing-five-day-bridge',
+      ...(chain?{work_order_id:body.orderId,source_sha:body.sourceSha,
+        signed_conversation:{run_id:claims.run_id,
+         workflow:'www-infinity4/Moltnook/.github/workflows/bubbles-owner-message.yml@refs/heads/main',
+         turn_receipts:body.conversationReceipts}}:{}),
+      color_jobs:jobs
     }});
   if(!saved.result?.ok||!saved.result.ticket?.id) return saved;
   const ticket=saved.result.ticket;
   if(ticket.request!==text||ticket.repository!==repository)
     return {status:409,result:{ok:false,error:'owner_bridge_run_conflict'}};
+  // D1 de-duplicates durable order IDs. A re-used ID with a changed graph,
+  // pinned source, or missing readback must never dispatch or replace jobs.
+  if(chain){
+   const savedContext=ticket.context;
+   if(savedContext?.submission_id!==submissionId||
+      savedContext?.work_order_id!==body.orderId||
+      savedContext?.source_sha!==body.sourceSha||
+      !Array.isArray(savedContext.color_jobs)||
+      savedContext.color_jobs.length!==jobs.length||
+      jobs.some((job,i)=>savedContext.color_jobs[i]?.id!==job.id||
+        savedContext.color_jobs[i]?.instructions!==job.instructions||
+        JSON.stringify(savedContext.color_jobs[i]?.dependencies)!==JSON.stringify(job.dependencies)))
+    return {status:409,result:{ok:false,error:'owner_bridge_order_conflict'}};
+  }
   let execution={status:'scheduled_fallback'};
   // A retry does not revive blocked work or redispatch an existing ticket.
   if(saved.result.startRequested)try{execution=await dispatch(ticket.id);}catch{}
@@ -45,6 +101,7 @@ export async function submitApprovedBridgeWork({request,claims,body,submit,dispa
     receipt.reason=execution.reason;
   return {status:200,result:{ok:true,ticketId:ticket.id,repository,status:ticket.status,
     deduplicated:saved.result.deduplicated===true,execution:receipt,
+    ...(chain?{jobCount:jobs.length,orderId:body.orderId,sourceSha:body.sourceSha}:{}),
     completed:false,productionVerified:false}};
 }
 
@@ -66,6 +123,12 @@ export function checkOwnerRunnerRequest(
     return { eligible: false, reason: technicalSourceEvidenceNeeded(blockerText)?
       'technical_source_evidence_required':'owner_decision_required' };
   }
+  // Repository engine source commits are not verified completion. The Brain's
+  // outer claim gate independently enforces this; preserve it here too so
+  // callers cannot treat committed_unverified as authority for a next job.
+  if(job.executor==='repository-engine'&&deps.some(dep=>
+      !['merged_verified','deployed_verified','complete'].includes(dep.status)))
+    return {eligible:false,reason:'dependency_pending'};
   return eligibleForRetry(job, { now, prior, lease, retry, deps });
 }
 
