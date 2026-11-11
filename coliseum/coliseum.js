@@ -99,10 +99,20 @@ function mountZeusAssistant(){
  const id='coliseum-zeus-assistant';
  const query=new URLSearchParams({embed:'1',id,role:'builder',name:'Zeus AI',
   instructions:'You are Zeus AI, the Infinity Coliseum builder, using the existing Bubbles assistant service. Give useful answers, identify tool limitations honestly, and ask before publishing, charging or running owner jobs.'});
+ const openChat=()=>iframe.contentWindow?.postMessage({type:'quantaphi:bubbles:open',id},window.location.origin);
+ // An iframe load alone can also be a 404 or challenge. Only the script can send ready.
  iframe.addEventListener('load',()=>{
+  openChat();
+  status.textContent=zeusAssistantReady?
+   'Bubbles conversation initialized. Send your question to get an AI reply.':
+   'Waiting for the verified Bubbles conversation to initialize…';
+ });
+ window.addEventListener('message',event=>{
+  if(event.origin!==window.location.origin||event.source!==iframe?.contentWindow||
+   event.data?.type!=='quantaphi:bubbles:ready'||event.data.id!==id)return;
   zeusAssistantReady=true;
-  iframe.contentWindow?.postMessage({type:'quantaphi:bubbles:open',id},window.location.origin);
-  status.textContent='Bubbles conversation is open. Send a question to test the connected AI service.';
+  openChat();
+  status.textContent='Bubbles conversation initialized. Send your question to get an AI reply.';
   deliverQuest();
  });
  iframe.addEventListener('error',()=>{
@@ -113,6 +123,10 @@ function mountZeusAssistant(){
   questPending=null;
  });
  iframe.src='/bubbles.html?'+query.toString();
+ setTimeout(()=>{
+  if(zeusAssistantReady)return;
+  status.textContent='Bubbles did not verify initialization. Your draft is saved; use the full Bubbles chat link if needed.';
+ },10000);
 }
 // The top-page Send is a user-initiated handoff to the SAME Bubbles AI conversation.
  // A request ID prevents lost-ack retries from duplicating a question.
