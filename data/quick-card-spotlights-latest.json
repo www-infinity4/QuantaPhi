@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-11T13:18:48.938653Z",
+  "checked_at": "2026-11-11T14:18:45.635930Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -371,17 +371,17 @@
     },
     "gmc-sierra-2026": {
       "schema_version": 1,
-      "attempted_at": "2026-11-11T08:22:18.366992Z",
+      "attempted_at": "2026-11-11T14:18:45.635930Z",
       "items": []
     },
     "gmc-denali-2026": {
       "schema_version": 1,
-      "attempted_at": "2026-11-11T08:22:18.366992Z",
+      "attempted_at": "2026-11-11T14:18:45.635930Z",
       "items": []
     },
     "carhartt-shop": {
       "schema_version": 1,
-      "attempted_at": "2026-11-11T08:22:18.366992Z",
+      "attempted_at": "2026-11-11T14:18:45.635930Z",
       "items": [
         {
           "url": "https://www.carhartt.com/product/104392?icid=2026-11-03_hp__prdpk_none_clickable_pdp_out-gft_outerwear-shovel-104392_allvisitors_lifestyle_21634",
@@ -389,7 +389,7 @@
           "title": "HeMen's Washed Duck Sierra Jacket",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T08:22:18.366992Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Clothing"
         },
         {
@@ -398,7 +398,7 @@
           "title": "Outerwear for the family",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T08:22:18.366992Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Clothing"
         },
         {
@@ -407,7 +407,7 @@
           "title": "Outerwear for the family",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T08:22:18.366992Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Clothing"
         },
         {
@@ -416,7 +416,7 @@
           "title": "Men's Washed Duck Active Jac",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T08:22:18.366992Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Clothing"
         }
       ]
@@ -1795,7 +1795,7 @@
     },
     "denver-sams-no3": {
       "schema_version": 1,
-      "attempted_at": "2026-11-11T08:22:18.366992Z",
+      "attempted_at": "2026-11-11T14:18:45.635930Z",
       "items": [
         {
           "url": "https://samsno3.com/",
@@ -1803,7 +1803,7 @@
           "title": "Sam's No. 3 - Denver's Best Diner",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T08:22:18.366992Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Restaurants"
         },
         {
@@ -1812,7 +1812,7 @@
           "title": "Sam's No. 3 - Denver's Best Diner",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T08:22:18.366992Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Restaurants"
         },
         {
@@ -1821,7 +1821,7 @@
           "title": "Sam's No. 3 - Denver's Best Diner",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T08:22:18.366992Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Restaurants"
         },
         {
@@ -1830,19 +1830,19 @@
           "title": "Sam's No. 3 - Denver's Best Diner",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T08:22:18.366992Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Restaurants"
         }
       ]
     },
     "denver-work-and-class": {
       "schema_version": 1,
-      "attempted_at": "2026-11-11T08:22:18.366992Z",
+      "attempted_at": "2026-11-11T14:18:45.635930Z",
       "items": []
     },
     "denver-major-tom": {
       "schema_version": 1,
-      "attempted_at": "2026-11-11T08:22:18.366992Z",
+      "attempted_at": "2026-11-11T14:18:45.635930Z",
       "items": [
         {
           "url": "https://majortomdenver.com/",
@@ -1850,7 +1850,7 @@
           "title": "Major Tom",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T08:22:18.366992Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Restaurants"
         },
         {
@@ -1859,14 +1859,14 @@
           "title": "Major Tom | RiNo Restaurant, Dinner, Champagne & Cocktails | Denver",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T08:22:18.366992Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Restaurants"
         }
       ]
     },
     "denver-steubens": {
       "schema_version": 1,
-      "attempted_at": "2026-11-11T08:22:18.366992Z",
+      "attempted_at": "2026-11-11T14:18:45.635930Z",
       "items": [
         {
           "url": "https://steubens.com/",
@@ -1874,7 +1874,7 @@
           "title": "Steubens - Uptown, Denver, CO",
           "kind": "website",
           "description": "American Regional Classics, Steuben’s is named after a restaurant in Boston that my Great Uncles, Max and Joe, opened in 1945. Steuben's became a famous Boston restaurant, nightclub, ...",
-          "checked_at": "2026-11-11T08:22:18.366992Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Restaurants"
         },
         {
@@ -1883,7 +1883,7 @@
           "title": "slideshow photo number 1",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T08:22:18.366992Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Restaurants"
         },
         {
@@ -1892,7 +1892,7 @@
           "title": "slideshow photo number 2",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T08:22:18.366992Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Restaurants"
         },
         {
@@ -1901,19 +1901,19 @@
           "title": "slideshow photo number 3",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T08:22:18.366992Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Restaurants"
         }
       ]
     },
     "denver-hampton-social": {
       "schema_version": 1,
-      "attempted_at": "2026-11-11T08:22:18.366992Z",
+      "attempted_at": "2026-11-11T14:18:45.635930Z",
       "items": []
     },
     "denver-rhein-haus": {
       "schema_version": 1,
-      "attempted_at": "2026-11-11T08:22:18.366992Z",
+      "attempted_at": "2026-11-11T14:18:45.635930Z",
       "items": [
         {
           "url": "https://www.rheinhausdenver.com/",
@@ -1921,7 +1921,7 @@
           "title": "Rhein Haus Denver | Experience Bavarian Dining Today",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T08:22:18.366992Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Restaurants"
         },
         {
@@ -1930,7 +1930,7 @@
           "title": "Rhein Haus Denver | Experience Bavarian Dining Today",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T08:22:18.366992Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Restaurants"
         },
         {
@@ -1939,7 +1939,7 @@
           "title": "Rhein Haus Denver | Experience Bavarian Dining Today",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T08:22:18.366992Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Restaurants"
         },
         {
@@ -1948,19 +1948,19 @@
           "title": "Rhein Haus Denver | Experience Bavarian Dining Today",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T08:22:18.366992Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Restaurants"
         }
       ]
     },
     "denver-atomic-cowboy": {
       "schema_version": 1,
-      "attempted_at": "2026-11-11T08:22:18.366992Z",
+      "attempted_at": "2026-11-11T14:18:45.635930Z",
       "items": []
     },
     "denver-casa-bonita": {
       "schema_version": 1,
-      "attempted_at": "2026-11-11T08:22:18.366992Z",
+      "attempted_at": "2026-11-11T14:18:45.635930Z",
       "items": [
         {
           "url": "https://www.casabonitadenver.com/",
@@ -1968,7 +1968,7 @@
           "title": "Casa Bonita",
           "kind": "website",
           "description": "The Greatest Restaurant in the World!",
-          "checked_at": "2026-11-11T08:22:18.366992Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Restaurants"
         },
         {
@@ -1977,7 +1977,7 @@
           "title": "Shop Official Merchandise",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T08:22:18.366992Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Restaurants"
         },
         {
@@ -1986,7 +1986,7 @@
           "title": "View Our Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T08:22:18.366992Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Restaurants"
         },
         {
@@ -1995,7 +1995,7 @@
           "title": "Prepare For Your Visit",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T08:22:18.366992Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Restaurants"
         }
       ]
@@ -3910,12 +3910,12 @@
     },
     "durable-casio-g-shock-classic-line": {
       "schema_version": 1,
-      "attempted_at": "2026-11-11T07:19:25.639051Z",
+      "attempted_at": "2026-11-11T14:18:45.635930Z",
       "items": []
     },
     "durable-seiko-mechanical-automatic": {
       "schema_version": 1,
-      "attempted_at": "2026-11-11T07:19:25.639051Z",
+      "attempted_at": "2026-11-11T14:18:45.635930Z",
       "items": [
         {
           "url": "https://www.seikowatches.com/us-en/products/diamondcollection",
@@ -3923,7 +3923,7 @@
           "title": "photo of diamond collection",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3932,7 +3932,7 @@
           "title": "image of new model",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3941,7 +3941,7 @@
           "title": "image of limited edition watch",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3950,7 +3950,7 @@
           "title": "image of diver category",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3959,7 +3959,7 @@
           "title": "King Seiko | Seiko Watch Corporation",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3968,7 +3968,7 @@
           "title": "Prospex | Seiko Watch Corporation",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -3977,19 +3977,19 @@
           "title": "Presage | Seiko Watch Corporation",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-rolex": {
       "schema_version": 1,
-      "attempted_at": "2026-11-11T07:19:25.639051Z",
+      "attempted_at": "2026-11-11T14:18:45.635930Z",
       "items": []
     },
     "durable-patek-philippe": {
       "schema_version": 1,
-      "attempted_at": "2026-11-11T07:19:25.639051Z",
+      "attempted_at": "2026-11-11T14:18:45.635930Z",
       "items": [
         {
           "url": "https://www.patek.com/en",
@@ -3997,14 +3997,14 @@
           "title": "Patek Philippe Official Site | Luxury Watches for Men & Ladies",
           "kind": "website",
           "description": "Official website of the last family-owned Genevan luxury watch manufacturer. Enter the Patek Philippe universe to discover our watches and savoir-faire.",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-pelican-cases": {
       "schema_version": 1,
-      "attempted_at": "2026-11-11T07:19:25.639051Z",
+      "attempted_at": "2026-11-11T14:18:45.635930Z",
       "items": [
         {
           "url": "https://www.pelican.com/us/en",
@@ -4012,7 +4012,7 @@
           "title": "The Original Protective Case",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4021,7 +4021,7 @@
           "title": "pelican atx30 angled black 02",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4030,7 +4030,7 @@
           "title": "pelican 1615 air case check in airline case",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4039,7 +4039,7 @@
           "title": "pelican atx22 angled black 02",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4048,7 +4048,7 @@
           "title": "1170PF1 Protector",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4057,7 +4057,7 @@
           "title": "1615 Air",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4066,7 +4066,7 @@
           "title": "1535 Air",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4075,14 +4075,14 @@
           "title": "1510 Protector",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-nanuk": {
       "schema_version": 1,
-      "attempted_at": "2026-11-11T07:19:25.639051Z",
+      "attempted_at": "2026-11-11T14:18:45.635930Z",
       "items": [
         {
           "url": "https://nanuk.com",
@@ -4090,7 +4090,7 @@
           "title": "NANUK Hard Cases - Durable, Protective Cases for Your Gear",
           "kind": "website",
           "description": "Discover NANUK hard cases in various sizes and colors, perfect for drones, cameras, medical equipment, and more. Made in North America for ultimate protection. Shop Online Now.",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4099,7 +4099,7 @@
           "title": "A tan Nanuk 935 best selling protection case, a rugged rolling hard case with its telescoping handle extended and wheels visible, floats against a light grey background.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4108,7 +4108,7 @@
           "title": "A black Nanuk N-EDC 20 bag with a roll-top buckle closure and a water bottle in its side pocket is presented floating against a light gray background, highlighting its functionalit",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4117,7 +4117,7 @@
           "title": "A black Nanuk 905 hard case, part of the Nanuk bags and cases line, floats at an angle on a clean white background, highlighting its textured surface, handle, and latches.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4126,7 +4126,7 @@
           "title": "NANUK 935 - Black / Cubed Foam / Regular Wheels",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "254.95",
@@ -4141,7 +4141,7 @@
           "title": "NANUK 935 - Black / Cubed Foam / Heavy Duty Wheels",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "289.95",
@@ -4156,7 +4156,7 @@
           "title": "NANUK 935 - Black / Padded Divider / Regular Wheels",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "319.95",
@@ -4171,7 +4171,7 @@
           "title": "NANUK 935 - Black / Padded Divider / Heavy Duty Wheels",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "349.95",
@@ -4184,7 +4184,7 @@
     },
     "durable-zippo": {
       "schema_version": 1,
-      "attempted_at": "2026-11-11T07:19:25.639051Z",
+      "attempted_at": "2026-11-11T14:18:45.635930Z",
       "items": [
         {
           "url": "https://zippo.com/collections/refillable-butane-inserts",
@@ -4192,7 +4192,7 @@
           "title": "Four butane inserts in colorful cases.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4201,7 +4201,7 @@
           "title": "Two classic Pipe Inserts - Brass and Chrome",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4210,7 +4210,7 @@
           "title": "Zippo Bit Safe 4-in-1 Screwdriver Lighter Insert standing at a 3/4 angle with the Phillips head and other screw bits displayed.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4219,7 +4219,7 @@
           "title": "Three packages each of Zippo wicks and flints on a white background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4228,7 +4228,7 @@
           "title": "Double Arc Rechargeable Lighter Insert",
           "kind": "product",
           "description": "Take the customization process one step further with your choice of flame type. The Double Arc Rechargeable Insert features two powerful plasma beams that ignite at the press of a button, offering a flameless and windproof flame source that can easily be recha",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "26.95",
@@ -4243,7 +4243,7 @@
           "title": "Bit Safe Screwdriver Insert",
           "kind": "product",
           "description": "The Bit Safe Lighter Insert packs a functional screwdriver into your favorite Zippo case*, adding compact utility to your everyday carry. Remove the 4-in-1 insert from your case and quickly and easily swap between the onboard Phillips, flathead and Torx screwd",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "19.95",
@@ -4258,7 +4258,7 @@
           "title": "Cotton and Felt Replacement Kit",
           "kind": "product",
           "description": "Keep your windproof lighter working at optimal performance with Zippo's Cotton and Felt Replacement Kit. Kit includes enough absorbent cotton for one windproof lighter fuel reservoir and a replacement felt pad. Genuine Zippo cotton and felt replacement kit for",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "6.95",
@@ -4271,7 +4271,7 @@
     },
     "durable-ronson": {
       "schema_version": 1,
-      "attempted_at": "2026-11-11T07:19:25.639051Z",
+      "attempted_at": "2026-11-11T14:18:45.635930Z",
       "items": [
         {
           "url": "https://kb.zippo.com/?hsLang=en",
@@ -4279,7 +4279,7 @@
           "title": "Zippo Logo",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4288,14 +4288,14 @@
           "title": "Z-Lo-Br_ZippoLockupHorizontal-2cReverse",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-maglite": {
       "schema_version": 1,
-      "attempted_at": "2026-11-11T07:19:25.639051Z",
+      "attempted_at": "2026-11-11T14:18:45.635930Z",
       "items": [
         {
           "url": "https://maglite.com/collections/everyday",
@@ -4303,7 +4303,7 @@
           "title": "Home & Everyday",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4312,7 +4312,7 @@
           "title": "Outdoors & Travel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4321,7 +4321,7 @@
           "title": "Duty & Professional",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4330,7 +4330,7 @@
           "title": "Tactical & Military",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4339,7 +4339,7 @@
           "title": "Maglite® ML300L® 4-Cell D LED Flashlight –511-Meter Beam, Up to 434-Hour Runtime, 1,002 Lumens, 4 D-Cell Power, Quick Focus®, QuickClik® Multi-Mode Operation",
           "kind": "product",
           "description": "The Maglite® ML300L® 4D LED Flashlight is a full-size, high-performance flashlight built for home emergency preparedness, professional work, security, roadside use, camping, outdoor activities, and other situations where dependable long-range illumination and ",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "59.99",
@@ -4354,7 +4354,7 @@
           "title": "Maglite® Complete Home Flashlight Bundle - ML300L 4D Full Size, Mini Maglite Pro LED Compact Size, and Solitaire LED Small Keychain Size Flashlights - Black",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "80.72",
@@ -4369,7 +4369,7 @@
           "title": "Maglite® ML150LR Rechargeable LED Flashlight – 458-Meter Beam, 1,082 Lumens, 52,555 Candela & Up to 79-Hour Runtime, Quick Focus®, QuickClik® & Fast-Charging LiFePO4 Power - Black ",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "129.99",
@@ -4384,7 +4384,7 @@
           "title": "Maglite® ML150LR Rechargeable LED Flashlight – 458-Meter Beam, 1,082 Lumens, 52,555 Candela & Up to 79-Hour Runtime, Quick Focus®, QuickClik® & Fast-Charging LiFePO4 Power - Black ",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "119.99",
@@ -4397,7 +4397,7 @@
     },
     "durable-surefire": {
       "schema_version": 1,
-      "attempted_at": "2026-11-11T07:19:25.639051Z",
+      "attempted_at": "2026-11-11T14:18:45.635930Z",
       "items": [
         {
           "url": "https://www.surefire.com/categories/illumination/",
@@ -4405,7 +4405,7 @@
           "title": "Illumination",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4414,7 +4414,7 @@
           "title": "Suppressors",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4423,7 +4423,7 @@
           "title": "EarPro",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4432,14 +4432,14 @@
           "title": "Parts & Accessories",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-toyota-land-cruiser-hilux-industrial-platforms": {
       "schema_version": 1,
-      "attempted_at": "2026-11-11T07:19:25.639051Z",
+      "attempted_at": "2026-11-11T14:18:45.635930Z",
       "items": [
         {
           "url": "https://global.toyota/en/",
@@ -4447,7 +4447,7 @@
           "title": "Toyota Motor Corporation Official Global Website",
           "kind": "website",
           "description": "Toyota Motor Corporation Official Global Website―company, ir, newsroom, mobility, sustainability.",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4456,7 +4456,7 @@
           "title": "TMC's FY2027 2Q Financial Results Press Briefing",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4465,7 +4465,7 @@
           "title": "TMC's FY2027 2Q Financial Results Press Briefing",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4474,7 +4474,7 @@
           "title": "Toyota Launches New Hilux in Japan",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4508,7 +4508,7 @@
     },
     "durable-chris-king": {
       "schema_version": 1,
-      "attempted_at": "2026-11-11T07:19:25.639051Z",
+      "attempted_at": "2026-11-11T14:18:45.635930Z",
       "items": [
         {
           "url": "https://chrisking.com",
@@ -4516,7 +4516,7 @@
           "title": "Chris King Precision Components",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4525,7 +4525,7 @@
           "title": "ThreadFit™ 24",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4534,7 +4534,7 @@
           "title": "ThreadFit™ 24",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4543,7 +4543,7 @@
           "title": "ThreadFit™ 24",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4552,7 +4552,7 @@
           "title": "ThreadFit™ 24",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4561,7 +4561,7 @@
           "title": "ThreadFit™ 30",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4570,7 +4570,7 @@
           "title": "ThreadFit™ 30",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4579,14 +4579,14 @@
           "title": "ThreadFit™ 30",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-11T07:19:25.639051Z",
+          "checked_at": "2026-11-11T14:18:45.635930Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-shimano-deore-xt-xtr-mechanical": {
       "schema_version": 1,
-      "attempted_at": "2026-11-11T07:19:25.639051Z",
+      "attempted_at": "2026-11-11T14:18:45.635930Z",
       "items": []
     },
     "durable-phil-wood": {
