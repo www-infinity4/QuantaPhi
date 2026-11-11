@@ -4352,6 +4352,11 @@ if(!embedded&&typeof setInterval==='function'){
  }},3000);
 }
 if(embedded){launcher.style.bottom='3px';launcher.style.right='3px'};
+// Only a fully initialized Bubbles script may certify that Zeus can deliver a turn.
+// An HTML/404 iframe load is not proof of an AI assistant. Never send credentials.
+if(embedded&&bubbleId==='coliseum-zeus-assistant')window.parent.postMessage({
+ type:'quantaphi:bubbles:ready',id:bubbleId
+},window.location.origin);
 // An embed opens inside a sandboxed iframe; only window dimensions are messaged.
 
 })();
