@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {DEPARTMENTS,departmentFor,matchesDepartment,placementPolicy,freshApprovedCreatives} from '../quanta-context-placement.mjs';
+import {DEPARTMENTS,departmentFor,matchesDepartment,placementPolicy,freshApprovedCreatives,freshBrokerCreative} from '../quanta-context-placement.mjs';
 import {cleanFeedState,feedCandidates,toggleInterest} from '../quanta-feed-rank.mjs';
 import {readFileSync} from 'node:fs';
 const now=new Date('2026-11-10T12:30:00-06:00');
@@ -71,4 +71,23 @@ test('actual homepage and builder wiring never replace Oracle or silently publis
  assert.ok(builder.includes("freshApprovedCreatives"));
  assert.ok(builder.includes("qcpFreshAds"));
  assert.ok(!html.includes('homepage-v5.html'));
+});
+
+test('AdPhi image reuse must not claim licensed rights without current source records',()=>{
+ const asset={id:'fixture-ad-01',category:'Shopping',title:'Fixture-only promotion',
+  body:'Synthetic editorial fixture, not an advertiser agreement.',
+  advertiser:'Synthetic test only',creativeApproved:true,approved:true,reviewed:true,
+  imageUrl:'https://publisher.example.org/img.jpg',
+  destinationUrl:'https://publisher.example.org/promo',
+  createdAt:'2026-11-09T12:00:00Z',startsAt:'2026-11-01T00:00:00Z',endsAt:'2026-11-30T23:59:59Z',
+  rights_cleared:true,rights_expires_at:'2026-12-31T23:59:59Z',
+  sponsor_agreement_id:'fixture-only-no-commercial-contract'};
+ const signed=freshBrokerCreative(asset,{now});
+ assert.ok(signed?.rightsVerified===true,'only complete reviewed evidence can mark a campaign image cleared');
+ for(const invalid of [
+  {rights_cleared:false},{rights_cleared:undefined},
+  {rights_expires_at:''},{rights_expires_at:'2026-11-01T00:00:00Z'},
+  {sponsor_agreement_id:''},{sponsor_agreement_id:undefined}
+ ])assert.equal(freshBrokerCreative({...asset,...invalid},{now}),null,
+  'creative with missing rights evidence must not enter publisher preview');
 });
