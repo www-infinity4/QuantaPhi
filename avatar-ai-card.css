@@ -1,0 +1,29 @@
+/* Avatar AI prompt handoff — original Oracle atmosphere, readable on Android. */
+.avatar-ai-suggestion{max-width:710px;margin:14px auto;padding:15px;border:1px solid #bb9ad5;border-radius:20px;background:#f9f5ff;color:#352444;box-shadow:0 12px 28px #46286718;font:inherit;box-sizing:border-box}
+.avatar-ai-suggestion *{box-sizing:border-box}
+.avatar-ai-hero{display:grid;grid-template-columns:minmax(94px,36%) minmax(0,1fr);gap:12px;align-items:center;min-width:0;border-radius:16px;padding:10px;background:radial-gradient(circle at 10% 20%,#ae84cf 0,#55316e 58%,#281c3f 100%);color:#fff}
+.avatar-ai-art{display:block;max-width:100%;width:100%;max-height:220px;aspect-ratio:4/5;object-fit:cover;border-radius:12px;background:#e4cfef}
+.avatar-ai-headline{min-width:0}
+.avatar-ai-headline small{font-size:11px;letter-spacing:.09em;line-height:1.5;font-weight:800;color:#f3d79b}
+.avatar-ai-headline h3{font-size:clamp(25px,7vw,38px);line-height:1.15;letter-spacing:-.02em;margin:5px 0;color:#fff}
+.avatar-ai-tagline{font-size:15px;line-height:1.45;font-weight:670;margin:3px 0 0;color:#f8ecff}
+.avatar-ai-intro,.avatar-ai-steps,.avatar-ai-note{font-size:15px;line-height:1.55;margin:13px 2px}
+.avatar-ai-phases{display:grid;gap:5px;margin:12px 0;padding:10px 12px;background:#fff;border:1px solid #dbc6e9;border-radius:13px}
+.avatar-ai-phases strong{font-size:12px;letter-spacing:.045em;color:#583276}
+.avatar-ai-phases span{font-size:13px;line-height:1.45;color:#5d506a}
+.avatar-ai-focus-label{display:grid;gap:6px;font-size:14px;font-weight:750;color:#4b315e}
+.avatar-ai-focus{width:100%;min-height:46px;border-radius:12px;border:1px solid #ad94c2;padding:10px 12px;font:500 16px/1.4 system-ui,sans-serif;background:#fff;color:#30223d}
+.avatar-ai-drag{border:1px dashed #916bb4;border-radius:14px;padding:12px;background:#fff;margin:12px 0 0;cursor:grab;min-width:0}
+.avatar-ai-drag:active{cursor:grabbing}
+.avatar-ai-drag strong{display:block;font-size:13px;letter-spacing:.07em;color:#663c89;margin:0 0 7px}
+.avatar-ai-prompt{display:block;width:100%;min-height:190px;max-height:340px;resize:vertical;font:500 13px/1.56 system-ui,sans-serif;color:#332b3a;border:1px solid #e4d9e9;border-radius:9px;padding:12px;background:#fbf9fd;overflow:auto}
+.avatar-ai-drag-hint{display:block;font-size:12px;color:#675877;margin-top:7px}
+.avatar-ai-status{font-size:13px;color:#4b3468;line-height:1.45;margin:9px 2px}
+.avatar-ai-controls{display:flex;gap:9px;flex-wrap:wrap}
+.avatar-ai-controls button,.avatar-ai-controls a{display:inline-flex;align-items:center;justify-content:center;flex:1 1 180px;min-height:48px;padding:10px 14px;font:800 15px/1.3 system-ui,sans-serif;letter-spacing:0;text-align:center;text-decoration:none;border-radius:12px;cursor:pointer;touch-action:manipulation}
+.avatar-ai-copy{background:#623487;border:1px solid #623487;color:#fff}
+.avatar-ai-controls .avatar-ai-open{background:#fff;color:#4d2a6b;border:1px solid #bfa8d2}
+.avatar-ai-note{font-size:13px;color:#665a6e;margin-bottom:2px}
+.avatar-ai-suggestion :is(button,a,input,textarea,.avatar-ai-drag):focus-visible{outline:3px solid #b67bee;outline-offset:3px}
+@media(max-width:390px){.avatar-ai-suggestion{padding:10px;border-radius:15px}.avatar-ai-hero{grid-template-columns:92px minmax(0,1fr);gap:10px}.avatar-ai-art{max-height:156px}.avatar-ai-headline h3{font-size:26px}.avatar-ai-tagline{font-size:13px}.avatar-ai-intro{font-size:15px}}
+@media(prefers-reduced-motion:reduce){.avatar-ai-suggestion *{scroll-behavior:auto}}
