@@ -10,6 +10,7 @@ on:
       - 'bubbles-signin-gate.mjs'
       - 'test/bubbles-provider-verification.test.mjs'
       - 'test/bubbles-signin-gate.test.mjs'
+      - 'work/unfinished/TICKET-1906.md'
       - '.github/workflows/bubbles-provider-verification.yml'
   push:
     branches: [main]
@@ -20,6 +21,7 @@ on:
       - 'bubbles-provider-verification.mjs'
       - 'bubbles-signin-gate.mjs'
       - 'test/bubbles-provider-verification.test.mjs'
+      - 'work/unfinished/TICKET-1906.md'
       - '.github/workflows/bubbles-provider-verification.yml'
 permissions:
   contents: read
