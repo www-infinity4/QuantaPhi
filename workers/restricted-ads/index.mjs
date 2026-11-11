@@ -32,7 +32,7 @@ export function allowCreative(row,jurisdiction,now=Date.now()){
   allowed:true,verified_over_21:true,opted_in:true,category:'cannabis',jurisdiction
  },now);
  if(!asset)return null;
- return {...asset,id:row.id,category:'cannabis',approved:true,
+ return {...asset,category:'cannabis',approved:true,
   license_id:row.license_id,reviewed_at:row.reviewed_at,
   approved_jurisdictions,rights_cleared:true,publisher_domain:row.publisher_domain};
 }
