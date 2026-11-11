@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T07:31:25.284186Z",
+  "checked_at": "2026-11-11T08:02:27.932866Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "portos",
+      "query": "disneyland tickets",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T07:40:00Z",
+      "related_news_urls": [
+        "https://wdwnt.com/2026/11/membership-magic-beyond-renewed-for-2027-benefits-include-discounts-on-theme-park-tickets/",
+        "https://www.wdwmagic.com/resorts/disney-vacation-club/news/10nov2026-disney-vacation-club-membership-magic-beyond-2027-stays-at-99-with-new-ticket-deals.htm",
+        "https://www.disneytouristblog.com/new-3-4-day-disneyland-ticket-deals-coming-for-2027/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGd6nJyKoXVlua7D6ustgfa8QqvM1mKq2QgLG3DGEjpJL9bej2XQaKJsM1njI",
+      "image_credit": "WDW News Today",
+      "news": [
+        {
+          "url": "https://wdwnt.com/2026/11/membership-magic-beyond-renewed-for-2027-benefits-include-discounts-on-theme-park-tickets/",
+          "title": "Membership Magic Beyond Renewed for 2027, Benefits Include Discounts on Theme Park Tickets",
+          "publisher": "WDW News Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGd6nJyKoXVlua7D6ustgfa8QqvM1mKq2QgLG3DGEjpJL9bej2XQaKJsM1njI"
+        },
+        {
+          "url": "https://www.wdwmagic.com/resorts/disney-vacation-club/news/10nov2026-disney-vacation-club-membership-magic-beyond-2027-stays-at-99-with-new-ticket-deals.htm",
+          "title": "Disney Vacation Club Membership Magic Beyond 2027 Stays at $99 With New Ticket Deals",
+          "publisher": "WDWMagic",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSte-mQt4k6KecdeL0cO6pJLW_gOxnGGZr6AjnQKZ3lsgS08Oc8p_4DLq2-ngo"
+        },
+        {
+          "url": "https://www.disneytouristblog.com/new-3-4-day-disneyland-ticket-deals-coming-for-2027/",
+          "title": "New 3-4 Day Disneyland Ticket Deals Coming for 2027",
+          "publisher": "Disney Tourist Blog",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSY90g7vz7wGIbL5fOhniZ27VXuAYsVZ_MUu7dbccHTs-rZ6-HkX3on0ZJ3aKY"
+        }
+      ]
+    },
+    {
+      "query": "patriots depth chart",
       "approx_searches": "100+",
-      "published_at": "2026-11-11T07:10:00Z",
+      "published_at": "2026-11-11T07:40:00Z",
       "related_news_urls": [
-        "https://g1.globo.com/sp/santos-regiao/porto-mar/noticia/2026/11/10/porto-de-santos-confirma-ataque-cibernetico-nos-sistemas-mas-nao-sabe-se-dados-foram-acessados.ghtml",
-        "https://www.cnnbrasil.com.br/infra/porto-de-santos-investiga-instabilidades-em-sistema-e-descarta-paralisacao/",
-        "https://portogente.com.br/noticias/dia-a-dia/118230-nos-avisamos"
+        "https://www.espn.com/nfl/story/_/id/50438482/patriots-rhamondre-stevenson-dealing-knee-tendon-issue",
+        "https://www.nbcsportsboston.com/nfl/new-england-patriots/nfl-trade-deadline-live-updates/812683/",
+        "https://www.bostonglobe.com/2026/11/08/sports/patriots-arent-making-excuses-their-near-catastrophic-injury-run-has-only-gotten-worse/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB3RiHEn4fyhr_DR4ZZIDpF9n14dJUIXqs237aPbeW0WUH6Ldgq247J-5ir3U",
-      "image_credit": "G1",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFhcg9WMgMFEPZbuLvLnxECtx2rgauj3_-_OrJPeyHL0S0RxyWvdCef8BWun8",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://g1.globo.com/sp/santos-regiao/porto-mar/noticia/2026/11/10/porto-de-santos-confirma-ataque-cibernetico-nos-sistemas-mas-nao-sabe-se-dados-foram-acessados.ghtml",
-          "title": "Porto de Santos confirma ataque hacker nos sistemas, mas não sabe se dados foram acessados",
-          "publisher": "G1",
+          "url": "https://www.espn.com/nfl/story/_/id/50438482/patriots-rhamondre-stevenson-dealing-knee-tendon-issue",
+          "title": "Source: Pats' Rhamondre Stevenson expected to miss time with knee tendon issue",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB3RiHEn4fyhr_DR4ZZIDpF9n14dJUIXqs237aPbeW0WUH6Ldgq247J-5ir3U"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFhcg9WMgMFEPZbuLvLnxECtx2rgauj3_-_OrJPeyHL0S0RxyWvdCef8BWun8"
         },
         {
-          "url": "https://www.cnnbrasil.com.br/infra/porto-de-santos-investiga-instabilidades-em-sistema-e-descarta-paralisacao/",
-          "title": "Porto de Santos adota plano de contingência após ataque hacker",
-          "publisher": "CNN Brasil",
+          "url": "https://www.nbcsportsboston.com/nfl/new-england-patriots/nfl-trade-deadline-live-updates/812683/",
+          "title": "NFL trade deadline recap: Busy day around the league, but Patriots sit out",
+          "publisher": "NBC Sports Boston",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdZyf3f9_8anbPAHgX2SiI27Y9DJubutamY7S8tHuHYMucs7hcYT99nHW_Xcc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrfIHkvi7zMUI4DP_dKd3mcFP6_NgFlgtCYLpM4WPJA3yF2M51EX8RygL00a0"
         },
         {
-          "url": "https://portogente.com.br/noticias/dia-a-dia/118230-nos-avisamos",
-          "title": "Nós avisamos.",
-          "publisher": "Portogente",
+          "url": "https://www.bostonglobe.com/2026/11/08/sports/patriots-arent-making-excuses-their-near-catastrophic-injury-run-has-only-gotten-worse/",
+          "title": "The Patriots aren’t making excuses, but their near-catastrophic injury run has only gotten worse",
+          "publisher": "The Boston Globe",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4y5EFLSwgpwNYmxeDBJHdLl7MSxWerhCwedH3l4phLU5Uc7vDwSKnyvyIfnM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTg47n6UNqscQIgiBVjHPLTBVaZkbZ58MxVSEKukLcXeOPTSrzlt3pLUCtZ4QI"
         }
       ]
     },
     {
-      "query": "star wars original trilogy",
+      "query": "ps6",
       "approx_searches": "100+",
-      "published_at": "2026-11-11T07:10:00Z",
+      "published_at": "2026-11-11T07:40:00Z",
       "related_news_urls": [
-        "https://collider.com/star-wars-original-trilogy-new-audiobooks-2027-release-date/",
-        "https://insidethemagic.net/2026/11/original-star-wars-film-undergoes-several-major-changes-lucasfilm-reveals-dr1/",
-        "https://www.disneyfanatic.com/lucasfilm-brings-back-29-year-old-star-wars-project-ahead-of-major-anniversary-dr1/"
+        "https://www.vgchartz.com/article/469593/shawn-layden-innovation-needs-to-come-not-from-making-ps6-for-1200-its-to-make-another-ps5-for-300/",
+        "https://www.gamespot.com/articles/former-playstation-boss-thinks-sony-is-solving-the-wrong-problem-with-ps6/",
+        "https://wccftech.com/playstation-6-more-teraflops-mistake-playstation-portal-cloud-gaming-solution/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYo3GQOMRomSL7kr-bKJAQE8n5UrBimRMKcB4cIJ8KPQpncqJdU5XfUTJJ9Sk",
-      "image_credit": "Collider",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc5kNGnn78WCDsNqHPKhH4xN2xE_7AXkOW2DV7LClNSbucvq2V7QmWAsH8hw",
+      "image_credit": "VGChartz",
       "news": [
         {
-          "url": "https://collider.com/star-wars-original-trilogy-new-audiobooks-2027-release-date/",
-          "title": "The Original Star Wars Trilogy Officially Returns With a Brand-New Release",
-          "publisher": "Collider",
+          "url": "https://www.vgchartz.com/article/469593/shawn-layden-innovation-needs-to-come-not-from-making-ps6-for-1200-its-to-make-another-ps5-for-300/",
+          "title": "Shawn Layden: 'Innovation Needs to Come Not From Making PS6 for $1,200, It's to Make Another PS5 for $300'",
+          "publisher": "VGChartz",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYo3GQOMRomSL7kr-bKJAQE8n5UrBimRMKcB4cIJ8KPQpncqJdU5XfUTJJ9Sk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc5kNGnn78WCDsNqHPKhH4xN2xE_7AXkOW2DV7LClNSbucvq2V7QmWAsH8hw"
         },
         {
-          "url": "https://insidethemagic.net/2026/11/original-star-wars-film-undergoes-several-major-changes-lucasfilm-reveals-dr1/",
-          "title": "Lucasfilm Officially Confirms Several Reimaginings of ‘Star Wars: A New Hope’",
-          "publisher": "Inside the Magic",
+          "url": "https://www.gamespot.com/articles/former-playstation-boss-thinks-sony-is-solving-the-wrong-problem-with-ps6/",
+          "title": "Former PlayStation Boss Thinks Sony Is Solving The Wrong Problem With PS6",
+          "publisher": "GameSpot",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvec-vHxX65yFKkB2F7q9xfmpDQGBuAsEw-21NIdZyxkoZgn-vHfkJkR5AhNs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVLSBEhALxWIKLprxozbivb22SplEpBw-61637c0ApJ7jBVI7F5Yts4icbuxk"
         },
         {
-          "url": "https://www.disneyfanatic.com/lucasfilm-brings-back-29-year-old-star-wars-project-ahead-of-major-anniversary-dr1/",
-          "title": "Lucasfilm Brings Back Old ‘Star Wars’ Project Ahead of Major Anniversary",
-          "publisher": "Disney Fanatic",
+          "url": "https://wccftech.com/playstation-6-more-teraflops-mistake-playstation-portal-cloud-gaming-solution/",
+          "title": "A PlayStation 6 At $1000+ With Just More “Teraflops” Could Be A Mistake, Yet The PlayStation Portal and Cloud Gaming Present The Solution",
+          "publisher": "Wccftech",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSpcd15M1LwssQJ6LSCd9h9xcMEt_Y9IwHsq4Nv2FvsuH4fE6SzUBqsDBnQ0g"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxEhYA8YFhPGcu_7TRh9PqpTaeR19J2-iXB6r-rbBQFL0xxmzUcjGj2qVy1Hk"
         }
       ]
     },
     {
-      "query": "jonbenet ramsey",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T07:00:00Z",
+      "query": "lake powell",
+      "approx_searches": "100+",
+      "published_at": "2026-11-11T07:40:00Z",
       "related_news_urls": [
-        "https://www.dailycamera.com/2026/11/10/boulder-da-jonbenet-ramsey-case/",
-        "https://abcnews.com/US/new-dna-tech-solve-jonbent-ramseys-murder-case/story?id=137603999",
-        "https://www.cbsnews.com/colorado/news/boulder-justice-jonbenet-ramsey-murder/"
+        "https://www.sfgate.com/news/article/reservoir-water-22522040.php",
+        "https://kutv.com/news/local/lake-powells-rise-gives-glen-canyon-institute-opening-to-push-long-term-plans",
+        "https://www.newsweek.com/lake-mead-lake-powell-warnings-remain-12692606"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWPch-9gskhpHY7gm_KLfZvPW9dGlrzGrzJAJmPTAqbASDTuIDkfdbiFBkRkE",
-      "image_credit": "Daily Camera",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo3GbZKr4EBmlBrMNbvq8BQHzQud1-79BbExNnSpWZEOrtKo4UNC3G-7b5jNw",
+      "image_credit": "SFGATE",
       "news": [
         {
-          "url": "https://www.dailycamera.com/2026/11/10/boulder-da-jonbenet-ramsey-case/",
-          "title": "Boulder County DA says Ramseys shouldn’t have been cleared in JonBenet’s murder",
-          "publisher": "Daily Camera",
+          "url": "https://www.sfgate.com/news/article/reservoir-water-22522040.php",
+          "title": "US reservoir at crisis level adds 20 feet of water after storms",
+          "publisher": "SFGATE",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWPch-9gskhpHY7gm_KLfZvPW9dGlrzGrzJAJmPTAqbASDTuIDkfdbiFBkRkE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo3GbZKr4EBmlBrMNbvq8BQHzQud1-79BbExNnSpWZEOrtKo4UNC3G-7b5jNw"
         },
         {
-          "url": "https://abcnews.com/US/new-dna-tech-solve-jonbent-ramseys-murder-case/story?id=137603999",
-          "title": "How new DNA tech could solve JonBenét Ramsey's murder case 30 years later",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "url": "https://kutv.com/news/local/lake-powells-rise-gives-glen-canyon-institute-opening-to-push-long-term-plans",
+          "title": "Lake Powell’s rise gives Glen Canyon Institute opening to push long-term plans",
+          "publisher": "KUTV",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbgcJjWTF4hfwynnkRXBo1z_EcMHEPt6Xhb_2xX5RgSSWaBNFI4dTCz-q03Lw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTN_J67tkR3-tg0TAqwufc6haVWKsamaCpfBb3yrtlToDCpj7xpg38gvpFByMQ"
         },
         {
-          "url": "https://www.cbsnews.com/colorado/news/boulder-justice-jonbenet-ramsey-murder/",
-          "title": "Boulder officials emphasize finding justice for JonBenét Ramsey nearly 30 years after her murder",
-          "publisher": "CBS News",
+          "url": "https://www.newsweek.com/lake-mead-lake-powell-warnings-remain-12692606",
+          "title": "Lake Mead, Lake Powell Get Boost But Warnings Remain",
+          "publisher": "Newsweek",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJ4t2OWTgnJQoOFVTGLtXek_Q3nzO3_OLxxdWFMWVjQ656RO1QR2NhM9ZGfwg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs65Wo4E5kxsSOGl5mdmVYxSAPdncrTgjTQ-hfmmWJZhmLKssxR-kTr3G8dLo"
         }
       ]
     },
     {
-      "query": "hltv",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T07:00:00Z",
+      "query": "aion 2 patch notes",
+      "approx_searches": "100+",
+      "published_at": "2026-11-11T07:40:00Z",
       "related_news_urls": [
-        "https://community.skin.club/en/news/hltv-adds-economy-and-round-based-filters-to-cs2-statistics",
-        "https://www.chaseyoursport.com/esports/mouz-iem-beijing-2026-champions/13832",
-        "https://rg.org/news/esports/mouz-hltv-world-rankings-no-1-after-iem-beijing-title-vrs"
+        "https://www.mmoexp.com/News/aion-2-korea-taiwan-class-rework-what-s-coming-to-global-what-isn-t-and-how-each-class-changes.html",
+        "https://www.newsworks.co.kr/en/articleView.html?idxno=902551",
+        "https://mein-mmo.de/en/aion-2-server-down-everything-about-the-server-maintenance-and-the-patch-notes-on-november-11-2026-in-the-live-ticker,1595959/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSusOe9ZufqWT8dSHNqHOwiieu64R-JD3qXN0lZVPAiTO8wCZmXCYHTjMGD4rw",
-      "image_credit": "Skin.Club Community",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsywcMPD9FtoyRanBUAqv1qlgSoGtUZ2cXcQP7A3N9BWQriL82XFIN6d0LEzA",
+      "image_credit": "MMOEXP",
       "news": [
         {
-          "url": "https://community.skin.club/en/news/hltv-adds-economy-and-round-based-filters-to-cs2-statistics",
-          "title": "HLTV Introduces New Economy and Round Filters for CS2 Stats",
-          "publisher": "Skin.Club Community",
+          "url": "https://www.mmoexp.com/News/aion-2-korea-taiwan-class-rework-what-s-coming-to-global-what-isn-t-and-how-each-class-changes.html",
+          "title": "Aion 2 Korea/Taiwan Class Rework: What’s Coming to Global, What Isn’t, and How Each Class Changes",
+          "publisher": "MMOEXP",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSusOe9ZufqWT8dSHNqHOwiieu64R-JD3qXN0lZVPAiTO8wCZmXCYHTjMGD4rw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsywcMPD9FtoyRanBUAqv1qlgSoGtUZ2cXcQP7A3N9BWQriL82XFIN6d0LEzA"
         },
         {
-          "url": "https://www.chaseyoursport.com/esports/mouz-iem-beijing-2026-champions/13832",
-          "title": "Meet MOUZ: The IEM Beijing 2026 CS2 Champions",
-          "publisher": "Chase Your Sport",
+          "url": "https://www.newsworks.co.kr/en/articleView.html?idxno=902551",
+          "title": "[Game Station] 'Aion 2' First Anniversary Event · Gen.G - BLG 'World Championship Finals' · 'Pearl in Blue' Comic Market Entry",
+          "publisher": "뉴스웍스",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRzmOdt3q4fYABhdPnUHeeUKBq-04_zM_xKnfxRclnn1Wskyv0ZNi-AWaNbwg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSn-I_vGnmLpRFak1pduN7sc0231rWo9KFBqglDo6q0dhYuE2QjI6ItqYMgmyE"
         },
         {
-          "url": "https://rg.org/news/esports/mouz-hltv-world-rankings-no-1-after-iem-beijing-title-vrs",
-          "title": "MOUZ Rise to HLTV No. 1 at 912 Points, Ahead of FURIA",
-          "publisher": "RG.org",
+          "url": "https://mein-mmo.de/en/aion-2-server-down-everything-about-the-server-maintenance-and-the-patch-notes-on-november-11-2026-in-the-live-ticker,1595959/",
+          "title": "Aion 2: Server down - Everything about the server maintenance and the patch notes on November 11, 2026 in the live ticker",
+          "publisher": "Mein-MMO",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpUwVbJPf3H2AHp-EKt06yhnYRVWGwxDQstsC97oHpg1qnsrTIqLXlxcf0jyg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPJA8w-3TxPtViNxYYG4Y8K13O8b5K-UL8wkUuY3r4Ld4W0WFCb9k-9jt-R5g"
         }
       ]
     },
     {
-      "query": "aldo de nigris",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T06:50:00Z",
+      "query": "lori chern",
+      "approx_searches": "100+",
+      "published_at": "2026-11-11T07:40:00Z",
       "related_news_urls": [
-        "https://www.lavozarizona.com/story/entretenimiento/2026/11/10/poncho-denigris-explota-por-baile-sexy-a-su-mam-en-la-mansin-vip/92705474007/",
-        "https://www.milenio.com/espectaculos/famosos/jorge-duran-quien-es-el-influencer-perfil-edad-polemicas",
-        "https://www.infobae.com/mexico/2026/11/10/dani-flow-habla-de-la-multa-que-podria-enfrentar-tras-abandonar-la-mansion-vip-primero-estaba-mi-estado-mental/"
+        "https://www.yahoo.com/news/world/articles/nurse-took-patient-blood-pressure-193000972.html",
+        "https://cfjctoday.com/2026/11/09/owner-of-health-practice-in-kamloops-disciplined-after-offering-patient-sex/",
+        "https://www.cp24.com/news/canada/2026/11/07/bc-nurse-offered-to-have-sex-with-patient-regulator-alleges-in-protection-order/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO9mFKwuLETXe66XJBmgOiV2RmV1ysWrZ8TFEUZ3sC3KM7AdiGJy14e2t_zJY",
-      "image_credit": "azcentral.com and The Arizona Republic",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_2aH4FUsVdsOc3EXmWGIeoGUrLzw1hkTKBwKTFlZwQSK_5E6-qlUFvArZHtI",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.lavozarizona.com/story/entretenimiento/2026/11/10/poncho-denigris-explota-por-baile-sexy-a-su-mam-en-la-mansin-vip/92705474007/",
-          "title": "Poncho Denigris se enoja por baile erótico a su mamá en ‘La Mansión VIP’",
-          "publisher": "azcentral.com and The Arizona Republic",
+          "url": "https://www.yahoo.com/news/world/articles/nurse-took-patient-blood-pressure-193000972.html",
+          "title": "A nurse took their patient’s blood pressure, then allegedly asked him for sex before telling the man sex was important to ‘be in good health’",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO9mFKwuLETXe66XJBmgOiV2RmV1ysWrZ8TFEUZ3sC3KM7AdiGJy14e2t_zJY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_2aH4FUsVdsOc3EXmWGIeoGUrLzw1hkTKBwKTFlZwQSK_5E6-qlUFvArZHtI"
         },
         {
-          "url": "https://www.milenio.com/espectaculos/famosos/jorge-duran-quien-es-el-influencer-perfil-edad-polemicas",
-          "title": "¿Quién es Jorge Durán? Él es el influencer que entra a La Mansión VIP 2 tras la polémica baja de Dany Flow",
-          "publisher": "Milenio",
+          "url": "https://cfjctoday.com/2026/11/09/owner-of-health-practice-in-kamloops-disciplined-after-offering-patient-sex/",
+          "title": "Owner of health practice in Kamloops disciplined after offering patient sex",
+          "publisher": "CFJC Today Kamloops",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSS2Ghk34PihGiDk-20a1IlNPdkUFLQNxF6WNL-69BS_o68f7Jg7PSJ-zHvXCQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3xJ8GvFw6zWtrImnAPznbKRxLRTUh-3l1Dj5X3XXsNoSmw7AMCqDwnfuJHdQ"
         },
         {
-          "url": "https://www.infobae.com/mexico/2026/11/10/dani-flow-habla-de-la-multa-que-podria-enfrentar-tras-abandonar-la-mansion-vip-primero-estaba-mi-estado-mental/",
-          "title": "Dani Flow habla de la multa que podría enfrentar tras abandonar La Mansión VIP: “Primero estaba mi estado mental”",
-          "publisher": "Infobae",
+          "url": "https://www.cp24.com/news/canada/2026/11/07/bc-nurse-offered-to-have-sex-with-patient-regulator-alleges-in-protection-order/",
+          "title": "B.C. nurse offered to have sex with patient, regulator alleges in protection order",
+          "publisher": "CP24",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfumY-1BEXnberBqKaEAtZ0hKtsH9xqQ38VtgUdSi3_VFSWsbf70eRxr5dV0Q"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMO3SbWATfXVNmwjXeieUT2rfCK0326eRIqYXfBJEDDqeB60CqmUgj74INi7w"
         }
       ]
     },
     {
-      "query": "gta 6 pc",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-11T06:50:00Z",
+      "query": "natalie harp",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-11T07:30:00Z",
       "related_news_urls": [
-        "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10",
-        "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
-        "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/"
+        "https://www.cnbc.com/2026/11/10/trump-cspan-call-elections.html",
+        "https://thehill.com/homenews/administration/6210232-donald-trump-immigration-hegseth-impeachment-cspan-show/",
+        "https://www.newsweek.com/mysterious-woman-giggles-during-trumps-surprise-call-with-cspan-12692402"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSk249MDEeYsamkE71yKC0ECdZNDRlGbRKQe3_RZaj1uwDwCU1bTkE0XNFdCZM",
-      "image_credit": "Rockstar Games",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2KhAuXnQdlVjZQO2rYIbwLqiDs281b8bieTS7nnJP7GaKMX1-EBN3CVzeE_M",
+      "image_credit": "CNBC",
       "news": [
         {
-          "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10",
-          "title": "Grand Theft Auto VI Pre-Load Begins on November 10",
-          "publisher": "Rockstar Games",
+          "url": "https://www.cnbc.com/2026/11/10/trump-cspan-call-elections.html",
+          "title": "Trump’s C-SPAN call marks latest surprise post-midterm appearance",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSk249MDEeYsamkE71yKC0ECdZNDRlGbRKQe3_RZaj1uwDwCU1bTkE0XNFdCZM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2KhAuXnQdlVjZQO2rYIbwLqiDs281b8bieTS7nnJP7GaKMX1-EBN3CVzeE_M"
         },
         {
-          "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
-          "title": "Grand Theft Auto VI Comes to XBOX One and XBOX Series X|S Through XBOX Cloud Gaming on November 19",
-          "publisher": "XBOX Wire",
+          "url": "https://thehill.com/homenews/administration/6210232-donald-trump-immigration-hegseth-impeachment-cspan-show/",
+          "title": "Trump calls into premiere of C-SPAN’s new nighttime show",
+          "publisher": "The Hill",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsnVUS5gmNih_dT2l5z5J6JPPY0XgYH5P1Q5en_zN_ixQevQP0cz4kaLiphzY"
         },
         {
-          "url": "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/",
-          "title": "Pre-load Grand Theft Auto VI on PS5 starting today",
-          "publisher": "PlayStation.Blog",
+          "url": "https://www.newsweek.com/mysterious-woman-giggles-during-trumps-surprise-call-with-cspan-12692402",
+          "title": "Mysterious Woman Giggles During Trump’s Surprise Call With CSPAN",
+          "publisher": "Newsweek",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmQPZtB1cfmtJ8v-9159sSJpw2Cr8v495zAc5tM6Spqsus45lZErGPllHDXDY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7aDKSYOSAfluZL8fB2sxAgyBO5pzfOBJcLIW3WR4m-14TNb5KIsJVP1nIqcU"
         }
       ]
     },
     {
-      "query": "camp flog gnaw",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T06:30:00Z",
+      "query": "a bizarre run codes",
+      "approx_searches": "100+",
+      "published_at": "2026-11-11T07:30:00Z",
       "related_news_urls": [
-        "https://www.aboutamazon.com/news/entertainment/camp-flog-gnaw-tyler-the-creator-livestream-amazon-music",
-        "https://floodmagazine.com/236307/camp-flog-gnaw-2026-set-times/",
-        "https://www.digitalmusicnews.com/2026/11/08/amazon-music-livestream-camp-flog-gnaw-2026/"
+        "https://www.ign.com/wikis/glorybound-roblox/Glorybound_Codes",
+        "https://www.gamesradar.com/games/survival/glorybound-codes/",
+        "https://www.pcgamesn.com/roblox/glorybound-codes"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqMglw3nmGz89XYHUgkMS8Q6N90R6y0tYpkd2K5EAkY9T_0FJzVrYEY0eMqrg",
-      "image_credit": "About Amazon",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHkRIMaWbCjGKk2OgI_vCp0aY-kgzanwREKQJXKGoIhi3xzcCjI8bkKUeFwAI",
+      "image_credit": "IGN",
       "news": [
         {
-          "url": "https://www.aboutamazon.com/news/entertainment/camp-flog-gnaw-tyler-the-creator-livestream-amazon-music",
-          "title": "How to watch Camp Flog Gnaw 2026 festival on Amazon Music, Prime Video, and Twitch",
-          "publisher": "About Amazon",
+          "url": "https://www.ign.com/wikis/glorybound-roblox/Glorybound_Codes",
+          "title": "GloryBound Codes (November 2026)",
+          "publisher": "IGN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqMglw3nmGz89XYHUgkMS8Q6N90R6y0tYpkd2K5EAkY9T_0FJzVrYEY0eMqrg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHkRIMaWbCjGKk2OgI_vCp0aY-kgzanwREKQJXKGoIhi3xzcCjI8bkKUeFwAI"
         },
         {
-          "url": "https://floodmagazine.com/236307/camp-flog-gnaw-2026-set-times/",
-          "title": "Camp Flog Gnaw Announces Set Times for This Weekend",
-          "publisher": "FLOOD Magazine",
+          "url": "https://www.gamesradar.com/games/survival/glorybound-codes/",
+          "title": "GloryBound codes (November 2026) for Lucky Spins and Chests",
+          "publisher": "GamesRadar+",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxKRTUKCRMdJ7SUIa49AkrRMhzQP3tdL3eJV-glHhVTJWKzzdEjgivfFeSkss"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDKPMaD2d3MSRy8yn8HtUcRC0cUPwwR0qAyqIO6ZUa5fSzpksU2ZTD-0tsak4"
         },
         {
-          "url": "https://www.digitalmusicnews.com/2026/11/08/amazon-music-livestream-camp-flog-gnaw-2026/",
-          "title": "Amazon Music Tapped to Livestream Tyler, the Creator’s Camp Flog Gnaw Carnival 2026",
-          "publisher": "Digital Music News",
+          "url": "https://www.pcgamesn.com/roblox/glorybound-codes",
+          "title": "GloryBound codes November 2026",
+          "publisher": "PCGamesN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRR6yuFAZO28k-hZbnq-Nvi1cTx64dCwHaBZ3JvWn_0UBkmXD8qCJsdQM66KE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSUf0S0kCZArC-8bNA4uCdjEKtmyB_HWFFAzbosyLKNtyNcYsYbEGL9EKMbNQ"
         }
       ]
     },
     {
-      "query": "iron man",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T06:30:00Z",
+      "query": "playstation store",
+      "approx_searches": "100+",
+      "published_at": "2026-11-11T07:30:00Z",
       "related_news_urls": [
-        "https://www.cbr.com/visionquest-changes-iron-man-mcu-timeline/",
-        "https://variety.com/2026/film/news/james-gunn-exits-dc-studios-losing-money-1236944392/",
-        "https://deadline.com/2026/11/dc-studios-james-gunn-peter-safran-leaving-1237217374/"
+        "https://variety.com/2026/gaming/news/gta-6-preorders-expectations-launch-1236943278/",
+        "https://www.wsj.com/business/earnings/take-two-interactive-software-reports-lower-revenue-ahead-of-gta-vi-launch-76cb22cb",
+        "https://finance.yahoo.com/markets/stocks/article/take-two-stock-rises-on-unprecedented-preorders-for-grand-theft-auto-vi-160644526.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrT_FeB1Icmv-xmIGSZIfeQDVo0C9ABfHsYgGWJsNsCnuVTha76epRkSKPNRQ",
-      "image_credit": "Comic Book Resources",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSe6D2hdsqu3Gusi3vyff-3VGSyM80FVd48wlWhpzECpRRdvlqqyJy62MZaT_o",
+      "image_credit": "Variety",
       "news": [
         {
-          "url": "https://www.cbr.com/visionquest-changes-iron-man-mcu-timeline/",
-          "title": "Disney Just Changed Robert Downey Jr.'s Entire 18-Year Iron Man Timeline",
-          "publisher": "Comic Book Resources",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrT_FeB1Icmv-xmIGSZIfeQDVo0C9ABfHsYgGWJsNsCnuVTha76epRkSKPNRQ"
-        },
-        {
-          "url": "https://variety.com/2026/film/news/james-gunn-exits-dc-studios-losing-money-1236944392/",
-          "title": "DC Studios Exit: James Gunn and Peter Safran Spent Big, Lost Money and Didn’t Hook Audiences",
+          "url": "https://variety.com/2026/gaming/news/gta-6-preorders-expectations-launch-1236943278/",
+          "title": "‘GTA 6’ Presales ‘Far in Excess’ of Expectations Ahead of Next Week’s Launch, Take-Two CEO Says",
           "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfghtQrAZp_GvoNvn3l8_m77OvkVRN6Tlc6gKWYw71MdZAV19a3fS94ojKCsg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSe6D2hdsqu3Gusi3vyff-3VGSyM80FVd48wlWhpzECpRRdvlqqyJy62MZaT_o"
         },
         {
-          "url": "https://deadline.com/2026/11/dc-studios-james-gunn-peter-safran-leaving-1237217374/",
-          "title": "DC Studios Shakeup: James Gunn & Peter Safran Out, Former Marvel Exec Jeremy Latcham In",
-          "publisher": "Deadline",
+          "url": "https://www.wsj.com/business/earnings/take-two-interactive-software-reports-lower-revenue-ahead-of-gta-vi-launch-76cb22cb",
+          "title": "Take-Two Interactive Software Reports Lower Revenue Ahead of ‘GTA VI’ Launch",
+          "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBSzcpr9UcIHbbJP4UQYDE35qE5G568ZA5NTtOn4MDKeS03CjJCDbIVjqu7H8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBCUODacdmolWXeHgB6w6uh_nsRumPTlfUk-8gwOvLgFu6NI7f62_4bbBW8Pw"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/article/take-two-stock-rises-on-unprecedented-preorders-for-grand-theft-auto-vi-160644526.html",
+          "title": "Take-Two stock rises on 'unprecedented' preorders for 'Grand Theft Auto VI'",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPa8D2oBTy627FcqRP5JNrEhwx4F-dBRvGUm3GMu_8U01HBbH8_xdJTXjktrk"
         }
       ]
     },
     {
-      "query": "scoot henderson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T06:20:00Z",
+      "query": "san diego",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T07:30:00Z",
       "related_news_urls": [
-        "https://www.blazersedge.com/trail-blazers-news/118225/blazers-move-scoot-henderson-out-of-starting-lineup-versus-thunder",
-        "https://sports.yahoo.com/articles/scoot-henderson-returning-bench-favor-052006312.html",
-        "https://www.cbssports.com/fantasy/basketball/news/trail-blazers-scoot-henderson-not-starting-tuesday/"
+        "https://www.espn.com/mens-college-basketball/recap?gameId=401909761",
+        "https://247sports.com/college/colorado/article/ian-inman-goldfish-shooting-night-colorado-mens-basketball-win-san-diego-292557149/",
+        "https://www.dailycamera.com/2026/11/10/colorado-buffaloes-basketball-noah-feddersen-san-diego/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9jtw4ymgfOyUJbPZ2y94fMdwYdTwPLM2Uh5I38kzJDkQrkakODyVtwYcLuRg",
-      "image_credit": "Blazer's Edge",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQo3wgqIxfOxY4v7Wqwghn1BpS_INAojoJKsuWoujKwfXR9zoTRdrOqv-4S2D8",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.blazersedge.com/trail-blazers-news/118225/blazers-move-scoot-henderson-out-of-starting-lineup-versus-thunder",
-          "title": "Blazers Move Scoot Henderson Out of Starting Lineup Versus Thunder",
-          "publisher": "Blazer's Edge",
+          "url": "https://www.espn.com/mens-college-basketball/recap?gameId=401909761",
+          "title": "Colorado 83-75 San Diego (Nov 10, 2026) Game Recap",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9jtw4ymgfOyUJbPZ2y94fMdwYdTwPLM2Uh5I38kzJDkQrkakODyVtwYcLuRg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQo3wgqIxfOxY4v7Wqwghn1BpS_INAojoJKsuWoujKwfXR9zoTRdrOqv-4S2D8"
         },
         {
-          "url": "https://sports.yahoo.com/articles/scoot-henderson-returning-bench-favor-052006312.html",
-          "title": "Scoot Henderson returning to the bench in favor of Sidy Cissoko",
-          "publisher": "Yahoo Sports",
+          "url": "https://247sports.com/college/colorado/article/ian-inman-goldfish-shooting-night-colorado-mens-basketball-win-san-diego-292557149/",
+          "title": "Inside Ian Inman's 'goldfish' shooting night in Colorado's win over San Diego",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZpuINRNvHDWaxcr-lvgQRz03D0DvhY9_3HAkSWefhw6faH2jeuk9t2cpOhbY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeocFRNzij1wKs6iwlQLwaiEknHAaAk4yg82oc1WygkcYezN_Lm-widduiHJE"
         },
         {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/trail-blazers-scoot-henderson-not-starting-tuesday/",
-          "title": "Trail Blazers' Scoot Henderson: Not starting Tuesday",
-          "publisher": "CBS Sports",
+          "url": "https://www.dailycamera.com/2026/11/10/colorado-buffaloes-basketball-noah-feddersen-san-diego/",
+          "title": "Noah Feddersen gets it done at crunch time for CU Buffs men’s basketball",
+          "publisher": "Daily Camera",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRw4JMDZRjt14kdxzrzELRaPUVHyA_LPyMEZ6Z5z1-MPE4bV8sDE77o1Kd2XnA"
-        }
-      ]
-    },
-    {
-      "query": "amanda nunes",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T06:20:00Z",
-      "related_news_urls": [
-        "https://www.ufc.com/news/coach-conversation-polymarket-ufc-334-kayla-harrison-vs-amanda-nunes",
-        "https://mmajunkie.usatoday.com/story/sports/ufc/2026/11/10/kayla-harrison-amanda-nunes-ufc-334-faceoff-times-square/92715520007/",
-        "https://www.centraloregondaily.com/sports/video-ufc-334-countdown-for-kayla-harrison-vs-amanda-nunes/article_113d20f9-ca66-5ffc-b603-15efd8f7c6dc.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVjgoRxROdXMMGHy30nDd4dUdiKIDWsZs6Lba-D5KMOUYSHKadUL8cy85aVHA",
-      "image_credit": "UFC.com",
-      "news": [
-        {
-          "url": "https://www.ufc.com/news/coach-conversation-polymarket-ufc-334-kayla-harrison-vs-amanda-nunes",
-          "title": "Coach Conversation | Polymarket UFC 334: Kayla Harrison vs Amanda Nunes",
-          "publisher": "UFC.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVjgoRxROdXMMGHy30nDd4dUdiKIDWsZs6Lba-D5KMOUYSHKadUL8cy85aVHA"
-        },
-        {
-          "url": "https://mmajunkie.usatoday.com/story/sports/ufc/2026/11/10/kayla-harrison-amanda-nunes-ufc-334-faceoff-times-square/92715520007/",
-          "title": "UFC 334 faceoff: Kayla Harrison, Amanda Nunes exchange serious stares in Times Square",
-          "publisher": "MMA Junkie",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKkpuEACDBszC6eOV6DpQtwyHK3tAtiYvzK4kxgVS2dbzqdGTuaPJE5DzJkzQ"
-        },
-        {
-          "url": "https://www.centraloregondaily.com/sports/video-ufc-334-countdown-for-kayla-harrison-vs-amanda-nunes/article_113d20f9-ca66-5ffc-b603-15efd8f7c6dc.html",
-          "title": "Video: UFC 334 'Countdown' for Kayla Harrison vs. Amanda Nunes",
-          "publisher": "Central Oregon Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8k8VnpEPjk_D-Rrug_F9S9S6BBKRHNblN7FH5VXZ70lC2VNqvAENK9TB8a3s"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSv6_p14-Qf3gMuxJsS-aCM5ir-maGDxvx_s3dISukMGEZuYdn-ADW6JtsL018"
         }
       ]
     }
