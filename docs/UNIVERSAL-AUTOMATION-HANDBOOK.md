@@ -13,6 +13,7 @@ Canonical jobs: [#1913](https://github.com/www-infinity4/QuantaPhi/issues/1913),
 ## Available source implementation
 
 - `quanta-feed-search-assist.mjs`: deterministic suggestions from `ALL_FEED_CARDS`; only explicit source URLs using HTTPS or safe internal paths. No off-site query, hidden tracking, account reads, autofill into third-party forms, or automatic submit.
+- `quanta-home-search-assist.mjs`, `quanta-home-search-assist.css` and the existing `index.html` primary input `#q`: top-of-homepage autocomplete now uses the **same public catalog** without a new search engine. Selecting a match fills `#q` and leaves the existing Search button in charge; an independently clicked source link opens its grounded destination. No partial search is sent to Bubbles, a third-party provider or an account form. The helper never changes wallet/search execution logic.
 - `quanta-feed.mjs` and `quanta-feed.css`: original Oracle/Quick Card feed; the search region appears when a visitor types at least two characters. Tapping a suggestion fills *only* the feed's own search; choosing Original source opens the validated destination after a separate tap. Escape closes suggestions. The source card, wallets and ranking remain intact.
 - Moltnook `agents/repository-engine/automation-recipes.mjs` and `color-task-routing.mjs`: seven typed recipe descriptors and safe advisory routing in the existing engine; no authorization or persistency is granted by a descriptor.
 
