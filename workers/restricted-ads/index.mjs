@@ -28,7 +28,7 @@ export function allowCreative(row,jurisdiction,now=Date.now()){
  let approved_jurisdictions=[];
  try{approved_jurisdictions=JSON.parse(row.approved_jurisdictions)}catch{return null}
  if(!Array.isArray(approved_jurisdictions)||approved_jurisdictions.length>60)return null;
- const asset=eligibleCreative({...row,approved:true,image:row.image,approved_jurisdictions}, {
+ const asset=eligibleCreative({...row,approved:true,rights_cleared:row.rights_cleared===1,image:row.image,approved_jurisdictions}, {
   allowed:true,verified_over_21:true,opted_in:true,category:'cannabis',jurisdiction
  },now);
  if(!asset)return null;
@@ -102,7 +102,7 @@ export default {
    ).bind(verified.jurisdiction,'cannabis').first();
    if(!allowJurisdiction(jurisdiction))return deny('jurisdiction_not_approved',403);
    const {results}=await env.ADS_DB.prepare(
-    'SELECT id,category,approved,rights_cleared,license_id,advertiser,publisher_domain,image,url,reviewed_at,approved_jurisdictions,title,description FROM restricted_ad_creatives WHERE category=? AND approved=1 AND rights_cleared=1 ORDER BY reviewed_at DESC LIMIT 32'
+    'SELECT id,category,approved,rights_cleared,rights_expires_at,campaign_starts_at,campaign_ends_at,sponsor_agreement_id,license_id,advertiser,publisher_domain,image,url,reviewed_at,approved_jurisdictions,title,description FROM restricted_ad_creatives WHERE category=? AND approved=1 AND rights_cleared=1 ORDER BY reviewed_at DESC LIMIT 32'
    ).bind('cannabis').all();
    const creatives=(results||[]).map(row=>allowCreative(row,verified.jurisdiction)).filter(Boolean).slice(0,16);
    return json({decision:{allowed:true,verified_over_21:true,opted_in:true,category:'cannabis',jurisdiction:verified.jurisdiction},creatives});
