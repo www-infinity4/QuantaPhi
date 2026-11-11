@@ -22,14 +22,14 @@ const safeText=v=>String(v??'').trim().slice(0,650);
 export function departmentFor(card={}){
  const id=safeText(card.id).toLowerCase(),cat=safeText(card.category||card.kind).toLowerCase();
  const text=[id,cat,safeText(card.name||card.title)].join(' ').toLowerCase();
- if(/\b(21\+|dispensary|cannabis|adult store)\b|^adult-|^dispensary-|brucebannerweedmaps/.test(text))return 'adult';
+ if(/21\+|\b(dispensary|cannabis|adult store)\b|^adult-|^dispensary-|brucebannerweedmaps|infinityadultcontentcard|adult-content-preferences/.test(text))return 'adult';
  if(/\b(health|medical|screening|clinic|pharmacy|mychart)\b/.test(cat))return 'healthcare';
  if(/\b(sport|nfl|nba|mlb|nhl|football|baseball|basketball|hockey|soccer|team|olympic)\b/.test(cat)||/\b(nfl|nba|mlb|sports?|scores?|packers|lions|world.series)\b|googletrend(nba|mlb)|world-series/.test(id))return 'sports';
  if(/\b(news|journalis|civic|government|public.servic|politic)\b/.test(cat)||/\b(news|headline|breaking)\b/.test(id))return 'news';
  if(/\b(restaur|food|grocer|recipe|dining|pizza|produce|burger|coffee|cook)\b/.test(cat))return 'restaurants';
  if(/\b(develop|code|programming|builder|software|ai tools|computing)\b/.test(cat)||/\b(phiProjectActions|developer|termux|code.phi|bubbles.aicard)\b/i.test(id))return 'developers';
- if(/\b(radio|music|song|album|podcast|audio)\b/.test(cat)||/\b(radio|music|song|spotify)\b/.test(id))return 'radio';
- if(/\b(movie|tv|video|cinema|film|channel|stream)\b/.test(cat)||/\b(movie|tv|video|cinema|film|channel)\b/.test(id))return 'media';
+ if(/\b(radio|music|song|album|podcast|audio)\b/.test(cat)||/radio|music|song|spotify/.test(id))return 'radio';
+ if(/\b(movie|tv|video|cinema|film|channel|stream)\b/.test(cat)||/movie|tv|video|cinema|film|channel/.test(id))return 'media';
  if(/\b(travel|touris|hotel|destination|vacation|cruise)\b/.test(cat))return 'travel';
  if(/\b(science|physics|research|history|learn|education|museum|books?)\b/.test(cat))return 'science';
  return 'shopping';
