@@ -1,0 +1,30 @@
+name: NES and SNES original Quick Card
+on:
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'oracle-card-deck.js'
+      - 'nes-snes-quick-card.js'
+      - 'nes-snes-quick-card.css'
+      - 'oracle-card-deck.css'
+      - 'workers/quantaphi-site/worker.js'
+      - 'nes-snes-player.html'
+      - 'assets/nes-snes-card.svg'
+      - 'test/nes-snes-quick-card.test.cjs'
+      - '.github/workflows/nes-snes-quick-card.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check nes-snes-quick-card.js
+      - run: node --test test/nes-snes-quick-card.test.cjs
+      - run: node --test test/phi-channel-cards.test.cjs test/oracle-card-deck.test.cjs

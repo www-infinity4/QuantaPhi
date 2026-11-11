@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>NES / SNES · QuantaPhi local game player</title>
+<meta name="color-scheme" content="dark">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;background:#131129;color:#fff;font:17px/1.45 system-ui,Arial,sans-serif}
+main{padding:14px;max-width:960px;margin:auto}
+h1{margin:0 0 6px;font-size:24px}
+p{line-height:1.5;margin:8px 0;color:#e5dcf1}
+.controls{display:grid;gap:10px;padding:12px;background:#221a40;border:1px solid #62517e;border-radius:15px}
+label{font-weight:750}
+select,input[type=file],button{font:inherit;width:100%;min-height:48px;padding:10px;border-radius:12px}
+select,input[type=file]{background:#fff;color:#241b36;border:2px solid #bba8d9}
+button{border:0;background:#eee0ff;color:#2d144d;font-weight:800}
+button:disabled{opacity:.6}
+button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #f4d368;outline-offset:2px}
+.row{display:flex;flex-wrap:wrap;gap:10px}.row button{flex:1 1 150px}
+#game{margin-top:12px;min-height:300px;border-radius:13px;background:#030308;overflow:hidden}
+#status{font-weight:700;color:#f6dcaa}
+.note{font-size:14px;color:#c9c0d4}
+@media(max-width:420px){main{padding:10px}h1{font-size:21px}#game{min-height:240px}}
+</style>
+</head>
+<body>
+<main>
+<h1>NES / SNES · Local player</h1>
+<p>Choose a game file you have permission to use. Your selected ROM stays in this browser session; this page has no ROM upload endpoint.</p>
+<div class="controls">
+<label for="system">System</label>
+<select id="system" aria-label="Choose NES or SNES"><option value="nes">NES · 8-bit</option><option value="snes">SNES · 16-bit</option></select>
+<label for="romFile">Game file from this device</label>
+<input id="romFile" type="file" accept=".nes,.sfc,.smc" aria-label="Choose your authorized NES or SNES ROM file">
+<div class="row"><button id="play" type="button">Play selected game</button><button id="reset" type="button">Reset player</button></div>
+<p id="status" role="status" aria-live="polite">Ready. Select an NES (.nes) or SNES (.sfc, .smc) file.</p>
+</div>
+<div id="game" aria-label="NES or SNES game screen"></div>
+<p class="note">EmulatorJS supplies the on-screen controls, keyboard/gamepad support, and save-state tools when the selected core starts. Its CDN requires an internet connection. No game or firmware is distributed here.</p>
+</main>
+<script>
+(function(){
+'use strict';
+const allowed=new Set(['nes','snes']);
+const system=document.getElementById('system');
+const input=document.getElementById('romFile');
+const play=document.getElementById('play');
+const reset=document.getElementById('reset');
+const status=document.getElementById('status');
+let currentBlob='',started=false,pending=false;
+const say=text=>{status.textContent=text;};
+const extOf=name=>String(name||'').toLowerCase().match(/\.(nes|sfc|smc)$/)?.[1]||'';
+reset.addEventListener('click',()=>location.reload());
+input.addEventListener('change',()=>{
+ if(started)return;
+ const ext=extOf(input.files?.[0]?.name);
+ if(ext){system.value=ext==='nes'?'nes':'snes';say('Selected '+system.value.toUpperCase()+' file. Press Play to load the emulator.');}
+ else say('Select a .nes, .sfc or .smc game file.');
+});
+play.addEventListener('click',async()=>{
+ if(started||pending)return;
+ const file=input.files?.[0],ext=extOf(file?.name);
+ if(!file||!ext){say('Choose a compatible .nes, .sfc or .smc file first.');return;}
+ if(!file.size||file.size>32*1024*1024){say('File must be between 1 byte and 32 MB.');return;}
+ const expected=ext==='nes'?'nes':'snes';
+ if(!allowed.has(system.value)||system.value!==expected){say('The file extension does not match the selected system. Choose '+expected.toUpperCase()+'.');return;}
+ // Lock before asynchronous file-header inspection to prevent a second Play.
+ pending=true;play.disabled=true;
+ if(ext==='nes'){
+  try{
+   const bytes=new Uint8Array(await file.slice(0,4).arrayBuffer());
+   if(bytes[0]!==0x4e||bytes[1]!==0x45||bytes[2]!==0x53||bytes[3]!==0x1a){
+    say('Not a supported NES ROM header. Choose an authorized iNES file.');pending=false;play.disabled=false;return;
+   }
+  }catch{say('Could not read the selected file on this device.');pending=false;play.disabled=false;return;}
+ }
+ started=true;pending=false;
+ input.disabled=true;system.disabled=true;
+ currentBlob=URL.createObjectURL(file);
+ window.EJS_player='#game';
+ window.EJS_core=expected;
+ window.EJS_gameUrl=currentBlob;
+ window.EJS_gameName=file.name.slice(0,120);
+ window.EJS_pathtodata='https://cdn.emulatorjs.org/stable/data/';
+ window.EJS_startOnLoaded=true;
+ window.EJS_onGameStart=()=>say('Game started. Touch or gamepad controls are available inside the player.');
+ const loader=document.createElement('script');
+ loader.src=window.EJS_pathtodata+'loader.js';
+ loader.referrerPolicy='no-referrer';
+ loader.onerror=()=>say('EmulatorJS could not load from its CDN. Game start not verified; check your connection and reset the player.');
+ say('Loading NES / SNES emulator core. A game has not started yet.');
+ document.body.appendChild(loader);
+});
+window.addEventListener('pagehide',()=>{if(currentBlob){URL.revokeObjectURL(currentBlob);currentBlob='';}});
+})();
+</script>
+</body>
+</html>

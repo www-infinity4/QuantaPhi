@@ -30,6 +30,7 @@ const choices=[
  ['phiChannelCards','Infinity TV Guide'],
  ['tvQuantExpansion','CNN CNBC NASA PBS · Quant Movies'],
   ['infinityStarQuestCard','StarQuest · Infinity TV'],
+ ['nesSnesQuickCard','NES / SNES · Play your legal ROMs'],
   ['infinityOmniTvCard','Omni TV · Channel remote'],
   ['infinityChillerCard','Chiller · Classic suspense TV'],
   ['infinityShopLcCard','Shop LC · Live shopping TV'],
@@ -103,6 +104,7 @@ const CARD_DIRECTIONS={
  phiChannelCards:['channels','Television','Browse the Infinity TV Guide and select a channel'],
  tvQuantExpansion:['quant-tv-movies','Television','Watch NASA science documentaries and find official CNN/CNBC/PBS channels'],
   infinityStarQuestCard:['infinity-tv-starquest','Television','Play the current StarQuest selected movie and browse the guide'],
+  nesSnesQuickCard:['nes-snes-player','Games','Play your own licensed NES or SNES game on Android or desktop'],
   infinityOmniTvCard:['infinity-tv-omni','Television','Use Omni TV’s remote to select verified source channels'],
   infinityChillerCard:['infinity-tv-chiller','Television','Watch a Chiller selected suspense program with original source details'],
   infinityShopLcCard:['infinity-tv-shoplc','Television','Watch Shop LC live and open its official program guide'],
@@ -154,7 +156,7 @@ const entries=unique.map(([id,title])=>{
 const STORE='oracle:card-activity:v1';
 const spotlightRequested=(()=>{try{
  const url=new URL(location.href);
- const names={twitter:'xTwitterCard',x:'xTwitterCard','x-twitter':'xTwitterCard','x-spaces':'xSpacesQuickCard',zeus:'coliseumZeusCard',coliseum:'coliseumZeusCard',walmart:'walmartShoppingCard',google:'source-google','kyou':'liveFoxGameCard','kyou-live':'liveFoxGameCard','kyou-fox':'liveFoxGameCard','fox-live-game':'liveFoxGameCard','fox-live-news':'liveFoxNewsCard',starquest:'infinityStarQuestCard',chiller:'infinityChillerCard','shop-lc':'infinityShopLcCard',shoplc:'infinityShopLcCard',omnitv:'infinityOmniTvCard','omni-tv':'infinityOmniTvCard','termux':'trendingAppTermux','trending-apps':'trendingAppTermux','android-apps':'trendingAppTermux','tv-guide':'phiChannelCards','fox-one':'source-fox-one',foxone:'source-fox-one','fox-one-live-news':'source-fox-one-live-news',foxnewslive:'source-fox-one-live-news',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture'};
+ const names={twitter:'xTwitterCard',x:'xTwitterCard','x-twitter':'xTwitterCard','x-spaces':'xSpacesQuickCard',zeus:'coliseumZeusCard',coliseum:'coliseumZeusCard',walmart:'walmartShoppingCard',google:'source-google','kyou':'liveFoxGameCard','kyou-live':'liveFoxGameCard','kyou-fox':'liveFoxGameCard','fox-live-game':'liveFoxGameCard','fox-live-news':'liveFoxNewsCard',starquest:'infinityStarQuestCard',nes:'nesSnesQuickCard',snes:'nesSnesQuickCard',chiller:'infinityChillerCard','shop-lc':'infinityShopLcCard',shoplc:'infinityShopLcCard',omnitv:'infinityOmniTvCard','omni-tv':'infinityOmniTvCard','termux':'trendingAppTermux','trending-apps':'trendingAppTermux','android-apps':'trendingAppTermux','tv-guide':'phiChannelCards','fox-one':'source-fox-one',foxone:'source-fox-one','fox-one-live-news':'source-fox-one-live-news',foxnewslive:'source-fox-one-live-news',pixie:'pixieStoryCard',nba:'googleTrendNba',mlb:'googleTrendMlb',media:'googleTrendCulture'};
  names.housing='disabilityHousingCard';names['disability-housing']='disabilityHousingCard';names['home-access']='disabilityHousingCard';
  const requested=url.searchParams.get('card');
  return names[requested]||(requested&&/^[a-zA-Z0-9-]+$/.test(requested)?requested:null);
@@ -528,7 +530,7 @@ function show(entry,remember=true,automatic=false){
    // the generic QuantaPhi site preview used by unrelated URLs.
    const mediaSrc=displayed.node.querySelector('[data-walmart-image],.qbp-photo,.sap-feature img,.iqc-media img,.qcx-art img,.premium-selected img,.oracle-original-cover img,img[src]')?.getAttribute('src')||'';
    mountCardActions(container,{id:displayed.feedId||displayed.id,name:displayed.title,
-    category:displayed.category,official:displayed.official,route:'/?card='+encodeURIComponent(displayed.id),mediaSrc});
+    category:displayed.category,official:displayed.official,route:'/?card='+encodeURIComponent(displayed.id)+(displayed.id==='nesSnesQuickCard'?'&nesSnesPreview=1':''),mediaSrc});
    stage.append(container);
   }).catch(()=>{status.textContent='Card actions unavailable; existing card remains usable.';});
  }
