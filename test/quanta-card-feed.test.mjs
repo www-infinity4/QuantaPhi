@@ -5,7 +5,7 @@ import {DISCOVERY_CARDS,findDiscovery,safeDiscovery} from '../quanta-feed-catalo
 import {ALL_FEED_CARDS,feedCard} from '../quanta-feed.mjs';
 import {validSpaceLink,readIndexedSpaces} from '../quanta-feed-spaces.mjs';
 import {quantScores,loadOwnQuantScores} from '../quanta-feed-quants.mjs';
-import {cleanFeedState,feedCandidates,nextFeedCard,nextFeedDirection,directionScore,markOpened,markViewed,toggleFollowing} from '../quanta-feed-rank.mjs';
+import {cleanFeedState,feedCandidates,nextFeedCard,nextFeedDirection,directionScore,markOpened,markViewed,toggleFollowing,toggleInterest} from '../quanta-feed-rank.mjs';
 const raw=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 const base=()=>({...cleanFeedState({}),catalog:ALL_FEED_CARDS});
 test('public contains every original quick card and 25 independent discovery cards',()=>{
@@ -44,14 +44,17 @@ test('following saves only opted-in cards and removes them on toggle',()=>{
  s=toggleFollowing(s,card.id);
  assert.equal(feedCandidates(ALL_FEED_CARDS,'following',s).length,0);
 });
-test('for you uses explicit engagement and category similarity without opaque or private financial records',()=>{
+test('For You requires chosen categories, then ranks matching cards by bounded interest',()=>{
  const cards=ALL_FEED_CARDS;
  let state=base();
  const radio=feedCard('radio-zenith-console'),other=feedCard('radio-zenith-transoceanic');
  for(let i=0;i<4;i++)state=markOpened(state,radio.id);
+ assert.equal(feedCandidates(cards,'for-you',state).length,0,'clicks never silently enroll a category');
+ state=toggleInterest(state,'radio');
  const ranked=feedCandidates(cards,'for-you',state);
  assert.equal(ranked.filter(c=>c.origin!=='infinity-accepted')[0].id,radio.id);
- assert.ok(ranked.indexOf(other)<ranked.indexOf(feedCard('whatsapp')),'radio interest helps another radio');
+ assert.ok(ranked.includes(other),'chosen radio category includes other radio cards');
+ assert.ok(!ranked.includes(feedCard('whatsapp')),'unselected unrelated apps are excluded');
  assert.equal(state.counts[radio.id],4);
  assert.ok(!JSON.stringify(cleanFeedState(state)).includes('token'));
 });
@@ -126,9 +129,10 @@ test('For You uses only signed-in committed Quant search topics and never persis
  const map=quantScores(topics,ALL_FEED_CARDS);
  assert.ok(map['radio-philco-90']>0);
  assert.ok(map['silver']>0);
- const state={...base(),quantScores:map};
+ const state={...base(),interests:['radio'],quantScores:map};
  const ranked=feedCandidates(ALL_FEED_CARDS,'for-you',state);
- assert.ok(ranked.indexOf(feedCard('radio-philco-90'))<ranked.indexOf(feedCard('whatsapp')));
+ assert.ok(ranked.includes(feedCard('radio-philco-90')));
+ assert.ok(!ranked.includes(feedCard('whatsapp')),'Quant scores alone cannot enroll unchosen topics');
  let requests=0;
  const bridge={authenticatedFetch:async(url)=>{requests++;assert.match(url,/quants\/interests/);return {ok:true,json:async()=>({ok:true,total_searches:15,topics})}}};
  const result=await loadOwnQuantScores(bridge,ALL_FEED_CARDS);
@@ -165,6 +169,7 @@ test('Following is strict, Public remains broad, For You uses Quant interests wi
  assert.equal(nextFeedDirection(cards,'following',s,'story').card,null);
  s=toggleFollowing(s,'writer');
  assert.equal(nextFeedDirection(cards,'following',s,'story').card.id,'writer');
+ s=toggleInterest(s,'radio');
  s={...s,quantScores:{radio:70}};
  assert.equal(nextFeedDirection(cards,'for-you',s,'story').card.id,'radio');
  assert.equal(nextFeedDirection(cards,'public',s,'story').card.id,'writer','public contextual transition uses next writing step');
