@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T06:01:42.840585Z",
+  "checked_at": "2026-11-11T06:35:51.970848Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "el nino",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T05:40:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/06/travel/el-nino-skiing-united-states.html",
-        "https://www.usatoday.com/story/news/weather/2026/11/09/el-nino-effects-daily-us-weather/92443996007/",
-        "https://grist.org/extreme-weather/a-monstrous-el-nino-has-arrived-what-it-means-for-where-you-live/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQX7Sgy5zYFuPSXMo4rsW_lQquxzTH8F7DrtUN7vIll9cNfNZDtlJsf8SUUr9I",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/06/travel/el-nino-skiing-united-states.html",
-          "title": "A Super El Niño Is Here. What Does It Mean for Skiing?",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQX7Sgy5zYFuPSXMo4rsW_lQquxzTH8F7DrtUN7vIll9cNfNZDtlJsf8SUUr9I"
-        },
-        {
-          "url": "https://www.usatoday.com/story/news/weather/2026/11/09/el-nino-effects-daily-us-weather/92443996007/",
-          "title": "El Niño is just getting started. New effects expected soon",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFs7ozwMKA3mG3v8R0azuUsMlbGV3B-bHWKIgY3zYofhyH0AGa4dZNFBvI2LM"
-        },
-        {
-          "url": "https://grist.org/extreme-weather/a-monstrous-el-nino-has-arrived-what-it-means-for-where-you-live/",
-          "title": "A monstrous El Niño has arrived. Here’s what it means for where you live.",
-          "publisher": "Grist",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxuXwBpyMTKBNJ5zjTbR--hBygQO3VGkj8Dxg20KDEAx-C5EwI67aWP4hsRcU"
-        }
-      ]
-    },
-    {
-      "query": "emilio pagán",
+      "query": "ajay mitchell",
       "approx_searches": "500+",
-      "published_at": "2026-11-11T05:30:00Z",
+      "published_at": "2026-11-11T06:20:00Z",
       "related_news_urls": [
-        "https://www.mlbtraderumors.com/2026/11/tigers-to-sign-emilio-pagan.html",
-        "https://www.mlb.com/news/emilio-pagan-contract-with-tigers",
-        "https://www.rotowire.com/baseball/headlines/emilio-pagan-news-signs-with-detroit-1028267"
+        "https://www.montecitojournal.net/2026/11/10/courtside-at-the-coral-ajay-mitchell-returns-to-help-the-gauchos-make-their-next-move/",
+        "https://www.si.com/nba/thunder/how-thunder-ajay-mitchell-evolved-overlooked-prospect-budding-nba-star",
+        "https://sports.yahoo.com/articles/ajay-mitchells-big-season-could-000003554.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4dj9N5d2k3YZpO_mA2W04qioXUTLUk7Y5Rxk345-HAu6FMkYWY5U0soV7JTI",
-      "image_credit": "MLB Trade Rumors",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOfy1NDy3JO6Dks3wVhSQwzjkyztPFBvvQbLaLHg9gr7KE1ggTRuPMZRrzrVY",
+      "image_credit": "Montecito Journal",
       "news": [
         {
-          "url": "https://www.mlbtraderumors.com/2026/11/tigers-to-sign-emilio-pagan.html",
-          "title": "Tigers To Sign Emilio Pagán",
-          "publisher": "MLB Trade Rumors",
+          "url": "https://www.montecitojournal.net/2026/11/10/courtside-at-the-coral-ajay-mitchell-returns-to-help-the-gauchos-make-their-next-move/",
+          "title": "Courtside at the Coral: Ajay Mitchell Returns to Help the Gauchos Make Their Next Move",
+          "publisher": "Montecito Journal",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4dj9N5d2k3YZpO_mA2W04qioXUTLUk7Y5Rxk345-HAu6FMkYWY5U0soV7JTI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOfy1NDy3JO6Dks3wVhSQwzjkyztPFBvvQbLaLHg9gr7KE1ggTRuPMZRrzrVY"
         },
         {
-          "url": "https://www.mlb.com/news/emilio-pagan-contract-with-tigers",
-          "title": "Pagán agrees to 1-year, $11 million deal with Tigers (report)",
-          "publisher": "MLB.com",
+          "url": "https://www.si.com/nba/thunder/how-thunder-ajay-mitchell-evolved-overlooked-prospect-budding-nba-star",
+          "title": "How Thunder’s Ajay Mitchell Evolved From Overlooked Prospect to Budding NBA Star",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJdd2XwvmriwN_x3_hy18lZVJ7etmULrMHkpSoPtTrxVUJ9AntPbA14SlLX1k"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTS-HAezxe836eYiosXAB2AWGYFefD7L2gyLb_5myuKVBqnd8Dvw7eJLA5CuHA"
         },
         {
-          "url": "https://www.rotowire.com/baseball/headlines/emilio-pagan-news-signs-with-detroit-1028267",
-          "title": "Emilio Pagan News: Signs with Detroit",
-          "publisher": "RotoWire",
+          "url": "https://sports.yahoo.com/articles/ajay-mitchells-big-season-could-000003554.html",
+          "title": "Ajay Mitchell's Big Season Could Leave The Thunder With Big Decisions In The Future",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXisITpZNJHSKOkV6V2tYFv5RSajCVQHaYezsuhYH029m69tT5lpqVGe8rdbA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFzhxrimoOh-H_Kagocs-Mr8lvKiE_H66WiKRnuz3g5OFupHokAg75fgMgxz0"
         }
       ]
     },
     {
-      "query": "elsinore",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T05:30:00Z",
-      "related_news_urls": [
-        "https://www.avclub.com/elsinore-ticket-giveaway",
-        "https://48hills.org/2026/11/grab-a-free-pass-to-see-andrew-scott-in-elsinore/",
-        "https://www.kcrw.com/events/kcrw-partner-screening-elsinore"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxFMX7gH7fvlyUzkhXFA4fSOVh5fZ5rzG51kofC3q5thcqqk5-xMJq4XyhQi4",
-      "image_credit": "A.V. Club",
-      "news": [
-        {
-          "url": "https://www.avclub.com/elsinore-ticket-giveaway",
-          "title": "New York and Los Angeles, come see Elsinore early and for free",
-          "publisher": "A.V. Club",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxFMX7gH7fvlyUzkhXFA4fSOVh5fZ5rzG51kofC3q5thcqqk5-xMJq4XyhQi4"
-        },
-        {
-          "url": "https://48hills.org/2026/11/grab-a-free-pass-to-see-andrew-scott-in-elsinore/",
-          "title": "Grab a free pass to see Andrew Scott in ‘Elsinore’",
-          "publisher": "48 Hills",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbiU4nCzo8f8V5Kuo5Zrxu2zEpEfdJm9HviIdkH7uAXR1FTFWkjysGeju066M"
-        },
-        {
-          "url": "https://www.kcrw.com/events/kcrw-partner-screening-elsinore",
-          "title": "KCRW Partner Screening: 'Elsinore'",
-          "publisher": "KCRW",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWp7tlrRNZAfjpQg3BGrITTkiKTiyuTVYwHLgkKW8XxtsRahTs30j9OMOLgZE"
-        }
-      ]
-    },
-    {
-      "query": "coachella 2027 lineup",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T05:30:00Z",
-      "related_news_urls": [
-        "https://www.sfgate.com/sf-culture/article/coachella-headliners-leak-22522136.php",
-        "https://hypebeast.com/2026/11/sza-hints-coachella-2027-headline-set-teases-new-music",
-        "https://dailycoin.com/coachella-2027-lineup-leaks-polymarket-odds-headliners/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu7m26jqmr36TZGo8p0VvVhPnAo6GovpILVjEHMwDniQ8nsYVehoDOaJdyDjc",
-      "image_credit": "SFGATE",
-      "news": [
-        {
-          "url": "https://www.sfgate.com/sf-culture/article/coachella-headliners-leak-22522136.php",
-          "title": "SZA appears to leak Coachella 2027 headliners",
-          "publisher": "SFGATE",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu7m26jqmr36TZGo8p0VvVhPnAo6GovpILVjEHMwDniQ8nsYVehoDOaJdyDjc"
-        },
-        {
-          "url": "https://hypebeast.com/2026/11/sza-hints-coachella-2027-headline-set-teases-new-music",
-          "title": "SZA Seemingly Hints at Coachella 2027 Headline Set and Teases New Music",
-          "publisher": "Hypebeast",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRchonKLLL7FbHLDqFniRuiHC_Pige9DyAaPzyLWq00EIjGRZEXUC0C9M1vi8Q"
-        },
-        {
-          "url": "https://dailycoin.com/coachella-2027-lineup-leaks-polymarket-odds-headliners/",
-          "title": "Coachella 2027 Lineup Leaks: Polymarket Odds Reveal the Top 3 Favorites",
-          "publisher": "DailyCoin",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzZSUeQYxmDStBvG48kwgg_U4tyIn6yb93YvaeZJOSbvL-rfsivGQsv3m_Wb8"
-        }
-      ]
-    },
-    {
-      "query": "donovan mitchell",
+      "query": "amanda nunes",
       "approx_searches": "500+",
-      "published_at": "2026-11-11T05:20:00Z",
+      "published_at": "2026-11-11T06:20:00Z",
       "related_news_urls": [
-        "https://www.espn.com/fantasy/basketball/story/_/id/50434186/fantasy-basketball-tips-nba-betting-picks-today",
-        "https://www.fanduel.com/research/nba-picks-today-3-nba-predictions-and-best-bets-for-monday-nov-9",
-        "https://www.si.com/betting/nba-best-bets-today-predictions-prop-bets-for-victor-wembanyama-steph-curry-cavs-pacers-mavs"
+        "https://www.ufc.com/news/coach-conversation-polymarket-ufc-334-kayla-harrison-vs-amanda-nunes",
+        "https://mmajunkie.usatoday.com/story/sports/ufc/2026/11/10/kayla-harrison-amanda-nunes-ufc-334-faceoff-times-square/92715520007/",
+        "https://www.centraloregondaily.com/sports/video-ufc-334-countdown-for-kayla-harrison-vs-amanda-nunes/article_113d20f9-ca66-5ffc-b603-15efd8f7c6dc.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcTM67z5ZpuNOZG316Un56eklmnSaSvnDryyrwhkcFSMcv54xOZWh015argrI",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVjgoRxROdXMMGHy30nDd4dUdiKIDWsZs6Lba-D5KMOUYSHKadUL8cy85aVHA",
+      "image_credit": "UFC.com",
+      "news": [
+        {
+          "url": "https://www.ufc.com/news/coach-conversation-polymarket-ufc-334-kayla-harrison-vs-amanda-nunes",
+          "title": "Coach Conversation | Polymarket UFC 334: Kayla Harrison vs Amanda Nunes",
+          "publisher": "UFC.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVjgoRxROdXMMGHy30nDd4dUdiKIDWsZs6Lba-D5KMOUYSHKadUL8cy85aVHA"
+        },
+        {
+          "url": "https://mmajunkie.usatoday.com/story/sports/ufc/2026/11/10/kayla-harrison-amanda-nunes-ufc-334-faceoff-times-square/92715520007/",
+          "title": "UFC 334 faceoff: Kayla Harrison, Amanda Nunes exchange serious stares in Times Square",
+          "publisher": "MMA Junkie",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKkpuEACDBszC6eOV6DpQtwyHK3tAtiYvzK4kxgVS2dbzqdGTuaPJE5DzJkzQ"
+        },
+        {
+          "url": "https://www.centraloregondaily.com/sports/video-ufc-334-countdown-for-kayla-harrison-vs-amanda-nunes/article_113d20f9-ca66-5ffc-b603-15efd8f7c6dc.html",
+          "title": "Video: UFC 334 'Countdown' for Kayla Harrison vs. Amanda Nunes",
+          "publisher": "Central Oregon Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8k8VnpEPjk_D-Rrug_F9S9S6BBKRHNblN7FH5VXZ70lC2VNqvAENK9TB8a3s"
+        }
+      ]
+    },
+    {
+      "query": "thunder score",
+      "approx_searches": "100+",
+      "published_at": "2026-11-11T06:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/recap/_/gameId/401909941",
+        "https://www.nba.com/watch/video/game-recap-thunder-114-wizards-75-nov-7",
+        "https://www.bulletsforever.com/washington-wizards-statistical-analysis/73921/against-oklahoma-city-the-wizards-were-the-bug"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNH_77wcdLwrOabYisw2rFF28G4vvphdr7jDTu-CZk01bCpvG1JGC0TwaccXE",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/fantasy/basketball/story/_/id/50434186/fantasy-basketball-tips-nba-betting-picks-today",
-          "title": "Monday's fantasy hoops adds, NBA bets to make: Ty Jerome primed for a big game",
+          "url": "https://www.espn.com/nba/recap/_/gameId/401909941",
+          "title": "Thunder 114-75 Wizards (Nov 7, 2026) Game Recap",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcTM67z5ZpuNOZG316Un56eklmnSaSvnDryyrwhkcFSMcv54xOZWh015argrI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNH_77wcdLwrOabYisw2rFF28G4vvphdr7jDTu-CZk01bCpvG1JGC0TwaccXE"
         },
         {
-          "url": "https://www.fanduel.com/research/nba-picks-today-3-nba-predictions-and-best-bets-for-monday-nov-9",
-          "title": "NBA Picks Today: 3 NBA Predictions and Best Bets for Monday, Nov. 9",
-          "publisher": "FanDuel",
+          "url": "https://www.nba.com/watch/video/game-recap-thunder-114-wizards-75-nov-7",
+          "title": "Game Recap: Thunder 114, Wizards 75 (Nov. 7)",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvEGzPa1uGFNV7YNlIGQwfYZxQmwuET3gkpzW0WgmU-tA4pBaTY_d6BkMBYVo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnvQYw251hkToYri6Hs3_tigMs7W-j4E0KMfPSsS7Bczoy3MUApQ4VoWVuj4k"
         },
         {
-          "url": "https://www.si.com/betting/nba-best-bets-today-predictions-prop-bets-for-victor-wembanyama-steph-curry-cavs-pacers-mavs",
-          "title": "Peter’s Points: NBA Best Bets Today (Predictions, Prop Bets for Victor Wembanyama, Steph Curry, Cavs, Pacers-Mavs)",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.bulletsforever.com/washington-wizards-statistical-analysis/73921/against-oklahoma-city-the-wizards-were-the-bug",
+          "title": "Against Oklahoma City, the Wizards were the bug",
+          "publisher": "Bullets Forever",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_D1LmAsubyRqM1C0VWr-fJd0EWXYi2m_XBy96T-jag_FrFPQWvt0DH5Vyf7w"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRN7OisxQDiChMD0zpn0DSBEt0zVy3FTeWDT1Ubys9475z_FkfueOmOwZ49cXs"
         }
       ]
     },
     {
-      "query": "bennett stirtz",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T05:20:00Z",
+      "query": "taye diggs",
+      "approx_searches": "100+",
+      "published_at": "2026-11-11T06:20:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/fantasy/basketball/news/thunders-bennett-stirtz-scores-11-points-in-blowout-win/",
-        "https://roundtable.io/sports/nba/thunder/players/okc-thunder-s-bennett-stirtz-has-job-bigger-than-scoring",
-        "https://roundtable.io/sports/nba/thunder/video/okc-thunder-s-bennett-stirtz-has-job-bigger-than-scoring"
+        "https://variety.com/2026/tv/news/taye-diggs-the-chosen-the-three-kings-christmas-special-fox-1236943728/",
+        "https://www.tvline.com/2312759/the-chosen-christmas-special-cast-taye-diggs-clueless-star-returning-sequel/",
+        "https://www.yahoo.com/entertainment/tv/articles/taye-diggs-cast-chosen-christmas-205632567.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfi16RI5gV5xV14aOAdMfnijlFD7V7CN8wsSJOoBBH0pmX3d8zHxwMdrfW5jA",
-      "image_credit": "CBS Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQz3Cqixvg0Y0wKEKWaW9H7OkKhDpi0MksvNL6rQ-MY7bb8_xQvh585XvI1-Qo",
+      "image_credit": "Variety",
       "news": [
         {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/thunders-bennett-stirtz-scores-11-points-in-blowout-win/",
-          "title": "Thunder's Bennett Stirtz: Scores 11 points in blowout win",
-          "publisher": "CBS Sports",
+          "url": "https://variety.com/2026/tv/news/taye-diggs-the-chosen-the-three-kings-christmas-special-fox-1236943728/",
+          "title": "Taye Diggs Stars in 'The Chosen: The Three Kings' Christmas Special",
+          "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfi16RI5gV5xV14aOAdMfnijlFD7V7CN8wsSJOoBBH0pmX3d8zHxwMdrfW5jA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQz3Cqixvg0Y0wKEKWaW9H7OkKhDpi0MksvNL6rQ-MY7bb8_xQvh585XvI1-Qo"
         },
         {
-          "url": "https://roundtable.io/sports/nba/thunder/players/okc-thunder-s-bennett-stirtz-has-job-bigger-than-scoring",
-          "title": "OKC Thunder’s Bennett Stirtz Has Job Bigger Than Scoring",
-          "publisher": "roundtable.io",
+          "url": "https://www.tvline.com/2312759/the-chosen-christmas-special-cast-taye-diggs-clueless-star-returning-sequel/",
+          "title": "Casting News: The Chosen Crowns Taye Diggs, Clueless Star Returning For Sequel Series, And More",
+          "publisher": "TVLine",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9BDigdFG5eZ0XoS2QKzmJud_oRZde8u05mOy9hFemjqEFZEbMLtk-kN2evus"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR739LBKKl7MpmEn14nOZpDNENkrOLl1ZgXcJl7oj23BGAIaHq9jPmbTD99_r0"
         },
         {
-          "url": "https://roundtable.io/sports/nba/thunder/video/okc-thunder-s-bennett-stirtz-has-job-bigger-than-scoring",
-          "title": "Video - OKC Thunder’s Bennett Stirtz Has Job Bigger Than Scoring",
-          "publisher": "roundtable.io",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/taye-diggs-cast-chosen-christmas-205632567.html",
+          "title": "Taye Diggs Cast in The Chosen’s Christmas Spin-off, Release Date & First Look Revealed",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9BDigdFG5eZ0XoS2QKzmJud_oRZde8u05mOy9hFemjqEFZEbMLtk-kN2evus"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnyYjpxwwtl8LfkAW1BfGhzHwO47bm6c1f18LrPSfzvAPbmwI6VzlAg5ojhZI"
         }
       ]
     },
     {
-      "query": "precious achiuwa",
+      "query": "larry ellison",
       "approx_searches": "200+",
-      "published_at": "2026-11-11T05:20:00Z",
+      "published_at": "2026-11-11T06:20:00Z",
       "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/darius-acuff-jr-drops-29-points-vs-orlando",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-10/sac-starts-acuff-lavine-hunter-achiuwa-sabonis",
-        "https://wizofawes.com/kings-questionable-trade-decisions-perfect-opportunity-wizards"
+        "https://nypost.com/2026/11/10/media/skydance-buyouts-at-cnn-cbs-news-spark-exodus-of-veteran-staffers-including-workers-bosses-wanted-to-keep-report/",
+        "https://finance.yahoo.com/media-advertising/articles/david-ellison-offer-staff-backfires-135615786.html",
+        "https://variety.com/2026/tv/news/cnn-staff-buyouts-skydance-merger-1236943369/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJzBzaj4zP8J5wmYl4s_gSnV_F8-TEwzfhjM9SL_cmge4l6lE1AgeFr6UykvQ",
-      "image_credit": "NBC Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo4OMBlkDkrjOThfkqeLIbVB1Gwxagi1SBFCy4jXBKwJp3oeNKvWlHKlvTkio",
+      "image_credit": "New York Post",
       "news": [
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/darius-acuff-jr-drops-29-points-vs-orlando",
-          "title": "Darius Acuff Jr. drops 29 points vs. Orlando",
+          "url": "https://nypost.com/2026/11/10/media/skydance-buyouts-at-cnn-cbs-news-spark-exodus-of-veteran-staffers-including-workers-bosses-wanted-to-keep-report/",
+          "title": "Skydance buyouts at CNN, CBS News spark exodus of veteran staffers -- including workers bosses wanted to keep: report",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo4OMBlkDkrjOThfkqeLIbVB1Gwxagi1SBFCy4jXBKwJp3oeNKvWlHKlvTkio"
+        },
+        {
+          "url": "https://finance.yahoo.com/media-advertising/articles/david-ellison-offer-staff-backfires-135615786.html",
+          "title": "David Ellison’s Offer to Staff Backfires Spectacularly",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWISiwGiyGa7xuKN0JH9khQJz-ctYUBOGLvtMPd0GA6pT7vwXFCNeudEZuHgA"
+        },
+        {
+          "url": "https://variety.com/2026/tv/news/cnn-staff-buyouts-skydance-merger-1236943369/",
+          "title": "CNN Sees Some Staff Buyouts Under Skydance Merger Plan",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYQErkJhKbyWistrCceTFhnPtOqiQ9YfOEqImDoXke97HwSECloCxVhYXaJCU"
+        }
+      ]
+    },
+    {
+      "query": "ja morant injury",
+      "approx_searches": "100+",
+      "published_at": "2026-11-11T06:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/trail-blazers-announce-encouraging-ja-045805609.html",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-07/nori-morant-could-be-back-sooner-than-expected",
+        "https://heavy.com/sports/nba/portland-trail-blazers/ja-morant-playing-tonight-lakers/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZ3eixS2sB7BLUJApOJk1LUz3D3hhwYVQ_WsHORUIIxzA9XitynNz1On8duLY",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/trail-blazers-announce-encouraging-ja-045805609.html",
+          "title": "Trail Blazers Announce Encouraging Ja Morant Injury Update Before Spurs Game",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZ3eixS2sB7BLUJApOJk1LUz3D3hhwYVQ_WsHORUIIxzA9XitynNz1On8duLY"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-07/nori-morant-could-be-back-sooner-than-expected",
+          "title": "Nori: Morant could be back sooner than expected",
           "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJzBzaj4zP8J5wmYl4s_gSnV_F8-TEwzfhjM9SL_cmge4l6lE1AgeFr6UykvQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTp1-iX11QVURUzQH1UpuF2HPT-PfxxKERIIcntiNEmrK83fORStp9MnReLo4A"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-10/sac-starts-acuff-lavine-hunter-achiuwa-sabonis",
-          "title": "SAC starts Acuff, LaVine, Hunter, Achiuwa, Sabonis",
-          "publisher": "NBC Sports",
+          "url": "https://heavy.com/sports/nba/portland-trail-blazers/ja-morant-playing-tonight-lakers/",
+          "title": "Is Ja Morant Playing Tonight? Blazers Injury Update vs. Lakers",
+          "publisher": "Heavy.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsDxs2KLhD9OfKRTFR4csvanfFpNxdTNGP1Iu7KNk2ID8LB1HRh9nxDTRcz3M"
-        },
-        {
-          "url": "https://wizofawes.com/kings-questionable-trade-decisions-perfect-opportunity-wizards",
-          "title": "Kings' questionable trade decisions could be perfect opportunity for Wizards",
-          "publisher": "Wiz of Awes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJcj3xA_heQAwK7x_jnzVCkBT8-tPfJOhyPoQ4nHJyJ_Ynl5fFhKScqEPuvrc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGZrCW8QtaOTl2cfl3GWmUCtomnyvWqoZsJtxlLC4VPmb3_TgY085bjLCRT9M"
         }
       ]
     },
     {
-      "query": "joseph zada",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T05:20:00Z",
+      "query": "donovan clingan",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T06:10:00Z",
       "related_news_urls": [
-        "https://culturedmag.com/article/2026/11/10/film-joseph-zada-age-hunger-games-movies/",
-        "https://www.sweetyhigh.com/read/where-to-watch-joseph-next",
-        "https://www.mercurynews.com/2026/11/09/tickets-selling-fast-in-south-bay-for-highly-anticipated-movie-opening/"
+        "https://sports.yahoo.com/articles/donovan-clingan-ja-morant-hes-014359177.html",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/10/donovan-clingan-on-ja-morant-hes-a-great-teammate-hes-supportive/92717453007/",
+        "https://fadeawayworld.net/nba/portland-trail-blazers/exclusive-blazers-donovan-clingan-talks-defending-nikola-jokic-well-damian-lillard-dillon-brooks-dustup"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuLOoTOJ-Pj8pL1RcIwfU5DVNvZboRf06VMP4WMZF-01Jt4cZYEheZ14pMwx8",
-      "image_credit": "Cultured Mag",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRr8SUG81ihEv40OiW5GeSWkz7x2kdM8dXjvZqJmWacVV89KvQuvcrLSygNNw8",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://culturedmag.com/article/2026/11/10/film-joseph-zada-age-hunger-games-movies/",
-          "title": "‘Hunger Games’ Star Joseph Zada Is Ready to Be Your Next It Boy",
-          "publisher": "Cultured Mag",
+          "url": "https://sports.yahoo.com/articles/donovan-clingan-ja-morant-hes-014359177.html",
+          "title": "Donovan Clingan on Ja Morant: 'He's a great teammate, he's supportive'",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuLOoTOJ-Pj8pL1RcIwfU5DVNvZboRf06VMP4WMZF-01Jt4cZYEheZ14pMwx8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRr8SUG81ihEv40OiW5GeSWkz7x2kdM8dXjvZqJmWacVV89KvQuvcrLSygNNw8"
         },
         {
-          "url": "https://www.sweetyhigh.com/read/where-to-watch-joseph-next",
-          "title": "Where to Watch Joseph Zada Before Sunrise on the Reaping",
-          "publisher": "Sweety High",
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/10/donovan-clingan-on-ja-morant-hes-a-great-teammate-hes-supportive/92717453007/",
+          "title": "Donovan Clingan on Ja Morant: 'He's a great teammate, he's supportive'",
+          "publisher": "HoopsHype",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjeRf8ZZHqGtf3RDOrHRg-rONMZeygX-TMPSS-7B2cAR65yfpP2aNj7h6lTC4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTT8wl6Vj65wKUjosvjAIBV4xSt23blcdyF7Qt-BjE84TFtoupccq2KxRoxLVs"
         },
         {
-          "url": "https://www.mercurynews.com/2026/11/09/tickets-selling-fast-in-south-bay-for-highly-anticipated-movie-opening/",
-          "title": "Tickets selling fast in South Bay for highly anticipated movie opening",
-          "publisher": "The Mercury News",
+          "url": "https://fadeawayworld.net/nba/portland-trail-blazers/exclusive-blazers-donovan-clingan-talks-defending-nikola-jokic-well-damian-lillard-dillon-brooks-dustup",
+          "title": "Exclusive: Blazers’ Donovan Clingan Talks Defending Nikola Jokić Well, Damian Lillard/Dillon Brooks Dustup",
+          "publisher": "Fadeaway World",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThnH5biYg6uJ_TOhsfBXX4qudUMyeNhXDIjkUvo8io9ErXxhpvrqoi5_cYNX8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbyutjCa8ylIIjwptEeeaNkqZ5GENgS0vizZ2Nz-JePEXyKRas6z-As4rIwmg"
         }
       ]
     },
     {
-      "query": "united hijacking",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T05:10:00Z",
+      "query": "michigan senate abdul el sayed",
+      "approx_searches": "100+",
+      "published_at": "2026-11-11T06:10:00Z",
       "related_news_urls": [
-        "https://www.wwltv.com/article/news/crime/man-accused-of-making-bomb-threat-on-plane-landing-at-msy-airport-police-crime-investigation-safety/289-8042e728-dd7c-479d-8822-f8f836bd718b",
-        "https://www.foxnews.com/us/twice-deported-illegal-immigrant-accused-trying-storm-united-cockpit-threatening-bomb-dhs",
-        "https://www.fox8live.com/2026/11/10/man-arrested-after-alleged-bomb-threat-united-flight-new-orleans-deputies-say/"
+        "https://www.nbcnews.com/politics/2026-elections/alaska-governor-results",
+        "https://www.capegazette.com/article/delaware-dems-likely-gain-supermajority-house/356700",
+        "https://www.wdel.com/news/there-is-change-in-the-air---sen-coons-celebrates-reelection-opportunity-in-a/article_a8d47351-a06e-453a-9a6a-089c3e4ee962.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR13L3C_eZOE0_TWihVcy4F89CX_-vnAVetvht7N70z5ZeDVS-lv8JayCk-QZY",
-      "image_credit": "WWLTV.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWmvwHQ7qw_OeBHOZP6ZwuRTw2z_p-Uk4Zzu0P7tlDCqywgsu_KC3_mofNjNI",
+      "image_credit": "NBC News",
       "news": [
         {
-          "url": "https://www.wwltv.com/article/news/crime/man-accused-of-making-bomb-threat-on-plane-landing-at-msy-airport-police-crime-investigation-safety/289-8042e728-dd7c-479d-8822-f8f836bd718b",
-          "title": "Man accused of claiming he had bomb on plane arrested at New Orleans airport",
-          "publisher": "WWLTV.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR13L3C_eZOE0_TWihVcy4F89CX_-vnAVetvht7N70z5ZeDVS-lv8JayCk-QZY"
-        },
-        {
-          "url": "https://www.foxnews.com/us/twice-deported-illegal-immigrant-accused-trying-storm-united-cockpit-threatening-bomb-dhs",
-          "title": "Twice-deported illegal immigrant accused of trying to storm United cockpit, threatening bomb: DHS",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAbBIMFWSFENJCgxGuSj4OukUZ3t9k-BhhMuAbF8s1FplkqzVx67TjlQR7Dag"
-        },
-        {
-          "url": "https://www.fox8live.com/2026/11/10/man-arrested-after-alleged-bomb-threat-united-flight-new-orleans-deputies-say/",
-          "title": "Man arrested after alleged bomb threat on United flight to New Orleans, deputies say",
-          "publisher": "FOX 8 Local First",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQID8talVi2sLBK2zDp9IugKogE-UP6MPYgB-0-aAaqW_lyYTwzmndNCMMNNvo"
-        }
-      ]
-    },
-    {
-      "query": "department of justice immigrant release lawsuits",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T05:10:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/10/politics/justice-department-prosecutors-cant-keep-up-immigrants-habeas",
-        "https://www.nbcnews.com/news/us-news/faced-influx-prosecutor-washington-says-lacks-resources-defend-immigra-rcna608521",
-        "https://hoodline.com/2026/11/seattle-federal-prosecutors-stop-fighting-many-ice-detention-cases-citing-staff-crunch/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzLaJzOaPy1Rn4qrDKgQzkmsrM5KwUOi95gts0a2rq2XLMbQWjtR3FC-Z03Bo",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/10/politics/justice-department-prosecutors-cant-keep-up-immigrants-habeas",
-          "title": "Justice Department prosecutors in Washington can’t keep up with all the cases of immigrants suing for their release",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzLaJzOaPy1Rn4qrDKgQzkmsrM5KwUOi95gts0a2rq2XLMbQWjtR3FC-Z03Bo"
-        },
-        {
-          "url": "https://www.nbcnews.com/news/us-news/faced-influx-prosecutor-washington-says-lacks-resources-defend-immigra-rcna608521",
-          "title": "Faced with influx, prosecutor in Washington says he lacks resources to defend immigration cases",
+          "url": "https://www.nbcnews.com/politics/2026-elections/alaska-governor-results",
+          "title": "Alaska Governor Midterm Election 2026: Live Results",
           "publisher": "NBC News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkSDaHiHKtO4CrEV3ZDjIf5xIdweCJWXIRFPGIRIiYZsv5lmFvPvL0d5miT-g"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWmvwHQ7qw_OeBHOZP6ZwuRTw2z_p-Uk4Zzu0P7tlDCqywgsu_KC3_mofNjNI"
         },
         {
-          "url": "https://hoodline.com/2026/11/seattle-federal-prosecutors-stop-fighting-many-ice-detention-cases-citing-staff-crunch/",
-          "title": "Washington US Attorney Can't Defend All ICE Habeas Cases",
-          "publisher": "Hoodline",
+          "url": "https://www.capegazette.com/article/delaware-dems-likely-gain-supermajority-house/356700",
+          "title": "Delaware Dems gain supermajority in House",
+          "publisher": "Cape Gazette",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPlbTFm6evw8B_1LGC4Ob666vIFvo5kOCWXKyBPopSz39XVmTOrwmL652J-ak"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1rkmOVSwLmMtkx_stRgav1BULPfibsi5rqBWLLdVun2LEuZJRxEw_Wa6Qpc0"
+        },
+        {
+          "url": "https://www.wdel.com/news/there-is-change-in-the-air---sen-coons-celebrates-reelection-opportunity-in-a/article_a8d47351-a06e-453a-9a6a-089c3e4ee962.html",
+          "title": "\"There is change in the air\" - Sen. Coons celebrates reelection, opportunity in a Democratic-controlled Congress",
+          "publisher": "WDEL",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRadJQuQS8uqlFUyAxy0_Y__139w_hho_Rrcl8fKDP4OagkvNjGAOKLuMWtxps"
+        }
+      ]
+    },
+    {
+      "query": "portland trail blazers",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-11T06:00:00Z",
+      "related_news_urls": [
+        "https://www.blazersedge.com/trail-blazers-news/118225/blazers-move-scoot-henderson-out-of-starting-lineup-versus-thunder",
+        "https://sports.yahoo.com/articles/scoot-henderson-returning-bench-favor-052006312.html",
+        "https://www.cbssports.com/fantasy/basketball/news/trail-blazers-scoot-henderson-not-starting-tuesday/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9jtw4ymgfOyUJbPZ2y94fMdwYdTwPLM2Uh5I38kzJDkQrkakODyVtwYcLuRg",
+      "image_credit": "Blazer's Edge",
+      "news": [
+        {
+          "url": "https://www.blazersedge.com/trail-blazers-news/118225/blazers-move-scoot-henderson-out-of-starting-lineup-versus-thunder",
+          "title": "Blazers Move Scoot Henderson Out of Starting Lineup Versus Thunder",
+          "publisher": "Blazer's Edge",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9jtw4ymgfOyUJbPZ2y94fMdwYdTwPLM2Uh5I38kzJDkQrkakODyVtwYcLuRg"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/scoot-henderson-returning-bench-favor-052006312.html",
+          "title": "Scoot Henderson returning to the bench in favor of Sidy Cissoko",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZpuINRNvHDWaxcr-lvgQRz03D0DvhY9_3HAkSWefhw6faH2jeuk9t2cpOhbY"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/trail-blazers-scoot-henderson-not-starting-tuesday/",
+          "title": "Trail Blazers' Scoot Henderson: Not starting Tuesday",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQgn2GQwJci9qi2SxkiYYRjr955Y375dBsy-WyPMKhXcnkh5dQRdhkTuUiG4s"
+        }
+      ]
+    },
+    {
+      "query": "deni avdija",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T06:00:00Z",
+      "related_news_urls": [
+        "https://www.jta.org/2026/11/06/sports/deni-avdija-is-at-it-again",
+        "https://ripcityproject.com/turnover-filled-loss-lakers-gives-blazers-further-evidence-need-ja-morant",
+        "https://www.nytimes.com/athletic/7749871/2026/11/03/deni-avdija-micah-nori-trail-blazers-nba/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvcPMhEK19rI-oca2zfqqqLwQyLrIN8-8rRXwg_wKtJ7AQy8k3vZRN-PYv5RM",
+      "image_credit": "Jewish Telegraphic Agency",
+      "news": [
+        {
+          "url": "https://www.jta.org/2026/11/06/sports/deni-avdija-is-at-it-again",
+          "title": "Deni Avdija is at it again",
+          "publisher": "Jewish Telegraphic Agency",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvcPMhEK19rI-oca2zfqqqLwQyLrIN8-8rRXwg_wKtJ7AQy8k3vZRN-PYv5RM"
+        },
+        {
+          "url": "https://ripcityproject.com/turnover-filled-loss-lakers-gives-blazers-further-evidence-need-ja-morant",
+          "title": "Turnover-filled loss to Lakers gives Blazers further evidence they need Ja Morant",
+          "publisher": "Rip City Project",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzJ5O6wgpeMsdqnuK2LEVvckpWlfZOb87pwlzN8cLVJjKhFjAtMQqwRUjlSRg"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7749871/2026/11/03/deni-avdija-micah-nori-trail-blazers-nba/",
+          "title": "Deni Avdija, Micah Nori and the summer phone call that defines Trail Blazers’ quick start - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3-Gv4nyyApiNky2vs8VVNqrATodKq9ge2NfGADHfU47tXRHVLVRJVATzifro"
         }
       ]
     }
