@@ -3,356 +3,322 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T03:31:15.737374Z",
+  "checked_at": "2026-11-11T04:01:26.060044Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "visionquest",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-11T03:10:00Z",
+      "query": "ryan weiss",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T03:40:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
+    {
+      "query": "la kings",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T03:40:00Z",
       "related_news_urls": [
-        "https://www.marvel.com/articles/tv-shows/visionquest-series-finale-screening-event",
-        "https://www.ign.com/articles/marvels-visionquest-series-finale-review-forever",
-        "https://www.yahoo.com/entertainment/tv/articles/visionquest-fans-sure-scarlet-witch-205549650.html"
+        "https://lakingsinsider.com/2026/11/10/11-10-preview-zuccarello-to-play-tonight-ceci-in-gustafsson-out-day-to-day-laviolette-on-communication-special-teams-impact/",
+        "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-10-2026",
+        "https://sports.yahoo.com/articles/nashville-predators-los-angeles-kings-220142581.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp-rYNS-lDeXcAtmn_4chsQEMm7z-zL9jtI0h2ZR49k9pbt8aCGNkZJAddq0s",
-      "image_credit": "Marvel.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBrGxaMzEBZDNmaINKDK531SL-HUjiI2QksKeJZl7nHsLFMsx3hmi8G8NI2XI",
+      "image_credit": "LA Kings Insider",
       "news": [
         {
-          "url": "https://www.marvel.com/articles/tv-shows/visionquest-series-finale-screening-event",
-          "title": "‘VisionQuest’ Cast and Showrunner Assemble for the Series Finale",
-          "publisher": "Marvel.com",
+          "url": "https://lakingsinsider.com/2026/11/10/11-10-preview-zuccarello-to-play-tonight-ceci-in-gustafsson-out-day-to-day-laviolette-on-communication-special-teams-impact/",
+          "title": "11/10 Preview - Zuccarello To Play Tonight + Ceci In, Gustafsson out \"day-to-day\", Laviolette on communication, special teams impact",
+          "publisher": "LA Kings Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp-rYNS-lDeXcAtmn_4chsQEMm7z-zL9jtI0h2ZR49k9pbt8aCGNkZJAddq0s"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBrGxaMzEBZDNmaINKDK531SL-HUjiI2QksKeJZl7nHsLFMsx3hmi8G8NI2XI"
         },
         {
-          "url": "https://www.ign.com/articles/marvels-visionquest-series-finale-review-forever",
-          "title": "Marvel's VisionQuest Series Finale Review: 'Forever'",
-          "publisher": "IGN",
+          "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-10-2026",
+          "title": "NHL On Tap: Josi one point from 800 when Predators visit Kings",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxni0Z9C3Q4AEQgISQChZk7mIx4iSRVsjhHwb54SK1qJ8h7thV7qJPRYDPYu0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREIu1CxLJO_jgZUsIT8-HK_9LkIxH59GxurXLA0Gd7Y9m-F7tx05HPZ5FFms4"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/visionquest-fans-sure-scarlet-witch-205549650.html",
-          "title": "VisionQuest Fans Are Sure Scarlet Witch Is Showing Up in MCU Show’s Finale After New Tease",
-          "publisher": "Yahoo",
+          "url": "https://sports.yahoo.com/articles/nashville-predators-los-angeles-kings-220142581.html",
+          "title": "Nashville Predators at Los Angeles Kings: Game Central, How To Watch, Injury Updates",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbQe_qdiklEW4nciyJGpbwtrM-0-r0keeV2bYIrBhL2qEGRfKWa5ejJWSq6yk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJh7Z86-KigofBoeTRwCi5JUxFEbTPinCAc9suyBePGxZeVu4a5M2EcvwTMSU"
         }
       ]
     },
     {
-      "query": "tommy hilfiger",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T03:10:00Z",
+      "query": "pelle larsson",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T03:40:00Z",
       "related_news_urls": [
-        "https://wwd.com/menswear-news/mens-designer-luxury/calvin-klein-tommy-hilfiger-join-january-2026-pitti-uomo-1239408976/",
-        "https://www.vanityteen.com/raxxy-takes-over-pitti-uomo-111-as-special-guest-bringing-sculptural-outerwear-into-a-new-dimension/",
-        "https://ww.fashionnetwork.com/news/Pitti-uomo-to-go-wild-next-january-with-over-700-exhibitors,1883583.html"
+        "https://bleacherreport.com/articles/25530902-new-nba-rumors-update-kevin-porter-jrs-potential-landing-spots-after-bucks-exit",
+        "https://allucanheat.com/tim-hardaway-jr-s-struggles-may-push-heat-toward-desperate-kevin-porter-jr-gamble",
+        "https://behindthebuckpass.com/miami-easily-kevin-porter-jr-best-path-bucks-exit"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTuw-jIfAlTi7TP7wu00iBh6xsgm9iXvFTq8rclQfGhm1C6VkQ-o3xAdDcylA",
-      "image_credit": "WWD",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmAiXY3uJFIaa0xbwMTJecmHz0gakajuCNtIrOa-XtgQy8fos6e7LLBLwWQMc",
+      "image_credit": "Bleacher Report",
       "news": [
         {
-          "url": "https://wwd.com/menswear-news/mens-designer-luxury/calvin-klein-tommy-hilfiger-join-january-2026-pitti-uomo-1239408976/",
-          "title": "Calvin Klein, Tommy Hilfiger Join Exhibitors of January 2027 Pitti Uomo",
-          "publisher": "WWD",
+          "url": "https://bleacherreport.com/articles/25530902-new-nba-rumors-update-kevin-porter-jrs-potential-landing-spots-after-bucks-exit",
+          "title": "New NBA Rumors Update Kevin Porter Jr.'s Potential Landing Spots After Bucks Exit",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTuw-jIfAlTi7TP7wu00iBh6xsgm9iXvFTq8rclQfGhm1C6VkQ-o3xAdDcylA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmAiXY3uJFIaa0xbwMTJecmHz0gakajuCNtIrOa-XtgQy8fos6e7LLBLwWQMc"
         },
         {
-          "url": "https://www.vanityteen.com/raxxy-takes-over-pitti-uomo-111-as-special-guest-bringing-sculptural-outerwear-into-a-new-dimension/",
-          "title": "RAXXY TAKES OVER PITTI UOMO 111 AS SPECIAL GUEST, BRINGING SCULPTURAL OUTERWEAR INTO A NEW DIMENSION",
-          "publisher": "Vanity Teen",
+          "url": "https://allucanheat.com/tim-hardaway-jr-s-struggles-may-push-heat-toward-desperate-kevin-porter-jr-gamble",
+          "title": "Tim Hardaway Jr.’s struggles may push Heat toward desperate Kevin Porter Jr. gamble",
+          "publisher": "All U Can Heat",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVkFWvMS5swZpecH0U1bVVvTwL1zohhY_W01yglP3ucjN3irIhxF16NUAbsX0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT99MoC1f1i0STOFUaTl6U9aM-CnSx2vdO_nTxvAilKfgZI9z8nuzurDKxvTxw"
         },
         {
-          "url": "https://ww.fashionnetwork.com/news/Pitti-uomo-to-go-wild-next-january-with-over-700-exhibitors,1883583.html",
-          "title": "Pitti Uomo to go ‘wild’ next January with over 700 exhibitors",
-          "publisher": "FashionNetwork - The World's Fashion Business News",
+          "url": "https://behindthebuckpass.com/miami-easily-kevin-porter-jr-best-path-bucks-exit",
+          "title": "Miami is easily Kevin Porter Jr.'s best path forward after messy Bucks exit",
+          "publisher": "Behind the Buck Pass",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgg0F7LR8WdzNVYogfUpSyBxE3XTOyZl99IJHi7MkBi7Uxc9FPW2koJanTCis"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFLYpwnw_sJ0uI9pFzfbLvDiIZWxwXy8J3ig4XFpqTlUcpSDUctDgOjWEzdyo"
         }
       ]
     },
     {
-      "query": "dean wade",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T03:10:00Z",
+      "query": "igf games",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-11T03:40:00Z",
       "related_news_urls": [
-        "https://www.cleveland.com/cavs/2026/11/i-wanted-to-come-back-dean-wade-opens-up-on-free-agency-decision-to-leave-cavs.html",
-        "https://www.phillyvoice.com/sixers-news-76ers-analysis-lebron-james-iq-highlights-dean-wade-interview-nba-scores-schedule-rumors-cle/",
-        "https://www.hoopsrumors.com/2026/11/central-notes-wade-duren-mcconnell-rivers-lillard.html"
+        "https://aftermath.site/big-walk-ai-igf-jurors-controversy/",
+        "https://www.gamesindustry.biz/house-house-clarifies-use-of-ai-tools-in-big-walks-final-stage-of-development",
+        "https://www.theverge.com/games/1030994/big-walk-independent-games-festival-igf-ai"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5qlFfFeC2jk_aPZJvQTF31z8J79hX7RHftLQwFD66cAbd5-sdfsyH1gJhQfA",
-      "image_credit": "Cleveland.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9976bLrVZZ5AMVCcuDS_I1DzbJ92atEFRALbFWBspC9MYfyIfbzwQ-Y3eoGI",
+      "image_credit": "Aftermath",
       "news": [
         {
-          "url": "https://www.cleveland.com/cavs/2026/11/i-wanted-to-come-back-dean-wade-opens-up-on-free-agency-decision-to-leave-cavs.html",
-          "title": "‘I wanted to come back’: Dean Wade opens up on free agency decision to leave Cavs",
-          "publisher": "Cleveland.com",
+          "url": "https://aftermath.site/big-walk-ai-igf-jurors-controversy/",
+          "title": "Big Walk Used AI In 'The Final Stretch' Of Development, Kicking Off Intense Awards Debate",
+          "publisher": "Aftermath",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5qlFfFeC2jk_aPZJvQTF31z8J79hX7RHftLQwFD66cAbd5-sdfsyH1gJhQfA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9976bLrVZZ5AMVCcuDS_I1DzbJ92atEFRALbFWBspC9MYfyIfbzwQ-Y3eoGI"
         },
         {
-          "url": "https://www.phillyvoice.com/sixers-news-76ers-analysis-lebron-james-iq-highlights-dean-wade-interview-nba-scores-schedule-rumors-cle/",
-          "title": "Sixers' Dean Wade raves about LeBron James' 'otherworldly' basketball IQ: 'It doesn't feel real'",
-          "publisher": "PhillyVoice",
+          "url": "https://www.gamesindustry.biz/house-house-clarifies-use-of-ai-tools-in-big-walks-final-stage-of-development",
+          "title": "House House clarifies use of AI tools in Big Walk's \"final stage of development\"",
+          "publisher": "GamesIndustry.biz",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFXuMNNwJdPubOaJj9nxKXe9fLI0VZa2A_J2PJM-pUpjS8DkRhzlAI0-qcmFc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMisnedsI-MoSXj0CT_O3T3CblHtCT-HC2kcQeMj_MxK9ypgN8ERGWQrPYX1c"
         },
         {
-          "url": "https://www.hoopsrumors.com/2026/11/central-notes-wade-duren-mcconnell-rivers-lillard.html",
-          "title": "Central Notes: Wade, Duren, McConnell, Rivers, Lillard",
-          "publisher": "Hoops Rumors",
+          "url": "https://www.theverge.com/games/1030994/big-walk-independent-games-festival-igf-ai",
+          "title": "The indie game community is in disarray over AI and Big Walk",
+          "publisher": "The Verge",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLzX05wMFT40LsBpqP_Zn1jH4GQBb-TuaM2VozhnwoafWKFj1zW7OJ8g0wcrE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW9fZC8Y6fLPwJwF85tsHVcvtBvX1wTg6HoPu21zK37lkkh9SnRKluRFIyrmk"
         }
       ]
     },
     {
-      "query": "chris brown and usher tour",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T03:10:00Z",
-      "related_news_urls": [
-        "https://www.wsbtv.com/news/local/fans-demand-refunds-new-concert-after-usher-chris-brown-atlanta-show-starts-late/RSWAVSYJCBACFH2MGGDNFXZXNE/",
-        "https://www.complex.com/music/a/alex-ocho/usher-chris-brown-cancel-los-angeles-miami-concerts-2026",
-        "https://www.yahoo.com/entertainment/music/concerts/articles/chris-brown-usher-perform-together-010055889.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTMEURHuJ9qzfILVD3uD_MGhaBNdj1Tlhb4qR9Rd9kUZ0-1oLbNXOTPpGJHkSo",
-      "image_credit": "WSB-TV",
-      "news": [
-        {
-          "url": "https://www.wsbtv.com/news/local/fans-demand-refunds-new-concert-after-usher-chris-brown-atlanta-show-starts-late/RSWAVSYJCBACFH2MGGDNFXZXNE/",
-          "title": "Usher, Chris Brown fans demand refunds, new concert after Atlanta show starts late",
-          "publisher": "WSB-TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTMEURHuJ9qzfILVD3uD_MGhaBNdj1Tlhb4qR9Rd9kUZ0-1oLbNXOTPpGJHkSo"
-        },
-        {
-          "url": "https://www.complex.com/music/a/alex-ocho/usher-chris-brown-cancel-los-angeles-miami-concerts-2026",
-          "title": "Usher and Chris Brown Cancel Los Angeles and Miami Concerts Amid Feud Speculation",
-          "publisher": "Complex",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR65UgMjPTz4QKvl4FWiW_IJMiSbafWXs10Lp3-Aik_vi83eFItzhMfxK5rK_E"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/music/concerts/articles/chris-brown-usher-perform-together-010055889.html",
-          "title": "Chris Brown and Usher Perform Together After Reported Backstage Argument and 2½-Hour Atlanta Concert Delay",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9ygZsZOvFhHmiIT6A1wTxVD6j-DREYg4Nxl8GtyqGVO3px9hhEOmTmQmVj_4"
-        }
-      ]
-    },
-    {
-      "query": "mark pope",
+      "query": "cameron diaz",
       "approx_searches": "200+",
-      "published_at": "2026-11-11T03:10:00Z",
+      "published_at": "2026-11-11T03:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401921802",
-        "https://www.kentucky.com/sports/college/kentucky-sports/uk-basketball-men/article317963562.html",
-        "https://ukathletics.com/news/2026/11/05/big-blue-preview-kentucky-vs-james-madison/"
+        "https://www.darkhorizons.com/trailer-cameron-diaz-in-netflixs-bad-day/",
+        "https://variety.com/2026/film/news/bad-day-trailer-cameron-diaz-netflix-1236939650/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDc9_dMyqUF2aU9Yf4n8rjAKVWdcJPLULTlxL_if6yJvgP57NQrmrkrjUNxZw",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe11XGRin0gW9QFGegmb0N1Aaen-lmSqDYaupAdrffm__jDixg01LnRo1MEQU",
+      "image_credit": "Dark Horizons",
+      "news": [
+        {
+          "url": "https://www.darkhorizons.com/trailer-cameron-diaz-in-netflixs-bad-day/",
+          "title": "Trailer: Cameron Diaz In Netflix’s “Bad Day”",
+          "publisher": "Dark Horizons",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe11XGRin0gW9QFGegmb0N1Aaen-lmSqDYaupAdrffm__jDixg01LnRo1MEQU"
+        },
+        {
+          "url": "https://variety.com/2026/film/news/bad-day-trailer-cameron-diaz-netflix-1236939650/",
+          "title": "‘Bad Day’ Trailer: Cameron Diaz Is a Single Mom Who Accidentally Robs a Bank in Netflix Comedy",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMYpPK65bFj_jAPSOBDhlAOCx9JDlPwe8EKoYngNc_HzU5Y6npKjOnYIVQfwQ"
+        }
+      ]
+    },
+    {
+      "query": "bill self",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T03:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909785",
+        "https://www.kansascity.com/sports/college/big-12/university-of-kansas/article317965491.html",
+        "https://www2.kusports.com/sports/college/basketball-men/2026/nov/05/preview-ku-continues-opening-week-against-middle-tennessee/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGCT4wGMUM6f2ZcXHpv-r9MTR_WAIfsDSndWRUX3e0k0Pg8ksa5oKqovxVddw",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401921802",
-          "title": "Kentucky 89-80 James Madison (Nov 6, 2026) Game Recap",
+          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909785",
+          "title": "Kansas 89-45 Middle Tennessee (Nov 6, 2026) Game Recap",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDc9_dMyqUF2aU9Yf4n8rjAKVWdcJPLULTlxL_if6yJvgP57NQrmrkrjUNxZw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGCT4wGMUM6f2ZcXHpv-r9MTR_WAIfsDSndWRUX3e0k0Pg8ksa5oKqovxVddw"
         },
         {
-          "url": "https://www.kentucky.com/sports/college/kentucky-sports/uk-basketball-men/article317963562.html",
-          "title": "Here comes McBride: How the bench saved Kentucky basketball vs. James Madison",
-          "publisher": "Lexington Herald Leader",
+          "url": "https://www.kansascity.com/sports/college/big-12/university-of-kansas/article317965491.html",
+          "title": "Kansas Jayhawks crush MTSU in hoops. Jayhawks’ attention shifts to Kentucky next",
+          "publisher": "Kansas City Star",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdoxPVDa8zg8pUGcXUG0vxLj60iQHClcR9v0QoAcWoQCMqUfizepQBsBF7xCw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7yX0AVAYI8pKuauEorDwhOzLlzrdFwtEDBT7LYETwyjxU2LO7aeF0gWMK52k"
         },
         {
-          "url": "https://ukathletics.com/news/2026/11/05/big-blue-preview-kentucky-vs-james-madison/",
-          "title": "Big Blue Preview: Kentucky vs. James Madison",
-          "publisher": "UKAthletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfDk8DHwFjV0j3qBRMXLPvn53MtD-3OX6NGBJHFRpBT_bXOAF364VrFobd67E"
-        }
-      ]
-    },
-    {
-      "query": "thunder vs trail blazers",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-11T03:00:00Z",
-      "related_news_urls": [
-        "https://www.blazersedge.com/gameday-coverage/118185/portland-trail-blazers-oklahoma-city-thunder-time-streaming-tv-latest-injury-report",
-        "https://www.oregonlive.com/betting/2026/11/new-55-kalshi-referral-code-oregonlive55-launched-for-thunder-trail-blazers-on-tuesday.html",
-        "https://www.sportsline.com/insiders/thunder-vs-blazers-prediction-odds-line-proven-model-reveals-nba-picks-for-tuesday-nov-10/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUNTQ3D9DIYSYrm5bYWlDTQhIzZQvfONhI9ZrYZYEn4wD9CNJtHcDOn8HW1UA",
-      "image_credit": "Blazer's Edge",
-      "news": [
-        {
-          "url": "https://www.blazersedge.com/gameday-coverage/118185/portland-trail-blazers-oklahoma-city-thunder-time-streaming-tv-latest-injury-report",
-          "title": "Trail Blazers Face a Tough Task Against Thunder",
-          "publisher": "Blazer's Edge",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUNTQ3D9DIYSYrm5bYWlDTQhIzZQvfONhI9ZrYZYEn4wD9CNJtHcDOn8HW1UA"
-        },
-        {
-          "url": "https://www.oregonlive.com/betting/2026/11/new-55-kalshi-referral-code-oregonlive55-launched-for-thunder-trail-blazers-on-tuesday.html",
-          "title": "New $55 Kalshi referral code “OREGONLIVE55” launched for Thunder-Trail Blazers on Tuesday",
-          "publisher": "OregonLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYtX8EWlnHyEpQabcdyl_6tcQhYbbuyDRE_NpcNhCAD8e3wv1Six9gou4pXTM"
-        },
-        {
-          "url": "https://www.sportsline.com/insiders/thunder-vs-blazers-prediction-odds-line-proven-model-reveals-nba-picks-for-tuesday-nov-10/",
-          "title": "Thunder vs. Blazers prediction, odds, line: Proven model reveals NBA picks for Tuesday, Nov. 10",
-          "publisher": "SportsLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3isROBu4REfbVE21vWcWkpwp3E4nfpd88j7XqtYCNWD7mgurXB2y1AYpbnKU"
-        }
-      ]
-    },
-    {
-      "query": "trey kaufman renn",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T03:00:00Z",
-      "related_news_urls": [
-        "https://www2.kusports.com/sports/college/basketball-men/2026/nov/05/kaufman-renn-hopes-to-boost-jayhawks-with-knowledge-experience/",
-        "https://www.cbssports.com/college-basketball/news/trey-kaufman-renn-kansas-debut-season-opener-sixth-season/",
-        "https://www.cjonline.com/story/sports/college/hawk-zone/2026/11/02/will-trey-kaufman-renn-kohl-rosario-play-kansas-basketball-vs-fordham-regular-season-opener-eligible/92448434007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQV442YDiHG-6-QPyI5nQ79qiYJUQecPDNnlYW68wna1BBraqtQhHgvNaOawKs",
-      "image_credit": "KU Sports",
-      "news": [
-        {
-          "url": "https://www2.kusports.com/sports/college/basketball-men/2026/nov/05/kaufman-renn-hopes-to-boost-jayhawks-with-knowledge-experience/",
-          "title": "Kaufman-Renn hopes to boost Jayhawks with knowledge, experience",
+          "url": "https://www2.kusports.com/sports/college/basketball-men/2026/nov/05/preview-ku-continues-opening-week-against-middle-tennessee/",
+          "title": "Preview: KU continues opening week against Middle Tennessee",
           "publisher": "KU Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQV442YDiHG-6-QPyI5nQ79qiYJUQecPDNnlYW68wna1BBraqtQhHgvNaOawKs"
-        },
-        {
-          "url": "https://www.cbssports.com/college-basketball/news/trey-kaufman-renn-kansas-debut-season-opener-sixth-season/",
-          "title": "Trey Kaufman-Renn makes Kansas debut: Ex-Purdue star finally takes floor for Jayhawks",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRU9c-pJI4bxvBoiOONLfdCfhy2k07iRwWSBNfaP-PH214L5sAyON9m7btOz6I"
-        },
-        {
-          "url": "https://www.cjonline.com/story/sports/college/hawk-zone/2026/11/02/will-trey-kaufman-renn-kohl-rosario-play-kansas-basketball-vs-fordham-regular-season-opener-eligible/92448434007/",
-          "title": "Will Trey Kaufman-Renn, Kohl Rosario play in KU basketball vs Fordham?",
-          "publisher": "The Topeka Capital-Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrIsNMaRC81uOZfVGv-iBdKafXg0SmM7fAO69Xkh15ITNc-jSwk9LpsyvXG5o"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGT6JR6SanAu_evKG8kRwKqmx-oMvNlCZ4jp9gBRQTVGpIvxz_ZZ_SVU7fVlQ"
         }
       ]
     },
     {
-      "query": "alabama football schedule",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T03:00:00Z",
+      "query": "kings game",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T03:40:00Z",
       "related_news_urls": [
-        "https://www.al.com/highschoolsports/2026/11/see-the-ahsaa-aisa-second-round-football-playoff-schedule.html",
-        "https://www.fox10tv.com/2026/11/06/big-friday-kickoff-playoffs-round-1/",
-        "https://dothaneagle.com/sports/college/basketball/men/article_43448cff-360f-5446-9bf8-f4581fb541de.html"
+        "https://www.si.com/betting/magic-vs-kings-prediction-odds-and-best-nba-prop-bets-for-tuesday-nov-10-2026",
+        "https://kingsherald.com/articles/kings-vs-magic-preview-can-we-finally-win-at-home/",
+        "https://orlandomagic.com/news/orlando-magic-sacramento-kings-game-preview-injury-report-20261110"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1uOWbkTlN-HeOPPR3Cg5qeqeVjlD3Cp2aQADh-MKyPPrZhmmuvkh6rYD3i4U",
-      "image_credit": "AL.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHfEfkdbmoeJNDqiE0qk7TTaFbzrRiTagjiunI7QrzlerHTldrfkWOJ06DHqE",
+      "image_credit": "Sports Illustrated",
       "news": [
         {
-          "url": "https://www.al.com/highschoolsports/2026/11/see-the-ahsaa-aisa-second-round-football-playoff-schedule.html",
-          "title": "See the AHSAA, AISA second-round football playoff schedule",
-          "publisher": "AL.com",
+          "url": "https://www.si.com/betting/magic-vs-kings-prediction-odds-and-best-nba-prop-bets-for-tuesday-nov-10-2026",
+          "title": "Magic vs. Kings Prediction, Odds and Best NBA Prop Bets for Tuesday, Nov. 10",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1uOWbkTlN-HeOPPR3Cg5qeqeVjlD3Cp2aQADh-MKyPPrZhmmuvkh6rYD3i4U"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHfEfkdbmoeJNDqiE0qk7TTaFbzrRiTagjiunI7QrzlerHTldrfkWOJ06DHqE"
         },
         {
-          "url": "https://www.fox10tv.com/2026/11/06/big-friday-kickoff-playoffs-round-1/",
-          "title": "Big Friday Kickoff: Playoffs Round 1",
-          "publisher": "FOX10 News",
+          "url": "https://kingsherald.com/articles/kings-vs-magic-preview-can-we-finally-win-at-home/",
+          "title": "Kings vs. Magic Preview: Can we finally win at home?",
+          "publisher": "The Kings Herald",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAiU7-PS3m8wh6F8-Ws_A-NSe5s6cuj7tqGN_QEIDnZ2vT8iZ1Jc1eZxwd-bg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3jgNyIOQRu2uxbya8bu2oNhqEqS_k8NqpGcAK6NVJFM1wQLfg2QsqO_uxifw"
         },
         {
-          "url": "https://dothaneagle.com/sports/college/basketball/men/article_43448cff-360f-5446-9bf8-f4581fb541de.html",
-          "title": "Can UCLA win it all? Is Purdue cooked? Judging college basketball Week 1 overreactions",
-          "publisher": "Dothan Eagle",
+          "url": "https://orlandomagic.com/news/orlando-magic-sacramento-kings-game-preview-injury-report-20261110",
+          "title": "Orlando Magic at Sacramento Kings: Game Preview",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScJK0XEY372BL0t64djGlpeLxJhF0iYnuDVOt7-cdqaIdH10RmXaS_QbG-E8M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyujWI9DIzT943LpYr0bZ3QUQV9WlWnUWbeOex5C-TI6lsPZ4kxcUdX6u1z64"
         }
       ]
     },
     {
-      "query": "bob lee",
+      "query": "darryn peterson",
       "approx_searches": "1000+",
-      "published_at": "2026-11-11T03:00:00Z",
+      "published_at": "2026-11-11T03:30:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/10/us/bob-lee-cash-app-murder-sentencing.html",
-        "https://www.theguardian.com/us-news/2026/nov/10/bob-lee-cash-app-nima-momeni-sentenced",
-        "https://www.ktvu.com/news/nima-momeni-sentenced-cashapp-bob-lee"
+        "https://www.espn.com/nba/recap/_/gameId/401909947",
+        "https://www.canishoopus.com/timberwolves-scores-results/71691/game-recap-minnesota-timberwolves-utah-jazz-ayo-dosunmu",
+        "https://www.startribune.com/minnesota-timberwolves-utah-jazz-score-today-live-lamelo-ball-stats-anthony-edwards-injury-update/601912402"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG5Sh-TqfyOtyv4x13eCPxd2fJO9erAKEEnMEY9Af2aKxNIKp7QNwQsFcC7Qo",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTa-Kt1HEZJExobpuRXd7drsqv0SI1YGzP8Yy0KEFzZm4AScaThJflOB7Y-Z8",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/10/us/bob-lee-cash-app-murder-sentencing.html",
-          "title": "Tech Consultant Is Sentenced to 16 Years to Life in Cash App Founder’s Killing",
-          "publisher": "The New York Times",
+          "url": "https://www.espn.com/nba/recap/_/gameId/401909947",
+          "title": "Timberwolves 115-100 Jazz (Nov 8, 2026) Game Recap",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG5Sh-TqfyOtyv4x13eCPxd2fJO9erAKEEnMEY9Af2aKxNIKp7QNwQsFcC7Qo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTa-Kt1HEZJExobpuRXd7drsqv0SI1YGzP8Yy0KEFzZm4AScaThJflOB7Y-Z8"
         },
         {
-          "url": "https://www.theguardian.com/us-news/2026/nov/10/bob-lee-cash-app-nima-momeni-sentenced",
-          "title": "Nima Momeni sentenced to 16 years to life in murder of Cash App founder Bob Lee",
-          "publisher": "The Guardian",
+          "url": "https://www.canishoopus.com/timberwolves-scores-results/71691/game-recap-minnesota-timberwolves-utah-jazz-ayo-dosunmu",
+          "title": "NBA Game Recap: Wolves 115, Jazz 100: Yet Another Complete Performance",
+          "publisher": "Canis Hoopus",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJQubIHG3xR5OTqDXlxateeJWEYfBnxsf5jziYBphmFa44hzkhkztjs8tggac"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRemG5Oq2UTtj2x5fyzEIDdQ33X7sMNnmjVYYqL7fh4U5dyj9tvMARnWNGYbZg"
         },
         {
-          "url": "https://www.ktvu.com/news/nima-momeni-sentenced-cashapp-bob-lee",
-          "title": "CashApp founder killing: Nima Momeni sentenced nearly two years after conviction",
-          "publisher": "KTVU",
+          "url": "https://www.startribune.com/minnesota-timberwolves-utah-jazz-score-today-live-lamelo-ball-stats-anthony-edwards-injury-update/601912402",
+          "title": "Timberwolves run win streak to four as LaMelo Ball, Ayo Dosunmu power past Jazz",
+          "publisher": "Star Tribune",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFfjR2-IJIiaVfASRWFQt8m8ZHx1ZNvbLnP595ZiSqjiJH5i7myhWu2QF6Ybk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnsiAv5nTgo5Q303oe_osDfnYK_023lK4UTD2Z3yV3fUryiSY-4lOOgXo0uKg"
         }
       ]
     },
     {
-      "query": "michael strahan",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T03:00:00Z",
+      "query": "dwyane wade",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T03:30:00Z",
       "related_news_urls": [
-        "https://people.com/michael-strahan-biggest-names-fashion-television-music-new-iconic-series-12230250",
-        "https://whatsondisneyplus.com/michael-strahans-iconic-fashion-coming-soon-to-abc-hulu-disney/",
-        "https://www.yardbarker.com/nfl/articles/nfl_legend_michael_strahan_sends_clear_message_after_career_news/s1_17615_44517496"
+        "https://www.chosun.com/english/sports-en/2026/11/10/25PNAYW7LVBQFCXGR3GGE42RJ4/",
+        "https://www.essentiallysports.com/nba-legends-basketball-news-scariest-part-of-guarding-steph-curry-dwyane-wade-pinpoints-warriors-stars-unique-trait-amid-eight-game-winning-streak/",
+        "https://www.basketballnetwork.net/off-the-court/dwyane-wade-reveals-what-makes-curry-so-dangerous"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6AuOmGQ32gXNxSl7RvnDECKj4pU0I8pJaO0WQiPr0GtQUpknNF-z0OohessY",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVmYea67ogQZnsz4FU8giKQk4ztYthTLjTHBEKAVjmhEVRYmsBYDrIiRK1nUo",
+      "image_credit": "조선일보",
       "news": [
         {
-          "url": "https://people.com/michael-strahan-biggest-names-fashion-television-music-new-iconic-series-12230250",
-          "title": "Michael Strahan Pulls Back the Curtain on the Biggest Names in Fashion, Television and Music in New Iconic Series",
-          "publisher": "People.com",
+          "url": "https://www.chosun.com/english/sports-en/2026/11/10/25PNAYW7LVBQFCXGR3GGE42RJ4/",
+          "title": "Stephen Curry's Off-Ball Movement: A Hidden Weapon",
+          "publisher": "조선일보",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6AuOmGQ32gXNxSl7RvnDECKj4pU0I8pJaO0WQiPr0GtQUpknNF-z0OohessY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVmYea67ogQZnsz4FU8giKQk4ztYthTLjTHBEKAVjmhEVRYmsBYDrIiRK1nUo"
         },
         {
-          "url": "https://whatsondisneyplus.com/michael-strahans-iconic-fashion-coming-soon-to-abc-hulu-disney/",
-          "title": "“Michael Strahan’s Iconic Fashion” Coming Soon To ABC, Hulu & Disney+",
-          "publisher": "What's On Disney Plus",
+          "url": "https://www.essentiallysports.com/nba-legends-basketball-news-scariest-part-of-guarding-steph-curry-dwyane-wade-pinpoints-warriors-stars-unique-trait-amid-eight-game-winning-streak/",
+          "title": "“Scariest Part of Guarding Steph Curry”: Dwyane Wade Pinpoints Warriors Star’s Unique Trait Amid 8-Game Winning Streak",
+          "publisher": "EssentiallySports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOqlkuLTX6hLSYk-6KGSV2lwQbFpK_7RsaKFpLteGM1ad4YpDfaxyl-6pdI7w"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwW0IxohUCSsL8Vkz26KgXFR-A6wZBnAkGwPTh-aV3qHxHLEkfp3nJmVZ0fYo"
         },
         {
-          "url": "https://www.yardbarker.com/nfl/articles/nfl_legend_michael_strahan_sends_clear_message_after_career_news/s1_17615_44517496",
-          "title": "NFL Legend Michael Strahan Sends Clear Message After Career News",
-          "publisher": "Yardbarker",
+          "url": "https://www.basketballnetwork.net/off-the-court/dwyane-wade-reveals-what-makes-curry-so-dangerous",
+          "title": "\"Steph on the floor is an assist for everybody\" – Dwyane Wade reveals what makes Curry so dangerous",
+          "publisher": "Basketball Network",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrhcZ2Ii5K9-J2D6PigoaE3dVVCtFwByRsl0ppwU8x6Zz463n_FgDw978XUTY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2o7ncSaxoy_T3NwlvUFR1l1y60xfYryUhiA2o0ZRUu5_Li0Fo9sO5_-BZqQk"
+        }
+      ]
+    },
+    {
+      "query": "anthony black",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T03:30:00Z",
+      "related_news_urls": [
+        "https://www.fantasypros.com/nba/news/618867/anthony-black-fills-stat-sheet-loss-to-warriors.php",
+        "https://sports.yahoo.com/articles/sean-sweeney-addresses-anthony-blacks-175937590.html",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/anthony-black-exits-during-ot-due-to-cramping"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu8DO-sOZ0LY05xpILhTiLTMHkNp7mVI4nbqju54GCVMERuWjkUCBekNg4vEQ",
+      "image_credit": "FantasyPros",
+      "news": [
+        {
+          "url": "https://www.fantasypros.com/nba/news/618867/anthony-black-fills-stat-sheet-loss-to-warriors.php",
+          "title": "Anthony Black fills stat sheet in loss to Warriors",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu8DO-sOZ0LY05xpILhTiLTMHkNp7mVI4nbqju54GCVMERuWjkUCBekNg4vEQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/sean-sweeney-addresses-anthony-blacks-175937590.html",
+          "title": "Sean Sweeney Addresses Anthony Black's Injury, Orlando Magic's Overtime Loss",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsl7vcc-edtL15IF1pweaYnyEEqQb_vF3lG4Z1Zjiokvetk7d_0IfoFvGfvmY"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/anthony-black-exits-during-ot-due-to-cramping",
+          "title": "Anthony Black exits during OT due to cramping",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdKFwV9y0ZeUXEGWgKVOOHHGpKYm0VZQ5yF2Ym0fNc2TfHNTUCJwaZ0JhTnBY"
         }
       ]
     }
