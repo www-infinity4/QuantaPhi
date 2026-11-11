@@ -14,14 +14,15 @@ test('Zeus Chat is a real embedded Bubbles conversation, never the local note mo
  assert.match(html,/Local planning notes \(offline\)/);
  assert.match(html,/href="\/bubbles\.html"/);
 });
-test('Zeus keeps draft tools but puts chat ahead of concept marketing in a light surface',()=>{
+test('Zeus keeps draft tools but puts chat ahead of concept marketing in the original thunder-arena surface',()=>{
  const html=read('coliseum/index.html'),css=read('coliseum/zeus-chat-repair.css');
  assert.match(html,/zeus-chat-repair\.css/);
  assert.ok(html.indexOf('id="arena"')<html.indexOf('id="models"'));
- assert.match(css,/\.hero-art\s*\{display:none/);
+ assert.match(css,/\.hero-art\s*\{display:grid/);
  assert.match(css,/\.models\s*,\s*\.plans\s*\{display:none/);
  assert.match(css,/\.zeus-assistant-mount/);
- assert.match(css,/color:\s*#263238/);
+ assert.match(css,/background:\s*#081421/);
+ assert.match(html,/<meta name="theme-color" content="#081421">/);
  assert.match(html,/No paid subscriptions or third-party-model access/);
 });
 
