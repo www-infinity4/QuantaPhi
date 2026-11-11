@@ -33,6 +33,13 @@ test('matches stay bounded, case insensitive, deduplicated, without query persis
  assert.equal(new Set(matches.map(x=>x.id)).size,matches.length);
  assert.ok(matches.every(x=>!('query' in x)&&!('score' in x)));
 });
+test('an invalid duplicate cannot hide a later source-backed card with the same id',()=>{
+ const rows=[
+  {id:'radio',name:'Rock Trap',category:'Music',url:'javascript:alert(1)'},
+  {id:'radio',name:'Rock Station',category:'Music',official:'https://radio.example.org/'}
+ ];
+ assert.deepEqual(suggestFeedSearch(rows,'rock').map(x=>x.label),['Rock Station']);
+});
 test('the existing Oracle feed uses opt-in filling without automatic form submission',()=>{
  const ui=readFileSync(new URL('../quanta-feed.mjs',import.meta.url),'utf8');
  const css=readFileSync(new URL('../quanta-feed.css',import.meta.url),'utf8');
