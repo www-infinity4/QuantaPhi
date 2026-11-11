@@ -55,6 +55,15 @@ test('yellow extraction exactly routes to blue pending import without inventing 
  await page.goto(base+'/coliseum/',{waitUntil:'domcontentloaded'});
  await first(page,'input[aria-label="New project or topic title"]').fill('Source extraction');
  await page.getByRole('button',{name:'Create project thread'}).click();
+ const createdState=await page.evaluate(()=>({
+  url:location.href,
+  root:!!document.querySelector('#zeusSessionHistory'),
+  title:document.querySelector('#zeusSessionHistory .zeus-current-head')?.textContent,
+  notice:document.querySelector('#zeusSessionHistory .zeus-history-notice')?.textContent,
+  threadCount:document.querySelectorAll('#zeusSessionHistory .zeus-thread').length,
+  inputValue:document.querySelector('#zeusSessionHistory input[aria-label="New project or topic title"]')?.value
+ }));
+ console.log('Zeus synthetic extraction thread-create diagnostics:',JSON.stringify(createdState));
  // Assert the observed active session before touching its classification form;
  // a delayed/failed thread creation must not look like a random select timeout.
  await expect(first(page,'.zeus-current-head')).toContainText('Source extraction');
