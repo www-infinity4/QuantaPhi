@@ -1,3 +1,25 @@
+---
+issue: 1923
+project: "Infinity OS Cart 003/004 · Nuance Discovery"
+state: source_staged
+dot: "🟡"
+progress_percent: 44
+progress_basis: "Owner-source audit candidate, tested contract authored, native card and catalog staged; exact-head tests, independent review, merge, Cloudflare and Android acceptance pending."
+sessions_spent: 1
+sessions_remaining_estimate: unknown
+agent: GPT
+lease_id: null
+lease_expires_at: null
+task_session_id: null
+fence: null
+repo: www-infinity4/QuantaPhi
+branch: feat/infinity-os-nuance-discovery-1923
+merged: false
+deployed: false
+live_verified: false
+blocker: "Full original source transcript not yet imported, exact-head CI/review and live acceptance pending."
+next_action: "Verify exact-head PR checks and repair failing tests before independent review."
+---
 # Ticket 1923 · Infinity OS Cart 003/004 → Nuance Discovery
 
 - Canonical owner issue: https://github.com/www-infinity4/QuantaPhi/issues/1923
