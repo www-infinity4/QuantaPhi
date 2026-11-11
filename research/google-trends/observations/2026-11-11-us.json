@@ -3,16 +3,86 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T18:31:31.136032Z",
+  "checked_at": "2026-11-11T19:01:29.304025Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "ilia topuria",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T18:40:00Z",
+      "related_news_urls": [
+        "https://mmajunkie.usatoday.com/story/sports/ufc/2026/11/09/ufc-ilia-topuria-paddy-pimblett-sausage-body-dominate/92689203007/",
+        "https://www.sherdog.com/news/news/Ilia-Topuria-says-brother-may-have-saved-his-career-in-Justin-Gaethje-loss-203540",
+        "https://www.centraloregondaily.com/sports/ilia-topuria-reveals-targeted-ufc-return-timeline-the-fire-is-bigger/article_74a0b747-acd1-5959-b4e2-27d1719908e0.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7lD_pvbuV1VgKSV4lRXCrH1wnTEGLNG1hfL4ByL2MYKaDjpY6q5KUKCN2RpY",
+      "image_credit": "MMA Junkie",
+      "news": [
+        {
+          "url": "https://mmajunkie.usatoday.com/story/sports/ufc/2026/11/09/ufc-ilia-topuria-paddy-pimblett-sausage-body-dominate/92689203007/",
+          "title": "Ilia Topuria: Paddy Pimblett is 'someone you can dominate,' unlike Justin Gaethje",
+          "publisher": "MMA Junkie",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7lD_pvbuV1VgKSV4lRXCrH1wnTEGLNG1hfL4ByL2MYKaDjpY6q5KUKCN2RpY"
+        },
+        {
+          "url": "https://www.sherdog.com/news/news/Ilia-Topuria-says-brother-may-have-saved-his-career-in-Justin-Gaethje-loss-203540",
+          "title": "Ilia Topuria says brother may have saved his career in Justin Gaethje loss",
+          "publisher": "Sherdog",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT25AkX1G036bpgQ2nJE-fhWPayq6rxKvnONLZFrjdbbxBr1oL5_y9W3ppCipc"
+        },
+        {
+          "url": "https://www.centraloregondaily.com/sports/ilia-topuria-reveals-targeted-ufc-return-timeline-the-fire-is-bigger/article_74a0b747-acd1-5959-b4e2-27d1719908e0.html",
+          "title": "Ilia Topuria reveals targeted UFC return timeline: 'The fire is bigger'",
+          "publisher": "Central Oregon Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRMu8x3-8X1SVOfzPcTvCTxSmCGJD8iyi5Q0-M2Ime8hODikWjowlC7WN2X78"
+        }
+      ]
+    },
+    {
+      "query": "lauri markkanen",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-11T18:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50454130/sources-jazz-star-lauri-markkanen-least-1-month",
+        "https://utahjazz.com/news/lauri-markkanen-injury-update",
+        "https://bleacherreport.com/articles/25532308-lauri-markkanen-injured-latest-news-jazz-stars-timeline-return-after-hand-fracture"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLVTyI5BMmpnFGGFXkvO_rYFB9sGszQT6r_AxlTqvZ15Q8AgTzDwUmtWRz5fE",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50454130/sources-jazz-star-lauri-markkanen-least-1-month",
+          "title": "Sources: Jazz star Lauri Markkanen out at least 1 month with fractured hand",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLVTyI5BMmpnFGGFXkvO_rYFB9sGszQT6r_AxlTqvZ15Q8AgTzDwUmtWRz5fE"
+        },
+        {
+          "url": "https://utahjazz.com/news/lauri-markkanen-injury-update",
+          "title": "Lauri Markkanen Injury Update",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOmi0fzjsRq0bZzEqq1wZcoa1seLzvE9vdXjqKMqjpzT6nq8ZuEqYJvKNJK_o"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25532308-lauri-markkanen-injured-latest-news-jazz-stars-timeline-return-after-hand-fracture",
+          "title": "Lauri Markkanen Injured, Latest News on Jazz Star's Timeline to Return After Hand Fracture",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmhlogJUraTB33rH2oKNqDDuhvHnaZZLPjPyjgLhg-Y1ctF1IH_15SkT8BvJA"
+        }
+      ]
+    },
     {
       "query": "nfl football trade deadline",
       "approx_searches": "10000+",
       "published_at": "2026-11-11T18:10:00Z",
       "related_news_urls": [
         "https://www.espn.com/nfl/story/_/id/50442934/week-10-buzz-fantasy-predictions-graziano-fowler-2026-trades",
-        "https://sports.yahoo.com/nfl/article/the-top-5-biggest-impact-deadline-trades-including-jaguars-and-bears-shooting-for-a-super-bowl-222036590.html",
+        "https://sports.yahoo.com/articles/2026-nfl-trade-deadline-winners-180550558.html",
         "https://www.nytimes.com/athletic/7771590/2026/11/11/nfl-trade-deadline-2026-winners-losers/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQn24Ypisn0SlKQSL52jiwW3LAyUPeMVNnANYSNuxz3Mm1q0oRLNt27AlqV65E",
@@ -26,11 +96,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQn24Ypisn0SlKQSL52jiwW3LAyUPeMVNnANYSNuxz3Mm1q0oRLNt27AlqV65E"
         },
         {
-          "url": "https://sports.yahoo.com/nfl/article/the-top-5-biggest-impact-deadline-trades-including-jaguars-and-bears-shooting-for-a-super-bowl-222036590.html",
-          "title": "The top 5 biggest impact deadline trades, including Jaguars and Bears shooting for a Super Bowl",
+          "url": "https://sports.yahoo.com/articles/2026-nfl-trade-deadline-winners-180550558.html",
+          "title": "2026 NFL Trade Deadline Winners and Losers: Jaguars Go All In, Chargers and Steelers Fall Short",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzJiYk1hszIEw94M6sFZhqZhzFc6f_NQTTq12Gl4cshRwjMfojJRnbmK23zjk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1E6E8mURSwLv_c-3rvZnQhFiOGVcH9Wuy4xEuWS1xnVPTq58flMbXMpzlPOU"
         },
         {
           "url": "https://www.nytimes.com/athletic/7771590/2026/11/11/nfl-trade-deadline-2026-winners-losers/",
@@ -48,7 +118,7 @@
       "related_news_urls": [
         "https://www.foxnews.com/outkick-sports/lebron-james-gone-bronny-still-cant-play-lakers-need-finally-cut-him-loose",
         "https://basketnews.com/news-258829-former-no-1-nba-draft-pick-blasts-bronny-james-over-lakers-roster-spot.html",
-        "https://fadeawayworld.net/nba/los-angeles-lakers/kenyon-martin-defends-lebron-james-for-helping-bronny-reach-the-nba-despite-not-being-ready"
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/05/tell-me-this-is-a-joke-lebron-come-on-dog-bronnie/92622388007/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsG_lGeqpBGk_PeCQxbM5W1NAcsw6Gm8rStySrLRc2_Jq_HzhxBxkg1DZda2Q",
       "image_credit": "Fox News",
@@ -68,26 +138,33 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT06AVSv59uNR99Cs9j6JNKF4zCE6veEssMcVzgDteYFpgmRIOoAsJ1Wk_YnGA"
         },
         {
-          "url": "https://fadeawayworld.net/nba/los-angeles-lakers/kenyon-martin-defends-lebron-james-for-helping-bronny-reach-the-nba-despite-not-being-ready",
-          "title": "Kenyon Martin Defends LeBron James For Helping Bronny Reach The NBA Despite Not Being Ready",
-          "publisher": "Fadeaway World",
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/05/tell-me-this-is-a-joke-lebron-come-on-dog-bronnie/92622388007/",
+          "title": "“Tell me this is a joke…LeBron, come on, dog. Bronnie …",
+          "publisher": "HoopsHype",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9Le4qpAb2PiJKBm8PlzFa1tVoY8eKIUCzMXfFjg2_rGHNfcJxC5eKfJI4YY0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReueYqWEglPeodwW5PecAh73eYaVB0z41dPsTcsqNE_61n3uz7DtzR65-iY60"
         }
       ]
     },
     {
       "query": "landfill",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-11T17:40:00Z",
       "related_news_urls": [
+        "https://www.ksat.com/news/local/2026/11/11/free-landfill-day-in-san-antonio-this-weekend-what-you-can-bring/",
         "https://www.newser.com/story/399741/bill-gates-landfill-investments-clash-with-his-climate-crusade.html",
-        "https://www.propublica.org/article/bill-gates-republic-landfill-methane-pollution",
-        "https://www.fox29.com/news/why-your-recycling-is-likely-ending-up-landfill-costing-local-communities-thousands-fines"
+        "https://www.propublica.org/article/bill-gates-republic-landfill-methane-pollution"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQN7lmsRJVqvsnQD9A3XdlAbcXdHgQUX6q1SnKHABA1NLSWPQm4L_SI0j-vcs4",
-      "image_credit": "Newser",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRnya-kCbjTRw5odqSyhwZQ_8hHvx-mCRxHjtIyzJHE7Hpox0jQy3DJ3b_4vI",
+      "image_credit": "KSAT",
       "news": [
+        {
+          "url": "https://www.ksat.com/news/local/2026/11/11/free-landfill-day-in-san-antonio-this-weekend-what-you-can-bring/",
+          "title": "Free landfill day in San Antonio this weekend: What you can bring",
+          "publisher": "KSAT",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRnya-kCbjTRw5odqSyhwZQ_8hHvx-mCRxHjtIyzJHE7Hpox0jQy3DJ3b_4vI"
+        },
         {
           "url": "https://www.newser.com/story/399741/bill-gates-landfill-investments-clash-with-his-climate-crusade.html",
           "title": "Bill Gates' Landfill Investments Clash With His Climate Crusade",
@@ -101,34 +178,27 @@
           "publisher": "ProPublica",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSkk_3u8vv_EWZI26ziSccidragq2WSRcDx61hFjPxG376_5AFffkiz9E8BXlc"
-        },
-        {
-          "url": "https://www.fox29.com/news/why-your-recycling-is-likely-ending-up-landfill-costing-local-communities-thousands-fines",
-          "title": "Why your plastic trash bags are sending tons of good local recycling straight to the landfill",
-          "publisher": "FOX 29 Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNFVTsK-3zvsLVJM4RBDTnyisK0JDIwfIi3HHA0_4Lde_K_Fm7RiwAioxPsXo"
         }
       ]
     },
     {
       "query": "casper ruud",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-11T17:30:00Z",
       "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/767254ce-2a9b-4098-8b8f-c02fcf472131/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/6ac259cb-f6d1-4ad9-ad46-b86e2a0c58e8/",
         "https://www.atptour.com/en/video/highlights-cerundolo-ousts-home-hope-ymer-earns-first-atp-tour-indoor-hard-win-stockholm-2026",
         "https://www.skysports.com/tennis/watch/6539326264435598112/bybit-stockholm-open-2026"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQK4T3PS4v4pZc_K4i4TPU5NzKhNE52olz2QQPdSlCP_ubfbO9_sAOOpzY2UDA",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSt-2Bwr-vscngnppAr-IfVY2v34yAD-M9yXZEKfKPu_QkpZSCmtWKdLOTD-BI",
       "image_credit": "Robinhood",
       "news": [
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/767254ce-2a9b-4098-8b8f-c02fcf472131/",
-          "title": "November 12, 2026: Linda Noskova vs Jessica Pegula Tennis Prediction Market",
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/6ac259cb-f6d1-4ad9-ad46-b86e2a0c58e8/",
+          "title": "November 11, 2026: Marina Bassols Ribera vs Maria Lourdes Carle Prediction Market",
           "publisher": "Robinhood",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQK4T3PS4v4pZc_K4i4TPU5NzKhNE52olz2QQPdSlCP_ubfbO9_sAOOpzY2UDA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSt-2Bwr-vscngnppAr-IfVY2v34yAD-M9yXZEKfKPu_QkpZSCmtWKdLOTD-BI"
         },
         {
           "url": "https://www.atptour.com/en/video/highlights-cerundolo-ousts-home-hope-ymer-earns-first-atp-tour-indoor-hard-win-stockholm-2026",
@@ -147,48 +217,13 @@
       ]
     },
     {
-      "query": "baseball",
+      "query": "will scharf",
       "approx_searches": "1000+",
       "published_at": "2026-11-11T17:20:00Z",
       "related_news_urls": [
-        "https://www.espn.com/mlb/story/_/id/50433101/offseason-2026-27-free-agency-passan-biggest-trades-signings",
-        "https://bleacherreport.com/articles/25531463-updated-mlb-free-agents-2026-rumors-predictions-tarik-skubal-teruaki-sato-more",
-        "https://www.sportsnet.ca/mlb/article/predicting-off-season-contracts-for-mlbs-top-50-free-agents/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLeoyYriQH4ppKcs0jcpAHQN8MAEtG-5uxD-Op2BbPQ6TtqibpBvV9C_BhHnw",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mlb/story/_/id/50433101/offseason-2026-27-free-agency-passan-biggest-trades-signings",
-          "title": "Perfect 2026-27 MLB free agency moves for teams to watch",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLeoyYriQH4ppKcs0jcpAHQN8MAEtG-5uxD-Op2BbPQ6TtqibpBvV9C_BhHnw"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25531463-updated-mlb-free-agents-2026-rumors-predictions-tarik-skubal-teruaki-sato-more",
-          "title": "Updated MLB Free Agents 2026 Rumors, Predictions for Tarik Skubal, Teruaki Sato, More",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5Z2HloBsHm1WERjSGxtqRYSSIF68EdQ7sLwdVDDVTH6wVAHBE7MMUY-xL6I"
-        },
-        {
-          "url": "https://www.sportsnet.ca/mlb/article/predicting-off-season-contracts-for-mlbs-top-50-free-agents/",
-          "title": "Predicting off-season contracts for MLB's top 50 free agents",
-          "publisher": "Sportsnet.ca",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm_XbM0uWnndNUw3vxgutAS0fApR6RbqPAqpeJuO59iC60rtPjpeQxBVyuhSQ"
-        }
-      ]
-    },
-    {
-      "query": "will scharf",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T17:20:00Z",
-      "related_news_urls": [
         "https://www.nytimes.com/2026/11/11/us/politics/trump-democrats-congress-oversight-committee.html",
-        "https://www.politico.com/live-updates/2026/11/11/congress/white-house-puts-garcia-on-notice-01160683",
-        "https://www.cnn.com/2026/11/11/politics/live-news/hegseth-impeachment-congress"
+        "https://www.nbcnews.com/politics/white-house/white-house-warns-congressional-democrats-investigating-us-may-crime-rcna608752",
+        "https://www.theguardian.com/us-news/2026/nov/11/democrat-investigation-white-house-letter-garcia"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTCT-eWrVa1cTKjxYXeyimkaZw6bjF6Xm4-rzN7lTeCwNCO7VOMX5c4SwTOuE",
       "image_credit": "The New York Times",
@@ -201,18 +236,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTCT-eWrVa1cTKjxYXeyimkaZw6bjF6Xm4-rzN7lTeCwNCO7VOMX5c4SwTOuE"
         },
         {
-          "url": "https://www.politico.com/live-updates/2026/11/11/congress/white-house-puts-garcia-on-notice-01160683",
-          "title": "White House threatens criminal investigation into Democrats’ oversight efforts",
-          "publisher": "Politico",
+          "url": "https://www.nbcnews.com/politics/white-house/white-house-warns-congressional-democrats-investigating-us-may-crime-rcna608752",
+          "title": "White House warns congressional Democrats: Investigating us may be a crime",
+          "publisher": "NBC News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4J90SoLaXo6RejLrM3eDNwcPWCwFiLd25e-0Gxgn4swHSJNfxRED9nVV5D5w"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuVuU1qI1cQYnHCrEW5xiQhVkpvVsaq2A-rLL0IzWWJLdmmuafpg148QiUCew"
         },
         {
-          "url": "https://www.cnn.com/2026/11/11/politics/live-news/hegseth-impeachment-congress",
-          "title": "White House warns incoming House Oversight chair it ‘will not be extorted’",
-          "publisher": "CNN",
+          "url": "https://www.theguardian.com/us-news/2026/nov/11/democrat-investigation-white-house-letter-garcia",
+          "title": "Democrat says Trump has ‘something to hide’ after White House threatens oversight efforts",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQK-JkAzzWgsfph24ms9ez0uGa_yz3Wx9wS0qZdJevKjWH8y8MA9FpasGTxZWI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRg-djQXbWNNpZg0dZ23eyRi9ReLSyA-_yhwEa-fKjAct0CgvUxwjigmR92bnY"
         }
       ]
     },
@@ -257,8 +292,8 @@
       "published_at": "2026-11-11T17:00:00Z",
       "related_news_urls": [
         "https://www.cnn.com/2026/11/11/europe/russian-ambassador-to-us-dies-intl",
-        "https://www.theguardian.com/world/2026/nov/11/russia-ambassador-dies-alexander-darchiev",
-        "https://abcnews.com/Politics/alexander-darchiev-russias-ambassador-united-states-dead-66/story?id=138048433"
+        "https://thehill.com/policy/international/6213787-alexander-darchiev-russian-ambassador-us-death/",
+        "https://www.theguardian.com/world/2026/nov/11/russia-ambassador-dies-alexander-darchiev"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDtk-aLfa0M3eH_-1rIbt03IWhhi2Us_mz3aKt_SfJ916LAtP-KUNf2l9ORLE",
       "image_credit": "CNN",
@@ -271,18 +306,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDtk-aLfa0M3eH_-1rIbt03IWhhi2Us_mz3aKt_SfJ916LAtP-KUNf2l9ORLE"
         },
         {
+          "url": "https://thehill.com/policy/international/6213787-alexander-darchiev-russian-ambassador-us-death/",
+          "title": "Russia announces sudden death of ambassador to US",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzvWwOg3CsLYNqm-2UlTGOdyO45Q_JuW2cSNPCuZSPkwKsSbi4Shhw9HvpP7M"
+        },
+        {
           "url": "https://www.theguardian.com/world/2026/nov/11/russia-ambassador-dies-alexander-darchiev",
           "title": "Russia’s ambassador to the United States dies, aged 66",
           "publisher": "The Guardian",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvuDMO8YoUgItc2y_DEgGsqkkX4qyRvABuuSb_f7J14p33tIBWX87J3y1A7lk"
-        },
-        {
-          "url": "https://abcnews.com/Politics/alexander-darchiev-russias-ambassador-united-states-dead-66/story?id=138048433",
-          "title": "Alexander Darchiev, Russia’s ambassador to the United States, dead at 66",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqONMHCgvKYE5nPt453Fxwpmdl60X7OdFlEllnCLGNRCygupkbwBkYuqu657k"
         }
       ]
     },
@@ -318,41 +353,6 @@
           "publisher": "Newsday",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQ5RkYuCtB6IrZfjn_eFSCnrIWSo7qpql1SyGEUK3pFkMoWZavqifF30KPzgs"
-        }
-      ]
-    },
-    {
-      "query": "vanguard",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T16:40:00Z",
-      "related_news_urls": [
-        "https://www.investopedia.com/why-you-should-think-twice-about-keeping-cash-savings-at-vanguard-schwab-or-fidelity-12248197",
-        "https://finance.yahoo.com/personal-finance/investing/article/vanguard-and-fidelity-have-a-warning-for-retirement-savers-195925771.html",
-        "https://www.thestreet.com/retirement/fidelity-and-vanguard-issue-a-sobering-outlook-for-retirees"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQslrLn17t4R2lytm0zVn4RUK0nkQgkG4yO1Lol57RF-YiYaWfY4VVCmYWWyqU",
-      "image_credit": "Investopedia",
-      "news": [
-        {
-          "url": "https://www.investopedia.com/why-you-should-think-twice-about-keeping-cash-savings-at-vanguard-schwab-or-fidelity-12248197",
-          "title": "Why You Should Think Twice About Keeping Cash Savings at Vanguard, Schwab, or Fidelity",
-          "publisher": "Investopedia",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQslrLn17t4R2lytm0zVn4RUK0nkQgkG4yO1Lol57RF-YiYaWfY4VVCmYWWyqU"
-        },
-        {
-          "url": "https://finance.yahoo.com/personal-finance/investing/article/vanguard-and-fidelity-have-a-warning-for-retirement-savers-195925771.html",
-          "title": "Vanguard and Fidelity have a warning for retirement savers",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXiW4Ggr1BzzbpW8WRkNTY-9RyV2gH0AODp8O18yux0zju9J52d3HdzIdmgtc"
-        },
-        {
-          "url": "https://www.thestreet.com/retirement/fidelity-and-vanguard-issue-a-sobering-outlook-for-retirees",
-          "title": "Fidelity and Vanguard issue a sobering outlook for retirees",
-          "publisher": "TheStreet",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUllmmrg_1SAj4AuZIow-q7ynE0n6iHvq_coCMZEajxGaUSE0UPfcf8EVMVsA"
         }
       ]
     }
