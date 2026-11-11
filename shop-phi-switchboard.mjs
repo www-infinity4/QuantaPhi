@@ -7,6 +7,7 @@ import {housingCompanions,housingResource} from './housing-help-catalog.mjs';
 import {createHousingHelpCard} from './housing-help-cards.mjs';
 import {chapterFor} from './shopphi-showcase-core.mjs';
 import {createShopPhiStoryPlayer} from './shopphi-story-player.mjs';
+import {placementPolicy} from './quanta-context-placement.mjs';
 
 export const SLOT_COUNT=6;
 // Companion pages can advance without fetching ads or changing the selected hero.
@@ -90,6 +91,11 @@ export function normalizeCandidate(raw={}){
  // General ShopPhi recommendations never use medical/21+ viewing as advertising intent.
  if(SENSITIVE.test([raw.category,title,raw.description,raw.contextTopic].join(' '))||raw.ageRestricted===true)return null;
  return {id,title,url,image,images,type,
+  source:scrub(raw.source),createdAt:scrub(raw.createdAt),updatedAt:scrub(raw.updatedAt),
+  startsAt:scrub(raw.startsAt),endsAt:scrub(raw.endsAt),
+  dayparts:Array.isArray(raw.dayparts)?raw.dayparts.filter(x=>typeof x==='string').slice(0,6):[],
+  approved:raw.approved===true,reviewed:raw.reviewed===true,
+  merchantHours:raw.merchantHours||null,
   creativeApproved:raw.creativeApproved===true,
   // Keep the signed/publicly validated state through later candidate ranking.
   // approvedQuickCards()/shopItems() are normalized before chooseCompanions().
@@ -119,6 +125,7 @@ export function chooseCompanions(hero,inventory,{quantScores={},exposures={},rot
  const lane=contextFor(hero),unique=new Map();
  for(const raw of Array.isArray(inventory)?inventory:[]){
   const c=normalizeCandidate(raw);if(!c)continue;
+  if(c.source==='adphi'&&!placementPolicy({...c,sourceUrl:c.url}).eligible)continue;
   if(c.id===hero.id||c.sourceId===hero.id||c.url===hero.url||unique.has(c.url))continue;
   const match=relation(c,hero,lane);
   if(match===0)continue; // Unrelated high-value ads cannot buy their way in.
@@ -152,7 +159,7 @@ export function chooseCompanions(hero,inventory,{quantScores={},exposures={},rot
 export function approvedQuickCards(payload){
  return (Array.isArray(payload?.cards)?payload.cards:[]).filter(x=>x.status==='approved')
  .map(x=>normalizeCandidate({id:'quick-'+x.slug,title:x.title,description:x.description,category:x.kind,
-  image:x.image,images:x.images||x.galleryImages,url:x.cardUrl,type:'published-card',status:x.status,sourceId:x.slug})).filter(Boolean);
+  image:x.image,images:x.images||x.galleryImages,url:x.cardUrl,type:'published-card',status:x.status,sourceId:x.slug,createdAt:x.createdAt})).filter(Boolean);
 }
 export function shopItems(payload){
  return (Array.isArray(payload?.items)?payload.items:[]).filter(x=>x.state==='published')
@@ -262,7 +269,14 @@ if(typeof document!=='undefined'){
    heading.textContent=housing?'Housing help · related resources':'Related source cards · ShopPhi';
    before.replaceChildren();after.replaceChildren();
    const visible=list.slice(0,SLOT_COUNT);visibleCards=visible;
-   storyPlayer.setCards(lane.sensitive?[]:visible,active);
+   storyPlayer.setCards(lane.sensitive?[]:visible.filter(c=>{
+    if(c.type==='sponsored')return c.source==='adphi'&&placementPolicy({...c,sourceUrl:c.url}).eligible&&c.creativeApproved;
+    if(c.type==='published-card'){
+     const stamp=Date.parse(c.createdAt||'');
+     return Number.isFinite(stamp)&&stamp<=Date.now()&&Date.now()-stamp<=45*86400000;
+    }
+    return false;
+   }),active);
    grid.classList.toggle('shopphi-showcase-mode',!housing&&!lane.sensitive&&visible.length>=2&&visible.slice(0,2).every(c=>c.image)&&
     ['cookout','movie-night','kitchen','family','tools','outdoors','coins','denim','grocery','shopping'].includes(lane.id));
    visiblePage=Math.min(visiblePage,Math.max(0,Math.ceil(visible.length/2)-1));
@@ -373,8 +387,14 @@ if(typeof document!=='undefined'){
      calls.push(Promise.resolve().then(()=>window.ControlPhi.requestSponsoredCard(topic,'shopphi-flank-'+(i+1)))
       .then(ad=>ad?normalizeCandidate({id:'ad-'+(ad.id||ad.campaignId||topic+'-'+ad.destinationUrl),
        title:ad.title,description:ad.body,url:ad.destinationUrl,image:ad.imageUrl,
+       // Reject stale, expired or metadata-free paid creative, rather than
+       // describing any broker response as a new verified advertisement.
        sponsor:ad.advertiser,type:'sponsored',contextTopic:topic,
-       images:ad.images,status:ad.status,creativeApproved:ad.creativeApproved===true}):null)
+       source:'adphi',approved:ad.approved,reviewed:ad.reviewed,
+       image:ad.imageUrl,images:ad.images,status:ad.status,
+       creativeApproved:ad.creativeApproved===true,
+       startsAt:ad.startsAt,endsAt:ad.endsAt,createdAt:ad.createdAt,
+       updatedAt:ad.updatedAt,dayparts:ad.dayparts,merchantHours:ad.merchantHours}):null)
       .then(x=>x?[x]:[]).catch(()=>[]));
     }
    }
