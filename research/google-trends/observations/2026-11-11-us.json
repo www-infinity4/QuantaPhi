@@ -3,16 +3,121 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T09:01:40.274990Z",
+  "checked_at": "2026-11-11T09:31:22.069901Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "spectrum outage",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T09:00:00Z",
+      "related_news_urls": [
+        "https://www.masoncountypress.com/2026/11/09/spectrum-internet-disruptions-affect-mason-county-businesses-monday/",
+        "https://www.themountaineer.com/news/update-widespread-internet-outages-restored/article_9d0d1f90-8212-48df-81b2-d874b21fbefa.html",
+        "https://mymotherlode.com/news/local/11289816/major-internet-outage-sparked-by-alleged-thieves.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlra5B1j8R0gVmtOx5ZERJfpG7P0VeaYPk-HCkJnnVLbccNAJgpkKUjP8JJWM",
+      "image_credit": "MasonCountyPress.com",
+      "news": [
+        {
+          "url": "https://www.masoncountypress.com/2026/11/09/spectrum-internet-disruptions-affect-mason-county-businesses-monday/",
+          "title": "Spectrum internet disruptions affect Mason County businesses Monday",
+          "publisher": "MasonCountyPress.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlra5B1j8R0gVmtOx5ZERJfpG7P0VeaYPk-HCkJnnVLbccNAJgpkKUjP8JJWM"
+        },
+        {
+          "url": "https://www.themountaineer.com/news/update-widespread-internet-outages-restored/article_9d0d1f90-8212-48df-81b2-d874b21fbefa.html",
+          "title": "UPDATE: Widespread internet outages restored",
+          "publisher": "The Mountaineer",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8tOGWZKL5PpB_gB27ltIixeM1ewi015MA_hVE7Pa9raqLITNXkdCTj2ET2hs"
+        },
+        {
+          "url": "https://mymotherlode.com/news/local/11289816/major-internet-outage-sparked-by-alleged-thieves.html",
+          "title": "Major Internet Outage Sparked By Alleged Thieves",
+          "publisher": "myMotherLode.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKGm9EcF2-JFdd-V_oVYTPPb1BttCZgB2N-riG9lXL3X7WgmG-8OXyEPm8Rhk"
+        }
+      ]
+    },
+    {
+      "query": "pochettino",
+      "approx_searches": "100+",
+      "published_at": "2026-11-11T08:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7767421/2026/11/11/mauricio-pochettino-manchester-united-manager-usmnt/",
+        "https://www.skysports.com/football/news/13610862/mauricio-pochettino-man-utd-close-to-agreeing-deal-with-michael-carricks-potential-successor-ahead-of-monaco-meeting",
+        "https://www.bbc.com/sport/football/articles/c5rmymrvm004o"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzO2CeJxNDVyNen0VVXm0yUX6PMxrDA95n8QV69u72ZLT5eUW7jvemxRvA6YA",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7767421/2026/11/11/mauricio-pochettino-manchester-united-manager-usmnt/",
+          "title": "Manchester United finalising deal for Mauricio Pochettino if Michael Carrick departs - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzO2CeJxNDVyNen0VVXm0yUX6PMxrDA95n8QV69u72ZLT5eUW7jvemxRvA6YA"
+        },
+        {
+          "url": "https://www.skysports.com/football/news/13610862/mauricio-pochettino-man-utd-close-to-agreeing-deal-with-michael-carricks-potential-successor-ahead-of-monaco-meeting",
+          "title": "Mauricio Pochettino: Man Utd close to agreeing deal with Michael Carrick's potential successor ahead of Monaco meeting",
+          "publisher": "Sky Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVnWP5KlnyUpC9Hk35_gNPa8PKVCieUVtkjr0J3fF0pU9DcijgD65SzhV_YtE"
+        },
+        {
+          "url": "https://www.bbc.com/sport/football/articles/c5rmymrvm004o",
+          "title": "Next Man Utd manager: What are club's managerial options amid doubts over Michael Carrick's future",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQo_QyRSkRzfMIOhDwNCz_-G7AGJcWZvU_O3Rl2MNefHiGFdOCNtY9Go2IHlfY"
+        }
+      ]
+    },
+    {
+      "query": "michael j fox",
+      "approx_searches": "100+",
+      "published_at": "2026-11-11T08:40:00Z",
+      "related_news_urls": [
+        "https://www.upworthy.com/michael-j-fox-shrinking-harrison-ford-parkinsons-ex1/",
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/michael-j-fox-admits-thought-215900001.html",
+        "https://www.aol.com/articles/michael-j-fox-reveals-fears-001943000.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEnD62oS3qv3eYKSXs7svHIOYlfutHMk0hBgmEPkQqrL29of3dgsUBJ3E4jQU",
+      "image_credit": "Upworthy",
+      "news": [
+        {
+          "url": "https://www.upworthy.com/michael-j-fox-shrinking-harrison-ford-parkinsons-ex1/",
+          "title": "Michael J. Fox saw Harrison Ford's Parkinson's acting on 'Shrinking,' and immediately reached out",
+          "publisher": "Upworthy",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEnD62oS3qv3eYKSXs7svHIOYlfutHMk0hBgmEPkQqrL29of3dgsUBJ3E4jQU"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/michael-j-fox-admits-thought-215900001.html",
+          "title": "Michael J. Fox Admits He Thought People Would ‘Crucify’ Him for Joking About Parkinson’s Diagnosis in “Curb Your Enthusiasm”",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeQXtBRGkDm56So52LJlI9flD1bqVV6DijEDCAJV6rrCd_ejTh9ZYYNiCg5ek"
+        },
+        {
+          "url": "https://www.aol.com/articles/michael-j-fox-reveals-fears-001943000.html",
+          "title": "Michael J. Fox Reveals Fears About His Controversial Curb Your Enthusiasm Cameo",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2sxYNa_Li8f7fGtgprgbbEvQycUBZ1I1p-A6zyvjDyWJpfg_vZ7UCN-kGEUY"
+        }
+      ]
+    },
     {
       "query": "qwen 4",
       "approx_searches": "200+",
       "published_at": "2026-11-11T08:40:00Z",
       "related_news_urls": [
         "https://asiatimes.com/2026/11/what-alibaba-left-blank-about-qwen4/",
-        "https://www.geeky-gadgets.com/qwen-4-preview-first-look/",
+        "https://www.orcarouter.ai/blog/midm-k-3-0-pro-vs-qwen-4-max",
         "https://news.aibase.com/news/32160"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3mVxXH-7RCYm3N7w1f8z2RbvfC07yQZ6IsPtPbK8264btYIfWm1r_gZm8YZ4",
@@ -26,11 +131,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3mVxXH-7RCYm3N7w1f8z2RbvfC07yQZ6IsPtPbK8264btYIfWm1r_gZm8YZ4"
         },
         {
-          "url": "https://www.geeky-gadgets.com/qwen-4-preview-first-look/",
-          "title": "Qwen 4 Beats Deepseek 4.1 Flash in Web Tasks on Half the Tokens",
-          "publisher": "Geeky Gadgets",
+          "url": "https://www.orcarouter.ai/blog/midm-k-3-0-pro-vs-qwen-4-max",
+          "title": "MIDM K 3.0 Pro vs Qwen 4 Max: One Ships, One Is Still a Slide",
+          "publisher": "OrcaRouter",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3VigQswzuCDleEsVW0B1ARQRO4AdEWK_ZGsBbpH7H9UUArp7z24jqu1kKRGY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf2OjUT-URaFwtfKjioaal5g9lCf8tsPTmSzyOz36PaVyv3tKWiLHrXKo4xmo"
         },
         {
           "url": "https://news.aibase.com/news/32160",
@@ -43,36 +148,71 @@
     },
     {
       "query": "cj daniels",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-11T08:40:00Z",
       "related_news_urls": [
-        "https://www.turfshowtimes.com/los-angeles-rams-depth-chart/154854/rams-max-klare-cj-daniels-depth",
-        "https://sports.yahoo.com/articles/time-play-rookies-040733599.html",
-        "https://www.espn.com/nfl/story/_/id/50435879/rams-nacua-likely-hit-ir-mcl-pcl-sprain-turf-toe"
+        "https://www.ninersnation.com/san-francisco-49ers-injuries/165578/rams-poach-wide-receiver-from-the-49ers-practice-squad-gracen-halton-heads-to-the-ir",
+        "https://ninerswire.usatoday.com/story/sports/nfl/niners/2026/11/10/49ers-xavier-smith-signs-the-los-angeles-rams/92714007007/",
+        "https://www.turfshowtimes.com/los-angeles-rams-depth-chart/154854/rams-max-klare-cj-daniels-depth"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGbvGw4Z8rKqIeq18ePEaD5SkkX73kZWNp3O5qZhc8fq6ZZonEhiPgaz-DiWE",
-      "image_credit": "Turf Show Times",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCDQgbPDbEAUujPL8xQzhG_euSap0jDuLhswLWDRcQ4RF0jDO6yCwyHp4iKNM",
+      "image_credit": "Niners Nation",
       "news": [
+        {
+          "url": "https://www.ninersnation.com/san-francisco-49ers-injuries/165578/rams-poach-wide-receiver-from-the-49ers-practice-squad-gracen-halton-heads-to-the-ir",
+          "title": "Rams poach wide receiver from the 49ers’ practice squad; Gracen Halton heads to the IR",
+          "publisher": "Niners Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCDQgbPDbEAUujPL8xQzhG_euSap0jDuLhswLWDRcQ4RF0jDO6yCwyHp4iKNM"
+        },
+        {
+          "url": "https://ninerswire.usatoday.com/story/sports/nfl/niners/2026/11/10/49ers-xavier-smith-signs-the-los-angeles-rams/92714007007/",
+          "title": "NFC West rival steals WR from 49ers heading into Week 10",
+          "publisher": "Niners Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXyCdSehwMs6GHCdAWGaoNL34Tf_F64l1Urou5QX2NDocyo3nMsvktaDUJpyg"
+        },
         {
           "url": "https://www.turfshowtimes.com/los-angeles-rams-depth-chart/154854/rams-max-klare-cj-daniels-depth",
           "title": "Sean McVay should play the rookies now",
           "publisher": "Turf Show Times",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGbvGw4Z8rKqIeq18ePEaD5SkkX73kZWNp3O5qZhc8fq6ZZonEhiPgaz-DiWE"
+        }
+      ]
+    },
+    {
+      "query": "odessa a'zion",
+      "approx_searches": "100+",
+      "published_at": "2026-11-11T08:30:00Z",
+      "related_news_urls": [
+        "https://www.redcarpet-fashionawards.com/2026/11/08/odessa-azion-makes-the-charles-ron-runway-look-her-own-at-lacma-gala/",
+        "https://www.imdb.com/news/ni66101165/?ref_=nmnw_art_perm",
+        "https://wwd.com/footwear-news/shoe-trends/odessa-azion-boots-lacma-gala-2026-1239405684/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKPCx4PVctZIWtSAKDhDwNZ-pLA8ZjnEHHfJ7GZZAbzUCX57YD7t5U2aUp6Jc",
+      "image_credit": "Red Carpet Fashion Awards",
+      "news": [
+        {
+          "url": "https://www.redcarpet-fashionawards.com/2026/11/08/odessa-azion-makes-the-charles-ron-runway-look-her-own-at-lacma-gala/",
+          "title": "Odessa A’zion Reworks Charles & Ron for LACMA Gala 2026",
+          "publisher": "Red Carpet Fashion Awards",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKPCx4PVctZIWtSAKDhDwNZ-pLA8ZjnEHHfJ7GZZAbzUCX57YD7t5U2aUp6Jc"
         },
         {
-          "url": "https://sports.yahoo.com/articles/time-play-rookies-040733599.html",
-          "title": "Sean McVay should play the rookies now",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.imdb.com/news/ni66101165/?ref_=nmnw_art_perm",
+          "title": "‘Stranger Things: Tales from ’85’ Star Odessa A’zion Stuns In Crimson At Lacma Gala",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKe51OBCIX644qJpigU9tn3YJW537rqSVG1AEX4DKSrkPAK4V622ykJMAVLxw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTILHrcigHAmNikKIfUWMwRedasIkUdzFwXFvfcywD2T6ofdhL9fl3zkshVHPU"
         },
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50435879/rams-nacua-likely-hit-ir-mcl-pcl-sprain-turf-toe",
-          "title": "Rams' Nacua likely to hit IR with MCL, PCL sprain, turf toe",
-          "publisher": "ESPN",
+          "url": "https://wwd.com/footwear-news/shoe-trends/odessa-azion-boots-lacma-gala-2026-1239405684/",
+          "title": "Odessa A’zion Brings Sartorial Drama in High-shine Red Gown and Lace-up Boots on LACMA Gala 2026 Red Carpet",
+          "publisher": "WWD",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgljrxRk3HfRtqHZ7xkf8tC9rrI8N5nmGL8qEkw1cGmQcuPl2ZRHvPUCWR2bo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9977jLuoxtCd91bf5K3b83qMFSBe2eNGicRU6CRvpr8FQv0Lii-Vsa-qHtKA"
         }
       ]
     },
@@ -81,13 +221,20 @@
       "approx_searches": "100+",
       "published_at": "2026-11-11T08:30:00Z",
       "related_news_urls": [
+        "https://www.vogue.co.uk/gallery/leonardo-dicaprio-movies",
         "https://ua.news/en/culture/leonardo-dikaprio-vidznachaie-52-richchia-tsikavi-fakti-nebezpechni-prigodi-ta-osobiste-zhittia-aktora",
-        "https://nofilmschool.com/roles-dicaprio-turned-down",
-        "https://www.imdb.com/fr-ca/news/ni66104482/?ref_=tt_nwr_1"
+        "https://nofilmschool.com/roles-dicaprio-turned-down"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCK0Mwy21BHQeRfAO7T8PD33eLBTAAcD637LFIPBnEAjjoGTkzKosQKrFpFjo",
-      "image_credit": "UA.NEWS",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtmvoktXfNtlJNIYABSPoCxGi3g99OALtyM0W8s6Z9v4DfPpI6VEgUYzDsUBk",
+      "image_credit": "Vogue",
       "news": [
+        {
+          "url": "https://www.vogue.co.uk/gallery/leonardo-dicaprio-movies",
+          "title": "14 Of Leonardo DiCaprio’s Best Roles To Date",
+          "publisher": "Vogue",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtmvoktXfNtlJNIYABSPoCxGi3g99OALtyM0W8s6Z9v4DfPpI6VEgUYzDsUBk"
+        },
         {
           "url": "https://ua.news/en/culture/leonardo-dikaprio-vidznachaie-52-richchia-tsikavi-fakti-nebezpechni-prigodi-ta-osobiste-zhittia-aktora",
           "title": "Leonardo DiCaprio Celebrates His 52nd Birthday: Interesting Facts, Daring Adventures, and the Actor's Personal Life",
@@ -101,13 +248,6 @@
           "publisher": "No Film School",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0tBx6fgGAEoOqCO8J8Rom5tFTUcU0woCKlu9NdyiYq2f0SMGgbU8ppOfZEe8"
-        },
-        {
-          "url": "https://www.imdb.com/fr-ca/news/ni66104482/?ref_=tt_nwr_1",
-          "title": "Russell Crowe and Leonardo DiCaprio’s CIA Thriller Officially Hits Apple TV",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUNxD4dsarKM5eaIwYVio0Y3UBtHFqv9TVMf5Ndy9IYqyUDtfRP4m8KwyjZIo"
         }
       ]
     },
@@ -187,7 +327,7 @@
       "published_at": "2026-11-11T08:10:00Z",
       "related_news_urls": [
         "https://www.pnj.com/picture-gallery/news/military/blueangels/2026/11/07/blue-angels-pilot-scott-laux-removed-from-team/92660422007/",
-        "https://www.navytimes.com/news/your-navy/2026/11/09/blue-angels-dismiss-aviator-and-public-affairs-officer-sources-say-moves-unrelated/",
+        "https://www.militarytimes.com/news/your-military/2026/11/09/blue-angels-dismiss-aviator-and-public-affairs-officer-sources-say-moves-unrelated/",
         "https://nypost.com/2026/11/08/us-news/blue-angels-pilot-scott-laux-booted-from-elite-navy-flight-team-for-failing-to-meet-standards/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkxriiN_5Rgjb8ecbnaiH8FFs8uFte6sNr055hdo32lbDIyhjwXPAi81kmx5A",
@@ -201,11 +341,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkxriiN_5Rgjb8ecbnaiH8FFs8uFte6sNr055hdo32lbDIyhjwXPAi81kmx5A"
         },
         {
-          "url": "https://www.navytimes.com/news/your-navy/2026/11/09/blue-angels-dismiss-aviator-and-public-affairs-officer-sources-say-moves-unrelated/",
+          "url": "https://www.militarytimes.com/news/your-military/2026/11/09/blue-angels-dismiss-aviator-and-public-affairs-officer-sources-say-moves-unrelated/",
           "title": "Blue Angels dismiss aviator and public affairs officer, sources say moves unrelated",
-          "publisher": "Navy Times",
+          "publisher": "Military Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwxlPXm2BMkqMnzou6sfNuQl6nCLN2TZm8iufTXjwJjzZGIGiI-ogXBRfYwGI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAvYgmT99AkFf2UCiM3tTSes2VYLNgdGPW688_8L75T0w9iTtsesEXdhSacaU"
         },
         {
           "url": "https://nypost.com/2026/11/08/us-news/blue-angels-pilot-scott-laux-booted-from-elite-navy-flight-team-for-failing-to-meet-standards/",
@@ -213,146 +353,6 @@
           "publisher": "New York Post",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkO3IQeM44jWn3gLFt4l6axCx9AWCGJyhszHHR4v4JgxMGXUjdKa7RplpiHpc"
-        }
-      ]
-    },
-    {
-      "query": "week 10 defense rankings",
-      "approx_searches": "100+",
-      "published_at": "2026-11-11T08:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/fantasy/article/week-10-fantasy-football-dst-rankings-justin-boones-top-defenses-190251612.html",
-        "https://www.footballguys.com/article/2026-rent-a-defense-week10",
-        "https://www.nbcsports.com/fantasy/football/news/2026-fantasy-football-week-10-defense-dst-rankings-and-streamers"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsV92t5wA9CZ8hDyTX4qv0c4XXyIx3m25atCxH7NNOstrLpwLUW-RU-U0cIOQ",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/fantasy/article/week-10-fantasy-football-dst-rankings-justin-boones-top-defenses-190251612.html",
-          "title": "Week 10 Fantasy Football D/ST Rankings: Justin Boone's top defenses",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsV92t5wA9CZ8hDyTX4qv0c4XXyIx3m25atCxH7NNOstrLpwLUW-RU-U0cIOQ"
-        },
-        {
-          "url": "https://www.footballguys.com/article/2026-rent-a-defense-week10",
-          "title": "Rent-A-Defense: Week 10",
-          "publisher": "Footballguys",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStHd24DGeHSEdAEgl4BR4lk3vHhDZk6apDFjBFNtdMzXIHtcVV-5O9Gse3DJ4"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/news/2026-fantasy-football-week-10-defense-dst-rankings-and-streamers",
-          "title": "2026 Fantasy Football Week 10 Defense (DST) Rankings and Streamers",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEwtS2m-Zkc4-5YeJle74420zVemuQahU8UuKu6mph6tzYERHTTwOACHSRRYM"
-        }
-      ]
-    },
-    {
-      "query": "kevin garnett",
-      "approx_searches": "100+",
-      "published_at": "2026-11-11T08:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/hear-kevin-garnett-tells-stephen-224249322.html",
-        "https://sports.ndtv.com/us/nba/stephen-a-smith-says-he-s-done-feuding-with-lebron-james-12305988",
-        "https://www.basketballnetwork.net/latest-news/stephen-a-smith-explains-what-stopped-him-from-confronting-lebron-james"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQubv6bGyJjmwktdbLMNHHOn09NpW70twJuHyOCjTsV43at2SynuH0KqO2Nk9Y",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/hear-kevin-garnett-tells-stephen-224249322.html",
-          "title": "‘Hear me out’… Kevin Garnett tells Stephen A. Smith to unite with LeBron James to speak to Donald Trump",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQubv6bGyJjmwktdbLMNHHOn09NpW70twJuHyOCjTsV43at2SynuH0KqO2Nk9Y"
-        },
-        {
-          "url": "https://sports.ndtv.com/us/nba/stephen-a-smith-says-he-s-done-feuding-with-lebron-james-12305988",
-          "title": "Stephen A. Smith Says He’s Done Feuding With LeBron James",
-          "publisher": "NDTV Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXUxGYvZQrTC08q7C7lTvNF4ko0fwdyUbSsnz5ykeo7sdraod-CYy51sYYMLo"
-        },
-        {
-          "url": "https://www.basketballnetwork.net/latest-news/stephen-a-smith-explains-what-stopped-him-from-confronting-lebron-james",
-          "title": "“I knew it'd be a problem” – Stephen A. Smith explains what stopped him from confronting LeBron James",
-          "publisher": "Basketball Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKhq-QGrmVrhb9Dl6rpxhXZE51yPjjqYU1-R2eL8rl88UQ5KJOLiSxG_4Q9DI"
-        }
-      ]
-    },
-    {
-      "query": "armistice day",
-      "approx_searches": "100+",
-      "published_at": "2026-11-11T08:00:00Z",
-      "related_news_urls": [
-        "https://www.mentalfloss.com/holidays/why-veterans-day-originally-called-armistice-day",
-        "https://warroom.armywarcollege.edu/special-series/whiteboard/wb06-insights-wwi-1-rr/",
-        "https://startsat60.com/media/news/on-this-day-the-moment-guns-fell-silent"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTuqfm_5SFgDi5G7vhqEUpBJXP7KTcdxjqk6RT5nd771fv6QSYqV62sjnaMR-8",
-      "image_credit": "Mental Floss",
-      "news": [
-        {
-          "url": "https://www.mentalfloss.com/holidays/why-veterans-day-originally-called-armistice-day",
-          "title": "Why Veterans Day Was Originally Called Armistice Day",
-          "publisher": "Mental Floss",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTuqfm_5SFgDi5G7vhqEUpBJXP7KTcdxjqk6RT5nd771fv6QSYqV62sjnaMR-8"
-        },
-        {
-          "url": "https://warroom.armywarcollege.edu/special-series/whiteboard/wb06-insights-wwi-1-rr/",
-          "title": "REMEMBERING WORLD WAR I: A WHITEBOARD (RE-RELEASE)",
-          "publisher": "War Room - U.S. Army War College",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVkOG4Te-QQLM5lRSPvqVkAOLL-rk-HasIlyhO7dg7ZpKTb7TMhRO0MWbGysM"
-        },
-        {
-          "url": "https://startsat60.com/media/news/on-this-day-the-moment-guns-fell-silent",
-          "title": "On This Day: The moment the guns fell silent",
-          "publisher": "Starts at 60",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGqDJBRjYLkMwLQQFcIpkN2ff3s62Si_aeSVs76PILPsfuryoHYBFVzoeFYFI"
-        }
-      ]
-    },
-    {
-      "query": "ram",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T08:00:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/film/box-office/ramayana-dil-se-indian-cinema-rise-uk-ireland-box-office-1236943778/",
-        "https://www.theguardian.com/film/2026/nov/04/ramayana-rise-of-a-legend-review-indias-most-expensive-film-ever-becomes-spectacular-huge-scale-epic",
-        "https://www.ndtv.com/entertainment/ramayana-box-office-collection-day-6-ranbir-kapoor-sai-pallavi-film-mints-rs-440-crore-in-india-matches-jawan-in-reaching-fastest-rs-300-crore-hindi-n-12310699"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAfDKmQpgKau5ZPKMCekzeNSDQHk8eAWKRVLQAECytqUuw_Dc9kDI9QpEscyA",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/film/box-office/ramayana-dil-se-indian-cinema-rise-uk-ireland-box-office-1236943778/",
-          "title": "From ‘Dil Se’ to ‘Ramayana’: How Indian Cinema Shattered the U.K., Ireland Box Office Glass Ceiling",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAfDKmQpgKau5ZPKMCekzeNSDQHk8eAWKRVLQAECytqUuw_Dc9kDI9QpEscyA"
-        },
-        {
-          "url": "https://www.theguardian.com/film/2026/nov/04/ramayana-rise-of-a-legend-review-indias-most-expensive-film-ever-becomes-spectacular-huge-scale-epic",
-          "title": "Ramayana: Rise of a Legend review – India’s most expensive film ever becomes spectacular, huge-scale epic",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb0vFg0VW0Ny90lTwCResHy5jdvf6dMn4f6ynGoGa0hvnJAjR2ZCjycWU0yRU"
-        },
-        {
-          "url": "https://www.ndtv.com/entertainment/ramayana-box-office-collection-day-6-ranbir-kapoor-sai-pallavi-film-mints-rs-440-crore-in-india-matches-jawan-in-reaching-fastest-rs-300-crore-hindi-n-12310699",
-          "title": "Ramayana Box Office Collection Day 6: Ranbir Kapoor-Sai Pallavi Film Reaches Rs 440 Crore Mark In India, Matches Jawan In Reaching Fastest Rs 300 Crore Hindi Net",
-          "publisher": "NDTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRl9MgGUNpyjjkUNk6z_24xMQm01eZ-6-iaw-KTTYF1XLOKbj7X5YnkhkJ5GSw"
         }
       ]
     }
