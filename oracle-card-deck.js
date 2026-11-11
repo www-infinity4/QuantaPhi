@@ -676,8 +676,22 @@ window.addEventListener('quantaphi:select-source-card',event=>{
  if(!eligible().includes(entry)){selectedTab='public';updateTabs();}
  show(entry);
 });
-next.addEventListener('click',()=>advance(1));
-prev.addEventListener('click',()=>advance(-1));
+// Changing a tall live widget may cause Chromium scroll anchoring or proximity
+// snap to move the viewport. Keep the user's previous screen position instead.
+function moveCardWithoutViewportJump(direction){
+ const startY=window.scrollY;
+ advance(direction);
+ const revision=selectionVersion;
+ const restore=()=>{
+  if(revision!==selectionVersion||document.hidden||!host.isConnected)return;
+  if(Math.abs(window.scrollY-startY)>6)window.scrollTo({top:startY,left:window.scrollX,behavior:'instant'});
+ };
+ restore();
+ requestAnimationFrame(restore);
+ requestAnimationFrame(()=>requestAnimationFrame(restore));
+}
+next.addEventListener('click',()=>moveCardWithoutViewportJump(1));
+prev.addEventListener('click',()=>moveCardWithoutViewportJump(-1));
 // Swipe the original card surface only. Never intercept interactive controls,
 // nested editors, players or ordinary vertical scrolling on Android.
 let oracleGesture=null;
@@ -690,7 +704,7 @@ stage.addEventListener('pointerup',event=>{
  if(!g||event.pointerId!==g.id)return;
  const dx=event.clientX-g.x,dy=event.clientY-g.y;
  if(Math.abs(dx)<75||Math.abs(dx)<Math.abs(dy)*1.5)return;
- advance(dx<0?1:-1);
+ moveCardWithoutViewportJump(dx<0?1:-1);
 },{passive:true});
 stage.addEventListener('pointercancel',()=>{oracleGesture=null});
 window.addEventListener('quantaphi:age-preference',event=>{
