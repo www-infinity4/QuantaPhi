@@ -3,17 +3,227 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T15:01:17.915280Z",
+  "checked_at": "2026-11-11T15:31:36.882481Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "kavya maran",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T15:10:00Z",
+      "related_news_urls": [
+        "https://www.ndtv.com/entertainment/anirudh-ravichander-and-kavya-maran-are-now-married-first-photos-of-newlyweds-out-12302477",
+        "https://timesofindia.indiatimes.com/entertainment/tamil/movies/news/anirudh-ravichander-and-kavya-marans-wedding-when-the-jailer-2-composer-revealed-his-first-proposal-that-lasted-only-3-hours/articleshow/135710639.cms",
+        "https://inshorts.com/en/news/anirudh-recalls-school-romance-that-lasted-just-three-hours-1794400968782"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYPL9Qrd1J6oC6H9-hOC-ectlW4wQ49Zy_BbTHRwbyy5jPnNbF6yy4Z8N3Ajs",
+      "image_credit": "NDTV",
+      "news": [
+        {
+          "url": "https://www.ndtv.com/entertainment/anirudh-ravichander-and-kavya-maran-are-now-married-first-photos-of-newlyweds-out-12302477",
+          "title": "Anirudh Ravichander And Kavya Maran Are Now Married, First Photo Of Newlyweds Out",
+          "publisher": "NDTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYPL9Qrd1J6oC6H9-hOC-ectlW4wQ49Zy_BbTHRwbyy5jPnNbF6yy4Z8N3Ajs"
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movies/news/anirudh-ravichander-and-kavya-marans-wedding-when-the-jailer-2-composer-revealed-his-first-proposal-that-lasted-only-3-hours/articleshow/135710639.cms",
+          "title": "Anirudh Ravichander and Kavya Maran's wedding: When the 'Jailer 2' composer revealed his first proposal t",
+          "publisher": "The Times of India",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7H76p-sPSkjBpII3HQFo_huJwMu7h_pf1Ow7e4VGnAPEt0g7OnGr2BmIQZms"
+        },
+        {
+          "url": "https://inshorts.com/en/news/anirudh-recalls-school-romance-that-lasted-just-three-hours-1794400968782",
+          "title": "Anirudh recalls school romance that lasted just three hours | Tap to know more | Inshorts",
+          "publisher": "Inshorts",
+          "description": "",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "query": "rob kardashian",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T15:10:00Z",
+      "related_news_urls": [
+        "https://people.com/rob-kardashian-and-blac-chyna-celebrate-daughter-dreams-10th-birthday-photos-12248712",
+        "https://www.instagram.com/p/DflLztUmeAh/",
+        "https://www.eonline.com/news/1438006/rob-kardashian-blac-chynas-daughter-dream-turns-10-on-golden-birthday"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1Cttj0_bgNYLEfyJaN8o2PwxSQoSI0_e0VNj3wPYJx0wFWF90PLcq28dCouY",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/rob-kardashian-and-blac-chyna-celebrate-daughter-dreams-10th-birthday-photos-12248712",
+          "title": "Rob Kardashian and Blac Chyna Celebrate Daughter Dream’s 10th Birthday: ‘Greatest Gift of My Life’",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1Cttj0_bgNYLEfyJaN8o2PwxSQoSI0_e0VNj3wPYJx0wFWF90PLcq28dCouY"
+        },
+        {
+          "url": "https://www.instagram.com/p/DflLztUmeAh/",
+          "title": "#TSRBirfdayz: #Roomies #DreamKardashian has finally reached the double digits 🥳 Her parents Rob Kardashian and Angela White wrote touching tributes to her baby girl. SWIPE to read.",
+          "publisher": "Instagram",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://www.eonline.com/news/1438006/rob-kardashian-blac-chynas-daughter-dream-turns-10-on-golden-birthday",
+          "title": "Rob Kardashian Gives Glimpse Into Bond With Daughter Dream on Her 10th Birthday",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt73k1uTNGZJFgviA4An1leB28R5xEZ1WmjYbcCbktD64T9_oKFenqrZ4Ot4k"
+        }
+      ]
+    },
+    {
+      "query": "alex karp",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T15:10:00Z",
+      "related_news_urls": [
+        "https://cloudwars.com/ai/as-palantir-grows-96-ceo-alex-karp-sees-ugly-future-for-ai-laggards/",
+        "https://aa.com.tr/en/world/palantir-ceo-warns-companies-controlling-data-can-shape-how-people-think/4118994",
+        "https://vinnews.com/2026/11/10/palantir-ceo-alex-karp-warns-wealth-tax-is-trojan-horse-for-mass-surveillance/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8OgSfktBJxJKWC-Hpox5bNY3C7Yd8y_15kh0GjMZyVzJVPk6sZhxNRFVr8Gk",
+      "image_credit": "Cloud Wars",
+      "news": [
+        {
+          "url": "https://cloudwars.com/ai/as-palantir-grows-96-ceo-alex-karp-sees-ugly-future-for-ai-laggards/",
+          "title": "As Palantir Grows 96%, CEO Alex Karp Sees Ugly Future for AI Laggards",
+          "publisher": "Cloud Wars",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8OgSfktBJxJKWC-Hpox5bNY3C7Yd8y_15kh0GjMZyVzJVPk6sZhxNRFVr8Gk"
+        },
+        {
+          "url": "https://aa.com.tr/en/world/palantir-ceo-warns-companies-controlling-data-can-shape-how-people-think/4118994",
+          "title": "Palantir CEO warns companies controlling data can shape how people think",
+          "publisher": "Anadolu Ajansı",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT4vPAwA2w-fM13orCkYJs1MMqp7DkD1zLGQmu3o4GcfHSuXtq782olsCY0S8"
+        },
+        {
+          "url": "https://vinnews.com/2026/11/10/palantir-ceo-alex-karp-warns-wealth-tax-is-trojan-horse-for-mass-surveillance/",
+          "title": "Palantir CEO Alex Karp Warns Wealth Tax Is Trojan Horse For Mass Surveillance",
+          "publisher": "VINnews",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ2AR0V7IJDVaiNXpsHKfskGI7Cf3xcX_YhEWj-xRomXiR9v8YmoBDOcWW_3k"
+        }
+      ]
+    },
+    {
+      "query": "avgo",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T15:00:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/broadcom-just-had-best-day-135350246.html",
+        "https://www.barchart.com/story/news/8740927/broadcom-stock-is-down-over-25-in-3-months-how-to-play-the-selloff-here",
+        "https://www.benzinga.com/markets/equities/26/11/63130138/broadcom-shares-rise-after-hours-fiscal-2026-earnings-date"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkrMqPgdeRZ8st3xRdpjCEYelmIu0nhfGvMOYbbG2-dkWRJohs6kIVBSUdYX4",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/broadcom-just-had-best-day-135350246.html",
+          "title": "Broadcom Just Had Its Best Day in Nearly a Year, Back Above $1.5 Trillion",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkrMqPgdeRZ8st3xRdpjCEYelmIu0nhfGvMOYbbG2-dkWRJohs6kIVBSUdYX4"
+        },
+        {
+          "url": "https://www.barchart.com/story/news/8740927/broadcom-stock-is-down-over-25-in-3-months-how-to-play-the-selloff-here",
+          "title": "Broadcom Stock Is Down Over 25% in 3 Months. How to Play the Selloff Here.",
+          "publisher": "Barchart.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLOQsqzL2TrrYN4oVRgML-0ugzzO9Yp3T14L6tIqc7XEbE2vmQmGmPJ4z97zc"
+        },
+        {
+          "url": "https://www.benzinga.com/markets/equities/26/11/63130138/broadcom-shares-rise-after-hours-fiscal-2026-earnings-date",
+          "title": "Broadcom Shares Rise 2.20% After Hours - Broadcom (NASDAQ:AVGO), JPMorgan Chase (NYSE:JPM)",
+          "publisher": "Benzinga",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRHpD3vkEl7Y5HiGYQ9YrFK8qydDDtacO343k4EaMuyhiDfYuXLcXGEORZZzM"
+        }
+      ]
+    },
+    {
+      "query": "high surf warning",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T15:00:00Z",
+      "related_news_urls": [
+        "https://www.surfer.com/news/40-foot-california-swell-el-nino",
+        "https://www.sonomanews.com/2026/11/10/bay-area-beaches-dangerous-waves-20-30-feet-high/",
+        "https://www.cbsnews.com/losangeles/news/orange-county-coastal-flood-advisory-through-tuesday/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThgJArFM_l-cpaGUXDwBUvCaJ884ddda8iukw7_5InlbZXrOEOgeGymeMYuBg",
+      "image_credit": "SURFER Magazine",
+      "news": [
+        {
+          "url": "https://www.surfer.com/news/40-foot-california-swell-el-nino",
+          "title": "Monster 40-Foot ‘Biggest Waves in Years’ Heading for California in Potentially Historic Swell",
+          "publisher": "SURFER Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThgJArFM_l-cpaGUXDwBUvCaJ884ddda8iukw7_5InlbZXrOEOgeGymeMYuBg"
+        },
+        {
+          "url": "https://www.sonomanews.com/2026/11/10/bay-area-beaches-dangerous-waves-20-30-feet-high/",
+          "title": "Bay Area bracing for gigantic, dangerous waves expected along coastline",
+          "publisher": "Sonoma Index-Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5ME-QTgA98CXQWCuIF4_pbq07uAaKH2N4L6p-Z-pPTE443HP3N_vjUQhePy4"
+        },
+        {
+          "url": "https://www.cbsnews.com/losangeles/news/orange-county-coastal-flood-advisory-through-tuesday/",
+          "title": "Orange County coastal flood advisory in effect through Tuesday, less severe than last week",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQY0o4FWRzWBCNhJKhBwSf6PhDpdjI6Qxl1CsD7zR3fJtpVO17Nj9LIgz0ivJE"
+        }
+      ]
+    },
+    {
+      "query": "portugal",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T14:50:00Z",
+      "related_news_urls": [
+        "https://www.wvnews.com/newsfeed/world/portugal-web-summit-weather/image_bebeb9ac-1d32-55db-8ee1-9a183677c596.html",
+        "https://africa.businessinsider.com/news/web-summit-cancels-day-2-due-to-storm-charles-and-risks-of-tidal-flood/stmprhr",
+        "https://www.heraldnews.com/story/news/local/ojornal/2026/11/10/portugal-braces-for-storm-charles-as-schools-services-shut-down/92710458007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5mSEcQfWs_5hinHEZJdyDxKpmiOFH_g3BXmrGncKJDzgWva9vOtn0JNm5ERo",
+      "image_credit": "WV News",
+      "news": [
+        {
+          "url": "https://www.wvnews.com/newsfeed/world/portugal-web-summit-weather/image_bebeb9ac-1d32-55db-8ee1-9a183677c596.html",
+          "title": "Portugal Web Summit Weather",
+          "publisher": "WV News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5mSEcQfWs_5hinHEZJdyDxKpmiOFH_g3BXmrGncKJDzgWva9vOtn0JNm5ERo"
+        },
+        {
+          "url": "https://africa.businessinsider.com/news/web-summit-cancels-day-2-due-to-storm-charles-and-risks-of-tidal-flood/stmprhr",
+          "title": "Web Summit cancels day 2 due to Storm Charles and risks of tidal flood",
+          "publisher": "Business Insider Africa",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-ramXlWMpYPHKeZPpbZ5kofvBDGmzg_STvWF428yN5sxoeziMOXh7cdY-zkg"
+        },
+        {
+          "url": "https://www.heraldnews.com/story/news/local/ojornal/2026/11/10/portugal-braces-for-storm-charles-as-schools-services-shut-down/92710458007/",
+          "title": "Portugal shuts down as Storm Charles approaches",
+          "publisher": "Fall River Herald News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3pvu_yyW2D5zvBib6HNURP0YT2Y7eqM95rBg7FANowBMMsUEFdwRP-foaYs4"
+        }
+      ]
+    },
     {
       "query": "kurt warner",
       "approx_searches": "500+",
       "published_at": "2026-11-11T14:20:00Z",
       "related_news_urls": [
         "https://www.essentiallysports.com/nfl-active-news-deserves-it-more-than-i-ever-did-rams-legend-kurt-warner-makes-emotional-plea-to-all-thirty-two-nfl-teams-for-his-qb-sons-career/",
-        "https://www.espn.com/nfl/story/_/id/50430415/caleb-williams-4-interceptions-bears-win-buccaneers",
-        "https://sports.yahoo.com/articles/chicago-bears-won-clunker-part-135451303.html"
+        "https://sports.yahoo.com/articles/deserves-more-ever-did-rams-030551074.html",
+        "https://www.espn.com/nfl/story/_/id/50430415/caleb-williams-4-interceptions-bears-win-buccaneers"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRacsuu8whF3vl9OcYhLB-M50DuytdEniWQoZZaat5DYLhllcNqt6XtCnqUf_0",
       "image_credit": "EssentiallySports",
@@ -26,18 +236,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRacsuu8whF3vl9OcYhLB-M50DuytdEniWQoZZaat5DYLhllcNqt6XtCnqUf_0"
         },
         {
+          "url": "https://sports.yahoo.com/articles/deserves-more-ever-did-rams-030551074.html",
+          "title": "“Deserves It More Than I Ever Did”: Rams Legend Kurt Warner Makes Emotional Plea to All 32 NFL Teams for His QB Son’s Career",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGpkInvCu6o6EjgM_pzy5rwPvIx8H_e6-iYTsr-KzLh-xlwpSnN0_Nighgo1w"
+        },
+        {
           "url": "https://www.espn.com/nfl/story/_/id/50430415/caleb-williams-4-interceptions-bears-win-buccaneers",
           "title": "Caleb Williams unfazed by 4 interceptions as Bears pull out win vs. Bucs",
           "publisher": "ESPN",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVoMlpKKBIOJk0OFQ829Ed0S1jCXT9-GCGU-gvuMGT46aSe7pUqPucDdOkU3c"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/chicago-bears-won-clunker-part-135451303.html",
-          "title": "Chicago Bears won a clunker, which is part of winning recipe in NFL",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAEWynvK7GqcOStORouxAx83QikiQ0LbFq1Y75n2GrD613lA1tcNeARQ4ydEQ"
         }
       ]
     },
@@ -78,7 +288,7 @@
     },
     {
       "query": "ron howard",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-11T14:10:00Z",
       "related_news_urls": [
         "https://www.economist.com/the-world-in-brief/2026/11/11/aaef91a3-e53c-4519-86cb-fb983f3464e8",
@@ -143,216 +353,6 @@
           "publisher": "BBC",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTm-HvjQEblqtK-GSIKhjbQIFHNMLUbTjVPa4Xk61qPUnk_DxQNOuzHWktNn7U"
-        }
-      ]
-    },
-    {
-      "query": "chase elliott",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T14:00:00Z",
-      "related_news_urls": [
-        "https://www.nascar.com/videos/franchise/all-videos/chase-elliott-furious-over-radio-after-stack-up-on-pit-road/",
-        "https://heavy.com/sports/nascar/nascar-championship-race-pit-row-chaos/",
-        "https://sports.yahoo.com/articles/don-t-expletive-chase-elliott-005245415.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3_fF3ERfgVZm6QHYltqZT9_uFLDMctdu8s136vAT6IqJc9GzdpfD4ZM6_pLE",
-      "image_credit": "NASCAR.com",
-      "news": [
-        {
-          "url": "https://www.nascar.com/videos/franchise/all-videos/chase-elliott-furious-over-radio-after-stack-up-on-pit-road/",
-          "title": "Chase Elliott furious over radio after stackup on pit road",
-          "publisher": "NASCAR.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3_fF3ERfgVZm6QHYltqZT9_uFLDMctdu8s136vAT6IqJc9GzdpfD4ZM6_pLE"
-        },
-        {
-          "url": "https://heavy.com/sports/nascar/nascar-championship-race-pit-row-chaos/",
-          "title": "NASCAR Championship Race Erupts in Chaos After Wild Pit Row Incident: VIDEO",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_vE1H9w9AQcakU5RSuc6WPjfpnvMjpACZ_CA2PBXhM8gHHOFsiICK0rFRCcg"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/don-t-expletive-chase-elliott-005245415.html",
-          "title": "‘I Don’t Give a [Expletive]’: Chase Elliott’s Fiery Remarks After Homestead Incident",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjZw0uzz0dWZq8vw7iC5abokC0gjocfld_Cy4OOv50obNIUzNZiMI3gOT4XxM"
-        }
-      ]
-    },
-    {
-      "query": "santander",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T14:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/mlb/article/blue-jays-gm-denounces-anthony-santanders-anti-islam-social-media-posts-extremely-disappointing-024159310.html",
-        "https://www.thestar.com/sports/blue-jays/anthony-santander-hasn-t-apologized-for-amplifying-anti-muslim-posts-blue-jays-fans-deserve-better/article_955e5b41-58b2-4676-a971-ccf1a6641de6.html",
-        "https://www.espn.com/mlb/story/_/id/50399679/anthony-santander-anti-muslim-posts-represent-team"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOZcJltkLOSgZGeQUWH1FsyOMZHxuq2TVdGKAFO8uuYN7pS8i4O476E-uEoGc",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/mlb/article/blue-jays-gm-denounces-anthony-santanders-anti-islam-social-media-posts-extremely-disappointing-024159310.html",
-          "title": "Blue Jays GM denounces Anthony Santander's anti-Islam social media posts: 'Extremely disappointing'",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOZcJltkLOSgZGeQUWH1FsyOMZHxuq2TVdGKAFO8uuYN7pS8i4O476E-uEoGc"
-        },
-        {
-          "url": "https://www.thestar.com/sports/blue-jays/anthony-santander-hasn-t-apologized-for-amplifying-anti-muslim-posts-blue-jays-fans-deserve-better/article_955e5b41-58b2-4676-a971-ccf1a6641de6.html",
-          "title": "Gregor Chisholm: Blue Jays told Anthony Santander to apologize for amplifying anti-Muslim hate. He’s chosen silence",
-          "publisher": "Toronto Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDSFXnCeShGbQkges97SWEpOj8sjCShRRi4Jt3k0Y6MJDvAA6ftXogSdwgRN4"
-        },
-        {
-          "url": "https://www.espn.com/mlb/story/_/id/50399679/anthony-santander-anti-muslim-posts-represent-team",
-          "title": "Blue Jays - Santander's anti-Muslim posts don't represent team",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfoPb4xGeQRnX0XaqJlkc6h-vgywvW1lVRLt4yAx3KGdjBO2gcOep4jwGgIOg"
-        }
-      ]
-    },
-    {
-      "query": "chris harrison",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T13:50:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/tv-and-radio/2026/nov/06/rivals-to-12-12-12-the-seven-best-shows-to-stream-this-week",
-        "https://www.tvline.com/2312874/what-to-watch-november-11-2026-tv-shows-movies-streaming/",
-        "https://www.yahoo.com/entertainment/tv/articles/lord-rings-returns-netflix-bizarre-120009866.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkAAPc9OivQIBbRx6AMym1zFo6NK6BptMrGqB2uZqVnxalYVgOZOOIQRvUQOw",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/06/rivals-to-12-12-12-the-seven-best-shows-to-stream-this-week",
-          "title": "Rivals to 12 12 12: the seven best shows to stream this week",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkAAPc9OivQIBbRx6AMym1zFo6NK6BptMrGqB2uZqVnxalYVgOZOOIQRvUQOw"
-        },
-        {
-          "url": "https://www.tvline.com/2312874/what-to-watch-november-11-2026-tv-shows-movies-streaming/",
-          "title": "What To Watch Wednesday: The Rings Of Power Returns, Chris Harrison's New Dating Show, And More",
-          "publisher": "TVLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzXFyykDB-81kTiU0t2ncVOB8uS7cTm6mdl83z1oytjRPjt6jJdIZEHhE6RTg"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/lord-rings-returns-netflix-bizarre-120009866.html",
-          "title": "‘Lord of the Rings’ Returns, Netflix’s Bizarre ‘Body,’ a ‘Lowdown’ Road Trip, Veterans Day on TV",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj8_H4Bry049J-4tnZNnV6cj2fIWWTyjzXJ0ubV_8OCG5Ugg10yVnk6908hYM"
-        }
-      ]
-    },
-    {
-      "query": "amy robach",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T13:40:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/articles/amy-robach-t-j-holmes-102339057.html",
-        "https://www.imdb.com/es/news/ni66103256/?ref_=nwc_art_perm",
-        "https://www.aol.com/articles/exclusive-amy-robach-t-j-111500000.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIvHs0mnksUi44bL_WWoj5rF6IyC-APtGBNczSNolZPfW3n2cAN84okTuOS_Y",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/amy-robach-t-j-holmes-102339057.html",
-          "title": "Amy Robach and T.J. Holmes make TV comeback just days after their exes' wedding",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIvHs0mnksUi44bL_WWoj5rF6IyC-APtGBNczSNolZPfW3n2cAN84okTuOS_Y"
-        },
-        {
-          "url": "https://www.imdb.com/es/news/ni66103256/?ref_=nwc_art_perm",
-          "title": "‘Name That Tune’: Amy Robach Feels a Glow After Solving Frank Sinatra Hit Against Husband T.J. Holmes",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqZX_pKb2WU8tmCmZu7Km0LEep7Qqjbfe-I_gS83HtebvKYfNlEifYV_in4LY"
-        },
-        {
-          "url": "https://www.aol.com/articles/exclusive-amy-robach-t-j-111500000.html",
-          "title": "EXCLUSIVE: Amy Robach and T.J. Holmes 'Eye TV Comeback After Wedding'",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQu_00My3EcQBoA13dRKG2QjoyWY6RVzolpx63D__ZkdZ0G6e1yXOs6P8Gf9do"
-        }
-      ]
-    },
-    {
-      "query": "carrie coon",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T13:40:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66105039/?ref_=int_nwr_4",
-        "https://www.thewrap.com/culture-lifestyle/culture/carrie-coon-hbo-post-merger-soft/",
-        "https://www.imdb.com/de/news/ni66105039/?ref_=nwc_art_perm"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJOIdvF5ZLU0KediafYIzYMF3Uom_4dVxuGZzeDbmochd6m2JgFd6USZVJjg8",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66105039/?ref_=int_nwr_4",
-          "title": "Carrie Coon Hopes HBO Doesn’t Get ‘Soft Around the Edges’ After Skydance Merger",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJOIdvF5ZLU0KediafYIzYMF3Uom_4dVxuGZzeDbmochd6m2JgFd6USZVJjg8"
-        },
-        {
-          "url": "https://www.thewrap.com/culture-lifestyle/culture/carrie-coon-hbo-post-merger-soft/",
-          "title": "Carrie Coon Hopes HBO Doesn’t Get ‘Soft Around the Edges’ After Skydance Merger",
-          "publisher": "TheWrap",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTR6-HQD8cliQaGJURzturF6dGdXdeSheECoyTtlzLQri2miQnVjTVB0rnLj2o"
-        },
-        {
-          "url": "https://www.imdb.com/de/news/ni66105039/?ref_=nwc_art_perm",
-          "title": "Carrie Coon Hopes HBO Doesn’t Get ‘Soft Around the Edges’ After Skydance Merger",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJOIdvF5ZLU0KediafYIzYMF3Uom_4dVxuGZzeDbmochd6m2JgFd6USZVJjg8"
-        }
-      ]
-    },
-    {
-      "query": "john madden",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T13:40:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/lifestyle/nicolas-cage-transformed-within-madden-co-star-kathryn-hahn-says-2026-11-10/",
-        "https://abcnews.com/video/138002370/",
-        "https://www.ks95.com/nicolas-cage-opens-up-about-playing-john-madden-finding-happiness-in-his-life/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGQKoNtzzIqjf8mHlS-PmTm3FsMGu82uVVFtbjHgYTdoelTEHdD9MUavOPcd8",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/lifestyle/nicolas-cage-transformed-within-madden-co-star-kathryn-hahn-says-2026-11-10/",
-          "title": "Nicolas Cage transformed ‘from within’ for ‘Madden,’ co-star Kathryn Hahn says",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGQKoNtzzIqjf8mHlS-PmTm3FsMGu82uVVFtbjHgYTdoelTEHdD9MUavOPcd8"
-        },
-        {
-          "url": "https://abcnews.com/video/138002370/",
-          "title": "Video Nicolas Cage stars in 'Madden'",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlQLVgJGBW58o5gagFPbOooM3Se2FSJcm1BmHRAU3tx52pv3RPx_TRdxxMLDA"
-        },
-        {
-          "url": "https://www.ks95.com/nicolas-cage-opens-up-about-playing-john-madden-finding-happiness-in-his-life/",
-          "title": "Nicolas Cage opens up about playing John Madden, finding happiness in his life",
-          "publisher": "KS95 94.5",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYWXJJ-QniteVbrdFo830XGKD23UHmvFLFK9iY4ox-vEGsfJBA86PokE4MBZs"
         }
       ]
     }
