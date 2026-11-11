@@ -3,27 +3,237 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T21:00:52.624680Z",
+  "checked_at": "2026-11-11T21:31:23.248193Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ayesha curry",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T20:30:00Z",
+      "query": "frankie muniz",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T21:10:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/articles/stephen-curry-inspired-ayesha-curry-192045223.html",
-        "https://www.foxnews.com/outkick-sports/ayesha-curry-says-husband-steph-curry-nba-pregame-habits-inspired-movie-character-responds-backlash",
-        "https://www.today.com/video/ayesha-curry-talks-starring-in-second-chance-holiday-273194565752"
+        "https://pagesix.com/2026/11/11/celebrity-news/frankie-muniz-rushed-to-hospital-after-shocking-practice-incident-ahead-of-florida-race/",
+        "https://www.nascar.com/news-media/2026/11/11/frankie-muniz-transported-to-medical-facility-after-incident-at-daytona/",
+        "https://sports.yahoo.com/articles/frankie-muniz-hospitalized-following-daytona-210803024.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRVCXytfpJRsTMdHcaKhg0QC7PH8VO1HM8MmKOyDDR6UDT2nxtO-ENwZqfIKU",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfc55ePDDaloBpVQ-ztF_YeJqWt83Wz3ed1jsco4hTuYu8zUy3AhVKdegcxkw",
+      "image_credit": "Page Six",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/stephen-curry-inspired-ayesha-curry-192045223.html",
-          "title": "How Stephen Curry inspired Ayesha Curry in Christmas rom-com role that has everybody talking about kissing scene",
-          "publisher": "Yahoo",
+          "url": "https://pagesix.com/2026/11/11/celebrity-news/frankie-muniz-rushed-to-hospital-after-shocking-practice-incident-ahead-of-florida-race/",
+          "title": "Frankie Muniz rushed to hospital after crashing his car during practice ahead of Florida race",
+          "publisher": "Page Six",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRVCXytfpJRsTMdHcaKhg0QC7PH8VO1HM8MmKOyDDR6UDT2nxtO-ENwZqfIKU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfc55ePDDaloBpVQ-ztF_YeJqWt83Wz3ed1jsco4hTuYu8zUy3AhVKdegcxkw"
+        },
+        {
+          "url": "https://www.nascar.com/news-media/2026/11/11/frankie-muniz-transported-to-medical-facility-after-incident-at-daytona/",
+          "title": "Frankie Muniz transported to medical facility after incident at Daytona",
+          "publisher": "NASCAR.com",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/frankie-muniz-hospitalized-following-daytona-210803024.html",
+          "title": "Frankie Muniz Hospitalized Following Daytona Crash",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7AHtVGHlsLAp_DD8DvlrWhEVz5WgDlJcKJkWIZzqqdN7slXtBQiuNTAgSHXg"
+        }
+      ]
+    },
+    {
+      "query": "softbank $3.7 billion turbine loss",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T21:10:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/business/energy-oil/masayoshi-sons-huge-bet-on-electrical-turbines-backfires-b51f160c",
+        "https://www.bloomberg.com/news/articles/2026-11-11/softbank-group-shares-drop-10-after-booking-7-billion-loss",
+        "https://www.ft.com/content/e19c86dc-9437-4827-a5ae-14bd4033037b?syn-25a6b1a6=1"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3M-ahqXL-LANP33CZdKdrxoZntRTup5stbXzbhrM6frLIC_VFzlK0_isGU4o",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/business/energy-oil/masayoshi-sons-huge-bet-on-electrical-turbines-backfires-b51f160c",
+          "title": "Masayoshi Son’s Huge Bet on Electrical Turbines Backfires",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3M-ahqXL-LANP33CZdKdrxoZntRTup5stbXzbhrM6frLIC_VFzlK0_isGU4o"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-11/softbank-group-shares-drop-10-after-booking-7-billion-loss",
+          "title": "SoftBank Group Shares Drop 11% After Booking $7 Billion Loss",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMEkU9pRSBymmwYuVlZjWA_ozyM2Inmihf0So66Mduos1ruPL4uwvM51-Ow-0"
+        },
+        {
+          "url": "https://www.ft.com/content/e19c86dc-9437-4827-a5ae-14bd4033037b?syn-25a6b1a6=1",
+          "title": "Tech sell-off raises risks for SoftBank’s massive AI bet",
+          "publisher": "Financial Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNQXuSgWCObIx7GTmjrShe03nR7Kww8qtvqoNY16GjzOqgWmUpvOQNOkcZeAo"
+        }
+      ]
+    },
+    {
+      "query": "mortgage interest rates",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T21:10:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/11/mortgage-rates-jump-sharply-higher-after-easing-for-4-straight-weeks.html",
+        "https://www.mortgagenewsdaily.com/markets/mortgage-rates-11102026",
+        "https://finance.yahoo.com/real-estate/articles/us-mortgage-rates-fall-fourth-120000840.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkp0seBTMw9bJnYU7fHxkK0eUirEePWQo80cJDAp77EoI9Umbg2ud5ZsUHgdc",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/11/mortgage-rates-jump-sharply-higher-after-easing-for-4-straight-weeks.html",
+          "title": "Mortgage rates jump sharply higher, after easing for four straight weeks. Here's why",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkp0seBTMw9bJnYU7fHxkK0eUirEePWQo80cJDAp77EoI9Umbg2ud5ZsUHgdc"
+        },
+        {
+          "url": "https://www.mortgagenewsdaily.com/markets/mortgage-rates-11102026",
+          "title": "Mortgage Rate Sharply Higher After Inflation Data",
+          "publisher": "Mortgage News Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmjtScukkrsD0TAovW7Xi6Xqhu7CXs_heEX5h2W-9jH3aM8NivfHkZgMFK2mY"
+        },
+        {
+          "url": "https://finance.yahoo.com/real-estate/articles/us-mortgage-rates-fall-fourth-120000840.html",
+          "title": "US Mortgage Rates Fall for Fourth Week, Lifting Home Purchases",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkqeMQIA9xIKzp-5YxvKCyq_fzqKWe-GGU7faB1k9ymCFpFw74fzuM_Ds42EM"
+        }
+      ]
+    },
+    {
+      "query": "muchova",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T21:10:00Z",
+      "related_news_urls": [
+        "https://www.wtatennis.com/news/4607397/fage-wta-finals-day-4-preview-how-aryna-sabalenka-and-mirra-andreeva-can-advance",
+        "https://sports.yahoo.com/articles/aryna-sabalenka-speaks-beating-karolina-090000310.html",
+        "https://www.espn.com/tennis/story/_/id/50437046/aryna-sabalenka-mirra-andreeva-win-wta-finals"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-acwUPTJNctj-RcTsWgwbFbbmRcQSz0mWrRyR3EEjcVhqLR1vEpfzQy9Y_7g",
+      "image_credit": "WTA Tennis",
+      "news": [
+        {
+          "url": "https://www.wtatennis.com/news/4607397/fage-wta-finals-day-4-preview-how-aryna-sabalenka-and-mirra-andreeva-can-advance",
+          "title": "FAGE WTA Finals Day 4 preview: How Sabalenka and Andreeva can advance",
+          "publisher": "WTA Tennis",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-acwUPTJNctj-RcTsWgwbFbbmRcQSz0mWrRyR3EEjcVhqLR1vEpfzQy9Y_7g"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/aryna-sabalenka-speaks-beating-karolina-090000310.html",
+          "title": "Aryna Sabalenka speaks after beating Karolina Muchova in her first match at the WTA Finals",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcf5iP64Ff4u9ZBDzje_jq33msXpbNcZRmTHPPCJvNw5lybwmuZt14CxDvPBI"
+        },
+        {
+          "url": "https://www.espn.com/tennis/story/_/id/50437046/aryna-sabalenka-mirra-andreeva-win-wta-finals",
+          "title": "Aryna Sabalenka picks up first win at WTA Finals, faces Mirra Andreeva next",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDQbvcES79Qh9pbHQ0QCWn_s6T-tQZw1KbnqBs38Szp4kFG0IvixBXCacjQW4"
+        }
+      ]
+    },
+    {
+      "query": "randall england",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T21:00:00Z",
+      "related_news_urls": [
+        "https://deadline.com/2026/11/randall-england-dead-1237220596/",
+        "https://www.thedailybeast.com/general-hospital-actor-randall-england-dies-of-cancer",
+        "https://www.wideopencountry.com/general-hospital-actor-dies-at-75-following-cancer-battle/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRD-XW69nSdm7rZ2lSfFX26tMf6dlSiyjmLc_RUiTZkDLk8pAN8kxPzSciuWE",
+      "image_credit": "Deadline",
+      "news": [
+        {
+          "url": "https://deadline.com/2026/11/randall-england-dead-1237220596/",
+          "title": "Randall England Dies: Actor Who Played ‘General Hospital’ Villain Was 75",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRD-XW69nSdm7rZ2lSfFX26tMf6dlSiyjmLc_RUiTZkDLk8pAN8kxPzSciuWE"
+        },
+        {
+          "url": "https://www.thedailybeast.com/general-hospital-actor-randall-england-dies-of-cancer",
+          "title": "Soap Opera Actor Dead at 75",
+          "publisher": "The Daily Beast",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS26f9TiTORjFh8FzbpwbTqk7RaMdoktRggsBmKDbNhLSfFYR96Vpcqwx5tyCw"
+        },
+        {
+          "url": "https://www.wideopencountry.com/general-hospital-actor-dies-at-75-following-cancer-battle/",
+          "title": "‘General Hospital’ Actor Dies at 75 Following Cancer Battle",
+          "publisher": "Wide Open Country",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSys948ULe-cEmi6opxWTct44qZUsJ3KPt64OyqH5_ZaN32OqJ-NAgJbQBKRRo"
+        }
+      ]
+    },
+    {
+      "query": "south florida basketball",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-11T20:50:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/betting/news/saint-josephs-vs-south-florida-cbb-picks-wednesday-matinee-special-from-annapolis-on-veterans-day/",
+        "https://sports.yahoo.com/articles/saint-joe-vs-usf-prediction-110039243.html",
+        "https://ats.io/matchup/college-basketball/south-florida-bulls-vs-saint-joseph-s-hawks-prediction-11-11-2026/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwvPBqc4iS6O75pe1oF8PSy0YASVTRz-Zx7ZNPagSBa0FLX0pZ-O51XHeoGfw",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/betting/news/saint-josephs-vs-south-florida-cbb-picks-wednesday-matinee-special-from-annapolis-on-veterans-day/",
+          "title": "Saint Joseph's vs. South Florida CBB picks: Wednesday matinee special from Annapolis on Veterans Day",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwvPBqc4iS6O75pe1oF8PSy0YASVTRz-Zx7ZNPagSBa0FLX0pZ-O51XHeoGfw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/saint-joe-vs-usf-prediction-110039243.html",
+          "title": "Saint Joe’s vs USF Prediction, Pick, College Basketball Odds for Wednesday, Nov. 11",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROy9mwUKD1y18f00ol-7ZhClfCVWm-fLZ95GxLtZvxSwL6eRznCvRAtMI_Ct8"
+        },
+        {
+          "url": "https://ats.io/matchup/college-basketball/south-florida-bulls-vs-saint-joseph-s-hawks-prediction-11-11-2026/",
+          "title": "South Florida Bulls vs Saint Joseph's Hawks Prediction - November 11, 2026",
+          "publisher": "ATS.io",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaCd1kjvtk_9CrhTwAjLeCU4py9Nsn_0XgCzgUMEBXkzmEEPWeSTw-Y3zJZ_Y"
+        }
+      ]
+    },
+    {
+      "query": "ayesha curry",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-11T20:30:00Z",
+      "related_news_urls": [
+        "https://bleacherreport.com/articles/25532341-stephen-curry-calls-out-gilbert-arenas-nick-young-video-after-criticism-wife-ayesha",
+        "https://www.foxnews.com/outkick-sports/ayesha-curry-says-husband-steph-curry-nba-pregame-habits-inspired-movie-character-responds-backlash",
+        "https://www.yahoo.com/entertainment/celebrity/articles/stephen-curry-inspired-ayesha-curry-192045223.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBaH0kiYpNpuF5Z6dpdWVNkZ9ltnt2Fl54JR8_iXipNIj3jC9D1cYl8UAXdTg",
+      "image_credit": "Bleacher Report",
+      "news": [
+        {
+          "url": "https://bleacherreport.com/articles/25532341-stephen-curry-calls-out-gilbert-arenas-nick-young-video-after-criticism-wife-ayesha",
+          "title": "Stephen Curry Calls Out Gilbert Arenas, Nick Young in Video After Criticism of Wife Ayesha",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBaH0kiYpNpuF5Z6dpdWVNkZ9ltnt2Fl54JR8_iXipNIj3jC9D1cYl8UAXdTg"
         },
         {
           "url": "https://www.foxnews.com/outkick-sports/ayesha-curry-says-husband-steph-curry-nba-pregame-habits-inspired-movie-character-responds-backlash",
@@ -33,17 +243,17 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRA9-QTrSPZcbBecsGb7mmyDaWjHSNFXp3soDLzznOiVqWKusTqKS1Q4e8YxU"
         },
         {
-          "url": "https://www.today.com/video/ayesha-curry-talks-starring-in-second-chance-holiday-273194565752",
-          "title": "Ayesha Curry Talks New Rom-Com With a Holiday Spin",
-          "publisher": "TODAY.com",
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/stephen-curry-inspired-ayesha-curry-192045223.html",
+          "title": "How Stephen Curry inspired Ayesha Curry in Christmas rom-com role that has everybody talking about kissing scene",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQivfCIYNt2zCb0F7xZ-5nlZJH5oILgMaBJwDiJ7gQN998q5Evd5sLdiYgdnVs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRVCXytfpJRsTMdHcaKhg0QC7PH8VO1HM8MmKOyDDR6UDT2nxtO-ENwZqfIKU"
         }
       ]
     },
     {
       "query": "air force basketball",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-11T20:30:00Z",
       "related_news_urls": [
         "https://www.sportsgambler.com/betting-tips/basketball/loyola-chicago-ramblers-vs-air-force-falcons-prediction-odds-2026-11-11/",
@@ -77,48 +287,13 @@
       ]
     },
     {
-      "query": "youfibre gta 6 network issues",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T20:30:00Z",
-      "related_news_urls": [
-        "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
-        "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/",
-        "https://www.forbes.com/sites/paultassi/2026/11/11/gta-6-pre-loads-are-slowing-down-the-internet-warns-isp/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk",
-      "image_credit": "XBOX Wire",
-      "news": [
-        {
-          "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
-          "title": "Grand Theft Auto VI Comes to XBOX One and XBOX Series X|S Through XBOX Cloud Gaming on November 19",
-          "publisher": "XBOX Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk"
-        },
-        {
-          "url": "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/",
-          "title": "Pre-load Grand Theft Auto VI on PS5 starting today",
-          "publisher": "PlayStation.Blog",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmQPZtB1cfmtJ8v-9159sSJpw2Cr8v495zAc5tM6Spqsus45lZErGPllHDXDY"
-        },
-        {
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/11/gta-6-pre-loads-are-slowing-down-the-internet-warns-isp/",
-          "title": "‘GTA 6’ Pre-Loads Are Slowing Down The Internet, Warns ISP",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlb_ph_9fQu4iDTmlnkFzX7nfE7pot6DukUSTxqC1yIBlG7CGq0mLAqeZ7GU4"
-        }
-      ]
-    },
-    {
       "query": "roadster",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-11T20:30:00Z",
       "related_news_urls": [
         "https://www.bloomberg.com/news/articles/2026-11-11/porsche-ceo-throws-shade-at-tesla-roadster-spectacle",
-        "https://nypost.com/2026/11/11/business/porsche-ceo-takes-swipe-at-teslas-flying-car-spectacle-effects-and-shows/",
-        "https://electrek.co/2026/11/11/porsche-ceo-tesla-flying-roadster-stunt/"
+        "https://electrek.co/2026/11/11/porsche-ceo-tesla-flying-roadster-stunt/",
+        "https://nypost.com/2026/11/11/business/porsche-ceo-takes-swipe-at-teslas-flying-car-spectacle-effects-and-shows/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuhtyg1p01Lh7JM-0kJFc7n1UOiZ4kFYE6Ld9GH9eSVq5B0XBJD5oM0pTtucc",
       "image_credit": "Bloomberg.com",
@@ -131,18 +306,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuhtyg1p01Lh7JM-0kJFc7n1UOiZ4kFYE6Ld9GH9eSVq5B0XBJD5oM0pTtucc"
         },
         {
-          "url": "https://nypost.com/2026/11/11/business/porsche-ceo-takes-swipe-at-teslas-flying-car-spectacle-effects-and-shows/",
-          "title": "Porsche CEO takes swipe at Tesla’s flying car spectacle: ‘Effects and shows’",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDBSgp7ONymkHvWr68pw-l5PW7tlHJE4BZwwc-vN-GWgbVgypuJocQfTnxb2s"
-        },
-        {
           "url": "https://electrek.co/2026/11/11/porsche-ceo-tesla-flying-roadster-stunt/",
           "title": "Porsche CEO takes a shot at Tesla’s ‘flying’ Roadster stunt show",
           "publisher": "Electrek",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxzCwD90AYRSAsvezmu7cN_kAZAx93ATOJ57rmP9gv6NL57XY-7aumIZ7Tw7o"
+        },
+        {
+          "url": "https://nypost.com/2026/11/11/business/porsche-ceo-takes-swipe-at-teslas-flying-car-spectacle-effects-and-shows/",
+          "title": "Porsche CEO takes swipe at Tesla’s flying car spectacle: ‘Effects and shows’",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDBSgp7ONymkHvWr68pw-l5PW7tlHJE4BZwwc-vN-GWgbVgypuJocQfTnxb2s"
         }
       ]
     },
@@ -178,173 +353,6 @@
           "publisher": "FOX 32 Chicago",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtsv6RM09IhN2rhUHpPyIf1QRHd6fbPsDrlDMjLyCAuPSvkXjDmG2ZL10tQck"
-        }
-      ]
-    },
-    {
-      "query": "disco singer rochelle fleming passes",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T20:10:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/it/news/ni66103708/?ref_=nwc_art_perm",
-        "https://www.bmg.com/news/bmg-pays-tribute-to-rochelle-fleming",
-        "https://www.usatoday.com/story/entertainment/music/2026/11/09/rochelle-fleming-dead-first-choice/92697205007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRX77QqyxroeMbRORme4GDhI59LDtvfZpRfD93cnBz1goqisMzaL59Ys9VLgw4",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/it/news/ni66103708/?ref_=nwc_art_perm",
-          "title": "First Choice Singer Rochelle Fleming Dies at 72",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRX77QqyxroeMbRORme4GDhI59LDtvfZpRfD93cnBz1goqisMzaL59Ys9VLgw4"
-        },
-        {
-          "url": "https://www.bmg.com/news/bmg-pays-tribute-to-rochelle-fleming",
-          "title": "Bmg Pays Tribute To Rochelle Fleming",
-          "publisher": "www.bmg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIDSrx6_bIPU6rwpRWraCRQcl_4y_5sa5-R4-3KEJ4_5dW-umRGEFCrigWsRw"
-        },
-        {
-          "url": "https://www.usatoday.com/story/entertainment/music/2026/11/09/rochelle-fleming-dead-first-choice/92697205007/",
-          "title": "Rochelle Fleming, singer of disco's First Choice, dies at 72",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRq4MdZKyjwfwZz8CK1K39FcNuDi9nWccA8wv7G8dZ6MeD02gn9VUj7CAj0rpA"
-        }
-      ]
-    },
-    {
-      "query": "elina svitolina",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T20:10:00Z",
-      "related_news_urls": [
-        "https://www.wtatennis.com/news/4607100/andreeva-wins-final-seven-games-to-beat-svitolina-in-fage-wta-finals-debut",
-        "https://tennishead.net/tracy-austin-states-what-she-loves-about-mirra-andreeva-after-watching-her-win-at-the-wta-finals/",
-        "https://www.puntodebreak.com/en/2026/11/10/andreevas-surprising-routine-before-playing-federer-and-nadal-are-to-blame"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGdOs1WYsDoSjmFWtjTSxMHigDQ1a4eiOA5S-Rzxtx3BoI1doHRavd4oCe72o",
-      "image_credit": "WTA Tennis",
-      "news": [
-        {
-          "url": "https://www.wtatennis.com/news/4607100/andreeva-wins-final-seven-games-to-beat-svitolina-in-fage-wta-finals-debut",
-          "title": "Andreeva wins final seven games to beat Svitolina in FAGE WTA Finals singles debut",
-          "publisher": "WTA Tennis",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGdOs1WYsDoSjmFWtjTSxMHigDQ1a4eiOA5S-Rzxtx3BoI1doHRavd4oCe72o"
-        },
-        {
-          "url": "https://tennishead.net/tracy-austin-states-what-she-loves-about-mirra-andreeva-after-watching-her-win-at-the-wta-finals/",
-          "title": "Tracy Austin states what she ‘loves’ about Mirra Andreeva after watching her win at the WTA Finals",
-          "publisher": "Tennishead",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScYAjq-hg3nWRxd4fE6-LJrpRH1FDqH9nhxQ_Kmg9XX3pEurOtWgSHNO9wiag"
-        },
-        {
-          "url": "https://www.puntodebreak.com/en/2026/11/10/andreevas-surprising-routine-before-playing-federer-and-nadal-are-to-blame",
-          "title": "Andreeva's Surprising Routine Before Playing: Federer and Nadal Are to Blame",
-          "publisher": "Punto de Break",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzZ4wPpBRroTpBIyBN9rR6VMAph_DaCjGHPkNTKK1nQT8Ov2ozQ_dGJzI3EcA"
-        }
-      ]
-    },
-    {
-      "query": "childrens hospital",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T20:00:00Z",
-      "related_news_urls": [
-        "https://www.wisn.com/article/childrens-hospital-lockdown-threat/74402457",
-        "https://www.jsonline.com/story/news/2026/11/11/childrens-wisconsin-hospital-in-wauwatosa-on-lockdown/92729816007/",
-        "https://www.tmj4.com/news/local-news/county-reporting/milwaukee-county/childrens-wisconsin-milwaukee-hospital-campus-on-lockdown"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXOCt3W01BedHNkQFNshSsKRP9EO0vpjwSV_PmZJK-ctrmH__-a6jw70ngYH0",
-      "image_credit": "WISN",
-      "news": [
-        {
-          "url": "https://www.wisn.com/article/childrens-hospital-lockdown-threat/74402457",
-          "title": "Children's Hospital under lockdown due to threat",
-          "publisher": "WISN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXOCt3W01BedHNkQFNshSsKRP9EO0vpjwSV_PmZJK-ctrmH__-a6jw70ngYH0"
-        },
-        {
-          "url": "https://www.jsonline.com/story/news/2026/11/11/childrens-wisconsin-hospital-in-wauwatosa-on-lockdown/92729816007/",
-          "title": "Children's Wisconsin hospital in Wauwatosa on lockdown",
-          "publisher": "Milwaukee Journal Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJhqxYqMXAlWutRC6xwsee_OEyDtN4z_YLhdZwnFq2Y9CWFlDP2L8p1ASFn3M"
-        },
-        {
-          "url": "https://www.tmj4.com/news/local-news/county-reporting/milwaukee-county/childrens-wisconsin-milwaukee-hospital-campus-on-lockdown",
-          "title": "Children’s Wisconsin Milwaukee Hospital Campus on lockdown",
-          "publisher": "TMJ4 News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCdHfhYUW3reQU4KwwyA46rXZI1cI17rqOpbCOf8KiZ7KU9jBelsZCIKZ1ygA"
-        }
-      ]
-    },
-    {
-      "query": "pat desiato passing rock bassist",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T19:50:00Z",
-      "related_news_urls": [
-        "https://www.pennlive.com/entertainment/2026/11/rock-band-announces-beloved-member-has-died-at-36-we-are-heartbroken.html",
-        "https://www.vice.com/en/article/rock-musician-dies-suddenly-at-36-as-band-shares-heartbreaking-statement/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1UBvkhzCR8DgSquStDyTNWXQJF4RP4oQInRqcsd-FPMtjNOOMP3l4dnukZh4",
-      "image_credit": "PennLive.com",
-      "news": [
-        {
-          "url": "https://www.pennlive.com/entertainment/2026/11/rock-band-announces-beloved-member-has-died-at-36-we-are-heartbroken.html",
-          "title": "Rock band announces beloved member has died at 36: ‘We are heartbroken’",
-          "publisher": "PennLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1UBvkhzCR8DgSquStDyTNWXQJF4RP4oQInRqcsd-FPMtjNOOMP3l4dnukZh4"
-        },
-        {
-          "url": "https://www.vice.com/en/article/rock-musician-dies-suddenly-at-36-as-band-shares-heartbreaking-statement/",
-          "title": "Rock Musician Dies Suddenly at 36 as Band Shares Heartbreaking Statement",
-          "publisher": "VICE",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSk8XMSM18S6YuuyKDIvC3jbXIZNbybtvZv7ExpCMT91OlkYaVCCJnjyUlwwuY"
-        }
-      ]
-    },
-    {
-      "query": "holger rune",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T19:50:00Z",
-      "related_news_urls": [
-        "https://www.atptour.com/en/news/stockholm-2026-tuesday-report",
-        "https://sports.yahoo.com/articles/every-player-holger-rune-beaten-140000091.html",
-        "https://www.flashscore.com/news/rejuvenated-rune-defeats-bergs-to-put-stockholm-demons-to-bed/b3dtHElB/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJ58_lmqUBF7qwFY6LpaZarQ7tJHTSOsYvBJXDCs97SmZ4dOrjVITHkUs2874",
-      "image_credit": "ATP Tour",
-      "news": [
-        {
-          "url": "https://www.atptour.com/en/news/stockholm-2026-tuesday-report",
-          "title": "Rune returns to Stockholm with statement win, Musetti advances",
-          "publisher": "ATP Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJ58_lmqUBF7qwFY6LpaZarQ7tJHTSOsYvBJXDCs97SmZ4dOrjVITHkUs2874"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/every-player-holger-rune-beaten-140000091.html",
-          "title": "Every player Holger Rune has beaten since returning from long-term injury as he advances in Stockholm",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDug3fU9-UwJ1wWqew6z03Y9CWxMTUxK3j7Qa_G5mLSh_JemWdiDqtdX6F6wc"
-        },
-        {
-          "url": "https://www.flashscore.com/news/rejuvenated-rune-defeats-bergs-to-put-stockholm-demons-to-bed/b3dtHElB/",
-          "title": "Rejuvenated Rune defeats Bergs to put Stockholm demons to bed",
-          "publisher": "Flashscore.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSoK9n8WYk42HO8nhxLov8yQObpywNyGcfB0cwotkd4LluOwUJe1ge0ly174-g"
         }
       ]
     }
