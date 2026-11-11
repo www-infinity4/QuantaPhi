@@ -141,7 +141,7 @@ function renderHome(){
  const grid=create('div','qf-grid');grid.id='quantaFeedGrid';host.append(grid);
  const more=create('button','qf-more','Show more cards');more.type='button';
  more.addEventListener('click',()=>{showCount+=16;renderResults(false);});host.append(more);
- const privacy=create('p','qf-muted qf-note','For You displays only chosen departments and followed cards. Your first-party card interactions and optional authenticated Quant interests affect order within those choices. Following is saved on this device; cross-device sync is not verified. No private medical records, raw prompts, banking data or inferred gender are used for ad targeting.');
+ const privacy=create('p','qf-muted qf-note','For You displays only chosen departments and followed cards. Your first-party card interactions and optional authenticated Quant interests affect order within those choices. Following is saved on this device; cross-device wallet sync is not yet enabled. No private medical records, raw prompts, banking data or inferred gender are used for ad targeting.');
  host.append(privacy);
  function renderResults(nextCard){
   const ranked=feedCandidates(ALL_FEED_CARDS,tab,ranking(),query);
