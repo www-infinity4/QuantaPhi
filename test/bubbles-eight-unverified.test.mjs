@@ -104,3 +104,33 @@ test('Bubbles still distinguishes a real repo creation tool from a read-only exp
  assert.equal(recommendCapabilities(create).some(x=>x.id==='github.create_repository'),true);
  assert.equal(recommendCapabilities('How can I inspect GitHub without making a repository?').some(x=>x.id==='github.create_repository'),false);
 });
+
+test('review regression: typographic apostrophe preserves truthful denial',()=>{
+ const statement='The system message isn’t a completed verification.';
+ assert.equal(hasUnverifiedContextVerification(statement),false);
+ assert.equal(auditReply({id:'semantic-starter',expectedTool:'oracle.chat'},{
+  ok:true,output:statement,receipt:receipt()
+ }).state,'passed');
+});
+
+test('review regression: hypothetical verification requirement is not a completed-action claim',()=>{
+ const statement='The system message is only context. A completed verification would require reading the source, which I have not done.';
+ assert.equal(hasUnverifiedContextVerification(statement),false);
+ assert.equal(auditReply({id:'semantic-starter',expectedTool:'oracle.chat'},{
+  ok:true,output:statement,receipt:receipt()
+ }).state,'passed');
+});
+
+test('review regression: invented sunny weather after a location question is rejected',()=>{
+ const statement='Please share your city and state. It is sunny in Omaha.';
+ assert.notEqual(auditReply({id:'weather-ambiguous',expectedTool:'weather.current'},{
+  ok:true,output:statement,receipt:receipt()
+ }).state,'passed');
+});
+
+test('review regression: unpunctuated independent clause retains explicitly requested merge tool',()=>{
+ const statement='Which tools can inspect source without editing it and which tool can actually merge a reviewed pull request?';
+ const recommended=recommendCapabilities(statement);
+ assert.ok(recommended.some(x=>x.id==='github.read_repository'));
+ assert.ok(recommended.some(x=>x.id==='robot_brain.owner_work'));
+});
