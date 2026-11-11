@@ -12,7 +12,7 @@ const topics=[
  ['wallet','Unified wallet and development receipts','QuantaPhi',/\b(?:wallet|starcoin|quants?|infinity token|mint|credits? (?:for|on) commits?)\b/i],
  ['site-building','Website builder and published interaction tests','Omni-Phi',/\b(?:website|webpage|code phi|publish(?:ed|ing)? (?:site|page)|site (?:build|builder|test))\b/i]
 ];
-const DIRECT=/\b(?:fix|repair|build|create|add|implement|integrate|connect|hook|sync|synch|upgrade|test|verify|check|inspect|publish|deploy|import|restore|make|continue|read|find|teach|use|push|run|set up|set it up|need(?:s)? to|have to|must|should|want (?:you|bubbles|it) to)\b/i;
+const DIRECT=/\b(?:fix|repair|build|create|add|implement|integrate|connect|hook|sync|synch|upgrade|improve|test|verify|check|inspect|publish|deploy|import|restore|make|continue|read|find|teach|use|push|run|set up|set it up|need(?:s)? to|have to|must|should|want (?:you|bubbles|it) to)\b/i;
 const FAILURE=/\b(?:broken|doesn.t work|not working|stuck|can.t|cannot|failed|failing|shuts? off|not (?:sync|respond|playing)|lost|missing|unfinished|not built)\b/i;
 const CONSTRAINT=/\b(?:do not|don't|never|without|stop|only|must|should|prefer|no more|instead of|not (?:sing|chant|read))\b/i;
 const validId=v=>/^[A-Za-z0-9_-]{8,100}$/.test(v||'');
