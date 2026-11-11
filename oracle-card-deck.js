@@ -365,7 +365,7 @@ function updateTabs(){
  followingPublisherFeed?.sync({tab:selectedTab});
  if(follow){
   const saved=Boolean(active&&feedState?.following.includes(active.feedId));
-  follow.hidden=!active;
+  follow.hidden=!active||active.id.startsWith('source-');
   follow.textContent=saved?'✓ Following':'+ Follow';
   follow.setAttribute('aria-pressed',String(saved));
  }
@@ -422,16 +422,15 @@ function predict(){
   const balanced=familyApi?.selectNextFamilyPool(tour.cards,cardFamily(active))||tour.cards;
   const pick=directionApi.nextFeedDirection(balanced,selectedTab,context,active?.feedId||'');
   proposed=possible.find(e=>e.feedId===pick.card?.id)||null;
-  reason.textContent=proposed?(proposed.title+' · '+pick.reason+
-   ' · '+tour.remaining+' other cards in this round'):
-   'Use a card to help choose the next useful action.';
+  reason.textContent=proposed?('Next card: '+proposed.title+
+   ' · '+Math.max(0,tour.remaining-1)+' more cards remain this round'):'Select a card to continue.';
  }else{
   const rest=possible.filter(x=>x!==active);
   const groups=['accepted','website','original'],pos=groups.indexOf(cardFamily(active));
   const nextFamily=groups[(pos+1)%groups.length];
   proposed=rest.filter(e=>cardFamily(e)===nextFamily).sort((a,b)=>a.count-b.count)[0]||
    rest.sort((a,b)=>a.count-b.count)[0]||possible[0];
-  reason.textContent=proposed?'Next: '+proposed.title:'';
+  reason.textContent=proposed?'Next card: '+proposed.title:'Select a card to continue.';
  }
  next.disabled=possible.length<2;
  primeCardImage(proposed);
@@ -605,7 +604,8 @@ function show(entry,remember=true,automatic=false){
    // the generic QuantaPhi site preview used by unrelated URLs.
    const mediaSrc=displayed.node.querySelector('[data-walmart-image],.qbp-photo,.sap-feature img,.iqc-media img,.qcx-art img,.premium-selected img,.oracle-original-cover img,img[src]')?.getAttribute('src')||'';
    mountCardActions(container,{id:displayed.feedId||displayed.id,name:displayed.title,
-    category:displayed.category,official:displayed.official,route:'/?card='+encodeURIComponent(displayed.id),mediaSrc});
+    category:displayed.category,official:displayed.official,route:'/?card='+encodeURIComponent(displayed.id),mediaSrc},
+    {showFollow:false});
    stage.append(container);
   }).catch(()=>{status.textContent='Card actions unavailable; existing card remains usable.';});
  }
