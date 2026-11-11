@@ -4,7 +4,10 @@ import worker, {verifyVerdict,allowCreative,allowJurisdiction} from '../workers/
 
 const now=Date.parse('2026-11-01T12:00:00Z');
 const verdict={authenticated:true,subject:'user-123',verified_over_21:true,proof_kind:'third_party_verified',expires_at:'2026-11-02T12:00:00Z',jurisdiction:'US-CO'};
-const creative={id:'approved-creative',category:'cannabis',approved:1,rights_cleared:1,license_id:'TEST-ONLY',
+const creative={id:'approved-creative',category:'cannabis',approved:1,rights_cleared:1,
+ rights_expires_at:'2026-11-30T23:59:59Z',campaign_starts_at:'2026-10-25T00:00:00Z',
+ campaign_ends_at:'2026-11-15T23:59:59Z',sponsor_agreement_id:'FIXTURE-NOT-A-REAL-AD-CONTRACT',
+ license_id:'TEST-ONLY',
  advertiser:'Sample reviewed advertiser',publisher_domain:'publisher.example.com',
  title:'Reviewed advertiser notice',description:'Publisher information',
  image:'https://publisher.example.com/approved.jpg',url:'https://publisher.example.com/info',
@@ -29,6 +32,11 @@ test('jurisdiction approval must be explicit and current',()=>{
 test('creative delivery requires rights, current review, matching jurisdiction, and license',()=>{
  assert.ok(allowCreative(creative,'US-CO',now));
  for(const invalid of [{...creative,approved:0},{...creative,rights_cleared:0},
+  {...creative,rights_expires_at:''},{...creative,rights_expires_at:'2026-10-15T00:00:00Z'},
+  {...creative,campaign_starts_at:''},{...creative,campaign_ends_at:''},
+  {...creative,campaign_starts_at:'2026-11-10T00:00:00Z'},
+  {...creative,campaign_ends_at:'2026-10-31T00:00:00Z'},
+  {...creative,sponsor_agreement_id:''},
   {...creative,license_id:''},{...creative,approved_jurisdictions:'["US-CA"]'},
   {...creative,reviewed_at:'2025-01-01T00:00:00Z'},
   {...creative,image:'http://publisher.example.com/ad.jpg'},
