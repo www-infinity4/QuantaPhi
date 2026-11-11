@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-11T00:37:19.311533Z",
+  "checked_at": "2026-11-11T01:18:35.411740Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -197,7 +197,7 @@
     },
     "burger-king-chicken-2026": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T19:18:39.808454Z",
+      "attempted_at": "2026-11-11T01:18:35.411740Z",
       "items": [
         {
           "url": "https://news.bk.com/",
@@ -205,7 +205,7 @@
           "title": "Burger King® Expands Its Iconic Original Chicken Sandwich Lineup with Two Bold New Flavors",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T19:18:39.808454Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Restaurants"
         },
         {
@@ -214,7 +214,7 @@
           "title": "Big Holiday Cheer Comes In Mini Packages With The Return Of The Burger King® Advent Calendar",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T19:18:39.808454Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Restaurants"
         },
         {
@@ -223,7 +223,7 @@
           "title": "Hello Kitty® and Friends Are Coming to Burger King®",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T19:18:39.808454Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Restaurants"
         },
         {
@@ -232,7 +232,7 @@
           "title": "Burger King® Serves Up Game Day Flavor with New Stadium-Inspired Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T19:18:39.808454Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Restaurants"
         },
         {
@@ -248,7 +248,7 @@
     },
     "kraft-mac-cheese": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T19:18:39.808454Z",
+      "attempted_at": "2026-11-11T01:18:35.411740Z",
       "items": [
         {
           "url": "https://www.kraftheinz.com/kraft-mac-and-cheese",
@@ -256,7 +256,7 @@
           "title": "Site Logo",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T19:18:39.808454Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Food & recipes"
         },
         {
@@ -265,7 +265,7 @@
           "title": "An image displaying two Kraft Mac & Cheese products. On the left, against a solid blue background, the word \"products\" is written in large white text. To the right, on a split blue",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T19:18:39.808454Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Food & recipes"
         },
         {
@@ -274,7 +274,7 @@
           "title": "An image featuring two limited-edition Kraft Mac & Cheese boxes: a red \"Pizza Flavored\" box with pizza slice graphics and a green \"Jalapeño Flavored\" box with a jalapeño pepper gra",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T19:18:39.808454Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Food & recipes"
         },
         {
@@ -283,7 +283,7 @@
           "title": "Kraft PowerMac and Original Mac & Cheese boxes next to a prepared bowl of macaroni on a blue and yellow background.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T19:18:39.808454Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Food & recipes"
         },
         {
@@ -292,7 +292,7 @@
           "title": "Kraft Heinz logo on a purple background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T19:18:39.808454Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Food & recipes"
         },
         {
@@ -301,7 +301,7 @@
           "title": "Collage with packages from all the Kraft Heinz brands on a red background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T19:18:39.808454Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Food & recipes"
         },
         {
@@ -310,7 +310,7 @@
           "title": "A plate of pasta and meat on a yellow background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T19:18:39.808454Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Food & recipes"
         },
         {
@@ -319,54 +319,54 @@
           "title": "A slice of pumpkin cheesecake topped with whipped cream, served on a plate next to a gold fork.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T19:18:39.808454Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Food & recipes"
         }
       ]
     },
     "heritage": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T19:18:39.808454Z",
+      "attempted_at": "2026-11-11T01:18:35.411740Z",
       "items": []
     },
     "topps": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T19:18:39.808454Z",
+      "attempted_at": "2026-11-11T01:18:35.411740Z",
       "items": []
     },
     "beckett": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T19:18:39.808454Z",
+      "attempted_at": "2026-11-11T01:18:35.411740Z",
       "items": []
     },
     "christies": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T19:18:39.808454Z",
+      "attempted_at": "2026-11-11T01:18:35.411740Z",
       "items": []
     },
     "shoplc-premium": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T19:18:39.808454Z",
+      "attempted_at": "2026-11-11T01:18:35.411740Z",
       "items": []
     },
     "kohls-coupons": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T19:18:39.808454Z",
+      "attempted_at": "2026-11-11T01:18:35.411740Z",
       "items": []
     },
     "honda-vehicles": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T19:18:39.808454Z",
+      "attempted_at": "2026-11-11T01:18:35.411740Z",
       "items": []
     },
     "oakley-meta": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T19:18:39.808454Z",
+      "attempted_at": "2026-11-11T01:18:35.411740Z",
       "items": []
     },
     "gmc-trucks": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T19:18:39.808454Z",
+      "attempted_at": "2026-11-11T01:18:35.411740Z",
       "items": []
     },
     "gmc-sierra-2026": {
@@ -4582,7 +4582,7 @@
     },
     "durable-phil-wood": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T18:19:28.943110Z",
+      "attempted_at": "2026-11-11T01:18:35.411740Z",
       "items": [
         {
           "url": "https://philwood.com/",
@@ -4590,7 +4590,7 @@
           "title": "Phil Wood and Company",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4599,7 +4599,7 @@
           "title": "Phil Wood and Company",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4608,7 +4608,7 @@
           "title": "Phil Wood and Company",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4617,7 +4617,7 @@
           "title": "Phil Wood and Company",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4626,7 +4626,7 @@
           "title": "Spoke Cutting and Threading Machine",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4635,7 +4635,7 @@
           "title": "Spoke Cutting and Threading Machine",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4644,7 +4644,7 @@
           "title": "Spoke Cutting and Threading Machine",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4653,14 +4653,14 @@
           "title": "Spoke Cutting and Threading Machine",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-ortlieb": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T18:19:28.943110Z",
+      "attempted_at": "2026-11-11T01:18:35.411740Z",
       "items": [
         {
           "url": "https://de.ortlieb.com/collections/panniers-and-bike-bags",
@@ -4668,7 +4668,7 @@
           "title": "Fahrradtaschen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4677,7 +4677,7 @@
           "title": "Bikepacking",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4686,7 +4686,7 @@
           "title": "Gepäckträger",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4695,7 +4695,7 @@
           "title": "Satteltaschen",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4704,7 +4704,7 @@
           "title": "BACK-ROLLER 20L Zip-Pocket - lavender / QL2.2",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "110.00",
@@ -4719,7 +4719,7 @@
           "title": "BACK-ROLLER 20L Zip-Pocket - black / QL2.2",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "110.00",
@@ -4734,7 +4734,7 @@
           "title": "DAYPACK 23L - dark sand",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "140.00",
@@ -4749,7 +4749,7 @@
           "title": "DAYPACK 23L - black",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "140.00",
@@ -4762,7 +4762,7 @@
     },
     "durable-ram-mounts": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T18:19:28.943110Z",
+      "attempted_at": "2026-11-11T01:18:35.411740Z",
       "items": [
         {
           "url": "https://rammount.com/",
@@ -4770,7 +4770,7 @@
           "title": "Flag of America",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4779,7 +4779,7 @@
           "title": "Web banner with an in use on the right of a GDS Dock with a Nexa tablet in it and renders of Nexa and Sonim devices on the left",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4788,7 +4788,7 @@
           "title": "Web banner with an in use on the right of a RAM Tough Tray III with a laptop in it in a vehicle. The middle has text and the left is a render of a tough tray III attached to a lapt",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4797,7 +4797,7 @@
           "title": "Image of a GDS Intelliskin H Series with an apple ipad mounted on a charging dock. There is a user interacting with the device looking at home automation cameras.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4806,7 +4806,7 @@
           "title": "RAM® Powered Dock with USB-C for Zebra HC20 & HC50",
           "kind": "product",
           "description": "The RAM® Powered Dock with USB-C for Zebra HC20 & HC50 (RAM-HOL-ZE39-GRY) is a rugged, healthcare-grade docking solution purpose-built for demanding medical workflows. Designed with a form-fit cradle, this dock keeps all device buttons accessible and includes ",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "97.49",
@@ -4821,7 +4821,7 @@
           "title": "IntelliSkin® Next Gen for NEXA Rhino T80",
           "kind": "product",
           "description": "The IntelliSkin® Next Gen for NEXA Rhino T80 (RAM-GDS-SKIN-SOM3-NG) is an insert-molded design that combines a hard plastic shell with soft, shock-absorbing rubber and an integrated GDS® connector that upgrades the device's USB-C port to flat, ruggedized pogo ",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": null
         },
@@ -4831,7 +4831,7 @@
           "title": "IntelliSkin® Next Gen for NEXA Rhino T85",
           "kind": "product",
           "description": "The IntelliSkin® Next Gen for NEXA Rhino T85 (RAM-GDS-SKIN-SOM4-NG) is an insert-molded design that combines a hard plastic shell with soft, shock-absorbing rubber and an integrated GDS® connector that upgrades the device's USB-C port to flat, ruggedized pogo ",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": null
         }
@@ -4839,7 +4839,7 @@
     },
     "durable-maclaren": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T18:19:28.943110Z",
+      "attempted_at": "2026-11-11T01:18:35.411740Z",
       "items": [
         {
           "url": "https://maclarenbaby.com/",
@@ -4847,14 +4847,14 @@
           "title": "Maclaren Baby",
           "kind": "website",
           "description": "A new chapter is about to begin. Maclaren is coming back. Stay tuned.",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-peak-design": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T18:19:28.943110Z",
+      "attempted_at": "2026-11-11T01:18:35.411740Z",
       "items": [
         {
           "url": "https://www.peakdesign.com/collections/straps",
@@ -4862,7 +4862,7 @@
           "title": "Link to Straps",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4871,7 +4871,7 @@
           "title": "Link to Clips",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4880,7 +4880,7 @@
           "title": "Link to Tripods",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4889,7 +4889,7 @@
           "title": "Link to Travel",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4898,7 +4898,7 @@
           "title": "Roller Lite Carry-On",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "549.95",
@@ -4913,7 +4913,7 @@
           "title": "Gift Card",
           "kind": "product",
           "description": "Whether you're a last-minute shopper or you're stumped on what to buy you'll never go wrong with thoughtfully designed sustainably made guaranteed-for-l...",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": null
         },
@@ -4923,7 +4923,7 @@
           "title": "Roller Lite Carry-On",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "549.95",
@@ -4946,7 +4946,7 @@
     },
     "durable-anchor-hocking": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T18:19:28.943110Z",
+      "attempted_at": "2026-11-11T01:18:35.411740Z",
       "items": [
         {
           "url": "https://www.anchorhocking.com/",
@@ -4954,7 +4954,7 @@
           "title": "Anchor Hocking Homepage",
           "kind": "website",
           "description": "We began in 1905 with a simple goal: make the glass that homes really need. Anchor Hocking glassware showcases the genius of utility.",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4963,7 +4963,7 @@
           "title": "Anchor Hocking Homepage",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4972,7 +4972,7 @@
           "title": "Anchor Hocking Homepage",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -4981,14 +4981,14 @@
           "title": "Anchor Hocking Homepage",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-thule": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T18:19:28.943110Z",
+      "attempted_at": "2026-11-11T01:18:35.411740Z",
       "items": [
         {
           "url": "https://www.thule.com/en-us/",
@@ -4996,7 +4996,7 @@
           "title": "Family enjoying a snowy mountain landscape beside a pickup truck fitted with a rooftop tent.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5005,7 +5005,7 @@
           "title": "Family enjoying a snowy mountain landscape beside a pickup truck fitted with a rooftop tent.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5014,7 +5014,7 @@
           "title": "Two people skiing behind a car fitted with a Thule roof box in a snowy mountain landscape.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5023,24 +5023,24 @@
           "title": "Two people skiing behind a car fitted with a Thule roof box in a snowy mountain landscape.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-patagonia": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T18:19:28.943110Z",
+      "attempted_at": "2026-11-11T01:18:35.411740Z",
       "items": []
     },
     "durable-osprey": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T18:19:28.943110Z",
+      "attempted_at": "2026-11-11T01:18:35.411740Z",
       "items": []
     },
     "durable-darn-tough": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T18:19:28.943110Z",
+      "attempted_at": "2026-11-11T01:18:35.411740Z",
       "items": [
         {
           "url": "https://darntough.com/",
@@ -5048,7 +5048,7 @@
           "title": "A couple wearing Darn Tough socks with unique holiday patterns",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5057,7 +5057,7 @@
           "title": "A couple wearing Darn Tough socks with unique holiday patterns",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5066,7 +5066,7 @@
           "title": "A couple wearing Darn Tough socks with unique holiday patterns",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5075,7 +5075,7 @@
           "title": "Bundle Image of 2 pairs of the solid basic crew in Black/eclipsevapor",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5084,7 +5084,7 @@
           "title": "Men's Solid Crew Lifestyle 2-Pack",
           "kind": "product",
           "description": "These Lifestyle socks tell stories that go way beyond the cubicle. They may look formal but flip a switch and they’re ready for action. Made from moisture-wicking Merino Wool, this Solid Crew bundle is poised to keep your feet happy in office but also out of b",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "48.0",
@@ -5100,7 +5100,7 @@
           "title": "Men's Solid Crew Lifestyle 2-Pack",
           "kind": "product",
           "description": "These Lifestyle socks tell stories that go way beyond the cubicle. They may look formal but flip a switch and they’re ready for action. Made from moisture-wicking Merino Wool, this Solid Crew bundle is poised to keep your feet happy in office but also out of b",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "48.0",
@@ -5115,7 +5115,7 @@
           "title": "Men's Solid Crew Lifestyle 2-Pack",
           "kind": "product",
           "description": "These Lifestyle socks tell stories that go way beyond the cubicle. They may look formal but flip a switch and they’re ready for action. Made from moisture-wicking Merino Wool, this Solid Crew bundle is poised to keep your feet happy in office but also out of b",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "48.0",
@@ -5130,7 +5130,7 @@
           "title": "Men's Solid Crew Lifestyle 2-Pack",
           "kind": "product",
           "description": "These Lifestyle socks tell stories that go way beyond the cubicle. They may look formal but flip a switch and they’re ready for action. Made from moisture-wicking Merino Wool, this Solid Crew bundle is poised to keep your feet happy in office but also out of b",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "48.0",
@@ -5143,7 +5143,7 @@
     },
     "durable-filson": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T18:19:28.943110Z",
+      "attempted_at": "2026-11-11T01:18:35.411740Z",
       "items": [
         {
           "url": "https://www.filson.com/collections/mens-new-arrivals",
@@ -5151,7 +5151,7 @@
           "title": "Filson - Better Outdoor Clothes, Bags, and Accessories",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5160,7 +5160,7 @@
           "title": "Filson - Better Outdoor Clothes, Bags, and Accessories",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5169,7 +5169,7 @@
           "title": "Filson - Better Outdoor Clothes, Bags, and Accessories",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5178,7 +5178,7 @@
           "title": "Filson - Better Outdoor Clothes, Bags, and Accessories",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5187,7 +5187,7 @@
           "title": "Electronic Gift Card",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "25.00",
@@ -5203,7 +5203,7 @@
           "title": "Electronic Gift Card - $25",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "25.00",
@@ -5213,15 +5213,15 @@
           }
         },
         {
-          "url": "https://www.filson.com/products/womens-spokane-insulated-jacket-red-burgundy-plaid",
-          "image": "https://www.filson.com/cdn/shop/files/f6d3cfdda79129e07422bbd89208a91bae6c47c290ced38ff6d2ffee717f5bdc.jpg?v=1789163791&width=1024",
-          "title": "Women's Spokane Insulated Jacket - Red / Burgundy Plaid",
+          "url": "https://www.filson.com/products/filson-x-casstrom-no-8-swedish-forest-knife-black-maple",
+          "image": "https://www.filson.com/cdn/shop/files/10f73277a66e8ac77c71fef2f9397c549bc86f65e163244fe42eac337c1f0d04.png?v=1793227290&width=1024",
+          "title": "Filson X Casström No. 8 Swedish Forest Knife - Black Maple",
           "kind": "product",
-          "description": "The Women's Spokane Insulated Jacket is built for cold-weather wear with a wool-blend shell paired with quick-dry insulation to lock in warmth. The wrist-length cut provides coverage while allowing easy movement through the day. The wool-blend shell provides n",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "description": "The Filson × Casström Swedish Forest Knife is a fixed-blade workhorse built for hard use in the field. Its 3.25\" drop-point blade is made from CPM MagnaCut steel, cryogenically treated below −150°C for dependable edge retention and wear resistance. The optimiz",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
-            "price": "399.00",
+            "price": "299.00",
             "currency": "USD",
             "evidence": "jsonld-offer",
             "availability": "https://schema.org/InStock",
@@ -5229,15 +5229,15 @@
           }
         },
         {
-          "url": "https://www.filson.com/products/womens-spokane-insulated-jacket-red-burgundy-plaid",
-          "image": "https://www.filson.com/cdn/shop/files/f6d3cfdda79129e07422bbd89208a91bae6c47c290ced38ff6d2ffee717f5bdc.jpg?v=1789163791&width=1920",
-          "title": "Women's Spokane Insulated Jacket - Red / Burgundy Plaid - Red / Burgundy Plaid / XS",
+          "url": "https://www.filson.com/products/filson-x-casstrom-no-8-swedish-forest-knife-black-maple",
+          "image": "https://www.filson.com/cdn/shop/files/10f73277a66e8ac77c71fef2f9397c549bc86f65e163244fe42eac337c1f0d04.png?v=1793227290&width=1920",
+          "title": "Filson X Casström No. 8 Swedish Forest Knife - Black Maple - Black Maple",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
-            "price": "399.00",
+            "price": "299.00",
             "currency": "USD",
             "evidence": "jsonld-offer",
             "availability": "http://schema.org/InStock"
@@ -5247,7 +5247,7 @@
     },
     "durable-barbour": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T18:19:28.943110Z",
+      "attempted_at": "2026-11-11T01:18:35.411740Z",
       "items": [
         {
           "url": "https://www.barbour.com/us/",
@@ -5255,7 +5255,7 @@
           "title": "Discover Now",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5264,7 +5264,7 @@
           "title": "Descriptive image",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5273,7 +5273,7 @@
           "title": "Descriptive image",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5282,14 +5282,14 @@
           "title": "Descriptive image",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-arc-teryx-alpha-beta-hard-shell-lines": {
       "schema_version": 1,
-      "attempted_at": "2026-11-10T18:19:28.943110Z",
+      "attempted_at": "2026-11-11T01:18:35.411740Z",
       "items": [
         {
           "url": "https://arcteryx.com/us/en",
@@ -5297,7 +5297,7 @@
           "title": "Person in ski gear hiking up a steep, snowy mountain slope, carrying skis on their backpack and using ski poles.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5306,7 +5306,7 @@
           "title": "Dark green Arc'teryx jacket, partially unzipped, showing a black quilted interior.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5315,17 +5315,47 @@
           "title": "Multiple blue-toned photographs featuring outdoor gear, a person's reflection, and abstract patterns.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
           "url": "https://arcteryx.com/us/en",
-          "image": "https://cdn.sanity.io/images/inkbj32c/production/d8199e2e2e69c0e8acdde33166496ac6b2758208-496x590.png?rect=27,0,443,590&w=600&h=800&q=80&fit=crop&auto=format",
-          "title": "Man wearing a purple Arc'teryx puffer jacket and dark pants.",
+          "image": "https://cdn.sanity.io/images/inkbj32c/production/3c2bc5e42681797a2265df12b02e638a02ab9aa1-3008x4014.jpg?rect=0,2,3008,4011&w=600&h=800&q=80&fit=crop&auto=format",
+          "title": "A man wearing a red and rust two-tone winter jacket, black pants, black gloves, and a yellow beanie.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
           "category": "Tactical, Environmental & Transport Systems"
+        },
+        {
+          "url": "https://arcteryx.com/us/en/shop/womens/sidewinder-jacket-archive-0762?intcmp=home_t4_shop_womens_sidewinder-jacket-archive-0762",
+          "image": "https://images.arcteryx.com/details/1350x1710/F26-X000010762-Sidewinder-Jacket-ARC-HIVE-Citrus-Women-s-Front-View.jpg",
+          "title": "Sidewinder Jacket - Archive Women's, Citrus, Size XXS",
+          "kind": "product",
+          "description": "Twenty-five years ago, we added a curved WaterTight™ zipper to the front of a GORE-TEX shell intended for snowsports. It was our first stab at an innovative, technical downhill hardshell. Over two decades later, that jacket still embodies our design philosophy",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "1000",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "https://schema.org/LimitedAvailability"
+          }
+        },
+        {
+          "url": "https://arcteryx.com/us/en/shop/mens/sidewinder-jacket-archive-0475?intcmp=home_t4_shop_mens_sidewinder-jacket-archive-0475",
+          "image": "https://images.arcteryx.com/details/1350x1710/F26-X000010475-Sidewinder-Jacket-ARC-HIVE-Chili-Front-View.jpg",
+          "title": "Sidewinder Jacket - Archive Men's, Chili, Size XXS",
+          "kind": "product",
+          "description": "Twenty-five years ago, we added a curved WaterTight ™ zipper to the front of a GORE-TEX shell intended for freeride. It was our first stab at an innovative, technical downhill hardshell, with a thermomoulded, cupped zipper that left your chin chafe-free. Over ",
+          "checked_at": "2026-11-11T01:18:35.411740Z",
+          "category": "Tactical, Environmental & Transport Systems",
+          "offer": {
+            "price": "1000",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "https://schema.org/LimitedAvailability"
+          }
         },
         {
           "url": "https://arcteryx.com/us/en/shop/mens/thorium-hoody-0657?intcmp=home_t4_shop_mens_thorium-hoody-0657",
@@ -5352,21 +5382,6 @@
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "500",
-            "currency": "USD",
-            "evidence": "jsonld-offer",
-            "availability": "https://schema.org/InStock"
-          }
-        },
-        {
-          "url": "https://arcteryx.com/us/en/shop/alpha-sl-harness-0101?intcmp=home_t5_shop_alpha-sl-harness-0101",
-          "image": "https://images.arcteryx.com/details/1350x1710/F26-X000010101-Alpha-SL-Harness-White-Light-Front.jpg",
-          "title": "Alpha SL Harness , White Light, Size 2",
-          "kind": "product",
-          "description": "The Alpha SL Harness is built for mountaineering days when speed, weight, and efficiency matter most. It’s our lightest harness ever—yet still fully featured with two gear loops and adjustable, separating leg loops via the novel BraidLock™ buckle design. This ",
-          "checked_at": "2026-11-10T18:19:28.943110Z",
-          "category": "Tactical, Environmental & Transport Systems",
-          "offer": {
-            "price": "180",
             "currency": "USD",
             "evidence": "jsonld-offer",
             "availability": "https://schema.org/InStock"
