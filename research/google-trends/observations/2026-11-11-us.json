@@ -3,12 +3,187 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T14:01:27.661787Z",
+  "checked_at": "2026-11-11T14:31:33.074325Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "amy robach",
+      "query": "ron howard",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T14:10:00Z",
+      "related_news_urls": [
+        "https://www.economist.com/the-world-in-brief/2026/11/11/aaef91a3-e53c-4519-86cb-fb983f3464e8",
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/avedon-gracefully-constructed-documentary-great-140005227.html",
+        "https://www.theguardian.com/film/2026/nov/10/richard-avedon-photography-netflix-documentary"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeV1eIMfOBsYPGZ5rkuwWx-g-wOjIK4Pxx3ZXcftwIZ5LJnXDF9eFjj3R3BAc",
+      "image_credit": "The Economist",
+      "news": [
+        {
+          "url": "https://www.economist.com/the-world-in-brief/2026/11/11/aaef91a3-e53c-4519-86cb-fb983f3464e8",
+          "title": "Turning the lens on a celebrated photographer",
+          "publisher": "The Economist",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeV1eIMfOBsYPGZ5rkuwWx-g-wOjIK4Pxx3ZXcftwIZ5LJnXDF9eFjj3R3BAc"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/avedon-gracefully-constructed-documentary-great-140005227.html",
+          "title": "Avedon Is a Gracefully Constructed Documentary About a Great American Photographer",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBxyhAq3_jhHqxAa0rajCe1xHrC0XAuQpMgEYjQooP05MFxfTDdIlBqH-aTUg"
+        },
+        {
+          "url": "https://www.theguardian.com/film/2026/nov/10/richard-avedon-photography-netflix-documentary",
+          "title": "‘I’m looking for faces which surprise me’: how Richard Avedon photographed the soul of his subjects",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgN0Rb8u9lrVUTZe3HsZVi45Z0b2657UCuv17keobwGIjquxk7fz23Ykc6wc4"
+        }
+      ]
+    },
+    {
+      "query": "cynthia nixon",
       "approx_searches": "200+",
+      "published_at": "2026-11-11T14:10:00Z",
+      "related_news_urls": [
+        "https://www.queerty.com/benito-skinners-drip-cynthia-nixons-favorite-lesbian-a-walk-through-gay-history-20261108/",
+        "https://www.vulture.com/article/the-gilded-age-taylor-trensch-interview.html",
+        "https://decider.com/2026/11/09/who-plays-oliver-the-new-footman-on-the-gilded-age-meet-taylor-trensch/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSM4njfSbjTys1MSSb-7gQYUuhevtf6hKVNKjEOY30bahTXnD5PlTcn6Zlw0vQ",
+      "image_credit": "Queerty",
+      "news": [
+        {
+          "url": "https://www.queerty.com/benito-skinners-drip-cynthia-nixons-favorite-lesbian-a-walk-through-gay-history-20261108/",
+          "title": "Benito Skinner’s drip, Cynthia Nixon’s favorite lesbian, & a walk through gay history",
+          "publisher": "Queerty",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSM4njfSbjTys1MSSb-7gQYUuhevtf6hKVNKjEOY30bahTXnD5PlTcn6Zlw0vQ"
+        },
+        {
+          "url": "https://www.vulture.com/article/the-gilded-age-taylor-trensch-interview.html",
+          "title": "‘The Gilded Age’ New Footman Taylor Trensch Spills Milk, Tea",
+          "publisher": "Vulture",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9XC0OMHEecoNFyqf5sA8nuDrmBpA9IoKfXylj99JdMz6EpoycBxgj4AasHSI"
+        },
+        {
+          "url": "https://decider.com/2026/11/09/who-plays-oliver-the-new-footman-on-the-gilded-age-meet-taylor-trensch/",
+          "title": "‘The Gilded Age’ star Cynthia Nixon explains why Ada hired the “somewhat incompetent” Oliver as footman",
+          "publisher": "Decider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-XgJ9LTmwxJFve-zCYjvQNOFdeyyKFzx_oINqug5vclOW_JRS5-x8rL7lKcM"
+        }
+      ]
+    },
+    {
+      "query": "chase elliott",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T14:00:00Z",
+      "related_news_urls": [
+        "https://www.nascar.com/videos/franchise/all-videos/chase-elliott-furious-over-radio-after-stack-up-on-pit-road/",
+        "https://heavy.com/sports/nascar/nascar-championship-race-pit-row-chaos/",
+        "https://sports.yahoo.com/articles/don-t-expletive-chase-elliott-005245415.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3_fF3ERfgVZm6QHYltqZT9_uFLDMctdu8s136vAT6IqJc9GzdpfD4ZM6_pLE",
+      "image_credit": "NASCAR.com",
+      "news": [
+        {
+          "url": "https://www.nascar.com/videos/franchise/all-videos/chase-elliott-furious-over-radio-after-stack-up-on-pit-road/",
+          "title": "Chase Elliott furious over radio after stackup on pit road",
+          "publisher": "NASCAR.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3_fF3ERfgVZm6QHYltqZT9_uFLDMctdu8s136vAT6IqJc9GzdpfD4ZM6_pLE"
+        },
+        {
+          "url": "https://heavy.com/sports/nascar/nascar-championship-race-pit-row-chaos/",
+          "title": "NASCAR Championship Race Erupts in Chaos After Wild Pit Row Incident: VIDEO",
+          "publisher": "Heavy.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_vE1H9w9AQcakU5RSuc6WPjfpnvMjpACZ_CA2PBXhM8gHHOFsiICK0rFRCcg"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/don-t-expletive-chase-elliott-005245415.html",
+          "title": "‘I Don’t Give a [Expletive]’: Chase Elliott’s Fiery Remarks After Homestead Incident",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjZw0uzz0dWZq8vw7iC5abokC0gjocfld_Cy4OOv50obNIUzNZiMI3gOT4XxM"
+        }
+      ]
+    },
+    {
+      "query": "santander",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T14:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/mlb/article/blue-jays-gm-denounces-anthony-santanders-anti-islam-social-media-posts-extremely-disappointing-024159310.html",
+        "https://www.cbssports.com/mlb/news/blue-jays-anthony-santander-ross-atkins-anti-muslim/",
+        "https://www.mlb.com/news/ross-atkins-disappointed-in-anthony-santander-for-social-media-posts"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOZcJltkLOSgZGeQUWH1FsyOMZHxuq2TVdGKAFO8uuYN7pS8i4O476E-uEoGc",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/mlb/article/blue-jays-gm-denounces-anthony-santanders-anti-islam-social-media-posts-extremely-disappointing-024159310.html",
+          "title": "Blue Jays GM denounces Anthony Santander's anti-Islam social media posts: 'Extremely disappointing'",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOZcJltkLOSgZGeQUWH1FsyOMZHxuq2TVdGKAFO8uuYN7pS8i4O476E-uEoGc"
+        },
+        {
+          "url": "https://www.cbssports.com/mlb/news/blue-jays-anthony-santander-ross-atkins-anti-muslim/",
+          "title": "Blue Jays executive responds to Anthony Santander's 'extremely disappointing' anti-Muslim social media posts",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAks0gRmX72dOn7fdRGfrMiRI7oP1vG8EpXTvOD_cT_itUEmUvDcJloZQdskg"
+        },
+        {
+          "url": "https://www.mlb.com/news/ross-atkins-disappointed-in-anthony-santander-for-social-media-posts",
+          "title": "Blue Jays GM Atkins says Santander's social media posts were 'extremely concerning, extremely disappointing'",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3UgZqiO08aKpgExfaVJpOU9ozFT1CAs39Oidj-xk29I-yK0TSQ7gxkIaQWrc"
+        }
+      ]
+    },
+    {
+      "query": "chris harrison",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T13:50:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/tv-and-radio/2026/nov/06/rivals-to-12-12-12-the-seven-best-shows-to-stream-this-week",
+        "https://www.tvline.com/2312874/what-to-watch-november-11-2026-tv-shows-movies-streaming/",
+        "https://www.yahoo.com/entertainment/tv/articles/lord-rings-returns-netflix-bizarre-120009866.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkAAPc9OivQIBbRx6AMym1zFo6NK6BptMrGqB2uZqVnxalYVgOZOOIQRvUQOw",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/06/rivals-to-12-12-12-the-seven-best-shows-to-stream-this-week",
+          "title": "Rivals to 12 12 12: the seven best shows to stream this week",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkAAPc9OivQIBbRx6AMym1zFo6NK6BptMrGqB2uZqVnxalYVgOZOOIQRvUQOw"
+        },
+        {
+          "url": "https://www.tvline.com/2312874/what-to-watch-november-11-2026-tv-shows-movies-streaming/",
+          "title": "What To Watch Wednesday: The Rings Of Power Returns, Chris Harrison's New Dating Show, And More",
+          "publisher": "TVLine",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzXFyykDB-81kTiU0t2ncVOB8uS7cTm6mdl83z1oytjRPjt6jJdIZEHhE6RTg"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/lord-rings-returns-netflix-bizarre-120009866.html",
+          "title": "‘Lord of the Rings’ Returns, Netflix’s Bizarre ‘Body,’ a ‘Lowdown’ Road Trip, Veterans Day on TV",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj8_H4Bry049J-4tnZNnV6cj2fIWWTyjzXJ0ubV_8OCG5Ugg10yVnk6908hYM"
+        }
+      ]
+    },
+    {
+      "query": "amy robach",
+      "approx_searches": "500+",
       "published_at": "2026-11-11T13:40:00Z",
       "related_news_urls": [
         "https://www.yahoo.com/entertainment/tv/articles/amy-robach-t-j-holmes-102339057.html",
@@ -38,41 +213,6 @@
           "publisher": "AOL.com",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQu_00My3EcQBoA13dRKG2QjoyWY6RVzolpx63D__ZkdZ0G6e1yXOs6P8Gf9do"
-        }
-      ]
-    },
-    {
-      "query": "gma deals and steals today",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T13:40:00Z",
-      "related_news_urls": [
-        "https://www.goodmorningamerica.com/shop/story/gma-deals-steals-kristin-cavallari-119-137980372",
-        "https://abcnews.com/GMA/Shop/gma-deals-steals-kristin-cavallari-119/story?id=137980372",
-        "https://www.yahoo.com/news/videos/abc-secret-savings-spectacular-november-100305060.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwZdqGUf7gvy2Yl5EWExH8jOXoSDVt5XeWpgYadv3jFNVO6qN0_JLMyG2wgGU",
-      "image_credit": "Good Morning America",
-      "news": [
-        {
-          "url": "https://www.goodmorningamerica.com/shop/story/gma-deals-steals-kristin-cavallari-119-137980372",
-          "title": "'GMA' Deals & Steals with John Legend",
-          "publisher": "Good Morning America",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwZdqGUf7gvy2Yl5EWExH8jOXoSDVt5XeWpgYadv3jFNVO6qN0_JLMyG2wgGU"
-        },
-        {
-          "url": "https://abcnews.com/GMA/Shop/gma-deals-steals-kristin-cavallari-119/story?id=137980372",
-          "title": "'GMA' Deals & Steals with Kristin Cavallari",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgW_2pJvb7NPMjIdIzPBSsA6QO4JRybcxUEcCE5FFuwUVSYpQ6rzJS_zoVIV4"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/abc-secret-savings-spectacular-november-100305060.html",
-          "title": "ABC Secret Savings Spectacular for November",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSws69A0OeuMKFfCY3-oFztbuihHbBoSg90qP9Eqir7AeyxJyzairdEjrVEZDU"
         }
       ]
     },
@@ -148,36 +288,36 @@
     },
     {
       "query": "gma deals and steals",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-11T13:30:00Z",
       "related_news_urls": [
         "https://abcnews.com/GMA/Shop/gma-deals-steals-kristin-cavallari-119/story?id=137980372",
-        "https://www.yahoo.com/news/videos/abc-secret-savings-spectacular-november-100305060.html",
-        "https://abcnews.com/GMA/Shop/abc-secret-savings-november-savings-special/story?id=137910498"
+        "https://www.goodmorningamerica.com/shop/story/gma-deals-steals-holiday-gifting-137915584",
+        "https://abc7chicago.com/post/abc-secret-savings-best-deals-sales-november-2026/20025029/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgW_2pJvb7NPMjIdIzPBSsA6QO4JRybcxUEcCE5FFuwUVSYpQ6rzJS_zoVIV4",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWqv4oTNQBH_lH3N4EnTu6v1pcNwUFT7hoMu-XCYX5yl0q3dLqCJhe8DBNcB8",
       "image_credit": "ABC News - Breaking News, Latest News and Videos",
       "news": [
         {
           "url": "https://abcnews.com/GMA/Shop/gma-deals-steals-kristin-cavallari-119/story?id=137980372",
-          "title": "'GMA' Deals & Steals with Kristin Cavallari",
+          "title": "'GMA' Deals & Steals with John Legend",
           "publisher": "ABC News - Breaking News, Latest News and Videos",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgW_2pJvb7NPMjIdIzPBSsA6QO4JRybcxUEcCE5FFuwUVSYpQ6rzJS_zoVIV4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWqv4oTNQBH_lH3N4EnTu6v1pcNwUFT7hoMu-XCYX5yl0q3dLqCJhe8DBNcB8"
         },
         {
-          "url": "https://www.yahoo.com/news/videos/abc-secret-savings-spectacular-november-100305060.html",
-          "title": "ABC Secret Savings Spectacular for November",
-          "publisher": "Yahoo",
+          "url": "https://www.goodmorningamerica.com/shop/story/gma-deals-steals-holiday-gifting-137915584",
+          "title": "'GMA' Deals & Steals for holiday gifting",
+          "publisher": "Good Morning America",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSws69A0OeuMKFfCY3-oFztbuihHbBoSg90qP9Eqir7AeyxJyzairdEjrVEZDU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ-Xe6AXK2tJF6ISjQa8cjcwiLZxmvQlmoH-FAxFmR1hbfAVdHSo6vNJLJ1Kc"
         },
         {
-          "url": "https://abcnews.com/GMA/Shop/abc-secret-savings-november-savings-special/story?id=137910498",
-          "title": "ABC Secret Savings: November Savings Special",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "url": "https://abc7chicago.com/post/abc-secret-savings-best-deals-sales-november-2026/20025029/",
+          "title": "ABC Secret Savings: Best deals and sales for November 2026",
+          "publisher": "ABC7 Chicago",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgUmdaVgI6a_03mGa6mJN25N9H4b-z6kictkZNmQCca_GzZKT4HLqBjdRwYQA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTN3g6L__aDzSpuNTFBcr3CnOoOUKJHs2OQpcHtaKpK2Tc1emoCX6RuIdBAEg4"
         }
       ]
     },
@@ -187,8 +327,8 @@
       "published_at": "2026-11-11T13:30:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/2026/11/11/us/iran-war-deaths-survivors-veterans-day.html",
-        "https://www.ms.now/opinion/veterans-day-pete-hegseth-iran-war",
-        "https://www.usatoday.com/story/news/nation/2026/11/11/veterans-day-2026-federal-holiday/92711988007/"
+        "https://www.foxnews.com/opinion/dakota-meyer-veterans-took-oath-defend-america-no-expiration-date",
+        "https://www.ms.now/opinion/veterans-day-pete-hegseth-iran-war"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLqu7fLl4x7abptLNtpjBwEU1kJP_qDTQMbslnyD8TkACuAI33wXu2dV7P76Y",
       "image_credit": "The New York Times",
@@ -201,158 +341,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLqu7fLl4x7abptLNtpjBwEU1kJP_qDTQMbslnyD8TkACuAI33wXu2dV7P76Y"
         },
         {
+          "url": "https://www.foxnews.com/opinion/dakota-meyer-veterans-took-oath-defend-america-no-expiration-date",
+          "title": "DAKOTA MEYER: Veterans took an oath to defend America. It has no expiration date",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNEgzVluO81u-4tQ5JtQrm21KisbPwA4yTFHeTEjjspeBQqVVgFrWeFzINjNg"
+        },
+        {
           "url": "https://www.ms.now/opinion/veterans-day-pete-hegseth-iran-war",
           "title": "Opinion | This Veterans Day, it's even more important to celebrate American values",
           "publisher": "MS NOW",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuBPuPI4gwZVjfhPwhDN1VzDo4DLKoFPqhq3Ag_thuwOk74fD-g0yeZU5hZpI"
-        },
-        {
-          "url": "https://www.usatoday.com/story/news/nation/2026/11/11/veterans-day-2026-federal-holiday/92711988007/",
-          "title": "Is Veterans Day a federal holiday? What to know about Nov. 11",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTTALWQvggDp6q-DDBu0oF1FJxt2wM7QXDCndTucI0fh9OcMqwHMsRy6FVjKM"
-        }
-      ]
-    },
-    {
-      "query": "space force",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T13:30:00Z",
-      "related_news_urls": [
-        "https://www.spacex.com/launches/ussf266",
-        "https://www.ksby.com/news/launch-tracker/spacex-falcon-9-launch-planned-for-monday-evening-out-of-vandenberg-sfb",
-        "https://spacenews.com/eighteen-launches-no-program-names-a-call-for-disclosure/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzxrlHVXWSOjQ8IJXJTBkrryC5codpcP3ZFpMrkqHB-b8VcCbA_Dieb9l_HFg",
-      "image_credit": "SpaceX",
-      "news": [
-        {
-          "url": "https://www.spacex.com/launches/ussf266",
-          "title": "USSF-266 Mission",
-          "publisher": "SpaceX",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzxrlHVXWSOjQ8IJXJTBkrryC5codpcP3ZFpMrkqHB-b8VcCbA_Dieb9l_HFg"
-        },
-        {
-          "url": "https://www.ksby.com/news/launch-tracker/spacex-falcon-9-launch-planned-for-monday-evening-out-of-vandenberg-sfb",
-          "title": "SpaceX Falcon 9 launch planned for Wednesday evening out of Vandenberg SFB",
-          "publisher": "KSBY News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmx1hKgrzM1TpKVoAG99gJpG6dP6HfAgFJ26nUgdFpordueYEv9Yh3YTHKWLg"
-        },
-        {
-          "url": "https://spacenews.com/eighteen-launches-no-program-names-a-call-for-disclosure/",
-          "title": "Eighteen launches, no program names: a call for disclosure",
-          "publisher": "SpaceNews",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShQolHxLoC_-EV_yvI2-PG0ecSJvM6kM7ISKmWpF7f-mX60KiP8B53uK9SPg4"
-        }
-      ]
-    },
-    {
-      "query": "jenna bush hager",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T13:20:00Z",
-      "related_news_urls": [
-        "https://www.today.com/video/jenna-bush-hager-recounts-7-year-old-son-s-questions-about-past-boyfriends-273202245588",
-        "https://pagesix.com/2026/11/10/parents/jenna-bush-hager-details-awkward-conversation-with-son-hal-7-about-her-ex-boyfriends/",
-        "https://www.yahoo.com/entertainment/celebrity/articles/todays-jenna-bush-hagers-probing-155401518.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzX7SUj1r3hSSgC-d3mkDDixJITg1qkINOyWhJ3LfiNdKgPGTFuxMIjpIwEno",
-      "image_credit": "TODAY.com",
-      "news": [
-        {
-          "url": "https://www.today.com/video/jenna-bush-hager-recounts-7-year-old-son-s-questions-about-past-boyfriends-273202245588",
-          "title": "Jenna Bush Hager Recounts 7-Year-Old Son’s Questions About Past Boyfriends",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzX7SUj1r3hSSgC-d3mkDDixJITg1qkINOyWhJ3LfiNdKgPGTFuxMIjpIwEno"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/10/parents/jenna-bush-hager-details-awkward-conversation-with-son-hal-7-about-her-ex-boyfriends/",
-          "title": "Jenna Bush Hager details awkward conversation with son Hal, 7, about her ex-boyfriends",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2DBAYYQwSQgGojs94alC3q4dg-7CLqe0fMKHNIX5ryJvc5ZXy-4kWgFlmCww"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/todays-jenna-bush-hagers-probing-155401518.html",
-          "title": "TODAY's Jenna Bush Hager's probing question from 7-year-old son about relationship with husband",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-FH1rpKOfIkxO0EA6IaxxF-CG6hklaxnvElJhn-IJ2g6fplEtciAGLkPRMJQ"
-        }
-      ]
-    },
-    {
-      "query": "dakota meyer",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T13:20:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/politics/dakota-meyer-survived-battle-thought-would-kill-him-15-years-after-leaving-marines-went-back",
-        "https://www.yahoo.com/news/videos/why-medal-honor-recipient-dakota-224732362.html",
-        "https://tippahnews.com/national-news/dakota-meyer-reenlisted-in-marine-corps-in-2025-completed-reconnaissance-training-in-his-late-30s/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW6rf8yNsx9_yuEU9Z_IhcU0qAWAJNrvbMVig2Y1YK-19dAaFGKlfDk4R8HQc",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/politics/dakota-meyer-survived-battle-thought-would-kill-him-15-years-after-leaving-marines-went-back",
-          "title": "Dakota Meyer survived a battle he thought would kill him. 15 years after leaving the Marines, he went back",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW6rf8yNsx9_yuEU9Z_IhcU0qAWAJNrvbMVig2Y1YK-19dAaFGKlfDk4R8HQc"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/why-medal-honor-recipient-dakota-224732362.html",
-          "title": "Why Medal of Honor recipient Dakota Meyer returned to the Marines after 15 years",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0hdx_cMbuqJ8njZm9GpkhGrYMiAhAmPUZbwIcsUTYH4tJYVJZw9SRzmMnpE0"
-        },
-        {
-          "url": "https://tippahnews.com/national-news/dakota-meyer-reenlisted-in-marine-corps-in-2025-completed-reconnaissance-training-in-his-late-30s/",
-          "title": "Dakota Meyer reenlisted in Marine Corps in 2025, completed reconnaissance training in his late 30s",
-          "publisher": "Tippah News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmSTWoNTJVcCwnUzuILFZAdhaVnWlO0JJp7HufpyFHbLhnhm1GDK3znXVrf1M"
-        }
-      ]
-    },
-    {
-      "query": "army",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T13:20:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/11/us-army-soldier-russia-espionage-arrest.html",
-        "https://6abc.com/story/us-soldier-accused-spying-russia-arrested-uk-officials/20032791/",
-        "https://www.theguardian.com/uk-news/2026/nov/10/uk-counter-terrorism-police-arrest-member-of-us-army-in-gloucestershire"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQttaLpDw-t3bJTtBEF2lG2jBCuZYBXeDPThWAeQ4wWtPse6zpgBwVn5l7WfXE",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/11/us-army-soldier-russia-espionage-arrest.html",
-          "title": "American soldier arrested on suspicion of spying for Russia",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQttaLpDw-t3bJTtBEF2lG2jBCuZYBXeDPThWAeQ4wWtPse6zpgBwVn5l7WfXE"
-        },
-        {
-          "url": "https://6abc.com/story/us-soldier-accused-spying-russia-arrested-uk-officials/20032791/",
-          "title": "US soldier accused of spying for Russia arrested in the UK: Officials",
-          "publisher": "6abc Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCOfMcrYf5_80gfL8tkRIDASduKzpC63LFOpeJMAb-G_dF3jJGB9B1P_z5p2M"
-        },
-        {
-          "url": "https://www.theguardian.com/uk-news/2026/nov/10/uk-counter-terrorism-police-arrest-member-of-us-army-in-gloucestershire",
-          "title": "UK counter-terrorism police arrest senior US soldier with alleged links to Russia",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTi-saNETql91rhipT7bLcFNoHatidIVbEEhcKvao6mCgyIK5AoTlY_pU7s44E"
         }
       ]
     }
