@@ -20,7 +20,6 @@ export function suggestFeedSearch(cards,input,{limit=6}={}){
  for(let i=0;i<cards.length;i++){
   const card=cards[i],id=card?.id;
   if(typeof id!=='string'||seen.has(id))continue;
-  seen.add(id);
   const sourceUrl=safeSearchSource(card.official)||safeSearchSource(card.url);
   if(!sourceUrl)continue;
   const name=typeof card.name==='string'?card.name.slice(0,140):'';
@@ -29,6 +28,7 @@ export function suggestFeedSearch(cards,input,{limit=6}={}){
   const priority=fields[0].startsWith(query)?0:fields[0].includes(query)?1:
    fields[1].includes(query)?2:fields[2].includes(query)?3:fields[3].includes(query)?4:-1;
   if(priority<0||!name)continue;
+  seen.add(id);
   found.push({id,label:name,category:category||'Quick Card',sourceUrl,priority,index:i});
  }
  const max=Number.isSafeInteger(limit)?Math.max(1,Math.min(8,limit)):6;
