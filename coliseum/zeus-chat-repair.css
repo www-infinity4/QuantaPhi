@@ -73,3 +73,7 @@ body[data-zeus-mode="chat"] .coliseum-live{display:none!important}
 body[data-zeus-mode="chat"] #chatPane{display:block;min-width:0}
 body[data-zeus-mode="chat"] .arena-layout{display:block}
 body[data-zeus-mode="build"] .zeus-assistant-mount{display:none}
+
+/* A confirmed Bubbles answer is rendered as text, never interpreted as HTML. */
+.zeus-quest-reply{max-width:850px;margin:10px 0 8px;padding:14px 16px;white-space:pre-wrap;overflow-wrap:anywhere;border:1px solid #a7bfcb;border-radius:12px;background:#eff5f8;color:#233b49;font:500 17px/1.6 system-ui,sans-serif;letter-spacing:.012em}
+.zeus-quest-reply[hidden]{display:none}
