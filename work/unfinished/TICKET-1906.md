@@ -1,3 +1,30 @@
+---
+issue: 1906
+project: "Bubbles Identity & Verification Center"
+state: review_pending
+dot: "🟡"
+progress_percent: 35
+progress_basis: "Cloudflare stale gate fix and browser Verification Center source staged and tested; broader OAuth, real provider behavior, independent review, merge, release and two-account acceptance remain"
+sessions_spent: 1
+sessions_remaining_estimate: unknown
+agent: "ChatGPT via authenticated GitHub connector"
+lease_id: null
+lease_expires_at: null
+task_session_id: null
+fence: null
+last_observed_at_utc: "2026-11-11T06:35:00Z"
+repo: www-infinity4/QuantaPhi
+branch: fix/identity-verification-1906-20261111
+head_sha: "59a48b5a3821e40dd8817908fd4591a44ce19866"
+pr: "https://github.com/www-infinity4/QuantaPhi/pull/1910"
+tests: "Provider-verification and account-connection regression checks passed on 59a48b5; unfinished ledger contract needs front-matter and index fix"
+ci: "https://github.com/www-infinity4/QuantaPhi/actions/runs/42973539595"
+merged: false
+deployed: false
+live_verified: false
+blocker: "Independent security review and real provider/Android acceptance not established; exact-head ledger CI currently failing"
+next_action: "Rerun PR #1910 exact-head CI after checkpoint/index repair, then obtain independent security approval before guarded merge"
+---
 # TICKET-1906 — Bubbles Identity & Verification Center
 
 - Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1906
