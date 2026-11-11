@@ -91,24 +91,53 @@ export async function readLedger(db,now=new Date()){
  return cumulativeSnapshot(result.results,now);
 }
 const headers={'Content-Type':'application/json; charset=utf-8','Cache-Control':'public, max-age=60, s-maxage=120','X-Content-Type-Options':'nosniff'};
+// A manual read can demand fresh provider data, but never exposes the Analytics token.
+// Five-minute provider cooldown avoids hitting Cloudflare on repeated button presses.
+const MANUAL_COOLDOWN_MS=5*60*1000;
+export async function handleTrafficRequest(request,env,{fetcher=fetch,now=new Date(),ctx}={}){
+ const url=new URL(request.url);
+ if(url.pathname!=='/api/site-traffic')return new Response('Not found',{status:404});
+ if(request.method!=='GET'&&request.method!=='HEAD')return new Response('Method not allowed',{status:405,headers:{Allow:'GET, HEAD'}});
+ const manual=request.method==='GET'&&url.searchParams.get('refresh')==='1';
+ try{
+  let snapshot=await readLedger(env.TRAFFIC_LEDGER,now);
+  const configured=Boolean(env.SITE_TRAFFIC_CLOUDFLARE_TOKEN);
+  let refreshStatus;
+  if(manual){
+   if(!configured)refreshStatus='not_configured';
+   else if(now.getTime()-Date.parse(snapshot.fetchedAt)<MANUAL_COOLDOWN_MS)refreshStatus='recent';
+   else{
+    try{
+     // Await the provider query AND the D1 readback before claiming success.
+     await refreshLedger(env.TRAFFIC_LEDGER,{token:env.SITE_TRAFFIC_CLOUDFLARE_TOKEN,fetcher,now});
+     snapshot=await readLedger(env.TRAFFIC_LEDGER,now);
+     refreshStatus='refreshed';
+    }catch(e){
+     console.warn('manual_traffic_refresh:',String(e?.message||e).slice(0,80));
+     refreshStatus='failed';
+    }
+   }
+  }else if(configured&&ctx?.waitUntil&&
+    now.getTime()-Date.parse(snapshot.fetchedAt)>15*60*1000){
+   ctx.waitUntil(refreshLedger(env.TRAFFIC_LEDGER,{
+    token:env.SITE_TRAFFIC_CLOUDFLARE_TOKEN,fetcher,now
+   }).catch(e=>console.warn('traffic_refresh:',String(e?.message||e).slice(0,80))));
+  }
+  snapshot.refreshConfigured=configured;
+  if(manual)snapshot.refreshStatus=refreshStatus;
+  return new Response(request.method==='HEAD'?null:JSON.stringify(snapshot)+'\n',{
+   status:200,headers:manual?{...headers,'Cache-Control':'no-store'}:headers
+  });
+ }catch(e){
+  console.warn('traffic_read:',String(e?.message||e).slice(0,80));
+  return new Response(JSON.stringify({ok:false,error:'traffic_ledger_unavailable'})+'\n',{
+   status:503,headers:{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'}
+  });
+ }
+}
 export default {
  async fetch(request,env,ctx){
-  const url=new URL(request.url);
-  if(url.pathname!=='/api/site-traffic')return new Response('Not found',{status:404});
-  if(request.method!=='GET'&&request.method!=='HEAD')return new Response('Method not allowed',{status:405,headers:{Allow:'GET, HEAD'}});
-  try{
-   const snapshot=await readLedger(env.TRAFFIC_LEDGER);
-   snapshot.refreshConfigured=Boolean(env.SITE_TRAFFIC_CLOUDFLARE_TOKEN);
-   // Never block the accumulating counter when an analytics refresh fails.
-   const stamp=Date.parse(snapshot.fetchedAt);
-   if(env.SITE_TRAFFIC_CLOUDFLARE_TOKEN&&ctx?.waitUntil&&(!Number.isFinite(stamp)||Date.now()-stamp>15*60*1000)){
-    ctx.waitUntil(refreshLedger(env.TRAFFIC_LEDGER,{token:env.SITE_TRAFFIC_CLOUDFLARE_TOKEN}).catch(e=>console.warn('traffic_refresh:',String(e?.message||e).slice(0,80))));
-   }
-   return new Response(request.method==='HEAD'?null:JSON.stringify(snapshot)+'\n',{status:200,headers});
-  }catch(e){
-   console.warn('traffic_read:',String(e?.message||e).slice(0,80));
-   return new Response(JSON.stringify({ok:false,error:'traffic_ledger_unavailable'})+'\n',{status:503,headers:{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'}});
-  }
+  return handleTrafficRequest(request,env,{ctx});
  },
  async scheduled(controller,env){
   try{await refreshLedger(env.TRAFFIC_LEDGER,{token:env.SITE_TRAFFIC_CLOUDFLARE_TOKEN});}

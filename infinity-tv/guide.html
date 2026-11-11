@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#eaf0f4">
+<title>Infinity TV Guide · StarQuest, Chiller, Omni, FOX, KYOU, Shop LC</title>
+<meta name="description" content="Browse source-backed Infinity-curated video picks and official network program guides. No invented FOX, KYOU or Shop LC show times.">
+<link rel="stylesheet" href="/infinity-tv/guide.css?v=20261103-separate1">
+</head><body><main class="itvg-layout">
+<a class="itvg-back" href="/?card=channels">← QuantaPhi · Quick Cards</a>
+<header class="itvg-header">
+ <small>INFINITY® · TV GUIDE</small><h1>What’s playing on Infinity TV?</h1>
+ <p>Browse each channel and its curated selections. Infinity playlists are not the same as a broadcaster’s live TV schedule; use official guide links for exact network broadcasts.</p>
+</header>
+<nav class="itvg-publisher-links" aria-label="Official broadcaster schedules and players">
+ <a href="https://www.kyoutv.com/programming/schedule/" target="_blank" rel="noopener noreferrer">KYOU · Official TV Guide</a>
+ <a href="https://www.kyoutv.com/livestream/" target="_blank" rel="noopener noreferrer">KYOU · Live newscasts</a>
+ <a href="https://www.shoplc.com/pages/live-tv-program-guide" target="_blank" rel="noopener noreferrer">Shop LC · Program Guide</a>
+ <a href="https://www.livenowfox.com/live" target="_blank" rel="noopener noreferrer">LiveNOW from FOX</a>
+ <a href="https://www.tvguide.com/" target="_blank" rel="noopener noreferrer">TV Guide · Broadcast listings</a>
+</nav>
+<section class="itvg-filters" aria-label="Filter television guide">
+ <label for="tvGuideDay">Day<select id="tvGuideDay" name="day"></select></label>
+ <label for="tvGuideTime">Time<select id="tvGuideTime" name="time">
+  <option value="all">Any time</option><option value="morning">Morning · 6–11</option><option value="afternoon">Afternoon · 12–17</option><option value="evening">Evening · 18–23</option><option value="overnight">Overnight · 0–5</option>
+ </select></label>
+ <label for="tvGuideNetwork">Network<select id="tvGuideNetwork" name="channel">
+  <option value="all">All channels</option><option value="starquest">StarQuest</option><option value="omni">Omni TV</option><option value="chiller">Chiller</option><option value="shoplc">Shop LC</option><option value="kyou">KYOU · FOX 15.1</option><option value="livenow">LiveNOW from FOX</option>
+ </select></label>
+</section>
+<p id="tvGuideStatus" class="itvg-status" role="status" aria-live="polite"></p>
+<section id="tvGuidePrograms" class="itvg-programs" aria-label="Available Infinity selections and official source links"></section>
+<button id="tvGuideMore" type="button" class="itvg-more" hidden>Show more program picks</button>
+<p class="itvg-disclosure">Infinity playlist times use this device’s local clock and describe planned video selections, not synchronized broadcast transmission. KYOU, FOX and Shop LC current show information is not imported or guessed. Original uploaders and broadcasters control viewing rights and availability.</p>
+</main><script defer src="/phi-tv-programs.js?v=20261103-guide1"></script>
+<script defer src="/infinity-tv/guide.js?v=20261103-separate1"></script>
+</body></html>

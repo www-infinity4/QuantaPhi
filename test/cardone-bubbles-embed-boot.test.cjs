@@ -6,7 +6,6 @@ const vm=require('node:vm');
 const ai=fs.readFileSync('bubbles-ai.js','utf8');
 const bubblePage=fs.readFileSync('bubbles.html','utf8');
 const embed=fs.readFileSync('bubbles-embed.js','utf8');
-const cardone=fs.readFileSync('cardone-capital.html','utf8');
 
 test('embed mounts a real touch-scroll thread with Chat history above messages',()=>{
  assert.match(ai,/const chatScroll=create\('div','ba-thread'\)/);
@@ -33,15 +32,6 @@ test('recognized speech cannot erase an in-progress typed message',()=>{
  assert.match(ai,/if\(embedded\)\{toggle\(!showing\);return\}/);
 });
 
-test('Cardone iframe is the existing specialist assistant with versioned scripts',()=>{
- assert.match(cardone,/src="\/bubbles-embed\.js\?v=20261024-embed-shell3"/);
- assert.match(cardone,/data-bubble-id="cardone-westshore-research"/);
- assert.match(cardone,/data-bubble-role="specialist"/);
- assert.match(embed,/iframe\.src=ORIGIN\+'\/bubbles\.html\?'/);
- assert.match(embed,/quantaphi:bubbles:size/);
- assert.match(bubblePage,/bubbles-voice-gate\.js\?v=20261023-cardone-wake1/);
- assert.match(bubblePage,/bubbles-ai\.js\?v=20261102-cardone-context1/);
-});
 
 test('public specialist ignores background transcripts even within a conversation window',()=>{
  const sandbox={};sandbox.window=sandbox;

@@ -13,7 +13,9 @@ const allowedRoles=new Set(['assistant','builder','singer','listener','specialis
 const name=String(script.dataset.bubbleName||'Bubbles').slice(0,MAXLEN.name);
 const instructions=String(script.dataset.bubbleInstructions||'').slice(0,MAXLEN.instructions);
 const id=String(script.dataset.bubbleId||'embedded').replace(/[^a-zA-Z0-9_-]/g,'').slice(0,MAXLEN.id)||'embedded';
+const theme=script.dataset.bubbleTheme==='family-modern'?'family-modern':'';
 const options=new URLSearchParams({embed:'1',id,role:allowedRoles.has(role)?role:'assistant',name,instructions});
+if(theme)options.set('theme',theme);
 const iframe=document.createElement('iframe');
 // Defer both iframe insertion and network navigation until the visitor opens
 // this assistant. A homepage can render many cards without eagerly booting
@@ -25,7 +27,7 @@ iframe.setAttribute('sandbox','allow-scripts allow-same-origin allow-forms allow
 iframe.setAttribute('referrerpolicy','no-referrer');
 // A collapsed HTML iframe paints a rectangular document regardless of the
 // shape of the orb INSIDE it. Hide the iframe completely until chat is opened.
-iframe.style.cssText='position:fixed;right:6px;bottom:6px;width:min(425px,calc(100vw - 12px));height:min(690px,calc(100dvh - 12px));max-width:calc(100vw - 12px);max-height:calc(100dvh - 12px);border:0;background:transparent;overflow:hidden;z-index:2147483000;display:none;';
+iframe.style.cssText='position:fixed;right:6px;bottom:6px;width:min('+(theme?'480px':'425px')+',calc(100vw - 12px));height:min('+(theme?'800px':'690px')+',calc(100dvh - 12px));max-width:calc(100vw - 12px);max-height:calc(100dvh - 12px);border:0;background:transparent;overflow:hidden;z-index:2147483000;display:none;';
 iframe.dataset.bubbleId=id;
 iframe.style.setProperty('display','none','important');
 const orb=document.createElement('button');

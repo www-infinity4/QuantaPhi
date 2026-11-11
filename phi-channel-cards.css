@@ -52,3 +52,35 @@
 .channelphi-kyou .channelphi-screen-label strong{font:700 13px/1.35 system-ui,sans-serif;color:#fff}
 .channelphi-kyou .channelphi-screen:focus-visible{outline:3px solid #2b88bd;outline-offset:3px}
 .channelphi-kyou .channelphi-screen:hover .channelphi-play-icon{background:#e7f3fb}
+
+/* Separate player Quick Cards: calmer typography, actual poster before play,
+   a single 16:9 screen, standard media controls and minimal extra chrome. */
+#phiChannelCards.channelphi-guide-home{padding:15px;background:#f8fafb;border-color:#c8d8e1;color:#253d50;box-shadow:none}
+.channelphi-guide-home .channelphi-heading h2{color:#24394b;font-size:clamp(23px,4vw,29px)}
+.channelphi-guide-home .channelphi-heading p{color:#536778;font-size:16px;line-height:1.6}
+.channelphi-guide-poster{display:block;width:100%;max-height:190px;aspect-ratio:16/9;object-fit:cover;border-radius:12px;background:#dce6ec}
+.channelphi-guide-links,.channelphi-source-links{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+.channelphi-guide-links{padding:13px 0}
+.channelphi-guide-links a,.channelphi-source-links a{display:inline-flex;align-items:center;min-height:42px;padding:8px 12px;border:1px solid #b5c8d5;border-radius:9px;background:#fff;color:#23577a;text-decoration:none;font:650 14px/1.4 system-ui,sans-serif}
+.channelphi-guide-links a:focus-visible,.channelphi-source-links a:focus-visible{outline:3px solid #d9ae5c;outline-offset:2px}
+.channelphi-standalone-root{display:block;max-width:800px;margin:14px auto}
+.channelphi-independent{display:flex;flex-direction:column;gap:11px;padding:clamp(12px,3vw,20px);background:#fbfcfd;border:1px solid #c7d5df;border-radius:18px;box-shadow:none;color:#263b4b;min-width:0}
+.channelphi-independent .channelphi-name h3{font-size:clamp(22px,4.5vw,28px);letter-spacing:.01em;color:#203b50}
+.channelphi-independent .channelphi-kicker{color:#527086}
+.channelphi-independent .channelphi-description{font-size:16px;line-height:1.58;letter-spacing:.015em;color:#435768}
+.channelphi-airing{margin:0;font:750 16px/1.45 system-ui;color:#1a415a}
+.channelphi-program-note{margin:0;font-size:13px;line-height:1.52;color:#536f7e}
+.channelphi-independent .channelphi-screen{aspect-ratio:16/9;min-height:0;border:0;border-radius:12px;background:#0b1a29;overflow:hidden}
+.channelphi-independent .channelphi-art{object-fit:cover;opacity:1}
+.channelphi-independent .channelphi-screen-label{background:linear-gradient(180deg,transparent 45%,#081321cf 100%);justify-content:center}
+.channelphi-independent .channelphi-play-icon{border-radius:13px;width:63px;height:47px;font:24px/1 system-ui;background:#121b29d9;border:1px solid #ffffffa0}
+.channelphi-independent .channelphi-viewer{padding:0;background:#101921;border-radius:12px;overflow:hidden}
+.channelphi-independent .channelphi-video-slot{border-radius:0}
+.channelphi-independent .channelphi-now{padding:5px 11px;color:#edf3f7;font-size:14px}
+.channelphi-independent .channelphi-status{padding:3px 11px 8px;color:#d4e1e8}
+.channelphi-independent .channelphi-controls{display:flex;gap:8px;justify-content:flex-end;padding:8px}
+.channelphi-independent .channelphi-controls button{flex:0 0 auto;min-height:44px;min-width:74px;border:1px solid #8d9eac;border-radius:9px;padding:9px 12px!important;background:#e6edf3;color:#273a4c;font:650 13px/1.4 system-ui}
+.channelphi-independent:not(.channelphi-omni) :is(.channelphi-prev,.channelphi-sound){display:none}
+.channelphi-independent.channelphi-omni .channelphi-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+.channelphi-independent.channelphi-omni .channelphi-controls button{min-width:0}
+@media(max-width:420px){.channelphi-standalone-root{margin:10px auto}.channelphi-independent{padding:12px}.channelphi-independent .channelphi-controls button{font-size:13px}}

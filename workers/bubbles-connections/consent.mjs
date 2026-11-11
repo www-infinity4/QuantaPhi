@@ -31,10 +31,10 @@ export class ConsentService {
       const limitKey = prefix+'consent-rate', limit = await tx.get(limitKey);
       const recent = limit && limit.until > this.now() ? limit : {count:0,until:this.now()+60000};
       if (recent.count >= 10) throw Error('too_many_requests');
-      const pending = await tx.list({prefix:prefix+'state:',limit:64});
-      for (const [pendingKey,value] of pending) if (value.expiresAt <= this.now()) await tx.delete(pendingKey);
-      const receipts=await tx.list({prefix:prefix+'handoff-receipt:',limit:64});
-      for(const [receiptKey,value] of receipts)if(value.expiresAt<=this.now())await tx.delete(receiptKey);
+      for(const kind of ['state:','handoff-receipt:','google-return:','cloudflare-return:']){
+        const records=await tx.list({prefix:prefix+kind,limit:64});
+        for(const [recordKey,value] of records)if(value.expiresAt<=this.now())await tx.delete(recordKey);
+      }
       await tx.put(limitKey,{...recent,count:recent.count+1});
       const generation = await tx.get(prefix + 'generation:' + provider) || 0;
       const record = {userId, sessionHash, provider, verifier, actions:[...new Set(actions)], expiresAt:this.now()+300000, generation};
@@ -70,8 +70,29 @@ export class ConsentService {
       }
       const encrypted=await completionStep('handoff_encrypt',()=>this.vault.seal(incoming,handoffKey));
       await completionStep('handoff_store',()=>tx.put(handoffKey,{...encrypted,expiresAt:pending.expiresAt}));
+      if((provider==='google'||provider==='cloudflare')&&incoming.code){
+        // A different Android tab can recover the most recent received return
+        // only by proving the same wallet and session that started Google OAuth.
+        const recoveryKey=prefix+provider+'-return:'+pending.sessionHash;
+        const recovery=await completionStep('handoff_encrypt',()=>this.vault.seal({state},recoveryKey));
+        await completionStep('handoff_store',()=>tx.put(recoveryKey,{...recovery,expiresAt:pending.expiresAt}));
+      }
       return {received:true};
     }));
+  }
+  async resumeGoogleHandoff(identity) {
+    return this.resumeProviderHandoff(identity,'google');
+  }
+  async resumeCloudflareHandoff(identity) {
+    return this.resumeProviderHandoff(identity,'cloudflare');
+  }
+  async resumeProviderHandoff({userId,sessionId},provider) {
+    if(provider!=='google'&&provider!=='cloudflare')throw Error('provider_not_configured');
+    const key=await this.namespace(userId)+provider+'-return:'+await this.session(sessionId);
+    const saved=await completionStep('handoff_read',()=>this.storage.get(key));
+    if(!saved||saved.expiresAt<=this.now())return {status:'missing'};
+    const {state}=await completionStep('handoff_decrypt',()=>this.vault.open(saved,key));
+    return this.finishHandoff({userId,sessionId,provider,state});
   }
   async handoffStatus({userId,sessionId,provider,state}) {
     const prefix=await this.namespace(userId),sessionHash=await this.session(sessionId);
@@ -355,7 +376,7 @@ export class ConsentService {
   async gateStatus({userId}) {
     const accounts=await this.list({userId});
     for(const record of accounts){
-      if(!['github','cloudflare'].includes(record.provider)||
+      if(!['github','cloudflare','google'].includes(record.provider)||
           record.status!=='connected'||record.expiresAt>this.now()+30000)continue;
       try { await this.refresh({userId,id:record.id}); }
       catch { /* A failed refresh remains visibly unverified. */ }

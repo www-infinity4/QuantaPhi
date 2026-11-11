@@ -2,6 +2,7 @@ const test=require('node:test'),assert=require('node:assert/strict');
 const fs=require('node:fs'),vm=require('node:vm'),crypto=require('node:crypto').webcrypto;
 
 async function fixture(){
+ const {readBubbleBits}=await import('../workers/unified-wallet/bubble-bit-credit.mjs');
  const accounts=[
   {id:'account-a',username:'alice',star_coins:7,pending_share_credits:0,share_count:0,quant:11,infinity:13,music:17},
   {id:'account-b',username:'bob',star_coins:19,pending_share_credits:0,share_count:0,quant:23,infinity:29,music:31}
@@ -29,9 +30,9 @@ async function fixture(){
   },
   async run(){assert.ok(sql.startsWith('INSERT OR IGNORE INTO unified_wallet_state'));assert.ok(accounts.some(a=>a.id===args[0]));return{meta:{changes:0}};}
  }}}}};
- const source=fs.readFileSync('workers/unified-wallet/worker.js','utf8').replace(/^import .*\n/,'').replace('export default','globalThis.worker =');
+ const source=fs.readFileSync('workers/unified-wallet/worker.js','utf8').replace(/^import .*\n/gm,'').replace('export default','globalThis.worker =');
  let keyFetches=0;
- const worker=vm.runInNewContext(source+';worker',{crypto,TextEncoder,TextDecoder,Request,Response,URL,Uint8Array,btoa,atob,AbortSignal,console,fetch:async()=>{keyFetches++;throw Error('Ordinary wallet routes must not request Access keys');}});
+ const worker=vm.runInNewContext(source+';worker',{readBubbleBits,crypto,TextEncoder,TextDecoder,Request,Response,URL,Uint8Array,btoa,atob,AbortSignal,console,fetch:async()=>{keyFetches++;throw Error('Ordinary wallet routes must not request Access keys');}});
  const env={DB:db,IDENTITY_DB:db};
  const request=(path,token)=>new Request('https://wallet.example.test'+path,{headers:{Origin:'https://quantaphi.org',...(token?{Authorization:'Bearer '+token}:{})}});
  return{accounts,tokens,reads,env,request,worker,keyFetches:()=>keyFetches};

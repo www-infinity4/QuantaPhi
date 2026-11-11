@@ -2,7 +2,7 @@
  * Browser-only display; never a tool/permission grant, hidden reasoning stream,
  * wallet operation, extra floating assistant, or independent agent executor.
  */
-import {newBitSession,applyBitObservation} from './bubbles-bit-session.mjs?v=20261101-bits1';
+import {newBitSession,applyBitObservation} from './bubbles-bit-session.mjs?v=20261104-credit1';
 export const BUBBLE_ROLES=Object.freeze([
  {id:'listen',label:'Listen',help:'Actual voice capture state from the Bubbles orb.'},
  {id:'think',label:'Think',help:'A response is being processed. Private model reasoning is not displayed.'},
@@ -84,7 +84,9 @@ export function mountBubbleIterations({launcher,panel,status,chatScroll,conversa
  if(typeof document==='undefined'||!launcher||!panel||!status||!chatScroll||!conversation)return false;
  if(panel.querySelector('.ba-iteration-bubbles'))return true;
  const create=(tag,cls,text)=>{const el=document.createElement(tag);if(cls)el.className=cls;if(text)el.textContent=text;return el};
- const box=create('section','ba-iteration-bubbles');box.setAttribute('aria-label','Bubbles iteration activity');
+ const box=create('details','ba-iteration-bubbles');box.setAttribute('aria-label','Bubbles iteration activity');
+ const summary=create('summary','ba-iteration-summary','Activity & execution receipts');
+ summary.setAttribute('aria-label','Expand execution receipts');
  const title=create('div','ba-iteration-heading');
  title.append(create('strong','','Bubbles · live iteration'),create('small','','One assistant · seven activity roles'));
  const buttons=create('div','ba-iteration-row');
@@ -105,16 +107,16 @@ export function mountBubbleIterations({launcher,panel,status,chatScroll,conversa
  const bitRecent=create('div','ba-bits-recent');
  bitPanel.append(bitHeading,bitCount,bitNote,bitRecent);
  // Keep activity in the thread's scroll budget, never in the height-limited composer.
- box.append(title,buttons,details,bitPanel);chatScroll.insertBefore(box,conversation.nextSibling);
+ box.append(summary,title,buttons,details,bitPanel);chatScroll.insertBefore(box,conversation.nextSibling);
  function render(){
   for(const role of BUBBLE_ROLES){
    const button=nodes.get(role.id),item=state[role.id];
    button.dataset.status=item.status;button.setAttribute('aria-pressed',String(role.id===selected));
    button.querySelector('.ba-iteration-state').textContent=labels[item.status];
   }
-  bitCount.textContent=bitsState.candidateCount+' candidate'+(bitsState.candidateCount===1?'':'s')+' · 0 credited · 0 spendable';
+  bitCount.textContent=bitsState.candidateCount+' receipt'+(bitsState.candidateCount===1?'':'s')+' · '+bitsState.creditedBits+' Bubble Bits credited';
   bitNote.textContent=bitsState.contextReady
-    ?'Owner context checked. Candidate receipts are not wallet credits.'
+    ?'Pending receipts await wallet confirmation. Credited Bits are confirmed by the server.'
     :'Owner context not verified this turn. Later actions will not count until checked.';
   bitRecent.replaceChildren();
   for(const item of bitsState.recent.slice(0,3))bitRecent.append(create('span','ba-bits-proof',item.tool+' · receipt …'+item.receiptTail));
@@ -126,11 +128,7 @@ export function mountBubbleIterations({launcher,panel,status,chatScroll,conversa
  const observer=new MutationObserver(()=>update({type:'orb',state:launcher.dataset.state}));
  observer.observe(launcher,{attributes:true,attributeFilter:['data-state']});
  window.addEventListener('bubbles:iteration',event=>update(event.detail));
- window.addEventListener('quantaphi:robot-directions',event=>{
-  const jobs=Array.isArray(event.detail?.jobs)?event.detail.jobs:[];
-  const repo=jobs.find(x=>REPO.test(x.repository||''))?.repository;
-  if(repo)update({type:'job',repository:repo,status:'queued'});
- });
+ // Job status is forwarded only for a ticket confirmed in the current conversation.
  update({type:'orb',state:launcher.dataset.state});
  return true;
 }

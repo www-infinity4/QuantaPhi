@@ -15,6 +15,7 @@ const directGithubUrl='data:text/javascript;base64,'+Buffer.from(directGithubSou
 const queueUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/queue-order.mjs',import.meta.url))).toString('base64');
 const recoveryUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/deferred-recovery.mjs',import.meta.url))).toString('base64');
 const selectorUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/ticket-selector.mjs',import.meta.url))).toString('base64');
+const runnerIdleUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/runner-claim-idle.mjs',import.meta.url))).toString('base64');
 const ticketStatusUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/ticket-status.mjs',import.meta.url))).toString('base64');
 const authUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/runner-auth.mjs',import.meta.url))).toString('base64');
 const previewUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/preview-contract.mjs',import.meta.url))).toString('base64');
@@ -35,10 +36,12 @@ const agentSkillsUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFil
 const runnerRequestSource=(await fs.readFile(new URL('../workers/infinity-brain-clock/runner-request.mjs',import.meta.url),'utf8')).replace('./alarm-retry.mjs',alarmUrl).replace('./ticket-selector.mjs',selectorUrl);
 const runnerRequestUrl='data:text/javascript;base64,'+Buffer.from(runnerRequestSource).toString('base64');
 const colorCoreUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/color-core.mjs',import.meta.url))).toString('base64');
+const colorHandoffSource=(await fs.readFile(new URL('../workers/infinity-brain-clock/color-handoff.mjs',import.meta.url),'utf8')).replace('./color-core.mjs',colorCoreUrl);
+const colorHandoffUrl='data:text/javascript;base64,'+Buffer.from(colorHandoffSource).toString('base64');
 const assignedJobScopeUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/assigned-job-scope.mjs',import.meta.url))).toString('base64');
 const ownerAuditDraftUrl='data:text/javascript;base64,'+Buffer.from((await fs.readFile(new URL('../workers/infinity-brain-clock/owner-audit-draft.mjs',import.meta.url),'utf8')).replace('./conversation-work-audit.mjs',new URL('../workers/infinity-brain-clock/conversation-work-audit.mjs',import.meta.url).href)).toString('base64');
-const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./continuity-snapshot.mjs",new URL("../workers/infinity-brain-clock/continuity-snapshot.mjs",import.meta.url).href).replace("./color-core.mjs",colorCoreUrl).replace("./assigned-job-scope.mjs",assignedJobScopeUrl).replace("./technical-handoff.mjs",handoffUrl).replace('./source-review.mjs',sourceReviewUrl).replace("./phone-tool.mjs",phoneUrl).replace("./conversation-memory.mjs",conversationUrl).replace('./owner-audit-draft.mjs',ownerAuditDraftUrl).replace("./red-sectors.mjs",redUrl).replace("./alarm-retry.mjs",alarmUrl).replace("./owner-task-clock.mjs",clockUrl).replace("./autopilot-triage.mjs",autopilotUrl).replace("./agent-skills.mjs",agentSkillsUrl).replace("./runner-request.mjs",runnerRequestUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./ticket-selector.mjs',selectorUrl).replace('./deferred-recovery.mjs',recoveryUrl).replace('./ticket-status.mjs',ticketStatusUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
-const {default:brainWorker,BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source.replace('./quick-card-browser.mjs',new URL('../workers/infinity-brain-clock/quick-card-browser.mjs',import.meta.url).href).replace('./direct-github.mjs',directGithubUrl).replace('./github-credential.mjs',credentialUrl).replace('./cloudflare-token-broker.mjs',cloudflareBrokerUrl).replace('./cloudflare-oauth-bootstrap.mjs',cloudflareBootstrapUrl).replace('./merge-receipt.mjs',mergeUrl)).toString('base64'));
+const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./continuity-snapshot.mjs",new URL("../workers/infinity-brain-clock/continuity-snapshot.mjs",import.meta.url).href).replace("./color-core.mjs",colorCoreUrl).replace("./color-handoff.mjs",colorHandoffUrl).replace("./assigned-job-scope.mjs",assignedJobScopeUrl).replace("./technical-handoff.mjs",handoffUrl).replace('./source-review.mjs',sourceReviewUrl).replace("./phone-tool.mjs",phoneUrl).replace("./conversation-memory.mjs",conversationUrl).replace('./owner-audit-draft.mjs',ownerAuditDraftUrl).replace("./red-sectors.mjs",redUrl).replace("./alarm-retry.mjs",alarmUrl).replace("./owner-task-clock.mjs",clockUrl).replace("./autopilot-triage.mjs",autopilotUrl).replace("./agent-skills.mjs",agentSkillsUrl).replace("./runner-request.mjs",runnerRequestUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./ticket-selector.mjs',selectorUrl).replace('./runner-candidate-page.mjs',new URL('../workers/infinity-brain-clock/runner-candidate-page.mjs',import.meta.url).href).replace('./runner-claim-idle.mjs',runnerIdleUrl).replace('./deferred-recovery.mjs',recoveryUrl).replace('./ticket-status.mjs',ticketStatusUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
+const {default:brainWorker,BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source.replace('./runner-progress.mjs',new URL('../workers/infinity-brain-clock/runner-progress.mjs',import.meta.url).href).replace('./quick-card-browser.mjs',new URL('../workers/infinity-brain-clock/quick-card-browser.mjs',import.meta.url).href).replace('./direct-github.mjs',directGithubUrl).replace('./github-credential.mjs',credentialUrl).replace('./cloudflare-token-broker.mjs',cloudflareBrokerUrl).replace('./cloudflare-oauth-bootstrap.mjs',cloudflareBootstrapUrl).replace('./merge-receipt.mjs',mergeUrl)).toString('base64'));
 test('quick-card browser HTTP route denies guests and wrong origins before forwarding',async()=>{
  let forwarded=0;
  const owner='quick-card-synthetic-owner',hash=Buffer.from(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(owner))).toString('hex');
@@ -135,7 +138,7 @@ test('repository engine claims any owner repository while honoring leases and jo
   {id:'outside',repository:'other/Project401',instructions:'Build',status:'queued'}
  ]};
  const storage={get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)};
- const clock=new BrainClock({storage},{WORK_DB:{prepare:()=>({bind(){return this},all:async()=>({results:[{id:'ticket',request:'Build my project',context_json:JSON.stringify(context)}]}),run:async()=>({meta:{changes:1}})})}});
+ const clock=new BrainClock({storage},{WRITER_OWNER_HASH:'synthetic-owner',WORK_DB:{prepare:()=>({bind(){return this},all:async()=>({results:[{id:'ticket',request:'Build my project',context_json:JSON.stringify(context)}]}),run:async()=>({meta:{changes:1}})})}});
  const request=()=>new Request('https://clock/runner/claim',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook'})});
  const first=await (await clock.runner(request())).json();assert.equal(first.lease.jobId,'base');assert.equal(first.lease.job.ownerRequest,'Build my project');
  const second=await (await clock.runner(request())).json();assert.equal(second.lease,null);
@@ -289,7 +292,7 @@ test('the owner ticket router is authentication gated and the browser never gene
 test('untouched queued work advances ahead of an earlier blocked job, and owner selection is honored',async()=>{
  const memory=new Map(),jobs=[{id:'TASK-1',repository:'www-infinity4/QuantaPhi',instructions:'Old repair',status:'blocked',dependencies:[]},{id:'TASK-2',repository:'www-infinity4/QuantaPhi',instructions:'New repair',status:'queued',dependencies:[]}];
  const storage={get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v),delete:async k=>memory.delete(k)};
- const env={WORK_DB:{prepare:()=>({bind(){return this},all:async()=>({results:[{id:'ticket',request:'Fix my cards',context_json:JSON.stringify({color_jobs:jobs})}]}),run:async()=>({meta:{changes:1}})})}};
+ const env={WRITER_OWNER_HASH:'synthetic-owner',WORK_DB:{prepare:()=>({bind(){return this},all:async()=>({results:[{id:'ticket',request:'Fix my cards',context_json:JSON.stringify({color_jobs:jobs})}]}),run:async()=>({meta:{changes:1}})})}};
  const clock=new BrainClock({storage},env),request=()=>new Request('https://clock/runner/claim',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook'})});
  const first=await(await clock.runner(request())).json();assert.equal(first.lease.jobId,'TASK-2');
  memory.clear();memory.set('requested-next-job',{ticketId:'ticket',jobId:'TASK-1'});const next=await(await clock.runner(request())).json();assert.equal(next.lease.jobId,'TASK-1');assert.equal(memory.has('requested-next-job'),false);
@@ -386,7 +389,7 @@ test('claim skips a committed receipt even when D1 still says queued',async()=>{
  const memory=new Map(),repo='www-infinity4/QuantaPhi',job={id:'TASK-1',repository:repo,instructions:'Done source',status:'queued'};
  const revision=Buffer.from(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:repo})))).toString('hex');
  memory.set('writer:ticket:TASK-1:'+revision,{status:'committed_unverified',commitSha:'a'.repeat(40),leaseUntil:0,retryAt:0});
- const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{WORK_DB:{prepare:()=>({bind(){return this},all:async()=>({results:[{id:'ticket',context_json:JSON.stringify({color_jobs:[job]})}]})})}});
+ const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{WRITER_OWNER_HASH:'synthetic-owner',WORK_DB:{prepare:()=>({bind(){return this},all:async()=>({results:[{id:'ticket',context_json:JSON.stringify({color_jobs:[job]})}]})})}});
  const result=await (await clock.runner(new Request('https://clock/runner/claim',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook'})}))).json();
  assert.equal(result.lease,null);
 });
@@ -703,7 +706,7 @@ test('signed runner claim defers stale Pink verification when a linked Green rep
  const db={prepare:()=>({bind(){return this},all:async()=>({results:[ticket]}),
   run:async()=>{updates++;return{meta:{changes:1}}}})};
  const data=new Map();
- const clock=new BrainClock({storage:{get:async k=>data.get(k),put:async(k,v)=>data.set(k,v)}},{WORK_DB:db});
+ const clock=new BrainClock({storage:{get:async k=>data.get(k),put:async(k,v)=>data.set(k,v)}},{WRITER_OWNER_HASH:'synthetic-owner',WORK_DB:db});
  const result=await (await clock.runner(new Request('https://clock/runner/claim',{
   method:'POST',body:JSON.stringify({runId:'567',runnerRepository:'www-infinity4/Moltnook'})
  }))).json();
@@ -785,4 +788,193 @@ test('Continuity route preserves owner auth, origin guards and revoked-session d
   assert.equal((await brainWorker.fetch(invalid,env)).status,status);assert.equal(reads,1);
  }
  assert.equal(writes,0);assert.ok(clockPaths.every(p=>p.endsWith('/owner/session-check')));
+});
+
+
+test('signed Bubbles continuation lists older ready work ahead of blocked backlog without widening owner scope',async()=>{
+ const queries=[],ownerHash='a'.repeat(64);
+ const rows=Array.from({length:101},(_,i)=>({
+  id:'IW-20261010-'+String(i+1).padStart(8,'0'),title:'Synthetic owner work',
+  repository:'www-infinity4/QuantaPhi',status:i<3?'ready':'blocked',
+  context_json:JSON.stringify({kind:'robot-directions',color_jobs:[{id:'TASK-1',repository:'www-infinity4/QuantaPhi',status:'queued',instructions:'Restore saved owner work'}]}),
+  created_at:1791700000000,updated_at:1791700000000-i
+ }));
+ const db={prepare:sql=>({bind(...params){queries.push({sql,params});return this;},all:async()=>({results:rows})})};
+ const env={WORK_DB:db,WRITER_OWNER_HASH:ownerHash};
+ const r=await ownerTickets(env,'/work/tickets/list',{continuation:true});
+ assert.equal(r.status,200);
+ assert.equal(r.result.continuationScope,'owner_robot_directions');
+ assert.equal(r.result.truncated,true);
+ assert.equal(r.result.tickets.length,100);
+ assert.deepEqual(queries[0].params,[ownerHash]);
+ assert.match(queries[0].sql,/WHERE owner_hash=\?/);
+ assert.match(queries[0].sql,/json_extract\(context_json,'\$\.kind'\)='robot-directions'/);
+ assert.match(queries[0].sql,/CASE status WHEN 'ready' THEN 0 WHEN 'working' THEN 1 ELSE 2 END/);
+ assert.match(queries[0].sql,/LIMIT 101/);
+ const ordinary=await ownerTickets(env,'/work/tickets/list',{});
+ assert.equal(ordinary.result.continuationScope,undefined);
+ assert.doesNotMatch(queries[1].sql,/CASE status/);
+ assert.deepEqual(queries[1].params,[ownerHash]);
+ assert.equal(JSON.stringify(r).includes('Bearer'),false);
+});
+
+test('the owner progress endpoint serves only the selected ticket and originating conversation',async()=>{
+ const id='IW-20261104-ABCD1234',threadId='chat_'+'a'.repeat(32),token='fixture-owner-token';
+ const hash=Buffer.from(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(token))).toString('hex');
+ const row={id,repository:'www-infinity4/QuantaPhi',status:'working',context_json:JSON.stringify({
+  iteration_thread:threadId,card_workspace:{private:'excluded'},color_jobs:[{
+   id:'TASK-1',repository:'www-infinity4/QuantaPhi',status:'working',instructions:'excluded job instructions'}]})};
+ let readCount=0;
+ const env={WRITER_OWNER_HASH:hash,WORK_DB:{prepare(sql){
+  assert.match(sql,/WHERE id=\? AND owner_hash=\?/);
+  return {bind(ticketId,owner){return {async first(){readCount++;return ticketId===id&&owner===hash?row:null;}}}};
+ }}};
+ const read=(thread,auth=token)=>brainWorker.fetch(new Request('https://brain.test/work/tickets/list',{
+  method:'POST',headers:{Authorization:'Bearer '+auth,'Content-Type':'application/json',Origin:'https://quantaphi.org'},
+  body:JSON.stringify({iteration:{ticketId:id,threadId:thread}})
+ }),env);
+ assert.equal((await read(threadId,'wrong')).status,404);
+ assert.equal(readCount,0);
+ assert.equal((await read('chat_'+'b'.repeat(32))).status,404);
+ const response=await read(threadId);
+ assert.equal(response.status,200);
+ assert.equal(response.headers.get('Cache-Control'),'no-store');
+ const text=await response.text();
+ assert.deepEqual(JSON.parse(text).tickets.map(ticket=>ticket.id),[id]);
+ assert.doesNotMatch(text,/excluded/);
+});
+
+test('the authenticated runner path persists in-flight steps only for its current lease and revision',async()=>{
+ const ticketId='IW-20261104-ABCD1234',repository='www-infinity4/QuantaPhi';
+ const job={id:'TASK-1',repository,instructions:'Repair the session page',acceptance:['Run the focused check'],status:'working',
+  progress:{runUrl:'https://github.com/www-infinity4/Moltnook/actions/runs/42'}};
+ const revision=Buffer.from(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify({
+  instructions:job.instructions,acceptance:job.acceptance,repository})))).toString('hex');
+ let context=JSON.stringify({color_jobs:[job]}),writes=0;
+ const owner='synthetic-owner';
+ const env={WRITER_OWNER_HASH:owner,WORK_DB:{prepare(sql){return {bind(...args){
+  if(sql.startsWith('SELECT'))return {first:async()=>{
+   assert.deepEqual(args,[ticketId,owner]);return {context_json:context};
+  }};
+  return {run:async()=>{
+   assert.deepEqual(args.slice(2),[ticketId,owner,context]);
+   writes++;context=args[0];return {meta:{changes:1}};
+  }};
+ }}}}};
+ const lease={key:'key',leaseId:'current',runId:'42',runAttempt:2,engine:true,leaseUntil:Date.now()+60000,
+  ticketId,jobId:job.id,repository,revision,job};
+ const records=new Map([['key',lease]]);
+ const clock=new BrainClock({storage:{get:async key=>records.get(key),put:async(key,value)=>records.set(key,value)}},env);
+ const send=(phase,attempt,overrides={})=>clock.runner(new Request('https://clock/runner/event',{
+  method:'POST',body:JSON.stringify({key:lease.key,leaseId:lease.leaseId,runId:lease.runId,runAttempt:'2',
+   runnerRepository:'www-infinity4/Moltnook',agent:'blueberry',step:{phase,attempt},...overrides})
+ }));
+ assert.equal((await send('discovery_started',0,{runAttempt:'1'})).status,409);
+ assert.equal((await send('discovery_started',0,{leaseId:'stale'})).status,409);
+ assert.equal(writes,0);
+ assert.equal((await send('discovery_started',0)).status,200);
+ await send('discovery_started',0);
+ await send('planning_started',0);
+ assert.equal(writes,2);
+ const saved=JSON.parse(context).color_jobs[0];
+ assert.equal(saved.status,'working');
+ assert.deepEqual(saved.progress.runnerSteps.map(step=>step.phase),['discovery_started','planning_started']);
+ saved.instructions='A different revision';context=JSON.stringify({color_jobs:[saved]});
+ await send('source_read',0);
+ assert.equal(writes,2);
+});
+
+test('authenticated repository plan recovers from one malformed model JSON response',async()=>{
+ const memory=new Map([['key',{key:'key',leaseId:'lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,job:{instructions:'Repair Coin World source card',acceptance:['Real stories']}}]]);
+ let modelCalls=0;
+ const good=JSON.stringify({summary:'Inspect verified source',requirements:['Real stories'],subtasks:[],files:['premium-source-cards.mjs'],acceptance:['Working article previews'],blockers:[],notes:[]});
+ const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{WRITER_AI:{run:async()=>({response:++modelCalls===1?"{'summary':'invalid JSON5'}":good})}});
+ const result=await clock.runner(new Request('https://clock/runner/plan',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook',key:'key',leaseId:'lease',evidence:{runtime:{repositoryCloned:true}}})}));
+ assert.equal((await result.json()).summary,'Inspect verified source');
+ assert.equal(modelCalls,2,'Retry malformed model output only once');
+});
+test('repository plan fails closed after repeated malformed model JSON',async()=>{
+ const memory=new Map([['key',{key:'key',leaseId:'lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,job:{instructions:'Inspect source'}}]]);
+ let modelCalls=0;
+ const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{WRITER_AI:{run:async()=>{modelCalls++;return {response:"{'invalid':'output'}"}}}});
+ await assert.rejects(clock.runner(new Request('https://clock/runner/plan',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook',key:'key',leaseId:'lease',evidence:{}})})),/engine_model_json_invalid/);
+ assert.equal(modelCalls,2,'Do not run open-ended retries');
+});
+
+
+test('signed Brain plans bounded color advice but never treats it as a provider-backed write',async()=>{
+ const job={id:'TASK-4',instructions:'Research a licensed provider feed and import approved records\n\nExecution plan\n- generated detail not owner scope',acceptance:['Verify source before ingest']};
+ const lease={key:'key',leaseId:'lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,repository:'www-infinity4/QuantaPhi',jobId:'TASK-4',ticketId:'TICKET',job};
+ const memory=new Map([['key',lease]]),seen=[];
+ const ai={run:async(model,input)=>{
+  const system=input.messages?.[0]?.content||'',payload=JSON.parse(input.messages[1].content);
+  if(/the (red|orange|blue) color role/i.test(system)){
+   const color=/the (red|orange|blue) color role/i.exec(system)[1];seen.push(color);
+   assert.doesNotMatch(payload.task,/generated detail/);
+   return {response:JSON.stringify({finding:'Advisory only '+color,nextAction:'Inspect pinned evidence',blockers:[],toolRequests:[]})};
+  }
+  seen.push('plan');
+  assert.equal(payload.evidence.roleHandoffStatus,'model_inference_completed');
+  assert.deepEqual(payload.evidence.roleHandoffs.map(x=>x.role),['red','orange','blue']);
+  assert.equal(payload.evidence.roleHandoffs.every(x=>x.authorizedOperationsPerformed===false),true);
+  return {response:JSON.stringify({summary:'Review provider scope',files:[],subtasks:[],blockers:[]})};
+ }};
+ const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{WRITER_AI:ai});
+ const res=await clock.runner(new Request('https://clock/runner/plan',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook',key:'key',leaseId:'lease',evidence:{pinnedSourceSha:'a'.repeat(40)}})}));
+ assert.equal(res.status,200);
+ const body=await res.json();
+ assert.equal(body.roleHandoffStatus,'model_inference_completed');
+ assert.equal(body.authorizedColorOperationsPerformed,false);
+ assert.deepEqual(seen,['red','orange','blue','plan']);
+});
+test('failed optional color inference cannot claim work or disable the existing scoped planner',async()=>{
+ const job={id:'TASK-5',instructions:'Design a universal renderer architecture',acceptance:['Bounded review']};
+ const lease={key:'key',leaseId:'lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,repository:'www-infinity4/QuantaPhi',jobId:'TASK-5',ticketId:'TICKET',job};
+ const memory=new Map([['key',lease]]);let calls=0;
+ const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{WRITER_AI:{run:async(model,options)=>{
+  calls++;
+  if(/the red color role/i.test(options.messages?.[0]?.content||''))throw Error('color-model-unavailable');
+  const payload=JSON.parse(options.messages[1].content);
+  assert.equal(payload.evidence.roleHandoffStatus,'model_inference_blocked');
+  assert.deepEqual(payload.evidence.roleHandoffs,[]);
+  return {response:JSON.stringify({summary:'Inspect existing source',files:[],subtasks:[],blockers:[]})};
+ }}});
+ const res=await clock.runner(new Request('https://clock/runner/plan',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook',key:'key',leaseId:'lease',evidence:{}})}));
+ assert.equal(res.status,200);
+ const body=await res.json();
+ assert.equal(body.roleHandoffStatus,'model_inference_blocked');
+ assert.deepEqual(body.roleHandoffs,[]);
+ assert.equal(body.authorizedColorOperationsPerformed,false);
+ assert.equal(calls,2);
+});
+
+
+test('signed runner-supplied color findings are reused without duplicate model inference',async()=>{
+ const job={id:'TASK-6',instructions:'Research the approved dataset and import verified source records',acceptance:['Review before any write']};
+ const lease={key:'key',leaseId:'lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,
+  repository:'www-infinity4/QuantaPhi',jobId:'TASK-6',ticketId:'TICKET',job};
+ const memory=new Map([['key',lease]]);
+ const findings={red:{finding:'Pinned source',nextAction:'Verify',blockers:[],requestedAppendages:[]},
+  orange:{finding:'Destination chosen',nextAction:'Apply source policy',blockers:[],requestedAppendages:[]}};
+ let aiCalls=0;
+ const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{
+  WRITER_AI:{run:async(model,options)=>{
+   aiCalls++;
+   assert.doesNotMatch(options.messages[0].content,/the (red|orange|blue) color role/i);
+   const payload=JSON.parse(options.messages[1].content);
+   assert.deepEqual(payload.evidence.colorFindings,findings);
+   assert.deepEqual(payload.evidence.roleHandoffs,[]);
+   assert.equal(payload.evidence.roleHandoffStatus,'runner_route_supplied');
+   return {response:JSON.stringify({summary:'Use runner source and existing scope',files:[],subtasks:[],blockers:[]})};
+  }}
+ });
+ const res=await clock.runner(new Request('https://clock/runner/plan',{method:'POST',
+  body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook',key:'key',leaseId:'lease',
+   evidence:{colorFindings:findings,runtime:{baseSha:'a'.repeat(40)}}})}));
+ assert.equal(res.status,200);
+ const result=await res.json();
+ assert.equal(result.roleHandoffStatus,'runner_route_supplied');
+ assert.equal(result.authorizedColorOperationsPerformed,false);
+ assert.deepEqual(result.roleHandoffs,[]);
+ assert.equal(aiCalls,1);
 });

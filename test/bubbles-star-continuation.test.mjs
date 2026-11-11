@@ -7,14 +7,14 @@ const ticket=(id,repository,job,status='ready',updated=2000)=>({
  context:{kind:'robot-directions',color_jobs:[{id:'TASK-1',repository,instructions:'Repair the approved existing app',dependencies:[],status:job.status,...job}]}
 });
 const a='www-infinity4/QuantaPhi',b='www-infinity4/RecordB';
-test('literal star only, not wildcard text, unlocks continuation',()=>{
- assert.equal(isStarContinuation('*'),true);
- assert.equal(isStarContinuation(' * '),true);
- for(const invalid of ['**','start *','* fix it','','  ','continue'])assert.equal(isStarContinuation(invalid),false);
+test('explicit star or short continue request resumes saved owner work, never arbitrary content',()=>{
+ for(const command of ['*',' * ','Continue','continue please','Continue engineering','continue work','Resume work','resume engineering please.'])assert.equal(isStarContinuation(command),true,command);
+ for(const invalid of ['**','start *','* fix it','','  ','continue shopping','continue reading #bubbles','continue the movie','continue and merge everything','remember to continue'])assert.equal(isStarContinuation(invalid),false,invalid);
  const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
  const send=ui.slice(ui.indexOf('async function sendMessage('),ui.indexOf('input.addEventListener(\'keydown\''));
- assert.match(send,/if\(spoken==='\*'\)/);
+ assert.ok(send.includes("if(spoken==='*'||"),'short natural-language continuation must use the same owner-scoped dispatch path');
  assert.match(send,/module\.continueSavedWork/);
+ assert.match(send,/bubbles-star-continuation\.mjs\?v=20261104-owner-continue2/,'new owner continuation module must not reuse an earlier cached implementation');
  assert.match(send,/ownerHeaders:verifiedOwnerHeaders/);
  assert.match(send,/nativeSpeechReply=spokenResult/);
  assert.match(send,/Runner requested\./);
@@ -56,6 +56,7 @@ test('up to eight independent project slots, exactly one eligible runner request
  assert.equal(result.selected.slots.length,8);
  assert.equal(result.selected.target.repository,'www-infinity4/Repo9');
  assert.deepEqual(requests.map(r=>r.path),['/owner/conversation','/work/tickets/list','/work/run-next']);
+ assert.deepEqual(requests[1].body,{continuation:true},'owner continuation must request prioritized signed queue, not generic newest-100 history');
  assert.equal(requests[2].body.ticketId,'IW-20261025-00000010');
  assert.equal(requests[2].body.jobId,'TASK-1');
  assert.equal(requests[2].authorization,'Bearer owner-test');
@@ -112,4 +113,17 @@ test('a signed runner ACK is the only event that may mark a continuation queued'
  assert.equal(continuationActivity({...result,selected:{target:{...result.selected.target,repository:'unknown/Repo'}}}),null);
  const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
  assert.match(ui,/module\.continuationActivity\(result\)/);
+});
+
+
+test('continuation makes incomplete owner queue coverage explicit instead of claiming all jobs were scanned',async()=>{
+ const fetcher=async url=>{
+  if(url.endsWith('/owner/conversation'))return {ok:true,json:async()=>({ok:true,candidates:[]})};
+  if(url.endsWith('/work/tickets/list'))return {ok:true,json:async()=>({ok:true,continuationScope:'owner_robot_directions',truncated:true,tickets:[]})};
+  throw Error('No dispatch expected for empty page');
+ };
+ const result=await continueSavedWork({fetcher,ownerHeaders:async()=>({Authorization:'Bearer synthetic-owner'}),base:'https://brain.example.test'});
+ assert.equal(result.selected.inventoryTruncated,true);
+ assert.match(continuationReply(result),/partial queue view/i);
+ assert.equal(result.dispatch,null);
 });

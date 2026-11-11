@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f8f3fc">
+  <meta name="description" content="Gary and family living room with TV, Westerns, Iowa weather, radio, Bubbles and discovery.">
+  <title>Gary &amp; Family · TV, Radio, Weather &amp; Bubbles | QuantaPhi</title>
+  <script>
+    // Early mode selection prevents a flash of birthday art after the cutoff.
+    document.documentElement.dataset.familyMode =
+      Date.now()<Date.UTC(2026,10,6,6)?'birthday':'octaves';
+  </script>
+  <link rel="stylesheet" href="/gary/style.css">
+  <link rel="stylesheet" href="/gary/lounge.css">
+  <link rel="stylesheet" href="/gary/octaves.css">
+  <script type="module" src="/gary/presentation-init.mjs"></script>
+</head>
+<body>
+  <div class="topline"><span>★ A SPECIAL BIRTHDAY FROM KRIS ★</span></div>
+  <header class="hero" id="gary-birthday-hero" aria-labelledby="greeting">
+    <div class="hero-inner">
+      <p class="eyebrow">The best seat in the house is yours, Dad.</p>
+      <h1 id="greeting">Happy Birthday, Gary!</h1>
+      <p class="dedication">Happy birthday, Dad. Here's a little place of your own to enjoy a good Western, put your feet up, and talk with Bubbles whenever you feel like it. Love, Kris.</p>
+      <a class="go" href="#watch">▶ Watch a Western</a>
+    </div>
+    <div class="sunset" aria-hidden="true"><span class="sun"></span><span class="ridge ridge-back"></span><span class="ridge ridge-front"></span></div>
+  </header>
+  <header class="hero family-evergreen-hero" id="gary-family-hero" aria-labelledby="family-hero-title">
+    <div class="hero-inner">
+      <p class="eyebrow">INFINITY · ORACLE OCTAVES · FAMILY LIVING ROOM</p>
+      <h1 id="family-hero-title">Gary &amp; Family</h1>
+      <p class="dedication">Welcome home. Your favorite TV, Westerns, Iowa weather, music, search and Bubbles assistant are all here.</p>
+      <a class="go" href="#family-lounge">Open the living room</a>
+    </div>
+  </header>
+  <main>
+
+    <section id="family-lounge" class="family-shell" aria-labelledby="family-title">
+      <p class="eyebrow">GARY & FAMILY · LIVING ROOM</p>
+      <h2 id="family-title">One easy remote. Real TV, radio, weather and discovery.</h2>
+      <p class="family-note">Choose something below or ask the remote. Only official viewing sources are offered, and restricted streaming services keep their own player and account sign-in.</p>
+      <section class="family-spotlight" aria-label="Featured films, news and music">
+        <article class="family-spotlight-film">
+          <img class="family-spotlight-poster" src="https://archive.org/services/img/BlueSteel" width="480" height="360"
+               alt="Original Internet Archive artwork for the John Wayne Western Blue Steel" loading="eager" fetchpriority="high">
+          <div class="family-spotlight-shade">
+            <p class="family-spotlight-kicker">INFINITY THEATER · CLASSIC WESTERNS</p>
+            <h3>There's a Western waiting.</h3>
+            <p>John Wayne in <em>Blue Steel</em> (1934). A real public-domain film, ready in the family player.</p>
+            <a class="family-spotlight-cta" href="#watch">▶ Choose your Western</a>
+          </div>
+        </article>
+        <div class="family-spotlight-side">
+          <article class="family-spotlight-second">
+            <img src="https://archive.org/services/img/The_Star_Packer" width="320" height="220"
+                 alt="Original Internet Archive artwork for The Star Packer (1934)" loading="lazy">
+            <div>
+              <p class="family-spotlight-kicker">ANOTHER CLASSIC</p>
+              <h3>The Star Packer</h3>
+              <p>Explore a second John Wayne Western from the original archive.</p>
+              <a href="#watch">View movies</a>
+            </div>
+          </article>
+          <article class="family-spotlight-radio">
+            <div class="family-vinyl" aria-hidden="true"><span></span></div>
+            <div>
+              <p class="family-spotlight-kicker">INFINITY RADIO</p>
+              <h3>Music in one tap</h3>
+              <p>Play the verified radio catalog without leaving this page.</p>
+              <a href="#family-radio-heading">Listen here</a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <form id="family-search-form" class="family-search">
+        <label for="family-search-input">Search TV, restaurants, weather, music or anything</label>
+        <div class="family-search-row">
+          <input id="family-search-input" type="search" maxlength="150" autocomplete="off" placeholder="Try: Hardee's deals, CNN, Netflix, The Chicks">
+          <button type="submit">Search / Show</button>
+          <button id="family-voice" type="button">🎤 Talk to TV</button>
+        </div>
+        <p id="family-search-status" class="family-status" role="status" aria-live="polite">Voice listens to one command only after you tap the microphone button, where supported.</p>
+      </form>
+      <div class="family-remote" aria-labelledby="family-tv-heading">
+        <div class="family-head"><h3 id="family-tv-heading">TV remote</h3><button type="button" id="family-cast" aria-expanded="false" aria-controls="family-cast-panel">Cast to TV</button></div>
+        <section id="family-cast-panel" class="family-cast-panel" aria-labelledby="family-cast-title" hidden>
+          <h4 id="family-cast-title">Connect this page to your TV</h4>
+          <p id="family-cast-status" role="status" aria-live="polite">A browser cannot open Android's system screen-mirroring picker directly. Google Cast normally needs the phone and TV on the same Wi-Fi network.</p>
+          <ol id="family-cast-steps">
+            <li>Connect the phone and a Cast-enabled TV/Chromecast to the <strong>same Wi-Fi</strong>. Mobile data alone normally cannot discover it.</li>
+            <li>On Android, swipe down twice and tap <strong>Screen Cast / Cast / Smart View</strong> (or find screen casting in Google Home).</li>
+            <li>Select the television and approve the connection. Then return to this page to watch the cards on the TV.</li>
+            <li>For Netflix or paid channels, use the official provider's Cast button, if supported.</li>
+          </ol>
+          <div class="family-cast-actions">
+            <button id="family-cast-fullscreen" type="button">Fullscreen on this device</button>
+            <button id="family-cast-close" type="button">Close instructions</button>
+            <a href="https://support.google.com/chromecast/answer/3006709" target="_blank" rel="noopener noreferrer">Google Cast help</a>
+          </div>
+        </section>
+        <div id="family-channel-buttons" class="family-channel-buttons" aria-label="Available channels and official players"></div>
+        <div id="family-channel-detail" class="family-channel-detail" aria-live="polite">Western Movies are ready in the player below. Choose a new channel above.</div>
+        <p class="family-fine">An “Open provider” button goes to the broadcaster’s authorized player. Netflix, CNN and other restricted apps cannot silently play or cast in a different website. Use Android Screen Cast or the provider’s own Cast control for your TV.</p>
+      </div>
+      <div class="family-sections">
+        <section class="family-weather" aria-labelledby="family-weather-heading">
+          <div class="family-head"><h3 id="family-weather-heading">Iowa · 7-day weather</h3><button type="button" id="family-weather-refresh">↻ Refresh</button></div>
+          <label for="family-city">Iowa city</label>
+          <select id="family-city"><option value="ottumwa">Ottumwa</option><option value="oskaloosa">Oskaloosa</option><option value="desmoines">Des Moines</option><option value="iowacity">Iowa City</option></select>
+          <p id="family-weather-status" class="family-status" aria-live="polite">Checking National Weather Service forecast…</p>
+          <div id="family-forecast" class="family-forecast"></div>
+          <p class="family-fine"><a href="https://www.weather.gov/" target="_blank" rel="noopener noreferrer">Source: NOAA National Weather Service</a>. No invented temperatures.</p>
+        </section>
+        <section class="family-radio" aria-labelledby="family-radio-heading">
+          <h3 id="family-radio-heading">One-button music</h3>
+          <div class="family-radio-buttons">
+            <button type="button" id="family-radio-play">▶ Infinity Radio</button>
+            <button type="button" id="family-radio-next">Next song</button>
+            <button type="button" id="family-radio-stop">■ Stop</button>
+          </div>
+          <p id="family-radio-status" class="family-status" aria-live="polite">Tap Infinity Radio to start; no autoplay.</p>
+          <div class="family-music-links"><a href="/infinity-radio/">Full Infinity Radio</a><a href="https://somafm.com/listen/" target="_blank" rel="noopener noreferrer">SomaFM · official music channels</a></div>
+        </section>
+      </div>
+      <section class="family-discovery" aria-labelledby="family-discovery-heading">
+        <div class="family-head"><h3 id="family-discovery-heading">Discovery & offers</h3><div class="family-rail-buttons"><button id="family-prev" type="button" aria-label="Previous offer">‹</button><button id="family-pause" type="button" aria-pressed="false">Pause</button><button id="family-next" type="button" aria-label="Next offer">›</button></div></div>
+        <p class="family-fine">Official-source recommendations, <strong>not paid advertisements</strong>. Prices, live deals, impressions and subscriptions are not fabricated. Open each source to verify today’s availability.</p>
+        <div id="family-featured" class="family-featured" aria-live="polite"></div>
+        <p id="family-featured-status" class="family-status"></p>
+        <label class="family-optin"><input type="checkbox" id="family-personalize"> Use my selections on this device to rank relevant cards</label>
+        <div id="family-interests" class="family-interests"></div>
+        <button id="family-forget" type="button" class="family-link-button">Clear this page’s recommendations</button>
+        <div class="family-head family-trending-head"><h3>Relevant Google trends</h3><button id="family-trends-refresh" type="button">↻ Check source</button></div>
+        <p id="family-trends-status" class="family-status">Choose interests above to filter verified Google Trends rather than unrelated viral topics.</p>
+        <div id="family-trends" class="family-trends"></div>
+        <p class="family-fine"><a href="https://trends.google.com/trending?geo=US" target="_blank" rel="noopener noreferrer">Current Google Trends</a> is the original source. Old snapshots are not labeled live.</p>
+      </section>
+      <section class="family-widgets" aria-labelledby="family-widgets-heading">
+        <h3 id="family-widgets-heading">Your search cards</h3>
+        <p>Ask for restaurant deals or a subject to create a source-linked card with comparable suggestions. In Bubbles chat, “Share draft with this website” explicitly sends a request to this page.</p>
+        <div id="family-widget-result" class="family-widget-grid"></div>
+      </section>
+      <section class="family-assistant-settings" aria-labelledby="family-assistant-heading">
+        <h3 id="family-assistant-heading">Your AI assistant & GPT voice</h3>
+        <p>Give Bubbles a nickname on this device. Then tap the floating bubble to chat with real QuantaPhi Bubbles.</p>
+        <label for="family-bubbles-name">Call Bubbles</label>
+        <div class="family-name-row"><input id="family-bubbles-name" maxlength="32" value="Bubbles" autocomplete="off"><button id="family-save-name" type="button">Set name</button></div>
+        <p id="family-name-status" class="family-fine">This nickname is not an identity or wallet sign-in.</p>
+        <a class="family-gpt-link" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Open ChatGPT · then tap Voice ↗</a>
+        <p class="family-fine">ChatGPT Voice needs separate app access; a website link cannot automatically turn on another app’s microphone or import Bubbles memory. Supported mobile apps have a Start with Voice preference in Settings → Voice.</p>
+        <p class="family-fine">No background microphone, silent recording of reactions, or involuntary household profiling. Bubbles guest chat requires no sign-in; synced private memory requires each person’s verified wallet.</p>
+      </section>
+    </section>
+    <section class="viewer-section" id="watch" aria-labelledby="watch-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">GARY'S WESTERNS</p><h2 id="watch-title">Pick a movie. Enjoy the show.</h2></div>
+        <span class="watch-note">Free Westerns · tap to play</span>
+      </div>
+      <div class="theater">
+        <div class="screen" id="western-screen">
+          <div class="screen-cover" id="western-cover">
+            <img src="https://archive.org/services/img/BlueSteel" alt="Blue Steel Western film preview" width="480" height="360">
+            <button type="button" id="western-play" class="big-play">▶ Play this Western</button>
+          </div>
+          <div id="western-player" class="screen-video" hidden></div>
+        </div>
+        <div class="screen-info">
+          <h3 id="western-title">Blue Steel (1934)</h3>
+          <p id="western-description">John Wayne plays an undercover marshal trying to expose a gang of ruthless outlaws.</p>
+          <p id="western-status" role="status" aria-live="polite">Choose Play to start the movie here. Nothing plays automatically.</p>
+          <p class="small">A public-domain film hosted at the Internet Archive. If embedding is unavailable, <a id="western-source" href="https://archive.org/details/BlueSteel" target="_blank" rel="noopener noreferrer">view the original archive source</a>.</p>
+        </div>
+      </div>
+      <h3 class="pick-title">Choose a Western</h3>
+      <div id="western-choices" class="choices" aria-label="Western movie choices"></div>
+      <p class="small">These are curated full-length public-domain films, not a claim of a live TV broadcast. The Internet Archive supplies the playback controls and streaming; availability can change.</p>
+    </section>
+    <section class="assistant-section" aria-labelledby="assistant-title">
+      <div class="bubble-icon" aria-hidden="true">✦</div>
+      <div>
+        <p class="eyebrow">YOUR OWN AI COMPANION</p>
+        <h2 id="assistant-title">Say hello to Bubbles</h2>
+        <p>Tap the floating blue bubble in the lower-right corner. Ask about Western movies, the weather, a favorite actor, or anything else. You can type or use voice where your browser supports it.</p>
+        <p><strong>No sign-in is needed to chat.</strong> Local memory is optional: Bubbles can remember recent conversation and notes on this device when you turn that on. If you want memory on another device, use Bubbles' verified wallet sync with your own identity. Sharing a browser isn't proof of who is using it.</p>
+        <p class="small">Bubbles uses QuantaPhi's existing Cloudflare AI connection. It does not automatically know personal information about Gary, and it will not use the site owner's private wallet or Robot Brain access.</p>
+      </div>
+    </section>
+  </main>
+  <footer>Made with love for Gary · <a href="/">QuantaPhi home</a> · Western films remain with their original publishers</footer>
+  <script type="module" src="/gary/main.mjs"></script>
+  <script type="module" src="/gary/lounge.mjs"></script>
+
+</body>
+</html>

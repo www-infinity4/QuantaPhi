@@ -11,10 +11,13 @@ assert.ok(neuralStart>0&&neuralEnd>neuralStart);
 // Source classifier fixtures exercise the deterministic path; the asynchronous
 // model only runs in the actual verified-owner chat.
 const source=originalSource.slice(0,neuralStart)+' let neuralCoding=false;\n'+originalSource.slice(neuralEnd);
-const modeLine=site.slice(site.indexOf('   const mode='),site.indexOf('   const namedWorkflow=',site.indexOf('   const mode=')));
+const modeStart=site.indexOf('   const workflowDispatch=');
+const modeEnd=site.indexOf('   const action=',modeStart);
+assert.ok(modeStart>0&&modeEnd>modeStart);
+const modeLine=site.slice(modeStart,modeEnd);
 // The real chat resolves namedCardWork from its card catalog before entering this
 // excerpt. Here, exercise the old operator with no named-card match.
-const classify=new Function('request','coderIntent','const namedCardWork=null;\n'+source+'\n'+modeLine+'\nreturn {ownerGithubNonAction,createRepository,directCoding,requestsAgents,mode};');
+const classify=new Function('request','coderIntent','const namedCardWork=null;\nconst contextualPluralRepair=false;\n'+source+'\n'+modeLine+'\nreturn {ownerGithubNonAction,createRepository,directCoding,requestsAgents,mode};');
 
 test('create a new file uses GitHub WRITE, not READ',()=>{
  const request='Create a new file named hello.txt in RecordB';

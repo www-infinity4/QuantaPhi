@@ -14,47 +14,31 @@ test('Walmart request searches owner source then reads the observed file before 
  assert.equal(calls[0].query,'walmart');assert.equal(calls[0].scope,'owner');
  assert.equal(found.repository,catalog[0]);assert.equal(found.path,hit.path);assert.equal(found.writeAuthorized,false);
 });
-test('Gary Cardone Church of I AM resolves the real card source across repository matches',async()=>{
- const owned=['www-infinity4/QuantaPhi','www-infinity4/WidgetPhi'];
- const seen=[];
- const hits=[
-  {repository:owned[1],path:'browser/widgetphi-cardone.js',excerpt:'Cardone Capital quick card'},
-  {repository:owned[0],path:'church-iam-card.js',excerpt:'Church of I AM Gary Cardone original Sunday promotion'}
- ];
- const source=await discoverProject({request:'Fix the Gary Cardone Church of I AM card',catalog:owned,
-  invoke:async operation=>{
-   seen.push(operation);
-   if(operation.action==='search_github_code')return {ok:true,status:'code_search_results',results:hits};
-   if(operation.action==='read_repository')return {ok:true,headSha:'b'.repeat(40)};
-   if(operation.action==='read_file')return {ok:true,sha:'a'.repeat(40),content:'Church of I AM Gary Cardone official Sunday promotion'};
-   throw Error('unexpected action');
-  }});
- assert.equal(seen[0].scope,'owner');
- assert.equal(source.repository,owned[0]);
- assert.equal(source.path,'church-iam-card.js');
- assert.equal(source.card,'church-of-i-am');
- assert.equal(source.writeAuthorized,false);
-});
-test('a natural follow-up reuses the card named in recent owner conversation',()=>{
- const history=[{role:'user',text:'The Gary Cardone Church of I AM card needs attention.'},
- {role:'assistant',text:'I will inspect the source.'}];
- assert.match(sourceQueryFor('Fix that card',history),/Church of I AM/);
- assert.equal(sourceQueryFor('Fix the Walmart card',history),'Fix the Walmart card');
-});
-test('ordinary repair instructions find the right card, not a repository picker',()=>{
- const gary=cardWorkTargetFor('Fix the Gary Cardone Sunday promotion');
- assert.equal(gary?.id,'church-of-i-am');
- assert.equal(gary?.repository,'www-infinity4/QuantaPhi');
- assert.equal(cardWorkTargetFor('Please repair Gary Cardone'),gary);
- assert.equal(cardWorkTargetFor('Move Gary Cardone into the carousel'),gary);
- assert.equal(cardWorkTargetFor('Place the Gary Cardone card in rotation'),gary);
- assert.equal(cardWorkTargetFor('Repair Cardone Capital')?.id,'cardone-capital');
- const history=[{role:'user',text:'We need to fix the Gary Cardone Church of I AM card'}];
- assert.equal(cardWorkTargetFor('Fix that card',history)?.id,'church-of-i-am');
- for(const q of ['What is Church of I AM?','Do not fix Gary Cardone','Explain Cardone Capital']){
+
+test('retired Gary and Grant Cardone names no longer resolve as registered work targets',()=>{
+ for(const q of ['Fix the Gary Cardone Church of I AM card','Repair Cardone Capital','Move the Gary Cardone card to the carousel']){
   assert.equal(cardWorkTargetFor(q),null,q);
  }
 });
+
+
+test('a natural follow-up reuses an existing card but not a retired card',()=>{
+ const history=[{role:'user',text:'The Pixie Stories card needs attention.'},{role:'assistant',text:'I will inspect the source.'}];
+ assert.match(sourceQueryFor('Fix that card',history),/Pixie Stories/);
+ assert.equal(sourceQueryFor('Fix the Walmart card',history),'Fix the Walmart card');
+ const retired=[{role:'user',text:'The Gary Cardone card needs attention.'}];
+ assert.equal(sourceQueryFor('Fix that card',retired),'Fix that card');
+});
+
+
+test('ordinary repair instructions recognize existing cards, not retired ones',()=>{
+ assert.equal(cardWorkTargetFor('Fix the Pixie Stories card')?.id,'pixie-stories');
+ for(const q of ['Fix the Gary Cardone Sunday promotion','Please repair Gary Cardone','Repair Cardone Capital']){
+  assert.equal(cardWorkTargetFor(q),null,q);
+ }
+ for(const q of ['What is Church of I AM?','Do not fix Gary Cardone','Explain Cardone Capital'])assert.equal(cardWorkTargetFor(q),null,q);
+});
+
 test('chat dispatcher treats recognized card work as a direct owner engineering task',()=>{
  const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
  assert.match(ui,/const namedCardWork=projectContextModule\?\.cardWorkTargetFor/);
@@ -119,27 +103,26 @@ test('the gateway corrects the reported draft without treating its JSON as execu
  assert.equal(body.answerStatus,'partial');
  assert.equal(body.receipt.repositoryActionsVerified,false);
 });
-test('card movement resolves named and follow-up targets without making questions into writes',()=>{
+
+test('retired cards are not eligible for new carousel repairs, including follow-ups',()=>{
  const history=[{role:'user',text:'Gary Cardone Church of I AM is above the carousel.'}];
- for(const request of ['Move the Gary Cardone card to the carousel','Please place Gary Cardone in the carousel',
-  'I want you to relocate the Gary Cardone card','Put that card into the carousel','Move that card to the carousel']){
-  assert.equal(cardWorkTargetFor(request,history)?.id,'church-of-i-am',request);
+ for(const q of ['Move the Gary Cardone card to the carousel','Please place Gary Cardone in the carousel','Put that card into the carousel','Move that card to the carousel']){
+  assert.equal(cardWorkTargetFor(q,history),null,q);
  }
- for(const request of ['Do not move the Gary Cardone card','Why move the Gary Cardone card?',
-  'Explain how to place Gary Cardone in the carousel'])assert.equal(cardWorkTargetFor(request,history),null,request);
+ for(const q of ['Do not move the Gary Cardone card','Why move the Gary Cardone card?'])assert.equal(cardWorkTargetFor(q,history),null,q);
 });
 
 
-test('Cardonay resolves Gary Cardone only for a CURRENT explicit request, not a stale repair',()=>{
- assert.equal(cardWorkTargetFor('Please fix Cardonay')?.id,'church-of-i-am');
- assert.equal(cardWorkTargetFor('Check Cardonay new broken button')?.id,undefined,'check is not a write command');
+test('Cardonay alias stays retired and resolved work does not reopen',()=>{
+ assert.equal(cardWorkTargetFor('Please fix Cardonay'),null);
+ assert.equal(cardWorkTargetFor('Check Cardonay new broken button'),null);
  assert.equal(cardWorkTargetFor('Do not fix Cardonay again'),null);
  const history=[{role:'user',text:'Fix Gary Cardone carousel; it is broken'},
-   {role:'user',text:'We already fixed the Cardone card. Stop reopening it.'}];
- assert.equal(cardWorkTargetFor('Fix that card',history),null,'resolved work must stop deictic replay');
- const stillCurrent=[{role:'user',text:'The Infinity Radio card navigation is broken now'}];
- assert.equal(cardWorkTargetFor('Fix that card',stillCurrent)?.id,'infinity-radio');
+  {role:'user',text:'We already fixed the Cardone card. Stop reopening it.'}];
+ assert.equal(cardWorkTargetFor('Fix that card',history),null);
+ assert.equal(cardWorkTargetFor('Fix that card',[{role:'user',text:'The Infinity Radio card navigation is broken now'}])?.id,'infinity-radio');
 });
+
 test('Cardone closure context filters stale complaints from unrelated owner work without deleting real history',async()=>{
  const {curateOwnerTaskContext}=await import('../bubbles-task-context.mjs');
  const prior=[
@@ -181,4 +164,117 @@ test('owner closure phrased as "is fixed" or "we have fixed" stops stale Cardona
  assert.doesNotMatch(capital.note,/#1079/,'Gary Cardone carousel evidence is not Grant Cardone fund evidence');
  const owner=curateOwnerTaskContext("We've fixed Cardonay. Stop opening that repair.",{related:[],recent:[]});
  assert.match(owner.note,/do not dispatch a Cardone repair/);
+});
+
+
+test('two-feature repairs search individual owner code terms after a compound index miss',async()=>{
+ const searches=[],reads=[],owner='www-infinity4/QuantaPhi';
+ const result=await discoverProject({
+  request:'Fix Bubbles login and microphone',
+  catalog:[owner,'www-infinity4/Moltnook'],
+  invoke:async command=>{
+   if(command.action==='search_github_code'){
+    searches.push(command.query);
+    if(command.query==='login')return {ok:true,status:'code_search_results',results:[
+     {repository:owner,path:'bubbles-login.mjs',excerpt:'Bubbles login callback state'}]};
+    if(command.query==='microphone')return {ok:true,status:'code_search_results',results:[
+     {repository:owner,path:'bubbles-microphone.mjs',excerpt:'Bubbles microphone permissions'}]};
+    return {ok:true,status:'code_search_results',results:[]};
+   }
+   if(command.action==='read_repository')return {ok:true,headSha:'b'.repeat(40)};
+   if(command.action==='read_file'){
+    reads.push(command);
+    return {ok:true,sha:'a'.repeat(40),content:'Bubbles login and microphone controls'};
+   }
+   throw Error('unexpected tool');
+  }
+ });
+ assert.ok(searches.includes('login'), 'search login independently');
+ assert.ok(searches.includes('microphone'), 'search microphone independently');
+ assert.equal(result?.repository,owner);
+ assert.ok(reads.length>0,'pin a real source read before choosing a writable target');
+ assert.equal(result.writeAuthorized,false);
+});
+
+test('brief plural repair follow-up reuses latest owner defects for read-only discovery',()=>{
+ const history=[{role:'user',text:'The Bubbles login is broken and the microphone cannot connect.'},
+  {role:'assistant',text:'I will investigate.'}];
+ const query=sourceQueryFor('Fix those two things',history);
+ assert.match(query,/Bubbles login is broken/i);
+ assert.match(query,/microphone cannot connect/i);
+ assert.equal(sourceQueryFor('Explain those two things',history),'Explain those two things');
+ assert.equal(sourceQueryFor('Fix those two things',[{role:'user',text:'The issue was fixed. Stop reopening it.'}]),'Fix those two things');
+});
+
+
+test('browser carries plural repair context to real owner source discovery and GitHub tool',()=>{
+ const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ assert.match(ui,/const contextualPluralRepair=pluralRepair&&contextualRepairQuery!==request/);
+ assert.match(ui,/if\(contextualPluralRepair&&!ownerGithubNonAction&&!requestsAgents&&!namedRecordBIssue\)directCoding=true/);
+ assert.match(ui,/const engineeringRequest=request\+\(contextualPluralRepair\?/);
+ assert.match(ui,/await suggestRepositoryTargets\(request,false\)/);
+ const index=readFileSync(new URL('../index.html',import.meta.url),'utf8');
+ const bubbles=readFileSync(new URL('../bubbles.html',import.meta.url),'utf8');
+ for(const page of [index,bubbles])assert.match(page,/bubbles-ai\.js\?v=20261108-native-bubbles3/);
+});
+
+
+test('Bubbles waits for a real durable GitHub code-search receipt before deciding discovery failed',async()=>{
+ const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ const begin=ui.indexOf('async function settleGithubRead(');
+ const end=ui.indexOf('async function suggestRepositoryTargets(',begin);
+ assert.ok(begin>0&&end>begin,'shared receipt reader is defined');
+ assert.doesNotMatch(ui,/readGithubReceipt\(/,'a nonexistent receipt helper must never stop GitHub inspection');
+ const events=[];
+ const settle=new Function('directGithubOperation','githubReceipt',ui.slice(begin,end)+'\nreturn settleGithubRead;')(
+  async command=>{events.push('request:'+command.action);return {ok:true,status:'working',requestId:'verified-reader-1'};},
+  async id=>{events.push('receipt:'+id);return events.length===2
+   ?{ok:false,error:'receipt_not_found',requestId:id}
+   :{ok:true,status:'code_search_results',requestId:id,results:[{repository:'www-infinity4/QuantaPhi',path:'bubbles-ai.js'}]};}
+ );
+ const result=await settle({action:'search_github_code',mode:'read'}, {pause:async()=>{},maxChecks:4});
+ assert.equal(result.status,'code_search_results');
+ assert.equal(result.results[0].path,'bubbles-ai.js');
+ assert.deepEqual(events,['request:search_github_code','receipt:verified-reader-1','receipt:verified-reader-1']);
+ assert.match(ui,/return settleGithubRead\(operation,\{showProgress:!preview\}\);/);
+ assert.match(ui,/await settleGithubRead\(\{action:'list_repositories',mode:'read'\}\)/);
+});
+
+test('chat routes source repairs and explicit workflow operations to their own adapters',async()=>{
+ const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ const start=ui.indexOf(' else if(!embedded&&!ownerGithubNonAction&&(directRequest||githubCheck||createRepository||coderRequest||directCoding)){');
+ const end=ui.indexOf(' else if(!embedded&&(isOwnerWorkRequest(request)',start);
+ const intent=ui.slice(ui.indexOf(' const namedWorkflow='),ui.indexOf(' // Owner-named RecordB'));
+ const calls=[];
+ const run=new Function('submitRepositoryWork','directGithubOperation',
+  `return async (request,directRequest=false)=>{
+    const embedded=false,ownerGithubNonAction=false,githubCheck=false,createRepository=false,coderRequest=null;
+    ${intent}
+    const directCoding=codeTask;
+    const repoCreateQualifiers=null,neuralCoding=false,repositoryAdvice=null,imageWorkEvidence='',activeCardEvidence=null,contextualPluralRepair=false;
+    const status={};let workEvidence='';
+    const humanReplies=async()=>({workReply:t=>t.status,githubReply:r=>r.status});
+    const recordBrainNotice=()=>{},maybeDelegateDirectOverflow=async()=>null;
+    if(false){} ${ui.slice(start,end)}
+    return workEvidence;
+  }`)(
+  async (request,approval,repository)=>{calls.push(['runner',request,approval,repository]);return {status:'ready'};},
+  async args=>{calls.push(['github',args.action,args.mode,args.repository,args.workflow]);return {ok:true,status:'inspected'};}
+ );
+ const repair='Fix the login route in www-infinity4/RecordB';
+ assert.equal(await run(repair),'ready');
+ assert.equal(await run('Inspect the source in www-infinity4/RecordB',true),'inspected');
+ const workflowRepair='Fix the build.yml workflow in www-infinity4/RecordB so the check can execute';
+ assert.equal(await run(workflowRepair),'ready');
+ assert.equal(await run('Trigger build.yml in www-infinity4/RecordB'),'inspected');
+ assert.equal(await run('Please execute deploy.yml workflow in www-infinity4/RecordB'),'inspected');
+ assert.equal(await run('List the build.yml workflow in www-infinity4/RecordB'),'inspected');
+ assert.deepEqual(calls,[
+  ['runner',repair,'explicit-user-command','www-infinity4/RecordB'],
+  ['github','assist','read','www-infinity4/RecordB',undefined],
+  ['runner',workflowRepair,'explicit-user-command','www-infinity4/RecordB'],
+  ['github','dispatch_workflow','actions','www-infinity4/RecordB','build.yml'],
+  ['github','dispatch_workflow','actions','www-infinity4/RecordB','deploy.yml'],
+  ['github','list_workflows','read','www-infinity4/RecordB',undefined]
+ ]);
 });

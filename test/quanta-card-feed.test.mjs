@@ -8,14 +8,16 @@ import {quantScores,loadOwnQuantScores} from '../quanta-feed-quants.mjs';
 import {cleanFeedState,feedCandidates,nextFeedCard,nextFeedDirection,directionScore,markOpened,markViewed,toggleFollowing} from '../quanta-feed-rank.mjs';
 const raw=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 const base=()=>({...cleanFeedState({}),catalog:ALL_FEED_CARDS});
-test('public contains every original quick card and 24 independent discovery cards',()=>{
- assert.equal(DISCOVERY_CARDS.length,24);
+test('public contains every original quick card and 25 independent discovery cards',()=>{
+ assert.equal(DISCOVERY_CARDS.length,25);
  assert.equal(new Set(ALL_FEED_CARDS.map(x=>x.id)).size,ALL_FEED_CARDS.length);
  for(const id of ['muse-ai','webb','google','reddit','radio-philco-90','just-radios','robinhood','chime','x-money','ebay','gold','silver','us-mint','pcgs','ngc','x-live-spaces','wikipedia','vam-scarface','instructables','vintage-toys','antique-collectibles']){
   assert.ok(feedCard(id),id);
  }
  for(const c of DISCOVERY_CARDS){assert.ok(safeDiscovery(c),c.id);assert.equal(findDiscovery(c.id),c);}
- for(const id of ['pixie-stories','cardone-capital','media-star','infinity-radio','bitcoin-crusher','story-writer'])assert.ok(feedCard(id),'Public should contain existing QuantaPhi '+id);
+ for(const id of ['pixie-stories','media-star','infinity-radio','bitcoin-crusher','story-writer'])assert.ok(feedCard(id),'Public should contain existing QuantaPhi '+id);
+ assert.ok(!feedCard('cardone-capital'));
+ assert.ok(!feedCard('church-of-i-am'));
  assert.equal(findDiscovery('unknown-card'),null);
  assert.equal(safeDiscovery({id:'fake',url:'javascript:alert(1)'}),false);
  assert.ok(!ALL_FEED_CARDS.some(c=>/tuberadios\.com/.test(c.url)), 'hijacked TubRadios domain must not be linked');

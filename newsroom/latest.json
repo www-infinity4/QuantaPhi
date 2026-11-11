@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "origin": "QuantaPhi editorial",
+  "updatedOn": "2026-11-03",
+  "articles": [
+    {
+      "title": "NASA's Pacific storm images reveal two very different cyclone systems",
+      "url": "pacific-storms-2026.html",
+      "publishedAt": "2026-11-03",
+      "category": "Earth science · NASA",
+      "description": "NASA's newest Earth Observatory report compares unusually circular Typhoon In-fa with the changing structure of ex-typhoon Champi in Alaskan waters.",
+      "sourceUrl": "https://science.nasa.gov/earth/earth-observatory/the-pacifics-busy-storm-season/",
+      "imageUrl": "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/iotd/2026/the-pacific's-busy-storm-season/storminfa_epic_20261029_th.jpg?w=1024",
+      "imageAlt": "NASA EPIC satellite view of Pacific storm systems on October 29, 2026"
+    },
+    {
+      "title": "Why Hubble's missing oxygen matters to the history of small galaxies",
+      "url": "hubble-missing-oxygen.html",
+      "publishedAt": "2026-11-02",
+      "category": "Space and discovery",
+      "description": "Hubble measurements of 37 nearby dwarf galaxies offer new clues about chemical elements escaping into surrounding space.",
+      "sourceUrl": "https://science.nasa.gov/missions/hubble/nasas-hubble-uncovers-case-of-missing-oxygen-in-nearby-dwarf-galaxies/"
+    },
+    {
+      "title": "Fusion research receives 28 new project selections, not a finished power plant",
+      "url": "fusion-research-awards.html",
+      "publishedAt": "2026-11-02",
+      "category": "Energy and technology",
+      "description": "An $8.5 million DOE announcement covers research selections that still require funding negotiations.",
+      "sourceUrl": "https://www.energy.gov/science/articles/does-office-science-announces-85-million-innovative-fusion-energy-public-private"
+    },
+    {
+      "title": "NASA asks industry how Hubble might be serviced again",
+      "url": "hubble-servicing.html",
+      "publishedAt": "2026-11-01",
+      "category": "Archive · Space",
+      "description": "NASA requested commercial servicing ideas but did not approve a mission.",
+      "sourceUrl": "https://science.nasa.gov/missions/hubble/nasa-explores-potential-commercial-servicing-for-hubble-telescope/"
+    },
+    {
+      "title": "A $5.1 billion grid loan puts Iowa and Wisconsin power projects in focus",
+      "url": "iowa-wisconsin-grid.html",
+      "publishedAt": "2026-11-01",
+      "category": "Archive · Energy",
+      "description": "An examination of the proposed grid investment and its still-projected benefits.",
+      "sourceUrl": "https://www.energy.gov/articles/energy-department-closes-51-billion-loan-lower-electricity-costs-and-strengthen-grid"
+    }
+  ]
+}

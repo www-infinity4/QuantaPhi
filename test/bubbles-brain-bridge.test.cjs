@@ -13,7 +13,7 @@ test('standalone Bubbles loads wallet and verified Robot Brain ahead of chat',()
 });
 test('work is routed only for explicit requests outside embedded mode',()=>{
  assert.match(js,/function isOwnerWorkRequest\(text\)/);
- assert.match(js,/if\(!embedded&&isOwnerWorkRequest\(request\)\)/);
+ assert.match(js,/if\(!embedded&&\(isOwnerWorkRequest\(request\)\|\|neuralCoding&&requestsAgents\)\)/);
  assert.match(js,/submitWork\(request,'explicit-user-command',imageWorkEvidence\)/);
  assert.match(js,/window\.QuantaBrainOwner\?await window\.QuantaBrainOwner\.ready/);
 });
@@ -39,7 +39,9 @@ test('copies each user and assistant message in the shared Android/web chat',asy
  assert.ok(start>0&&end>start,'copy function must appear before display');
  const display=source.slice(end,source.indexOf('for(const item of messages)',end));
  assert.match(display,/row\.append\(copy\)/);
- assert.match(display,/line\.append\(row\)/);
+ assert.match(display,/actionMenu\.append\(actionSummary,row\)/);
+ assert.match(display,/line\.append\(actionMenu\)/);
+ assert.match(display,/const actionMenu=create\('details','ba-reply-actions'\)/);
  assert.match(display,/copyBubblesMessage\(text,bubble,copy\)/);
  const writes=[],status={},button={textContent:'Copy',isConnected:true};
  const sandbox={navigator:{clipboard:{writeText:async value=>writes.push(value)}},status,setTimeout(){}};

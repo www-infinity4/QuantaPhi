@@ -5,10 +5,9 @@ const source=fs.readFileSync('bubbles-ai.js','utf8');
 const brain=fs.readFileSync('bubbles-brain-actions.js','utf8');
 const android=fs.readFileSync('android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbles/VoiceCaptureCommands.java','utf8');
 test('spoken create RecordB the repo resolves to an explicit repository creation',()=>{
- const start=source.indexOf('const createRepository='),end=source.indexOf('const directRequest=',start);
+ const start=source.indexOf('const repoCreateQualifiers='),end=source.indexOf('const directRequest=',start);
  assert.ok(start>0&&end>start);
- const expr=source.slice(start+'const createRepository='.length,end).trim().replace(/;$/,'');
- const match=new Function('request','return ('+expr+');');
+ const match=new Function('request',source.slice(start,end)+'\nreturn createRepository;');
  for(const q of ['create RecordB the repo','create a repo named RecordB','Create a GitHub repository called RecordB','build RecordB repo'])assert.equal(match(q),true,q);
  assert.equal(match('create a card in RecordB repo'),false);
  assert.match(source,/repository_already_exists/);

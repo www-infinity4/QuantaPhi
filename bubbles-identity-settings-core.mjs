@@ -24,16 +24,35 @@ export const DOCUMENT_KINDS=Object.freeze([
  {id:'lease_mortgage',label:'Lease / mortgage documentation',group:'housing'},
  {id:'disability_document',label:'Disability / eligibility documents',group:'benefits'}
 ].map(x=>Object.freeze(x)));
-const plain=(v,n=140)=>typeof v==='string'?v.replace(/[\u0000-\u001f\u007f]/g,' ').trim().slice(0,n):'';
+const unsafeIdentifier=/\b\d{3}[- ]?\d{2}[- ]?\d{4}\b|\b(?:\d[ -]?){12,18}\d\b/;
 const money=v=>typeof v==='string'&&/^(?:\d{1,8})(?:\.\d{0,2})?$/.test(v.trim())?Number(v):null;
 export function redactPreview(raw={}){
+ let sensitiveInputRejected=false;
+ const ordinary=(v,max=140)=>{
+  if(typeof v!=='string')return '';
+  const text=v.replace(/[\u0000-\u001f\u007f]/g,' ').trim();
+  if(unsafeIdentifier.test(text)){sensitiveInputRejected=true;return ''}
+  return text.slice(0,max);
+ };
+ const email=ordinary(raw.email,140);
  const household=Number(raw.householdSize);
+ const profile={
+  name:ordinary(raw.name,100),
+  preferredName:ordinary(raw.preferredName,100),
+  business:ordinary(raw.business,120),
+  phone:ordinary(raw.phone,28),
+  email:/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)?email:'',
+  city:ordinary(raw.city,90),
+  region:ordinary(raw.region,80),
+  postalCode:ordinary(raw.postalCode,18),
+  country:ordinary(raw.country,80)
+ };
  return {
-  name:plain(raw.name,100),business:plain(raw.business,120),
-  phone:plain(raw.phone,28),
+  ...profile,
   householdSize:Number.isInteger(household)&&household>=1&&household<=30?household:null,
   monthlyIncome:money(raw.income),estimatedAssets:money(raw.assets),
   benefits:['ssi','ssdi','both','other','none','unknown'].includes(raw.benefits)?raw.benefits:'unknown',
+  sensitiveInputRejected,
   verified_21:false,
   note:'Unverified session-only worksheet; not saved or transmitted.'
  };

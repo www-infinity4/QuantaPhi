@@ -48,7 +48,7 @@ export async function executeGoogleRead(service, {userId,id,operation,args = {}}
   if (!Object.hasOwn(READ_ACTIONS,operation)) throw Error('unsupported_action');
   return service.withCredential({userId,id,provider:'google',action:READ_ACTIONS[operation]}, async (token,record) => {
     const url = googleReadURL(operation,args,record);
-    const response = await request(url,{method:'GET',redirect:'error',signal:AbortSignal.timeout(15000),headers:{Authorization:'Bearer '+token,Accept:'application/json'}});
+    const response = await request(url,{method:'GET',redirect:'manual',signal:AbortSignal.timeout(15000),headers:{Authorization:'Bearer '+token,Accept:'application/json'}});
     if (!response.ok) throw Error('google_read_http_'+response.status);
     if (Number(response.headers.get('Content-Length')) > 1000000) throw Error('provider_response_too_large');
     const reader = response.body.getReader(), chunks = []; let size = 0;
@@ -76,7 +76,7 @@ export async function selectGoogleResource(service,{userId,id,kind,resourceId},r
     revision=record.revision;
     const url=kind==='sheets'?'https://sheets.googleapis.com/v4/spreadsheets/'+encodeURIComponent(resourceId)+'?fields=spreadsheetId':
       'https://www.googleapis.com/calendar/v3/calendars/'+encodeURIComponent(resourceId)+'/events?maxResults=1&fields=kind';
-    const response=await request(url,{redirect:'error',signal:AbortSignal.timeout(15000),headers:{Authorization:'Bearer '+token}});
+    const response=await request(url,{redirect:'manual',signal:AbortSignal.timeout(15000),headers:{Authorization:'Bearer '+token}});
     await response.body?.cancel();
     if(!response.ok)throw Error('google_read_http_'+response.status);
   });
