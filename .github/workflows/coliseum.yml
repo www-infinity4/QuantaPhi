@@ -63,5 +63,11 @@ jobs:
           npx playwright install --with-deps chromium
       - name: Verify Zeus history on Android-sized layouts and session state controls
         run: |
-          npx playwright test --config=playwright.zeus-session-history.config.mjs --reporter=line
+          # Check the user's Send/keyboard/reply path even if the older
+          # session-history browser suite fails; retain both as release gates.
+          set +e
           npx playwright test --config=playwright.zeus-quest.config.mjs --reporter=line
+          quest_status=$?
+          npx playwright test --config=playwright.zeus-session-history.config.mjs --reporter=line
+          history_status=$?
+          test "$quest_status" -eq 0 && test "$history_status" -eq 0
