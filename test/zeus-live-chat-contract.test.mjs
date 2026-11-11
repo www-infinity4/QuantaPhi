@@ -68,3 +68,8 @@ test('Zeus must verify embedded Bubbles initialization, not iframe load alone',(
  assert.match(host,/event\.source!==iframe\?\.contentWindow/);
  assert.doesNotMatch(host,/iframe\.addEventListener\('load',\(\)=>\{\s*zeusAssistantReady=true/);
 });
+
+test('Zeus integration busts stale Bubbles script versions after deployment',()=>{
+ const html=read('bubbles.html');
+ assert.match(html,/bubbles-ai\\.js\\?v=20261111-zeus-terminal1/);
+});
