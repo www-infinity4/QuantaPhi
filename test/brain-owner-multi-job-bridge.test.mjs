@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {submitApprovedBridgeWork} from '../workers/infinity-brain-clock/runner-request.mjs';
+import {submitApprovedBridgeWork,checkOwnerRunnerRequest} from '../workers/infinity-brain-clock/runner-request.mjs';
 
 const claims={run_id:'424242'};
 const sourceSha='a'.repeat(40);
@@ -81,4 +81,26 @@ test('revoked or expired grant blocks an entire chain before persistence',async(
   assert.equal(r.status,403);
   assert.deepEqual(h.calls.map(x=>x.type),['grant']);
  }
+});
+
+test('the existing signed runner claims job two only after verified job one completion',async()=>{
+ const h=harness();await h.run();
+ const graph=h.calls.find(x=>x.type==='submit').packet.context.color_jobs;
+ const second={...graph[1],status:'queued'};
+ const pending=checkOwnerRunnerRequest(second,{deps:[{status:'queued'}]});
+ assert.equal(pending.eligible,false);
+ assert.equal(pending.reason,'dependency_pending');
+ const sourceOnly=checkOwnerRunnerRequest(second,{deps:[{status:'committed_unverified'}]});
+ assert.equal(sourceOnly.eligible,true); // Existing runner's documented source milestone.
+ const released=checkOwnerRunnerRequest(second,{deps:[{status:'merged_verified'}]});
+ assert.equal(released.eligible,true);
+ const claimed=checkOwnerRunnerRequest({...second,status:'working',progress:{
+  runUrl:'https://github.com/www-infinity4/Moltnook/actions/runs/12345',
+  attemptedAt:new Date().toISOString()}},{deps:[{status:'merged_verified'}],now:Date.now()});
+ assert.equal(claimed.eligible,false);
+ assert.equal(claimed.reason,'recent_runner_receipt');
+ const duplicate=checkOwnerRunnerRequest(second,{deps:[{status:'merged_verified'}],
+  prior:{status:'committed_unverified'}});
+ assert.equal(duplicate.eligible,false);
+ assert.equal(duplicate.reason,'awaiting_merge_or_complete');
 });
