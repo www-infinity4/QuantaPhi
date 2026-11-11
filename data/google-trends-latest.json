@@ -3,9 +3,168 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T16:01:42.160585Z",
+  "checked_at": "2026-11-11T16:31:26.714637Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "usman nurmagomedov",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T16:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/beneil-dariush-surprised-really-freaking-171020193.html",
+        "https://mmasucka.com/news/usman-nurmagomedov-reportedly-signs-with-ufc-ahead-of-ufc-334/",
+        "https://nyfights.com/news/usman-nurmagomedov-manager-denies-false-ufc-signing-rumors/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9PvAxIxCguhrCiIhXqmsPgVRgvrmapL_5Gc-jZ5eDuzub-7zCe1_CbYUcsjQ",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/beneil-dariush-surprised-really-freaking-171020193.html",
+          "title": "Beneil Dariush surprised 'really freaking good' Usman Nurmagomedov isn't in UFC already",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9PvAxIxCguhrCiIhXqmsPgVRgvrmapL_5Gc-jZ5eDuzub-7zCe1_CbYUcsjQ"
+        },
+        {
+          "url": "https://mmasucka.com/news/usman-nurmagomedov-reportedly-signs-with-ufc-ahead-of-ufc-334/",
+          "title": "Usman Nurmagomedov Rumored to Join UFC for Next Fight",
+          "publisher": "MMA Sucka",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2NcOx_0qyA1diWbhNgYCbWRNn1PK_CW1DMZtrPT653cA1ShH5VmUSjGPxkSU"
+        },
+        {
+          "url": "https://nyfights.com/news/usman-nurmagomedov-manager-denies-false-ufc-signing-rumors/",
+          "title": "Usman Nurmagomedov’s Manager Drops Blunt Truth on ‘False’ Promotion Switch Reports",
+          "publisher": "NY Fights",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8FoS7TJiGYTIAhlmuV-Hier85AVD6ZAIiAjfSp1_HvU2OlYKvuxF4JoEPHWQ"
+        }
+      ]
+    },
+    {
+      "query": "whoopi goldberg",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T16:10:00Z",
+      "related_news_urls": [
+        "https://www.tvinsider.com/1302712/the-view-whoopi-goldberg-message-pete-hegseth-democrat-party-leadership-fight/",
+        "https://www.yahoo.com/entertainment/articles/watch-view-debates-pete-hegseth-033403065.html",
+        "https://www.foxnews.com/media/whoopi-goldberg-warns-democrats-take-care-business-after-midterm-wins"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBImQwR1RxmXe-apJ1AsxX8gBSItPTNwNUVK6gT-0vVwbqGLQUfUsxxhn2zF8",
+      "image_credit": "TV Insider",
+      "news": [
+        {
+          "url": "https://www.tvinsider.com/1302712/the-view-whoopi-goldberg-message-pete-hegseth-democrat-party-leadership-fight/",
+          "title": "Whoopi Goldberg Speaks Directly to Pete Hegseth & Democrats on ‘The View’",
+          "publisher": "TV Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBImQwR1RxmXe-apJ1AsxX8gBSItPTNwNUVK6gT-0vVwbqGLQUfUsxxhn2zF8"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/articles/watch-view-debates-pete-hegseth-033403065.html",
+          "title": "WATCH: The View Debates Pete Hegseth Impeachment Articles [Video]",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyF8XUU49GlF_lYrjE2BfopupywivRAp0etW86z477cN-_DjD_4L4JJ2hsS60"
+        },
+        {
+          "url": "https://www.foxnews.com/media/whoopi-goldberg-warns-democrats-take-care-business-after-midterm-wins",
+          "title": "Whoopi Goldberg warns Democrats to 'take care of business' after midterm wins",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKXFuUDxXogVI22N5mlxqeI7Rxqz9VAxszQUBiSlEAsW5PX5XU_1fHFb7Ucwk"
+        }
+      ]
+    },
+    {
+      "query": "walmart black friday ad",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T16:00:00Z",
+      "related_news_urls": [
+        "https://shopping.yahoo.com/deals/breaking-news/article/walmart-black-friday-2026-early-deals-from-ninja-hp-shark-michael-kors-plus-everything-we-know-so-far-about-the-shopping-event-170805085.html",
+        "https://lifehacker.com/tech/what-to-know-about-walmart-black-friday-2026-sales",
+        "https://www.localsyr.com/news/national/walmarts-early-black-friday-electronics-deals-up-to-60-off-laptops-headphones-and-more/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaBO6qTYwiMncNy4JnU54KVR2zblPnINJSOOrfyakxUbIn2oBmko3p5zVXc3I",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://shopping.yahoo.com/deals/breaking-news/article/walmart-black-friday-2026-early-deals-from-ninja-hp-shark-michael-kors-plus-everything-we-know-so-far-about-the-shopping-event-170805085.html",
+          "title": "Walmart Black Friday 2026: Early deals from Ninja, HP, Shark, Michael Kors, plus everything we know so far about the shopping event",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaBO6qTYwiMncNy4JnU54KVR2zblPnINJSOOrfyakxUbIn2oBmko3p5zVXc3I"
+        },
+        {
+          "url": "https://lifehacker.com/tech/what-to-know-about-walmart-black-friday-2026-sales",
+          "title": "Walmart’s 2026 Black Friday and Cyber Monday Sales: Dates, Early Deals, and What to Expect",
+          "publisher": "Lifehacker",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5xaU3EFjXeLSTpau_WqOCmvwZLCwqZNnE9SHrq2jZQeGNhR0_37ca_iOrO0"
+        },
+        {
+          "url": "https://www.localsyr.com/news/national/walmarts-early-black-friday-electronics-deals-up-to-60-off-laptops-headphones-and-more/",
+          "title": "Walmart’s early Black Friday electronics deals: Up to 60% off laptops, headphones and more",
+          "publisher": "WSYR",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2IcCTVAeum5cnSEuKTOOs2id1T5sajy5cLiqN-EEF5DfSQa_BQUTlOI7UbpI"
+        }
+      ]
+    },
+    {
+      "query": "new heights",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T15:50:00Z",
+      "related_news_urls": [
+        "https://people.com/travis-kelce-plans-to-enlist-wife-taylor-swift-for-next-new-heights-podcast-event-12248830",
+        "https://heavy.com/sports/nfl/kansas-city-chiefs/travis-kelce-taylor-swift-jason-new-heights-request/",
+        "https://abcnews.com/GMA/Culture/pink-announces-1st-las-vegas-residency-sphere-2027/story?id=137982096"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT69-KHZH-engvmHBYLGPJf249RGAV4lamG2Lm5a3hlUg9_RE3hKH6n_G7IPak",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/travis-kelce-plans-to-enlist-wife-taylor-swift-for-next-new-heights-podcast-event-12248830",
+          "title": "Travis Kelce Wants to See What Wife Taylor Swift ‘Can Cook Up’ for a New Heights Podcast Event",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT69-KHZH-engvmHBYLGPJf249RGAV4lamG2Lm5a3hlUg9_RE3hKH6n_G7IPak"
+        },
+        {
+          "url": "https://heavy.com/sports/nfl/kansas-city-chiefs/travis-kelce-taylor-swift-jason-new-heights-request/",
+          "title": "Travis Kelce Says He'll Ask Wife Taylor Swift for Help After Jason Makes Unexpected Request",
+          "publisher": "Heavy.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcOl2WkbeS2FSTwBeYj_nC-P-6l-DyqFEAC66UAK-Lh-eiC7wcv4lR8KvP4zM"
+        },
+        {
+          "url": "https://abcnews.com/GMA/Culture/pink-announces-1st-las-vegas-residency-sphere-2027/story?id=137982096",
+          "title": "Pink announces 1st Las Vegas residency at Sphere in 2027",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQCFDHZeKN6LncWNG28RvbDghGitxqQw-hFRTvHUlOEsdYqk6zjU84J5cMj6w"
+        }
+      ]
+    },
+    {
+      "query": "obama presidential library",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T15:40:00Z",
+      "related_news_urls": [
+        "https://thegeorgiasun.com/georgia-people/georgia-artists-work-featured-in-the-obama-presidential-library/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTp5H-6F757KYdhxrluayPGXTBX96XjVaSDCZ_bCnz_wT_gMAq6i_MPpuarN-Y",
+      "image_credit": "The Georgia Sun",
+      "news": [
+        {
+          "url": "https://thegeorgiasun.com/georgia-people/georgia-artists-work-featured-in-the-obama-presidential-library/",
+          "title": "Georgia artist’s work featured in the Obama Presidential Library",
+          "publisher": "The Georgia Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTp5H-6F757KYdhxrluayPGXTBX96XjVaSDCZ_bCnz_wT_gMAq6i_MPpuarN-Y"
+        }
+      ]
+    },
     {
       "query": "ugo humbert",
       "approx_searches": "500+",
@@ -43,7 +202,7 @@
     },
     {
       "query": "tatjana maria",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-11T15:40:00Z",
       "related_news_urls": [
         "https://en.tennistemple.com/match/maria-tubello-sopo-2026/9569777/"
@@ -61,30 +220,65 @@
       ]
     },
     {
-      "query": "brad ausmus",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T15:30:00Z",
+      "query": "caleb williams baker mayfield interaction",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T15:40:00Z",
       "related_news_urls": [
-        "https://www.mlb.com/news/randy-flores-discusses-next-astros-manager",
-        "https://www.mlbtraderumors.com/2026/11/astros-expected-to-name-brad-ausmus-manager.html",
-        "https://www.stltoday.com/sports/professional/mlb/cardinals/article_cd0090c1-3cd2-4cb9-8009-ed01b8ad2366.html"
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jonah-jackson-on-luke-goedekes-grievances-this-is-football-man",
+        "https://chicago.suntimes.com/bears/2026/11/09/bears-buccaneers-qb-baker-mayfield-accuse-mimicking-snap-count-cadence",
+        "https://www.pewterreport.com/bucs-todd-bowles-right-plays-baker-mayfield/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLCwltHykb91RCrat5aqf4diZaGN4_lGPh0PBzNOohjBNYc6VBQgtM4q58bBM",
-      "image_credit": "MLB.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Ta5m9cVB-onepYUFtV6NJobVUjAswxAK5sHmvKrmiHAV17TcTiCVlONLLu4",
+      "image_credit": "NBC Sports",
       "news": [
         {
-          "url": "https://www.mlb.com/news/randy-flores-discusses-next-astros-manager",
-          "title": "Flores in final stages of finding Astros' next manager",
-          "publisher": "MLB.com",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jonah-jackson-on-luke-goedekes-grievances-this-is-football-man",
+          "title": "Jonah Jackson on Luke Goedeke’s grievances: “This is football, man”",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLCwltHykb91RCrat5aqf4diZaGN4_lGPh0PBzNOohjBNYc6VBQgtM4q58bBM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Ta5m9cVB-onepYUFtV6NJobVUjAswxAK5sHmvKrmiHAV17TcTiCVlONLLu4"
         },
+        {
+          "url": "https://chicago.suntimes.com/bears/2026/11/09/bears-buccaneers-qb-baker-mayfield-accuse-mimicking-snap-count-cadence",
+          "title": "Bucs QB Baker Mayfield accuses Bears of mimicking his cadence",
+          "publisher": "Chicago Sun-Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFFNepO1QS8HL6QpHyYh7V4Wj7uSSXNAu86NI3ojpjwOy1aJ3PYzD0emK5CrM"
+        },
+        {
+          "url": "https://www.pewterreport.com/bucs-todd-bowles-right-plays-baker-mayfield/",
+          "title": "Bucs’ Todd Bowles: It’s A “Challenge” To Get Right Plays For Baker Mayfield",
+          "publisher": "Pewter Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfFhGTieAtxWQcG5nmG6d_3tqP-i7FPZQu7vyJJBcl6dbqV6osKIHk2L9oZ1Q"
+        }
+      ]
+    },
+    {
+      "query": "brad ausmus",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-11T15:30:00Z",
+      "related_news_urls": [
+        "https://www.mlbtraderumors.com/2026/11/astros-expected-to-name-brad-ausmus-manager.html",
+        "https://www.mlb.com/news/randy-flores-discusses-next-astros-manager",
+        "https://www.stltoday.com/sports/professional/mlb/cardinals/article_cd0090c1-3cd2-4cb9-8009-ed01b8ad2366.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoslplvoNK5C7aA81MH0qLQcdY-gc_UkbafAAxJo5CangTi2G3Y6-yGaF0xjc",
+      "image_credit": "MLB Trade Rumors",
+      "news": [
         {
           "url": "https://www.mlbtraderumors.com/2026/11/astros-expected-to-name-brad-ausmus-manager.html",
           "title": "Astros Expected To Name Brad Ausmus Manager",
           "publisher": "MLB Trade Rumors",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoslplvoNK5C7aA81MH0qLQcdY-gc_UkbafAAxJo5CangTi2G3Y6-yGaF0xjc"
+        },
+        {
+          "url": "https://www.mlb.com/news/randy-flores-discusses-next-astros-manager",
+          "title": "Flores in final stages of finding Astros' next manager",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLCwltHykb91RCrat5aqf4diZaGN4_lGPh0PBzNOohjBNYc6VBQgtM4q58bBM"
         },
         {
           "url": "https://www.stltoday.com/sports/professional/mlb/cardinals/article_cd0090c1-3cd2-4cb9-8009-ed01b8ad2366.html",
@@ -127,216 +321,6 @@
           "publisher": "Yahoo Sports",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIeJawMtho59hLfxhzJijliNORczXEQeX-BD7atTHuGYT5jdktuXd_l_2ZNr8"
-        }
-      ]
-    },
-    {
-      "query": "palantir",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T15:30:00Z",
-      "related_news_urls": [
-        "https://www.ft.com/content/2316e892-a7c2-42b6-8c21-7003e05f2b5c?syn-25a6b1a6=1",
-        "https://www.bloomberg.com/news/articles/2026-11-11/helsing-unveils-ai-military-software-to-challenge-palantir",
-        "https://www.reuters.com/business/aerospace-defense/helsing-hands-germany-ownership-combat-system-software-2026-11-04/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6UTWQ0_kOetPqeytb8rEMxvM85ZAO8G_bDBB__TldTa7n04dg0QSwbgZAT5E",
-      "image_credit": "Financial Times",
-      "news": [
-        {
-          "url": "https://www.ft.com/content/2316e892-a7c2-42b6-8c21-7003e05f2b5c?syn-25a6b1a6=1",
-          "title": "Helsing unveils European rival to Palantir military targeting system",
-          "publisher": "Financial Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6UTWQ0_kOetPqeytb8rEMxvM85ZAO8G_bDBB__TldTa7n04dg0QSwbgZAT5E"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-11/helsing-unveils-ai-military-software-to-challenge-palantir",
-          "title": "Helsing Unveils AI Military Software to Challenge Palantir",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQe2-hv7N5XClpXXT2DMBBTUQEHbWgLutS_Ydp-bxMfG-OuAn-b5LuWJTFtkmA"
-        },
-        {
-          "url": "https://www.reuters.com/business/aerospace-defense/helsing-hands-germany-ownership-combat-system-software-2026-11-04/",
-          "title": "Helsing hands Germany ownership of combat-system software",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK78V9b2BZA1CkXtVieNy_TlwR4VxMElPRcpB3oBJrYoEJFKaekKF3FLghBvo"
-        }
-      ]
-    },
-    {
-      "query": "taylor fritz",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T15:20:00Z",
-      "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/coco-gauff-vs-linda-noskova-set-2-winner-nov-10-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/alexandra-eala-vs-diana-shnaider-set-1-winner-oct-30-2026/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/alejandro-tabilo-vs-rafael-jodar-set-1-winner-nov-02-2026/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyZvtMAX-LBBMxkkPwno3sw27OwBAWX-sa0g1ZP8G7268OFAlwTU3ACpJRpsU",
-      "image_credit": "Robinhood",
-      "news": [
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/coco-gauff-vs-linda-noskova-set-2-winner-nov-10-2026/",
-          "title": "November 10, 2026: Coco Gauff vs Linda Noskova: Set 2 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyZvtMAX-LBBMxkkPwno3sw27OwBAWX-sa0g1ZP8G7268OFAlwTU3ACpJRpsU"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/alexandra-eala-vs-diana-shnaider-set-1-winner-oct-30-2026/",
-          "title": "October 30, 2026: Alexandra Eala vs Diana Shnaider: Set 1 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTU8Gd01FydBUEK6ttQhxWecNhx8k_TAu2kCJZODwYlawJkpv71fa1levoHB3E"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/alejandro-tabilo-vs-rafael-jodar-set-1-winner-nov-02-2026/",
-          "title": "November 2, 2026: Alejandro Tabilo vs Rafael Jodar: Set 1 Winner Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpRDHUoeO8wz1dlO2E7rS-4BwOtF32L0xykT9e82fxL_d-M4OgtIneK1Oq-go"
-        }
-      ]
-    },
-    {
-      "query": "fall out boy presale code",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T15:20:00Z",
-      "related_news_urls": [
-        "https://www.wusa9.com/article/entertainment/music/fall-out-boy-twilight-of-the-punks-tour-to-nationals-park-the-offspring-when-is-fall-out-boy-going-to-be-near-me-washington-dc/65-0502684d-c20f-4c0a-bf70-e1e8d91dcb29",
-        "https://www.9news.com/article/news/local/9news-mornings/fall-out-boy-twilight-of-the-punks-stadium-tour/73-91702311-5d57-4fe3-ac22-dfcecfc2934e",
-        "https://www.cooplive.com/events/fall-out-boy-h9dz"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqbHHwXJVZv1wVmaO6ieLKtyfB-0T-B61n25nfMMJr6fKeVjQmGQfWENZD-OU",
-      "image_credit": "WUSA9",
-      "news": [
-        {
-          "url": "https://www.wusa9.com/article/entertainment/music/fall-out-boy-twilight-of-the-punks-tour-to-nationals-park-the-offspring-when-is-fall-out-boy-going-to-be-near-me-washington-dc/65-0502684d-c20f-4c0a-bf70-e1e8d91dcb29",
-          "title": "Fall Out Boy bringing Twilight of the Punks tour to Nats Park with The Offspring",
-          "publisher": "WUSA9",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqbHHwXJVZv1wVmaO6ieLKtyfB-0T-B61n25nfMMJr6fKeVjQmGQfWENZD-OU"
-        },
-        {
-          "url": "https://www.9news.com/article/news/local/9news-mornings/fall-out-boy-twilight-of-the-punks-stadium-tour/73-91702311-5d57-4fe3-ac22-dfcecfc2934e",
-          "title": "'Twilight of the Punks': Fall Out Boy, Offspring announce Colorado stadium concert",
-          "publisher": "9News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjRFfgrEF8KArPOtwkYYwJ_vnf-LamP_GiA4SIOjMixn6uCWOLf9-PN9BeyFk"
-        },
-        {
-          "url": "https://www.cooplive.com/events/fall-out-boy-h9dz",
-          "title": "Fall Out Boy — A Day To Remember & Neck Deep",
-          "publisher": "Co-op Live",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbSA-07GfhZHcKRqOPZpUy6CAGaZ5VgDnbC6XOLhNm8sw1dPicwMDgIq7vSNo"
-        }
-      ]
-    },
-    {
-      "query": "jordan firstman",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T15:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/05/movies/club-kid-review.html",
-        "https://www.today.com/video/jordan-firstman-talks-making-directorial-debut-with-club-kid-273274949671",
-        "https://www.newyorker.com/culture/the-current-cinema/club-kid-is-a-disarming-cocktail-of-grit-and-fantasy"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS57I8Cgkrg15Ntbrhc7UEfBp1kgaQirqN857V44vwS_xczST7GEsB4XId8xoQ",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/05/movies/club-kid-review.html",
-          "title": "‘Club Kid’ Review: When the Lights Come Up",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS57I8Cgkrg15Ntbrhc7UEfBp1kgaQirqN857V44vwS_xczST7GEsB4XId8xoQ"
-        },
-        {
-          "url": "https://www.today.com/video/jordan-firstman-talks-making-directorial-debut-with-club-kid-273274949671",
-          "title": "Jordan Firstman Talks Making Directorial Debut With ‘Club Kid’",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7827Q8J_JyjaFhCXAY5V7JOIHTatABnk-lENjhT2MeGNMdalQJFcKDRah5E8"
-        },
-        {
-          "url": "https://www.newyorker.com/culture/the-current-cinema/club-kid-is-a-disarming-cocktail-of-grit-and-fantasy",
-          "title": "“Club Kid” Is a Disarming Cocktail of Grit and Fantasy",
-          "publisher": "The New Yorker",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReLipvPITb4N-VSXPRfYnmANopcJFbdo65i408xnb-Va-thB8zge1ji9YeHh4"
-        }
-      ]
-    },
-    {
-      "query": "nbis",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T15:20:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/nbis-stock-jumps-over-11-081534815.html",
-        "https://www.barchart.com/story/news/8766647/ahead-of-nebius-earnings-here-s-what-barchart-data-says-comes-next-for-nbis-stock",
-        "https://seekingalpha.com/article/4965657-nebius-the-first-domino-in-the-ai-collapse"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4oJXN70nz6-Hlm_iByfisuZFRsaNoOke68PnDsUO7ieNd1N6S0B0aGtRDd1U",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nbis-stock-jumps-over-11-081534815.html",
-          "title": "NBIS Stock Jumps Over 11% On CoreWeave Boost: Analysts Expect Over Six-Fold Growth In Sales In Upcoming Q3 Report",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4oJXN70nz6-Hlm_iByfisuZFRsaNoOke68PnDsUO7ieNd1N6S0B0aGtRDd1U"
-        },
-        {
-          "url": "https://www.barchart.com/story/news/8766647/ahead-of-nebius-earnings-here-s-what-barchart-data-says-comes-next-for-nbis-stock",
-          "title": "Ahead of Nebius Earnings, Here's What Barchart Data Says Comes Next for NBIS Stock",
-          "publisher": "Barchart.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ7bNiSbJG7enqMW12UrjE29El2CmSGa_qwVY5vqa5p-YVU-g18503H5IfZEsE"
-        },
-        {
-          "url": "https://seekingalpha.com/article/4965657-nebius-the-first-domino-in-the-ai-collapse",
-          "title": "Nebius: The First Domino In The AI Collapse (NASDAQ:NBIS)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTN83x9y23Ey49Wn_NILOO-sWo7av5m9y3QtuqI0_zQd-w6U-6D02AW5aNtUN4"
-        }
-      ]
-    },
-    {
-      "query": "kavya maran",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T15:10:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/articles/srh-owner-kavya-maran-marriage-150439704.html",
-        "https://www.ndtv.com/entertainment/anirudh-ravichander-and-kavya-maran-are-now-married-first-photos-of-newlyweds-out-12302477",
-        "https://timesofindia.indiatimes.com/entertainment/tamil/movies/news/anirudh-ravichander-and-kavya-marans-wedding-when-the-jailer-2-composer-revealed-his-first-proposal-that-lasted-only-3-hours/articleshow/135710639.cms"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3bsZJfsncCN23P2z6jDDD92u1-vdIfLSq_IzFvLnai91c0iZkjBQ--UMwYpQ",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/srh-owner-kavya-maran-marriage-150439704.html",
-          "title": "SRH owner Kavya Maran marriage reception: Expected guests and all about her fiance Anirudh Ravichander",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3bsZJfsncCN23P2z6jDDD92u1-vdIfLSq_IzFvLnai91c0iZkjBQ--UMwYpQ"
-        },
-        {
-          "url": "https://www.ndtv.com/entertainment/anirudh-ravichander-and-kavya-maran-are-now-married-first-photos-of-newlyweds-out-12302477",
-          "title": "Anirudh Ravichander And Kavya Maran Are Now Married, First Photo Of Newlyweds Out",
-          "publisher": "NDTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYPL9Qrd1J6oC6H9-hOC-ectlW4wQ49Zy_BbTHRwbyy5jPnNbF6yy4Z8N3Ajs"
-        },
-        {
-          "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movies/news/anirudh-ravichander-and-kavya-marans-wedding-when-the-jailer-2-composer-revealed-his-first-proposal-that-lasted-only-3-hours/articleshow/135710639.cms",
-          "title": "Anirudh Ravichander and Kavya Maran's wedding: When the 'Jailer 2' composer revealed his first proposal t",
-          "publisher": "The Times of India",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7H76p-sPSkjBpII3HQFo_huJwMu7h_pf1Ow7e4VGnAPEt0g7OnGr2BmIQZms"
         }
       ]
     }
