@@ -3,9 +3,149 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T17:31:36.174792Z",
+  "checked_at": "2026-11-11T18:01:21.584243Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "landfill",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T17:40:00Z",
+      "related_news_urls": [
+        "https://www.newser.com/story/399741/bill-gates-landfill-investments-clash-with-his-climate-crusade.html",
+        "https://www.propublica.org/article/bill-gates-republic-landfill-methane-pollution",
+        "https://www.fox29.com/news/why-your-recycling-is-likely-ending-up-landfill-costing-local-communities-thousands-fines"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQN7lmsRJVqvsnQD9A3XdlAbcXdHgQUX6q1SnKHABA1NLSWPQm4L_SI0j-vcs4",
+      "image_credit": "Newser",
+      "news": [
+        {
+          "url": "https://www.newser.com/story/399741/bill-gates-landfill-investments-clash-with-his-climate-crusade.html",
+          "title": "Bill Gates' Landfill Investments Clash With His Climate Crusade",
+          "publisher": "Newser",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQN7lmsRJVqvsnQD9A3XdlAbcXdHgQUX6q1SnKHABA1NLSWPQm4L_SI0j-vcs4"
+        },
+        {
+          "url": "https://www.propublica.org/article/bill-gates-republic-landfill-methane-pollution",
+          "title": "Bill Gates Wants to Stop Global Warming. He’s Earned Billions From Climate-Polluting Landfills.",
+          "publisher": "ProPublica",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSkk_3u8vv_EWZI26ziSccidragq2WSRcDx61hFjPxG376_5AFffkiz9E8BXlc"
+        },
+        {
+          "url": "https://www.fox29.com/news/why-your-recycling-is-likely-ending-up-landfill-costing-local-communities-thousands-fines",
+          "title": "Why your plastic trash bags are sending tons of good local recycling straight to the landfill",
+          "publisher": "FOX 29 Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNFVTsK-3zvsLVJM4RBDTnyisK0JDIwfIi3HHA0_4Lde_K_Fm7RiwAioxPsXo"
+        }
+      ]
+    },
+    {
+      "query": "casper ruud",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T17:30:00Z",
+      "related_news_urls": [
+        "https://www.atptour.com/en/news/stockholm-2026-scouting-report",
+        "https://www.yardbarker.com/tennis/articles/davidovich_fokina_vacherot_and_berrettini_among_14_players_to_withdraw_from_stockholm_open/s1_17460_44526929",
+        "https://www.thetennisgazette.com/opinion/taylor-fritz-handed-bad-news-after-losing-to-carlos-alcaraz-in-paris-as-stockholm-draw-is-announced/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4lJIvl9TuXj83uXKICkTZuIlxpYGXDASJQ1nNR3gXk3aF85H5KADi1B3bekY",
+      "image_credit": "ATP Tour",
+      "news": [
+        {
+          "url": "https://www.atptour.com/en/news/stockholm-2026-scouting-report",
+          "title": "5 things to watch in Stockholm: Fritz, Ruud, Musetti & more",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4lJIvl9TuXj83uXKICkTZuIlxpYGXDASJQ1nNR3gXk3aF85H5KADi1B3bekY"
+        },
+        {
+          "url": "https://www.yardbarker.com/tennis/articles/davidovich_fokina_vacherot_and_berrettini_among_14_players_to_withdraw_from_stockholm_open/s1_17460_44526929",
+          "title": "Davidovich Fokina, Vacherot and Berrettini among 14 players to withdraw from Stockholm Open",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQwJ-AgBdbljC4phWVV4OrujtKzo9gFJ75d_wTZdvgbf6mCU_8-xvGfa6XV_k"
+        },
+        {
+          "url": "https://www.thetennisgazette.com/opinion/taylor-fritz-handed-bad-news-after-losing-to-carlos-alcaraz-in-paris-as-stockholm-draw-is-announced/",
+          "title": "Taylor Fritz handed bad news after losing to Carlos Alcaraz in Paris as Stockholm draw is announced",
+          "publisher": "The Tennis Gazette",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqtJ3gC85ml-SoYl-3VlrkP0Dh4uZAizCMcxK2rXnZRCPlbTvl1DlUeQzz-OM"
+        }
+      ]
+    },
+    {
+      "query": "baseball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T17:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mlb/story/_/id/50433101/offseason-2026-27-free-agency-passan-biggest-trades-signings",
+        "https://bleacherreport.com/articles/25531463-updated-mlb-free-agents-2026-rumors-predictions-tarik-skubal-teruaki-sato-more",
+        "https://www.sportsnet.ca/mlb/article/predicting-off-season-contracts-for-mlbs-top-50-free-agents/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLeoyYriQH4ppKcs0jcpAHQN8MAEtG-5uxD-Op2BbPQ6TtqibpBvV9C_BhHnw",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mlb/story/_/id/50433101/offseason-2026-27-free-agency-passan-biggest-trades-signings",
+          "title": "Perfect 2026-27 MLB free agency moves for teams to watch",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLeoyYriQH4ppKcs0jcpAHQN8MAEtG-5uxD-Op2BbPQ6TtqibpBvV9C_BhHnw"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25531463-updated-mlb-free-agents-2026-rumors-predictions-tarik-skubal-teruaki-sato-more",
+          "title": "Updated MLB Free Agents 2026 Rumors, Predictions for Tarik Skubal, Teruaki Sato, More",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5Z2HloBsHm1WERjSGxtqRYSSIF68EdQ7sLwdVDDVTH6wVAHBE7MMUY-xL6I"
+        },
+        {
+          "url": "https://www.sportsnet.ca/mlb/article/predicting-off-season-contracts-for-mlbs-top-50-free-agents/",
+          "title": "Predicting off-season contracts for MLB's top 50 free agents",
+          "publisher": "Sportsnet.ca",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm_XbM0uWnndNUw3vxgutAS0fApR6RbqPAqpeJuO59iC60rtPjpeQxBVyuhSQ"
+        }
+      ]
+    },
+    {
+      "query": "will scharf",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-11T17:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/11/us/politics/trump-democrats-congress-oversight-committee.html",
+        "https://www.nbclosangeles.com/news/politics/white-house-democrats-planned-probes-criminality/3968967/",
+        "https://www.cnn.com/2026/11/11/politics/live-news/hegseth-impeachment-congress"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTCT-eWrVa1cTKjxYXeyimkaZw6bjF6Xm4-rzN7lTeCwNCO7VOMX5c4SwTOuE",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/11/us/politics/trump-democrats-congress-oversight-committee.html",
+          "title": "White House Threatens Congress, Saying Aggressive Investigations Could Be Crime",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTCT-eWrVa1cTKjxYXeyimkaZw6bjF6Xm4-rzN7lTeCwNCO7VOMX5c4SwTOuE"
+        },
+        {
+          "url": "https://www.nbclosangeles.com/news/politics/white-house-democrats-planned-probes-criminality/3968967/",
+          "title": "White House lawyer warns Democrats that threats of oversight are ‘blatant criminality'",
+          "publisher": "NBC Los Angeles",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4y2HARA0ggnCPv6K_Eq1og-Fq1CxJ1ZyqaiuEeWmJsvxkz2lkF88pd8OuKQA"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/11/politics/live-news/hegseth-impeachment-congress",
+          "title": "White House warns incoming House Oversight chair it ‘will not be extorted’",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQK-JkAzzWgsfph24ms9ez0uGa_yz3Wx9wS0qZdJevKjWH8y8MA9FpasGTxZWI"
+        }
+      ]
+    },
     {
       "query": "applebees menu",
       "approx_searches": "500+",
@@ -13,7 +153,7 @@
       "related_news_urls": [
         "https://finance.yahoo.com/small-business/articles/applebee-menu-innovation-pipeline-boosting-152618923.html",
         "https://www.applebees.com/en/news/2026/veterans-day",
-        "https://www.clickondetroit.com/news/local/2026/11/11/these-metro-detroit-businesses-are-offering-freebies-for-military-members-this-veterans-day/"
+        "https://www.cbsnews.com/miami/video/south-florida-events-held-to-mark-veterans-day/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPNnn_oSI3Q0kwi8H2EPEIC3n_kK4NkiYM0LgdlV_409VHqqb3D2qZExqnSGw",
       "image_credit": "Yahoo Finance",
@@ -33,11 +173,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXlCs38FbMbLzMNIJpvRMPuwFbg_nZ8si5FdNY84hLXzXhF0eEey8COH-nHr8"
         },
         {
-          "url": "https://www.clickondetroit.com/news/local/2026/11/11/these-metro-detroit-businesses-are-offering-freebies-for-military-members-this-veterans-day/",
-          "title": "These Metro Detroit businesses are offering freebies for military members this Veterans Day",
-          "publisher": "ClickOnDetroit | WDIV Local 4",
+          "url": "https://www.cbsnews.com/miami/video/south-florida-events-held-to-mark-veterans-day/",
+          "title": "South Florida events held to mark Veterans Day",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRlPraHzWpvwSmJ_VSajHG7wf4tsZhlyCBoMdelpS1JZWEf7q50e6dn5gboPM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKf74UgVomJ5sqo8sXmKNgaGm82XzPdlghf_Obp9TWffbrsJ3DUPbeFa-Hw5U"
         }
       ]
     },
@@ -78,7 +218,7 @@
     },
     {
       "query": "chipotle tattoo deal",
-      "approx_searches": "2000+",
+      "approx_searches": "500+",
       "published_at": "2026-11-11T17:00:00Z",
       "related_news_urls": [
         "https://newsroom.chipotle.com/2026-11-09-CHIPOTLE-BRINGS-BACK-RECORD-BREAKING-TATTED-LIKE-A-CHIPOTLE-BAG-BOGO-ON-FRIDAY,-NOVEMBER-13",
@@ -116,54 +256,61 @@
       "approx_searches": "2000+",
       "published_at": "2026-11-11T16:40:00Z",
       "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-10/vanguard-inks-4-billion-of-private-debt-to-fund-altruist-deal",
-        "https://riabiz.com/a/2026/11/10/vanguard-just-scored-a-4-billion-private-placement-to-close-its-46-billion-altruist-deal-by-years-end-but-it-comes-with-at-least-a-200-million-annual-drag-on-its-legendary-at-cost-model",
-        "https://simplywall.st/stocks/us/banks/nyse-bac/bank-of-america/news/bank-of-america-bac-arranged-4-billion-in-private-debt-for-a"
+        "https://www.investopedia.com/why-you-should-think-twice-about-keeping-cash-savings-at-vanguard-schwab-or-fidelity-12248197",
+        "https://finance.yahoo.com/personal-finance/investing/article/vanguard-and-fidelity-have-a-warning-for-retirement-savers-195925771.html",
+        "https://www.thestreet.com/retirement/fidelity-and-vanguard-issue-a-sobering-outlook-for-retirees"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgOuEhbSZ-rVqzpznGyiqoxU88lV-dmEK2tcMGJbjHPr1wr0li3Ppn6HT_Z8U",
-      "image_credit": "Bloomberg.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQslrLn17t4R2lytm0zVn4RUK0nkQgkG4yO1Lol57RF-YiYaWfY4VVCmYWWyqU",
+      "image_credit": "Investopedia",
       "news": [
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-10/vanguard-inks-4-billion-of-private-debt-to-fund-altruist-deal",
-          "title": "Vanguard Inks $4 Billion of Private Debt to Fund Altruist Deal",
-          "publisher": "Bloomberg.com",
+          "url": "https://www.investopedia.com/why-you-should-think-twice-about-keeping-cash-savings-at-vanguard-schwab-or-fidelity-12248197",
+          "title": "Why You Should Think Twice About Keeping Cash Savings at Vanguard, Schwab, or Fidelity",
+          "publisher": "Investopedia",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgOuEhbSZ-rVqzpznGyiqoxU88lV-dmEK2tcMGJbjHPr1wr0li3Ppn6HT_Z8U"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQslrLn17t4R2lytm0zVn4RUK0nkQgkG4yO1Lol57RF-YiYaWfY4VVCmYWWyqU"
         },
         {
-          "url": "https://riabiz.com/a/2026/11/10/vanguard-just-scored-a-4-billion-private-placement-to-close-its-46-billion-altruist-deal-by-years-end-but-it-comes-with-at-least-a-200-million-annual-drag-on-its-legendary-at-cost-model",
-          "title": "Vanguard just scored a $4-billion private placement to close its $4.6-billion Altruist deal by year's end, but it comes with at least a $200-million annual drag on its legendary at",
-          "publisher": "RIABiz",
+          "url": "https://finance.yahoo.com/personal-finance/investing/article/vanguard-and-fidelity-have-a-warning-for-retirement-savers-195925771.html",
+          "title": "Vanguard and Fidelity have a warning for retirement savers",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ75krBxJ-Xqx4f-LAdcB1DtlhEd3O8GPTS-_o0cdx_VqmPzR_bJ8SwzlhE7N8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXiW4Ggr1BzzbpW8WRkNTY-9RyV2gH0AODp8O18yux0zju9J52d3HdzIdmgtc"
         },
         {
-          "url": "https://simplywall.st/stocks/us/banks/nyse-bac/bank-of-america/news/bank-of-america-bac-arranged-4-billion-in-private-debt-for-a",
-          "title": "Bank of America (BAC) Arranged $4 Billion In Private Debt For A Wealth Deal",
-          "publisher": "Simply Wall St",
+          "url": "https://www.thestreet.com/retirement/fidelity-and-vanguard-issue-a-sobering-outlook-for-retirees",
+          "title": "Fidelity and Vanguard issue a sobering outlook for retirees",
+          "publisher": "TheStreet",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtr2IMFTCXP1kBD8aBXH78xOwjkWe_n83xphi8q3NXUJbAHZnFE6oWZwySKhc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUllmmrg_1SAj4AuZIow-q7ynE0n6iHvq_coCMZEajxGaUSE0UPfcf8EVMVsA"
         }
       ]
     },
     {
       "query": "rex ryan",
-      "approx_searches": "5000+",
+      "approx_searches": "10000+",
       "published_at": "2026-11-11T16:30:00Z",
       "related_news_urls": [
+        "https://sports.yahoo.com/nfl/article/espn-analyst-rex-ryan-arrested-after-allegedly-striking-2-pedestrians-with-his-truck-running-over-their-feet-170156903.html",
         "https://www.nashville.gov/departments/police/news/former-nfl-coach-surrendered-booking-morning",
-        "https://www.wsmv.com/2026/11/11/former-nfl-coach-rex-ryan-facing-charges-after-truck-allegedly-hit-pedestrians-nashville-police-say/",
-        "https://www.newschannel5.com/sports/former-nfl-coach-rex-ryan-charged-after-hitting-two-pedestrians-with-his-truck-and-leaving-scene"
+        "https://www.wsmv.com/2026/11/11/former-nfl-coach-rex-ryan-facing-charges-after-truck-allegedly-hit-pedestrians-nashville-police-say/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQM9AnNAcig8J2e76-uAYHubv-jVmrv6wkXTuQXA5bpYjBTD9TsG0vJHygwfqs",
-      "image_credit": "Nashville.gov",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNRVsH2QrxwWs4QePxmkSCk0_yIe4zimIC8YvhiG_XZbm1Iam_UVt_fyHyWgo",
+      "image_credit": "Yahoo Sports",
       "news": [
+        {
+          "url": "https://sports.yahoo.com/nfl/article/espn-analyst-rex-ryan-arrested-after-allegedly-striking-2-pedestrians-with-his-truck-running-over-their-feet-170156903.html",
+          "title": "ESPN analyst Rex Ryan arrested after allegedly striking 2 pedestrians with his truck, running over their feet",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNRVsH2QrxwWs4QePxmkSCk0_yIe4zimIC8YvhiG_XZbm1Iam_UVt_fyHyWgo"
+        },
         {
           "url": "https://www.nashville.gov/departments/police/news/former-nfl-coach-surrendered-booking-morning",
           "title": "Former NFL Coach surrendered for booking this morning",
           "publisher": "Nashville.gov",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQM9AnNAcig8J2e76-uAYHubv-jVmrv6wkXTuQXA5bpYjBTD9TsG0vJHygwfqs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7HkwDvGnMEKkoaMxLXS1qcosFh4g_TIzMQYOIBKCe__l7999SaUkd7A3ny9M"
         },
         {
           "url": "https://www.wsmv.com/2026/11/11/former-nfl-coach-rex-ryan-facing-charges-after-truck-allegedly-hit-pedestrians-nashville-police-say/",
@@ -171,13 +318,6 @@
           "publisher": "WSMV",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqKS4BhC2RXLL5UsRNRAvnmfL7sNxstFVjQDYhjodAMjpTtsWJwdeOjBVyWUI"
-        },
-        {
-          "url": "https://www.newschannel5.com/sports/former-nfl-coach-rex-ryan-charged-after-hitting-two-pedestrians-with-his-truck-and-leaving-scene",
-          "title": "Former NFL coach Rex Ryan charged after hitting two pedestrians with his truck and leaving scene",
-          "publisher": "News Channel 5 Nashville",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQR5zKJaeVkzGEvGdwCsNbHPbujq_-IVKrvgnG1onrKTon5RkU4kjGIb4rhncw"
         }
       ]
     },
@@ -213,146 +353,6 @@
           "publisher": "SportsLine",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwUO-7Ym35HgW5TdKBcBAL7RCasia1FSDP6vfZD5PivaGWBVJk1vzYL9vyWTc"
-        }
-      ]
-    },
-    {
-      "query": "suspect",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T16:20:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/09/us/suspected-cruise-ship-killing",
-        "https://www.today.com/news/cruise-ship-death-murder-charges-msc-seascape-jason-watford-rcna608729",
-        "https://www.click2houston.com/news/local/2026/11/10/child-found-in-cruise-ship-murder-room-after-east-texas-man-charged-in-wifes-death-at-sea/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1eHbyqtAsCazGebO66AzDIOdLnbk75zFiTB1S6cSiNYh2nHVm6h6ir1sOsLg",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/09/us/suspected-cruise-ship-killing",
-          "title": "Man charged after wife found dead in room aboard a cruise ship hours after departing Galveston",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1eHbyqtAsCazGebO66AzDIOdLnbk75zFiTB1S6cSiNYh2nHVm6h6ir1sOsLg"
-        },
-        {
-          "url": "https://www.today.com/news/cruise-ship-death-murder-charges-msc-seascape-jason-watford-rcna608729",
-          "title": "What We Know About the Alleged Killing On the MSC Seascape Cruise Ship",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDABa-VudY9cxhwvdqagtW4bF0OURBgJI1f2XRZygSm--CvExzfX8KZEj306A"
-        },
-        {
-          "url": "https://www.click2houston.com/news/local/2026/11/10/child-found-in-cruise-ship-murder-room-after-east-texas-man-charged-in-wifes-death-at-sea/",
-          "title": "Child found in cabin where East Texas man allegedly killed wife on cruise ship out of Galveston",
-          "publisher": "Click2Houston",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbmbG3npXVKkr_VMGDjd7_az02XK3tOSJQFIjKKZynoNIfPtuJ0VXxJcLsQvQ"
-        }
-      ]
-    },
-    {
-      "query": "saudi arabia",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T16:20:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/business/energy/saudi-arabia-leads-further-jump-opec-oil-output-despite-war-2026-11-11/",
-        "https://www.bloomberg.com/news/articles/2026-11-11/saudis-tell-opec-output-they-surged-26-to-new-war-time-high",
-        "https://www.wsj.com/business/energy-oil/opecs-oil-production-nears-prewar-levels-on-saudi-rebound-70ffcc13"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH7FPfxQ5mGH-j8NL9_UGxBixuqJLpi4lZ12G6lPEY0IE38q8oQhOuTo53Bjc",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/business/energy/saudi-arabia-leads-further-jump-opec-oil-output-despite-war-2026-11-11/",
-          "title": "OPEC+ oil output in October nears pre-Iran war rate, led by Saudi Arabia",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH7FPfxQ5mGH-j8NL9_UGxBixuqJLpi4lZ12G6lPEY0IE38q8oQhOuTo53Bjc"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-11/saudis-tell-opec-output-they-surged-26-to-new-war-time-high",
-          "title": "Saudis Tell OPEC Output Surged 26% to Highest Since War Began",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHJQ_VgZ9r8AzDepwEymMmPfBzL8JT8S-4bOOxijy2aPTBIz0zhQyhWixHRJI"
-        },
-        {
-          "url": "https://www.wsj.com/business/energy-oil/opecs-oil-production-nears-prewar-levels-on-saudi-rebound-70ffcc13",
-          "title": "OPEC’s Oil Production Nears Prewar Levels on Saudi Rebound",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6jPlGaKvwqQpbETWKiZp07KH_Kk1IyxNRSsmuoAhTAP1FoMNTgZTLTl8eVrk"
-        }
-      ]
-    },
-    {
-      "query": "usman nurmagomedov",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-11T16:10:00Z",
-      "related_news_urls": [
-        "https://www.mmafighting.com/ufc/520524/bloody-merab-dvalishvili-claims-sneaky-usman-nurmagomedov-and-friends-jumped-him-ahead-of-raf-abu-dhabi",
-        "https://sports.yahoo.com/articles/merab-dvalishvili-bloodied-alleged-sneak-165122711.html",
-        "https://www.mmanews.com/article/merab-dvalishvili-claims-usman-nurmagomedov-ambushed-him"
-      ],
-      "image_url": null,
-      "image_credit": "MMA Fighting",
-      "news": [
-        {
-          "url": "https://www.mmafighting.com/ufc/520524/bloody-merab-dvalishvili-claims-sneaky-usman-nurmagomedov-and-friends-jumped-him-ahead-of-raf-abu-dhabi",
-          "title": "Bloody Merab Dvalishvili claims ‘sneaky’ Usman Nurmagomedov and friends jumped him ahead of RAF Abu Dhabi",
-          "publisher": "MMA Fighting",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/merab-dvalishvili-bloodied-alleged-sneak-165122711.html",
-          "title": "Merab Dvalishvili bloodied after alleged sneak attack by Usman Nurmagomedov in Abu Dhabi",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://www.mmanews.com/article/merab-dvalishvili-claims-usman-nurmagomedov-ambushed-him",
-          "title": "Merab Dvalishvili Claims Usman Nurmagomedov Ambushed Him",
-          "publisher": "MMANews.com",
-          "description": "",
-          "image_url": null
-        }
-      ]
-    },
-    {
-      "query": "whoopi goldberg",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T16:10:00Z",
-      "related_news_urls": [
-        "https://www.tvinsider.com/1302712/the-view-whoopi-goldberg-message-pete-hegseth-democrat-party-leadership-fight/",
-        "https://www.foxnews.com/media/whoopi-goldberg-warns-democrats-take-care-business-after-midterm-wins",
-        "https://www.yahoo.com/entertainment/articles/watch-view-debates-pete-hegseth-033403065.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBImQwR1RxmXe-apJ1AsxX8gBSItPTNwNUVK6gT-0vVwbqGLQUfUsxxhn2zF8",
-      "image_credit": "TV Insider",
-      "news": [
-        {
-          "url": "https://www.tvinsider.com/1302712/the-view-whoopi-goldberg-message-pete-hegseth-democrat-party-leadership-fight/",
-          "title": "Whoopi Goldberg Speaks Directly to Pete Hegseth & Democrats on ‘The View’",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBImQwR1RxmXe-apJ1AsxX8gBSItPTNwNUVK6gT-0vVwbqGLQUfUsxxhn2zF8"
-        },
-        {
-          "url": "https://www.foxnews.com/media/whoopi-goldberg-warns-democrats-take-care-business-after-midterm-wins",
-          "title": "Whoopi Goldberg warns Democrats to 'take care of business' after midterm wins",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKXFuUDxXogVI22N5mlxqeI7Rxqz9VAxszQUBiSlEAsW5PX5XU_1fHFb7Ucwk"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/articles/watch-view-debates-pete-hegseth-033403065.html",
-          "title": "WATCH: The View Debates Pete Hegseth Impeachment Articles [Video]",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyF8XUU49GlF_lYrjE2BfopupywivRAp0etW86z477cN-_DjD_4L4JJ2hsS60"
         }
       ]
     }
