@@ -126,7 +126,20 @@ function deliverQuest(){
  },window.location.origin);
 }
 const questForm=el('zeusQuestForm'),questInput=el('zeusQuestInput'),
- questSend=el('zeusQuestSend'),questStatus=el('zeusQuestStatus');
+ questSend=el('zeusQuestSend'),questStatus=el('zeusQuestStatus'),
+ questReply=el('zeusQuestReply');
+const ZEUS_DRAFT_KEY='quantaphi:zeus:quest-draft:v1';
+function saveQuestDraft(){
+ try{sessionStorage.setItem(ZEUS_DRAFT_KEY,questInput.value)}catch{}
+}
+try{questInput.value=sessionStorage.getItem(ZEUS_DRAFT_KEY)||''}catch{}
+questInput.addEventListener('input',saveQuestDraft);
+function releaseQuest(pending,message,{retrySameId=true}={}){
+ if(questPending!==pending)return;
+ questPending=null;questSend.disabled=false;
+ if(!retrySameId)questLastAttempt=null;
+ questStatus.textContent=message;
+}
 questInput.addEventListener('keydown',event=>{
  if(event.key==='Enter'&&!event.shiftKey&&!event.isComposing){
   event.preventDefault();questForm.requestSubmit();
@@ -139,39 +152,48 @@ questForm.addEventListener('submit',event=>{
  setMode('chat');
  const requestId=questLastAttempt?.text===text?questLastAttempt.requestId:
   'quest_'+crypto.randomUUID();
- const pending={requestId,text,dispatched:false};
+ const pending={requestId,text,dispatched:false,acknowledged:false};
  questPending=pending;questLastAttempt={requestId,text};
- questSend.disabled=true;
+ questSend.disabled=true;saveQuestDraft();
  questStatus.textContent=zeusAssistantReady?
   'Sending your question into the Bubbles conversation…':
-  'Connecting to Bubbles. Your question stays here until accepted.';
+  'Connecting to Bubbles. Your draft remains saved until a real answer arrives.';
  deliverQuest();
- // No automatic repeat: a missing acknowledgement leaves the user's text intact.
  setTimeout(()=>{
-  if(questPending!==pending)return;
-  questPending=null;questSend.disabled=false;
-  questStatus.textContent='No acknowledgment from Bubbles. Your question is still here; press Send to retry.';
+  if(questPending===pending&&!pending.acknowledged)
+   releaseQuest(pending,'Bubbles did not acknowledge the request. Your draft is saved; Send will retry the same request.');
  },12000);
+ setTimeout(()=>{
+  if(questPending===pending)
+   releaseQuest(pending,'Bubbles did not confirm an answer in time. Your draft is saved; Send will check the same request before repeating it.');
+ },90000);
 });
 window.addEventListener('message',event=>{
  const iframe=el('zeusAssistantFrame'),data=event.data;
  if(event.origin!==window.location.origin||event.source!==iframe?.contentWindow||
-  !questPending||data?.type!=='quantaphi:bubbles:quest-ack'||
-  data.id!=='coliseum-zeus-assistant'||data.requestId!==questPending.requestId)return;
- const accepted=data.status==='accepted';
- if(accepted){
-  // User might have started typing a second message after pressing Send.
-  if(questInput.value.trim()===questPending.text)questInput.value='';
-  questLastAttempt=null;
-  questStatus.textContent='Question accepted by Bubbles. The AI reply appears in the conversation below.';
-  el('zeusAssistantMount')?.scrollIntoView?.({block:'start',behavior:'smooth'});
- }else{
-  if(data.status==='busy')questLastAttempt=null;
-  questStatus.textContent=data.status==='busy'?
-   'Bubbles is working on another reply. Your text is saved here; send it again when ready.':
-   'Bubbles did not accept this question. Your text remains here to retry.';
+  !questPending||data?.id!=='coliseum-zeus-assistant'||
+  data.requestId!==questPending.requestId)return;
+ const pending=questPending;
+ if(data.type==='quantaphi:bubbles:quest-ack'){
+  if(data.status==='accepted'){
+   pending.acknowledged=true;
+   questStatus.textContent='Question accepted; waiting for an actual Bubbles reply…';
+  }else{
+   releaseQuest(pending,data.status==='busy'?
+    'Bubbles is busy. Your draft is saved; try Send again when ready.':
+    'Bubbles refused the request. Your draft remains saved.',{retrySameId:false});
+  }
+  return;
  }
- questPending=null;questSend.disabled=false;
+ if(data.type!=='quantaphi:bubbles:quest-result')return;
+ if(data.status==='complete'&&typeof data.reply==='string'&&data.reply.trim()){
+  questReply.textContent=data.reply.slice(0,8000);
+  questReply.hidden=false;
+  if(questInput.value.trim()===pending.text){questInput.value='';saveQuestDraft();}
+  releaseQuest(pending,'Answer received from Bubbles. The conversation is below.',{retrySameId:false});
+ }else{
+  releaseQuest(pending,'Bubbles could not confirm an answer. Your draft is saved so you can retry.',{retrySameId:false});
+ }
 });
 function setMode(next){
  document.body.dataset.zeusMode=next;
