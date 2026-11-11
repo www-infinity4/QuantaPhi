@@ -60,3 +60,11 @@ test('Zeus distinguishes accepting a prompt from receiving a confirmed Bubbles a
  assert.match(host,/zeusQuestReply/,'the confirmed answer must be visible in Zeus itself');
  assert.doesNotMatch(host,/Question accepted by Bubbles\. The AI reply appears/,'acceptance is not answer evidence');
 });
+
+test('Zeus must verify embedded Bubbles initialization, not iframe load alone',()=>{
+ const host=read('coliseum/coliseum.js'),engine=read('bubbles-ai.js');
+ assert.match(engine,/quantaphi:bubbles:ready/);
+ assert.match(host,/quantaphi:bubbles:ready/);
+ assert.match(host,/event\.source!==iframe\?\.contentWindow/);
+ assert.doesNotMatch(host,/iframe\.addEventListener\('load',\(\)=>\{\s*zeusAssistantReady=true/);
+});
