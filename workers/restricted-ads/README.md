@@ -29,3 +29,20 @@ Advertising a legal adult cannabis business is not the same as using general ad 
 All 50 U.S. states are in the business city import queue; DC, PR, VI, GU, AS and MP are separate jurisdictions. A queued job does not mean businesses were imported. Business listings and cannabis advertiser **approvals** must remain separate: public directory presence grants no advertising privileges.
 
 CI: `node --test test/restricted-ad-policy.test.mjs test/restricted-ads-worker.test.mjs`
+
+## Campaign media and contract fail-closed upgrade (Work Order #1905)
+Source migration `migrations/002-reviewed-creative-flight.sql` adds:
+`rights_expires_at`, `campaign_starts_at`, `campaign_ends_at`,
+`sponsor_agreement_id`. The Worker and the original 21+ UI will no longer
+serve an advertising image without all four valid, active facts plus an
+existing verified license, documented review, explicit age proof, permission
+and jurisdiction approval. Existing rows receive empty strings (NOT invented
+agreements) and remain unservable until explicitly reviewed. A flag or a
+string in D1 is only a record of reviewed external evidence; never infer
+permission from the advertiser's public website.
+Before considering this Worker deployable, apply the migration in isolated
+staging and confirm schema readback. Updating Worker code before its D1
+migration safely denies campaigns, but is **not** an accepted release.
+The production route and external ELIGIBILITY verifier are still absent.
+No user age data, sponsor payment or wallet balances are collected by this
+migration. See work/unfinished/TICKET-1905.md and PR #1909.
