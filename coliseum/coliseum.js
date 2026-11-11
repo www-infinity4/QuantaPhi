@@ -148,6 +148,9 @@ function saveQuestDraft(){
 }
 try{questInput.value=sessionStorage.getItem(ZEUS_DRAFT_KEY)||''}catch{}
 questInput.addEventListener('input',saveQuestDraft);
+el('zeusStartQuest')?.addEventListener('click',()=>{
+ setMode('chat');questInput.focus();questInput.scrollIntoView({block:'center',behavior:'smooth'});
+});
 function releaseQuest(pending,message,{retrySameId=true}={}){
  if(questPending!==pending)return;
  questPending=null;questSend.disabled=false;
