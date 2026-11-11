@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {summarizeGate} from '../bubbles-signin-gate.mjs';
 import {summarizeProviderVerification} from '../bubbles-provider-verification.mjs';
+import {publicConnection} from '../workers/bubbles-connections/consent.mjs';
 
 const now=Date.now();
 const catalog={providers:[
@@ -66,4 +67,14 @@ test('verification center is integrated into the existing account page, not a se
  assert.match(client,/summarizeProviderVerification/);
  assert.match(client,/Verification Center/);
  assert.doesNotMatch(page,/localStorage\.setItem\(['"](?:access_token|refresh_token|client_secret)/);
+});
+
+test('server account evidence includes its actual record update time, never an invented provider probe',()=>{
+ const stored={...connected('google',['identity.read']),userId:'wallet-a',providerSubject:'google-a',
+   credentialRef:'private-token-ref',updatedAt:now-12345};
+ const published=publicConnection(stored);
+ assert.equal(published.updatedAt,now-12345,'The UI must receive an actual server record timestamp');
+ assert.equal('verifiedAt' in published,false,'Storage updates are not provider verification');
+ assert.equal('credentialRef' in published,false,'Token storage paths stay secret');
+ assert.equal('userId' in published,false,'Public account status does not disclose internal wallet IDs');
 });
