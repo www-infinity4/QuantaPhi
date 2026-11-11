@@ -44,6 +44,13 @@ test('creative delivery requires rights, current review, matching jurisdiction, 
   assert.equal(allowCreative(invalid,'US-CO',now),null);
  }
 });
+test('restricted creative output never restores raw unreviewed markup in its card identifier',()=>{
+ const row={...creative,id:'approved-creative<script></script>'};
+ const result=allowCreative(row,'US-CO',now);
+ assert.ok(result,'valid sanitized creative may be selected after all gates pass');
+ assert.equal(result.id,'approved-creative',
+  'Worker output must preserve the sanitized identifier from eligibleCreative');
+});
 const request=(method,path,origin='https://quantaphi.org')=>new Request(origin+path,{
  method,headers:method==='POST'?{'Origin':origin,'Content-Type':'application/json','Cookie':'session=private'}:{'Cookie':'session=private'},
  ...(method==='POST'?{body:JSON.stringify({category:'cannabis',opt_in:true})}:{})
