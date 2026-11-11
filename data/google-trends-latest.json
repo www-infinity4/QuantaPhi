@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T12:33:00.177476Z",
+  "checked_at": "2026-11-11T13:01:38.247256Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "what does veterans day celebrate",
-      "approx_searches": "100+",
-      "published_at": "2026-11-11T12:20:00Z",
-      "related_news_urls": [
-        "https://www.wral.com/news/local/nc-veterans-day-events/",
-        "https://www.dallasnews.com/opinion/commentary/article/veterans-day-dallas-community-connections-22523392.php",
-        "https://www.telegraphherald.com/news/tri-state/article_e09f002e-76ad-4f6a-bdc5-dc787d84c8e9.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThbHe4q05yieUwCLldowcxpfh5PQEYJA2itSYKF-xmMMQyvoT1a0-joViZp8Y",
-      "image_credit": "WRAL",
-      "news": [
-        {
-          "url": "https://www.wral.com/news/local/nc-veterans-day-events/",
-          "title": "Events planned in the Triangle to observe Veterans Day",
-          "publisher": "WRAL",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThbHe4q05yieUwCLldowcxpfh5PQEYJA2itSYKF-xmMMQyvoT1a0-joViZp8Y"
-        },
-        {
-          "url": "https://www.dallasnews.com/opinion/commentary/article/veterans-day-dallas-community-connections-22523392.php",
-          "title": "Veterans Day Is about community and the bonds we create",
-          "publisher": "Dallas News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLamAvkWQuSiiiEbOsGkiIRqlCsaZs7hRydImx190OJyqBsKxa7i6uLHyWVCQ"
-        },
-        {
-          "url": "https://www.telegraphherald.com/news/tri-state/article_e09f002e-76ad-4f6a-bdc5-dc787d84c8e9.html",
-          "title": "Free for all: Tri-state activities easy on your wallet",
-          "publisher": "TelegraphHerald.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUlWWmf9-yMP8RwnwxlP01B4xXk6-1vBmRmNk3fLlP3622PSiQTd9i9agU5N4"
-        }
-      ]
-    },
-    {
-      "query": "twee",
-      "approx_searches": "100+",
-      "published_at": "2026-11-11T12:20:00Z",
-      "related_news_urls": [
-        "https://www.rijnmond.nl/nieuws/2281231/politiehond-storm-vindt-tas-met-vuurwapen-na-controle-verdachte-auto",
-        "https://www.ad.nl/rotterdam/twee-verdachten-aangehouden-in-rotterdam-zuid-nadat-diensthond-storm-vuurwapen-in-tas-opspoort~ade32a77/",
-        "https://www.bndestem.nl/hoeksche-waard/twee-verdachten-aangehouden-in-rotterdam-zuid-nadat-diensthond-storm-vuurwapen-in-tas-opspoort~ade32a77/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRcQIEjoub8lnTrGZJRdHZaKOkZLVBFEphmQwqjZOKxK4IM1AtPy7BmFXpAQ4",
-      "image_credit": "Rijnmond",
-      "news": [
-        {
-          "url": "https://www.rijnmond.nl/nieuws/2281231/politiehond-storm-vindt-tas-met-vuurwapen-na-controle-verdachte-auto",
-          "title": "Politiehond Storm vindt tas met vuurwapen na controle verdachte auto",
-          "publisher": "Rijnmond",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRcQIEjoub8lnTrGZJRdHZaKOkZLVBFEphmQwqjZOKxK4IM1AtPy7BmFXpAQ4"
-        },
-        {
-          "url": "https://www.ad.nl/rotterdam/twee-verdachten-aangehouden-in-rotterdam-zuid-nadat-diensthond-storm-vuurwapen-in-tas-opspoort~ade32a77/",
-          "title": "Twee verdachten aangehouden in Rotterdam-Zuid nadat diensthond Storm vuurwapen in tas opspoort",
-          "publisher": "AD.nl",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9_P5qGM5b90MLz-q804GISt1Aiwoo0MR-JqVyTXxVr1pfTjGRP6sbiuzWa_Y"
-        },
-        {
-          "url": "https://www.bndestem.nl/hoeksche-waard/twee-verdachten-aangehouden-in-rotterdam-zuid-nadat-diensthond-storm-vuurwapen-in-tas-opspoort~ade32a77/",
-          "title": "Twee verdachten aangehouden in Rotterdam-Zuid nadat diensthond Storm vuurwapen in tas opspoort",
-          "publisher": "BN DeStem",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9_P5qGM5b90MLz-q804GISt1Aiwoo0MR-JqVyTXxVr1pfTjGRP6sbiuzWa_Y"
-        }
-      ]
-    },
-    {
-      "query": "danny kelly",
-      "approx_searches": "100+",
-      "published_at": "2026-11-11T12:20:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/football/2026/nov/11/danny-kelly-football-broadcaster-editor-q-magazine-nme-dies-aged-69",
-        "https://www.rte.ie/sport/soccer/2026/1111/1598828-broadcaster-danny-kelly-dies-aged-69/",
-        "https://www.independent.co.uk/bulletin/sport/danny-kelly-talksport-death-cancer-b3083069.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh68ob35LOOIPG7K6XbqjLbQ4WGG9g6Y0F7ecI0qFX-Sm4nV18ziK4wHQPN-E",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/football/2026/nov/11/danny-kelly-football-broadcaster-editor-q-magazine-nme-dies-aged-69",
-          "title": "Danny Kelly, football broadcaster and renowned editor, dies aged 69",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh68ob35LOOIPG7K6XbqjLbQ4WGG9g6Y0F7ecI0qFX-Sm4nV18ziK4wHQPN-E"
-        },
-        {
-          "url": "https://www.rte.ie/sport/soccer/2026/1111/1598828-broadcaster-danny-kelly-dies-aged-69/",
-          "title": "Broadcaster Danny Kelly dies aged 69",
-          "publisher": "RTE.ie",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLlDAdMqigCkCPeJcrt_NGD17BcuGjmOmJG0CfiNY1BweY7FtGCKIb-Bn1WM0"
-        },
-        {
-          "url": "https://www.independent.co.uk/bulletin/sport/danny-kelly-talksport-death-cancer-b3083069.html",
-          "title": "Tributes pour in following death of talkSPORT presenter Danny Kelly",
-          "publisher": "The Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqLByh9PvIc8S3W90ngOXPBNNk4okiJ4BriuY1i2owUHB_3I7pDDm9ELSedwQ"
-        }
-      ]
-    },
-    {
-      "query": "bryce james",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T12:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/1-everyday-lebron-james-reacts-113000147.html",
-        "https://www.espn.com/video/clip/_/id/50449694",
-        "https://arizonasports.com/ncaa/arizona-wildcats/uofa-basketball/bryce-james-scores-first-collegiate-points-for-arizona-vs-cal-poly"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDepsu_PgciODnUTHoRLURRIWDfAevxl5Dt98e8tIiCE6l9p98M2qUJeVxtbg",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/1-everyday-lebron-james-reacts-113000147.html",
-          "title": "‘1% everyday’ – LeBron James’ reacts to Bryce James’ thunderous at-rim block in recent NCAA game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDepsu_PgciODnUTHoRLURRIWDfAevxl5Dt98e8tIiCE6l9p98M2qUJeVxtbg"
-        },
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50449694",
-          "title": "Bryce James' swat sets up Arizona nicely for some coast to coast action",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9jKl8HGdurtPmWCzAugupsLreBQkgJQgQuFEUQ8Y6LulBegWA5IptTYIVC4M"
-        },
-        {
-          "url": "https://arizonasports.com/ncaa/arizona-wildcats/uofa-basketball/bryce-james-scores-first-collegiate-points-for-arizona-vs-cal-poly",
-          "title": "Bryce James scores first collegiate points for Arizona vs. Cal Poly",
-          "publisher": "Arizona Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsMvhfvNc5t6l0EAB5kTE4p5U0hfVgkxnAcT-dMPc2jRGungh6-oRsXt7DAsU"
-        }
-      ]
-    },
-    {
-      "query": "ss united states sinking",
-      "approx_searches": "100+",
-      "published_at": "2026-11-11T12:10:00Z",
-      "related_news_urls": [
-        "https://apnews.com/article/ss-united-states-ocean-liner-artificial-reef-88773c4030b0e2e12f3d63f5426ad285",
-        "https://www.npr.org/2026/11/11/nx-s1-6035793/a-massive-ship-is-being-sunk-off-florida-to-make-an-artificial-reef",
-        "https://www.13newsnow.com/article/news/history/ss-united-states-ocean-liner-veterans-day-sinking-worlds-largest-artificial-reef/291-7ca9cf54-0ac8-4f24-903d-076c066e0702"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWODM52-yQOJ-HhENZ2ZkzQpRzItzClKrSV6w_SAwbXRqu9xnbWiNAruwnDO8",
-      "image_credit": "AP News",
-      "news": [
-        {
-          "url": "https://apnews.com/article/ss-united-states-ocean-liner-artificial-reef-88773c4030b0e2e12f3d63f5426ad285",
-          "title": "This ocean liner was the world’s fastest. It’s being sunk to make the largest artificial reef",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWODM52-yQOJ-HhENZ2ZkzQpRzItzClKrSV6w_SAwbXRqu9xnbWiNAruwnDO8"
-        },
-        {
-          "url": "https://www.npr.org/2026/11/11/nx-s1-6035793/a-massive-ship-is-being-sunk-off-florida-to-make-an-artificial-reef",
-          "title": "A massive ship is being sunk off Florida to make an artificial reef",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://www.13newsnow.com/article/news/history/ss-united-states-ocean-liner-veterans-day-sinking-worlds-largest-artificial-reef/291-7ca9cf54-0ac8-4f24-903d-076c066e0702",
-          "title": "SS United States set for Veterans Day sinking to become the world's largest artificial reef",
-          "publisher": "13newsnow.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmieZ11u-ZI3T4zsOKabnMlExHeU1sztlQzE2ZolxJsYGKW4uJGfART7uffBo"
-        }
-      ]
-    },
-    {
-      "query": "jemima goldsmith",
+      "query": "veterans day parade nyc",
       "approx_searches": "200+",
-      "published_at": "2026-11-11T12:10:00Z",
+      "published_at": "2026-11-11T12:40:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/news/articles/cqde1yddwk17o",
-        "https://www.thetimes.com/uk/crime/article/russell-brand-ordered-leave-jemima-goldsmith-house-assault-02fk0rg7l",
-        "https://www.theguardian.com/news/2026/nov/10/lucy-powell-russell-brand-cross-examination-victims"
+        "https://abc7ny.com/post/veterans-day-parade-2026-what-know-how-watch-nyc-celebration-military-service-members/20020077/",
+        "https://www.cbsnews.com/newyork/video/veterans-day-parade-set-to-kick-off-in-nyc/",
+        "https://www.silive.com/nyc/2026/11/veterans-day-2026-heres-whats-open-closed-in-nyc-on-wednesday.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRAnZqmWdeKxHb5jr0KH24fD6rVcdUu0h216gcGh4CvUhAAdtgfnXtgLKKPUA",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4odmSBt3uERPcMheRV0-x7_QIbkV0Z3m_RgngZWvXSFeOLudZlJGWVvjgVM",
+      "image_credit": "ABC7 New York",
       "news": [
         {
-          "url": "https://www.bbc.com/news/articles/cqde1yddwk17o",
-          "title": "Police told Russell Brand to leave Jemima Goldsmith's house in 2014",
-          "publisher": "BBC",
+          "url": "https://abc7ny.com/post/veterans-day-parade-2026-what-know-how-watch-nyc-celebration-military-service-members/20020077/",
+          "title": "Veterans Day Parade 2026: What to know, how to watch th NYC celebration of military service members",
+          "publisher": "ABC7 New York",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRAnZqmWdeKxHb5jr0KH24fD6rVcdUu0h216gcGh4CvUhAAdtgfnXtgLKKPUA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4odmSBt3uERPcMheRV0-x7_QIbkV0Z3m_RgngZWvXSFeOLudZlJGWVvjgVM"
         },
         {
-          "url": "https://www.thetimes.com/uk/crime/article/russell-brand-ordered-leave-jemima-goldsmith-house-assault-02fk0rg7l",
-          "title": "Russell Brand ordered from Jemima Goldsmith’s home after assault claim",
-          "publisher": "The Times",
+          "url": "https://www.cbsnews.com/newyork/video/veterans-day-parade-set-to-kick-off-in-nyc/",
+          "title": "Veterans Day Parade set to kick off in NYC",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYB6sUofkD0HjT2-_lxgaD2lcfoWVSw-UOs75OmQsHKDUKuWn50pDKl3dNQSk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqbSDAoHloxbgjyVzFppO_2uRoKuGeFYbHLfeaRpQIlM3tO271XsffdBMzAN0"
         },
         {
-          "url": "https://www.theguardian.com/news/2026/nov/10/lucy-powell-russell-brand-cross-examination-victims",
-          "title": "Police receive further criminal allegations against Russell Brand",
-          "publisher": "The Guardian",
+          "url": "https://www.silive.com/nyc/2026/11/veterans-day-2026-heres-whats-open-closed-in-nyc-on-wednesday.html",
+          "title": "Veterans Day 2026: Here’s what’s open, closed in NYC on Wednesday",
+          "publisher": "SILive.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn-Y9AihFEcy16H58oGHf3jkAoMstFC3g-aSYluKxRVbYPPGnzksEBH_moaVk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScpWkAKDqNwnUCHVa_klmB8YLdry5EzSDTmIkVkiCB1y2Oyn9gSJQgp54iwsg"
         }
       ]
     },
     {
-      "query": "alejandro tabilo",
+      "query": "trump-xi summit",
       "approx_searches": "200+",
-      "published_at": "2026-11-11T12:00:00Z",
+      "published_at": "2026-11-11T12:40:00Z",
       "related_news_urls": [
-        "https://sportsbook.fanduel.com/tennis/atp-stockholm-2026/lorenzo-sonego-v-alejandro-tabilo-36305248",
-        "https://www.dimers.com/tennis/news/lorenzo-sonego-vs-alejandro-tabilo-tennis-prediction-atp-stockholm-open-2026-ac",
-        "https://og.com/markets/alejandro-tabilo-vs-lorenzo-sonego-2026-11-11-1x3wak"
+        "https://www.wsj.com/world/china/u-s-balks-at-chinas-demand-for-tightly-scripted-trump-xi-putin-summit-77001908",
+        "https://www.csis.org/analysis/trilateral-denuclearization-false-promises-or-way-forward",
+        "https://www.scmp.com/news/china/diplomacy/article/3374003/china-russia-and-us-try-nail-down-ai-nuclear-agenda-time-apec-talks"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA",
-      "image_credit": "FanDuel Sportsbook",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-MqRosnP4kfvNzqW0tmJVaWo2zLOKbCXj4RSOyiUxvRsJy7borexZR5zIN5A",
+      "image_credit": "WSJ",
       "news": [
         {
-          "url": "https://sportsbook.fanduel.com/tennis/atp-stockholm-2026/lorenzo-sonego-v-alejandro-tabilo-36305248",
-          "title": "Lorenzo Sonego v Alejandro Tabilo Odds",
-          "publisher": "FanDuel Sportsbook",
+          "url": "https://www.wsj.com/world/china/u-s-balks-at-chinas-demand-for-tightly-scripted-trump-xi-putin-summit-77001908",
+          "title": "Exclusive | U.S. Balks at China’s Demand for Tightly Scripted Trump-Xi-Putin Summit",
+          "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-MqRosnP4kfvNzqW0tmJVaWo2zLOKbCXj4RSOyiUxvRsJy7borexZR5zIN5A"
         },
         {
-          "url": "https://www.dimers.com/tennis/news/lorenzo-sonego-vs-alejandro-tabilo-tennis-prediction-atp-stockholm-open-2026-ac",
-          "title": "Lorenzo Sonego vs. Alejandro Tabilo prediction, odds, picks for ATP Stockholm Open 2026",
-          "publisher": "Dimers",
+          "url": "https://www.csis.org/analysis/trilateral-denuclearization-false-promises-or-way-forward",
+          "title": "Trilateral “Denuclearization”: False Promises or Way Forward?",
+          "publisher": "CSIS | Center for Strategic and International Studies",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6osvlQccEsW7xJjRJXlSdAVNrdfFOzSY7hGlmkdR25ILsbIjhrIhoqKtMjak"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmJKMkL8GU_6OrRtoJHQuAIRqyycXIawyBhuB7zUgeED_ggmOXTmjiysgOspo"
         },
         {
-          "url": "https://og.com/markets/alejandro-tabilo-vs-lorenzo-sonego-2026-11-11-1x3wak",
-          "title": "Alejandro Tabilo vs Lorenzo Sonego Prediction & Odds - Tennis - OG.com",
-          "publisher": "OG Prediction Markets",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3374003/china-russia-and-us-try-nail-down-ai-nuclear-agenda-time-apec-talks",
+          "title": "Exclusive | China, Russia and US try to nail down AI nuclear agenda in time for Apec talks",
+          "publisher": "South China Morning Post",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfAVEd-hZcAb9b1ylJdW3DGVUtwS1khH0vnnsVhKn3s-NjxRVfzckmX_13Ris"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpMHFtiXTtJmDq1j2psLiiTLSfhP1wE1c-mMlRRGpGZG1tQe30IXqHEK-PsjU"
         }
       ]
     },
     {
-      "query": "joey logano",
+      "query": "dylan dreyer",
       "approx_searches": "100+",
-      "published_at": "2026-11-11T12:00:00Z",
+      "published_at": "2026-11-11T12:40:00Z",
       "related_news_urls": [
-        "https://speedwaydigest.com/index.php/news/nascar-cup-series-news/895294-joey-logano-learns-the-perils-of-van-life-the-hard-way/",
-        "https://www.autoweek.com/racing/nascar/a74393357/joey-loganos-family-road-trip-took-a-very-messy-turn/",
-        "https://www.motorsport.com/general/news/joey-logano-logan-sargeant-among-ford-drivers-taking-part-in-daytona-charity-race/10873721/"
+        "https://www.tvinsider.com/1302682/emilie-ikeda-pregnancy-update-today-nbc/",
+        "https://www.imdb.com/es/news/ni66104503/?ref_=nwc_art_perm",
+        "https://www.yahoo.com/entertainment/tv/articles/dylan-dreyer-takes-jab-today-152325091.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrvkiE9XPO7_Cb9lZZW6yFC1D7hvQNN6v8nosf3bQN8yZM2tMq8DI5CG842uU",
-      "image_credit": "Speedway Digest",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzZhRGuxDxxyscmYaQ6RZr7GQWUxRMjerlHVbTDUe_34J_V4jHJ6qrY5UPvcU",
+      "image_credit": "TV Insider",
       "news": [
         {
-          "url": "https://speedwaydigest.com/index.php/news/nascar-cup-series-news/895294-joey-logano-learns-the-perils-of-van-life-the-hard-way/",
-          "title": "Joey Logano learns the perils of “van life” the hard way",
-          "publisher": "Speedway Digest",
+          "url": "https://www.tvinsider.com/1302682/emilie-ikeda-pregnancy-update-today-nbc/",
+          "title": "‘Today’ Host Shares Exciting Pregnancy Update After Surprise Announcement",
+          "publisher": "TV Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrvkiE9XPO7_Cb9lZZW6yFC1D7hvQNN6v8nosf3bQN8yZM2tMq8DI5CG842uU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzZhRGuxDxxyscmYaQ6RZr7GQWUxRMjerlHVbTDUe_34J_V4jHJ6qrY5UPvcU"
         },
         {
-          "url": "https://www.autoweek.com/racing/nascar/a74393357/joey-loganos-family-road-trip-took-a-very-messy-turn/",
-          "title": "Joey Logano’s Family Road Trip Took a Very Messy Turn",
-          "publisher": "Autoweek",
+          "url": "https://www.imdb.com/es/news/ni66104503/?ref_=nwc_art_perm",
+          "title": "‘Today’ Host Shares Exciting Pregnancy Update After Surprise Announcement",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYhpxJ0a0ugAYdH1EwT0Sr8kPAlY87hlCXWQwFAZJtaN-kYG0540pdnLvjKy4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZLi6JcXBLiA03f02zORDMCFybX-2yeSJwBBycPxzkYiHYFWSbEJRFlcZpgzg"
         },
         {
-          "url": "https://www.motorsport.com/general/news/joey-logano-logan-sargeant-among-ford-drivers-taking-part-in-daytona-charity-race/10873721/",
-          "title": "Logano, Sargeant, and Muniz among Ford drivers taking part in Daytona exhibition race",
-          "publisher": "Motorsport.com",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/dylan-dreyer-takes-jab-today-152325091.html",
+          "title": "Dylan Dreyer takes jab at TODAY co-star and shocked Al Roker jumps to their defense",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdamgIMNcajrMBrl5FyPtB3CahgzF2o-MT8fX1hxKoWJqULcPTkBukIfYxwIA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMWBK61LiKRxuwnnlhQ63RoYO4VU66O1JcHks9MSsejbsteXev-lgKqm6pjoM"
         }
       ]
     },
     {
-      "query": "horoscope today",
+      "query": "noah's ark discovery",
+      "approx_searches": "100+",
+      "published_at": "2026-11-11T12:40:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/travel/noahs-ark-site-yields-first-look-charred-wood-fragments-recovered-deep-below-soil",
+        "https://www.news24.com.au/world/flood-of-new-evidence-ancient-wood-discovery-fuels-fresh-noahs-ark-speculation/news-story/ca846bb2fc08b9d2f3a0723efefa92e7",
+        "https://ca.news.yahoo.com/scientists-finally-testing-linked-noah-182428708.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKYsvaWKuD2_n-G1w9m8JxVHY_JJ4msIq42MZkBq79iGP0dQsnRxvqUFWmuOw",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/travel/noahs-ark-site-yields-first-look-charred-wood-fragments-recovered-deep-below-soil",
+          "title": "Noah's Ark site yields first look at charred wood fragments recovered deep below soil",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKYsvaWKuD2_n-G1w9m8JxVHY_JJ4msIq42MZkBq79iGP0dQsnRxvqUFWmuOw"
+        },
+        {
+          "url": "https://www.news24.com.au/world/flood-of-new-evidence-ancient-wood-discovery-fuels-fresh-noahs-ark-speculation/news-story/ca846bb2fc08b9d2f3a0723efefa92e7",
+          "title": "Flood of new evidence? Wood fragments revive Noah’s Ark mystery",
+          "publisher": "News24",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKLVjoV9yT7qygfgB9w-THXT4LtHc4URugoa6d9qAfQkya9J8ukn8YsBfepPY"
+        },
+        {
+          "url": "https://ca.news.yahoo.com/scientists-finally-testing-linked-noah-182428708.html",
+          "title": "Scientists Are Finally Testing the Site Linked to Noah’s Ark",
+          "publisher": "Yahoo News Canada",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbJU3cpFDs5NlsXgVcD79GQiPfeL3F68Fhh_cu_dBD_REzdFXui8mbTMpFyGA"
+        }
+      ]
+    },
+    {
+      "query": "measles symptoms",
+      "approx_searches": "100+",
+      "published_at": "2026-11-11T12:40:00Z",
+      "related_news_urls": [
+        "https://www.dhakatribune.com/bangladesh/health/424315/measles-outbreak-death-toll-reaches-1-295-as-six",
+        "https://thefinancialexpress.com.bd/health/health-minister-takes-blame-for-measles-deaths",
+        "https://www.bssnews.net/news/444552"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxkWYSm6jWubNtJzC9VWEsQ_Z3Kgpnn34GyEIRVWEY6Zi3dqvuKvYk0YRHmO0",
+      "image_credit": "Dhaka Tribune",
+      "news": [
+        {
+          "url": "https://www.dhakatribune.com/bangladesh/health/424315/measles-outbreak-death-toll-reaches-1-295-as-six",
+          "title": "Measles outbreak: Death toll reaches 1,295 as six die in 24 hours",
+          "publisher": "Dhaka Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxkWYSm6jWubNtJzC9VWEsQ_Z3Kgpnn34GyEIRVWEY6Zi3dqvuKvYk0YRHmO0"
+        },
+        {
+          "url": "https://thefinancialexpress.com.bd/health/health-minister-takes-blame-for-measles-deaths",
+          "title": "Health minister takes blame for measles deaths",
+          "publisher": "The Financial Express",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5fJ9O4IE5BDWtLYGJcJ6mvQjrM8Mcd2Agq4vMQTh_1FPTAiVfL6YIRlQFE5E"
+        },
+        {
+          "url": "https://www.bssnews.net/news/444552",
+          "title": "Six more children die with measles symptoms",
+          "publisher": "Bangladesh Sangbad Sangstha (BSS)",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPcNbHmDuLT42ZYozpwi15CWrMYBjX2_SDZ9QtwkCojPWeh0t3zSVfORdpd-g"
+        }
+      ]
+    },
+    {
+      "query": "dunkin veterans day",
       "approx_searches": "200+",
-      "published_at": "2026-11-11T12:00:00Z",
+      "published_at": "2026-11-11T12:30:00Z",
       "related_news_urls": [
-        "https://www.sfgate.com/horoscope/article/horoscope-wednesday-11-11-26-christopher-renstrom-22521933.php",
-        "https://www.oregonlive.com/advice/2026/11/todays-horoscope-scorpio-positive-attitude-is-the-path-to-victory-nov-11-2026.html",
-        "https://www.usatoday.com/story/life/horoscopes/2026/11/11/horoscopes-today/92721382007/"
+        "https://www.nwahomepage.com/news/local-news/fayetteville-donut-shop-salutes-veterans-with-free-offers/",
+        "https://www.wsoctv.com/news/local/krispy-kreme-offering-free-coffee-doughnuts-veterans-wednesday/QAK2CGKCFBDMTJHGGSEDR42F7U/",
+        "https://news.dunkindonuts.com/blog/dunkin-R-salutes-military-members-this-veterans-day"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5o1JGLSJAhdviHylE-0vPy8kh3GXspeYKTYgm1O1F1qJ-b8OL_CZYRlczN_A",
-      "image_credit": "SFGATE",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmALZRCa4rQ7_l58vRz3F1hEUpmqS4zHfUPtKV7Ze0NlOUpKBcR3AEHZmB_7I",
+      "image_credit": "KNWA FOX24",
       "news": [
         {
-          "url": "https://www.sfgate.com/horoscope/article/horoscope-wednesday-11-11-26-christopher-renstrom-22521933.php",
-          "title": "Horoscope for Wednesday, 11/11/26 by Christopher Renstrom",
-          "publisher": "SFGATE",
+          "url": "https://www.nwahomepage.com/news/local-news/fayetteville-donut-shop-salutes-veterans-with-free-offers/",
+          "title": "Fayetteville donut shop salutes veterans with free offers",
+          "publisher": "KNWA FOX24",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5o1JGLSJAhdviHylE-0vPy8kh3GXspeYKTYgm1O1F1qJ-b8OL_CZYRlczN_A"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmALZRCa4rQ7_l58vRz3F1hEUpmqS4zHfUPtKV7Ze0NlOUpKBcR3AEHZmB_7I"
         },
         {
-          "url": "https://www.oregonlive.com/advice/2026/11/todays-horoscope-scorpio-positive-attitude-is-the-path-to-victory-nov-11-2026.html",
-          "title": "Today’s horoscope: Scorpio - Positive attitude is the path to victory (Nov. 11, 2026)",
-          "publisher": "OregonLive.com",
+          "url": "https://www.wsoctv.com/news/local/krispy-kreme-offering-free-coffee-doughnuts-veterans-wednesday/QAK2CGKCFBDMTJHGGSEDR42F7U/",
+          "title": "Krispy Kreme offering free coffee, doughnuts for Veterans on Wednesday",
+          "publisher": "WSOC TV",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTA8LfnxhH3q8OxQvWB4VUIQzvj3EHOvISJBa3smzWVypHv0eZsPKFjaPdirrs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRb-H27xbhdn6P4q_6aCXhN-kmoCQjGxuT4B-UnxHT6XpCG4W_I85rY42seRyc"
         },
         {
-          "url": "https://www.usatoday.com/story/life/horoscopes/2026/11/11/horoscopes-today/92721382007/",
-          "title": "Horoscopes Today, November 11, 2026",
-          "publisher": "USA Today",
+          "url": "https://news.dunkindonuts.com/blog/dunkin-R-salutes-military-members-this-veterans-day",
+          "title": "Dunkin'® Salutes Military Members This Veterans Day",
+          "publisher": "Dunkin",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOydvico0icwKf-5VG0S7vrsT8i_AvQKkdvavh0FKeQeoh71_3_oft_lXd1e4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoskMjo6asjsfDZlZWLC0XngHvvuK9xNfb4qco05JTCr_9hFEy5yrXie8UGiY"
         }
       ]
     },
     {
-      "query": "josé eduardo derbez",
-      "approx_searches": "100+",
-      "published_at": "2026-11-11T12:00:00Z",
+      "query": "stock market open today",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-11T12:30:00Z",
       "related_news_urls": [
-        "https://www.univision.com/famosos/vadhir-derbez-abogado-como-esta-actor-amparo-irregular-denuncia-violacion",
-        "https://www.dallasnews.com/espanol/al-dia/espectaculos/article/derbez-vadhir-jose-eduardo-aislinn-hermanos-22524193.php",
-        "https://www.hola.com/us-es/celebrities/20261109933945/jose-eduardo-derbez-vadhir-respuesta-rumores-caso-legal/"
+        "https://www.wsj.com/economy/central-banking/fed-forced-to-confront-case-for-bigger-and-faster-rate-rises-ac181706",
+        "https://www.fool.com/investing/2026/11/11/could-the-latest-inflation-data-trigger-a-stock-market-crash/",
+        "https://www.cnn.com/2026/11/10/investing/bond-yields-inflation-fed"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQo1ZW4eww8I99B4Eod4m1wn7TDSc450A0aYM__hNEZPIvT1Lg-GrWjv5L8xLc",
-      "image_credit": "Univision",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHxcyxmwph_LXtAg3Aphs_mRjgcnG2Mo3AL-ej2CAF_27FK7-DCgWeez8j1W8",
+      "image_credit": "WSJ",
       "news": [
         {
-          "url": "https://www.univision.com/famosos/vadhir-derbez-abogado-como-esta-actor-amparo-irregular-denuncia-violacion",
-          "title": "Abogado de Vadhir Derbez revela cómo está el actor y si tiene amparo irregular ante denuncia por presunta violación",
-          "publisher": "Univision",
+          "url": "https://www.wsj.com/economy/central-banking/fed-forced-to-confront-case-for-bigger-and-faster-rate-rises-ac181706",
+          "title": "Fed Forced to Confront Case for Bigger and Faster Rate Rises",
+          "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQo1ZW4eww8I99B4Eod4m1wn7TDSc450A0aYM__hNEZPIvT1Lg-GrWjv5L8xLc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHxcyxmwph_LXtAg3Aphs_mRjgcnG2Mo3AL-ej2CAF_27FK7-DCgWeez8j1W8"
         },
         {
-          "url": "https://www.dallasnews.com/espanol/al-dia/espectaculos/article/derbez-vadhir-jose-eduardo-aislinn-hermanos-22524193.php",
-          "title": "Aislinn Derbez da señal de solidaridad con sus hermanos, quienes enfrentan situaciones difíciles",
-          "publisher": "Dallas News",
+          "url": "https://www.fool.com/investing/2026/11/11/could-the-latest-inflation-data-trigger-a-stock-market-crash/",
+          "title": "Could the Latest Inflation Data Trigger a Stock Market Crash?",
+          "publisher": "The Motley Fool",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj2mZwYvfcZQBlx7YQRmsnxpQd2c7DAdWGYwzpmPAMTC3998E80mKErBzCN-Y"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy5tGVfKMTBz0xClR_rhIZ6wsolQm8MIqqI7fXE7_LdHBsTDUO4Kts_QPFDVA"
         },
         {
-          "url": "https://www.hola.com/us-es/celebrities/20261109933945/jose-eduardo-derbez-vadhir-respuesta-rumores-caso-legal/",
-          "title": "José Eduardo Derbez reacciona a los rumores que lo vinculan con el caso de su hermano Vadhir 'N'",
-          "publisher": "HOLA",
+          "url": "https://www.cnn.com/2026/11/10/investing/bond-yields-inflation-fed",
+          "title": "Bond yields surge most in 19 months as traders brace for Fed rate hikes",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpZAso9E9PrddxgLQl456CAxcYTwjHeDlcxTXg6czeqw34gKb8uDzPl9Jx9o4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5Rn1AMnD5iWOVRiY65OoImQ-HyVM5C9E50XJ6AklBITlfDfXTeK1nipM7hi4"
+        }
+      ]
+    },
+    {
+      "query": "veterans day parade",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T12:30:00Z",
+      "related_news_urls": [
+        "https://www.azcentral.com/story/news/traffic-transportation/2026/11/11/traffic-to-increase-during-veterans-day-parade-in-phoenix/92717954007/",
+        "https://www.yourvalley.net/scottsdale-independent/stories/honoring-those-who-served-why-i-still-do-this-work-after-30-years,738764",
+        "https://www.axios.com/local/scottsdale/2026/11/10/scottsdale-veterans-day-2026-navy-concert-hike-salt-river"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4nwACk8Ut0GcbfeY4756GltHpiINFBwUwSFVAFqIoHMmKVWh76WJJu66QrIo",
+      "image_credit": "azcentral.com and The Arizona Republic",
+      "news": [
+        {
+          "url": "https://www.azcentral.com/story/news/traffic-transportation/2026/11/11/traffic-to-increase-during-veterans-day-parade-in-phoenix/92717954007/",
+          "title": "Phoenix Veterans Day Parade has new route. Here's how to avoid traffic",
+          "publisher": "azcentral.com and The Arizona Republic",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4nwACk8Ut0GcbfeY4756GltHpiINFBwUwSFVAFqIoHMmKVWh76WJJu66QrIo"
+        },
+        {
+          "url": "https://www.yourvalley.net/scottsdale-independent/stories/honoring-those-who-served-why-i-still-do-this-work-after-30-years,738764",
+          "title": "Honoring those who served: Why I still do this work after 30 years",
+          "publisher": "Your Valley",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTul9ndsiYc9TyjEP0Mb7MT-KZ0TAyn2Nlcgb9KHo9xVVNSeSlMc3z03P3KqgM"
+        },
+        {
+          "url": "https://www.axios.com/local/scottsdale/2026/11/10/scottsdale-veterans-day-2026-navy-concert-hike-salt-river",
+          "title": "5 ways to mark Veterans Day in Scottsdale this week",
+          "publisher": "Axios",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTB4TuNtWkaDajtjvv-7H_QYrCfKnyYP_3bTkix3pzRon_WblCY_HEMoxe3XGY"
+        }
+      ]
+    },
+    {
+      "query": "vietnam war",
+      "approx_searches": "100+",
+      "published_at": "2026-11-11T12:30:00Z",
+      "related_news_urls": [
+        "https://floridapolitics.com/archives/829944-st-petersburg-to-honor-2-vietnam-war-veterans-at-veterans-day-ceremony/",
+        "https://www.cbs8.com/article/news/politics/immigration-news/disabled-veteran-fights-keep-wife-from-deportation/509-299a4904-3560-483e-a9f4-fcfd3cf708cd",
+        "https://www.nbcsandiego.com/news/local/vietnam-war-veteran-fights-stop-his-wifes-deportation/4100107/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT58uHVjCJbzZOfuxMa3cho68wJpp0iN678pVWhn6cENtW1Qs7pB3RBd-xU7HA",
+      "image_credit": "Florida Politics",
+      "news": [
+        {
+          "url": "https://floridapolitics.com/archives/829944-st-petersburg-to-honor-2-vietnam-war-veterans-at-veterans-day-ceremony/",
+          "title": "St. Petersburg to honor 2 Vietnam War veterans at Veterans Day ceremony",
+          "publisher": "Florida Politics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT58uHVjCJbzZOfuxMa3cho68wJpp0iN678pVWhn6cENtW1Qs7pB3RBd-xU7HA"
+        },
+        {
+          "url": "https://www.cbs8.com/article/news/politics/immigration-news/disabled-veteran-fights-keep-wife-from-deportation/509-299a4904-3560-483e-a9f4-fcfd3cf708cd",
+          "title": "Disabled veteran fights to keep wife from deportation after ICE arrest in San Diego",
+          "publisher": "cbs8.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS9Qa-9W_DiKe58CAOhKrqi0VTo-aOF2_dBuBHTNCOJ9ad1wPRCxSCzpAPUAw"
+        },
+        {
+          "url": "https://www.nbcsandiego.com/news/local/vietnam-war-veteran-fights-stop-his-wifes-deportation/4100107/",
+          "title": "Vietnam war veteran fights to stop his wife's deportation",
+          "publisher": "NBC 7 San Diego",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAEy4yBsHCYUU-bPFhm66d6o58tf8J9fMfEDwvFAdRSEvV2oTHctyhQRJdbho"
+        }
+      ]
+    },
+    {
+      "query": "north royalton",
+      "approx_searches": "100+",
+      "published_at": "2026-11-11T12:30:00Z",
+      "related_news_urls": [
+        "https://www.wkyc.com/article/news/local/cuyahoga-county/3-dead-north-royalton-unwanted-guest-tiffany-drive/95-d69a191c-4de9-40d5-ae9e-bbecc3b2331f",
+        "https://www.cleveland19.com/2026/11/11/swat-stand-off-ends-north-royalton-home/",
+        "https://fox8.com/news/i-team/i-team-police-investigate-homicide-scene-in-north-royalton-multiple-victims-possible/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5-4l7L2-ypNuPNokUeRetYCbuBEXDtWNaxj3JFCMk_2LcG43PRflXPOdZx-0",
+      "image_credit": "WKYC",
+      "news": [
+        {
+          "url": "https://www.wkyc.com/article/news/local/cuyahoga-county/3-dead-north-royalton-unwanted-guest-tiffany-drive/95-d69a191c-4de9-40d5-ae9e-bbecc3b2331f",
+          "title": "3 found dead after ‘unwanted guest call’ at North Royalton home",
+          "publisher": "WKYC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5-4l7L2-ypNuPNokUeRetYCbuBEXDtWNaxj3JFCMk_2LcG43PRflXPOdZx-0"
+        },
+        {
+          "url": "https://www.cleveland19.com/2026/11/11/swat-stand-off-ends-north-royalton-home/",
+          "title": "SWAT stand-off ends at North Royalton home",
+          "publisher": "Cleveland 19 News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSilukBHaqOFuMzr3SF7z9Md741iJeOqQvPFpr38jOP9FiavR5z906rajxnKjg"
+        },
+        {
+          "url": "https://fox8.com/news/i-team/i-team-police-investigate-homicide-scene-in-north-royalton-multiple-victims-possible/",
+          "title": "Police investigate homicide scene in North Royalton; multiple victims possible: I-Team",
+          "publisher": "FOX 8 News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0xYKXASsLmmX7x3yt8xyZWr6TvFIWvBn1jTjCyCyM3Ml5QG7YhmlY4Xgwnp8"
         }
       ]
     }
