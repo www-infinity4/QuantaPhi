@@ -1,0 +1,29 @@
+name: QuantaPhi V5 reversible homepage preview
+on:
+  pull_request:
+    paths:
+      - "homepage-v5.html"
+      - "index.html"
+      - "test/homepage-v5-trial.test.mjs"
+      - ".github/workflows/homepage-v5-trial.yml"
+  push:
+    branches: [main]
+    paths:
+      - "homepage-v5.html"
+      - "index.html"
+      - "test/homepage-v5-trial.test.mjs"
+permissions:
+  contents: read
+jobs:
+  trial:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify V5 remains a safe reversible design trial
+        run: node --test test/homepage-v5-trial.test.mjs
