@@ -118,3 +118,18 @@ test('Zeus remains usable and within viewport at Android screen widths',async({p
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBeTruthy();
  }
 });
+
+test('Start Quest opens the connected Zeus chat and focuses the composer without touching wallet',async({page})=>{
+ await fakeBubbles(page);
+ await page.goto(base+'/coliseum/',{waitUntil:'domcontentloaded'});
+ const before=await page.evaluate(()=>({
+  session:localStorage.getItem('starquest_session'),tokens:localStorage.getItem('quantaPhiTokens')
+ }));
+ await page.getByRole('button',{name:'Start Quest'}).click();
+ await expect(page.locator('#chatPane')).toBeVisible();
+ await expect(page.locator('#zeusQuestInput')).toBeFocused();
+ const after=await page.evaluate(()=>({
+  session:localStorage.getItem('starquest_session'),tokens:localStorage.getItem('quantaPhiTokens')
+ }));
+ expect(after).toEqual(before);
+});
