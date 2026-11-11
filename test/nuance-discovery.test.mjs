@@ -33,14 +33,15 @@ test('source-backed suggestions preserve old restrictions and identify a bounded
  assert.match(results[0].improvement,/Cart 004|41/);
  assert.match(results[0].constraints[0],/generic chatbot/);
  assert.equal(results[0].evidenceCount,1);
- assert.equal(results[0].canDraft,true);
+ assert.equal(results[0].canDraft,false,'existing Cart 004 issue #1923 must not create a duplicate');
+ assert.equal(results[0].existingIssueUrl,'https://github.com/www-infinity4/QuantaPhi/issues/1923');
  assert.equal(results[0].verified,false);
 });
 test('only verified-owner-archive candidate IDs may be placed in an inert review draft',()=>{
- const [suggestion]=suggestNuances({mode:'work-audit-reconcile',ticketInventoryTruncated:false,candidates:[candidate()]});
+ const [suggestion]=suggestNuances({mode:'work-audit-reconcile',ticketInventoryTruncated:false,candidates:[candidate({id:'conversation-memory',title:'Conversation memory discovery'})]});
  assert.deepEqual(reviewDraftRequest(suggestion),{
   from_work_audit:true,start_immediately:false,
-  auditCandidateId:'infinity-nuances',
+  auditCandidateId:'conversation-memory',
   sourceMessageIds:['history_0001'],
   repository:'www-infinity4/QuantaPhi'
  });
