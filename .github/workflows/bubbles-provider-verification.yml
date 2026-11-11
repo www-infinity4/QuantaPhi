@@ -1,0 +1,41 @@
+name: Bubbles provider verification center
+on:
+  pull_request:
+    paths:
+      - 'bubbles-accounts.html'
+      - 'bubbles-auth.css'
+      - 'bubbles-connections.mjs'
+      - 'bubbles-connections-gate.mjs'
+      - 'bubbles-provider-verification.mjs'
+      - 'bubbles-signin-gate.mjs'
+      - 'test/bubbles-provider-verification.test.mjs'
+      - 'test/bubbles-signin-gate.test.mjs'
+      - '.github/workflows/bubbles-provider-verification.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'bubbles-accounts.html'
+      - 'bubbles-auth.css'
+      - 'bubbles-connections.mjs'
+      - 'bubbles-provider-verification.mjs'
+      - 'bubbles-signin-gate.mjs'
+      - 'test/bubbles-provider-verification.test.mjs'
+      - '.github/workflows/bubbles-provider-verification.yml'
+permissions:
+  contents: read
+jobs:
+  provider-verification:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify exact checked-out head
+        run: git rev-parse HEAD
+      - name: JavaScript syntax and focused regression coverage
+        run: |
+          node --check bubbles-provider-verification.mjs
+          node --check bubbles-signin-gate.mjs
+          node --check bubbles-connections.mjs
+          node --test test/bubbles-provider-verification.test.mjs test/bubbles-signin-gate.test.mjs test/bubbles-identity-settings.test.mjs
