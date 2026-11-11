@@ -440,3 +440,29 @@ test('legacy blocked merge receipt does not make a later eligible merge complete
   assert.equal(merged.attempted[0].result,'merged');
  }finally{d.close();}
 });
+
+test('D1 packet pass persists verified dependency requirements and reports source overlap without dispatch', async () => {
+ const d=database();
+ try{
+  const lease=await claim(d.db,AT,AT,'graph-fence');
+  const observed=[];
+  const result=await runPacketPass({
+   db:d.db,claim:lease,ownerScope:OWNER_SCOPE,ownerId:OWNER,sourceVersion:SHA,now:AT+1,
+   loadCandidates:async()=>[
+    packet(90,{priority:100,dependencies:[REPO+'#89'],estimatedMinutes:30}),
+    packet(91,{priority:99,scopePaths:['src/shared/'],nextSourcePath:'src/shared/module.mjs'}),
+    packet(92,{priority:98,scopePaths:['src/shared/file.mjs'],nextSourcePath:'src/shared/file.mjs'}),
+    packet(93,{priority:97,nextSourcePath:'src/other.mjs'})
+   ],
+   executePacket:async (work,{idempotencyKey})=>{
+    observed.push(work.issue);
+    return {receipt:receipt(work,work.nextAction,'changed',idempotencyKey,{
+      providerConfirmed:true,artifactUrl:'https://github.com/www-infinity4/QuantaPhi/commit/abc123'
+    })};
+   }
+  });
+  assert.deepEqual(observed,[91,93]);
+  assert.ok(result.skipped.some(s=>s.issue===90&&s.reason==='dependency_pending'));
+  assert.ok(result.skipped.some(s=>s.issue===92&&s.reason==='source_overlap'));
+ }finally{d.close()}
+});
