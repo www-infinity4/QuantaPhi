@@ -74,10 +74,14 @@ if(arena){
   const form=el('form','zeus-history-new');
   const title=field('New project or topic title');title.required=true;title.minLength=3;title.maxLength=90;
   const add=el('button','primary','Create project thread');add.type='submit';form.append(title,add);
-  form.addEventListener('submit',e=>{
-   e.preventDefault();
-   mutate(()=>{const t=createThread(history,title.value);selected=t.id;focusedSessionId=null},'Created a private project thread');
-  });
+  const createProjectThread=()=>mutate(()=>{
+   const t=createThread(history,title.value);
+   selected=t.id;focusedSessionId=null;
+  },'Created a private project thread');
+  // Prevent any browser-native navigation from a tap or Enter even if a form
+  // submit listener is delayed or another script's handler intervenes.
+  add.addEventListener('click',e=>{e.preventDefault();createProjectThread()});
+  form.addEventListener('submit',e=>{e.preventDefault();createProjectThread()});
   side.append(form);
   const list=el('div','zeus-history-threads');
   if(!history.threads.length)list.append(el('p','', 'No local threads yet. Create one above.'));
