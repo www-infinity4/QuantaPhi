@@ -3,6 +3,8 @@
 Read [README](README.md) and root [AGENTS.md](../../AGENTS.md) before editing code. Entries below are routing pointers, **not** verified current percent-complete estimates. Each ticket's issue comments and latest exact-head PR/CI are authoritative. Agents must verify and update after each work session.
 
 | Project | Canonical issue | Linked source | Dot | Progress | Sessions spent / remaining | Next verified action |
+
+| Bubbles / Robot Brain research evidence server | [#1489](https://github.com/www-infinity4/QuantaPhi/issues/1489) | [TICKET-1489](TICKET-1489.md) · isolated live D1 / Worker | 🟡 | 55% estimated; 8 curated entries, 11 categories, read API live | 1 / 2–4 estimate | Exact-head CI/review; verify first cron ingest; then wire read-only tool into Bubbles and Robot Brain |
 | --- | --- | --- | --- | --- | --- | --- |
 | PCLA / PicoCELA Japanese wireless mesh stock Quick Card | [#1863](https://github.com/www-infinity4/QuantaPhi/issues/1863) | [TICKET-1863](TICKET-1863.md) · source-backed original mesh card in public feed | 🟡 | Source staged; PR/CI/merge/live pending | 1 / unknown | Exact-head catalog and artwork tests; review, merge, website readback |
 | Harley-Davidson & Indian Motorcycle model Quick Cards | [#1793](https://github.com/www-infinity4/QuantaPhi/issues/1793) | [TICKET-1793](TICKET-1793.md) · [source](../../motorcycle-quick-cards.mjs) | 🔴 | 50% estimated, source staged; CI/live pending | 1 / unknown | Open PR, exact-head tests, independent review, then permitted merge and Android proof |
