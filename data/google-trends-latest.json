@@ -3,52 +3,87 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T20:01:38.903582Z",
+  "checked_at": "2026-11-11T21:00:52.624680Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "american airlines international route cancellations 2027",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T19:40:00Z",
+      "query": "ayesha curry",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T20:30:00Z",
       "related_news_urls": [
-        "https://simpleflying.com/american-cancels-8-international-routes/",
-        "https://thecancunsun.com/tulum-flight-collapse-only-2-us-routes-will-remain-by-february/",
-        "https://www.thetravel.com/delta-and-united-airlines-cancel-flights-to-mexico-vacation-spot-despite-brand-new-airport/"
+        "https://www.yahoo.com/entertainment/celebrity/articles/stephen-curry-inspired-ayesha-curry-192045223.html",
+        "https://www.foxnews.com/outkick-sports/ayesha-curry-says-husband-steph-curry-nba-pregame-habits-inspired-movie-character-responds-backlash",
+        "https://www.today.com/video/ayesha-curry-talks-starring-in-second-chance-holiday-273194565752"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9w1VzKAIKadS9ddM2Jk4rqw5Jbat_k2K26lChqd5_e69BhBHU1qsYN6ZFp98",
-      "image_credit": "Simple Flying",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRVCXytfpJRsTMdHcaKhg0QC7PH8VO1HM8MmKOyDDR6UDT2nxtO-ENwZqfIKU",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://simpleflying.com/american-cancels-8-international-routes/",
-          "title": "American Airlines Cancels 8 International Routes: See Full List Now",
-          "publisher": "Simple Flying",
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/stephen-curry-inspired-ayesha-curry-192045223.html",
+          "title": "How Stephen Curry inspired Ayesha Curry in Christmas rom-com role that has everybody talking about kissing scene",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9w1VzKAIKadS9ddM2Jk4rqw5Jbat_k2K26lChqd5_e69BhBHU1qsYN6ZFp98"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRVCXytfpJRsTMdHcaKhg0QC7PH8VO1HM8MmKOyDDR6UDT2nxtO-ENwZqfIKU"
         },
         {
-          "url": "https://thecancunsun.com/tulum-flight-collapse-only-2-us-routes-will-remain-by-february/",
-          "title": "Tulum Flight Collapse: Only 2 US Routes Will Remain By February",
-          "publisher": "Cancun Sun",
+          "url": "https://www.foxnews.com/outkick-sports/ayesha-curry-says-husband-steph-curry-nba-pregame-habits-inspired-movie-character-responds-backlash",
+          "title": "Ayesha Curry says husband Steph Curry's NBA pregame habits inspired her movie character, responds to backlash",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRElg4185mSpDVVakxPkDXlZ-1F_pXJHvkEsLv9xd7tM8G44xLd4S0ZHok08fg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRA9-QTrSPZcbBecsGb7mmyDaWjHSNFXp3soDLzznOiVqWKusTqKS1Q4e8YxU"
         },
         {
-          "url": "https://www.thetravel.com/delta-and-united-airlines-cancel-flights-to-mexico-vacation-spot-despite-brand-new-airport/",
-          "title": "Delta And United Airlines Cancel Flights To Mexico Vacation Spot Despite Brand-New Airport",
-          "publisher": "TheTravel",
+          "url": "https://www.today.com/video/ayesha-curry-talks-starring-in-second-chance-holiday-273194565752",
+          "title": "Ayesha Curry Talks New Rom-Com With a Holiday Spin",
+          "publisher": "TODAY.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqiYVLBOq6itQxCEjYMcRcouPhT95wyYgmdgtaRZhYBr7j8k-xXXWKEGjz1FU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQivfCIYNt2zCb0F7xZ-5nlZJH5oILgMaBJwDiJ7gQN998q5Evd5sLdiYgdnVs"
         }
       ]
     },
     {
-      "query": "lucia gta 6",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T19:40:00Z",
+      "query": "air force basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T20:30:00Z",
+      "related_news_urls": [
+        "https://www.sportsgambler.com/betting-tips/basketball/loyola-chicago-ramblers-vs-air-force-falcons-prediction-odds-2026-11-11/",
+        "https://www.bleachernation.com/picks/2026/11/11/a-10-basketball-predictions-computer-picks-and-best-bets-november-11-2/",
+        "https://ats.io/matchup/college-basketball/loyola-chi-ramblers-vs-air-force-falcons-prediction-11-11-2026/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-hYvvU8Fdyaub-QnNAgEZZ9H540kcmu5JWauguvOqcRhcDKqJwPmT09FP62Q",
+      "image_credit": "Sportsgambler",
+      "news": [
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/loyola-chicago-ramblers-vs-air-force-falcons-prediction-odds-2026-11-11/",
+          "title": "Loyola Chicago vs Air Force Prediction, Picks & Odds | 11 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-hYvvU8Fdyaub-QnNAgEZZ9H540kcmu5JWauguvOqcRhcDKqJwPmT09FP62Q"
+        },
+        {
+          "url": "https://www.bleachernation.com/picks/2026/11/11/a-10-basketball-predictions-computer-picks-and-best-bets-november-11-2/",
+          "title": "A-10 Basketball Predictions, Computer Picks and Best Bets | November 11",
+          "publisher": "Bleacher Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSym0hp4diZLSxPO_zyCUiug1-5jt109TCa8MvXnLOW_mg7BxwLkiLEo-mwPd8"
+        },
+        {
+          "url": "https://ats.io/matchup/college-basketball/loyola-chi-ramblers-vs-air-force-falcons-prediction-11-11-2026/",
+          "title": "Loyola Chicago Ramblers vs Air Force Prediction",
+          "publisher": "ATS.io",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ7tPrsfWpI7EjH5Azdos8TA2mpr3_gFXprU-dgrCsCxMfq1i9IeoKQz5KrWyw"
+        }
+      ]
+    },
+    {
+      "query": "youfibre gta 6 network issues",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T20:30:00Z",
       "related_news_urls": [
         "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
-        "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10",
-        "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/"
+        "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/",
+        "https://www.forbes.com/sites/paultassi/2026/11/11/gta-6-pre-loads-are-slowing-down-the-internet-warns-isp/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk",
       "image_credit": "XBOX Wire",
@@ -61,290 +96,255 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk"
         },
         {
-          "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10",
-          "title": "Grand Theft Auto VI Pre-Load Begins on November 10",
-          "publisher": "Rockstar Games",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvr3MnhC7loBDcBhBXQOjgXQdBnSX1GgBl8Gp0wCtDiGaqob5Fx5ug4CQtEz4"
-        },
-        {
           "url": "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/",
           "title": "Pre-load Grand Theft Auto VI on PS5 starting today",
           "publisher": "PlayStation.Blog",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmQPZtB1cfmtJ8v-9159sSJpw2Cr8v495zAc5tM6Spqsus45lZErGPllHDXDY"
-        }
-      ]
-    },
-    {
-      "query": "chase young",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T19:30:00Z",
-      "related_news_urls": [
-        "https://whodatdish.com/saints-look-smarter-than-ever-after-trade-deadline-comes-and-goes-01m73pfzdb7m",
-        "https://saintswire.usatoday.com/story/sports/nfl/saints/2026/11/05/nfl-trade-deadline-bills-jaguars-saints-justin-reid/92631678007/",
-        "https://athlonsports.com/nfl/new-orleans-saints/saints-trade-deadline-chase-young-nathan-shepherd"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-xVBtzhcgf-7Zx7iEuSI45RSGyRkPoR0BLmGxi0RTxs6OxZATCGgPDf8RDvE",
-      "image_credit": "whodatdish.com",
-      "news": [
-        {
-          "url": "https://whodatdish.com/saints-look-smarter-than-ever-after-trade-deadline-comes-and-goes-01m73pfzdb7m",
-          "title": "Saints look smarter than ever after trade deadline comes and goes",
-          "publisher": "whodatdish.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-xVBtzhcgf-7Zx7iEuSI45RSGyRkPoR0BLmGxi0RTxs6OxZATCGgPDf8RDvE"
         },
         {
-          "url": "https://saintswire.usatoday.com/story/sports/nfl/saints/2026/11/05/nfl-trade-deadline-bills-jaguars-saints-justin-reid/92631678007/",
-          "title": "NFL trade deadline: 3 teams that could deal for Saints DB Justin Reid",
-          "publisher": "Saints Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbmaF0BmMdUXO6VhhPUFaaYj-y2nXE26VXolhH4NAgQyzp6hg63_2KLtnMCXM"
-        },
-        {
-          "url": "https://athlonsports.com/nfl/new-orleans-saints/saints-trade-deadline-chase-young-nathan-shepherd",
-          "title": "Best Trade Saints Can Still Make Before 4 p.m. Deadline Isn’t Chase Young",
-          "publisher": "Athlon Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtYWfBxldmjV2rLVh5Nw4eK2j2yM4pLeV3MyHDGE_Cv_QmFaLz0lNNYh4hHPc"
-        }
-      ]
-    },
-    {
-      "query": "adults season 3",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T19:20:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/adults-renewed-season-3-fx-1237220654/",
-        "https://theankler.com/john-landgraf-on-adults-renewal-disney-reorg-and-why-tv-needs-chaos/",
-        "https://www.hollywoodreporter.com/tv/tv-news/adults-fx-comedy-adults-third-season-renewed-1236753149/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTczdvAHpmQyC9i7hv-3jXxMNAzY8ttqlqrpVKxDiAW_2UYAF7XDHJIYlAnERw",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/adults-renewed-season-3-fx-1237220654/",
-          "title": "‘Adults’ Renewed For Season 3 At FX",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTczdvAHpmQyC9i7hv-3jXxMNAzY8ttqlqrpVKxDiAW_2UYAF7XDHJIYlAnERw"
-        },
-        {
-          "url": "https://theankler.com/john-landgraf-on-adults-renewal-disney-reorg-and-why-tv-needs-chaos/",
-          "title": "John Landgraf on ‘Adults’ Renewal, Disney Reorg and Why TV Needs Chaos",
-          "publisher": "The Ankler",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhylCtICk9hsZgafIeS2fJQ7Kyy8CuCZuBGKcswjHcYInD9cf90if9RMQ9Qwg"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/tv/tv-news/adults-fx-comedy-adults-third-season-renewed-1236753149/",
-          "title": "'Adults': FX Gives Gen Z Comedy Third Season Renewal",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTuwtPSdxR8jUHLNx1_V49gbB3BsF3xgVg_pxcyKAHqZqrDOuJE0SrC3EiRApM"
-        }
-      ]
-    },
-    {
-      "query": "pep guardiola",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T19:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7773820/2026/11/11/pep-guardiola-pochettino-manchester-united-usmnt-coach-candidate/",
-        "https://bleacherreport.com/articles/25532321-pep-guardiola-reportedly-top-target-usmnt-amid-mauricio-pochettino-manchester-united-rumors",
-        "https://www.cbssports.com/soccer/news/usmnt-coaching-candidates-could-pep-guardiola-potentially-replace-mauricio-pochettino/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVxTxqyXprfv03aSJcxjetgodx2f8Oj5ospE4dlaAtGsvL8BNXGSKmkLXMIUM",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7773820/2026/11/11/pep-guardiola-pochettino-manchester-united-usmnt-coach-candidate/",
-          "title": "Pep Guardiola expected to be a top USMNT target if Manchester United snares Pochettino - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVxTxqyXprfv03aSJcxjetgodx2f8Oj5ospE4dlaAtGsvL8BNXGSKmkLXMIUM"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25532321-pep-guardiola-reportedly-top-target-usmnt-amid-mauricio-pochettino-manchester-united-rumors",
-          "title": "Pep Guardiola Reportedly 'Top Target' for USMNT amid Mauricio Pochettino, Manchester United Rumors",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSP5u9swP7sgHB77gbyKtTRW7XULafgtN9q43FZHhvexGbS3ZtymDKWuWCv18Y"
-        },
-        {
-          "url": "https://www.cbssports.com/soccer/news/usmnt-coaching-candidates-could-pep-guardiola-potentially-replace-mauricio-pochettino/",
-          "title": "USMNT coaching candidates: Could Pep Guardiola potentially replace Mauricio Pochettino?",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrhguOIH2_xiImPO7RkgV8D-chkEDvwTGKQgyAxgj5q33HO1TC-_0wfnXxrwY"
-        }
-      ]
-    },
-    {
-      "query": "billy gray",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T19:10:00Z",
-      "related_news_urls": [
-        "https://people.com/former-child-star-billy-gray-makes-rare-public-appearance-after-retiring-from-acting-12249030",
-        "https://www.yahoo.com/entertainment/celebrity/articles/father-knows-best-alum-88-190948492.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJeJCGZYoyX7yGtx27LyGX1RO0IexbRljcO_sY1FTfOVZOXKKY5ZAX5WAWXHs",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/former-child-star-billy-gray-makes-rare-public-appearance-after-retiring-from-acting-12249030",
-          "title": "Former Child Star Billy Gray, 88, Makes Rare Public Appearance 46 Years After Retiring from Acting",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJeJCGZYoyX7yGtx27LyGX1RO0IexbRljcO_sY1FTfOVZOXKKY5ZAX5WAWXHs"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/father-knows-best-alum-88-190948492.html",
-          "title": "‘Father Knows Best’ Alum, 88, Looks Unrecognizable in Rare Public Outing",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnWK8U0Dsywi1chGP8v4DhBMmFjRCf6X5Ookd6uXz888t-i-LqbbvQRpLwaeE"
-        }
-      ]
-    },
-    {
-      "query": "uc davis basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T19:10:00Z",
-      "related_news_urls": [
-        "https://www.sportsgambler.com/betting-tips/basketball/incarnate-word-cardinals-vs-uc-davis-aggies-prediction-odds-2026-11-11/",
-        "https://ats.io/matchup/college-basketball/incarnate-word-cardinals-vs-uc-davis-aggies-prediction-11-11-2026/",
-        "https://ucdavisaggies.com/news/2026/11/10/mens-basketball-aggies-close-homestand-against-incarnate-word-on-veterans-day.aspx"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnTK4eFdPE1SvYEbvFwOHkLfEeQvcYAIDIiLh2O-A13r6dm0UAfdFBTQX-81M",
-      "image_credit": "Sportsgambler",
-      "news": [
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/incarnate-word-cardinals-vs-uc-davis-aggies-prediction-odds-2026-11-11/",
-          "title": "Incarnate Word vs UC Davis Prediction, Picks & Odds | 11 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnTK4eFdPE1SvYEbvFwOHkLfEeQvcYAIDIiLh2O-A13r6dm0UAfdFBTQX-81M"
-        },
-        {
-          "url": "https://ats.io/matchup/college-basketball/incarnate-word-cardinals-vs-uc-davis-aggies-prediction-11-11-2026/",
-          "title": "Incarnate Word vs UC Davis Prediction - Nov. 11, 2026",
-          "publisher": "ATS.io",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvCZe2vvvi1X4rRyV-gq7hW9iFoSEjr40PE0H2dKfROZjtXjvhBmWTgNIdtC0"
-        },
-        {
-          "url": "https://ucdavisaggies.com/news/2026/11/10/mens-basketball-aggies-close-homestand-against-incarnate-word-on-veterans-day.aspx",
-          "title": "Aggies Close Homestand Against Incarnate Word on Veterans Day",
-          "publisher": "UC Davis Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUFrNvG_URLrck5_ZGPuuKlXsiq0eFDV20FRQD1_h-mV9TRyhSUGuD1TQo-C4"
-        }
-      ]
-    },
-    {
-      "query": "joao below deck",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T19:00:00Z",
-      "related_news_urls": [
-        "https://pagesix.com/2026/11/11/celebrity-news/below-deck-alum-arrested-in-turkey-after-fistfight-leaves-17-year-old-dead-as-video-shows-brutal-brawl/",
-        "https://www.irishstar.com/culture/entertainment/reality-tv-star-arrested-after-37867950",
-        "https://www.tmz.com/2026/11/11/below-deck-alum-arrested-in-turkey-after-minor-he-fist-fought-died/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaz_FnMMg8ImLkknXv_4mpWdUNVrWNPDPIazFILJpUl3i_aXrV3ekHiFpoaow",
-      "image_credit": "Page Six",
-      "news": [
-        {
-          "url": "https://pagesix.com/2026/11/11/celebrity-news/below-deck-alum-arrested-in-turkey-after-fistfight-leaves-17-year-old-dead-as-video-shows-brutal-brawl/",
-          "title": "‘Below Deck’ alum arrested in Turkey after fistfight leaves 17-year-old dead as video shows brutal brawl",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaz_FnMMg8ImLkknXv_4mpWdUNVrWNPDPIazFILJpUl3i_aXrV3ekHiFpoaow"
-        },
-        {
-          "url": "https://www.irishstar.com/culture/entertainment/reality-tv-star-arrested-after-37867950",
-          "title": "Reality TV star arrested after fistfight leaves 17-year-old dead",
-          "publisher": "Irish Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfkDd5WK31kHRxr3SzvJxVMNK2CpBvq5HaQg-ixzR_ukyZb5_XFpN_eLJo5Co"
-        },
-        {
-          "url": "https://www.tmz.com/2026/11/11/below-deck-alum-arrested-in-turkey-after-minor-he-fist-fought-died/",
-          "title": "'Below Deck' Alum João Franco & Brother Karlos Arrested in Turkey After Deadly Brawl: Report",
-          "publisher": "TMZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLVsrTfDPxXsCaRD-FTSz9a7GLCceVgdOLrRGJDgssNJXPURSdoCQJEQyfQA8"
-        }
-      ]
-    },
-    {
-      "query": "michael jackson estate value $2 billion",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T19:00:00Z",
-      "related_news_urls": [
-        "https://www.forbes.com/sites/mattcraig/2026/11/11/michael-jacksons-estate-is-now-worth-2-billion-but-his-daughter-says-she-cant-access-it/",
-        "https://www.nytimes.com/2026/11/03/arts/paris-jackson-michael-jackson-estate.html",
-        "https://people.com/paris-jackson-seeks-600-million-transfer-from-michael-jackson-estate-to-family-trust-12208764"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX3CwInZboCwva-d8z3UbXvfx7y92SChO2LfapCES1Gb01umVKdhdlmiAJB4w",
-      "image_credit": "Forbes",
-      "news": [
-        {
-          "url": "https://www.forbes.com/sites/mattcraig/2026/11/11/michael-jacksons-estate-is-now-worth-2-billion-but-his-daughter-says-she-cant-access-it/",
-          "title": "Michael Jackson’s Estate Is Now Worth $2 Billion. His Daughter Says She Can’t Access It",
+          "url": "https://www.forbes.com/sites/paultassi/2026/11/11/gta-6-pre-loads-are-slowing-down-the-internet-warns-isp/",
+          "title": "‘GTA 6’ Pre-Loads Are Slowing Down The Internet, Warns ISP",
           "publisher": "Forbes",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX3CwInZboCwva-d8z3UbXvfx7y92SChO2LfapCES1Gb01umVKdhdlmiAJB4w"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/03/arts/paris-jackson-michael-jackson-estate.html",
-          "title": "Paris Jackson Asks Father’s Estate to Fund $600M to Family Trust",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNdIpaBuhCbHQPRFWzNaj7Ew1I4DsJpb6G2KDMfgOxRYTCKwfai-HxLXRjhgU"
-        },
-        {
-          "url": "https://people.com/paris-jackson-seeks-600-million-transfer-from-michael-jackson-estate-to-family-trust-12208764",
-          "title": "Paris Jackson Seeks $600 Million from Michael Jackson Estate to Her Family Trust",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4oR93sgIJczfkphosR8XpZ9TNU98jkS1hGsU1SNlWxo8wAm238MQKHrlV6Go"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlb_ph_9fQu4iDTmlnkFzX7nfE7pot6DukUSTxqC1yIBlG7CGq0mLAqeZ7GU4"
         }
       ]
     },
     {
-      "query": "dartmouth basketball",
+      "query": "roadster",
       "approx_searches": "200+",
-      "published_at": "2026-11-11T18:50:00Z",
+      "published_at": "2026-11-11T20:30:00Z",
       "related_news_urls": [
-        "https://www.sportsgambler.com/betting-tips/basketball/dartmouth-big-green-vs-albany-great-danes-prediction-odds-2026-11-11/",
-        "https://www.actionnetwork.com/ncaab/dartmouth-big-green-vs-albany-great-danes-prediction-pick-odds-college-basketball-wednesday-november-11",
-        "https://ats.io/matchup/college-basketball/dartmouth-big-green-vs-albany-great-danes-prediction-11-11-2026/"
+        "https://www.bloomberg.com/news/articles/2026-11-11/porsche-ceo-throws-shade-at-tesla-roadster-spectacle",
+        "https://nypost.com/2026/11/11/business/porsche-ceo-takes-swipe-at-teslas-flying-car-spectacle-effects-and-shows/",
+        "https://electrek.co/2026/11/11/porsche-ceo-tesla-flying-roadster-stunt/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UDqjKXIbW7x9dQN8Ss3-Y6v-vrwu1qj2_Q5yqnYAK2950VubtMmtj6A4Mzo",
-      "image_credit": "Sportsgambler",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuhtyg1p01Lh7JM-0kJFc7n1UOiZ4kFYE6Ld9GH9eSVq5B0XBJD5oM0pTtucc",
+      "image_credit": "Bloomberg.com",
       "news": [
         {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/dartmouth-big-green-vs-albany-great-danes-prediction-odds-2026-11-11/",
-          "title": "Dartmouth vs Albany Prediction, Picks & Odds | 11 Nov 2026",
-          "publisher": "Sportsgambler",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-11/porsche-ceo-throws-shade-at-tesla-roadster-spectacle",
+          "title": "Porsche CEO Throws Shade at Tesla Roadster Spectacle",
+          "publisher": "Bloomberg.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UDqjKXIbW7x9dQN8Ss3-Y6v-vrwu1qj2_Q5yqnYAK2950VubtMmtj6A4Mzo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuhtyg1p01Lh7JM-0kJFc7n1UOiZ4kFYE6Ld9GH9eSVq5B0XBJD5oM0pTtucc"
         },
         {
-          "url": "https://www.actionnetwork.com/ncaab/dartmouth-big-green-vs-albany-great-danes-prediction-pick-odds-college-basketball-wednesday-november-11",
-          "title": "Dartmouth vs Albany Prediction, Pick, College Basketball Odds for Wednesday, Nov. 11",
-          "publisher": "Action Network",
+          "url": "https://nypost.com/2026/11/11/business/porsche-ceo-takes-swipe-at-teslas-flying-car-spectacle-effects-and-shows/",
+          "title": "Porsche CEO takes swipe at Tesla’s flying car spectacle: ‘Effects and shows’",
+          "publisher": "New York Post",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfJngjiVtfiV1C9_a5QJL1Ogdns1rXTr6M1iBPqi9_vEPL3JhDqK2iQeZS974"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDBSgp7ONymkHvWr68pw-l5PW7tlHJE4BZwwc-vN-GWgbVgypuJocQfTnxb2s"
         },
         {
-          "url": "https://ats.io/matchup/college-basketball/dartmouth-big-green-vs-albany-great-danes-prediction-11-11-2026/",
-          "title": "Dartmouth vs Albany Prediction - Nov. 11, 2026",
-          "publisher": "ATS.io",
+          "url": "https://electrek.co/2026/11/11/porsche-ceo-tesla-flying-roadster-stunt/",
+          "title": "Porsche CEO takes a shot at Tesla’s ‘flying’ Roadster stunt show",
+          "publisher": "Electrek",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqcLR5BFm25dUhV-q_zo3S5YF5GlmL6mYjV_gH2VYtttzMEuXBDWib5lfMzCk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxzCwD90AYRSAsvezmu7cN_kAZAx93ATOJ57rmP9gv6NL57XY-7aumIZ7Tw7o"
+        }
+      ]
+    },
+    {
+      "query": "weather chicago",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T20:30:00Z",
+      "related_news_urls": [
+        "https://abc7chicago.com/post/chicago-il-area-weather-forecast-week-could-include-1st-snowfall-season/20030999/",
+        "https://wgntv.com/weather/chicago-weather-wednesday-11112026/",
+        "https://www.fox32chicago.com/weather/chicago-weather-forecast-cold-snow-chance"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTO9oBmcOgB4oNrMPlWsRzd9PufaisnqVNvvhMo2cqjFhH6az-2YXd8OTeS2Jw",
+      "image_credit": "ABC7 Chicago",
+      "news": [
+        {
+          "url": "https://abc7chicago.com/post/chicago-il-area-weather-forecast-week-could-include-1st-snowfall-season/20030999/",
+          "title": "Chicago, IL-area weather forecast this week could include 1st snowfall of season",
+          "publisher": "ABC7 Chicago",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTO9oBmcOgB4oNrMPlWsRzd9PufaisnqVNvvhMo2cqjFhH6az-2YXd8OTeS2Jw"
+        },
+        {
+          "url": "https://wgntv.com/weather/chicago-weather-wednesday-11112026/",
+          "title": "Wednesday forecast: Showers, isolated thunderstorms develop as coldest air of season moves into Chicagoland",
+          "publisher": "WGN-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSIATM4NOOkQwSuCa9fi-1Kcnor7g7l2MkiSs6Es27SkuyHbdD62wIFh_OlR4"
+        },
+        {
+          "url": "https://www.fox32chicago.com/weather/chicago-weather-forecast-cold-snow-chance",
+          "title": "Chicago weather: Colder stretch ahead as snow chances shift toward 'Michiana'",
+          "publisher": "FOX 32 Chicago",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtsv6RM09IhN2rhUHpPyIf1QRHd6fbPsDrlDMjLyCAuPSvkXjDmG2ZL10tQck"
+        }
+      ]
+    },
+    {
+      "query": "disco singer rochelle fleming passes",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-11T20:10:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/it/news/ni66103708/?ref_=nwc_art_perm",
+        "https://www.bmg.com/news/bmg-pays-tribute-to-rochelle-fleming",
+        "https://www.usatoday.com/story/entertainment/music/2026/11/09/rochelle-fleming-dead-first-choice/92697205007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRX77QqyxroeMbRORme4GDhI59LDtvfZpRfD93cnBz1goqisMzaL59Ys9VLgw4",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/it/news/ni66103708/?ref_=nwc_art_perm",
+          "title": "First Choice Singer Rochelle Fleming Dies at 72",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRX77QqyxroeMbRORme4GDhI59LDtvfZpRfD93cnBz1goqisMzaL59Ys9VLgw4"
+        },
+        {
+          "url": "https://www.bmg.com/news/bmg-pays-tribute-to-rochelle-fleming",
+          "title": "Bmg Pays Tribute To Rochelle Fleming",
+          "publisher": "www.bmg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIDSrx6_bIPU6rwpRWraCRQcl_4y_5sa5-R4-3KEJ4_5dW-umRGEFCrigWsRw"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/music/2026/11/09/rochelle-fleming-dead-first-choice/92697205007/",
+          "title": "Rochelle Fleming, singer of disco's First Choice, dies at 72",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRq4MdZKyjwfwZz8CK1K39FcNuDi9nWccA8wv7G8dZ6MeD02gn9VUj7CAj0rpA"
+        }
+      ]
+    },
+    {
+      "query": "elina svitolina",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T20:10:00Z",
+      "related_news_urls": [
+        "https://www.wtatennis.com/news/4607100/andreeva-wins-final-seven-games-to-beat-svitolina-in-fage-wta-finals-debut",
+        "https://tennishead.net/tracy-austin-states-what-she-loves-about-mirra-andreeva-after-watching-her-win-at-the-wta-finals/",
+        "https://www.puntodebreak.com/en/2026/11/10/andreevas-surprising-routine-before-playing-federer-and-nadal-are-to-blame"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGdOs1WYsDoSjmFWtjTSxMHigDQ1a4eiOA5S-Rzxtx3BoI1doHRavd4oCe72o",
+      "image_credit": "WTA Tennis",
+      "news": [
+        {
+          "url": "https://www.wtatennis.com/news/4607100/andreeva-wins-final-seven-games-to-beat-svitolina-in-fage-wta-finals-debut",
+          "title": "Andreeva wins final seven games to beat Svitolina in FAGE WTA Finals singles debut",
+          "publisher": "WTA Tennis",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGdOs1WYsDoSjmFWtjTSxMHigDQ1a4eiOA5S-Rzxtx3BoI1doHRavd4oCe72o"
+        },
+        {
+          "url": "https://tennishead.net/tracy-austin-states-what-she-loves-about-mirra-andreeva-after-watching-her-win-at-the-wta-finals/",
+          "title": "Tracy Austin states what she ‘loves’ about Mirra Andreeva after watching her win at the WTA Finals",
+          "publisher": "Tennishead",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScYAjq-hg3nWRxd4fE6-LJrpRH1FDqH9nhxQ_Kmg9XX3pEurOtWgSHNO9wiag"
+        },
+        {
+          "url": "https://www.puntodebreak.com/en/2026/11/10/andreevas-surprising-routine-before-playing-federer-and-nadal-are-to-blame",
+          "title": "Andreeva's Surprising Routine Before Playing: Federer and Nadal Are to Blame",
+          "publisher": "Punto de Break",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzZ4wPpBRroTpBIyBN9rR6VMAph_DaCjGHPkNTKK1nQT8Ov2ozQ_dGJzI3EcA"
+        }
+      ]
+    },
+    {
+      "query": "childrens hospital",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T20:00:00Z",
+      "related_news_urls": [
+        "https://www.wisn.com/article/childrens-hospital-lockdown-threat/74402457",
+        "https://www.jsonline.com/story/news/2026/11/11/childrens-wisconsin-hospital-in-wauwatosa-on-lockdown/92729816007/",
+        "https://www.tmj4.com/news/local-news/county-reporting/milwaukee-county/childrens-wisconsin-milwaukee-hospital-campus-on-lockdown"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXOCt3W01BedHNkQFNshSsKRP9EO0vpjwSV_PmZJK-ctrmH__-a6jw70ngYH0",
+      "image_credit": "WISN",
+      "news": [
+        {
+          "url": "https://www.wisn.com/article/childrens-hospital-lockdown-threat/74402457",
+          "title": "Children's Hospital under lockdown due to threat",
+          "publisher": "WISN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXOCt3W01BedHNkQFNshSsKRP9EO0vpjwSV_PmZJK-ctrmH__-a6jw70ngYH0"
+        },
+        {
+          "url": "https://www.jsonline.com/story/news/2026/11/11/childrens-wisconsin-hospital-in-wauwatosa-on-lockdown/92729816007/",
+          "title": "Children's Wisconsin hospital in Wauwatosa on lockdown",
+          "publisher": "Milwaukee Journal Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJhqxYqMXAlWutRC6xwsee_OEyDtN4z_YLhdZwnFq2Y9CWFlDP2L8p1ASFn3M"
+        },
+        {
+          "url": "https://www.tmj4.com/news/local-news/county-reporting/milwaukee-county/childrens-wisconsin-milwaukee-hospital-campus-on-lockdown",
+          "title": "Children’s Wisconsin Milwaukee Hospital Campus on lockdown",
+          "publisher": "TMJ4 News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCdHfhYUW3reQU4KwwyA46rXZI1cI17rqOpbCOf8KiZ7KU9jBelsZCIKZ1ygA"
+        }
+      ]
+    },
+    {
+      "query": "pat desiato passing rock bassist",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T19:50:00Z",
+      "related_news_urls": [
+        "https://www.pennlive.com/entertainment/2026/11/rock-band-announces-beloved-member-has-died-at-36-we-are-heartbroken.html",
+        "https://www.vice.com/en/article/rock-musician-dies-suddenly-at-36-as-band-shares-heartbreaking-statement/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1UBvkhzCR8DgSquStDyTNWXQJF4RP4oQInRqcsd-FPMtjNOOMP3l4dnukZh4",
+      "image_credit": "PennLive.com",
+      "news": [
+        {
+          "url": "https://www.pennlive.com/entertainment/2026/11/rock-band-announces-beloved-member-has-died-at-36-we-are-heartbroken.html",
+          "title": "Rock band announces beloved member has died at 36: ‘We are heartbroken’",
+          "publisher": "PennLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1UBvkhzCR8DgSquStDyTNWXQJF4RP4oQInRqcsd-FPMtjNOOMP3l4dnukZh4"
+        },
+        {
+          "url": "https://www.vice.com/en/article/rock-musician-dies-suddenly-at-36-as-band-shares-heartbreaking-statement/",
+          "title": "Rock Musician Dies Suddenly at 36 as Band Shares Heartbreaking Statement",
+          "publisher": "VICE",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSk8XMSM18S6YuuyKDIvC3jbXIZNbybtvZv7ExpCMT91OlkYaVCCJnjyUlwwuY"
+        }
+      ]
+    },
+    {
+      "query": "holger rune",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T19:50:00Z",
+      "related_news_urls": [
+        "https://www.atptour.com/en/news/stockholm-2026-tuesday-report",
+        "https://sports.yahoo.com/articles/every-player-holger-rune-beaten-140000091.html",
+        "https://www.flashscore.com/news/rejuvenated-rune-defeats-bergs-to-put-stockholm-demons-to-bed/b3dtHElB/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJ58_lmqUBF7qwFY6LpaZarQ7tJHTSOsYvBJXDCs97SmZ4dOrjVITHkUs2874",
+      "image_credit": "ATP Tour",
+      "news": [
+        {
+          "url": "https://www.atptour.com/en/news/stockholm-2026-tuesday-report",
+          "title": "Rune returns to Stockholm with statement win, Musetti advances",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJ58_lmqUBF7qwFY6LpaZarQ7tJHTSOsYvBJXDCs97SmZ4dOrjVITHkUs2874"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/every-player-holger-rune-beaten-140000091.html",
+          "title": "Every player Holger Rune has beaten since returning from long-term injury as he advances in Stockholm",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDug3fU9-UwJ1wWqew6z03Y9CWxMTUxK3j7Qa_G5mLSh_JemWdiDqtdX6F6wc"
+        },
+        {
+          "url": "https://www.flashscore.com/news/rejuvenated-rune-defeats-bergs-to-put-stockholm-demons-to-bed/b3dtHElB/",
+          "title": "Rejuvenated Rune defeats Bergs to put Stockholm demons to bed",
+          "publisher": "Flashscore.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSoK9n8WYk42HO8nhxLov8yQObpywNyGcfB0cwotkd4LluOwUJe1ge0ly174-g"
         }
       ]
     }
