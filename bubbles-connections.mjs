@@ -719,9 +719,14 @@ export function mountConnections(container,{token}) {
       }
       return signedIn;
     }catch(error) {
-      if(version===loadVersion)status.textContent=error?.message==='verified_wallet_required'?
-        'This browser has no verified Bubbles account session. Open Bubbles in the browser where you are signed in.':
-        'Could not verify account connections. Please retry.';
+      if(version===loadVersion){
+        // A failed refresh is never a current provider verification receipt.
+        renderVerification(null,null,false);
+        catalog.replaceChildren();accounts.replaceChildren();
+        status.textContent=error?.message==='verified_wallet_required'?
+          'This browser has no verified Bubbles account session. Open Bubbles in the browser where you are signed in.':
+          'Could not verify account connections. Please retry.';
+      }
     }finally {if(version===loadVersion)refresh.disabled=false;}
   }
   refresh.addEventListener('click',()=>void load());
