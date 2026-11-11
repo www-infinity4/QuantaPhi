@@ -64,7 +64,14 @@ test('yellow extraction exactly routes to blue pending import without inventing 
  await first(page,'textarea[aria-label="Write a task or paste the exact extract"]').fill(raw);
  await first(page,'input[aria-label="Source reference (required for yellow extraction)"]').fill('Original owner note #22');
  await page.getByRole('button',{name:'Add work to this session'}).click();
- await expect(first(page,'.zeus-status')).toContainText('Extraction point');
+ const observed=await page.locator('#zeusSessionHistory').evaluate(root=>({
+  notice:root.querySelector('.zeus-history-notice')?.textContent,
+  form:root.querySelector('select[aria-label="Work classification"]')?.value,
+  items:root.querySelectorAll('.zeus-work-item').length,
+  state:root.querySelector('.zeus-status')?.textContent
+ }));
+ console.log('Zeus extraction state after user submit:',JSON.stringify(observed));
+ await expect(first(page,'.zeus-status'),JSON.stringify(observed)).toContainText('Extraction point');
  await page.getByRole('button',{name:'Open focused thread'}).click();
  await expect(first(page,'.zeus-status')).toContainText('Import or AI answer needed');
  await expect(first(page,'.zeus-work-text')).toHaveText(raw);
