@@ -3,136 +3,292 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T05:31:30.948126Z",
+  "checked_at": "2026-11-11T06:01:42.840585Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "franz wagner",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T05:10:00Z",
+      "query": "el nino",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T05:40:00Z",
       "related_news_urls": [
-        "https://www.fantasypros.com/nba/news/618862/franz-wagner-flirts-with-triple-double-loss-to-warriors.php",
-        "https://www.cbssports.com/fantasy/basketball/news/magics-franz-wagner-shines-in-playmaking-role/",
-        "https://www.dazn.com/en-US/news/basketball/franz-wagner-shows-magic-have-bright-future-despite-injuries/srncxaebsul21devogv8k657i"
+        "https://www.nytimes.com/2026/11/06/travel/el-nino-skiing-united-states.html",
+        "https://www.usatoday.com/story/news/weather/2026/11/09/el-nino-effects-daily-us-weather/92443996007/",
+        "https://grist.org/extreme-weather/a-monstrous-el-nino-has-arrived-what-it-means-for-where-you-live/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbV_BGLZ88CV8t5X-gZ48ezNUsvsNMUBqcBdUZye9XA05lp17uz3KvDNYGSrE",
-      "image_credit": "FantasyPros",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQX7Sgy5zYFuPSXMo4rsW_lQquxzTH8F7DrtUN7vIll9cNfNZDtlJsf8SUUr9I",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.fantasypros.com/nba/news/618862/franz-wagner-flirts-with-triple-double-loss-to-warriors.php",
-          "title": "Franz Wagner flirts with triple-double in loss to Warriors",
-          "publisher": "FantasyPros",
+          "url": "https://www.nytimes.com/2026/11/06/travel/el-nino-skiing-united-states.html",
+          "title": "A Super El Niño Is Here. What Does It Mean for Skiing?",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbV_BGLZ88CV8t5X-gZ48ezNUsvsNMUBqcBdUZye9XA05lp17uz3KvDNYGSrE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQX7Sgy5zYFuPSXMo4rsW_lQquxzTH8F7DrtUN7vIll9cNfNZDtlJsf8SUUr9I"
         },
         {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/magics-franz-wagner-shines-in-playmaking-role/",
-          "title": "Magic's Franz Wagner: Shines in playmaking role",
+          "url": "https://www.usatoday.com/story/news/weather/2026/11/09/el-nino-effects-daily-us-weather/92443996007/",
+          "title": "El Niño is just getting started. New effects expected soon",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFs7ozwMKA3mG3v8R0azuUsMlbGV3B-bHWKIgY3zYofhyH0AGa4dZNFBvI2LM"
+        },
+        {
+          "url": "https://grist.org/extreme-weather/a-monstrous-el-nino-has-arrived-what-it-means-for-where-you-live/",
+          "title": "A monstrous El Niño has arrived. Here’s what it means for where you live.",
+          "publisher": "Grist",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxuXwBpyMTKBNJ5zjTbR--hBygQO3VGkj8Dxg20KDEAx-C5EwI67aWP4hsRcU"
+        }
+      ]
+    },
+    {
+      "query": "emilio pagán",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T05:30:00Z",
+      "related_news_urls": [
+        "https://www.mlbtraderumors.com/2026/11/tigers-to-sign-emilio-pagan.html",
+        "https://www.mlb.com/news/emilio-pagan-contract-with-tigers",
+        "https://www.rotowire.com/baseball/headlines/emilio-pagan-news-signs-with-detroit-1028267"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4dj9N5d2k3YZpO_mA2W04qioXUTLUk7Y5Rxk345-HAu6FMkYWY5U0soV7JTI",
+      "image_credit": "MLB Trade Rumors",
+      "news": [
+        {
+          "url": "https://www.mlbtraderumors.com/2026/11/tigers-to-sign-emilio-pagan.html",
+          "title": "Tigers To Sign Emilio Pagán",
+          "publisher": "MLB Trade Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4dj9N5d2k3YZpO_mA2W04qioXUTLUk7Y5Rxk345-HAu6FMkYWY5U0soV7JTI"
+        },
+        {
+          "url": "https://www.mlb.com/news/emilio-pagan-contract-with-tigers",
+          "title": "Pagán agrees to 1-year, $11 million deal with Tigers (report)",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJdd2XwvmriwN_x3_hy18lZVJ7etmULrMHkpSoPtTrxVUJ9AntPbA14SlLX1k"
+        },
+        {
+          "url": "https://www.rotowire.com/baseball/headlines/emilio-pagan-news-signs-with-detroit-1028267",
+          "title": "Emilio Pagan News: Signs with Detroit",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXisITpZNJHSKOkV6V2tYFv5RSajCVQHaYezsuhYH029m69tT5lpqVGe8rdbA"
+        }
+      ]
+    },
+    {
+      "query": "elsinore",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T05:30:00Z",
+      "related_news_urls": [
+        "https://www.avclub.com/elsinore-ticket-giveaway",
+        "https://48hills.org/2026/11/grab-a-free-pass-to-see-andrew-scott-in-elsinore/",
+        "https://www.kcrw.com/events/kcrw-partner-screening-elsinore"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxFMX7gH7fvlyUzkhXFA4fSOVh5fZ5rzG51kofC3q5thcqqk5-xMJq4XyhQi4",
+      "image_credit": "A.V. Club",
+      "news": [
+        {
+          "url": "https://www.avclub.com/elsinore-ticket-giveaway",
+          "title": "New York and Los Angeles, come see Elsinore early and for free",
+          "publisher": "A.V. Club",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxFMX7gH7fvlyUzkhXFA4fSOVh5fZ5rzG51kofC3q5thcqqk5-xMJq4XyhQi4"
+        },
+        {
+          "url": "https://48hills.org/2026/11/grab-a-free-pass-to-see-andrew-scott-in-elsinore/",
+          "title": "Grab a free pass to see Andrew Scott in ‘Elsinore’",
+          "publisher": "48 Hills",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbiU4nCzo8f8V5Kuo5Zrxu2zEpEfdJm9HviIdkH7uAXR1FTFWkjysGeju066M"
+        },
+        {
+          "url": "https://www.kcrw.com/events/kcrw-partner-screening-elsinore",
+          "title": "KCRW Partner Screening: 'Elsinore'",
+          "publisher": "KCRW",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWp7tlrRNZAfjpQg3BGrITTkiKTiyuTVYwHLgkKW8XxtsRahTs30j9OMOLgZE"
+        }
+      ]
+    },
+    {
+      "query": "coachella 2027 lineup",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T05:30:00Z",
+      "related_news_urls": [
+        "https://www.sfgate.com/sf-culture/article/coachella-headliners-leak-22522136.php",
+        "https://hypebeast.com/2026/11/sza-hints-coachella-2027-headline-set-teases-new-music",
+        "https://dailycoin.com/coachella-2027-lineup-leaks-polymarket-odds-headliners/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu7m26jqmr36TZGo8p0VvVhPnAo6GovpILVjEHMwDniQ8nsYVehoDOaJdyDjc",
+      "image_credit": "SFGATE",
+      "news": [
+        {
+          "url": "https://www.sfgate.com/sf-culture/article/coachella-headliners-leak-22522136.php",
+          "title": "SZA appears to leak Coachella 2027 headliners",
+          "publisher": "SFGATE",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu7m26jqmr36TZGo8p0VvVhPnAo6GovpILVjEHMwDniQ8nsYVehoDOaJdyDjc"
+        },
+        {
+          "url": "https://hypebeast.com/2026/11/sza-hints-coachella-2027-headline-set-teases-new-music",
+          "title": "SZA Seemingly Hints at Coachella 2027 Headline Set and Teases New Music",
+          "publisher": "Hypebeast",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRchonKLLL7FbHLDqFniRuiHC_Pige9DyAaPzyLWq00EIjGRZEXUC0C9M1vi8Q"
+        },
+        {
+          "url": "https://dailycoin.com/coachella-2027-lineup-leaks-polymarket-odds-headliners/",
+          "title": "Coachella 2027 Lineup Leaks: Polymarket Odds Reveal the Top 3 Favorites",
+          "publisher": "DailyCoin",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzZSUeQYxmDStBvG48kwgg_U4tyIn6yb93YvaeZJOSbvL-rfsivGQsv3m_Wb8"
+        }
+      ]
+    },
+    {
+      "query": "donovan mitchell",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T05:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/fantasy/basketball/story/_/id/50434186/fantasy-basketball-tips-nba-betting-picks-today",
+        "https://www.fanduel.com/research/nba-picks-today-3-nba-predictions-and-best-bets-for-monday-nov-9",
+        "https://www.si.com/betting/nba-best-bets-today-predictions-prop-bets-for-victor-wembanyama-steph-curry-cavs-pacers-mavs"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcTM67z5ZpuNOZG316Un56eklmnSaSvnDryyrwhkcFSMcv54xOZWh015argrI",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/fantasy/basketball/story/_/id/50434186/fantasy-basketball-tips-nba-betting-picks-today",
+          "title": "Monday's fantasy hoops adds, NBA bets to make: Ty Jerome primed for a big game",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcTM67z5ZpuNOZG316Un56eklmnSaSvnDryyrwhkcFSMcv54xOZWh015argrI"
+        },
+        {
+          "url": "https://www.fanduel.com/research/nba-picks-today-3-nba-predictions-and-best-bets-for-monday-nov-9",
+          "title": "NBA Picks Today: 3 NBA Predictions and Best Bets for Monday, Nov. 9",
+          "publisher": "FanDuel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvEGzPa1uGFNV7YNlIGQwfYZxQmwuET3gkpzW0WgmU-tA4pBaTY_d6BkMBYVo"
+        },
+        {
+          "url": "https://www.si.com/betting/nba-best-bets-today-predictions-prop-bets-for-victor-wembanyama-steph-curry-cavs-pacers-mavs",
+          "title": "Peter’s Points: NBA Best Bets Today (Predictions, Prop Bets for Victor Wembanyama, Steph Curry, Cavs, Pacers-Mavs)",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_D1LmAsubyRqM1C0VWr-fJd0EWXYi2m_XBy96T-jag_FrFPQWvt0DH5Vyf7w"
+        }
+      ]
+    },
+    {
+      "query": "bennett stirtz",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T05:20:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/fantasy/basketball/news/thunders-bennett-stirtz-scores-11-points-in-blowout-win/",
+        "https://roundtable.io/sports/nba/thunder/players/okc-thunder-s-bennett-stirtz-has-job-bigger-than-scoring",
+        "https://roundtable.io/sports/nba/thunder/video/okc-thunder-s-bennett-stirtz-has-job-bigger-than-scoring"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfi16RI5gV5xV14aOAdMfnijlFD7V7CN8wsSJOoBBH0pmX3d8zHxwMdrfW5jA",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/thunders-bennett-stirtz-scores-11-points-in-blowout-win/",
+          "title": "Thunder's Bennett Stirtz: Scores 11 points in blowout win",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCCv5waEbm0dMRWxPH9XRdajgSx2egpFFluC4GKmin6BjBTia0x2lbCt7MDJ4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfi16RI5gV5xV14aOAdMfnijlFD7V7CN8wsSJOoBBH0pmX3d8zHxwMdrfW5jA"
         },
         {
-          "url": "https://www.dazn.com/en-US/news/basketball/franz-wagner-shows-magic-have-bright-future-despite-injuries/srncxaebsul21devogv8k657i",
-          "title": "Franz Wagner shows why Magic have bright future despite injuries",
-          "publisher": "DAZN",
+          "url": "https://roundtable.io/sports/nba/thunder/players/okc-thunder-s-bennett-stirtz-has-job-bigger-than-scoring",
+          "title": "OKC Thunder’s Bennett Stirtz Has Job Bigger Than Scoring",
+          "publisher": "roundtable.io",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS55VhM8odjgOC0YGz-voonYdluqY0lRBLM_7Y-hvUgsjF9ygyvAiuovSpaI8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9BDigdFG5eZ0XoS2QKzmJud_oRZde8u05mOy9hFemjqEFZEbMLtk-kN2evus"
+        },
+        {
+          "url": "https://roundtable.io/sports/nba/thunder/video/okc-thunder-s-bennett-stirtz-has-job-bigger-than-scoring",
+          "title": "Video - OKC Thunder’s Bennett Stirtz Has Job Bigger Than Scoring",
+          "publisher": "roundtable.io",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9BDigdFG5eZ0XoS2QKzmJud_oRZde8u05mOy9hFemjqEFZEbMLtk-kN2evus"
         }
       ]
     },
     {
-      "query": "higgsfield",
+      "query": "precious achiuwa",
       "approx_searches": "200+",
-      "published_at": "2026-11-11T05:10:00Z",
+      "published_at": "2026-11-11T05:20:00Z",
       "related_news_urls": [
-        "https://www.awn.com/news/argentinas-listen-meh-wins-500k-higgsfield-ai-film-prize",
-        "https://www.anthropic.com/research/claude-electronics-design",
-        "https://www.bloomberg.com/news/articles/2026-11-09/anthropic-unveils-new-fable-mythos-ai-models-ahead-of-ipo"
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/darius-acuff-jr-drops-29-points-vs-orlando",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-10/sac-starts-acuff-lavine-hunter-achiuwa-sabonis",
+        "https://wizofawes.com/kings-questionable-trade-decisions-perfect-opportunity-wizards"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZq7GDf9lahWbxkZAvOUXhQ0lLQtLFntOve8KUPTqM-zPJQINb1NVzF3Xy8vI",
-      "image_credit": "Animation World Network",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJzBzaj4zP8J5wmYl4s_gSnV_F8-TEwzfhjM9SL_cmge4l6lE1AgeFr6UykvQ",
+      "image_credit": "NBC Sports",
       "news": [
         {
-          "url": "https://www.awn.com/news/argentinas-listen-meh-wins-500k-higgsfield-ai-film-prize",
-          "title": "Argentina's 'Listen to MEH' Wins $500K Higgsfield AI Film Prize",
-          "publisher": "Animation World Network",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/darius-acuff-jr-drops-29-points-vs-orlando",
+          "title": "Darius Acuff Jr. drops 29 points vs. Orlando",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZq7GDf9lahWbxkZAvOUXhQ0lLQtLFntOve8KUPTqM-zPJQINb1NVzF3Xy8vI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJzBzaj4zP8J5wmYl4s_gSnV_F8-TEwzfhjM9SL_cmge4l6lE1AgeFr6UykvQ"
         },
         {
-          "url": "https://www.anthropic.com/research/claude-electronics-design",
-          "title": "Claude can design electronic prototypes from start to finish",
-          "publisher": "Anthropic",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-10/sac-starts-acuff-lavine-hunter-achiuwa-sabonis",
+          "title": "SAC starts Acuff, LaVine, Hunter, Achiuwa, Sabonis",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWFPaodtvL3MRFHNluzwTC2Qh-Tuad8-Nhc25lUVg5X5M2VqX4_2PHg13ZXzg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsDxs2KLhD9OfKRTFR4csvanfFpNxdTNGP1Iu7KNk2ID8LB1HRh9nxDTRcz3M"
         },
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-09/anthropic-unveils-new-fable-mythos-ai-models-ahead-of-ipo",
-          "title": "Anthropic Unveils New Fable, Mythos AI Models Ahead of IPO",
-          "publisher": "Bloomberg.com",
+          "url": "https://wizofawes.com/kings-questionable-trade-decisions-perfect-opportunity-wizards",
+          "title": "Kings' questionable trade decisions could be perfect opportunity for Wizards",
+          "publisher": "Wiz of Awes",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwbC_02-nQm2F4EHNS5qnwTXsPQvEmeKYdnTXVW-BNMH9iv2vOo0pClKJ9pTk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJcj3xA_heQAwK7x_jnzVCkBT8-tPfJOhyPoQ4nHJyJ_Ynl5fFhKScqEPuvrc"
         }
       ]
     },
     {
-      "query": "madden movie",
+      "query": "joseph zada",
       "approx_searches": "200+",
-      "published_at": "2026-11-11T05:10:00Z",
+      "published_at": "2026-11-11T05:20:00Z",
       "related_news_urls": [
-        "https://awfulannouncing.com/amazon/madden-theatrical-date-moved-back-november-18.html",
-        "https://www.yahoo.com/news/videos/madden-movie-memphis-music-connection-030039365.html",
-        "https://www.commercialappeal.com/videos/entertainment/music/2026/11/10/madden-movie-music-by-scott-bomar/92699215007/"
+        "https://culturedmag.com/article/2026/11/10/film-joseph-zada-age-hunger-games-movies/",
+        "https://www.sweetyhigh.com/read/where-to-watch-joseph-next",
+        "https://www.mercurynews.com/2026/11/09/tickets-selling-fast-in-south-bay-for-highly-anticipated-movie-opening/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI2euEo9Eh--VwrXbuIx-vfSDi0A3q23sVUlSPqKBdecqW5rp8mQN-UOVdNzo",
-      "image_credit": "Awful Announcing",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuLOoTOJ-Pj8pL1RcIwfU5DVNvZboRf06VMP4WMZF-01Jt4cZYEheZ14pMwx8",
+      "image_credit": "Cultured Mag",
       "news": [
         {
-          "url": "https://awfulannouncing.com/amazon/madden-theatrical-date-moved-back-november-18.html",
-          "title": "‘Madden’ theatrical screenings moving back a week doesn’t bode well",
-          "publisher": "Awful Announcing",
+          "url": "https://culturedmag.com/article/2026/11/10/film-joseph-zada-age-hunger-games-movies/",
+          "title": "‘Hunger Games’ Star Joseph Zada Is Ready to Be Your Next It Boy",
+          "publisher": "Cultured Mag",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI2euEo9Eh--VwrXbuIx-vfSDi0A3q23sVUlSPqKBdecqW5rp8mQN-UOVdNzo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuLOoTOJ-Pj8pL1RcIwfU5DVNvZboRf06VMP4WMZF-01Jt4cZYEheZ14pMwx8"
         },
         {
-          "url": "https://www.yahoo.com/news/videos/madden-movie-memphis-music-connection-030039365.html",
-          "title": "The new 'Madden' movie has a Memphis music connection",
-          "publisher": "Yahoo",
+          "url": "https://www.sweetyhigh.com/read/where-to-watch-joseph-next",
+          "title": "Where to Watch Joseph Zada Before Sunrise on the Reaping",
+          "publisher": "Sweety High",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUobwYS4A1QY45PVdqHyXMjuCi2pUO5sVgxC8CgS9asHaLa_RhEQq_pCJgPIo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjeRf8ZZHqGtf3RDOrHRg-rONMZeygX-TMPSS-7B2cAR65yfpP2aNj7h6lTC4"
         },
         {
-          "url": "https://www.commercialappeal.com/videos/entertainment/music/2026/11/10/madden-movie-music-by-scott-bomar/92699215007/",
-          "title": "'Madden' movie features original music by Memphis musician Scott Bomar",
-          "publisher": "The Commercial Appeal",
+          "url": "https://www.mercurynews.com/2026/11/09/tickets-selling-fast-in-south-bay-for-highly-anticipated-movie-opening/",
+          "title": "Tickets selling fast in South Bay for highly anticipated movie opening",
+          "publisher": "The Mercury News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTojjh2ghA9I3DhRRS4QhYtrrbUjYDeLG0zk8ekQlt8u7LMoOH_2VbEj1o9qEM"
-        }
-      ]
-    },
-    {
-      "query": "charlize theron",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T05:10:00Z",
-      "related_news_urls": [
-        "https://www.hellomagazine.com/healthandbeauty/hair/933976/charlize-theron-winge-clip-in-fringe-hair-trend/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4AVda0D2AIMEO_kNq31jvnOW_HXvxSmMAgiU4G43Eit5zAjmgbfDyatet6-A",
-      "image_credit": "HELLO!",
-      "news": [
-        {
-          "url": "https://www.hellomagazine.com/healthandbeauty/hair/933976/charlize-theron-winge-clip-in-fringe-hair-trend/",
-          "title": "Charlize Theron makes a case for the ‘winge’ – the low-commitment hair trend to try this party season",
-          "publisher": "HELLO!",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4AVda0D2AIMEO_kNq31jvnOW_HXvxSmMAgiU4G43Eit5zAjmgbfDyatet6-A"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThnH5biYg6uJ_TOhsfBXX4qudUMyeNhXDIjkUvo8io9ErXxhpvrqoi5_cYNX8"
         }
       ]
     },
     {
       "query": "united hijacking",
-      "approx_searches": "2000+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-11T05:10:00Z",
       "related_news_urls": [
         "https://www.wwltv.com/article/news/crime/man-accused-of-making-bomb-threat-on-plane-landing-at-msy-airport-police-crime-investigation-safety/289-8042e728-dd7c-479d-8822-f8f836bd718b",
@@ -197,146 +353,6 @@
           "publisher": "Hoodline",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPlbTFm6evw8B_1LGC4Ob666vIFvo5kOCWXKyBPopSz39XVmTOrwmL652J-ak"
-        }
-      ]
-    },
-    {
-      "query": "kenrich williams",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T05:00:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-10/okc-starts-sga-mitchell-mccain-kenrich-ihart",
-        "https://www.rotowire.com/basketball/headlines/jared-mccain-news-starting-tuesday-538530",
-        "https://www.si.com/nba/thunder/onsi/okc-thunder-announce-altered-starting-lineup-vs-cleveland-01m6me0d7fpm"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQp33ZUm5qq_lPgWmNQ8UuxtjllxX_s_rAvxRRgFFdkE56p6382_BLBb7Im6Ps",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-10/okc-starts-sga-mitchell-mccain-kenrich-ihart",
-          "title": "OKC starts SGA, Mitchell, McCain, Kenrich, iHart",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQp33ZUm5qq_lPgWmNQ8UuxtjllxX_s_rAvxRRgFFdkE56p6382_BLBb7Im6Ps"
-        },
-        {
-          "url": "https://www.rotowire.com/basketball/headlines/jared-mccain-news-starting-tuesday-538530",
-          "title": "Jared McCain News: Starting Tuesday",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlzt0AjuzmgmQe-c2gMShv4cqb7GkWDgqDqFm2pCTHdXotG_NgO9LIXsdKYBg"
-        },
-        {
-          "url": "https://www.si.com/nba/thunder/onsi/okc-thunder-announce-altered-starting-lineup-vs-cleveland-01m6me0d7fpm",
-          "title": "OKC Thunder Announce Altered Starting Lineup vs. Cleveland",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTE3FZUSXCLcsd_MS5OMpzdRrg_6n6typeNAnNwF4Y1zR1fbN-57opcRZHKi8I"
-        }
-      ]
-    },
-    {
-      "query": "kevin byard",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T05:00:00Z",
-      "related_news_urls": [
-        "https://www.masslive.com/patriots/2026/11/delivering-his-own-son-playing-for-mike-vrabel-and-more-with-kevin-byard-iii-in-karens-corner.html",
-        "https://sports.yahoo.com/articles/kevin-byard-iii-recounts-deliver-144817172.html",
-        "https://sports.yahoo.com/nfl/article/rob-gronkowski-hits-signature-gronk-spike-celebration-during-patriots-hall-of-fame-induction-ceremony-025224526.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVgmhcbkac5rAnQfRWICz52-WYVBs4QAe5BF5HfS7I95HO3m4AwroI3n3CuLo",
-      "image_credit": "MassLive",
-      "news": [
-        {
-          "url": "https://www.masslive.com/patriots/2026/11/delivering-his-own-son-playing-for-mike-vrabel-and-more-with-kevin-byard-iii-in-karens-corner.html",
-          "title": "Kevin Byard III recounts what it was like to deliver his son during training camp in 2020",
-          "publisher": "MassLive",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVgmhcbkac5rAnQfRWICz52-WYVBs4QAe5BF5HfS7I95HO3m4AwroI3n3CuLo"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/kevin-byard-iii-recounts-deliver-144817172.html",
-          "title": "Kevin Byard III recounts what it was like to deliver his son during training camp in 2020",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWG-NiQlOfpigwDrVh9p74kiPsTtDTrm_LbGaOk1EyH6GyjXgBFdTkZXjpuAk"
-        },
-        {
-          "url": "https://sports.yahoo.com/nfl/article/rob-gronkowski-hits-signature-gronk-spike-celebration-during-patriots-hall-of-fame-induction-ceremony-025224526.html",
-          "title": "Rob Gronkowski hits signature Gronk Spike celebration during Patriots Hall of Fame induction ceremony",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRycIBrPA_WIIQwd00X8Hc6cWsG_FwqKqqeHP5fx1ctSDzv-TQJ-RzyTjpogG4"
-        }
-      ]
-    },
-    {
-      "query": "chris youngblood",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T04:50:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7761858/2026/11/10/trail-blazers-two-way-contract-players-chris-youngblood/",
-        "https://sports.yahoo.com/articles/trail-blazers-unsung-hero-already-183908254.html",
-        "https://navarrepress.com/youngblood-ready-to-build-on-hoops-experience-from-last-season/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKAalMynQIic9whQqMSPURVz2uWJV61de0hJ8jbfkRGeBq6_JhgdTlPWnXMaI",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7761858/2026/11/10/trail-blazers-two-way-contract-players-chris-youngblood/",
-          "title": "An ‘old soul’ on a Blazers’ two-way contract is using courage to conquer fear",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKAalMynQIic9whQqMSPURVz2uWJV61de0hJ8jbfkRGeBq6_JhgdTlPWnXMaI"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/trail-blazers-unsung-hero-already-183908254.html",
-          "title": "Trail Blazers Have An Unsung Hero Who Is Already Winning Over Micah Nori",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF3tKPlhBjbu_M8CQLkriuSoQOXIbhNsFJ8g97u7EQr8xZfu2JDyTCx6qg_M0"
-        },
-        {
-          "url": "https://navarrepress.com/youngblood-ready-to-build-on-hoops-experience-from-last-season/",
-          "title": "Youngblood ready to build on hoops experience from last season",
-          "publisher": "Navarre Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCTyYuM7MUogXU0qiVuHxWkZr5X5iBMqPGcOlTND-o6LZ0sfT4n9n8rO6hv_M"
-        }
-      ]
-    },
-    {
-      "query": "amc",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T04:50:00Z",
-      "related_news_urls": [
-        "https://www.tcpalm.com/story/news/local/indian-river-county/2026/11/09/florida-amc-theatres-indian-river-mall-vero-beach-closed-movie-theaters-near-me/92691171007/",
-        "https://www.sebastiandaily.com/business/amc-closes-indian-river-24-at-vero-beach-mall-after-nov-8-96700/",
-        "https://www.yahoo.com/news/articles/florida-amc-movie-theater-mall-181116930.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLqpU2Z3sMa65MxV1eDNLkmCz9oAKEpgWFjS9_HEn0Hot0bGPYiidfnU6HLfs",
-      "image_credit": "Treasure Coast News",
-      "news": [
-        {
-          "url": "https://www.tcpalm.com/story/news/local/indian-river-county/2026/11/09/florida-amc-theatres-indian-river-mall-vero-beach-closed-movie-theaters-near-me/92691171007/",
-          "title": "Florida AMC movie theater in mall permanently closed amid renovations",
-          "publisher": "Treasure Coast News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLqpU2Z3sMa65MxV1eDNLkmCz9oAKEpgWFjS9_HEn0Hot0bGPYiidfnU6HLfs"
-        },
-        {
-          "url": "https://www.sebastiandaily.com/business/amc-closes-indian-river-24-at-vero-beach-mall-after-nov-8-96700/",
-          "title": "AMC closes Indian River 24 at Vero Beach mall after Nov. 8",
-          "publisher": "Sebastian Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQX00Xah3GwGzHd7Q81p6AqGS-vRD_JfsWFrgL84BS5m9oSTSeZC5F57mJdZMg"
-        },
-        {
-          "url": "https://www.yahoo.com/news/articles/florida-amc-movie-theater-mall-181116930.html",
-          "title": "Florida AMC movie theater in mall permanently closed amid renovations",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNgc4me5pX53ZZhMS-bpP4N6JRT6gufthb-ZyA5VLeQLkyPbCWFFefjPrBN6M"
         }
       ]
     }
