@@ -3,21 +3,327 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T15:31:36.882481Z",
+  "checked_at": "2026-11-11T16:01:42.160585Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "ugo humbert",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T15:40:00Z",
+      "related_news_urls": [
+        "https://sportsbook.fanduel.com/tennis/atp-stockholm-2026/borna-gojo-v-ugo-humbert-36299653",
+        "https://www.tennismajors.com/atp/stockholm-open-atp-250-atp/borg-and-dahlin-beaten-as-all-three-swedish-wildcards-fall-in-stockholm-866561.html",
+        "https://www.skysports.com/tennis/watch/5947996432295079112/bybit-stockholm-open-2026"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA",
+      "image_credit": "FanDuel Sportsbook",
+      "news": [
+        {
+          "url": "https://sportsbook.fanduel.com/tennis/atp-stockholm-2026/borna-gojo-v-ugo-humbert-36299653",
+          "title": "Borna Gojo v Ugo Humbert Odds",
+          "publisher": "FanDuel Sportsbook",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA"
+        },
+        {
+          "url": "https://www.tennismajors.com/atp/stockholm-open-atp-250-atp/borg-and-dahlin-beaten-as-all-three-swedish-wildcards-fall-in-stockholm-866561.html",
+          "title": "Borg and Dahlin beaten as all three Swedish wildcards fall in Stockholm",
+          "publisher": "Tennis Majors",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt3KKwpm1ckQoYhewf3K9KpfDLdZQ0k0_iUemsd6WnJ0c5HLUORtRgWadm5l8"
+        },
+        {
+          "url": "https://www.skysports.com/tennis/watch/5947996432295079112/bybit-stockholm-open-2026",
+          "title": "Sports News, Transfers, Scores | Watch Live Sport",
+          "publisher": "Sky Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbya26hsWFOG1R7EaBi03nAaEk84wj2cLdvZT-AL2V7NTRn4N2KYKOPpauT3U"
+        }
+      ]
+    },
+    {
+      "query": "tatjana maria",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T15:40:00Z",
+      "related_news_urls": [
+        "https://en.tennistemple.com/match/maria-tubello-sopo-2026/9569777/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAWxDXIOGfaMo1yRYqGzhtOzwV2VValpx_Q9cnuq7zFrUfUpOPltJOELS7UjM",
+      "image_credit": "TennisTemple",
+      "news": [
+        {
+          "url": "https://en.tennistemple.com/match/maria-tubello-sopo-2026/9569777/",
+          "title": "Maria vs Tubello • Sopó 2026",
+          "publisher": "TennisTemple",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAWxDXIOGfaMo1yRYqGzhtOzwV2VValpx_Q9cnuq7zFrUfUpOPltJOELS7UjM"
+        }
+      ]
+    },
+    {
+      "query": "brad ausmus",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T15:30:00Z",
+      "related_news_urls": [
+        "https://www.mlb.com/news/randy-flores-discusses-next-astros-manager",
+        "https://www.mlbtraderumors.com/2026/11/astros-expected-to-name-brad-ausmus-manager.html",
+        "https://www.stltoday.com/sports/professional/mlb/cardinals/article_cd0090c1-3cd2-4cb9-8009-ed01b8ad2366.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLCwltHykb91RCrat5aqf4diZaGN4_lGPh0PBzNOohjBNYc6VBQgtM4q58bBM",
+      "image_credit": "MLB.com",
+      "news": [
+        {
+          "url": "https://www.mlb.com/news/randy-flores-discusses-next-astros-manager",
+          "title": "Flores in final stages of finding Astros' next manager",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLCwltHykb91RCrat5aqf4diZaGN4_lGPh0PBzNOohjBNYc6VBQgtM4q58bBM"
+        },
+        {
+          "url": "https://www.mlbtraderumors.com/2026/11/astros-expected-to-name-brad-ausmus-manager.html",
+          "title": "Astros Expected To Name Brad Ausmus Manager",
+          "publisher": "MLB Trade Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoslplvoNK5C7aA81MH0qLQcdY-gc_UkbafAAxJo5CangTi2G3Y6-yGaF0xjc"
+        },
+        {
+          "url": "https://www.stltoday.com/sports/professional/mlb/cardinals/article_cd0090c1-3cd2-4cb9-8009-ed01b8ad2366.html",
+          "title": "Albert Pujols isn't the only Cardinals tie new GM Randy Flores could pull into Astros' orbit",
+          "publisher": "STLtoday.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSH-q8i10pF9LDucGh3Vn844Gcq4qgjkpaC7mvWehpxSj0gQJrIzlJXqJqiWUM"
+        }
+      ]
+    },
+    {
+      "query": "gary trent jr",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T15:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50427876/heat-lakers-knicks-76ers-roster-decisions",
+        "https://behindthebuckpass.com/gary-trent-jrs-horrific-contract-worse-bucks-g-leaugers",
+        "https://sports.yahoo.com/articles/nba-19-teams-face-roster-180205042.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8umGaY7Rs5Nqr76agvW-d34ryPqdHQtjFsjBPImuwBuP5nfq7zNAHsGKIxNM",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50427876/heat-lakers-knicks-76ers-roster-decisions",
+          "title": "Bobby Marks' NBA core danger tiers: 19 teams with major decisions looming",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8umGaY7Rs5Nqr76agvW-d34ryPqdHQtjFsjBPImuwBuP5nfq7zNAHsGKIxNM"
+        },
+        {
+          "url": "https://behindthebuckpass.com/gary-trent-jrs-horrific-contract-worse-bucks-g-leaugers",
+          "title": "Gary Trent Jr.'s horrific contract made even worse by Bucks G Leaugers",
+          "publisher": "Behind the Buck Pass",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMCIPOINrPh-iogjCO1MxJk45-E7-A2tPysEtxmvrvRN4dVvqF04jAO-vkuKw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/nba-19-teams-face-roster-180205042.html",
+          "title": "NBA’s 19 Teams Face Roster Danger As Bucks And Heat Struggle",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIeJawMtho59hLfxhzJijliNORczXEQeX-BD7atTHuGYT5jdktuXd_l_2ZNr8"
+        }
+      ]
+    },
+    {
+      "query": "palantir",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T15:30:00Z",
+      "related_news_urls": [
+        "https://www.ft.com/content/2316e892-a7c2-42b6-8c21-7003e05f2b5c?syn-25a6b1a6=1",
+        "https://www.bloomberg.com/news/articles/2026-11-11/helsing-unveils-ai-military-software-to-challenge-palantir",
+        "https://www.reuters.com/business/aerospace-defense/helsing-hands-germany-ownership-combat-system-software-2026-11-04/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6UTWQ0_kOetPqeytb8rEMxvM85ZAO8G_bDBB__TldTa7n04dg0QSwbgZAT5E",
+      "image_credit": "Financial Times",
+      "news": [
+        {
+          "url": "https://www.ft.com/content/2316e892-a7c2-42b6-8c21-7003e05f2b5c?syn-25a6b1a6=1",
+          "title": "Helsing unveils European rival to Palantir military targeting system",
+          "publisher": "Financial Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6UTWQ0_kOetPqeytb8rEMxvM85ZAO8G_bDBB__TldTa7n04dg0QSwbgZAT5E"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-11/helsing-unveils-ai-military-software-to-challenge-palantir",
+          "title": "Helsing Unveils AI Military Software to Challenge Palantir",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQe2-hv7N5XClpXXT2DMBBTUQEHbWgLutS_Ydp-bxMfG-OuAn-b5LuWJTFtkmA"
+        },
+        {
+          "url": "https://www.reuters.com/business/aerospace-defense/helsing-hands-germany-ownership-combat-system-software-2026-11-04/",
+          "title": "Helsing hands Germany ownership of combat-system software",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK78V9b2BZA1CkXtVieNy_TlwR4VxMElPRcpB3oBJrYoEJFKaekKF3FLghBvo"
+        }
+      ]
+    },
+    {
+      "query": "taylor fritz",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T15:20:00Z",
+      "related_news_urls": [
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/coco-gauff-vs-linda-noskova-set-2-winner-nov-10-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/alexandra-eala-vs-diana-shnaider-set-1-winner-oct-30-2026/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/alejandro-tabilo-vs-rafael-jodar-set-1-winner-nov-02-2026/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyZvtMAX-LBBMxkkPwno3sw27OwBAWX-sa0g1ZP8G7268OFAlwTU3ACpJRpsU",
+      "image_credit": "Robinhood",
+      "news": [
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/coco-gauff-vs-linda-noskova-set-2-winner-nov-10-2026/",
+          "title": "November 10, 2026: Coco Gauff vs Linda Noskova: Set 2 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyZvtMAX-LBBMxkkPwno3sw27OwBAWX-sa0g1ZP8G7268OFAlwTU3ACpJRpsU"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/alexandra-eala-vs-diana-shnaider-set-1-winner-oct-30-2026/",
+          "title": "October 30, 2026: Alexandra Eala vs Diana Shnaider: Set 1 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTU8Gd01FydBUEK6ttQhxWecNhx8k_TAu2kCJZODwYlawJkpv71fa1levoHB3E"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/alejandro-tabilo-vs-rafael-jodar-set-1-winner-nov-02-2026/",
+          "title": "November 2, 2026: Alejandro Tabilo vs Rafael Jodar: Set 1 Winner Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpRDHUoeO8wz1dlO2E7rS-4BwOtF32L0xykT9e82fxL_d-M4OgtIneK1Oq-go"
+        }
+      ]
+    },
+    {
+      "query": "fall out boy presale code",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T15:20:00Z",
+      "related_news_urls": [
+        "https://www.wusa9.com/article/entertainment/music/fall-out-boy-twilight-of-the-punks-tour-to-nationals-park-the-offspring-when-is-fall-out-boy-going-to-be-near-me-washington-dc/65-0502684d-c20f-4c0a-bf70-e1e8d91dcb29",
+        "https://www.9news.com/article/news/local/9news-mornings/fall-out-boy-twilight-of-the-punks-stadium-tour/73-91702311-5d57-4fe3-ac22-dfcecfc2934e",
+        "https://www.cooplive.com/events/fall-out-boy-h9dz"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqbHHwXJVZv1wVmaO6ieLKtyfB-0T-B61n25nfMMJr6fKeVjQmGQfWENZD-OU",
+      "image_credit": "WUSA9",
+      "news": [
+        {
+          "url": "https://www.wusa9.com/article/entertainment/music/fall-out-boy-twilight-of-the-punks-tour-to-nationals-park-the-offspring-when-is-fall-out-boy-going-to-be-near-me-washington-dc/65-0502684d-c20f-4c0a-bf70-e1e8d91dcb29",
+          "title": "Fall Out Boy bringing Twilight of the Punks tour to Nats Park with The Offspring",
+          "publisher": "WUSA9",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqbHHwXJVZv1wVmaO6ieLKtyfB-0T-B61n25nfMMJr6fKeVjQmGQfWENZD-OU"
+        },
+        {
+          "url": "https://www.9news.com/article/news/local/9news-mornings/fall-out-boy-twilight-of-the-punks-stadium-tour/73-91702311-5d57-4fe3-ac22-dfcecfc2934e",
+          "title": "'Twilight of the Punks': Fall Out Boy, Offspring announce Colorado stadium concert",
+          "publisher": "9News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjRFfgrEF8KArPOtwkYYwJ_vnf-LamP_GiA4SIOjMixn6uCWOLf9-PN9BeyFk"
+        },
+        {
+          "url": "https://www.cooplive.com/events/fall-out-boy-h9dz",
+          "title": "Fall Out Boy — A Day To Remember & Neck Deep",
+          "publisher": "Co-op Live",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbSA-07GfhZHcKRqOPZpUy6CAGaZ5VgDnbC6XOLhNm8sw1dPicwMDgIq7vSNo"
+        }
+      ]
+    },
+    {
+      "query": "jordan firstman",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T15:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/05/movies/club-kid-review.html",
+        "https://www.today.com/video/jordan-firstman-talks-making-directorial-debut-with-club-kid-273274949671",
+        "https://www.newyorker.com/culture/the-current-cinema/club-kid-is-a-disarming-cocktail-of-grit-and-fantasy"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS57I8Cgkrg15Ntbrhc7UEfBp1kgaQirqN857V44vwS_xczST7GEsB4XId8xoQ",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/05/movies/club-kid-review.html",
+          "title": "‘Club Kid’ Review: When the Lights Come Up",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS57I8Cgkrg15Ntbrhc7UEfBp1kgaQirqN857V44vwS_xczST7GEsB4XId8xoQ"
+        },
+        {
+          "url": "https://www.today.com/video/jordan-firstman-talks-making-directorial-debut-with-club-kid-273274949671",
+          "title": "Jordan Firstman Talks Making Directorial Debut With ‘Club Kid’",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7827Q8J_JyjaFhCXAY5V7JOIHTatABnk-lENjhT2MeGNMdalQJFcKDRah5E8"
+        },
+        {
+          "url": "https://www.newyorker.com/culture/the-current-cinema/club-kid-is-a-disarming-cocktail-of-grit-and-fantasy",
+          "title": "“Club Kid” Is a Disarming Cocktail of Grit and Fantasy",
+          "publisher": "The New Yorker",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReLipvPITb4N-VSXPRfYnmANopcJFbdo65i408xnb-Va-thB8zge1ji9YeHh4"
+        }
+      ]
+    },
+    {
+      "query": "nbis",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T15:20:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/nbis-stock-jumps-over-11-081534815.html",
+        "https://www.barchart.com/story/news/8766647/ahead-of-nebius-earnings-here-s-what-barchart-data-says-comes-next-for-nbis-stock",
+        "https://seekingalpha.com/article/4965657-nebius-the-first-domino-in-the-ai-collapse"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4oJXN70nz6-Hlm_iByfisuZFRsaNoOke68PnDsUO7ieNd1N6S0B0aGtRDd1U",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nbis-stock-jumps-over-11-081534815.html",
+          "title": "NBIS Stock Jumps Over 11% On CoreWeave Boost: Analysts Expect Over Six-Fold Growth In Sales In Upcoming Q3 Report",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4oJXN70nz6-Hlm_iByfisuZFRsaNoOke68PnDsUO7ieNd1N6S0B0aGtRDd1U"
+        },
+        {
+          "url": "https://www.barchart.com/story/news/8766647/ahead-of-nebius-earnings-here-s-what-barchart-data-says-comes-next-for-nbis-stock",
+          "title": "Ahead of Nebius Earnings, Here's What Barchart Data Says Comes Next for NBIS Stock",
+          "publisher": "Barchart.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ7bNiSbJG7enqMW12UrjE29El2CmSGa_qwVY5vqa5p-YVU-g18503H5IfZEsE"
+        },
+        {
+          "url": "https://seekingalpha.com/article/4965657-nebius-the-first-domino-in-the-ai-collapse",
+          "title": "Nebius: The First Domino In The AI Collapse (NASDAQ:NBIS)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTN83x9y23Ey49Wn_NILOO-sWo7av5m9y3QtuqI0_zQd-w6U-6D02AW5aNtUN4"
+        }
+      ]
+    },
     {
       "query": "kavya maran",
       "approx_searches": "500+",
       "published_at": "2026-11-11T15:10:00Z",
       "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/articles/srh-owner-kavya-maran-marriage-150439704.html",
         "https://www.ndtv.com/entertainment/anirudh-ravichander-and-kavya-maran-are-now-married-first-photos-of-newlyweds-out-12302477",
-        "https://timesofindia.indiatimes.com/entertainment/tamil/movies/news/anirudh-ravichander-and-kavya-marans-wedding-when-the-jailer-2-composer-revealed-his-first-proposal-that-lasted-only-3-hours/articleshow/135710639.cms",
-        "https://inshorts.com/en/news/anirudh-recalls-school-romance-that-lasted-just-three-hours-1794400968782"
+        "https://timesofindia.indiatimes.com/entertainment/tamil/movies/news/anirudh-ravichander-and-kavya-marans-wedding-when-the-jailer-2-composer-revealed-his-first-proposal-that-lasted-only-3-hours/articleshow/135710639.cms"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYPL9Qrd1J6oC6H9-hOC-ectlW4wQ49Zy_BbTHRwbyy5jPnNbF6yy4Z8N3Ajs",
-      "image_credit": "NDTV",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3bsZJfsncCN23P2z6jDDD92u1-vdIfLSq_IzFvLnai91c0iZkjBQ--UMwYpQ",
+      "image_credit": "Yahoo",
       "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/srh-owner-kavya-maran-marriage-150439704.html",
+          "title": "SRH owner Kavya Maran marriage reception: Expected guests and all about her fiance Anirudh Ravichander",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3bsZJfsncCN23P2z6jDDD92u1-vdIfLSq_IzFvLnai91c0iZkjBQ--UMwYpQ"
+        },
         {
           "url": "https://www.ndtv.com/entertainment/anirudh-ravichander-and-kavya-maran-are-now-married-first-photos-of-newlyweds-out-12302477",
           "title": "Anirudh Ravichander And Kavya Maran Are Now Married, First Photo Of Newlyweds Out",
@@ -31,328 +337,6 @@
           "publisher": "The Times of India",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7H76p-sPSkjBpII3HQFo_huJwMu7h_pf1Ow7e4VGnAPEt0g7OnGr2BmIQZms"
-        },
-        {
-          "url": "https://inshorts.com/en/news/anirudh-recalls-school-romance-that-lasted-just-three-hours-1794400968782",
-          "title": "Anirudh recalls school romance that lasted just three hours | Tap to know more | Inshorts",
-          "publisher": "Inshorts",
-          "description": "",
-          "image_url": null
-        }
-      ]
-    },
-    {
-      "query": "rob kardashian",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T15:10:00Z",
-      "related_news_urls": [
-        "https://people.com/rob-kardashian-and-blac-chyna-celebrate-daughter-dreams-10th-birthday-photos-12248712",
-        "https://www.instagram.com/p/DflLztUmeAh/",
-        "https://www.eonline.com/news/1438006/rob-kardashian-blac-chynas-daughter-dream-turns-10-on-golden-birthday"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1Cttj0_bgNYLEfyJaN8o2PwxSQoSI0_e0VNj3wPYJx0wFWF90PLcq28dCouY",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/rob-kardashian-and-blac-chyna-celebrate-daughter-dreams-10th-birthday-photos-12248712",
-          "title": "Rob Kardashian and Blac Chyna Celebrate Daughter Dream’s 10th Birthday: ‘Greatest Gift of My Life’",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1Cttj0_bgNYLEfyJaN8o2PwxSQoSI0_e0VNj3wPYJx0wFWF90PLcq28dCouY"
-        },
-        {
-          "url": "https://www.instagram.com/p/DflLztUmeAh/",
-          "title": "#TSRBirfdayz: #Roomies #DreamKardashian has finally reached the double digits 🥳 Her parents Rob Kardashian and Angela White wrote touching tributes to her baby girl. SWIPE to read.",
-          "publisher": "Instagram",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://www.eonline.com/news/1438006/rob-kardashian-blac-chynas-daughter-dream-turns-10-on-golden-birthday",
-          "title": "Rob Kardashian Gives Glimpse Into Bond With Daughter Dream on Her 10th Birthday",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt73k1uTNGZJFgviA4An1leB28R5xEZ1WmjYbcCbktD64T9_oKFenqrZ4Ot4k"
-        }
-      ]
-    },
-    {
-      "query": "alex karp",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T15:10:00Z",
-      "related_news_urls": [
-        "https://cloudwars.com/ai/as-palantir-grows-96-ceo-alex-karp-sees-ugly-future-for-ai-laggards/",
-        "https://aa.com.tr/en/world/palantir-ceo-warns-companies-controlling-data-can-shape-how-people-think/4118994",
-        "https://vinnews.com/2026/11/10/palantir-ceo-alex-karp-warns-wealth-tax-is-trojan-horse-for-mass-surveillance/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8OgSfktBJxJKWC-Hpox5bNY3C7Yd8y_15kh0GjMZyVzJVPk6sZhxNRFVr8Gk",
-      "image_credit": "Cloud Wars",
-      "news": [
-        {
-          "url": "https://cloudwars.com/ai/as-palantir-grows-96-ceo-alex-karp-sees-ugly-future-for-ai-laggards/",
-          "title": "As Palantir Grows 96%, CEO Alex Karp Sees Ugly Future for AI Laggards",
-          "publisher": "Cloud Wars",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8OgSfktBJxJKWC-Hpox5bNY3C7Yd8y_15kh0GjMZyVzJVPk6sZhxNRFVr8Gk"
-        },
-        {
-          "url": "https://aa.com.tr/en/world/palantir-ceo-warns-companies-controlling-data-can-shape-how-people-think/4118994",
-          "title": "Palantir CEO warns companies controlling data can shape how people think",
-          "publisher": "Anadolu Ajansı",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT4vPAwA2w-fM13orCkYJs1MMqp7DkD1zLGQmu3o4GcfHSuXtq782olsCY0S8"
-        },
-        {
-          "url": "https://vinnews.com/2026/11/10/palantir-ceo-alex-karp-warns-wealth-tax-is-trojan-horse-for-mass-surveillance/",
-          "title": "Palantir CEO Alex Karp Warns Wealth Tax Is Trojan Horse For Mass Surveillance",
-          "publisher": "VINnews",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ2AR0V7IJDVaiNXpsHKfskGI7Cf3xcX_YhEWj-xRomXiR9v8YmoBDOcWW_3k"
-        }
-      ]
-    },
-    {
-      "query": "avgo",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T15:00:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/broadcom-just-had-best-day-135350246.html",
-        "https://www.barchart.com/story/news/8740927/broadcom-stock-is-down-over-25-in-3-months-how-to-play-the-selloff-here",
-        "https://www.benzinga.com/markets/equities/26/11/63130138/broadcom-shares-rise-after-hours-fiscal-2026-earnings-date"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkrMqPgdeRZ8st3xRdpjCEYelmIu0nhfGvMOYbbG2-dkWRJohs6kIVBSUdYX4",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/broadcom-just-had-best-day-135350246.html",
-          "title": "Broadcom Just Had Its Best Day in Nearly a Year, Back Above $1.5 Trillion",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkrMqPgdeRZ8st3xRdpjCEYelmIu0nhfGvMOYbbG2-dkWRJohs6kIVBSUdYX4"
-        },
-        {
-          "url": "https://www.barchart.com/story/news/8740927/broadcom-stock-is-down-over-25-in-3-months-how-to-play-the-selloff-here",
-          "title": "Broadcom Stock Is Down Over 25% in 3 Months. How to Play the Selloff Here.",
-          "publisher": "Barchart.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLOQsqzL2TrrYN4oVRgML-0ugzzO9Yp3T14L6tIqc7XEbE2vmQmGmPJ4z97zc"
-        },
-        {
-          "url": "https://www.benzinga.com/markets/equities/26/11/63130138/broadcom-shares-rise-after-hours-fiscal-2026-earnings-date",
-          "title": "Broadcom Shares Rise 2.20% After Hours - Broadcom (NASDAQ:AVGO), JPMorgan Chase (NYSE:JPM)",
-          "publisher": "Benzinga",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRHpD3vkEl7Y5HiGYQ9YrFK8qydDDtacO343k4EaMuyhiDfYuXLcXGEORZZzM"
-        }
-      ]
-    },
-    {
-      "query": "high surf warning",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T15:00:00Z",
-      "related_news_urls": [
-        "https://www.surfer.com/news/40-foot-california-swell-el-nino",
-        "https://www.sonomanews.com/2026/11/10/bay-area-beaches-dangerous-waves-20-30-feet-high/",
-        "https://www.cbsnews.com/losangeles/news/orange-county-coastal-flood-advisory-through-tuesday/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThgJArFM_l-cpaGUXDwBUvCaJ884ddda8iukw7_5InlbZXrOEOgeGymeMYuBg",
-      "image_credit": "SURFER Magazine",
-      "news": [
-        {
-          "url": "https://www.surfer.com/news/40-foot-california-swell-el-nino",
-          "title": "Monster 40-Foot ‘Biggest Waves in Years’ Heading for California in Potentially Historic Swell",
-          "publisher": "SURFER Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThgJArFM_l-cpaGUXDwBUvCaJ884ddda8iukw7_5InlbZXrOEOgeGymeMYuBg"
-        },
-        {
-          "url": "https://www.sonomanews.com/2026/11/10/bay-area-beaches-dangerous-waves-20-30-feet-high/",
-          "title": "Bay Area bracing for gigantic, dangerous waves expected along coastline",
-          "publisher": "Sonoma Index-Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5ME-QTgA98CXQWCuIF4_pbq07uAaKH2N4L6p-Z-pPTE443HP3N_vjUQhePy4"
-        },
-        {
-          "url": "https://www.cbsnews.com/losangeles/news/orange-county-coastal-flood-advisory-through-tuesday/",
-          "title": "Orange County coastal flood advisory in effect through Tuesday, less severe than last week",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQY0o4FWRzWBCNhJKhBwSf6PhDpdjI6Qxl1CsD7zR3fJtpVO17Nj9LIgz0ivJE"
-        }
-      ]
-    },
-    {
-      "query": "portugal",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T14:50:00Z",
-      "related_news_urls": [
-        "https://www.wvnews.com/newsfeed/world/portugal-web-summit-weather/image_bebeb9ac-1d32-55db-8ee1-9a183677c596.html",
-        "https://africa.businessinsider.com/news/web-summit-cancels-day-2-due-to-storm-charles-and-risks-of-tidal-flood/stmprhr",
-        "https://www.heraldnews.com/story/news/local/ojornal/2026/11/10/portugal-braces-for-storm-charles-as-schools-services-shut-down/92710458007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5mSEcQfWs_5hinHEZJdyDxKpmiOFH_g3BXmrGncKJDzgWva9vOtn0JNm5ERo",
-      "image_credit": "WV News",
-      "news": [
-        {
-          "url": "https://www.wvnews.com/newsfeed/world/portugal-web-summit-weather/image_bebeb9ac-1d32-55db-8ee1-9a183677c596.html",
-          "title": "Portugal Web Summit Weather",
-          "publisher": "WV News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5mSEcQfWs_5hinHEZJdyDxKpmiOFH_g3BXmrGncKJDzgWva9vOtn0JNm5ERo"
-        },
-        {
-          "url": "https://africa.businessinsider.com/news/web-summit-cancels-day-2-due-to-storm-charles-and-risks-of-tidal-flood/stmprhr",
-          "title": "Web Summit cancels day 2 due to Storm Charles and risks of tidal flood",
-          "publisher": "Business Insider Africa",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-ramXlWMpYPHKeZPpbZ5kofvBDGmzg_STvWF428yN5sxoeziMOXh7cdY-zkg"
-        },
-        {
-          "url": "https://www.heraldnews.com/story/news/local/ojornal/2026/11/10/portugal-braces-for-storm-charles-as-schools-services-shut-down/92710458007/",
-          "title": "Portugal shuts down as Storm Charles approaches",
-          "publisher": "Fall River Herald News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3pvu_yyW2D5zvBib6HNURP0YT2Y7eqM95rBg7FANowBMMsUEFdwRP-foaYs4"
-        }
-      ]
-    },
-    {
-      "query": "kurt warner",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T14:20:00Z",
-      "related_news_urls": [
-        "https://www.essentiallysports.com/nfl-active-news-deserves-it-more-than-i-ever-did-rams-legend-kurt-warner-makes-emotional-plea-to-all-thirty-two-nfl-teams-for-his-qb-sons-career/",
-        "https://sports.yahoo.com/articles/deserves-more-ever-did-rams-030551074.html",
-        "https://www.espn.com/nfl/story/_/id/50430415/caleb-williams-4-interceptions-bears-win-buccaneers"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRacsuu8whF3vl9OcYhLB-M50DuytdEniWQoZZaat5DYLhllcNqt6XtCnqUf_0",
-      "image_credit": "EssentiallySports",
-      "news": [
-        {
-          "url": "https://www.essentiallysports.com/nfl-active-news-deserves-it-more-than-i-ever-did-rams-legend-kurt-warner-makes-emotional-plea-to-all-thirty-two-nfl-teams-for-his-qb-sons-career/",
-          "title": "“Deserves It More Than I Ever Did”: Rams Legend Kurt Warner Makes Emotional Plea to All 32 NFL Teams for His QB Son’s Career",
-          "publisher": "EssentiallySports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRacsuu8whF3vl9OcYhLB-M50DuytdEniWQoZZaat5DYLhllcNqt6XtCnqUf_0"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/deserves-more-ever-did-rams-030551074.html",
-          "title": "“Deserves It More Than I Ever Did”: Rams Legend Kurt Warner Makes Emotional Plea to All 32 NFL Teams for His QB Son’s Career",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGpkInvCu6o6EjgM_pzy5rwPvIx8H_e6-iYTsr-KzLh-xlwpSnN0_Nighgo1w"
-        },
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50430415/caleb-williams-4-interceptions-bears-win-buccaneers",
-          "title": "Caleb Williams unfazed by 4 interceptions as Bears pull out win vs. Bucs",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVoMlpKKBIOJk0OFQ829Ed0S1jCXT9-GCGU-gvuMGT46aSe7pUqPucDdOkU3c"
-        }
-      ]
-    },
-    {
-      "query": "cynthia nixon",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T14:10:00Z",
-      "related_news_urls": [
-        "https://www.queerty.com/benito-skinners-drip-cynthia-nixons-favorite-lesbian-a-walk-through-gay-history-20261108/",
-        "https://www.goldderby.com/music/2026/olivia-rodrigo-plagiarism-grammys-christmas-song-analysis/",
-        "https://www.billboard.com/music/music-news/olivia-rodrigo-new-song-take-me-home-4-christmas-video-1236375403/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSM4njfSbjTys1MSSb-7gQYUuhevtf6hKVNKjEOY30bahTXnD5PlTcn6Zlw0vQ",
-      "image_credit": "Queerty",
-      "news": [
-        {
-          "url": "https://www.queerty.com/benito-skinners-drip-cynthia-nixons-favorite-lesbian-a-walk-through-gay-history-20261108/",
-          "title": "Benito Skinner’s drip, Cynthia Nixon’s favorite lesbian, & a walk through gay history",
-          "publisher": "Queerty",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSM4njfSbjTys1MSSb-7gQYUuhevtf6hKVNKjEOY30bahTXnD5PlTcn6Zlw0vQ"
-        },
-        {
-          "url": "https://www.goldderby.com/music/2026/olivia-rodrigo-plagiarism-grammys-christmas-song-analysis/",
-          "title": "Why Olivia Rodrigo’s Chrismas song ‘controversy’ won’t sink her Grammys odds",
-          "publisher": "Gold Derby",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVdpL0O-E5wjhpKtmghOznMUmLWBXBgu8_E2DqE-Cbwfsp0_FtRHi3AaXOL-A"
-        },
-        {
-          "url": "https://www.billboard.com/music/music-news/olivia-rodrigo-new-song-take-me-home-4-christmas-video-1236375403/",
-          "title": "Olivia Rodrigo Unwraps Holiday Single ‘Take Me Home (4 Christmas)’: Stream It Now",
-          "publisher": "Billboard",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQO1cfvr0CtyneURI0wdYCFjPb3te_pQ6gzLQr6einB-lPDeyS8xWHY1ExqsWc"
-        }
-      ]
-    },
-    {
-      "query": "ron howard",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T14:10:00Z",
-      "related_news_urls": [
-        "https://www.economist.com/the-world-in-brief/2026/11/11/aaef91a3-e53c-4519-86cb-fb983f3464e8",
-        "https://www.today.com/video/ron-howard-shares-rare-look-at-photographer-richard-avedon-273270341604",
-        "https://www.wsj.com/arts-culture/television/avedon-review-netflixs-documentary-on-a-defining-portraitist-55215590"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeV1eIMfOBsYPGZ5rkuwWx-g-wOjIK4Pxx3ZXcftwIZ5LJnXDF9eFjj3R3BAc",
-      "image_credit": "The Economist",
-      "news": [
-        {
-          "url": "https://www.economist.com/the-world-in-brief/2026/11/11/aaef91a3-e53c-4519-86cb-fb983f3464e8",
-          "title": "Turning the lens on a celebrated photographer",
-          "publisher": "The Economist",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeV1eIMfOBsYPGZ5rkuwWx-g-wOjIK4Pxx3ZXcftwIZ5LJnXDF9eFjj3R3BAc"
-        },
-        {
-          "url": "https://www.today.com/video/ron-howard-shares-rare-look-at-photographer-richard-avedon-273270341604",
-          "title": "Ron Howard Shares Rare Look at Photographer Richard Avedon",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBlRmHywUhMaglIjRibj1UY7h9-Unql-QqQiXZm8rLH_hVVse8GBoBpqhRhfg"
-        },
-        {
-          "url": "https://www.wsj.com/arts-culture/television/avedon-review-netflixs-documentary-on-a-defining-portraitist-55215590",
-          "title": "‘Avedon’ Review: Netflix’s Documentary on a Defining Portraitist",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ4XcAwLmpkUFHh9VM0Y1Km1A8xoqH23NajRP1tIEH4CBdhIzdZI-HXxEnlSo"
-        }
-      ]
-    },
-    {
-      "query": "air force",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T14:10:00Z",
-      "related_news_urls": [
-        "https://www.washingtonpost.com/world/2026/11/10/us-aircraft-abruptly-depart-second-uk-base/",
-        "https://www.wsj.com/world/middle-east/u-s-aircraft-evacuated-from-second-u-k-base-due-to-iran-threat-835a8b58",
-        "https://www.bbc.com/news/articles/c32l4lw12z7po"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTz2F6BLFGuAV84-ab9SRJe_1fJ-2ncg_uAsihDnN3Tg3CT3bUFmrWbEt0yunk",
-      "image_credit": "The Washington Post",
-      "news": [
-        {
-          "url": "https://www.washingtonpost.com/world/2026/11/10/us-aircraft-abruptly-depart-second-uk-base/",
-          "title": "U.S. aircraft abruptly depart a second U.K. base",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTz2F6BLFGuAV84-ab9SRJe_1fJ-2ncg_uAsihDnN3Tg3CT3bUFmrWbEt0yunk"
-        },
-        {
-          "url": "https://www.wsj.com/world/middle-east/u-s-aircraft-evacuated-from-second-u-k-base-due-to-iran-threat-835a8b58",
-          "title": "Exclusive | U.S. Aircraft Evacuated From Second U.K. Base Due to Iran Threat",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSH_wK7NX1r2ddMCbCyZz2MwsGAJvxw2lSO5f_WE9o36jjBhR3fkf3uhjab3cM"
-        },
-        {
-          "url": "https://www.bbc.com/news/articles/c32l4lw12z7po",
-          "title": "More than 12 US military aircraft leave second UK base",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTm-HvjQEblqtK-GSIKhjbQIFHNMLUbTjVPa4Xk61qPUnk_DxQNOuzHWktNn7U"
         }
       ]
     }
