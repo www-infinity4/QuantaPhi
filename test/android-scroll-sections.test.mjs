@@ -20,8 +20,18 @@ test('Android home softly settles at section boundaries without scroll trapping'
 });
 
 test('Card arrows update the main viewer without moving the Android page',()=>{
- assert.match(deck,/next\.addEventListener\('click',\(\)=>advance\(1\)\)/);
- assert.match(deck,/prev\.addEventListener\('click',\(\)=>advance\(-1\)\)/);
+ // Replacing a tall live card changes layout; the arrow handler preserves the
+ // viewport rather than snapping the visitor back to the deck.
+ assert.match(deck,/function moveCardWithoutViewportJump\(direction\)\s*\{/);
+ assert.match(deck,/const startY=window\.scrollY;/);
+ assert.match(deck,/advance\(direction\);/);
+ assert.match(deck,/const revision=selectionVersion;/);
+ assert.match(deck,/if\(revision!==selectionVersion\|\|document\.hidden\|\|!host\.isConnected\)return;/);
+ assert.match(deck,/if\(Math\.abs\(window\.scrollY-startY\)>6\)window\.scrollTo\(\{top:startY,left:window\.scrollX,behavior:'instant'\}\);/);
+ assert.match(deck,/requestAnimationFrame\(\(\)=>requestAnimationFrame\(restore\)\);/);
+ assert.match(deck,/next\.addEventListener\('click',\(\)=>moveCardWithoutViewportJump\(1\)\)/);
+ assert.match(deck,/prev\.addEventListener\('click',\(\)=>moveCardWithoutViewportJump\(-1\)\)/);
+ assert.match(deck,/moveCardWithoutViewportJump\(dx<0\?1:-1\);/);
  assert.doesNotMatch(deck,/settleCardViewport|settleTopGesture/);
  assert.doesNotMatch(deck,/host\.querySelector\('\.oracle-card-deck-nav'\)\?\.scrollIntoView/);
 });

@@ -1,0 +1,70 @@
+name: Oracle real carousel and contextual placement
+on:
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'iowa-live-radio-cards.js'
+      - 'test/oracle-radio-media-placement.test.mjs'
+      - 'oracle-card-deck.js'
+      - 'oracle-card-deck.css'
+      - 'oracle-age-preference.js'
+      - 'restricted-ad-card.mjs'
+      - 'quanta-context-placement.mjs'
+      - 'quanta-feed-rank.mjs'
+      - 'quanta-feed.mjs'
+      - 'quanta-feed-exposure.mjs'
+      - 'quanta-feed.css'
+      - 'shop-phi-switchboard.mjs'
+      - 'shopphi-story-core.mjs'
+      - 'shopphi-story-player.mjs'
+      - 'shopphi-story-player.css'
+      - 'quick-card-builder.js'
+      - 'quick-card-builder.html'
+      - 'published-quick-card.css'
+      - 'test/oracle-feed-persistence.test.mjs'
+      - 'test/oracle-follow-duplicate-regression.test.mjs'
+      - 'test/oracle-placement-engine.test.mjs'
+      - 'test/oracle-story-sequencer.test.mjs'
+      - 'test/quanta-card-feed.test.mjs'
+      - 'test/quanta-feed-visible-impressions.test.mjs'
+      - '.github/workflows/oracle-live-placement.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'quanta-context-placement.mjs'
+      - 'quanta-feed-rank.mjs'
+      - 'oracle-card-deck.js'
+      - 'quick-card-builder.js'
+      - 'test/oracle-feed-persistence.test.mjs'
+      - 'test/oracle-placement-engine.test.mjs'
+permissions:
+  contents: read
+jobs:
+  placement:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Parse real Oracle, ad and builder scripts
+        run: |
+          node --check oracle-card-deck.js
+          node --check restricted-ad-card.mjs
+          node --check quanta-context-placement.mjs
+          node --check quanta-feed-rank.mjs
+          node --check quanta-feed.mjs
+          node --check quanta-feed-exposure.mjs
+          node --check shop-phi-switchboard.mjs
+          node --check shopphi-story-core.mjs
+          node --check shopphi-story-player.mjs
+          node --check quick-card-builder.js
+      - name: Run source and behavioral regressions
+        run: |
+          node --test test/oracle-radio-media-placement.test.mjs test/oracle-feed-persistence.test.mjs test/oracle-follow-duplicate-regression.test.mjs test/oracle-placement-engine.test.mjs test/oracle-story-sequencer.test.mjs test/quanta-card-feed.test.mjs test/quanta-feed-visible-impressions.test.mjs tests/shop-phi-switchboard.test.mjs test/quick-card-publisher.test.mjs test/adult-lifestyle-catalog.test.mjs
+      - name: Check whitespace
+        run: git diff --check ${{ github.event.pull_request.base.sha || github.event.before }} HEAD

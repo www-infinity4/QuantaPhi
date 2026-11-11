@@ -6,6 +6,8 @@ import {loadOwnQuantScores} from './quanta-feed-quants.mjs';
 import {housingCompanions,housingResource} from './housing-help-catalog.mjs';
 import {createHousingHelpCard} from './housing-help-cards.mjs';
 import {chapterFor} from './shopphi-showcase-core.mjs';
+import {createShopPhiStoryPlayer} from './shopphi-story-player.mjs';
+import {placementPolicy} from './quanta-context-placement.mjs';
 
 export const SLOT_COUNT=6;
 // Companion pages can advance without fetching ads or changing the selected hero.
@@ -17,8 +19,17 @@ export function nextCompanionPage(page,total){
 export function companionRotationAllowed({total=0,visible=false,pageHidden=false,focused=false,shelfOpen=false,paused=false,reducedMotion=false}={}){
  return total>2&&visible&&!pageHidden&&!focused&&!shelfOpen&&!paused&&!reducedMotion;
 }
-const SENSITIVE=/\b(religion|church|politic|election|race|ethnic|medical|health|disability|sexual|addiction|therapy)\b/i;
+const SENSITIVE=/(?:\b(?:religion|church|politic|election|race|ethnic|medical|health|disability|sexual|addiction|therapy|cannabis|dispensary|marijuana|tobacco|cigars?|nicotine|adult|vapes?|thc)\b|21\+)/i;
 const LANES=Object.freeze([
+ {id:'travel',match:/\b(miami vice|tropical vacations?|beach travel|florida tourism|palm tree vacation)\b/i,
+  topics:['tropical vacation','Florida travel','beach destination','hotel stays','travel guides','travel accessories'],
+  clues:['tropical','vacation','travel','beach','florida','palm','destination','hotel']},
+ {id:'developer',match:/\b(syntax errors?|debugging|software development|developer cards?|fix code|code repair)\b/i,
+  topics:['developer tools','debugging tools','software projects','code builders','code reference','developer cards'],
+  clues:['syntax','developer','debug','code','software','builder','programming','tools']},
+ {id:'produce',match:/\b(carrot|celery|fresh produce|vegetable garden|farm produce)\b/i,
+  topics:['vegetables','produce','groceries','gardening','farm markets','healthy cooking'],
+  clues:['carrot','celery','produce','vegetable','grocery','gardening','farm','cooking']},
  {id:'cookout',match:/\b(oscar mayer|hot dogs?|grills?|charcoal|barbecue|bbq|picnic|patio|cookout|lawn games?)\b/i,
   topics:['hot dogs and picnic food','charcoal grills','picnic tables','outdoor cooking','cookout accessories','coolers and yard games'],
   clues:['hot dog','sausage','grill','charcoal','barbecue','picnic','patio','outdoor','cooler','cookout','bbq','lawn']},
@@ -75,11 +86,20 @@ export function normalizeCandidate(raw={}){
  if(!type)return null;
  if(type==='published-card'&&raw.status!=='approved')return null;
  if(type==='shop-item'&&raw.status!=='published')return null;
- const image=httpsUrl(raw.image);
- return {id,title,url,image,type,
+ const images=[...new Set((Array.isArray(raw.images)?raw.images:[]).map(item=>httpsUrl(typeof item==='string'?item:item?.src)).filter(Boolean))].slice(0,6);
+ const image=httpsUrl(raw.image)||images[0]||'';
+ // General ShopPhi recommendations never use medical/21+ viewing as advertising intent.
+ if(SENSITIVE.test([raw.category,title,raw.description,raw.contextTopic].join(' '))||raw.ageRestricted===true)return null;
+ return {id,title,url,image,images,type,
+  source:scrub(raw.source),createdAt:scrub(raw.createdAt),updatedAt:scrub(raw.updatedAt),
+  startsAt:scrub(raw.startsAt),endsAt:scrub(raw.endsAt),
+  dayparts:Array.isArray(raw.dayparts)?raw.dayparts.filter(x=>typeof x==='string').slice(0,6):[],
+  approved:raw.approved===true,reviewed:raw.reviewed===true,
+  merchantHours:raw.merchantHours||null,
+  creativeApproved:raw.creativeApproved===true,
   // Keep the signed/publicly validated state through later candidate ranking.
   // approvedQuickCards()/shopItems() are normalized before chooseCompanions().
-  status:type==='published-card'?'approved':type==='shop-item'?'published':'',
+  status:type==='published-card'?'approved':type==='shop-item'?'published':type==='sponsored'&&raw.status==='approved'?'approved':'',
   sponsor:type==='sponsored'?scrub(raw.sponsor)||'Advertiser':'',
   sourceId:scrub(raw.sourceId),contextTopic:scrub(raw.contextTopic),description:scrub(raw.description),
   category:scrub(raw.category),merchant:scrub(raw.merchant),price:scrub(raw.price)};
@@ -105,6 +125,7 @@ export function chooseCompanions(hero,inventory,{quantScores={},exposures={},rot
  const lane=contextFor(hero),unique=new Map();
  for(const raw of Array.isArray(inventory)?inventory:[]){
   const c=normalizeCandidate(raw);if(!c)continue;
+  if(c.source==='adphi'&&!placementPolicy({...c,sourceUrl:c.url}).eligible)continue;
   if(c.id===hero.id||c.sourceId===hero.id||c.url===hero.url||unique.has(c.url))continue;
   const match=relation(c,hero,lane);
   if(match===0)continue; // Unrelated high-value ads cannot buy their way in.
@@ -138,7 +159,7 @@ export function chooseCompanions(hero,inventory,{quantScores={},exposures={},rot
 export function approvedQuickCards(payload){
  return (Array.isArray(payload?.cards)?payload.cards:[]).filter(x=>x.status==='approved')
  .map(x=>normalizeCandidate({id:'quick-'+x.slug,title:x.title,description:x.description,category:x.kind,
-  image:x.image,url:x.cardUrl,type:'published-card',status:x.status,sourceId:x.slug})).filter(Boolean);
+  image:x.image,images:x.images||x.galleryImages,url:x.cardUrl,type:'published-card',status:x.status,sourceId:x.slug,createdAt:x.createdAt})).filter(Boolean);
 }
 export function shopItems(payload){
  return (Array.isArray(payload?.items)?payload.items:[]).filter(x=>x.state==='published')
@@ -170,6 +191,9 @@ if(typeof document!=='undefined'){
   pause.setAttribute('aria-label','Pause automatic companion card rotation');
   navigation.append(prev,position,next,pause);
   grid.after(navigation);
+  const storyTray=document.createElement('div');
+  navigation.after(storyTray);
+  const storyPlayer=createShopPhiStoryPlayer(storyTray);
   const exposure=Object.create(null),cache=new Map();
   let seq=0,rotation=0,active=null,visiblePage=0,visibleCards=[],notifiedChapter=false;
   let pageTransition=0,fadeTimer=null;
@@ -245,6 +269,14 @@ if(typeof document!=='undefined'){
    heading.textContent=housing?'Housing help · related resources':'Related source cards · ShopPhi';
    before.replaceChildren();after.replaceChildren();
    const visible=list.slice(0,SLOT_COUNT);visibleCards=visible;
+   storyPlayer.setCards(lane.sensitive?[]:visible.filter(c=>{
+    if(c.type==='sponsored')return c.source==='adphi'&&placementPolicy({...c,sourceUrl:c.url}).eligible&&c.creativeApproved;
+    if(c.type==='published-card'){
+     const stamp=Date.parse(c.createdAt||'');
+     return Number.isFinite(stamp)&&stamp<=Date.now()&&Date.now()-stamp<=45*86400000;
+    }
+    return false;
+   }),active);
    grid.classList.toggle('shopphi-showcase-mode',!housing&&!lane.sensitive&&visible.length>=2&&visible.slice(0,2).every(c=>c.image)&&
     ['cookout','movie-night','kitchen','family','tools','outdoors','coins','denim','grocery','shopping'].includes(lane.id));
    visiblePage=Math.min(visiblePage,Math.max(0,Math.ceil(visible.length/2)-1));
@@ -355,7 +387,14 @@ if(typeof document!=='undefined'){
      calls.push(Promise.resolve().then(()=>window.ControlPhi.requestSponsoredCard(topic,'shopphi-flank-'+(i+1)))
       .then(ad=>ad?normalizeCandidate({id:'ad-'+(ad.id||ad.campaignId||topic+'-'+ad.destinationUrl),
        title:ad.title,description:ad.body,url:ad.destinationUrl,image:ad.imageUrl,
-       sponsor:ad.advertiser,type:'sponsored',contextTopic:topic}):null)
+       // Reject stale, expired or metadata-free paid creative, rather than
+       // describing any broker response as a new verified advertisement.
+       sponsor:ad.advertiser,type:'sponsored',contextTopic:topic,
+       source:'adphi',approved:ad.approved,reviewed:ad.reviewed,
+       image:ad.imageUrl,images:ad.images,status:ad.status,
+       creativeApproved:ad.creativeApproved===true,
+       startsAt:ad.startsAt,endsAt:ad.endsAt,createdAt:ad.createdAt,
+       updatedAt:ad.updatedAt,dayparts:ad.dayparts,merchantHours:ad.merchantHours}):null)
       .then(x=>x?[x]:[]).catch(()=>[]));
     }
    }
@@ -375,7 +414,7 @@ if(typeof document!=='undefined'){
    active=detail||null;if(changed){visiblePage=0;notifiedChapter=false;}
    if(!active||document.body.classList.contains('oracle-shelf-open')){
     grid.hidden=true;heading.hidden=true;receipt.hidden=true;navigation.hidden=true;
-    before.replaceChildren();after.replaceChildren();return;
+    before.replaceChildren();after.replaceChildren();storyPlayer.setCards([],null);return;
    }
    if(changed){grid.hidden=false;heading.hidden=true;navigation.hidden=true;receipt.hidden=false;
     before.replaceChildren();after.replaceChildren();}

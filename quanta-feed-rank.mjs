@@ -1,6 +1,7 @@
 /* Shared QuantaPhi directions: user-directed usage and signed-in, bounded
  * Quant interest scores. No bank data, sensitive identities or raw searches. */
 import {isInfinityAccepted} from './infinity-accepted-catalog.mjs';
+import {DEPARTMENTS,departmentFor,placementPolicy} from './quanta-context-placement.mjs';
 export const FEED_STORAGE_KEY='quanta:discovery:anonymous:v1';
 export const FEED_TABS=Object.freeze(['public','for-you','following']);
 const validId=id=>typeof id==='string'&&/^[a-z0-9-]{1,70}$/.test(id);
@@ -8,6 +9,8 @@ const bounded=n=>Number.isFinite(n)&&n>0?Math.min(5000,Math.floor(n)):0;
 export const cleanFeedState=raw=>{
  const r=raw&&typeof raw==='object'&&!Array.isArray(raw)?raw:{};
  const following=[...new Set((Array.isArray(r.following)?r.following:[]).filter(validId).slice(0,800))];
+ const hidden=[...new Set((Array.isArray(r.hidden)?r.hidden:[]).filter(validId).slice(0,800))];
+ const interests=[...new Set((Array.isArray(r.interests)?r.interests:[]).filter(x=>typeof x==='string'&&DEPARTMENTS.some(d=>d.id===x&&!['all','healthcare','adult'].includes(x))).slice(0,15))];
  const counts={},viewed={},transitions={};
  for(const [key,val] of Object.entries(r.counts||{}).slice(0,900))if(validId(key)&&bounded(val))counts[key]=bounded(val);
  for(const [key,val] of Object.entries(r.viewed||{}).slice(0,900))if(validId(key)&&bounded(val))viewed[key]=bounded(val);
@@ -18,7 +21,7 @@ export const cleanFeedState=raw=>{
   for(const [to,n] of Object.entries(row).slice(0,80))if(validId(to)&&to!==from&&bounded(n))edges[to]=bounded(n);
   if(Object.keys(edges).length)transitions[from]=edges;
  }
- return {version:2,following,counts,viewed,transitions,
+ return {version:3,following,hidden,interests,counts,viewed,transitions,
   lastUsed:validId(r.lastUsed)?r.lastUsed:'',
   advance:Math.max(0,Math.min(100000,Number(r.advance)||0))};
 };
@@ -64,17 +67,28 @@ export function feedScore(card,state){
 }
 export function feedCandidates(cards,tab,state,query=''){
  const q=String(query).trim().toLowerCase().slice(0,120);
- const filtered=cards.filter(c=>(tab!=='following'||(state.following||[]).includes(c.id))&&
+ const following=new Set(state.following||[]), interests=new Set(state.interests||[]);
+ const eligible=card=>!['sponsored','public-service'].includes(card.type)||placementPolicy(card).eligible;
+ const filtered=cards.filter(c=>eligible(c)&&!(state.hidden||[]).includes(c.id)&&
+  (tab!=='following'||following.has(c.id))&&
+  (tab!=='for-you'||following.has(c.id)||interests.has(departmentFor(c)))&&
   (!q||[c.name,c.category,c.feature,c.study].join(' ').toLowerCase().includes(q)));
  const priority=(a,b)=>Number(isInfinityAccepted(b))-Number(isInfinityAccepted(a));
  if(tab==='following')return filtered.sort((a,b)=>priority(a,b)||(state.counts?.[b.id]||0)-(state.counts?.[a.id]||0)||a.name.localeCompare(b.name));
- if(tab==='for-you')return filtered.sort((a,b)=>priority(a,b)||feedScore(b,state)-feedScore(a,state)||a.id.localeCompare(b.id));
- // Public remains a broad catalog rather than a personalized, narrowed feed.
- return filtered.sort(priority);
+ if(tab==='for-you')return filtered.sort((a,b)=>
+  Number(following.has(b.id))-Number(following.has(a.id))||priority(a,b)||
+  feedScore(b,state)-feedScore(a,state)||a.id.localeCompare(b.id));
+ // Public contains all safe discovery, including context-relevant reviewed campaigns.
+ // Explicit follows/interests inform rank but DO NOT filter or disclose private data.
+ const score=c=>Number(isInfinityAccepted(c))*40+(following.has(c.id)?12:0)+
+  (interests.has(departmentFor(c))?9:0)+
+  (c.type==='sponsored'?placementPolicy(c).weight:0)-
+  Math.min(30,(state.viewed?.[c.id]||0)*2);
+ return filtered.sort((a,b)=>score(b)-score(a)||a.id.localeCompare(b.id));
 }
 export function nextFeedDirection(cards,tab,state,currentId='',query=''){
  const filtered=feedCandidates(cards,tab,state,query);
- if(!filtered.length)return {card:null,reason:tab==='following'?'Follow cards using + Follow to build your own feed.':'No matching cards'};
+ if(!filtered.length)return {card:null,reason:tab==='following'?'Follow cards using + Follow to build your own feed.':tab==='for-you'?'Choose interests or Follow cards in Public to build For You.':'No matching cards'};
  const current=cards.find(c=>c.id===currentId);
  const other=filtered.filter(c=>c.id!==currentId);
  if(!other.length)return {card:filtered[0],reason:'Only one card matches this view'};
@@ -132,5 +146,61 @@ export const markOpened=(state,id,fromId=state.lastUsed)=>({
   ...state.transitions,[fromId]:{...(state.transitions?.[fromId]||{}),
    [id]:Math.min(5000,(state.transitions?.[fromId]?.[id]||0)+1)}}:state.transitions||{}
 });
+export const hideFeedCard=(state,id)=>({...state,hidden:validId(id)?[...new Set([...(state.hidden||[]),id])].slice(-800):state.hidden||[]});
+export const toggleInterest=(state,department)=>({
+ ...state,interests:!DEPARTMENTS.some(x=>x.id===department&&!['all','healthcare','adult'].includes(department))?(state.interests||[]):
+ (state.interests||[]).includes(department)?(state.interests||[]).filter(x=>x!==department):[...(state.interests||[]),department]
+});
 export const toggleFollowing=(state,id)=>({...state,following:(state.following||[]).includes(id)?
  state.following.filter(x=>x!==id):[...state.following,id]});
+
+/* Separate verified visitor choices from monotonically merged navigation.
+ * Prevent a stale impression or rerender from silently erasing Follow/Hide. */
+function stored(storage){
+ try{return {ok:true,state:cleanFeedState(JSON.parse(storage.getItem(FEED_STORAGE_KEY)||'{}'))}}
+ catch{return {ok:false,state:cleanFeedState({})}}
+}
+function confirmed(storage,next){
+ const expected=cleanFeedState(next);
+ try{storage.setItem(FEED_STORAGE_KEY,JSON.stringify(expected));
+  const actual=stored(storage);
+  return {ok:actual.ok&&JSON.stringify(actual.state)===JSON.stringify(expected),state:actual.state};
+ }catch{return {ok:false,state:cleanFeedState({})}}
+}
+export function commitFeedPreference(storage,kind,id=''){
+ if(!storage||!['follow','hide','interest','restore'].includes(kind)||
+  (['follow','hide'].includes(kind)&&!validId(id))||
+  (kind==='interest'&&!DEPARTMENTS.some(d=>d.id===id&&!['all','healthcare','adult'].includes(id))))
+  return {ok:false,state:cleanFeedState({}),followed:false};
+ const old=stored(storage);if(!old.ok)return {...old,followed:false};
+ const next=kind==='follow'?toggleFollowing(old.state,id):
+  kind==='hide'?hideFeedCard(old.state,id):
+  kind==='interest'?toggleInterest(old.state,id):
+  {...old.state,hidden:[]};
+ const result=confirmed(storage,next);
+ return {...result,followed:result.state.following.includes(id)};
+}
+export const commitFollowing=(storage,id)=>commitFeedPreference(storage,'follow',id);
+function maxCounters(a={},b={}){
+ const out={...a};
+ for(const [key,value] of Object.entries(b))out[key]=Math.max(out[key]||0,value||0);
+ return out;
+}
+function maxTransitions(a={},b={}){
+ const out={};for(const key of new Set([...Object.keys(a),...Object.keys(b)]))
+  out[key]=maxCounters(a[key],b[key]);
+ return out;
+}
+export function saveNavigationProgress(storage,progress){
+ if(!storage)return {ok:false,state:cleanFeedState({})};
+ const latest=stored(storage);if(!latest.ok)return latest;
+ const older=cleanFeedState(progress);
+ const newOpen=older.lastUsed&&(older.counts[older.lastUsed]||0)>(latest.state.counts[older.lastUsed]||0);
+ return confirmed(storage,cleanFeedState({...latest.state,
+  counts:maxCounters(latest.state.counts,older.counts),
+  viewed:maxCounters(latest.state.viewed,older.viewed),
+  transitions:maxTransitions(latest.state.transitions,older.transitions),
+  lastUsed:(older.advance>latest.state.advance||newOpen)?older.lastUsed:latest.state.lastUsed,
+  advance:Math.max(latest.state.advance,older.advance)
+ }));
+}
