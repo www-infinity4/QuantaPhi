@@ -314,7 +314,18 @@ function registerLateWidgets(){
 // Module evaluation ordering can differ across mobile WebViews; recover both.
 registerSourceCards();
 const readDirections=()=>{try{return directionApi.cleanFeedState(JSON.parse(localStorage.getItem(directionApi.FEED_STORAGE_KEY)||'{}'))}catch{return directionApi.cleanFeedState({})}};
-function storeDirections(){if(!directionApi||!feedState)return;try{localStorage.setItem(directionApi.FEED_STORAGE_KEY,JSON.stringify(feedState))}catch{}}
+function storeDirections(){
+ if(!directionApi||!feedState)return false;
+ const saved=directionApi.saveNavigationProgress(localStorage,feedState);
+ if(!saved.ok){feedState=readDirections();return false}
+ feedState=saved.state;return true;
+}
+function commitOraclePreference(kind,id=''){
+ if(!directionApi)return false;
+ const saved=directionApi.commitFeedPreference(localStorage,kind,id);
+ if(!saved.ok){feedState=readDirections();status.textContent='Could not save or confirm this preference on your device.';return false}
+ feedState=saved.state;return true;
+}
 function adultAllowed(entry){
  if(selectedDepartment==='adult')return agePolicy?.isPreference(entry)||
   Boolean(agePolicy?.read().browsingThisVisit&&agePolicy?.isAdult(entry));
@@ -465,7 +476,7 @@ tabButtons.forEach(b=>b.addEventListener('click',()=>{
 }));
 follow?.addEventListener('click',()=>{
  if(!directionApi||!active)return;
- feedState=directionApi.toggleFollowing(readDirections(),active.feedId);storeDirections();
+ if(!commitOraclePreference('follow',active.feedId)){updateTabs();predict();return;}
  if(selectedTab==='following'&&!feedState.following.includes(active.feedId)){
   returnActive();const first=eligible()[0];if(first)show(first,false);
   else {now.textContent='No followed interactive cards';status.textContent='Choose Public and follow a card to fill this view.';}
@@ -489,7 +500,7 @@ void import('/following-publisher-feed.mjs?v=20261031-following1').then(({mountF
  });
  followingPublisherFeed?.sync({tab:selectedTab});
 }).catch(()=>{const target=document.getElementById('oracleFollowingFeed');if(target)target.hidden=true;});
-Promise.all([import('/quanta-feed-rank.mjs?v=20261110-explicit-for-you1'),
+Promise.all([import('/quanta-feed-rank.mjs?v=20261111-follow-readback1'),
  import('/quanta-feed-quants.mjs?v=20261024-directions1'),
  import('/quanta-carousel-balance.mjs?v=20261027-all-families1')]).then(([r,q,f])=>{
  directionApi=r;quantApi=q;familyApi=f;feedState=readDirections();updateTabs();
@@ -509,7 +520,7 @@ Promise.all([import('/quanta-feed-rank.mjs?v=20261110-explicit-for-you1'),
  hideCard?.addEventListener('click',()=>{
   if(!active||!directionApi)return;
   const hiddenId=active.feedId;
-  feedState=directionApi.hideFeedCard(readDirections(),hiddenId);storeDirections();
+  if(!commitOraclePreference('hide',hiddenId)){updateTabs();predict();return;}
   returnActive();const next=eligible()[0];if(next)show(next,false);
   else{now.textContent='All cards in this category hidden or unavailable';
     status.textContent='Change the category or restore hidden cards in your For You settings.';}
@@ -518,7 +529,7 @@ Promise.all([import('/quanta-feed-rank.mjs?v=20261110-explicit-for-you1'),
  });
  saveCategory?.addEventListener('click',()=>{
   if(!directionApi||!departmentApi?.INTEREST_DEPARTMENTS.some(d=>d.id===selectedDepartment))return;
-  feedState=directionApi.toggleInterest(readDirections(),selectedDepartment);storeDirections();
+  if(!commitOraclePreference('interest',selectedDepartment)){updateTabs();predict();return;}
   updateTabs();
   if(selectedTab==='for-you'&&!eligible().includes(active)){returnActive();const first=eligible()[0];if(first)show(first,false);}
   predict();

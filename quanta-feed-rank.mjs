@@ -153,3 +153,54 @@ export const toggleInterest=(state,department)=>({
 });
 export const toggleFollowing=(state,id)=>({...state,following:(state.following||[]).includes(id)?
  state.following.filter(x=>x!==id):[...state.following,id]});
+
+/* Separate verified visitor choices from monotonically merged navigation.
+ * Prevent a stale impression or rerender from silently erasing Follow/Hide. */
+function stored(storage){
+ try{return {ok:true,state:cleanFeedState(JSON.parse(storage.getItem(FEED_STORAGE_KEY)||'{}'))}}
+ catch{return {ok:false,state:cleanFeedState({})}}
+}
+function confirmed(storage,next){
+ const expected=cleanFeedState(next);
+ try{storage.setItem(FEED_STORAGE_KEY,JSON.stringify(expected));
+  const actual=stored(storage);
+  return {ok:actual.ok&&JSON.stringify(actual.state)===JSON.stringify(expected),state:actual.state};
+ }catch{return {ok:false,state:cleanFeedState({})}}
+}
+export function commitFeedPreference(storage,kind,id=''){
+ if(!storage||!['follow','hide','interest','restore'].includes(kind)||
+  (['follow','hide'].includes(kind)&&!validId(id))||
+  (kind==='interest'&&!DEPARTMENTS.some(d=>d.id===id&&!['all','healthcare','adult'].includes(id))))
+  return {ok:false,state:cleanFeedState({}),followed:false};
+ const old=stored(storage);if(!old.ok)return {...old,followed:false};
+ const next=kind==='follow'?toggleFollowing(old.state,id):
+  kind==='hide'?hideFeedCard(old.state,id):
+  kind==='interest'?toggleInterest(old.state,id):
+  {...old.state,hidden:[]};
+ const result=confirmed(storage,next);
+ return {...result,followed:result.state.following.includes(id)};
+}
+export const commitFollowing=(storage,id)=>commitFeedPreference(storage,'follow',id);
+function maxCounters(a={},b={}){
+ const out={...a};
+ for(const [key,value] of Object.entries(b))out[key]=Math.max(out[key]||0,value||0);
+ return out;
+}
+function maxTransitions(a={},b={}){
+ const out={};for(const key of new Set([...Object.keys(a),...Object.keys(b)]))
+  out[key]=maxCounters(a[key],b[key]);
+ return out;
+}
+export function saveNavigationProgress(storage,progress){
+ if(!storage)return {ok:false,state:cleanFeedState({})};
+ const latest=stored(storage);if(!latest.ok)return latest;
+ const older=cleanFeedState(progress);
+ const newOpen=older.lastUsed&&(older.counts[older.lastUsed]||0)>(latest.state.counts[older.lastUsed]||0);
+ return confirmed(storage,cleanFeedState({...latest.state,
+  counts:maxCounters(latest.state.counts,older.counts),
+  viewed:maxCounters(latest.state.viewed,older.viewed),
+  transitions:maxTransitions(latest.state.transitions,older.transitions),
+  lastUsed:(older.advance>latest.state.advance||newOpen)?older.lastUsed:latest.state.lastUsed,
+  advance:Math.max(latest.state.advance,older.advance)
+ }));
+}

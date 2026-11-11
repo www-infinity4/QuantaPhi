@@ -7,7 +7,7 @@ import {mountSpaceSource} from './quanta-feed-spaces.mjs';
 import {cards as BUBBLES_CARDS} from './bubbles-card-catalog.mjs';
 import {loadOwnQuantScores} from './quanta-feed-quants.mjs';
 import {openQuickCardPreview,safeLocalCardUrl} from './quick-card-preview.mjs';
-import {FEED_STORAGE_KEY,FEED_TABS,cleanFeedState,feedCandidates,nextFeedCard,nextFeedDirection,markViewed,markOpened,toggleFollowing,toggleInterest,hideFeedCard} from './quanta-feed-rank.mjs';
+import {FEED_STORAGE_KEY,FEED_TABS,cleanFeedState,feedCandidates,nextFeedCard,nextFeedDirection,markViewed,markOpened,saveNavigationProgress,commitFeedPreference} from './quanta-feed-rank.mjs';
 import {INTEREST_DEPARTMENTS} from './quanta-context-placement.mjs';
 import {registerVisibleCard} from './quanta-feed-exposure.mjs';
 
@@ -40,7 +40,12 @@ let state=safeRead(),tab='public',current='',query='',showCount=16,lastReason=''
 // They are NEVER written to anonymous localStorage.
 let quantScores={},quantConnected=false,quantAttempted=false;
 const ranking=()=>({...state,catalog:ALL_FEED_CARDS,quantScores});
-const persist=()=>{try{localStorage.setItem(FEED_STORAGE_KEY,JSON.stringify(state));}catch{/* Anonymous state can still work for this page. */}};
+const persist=()=>{const saved=saveNavigationProgress(localStorage,state);if(saved.ok)state=saved.state;return saved.ok;};
+function saveChoice(kind,id=''){
+ const saved=commitFeedPreference(localStorage,kind,id);
+ if(!saved.ok){state=safeRead();document.getElementById('quantaFeedStatus')?.replaceChildren('Could not save this preference on this device.');return false}
+ state=saved.state;return true;
+}
 const shareChange=()=>window.dispatchEvent(new CustomEvent('quantaphi:feed-updated',{detail:{origin:'public-feed'}}));
 function choose(card){
  if(!card)return;
@@ -67,16 +72,16 @@ function followButton(card,refresh){
  const b=create('button','qf-follow'+(followed?' qf-saved':''),followed?'✓ Following':'+ Follow');
  b.type='button';b.setAttribute('aria-label',(followed?'Remove ':'Add ')+card.name+(followed?' from':' to')+' Following');
  b.setAttribute('aria-pressed',String(followed));b.addEventListener('click',()=>{
-  state=toggleFollowing(safeRead(),card.id);persist();refresh();shareChange();
+  if(!saveChoice('follow',card.id))return;refresh();shareChange();
  });return b;
 }
 function hideButton(card,refresh){
  const btn=create('button','qf-button qf-not-for-me','Not for me');btn.type='button';
  btn.setAttribute('aria-label','Hide '+card.name+' from my discovery feeds');
  btn.addEventListener('click',()=>{
-  state=hideFeedCard(safeRead(),card.id);
+  if(!saveChoice('hide',card.id))return;
   if(current===card.id)current='';
-  persist();refresh();shareChange();
+  refresh();shareChange();
  });
  return btn;
 }
@@ -131,7 +136,7 @@ function renderHome(){
    const chip=create('button','qf-interest-chip'+(selected?' qf-interest-active':''),(selected?'✓ ':'+ ')+d.label);
    chip.type='button';chip.setAttribute('aria-pressed',String(selected));
    chip.addEventListener('click',()=>{
-    state=toggleInterest(safeRead(),d.id);persist();shareChange();renderHome();
+    if(!saveChoice('interest',d.id))return;shareChange();renderHome();
    });
    chips.append(chip);
   }
@@ -139,7 +144,7 @@ function renderHome(){
   if(state.hidden?.length){
    const reset=create('button','qf-interest-chip','Restore '+state.hidden.length+' hidden card(s)');
    reset.type='button';reset.addEventListener('click',()=>{
-    state={...safeRead(),hidden:[]};persist();renderHome();shareChange();
+    if(!saveChoice('restore'))return;renderHome();shareChange();
    });chooser.append(reset);
   }
   host.append(chooser);
