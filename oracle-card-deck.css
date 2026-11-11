@@ -84,3 +84,14 @@ body.oracle-quanta #oracleCardDeck .oracle-card-scroll{background:transparent;co
 .oracle-following-feed .ofp-more[hidden]{display:none!important}
 .oracle-following-feed :is(a,button):focus-visible{outline:3px solid #333;outline-offset:2px}
 @media(max-width:600px){.oracle-following-feed .ofp-items{grid-template-columns:1fr}.oracle-following-feed .ofp-item{grid-template-columns:minmax(116px,42%) 1fr;grid-template-rows:auto}.oracle-following-feed .ofp-photo{height:100%;aspect-ratio:auto;min-height:145px;object-fit:cover}.oracle-following-feed .ofp-title{font-size:15px}.oracle-following-feed .ofp-info{padding:11px}.oracle-following-feed .ofp-actions{display:grid;grid-template-columns:1fr}.oracle-following-feed .ofp-action{width:100%}.oracle-following-feed .ofp-item.ofp-no-photo{grid-template-columns:1fr}}
+
+/* One real Oracle Octaves carousel, changed by the compact department selector.
+ * Retains original typography/materials rather than a replacement design. */
+#oracleCardDeck .oracle-department-bar{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:10px 0 14px;padding:10px 13px;border:1px solid #c69fdf;border-radius:14px;background:linear-gradient(110deg,#fff6eb,#f2eaff)}
+#oracleCardDeck .oracle-department-bar label{font:750 16px/1.45 system-ui,sans-serif;letter-spacing:.01em;color:#623472}
+#oracleCardDepartment{font:680 17px/1.4 system-ui,sans-serif;color:#352144;background:#fffdf8;border:2px solid #8e629f;border-radius:12px;min-height:49px;flex:1 1 220px;max-width:100%;padding:10px 15px}
+#oracleSaveDepartment{font:720 15px/1.3 system-ui,sans-serif;min-height:48px;max-width:100%;border-radius:12px;border:1px solid #8e629f;background:#6b348c;color:#fff;padding:10px 15px;cursor:pointer}
+#oracleSaveDepartment[aria-pressed="true"]{background:#eee2f6;color:#51325f}
+#oracleCardDepartment:focus-visible,#oracleSaveDepartment:focus-visible{outline:3px solid #dc985c;outline-offset:3px}
+#oracleCardDepartment option{color:#332838;background:#fff}
+@media(max-width:420px){#oracleCardDeck .oracle-department-bar{padding:9px;gap:8px}#oracleCardDeck .oracle-department-bar label{width:100%}#oracleCardDepartment,#oracleSaveDepartment{width:100%;flex:1 1 100%}}
