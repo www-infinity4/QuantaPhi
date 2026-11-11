@@ -3460,6 +3460,7 @@ async function directGithubOperation(operation,{quiet=false,ownerRequest='',imag
 // Zeus quick-quest bridge: only the same-origin, explicit host Send can deliver
 // a visitor question here. Reuse the normal Bubbles message pipeline unchanged.
 const acceptedZeusQuests=new Set();
+const completedZeusQuests=new Map();
 if(embedded&&bubbleId==='coliseum-zeus-assistant')window.addEventListener('message',event=>{
  if(event.source!==window.parent||event.origin!==window.location.origin)return;
  const data=event.data;
@@ -3469,20 +3470,36 @@ if(embedded&&bubbleId==='coliseum-zeus-assistant')window.addEventListener('messa
  const acknowledge=state=>window.parent.postMessage({
   type:'quantaphi:bubbles:quest-ack',id:bubbleId,requestId,status:state
  },window.location.origin);
- if(acceptedZeusQuests.has(requestId)){acknowledge('accepted');return;}
+ if(acceptedZeusQuests.has(requestId)){
+  acknowledge('accepted');
+  const prior=completedZeusQuests.get(requestId);
+  if(prior)window.parent.postMessage(prior,window.location.origin);
+  return;
+ }
  const prompt=typeof data.prompt==='string'?data.prompt.trim():'';
  if(!prompt||prompt.length>1800){acknowledge('invalid');return;}
  if(busy||turnPending){acknowledge('busy');return;}
+ const before=messages.length;
+ const finish=(state,reply='')=>{
+  const payload={type:'quantaphi:bubbles:quest-result',id:bubbleId,requestId,status:state};
+  if(state==='complete'&&reply)payload.reply=reply.slice(0,8000);
+  completedZeusQuests.set(requestId,payload);
+  if(completedZeusQuests.size>100)completedZeusQuests.delete(completedZeusQuests.keys().next().value);
+  window.parent.postMessage(payload,window.location.origin);
+ };
  acceptedZeusQuests.add(requestId);
  if(acceptedZeusQuests.size>100)acceptedZeusQuests.delete(acceptedZeusQuests.values().next().value);
  toggle(true);
- // Acknowledgment means Bubbles accepted the turn, NOT that an AI replied
- // or that any repository, wallet, or device tool executed.
+ // Accepted means only that the current Bubbles turn has started.
  acknowledge('accepted');
- void sendMessage(prompt).catch(error=>{
-  const message='Zeus could not finish this message: '+String(error?.message||error||'unknown failure').slice(0,120);
-  status.textContent=message;
-  display(message,'ai');
+ void Promise.resolve(sendMessage(prompt)).then(()=>{
+  const replies=messages.slice(before).filter(x=>x.role==='assistant');
+  const answer=replies.at(-1),text=String(answer?.text||'').trim();
+  if(!text||answer?.failed===true)finish('failed');
+  else finish('complete',text);
+ }).catch(error=>{
+  status.textContent='Zeus could not finish the Bubbles conversation.';
+  finish('failed');
  });
 });
 input.addEventListener('keydown',event=>{if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();void sendMessage(input.value)}});
