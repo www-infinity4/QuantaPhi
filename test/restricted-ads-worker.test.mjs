@@ -78,6 +78,9 @@ test('consent persists, but creative stays blocked until jurisdiction approved; 
    throw Error('Unexpected read '+sql);
   },
   async all(){if(sql.includes('FROM restricted_ad_creatives'))return {results:[{...creative,
+   rights_expires_at:new Date(Date.now()+30*86400000).toISOString(),
+   campaign_starts_at:new Date(Date.now()-86400000).toISOString(),
+   campaign_ends_at:new Date(Date.now()+8*86400000).toISOString(),
    reviewed_at:new Date(Date.now()-86400000).toISOString()}]};throw Error('Unexpected listing')}
  }}}}};
  const valid={...verdict,expires_at:new Date(Date.now()+86400000).toISOString()};
