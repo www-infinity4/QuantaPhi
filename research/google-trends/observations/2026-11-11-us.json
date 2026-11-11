@@ -3,9 +3,219 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T07:01:29.999828Z",
+  "checked_at": "2026-11-11T07:31:25.284186Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "portos",
+      "approx_searches": "100+",
+      "published_at": "2026-11-11T07:10:00Z",
+      "related_news_urls": [
+        "https://g1.globo.com/sp/santos-regiao/porto-mar/noticia/2026/11/10/porto-de-santos-confirma-ataque-cibernetico-nos-sistemas-mas-nao-sabe-se-dados-foram-acessados.ghtml",
+        "https://www.cnnbrasil.com.br/infra/porto-de-santos-investiga-instabilidades-em-sistema-e-descarta-paralisacao/",
+        "https://portogente.com.br/noticias/dia-a-dia/118230-nos-avisamos"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB3RiHEn4fyhr_DR4ZZIDpF9n14dJUIXqs237aPbeW0WUH6Ldgq247J-5ir3U",
+      "image_credit": "G1",
+      "news": [
+        {
+          "url": "https://g1.globo.com/sp/santos-regiao/porto-mar/noticia/2026/11/10/porto-de-santos-confirma-ataque-cibernetico-nos-sistemas-mas-nao-sabe-se-dados-foram-acessados.ghtml",
+          "title": "Porto de Santos confirma ataque hacker nos sistemas, mas não sabe se dados foram acessados",
+          "publisher": "G1",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB3RiHEn4fyhr_DR4ZZIDpF9n14dJUIXqs237aPbeW0WUH6Ldgq247J-5ir3U"
+        },
+        {
+          "url": "https://www.cnnbrasil.com.br/infra/porto-de-santos-investiga-instabilidades-em-sistema-e-descarta-paralisacao/",
+          "title": "Porto de Santos adota plano de contingência após ataque hacker",
+          "publisher": "CNN Brasil",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdZyf3f9_8anbPAHgX2SiI27Y9DJubutamY7S8tHuHYMucs7hcYT99nHW_Xcc"
+        },
+        {
+          "url": "https://portogente.com.br/noticias/dia-a-dia/118230-nos-avisamos",
+          "title": "Nós avisamos.",
+          "publisher": "Portogente",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4y5EFLSwgpwNYmxeDBJHdLl7MSxWerhCwedH3l4phLU5Uc7vDwSKnyvyIfnM"
+        }
+      ]
+    },
+    {
+      "query": "star wars original trilogy",
+      "approx_searches": "100+",
+      "published_at": "2026-11-11T07:10:00Z",
+      "related_news_urls": [
+        "https://collider.com/star-wars-original-trilogy-new-audiobooks-2027-release-date/",
+        "https://insidethemagic.net/2026/11/original-star-wars-film-undergoes-several-major-changes-lucasfilm-reveals-dr1/",
+        "https://www.disneyfanatic.com/lucasfilm-brings-back-29-year-old-star-wars-project-ahead-of-major-anniversary-dr1/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYo3GQOMRomSL7kr-bKJAQE8n5UrBimRMKcB4cIJ8KPQpncqJdU5XfUTJJ9Sk",
+      "image_credit": "Collider",
+      "news": [
+        {
+          "url": "https://collider.com/star-wars-original-trilogy-new-audiobooks-2027-release-date/",
+          "title": "The Original Star Wars Trilogy Officially Returns With a Brand-New Release",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYo3GQOMRomSL7kr-bKJAQE8n5UrBimRMKcB4cIJ8KPQpncqJdU5XfUTJJ9Sk"
+        },
+        {
+          "url": "https://insidethemagic.net/2026/11/original-star-wars-film-undergoes-several-major-changes-lucasfilm-reveals-dr1/",
+          "title": "Lucasfilm Officially Confirms Several Reimaginings of ‘Star Wars: A New Hope’",
+          "publisher": "Inside the Magic",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvec-vHxX65yFKkB2F7q9xfmpDQGBuAsEw-21NIdZyxkoZgn-vHfkJkR5AhNs"
+        },
+        {
+          "url": "https://www.disneyfanatic.com/lucasfilm-brings-back-29-year-old-star-wars-project-ahead-of-major-anniversary-dr1/",
+          "title": "Lucasfilm Brings Back Old ‘Star Wars’ Project Ahead of Major Anniversary",
+          "publisher": "Disney Fanatic",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSpcd15M1LwssQJ6LSCd9h9xcMEt_Y9IwHsq4Nv2FvsuH4fE6SzUBqsDBnQ0g"
+        }
+      ]
+    },
+    {
+      "query": "jonbenet ramsey",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T07:00:00Z",
+      "related_news_urls": [
+        "https://www.dailycamera.com/2026/11/10/boulder-da-jonbenet-ramsey-case/",
+        "https://abcnews.com/US/new-dna-tech-solve-jonbent-ramseys-murder-case/story?id=137603999",
+        "https://www.cbsnews.com/colorado/news/boulder-justice-jonbenet-ramsey-murder/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWPch-9gskhpHY7gm_KLfZvPW9dGlrzGrzJAJmPTAqbASDTuIDkfdbiFBkRkE",
+      "image_credit": "Daily Camera",
+      "news": [
+        {
+          "url": "https://www.dailycamera.com/2026/11/10/boulder-da-jonbenet-ramsey-case/",
+          "title": "Boulder County DA says Ramseys shouldn’t have been cleared in JonBenet’s murder",
+          "publisher": "Daily Camera",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWPch-9gskhpHY7gm_KLfZvPW9dGlrzGrzJAJmPTAqbASDTuIDkfdbiFBkRkE"
+        },
+        {
+          "url": "https://abcnews.com/US/new-dna-tech-solve-jonbent-ramseys-murder-case/story?id=137603999",
+          "title": "How new DNA tech could solve JonBenét Ramsey's murder case 30 years later",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbgcJjWTF4hfwynnkRXBo1z_EcMHEPt6Xhb_2xX5RgSSWaBNFI4dTCz-q03Lw"
+        },
+        {
+          "url": "https://www.cbsnews.com/colorado/news/boulder-justice-jonbenet-ramsey-murder/",
+          "title": "Boulder officials emphasize finding justice for JonBenét Ramsey nearly 30 years after her murder",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJ4t2OWTgnJQoOFVTGLtXek_Q3nzO3_OLxxdWFMWVjQ656RO1QR2NhM9ZGfwg"
+        }
+      ]
+    },
+    {
+      "query": "hltv",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T07:00:00Z",
+      "related_news_urls": [
+        "https://community.skin.club/en/news/hltv-adds-economy-and-round-based-filters-to-cs2-statistics",
+        "https://www.chaseyoursport.com/esports/mouz-iem-beijing-2026-champions/13832",
+        "https://rg.org/news/esports/mouz-hltv-world-rankings-no-1-after-iem-beijing-title-vrs"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSusOe9ZufqWT8dSHNqHOwiieu64R-JD3qXN0lZVPAiTO8wCZmXCYHTjMGD4rw",
+      "image_credit": "Skin.Club Community",
+      "news": [
+        {
+          "url": "https://community.skin.club/en/news/hltv-adds-economy-and-round-based-filters-to-cs2-statistics",
+          "title": "HLTV Introduces New Economy and Round Filters for CS2 Stats",
+          "publisher": "Skin.Club Community",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSusOe9ZufqWT8dSHNqHOwiieu64R-JD3qXN0lZVPAiTO8wCZmXCYHTjMGD4rw"
+        },
+        {
+          "url": "https://www.chaseyoursport.com/esports/mouz-iem-beijing-2026-champions/13832",
+          "title": "Meet MOUZ: The IEM Beijing 2026 CS2 Champions",
+          "publisher": "Chase Your Sport",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRzmOdt3q4fYABhdPnUHeeUKBq-04_zM_xKnfxRclnn1Wskyv0ZNi-AWaNbwg"
+        },
+        {
+          "url": "https://rg.org/news/esports/mouz-hltv-world-rankings-no-1-after-iem-beijing-title-vrs",
+          "title": "MOUZ Rise to HLTV No. 1 at 912 Points, Ahead of FURIA",
+          "publisher": "RG.org",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpUwVbJPf3H2AHp-EKt06yhnYRVWGwxDQstsC97oHpg1qnsrTIqLXlxcf0jyg"
+        }
+      ]
+    },
+    {
+      "query": "aldo de nigris",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T06:50:00Z",
+      "related_news_urls": [
+        "https://www.lavozarizona.com/story/entretenimiento/2026/11/10/poncho-denigris-explota-por-baile-sexy-a-su-mam-en-la-mansin-vip/92705474007/",
+        "https://www.milenio.com/espectaculos/famosos/jorge-duran-quien-es-el-influencer-perfil-edad-polemicas",
+        "https://www.infobae.com/mexico/2026/11/10/dani-flow-habla-de-la-multa-que-podria-enfrentar-tras-abandonar-la-mansion-vip-primero-estaba-mi-estado-mental/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO9mFKwuLETXe66XJBmgOiV2RmV1ysWrZ8TFEUZ3sC3KM7AdiGJy14e2t_zJY",
+      "image_credit": "azcentral.com and The Arizona Republic",
+      "news": [
+        {
+          "url": "https://www.lavozarizona.com/story/entretenimiento/2026/11/10/poncho-denigris-explota-por-baile-sexy-a-su-mam-en-la-mansin-vip/92705474007/",
+          "title": "Poncho Denigris se enoja por baile erótico a su mamá en ‘La Mansión VIP’",
+          "publisher": "azcentral.com and The Arizona Republic",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO9mFKwuLETXe66XJBmgOiV2RmV1ysWrZ8TFEUZ3sC3KM7AdiGJy14e2t_zJY"
+        },
+        {
+          "url": "https://www.milenio.com/espectaculos/famosos/jorge-duran-quien-es-el-influencer-perfil-edad-polemicas",
+          "title": "¿Quién es Jorge Durán? Él es el influencer que entra a La Mansión VIP 2 tras la polémica baja de Dany Flow",
+          "publisher": "Milenio",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSS2Ghk34PihGiDk-20a1IlNPdkUFLQNxF6WNL-69BS_o68f7Jg7PSJ-zHvXCQ"
+        },
+        {
+          "url": "https://www.infobae.com/mexico/2026/11/10/dani-flow-habla-de-la-multa-que-podria-enfrentar-tras-abandonar-la-mansion-vip-primero-estaba-mi-estado-mental/",
+          "title": "Dani Flow habla de la multa que podría enfrentar tras abandonar La Mansión VIP: “Primero estaba mi estado mental”",
+          "publisher": "Infobae",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfumY-1BEXnberBqKaEAtZ0hKtsH9xqQ38VtgUdSi3_VFSWsbf70eRxr5dV0Q"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 pc",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-11T06:50:00Z",
+      "related_news_urls": [
+        "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10",
+        "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
+        "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSk249MDEeYsamkE71yKC0ECdZNDRlGbRKQe3_RZaj1uwDwCU1bTkE0XNFdCZM",
+      "image_credit": "Rockstar Games",
+      "news": [
+        {
+          "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10",
+          "title": "Grand Theft Auto VI Pre-Load Begins on November 10",
+          "publisher": "Rockstar Games",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSk249MDEeYsamkE71yKC0ECdZNDRlGbRKQe3_RZaj1uwDwCU1bTkE0XNFdCZM"
+        },
+        {
+          "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
+          "title": "Grand Theft Auto VI Comes to XBOX One and XBOX Series X|S Through XBOX Cloud Gaming on November 19",
+          "publisher": "XBOX Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk"
+        },
+        {
+          "url": "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/",
+          "title": "Pre-load Grand Theft Auto VI on PS5 starting today",
+          "publisher": "PlayStation.Blog",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmQPZtB1cfmtJ8v-9159sSJpw2Cr8v495zAc5tM6Spqsus45lZErGPllHDXDY"
+        }
+      ]
+    },
     {
       "query": "camp flog gnaw",
       "approx_searches": "200+",
@@ -42,37 +252,72 @@
       ]
     },
     {
-      "query": "ajay mitchell",
+      "query": "iron man",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T06:30:00Z",
+      "related_news_urls": [
+        "https://www.cbr.com/visionquest-changes-iron-man-mcu-timeline/",
+        "https://variety.com/2026/film/news/james-gunn-exits-dc-studios-losing-money-1236944392/",
+        "https://deadline.com/2026/11/dc-studios-james-gunn-peter-safran-leaving-1237217374/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrT_FeB1Icmv-xmIGSZIfeQDVo0C9ABfHsYgGWJsNsCnuVTha76epRkSKPNRQ",
+      "image_credit": "Comic Book Resources",
+      "news": [
+        {
+          "url": "https://www.cbr.com/visionquest-changes-iron-man-mcu-timeline/",
+          "title": "Disney Just Changed Robert Downey Jr.'s Entire 18-Year Iron Man Timeline",
+          "publisher": "Comic Book Resources",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrT_FeB1Icmv-xmIGSZIfeQDVo0C9ABfHsYgGWJsNsCnuVTha76epRkSKPNRQ"
+        },
+        {
+          "url": "https://variety.com/2026/film/news/james-gunn-exits-dc-studios-losing-money-1236944392/",
+          "title": "DC Studios Exit: James Gunn and Peter Safran Spent Big, Lost Money and Didn’t Hook Audiences",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfghtQrAZp_GvoNvn3l8_m77OvkVRN6Tlc6gKWYw71MdZAV19a3fS94ojKCsg"
+        },
+        {
+          "url": "https://deadline.com/2026/11/dc-studios-james-gunn-peter-safran-leaving-1237217374/",
+          "title": "DC Studios Shakeup: James Gunn & Peter Safran Out, Former Marvel Exec Jeremy Latcham In",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBSzcpr9UcIHbbJP4UQYDE35qE5G568ZA5NTtOn4MDKeS03CjJCDbIVjqu7H8"
+        }
+      ]
+    },
+    {
+      "query": "scoot henderson",
       "approx_searches": "500+",
       "published_at": "2026-11-11T06:20:00Z",
       "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/ajay-mitchell-scores-14-points-in-blowout-defeat",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/shai-gilgeous-alexander-scores-26-points-vs-por",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-10/quentin-grimes-finger-questionable-wednesday"
+        "https://www.blazersedge.com/trail-blazers-news/118225/blazers-move-scoot-henderson-out-of-starting-lineup-versus-thunder",
+        "https://sports.yahoo.com/articles/scoot-henderson-returning-bench-favor-052006312.html",
+        "https://www.cbssports.com/fantasy/basketball/news/trail-blazers-scoot-henderson-not-starting-tuesday/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeiOu-ggr8UvOf5oHJNlEi1Fa0L1p03tea0pXyBK092OcrS0t8gXCaCSVuR2c",
-      "image_credit": "NBC Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9jtw4ymgfOyUJbPZ2y94fMdwYdTwPLM2Uh5I38kzJDkQrkakODyVtwYcLuRg",
+      "image_credit": "Blazer's Edge",
       "news": [
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/ajay-mitchell-scores-14-points-in-blowout-defeat",
-          "title": "Ajay Mitchell scores 14 points in blowout defeat",
-          "publisher": "NBC Sports",
+          "url": "https://www.blazersedge.com/trail-blazers-news/118225/blazers-move-scoot-henderson-out-of-starting-lineup-versus-thunder",
+          "title": "Blazers Move Scoot Henderson Out of Starting Lineup Versus Thunder",
+          "publisher": "Blazer's Edge",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeiOu-ggr8UvOf5oHJNlEi1Fa0L1p03tea0pXyBK092OcrS0t8gXCaCSVuR2c"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9jtw4ymgfOyUJbPZ2y94fMdwYdTwPLM2Uh5I38kzJDkQrkakODyVtwYcLuRg"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/shai-gilgeous-alexander-scores-26-points-vs-por",
-          "title": "Shai Gilgeous-Alexander scores 26 points vs. POR",
-          "publisher": "NBC Sports",
+          "url": "https://sports.yahoo.com/articles/scoot-henderson-returning-bench-favor-052006312.html",
+          "title": "Scoot Henderson returning to the bench in favor of Sidy Cissoko",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDI92hcCvVvW5AsQxOsh3Xy3GdcDuHHJD6H8-tUIlI8b8_v3G7nlXMI5AzdVQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZpuINRNvHDWaxcr-lvgQRz03D0DvhY9_3HAkSWefhw6faH2jeuk9t2cpOhbY"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-10/quentin-grimes-finger-questionable-wednesday",
-          "title": "Quentin Grimes (finger) questionable Wednesday",
-          "publisher": "NBC Sports",
+          "url": "https://www.cbssports.com/fantasy/basketball/news/trail-blazers-scoot-henderson-not-starting-tuesday/",
+          "title": "Trail Blazers' Scoot Henderson: Not starting Tuesday",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQB2jl0wAdH0Uhy8mz2P-n1kLUKFeuhcYzpNFJlFpy2fjJFOIiHVJQZPf9w9hM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRw4JMDZRjt14kdxzrzELRaPUVHyA_LPyMEZ6Z5z1-MPE4bV8sDE77o1Kd2XnA"
         }
       ]
     },
@@ -108,251 +353,6 @@
           "publisher": "Central Oregon Daily",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8k8VnpEPjk_D-Rrug_F9S9S6BBKRHNblN7FH5VXZ70lC2VNqvAENK9TB8a3s"
-        }
-      ]
-    },
-    {
-      "query": "ja morant injury",
-      "approx_searches": "100+",
-      "published_at": "2026-11-11T06:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/trail-blazers-announce-encouraging-ja-045805609.html",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-07/nori-morant-could-be-back-sooner-than-expected",
-        "https://heavy.com/sports/nba/portland-trail-blazers/ja-morant-playing-tonight-lakers/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZ3eixS2sB7BLUJApOJk1LUz3D3hhwYVQ_WsHORUIIxzA9XitynNz1On8duLY",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/trail-blazers-announce-encouraging-ja-045805609.html",
-          "title": "Trail Blazers Announce Encouraging Ja Morant Injury Update Before Spurs Game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZ3eixS2sB7BLUJApOJk1LUz3D3hhwYVQ_WsHORUIIxzA9XitynNz1On8duLY"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-07/nori-morant-could-be-back-sooner-than-expected",
-          "title": "Nori: Morant could be back sooner than expected",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTp1-iX11QVURUzQH1UpuF2HPT-PfxxKERIIcntiNEmrK83fORStp9MnReLo4A"
-        },
-        {
-          "url": "https://heavy.com/sports/nba/portland-trail-blazers/ja-morant-playing-tonight-lakers/",
-          "title": "Is Ja Morant Playing Tonight? Blazers Injury Update vs. Lakers",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGZrCW8QtaOTl2cfl3GWmUCtomnyvWqoZsJtxlLC4VPmb3_TgY085bjLCRT9M"
-        }
-      ]
-    },
-    {
-      "query": "larry ellison",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T06:20:00Z",
-      "related_news_urls": [
-        "https://nypost.com/2026/11/10/media/skydance-buyouts-at-cnn-cbs-news-spark-exodus-of-veteran-staffers-including-workers-bosses-wanted-to-keep-report/",
-        "https://finance.yahoo.com/media-advertising/articles/david-ellison-offer-staff-backfires-135615786.html",
-        "https://variety.com/2026/tv/news/cnn-staff-buyouts-skydance-merger-1236943369/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo4OMBlkDkrjOThfkqeLIbVB1Gwxagi1SBFCy4jXBKwJp3oeNKvWlHKlvTkio",
-      "image_credit": "New York Post",
-      "news": [
-        {
-          "url": "https://nypost.com/2026/11/10/media/skydance-buyouts-at-cnn-cbs-news-spark-exodus-of-veteran-staffers-including-workers-bosses-wanted-to-keep-report/",
-          "title": "Skydance buyouts at CNN, CBS News spark exodus of veteran staffers -- including workers bosses wanted to keep: report",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo4OMBlkDkrjOThfkqeLIbVB1Gwxagi1SBFCy4jXBKwJp3oeNKvWlHKlvTkio"
-        },
-        {
-          "url": "https://finance.yahoo.com/media-advertising/articles/david-ellison-offer-staff-backfires-135615786.html",
-          "title": "David Ellison’s Offer to Staff Backfires Spectacularly",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWISiwGiyGa7xuKN0JH9khQJz-ctYUBOGLvtMPd0GA6pT7vwXFCNeudEZuHgA"
-        },
-        {
-          "url": "https://variety.com/2026/tv/news/cnn-staff-buyouts-skydance-merger-1236943369/",
-          "title": "CNN Sees Some Staff Buyouts Under Skydance Merger Plan",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYQErkJhKbyWistrCceTFhnPtOqiQ9YfOEqImDoXke97HwSECloCxVhYXaJCU"
-        }
-      ]
-    },
-    {
-      "query": "taye diggs",
-      "approx_searches": "100+",
-      "published_at": "2026-11-11T06:20:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/tv/news/taye-diggs-the-chosen-the-three-kings-christmas-special-fox-1236943728/",
-        "https://www.tvline.com/2312759/the-chosen-christmas-special-cast-taye-diggs-clueless-star-returning-sequel/",
-        "https://www.yahoo.com/entertainment/tv/articles/taye-diggs-cast-chosen-christmas-205632567.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQz3Cqixvg0Y0wKEKWaW9H7OkKhDpi0MksvNL6rQ-MY7bb8_xQvh585XvI1-Qo",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/tv/news/taye-diggs-the-chosen-the-three-kings-christmas-special-fox-1236943728/",
-          "title": "Taye Diggs Stars in 'The Chosen: The Three Kings' Christmas Special",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQz3Cqixvg0Y0wKEKWaW9H7OkKhDpi0MksvNL6rQ-MY7bb8_xQvh585XvI1-Qo"
-        },
-        {
-          "url": "https://www.tvline.com/2312759/the-chosen-christmas-special-cast-taye-diggs-clueless-star-returning-sequel/",
-          "title": "Casting News: The Chosen Crowns Taye Diggs, Clueless Star Returning For Sequel Series, And More",
-          "publisher": "TVLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR739LBKKl7MpmEn14nOZpDNENkrOLl1ZgXcJl7oj23BGAIaHq9jPmbTD99_r0"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/taye-diggs-cast-chosen-christmas-205632567.html",
-          "title": "Taye Diggs Cast in The Chosen’s Christmas Spin-off, Release Date & First Look Revealed",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnyYjpxwwtl8LfkAW1BfGhzHwO47bm6c1f18LrPSfzvAPbmwI6VzlAg5ojhZI"
-        }
-      ]
-    },
-    {
-      "query": "donovan clingan",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T06:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/donovan-clingan-ja-morant-hes-014359177.html",
-        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/10/donovan-clingan-on-ja-morant-hes-a-great-teammate-hes-supportive/92717453007/",
-        "https://www.hoopsrumors.com/2026/11/northwest-notes-clingan-clifford-markkanen-murray.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRr8SUG81ihEv40OiW5GeSWkz7x2kdM8dXjvZqJmWacVV89KvQuvcrLSygNNw8",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/donovan-clingan-ja-morant-hes-014359177.html",
-          "title": "Donovan Clingan on Ja Morant: 'He's a great teammate, he's supportive'",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRr8SUG81ihEv40OiW5GeSWkz7x2kdM8dXjvZqJmWacVV89KvQuvcrLSygNNw8"
-        },
-        {
-          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/10/donovan-clingan-on-ja-morant-hes-a-great-teammate-hes-supportive/92717453007/",
-          "title": "Donovan Clingan on Ja Morant: 'He's a great teammate, he's supportive'",
-          "publisher": "HoopsHype",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTT8wl6Vj65wKUjosvjAIBV4xSt23blcdyF7Qt-BjE84TFtoupccq2KxRoxLVs"
-        },
-        {
-          "url": "https://www.hoopsrumors.com/2026/11/northwest-notes-clingan-clifford-markkanen-murray.html",
-          "title": "Northwest Notes: Clingan, Clifford, Markkanen, Murray",
-          "publisher": "Hoops Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhI6rIZnqiPrutgz40aDOoFviZeeHwC_eGfUWcCgn4GBCbxLMtCtNdFK-h5jE"
-        }
-      ]
-    },
-    {
-      "query": "michigan senate abdul el sayed",
-      "approx_searches": "100+",
-      "published_at": "2026-11-11T06:10:00Z",
-      "related_news_urls": [
-        "https://www.nbcnews.com/politics/2026-elections/alaska-governor-results",
-        "https://www.capegazette.com/article/delaware-dems-likely-gain-supermajority-house/356700",
-        "https://www.wdel.com/news/there-is-change-in-the-air---sen-coons-celebrates-reelection-opportunity-in-a/article_a8d47351-a06e-453a-9a6a-089c3e4ee962.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWmvwHQ7qw_OeBHOZP6ZwuRTw2z_p-Uk4Zzu0P7tlDCqywgsu_KC3_mofNjNI",
-      "image_credit": "NBC News",
-      "news": [
-        {
-          "url": "https://www.nbcnews.com/politics/2026-elections/alaska-governor-results",
-          "title": "Alaska Governor Midterm Election 2026: Live Results",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWmvwHQ7qw_OeBHOZP6ZwuRTw2z_p-Uk4Zzu0P7tlDCqywgsu_KC3_mofNjNI"
-        },
-        {
-          "url": "https://www.capegazette.com/article/delaware-dems-likely-gain-supermajority-house/356700",
-          "title": "Delaware Dems gain supermajority in House",
-          "publisher": "Cape Gazette",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1rkmOVSwLmMtkx_stRgav1BULPfibsi5rqBWLLdVun2LEuZJRxEw_Wa6Qpc0"
-        },
-        {
-          "url": "https://www.wdel.com/news/there-is-change-in-the-air---sen-coons-celebrates-reelection-opportunity-in-a/article_a8d47351-a06e-453a-9a6a-089c3e4ee962.html",
-          "title": "\"There is change in the air\" - Sen. Coons celebrates reelection, opportunity in a Democratic-controlled Congress",
-          "publisher": "WDEL",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRadJQuQS8uqlFUyAxy0_Y__139w_hho_Rrcl8fKDP4OagkvNjGAOKLuMWtxps"
-        }
-      ]
-    },
-    {
-      "query": "el nino",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T05:40:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/06/travel/el-nino-skiing-united-states.html",
-        "https://www.usatoday.com/story/news/weather/2026/11/09/el-nino-effects-daily-us-weather/92443996007/",
-        "https://grist.org/extreme-weather/a-monstrous-el-nino-has-arrived-what-it-means-for-where-you-live/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQX7Sgy5zYFuPSXMo4rsW_lQquxzTH8F7DrtUN7vIll9cNfNZDtlJsf8SUUr9I",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/06/travel/el-nino-skiing-united-states.html",
-          "title": "A Super El Niño Is Here. What Does It Mean for Skiing?",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQX7Sgy5zYFuPSXMo4rsW_lQquxzTH8F7DrtUN7vIll9cNfNZDtlJsf8SUUr9I"
-        },
-        {
-          "url": "https://www.usatoday.com/story/news/weather/2026/11/09/el-nino-effects-daily-us-weather/92443996007/",
-          "title": "El Niño is just getting started. New effects expected soon",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFs7ozwMKA3mG3v8R0azuUsMlbGV3B-bHWKIgY3zYofhyH0AGa4dZNFBvI2LM"
-        },
-        {
-          "url": "https://grist.org/extreme-weather/a-monstrous-el-nino-has-arrived-what-it-means-for-where-you-live/",
-          "title": "A monstrous El Niño has arrived. Here’s what it means for where you live.",
-          "publisher": "Grist",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxuXwBpyMTKBNJ5zjTbR--hBygQO3VGkj8Dxg20KDEAx-C5EwI67aWP4hsRcU"
-        }
-      ]
-    },
-    {
-      "query": "coachella 2027 lineup",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-11T05:30:00Z",
-      "related_news_urls": [
-        "https://www.sfgate.com/sf-culture/article/coachella-headliners-leak-22522136.php",
-        "https://www.yahoo.com/entertainment/music/festivals/articles/dua-lipa-tame-impala-sza-061315165.html",
-        "https://www.latimes.com/entertainment-arts/music/story/2026-11-10/coachella-2027-festival-lineup-announced"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu7m26jqmr36TZGo8p0VvVhPnAo6GovpILVjEHMwDniQ8nsYVehoDOaJdyDjc",
-      "image_credit": "SFGATE",
-      "news": [
-        {
-          "url": "https://www.sfgate.com/sf-culture/article/coachella-headliners-leak-22522136.php",
-          "title": "SZA appears to leak Coachella 2027 headliners",
-          "publisher": "SFGATE",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu7m26jqmr36TZGo8p0VvVhPnAo6GovpILVjEHMwDniQ8nsYVehoDOaJdyDjc"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/music/festivals/articles/dua-lipa-tame-impala-sza-061315165.html",
-          "title": "Dua Lipa, Tame Impala, SZA and Daddy Yankee to Headline 2027 Coachella Festival",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5Wxe2P3pVVsUDxgD2lwvKbIu9kJBWQSp6gt42Z_ASe5PPAz_3Rc4_WvdPudQ"
-        },
-        {
-          "url": "https://www.latimes.com/entertainment-arts/music/story/2026-11-10/coachella-2027-festival-lineup-announced",
-          "title": "2027 Coachella lineup: Dua Lipa, SZA, Tame Impala will headline",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLWDPZBAPQpH6PvjeR3Urkm6cErAg91DjJ3sZGuGKkW5RMVBd_nLPUXtt5CpM"
         }
       ]
     }
