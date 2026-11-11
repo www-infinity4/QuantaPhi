@@ -3,356 +3,332 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T02:31:19.744753Z",
+  "checked_at": "2026-11-11T03:01:19.444351Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "harry shum jr",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-11T02:10:00Z",
-      "related_news_urls": [
-        "https://people.com/all-about-harry-shum-jr-daughter-12247398",
-        "https://www.imdb.com/news/ni66104690/?ref_=nwc_art_perm",
-        "https://www.today.com/popculture/tv/jenna-johnson-broke-nose-dwts-grammy-night-rcna608675"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhc54dP5XWqobpmHMPpSgvrTXfeO9MgQeqzpccV2sgNluINhRuBexzwSH-Cyo",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/all-about-harry-shum-jr-daughter-12247398",
-          "title": "All About Harry Shum Jr.’s Daughter, Xia",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhc54dP5XWqobpmHMPpSgvrTXfeO9MgQeqzpccV2sgNluINhRuBexzwSH-Cyo"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66104690/?ref_=nwc_art_perm",
-          "title": "Jenna Johnson Reveals Painful Injury Ahead of ‘DWTS’: Will She Compete Tonight?",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBwrB8loTXxWgUCYH6cyONdpioclKMplaucSiGzG9fT6RE5fwMie3XF3o9qfo"
-        },
-        {
-          "url": "https://www.today.com/popculture/tv/jenna-johnson-broke-nose-dwts-grammy-night-rcna608675",
-          "title": "Jenna Johnson to Dance With a Broken Nose During ‘DWTS’ Grammy Night",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiWRrNA5yQpXwePzw7Cm9KlumHpW_2HqMq7IYvXhE-JWK7f3HxUAoKMw0NNdM"
-        }
-      ]
-    },
-    {
-      "query": "magic vs kings",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T02:10:00Z",
-      "related_news_urls": [
-        "https://www.si.com/betting/magic-vs-kings-prediction-odds-and-best-nba-prop-bets-for-tuesday-nov-10-2026",
-        "https://kingsherald.com/articles/kings-vs-magic-preview-can-we-finally-win-at-home/",
-        "https://orlandomagic.com/news/orlando-magic-sacramento-kings-game-preview-injury-report-20261110"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHfEfkdbmoeJNDqiE0qk7TTaFbzrRiTagjiunI7QrzlerHTldrfkWOJ06DHqE",
-      "image_credit": "Sports Illustrated",
-      "news": [
-        {
-          "url": "https://www.si.com/betting/magic-vs-kings-prediction-odds-and-best-nba-prop-bets-for-tuesday-nov-10-2026",
-          "title": "Magic vs. Kings Prediction, Odds and Best NBA Prop Bets for Tuesday, Nov. 10",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHfEfkdbmoeJNDqiE0qk7TTaFbzrRiTagjiunI7QrzlerHTldrfkWOJ06DHqE"
-        },
-        {
-          "url": "https://kingsherald.com/articles/kings-vs-magic-preview-can-we-finally-win-at-home/",
-          "title": "Kings vs. Magic Preview: Can we finally win at home?",
-          "publisher": "The Kings Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3jgNyIOQRu2uxbya8bu2oNhqEqS_k8NqpGcAK6NVJFM1wQLfg2QsqO_uxifw"
-        },
-        {
-          "url": "https://orlandomagic.com/news/orlando-magic-sacramento-kings-game-preview-injury-report-20261110",
-          "title": "Orlando Magic at Sacramento Kings: Game Preview",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyujWI9DIzT943LpYr0bZ3QUQV9WlWnUWbeOex5C-TI6lsPZ4kxcUdX6u1z64"
-        }
-      ]
-    },
-    {
-      "query": "jenna johnson",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T02:10:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66104690/?ref_=nwc_art_perm",
-        "https://www.today.com/popculture/tv/jenna-johnson-broke-nose-dwts-grammy-night-rcna608675",
-        "https://people.com/jenna-johnson-breaks-nose-during-dancing-with-the-stars-rehearsals-12247375"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBwrB8loTXxWgUCYH6cyONdpioclKMplaucSiGzG9fT6RE5fwMie3XF3o9qfo",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66104690/?ref_=nwc_art_perm",
-          "title": "Jenna Johnson Reveals Painful Injury Ahead of ‘DWTS’: Will She Compete Tonight?",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBwrB8loTXxWgUCYH6cyONdpioclKMplaucSiGzG9fT6RE5fwMie3XF3o9qfo"
-        },
-        {
-          "url": "https://www.today.com/popculture/tv/jenna-johnson-broke-nose-dwts-grammy-night-rcna608675",
-          "title": "Jenna Johnson to Dance With a Broken Nose During ‘DWTS’ Grammy Night",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiWRrNA5yQpXwePzw7Cm9KlumHpW_2HqMq7IYvXhE-JWK7f3HxUAoKMw0NNdM"
-        },
-        {
-          "url": "https://people.com/jenna-johnson-breaks-nose-during-dancing-with-the-stars-rehearsals-12247375",
-          "title": "‘Dancing with the Stars’ Pro Jenna Johnson Reveals She Broke Her Nose the Night Before Live Show",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBmLbiX3yY60BDjI6CFgMIr8vMBbmM-vNr2QhwXNt0FvuEuJe5qYlfVaOUt0w"
-        }
-      ]
-    },
-    {
-      "query": "trisha paytas",
+      "query": "measles",
       "approx_searches": "1000+",
-      "published_at": "2026-11-11T02:10:00Z",
+      "published_at": "2026-11-11T02:40:00Z",
       "related_news_urls": [
-        "https://www.washingtonpost.com/style/2026/11/10/trisha-paytas-would-do-anything-be-famous-i-get-why-people-hate-me/",
-        "https://www.rollingstone.com/culture/culture-features/trisha-paytas-frenemies-ethan-klein-memoir-1235653204/",
-        "https://www.vulture.com/article/trisha-paytas-memoir-stories-youtube-drama.html"
+        "https://www.cnn.com/2026/11/10/health/cdc-measles-elimination-response",
+        "https://www.washingtonpost.com/health/2026/11/10/us-could-lose-decades-old-public-health-achievement/",
+        "https://www.bloomberg.com/news/features/2026-11-10/us-measles-outbreaks-threaten-elimination-status-as-vaccinations-fall"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2hWY_6_FHq3dfbAUysDyZHmNnWgoIXO-huT4I8UwqggiP6f_0kzHSdv-fTg4",
-      "image_credit": "The Washington Post",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZnh78ftgW5C9a8NDcuapZNQygjNGPezQOf82plDTnf-43mdk00uP_TVExtZs",
+      "image_credit": "CNN",
       "news": [
         {
-          "url": "https://www.washingtonpost.com/style/2026/11/10/trisha-paytas-would-do-anything-be-famous-i-get-why-people-hate-me/",
-          "title": "Column | The woman who survived 1,000 cancellations and lived to tell the tale",
+          "url": "https://www.cnn.com/2026/11/10/health/cdc-measles-elimination-response",
+          "title": "CDC chief says agency will not change measles response if US loses elimination status",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZnh78ftgW5C9a8NDcuapZNQygjNGPezQOf82plDTnf-43mdk00uP_TVExtZs"
+        },
+        {
+          "url": "https://www.washingtonpost.com/health/2026/11/10/us-could-lose-decades-old-public-health-achievement/",
+          "title": "The U.S. could lose a decades-old public health achievement",
           "publisher": "The Washington Post",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2hWY_6_FHq3dfbAUysDyZHmNnWgoIXO-huT4I8UwqggiP6f_0kzHSdv-fTg4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThSkzZLFxt0-gjmCArniaUs8rBrZIaxQSkaCWQJG2r26329pYXbSUn-8A33Eo"
         },
         {
-          "url": "https://www.rollingstone.com/culture/culture-features/trisha-paytas-frenemies-ethan-klein-memoir-1235653204/",
-          "title": "Trisha Paytas Is Finally Opening Up About the ‘Frenemies’ Split With Ethan Klein",
-          "publisher": "Rolling Stone",
+          "url": "https://www.bloomberg.com/news/features/2026-11-10/us-measles-outbreaks-threaten-elimination-status-as-vaccinations-fall",
+          "title": "Measles Forges a Deadly Trail Across America, Exposing Fractured Health System",
+          "publisher": "Bloomberg.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDVV25mtPViv1n7RAUJc1xtGjbbzMNlNYrQZUxdLA09oNRxLagm9rdwsLSDDQ"
-        },
-        {
-          "url": "https://www.vulture.com/article/trisha-paytas-memoir-stories-youtube-drama.html",
-          "title": "What Trisha Paytas Says About Her YouTuber Frenemies in New Memoir",
-          "publisher": "Vulture",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0FUeLHBzCrxnO1Myv4-kGBKUmXqcCAfa0amT7Sr_8_VcQjdg51J_DUSBdVbs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNtBF6M0o1dMYKaiZgTbQU2M4JgNd_LV-mg9V7Fh8GGJznoKAzXY22atkg9E4"
         }
       ]
     },
     {
-      "query": "predators vs kings",
+      "query": "ucla football schedule",
       "approx_searches": "500+",
-      "published_at": "2026-11-11T02:10:00Z",
+      "published_at": "2026-11-11T02:40:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-10-2026",
-        "https://lakingsinsider.com/2026/11/10/11-10-preview-zuccarello-to-play-tonight-ceci-in-gustafsson-out-day-to-day-laviolette-on-communication-special-teams-impact/",
-        "https://www.al.com/tv/2026/11/how-to-watch-the-nashville-predators-vs-los-angeles-kings-tonight.html"
+        "https://www.espn.com/college-football/story/_/id/50402628/2026-college-football-power-rankings-top-25-week-10",
+        "https://sports.yahoo.com/articles/cfp-rankings-reveal-georgia-football-230116241.html",
+        "https://www.nytimes.com/athletic/7765710/2026/11/09/college-football-rankings-georgia-title/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREIu1CxLJO_jgZUsIT8-HK_9LkIxH59GxurXLA0Gd7Y9m-F7tx05HPZ5FFms4",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSw814uv2cTAFlShgYPAsJiGsFkcSEwoUzVJmmmSu9o02ArOSbV29y7yWetM1U",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50402628/2026-college-football-power-rankings-top-25-week-10",
+          "title": "Power Rankings: How an action-packed Week 10 changed the top 25",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSw814uv2cTAFlShgYPAsJiGsFkcSEwoUzVJmmmSu9o02ArOSbV29y7yWetM1U"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/cfp-rankings-reveal-georgia-football-230116241.html",
+          "title": "CFP rankings reveal for Georgia football. See where the Bulldogs landed in second bracket",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxv_R2PR0frglbogllMlaw7Lusz76C2sWSJbm534Xa4M2t0hvW37uXjZ-mNKk"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7765710/2026/11/09/college-football-rankings-georgia-title/",
+          "title": "Re-ranking 138 college football teams after Week 10: Is Georgia’s title run inevitable?",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSP6wCi7vc97LQZWOPfh0oCwP3hviAP2IfvnGHogjE3k_nWBzWS2Z8ahtPrMmE"
+        }
+      ]
+    },
+    {
+      "query": "capitals",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T02:40:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/washington-capitals-ottawa-senators-game-preview-november-10-2026",
+        "https://www.covers.com/nhl/capitals-vs-senators-prediction-picks-nov-10-2026",
+        "https://www.yardbarker.com/nhl/articles/washington_takes_on_ottawa_tuesday_at_canadian_tire_centre/s1_17668_44543481"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
       "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-10-2026",
-          "title": "NHL On Tap: Josi one point from 800 when Predators visit Kings",
+          "url": "https://www.nhl.com/news/washington-capitals-ottawa-senators-game-preview-november-10-2026",
+          "title": "Capitals at Senators projected lineups",
           "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREIu1CxLJO_jgZUsIT8-HK_9LkIxH59GxurXLA0Gd7Y9m-F7tx05HPZ5FFms4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
         },
         {
-          "url": "https://lakingsinsider.com/2026/11/10/11-10-preview-zuccarello-to-play-tonight-ceci-in-gustafsson-out-day-to-day-laviolette-on-communication-special-teams-impact/",
-          "title": "11/10 Preview - Zuccarello To Play Tonight + Ceci In, Gustafsson out \"day-to-day\", Laviolette on communication, special teams impact",
-          "publisher": "LA Kings Insider",
+          "url": "https://www.covers.com/nhl/capitals-vs-senators-prediction-picks-nov-10-2026",
+          "title": "Capitals vs Senators Prediction, Picks & Odds for Tonight’s NHL Game",
+          "publisher": "Covers.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBrGxaMzEBZDNmaINKDK531SL-HUjiI2QksKeJZl7nHsLFMsx3hmi8G8NI2XI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5igbdAZK6UKm-GStSkxO_6B5PewVVwBlv_wrmErckaF2XspxYIL3R8EqDzKw"
         },
         {
-          "url": "https://www.al.com/tv/2026/11/how-to-watch-the-nashville-predators-vs-los-angeles-kings-tonight.html",
-          "title": "How to watch the Nashville Predators vs. Los Angeles Kings tonight",
-          "publisher": "AL.com",
+          "url": "https://www.yardbarker.com/nhl/articles/washington_takes_on_ottawa_tuesday_at_canadian_tire_centre/s1_17668_44543481",
+          "title": "Washington Takes on Ottawa Tuesday at Canadian Tire Centre",
+          "publisher": "Yardbarker",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwJXJpXj2aiqNl4DxqRhQPCIGxOkGMCcNacS2VtVFAHbVT26vCB-UPYb2FquA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfZmKOTX_9QMQFYpyKF2v29nuQAo6auPFwJv3LAHtRojqEnFJ0CFn71a6IdTw"
         }
       ]
     },
     {
-      "query": "jenny mccarthy",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T02:10:00Z",
+      "query": "derik queen",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-11T02:40:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/jenny-mccarthy-shares-emotional-breakdown-150700011.html",
-        "https://ew.com/jenny-mccarthy-threw-away-all-donnie-wahlberg-clothes-mold-ptsd-12247909",
-        "https://pagesix.com/2026/11/10/celebrity-news/jenny-mccarthys-health-struggles-pushed-her-to-nervous-breakdown/"
+        "https://heavy.com/sports/nba/golden-state-warriors/yaxel-lendeborg-comments-derik-queen-altercation/",
+        "https://www.hitc.com/dont-do-that-yaxel-lendeborg-shares-what-actually-happened-in-his-scuffle-with-derik-queen/",
+        "https://www.nba.com/pelicans/videos/derik-queen-highlights-vs-golden-state-warriors-11-9-26"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2ENfFt2jniHP2dkhDvmCq33TeM00K5QlTUfeLLM-65VIRrXJuvFnL0afRqsk",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKXOWYQbtFauOzXLngtb0jMmfyDk0wjH2-bOg8f5e1fRTZv28jcWm36rDSVIg",
+      "image_credit": "Heavy.com",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/jenny-mccarthy-shares-emotional-breakdown-150700011.html",
-          "title": "Jenny McCarthy Shares Emotional Breakdown in Vegas Over Health Fears During Donnie's Show",
-          "publisher": "Yahoo",
+          "url": "https://heavy.com/sports/nba/golden-state-warriors/yaxel-lendeborg-comments-derik-queen-altercation/",
+          "title": "Yaxel Lendeborg Breaks Silence on Derik Queen Altercation",
+          "publisher": "Heavy.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2ENfFt2jniHP2dkhDvmCq33TeM00K5QlTUfeLLM-65VIRrXJuvFnL0afRqsk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKXOWYQbtFauOzXLngtb0jMmfyDk0wjH2-bOg8f5e1fRTZv28jcWm36rDSVIg"
         },
         {
-          "url": "https://ew.com/jenny-mccarthy-threw-away-all-donnie-wahlberg-clothes-mold-ptsd-12247909",
-          "title": "Jenny McCarthy says she threw away all of husband Donnie Wahlberg’s clothes due to mold PTSD",
-          "publisher": "Entertainment Weekly",
+          "url": "https://www.hitc.com/dont-do-that-yaxel-lendeborg-shares-what-actually-happened-in-his-scuffle-with-derik-queen/",
+          "title": "‘Don’t do that’: Yaxel Lendeborg shares what actually happened in his scuffle with Derik Queen",
+          "publisher": "HITC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmfBol368-6tyS1A3A54OBWiYBT5upq615e40p9HSiavN8LmgyxzZ7G4DX3k4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvah50zIvJ4dzrn2-7QVsR4YlYBTReVvZlABjWRPkSmDh_iVB-IjfwEDF8koc"
         },
         {
-          "url": "https://pagesix.com/2026/11/10/celebrity-news/jenny-mccarthys-health-struggles-pushed-her-to-nervous-breakdown/",
-          "title": "Jenny McCarthy's health struggles pushed her to nervous breakdown",
-          "publisher": "Page Six",
+          "url": "https://www.nba.com/pelicans/videos/derik-queen-highlights-vs-golden-state-warriors-11-9-26",
+          "title": "Derik Queen Highlights vs. Golden State Warriors 11/9/26",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyLXmK8_FeIri803K_r26-X6srKmCMqDk1Qq_jpGOAFxoHevfs6Blu68tcfb8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUCPpJ5kX1bn_xRxsG1b5gcwkRuqDK8etbJv6x50nq_0DPBPaaC-mUwVcDIME"
         }
       ]
     },
     {
-      "query": "jennifer beals",
+      "query": "knicks vs milwaukee bucks match player stats",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T02:40:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/game/lal-vs-atl-0022600203/box-score",
+        "https://www.espn.com/nba/recap/_/gameId/401909929",
+        "https://www.fearthesword.com/cavs-analysis/53922/player-grades-cavs-at-thunder-donovan-mitchells-fourth-quarter-outing-not-enough"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNm5pAGV6tyZzyyLtduvUFkib_rckR4AC95K_4ms3eWpT5q27WyUqILPsTevs",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://www.nba.com/game/lal-vs-atl-0022600203/box-score",
+          "title": "Los Angeles Lakers vs Atlanta Hawks Nov 9, 2026 Box Scores",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNm5pAGV6tyZzyyLtduvUFkib_rckR4AC95K_4ms3eWpT5q27WyUqILPsTevs"
+        },
+        {
+          "url": "https://www.espn.com/nba/recap/_/gameId/401909929",
+          "title": "Thunder 124-116 Cavaliers (Nov 4, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_YxxmnotZyN14dJRtHtg9BHyj9m3aSCmp3fZQWzBNMFhO5PpAgRDgGsNEYrk"
+        },
+        {
+          "url": "https://www.fearthesword.com/cavs-analysis/53922/player-grades-cavs-at-thunder-donovan-mitchells-fourth-quarter-outing-not-enough",
+          "title": "Player Grades: Cavs at Thunder: Donovan Mitchell’s fourth-quarter outing not enough",
+          "publisher": "Fear The Sword",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQK-p7ts9GirNxEqMafOFMfcNSrn-gN_wyDvWSeO2v0ridPuGH-JJne93yyoNY"
+        }
+      ]
+    },
+    {
+      "query": "allen iverson",
       "approx_searches": "1000+",
-      "published_at": "2026-11-11T02:10:00Z",
+      "published_at": "2026-11-11T02:30:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/ncis-york-star-jennifer-beals-230000256.html",
-        "https://www.tvinsider.com/1302196/ncis-new-york-robyn-wells-dog-team-relationships-jennifer-beals-interview/",
-        "https://www.nbcnewyork.com/video/entertainment-videos/jennifer-beals-talks-flashdance-taylor-swift-and-percy-jackson/6568642/"
+        "https://okcthunderwire.usatoday.com/story/sports/nba/thunder/2026/11/09/why-nba-legend-allen-iverson-recently-attended-okc-thunder-game/92695039007/",
+        "https://sports.yahoo.com/articles/got-allen-iverson-recalls-buying-230100773.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTai-mt52E2WIxlIhlSrbjBE4PTib81Ezys2SbM36t32YhN5RnsNZt8lVXFknA",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSANtIUMy9z399jMVDBZmECgq7sRuAgwdBYQ-pOTJc76BpNmMW3d6kfR5PQP40",
+      "image_credit": "OKC Thunder Wire",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/ncis-york-star-jennifer-beals-230000256.html",
-          "title": "NCIS: New York Star Jennifer Beals Sheds Light On Robyn's Backstory — And Gushes About Her On-Screen Dog",
-          "publisher": "Yahoo",
+          "url": "https://okcthunderwire.usatoday.com/story/sports/nba/thunder/2026/11/09/why-nba-legend-allen-iverson-recently-attended-okc-thunder-game/92695039007/",
+          "title": "Why NBA legend Allen Iverson recently attended OKC Thunder game",
+          "publisher": "OKC Thunder Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTai-mt52E2WIxlIhlSrbjBE4PTib81Ezys2SbM36t32YhN5RnsNZt8lVXFknA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSANtIUMy9z399jMVDBZmECgq7sRuAgwdBYQ-pOTJc76BpNmMW3d6kfR5PQP40"
         },
         {
-          "url": "https://www.tvinsider.com/1302196/ncis-new-york-robyn-wells-dog-team-relationships-jennifer-beals-interview/",
-          "title": "'NCIS: New York's Jennifer Beals Describes Robyn as the Boss & Talks Casting Her Dog (Exclusive)",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZ6MNKEaKs9tgvQPZGN3y4FW6jNZUfuC36DgAN6GwWuXwZQ5E7LALvA3pc8JI"
-        },
-        {
-          "url": "https://www.nbcnewyork.com/video/entertainment-videos/jennifer-beals-talks-flashdance-taylor-swift-and-percy-jackson/6568642/",
-          "title": "Jennifer Beals talks ‘Flashdance,' Taylor Swift and ‘Percy Jackson'",
-          "publisher": "NBC New York",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5yEsoNnikKZj0oKWR8KFq6y_aqzqyBhBfhliVyRPzpAzLt-6Dl6VpprzsT9I"
-        }
-      ]
-    },
-    {
-      "query": "mike conley",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T02:10:00Z",
-      "related_news_urls": [
-        "https://www.celticsblog.com/boston-celtics-news/149787/mike-conley-celtics-bucks-joe-mazzulla-starting-lineup",
-        "https://sports.yahoo.com/videos/mazzulla-calls-conley-extension-coaching-215757900.html",
-        "https://hardwoodhoudini.com/joe-mazzulla-may-taking-player-empowerment-too-far-wild-starting-lineup"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSu5RlwiYdDXeqSS_FZ87pWnuLe9mVJ7cfj4SK-Y1Sug6AbQweu2cRLrLagOd0",
-      "image_credit": "CelticsBlog",
-      "news": [
-        {
-          "url": "https://www.celticsblog.com/boston-celtics-news/149787/mike-conley-celtics-bucks-joe-mazzulla-starting-lineup",
-          "title": "The story behind Mike Conley’s first Celtics start: “I thought they were joking”",
-          "publisher": "CelticsBlog",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSu5RlwiYdDXeqSS_FZ87pWnuLe9mVJ7cfj4SK-Y1Sug6AbQweu2cRLrLagOd0"
-        },
-        {
-          "url": "https://sports.yahoo.com/videos/mazzulla-calls-conley-extension-coaching-215757900.html",
-          "title": "Mazzulla calls Conley ‘an extension of the coaching staff'",
+          "url": "https://sports.yahoo.com/articles/got-allen-iverson-recalls-buying-230100773.html",
+          "title": "\"I got to have it\" – Allen Iverson recalls buying $350K Bentley just because Derrick Coleman had one",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVTtc8K-quTNAiK5H-ZU_Tb-y0VqZpUmB6D26hbkNCIFQk7J9PfHa-7oC4wYc"
-        },
-        {
-          "url": "https://hardwoodhoudini.com/joe-mazzulla-may-taking-player-empowerment-too-far-wild-starting-lineup",
-          "title": "Joe Mazzulla may be taking player empowerment too far with wild starting lineup",
-          "publisher": "Hardwood Houdini",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFhQTwF4vPkngXfuDmgIbD7kj8nrJX-qRdSeBr_SPtL7nGpvawJ-yD8i81apY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzYI4Ffers7z6AZOmuD7KnQ01GLhyGbDeE1aN6L3Qbk4jVhFNa5iaoGty_4hs"
         }
       ]
     },
     {
-      "query": "kentavious caldwell-pope",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T02:10:00Z",
+      "query": "the middle",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T02:30:00Z",
       "related_news_urls": [
-        "https://www.sportsline.com/insiders/nba-dfs-2026-top-fanduel-draftkings-picks-lineups-advice-for-tuesday-nov-10/",
-        "https://www.fanduel.com/research/nba-picks-today-3-nba-predictions-and-best-bets-for-tuesday-nov-10",
-        "https://www.si.com/betting/nba-best-bets-today-predictions-prop-bets-for-jalen-brunson-celtics-76ers-giannis-thunder"
+        "https://www.bravotv.com/the-real-housewives-of-new-york-city-after-show/season-16/videos/jessel-taank-admits-shes-very",
+        "https://www.vulture.com/article/real-housewives-of-new-york-city-recap-season-16-episode-10-bravo.html",
+        "https://www.bravotv.com/the-real-housewives-of-new-york-city-after-show/season-16/videos/erin-lichy-has-no-problem-fighting"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6DV75ANoeU4vG55HS3v9uAFf56MaIUomwFfnWe3rTnA4JiD8BMEtyH7obFck",
-      "image_credit": "SportsLine",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_gw-5GbifZD0AWLuwwyI4O6UmJyVgsGOWfI46wq4UuF50QzEaSZCJMctR5RI",
+      "image_credit": "Bravo",
       "news": [
         {
-          "url": "https://www.sportsline.com/insiders/nba-dfs-2026-top-fanduel-draftkings-picks-lineups-advice-for-tuesday-nov-10/",
-          "title": "NBA DFS, 2026: Top FanDuel, DraftKings picks, lineups, advice for Tuesday, Nov. 10",
-          "publisher": "SportsLine",
+          "url": "https://www.bravotv.com/the-real-housewives-of-new-york-city-after-show/season-16/videos/jessel-taank-admits-shes-very",
+          "title": "Jessel Taank Admits She's \"Very Frustrated\" with Pavit Randhawa | Bravo",
+          "publisher": "Bravo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6DV75ANoeU4vG55HS3v9uAFf56MaIUomwFfnWe3rTnA4JiD8BMEtyH7obFck"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_gw-5GbifZD0AWLuwwyI4O6UmJyVgsGOWfI46wq4UuF50QzEaSZCJMctR5RI"
         },
         {
-          "url": "https://www.fanduel.com/research/nba-picks-today-3-nba-predictions-and-best-bets-for-tuesday-nov-10",
-          "title": "NBA Picks Today: 3 NBA Predictions and Best Bets for Tuesday, Nov. 10",
-          "publisher": "FanDuel",
+          "url": "https://www.vulture.com/article/real-housewives-of-new-york-city-recap-season-16-episode-10-bravo.html",
+          "title": "The Real Housewives of New York City Recap: No Laughing Matter",
+          "publisher": "Vulture",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJFRC2FETjkFMnkalE_NZsmabmNVSQn5QdStMCNvOOil5MtN_-5WG7hTlb19w"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxKjAqxk2I3tOWSmgRq7ioLvWENN4A8BEOAFGto9rvO3ac1l6tGEEbRqdP_rM"
         },
         {
-          "url": "https://www.si.com/betting/nba-best-bets-today-predictions-prop-bets-for-jalen-brunson-celtics-76ers-giannis-thunder",
-          "title": "Peter’s Points: NBA Best Bets Today (Predictions, Prop Bets for Jalen Brunson, Celtics-76ers, Giannis, Thunder)",
+          "url": "https://www.bravotv.com/the-real-housewives-of-new-york-city-after-show/season-16/videos/erin-lichy-has-no-problem-fighting",
+          "title": "Erin Lichy Has No Problem Fighting with Husband Abe Lichy | Bravo",
+          "publisher": "Bravo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjCANWd0HAxC6wmM4nwW0mFDNIYyv7byNls2eF_ja27v1415yeIB-CA5sciO0"
+        }
+      ]
+    },
+    {
+      "query": "neil armstrong",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T02:30:00Z",
+      "related_news_urls": [
+        "https://timesofindia.indiatimes.com/world/us/in-1962-neil-amrstrongs-x-15-bounced-off-the-atmosphere-overshot-edward-on-march-3-then-turned-over-pasadena-its-1228-flight-became-the-programs-longest/articleshow/135601237.cms"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRD9i6dvaqlqmXMpLiYRzJXgWSUpK6RZr3BfAxjMF6F_NHJVyAO9B6zn3HQ9g0",
+      "image_credit": "The Times of India",
+      "news": [
+        {
+          "url": "https://timesofindia.indiatimes.com/world/us/in-1962-neil-amrstrongs-x-15-bounced-off-the-atmosphere-overshot-edward-on-march-3-then-turned-over-pasadena-its-1228-flight-became-the-programs-longest/articleshow/135601237.cms",
+          "title": "In 1962, Neil Armstrong’s X-15 bounced off the atmosphere, overshot Edwards on April 20, then flew over P",
+          "publisher": "The Times of India",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRD9i6dvaqlqmXMpLiYRzJXgWSUpK6RZr3BfAxjMF6F_NHJVyAO9B6zn3HQ9g0"
+        }
+      ]
+    },
+    {
+      "query": "weather snow forecast",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T02:30:00Z",
+      "related_news_urls": [
+        "https://weather.com/2026/11/10/forecast/regional/noreaster-first-snow-frost-freeze",
+        "https://www.cbsnews.com/philadelphia/video/a-potential-noreaster-is-coming-to-philadelphia-this-week-heres-what-to-expect/",
+        "https://www.foxweather.com/weather-news/late-week-snow-northeast-cold-temperatures-us-november-2026"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQUkmsTlKQ9BB14UWxtFvrc-l3er7BKbZWf_1uf2fhIrsGZor4hEskEPXlKt0",
+      "image_credit": "The Weather Channel",
+      "news": [
+        {
+          "url": "https://weather.com/2026/11/10/forecast/regional/noreaster-first-snow-frost-freeze",
+          "title": "A potential nor’easter could bring rain, snow by later this week",
+          "publisher": "The Weather Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQUkmsTlKQ9BB14UWxtFvrc-l3er7BKbZWf_1uf2fhIrsGZor4hEskEPXlKt0"
+        },
+        {
+          "url": "https://www.cbsnews.com/philadelphia/video/a-potential-noreaster-is-coming-to-philadelphia-this-week-heres-what-to-expect/",
+          "title": "A potential nor'easter is coming to Philadelphia this week. Here's what to expect.",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpd6HJz3XSgURSW56u3ogJwlNZIdvY4IO44XVc0GMsUvYvgAVez7aszSgFMPE"
+        },
+        {
+          "url": "https://www.foxweather.com/weather-news/late-week-snow-northeast-cold-temperatures-us-november-2026",
+          "title": "Potential for nor'easter increasing, could bring first snow to millions as cold air sweeps across the East",
+          "publisher": "FOX Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRXSFL6HdXgcDpIQWpT6T3Bg5-8XEwILZOj-S_ij3akbbWe_ekJ9Z9lBpuszo"
+        }
+      ]
+    },
+    {
+      "query": "uva basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T02:30:00Z",
+      "related_news_urls": [
+        "https://www.si.com/college/virginia/biggest-winners-and-losers-from-virginia-s-opening-win-01m6j8hg102c",
+        "https://virginiasports.com/news/2026/11/10/cavaliers-set-to-host-drexel-wednesday-at-jpj",
+        "https://www.on3.com/sites/cavs-corner/news/the-3-2-1-ninth-ranked-hoos-start-the-season-with-a-nice-w/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVVXMdsCFqOsqMhc82yEVGJCBHSuJfdZ6ejtVWIHFHLv4PpKIS9bWpmctgvUA",
+      "image_credit": "Sports Illustrated",
+      "news": [
+        {
+          "url": "https://www.si.com/college/virginia/biggest-winners-and-losers-from-virginia-s-opening-win-01m6j8hg102c",
+          "title": "Biggest Winners and Losers From Virginia’s Opening Win",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSD1-mb5bjzhG4ua0l8Z4ZhZ6XxeYtIQyJnGS8lQhlwihl76F8kwZdqVTcZuOo"
-        }
-      ]
-    },
-    {
-      "query": "joel embiid",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T02:00:00Z",
-      "related_news_urls": [
-        "https://www.phillyvoice.com/sixers-vs-celtics-76ers-injury-report-news-analysis-adem-bona-dominick-barlow-jaylen-brown-jayson-tatum-chi/",
-        "https://www.masslive.com/celtics/2026/11/celtics-get-fortunate-injury-news-ahead-of-76ers-clash.html",
-        "https://www.libertyballers.com/76ers-injury-report/101431/adem-bona-out-joel-embiid-not-listed-on-injury-report-for-sixers-big-tilt-with-boston"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgEBXCuTK6FwiqzgsOk5MjiF5nB4KJnSpHXeHHd4cJCLj1uajdJlNd2m314Dg",
-      "image_credit": "PhillyVoice",
-      "news": [
-        {
-          "url": "https://www.phillyvoice.com/sixers-vs-celtics-76ers-injury-report-news-analysis-adem-bona-dominick-barlow-jaylen-brown-jayson-tatum-chi/",
-          "title": "Full injury reports for Sixers-Celtics on Tuesday",
-          "publisher": "PhillyVoice",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgEBXCuTK6FwiqzgsOk5MjiF5nB4KJnSpHXeHHd4cJCLj1uajdJlNd2m314Dg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVVXMdsCFqOsqMhc82yEVGJCBHSuJfdZ6ejtVWIHFHLv4PpKIS9bWpmctgvUA"
         },
         {
-          "url": "https://www.masslive.com/celtics/2026/11/celtics-get-fortunate-injury-news-ahead-of-76ers-clash.html",
-          "title": "Celtics get fortunate injury news ahead of 76ers clash",
-          "publisher": "MassLive.com",
+          "url": "https://virginiasports.com/news/2026/11/10/cavaliers-set-to-host-drexel-wednesday-at-jpj",
+          "title": "Cavaliers Set to Host Drexel Wednesday at JPJ",
+          "publisher": "Virginia Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwOZcMkx5l9vJdBZSUzYkES2ctVFMmQTsAlt9i24BMwmhgZTQRn9pCeYJRFic"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCapPhH7JJao9s7LVSkpUzNox50uP-nlbrbYG2UIavVCAJeSIftCK8pmCDDng"
         },
         {
-          "url": "https://www.libertyballers.com/76ers-injury-report/101431/adem-bona-out-joel-embiid-not-listed-on-injury-report-for-sixers-big-tilt-with-boston",
-          "title": "Adem Bona out, Joel Embiid not listed on injury report for Sixers’ big tilt with Boston",
-          "publisher": "Liberty Ballers",
+          "url": "https://www.on3.com/sites/cavs-corner/news/the-3-2-1-ninth-ranked-hoos-start-the-season-with-a-nice-w/",
+          "title": "The 3-2-1: Ninth-ranked Hoos start the season with a nice W",
+          "publisher": "On3",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1PLjzrqa9yI3JF8nAajTAh9K1TQY20TIylkNWjcSG6AifFwC5h-mYlK4S8DA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX_g0vVgFUwZQHQ2geb1qaKqaWhTXm-cl2_JxoivRGgI3_hJyTLLFQA2k3ay4"
         }
       ]
     }
