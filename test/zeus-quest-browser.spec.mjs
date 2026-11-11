@@ -13,6 +13,12 @@ async function fakeBubbles(page,mode='complete'){
   window.addEventListener('message',event=>{
    if(event.origin!==location.origin||event.source!==parent)return;
    const d=event.data;
+   // The real Bubbles child re-acknowledges a new parent's open after iframe
+   // navigation. Fixture must model this, not rely on a stale pre-load ready.
+   if(d?.type==='quantaphi:bubbles:open'){
+    parent.postMessage({type:'quantaphi:bubbles:ready',id:d.id},event.origin);
+    return;
+   }
    if(d?.type!=='quantaphi:bubbles:quest')return;
    document.getElementById('received').textContent=d.prompt;
    const state='${mode}';
