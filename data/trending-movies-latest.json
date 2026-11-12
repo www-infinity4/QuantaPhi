@@ -2,9 +2,21 @@
   "schema_version": 1,
   "source": "Google Trends RSS + publisher trailer RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
-  "checked_at": "2026-11-12T14:33:34.125534Z",
+  "checked_at": "2026-11-12T15:04:37.712776Z",
   "source_note": "Google trending titles are independently matched to source-backed trailer uploads. Other cards are labelled NEW TRAILER, not Google-trending. These are previews, not full movies.",
   "items": [
+    {
+      "id": "1Dwc7lDdKxk",
+      "title": "Children of Blood and Bone",
+      "video_id": "1Dwc7lDdKxk",
+      "video_title": "Children of Blood and Bone Trailer #2 (2027)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-12T14:36:10Z",
+      "source_url": "https://www.youtube.com/watch?v=1Dwc7lDdKxk",
+      "poster": "https://i.ytimg.com/vi/1Dwc7lDdKxk/hqdefault.jpg",
+      "google_trending": false
+    },
     {
       "id": "3zAOhdj9VGU",
       "title": "The Thomas Crown Affair",
