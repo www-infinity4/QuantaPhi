@@ -3,12 +3,327 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T04:01:34.034560Z",
+  "checked_at": "2026-11-12T04:31:14.771580Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "franz wagner",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T04:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/recap/_/gameId/401909964",
+        "https://www.nba.com/watch/video/game-recap-magic-107-kings-100-nov-10",
+        "https://kingsherald.com/articles/magic-107-kings-100-another-beamless-night/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR37Oz7QagCctGbsmrWHTN1GXEPTjmeWus0n6zw6xy74u5ZAboiiK7gKye2Hj0",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/recap/_/gameId/401909964",
+          "title": "Magic 107-100 Kings (Nov 10, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR37Oz7QagCctGbsmrWHTN1GXEPTjmeWus0n6zw6xy74u5ZAboiiK7gKye2Hj0"
+        },
+        {
+          "url": "https://www.nba.com/watch/video/game-recap-magic-107-kings-100-nov-10",
+          "title": "Game Recap: Magic 107, Kings 100 (Nov. 10)",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPew96T8L8Osqy_Ixkk56Z_xF8elS1k47dMU0qCzaojOZYhz_eeWQLwzwJqmw"
+        },
+        {
+          "url": "https://kingsherald.com/articles/magic-107-kings-100-another-beamless-night/",
+          "title": "Magic 107, Kings 100: Another Beamless Night",
+          "publisher": "The Kings Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYM2F7MDvjZQdFse_8PtnABVoSywFzN3zGN3PjavwATJm4ri7ZGtSrMypP_NQ"
+        }
+      ]
+    },
+    {
+      "query": "alperen şengün",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T04:00:00Z",
+      "related_news_urls": [
+        "https://www.denverpost.com/2026/11/10/nuggets-team-plane-delay-mexico-city-jamal-murray-jokic/",
+        "https://www.espn.com/nba/story/_/id/50426497/nuggets-starters-questionable-vs-rockets-plane-delays",
+        "https://www.hoopsrumors.com/2026/11/nuggets-notes-murray-starters-jokic-gordon-derozan-more.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS04x7ijFDykMzkx3eMVeoMLT2WODnJeJH78i0XBNycdWUyho6uxobE792z7JU",
+      "image_credit": "The Denver Post",
+      "news": [
+        {
+          "url": "https://www.denverpost.com/2026/11/10/nuggets-team-plane-delay-mexico-city-jamal-murray-jokic/",
+          "title": "Nuggets offered starters a night off after Mexico City travel fiasco. Led by Jamal Murray, they refused to sit out.",
+          "publisher": "The Denver Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS04x7ijFDykMzkx3eMVeoMLT2WODnJeJH78i0XBNycdWUyho6uxobE792z7JU"
+        },
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50426497/nuggets-starters-questionable-vs-rockets-plane-delays",
+          "title": "Nuggets upgrade starters to probable vs. Rockets after delayed arrival",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTs6l2xsnhT6EkEk-QIuHOJ4XXBBcmrgI1qmJt99IPqi-GApb0o2wO8yp2G9s"
+        },
+        {
+          "url": "https://www.hoopsrumors.com/2026/11/nuggets-notes-murray-starters-jokic-gordon-derozan-more.html",
+          "title": "Nuggets Notes: Murray, Starters, Jokic, Gordon, DeRozan, More",
+          "publisher": "Hoops Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3S8av_OnYGB3l_coZ_bGuJqiHuZqXXmMU-B58-VIKOYxEmVjREIS8_OEsOpI"
+        }
+      ]
+    },
+    {
+      "query": "mlb mvp",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T04:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mlb/story/_/id/50391276/2026-season-awards-mvp-cy-young-al-nl",
+        "https://www.mlb.com/video/2026-mlb-awards-show-251334",
+        "https://www.athleticsnation.com/athletics-news/111185/athletics-news-award-season-continues"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgGODeugcYGYTy_2Y2MY5QSksRzjoJC0-qQzBlIW9QfavcCS5WohVWDxNTadE",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mlb/story/_/id/50391276/2026-season-awards-mvp-cy-young-al-nl",
+          "title": "Who will win MVP? Picks, analysis for 2026 MLB awards week",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgGODeugcYGYTy_2Y2MY5QSksRzjoJC0-qQzBlIW9QfavcCS5WohVWDxNTadE"
+        },
+        {
+          "url": "https://www.mlb.com/video/2026-mlb-awards-show-251334",
+          "title": "2026 MLB Awards Show",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRHdDJeoqIaF5OP9BMF1EeKkbnskA_w7esjthtwwtNVkzwQte-fshzXv9vYQo"
+        },
+        {
+          "url": "https://www.athleticsnation.com/athletics-news/111185/athletics-news-award-season-continues",
+          "title": "Elephant Rumblings: Award Season Continues",
+          "publisher": "Athletics Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRaSBhBlsX8oL6NL2kObGplkXlB8osW8RhREG1nTfj_B8ao3XN9iJm8LiobnJg"
+        }
+      ]
+    },
+    {
+      "query": "eric chen su",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T04:00:00Z",
+      "related_news_urls": [
+        "https://www.sfgate.com/bayarea/article/apple-employee-cupertino-crash-toddler-22526068.php",
+        "https://abc7news.com/post/eric-chen-su-charged-murder-slamming-back-car-100-mph-killing-toddler-riley-howard-apple-hq/20031410/",
+        "https://www.ktvu.com/news/cupertino-apple-worker-speeding-fatal-crash"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3lQzYCL8dmCrOt6dirXuk-A4Bn7XzkPjyMEhPJg5jqqiwPy3fKrfZofdENCI",
+      "image_credit": "SFGATE",
+      "news": [
+        {
+          "url": "https://www.sfgate.com/bayarea/article/apple-employee-cupertino-crash-toddler-22526068.php",
+          "title": "Apple employee faces murder charge in 90 mph crash that killed toddler",
+          "publisher": "SFGATE",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3lQzYCL8dmCrOt6dirXuk-A4Bn7XzkPjyMEhPJg5jqqiwPy3fKrfZofdENCI"
+        },
+        {
+          "url": "https://abc7news.com/post/eric-chen-su-charged-murder-slamming-back-car-100-mph-killing-toddler-riley-howard-apple-hq/20031410/",
+          "title": "Eric Chen Su charged with murder after slamming into back of car at nearly 100 mph killing toddler Riley Howard near Apple HQ",
+          "publisher": "ABC7 Bay Area",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7I3o6C8KSwuKhAZPbJ4aL_P7IWOOEoLEvM-KExPRCyrlXqYlOQS2OQks-kwY"
+        },
+        {
+          "url": "https://www.ktvu.com/news/cupertino-apple-worker-speeding-fatal-crash",
+          "title": "Apple employee drove over 90 mph in Cupertino crash that killed toddler, investigators say",
+          "publisher": "KTVU",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeEQLSnKziPZWlqJZ1fADcjdH3Iw4bRMTBLzRWgiBs0Vt4tDT4egbzN6Srn10"
+        }
+      ]
+    },
+    {
+      "query": "ducks",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T04:00:00Z",
+      "related_news_urls": [
+        "https://www.oregonlive.com/ducks/2026/11/what-is-oregons-clearest-path-to-the-big-ten-championship-game.html",
+        "https://247sports.com/college/oregon/article/cfp-chairman-explains-why-oregon-is-the-highest-ranked-three-loss-team-in-latest-playoff-rankings-292569602/",
+        "https://www.si.com/college/oregon/football/oregon-ducks-ohio-state-buckyes-biggest-winners-losers-college-football-playoff-rankings"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdxSoZFWpmmaYYiNmy_rXbAzNnESFnLJ60cAr2oTdQi0CH03xuEHBKuVoK5IY",
+      "image_credit": "OregonLive.com",
+      "news": [
+        {
+          "url": "https://www.oregonlive.com/ducks/2026/11/what-is-oregons-clearest-path-to-the-big-ten-championship-game.html",
+          "title": "Win out and get help: Oregon's Big Ten championship scenario explained",
+          "publisher": "OregonLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdxSoZFWpmmaYYiNmy_rXbAzNnESFnLJ60cAr2oTdQi0CH03xuEHBKuVoK5IY"
+        },
+        {
+          "url": "https://247sports.com/college/oregon/article/cfp-chairman-explains-why-oregon-is-the-highest-ranked-three-loss-team-in-latest-playoff-rankings-292569602/",
+          "title": "CFP chairman explains why Oregon is the highest-ranked three-loss team in latest playoff rankings",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn_PMM5SokIsKAkZqqDEacTMMzWp08-LSlw5ZcZrinkxMPzVykSqQSQeC2oE8"
+        },
+        {
+          "url": "https://www.si.com/college/oregon/football/oregon-ducks-ohio-state-buckyes-biggest-winners-losers-college-football-playoff-rankings",
+          "title": "Biggest Winners And Losers of College Football Playoff Rankings",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyZsV4nGP3ur0hXA5Sf1yW_exzOARm0RpMJT712ejyCEKNJRz8_eMUkv61VUE"
+        }
+      ]
+    },
+    {
+      "query": "warriors score",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T03:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50439821/warriors-beat-pelicans-51-points-8th-straight-win",
+        "https://www.skysports.com/nba/news/13610478/nba-jimmy-butler-dresses-up-as-coach-and-says-pass-to-steph-as-golden-state-warriors-win-eighth-straight-match",
+        "https://www.nytimes.com/athletic/7769809/2026/11/10/warriors-winning-streak-jimmy-butler-stephen-curry/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfErqk4dCwsZHeniyORuSN84JIu8m29TnTQ6OT3A1NhQO1FMXkWpbhHqWKzfc",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50439821/warriors-beat-pelicans-51-points-8th-straight-win",
+          "title": "Warriors blow out Pelicans by 51 points for 8th straight win",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfErqk4dCwsZHeniyORuSN84JIu8m29TnTQ6OT3A1NhQO1FMXkWpbhHqWKzfc"
+        },
+        {
+          "url": "https://www.skysports.com/nba/news/13610478/nba-jimmy-butler-dresses-up-as-coach-and-says-pass-to-steph-as-golden-state-warriors-win-eighth-straight-match",
+          "title": "NBA: Jimmy Butler dresses up as coach and says 'pass to Steph' as Golden State Warriors win eighth straight match",
+          "publisher": "Sky Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhwEUpO_Gu-V9cNVo-zDCrkCzNMldlfFJRdCTv4JDsYXDY1fl8KHEmt1OWMYc"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7769809/2026/11/10/warriors-winning-streak-jimmy-butler-stephen-curry/",
+          "title": "Warriors’ winning streak hits 8 as Jimmy Butler’s words over coffee seem prescient - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTisHV5I6ELp8Tp98g9Zi9bmCbhjWUi6SJ8FH7JuiGYbqiQIGx09aCk-ipOL7w"
+        }
+      ]
+    },
+    {
+      "query": "kayla harrison",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T03:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mma/story/_/id/50428840/amanda-nunes-kayla-harrison-ufc-rivals",
+        "https://www.ufc.com/news/kayla-harrison-is-primed-and-ready-for-her-dream-fight-polymarket-ufc-334",
+        "https://sports.yahoo.com/articles/ufc-334-kayla-harrison-vs-025642534.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQX5S7ZDqBr4DiK3IzhQqfEfxwEkoQN-BjvTYMVPApCPBqmJye-dI7jdfaKqg0",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mma/story/_/id/50428840/amanda-nunes-kayla-harrison-ufc-rivals",
+          "title": "Inside the tension, suspicion and history behind Amanda Nunes vs. Kayla Harrison",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQX5S7ZDqBr4DiK3IzhQqfEfxwEkoQN-BjvTYMVPApCPBqmJye-dI7jdfaKqg0"
+        },
+        {
+          "url": "https://www.ufc.com/news/kayla-harrison-is-primed-and-ready-for-her-dream-fight-polymarket-ufc-334",
+          "title": "Kayla Harrison Is Primed And Ready For Her Dream Fight",
+          "publisher": "UFC.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_hU8n0FEG_370A2BJ_gwyG4weRf9328MnND_jAs7btsNOk0XF2Q5BSTGqcco"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/ufc-334-kayla-harrison-vs-025642534.html",
+          "title": "UFC 334: Kayla Harrison Vs. Amanda Nunes Odds, Pick, And Prediction",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBJv9XSklOteikOTfHxk0SiE8WK-NiivRhfVJPShoGwi_czsJEvLMG04la7WM"
+        }
+      ]
+    },
+    {
+      "query": "amazing race",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T03:50:00Z",
+      "related_news_urls": [
+        "https://www.northjersey.com/story/news/2026/11/11/who-went-home-amazing-race-tonight-season-39-episode-8/92728314007/",
+        "https://www.annistonstar.com/free/roadblocks-detours-and-pit-stops/article_45e6ed56-2ab3-4b1f-a7df-e677b2860cb6.html",
+        "https://www.yahoo.com/entertainment/tv/articles/amazing-races-doug-dylan-react-185101231.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHbAQZxnlISrBgyg9_C7iq0F2tLhsjSwGFuxEMbUqP1mkrjR2vsvh0bkBag74",
+      "image_credit": "Bergen Record",
+      "news": [
+        {
+          "url": "https://www.northjersey.com/story/news/2026/11/11/who-went-home-amazing-race-tonight-season-39-episode-8/92728314007/",
+          "title": "LIVE: Who was eliminated on 'The Amazing Race' tonight'? Who went home?",
+          "publisher": "Bergen Record",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHbAQZxnlISrBgyg9_C7iq0F2tLhsjSwGFuxEMbUqP1mkrjR2vsvh0bkBag74"
+        },
+        {
+          "url": "https://www.annistonstar.com/free/roadblocks-detours-and-pit-stops/article_45e6ed56-2ab3-4b1f-a7df-e677b2860cb6.html",
+          "title": "Roadblocks, detours and pit stops",
+          "publisher": "The Anniston Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSotrl60boCjRs1N8ifHHCEbjd5p4aTJZbRr_H4Tyrc3CM9dGUKJD8rK4EtJyw"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/amazing-races-doug-dylan-react-185101231.html",
+          "title": "'The Amazing Race's Doug and Dylan React to Controversial U-Turn Penalty — And Reveal the Strategy Behind Their Votes (Exclusive)",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEwvX9v-v0k5PAjkCaXg76yUUWsHdzeAJabNoGhBdsCHNB631VerCSqWCen-w"
+        }
+      ]
+    },
+    {
+      "query": "science fiction",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T03:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/09/books/booker-prize-winner-2026-science-fiction.html",
+        "https://www.economist.com/culture/2026/11/10/civilisation-has-collapsed-in-england-and-other-odd-ideas",
+        "https://www.theguardian.com/books/2026/nov/11/m-john-harrison-booker-prize-winner-sci-fi-alien-invasion-kent"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVoew1k8fdCRdN2_2lDr6WQeYj58s-VAzn7L4LpS-fNvFejXYTDozRYMvxRiA",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/09/books/booker-prize-winner-2026-science-fiction.html",
+          "title": "The Booker Prize Gets Its First ‘Bona Fide’ Science Fiction Winner",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVoew1k8fdCRdN2_2lDr6WQeYj58s-VAzn7L4LpS-fNvFejXYTDozRYMvxRiA"
+        },
+        {
+          "url": "https://www.economist.com/culture/2026/11/10/civilisation-has-collapsed-in-england-and-other-odd-ideas",
+          "title": "Civilisation has collapsed in England, and other odd ideas",
+          "publisher": "The Economist",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsl2uaqGHX_stXHjmO0c06iPTN8KSvRu72POHOAbeTtudv0BGlX0V8EsBjoNk"
+        },
+        {
+          "url": "https://www.theguardian.com/books/2026/nov/11/m-john-harrison-booker-prize-winner-sci-fi-alien-invasion-kent",
+          "title": "‘We are dream-walking into a desperate situation’: the Booker prize winner on his sci-fi alien invasion wakeup call",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3x4bjiFhmc8Yhf_x9DvZhatP45ghOQBv-2C6HxWsxS8QpDfNsd6PAvtIJlG8"
+        }
+      ]
+    },
+    {
       "query": "isaiah hartenstein",
-      "approx_searches": "50000+",
+      "approx_searches": "20000+",
       "published_at": "2026-11-12T03:40:00Z",
       "related_news_urls": [
         "https://www.espn.com/nba/recap/_/gameId/401909965",
@@ -38,321 +353,6 @@
           "publisher": "NBA.com",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAwJWp7bf3YCQiAED25NaKeDHPBRQbJTb3mYgKzyn1uYREPWIcmHwd96YWDC0"
-        }
-      ]
-    },
-    {
-      "query": "dane cook brother",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T03:40:00Z",
-      "related_news_urls": [
-        "https://www.netflix.com/tudum/articles/funny-money-the-dane-cook-story-release-date-news",
-        "https://www.wsj.com/arts-culture/film/the-comedian-who-was-fleeced-to-the-tune-of-12-million-by-his-half-brother-79bea459",
-        "https://people.com/where-is-dane-cook-brother-now-12246857"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRIespd6v6M03qJauQ_NlcSxbK9MKNesIQAoHOrbm8KNkaqu7JJNQB7wAFaLw",
-      "image_credit": "Netflix",
-      "news": [
-        {
-          "url": "https://www.netflix.com/tudum/articles/funny-money-the-dane-cook-story-release-date-news",
-          "title": "What to Know About True Crime Doc Funny Money: The Dane Cook Story",
-          "publisher": "Netflix",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRIespd6v6M03qJauQ_NlcSxbK9MKNesIQAoHOrbm8KNkaqu7JJNQB7wAFaLw"
-        },
-        {
-          "url": "https://www.wsj.com/arts-culture/film/the-comedian-who-was-fleeced-to-the-tune-of-12-million-by-his-half-brother-79bea459",
-          "title": "The Comedian Who Was Fleeced to the Tune of $12 Million by His Half-Brother",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2ly4zOFaXm4leFBa6THS3BTcH9TnLHODc6euxbD0zoVx1yFbrb7JshSKtZV4"
-        },
-        {
-          "url": "https://people.com/where-is-dane-cook-brother-now-12246857",
-          "title": "Where Is Dane Cook’s Brother Now? All About Darryl McCauley’s Life After He Stole $12 Million from the Actor",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREiD6ygS6a6x9xlBXfhz57Bs49CiJgCU4fD1bc3ErThAoJ1CFu7OuCaYRlD9Y"
-        }
-      ]
-    },
-    {
-      "query": "cameron johnson",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T03:40:00Z",
-      "related_news_urls": [
-        "https://www.hjnews.com/sports/nation/nuggets-basketball/image_0c01baa6-eb91-566d-8759-4b22b247e4e1.html",
-        "https://www.couriernews.com/sports/nuggets-basketball/image_c58d3167-9e82-599c-8816-c07f1543e85c.html",
-        "https://www.couriernews.com/sports/nuggets-basketball/image_36fe6c66-7d9a-56f7-ae45-b51d7f8fd8e4.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqEoqWddsVj45gKfU68jj77AX6loDZv9-e9HMA71cI_L0cDy9VujhkaG9cng",
-      "image_credit": "The Herald Journal",
-      "news": [
-        {
-          "url": "https://www.hjnews.com/sports/nation/nuggets-basketball/image_0c01baa6-eb91-566d-8759-4b22b247e4e1.html",
-          "title": "Nuggets Basketball",
-          "publisher": "The Herald Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqEoqWddsVj45gKfU68jj77AX6loDZv9-e9HMA71cI_L0cDy9VujhkaG9cng"
-        },
-        {
-          "url": "https://www.couriernews.com/sports/nuggets-basketball/image_c58d3167-9e82-599c-8816-c07f1543e85c.html",
-          "title": "Nuggets Basketball",
-          "publisher": "couriernews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS000GMLtd3jKu2BLWEu0nRuHanoRYlBWjH_5GX32U-C2wHkkLVlJX0BvjuOhs"
-        },
-        {
-          "url": "https://www.couriernews.com/sports/nuggets-basketball/image_36fe6c66-7d9a-56f7-ae45-b51d7f8fd8e4.html",
-          "title": "Nuggets Basketball",
-          "publisher": "couriernews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRASVnFxC3QPfQ8j_npXSmh3nspsAA7PmE5RzHMUWzE-DHfNi-MdXxdmeHiuc"
-        }
-      ]
-    },
-    {
-      "query": "usc vs california prediction",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T03:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/usc-vs-california-live-updates-022105838.html",
-        "https://www.cbssports.com/prediction/news/usc-vs-cal-odds-predictions-start-time-use-kalshi-promo-code-cbssports55-for-55-bonus-on-nov-11/",
-        "https://writeforcalifornia.com/p/cal-mens-basketball-live-chat-bears-db0?utm_source=substack&utm_medium=email&utm_content=share&action=share"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQg1z8T-zBse_IUtYDodJ818rODFldKETiw887nD6y3NiUjjY8j_crjwVnvKiI",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/usc-vs-california-live-updates-022105838.html",
-          "title": "USC vs California live updates: Score, highlights, and analysis",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQg1z8T-zBse_IUtYDodJ818rODFldKETiw887nD6y3NiUjjY8j_crjwVnvKiI"
-        },
-        {
-          "url": "https://www.cbssports.com/prediction/news/usc-vs-cal-odds-predictions-start-time-use-kalshi-promo-code-cbssports55-for-55-bonus-on-nov-11/",
-          "title": "USC vs. Cal odds, predictions, start time: Use Kalshi promo code CBSSPORTS55 for $55 bonus on Nov. 11",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxPtjLA6i-FIAYImJD0khComNQytnS36SW_B3NtsrJZ_ua0CtU8iAe20YbSwE"
-        },
-        {
-          "url": "https://writeforcalifornia.com/p/cal-mens-basketball-live-chat-bears-db0?utm_source=substack&utm_medium=email&utm_content=share&action=share",
-          "title": "Cal Men’s Basketball Live Chat: Bears host former Pac-12 opponent in #21 USC",
-          "publisher": "Write For California",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzZZOuOrG95LTz-ouN-3O8HCwcJJtiCEvwofw0Z7V9ZP1TXpFlXUfoQ3m1FxI"
-        }
-      ]
-    },
-    {
-      "query": "unruly aircraft passenger",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T03:30:00Z",
-      "related_news_urls": [
-        "https://abc7chicago.com/post/united-airlines-flight-emergency-unruly-passenger-hospitalized-being-removed-plane-tokyo-japan-chicago-ohare/20034439/",
-        "https://www.cbsnews.com/video/unruly-passenger-cabin-flooding-reported-separate-flights-landed-chicago/",
-        "https://www.yahoo.com/news/us/articles/unruly-passenger-hospitalized-being-removed-011052941.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPRH0mY11zlbBIxBmQUSolsB3Xxku1BvOTh8qsr7pCtS0rlifOzGFt3Hnz4Hs",
-      "image_credit": "ABC7 Chicago",
-      "news": [
-        {
-          "url": "https://abc7chicago.com/post/united-airlines-flight-emergency-unruly-passenger-hospitalized-being-removed-plane-tokyo-japan-chicago-ohare/20034439/",
-          "title": "United Airlines flight emergency: Unruly passenger hospitalized after being removed from plane from Tokyo, Japan to Chicago O'Hare",
-          "publisher": "ABC7 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPRH0mY11zlbBIxBmQUSolsB3Xxku1BvOTh8qsr7pCtS0rlifOzGFt3Hnz4Hs"
-        },
-        {
-          "url": "https://www.cbsnews.com/video/unruly-passenger-cabin-flooding-reported-separate-flights-landed-chicago/",
-          "title": "Unruly passenger and cabin flooding reported on 2 separate flights that landed in Chicago",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzkTMIVzr74p7YQMJrSpm7417l5EJmQCGyfAzQRL0KcFXVCzcf2UXIF7I16cg"
-        },
-        {
-          "url": "https://www.yahoo.com/news/us/articles/unruly-passenger-hospitalized-being-removed-011052941.html",
-          "title": "Unruly passenger hospitalized after being removed from United Airlines flight from Japan to Chicago",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKoCnZYXjMqIwkQV8VFRlfbMcanrhb-WtvFXSRtuPEQKWzYGxWxOCtsd2WyP0"
-        }
-      ]
-    },
-    {
-      "query": "luka doncic injury",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T03:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/recap/_/gameId/401909946",
-        "https://www.nba.com/news/starting-5-november-9-2026",
-        "https://sports.yahoo.com/nba/breaking-news/article/luka-doncic-sidelined-for-lakers-pistons-game-due-to-back-tightness-185318322.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHq4Yebku7umf0A2CNSWHJSJrcBbncW0AnGWsYjKU1RCCfSdk6t_VVGaBGTKI",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/recap/_/gameId/401909946",
-          "title": "Lakers 121-116 Pistons (Nov 8, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHq4Yebku7umf0A2CNSWHJSJrcBbncW0AnGWsYjKU1RCCfSdk6t_VVGaBGTKI"
-        },
-        {
-          "url": "https://www.nba.com/news/starting-5-november-9-2026",
-          "title": "Starting 5: What's trending in the East and West",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCd2BDrDSiqG9aBk_DkzJieLy61nRn6ZdSTmIapbPgjPvvnQcJaWLLumn7Tyg"
-        },
-        {
-          "url": "https://sports.yahoo.com/nba/breaking-news/article/luka-doncic-sidelined-for-lakers-pistons-game-due-to-back-tightness-185318322.html",
-          "title": "Luka Dončić sidelined for Lakers-Pistons game due to back tightness",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgSbpt72hA2pV1iWX16x85_IJ6Omh1jirQrmMLGz6yl0JXAMxhOrtLU0j8VOQ"
-        }
-      ]
-    },
-    {
-      "query": "ann lawani",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-12T03:30:00Z",
-      "related_news_urls": [
-        "https://www.nbcbayarea.com/news/local/ann-lawani-ice-detention-usf-professor/4173903/",
-        "https://www.kqed.org/news/12109044/california-lawmaker-calls-for-release-of-usf-nursing-professor-detained-by-ice",
-        "https://sfist.com/2026/11/11/family-colleagues-fight-for-release-of-usf-professor-missing-from-ices-detainee-database/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvkvLg6WjS7WaIS2nsizC05PnyxD80TrrWLl3B0TBO0RnaBgo0RBRf6eZMipA",
-      "image_credit": "NBC Bay Area",
-      "news": [
-        {
-          "url": "https://www.nbcbayarea.com/news/local/ann-lawani-ice-detention-usf-professor/4173903/",
-          "title": "USF professor detained by ICE, sparks outrage and calls for release",
-          "publisher": "NBC Bay Area",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvkvLg6WjS7WaIS2nsizC05PnyxD80TrrWLl3B0TBO0RnaBgo0RBRf6eZMipA"
-        },
-        {
-          "url": "https://www.kqed.org/news/12109044/california-lawmaker-calls-for-release-of-usf-nursing-professor-detained-by-ice",
-          "title": "California Lawmaker Calls for Release of USF Nursing Professor Detained by ICE",
-          "publisher": "KQED",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg0izk6XmEni58y-MSSGgc2qxcRaIpzZ1e03eutuM4gJy5ywDnX0XnTHMoWWU"
-        },
-        {
-          "url": "https://sfist.com/2026/11/11/family-colleagues-fight-for-release-of-usf-professor-missing-from-ices-detainee-database/",
-          "title": "Family, Colleagues Fight For Release of USF Professor Missing From ICE’s Detainee Database",
-          "publisher": "SFist",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQp5qIsPVA2rnrhgNjx4gpGloxCb28mg3wBFaYrJOVtbIROshjbaCVPrYZ3UT8"
-        }
-      ]
-    },
-    {
-      "query": "julius randle",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T03:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/dallas-native-julius-randle-goes-060449729.html",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/julius-randle-records-13-4-4-stat-line-one-block",
-        "https://www.hoopsrumors.com/2026/11/nets-notes-demin-clowney-early-takeaways-brown-rough-start.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNRNI6Gnl97b7wFC0mevwTQf3WY5NHqgPXIQRVxiydqvDiNevLFEqa3jRlGe0",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/dallas-native-julius-randle-goes-060449729.html",
-          "title": "Dallas native Julius Randle goes uncharacteristically quiet for Nets in home return",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNRNI6Gnl97b7wFC0mevwTQf3WY5NHqgPXIQRVxiydqvDiNevLFEqa3jRlGe0"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/julius-randle-records-13-4-4-stat-line-one-block",
-          "title": "Julius Randle records 13/4/4 stat line, one block",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOcfZToqOQV2h2xFS8ESqo2g8QysKkjUjizXlkY22TSf6qdGkA5ST8R3GPvXU"
-        },
-        {
-          "url": "https://www.hoopsrumors.com/2026/11/nets-notes-demin-clowney-early-takeaways-brown-rough-start.html",
-          "title": "Nets Notes: Demin, Clowney, Early Takeaways, Brown, Rough Start",
-          "publisher": "Hoops Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0QSVmQ68Ds34Q5LJY2GZQ-mlRw3g5jCh9BNPe4WoLGXyBiKO_mmN9hAKLJEw"
-        }
-      ]
-    },
-    {
-      "query": "lendeborg",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T03:30:00Z",
-      "related_news_urls": [
-        "https://www.nba.com/news/kia-rookie-ladder-november-11-2026",
-        "https://www.espn.com/espn/betting/story/_/id/50453889/nba-awards-watch-mvp-rookie-year-2026-2027",
-        "https://www.si.com/nba/nba-rookie-of-year-rankings-2-yaxel-lendeborg-surges-up-list"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxMhum203fssP1C8b_GdY_KHyeB-eo_s-qrBs0L6rBMMXdi-aBEjm-ynjvKeA",
-      "image_credit": "NBA.com",
-      "news": [
-        {
-          "url": "https://www.nba.com/news/kia-rookie-ladder-november-11-2026",
-          "title": "Kia Rookie Ladder: Yaxel Lendeborg climbs to No. 1 in latest Top 10",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxMhum203fssP1C8b_GdY_KHyeB-eo_s-qrBs0L6rBMMXdi-aBEjm-ynjvKeA"
-        },
-        {
-          "url": "https://www.espn.com/espn/betting/story/_/id/50453889/nba-awards-watch-mvp-rookie-year-2026-2027",
-          "title": "NBA awards watch: The latest on the MVP, Rookie of the Year and other races",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvhVX7v7zALnl_DTZDRLS0yBMeAa0hy1DM-WtNFR37prdJLO-11Dl64IeZZp0"
-        },
-        {
-          "url": "https://www.si.com/nba/nba-rookie-of-year-rankings-2-yaxel-lendeborg-surges-up-list",
-          "title": "NBA Rookie of the Year Rankings 2.0: Yaxel Lendeborg Surges Up the List",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLtXnpY537MLf_RpXfGZ5YxHrpuTb5zbeecFy3q1Hqflw-_mc_fcA8bYCXxD4"
-        }
-      ]
-    },
-    {
-      "query": "michael porter jr.",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T03:30:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/articles/dang-near-cheating-michael-porter-194500065.html",
-        "https://www.complex.com/sports/a/markelibert/michael-porter-jr-girlfriend-nightlife-cheating",
-        "https://theshadowleague.com/michael-porter-jr-brooklyn-nets-girlfriend-cant-go-out-cheating/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6KRBrOk6zbSjbIFsCbiQC4cpv9LdcyGrstIXzNrC-Jd0_NlFMjN-9qlNsg-0",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/dang-near-cheating-michael-porter-194500065.html",
-          "title": "‘Dang near cheating’ – Michael Porter Jr.’s wild dating rule goes viral again",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6KRBrOk6zbSjbIFsCbiQC4cpv9LdcyGrstIXzNrC-Jd0_NlFMjN-9qlNsg-0"
-        },
-        {
-          "url": "https://www.complex.com/sports/a/markelibert/michael-porter-jr-girlfriend-nightlife-cheating",
-          "title": "Michael Porter Jr. Says Girlfriend Going to Clubs Is 'Dang Near Cheating' and Grounds for Breakup",
-          "publisher": "Complex",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0phWRJlClxixm9cIM716g9CTy9hAiPkM60aEjKkTdyPovVN056vp0b4loppE"
-        },
-        {
-          "url": "https://theshadowleague.com/michael-porter-jr-brooklyn-nets-girlfriend-cant-go-out-cheating/",
-          "title": "'He Wants a Pet': Michael Porter Jr. Gives Fans Creepy Vibes For Saying He'll Break Up With His Girlfriend For Going Out To Party",
-          "publisher": "The Shadow League",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEzD1xetHaCBpNSGSGo9dIy_zKfnkx3XiyeAE3F1ommAmBQjF-SQrx4Db2hTg"
         }
       ]
     }
