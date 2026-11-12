@@ -72,6 +72,15 @@ test('yellow extraction exactly routes to blue pending import without inventing 
  const raw='  Verbatim original wording.\nLine two has extra spacing.  ';
  await first(page,'textarea[aria-label="Write a task or paste the exact extract"]').fill(raw);
  await first(page,'input[aria-label="Source reference (required for yellow extraction)"]').fill('Original owner note #22');
+ const formBefore=await page.locator('#zeusSessionHistory .zeus-history-form').evaluate(form=>({
+  valid:form.checkValidity(),
+  selected:form.querySelector('select')?.value,
+  text:form.querySelector('textarea')?.value,
+  source:form.querySelector('input')?.value,
+  submitType:form.querySelector('button')?.type,
+  submitDisabled:form.querySelector('button')?.disabled
+ }));
+ console.log('Zeus extraction before add:',JSON.stringify(formBefore));
  await page.getByRole('button',{name:'Add work to this session'}).click();
  const observed=await page.locator('#zeusSessionHistory').evaluate(root=>({
   notice:root.querySelector('.zeus-history-notice')?.textContent,
@@ -95,7 +104,17 @@ test('unsent local project title survives a tracker redraw and creates exactly o
  await page.goto(base+'/coliseum/',{waitUntil:'domcontentloaded'});
  const selector='input[aria-label="New project or topic title"]';
  await first(page,selector).fill('Initial science project');
+ console.log('Zeus initial title before create:',JSON.stringify(await page.locator('#zeusSessionHistory').evaluate(root=>({
+  value:root.querySelector('input[aria-label="New project or topic title"]')?.value,
+  draft:sessionStorage.getItem('infinity:zeus-project-title-draft:v1')
+ }))));
  await page.getByRole('button',{name:'Create project thread'}).click();
+ console.log('Zeus initial title after create:',JSON.stringify(await page.locator('#zeusSessionHistory').evaluate(root=>({
+  value:root.querySelector('input[aria-label="New project or topic title"]')?.value,
+  notice:root.querySelector('.zeus-history-notice')?.textContent,
+  count:root.querySelectorAll('.zeus-thread').length,
+  draft:sessionStorage.getItem('infinity:zeus-project-title-draft:v1')
+ }))));
  await expect(first(page,'.zeus-current-head')).toContainText('Initial science project');
  await first(page,selector).fill('Source extraction with exact whitespace');
  // A page refresh and a local-history redraw must both preserve this unsent title.
