@@ -79,7 +79,7 @@ if(arena){
   const title=field('New project or topic title');title.required=true;title.minLength=3;title.maxLength=90;
   title.value=projectTitleDraft;
   title.addEventListener('input',()=>{projectTitleDraft=title.value;persistProjectTitle()});
-  const add=el('button','primary','Create project thread');add.type='submit';form.append(title,add);
+  const add=el('button','primary','Create project thread');add.type='button';form.append(title,add);
   const createProjectThread=()=>{
    // A different history action may redraw the form after the visitor typed.
    // Use the last edited draft rather than submitting a newly blank field.
@@ -91,10 +91,13 @@ if(arena){
    // Clear only after the local write succeeds; a failed save keeps the draft.
    if(created){projectTitleDraft='';persistProjectTitle();const next=side.querySelector('.zeus-history-new input');if(next)next.value='';}
   };
-  // Prevent any browser-native navigation from a tap or Enter even if a form
-  // submit listener is delayed or another script's handler intervenes.
+  // Prevent implicit browser submission from racing the saved title draft.
+  // Enter and button activation take the same single explicit path.
   add.addEventListener('click',e=>{e.preventDefault();createProjectThread()});
-  form.addEventListener('submit',e=>{e.preventDefault();createProjectThread()});
+  title.addEventListener('keydown',e=>{
+   if(e.key==='Enter'&&!e.isComposing){e.preventDefault();createProjectThread()}
+  });
+  form.addEventListener('submit',e=>e.preventDefault());
   side.append(form);
   const list=el('div','zeus-history-threads');
   if(!history.threads.length)list.append(el('p','', 'No local threads yet. Create one above.'));
