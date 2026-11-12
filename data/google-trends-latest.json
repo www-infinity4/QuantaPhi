@@ -3,41 +3,251 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T17:01:37.707778Z",
+  "checked_at": "2026-11-12T17:31:01.838403Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "weather nyc",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-12T16:40:00Z",
+      "query": "uefa nations league schedule",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T17:10:00Z",
       "related_news_urls": [
-        "https://weather.com/2026/11/11/forecast/regional/noreaster-first-snow-frost-freeze",
-        "https://www.cnn.com/2026/11/10/weather/winter-storm-eastern-us-cold-snap-climate",
-        "https://www.democratandchronicle.com/story/weather/2026/11/12/ny-snow-forecast-winter-weather-advisories/92738398007/"
+        "https://www.uefa.com/uefanationsleague/news/02ab-220793bfb8a3-00d5842942af-1000--uefa-nations-league-matchday-5-preview-harry-kane-set-for-en/",
+        "https://www.dazn.com/en-GB/news/football/nations-league-tips-best-bets-and-predictions-preview-portugal-denmark-norway-dbn/cuso2p5dnmjd155efl7uo316s",
+        "https://www.voiceofemirates.com/en/sport/2026/11/12/todays-matches-and-broadcast-channels-strong-clashes-in-the-uefa-nations-league-2/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMy9uLSr89MhzOJ122OHTxXsuw0FTzb6mHjtpXVQ-PsbwCAcqsRf-khrtEi4s",
-      "image_credit": "The Weather Channel",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbNcmnjOSzrLZnQBin5C4ruYLpEBOBRSbE5okgCqCEqw_AQdIM-ozDjsRv-g",
+      "image_credit": "UEFA.com",
       "news": [
         {
-          "url": "https://weather.com/2026/11/11/forecast/regional/noreaster-first-snow-frost-freeze",
-          "title": "Nor’easter ahead: Here’s who has the best chance of accumulating snow",
-          "publisher": "The Weather Channel",
+          "url": "https://www.uefa.com/uefanationsleague/news/02ab-220793bfb8a3-00d5842942af-1000--uefa-nations-league-matchday-5-preview-harry-kane-set-for-en/",
+          "title": "UEFA Nations League Matchday 5 preview: Harry Kane set for England landmark as Spain and Portugal protect perfect records",
+          "publisher": "UEFA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMy9uLSr89MhzOJ122OHTxXsuw0FTzb6mHjtpXVQ-PsbwCAcqsRf-khrtEi4s"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbNcmnjOSzrLZnQBin5C4ruYLpEBOBRSbE5okgCqCEqw_AQdIM-ozDjsRv-g"
         },
         {
-          "url": "https://www.cnn.com/2026/11/10/weather/winter-storm-eastern-us-cold-snap-climate",
-          "title": "First snow, coldest air in months headed for eastern US in wake of storm",
-          "publisher": "CNN",
+          "url": "https://www.dazn.com/en-GB/news/football/nations-league-tips-best-bets-and-predictions-preview-portugal-denmark-norway-dbn/cuso2p5dnmjd155efl7uo316s",
+          "title": "Nations League tips, best bets and predictions: 5 shouts for Saturday's fixtures",
+          "publisher": "DAZN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqC6EOp1YiPHPORrWNUfiYh9gQeROWIhiduA-uukJZela4psUWma8JQazT7GU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCxoeo6a_h9rVZWcCmt778_PCtwMOwGDClsvBxnxw3SC4VHnoMbskoO5F5sZM"
         },
         {
-          "url": "https://www.democratandchronicle.com/story/weather/2026/11/12/ny-snow-forecast-winter-weather-advisories/92738398007/",
-          "title": "Up to 5 inches of snow possible in parts of NY. See where",
-          "publisher": "Democrat and Chronicle",
+          "url": "https://www.voiceofemirates.com/en/sport/2026/11/12/todays-matches-and-broadcast-channels-strong-clashes-in-the-uefa-nations-league-2/",
+          "title": "Today’s matches and broadcast channels: Strong clashes in the UEFA Nations League",
+          "publisher": "صوت الإمارات",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_xaw_0LoZFcrHu4iLtW8G-AjYarERPvMDuw41f1iIC0LEIk7kFIrXfsatfH0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFE-MoCXRZgIXPXFZnmVBfSqzWZPmTGb9cpJ72Q2I-9GxuSWDv1x364HV_oHA"
+        }
+      ]
+    },
+    {
+      "query": "sabrina carpenter",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T17:00:00Z",
+      "related_news_urls": [
+        "https://www.billboard.com/music/music-news/sabrina-carpenter-johnnie-walker-damien-chazelle-ad-1236378794/",
+        "https://www.creativeboom.com/news/this-french-new-wave-take-on-sabrina-carpenter-is-genius-in-a-bottle/",
+        "https://www.adweek.com/creativity/sabrina-carpenter-swaps-espresso-for-whisky-in-damien-chazelles-johnnie-walker-holiday-ad/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThVeTHmYb-t62KVJRd5gq9lo12ZA-LtHG7EnsAWhYPqnVfZNwMNYPRopDnais",
+      "image_credit": "Billboard",
+      "news": [
+        {
+          "url": "https://www.billboard.com/music/music-news/sabrina-carpenter-johnnie-walker-damien-chazelle-ad-1236378794/",
+          "title": "Sabrina Carpenter Teams Up With ‘La La Land’ Director for ‘Playful, Unexpected’ Whiskey Campaign",
+          "publisher": "Billboard",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThVeTHmYb-t62KVJRd5gq9lo12ZA-LtHG7EnsAWhYPqnVfZNwMNYPRopDnais"
+        },
+        {
+          "url": "https://www.creativeboom.com/news/this-french-new-wave-take-on-sabrina-carpenter-is-genius-in-a-bottle/",
+          "title": "Damien Chazelle's French New Wave ad for Sabrina Carpenter",
+          "publisher": "Creative Boom",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJeh213uUqvR-pyvJW15BZr3fBYdnUVlkevSW0oApaNKZ1I8HY5_VU3gZ-Oxc"
+        },
+        {
+          "url": "https://www.adweek.com/creativity/sabrina-carpenter-swaps-espresso-for-whisky-in-damien-chazelles-johnnie-walker-holiday-ad/",
+          "title": "Sabrina Carpenter Swaps Espresso for Whisky in Damien Chazelle’s Johnnie Walker Ad",
+          "publisher": "ADWEEK",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_4wg0edAuuPKe3xSPWdBxlGYvlmngvlqjk28TB5S54RtgO9NEwSA5e6jHTXg"
+        }
+      ]
+    },
+    {
+      "query": "smci stock",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T17:00:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/super-micro-computer-stocks-fall-192505738.html",
+        "https://www.marketwatch.com/livecoverage/nvidia-ceo-jensen-huang-stock-board/card/super-micro-s-stock-is-falling-even-harder-than-nvidia-s-aYKozGC9FYUDj08TkQ1o?mod=mw_robin",
+        "https://www.barchart.com/story/news/8775967/super-micro-computer-q1-earnings-had-plenty-to-cheer-and-plenty-to-worry-about"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/super-micro-computer-stocks-fall-192505738.html",
+          "title": "Super Micro Computer Stocks Fall 2.01% as Cash Drain Shadows Fourfold Sales Jump",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM"
+        },
+        {
+          "url": "https://www.marketwatch.com/livecoverage/nvidia-ceo-jensen-huang-stock-board/card/super-micro-s-stock-is-falling-even-harder-than-nvidia-s-aYKozGC9FYUDj08TkQ1o?mod=mw_robin",
+          "title": "Super Micro's stock is falling even harder than Nvidia's",
+          "publisher": "MarketWatch",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKJ877SUpMJOMix3Rnsv97axEJsLat5z99JCYBc3JNqx5EIZB7WTEvVZjlKis"
+        },
+        {
+          "url": "https://www.barchart.com/story/news/8775967/super-micro-computer-q1-earnings-had-plenty-to-cheer-and-plenty-to-worry-about",
+          "title": "Super Micro Computer: Q1 Earnings Had Plenty to Cheer and Plenty to Worry About",
+          "publisher": "Barchart.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2HmijAKHbRg1xPE_T0NBlZD3YFuhVyr-ZLYMRfmK38Rjkz8BEXlSD9li_uHg"
+        }
+      ]
+    },
+    {
+      "query": "costco stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T17:00:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/costco-cost-declares-30-special-111021357.html",
+        "https://www.barchart.com/story/news/8786248/cost-stock-alert-what-to-know-as-costco-issues-30-special-dividend",
+        "https://www.barrons.com/articles/costco-stock-special-dividend-dc9dc159"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlfj3BLcFEcZGjftzsCKv8Nef2iSgMa9AnCErlCUNB85ukPL-trGH0ns52d_s",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/costco-cost-declares-30-special-111021357.html",
+          "title": "Costco (COST) Declares $30 Special Dividend And Reauthorizes $4 Billion Buyback",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlfj3BLcFEcZGjftzsCKv8Nef2iSgMa9AnCErlCUNB85ukPL-trGH0ns52d_s"
+        },
+        {
+          "url": "https://www.barchart.com/story/news/8786248/cost-stock-alert-what-to-know-as-costco-issues-30-special-dividend",
+          "title": "COST Stock Alert: What to Know as Costco Issues $30 Special Dividend",
+          "publisher": "Barchart.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKHAnPgz3leB3UhP-LE_fborUVovmW7avAwa0a7aUYUFyDHF0QA8aIryIcTpo"
+        },
+        {
+          "url": "https://www.barrons.com/articles/costco-stock-special-dividend-dc9dc159",
+          "title": "Costco’s Special Dividend Is Just One Reason It’s a Good Place to Shelter From AI Chaos",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRunrRHXGo7kGAjOgvaApu_HYGT_E5pj4ZSGv5tXVmG3BFE6dnfsnR_yKzlnTY"
+        }
+      ]
+    },
+    {
+      "query": "barcelona - arsenal",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-12T16:50:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/articles/c5vg23nmgp2yo",
+        "https://www.theguardian.com/football/live/2026/nov/12/barcelona-v-arsenal-womens-champions-league-live",
+        "https://sports.yahoo.com/articles/barcelona-arsenal-surprises-both-starting-170400981.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzgB01XANCZsA6CjR2FWTyNXVjexkJVqk_JuhTpbcCWwGTOGctP7V-UG9M35s",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/articles/c5vg23nmgp2yo",
+          "title": "Barcelona v Arsenal: How 'Barca way' continues despite big-name exits",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzgB01XANCZsA6CjR2FWTyNXVjexkJVqk_JuhTpbcCWwGTOGctP7V-UG9M35s"
+        },
+        {
+          "url": "https://www.theguardian.com/football/live/2026/nov/12/barcelona-v-arsenal-womens-champions-league-live",
+          "title": "Barcelona v Arsenal: Women’s Champions League – live",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQND6-S9HpVYnc6s-zPXVr-j4VQvYx4cuLu33mlDw0mqlG23YovIlfYvcT9BVc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/barcelona-arsenal-surprises-both-starting-170400981.html",
+          "title": "🚨 Barcelona-Arsenal: surprises in both starting line-ups",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpt-1IY9-71Z9u-3PskSX8tLoAMwr01WC7asWyJft1uN3iyynuWO902nKLmgc"
+        }
+      ]
+    },
+    {
+      "query": "freeze watch",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T16:50:00Z",
+      "related_news_urls": [
+        "https://www.charlotteobserver.com/news/weather-news/article318042936.html",
+        "https://www.wbtv.com/2026/11/12/routine-freeze-warnings-end-charlotte-region-season-heres-why/",
+        "https://www.wyff4.com/article/first-winter-blast-cold-air-snow-possible/74404633"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaoqAhWlL6_ElvBGjBLsKabdSDVldYZQZAiZ8RiXrbEESnp3yudz_DHbPNoZc",
+      "image_credit": "Charlotte Observer",
+      "news": [
+        {
+          "url": "https://www.charlotteobserver.com/news/weather-news/article318042936.html",
+          "title": "‘Widespread freeze’ expected for Charlotte this weekend. How low will it get?",
+          "publisher": "Charlotte Observer",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaoqAhWlL6_ElvBGjBLsKabdSDVldYZQZAiZ8RiXrbEESnp3yudz_DHbPNoZc"
+        },
+        {
+          "url": "https://www.wbtv.com/2026/11/12/routine-freeze-warnings-end-charlotte-region-season-heres-why/",
+          "title": "Routine freeze warnings end for Charlotte region for the season: Here’s why",
+          "publisher": "WBTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvf5126ff-viF2YnBPWLS_VkxilTIyZELzZmGCwHr8KOttloXDAK0FN0FUXlU"
+        },
+        {
+          "url": "https://www.wyff4.com/article/first-winter-blast-cold-air-snow-possible/74404633",
+          "title": "Cold blast will reach much of the East Coast this week",
+          "publisher": "WYFF",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDgswTLjjGg6oap8aJU6SMgDcuoeeQG9P-gzy9qhvGH2gbKgm8rEofaFhdBZI"
+        }
+      ]
+    },
+    {
+      "query": "ast spacemobile at&t verizon partnership",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T16:50:00Z",
+      "related_news_urls": [
+        "https://www.phonearena.com/news/ast-spacemobile-d2d-launch-at-t-verizon_id184752",
+        "https://maketecheasier.com/att-ast-spacemobile-satellite-handoff/",
+        "https://cyprusshippingnews.com/2026/11/09/atamp-t-and-ast-spacemobile-engineering-the-connected-world-one-handoff-at-a-time/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI_B1juy3FmCFcmjIMs77wtZQCl8uasgPQ5_llDXKzGwfQAnkDNWLRXnsQ9MU",
+      "image_credit": "PhoneArena",
+      "news": [
+        {
+          "url": "https://www.phonearena.com/news/ast-spacemobile-d2d-launch-at-t-verizon_id184752",
+          "title": "AT&T and Verizon users will soon get a taste of what it's been like for T-Mobile customers",
+          "publisher": "PhoneArena",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI_B1juy3FmCFcmjIMs77wtZQCl8uasgPQ5_llDXKzGwfQAnkDNWLRXnsQ9MU"
+        },
+        {
+          "url": "https://maketecheasier.com/att-ast-spacemobile-satellite-handoff/",
+          "title": "At 8:15 a.m. PT on 21 October 2026, outside Granite Falls, Washington, AT&T handed a connection on an everyday smartphone from its ground cellular network to an AST SpaceMobile sat",
+          "publisher": "Make Tech Easier",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTp59h7t_R_OHpKE3MgDocsOYM1R2G_UJuWx945xNXlK6j2_5SvLKejFO36Mag"
+        },
+        {
+          "url": "https://cyprusshippingnews.com/2026/11/09/atamp-t-and-ast-spacemobile-engineering-the-connected-world-one-handoff-at-a-time/",
+          "title": "AT&T and AST SpaceMobile engineering the connected world, one handoff at a time",
+          "publisher": "Cyprus Shipping News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2KD0Ge4R0yRXv-vGEoS7-PuKu424KHN8d1-1uGKYQv-AIjeh7pqk50WTX5FY"
         }
       ]
     },
@@ -82,8 +292,8 @@
       "published_at": "2026-11-12T16:30:00Z",
       "related_news_urls": [
         "https://www.npr.org/2026/11/12/nx-s1-6031461/kennedy-center-ticketmaster-conflict-of-interest",
-        "https://www.iowapublicradio.org/news-from-npr/2026-11-12/kennedy-center-plans-ticketmaster-switch-raising-conflict-of-interest-concerns",
-        "https://www.wvia.org/news/2026-11-12/kennedy-center-plans-ticketmaster-switch-raising-conflict-of-interest-concerns"
+        "https://www.npr.org/2026/11/12/nx-s1-6031461/kennedy-center-plans-ticketmaster-switch-raising-conflict-of-interest-concerns",
+        "https://www.iowapublicradio.org/news-from-npr/2026-11-12/kennedy-center-plans-ticketmaster-switch-raising-conflict-of-interest-concerns"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToNGO8eY-5JKk04UsJ-Tn4taO2nSGBDkmZv7Mix4qsLyjzGQs_6ZrIXOACqng",
       "image_credit": "NPR",
@@ -96,16 +306,16 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToNGO8eY-5JKk04UsJ-Tn4taO2nSGBDkmZv7Mix4qsLyjzGQs_6ZrIXOACqng"
         },
         {
+          "url": "https://www.npr.org/2026/11/12/nx-s1-6031461/kennedy-center-plans-ticketmaster-switch-raising-conflict-of-interest-concerns",
+          "title": "Kennedy Center plans Ticketmaster switch, raising conflict of interest concerns",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": null
+        },
+        {
           "url": "https://www.iowapublicradio.org/news-from-npr/2026-11-12/kennedy-center-plans-ticketmaster-switch-raising-conflict-of-interest-concerns",
           "title": "Kennedy Center plans Ticketmaster switch, raising conflict of interest concerns",
           "publisher": "Iowa Public Radio",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRn1nM62YpHbM84Jw_5nzjZBBaepP5KV8MgLmzQh1rphbnfPK-j274ualQVfUU"
-        },
-        {
-          "url": "https://www.wvia.org/news/2026-11-12/kennedy-center-plans-ticketmaster-switch-raising-conflict-of-interest-concerns",
-          "title": "Kennedy Center plans Ticketmaster switch, raising conflict of interest concerns",
-          "publisher": "WVIA Public Media",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRn1nM62YpHbM84Jw_5nzjZBBaepP5KV8MgLmzQh1rphbnfPK-j274ualQVfUU"
         }
@@ -116,243 +326,33 @@
       "approx_searches": "2000+",
       "published_at": "2026-11-12T16:30:00Z",
       "related_news_urls": [
-        "https://www.5newsonline.com/article/news/politics/governor-sanders-national-book-tour-raises-criticism-minimum-wage-remark/527-5fff2fbc-66c3-4ba0-a5e5-e054fe7ae83f",
-        "https://www.yahoo.com/news/politics/articles/arkansas-gov-sarah-huckabee-sanders-214345017.html",
-        "https://arktimes.com/arkansas-blog/2026/11/09/gov-sarah-sanders-tries-on-her-post-trump-politics-on-the-view"
+        "https://ew.com/the-view-begins-whoopi-goldberg-birthday-episode-with-star-missing-from-hot-topics-table-12250702",
+        "https://www.the-independent.com/arts-entertainment/tv/news/whoopi-goldberg-the-view-democrats-midterms-b3082862.html",
+        "https://www.tvinsider.com/1302712/the-view-whoopi-goldberg-message-pete-hegseth-democrat-party-leadership-fight/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlvzQpcXgXDH_h-dDUIdzJtsuw1BEvGTTmcoNNK_LqwiQUtSqAqLjZzdVMeSE",
-      "image_credit": "5newsonline.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5WN7fAgeI2t4YAV8HGHP_3qbpTVghhH1MFlVlpcO_2kupyvMpMV2G49O5Heg",
+      "image_credit": "Entertainment Weekly",
       "news": [
         {
-          "url": "https://www.5newsonline.com/article/news/politics/governor-sanders-national-book-tour-raises-criticism-minimum-wage-remark/527-5fff2fbc-66c3-4ba0-a5e5-e054fe7ae83f",
-          "title": "Governor Sanders' national book tour raises criticism over minimum wage remark",
-          "publisher": "5newsonline.com",
+          "url": "https://ew.com/the-view-begins-whoopi-goldberg-birthday-episode-with-star-missing-from-hot-topics-table-12250702",
+          "title": "Whoopi Goldberg’s birthday episode of ‘The View’ began without star at Hot Topics table",
+          "publisher": "Entertainment Weekly",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlvzQpcXgXDH_h-dDUIdzJtsuw1BEvGTTmcoNNK_LqwiQUtSqAqLjZzdVMeSE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5WN7fAgeI2t4YAV8HGHP_3qbpTVghhH1MFlVlpcO_2kupyvMpMV2G49O5Heg"
         },
         {
-          "url": "https://www.yahoo.com/news/politics/articles/arkansas-gov-sarah-huckabee-sanders-214345017.html",
-          "title": "Arkansas Gov. Sarah Huckabee Sanders gets basic information about her state wrong during “The View ”interview",
-          "publisher": "Yahoo",
+          "url": "https://www.the-independent.com/arts-entertainment/tv/news/whoopi-goldberg-the-view-democrats-midterms-b3082862.html",
+          "title": "Whoopi Goldberg scolds Democrats with blunt rebuke on The View",
+          "publisher": "The Independent",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ2jexRKxTmPrhcL7fq6km7vBP4ZpEGoiqU_QmidaABepO0Z5q_9BHcMItew4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbZELV3z8KVOcFXZ9TSpctDT0zppIXngoj0OcKwPmDty5-Ro3zVtOVm1_LHEY"
         },
         {
-          "url": "https://arktimes.com/arkansas-blog/2026/11/09/gov-sarah-sanders-tries-on-her-post-trump-politics-on-the-view",
-          "title": "Gov. Sarah Sanders tries on her post-Trump politics on ‘The View’",
-          "publisher": "Arkansas Times",
+          "url": "https://www.tvinsider.com/1302712/the-view-whoopi-goldberg-message-pete-hegseth-democrat-party-leadership-fight/",
+          "title": "Whoopi Goldberg Speaks Directly to Pete Hegseth & Democrats on ‘The View’",
+          "publisher": "TV Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_bSPO4wG8Kgyd6DSKcU03ZyobIgbyKoH9DU4jNVAcRRUa-tIYce__Aj3Gers"
-        }
-      ]
-    },
-    {
-      "query": "armenia vs cyprus",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T16:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/watch-armenia-vs-cyprus-uefa-160000045.html",
-        "https://www.bbc.com/sport/football/live/ckgj93g2l19dt",
-        "https://www.sportsmole.co.uk/football/armenia/uefa-nations-league/preview/armenia-vs-cyprus-prediction-team-news-lineups_608879.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5BJKiPAN8yrOzLaQ-wH7NeXOtpsfP6BguLKJos9nd9GMexOClcJzVdbfOqq8",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/watch-armenia-vs-cyprus-uefa-160000045.html",
-          "title": "How to watch Armenia vs. Cyprus: UEFA Nations League live stream, TV channel, start time",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5BJKiPAN8yrOzLaQ-wH7NeXOtpsfP6BguLKJos9nd9GMexOClcJzVdbfOqq8"
-        },
-        {
-          "url": "https://www.bbc.com/sport/football/live/ckgj93g2l19dt",
-          "title": "Armenia vs Cyprus: UEFA Nations League stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
-        },
-        {
-          "url": "https://www.sportsmole.co.uk/football/armenia/uefa-nations-league/preview/armenia-vs-cyprus-prediction-team-news-lineups_608879.html",
-          "title": "Preview: Armenia vs Cyprus - prediction, team news, lineups",
-          "publisher": "Sports Mole",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTY18TF5qhGDLFXTB0dFvHsRwQMHahlJoArVFAf7VRb4wszLgw1M-2RWILYp5Y"
-        }
-      ]
-    },
-    {
-      "query": "robert f. kennedy jr.",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T16:20:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/us-news/2026/nov/12/senate-investigation-rfk-jr-measles-samoa",
-        "https://apnews.com/article/samoa-rfk-jr-senate-investigation-measles-vaccines-e4b97becad6d2951d9e84ea584979c41",
-        "https://www.forbes.com/sites/zacharyfolk/2026/11/11/democrats-probe-private-security-consultant-gavin-de-becker-after-he-gave-rfk-jr-hundreds-of-thousands-in-gifts/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0UJLsLgTxr5MXHIIuw9z6gMq8kyfLFsF8A_DdANpP6nSkgdPT5hhacjUSobo",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/us-news/2026/nov/12/senate-investigation-rfk-jr-measles-samoa",
-          "title": "Senator opens investigation into evidence RFK Jr ‘unlawfully lied’ to Congress",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0UJLsLgTxr5MXHIIuw9z6gMq8kyfLFsF8A_DdANpP6nSkgdPT5hhacjUSobo"
-        },
-        {
-          "url": "https://apnews.com/article/samoa-rfk-jr-senate-investigation-measles-vaccines-e4b97becad6d2951d9e84ea584979c41",
-          "title": "Senators probing RFK Jr.'s testimony on Samoa trip after AP and Guardian showed documents refute it",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpN30z71naZQWnpyki9yLo_e3JBfSJvsgICuxLNd_hKdUZD7CTTNtahbXF_mE"
-        },
-        {
-          "url": "https://www.forbes.com/sites/zacharyfolk/2026/11/11/democrats-probe-private-security-consultant-gavin-de-becker-after-he-gave-rfk-jr-hundreds-of-thousands-in-gifts/",
-          "title": "Democrats Probe Private Security Consultant Gavin De Becker—After He Gave RFK Jr. Hundreds Of Thousands In Gifts",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0cK4OL4QjMCKxUZMcXXfVbT-29Slk836nGvWEt6SdvmvXqrIV5-XjsDihbs4"
-        }
-      ]
-    },
-    {
-      "query": "türkiye vs belgium",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-12T16:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/watch-turkey-vs-belgium-uefa-160000282.html",
-        "https://www.oregonlive.com/tv/2026/11/how-to-watch-turkey-vs-belgium-nations-league-soccer-today-where-to-stream-live-betting-lines.html",
-        "https://www.reutersconnect.com/item/turkish-national-football-team-arrives-in-izmir-ahead-of-belgium-match/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUFOQURMMDAwQU5HSUZV"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTecdfQL9CGjPNfaKIyyyZXlj_btrilbKqLMora6N9z01gss7ud6Ezg70ImuWw",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/watch-turkey-vs-belgium-uefa-160000282.html",
-          "title": "How to watch Turkey vs Belgium: UEFA Nations League live stream, TV channel, start time",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTecdfQL9CGjPNfaKIyyyZXlj_btrilbKqLMora6N9z01gss7ud6Ezg70ImuWw"
-        },
-        {
-          "url": "https://www.oregonlive.com/tv/2026/11/how-to-watch-turkey-vs-belgium-nations-league-soccer-today-where-to-stream-live-betting-lines.html",
-          "title": "How to watch Turkey vs. Belgium Nations League soccer today: Where to stream live, betting lines",
-          "publisher": "OregonLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1iWdHmViYzj-f6tNiBaDuPFk_qJPFkWYMa-ZYrTcICp3eXez7kKTrUMOzcI0"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/turkish-national-football-team-arrives-in-izmir-ahead-of-belgium-match/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUFOQURMMDAwQU5HSUZV",
-          "title": "Licensable picture: Turkish national football team arrives in Izmir ahead of Belgium match",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6Z4-MF12YM6hzUptT8GLP681J6aU-tCNgwkJEAA5OELmHBS5VFWEOhwT61HQ"
-        }
-      ]
-    },
-    {
-      "query": "turquía - bélgica",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-12T16:10:00Z",
-      "related_news_urls": [
-        "https://www.sportytrader.es/pronosticos/turquia-belgica-386158/",
-        "https://onefootball.com/es/noticias/turquia-belgica-los-turcos-quieren-volver-a-ganar-ante-los-suyos-43764381",
-        "https://www.sofascore.com/es/news/previa-turkiye-vs-belgica-forma-cuotas-y-posibles-xi"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvft1nIthxor8u96QFBNVlfcbXw90B5F_C-XHt0u2LJWbQTxsvZoNAUkvAdXc",
-      "image_credit": "SportyTrader",
-      "news": [
-        {
-          "url": "https://www.sportytrader.es/pronosticos/turquia-belgica-386158/",
-          "title": "Pronóstico Turquía - Bélgica - Nations League",
-          "publisher": "SportyTrader",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvft1nIthxor8u96QFBNVlfcbXw90B5F_C-XHt0u2LJWbQTxsvZoNAUkvAdXc"
-        },
-        {
-          "url": "https://onefootball.com/es/noticias/turquia-belgica-los-turcos-quieren-volver-a-ganar-ante-los-suyos-43764381",
-          "title": "Turquía-Bélgica: Los turcos quieren volver a ganar ante los suyos",
-          "publisher": "OneFootball",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSasxk70glNBNVBIqel3m4CI2N0VwVfCjNOjCJeifCZ1xjuzWQQnLnCyEo8xK8"
-        },
-        {
-          "url": "https://www.sofascore.com/es/news/previa-turkiye-vs-belgica-forma-cuotas-y-posibles-xi",
-          "title": "Previa Türkiye vs Bélgica: forma, cuotas y posibles XI",
-          "publisher": "Sofascore",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy9w4cV49P2kjrpVmWh3cPS5ebNzSTIzI5lCPI3djgNm8si95N8W1v9WtFdCw"
-        }
-      ]
-    },
-    {
-      "query": "hurricanes vs kraken",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-12T16:10:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/hurricanes/news/projected-lineup-november-12-at-seattle",
-        "https://www.canescountry.com/general/54645/kraken-vs-hurricanes-preview-how-to-watch-and-game-thread",
-        "https://www.cbssports.com/betting/news/hurricanes-vs-kraken-nhl-odds-picks-carolina-looks-to-keep-rolling-in-rare-thursday-matinee-from-finland/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgPsaBbyVhdj2-3bPImbnB6k0BtPR3NtyvNGj3k6JChx3zI37uEE3soKxiUvs",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/hurricanes/news/projected-lineup-november-12-at-seattle",
-          "title": "Projected Lineup: November 12 at Seattle",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgPsaBbyVhdj2-3bPImbnB6k0BtPR3NtyvNGj3k6JChx3zI37uEE3soKxiUvs"
-        },
-        {
-          "url": "https://www.canescountry.com/general/54645/kraken-vs-hurricanes-preview-how-to-watch-and-game-thread",
-          "title": "Kraken vs. Hurricanes: Preview, How to Watch, and Game Thread",
-          "publisher": "Canes Country",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVzB3QLqLB20SmalPxJipKgOY4QEV5QlsalVSeOSzBcaKfz3XFpP9iCh4f3KY"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/hurricanes-vs-kraken-nhl-odds-picks-carolina-looks-to-keep-rolling-in-rare-thursday-matinee-from-finland/",
-          "title": "Hurricanes vs. Kraken NHL odds, picks: Carolina looks to keep rolling in rare Thursday matinee from Finland",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjtrO6Zbt4rq7t0ptPKFJDFIAkbpWDSHQ6i0jJhX3MTw9P9H2aagT_b2d5QBk"
-        }
-      ]
-    },
-    {
-      "query": "noah kahan fenway",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-12T16:10:00Z",
-      "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/10/arts/noah-kahan-fenway-park-2027/",
-        "https://www.usatoday.com/story/shopping/entertainment/concert-tickets/2026/11/12/buy-noah-kahan-tickets-2027-last-of-the-bugs-concert-tour-dates/92485560007/",
-        "https://www.wmur.com/article/thousands-attempt-noah-kahan-at-fenway-presale-tickets/74394530"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHGv9g0MaIfrA1EcuM-dYkROUkjfldulH7Bby2VegwPv-EDrKUvVfRuTyTLGM",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/10/arts/noah-kahan-fenway-park-2027/",
-          "title": "Noah Kahan adds two more Fenway Park shows to tour next summer",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHGv9g0MaIfrA1EcuM-dYkROUkjfldulH7Bby2VegwPv-EDrKUvVfRuTyTLGM"
-        },
-        {
-          "url": "https://www.usatoday.com/story/shopping/entertainment/concert-tickets/2026/11/12/buy-noah-kahan-tickets-2027-last-of-the-bugs-concert-tour-dates/92485560007/",
-          "title": "Tickets for Noah Kahan's 2027 tour are on sale today, get yours now",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwiaIEVvSZPvK5Haooh4l5sakX9rvrypaUb2E7VMVqMwoR3zt9vsGEKdPlvMo"
-        },
-        {
-          "url": "https://www.wmur.com/article/thousands-attempt-noah-kahan-at-fenway-presale-tickets/74394530",
-          "title": "Thousands fight for chance to see Noah Kahan at Fenway Park in 'the ticket war'",
-          "publisher": "WMUR",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRGd5DpJf3zFppZ45twR22Lcq8CGldws290d-gNepTiy9M2KeVfJqkIo7WBto"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBImQwR1RxmXe-apJ1AsxX8gBSItPTNwNUVK6gT-0vVwbqGLQUfUsxxhn2zF8"
         }
       ]
     }
