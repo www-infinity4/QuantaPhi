@@ -1,0 +1,360 @@
+{
+  "schema_version": 1,
+  "source": "Google Trends Trending Now RSS",
+  "source_url": "https://trends.google.com/trending/rss?geo=US",
+  "region": "US",
+  "checked_at": "2026-11-12T00:01:53.963933Z",
+  "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
+  "topics": [
+    {
+      "query": "buffalo vs ball state",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-11T23:40:00Z",
+      "related_news_urls": [
+        "https://sportsbook.fanduel.com/football/ncaa-football-games/buffalo-@-ball-state-36280934",
+        "https://www.cbssports.com/betting/news/buffalo-vs-ball-state-picks-odds-prediction-start-time-college-football-betting-preview-for-wednesday/",
+        "https://www.espn.com/watch/player/_/eventCalendarId/401866461"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtz--XBN2v1-Y-_DMMhCr9mR46QuLi9Tt-ogBS2FhK0NPl-Hta0ILQD09tyQY",
+      "image_credit": "FanDuel Sportsbook",
+      "news": [
+        {
+          "url": "https://sportsbook.fanduel.com/football/ncaa-football-games/buffalo-@-ball-state-36280934",
+          "title": "Buffalo @ Ball State Odds",
+          "publisher": "FanDuel Sportsbook",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtz--XBN2v1-Y-_DMMhCr9mR46QuLi9Tt-ogBS2FhK0NPl-Hta0ILQD09tyQY"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/buffalo-vs-ball-state-picks-odds-prediction-start-time-college-football-betting-preview-for-wednesday/",
+          "title": "Buffalo vs. Ball State picks, odds, prediction, start time: College football betting preview for Wednesday",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaMmj9oBLvZs8BUMCf_hOay83Yawcwd-kQMQgPxA6bbN7t1Dp4rvydx6QJR2s"
+        },
+        {
+          "url": "https://www.espn.com/watch/player/_/eventCalendarId/401866461",
+          "title": "Buffalo vs. Ball State",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYCxxMsvzGKgji_ju9C17ddS8mIoyojYzcJriRhU08nmk7zeYgKULtdYjmp0c"
+        }
+      ]
+    },
+    {
+      "query": "rangers vs flames",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T23:40:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/new-york-rangers-calgary-flames-game-preview-november-11-2026",
+        "https://sports.yahoo.com/articles/rangers-vs-flames-prediction-picks-164304814.html",
+        "https://flamesnation.ca/news/calgary-flames-new-york-rangers-preview-saddledome-lines-2026"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/new-york-rangers-calgary-flames-game-preview-november-11-2026",
+          "title": "Rangers at Flames projected lineups",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/rangers-vs-flames-prediction-picks-164304814.html",
+          "title": "Rangers vs Flames Prediction, Picks, NHL Odds for Wednedsay, November 11",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5yLfrmYewUFexRbKt9U91h3V8rIL10WFYV-toEPnfgGItI13uezrjLZJuZ4s"
+        },
+        {
+          "url": "https://flamesnation.ca/news/calgary-flames-new-york-rangers-preview-saddledome-lines-2026",
+          "title": "Flames Game Day 19: One last ‘Dome visit for the New York Rangers (6:30pm ABT, Amazon Prime)",
+          "publisher": "Flames Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS10hPFmliS5o45Nic5sjVQklhDa8c5Zz09R-RqpkaDELqMMUUEnzKpZQTlGGo"
+        }
+      ]
+    },
+    {
+      "query": "bob woodruff",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T23:40:00Z",
+      "related_news_urls": [
+        "https://www.rollingstone.com/music/music-news/bruce-springsteen-western-stars-public-concert-1235655108/",
+        "https://www.usatoday.com/story/entertainment/celebrities/2026/11/10/stand-up-for-heroes-jon-stewart-bruce-springsteen/92706707007/",
+        "https://abcnews.com/video/138007084/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIlxiDamcCsYIMb6xLfScvhKOIXzSjUXnEuTGqOskmTZhTxbqKDnayMv4ukRE",
+      "image_credit": "Rolling Stone",
+      "news": [
+        {
+          "url": "https://www.rollingstone.com/music/music-news/bruce-springsteen-western-stars-public-concert-1235655108/",
+          "title": "See Bruce Springsteen Finally Play ‘Western Stars’ Songs in Public",
+          "publisher": "Rolling Stone",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIlxiDamcCsYIMb6xLfScvhKOIXzSjUXnEuTGqOskmTZhTxbqKDnayMv4ukRE"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/celebrities/2026/11/10/stand-up-for-heroes-jon-stewart-bruce-springsteen/92706707007/",
+          "title": "Jon Stewart skewers liberals, conservatives at Stand Up for Heroes event",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3iD-jUpYXFLlf836LJyTJbVKrYLn71sRuCQyUNuhl-kFsuo-zKOib6L4EB60"
+        },
+        {
+          "url": "https://abcnews.com/video/138007084/",
+          "title": "Video Inspirational moments from 'Stand Up for Heroes'",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzvbdZuejcmCxbgCZWh5JLMLnhZvpnPTgPFcXYg1Qk4sxJNU-Gjc7QSfLRUsg"
+        }
+      ]
+    },
+    {
+      "query": "sacramento st vs central mi",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T23:40:00Z",
+      "related_news_urls": [
+        "https://www.abridged.org/news/sac-state-football-adjusts-to-the-big-time-wednesday-night-games-and-all/",
+        "https://www.cbssports.com/betting/news/central-michigan-sacramento-state-prediction-odds-time-2026-week-11-college-football-wednesday-maction-picks/",
+        "https://sports.yahoo.com/videos/central-michigan-ready-steamroll-sacramento-184521671.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZOD5yciowL3QzGOsTjga1exeIVcmGov42-s1oWeJCW904lxd1heRMRZAeVoY",
+      "image_credit": "Abridged – PBS KVIE",
+      "news": [
+        {
+          "url": "https://www.abridged.org/news/sac-state-football-adjusts-to-the-big-time-wednesday-night-games-and-all/",
+          "title": "Sac State football adjusts to the big time, Wednesday night games and all",
+          "publisher": "Abridged – PBS KVIE",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZOD5yciowL3QzGOsTjga1exeIVcmGov42-s1oWeJCW904lxd1heRMRZAeVoY"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/central-michigan-sacramento-state-prediction-odds-time-2026-week-11-college-football-wednesday-maction-picks/",
+          "title": "Central Michigan vs. Sacramento State prediction, odds, time: Week 11 MACtion picks from proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStStxt9Rf-N8iOEAhRED-YdDHa_1mo3uw08iwd6Rb4veyVExFTbrztChx98iI"
+        },
+        {
+          "url": "https://sports.yahoo.com/videos/central-michigan-ready-steamroll-sacramento-184521671.html",
+          "title": "Central Michigan Is Ready to Steamroll Sacramento State in a Brutal Midweek MACtion Clash",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_7NtMuBRVfMCajM-Pcb6LdaOd7tMNwLQHDu-86j4lGQg3neWvzCTYrgMZB6A"
+        }
+      ]
+    },
+    {
+      "query": "umass vs toledo",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T23:40:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/betting/news/toledo-vs-umass-odds-picks-prediction-start-time-wednesday-college-football-betting-preview-for-nov-11/",
+        "https://www.toledoblade.com/sports/ut/2026/11/08/2026-week-10-scouting-report-toledo-football-vs-massachusetts/stories/20261107015",
+        "https://www.sportsline.com/cfb/news/massachusetts-vs-toledo-odds-2026-college-football-picks-week-11-maction-predictions-from-proven-model/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1Wsla1_gBKAnghf33NqtXGJ-P82gtQBpShAVfpvyY2arFjk2R0lO5JZWvkKg",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/betting/news/toledo-vs-umass-odds-picks-prediction-start-time-wednesday-college-football-betting-preview-for-nov-11/",
+          "title": "Toledo vs. UMass odds, picks, prediction, start time: Wednesday college football betting preview for Nov. 11",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1Wsla1_gBKAnghf33NqtXGJ-P82gtQBpShAVfpvyY2arFjk2R0lO5JZWvkKg"
+        },
+        {
+          "url": "https://www.toledoblade.com/sports/ut/2026/11/08/2026-week-10-scouting-report-toledo-football-vs-massachusetts/stories/20261107015",
+          "title": "2026 Week 10 scouting report: Toledo football vs. Massachusetts",
+          "publisher": "Toledo Blade",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt8dEClJ1ReBSq3S4cBCIQfn1rWYS09lxeUM714HSoubGWiuh-RP3nkDRKTNA"
+        },
+        {
+          "url": "https://www.sportsline.com/cfb/news/massachusetts-vs-toledo-odds-2026-college-football-picks-week-11-maction-predictions-from-proven-model/",
+          "title": "Massachusetts vs. Toledo odds: 2026 college football picks, Week 11 MACtion predictions from proven model",
+          "publisher": "SportsLine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdNU-eDXfBhuEud8s0Q6oKB0YBu78clxgWeZohFUz4czMv5kvNBd0D0bQ55IM"
+        }
+      ]
+    },
+    {
+      "query": "isabelle huppert",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T23:40:00Z",
+      "related_news_urls": [
+        "https://people.com/inglourious-basterds-why-melanie-laurent-and-isabelle-huppert-were-fired-by-quentin-tarantino-12246881",
+        "https://www.imdb.com/news/ni66098225/?ref_=nwc_art_perm",
+        "https://www.yardbarker.com/entertainment/articles/pamela_anderson_set_for_lifetime_achievement_award_previously_won_by_angelina_jolie/s1_17463_44519695"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHiR-nqQiyJ1HHiBk6wsGFQW_dzs-r431XdGOvkIDrE5mnztiWSVJsQ1g4zdI",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/inglourious-basterds-why-melanie-laurent-and-isabelle-huppert-were-fired-by-quentin-tarantino-12246881",
+          "title": "Quentin Tarantino Reveals Why He Originally Fired Mélanie Laurent and Isabelle Huppert from Inglourious Basterds",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHiR-nqQiyJ1HHiBk6wsGFQW_dzs-r431XdGOvkIDrE5mnztiWSVJsQ1g4zdI"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66098225/?ref_=nwc_art_perm",
+          "title": "Golshifteh Farahani, Renate Reinsve and Alicia Vikander Lead Torino’s Female Talent Charge",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRiufteCFgnvxJShMj_sQedcVY66A9YTkZqVjo3WPI0ctVQzxBVMVHRZ5gXaSM"
+        },
+        {
+          "url": "https://www.yardbarker.com/entertainment/articles/pamela_anderson_set_for_lifetime_achievement_award_previously_won_by_angelina_jolie/s1_17463_44519695",
+          "title": "Pamela Anderson set for lifetime achievement award previously won by Angelina Jolie",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqh5Q1Sr1V1UTYJ1FCF_D7Pq3bu9yZaMbcv9bSKB0ZYnXL0sLi0nNLk485Xbg"
+        }
+      ]
+    },
+    {
+      "query": "normandy",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T23:40:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/travel/2026/nov/10/immersive-learning-french-in-rouen-normandy",
+        "https://westplainsdailyquill.net/2026/11/11/a-humbling-place-west-plains-veteran-connects-with-family-history-in-normandy/",
+        "https://www.theglobeandmail.com/life/style/travel/article-poutine-in-normandy-france/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrZgWuECjVgIvPXy7FjW43tqRRaCwAA6-6ZvctVdUYPnTKCKYk372T3h-Lj4c",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/travel/2026/nov/10/immersive-learning-french-in-rouen-normandy",
+          "title": "Walk the talk: a week learning French with a personal prof in Normandy",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrZgWuECjVgIvPXy7FjW43tqRRaCwAA6-6ZvctVdUYPnTKCKYk372T3h-Lj4c"
+        },
+        {
+          "url": "https://westplainsdailyquill.net/2026/11/11/a-humbling-place-west-plains-veteran-connects-with-family-history-in-normandy/",
+          "title": "‘A humbling place’: West Plains veteran connects with family history in Normandy",
+          "publisher": "West Plains Daily Quill",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAl8Tt5wA3GXTGYRy8WrQKYUKgAV_9s63_gdWIZ4WwtV3wYvmw3zL4i-HffKs"
+        },
+        {
+          "url": "https://www.theglobeandmail.com/life/style/travel/article-poutine-in-normandy-france/",
+          "title": "Poutine in Normandy, France? Discover the delicious mash-up of two countries’ cuisines",
+          "publisher": "The Globe and Mail",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ45_tUSgvsRVtUSy6jeoAUNE4vaxEGHtp6CQSbL2H8DGO4IWK-CZ3CVGIHeX0"
+        }
+      ]
+    },
+    {
+      "query": "reasons for falling us gas prices",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T23:40:00Z",
+      "related_news_urls": [
+        "https://www.npr.org/2026/11/11/nx-s1-6037588/gasoline-price-below-4-dollars-gallon",
+        "https://www.marketplace.org/story/2026/11/10/oil-gas-and-diesel-prices-are-declining-for-different-reasons",
+        "https://www.wwnytv.com/2026/11/10/im-so-excited-local-drivers-react-gas-falls-below-4-gallon/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7a0Wl-hcW94XbWj9mcCjjCn4OHRRgVWVsKxtnp5LCWqinWOQl1Qp1UkOBwf8",
+      "image_credit": "NPR",
+      "news": [
+        {
+          "url": "https://www.npr.org/2026/11/11/nx-s1-6037588/gasoline-price-below-4-dollars-gallon",
+          "title": "Why is gasoline suddenly under $4 a gallon?",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7a0Wl-hcW94XbWj9mcCjjCn4OHRRgVWVsKxtnp5LCWqinWOQl1Qp1UkOBwf8"
+        },
+        {
+          "url": "https://www.marketplace.org/story/2026/11/10/oil-gas-and-diesel-prices-are-declining-for-different-reasons",
+          "title": "Oil, gas, and diesel prices are declining — but not all for the same reason",
+          "publisher": "Marketplace.org",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEQZwJSJW7N7USX1Iew9RR8KTvkbsSVUT3kUWt921U3SG8SnM9rFs4UmGHMdk"
+        },
+        {
+          "url": "https://www.wwnytv.com/2026/11/10/im-so-excited-local-drivers-react-gas-falls-below-4-gallon/",
+          "title": "‘I’m so excited’: Local drivers react as gas falls below $4 a gallon",
+          "publisher": "WWNY",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQphACfXo4IPQcn0zIMDL3kMknFv87oCV9BDAeBI06fzjed16jia-mZ1VMTPjc"
+        }
+      ]
+    },
+    {
+      "query": "maria flores garcia ice detention",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T23:40:00Z",
+      "related_news_urls": [
+        "https://www.washingtonpost.com/dc-md-va/2026/11/11/ice-detains-maryland-college-student-who-was-her-high-schools-valedictorian/",
+        "https://www.wusa9.com/article/news/dmv-immigration/university-of-maryland-student-detained-by-ice-speaks-wusa9/65-6319667f-fca9-4f39-967e-cc902ad272fc",
+        "https://www.wbaltv.com/article/umd-student-held-after-immigration-check-in-baltimore/74391502"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSN0vWmFy8cDC9Xj6icHqjXU9XyqeDiZSVndpc4V3Nkrb3Dvt50BV6TbFVIGIk",
+      "image_credit": "The Washington Post",
+      "news": [
+        {
+          "url": "https://www.washingtonpost.com/dc-md-va/2026/11/11/ice-detains-maryland-college-student-who-was-her-high-schools-valedictorian/",
+          "title": "She gave a valedictorian speech in the spring. Now, she could be deported.",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSN0vWmFy8cDC9Xj6icHqjXU9XyqeDiZSVndpc4V3Nkrb3Dvt50BV6TbFVIGIk"
+        },
+        {
+          "url": "https://www.wusa9.com/article/news/dmv-immigration/university-of-maryland-student-detained-by-ice-speaks-wusa9/65-6319667f-fca9-4f39-967e-cc902ad272fc",
+          "title": "'Nobody deserves to be here' | University of Maryland student detained by ICE speaks exclusively with WUSA9",
+          "publisher": "WUSA9",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTX3IGnX6Rqsx8kL5ioRjDHUxUEukHj0v6o6Ys7R1onnIp0kO3_xOKvReQoNp8"
+        },
+        {
+          "url": "https://www.wbaltv.com/article/umd-student-held-after-immigration-check-in-baltimore/74391502",
+          "title": "Maryland student held with mother after immigration check-in",
+          "publisher": "WBAL-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqVZPOLe5ShSRXQ0ai5B1CdmIBcTcC7MEAr55oLyG_Cj2XqZYnQqhcsOdYdco"
+        }
+      ]
+    },
+    {
+      "query": "rory mcilroy",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T23:30:00Z",
+      "related_news_urls": [
+        "https://golf.com/news/rory-mcilroy-jabs-bryson-dechambeau-pro-return/",
+        "https://www.espn.com/golf/story/_/id/50442176/rory-mcilroy-bryson-dechambeau-bring-eyeballs-dp-world-tour",
+        "https://sports.yahoo.com/articles/paul-mcginley-warns-bryson-dechambeau-140000552.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwNEhpS1ESIV0_H_Zw2c31NIQweai3UrszI2vYUz0Xuk02CumbjdjPiiqeCdI",
+      "image_credit": "GOLF.com",
+      "news": [
+        {
+          "url": "https://golf.com/news/rory-mcilroy-jabs-bryson-dechambeau-pro-return/",
+          "title": "‘Nor would I ever want to be’: Rory McIlroy jabs Bryson DeChambeau over pro return",
+          "publisher": "GOLF.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwNEhpS1ESIV0_H_Zw2c31NIQweai3UrszI2vYUz0Xuk02CumbjdjPiiqeCdI"
+        },
+        {
+          "url": "https://www.espn.com/golf/story/_/id/50442176/rory-mcilroy-bryson-dechambeau-bring-eyeballs-dp-world-tour",
+          "title": "Rory McIlroy says Bryson DeChambeau would 'bring eyeballs' to DP World Tour",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_Y6GqAYatBWug4Cb_CBylUIsHdg_E3Ybm-kODSsUs4Gl1-Aj-b9lPqM_PXFM"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/paul-mcginley-warns-bryson-dechambeau-140000552.html",
+          "title": "Paul McGinley warns Bryson DeChambeau about playing YouTube full-time: ‘It would be a dumb move’",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqmyFDqEUfmXc4QN7UULGRD8_BNBiGSCL5N2fios3QD-WeE8-Vu9-SMZQ0-XU"
+        }
+      ]
+    }
+  ]
+}

@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-11T23:31:17.766101Z",
+  "checked_at": "2026-11-12T00:01:53.963933Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "cavaliers vs knicks",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-11T23:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/watch-cavaliers-vs-knicks-nba-230000591.html",
-        "https://bleacherreport.com/liveblogs/25532364-cleveland-cavaliers-vs-new-york-knicks-live-nba-updates-scores-and-highlights",
-        "https://www.espn.com/nba/recap/_/gameId/401909940"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQocdReh2zruuzDAyuqTSq4EhUO3MZHIzNuzQCpyMOX4cyiHz0-2Fo1eYjEu6k",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/watch-cavaliers-vs-knicks-nba-230000591.html",
-          "title": "How to watch Cavaliers vs Knicks: NBA, live stream, TV channel, start time",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQocdReh2zruuzDAyuqTSq4EhUO3MZHIzNuzQCpyMOX4cyiHz0-2Fo1eYjEu6k"
-        },
-        {
-          "url": "https://bleacherreport.com/liveblogs/25532364-cleveland-cavaliers-vs-new-york-knicks-live-nba-updates-scores-and-highlights",
-          "title": "Cleveland Cavaliers vs. New York Knicks Live NBA Updates, Scores and Highlights",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDwrkTzMYSMhjv04zoqzZR6ETNFu5LEni7pEJ9TqAMGbmCjT29uiwQVAm1bu0"
-        },
-        {
-          "url": "https://www.espn.com/nba/recap/_/gameId/401909940",
-          "title": "Knicks 109-97 Cavaliers (Nov 7, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4fZ_pc-ef4onVBk9kT7T6V9wRlvwf8eeGLPEklM3jCeWSnLuvddXDAPKAkMw"
-        }
-      ]
-    },
-    {
-      "query": "lightning vs sabres",
+      "query": "buffalo vs ball state",
       "approx_searches": "1000+",
-      "published_at": "2026-11-11T23:10:00Z",
+      "published_at": "2026-11-11T23:40:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-11-2026",
-        "https://www.audacy.com/wgr550/sports/sabres/let-the-games-begin",
-        "https://www.foxnews.com/outkick/tampa-bay-lightning-visit-buffalo-sabres-goalies-struggling-stop-pucks-season"
+        "https://sportsbook.fanduel.com/football/ncaa-football-games/buffalo-@-ball-state-36280934",
+        "https://www.cbssports.com/betting/news/buffalo-vs-ball-state-picks-odds-prediction-start-time-college-football-betting-preview-for-wednesday/",
+        "https://www.espn.com/watch/player/_/eventCalendarId/401866461"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOTARCWo_J2RTi3h_6yA4_nrcrlf5vui2R2U1vh-c6ZfiNUozvy338tcBhUwo",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-11-2026",
-          "title": "NHL On Tap: Lightning, Sabres kick off Veterans Appreciation Night doubleheader on TNT",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOTARCWo_J2RTi3h_6yA4_nrcrlf5vui2R2U1vh-c6ZfiNUozvy338tcBhUwo"
-        },
-        {
-          "url": "https://www.audacy.com/wgr550/sports/sabres/let-the-games-begin",
-          "title": "Let the games begin",
-          "publisher": "Audacy",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdcnWiZWAOMByZnvjZiHSoCFDZp8AT6suNE9kVkat_uryS2I_nWGm0-vpfGps"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick/tampa-bay-lightning-visit-buffalo-sabres-goalies-struggling-stop-pucks-season",
-          "title": "Tampa Bay Lightning visit Buffalo Sabres with both goalies struggling to stop pucks this season",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUhSNqmqdFyKQZoPI83waiqvau_FXMT4fk3UND0bsDaprPX7J1Bjncn5ys9gA"
-        }
-      ]
-    },
-    {
-      "query": "phil mickelson",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T23:10:00Z",
-      "related_news_urls": [
-        "https://www.golfchannel.com/ncaa/news/most-high-profile-class-ever-florida-state-officially-signs-miles-russell-charlie-woods",
-        "https://www.eonline.com/news/1437908/tiger-woods-elin-nordegren-reunite-for-son-charlies-college-golf-signing",
-        "https://people.com/all-about-tiger-woods-kids-12244587"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbz_98jQqSV4TMDGD6a6lmc_E2PH3G3UpfLM_FV6unFI3z_mVPmLk26t2sWQ4",
-      "image_credit": "Golf Channel",
-      "news": [
-        {
-          "url": "https://www.golfchannel.com/ncaa/news/most-high-profile-class-ever-florida-state-officially-signs-miles-russell-charlie-woods",
-          "title": "Most high-profile class ever? Florida State officially signs Miles Russell, Charlie Woods",
-          "publisher": "Golf Channel",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbz_98jQqSV4TMDGD6a6lmc_E2PH3G3UpfLM_FV6unFI3z_mVPmLk26t2sWQ4"
-        },
-        {
-          "url": "https://www.eonline.com/news/1437908/tiger-woods-elin-nordegren-reunite-for-son-charlies-college-golf-signing",
-          "title": "Tiger Woods and Ex Elin Nordegren Reunite to Support Son Charlie as He Tees Up College Golf Career",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4Tz3-Z9EEvrL9bCE1DMebK-URlw8ViA93PKfnMCVae_ObL9d6avoHcyyFVwI"
-        },
-        {
-          "url": "https://people.com/all-about-tiger-woods-kids-12244587",
-          "title": "Everything to Know About Tiger Woods’ 2 Kids, Daughter Sam and Son Charlie",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNBrkbUHIhSqRG0wHjd2UhHfz01KC4ZRJcSTDVfSx7V9UHVMCqOR6G0WNKSrQ"
-        }
-      ]
-    },
-    {
-      "query": "chicago fire over the edge",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T23:10:00Z",
-      "related_news_urls": [
-        "https://seat42f.com/chicago-fire-season-15-episode-6-photos/",
-        "https://film-book.com/chicago-fire-season-15-episode-6-over-the-edge-tv-show-trailer/",
-        "https://fangirlish.com/2026/11/09/chicago-fire-season-15-episode-6-preview-over-the-edge/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQecBeCFrGY-04qemwcqoQOMCW1ExO8G9T6wON_iOW3Nfi3rga8Tu_vP0uS5Kk",
-      "image_credit": "Seat42F",
-      "news": [
-        {
-          "url": "https://seat42f.com/chicago-fire-season-15-episode-6-photos/",
-          "title": "Chicago Fire Season 15 Episode 6 Photos: “Over the Edge” Airs Tonight on NBC",
-          "publisher": "Seat42F",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQecBeCFrGY-04qemwcqoQOMCW1ExO8G9T6wON_iOW3Nfi3rga8Tu_vP0uS5Kk"
-        },
-        {
-          "url": "https://film-book.com/chicago-fire-season-15-episode-6-over-the-edge-tv-show-trailer/",
-          "title": "Chicago Fire: Season 15, Episode 6: Over the Edge TV Show Trailer",
-          "publisher": "Film-Book.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7d0zlbFU35-YKFWGGHH-RUqaf-4usSGSAJkowXGMncwIn4lA4pB_WlHOxGT8"
-        },
-        {
-          "url": "https://fangirlish.com/2026/11/09/chicago-fire-season-15-episode-6-preview-over-the-edge/",
-          "title": "Chicago Fire Season 15, Episode 6 Preview: ‘Over the Edge’",
-          "publisher": "Fangirlish",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhfKjNneWJYu5c4Lpu9V2ODzXzclcCv9lwkglXqd74lVkQ3c9TnSTB4aFEzbo"
-        }
-      ]
-    },
-    {
-      "query": "celtics vs raptors",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-11T23:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/boston-celtics-9-2-toronto-210000066.html",
-        "https://nesn.com/boston-celtics/news/celtics-paul-george-status-update-vs-76ers/fdf763a16ec53e9eb8b280c4",
-        "https://www.si.com/nba/celtics/onsi/tired-celtics-vs-shorthanded-raptors-injury-report-3-keys-and-a-prediction-01m76b63h3hb"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqalheCE4qhnnTHFcks6OBALF-Z3bH4vOjChG9xeus5vuPrGt7SYBU7L7TPR4",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/boston-celtics-9-2-toronto-210000066.html",
-          "title": "Boston Celtics (9-2) at Toronto Raptors (5-5) Game #12 11/11/26",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqalheCE4qhnnTHFcks6OBALF-Z3bH4vOjChG9xeus5vuPrGt7SYBU7L7TPR4"
-        },
-        {
-          "url": "https://nesn.com/boston-celtics/news/celtics-paul-george-status-update-vs-76ers/fdf763a16ec53e9eb8b280c4",
-          "title": "Celtics Share Paul George Status Update After Explosive Performance vs. 76ers",
-          "publisher": "NESN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgs_s9pD94NKbEQ8MoR9ziwXtgH_msnL1jpmlqiC0sAxjzNROv9L_EKc78ceo"
-        },
-        {
-          "url": "https://www.si.com/nba/celtics/onsi/tired-celtics-vs-shorthanded-raptors-injury-report-3-keys-and-a-prediction-01m76b63h3hb",
-          "title": "Tired Celtics vs. Shorthanded Raptors: Injury Report, 3 Keys, and a Prediction",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQz26bdRRicIYDMDUbLIPl3n_83dT-R5nxycnI0Q5wO0TX4MfkxpPfSYuJbVh0"
-        }
-      ]
-    },
-    {
-      "query": "wizards vs pacers",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-11T23:00:00Z",
-      "related_news_urls": [
-        "https://sportsbook.fanduel.com/basketball/nba/washington-wizards-@-indiana-pacers-36298489",
-        "https://www.sportsgambler.com/betting-tips/basketball/washington-wizards-vs-indiana-pacers-prediction-odds-6019811/",
-        "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-wizards-vs-pacers-sacramento-st-vs-central-michigan-and-more/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKpB37eVtJ35GtEJ9HMZb-r-V089BFg_zwuuzJSZB6qWwQelizt5DrOCkL9lM",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtz--XBN2v1-Y-_DMMhCr9mR46QuLi9Tt-ogBS2FhK0NPl-Hta0ILQD09tyQY",
       "image_credit": "FanDuel Sportsbook",
       "news": [
         {
-          "url": "https://sportsbook.fanduel.com/basketball/nba/washington-wizards-@-indiana-pacers-36298489",
-          "title": "Washington Wizards @ Indiana Pacers Odds",
+          "url": "https://sportsbook.fanduel.com/football/ncaa-football-games/buffalo-@-ball-state-36280934",
+          "title": "Buffalo @ Ball State Odds",
           "publisher": "FanDuel Sportsbook",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKpB37eVtJ35GtEJ9HMZb-r-V089BFg_zwuuzJSZB6qWwQelizt5DrOCkL9lM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtz--XBN2v1-Y-_DMMhCr9mR46QuLi9Tt-ogBS2FhK0NPl-Hta0ILQD09tyQY"
         },
         {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/washington-wizards-vs-indiana-pacers-prediction-odds-6019811/",
-          "title": "Washington Wizards vs Indiana Pacers Prediction, Picks & Odds | NBA Wednesday",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdDtFXhCA57u0LcSvIYCTxfw7fpY9_A44wLe2sZcW8eS0yfNHndbFnlcZOckc"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-wizards-vs-pacers-sacramento-st-vs-central-michigan-and-more/",
-          "title": "Today's top games to watch, best bets, odds: Wizards vs. Pacers, Sacramento St. vs. Central Michigan and more",
+          "url": "https://www.cbssports.com/betting/news/buffalo-vs-ball-state-picks-odds-prediction-start-time-college-football-betting-preview-for-wednesday/",
+          "title": "Buffalo vs. Ball State picks, odds, prediction, start time: College football betting preview for Wednesday",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSro-B21Fj9BUX_N0YrlegqF1t00ka8q0jFFUn6eoBFItJQ0Qic-tP1hmvlaxQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaMmj9oBLvZs8BUMCf_hOay83Yawcwd-kQMQgPxA6bbN7t1Dp4rvydx6QJR2s"
+        },
+        {
+          "url": "https://www.espn.com/watch/player/_/eventCalendarId/401866461",
+          "title": "Buffalo vs. Ball State",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYCxxMsvzGKgji_ju9C17ddS8mIoyojYzcJriRhU08nmk7zeYgKULtdYjmp0c"
         }
       ]
     },
     {
-      "query": "amd stock",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-11T23:00:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/why-advanced-micro-devices-stock-175422041.html",
-        "https://www.fool.com/investing/2026/11/11/lisa-su-just-delivered-fantastic-news-for-amd-inve/",
-        "https://seekingalpha.com/article/4966414-amd-buy-as-data-center-revenue-expands-on-challenger-status"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-gr71e5EVgBFBhxeQIz7aohqWohBTAOAzzxWHyDTLP9pDXDg8Lz3frqgwSOg",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-advanced-micro-devices-stock-175422041.html",
-          "title": "Why Advanced Micro Devices Stock Popped Today",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-gr71e5EVgBFBhxeQIz7aohqWohBTAOAzzxWHyDTLP9pDXDg8Lz3frqgwSOg"
-        },
-        {
-          "url": "https://www.fool.com/investing/2026/11/11/lisa-su-just-delivered-fantastic-news-for-amd-inve/",
-          "title": "Lisa Su Just Delivered Fantastic News for AMD Investors",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCCmG5hjQQODrdMLQ4nLiUtuj8DgEXSz5GUS2gKS_2_Yl3A9u5UTZTIpIA7H4"
-        },
-        {
-          "url": "https://seekingalpha.com/article/4966414-amd-buy-as-data-center-revenue-expands-on-challenger-status",
-          "title": "AMD: Buy As Data Center Revenue Expands On Challenger Status",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjS4O1cnUXirMUhVxkM7sqi8V4uAJ2vZcVQ5beWABMCyGRlXdcFWgMcCk-1mI"
-        }
-      ]
-    },
-    {
-      "query": "bethesda skyrim 15th anniversary remaster",
+      "query": "rangers vs flames",
       "approx_searches": "500+",
-      "published_at": "2026-11-11T22:50:00Z",
+      "published_at": "2026-11-11T23:40:00Z",
       "related_news_urls": [
-        "https://www.gamingbible.com/news/skyrim-unexpected-remaster-15th-anniversary-bethesda-game-120844-20261111",
-        "https://www.ign.com/articles/how-skyrim-found-a-second-life-as-cozy-game",
-        "https://www.videogameschronicle.com/news/fan-mod-beyond-skyrim-bruma-gets-huge-update-and-playstation-port/"
+        "https://www.nhl.com/news/new-york-rangers-calgary-flames-game-preview-november-11-2026",
+        "https://sports.yahoo.com/articles/rangers-vs-flames-prediction-picks-164304814.html",
+        "https://flamesnation.ca/news/calgary-flames-new-york-rangers-preview-saddledome-lines-2026"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-IP3JaIII_Yrv-heAbIspuq8sFqecfjS0xpyCzFagZdQGrhwHXs1KsH0zqdk",
-      "image_credit": "GAMINGbible",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://www.gamingbible.com/news/skyrim-unexpected-remaster-15th-anniversary-bethesda-game-120844-20261111",
-          "title": "Skyrim confirms unexpected remaster on 15th anniversary of Bethesda game",
-          "publisher": "GAMINGbible",
+          "url": "https://www.nhl.com/news/new-york-rangers-calgary-flames-game-preview-november-11-2026",
+          "title": "Rangers at Flames projected lineups",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-IP3JaIII_Yrv-heAbIspuq8sFqecfjS0xpyCzFagZdQGrhwHXs1KsH0zqdk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
         },
         {
-          "url": "https://www.ign.com/articles/how-skyrim-found-a-second-life-as-cozy-game",
-          "title": "How Skyrim Found a Second Life as a Cozy Game",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqzTuEeAHIuysfa7OVT97iaPkThsA5kK7m1tu_XpAHxbsXiua4p5thGDb0cKU"
-        },
-        {
-          "url": "https://www.videogameschronicle.com/news/fan-mod-beyond-skyrim-bruma-gets-huge-update-and-playstation-port/",
-          "title": "Fan mod Beyond Skyrim: Bruma gets huge update and PlayStation port",
-          "publisher": "Video Games Chronicle",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAomJ57VsrlF4L-b4M0PiitWXCnX6vU4nfi3v1OC6Q3p16AGDM7PAqFVDMe1g"
-        }
-      ]
-    },
-    {
-      "query": "avgo stock",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T22:50:00Z",
-      "related_news_urls": [
-        "https://www.benzinga.com/markets/tech/26/11/63145055/what-is-going-on-with-broadcom-stock-on-wednesday",
-        "https://seekingalpha.com/article/4966465-broadcom-cheaper-to-own-one-of-the-best-stories-on-the-market",
-        "https://finance.yahoo.com/markets/stocks/articles/broadcom-just-had-best-day-135350246.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBOMkV86HZeTBiCYs60o95MArKKZZMw7ZlexYwquPngRPKLYR2wJKtj1mnvrw",
-      "image_credit": "Benzinga",
-      "news": [
-        {
-          "url": "https://www.benzinga.com/markets/tech/26/11/63145055/what-is-going-on-with-broadcom-stock-on-wednesday",
-          "title": "What Is Going on With Broadcom Stock on Wednesday?",
-          "publisher": "Benzinga",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBOMkV86HZeTBiCYs60o95MArKKZZMw7ZlexYwquPngRPKLYR2wJKtj1mnvrw"
-        },
-        {
-          "url": "https://seekingalpha.com/article/4966465-broadcom-cheaper-to-own-one-of-the-best-stories-on-the-market",
-          "title": "Broadcom: Cheaper To Own One Of The Best Stories On The Market (NASDAQ:AVGO)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3RJovtjsS4hrdd4iw0VSLsFmbVPTMWkMWk5WHXgyI_UBy6AAOzy7g5W6my-U"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/broadcom-just-had-best-day-135350246.html",
-          "title": "Broadcom Just Had Its Best Day in Nearly a Year, Back Above $1.5 Trillion",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkrMqPgdeRZ8st3xRdpjCEYelmIu0nhfGvMOYbbG2-dkWRJohs6kIVBSUdYX4"
-        }
-      ]
-    },
-    {
-      "query": "week 10 start e m sit em",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T22:50:00Z",
-      "related_news_urls": [
-        "https://www.nfl.com/news/nfl-fantasy-2026-start-em-sit-em-wide-receivers-for-week-10",
-        "https://www.cbssports.com/fantasy/football/news/fantasy-football-2026-start-em-sit-em-rb-in-week-10/",
-        "https://sports.yahoo.com/fantasy/article/week-10-fantasy-football-rankings-202201311.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUaSAhhoKVxHcNMWB07lX9NDWUl884w6j9ZnWHOasc_yeRB7LG-J1nQUiktPk",
-      "image_credit": "NFL.com",
-      "news": [
-        {
-          "url": "https://www.nfl.com/news/nfl-fantasy-2026-start-em-sit-em-wide-receivers-for-week-10",
-          "title": "NFL Fantasy 2026 Start 'Em, Sit 'Em: Wide receivers for Week 10",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUaSAhhoKVxHcNMWB07lX9NDWUl884w6j9ZnWHOasc_yeRB7LG-J1nQUiktPk"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/fantasy-football-2026-start-em-sit-em-rb-in-week-10/",
-          "title": "Fantasy football Start 'Em, Sit 'Em RB in Week 10: Tony Pollard looks to stay hot despite another tough test",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkOTeHrbzOb_A8F8In5jBcCfq2QNm9I09gHiHoJBzLM5u8vorNRrf7rn-jtWE"
-        },
-        {
-          "url": "https://sports.yahoo.com/fantasy/article/week-10-fantasy-football-rankings-202201311.html",
-          "title": "Week 10 Fantasy Football Rankings",
+          "url": "https://sports.yahoo.com/articles/rangers-vs-flames-prediction-picks-164304814.html",
+          "title": "Rangers vs Flames Prediction, Picks, NHL Odds for Wednedsay, November 11",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_fjGIzMkjO3eB4mhAA4xvSFWrNmm46P9FTRTPgL0Cl_lJmoKatGQx-ZqUa24"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5yLfrmYewUFexRbKt9U91h3V8rIL10WFYV-toEPnfgGItI13uezrjLZJuZ4s"
+        },
+        {
+          "url": "https://flamesnation.ca/news/calgary-flames-new-york-rangers-preview-saddledome-lines-2026",
+          "title": "Flames Game Day 19: One last ‘Dome visit for the New York Rangers (6:30pm ABT, Amazon Prime)",
+          "publisher": "Flames Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS10hPFmliS5o45Nic5sjVQklhDa8c5Zz09R-RqpkaDELqMMUUEnzKpZQTlGGo"
+        }
+      ]
+    },
+    {
+      "query": "bob woodruff",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T23:40:00Z",
+      "related_news_urls": [
+        "https://www.rollingstone.com/music/music-news/bruce-springsteen-western-stars-public-concert-1235655108/",
+        "https://www.usatoday.com/story/entertainment/celebrities/2026/11/10/stand-up-for-heroes-jon-stewart-bruce-springsteen/92706707007/",
+        "https://abcnews.com/video/138007084/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIlxiDamcCsYIMb6xLfScvhKOIXzSjUXnEuTGqOskmTZhTxbqKDnayMv4ukRE",
+      "image_credit": "Rolling Stone",
+      "news": [
+        {
+          "url": "https://www.rollingstone.com/music/music-news/bruce-springsteen-western-stars-public-concert-1235655108/",
+          "title": "See Bruce Springsteen Finally Play ‘Western Stars’ Songs in Public",
+          "publisher": "Rolling Stone",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIlxiDamcCsYIMb6xLfScvhKOIXzSjUXnEuTGqOskmTZhTxbqKDnayMv4ukRE"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/celebrities/2026/11/10/stand-up-for-heroes-jon-stewart-bruce-springsteen/92706707007/",
+          "title": "Jon Stewart skewers liberals, conservatives at Stand Up for Heroes event",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3iD-jUpYXFLlf836LJyTJbVKrYLn71sRuCQyUNuhl-kFsuo-zKOib6L4EB60"
+        },
+        {
+          "url": "https://abcnews.com/video/138007084/",
+          "title": "Video Inspirational moments from 'Stand Up for Heroes'",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzvbdZuejcmCxbgCZWh5JLMLnhZvpnPTgPFcXYg1Qk4sxJNU-Gjc7QSfLRUsg"
+        }
+      ]
+    },
+    {
+      "query": "sacramento st vs central mi",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T23:40:00Z",
+      "related_news_urls": [
+        "https://www.abridged.org/news/sac-state-football-adjusts-to-the-big-time-wednesday-night-games-and-all/",
+        "https://www.cbssports.com/betting/news/central-michigan-sacramento-state-prediction-odds-time-2026-week-11-college-football-wednesday-maction-picks/",
+        "https://sports.yahoo.com/videos/central-michigan-ready-steamroll-sacramento-184521671.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZOD5yciowL3QzGOsTjga1exeIVcmGov42-s1oWeJCW904lxd1heRMRZAeVoY",
+      "image_credit": "Abridged – PBS KVIE",
+      "news": [
+        {
+          "url": "https://www.abridged.org/news/sac-state-football-adjusts-to-the-big-time-wednesday-night-games-and-all/",
+          "title": "Sac State football adjusts to the big time, Wednesday night games and all",
+          "publisher": "Abridged – PBS KVIE",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZOD5yciowL3QzGOsTjga1exeIVcmGov42-s1oWeJCW904lxd1heRMRZAeVoY"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/central-michigan-sacramento-state-prediction-odds-time-2026-week-11-college-football-wednesday-maction-picks/",
+          "title": "Central Michigan vs. Sacramento State prediction, odds, time: Week 11 MACtion picks from proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStStxt9Rf-N8iOEAhRED-YdDHa_1mo3uw08iwd6Rb4veyVExFTbrztChx98iI"
+        },
+        {
+          "url": "https://sports.yahoo.com/videos/central-michigan-ready-steamroll-sacramento-184521671.html",
+          "title": "Central Michigan Is Ready to Steamroll Sacramento State in a Brutal Midweek MACtion Clash",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_7NtMuBRVfMCajM-Pcb6LdaOd7tMNwLQHDu-86j4lGQg3neWvzCTYrgMZB6A"
+        }
+      ]
+    },
+    {
+      "query": "umass vs toledo",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T23:40:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/betting/news/toledo-vs-umass-odds-picks-prediction-start-time-wednesday-college-football-betting-preview-for-nov-11/",
+        "https://www.toledoblade.com/sports/ut/2026/11/08/2026-week-10-scouting-report-toledo-football-vs-massachusetts/stories/20261107015",
+        "https://www.sportsline.com/cfb/news/massachusetts-vs-toledo-odds-2026-college-football-picks-week-11-maction-predictions-from-proven-model/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1Wsla1_gBKAnghf33NqtXGJ-P82gtQBpShAVfpvyY2arFjk2R0lO5JZWvkKg",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/betting/news/toledo-vs-umass-odds-picks-prediction-start-time-wednesday-college-football-betting-preview-for-nov-11/",
+          "title": "Toledo vs. UMass odds, picks, prediction, start time: Wednesday college football betting preview for Nov. 11",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1Wsla1_gBKAnghf33NqtXGJ-P82gtQBpShAVfpvyY2arFjk2R0lO5JZWvkKg"
+        },
+        {
+          "url": "https://www.toledoblade.com/sports/ut/2026/11/08/2026-week-10-scouting-report-toledo-football-vs-massachusetts/stories/20261107015",
+          "title": "2026 Week 10 scouting report: Toledo football vs. Massachusetts",
+          "publisher": "Toledo Blade",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt8dEClJ1ReBSq3S4cBCIQfn1rWYS09lxeUM714HSoubGWiuh-RP3nkDRKTNA"
+        },
+        {
+          "url": "https://www.sportsline.com/cfb/news/massachusetts-vs-toledo-odds-2026-college-football-picks-week-11-maction-predictions-from-proven-model/",
+          "title": "Massachusetts vs. Toledo odds: 2026 college football picks, Week 11 MACtion predictions from proven model",
+          "publisher": "SportsLine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdNU-eDXfBhuEud8s0Q6oKB0YBu78clxgWeZohFUz4czMv5kvNBd0D0bQ55IM"
+        }
+      ]
+    },
+    {
+      "query": "isabelle huppert",
+      "approx_searches": "500+",
+      "published_at": "2026-11-11T23:40:00Z",
+      "related_news_urls": [
+        "https://people.com/inglourious-basterds-why-melanie-laurent-and-isabelle-huppert-were-fired-by-quentin-tarantino-12246881",
+        "https://www.imdb.com/news/ni66098225/?ref_=nwc_art_perm",
+        "https://www.yardbarker.com/entertainment/articles/pamela_anderson_set_for_lifetime_achievement_award_previously_won_by_angelina_jolie/s1_17463_44519695"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHiR-nqQiyJ1HHiBk6wsGFQW_dzs-r431XdGOvkIDrE5mnztiWSVJsQ1g4zdI",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/inglourious-basterds-why-melanie-laurent-and-isabelle-huppert-were-fired-by-quentin-tarantino-12246881",
+          "title": "Quentin Tarantino Reveals Why He Originally Fired Mélanie Laurent and Isabelle Huppert from Inglourious Basterds",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHiR-nqQiyJ1HHiBk6wsGFQW_dzs-r431XdGOvkIDrE5mnztiWSVJsQ1g4zdI"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66098225/?ref_=nwc_art_perm",
+          "title": "Golshifteh Farahani, Renate Reinsve and Alicia Vikander Lead Torino’s Female Talent Charge",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRiufteCFgnvxJShMj_sQedcVY66A9YTkZqVjo3WPI0ctVQzxBVMVHRZ5gXaSM"
+        },
+        {
+          "url": "https://www.yardbarker.com/entertainment/articles/pamela_anderson_set_for_lifetime_achievement_award_previously_won_by_angelina_jolie/s1_17463_44519695",
+          "title": "Pamela Anderson set for lifetime achievement award previously won by Angelina Jolie",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqh5Q1Sr1V1UTYJ1FCF_D7Pq3bu9yZaMbcv9bSKB0ZYnXL0sLi0nNLk485Xbg"
+        }
+      ]
+    },
+    {
+      "query": "normandy",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T23:40:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/travel/2026/nov/10/immersive-learning-french-in-rouen-normandy",
+        "https://westplainsdailyquill.net/2026/11/11/a-humbling-place-west-plains-veteran-connects-with-family-history-in-normandy/",
+        "https://www.theglobeandmail.com/life/style/travel/article-poutine-in-normandy-france/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrZgWuECjVgIvPXy7FjW43tqRRaCwAA6-6ZvctVdUYPnTKCKYk372T3h-Lj4c",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/travel/2026/nov/10/immersive-learning-french-in-rouen-normandy",
+          "title": "Walk the talk: a week learning French with a personal prof in Normandy",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrZgWuECjVgIvPXy7FjW43tqRRaCwAA6-6ZvctVdUYPnTKCKYk372T3h-Lj4c"
+        },
+        {
+          "url": "https://westplainsdailyquill.net/2026/11/11/a-humbling-place-west-plains-veteran-connects-with-family-history-in-normandy/",
+          "title": "‘A humbling place’: West Plains veteran connects with family history in Normandy",
+          "publisher": "West Plains Daily Quill",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAl8Tt5wA3GXTGYRy8WrQKYUKgAV_9s63_gdWIZ4WwtV3wYvmw3zL4i-HffKs"
+        },
+        {
+          "url": "https://www.theglobeandmail.com/life/style/travel/article-poutine-in-normandy-france/",
+          "title": "Poutine in Normandy, France? Discover the delicious mash-up of two countries’ cuisines",
+          "publisher": "The Globe and Mail",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ45_tUSgvsRVtUSy6jeoAUNE4vaxEGHtp6CQSbL2H8DGO4IWK-CZ3CVGIHeX0"
+        }
+      ]
+    },
+    {
+      "query": "reasons for falling us gas prices",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T23:40:00Z",
+      "related_news_urls": [
+        "https://www.npr.org/2026/11/11/nx-s1-6037588/gasoline-price-below-4-dollars-gallon",
+        "https://www.marketplace.org/story/2026/11/10/oil-gas-and-diesel-prices-are-declining-for-different-reasons",
+        "https://www.wwnytv.com/2026/11/10/im-so-excited-local-drivers-react-gas-falls-below-4-gallon/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7a0Wl-hcW94XbWj9mcCjjCn4OHRRgVWVsKxtnp5LCWqinWOQl1Qp1UkOBwf8",
+      "image_credit": "NPR",
+      "news": [
+        {
+          "url": "https://www.npr.org/2026/11/11/nx-s1-6037588/gasoline-price-below-4-dollars-gallon",
+          "title": "Why is gasoline suddenly under $4 a gallon?",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7a0Wl-hcW94XbWj9mcCjjCn4OHRRgVWVsKxtnp5LCWqinWOQl1Qp1UkOBwf8"
+        },
+        {
+          "url": "https://www.marketplace.org/story/2026/11/10/oil-gas-and-diesel-prices-are-declining-for-different-reasons",
+          "title": "Oil, gas, and diesel prices are declining — but not all for the same reason",
+          "publisher": "Marketplace.org",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEQZwJSJW7N7USX1Iew9RR8KTvkbsSVUT3kUWt921U3SG8SnM9rFs4UmGHMdk"
+        },
+        {
+          "url": "https://www.wwnytv.com/2026/11/10/im-so-excited-local-drivers-react-gas-falls-below-4-gallon/",
+          "title": "‘I’m so excited’: Local drivers react as gas falls below $4 a gallon",
+          "publisher": "WWNY",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQphACfXo4IPQcn0zIMDL3kMknFv87oCV9BDAeBI06fzjed16jia-mZ1VMTPjc"
+        }
+      ]
+    },
+    {
+      "query": "maria flores garcia ice detention",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T23:40:00Z",
+      "related_news_urls": [
+        "https://www.washingtonpost.com/dc-md-va/2026/11/11/ice-detains-maryland-college-student-who-was-her-high-schools-valedictorian/",
+        "https://www.wusa9.com/article/news/dmv-immigration/university-of-maryland-student-detained-by-ice-speaks-wusa9/65-6319667f-fca9-4f39-967e-cc902ad272fc",
+        "https://www.wbaltv.com/article/umd-student-held-after-immigration-check-in-baltimore/74391502"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSN0vWmFy8cDC9Xj6icHqjXU9XyqeDiZSVndpc4V3Nkrb3Dvt50BV6TbFVIGIk",
+      "image_credit": "The Washington Post",
+      "news": [
+        {
+          "url": "https://www.washingtonpost.com/dc-md-va/2026/11/11/ice-detains-maryland-college-student-who-was-her-high-schools-valedictorian/",
+          "title": "She gave a valedictorian speech in the spring. Now, she could be deported.",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSN0vWmFy8cDC9Xj6icHqjXU9XyqeDiZSVndpc4V3Nkrb3Dvt50BV6TbFVIGIk"
+        },
+        {
+          "url": "https://www.wusa9.com/article/news/dmv-immigration/university-of-maryland-student-detained-by-ice-speaks-wusa9/65-6319667f-fca9-4f39-967e-cc902ad272fc",
+          "title": "'Nobody deserves to be here' | University of Maryland student detained by ICE speaks exclusively with WUSA9",
+          "publisher": "WUSA9",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTX3IGnX6Rqsx8kL5ioRjDHUxUEukHj0v6o6Ys7R1onnIp0kO3_xOKvReQoNp8"
+        },
+        {
+          "url": "https://www.wbaltv.com/article/umd-student-held-after-immigration-check-in-baltimore/74391502",
+          "title": "Maryland student held with mother after immigration check-in",
+          "publisher": "WBAL-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqVZPOLe5ShSRXQ0ai5B1CdmIBcTcC7MEAr55oLyG_Cj2XqZYnQqhcsOdYdco"
+        }
+      ]
+    },
+    {
+      "query": "rory mcilroy",
+      "approx_searches": "200+",
+      "published_at": "2026-11-11T23:30:00Z",
+      "related_news_urls": [
+        "https://golf.com/news/rory-mcilroy-jabs-bryson-dechambeau-pro-return/",
+        "https://www.espn.com/golf/story/_/id/50442176/rory-mcilroy-bryson-dechambeau-bring-eyeballs-dp-world-tour",
+        "https://sports.yahoo.com/articles/paul-mcginley-warns-bryson-dechambeau-140000552.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwNEhpS1ESIV0_H_Zw2c31NIQweai3UrszI2vYUz0Xuk02CumbjdjPiiqeCdI",
+      "image_credit": "GOLF.com",
+      "news": [
+        {
+          "url": "https://golf.com/news/rory-mcilroy-jabs-bryson-dechambeau-pro-return/",
+          "title": "‘Nor would I ever want to be’: Rory McIlroy jabs Bryson DeChambeau over pro return",
+          "publisher": "GOLF.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwNEhpS1ESIV0_H_Zw2c31NIQweai3UrszI2vYUz0Xuk02CumbjdjPiiqeCdI"
+        },
+        {
+          "url": "https://www.espn.com/golf/story/_/id/50442176/rory-mcilroy-bryson-dechambeau-bring-eyeballs-dp-world-tour",
+          "title": "Rory McIlroy says Bryson DeChambeau would 'bring eyeballs' to DP World Tour",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_Y6GqAYatBWug4Cb_CBylUIsHdg_E3Ybm-kODSsUs4Gl1-Aj-b9lPqM_PXFM"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/paul-mcginley-warns-bryson-dechambeau-140000552.html",
+          "title": "Paul McGinley warns Bryson DeChambeau about playing YouTube full-time: ‘It would be a dumb move’",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqmyFDqEUfmXc4QN7UULGRD8_BNBiGSCL5N2fios3QD-WeE8-Vu9-SMZQ0-XU"
         }
       ]
     }
