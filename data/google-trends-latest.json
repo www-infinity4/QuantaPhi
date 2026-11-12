@@ -3,9 +3,254 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T05:31:26.996122Z",
+  "checked_at": "2026-11-12T06:01:36.802692Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "alijah arenas",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T05:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/usc-mens-basketballs-alijah-arenas-043247410.html",
+        "https://www.cbssports.com/college-basketball/news/freshman-of-the-week-nikola-kusturica-ucla/",
+        "https://247sports.com/college/ucla/article/ucla-mens-basketball-forward-nikola-kusturica-named-big-ten-freshman-of-the-week-292459302/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXuKytWMMOmy-JlY9jdeJyUtWIg2pLyucVcRMegIjpGktnAYHjyIDkjVAHl9k",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/usc-mens-basketballs-alijah-arenas-043247410.html",
+          "title": "USC men's basketball's Alijah Arenas named Big Ten Player of the Week",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXuKytWMMOmy-JlY9jdeJyUtWIg2pLyucVcRMegIjpGktnAYHjyIDkjVAHl9k"
+        },
+        {
+          "url": "https://www.cbssports.com/college-basketball/news/freshman-of-the-week-nikola-kusturica-ucla/",
+          "title": "Ranking college basketball's best freshmen: UCLA's Nikola Kusturica earns Freshman of the Week honors",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTruVRfvo89zSM0vCK1GbWx4HDnxLzVy-ftG4h3obQor98RRmx0F1lb7z0Omx0"
+        },
+        {
+          "url": "https://247sports.com/college/ucla/article/ucla-mens-basketball-forward-nikola-kusturica-named-big-ten-freshman-of-the-week-292459302/",
+          "title": "UCLA men's basketball forward Nikola Kusturica named Big Ten Freshman of the Week",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTFKv_49rS8rawC6v68p8n8vjc8ssuGrVwuWjxFNnrRAGSfL7fFy8-otWpYBI"
+        }
+      ]
+    },
+    {
+      "query": "aspyn ovard",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T05:30:00Z",
+      "related_news_urls": [
+        "https://www.eonline.com/news/1437669/mormon-wives-aspyn-ovards-daughter-diagnosed-with-terminal-cancer",
+        "https://parade.com/news/secret-lives-of-mormon-wives-orange-county-aspyn-ovard-shares-daughters-cancer-diagnosis",
+        "https://www.eonline.com/videos/2520238659602/mormon-wives-aspyn-ovard-shares-daughters-terminal-cancer-diagnosis"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwgdJb8DScjY6IKEpqCmlPhaTWR9s5fPSwhgDKoLTbUjEW3lRvxgbWJcAS21s",
+      "image_credit": "E! News",
+      "news": [
+        {
+          "url": "https://www.eonline.com/news/1437669/mormon-wives-aspyn-ovards-daughter-diagnosed-with-terminal-cancer",
+          "title": "Mormon Wives ' Aspyn Ovard Shares Daughter's Terminal Cancer Diagnosis",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwgdJb8DScjY6IKEpqCmlPhaTWR9s5fPSwhgDKoLTbUjEW3lRvxgbWJcAS21s"
+        },
+        {
+          "url": "https://parade.com/news/secret-lives-of-mormon-wives-orange-county-aspyn-ovard-shares-daughters-cancer-diagnosis",
+          "title": "The Secret Lives of Mormon Wives’ Aspyn Ovard Shares Daughter’s Cancer Diagnosis",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6b2FFNr0SDGBbtlWA3U8huCtTbzdcHhs65WrqI6XQWnNnbwVidTYLQu7ejZo"
+        },
+        {
+          "url": "https://www.eonline.com/videos/2520238659602/mormon-wives-aspyn-ovard-shares-daughters-terminal-cancer-diagnosis",
+          "title": "Mormon Wives' Aspyn Ovard Shares Daughter's Terminal Cancer Diagnosis",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJQD3_gmpsPSWJuUhrzvJfetWzoBuybNY5PKr4AZGUpNJ_-5nMnaJM43yI_1k"
+        }
+      ]
+    },
+    {
+      "query": "ducks hockey",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T05:30:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/topic/nhl-edge/nhl-edge-stats-cutter-gauthier-anaheim-ducks-goal-scoring-2026-27",
+        "https://www.nytimes.com/athletic/7766627/2026/11/09/cutter-gauthier-ducks-hat-trick-penguins/",
+        "https://pucksofafeather.com/ducks-and-schmucks-from-anaheim-s-hometown-remix-win-over-the-penguins-01m717g54kmf"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3rL_HPI9hK6bT9VthJNeN4YETKTOis-l3QDhR27bZJmHGz1HhqWg3SgR4OsI",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/topic/nhl-edge/nhl-edge-stats-cutter-gauthier-anaheim-ducks-goal-scoring-2026-27",
+          "title": "NHL EDGE stats: Gauthier joins ‘Rocket’ Richard Trophy race during goal surge",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3rL_HPI9hK6bT9VthJNeN4YETKTOis-l3QDhR27bZJmHGz1HhqWg3SgR4OsI"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7766627/2026/11/09/cutter-gauthier-ducks-hat-trick-penguins/",
+          "title": "Ducks’ Cutter Gauthier joins rare air with third hat trick in 5 games: ‘Hotter than a firecracker’",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZrbyJbEzDTrJHybZIojgxNqffkmD0MZSKXCK5GPdJTOu3CXNRTljsVRIcbMI"
+        },
+        {
+          "url": "https://pucksofafeather.com/ducks-and-schmucks-from-anaheim-s-hometown-remix-win-over-the-penguins-01m717g54kmf",
+          "title": "Ducks and schmucks from Anaheim's Hometown Remix win over the Penguins",
+          "publisher": "Pucks of a Feather",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJJIay6dSGAUtcHt0iZHm37u1JkC6FsDFZcTP_gqnS7XmOsmqsZwVmdHC-vfo"
+        }
+      ]
+    },
+    {
+      "query": "bobbi althoff",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T05:30:00Z",
+      "related_news_urls": [
+        "https://people.com/bobbi-althoff-says-it-s-really-refreshing-not-getting-as-much-hate-online-exclusive-12245744",
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/mccall-dapron-says-she-tries-143936848.html",
+        "https://www.nytimes.com/2026/11/09/arts/television/mormon-wives-orange-county-shows-to-watch.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXL0TgAQUEU9Y9_Kvj1P7ycQJo7zDz1fyX-xE3eMQ54Zc5hPZXkSRnCNzs5Tc",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/bobbi-althoff-says-it-s-really-refreshing-not-getting-as-much-hate-online-exclusive-12245744",
+          "title": "Bobbi Althoff Says It’s ‘Really Refreshing’ Not Getting as Much Hate Online (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXL0TgAQUEU9Y9_Kvj1P7ycQJo7zDz1fyX-xE3eMQ54Zc5hPZXkSRnCNzs5Tc"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/mccall-dapron-says-she-tries-143936848.html",
+          "title": "McCall DaPron Says She Tries to ‘Delete’ Hateful Comments ‘Before I Read’ Them While Bobbi Althoff ‘Loves a Snarky Little Response’ (Exclusive)",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtigjFGm7CR8nhGiQ2YwuZbloiUygisBrtbBGp747QVC5ReNZtbbpoMGSu2eE"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/09/arts/television/mormon-wives-orange-county-shows-to-watch.html",
+          "title": "‘The Secret Lives of Mormon Wives: Orange County’ and 5 More Shows to Watch",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWoZOAyZ8mS-QK-D8f0VJWvlzbLXZX9_KYkdjbR_c4zE0lUNMjUrlCndYskwA"
+        }
+      ]
+    },
+    {
+      "query": "daiyan henley",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-12T05:20:00Z",
+      "related_news_urls": [
+        "https://www.profootballrumors.com/2026/11/broncos-chargers-daiyan-henley-trade-nixed",
+        "https://sports.yahoo.com/nfl/article/broncos-trade-for-chargers-lb-daiyan-henley-falls-through-after-nfl-trade-deadline-054350121.html",
+        "https://www.9news.com/article/sports/nfl/denver-broncos/mike-klis/broncos-trade-linebacker-daiyan-henley-chargers/73-82bdf8ce-4ff8-4658-84fa-152169696c34"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRw2XLMDOcs1fo-CXGchMg1-Dao7MHVPNsG_7KtU31q7wLibclVwB3ZpBDcVJ4",
+      "image_credit": "NFL Rumors - ProFootballRumors.com",
+      "news": [
+        {
+          "url": "https://www.profootballrumors.com/2026/11/broncos-chargers-daiyan-henley-trade-nixed",
+          "title": "Broncos-Chargers' Daiyan Henley Trade Nixed",
+          "publisher": "NFL Rumors - ProFootballRumors.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRw2XLMDOcs1fo-CXGchMg1-Dao7MHVPNsG_7KtU31q7wLibclVwB3ZpBDcVJ4"
+        },
+        {
+          "url": "https://sports.yahoo.com/nfl/article/broncos-trade-for-chargers-lb-daiyan-henley-falls-through-after-nfl-trade-deadline-054350121.html",
+          "title": "Broncos' trade for Chargers LB Daiyan Henley falls through after NFL trade deadline",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQiP15Ltzxsp_DN0brk8bnjRTOiWoZezmXPIze1ojGEiLBavCoxNcLu-XNPGz4"
+        },
+        {
+          "url": "https://www.9news.com/article/sports/nfl/denver-broncos/mike-klis/broncos-trade-linebacker-daiyan-henley-chargers/73-82bdf8ce-4ff8-4658-84fa-152169696c34",
+          "title": "Broncos acquire linebacker Henley from Chargers",
+          "publisher": "9News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSoyMjQGpAW_Ci9UT1Ifd94syhgE14iovXL3jiKvFI6ta9S-MLlto8grMCfM8"
+        }
+      ]
+    },
+    {
+      "query": "deni avdija",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T05:20:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/watch/video/damian-lillard-hits-from-way-downtown-6?plsrc=nba&collection=more-to-watch",
+        "https://www.blazersedge.com/from-press-row/118249/portland-trail-blazers-damian-lillard-oklahoma-city-thunder-recap-highlights-deni-avdija-donovan-clingan-shai-gilgeous-alexander-nba-news",
+        "https://defector.com/damian-lillards-second-act-in-portland-is-more-than-just-a-nice-story"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPskzRyG7Suxo2OsEg9DhGctnjm-g5phKtCq1F_jXXlXXMQgPnvS0P1IajHDw",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://www.nba.com/watch/video/damian-lillard-hits-from-way-downtown-6?plsrc=nba&collection=more-to-watch",
+          "title": "Damian Lillard drills a ridiculous pull-up logo three to close the third",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPskzRyG7Suxo2OsEg9DhGctnjm-g5phKtCq1F_jXXlXXMQgPnvS0P1IajHDw"
+        },
+        {
+          "url": "https://www.blazersedge.com/from-press-row/118249/portland-trail-blazers-damian-lillard-oklahoma-city-thunder-recap-highlights-deni-avdija-donovan-clingan-shai-gilgeous-alexander-nba-news",
+          "title": "Dame Time Delirium Carries Blazers Over Thunder",
+          "publisher": "Blazer's Edge",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjgRM9U22QYxs5DVXttEeInRQnb8sd-LzIN0olwL_2tu0uiP7UZwb6zK81sBI"
+        },
+        {
+          "url": "https://defector.com/damian-lillards-second-act-in-portland-is-more-than-just-a-nice-story",
+          "title": "Damian Lillard’s Second Act In Portland Is More Than Just A Nice Story",
+          "publisher": "Defector",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzVHJC6AoyHxqkZbos2uOzoyeQh9UNiPtIbyot3gIWZciWgSSq5lKOgQLeqhY"
+        }
+      ]
+    },
+    {
+      "query": "toumani camara",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T05:20:00Z",
+      "related_news_urls": [
+        "https://www.fanduel.com/research/nba/player-news/game-recaps/darius-garland-scores-13-points-in-loss-to-suns-nov-11-2026",
+        "https://www.rotowire.com/basketball/headlines/jeremiah-fears-news-hits-for-25-in-loss-to-clippers-538246",
+        "https://www.fantasypros.com/nba/news/618383/jeremiah-fears-leads-offense-fridays-loss-to-timberwolves.php"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQneZpFrHtMejHcRYhi1BsfZ0Cp9tH_67X_KC5v-ymGl3nL7k2a9KGXx0UqEOw",
+      "image_credit": "FanDuel",
+      "news": [
+        {
+          "url": "https://www.fanduel.com/research/nba/player-news/game-recaps/darius-garland-scores-13-points-in-loss-to-suns-nov-11-2026",
+          "title": "Darius Garland Scores 13 Points In Loss To Suns",
+          "publisher": "FanDuel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQneZpFrHtMejHcRYhi1BsfZ0Cp9tH_67X_KC5v-ymGl3nL7k2a9KGXx0UqEOw"
+        },
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/jeremiah-fears-news-hits-for-25-in-loss-to-clippers-538246",
+          "title": "Jeremiah Fears News: Hits for 25 in loss to Clippers",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWtphFxInbJ3ACLLrkDOdEpNBcx9Bs6DjidZaK1pbscCNHcQs6Jfwie-KXoFY"
+        },
+        {
+          "url": "https://www.fantasypros.com/nba/news/618383/jeremiah-fears-leads-offense-fridays-loss-to-timberwolves.php",
+          "title": "Jeremiah Fears leads offense in Friday's loss to Timberwolves",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCKukzEDpPlunEtmSNdyAINFt3F2-4ES48rI39jAOqNLdtwq6LXyrFsJ640iU"
+        }
+      ]
+    },
     {
       "query": "jrue holiday",
       "approx_searches": "500+",
@@ -38,41 +283,6 @@
           "publisher": "NBC Sports",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSeuXJhgWWeQ0yFb_PinqSChfsk6oq-zJyyEa26KRWPmMjkm1XAeV4NANLwjnk"
-        }
-      ]
-    },
-    {
-      "query": "aday mara",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T05:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/aday-mara-strong-development-defends-174307229.html",
-        "https://okcthunderwire.usatoday.com/story/sports/nba/thunder/2026/11/08/aday-mara-continues-to-be-huge-help-as-thunder-get-easy-win-over-wizards/92677433007/",
-        "https://heavy.com/sports/nba/oklahoma-city-thunder/rudy-gobert-assessment-of-aday-mara/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkRzYeVcctCqw1C3GNiA7pJ3qGGHrk4yHJ_muyJOJxUGqLRe3EFDM6qPGL9S4",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/aday-mara-strong-development-defends-174307229.html",
-          "title": "Aday Mara’s Strong Development Defends Against OKC Injuries",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkRzYeVcctCqw1C3GNiA7pJ3qGGHrk4yHJ_muyJOJxUGqLRe3EFDM6qPGL9S4"
-        },
-        {
-          "url": "https://okcthunderwire.usatoday.com/story/sports/nba/thunder/2026/11/08/aday-mara-continues-to-be-huge-help-as-thunder-get-easy-win-over-wizards/92677433007/",
-          "title": "Aday Mara continues to be huge help as Thunder get easy win over Wizards",
-          "publisher": "OKC Thunder Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5YgQQVdrI4RgiLRbwyZVMV45cdO07zDjgfYiyiTe8aihpKR1tBtSBoKcCnL8"
-        },
-        {
-          "url": "https://heavy.com/sports/nba/oklahoma-city-thunder/rudy-gobert-assessment-of-aday-mara/",
-          "title": "Rudy Gobert Gives Interesting Assessment Of Thunder Rookie Aday Mara",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhfZSSMOQULKiHjXL-QLYiXzkwKam2aBsXtJjyH3X65CRDijdk8fVbv4xdMq4"
         }
       ]
     },
@@ -112,247 +322,37 @@
       ]
     },
     {
-      "query": "okc",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-12T05:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/recap/_/gameId/401909965",
-        "https://www.nba.com/watch/video/game-recap-trail-blazers-123-thunder-103",
-        "https://www.blazersedge.com/gameday-threads-2/118268/discussion-portland-trail-blazers-oklahoma-city-thunder-time-tv-streaming-injury-report"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRui9ApRp4MH5BCAjmDPsbdEx4LWUPg9Oc-DG3PzkvByK9U_gEXgEOHXkK4L2g",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/recap/_/gameId/401909965",
-          "title": "Trail Blazers 123-103 Thunder (Nov 10, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRui9ApRp4MH5BCAjmDPsbdEx4LWUPg9Oc-DG3PzkvByK9U_gEXgEOHXkK4L2g"
-        },
-        {
-          "url": "https://www.nba.com/watch/video/game-recap-trail-blazers-123-thunder-103",
-          "title": "Game Recap: Trail Blazers 123, Thunder 103 (Nov. 10)",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAwJWp7bf3YCQiAED25NaKeDHPBRQbJTb3mYgKzyn1uYREPWIcmHwd96YWDC0"
-        },
-        {
-          "url": "https://www.blazersedge.com/gameday-threads-2/118268/discussion-portland-trail-blazers-oklahoma-city-thunder-time-tv-streaming-injury-report",
-          "title": "Discuss the Trail Blazers vs. Thunder Rematch Here!",
-          "publisher": "Blazer's Edge",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9fUlstnBMB_rUxW7yMI_H2yRYlaEnYZ8hICtWw6VYQ0RW06Eokae9NkHnIJg"
-        }
-      ]
-    },
-    {
-      "query": "jared mccain",
+      "query": "aday mara",
       "approx_searches": "500+",
-      "published_at": "2026-11-12T05:00:00Z",
+      "published_at": "2026-11-12T05:10:00Z",
       "related_news_urls": [
-        "https://thunderousintentions.com/okc-thunder-jared-mccain-reminded-lethal-weapon-has-largely-laid-dormant",
-        "https://sports.yahoo.com/articles/jared-mccain-dire-shooting-not-200938432.html",
-        "https://www.kiiitv.com/video/sports/locked-on/lo-oklahoma/locked-on-thunder-hit/oklahoma-city-thunder-fans-eyes-on-jared-mccains-streak-after-mysterious-shift-in-performance/535-d6e7b255-4be4-4c1d-ab3a-ee9ce50e2c99"
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/okc-starts-sga-mccain-caruso-mara-hartenstein",
+        "https://sports.yahoo.com/articles/aday-mara-strong-development-defends-174307229.html",
+        "https://okcthunderwire.usatoday.com/story/sports/nba/thunder/2026/11/08/aday-mara-continues-to-be-huge-help-as-thunder-get-easy-win-over-wizards/92677433007/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_VQCZr-1OagdmD_23b2aZtIFTpc4uL4s-96_jF8KDW-L3bszkrHphNbetTLo",
-      "image_credit": "Thunderous Intentions",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQp33ZUm5qq_lPgWmNQ8UuxtjllxX_s_rAvxRRgFFdkE56p6382_BLBb7Im6Ps",
+      "image_credit": "NBC Sports",
       "news": [
         {
-          "url": "https://thunderousintentions.com/okc-thunder-jared-mccain-reminded-lethal-weapon-has-largely-laid-dormant",
-          "title": "Jared McCain reminded Thunder of lethal weapon that has largely been silent this year",
-          "publisher": "Thunderous Intentions",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/okc-starts-sga-mccain-caruso-mara-hartenstein",
+          "title": "OKC starts SGA, McCain, Caruso, Mara, Hartenstein",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_VQCZr-1OagdmD_23b2aZtIFTpc4uL4s-96_jF8KDW-L3bszkrHphNbetTLo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQp33ZUm5qq_lPgWmNQ8UuxtjllxX_s_rAvxRRgFFdkE56p6382_BLBb7Im6Ps"
         },
         {
-          "url": "https://sports.yahoo.com/articles/jared-mccain-dire-shooting-not-200938432.html",
-          "title": "Jared McCain’s Dire Shooting Not A Death Knell For OKC",
+          "url": "https://sports.yahoo.com/articles/aday-mara-strong-development-defends-174307229.html",
+          "title": "Aday Mara’s Strong Development Defends Against OKC Injuries",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQu3la4JoL9cAmaOHufYcY0uHImK_2zHvOlnbDQ05B9xAiZWsiTv1KIzLoiKhU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkRzYeVcctCqw1C3GNiA7pJ3qGGHrk4yHJ_muyJOJxUGqLRe3EFDM6qPGL9S4"
         },
         {
-          "url": "https://www.kiiitv.com/video/sports/locked-on/lo-oklahoma/locked-on-thunder-hit/oklahoma-city-thunder-fans-eyes-on-jared-mccains-streak-after-mysterious-shift-in-performance/535-d6e7b255-4be4-4c1d-ab3a-ee9ce50e2c99",
-          "title": "Oklahoma City Thunder Fan's Eyes On Jared McCain’s Streak After Mysterious Shift In Performance",
-          "publisher": "kiiitv.com",
+          "url": "https://okcthunderwire.usatoday.com/story/sports/nba/thunder/2026/11/08/aday-mara-continues-to-be-huge-help-as-thunder-get-easy-win-over-wizards/92677433007/",
+          "title": "Aday Mara continues to be huge help as Thunder get easy win over Wizards",
+          "publisher": "OKC Thunder Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXvZroQ7v-_GlNRZrwGkAUwDw73rYKoXYrpoBugnO0CgPuGigY58eTO3flXYg"
-        }
-      ]
-    },
-    {
-      "query": "arnold schwarzenegger",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-12T04:50:00Z",
-      "related_news_urls": [
-        "https://www.latimes.com/sports/story/2026-11-09/arnold-schwarzenegger-son-joseph-baena-pro-bodybuilding-competition-results",
-        "https://www.cbc.ca/news/entertainment/arnold-schwarzenegger-son-baena-bodybuilding-9.7415339",
-        "https://people.com/arnold-schwarzenegger-son-joseph-baena-places-in-top-5-pro-debut-natural-bodybuilding-competition-12243669"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQaFSDNA09YICCzLD-YW3r4gEOpRGzxGquaa9Xz-Uxc4M2ymr-ms0Ljx-9LPSE",
-      "image_credit": "Los Angeles Times",
-      "news": [
-        {
-          "url": "https://www.latimes.com/sports/story/2026-11-09/arnold-schwarzenegger-son-joseph-baena-pro-bodybuilding-competition-results",
-          "title": "Joseph Baena, son of Arnold Schwarzenegger, places in top 5 of first pro bodybuilding competition",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQaFSDNA09YICCzLD-YW3r4gEOpRGzxGquaa9Xz-Uxc4M2ymr-ms0Ljx-9LPSE"
-        },
-        {
-          "url": "https://www.cbc.ca/news/entertainment/arnold-schwarzenegger-son-baena-bodybuilding-9.7415339",
-          "title": "Like father, like son: Arnold Schwarzenegger’s son muscles into top 5 at bodybuilding competition",
-          "publisher": "CBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1OFTFG_owm38T4dk3Sg2jWx_G8LBZLPfr3tIf4q5K0fd0tu3wTJoLDakB770"
-        },
-        {
-          "url": "https://people.com/arnold-schwarzenegger-son-joseph-baena-places-in-top-5-pro-debut-natural-bodybuilding-competition-12243669",
-          "title": "Arnold Schwarzenegger’s Son Joseph Baena Places in Top 5 in ‘Pro Debut’ at Natural Bodybuilding Competition",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS329_K5ghFtluLzfSFcIHAor8j8s8PNA_sYxw692UYGzXHplQheR4lMg89MqA"
-        }
-      ]
-    },
-    {
-      "query": "taylor kinney",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T04:50:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/articles/chicago-fire-star-taylor-kinney-231243372.html",
-        "https://www.imdb.com/news/ni66107006/?ref_=nwc_art_perm",
-        "https://niutoday.info/2026/11/11/after-15-years-joe-minoso-04-exits-chicago-fire/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3n9_JM-v04f-QcWBfLaMeOWoMGiyigkQnVR66hWteLt7ypoa1_aOdruTz9Y0",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/chicago-fire-star-taylor-kinney-231243372.html",
-          "title": "All About ‘Chicago Fire’ Star Taylor Kinney’s Wife",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3n9_JM-v04f-QcWBfLaMeOWoMGiyigkQnVR66hWteLt7ypoa1_aOdruTz9Y0"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66107006/?ref_=nwc_art_perm",
-          "title": "All About ‘Chicago Fire’ Star Taylor Kinney’s Wife & Their Relationship",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS47qcS9B1e-yKwmfvuJZlQudrlswF5S6FEaiOULSRiu-KqCa94z_pSRPKGMLs"
-        },
-        {
-          "url": "https://niutoday.info/2026/11/11/after-15-years-joe-minoso-04-exits-chicago-fire/",
-          "title": "After 15 years, Joe Minoso, ’04 exits “Chicago Fire”",
-          "publisher": "NIU Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXv3HT9HmIDqy8ZAUAPdqx7Jcr2EooU6j4WWnNKZ6CJFyrebNl6HnMJ6y6p-s"
-        }
-      ]
-    },
-    {
-      "query": "malik beasley",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T04:50:00Z",
-      "related_news_urls": [
-        "https://www.basketballnetwork.net/off-the-court/malik-beasley-wife-claimed-he-kicked-his-family-out-amid-larsa-pippen-scandal",
-        "https://www.espn.com/nba/story/_/id/50401571/ex-nba-player-ed-davis-plead-guilty-sports-betting-case",
-        "https://www.blazersedge.com/trail-blazers-news/118089/ed-davis-portland-trail-blazers-pleads-guilty-federal-gambling-charges-malik-beasley"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTria8muOAlIy8__q0QqCKSw_lBsJAfQul2PwG8bTcLyHg5kM8yAEshP-BEmyg",
-      "image_credit": "Basketball Network",
-      "news": [
-        {
-          "url": "https://www.basketballnetwork.net/off-the-court/malik-beasley-wife-claimed-he-kicked-his-family-out-amid-larsa-pippen-scandal",
-          "title": "\"We were told to leave\" – Malik Beasley's wife claimed he kicked his family out amid Larsa Pippen scandal",
-          "publisher": "Basketball Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTria8muOAlIy8__q0QqCKSw_lBsJAfQul2PwG8bTcLyHg5kM8yAEshP-BEmyg"
-        },
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50401571/ex-nba-player-ed-davis-plead-guilty-sports-betting-case",
-          "title": "Ex-NBA player Ed Davis expected to change plea to guilty in sports betting case",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhseg0izi4QCOLCKb5F6-7yvqzr86MPInMqxLlgK0d7SoeKBr4H4TaL_ZZWOo"
-        },
-        {
-          "url": "https://www.blazersedge.com/trail-blazers-news/118089/ed-davis-portland-trail-blazers-pleads-guilty-federal-gambling-charges-malik-beasley",
-          "title": "Former Blazers Forward Pleads Guilty to Gambling Charges",
-          "publisher": "Blazer's Edge",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVja_CGgTABBUZ9f9gv_nKIJdOyD_7EK-YEbaHgQtJDm-tDIcVkzL_JrfsQ34"
-        }
-      ]
-    },
-    {
-      "query": "noel fielding",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T04:50:00Z",
-      "related_news_urls": [
-        "https://www.telegraph.co.uk/tv/2026/11/10/great-british-bake-off-quarter-final-review/",
-        "https://inews.co.uk/opinion/noel-fieldings-silence-is-deafening-4889552",
-        "https://graziadaily.co.uk/life/tv-and-film/is-noel-fielding-leaving-bake-off/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTUbJ02zvZX1onAyauHRQ6eqUP0WrJ70uYacBmE_ZkWyyuJQnZEPRTWVAg4ew",
-      "image_credit": "The Telegraph",
-      "news": [
-        {
-          "url": "https://www.telegraph.co.uk/tv/2026/11/10/great-british-bake-off-quarter-final-review/",
-          "title": "It might be time for Noel Fielding to move on from Bake Off",
-          "publisher": "The Telegraph",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTUbJ02zvZX1onAyauHRQ6eqUP0WrJ70uYacBmE_ZkWyyuJQnZEPRTWVAg4ew"
-        },
-        {
-          "url": "https://inews.co.uk/opinion/noel-fieldings-silence-is-deafening-4889552",
-          "title": "Noel Fielding’s silence is deafening",
-          "publisher": "The i Paper",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhqZY2_ovkdwozdKa4iU95SWkYp0zl7n1IyUtlSi9MRE4Kdy5Gdxcx03sVP00"
-        },
-        {
-          "url": "https://graziadaily.co.uk/life/tv-and-film/is-noel-fielding-leaving-bake-off/",
-          "title": "Noel Fielding addresses his future on The Great British Bake Off",
-          "publisher": "Grazia Daily UK",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-l2qrcDhXaEMABbTEYtDZqFKHxRqT2arF095ABy85QyEsmncdF_0koXikAUA"
-        }
-      ]
-    },
-    {
-      "query": "jessica chastain",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T04:40:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/11/theater/jessica-chastain-broadway-lost-lear.html",
-        "https://www.broadwayworld.com/article/Jessica-Chastain-Michael-Urie-Corey-Stoll-Will-Lead-LOST-LEAR-on-Broadway-20261111",
-        "https://playbill.com/article/jessica-chastain-sets-broadway-return-in-lost-lear"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzf9fP_kadvm9burooRpcz-ODuBPyHx9_CZrtVAVSrvoc1xFWilwD9y_3XUN0",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/11/theater/jessica-chastain-broadway-lost-lear.html",
-          "title": "Jessica Chastain to Star in New Broadway Play ‘Lost Lear’",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzf9fP_kadvm9burooRpcz-ODuBPyHx9_CZrtVAVSrvoc1xFWilwD9y_3XUN0"
-        },
-        {
-          "url": "https://www.broadwayworld.com/article/Jessica-Chastain-Michael-Urie-Corey-Stoll-Will-Lead-LOST-LEAR-on-Broadway-20261111",
-          "title": "Jessica Chastain, Michael Urie & Corey Stoll Will Lead LOST LEAR on Broadway",
-          "publisher": "BroadwayWorld",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkwcV6bhzIc5M46Vvhbi0zWGRBo9EV0ihRITUFQKn1f0TwQygU9M9APe3T6vU"
-        },
-        {
-          "url": "https://playbill.com/article/jessica-chastain-sets-broadway-return-in-lost-lear",
-          "title": "Jessica Chastain Sets Broadway Return in Lost Lear",
-          "publisher": "Playbill",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAjq20X-_28BZ7mvRqUT1gZLLuleJEGx4YE3h9JA5MpwjX2g8sU2Oa0njYwR8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5YgQQVdrI4RgiLRbwyZVMV45cdO07zDjgfYiyiTe8aihpKR1tBtSBoKcCnL8"
         }
       ]
     }
