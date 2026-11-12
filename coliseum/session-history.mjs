@@ -67,7 +67,19 @@ if(arena){
  const makeForm=(inputs,onSubmit)=>{
   const form=el('form','zeus-history-form');
   for(const input of inputs)form.append(input);
-  form.addEventListener('submit',e=>{e.preventDefault();onSubmit()});return form;
+  const submit=()=>{if(form.reportValidity())onSubmit()};
+  // Explicit actions do not depend on a browser-native form submission.
+  for(const control of form.querySelectorAll('button[type="submit"]')){
+   control.type='button';
+   control.addEventListener('click',e=>{e.preventDefault();submit()});
+  }
+  form.addEventListener('keydown',e=>{
+   if(e.key==='Enter'&&!e.shiftKey&&!e.isComposing&&e.target.tagName==='INPUT'){
+    e.preventDefault();submit();
+   }
+  });
+  form.addEventListener('submit',e=>{e.preventDefault();submit()});
+  return form;
  };
  const field=(name,tag='input')=>{
   const n=el(tag);n.setAttribute('aria-label',name);n.placeholder=name;n.maxLength=tag==='textarea'?3000:250;
@@ -75,8 +87,8 @@ if(arena){
  };
  function renderSide(){
   side.replaceChildren(el('h3','','Project threads'));
-  const form=el('form','zeus-history-new');
-  const title=field('New project or topic title');title.required=true;title.minLength=3;title.maxLength=90;
+  const form=el('form','zeus-history-new');form.autocomplete='off';
+  const title=field('New project or topic title');title.required=true;title.minLength=3;title.maxLength=90;title.autocomplete='off';
   title.value=projectTitleDraft;
   title.addEventListener('input',()=>{projectTitleDraft=title.value;persistProjectTitle()});
   const add=el('button','primary','Create project thread');add.type='button';form.append(title,add);
@@ -200,4 +212,13 @@ if(arena){
  }
  function render(){renderSide();renderDetail();notice.textContent='Last recorded action: '+lastActivity}
  render();
+ // Chromium may restore a previous blank form value after module evaluation.
+ // Rehydrate only empty input from the current tab's unsent draft.
+ window.addEventListener('pageshow',()=>{
+  try{
+   const stored=sessionStorage.getItem(PROJECT_TITLE_DRAFT_KEY)||'';
+   const input=side.querySelector('.zeus-history-new input');
+   if(stored&&input&&!input.value){projectTitleDraft=stored;input.value=stored}
+  }catch{}
+ });
 }
