@@ -253,7 +253,7 @@ function executionMessage(execution={},deduplicated=false,status='ready'){
   // Do not echo unknown or untrusted upstream details into owner chat.
   const blockers={
    dependency_pending:'A required dependency job is still pending. Verify its result before retrying this job.',
-   no_matching_runner_adapter:'No matching authenticated repository runner is available. Check the existing Brain executor configuration.',
+   no_matching_runner_adapter:'No matching authenticated repository runner adapter is available. Check the existing Brain executor configuration.',
    owner_decision_required:'An owner decision or security approval is required. The runner will not bypass it.',
    technical_source_evidence_required:'Technical source evidence is required before the runner can claim this job.',
    repository_lease_active:'Another runner holds the repository lease. Check its actual completion or expiry.',
