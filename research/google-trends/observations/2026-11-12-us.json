@@ -3,17 +3,227 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T10:01:31.035757Z",
+  "checked_at": "2026-11-12T10:31:39.356451Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "new york times",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T10:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/10/us/politics/biden-trump-letter.html",
+        "https://apnews.com/article/joe-biden-donald-trump-letter-memoir-d26a89a4e1d6fb1d0cf439bcc050daeb",
+        "https://www.foxnews.com/video/6408206878112"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRo4M8lYZRZL83-O4V-dHJ7XooC8CkRoN7o9CJcnHvZC2P0fNSXta1DlcqjZnU",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/10/us/politics/biden-trump-letter.html",
+          "title": "‘I Know How Much You Love the American People,’ Trump Told Biden in 2021 Letter",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRo4M8lYZRZL83-O4V-dHJ7XooC8CkRoN7o9CJcnHvZC2P0fNSXta1DlcqjZnU"
+        },
+        {
+          "url": "https://apnews.com/article/joe-biden-donald-trump-letter-memoir-d26a89a4e1d6fb1d0cf439bcc050daeb",
+          "title": "A note to ‘46’: Donald Trump’s private message to Joe Biden emerges in new White House memoir",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAayBLCzanx5jkZ5zY0AN33frWZhPXwxn7k8WfWC7eWZAc43GLEtv1LnIyTWM"
+        },
+        {
+          "url": "https://www.foxnews.com/video/6408206878112",
+          "title": "Trump's 2021 farewell letter to Biden read like one from an 'old friend,' Biden says",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQr_W9TvrIBrPI2ShKPcfJeoNPxr9d94gtijIEGwp7OKCL_nAyeWBHgC0Es9X4"
+        }
+      ]
+    },
+    {
+      "query": "nintendo zelda ocarina",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T10:10:00Z",
+      "related_news_urls": [
+        "https://www.nintendo.com/us/whatsnew/the-legend-of-zelda-ocarina-of-time-for-nintendo-switch-2-sells-over-5-2-million-units-worldwide-in-first-four-days/",
+        "https://gameinformer.com/2026/11/11/the-legend-of-zelda-ocarina-of-time-remake-is-nintendos-fastest-selling-switch-2-game",
+        "https://www.polygon.com/ocarina-of-time-remake-remembering-grandma/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrjq4T1B2PoODIOmmTx6eauVBlTzFz7TH53Qj5M8Go9LAPDk5160AYYianpKw",
+      "image_credit": "Nintendo",
+      "news": [
+        {
+          "url": "https://www.nintendo.com/us/whatsnew/the-legend-of-zelda-ocarina-of-time-for-nintendo-switch-2-sells-over-5-2-million-units-worldwide-in-first-four-days/",
+          "title": "The Legend of Zelda: Ocarina of Time for Nintendo Switch 2 sells over 5.2 million units worldwide in first four days",
+          "publisher": "Nintendo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrjq4T1B2PoODIOmmTx6eauVBlTzFz7TH53Qj5M8Go9LAPDk5160AYYianpKw"
+        },
+        {
+          "url": "https://gameinformer.com/2026/11/11/the-legend-of-zelda-ocarina-of-time-remake-is-nintendos-fastest-selling-switch-2-game",
+          "title": "The Legend Of Zelda: Ocarina Of Time Remake Is Nintendo's Fastest-Selling Switch 2 Game Ever",
+          "publisher": "Game Informer",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkwBCpQ_YPvA4rsJkK5oE8hS24WkM3hhLPtqj-_RWmzNf7oX1gP6TVftl-mto"
+        },
+        {
+          "url": "https://www.polygon.com/ocarina-of-time-remake-remembering-grandma/",
+          "title": "My grandma got me through the Water Temple. She would’ve loved the Ocarina of Time remake",
+          "publisher": "Polygon.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQS1SSsf7pouoYoLxxrGbM513ZzBBCzA18KD2c2acbOYdvKMHK17eTjgULjJlQ"
+        }
+      ]
+    },
+    {
+      "query": "pakistan vs sri lanka",
+      "approx_searches": "100+",
+      "published_at": "2026-11-12T10:10:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/story/pak-vs-sl-wtc-second-tier-finds-its-purpose-in-the-next-generation-1562044",
+        "https://www.foxsports.com/articles/soccer/saqibs-7wicket-total-on-debut-holds-sri-lanka-to-a-slender-1stinnings-lead-vs-pakistan",
+        "https://www.dawn.com/news/2043497"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQagEFCYURPA8S5e2TDrMEglvRbrRYQigXsRFTOG6OSZmQDwzgG6P1zUFttmAc",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/story/pak-vs-sl-wtc-second-tier-finds-its-purpose-in-the-next-generation-1562044",
+          "title": "How the WTC is reshaping the second tier of Test cricket",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQagEFCYURPA8S5e2TDrMEglvRbrRYQigXsRFTOG6OSZmQDwzgG6P1zUFttmAc"
+        },
+        {
+          "url": "https://www.foxsports.com/articles/soccer/saqibs-7wicket-total-on-debut-holds-sri-lanka-to-a-slender-1stinnings-lead-vs-pakistan",
+          "title": "Saqib's 7-wicket total on debut holds Sri Lanka to a slender 1st-innings lead vs Pakistan",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4s4BZOkTNXN3YIPa9D2mGE41CMQSYHPibv39-9pCCL84ruNU6IK4Wzep74lk"
+        },
+        {
+          "url": "https://www.dawn.com/news/2043497",
+          "title": "Pakistan tighten grip on first Test as Sri Lanka struggle at 114-3",
+          "publisher": "Dawn",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSQee6Tgl1ScoIVv6lrPJu_PBSorQ1Zfo5Fjv14QHQQpu9q4HtZCjerWtMg44"
+        }
+      ]
+    },
+    {
+      "query": "alexander darchiev",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T09:50:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/11/europe/russian-ambassador-to-us-dies-intl",
+        "https://www.nytimes.com/2026/11/11/world/europe/russian-ambassador-darchiev-dead.html",
+        "https://www.dw.com/en/russian-foreign-ministry-says-its-ambassador-to-us-has-died/a-79924829"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrJVvVi1GxL_ttjUanDkSbzCL7MH2ZnzUZrG1pQvhN4Gv_D3TmH4Xnxogvtas",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/11/europe/russian-ambassador-to-us-dies-intl",
+          "title": "Russian ambassador to US dies suddenly, foreign ministry says",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrJVvVi1GxL_ttjUanDkSbzCL7MH2ZnzUZrG1pQvhN4Gv_D3TmH4Xnxogvtas"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/11/world/europe/russian-ambassador-darchiev-dead.html",
+          "title": "Alexander Darchiev, Russia’s Ambassador to the U.S., Dies at 66",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSMNmMoALnZVun-D7SnlkKrxLDZrCq_bmoH4V4VOZVIRSz1m3N0KDL-AAMN8Y"
+        },
+        {
+          "url": "https://www.dw.com/en/russian-foreign-ministry-says-its-ambassador-to-us-has-died/a-79924829",
+          "title": "Russian Foreign Ministry says ambassador to US Alexander Darchiev has died at age 66",
+          "publisher": "DW.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0EMt59kd3Q3eLTA-nR3KQVUBFsnpJYXHbedEnJIUdjulqTQdW3T4kOWiNv_E"
+        }
+      ]
+    },
+    {
+      "query": "nathaniel buzolic",
+      "approx_searches": "100+",
+      "published_at": "2026-11-12T09:40:00Z",
+      "related_news_urls": [
+        "https://www.hollywoodreporter.com/tv/tv-news/vampire-diaries-nathaniel-buzolic-co-star-banned-fan-events-pro-israel-1236753631/",
+        "https://www.thewrap.com/culture-lifestyle/culture/vampire-diaries-nathaniel-buzolic-blacklisted-pro-israel/",
+        "https://thetab.com/2026/11/10/vampire-diaries-actor-tempted-to-get-lawyer-as-he-claims-co-star-joseph-morgan-got-him-banned"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlwMujGDcQfSryIcT2grVypm9udOnZpQFD4U-rGx6VslGjpvjChZRAolnajCI",
+      "image_credit": "The Hollywood Reporter",
+      "news": [
+        {
+          "url": "https://www.hollywoodreporter.com/tv/tv-news/vampire-diaries-nathaniel-buzolic-co-star-banned-fan-events-pro-israel-1236753631/",
+          "title": "‘Vampire Diaries’ Star Accuses “Coward” Co-Star of Blacklisting Him From Fan Events Due to Pro-Israel Views",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlwMujGDcQfSryIcT2grVypm9udOnZpQFD4U-rGx6VslGjpvjChZRAolnajCI"
+        },
+        {
+          "url": "https://www.thewrap.com/culture-lifestyle/culture/vampire-diaries-nathaniel-buzolic-blacklisted-pro-israel/",
+          "title": "‘The Vampire Diaries’ Alum Claims ‘Coward’ Co-Star Blacklisted Him From Fan Events for Being Pro-Israel",
+          "publisher": "TheWrap",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc3K1p_Hnv-eUczK1xuMu8f0rlq3HxmIqcybxEJCUrhu00XmlGKu8LhlnPlfA"
+        },
+        {
+          "url": "https://thetab.com/2026/11/10/vampire-diaries-actor-tempted-to-get-lawyer-as-he-claims-co-star-joseph-morgan-got-him-banned",
+          "title": "Vampire Diaries actor ‘tempted’ to get lawyer as he claims co-star Joseph Morgan got him banned",
+          "publisher": "The Tab",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRblM3j0OXKHNHBxHNw2JyF8UMDn50KFZeDrObtPl0CrsRSBGTTp0ftJ2OebtI"
+        }
+      ]
+    },
+    {
+      "query": "backward retirement approach gen x",
+      "approx_searches": "100+",
+      "published_at": "2026-11-12T09:30:00Z",
+      "related_news_urls": [
+        "https://crr.bc.edu/how-family-risks-affect-retirement-planning/",
+        "https://www.investmentnews.com/retirement-planning/gen-x-retirement-savings-facing-collision-of-financial-pressures-from-family-obligations/268970",
+        "https://newswav.com/article/we-calculated-how-much-200-a-month-in-family-support-adds-up-to-over-10-yea-A2611_LHOFpg"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFAtsIzVg2Ti1gALyI7jGudBBKsioVkbpXZYL_XCc2-hsO1Yz1cQ35_fXoZOc",
+      "image_credit": "Center for Retirement Research",
+      "news": [
+        {
+          "url": "https://crr.bc.edu/how-family-risks-affect-retirement-planning/",
+          "title": "How Family Risks Affect Retirement Planning",
+          "publisher": "Center for Retirement Research",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFAtsIzVg2Ti1gALyI7jGudBBKsioVkbpXZYL_XCc2-hsO1Yz1cQ35_fXoZOc"
+        },
+        {
+          "url": "https://www.investmentnews.com/retirement-planning/gen-x-retirement-savings-facing-collision-of-financial-pressures-from-family-obligations/268970",
+          "title": "Gen X retirement savings facing ‘collision of financial pressures’ from family obligations",
+          "publisher": "InvestmentNews",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdZvdsExBgoeS_YxYCZh7tPjC-2nXkyZb82RxE2NXwV5l8auo4sGfvkOjN7fE"
+        },
+        {
+          "url": "https://newswav.com/article/we-calculated-how-much-200-a-month-in-family-support-adds-up-to-over-10-yea-A2611_LHOFpg",
+          "title": "We Calculated How Much $200 a Month in Family Support Adds Up to Over 10 Years",
+          "publisher": "Newswav",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoeBy7-9IXpTp8KHhc5SBIrU0QRagsbYZEmq5zr5_3vr89jjuf4ir8cpT0NIY"
+        }
+      ]
+    },
+    {
       "query": "when will fortnite servers be back up",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-12T09:20:00Z",
       "related_news_urls": [
         "https://www.northjersey.com/story/tech/gaming/2026/11/12/fortnite-offline-for-update-will-pirate-coin-odds-increase/92736560007/",
         "https://www.mmoexp.com/News/fortnite-servers-down-today-how-to-fix-servers-not-responding-update-43-10.html",
-        "https://www.mmoexp.com/News/fortnite-update-43-10-guide-mystery-qol-change-patch-release-time-new-content-revealed.html"
+        "https://beebom.com/fortnite-43-10-update-patch-notes/"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjbERAz9BeqdHc4M30cc8cSHS-rMnq4_CZIDwXkdkW3E6byW90Z2Wd4zSxo48",
       "image_credit": "Bergen Record",
@@ -33,11 +243,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjBVujGtvEjGgDnsIz4Ao69SB32MNQZoAv_p_yuS24kouGiYsUBoYxELByqMc"
         },
         {
-          "url": "https://www.mmoexp.com/News/fortnite-update-43-10-guide-mystery-qol-change-patch-release-time-new-content-revealed.html",
-          "title": "Fortnite Update 43.10 Guide: Mystery QoL Change, Patch Release Time & New Content Revealed",
-          "publisher": "MMOEXP",
+          "url": "https://beebom.com/fortnite-43-10-update-patch-notes/",
+          "title": "Fortnite Update 43.10 Early Patch Notes: New Sprites, Festival Season 16, and More",
+          "publisher": "Beebom",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1id2z87o4dqy5bZK-EI60iZylU7yhmkL5dhT65vK5uH_0xCLsNjKvLsyGk00"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7ele62UXn_JmyS2Qq3F7Ew2N-QsGuuK_yIT45iw_zvfGa6r0tB650PYsY5Ic"
         }
       ]
     },
@@ -82,8 +292,8 @@
       "published_at": "2026-11-12T09:10:00Z",
       "related_news_urls": [
         "https://www.eastidahonews.com/2026/11/amber-alert-teen-abducted-in-pocatello-police-say/",
-        "https://bnonews.com/index.php/2026/11/idaho-amber-alert-14-year-old-jayleen-believed-abducted-in-pocatello/",
-        "https://www.10tv.com/article/syndication/pammy-maye-5-year-old-darnell-taylor-death-trial/530-4c5321ec-fa32-4da5-a148-85f4f9156783"
+        "https://www.kivitv.com/news/amber-alert-issued-for-missing-14-year-old-girl-last-seen-in-pocatello",
+        "https://bnonews.com/index.php/2026/11/idaho-amber-alert-14-year-old-jayleen-believed-abducted-in-pocatello/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQONEmiOiEIDxNLtPHulnOqncyaBhYkf_3wemyDm2kEonoGRWd2enPnqJnz3VU",
       "image_credit": "East Idaho News",
@@ -96,18 +306,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQONEmiOiEIDxNLtPHulnOqncyaBhYkf_3wemyDm2kEonoGRWd2enPnqJnz3VU"
         },
         {
+          "url": "https://www.kivitv.com/news/amber-alert-issued-for-missing-14-year-old-girl-last-seen-in-pocatello",
+          "title": "Amber Alert issued for missing 14-year-old girl last seen in Pocatello",
+          "publisher": "Idaho News 6",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbeRE3yY1aOq2p8v7n695jNWVayVsFt0II2hUH8FpeEwMwcpE7CAmknnHlGJo"
+        },
+        {
           "url": "https://bnonews.com/index.php/2026/11/idaho-amber-alert-14-year-old-jayleen-believed-abducted-in-pocatello/",
           "title": "Idaho Amber Alert: 14-year-old Jayleen believed abducted in Pocatello",
           "publisher": "BNO News",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCjdxEkyefVqRKFfCnZImrC52jzfpTJnNqWaioEy2jN94VnypDdlE6bvi5FfY"
-        },
-        {
-          "url": "https://www.10tv.com/article/syndication/pammy-maye-5-year-old-darnell-taylor-death-trial/530-4c5321ec-fa32-4da5-a148-85f4f9156783",
-          "title": "Jury reaches verdict in trial of Columbus woman accused of killing 5-year-old boy",
-          "publisher": "10tv.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSms2wKCJpid651_Mzt01fDISNnceeqeqKn6gk4zcZdh2M4t2YhReNH-m4d7dg"
         }
       ]
     },
@@ -143,216 +353,6 @@
           "publisher": "Toronto Star",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWbO6XDcvASLSq1FHrJqLH_f732vQXPR0uCXZLWUGobtEESgAD7Ayua7uoju0"
-        }
-      ]
-    },
-    {
-      "query": "ohio state buckeyes football",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T09:00:00Z",
-      "related_news_urls": [
-        "https://www.nbc4i.com/sports/buckeyes/buckeyes-plummet-to-lowest-ranking-ever-in-playoff-era/",
-        "https://www.usatoday.com/story/sports/ncaaf/bigten/2026/11/10/ohio-state-cfp-ranking-worst-ever-buckeyes-football-playoff/92713227007/",
-        "https://www.cleveland.com/osu/2026/11/ohio-states-college-football-playoff-hopes-are-still-alive-it-just-needs-a-little-bit-of-chaos-stephen-means.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNiyuYMrbOLg8bGFe5zhzAQJtHOSiCBDdNW0feNpr1Ek-esnTsieXI57ycjfY",
-      "image_credit": "NBC4 WCMH-TV",
-      "news": [
-        {
-          "url": "https://www.nbc4i.com/sports/buckeyes/buckeyes-plummet-to-lowest-ranking-ever-in-playoff-era/",
-          "title": "Buckeyes plummet to lowest ranking ever in playoff era",
-          "publisher": "NBC4 WCMH-TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNiyuYMrbOLg8bGFe5zhzAQJtHOSiCBDdNW0feNpr1Ek-esnTsieXI57ycjfY"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/ncaaf/bigten/2026/11/10/ohio-state-cfp-ranking-worst-ever-buckeyes-football-playoff/92713227007/",
-          "title": "Ohio State hits a new low in latest CFP rankings",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYLKJ2BoL2JgSMt1Rz3u25kS3F_F4s16tDVWNq7DQR9WfsWqtJj30Qk5TKZ_o"
-        },
-        {
-          "url": "https://www.cleveland.com/osu/2026/11/ohio-states-college-football-playoff-hopes-are-still-alive-it-just-needs-a-little-bit-of-chaos-stephen-means.html",
-          "title": "Ohio State's CFP hopes are alive — but the Buckeyes need everything to go right",
-          "publisher": "Cleveland.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeyP2Br8gIVB5TOONgLLX06_8Vjsto8b-0Dkb5evKn3ZiRrg0uolayoQYL4yI"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 online release date",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-12T09:00:00Z",
-      "related_news_urls": [
-        "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
-        "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
-        "https://mashable.com/entertainment/gta-grand-theft-auto-6-ps5-xbox-differences"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZll1tApV9Ds71HmTdujHYiNfoBn3zrlJCvS7S-pg_vQYPoW8x18hTe8WUCZg",
-      "image_credit": "Rockstar Games",
-      "news": [
-        {
-          "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
-          "title": "Pre-Load Grand Theft Auto VI Now",
-          "publisher": "Rockstar Games",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZll1tApV9Ds71HmTdujHYiNfoBn3zrlJCvS7S-pg_vQYPoW8x18hTe8WUCZg"
-        },
-        {
-          "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
-          "title": "Grand Theft Auto VI Comes to XBOX One and XBOX Series X|S Through XBOX Cloud Gaming on November 19",
-          "publisher": "XBOX Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk"
-        },
-        {
-          "url": "https://mashable.com/entertainment/gta-grand-theft-auto-6-ps5-xbox-differences",
-          "title": "'GTA 6' on PS5 vs. Xbox: What we know",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQv8S9fkHNrXf6pYMlXleXLtqIOq8hcFZrsH7KeO1eKw9gwWBPYvW8V9DFIih4"
-        }
-      ]
-    },
-    {
-      "query": "rockstar",
-      "approx_searches": "100+",
-      "published_at": "2026-11-12T09:00:00Z",
-      "related_news_urls": [
-        "https://rockstarintel.com/new-gta-vi-footage-looks-so-stunning-fans-cant-believe-it/",
-        "https://x.com/i/trending/2120593749869047844",
-        "https://www.mmoexp.com/News/gta-6-realism-revealed-how-rockstar-is-bringing-miami-to-life-with-smarter-npcs-realistic-cars-and-lifelike-animations.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpbSOWEUncxMk0eSVdKvnW1kyZcl7wh2-xMYFIMlwK2XxvKUV62GnqrUTIfos",
-      "image_credit": "RockstarINTEL",
-      "news": [
-        {
-          "url": "https://rockstarintel.com/new-gta-vi-footage-looks-so-stunning-fans-cant-believe-it/",
-          "title": "New GTA VI Footage Looks So Stunning Fans Can’t Believe It",
-          "publisher": "RockstarINTEL",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpbSOWEUncxMk0eSVdKvnW1kyZcl7wh2-xMYFIMlwK2XxvKUV62GnqrUTIfos"
-        },
-        {
-          "url": "https://x.com/i/trending/2120593749869047844",
-          "title": "GTA VI Footage So Realistic It Mimics Real Life",
-          "publisher": "X",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaDq0WplU1uYTQj0Rg3p8UNIS_h5riBXu3SDGkfe_ZDRMlMpbgydbc0T3fE8I"
-        },
-        {
-          "url": "https://www.mmoexp.com/News/gta-6-realism-revealed-how-rockstar-is-bringing-miami-to-life-with-smarter-npcs-realistic-cars-and-lifelike-animations.html",
-          "title": "GTA 6 Realism Revealed: How Rockstar Is Bringing Miami to Life with Smarter NPCs, Realistic Cars, and Lifelike Animations",
-          "publisher": "MMOEXP",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsK-qLfdAGH7xIDZ0UekKwC6lIE9QhVMklFB16LuGLoJ1G2D-E48WDtEGacw0"
-        }
-      ]
-    },
-    {
-      "query": "jennifer aniston",
-      "approx_searches": "100+",
-      "published_at": "2026-11-12T09:00:00Z",
-      "related_news_urls": [
-        "https://www.elle.com/beauty/hair/a74347544/jennifer-aniston-hair-routine-lolavie-hairspray/",
-        "https://www.instyle.com/the-rachel-haircut-12124839",
-        "https://pagesix.com/2026/11/10/style/jennifer-aniston-reveals-which-fellow-celebrity-gives-her-hair-envy/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROb7XDv4yS4gZtlkzqaZ22bwJ94aeJ0Oxyv9HNEDqGeMrZ-ADyDkaVu9_FW4M",
-      "image_credit": "ELLE",
-      "news": [
-        {
-          "url": "https://www.elle.com/beauty/hair/a74347544/jennifer-aniston-hair-routine-lolavie-hairspray/",
-          "title": "Jennifer Aniston Says ‘The Rachel’ Was Anything But Effortless",
-          "publisher": "ELLE",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROb7XDv4yS4gZtlkzqaZ22bwJ94aeJ0Oxyv9HNEDqGeMrZ-ADyDkaVu9_FW4M"
-        },
-        {
-          "url": "https://www.instyle.com/the-rachel-haircut-12124839",
-          "title": "Your Expert Guide to Recreating Jennifer Aniston’s Iconic “Rachel” Haircut",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaQaoCqyG1auketlfU1hIeA2JVR3TlZXq2R3iOoMnEJN85ci-CZctnBarzQoA"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/10/style/jennifer-aniston-reveals-which-fellow-celebrity-gives-her-hair-envy/",
-          "title": "Jennifer Aniston reveals which fellow A-lister gives her ‘hair envy’",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRC7PSYPcZbIpOfJ0aJG1Y8kHR-JbZyxRsdEje64jGkEP9qu0z92JOK4SPrlUU"
-        }
-      ]
-    },
-    {
-      "query": "aaron reitz letter richard blumenthal",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T08:50:00Z",
-      "related_news_urls": [
-        "https://www.nbcnews.com/politics/trump-administration/us-attorney-demands-sen-richard-blumenthal-preserve-documents-inquiry-rcna608899",
-        "https://www.democracydocket.com/news-alerts/u-s-attorney-threatens-democratic-senator-with-prosecution-for-conducting-oversight/",
-        "https://www.washingtonexaminer.com/news/senate/4801017/doj-blumenthal-ballroom-investigation-threat-trump/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-XiAw-f3g6N3pBm7MjgxYiFk6ixsoroi1Ki-A5Yhdl5wWAssMqjRLC1NRZ2M",
-      "image_credit": "NBC News",
-      "news": [
-        {
-          "url": "https://www.nbcnews.com/politics/trump-administration/us-attorney-demands-sen-richard-blumenthal-preserve-documents-inquiry-rcna608899",
-          "title": "U.S. attorney demands Sen. Richard Blumenthal preserve documents from his inquiry into White House ballroom",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-XiAw-f3g6N3pBm7MjgxYiFk6ixsoroi1Ki-A5Yhdl5wWAssMqjRLC1NRZ2M"
-        },
-        {
-          "url": "https://www.democracydocket.com/news-alerts/u-s-attorney-threatens-democratic-senator-with-prosecution-for-conducting-oversight/",
-          "title": "U.S. attorney threatens Democratic senator with prosecution for conducting oversight",
-          "publisher": "Democracy Docket",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRta4J5qNKYA3wxrkCg9QzsYwQB7oZPTEbwdoRtzImkWXJn2RDM117T0EEc-hM"
-        },
-        {
-          "url": "https://www.washingtonexaminer.com/news/senate/4801017/doj-blumenthal-ballroom-investigation-threat-trump/",
-          "title": "DOJ says Blumenthal ballroom investigation intimidating Trumpers",
-          "publisher": "Washington Examiner",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQj_LlO9RMqkiUPnmDNLkqJyxGng8DkqUekJBJmfL4n2fEeT7l0cwSC3XsEoXI"
-        }
-      ]
-    },
-    {
-      "query": "黄仁勋",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T08:00:00Z",
-      "related_news_urls": [
-        "https://cn.nytimes.com/business/20261111/alice-huang-megaspeed-nvidia-jensen-huang/",
-        "https://cn.wsj.com/articles/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-676827ef",
-        "https://www.bbc.com/zhongwen/articles/cjr4y41lv6zko/simp"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJ8D5d0upuq6XnBWy0TFYbJK10nMx75x9huoi15G3-8L8sUFUercMKhUrIdTA",
-      "image_credit": "纽约时报中文网",
-      "news": [
-        {
-          "url": "https://cn.nytimes.com/business/20261111/alice-huang-megaspeed-nvidia-jensen-huang/",
-          "title": "黄仁勋事件中的“女主角”黄乐是谁？",
-          "publisher": "纽约时报中文网",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJ8D5d0upuq6XnBWy0TFYbJK10nMx75x9huoi15G3-8L8sUFUercMKhUrIdTA"
-        },
-        {
-          "url": "https://cn.wsj.com/articles/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-676827ef",
-          "title": "英伟达正准备罢免CEO黄仁勋",
-          "publisher": "华尔街日报中文网",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSR2PMVNYzt_Eb_uSd4Cx5l5z0VdrMs1yb2NTxVol1Jwtg9nTc9D1UPMiAAOko"
-        },
-        {
-          "url": "https://www.bbc.com/zhongwen/articles/cjr4y41lv6zko/simp",
-          "title": "黄仁勋婚外情：被指为中共间谍的黄乐是谁？",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPMy4JAIszsZ6BIkqUYl587z6LucXZwEOM0prIXz4XIbi219erVy379LZd0rA"
         }
       ]
     }
