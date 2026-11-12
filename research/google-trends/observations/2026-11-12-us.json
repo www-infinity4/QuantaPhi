@@ -3,17 +3,192 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T17:31:01.838403Z",
+  "checked_at": "2026-11-12T18:01:22.141919Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "seatgeek",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T17:40:00Z",
+      "related_news_urls": [
+        "https://51st.news/dc-concert-resale-act-lawsuit/",
+        "https://www.lawcommentary.com/articles/dc-seatgeek-vivid-seats-ticket-resale-cap-lawsuit",
+        "https://news.pollstar.com/2026/11/12/dc-defends-ticketing-reform-in-federal-lawsuit-response/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0DRBxYGAt9wbssUdK7N1GXpWXxwoseQdDwcJdW3TUQuI9mvW8eI4WPRn9xBY",
+      "image_credit": "The 51st",
+      "news": [
+        {
+          "url": "https://51st.news/dc-concert-resale-act-lawsuit/",
+          "title": "Inside DC's legal battle over secondhand ticket sales",
+          "publisher": "The 51st",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0DRBxYGAt9wbssUdK7N1GXpWXxwoseQdDwcJdW3TUQuI9mvW8eI4WPRn9xBY"
+        },
+        {
+          "url": "https://www.lawcommentary.com/articles/dc-seatgeek-vivid-seats-ticket-resale-cap-lawsuit",
+          "title": "D.C. Fights SeatGeek, Vivid Seats Bid to Block Ticket Resale Cap",
+          "publisher": "Law Commentary",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTMDqXavYfotLTt_QXGEtfl-eCZcmwPMELZRph8Ag5FGkXjj5EsyC80oDEP0LE"
+        },
+        {
+          "url": "https://news.pollstar.com/2026/11/12/dc-defends-ticketing-reform-in-federal-lawsuit-response/",
+          "title": "DC Defends Ticketing Reform In Federal Lawsuit Response",
+          "publisher": "Pollstar News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXIvYPAaVNMiB3o_zNGsy8two_amEsIBFmhjLT9FOPIuu4LiM9nVO8H-6W5qc"
+        }
+      ]
+    },
+    {
+      "query": "holger rune",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T17:40:00Z",
+      "related_news_urls": [
+        "https://www.atptour.com/en/video/highlights-rune-reaches-stockholm-2026-qfs-sets-fritz-clash",
+        "https://www.skysports.com/tennis/watch/7108791650619133112/bybit-stockholm-open-2026",
+        "https://sportsbook.fanduel.com/tennis/atp-stockholm-2026/miomir-kecmanovic-v-holger-rune-36306107"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsRKhSCZAa3mlQCMkgX_dZ9HM2ncIDsCxeEsoABqbmyFaoEGKlzoJ9LnlMklY",
+      "image_credit": "ATP Tour",
+      "news": [
+        {
+          "url": "https://www.atptour.com/en/video/highlights-rune-reaches-stockholm-2026-qfs-sets-fritz-clash",
+          "title": "Highlights: Rune reaches Stockholm 2026 QFs, sets Fritz clash",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsRKhSCZAa3mlQCMkgX_dZ9HM2ncIDsCxeEsoABqbmyFaoEGKlzoJ9LnlMklY"
+        },
+        {
+          "url": "https://www.skysports.com/tennis/watch/7108791650619133112/bybit-stockholm-open-2026",
+          "title": "Sports News, Transfers, Scores | Watch Live Sport",
+          "publisher": "Sky Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3d2pkhWpG3S2Uz7nJz1ib7CFheb5aQflO3R_eTJ4QVYcmagGdI5BkWeZCesQ"
+        },
+        {
+          "url": "https://sportsbook.fanduel.com/tennis/atp-stockholm-2026/miomir-kecmanovic-v-holger-rune-36306107",
+          "title": "Miomir Kecmanovic v Holger Rune Odds",
+          "publisher": "FanDuel Sportsbook",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA"
+        }
+      ]
+    },
+    {
+      "query": "stubhub",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T17:30:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/business/retail/stubhub-swings-to-profit-sees-higher-gross-merchandise-sales-05fe7ec4",
+        "https://finimize.com/content/stubhubs-q3-miss-left-analysts-looking-for-a-growth-driver",
+        "https://finance.biggo.com/news/6511cc5f-39f7-40c9-83b9-af4ccd049d4c"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbein74qj-1QDy8GNupWsMSEyKVHiqyIBwsQCpy0lT2l9Ji5lNKz5uvaAC_pM",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/business/retail/stubhub-swings-to-profit-sees-higher-gross-merchandise-sales-05fe7ec4",
+          "title": "Stubhub Swings to Profit, Names New Finance Chief",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbein74qj-1QDy8GNupWsMSEyKVHiqyIBwsQCpy0lT2l9Ji5lNKz5uvaAC_pM"
+        },
+        {
+          "url": "https://finimize.com/content/stubhubs-q3-miss-left-analysts-looking-for-a-growth-driver",
+          "title": "StubHub’s Q3 Miss Left Analysts Looking For A Growth Driver",
+          "publisher": "Finimize",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRViCXWUiXm9KyhAHdqbzS8KNHrhu9Sn_1BTxv8CHM6pyfF15PoUMAOceWpTIE"
+        },
+        {
+          "url": "https://finance.biggo.com/news/6511cc5f-39f7-40c9-83b9-af4ccd049d4c",
+          "title": "StubHub's Profit Engine Roars Even as Revenue and EPS Miss; Shares Down 60% This Year",
+          "publisher": "BigGo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTckLWMdJuG2JHusG7d4cq_PCpFPsmBle1bElgzU7iK7ZJcmv4PPtN40WQOLc"
+        }
+      ]
+    },
+    {
+      "query": "bruce arians",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T17:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/super-bowl-winning-coach-itch-172620452.html",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-12/bruce-arians-says-he-has-the-itch-to-coach-again",
+        "https://nfltraderumors.co/bruce-arians-wants-to-return-to-coaching-in-nfl/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdQ2v-0r7-ODD7dlXkjFrbGkyBeopWIVpjm1tq2azPx4wU9Zzm69K6izFDAkY",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/super-bowl-winning-coach-itch-172620452.html",
+          "title": "Super Bowl-winning coach ‘has itch’ to return to game",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdQ2v-0r7-ODD7dlXkjFrbGkyBeopWIVpjm1tq2azPx4wU9Zzm69K6izFDAkY"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-12/bruce-arians-says-he-has-the-itch-to-coach-again",
+          "title": "Bruce Arians says he has the itch to coach again",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYVjKJ7MOnvbdv7evUPFVj7kJeaHwcbICrUWXCtm7k7hrLlPQU60rHpeGNWco"
+        },
+        {
+          "url": "https://nfltraderumors.co/bruce-arians-wants-to-return-to-coaching-in-nfl/",
+          "title": "Bruce Arians Wants To Return To Coaching In NFL",
+          "publisher": "NFLTradeRumors.co",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReCu_BafHxMT4X73JJteyrObZNkjqaqqJ7xGZY9uhu5rym46YmJly9xRE6XnY"
+        }
+      ]
+    },
+    {
+      "query": "nvidia cmp 170hx voltage mod",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T17:20:00Z",
+      "related_news_urls": [
+        "https://www.tomshardware.com/pc-components/gpus/techie-turns-usd2-500-cmp-170hx-8gb-mining-card-into-a-full-fat-a100-80gb-with-voltage-glitching-carefully-blowing-onboard-fuses-to-unlock-entire-vram-and-shader-modules",
+        "https://mezha.net/eng/news/mezha-ea82236eb29df1572a42529e_voltage_glitching_unlocks/",
+        "https://dev.ua/en/news/peretvorennia-videokarty-za-2-500-na-povnotsinnyi-pryskoriuvach-nvidia-a100-za-20-000-1794485233"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQYLghaHy5yMwSxh6pcbMJzRv3uCBpBoah74bg_8T46PEz5KcTWys71NdKKaY",
+      "image_credit": "Tom's Hardware",
+      "news": [
+        {
+          "url": "https://www.tomshardware.com/pc-components/gpus/techie-turns-usd2-500-cmp-170hx-8gb-mining-card-into-a-full-fat-a100-80gb-with-voltage-glitching-carefully-blowing-onboard-fuses-to-unlock-entire-vram-and-shader-modules",
+          "title": "Techie uses voltage glitching hack to turn $2,500 Nvidia 8GB cryptomining GPU into a full-fat $20,000 A100 with 80GB of VRAM — hack carefully blows onboard fuses to unlock entire V",
+          "publisher": "Tom's Hardware",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQYLghaHy5yMwSxh6pcbMJzRv3uCBpBoah74bg_8T46PEz5KcTWys71NdKKaY"
+        },
+        {
+          "url": "https://mezha.net/eng/news/mezha-ea82236eb29df1572a42529e_voltage_glitching_unlocks/",
+          "title": "Voltage glitching unlocks up to 80GB of VRAM on Nvidia CMP-170HX mining cards",
+          "publisher": "Mezha.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXsl4XCXnOYpgtDH-cItNUj2r9O5BNClTyx8UtMl3mkcl1JpxfwnGU0k4Y6ec"
+        },
+        {
+          "url": "https://dev.ua/en/news/peretvorennia-videokarty-za-2-500-na-povnotsinnyi-pryskoriuvach-nvidia-a100-za-20-000-1794485233",
+          "title": "Engineer used power surges to turn $2,500 mining graphics card into a full-fledged $20,000 Nvidia A100 accelerator",
+          "publisher": "Dev.ua",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbMc9_i89Iq9uDb-HzqzJrR6RlyisuYm1xxSa4UJLoTgJ850S2vj0YuX0KdTk"
+        }
+      ]
+    },
+    {
       "query": "uefa nations league schedule",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-12T17:10:00Z",
       "related_news_urls": [
         "https://www.uefa.com/uefanationsleague/news/02ab-220793bfb8a3-00d5842942af-1000--uefa-nations-league-matchday-5-preview-harry-kane-set-for-en/",
         "https://www.dazn.com/en-GB/news/football/nations-league-tips-best-bets-and-predictions-preview-portugal-denmark-norway-dbn/cuso2p5dnmjd155efl7uo316s",
-        "https://www.voiceofemirates.com/en/sport/2026/11/12/todays-matches-and-broadcast-channels-strong-clashes-in-the-uefa-nations-league-2/"
+        "https://www.thelines.com/uk/tips/nations-league/nations-league-predictions-betting-tips-wins-for-england-spain/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbNcmnjOSzrLZnQBin5C4ruYLpEBOBRSbE5okgCqCEqw_AQdIM-ozDjsRv-g",
       "image_credit": "UEFA.com",
@@ -33,17 +208,17 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCxoeo6a_h9rVZWcCmt778_PCtwMOwGDClsvBxnxw3SC4VHnoMbskoO5F5sZM"
         },
         {
-          "url": "https://www.voiceofemirates.com/en/sport/2026/11/12/todays-matches-and-broadcast-channels-strong-clashes-in-the-uefa-nations-league-2/",
-          "title": "Today’s matches and broadcast channels: Strong clashes in the UEFA Nations League",
-          "publisher": "صوت الإمارات",
+          "url": "https://www.thelines.com/uk/tips/nations-league/nations-league-predictions-betting-tips-wins-for-england-spain/",
+          "title": "Nations League Predictions & Betting Tips: Wins for England & Spain",
+          "publisher": "TheLines.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFE-MoCXRZgIXPXFZnmVBfSqzWZPmTGb9cpJ72Q2I-9GxuSWDv1x364HV_oHA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYER3H5r8ZGFyh5QIwQfGQsEX6LNBUHVMYb95oPF1cs714FYeUaaZReZ7tf5w"
         }
       ]
     },
     {
       "query": "sabrina carpenter",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-12T17:00:00Z",
       "related_news_urls": [
         "https://www.billboard.com/music/music-news/sabrina-carpenter-johnnie-walker-damien-chazelle-ad-1236378794/",
@@ -153,7 +328,7 @@
       "related_news_urls": [
         "https://www.bbc.com/sport/football/articles/c5vg23nmgp2yo",
         "https://www.theguardian.com/football/live/2026/nov/12/barcelona-v-arsenal-womens-champions-league-live",
-        "https://sports.yahoo.com/articles/barcelona-arsenal-surprises-both-starting-170400981.html"
+        "https://www.arsenal.com/news/team-news-one-change-at-camp-nou-aqkEx2o6aPUk"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzgB01XANCZsA6CjR2FWTyNXVjexkJVqk_JuhTpbcCWwGTOGctP7V-UG9M35s",
       "image_credit": "BBC",
@@ -173,186 +348,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQND6-S9HpVYnc6s-zPXVr-j4VQvYx4cuLu33mlDw0mqlG23YovIlfYvcT9BVc"
         },
         {
-          "url": "https://sports.yahoo.com/articles/barcelona-arsenal-surprises-both-starting-170400981.html",
-          "title": "🚨 Barcelona-Arsenal: surprises in both starting line-ups",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.arsenal.com/news/team-news-one-change-at-camp-nou-aqkEx2o6aPUk",
+          "title": "Team news: One change at Camp Nou",
+          "publisher": "Arsenal.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpt-1IY9-71Z9u-3PskSX8tLoAMwr01WC7asWyJft1uN3iyynuWO902nKLmgc"
-        }
-      ]
-    },
-    {
-      "query": "freeze watch",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-12T16:50:00Z",
-      "related_news_urls": [
-        "https://www.charlotteobserver.com/news/weather-news/article318042936.html",
-        "https://www.wbtv.com/2026/11/12/routine-freeze-warnings-end-charlotte-region-season-heres-why/",
-        "https://www.wyff4.com/article/first-winter-blast-cold-air-snow-possible/74404633"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaoqAhWlL6_ElvBGjBLsKabdSDVldYZQZAiZ8RiXrbEESnp3yudz_DHbPNoZc",
-      "image_credit": "Charlotte Observer",
-      "news": [
-        {
-          "url": "https://www.charlotteobserver.com/news/weather-news/article318042936.html",
-          "title": "‘Widespread freeze’ expected for Charlotte this weekend. How low will it get?",
-          "publisher": "Charlotte Observer",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaoqAhWlL6_ElvBGjBLsKabdSDVldYZQZAiZ8RiXrbEESnp3yudz_DHbPNoZc"
-        },
-        {
-          "url": "https://www.wbtv.com/2026/11/12/routine-freeze-warnings-end-charlotte-region-season-heres-why/",
-          "title": "Routine freeze warnings end for Charlotte region for the season: Here’s why",
-          "publisher": "WBTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvf5126ff-viF2YnBPWLS_VkxilTIyZELzZmGCwHr8KOttloXDAK0FN0FUXlU"
-        },
-        {
-          "url": "https://www.wyff4.com/article/first-winter-blast-cold-air-snow-possible/74404633",
-          "title": "Cold blast will reach much of the East Coast this week",
-          "publisher": "WYFF",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDgswTLjjGg6oap8aJU6SMgDcuoeeQG9P-gzy9qhvGH2gbKgm8rEofaFhdBZI"
-        }
-      ]
-    },
-    {
-      "query": "ast spacemobile at&t verizon partnership",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T16:50:00Z",
-      "related_news_urls": [
-        "https://www.phonearena.com/news/ast-spacemobile-d2d-launch-at-t-verizon_id184752",
-        "https://maketecheasier.com/att-ast-spacemobile-satellite-handoff/",
-        "https://cyprusshippingnews.com/2026/11/09/atamp-t-and-ast-spacemobile-engineering-the-connected-world-one-handoff-at-a-time/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI_B1juy3FmCFcmjIMs77wtZQCl8uasgPQ5_llDXKzGwfQAnkDNWLRXnsQ9MU",
-      "image_credit": "PhoneArena",
-      "news": [
-        {
-          "url": "https://www.phonearena.com/news/ast-spacemobile-d2d-launch-at-t-verizon_id184752",
-          "title": "AT&T and Verizon users will soon get a taste of what it's been like for T-Mobile customers",
-          "publisher": "PhoneArena",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI_B1juy3FmCFcmjIMs77wtZQCl8uasgPQ5_llDXKzGwfQAnkDNWLRXnsQ9MU"
-        },
-        {
-          "url": "https://maketecheasier.com/att-ast-spacemobile-satellite-handoff/",
-          "title": "At 8:15 a.m. PT on 21 October 2026, outside Granite Falls, Washington, AT&T handed a connection on an everyday smartphone from its ground cellular network to an AST SpaceMobile sat",
-          "publisher": "Make Tech Easier",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTp59h7t_R_OHpKE3MgDocsOYM1R2G_UJuWx945xNXlK6j2_5SvLKejFO36Mag"
-        },
-        {
-          "url": "https://cyprusshippingnews.com/2026/11/09/atamp-t-and-ast-spacemobile-engineering-the-connected-world-one-handoff-at-a-time/",
-          "title": "AT&T and AST SpaceMobile engineering the connected world, one handoff at a time",
-          "publisher": "Cyprus Shipping News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2KD0Ge4R0yRXv-vGEoS7-PuKu424KHN8d1-1uGKYQv-AIjeh7pqk50WTX5FY"
-        }
-      ]
-    },
-    {
-      "query": "liga de naciones",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T16:40:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/selecciones/nota/_/id/17501812/uefa-nations-league-portugal-sin-cristiano-zidane-klopp",
-        "https://www.france24.com/es/minuto-a-minuto/20261111-espa%C3%B1a-y-la-portugal-pos-ronaldo-defienden-invicto-en-la-liga-de-naciones",
-        "https://rpp.pe/futbol/futbol-mundial/partidos-del-jueves-12-de-noviembre-horarios-y-canales-de-tv-para-ver-en-vivo-la-uefa-nations-league-noticia-1717348"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ8UkN9PP0JaI2u0qBRQg2jBRRyeNMrC55ll9Y7v-7oXulvJtU7PrGL29wZ1c",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/selecciones/nota/_/id/17501812/uefa-nations-league-portugal-sin-cristiano-zidane-klopp",
-          "title": "¿Qué es lo más atractivo en Europa para UEFA Nations League?",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ8UkN9PP0JaI2u0qBRQg2jBRRyeNMrC55ll9Y7v-7oXulvJtU7PrGL29wZ1c"
-        },
-        {
-          "url": "https://www.france24.com/es/minuto-a-minuto/20261111-espa%C3%B1a-y-la-portugal-pos-ronaldo-defienden-invicto-en-la-liga-de-naciones",
-          "title": "España y la Portugal pos-Ronaldo defienden invicto en la Liga de Naciones",
-          "publisher": "France 24",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRucP4Z3fZo9qni_DaupK70YEtm5L-MFd6vxhKlbi708IZidoqMhFMFeUgi9No"
-        },
-        {
-          "url": "https://rpp.pe/futbol/futbol-mundial/partidos-del-jueves-12-de-noviembre-horarios-y-canales-de-tv-para-ver-en-vivo-la-uefa-nations-league-noticia-1717348",
-          "title": "Partidos del jueves 12 de noviembre: horarios y canales de TV para ver EN VIVO la UEFA Nations League",
-          "publisher": "RPP Noticias",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrDJXaXtE9K3H7v3Auc_caK6rLnSNIlQTl6tCoZqxCKXSkl-ge3f9oM-zFQrA"
-        }
-      ]
-    },
-    {
-      "query": "ticketmaster",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-12T16:30:00Z",
-      "related_news_urls": [
-        "https://www.npr.org/2026/11/12/nx-s1-6031461/kennedy-center-ticketmaster-conflict-of-interest",
-        "https://www.npr.org/2026/11/12/nx-s1-6031461/kennedy-center-plans-ticketmaster-switch-raising-conflict-of-interest-concerns",
-        "https://www.iowapublicradio.org/news-from-npr/2026-11-12/kennedy-center-plans-ticketmaster-switch-raising-conflict-of-interest-concerns"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToNGO8eY-5JKk04UsJ-Tn4taO2nSGBDkmZv7Mix4qsLyjzGQs_6ZrIXOACqng",
-      "image_credit": "NPR",
-      "news": [
-        {
-          "url": "https://www.npr.org/2026/11/12/nx-s1-6031461/kennedy-center-ticketmaster-conflict-of-interest",
-          "title": "Kennedy Center plans Ticketmaster switch, raising conflict of interest concerns",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToNGO8eY-5JKk04UsJ-Tn4taO2nSGBDkmZv7Mix4qsLyjzGQs_6ZrIXOACqng"
-        },
-        {
-          "url": "https://www.npr.org/2026/11/12/nx-s1-6031461/kennedy-center-plans-ticketmaster-switch-raising-conflict-of-interest-concerns",
-          "title": "Kennedy Center plans Ticketmaster switch, raising conflict of interest concerns",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://www.iowapublicradio.org/news-from-npr/2026-11-12/kennedy-center-plans-ticketmaster-switch-raising-conflict-of-interest-concerns",
-          "title": "Kennedy Center plans Ticketmaster switch, raising conflict of interest concerns",
-          "publisher": "Iowa Public Radio",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRn1nM62YpHbM84Jw_5nzjZBBaepP5KV8MgLmzQh1rphbnfPK-j274ualQVfUU"
-        }
-      ]
-    },
-    {
-      "query": "the view",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-12T16:30:00Z",
-      "related_news_urls": [
-        "https://ew.com/the-view-begins-whoopi-goldberg-birthday-episode-with-star-missing-from-hot-topics-table-12250702",
-        "https://www.the-independent.com/arts-entertainment/tv/news/whoopi-goldberg-the-view-democrats-midterms-b3082862.html",
-        "https://www.tvinsider.com/1302712/the-view-whoopi-goldberg-message-pete-hegseth-democrat-party-leadership-fight/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5WN7fAgeI2t4YAV8HGHP_3qbpTVghhH1MFlVlpcO_2kupyvMpMV2G49O5Heg",
-      "image_credit": "Entertainment Weekly",
-      "news": [
-        {
-          "url": "https://ew.com/the-view-begins-whoopi-goldberg-birthday-episode-with-star-missing-from-hot-topics-table-12250702",
-          "title": "Whoopi Goldberg’s birthday episode of ‘The View’ began without star at Hot Topics table",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5WN7fAgeI2t4YAV8HGHP_3qbpTVghhH1MFlVlpcO_2kupyvMpMV2G49O5Heg"
-        },
-        {
-          "url": "https://www.the-independent.com/arts-entertainment/tv/news/whoopi-goldberg-the-view-democrats-midterms-b3082862.html",
-          "title": "Whoopi Goldberg scolds Democrats with blunt rebuke on The View",
-          "publisher": "The Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbZELV3z8KVOcFXZ9TSpctDT0zppIXngoj0OcKwPmDty5-Ro3zVtOVm1_LHEY"
-        },
-        {
-          "url": "https://www.tvinsider.com/1302712/the-view-whoopi-goldberg-message-pete-hegseth-democrat-party-leadership-fight/",
-          "title": "Whoopi Goldberg Speaks Directly to Pete Hegseth & Democrats on ‘The View’",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBImQwR1RxmXe-apJ1AsxX8gBSItPTNwNUVK6gT-0vVwbqGLQUfUsxxhn2zF8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-p0FF5KmW5P4d6GDYfdMzGMYdmOt7xXlMSvtx4XKyByMPFS7XbhGVCYRcZEg"
         }
       ]
     }
