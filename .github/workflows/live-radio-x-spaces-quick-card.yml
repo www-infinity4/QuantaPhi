@@ -3,19 +3,23 @@ on:
   pull_request:
     paths:
       - 'x-spaces-quick-card.mjs'
+      - 'x-spaces-lifecycle.mjs'
       - 'quanta-feed-spaces.mjs'
       - 'iowa-live-radio-cards.js'
       - 'index.html'
       - 'test/live-radio-x-spaces-quick-card.test.mjs'
+      - 'test/x-spaces-lifecycle.test.mjs'
       - 'test/iowa-live-radio-cards.test.mjs'
       - '.github/workflows/live-radio-x-spaces-quick-card.yml'
   push:
     branches: [main]
     paths:
       - 'x-spaces-quick-card.mjs'
+      - 'x-spaces-lifecycle.mjs'
       - 'quanta-feed-spaces.mjs'
       - 'iowa-live-radio-cards.js'
       - 'test/live-radio-x-spaces-quick-card.test.mjs'
+      - 'test/x-spaces-lifecycle.test.mjs'
       - '.github/workflows/live-radio-x-spaces-quick-card.yml'
 permissions:
   contents: read
@@ -31,5 +35,6 @@ jobs:
         run: |
           node --check iowa-live-radio-cards.js
           node --check x-spaces-quick-card.mjs
+          node --check x-spaces-lifecycle.mjs
       - name: Source and mobile-control regressions
-        run: node --test test/live-radio-x-spaces-quick-card.test.mjs test/iowa-live-radio-cards.test.mjs
+        run: node --test test/live-radio-x-spaces-quick-card.test.mjs test/x-spaces-lifecycle.test.mjs test/iowa-live-radio-cards.test.mjs
