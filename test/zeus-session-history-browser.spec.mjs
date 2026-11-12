@@ -54,6 +54,10 @@ test('red work, green completion, browsable old session and orange continuation 
 test('yellow extraction exactly routes to blue pending import without inventing a completed import',async({page})=>{
  await page.goto(base+'/coliseum/',{waitUntil:'domcontentloaded'});
  await first(page,'input[aria-label="New project or topic title"]').fill('Source extraction');
+ console.log('Zeus extraction before create:',JSON.stringify(await page.locator('#zeusSessionHistory').evaluate(root=>({
+  value:root.querySelector('input[aria-label="New project or topic title"]')?.value,
+  draft:sessionStorage.getItem('infinity:zeus-project-title-draft:v1')
+ }))));
  await page.getByRole('button',{name:'Create project thread'}).click();
  const createdState=await page.evaluate(()=>({
   url:location.href,
@@ -117,8 +121,18 @@ test('unsent local project title survives a tracker redraw and creates exactly o
  }))));
  await expect(first(page,'.zeus-current-head')).toContainText('Initial science project');
  await first(page,selector).fill('Source extraction with exact whitespace');
+ console.log('Zeus unsent draft before reload:',JSON.stringify(await page.evaluate(()=>({
+  title:document.querySelector('#zeusSessionHistory input[aria-label="New project or topic title"]')?.value,
+  stored:sessionStorage.getItem('infinity:zeus-project-title-draft:v1'),
+  url:location.href
+ }))));
  // A page refresh and a local-history redraw must both preserve this unsent title.
  await page.reload({waitUntil:'domcontentloaded'});
+ console.log('Zeus unsent draft after reload:',JSON.stringify(await page.evaluate(()=>({
+  title:document.querySelector('#zeusSessionHistory input[aria-label="New project or topic title"]')?.value,
+  stored:sessionStorage.getItem('infinity:zeus-project-title-draft:v1'),
+  url:location.href
+ }))));
  await expect(first(page,selector)).toHaveValue('Source extraction with exact whitespace');
  await first(page,'.zeus-history-threads .zeus-thread').last().click(); // forces renderSide()
  await expect(first(page,selector)).toHaveValue('Source extraction with exact whitespace');
