@@ -2,9 +2,21 @@
   "schema_version": 1,
   "source": "Google Trends RSS + publisher trailer RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
-  "checked_at": "2026-11-12T19:33:44.607674Z",
+  "checked_at": "2026-11-12T20:04:23.921838Z",
   "source_note": "Google trending titles are independently matched to source-backed trailer uploads. Other cards are labelled NEW TRAILER, not Google-trending. These are previews, not full movies.",
   "items": [
+    {
+      "id": "7Aqu1IlIf6I",
+      "title": "Killing Castro",
+      "video_id": "7Aqu1IlIf6I",
+      "video_title": "Killing Castro Teaser Trailer (2026)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-12T19:31:59Z",
+      "source_url": "https://www.youtube.com/watch?v=7Aqu1IlIf6I",
+      "poster": "https://i.ytimg.com/vi/7Aqu1IlIf6I/hqdefault.jpg",
+      "google_trending": false
+    },
     {
       "id": "Ivhrckwuag0",
       "title": "Gatto",
