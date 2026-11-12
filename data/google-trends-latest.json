@@ -3,41 +3,251 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T09:01:46.502138Z",
+  "checked_at": "2026-11-12T09:31:31.570042Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ultron",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T08:20:00Z",
+      "query": "amber alert",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T09:10:00Z",
       "related_news_urls": [
-        "https://www.hollywoodreporter.com/tv/tv-features/visionquest-finale-post-credits-creator-interview-1236753419/",
-        "https://mashable.com/entertainment/scarlet-witch-return-to-mcu",
-        "https://www.marvel.com/articles/tv-shows/visionquest-finale-joe-locke-interviews-ruaridh-mollica-billy-tommy"
+        "https://www.10tv.com/article/syndication/pammy-maye-5-year-old-darnell-taylor-death-trial/530-4c5321ec-fa32-4da5-a148-85f4f9156783",
+        "https://www.nbc4i.com/news/local-news/columbus/murder-trial-of-ohio-woman-charged-with-killing-hiding-childs-body-in-hands-of-jury/",
+        "https://www.wlwt.com/article/ohio-pammy-maye-convicted-death-5-year-old-boy-amber-alert/74399674"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQv_1GZsmRo2K8mxqjRP4nrkpMo4gqePj9hoeL6lKteXHIMcmqlfkRf_8g8sTE",
-      "image_credit": "The Hollywood Reporter",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSms2wKCJpid651_Mzt01fDISNnceeqeqKn6gk4zcZdh2M4t2YhReNH-m4d7dg",
+      "image_credit": "10tv.com",
       "news": [
         {
-          "url": "https://www.hollywoodreporter.com/tv/tv-features/visionquest-finale-post-credits-creator-interview-1236753419/",
-          "title": "‘VisionQuest’ Creator Terry Matalas Tells All About That Supersized Finale and Post-Credits Surprise",
-          "publisher": "The Hollywood Reporter",
+          "url": "https://www.10tv.com/article/syndication/pammy-maye-5-year-old-darnell-taylor-death-trial/530-4c5321ec-fa32-4da5-a148-85f4f9156783",
+          "title": "Jury reaches verdict in trial of Columbus woman accused of killing 5-year-old boy",
+          "publisher": "10tv.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQv_1GZsmRo2K8mxqjRP4nrkpMo4gqePj9hoeL6lKteXHIMcmqlfkRf_8g8sTE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSms2wKCJpid651_Mzt01fDISNnceeqeqKn6gk4zcZdh2M4t2YhReNH-m4d7dg"
         },
         {
-          "url": "https://mashable.com/entertainment/scarlet-witch-return-to-mcu",
-          "title": "Scarlet Witch's return is everything that's wrong with the MCU",
-          "publisher": "Mashable",
+          "url": "https://www.nbc4i.com/news/local-news/columbus/murder-trial-of-ohio-woman-charged-with-killing-hiding-childs-body-in-hands-of-jury/",
+          "title": "Jury finds Pammy Maye guilty of all charges including murder",
+          "publisher": "NBC4 WCMH-TV",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTom8a-X_StBiJlZrnEEEIah35qzcx6cRWsQhtRwTvEQJQaq6noInwjZCzzFxc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfdOVnACmtV5qMTrqTUJN2qk0fBR-pbAnoA_-g3dxQuw3pk3irBScn58YWLYI"
         },
         {
-          "url": "https://www.marvel.com/articles/tv-shows/visionquest-finale-joe-locke-interviews-ruaridh-mollica-billy-tommy",
-          "title": "Meet the Maximoffs: Joe Locke Interviews His ‘VisionQuest’ Brother Ruaridh Mollica",
-          "publisher": "Marvel.com",
+          "url": "https://www.wlwt.com/article/ohio-pammy-maye-convicted-death-5-year-old-boy-amber-alert/74399674",
+          "title": "Ohio woman found guilty in murder of 5-year-old boy at center of Amber Alert",
+          "publisher": "WLWT",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmI9b_CmpVsgW4VDH62uD-YxHO17BmYqmotTdOMoXmVdrlIMY9wI0iVVLbp9I"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTT_cRF72iC69yBtPz_Bg-TBYXVELgDgMyuAmTIrVFIQknonf57_K2aH_GunQQ"
+        }
+      ]
+    },
+    {
+      "query": "is fortnite down right now",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T09:10:00Z",
+      "related_news_urls": [
+        "https://www.northjersey.com/story/tech/gaming/2026/11/12/fortnite-offline-for-update-will-pirate-coin-odds-increase/92736560007/",
+        "https://timesofindia.indiatimes.com/sports/esports/fortnite/when-is-the-next-fortnite-update-treasure-hunters-mini-season-v43-10-release-date-and-more/articleshow/135746472.cms",
+        "https://www.mmoexp.com/News/fortnite-update-43-10-guide-mystery-qol-change-patch-release-time-new-content-revealed.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjbERAz9BeqdHc4M30cc8cSHS-rMnq4_CZIDwXkdkW3E6byW90Z2Wd4zSxo48",
+      "image_credit": "Bergen Record",
+      "news": [
+        {
+          "url": "https://www.northjersey.com/story/tech/gaming/2026/11/12/fortnite-offline-for-update-will-pirate-coin-odds-increase/92736560007/",
+          "title": "Is Fortnite down? When will One Piece Pirate Token season be back?",
+          "publisher": "Bergen Record",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjbERAz9BeqdHc4M30cc8cSHS-rMnq4_CZIDwXkdkW3E6byW90Z2Wd4zSxo48"
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/sports/esports/fortnite/when-is-the-next-fortnite-update-treasure-hunters-mini-season-v43-10-release-date-and-more/articleshow/135746472.cms",
+          "title": "When is the next Fortnite update: Treasure Hunters mini-season v43.10 release date and more",
+          "publisher": "The Times of India",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4-RpWZ4Tw4tswxVLsRjewZr513EKpBWliXK3DweTWYEo8vAS8kWIZmiaPXvs"
+        },
+        {
+          "url": "https://www.mmoexp.com/News/fortnite-update-43-10-guide-mystery-qol-change-patch-release-time-new-content-revealed.html",
+          "title": "Fortnite Update 43.10 Guide: Mystery QoL Change, Patch Release Time & New Content Revealed",
+          "publisher": "MMOEXP",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1id2z87o4dqy5bZK-EI60iZylU7yhmkL5dhT65vK5uH_0xCLsNjKvLsyGk00"
+        }
+      ]
+    },
+    {
+      "query": "fugitive",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T09:10:00Z",
+      "related_news_urls": [
+        "https://www.latimes.com/california/story/2026-11-10/fugitive-helped-olympian-run-drug-cartel-evade-arrest-feds-allege",
+        "https://www.cbsnews.com/news/ryan-wedding-cartel-drug-trafficking-mexico/",
+        "https://www.thestar.com/news/canada/ryan-wedding-joined-a-100k-monthly-subscription-service-for-mexican-cartel-leaders-u-s-prosecutors/article_e6fd08b4-a7c5-49e2-8726-a44feb2afc44.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXRWmo6dxhpTM9mOVVskHuxvoWL2AmWpKwi-RI-ksaVxBt3lkxnj0-cmr55_U",
+      "image_credit": "Los Angeles Times",
+      "news": [
+        {
+          "url": "https://www.latimes.com/california/story/2026-11-10/fugitive-helped-olympian-run-drug-cartel-evade-arrest-feds-allege",
+          "title": "Fugitive gang member helped Olympian run drug cartel and evade arrest, feds allege",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXRWmo6dxhpTM9mOVVskHuxvoWL2AmWpKwi-RI-ksaVxBt3lkxnj0-cmr55_U"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/ryan-wedding-cartel-drug-trafficking-mexico/",
+          "title": "Slain cartel boss helped Olympian Ryan Wedding traffic drugs and evade capture, U.S. says",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQT-6jemrgGOdHAHbJD1v08A7ghNijJT22TeUweZR9Rhj8jKI9he6yF2v_0yO4"
+        },
+        {
+          "url": "https://www.thestar.com/news/canada/ryan-wedding-joined-a-100k-monthly-subscription-service-for-mexican-cartel-leaders-u-s-prosecutors/article_e6fd08b4-a7c5-49e2-8726-a44feb2afc44.html",
+          "title": "Ryan Wedding joined a $100,000 monthly subscription service for Mexican cartel leaders: U.S. prosecutors",
+          "publisher": "Toronto Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWbO6XDcvASLSq1FHrJqLH_f732vQXPR0uCXZLWUGobtEESgAD7Ayua7uoju0"
+        }
+      ]
+    },
+    {
+      "query": "ohio state buckeyes football",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T09:00:00Z",
+      "related_news_urls": [
+        "https://www.nbc4i.com/sports/buckeyes/buckeyes-plummet-to-lowest-ranking-ever-in-playoff-era/",
+        "https://www.usatoday.com/story/sports/ncaaf/bigten/2026/11/10/ohio-state-cfp-ranking-worst-ever-buckeyes-football-playoff/92713227007/",
+        "https://www.cleveland.com/osu/2026/11/ohio-states-college-football-playoff-hopes-are-still-alive-it-just-needs-a-little-bit-of-chaos-stephen-means.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNiyuYMrbOLg8bGFe5zhzAQJtHOSiCBDdNW0feNpr1Ek-esnTsieXI57ycjfY",
+      "image_credit": "NBC4 WCMH-TV",
+      "news": [
+        {
+          "url": "https://www.nbc4i.com/sports/buckeyes/buckeyes-plummet-to-lowest-ranking-ever-in-playoff-era/",
+          "title": "Buckeyes plummet to lowest ranking ever in playoff era",
+          "publisher": "NBC4 WCMH-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNiyuYMrbOLg8bGFe5zhzAQJtHOSiCBDdNW0feNpr1Ek-esnTsieXI57ycjfY"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/ncaaf/bigten/2026/11/10/ohio-state-cfp-ranking-worst-ever-buckeyes-football-playoff/92713227007/",
+          "title": "Ohio State hits a new low in latest CFP rankings",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYLKJ2BoL2JgSMt1Rz3u25kS3F_F4s16tDVWNq7DQR9WfsWqtJj30Qk5TKZ_o"
+        },
+        {
+          "url": "https://www.cleveland.com/osu/2026/11/ohio-states-college-football-playoff-hopes-are-still-alive-it-just-needs-a-little-bit-of-chaos-stephen-means.html",
+          "title": "Ohio State's CFP hopes are alive — but the Buckeyes need everything to go right",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeyP2Br8gIVB5TOONgLLX06_8Vjsto8b-0Dkb5evKn3ZiRrg0uolayoQYL4yI"
+        }
+      ]
+    },
+    {
+      "query": "rockstar",
+      "approx_searches": "100+",
+      "published_at": "2026-11-12T09:00:00Z",
+      "related_news_urls": [
+        "https://rockstarintel.com/new-gta-vi-footage-looks-so-stunning-fans-cant-believe-it/",
+        "https://insider-gaming.com/rockstar-games-unreal-gta-6-clip-social-media-first-person/",
+        "https://www.gamingbible.com/news/gta-6-npc-detail-red-dead-redemption-2-horse-balls-512318-20261102"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpbSOWEUncxMk0eSVdKvnW1kyZcl7wh2-xMYFIMlwK2XxvKUV62GnqrUTIfos",
+      "image_credit": "RockstarINTEL",
+      "news": [
+        {
+          "url": "https://rockstarintel.com/new-gta-vi-footage-looks-so-stunning-fans-cant-believe-it/",
+          "title": "New GTA VI Footage Looks So Stunning Fans Can’t Believe It",
+          "publisher": "RockstarINTEL",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpbSOWEUncxMk0eSVdKvnW1kyZcl7wh2-xMYFIMlwK2XxvKUV62GnqrUTIfos"
+        },
+        {
+          "url": "https://insider-gaming.com/rockstar-games-unreal-gta-6-clip-social-media-first-person/",
+          "title": "Unreal GTA 6 First-Person Clip Posted by Rockstar Games on Instagram",
+          "publisher": "Insider Gaming",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS85zs2bCrp_Pz7ZK0Tk9BlOMdY2NvAWY_ZKHLxjvcrH6LRxUTqRegjs83xaIo"
+        },
+        {
+          "url": "https://www.gamingbible.com/news/gta-6-npc-detail-red-dead-redemption-2-horse-balls-512318-20261102",
+          "title": "GTA 6 gamers spot incredible NPC detail that may even rival Red Dead Redemption 2's horse balls",
+          "publisher": "GAMINGbible",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-Res1U_KRIoS6EUXvnkw9Eh55z-Bu099PgpmqM2TBNZLJ1-PqgQ8OTl2Zvxw"
+        }
+      ]
+    },
+    {
+      "query": "jennifer aniston",
+      "approx_searches": "100+",
+      "published_at": "2026-11-12T09:00:00Z",
+      "related_news_urls": [
+        "https://www.elle.com/beauty/hair/a74347544/jennifer-aniston-hair-routine-lolavie-hairspray/",
+        "https://www.instyle.com/the-rachel-haircut-12124839",
+        "https://pagesix.com/2026/11/10/style/jennifer-aniston-reveals-which-fellow-celebrity-gives-her-hair-envy/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROb7XDv4yS4gZtlkzqaZ22bwJ94aeJ0Oxyv9HNEDqGeMrZ-ADyDkaVu9_FW4M",
+      "image_credit": "ELLE",
+      "news": [
+        {
+          "url": "https://www.elle.com/beauty/hair/a74347544/jennifer-aniston-hair-routine-lolavie-hairspray/",
+          "title": "Jennifer Aniston Says ‘The Rachel’ Was Anything But Effortless",
+          "publisher": "ELLE",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROb7XDv4yS4gZtlkzqaZ22bwJ94aeJ0Oxyv9HNEDqGeMrZ-ADyDkaVu9_FW4M"
+        },
+        {
+          "url": "https://www.instyle.com/the-rachel-haircut-12124839",
+          "title": "Your Expert Guide to Recreating Jennifer Aniston’s Iconic “Rachel” Haircut",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaQaoCqyG1auketlfU1hIeA2JVR3TlZXq2R3iOoMnEJN85ci-CZctnBarzQoA"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/10/style/jennifer-aniston-reveals-which-fellow-celebrity-gives-her-hair-envy/",
+          "title": "Jennifer Aniston reveals which fellow A-lister gives her ‘hair envy’",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRC7PSYPcZbIpOfJ0aJG1Y8kHR-JbZyxRsdEje64jGkEP9qu0z92JOK4SPrlUU"
+        }
+      ]
+    },
+    {
+      "query": "aaron reitz letter richard blumenthal",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T08:50:00Z",
+      "related_news_urls": [
+        "https://www.nbcnews.com/politics/trump-administration/us-attorney-demands-sen-richard-blumenthal-preserve-documents-inquiry-rcna608899",
+        "https://www.democracydocket.com/news-alerts/u-s-attorney-threatens-democratic-senator-with-prosecution-for-conducting-oversight/",
+        "https://www.washingtonexaminer.com/news/senate/4801017/doj-blumenthal-ballroom-investigation-threat-trump/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-XiAw-f3g6N3pBm7MjgxYiFk6ixsoroi1Ki-A5Yhdl5wWAssMqjRLC1NRZ2M",
+      "image_credit": "NBC News",
+      "news": [
+        {
+          "url": "https://www.nbcnews.com/politics/trump-administration/us-attorney-demands-sen-richard-blumenthal-preserve-documents-inquiry-rcna608899",
+          "title": "U.S. attorney demands Sen. Richard Blumenthal preserve documents from his inquiry into White House ballroom",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-XiAw-f3g6N3pBm7MjgxYiFk6ixsoroi1Ki-A5Yhdl5wWAssMqjRLC1NRZ2M"
+        },
+        {
+          "url": "https://www.democracydocket.com/news-alerts/u-s-attorney-threatens-democratic-senator-with-prosecution-for-conducting-oversight/",
+          "title": "U.S. attorney threatens Democratic senator with prosecution for conducting oversight",
+          "publisher": "Democracy Docket",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRta4J5qNKYA3wxrkCg9QzsYwQB7oZPTEbwdoRtzImkWXJn2RDM117T0EEc-hM"
+        },
+        {
+          "url": "https://www.washingtonexaminer.com/news/senate/4801017/doj-blumenthal-ballroom-investigation-threat-trump/",
+          "title": "DOJ says Blumenthal ballroom investigation intimidating Trumpers",
+          "publisher": "Washington Examiner",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQj_LlO9RMqkiUPnmDNLkqJyxGng8DkqUekJBJmfL4n2fEeT7l0cwSC3XsEoXI"
         }
       ]
     },
@@ -47,8 +257,8 @@
       "published_at": "2026-11-12T08:20:00Z",
       "related_news_urls": [
         "https://pagesix.com/2026/11/11/photos/yellowjackets-season-4-premiere-red-carpet-melanie-lynskey-christina-ricci-jennifer-morrison-and-more/",
-        "https://www.ign.com/videos/yellowjackets-three-seasons-in-four-minutes",
-        "https://www.cbsnews.com/losangeles/video/nia-sondaya-talks-yellowjackets-final-season/"
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/melanie-lynskey-joins-sophie-nelisse-064422337.html",
+        "https://www.cbr.com/yellowjackets-season-4-final-season-november-20/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDeJIeA0rRSakhghzPA-bc79YFH_v9_WUFo3BuDRrgDQRthYhpl7-B4p4apSQ",
       "image_credit": "Page Six",
@@ -61,18 +271,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDeJIeA0rRSakhghzPA-bc79YFH_v9_WUFo3BuDRrgDQRthYhpl7-B4p4apSQ"
         },
         {
-          "url": "https://www.ign.com/videos/yellowjackets-three-seasons-in-four-minutes",
-          "title": "Yellowjackets: Three Seasons in Four Minutes",
-          "publisher": "IGN",
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/melanie-lynskey-joins-sophie-nelisse-064422337.html",
+          "title": "Melanie Lynskey Joins Sophie Nelisse, Christina Ricci, & More Stars at ‘Yellowjackets’ Final Season Premiere in L.A.",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy5hvReB6Ongydc3DgwmcUcUN7xFmsIrGsbxULifpnN3U-bKK1_a9JwHXifxo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQd2fAZUHT_8nSZzUFG2OsRkw2hQLgaGHpkBOKZvfFNKRdtNExiNzZXGi7ssJY"
         },
         {
-          "url": "https://www.cbsnews.com/losangeles/video/nia-sondaya-talks-yellowjackets-final-season/",
-          "title": "Nia Sondaya talks \"Yellowjackets\" final season",
-          "publisher": "CBS News",
+          "url": "https://www.cbr.com/yellowjackets-season-4-final-season-november-20/",
+          "title": "Paramount+ Is Bringing Its 4-Season Horror Thriller to an End This Month",
+          "publisher": "Comic Book Resources",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVBvkZC-SGhhALebtUcfSJBaK08oxF5LO_SZOC4Py3RPJGn3pEheZwDsMIqWs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6oVRuopNJEiA7pFGHgDupzDVkW6cboNigOQamXBSp9I6ly0G0GrXgW971Tf4"
         }
       ]
     },
@@ -113,7 +323,7 @@
     },
     {
       "query": "黄仁勋",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-12T08:00:00Z",
       "related_news_urls": [
         "https://cn.nytimes.com/business/20261111/alice-huang-megaspeed-nvidia-jensen-huang/",
@@ -143,208 +353,6 @@
           "publisher": "BBC",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPMy4JAIszsZ6BIkqUYl587z6LucXZwEOM0prIXz4XIbi219erVy379LZd0rA"
-        }
-      ]
-    },
-    {
-      "query": "weather los angeles",
-      "approx_searches": "100+",
-      "published_at": "2026-11-12T08:00:00Z",
-      "related_news_urls": [
-        "https://ktla.com/news/california/southern-california-rain-cooldown-three-storms/",
-        "https://www.foxla.com/news/socal-storm-timeline-rain-high-surf",
-        "https://www.dailynews.com/2026/11/11/southern-california-braces-for-rain-after-days-of-unseasonable-heat/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiRGp3H3sw6KD5hXAmkXOl3tlIoq3OUhy3SqETpTEJKUg8SvU42iSzSbh2RQc",
-      "image_credit": "KTLA",
-      "news": [
-        {
-          "url": "https://ktla.com/news/california/southern-california-rain-cooldown-three-storms/",
-          "title": "What to know about 3 storms approaching Southern California",
-          "publisher": "KTLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiRGp3H3sw6KD5hXAmkXOl3tlIoq3OUhy3SqETpTEJKUg8SvU42iSzSbh2RQc"
-        },
-        {
-          "url": "https://www.foxla.com/news/socal-storm-timeline-rain-high-surf",
-          "title": "Southern California storm timeline: When rain, high surf hit SoCal this week",
-          "publisher": "FOX 11 Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRadeau0CxXH1UBd-RUUqp36mmmn62ONFUpt2JV1lOlILAMKnN5dTq9fC80lnM"
-        },
-        {
-          "url": "https://www.dailynews.com/2026/11/11/southern-california-braces-for-rain-after-days-of-unseasonable-heat/",
-          "title": "Southern California braces for rain after days of unseasonable heat",
-          "publisher": "Los Angeles Daily News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4BH_3ZqnuR77Pc77sghmznYVyJFsizYyGzc4w4PQIBIOPGCNGFFSsxD91RLw"
-        }
-      ]
-    },
-    {
-      "query": "dhs proposed h-1b extension rule",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T07:50:00Z",
-      "related_news_urls": [
-        "https://www.rnlawgroup.com/how-to-oppose-dhss-proposal-to-eliminate-the-60-day-grace-period-free-comment-template-included/",
-        "https://www.fragomen.com/insights/comment-on-dhs-proposal-to-eliminate-the-60-day-grace-period.html",
-        "https://timesofindia.indiatimes.com/technology/tech-news/us-government-is-proposing-uscis-to-bring-a-new-rule-that-could-mean-thousands-of-employees-on-h-1b-visa-losing-their-visa-approval/articleshow/135755319.cms"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEiYgzIqpGR1XLWXyLgpApOnVcO8MJEuifEF30dYUrhRZrBkLY9aPEYWBU01E",
-      "image_credit": "Reddy Neumann Brown PC",
-      "news": [
-        {
-          "url": "https://www.rnlawgroup.com/how-to-oppose-dhss-proposal-to-eliminate-the-60-day-grace-period-free-comment-template-included/",
-          "title": "How to Oppose DHS’s Proposal to Eliminate the 60-Day Grace Period (Free Comment Template Included)",
-          "publisher": "Reddy Neumann Brown PC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEiYgzIqpGR1XLWXyLgpApOnVcO8MJEuifEF30dYUrhRZrBkLY9aPEYWBU01E"
-        },
-        {
-          "url": "https://www.fragomen.com/insights/comment-on-dhs-proposal-to-eliminate-the-60-day-grace-period.html",
-          "title": "Comment on DHS Proposal to Eliminate the 60-day Grace Period",
-          "publisher": "Fragomen",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKk6FgVlr0BUpoPKzmsvhE2U85E9HkT464VmWAV98OOPIUmQdsnF0H6MY4yA"
-        },
-        {
-          "url": "https://timesofindia.indiatimes.com/technology/tech-news/us-government-is-proposing-uscis-to-bring-a-new-rule-that-could-mean-thousands-of-employees-on-h-1b-visa-losing-their-visa-approval/articleshow/135755319.cms",
-          "title": "US government is proposing USCIS to bring a new rule that could mean thousands of employees on H-1B visa",
-          "publisher": "The Times of India",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJb4_rdydfLkZEKRM55CttEs_OWSk3R8nBPDm1i7sAFU6QdGKs27AGd2xuYYQ"
-        }
-      ]
-    },
-    {
-      "query": "katherine kealoha",
-      "approx_searches": "100+",
-      "published_at": "2026-11-12T07:50:00Z",
-      "related_news_urls": [
-        "https://www.hawaiinewsnow.com/2026/11/12/katherine-kealoha-leave-prison-after-serving-fraction-13-year-sentence/",
-        "https://www.kitv.com/news/crime/former-honolulu-prosecutor-katherine-kealoha-set-for-halfway-house-release-after-conviction-in-mailbox-framing/article_fceaaae3-5836-4ecd-98fc-ff5884a4c885.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfDyZ-shqy7iZCyyIu5ZZZsiam1w0fSSno-IoMhDq1_yEaio0kMAWKtNDHIAw",
-      "image_credit": "Hawaii News Now",
-      "news": [
-        {
-          "url": "https://www.hawaiinewsnow.com/2026/11/12/katherine-kealoha-leave-prison-after-serving-fraction-13-year-sentence/",
-          "title": "Katherine Kealoha to leave prison after serving fraction of 13-year sentence",
-          "publisher": "Hawaii News Now",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfDyZ-shqy7iZCyyIu5ZZZsiam1w0fSSno-IoMhDq1_yEaio0kMAWKtNDHIAw"
-        },
-        {
-          "url": "https://www.kitv.com/news/crime/former-honolulu-prosecutor-katherine-kealoha-set-for-halfway-house-release-after-conviction-in-mailbox-framing/article_fceaaae3-5836-4ecd-98fc-ff5884a4c885.html",
-          "title": "Former Honolulu prosecutor Katherine Kealoha set for halfway house release after conviction in mailbox framing case",
-          "publisher": "KITV",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaEfB9xEOe_b03n1wKtiuKEJ3-Tfacruadb1HoWgojTBaA1XCHbUv1nV4d9Tc"
-        }
-      ]
-    },
-    {
-      "query": "game of thrones",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T07:50:00Z",
-      "related_news_urls": [
-        "https://tech.yahoo.com/gaming/articles/game-thrones-house-dragon-favorites-171444989.html",
-        "https://opencritic.com/news/39492/game-of-thrones-officially-replaces-daenerys-targaryen-in-dragonfire",
-        "https://www.pocketgamer.com/game-of-thrones-dragonfire/commanders-feature-implemented/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjxLsVAB13FETZr-z7zBQmOObapCxzFwy3Mb_FYhijGry2D0M8A6AfHyEiEnQ",
-      "image_credit": "Yahoo Tech",
-      "news": [
-        {
-          "url": "https://tech.yahoo.com/gaming/articles/game-thrones-house-dragon-favorites-171444989.html",
-          "title": "Game of Thrones: House of the Dragon Favorites Get a New Role in Major Dragonfire Update",
-          "publisher": "Yahoo Tech",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjxLsVAB13FETZr-z7zBQmOObapCxzFwy3Mb_FYhijGry2D0M8A6AfHyEiEnQ"
-        },
-        {
-          "url": "https://opencritic.com/news/39492/game-of-thrones-officially-replaces-daenerys-targaryen-in-dragonfire",
-          "title": "Game Of Thrones Officially Replaces Daenerys Targaryen In Dragonfire",
-          "publisher": "OpenCritic",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQmlzKPCmd6i63DnhqVRKtv2MmueKwx5aCLWrK1K1SB_3WNR1KngxcS1jl-3s"
-        },
-        {
-          "url": "https://www.pocketgamer.com/game-of-thrones-dragonfire/commanders-feature-implemented/",
-          "title": "Game of Thrones: Dragonfire now lets you build your own team of capable Commanders",
-          "publisher": "Pocket Gamer",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeWHMoKSGW-DR22-U-eQ7bKm9sW9ol_Yrt9hR3kJf09aZ1LkpI2721wTXPR4w"
-        }
-      ]
-    },
-    {
-      "query": "pete davidson",
-      "approx_searches": "100+",
-      "published_at": "2026-11-12T07:50:00Z",
-      "related_news_urls": [
-        "https://www.eonline.com/news/1438020/pete-davidson-details-tattoo-removal-in-new-interview",
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/pete-davidson-reveals-brutal-reality-223442550.html",
-        "https://www.eonline.com/videos/2520348227808/pete-davidson-teases-future-tattoos-after-brutal-removal-process"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5ipehezAl51hkwXOyiiiutcgPx3GZGA4N02OsAR3VVtOWzzDM_ADxkFNt8KA",
-      "image_credit": "E! News",
-      "news": [
-        {
-          "url": "https://www.eonline.com/news/1438020/pete-davidson-details-tattoo-removal-in-new-interview",
-          "title": "Pete Davidson Teases Future Tattoos After “Brutal” Removal Process",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5ipehezAl51hkwXOyiiiutcgPx3GZGA4N02OsAR3VVtOWzzDM_ADxkFNt8KA"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/pete-davidson-reveals-brutal-reality-223442550.html",
-          "title": "Pete Davidson Reveals ‘Brutal’ Reality of Removing Tattoos: ‘You Don’t Know What’s Going On Under There’",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4G2Kcv85lHOe1hGWclVCBAkCNWJ2_-kfEHCQ9qaIeXutfUPZgqTebCRP7uGM"
-        },
-        {
-          "url": "https://www.eonline.com/videos/2520348227808/pete-davidson-teases-future-tattoos-after-brutal-removal-process",
-          "title": "Pete Davidson Teases Future Tattoos After “Brutal” Removal Process",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7__nwBlIfBBAMG-hmeazezX0LisQNYgNhRjaf5iQRXrZl2QwOssmk8k4cxEE"
-        }
-      ]
-    },
-    {
-      "query": "sasha obama",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T07:40:00Z",
-      "related_news_urls": [
-        "https://www.harpersbazaar.com/celebrity/latest/a74386831/malia-sasha-obama-fall-dressing-los-angeles-street-style-photos-dinner-barack/",
-        "https://thoughtcatalog.com/nadia-santiago/2026/11/after-campaigning-for-democrats-barack-obama-spent-an-evening-with-his-daughters-as-the-party-prepared-to-control-both-chambers-of-congress/",
-        "https://www.teenvogue.com/story/malia-sasha-obama-style-trench-coats-two-very-different-ways"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3t3op6dFdvxn3g8eWi4Q0PfhKXKdTbMnadAqrAFm9E7SM6M64XBss_50SCnA",
-      "image_credit": "Harper's BAZAAR",
-      "news": [
-        {
-          "url": "https://www.harpersbazaar.com/celebrity/latest/a74386831/malia-sasha-obama-fall-dressing-los-angeles-street-style-photos-dinner-barack/",
-          "title": "Malia and Sasha Obama Offer Two Totally Different Takes on Fall Dressing for Dinner With Dad Barack",
-          "publisher": "Harper's BAZAAR",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3t3op6dFdvxn3g8eWi4Q0PfhKXKdTbMnadAqrAFm9E7SM6M64XBss_50SCnA"
-        },
-        {
-          "url": "https://thoughtcatalog.com/nadia-santiago/2026/11/after-campaigning-for-democrats-barack-obama-spent-an-evening-with-his-daughters-as-the-party-prepared-to-control-both-chambers-of-congress/",
-          "title": "After Campaigning for Democrats, Barack Obama Spent an Evening with His Daughters as the Party Prepared to Control Both Chambers of Congress",
-          "publisher": "Thought Catalog",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeW8YP_Lp9JJyjBkWrBIpIvyBb-TVQim2HzVdL6p7YVeRlboqjwk6NXGLvSJU"
-        },
-        {
-          "url": "https://www.teenvogue.com/story/malia-sasha-obama-style-trench-coats-two-very-different-ways",
-          "title": "Malia and Sasha Obama Do Fall Layering Two Very Different Ways",
-          "publisher": "Teen Vogue",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBcYQvZ002lLb7wfcanyAzWcv6KNFm09FdPXS0WKHCKy22Yoa1L5LZZi6--vs"
         }
       ]
     }
