@@ -3,9 +3,149 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T15:01:35.132192Z",
+  "checked_at": "2026-11-12T15:31:37.075833Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "tyra banks",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T15:10:00Z",
+      "related_news_urls": [
+        "https://thatgrapejuice.net/entertainment/2026/11/tyra-banks-reveals-shes-single-opens-up-dating/?utm_source=rss&utm_medium=rss&utm_campaign=tyra-banks-reveals-shes-single-opens-up-dating",
+        "https://www.fastcompany.com/91640375/tyra-banks-on-the-power-of-being-a-little-bit-crazy",
+        "https://www.blogto.com/eat_drink/2026/11/tyra-banks-dutch-dreams/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuoFnwybqDKK6HD9654NwD5xKRBmZxjvXCt4WudcgTsthb-6YJkYh-FHv4Pfg",
+      "image_credit": "That Grape Juice.net",
+      "news": [
+        {
+          "url": "https://thatgrapejuice.net/entertainment/2026/11/tyra-banks-reveals-shes-single-opens-up-dating/?utm_source=rss&utm_medium=rss&utm_campaign=tyra-banks-reveals-shes-single-opens-up-dating",
+          "title": "Tyra Banks Reveals She’s “Single”, Opens Up About Dating Again",
+          "publisher": "That Grape Juice.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuoFnwybqDKK6HD9654NwD5xKRBmZxjvXCt4WudcgTsthb-6YJkYh-FHv4Pfg"
+        },
+        {
+          "url": "https://www.fastcompany.com/91640375/tyra-banks-on-the-power-of-being-a-little-bit-crazy",
+          "title": "Tyra Banks on the power of being a ‘little bit crazy’",
+          "publisher": "Fast Company",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFOCkwBiAlEXNaVCA_-un1XGEEBbkM4SJcqkbhOMTY1F0Dh0ss9TiqNvgn2Dk"
+        },
+        {
+          "url": "https://www.blogto.com/eat_drink/2026/11/tyra-banks-dutch-dreams/",
+          "title": "Here's what Tyra Banks just ordered from popular Toronto ice cream shop",
+          "publisher": "blogTO",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5UewCI0r3C1PVxTndTAwAoH4T9AMnLhGoWiUgg8FolFKOiEO7nAW93Zxlb3k"
+        }
+      ]
+    },
+    {
+      "query": "star wars",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T15:10:00Z",
+      "related_news_urls": [
+        "https://www.starwars.com/news/star-wars-50-campaign",
+        "https://www.goodmorningamerica.com/shop/story/star-wars-celebrate-50-years-2027-138045099",
+        "https://variety.com/2026/shopping/news/star-wars-50th-anniversary-merch-lego-hasbro-1236945834/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTefWhMdqsKYdd7B6JX5WgCnAY2yjaCgvH3aa-vAkqHTXe7bnQH9XghsPzvxQE",
+      "image_credit": "StarWars.com",
+      "news": [
+        {
+          "url": "https://www.starwars.com/news/star-wars-50-campaign",
+          "title": "Celebrate 50 Years of Star Wars with New Documentary, Key Art, and Limited-Edition Merch",
+          "publisher": "StarWars.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTefWhMdqsKYdd7B6JX5WgCnAY2yjaCgvH3aa-vAkqHTXe7bnQH9XghsPzvxQE"
+        },
+        {
+          "url": "https://www.goodmorningamerica.com/shop/story/star-wars-celebrate-50-years-2027-138045099",
+          "title": "'Star Wars' will celebrate 50 years in 2027: What to know and what to shop",
+          "publisher": "Good Morning America",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAA7EBne9DgEIVaGVLLkBPUfJo4ce_lPqomNTk3F0Jacqm_3vxYBArk072R7Q"
+        },
+        {
+          "url": "https://variety.com/2026/shopping/news/star-wars-50th-anniversary-merch-lego-hasbro-1236945834/",
+          "title": "Disney Unveils ‘Star Wars’ 50th Anniversary Plans: Lego Sets, Hasbro Collections and Immersive Experiences",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQEiVo3438hByQS2bl_CXedTeOQDkiTVKtGPBothJBFqI-J-X_VsmNkvXo4X4"
+        }
+      ]
+    },
+    {
+      "query": "raymond felton",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T15:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/gonna-hurt-legacy-deron-williams-115000235.html",
+        "https://athlonsports.com/nba/philadelphia-76ers/i-think-this-might-be-his-last-year-raymond-felton-makes-discouraging-prediction-after-lebron-james-gets-exposed-and-embarrassed-by-the-celtics",
+        "https://heavy.com/sports/nba/philadelphia-76ers/nick-nurse-lebron-james-suggestion-kendrick-perkins/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1FrCzMblgRlJCYR_CugpweXXagS3ghsscUcpGueiqEm2EJwQFR8O6T98_3Ts",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/gonna-hurt-legacy-deron-williams-115000235.html",
+          "title": "“This Is Gonna Hurt His Legacy”: Deron Williams Says LeBron James Must Retire After Jayson Tatum's Filthy Move on Him Again",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1FrCzMblgRlJCYR_CugpweXXagS3ghsscUcpGueiqEm2EJwQFR8O6T98_3Ts"
+        },
+        {
+          "url": "https://athlonsports.com/nba/philadelphia-76ers/i-think-this-might-be-his-last-year-raymond-felton-makes-discouraging-prediction-after-lebron-james-gets-exposed-and-embarrassed-by-the-celtics",
+          "title": "“I think This Might be His Last Year” - Raymond Felton Makes Discouraging Prediction After LeBron James Gets Exposed and Embarrassed by the Celtics",
+          "publisher": "Athlon Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnbNuFOUJIyCrX5LnLS4FEVdIna8AZZpY11rDK4rF4yqWyBbzSkNwsj6NHmFI"
+        },
+        {
+          "url": "https://heavy.com/sports/nba/philadelphia-76ers/nick-nurse-lebron-james-suggestion-kendrick-perkins/",
+          "title": "76ers’ Nick Nurse Gets LeBron James Suggestion From Ex-NBA Champ",
+          "publisher": "Heavy.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4XzMhvcEg248woVUs_I3pLUWgg8limyqeUl_6N9fUZU8Hxp8-NnkHIqSE4YY"
+        }
+      ]
+    },
+    {
+      "query": "smh stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T14:50:00Z",
+      "related_news_urls": [
+        "https://seekingalpha.com/article/4966423-3-stocks-im-buying-as-the-huang-scandal-unfolds",
+        "https://finance.yahoo.com/markets/stocks/articles/nvidia-selloff-puts-china-exposed-130900790.html",
+        "https://uk.investing.com/news/stock-market-news/beyond-nvidia-these-aipicked-stocks-are-winning-the-ai-infrastructure-buildout-4967529"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSzYiIZ0RN42ZGpwigGA8Ld3jJNy0bQm8ptTDmlwgEOws5THiRI3uIwaA499s",
+      "image_credit": "Seeking Alpha",
+      "news": [
+        {
+          "url": "https://seekingalpha.com/article/4966423-3-stocks-im-buying-as-the-huang-scandal-unfolds",
+          "title": "3 Stocks I’m Buying As The Huang Scandal Unfolds (NASDAQ:SMH)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSzYiIZ0RN42ZGpwigGA8Ld3jJNy0bQm8ptTDmlwgEOws5THiRI3uIwaA499s"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-selloff-puts-china-exposed-130900790.html",
+          "title": "Nvidia Selloff Puts China Exposed US Chip Stocks Back In Focus",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKy84d4IuQtZiAKuAphp486YHvEFFVyU9yUx1mr27jTb7N0prqd81hVEr3_Ew"
+        },
+        {
+          "url": "https://uk.investing.com/news/stock-market-news/beyond-nvidia-these-aipicked-stocks-are-winning-the-ai-infrastructure-buildout-4967529",
+          "title": "Beyond Nvidia: These AI-picked stocks are winning the AI infrastructure buildout",
+          "publisher": "Investing.com UK",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTT7O5YUkG3cJVMSrhfxBqzV7XTFTZlydWdnKpL7e1Gn3VfxI73lQL-P44Q97Q"
+        }
+      ]
+    },
     {
       "query": "white house",
       "approx_searches": "1000+",
@@ -13,7 +153,7 @@
       "related_news_urls": [
         "https://www.nytimes.com/2026/11/11/us/politics/trump-democrats-congress-oversight-committee.html",
         "https://www.npr.org/2026/11/12/nx-s1-6037540/trump-white-house-democrats-investigations-robert-garcia",
-        "https://www.nbcnews.com/politics/white-house/white-house-warns-congressional-democrats-investigating-us-may-crime-rcna608752"
+        "https://www.cnn.com/2026/11/11/politics/trump-democrats-investigations-robert-garcia"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTCT-eWrVa1cTKjxYXeyimkaZw6bjF6Xm4-rzN7lTeCwNCO7VOMX5c4SwTOuE",
       "image_credit": "The New York Times",
@@ -33,52 +173,17 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQp4uGCqq5LR_BpqfD4G2FxEO29yYxxj0WSRWuDBWjGXS-KKXeM9dwNzbOLxE"
         },
         {
-          "url": "https://www.nbcnews.com/politics/white-house/white-house-warns-congressional-democrats-investigating-us-may-crime-rcna608752",
-          "title": "White House warns congressional Democrats: Investigating us may be a crime",
-          "publisher": "NBC News",
+          "url": "https://www.cnn.com/2026/11/11/politics/trump-democrats-investigations-robert-garcia",
+          "title": "The Trump team’s hypocrisy reaches new levels with warning letter to Democrats",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiHPsioHohVbwlHI7CHfeWwwDRUCPA_kxqzALfuRwm5Eu4IjemMLe2EpoUbXI"
-        }
-      ]
-    },
-    {
-      "query": "smh",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T14:40:00Z",
-      "related_news_urls": [
-        "https://seekingalpha.com/article/4966423-3-stocks-im-buying-as-the-huang-scandal-unfolds",
-        "https://finance.yahoo.com/technology/ai/articles/nvidia-export-curbs-could-shift-002027068.html",
-        "https://www.cnbctv18.com/access/four-tech-investing-themes-to-consider-beyond-nvidia-20031993.htm"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSzYiIZ0RN42ZGpwigGA8Ld3jJNy0bQm8ptTDmlwgEOws5THiRI3uIwaA499s",
-      "image_credit": "Seeking Alpha",
-      "news": [
-        {
-          "url": "https://seekingalpha.com/article/4966423-3-stocks-im-buying-as-the-huang-scandal-unfolds",
-          "title": "3 Stocks I’m Buying As The Huang Scandal Unfolds (NASDAQ:SMH)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSzYiIZ0RN42ZGpwigGA8Ld3jJNy0bQm8ptTDmlwgEOws5THiRI3uIwaA499s"
-        },
-        {
-          "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-export-curbs-could-shift-002027068.html",
-          "title": "Nvidia Export Curbs Could Shift AI Demand Toward These Data Center Stocks",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXA_uwMjlJ2c7sOtUHiEkSYcZzJRHgLeZfkB6muQgSnMV3saKFK7_MiHezmAU"
-        },
-        {
-          "url": "https://www.cnbctv18.com/access/four-tech-investing-themes-to-consider-beyond-nvidia-20031993.htm",
-          "title": "Four tech investing themes to consider beyond Nvidia",
-          "publisher": "CNBC TV18",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQz9nu8DlEHP4c4jYHBOX-p2mPo6ZG1kTrsGMsHZro9n8zYVD4XLEyvlor3jA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA64Lfdx5aIMrINpjzBZvFy8sH_mlThrU6ySudIMGC-gwv7gzyGVowFtFVlDI"
         }
       ]
     },
     {
       "query": "dupont circle",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-12T14:40:00Z",
       "related_news_urls": [
         "https://www.nbcwashington.com/news/local/dna-ties-man-to-dupont-circle-sex-assault-after-woman-requested-uber/4181331/",
@@ -118,7 +223,7 @@
       "related_news_urls": [
         "https://www.sfgate.com/valkyries/article/valkyries-juste-jocyte-problem-22525520.php",
         "https://www.cbssports.com/wnba/news/juste-jocyte-valkyries-drama-wnba-future/",
-        "https://www.swishappeal.com/wnba/90349/golden-state-valkyries-draft-pick-first-juste-jocyte-trade-request-out-move-natalie-nakase-coach-ohemaa-nyanin-lithuania-interview-media-role-playing-time-championship-shooting-fever-mystics"
+        "https://www.si.com/onsi/womens-fastbreak/wnba/6-teams-that-should-consider-trading-for-juste-jocyte-after-valkyries-fallout-01m782n9jqt2"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRamutOT5cSe1jq7MIDFkxg4VJRKilRlkDa0JRX6pyI_wCXDwrmggPVu5aH-fI",
       "image_credit": "SFGATE",
@@ -138,46 +243,81 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTI_O1Lo-DcPrGMGkrnVyMnS4nK3WmXFRKaFnFva4XAvEfiWPKCTu-PBNaksyM"
         },
         {
-          "url": "https://www.swishappeal.com/wnba/90349/golden-state-valkyries-draft-pick-first-juste-jocyte-trade-request-out-move-natalie-nakase-coach-ohemaa-nyanin-lithuania-interview-media-role-playing-time-championship-shooting-fever-mystics",
-          "title": "Justē Jocytē, the first-ever draft pick of the Golden State Valkyries, is ready to bid goodbye to Ballhalla",
-          "publisher": "Swish Appeal",
+          "url": "https://www.si.com/onsi/womens-fastbreak/wnba/6-teams-that-should-consider-trading-for-juste-jocyte-after-valkyries-fallout-01m782n9jqt2",
+          "title": "6 Teams That Should Consider Trading for Juste Jocyte After Valkyries Fallout",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkFqRq34BHcfeVh3sOzsrRXIH7xb-wyKigeb6IcQwIysX4rR3OZjQDNHihnng"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ65uT3cEjRzB_BT09Y-E4UB96HmEiBUvJ5v18yzw8106lNgKky_VsQiSoocuk"
+        }
+      ]
+    },
+    {
+      "query": "dan hicks",
+      "approx_searches": "50000+",
+      "published_at": "2026-11-12T14:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/golf/article/dan-hicks-longtime-nbc-sportscaster-dies-at-64-144943376.html",
+        "https://www.golfchannel.com/news/news/dan-hicks-legendary-nbc-sports-and-golf-announcer-dies-at-age-64",
+        "https://www.pgatour.com/article/news/latest/2026/11/12/dan-hicks-nbc-sports-announcer-dies-at-64"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfNETB9EBlzjqY7EGHDi1TtAzBni3tiqqP5I-JHs4rajoNJNbhHdXi1nAqXSc",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/golf/article/dan-hicks-longtime-nbc-sportscaster-dies-at-64-144943376.html",
+          "title": "Dan Hicks, longtime NBC sportscaster, dies at 64",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfNETB9EBlzjqY7EGHDi1TtAzBni3tiqqP5I-JHs4rajoNJNbhHdXi1nAqXSc"
+        },
+        {
+          "url": "https://www.golfchannel.com/news/news/dan-hicks-legendary-nbc-sports-and-golf-announcer-dies-at-age-64",
+          "title": "Dan Hicks, legendary NBC Sports and golf announcer, dies at age 64",
+          "publisher": "Golf Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFldZURIYmKPrBjdcb-aTiT01PObH3vdPKgm1DRIXcPCYwY-aFKvkRRgl1c9k"
+        },
+        {
+          "url": "https://www.pgatour.com/article/news/latest/2026/11/12/dan-hicks-nbc-sports-announcer-dies-at-64",
+          "title": "Dan Hicks, longtime voice of NBC Sports’ PGA Tour coverage, dies at 64",
+          "publisher": "PGA Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzJl8jByf-7iC0d4yh6SrfNIjlb7n9Htcx8XY7_fbEmxYCGw5C9fyB55y9DQ0"
         }
       ]
     },
     {
       "query": "avgo stock",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-12T14:30:00Z",
       "related_news_urls": [
-        "https://www.trefis.com/stock/avgo/articles/624609/what-does-the-anthropic-ipo-mean-for-broadcom-stock/2026-11-12",
-        "https://finance.yahoo.com/markets/stocks/articles/broadcom-stocks-climb-5-18-165920759.html",
-        "https://moneymorning.com/2026/11/11/broadcom-anthropic-161-billion-lease-ai-financing-november-2026"
+        "https://finance.yahoo.com/markets/stocks/articles/heres-biggest-worry-broadcom-stock-021302005.html",
+        "https://www.marketwatch.com/livecoverage/nvidia-ceo-jensen-huang-stock-board/card/broadcom-shares-lead-s-p-500-gainers-in-the-face-of-nvidia-turmoil-G02GJ1KDmnSC2IJTDifz?mod=mw_FV",
+        "https://www.barchart.com/story/news/8796254/broadcom-stock-outlook-is-wall-street-bullish-or-bearish"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZ8wbJFrf9kYr435wYed1gDQWqmSwDajPjEZnfM3HyU8eZsGfQo7c8OXs3xp4",
-      "image_credit": "Trefis",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdTYmTI9J4PtiM8Zd5YN3yrSvpKpccV7EA-fHiRUNYoWvioC-ZZhvXCygz7BU",
+      "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://www.trefis.com/stock/avgo/articles/624609/what-does-the-anthropic-ipo-mean-for-broadcom-stock/2026-11-12",
-          "title": "What Does The Anthropic IPO Mean For Broadcom Stock?",
-          "publisher": "Trefis",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZ8wbJFrf9kYr435wYed1gDQWqmSwDajPjEZnfM3HyU8eZsGfQo7c8OXs3xp4"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/broadcom-stocks-climb-5-18-165920759.html",
-          "title": "Broadcom Stocks Climb 5.18% as Goldman Calls Chips Oversold and Anthropic Stake Lands",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/heres-biggest-worry-broadcom-stock-021302005.html",
+          "title": "Here's My Biggest Worry About Broadcom Stock. It Isn't Enough to Stop Me From Buying.",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRE0LlaTsBh-KFZE0m_mTSAYy3tK0dlhhURdY_OidTDk81bGwbdW6dti4W-otg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdTYmTI9J4PtiM8Zd5YN3yrSvpKpccV7EA-fHiRUNYoWvioC-ZZhvXCygz7BU"
         },
         {
-          "url": "https://moneymorning.com/2026/11/11/broadcom-anthropic-161-billion-lease-ai-financing-november-2026",
-          "title": "Broadcom's $161 Billion Anthropic Lease Is the Real AI Bet",
-          "publisher": "Money Morning",
+          "url": "https://www.marketwatch.com/livecoverage/nvidia-ceo-jensen-huang-stock-board/card/broadcom-shares-lead-s-p-500-gainers-in-the-face-of-nvidia-turmoil-G02GJ1KDmnSC2IJTDifz?mod=mw_FV",
+          "title": "Broadcom shares lead S&P 500 gainers in the face of Nvidia turmoil",
+          "publisher": "MarketWatch",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1mBbhdC0zUV7_gqaECmuQKeq0xEcHfvPdV0msY5p3BVSvBie6A266SoCf_IU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXdYWAuLAFboRIkFr31h6Z-CxNH1FnYfRZlcKNdAFebUNSeFVDwIK_24_GsHA"
+        },
+        {
+          "url": "https://www.barchart.com/story/news/8796254/broadcom-stock-outlook-is-wall-street-bullish-or-bearish",
+          "title": "Broadcom Stock Outlook: Is Wall Street Bullish or Bearish?",
+          "publisher": "Barchart.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwQUQ-tGQE-aEHjDlTZ8TxZKswTiH9wmakHbptJyjOYrqY0GuY1f7CdcCTWKo"
         }
       ]
     },
@@ -188,7 +328,7 @@
       "related_news_urls": [
         "https://247wallst.com/investing/2026/11/05/robinhood-sinks-12-sofi-tumbles-9-affirm-drops-8-as-bitcoin-slides-and-democratic-congress-weighs-on-fintech/",
         "https://www.benzinga.com/trading-ideas/movers/26/11/62942835/robinhood-stock-plunges-as-bitcoin-dips-after-elections",
-        "https://www.nytimes.com/2026/11/06/your-money/stock-market-volatility-investments.html"
+        "https://www.fool.com/investing/2026/11/04/this-1-market-niche-is-growing-at-an-exponential-r/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTThtFu2XTSNQwJ9KwYIzHx4H12n0XHpb9cOGeLfPi_XO8r2-_zDS6Y9QOcPRY",
       "image_credit": "24/7 Wall St.",
@@ -208,151 +348,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeHYFET9W4-Kv3twnTsf85Q_HH1HBDahWY9eX2ozYikQ1yEa14cFae9FLRJbw"
         },
         {
-          "url": "https://www.nytimes.com/2026/11/06/your-money/stock-market-volatility-investments.html",
-          "title": "The Markets Are on a Yo-Yo. You Don’t Have to Be.",
-          "publisher": "The New York Times",
+          "url": "https://www.fool.com/investing/2026/11/04/this-1-market-niche-is-growing-at-an-exponential-r/",
+          "title": "This 1 Market Niche Is Growing at an Exponential Rate for Robinhood. That's Why I'm Bullish on HOOD Stock.",
+          "publisher": "The Motley Fool",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSp5WqUzaVC7x3TgJhcsMPzosdywFcq6UQ0wCrqcNuNWxNomFOkwAIbG34hYI"
-        }
-      ]
-    },
-    {
-      "query": "tsmc stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T14:30:00Z",
-      "related_news_urls": [
-        "https://www.tradingview.com/news/seekingalpha:1804c6f72094b:0-tsmc-discovers-data-on-thousands-of-current-former-employees-leaked-to-external-website/",
-        "https://www.quantisnow.com/insight/sec-form-6-k-filed-by-taiwan-semiconductor-manufacturing-company-ltd-6786516",
-        "https://kalkinemedia.com/us/news/announcements/tsmc-reports-unauthorized-exposure-of-employee-data-on-external-website"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY",
-      "image_credit": "TradingView",
-      "news": [
-        {
-          "url": "https://www.tradingview.com/news/seekingalpha:1804c6f72094b:0-tsmc-discovers-data-on-thousands-of-current-former-employees-leaked-to-external-website/",
-          "title": "TSMC discovers data on thousands of current, former employees leaked to external website",
-          "publisher": "TradingView",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
-        },
-        {
-          "url": "https://www.quantisnow.com/insight/sec-form-6-k-filed-by-taiwan-semiconductor-manufacturing-company-ltd-6786516",
-          "title": "TSM: SEC Form 6-K filed by Taiwan Semiconductor Manufacturing Company Ltd.",
-          "publisher": "Quantisnow",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7TdWJi0R7QhB9wkozw00WsbM01-weDnQbTEaMvH0Tew53jAlmQgXKMWH9Um8"
-        },
-        {
-          "url": "https://kalkinemedia.com/us/news/announcements/tsmc-reports-unauthorized-exposure-of-employee-data-on-external-website",
-          "title": "TSMC Reports Unauthorized Exposure of Employee Data on External Website",
-          "publisher": "Kalkine Media",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXnKpjtiK4xQBmnFpnm8i3nbQsdoERD3hBdLiUkVjzKjv9OTbxZ_xG3OSzILQ"
-        }
-      ]
-    },
-    {
-      "query": "英伟达股票",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T14:30:00Z",
-      "related_news_urls": [
-        "https://cn.wsj.com/articles/%E8%8B%B1%E4%BC%9F%E8%BE%BE%E6%8A%95%E8%B5%84%E8%80%85%E7%9C%BC%E4%B8%8B%E8%AF%A5%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88-%E4%B8%8D%E6%98%AF%E9%BB%84%E4%BB%81%E5%8B%8B%E7%9A%84%E5%A9%9A%E5%A4%96%E6%83%85-7dc9ea40",
-        "https://www.coindesk.com/zh/markets/2026/11/12/bitcoin-listless-nvidia-perps-crash-7-as-ceo-jensen-huang-reportedly-faces-the-axe",
-        "https://news.mydrivers.com/1/1165/1165393.htm"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR88fQUm3Vh7ahnD5THxVbgUzIvFNjr9z4yGLDlZlTLwQ7vJ6X32hEyv2Sr0TQ",
-      "image_credit": "华尔街日报中文网",
-      "news": [
-        {
-          "url": "https://cn.wsj.com/articles/%E8%8B%B1%E4%BC%9F%E8%BE%BE%E6%8A%95%E8%B5%84%E8%80%85%E7%9C%BC%E4%B8%8B%E8%AF%A5%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88-%E4%B8%8D%E6%98%AF%E9%BB%84%E4%BB%81%E5%8B%8B%E7%9A%84%E5%A9%9A%E5%A4%96%E6%83%85-7dc9ea40",
-          "title": "英伟达投资者眼下该关注什么？不是黄仁勋的婚外情",
-          "publisher": "华尔街日报中文网",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR88fQUm3Vh7ahnD5THxVbgUzIvFNjr9z4yGLDlZlTLwQ7vJ6X32hEyv2Sr0TQ"
-        },
-        {
-          "url": "https://www.coindesk.com/zh/markets/2026/11/12/bitcoin-listless-nvidia-perps-crash-7-as-ceo-jensen-huang-reportedly-faces-the-axe",
-          "title": "Nvidia 永续合约在 Hyperliquid 上暴跌 7%。原因解析",
-          "publisher": "CoinDesk",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-JUVHljPfsAcczcRumdRJ7lOdzfOtzPqDsWxQ1XoEYPCehz9oxXJS9tVVLfM"
-        },
-        {
-          "url": "https://news.mydrivers.com/1/1165/1165393.htm",
-          "title": "英伟达内部动荡之际 AMD、博通等竞争对手股价上涨",
-          "publisher": "驱动之家",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT56eKQAIb-vwqlchcD9JJHRQvNyvFSqD9QPiQMQaQNGMvCwXw0GnqRoNWp3PE"
-        }
-      ]
-    },
-    {
-      "query": "finance",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T14:30:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/economy/article/wall-street-thinks-the-fed-made-a-mistake--and-now-more-hikes-are-coming-172024016.html",
-        "https://www.reuters.com/business/poll-fed-raise-rates-once-more-december-inflation-risks-stay-high-2026-11-10/",
-        "https://www.axios.com/2026/11/10/federal-reserve-rate-hikes"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFLhuZuPbWA-nWxCQjO-8VP0rsVl1gtg2CRTMby5Y6FBfNPG2U7RSbeDMwyKc",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/economy/article/wall-street-thinks-the-fed-made-a-mistake--and-now-more-hikes-are-coming-172024016.html",
-          "title": "Wall Street thinks the Fed made a 'mistake' — and now more hikes are coming",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFLhuZuPbWA-nWxCQjO-8VP0rsVl1gtg2CRTMby5Y6FBfNPG2U7RSbeDMwyKc"
-        },
-        {
-          "url": "https://www.reuters.com/business/poll-fed-raise-rates-once-more-december-inflation-risks-stay-high-2026-11-10/",
-          "title": "Fed to raise rates once more in December as inflation risks stay high: Reuters poll",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRENzzujKOSrA84noSHp0R6Ybpm-W3ir2dwpIq8tiboMFaA17ke2HyO7nP_K78"
-        },
-        {
-          "url": "https://www.axios.com/2026/11/10/federal-reserve-rate-hikes",
-          "title": "Get ready for rate hike(s)",
-          "publisher": "Axios",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkdNSwipOhYFUgYs-8OC6Gjk77sya6EEzXOsD-PZdQ91Fp53i_5M2P9i74Llo"
-        }
-      ]
-    },
-    {
-      "query": "teri polo",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T14:20:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/teri-polo-showcases-major-transformation-125446560.html",
-        "https://people.com/ariana-grande-makes-red-carpet-debut-with-boyfriend-ricky-alvarez-at-focker-in-law-premiere-12249764",
-        "https://www.vogue.com/article/ariana-grande-ricky-alvarez-red-carpet-debut-2026-11-12"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAV8zqHiAsCpSjHHhEPztbtGU5HoRX1qm1fZOkpv-jPBJK3J3qgfcYLuxVXTQ",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/teri-polo-showcases-major-transformation-125446560.html",
-          "title": "Teri Polo showcases major transformation 26 years after Meet the Parents as fans say the same thing",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAV8zqHiAsCpSjHHhEPztbtGU5HoRX1qm1fZOkpv-jPBJK3J3qgfcYLuxVXTQ"
-        },
-        {
-          "url": "https://people.com/ariana-grande-makes-red-carpet-debut-with-boyfriend-ricky-alvarez-at-focker-in-law-premiere-12249764",
-          "title": "Ariana Grande Makes Red Carpet Debut with Boyfriend Ricky Alvarez at Focker-in-Law Premiere",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvdF1R5NuaqJdO9ZiO3E9LL6M7FeSL_t9x6sTEFORVMrWCsNEo66fOzCfDfUQ"
-        },
-        {
-          "url": "https://www.vogue.com/article/ariana-grande-ricky-alvarez-red-carpet-debut-2026-11-12",
-          "title": "Ariana Grande Brings Her Two Great Loves—Ricky Álvarez and Rare Vintage—to the Red Carpet",
-          "publisher": "Vogue",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfdx1TH642RUD8-F6DXvcfZvFthb2E89LU1Xp49Ghh4zBLr-KY3A7L2Sj1SH0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQliqTWkfUACW3M76dRrY7KzZNX9MBsgbf_n1J7FASmTzvx9ZliUyq3rhxond4"
         }
       ]
     }
