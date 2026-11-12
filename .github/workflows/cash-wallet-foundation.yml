@@ -1,0 +1,29 @@
+name: Cash Wallet source safety (no real funds)
+on:
+  pull_request:
+    paths:
+      - 'cash-wallet-core.mjs'
+      - 'cash-wallet-preview.html'
+      - 'cash-wallet-card.mjs'
+      - 'cash-wallet-card.css'
+      - 'workers/unified-wallet/cash-wallet-schema.sql'
+      - 'docs/CASH-WALLET-RELEASE-GATES.md'
+      - 'test/cash-wallet-*.test.mjs'
+      - '.github/workflows/cash-wallet-foundation.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  cash-wallet-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: USD ledger preflight and no-live-payment guard tests
+        run: node --test test/cash-wallet-core.test.mjs test/cash-wallet-preview.test.mjs
+      - name: No npm · syntax checks
+        run: |
+          node --check cash-wallet-core.mjs
+          node --check cash-wallet-card.mjs

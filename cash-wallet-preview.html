@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Cash Wallet · QuantaPhi Development Preview</title>
+<link rel="stylesheet" href="/cash-wallet-card.css">
+</head>
+<body class="oracle-octaves-home">
+<main>
+  <nav class="cw-nav"><a href="/" aria-label="Return to QuantaPhi">∞ QuantaPhi</a><span>Cash Wallet · development preview</span></nav>
+  <article id="cashWalletPreview" class="iqc-card cash-wallet-card" data-source-id="cash-wallet" data-source-name="Cash Wallet · USD" data-source-ready="false" aria-label="Cash Wallet preview">
+    <header class="cw-header">
+      <div class="cw-eyebrow">INFINITY · CASH WALLET</div>
+      <h1>Cash Wallet</h1>
+      <p>Load funds once. When payment connections are approved, pay for participating in-app purchases using your available balance—without entering a card each time.</p>
+      <span class="cw-phase">Development preview · no live deposits or payments</span>
+      <div class="cw-orbit" aria-hidden="true"><span>∞</span><b>$</b></div>
+    </header>
+    <section class="cw-balances" aria-labelledby="cw-balance-title">
+      <h2 id="cw-balance-title">Cash balance</h2>
+      <div class="cw-money"><strong id="cashWalletAvailable">—</strong><span>Available USD · not connected</span></div>
+      <div class="cw-line"><span>Pending deposits</span><strong id="cashWalletPending">—</strong></div>
+      <p>These figures will come from a verified payment provider, never browser storage or your reward-token ledger.</p>
+    </section>
+    <section class="cw-panel" aria-labelledby="cw-add-title">
+      <h2 id="cw-add-title">Add funds</h2>
+      <p>Choose an amount in U.S. dollars. Funding will require a verified account and an approved bank or payment-provider connection.</p>
+      <form id="cashWalletFundingForm">
+        <label for="cashWalletAmount">Amount in USD</label>
+        <div class="cw-input-row"><span aria-hidden="true">$</span><input id="cashWalletAmount" type="text" inputmode="decimal" autocomplete="off" placeholder="20.00" aria-describedby="cw-funding-status" required><button type="submit">Review amount</button></div>
+      </form>
+      <p id="cw-funding-status" class="cw-note" role="status" aria-live="polite">Funding is not connected. No money will be collected.</p>
+    </section>
+    <section class="cw-panel" aria-labelledby="cw-pay-title">
+      <h2 id="cw-pay-title">Pay inside QuantaPhi</h2>
+      <p>Cash Wallet will be a separate checkout method for merchants that explicitly accept it. It cannot automatically pay a Walmart or McDonald’s register.</p>
+      <button class="cw-disabled" type="button" disabled aria-describedby="cw-pay-status">Pay with Cash Wallet · unavailable</button>
+      <p id="cw-pay-status" class="cw-note" role="status">No verified merchant checkout or settled funds are connected.</p>
+    </section>
+    <footer class="cw-footer">Cash dollars stay separate from Quants, Star Coins, Bubble Bits, GIT Coins and coupons. No bank account or payment details are collected in this preview.</footer>
+  </article>
+</main>
+<script type="module" src="/cash-wallet-card.mjs"></script>
+</body>
+</html>
