@@ -3,9 +3,184 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T07:31:22.998790Z",
+  "checked_at": "2026-11-12T08:01:49.278759Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "sasha obama",
+      "approx_searches": "100+",
+      "published_at": "2026-11-12T07:40:00Z",
+      "related_news_urls": [
+        "https://www.harpersbazaar.com/celebrity/latest/a74386831/malia-sasha-obama-fall-dressing-los-angeles-street-style-photos-dinner-barack/",
+        "https://www.teenvogue.com/story/malia-sasha-obama-style-trench-coats-two-very-different-ways",
+        "https://www.instyle.com/malia-sasha-obama-coordinate-trendy-outerwear-during-rare-sighting-12247348"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3t3op6dFdvxn3g8eWi4Q0PfhKXKdTbMnadAqrAFm9E7SM6M64XBss_50SCnA",
+      "image_credit": "Harper's BAZAAR",
+      "news": [
+        {
+          "url": "https://www.harpersbazaar.com/celebrity/latest/a74386831/malia-sasha-obama-fall-dressing-los-angeles-street-style-photos-dinner-barack/",
+          "title": "Malia and Sasha Obama Offer Two Totally Different Takes on Fall Dressing for Dinner With Dad Barack",
+          "publisher": "Harper's BAZAAR",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3t3op6dFdvxn3g8eWi4Q0PfhKXKdTbMnadAqrAFm9E7SM6M64XBss_50SCnA"
+        },
+        {
+          "url": "https://www.teenvogue.com/story/malia-sasha-obama-style-trench-coats-two-very-different-ways",
+          "title": "Malia and Sasha Obama Do Fall Layering Two Very Different Ways",
+          "publisher": "Teen Vogue",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBcYQvZ002lLb7wfcanyAzWcv6KNFm09FdPXS0WKHCKy22Yoa1L5LZZi6--vs"
+        },
+        {
+          "url": "https://www.instyle.com/malia-sasha-obama-coordinate-trendy-outerwear-during-rare-sighting-12247348",
+          "title": "Malia and Sasha Obama Coordinate in Trendy Fall Outerwear During First Joint Sighting in Months",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDxFTcNU1IZz1H66X--jYaHII23DQBDy1KINeDYQ4HejkUZp8kjwadNZYthA"
+        }
+      ]
+    },
+    {
+      "query": "a24",
+      "approx_searches": "100+",
+      "published_at": "2026-11-12T07:40:00Z",
+      "related_news_urls": [
+        "https://hypebeast.com/2026/11/a24-julianne-moore-jesse-eisenberg-paul-giamatt-the-debut-new-official-trailer-release-info",
+        "https://playbill.com/article/watch-community-theatre-themed-the-debut-trailer-starring-julianne-moore-paul-giamatti",
+        "https://variety.com/2026/film/awards/jesse-eisenberg-julianne-moore-debut-ai-bad-now-you-see-me-4-1236941541/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL9EjVTUa9u23JmTHvJNX0Gl4MhSxmynCSd2iq_lZVf3SJ4uEvZlwbMFbqZMY",
+      "image_credit": "Hypebeast",
+      "news": [
+        {
+          "url": "https://hypebeast.com/2026/11/a24-julianne-moore-jesse-eisenberg-paul-giamatt-the-debut-new-official-trailer-release-info",
+          "title": "Julianne Moore Goes Full Method Opposite Paul Giamatti in A24's 'The Debut' Trailer",
+          "publisher": "Hypebeast",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL9EjVTUa9u23JmTHvJNX0Gl4MhSxmynCSd2iq_lZVf3SJ4uEvZlwbMFbqZMY"
+        },
+        {
+          "url": "https://playbill.com/article/watch-community-theatre-themed-the-debut-trailer-starring-julianne-moore-paul-giamatti",
+          "title": "Watch Community Theatre-Themed The Debut Trailer Starring Julianne Moore, Paul Giamatti",
+          "publisher": "Playbill",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSgNEGajjzGhWXmDTLheRtL4F0iJ_o2W5dPHydr1kPhfCQMPreyAgrjh0NtZY"
+        },
+        {
+          "url": "https://variety.com/2026/film/awards/jesse-eisenberg-julianne-moore-debut-ai-bad-now-you-see-me-4-1236941541/",
+          "title": "Jesse Eisenberg, Julianne Moore on The Debut, AI and Now You See Me 4",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZ7fdR0q0JOfV9CLJFZL6kb5tsq4PZ5-wSdgSkUjHGIZhoEClFzNMCVNsyaqA"
+        }
+      ]
+    },
+    {
+      "query": "ps6",
+      "approx_searches": "100+",
+      "published_at": "2026-11-12T07:30:00Z",
+      "related_news_urls": [
+        "https://www.indy100.com/gaming/ps6-release-date-price-live-2678366661",
+        "https://en.gamegpu.com/news/zhelezo/v-seti-poyavilas-informatsiya-o-podgotovke-prezentatsii-konsoli-playstation-6",
+        "https://www.neoteo.com/en/sony-reportedly-says-ps6-development-is-on-schedule"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3K4yPezlv-RO7yd34k8pn1ZKz8qkS8Ji0w2I6g5CkofTH7It_MJzpT_I5nHc",
+      "image_credit": "Indy100",
+      "news": [
+        {
+          "url": "https://www.indy100.com/gaming/ps6-release-date-price-live-2678366661",
+          "title": "PS6 LIVE: Next-gen PlayStation plans official update from Sony",
+          "publisher": "Indy100",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3K4yPezlv-RO7yd34k8pn1ZKz8qkS8Ji0w2I6g5CkofTH7It_MJzpT_I5nHc"
+        },
+        {
+          "url": "https://en.gamegpu.com/news/zhelezo/v-seti-poyavilas-informatsiya-o-podgotovke-prezentatsii-konsoli-playstation-6",
+          "title": "Information about preparations for the PlayStation 6 console presentation has surfaced online.",
+          "publisher": "GameGPU",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQ3A8_o03r3dCuDszmFqrj26hFHOq9t7svvcv-hzAhYS1C5WLuLqoszn7gZJg"
+        },
+        {
+          "url": "https://www.neoteo.com/en/sony-reportedly-says-ps6-development-is-on-schedule",
+          "title": "PS6 development progress: Sony's reported update",
+          "publisher": "NeoTeo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlvIdv--8MSHQFeBkUPAkcFbZHLz8fj29ZhHkGNt_hJAXMTDEiEWfUVQmdoAk"
+        }
+      ]
+    },
+    {
+      "query": "cathay pacific",
+      "approx_searches": "100+",
+      "published_at": "2026-11-12T07:30:00Z",
+      "related_news_urls": [
+        "https://www.airbus.com/en/newsroom/press-releases/2026-11-the-cathay-group-orders-14-additional-airbus-aircraft",
+        "https://www.flightglobal.com/airlines/2026/11/cathay-pacific-orders-additional-a330neos-a321neos/",
+        "https://www.scmp.com/news/hong-kong/transport/article/3374031/cathay-orders-14-more-airbus-jets-investment-commitments-top-hk150-billion"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRh8alD2lwDSFkd6kG12UAGMfvX65Bzwtnz5OlI7Dmg9ZUbc2xR-k5RApOnWmk",
+      "image_credit": "Airbus",
+      "news": [
+        {
+          "url": "https://www.airbus.com/en/newsroom/press-releases/2026-11-the-cathay-group-orders-14-additional-airbus-aircraft",
+          "title": "The Cathay Group orders 14 additional Airbus aircraft",
+          "publisher": "Airbus",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRh8alD2lwDSFkd6kG12UAGMfvX65Bzwtnz5OlI7Dmg9ZUbc2xR-k5RApOnWmk"
+        },
+        {
+          "url": "https://www.flightglobal.com/airlines/2026/11/cathay-pacific-orders-additional-a330neos-a321neos/",
+          "title": "Cathay Pacific orders additional A330neos, A321neos",
+          "publisher": "FlightGlobal",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRk9XafzrCSc-udl4kbEEgSfsTgjBpjoXlQPykakwKg8geJCxZgxCMhJ5Au5lQ"
+        },
+        {
+          "url": "https://www.scmp.com/news/hong-kong/transport/article/3374031/cathay-orders-14-more-airbus-jets-investment-commitments-top-hk150-billion",
+          "title": "Cathay orders 14 more Airbus jets as investment commitments top HK$150 billion",
+          "publisher": "South China Morning Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZY7blKNzWRCsGgOyflt4s3b7G4UmBWDh0RHNzvd1k3kJU-g-JbEPazY7yj5I"
+        }
+      ]
+    },
+    {
+      "query": "jeremiah smith ohio state football news",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T07:20:00Z",
+      "related_news_urls": [
+        "https://www.elevenwarriors.com/ohio-state-football/2026/11/165356/ohio-state-launches-jj-4-it-all-campaign-for-jeremiah-smith-to-win-heisman-trophy-other-national-awards",
+        "https://ohiostatebuckeyes.com/news/2026/11/10/football-smith-named-semifinalist-for-maxwell-award",
+        "https://www.wfaa.com/video/sports/locked-on/lo-columbus/ohio-state-buckeyes-show/heisman-push-ohio-state-backs-jeremiah-smith-as-best-player-launches-official-trophy-campaign/535-af373b1f-ef86-4f06-a393-1248cc1af1d4"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0iA9_rFb5--qZN36dCCVnKfYlrwlkxbm7mjUieNhrfKos7gk1zjIRMLTBXnw",
+      "image_credit": "Eleven Warriors",
+      "news": [
+        {
+          "url": "https://www.elevenwarriors.com/ohio-state-football/2026/11/165356/ohio-state-launches-jj-4-it-all-campaign-for-jeremiah-smith-to-win-heisman-trophy-other-national-awards",
+          "title": "Ohio State Launches “JJ 4 It All” Campaign For Jeremiah Smith To Win Heisman Trophy, Other National Awards",
+          "publisher": "Eleven Warriors",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0iA9_rFb5--qZN36dCCVnKfYlrwlkxbm7mjUieNhrfKos7gk1zjIRMLTBXnw"
+        },
+        {
+          "url": "https://ohiostatebuckeyes.com/news/2026/11/10/football-smith-named-semifinalist-for-maxwell-award",
+          "title": "Smith Named Semifinalist for Maxwell Award",
+          "publisher": "Ohio State | Official Athletics Website",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQ5HM9gJnKE__kpuG_xy5L8TrCtj9iMGHeqA5Ck1bmKcTUSat6opC_S2nYNPc"
+        },
+        {
+          "url": "https://www.wfaa.com/video/sports/locked-on/lo-columbus/ohio-state-buckeyes-show/heisman-push-ohio-state-backs-jeremiah-smith-as-best-player-launches-official-trophy-campaign/535-af373b1f-ef86-4f06-a393-1248cc1af1d4",
+          "title": "HEISMAN PUSH: Ohio State Backs Jeremiah Smith as Best Player, LAUNCHES Official Trophy Campaign",
+          "publisher": "WFAA",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQfNlt4ubryItZFqjN5rw0aEeM_L74bR2ZpNIJeecfeXJJ3Dxb9JthiE18gSI"
+        }
+      ]
+    },
     {
       "query": "kylie jenner former staff lawsuits",
       "approx_searches": "100+",
@@ -117,8 +292,8 @@
       "published_at": "2026-11-12T07:00:00Z",
       "related_news_urls": [
         "https://www.theguardian.com/football/2026/nov/11/slaven-bilic-croatia-7-0-england-nations-league-wembley",
-        "https://talksport.com/football/4698320/england-line-up-croatia-team-news-jobe-thomas-tuchel/",
-        "https://mybettingsites.co.uk/news/bet365-bonus-code-get-30-in-nations-league-free-bets-11th-november/"
+        "https://sports.yahoo.com/articles/england-v-croatia-tv-channel-073209039.html",
+        "https://news.williamhill.com/football/will-harry-kane-score/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlb2g3ZFcGBNWwlxIhHH3Gv0yBoMPFeyasEYZxa9ejGkAFAYEIS942NnOOE_I",
       "image_credit": "The Guardian",
@@ -131,18 +306,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlb2g3ZFcGBNWwlxIhHH3Gv0yBoMPFeyasEYZxa9ejGkAFAYEIS942NnOOE_I"
         },
         {
-          "url": "https://talksport.com/football/4698320/england-line-up-croatia-team-news-jobe-thomas-tuchel/",
-          "title": "How England could line-up against Croatia with Jobe debut and Pickford decision",
-          "publisher": "talkSPORT",
+          "url": "https://sports.yahoo.com/articles/england-v-croatia-tv-channel-073209039.html",
+          "title": "Is England v Croatia on TV? Channel, kick-off time and how to watch Nations League clash",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWf_aCBTQUYsgKjrvc-nWTHAM8dtcu-senTougNUBq7Yt8yJ1Eje1PkKnHw5M"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_-ItL1rKg4_RoykKcxC67TT3hEwGJk9fVAl0Uo1nY6Fs6c1eSXOcj3Nb5A5w"
         },
         {
-          "url": "https://mybettingsites.co.uk/news/bet365-bonus-code-get-30-in-nations-league-free-bets-11th-november/",
-          "title": "bet365 bonus code: Get £30 in Nations League free bets",
-          "publisher": "MyBettingSites.co.uk",
+          "url": "https://news.williamhill.com/football/will-harry-kane-score/",
+          "title": "Will Harry Kane Score? Latest Goalscorer Prediction & Tips",
+          "publisher": "William Hill News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2T6ZP8gzMwNSsgsZHuB4q9NeiYal4ghNZERFNwIi7qDiS3rYqIjvvSy0JhbE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQm7ygJrNFV-b2TighYvnwrCpS_G0f2BR3ATDTLAeDjAjertICzajWpFteiNK4"
         }
       ]
     },
@@ -178,181 +353,6 @@
           "publisher": "Entertainment Weekly",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQO8ceglg3ZtCblCfHncbukEF8X-0AeB8wbkJKnYMHaqKe8rrn4N44w-c2Piec"
-        }
-      ]
-    },
-    {
-      "query": "aspyn ovard 10 year secret",
-      "approx_searches": "100+",
-      "published_at": "2026-11-12T07:00:00Z",
-      "related_news_urls": [
-        "https://parade.com/news/aspyn-ovard-reveals-10-year-secret-ended-marriage-parker-ferris",
-        "https://www.yahoo.com/entertainment/tv/articles/mormon-wives-star-goes-divorce-174254597.html",
-        "https://www.eonline.com/news/1437963/aspyn-ovard-details-throuple-with-married-couples-role-in-mormon-wives-oc"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTK-zq_-BSI1tgWQhrrPwMp7qBzF6U-gQTS6M7PRqtPmnkzMZrmmALmGOdMfoY",
-      "image_credit": "Parade Magazine",
-      "news": [
-        {
-          "url": "https://parade.com/news/aspyn-ovard-reveals-10-year-secret-ended-marriage-parker-ferris",
-          "title": "Aspyn Ovard Reveals ’10 Year Secret’ That Ended Marriage to Parker Ferris",
-          "publisher": "Parade Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTK-zq_-BSI1tgWQhrrPwMp7qBzF6U-gQTS6M7PRqtPmnkzMZrmmALmGOdMfoY"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/mormon-wives-star-goes-divorce-174254597.html",
-          "title": "Mormon Wives Star Goes From Divorce to a Full-Blown Throuple",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSZDYjY6tmwRmLBqVy3elgUP1F5Jfg4MsgjQKJN-khSo6LRsnE_zieejjh2xc"
-        },
-        {
-          "url": "https://www.eonline.com/news/1437963/aspyn-ovard-details-throuple-with-married-couples-role-in-mormon-wives-oc",
-          "title": "Untangling Aspyn Ovard's Throuple With Married Couple: What She Wants You to Know",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9UPJfVG8sgZHcCT_FZi5Osbhym7inMidH6_iR27NONRA1e21iVqYU97G2NPw"
-        }
-      ]
-    },
-    {
-      "query": "hltv",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T06:50:00Z",
-      "related_news_urls": [
-        "https://community.skin.club/en/news/hltv-adds-economy-and-round-based-filters-to-cs2-statistics",
-        "https://thegww.com/cs2-premier-teams-refine-anubis-utility-and-mr12-economy/",
-        "https://invisioncommunity.co.uk/how-counter-strike-2-changed-competitive-play-and-esports-analysis/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSusOe9ZufqWT8dSHNqHOwiieu64R-JD3qXN0lZVPAiTO8wCZmXCYHTjMGD4rw",
-      "image_credit": "Skin.Club",
-      "news": [
-        {
-          "url": "https://community.skin.club/en/news/hltv-adds-economy-and-round-based-filters-to-cs2-statistics",
-          "title": "HLTV Introduces New Economy and Round Filters for CS2 Stats",
-          "publisher": "Skin.Club",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSusOe9ZufqWT8dSHNqHOwiieu64R-JD3qXN0lZVPAiTO8wCZmXCYHTjMGD4rw"
-        },
-        {
-          "url": "https://thegww.com/cs2-premier-teams-refine-anubis-utility-and-mr12-economy/",
-          "title": "CS2 Premier Teams Refine Anubis Utility and MR12 Economy",
-          "publisher": "TheGWW.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA3bYa8sYkmYFFA3L_8AyC8gmFa7RgaKqTMWhrOiHnPvZ_5ybmAWlzUNs0LGI"
-        },
-        {
-          "url": "https://invisioncommunity.co.uk/how-counter-strike-2-changed-competitive-play-and-esports-analysis/",
-          "title": "How Counter-Strike 2 Changed Competitive Play and Esports Analysis",
-          "publisher": "Invision Game Community",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLt-sJWPWCCwxwrImiQyBH0E8fif0kOf0IZt_C6LCp-GlaZKEI_I9cvQk57iI"
-        }
-      ]
-    },
-    {
-      "query": "slomw oc",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-12T06:50:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/09/arts/television/mormon-wives-orange-county-shows-to-watch.html",
-        "https://www.imdb.com/news/ni66105544/?ref_=nwc_art_perm",
-        "https://www.dailynews.com/2026/11/11/meet-orange-countys-mormon-wives-as-hulu-reveals-their-secret-lives/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWoZOAyZ8mS-QK-D8f0VJWvlzbLXZX9_KYkdjbR_c4zE0lUNMjUrlCndYskwA",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/09/arts/television/mormon-wives-orange-county-shows-to-watch.html",
-          "title": "‘The Secret Lives of Mormon Wives: Orange County’ and 5 More Shows to Watch",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWoZOAyZ8mS-QK-D8f0VJWvlzbLXZX9_KYkdjbR_c4zE0lUNMjUrlCndYskwA"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66105544/?ref_=nwc_art_perm",
-          "title": "Why Bobbi Althoff Almost Quit ‘The Secret Lives of Mormon Wives: Orange County’",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbnD2VNbYg9Gvkbd_rhdPpGjQsTu-fvS7KW0fPlbW0nXayS7k8QCRVV-bbMY8"
-        },
-        {
-          "url": "https://www.dailynews.com/2026/11/11/meet-orange-countys-mormon-wives-as-hulu-reveals-their-secret-lives/",
-          "title": "Meet Orange County’s ‘Mormon Wives’ as Hulu reveals their secret lives",
-          "publisher": "Los Angeles Daily News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT75kP4YZn0TmNQ4ecmXKHvtujaIGCDsXLlMDP_9jMakMlxqOn24UQNpDOki6o"
-        }
-      ]
-    },
-    {
-      "query": "france vs italy",
-      "approx_searches": "100+",
-      "published_at": "2026-11-12T06:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/italy-vs-france-probable-line-210300532.html",
-        "https://mashable.com/entertainment/italy-france-nations-league-2026-live-stream-for-free",
-        "https://www.si.com/soccer/italy-vs-france-nations-league-preview-predictions-lineups-11-12-26/app/?utm_source=forza"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZfGLm1sevSgpzhtWfBvtsxeTTpnNHg4AOa5oQrfrrNWwqi3TZOYrHDg0RUIk",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/italy-vs-france-probable-line-210300532.html",
-          "title": "Italy vs. France probable line-ups: Injuries dictate Nations League teams",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZfGLm1sevSgpzhtWfBvtsxeTTpnNHg4AOa5oQrfrrNWwqi3TZOYrHDg0RUIk"
-        },
-        {
-          "url": "https://mashable.com/entertainment/italy-france-nations-league-2026-live-stream-for-free",
-          "title": "Italy vs. France 2026 livestream: How to watch Nations League for free",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzqQztLE2uAS5qa2IART4y5lfkastqgiL1HxiGh8vhTUtWWZ3hM14kRiw1A00"
-        },
-        {
-          "url": "https://www.si.com/soccer/italy-vs-france-nations-league-preview-predictions-lineups-11-12-26/app/?utm_source=forza",
-          "title": "Italy vs. France—Nations League: Preview, Predictions and Lineups",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT18FhZuzZVKVeLdp3PRTxct5dx8CH0LhA-3SekYuHAeTz9XwGflB2T5fzjAP0"
-        }
-      ]
-    },
-    {
-      "query": "dustin hoffman",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T06:40:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/07/books/review/dustin-hoffman-look-at-me.html",
-        "https://people.com/dustin-hoffman-says-he-was-still-basically-broke-after-the-graduate-12247232",
-        "https://www.theguardian.com/books/2026/nov/09/look-at-me-by-dustin-hoffman-review-an-era-defining-actor-says-his-piece"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_tUKEr3AsoiVB7FHqH55qLHucywzgoVRNNRq3R51uSW-1waP_ZXFhplYwS6M",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/07/books/review/dustin-hoffman-look-at-me.html",
-          "title": "Dustin Hoffman Thought He’d Be a Nobody",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_tUKEr3AsoiVB7FHqH55qLHucywzgoVRNNRq3R51uSW-1waP_ZXFhplYwS6M"
-        },
-        {
-          "url": "https://people.com/dustin-hoffman-says-he-was-still-basically-broke-after-the-graduate-12247232",
-          "title": "Dustin Hoffman Says He Was ‘Still Basically Broke’ After The Graduate and Had to Go On Unemployment",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqallv9G2cyp4T8gcx83kXZTXj1KLIsi2v0DU2DHvmUHqHaZV2CQQ8_V9FHFo"
-        },
-        {
-          "url": "https://www.theguardian.com/books/2026/nov/09/look-at-me-by-dustin-hoffman-review-an-era-defining-actor-says-his-piece",
-          "title": "Look at Me by Dustin Hoffman review – an era-defining actor says his piece",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQK6hmox7_0QUJnrO6Trh6vgU1bKnWTECfNYLZAaELoNGcvHnX6_jacqPboCrY"
         }
       ]
     }
