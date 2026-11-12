@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T01:31:34.904583Z",
+  "checked_at": "2026-11-12T02:01:19.730379Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "magic vs jazz",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-12T01:10:00Z",
+      "query": "mammoth vs golden knights",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T01:40:00Z",
       "related_news_urls": [
-        "https://sportsbook.fanduel.com/basketball/nba/orlando-magic-@-utah-jazz-36298488",
-        "https://utahjazz.com/news/preview-utah-jazz-end-back-to-back-against-orlando-magic",
-        "https://www.sportsgambler.com/betting-tips/basketball/orlando-magic-vs-utah-jazz-prediction-odds-6019817/"
+        "https://www.espn.com/nhl/story/_/id/50444541/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
+        "https://www.nhl.com/news/utah-mammoth-vegas-golden-knights-game-preview-november-11-2026",
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/utah-mammoth-vs-vegas-golden-knights-prediction-odds-2026-11-11/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKpB37eVtJ35GtEJ9HMZb-r-V089BFg_zwuuzJSZB6qWwQelizt5DrOCkL9lM",
-      "image_credit": "FanDuel Sportsbook",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfIS7WgUNyCZRivmiDAlPqEV504K8d19vZNl1Zk54FY3wyZ_ujGJ8Qk06E5r4",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://sportsbook.fanduel.com/basketball/nba/orlando-magic-@-utah-jazz-36298488",
-          "title": "Orlando Magic @ Utah Jazz Odds",
-          "publisher": "FanDuel Sportsbook",
+          "url": "https://www.espn.com/nhl/story/_/id/50444541/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
+          "title": "NHL Tonight: What to watch in Mammoth-Knights, five other games on Wednesday",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKpB37eVtJ35GtEJ9HMZb-r-V089BFg_zwuuzJSZB6qWwQelizt5DrOCkL9lM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfIS7WgUNyCZRivmiDAlPqEV504K8d19vZNl1Zk54FY3wyZ_ujGJ8Qk06E5r4"
         },
         {
-          "url": "https://utahjazz.com/news/preview-utah-jazz-end-back-to-back-against-orlando-magic",
-          "title": "Preview: Utah Jazz End Back-to-Back Against Orlando Magic",
-          "publisher": "NBA.com",
+          "url": "https://www.nhl.com/news/utah-mammoth-vegas-golden-knights-game-preview-november-11-2026",
+          "title": "Mammoth at Golden Knights projected lineups",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqQ7nwvU5KUEbEM5YTLnKN6PTVElv2ZDR6tCHGMCVb30FsVWS2o2lF9R44iI4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
         },
         {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/orlando-magic-vs-utah-jazz-prediction-odds-6019817/",
-          "title": "Orlando Magic vs Utah Jazz Prediction, Picks & Odds | NBA Wednesday",
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/utah-mammoth-vs-vegas-golden-knights-prediction-odds-2026-11-11/",
+          "title": "Utah Mammoth vs Vegas Golden Knights Prediction, Picks & Odds | 11 Nov 2026",
           "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCj4UV2XZ6OMWPG8otSK-CWckdcenQc3GqfKqJSfgaGXVy8_o1Py9qxiJ_MGE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbCNW9ituFxfK-y6w5ymAiqHftH34a3QUtXcQL0LVH8-bUrqgtYohWTv-gEa4"
         }
       ]
     },
     {
-      "query": "immanuel quickley",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T01:10:00Z",
+      "query": "tyler herro",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T01:40:00Z",
       "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/raptors-start-quickley-walter-rj-collin-poeltl",
-        "https://www.sportsnet.ca/nba/article/raptors-immanuel-quickley-collin-murray-boyles-available-vs-celtics/",
-        "https://www.thestar.com/sports/raptors/quickley-murray-boyles-back-in-raptors-lineup-vs-celtics-barnes-leonard-still-out/article_c430f815-46c9-527c-b769-4ad48981fe03.html"
+        "https://sports.yahoo.com/articles/final-injury-report-magic-jazz-220000951.html",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/jamal-cain-shoulder-downgraded-to-out-wednesday",
+        "https://www.rotoballer.com/player-news/tristan-da-silva-out-vs-kings-with-left-calf-strain/1990009"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRg98jBDZZFGZMXc-7l5jNHy0OvSrKcyADAz4Ug-63Z3R4AnvaZ-5tFnJLcNTA",
-      "image_credit": "NBC Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0eDrZaJP5mEiCtPZGixX5w4E55iKuXLDcKdIvb2WcOBpDtJUztlJ6YjD6xg8",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/raptors-start-quickley-walter-rj-collin-poeltl",
-          "title": "Raptors start Quickley, Walter, RJ, Collin, Poeltl",
+          "url": "https://sports.yahoo.com/articles/final-injury-report-magic-jazz-220000951.html",
+          "title": "Final Injury Report for Magic-Jazz: Will Lauri Markkanen, Keyonte George Play?",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0eDrZaJP5mEiCtPZGixX5w4E55iKuXLDcKdIvb2WcOBpDtJUztlJ6YjD6xg8"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/jamal-cain-shoulder-downgraded-to-out-wednesday",
+          "title": "Jamal Cain (shoulder) downgraded to out Wednesday",
           "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRg98jBDZZFGZMXc-7l5jNHy0OvSrKcyADAz4Ug-63Z3R4AnvaZ-5tFnJLcNTA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmz3H41uQ6Mntj1rUbQhV_9vIlxHNlsXHcRl32TJt3KE9AK8M4EoC8FIIlTDg"
         },
         {
-          "url": "https://www.sportsnet.ca/nba/article/raptors-immanuel-quickley-collin-murray-boyles-available-vs-celtics/",
-          "title": "Raptors' Immanuel Quickley, Collin Murray-Boyles available vs. Celtics",
-          "publisher": "Sportsnet.ca",
+          "url": "https://www.rotoballer.com/player-news/tristan-da-silva-out-vs-kings-with-left-calf-strain/1990009",
+          "title": "Tristan da Silva Ruled Out Tuesday at Sacramento - NBA News | Fantasy Basketball",
+          "publisher": "RotoBaller",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgcCjbvEpWHuzFXVJFFQ5O0Dlm0hb3Ga6nEJpxiumE51xWcTBWBAGJPEwPozg"
-        },
-        {
-          "url": "https://www.thestar.com/sports/raptors/quickley-murray-boyles-back-in-raptors-lineup-vs-celtics-barnes-leonard-still-out/article_c430f815-46c9-527c-b769-4ad48981fe03.html",
-          "title": "Quickley, Murray-Boyles back in Raptors lineup vs. Celtics; Barnes, Leonard still out",
-          "publisher": "Toronto Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-3Hea8-ZLlRiOnDn8YpHZL3rOa3GIhCzfGvdboXV-8FTa5ncdpTlInUxpqxA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7uv9K6eCGxpL1j2jh90Zux3kLqj2p20jP96f1Mdh85syLifkN8qGvslf-lKI"
         }
       ]
     },
     {
-      "query": "richard todd",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T01:00:00Z",
+      "query": "lakers vs milwaukee bucks match player stats",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T01:40:00Z",
       "related_news_urls": [
-        "https://www.foxnews.com/outkick-sports/wife-former-jets-alabama-crimson-tide-quarterback-richard-todd-arrested-attacking-pliers",
-        "https://www.wsfa.com/2026/11/11/wife-former-alabama-nfl-quarterback-charged-with-domestic-violence/",
-        "https://www.al.com/news/2026/11/former-alabama-and-nfl-quarterback-allegedly-attacked-by-wife-with-pliers-records-state.html"
+        "https://www.nba.com/game/lal-vs-atl-0022600203/box-score",
+        "https://www.espn.com/nba/recap/_/gameId/401909929",
+        "https://www.cleveland.com/cavs/2026/11/cavs-rolled-by-thunder-124-116-in-wire-to-wire-loss.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS84V0bmDm-y5Ckcud0V3-XseTZSIKmeArbnG6zMKEQyE-AFWhza4bUSS6pvV0",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNm5pAGV6tyZzyyLtduvUFkib_rckR4AC95K_4ms3eWpT5q27WyUqILPsTevs",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://www.nba.com/game/lal-vs-atl-0022600203/box-score",
+          "title": "Los Angeles Lakers vs Atlanta Hawks Nov 9, 2026 Box Scores",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNm5pAGV6tyZzyyLtduvUFkib_rckR4AC95K_4ms3eWpT5q27WyUqILPsTevs"
+        },
+        {
+          "url": "https://www.espn.com/nba/recap/_/gameId/401909929",
+          "title": "Thunder 124-116 Cavaliers (Nov 4, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsOVpKAN7d5Rw1RDTflQcnHpyRBYi6ixjpspIAPJTI9sXU0eYfW7is3VXzTek"
+        },
+        {
+          "url": "https://www.cleveland.com/cavs/2026/11/cavs-rolled-by-thunder-124-116-in-wire-to-wire-loss.html",
+          "title": "Cavs rolled by Thunder, 124-116, in wire-to-wire loss",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpJL5BWK0Q3zczSWxvuk6UShOoT-8d6tuMj-M_9jN2jQg4Opg8GqH3yvm4V_E"
+        }
+      ]
+    },
+    {
+      "query": "el niño",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T01:30:00Z",
+      "related_news_urls": [
+        "https://www.foxweather.com/weather-news/super-el-nino-hours-away-forecast-winter-fall",
+        "https://grist.org/extreme-weather/a-monstrous-el-nino-has-arrived-what-it-means-for-where-you-live/",
+        "https://www.npr.org/2026/11/10/nx-s1-6011189/super-el-nino-2026-fish-market"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSqHUigvhzSzC-tn7-tZJbvVIEs02ATSHKzBT5dJaRXa8rCIy7CEj-IMxvLug",
+      "image_credit": "FOX Weather",
+      "news": [
+        {
+          "url": "https://www.foxweather.com/weather-news/super-el-nino-hours-away-forecast-winter-fall",
+          "title": "The official designation of a Super El Niño event is hours away: What that means and why it matters",
+          "publisher": "FOX Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSqHUigvhzSzC-tn7-tZJbvVIEs02ATSHKzBT5dJaRXa8rCIy7CEj-IMxvLug"
+        },
+        {
+          "url": "https://grist.org/extreme-weather/a-monstrous-el-nino-has-arrived-what-it-means-for-where-you-live/",
+          "title": "A monstrous El Niño has arrived. Here’s what it means for where you live.",
+          "publisher": "Grist",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxuXwBpyMTKBNJ5zjTbR--hBygQO3VGkj8Dxg20KDEAx-C5EwI67aWP4hsRcU"
+        },
+        {
+          "url": "https://www.npr.org/2026/11/10/nx-s1-6011189/super-el-nino-2026-fish-market",
+          "title": "How this year's record El Niño could hit your wallet : Short Wave",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSiJzsusP0zZalGjjn8oCAyNACZfgwW_BqWGjjfoyUou9L762Z7xneW7JYqNYU"
+        }
+      ]
+    },
+    {
+      "query": "météo demain",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T01:30:00Z",
+      "related_news_urls": [
+        "https://www.bfmtv.com/meteo/video-un-ciel-degage-dans-le-sud-ouest-de-la-pluie-attendue-sur-le-reste-de-la-france-la-meteo-du-11-novembre_VN-202611110125.html",
+        "https://www.tf1info.fr/replay-tf1/videos/video-meteo-du-11-novembre-2026-previsions-meteo-a-21h02-2475321.html",
+        "https://www.franceinfo.fr/environnement/meteo/alertes-meteo-et-vigilances/vigilance-jaune-pluies-inondations-risque-de-fortes-pluies-localement-dans-les-hautes-pyrenees-ce-11-novembre-2026_8277356.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQL3tx6B7rZF2mb0a0LnBFx3bs7jKtZzP6m4qMdCq2TPVT_X_Q46EII0F_kzyA",
+      "image_credit": "BFM",
+      "news": [
+        {
+          "url": "https://www.bfmtv.com/meteo/video-un-ciel-degage-dans-le-sud-ouest-de-la-pluie-attendue-sur-le-reste-de-la-france-la-meteo-du-11-novembre_VN-202611110125.html",
+          "title": "Un ciel dégagé dans le sud-ouest, de la pluie attendue sur le reste de la France: la météo du 11 novembre",
+          "publisher": "BFM",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQL3tx6B7rZF2mb0a0LnBFx3bs7jKtZzP6m4qMdCq2TPVT_X_Q46EII0F_kzyA"
+        },
+        {
+          "url": "https://www.tf1info.fr/replay-tf1/videos/video-meteo-du-11-novembre-2026-previsions-meteo-a-21h02-2475321.html",
+          "title": "Météo du 11 novembre 2026 : Prévisions météo à 21h02",
+          "publisher": "TF1 Info",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROm7kx7DW8O0KL_4UEbiktny4_P7q6aVA88QI-Ax3AaiGhlOO4bsC-6cPShNk"
+        },
+        {
+          "url": "https://www.franceinfo.fr/environnement/meteo/alertes-meteo-et-vigilances/vigilance-jaune-pluies-inondations-risque-de-fortes-pluies-localement-dans-les-hautes-pyrenees-ce-11-novembre-2026_8277356.html",
+          "title": "Vigilance jaune pluies-inondations : risque de fortes pluies localement dans les Hautes-Pyrénées ce 11 novembre 2026",
+          "publisher": "franceinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQw9CDfawR5YBauEDB7UWgG8l-QxTDTmnMabXrzlrZqC_D9_Pn5BbCYEAoKUrM"
+        }
+      ]
+    },
+    {
+      "query": "kelsey grammer",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T01:30:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/video/6408207785112",
+        "https://fox8.com/news/maybe-its-time-kelsey-grammer-teases-white-house-run/",
+        "https://www.cbsnews.com/video/america-the-beautiful-film-to-document-us-landscapes/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0i7bQ5X6kaUAqy5GZFfZs4OUQnJ0aUtzWzJ6YLyFFmGk8c5AsuQ8RWNi9Ol8",
       "image_credit": "Fox News",
       "news": [
         {
-          "url": "https://www.foxnews.com/outkick-sports/wife-former-jets-alabama-crimson-tide-quarterback-richard-todd-arrested-attacking-pliers",
-          "title": "Wife of former Jets and Alabama Crimson Tide quarterback Richard Todd arrested for attacking him with pliers",
+          "url": "https://www.foxnews.com/video/6408207785112",
+          "title": "Kelsey Grammer's new documentary, 'America the Beautiful' showcases the beauty of the country",
           "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS84V0bmDm-y5Ckcud0V3-XseTZSIKmeArbnG6zMKEQyE-AFWhza4bUSS6pvV0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0i7bQ5X6kaUAqy5GZFfZs4OUQnJ0aUtzWzJ6YLyFFmGk8c5AsuQ8RWNi9Ol8"
         },
         {
-          "url": "https://www.wsfa.com/2026/11/11/wife-former-alabama-nfl-quarterback-charged-with-domestic-violence/",
-          "title": "Wife of former Alabama, NFL quarterback charged with domestic violence",
-          "publisher": "WSFA",
+          "url": "https://fox8.com/news/maybe-its-time-kelsey-grammer-teases-white-house-run/",
+          "title": "‘Maybe it’s time’: Kelsey Grammer teases White House run",
+          "publisher": "FOX 8 News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEtZwgCosu1poWqe0B-jV3fCWeCWPwAnrJDDCzbVi5OWmvbjCG7e4HnLO38AY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSiefvbHF6nhPbkzi9CtNa22AihkH94PaMFCDCDWErjT-Mze9e_gXnrINgAupQ"
         },
         {
-          "url": "https://www.al.com/news/2026/11/former-alabama-and-nfl-quarterback-allegedly-attacked-by-wife-with-pliers-records-state.html",
-          "title": "Former Alabama and NFL quarterback allegedly attacked by wife with pliers, records state",
-          "publisher": "AL.com",
+          "url": "https://www.cbsnews.com/video/america-the-beautiful-film-to-document-us-landscapes/",
+          "title": "Kelsey Grammer previews his \"America the Beautiful\" film documenting U.S. landscapes",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOiCEi6H9M-osD1a80dBMpLdtyIbbunJwvmM-F4ePMI5P7XKPV6oFOWKbqZ08"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKu0iS5swSY3TL5FunC8qLwpx1tkJykdz7e12gnOATpeu0bjwX2nlhkMAvKkQ"
         }
       ]
     },
     {
-      "query": "robert morris vs arkansas",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T01:00:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/arkansas/longformarticle/arkansas-basketball-robert-morris-game-preview-notebook--292554929/",
-        "https://arkansasrazorbacks.com/mbb-preview-arkansas-vs-robert-morris/",
-        "https://www.wholehogsports.com/news/2026/nov/10/arkansas-basketball-vs-robert-morris-how-to-watch-betting-line-what-to-know/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZNjXM9MXzaT-dmuT4noTMpTqG4ldh5q2iKw1xiUVKlBVLrxxTEgaf9zowbro",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/arkansas/longformarticle/arkansas-basketball-robert-morris-game-preview-notebook--292554929/",
-          "title": "Arkansas basketball back home for matchup with Robert Morris",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZNjXM9MXzaT-dmuT4noTMpTqG4ldh5q2iKw1xiUVKlBVLrxxTEgaf9zowbro"
-        },
-        {
-          "url": "https://arkansasrazorbacks.com/mbb-preview-arkansas-vs-robert-morris/",
-          "title": "MBB Preview: Arkansas vs Robert Morris",
-          "publisher": "Arkansas Razorbacks",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDt39mzEqSbB_sOZjHEvYdi1nyzGKKcyShOwCM4WbWUz-OlY4TX1Z6gP0va5o"
-        },
-        {
-          "url": "https://www.wholehogsports.com/news/2026/nov/10/arkansas-basketball-vs-robert-morris-how-to-watch-betting-line-what-to-know/",
-          "title": "Arkansas basketball vs. Robert Morris.: How to watch, betting line, what to know",
-          "publisher": "Whole Hog Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkrFd-SIFhxdaPKT6iZdpzZZuW8UJw2xW897jDshPdRte_knB6EOaetGV1hvQ"
-        }
-      ]
-    },
-    {
-      "query": "liga mx femenil",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T01:00:00Z",
-      "related_news_urls": [
-        "https://www.mediotiempo.com/futbol/liga-mx-femenil/america-vs-toluca-en-vivo-a-que-hora-y-donde-ver-cuartos-de-final-liga-mx-femenil-2026",
-        "https://www.marca.com/mx/futbol/liga-mx-femenil/2026/11/11/america-femenil-jugara-estadio-azteca-partido-nfl-asi-reacciona-angel-villacampa-video.html",
-        "https://es-us.noticias.yahoo.com/%C3%A1ngel-villacampa-molesta-cambio-local%C3%ADa-170810690.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRx5K0APzyQe-e0B3GyzCYNYq9tAHGPtAiM5sOjWZIrqj5T0eIcjgLYUkOocI8",
-      "image_credit": "Mediotiempo",
-      "news": [
-        {
-          "url": "https://www.mediotiempo.com/futbol/liga-mx-femenil/america-vs-toluca-en-vivo-a-que-hora-y-donde-ver-cuartos-de-final-liga-mx-femenil-2026",
-          "title": "América vs. Toluca EN VIVO. Partido de la Ida Cuartos de Final Liga BBVA Femenil 2026 HOY",
-          "publisher": "Mediotiempo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRx5K0APzyQe-e0B3GyzCYNYq9tAHGPtAiM5sOjWZIrqj5T0eIcjgLYUkOocI8"
-        },
-        {
-          "url": "https://www.marca.com/mx/futbol/liga-mx-femenil/2026/11/11/america-femenil-jugara-estadio-azteca-partido-nfl-asi-reacciona-angel-villacampa-video.html",
-          "title": "América Femenil no jugará en el Estadio Azteca por partido de NFL y así reacciona Ángel Villacampa",
-          "publisher": "MARCA",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIXbXY_ZT1MdKYH4lDHb4Sa3zT25mHXsM53eTLEbpXCRoOK0i_H9DHuP8bGNc"
-        },
-        {
-          "url": "https://es-us.noticias.yahoo.com/%C3%A1ngel-villacampa-molesta-cambio-local%C3%ADa-170810690.html",
-          "title": "Ángel Villacampa no se molesta por el cambio de localía ante Toluca",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL0DBIU1lTwIz6CbRTgCDxX8QWKcmlNkJpSfzBqkncZRDeJYdUiuTKgQCrVKo"
-        }
-      ]
-    },
-    {
-      "query": "mason plumlee",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T01:00:00Z",
-      "related_news_urls": [
-        "https://bleacherreport.com/articles/25532425-mason-plumlee-kings-reportedly-agree-contract-after-spurs-stint-updated-nba-depth-chart",
-        "https://www.hoopsrumors.com/2026/11/mason-plumlee-to-sign-with-kings.html",
-        "https://www.rotowire.com/basketball/headlines/mason-plumlee-news-finds-work-with-sacramento-538677"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT215hs8g9NshxTtKWwmUIOsHHjg62Q31KcwKKdjzgGYUYhL3uZ-A957mqa_jQ",
-      "image_credit": "Bleacher Report",
-      "news": [
-        {
-          "url": "https://bleacherreport.com/articles/25532425-mason-plumlee-kings-reportedly-agree-contract-after-spurs-stint-updated-nba-depth-chart",
-          "title": "Mason Plumlee, Kings Reportedly Agree to Contract After Spurs Stint, Updated NBA Depth Chart",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT215hs8g9NshxTtKWwmUIOsHHjg62Q31KcwKKdjzgGYUYhL3uZ-A957mqa_jQ"
-        },
-        {
-          "url": "https://www.hoopsrumors.com/2026/11/mason-plumlee-to-sign-with-kings.html",
-          "title": "Mason Plumlee To Sign With Kings",
-          "publisher": "Hoops Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZ4esIB6aNm0Ru9JFPFnm3izq-Fjr7EqFKHvCvSsyPu9-UPEkhKGTV9CW8hok"
-        },
-        {
-          "url": "https://www.rotowire.com/basketball/headlines/mason-plumlee-news-finds-work-with-sacramento-538677",
-          "title": "Mason Plumlee News: Finds work with Sacramento",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvyo4bLkgEa3-UQM40K3wcekw3Qnac0MftZLHlHA481Okvcx68MqZpV1NIvc4"
-        }
-      ]
-    },
-    {
-      "query": "dwayne johnson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T01:00:00Z",
-      "related_news_urls": [
-        "https://screenrant.com/dwayne-johnson-hercules-fantasy-action-movie-streaming-free-tubi/",
-        "https://www.wndu.com/2026/11/11/10-year-old-wrestlers-halloween-costume-gets-incredible-reaction-rock-himself/",
-        "https://www.firstalert4.com/2026/11/06/edwardsville-girls-halloween-costume-prompts-invite-rock/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ39tY6YiOG3wMS1rG8Q-v2KFp_-a78j-H1hrTGj4fdbUWvbRlpDivfsk2bZVA",
-      "image_credit": "ScreenRant",
-      "news": [
-        {
-          "url": "https://screenrant.com/dwayne-johnson-hercules-fantasy-action-movie-streaming-free-tubi/",
-          "title": "12 Years Later, Dwayne Johnson's $245 Million Mythological Action Epic Is Now Available To Stream For Free",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ39tY6YiOG3wMS1rG8Q-v2KFp_-a78j-H1hrTGj4fdbUWvbRlpDivfsk2bZVA"
-        },
-        {
-          "url": "https://www.wndu.com/2026/11/11/10-year-old-wrestlers-halloween-costume-gets-incredible-reaction-rock-himself/",
-          "title": "10-year-old wrestler’s Halloween costume gets incredible reaction from ‘The Rock’ himself",
-          "publisher": "WNDU",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-qec4r6fjKHb5Ni08TJWJzhaCUPZ1uFn79DsQSI6-_RbWP00CE3o-o3RzG7c"
-        },
-        {
-          "url": "https://www.firstalert4.com/2026/11/06/edwardsville-girls-halloween-costume-prompts-invite-rock/",
-          "title": "Edwardsville girl’s Halloween costume prompts invite from ‘The Rock’",
-          "publisher": "KMOV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSobXhOvqyWyxPhyUCfwU1-jngFpR9CWchH3H1m07xWKQgxQ06DruSrnkPqSjo"
-        }
-      ]
-    },
-    {
-      "query": "andre drummond",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T01:00:00Z",
-      "related_news_urls": [
-        "https://www.postingandtoasting.com/knicks-analysis/91072/even-post-mitchell-robinson-the-knicks-are-feasting-on-the-glass",
-        "https://www.nydailynews.com/2026/11/09/catching-strays-knicks-andre-drummond-is-outrebounding-mitchell-robinson/",
-        "https://dailyknicks.com/new-york-knicks-andre-drummond-besting-mitchell-robinson-at-his-own-game"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnJICTrzAkbPgC61RAmcZ372jVVm01_urHBS0ek9CjtXZXrHuznKi7MadgCQk",
-      "image_credit": "Posting and Toasting",
-      "news": [
-        {
-          "url": "https://www.postingandtoasting.com/knicks-analysis/91072/even-post-mitchell-robinson-the-knicks-are-feasting-on-the-glass",
-          "title": "Even post-Mitchell Robinson, the Knicks are feasting on the glass",
-          "publisher": "Posting and Toasting",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnJICTrzAkbPgC61RAmcZ372jVVm01_urHBS0ek9CjtXZXrHuznKi7MadgCQk"
-        },
-        {
-          "url": "https://www.nydailynews.com/2026/11/09/catching-strays-knicks-andre-drummond-is-outrebounding-mitchell-robinson/",
-          "title": "Catching Strays | Knicks’ Andre Drummond is outrebounding Mitchell Robinson",
-          "publisher": "New York Daily News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT57vOUMNAzlppkDkbs5hwqaJhf5IEhraGG0P97JKxkeenckYwiyBhkzvbnwac"
-        },
-        {
-          "url": "https://dailyknicks.com/new-york-knicks-andre-drummond-besting-mitchell-robinson-at-his-own-game",
-          "title": "Andre Drummond besting Mitchell Robinson at his own game",
-          "publisher": "Daily Knicks",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMC0yMiiM3TMd8R_Ev20Fs8q2ePpeysJU7w6aUptTwcVEQwJQPncZZO2Xv0B0"
-        }
-      ]
-    },
-    {
-      "query": "survivor load the ark, two by two",
+      "query": "streamer awards 2026",
       "approx_searches": "200+",
-      "published_at": "2026-11-12T01:00:00Z",
+      "published_at": "2026-11-12T01:30:00Z",
       "related_news_urls": [
-        "https://www.hollywoodreporter.com/tv/tv-features/survivor-brady-booker-exit-interview-1236748177/",
-        "https://www.yahoo.com/entertainment/tv/articles/predict-winner-survivor-51-based-042641468.html",
-        "https://www.cleveland.com/tv/2026/11/how-to-watch-survivor-51-episode-8-tonight-for-free.html"
+        "https://win.gg/ishowspeed-kai-cenat-best-marathon-stream-award/",
+        "https://www.dimers.com/prediction-markets/insights/which-series-will-win-best-streamed-series-at-the-2026-streamer-awards",
+        "https://sports.ndtv.com/us/us-streamers/streamer-awards-2026-full-host-lineup-award-presenters-performers-and-start-time-revealed-12307054"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFw93J2iYXX4Dwvtq_-EfmaPpOHHZ75B5PHn6ghUtyY2pxFwQEF09vhC1GoLA",
-      "image_credit": "The Hollywood Reporter",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSb-yz6Fq4T8fDTrZ66FTYZxAdDmBDanvHxy5AxMvYQSW0NswYpp4xpQ2Po3O4",
+      "image_credit": "WIN.GG",
       "news": [
         {
-          "url": "https://www.hollywoodreporter.com/tv/tv-features/survivor-brady-booker-exit-interview-1236748177/",
-          "title": "‘Survivor 51’ Castoff Brady Booker on That “Toxicity” Comment, Starving Through Challenges and What It Means to Be a “Brodie”",
-          "publisher": "The Hollywood Reporter",
+          "url": "https://win.gg/ishowspeed-kai-cenat-best-marathon-stream-award/",
+          "title": "Will Speed and Kai Cenat win the Best Marathon stream award?",
+          "publisher": "WIN.GG",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFw93J2iYXX4Dwvtq_-EfmaPpOHHZ75B5PHn6ghUtyY2pxFwQEF09vhC1GoLA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSb-yz6Fq4T8fDTrZ66FTYZxAdDmBDanvHxy5AxMvYQSW0NswYpp4xpQ2Po3O4"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/predict-winner-survivor-51-based-042641468.html",
-          "title": "We predict the winner of Survivor 51 based on the merged tribe dynamics",
-          "publisher": "Yahoo",
+          "url": "https://www.dimers.com/prediction-markets/insights/which-series-will-win-best-streamed-series-at-the-2026-streamer-awards",
+          "title": "Which Series Will Win Best Streamed Series At The 2026 Streamer Awards?",
+          "publisher": "Dimers",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmQZfBMjYT8qYmhBuqnj78NsRrOjnE7k7FnPfBp5B_ZHJUUKcLnQ8-rlWhDuY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMlhIXIQ10IfO-3AV6w1OtohlDUiR9sXUv0mVyKbzI1XyoiuisC1p_Nujfqz0"
         },
         {
-          "url": "https://www.cleveland.com/tv/2026/11/how-to-watch-survivor-51-episode-8-tonight-for-free.html",
-          "title": "‘Survivor’ Season 51, episode 8 free live stream: How to watch tonight",
-          "publisher": "Cleveland.com",
+          "url": "https://sports.ndtv.com/us/us-streamers/streamer-awards-2026-full-host-lineup-award-presenters-performers-and-start-time-revealed-12307054",
+          "title": "Streamer Awards 2026: Full Host Lineup, Award Presenters, Performers, And Start Time Revealed",
+          "publisher": "NDTV Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiEl_PTrko_dfD5-DnG1WhIxhCQ3UTZHm5gqdUOlZpU0QHc3RcsEWHO2HGGJ8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRiRCLVgbBH_9ot4ilJr45hZnBRGdIj0-K9tnEWe8XMAjX-RxMR0T064omsvLg"
         }
       ]
     },
     {
-      "query": "daylon gordon",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-12T01:00:00Z",
+      "query": "rob lowe",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T01:30:00Z",
       "related_news_urls": [
-        "https://247sports.com/college/ohio-state/article/ohio-state-football-flips-four-star-2027-rb-daylon-gordon-292413360/",
-        "https://www.elevenwarriors.com/ohio-state-football-recruiting/2026/11/165160/ohio-state-finally-lands-a-2027-running-back-as-four-star-rb-daylon-gordon-commits-to-buckeyes",
-        "https://www.on3.com/teams/ohio-state-buckeyes/news/ohio-state-football-recruiting-carlos-locklyn-flip-watch-daylon-gordon-commitment-two-back-class-ryan-day-buckeyes/"
+        "https://people.com/gwyneth-paltrow-calls-officiating-rob-lowes-son-matthews-wedding-so-incredible-12249019",
+        "https://www.yahoo.com/entertainment/celebrity/articles/gwyneth-paltrow-reflects-officiating-wedding-215951266.html",
+        "https://www.instyle.com/gwyneth-paltrow-breaks-silence-officiating-rob-lowe-son-wedding-12249375"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsCmRXXT2nLaUyJNiTntZaotuKoRbp6q7a9C9H7-AXYvf7Uj5lhCPVsxsOVOg",
-      "image_credit": "247Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPrnaxVDSL-DkfKsyney6Eyj9hY3TgJ2F0f3OINdBmsvTyFUk88PUd8KMltig",
+      "image_credit": "People.com",
       "news": [
         {
-          "url": "https://247sports.com/college/ohio-state/article/ohio-state-football-flips-four-star-2027-rb-daylon-gordon-292413360/",
-          "title": "BREAKING: Ohio State flips four-star 2027 RB Daylon Gordon",
-          "publisher": "247Sports",
+          "url": "https://people.com/gwyneth-paltrow-calls-officiating-rob-lowes-son-matthews-wedding-so-incredible-12249019",
+          "title": "Gwyneth Paltrow Calls Officiating Rob Lowe’s Son Matthew’s Wedding ‘So Incredible’: ‘Just Call Me Pastor Gwyn’",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsCmRXXT2nLaUyJNiTntZaotuKoRbp6q7a9C9H7-AXYvf7Uj5lhCPVsxsOVOg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPrnaxVDSL-DkfKsyney6Eyj9hY3TgJ2F0f3OINdBmsvTyFUk88PUd8KMltig"
         },
         {
-          "url": "https://www.elevenwarriors.com/ohio-state-football-recruiting/2026/11/165160/ohio-state-finally-lands-a-2027-running-back-as-four-star-rb-daylon-gordon-commits-to-buckeyes",
-          "title": "Ohio State Finally Lands A 2027 Running Back As Four-Star RB Daylon Gordon Commits to Buckeyes",
-          "publisher": "Eleven Warriors",
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/gwyneth-paltrow-reflects-officiating-wedding-215951266.html",
+          "title": "Gwyneth Paltrow Reflects on Officiating the Wedding of Rob Lowe’s Son Matthew",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTz9N8osvYziHA3iRgRi0tmxBWTzEM03f5yhrd7jxY64_ZwDFE1NItc5TCXjhw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQCMHq9JZb_wqNoL6sBU535xwEN7_nhljHbx3mNrAIsd7te7jYAThC_Mo37Gw"
         },
         {
-          "url": "https://www.on3.com/teams/ohio-state-buckeyes/news/ohio-state-football-recruiting-carlos-locklyn-flip-watch-daylon-gordon-commitment-two-back-class-ryan-day-buckeyes/",
-          "title": "Three thoughts on Ohio State flipping productive running back Daylon Gordon from Texas State",
-          "publisher": "On3",
+          "url": "https://www.instyle.com/gwyneth-paltrow-breaks-silence-officiating-rob-lowe-son-wedding-12249375",
+          "title": "Gwyneth Paltrow Breaks Her Silence on Officiating This Nepo Baby’s Wedding: “I Still Have Chills”",
+          "publisher": "InStyle",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRd8s0GHaO33tYA5OmzqQ8GsUOXVBGPrwUMVlFdyC6Kr3H20-SejlQ-tT4YWEU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSo5tt5oHGNESO3izYevS3QZxp0f-t9wEiIGHgdWSTPDF-0d9PL_-P9mvyUhGc"
+        }
+      ]
+    },
+    {
+      "query": "kyle fletcher",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T01:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/wwes-booker-t-comments-adam-173405538.html",
+        "https://www.dazn.com/en-US/news/wrestling/kyle-fletcher-adam-copeland-edge-aew-full-gear-t3r/tgrdmrf3jq7v1tzqz6ebbsqxe",
+        "https://slamwrestling.net/news/aew-star-wants-to-prove-hes-superior-to-adam-copeland/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjTEPfX1_jnX7qZu1kiJgFm0UMlm7uh4pRCS3Iid0uzTdE0CaHeMbM7_1zr18",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/wwes-booker-t-comments-adam-173405538.html",
+          "title": "WWE's Booker T Comments On Adam Copeland's Impending AEW Retirement",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjTEPfX1_jnX7qZu1kiJgFm0UMlm7uh4pRCS3Iid0uzTdE0CaHeMbM7_1zr18"
+        },
+        {
+          "url": "https://www.dazn.com/en-US/news/wrestling/kyle-fletcher-adam-copeland-edge-aew-full-gear-t3r/tgrdmrf3jq7v1tzqz6ebbsqxe",
+          "title": "Who does Kyle Fletcher want to face one more time if he becomes AEW World Champion at Full Gear?",
+          "publisher": "DAZN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScMERUwMPCwvymfbRALOO-KjJ2KuQQd1bDU-ObjTULry4jzGkUCSlxpNUFIVc"
+        },
+        {
+          "url": "https://slamwrestling.net/news/aew-star-wants-to-prove-hes-superior-to-adam-copeland/",
+          "title": "AEW Star Wants To Prove He’s “Superior” To Adam Copeland",
+          "publisher": "Slam Wrestling",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4YSGzQsZ8J-EMUbqgznFFyWZrebMKkXm2S7tTXP97NFEBk0Q5AEVawyUcic4"
+        }
+      ]
+    },
+    {
+      "query": "jalen smith",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T01:20:00Z",
+      "related_news_urls": [
+        "https://pippenainteasy.com/jalen-smith-making-nic-claxton-trade-awkward-bulls",
+        "https://bluemanhoop.com/warriors-can-ironically-reunite-with-buddy-hield-jalen-smith-trade",
+        "https://sports.yahoo.com/articles/warriors-reportedly-interest-former-lottery-215707240.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjK4oaZcuUDi67OkFAGjvfMq8zKW8HYb7_TKjJNGrAKPJS_TeXU-SDYi5HeTY",
+      "image_credit": "Pippen Ain't Easy",
+      "news": [
+        {
+          "url": "https://pippenainteasy.com/jalen-smith-making-nic-claxton-trade-awkward-bulls",
+          "title": "Jalen Smith is making the Nic Claxton trade awkward for the Bulls",
+          "publisher": "Pippen Ain't Easy",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjK4oaZcuUDi67OkFAGjvfMq8zKW8HYb7_TKjJNGrAKPJS_TeXU-SDYi5HeTY"
+        },
+        {
+          "url": "https://bluemanhoop.com/warriors-can-ironically-reunite-with-buddy-hield-jalen-smith-trade",
+          "title": "Warriors can ironically reunite with Buddy Hield in Jalen Smith trade",
+          "publisher": "Blue Man Hoop",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRUkMh8ZUGju4FnJ2gTvZbAP0HAUA2feo0sQd_Hw8yQDjHn9s8q8hssw0H-YU"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/warriors-reportedly-interest-former-lottery-215707240.html",
+          "title": "Warriors reportedly have interest in former lottery pick amid Kristaps Porzingis concerns",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyDFtg-b4QjDZBqvrPMY8yX1g1nSd6fIq2ISEvPmXTeInxe6QKNHKvfyQj1gw"
         }
       ]
     }
