@@ -3,17 +3,254 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T08:01:49.278759Z",
+  "checked_at": "2026-11-12T08:31:30.874527Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "gta 6 pc",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T08:10:00Z",
+      "related_news_urls": [
+        "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
+        "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
+        "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZll1tApV9Ds71HmTdujHYiNfoBn3zrlJCvS7S-pg_vQYPoW8x18hTe8WUCZg",
+      "image_credit": "Rockstar Games",
+      "news": [
+        {
+          "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
+          "title": "Pre-Load Grand Theft Auto VI Now",
+          "publisher": "Rockstar Games",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZll1tApV9Ds71HmTdujHYiNfoBn3zrlJCvS7S-pg_vQYPoW8x18hTe8WUCZg"
+        },
+        {
+          "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
+          "title": "Grand Theft Auto VI Comes to XBOX One and XBOX Series X|S Through XBOX Cloud Gaming on November 19",
+          "publisher": "XBOX Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk"
+        },
+        {
+          "url": "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/",
+          "title": "Pre-load Grand Theft Auto VI on PS5 starting today",
+          "publisher": "PlayStation.Blog",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmQPZtB1cfmtJ8v-9159sSJpw2Cr8v495zAc5tM6Spqsus45lZErGPllHDXDY"
+        }
+      ]
+    },
+    {
+      "query": "黄仁勋",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T08:00:00Z",
+      "related_news_urls": [
+        "https://cn.nytimes.com/business/20261111/alice-huang-megaspeed-nvidia-jensen-huang/",
+        "https://cn.wsj.com/articles/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-676827ef",
+        "https://www.bbc.com/zhongwen/articles/cjr4y41lv6zko/simp"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJ8D5d0upuq6XnBWy0TFYbJK10nMx75x9huoi15G3-8L8sUFUercMKhUrIdTA",
+      "image_credit": "纽约时报中文网",
+      "news": [
+        {
+          "url": "https://cn.nytimes.com/business/20261111/alice-huang-megaspeed-nvidia-jensen-huang/",
+          "title": "黄仁勋事件中的“女主角”黄乐是谁？",
+          "publisher": "纽约时报中文网",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJ8D5d0upuq6XnBWy0TFYbJK10nMx75x9huoi15G3-8L8sUFUercMKhUrIdTA"
+        },
+        {
+          "url": "https://cn.wsj.com/articles/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-676827ef",
+          "title": "英伟达正准备罢免CEO黄仁勋",
+          "publisher": "华尔街日报中文网",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSR2PMVNYzt_Eb_uSd4Cx5l5z0VdrMs1yb2NTxVol1Jwtg9nTc9D1UPMiAAOko"
+        },
+        {
+          "url": "https://www.bbc.com/zhongwen/articles/cjr4y41lv6zko/simp",
+          "title": "黄仁勋婚外情：被指为中共间谍的黄乐是谁？",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPMy4JAIszsZ6BIkqUYl587z6LucXZwEOM0prIXz4XIbi219erVy379LZd0rA"
+        }
+      ]
+    },
+    {
+      "query": "weather los angeles",
+      "approx_searches": "100+",
+      "published_at": "2026-11-12T08:00:00Z",
+      "related_news_urls": [
+        "https://ktla.com/news/california/southern-california-rain-cooldown-three-storms/",
+        "https://www.foxla.com/news/socal-storm-timeline-rain-high-surf",
+        "https://www.dailynews.com/2026/11/11/southern-california-braces-for-rain-after-days-of-unseasonable-heat/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiRGp3H3sw6KD5hXAmkXOl3tlIoq3OUhy3SqETpTEJKUg8SvU42iSzSbh2RQc",
+      "image_credit": "KTLA",
+      "news": [
+        {
+          "url": "https://ktla.com/news/california/southern-california-rain-cooldown-three-storms/",
+          "title": "What to know about 3 storms approaching Southern California",
+          "publisher": "KTLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiRGp3H3sw6KD5hXAmkXOl3tlIoq3OUhy3SqETpTEJKUg8SvU42iSzSbh2RQc"
+        },
+        {
+          "url": "https://www.foxla.com/news/socal-storm-timeline-rain-high-surf",
+          "title": "Southern California storm timeline: When rain, high surf hit SoCal this week",
+          "publisher": "FOX 11 Los Angeles",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRadeau0CxXH1UBd-RUUqp36mmmn62ONFUpt2JV1lOlILAMKnN5dTq9fC80lnM"
+        },
+        {
+          "url": "https://www.dailynews.com/2026/11/11/southern-california-braces-for-rain-after-days-of-unseasonable-heat/",
+          "title": "Southern California braces for rain after days of unseasonable heat",
+          "publisher": "Los Angeles Daily News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4BH_3ZqnuR77Pc77sghmznYVyJFsizYyGzc4w4PQIBIOPGCNGFFSsxD91RLw"
+        }
+      ]
+    },
+    {
+      "query": "dhs proposed h-1b extension rule",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T07:50:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/stuartanderson/2026/11/10/immigration-lawsuit-challenges-dhs-on-student-internships/",
+        "https://stanforddaily.com/2026/11/10/assu-international-student-roundtable/",
+        "https://www.law360.com/employment-authority/articles/2547284/mass-judge-probes-impact-of-dhs-student-internship-rules"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRe10xsBD8YHXdw9Wj2Px6LXXwr5lqdftSG4mF_yAG75-PUfDR_q_3sUemFjL8",
+      "image_credit": "Forbes",
+      "news": [
+        {
+          "url": "https://www.forbes.com/sites/stuartanderson/2026/11/10/immigration-lawsuit-challenges-dhs-on-student-internships/",
+          "title": "Immigration Lawsuit Challenges DHS For Restricting Student Internships",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRe10xsBD8YHXdw9Wj2Px6LXXwr5lqdftSG4mF_yAG75-PUfDR_q_3sUemFjL8"
+        },
+        {
+          "url": "https://stanforddaily.com/2026/11/10/assu-international-student-roundtable/",
+          "title": "ASSU international student roundtable coincides with federal court hearing on internship eligibility",
+          "publisher": "The Stanford Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkFGKHpEndwoL4eCGO5kmVRw4kp1u-zFLKfNvIem0L1iZQTkDX5ypC_exFi8I"
+        },
+        {
+          "url": "https://www.law360.com/employment-authority/articles/2547284/mass-judge-probes-impact-of-dhs-student-internship-rules",
+          "title": "Mass. Judge Probes Impact Of DHS Student Internship Rules",
+          "publisher": "Law360",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC2YQ0ONK3hXAc-V2GnC-blnCokJRRCotoCqzEcqe2m-kBtBLrRfZQzP9wYQ"
+        }
+      ]
+    },
+    {
+      "query": "katherine kealoha",
+      "approx_searches": "100+",
+      "published_at": "2026-11-12T07:50:00Z",
+      "related_news_urls": [
+        "https://www.hawaiinewsnow.com/2026/11/12/katherine-kealoha-leave-prison-after-serving-fraction-13-year-sentence/",
+        "https://www.kitv.com/news/crime/former-honolulu-prosecutor-katherine-kealoha-set-for-halfway-house-release-after-conviction-in-mailbox-framing/article_fceaaae3-5836-4ecd-98fc-ff5884a4c885.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfDyZ-shqy7iZCyyIu5ZZZsiam1w0fSSno-IoMhDq1_yEaio0kMAWKtNDHIAw",
+      "image_credit": "Hawaii News Now",
+      "news": [
+        {
+          "url": "https://www.hawaiinewsnow.com/2026/11/12/katherine-kealoha-leave-prison-after-serving-fraction-13-year-sentence/",
+          "title": "Katherine Kealoha to leave prison after serving fraction of 13-year sentence",
+          "publisher": "Hawaii News Now",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfDyZ-shqy7iZCyyIu5ZZZsiam1w0fSSno-IoMhDq1_yEaio0kMAWKtNDHIAw"
+        },
+        {
+          "url": "https://www.kitv.com/news/crime/former-honolulu-prosecutor-katherine-kealoha-set-for-halfway-house-release-after-conviction-in-mailbox-framing/article_fceaaae3-5836-4ecd-98fc-ff5884a4c885.html",
+          "title": "Former Honolulu prosecutor Katherine Kealoha set for halfway house release after conviction in mailbox framing case",
+          "publisher": "KITV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaEfB9xEOe_b03n1wKtiuKEJ3-Tfacruadb1HoWgojTBaA1XCHbUv1nV4d9Tc"
+        }
+      ]
+    },
+    {
+      "query": "game of thrones",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T07:50:00Z",
+      "related_news_urls": [
+        "https://tech.yahoo.com/gaming/articles/game-thrones-house-dragon-favorites-171444989.html",
+        "https://opencritic.com/news/39492/game-of-thrones-officially-replaces-daenerys-targaryen-in-dragonfire",
+        "https://www.pocketgamer.com/game-of-thrones-dragonfire/commanders-feature-implemented/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjxLsVAB13FETZr-z7zBQmOObapCxzFwy3Mb_FYhijGry2D0M8A6AfHyEiEnQ",
+      "image_credit": "Yahoo Tech",
+      "news": [
+        {
+          "url": "https://tech.yahoo.com/gaming/articles/game-thrones-house-dragon-favorites-171444989.html",
+          "title": "Game of Thrones: House of the Dragon Favorites Get a New Role in Major Dragonfire Update",
+          "publisher": "Yahoo Tech",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjxLsVAB13FETZr-z7zBQmOObapCxzFwy3Mb_FYhijGry2D0M8A6AfHyEiEnQ"
+        },
+        {
+          "url": "https://opencritic.com/news/39492/game-of-thrones-officially-replaces-daenerys-targaryen-in-dragonfire",
+          "title": "Game Of Thrones Officially Replaces Daenerys Targaryen In Dragonfire",
+          "publisher": "OpenCritic",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQmlzKPCmd6i63DnhqVRKtv2MmueKwx5aCLWrK1K1SB_3WNR1KngxcS1jl-3s"
+        },
+        {
+          "url": "https://www.pocketgamer.com/game-of-thrones-dragonfire/commanders-feature-implemented/",
+          "title": "Game of Thrones: Dragonfire now lets you build your own team of capable Commanders",
+          "publisher": "Pocket Gamer",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeWHMoKSGW-DR22-U-eQ7bKm9sW9ol_Yrt9hR3kJf09aZ1LkpI2721wTXPR4w"
+        }
+      ]
+    },
+    {
+      "query": "pete davidson",
+      "approx_searches": "100+",
+      "published_at": "2026-11-12T07:50:00Z",
+      "related_news_urls": [
+        "https://www.eonline.com/news/1438020/pete-davidson-details-tattoo-removal-in-new-interview",
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/pete-davidson-reveals-brutal-reality-223442550.html",
+        "https://www.eonline.com/videos/2520348227808/pete-davidson-teases-future-tattoos-after-brutal-removal-process"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5ipehezAl51hkwXOyiiiutcgPx3GZGA4N02OsAR3VVtOWzzDM_ADxkFNt8KA",
+      "image_credit": "E! News",
+      "news": [
+        {
+          "url": "https://www.eonline.com/news/1438020/pete-davidson-details-tattoo-removal-in-new-interview",
+          "title": "Pete Davidson Teases Future Tattoos After “Brutal” Removal Process",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5ipehezAl51hkwXOyiiiutcgPx3GZGA4N02OsAR3VVtOWzzDM_ADxkFNt8KA"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/pete-davidson-reveals-brutal-reality-223442550.html",
+          "title": "Pete Davidson Reveals ‘Brutal’ Reality of Removing Tattoos: ‘You Don’t Know What’s Going On Under There’",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4G2Kcv85lHOe1hGWclVCBAkCNWJ2_-kfEHCQ9qaIeXutfUPZgqTebCRP7uGM"
+        },
+        {
+          "url": "https://www.eonline.com/videos/2520348227808/pete-davidson-teases-future-tattoos-after-brutal-removal-process",
+          "title": "Pete Davidson Teases Future Tattoos After “Brutal” Removal Process",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7__nwBlIfBBAMG-hmeazezX0LisQNYgNhRjaf5iQRXrZl2QwOssmk8k4cxEE"
+        }
+      ]
+    },
     {
       "query": "sasha obama",
       "approx_searches": "100+",
       "published_at": "2026-11-12T07:40:00Z",
       "related_news_urls": [
         "https://www.harpersbazaar.com/celebrity/latest/a74386831/malia-sasha-obama-fall-dressing-los-angeles-street-style-photos-dinner-barack/",
-        "https://www.teenvogue.com/story/malia-sasha-obama-style-trench-coats-two-very-different-ways",
-        "https://www.instyle.com/malia-sasha-obama-coordinate-trendy-outerwear-during-rare-sighting-12247348"
+        "https://thoughtcatalog.com/nadia-santiago/2026/11/after-campaigning-for-democrats-barack-obama-spent-an-evening-with-his-daughters-as-the-party-prepared-to-control-both-chambers-of-congress/",
+        "https://www.teenvogue.com/story/malia-sasha-obama-style-trench-coats-two-very-different-ways"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3t3op6dFdvxn3g8eWi4Q0PfhKXKdTbMnadAqrAFm9E7SM6M64XBss_50SCnA",
       "image_credit": "Harper's BAZAAR",
@@ -26,18 +263,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3t3op6dFdvxn3g8eWi4Q0PfhKXKdTbMnadAqrAFm9E7SM6M64XBss_50SCnA"
         },
         {
+          "url": "https://thoughtcatalog.com/nadia-santiago/2026/11/after-campaigning-for-democrats-barack-obama-spent-an-evening-with-his-daughters-as-the-party-prepared-to-control-both-chambers-of-congress/",
+          "title": "After Campaigning for Democrats, Barack Obama Spent an Evening with His Daughters as the Party Prepared to Control Both Chambers of Congress",
+          "publisher": "Thought Catalog",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeW8YP_Lp9JJyjBkWrBIpIvyBb-TVQim2HzVdL6p7YVeRlboqjwk6NXGLvSJU"
+        },
+        {
           "url": "https://www.teenvogue.com/story/malia-sasha-obama-style-trench-coats-two-very-different-ways",
           "title": "Malia and Sasha Obama Do Fall Layering Two Very Different Ways",
           "publisher": "Teen Vogue",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBcYQvZ002lLb7wfcanyAzWcv6KNFm09FdPXS0WKHCKy22Yoa1L5LZZi6--vs"
-        },
-        {
-          "url": "https://www.instyle.com/malia-sasha-obama-coordinate-trendy-outerwear-during-rare-sighting-12247348",
-          "title": "Malia and Sasha Obama Coordinate in Trendy Fall Outerwear During First Joint Sighting in Months",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoDxFTcNU1IZz1H66X--jYaHII23DQBDy1KINeDYQ4HejkUZp8kjwadNZYthA"
         }
       ]
     },
@@ -46,33 +283,33 @@
       "approx_searches": "100+",
       "published_at": "2026-11-12T07:40:00Z",
       "related_news_urls": [
-        "https://hypebeast.com/2026/11/a24-julianne-moore-jesse-eisenberg-paul-giamatt-the-debut-new-official-trailer-release-info",
-        "https://playbill.com/article/watch-community-theatre-themed-the-debut-trailer-starring-julianne-moore-paul-giamatti",
-        "https://variety.com/2026/film/awards/jesse-eisenberg-julianne-moore-debut-ai-bad-now-you-see-me-4-1236941541/"
+        "https://variety.com/2026/film/box-office/you-can-see-everything-second-highest-grossing-documentary-north-america-box-office-1236942385/",
+        "https://hypebeast.com/2026/11/a24-you-can-see-everything-second-highest-grossing-non-music-documentary-north-america-record-news",
+        "https://www.imdb.com/news/ni66101548/?ref_=ttnw_art_perm"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL9EjVTUa9u23JmTHvJNX0Gl4MhSxmynCSd2iq_lZVf3SJ4uEvZlwbMFbqZMY",
-      "image_credit": "Hypebeast",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTv3VmTxMzAN7ZmhUpPH5_Qna5og5aF9PZXRqsbhjK4qb9usyNpwGluPOH2U-g",
+      "image_credit": "Variety",
       "news": [
         {
-          "url": "https://hypebeast.com/2026/11/a24-julianne-moore-jesse-eisenberg-paul-giamatt-the-debut-new-official-trailer-release-info",
-          "title": "Julianne Moore Goes Full Method Opposite Paul Giamatti in A24's 'The Debut' Trailer",
-          "publisher": "Hypebeast",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL9EjVTUa9u23JmTHvJNX0Gl4MhSxmynCSd2iq_lZVf3SJ4uEvZlwbMFbqZMY"
-        },
-        {
-          "url": "https://playbill.com/article/watch-community-theatre-themed-the-debut-trailer-starring-julianne-moore-paul-giamatti",
-          "title": "Watch Community Theatre-Themed The Debut Trailer Starring Julianne Moore, Paul Giamatti",
-          "publisher": "Playbill",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSgNEGajjzGhWXmDTLheRtL4F0iJ_o2W5dPHydr1kPhfCQMPreyAgrjh0NtZY"
-        },
-        {
-          "url": "https://variety.com/2026/film/awards/jesse-eisenberg-julianne-moore-debut-ai-bad-now-you-see-me-4-1236941541/",
-          "title": "Jesse Eisenberg, Julianne Moore on The Debut, AI and Now You See Me 4",
+          "url": "https://variety.com/2026/film/box-office/you-can-see-everything-second-highest-grossing-documentary-north-america-box-office-1236942385/",
+          "title": "Box Office: ‘You Can See Everything’ Becomes Second-Biggest Doc Ever in North America With $80 Million",
           "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZ7fdR0q0JOfV9CLJFZL6kb5tsq4PZ5-wSdgSkUjHGIZhoEClFzNMCVNsyaqA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTv3VmTxMzAN7ZmhUpPH5_Qna5og5aF9PZXRqsbhjK4qb9usyNpwGluPOH2U-g"
+        },
+        {
+          "url": "https://hypebeast.com/2026/11/a24-you-can-see-everything-second-highest-grossing-non-music-documentary-north-america-record-news",
+          "title": "'You Can See Everything' Becomes Second-Highest Grossing Non-Music Documentary in North America",
+          "publisher": "Hypebeast",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRC9LIAbkx133HhrbxxPE8zIqQgcc22zbmLf1yynXeFiGhMS0emvD-aJXqStxU"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66101548/?ref_=ttnw_art_perm",
+          "title": "‘You Can See Everything’ Turns a Secretly Made Elizabeth Holmes Documentary Into a Box Office Phenomenon",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTE8Vf8qLuh-EM8SxitHVjFJtRSEA7RpqQT8NrucjTa4TXyJ3_EgSF9OfmZrHE"
         }
       ]
     },
@@ -108,251 +345,6 @@
           "publisher": "NeoTeo",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlvIdv--8MSHQFeBkUPAkcFbZHLz8fj29ZhHkGNt_hJAXMTDEiEWfUVQmdoAk"
-        }
-      ]
-    },
-    {
-      "query": "cathay pacific",
-      "approx_searches": "100+",
-      "published_at": "2026-11-12T07:30:00Z",
-      "related_news_urls": [
-        "https://www.airbus.com/en/newsroom/press-releases/2026-11-the-cathay-group-orders-14-additional-airbus-aircraft",
-        "https://www.flightglobal.com/airlines/2026/11/cathay-pacific-orders-additional-a330neos-a321neos/",
-        "https://www.scmp.com/news/hong-kong/transport/article/3374031/cathay-orders-14-more-airbus-jets-investment-commitments-top-hk150-billion"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRh8alD2lwDSFkd6kG12UAGMfvX65Bzwtnz5OlI7Dmg9ZUbc2xR-k5RApOnWmk",
-      "image_credit": "Airbus",
-      "news": [
-        {
-          "url": "https://www.airbus.com/en/newsroom/press-releases/2026-11-the-cathay-group-orders-14-additional-airbus-aircraft",
-          "title": "The Cathay Group orders 14 additional Airbus aircraft",
-          "publisher": "Airbus",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRh8alD2lwDSFkd6kG12UAGMfvX65Bzwtnz5OlI7Dmg9ZUbc2xR-k5RApOnWmk"
-        },
-        {
-          "url": "https://www.flightglobal.com/airlines/2026/11/cathay-pacific-orders-additional-a330neos-a321neos/",
-          "title": "Cathay Pacific orders additional A330neos, A321neos",
-          "publisher": "FlightGlobal",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRk9XafzrCSc-udl4kbEEgSfsTgjBpjoXlQPykakwKg8geJCxZgxCMhJ5Au5lQ"
-        },
-        {
-          "url": "https://www.scmp.com/news/hong-kong/transport/article/3374031/cathay-orders-14-more-airbus-jets-investment-commitments-top-hk150-billion",
-          "title": "Cathay orders 14 more Airbus jets as investment commitments top HK$150 billion",
-          "publisher": "South China Morning Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZY7blKNzWRCsGgOyflt4s3b7G4UmBWDh0RHNzvd1k3kJU-g-JbEPazY7yj5I"
-        }
-      ]
-    },
-    {
-      "query": "jeremiah smith ohio state football news",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T07:20:00Z",
-      "related_news_urls": [
-        "https://www.elevenwarriors.com/ohio-state-football/2026/11/165356/ohio-state-launches-jj-4-it-all-campaign-for-jeremiah-smith-to-win-heisman-trophy-other-national-awards",
-        "https://ohiostatebuckeyes.com/news/2026/11/10/football-smith-named-semifinalist-for-maxwell-award",
-        "https://www.wfaa.com/video/sports/locked-on/lo-columbus/ohio-state-buckeyes-show/heisman-push-ohio-state-backs-jeremiah-smith-as-best-player-launches-official-trophy-campaign/535-af373b1f-ef86-4f06-a393-1248cc1af1d4"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0iA9_rFb5--qZN36dCCVnKfYlrwlkxbm7mjUieNhrfKos7gk1zjIRMLTBXnw",
-      "image_credit": "Eleven Warriors",
-      "news": [
-        {
-          "url": "https://www.elevenwarriors.com/ohio-state-football/2026/11/165356/ohio-state-launches-jj-4-it-all-campaign-for-jeremiah-smith-to-win-heisman-trophy-other-national-awards",
-          "title": "Ohio State Launches “JJ 4 It All” Campaign For Jeremiah Smith To Win Heisman Trophy, Other National Awards",
-          "publisher": "Eleven Warriors",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0iA9_rFb5--qZN36dCCVnKfYlrwlkxbm7mjUieNhrfKos7gk1zjIRMLTBXnw"
-        },
-        {
-          "url": "https://ohiostatebuckeyes.com/news/2026/11/10/football-smith-named-semifinalist-for-maxwell-award",
-          "title": "Smith Named Semifinalist for Maxwell Award",
-          "publisher": "Ohio State | Official Athletics Website",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQ5HM9gJnKE__kpuG_xy5L8TrCtj9iMGHeqA5Ck1bmKcTUSat6opC_S2nYNPc"
-        },
-        {
-          "url": "https://www.wfaa.com/video/sports/locked-on/lo-columbus/ohio-state-buckeyes-show/heisman-push-ohio-state-backs-jeremiah-smith-as-best-player-launches-official-trophy-campaign/535-af373b1f-ef86-4f06-a393-1248cc1af1d4",
-          "title": "HEISMAN PUSH: Ohio State Backs Jeremiah Smith as Best Player, LAUNCHES Official Trophy Campaign",
-          "publisher": "WFAA",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQfNlt4ubryItZFqjN5rw0aEeM_L74bR2ZpNIJeecfeXJJ3Dxb9JthiE18gSI"
-        }
-      ]
-    },
-    {
-      "query": "kylie jenner former staff lawsuits",
-      "approx_searches": "100+",
-      "published_at": "2026-11-12T07:10:00Z",
-      "related_news_urls": [
-        "https://pagesix.com/2026/11/10/celebrity-news/kylie-jenner-slapped-with-fourth-employee-lawsuit-in-just-7-months-as-ex-housekeeper-makes-shocking-allegations/",
-        "https://www.nbcnews.com/pop-culture/pop-culture-news/kylie-jenners-ex-housekeeper-says-was-locked-closet-bit-dog-pepper-spr-rcna608730",
-        "https://www.rollingstone.com/tv-movies/tv-movie-news/kylie-jenner-sued-housekeeper-dog-bite-1235655482/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREbptnOllUqdnQhRbmeNegB478kzdC4AGyR-QcWHSzIKVIx6OR8QcgTOthNrA",
-      "image_credit": "Page Six",
-      "news": [
-        {
-          "url": "https://pagesix.com/2026/11/10/celebrity-news/kylie-jenner-slapped-with-fourth-employee-lawsuit-in-just-7-months-as-ex-housekeeper-makes-shocking-allegations/",
-          "title": "Kylie Jenner slapped with fourth employee lawsuit in just 7 months as ex-housekeeper makes shocking allegations",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREbptnOllUqdnQhRbmeNegB478kzdC4AGyR-QcWHSzIKVIx6OR8QcgTOthNrA"
-        },
-        {
-          "url": "https://www.nbcnews.com/pop-culture/pop-culture-news/kylie-jenners-ex-housekeeper-says-was-locked-closet-bit-dog-pepper-spr-rcna608730",
-          "title": "Kylie Jenner’s ex-housekeeper says she was locked in closet, bitten by dog and pepper-sprayed working for her",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5R4gi3r0iIGsy6md6p53mKcHHKoD7we8Vl4nsY2SeekM1MsezVIdkildRj-0"
-        },
-        {
-          "url": "https://www.rollingstone.com/tv-movies/tv-movie-news/kylie-jenner-sued-housekeeper-dog-bite-1235655482/",
-          "title": "Kylie Jenner Sued by Housekeeper Who Says Mogul’s Dog Bit Her",
-          "publisher": "Rolling Stone",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbDr1uSozkrLe-Kvm0H4gPQF3Pd9JjbT4Ydwlmuq2rGCpn9a7XFy_kaiZ0ZlA"
-        }
-      ]
-    },
-    {
-      "query": "alexandra daddario",
-      "approx_searches": "100+",
-      "published_at": "2026-11-12T07:10:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/taylor-kitsch-alexandra-daddario-long-island-bank-robber-1237215411/",
-        "https://www.newsday.com/entertainment/movies/long-island-bank-robber-wify7f2n",
-        "https://www.thefancarpet.com/movie_news/vaneast-pictures-will-launch-worldwide-sales-for-matthew-gentiles-the-long-island-bank-robber-at-american-film-market/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvUWPLXwhkZWeeM90NlJZ0U6dtk8rYW9Vyv4sW4VYgIzyy2k8OaNg9Cx0_iXE",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/taylor-kitsch-alexandra-daddario-long-island-bank-robber-1237215411/",
-          "title": "Taylor Kitsch, Alexandra Daddario, Christopher Walken Cast In 'Robber'",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvUWPLXwhkZWeeM90NlJZ0U6dtk8rYW9Vyv4sW4VYgIzyy2k8OaNg9Cx0_iXE"
-        },
-        {
-          "url": "https://www.newsday.com/entertainment/movies/long-island-bank-robber-wify7f2n",
-          "title": "Taylor Kitsch to play 'Long Island Bank Robber'",
-          "publisher": "Newsday",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXLG8smfMlX-rc6Y1NpLicOCrSVkrtfgSDP7G7A7jWkrUCl10a5rHAsOVJMRU"
-        },
-        {
-          "url": "https://www.thefancarpet.com/movie_news/vaneast-pictures-will-launch-worldwide-sales-for-matthew-gentiles-the-long-island-bank-robber-at-american-film-market/",
-          "title": "Vaneast Pictures Will Launch Worldwide Sales for Matthew Gentile’s THE LONG ISLAND BANK ROBBER at American Film Market",
-          "publisher": "The Fan Carpet",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_i0mXZP04eqxZACKlFiUfgieNZX6vnC5jZ8qsW3tQ3gT8QAn88L4CdFJhVFU"
-        }
-      ]
-    },
-    {
-      "query": "philippine airlines",
-      "approx_searches": "100+",
-      "published_at": "2026-11-12T07:10:00Z",
-      "related_news_urls": [
-        "https://www.chicagotribune.com/2026/11/11/editorial-phillipine-airlines-manila-ohare-airport-united-american-international/",
-        "https://bilyonaryo.com/chicago-is-now-one-flight-away-pal-launches-nonstop-service-from-manila/",
-        "https://hoodline.com/2026/11/philippine-airlines-debuts-nonstop-chicago-manila-route-o-hare-s-longest-flight/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6YqrQOXXSyJqz50Hyg1ury16elRVOkV_y-Oc_v9TPL9IIfeRRObQocsiOow4",
-      "image_credit": "Chicago Tribune",
-      "news": [
-        {
-          "url": "https://www.chicagotribune.com/2026/11/11/editorial-phillipine-airlines-manila-ohare-airport-united-american-international/",
-          "title": "Editorial: Welcome Philippine Airlines. You exemplify why Chicago O'Hare must fight to maintain its dual hub.",
-          "publisher": "Chicago Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6YqrQOXXSyJqz50Hyg1ury16elRVOkV_y-Oc_v9TPL9IIfeRRObQocsiOow4"
-        },
-        {
-          "url": "https://bilyonaryo.com/chicago-is-now-one-flight-away-pal-launches-nonstop-service-from-manila/",
-          "title": "Chicago is now one flight away! PAL launches nonstop service from Manila",
-          "publisher": "Bilyonaryo Business",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGrySTTJFDVCRHO2ydYcKBrBTQK-jk-S40A3qqAcUb-SoijoPg-tAmKUfS2aw"
-        },
-        {
-          "url": "https://hoodline.com/2026/11/philippine-airlines-debuts-nonstop-chicago-manila-route-o-hare-s-longest-flight/",
-          "title": "Philippine Airlines Launches Chicago-Manila Nonstop Flights",
-          "publisher": "Hoodline",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJyZIkyNAbAkCK8C-5W78goUIIYZDjpxp52OEMgJPDmqg7AZ4Xw93ZZtbsIFE"
-        }
-      ]
-    },
-    {
-      "query": "england vs croatia",
-      "approx_searches": "100+",
-      "published_at": "2026-11-12T07:00:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/football/2026/nov/11/slaven-bilic-croatia-7-0-england-nations-league-wembley",
-        "https://sports.yahoo.com/articles/england-v-croatia-tv-channel-073209039.html",
-        "https://news.williamhill.com/football/will-harry-kane-score/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlb2g3ZFcGBNWwlxIhHH3Gv0yBoMPFeyasEYZxa9ejGkAFAYEIS942NnOOE_I",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/football/2026/nov/11/slaven-bilic-croatia-7-0-england-nations-league-wembley",
-          "title": "‘An eternal shame’: Bilic and Croatia aim to use 7-0 humbling as fuel against England",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlb2g3ZFcGBNWwlxIhHH3Gv0yBoMPFeyasEYZxa9ejGkAFAYEIS942NnOOE_I"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/england-v-croatia-tv-channel-073209039.html",
-          "title": "Is England v Croatia on TV? Channel, kick-off time and how to watch Nations League clash",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_-ItL1rKg4_RoykKcxC67TT3hEwGJk9fVAl0Uo1nY6Fs6c1eSXOcj3Nb5A5w"
-        },
-        {
-          "url": "https://news.williamhill.com/football/will-harry-kane-score/",
-          "title": "Will Harry Kane Score? Latest Goalscorer Prediction & Tips",
-          "publisher": "William Hill News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQm7ygJrNFV-b2TighYvnwrCpS_G0f2BR3ATDTLAeDjAjertICzajWpFteiNK4"
-        }
-      ]
-    },
-    {
-      "query": "karla souza",
-      "approx_searches": "100+",
-      "published_at": "2026-11-12T07:00:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/karla-souza-cast-greys-anatomy-spinoff-series-1237220319/",
-        "https://variety.com/2026/tv/news/greys-anatomy-texas-spinoff-cast-karla-souza-1236945106/",
-        "https://ew.com/greys-anatomy-spinoff-casts-how-to-get-away-with-murder-star-karla-souza-12249748"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsy6IaAPJDoNaLq0jMjhZXQop0KAyQOmAh4rhlFzy8BO8UUpYOKYuhMcrk91A",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/karla-souza-cast-greys-anatomy-spinoff-series-1237220319/",
-          "title": "Karla Souza To Star In ‘Grey’s Anatomy’ Texas Spinoff",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsy6IaAPJDoNaLq0jMjhZXQop0KAyQOmAh4rhlFzy8BO8UUpYOKYuhMcrk91A"
-        },
-        {
-          "url": "https://variety.com/2026/tv/news/greys-anatomy-texas-spinoff-cast-karla-souza-1236945106/",
-          "title": "‘Grey’s Anatomy’ Texas Spinoff Casts ‘How to Get Away With Murder’ Alum Karla Souza in Lead Role",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0dn7nhb5FxYcwOPfmbI-j-XgR8ZobzM5ZImMylvqPATjM0hymqe-2JHXnFUE"
-        },
-        {
-          "url": "https://ew.com/greys-anatomy-spinoff-casts-how-to-get-away-with-murder-star-karla-souza-12249748",
-          "title": "‘Grey’s Anatomy’ spinoff casts ‘How to Get Away With Murder’ star in lead role",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQO8ceglg3ZtCblCfHncbukEF8X-0AeB8wbkJKnYMHaqKe8rrn4N44w-c2Piec"
         }
       ]
     }
