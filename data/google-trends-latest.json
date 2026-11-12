@@ -3,17 +3,157 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T22:01:10.442206Z",
+  "checked_at": "2026-11-12T22:31:25.700064Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "anthony santander",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T22:10:00Z",
+      "related_news_urls": [
+        "https://www.cbc.ca/news/canada/toronto/blue-jays-anthony-santander-anti-muslim-posts-9.7418477",
+        "https://www.cbssports.com/mlb/news/blue-jays-anthony-santander-ross-atkins-anti-muslim/",
+        "https://sports.yahoo.com/articles/everybody-wants-see-apology-criticism-150352435.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4xH60iAX0jqY0LCVG9ut-a_yt2U5QoBMEyN2mV4ADesDPJBX-E8PV2MIqGqI",
+      "image_credit": "CBC",
+      "news": [
+        {
+          "url": "https://www.cbc.ca/news/canada/toronto/blue-jays-anthony-santander-anti-muslim-posts-9.7418477",
+          "title": "Jays' Anthony Santander stays quiet after team asks him to publicly address anti-Muslim social media posts",
+          "publisher": "CBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4xH60iAX0jqY0LCVG9ut-a_yt2U5QoBMEyN2mV4ADesDPJBX-E8PV2MIqGqI"
+        },
+        {
+          "url": "https://www.cbssports.com/mlb/news/blue-jays-anthony-santander-ross-atkins-anti-muslim/",
+          "title": "Blue Jays executive responds to Anthony Santander's 'extremely disappointing' anti-Muslim social media posts",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAks0gRmX72dOn7fdRGfrMiRI7oP1vG8EpXTvOD_cT_itUEmUvDcJloZQdskg"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/everybody-wants-see-apology-criticism-150352435.html",
+          "title": "‘Everybody wants to see an apology’: Criticism mounts for Blue Jay’s player over Islamophobic posts at Abdul El-Sayed",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfQxQvyGi9yOfeJtfgXhb2_C-LwTGgG0yToBiUEenHgwPiI5co6GafbkZvZCE"
+        }
+      ]
+    },
+    {
+      "query": "gulf of finland",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T22:10:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cmn0d33zz34zo",
+        "https://www.bloomberg.com/news/articles/2026-11-12/ukraine-drone-strikes-russian-warship-on-gulf-of-finland",
+        "https://www.defensenews.com/global/europe/2026/11/12/finland-says-it-detects-strike-on-russian-warship-in-baltic-sea/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSQ-Hv-ygjuzHv_YOm5I2zTGj2o0oAdA0jweaZwT_9nebGg4mrPSvHGn8Mfr4",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cmn0d33zz34zo",
+          "title": "Russian warship hit by Ukrainian drone in Gulf of Finland",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSQ-Hv-ygjuzHv_YOm5I2zTGj2o0oAdA0jweaZwT_9nebGg4mrPSvHGn8Mfr4"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-12/ukraine-drone-strikes-russian-warship-on-gulf-of-finland",
+          "title": "Ukraine Drone Strikes Russian Warship on Gulf of Finland",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQUXNiyrQLFPwb4TAnM3OVySAy8JnC8Ao7JsM3tmOS2gEUZDz61fXMO_R_2Q8"
+        },
+        {
+          "url": "https://www.defensenews.com/global/europe/2026/11/12/finland-says-it-detects-strike-on-russian-warship-in-baltic-sea/",
+          "title": "Finland says it detects strike on Russian warship in Baltic Sea",
+          "publisher": "Defense News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFCYIMjRkXe4-61JrTI-VVPPC1GIizWEaXNHjSMHwlw70upVxfgSIJAvwweTc"
+        }
+      ]
+    },
+    {
+      "query": "lisa maxwell daughter",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T22:00:00Z",
+      "related_news_urls": [
+        "https://news.columbia.edu/news/remembering-beau-rose-jessup",
+        "https://people.com/lisa-maxwell-daughter-beau-jessup-dead-27-12251121",
+        "https://www.imdb.com/it/news/ni66108441/?ref_=nwc_art_perm"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtahTyr5Lx43zvpkieH3qeqiMkEh8HDaU_GPE2ccSi253SWBY7CWjt7l0oXrk",
+      "image_credit": "Columbia University",
+      "news": [
+        {
+          "url": "https://news.columbia.edu/news/remembering-beau-rose-jessup",
+          "title": "Remembering Beau Rose Jessup",
+          "publisher": "Columbia University",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtahTyr5Lx43zvpkieH3qeqiMkEh8HDaU_GPE2ccSi253SWBY7CWjt7l0oXrk"
+        },
+        {
+          "url": "https://people.com/lisa-maxwell-daughter-beau-jessup-dead-27-12251121",
+          "title": "British Actress Lisa Maxwell’s Daughter Beau Jessup Dies at 27 in N.Y.C.",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1uE7ONl6-XREd7Wy8uqBfKNxrs2MiUFD9ivWu9-QbxixX3fVQECxCh6NwD84"
+        },
+        {
+          "url": "https://www.imdb.com/it/news/ni66108441/?ref_=nwc_art_perm",
+          "title": "British TV Star Lisa Maxwell’s Daughter Beau Jessup, 27, Dies Suddenly While Studying in NYC",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAsB4VsG6Zdot2CzbftptzYYHxD3WCm04cinFMqNCNZ7-lSJ0FEf9FoS1IqII"
+        }
+      ]
+    },
+    {
+      "query": "england national football team vs croatia national football team standings",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-12T21:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/soccer/report/_/gameId/401861150",
+        "https://www.bbc.com/sport/football/articles/c64gnd7vd912o",
+        "https://www.theguardian.com/football/2026/nov/12/archive-1990-peter-shilton-wins-125th-cap-making-him-englands-record-appearance-holder"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjw_RlKSewBi9rKcG6QOapDdviBN0GkV0ncTqSvzZV6AuiKivakA6UT4S42pI",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/soccer/report/_/gameId/401861150",
+          "title": "England 2-1 Croatia (Nov 12, 2026) Game Analysis",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjw_RlKSewBi9rKcG6QOapDdviBN0GkV0ncTqSvzZV6AuiKivakA6UT4S42pI"
+        },
+        {
+          "url": "https://www.bbc.com/sport/football/articles/c64gnd7vd912o",
+          "title": "England vs Croatia player ratings: Harry Kane scores winner as Lewis Hall impresses",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlGqADK8U6hRIM8ycAn4rC0TK2JvWg1GJ3hXnq404HnxDxEuW-syd8sgIcapc"
+        },
+        {
+          "url": "https://www.theguardian.com/football/2026/nov/12/archive-1990-peter-shilton-wins-125th-cap-making-him-englands-record-appearance-holder",
+          "title": "Archive, 1990: Peter Shilton wins 125th and final cap of record-breaking England career",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQyPUdkpov21AuJsyPeimu8j7i4zNJA2nJ0mUWffI5XwLCvttZw9x46LrmyPyk"
+        }
+      ]
+    },
     {
       "query": "caleb wilson",
       "approx_searches": "5000+",
       "published_at": "2026-11-12T21:40:00Z",
       "related_news_urls": [
         "https://www.espn.com/nba/story/_/id/50458612/bulls-rookie-caleb-wilson-leaves-game-right-hand-injury",
-        "https://abc7chicago.com/post/sources-bulls-caleb-wilson-have-surgery-fractured-hand-miss-4-6-weeks/20036646/",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/caleb-wilson-hand-will-not-return-wednesday"
+        "https://sports.yahoo.com/articles/chicago-bulls-rookie-caleb-wilson-215600677.html",
+        "https://www.nytimes.com/athletic/7775630/2026/11/12/caleb-wilson-hand-injury-bulls/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZpn4cqShi8yJ8cxjEUq5UrMeTCQOqTm0GI0bqDgHuX56zlojq4OODsSoRBGg",
       "image_credit": "ESPN",
@@ -26,53 +166,53 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZpn4cqShi8yJ8cxjEUq5UrMeTCQOqTm0GI0bqDgHuX56zlojq4OODsSoRBGg"
         },
         {
-          "url": "https://abc7chicago.com/post/sources-bulls-caleb-wilson-have-surgery-fractured-hand-miss-4-6-weeks/20036646/",
-          "title": "Sources: Bulls' Caleb Wilson to have surgery on fractured hand, miss 4-6 weeks",
-          "publisher": "ABC7 Chicago",
+          "url": "https://sports.yahoo.com/articles/chicago-bulls-rookie-caleb-wilson-215600677.html",
+          "title": "Chicago Bulls rookie Caleb Wilson out 4-6 weeks following surgery for a fractured right hand",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxzwyo-YC-SxLFgg36s-2bGAPPkEag6_cN0Zp9qbUWy4JabWGt4twGlbh-gtE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCh9lgmX6UrlsWQYd-28Yw2J3KOwv7Nqm7OhJw8V0pc_o4Tt7uIuilLrm-8Lw"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/caleb-wilson-hand-will-not-return-wednesday",
-          "title": "Caleb Wilson (hand) will not return Wednesday",
-          "publisher": "NBC Sports",
+          "url": "https://www.nytimes.com/athletic/7775630/2026/11/12/caleb-wilson-hand-injury-bulls/",
+          "title": "Caleb Wilson to miss 4-6 weeks with fractured hand, adding to Bulls’ woes: Source",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq7g_KLKEu3EGlT9jmOeIKhtv4O8hdjs4VjDj04ueXw0crGw9rVf_UIk9MhDI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRG5zYaWHdrgkfxxvRekdY1wrSgkEiFa1fL8GeipFMVjZIhhs-Tj-gClITITAc"
         }
       ]
     },
     {
-      "query": "act",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-12T21:20:00Z",
+      "query": "costco kirkland heavy cream contamination",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T21:30:00Z",
       "related_news_urls": [
-        "https://democrats-veterans.house.gov/news/press-releases/ranking-member-takano-republicans-make-largest-cut-to-veteran-benefits-in-history_on-veterans-day",
-        "https://www.nytimes.com/2026/11/12/us/politics/house-veterans-benefits-bill-funding.html",
-        "https://www.politico.com/news/2026/11/11/house-veterans-bill-trickery-01161481"
+        "https://www.wral.com/consumer/kirkland-whipped-cream-costco-recalled-november-2026/",
+        "https://www.southernliving.com/costco-recalls-kirkland-whipped-cream-12247560",
+        "https://www.wsbtv.com/news/local/recall-alert-whipped-cream-sold-georgia-may-contain-cleaning-chemical/IKVR3S7IWJEM3I6C5Y6Z7IWQEY/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbehppOt5FHaON4bzwHG7M4XCsVtpxP_bZ1uFwTABs8vLmOX0cHpRlsbZWiVk",
-      "image_credit": "House.gov",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTw3wd9r5aFaOnMB7d-CExYHjbavXp1VX-CSgHUfOgWu6KgvM83WAC1oxUcs4E",
+      "image_credit": "WRAL",
       "news": [
         {
-          "url": "https://democrats-veterans.house.gov/news/press-releases/ranking-member-takano-republicans-make-largest-cut-to-veteran-benefits-in-history_on-veterans-day",
-          "title": "Ranking Member Takano: Republicans Make Largest Cut to Veteran Benefits in History – on Veterans Day",
-          "publisher": "House.gov",
+          "url": "https://www.wral.com/consumer/kirkland-whipped-cream-costco-recalled-november-2026/",
+          "title": "Whipped cream sold at Costco recalled in NC, other states ahead of Thanksgiving",
+          "publisher": "WRAL",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbehppOt5FHaON4bzwHG7M4XCsVtpxP_bZ1uFwTABs8vLmOX0cHpRlsbZWiVk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTw3wd9r5aFaOnMB7d-CExYHjbavXp1VX-CSgHUfOgWu6KgvM83WAC1oxUcs4E"
         },
         {
-          "url": "https://www.nytimes.com/2026/11/12/us/politics/house-veterans-benefits-bill-funding.html",
-          "title": "House Passes Competing Veterans Bills in a Fight Over Funding",
-          "publisher": "The New York Times",
+          "url": "https://www.southernliving.com/costco-recalls-kirkland-whipped-cream-12247560",
+          "title": "Costco Just Issued A Recall For A Thanksgiving Dessert Essential",
+          "publisher": "Southern Living",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRietjFgj895xsrhqHQe0S2X4mMw6yiBoYKNEm9LUV2rEOaeMdwnNaZRtZKaxI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG_80octEpwHvkTBrVTgsSRi_I5uX1292-wiZj8jaF42oFpKgrCgq69hr2h6k"
         },
         {
-          "url": "https://www.politico.com/news/2026/11/11/house-veterans-bill-trickery-01161481",
-          "title": "Surprise House passage of veterans bill sparks 'trickery' accusation",
-          "publisher": "Politico",
+          "url": "https://www.wsbtv.com/news/local/recall-alert-whipped-cream-sold-georgia-may-contain-cleaning-chemical/IKVR3S7IWJEM3I6C5Y6Z7IWQEY/",
+          "title": "Recall alert: Whipped cream sold in Georgia may contain cleaning chemical",
+          "publisher": "WSB-TV",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRmpjjwlh2oxZTgkpaBPlfCAcWWQ__P_q5rIEjw1v2Miwkpmp2wYvYPI2uvxE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_cuXMlT3PabwtvTuq05L4jJXA64GI2YtQ6uZZCH1WFXFuXjGhN3UKcPO05QE"
         }
       ]
     },
@@ -118,7 +258,7 @@
       "related_news_urls": [
         "https://sports.yahoo.com/articles/chiefs-insiders-conflicting-reports-josh-202712976.html",
         "https://chiefswire.usatoday.com/story/sports/nfl/chiefs/2026/11/12/insider-reveals-concerning-update-josh-simmons-kansas-city-chiefs-nfl-week-10/92741651007/",
-        "https://kckingdom.com/josh-simmons-s-absence-just-became-a-bigger-nightmare-for-the-chiefs-01m6ypaj1r7t"
+        "https://www.profootballnetwork.com/nfl-fans-concerning-update-josh-simmons-chiefs/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR59WhFpnF4PqqW-oAivh2hV9nobRUAZhWu_urcDS842wuxPkr1U4dwr_R_FiQ",
       "image_credit": "Yahoo Sports",
@@ -138,33 +278,26 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8oyiG0HK7BgVLNU9zHiNXwGxdSbjYWxMkPXyjEPuHiRxPWsWC2GOXdwIWmx4"
         },
         {
-          "url": "https://kckingdom.com/josh-simmons-s-absence-just-became-a-bigger-nightmare-for-the-chiefs-01m6ypaj1r7t",
-          "title": "Josh Simmons's absence just became a bigger nightmare for the Chiefs",
-          "publisher": "KC Kingdom",
+          "url": "https://www.profootballnetwork.com/nfl-fans-concerning-update-josh-simmons-chiefs/",
+          "title": "‘He’s Never Playing for the Chiefs Again,’ ‘Stealing Checks at This Point’ — NFL Fans React to Concerning Update on Josh Simmons From Reporter",
+          "publisher": "Pro Football Network",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR7rwI3XOf2W6yPYFy1vyp7oc1fBk3Xxz4HnDySOr4BAOKpXJ0lf_bQoofWqc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfa-dOshscMGfD-X6YHNdixqlsIb3GVbx0cUKsc2qb5zHFBvD9NR4OPjr1FHQ"
         }
       ]
     },
     {
-      "query": "csco stock",
+      "query": "csco",
       "approx_searches": "2000+",
       "published_at": "2026-11-12T21:10:00Z",
       "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-12/cisco-raises-sales-guidance-in-sign-of-ai-fueled-momentum",
         "https://www.cnbc.com/2026/11/12/cisco-csco-q1-2027-earnings.html",
-        "https://www.barrons.com/articles/cisco-beat-earnings-estimates-stock-ai-64619a24"
+        "https://www.bloomberg.com/news/articles/2026-11-12/cisco-raises-sales-guidance-in-sign-of-ai-fueled-momentum",
+        "https://www.wsj.com/business/earnings/cisco-systems-raises-outlook-on-soaring-revenue-profit-7efeabd0"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHrPTCKC1yiyPjov77FPEQc0MZpOT-1g_WfnNJsVtW7Ja8OwdUSDo5H0wiUbU",
-      "image_credit": "Bloomberg.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqi7ePoAF0hjZWxS6TRkN7RR0z7aJP9JAi43drxsYpJzkLq-Mz8rvqZxy-9OY",
+      "image_credit": "CNBC",
       "news": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-12/cisco-raises-sales-guidance-in-sign-of-ai-fueled-momentum",
-          "title": "Cisco Raises Sales Guidance in Sign of AI-Fueled Momentum",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHrPTCKC1yiyPjov77FPEQc0MZpOT-1g_WfnNJsVtW7Ja8OwdUSDo5H0wiUbU"
-        },
         {
           "url": "https://www.cnbc.com/2026/11/12/cisco-csco-q1-2027-earnings.html",
           "title": "Cisco beats on earnings, says AI infrastructure revenue will double this fiscal year",
@@ -173,11 +306,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqi7ePoAF0hjZWxS6TRkN7RR0z7aJP9JAi43drxsYpJzkLq-Mz8rvqZxy-9OY"
         },
         {
-          "url": "https://www.barrons.com/articles/cisco-beat-earnings-estimates-stock-ai-64619a24",
-          "title": "Cisco Stock Rises After Earnings Breeze Past Estimates",
-          "publisher": "Barron's",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-12/cisco-raises-sales-guidance-in-sign-of-ai-fueled-momentum",
+          "title": "Cisco Raises Sales Guidance in Sign of AI-Fueled Momentum",
+          "publisher": "Bloomberg.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaWfu-OByQM6mAD3rhdLkXmPNhYzwxlf8JX7jnX3vR3P2ge4cufV7c1qE-mLU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHrPTCKC1yiyPjov77FPEQc0MZpOT-1g_WfnNJsVtW7Ja8OwdUSDo5H0wiUbU"
+        },
+        {
+          "url": "https://www.wsj.com/business/earnings/cisco-systems-raises-outlook-on-soaring-revenue-profit-7efeabd0",
+          "title": "Cisco Systems Raises Outlook On Soaring Revenue, Profit",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9ytkwzp6chVD8X1h4q5yIkGxVF4hfhnBVttGEwEKJoPoL86jW5OBLa-rE6_w"
         }
       ]
     },
@@ -187,8 +327,8 @@
       "published_at": "2026-11-12T21:10:00Z",
       "related_news_urls": [
         "https://www.cnbc.com/2026/11/12/cerebras-systems-cbrs-q3-earnings-report-2026.html",
-        "https://www.bloomberg.com/news/articles/2026-11-12/cerebras-delivers-solid-outlook-in-its-bid-to-challenge-nvidia",
-        "https://www.wsj.com/business/earnings/cerebras-lifts-outlook-as-cloud-revenue-surges-in-third-quarter-87d7cba2"
+        "https://www.barrons.com/articles/cerebras-earnings-stock-price-3bad09cc",
+        "https://www.bloomberg.com/news/articles/2026-11-12/cerebras-delivers-solid-outlook-in-its-bid-to-challenge-nvidia"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhPWIVIZyDMU5ikR6NQ1ehaxZCFXHo5Ouy7DtfuJOeqFS6n9RD3qs0m_Rk5FY",
       "image_credit": "CNBC",
@@ -201,142 +341,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhPWIVIZyDMU5ikR6NQ1ehaxZCFXHo5Ouy7DtfuJOeqFS6n9RD3qs0m_Rk5FY"
         },
         {
+          "url": "https://www.barrons.com/articles/cerebras-earnings-stock-price-3bad09cc",
+          "title": "Cerebras Delivers Earnings Beat. Market Rewards the Stock.",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSftb8Wx0eDYYQIjvo3nB2z9ITJf0vD-l-nRUZojl4FPeBV0iLCNaEiK80BHZo"
+        },
+        {
           "url": "https://www.bloomberg.com/news/articles/2026-11-12/cerebras-delivers-solid-outlook-in-its-bid-to-challenge-nvidia",
           "title": "Cerebras Delivers Solid Outlook in Its Bid to Challenge Nvidia",
           "publisher": "Bloomberg.com",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSic4EPp6XLe1Z9fuv7JFVyfMtW1l9tlePUvI-C5Ltqz-BSi0wTVAMzjvse6o"
-        },
-        {
-          "url": "https://www.wsj.com/business/earnings/cerebras-lifts-outlook-as-cloud-revenue-surges-in-third-quarter-87d7cba2",
-          "title": "Cerebras Lifts Outlook as Cloud Revenue Surges in Third Quarter",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5MjNB1LSJDnrdybqxkqwI2eD4R1KNmEBGTEYw1dTdAjGm9ELvraBoNCWVmM0"
-        }
-      ]
-    },
-    {
-      "query": "amat stock price",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T21:10:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/business/earnings/applied-materials-sales-profit-climb-on-semiconductor-demand-1954e62c",
-        "https://www.reuters.com/business/applied-materials-forecasts-quarterly-revenue-above-estimates-strong-ai-chip-2026-11-12/",
-        "https://finance.yahoo.com/markets/stocks/articles/applied-materials-stock-395-coreweave-094240981.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSsy_fVezXfNWiCz9tHbelag5PqZIbT1108z1TzX43wBE5Lg0AnVZVBMP44lI",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/business/earnings/applied-materials-sales-profit-climb-on-semiconductor-demand-1954e62c",
-          "title": "Applied Materials Sales, Profit Climb on Semiconductor Demand",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSsy_fVezXfNWiCz9tHbelag5PqZIbT1108z1TzX43wBE5Lg0AnVZVBMP44lI"
-        },
-        {
-          "url": "https://www.reuters.com/business/applied-materials-forecasts-quarterly-revenue-above-estimates-strong-ai-chip-2026-11-12/",
-          "title": "Applied Materials forecasts quarterly revenue above estimates on strong AI chip demand",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuLnBgCWehb4b9lQjuo-OMKYL8Hiikcuv8paFXb2j9_JEdzTP9zvpu-ek37HA"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/applied-materials-stock-395-coreweave-094240981.html",
-          "title": "Applied Materials Stock At $395: Can It Do What CoreWeave Did?",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0iBExJakkDRkM_jei5vJkdUKRJNtgexu035GBlsLuFfkOxuKcPlZG4zwTMI4"
-        }
-      ]
-    },
-    {
-      "query": "saúl lisazo",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T21:10:00Z",
-      "related_news_urls": [
-        "https://www.ejecentral.com.mx/nuestro-eje/recuerdas-a-saul-lisazo-asi-luce-actualmente-el-galan-de-telenovelas-de-los-anos-90-como-acapulco-cuerpo-y-alma"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt4Gryykebw2v2iAkHIGkp5uRbHEhEOVSotURlu0ypdELsgm7YnirE4U0EL7c",
-      "image_credit": "Eje Central",
-      "news": [
-        {
-          "url": "https://www.ejecentral.com.mx/nuestro-eje/recuerdas-a-saul-lisazo-asi-luce-actualmente-el-galan-de-telenovelas-de-los-anos-90-como-acapulco-cuerpo-y-alma",
-          "title": "¿Recuerdas a Saúl Lisazo? Así luce actualmente el galán de telenovelas de los años 90 como \"Acapulco, cuerpo y alma\"",
-          "publisher": "Eje Central",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt4Gryykebw2v2iAkHIGkp5uRbHEhEOVSotURlu0ypdELsgm7YnirE4U0EL7c"
-        }
-      ]
-    },
-    {
-      "query": "españa",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T21:10:00Z",
-      "related_news_urls": [
-        "https://www.20minutos.es/nacional/policia-guardia-civil-investigan-una-ola-falsos-avisos-bomba-espana-critican-desmantelamiento-unidades-tedax_7060303_0.html",
-        "https://www.diariodesevilla.es/sevilla/aviso-bomba-objeto-sospechoso-avenida_0_2008478536.html",
-        "https://www.cope.es/emisoras/andalucia/sevilla-provincia/sevilla/podcast/episodios/12-50h-12-noviembre-2026-herrera-cope-sevilla-20261112_3473770.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAM4C_QXTwMaX3XC-6pWu5Ifc7lDq866V3418fZG_wH2hXhtseWxfCgpKKgRc",
-      "image_credit": "20Minutos",
-      "news": [
-        {
-          "url": "https://www.20minutos.es/nacional/policia-guardia-civil-investigan-una-ola-falsos-avisos-bomba-espana-critican-desmantelamiento-unidades-tedax_7060303_0.html",
-          "title": "Policía y Guardia Civil investigan una ola de falsos avisos de bomba en España y critican el desmantelamiento de unidades TEDAX",
-          "publisher": "20Minutos",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAM4C_QXTwMaX3XC-6pWu5Ifc7lDq866V3418fZG_wH2hXhtseWxfCgpKKgRc"
-        },
-        {
-          "url": "https://www.diariodesevilla.es/sevilla/aviso-bomba-objeto-sospechoso-avenida_0_2008478536.html",
-          "title": "La Policía detona una maleta vacía en la Avenida de la Constitución de Sevilla",
-          "publisher": "Diario de Sevilla",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFLjdns5HTaDrdSGOExbtpZU-deSZIa0NIAWschrQbjTNb2CcLzu10rPyJ8wQ"
-        },
-        {
-          "url": "https://www.cope.es/emisoras/andalucia/sevilla-provincia/sevilla/podcast/episodios/12-50h-12-noviembre-2026-herrera-cope-sevilla-20261112_3473770.html",
-          "title": "12:50H | 12 NOVIEMBRE 2026 | HERRERA EN COPE EN SEVILLA",
-          "publisher": "COPE",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQyPL3crzmsQRZnekQRqUuzpJzlY6mnyO-WMw9gL438-EqoDDh-iobl-oO3hdQ"
-        }
-      ]
-    },
-    {
-      "query": "lt. col. brandon tyner",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T21:00:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/politics/national-security/u-s-military-officer-arrested-in-the-u-k-was-detained-in-sting-operation-e809a042",
-        "https://www.nytimes.com/2026/11/12/world/europe/army-britain-arrest-spy-russia.html",
-        "https://www.cnbc.com/2026/11/11/us-army-soldier-russia-espionage-arrest.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgxsx17ocp-hu2c3o2L9GAJj77JnJOeQZAx3vW47KIZy1l9CDIJFB9yJumBIs",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/politics/national-security/u-s-military-officer-arrested-in-the-u-k-was-detained-in-sting-operation-e809a042",
-          "title": "Exclusive | U.S. Army Officer Identified After U.K. Sting for Alleged Russian Spying",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgxsx17ocp-hu2c3o2L9GAJj77JnJOeQZAx3vW47KIZy1l9CDIJFB9yJumBIs"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/12/world/europe/army-britain-arrest-spy-russia.html",
-          "title": "Army Officer Accused of Trying to Spy for Russia Is Afghan War Veteran",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFUVRt4r0gzZSmc5UfQy3HOXYCJ7EGPP6qRcqEolNq6zgTnkfMZ3vVVjfiUMQ"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/11/us-army-soldier-russia-espionage-arrest.html",
-          "title": "American soldier arrested on suspicion of spying for Russia",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQttaLpDw-t3bJTtBEF2lG2jBCuZYBXeDPThWAeQ4wWtPse6zpgBwVn5l7WfXE"
         }
       ]
     }
