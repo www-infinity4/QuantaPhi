@@ -3,6 +3,7 @@ import {findDiscovery} from './quanta-feed-catalog.mjs';
 import {mountOfficialViewer} from './quanta-official-viewer.mjs';
 import {MOTORCYCLE_SOURCES} from './motorcycle-quick-cards.mjs';
 import {lookupQuickCard} from './quick-card-search-core.mjs?v=20261028-search1';
+import {AccountConnections,resolveConnectorWalletToken} from './bubbles-connections.mjs?v=20261106-cloudflare-click-fixed7';
 /* Infinity source quick cards — official links and one consented Bubbles specialist.
  * Public preview, not publisher endorsement, trending API, logged-in session,
  * content scraping, or an automated sender. Provider adapters enrich these in
@@ -178,6 +179,44 @@ function askAiTools(root,card){
  if(card.id==='copilot'){
   area.append(el('p','iqc-muted','Copilot runs through GitHub’s own agent interface, with repository permission and a reviewable PR. No silent issue assignment.'));
   root.append(area);return;
+ }
+ if(card.id==='gemini'){
+  // Sign into QuantaPhi with Google using the same wallet-bound connector as Bubbles.
+  // Never present this as a Gemini website session or an API quota grant.
+  const client=new AccountConnections({token:()=>resolveConnectorWalletToken(window),root:window});
+  const googleButton=el('button','iqc-google-connect','Sign in with Google');
+  googleButton.type='button';
+  googleButton.setAttribute('aria-label','Connect Google to QuantaPhi');
+  const googleStatus=el('p','iqc-ai-receipt','Google sign-in connects your QuantaPhi account. Gemini API access is separate.');
+  googleStatus.setAttribute('role','status');
+  const markConnected=account=>{
+   if(account?.provider!=='google'||account.status!=='connected'||!(Number(account.expiresAt)>Date.now()+30000))return false;
+   googleButton.hidden=true;
+   googleStatus.textContent='Google connected to QuantaPhi. This does not sign you into gemini.google.com.';
+   return true;
+  };
+  googleButton.addEventListener('click',()=>{
+   googleButton.disabled=true;
+   googleStatus.textContent='Starting secure Google authorization…';
+   void client.connect('google',[],(error,account)=>{
+    googleButton.disabled=false;
+    if(!error&&markConnected(account))return;
+    googleStatus.textContent=error
+     ?'Google sign-in was not verified: '+String(error.message||'authorization failed').slice(0,160)
+     :'Google returned, but the connected account could not be verified.';
+   }).catch(error=>{
+    googleButton.disabled=false;
+    googleStatus.textContent=error?.message==='verified_wallet_required'
+     ?'Connect your QuantaPhi wallet in Bubbles before linking Google.'
+     :'Google authorization could not start. Open Bubbles Account Connections to check setup.';
+   });
+  });
+  // Live status, never a browser-only success flag.
+  void client.call('/accounts').then(data=>{
+   const account=Array.isArray(data.accounts)?data.accounts.find(markConnected):null;
+   if(!account)googleButton.hidden=false;
+  }).catch(()=>{});
+  area.append(googleButton,googleStatus);
  }
  const form=el('form','iqc-ai-form');
  const input=el('textarea','iqc-ai-input');
