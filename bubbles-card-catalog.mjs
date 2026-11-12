@@ -7,6 +7,7 @@ export const cards=Object.freeze([
  ...HOUSING_HELP_RESOURCES.map(r=>app('housing-help-'+r.id,r.title+' · '+r.provider,housingResourceRoute(r.id),'QuantaPhi',[r.id,r.id==='sieda'?'seida':r.id,r.provider.toLowerCase()+' housing help',r.title.toLowerCase()])),
  app('bubbles-workshop','Bubbles Agent Workshop','/bubbles-agent-workshop/','Bubbles-Agent-Workshop',['agent workshop','build workshop']),
  app('infinity-radio','Infinity Radio','/infinity-radio/','Alien-Radio',['radio','alien radio'],'#play-btn'),
+ app('gitpal-engineer','Gitpal · Infinity Oracle Engineer','/gitpal/','Gitpal',['gitpal','gitpal engineer','github copilot gitpal','gitpal build','gitpal oracle']),
  local('story-writer','Story Writer','phiStoryWriter',['phi-visual-render.js','phi-story-writer.js'],['phi-story-writer.css'],['oracle story writer']),
  local('reads-realms','Reads & Realms','infiniteBook',['infinite-book-discovery.js','infinite-book.js'],['infinite-book.css'],['reads and realms','reads realms','big book']),
  app('infinity-affiliates','Infinity Affiliates · Approved Products','/infinity-affiliates.html','QuantaPhi',['affiliates','affiliate products','infinity approved affiliate','join affiliate program','affiliate request','brand associations']),
