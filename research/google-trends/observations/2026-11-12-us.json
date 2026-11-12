@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T23:01:08.011537Z",
+  "checked_at": "2026-11-12T23:31:18.238460Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "linda nosková",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T22:40:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7773795/2026/11/12/tennis-sun-shadows-court-broadcast-strategy/",
-        "https://www.wtatennis.com/news/4606109/wta-finals-day-1-preview-gauff-pegula-set-for-all-american-battle-at-indian-wells",
-        "https://bnpparibasopen.com/news/wta-finals-2026-information"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT85eEn0s27H0sXmnAJHMq5740y2kzuJc-awM7SoGUp0wFhDcVBHPLJ7UGjy1o",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7773795/2026/11/12/tennis-sun-shadows-court-broadcast-strategy/",
-          "title": "Tennis chases the sun. At the WTA Finals at Indian Wells, the sun is chasing the players",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT85eEn0s27H0sXmnAJHMq5740y2kzuJc-awM7SoGUp0wFhDcVBHPLJ7UGjy1o"
-        },
-        {
-          "url": "https://www.wtatennis.com/news/4606109/wta-finals-day-1-preview-gauff-pegula-set-for-all-american-battle-at-indian-wells",
-          "title": "WTA Finals Day 1 preview: Gauff, Pegula set for all-American battle at Indian Wells",
-          "publisher": "WTA Tennis",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSimPtaNi8yEajQDwDj32gXUcDoPmPc47S4J8WnlSOAx4yUWDXin1CUhirXCr8"
-        },
-        {
-          "url": "https://bnpparibasopen.com/news/wta-finals-2026-information",
-          "title": "Heading to WTA Finals Indian Wells? Here's Your Essential Guide",
-          "publisher": "BNP Paribas Open | Indian Wells",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxsZK5-gKhQoIYUNJg3pCQeMkN-tr8FprVE_d-_zDC5mS-s6uKdI0-zqPqAqU"
-        }
-      ]
-    },
-    {
-      "query": "linda noskova",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T22:40:00Z",
-      "related_news_urls": [
-        "https://www.wtatennis.com/news/4607847/fage-wta-finals-day-5-preview-coco-gauff-jessica-pegula-battling-for-spots-in-indian-wells-semis",
-        "https://www.bbc.com/sport/tennis/articles/cvglwllpxddro",
-        "https://www.reuters.com/sports/tennis/pegula-keeps-wta-finals-hopes-alive-kostyuk-eliminated-2026-11-10/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyRPaYFfiZq8RnjOqTAjB8xKGJheVzNoIbLJ8W75WaROz4NM--vGQmR-XWpWo",
-      "image_credit": "WTA Tennis",
-      "news": [
-        {
-          "url": "https://www.wtatennis.com/news/4607847/fage-wta-finals-day-5-preview-coco-gauff-jessica-pegula-battling-for-spots-in-indian-wells-semis",
-          "title": "FAGE WTA Finals Day 5 preview: How Pegula and Gauff can reach the semifinals",
-          "publisher": "WTA Tennis",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyRPaYFfiZq8RnjOqTAjB8xKGJheVzNoIbLJ8W75WaROz4NM--vGQmR-XWpWo"
-        },
-        {
-          "url": "https://www.bbc.com/sport/tennis/articles/cvglwllpxddro",
-          "title": "WTA Finals: Linda Noskova beats Coco Gauff to reach semi-finals, Jessica Pegula wins",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhPGtSluNeLYIADw3GYUSD_iLcm4mXuIuA7SG8wWlHiYBkNe7owUEhNz_x-CM"
-        },
-        {
-          "url": "https://www.reuters.com/sports/tennis/pegula-keeps-wta-finals-hopes-alive-kostyuk-eliminated-2026-11-10/",
-          "title": "Noskova beats Gauff to reach WTA Finals semis, Pegula stays in hunt",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRI3m6KBjZn2wSkLIyFrHvJFEPT1-TYxXc8v0EVuiepgETq30S67hbe8S-S9gM"
-        }
-      ]
-    },
-    {
-      "query": "lisa maxwell beau",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T22:30:00Z",
-      "related_news_urls": [
-        "https://news.columbia.edu/news/remembering-beau-rose-jessup",
-        "https://people.com/lisa-maxwell-daughter-beau-jessup-dead-27-12251121",
-        "https://pagesix.com/2026/11/12/celebrity-news/british-actresss-columbia-university-student-daughter-dies-at-27/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtahTyr5Lx43zvpkieH3qeqiMkEh8HDaU_GPE2ccSi253SWBY7CWjt7l0oXrk",
-      "image_credit": "Columbia University",
-      "news": [
-        {
-          "url": "https://news.columbia.edu/news/remembering-beau-rose-jessup",
-          "title": "Remembering Beau Rose Jessup",
-          "publisher": "Columbia University",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtahTyr5Lx43zvpkieH3qeqiMkEh8HDaU_GPE2ccSi253SWBY7CWjt7l0oXrk"
-        },
-        {
-          "url": "https://people.com/lisa-maxwell-daughter-beau-jessup-dead-27-12251121",
-          "title": "British Actress Lisa Maxwell’s Daughter Beau Jessup Dies at 27 in N.Y.C.",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1uE7ONl6-XREd7Wy8uqBfKNxrs2MiUFD9ivWu9-QbxixX3fVQECxCh6NwD84"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/12/celebrity-news/british-actresss-columbia-university-student-daughter-dies-at-27/",
-          "title": "Daughter of beloved British actress dies suddenly at 27 while studying at Columbia University",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc0JYN9qAFVyH2-PC1xuk_PH0aNsDBuSVHXK-N7cPixhn_UW8G_Pg4wrsMUv8"
-        }
-      ]
-    },
-    {
-      "query": "pasto - junior",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T22:30:00Z",
-      "related_news_urls": [
-        "https://www.eltiempo.com/deportes/futbol-colombiano/junior-de-barranquilla-tuvo-contratiempos-para-llegar-a-pasto-y-el-partido-de-la-fecha-19-de-liga-betplay-podria-cambiar-de-programacion-3600443",
-        "https://zonacero.com/deportes/junior-cierra-ante-el-pasto-un-semestre-para-el-olvido-y-con-incertidumbre-para-2027",
-        "https://www.clarosports.com/colombia/liga-bet-play/posibles-alineaciones-del-deportivo-pasto-vs-junior-por-la-liga-betplay-2026-ii/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiNHZ7S_8y2CyUXdo8VmglPwwWTO6p_60kI9yFBlXkcsRZhBwkSG2y1RAa5qA",
-      "image_credit": "El Tiempo",
-      "news": [
-        {
-          "url": "https://www.eltiempo.com/deportes/futbol-colombiano/junior-de-barranquilla-tuvo-contratiempos-para-llegar-a-pasto-y-el-partido-de-la-fecha-19-de-liga-betplay-podria-cambiar-de-programacion-3600443",
-          "title": "Junior de Barranquilla tuvo contratiempos para llegar a Pasto y el partido de la Fecha 19 de Liga BetPlay podría cambiar de programación",
-          "publisher": "El Tiempo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiNHZ7S_8y2CyUXdo8VmglPwwWTO6p_60kI9yFBlXkcsRZhBwkSG2y1RAa5qA"
-        },
-        {
-          "url": "https://zonacero.com/deportes/junior-cierra-ante-el-pasto-un-semestre-para-el-olvido-y-con-incertidumbre-para-2027",
-          "title": "Junior cierra ante el Pasto un semestre para el olvido y con incertidumbre para 2027",
-          "publisher": "Zona Cero",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRO4sAyJBOn_w5mqxN47oCmN18xexex26Sa9V_CsUW7Sy5D7EU0IRj-0gL06KU"
-        },
-        {
-          "url": "https://www.clarosports.com/colombia/liga-bet-play/posibles-alineaciones-del-deportivo-pasto-vs-junior-por-la-liga-betplay-2026-ii/",
-          "title": "Posibles alineaciones del Deportivo Pasto vs Junior por la Liga BetPlay 2026-II",
-          "publisher": "Claro Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdm0NevY8qXSYfA1AI61NiyVIJtWNVH-bfTabo10Hd88hIe7J26gnawyQbn9A"
-        }
-      ]
-    },
-    {
-      "query": "deebo samuel",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T22:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/san-francisco-49ers-announce-mike-000502238.html",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/deebo-samuel-limited-in-his-return-to-practice",
-        "https://www.sfchronicle.com/sports/49ers/article/sf-49ers-receiver-mike-evans-still-sidelined-22525705.php"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqunKuGSWJCdpksuVln5YpTxYJq3vwbVJH7Mic2x30MscwBXZ80_l03YH0U3A",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/san-francisco-49ers-announce-mike-000502238.html",
-          "title": "San Francisco 49ers Announce Mike Evans Injury Update Ahead of Cowboys Game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqunKuGSWJCdpksuVln5YpTxYJq3vwbVJH7Mic2x30MscwBXZ80_l03YH0U3A"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/deebo-samuel-limited-in-his-return-to-practice",
-          "title": "Deebo Samuel limited in his return to practice",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTavwu3ga8xRuJGB-BrBN3CSOYqBTWtiBZIQKUAF90PGg6qnvDzZkm-FDxxyEk"
-        },
-        {
-          "url": "https://www.sfchronicle.com/sports/49ers/article/sf-49ers-receiver-mike-evans-still-sidelined-22525705.php",
-          "title": "49ers wide receiver Mike Evans ‘week-to-week’ with injury, likely out Sunday",
-          "publisher": "San Francisco Chronicle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKM-5mJSpuHyUSxNnhRppTR7gY8GqsN5zjNR8a0uR1IEv9PEIsMu8BO4i1Izg"
-        }
-      ]
-    },
-    {
-      "query": "jessica pegula",
+      "query": "pistons vs wizards",
       "approx_searches": "2000+",
-      "published_at": "2026-11-12T22:20:00Z",
+      "published_at": "2026-11-12T23:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/tennis/story/_/id/50428229/2026-wta-finals-day-one-coco-gauff-jessica-pegula",
-        "https://www.reuters.com/sports/tennis/gauff-bests-pegula-thrilling-clash-noskova-beats-kostyuk-wta-finals-2026-11-09/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/cristina-bucsa-nicole-melichar-martinez-vs-ellen-perez-demi-schuurs-nov-08-2026/"
+        "https://www.espn.com/nba/recap/_/gameId/401909954",
+        "https://sports.yahoo.com/articles/detroit-pistons-vs-washington-wizards-223026843.html",
+        "https://www.nytimes.com/athletic/7769473/2026/11/09/anthony-davis-wizards-defense-struggles/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNTzuCQxytYTaLOQ68tfk8r0R_GyX40XLa2ZRptuXqatDoxaFANe2WOyQBIHw",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVi6WavTIKsXcWFgSJOQL8L79HVMBvDbIO8jeh63214iTQGVscg1zF-fct92c",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/tennis/story/_/id/50428229/2026-wta-finals-day-one-coco-gauff-jessica-pegula",
-          "title": "Coco Gauff opens 2026 WTA Finals with win vs. Jessica Pegula",
+          "url": "https://www.espn.com/nba/recap/_/gameId/401909954",
+          "title": "Pistons 122-111 Wizards (Nov 9, 2026) Game Recap",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNTzuCQxytYTaLOQ68tfk8r0R_GyX40XLa2ZRptuXqatDoxaFANe2WOyQBIHw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVi6WavTIKsXcWFgSJOQL8L79HVMBvDbIO8jeh63214iTQGVscg1zF-fct92c"
         },
         {
-          "url": "https://www.reuters.com/sports/tennis/gauff-bests-pegula-thrilling-clash-noskova-beats-kostyuk-wta-finals-2026-11-09/",
-          "title": "Gauff outruns Pegula to win thriller at WTA Finals, Noskova beats Kostyuk",
-          "publisher": "Reuters",
+          "url": "https://sports.yahoo.com/articles/detroit-pistons-vs-washington-wizards-223026843.html",
+          "title": "Detroit Pistons Vs. Washington Wizards Rematch Injury Report",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQC0yFoPx1WZJhYcdiBKajCc6CX0coGhtgHzFHTzGFqxthos_79A0lc3taRS-M"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiDtfApvBdlH_qE9QclsmvWQ9cPz-_ev-3ySHIHQjuGn3MQEBmy22IyoNu658"
         },
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/cristina-bucsa-nicole-melichar-martinez-vs-ellen-perez-demi-schuurs-nov-08-2026/",
-          "title": "November 8, 2026: Cristina Bucsa / Nicole Melichar-Martinez vs Ellen Perez / Demi Schuurs Prediction Market",
-          "publisher": "Robinhood",
+          "url": "https://www.nytimes.com/athletic/7769473/2026/11/09/anthony-davis-wizards-defense-struggles/",
+          "title": "Anthony Davis’ 44 points upstaged by Wizards’ woes: ‘It’s everything right now’ - The Athletic",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWqtMnsi6MUVP63ICmrGeD0PVNZ9x_HbdCMXPKuOpzYsHoNZe6wvgVd04O9Gk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSE5Andy_X8JTpVgg4LLiWud7eU2v3l-dRyZvxpsJatFchxtphsFvhBSrjVxW4"
         }
       ]
     },
     {
-      "query": "supreme court",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T22:20:00Z",
+      "query": "canadiens vs bruins",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T23:10:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/12/us/politics/the-docket-supreme-court-congressional-investigations.html",
-        "https://slate.com/news-and-politics/2026/11/supreme-court-trump-congress-democrats-vs-corruption.html",
-        "https://www.justsecurity.org/163261/congresss-options-courts-litigation-executive-branch/"
+        "https://www.nhl.com/bruins/news/need-to-know-bruins-vs-canadiens-x2613",
+        "https://sports.yahoo.com/articles/canadiens-bruins-game-central-watch-190005135.html",
+        "https://www.bostonherald.com/2026/11/11/bruins-canadiens-rivalry-rekindled-with-a-college-twist/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9078vS7CanTk16NNXGUjixYFpjSZGEUyeQm2VPqqszz4w--AOVKNBL8MqUm0",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUZ2b5LhQfJ2_QVlETa9Zd_druNh4c2kzQ6Tc2ivECqmPc_-FAcMJIxXPEvjg",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/bruins/news/need-to-know-bruins-vs-canadiens-x2613",
+          "title": "Need to Know: Bruins vs. Canadiens | Boston Bruins",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUZ2b5LhQfJ2_QVlETa9Zd_druNh4c2kzQ6Tc2ivECqmPc_-FAcMJIxXPEvjg"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/canadiens-bruins-game-central-watch-190005135.html",
+          "title": "Canadiens at Bruins Game Central: How to Watch, Lines, Injury Updates",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUjYHL73PgAarhY-7K4AiE4gMLKQld8jUTBNPa25a1rXg42m95f2ILNhM0B0c"
+        },
+        {
+          "url": "https://www.bostonherald.com/2026/11/11/bruins-canadiens-rivalry-rekindled-with-a-college-twist/",
+          "title": "Bruins-Canadiens rivalry rekindled, with a college twist",
+          "publisher": "Boston Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMFLC1LCGSJxCoN2WAcUWxbMqvOMSz2tlnpIcTixvMczjizyyKWBjeY_KQ-MQ"
+        }
+      ]
+    },
+    {
+      "query": "avalanche vs senators",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T23:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/preview-avs-senators-set-showdown-212000953.html",
+        "https://www.espn.com/watch/player/_/eventCalendarId/401909786",
+        "https://milehighsports.com/colorado-avalanche-at-ottawa-senators-best-player-props-for-toews-makar/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjYPk8Y5ZHSm7rnsTuyUHZE5mWN5AdCGzOUnNIwfwx_3uwrX8QQ9OpoqZ5Xtc",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/preview-avs-senators-set-showdown-212000953.html",
+          "title": "Preview: Avs and Senators set for Showdown with Identical Records",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjYPk8Y5ZHSm7rnsTuyUHZE5mWN5AdCGzOUnNIwfwx_3uwrX8QQ9OpoqZ5Xtc"
+        },
+        {
+          "url": "https://www.espn.com/watch/player/_/eventCalendarId/401909786",
+          "title": "#15 Kansas vs. #24 Kentucky 11/10/26 - Stream the Game Live - Watch ESPN",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRuw6W2xn7Ycd94R4ZTArmp5iPsH6lBZsiQxoYrnJr2o680On52jRsKvTNJTk"
+        },
+        {
+          "url": "https://milehighsports.com/colorado-avalanche-at-ottawa-senators-best-player-props-for-toews-makar/",
+          "title": "Colorado Avalanche at Ottawa Senators: Best Player Props for Toews, Makar",
+          "publisher": "Mile High Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWvr5kDXLxEF2eFU24B01WdA91193wj0Wda96xM0r8GxNYK1ZB9uc06n54cmU"
+        }
+      ]
+    },
+    {
+      "query": "ebenezer",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T23:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/12/movies/ebenezer-review-johnny-depp.html",
+        "https://www.hollywoodreporter.com/movies/movie-news/ebenezer-reviews-johnny-depp-1236754299/",
+        "https://www.bbc.com/culture/article/20261110-cancelled-star-johnny-depp-is-making-a-comeback"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpI_UAq-Wy3d-7xPm-REV-10YG3U0lV3r_q2TJbE630Z02konZIFmQaxd7hIQ",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/12/us/politics/the-docket-supreme-court-congressional-investigations.html",
-          "title": "Will the Supreme Court Thwart Congressional Investigations?",
+          "url": "https://www.nytimes.com/2026/11/12/movies/ebenezer-review-johnny-depp.html",
+          "title": "‘Ebenezer’ Review: Holiday Humbug",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9078vS7CanTk16NNXGUjixYFpjSZGEUyeQm2VPqqszz4w--AOVKNBL8MqUm0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpI_UAq-Wy3d-7xPm-REV-10YG3U0lV3r_q2TJbE630Z02konZIFmQaxd7hIQ"
         },
         {
-          "url": "https://slate.com/news-and-politics/2026/11/supreme-court-trump-congress-democrats-vs-corruption.html",
-          "title": "The Supreme Court Gave Trump Impunity. Congress Has the Chance to Do the Funniest Thing.",
-          "publisher": "Slate Magazine",
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/ebenezer-reviews-johnny-depp-1236754299/",
+          "title": "‘Ebenezer’ Reviews Roundup: Johnny Depp’s Comeback Gets a Chilly Reception",
+          "publisher": "The Hollywood Reporter",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMvcY0iF6EQ9zz6mnWXcW6fckCKbgKf-slvFa2nxCAI2J_Rl1R-pE5_M3cSTw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnerNUnufm_2v1hzVgEL2m5vskHSa6iOIRkLRM6bEph1umvbvC7n_QD28F2P0"
         },
         {
-          "url": "https://www.justsecurity.org/163261/congresss-options-courts-litigation-executive-branch/",
-          "title": "Congress’s Options in the Courts: Two Paths to Congressional Litigation Against the Executive Branch",
-          "publisher": "Just Security",
+          "url": "https://www.bbc.com/culture/article/20261110-cancelled-star-johnny-depp-is-making-a-comeback",
+          "title": "'Cancelled' star Johnny Depp is making a big Hollywood comeback - will it succeed?",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8_sjoMGYhtlpgbhrQw3FmjIKBXU8sWeh0jh-hMsq7FITWHqFc4w-hMjYGzNw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeIQK0tYeBeI-_CNkJ4Y-UAjckqGNXUNRHUtbEAxpZSKhZOKylNQ9A3VB09DU"
         }
       ]
     },
     {
-      "query": "naruto",
+      "query": "capitals vs devils",
       "approx_searches": "1000+",
-      "published_at": "2026-11-12T22:20:00Z",
+      "published_at": "2026-11-12T23:10:00Z",
       "related_news_urls": [
-        "https://comicbook.com/anime/feature/12-years-ago-naruto-reached-its-controversial-ending-it-isnt-as-bad-as-you-remember/",
-        "https://www.yahoo.com/lifestyle/articles/created-ninja-puppet-scene-inspired-070000029.html",
-        "https://www.creativebloq.com/how-to/how-i-created-this-ninja-puppet-scene-inspired-by-naruto"
+        "https://www.nhl.com/capitals/news/caps-clash-with-red-hot-devils",
+        "https://sports.yahoo.com/articles/2026-27-gamethread-20-jersey-230000369.html",
+        "https://www.allaboutthejersey.com/devils-game-previews/75069/game-preview-20-washington-capitals-new-jersey-devils"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSf0cJQd_00EdyIjaBIArWi4gC3c6DhSJ5GUUmyzzM5-8q-K6RTGVnVzMXsbk",
-      "image_credit": "ComicBook.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMkccY3OqSqsFrlUyGE6XkIDVju_sZjdwtLnrF61pm8oZ6NopQ1qKh3LsuxFk",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://comicbook.com/anime/feature/12-years-ago-naruto-reached-its-controversial-ending-it-isnt-as-bad-as-you-remember/",
-          "title": "12 Years Ago, Naruto Reached Its Controversial Ending & It Isn’t As Bad As You Remember",
-          "publisher": "ComicBook.com",
+          "url": "https://www.nhl.com/capitals/news/caps-clash-with-red-hot-devils",
+          "title": "Caps Clash with Red Hot Devils",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSf0cJQd_00EdyIjaBIArWi4gC3c6DhSJ5GUUmyzzM5-8q-K6RTGVnVzMXsbk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMkccY3OqSqsFrlUyGE6XkIDVju_sZjdwtLnrF61pm8oZ6NopQ1qKh3LsuxFk"
         },
         {
-          "url": "https://www.yahoo.com/lifestyle/articles/created-ninja-puppet-scene-inspired-070000029.html",
-          "title": "How I created this ninja puppet scene inspired by Naruto",
-          "publisher": "Yahoo",
+          "url": "https://sports.yahoo.com/articles/2026-27-gamethread-20-jersey-230000369.html",
+          "title": "2026-27 Gamethread #20: New Jersey Devils vs. Washington Capitals",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1WN60fLLIcTAyHpNdMzEfW02o9zlVcuvoPak01TahTrYc6MdvF2RNahT5CH8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQr_2Ub_zkYw5cTYxXRMjubmhwku_KWXHCQrOdg_4rAGTiCUg5hId-OvM6EtGk"
         },
         {
-          "url": "https://www.creativebloq.com/how-to/how-i-created-this-ninja-puppet-scene-inspired-by-naruto",
-          "title": "How I created this ninja puppet scene inspired by Naruto",
-          "publisher": "Creative Bloq",
+          "url": "https://www.allaboutthejersey.com/devils-game-previews/75069/game-preview-20-washington-capitals-new-jersey-devils",
+          "title": "Game Preview #20: Washington Capitals @ New Jersey Devils",
+          "publisher": "All About The Jersey",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfaB9rzXikAvcYrb1meTH1GonRDkbUTT3px-WFMbkp1TyENFfRLBUSUgBlwfo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJOCA5HF3OOi61XUmfF-WPCl54qhznOae3ccVlSXZOsM5Dpe5e9iSYdtSl6Zs"
         }
       ]
     },
     {
-      "query": "richard glossip",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T22:20:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/12/us/richard-glossip-guilty-plea-oklahoma",
-        "https://www.nbcnews.com/news/us-news/oklahoma-dismisses-murder-charge-former-death-row-inmate-richard-gloss-rcna609070",
-        "https://theintercept.com/2026/11/12/richard-glossip-plea-deal-accessory/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuRGXOFCzoBhchf52-gclKO1xdmuBB4xXnInISLaLUZXwXG2K2SQbzXnAF_zM",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/12/us/richard-glossip-guilty-plea-oklahoma",
-          "title": "Richard Glossip, Oklahoma man on death row for years, pleads guilty to lesser charge",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuRGXOFCzoBhchf52-gclKO1xdmuBB4xXnInISLaLUZXwXG2K2SQbzXnAF_zM"
-        },
-        {
-          "url": "https://www.nbcnews.com/news/us-news/oklahoma-dismisses-murder-charge-former-death-row-inmate-richard-gloss-rcna609070",
-          "title": "Oklahoma dismisses murder charge against former death row inmate Richard Glossip",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQt8qrcM-8ViQZqR45vcE3dxgthuXNJOeUK-rUA4qurNPamh-En48XYKiDHRDs"
-        },
-        {
-          "url": "https://theintercept.com/2026/11/12/richard-glossip-plea-deal-accessory/",
-          "title": "Oklahoma Drops Murder Charge Against Richard Glossip, Avoiding Third Trial",
-          "publisher": "The Intercept",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSV_u56bxfN3tALyyVxY84m2X2nfgzwxyvge9A_z1SbtNpunNX_WKHQXHG3f3M"
-        }
-      ]
-    },
-    {
-      "query": "nikko remigio",
+      "query": "lightning vs blue jackets",
       "approx_searches": "2000+",
-      "published_at": "2026-11-12T22:20:00Z",
+      "published_at": "2026-11-12T23:10:00Z",
       "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/patrick-mahomes-on-josh-downs-you-can-tell-the-intellect-how-he-can-pick-things-up",
-        "https://www.foxnews.com/outkick-sports/josh-downs-hilarious-reaction-traded-colts-contending-chiefs",
-        "https://www.nfl.com/news/chiefs-patrick-mahomes-was-impressed-by-new-wr-josh-downs-on-day-1-here-s-why"
+        "https://sports.yahoo.com/articles/lightning-vs-blue-jackets-prediction-175104238.html",
+        "https://www.nhl.com/bluejackets/video/talking-about-tampa-6408293055112",
+        "https://www.1stohiobattery.com/forum/blue-jackets/2026/11/10248/lightnings-striking-again"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFLSkRZ9ejoP0PWsSeX-2SyNdqY8_P7IOuGjqyNikypexP_rZkBJh-WOiYWdY",
-      "image_credit": "NBC Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoQJ5MMbHIGH1tPK0c2bD4PvEShNlKt1Uby4wDuJqwSH__poNeazMseWxNjUQ",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/patrick-mahomes-on-josh-downs-you-can-tell-the-intellect-how-he-can-pick-things-up",
-          "title": "Patrick Mahomes on Josh Downs: You can tell the intellect, how he can pick things up",
-          "publisher": "NBC Sports",
+          "url": "https://sports.yahoo.com/articles/lightning-vs-blue-jackets-prediction-175104238.html",
+          "title": "Lightning vs Blue Jackets Prediction, Picks, NHL Odds for Thursday, November 12",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFLSkRZ9ejoP0PWsSeX-2SyNdqY8_P7IOuGjqyNikypexP_rZkBJh-WOiYWdY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoQJ5MMbHIGH1tPK0c2bD4PvEShNlKt1Uby4wDuJqwSH__poNeazMseWxNjUQ"
         },
         {
-          "url": "https://www.foxnews.com/outkick-sports/josh-downs-hilarious-reaction-traded-colts-contending-chiefs",
-          "title": "Josh Downs has hilarious reaction after being traded from reeling Colts to contending Chiefs",
+          "url": "https://www.nhl.com/bluejackets/video/talking-about-tampa-6408293055112",
+          "title": "Talking About Tampa | Columbus Blue Jackets",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4sBkUiIx0MC9pF9bHBVYgk069O_tRbJZRuv8pEbPjxCnHsx65X-4U-chpSQs"
+        },
+        {
+          "url": "https://www.1stohiobattery.com/forum/blue-jackets/2026/11/10248/lightnings-striking-again",
+          "title": "Lightning's Striking Again",
+          "publisher": "1st Ohio Battery",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7wLjysghmEWL_epPVOTkP1YSRpGg6cZnEcMhFs0fu-mVwO8-bBTJBWn2u8vs"
+        }
+      ]
+    },
+    {
+      "query": "taylor sheridan",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T23:10:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-culture/brandon-sklenar-massive-play-delta-force-operator-taylor-sheridan-fast",
+        "https://movieweb.com/fast-sam-claflin-role/",
+        "https://www.fanbolt.com/188034/fast-release-date-cast-plot-taylor-sheridan/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWDrZg2k-ODL8sIRRDr36eeYDTLdnW9imMLDLV_sOauiy0JB10zFSn4tQpHGk",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/outkick-culture/brandon-sklenar-massive-play-delta-force-operator-taylor-sheridan-fast",
+          "title": "Brandon Sklenar got 'massive' to play a Delta Force operator in Taylor Sheridan's 'F.A.S.T.'",
           "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQB_ZThRiD4OWC2O3KDqyMnTvJ0Z5jj6Ghcn98LBRnCebAaNgvFmGBQ9oSduqQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWDrZg2k-ODL8sIRRDr36eeYDTLdnW9imMLDLV_sOauiy0JB10zFSn4tQpHGk"
         },
         {
-          "url": "https://www.nfl.com/news/chiefs-patrick-mahomes-was-impressed-by-new-wr-josh-downs-on-day-1-here-s-why",
-          "title": "Chiefs' Patrick Mahomes was impressed by new WR Josh Downs on Day 1. Here's why",
-          "publisher": "NFL.com",
+          "url": "https://movieweb.com/fast-sam-claflin-role/",
+          "title": "Taylor Sheridan's New Action Thriller Star Confirms \"Wild\" Role in Upcoming Movie",
+          "publisher": "MovieWeb",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrZs7ESwn5zIBcEcJ87c9tLJMwy20Za97Ek6yIHwmZbog6BrYoiEouMgppzZY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsqlFK4w94b3TQn7HhAvPL8RwbQZIbf-EbhIPkRbC8VDGS8xNX4hfqv7mWO3I"
+        },
+        {
+          "url": "https://www.fanbolt.com/188034/fast-release-date-cast-plot-taylor-sheridan/",
+          "title": "Taylor Sheridan’s ‘F.A.S.T.’ Release Date, Cast and Plot for His Next Cartel Thriller",
+          "publisher": "FanBolt",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-lutqaF0mFDv-8i_MahX-K-lRPAvdALiQlUSQteM6UWGubWRyCsxHo1Hp1Mc"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 ultimate edition",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T23:10:00Z",
+      "related_news_urls": [
+        "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
+        "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
+        "https://www.cnet.com/tech/gaming/get-your-console-ready-for-grand-theft-auto-6/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZll1tApV9Ds71HmTdujHYiNfoBn3zrlJCvS7S-pg_vQYPoW8x18hTe8WUCZg",
+      "image_credit": "Rockstar Games",
+      "news": [
+        {
+          "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
+          "title": "Pre-Load Grand Theft Auto VI Now",
+          "publisher": "Rockstar Games",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZll1tApV9Ds71HmTdujHYiNfoBn3zrlJCvS7S-pg_vQYPoW8x18hTe8WUCZg"
+        },
+        {
+          "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
+          "title": "Grand Theft Auto VI Comes to XBOX One and XBOX Series X|S Through XBOX Cloud Gaming on November 19",
+          "publisher": "XBOX Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk"
+        },
+        {
+          "url": "https://www.cnet.com/tech/gaming/get-your-console-ready-for-grand-theft-auto-6/",
+          "title": "Is Your Console Ready for Grand Theft Auto 6? Here’s What You Can Do to Make Room",
+          "publisher": "CNET",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlbNibiRQD-e_mNP5RKxGVawiloqYQMCf7qBehQ_Rww5RtgEKTnIi1q9PUkeE"
+        }
+      ]
+    },
+    {
+      "query": "penn state wrestling",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T23:10:00Z",
+      "related_news_urls": [
+        "https://gopsusports.com/news/2026/11/11/match-day-penn-state-wrest-vs-bloomsburg",
+        "https://onwardstate.com/2026/11/11/braeden-davis-no-longer-listed-on-roster/",
+        "https://www.flowrestling.org/video/16383820-cael-sanderson-updates-penn-state-roster-lineup-changes"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-ZazsnI5JSF9NCHGJMKl--4DTrQXZlFvOO2zryRlq04i4Kt-gZeHvIPh0YmI",
+      "image_credit": "gopsusports.com",
+      "news": [
+        {
+          "url": "https://gopsusports.com/news/2026/11/11/match-day-penn-state-wrest-vs-bloomsburg",
+          "title": "MATCH DAY: Penn State WREST vs. Bloomsburg",
+          "publisher": "gopsusports.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-ZazsnI5JSF9NCHGJMKl--4DTrQXZlFvOO2zryRlq04i4Kt-gZeHvIPh0YmI"
+        },
+        {
+          "url": "https://onwardstate.com/2026/11/11/braeden-davis-no-longer-listed-on-roster/",
+          "title": "Former Penn State Wrestler Braeden Davis No Longer With Program",
+          "publisher": "Onward State",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQC-t52OlSdNqE3b_g9KQJO0SdpmjD32RmHYR3-3pXVygkpEK6HeXr4l9RzXg"
+        },
+        {
+          "url": "https://www.flowrestling.org/video/16383820-cael-sanderson-updates-penn-state-roster-lineup-changes",
+          "title": "Cael Sanderson Updates Penn State Roster, Lineup Changes",
+          "publisher": "FloWrestling",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLU-bKZsLko7VNrjqXFdTNe7-zs-ayAJoXbOHP07h7lPirFxHiI6K79CpmycM"
+        }
+      ]
+    },
+    {
+      "query": "raptors vs 76ers",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-12T23:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50463008/76ers-joel-embiid-lebron-james-questionable-vs-raptors",
+        "https://sports.yahoo.com/articles/watch-raptors-vs-76ers-nba-230000755.html",
+        "https://www.inquirer.com/sixers/lebron-james-joel-embiid-76ers-back-sciatica-toronto-raptors-adem-bona-20261112.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-Libg2GfMc7K3RhxXefekTQORMqtaD1EDYeBg-JvUeitKgWeicl_9L2l7r0Q",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50463008/76ers-joel-embiid-lebron-james-questionable-vs-raptors",
+          "title": "76ers Joel Embiid (foot) questionable, LeBron James (back) out vs. Raptors",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-Libg2GfMc7K3RhxXefekTQORMqtaD1EDYeBg-JvUeitKgWeicl_9L2l7r0Q"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/watch-raptors-vs-76ers-nba-230000755.html",
+          "title": "How to watch Raptors vs 76ers: NBA, live stream, TV channel, start time",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2BOoZcUNZIY3kVGfQuBa9tx5wcHGVGgBGt7OfUcko8vBILLwua0TRFaI3wlg"
+        },
+        {
+          "url": "https://www.inquirer.com/sixers/lebron-james-joel-embiid-76ers-back-sciatica-toronto-raptors-adem-bona-20261112.html",
+          "title": "LeBron James will sit out against the Raptors with back and sciatica management",
+          "publisher": "Inquirer.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXsizWctAbvs_OwXZ8mV4os6SAOowSp1f1XTNEY7dcgobFo9G6ZC3v0haDX1c"
         }
       ]
     }
