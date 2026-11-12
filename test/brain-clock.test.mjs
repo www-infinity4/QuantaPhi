@@ -242,6 +242,19 @@ test('parallel signed claims keep conflicting repository edits out and admit a d
  assert.equal(fixture.job(2).status,'working');
 });
 
+test('pre-upgrade mixed-case repository lock prevents a signed claim without changing its owner',async t=>{
+ const fixture=continuityRunnerFixture(t,[continuityJob('FIRST','www-infinity4/quantaphi')]);
+ const legacyKey='repository-lease:www-infinity4/QuantaPhi';
+ const oldLease={leaseId:'prior-live-lease',leaseUntil:Date.now()+60_000,repository:'www-infinity4/QuantaPhi'};
+ fixture.memory.set(legacyKey,oldLease);
+ const response=await fixture.claim('550');
+ assert.equal(response.lease,null,'legacy active lock must stop a second claim');
+ assert.equal(fixture.job(0).status,'queued','no second job may be marked working');
+ assert.equal(fixture.memory.has('runner-claim:www-infinity4/Moltnook:550:1'),false,
+  'the rejected attempt must not consume a run fence');
+ assert.deepEqual(fixture.memory.get(legacyKey),oldLease,'original lease must remain unchanged');
+});
+
 test('a restarted runner recovers an expired pre-publication lease under a new fence',async t=>{
  const started=Date.now();
  t.mock.method(Date,'now',()=>started);
