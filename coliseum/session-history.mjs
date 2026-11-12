@@ -86,11 +86,20 @@ if(arena){
   if(tag==='textarea')n.rows=3;return n;
  };
  function renderSide(){
+  // Preserve the visible draft before replacing this panel. A navigation or
+  // another local history action can redraw a live, focused title input.
+  const previousTitle=side.querySelector('.zeus-history-new input');
+  if(previousTitle?.value&&previousTitle.value!==projectTitleDraft){
+   projectTitleDraft=previousTitle.value;
+   persistProjectTitle();
+  }
   side.replaceChildren(el('h3','','Project threads'));
   const form=el('form','zeus-history-new');form.autocomplete='off';
   const title=field('New project or topic title');title.required=true;title.minLength=3;title.maxLength=90;title.autocomplete='off';
   title.value=projectTitleDraft;
-  title.addEventListener('input',()=>{projectTitleDraft=title.value;persistProjectTitle()});
+  const rememberTitle=()=>{projectTitleDraft=title.value;persistProjectTitle()};
+  title.addEventListener('input',rememberTitle);
+  title.addEventListener('change',rememberTitle);
   const add=el('button','primary','Create project thread');add.type='button';form.append(title,add);
   const createProjectThread=()=>{
    // A different history action may redraw the form after the visitor typed.
