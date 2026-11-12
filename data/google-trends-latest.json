@@ -3,9 +3,289 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T18:01:22.141919Z",
+  "checked_at": "2026-11-12T18:31:16.431778Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "tornado warning",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T18:10:00Z",
+      "related_news_urls": [
+        "https://www.delawareonline.com/story/weather/2026/11/12/severe-thunderstorm-warning-tornado-watch-issued-for-new-castle-county/92744330007/",
+        "https://www.nbcphiladelphia.com/weather/stories-weather/first-alert-storm-could-bring-hail-damaging-winds-and-isolated-tornadoes/4496058/",
+        "https://www.wgal.com/article/south-central-pennsylvania-live-severe-weather-updates/74412904"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQobzuMunEwQPUgaDvSw_ZiRtQMGed9or3ETqPlQDHJYN2WYAR7wVKXdZ9jNE0",
+      "image_credit": "Delawareonline.com",
+      "news": [
+        {
+          "url": "https://www.delawareonline.com/story/weather/2026/11/12/severe-thunderstorm-warning-tornado-watch-issued-for-new-castle-county/92744330007/",
+          "title": "Severe thunderstorm warning, tornado watch issued for New Castle County",
+          "publisher": "Delawareonline.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQobzuMunEwQPUgaDvSw_ZiRtQMGed9or3ETqPlQDHJYN2WYAR7wVKXdZ9jNE0"
+        },
+        {
+          "url": "https://www.nbcphiladelphia.com/weather/stories-weather/first-alert-storm-could-bring-hail-damaging-winds-and-isolated-tornadoes/4496058/",
+          "title": "First Alert: Storms could bring hail, damaging winds and tornado risk",
+          "publisher": "NBC10 Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTx6PQrLhQ7kI8weQtJi56Rm1JcG-DetV8Xpby95wWDOC1QwDWAIhfhzrSCnX0"
+        },
+        {
+          "url": "https://www.wgal.com/article/south-central-pennsylvania-live-severe-weather-updates/74412904",
+          "title": "IMPACT DAY | Live severe weather updates for the Susquehanna Valley",
+          "publisher": "WGAL",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9a51VtV5eroOLCodFU5zjq3o_GGlH_PW8KCnIvjbF5Z0xNz-0GkzV_ZBTUWw"
+        }
+      ]
+    },
+    {
+      "query": "gatto",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T18:10:00Z",
+      "related_news_urls": [
+        "https://mattinodiverona.it/2026/11/12/verona-diventa-la-capitale-dei-gatti-al-palaexpo-arrivano-oltre-300-felini-da-ammirare/",
+        "https://www.corrieredellosport.it/news/attualit/2026/11/11-152518392/supercat_show_2026_torna_a_roma_con_mialotte_undici_racconti_felini_per_specchiarsi_nelle_insicurezze",
+        "https://www.ansa.it/canale_lifestyle/notizie/pets/2026/11/11/i-gatti-di-casa-parlano-con-miagolii-e-sguardo-scoperto-cosa-dicono-ai-loro_eb048905-7d0d-445a-ae54-a45de81d0a1e.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgKwTGPmF1JgIIWbB6l8O9fNiXwFJ1XaH42DiAkTvmzd3Aeu5_-wlVPMzMqZY",
+      "image_credit": "Mattino di Verona",
+      "news": [
+        {
+          "url": "https://mattinodiverona.it/2026/11/12/verona-diventa-la-capitale-dei-gatti-al-palaexpo-arrivano-oltre-300-felini-da-ammirare/",
+          "title": "Verona diventa la capitale dei gatti: al Palaexpo arrivano oltre 300 felini da ammirare",
+          "publisher": "Mattino di Verona",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgKwTGPmF1JgIIWbB6l8O9fNiXwFJ1XaH42DiAkTvmzd3Aeu5_-wlVPMzMqZY"
+        },
+        {
+          "url": "https://www.corrieredellosport.it/news/attualit/2026/11/11-152518392/supercat_show_2026_torna_a_roma_con_mialotte_undici_racconti_felini_per_specchiarsi_nelle_insicurezze",
+          "title": "SuperCat Show 2026 torna a Roma con Miaoledette, undici racconti felini per specchiarsi nelle insicurezze",
+          "publisher": "Corriere dello Sport",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqC1SE3BjrElRh3GOX7IRn8TNzzoWWoiFtXoQz7X2yMa86TUbhqSf3zCTrTD8"
+        },
+        {
+          "url": "https://www.ansa.it/canale_lifestyle/notizie/pets/2026/11/11/i-gatti-di-casa-parlano-con-miagolii-e-sguardo-scoperto-cosa-dicono-ai-loro_eb048905-7d0d-445a-ae54-a45de81d0a1e.html",
+          "title": "I gatti di casa 'parlano' con miagolii e sguardo, scoperto cosa dicono ai loro padroni",
+          "publisher": "ANSA",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6YHYvB-7k4JVbK7FJ_ZB5wAURnHs6DWbpOxxDRjj50MpzrUOh5SkeC3e70W4"
+        }
+      ]
+    },
+    {
+      "query": "turkey",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T18:00:00Z",
+      "related_news_urls": [
+        "https://www.independent.co.uk/news/world/europe/turkey-military-helicopter-crash-samankoy-b3084116.html",
+        "https://www.thestar.com/news/world/europe/military-helicopter-crashes-in-southern-turkey-killing-4/article_cf532953-5bf4-5732-a0ec-478b5030484d.html",
+        "https://www.arabnews.com/middle-east/turkiye-helicopter-crash-in-malatya-province-kills-4-3011506"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhuqvAHxa-npR5qLV0ab_QzJvXtJdEsR94hP4WfRlkgRAlisOzsQS9H_ZFyAc",
+      "image_credit": "The Independent",
+      "news": [
+        {
+          "url": "https://www.independent.co.uk/news/world/europe/turkey-military-helicopter-crash-samankoy-b3084116.html",
+          "title": "Military helicopter crash in Turkey leaves four dead",
+          "publisher": "The Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhuqvAHxa-npR5qLV0ab_QzJvXtJdEsR94hP4WfRlkgRAlisOzsQS9H_ZFyAc"
+        },
+        {
+          "url": "https://www.thestar.com/news/world/europe/military-helicopter-crashes-in-southern-turkey-killing-4/article_cf532953-5bf4-5732-a0ec-478b5030484d.html",
+          "title": "Military helicopter crashes in southern Turkey, killing 4",
+          "publisher": "Toronto Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTO6BYmPBikdDuTBX4psBwhtbjGsroab6qkGajRt0V6u3W0VKUVI5GwP1Y_vrE"
+        },
+        {
+          "url": "https://www.arabnews.com/middle-east/turkiye-helicopter-crash-in-malatya-province-kills-4-3011506",
+          "title": "Turkiye helicopter crash in Malatya province kills 4",
+          "publisher": "Arab News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv9vaTZSHbVxPE1W5ryI0OqXg4rWLLPeVFzcgKEF5ARAhTV945uzHUysg27L8"
+        }
+      ]
+    },
+    {
+      "query": "internet invitational",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T18:00:00Z",
+      "related_news_urls": [
+        "https://www.hollywoodreporter.com/tv/tv-features/internet-invitational-2026-robby-berger-talks-viral-moments-1236747861/",
+        "https://www.golfdigest.com/story/internet-invitational-superlatives-ep-5-salim-drunk-portnoy-whitney-the-duke",
+        "https://www.barstoolsports.com/blog/3580776/the-opening-playoff-format-of-the-internet-invite-episode-5-was-everything-of"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdlt5Z5TeLbf3FEZPewbI4fM89pZ9L_gt08vuRVS_Lak25ff7-Q9fqUjQM-_M",
+      "image_credit": "The Hollywood Reporter",
+      "news": [
+        {
+          "url": "https://www.hollywoodreporter.com/tv/tv-features/internet-invitational-2026-robby-berger-talks-viral-moments-1236747861/",
+          "title": "YouTube’s Wildest Golf Tournament Mints Star Creators. Its Founder Explains How It Really Works",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdlt5Z5TeLbf3FEZPewbI4fM89pZ9L_gt08vuRVS_Lak25ff7-Q9fqUjQM-_M"
+        },
+        {
+          "url": "https://www.golfdigest.com/story/internet-invitational-superlatives-ep-5-salim-drunk-portnoy-whitney-the-duke",
+          "title": "Internet Invitational superlatives, Ep. 5: The drunkest man alive, Portnoy vs. Whit and The Duke's demise",
+          "publisher": "Golf Digest",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxcV5ay1lcoZnq4XvoiLUB1rPZ8elAa0Vk6cCXhqfOKY6v8a71BggVYjY6WSk"
+        },
+        {
+          "url": "https://www.barstoolsports.com/blog/3580776/the-opening-playoff-format-of-the-internet-invite-episode-5-was-everything-of",
+          "title": "The Opening Playoff Format Of The Internet Invite Episode 5 Was Everything You Could Have Dreamed Of",
+          "publisher": "Barstool Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMtIn2TBZqK26xYSKo6Q-htznGQ6wbrlL_ZaIbeusHwytIgnSUsF_NaPRItnE"
+        }
+      ]
+    },
+    {
+      "query": "gemini hydrogen",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T18:00:00Z",
+      "related_news_urls": [
+        "https://www.businessinsider.com/google-hydrogen-test-new-gemini-4-flash-model-ai-2026-11",
+        "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/",
+        "https://mezha.net/eng/news/mezha-2574cfe85dfa343fa942a317_google_unveils_gemini/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxNafsr6PS9G3qw7TaKM45UL9z7ClldTiJUUPoEdIwh-YZInp6KHj6GGzNr8M",
+      "image_credit": "Business Insider",
+      "news": [
+        {
+          "url": "https://www.businessinsider.com/google-hydrogen-test-new-gemini-4-flash-model-ai-2026-11",
+          "title": "Google is letting staff test a 'fast' new Gemini AI model named Hydrogen",
+          "publisher": "Business Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxNafsr6PS9G3qw7TaKM45UL9z7ClldTiJUUPoEdIwh-YZInp6KHj6GGzNr8M"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/",
+          "title": "Gemini 4 Hydrogen: everyday coding and agentic workflows for developers",
+          "publisher": "blog.google",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkO_oTbyv7TrUv8wSA-zVI85rLVPjCtWCaTOegWIxdoYnWfTNH-M3wBXK3iAU"
+        },
+        {
+          "url": "https://mezha.net/eng/news/mezha-2574cfe85dfa343fa942a317_google_unveils_gemini/",
+          "title": "Google unveils Gemini 4 Hydrogen, now available in Gemini app",
+          "publisher": "Mezha.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrf6EtmDeim_Q8489lyMWb4RjE0TU85V5cGq_9DRQ5YV4IueGAneSUgPX2Tjc"
+        }
+      ]
+    },
+    {
+      "query": "warrenton mo",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T18:00:00Z",
+      "related_news_urls": [
+        "https://www.ksdk.com/article/news/crime/large-police-presence-responds-blackhawk-middle-school-1-person-in-custody-warrenton-missouri/63-84fdfff9-4962-4201-8bb7-51ce529e5717",
+        "https://www.firstalert4.com/2026/11/12/suspect-custody-after-incident-blackhawk-middle-school-police-say/",
+        "https://fox2now.com/news/missouri/police-responding-to-incident-at-blackhawk-middle-school-in-warrenton/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ298bRqrYHEge6kCLBQEtq3O6ybVhPL6MGPW-SbQH-Mu6lkN4cEGwQr-7c0xk",
+      "image_credit": "KSDK",
+      "news": [
+        {
+          "url": "https://www.ksdk.com/article/news/crime/large-police-presence-responds-blackhawk-middle-school-1-person-in-custody-warrenton-missouri/63-84fdfff9-4962-4201-8bb7-51ce529e5717",
+          "title": "Student hospitalized, teacher injured after incident at Blackhawk Middle School",
+          "publisher": "KSDK",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ298bRqrYHEge6kCLBQEtq3O6ybVhPL6MGPW-SbQH-Mu6lkN4cEGwQr-7c0xk"
+        },
+        {
+          "url": "https://www.firstalert4.com/2026/11/12/suspect-custody-after-incident-blackhawk-middle-school-police-say/",
+          "title": "🔴LIVE: 2 students, teacher stabbed at Warrenton middle school",
+          "publisher": "KMOV",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlLTmLYVSRGiMCbAuUmD2ODsgRGiCqtI9HZD5-I1MeSR0CQBXPq4jzUxJZlRI"
+        },
+        {
+          "url": "https://fox2now.com/news/missouri/police-responding-to-incident-at-blackhawk-middle-school-in-warrenton/",
+          "title": "Student injured during incident at Blackhawk Middle School; suspect in custody",
+          "publisher": "FOX 2",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpt-mMf_UbLQSB79ughv-HEAy9CVg3iPc2bdIpaUi9X6OhBInTY3enq5IxSDY"
+        }
+      ]
+    },
+    {
+      "query": "tornado watch",
+      "approx_searches": "100000+",
+      "published_at": "2026-11-12T17:50:00Z",
+      "related_news_urls": [
+        "https://www.nbcphiladelphia.com/weather/stories-weather/first-alert-storm-could-bring-hail-damaging-winds-and-isolated-tornadoes/4496058/",
+        "https://www.wgal.com/article/south-central-pennsylvania-live-severe-weather-updates/74412904",
+        "https://www.delawareonline.com/story/weather/2026/11/12/severe-thunderstorm-warning-tornado-watch-issued-for-new-castle-county/92744330007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTx6PQrLhQ7kI8weQtJi56Rm1JcG-DetV8Xpby95wWDOC1QwDWAIhfhzrSCnX0",
+      "image_credit": "NBC10 Philadelphia",
+      "news": [
+        {
+          "url": "https://www.nbcphiladelphia.com/weather/stories-weather/first-alert-storm-could-bring-hail-damaging-winds-and-isolated-tornadoes/4496058/",
+          "title": "First Alert: Storms could bring hail, damaging winds and tornado risk",
+          "publisher": "NBC10 Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTx6PQrLhQ7kI8weQtJi56Rm1JcG-DetV8Xpby95wWDOC1QwDWAIhfhzrSCnX0"
+        },
+        {
+          "url": "https://www.wgal.com/article/south-central-pennsylvania-live-severe-weather-updates/74412904",
+          "title": "IMPACT DAY | Live severe weather updates for the Susquehanna Valley",
+          "publisher": "WGAL",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9a51VtV5eroOLCodFU5zjq3o_GGlH_PW8KCnIvjbF5Z0xNz-0GkzV_ZBTUWw"
+        },
+        {
+          "url": "https://www.delawareonline.com/story/weather/2026/11/12/severe-thunderstorm-warning-tornado-watch-issued-for-new-castle-county/92744330007/",
+          "title": "Severe thunderstorm warning, tornado watch issued for New Castle County",
+          "publisher": "Delawareonline.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQobzuMunEwQPUgaDvSw_ZiRtQMGed9or3ETqPlQDHJYN2WYAR7wVKXdZ9jNE0"
+        }
+      ]
+    },
+    {
+      "query": "outlook outage",
+      "approx_searches": "50000+",
+      "published_at": "2026-11-12T17:50:00Z",
+      "related_news_urls": [
+        "https://www.wusa9.com/article/news/nation-world/is-microsoft-outlook-down-issues-reported-thursday/507-c4b3db9a-24e9-4c76-a414-28aa084c18f8",
+        "https://www.nbcrightnow.com/news/syndicated/microsoft-confirms-outlook-outage-affecting-customers-accessing-email-services/article_2f6c8eac-2c09-59c8-85e6-2cfc5a9b9e6f.html",
+        "https://breakingthenews.net/Article/Microsoft-users-experiencing-Outlook-outage/67553875"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQigl9I2kou3NwKjCMK1XusW_cb0yyGtYMct3eFXknhI79i4zcMEdYgPp_EWXM",
+      "image_credit": "WUSA9",
+      "news": [
+        {
+          "url": "https://www.wusa9.com/article/news/nation-world/is-microsoft-outlook-down-issues-reported-thursday/507-c4b3db9a-24e9-4c76-a414-28aa084c18f8",
+          "title": "Is Microsoft Outlook down? Thousands report issues with platform",
+          "publisher": "WUSA9",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQigl9I2kou3NwKjCMK1XusW_cb0yyGtYMct3eFXknhI79i4zcMEdYgPp_EWXM"
+        },
+        {
+          "url": "https://www.nbcrightnow.com/news/syndicated/microsoft-confirms-outlook-outage-affecting-customers-accessing-email-services/article_2f6c8eac-2c09-59c8-85e6-2cfc5a9b9e6f.html",
+          "title": "Microsoft confirms Outlook outage affecting customers accessing email services",
+          "publisher": "Nonstop Local News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC5mVyk0sqy1cGr4e5enRneC2_qepIBk6cRPaxIqIy0XBnzZOe11I8u3r6L7o"
+        },
+        {
+          "url": "https://breakingthenews.net/Article/Microsoft-users-experiencing-Outlook-outage/67553875",
+          "title": "Microsoft users experiencing Outlook outage",
+          "publisher": "Breakingthenews.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRruiO6PUpsTFeNr7zuUDA0bATXZfjR50rPY5nn6oUn7-ZHH67NIJtJ8xC4fQ8"
+        }
+      ]
+    },
     {
       "query": "seatgeek",
       "approx_searches": "2000+",
@@ -42,317 +322,37 @@
       ]
     },
     {
-      "query": "holger rune",
-      "approx_searches": "500+",
+      "query": "senate finance committee rfk jr inquiry",
+      "approx_searches": "2000+",
       "published_at": "2026-11-12T17:40:00Z",
       "related_news_urls": [
-        "https://www.atptour.com/en/video/highlights-rune-reaches-stockholm-2026-qfs-sets-fritz-clash",
-        "https://www.skysports.com/tennis/watch/7108791650619133112/bybit-stockholm-open-2026",
-        "https://sportsbook.fanduel.com/tennis/atp-stockholm-2026/miomir-kecmanovic-v-holger-rune-36306107"
+        "https://www.theguardian.com/us-news/2026/nov/12/senate-investigation-rfk-jr-measles-samoa",
+        "https://apnews.com/article/samoa-rfk-jr-senate-investigation-measles-vaccines-e4b97becad6d2951d9e84ea584979c41",
+        "https://www.cnn.com/2026/11/12/politics/senate-democrate-rfk-investigation"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsRKhSCZAa3mlQCMkgX_dZ9HM2ncIDsCxeEsoABqbmyFaoEGKlzoJ9LnlMklY",
-      "image_credit": "ATP Tour",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0UJLsLgTxr5MXHIIuw9z6gMq8kyfLFsF8A_DdANpP6nSkgdPT5hhacjUSobo",
+      "image_credit": "The Guardian",
       "news": [
         {
-          "url": "https://www.atptour.com/en/video/highlights-rune-reaches-stockholm-2026-qfs-sets-fritz-clash",
-          "title": "Highlights: Rune reaches Stockholm 2026 QFs, sets Fritz clash",
-          "publisher": "ATP Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsRKhSCZAa3mlQCMkgX_dZ9HM2ncIDsCxeEsoABqbmyFaoEGKlzoJ9LnlMklY"
-        },
-        {
-          "url": "https://www.skysports.com/tennis/watch/7108791650619133112/bybit-stockholm-open-2026",
-          "title": "Sports News, Transfers, Scores | Watch Live Sport",
-          "publisher": "Sky Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3d2pkhWpG3S2Uz7nJz1ib7CFheb5aQflO3R_eTJ4QVYcmagGdI5BkWeZCesQ"
-        },
-        {
-          "url": "https://sportsbook.fanduel.com/tennis/atp-stockholm-2026/miomir-kecmanovic-v-holger-rune-36306107",
-          "title": "Miomir Kecmanovic v Holger Rune Odds",
-          "publisher": "FanDuel Sportsbook",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA"
-        }
-      ]
-    },
-    {
-      "query": "stubhub",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-12T17:30:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/business/retail/stubhub-swings-to-profit-sees-higher-gross-merchandise-sales-05fe7ec4",
-        "https://finimize.com/content/stubhubs-q3-miss-left-analysts-looking-for-a-growth-driver",
-        "https://finance.biggo.com/news/6511cc5f-39f7-40c9-83b9-af4ccd049d4c"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbein74qj-1QDy8GNupWsMSEyKVHiqyIBwsQCpy0lT2l9Ji5lNKz5uvaAC_pM",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/business/retail/stubhub-swings-to-profit-sees-higher-gross-merchandise-sales-05fe7ec4",
-          "title": "Stubhub Swings to Profit, Names New Finance Chief",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbein74qj-1QDy8GNupWsMSEyKVHiqyIBwsQCpy0lT2l9Ji5lNKz5uvaAC_pM"
-        },
-        {
-          "url": "https://finimize.com/content/stubhubs-q3-miss-left-analysts-looking-for-a-growth-driver",
-          "title": "StubHub’s Q3 Miss Left Analysts Looking For A Growth Driver",
-          "publisher": "Finimize",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRViCXWUiXm9KyhAHdqbzS8KNHrhu9Sn_1BTxv8CHM6pyfF15PoUMAOceWpTIE"
-        },
-        {
-          "url": "https://finance.biggo.com/news/6511cc5f-39f7-40c9-83b9-af4ccd049d4c",
-          "title": "StubHub's Profit Engine Roars Even as Revenue and EPS Miss; Shares Down 60% This Year",
-          "publisher": "BigGo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTckLWMdJuG2JHusG7d4cq_PCpFPsmBle1bElgzU7iK7ZJcmv4PPtN40WQOLc"
-        }
-      ]
-    },
-    {
-      "query": "bruce arians",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T17:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/super-bowl-winning-coach-itch-172620452.html",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-12/bruce-arians-says-he-has-the-itch-to-coach-again",
-        "https://nfltraderumors.co/bruce-arians-wants-to-return-to-coaching-in-nfl/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdQ2v-0r7-ODD7dlXkjFrbGkyBeopWIVpjm1tq2azPx4wU9Zzm69K6izFDAkY",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/super-bowl-winning-coach-itch-172620452.html",
-          "title": "Super Bowl-winning coach ‘has itch’ to return to game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdQ2v-0r7-ODD7dlXkjFrbGkyBeopWIVpjm1tq2azPx4wU9Zzm69K6izFDAkY"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-12/bruce-arians-says-he-has-the-itch-to-coach-again",
-          "title": "Bruce Arians says he has the itch to coach again",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYVjKJ7MOnvbdv7evUPFVj7kJeaHwcbICrUWXCtm7k7hrLlPQU60rHpeGNWco"
-        },
-        {
-          "url": "https://nfltraderumors.co/bruce-arians-wants-to-return-to-coaching-in-nfl/",
-          "title": "Bruce Arians Wants To Return To Coaching In NFL",
-          "publisher": "NFLTradeRumors.co",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReCu_BafHxMT4X73JJteyrObZNkjqaqqJ7xGZY9uhu5rym46YmJly9xRE6XnY"
-        }
-      ]
-    },
-    {
-      "query": "nvidia cmp 170hx voltage mod",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T17:20:00Z",
-      "related_news_urls": [
-        "https://www.tomshardware.com/pc-components/gpus/techie-turns-usd2-500-cmp-170hx-8gb-mining-card-into-a-full-fat-a100-80gb-with-voltage-glitching-carefully-blowing-onboard-fuses-to-unlock-entire-vram-and-shader-modules",
-        "https://mezha.net/eng/news/mezha-ea82236eb29df1572a42529e_voltage_glitching_unlocks/",
-        "https://dev.ua/en/news/peretvorennia-videokarty-za-2-500-na-povnotsinnyi-pryskoriuvach-nvidia-a100-za-20-000-1794485233"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQYLghaHy5yMwSxh6pcbMJzRv3uCBpBoah74bg_8T46PEz5KcTWys71NdKKaY",
-      "image_credit": "Tom's Hardware",
-      "news": [
-        {
-          "url": "https://www.tomshardware.com/pc-components/gpus/techie-turns-usd2-500-cmp-170hx-8gb-mining-card-into-a-full-fat-a100-80gb-with-voltage-glitching-carefully-blowing-onboard-fuses-to-unlock-entire-vram-and-shader-modules",
-          "title": "Techie uses voltage glitching hack to turn $2,500 Nvidia 8GB cryptomining GPU into a full-fat $20,000 A100 with 80GB of VRAM — hack carefully blows onboard fuses to unlock entire V",
-          "publisher": "Tom's Hardware",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQYLghaHy5yMwSxh6pcbMJzRv3uCBpBoah74bg_8T46PEz5KcTWys71NdKKaY"
-        },
-        {
-          "url": "https://mezha.net/eng/news/mezha-ea82236eb29df1572a42529e_voltage_glitching_unlocks/",
-          "title": "Voltage glitching unlocks up to 80GB of VRAM on Nvidia CMP-170HX mining cards",
-          "publisher": "Mezha.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXsl4XCXnOYpgtDH-cItNUj2r9O5BNClTyx8UtMl3mkcl1JpxfwnGU0k4Y6ec"
-        },
-        {
-          "url": "https://dev.ua/en/news/peretvorennia-videokarty-za-2-500-na-povnotsinnyi-pryskoriuvach-nvidia-a100-za-20-000-1794485233",
-          "title": "Engineer used power surges to turn $2,500 mining graphics card into a full-fledged $20,000 Nvidia A100 accelerator",
-          "publisher": "Dev.ua",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbMc9_i89Iq9uDb-HzqzJrR6RlyisuYm1xxSa4UJLoTgJ850S2vj0YuX0KdTk"
-        }
-      ]
-    },
-    {
-      "query": "uefa nations league schedule",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T17:10:00Z",
-      "related_news_urls": [
-        "https://www.uefa.com/uefanationsleague/news/02ab-220793bfb8a3-00d5842942af-1000--uefa-nations-league-matchday-5-preview-harry-kane-set-for-en/",
-        "https://www.dazn.com/en-GB/news/football/nations-league-tips-best-bets-and-predictions-preview-portugal-denmark-norway-dbn/cuso2p5dnmjd155efl7uo316s",
-        "https://www.thelines.com/uk/tips/nations-league/nations-league-predictions-betting-tips-wins-for-england-spain/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbNcmnjOSzrLZnQBin5C4ruYLpEBOBRSbE5okgCqCEqw_AQdIM-ozDjsRv-g",
-      "image_credit": "UEFA.com",
-      "news": [
-        {
-          "url": "https://www.uefa.com/uefanationsleague/news/02ab-220793bfb8a3-00d5842942af-1000--uefa-nations-league-matchday-5-preview-harry-kane-set-for-en/",
-          "title": "UEFA Nations League Matchday 5 preview: Harry Kane set for England landmark as Spain and Portugal protect perfect records",
-          "publisher": "UEFA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbNcmnjOSzrLZnQBin5C4ruYLpEBOBRSbE5okgCqCEqw_AQdIM-ozDjsRv-g"
-        },
-        {
-          "url": "https://www.dazn.com/en-GB/news/football/nations-league-tips-best-bets-and-predictions-preview-portugal-denmark-norway-dbn/cuso2p5dnmjd155efl7uo316s",
-          "title": "Nations League tips, best bets and predictions: 5 shouts for Saturday's fixtures",
-          "publisher": "DAZN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCxoeo6a_h9rVZWcCmt778_PCtwMOwGDClsvBxnxw3SC4VHnoMbskoO5F5sZM"
-        },
-        {
-          "url": "https://www.thelines.com/uk/tips/nations-league/nations-league-predictions-betting-tips-wins-for-england-spain/",
-          "title": "Nations League Predictions & Betting Tips: Wins for England & Spain",
-          "publisher": "TheLines.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYER3H5r8ZGFyh5QIwQfGQsEX6LNBUHVMYb95oPF1cs714FYeUaaZReZ7tf5w"
-        }
-      ]
-    },
-    {
-      "query": "sabrina carpenter",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-12T17:00:00Z",
-      "related_news_urls": [
-        "https://www.billboard.com/music/music-news/sabrina-carpenter-johnnie-walker-damien-chazelle-ad-1236378794/",
-        "https://www.creativeboom.com/news/this-french-new-wave-take-on-sabrina-carpenter-is-genius-in-a-bottle/",
-        "https://www.adweek.com/creativity/sabrina-carpenter-swaps-espresso-for-whisky-in-damien-chazelles-johnnie-walker-holiday-ad/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThVeTHmYb-t62KVJRd5gq9lo12ZA-LtHG7EnsAWhYPqnVfZNwMNYPRopDnais",
-      "image_credit": "Billboard",
-      "news": [
-        {
-          "url": "https://www.billboard.com/music/music-news/sabrina-carpenter-johnnie-walker-damien-chazelle-ad-1236378794/",
-          "title": "Sabrina Carpenter Teams Up With ‘La La Land’ Director for ‘Playful, Unexpected’ Whiskey Campaign",
-          "publisher": "Billboard",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThVeTHmYb-t62KVJRd5gq9lo12ZA-LtHG7EnsAWhYPqnVfZNwMNYPRopDnais"
-        },
-        {
-          "url": "https://www.creativeboom.com/news/this-french-new-wave-take-on-sabrina-carpenter-is-genius-in-a-bottle/",
-          "title": "Damien Chazelle's French New Wave ad for Sabrina Carpenter",
-          "publisher": "Creative Boom",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJeh213uUqvR-pyvJW15BZr3fBYdnUVlkevSW0oApaNKZ1I8HY5_VU3gZ-Oxc"
-        },
-        {
-          "url": "https://www.adweek.com/creativity/sabrina-carpenter-swaps-espresso-for-whisky-in-damien-chazelles-johnnie-walker-holiday-ad/",
-          "title": "Sabrina Carpenter Swaps Espresso for Whisky in Damien Chazelle’s Johnnie Walker Ad",
-          "publisher": "ADWEEK",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_4wg0edAuuPKe3xSPWdBxlGYvlmngvlqjk28TB5S54RtgO9NEwSA5e6jHTXg"
-        }
-      ]
-    },
-    {
-      "query": "smci stock",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T17:00:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/super-micro-computer-stocks-fall-192505738.html",
-        "https://www.marketwatch.com/livecoverage/nvidia-ceo-jensen-huang-stock-board/card/super-micro-s-stock-is-falling-even-harder-than-nvidia-s-aYKozGC9FYUDj08TkQ1o?mod=mw_robin",
-        "https://www.barchart.com/story/news/8775967/super-micro-computer-q1-earnings-had-plenty-to-cheer-and-plenty-to-worry-about"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/super-micro-computer-stocks-fall-192505738.html",
-          "title": "Super Micro Computer Stocks Fall 2.01% as Cash Drain Shadows Fourfold Sales Jump",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM"
-        },
-        {
-          "url": "https://www.marketwatch.com/livecoverage/nvidia-ceo-jensen-huang-stock-board/card/super-micro-s-stock-is-falling-even-harder-than-nvidia-s-aYKozGC9FYUDj08TkQ1o?mod=mw_robin",
-          "title": "Super Micro's stock is falling even harder than Nvidia's",
-          "publisher": "MarketWatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKJ877SUpMJOMix3Rnsv97axEJsLat5z99JCYBc3JNqx5EIZB7WTEvVZjlKis"
-        },
-        {
-          "url": "https://www.barchart.com/story/news/8775967/super-micro-computer-q1-earnings-had-plenty-to-cheer-and-plenty-to-worry-about",
-          "title": "Super Micro Computer: Q1 Earnings Had Plenty to Cheer and Plenty to Worry About",
-          "publisher": "Barchart.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2HmijAKHbRg1xPE_T0NBlZD3YFuhVyr-ZLYMRfmK38Rjkz8BEXlSD9li_uHg"
-        }
-      ]
-    },
-    {
-      "query": "costco stock",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T17:00:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/costco-cost-declares-30-special-111021357.html",
-        "https://www.barchart.com/story/news/8786248/cost-stock-alert-what-to-know-as-costco-issues-30-special-dividend",
-        "https://www.barrons.com/articles/costco-stock-special-dividend-dc9dc159"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlfj3BLcFEcZGjftzsCKv8Nef2iSgMa9AnCErlCUNB85ukPL-trGH0ns52d_s",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/costco-cost-declares-30-special-111021357.html",
-          "title": "Costco (COST) Declares $30 Special Dividend And Reauthorizes $4 Billion Buyback",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlfj3BLcFEcZGjftzsCKv8Nef2iSgMa9AnCErlCUNB85ukPL-trGH0ns52d_s"
-        },
-        {
-          "url": "https://www.barchart.com/story/news/8786248/cost-stock-alert-what-to-know-as-costco-issues-30-special-dividend",
-          "title": "COST Stock Alert: What to Know as Costco Issues $30 Special Dividend",
-          "publisher": "Barchart.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKHAnPgz3leB3UhP-LE_fborUVovmW7avAwa0a7aUYUFyDHF0QA8aIryIcTpo"
-        },
-        {
-          "url": "https://www.barrons.com/articles/costco-stock-special-dividend-dc9dc159",
-          "title": "Costco’s Special Dividend Is Just One Reason It’s a Good Place to Shelter From AI Chaos",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRunrRHXGo7kGAjOgvaApu_HYGT_E5pj4ZSGv5tXVmG3BFE6dnfsnR_yKzlnTY"
-        }
-      ]
-    },
-    {
-      "query": "barcelona - arsenal",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-12T16:50:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/articles/c5vg23nmgp2yo",
-        "https://www.theguardian.com/football/live/2026/nov/12/barcelona-v-arsenal-womens-champions-league-live",
-        "https://www.arsenal.com/news/team-news-one-change-at-camp-nou-aqkEx2o6aPUk"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzgB01XANCZsA6CjR2FWTyNXVjexkJVqk_JuhTpbcCWwGTOGctP7V-UG9M35s",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/articles/c5vg23nmgp2yo",
-          "title": "Barcelona v Arsenal: How 'Barca way' continues despite big-name exits",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzgB01XANCZsA6CjR2FWTyNXVjexkJVqk_JuhTpbcCWwGTOGctP7V-UG9M35s"
-        },
-        {
-          "url": "https://www.theguardian.com/football/live/2026/nov/12/barcelona-v-arsenal-womens-champions-league-live",
-          "title": "Barcelona v Arsenal: Women’s Champions League – live",
+          "url": "https://www.theguardian.com/us-news/2026/nov/12/senate-investigation-rfk-jr-measles-samoa",
+          "title": "Senator opens investigation into evidence RFK Jr ‘unlawfully lied’ to Congress",
           "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQND6-S9HpVYnc6s-zPXVr-j4VQvYx4cuLu33mlDw0mqlG23YovIlfYvcT9BVc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0UJLsLgTxr5MXHIIuw9z6gMq8kyfLFsF8A_DdANpP6nSkgdPT5hhacjUSobo"
         },
         {
-          "url": "https://www.arsenal.com/news/team-news-one-change-at-camp-nou-aqkEx2o6aPUk",
-          "title": "Team news: One change at Camp Nou",
-          "publisher": "Arsenal.com",
+          "url": "https://apnews.com/article/samoa-rfk-jr-senate-investigation-measles-vaccines-e4b97becad6d2951d9e84ea584979c41",
+          "title": "Senators probing RFK Jr.'s testimony on Samoa trip after AP and Guardian showed documents refute it",
+          "publisher": "AP News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-p0FF5KmW5P4d6GDYfdMzGMYdmOt7xXlMSvtx4XKyByMPFS7XbhGVCYRcZEg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpN30z71naZQWnpyki9yLo_e3JBfSJvsgICuxLNd_hKdUZD7CTTNtahbXF_mE"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/12/politics/senate-democrate-rfk-investigation",
+          "title": "Top Democrat will investigate whether RFK Jr. lied to Congress",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDNDCvHRpxRK6NmZfpOIONnohyKV1G_EDZDDFqhZW-IsGMPqA70MMw4MwxNCc"
         }
       ]
     }
