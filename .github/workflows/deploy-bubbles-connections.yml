@@ -22,11 +22,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
+      - name: Install pinned WebAuthn verification dependency (GitHub runner only)
+        run: npm install --prefix workers/bubbles-connections --ignore-scripts --no-audit --no-fund
       - name: Run OAuth registration, refresh, scope, and wallet regression tests
         run: |
           node --check workers/bubbles-connections/providers.mjs
           node --check workers/bubbles-connections/router.mjs
           node --check workers/bubbles-connections/worker.mjs
+          node --check workers/bubbles-connections/owner-passkeys.mjs
+          node --check workers/bubbles-connections/passkey-router.mjs
+          node --test test/quant-mail-owner-webauthn.test.mjs test/quant-mail-live-smoke.test.mjs
           node --check workers/infinity-brain-clock/cloudflare-scope-sync.mjs
           node --test test/bubbles-cloudflare-scope-sync.test.mjs test/bubbles-connections.test.mjs test/bubbles-connections-router.test.mjs test/bubbles-consent.test.mjs test/bubbles-connections-ui.test.mjs test/bubbles-connector-pairing.test.mjs
       - name: Validate full Worker bundle without changing production
@@ -60,7 +65,8 @@ jobs:
             CONNECTION_ACTIVE_KEY:'secret_text',CONNECTION_KEYRING:'secret_text',
             CONNECTIONS:'durable_object_namespace',CONNECTIONS_READY:'plain_text',
             GITHUB_CLIENT_ID:'secret_text',GITHUB_CLIENT_SECRET:'secret_text',
-            STARQUEST_LEDGER:'service'
+            STARQUEST_LEDGER:'service',
+            OWNER_EMAIL_ALIAS_REGISTRY:'secret_text',PASSKEY_OWNER_ACCOUNT_ID:'secret_text'
           })){
             if(found.get(name)?.type!==type)throw Error('Production binding drift: '+name);
           }
@@ -117,7 +123,12 @@ jobs:
             console.log('Worker deployed; the three owner-authorized scope secrets still require installation and verification.');
           NODE
 
+      - name: Verify live passkey Worker route, privacy and origin denial
+        run: |
+          set -euo pipefail
+          node scripts/verify-quant-mail-passkey-live.mjs
       - name: Install registered 386 Cloudflare OAuth scopes and verify live Bubbles
+        if: github.event_name == 'workflow_dispatch'
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: |

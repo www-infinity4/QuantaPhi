@@ -1,0 +1,57 @@
+name: Quant Mail real WebAuthn owner login checks
+on:
+  pull_request:
+    paths:
+      - 'workers/bubbles-connections/**'
+      - 'workers/unified-wallet/worker.js'
+      - 'workers/quantaphi-site/worker.js'
+      - 'quant-mail.html'
+      - 'quant-mail-passkeys.mjs'
+      - 'test/quant-mail-preview.test.mjs'
+      - 'test/quant-mail-owner-webauthn.test.mjs'
+      - 'test/quant-mail-live-smoke.test.mjs'
+      - 'scripts/verify-quant-mail-passkey-live.mjs'
+      - '.github/workflows/quant-mail-owner-webauthn.yml'
+      - '.github/workflows/deploy-bubbles-connections.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'workers/bubbles-connections/**'
+      - 'workers/unified-wallet/worker.js'
+      - 'workers/quantaphi-site/worker.js'
+      - 'quant-mail.html'
+      - 'quant-mail-passkeys.mjs'
+      - 'test/quant-mail-preview.test.mjs'
+      - 'test/quant-mail-owner-webauthn.test.mjs'
+      - 'test/quant-mail-live-smoke.test.mjs'
+      - 'scripts/verify-quant-mail-passkey-live.mjs'
+      - '.github/workflows/quant-mail-owner-webauthn.yml'
+permissions:
+  contents: read
+jobs:
+  WebAuthn-verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install pin-locked SimpleWebAuthn verifier in Actions runner, not user device
+        run: npm install --prefix workers/bubbles-connections --ignore-scripts --no-audit --no-fund
+      - name: Validate service syntax
+        run: |
+          node --check workers/bubbles-connections/owner-passkeys.mjs
+          node --check workers/bubbles-connections/passkey-router.mjs
+          node --check workers/bubbles-connections/worker.mjs
+          node --check workers/bubbles-connections/router.mjs
+          node --check workers/unified-wallet/worker.js
+          node --check workers/quantaphi-site/worker.js
+          node --check quant-mail-passkeys.mjs
+          node --check scripts/verify-quant-mail-passkey-live.mjs
+      - name: Prove negative-path owner, origin, replay and cookie security
+        run: node --test test/quant-mail-owner-webauthn.test.mjs test/quant-mail-preview.test.mjs test/quant-mail-live-smoke.test.mjs
+      - name: Compile Cloudflare Worker with real WebAuthn verification library
+        run: |
+          npx --yes wrangler@4 deploy --config workers/bubbles-connections/wrangler.toml --dry-run --outdir /tmp/quant-mail-owner-passkeys
+          test -s /tmp/quant-mail-owner-passkeys/worker.js
