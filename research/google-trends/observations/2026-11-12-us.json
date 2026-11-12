@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T19:01:23.759503Z",
+  "checked_at": "2026-11-12T19:30:56.893429Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "msft",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T18:40:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/legal/transactional/openai-posts-steep-losses-even-quarterly-revenue-rises-10-billion-wsj-reports-2026-11-10/",
-        "https://www.wsj.com/business/earnings/openai-continues-to-suffer-heavy-losses-as-revenue-rises-to-10-billion-d2a96bbb",
-        "https://finance.yahoo.com/technology/ai/articles/openai-quarterly-revenue-reportedly-crosses-161444148.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQn1YAnxF2eyOkwVhdt1asI1cWl3pxXV62WkfMZ5uDb4x_DH8hhnkBCo7CwBYg",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/legal/transactional/openai-posts-steep-losses-even-quarterly-revenue-rises-10-billion-wsj-reports-2026-11-10/",
-          "title": "OpenAI posts steep losses even as quarterly revenue rises to $10 billion, WSJ reports",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQn1YAnxF2eyOkwVhdt1asI1cWl3pxXV62WkfMZ5uDb4x_DH8hhnkBCo7CwBYg"
-        },
-        {
-          "url": "https://www.wsj.com/business/earnings/openai-continues-to-suffer-heavy-losses-as-revenue-rises-to-10-billion-d2a96bbb",
-          "title": "Exclusive | OpenAI Continues to Suffer Heavy Losses as Revenue Rises to $10 Billion",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtxlx24ti8qKhviMGrSw1k8zCzfbZdki0uqhJBjLpPl1vRRYMXLK8Syqiab4w"
-        },
-        {
-          "url": "https://finance.yahoo.com/technology/ai/articles/openai-quarterly-revenue-reportedly-crosses-161444148.html",
-          "title": "OpenAI’s quarterly revenue reportedly crosses $10B for the first time",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtuzyWhqK8dALSOkbe5CWvXAhr-ed0bh_cfwOJJ6kFfwRjo4KT4HDCjwGthWo"
-        }
-      ]
-    },
-    {
-      "query": "bill gates",
+      "query": "spain",
       "approx_searches": "500+",
-      "published_at": "2026-11-12T18:40:00Z",
+      "published_at": "2026-11-12T19:10:00Z",
       "related_news_urls": [
-        "https://www.forbes.com/sites/arielcohen/2026/11/11/bill-gates-reassess-climate-change/",
-        "https://qz.com/stock-ceo-quits-market-reaction",
-        "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+        "https://www.cnn.com/2026/11/11/europe/spain-strike-housing-latam-intl",
+        "https://www.bbc.com/news/articles/cwvg25nypmrvo",
+        "https://www.aljazeera.com/news/2026/11/11/i-pay-500-for-5-square-metres-spains-protesters-in-their-own-words"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7BBg7xrHSDNyq37iCzyHBRcLO5kl8ZbmHt81w2M3e88rNwjdh0Whd0rBnKY0",
-      "image_credit": "Forbes",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_yJhMg0snVSBI0IPdvDTzN16YKBKzqEkkpPoF9JGhJL4RffXiS8XgBvd9Hc0",
+      "image_credit": "CNN",
       "news": [
         {
-          "url": "https://www.forbes.com/sites/arielcohen/2026/11/11/bill-gates-reassess-climate-change/",
-          "title": "Bill Gates Reassess Climate Change",
-          "publisher": "Forbes",
+          "url": "https://www.cnn.com/2026/11/11/europe/spain-strike-housing-latam-intl",
+          "title": "Millions of Spaniards stage first general strike in 14 years as anger rages over housing",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7BBg7xrHSDNyq37iCzyHBRcLO5kl8ZbmHt81w2M3e88rNwjdh0Whd0rBnKY0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_yJhMg0snVSBI0IPdvDTzN16YKBKzqEkkpPoF9JGhJL4RffXiS8XgBvd9Hc0"
         },
         {
-          "url": "https://qz.com/stock-ceo-quits-market-reaction",
-          "title": "What happens to a stock when the CEO quits: 9 exits",
-          "publisher": "qz.com",
+          "url": "https://www.bbc.com/news/articles/cwvg25nypmrvo",
+          "title": "Clashes erupt in Barcelona after thousands join Spain general strike",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk-KVMT8-YJl6fJYWxdbvzxVxl3sXGCVBUcduVNedlhI309mCkiSfbz4tBTTE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQVjlz3uPZDDkIYwinCxgKbdgIuCPdrB0RpaVf_EnIBZkymEw22H2rXuhMOq8"
         },
         {
-          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
-          "title": "NVIDIA Announces CEO Transition",
-          "publisher": "NVIDIA Newsroom",
+          "url": "https://www.aljazeera.com/news/2026/11/11/i-pay-500-for-5-square-metres-spains-protesters-in-their-own-words",
+          "title": "‘I pay $500 for 5 square metres’: Spain’s protesters, in their own words",
+          "publisher": "Al Jazeera",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8qDUGyx7H7uiXEnq5EQILYq0dJjxyQRhS2zpsVdoBZCM1RxEiYeJ_NZ_PfHQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcERK4zqoBkOI4aM8R59cc2XSEwwI5i0YztHgPu20BDJHmTW9sh3LRvPgqMws"
         }
       ]
     },
     {
-      "query": "hola",
+      "query": "microsoft cyber attack",
       "approx_searches": "500+",
-      "published_at": "2026-11-12T18:40:00Z",
+      "published_at": "2026-11-12T19:10:00Z",
       "related_news_urls": [
-        "https://www.abc.es/gente/alejandra-rubio-carlo-constanzia-buscan-nuevos-horizontes-20261110114420-nt.html",
-        "https://okdiario.com/cool/famosos/portadas-revistas-alejandra-rubio-debuta-teatro-sara-carbonero-confiesa-que-tiene-miedo-muerte-20748478",
-        "https://www.lne.es/sociedad/2026/11/11/nueva-faceta-alejandra-rubio-hija-136320237.html"
+        "https://www.csoonline.com/article/4247845/hackers-abuse-sql-servers-weak-passwords-to-drop-cryptominers-and-gh0st-rat.html",
+        "https://hackread.com/hackers-abuse-microsoft-sql-servers-monero-miner-gh0st-rat/",
+        "https://www.infosecurity-magazine.com/news/fortinet-sql-server-cryptominer/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIhJRUePGdEYVAakb13-NNtNlrlmNofSE0Z7T2fjrGC_8OdmwkZYUu85lWzDU",
-      "image_credit": "ABC",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKRjl2SMP3QdNryTxY8qpwEd5Gc73ZGq91M-hYTUxxeWtGhOeL5Ww0yWP6JpU",
+      "image_credit": "CSO Online",
       "news": [
         {
-          "url": "https://www.abc.es/gente/alejandra-rubio-carlo-constanzia-buscan-nuevos-horizontes-20261110114420-nt.html",
-          "title": "Alejandra Rubio y Carlo Constanzia buscan nuevos horizontes: ella debuta en el teatro y él quiere resucitar su faceta como músico",
-          "publisher": "ABC",
+          "url": "https://www.csoonline.com/article/4247845/hackers-abuse-sql-servers-weak-passwords-to-drop-cryptominers-and-gh0st-rat.html",
+          "title": "Hackers abuse SQL Server’s weak passwords to drop cryptominers and Gh0st RAT",
+          "publisher": "CSO Online",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIhJRUePGdEYVAakb13-NNtNlrlmNofSE0Z7T2fjrGC_8OdmwkZYUu85lWzDU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKRjl2SMP3QdNryTxY8qpwEd5Gc73ZGq91M-hYTUxxeWtGhOeL5Ww0yWP6JpU"
         },
         {
-          "url": "https://okdiario.com/cool/famosos/portadas-revistas-alejandra-rubio-debuta-teatro-sara-carbonero-confiesa-que-tiene-miedo-muerte-20748478",
-          "title": "Portadas de revistas: Alejandra Rubio debuta en el teatro y Sara Carbonero confiesa que tiene miedo a la mu...",
-          "publisher": "OkDiario",
+          "url": "https://hackread.com/hackers-abuse-microsoft-sql-servers-monero-miner-gh0st-rat/",
+          "title": "Hackers Abuse Microsoft SQL Servers to Deploy Monero Miner and Gh0st RAT",
+          "publisher": "Hackread",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl276umO1ij346f7lSjN6SCbGk8FsQD7R0VvXkT45hWse8lvfvraDgNkEfLuY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDiKOq17aOie4I8pzkCM0cJ0yAyxtxC2Dx7h8mSNYp4uewFQnyEHl91zU-6-E"
         },
         {
-          "url": "https://www.lne.es/sociedad/2026/11/11/nueva-faceta-alejandra-rubio-hija-136320237.html",
-          "title": "La nueva faceta de Alejandra Rubio, la hija de Terelu Campos",
-          "publisher": "La Nueva España",
+          "url": "https://www.infosecurity-magazine.com/news/fortinet-sql-server-cryptominer/",
+          "title": "Weak Passwords Expose SQL Servers to Cryptominer and Gh0st RAT",
+          "publisher": "Infosecurity Magazine",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc3RuELGK-Ro4XjuLYR5rooElqo11eWPciXmc-o3WilBvQUKgHRa5xK_8xpcE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxQM8d-Z8MsYn3h8qCvgtETQ70R1ZmwFob-kRXKRVRBpZCUvcWuNYTmBG0mnE"
         }
       ]
     },
     {
-      "query": "microsoft stock",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-12T18:30:00Z",
+      "query": "cyber attacks today",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T19:10:00Z",
       "related_news_urls": [
-        "https://www.barrons.com/articles/microsoft-stock-ai-ignite-b25e1835",
-        "https://www.mt.co.kr/en/tech/2026/11/12/2026111209091539262",
-        "https://www.moomoo.com/news/post/1004171849/microsoft-s-ignite-conference-to-showcase-deepening-vertical-integration-across"
+        "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html",
+        "https://news.lavx.hu/article/citrix-patches-12-netscaler-and-secure-access-client-flaws-including-authentication-bypass",
+        "https://www.heise.de/en/news/Attackers-can-take-Citrix-NetScaler-ADC-and-NetScaler-Gateway-offline-11523095.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSiEfgSV10tTXff_5ruLGh1lW338i_RhSW-nTuhcXDB1Up7yHrWr08LYARjLU",
-      "image_credit": "Barron's",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQcy6unsi-F0rwiw09d17nCJSao8tKVa5dafS-on8ZwgU5QMoEaMBKgDq4Hw0",
+      "image_credit": "The Hacker News",
       "news": [
         {
-          "url": "https://www.barrons.com/articles/microsoft-stock-ai-ignite-b25e1835",
-          "title": "Microsoft Is Off Its Record High. Next Week Could See the Stock Reignited.",
-          "publisher": "Barron's",
+          "url": "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html",
+          "title": "Citrix Patches 12 NetScaler and Secure Access Client Flaws, Including Authentication Bypass",
+          "publisher": "The Hacker News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSiEfgSV10tTXff_5ruLGh1lW338i_RhSW-nTuhcXDB1Up7yHrWr08LYARjLU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQcy6unsi-F0rwiw09d17nCJSao8tKVa5dafS-on8ZwgU5QMoEaMBKgDq4Hw0"
         },
         {
-          "url": "https://www.mt.co.kr/en/tech/2026/11/12/2026111209091539262",
-          "title": "MS to open 'Ignite 2026' on the 17th… Reveals strategies for enterprise adoption of AI agents",
-          "publisher": "머니투데이",
+          "url": "https://news.lavx.hu/article/citrix-patches-12-netscaler-and-secure-access-client-flaws-including-authentication-bypass",
+          "title": "Citrix patches 12 NetScaler and Secure Access Client flaws, including authentication bypass",
+          "publisher": "news.lavx.hu",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDpE-SskkocOXNi16OrJ_SC6PsEKwPMxIvvACJONI3DlUYjkPHzDZgV5h0qyc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwtlC87ZTR4yEQeP5PdePZLYwratlKBYquabruAWPTTaEOBOWL3xRgfFC5OZ0"
         },
         {
-          "url": "https://www.moomoo.com/news/post/1004171849/microsoft-s-ignite-conference-to-showcase-deepening-vertical-integration-across",
-          "title": "Microsoft's Ignite Conference to Showcase Deepening Vertical Integration Across AI Infrastructure, RBC Says",
-          "publisher": "Moomoo",
+          "url": "https://www.heise.de/en/news/Attackers-can-take-Citrix-NetScaler-ADC-and-NetScaler-Gateway-offline-11523095.html",
+          "title": "Attackers can take Citrix NetScaler ADC and NetScaler Gateway offline",
+          "publisher": "heise online",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJbuFK8ulY-newZWTWRd9aq5YbXdH2bOzsiDkrywqxfndgfLc0LX4Hi2bnBU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9ztvIYUr6VBwIXdjnT8uJkWW2_fQgU-OswUq1T8ANW4HkN8CN5QQC8KLCTGY"
         }
       ]
     },
     {
-      "query": "microsoft ceo",
+      "query": "inglaterra - croacia",
       "approx_searches": "1000+",
-      "published_at": "2026-11-12T18:30:00Z",
+      "published_at": "2026-11-12T19:00:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/news/videos/microsofts-ceo-says-ai-copilots-130000845.html",
-        "https://www.fastcompany.com/91640556/microsoft-ceo-satya-nadella-workers-in-ai-heavy-jobs-are-having-an-identity-crisis",
-        "https://phemex.com/academy/who-is-satya-nadella-microsoft-ceo"
+        "https://www.si.com/es-us/a-que-hora-es-el-partido-inglaterra-vs-croacia-y-como-verlo-en-tv-y-streaming-online-12-11-2026",
+        "https://es-us.noticias.yahoo.com/deportes/ganas-revancha-bilic-estrellas-fire-075352389.html",
+        "https://www.betfair.es/blog/futbol/uefa-nations-league/inglaterra---croacia-alineaciones-horario-donde-ver-pronosticos-y-estadisticas-121126-1245.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdHpIY_Z6SaDS2Q5yZzCYcgPC_6ZCTFUq4ymA0qSWEqEWUqvGrrYf261xefTQ",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMsPH65E632AH0LRRSb8nEh-FDdaDztKlB4o7JzZGETqJUcV4FJGYz-Hn1Ylw",
+      "image_credit": "Sports Illustrated",
       "news": [
         {
-          "url": "https://www.yahoo.com/news/videos/microsofts-ceo-says-ai-copilots-130000845.html",
-          "title": "Microsoft's CEO says AI copilots will change every profession",
+          "url": "https://www.si.com/es-us/a-que-hora-es-el-partido-inglaterra-vs-croacia-y-como-verlo-en-tv-y-streaming-online-12-11-2026",
+          "title": "¿A qué hora es el partido Inglaterra vs Croacia y cómo verlo en TV y streaming online?",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMsPH65E632AH0LRRSb8nEh-FDdaDztKlB4o7JzZGETqJUcV4FJGYz-Hn1Ylw"
+        },
+        {
+          "url": "https://es-us.noticias.yahoo.com/deportes/ganas-revancha-bilic-estrellas-fire-075352389.html",
+          "title": "¡Con ganas de revancha! Bilic y las estrellas del Fire planean resarcirse ante Inglaterra en los decisivos partidos de la Liga de Naciones",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdHpIY_Z6SaDS2Q5yZzCYcgPC_6ZCTFUq4ymA0qSWEqEWUqvGrrYf261xefTQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdecfk8pMvPKI_EnyyJ4pMvRNt0ZGedh4iSysmOyPrTiW3esLszvIfKU3yYjA"
         },
         {
-          "url": "https://www.fastcompany.com/91640556/microsoft-ceo-satya-nadella-workers-in-ai-heavy-jobs-are-having-an-identity-crisis",
-          "title": "Microsoft CEO Satya Nadella: Workers in AI-heavy jobs are having an identity crisis",
-          "publisher": "Fast Company",
+          "url": "https://www.betfair.es/blog/futbol/uefa-nations-league/inglaterra---croacia-alineaciones-horario-donde-ver-pronosticos-y-estadisticas-121126-1245.html",
+          "title": "Inglaterra - Croacia: alineaciones, horario, dónde ver, pronósticos y estadísticas",
+          "publisher": "Betfair",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTKk0pOmaQMaIN2cx3SI_pLp9a7XuZ8b6XdTylq0-9IdJ0Sc6fMz1ug0GkrMw"
-        },
-        {
-          "url": "https://phemex.com/academy/who-is-satya-nadella-microsoft-ceo",
-          "title": "Who Is Satya Nadella? Microsoft's Chairman and CEO",
-          "publisher": "Phemex",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYHtltMx46nCsCry4igRkp54v7-WXwupm00YQFBBzKMSrNHolXUgXUUwLjFwk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDfCDLknXDw7QCCJ0XHJjAXdDZacxj1f3Fi7EpXwT2aCGE0Tpnt7eRJQiHRn4"
         }
       ]
     },
     {
-      "query": "senegal vs sudan",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T18:30:00Z",
-      "related_news_urls": [
-        "https://sudanhorizon.com/sudans-falcons-in-kigali-ahead-of-african-qualifiers-against-senegal/",
-        "https://news.22bet.com/predictions/senegal-vs-sudan-prediction-booking-code-12-11-2026/",
-        "https://www.prpeak.com/classifieds/garage-sales/garage-sales/2169303"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR80WuMCSL0y6QiIe7uRRAiesaNZzoOt2bBb5iTiX-d1b4-elKOQzO18-KTOfg",
-      "image_credit": "Sudan Horizon",
-      "news": [
-        {
-          "url": "https://sudanhorizon.com/sudans-falcons-in-kigali-ahead-of-african-qualifiers-against-senegal/",
-          "title": "Sudan’s Falcons in Kigali Ahead of African Qualifiers Against Senegal",
-          "publisher": "Sudan Horizon",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR80WuMCSL0y6QiIe7uRRAiesaNZzoOt2bBb5iTiX-d1b4-elKOQzO18-KTOfg"
-        },
-        {
-          "url": "https://news.22bet.com/predictions/senegal-vs-sudan-prediction-booking-code-12-11-2026/",
-          "title": "Senegal vs Sudan Prediction, Odds & Betting Tips — 12 November 2026",
-          "publisher": "News.22Bet",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpkEBW3-D6WrtyC3aH-U-na-lmSEiraNqLe0u9dTvBOcxKS9ZqWt_iMt0FPq8"
-        },
-        {
-          "url": "https://www.prpeak.com/classifieds/garage-sales/garage-sales/2169303",
-          "title": "Live: Africa Cup of Nations Qualifying Live : Senegal vs Sudan Live updates",
-          "publisher": "Powell River Peak",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQT2pIabN4yttzVzaqkJmoX-WL46wYmTWqJnt_bd9cHN0-ndNGVRKq_dmXUYzA"
-        }
-      ]
-    },
-    {
-      "query": "hail",
+      "query": "microsoft layoffs",
       "approx_searches": "500+",
-      "published_at": "2026-11-12T18:30:00Z",
+      "published_at": "2026-11-12T19:00:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/news/weather-news/articles/severe-thunderstorms-could-bring-hail-173424856.html",
-        "https://patch.com/new-jersey/across-nj/coastal-storm-soak-nj-heavy-rain-strong-winds",
-        "https://www.northjersey.com/story/news/2026/11/12/nj-weather-winter-storm-forecast-noreaster-first-snow-coldest-air-of-season-new-jersey-nyc/92738840007/"
+        "https://tech.yahoo.com/general/breaking-news/article/tech-layoffs-tracker-2026-all-the-job-losses-across-canva-squarespace-amazon-microsoft-apple-meta-and-others-141507340.html",
+        "https://greekreporter.com/2026/11/12/ai-investment-job-cuts/",
+        "https://www.cnet.com/tech/services-and-software/ai-tech-layoffs-2026-trigger-recession/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUAOpebkjGMvNOx6mDhs9UAh9V3UXX6O05Wzsi1wpsNIUfc2QtlLXFTjH3DVo",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpaOndIrcfeAB4ZV-zeCuWLb7cShkgC5IaZt2YgYGcVlfz7zAP_Q-gQ7EWitQ",
+      "image_credit": "Yahoo Tech",
       "news": [
         {
-          "url": "https://www.yahoo.com/news/weather-news/articles/severe-thunderstorms-could-bring-hail-173424856.html",
-          "title": "Severe thunderstorms could bring hail, damaging winds, tornado to NJ",
-          "publisher": "Yahoo",
+          "url": "https://tech.yahoo.com/general/breaking-news/article/tech-layoffs-tracker-2026-all-the-job-losses-across-canva-squarespace-amazon-microsoft-apple-meta-and-others-141507340.html",
+          "title": "Tech layoffs tracker 2026: All the job losses across Canva, Squarespace, Amazon, Microsoft, Apple, Meta and others",
+          "publisher": "Yahoo Tech",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUAOpebkjGMvNOx6mDhs9UAh9V3UXX6O05Wzsi1wpsNIUfc2QtlLXFTjH3DVo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpaOndIrcfeAB4ZV-zeCuWLb7cShkgC5IaZt2YgYGcVlfz7zAP_Q-gQ7EWitQ"
         },
         {
-          "url": "https://patch.com/new-jersey/across-nj/coastal-storm-soak-nj-heavy-rain-strong-winds",
-          "title": "Snowfall Projection Map Released As Storm Heads To The Region: See NJ's Forecast",
-          "publisher": "Patch",
+          "url": "https://greekreporter.com/2026/11/12/ai-investment-job-cuts/",
+          "title": "AI Investment Rises as US Industries Accelerate Job Cuts, Study Finds",
+          "publisher": "GreekReporter.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdXR388HjshyJrysZf-rrPhpaCdMaMQW98N1bE1Cj_2n7fADLZ1iBczif3jHI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTziWn-ahf1kYvIJsgUp-0_Royd4_3Fya0pXkba9Lom3XWANG4zoUApHqqzdTQ"
         },
         {
-          "url": "https://www.northjersey.com/story/news/2026/11/12/nj-weather-winter-storm-forecast-noreaster-first-snow-coldest-air-of-season-new-jersey-nyc/92738840007/",
-          "title": "NJ winter storm watch? First snow possible as coldest air moves in",
-          "publisher": "Bergen Record",
+          "url": "https://www.cnet.com/tech/services-and-software/ai-tech-layoffs-2026-trigger-recession/",
+          "title": "AI-Driven Tech Layoffs Could Trigger a 1.6 Million Job Recession",
+          "publisher": "CNET",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrRLiQ-vMZZGxHQ-R4NWLF0maO8xiTquQKhX6QmtbMwM6R_TR5yFjumqx1fIg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk53V_uysYxTeusC7CFrGQxwEW4Bcx1CX1eTCXZRaB5KhXb4GSgIKGbTkcFCc"
         }
       ]
     },
     {
-      "query": "venezuela",
+      "query": "spain national football team",
       "approx_searches": "500+",
-      "published_at": "2026-11-12T18:30:00Z",
+      "published_at": "2026-11-12T19:00:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/11/us/politics/democrats-backlash-missing-hegseth-impeachment-vote.html",
-        "https://www.thewrap.com/media-platforms/politics/abdul-el-sayed-tells-pete-hegseth-to-resign-cnn/",
-        "https://spectrumlocalnews.com/hi/hawaii/politics/2026/11/11/democrats-vote-impeach-hegseth-traffic"
+        "https://www.espn.com/soccer/story/_/id/50455459/spain-lamine-yamal-injury-luis-de-la-fuente-nations-league",
+        "https://www.bbc.com/sport/football/articles/cm0qjekqzwp0o",
+        "https://www.si.com/soccer/spain-manager-delivers-angry-lamine-yamal-injury-update"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSauyhXgUtTc39Zl-misa09qDVaKArL3Otnjdn-tpPnVst9q5l2QCpGc-6IopI",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1NLzfk1HAleScmRxzEhuZHdiRmyh8P7gB4qN-vCpkyWbs8VtMLqmQyOGo98E",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/11/us/politics/democrats-backlash-missing-hegseth-impeachment-vote.html",
-          "title": "Democrats Face Backlash After Missing Hegseth Impeachment Vote",
-          "publisher": "The New York Times",
+          "url": "https://www.espn.com/soccer/story/_/id/50455459/spain-lamine-yamal-injury-luis-de-la-fuente-nations-league",
+          "title": "Spain's De la Fuente slams 'lying' over Lamine Yamal's 'special privileges'",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSauyhXgUtTc39Zl-misa09qDVaKArL3Otnjdn-tpPnVst9q5l2QCpGc-6IopI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1NLzfk1HAleScmRxzEhuZHdiRmyh8P7gB4qN-vCpkyWbs8VtMLqmQyOGo98E"
         },
         {
-          "url": "https://www.thewrap.com/media-platforms/politics/abdul-el-sayed-tells-pete-hegseth-to-resign-cnn/",
-          "title": "Abdul El-Sayed Looks Directly Into CNN Camera to Deliver Scathing Message to Pete Hegseth",
-          "publisher": "TheWrap",
+          "url": "https://www.bbc.com/sport/football/articles/cm0qjekqzwp0o",
+          "title": "Football: Lamine Yamal not getting 'special privileges' playing for Spain, says Luis de la Fuente",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbFyl0ZfoTxaGWjcArL1DnzKPXb8V2CpdMUWiay1JCtBdB5TqVXEbnNMDFU2g"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9fujZXxHcXgmDUTlaPKnfABJ8cJ4chsmceE3uvtZQjghPH5U1GTCnemDlQRI"
         },
         {
-          "url": "https://spectrumlocalnews.com/hi/hawaii/politics/2026/11/11/democrats-vote-impeach-hegseth-traffic",
-          "title": "At least 4 Democrats missed vote to impeach Defense Secretary Hegseth due to traffic",
-          "publisher": "Spectrum News",
+          "url": "https://www.si.com/soccer/spain-manager-delivers-angry-lamine-yamal-injury-update",
+          "title": "‘Sad and Regrettable’—Spain Manager Delivers Angry Lamine Yamal Injury Update",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvx5GUQtTZKaGohcpDvj03Z2yoVSYJM1KwU8VoirbUV4h34J_BPvipRmOOh9Q"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR3GEMpfDwQxuLwQqP2t2_BGiwxJD-JrVsSM37HMJ8lUU_r1jAELqakWYXGfE"
         }
       ]
     },
     {
-      "query": "tommy mcmillen",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T18:20:00Z",
+      "query": "albania vs finland",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T19:00:00Z",
       "related_news_urls": [
-        "https://www.tmz.com/2026/11/12/tommy-mcmillen-hospitalized-suspected-overdose/",
-        "https://www.mmanews.com/article/ufc-star-tommy-mcmillen-found-unresponsive-suspected",
-        "https://thespun.com/mma/ufc-star-tommy-mcmillen-12-0-was-rushed-to-the-hospital"
+        "https://www.bbc.com/sport/football/live/ck86z8g3j1yzt",
+        "https://www.reutersconnect.com/item/uefa-nations-league-group-c1-albania-v-finland/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkMxRzZWWlg",
+        "https://kohajone.com/en/sporti/maran-i-beson-pervojes-gjithnje-e-me-prane-rekordit-te-otto-baric/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEp6wIcmZOsgKh_DU0ckAeJfragaso4AlWAZ_zQtzXSLNOxpExM652TSqdrLo",
-      "image_credit": "TMZ",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.tmz.com/2026/11/12/tommy-mcmillen-hospitalized-suspected-overdose/",
-          "title": "UFC Star Tommy McMillen Rushed to Hospital After Suspected Overdose",
-          "publisher": "TMZ",
+          "url": "https://www.bbc.com/sport/football/live/ck86z8g3j1yzt",
+          "title": "Albania vs Finland: UEFA Nations League stats & head-to-head",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEp6wIcmZOsgKh_DU0ckAeJfragaso4AlWAZ_zQtzXSLNOxpExM652TSqdrLo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
         },
         {
-          "url": "https://www.mmanews.com/article/ufc-star-tommy-mcmillen-found-unresponsive-suspected",
-          "title": "UFC Star Tommy McMillen Found Unresponsive In Suspected Overdose",
-          "publisher": "MMANews.com",
+          "url": "https://www.reutersconnect.com/item/uefa-nations-league-group-c1-albania-v-finland/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkMxRzZWWlg",
+          "title": "Licensable picture: UEFA Nations League - Group C1 - Albania v Finland",
+          "publisher": "Reuters Connect",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQm-94gTLGwWyqSaAA7oJAjCGmIVile0M2g3VCq8L6L3WH-szOvqy4z4TsKsuM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-zE_fMNxRd782VKyQ0lFxc7vv_IGav2zVGa38nDOnjlkWhLz9y1pXR-Okx_Y"
         },
         {
-          "url": "https://thespun.com/mma/ufc-star-tommy-mcmillen-12-0-was-rushed-to-the-hospital",
-          "title": "UFC Star Tommy McMillen, 12-0, Was Rushed To The Hospital",
-          "publisher": "The Spun",
+          "url": "https://kohajone.com/en/sporti/maran-i-beson-pervojes-gjithnje-e-me-prane-rekordit-te-otto-baric/",
+          "title": "Maran favors experience, moving ever closer to Otto Baric’s record",
+          "publisher": "KOHA JONË",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3lv2DGfmYCoRHFGXjuVaEgtL5umqTynUTaQPdAgBHjzEaKN0F1evDD7pI7f8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmlDjKfJqmQAKm-U94k-503xQPl1dRLJMcZgTHGO7f8N_xX4NX_inzuRpDGjc"
         }
       ]
     },
     {
-      "query": "internet outage",
+      "query": "czechia vs spain",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-12T18:50:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cwg5jrzyqzdnt",
+        "https://sports.yahoo.com/articles/confirmed-barcelona-duo-start-spain-184900657.html",
+        "https://www.cnet.com/tech/services-and-software/watch-uefa-nations-league-soccer-livestream-czech-republic-vs-spain-from-anywhere/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cwg5jrzyqzdnt",
+          "title": "Czech Republic vs Spain: UEFA Nations League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/confirmed-barcelona-duo-start-spain-184900657.html",
+          "title": "Confirmed: Barcelona duo start for Spain against Czechia",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQRpjdnYJkslHPsVbpKXGpO5OymPb5jnSRkgmierC4xzdfL2KSBgoOrhl4BU8"
+        },
+        {
+          "url": "https://www.cnet.com/tech/services-and-software/watch-uefa-nations-league-soccer-livestream-czech-republic-vs-spain-from-anywhere/",
+          "title": "Watch UEFA Nations League Soccer: Livestream Czech Republic vs. Spain From Anywhere",
+          "publisher": "CNET",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4uKJeXzluOsatPCujC3937GE2XV7G56OXJisaPbSt6LiaLSqxwdj8A8c0_WQ"
+        }
+      ]
+    },
+    {
+      "query": "chequia - españa",
       "approx_searches": "10000+",
-      "published_at": "2026-11-12T18:20:00Z",
+      "published_at": "2026-11-12T18:50:00Z",
       "related_news_urls": [
-        "https://www.wtap.com/2026/11/12/optimum-internet-restored-west-virginia-after-multi-state-outage/",
-        "https://www.wowktv.com/news/west-virginia/optimum-service-disrupted-for-west-virginia-customers/",
-        "https://wchstv.com/news/local/optimum-reports-statewide-service-outage-across-west-virginia"
+        "https://www.si.com/es-us/a-que-hora-es-el-partido-republica-checa-vs-espana-y-como-verlo-en-tv-y-streaming-online-12-11-2026",
+        "https://elpais.com/deportes/futbol/2026-11-12/republica-checa-espana-en-directo-el-partido-de-la-nations-league-en-vivo.html",
+        "https://www.marca.com/futbol/uefa-nations-league/republica-checa-espana/2026/11/12/01_0195_20261112_367_118-directo.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgpyqXoc7fxSfV_xIev7hgvziNDPGoz-ikfD9aEtlqXo6aAkJvG8uz93-c5rs",
-      "image_credit": "WTAP",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPnrdS7ERWRAg-kkzwCA-kwRqpvrRYK57rQC-XKhE1bgOzX4s61STdXAFQU4o",
+      "image_credit": "Sports Illustrated",
       "news": [
         {
-          "url": "https://www.wtap.com/2026/11/12/optimum-internet-restored-west-virginia-after-multi-state-outage/",
-          "title": "Optimum internet restored in West Virginia after multi-state outage",
-          "publisher": "WTAP",
+          "url": "https://www.si.com/es-us/a-que-hora-es-el-partido-republica-checa-vs-espana-y-como-verlo-en-tv-y-streaming-online-12-11-2026",
+          "title": "¿A qué hora es el partido República Checa vs España y cómo verlo en TV y streaming online?",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgpyqXoc7fxSfV_xIev7hgvziNDPGoz-ikfD9aEtlqXo6aAkJvG8uz93-c5rs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPnrdS7ERWRAg-kkzwCA-kwRqpvrRYK57rQC-XKhE1bgOzX4s61STdXAFQU4o"
         },
         {
-          "url": "https://www.wowktv.com/news/west-virginia/optimum-service-disrupted-for-west-virginia-customers/",
-          "title": "Optimum service disrupted for West Virginia customers",
-          "publisher": "WOWK 13 News",
+          "url": "https://elpais.com/deportes/futbol/2026-11-12/republica-checa-espana-en-directo-el-partido-de-la-nations-league-en-vivo.html",
+          "title": "República Checa - España en directo | Yeremy Pino sustituye a Lamine en el once",
+          "publisher": "EL PAÍS",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSz1U9ZEBkNApyPnDvjygiC0iVFCAAO_mGUlNVRAgjWLs1nEzi0YxqD4K_176E"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlFVhCr20rpeMNv2B7dS5DGCFoOjJo0P7468e7XJAE-KbY2n1QTjcAXgoKI1o"
         },
         {
-          "url": "https://wchstv.com/news/local/optimum-reports-statewide-service-outage-across-west-virginia",
-          "title": "Optimum reports statewide service outage across West Virginia",
-          "publisher": "WCHS",
+          "url": "https://www.marca.com/futbol/uefa-nations-league/republica-checa-espana/2026/11/12/01_0195_20261112_367_118-directo.html",
+          "title": "República Checa - España en directo | Última hora de UEFA Nations League en vivo hoy",
+          "publisher": "MARCA",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsPLzWymAu4SifHhQV-LWMSlF8Fy0ewWynrqCcCCOEt99b6MRmlmoHBYpLY9Y"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ01lHc5C9pjXOL1Eu6nK8IVHEHmP294BbERzzvKDUdyTaJ-R6CkBXlpIb9tyc"
+        }
+      ]
+    },
+    {
+      "query": "italia - francia",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-12T18:50:00Z",
+      "related_news_urls": [
+        "https://www.si.com/es-us/a-que-hora-es-el-partido-italia-vs-francia-y-como-verlo-en-tv-y-streaming-online-12-11-2026",
+        "https://espndeportes.espn.com/futbol/nota/_/id/17500350/italia-vs-francia-uefa-nations-league-2026-2027-equipo-fecha-hora-tv-en-vivo",
+        "https://es-us.noticias.yahoo.com/deportes/empiezo-sentirme-riccardo-calafiori-estrella-190632580.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg9Vf0BDID15jWSNh2HnS_IhgtjItOIk7kgLgqgFxtE2iQzq44KGEjctBixzU",
+      "image_credit": "Sports Illustrated",
+      "news": [
+        {
+          "url": "https://www.si.com/es-us/a-que-hora-es-el-partido-italia-vs-francia-y-como-verlo-en-tv-y-streaming-online-12-11-2026",
+          "title": "¿A qué hora es el partido Italia vs Francia y cómo verlo en TV y streaming online?",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg9Vf0BDID15jWSNh2HnS_IhgtjItOIk7kgLgqgFxtE2iQzq44KGEjctBixzU"
+        },
+        {
+          "url": "https://espndeportes.espn.com/futbol/nota/_/id/17500350/italia-vs-francia-uefa-nations-league-2026-2027-equipo-fecha-hora-tv-en-vivo",
+          "title": "Cuando juegan Italia vs. Francia por la Nations League: equipo, fecha, hora y TV en vivo",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5jBh2_yQPBveT-Dkwdw6ktgf3XwcNBdfzuSNmm5v1VPl_EBPDre_MQS8tybQ"
+        },
+        {
+          "url": "https://es-us.noticias.yahoo.com/deportes/empiezo-sentirme-riccardo-calafiori-estrella-190632580.html",
+          "title": "«Empiezo a sentirme un poco mayor que antes»: Riccardo Calafiori, estrella del Arsenal, asume un papel de liderazgo en la joven selección italiana antes del crucial duelo contra Fr",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWRcwpZiCygYAkXUyKhyIs6hWbnoD-JSlGMzZKt1BDPLiSLxWiKeEIRZVE_xw"
         }
       ]
     }
