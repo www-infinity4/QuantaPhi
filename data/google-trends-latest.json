@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T00:01:53.963933Z",
+  "checked_at": "2026-11-12T00:45:21.183043Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "buffalo vs ball state",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-11T23:40:00Z",
+      "query": "ryan seacrest",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T00:30:00Z",
       "related_news_urls": [
-        "https://sportsbook.fanduel.com/football/ncaa-football-games/buffalo-@-ball-state-36280934",
-        "https://www.cbssports.com/betting/news/buffalo-vs-ball-state-picks-odds-prediction-start-time-college-football-betting-preview-for-wednesday/",
-        "https://www.espn.com/watch/player/_/eventCalendarId/401866461"
+        "https://www.usatoday.com/story/sports/high-school/football/2026/11/10/ryan-seacrest-dunwoody-georgia-high-school-football-first-stadium/92630959007/",
+        "https://www.wsbradio.com/news/local/school-board-advances-27-million-plan-renovate-stadium-named-after-ryan-seacrest/PDSMYEQJ7NGUTIS4F3HRTORQZ4/",
+        "https://roughdraftatlanta.com/2026/11/10/dekalb-school-board-approves-seacrest-stadium/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtz--XBN2v1-Y-_DMMhCr9mR46QuLi9Tt-ogBS2FhK0NPl-Hta0ILQD09tyQY",
-      "image_credit": "FanDuel Sportsbook",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRtErz5xuJGDOMGKxQ-CZkLpIya1GjviEzlzytqAdD2ENbsGgeqyFqi-iv2RA",
+      "image_credit": "USA Today",
       "news": [
         {
-          "url": "https://sportsbook.fanduel.com/football/ncaa-football-games/buffalo-@-ball-state-36280934",
-          "title": "Buffalo @ Ball State Odds",
-          "publisher": "FanDuel Sportsbook",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtz--XBN2v1-Y-_DMMhCr9mR46QuLi9Tt-ogBS2FhK0NPl-Hta0ILQD09tyQY"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/buffalo-vs-ball-state-picks-odds-prediction-start-time-college-football-betting-preview-for-wednesday/",
-          "title": "Buffalo vs. Ball State picks, odds, prediction, start time: College football betting preview for Wednesday",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaMmj9oBLvZs8BUMCf_hOay83Yawcwd-kQMQgPxA6bbN7t1Dp4rvydx6QJR2s"
-        },
-        {
-          "url": "https://www.espn.com/watch/player/_/eventCalendarId/401866461",
-          "title": "Buffalo vs. Ball State",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYCxxMsvzGKgji_ju9C17ddS8mIoyojYzcJriRhU08nmk7zeYgKULtdYjmp0c"
-        }
-      ]
-    },
-    {
-      "query": "rangers vs flames",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T23:40:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/news/new-york-rangers-calgary-flames-game-preview-november-11-2026",
-        "https://sports.yahoo.com/articles/rangers-vs-flames-prediction-picks-164304814.html",
-        "https://flamesnation.ca/news/calgary-flames-new-york-rangers-preview-saddledome-lines-2026"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/news/new-york-rangers-calgary-flames-game-preview-november-11-2026",
-          "title": "Rangers at Flames projected lineups",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/rangers-vs-flames-prediction-picks-164304814.html",
-          "title": "Rangers vs Flames Prediction, Picks, NHL Odds for Wednedsay, November 11",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5yLfrmYewUFexRbKt9U91h3V8rIL10WFYV-toEPnfgGItI13uezrjLZJuZ4s"
-        },
-        {
-          "url": "https://flamesnation.ca/news/calgary-flames-new-york-rangers-preview-saddledome-lines-2026",
-          "title": "Flames Game Day 19: One last ‘Dome visit for the New York Rangers (6:30pm ABT, Amazon Prime)",
-          "publisher": "Flames Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS10hPFmliS5o45Nic5sjVQklhDa8c5Zz09R-RqpkaDELqMMUUEnzKpZQTlGGo"
-        }
-      ]
-    },
-    {
-      "query": "bob woodruff",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T23:40:00Z",
-      "related_news_urls": [
-        "https://www.rollingstone.com/music/music-news/bruce-springsteen-western-stars-public-concert-1235655108/",
-        "https://www.usatoday.com/story/entertainment/celebrities/2026/11/10/stand-up-for-heroes-jon-stewart-bruce-springsteen/92706707007/",
-        "https://abcnews.com/video/138007084/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIlxiDamcCsYIMb6xLfScvhKOIXzSjUXnEuTGqOskmTZhTxbqKDnayMv4ukRE",
-      "image_credit": "Rolling Stone",
-      "news": [
-        {
-          "url": "https://www.rollingstone.com/music/music-news/bruce-springsteen-western-stars-public-concert-1235655108/",
-          "title": "See Bruce Springsteen Finally Play ‘Western Stars’ Songs in Public",
-          "publisher": "Rolling Stone",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIlxiDamcCsYIMb6xLfScvhKOIXzSjUXnEuTGqOskmTZhTxbqKDnayMv4ukRE"
-        },
-        {
-          "url": "https://www.usatoday.com/story/entertainment/celebrities/2026/11/10/stand-up-for-heroes-jon-stewart-bruce-springsteen/92706707007/",
-          "title": "Jon Stewart skewers liberals, conservatives at Stand Up for Heroes event",
+          "url": "https://www.usatoday.com/story/sports/high-school/football/2026/11/10/ryan-seacrest-dunwoody-georgia-high-school-football-first-stadium/92630959007/",
+          "title": "How Ryan Seacrest is giving his old high school football team something it never had",
           "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3iD-jUpYXFLlf836LJyTJbVKrYLn71sRuCQyUNuhl-kFsuo-zKOib6L4EB60"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRtErz5xuJGDOMGKxQ-CZkLpIya1GjviEzlzytqAdD2ENbsGgeqyFqi-iv2RA"
         },
         {
-          "url": "https://abcnews.com/video/138007084/",
-          "title": "Video Inspirational moments from 'Stand Up for Heroes'",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "url": "https://www.wsbradio.com/news/local/school-board-advances-27-million-plan-renovate-stadium-named-after-ryan-seacrest/PDSMYEQJ7NGUTIS4F3HRTORQZ4/",
+          "title": "School board advances $2.7 million plan to renovate stadium named after Ryan Seacrest",
+          "publisher": "95.5 WSB",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzvbdZuejcmCxbgCZWh5JLMLnhZvpnPTgPFcXYg1Qk4sxJNU-Gjc7QSfLRUsg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFTSovmtKBo9OYDVJmHe1lIMHf3XqtvPw4bQUAPhgIkRZ9KDIejjZXRa8Q_Uc"
+        },
+        {
+          "url": "https://roughdraftatlanta.com/2026/11/10/dekalb-school-board-approves-seacrest-stadium/",
+          "title": "DeKalb school board green lights Dunwoody stadium expansion",
+          "publisher": "Reporter Newspapers",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMinTf_YrxtH2ba-scj195I4b4mezYXDooKv90N6CiheLcnr7_mxAGqciA5hU"
         }
       ]
     },
     {
-      "query": "sacramento st vs central mi",
+      "query": "tampa bay lightning",
       "approx_searches": "500+",
-      "published_at": "2026-11-11T23:40:00Z",
+      "published_at": "2026-11-12T00:30:00Z",
       "related_news_urls": [
-        "https://www.abridged.org/news/sac-state-football-adjusts-to-the-big-time-wednesday-night-games-and-all/",
-        "https://www.cbssports.com/betting/news/central-michigan-sacramento-state-prediction-odds-time-2026-week-11-college-football-wednesday-maction-picks/",
-        "https://sports.yahoo.com/videos/central-michigan-ready-steamroll-sacramento-184521671.html"
+        "https://www.audacy.com/wgr550/sports/sabres/let-the-games-begin",
+        "https://www.nhl.com/video/pepsi-primetime-preview-lightning-at-sabres-6408256354112",
+        "https://www.foxnews.com/outkick/tampa-bay-lightning-visit-buffalo-sabres-goalies-struggling-stop-pucks-season"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZOD5yciowL3QzGOsTjga1exeIVcmGov42-s1oWeJCW904lxd1heRMRZAeVoY",
-      "image_credit": "Abridged – PBS KVIE",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdcnWiZWAOMByZnvjZiHSoCFDZp8AT6suNE9kVkat_uryS2I_nWGm0-vpfGps",
+      "image_credit": "Audacy",
       "news": [
         {
-          "url": "https://www.abridged.org/news/sac-state-football-adjusts-to-the-big-time-wednesday-night-games-and-all/",
-          "title": "Sac State football adjusts to the big time, Wednesday night games and all",
-          "publisher": "Abridged – PBS KVIE",
+          "url": "https://www.audacy.com/wgr550/sports/sabres/let-the-games-begin",
+          "title": "Let the games begin",
+          "publisher": "Audacy",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZOD5yciowL3QzGOsTjga1exeIVcmGov42-s1oWeJCW904lxd1heRMRZAeVoY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdcnWiZWAOMByZnvjZiHSoCFDZp8AT6suNE9kVkat_uryS2I_nWGm0-vpfGps"
         },
         {
-          "url": "https://www.cbssports.com/betting/news/central-michigan-sacramento-state-prediction-odds-time-2026-week-11-college-football-wednesday-maction-picks/",
-          "title": "Central Michigan vs. Sacramento State prediction, odds, time: Week 11 MACtion picks from proven model",
-          "publisher": "CBS Sports",
+          "url": "https://www.nhl.com/video/pepsi-primetime-preview-lightning-at-sabres-6408256354112",
+          "title": "Pepsi Primetime Preview: Lightning at Sabres",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStStxt9Rf-N8iOEAhRED-YdDHa_1mo3uw08iwd6Rb4veyVExFTbrztChx98iI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLVFidjujGba9oY8GwiBMoi4msxWVYbBpCbmxoxA4Br93SZEEzZb-vXGFkTeY"
         },
         {
-          "url": "https://sports.yahoo.com/videos/central-michigan-ready-steamroll-sacramento-184521671.html",
-          "title": "Central Michigan Is Ready to Steamroll Sacramento State in a Brutal Midweek MACtion Clash",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.foxnews.com/outkick/tampa-bay-lightning-visit-buffalo-sabres-goalies-struggling-stop-pucks-season",
+          "title": "Tampa Bay Lightning visit Buffalo Sabres with both goalies struggling to stop pucks this season",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_7NtMuBRVfMCajM-Pcb6LdaOd7tMNwLQHDu-86j4lGQg3neWvzCTYrgMZB6A"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUhSNqmqdFyKQZoPI83waiqvau_FXMT4fk3UND0bsDaprPX7J1Bjncn5ys9gA"
         }
       ]
     },
     {
-      "query": "umass vs toledo",
+      "query": "ja'kobe walter",
       "approx_searches": "500+",
-      "published_at": "2026-11-11T23:40:00Z",
+      "published_at": "2026-11-12T00:30:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/betting/news/toledo-vs-umass-odds-picks-prediction-start-time-wednesday-college-football-betting-preview-for-nov-11/",
-        "https://www.toledoblade.com/sports/ut/2026/11/08/2026-week-10-scouting-report-toledo-football-vs-massachusetts/stories/20261107015",
-        "https://www.sportsline.com/cfb/news/massachusetts-vs-toledo-odds-2026-college-football-picks-week-11-maction-predictions-from-proven-model/"
+        "https://www.cbssports.com/fantasy/basketball/news/raptors-jamison-battle-pops-for-20-off-bench-sunday/",
+        "https://raptorsrapture.com/it-s-time-for-the-raptors-to-give-ja-kobe-walter-s-starting-spot-to-jamison-battle",
+        "https://sports.yahoo.com/articles/raptors-bench-shooting-why-jamison-225550593.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1Wsla1_gBKAnghf33NqtXGJ-P82gtQBpShAVfpvyY2arFjk2R0lO5JZWvkKg",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCCv5waEbm0dMRWxPH9XRdajgSx2egpFFluC4GKmin6BjBTia0x2lbCt7MDJ4",
       "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://www.cbssports.com/betting/news/toledo-vs-umass-odds-picks-prediction-start-time-wednesday-college-football-betting-preview-for-nov-11/",
-          "title": "Toledo vs. UMass odds, picks, prediction, start time: Wednesday college football betting preview for Nov. 11",
+          "url": "https://www.cbssports.com/fantasy/basketball/news/raptors-jamison-battle-pops-for-20-off-bench-sunday/",
+          "title": "Raptors' Jamison Battle: Pops for 20 off bench Sunday",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1Wsla1_gBKAnghf33NqtXGJ-P82gtQBpShAVfpvyY2arFjk2R0lO5JZWvkKg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCCv5waEbm0dMRWxPH9XRdajgSx2egpFFluC4GKmin6BjBTia0x2lbCt7MDJ4"
         },
         {
-          "url": "https://www.toledoblade.com/sports/ut/2026/11/08/2026-week-10-scouting-report-toledo-football-vs-massachusetts/stories/20261107015",
-          "title": "2026 Week 10 scouting report: Toledo football vs. Massachusetts",
-          "publisher": "Toledo Blade",
+          "url": "https://raptorsrapture.com/it-s-time-for-the-raptors-to-give-ja-kobe-walter-s-starting-spot-to-jamison-battle",
+          "title": "It's time for the Raptors to give Ja'Kobe Walter's starting spot to Jamison Battle",
+          "publisher": "Raptors Rapture",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt8dEClJ1ReBSq3S4cBCIQfn1rWYS09lxeUM714HSoubGWiuh-RP3nkDRKTNA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhAZ86jH28j3UpHV-dOPdk0GfLzKQ_wYIzA9gInnk_4dKlU5eqAx44-nGLZHA"
         },
         {
-          "url": "https://www.sportsline.com/cfb/news/massachusetts-vs-toledo-odds-2026-college-football-picks-week-11-maction-predictions-from-proven-model/",
-          "title": "Massachusetts vs. Toledo odds: 2026 college football picks, Week 11 MACtion predictions from proven model",
-          "publisher": "SportsLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdNU-eDXfBhuEud8s0Q6oKB0YBu78clxgWeZohFUz4czMv5kvNBd0D0bQ55IM"
-        }
-      ]
-    },
-    {
-      "query": "isabelle huppert",
-      "approx_searches": "500+",
-      "published_at": "2026-11-11T23:40:00Z",
-      "related_news_urls": [
-        "https://people.com/inglourious-basterds-why-melanie-laurent-and-isabelle-huppert-were-fired-by-quentin-tarantino-12246881",
-        "https://www.imdb.com/news/ni66098225/?ref_=nwc_art_perm",
-        "https://www.yardbarker.com/entertainment/articles/pamela_anderson_set_for_lifetime_achievement_award_previously_won_by_angelina_jolie/s1_17463_44519695"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHiR-nqQiyJ1HHiBk6wsGFQW_dzs-r431XdGOvkIDrE5mnztiWSVJsQ1g4zdI",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/inglourious-basterds-why-melanie-laurent-and-isabelle-huppert-were-fired-by-quentin-tarantino-12246881",
-          "title": "Quentin Tarantino Reveals Why He Originally Fired Mélanie Laurent and Isabelle Huppert from Inglourious Basterds",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHiR-nqQiyJ1HHiBk6wsGFQW_dzs-r431XdGOvkIDrE5mnztiWSVJsQ1g4zdI"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66098225/?ref_=nwc_art_perm",
-          "title": "Golshifteh Farahani, Renate Reinsve and Alicia Vikander Lead Torino’s Female Talent Charge",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRiufteCFgnvxJShMj_sQedcVY66A9YTkZqVjo3WPI0ctVQzxBVMVHRZ5gXaSM"
-        },
-        {
-          "url": "https://www.yardbarker.com/entertainment/articles/pamela_anderson_set_for_lifetime_achievement_award_previously_won_by_angelina_jolie/s1_17463_44519695",
-          "title": "Pamela Anderson set for lifetime achievement award previously won by Angelina Jolie",
-          "publisher": "Yardbarker",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqh5Q1Sr1V1UTYJ1FCF_D7Pq3bu9yZaMbcv9bSKB0ZYnXL0sLi0nNLk485Xbg"
-        }
-      ]
-    },
-    {
-      "query": "normandy",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T23:40:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/travel/2026/nov/10/immersive-learning-french-in-rouen-normandy",
-        "https://westplainsdailyquill.net/2026/11/11/a-humbling-place-west-plains-veteran-connects-with-family-history-in-normandy/",
-        "https://www.theglobeandmail.com/life/style/travel/article-poutine-in-normandy-france/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrZgWuECjVgIvPXy7FjW43tqRRaCwAA6-6ZvctVdUYPnTKCKYk372T3h-Lj4c",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/travel/2026/nov/10/immersive-learning-french-in-rouen-normandy",
-          "title": "Walk the talk: a week learning French with a personal prof in Normandy",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrZgWuECjVgIvPXy7FjW43tqRRaCwAA6-6ZvctVdUYPnTKCKYk372T3h-Lj4c"
-        },
-        {
-          "url": "https://westplainsdailyquill.net/2026/11/11/a-humbling-place-west-plains-veteran-connects-with-family-history-in-normandy/",
-          "title": "‘A humbling place’: West Plains veteran connects with family history in Normandy",
-          "publisher": "West Plains Daily Quill",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAl8Tt5wA3GXTGYRy8WrQKYUKgAV_9s63_gdWIZ4WwtV3wYvmw3zL4i-HffKs"
-        },
-        {
-          "url": "https://www.theglobeandmail.com/life/style/travel/article-poutine-in-normandy-france/",
-          "title": "Poutine in Normandy, France? Discover the delicious mash-up of two countries’ cuisines",
-          "publisher": "The Globe and Mail",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ45_tUSgvsRVtUSy6jeoAUNE4vaxEGHtp6CQSbL2H8DGO4IWK-CZ3CVGIHeX0"
-        }
-      ]
-    },
-    {
-      "query": "reasons for falling us gas prices",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T23:40:00Z",
-      "related_news_urls": [
-        "https://www.npr.org/2026/11/11/nx-s1-6037588/gasoline-price-below-4-dollars-gallon",
-        "https://www.marketplace.org/story/2026/11/10/oil-gas-and-diesel-prices-are-declining-for-different-reasons",
-        "https://www.wwnytv.com/2026/11/10/im-so-excited-local-drivers-react-gas-falls-below-4-gallon/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7a0Wl-hcW94XbWj9mcCjjCn4OHRRgVWVsKxtnp5LCWqinWOQl1Qp1UkOBwf8",
-      "image_credit": "NPR",
-      "news": [
-        {
-          "url": "https://www.npr.org/2026/11/11/nx-s1-6037588/gasoline-price-below-4-dollars-gallon",
-          "title": "Why is gasoline suddenly under $4 a gallon?",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7a0Wl-hcW94XbWj9mcCjjCn4OHRRgVWVsKxtnp5LCWqinWOQl1Qp1UkOBwf8"
-        },
-        {
-          "url": "https://www.marketplace.org/story/2026/11/10/oil-gas-and-diesel-prices-are-declining-for-different-reasons",
-          "title": "Oil, gas, and diesel prices are declining — but not all for the same reason",
-          "publisher": "Marketplace.org",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEQZwJSJW7N7USX1Iew9RR8KTvkbsSVUT3kUWt921U3SG8SnM9rFs4UmGHMdk"
-        },
-        {
-          "url": "https://www.wwnytv.com/2026/11/10/im-so-excited-local-drivers-react-gas-falls-below-4-gallon/",
-          "title": "‘I’m so excited’: Local drivers react as gas falls below $4 a gallon",
-          "publisher": "WWNY",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQphACfXo4IPQcn0zIMDL3kMknFv87oCV9BDAeBI06fzjed16jia-mZ1VMTPjc"
-        }
-      ]
-    },
-    {
-      "query": "maria flores garcia ice detention",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T23:40:00Z",
-      "related_news_urls": [
-        "https://www.washingtonpost.com/dc-md-va/2026/11/11/ice-detains-maryland-college-student-who-was-her-high-schools-valedictorian/",
-        "https://www.wusa9.com/article/news/dmv-immigration/university-of-maryland-student-detained-by-ice-speaks-wusa9/65-6319667f-fca9-4f39-967e-cc902ad272fc",
-        "https://www.wbaltv.com/article/umd-student-held-after-immigration-check-in-baltimore/74391502"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSN0vWmFy8cDC9Xj6icHqjXU9XyqeDiZSVndpc4V3Nkrb3Dvt50BV6TbFVIGIk",
-      "image_credit": "The Washington Post",
-      "news": [
-        {
-          "url": "https://www.washingtonpost.com/dc-md-va/2026/11/11/ice-detains-maryland-college-student-who-was-her-high-schools-valedictorian/",
-          "title": "She gave a valedictorian speech in the spring. Now, she could be deported.",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSN0vWmFy8cDC9Xj6icHqjXU9XyqeDiZSVndpc4V3Nkrb3Dvt50BV6TbFVIGIk"
-        },
-        {
-          "url": "https://www.wusa9.com/article/news/dmv-immigration/university-of-maryland-student-detained-by-ice-speaks-wusa9/65-6319667f-fca9-4f39-967e-cc902ad272fc",
-          "title": "'Nobody deserves to be here' | University of Maryland student detained by ICE speaks exclusively with WUSA9",
-          "publisher": "WUSA9",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTX3IGnX6Rqsx8kL5ioRjDHUxUEukHj0v6o6Ys7R1onnIp0kO3_xOKvReQoNp8"
-        },
-        {
-          "url": "https://www.wbaltv.com/article/umd-student-held-after-immigration-check-in-baltimore/74391502",
-          "title": "Maryland student held with mother after immigration check-in",
-          "publisher": "WBAL-TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqVZPOLe5ShSRXQ0ai5B1CdmIBcTcC7MEAr55oLyG_Cj2XqZYnQqhcsOdYdco"
-        }
-      ]
-    },
-    {
-      "query": "rory mcilroy",
-      "approx_searches": "200+",
-      "published_at": "2026-11-11T23:30:00Z",
-      "related_news_urls": [
-        "https://golf.com/news/rory-mcilroy-jabs-bryson-dechambeau-pro-return/",
-        "https://www.espn.com/golf/story/_/id/50442176/rory-mcilroy-bryson-dechambeau-bring-eyeballs-dp-world-tour",
-        "https://sports.yahoo.com/articles/paul-mcginley-warns-bryson-dechambeau-140000552.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwNEhpS1ESIV0_H_Zw2c31NIQweai3UrszI2vYUz0Xuk02CumbjdjPiiqeCdI",
-      "image_credit": "GOLF.com",
-      "news": [
-        {
-          "url": "https://golf.com/news/rory-mcilroy-jabs-bryson-dechambeau-pro-return/",
-          "title": "‘Nor would I ever want to be’: Rory McIlroy jabs Bryson DeChambeau over pro return",
-          "publisher": "GOLF.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwNEhpS1ESIV0_H_Zw2c31NIQweai3UrszI2vYUz0Xuk02CumbjdjPiiqeCdI"
-        },
-        {
-          "url": "https://www.espn.com/golf/story/_/id/50442176/rory-mcilroy-bryson-dechambeau-bring-eyeballs-dp-world-tour",
-          "title": "Rory McIlroy says Bryson DeChambeau would 'bring eyeballs' to DP World Tour",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_Y6GqAYatBWug4Cb_CBylUIsHdg_E3Ybm-kODSsUs4Gl1-Aj-b9lPqM_PXFM"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/paul-mcginley-warns-bryson-dechambeau-140000552.html",
-          "title": "Paul McGinley warns Bryson DeChambeau about playing YouTube full-time: ‘It would be a dumb move’",
+          "url": "https://sports.yahoo.com/articles/raptors-bench-shooting-why-jamison-225550593.html",
+          "title": "Raptors Bench Shooting: Why Jamison Battle Deserves a Bigger Role",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqmyFDqEUfmXc4QN7UULGRD8_BNBiGSCL5N2fios3QD-WeE8-Vu9-SMZQ0-XU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrcCu9FAj7hjHoSAWxFHDOS3bFq1FKb6NBlLgotvq5HeYDRGOzvJGOH9-SfRY"
+        }
+      ]
+    },
+    {
+      "query": "st john's basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T00:30:00Z",
+      "related_news_urls": [
+        "https://stormthepaint.com/st-johns-basketball-second-unit-will-get-another-opportunity-to-shine-against-colgate",
+        "https://sports.yahoo.com/articles/one-bold-prediction-st-johns-151346173.html",
+        "https://www.foxsports.com/articles/cbk/colgate-visits-no-13-st-johns-following-yessoufous-23point-game"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsO9Wq-F0d86XXeptyv3dRnW0ZI-splH4yh6UUrpik1jz7HVBo-3ASfhl_Sk8",
+      "image_credit": "Storm The Paint",
+      "news": [
+        {
+          "url": "https://stormthepaint.com/st-johns-basketball-second-unit-will-get-another-opportunity-to-shine-against-colgate",
+          "title": "St. John's basketball second unit will get another opportunity to shine against Colgate",
+          "publisher": "Storm The Paint",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsO9Wq-F0d86XXeptyv3dRnW0ZI-splH4yh6UUrpik1jz7HVBo-3ASfhl_Sk8"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/one-bold-prediction-st-johns-151346173.html",
+          "title": "One Bold Prediction for St. John's Red Storm vs. Colgate",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeNmybyY9HlLfNxq7R1sCQAjByl1om64AQnjbTdy3ZUrKgQFdUn8UHGin-8Ic"
+        },
+        {
+          "url": "https://www.foxsports.com/articles/cbk/colgate-visits-no-13-st-johns-following-yessoufous-23point-game",
+          "title": "Colgate visits No. 13 St. John's following Yessoufou's 23-point game",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4s4BZOkTNXN3YIPa9D2mGE41CMQSYHPibv39-9pCCL84ruNU6IK4Wzep74lk"
+        }
+      ]
+    },
+    {
+      "query": "sc state vs notre dame",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T00:30:00Z",
+      "related_news_urls": [
+        "https://irishsportsdaily.com/s/28541/game-thread-south-carolina-state-vs-notre-dame",
+        "https://www.bleachernation.com/picks/2026/11/11/acc-basketball-predictions-computer-picks-and-best-bets-november-12/",
+        "https://ats.io/matchup/college-basketball/south-carolina-st-bulldogs-vs-notre-dame-fighting-irish-prediction-11-11-2026/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmBJbNLZOLc8dC747_mJf1g16gzibr5L33ac0aMKvcqLKt8Mffi8Ks0nv_AQg",
+      "image_credit": "Irish Sports Daily",
+      "news": [
+        {
+          "url": "https://irishsportsdaily.com/s/28541/game-thread-south-carolina-state-vs-notre-dame",
+          "title": "Game Thread | South Carolina State vs. Notre Dame",
+          "publisher": "Irish Sports Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmBJbNLZOLc8dC747_mJf1g16gzibr5L33ac0aMKvcqLKt8Mffi8Ks0nv_AQg"
+        },
+        {
+          "url": "https://www.bleachernation.com/picks/2026/11/11/acc-basketball-predictions-computer-picks-and-best-bets-november-12/",
+          "title": "ACC Basketball Predictions, Computer Picks and Best Bets | November 12",
+          "publisher": "Bleacher Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-qnK5nzJ9JndAkhlaK1L2ht2bWmKhXoIQ7SYduWBsHE9s_XxD84z4DeD5NdY"
+        },
+        {
+          "url": "https://ats.io/matchup/college-basketball/south-carolina-st-bulldogs-vs-notre-dame-fighting-irish-prediction-11-11-2026/",
+          "title": "South Carolina St vs Notre Dame Prediction - Nov. 11",
+          "publisher": "ATS.io",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXhRCC0M-akonwbWoe3WqGgpzsEH4tb1fWeSbS7A5r6yOuQm8fzDmCVCHhGF0"
+        }
+      ]
+    },
+    {
+      "query": "knicks vs cavs",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T00:30:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/nba/news/best-kalshi-promo-code-cbssports55-score-55-bonus-cavaliers-knicks-rockets-warriors-nba-politics/",
+        "https://www.usatoday.com/story/prediction-markets/2026/11/11/kalshi-promo-code-dispatch-11-11/92708698007/",
+        "https://www.al.com/betting/2026/11/kalshi-promo-code-al55-get-a-55-bonus-for-nba-tonight-maction-football.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnrfzmZeWglIoRznqZnGDqP0LJKBcEunIHzysQ9EYeI8BAqcU6PX5jiZaY_pI",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/nba/news/best-kalshi-promo-code-cbssports55-score-55-bonus-cavaliers-knicks-rockets-warriors-nba-politics/",
+          "title": "Best Kalshi promo code CBSSPORTS55: Score $55 bonus for Cavaliers-Knicks, Rockets-Warriors, NBA, politics",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnrfzmZeWglIoRznqZnGDqP0LJKBcEunIHzysQ9EYeI8BAqcU6PX5jiZaY_pI"
+        },
+        {
+          "url": "https://www.usatoday.com/story/prediction-markets/2026/11/11/kalshi-promo-code-dispatch-11-11/92708698007/",
+          "title": "Kalshi promo code DISPATCH | $25 bonus for NFL Week 10, NCAAF, NBA & more",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTh2pTwc1Z0XQRXuEScushFSfeRkao-N3p7_Lnk-AMobhq3rC9lHq0Fb3NftS8"
+        },
+        {
+          "url": "https://www.al.com/betting/2026/11/kalshi-promo-code-al55-get-a-55-bonus-for-nba-tonight-maction-football.html",
+          "title": "Kalshi Promo Code AL55: Get a $55 bonus for NBA tonight & MACtion football",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2k4MEYZwJJEkcw5_SkjkfMTUeREj5K4E0emeOSZ5JVQfUXq9b4eI2QRpR4Ow"
+        }
+      ]
+    },
+    {
+      "query": "james harden",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T00:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/fantasy/basketball/story/_/id/50443924/fantasy-basketball-trends-nba-2026-2027",
+        "https://www.cleveland.com/cavs/2026/11/cavs-have-a-james-harden-problem-with-no-easy-fix-chris-fedor.html",
+        "https://sports.yahoo.com/articles/cavaliers-james-harden-shooting-career-231622362.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5Jd195zlax2BZTFoNmh3HMjroXQNtNF4rMOrw4RiH1rpIA-8ybiSeNSIroyw",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/fantasy/basketball/story/_/id/50443924/fantasy-basketball-trends-nba-2026-2027",
+          "title": "Karabell's notebook: Harden's declining role, Garland's TOs, a rookie to watch",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5Jd195zlax2BZTFoNmh3HMjroXQNtNF4rMOrw4RiH1rpIA-8ybiSeNSIroyw"
+        },
+        {
+          "url": "https://www.cleveland.com/cavs/2026/11/cavs-have-a-james-harden-problem-with-no-easy-fix-chris-fedor.html",
+          "title": "The Cavs have a James Harden problem with no easy fix: Chris Fedor",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShIh6unJ-qAaS8Iu_d069W_yfDaUg6NwMD15dX3xm1GLrhOc_dS7-M3r5nCsw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/cavaliers-james-harden-shooting-career-231622362.html",
+          "title": "Cavaliers' James Harden Shooting Career-Low 36.4% Through 11 Games of New Deal",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEswvzeX3YKxEkYeKY9OAKY_vGgjJe6HQIg3qLODhNqnyAkEUNsfqgitZc6BQ"
+        }
+      ]
+    },
+    {
+      "query": "saint peter's vs south carolina",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T00:20:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/south-carolina/article/south-carolina-gamecocks-basketball-st-peters-peacocks-preview-292557360/",
+        "https://www.sportsgambler.com/betting-tips/basketball/saint-peter-s-peacocks-vs-south-carolina-gamecocks-prediction-odds-2026-11-11/",
+        "https://www.on3.com/teams/south-carolina-gamecocks/news/three-burning-questions-ahead-of-south-carolinas-matchup-with-saint-peters/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI38ddZEO8LR47NlYuOeTuFw2Hgj0bJkk9AMiOe9d8SoyJmnyUVv-PnpnZfNw",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/south-carolina/article/south-carolina-gamecocks-basketball-st-peters-peacocks-preview-292557360/",
+          "title": "Countdown to tipoff: South Carolina vs. St. Peter's",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI38ddZEO8LR47NlYuOeTuFw2Hgj0bJkk9AMiOe9d8SoyJmnyUVv-PnpnZfNw"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/saint-peter-s-peacocks-vs-south-carolina-gamecocks-prediction-odds-2026-11-11/",
+          "title": "Saint Peter's vs South Carolina Prediction, Picks & Odds | 11 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-hYvvU8Fdyaub-QnNAgEZZ9H540kcmu5JWauguvOqcRhcDKqJwPmT09FP62Q"
+        },
+        {
+          "url": "https://www.on3.com/teams/south-carolina-gamecocks/news/three-burning-questions-ahead-of-south-carolinas-matchup-with-saint-peters/",
+          "title": "Three burning questions ahead of South Carolina's matchup with Saint Peter's",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtE5mgNJsWMVv_r_m1u1TARC8kntUbqkS80hvmwJ8HHaITOujvlQEmeBM1ge4"
+        }
+      ]
+    },
+    {
+      "query": "when does secret lives of mormon wives oc come out",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T00:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/09/arts/television/mormon-wives-orange-county-shows-to-watch.html",
+        "https://www.biography.com/movies-tv/a74325041/secret-lives-of-mormon-wives-orange-county-cast",
+        "https://uk.news.yahoo.com/jen-affleck-says-bigger-divide-170300591.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWoZOAyZ8mS-QK-D8f0VJWvlzbLXZX9_KYkdjbR_c4zE0lUNMjUrlCndYskwA",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/09/arts/television/mormon-wives-orange-county-shows-to-watch.html",
+          "title": "‘The Secret Lives of Mormon Wives: Orange County’ and 5 More Shows to Watch",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWoZOAyZ8mS-QK-D8f0VJWvlzbLXZX9_KYkdjbR_c4zE0lUNMjUrlCndYskwA"
+        },
+        {
+          "url": "https://www.biography.com/movies-tv/a74325041/secret-lives-of-mormon-wives-orange-county-cast",
+          "title": "‘The Secret Lives of Mormon Wives: Orange County’ Has a New Cast. But Not Everyone Is Actually Mormon.",
+          "publisher": "Biography: Historical and Celebrity Profiles",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbfrliwZ_tK-YGWOIWTtWfF0Zu_Tfu61jD7TqI32s6qmHSG_Y6HnVJaSPc5Pg"
+        },
+        {
+          "url": "https://uk.news.yahoo.com/jen-affleck-says-bigger-divide-170300591.html",
+          "title": "Jen Affleck Says There’s a ‘Bigger Divide’ Religiously Between “The” “Secret Lives of Mormon Wives: Orange County” Cast and OG MomTok (Exclusive)",
+          "publisher": "Yahoo News UK",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3oKXjo2m6qD9gBJ1OKvuo8lJ2z1jq_48cuO3ExnmDWb0JfWG4XUb4qA-zImw"
+        }
+      ]
+    },
+    {
+      "query": "evansville vs kentucky",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T00:20:00Z",
+      "related_news_urls": [
+        "https://www.aseaofblue.com/kentucky-womens-basketball/187639/kentucky-wbb-preview-evansville-invades-historic-memorial-coliseum",
+        "https://www.on3.com/teams/kentucky-wildcats/news/preview-no-12-kentucky-wbb-returns-home-for-matchup-with-evansville/",
+        "https://www.corsicanadailysun.com/sports/national_sports/kentucky-womens-basketball/image_f606e80d-2548-54f2-b049-0c131a0f4e0c.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTO1Cn3y4oyW0wcVD96xtYssygYAi-X-6r1nxdpPRd0hb1RjZeQO06R18Daz1w",
+      "image_credit": "A Sea Of Blue",
+      "news": [
+        {
+          "url": "https://www.aseaofblue.com/kentucky-womens-basketball/187639/kentucky-wbb-preview-evansville-invades-historic-memorial-coliseum",
+          "title": "Kentucky WBB preview: Evansville invades Historic Memorial Coliseum",
+          "publisher": "A Sea Of Blue",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTO1Cn3y4oyW0wcVD96xtYssygYAi-X-6r1nxdpPRd0hb1RjZeQO06R18Daz1w"
+        },
+        {
+          "url": "https://www.on3.com/teams/kentucky-wildcats/news/preview-no-12-kentucky-wbb-returns-home-for-matchup-with-evansville/",
+          "title": "PREVIEW: No. 12 Kentucky WBB returns home for matchup with Evansville",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYV12zqJO49U4QyKTL70TaJIeVBPI2j8-qrgc94nA8WkUxTvdynClAv0uIjBM"
+        },
+        {
+          "url": "https://www.corsicanadailysun.com/sports/national_sports/kentucky-womens-basketball/image_f606e80d-2548-54f2-b049-0c131a0f4e0c.html",
+          "title": "Kentucky Women's Basketball",
+          "publisher": "Corsicana Daily Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3AdBuL84I-rYBWQ90pY8_KsbooDlAdNv2a4gQrxENhOcAVHKc989K7VrrqWQ"
         }
       ]
     }
