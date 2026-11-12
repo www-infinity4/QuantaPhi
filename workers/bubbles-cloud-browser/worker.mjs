@@ -1,4 +1,5 @@
 import {browserTool} from '../bubbles-tools/browser.mjs';
+import {routeEyeCapture} from './eye-capture.mjs';
 import {processChatGPTJob,completeChatGPTMessage} from './chatgpt-bridge.mjs';
 import {authenticateBridge,runnerMessage} from './runner-bridge.mjs';
 import {serverAssist} from './server-assist.mjs';
@@ -24,6 +25,7 @@ export default {
  async fetch(request,env,ctx){
   const path=new URL(request.url).pathname;
   if(path===CHECK_PATH&&request.method==='GET')return browserCheckPage();
+  if(path==='/v1/eye/capture')return routeEyeCapture(request,env);
   if(path==='/health')return Response.json({ok:true,service:'bubbles-cloud-browser',serverConversation:'signed-server-v2',toolsBound:!!env.TOOLS,
    browserBound:!!env.BROWSER,ownerGate:!!env.BRAIN,consentBound:!!env.CONSENT,chatgptBridgeBound:!!env.BRIDGE_DB},
    {headers:{'Cache-Control':'no-store'}});
