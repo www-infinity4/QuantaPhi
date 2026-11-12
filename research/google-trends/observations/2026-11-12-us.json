@@ -3,340 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T03:01:41.528877Z",
+  "checked_at": "2026-11-12T03:31:18.750745Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "caleb wilson",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T02:40:00Z",
+      "query": "austin reaves",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-12T03:10:00Z",
       "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/gsw-starts-curry-podz-lendeborg-green-horford",
-        "https://chicago.suntimes.com/bulls/2026/11/11/bulls-rookie-caleb-wilson-answers-bell-sore-hip",
-        "https://sports.yahoo.com/articles/chicago-bulls-issue-injury-report-183842319.html"
+        "https://basketnews.com/news-259310-what-happened-to-austin-reaves-lakers-star-suffers-alarming-injury-vs-bucks.html",
+        "https://bleacherreport.com/articles/25532481-austin-reaves-injured-latest-updates-lakers-star-after-exiting-vs-bucks",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/austin-reaves-will-not-return-against-the-bucks"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2JO9HYM6HbnbhWiS1Ppdv8vEmRdd4yWB2eg6fl7JrlDk5xUzvVyOzVSNSLG0",
-      "image_credit": "NBC Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjI8PmLe2X6jqLly4TISCY9gz0FetI-s7QxKbhC6ZqAe6nIGpfLvqhhg4OG7U",
+      "image_credit": "BasketNews.com",
       "news": [
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/gsw-starts-curry-podz-lendeborg-green-horford",
-          "title": "GSW starts Curry, Podz, Lendeborg, Green, Horford",
-          "publisher": "NBC Sports",
+          "url": "https://basketnews.com/news-259310-what-happened-to-austin-reaves-lakers-star-suffers-alarming-injury-vs-bucks.html",
+          "title": "What happened to Austin Reaves? Lakers star suffers alarming injury vs Bucks",
+          "publisher": "BasketNews.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2JO9HYM6HbnbhWiS1Ppdv8vEmRdd4yWB2eg6fl7JrlDk5xUzvVyOzVSNSLG0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjI8PmLe2X6jqLly4TISCY9gz0FetI-s7QxKbhC6ZqAe6nIGpfLvqhhg4OG7U"
         },
         {
-          "url": "https://chicago.suntimes.com/bulls/2026/11/11/bulls-rookie-caleb-wilson-answers-bell-sore-hip",
-          "title": "Bulls rookie Caleb Wilson answers the bell after dealing with sore hip",
-          "publisher": "Chicago Sun-Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRR1vjdPR4lxM3peWnZjeJD5mw7p_s0I_HXz_ICe35fqrtH1nkZNa5wp7mYidY"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/chicago-bulls-issue-injury-report-183842319.html",
-          "title": "Chicago Bulls Issue Injury Report for San Antonio Spurs Game on Nov. 11",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFGLF71aaOXyTZQC6nUwhyDz04Aw-7xbJG0b1kAcrDr68HSyIdB4IWmFfK6aY"
-        }
-      ]
-    },
-    {
-      "query": "mikal bridges",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T02:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50383924/og-anunoby-throws-powerful-slam-vs-chicago-bulls",
-        "https://foxsportsradionewjersey.com/2026/11/10/og-anunobys-free-throw-attempts-climb-for-knicks-in-10th-season/",
-        "https://dailyknicks.com/new-york-knicks-mikal-bridges-cant-overshadow-og-anunoby-surprise-rut"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_GUvXUdjQjoRFTKrl5MYXM-LQKbcWS9caWqtg3ZLk3aToRk2Nbdmdqv9wmJA",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50383924/og-anunoby-throws-powerful-slam-vs-chicago-bulls",
-          "title": "OG Anunoby throws down powerful slam vs. Chicago Bulls",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_GUvXUdjQjoRFTKrl5MYXM-LQKbcWS9caWqtg3ZLk3aToRk2Nbdmdqv9wmJA"
-        },
-        {
-          "url": "https://foxsportsradionewjersey.com/2026/11/10/og-anunobys-free-throw-attempts-climb-for-knicks-in-10th-season/",
-          "title": "OG Anunoby’s Free-Throw Attempts Climb for Knicks in 10th Season",
-          "publisher": "FOX Sports Radio New Jersey",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPJwnCsKa4XtZH_Jz6_hTn_fbOJtqYKuN08cwaYeXlVX1LDlU_FckDbEi90wA"
-        },
-        {
-          "url": "https://dailyknicks.com/new-york-knicks-mikal-bridges-cant-overshadow-og-anunoby-surprise-rut",
-          "title": "Mikal Bridges can't overshadow OG Anunoby's surprise rut with Knicks",
-          "publisher": "Daily Knicks",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHY-vrD52-eBMx7-TGQm8qt-8D9D5sffL_IRRXqcpj_CRPqpZZwmhuBbqgYe8"
-        }
-      ]
-    },
-    {
-      "query": "evan mobley",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T02:40:00Z",
-      "related_news_urls": [
-        "https://bleacherreport.com/articles/25532295-kevin-garnett-explains-why-hes-so-disappointed-bam-adebayo-evan-mobley-paolo-banchero",
-        "https://sports.yahoo.com/articles/them-tload-money-see-still-173400734.html",
-        "https://www.talkbasket.net/227528-kevin-garnett-criticizes-modern-nba-training-methods"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjQPeVwA5f0Y7T5RTB_ZbuTbXXt5n1YPCk65Rww0aMh9L7hR6HLK1iQw0okbE",
-      "image_credit": "Bleacher Report",
-      "news": [
-        {
-          "url": "https://bleacherreport.com/articles/25532295-kevin-garnett-explains-why-hes-so-disappointed-bam-adebayo-evan-mobley-paolo-banchero",
-          "title": "Kevin Garnett Explains Why He's 'So Disappointed' in Bam Adebayo, Evan Mobley, Paolo Banchero",
+          "url": "https://bleacherreport.com/articles/25532481-austin-reaves-injured-latest-updates-lakers-star-after-exiting-vs-bucks",
+          "title": "Austin Reaves Injured, Latest Updates on Lakers Star After Exiting vs. Bucks",
           "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjQPeVwA5f0Y7T5RTB_ZbuTbXXt5n1YPCk65Rww0aMh9L7hR6HLK1iQw0okbE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSC2qU-0fEvEgoA147ntm8ikmg6sflLCm4HdKDPZ6aVrt1YTBRaxTMP_CUv5xY"
         },
         {
-          "url": "https://sports.yahoo.com/articles/them-tload-money-see-still-173400734.html",
-          "title": "\"Give them a s—tload of money and see if they still work as hard\" - Kevin Garnett exposes the lack of desire today's NBA players have",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTY7jf0VXpD4VY5409SgTNuJniHBeeH5fKTM8X6JTmLRR-E6P1agxqyrjm2ohQ"
-        },
-        {
-          "url": "https://www.talkbasket.net/227528-kevin-garnett-criticizes-modern-nba-training-methods",
-          "title": "Kevin Garnett criticizes modern NBA training methods",
-          "publisher": "TalkBasket.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwLUUr_68rYyUAqOew58c_B5zB79gIdgskZOZI-r8gq4TSC-jNUQAqzyRuzaA"
-        }
-      ]
-    },
-    {
-      "query": "josh giddey",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T02:40:00Z",
-      "related_news_urls": [
-        "https://www.si.com/nba/bulls/onsi/bulls-notes-huge-step-for-josh-giddey-noa-essengue-winning-over-his-new-hc-10",
-        "https://bulls.com/news/bulls-fall-short-in-final-minutes-to-sixers-127-121",
-        "https://www.nytimes.com/athletic/7767207/2026/11/09/bulls-lineup-changes-nic-claxton-norman-powell/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwTk7y07jtgDToZZ7rh-GfhmEnS-hTE7SEqi6k9eXcRUWk8vaAT1yrdQuC_zE",
-      "image_credit": "Sports Illustrated",
-      "news": [
-        {
-          "url": "https://www.si.com/nba/bulls/onsi/bulls-notes-huge-step-for-josh-giddey-noa-essengue-winning-over-his-new-hc-10",
-          "title": "Bulls Notes: Huge Step for Josh Giddey, Noa Essengue Winning Over His New HC? More",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwTk7y07jtgDToZZ7rh-GfhmEnS-hTE7SEqi6k9eXcRUWk8vaAT1yrdQuC_zE"
-        },
-        {
-          "url": "https://bulls.com/news/bulls-fall-short-in-final-minutes-to-sixers-127-121",
-          "title": "Bulls fall short in final minutes to Sixers 127-121",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTRhslqudTjLRyD9OG1RSQRzehBxjLKMFzA4lKXs98ZJohola7d9axZIGccSQ"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7767207/2026/11/09/bulls-lineup-changes-nic-claxton-norman-powell/",
-          "title": "The Bulls made lineup changes against the 76ers. We’ll see if they fix anything",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOb6a5TIJ62l9tmoZ9zK2dE0G8ZcGgqFqKNIURAIyEvtJkOU4EeA4z6TRGzRg"
-        }
-      ]
-    },
-    {
-      "query": "boston",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T02:40:00Z",
-      "related_news_urls": [
-        "https://www.wcvb.com/article/video-late-showers-thursday-weather-alert-friday/74401351",
-        "https://www.yahoo.com/news/weather-news/articles/messy-storm-coming-massachusetts-weekend-011023794.html",
-        "https://www.bostonglobe.com/2026/11/05/metro/forecast-rain-maps-new-england-boston-weather/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYdBdm6R1Alm30ym9mICQ5fJCzOlioDg1RhuT1PsYxIqWzU6wsizT0oJgVBuU",
-      "image_credit": "WCVB",
-      "news": [
-        {
-          "url": "https://www.wcvb.com/article/video-late-showers-thursday-weather-alert-friday/74401351",
-          "title": "Video: Late showers Thursday, Weather Alert Friday",
-          "publisher": "WCVB",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYdBdm6R1Alm30ym9mICQ5fJCzOlioDg1RhuT1PsYxIqWzU6wsizT0oJgVBuU"
-        },
-        {
-          "url": "https://www.yahoo.com/news/weather-news/articles/messy-storm-coming-massachusetts-weekend-011023794.html",
-          "title": "A messy storm is coming to Massachusetts this weekend — here's what to expect",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaQyOxtGw5GKLw8E7J1SyF-0mD2SN80CBImCTm3GEHeM4KDz0nGs5dxxcFYj8"
-        },
-        {
-          "url": "https://www.bostonglobe.com/2026/11/05/metro/forecast-rain-maps-new-england-boston-weather/",
-          "title": "Storms dump up to 7 inches of rain across Mass. and R.I. Here are the latest totals.",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjSheSWclWiTqdzJPdZoRb9F8tQtSj2N1k9EKmaLZ8TmG7i4Q6K6kPd33Wsp8"
-        }
-      ]
-    },
-    {
-      "query": "john hamm",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T02:40:00Z",
-      "related_news_urls": [
-        "https://www.gofugyourself.com/your-afternoon-h-a-mm-john-hamm/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSy80KZyNyud8fJuyoqNApJClyMRaOunqHb3AUdjqJfSr2XfAmRwxHj1AHpmY8",
-      "image_credit": "Go Fug Yourself",
-      "news": [
-        {
-          "url": "https://www.gofugyourself.com/your-afternoon-h-a-mm-john-hamm/",
-          "title": "Your Afternoon H(a)mm: Jon Hamm",
-          "publisher": "Go Fug Yourself",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSy80KZyNyud8fJuyoqNApJClyMRaOunqHb3AUdjqJfSr2XfAmRwxHj1AHpmY8"
-        }
-      ]
-    },
-    {
-      "query": "christina applegate",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T02:30:00Z",
-      "related_news_urls": [
-        "https://www.latimes.com/entertainment-arts/story/2026-11-11/christina-applegate-thinks-she-may-have-been-poisoned-by-implant",
-        "https://www.usatoday.com/story/life/health-wellness/2026/11/11/christina-applegate-breast-implant-safety/92723248007/",
-        "https://people.com/david-faustino-gives-an-update-on-christina-applegate-after-revealing-her-ms-misdiagnosis-exclusive-12246463"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRlKm0QuoTurLkCD8js78T8BzBrfI-GLCQK0cdsQItHLtGayiTs5wdrR_Ljwg0",
-      "image_credit": "Los Angeles Times",
-      "news": [
-        {
-          "url": "https://www.latimes.com/entertainment-arts/story/2026-11-11/christina-applegate-thinks-she-may-have-been-poisoned-by-implant",
-          "title": "Christina Applegate fears that ‘poisoning’ may be behind her misdiagnosis of MS",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRlKm0QuoTurLkCD8js78T8BzBrfI-GLCQK0cdsQItHLtGayiTs5wdrR_Ljwg0"
-        },
-        {
-          "url": "https://www.usatoday.com/story/life/health-wellness/2026/11/11/christina-applegate-breast-implant-safety/92723248007/",
-          "title": "Christina Applegate breast implant comments raise questions on safety",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmast4WexHkohJGv9kaxRGqLWNjO6Ds33sT9hzz-MVbHIfUTrC6bVl_Huh8MI"
-        },
-        {
-          "url": "https://people.com/david-faustino-gives-an-update-on-christina-applegate-after-revealing-her-ms-misdiagnosis-exclusive-12246463",
-          "title": "David Faustino Says Former Costar Christina Applegate Is a ‘Strong Soul’ Following Her MS Misdiagnosis (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqwPG7arJx9g5DecD0lt-pz9VwqxVvuR-FKmaxP0oLI-5giJ5spjyuy37nvDA"
-        }
-      ]
-    },
-    {
-      "query": "celtics raptors",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T02:30:00Z",
-      "related_news_urls": [
-        "https://www.celticsblog.com/boston-celtics-news/150049/celtics-raptors-starting-lineup-luka-garza-baylor-scheierman",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/bos-starts-white-scheierman-tatum-garza-queta",
-        "https://www.rotowire.com/basketball/headlines/luka-garza-news-starting-versus-raptors-538658"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTV0jEynuXWbpeSpy9EyElXsEwOatfI1UT-pyTlHs09IV28swhAODiAFuWaufE",
-      "image_credit": "CelticsBlog",
-      "news": [
-        {
-          "url": "https://www.celticsblog.com/boston-celtics-news/150049/celtics-raptors-starting-lineup-luka-garza-baylor-scheierman",
-          "title": "Celtics announce unusual starting lineup vs. Raptors",
-          "publisher": "CelticsBlog",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTV0jEynuXWbpeSpy9EyElXsEwOatfI1UT-pyTlHs09IV28swhAODiAFuWaufE"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/bos-starts-white-scheierman-tatum-garza-queta",
-          "title": "BOS starts White, Scheierman, Tatum, Garza, Queta",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/austin-reaves-will-not-return-against-the-bucks",
+          "title": "Austin Reaves will not return against the Bucks",
           "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsgrgrHgaydNetjxBLcJdwrsa7jWvaFUmMiXFI1-4Gybq-s3q3G5cnI53B9-U"
-        },
-        {
-          "url": "https://www.rotowire.com/basketball/headlines/luka-garza-news-starting-versus-raptors-538658",
-          "title": "Luka Garza News: Starting versus Raptors",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAD9ia7peVCZMIT6DvBqo9C_hBQ-KWIa1pNfCWL3-1pDs-kLGidE9M1VoiMVg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG1mhul8AITM1mgIC1AmE6tztuZ4oCz6SsIkS3SbjT-IoUqSeYA29A6k5xQoE"
         }
       ]
     },
     {
-      "query": "knicks standings",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T02:30:00Z",
+      "query": "ucla basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T03:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50443607/nba-power-rankings-30-teams-best-newcomer",
-        "https://www.nba.com/news/power-rankings-2026-27-week-4",
-        "https://www.nytimes.com/athletic/7767779/2026/11/09/nba-power-rankings-spurs-lakers-timberwolves-warriors/"
+        "https://www.espn.com/womens-college-basketball/story/_/id/50457265/nation-williams-commits-ucla-bruins-women-basketball",
+        "https://sports.yahoo.com/articles/ucla-lands-five-star-recruit-021101334.html",
+        "https://hawkeyeswire.usatoday.com/story/sports/college/hawkeyes/womens-basketball/2026/11/11/iowa-womens-basketball-nation-williams-commitment-date/92715678007/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRr7xx4ktRTGbkRyWZqr9fmGSoaAhEAGnGOUSxMdRD2xUei4e6iSiOY9P1GB3o",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrySDRkFmbYv8NKdD7oZeyVOtuTisRD9t1zehssmfePCDtWrWazjyBYDSNqco",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nba/story/_/id/50443607/nba-power-rankings-30-teams-best-newcomer",
-          "title": "NBA Power Rankings: 1-30 poll, plus the best newcomer on all 30 teams",
+          "url": "https://www.espn.com/womens-college-basketball/story/_/id/50457265/nation-williams-commits-ucla-bruins-women-basketball",
+          "title": "Nation Williams, No. 11 in 2027 recruiting class, commits to UCLA",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRr7xx4ktRTGbkRyWZqr9fmGSoaAhEAGnGOUSxMdRD2xUei4e6iSiOY9P1GB3o"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrySDRkFmbYv8NKdD7oZeyVOtuTisRD9t1zehssmfePCDtWrWazjyBYDSNqco"
         },
         {
-          "url": "https://www.nba.com/news/power-rankings-2026-27-week-4",
-          "title": "Power Rankings, Week 4: Spurs, Thunder, Wolves take over top 3 spots",
-          "publisher": "NBA.com",
+          "url": "https://sports.yahoo.com/articles/ucla-lands-five-star-recruit-021101334.html",
+          "title": "UCLA lands five-star recruit, daughter of WNBA legend",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRD5Aam9zg_LYOKM7gW3lbyl2wwKKbVPAPQoALl2Jd1QEC1poRrfkDS_AqbOlc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWZJ-YTy2sBN023jrwCRuYi7botLroP-UZ8C_aBJ9VUOhhvTvutSWCx2W2Acs"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7767779/2026/11/09/nba-power-rankings-spurs-lakers-timberwolves-warriors/",
-          "title": "NBA Power Rankings: Spurs soar to No. 1; Lakers, Timberwolves join contenders tier - The Athletic",
-          "publisher": "The New York Times",
+          "url": "https://hawkeyeswire.usatoday.com/story/sports/college/hawkeyes/womens-basketball/2026/11/11/iowa-womens-basketball-nation-williams-commitment-date/92715678007/",
+          "title": "5-star Iowa women's basketball target Nation Williams to make commitment decision Wednesday",
+          "publisher": "Hawkeyes Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLPRrTy1aUTikoSCliVRrxpZP5j1dN2juO5O268cqGKfAP0P7lHGsieq_iMPI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtfxrffPOOnZlWdKV-dXgp6r2FcoJwUp2AZXMGq4P7wlrZoe4wCa16yj_d6Qk"
         }
       ]
     },
     {
-      "query": "mandalorian",
+      "query": "amen thompson",
       "approx_searches": "500+",
-      "published_at": "2026-11-12T02:20:00Z",
+      "published_at": "2026-11-12T03:10:00Z",
       "related_news_urls": [
-        "https://thewaltdisneycompany.com/news/disney-plus-3d-viewing-meta-quest-vr-glasses/",
-        "https://www.meta.com/blog/disney-plus-3d-content-immersive-environments-upgrade-launch/",
-        "https://www.theverge.com/tech/1031256/meta-quest-disney-plus-vr-3d-movies"
+        "https://sports.yahoo.com/articles/udoka-amen-thompson-012358709.html",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/11/udoka-amen-thompson/92735360007/",
+        "https://spacecityscoop.com/amen-thompson-silence-noise-lockdown-performance-against-warriors"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJFrfSPniiQHW69267kyKuozHypMbSp90yR8ORtdoQ4e0bTftJer9X4uHDxMU",
-      "image_credit": "The Walt Disney Company",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREcRNE-GWw0X935LAnbU_iRkAvoJ-6dPly2GV9Va1hM2s53XKobaVtChBN09w",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://thewaltdisneycompany.com/news/disney-plus-3d-viewing-meta-quest-vr-glasses/",
-          "title": "Disney+ Brings 3D and Viewing Environments to Meta Quest and Meta VR Glasses",
-          "publisher": "The Walt Disney Company",
+          "url": "https://sports.yahoo.com/articles/udoka-amen-thompson-012358709.html",
+          "title": "Udoka: \"Amen Thompson.\"",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJFrfSPniiQHW69267kyKuozHypMbSp90yR8ORtdoQ4e0bTftJer9X4uHDxMU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREcRNE-GWw0X935LAnbU_iRkAvoJ-6dPly2GV9Va1hM2s53XKobaVtChBN09w"
         },
         {
-          "url": "https://www.meta.com/blog/disney-plus-3d-content-immersive-environments-upgrade-launch/",
-          "title": "Be Transported Into Your Favorite Disney+ Stories with 3D Movies and Immersive Environments On Meta Quest and Meta VR Glasses",
-          "publisher": "www.meta.com",
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/11/udoka-amen-thompson/92735360007/",
+          "title": "Udoka: \"Amen Thompson.\"",
+          "publisher": "HoopsHype",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt24SIcgnmLoi6vzsj7PMpNE-52-82R_rNTuJR3lyjg7-Ap3wbtq40YR6V6lQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUN3owZoXXBbogAqugaGvHO7Xz8bLZgVorloNxBIC9sjotzi-QK1uKNUXcwd4"
         },
         {
-          "url": "https://www.theverge.com/tech/1031256/meta-quest-disney-plus-vr-3d-movies",
-          "title": "The VR Disney Plus app on Meta Quest now has 3D movies",
-          "publisher": "The Verge",
+          "url": "https://spacecityscoop.com/amen-thompson-silence-noise-lockdown-performance-against-warriors",
+          "title": "Amen Thompson can silence the noise with lockdown performance against Warriors",
+          "publisher": "Space City Scoop",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfxn2bGOi86V-DTd_TWpu3sxteARKZnE3dQLWfAU8-YKTI3N9CXYz4qDn4Qek"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRpqYgfOAQCj6BSKWsVckafVd8KxrOO-khP7pGg-f806eDt3az_-XDz-aFXoP8"
+        }
+      ]
+    },
+    {
+      "query": "oilers",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T03:10:00Z",
+      "related_news_urls": [
+        "https://www.broadstreethockey.com/post/rasmus-ristolainen-returns-as-matvei-michkov-stays-in-lineup-amid-trade-rumors/",
+        "https://www.inquirer.com/flyers/rasmus-ristolainen-return-injured-reserve-oilers-20261111.html",
+        "https://www.cbssports.com/fantasy/hockey/news/flyers-rasmus-ristolainen-considered-game-time-decision/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcVpIzlsHmVifGhK7vTREpYwI6IajP26Sl0j7vag96vQpqOAdfXuhhgqENKRE",
+      "image_credit": "Broad Street Hockey",
+      "news": [
+        {
+          "url": "https://www.broadstreethockey.com/post/rasmus-ristolainen-returns-as-matvei-michkov-stays-in-lineup-amid-trade-rumors/",
+          "title": "Rasmus Ristolainen returns as Matvei Michkov stays in lineup amid trade rumors",
+          "publisher": "Broad Street Hockey",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcVpIzlsHmVifGhK7vTREpYwI6IajP26Sl0j7vag96vQpqOAdfXuhhgqENKRE"
+        },
+        {
+          "url": "https://www.inquirer.com/flyers/rasmus-ristolainen-return-injured-reserve-oilers-20261111.html",
+          "title": "Flyers defenseman Rasmus Ristolainen set to return against the Oilers",
+          "publisher": "Inquirer.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWCOxMgMn-t94kAFPp4V_bf2aO6yfZXf5c7KkRybkrBO0kfKoOjH22qJwewrI"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/hockey/news/flyers-rasmus-ristolainen-considered-game-time-decision/",
+          "title": "Flyers' Rasmus Ristolainen: Considered game-time decision",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtZMy_uspPzhLcvWJC5Cm2ubDEwcnSvgsUacibKG5adF1xXsvI6lxR4qvCSR0"
+        }
+      ]
+    },
+    {
+      "query": "alix small cause of death",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T03:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/alix-small-scottish-fitness-pro-234920457.html",
+        "https://people.com/pro-bodybuilding-champion-alix-small-who-overcame-anorexia-dies-at-26-12248955",
+        "https://www.dailystar.co.uk/news/latest-news/brit-pro-bodybuilder-dead-26-37860760"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNbNrE5fDW1lTmgRm2RM7LrMRrlTgI7cfVVx9-zI_YIiz3U11agoYGc0NGFT4",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/alix-small-scottish-fitness-pro-234920457.html",
+          "title": "Alix Small, Scottish Fitness Pro and Olympia Competitor, Dies At 26",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNbNrE5fDW1lTmgRm2RM7LrMRrlTgI7cfVVx9-zI_YIiz3U11agoYGc0NGFT4"
+        },
+        {
+          "url": "https://people.com/pro-bodybuilding-champion-alix-small-who-overcame-anorexia-dies-at-26-12248955",
+          "title": "Pro Bodybuilding Champion Alix Small, Who Overcame Anorexia, Dies at 26",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3V6aVGA39MD1bqJd2K0ixChMl3ANOz583m-dyF0hmc8g7ZppMCv9pL0j3PNo"
+        },
+        {
+          "url": "https://www.dailystar.co.uk/news/latest-news/brit-pro-bodybuilder-dead-26-37860760",
+          "title": "Brit pro bodybuilder dead at 26 after beating anorexia to win two championships",
+          "publisher": "Daily Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSolNNc5QimJTWC5ScXvi8D90I25YJYI5vI_pDp8K9ZRXMXd1YOeabjt27sHVk"
+        }
+      ]
+    },
+    {
+      "query": "north texas basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T03:10:00Z",
+      "related_news_urls": [
+        "https://www.sportsgambler.com/betting-tips/basketball/santa-clara-broncos-vs-north-texas-mean-green-prediction-odds-2026-11-11/",
+        "https://meangreensports.com/news/2026/11/10/mens-basketball-unt-looks-to-build-on-strong-opening-week-with-matchups-against-santa-clara-south-alabama",
+        "https://www.bleachernation.com/picks/2026/11/11/wcc-basketball-predictions-computer-picks-and-best-bets-november-12-2/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCH3rnA9A8cYyr7m4Eazv4gsqo0Wug2AX1YCslySQTpg4rAXxbmvNRpefj9lc",
+      "image_credit": "Sportsgambler",
+      "news": [
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/santa-clara-broncos-vs-north-texas-mean-green-prediction-odds-2026-11-11/",
+          "title": "Santa Clara vs North Texas Prediction, Picks & Odds | 11 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCH3rnA9A8cYyr7m4Eazv4gsqo0Wug2AX1YCslySQTpg4rAXxbmvNRpefj9lc"
+        },
+        {
+          "url": "https://meangreensports.com/news/2026/11/10/mens-basketball-unt-looks-to-build-on-strong-opening-week-with-matchups-against-santa-clara-south-alabama",
+          "title": "UNT Looks to Build on Strong Opening Week with Matchups Against Santa Clara, South Alabama",
+          "publisher": "University of North Texas Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKlPMdV7IyLQmXXhFWLo3KP_lvTfxneP9raHU4VUON6Vb_quJ9K9ajSRvWrYI"
+        },
+        {
+          "url": "https://www.bleachernation.com/picks/2026/11/11/wcc-basketball-predictions-computer-picks-and-best-bets-november-12-2/",
+          "title": "WCC Basketball Predictions, Computer Picks and Best Bets | November 12",
+          "publisher": "Bleacher Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQc_ppN7n5TGN_lbfE264bXOLvNaSFNU9QMQuLsMEPXGJ8J60QUy_aZJP4HTOw"
+        }
+      ]
+    },
+    {
+      "query": "golden state warriors vs houston rockets match player stats",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T03:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50439821/warriors-beat-pelicans-51-points-8th-straight-win",
+        "https://www.skysports.com/nba/news/13610478/nba-jimmy-butler-dresses-up-as-coach-and-says-pass-to-steph-as-golden-state-warriors-win-eighth-straight-match",
+        "https://www.nytimes.com/athletic/7769809/2026/11/10/warriors-winning-streak-jimmy-butler-stephen-curry/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfErqk4dCwsZHeniyORuSN84JIu8m29TnTQ6OT3A1NhQO1FMXkWpbhHqWKzfc",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50439821/warriors-beat-pelicans-51-points-8th-straight-win",
+          "title": "Warriors blow out Pelicans by 51 points for 8th straight win",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfErqk4dCwsZHeniyORuSN84JIu8m29TnTQ6OT3A1NhQO1FMXkWpbhHqWKzfc"
+        },
+        {
+          "url": "https://www.skysports.com/nba/news/13610478/nba-jimmy-butler-dresses-up-as-coach-and-says-pass-to-steph-as-golden-state-warriors-win-eighth-straight-match",
+          "title": "NBA: Jimmy Butler dresses up as coach and says 'pass to Steph' as Golden State Warriors win eighth straight match",
+          "publisher": "Sky Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhwEUpO_Gu-V9cNVo-zDCrkCzNMldlfFJRdCTv4JDsYXDY1fl8KHEmt1OWMYc"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7769809/2026/11/10/warriors-winning-streak-jimmy-butler-stephen-curry/",
+          "title": "Warriors’ winning streak hits 8 as Jimmy Butler’s words over coffee seem prescient - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTisHV5I6ELp8Tp98g9Zi9bmCbhjWUi6SJ8FH7JuiGYbqiQIGx09aCk-ipOL7w"
+        }
+      ]
+    },
+    {
+      "query": "bennie thompson",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T03:00:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/10/politics/trump-building-investigation-democrats-house-natural-resources",
+        "https://www.ms.now/rachel-maddow-show/maddowblog/interior-whistleblowers-oversight-house-natural-resources-committee",
+        "https://www.telegraph.co.uk/world-news/2026/11/11/trump-officials-destroying-documents-democrat-takeover/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEolw3q6f4nC2vQd76zrDjkM7uak_Rvm7uWW63AZS7d968xVeHrMad9GwiUxA",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/10/politics/trump-building-investigation-democrats-house-natural-resources",
+          "title": "Trump’s pet project documents being destroyed, whistleblowers say",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEolw3q6f4nC2vQd76zrDjkM7uak_Rvm7uWW63AZS7d968xVeHrMad9GwiUxA"
+        },
+        {
+          "url": "https://www.ms.now/rachel-maddow-show/maddowblog/interior-whistleblowers-oversight-house-natural-resources-committee",
+          "title": "Democrats respond to whistleblowers’ allegations of Trump administration document destruction",
+          "publisher": "MS NOW",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoD1tz7_8iUnWWDKeuNZcN-67sKytPZVoavfYpBqEvZHakQmVbNVujiuSsy8M"
+        },
+        {
+          "url": "https://www.telegraph.co.uk/world-news/2026/11/11/trump-officials-destroying-documents-democrat-takeover/",
+          "title": "Trump officials ‘destroying documents’ ahead of Democrat takeover",
+          "publisher": "The Telegraph",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVMBAutgiaspGd9yVQ16K4kvH3kcgni1NSHKI84z2DxBH-0Bxp-TYkpOd1NRM"
+        }
+      ]
+    },
+    {
+      "query": "sengun",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T03:00:00Z",
+      "related_news_urls": [
+        "https://www.fantasypros.com/nba/news/619024/alperen-sengun-plays-well-win-monday.php",
+        "https://www.nba.com/rockets/videos/alperen-sengun-20-points-highlights-vs-denver-nuggets-2",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/alperen-sengun-records-20-12-8-1-1-stat-line"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzk0NeH4GVycVChY0YDKJDkB_94hFafGQq479CvrPwoWQbun-QnJhMMCYJleQ",
+      "image_credit": "FantasyPros",
+      "news": [
+        {
+          "url": "https://www.fantasypros.com/nba/news/619024/alperen-sengun-plays-well-win-monday.php",
+          "title": "Alperen Sengun plays well in win Monday",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzk0NeH4GVycVChY0YDKJDkB_94hFafGQq479CvrPwoWQbun-QnJhMMCYJleQ"
+        },
+        {
+          "url": "https://www.nba.com/rockets/videos/alperen-sengun-20-points-highlights-vs-denver-nuggets-2",
+          "title": "Alperen Sengun (20 points) Highlights vs. Denver Nuggets",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTI70jARQ6M55prI8S_fjLF2N3fEKqWEEbR2I1aTEvDDM1eg0rqnAFAyBdpU9s"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-09/alperen-sengun-records-20-12-8-1-1-stat-line",
+          "title": "Alperen Şengün records 20/12/8/1/1 stat line",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSY4hNdBWPy0g4KDYvuPNI3SnLxl9R5gx43CjQenLhAeaQyHsr5TP88MHcGGjY"
+        }
+      ]
+    },
+    {
+      "query": "robert noaker",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T03:00:00Z",
+      "related_news_urls": [
+        "https://www.nascar.com/news-media/2026/11/10/ryan-blaney-to-miss-2026-nascar-awards-after-fall/",
+        "https://www.jayski.com/2026/11/10/robert-noaker-replacing-ryan-blaney-in-ford-proud-to-honor-veterans-day-classic/",
+        "https://sports.yahoo.com/articles/sudden-medical-emergency-derails-ryan-205055544.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsMWGY5IvcaAT_mf0KYYzrtyGZtcBZLMVOvfNmiQeGA6GpXH-57LhRBT_J48Y",
+      "image_credit": "NASCAR.com",
+      "news": [
+        {
+          "url": "https://www.nascar.com/news-media/2026/11/10/ryan-blaney-to-miss-2026-nascar-awards-after-fall/",
+          "title": "Ryan Blaney to miss 2026 NASCAR Awards after fall",
+          "publisher": "NASCAR.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsMWGY5IvcaAT_mf0KYYzrtyGZtcBZLMVOvfNmiQeGA6GpXH-57LhRBT_J48Y"
+        },
+        {
+          "url": "https://www.jayski.com/2026/11/10/robert-noaker-replacing-ryan-blaney-in-ford-proud-to-honor-veterans-day-classic/",
+          "title": "Robert Noaker replacing Ryan Blaney in Ford Proud to Honor Veterans Day Classic",
+          "publisher": "Jayski",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQU9TRbpc5EgLrSqZX8rkQDCq6o9cBLaRz4aChzxsZcNKB39G9SEYhVJJtQnd0"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/sudden-medical-emergency-derails-ryan-205055544.html",
+          "title": "Sudden Medical Emergency Derails Ryan Blaney as Penske Star Set to Miss Historic Ford Honors at Daytona",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCMtgf95_nxe3PuGl2vccTV2Z8tfO4eX5mRp5bHWLUHHauy1z2acuxdBt7kkM"
         }
       ]
     }
