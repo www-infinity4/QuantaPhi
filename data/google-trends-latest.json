@@ -3,126 +3,133 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T20:01:18.530366Z",
+  "checked_at": "2026-11-12T20:31:20.302350Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "flash flood warning",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-12T19:30:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/news/weather-news/articles/severe-thunderstorms-could-bring-hail-173424856.html",
-        "https://patch.com/new-jersey/across-nj/coastal-storm-soak-nj-heavy-rain-strong-winds",
-        "https://www.northjersey.com/story/news/2026/11/12/nj-weather-winter-storm-forecast-noreaster-first-snow-coldest-air-of-season-new-jersey-nyc/92738840007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUAOpebkjGMvNOx6mDhs9UAh9V3UXX6O05Wzsi1wpsNIUfc2QtlLXFTjH3DVo",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/news/weather-news/articles/severe-thunderstorms-could-bring-hail-173424856.html",
-          "title": "Severe thunderstorms could bring hail, damaging winds, tornado to NJ",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUAOpebkjGMvNOx6mDhs9UAh9V3UXX6O05Wzsi1wpsNIUfc2QtlLXFTjH3DVo"
-        },
-        {
-          "url": "https://patch.com/new-jersey/across-nj/coastal-storm-soak-nj-heavy-rain-strong-winds",
-          "title": "Snowfall Projection Map Released As Storm Heads To The Region: See NJ's Forecast",
-          "publisher": "Patch",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdXR388HjshyJrysZf-rrPhpaCdMaMQW98N1bE1Cj_2n7fADLZ1iBczif3jHI"
-        },
-        {
-          "url": "https://www.northjersey.com/story/news/2026/11/12/nj-weather-winter-storm-forecast-noreaster-first-snow-coldest-air-of-season-new-jersey-nyc/92738840007/",
-          "title": "NJ winter storm watch? First snow possible as coldest air moves in",
-          "publisher": "Bergen Record",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrRLiQ-vMZZGxHQ-R4NWLF0maO8xiTquQKhX6QmtbMwM6R_TR5yFjumqx1fIg"
-        }
-      ]
-    },
-    {
-      "query": "france",
+      "query": "pio esposito",
       "approx_searches": "1000+",
-      "published_at": "2026-11-12T19:30:00Z",
+      "published_at": "2026-11-12T20:10:00Z",
       "related_news_urls": [
-        "https://www.lequipe.fr/Football/Actualites/Les-compos-d-italie-france-desire-doue-a-la-pointe-de-l-attaque-des-bleus-adrien-truffert-lateral-gauche/1743235",
-        "https://www.lefigaro.fr/sports/football/ligue-des-nations/doue-remplace-mbappe-un-milieu-technique-une-surprise-en-defense-zidane-a-tranche-pour-la-compo-des-bleus-contre-l-italie-20261112",
-        "https://www.france24.com/fr/info-en-continu/20261111-%C3%A9quipe-de-france-zidane-l-italien"
+        "https://www.gazzetta.it/Calcio/Nazionale/12-11-2026/italia-francia-live-risultato-e-gol-in-diretta-nations-league.shtml",
+        "https://www.corrieredellosport.it/foto/calcio/italia/2026/11/12-152534091/italia-francia_le_probabili_formazioni_di_mancini_e_di_zidane",
+        "https://www.repubblica.it/sport/calcio/nazionale/2026/11/12/news/italia_francia_formazione_mancini-425719428/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRK99nSGZwOKzFhcnIZhxYobtD3wlreORIaI8uth_rV3NwQVL9lZ2WEj_HqkY8",
-      "image_credit": "L'Équipe",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXVah1--HJ1dcZ0PkUARkSlL6okzJXLtOEPYKJnHHehVxDai0jGCNXgRIl9fM",
+      "image_credit": "La Gazzetta dello Sport",
       "news": [
         {
-          "url": "https://www.lequipe.fr/Football/Actualites/Les-compos-d-italie-france-desire-doue-a-la-pointe-de-l-attaque-des-bleus-adrien-truffert-lateral-gauche/1743235",
-          "title": "Les compos d'Italie-France : Doué à la pointe de l'attaque des Bleus, Truffert latéral gauche, Rabiot capitaine",
-          "publisher": "L'Équipe",
+          "url": "https://www.gazzetta.it/Calcio/Nazionale/12-11-2026/italia-francia-live-risultato-e-gol-in-diretta-nations-league.shtml",
+          "title": "LIVE Italia-Francia 1-1: tiro a giro di Barcola, palo! Ma ora gli azzurri spingono",
+          "publisher": "La Gazzetta dello Sport",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRK99nSGZwOKzFhcnIZhxYobtD3wlreORIaI8uth_rV3NwQVL9lZ2WEj_HqkY8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXVah1--HJ1dcZ0PkUARkSlL6okzJXLtOEPYKJnHHehVxDai0jGCNXgRIl9fM"
         },
         {
-          "url": "https://www.lefigaro.fr/sports/football/ligue-des-nations/doue-remplace-mbappe-un-milieu-technique-une-surprise-en-defense-zidane-a-tranche-pour-la-compo-des-bleus-contre-l-italie-20261112",
-          "title": "Un nouveau n°9, un milieu technique, une surprise en défense : Zidane a tranché pour la compo des Bleus contre l’Italie",
-          "publisher": "Le Figaro",
+          "url": "https://www.corrieredellosport.it/foto/calcio/italia/2026/11/12-152534091/italia-francia_le_probabili_formazioni_di_mancini_e_di_zidane",
+          "title": "Italia-Francia, le formazioni ufficiali di Mancini e di Zidane",
+          "publisher": "Corriere dello Sport",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTs1_28Cibz1L4StxOQWEAOTU7VZWTK7sduJUKARD95jejJMvuybYmjxc8kvjs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1-AbxlHcHsXarH1EDeACqGqabu_EphFjeKPXOnNOCA14Gg9TLqzkgnMM1qhU"
         },
         {
-          "url": "https://www.france24.com/fr/info-en-continu/20261111-%C3%A9quipe-de-france-zidane-l-italien",
-          "title": "Équipe de France : Zidane l'Italien",
-          "publisher": "France 24",
+          "url": "https://www.repubblica.it/sport/calcio/nazionale/2026/11/12/news/italia_francia_formazione_mancini-425719428/",
+          "title": "Nazionale, Mancini sceglie i fratelli Esposito per l’attacco contro la Francia",
+          "publisher": "la Repubblica",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVX-VTX9FVqyTvYe-qB0fksZ3RCxzZeJyr-qHC0V4ecDoAkBBx3RjZR3Og5IY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTt0_yeGrx1kvtru1mR2piiS2TDNuQEkvzr0BqLiT26JcWOfjWupoiPQxQXJUQ"
         }
       ]
     },
     {
-      "query": "outlook cyber attack",
+      "query": "immigration",
       "approx_searches": "500+",
-      "published_at": "2026-11-12T19:20:00Z",
+      "published_at": "2026-11-12T20:10:00Z",
       "related_news_urls": [
-        "https://www.forbes.com/sites/daveywinder/2026/11/11/microsoft-confirms-active-exploitation-of-new-outlook-zero-day/",
-        "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
-        "https://www.theregister.com/security/2026/11/10/november-patch-tuesday-boasts-over-1000-bugs-one-already-under-attack/5308946"
+        "https://www.cbsnews.com/news/ice-deportations-arrests-hit-record-high/",
+        "https://www.politico.com/news/2026/11/12/ice-record-deportations-voter-sentiment-01162825",
+        "https://apnews.com/article/ice-immigration-deportation-arrests-homeland-security-trump-2e8f9b619c009ddc183d1a80eb21629a"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcvsPgJTClGNJ1FGylvhGRyZGPkmi8eKxRyRobRKEOnvubssBW_5qqxBSld0I",
-      "image_credit": "Forbes",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvOEJSWxoNsq4602mzcdjweBT5CZQVGJK0d9gOLYZMLT4VnP-HC-AxqTIZfW4",
+      "image_credit": "CBS News",
       "news": [
         {
-          "url": "https://www.forbes.com/sites/daveywinder/2026/11/11/microsoft-confirms-active-exploitation-of-new-outlook-zero-day/",
-          "title": "Microsoft Confirms Active Exploitation Of New Outlook Zero-Day",
-          "publisher": "Forbes",
+          "url": "https://www.cbsnews.com/news/ice-deportations-arrests-hit-record-high/",
+          "title": "ICE deportations and arrests hit record high as Trump faces reckoning over immigration crackdown",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcvsPgJTClGNJ1FGylvhGRyZGPkmi8eKxRyRobRKEOnvubssBW_5qqxBSld0I"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvOEJSWxoNsq4602mzcdjweBT5CZQVGJK0d9gOLYZMLT4VnP-HC-AxqTIZfW4"
         },
         {
-          "url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
-          "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
-          "publisher": "Krebs on Security",
+          "url": "https://www.politico.com/news/2026/11/12/ice-record-deportations-voter-sentiment-01162825",
+          "title": "ICE touts record deportations as polls show voters soured on Trump’s crackdown",
+          "publisher": "Politico",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTy_Z4ztKhTve7X8Yy8XETlDhuQ_sg1VCX3BmRxPl1vz-w3YaXnLWu7-gJ79jU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPTy4klLPRFGdClFcDdlBVLTNIzmjBSZ0QOiMo_5r8OR4JHtv34t81GbAxZOI"
         },
         {
-          "url": "https://www.theregister.com/security/2026/11/10/november-patch-tuesday-boasts-over-1000-bugs-one-already-under-attack/5308946",
-          "title": "November Patch Tuesday boasts over 1,000 bugs, one already under attack",
-          "publisher": "The Register",
+          "url": "https://apnews.com/article/ice-immigration-deportation-arrests-homeland-security-trump-2e8f9b619c009ddc183d1a80eb21629a",
+          "title": "ICE reports record-high immigration arrests and deportations since Trump's return to White House",
+          "publisher": "AP News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3Ng64Niee_3EpeMGTZ4Ipy7xj6AUYL_zHWYTtmH3dOr4T0POvm291Woqi9KM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb_5rfxCdGNx5aSiAacIEcnw2CB6ItH5qXhF5LTPQHbBQPz4n2G5sNsS-3HeM"
         }
       ]
     },
     {
-      "query": "england national football team",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T19:10:00Z",
+      "query": "evan phillips",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T20:00:00Z",
       "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50451241/harry-kane-england-caps-record-126-croatia",
-        "https://sports.yahoo.com/articles/uefa-nations-league-kane-starts-184300198.html",
-        "https://www.theguardian.com/football/2026/nov/12/archive-1990-peter-shilton-wins-125th-cap-making-him-englands-record-appearance-holder"
+        "https://www.mlbtraderumors.com/2026/11/braves-sign-evan-phillips-to-three-year-deal.html",
+        "https://www.si.com/mlb/dodgers/onsi/dodgers-officially-lose-evan-phillips-nl-rival-massive-35-million-signing",
+        "https://heavy.com/sports/mlb/atlanta-braves/sign-35-million-world-series-champion-three-year-contract/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVetkmXwTBOd20P4mjSsnrOmVwX4IGB6uiYAHvWLLSVKLM_OOGJWCp-i52_Tc",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDw3kMhDq7kGP5CZfKP4Evc4aShssXhl-bA8qomwF1KeI24wY3nSZzqAvRRzY",
+      "image_credit": "MLB Trade Rumors",
       "news": [
+        {
+          "url": "https://www.mlbtraderumors.com/2026/11/braves-sign-evan-phillips-to-three-year-deal.html",
+          "title": "Braves Sign Evan Phillips To Three-Year Deal",
+          "publisher": "MLB Trade Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDw3kMhDq7kGP5CZfKP4Evc4aShssXhl-bA8qomwF1KeI24wY3nSZzqAvRRzY"
+        },
+        {
+          "url": "https://www.si.com/mlb/dodgers/onsi/dodgers-officially-lose-evan-phillips-nl-rival-massive-35-million-signing",
+          "title": "Dodgers Officially Lose Evan Phillips to NL Rival in Massive $35 Million Signing",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlOPJVxNbAs1Epq4EuxVjYcBGmcK60hiCeCHwyHrVhNoW1yGt8uI6BLQvmzL8"
+        },
+        {
+          "url": "https://heavy.com/sports/mlb/atlanta-braves/sign-35-million-world-series-champion-three-year-contract/",
+          "title": "Atlanta Braves Sign $35 Million World Series Champion to Three-Year Contract",
+          "publisher": "Heavy.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLs9EZylTPj1hI6xkcmQ3Lt1zcD_vlneZWetNimJnKW1anH_NlUqIZF3lJeto"
+        }
+      ]
+    },
+    {
+      "query": "england football",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T20:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cr5yn1g2qe6et",
+        "https://www.espn.com/soccer/story/_/id/50451241/harry-kane-england-caps-record-126-croatia",
+        "https://www.theguardian.com/football/2026/nov/12/harry-kane-wins-record-126th-england-cap"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTu9MwptxpQuAqth_AxqqMKG-MxGYlmQCPXwCbUOxnOiq08J2jiQTlk4dhhcME",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cr5yn1g2qe6et",
+          "title": "England vs Croatia LIVE: UEFA Nations League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTu9MwptxpQuAqth_AxqqMKG-MxGYlmQCPXwCbUOxnOiq08J2jiQTlk4dhhcME"
+        },
         {
           "url": "https://www.espn.com/soccer/story/_/id/50451241/harry-kane-england-caps-record-126-croatia",
           "title": "Harry Kane set to break England caps record against Croatia",
@@ -131,228 +138,221 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVetkmXwTBOd20P4mjSsnrOmVwX4IGB6uiYAHvWLLSVKLM_OOGJWCp-i52_Tc"
         },
         {
-          "url": "https://sports.yahoo.com/articles/uefa-nations-league-kane-starts-184300198.html",
-          "title": "UEFA Nations League: Kane starts as Bayern superstar set to smash Peter Shilton's England record",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWXw3o5Lx4lzYwBXQE6mnsYENV3mVKucWOe9RMKgI2N3el19sM2mLKE9Re47s"
-        },
-        {
-          "url": "https://www.theguardian.com/football/2026/nov/12/archive-1990-peter-shilton-wins-125th-cap-making-him-englands-record-appearance-holder",
-          "title": "Archive, 1990: Peter Shilton wins 125th and final cap of record-breaking England career",
+          "url": "https://www.theguardian.com/football/2026/nov/12/harry-kane-wins-record-126th-england-cap",
+          "title": "Harry Kane wins record 126th England cap, pulling clear of Peter Shilton",
           "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQyPUdkpov21AuJsyPeimu8j7i4zNJA2nJ0mUWffI5XwLCvttZw9x46LrmyPyk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSS1FSH9FvgqPEs_nm0RrOegQKulqBZFo-E3On-5th0QllanG75XKoXkZhajE"
         }
       ]
     },
     {
-      "query": "spain",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T19:10:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/11/europe/spain-strike-housing-latam-intl",
-        "https://www.bbc.com/news/articles/cwvg25nypmrvo",
-        "https://www.aljazeera.com/news/2026/11/11/i-pay-500-for-5-square-metres-spains-protesters-in-their-own-words"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRm_sWHsD8flB39xYz8o46QUlLFyyUnejXSpkzjoM-rj3btMi4vCEQ400Gf7vY",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/11/europe/spain-strike-housing-latam-intl",
-          "title": "Millions of Spaniards stage first general strike in 14 years as anger rages over housing",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRm_sWHsD8flB39xYz8o46QUlLFyyUnejXSpkzjoM-rj3btMi4vCEQ400Gf7vY"
-        },
-        {
-          "url": "https://www.bbc.com/news/articles/cwvg25nypmrvo",
-          "title": "Clashes erupt in Barcelona after thousands join Spain general strike",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQVjlz3uPZDDkIYwinCxgKbdgIuCPdrB0RpaVf_EnIBZkymEw22H2rXuhMOq8"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/11/i-pay-500-for-5-square-metres-spains-protesters-in-their-own-words",
-          "title": "‘I pay $500 for 5 square metres’: Spain’s protesters, in their own words",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcERK4zqoBkOI4aM8R59cc2XSEwwI5i0YztHgPu20BDJHmTW9sh3LRvPgqMws"
-        }
-      ]
-    },
-    {
-      "query": "cyber attacks today",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T19:10:00Z",
-      "related_news_urls": [
-        "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
-        "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
-        "https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2gkzEpdZEUOv-XoKNtXBCKY259L9S82Ciu2n1uXHvuj-DN0GxqqM99bb-6A8",
-      "image_credit": "wiz.io",
-      "news": [
-        {
-          "url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
-          "title": "Critical RCE Vulnerability in Apache HTTP Server: Everything You Need To Know",
-          "publisher": "wiz.io",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2gkzEpdZEUOv-XoKNtXBCKY259L9S82Ciu2n1uXHvuj-DN0GxqqM99bb-6A8"
-        },
-        {
-          "url": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
-          "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
-          "publisher": "The Hacker News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4NYjqW91xd0EvuH-KrXvccR8cpMWnYlW6MQqzFfkRwYG9DAEV89do7YSEFPs"
-        },
-        {
-          "url": "https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/",
-          "title": "Apache Patches Critical HTTP Server RCE Found by Anthropic, Google",
-          "publisher": "SecurityWeek",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_Y35y7mldSlbyByIfz4fvs0bNLB83sJ80FGtVGlsXxgsUhlrVp2p16OXFbq4"
-        }
-      ]
-    },
-    {
-      "query": "microsoft cyber attack",
+      "query": "espn men college basketball rankings",
       "approx_searches": "500+",
-      "published_at": "2026-11-12T19:10:00Z",
+      "published_at": "2026-11-12T20:00:00Z",
       "related_news_urls": [
-        "https://www.infosecurity-magazine.com/news/fortinet-sql-server-cryptominer/",
-        "https://hackread.com/hackers-abuse-microsoft-sql-servers-monero-miner-gh0st-rat/",
-        "https://www.csoonline.com/article/4247845/hackers-abuse-sql-servers-weak-passwords-to-drop-cryptominers-and-gh0st-rat.html"
+        "https://www.espn.com/mens-college-basketball/story/_/id/50453526/mens-college-basketball-power-rankings",
+        "https://www.nytimes.com/athletic/7774562/2026/11/12/mens-college-basketball-top-25-florida-kansas-michigan-state/",
+        "https://www.cbssports.com/college-basketball/news/power-rankings-florida-michigan-state-uconn/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxQM8d-Z8MsYn3h8qCvgtETQ70R1ZmwFob-kRXKRVRBpZCUvcWuNYTmBG0mnE",
-      "image_credit": "Infosecurity Magazine",
-      "news": [
-        {
-          "url": "https://www.infosecurity-magazine.com/news/fortinet-sql-server-cryptominer/",
-          "title": "Weak Passwords Expose SQL Servers to Cryptominer and Gh0st RAT",
-          "publisher": "Infosecurity Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxQM8d-Z8MsYn3h8qCvgtETQ70R1ZmwFob-kRXKRVRBpZCUvcWuNYTmBG0mnE"
-        },
-        {
-          "url": "https://hackread.com/hackers-abuse-microsoft-sql-servers-monero-miner-gh0st-rat/",
-          "title": "Hackers Abuse Microsoft SQL Servers to Deploy Monero Miner and Gh0st RAT",
-          "publisher": "Hackread",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDiKOq17aOie4I8pzkCM0cJ0yAyxtxC2Dx7h8mSNYp4uewFQnyEHl91zU-6-E"
-        },
-        {
-          "url": "https://www.csoonline.com/article/4247845/hackers-abuse-sql-servers-weak-passwords-to-drop-cryptominers-and-gh0st-rat.html",
-          "title": "Hackers abuse SQL Server’s weak passwords to drop cryptominers and Gh0st RAT",
-          "publisher": "CSO Online",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKRjl2SMP3QdNryTxY8qpwEd5Gc73ZGq91M-hYTUxxeWtGhOeL5Ww0yWP6JpU"
-        }
-      ]
-    },
-    {
-      "query": "inglaterra - croacia",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-12T19:00:00Z",
-      "related_news_urls": [
-        "https://www.si.com/es-us/la-posible-alineacion-titular-de-inglaterra-para-enfrentar-a-croacia-12-11-2026",
-        "https://es-us.noticias.yahoo.com/deportes/ganas-revancha-bilic-estrellas-fire-075352389.html",
-        "https://consultamonterrey.mx/deportes/inglaterra-vs-croacia-uefa-nations-league/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0XtuYYus2QmefylRgwQ6OML5Q2Xa63JkkutXeCM1cg-F89fU-Kmhx_iwoVjM",
-      "image_credit": "Sports Illustrated",
-      "news": [
-        {
-          "url": "https://www.si.com/es-us/la-posible-alineacion-titular-de-inglaterra-para-enfrentar-a-croacia-12-11-2026",
-          "title": "La posible alineación titular de Inglaterra para enfrentar a Croacia",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0XtuYYus2QmefylRgwQ6OML5Q2Xa63JkkutXeCM1cg-F89fU-Kmhx_iwoVjM"
-        },
-        {
-          "url": "https://es-us.noticias.yahoo.com/deportes/ganas-revancha-bilic-estrellas-fire-075352389.html",
-          "title": "¡Con ganas de revancha! Bilic y las estrellas del Fire planean resarcirse ante Inglaterra en los decisivos partidos de la Liga de Naciones",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdecfk8pMvPKI_EnyyJ4pMvRNt0ZGedh4iSysmOyPrTiW3esLszvIfKU3yYjA"
-        },
-        {
-          "url": "https://consultamonterrey.mx/deportes/inglaterra-vs-croacia-uefa-nations-league/",
-          "title": "Inglaterra busca clasificar ante Croacia en la UEFA Nations League",
-          "publisher": "Consulta Monterrey",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSu-grZ0DjgVFbjgY9xU657f_XPPZJAUwckj2Z8cDwlcYNko3p4DJDSSk_Oxn4"
-        }
-      ]
-    },
-    {
-      "query": "albania vs finland",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T19:00:00Z",
-      "related_news_urls": [
-        "https://www.thestatszone.com/albania-vs-finland-preview-prediction-2026-27-uefa-nations-league-league-c-237887",
-        "https://www.reutersconnect.com/item/uefa-nations-league-group-c1-albania-v-finland/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkMxSTJMMFk",
-        "https://kohajone.com/en/sporti/maran-i-beson-pervojes-gjithnje-e-me-prane-rekordit-te-otto-baric/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnB25v_LrsnMma-5Uc5q0AdcR009KItyj5tQLz7iBTMqMguZKZzVtc-tuvIhg",
-      "image_credit": "The Stats Zone",
-      "news": [
-        {
-          "url": "https://www.thestatszone.com/albania-vs-finland-preview-prediction-2026-27-uefa-nations-league-league-c-237887",
-          "title": "Albania vs Finland Preview & Prediction | 2026-27 UEFA Nations League | League C",
-          "publisher": "The Stats Zone",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnB25v_LrsnMma-5Uc5q0AdcR009KItyj5tQLz7iBTMqMguZKZzVtc-tuvIhg"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/uefa-nations-league-group-c1-albania-v-finland/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkMxSTJMMFk",
-          "title": "Licensable picture: UEFA Nations League - Group C1 - Albania v Finland",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZiNRqcwrzrHAiUKWVwu3dxOeXB9PmXzaMWW7dETJ4LLFbtqPJkBG8-lwZb8s"
-        },
-        {
-          "url": "https://kohajone.com/en/sporti/maran-i-beson-pervojes-gjithnje-e-me-prane-rekordit-te-otto-baric/",
-          "title": "Maran favors experience, moving ever closer to Otto Baric’s record",
-          "publisher": "KOHA JONË",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmlDjKfJqmQAKm-U94k-503xQPl1dRLJMcZgTHGO7f8N_xX4NX_inzuRpDGjc"
-        }
-      ]
-    },
-    {
-      "query": "spain national football team",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T19:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50455459/spain-lamine-yamal-injury-luis-de-la-fuente-nations-league",
-        "https://www.bbc.com/sport/football/articles/cm0qjekqzwp0o",
-        "https://www.si.com/soccer/spain-manager-delivers-angry-lamine-yamal-injury-update"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1NLzfk1HAleScmRxzEhuZHdiRmyh8P7gB4qN-vCpkyWbs8VtMLqmQyOGo98E",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdnfDK-S83AW0egv8wX_Wr3m7KkORz_MFaQaZfPcOH_UDDDamJzNtSumAINUI",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/soccer/story/_/id/50455459/spain-lamine-yamal-injury-luis-de-la-fuente-nations-league",
-          "title": "Spain's De la Fuente slams 'lying' over Lamine Yamal's 'special privileges'",
+          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50453526/mens-college-basketball-power-rankings",
+          "title": "Men's college basketball Power Rankings: A whole new list after two weeks of games",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1NLzfk1HAleScmRxzEhuZHdiRmyh8P7gB4qN-vCpkyWbs8VtMLqmQyOGo98E"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdnfDK-S83AW0egv8wX_Wr3m7KkORz_MFaQaZfPcOH_UDDDamJzNtSumAINUI"
         },
         {
-          "url": "https://www.bbc.com/sport/football/articles/cm0qjekqzwp0o",
-          "title": "Football: Lamine Yamal not getting 'special privileges' playing for Spain, says Luis de la Fuente",
-          "publisher": "BBC",
+          "url": "https://www.nytimes.com/athletic/7774562/2026/11/12/mens-college-basketball-top-25-florida-kansas-michigan-state/",
+          "title": "Men’s College Basketball Power Rankings: What’s behind great starts for Florida, Kansas, MSU?",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9fujZXxHcXgmDUTlaPKnfABJ8cJ4chsmceE3uvtZQjghPH5U1GTCnemDlQRI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnt5xAvBE5EJmjER3tVSjMoo9fJXw56Z8mL9fx5HbAxMZhynEGLuYoeqovzKE"
         },
         {
-          "url": "https://www.si.com/soccer/spain-manager-delivers-angry-lamine-yamal-injury-update",
-          "title": "‘Sad and Regrettable’—Spain Manager Delivers Angry Lamine Yamal Injury Update",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.cbssports.com/college-basketball/news/power-rankings-florida-michigan-state-uconn/",
+          "title": "College Basketball Power Rankings: Florida opens at No. 1; Michigan State, UConn make statements with big wins",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR3GEMpfDwQxuLwQqP2t2_BGiwxJD-JrVsSM37HMJ8lUU_r1jAELqakWYXGfE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEvGBwH7wtUfT0yvfUlly2Te-8v_GqoPj4sPRqedLLrzRe2KfO7QzN9_7x5s4"
+        }
+      ]
+    },
+    {
+      "query": "phil collins",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T19:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/08/arts/music/phil-collins-knew-he-was-lucky-if-not-cool.html",
+        "https://www.yahoo.com/entertainment/music/articles/don-t-know-rules-don-162609555.html",
+        "https://www.ultimate-guitar.com/news/general_music_news/phil-collins-says-he-may-be-able-to-tour-again-but-its-not-that-simple-i-think-about-going-back-on-the-road"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTejN_FYhzBoHYhbC7oTSiYtvNvTM749S1RodaRoTKWwigufPnw_VxVDhFAj0c",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/08/arts/music/phil-collins-knew-he-was-lucky-if-not-cool.html",
+          "title": "Phil Collins Knew He Was ‘Lucky,’ if Not Cool",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTejN_FYhzBoHYhbC7oTSiYtvNvTM749S1RodaRoTKWwigufPnw_VxVDhFAj0c"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/music/articles/don-t-know-rules-don-162609555.html",
+          "title": "\"If you don’t know the rules, you don’t know you’re breaking them”: Phil Collins on his self-taught style",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7Uqor-OEfA_xxVi3NuP3cCdndFymG5Vx7IXQhO1z1zI1-zh-QQqEINReQeK0"
+        },
+        {
+          "url": "https://www.ultimate-guitar.com/news/general_music_news/phil-collins-says-he-may-be-able-to-tour-again-but-its-not-that-simple-i-think-about-going-back-on-the-road",
+          "title": "Phil Collins Says He May Be Able to Tour Again, but It's Not That Simple: 'I Think About Going Back on the Road'",
+          "publisher": "Ultimate Guitar",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMVVd9xTGYw2jjPa3Q_P4Jrs7Rrf0E2Wl7flEfV391UbYP4axSNroImdt6xTw"
+        }
+      ]
+    },
+    {
+      "query": "teacher",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T19:50:00Z",
+      "related_news_urls": [
+        "https://www.ksdk.com/article/news/crime/large-police-presence-responds-blackhawk-middle-school-1-person-in-custody-warrenton-missouri/63-84fdfff9-4962-4201-8bb7-51ce529e5717",
+        "https://fox2now.com/news/missouri/police-responding-to-incident-at-blackhawk-middle-school-in-warrenton/",
+        "https://www.firstalert4.com/2026/11/12/suspect-custody-after-incident-blackhawk-middle-school-police-say/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYIdMh-gRBJZn3_8z-jC2M34NQ4Mg2PRpjdPgHrPgL27LHaFFEJN6YNWebYeo",
+      "image_credit": "KSDK",
+      "news": [
+        {
+          "url": "https://www.ksdk.com/article/news/crime/large-police-presence-responds-blackhawk-middle-school-1-person-in-custody-warrenton-missouri/63-84fdfff9-4962-4201-8bb7-51ce529e5717",
+          "title": "Student hospitalized, teacher injured after reported stabbing at Blackhawk Middle School",
+          "publisher": "KSDK",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYIdMh-gRBJZn3_8z-jC2M34NQ4Mg2PRpjdPgHrPgL27LHaFFEJN6YNWebYeo"
+        },
+        {
+          "url": "https://fox2now.com/news/missouri/police-responding-to-incident-at-blackhawk-middle-school-in-warrenton/",
+          "title": "Teacher, 2 students injured in Missouri middle school stabbing",
+          "publisher": "FOX 2",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRq2uIm5PDyVEmxUDTyqaPBPWC_PXxxwNJA6pdZhGhA3jQjnJPNQ7shxVqxbCU"
+        },
+        {
+          "url": "https://www.firstalert4.com/2026/11/12/suspect-custody-after-incident-blackhawk-middle-school-police-say/",
+          "title": "🔴LIVE: 2 students, teacher stabbed at Warrenton middle school",
+          "publisher": "KMOV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtcfrh-fZ4aWwjfYkPisaDg6XCgKe98X5A943BdyFCJwHXBNghpeoT35jZfwo"
+        }
+      ]
+    },
+    {
+      "query": "musician",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T19:50:00Z",
+      "related_news_urls": [
+        "https://www.adn.com/arts/music/2026/11/12/its-a-hustle-how-anchorages-busiest-working-musicians-bring-magic-to-the-stage/",
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/rock-musician-dies-36-band-145611452.html",
+        "https://www.legacy.com/us/obituaries/name/patrick-desiato-obituary?id=62969307"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq70E6S3uceXimc6gl3obXxDyaVrAvjadM_-U7aCHkOwFRHETlqXMaRiecxxY",
+      "image_credit": "Anchorage Daily News",
+      "news": [
+        {
+          "url": "https://www.adn.com/arts/music/2026/11/12/its-a-hustle-how-anchorages-busiest-working-musicians-bring-magic-to-the-stage/",
+          "title": "‘It’s a hustle’: How Anchorage’s busiest working musicians bring magic to the stage",
+          "publisher": "Anchorage Daily News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq70E6S3uceXimc6gl3obXxDyaVrAvjadM_-U7aCHkOwFRHETlqXMaRiecxxY"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/rock-musician-dies-36-band-145611452.html",
+          "title": "Rock musician dies at 36, band announces in emotional tribute",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqrQij67BouzSb3YHTq23Wja-l7QXeMyo3oO12uTRPu166JQqEVdSbkUPMD38"
+        },
+        {
+          "url": "https://www.legacy.com/us/obituaries/name/patrick-desiato-obituary?id=62969307",
+          "title": "Patrick Desiato Obituary (2026) - Cinnaminson, NJ - Givnish Funeral Home - Cinnaminson",
+          "publisher": "Legacy | Obituary",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0M3sKRFEh0nK9yJrSs4LczU6BNtcHNCMCwU-tastEoemF5kcscS017lenqnA"
+        }
+      ]
+    },
+    {
+      "query": "jake dickert",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T19:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50463776/wake-forest-awards-second-year-coach-dickert-extension",
+        "https://www.cbssports.com/college-football/news/jake-dickert-wake-forest-new-contract-coaching-carousel/",
+        "https://sports.yahoo.com/articles/fsu-head-coach-candidate-jake-191348916.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRglw2ND6rGqF_P1Zeib89_lj24hUWZXJVlLppZk66nRYVYw8cplwoaMxhq700",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50463776/wake-forest-awards-second-year-coach-dickert-extension",
+          "title": "Wake Forest awards second-year coach Dickert with extension",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRglw2ND6rGqF_P1Zeib89_lj24hUWZXJVlLppZk66nRYVYw8cplwoaMxhq700"
+        },
+        {
+          "url": "https://www.cbssports.com/college-football/news/jake-dickert-wake-forest-new-contract-coaching-carousel/",
+          "title": "Jake Dickert agrees to new Wake Forest contract, rebuffing coaching carousel interest",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0p6knZE3pHB5LJW8WeOqSyOFLH2AmAENBREVF_MUqsQ6CCfBubfTEa2rnCkM"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/fsu-head-coach-candidate-jake-191348916.html",
+          "title": "FSU head coach candidate Jake Dickert discussing contract extension",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRydi4tbDCJrtRv4uMtgW0k0zMXKxbylbeeZ78waKcnSFjqovLtA70AEGN-VZs"
+        }
+      ]
+    },
+    {
+      "query": "microsoft update",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T19:50:00Z",
+      "related_news_urls": [
+        "https://www.theregister.com/os-platforms/2026/11/11/microsofts-patch-tuesday-cant-break-stuff-if-it-wont-install/5309059",
+        "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5132061-installation-issues-0x80070306-0x800f0989-0x800f0993-errors/",
+        "https://www.techradar.com/computing/windows/heres-everything-you-need-to-know-about-windows-11s-november-update-from-the-4-best-features-to-why-a-useful-security-change-is-annoying-some-gamers"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRQCLDZGho4Il2uA76lsWdoIBF4duar0nQPdkN6b-Iz2y63u_IY_ptierQ6vI",
+      "image_credit": "The Register",
+      "news": [
+        {
+          "url": "https://www.theregister.com/os-platforms/2026/11/11/microsofts-patch-tuesday-cant-break-stuff-if-it-wont-install/5309059",
+          "title": "Microsoft's Patch Tuesday can't break stuff if it won't install",
+          "publisher": "The Register",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRQCLDZGho4Il2uA76lsWdoIBF4duar0nQPdkN6b-Iz2y63u_IY_ptierQ6vI"
+        },
+        {
+          "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5132061-installation-issues-0x80070306-0x800f0989-0x800f0993-errors/",
+          "title": "Microsoft confirms Windows security updates installation issues",
+          "publisher": "BleepingComputer",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDvcFHutbBFAR7YGUozvUcMIVSSG0sWvVq5QBH0dbtFx9cN4xScFCpcmX1TGs"
+        },
+        {
+          "url": "https://www.techradar.com/computing/windows/heres-everything-you-need-to-know-about-windows-11s-november-update-from-the-4-best-features-to-why-a-useful-security-change-is-annoying-some-gamers",
+          "title": "Windows 11's November 2026 update is here: 4 reasons why you should download and install it right now",
+          "publisher": "TechRadar",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5cDc0gzoBn7LZQTS4VQUXLYEg-Qp7prKIyTxBcJTw6NP0Qsiiq9mZ8kgrqgA"
         }
       ]
     }
