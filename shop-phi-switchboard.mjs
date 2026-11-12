@@ -14,6 +14,8 @@ export function nextCompanionPage(page,total){
  const current=Number.isInteger(page)&&page>=0?page:0;
  return pages>1?(current+1)%pages:0;
 }
+export const AD_TRANSITION_MS=520;
+export function adTransitionDuration(reducedMotion=false){return reducedMotion?0:AD_TRANSITION_MS;}
 export function companionRotationAllowed({total=0,visible=false,pageHidden=false,focused=false,shelfOpen=false,paused=false,reducedMotion=false}={}){
  return total>2&&visible&&!pageHidden&&!focused&&!shelfOpen&&!paused&&!reducedMotion;
 }
@@ -184,7 +186,7 @@ if(typeof document!=='undefined'){
      if(generation!==pageTransition)return;
      grid.classList.remove('shopphi-is-fading');
      showPage();
-    },260);
+    },adTransitionDuration(reducedMotion));
     return;
    }
    grid.classList.remove('shopphi-is-fading');
