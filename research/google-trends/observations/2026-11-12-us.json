@@ -3,41 +3,251 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T16:01:35.085338Z",
+  "checked_at": "2026-11-12T16:31:20.331718Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "penelope cruz",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T15:40:00Z",
+      "query": "türkiye vs belgium",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-12T16:10:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/pen-lope-cruz-says-her-171935235.html",
-        "https://www.instyle.com/penelope-cruz-explains-living-spain-easier-kids-javier-bardem-12245125",
-        "https://www.realestate.com.au/news/penelope-cruz-husband-open-on-why-they-moved-to-spain/"
+        "https://www.bbc.co.uk/sport/football/live/cm0e0vp4l9g4t",
+        "https://www.usatoday.com/story/sports/soccer/2026/11/12/turkey-belgium-prediction-odds-where-to-watch-nations-league/92702771007/",
+        "https://www.goal.com/en-us/betting/tips/turkiye-vs-belgium-predictions-11-12-2026/A%3Ablt3881356180f5d13e"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTa8WcSFDf9NKoevGVeKI2ag8-ZzRQK0wmOGDhIqnVZVod5Gc8fu8sNDHIrQqw",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/pen-lope-cruz-says-her-171935235.html",
-          "title": "Penélope Cruz Says Her Kids with Javier Bardem Have More ‘Freedom’ Living in Madrid: ‘They Deserve That’",
+          "url": "https://www.bbc.co.uk/sport/football/live/cm0e0vp4l9g4t",
+          "title": "Turkey vs Belgium: UEFA Nations League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/soccer/2026/11/12/turkey-belgium-prediction-odds-where-to-watch-nations-league/92702771007/",
+          "title": "Turkey vs. Belgium Nations League prediction, start time, how to watch",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6uZAlPWpkxP8CnF2zYp-QRLSKt_FH8RuRskNzToNHvVg1EBRMMtCbpPP1o2I"
+        },
+        {
+          "url": "https://www.goal.com/en-us/betting/tips/turkiye-vs-belgium-predictions-11-12-2026/A%3Ablt3881356180f5d13e",
+          "title": "Turkiye vs Belgium Predictions: Three points a must for both sides",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVRpCp68h0Xalaq4HET7D9fhRTtyscfkTm27WQfewkjIwVp1H78jtZFG3QFw8"
+        }
+      ]
+    },
+    {
+      "query": "turquía - bélgica",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T16:10:00Z",
+      "related_news_urls": [
+        "https://www.tudn.com/futbol/uefa-nations-league/turquia-vs-belgica-a-que-hora-y-donde-ver-el-partido-de-uefa-nations-league-2026-27",
+        "https://bolavip.com/nations-league/alineaciones-de-turquia-y-belgica-por-la-liga-de-naciones-formaciones-probables",
+        "https://onefootball.com/es/noticias/turquia-belgica-los-turcos-quieren-volver-a-ganar-ante-los-suyos-43764381"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlB5ctcHqP206jzVyNqq-P3T4df26tM8M9ERCS-fgEGf4CI0FZqenYKs6GtXg",
+      "image_credit": "TUDN",
+      "news": [
+        {
+          "url": "https://www.tudn.com/futbol/uefa-nations-league/turquia-vs-belgica-a-que-hora-y-donde-ver-el-partido-de-uefa-nations-league-2026-27",
+          "title": "A qué hora y dónde ver el partido Turquía vs. Bélgica de UEFA Nations League 2026-27",
+          "publisher": "TUDN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlB5ctcHqP206jzVyNqq-P3T4df26tM8M9ERCS-fgEGf4CI0FZqenYKs6GtXg"
+        },
+        {
+          "url": "https://bolavip.com/nations-league/alineaciones-de-turquia-y-belgica-por-la-liga-de-naciones-formaciones-probables",
+          "title": "Alineaciones de Turquía y Bélgica por la Liga de Naciones: formaciones probables",
+          "publisher": "Bolavip",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeJ4eZi3YfUE7AldluEHGLCnpOjrfEfL14mgcH-BxN6vc5crHAYeYCS9z17Oo"
+        },
+        {
+          "url": "https://onefootball.com/es/noticias/turquia-belgica-los-turcos-quieren-volver-a-ganar-ante-los-suyos-43764381",
+          "title": "Turquía-Bélgica: Los turcos quieren volver a ganar ante los suyos",
+          "publisher": "OneFootball",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSasxk70glNBNVBIqel3m4CI2N0VwVfCjNOjCJeifCZ1xjuzWQQnLnCyEo8xK8"
+        }
+      ]
+    },
+    {
+      "query": "hurricanes vs kraken",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T16:10:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/hurricanes/news/projected-lineup-november-12-at-seattle",
+        "https://www.canescountry.com/general/54645/kraken-vs-hurricanes-preview-how-to-watch-and-game-thread",
+        "https://www.cbssports.com/betting/news/hurricanes-vs-kraken-nhl-odds-picks-carolina-looks-to-keep-rolling-in-rare-thursday-matinee-from-finland/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgPsaBbyVhdj2-3bPImbnB6k0BtPR3NtyvNGj3k6JChx3zI37uEE3soKxiUvs",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/hurricanes/news/projected-lineup-november-12-at-seattle",
+          "title": "Projected Lineup: November 12 at Seattle",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgPsaBbyVhdj2-3bPImbnB6k0BtPR3NtyvNGj3k6JChx3zI37uEE3soKxiUvs"
+        },
+        {
+          "url": "https://www.canescountry.com/general/54645/kraken-vs-hurricanes-preview-how-to-watch-and-game-thread",
+          "title": "Kraken vs. Hurricanes: Preview, How to Watch, and Game Thread",
+          "publisher": "Canes Country",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVzB3QLqLB20SmalPxJipKgOY4QEV5QlsalVSeOSzBcaKfz3XFpP9iCh4f3KY"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/hurricanes-vs-kraken-nhl-odds-picks-carolina-looks-to-keep-rolling-in-rare-thursday-matinee-from-finland/",
+          "title": "Hurricanes vs. Kraken NHL odds, picks: Carolina looks to keep rolling in rare Thursday matinee from Finland",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjtrO6Zbt4rq7t0ptPKFJDFIAkbpWDSHQ6i0jJhX3MTw9P9H2aagT_b2d5QBk"
+        }
+      ]
+    },
+    {
+      "query": "noah kahan fenway",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T16:10:00Z",
+      "related_news_urls": [
+        "https://www.bostonglobe.com/2026/11/10/arts/noah-kahan-fenway-park-2027/",
+        "https://www.wmur.com/article/thousands-attempt-noah-kahan-at-fenway-presale-tickets/74394530",
+        "https://www.freep.com/story/entertainment/music/brian-mccollum/2026/11/10/noah-kahan-ford-field-second-concert-detroit-2027/92708506007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHGv9g0MaIfrA1EcuM-dYkROUkjfldulH7Bby2VegwPv-EDrKUvVfRuTyTLGM",
+      "image_credit": "The Boston Globe",
+      "news": [
+        {
+          "url": "https://www.bostonglobe.com/2026/11/10/arts/noah-kahan-fenway-park-2027/",
+          "title": "Noah Kahan adds two more Fenway Park shows to tour next summer",
+          "publisher": "The Boston Globe",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHGv9g0MaIfrA1EcuM-dYkROUkjfldulH7Bby2VegwPv-EDrKUvVfRuTyTLGM"
+        },
+        {
+          "url": "https://www.wmur.com/article/thousands-attempt-noah-kahan-at-fenway-presale-tickets/74394530",
+          "title": "Thousands fight for chance to see Noah Kahan at Fenway Park in 'the ticket war'",
+          "publisher": "WMUR",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRGd5DpJf3zFppZ45twR22Lcq8CGldws290d-gNepTiy9M2KeVfJqkIo7WBto"
+        },
+        {
+          "url": "https://www.freep.com/story/entertainment/music/brian-mccollum/2026/11/10/noah-kahan-ford-field-second-concert-detroit-2027/92708506007/",
+          "title": "Noah Kahan adds second Ford Field show amid heavy ticket demand",
+          "publisher": "Detroit Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQolaBFA2P-TcoUNRrNMiK9Sqxcrj318r2iMcRPo2kNy_vk48l5EhfJFQytyhY"
+        }
+      ]
+    },
+    {
+      "query": "whoopi goldberg",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T16:00:00Z",
+      "related_news_urls": [
+        "https://www.the-independent.com/arts-entertainment/tv/news/whoopi-goldberg-the-view-democrats-midterms-b3082862.html",
+        "https://www.tvinsider.com/1302712/the-view-whoopi-goldberg-message-pete-hegseth-democrat-party-leadership-fight/",
+        "https://www.yahoo.com/entertainment/articles/watch-view-debates-pete-hegseth-033403065.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbZELV3z8KVOcFXZ9TSpctDT0zppIXngoj0OcKwPmDty5-Ro3zVtOVm1_LHEY",
+      "image_credit": "The Independent",
+      "news": [
+        {
+          "url": "https://www.the-independent.com/arts-entertainment/tv/news/whoopi-goldberg-the-view-democrats-midterms-b3082862.html",
+          "title": "Whoopi Goldberg scolds Democrats with blunt rebuke on The View",
+          "publisher": "The Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbZELV3z8KVOcFXZ9TSpctDT0zppIXngoj0OcKwPmDty5-Ro3zVtOVm1_LHEY"
+        },
+        {
+          "url": "https://www.tvinsider.com/1302712/the-view-whoopi-goldberg-message-pete-hegseth-democrat-party-leadership-fight/",
+          "title": "Whoopi Goldberg Speaks Directly to Pete Hegseth & Democrats on ‘The View’",
+          "publisher": "TV Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBImQwR1RxmXe-apJ1AsxX8gBSItPTNwNUVK6gT-0vVwbqGLQUfUsxxhn2zF8"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/articles/watch-view-debates-pete-hegseth-033403065.html",
+          "title": "WATCH: The View Debates Pete Hegseth Impeachment Articles [Video]",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTa8WcSFDf9NKoevGVeKI2ag8-ZzRQK0wmOGDhIqnVZVod5Gc8fu8sNDHIrQqw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyF8XUU49GlF_lYrjE2BfopupywivRAp0etW86z477cN-_DjD_4L4JJ2hsS60"
+        }
+      ]
+    },
+    {
+      "query": "steve witkoff",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T15:50:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/12/world/video/us-envoy-steve-witkoff-ukraine-talks-intldsk",
+        "https://www.npr.org/2026/11/12/nx-s1-6038809/us-envoys-meet-putin-russia-ukraine-war-talks",
+        "https://www.reuters.com/world/europe/us-russia-ukraine-start-second-day-abu-dhabi-peace-talks-2026-11-11/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTipXLguIjQ1NzVKchg2xSuWHxibAriA-6HixPXpHDEynoBCuPQPph27fu8UG4",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/12/world/video/us-envoy-steve-witkoff-ukraine-talks-intldsk",
+          "title": "CNN doorstops US envoy Steve Witkoff",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTipXLguIjQ1NzVKchg2xSuWHxibAriA-6HixPXpHDEynoBCuPQPph27fu8UG4"
         },
         {
-          "url": "https://www.instyle.com/penelope-cruz-explains-living-spain-easier-kids-javier-bardem-12245125",
-          "title": "Penélope Cruz Explains Why Living in Spain Is “Easier” for Her Two Kids With Husband Javier Bardem",
-          "publisher": "InStyle",
+          "url": "https://www.npr.org/2026/11/12/nx-s1-6038809/us-envoys-meet-putin-russia-ukraine-war-talks",
+          "title": "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
+          "publisher": "NPR",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXcL1IToSuWOgYxDRwZqm7FFEzEtRsUcQP1IWEGsSmvi8fPf1y_RVIeM-tyeI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRlk-SFJotZ0yj9OPsCv_Pca-7msJ4VnAGOMeDvI1pIXxDegemuXLMgDRQh3kU"
         },
         {
-          "url": "https://www.realestate.com.au/news/penelope-cruz-husband-open-on-why-they-moved-to-spain/",
-          "title": "Penelope Cruz, husband open on why they moved to Spain",
-          "publisher": "Real Estate",
+          "url": "https://www.reuters.com/world/europe/us-russia-ukraine-start-second-day-abu-dhabi-peace-talks-2026-11-11/",
+          "title": "Russia, Ukraine reach deal on prisoner swap as US says lack of trust holds back talks",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUVMtpbEwAnKOZ_y0D_ugn73xiQh8FmwaA37MleiWrjnwGp2jR3PRmbe8ht6o"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJ1TVfFXyLSAxWUymGnYJkzw3nCtlBxlSlu6UcORYzu7LIwlCQOYHwzlSajFU"
+        }
+      ]
+    },
+    {
+      "query": "robbie avila",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T15:40:00Z",
+      "related_news_urls": [
+        "https://bleacherreport.com/articles/25532617-robbie-avila-nears-contract-new-landing-spot-latest-rumors-after-lakers-stint-slu-transfer",
+        "https://sports.yahoo.com/articles/tcu-closing-adding-saint-louis-152701568.html",
+        "https://www.nytimes.com/athletic/7760281/2026/11/06/robbie-avila-saint-louis-basketball-eligibility/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc47FNTVbawUqGBpdELHPRlxgtTTCBRudXq7EMNM6Myett46Mghac4egrSRrs",
+      "image_credit": "Bleacher Report",
+      "news": [
+        {
+          "url": "https://bleacherreport.com/articles/25532617-robbie-avila-nears-contract-new-landing-spot-latest-rumors-after-lakers-stint-slu-transfer",
+          "title": "Robbie Avila Nears Contract for New Landing Spot in Latest Rumors After Lakers Stint, SLU Transfer",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTc47FNTVbawUqGBpdELHPRlxgtTTCBRudXq7EMNM6Myett46Mghac4egrSRrs"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/tcu-closing-adding-saint-louis-152701568.html",
+          "title": "TCU closing in on adding Saint Louis transfer Robbie Avila",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrBbhrSKI0QyS96vu-KvWvXzjRkQYyHw9k6AEwsQTXksILTbDRV7Oc7rNqybw"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7760281/2026/11/06/robbie-avila-saint-louis-basketball-eligibility/",
+          "title": "A college basketball cult hero is eligible to return. His team doesn’t have a spot for him",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK-eBBBYvJrJF2EGtGLOZPPwblVnZ4KY4KHGFMgm3f8OfG5RNg8TXAYtTM23c"
         }
       ]
     },
@@ -77,37 +287,37 @@
       ]
     },
     {
-      "query": "robbie avila",
+      "query": "penelope cruz",
       "approx_searches": "500+",
       "published_at": "2026-11-12T15:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/tcu-closing-adding-saint-louis-152701568.html",
-        "https://www.nytimes.com/athletic/7760281/2026/11/06/robbie-avila-saint-louis-basketball-eligibility/",
-        "https://www.cbssports.com/college-basketball/news/robbie-avila-saint-louis-eligible-granted-preliminary-injunction/"
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/pen-lope-cruz-says-her-171935235.html",
+        "https://www.instyle.com/penelope-cruz-explains-living-spain-easier-kids-javier-bardem-12245125",
+        "https://www.realestate.com.au/news/penelope-cruz-husband-open-on-why-they-moved-to-spain/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrBbhrSKI0QyS96vu-KvWvXzjRkQYyHw9k6AEwsQTXksILTbDRV7Oc7rNqybw",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTa8WcSFDf9NKoevGVeKI2ag8-ZzRQK0wmOGDhIqnVZVod5Gc8fu8sNDHIrQqw",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/tcu-closing-adding-saint-louis-152701568.html",
-          "title": "TCU closing in on adding Saint Louis transfer Robbie Avila",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/pen-lope-cruz-says-her-171935235.html",
+          "title": "Penélope Cruz Says Her Kids with Javier Bardem Have More ‘Freedom’ Living in Madrid: ‘They Deserve That’",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrBbhrSKI0QyS96vu-KvWvXzjRkQYyHw9k6AEwsQTXksILTbDRV7Oc7rNqybw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTa8WcSFDf9NKoevGVeKI2ag8-ZzRQK0wmOGDhIqnVZVod5Gc8fu8sNDHIrQqw"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7760281/2026/11/06/robbie-avila-saint-louis-basketball-eligibility/",
-          "title": "A college basketball cult hero is eligible to return. His team doesn’t have a spot for him",
-          "publisher": "The New York Times",
+          "url": "https://www.instyle.com/penelope-cruz-explains-living-spain-easier-kids-javier-bardem-12245125",
+          "title": "Penélope Cruz Explains Why Living in Spain Is “Easier” for Her Two Kids With Husband Javier Bardem",
+          "publisher": "InStyle",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK-eBBBYvJrJF2EGtGLOZPPwblVnZ4KY4KHGFMgm3f8OfG5RNg8TXAYtTM23c"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXcL1IToSuWOgYxDRwZqm7FFEzEtRsUcQP1IWEGsSmvi8fPf1y_RVIeM-tyeI"
         },
         {
-          "url": "https://www.cbssports.com/college-basketball/news/robbie-avila-saint-louis-eligible-granted-preliminary-injunction/",
-          "title": "Saint Louis star Robbie Avila granted preliminary injunction, but CSC blocks return due to roster-limit crunch",
-          "publisher": "CBS Sports",
+          "url": "https://www.realestate.com.au/news/penelope-cruz-husband-open-on-why-they-moved-to-spain/",
+          "title": "Penelope Cruz, husband open on why they moved to Spain",
+          "publisher": "Real Estate",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1U0BHwIkjAu0bsKBgJkT6qrDCcW4TNakOiqD9U00TzUvMNfibnS6HSqfiWFg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUVMtpbEwAnKOZ_y0D_ugn73xiQh8FmwaA37MleiWrjnwGp2jR3PRmbe8ht6o"
         }
       ]
     },
@@ -143,216 +353,6 @@
           "publisher": "Sole Retriever",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRab3ZXBJwM7120oHZLSduQqV6u0QUkH3Cnozao3j6q2k-U8fVXOauooucAjuo"
-        }
-      ]
-    },
-    {
-      "query": "dr congo vs sierra leone",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T15:30:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cqkgjm5yly1vt",
-        "https://www.cafonline.com/afcon2025/news/sierra-leone-name-25-man-squad-for-crucial-dr-congo-totalenergies-caf-afcon-qualifiers/",
-        "https://www.thestatszone.com/dr-congo-vs-sierra-leone-preview-prediction-2027-africa-cup-of-nations-qualifying-237680"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSi28upkkYhcdUh7vdXSSog0MPRKKGMiW53t2zEtSWrzytpkKkuOsBy47kDXjc",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cqkgjm5yly1vt",
-          "title": "Congo DR vs Sierra Leone: Africa Cup of Nations Qualification stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSi28upkkYhcdUh7vdXSSog0MPRKKGMiW53t2zEtSWrzytpkKkuOsBy47kDXjc"
-        },
-        {
-          "url": "https://www.cafonline.com/afcon2025/news/sierra-leone-name-25-man-squad-for-crucial-dr-congo-totalenergies-caf-afcon-qualifiers/",
-          "title": "Sierra Leone name 25-man squad for crucial DR Congo TotalEnergies CAF AFCON qualifiers",
-          "publisher": "CAFOnline.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDAPNrLXbJjAEl7QvDvrhNQXalq7dMyoTShFAJdcQBHfB2FF9Zk_fQAByPjks"
-        },
-        {
-          "url": "https://www.thestatszone.com/dr-congo-vs-sierra-leone-preview-prediction-2027-africa-cup-of-nations-qualifying-237680",
-          "title": "DR Congo vs Sierra Leone Preview & Prediction | 2027 Africa Cup of Nations Qualifying",
-          "publisher": "The Stats Zone",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxPJTNWGV11LoZXV6_W9VKPPtfQyaqUhHAt6r9yx_Ja-zfUDS3D7HBzOXKn7o"
-        }
-      ]
-    },
-    {
-      "query": "nintendo black friday game discounts",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-12T15:20:00Z",
-      "related_news_urls": [
-        "https://www.nintendo.com/us/whatsnew/nintendo-announces-black-friday-offers-to-help-spread-joy-this-holiday-season/",
-        "https://mashable.com/tech/nov-9-nintendo-switch-2-deal",
-        "https://9to5google.com/2026/11/11/the-nintendo-switch-2-is-down-to-its-lowest-price-of-the-season-tonight-only/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReUrW-C27nsOYwRjSpTrQ8Bk_yUOqc3_Jz97k-vqeF9AJX9tlOtmhX2w1VnbI",
-      "image_credit": "Nintendo",
-      "news": [
-        {
-          "url": "https://www.nintendo.com/us/whatsnew/nintendo-announces-black-friday-offers-to-help-spread-joy-this-holiday-season/",
-          "title": "Nintendo announces Black Friday offers to help spread joy this holiday season - News - Nintendo Official Site",
-          "publisher": "Nintendo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReUrW-C27nsOYwRjSpTrQ8Bk_yUOqc3_Jz97k-vqeF9AJX9tlOtmhX2w1VnbI"
-        },
-        {
-          "url": "https://mashable.com/tech/nov-9-nintendo-switch-2-deal",
-          "title": "The Nintendo Switch 2 gets a rare deal way ahead of Black Friday",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkCwfPlSALAicmzH76I52iowQmdJ6bLK-1iW9e9hPJ7mcLAAUTPSdexzZns04"
-        },
-        {
-          "url": "https://9to5google.com/2026/11/11/the-nintendo-switch-2-is-down-to-its-lowest-price-of-the-season-tonight-only/",
-          "title": "The Nintendo Switch 2 is down to its lowest price of the season tonight only",
-          "publisher": "9to5Google",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSIN5_42gCl63pYRo7EvD-hVb7Lqz44_hanG-o7MW-Ioh-W2ju6fZ343tXj-E"
-        }
-      ]
-    },
-    {
-      "query": "kim kardashian louis vuitton nurse outfit",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T15:20:00Z",
-      "related_news_urls": [
-        "https://www.vogue.com/article/kim-kardashian-louis-vuitton-marc-jacobs-nurse-look",
-        "https://www.instyle.com/kim-kardashian-bares-underwear-sheer-dress-20-years-ago-12249614",
-        "https://www.wmagazine.com/fashion/kim-kardashian-law-roach-nurse-louis-vuitton-spring-2008-richard-prince"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1A_bUokxnOXc8e4LeIgix2T0_FeCR6TKT6CgmkfB_NuwtApdaR6HGL1SiuJc",
-      "image_credit": "Vogue",
-      "news": [
-        {
-          "url": "https://www.vogue.com/article/kim-kardashian-louis-vuitton-marc-jacobs-nurse-look",
-          "title": "Kim Kardashian Plays Nurse in One of Louis Vuitton’s Rarest Runway Looks",
-          "publisher": "Vogue",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1A_bUokxnOXc8e4LeIgix2T0_FeCR6TKT6CgmkfB_NuwtApdaR6HGL1SiuJc"
-        },
-        {
-          "url": "https://www.instyle.com/kim-kardashian-bares-underwear-sheer-dress-20-years-ago-12249614",
-          "title": "Kim Kardashian Bares Her Underwear in Sheer Silk Dress From Nearly 20 Years Ago",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBJz5J9I173YK7_jXH96e04tIJAkisAyvOyvA54dTL3jMogHJYdeLlxtFcOr8"
-        },
-        {
-          "url": "https://www.wmagazine.com/fashion/kim-kardashian-law-roach-nurse-louis-vuitton-spring-2008-richard-prince",
-          "title": "Hello, Nurse!: Kim Kardashian Pulls One of Louis Vuitton’s Most Legendary Looks",
-          "publisher": "W Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBij5cl5WVMr-JKPu3m4rIq4rDyZg_gBIMmvNxUUym3UlrXfrf3KsRONrCPhk"
-        }
-      ]
-    },
-    {
-      "query": "petroleum",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-12T15:20:00Z",
-      "related_news_urls": [
-        "https://www.npr.org/2026/11/11/nx-s1-6037588/gasoline-price-below-4-dollars-gallon",
-        "https://www.wbaltv.com/article/why-are-gas-prices-dropping-and-how-low-will-they-go/74404165",
-        "https://www.marketplace.org/story/2026/11/10/oil-gas-and-diesel-prices-are-declining-for-different-reasons"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7a0Wl-hcW94XbWj9mcCjjCn4OHRRgVWVsKxtnp5LCWqinWOQl1Qp1UkOBwf8",
-      "image_credit": "NPR",
-      "news": [
-        {
-          "url": "https://www.npr.org/2026/11/11/nx-s1-6037588/gasoline-price-below-4-dollars-gallon",
-          "title": "Why is gasoline suddenly under $4 a gallon?",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7a0Wl-hcW94XbWj9mcCjjCn4OHRRgVWVsKxtnp5LCWqinWOQl1Qp1UkOBwf8"
-        },
-        {
-          "url": "https://www.wbaltv.com/article/why-are-gas-prices-dropping-and-how-low-will-they-go/74404165",
-          "title": "Why are gas prices dropping and how low will they go?",
-          "publisher": "WBAL-TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrzXhCs1PXEYtkNxrBBVc99RuDp4ymGVhttOyNoCIBT_VcANlZfmnvRcmGmW4"
-        },
-        {
-          "url": "https://www.marketplace.org/story/2026/11/10/oil-gas-and-diesel-prices-are-declining-for-different-reasons",
-          "title": "Oil, gas, and diesel prices are declining — but not all for the same reason",
-          "publisher": "Marketplace.org",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEQZwJSJW7N7USX1Iew9RR8KTvkbsSVUT3kUWt921U3SG8SnM9rFs4UmGHMdk"
-        }
-      ]
-    },
-    {
-      "query": "tyra banks",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T15:10:00Z",
-      "related_news_urls": [
-        "https://thatgrapejuice.net/entertainment/2026/11/tyra-banks-reveals-shes-single-opens-up-dating/?utm_source=rss&utm_medium=rss&utm_campaign=tyra-banks-reveals-shes-single-opens-up-dating",
-        "https://www.fastcompany.com/91640375/tyra-banks-on-the-power-of-being-a-little-bit-crazy",
-        "https://www.blogto.com/eat_drink/2026/11/tyra-banks-dutch-dreams/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuoFnwybqDKK6HD9654NwD5xKRBmZxjvXCt4WudcgTsthb-6YJkYh-FHv4Pfg",
-      "image_credit": "That Grape Juice.net",
-      "news": [
-        {
-          "url": "https://thatgrapejuice.net/entertainment/2026/11/tyra-banks-reveals-shes-single-opens-up-dating/?utm_source=rss&utm_medium=rss&utm_campaign=tyra-banks-reveals-shes-single-opens-up-dating",
-          "title": "Tyra Banks Reveals She’s “Single”, Opens Up About Dating Again",
-          "publisher": "That Grape Juice.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuoFnwybqDKK6HD9654NwD5xKRBmZxjvXCt4WudcgTsthb-6YJkYh-FHv4Pfg"
-        },
-        {
-          "url": "https://www.fastcompany.com/91640375/tyra-banks-on-the-power-of-being-a-little-bit-crazy",
-          "title": "Tyra Banks on the power of being a ‘little bit crazy’",
-          "publisher": "Fast Company",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFOCkwBiAlEXNaVCA_-un1XGEEBbkM4SJcqkbhOMTY1F0Dh0ss9TiqNvgn2Dk"
-        },
-        {
-          "url": "https://www.blogto.com/eat_drink/2026/11/tyra-banks-dutch-dreams/",
-          "title": "Here's what Tyra Banks just ordered from popular Toronto ice cream shop",
-          "publisher": "blogTO",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5UewCI0r3C1PVxTndTAwAoH4T9AMnLhGoWiUgg8FolFKOiEO7nAW93Zxlb3k"
-        }
-      ]
-    },
-    {
-      "query": "star wars",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T15:10:00Z",
-      "related_news_urls": [
-        "https://www.starwars.com/news/star-wars-50-campaign",
-        "https://www.cnbc.com/2026/11/12/star-wars-cosm-dome-screenings.html",
-        "https://www.goodmorningamerica.com/shop/story/star-wars-celebrate-50-years-2027-138045099"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTefWhMdqsKYdd7B6JX5WgCnAY2yjaCgvH3aa-vAkqHTXe7bnQH9XghsPzvxQE",
-      "image_credit": "StarWars.com",
-      "news": [
-        {
-          "url": "https://www.starwars.com/news/star-wars-50-campaign",
-          "title": "Celebrate 50 Years of Star Wars with New Documentary, Key Art, and Limited-Edition Merch",
-          "publisher": "StarWars.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTefWhMdqsKYdd7B6JX5WgCnAY2yjaCgvH3aa-vAkqHTXe7bnQH9XghsPzvxQE"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/12/star-wars-cosm-dome-screenings.html",
-          "title": "Disney's 'Star Wars' is coming to Cosm domes ahead of 50th anniversary as part of multiyear film deal",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFqCCC9Y1oqUaHR6-uKTRncNHiBzYmqcZm2iTQYZc2pYGwq5wbhDngn-vS5sc"
-        },
-        {
-          "url": "https://www.goodmorningamerica.com/shop/story/star-wars-celebrate-50-years-2027-138045099",
-          "title": "'Star Wars' will celebrate 50 years in 2027: What to know and what to shop",
-          "publisher": "Good Morning America",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAA7EBne9DgEIVaGVLLkBPUfJo4ce_lPqomNTk3F0Jacqm_3vxYBArk072R7Q"
         }
       ]
     }
