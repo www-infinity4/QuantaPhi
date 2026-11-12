@@ -40,6 +40,19 @@ test('an invalid duplicate cannot hide a later source-backed card with the same 
  ];
  assert.deepEqual(suggestFeedSearch(rows,'rock').map(x=>x.label),['Rock Station']);
 });
+test('contextual searches match terms across the public source metadata',()=>{
+ const result=suggestFeedSearch(cards,'classic music');
+ assert.deepEqual(result.map(item=>[item.label,item.sourceUrl]),[['Classic Rock Radio','https://example.org/rock']]);
+ assert.deepEqual(suggestFeedSearch(cards,'classic unknown'),[]);
+});
+test('catalog entries with restricted visibility stay out of public autocomplete',()=>{
+ const records=[
+  {id:'owner',name:'Project Owner',url:'/continuity/owner/',visibility:'private'},
+  {id:'restricted',name:'Project Restricted',official:'https://example.org/restricted',adultOnly:true},
+  {id:'public',name:'Project Public',official:'https://example.org/public',visibility:'public'},
+ ];
+ assert.deepEqual(suggestFeedSearch(records,'project').map(item=>item.id),['public']);
+});
 test('the existing Oracle feed uses opt-in filling without automatic form submission',()=>{
  const ui=readFileSync(new URL('../quanta-feed.mjs',import.meta.url),'utf8');
  const css=readFileSync(new URL('../quanta-feed.css',import.meta.url),'utf8');

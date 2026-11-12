@@ -2,6 +2,8 @@ name: Bubbles public live and owner-boundary smoke
 on:
   pull_request:
     paths:
+      - 'bubbles-complete-me*'
+      - 'test/bubbles-complete-me.test.mjs'
       - 'scripts/bubbles-live-smoke.mjs'
       - 'test/bubbles-live-smoke.test.mjs'
       - '.github/workflows/bubbles-live-smoke.yml'
@@ -9,6 +11,8 @@ on:
     branches: [main]
     paths:
       - 'bubbles-ai.js'
+      - 'bubbles-complete-me*'
+      - 'test/bubbles-complete-me.test.mjs'
       - 'bubbles-brain-actions.js'
       - 'workers/bubbles-tools/**'
       - 'scripts/bubbles-live-smoke.mjs'
@@ -35,6 +39,8 @@ jobs:
           node-version: '24'
       - name: Verify test itself without network
         run: node --test test/bubbles-live-smoke.test.mjs
+      - name: Verify Complete Me through the existing Brain owner intake and runner
+        run: node --test test/bubbles-complete-me.test.mjs
       - name: Check public Bubbles health, CORS and private owner boundary
         env:
           # A PR only tests public security boundaries, not production GPT billable inference.
