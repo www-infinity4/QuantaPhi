@@ -38,7 +38,15 @@ button.secondary{background:transparent}button:disabled{opacity:.48;cursor:not-a
 </div>
 </section>
 <div id="status" role="status" aria-live="polite">Checking availability…</div>
-<p class="small">Turning analytics off stops future consented collection through the event bridge once deployed. Events already accepted or stored require separate retention and deletion controls; these are not yet live. The event service remains disabled until reviewed and deployed.</p>
+<section class="choices" style="margin-top:18px" aria-labelledby="data-heading">
+<h2 id="data-heading">My saved Quick Card analytics</h2>
+<p>Download only the event records associated with your verified Wallet account, or erase them. Erasure also turns off this first-party analytics consent. This does not erase your Wallet, purchases, or coins.</p>
+<div class="controls"><button id="export-events" type="button" class="secondary">Download my events</button></div>
+<label style="margin-top:18px"><input id="confirm-erasure" type="checkbox"><span>I understand this permanently erases my saved first-party event history, not my Wallet records.</span></label>
+<div class="controls"><button id="erase-events" type="button" disabled>Erase my analytics data</button></div>
+<div id="data-status" role="status" aria-live="polite" style="margin-top:14px">Data-management availability is checked when you use these controls.</div>
+</section>
+<p class="small">Turning analytics off stops new consented collection. Data export and erasure are separately controlled, and are not live until their private service has passed review and deployment. A minimal revoked-consent marker remains after erasure to stop delayed queued events.</p>
 </main>
 </body>
 </html>
