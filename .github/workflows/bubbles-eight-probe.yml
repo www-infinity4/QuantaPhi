@@ -1,0 +1,31 @@
+name: Bubbles eight live probe regressions
+on:
+  pull_request:
+    paths:
+      - 'test-ground-ai/engine.mjs'
+      - 'scripts/test-ground-live.mjs'
+      - 'bubbles-capability-intent.mjs'
+      - 'workers/bubbles-tools/capability-directory.mjs'
+      - 'workers/bubbles-tools/worker.mjs'
+      - 'test/bubbles-eight-unverified.test.mjs'
+      - 'scripts/bubbles-search-public-diagnostic.mjs'
+      - '.github/workflows/bubbles-eight-probe.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check test-ground-ai/engine.mjs
+      - run: node --check bubbles-capability-intent.mjs
+      - run: node --check workers/bubbles-tools/capability-directory.mjs
+      - run: node --test test/bubbles-eight-unverified.test.mjs test/test-ground-ai.test.mjs test/bubbles-capability-review.test.mjs test/bubbles-live-lookup.test.mjs test/bubbles-search-binding.test.mjs
+      - name: Observe deployed public SearXNG broker independently of Cloudflare dashboard login
+        run: node scripts/bubbles-search-public-diagnostic.mjs
