@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T14:31:23.304722Z",
+  "checked_at": "2026-11-12T15:01:35.132192Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "last time i checked tour",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T14:10:00Z",
+      "query": "white house",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T14:40:00Z",
       "related_news_urls": [
-        "https://www.buffalobills.com/news/morgan-wallen-concert-tour-announcement-buffalo-highmark-stadium-2027",
-        "https://247sports.com/college/georgia/article/country-music-superstar-morgan-wallen-to-play-sanford-stadium-summer-concerts-292593141/",
-        "https://holler.country/news/breaking/is-this-a-clue-that-morgan-wallen-is-announcing-a-2027-tour-next-week/"
+        "https://www.nytimes.com/2026/11/11/us/politics/trump-democrats-congress-oversight-committee.html",
+        "https://www.npr.org/2026/11/12/nx-s1-6037540/trump-white-house-democrats-investigations-robert-garcia",
+        "https://www.nbcnews.com/politics/white-house/white-house-warns-congressional-democrats-investigating-us-may-crime-rcna608752"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4G44OXFDuyuyc6Bvp7I1V4As-bR18QVIB6ElnjSGEMawiFSx3khrBrAgLC-I",
-      "image_credit": "Buffalo Bills",
-      "news": [
-        {
-          "url": "https://www.buffalobills.com/news/morgan-wallen-concert-tour-announcement-buffalo-highmark-stadium-2027",
-          "title": "Morgan Wallen’s Last Time I Checked Tour is coming to Buffalo on July 23 and 24, 2027",
-          "publisher": "Buffalo Bills",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4G44OXFDuyuyc6Bvp7I1V4As-bR18QVIB6ElnjSGEMawiFSx3khrBrAgLC-I"
-        },
-        {
-          "url": "https://247sports.com/college/georgia/article/country-music-superstar-morgan-wallen-to-play-sanford-stadium-summer-concerts-292593141/",
-          "title": "Country music superstar Morgan Wallen to play Sanford Stadium summer concerts",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJHt1Q21PHElSjK5EjUjPugVhePWf69ikVKKytJGKFvKx8H_3EzdRMKYJNB6A"
-        },
-        {
-          "url": "https://holler.country/news/breaking/is-this-a-clue-that-morgan-wallen-is-announcing-a-2027-tour-next-week/",
-          "title": "Is This a Clue That Morgan Wallen Is Announcing a 2027 Tour Next Week?",
-          "publisher": "Holler Country",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0RICLiiu-k7zmjh5WlJDY2ZNrUH45nCqgetGn2GnMFlQKjasCJPnuOux7cNo"
-        }
-      ]
-    },
-    {
-      "query": "ghana vs somalia",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T14:10:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/pidgin/articles/c30rkwlgj0y2o",
-        "https://www.ghanaweb.com/GhanaHomePage/SportsArchive/The-local-players-are-all-performing-well-at-club-level-Amankwah-Mireku-2060766",
-        "https://www.modernghana.com/videonews/joynews/2/751780"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgbrWigPc_oHttvKkIUsvOi4oyrvxUVYWhulTANmC-iD4PYT7C2bHRClw-P6k",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/pidgin/articles/c30rkwlgj0y2o",
-          "title": "Ghana vs Somalia Afcon qualifiers match preview",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgbrWigPc_oHttvKkIUsvOi4oyrvxUVYWhulTANmC-iD4PYT7C2bHRClw-P6k"
-        },
-        {
-          "url": "https://www.ghanaweb.com/GhanaHomePage/SportsArchive/The-local-players-are-all-performing-well-at-club-level-Amankwah-Mireku-2060766",
-          "title": "‘The local players are all performing well at club level ‘- Amankwah Mireku",
-          "publisher": "GhanaWeb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiqHbrs3WhGppJvxtq0C_n5sh0lGog-eEyTh7iPbiQ3TWYod277KvLc3PExWs"
-        },
-        {
-          "url": "https://www.modernghana.com/videonews/joynews/2/751780",
-          "title": "AFCON 2027: Ernest Nuamah backs Black Stars to qualify despite poor start | AM Sports",
-          "publisher": "Modern Ghana",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpnd8bwnSN-pwWNeU8SNw6rMDIg6tyaITLu3BCjKste3Ywqo3iqgHqnFIUcYk"
-        }
-      ]
-    },
-    {
-      "query": "should i buy nvidia stock now",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T14:10:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/news/nvidia-stock-dives-report-board-prepares-oust-jensen-huang/",
-        "https://finance.yahoo.com/markets/stocks/articles/could-5-000-invested-nvidia-132700459.html",
-        "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6bVxa6yKboIAOd04Bdj4oJRhMYWcEcE2mI8uCDNfZiECAlR93nglAYQKPEuY",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/news/nvidia-stock-dives-report-board-prepares-oust-jensen-huang/",
-          "title": "Nvidia's stock dives as chipmaker's board weighs move to oust CEO Jensen Huang",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6bVxa6yKboIAOd04Bdj4oJRhMYWcEcE2mI8uCDNfZiECAlR93nglAYQKPEuY"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/could-5-000-invested-nvidia-132700459.html",
-          "title": "Could $5,000 Invested in Nvidia Today Make You a Millionaire?",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3GoIOF3bDtTW_hD6xrXp4owyFhrO8AsmEFNOf6TCkWLgltdnfKU_pzYbdm84"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html",
-          "title": "Nvidia shares rebound as Jensen Huang faces scrutiny ahead of earnings",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSEbMdhqJufqjcJPQxuoCuu9ptFYZ6Jvmuf7jkkjyPi3GbcfNSEVV0n33tKJQ"
-        }
-      ]
-    },
-    {
-      "query": "what time does stock market open",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T14:10:00Z",
-      "related_news_urls": [
-        "https://www.marketwatch.com/story/how-the-stock-market-has-performed-after-veterans-day-over-the-past-decade-7b47233e",
-        "https://www.military.com/video/united-states-armed-forces-rings-opening-bell-at-new-york-stock-exchange",
-        "https://themalaysianreserve.com/2026/11/11/nyse-honors-those-who-have-served-on-veterans-day-nyse-content-update/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQId2BKnTg4g9TDS6itT-_lvsMMzVf54E2cCGLWvBpb9ZsUPG9GyqkXiQ6NDGE",
-      "image_credit": "MarketWatch",
-      "news": [
-        {
-          "url": "https://www.marketwatch.com/story/how-the-stock-market-has-performed-after-veterans-day-over-the-past-decade-7b47233e",
-          "title": "How the stock market has performed after Veterans Day over the past decade",
-          "publisher": "MarketWatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQId2BKnTg4g9TDS6itT-_lvsMMzVf54E2cCGLWvBpb9ZsUPG9GyqkXiQ6NDGE"
-        },
-        {
-          "url": "https://www.military.com/video/united-states-armed-forces-rings-opening-bell-at-new-york-stock-exchange",
-          "title": "United States Armed Forces Rings Opening Bell at New York Stock Exchange",
-          "publisher": "Military.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTL4uSf5qpmr3-u3OFIkK5WAe4q4iYd2Vn9UWjIMrDLP7K9967NYoxKuXdxAwg"
-        },
-        {
-          "url": "https://themalaysianreserve.com/2026/11/11/nyse-honors-those-who-have-served-on-veterans-day-nyse-content-update/",
-          "title": "NYSE Honors Those Who Have Served on Veterans Day: NYSE Content Update",
-          "publisher": "The Malaysian Reserve",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRI7lZaUxWdtzf3s9Au4lmWZl8tEWRiKZ3c3oeLaoKEtnvTPFpIr-6K2ABQmlw"
-        }
-      ]
-    },
-    {
-      "query": "when does the stock market open",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-12T14:00:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-veterans-day-153919156.html",
-        "https://www.today.com/life/holidays/open-veterans-day-2026-banks-post-office-what-closed-rcna607019",
-        "https://www.barrons.com/articles/stock-market-open-closed-today-veterans-day-abd7b4bb"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQHQDDIUHht5V9MmuYyGerwQdxQAiTPhb_ug869F7ngIV5lLXaGdVyqTQQzzlQ",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-veterans-day-153919156.html",
-          "title": "Is the stock market open on Veterans Day?",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQHQDDIUHht5V9MmuYyGerwQdxQAiTPhb_ug869F7ngIV5lLXaGdVyqTQQzzlQ"
-        },
-        {
-          "url": "https://www.today.com/life/holidays/open-veterans-day-2026-banks-post-office-what-closed-rcna607019",
-          "title": "Veterans Day is a Federal Holiday — Here’s What’s Open and Closed on Wednesday, Nov. 11",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqH1m6TlO5yQ2_THQy3_NbWdqwVFKkl5QKZ3igj5XFagAwyhVWChraeV5IQsI"
-        },
-        {
-          "url": "https://www.barrons.com/articles/stock-market-open-closed-today-veterans-day-abd7b4bb",
-          "title": "Is the Stock Market Open Today? Here Are the Trading Hours for Veterans Day.",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOKzHIkXjZLaoo5G5t6Glhgz07tML9keeFBJFbpYHbOy9CyQO_DzKA2g4zmss"
-        }
-      ]
-    },
-    {
-      "query": "trump letter to biden",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T13:50:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/10/us/politics/biden-trump-letter.html",
-        "https://www.the-independent.com/news/world/americas/us-politics/biden-memoir-trump-2024-white-house-meeting-b3081741.html",
-        "https://www.theatlantic.com/politics/2026/11/biden-trump-democracy-elections/689343/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRo4M8lYZRZL83-O4V-dHJ7XooC8CkRoN7o9CJcnHvZC2P0fNSXta1DlcqjZnU",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTCT-eWrVa1cTKjxYXeyimkaZw6bjF6Xm4-rzN7lTeCwNCO7VOMX5c4SwTOuE",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/10/us/politics/biden-trump-letter.html",
-          "title": "‘I Know How Much You Love the American People,’ Trump Told Biden in 2021 Letter",
+          "url": "https://www.nytimes.com/2026/11/11/us/politics/trump-democrats-congress-oversight-committee.html",
+          "title": "White House Threatens Congress, Saying Aggressive Investigations Could Be Crime",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRo4M8lYZRZL83-O4V-dHJ7XooC8CkRoN7o9CJcnHvZC2P0fNSXta1DlcqjZnU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTCT-eWrVa1cTKjxYXeyimkaZw6bjF6Xm4-rzN7lTeCwNCO7VOMX5c4SwTOuE"
         },
         {
-          "url": "https://www.the-independent.com/news/world/americas/us-politics/biden-memoir-trump-2024-white-house-meeting-b3081741.html",
-          "title": "Trump wrote Biden a letter that left him stunned: ‘Two Donald Trumps’",
-          "publisher": "The Independent",
+          "url": "https://www.npr.org/2026/11/12/nx-s1-6037540/trump-white-house-democrats-investigations-robert-garcia",
+          "title": "White House warns Trump probes could be criminal. Rep. Robert Garcia won't back down",
+          "publisher": "NPR",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNZZ6Kg3bJhwrwNI_IgH4CChOdoR8rbnJpc2MzIUP2_NxhR5enSI-sO2Cd1eY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQp4uGCqq5LR_BpqfD4G2FxEO29yYxxj0WSRWuDBWjGXS-KKXeM9dwNzbOLxE"
         },
         {
-          "url": "https://www.theatlantic.com/politics/2026/11/biden-trump-democracy-elections/689343/",
-          "title": "Biden: What Trump Did on January 6 ‘Should Follow Him to His Grave’",
-          "publisher": "The Atlantic",
+          "url": "https://www.nbcnews.com/politics/white-house/white-house-warns-congressional-democrats-investigating-us-may-crime-rcna608752",
+          "title": "White House warns congressional Democrats: Investigating us may be a crime",
+          "publisher": "NBC News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWqrfSuRpLzF3wAPmBwpdRhAWnA3CLJRiHM0W-t5CUedKIAZieJjAqCQCZuQ4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiHPsioHohVbwlHI7CHfeWwwDRUCPA_kxqzALfuRwm5Eu4IjemMLe2EpoUbXI"
         }
       ]
     },
     {
-      "query": "hubspot",
+      "query": "smh",
       "approx_searches": "200+",
-      "published_at": "2026-11-12T13:40:00Z",
+      "published_at": "2026-11-12T14:40:00Z",
       "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-12/hubspot-replaces-ceo-and-cfo-in-refounding-of-software-company",
-        "https://qz.com/hubspot-ceo-cfo-replaced-halligan-returns-111226",
-        "https://www.tipranks.com/news/company-announcements/hubspot-names-brian-halligan-ceo-as-yamini-rangan-steps-down"
+        "https://seekingalpha.com/article/4966423-3-stocks-im-buying-as-the-huang-scandal-unfolds",
+        "https://finance.yahoo.com/technology/ai/articles/nvidia-export-curbs-could-shift-002027068.html",
+        "https://www.cnbctv18.com/access/four-tech-investing-themes-to-consider-beyond-nvidia-20031993.htm"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj0myaPAz-9rdPvBp-1oKgL5TryAQZ-lhyFGion38XX42-4lrSoA9xEobqzf0",
-      "image_credit": "Bloomberg.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSzYiIZ0RN42ZGpwigGA8Ld3jJNy0bQm8ptTDmlwgEOws5THiRI3uIwaA499s",
+      "image_credit": "Seeking Alpha",
       "news": [
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-12/hubspot-replaces-ceo-and-cfo-in-refounding-of-software-company",
-          "title": "HubSpot Replaces CEO and CFO in ‘Refounding’ of Software Company",
-          "publisher": "Bloomberg.com",
+          "url": "https://seekingalpha.com/article/4966423-3-stocks-im-buying-as-the-huang-scandal-unfolds",
+          "title": "3 Stocks I’m Buying As The Huang Scandal Unfolds (NASDAQ:SMH)",
+          "publisher": "Seeking Alpha",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj0myaPAz-9rdPvBp-1oKgL5TryAQZ-lhyFGion38XX42-4lrSoA9xEobqzf0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSzYiIZ0RN42ZGpwigGA8Ld3jJNy0bQm8ptTDmlwgEOws5THiRI3uIwaA499s"
         },
         {
-          "url": "https://qz.com/hubspot-ceo-cfo-replaced-halligan-returns-111226",
-          "title": "HubSpot is replacing its CEO and CFO as its co-founder returns to 'refound' the company",
-          "publisher": "Quartz",
+          "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-export-curbs-could-shift-002027068.html",
+          "title": "Nvidia Export Curbs Could Shift AI Demand Toward These Data Center Stocks",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXIxsNLma36gw2QXpi24BZM2qou_d2xzUGzf4VZUQa80niqzGPYmjUJzjplwA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXA_uwMjlJ2c7sOtUHiEkSYcZzJRHgLeZfkB6muQgSnMV3saKFK7_MiHezmAU"
         },
         {
-          "url": "https://www.tipranks.com/news/company-announcements/hubspot-names-brian-halligan-ceo-as-yamini-rangan-steps-down",
-          "title": "HubSpot Names Brian Halligan CEO as Yamini Rangan Steps Down",
-          "publisher": "TipRanks",
+          "url": "https://www.cnbctv18.com/access/four-tech-investing-themes-to-consider-beyond-nvidia-20031993.htm",
+          "title": "Four tech investing themes to consider beyond Nvidia",
+          "publisher": "CNBC TV18",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWkljVS1kzAFzA3bbdheAHMkUJ9OuJz1VT2hj0TBhS63IBmlRTfbuOczMeUc8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQz9nu8DlEHP4c4jYHBOX-p2mPo6ZG1kTrsGMsHZro9n8zYVD4XLEyvlor3jA"
         }
       ]
     },
     {
-      "query": "australia",
+      "query": "dupont circle",
       "approx_searches": "200+",
-      "published_at": "2026-11-12T13:40:00Z",
+      "published_at": "2026-11-12T14:40:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/news/articles/ckvg25zmppglo",
-        "https://www.cbsnews.com/news/teen-found-alive-6-days-lost-australia-wilderness/",
-        "https://www.abc.net.au/news/2026-11-12/missing-teenager-william-found-gippsland-bush/107372518"
+        "https://www.nbcwashington.com/news/local/dna-ties-man-to-dupont-circle-sex-assault-after-woman-requested-uber/4181331/",
+        "https://www.wusa9.com/article/news/crime/arrest-warrant-links-dc-man-to-2014-sexual-assault-after-dna-match-rideshare/65-fdcc1829-2bf6-4d70-811c-33b21aa0081a",
+        "https://www.nbcwashington.com/video/news/local/dna-ties-man-to-dupont-circle-sex-assault-after-woman-requested-uber/4181323/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaOwSyj_p5mUcPRWsniGXKExb5J9M1Gox9UEXpcUU3uliP70dk1CPGYYRmWoc",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROzziWZD036-fxE_j_5ut8zuki1SY-hlGjkrvHsM6uJjZ4fu1B8qdUXrgIw5o",
+      "image_credit": "NBC4 Washington",
       "news": [
         {
-          "url": "https://www.bbc.com/news/articles/ckvg25zmppglo",
-          "title": "Australian teen missing in bush for six days rescued alive",
-          "publisher": "BBC",
+          "url": "https://www.nbcwashington.com/news/local/dna-ties-man-to-dupont-circle-sex-assault-after-woman-requested-uber/4181331/",
+          "title": "DNA ties man to Dupont Circle sex assault after woman requested Uber",
+          "publisher": "NBC4 Washington",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaOwSyj_p5mUcPRWsniGXKExb5J9M1Gox9UEXpcUU3uliP70dk1CPGYYRmWoc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROzziWZD036-fxE_j_5ut8zuki1SY-hlGjkrvHsM6uJjZ4fu1B8qdUXrgIw5o"
         },
         {
-          "url": "https://www.cbsnews.com/news/teen-found-alive-6-days-lost-australia-wilderness/",
-          "title": "Boy found alive after 6 days lost in Australian wilderness: \"He's grounded for life\"",
-          "publisher": "CBS News",
+          "url": "https://www.wusa9.com/article/news/crime/arrest-warrant-links-dc-man-to-2014-sexual-assault-after-dna-match-rideshare/65-fdcc1829-2bf6-4d70-811c-33b21aa0081a",
+          "title": "Arrest warrant links DC man to 2014 sexual assault after DNA match",
+          "publisher": "WUSA9",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDH59p0Ma4lKZ1kxTMztMcSDlP1GWwIitO4QxfJA4GLa7x82lhQ9b22z4GThc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSynC21Gl-NtuQdC8GjTxULUudWac4ggz6yRJJ7zBrhx6q1ZWJWq3-ylOjS2ZU"
         },
         {
-          "url": "https://www.abc.net.au/news/2026-11-12/missing-teenager-william-found-gippsland-bush/107372518",
-          "title": "Video shows moment 17yo spots rescuers after six days lost in the bush",
-          "publisher": "ABC News & Headlines – Australian Broadcasting Corporation",
+          "url": "https://www.nbcwashington.com/video/news/local/dna-ties-man-to-dupont-circle-sex-assault-after-woman-requested-uber/4181323/",
+          "title": "DNA ties man to Dupont Circle sex assault after woman requested Uber",
+          "publisher": "NBC4 Washington",
           "description": "",
-          "image_url": null
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAVlHpxi1sgC5dUo7VSXgsnx9NyH9J2ApRso5ux7ufntmkVc5kniCvfTMwjVk"
         }
       ]
     },
     {
-      "query": "rockstar gta vi",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T13:40:00Z",
-      "related_news_urls": [
-        "https://rockstarintel.com/new-gta-vi-footage-looks-so-stunning-fans-cant-believe-it/",
-        "https://www.notebookcheck.net/GTA-6-New-gameplay-clip-surfaces-fans-thought-it-was-filmed-in-Miami.1448660.0.html",
-        "https://www.mmoexp.com/News/gta-6-realism-revealed-how-rockstar-is-bringing-miami-to-life-with-smarter-npcs-realistic-cars-and-lifelike-animations.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpbSOWEUncxMk0eSVdKvnW1kyZcl7wh2-xMYFIMlwK2XxvKUV62GnqrUTIfos",
-      "image_credit": "RockstarINTEL",
-      "news": [
-        {
-          "url": "https://rockstarintel.com/new-gta-vi-footage-looks-so-stunning-fans-cant-believe-it/",
-          "title": "New GTA VI Footage Looks So Stunning Fans Can’t Believe It",
-          "publisher": "RockstarINTEL",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpbSOWEUncxMk0eSVdKvnW1kyZcl7wh2-xMYFIMlwK2XxvKUV62GnqrUTIfos"
-        },
-        {
-          "url": "https://www.notebookcheck.net/GTA-6-New-gameplay-clip-surfaces-fans-thought-it-was-filmed-in-Miami.1448660.0.html",
-          "title": "GTA 6: New gameplay clip surfaces – fans thought it was filmed in Miami",
-          "publisher": "Notebookcheck",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7zZCf6l2R5u3mLTjaZPqAIlMWztBJqvr3OAUTpLEvNNpcNg17WSLtnj7gQC8"
-        },
-        {
-          "url": "https://www.mmoexp.com/News/gta-6-realism-revealed-how-rockstar-is-bringing-miami-to-life-with-smarter-npcs-realistic-cars-and-lifelike-animations.html",
-          "title": "GTA 6 Realism Revealed: How Rockstar Is Bringing Miami to Life with Smarter NPCs, Realistic Cars, and Lifelike Animations",
-          "publisher": "MMOEXP",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsK-qLfdAGH7xIDZ0UekKwC6lIE9QhVMklFB16LuGLoJ1G2D-E48WDtEGacw0"
-        }
-      ]
-    },
-    {
-      "query": "xochitl gomez",
+      "query": "juste jocyte natalie nakase fallout",
       "approx_searches": "200+",
-      "published_at": "2026-11-12T13:30:00Z",
+      "published_at": "2026-11-12T14:40:00Z",
       "related_news_urls": [
-        "https://www.ign.com/articles/marvel-star-xochitl-gomez-says-she-struggled-to-find-work-after-joining-the-mcu-as-everyone-assumed-shed-be-too-busy-even-though-her-character-has-never-returned",
-        "https://www.comicbasics.com/xochitl-gomez-gives-a-cheeky-answer-about-america-chavez-returning-in-avengers-doomsday/",
-        "https://www.imdb.com/news/ni66097211/?ref_=ttnw_art_perm"
+        "https://www.sfgate.com/valkyries/article/valkyries-juste-jocyte-problem-22525520.php",
+        "https://www.cbssports.com/wnba/news/juste-jocyte-valkyries-drama-wnba-future/",
+        "https://www.swishappeal.com/wnba/90349/golden-state-valkyries-draft-pick-first-juste-jocyte-trade-request-out-move-natalie-nakase-coach-ohemaa-nyanin-lithuania-interview-media-role-playing-time-championship-shooting-fever-mystics"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwuUgYwCbI0FLbzZInRRixulNPXw3bBGzicxUtgZTLS-Ydb_uWyniamZNDlBw",
-      "image_credit": "IGN",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRamutOT5cSe1jq7MIDFkxg4VJRKilRlkDa0JRX6pyI_wCXDwrmggPVu5aH-fI",
+      "image_credit": "SFGATE",
       "news": [
         {
-          "url": "https://www.ign.com/articles/marvel-star-xochitl-gomez-says-she-struggled-to-find-work-after-joining-the-mcu-as-everyone-assumed-shed-be-too-busy-even-though-her-character-has-never-returned",
-          "title": "Xochitl Gomez Says Her Big Marvel Break Has Been 'A Gift and a Curse'",
-          "publisher": "IGN",
+          "url": "https://www.sfgate.com/valkyries/article/valkyries-juste-jocyte-problem-22525520.php",
+          "title": "The champion Valkyries have a Juste Jocyte problem and no easy answers",
+          "publisher": "SFGATE",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwuUgYwCbI0FLbzZInRRixulNPXw3bBGzicxUtgZTLS-Ydb_uWyniamZNDlBw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRamutOT5cSe1jq7MIDFkxg4VJRKilRlkDa0JRX6pyI_wCXDwrmggPVu5aH-fI"
         },
         {
-          "url": "https://www.comicbasics.com/xochitl-gomez-gives-a-cheeky-answer-about-america-chavez-returning-in-avengers-doomsday/",
-          "title": "Xochitl Gomez Gives a Cheeky Answer About America Chavez Returning in 'Avengers: Doomsday'",
-          "publisher": "Comic Basics",
+          "url": "https://www.cbssports.com/wnba/news/juste-jocyte-valkyries-drama-wnba-future/",
+          "title": "Justė Jocytė's WNBA future in doubt? Why Valkyries under pressure to resolve drama with prized Euro prospect",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPzC4vZrIpZ8TbbMaoNlUGx5ML8hWA6p9S2NZ1kO5aSXCPCsUDY7m26lPeNNI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTI_O1Lo-DcPrGMGkrnVyMnS4nK3WmXFRKaFnFva4XAvEfiWPKCTu-PBNaksyM"
         },
         {
-          "url": "https://www.imdb.com/news/ni66097211/?ref_=ttnw_art_perm",
-          "title": "Doctor Strange Star Officially Reveals Dream MCU Crossover Before ‘Avengers: Doomsday’",
-          "publisher": "IMDb",
+          "url": "https://www.swishappeal.com/wnba/90349/golden-state-valkyries-draft-pick-first-juste-jocyte-trade-request-out-move-natalie-nakase-coach-ohemaa-nyanin-lithuania-interview-media-role-playing-time-championship-shooting-fever-mystics",
+          "title": "Justē Jocytē, the first-ever draft pick of the Golden State Valkyries, is ready to bid goodbye to Ballhalla",
+          "publisher": "Swish Appeal",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRh-oSEbpJPUT3Fqu_7zznWWOXAzBl7ABNZuJA8mS7N31rH2gbHCOvBGPktsts"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkFqRq34BHcfeVh3sOzsrRXIH7xb-wyKigeb6IcQwIysX4rR3OZjQDNHihnng"
+        }
+      ]
+    },
+    {
+      "query": "avgo stock",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T14:30:00Z",
+      "related_news_urls": [
+        "https://www.trefis.com/stock/avgo/articles/624609/what-does-the-anthropic-ipo-mean-for-broadcom-stock/2026-11-12",
+        "https://finance.yahoo.com/markets/stocks/articles/broadcom-stocks-climb-5-18-165920759.html",
+        "https://moneymorning.com/2026/11/11/broadcom-anthropic-161-billion-lease-ai-financing-november-2026"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZ8wbJFrf9kYr435wYed1gDQWqmSwDajPjEZnfM3HyU8eZsGfQo7c8OXs3xp4",
+      "image_credit": "Trefis",
+      "news": [
+        {
+          "url": "https://www.trefis.com/stock/avgo/articles/624609/what-does-the-anthropic-ipo-mean-for-broadcom-stock/2026-11-12",
+          "title": "What Does The Anthropic IPO Mean For Broadcom Stock?",
+          "publisher": "Trefis",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZ8wbJFrf9kYr435wYed1gDQWqmSwDajPjEZnfM3HyU8eZsGfQo7c8OXs3xp4"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/broadcom-stocks-climb-5-18-165920759.html",
+          "title": "Broadcom Stocks Climb 5.18% as Goldman Calls Chips Oversold and Anthropic Stake Lands",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRE0LlaTsBh-KFZE0m_mTSAYy3tK0dlhhURdY_OidTDk81bGwbdW6dti4W-otg"
+        },
+        {
+          "url": "https://moneymorning.com/2026/11/11/broadcom-anthropic-161-billion-lease-ai-financing-november-2026",
+          "title": "Broadcom's $161 Billion Anthropic Lease Is the Real AI Bet",
+          "publisher": "Money Morning",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1mBbhdC0zUV7_gqaECmuQKeq0xEcHfvPdV0msY5p3BVSvBie6A266SoCf_IU"
+        }
+      ]
+    },
+    {
+      "query": "robinhood",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T14:30:00Z",
+      "related_news_urls": [
+        "https://247wallst.com/investing/2026/11/05/robinhood-sinks-12-sofi-tumbles-9-affirm-drops-8-as-bitcoin-slides-and-democratic-congress-weighs-on-fintech/",
+        "https://www.benzinga.com/trading-ideas/movers/26/11/62942835/robinhood-stock-plunges-as-bitcoin-dips-after-elections",
+        "https://www.nytimes.com/2026/11/06/your-money/stock-market-volatility-investments.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTThtFu2XTSNQwJ9KwYIzHx4H12n0XHpb9cOGeLfPi_XO8r2-_zDS6Y9QOcPRY",
+      "image_credit": "24/7 Wall St.",
+      "news": [
+        {
+          "url": "https://247wallst.com/investing/2026/11/05/robinhood-sinks-12-sofi-tumbles-9-affirm-drops-8-as-bitcoin-slides-and-democratic-congress-weighs-on-fintech/",
+          "title": "Robinhood Sinks 12%, SoFi Tumbles 9%, Affirm Drops 8% as Bitcoin Slides and Democratic Congress Weighs on Fintech",
+          "publisher": "24/7 Wall St.",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTThtFu2XTSNQwJ9KwYIzHx4H12n0XHpb9cOGeLfPi_XO8r2-_zDS6Y9QOcPRY"
+        },
+        {
+          "url": "https://www.benzinga.com/trading-ideas/movers/26/11/62942835/robinhood-stock-plunges-as-bitcoin-dips-after-elections",
+          "title": "Robinhood Stock Plunges as Bitcoin Dips After Elections",
+          "publisher": "Benzinga",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeHYFET9W4-Kv3twnTsf85Q_HH1HBDahWY9eX2ozYikQ1yEa14cFae9FLRJbw"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/06/your-money/stock-market-volatility-investments.html",
+          "title": "The Markets Are on a Yo-Yo. You Don’t Have to Be.",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSp5WqUzaVC7x3TgJhcsMPzosdywFcq6UQ0wCrqcNuNWxNomFOkwAIbG34hYI"
+        }
+      ]
+    },
+    {
+      "query": "tsmc stock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T14:30:00Z",
+      "related_news_urls": [
+        "https://www.tradingview.com/news/seekingalpha:1804c6f72094b:0-tsmc-discovers-data-on-thousands-of-current-former-employees-leaked-to-external-website/",
+        "https://www.quantisnow.com/insight/sec-form-6-k-filed-by-taiwan-semiconductor-manufacturing-company-ltd-6786516",
+        "https://kalkinemedia.com/us/news/announcements/tsmc-reports-unauthorized-exposure-of-employee-data-on-external-website"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY",
+      "image_credit": "TradingView",
+      "news": [
+        {
+          "url": "https://www.tradingview.com/news/seekingalpha:1804c6f72094b:0-tsmc-discovers-data-on-thousands-of-current-former-employees-leaked-to-external-website/",
+          "title": "TSMC discovers data on thousands of current, former employees leaked to external website",
+          "publisher": "TradingView",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
+        },
+        {
+          "url": "https://www.quantisnow.com/insight/sec-form-6-k-filed-by-taiwan-semiconductor-manufacturing-company-ltd-6786516",
+          "title": "TSM: SEC Form 6-K filed by Taiwan Semiconductor Manufacturing Company Ltd.",
+          "publisher": "Quantisnow",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7TdWJi0R7QhB9wkozw00WsbM01-weDnQbTEaMvH0Tew53jAlmQgXKMWH9Um8"
+        },
+        {
+          "url": "https://kalkinemedia.com/us/news/announcements/tsmc-reports-unauthorized-exposure-of-employee-data-on-external-website",
+          "title": "TSMC Reports Unauthorized Exposure of Employee Data on External Website",
+          "publisher": "Kalkine Media",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXnKpjtiK4xQBmnFpnm8i3nbQsdoERD3hBdLiUkVjzKjv9OTbxZ_xG3OSzILQ"
+        }
+      ]
+    },
+    {
+      "query": "英伟达股票",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T14:30:00Z",
+      "related_news_urls": [
+        "https://cn.wsj.com/articles/%E8%8B%B1%E4%BC%9F%E8%BE%BE%E6%8A%95%E8%B5%84%E8%80%85%E7%9C%BC%E4%B8%8B%E8%AF%A5%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88-%E4%B8%8D%E6%98%AF%E9%BB%84%E4%BB%81%E5%8B%8B%E7%9A%84%E5%A9%9A%E5%A4%96%E6%83%85-7dc9ea40",
+        "https://www.coindesk.com/zh/markets/2026/11/12/bitcoin-listless-nvidia-perps-crash-7-as-ceo-jensen-huang-reportedly-faces-the-axe",
+        "https://news.mydrivers.com/1/1165/1165393.htm"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR88fQUm3Vh7ahnD5THxVbgUzIvFNjr9z4yGLDlZlTLwQ7vJ6X32hEyv2Sr0TQ",
+      "image_credit": "华尔街日报中文网",
+      "news": [
+        {
+          "url": "https://cn.wsj.com/articles/%E8%8B%B1%E4%BC%9F%E8%BE%BE%E6%8A%95%E8%B5%84%E8%80%85%E7%9C%BC%E4%B8%8B%E8%AF%A5%E5%85%B3%E6%B3%A8%E4%BB%80%E4%B9%88-%E4%B8%8D%E6%98%AF%E9%BB%84%E4%BB%81%E5%8B%8B%E7%9A%84%E5%A9%9A%E5%A4%96%E6%83%85-7dc9ea40",
+          "title": "英伟达投资者眼下该关注什么？不是黄仁勋的婚外情",
+          "publisher": "华尔街日报中文网",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR88fQUm3Vh7ahnD5THxVbgUzIvFNjr9z4yGLDlZlTLwQ7vJ6X32hEyv2Sr0TQ"
+        },
+        {
+          "url": "https://www.coindesk.com/zh/markets/2026/11/12/bitcoin-listless-nvidia-perps-crash-7-as-ceo-jensen-huang-reportedly-faces-the-axe",
+          "title": "Nvidia 永续合约在 Hyperliquid 上暴跌 7%。原因解析",
+          "publisher": "CoinDesk",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-JUVHljPfsAcczcRumdRJ7lOdzfOtzPqDsWxQ1XoEYPCehz9oxXJS9tVVLfM"
+        },
+        {
+          "url": "https://news.mydrivers.com/1/1165/1165393.htm",
+          "title": "英伟达内部动荡之际 AMD、博通等竞争对手股价上涨",
+          "publisher": "驱动之家",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT56eKQAIb-vwqlchcD9JJHRQvNyvFSqD9QPiQMQaQNGMvCwXw0GnqRoNWp3PE"
+        }
+      ]
+    },
+    {
+      "query": "finance",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T14:30:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/economy/article/wall-street-thinks-the-fed-made-a-mistake--and-now-more-hikes-are-coming-172024016.html",
+        "https://www.reuters.com/business/poll-fed-raise-rates-once-more-december-inflation-risks-stay-high-2026-11-10/",
+        "https://www.axios.com/2026/11/10/federal-reserve-rate-hikes"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFLhuZuPbWA-nWxCQjO-8VP0rsVl1gtg2CRTMby5Y6FBfNPG2U7RSbeDMwyKc",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/economy/article/wall-street-thinks-the-fed-made-a-mistake--and-now-more-hikes-are-coming-172024016.html",
+          "title": "Wall Street thinks the Fed made a 'mistake' — and now more hikes are coming",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFLhuZuPbWA-nWxCQjO-8VP0rsVl1gtg2CRTMby5Y6FBfNPG2U7RSbeDMwyKc"
+        },
+        {
+          "url": "https://www.reuters.com/business/poll-fed-raise-rates-once-more-december-inflation-risks-stay-high-2026-11-10/",
+          "title": "Fed to raise rates once more in December as inflation risks stay high: Reuters poll",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRENzzujKOSrA84noSHp0R6Ybpm-W3ir2dwpIq8tiboMFaA17ke2HyO7nP_K78"
+        },
+        {
+          "url": "https://www.axios.com/2026/11/10/federal-reserve-rate-hikes",
+          "title": "Get ready for rate hike(s)",
+          "publisher": "Axios",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkdNSwipOhYFUgYs-8OC6Gjk77sya6EEzXOsD-PZdQ91Fp53i_5M2P9i74Llo"
+        }
+      ]
+    },
+    {
+      "query": "teri polo",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T14:20:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/teri-polo-showcases-major-transformation-125446560.html",
+        "https://people.com/ariana-grande-makes-red-carpet-debut-with-boyfriend-ricky-alvarez-at-focker-in-law-premiere-12249764",
+        "https://www.vogue.com/article/ariana-grande-ricky-alvarez-red-carpet-debut-2026-11-12"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAV8zqHiAsCpSjHHhEPztbtGU5HoRX1qm1fZOkpv-jPBJK3J3qgfcYLuxVXTQ",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/teri-polo-showcases-major-transformation-125446560.html",
+          "title": "Teri Polo showcases major transformation 26 years after Meet the Parents as fans say the same thing",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAV8zqHiAsCpSjHHhEPztbtGU5HoRX1qm1fZOkpv-jPBJK3J3qgfcYLuxVXTQ"
+        },
+        {
+          "url": "https://people.com/ariana-grande-makes-red-carpet-debut-with-boyfriend-ricky-alvarez-at-focker-in-law-premiere-12249764",
+          "title": "Ariana Grande Makes Red Carpet Debut with Boyfriend Ricky Alvarez at Focker-in-Law Premiere",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvdF1R5NuaqJdO9ZiO3E9LL6M7FeSL_t9x6sTEFORVMrWCsNEo66fOzCfDfUQ"
+        },
+        {
+          "url": "https://www.vogue.com/article/ariana-grande-ricky-alvarez-red-carpet-debut-2026-11-12",
+          "title": "Ariana Grande Brings Her Two Great Loves—Ricky Álvarez and Rare Vintage—to the Red Carpet",
+          "publisher": "Vogue",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfdx1TH642RUD8-F6DXvcfZvFthb2E89LU1Xp49Ghh4zBLr-KY3A7L2Sj1SH0"
         }
       ]
     }
