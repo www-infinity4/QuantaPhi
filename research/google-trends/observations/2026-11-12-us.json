@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T02:01:19.730379Z",
+  "checked_at": "2026-11-12T02:31:07.443729Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "mammoth vs golden knights",
+      "query": "penguins vs sharks",
       "approx_searches": "1000+",
-      "published_at": "2026-11-12T01:40:00Z",
+      "published_at": "2026-11-12T02:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nhl/story/_/id/50444541/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-        "https://www.nhl.com/news/utah-mammoth-vegas-golden-knights-game-preview-november-11-2026",
-        "https://www.sportsgambler.com/betting-tips/ice-hockey/utah-mammoth-vs-vegas-golden-knights-prediction-odds-2026-11-11/"
+        "https://www.nhl.com/news/pittsburgh-penguins-san-jose-sharks-game-preview-november-11-2026",
+        "https://www.pensburgh.com/penguins-lines-game-time-watch/82985/game-preview-pittsburgh-penguins-san-jose-sharks-11-11-2026",
+        "https://sports.yahoo.com/articles/preview-penguins-game-19-vs-215052683.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfIS7WgUNyCZRivmiDAlPqEV504K8d19vZNl1Zk54FY3wyZ_ujGJ8Qk06E5r4",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://www.espn.com/nhl/story/_/id/50444541/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-          "title": "NHL Tonight: What to watch in Mammoth-Knights, five other games on Wednesday",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfIS7WgUNyCZRivmiDAlPqEV504K8d19vZNl1Zk54FY3wyZ_ujGJ8Qk06E5r4"
-        },
-        {
-          "url": "https://www.nhl.com/news/utah-mammoth-vegas-golden-knights-game-preview-november-11-2026",
-          "title": "Mammoth at Golden Knights projected lineups",
+          "url": "https://www.nhl.com/news/pittsburgh-penguins-san-jose-sharks-game-preview-november-11-2026",
+          "title": "Penguins at Sharks projected lineups",
           "publisher": "NHL.com",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
         },
         {
-          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/utah-mammoth-vs-vegas-golden-knights-prediction-odds-2026-11-11/",
-          "title": "Utah Mammoth vs Vegas Golden Knights Prediction, Picks & Odds | 11 Nov 2026",
-          "publisher": "Sportsgambler",
+          "url": "https://www.pensburgh.com/penguins-lines-game-time-watch/82985/game-preview-pittsburgh-penguins-san-jose-sharks-11-11-2026",
+          "title": "Game Preview: Pittsburgh Penguins @ San Jose Sharks 11/11/2026",
+          "publisher": "PensBurgh",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbCNW9ituFxfK-y6w5ymAiqHftH34a3QUtXcQL0LVH8-bUrqgtYohWTv-gEa4"
-        }
-      ]
-    },
-    {
-      "query": "tyler herro",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T01:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/final-injury-report-magic-jazz-220000951.html",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/jamal-cain-shoulder-downgraded-to-out-wednesday",
-        "https://www.rotoballer.com/player-news/tristan-da-silva-out-vs-kings-with-left-calf-strain/1990009"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0eDrZaJP5mEiCtPZGixX5w4E55iKuXLDcKdIvb2WcOBpDtJUztlJ6YjD6xg8",
-      "image_credit": "Yahoo Sports",
-      "news": [
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSkLo9mzJgLZhS_ysEA2oPP-m1WYLR2TcbbwD0e8pm3LIwT6CdW4zOKmZueaMo"
+        },
         {
-          "url": "https://sports.yahoo.com/articles/final-injury-report-magic-jazz-220000951.html",
-          "title": "Final Injury Report for Magic-Jazz: Will Lauri Markkanen, Keyonte George Play?",
+          "url": "https://sports.yahoo.com/articles/preview-penguins-game-19-vs-215052683.html",
+          "title": "PREVIEW: Penguins Game 19 vs. Sharks",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0eDrZaJP5mEiCtPZGixX5w4E55iKuXLDcKdIvb2WcOBpDtJUztlJ6YjD6xg8"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/jamal-cain-shoulder-downgraded-to-out-wednesday",
-          "title": "Jamal Cain (shoulder) downgraded to out Wednesday",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmz3H41uQ6Mntj1rUbQhV_9vIlxHNlsXHcRl32TJt3KE9AK8M4EoC8FIIlTDg"
-        },
-        {
-          "url": "https://www.rotoballer.com/player-news/tristan-da-silva-out-vs-kings-with-left-calf-strain/1990009",
-          "title": "Tristan da Silva Ruled Out Tuesday at Sacramento - NBA News | Fantasy Basketball",
-          "publisher": "RotoBaller",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7uv9K6eCGxpL1j2jh90Zux3kLqj2p20jP96f1Mdh85syLifkN8qGvslf-lKI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQypqwmxH3dN1Iwj3289zxglFQw6J4dUoEXSJ6-90lrOJW8eDefXjV1IyaB2SE"
         }
       ]
     },
     {
-      "query": "lakers vs milwaukee bucks match player stats",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T01:40:00Z",
+      "query": "predators vs ducks",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T02:10:00Z",
       "related_news_urls": [
-        "https://www.nba.com/game/lal-vs-atl-0022600203/box-score",
-        "https://www.espn.com/nba/recap/_/gameId/401909929",
-        "https://www.cleveland.com/cavs/2026/11/cavs-rolled-by-thunder-124-116-in-wire-to-wire-loss.html"
+        "https://www.nhl.com/news/nashville-predators-anaheim-ducks-game-preview-november-11-2026",
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/nashville-predators-vs-anaheim-ducks-prediction-odds-2026-11-11/",
+        "https://sports.yahoo.com/videos/game-19-ducks-vs-predators-221950260.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNm5pAGV6tyZzyyLtduvUFkib_rckR4AC95K_4ms3eWpT5q27WyUqILPsTevs",
-      "image_credit": "NBA.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://www.nba.com/game/lal-vs-atl-0022600203/box-score",
-          "title": "Los Angeles Lakers vs Atlanta Hawks Nov 9, 2026 Box Scores",
-          "publisher": "NBA.com",
+          "url": "https://www.nhl.com/news/nashville-predators-anaheim-ducks-game-preview-november-11-2026",
+          "title": "Predators at Ducks projected lineups",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNm5pAGV6tyZzyyLtduvUFkib_rckR4AC95K_4ms3eWpT5q27WyUqILPsTevs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
         },
         {
-          "url": "https://www.espn.com/nba/recap/_/gameId/401909929",
-          "title": "Thunder 124-116 Cavaliers (Nov 4, 2026) Game Recap",
-          "publisher": "ESPN",
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/nashville-predators-vs-anaheim-ducks-prediction-odds-2026-11-11/",
+          "title": "Nashville Predators vs Anaheim Ducks Prediction, Picks & Odds | 11 Nov 2026",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsOVpKAN7d5Rw1RDTflQcnHpyRBYi6ixjpspIAPJTI9sXU0eYfW7is3VXzTek"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRptRmJxCuTx8jPwORNOCmu0pvSL7nlI3tKoi06s100a3NkS7ULBmv0NDuddJ0"
         },
         {
-          "url": "https://www.cleveland.com/cavs/2026/11/cavs-rolled-by-thunder-124-116-in-wire-to-wire-loss.html",
-          "title": "Cavs rolled by Thunder, 124-116, in wire-to-wire loss",
-          "publisher": "Cleveland.com",
+          "url": "https://sports.yahoo.com/videos/game-19-ducks-vs-predators-221950260.html",
+          "title": "Game #19: Ducks vs. Predators Gameday Preview (11/11/26)",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpJL5BWK0Q3zczSWxvuk6UShOoT-8d6tuMj-M_9jN2jQg4Opg8GqH3yvm4V_E"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpTx5mMX_h39HMRQutQhshlBfGe86K0qb8hEBEi6cKjVddTNPSV6EsQQtbOoA"
         }
       ]
     },
     {
-      "query": "el niño",
+      "query": "korean war",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T02:10:00Z",
+      "related_news_urls": [
+        "https://www.opinion-tribune.com/news/republic-korea-awards-medals-korean-war-veterans-southwest-iowa",
+        "https://www.mysuncoast.com/2026/11/12/heroes-among-us-korean-war-veteran-receives-special-medal-more-than-70-years-after-his-service/",
+        "https://www.cnn.com/2026/11/11/asia/korean-war-veterans-stories-return-intl-hnk-dst-ml"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5iGeZ9cuSYnYhtzoAT05Cas-BPe2ZYsKbhmY4gO1cF4p6vFURB2xDhOJBUN4",
+      "image_credit": "The Opinion-Tribune",
+      "news": [
+        {
+          "url": "https://www.opinion-tribune.com/news/republic-korea-awards-medals-korean-war-veterans-southwest-iowa",
+          "title": "Republic Of Korea Awards Medals To Korean War Veterans From Southwest Iowa",
+          "publisher": "The Opinion-Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5iGeZ9cuSYnYhtzoAT05Cas-BPe2ZYsKbhmY4gO1cF4p6vFURB2xDhOJBUN4"
+        },
+        {
+          "url": "https://www.mysuncoast.com/2026/11/12/heroes-among-us-korean-war-veteran-receives-special-medal-more-than-70-years-after-his-service/",
+          "title": "Heroes Among Us: Korean War veteran receives special medal more than 70 years after his service",
+          "publisher": "ABC7 WWSB",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSinBsPG36b9ch-4PX_W1XQYCJFMPoGpWzuhxWt1My8fPJJkojj2Tu18ve0kL8"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/11/asia/korean-war-veterans-stories-return-intl-hnk-dst-ml",
+          "title": "Stories of life, death – and crows – from ‘The Forgotten War’",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRG9VqvBSmqs5saxBuxpCusso5NhsXKJE7TU2pFPNbkU2M2fiBEF3_gAsweOY"
+        }
+      ]
+    },
+    {
+      "query": "nebraska basketball",
       "approx_searches": "2000+",
-      "published_at": "2026-11-12T01:30:00Z",
+      "published_at": "2026-11-12T02:00:00Z",
       "related_news_urls": [
-        "https://www.foxweather.com/weather-news/super-el-nino-hours-away-forecast-winter-fall",
-        "https://grist.org/extreme-weather/a-monstrous-el-nino-has-arrived-what-it-means-for-where-you-live/",
-        "https://www.npr.org/2026/11/10/nx-s1-6011189/super-el-nino-2026-fish-market"
+        "https://247sports.com/college/nebraska/longformarticle/husker-basketball-preview-against-lindenwood-292567080/",
+        "https://omaha.com/sports/huskers/mens-basketball/article_d43f4f38-7821-445e-82b6-faec0c60868c.html",
+        "https://sports.yahoo.com/articles/nebraska-mbb-lindenwood-preview-live-003000134.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSqHUigvhzSzC-tn7-tZJbvVIEs02ATSHKzBT5dJaRXa8rCIy7CEj-IMxvLug",
-      "image_credit": "FOX Weather",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTH7TxvkK65qmdAWEHVQcRAq-D0awZLDu2h9NCLWO2fK12d5mUL_QlvQJulh1o",
+      "image_credit": "247Sports",
       "news": [
         {
-          "url": "https://www.foxweather.com/weather-news/super-el-nino-hours-away-forecast-winter-fall",
-          "title": "The official designation of a Super El Niño event is hours away: What that means and why it matters",
-          "publisher": "FOX Weather",
+          "url": "https://247sports.com/college/nebraska/longformarticle/husker-basketball-preview-against-lindenwood-292567080/",
+          "title": "Starting Five: Huskers look to keep the defensive intensity against Lindenwood",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSqHUigvhzSzC-tn7-tZJbvVIEs02ATSHKzBT5dJaRXa8rCIy7CEj-IMxvLug"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTH7TxvkK65qmdAWEHVQcRAq-D0awZLDu2h9NCLWO2fK12d5mUL_QlvQJulh1o"
         },
         {
-          "url": "https://grist.org/extreme-weather/a-monstrous-el-nino-has-arrived-what-it-means-for-where-you-live/",
-          "title": "A monstrous El Niño has arrived. Here’s what it means for where you live.",
-          "publisher": "Grist",
+          "url": "https://omaha.com/sports/huskers/mens-basketball/article_d43f4f38-7821-445e-82b6-faec0c60868c.html",
+          "title": "How to watch Nebraska vs. Lindenwood: Time, TV and streaming info",
+          "publisher": "Omaha World-Herald",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxuXwBpyMTKBNJ5zjTbR--hBygQO3VGkj8Dxg20KDEAx-C5EwI67aWP4hsRcU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyBUMSCgdSBwg0PcyDOZpkN7QVH17HfB2rcLBsYgtvwkSEyq0v3E-ozMIwX6Q"
         },
         {
-          "url": "https://www.npr.org/2026/11/10/nx-s1-6011189/super-el-nino-2026-fish-market",
-          "title": "How this year's record El Niño could hit your wallet : Short Wave",
-          "publisher": "NPR",
+          "url": "https://sports.yahoo.com/articles/nebraska-mbb-lindenwood-preview-live-003000134.html",
+          "title": "Nebraska MBB: Lindenwood Preview and Live Discussion",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSiJzsusP0zZalGjjn8oCAyNACZfgwW_BqWGjjfoyUou9L762Z7xneW7JYqNYU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDL7Fk5yKGfoj-4Ja81vVLPn90sSizNUM6i1HMF-xjJ6H3g1Kw1f_ce-0CU0w"
         }
       ]
     },
     {
-      "query": "météo demain",
+      "query": "behemoth movie",
       "approx_searches": "500+",
-      "published_at": "2026-11-12T01:30:00Z",
+      "published_at": "2026-11-12T02:00:00Z",
       "related_news_urls": [
-        "https://www.bfmtv.com/meteo/video-un-ciel-degage-dans-le-sud-ouest-de-la-pluie-attendue-sur-le-reste-de-la-france-la-meteo-du-11-novembre_VN-202611110125.html",
-        "https://www.tf1info.fr/replay-tf1/videos/video-meteo-du-11-novembre-2026-previsions-meteo-a-21h02-2475321.html",
-        "https://www.franceinfo.fr/environnement/meteo/alertes-meteo-et-vigilances/vigilance-jaune-pluies-inondations-risque-de-fortes-pluies-localement-dans-les-hautes-pyrenees-ce-11-novembre-2026_8277356.html"
+        "https://thecosmiccircus.com/behemoth-review-2026-movie/",
+        "https://www.dailysabah.com/arts/cinema/tony-gilroy-turns-cellists-life-into-unlikely-symphony-in-behemoth",
+        "https://www.afp.com/en/music-links-past-present-pedro-pascals-cellist-behemoth"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQL3tx6B7rZF2mb0a0LnBFx3bs7jKtZzP6m4qMdCq2TPVT_X_Q46EII0F_kzyA",
-      "image_credit": "BFM",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiYGKo7jnLCwaGgaV11-gX9bL7IfYi1SkQQov9862EPto2d1Sb8XEa9J-qs3o",
+      "image_credit": "Cosmic Circus",
       "news": [
         {
-          "url": "https://www.bfmtv.com/meteo/video-un-ciel-degage-dans-le-sud-ouest-de-la-pluie-attendue-sur-le-reste-de-la-france-la-meteo-du-11-novembre_VN-202611110125.html",
-          "title": "Un ciel dégagé dans le sud-ouest, de la pluie attendue sur le reste de la France: la météo du 11 novembre",
-          "publisher": "BFM",
+          "url": "https://thecosmiccircus.com/behemoth-review-2026-movie/",
+          "title": "‘Behemoth!’ Review: A Film That Finds Structure Through A Wondrous and Scattershot Symphony",
+          "publisher": "Cosmic Circus",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQL3tx6B7rZF2mb0a0LnBFx3bs7jKtZzP6m4qMdCq2TPVT_X_Q46EII0F_kzyA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiYGKo7jnLCwaGgaV11-gX9bL7IfYi1SkQQov9862EPto2d1Sb8XEa9J-qs3o"
         },
         {
-          "url": "https://www.tf1info.fr/replay-tf1/videos/video-meteo-du-11-novembre-2026-previsions-meteo-a-21h02-2475321.html",
-          "title": "Météo du 11 novembre 2026 : Prévisions météo à 21h02",
-          "publisher": "TF1 Info",
+          "url": "https://www.dailysabah.com/arts/cinema/tony-gilroy-turns-cellists-life-into-unlikely-symphony-in-behemoth",
+          "title": "Tony Gilroy turns cellist's life into unlikely symphony in 'Behemoth!' | Daily Sabah",
+          "publisher": "Daily Sabah",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROm7kx7DW8O0KL_4UEbiktny4_P7q6aVA88QI-Ax3AaiGhlOO4bsC-6cPShNk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdHSTZbszEIbRBdTzR-C2TYaxbic6lP3VYRCtASuEtrrZPLzOuFJWc8LmeEv4"
         },
         {
-          "url": "https://www.franceinfo.fr/environnement/meteo/alertes-meteo-et-vigilances/vigilance-jaune-pluies-inondations-risque-de-fortes-pluies-localement-dans-les-hautes-pyrenees-ce-11-novembre-2026_8277356.html",
-          "title": "Vigilance jaune pluies-inondations : risque de fortes pluies localement dans les Hautes-Pyrénées ce 11 novembre 2026",
-          "publisher": "franceinfo",
+          "url": "https://www.afp.com/en/music-links-past-present-pedro-pascals-cellist-behemoth",
+          "title": "Music links past, present for Pedro Pascal's cellist in 'Behemoth!'",
+          "publisher": "AFP.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQw9CDfawR5YBauEDB7UWgG8l-QxTDTmnMabXrzlrZqC_D9_Pn5BbCYEAoKUrM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRaac03eMrvLN_9fzfPgkgoTxIwl1B1oD5jKNcnqGqF7wSfjg7k2FH9b7kDN74"
         }
       ]
     },
     {
-      "query": "kelsey grammer",
+      "query": "hoedown hill windsor ski resort news",
       "approx_searches": "500+",
-      "published_at": "2026-11-12T01:30:00Z",
+      "published_at": "2026-11-12T02:00:00Z",
       "related_news_urls": [
-        "https://www.foxnews.com/video/6408207785112",
-        "https://fox8.com/news/maybe-its-time-kelsey-grammer-teases-white-house-run/",
-        "https://www.cbsnews.com/video/america-the-beautiful-film-to-document-us-landscapes/"
+        "https://people.com/ski-resort-announces-it-will-not-offer-skiing-and-other-snow-sports-this-winter-after-very-little-snow-poor-conditions-12249215",
+        "https://snowbrains.com/colorados-hoedown-hill-drops-skiing-to-focus-on-festivals/",
+        "https://www.powder.com/news/hoedown-hill-pivot-music-venue"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0i7bQ5X6kaUAqy5GZFfZs4OUQnJ0aUtzWzJ6YLyFFmGk8c5AsuQ8RWNi9Ol8",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/video/6408207785112",
-          "title": "Kelsey Grammer's new documentary, 'America the Beautiful' showcases the beauty of the country",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0i7bQ5X6kaUAqy5GZFfZs4OUQnJ0aUtzWzJ6YLyFFmGk8c5AsuQ8RWNi9Ol8"
-        },
-        {
-          "url": "https://fox8.com/news/maybe-its-time-kelsey-grammer-teases-white-house-run/",
-          "title": "‘Maybe it’s time’: Kelsey Grammer teases White House run",
-          "publisher": "FOX 8 News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSiefvbHF6nhPbkzi9CtNa22AihkH94PaMFCDCDWErjT-Mze9e_gXnrINgAupQ"
-        },
-        {
-          "url": "https://www.cbsnews.com/video/america-the-beautiful-film-to-document-us-landscapes/",
-          "title": "Kelsey Grammer previews his \"America the Beautiful\" film documenting U.S. landscapes",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKu0iS5swSY3TL5FunC8qLwpx1tkJykdz7e12gnOATpeu0bjwX2nlhkMAvKkQ"
-        }
-      ]
-    },
-    {
-      "query": "streamer awards 2026",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T01:30:00Z",
-      "related_news_urls": [
-        "https://win.gg/ishowspeed-kai-cenat-best-marathon-stream-award/",
-        "https://www.dimers.com/prediction-markets/insights/which-series-will-win-best-streamed-series-at-the-2026-streamer-awards",
-        "https://sports.ndtv.com/us/us-streamers/streamer-awards-2026-full-host-lineup-award-presenters-performers-and-start-time-revealed-12307054"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSb-yz6Fq4T8fDTrZ66FTYZxAdDmBDanvHxy5AxMvYQSW0NswYpp4xpQ2Po3O4",
-      "image_credit": "WIN.GG",
-      "news": [
-        {
-          "url": "https://win.gg/ishowspeed-kai-cenat-best-marathon-stream-award/",
-          "title": "Will Speed and Kai Cenat win the Best Marathon stream award?",
-          "publisher": "WIN.GG",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSb-yz6Fq4T8fDTrZ66FTYZxAdDmBDanvHxy5AxMvYQSW0NswYpp4xpQ2Po3O4"
-        },
-        {
-          "url": "https://www.dimers.com/prediction-markets/insights/which-series-will-win-best-streamed-series-at-the-2026-streamer-awards",
-          "title": "Which Series Will Win Best Streamed Series At The 2026 Streamer Awards?",
-          "publisher": "Dimers",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMlhIXIQ10IfO-3AV6w1OtohlDUiR9sXUv0mVyKbzI1XyoiuisC1p_Nujfqz0"
-        },
-        {
-          "url": "https://sports.ndtv.com/us/us-streamers/streamer-awards-2026-full-host-lineup-award-presenters-performers-and-start-time-revealed-12307054",
-          "title": "Streamer Awards 2026: Full Host Lineup, Award Presenters, Performers, And Start Time Revealed",
-          "publisher": "NDTV Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRiRCLVgbBH_9ot4ilJr45hZnBRGdIj0-K9tnEWe8XMAjX-RxMR0T064omsvLg"
-        }
-      ]
-    },
-    {
-      "query": "rob lowe",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T01:30:00Z",
-      "related_news_urls": [
-        "https://people.com/gwyneth-paltrow-calls-officiating-rob-lowes-son-matthews-wedding-so-incredible-12249019",
-        "https://www.yahoo.com/entertainment/celebrity/articles/gwyneth-paltrow-reflects-officiating-wedding-215951266.html",
-        "https://www.instyle.com/gwyneth-paltrow-breaks-silence-officiating-rob-lowe-son-wedding-12249375"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPrnaxVDSL-DkfKsyney6Eyj9hY3TgJ2F0f3OINdBmsvTyFUk88PUd8KMltig",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJWS9pqJd3jrXYIauEecNTRvq01kvjwRZa_HDQqP04Nswvwgf0_Cjpv9lgXjs",
       "image_credit": "People.com",
       "news": [
         {
-          "url": "https://people.com/gwyneth-paltrow-calls-officiating-rob-lowes-son-matthews-wedding-so-incredible-12249019",
-          "title": "Gwyneth Paltrow Calls Officiating Rob Lowe’s Son Matthew’s Wedding ‘So Incredible’: ‘Just Call Me Pastor Gwyn’",
+          "url": "https://people.com/ski-resort-announces-it-will-not-offer-skiing-and-other-snow-sports-this-winter-after-very-little-snow-poor-conditions-12249215",
+          "title": "Ski Resort Announces It ‘Will Not Offer’ Skiing and Other Snow Sports This Winter as It Shifts Focus to Music Festivals",
           "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPrnaxVDSL-DkfKsyney6Eyj9hY3TgJ2F0f3OINdBmsvTyFUk88PUd8KMltig"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJWS9pqJd3jrXYIauEecNTRvq01kvjwRZa_HDQqP04Nswvwgf0_Cjpv9lgXjs"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/gwyneth-paltrow-reflects-officiating-wedding-215951266.html",
-          "title": "Gwyneth Paltrow Reflects on Officiating the Wedding of Rob Lowe’s Son Matthew",
-          "publisher": "Yahoo",
+          "url": "https://snowbrains.com/colorados-hoedown-hill-drops-skiing-to-focus-on-festivals/",
+          "title": "Colorado’s Hoedown Hill Drops Skiing to Focus on Festivals",
+          "publisher": "SnowBrains",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQCMHq9JZb_wqNoL6sBU535xwEN7_nhljHbx3mNrAIsd7te7jYAThC_Mo37Gw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWyKq3WkWIhEEybUz6qOjLAmECHgAtykZ5eITzZ0bDH-ij9I_hLWEIvo8cFA0"
         },
         {
-          "url": "https://www.instyle.com/gwyneth-paltrow-breaks-silence-officiating-rob-lowe-son-wedding-12249375",
-          "title": "Gwyneth Paltrow Breaks Her Silence on Officiating This Nepo Baby’s Wedding: “I Still Have Chills”",
-          "publisher": "InStyle",
+          "url": "https://www.powder.com/news/hoedown-hill-pivot-music-venue",
+          "title": "Small Colorado Ski Area To Shut Down Lifts, Pivot To Music Venue",
+          "publisher": "POWDER Magazine",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSo5tt5oHGNESO3izYevS3QZxp0f-t9wEiIGHgdWSTPDF-0d9PL_-P9mvyUhGc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5y5Mn7rsmPRidEh5kalW5m6-uRRzVGzYUC4RCshUkFh6LkldOT_2STEt-yXw"
         }
       ]
     },
     {
-      "query": "kyle fletcher",
+      "query": "nc central vs unc",
       "approx_searches": "200+",
-      "published_at": "2026-11-12T01:30:00Z",
+      "published_at": "2026-11-12T02:00:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/wwes-booker-t-comments-adam-173405538.html",
-        "https://www.dazn.com/en-US/news/wrestling/kyle-fletcher-adam-copeland-edge-aew-full-gear-t3r/tgrdmrf3jq7v1tzqz6ebbsqxe",
-        "https://slamwrestling.net/news/aew-star-wants-to-prove-hes-superior-to-adam-copeland/"
+        "https://goheels.com/news/2026/11/10/womens-basketball-no-23-welcomes-nc-central-in-home-opener-wednesday",
+        "https://www.nytimes.com/athletic/7773624/2026/11/11/north-carolina-central-vs-north-carolina-stream-how-to-watch-nov-11/",
+        "https://keepingitheel.com/unc-women-s-basketball-catches-fire-from-beyond-the-arc-in-their-home-opener"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjTEPfX1_jnX7qZu1kiJgFm0UMlm7uh4pRCS3Iid0uzTdE0CaHeMbM7_1zr18",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmSLb3zkk1fPU_P2jLlmiW_fLXU3kakfVO3agPXlVjUl3I2_F63nMKSu2ehVA",
+      "image_credit": "University of North Carolina Athletics",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/wwes-booker-t-comments-adam-173405538.html",
-          "title": "WWE's Booker T Comments On Adam Copeland's Impending AEW Retirement",
-          "publisher": "Yahoo Sports",
+          "url": "https://goheels.com/news/2026/11/10/womens-basketball-no-23-welcomes-nc-central-in-home-opener-wednesday",
+          "title": "No. 23 Welcomes NC Central In Home Opener Wednesday - University of North Carolina Athletics",
+          "publisher": "University of North Carolina Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjTEPfX1_jnX7qZu1kiJgFm0UMlm7uh4pRCS3Iid0uzTdE0CaHeMbM7_1zr18"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmSLb3zkk1fPU_P2jLlmiW_fLXU3kakfVO3agPXlVjUl3I2_F63nMKSu2ehVA"
         },
         {
-          "url": "https://www.dazn.com/en-US/news/wrestling/kyle-fletcher-adam-copeland-edge-aew-full-gear-t3r/tgrdmrf3jq7v1tzqz6ebbsqxe",
-          "title": "Who does Kyle Fletcher want to face one more time if he becomes AEW World Champion at Full Gear?",
-          "publisher": "DAZN",
+          "url": "https://www.nytimes.com/athletic/7773624/2026/11/11/north-carolina-central-vs-north-carolina-stream-how-to-watch-nov-11/",
+          "title": "How to watch North Carolina Central vs. North Carolina women’s basketball: TV channel and streaming options for November 11",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScMERUwMPCwvymfbRALOO-KjJ2KuQQd1bDU-ObjTULry4jzGkUCSlxpNUFIVc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvdxnFy6dwl-Z5zop2Z6rMMVMsPqZsta-jkNCIdzkoPcy-7OLDgwXFLPy-Xtc"
         },
         {
-          "url": "https://slamwrestling.net/news/aew-star-wants-to-prove-hes-superior-to-adam-copeland/",
-          "title": "AEW Star Wants To Prove He’s “Superior” To Adam Copeland",
-          "publisher": "Slam Wrestling",
+          "url": "https://keepingitheel.com/unc-women-s-basketball-catches-fire-from-beyond-the-arc-in-their-home-opener",
+          "title": "UNC women's basketball catches fire from beyond the arc in their home opener",
+          "publisher": "Keeping It Heel",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4YSGzQsZ8J-EMUbqgznFFyWZrebMKkXm2S7tTXP97NFEBk0Q5AEVawyUcic4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiFA1BpWTkLgvr1a-dLME65KRw1HH4FbtserUT6FU6OYzvSaZ81skcAYEQGxc"
         }
       ]
     },
     {
-      "query": "jalen smith",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-12T01:20:00Z",
+      "query": "baylor scheierman",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T02:00:00Z",
       "related_news_urls": [
-        "https://pippenainteasy.com/jalen-smith-making-nic-claxton-trade-awkward-bulls",
-        "https://bluemanhoop.com/warriors-can-ironically-reunite-with-buddy-hield-jalen-smith-trade",
-        "https://sports.yahoo.com/articles/warriors-reportedly-interest-former-lottery-215707240.html"
+        "https://www.cbssports.com/fantasy/basketball/news/celtics-baylor-scheierman-starting-sans-george/",
+        "https://www.rotowire.com/basketball/headlines/baylor-scheierman-news-back-to-bench-wednesday-537558",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-02/bos-starts-white-hugo-scheierman-tatum-queta"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjK4oaZcuUDi67OkFAGjvfMq8zKW8HYb7_TKjJNGrAKPJS_TeXU-SDYi5HeTY",
-      "image_credit": "Pippen Ain't Easy",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjUn2tzksFoAjMliM0oD2Fw8OIhCrJ5FjXLsPL7Xw4bTxuEzsVeM_pwI-rJb8",
+      "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://pippenainteasy.com/jalen-smith-making-nic-claxton-trade-awkward-bulls",
-          "title": "Jalen Smith is making the Nic Claxton trade awkward for the Bulls",
-          "publisher": "Pippen Ain't Easy",
+          "url": "https://www.cbssports.com/fantasy/basketball/news/celtics-baylor-scheierman-starting-sans-george/",
+          "title": "Celtics' Baylor Scheierman: Starting sans George",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjK4oaZcuUDi67OkFAGjvfMq8zKW8HYb7_TKjJNGrAKPJS_TeXU-SDYi5HeTY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjUn2tzksFoAjMliM0oD2Fw8OIhCrJ5FjXLsPL7Xw4bTxuEzsVeM_pwI-rJb8"
         },
         {
-          "url": "https://bluemanhoop.com/warriors-can-ironically-reunite-with-buddy-hield-jalen-smith-trade",
-          "title": "Warriors can ironically reunite with Buddy Hield in Jalen Smith trade",
-          "publisher": "Blue Man Hoop",
+          "url": "https://www.rotowire.com/basketball/headlines/baylor-scheierman-news-back-to-bench-wednesday-537558",
+          "title": "Baylor Scheierman News: Back to bench Wednesday",
+          "publisher": "RotoWire",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRUkMh8ZUGju4FnJ2gTvZbAP0HAUA2feo0sQd_Hw8yQDjHn9s8q8hssw0H-YU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxGiapxoEgYAV3EWNGdlNyODq2YtFbrpHOcfYZJ0Kb6Hx_E83EVliLb-uSJ6k"
         },
         {
-          "url": "https://sports.yahoo.com/articles/warriors-reportedly-interest-former-lottery-215707240.html",
-          "title": "Warriors reportedly have interest in former lottery pick amid Kristaps Porzingis concerns",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-02/bos-starts-white-hugo-scheierman-tatum-queta",
+          "title": "BOS starts White, Hugo, Scheierman, Tatum, Queta",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyDFtg-b4QjDZBqvrPMY8yX1g1nSd6fIq2ISEvPmXTeInxe6QKNHKvfyQj1gw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTig60gjUBukX5FII_jV3zYMhbU2jm308XoQHP78dOTvDfacTv57eyEzPDCOr8"
+        }
+      ]
+    },
+    {
+      "query": "nate ament",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T02:00:00Z",
+      "related_news_urls": [
+        "https://behindthebuckpass.com/nate-ament-bucks-forget-peyton-watson-jonathan-kuminga",
+        "https://www.cbssports.com/fantasy/basketball/news/bucks-nate-ament-scores-10-points-in-blowout-loss/",
+        "https://www.fantasypros.com/nba/news/618794/nate-ament-scores-12-points-loss-to-celtics.php"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlo6LLF05rFEvQzZEaRXD-erKSQjS1LdsREAN7_4vTsKGWa7rezSFAldTuOpU",
+      "image_credit": "Behind the Buck Pass",
+      "news": [
+        {
+          "url": "https://behindthebuckpass.com/nate-ament-bucks-forget-peyton-watson-jonathan-kuminga",
+          "title": "Nate Ament making it easy for Bucks to forget Peyton Watson, Jonathan Kuminga",
+          "publisher": "Behind the Buck Pass",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlo6LLF05rFEvQzZEaRXD-erKSQjS1LdsREAN7_4vTsKGWa7rezSFAldTuOpU"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/bucks-nate-ament-scores-10-points-in-blowout-loss/",
+          "title": "Bucks' Nate Ament: Scores 10 points in blowout loss",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRw4JMDZRjt14kdxzrzELRaPUVHyA_LPyMEZ6Z5z1-MPE4bV8sDE77o1Kd2XnA"
+        },
+        {
+          "url": "https://www.fantasypros.com/nba/news/618794/nate-ament-scores-12-points-loss-to-celtics.php",
+          "title": "Nate Ament scores 12 points in loss to Celtics",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8vPGcFb_oXvqFT7SK3hnHKbj1ydkEsJC87KlZySsQatMLkTTWYUs5OOoASqA"
+        }
+      ]
+    },
+    {
+      "query": "children's place",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T01:50:00Z",
+      "related_news_urls": [
+        "https://ktla.com/news/childrens-place-bankruptcy-closures/",
+        "https://www.cnbc.com/2026/11/09/childrens-place-chapter-11-sale.html",
+        "https://www.retaildive.com/news/the-childrens-place-in-search-of-new-ownership-files-for-bankruptcy/874078/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAUx_Am4bc-YdPjkr9rLOuU222T1es-vDZhJ4LEidSlRiFBY-wAulqfPj7S1Q",
+      "image_credit": "KTLA",
+      "news": [
+        {
+          "url": "https://ktla.com/news/childrens-place-bankruptcy-closures/",
+          "title": "Major children’s clothing retailer files for bankruptcy, plans store closures",
+          "publisher": "KTLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAUx_Am4bc-YdPjkr9rLOuU222T1es-vDZhJ4LEidSlRiFBY-wAulqfPj7S1Q"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/09/childrens-place-chapter-11-sale.html",
+          "title": "Children’s Place files for bankruptcy protection, seeks buyer",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkc5I2Hof6ToXG66H9OUXmhJPC0hnG0Ydnz-EO4oZEs0UEKvENz4WSCrh0hlQ"
+        },
+        {
+          "url": "https://www.retaildive.com/news/the-childrens-place-in-search-of-new-ownership-files-for-bankruptcy/874078/",
+          "title": "The Children’s Place, in search of new ownership, files for bankruptcy",
+          "publisher": "Retail Dive",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQOBYhDikZ2ycnF7-Ik1Ng3O_dU4IKMze72sjmLkgLjLLdESzVJRu9abXsorY"
         }
       ]
     }
