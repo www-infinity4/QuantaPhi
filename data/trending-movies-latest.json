@@ -2,9 +2,21 @@
   "schema_version": 1,
   "source": "Google Trends RSS + publisher trailer RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
-  "checked_at": "2026-11-12T15:04:37.712776Z",
+  "checked_at": "2026-11-12T15:33:39.797130Z",
   "source_note": "Google trending titles are independently matched to source-backed trailer uploads. Other cards are labelled NEW TRAILER, not Google-trending. These are previews, not full movies.",
   "items": [
+    {
+      "id": "WH-fYFfrt7A",
+      "title": "Ray Gunn",
+      "video_id": "WH-fYFfrt7A",
+      "video_title": "Ray Gunn Trailer #2 (2026)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-12T15:01:11Z",
+      "source_url": "https://www.youtube.com/watch?v=WH-fYFfrt7A",
+      "poster": "https://i.ytimg.com/vi/WH-fYFfrt7A/hqdefault.jpg",
+      "google_trending": false
+    },
     {
       "id": "1Dwc7lDdKxk",
       "title": "Children of Blood and Bone",
