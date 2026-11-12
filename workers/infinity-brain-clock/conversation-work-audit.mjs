@@ -1,5 +1,6 @@
 /* Read-only owner-conversation work discovery; no ticket creation, credentials or export. */
 const topics=[
+ ['infinity-nuances','Infinity OS Cart 003/004 nuance discovery','QuantaPhi',/\b(?:cart\s*0*0?[34]\b|nuances?\b|infinity\s+os\b|41\s+(?:main\s+)?carts?\b|calculator\s+twins?\b)\b/i],
  ['owner-delegation','ChatGPT–Bubbles owner connection','QuantaPhi',/\b(?:owner (?:mode|chat|access|session)|five.day (?:owner|session)|5.day session|connect (?:yourself|gpt|chatgpt) (?:to|with) bubbles|hook (?:in|into) (?:bubbles|owner)|robot brain access)\b/i],
  ['conversation-memory','Bubbles conversation retrieval and memory','QuantaPhi',/\b(?:memory|memories|synapse|conversation (?:history|archive|context|categor|fold)|parse (?:my |older |old )?(?:messages|conversations)|remember (?:my|previous)|grammarphi)\b/i],
  ['autonomous-building','Autonomous repository build and verification','QuantaPhi',/\b(?:self.build|build(?:ing)? (?:itself|on its own)|automatic(?:ally)? (?:build|upgrade|repair)|autonom(?:ous|ation)|repo(?:sitor(?:y|ies))? (?:not |in)?(?:fully )?built|unfinished (?:projects|repos|builds)|test ground ai|brain runner|github (?:commits?|pull requests?|prs?|repos?(?:itor(?:y|ies))?|tools?))\b/i],
@@ -11,7 +12,7 @@ const topics=[
  ['wallet','Unified wallet and development receipts','QuantaPhi',/\b(?:wallet|starcoin|quants?|infinity token|mint|credits? (?:for|on) commits?)\b/i],
  ['site-building','Website builder and published interaction tests','Omni-Phi',/\b(?:website|webpage|code phi|publish(?:ed|ing)? (?:site|page)|site (?:build|builder|test))\b/i]
 ];
-const DIRECT=/\b(?:fix|repair|build|create|add|implement|integrate|connect|hook|sync|synch|upgrade|test|verify|check|inspect|publish|deploy|import|restore|make|continue|read|find|teach|use|push|run|set up|set it up|need(?:s)? to|have to|must|should|want (?:you|bubbles|it) to)\b/i;
+const DIRECT=/\b(?:fix|repair|build|create|add|implement|integrate|connect|hook|sync|synch|upgrade|improve|test|verify|check|inspect|publish|deploy|import|restore|make|continue|read|find|teach|use|push|run|set up|set it up|need(?:s)? to|have to|must|should|want (?:you|bubbles|it) to)\b/i;
 const FAILURE=/\b(?:broken|doesn.t work|not working|stuck|can.t|cannot|failed|failing|shuts? off|not (?:sync|respond|playing)|lost|missing|unfinished|not built)\b/i;
 const CONSTRAINT=/\b(?:do not|don't|never|without|stop|only|must|should|prefer|no more|instead of|not (?:sing|chant|read))\b/i;
 const validId=v=>/^[A-Za-z0-9_-]{8,100}$/.test(v||'');
