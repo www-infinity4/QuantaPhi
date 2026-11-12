@@ -47,14 +47,16 @@ if(root){
    return {res,body};
   }finally{clearTimeout(timeout)}
  };
+ const invalidatePrivate=()=>{
+  ++serial;host.replaceChildren();status.textContent='Owner session unavailable. Private findings hidden.';
+ };
  const clearProtected=()=>{
-  if(!window.QuantaBrainOwner?.currentHeaders?.()?.Authorization){
-   ++serial;host.replaceChildren();status.textContent='Owner session unavailable. Private findings hidden.';
-  }
+  if(!window.QuantaBrainOwner?.currentHeaders?.()?.Authorization)invalidatePrivate();
  };
  window.addEventListener('pageshow',clearProtected);
  document.addEventListener('visibilitychange',()=>{if(!document.hidden)clearProtected();});
- window.addEventListener('bubbles:owner-locked',clearProtected);
+ // An explicit lock event revokes display immediately, even if a stale header still exists.
+ window.addEventListener('bubbles:owner-locked',invalidatePrivate);
  const refresh=async()=>{
   if(active)return;
   active=true;const requestId=++serial;button.disabled=true;host.replaceChildren();
