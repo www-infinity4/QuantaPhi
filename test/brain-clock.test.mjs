@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
+import {DatabaseSync} from 'node:sqlite';
 const sourceReviewUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/source-review.mjs',import.meta.url))).toString('base64');
 const handoffSource=(await fs.readFile(new URL('../workers/infinity-brain-clock/technical-handoff.mjs',import.meta.url),'utf8')).replace('./source-review.mjs',sourceReviewUrl);
 const handoffUrl='data:text/javascript;base64,'+Buffer.from(handoffSource).toString('base64');
@@ -146,6 +147,141 @@ test('repository engine claims any owner repository while honoring leases and jo
  memory.delete('repository-lease:www-infinity4/Project401');
  memory.set(first.lease.key,{...first.lease,leaseUntil:0,retryAt:0,repairFeedback:feedback});
  const retried=await (await clock.runner(request())).json();assert.deepEqual(retried.lease.job.runtimeFeedback,feedback);
+});
+
+function continuityRunnerFixture(t, entries) {
+ const owner='a'.repeat(64), sqlite=new DatabaseSync(':memory:'), memory=new Map();
+ t.after(()=>sqlite.close());
+ sqlite.exec('CREATE TABLE work_tickets (id TEXT PRIMARY KEY, owner_hash TEXT, repository TEXT, request TEXT, context_json TEXT, status TEXT, created_at INTEGER, updated_at INTEGER)');
+ for(const [index,job] of entries.entries()){
+  const ticketId='ticket-'+index;
+  sqlite.prepare('INSERT INTO work_tickets VALUES(?,?,?,?,?,?,?,?)').run(ticketId,owner,job.repository,
+   job.instructions,JSON.stringify({kind:'robot-directions',color_jobs:[job]}),'ready',Date.now()-index,Date.now());
+ }
+ const db={prepare(sql){return {bind(...values){
+  const statement=sqlite.prepare(sql);
+  return {first:async()=>statement.get(...values),all:async()=>({results:statement.all(...values)}),
+   run:async()=>({meta:{changes:statement.run(...values).changes}})};
+ }}}};
+ let transactions=Promise.resolve(), claims=Promise.resolve();
+ const storage={
+  get:async key=>structuredClone(memory.get(key)),
+  put:async(key,value)=>{memory.set(key,structuredClone(value))},
+  delete:async key=>memory.delete(key),
+  list:async({prefix})=>new Map([...memory].filter(([key])=>key.startsWith(prefix))),
+  transaction(callback){
+   const result=transactions.then(()=>callback(storage));
+   transactions=result.catch(()=>{});
+   return result;
+  }
+ };
+ const restart=()=>new BrainClock({
+  storage,
+  blockConcurrencyWhile(callback){
+   const result=claims.then(callback);
+   claims=result.catch(()=>{});
+   return result;
+  }
+ },{WORK_DB:db,WRITER_OWNER_HASH:owner});
+ let clock=restart();
+ const send=(path,runId,body={})=>clock.fetch(new Request('https://clock.internal'+path,{
+  method:'POST',body:JSON.stringify({runId,runnerRepository:'www-infinity4/Moltnook',...body})
+ }));
+ return {
+  memory,send,
+  claim:async runId=>(await send('/runner/claim',runId)).json(),
+  job:index=>JSON.parse(sqlite.prepare('SELECT context_json FROM work_tickets WHERE id=?').get('ticket-'+index).context_json).color_jobs[0],
+  restart:async()=>{clock=restart();return clock.reconcilePendingWork();},
+  setGraph(index,jobs){
+   sqlite.prepare('UPDATE work_tickets SET context_json=? WHERE id=?')
+    .run(JSON.stringify({kind:'robot-directions',color_jobs:jobs}),'ticket-'+index);
+  },
+  dispatchTo:async jobId=>{
+   clock.dispatchRunner=async()=>({ok:true,status:'dispatch_accepted'});
+   return (await send('/run-next','501',{ticketId:'ticket-0',jobId})).json();
+  }
+ };
+}
+
+const continuityJob=(id,repository='www-infinity4/QuantaPhi')=>({
+ id,repository,status:'queued',instructions:'Update the scoped file for '+id,dependencies:[],acceptance:['Verify the changed file'],
+});
+
+test('one signed run attempt cannot claim a second durable job, and the next run continues',async t=>{
+ const fixture=continuityRunnerFixture(t,[continuityJob('FIRST'),continuityJob('SECOND','www-infinity4/Moltnook')]);
+ const first=(await fixture.claim('500')).lease;
+ assert.equal(first.jobId,'FIRST');
+ assert.equal((await fixture.claim('500')).lease,null);
+ assert.equal(fixture.job(1).status,'queued');
+ const stopped=await fixture.send('/runner/result','500',{key:first.key,leaseId:first.leaseId,
+  status:'blocked',message:'Test command returned a failure'});
+ assert.equal(stopped.status,200);
+ assert.equal(fixture.job(0).status,'blocked');
+ assert.equal((await fixture.claim('500')).lease,null);
+ const second=(await fixture.claim('501')).lease;
+ assert.equal(second.jobId,'SECOND');
+ assert.equal(fixture.job(1).status,'working');
+});
+
+test('parallel signed claims keep conflicting repository edits out and admit a disjoint repository',async t=>{
+ const fixture=continuityRunnerFixture(t,[
+  continuityJob('FIRST'),continuityJob('OVERLAP','www-infinity4/quantaphi'),continuityJob('DISJOINT','www-infinity4/Moltnook')
+ ]);
+ const [first,second]=await Promise.all([fixture.claim('500'),fixture.claim('501')]);
+ assert.equal(first.lease.jobId,'FIRST');
+ assert.equal(second.lease.jobId,'DISJOINT');
+ assert.equal(fixture.job(1).status,'queued');
+ assert.equal(fixture.job(2).status,'working');
+});
+
+test('a restarted runner recovers an expired pre-publication lease under a new fence',async t=>{
+ const started=Date.now();
+ t.mock.method(Date,'now',()=>started);
+ const fixture=continuityRunnerFixture(t,[continuityJob('FIRST')]);
+ const first=(await fixture.claim('500')).lease;
+ assert.equal(fixture.job(0).progress.leaseExpiresAt,first.leaseUntil);
+ t.mock.method(Date,'now',()=>first.leaseUntil);
+ const stale=await fixture.send('/runner/event','500',{key:first.key,leaseId:first.leaseId,
+  step:{phase:'source_read',attempt:0,baseSha:'b'.repeat(40)}});
+ assert.equal(stale.status,409);
+ await fixture.restart();
+ assert.equal(fixture.job(0).progress.blocker,'runner_lease_expired');
+ const replacement=(await fixture.claim('501')).lease;
+ assert.equal(replacement.jobId,'FIRST');
+ assert.notEqual(replacement.leaseId,first.leaseId);
+ assert.equal(fixture.job(0).progress.runUrl,'https://github.com/www-infinity4/Moltnook/actions/runs/501');
+});
+
+test('crash after a signed publication checkpoint requires readback before any replay',async t=>{
+ const fixture=continuityRunnerFixture(t,[continuityJob('FIRST'),continuityJob('SECOND','www-infinity4/Moltnook')]);
+ const first=(await fixture.claim('500')).lease;
+ fixture.memory.set('engine-review:'+first.key,{leaseId:first.leaseId,baseSha:'b'.repeat(40),hashes:{'index.html':'a'.repeat(64)}});
+ for(const step of [
+  {phase:'checks_started',attempt:1},{phase:'checks_passed',attempt:1,exitCode:0},
+  {phase:'publication_started',attempt:1}
+ ]){
+  const event=await fixture.send('/runner/event','500',{key:first.key,leaseId:first.leaseId,step});
+  assert.equal(event.status,200);
+ }
+ t.mock.method(Date,'now',()=>first.leaseUntil+60000);
+ await fixture.restart();
+ assert.equal(fixture.job(0).progress.blocker,'publication_reconciliation_required');
+ assert.equal((await fixture.claim('501')).lease.jobId,'SECOND');
+ assert.equal((await fixture.claim('502')).lease,null);
+});
+
+test('dispatch and signed claim both wait for a verified dependency, then continue the next job',async t=>{
+ const fixture=continuityRunnerFixture(t,[continuityJob('FIRST')]);
+ const parent={...continuityJob('FIRST'),status:'committed_unverified'};
+ const child={...continuityJob('SECOND'),dependencies:['FIRST']};
+ fixture.setGraph(0,[parent,child]);
+ assert.deepEqual(await fixture.dispatchTo('SECOND'),{
+  ok:true,status:'job_not_dispatchable',reason:'dependency_pending',ticketId:'ticket-0',jobId:'SECOND'
+ });
+ assert.equal((await fixture.claim('500')).lease,null);
+ fixture.setGraph(0,[{...parent,status:'merged_verified'},child]);
+ assert.equal((await fixture.dispatchTo('SECOND')).status,'queued_for_runner');
+ assert.equal((await fixture.claim('501')).lease.jobId,'SECOND');
 });
 
 test('GPT Purple cannot approve absent tests and immutable patch evidence',async()=>{
