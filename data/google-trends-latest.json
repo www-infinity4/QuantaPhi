@@ -3,27 +3,306 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T20:31:20.302350Z",
+  "checked_at": "2026-11-12T21:01:37.272911Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "aaron taylor johnson",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T20:30:00Z",
+      "related_news_urls": [
+        "https://bloody-disgusting.com/movie/3975439/werwulf-gets-hard-r-rating-for-disturbing-violence-gore-sexual-assault-graphic-nudity/",
+        "https://www.darkhorizons.com/werwulf-cliff-booth-land-r-ratings/",
+        "https://screenrant.com/aaron-taylor-johnson-werwulf-movie-rating-11-year-streak/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRb1GUwbfZIOSpm4nrKP2Wnk-jt8ECxqNzr1zrF_mPs-6SGf3uX1idV6UQpftw",
+      "image_credit": "Bloody Disgusting",
+      "news": [
+        {
+          "url": "https://bloody-disgusting.com/movie/3975439/werwulf-gets-hard-r-rating-for-disturbing-violence-gore-sexual-assault-graphic-nudity/",
+          "title": "'Werwulf' Gets Hard 'R' Rating for Disturbing Violence, Gore, Sexual Assault & Graphic Nudity",
+          "publisher": "Bloody Disgusting",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRb1GUwbfZIOSpm4nrKP2Wnk-jt8ECxqNzr1zrF_mPs-6SGf3uX1idV6UQpftw"
+        },
+        {
+          "url": "https://www.darkhorizons.com/werwulf-cliff-booth-land-r-ratings/",
+          "title": "“Werwulf,” “Cliff Booth” Land ‘R’ Ratings",
+          "publisher": "Dark Horizons",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://screenrant.com/aaron-taylor-johnson-werwulf-movie-rating-11-year-streak/",
+          "title": "Aaron Taylor-Johnson’s New Gothic Horror Movie Officially Continues 11-Year Rating Streak",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkpDkwp_V7fHEksQ3TKPzMDZHBa_Iy-6wVSI5a9HOyL_Kfw9hpOS6PCOKCs70"
+        }
+      ]
+    },
+    {
+      "query": "hegseth awards medal to soldier who reprimanded him and aides at arlington cemetery",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-12T20:30:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cmvg2r3dq7xno",
+        "https://www.nytimes.com/2026/11/12/us/politics/pete-hegseth-warrior-image.html",
+        "https://www.theguardian.com/us-news/live/2026/nov/12/mississippi-scott-colom-ukraine-donald-trump"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvNsud0ILKs6jiDX4pF9-nTn7MLZVSoCs-Z-zKMg-pOj9aekB9eIJhJb-0-G4",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cmvg2r3dq7xno",
+          "title": "Hegseth awards medal to war memorial guard who reprimanded him and group",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvNsud0ILKs6jiDX4pF9-nTn7MLZVSoCs-Z-zKMg-pOj9aekB9eIJhJb-0-G4"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/12/us/politics/pete-hegseth-warrior-image.html",
+          "title": "A Warrior Secretary and a Lesson at the Tomb of the Unknowns",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcYKcDRKXmDhsAmcmytst_ageJbf2igv9BzmTzVmXAiEKrNv0W69dQi4UvOdM"
+        },
+        {
+          "url": "https://www.theguardian.com/us-news/live/2026/nov/12/mississippi-scott-colom-ukraine-donald-trump",
+          "title": "Hegseth gives medal to guard who reprimanded him at Arlington national cemetery – US politics live",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDhIe8tRcZbX7YMoosRn7jtNFRgb08LrIkZ-5-RsJBZGhLuEkPHCRqffc-gu8"
+        }
+      ]
+    },
+    {
+      "query": "love is blind",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T20:30:00Z",
+      "related_news_urls": [
+        "https://www.netflix.com/tudum/videos/love-is-blind-season-11-deleted-scenes",
+        "https://people.com/where-are-rob-and-michaella-love-is-blind-now-12244700",
+        "https://www.tvinsider.com/swooon/1311687/love-is-blind-rob-feeley-new-message-michaella-season-11-reunion/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyYkDh3dAdWbbK3ChLrR4lGqpMMWmZdzhKOb2oDmwiNCSxHJcFp_l4l9nL2Go",
+      "image_credit": "Netflix",
+      "news": [
+        {
+          "url": "https://www.netflix.com/tudum/videos/love-is-blind-season-11-deleted-scenes",
+          "title": "Love Is Blind Season 11 Deleted Scenes, Love Is Blind Boston, John, Sarah, Rob, Michaella, Wilnie, Aneha",
+          "publisher": "Netflix",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyYkDh3dAdWbbK3ChLrR4lGqpMMWmZdzhKOb2oDmwiNCSxHJcFp_l4l9nL2Go"
+        },
+        {
+          "url": "https://people.com/where-are-rob-and-michaella-love-is-blind-now-12244700",
+          "title": "Where Are Rob and Michaella from Love Is Blind Now? Inside Their Lives After Their Explosive Breakup in Season 11",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjICj-iW4SgQUZZ7iQ45eWVjfa9TJdan4BHq4jxqPat1yYfl00yVqQlSespjg"
+        },
+        {
+          "url": "https://www.tvinsider.com/swooon/1311687/love-is-blind-rob-feeley-new-message-michaella-season-11-reunion/",
+          "title": "‘Love Is Blind’s Rob Feeley Speaks Out in New Message After Explosive Season 11 Reunion",
+          "publisher": "TV Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFTvxDr9coED1yPlgtHmTWrIw0Yc0dlnpTz8PLHeE6I8iCzY2fyUePGAwEZJM"
+        }
+      ]
+    },
+    {
+      "query": "montenegro vs latvia",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T20:30:00Z",
+      "related_news_urls": [
+        "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL3ZlbXBpcmVzLmdpdGh1Yi5pby9jei9lLnhtbCIvPjwva3JwYW5vPg==&id=video-montenegro-football-team-vs-latvia-football-team-live-streams-nbc-sports-event-613-yho93wkh",
+        "https://en.vijesti.me/sports-e/football-c/835992/For-our-little-ones--bring-a-stuffed-toy-and-cheer-for-the-Falcons.",
+        "https://www.thestatszone.com/montenegro-vs-latvia-preview-prediction-2026-27-uefa-nations-league-league-c-237895"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGw58Gqsz7XKeA6UPmaee774Hpkpsbt1EbidJHN5tr5bK4PIs-gIq7-uBQm44",
+      "image_credit": "日本取引所グループ",
+      "news": [
+        {
+          "url": "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL3ZlbXBpcmVzLmdpdGh1Yi5pby9jei9lLnhtbCIvPjwva3JwYW5vPg==&id=video-montenegro-football-team-vs-latvia-football-team-live-streams-nbc-sports-event-613-yho93wkh",
+          "title": "[Live/fREE]** Montenegro Football Team V Latvia Football Team 𝐋𝐈ＶＥ Ｓｔｒｅａｍｓ",
+          "publisher": "日本取引所グループ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGw58Gqsz7XKeA6UPmaee774Hpkpsbt1EbidJHN5tr5bK4PIs-gIq7-uBQm44"
+        },
+        {
+          "url": "https://en.vijesti.me/sports-e/football-c/835992/For-our-little-ones--bring-a-stuffed-toy-and-cheer-for-the-Falcons.",
+          "title": "For our little ones: bring a stuffed toy and cheer for the \"falcons\"",
+          "publisher": "vijesti.me",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjZOOmvRZxUytBY_7hxN9wjtQlsiUnJPjTntzamvA6fiD4YRkJ7-WdfSI2xX8"
+        },
+        {
+          "url": "https://www.thestatszone.com/montenegro-vs-latvia-preview-prediction-2026-27-uefa-nations-league-league-c-237895",
+          "title": "Montenegro vs Latvia Preview & Prediction | 2026-27 UEFA Nations League | League C",
+          "publisher": "The Stats Zone",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTO-MgW6Fwr7xQ0crSH6l241xi6375uQCsCFmT3zlx7oveTRJ9LcuZzlTWy4nA"
+        }
+      ]
+    },
+    {
+      "query": "marta kostyuk",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T20:30:00Z",
+      "related_news_urls": [
+        "https://www.wtatennis.com/videos/4607896/rivalry-rewind_-the-best-of-coco-gauff-vs-marta-kostyuk",
+        "https://sports.yahoo.com/articles/brad-gilbert-picks-three-best-160000014.html",
+        "https://tv.kyivstar.ua/en/event/6af5a7e751cb8a46c2bd9487-2026-marta-kostyuk-coco-gauff"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUt8OkQcnXP7hYkh62YjX-pcEcpHo063CdKwjtCez70uyOMeUjK5qfnMXmzUQ",
+      "image_credit": "WTA Tennis",
+      "news": [
+        {
+          "url": "https://www.wtatennis.com/videos/4607896/rivalry-rewind_-the-best-of-coco-gauff-vs-marta-kostyuk",
+          "title": "Rivalry Rewind: The best of Coco Gauff vs. Marta Kostyuk",
+          "publisher": "WTA Tennis",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUt8OkQcnXP7hYkh62YjX-pcEcpHo063CdKwjtCez70uyOMeUjK5qfnMXmzUQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/brad-gilbert-picks-three-best-160000014.html",
+          "title": "Brad Gilbert picks the three best ‘movers’ on the WTA Tour and predicts Coco Gauff vs Marta Kostyuk",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0jtrXefHyXQ-wEqW2g_EJaj4dviqEdwP_klwjd7VUMnpPKgwoH0J_HaMgUqU"
+        },
+        {
+          "url": "https://tv.kyivstar.ua/en/event/6af5a7e751cb8a46c2bd9487-2026-marta-kostyuk-coco-gauff",
+          "title": "Marta Kostyuk - Coco Gauff, 2026: watch sports online in high quality on Kyivstar TV",
+          "publisher": "Kyivstar TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Q9UMvC4TahaQdh8D6jwnbCV7GKE-2Jcwc3uK6CMJZXPH1vyiD2_kIHELbyI"
+        }
+      ]
+    },
+    {
+      "query": "mbappe",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T20:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/soccer/story/_/id/50452835/kylian-mbappe-hamstring-miss-france-clash-italy",
+        "https://www.reuters.com/sports/soccer/mbappe-out-frances-nations-league-fixture-2026-11-11/",
+        "https://sports.yahoo.com/articles/kylian-mbapp-zinedine-zidane-fallout-193000854.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQ9Km_DLqoA4fo52D5HN4pPU8ZkIRAsnkCIsAgTrh_LvkyQMTH34jJWb36s88",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50452835/kylian-mbappe-hamstring-miss-france-clash-italy",
+          "title": "Kylian Mbappé (hamstring) to miss France clash with Italy",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQ9Km_DLqoA4fo52D5HN4pPU8ZkIRAsnkCIsAgTrh_LvkyQMTH34jJWb36s88"
+        },
+        {
+          "url": "https://www.reuters.com/sports/soccer/mbappe-out-frances-nations-league-fixture-2026-11-11/",
+          "title": "Mbappe out for France's Nations League fixture",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuUAMH7RnsEve2pE-7e4lIjRl1GtHCGfHoHXY8MrHVI9JVsy0HX1pK-ZJvUwM"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/kylian-mbapp-zinedine-zidane-fallout-193000854.html",
+          "title": "Kylian Mbappé-Zinedine Zidane fallout claims clarified",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc7WVncyjxG4ltMuaxSldokph5WOewiyPw7wyB4T18f8zzZ6nio2b6mnTupik"
+        }
+      ]
+    },
+    {
+      "query": "slay the spire 2 update",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T20:20:00Z",
+      "related_news_urls": [
+        "https://www.notebookcheck.net/Slay-the-Spire-2-beta-patch-adds-new-solo-and-co-op-modes.1448983.0.html",
+        "https://rogueliker.com/slay-the-spire-2-the-fool/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQu34JjFW87ULWujlUlFnZPvznRdesriHCq-MZ_pKPx8f_7cQno-BZpRPqa4xo",
+      "image_credit": "Notebookcheck",
+      "news": [
+        {
+          "url": "https://www.notebookcheck.net/Slay-the-Spire-2-beta-patch-adds-new-solo-and-co-op-modes.1448983.0.html",
+          "title": "Slay the Spire 2 beta patch adds new solo and co-op modes",
+          "publisher": "Notebookcheck",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQu34JjFW87ULWujlUlFnZPvznRdesriHCq-MZ_pKPx8f_7cQno-BZpRPqa4xo"
+        },
+        {
+          "url": "https://rogueliker.com/slay-the-spire-2-the-fool/",
+          "title": "Slay the Spire 2 just got a chunky update, but you'll have to brave the beta branch if you want to play The Fool",
+          "publisher": "Rogueliker",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT32nlYrsBE7D_0qGZ7Pz2_-st8Ty34yrId_OfjYl8lO2e0B2j1URGjy7n-rjE"
+        }
+      ]
+    },
+    {
+      "query": "george mason basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T20:20:00Z",
+      "related_news_urls": [
+        "https://www.sportsline.com/insiders/kansas-city-vs-george-mason-odds-proven-model-reveals-2026-college-basketball-picks-for-thursday-matchup/",
+        "https://www.cbssports.com/betting/news/kansas-city-george-mason-prediction-odds-2026-college-basketball-picks-thursday-november-12-best-bets/",
+        "https://www.sportsgambler.com/betting-tips/basketball/kansas-city-roos-vs-george-mason-patriots-prediction-odds-2026-11-12/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfbhrafNS7aTKBY_DB1xp_Lbsah1iRAQVypwaRUixb3WYiczi-Vg9QuDWoRWE",
+      "image_credit": "SportsLine",
+      "news": [
+        {
+          "url": "https://www.sportsline.com/insiders/kansas-city-vs-george-mason-odds-proven-model-reveals-2026-college-basketball-picks-for-thursday-matchup/",
+          "title": "Kansas City vs. George Mason odds: Proven model reveals 2026 college basketball picks for Thursday matchup",
+          "publisher": "SportsLine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfbhrafNS7aTKBY_DB1xp_Lbsah1iRAQVypwaRUixb3WYiczi-Vg9QuDWoRWE"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/kansas-city-george-mason-prediction-odds-2026-college-basketball-picks-thursday-november-12-best-bets/",
+          "title": "Kansas City vs. George Mason prediction, odds: 2026 college basketball picks on Thursday, Nov. 12 by top model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTa59sEfpG6okWbKRZaOPBKhSUrfbAeVJ2zp09KCQsXgc5AbYpDLVp8L6DR-PA"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/kansas-city-roos-vs-george-mason-patriots-prediction-odds-2026-11-12/",
+          "title": "Kansas City vs George Mason Prediction, Picks & Odds | 12 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UDqjKXIbW7x9dQN8Ss3-Y6v-vrwu1qj2_Q5yqnYAK2950VubtMmtj6A4Mzo"
+        }
+      ]
+    },
     {
       "query": "pio esposito",
       "approx_searches": "1000+",
       "published_at": "2026-11-12T20:10:00Z",
       "related_news_urls": [
         "https://www.gazzetta.it/Calcio/Nazionale/12-11-2026/italia-francia-live-risultato-e-gol-in-diretta-nations-league.shtml",
-        "https://www.corrieredellosport.it/foto/calcio/italia/2026/11/12-152534091/italia-francia_le_probabili_formazioni_di_mancini_e_di_zidane",
-        "https://www.repubblica.it/sport/calcio/nazionale/2026/11/12/news/italia_francia_formazione_mancini-425719428/"
+        "https://www.gazzetta.it/Calcio/Nazionale/12-11-2026/nazionale-donnarumma-papera-olise-gol-in-italia-francia.shtml",
+        "https://www.corrieredellosport.it/foto/calcio/italia/2026/11/12-152534091/italia-francia_le_probabili_formazioni_di_mancini_e_di_zidane"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXVah1--HJ1dcZ0PkUARkSlL6okzJXLtOEPYKJnHHehVxDai0jGCNXgRIl9fM",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFkoWkuJjx1hvh1ZK4K9xlgx018jvPZ_kq8Jw_Y5cXkOWuwUIy5b0kKz9gozg",
       "image_credit": "La Gazzetta dello Sport",
       "news": [
         {
           "url": "https://www.gazzetta.it/Calcio/Nazionale/12-11-2026/italia-francia-live-risultato-e-gol-in-diretta-nations-league.shtml",
-          "title": "LIVE Italia-Francia 1-1: tiro a giro di Barcola, palo! Ma ora gli azzurri spingono",
+          "title": "LIVE Italia-Francia 1-1: palo di Cherki a inizio ripresa",
           "publisher": "La Gazzetta dello Sport",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXVah1--HJ1dcZ0PkUARkSlL6okzJXLtOEPYKJnHHehVxDai0jGCNXgRIl9fM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFkoWkuJjx1hvh1ZK4K9xlgx018jvPZ_kq8Jw_Y5cXkOWuwUIy5b0kKz9gozg"
+        },
+        {
+          "url": "https://www.gazzetta.it/Calcio/Nazionale/12-11-2026/nazionale-donnarumma-papera-olise-gol-in-italia-francia.shtml",
+          "title": "La paperissima di Donnarumma per il vantaggio francese: palla regalata a Olise che ringrazia e segna",
+          "publisher": "La Gazzetta dello Sport",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQ-w8F7SgSSVXypHGOd7InBaJxJdTPzeohn2afM0KxI6K-M65q2veksqdtn0A"
         },
         {
           "url": "https://www.corrieredellosport.it/foto/calcio/italia/2026/11/12-152534091/italia-francia_le_probabili_formazioni_di_mancini_e_di_zidane",
@@ -31,328 +310,25 @@
           "publisher": "Corriere dello Sport",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1-AbxlHcHsXarH1EDeACqGqabu_EphFjeKPXOnNOCA14Gg9TLqzkgnMM1qhU"
-        },
-        {
-          "url": "https://www.repubblica.it/sport/calcio/nazionale/2026/11/12/news/italia_francia_formazione_mancini-425719428/",
-          "title": "Nazionale, Mancini sceglie i fratelli Esposito per l’attacco contro la Francia",
-          "publisher": "la Repubblica",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTt0_yeGrx1kvtru1mR2piiS2TDNuQEkvzr0BqLiT26JcWOfjWupoiPQxQXJUQ"
         }
       ]
     },
     {
-      "query": "immigration",
-      "approx_searches": "500+",
+      "query": "tacony palmyra bridge",
+      "approx_searches": "1000+",
       "published_at": "2026-11-12T20:10:00Z",
       "related_news_urls": [
-        "https://www.cbsnews.com/news/ice-deportations-arrests-hit-record-high/",
-        "https://www.politico.com/news/2026/11/12/ice-record-deportations-voter-sentiment-01162825",
-        "https://apnews.com/article/ice-immigration-deportation-arrests-homeland-security-trump-2e8f9b619c009ddc183d1a80eb21629a"
+        "https://www.nbcphiladelphia.com/news/local/tacony-palmyra-bridge-stuck-open-cargo-ship-crash-new-jersey-pennsylvania-thursday/4496427/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvOEJSWxoNsq4602mzcdjweBT5CZQVGJK0d9gOLYZMLT4VnP-HC-AxqTIZfW4",
-      "image_credit": "CBS News",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6zflyW_xARloolgyLzL3PbHRSF85SRIMmbLZpOkRHCdNaLNUCUZAV7IWJPag",
+      "image_credit": "NBC10 Philadelphia",
       "news": [
         {
-          "url": "https://www.cbsnews.com/news/ice-deportations-arrests-hit-record-high/",
-          "title": "ICE deportations and arrests hit record high as Trump faces reckoning over immigration crackdown",
-          "publisher": "CBS News",
+          "url": "https://www.nbcphiladelphia.com/news/local/tacony-palmyra-bridge-stuck-open-cargo-ship-crash-new-jersey-pennsylvania-thursday/4496427/",
+          "title": "Cargo ship crashes into Tacony-Palmyra Bridge causing it to get stuck open",
+          "publisher": "NBC10 Philadelphia",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvOEJSWxoNsq4602mzcdjweBT5CZQVGJK0d9gOLYZMLT4VnP-HC-AxqTIZfW4"
-        },
-        {
-          "url": "https://www.politico.com/news/2026/11/12/ice-record-deportations-voter-sentiment-01162825",
-          "title": "ICE touts record deportations as polls show voters soured on Trump’s crackdown",
-          "publisher": "Politico",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPTy4klLPRFGdClFcDdlBVLTNIzmjBSZ0QOiMo_5r8OR4JHtv34t81GbAxZOI"
-        },
-        {
-          "url": "https://apnews.com/article/ice-immigration-deportation-arrests-homeland-security-trump-2e8f9b619c009ddc183d1a80eb21629a",
-          "title": "ICE reports record-high immigration arrests and deportations since Trump's return to White House",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb_5rfxCdGNx5aSiAacIEcnw2CB6ItH5qXhF5LTPQHbBQPz4n2G5sNsS-3HeM"
-        }
-      ]
-    },
-    {
-      "query": "evan phillips",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-12T20:00:00Z",
-      "related_news_urls": [
-        "https://www.mlbtraderumors.com/2026/11/braves-sign-evan-phillips-to-three-year-deal.html",
-        "https://www.si.com/mlb/dodgers/onsi/dodgers-officially-lose-evan-phillips-nl-rival-massive-35-million-signing",
-        "https://heavy.com/sports/mlb/atlanta-braves/sign-35-million-world-series-champion-three-year-contract/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDw3kMhDq7kGP5CZfKP4Evc4aShssXhl-bA8qomwF1KeI24wY3nSZzqAvRRzY",
-      "image_credit": "MLB Trade Rumors",
-      "news": [
-        {
-          "url": "https://www.mlbtraderumors.com/2026/11/braves-sign-evan-phillips-to-three-year-deal.html",
-          "title": "Braves Sign Evan Phillips To Three-Year Deal",
-          "publisher": "MLB Trade Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDw3kMhDq7kGP5CZfKP4Evc4aShssXhl-bA8qomwF1KeI24wY3nSZzqAvRRzY"
-        },
-        {
-          "url": "https://www.si.com/mlb/dodgers/onsi/dodgers-officially-lose-evan-phillips-nl-rival-massive-35-million-signing",
-          "title": "Dodgers Officially Lose Evan Phillips to NL Rival in Massive $35 Million Signing",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlOPJVxNbAs1Epq4EuxVjYcBGmcK60hiCeCHwyHrVhNoW1yGt8uI6BLQvmzL8"
-        },
-        {
-          "url": "https://heavy.com/sports/mlb/atlanta-braves/sign-35-million-world-series-champion-three-year-contract/",
-          "title": "Atlanta Braves Sign $35 Million World Series Champion to Three-Year Contract",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLs9EZylTPj1hI6xkcmQ3Lt1zcD_vlneZWetNimJnKW1anH_NlUqIZF3lJeto"
-        }
-      ]
-    },
-    {
-      "query": "england football",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T20:00:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cr5yn1g2qe6et",
-        "https://www.espn.com/soccer/story/_/id/50451241/harry-kane-england-caps-record-126-croatia",
-        "https://www.theguardian.com/football/2026/nov/12/harry-kane-wins-record-126th-england-cap"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTu9MwptxpQuAqth_AxqqMKG-MxGYlmQCPXwCbUOxnOiq08J2jiQTlk4dhhcME",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cr5yn1g2qe6et",
-          "title": "England vs Croatia LIVE: UEFA Nations League stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTu9MwptxpQuAqth_AxqqMKG-MxGYlmQCPXwCbUOxnOiq08J2jiQTlk4dhhcME"
-        },
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50451241/harry-kane-england-caps-record-126-croatia",
-          "title": "Harry Kane set to break England caps record against Croatia",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVetkmXwTBOd20P4mjSsnrOmVwX4IGB6uiYAHvWLLSVKLM_OOGJWCp-i52_Tc"
-        },
-        {
-          "url": "https://www.theguardian.com/football/2026/nov/12/harry-kane-wins-record-126th-england-cap",
-          "title": "Harry Kane wins record 126th England cap, pulling clear of Peter Shilton",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSS1FSH9FvgqPEs_nm0RrOegQKulqBZFo-E3On-5th0QllanG75XKoXkZhajE"
-        }
-      ]
-    },
-    {
-      "query": "espn men college basketball rankings",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T20:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mens-college-basketball/story/_/id/50453526/mens-college-basketball-power-rankings",
-        "https://www.nytimes.com/athletic/7774562/2026/11/12/mens-college-basketball-top-25-florida-kansas-michigan-state/",
-        "https://www.cbssports.com/college-basketball/news/power-rankings-florida-michigan-state-uconn/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdnfDK-S83AW0egv8wX_Wr3m7KkORz_MFaQaZfPcOH_UDDDamJzNtSumAINUI",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50453526/mens-college-basketball-power-rankings",
-          "title": "Men's college basketball Power Rankings: A whole new list after two weeks of games",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdnfDK-S83AW0egv8wX_Wr3m7KkORz_MFaQaZfPcOH_UDDDamJzNtSumAINUI"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7774562/2026/11/12/mens-college-basketball-top-25-florida-kansas-michigan-state/",
-          "title": "Men’s College Basketball Power Rankings: What’s behind great starts for Florida, Kansas, MSU?",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnt5xAvBE5EJmjER3tVSjMoo9fJXw56Z8mL9fx5HbAxMZhynEGLuYoeqovzKE"
-        },
-        {
-          "url": "https://www.cbssports.com/college-basketball/news/power-rankings-florida-michigan-state-uconn/",
-          "title": "College Basketball Power Rankings: Florida opens at No. 1; Michigan State, UConn make statements with big wins",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEvGBwH7wtUfT0yvfUlly2Te-8v_GqoPj4sPRqedLLrzRe2KfO7QzN9_7x5s4"
-        }
-      ]
-    },
-    {
-      "query": "phil collins",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-12T19:50:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/08/arts/music/phil-collins-knew-he-was-lucky-if-not-cool.html",
-        "https://www.yahoo.com/entertainment/music/articles/don-t-know-rules-don-162609555.html",
-        "https://www.ultimate-guitar.com/news/general_music_news/phil-collins-says-he-may-be-able-to-tour-again-but-its-not-that-simple-i-think-about-going-back-on-the-road"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTejN_FYhzBoHYhbC7oTSiYtvNvTM749S1RodaRoTKWwigufPnw_VxVDhFAj0c",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/08/arts/music/phil-collins-knew-he-was-lucky-if-not-cool.html",
-          "title": "Phil Collins Knew He Was ‘Lucky,’ if Not Cool",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTejN_FYhzBoHYhbC7oTSiYtvNvTM749S1RodaRoTKWwigufPnw_VxVDhFAj0c"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/music/articles/don-t-know-rules-don-162609555.html",
-          "title": "\"If you don’t know the rules, you don’t know you’re breaking them”: Phil Collins on his self-taught style",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7Uqor-OEfA_xxVi3NuP3cCdndFymG5Vx7IXQhO1z1zI1-zh-QQqEINReQeK0"
-        },
-        {
-          "url": "https://www.ultimate-guitar.com/news/general_music_news/phil-collins-says-he-may-be-able-to-tour-again-but-its-not-that-simple-i-think-about-going-back-on-the-road",
-          "title": "Phil Collins Says He May Be Able to Tour Again, but It's Not That Simple: 'I Think About Going Back on the Road'",
-          "publisher": "Ultimate Guitar",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMVVd9xTGYw2jjPa3Q_P4Jrs7Rrf0E2Wl7flEfV391UbYP4axSNroImdt6xTw"
-        }
-      ]
-    },
-    {
-      "query": "teacher",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-12T19:50:00Z",
-      "related_news_urls": [
-        "https://www.ksdk.com/article/news/crime/large-police-presence-responds-blackhawk-middle-school-1-person-in-custody-warrenton-missouri/63-84fdfff9-4962-4201-8bb7-51ce529e5717",
-        "https://fox2now.com/news/missouri/police-responding-to-incident-at-blackhawk-middle-school-in-warrenton/",
-        "https://www.firstalert4.com/2026/11/12/suspect-custody-after-incident-blackhawk-middle-school-police-say/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYIdMh-gRBJZn3_8z-jC2M34NQ4Mg2PRpjdPgHrPgL27LHaFFEJN6YNWebYeo",
-      "image_credit": "KSDK",
-      "news": [
-        {
-          "url": "https://www.ksdk.com/article/news/crime/large-police-presence-responds-blackhawk-middle-school-1-person-in-custody-warrenton-missouri/63-84fdfff9-4962-4201-8bb7-51ce529e5717",
-          "title": "Student hospitalized, teacher injured after reported stabbing at Blackhawk Middle School",
-          "publisher": "KSDK",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYIdMh-gRBJZn3_8z-jC2M34NQ4Mg2PRpjdPgHrPgL27LHaFFEJN6YNWebYeo"
-        },
-        {
-          "url": "https://fox2now.com/news/missouri/police-responding-to-incident-at-blackhawk-middle-school-in-warrenton/",
-          "title": "Teacher, 2 students injured in Missouri middle school stabbing",
-          "publisher": "FOX 2",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRq2uIm5PDyVEmxUDTyqaPBPWC_PXxxwNJA6pdZhGhA3jQjnJPNQ7shxVqxbCU"
-        },
-        {
-          "url": "https://www.firstalert4.com/2026/11/12/suspect-custody-after-incident-blackhawk-middle-school-police-say/",
-          "title": "🔴LIVE: 2 students, teacher stabbed at Warrenton middle school",
-          "publisher": "KMOV",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtcfrh-fZ4aWwjfYkPisaDg6XCgKe98X5A943BdyFCJwHXBNghpeoT35jZfwo"
-        }
-      ]
-    },
-    {
-      "query": "musician",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-12T19:50:00Z",
-      "related_news_urls": [
-        "https://www.adn.com/arts/music/2026/11/12/its-a-hustle-how-anchorages-busiest-working-musicians-bring-magic-to-the-stage/",
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/rock-musician-dies-36-band-145611452.html",
-        "https://www.legacy.com/us/obituaries/name/patrick-desiato-obituary?id=62969307"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq70E6S3uceXimc6gl3obXxDyaVrAvjadM_-U7aCHkOwFRHETlqXMaRiecxxY",
-      "image_credit": "Anchorage Daily News",
-      "news": [
-        {
-          "url": "https://www.adn.com/arts/music/2026/11/12/its-a-hustle-how-anchorages-busiest-working-musicians-bring-magic-to-the-stage/",
-          "title": "‘It’s a hustle’: How Anchorage’s busiest working musicians bring magic to the stage",
-          "publisher": "Anchorage Daily News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq70E6S3uceXimc6gl3obXxDyaVrAvjadM_-U7aCHkOwFRHETlqXMaRiecxxY"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/rock-musician-dies-36-band-145611452.html",
-          "title": "Rock musician dies at 36, band announces in emotional tribute",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqrQij67BouzSb3YHTq23Wja-l7QXeMyo3oO12uTRPu166JQqEVdSbkUPMD38"
-        },
-        {
-          "url": "https://www.legacy.com/us/obituaries/name/patrick-desiato-obituary?id=62969307",
-          "title": "Patrick Desiato Obituary (2026) - Cinnaminson, NJ - Givnish Funeral Home - Cinnaminson",
-          "publisher": "Legacy | Obituary",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0M3sKRFEh0nK9yJrSs4LczU6BNtcHNCMCwU-tastEoemF5kcscS017lenqnA"
-        }
-      ]
-    },
-    {
-      "query": "jake dickert",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T19:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50463776/wake-forest-awards-second-year-coach-dickert-extension",
-        "https://www.cbssports.com/college-football/news/jake-dickert-wake-forest-new-contract-coaching-carousel/",
-        "https://sports.yahoo.com/articles/fsu-head-coach-candidate-jake-191348916.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRglw2ND6rGqF_P1Zeib89_lj24hUWZXJVlLppZk66nRYVYw8cplwoaMxhq700",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50463776/wake-forest-awards-second-year-coach-dickert-extension",
-          "title": "Wake Forest awards second-year coach Dickert with extension",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRglw2ND6rGqF_P1Zeib89_lj24hUWZXJVlLppZk66nRYVYw8cplwoaMxhq700"
-        },
-        {
-          "url": "https://www.cbssports.com/college-football/news/jake-dickert-wake-forest-new-contract-coaching-carousel/",
-          "title": "Jake Dickert agrees to new Wake Forest contract, rebuffing coaching carousel interest",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0p6knZE3pHB5LJW8WeOqSyOFLH2AmAENBREVF_MUqsQ6CCfBubfTEa2rnCkM"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/fsu-head-coach-candidate-jake-191348916.html",
-          "title": "FSU head coach candidate Jake Dickert discussing contract extension",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRydi4tbDCJrtRv4uMtgW0k0zMXKxbylbeeZ78waKcnSFjqovLtA70AEGN-VZs"
-        }
-      ]
-    },
-    {
-      "query": "microsoft update",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T19:50:00Z",
-      "related_news_urls": [
-        "https://www.theregister.com/os-platforms/2026/11/11/microsofts-patch-tuesday-cant-break-stuff-if-it-wont-install/5309059",
-        "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5132061-installation-issues-0x80070306-0x800f0989-0x800f0993-errors/",
-        "https://www.techradar.com/computing/windows/heres-everything-you-need-to-know-about-windows-11s-november-update-from-the-4-best-features-to-why-a-useful-security-change-is-annoying-some-gamers"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRQCLDZGho4Il2uA76lsWdoIBF4duar0nQPdkN6b-Iz2y63u_IY_ptierQ6vI",
-      "image_credit": "The Register",
-      "news": [
-        {
-          "url": "https://www.theregister.com/os-platforms/2026/11/11/microsofts-patch-tuesday-cant-break-stuff-if-it-wont-install/5309059",
-          "title": "Microsoft's Patch Tuesday can't break stuff if it won't install",
-          "publisher": "The Register",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRQCLDZGho4Il2uA76lsWdoIBF4duar0nQPdkN6b-Iz2y63u_IY_ptierQ6vI"
-        },
-        {
-          "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5132061-installation-issues-0x80070306-0x800f0989-0x800f0993-errors/",
-          "title": "Microsoft confirms Windows security updates installation issues",
-          "publisher": "BleepingComputer",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDvcFHutbBFAR7YGUozvUcMIVSSG0sWvVq5QBH0dbtFx9cN4xScFCpcmX1TGs"
-        },
-        {
-          "url": "https://www.techradar.com/computing/windows/heres-everything-you-need-to-know-about-windows-11s-november-update-from-the-4-best-features-to-why-a-useful-security-change-is-annoying-some-gamers",
-          "title": "Windows 11's November 2026 update is here: 4 reasons why you should download and install it right now",
-          "publisher": "TechRadar",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5cDc0gzoBn7LZQTS4VQUXLYEg-Qp7prKIyTxBcJTw6NP0Qsiiq9mZ8kgrqgA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6zflyW_xARloolgyLzL3PbHRSF85SRIMmbLZpOkRHCdNaLNUCUZAV7IWJPag"
         }
       ]
     }
