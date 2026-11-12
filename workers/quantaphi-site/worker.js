@@ -531,7 +531,11 @@ export default {
   // origin even after a merge. Prefer Pages for this ONE neutral module only;
   // existing raw fallback remains if Pages is unavailable. Never alter wallet/auth paths.
   const preferPagesForCannabisPolicy = route.repo === 'QuantaPhi' && route.sourcePath === '/cannabis-directory-policy.mjs';
-  if (!preferPagesForCannabisPolicy && ((route.repo === 'Omni-Phi' && route.sourcePath.startsWith('/code/')) || route.repo === 'Alien-Radio' || route.repo === 'Oracle-Octaves' || route.repo === 'Oracle' || route.repo === 'QuantaPhi' || route.repo === 'Bitcoin-Crusher' || route.repo === 'TV-Database' || route.repo === 'ShopLC' || route.repo === 'Control-Phi' || route.repo === 'StarQuest' || SUPPORT_REPOS.some(x=>x.repo===route.repo)) && (textual || shareArtwork) && readRequest) {
+  // On newsroom releases, GitHub Pages can contain the published merge before
+  // the raw-content CDN refreshes. Prefer only this public, read-only reader
+  // asset; keep wallet, authentication, Bubbles and other JS raw-first.
+  const preferPagesForNewsReader = route.repo === 'QuantaPhi' && route.sourcePath === '/newsroom/fresh-reports.mjs';
+  if (!(preferPagesForCannabisPolicy || preferPagesForNewsReader) && ((route.repo === 'Omni-Phi' && route.sourcePath.startsWith('/code/')) || route.repo === 'Alien-Radio' || route.repo === 'Oracle-Octaves' || route.repo === 'Oracle' || route.repo === 'QuantaPhi' || route.repo === 'Bitcoin-Crusher' || route.repo === 'TV-Database' || route.repo === 'ShopLC' || route.repo === 'Control-Phi' || route.repo === 'StarQuest' || SUPPORT_REPOS.some(x=>x.repo===route.repo)) && (textual || shareArtwork) && readRequest) {
    const source = new URL('https://raw.githubusercontent.com/www-infinity4/' + route.repo + '/' + sourceRef + route.sourcePath);
    source.searchParams.set('__qpedge', EDGE_VERSION);
    try { upstream = await getUpstream(source, request, headers, upstreamTimeoutMs); raw = true; } catch {}
