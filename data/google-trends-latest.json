@@ -3,12 +3,117 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T06:36:23.303119Z",
+  "checked_at": "2026-11-12T07:01:38.852348Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "winter storm watch",
+      "query": "dustin hoffman",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T06:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/07/books/review/dustin-hoffman-look-at-me.html",
+        "https://people.com/dustin-hoffman-says-he-was-still-basically-broke-after-the-graduate-12247232",
+        "https://www.theguardian.com/books/2026/nov/09/look-at-me-by-dustin-hoffman-review-an-era-defining-actor-says-his-piece"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_tUKEr3AsoiVB7FHqH55qLHucywzgoVRNNRq3R51uSW-1waP_ZXFhplYwS6M",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/07/books/review/dustin-hoffman-look-at-me.html",
+          "title": "Dustin Hoffman Thought He’d Be a Nobody",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_tUKEr3AsoiVB7FHqH55qLHucywzgoVRNNRq3R51uSW-1waP_ZXFhplYwS6M"
+        },
+        {
+          "url": "https://people.com/dustin-hoffman-says-he-was-still-basically-broke-after-the-graduate-12247232",
+          "title": "Dustin Hoffman Says He Was ‘Still Basically Broke’ After The Graduate and Had to Go On Unemployment",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqallv9G2cyp4T8gcx83kXZTXj1KLIsi2v0DU2DHvmUHqHaZV2CQQ8_V9FHFo"
+        },
+        {
+          "url": "https://www.theguardian.com/books/2026/nov/09/look-at-me-by-dustin-hoffman-review-an-era-defining-actor-says-his-piece",
+          "title": "Look at Me by Dustin Hoffman review – an era-defining actor says his piece",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQK6hmox7_0QUJnrO6Trh6vgU1bKnWTECfNYLZAaELoNGcvHnX6_jacqPboCrY"
+        }
+      ]
+    },
+    {
+      "query": "france vs italy",
+      "approx_searches": "100+",
+      "published_at": "2026-11-12T06:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/italy-vs-france-probable-line-210300532.html",
+        "https://mashable.com/entertainment/italy-france-nations-league-2026-live-stream-for-free",
+        "https://www.goal.com/en-us/news/little-older-arsenal-star-riccardo-calafiori-embraces-leadership-role-youthful-italy-squad-ahead-crucial-france-clash/blt11bbced63a11384f"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZfGLm1sevSgpzhtWfBvtsxeTTpnNHg4AOa5oQrfrrNWwqi3TZOYrHDg0RUIk",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/italy-vs-france-probable-line-210300532.html",
+          "title": "Italy vs. France probable line-ups: Injuries dictate Nations League teams",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZfGLm1sevSgpzhtWfBvtsxeTTpnNHg4AOa5oQrfrrNWwqi3TZOYrHDg0RUIk"
+        },
+        {
+          "url": "https://mashable.com/entertainment/italy-france-nations-league-2026-live-stream-for-free",
+          "title": "Italy vs. France 2026 livestream: How to watch Nations League for free",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzqQztLE2uAS5qa2IART4y5lfkastqgiL1HxiGh8vhTUtWWZ3hM14kRiw1A00"
+        },
+        {
+          "url": "https://www.goal.com/en-us/news/little-older-arsenal-star-riccardo-calafiori-embraces-leadership-role-youthful-italy-squad-ahead-crucial-france-clash/blt11bbced63a11384f",
+          "title": "'I am starting to feel a little older than I was' - Arsenal star Riccardo Calafiori embraces leadership role in youthful Italy squad ahead of crucial France clash",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUxHGRVSBc6ku8pYIlVZ656KsFgbXWDprj4gSi_45Co7Tv6A52pzoNzNW89c4"
+        }
+      ]
+    },
+    {
+      "query": "measles outbreak pennsylvania",
       "approx_searches": "200+",
+      "published_at": "2026-11-12T06:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcnews.com/health/health-news/measles-pregnant-vaccines-midwife-pennsylvania-outbreak-rcna607118",
+        "https://mezha.net/eng/news/mezha-f307768e5f909bdec8c9b312_she-s_delivered_nearly/",
+        "https://www.npr.org/2026/11/10/nx-s1-6021511/pennsylvania-amish-measles-vaccine-trust"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs_6JcU5_-LGqiyW1ccX_D33cjsGP6ksqz3kGTfYrcQAcHMLiQNAowco8OW3U",
+      "image_credit": "NBC News",
+      "news": [
+        {
+          "url": "https://www.nbcnews.com/health/health-news/measles-pregnant-vaccines-midwife-pennsylvania-outbreak-rcna607118",
+          "title": "She’s delivered 2,000 babies. The measles outbreak changed her mind about vaccines.",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs_6JcU5_-LGqiyW1ccX_D33cjsGP6ksqz3kGTfYrcQAcHMLiQNAowco8OW3U"
+        },
+        {
+          "url": "https://mezha.net/eng/news/mezha-f307768e5f909bdec8c9b312_she-s_delivered_nearly/",
+          "title": "She’s delivered nearly 2,000 babies. The measles outbreak changed her view of vaccines",
+          "publisher": "Mezha.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRfQu_F1niuHq8aZOI6klA21jqjW2Mg-56y90kwrRZPIXdpf99QbNO54EFbHUw"
+        },
+        {
+          "url": "https://www.npr.org/2026/11/10/nx-s1-6021511/pennsylvania-amish-measles-vaccine-trust",
+          "title": "How word of mouth is helping an Amish community's fight against measles",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-RgB8JY9JCXNslH-zU3gFOmlc_P8VFhM8hEAgfZei1yseOhRo8AVVKZDn8N0"
+        }
+      ]
+    },
+    {
+      "query": "winter storm watch",
+      "approx_searches": "500+",
       "published_at": "2026-11-12T06:20:00Z",
       "related_news_urls": [
         "https://abc7news.com/post/bay-area-storm-timeline-rain-returns-bringing-potentially-dangerous-surf-coast-several-inches-snow-sierra/20031387/",
@@ -47,8 +152,8 @@
       "published_at": "2026-11-12T06:10:00Z",
       "related_news_urls": [
         "https://www.telegraph.co.uk/news/2026/11/11/james-acaster-scared-by-public-reaction-to-traitors-exit/",
-        "https://www.thesun.co.uk/tvandshowbiz/40914427/james-acasters-secret-comeback-plan-celebrity-traitors-backlash/",
-        "https://www.the-independent.com/arts-entertainment/tv/news/james-acaster-celebrity-traitors-king-kenny-b3080298.html"
+        "https://www.aol.co.uk/articles/james-acaster-plotting-huge-comeback-163205000.html",
+        "https://www.manchestereveningnews.co.uk/news/tv/james-acaster-speaks-out-chaotic-34896385"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQFq5CI-z0FXIZro56Z3BqJp1ys5watIEb_FIIa4GG-waLzAikHzMEsOrNlzk",
       "image_credit": "The Telegraph",
@@ -61,18 +166,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQFq5CI-z0FXIZro56Z3BqJp1ys5watIEb_FIIa4GG-waLzAikHzMEsOrNlzk"
         },
         {
-          "url": "https://www.thesun.co.uk/tvandshowbiz/40914427/james-acasters-secret-comeback-plan-celebrity-traitors-backlash/",
-          "title": "Inside James Acaster’s secret comeback plan after Celebrity Traitors backlash left him fearing for his reputation",
-          "publisher": "The Sun",
+          "url": "https://www.aol.co.uk/articles/james-acaster-plotting-huge-comeback-163205000.html",
+          "title": "James Acaster 'plotting huge comeback' after disastrous Celebrity Traitors revelation",
+          "publisher": "AOL.co.uk",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTylqeqYTC_82QqDRTFBWSSTUxrEc0MxEY-F2ES5aCaTrfi17km606HhRBRZp4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ69UtOz3SIawTSm3hyWMlAIEzgpgXOBR3bHgyM-jy6N2NxnzfS3XZaxUYiVCM"
         },
         {
-          "url": "https://www.the-independent.com/arts-entertainment/tv/news/james-acaster-celebrity-traitors-king-kenny-b3080298.html",
-          "title": "King Kenny blames James Acaster for his Celebrity Traitors banishment",
-          "publisher": "The Independent",
+          "url": "https://www.manchestereveningnews.co.uk/news/tv/james-acaster-speaks-out-chaotic-34896385",
+          "title": "James Acaster speaks out on chaotic Celebrity Traitors exit and backlash - 'I don't care'",
+          "publisher": "Manchester Evening News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxYPSDHEOS9runQU7IYtd-g6FkVPa_riuBaRHmwokK5XqCh2MZwTAgi5QjbxY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBfsrAaaFn17GPvTpEGC1u9VMhDNunYOu86cQyz7P-H4Dfdrs9l48bXraUpO4"
         }
       ]
     },
@@ -81,13 +186,20 @@
       "approx_searches": "200+",
       "published_at": "2026-11-12T06:10:00Z",
       "related_news_urls": [
+        "https://www.espn.com/football/story/_/id/50458135/india-vs-new-zealand-live-latest-updates-commentary-score-news-fifa-international-friendly-2026-auckland",
         "https://www.the-aiff.com/article/across-time-zones-and-familiar-territory-ryan-williams-looks-forward-to-first-new-zealand-challenge",
-        "https://www.olympics.com/en/news/new-zealand-vs-india-2026-football-friendly-watch-live-streaming-schedule-squad",
-        "https://www.friendsoffootballnz.com/2026/11/12/how-to-watch-all-whites-game-against-india-live-and-free/"
+        "https://www.rediff.com/sports/report/lalrinliana-hnamte-earns-india-call-up-for-new-zealand-friendlies/20261111.htm"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQFHnUYQqN86uWxWKx5kFFp95e92oDnKOQCnSfU16qacAJ6yZb8l3QdVna1AA",
-      "image_credit": "AIFF",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2HY1bQ2vayNP41wXjMXW8nl9eStY6mFGEKzPpm5GeXKMw2plVes7_2qlb9UE",
+      "image_credit": "ESPN",
       "news": [
+        {
+          "url": "https://www.espn.com/football/story/_/id/50458135/india-vs-new-zealand-live-latest-updates-commentary-score-news-fifa-international-friendly-2026-auckland",
+          "title": "India vs New Zealand LIVE: Latest Updates, Commentary, Score from first FIFA international friendly 2026",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2HY1bQ2vayNP41wXjMXW8nl9eStY6mFGEKzPpm5GeXKMw2plVes7_2qlb9UE"
+        },
         {
           "url": "https://www.the-aiff.com/article/across-time-zones-and-familiar-territory-ryan-williams-looks-forward-to-first-new-zealand-challenge",
           "title": "Across time zones and familiar territory: Ryan Williams looks forward to first New Zealand challenge",
@@ -96,18 +208,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQFHnUYQqN86uWxWKx5kFFp95e92oDnKOQCnSfU16qacAJ6yZb8l3QdVna1AA"
         },
         {
-          "url": "https://www.olympics.com/en/news/new-zealand-vs-india-2026-football-friendly-watch-live-streaming-schedule-squad",
-          "title": "New Zealand vs India football 2026: Know schedule, head-to-head and where to watch live streaming",
-          "publisher": "Olympics",
+          "url": "https://www.rediff.com/sports/report/lalrinliana-hnamte-earns-india-call-up-for-new-zealand-friendlies/20261111.htm",
+          "title": "Lalrinliana Hnamte Joins India Squad For New Zealand Friendlies",
+          "publisher": "Rediff",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxrexglyWlXeZIiQBJhi2XM35lMC58KZcgUYhQqk_4b0jf6IWfslsy6cAS_sk"
-        },
-        {
-          "url": "https://www.friendsoffootballnz.com/2026/11/12/how-to-watch-all-whites-game-against-india-live-and-free/",
-          "title": "How to watch All Whites’ game against India live and free",
-          "publisher": "Friends of Football",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTL2nnSh8iEGjAW_okId8Plha8Vz4dCcCrv0KccU_VabAZ3vnteCHKWZCV3Kk0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmODbTjIgfM_N5ttipEn0HzZ6EPZHOGO4lA-texVt2D8FSkufd8_7Dt6G-TX4"
         }
       ]
     },
@@ -248,111 +353,6 @@
           "publisher": "Entertainment Weekly",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREo32OJmdbdSoROImkytG3FQObGi0E02UZeJIU7fzIhXrUnaLlqalBgvRtQmE"
-        }
-      ]
-    },
-    {
-      "query": "robert williams iii",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T05:50:00Z",
-      "related_news_urls": [
-        "https://www.blazersedge.com/trail-blazers-news/118298/portland-trail-blazers-injury-news-chris-youngblood-oklahoma-city-thunder-robert-williams-nba-ja-morant",
-        "https://www.fanduel.com/research/nba/player-news/injuries/chris-youngblood-dtd-november-11-2026-against-thunder-foot",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/chris-youngblood-foot-will-not-return-tuesday"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHtsApqnOTWjvLpP-V_Sm1zBEtDs3-QJFTpNYD3Z02rhGR9xPcraxO2vNF7jY",
-      "image_credit": "Blazer's Edge",
-      "news": [
-        {
-          "url": "https://www.blazersedge.com/trail-blazers-news/118298/portland-trail-blazers-injury-news-chris-youngblood-oklahoma-city-thunder-robert-williams-nba-ja-morant",
-          "title": "Youngblood Diagnosed With Foot Bone Bruise",
-          "publisher": "Blazer's Edge",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHtsApqnOTWjvLpP-V_Sm1zBEtDs3-QJFTpNYD3Z02rhGR9xPcraxO2vNF7jY"
-        },
-        {
-          "url": "https://www.fanduel.com/research/nba/player-news/injuries/chris-youngblood-dtd-november-11-2026-against-thunder-foot",
-          "title": "Chris Youngblood DTD For Nov. 11 Against Thunder Due To Foot Injury",
-          "publisher": "FanDuel",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXhYxWfQYeX_ao57e3SozgYTNejFz0zm6X7TvfKs-2PscKKkc3CY_M9itFK0Q"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/chris-youngblood-foot-will-not-return-tuesday",
-          "title": "Chris Youngblood (foot) will not return Tuesday",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBTKHtVbMY9NbJWgisCS7PkQDr9AwkLQ5Gm8Hg3XsMpK-rOMAnh9Az6hasquA"
-        }
-      ]
-    },
-    {
-      "query": "malevy leons",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T05:50:00Z",
-      "related_news_urls": [
-        "https://bluemanhoop.com/malevy-leons-should-have-just-one-more-shot-to-justify-his-warriors-opportunity",
-        "https://www.nba.com/news/stephen-curry-kevin-durant-41st-matchup",
-        "https://www.espn.com/fantasy/basketball/story/_/id/50453516/fantasy-basketball-tips-nba-betting-picks-today"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyNzUZ3MwmvA2g40Wc51Y6sHA9X_yhXuMwTIcZ54PQdx4_snRS5EWbDVnLXAg",
-      "image_credit": "Blue Man Hoop",
-      "news": [
-        {
-          "url": "https://bluemanhoop.com/malevy-leons-should-have-just-one-more-shot-to-justify-his-warriors-opportunity",
-          "title": "Malevy Leons should have just one more shot to justify his Warriors opportunity",
-          "publisher": "Blue Man Hoop",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyNzUZ3MwmvA2g40Wc51Y6sHA9X_yhXuMwTIcZ54PQdx4_snRS5EWbDVnLXAg"
-        },
-        {
-          "url": "https://www.nba.com/news/stephen-curry-kevin-durant-41st-matchup",
-          "title": "Stephen Curry and Kevin Durant continue to impact the game before their 41st matchup",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUcmdqtFA6JC7O6_TKNYc3FgnDRamj1bG-NqLyns8RUhpvY3xUB53w4wA96_Y"
-        },
-        {
-          "url": "https://www.espn.com/fantasy/basketball/story/_/id/50453516/fantasy-basketball-tips-nba-betting-picks-today",
-          "title": "Fantasy basketball adds and NBA bets: Take Warriors and the points at Houston?",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxGv4r868ue1GaYz6Ufo9bRASeQFxLnhERPxkRLK6PFXLtOjkfZxs6GU2FlVc"
-        }
-      ]
-    },
-    {
-      "query": "alijah arenas",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T05:40:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/college-basketball/news/freshman-of-the-week-nikola-kusturica-ucla/",
-        "https://sports.yahoo.com/articles/usc-mens-basketballs-alijah-arenas-043247410.html",
-        "https://247sports.com/college/ucla/article/ucla-mens-basketball-forward-nikola-kusturica-named-big-ten-freshman-of-the-week-292459302/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTruVRfvo89zSM0vCK1GbWx4HDnxLzVy-ftG4h3obQor98RRmx0F1lb7z0Omx0",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/college-basketball/news/freshman-of-the-week-nikola-kusturica-ucla/",
-          "title": "Ranking college basketball's best freshmen: UCLA's Nikola Kusturica earns Freshman of the Week honors",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTruVRfvo89zSM0vCK1GbWx4HDnxLzVy-ftG4h3obQor98RRmx0F1lb7z0Omx0"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/usc-mens-basketballs-alijah-arenas-043247410.html",
-          "title": "USC men's basketball's Alijah Arenas named Big Ten Player of the Week",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXuKytWMMOmy-JlY9jdeJyUtWIg2pLyucVcRMegIjpGktnAYHjyIDkjVAHl9k"
-        },
-        {
-          "url": "https://247sports.com/college/ucla/article/ucla-mens-basketball-forward-nikola-kusturica-named-big-ten-freshman-of-the-week-292459302/",
-          "title": "UCLA men's basketball forward Nikola Kusturica named Big Ten Freshman of the Week",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTFKv_49rS8rawC6v68p8n8vjc8ssuGrVwuWjxFNnrRAGSfL7fFy8-otWpYBI"
         }
       ]
     }
