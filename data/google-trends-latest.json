@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T04:31:14.771580Z",
+  "checked_at": "2026-11-12T05:01:37.520349Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "franz wagner",
+      "query": "spacex",
       "approx_searches": "1000+",
-      "published_at": "2026-11-12T04:10:00Z",
+      "published_at": "2026-11-12T04:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nba/recap/_/gameId/401909964",
-        "https://www.nba.com/watch/video/game-recap-magic-107-kings-100-nov-10",
-        "https://kingsherald.com/articles/magic-107-kings-100-another-beamless-night/"
+        "https://www.barrons.com/articles/spacex-stock-price-starship-launch-9feb9cac",
+        "https://www.fool.com/investing/2026/11/11/heres-what-1000-invested-in-spacex-could-be-worth/",
+        "https://www.benzinga.com/markets/prediction-markets/26/11/63121272/spacex-data-center-crackdown"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR37Oz7QagCctGbsmrWHTN1GXEPTjmeWus0n6zw6xy74u5ZAboiiK7gKye2Hj0",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ2xdiWHiRPzspSTjSM0K436rgV1h-8Yj8RRFW3L8CI2Rqgd-mO_fRe8D9ACg",
+      "image_credit": "Barron's",
       "news": [
         {
-          "url": "https://www.espn.com/nba/recap/_/gameId/401909964",
-          "title": "Magic 107-100 Kings (Nov 10, 2026) Game Recap",
-          "publisher": "ESPN",
+          "url": "https://www.barrons.com/articles/spacex-stock-price-starship-launch-9feb9cac",
+          "title": "SpaceX Stock Shrugs Off AI Worries Ahead of Starship Launch",
+          "publisher": "Barron's",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR37Oz7QagCctGbsmrWHTN1GXEPTjmeWus0n6zw6xy74u5ZAboiiK7gKye2Hj0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ2xdiWHiRPzspSTjSM0K436rgV1h-8Yj8RRFW3L8CI2Rqgd-mO_fRe8D9ACg"
         },
         {
-          "url": "https://www.nba.com/watch/video/game-recap-magic-107-kings-100-nov-10",
-          "title": "Game Recap: Magic 107, Kings 100 (Nov. 10)",
-          "publisher": "NBA.com",
+          "url": "https://www.fool.com/investing/2026/11/11/heres-what-1000-invested-in-spacex-could-be-worth/",
+          "title": "Here's What $1,000 Invested in SpaceX Could Be Worth by the End of 2027",
+          "publisher": "The Motley Fool",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPew96T8L8Osqy_Ixkk56Z_xF8elS1k47dMU0qCzaojOZYhz_eeWQLwzwJqmw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3ry424ASZV562TStS6Ho1RI4UyFT7tjB9OaXL3kRb2cAi31jj4LKITa-9g7U"
         },
         {
-          "url": "https://kingsherald.com/articles/magic-107-kings-100-another-beamless-night/",
-          "title": "Magic 107, Kings 100: Another Beamless Night",
-          "publisher": "The Kings Herald",
+          "url": "https://www.benzinga.com/markets/prediction-markets/26/11/63121272/spacex-data-center-crackdown",
+          "title": "SpaceX Could Profit From AI Data Center Crackdown, Deutsche Bank Says as It Raises 2028 Forecast",
+          "publisher": "Benzinga",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYM2F7MDvjZQdFse_8PtnABVoSywFzN3zGN3PjavwATJm4ri7ZGtSrMypP_NQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRaSrioOdEF71GHK_bKY-hQWk9bk7iTHXGPxWUBfBVPl1TR81_rYpdqaaWBZxk"
         }
       ]
     },
     {
-      "query": "alperen şengün",
+      "query": "sidy cissoko",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T04:40:00Z",
+      "related_news_urls": [
+        "https://www.blazersedge.com/trail-blazers-news/118225/blazers-move-scoot-henderson-out-of-starting-lineup-versus-thunder",
+        "https://www.rotowire.com/basketball/headlines/sidy-cissoko-news-excels-in-starting-role-538560",
+        "https://www.espn.com/video/clip/_/id/50450219/sidy-cissoko-throws-hammer-aday-mara"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLsK1YUa-vwx5cAnaZpZe_MdNw7rICWb-UzZd-tcEaJ8AoQUMokzPhJCchdDI",
+      "image_credit": "Blazer's Edge",
+      "news": [
+        {
+          "url": "https://www.blazersedge.com/trail-blazers-news/118225/blazers-move-scoot-henderson-out-of-starting-lineup-versus-thunder",
+          "title": "Blazers Move Scoot Henderson Out of Starting Lineup Versus Thunder",
+          "publisher": "Blazer's Edge",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLsK1YUa-vwx5cAnaZpZe_MdNw7rICWb-UzZd-tcEaJ8AoQUMokzPhJCchdDI"
+        },
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/sidy-cissoko-news-excels-in-starting-role-538560",
+          "title": "Sidy Cissoko News: Excels in starting role",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR45nMbWnXmpjhp9-I2L1BIxOSRBnwdh_93z7TwCG1W9cLBS0yP8-fpkbM0sSk"
+        },
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50450219/sidy-cissoko-throws-hammer-aday-mara",
+          "title": "Sidy Cissoko throws down the hammer on Aday Mara",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQO2DuDwwPJXxRTUZyFNKXZLS_lw6audsWPyfkQ6-CnMY-RH-ruUxh52TDf5Cs"
+        }
+      ]
+    },
+    {
+      "query": "jessica chastain",
       "approx_searches": "500+",
-      "published_at": "2026-11-12T04:00:00Z",
+      "published_at": "2026-11-12T04:40:00Z",
       "related_news_urls": [
-        "https://www.denverpost.com/2026/11/10/nuggets-team-plane-delay-mexico-city-jamal-murray-jokic/",
-        "https://www.espn.com/nba/story/_/id/50426497/nuggets-starters-questionable-vs-rockets-plane-delays",
-        "https://www.hoopsrumors.com/2026/11/nuggets-notes-murray-starters-jokic-gordon-derozan-more.html"
+        "https://www.nytimes.com/2026/11/11/theater/jessica-chastain-broadway-lost-lear.html",
+        "https://www.broadwayworld.com/article/Jessica-Chastain-Michael-Urie-Corey-Stoll-Will-Lead-LOST-LEAR-on-Broadway-20261111",
+        "https://playbill.com/article/jessica-chastain-sets-broadway-return-in-lost-lear"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS04x7ijFDykMzkx3eMVeoMLT2WODnJeJH78i0XBNycdWUyho6uxobE792z7JU",
-      "image_credit": "The Denver Post",
-      "news": [
-        {
-          "url": "https://www.denverpost.com/2026/11/10/nuggets-team-plane-delay-mexico-city-jamal-murray-jokic/",
-          "title": "Nuggets offered starters a night off after Mexico City travel fiasco. Led by Jamal Murray, they refused to sit out.",
-          "publisher": "The Denver Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS04x7ijFDykMzkx3eMVeoMLT2WODnJeJH78i0XBNycdWUyho6uxobE792z7JU"
-        },
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50426497/nuggets-starters-questionable-vs-rockets-plane-delays",
-          "title": "Nuggets upgrade starters to probable vs. Rockets after delayed arrival",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTs6l2xsnhT6EkEk-QIuHOJ4XXBBcmrgI1qmJt99IPqi-GApb0o2wO8yp2G9s"
-        },
-        {
-          "url": "https://www.hoopsrumors.com/2026/11/nuggets-notes-murray-starters-jokic-gordon-derozan-more.html",
-          "title": "Nuggets Notes: Murray, Starters, Jokic, Gordon, DeRozan, More",
-          "publisher": "Hoops Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3S8av_OnYGB3l_coZ_bGuJqiHuZqXXmMU-B58-VIKOYxEmVjREIS8_OEsOpI"
-        }
-      ]
-    },
-    {
-      "query": "mlb mvp",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T04:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mlb/story/_/id/50391276/2026-season-awards-mvp-cy-young-al-nl",
-        "https://www.mlb.com/video/2026-mlb-awards-show-251334",
-        "https://www.athleticsnation.com/athletics-news/111185/athletics-news-award-season-continues"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgGODeugcYGYTy_2Y2MY5QSksRzjoJC0-qQzBlIW9QfavcCS5WohVWDxNTadE",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mlb/story/_/id/50391276/2026-season-awards-mvp-cy-young-al-nl",
-          "title": "Who will win MVP? Picks, analysis for 2026 MLB awards week",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgGODeugcYGYTy_2Y2MY5QSksRzjoJC0-qQzBlIW9QfavcCS5WohVWDxNTadE"
-        },
-        {
-          "url": "https://www.mlb.com/video/2026-mlb-awards-show-251334",
-          "title": "2026 MLB Awards Show",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRHdDJeoqIaF5OP9BMF1EeKkbnskA_w7esjthtwwtNVkzwQte-fshzXv9vYQo"
-        },
-        {
-          "url": "https://www.athleticsnation.com/athletics-news/111185/athletics-news-award-season-continues",
-          "title": "Elephant Rumblings: Award Season Continues",
-          "publisher": "Athletics Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRaSBhBlsX8oL6NL2kObGplkXlB8osW8RhREG1nTfj_B8ao3XN9iJm8LiobnJg"
-        }
-      ]
-    },
-    {
-      "query": "eric chen su",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T04:00:00Z",
-      "related_news_urls": [
-        "https://www.sfgate.com/bayarea/article/apple-employee-cupertino-crash-toddler-22526068.php",
-        "https://abc7news.com/post/eric-chen-su-charged-murder-slamming-back-car-100-mph-killing-toddler-riley-howard-apple-hq/20031410/",
-        "https://www.ktvu.com/news/cupertino-apple-worker-speeding-fatal-crash"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3lQzYCL8dmCrOt6dirXuk-A4Bn7XzkPjyMEhPJg5jqqiwPy3fKrfZofdENCI",
-      "image_credit": "SFGATE",
-      "news": [
-        {
-          "url": "https://www.sfgate.com/bayarea/article/apple-employee-cupertino-crash-toddler-22526068.php",
-          "title": "Apple employee faces murder charge in 90 mph crash that killed toddler",
-          "publisher": "SFGATE",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3lQzYCL8dmCrOt6dirXuk-A4Bn7XzkPjyMEhPJg5jqqiwPy3fKrfZofdENCI"
-        },
-        {
-          "url": "https://abc7news.com/post/eric-chen-su-charged-murder-slamming-back-car-100-mph-killing-toddler-riley-howard-apple-hq/20031410/",
-          "title": "Eric Chen Su charged with murder after slamming into back of car at nearly 100 mph killing toddler Riley Howard near Apple HQ",
-          "publisher": "ABC7 Bay Area",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7I3o6C8KSwuKhAZPbJ4aL_P7IWOOEoLEvM-KExPRCyrlXqYlOQS2OQks-kwY"
-        },
-        {
-          "url": "https://www.ktvu.com/news/cupertino-apple-worker-speeding-fatal-crash",
-          "title": "Apple employee drove over 90 mph in Cupertino crash that killed toddler, investigators say",
-          "publisher": "KTVU",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeEQLSnKziPZWlqJZ1fADcjdH3Iw4bRMTBLzRWgiBs0Vt4tDT4egbzN6Srn10"
-        }
-      ]
-    },
-    {
-      "query": "ducks",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T04:00:00Z",
-      "related_news_urls": [
-        "https://www.oregonlive.com/ducks/2026/11/what-is-oregons-clearest-path-to-the-big-ten-championship-game.html",
-        "https://247sports.com/college/oregon/article/cfp-chairman-explains-why-oregon-is-the-highest-ranked-three-loss-team-in-latest-playoff-rankings-292569602/",
-        "https://www.si.com/college/oregon/football/oregon-ducks-ohio-state-buckyes-biggest-winners-losers-college-football-playoff-rankings"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdxSoZFWpmmaYYiNmy_rXbAzNnESFnLJ60cAr2oTdQi0CH03xuEHBKuVoK5IY",
-      "image_credit": "OregonLive.com",
-      "news": [
-        {
-          "url": "https://www.oregonlive.com/ducks/2026/11/what-is-oregons-clearest-path-to-the-big-ten-championship-game.html",
-          "title": "Win out and get help: Oregon's Big Ten championship scenario explained",
-          "publisher": "OregonLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdxSoZFWpmmaYYiNmy_rXbAzNnESFnLJ60cAr2oTdQi0CH03xuEHBKuVoK5IY"
-        },
-        {
-          "url": "https://247sports.com/college/oregon/article/cfp-chairman-explains-why-oregon-is-the-highest-ranked-three-loss-team-in-latest-playoff-rankings-292569602/",
-          "title": "CFP chairman explains why Oregon is the highest-ranked three-loss team in latest playoff rankings",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn_PMM5SokIsKAkZqqDEacTMMzWp08-LSlw5ZcZrinkxMPzVykSqQSQeC2oE8"
-        },
-        {
-          "url": "https://www.si.com/college/oregon/football/oregon-ducks-ohio-state-buckyes-biggest-winners-losers-college-football-playoff-rankings",
-          "title": "Biggest Winners And Losers of College Football Playoff Rankings",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyZsV4nGP3ur0hXA5Sf1yW_exzOARm0RpMJT712ejyCEKNJRz8_eMUkv61VUE"
-        }
-      ]
-    },
-    {
-      "query": "warriors score",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T03:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50439821/warriors-beat-pelicans-51-points-8th-straight-win",
-        "https://www.skysports.com/nba/news/13610478/nba-jimmy-butler-dresses-up-as-coach-and-says-pass-to-steph-as-golden-state-warriors-win-eighth-straight-match",
-        "https://www.nytimes.com/athletic/7769809/2026/11/10/warriors-winning-streak-jimmy-butler-stephen-curry/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfErqk4dCwsZHeniyORuSN84JIu8m29TnTQ6OT3A1NhQO1FMXkWpbhHqWKzfc",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50439821/warriors-beat-pelicans-51-points-8th-straight-win",
-          "title": "Warriors blow out Pelicans by 51 points for 8th straight win",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfErqk4dCwsZHeniyORuSN84JIu8m29TnTQ6OT3A1NhQO1FMXkWpbhHqWKzfc"
-        },
-        {
-          "url": "https://www.skysports.com/nba/news/13610478/nba-jimmy-butler-dresses-up-as-coach-and-says-pass-to-steph-as-golden-state-warriors-win-eighth-straight-match",
-          "title": "NBA: Jimmy Butler dresses up as coach and says 'pass to Steph' as Golden State Warriors win eighth straight match",
-          "publisher": "Sky Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhwEUpO_Gu-V9cNVo-zDCrkCzNMldlfFJRdCTv4JDsYXDY1fl8KHEmt1OWMYc"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7769809/2026/11/10/warriors-winning-streak-jimmy-butler-stephen-curry/",
-          "title": "Warriors’ winning streak hits 8 as Jimmy Butler’s words over coffee seem prescient - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTisHV5I6ELp8Tp98g9Zi9bmCbhjWUi6SJ8FH7JuiGYbqiQIGx09aCk-ipOL7w"
-        }
-      ]
-    },
-    {
-      "query": "kayla harrison",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T03:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mma/story/_/id/50428840/amanda-nunes-kayla-harrison-ufc-rivals",
-        "https://www.ufc.com/news/kayla-harrison-is-primed-and-ready-for-her-dream-fight-polymarket-ufc-334",
-        "https://sports.yahoo.com/articles/ufc-334-kayla-harrison-vs-025642534.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQX5S7ZDqBr4DiK3IzhQqfEfxwEkoQN-BjvTYMVPApCPBqmJye-dI7jdfaKqg0",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mma/story/_/id/50428840/amanda-nunes-kayla-harrison-ufc-rivals",
-          "title": "Inside the tension, suspicion and history behind Amanda Nunes vs. Kayla Harrison",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQX5S7ZDqBr4DiK3IzhQqfEfxwEkoQN-BjvTYMVPApCPBqmJye-dI7jdfaKqg0"
-        },
-        {
-          "url": "https://www.ufc.com/news/kayla-harrison-is-primed-and-ready-for-her-dream-fight-polymarket-ufc-334",
-          "title": "Kayla Harrison Is Primed And Ready For Her Dream Fight",
-          "publisher": "UFC.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_hU8n0FEG_370A2BJ_gwyG4weRf9328MnND_jAs7btsNOk0XF2Q5BSTGqcco"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/ufc-334-kayla-harrison-vs-025642534.html",
-          "title": "UFC 334: Kayla Harrison Vs. Amanda Nunes Odds, Pick, And Prediction",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBJv9XSklOteikOTfHxk0SiE8WK-NiivRhfVJPShoGwi_czsJEvLMG04la7WM"
-        }
-      ]
-    },
-    {
-      "query": "amazing race",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T03:50:00Z",
-      "related_news_urls": [
-        "https://www.northjersey.com/story/news/2026/11/11/who-went-home-amazing-race-tonight-season-39-episode-8/92728314007/",
-        "https://www.annistonstar.com/free/roadblocks-detours-and-pit-stops/article_45e6ed56-2ab3-4b1f-a7df-e677b2860cb6.html",
-        "https://www.yahoo.com/entertainment/tv/articles/amazing-races-doug-dylan-react-185101231.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHbAQZxnlISrBgyg9_C7iq0F2tLhsjSwGFuxEMbUqP1mkrjR2vsvh0bkBag74",
-      "image_credit": "Bergen Record",
-      "news": [
-        {
-          "url": "https://www.northjersey.com/story/news/2026/11/11/who-went-home-amazing-race-tonight-season-39-episode-8/92728314007/",
-          "title": "LIVE: Who was eliminated on 'The Amazing Race' tonight'? Who went home?",
-          "publisher": "Bergen Record",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHbAQZxnlISrBgyg9_C7iq0F2tLhsjSwGFuxEMbUqP1mkrjR2vsvh0bkBag74"
-        },
-        {
-          "url": "https://www.annistonstar.com/free/roadblocks-detours-and-pit-stops/article_45e6ed56-2ab3-4b1f-a7df-e677b2860cb6.html",
-          "title": "Roadblocks, detours and pit stops",
-          "publisher": "The Anniston Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSotrl60boCjRs1N8ifHHCEbjd5p4aTJZbRr_H4Tyrc3CM9dGUKJD8rK4EtJyw"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/amazing-races-doug-dylan-react-185101231.html",
-          "title": "'The Amazing Race's Doug and Dylan React to Controversial U-Turn Penalty — And Reveal the Strategy Behind Their Votes (Exclusive)",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEwvX9v-v0k5PAjkCaXg76yUUWsHdzeAJabNoGhBdsCHNB631VerCSqWCen-w"
-        }
-      ]
-    },
-    {
-      "query": "science fiction",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T03:50:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/09/books/booker-prize-winner-2026-science-fiction.html",
-        "https://www.economist.com/culture/2026/11/10/civilisation-has-collapsed-in-england-and-other-odd-ideas",
-        "https://www.theguardian.com/books/2026/nov/11/m-john-harrison-booker-prize-winner-sci-fi-alien-invasion-kent"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVoew1k8fdCRdN2_2lDr6WQeYj58s-VAzn7L4LpS-fNvFejXYTDozRYMvxRiA",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzf9fP_kadvm9burooRpcz-ODuBPyHx9_CZrtVAVSrvoc1xFWilwD9y_3XUN0",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/09/books/booker-prize-winner-2026-science-fiction.html",
-          "title": "The Booker Prize Gets Its First ‘Bona Fide’ Science Fiction Winner",
+          "url": "https://www.nytimes.com/2026/11/11/theater/jessica-chastain-broadway-lost-lear.html",
+          "title": "Jessica Chastain to Star in New Broadway Play ‘Lost Lear’",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVoew1k8fdCRdN2_2lDr6WQeYj58s-VAzn7L4LpS-fNvFejXYTDozRYMvxRiA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzf9fP_kadvm9burooRpcz-ODuBPyHx9_CZrtVAVSrvoc1xFWilwD9y_3XUN0"
         },
         {
-          "url": "https://www.economist.com/culture/2026/11/10/civilisation-has-collapsed-in-england-and-other-odd-ideas",
-          "title": "Civilisation has collapsed in England, and other odd ideas",
-          "publisher": "The Economist",
+          "url": "https://www.broadwayworld.com/article/Jessica-Chastain-Michael-Urie-Corey-Stoll-Will-Lead-LOST-LEAR-on-Broadway-20261111",
+          "title": "Jessica Chastain, Michael Urie & Corey Stoll Will Lead LOST LEAR on Broadway",
+          "publisher": "BroadwayWorld",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsl2uaqGHX_stXHjmO0c06iPTN8KSvRu72POHOAbeTtudv0BGlX0V8EsBjoNk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkwcV6bhzIc5M46Vvhbi0zWGRBo9EV0ihRITUFQKn1f0TwQygU9M9APe3T6vU"
         },
         {
-          "url": "https://www.theguardian.com/books/2026/nov/11/m-john-harrison-booker-prize-winner-sci-fi-alien-invasion-kent",
-          "title": "‘We are dream-walking into a desperate situation’: the Booker prize winner on his sci-fi alien invasion wakeup call",
-          "publisher": "The Guardian",
+          "url": "https://playbill.com/article/jessica-chastain-sets-broadway-return-in-lost-lear",
+          "title": "Jessica Chastain Sets Broadway Return in Lost Lear",
+          "publisher": "Playbill",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3x4bjiFhmc8Yhf_x9DvZhatP45ghOQBv-2C6HxWsxS8QpDfNsd6PAvtIJlG8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAjq20X-_28BZ7mvRqUT1gZLLuleJEGx4YE3h9JA5MpwjX2g8sU2Oa0njYwR8"
         }
       ]
     },
     {
-      "query": "isaiah hartenstein",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-12T03:40:00Z",
+      "query": "space x launch",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T04:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nba/recap/_/gameId/401909965",
-        "https://www.blazersedge.com/gameday-threads-2/118268/discussion-portland-trail-blazers-oklahoma-city-thunder-time-tv-streaming-injury-report",
-        "https://www.nba.com/watch/video/game-recap-trail-blazers-123-thunder-103"
+        "https://www.space.com/space-exploration/launches-spacecraft/spacex-will-launch-epic-double-catch-starship-flight-15-test-mission-on-nov-13",
+        "https://finance.yahoo.com/markets/stocks/articles/nov-13-could-huge-day-195002454.html",
+        "https://myrgv.com/local-news/2026/11/09/starship-may-attempt-first-landing-at-boca-chica-after-friday-launch/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRui9ApRp4MH5BCAjmDPsbdEx4LWUPg9Oc-DG3PzkvByK9U_gEXgEOHXkK4L2g",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSySNgRuF_IjfyEnq3kB8CYLDvEpgll4LMs8h0Z5DNnxU02teH8gGeHBXjUTYk",
+      "image_credit": "Space",
       "news": [
+        {
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-will-launch-epic-double-catch-starship-flight-15-test-mission-on-nov-13",
+          "title": "SpaceX will launch epic double-catch Starship Flight 15 test mission on Nov. 13",
+          "publisher": "Space",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSySNgRuF_IjfyEnq3kB8CYLDvEpgll4LMs8h0Z5DNnxU02teH8gGeHBXjUTYk"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nov-13-could-huge-day-195002454.html",
+          "title": "Nov 13 Could Be A Huge Day For SpaceX Stock",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRs2Rb15dnG2eKmrjAEugy8-PD2Is-E84TWtkdmCIJeGADUKPdzLU5-v4KZzZA"
+        },
+        {
+          "url": "https://myrgv.com/local-news/2026/11/09/starship-may-attempt-first-landing-at-boca-chica-after-friday-launch/",
+          "title": "Starship may attempt first landing at Boca Chica after Friday launch",
+          "publisher": "MyRGV.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSfo775k1TPkkll7B0OkpeP5H-jCN582UrQe9hGZJ12wFXCsw2lmrPPgj7NiQ"
+        }
+      ]
+    },
+    {
+      "query": "alex caruso",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T04:40:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/fantasy/basketball/news/thunders-alex-caruso-starting-against-portland/",
+        "https://www.rotowire.com/basketball/headlines/alex-caruso-news-starting-against-portland-538690",
+        "https://www.espn.com/nba/recap/_/gameId/401909965"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjUn2tzksFoAjMliM0oD2Fw8OIhCrJ5FjXLsPL7Xw4bTxuEzsVeM_pwI-rJb8",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/thunders-alex-caruso-starting-against-portland/",
+          "title": "Thunder's Alex Caruso: Starting against Portland",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjUn2tzksFoAjMliM0oD2Fw8OIhCrJ5FjXLsPL7Xw4bTxuEzsVeM_pwI-rJb8"
+        },
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/alex-caruso-news-starting-against-portland-538690",
+          "title": "Alex Caruso News: Starting against Portland",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXkuF-yJUNgxW6zTt20xIXr912TGepGvDDn8VfO2QTVczmWH7EaEdHYdcOAlM"
+        },
         {
           "url": "https://www.espn.com/nba/recap/_/gameId/401909965",
           "title": "Trail Blazers 123-103 Thunder (Nov 10, 2026) Game Recap",
           "publisher": "ESPN",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRui9ApRp4MH5BCAjmDPsbdEx4LWUPg9Oc-DG3PzkvByK9U_gEXgEOHXkK4L2g"
+        }
+      ]
+    },
+    {
+      "query": "oregon basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T04:40:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/oregon/article/oregon-basketball-vs-mississippi-valley-state-how-to-watch-odds-projected-starters-292579797/",
+        "https://osubeavers.com/news/2026/11/11/mens-basketball-oregon-state-to-host-delta-devils-friday",
+        "https://www.docsports.com/free-picks/ncaa-college-basketball/2026/mvsu-delta-devils-vs-oregon-ducks-prediction-11-11-2026-college-basketball-picks-best-bets-odds.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDaK5Qge0o5JrWQJgAiPCp0qCxYFW8ciEagfPM8chUumC3VO0vLFDk7QxQbzQ",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/oregon/article/oregon-basketball-vs-mississippi-valley-state-how-to-watch-odds-projected-starters-292579797/",
+          "title": "Oregon basketball vs. Mississippi Valley State: How to watch, odds, projected starters",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDaK5Qge0o5JrWQJgAiPCp0qCxYFW8ciEagfPM8chUumC3VO0vLFDk7QxQbzQ"
         },
         {
-          "url": "https://www.blazersedge.com/gameday-threads-2/118268/discussion-portland-trail-blazers-oklahoma-city-thunder-time-tv-streaming-injury-report",
-          "title": "Discuss the Trail Blazers vs. Thunder Rematch Here!",
-          "publisher": "Blazer's Edge",
+          "url": "https://osubeavers.com/news/2026/11/11/mens-basketball-oregon-state-to-host-delta-devils-friday",
+          "title": "Oregon State to Host Delta Devils Friday",
+          "publisher": "Oregon State University Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9fUlstnBMB_rUxW7yMI_H2yRYlaEnYZ8hICtWw6VYQ0RW06Eokae9NkHnIJg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeluBmqr9C45R0qYPnYgUL9lwRWATVzV1Gzp2lyRpw44-f3fIdoeSoSkfy1ls"
         },
         {
-          "url": "https://www.nba.com/watch/video/game-recap-trail-blazers-123-thunder-103",
-          "title": "Game Recap: Trail Blazers 123, Thunder 103 (Nov. 10)",
-          "publisher": "NBA.com",
+          "url": "https://www.docsports.com/free-picks/ncaa-college-basketball/2026/mvsu-delta-devils-vs-oregon-ducks-prediction-11-11-2026-college-basketball-picks-best-bets-odds.html",
+          "title": "MVSU Delta Devils vs Oregon Ducks Prediction, 11/11/2026 College Basketball Picks, Best Bets & Odds",
+          "publisher": "Doc's Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAwJWp7bf3YCQiAED25NaKeDHPBRQbJTb3mYgKzyn1uYREPWIcmHwd96YWDC0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSd18ouw6kYrqwFgTaPQcsDM7RRayBXEUh_nKV9iNyVb9Xy4_Fo5eVvx_aEFfI"
+        }
+      ]
+    },
+    {
+      "query": "芒果tv",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T04:40:00Z",
+      "related_news_urls": [
+        "https://www.yicai.com/video/103434710.html",
+        "https://guan.media/news/detail_67729.html",
+        "https://www.sohu.com/a/1100281224_180220?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzk71DOgDXLdQTCzYIESKHAs7QaYC8kKPBSQ1rGbvoAklgrCUrUKU0rrOmGUc",
+      "image_credit": "第一财经",
+      "news": [
+        {
+          "url": "https://www.yicai.com/video/103434710.html",
+          "title": "芒果综艺出圈背后，难掩利润下滑",
+          "publisher": "第一财经",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzk71DOgDXLdQTCzYIESKHAs7QaYC8kKPBSQ1rGbvoAklgrCUrUKU0rrOmGUc"
+        },
+        {
+          "url": "https://guan.media/news/detail_67729.html",
+          "title": "芒果TV副总裁、CTO卢海波：芒果AIGC的“终极布局”",
+          "publisher": "https://guan.media/",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTe-33DNRfaFN1x6MkQionkKd5ZssCMqX5U3zaoD7oRvUcMbF5_e_REGj1aOEs"
+        },
+        {
+          "url": "https://www.sohu.com/a/1100281224_180220?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "title": "“AI在人类这样强烈的情感浓度面前，什么也不是”",
+          "publisher": "Sohu",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCNmlA75iI9PE5tqmNvQhSm9x7oCml048hs66UykEmeYb17xY2-9BOAcPIw88"
+        }
+      ]
+    },
+    {
+      "query": "spacex launch",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T04:30:00Z",
+      "related_news_urls": [
+        "https://spaceflightnow.com/2026/11/06/falcon-9-to-launch-from-california-on-classified-mission-for-u-s-space-force/",
+        "https://www.spacex.com/launches/ussf266",
+        "https://spacenews.com/eighteen-launches-no-program-names-a-call-for-disclosure/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4gr9YZUFvWCg7e0dc6JA_2ThHO8mCZShk6OYd0iwGGaJt1t6Z9bm7qo66ylY",
+      "image_credit": "Spaceflight Now",
+      "news": [
+        {
+          "url": "https://spaceflightnow.com/2026/11/06/falcon-9-to-launch-from-california-on-classified-mission-for-u-s-space-force/",
+          "title": "Falcon 9 launches from California on classified mission for U.S. Space Force",
+          "publisher": "Spaceflight Now",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4gr9YZUFvWCg7e0dc6JA_2ThHO8mCZShk6OYd0iwGGaJt1t6Z9bm7qo66ylY"
+        },
+        {
+          "url": "https://www.spacex.com/launches/ussf266",
+          "title": "USSF-266 Mission",
+          "publisher": "SpaceX",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzxrlHVXWSOjQ8IJXJTBkrryC5codpcP3ZFpMrkqHB-b8VcCbA_Dieb9l_HFg"
+        },
+        {
+          "url": "https://spacenews.com/eighteen-launches-no-program-names-a-call-for-disclosure/",
+          "title": "Eighteen launches, no program names: a call for disclosure",
+          "publisher": "SpaceNews",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShQolHxLoC_-EV_yvI2-PG0ecSJvM6kM7ISKmWpF7f-mX60KiP8B53uK9SPg4"
+        }
+      ]
+    },
+    {
+      "query": "marcus smart",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T04:30:00Z",
+      "related_news_urls": [
+        "https://basketnews.com/news-259315-marcus-smart-ejected-after-punching-warriors-big-man.html",
+        "https://clutchpoints.com/nba/houston-rockets/rockets-news-marcus-smart-ejected-for-landing-punch-on-warriors-charles-bassey-in-wild-scene",
+        "https://heavy.com/sports/nba/houston-rockets/rockets-marcus-smart-ejected-warriors-player/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXrT9GpNeux2aSHW4-RjdoD_F8jzzH8ZRqt3_Ug5AMt9QRx1sudW2tJQSkQgQ",
+      "image_credit": "BasketNews.com",
+      "news": [
+        {
+          "url": "https://basketnews.com/news-259315-marcus-smart-ejected-after-punching-warriors-big-man.html",
+          "title": "Marcus Smart ejected after punching Warriors big man",
+          "publisher": "BasketNews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXrT9GpNeux2aSHW4-RjdoD_F8jzzH8ZRqt3_Ug5AMt9QRx1sudW2tJQSkQgQ"
+        },
+        {
+          "url": "https://clutchpoints.com/nba/houston-rockets/rockets-news-marcus-smart-ejected-for-landing-punch-on-warriors-charles-bassey-in-wild-scene",
+          "title": "Rockets news: Marcus Smart ejected for landing punch on Warriors' Charles Bassey in wild scene",
+          "publisher": "ClutchPoints",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbGtWgFP-_WQSbddGy-QJnPzaTx91ihW8rkc5WSHX4V3F-QXm-uT1uk5ZJhas"
+        },
+        {
+          "url": "https://heavy.com/sports/nba/houston-rockets/rockets-marcus-smart-ejected-warriors-player/",
+          "title": "Rockets’ Marcus Smart Ejected After Throwing Punch at Warriors Player",
+          "publisher": "Heavy.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHqBvCBDGrpMCYXwTjDRpwmfEllCbHXUS5XIYm1DGKtmgn3r70CmFdeFJfeqw"
+        }
+      ]
+    },
+    {
+      "query": "amanda bynes",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T04:30:00Z",
+      "related_news_urls": [
+        "https://www.fortressofsolitude.co.za/stars-quit-acting-prime-update-2026/",
+        "https://www.inkl.com/news/amanda-bynes-40-shows-off-slimmer-figure-after-losing-43-pounds-on-ozempic",
+        "https://www.aol.com/articles/amanda-bynes-looks-slimmer-ever-130816000.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4pAz8C8dlN5yjD1UQSc_Wta4WbXh-NFnDdI9k-hrBHtTehAZygHur0Wa2nkE",
+      "image_credit": "Fortress of Solitude",
+      "news": [
+        {
+          "url": "https://www.fortressofsolitude.co.za/stars-quit-acting-prime-update-2026/",
+          "title": "10 Actresses Who Left Hollywood at Their Peak: Where Now",
+          "publisher": "Fortress of Solitude",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4pAz8C8dlN5yjD1UQSc_Wta4WbXh-NFnDdI9k-hrBHtTehAZygHur0Wa2nkE"
+        },
+        {
+          "url": "https://www.inkl.com/news/amanda-bynes-40-shows-off-slimmer-figure-after-losing-43-pounds-on-ozempic",
+          "title": "Amanda Bynes, 40, Shows Off Slimmer Figure After Losing 43 Pounds on Ozempic",
+          "publisher": "inkl",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdLQ6Uqbplcyp7eQAtQi4sWk2-wc4rLTfhddz0qErCELGxiX4Vf9IwRFW_rnM"
+        },
+        {
+          "url": "https://www.aol.com/articles/amanda-bynes-looks-slimmer-ever-130816000.html",
+          "title": "Amanda Bynes Looks Slimmer Than Ever During Rare Outing in L.A. With Boyfriend Zachary Khan Amid Ozempic Journey",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlo9wXHZ_BMyEAcex6ZpA_LxXH67I5nbXzBanYBo0n6ZV7-PMVRUDY-0bbw-Q"
         }
       ]
     }
