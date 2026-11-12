@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T11:31:28.560541Z",
+  "checked_at": "2026-11-12T12:01:47.338634Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "miguel díaz-canel",
+      "query": "wealthy investors alternative assets growth",
       "approx_searches": "100+",
-      "published_at": "2026-11-12T11:10:00Z",
+      "published_at": "2026-11-12T11:40:00Z",
       "related_news_urls": [
-        "https://www.diariolasamericas.com/america-latina/miguel-diaz-canel-reafirma-su-alianza-daniel-ortega-mientras-la-onu-senala-el-deterioro-democratico-nicaragua-n5405130",
-        "https://www.cibercuba.com/noticias/2026-11-11-u1-e74-s27061-nid345489-raul-castro-felicita-daniel-ortega-sus-81-anos",
-        "https://www.infobae.com/america/agencias/2026/11/10/xi-y-putin-valoran-las-relaciones-con-nicaragua-en-el-cumpleanos-de-ortega-segun-murillo/"
+        "https://www.cnbc.com/2026/11/12/rich-wealth-alternative-assets-.html",
+        "https://www.forexfactory.com/news/1435948-the-worlds-super-rich-are-piling-into-alternative-investments",
+        "https://www.businesstoday.in/personal-finance/story/74-of-family-offices-invest-over-20-in-alternatives-are-indian-hnis-moving-beyond-stocks-and-mfs-566741-2026-11-11"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp-OPYk2n_HvD7eHGSIeqpGS-94puU4vLud8GtRLRBqOFpXZfPI7guk0tmG2I",
-      "image_credit": "Diario Las Américas",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjH3Tidie7E0SUiVcJOGMktGyTwedUtpYrDvcQ6MnZmNnhL4lDgNj8Q-qUVOU",
+      "image_credit": "CNBC",
       "news": [
         {
-          "url": "https://www.diariolasamericas.com/america-latina/miguel-diaz-canel-reafirma-su-alianza-daniel-ortega-mientras-la-onu-senala-el-deterioro-democratico-nicaragua-n5405130",
-          "title": "Miguel Díaz-Canel reafirma su alianza con Daniel Ortega mientras la ONU señala el deterioro democrático en Nicaragua",
-          "publisher": "Diario Las Américas",
+          "url": "https://www.cnbc.com/2026/11/12/rich-wealth-alternative-assets-.html",
+          "title": "The world's super-rich are piling into alternative investments. Here's why",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp-OPYk2n_HvD7eHGSIeqpGS-94puU4vLud8GtRLRBqOFpXZfPI7guk0tmG2I"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjH3Tidie7E0SUiVcJOGMktGyTwedUtpYrDvcQ6MnZmNnhL4lDgNj8Q-qUVOU"
         },
         {
-          "url": "https://www.cibercuba.com/noticias/2026-11-11-u1-e74-s27061-nid345489-raul-castro-felicita-daniel-ortega-sus-81-anos",
-          "title": "Raúl Castro felicita a Daniel Ortega por sus 81 años y reivindica su alianza frente a la «ofensiva imperial»",
-          "publisher": "CiberCuba",
+          "url": "https://www.forexfactory.com/news/1435948-the-worlds-super-rich-are-piling-into-alternative-investments",
+          "title": "The world’s super-rich are piling into alternative investments. Here’s why",
+          "publisher": "Forex Factory",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0UHpg0qz9XmwKL9yTY0SrM-5ZUHN10aO5gbpCbtxRrk2CHqdqqwhSSjqLLdQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTs5BRyNhXui_fiYHWKeaj94AVO-UDjIkOmQS0c07aNYTwI6qv6QIRzjFDnyE"
         },
         {
-          "url": "https://www.infobae.com/america/agencias/2026/11/10/xi-y-putin-valoran-las-relaciones-con-nicaragua-en-el-cumpleanos-de-ortega-segun-murillo/",
-          "title": "Xi y Putin valoran las relaciones con Nicaragua en el cumpleaños de Ortega, según Murillo",
-          "publisher": "Infobae",
+          "url": "https://www.businesstoday.in/personal-finance/story/74-of-family-offices-invest-over-20-in-alternatives-are-indian-hnis-moving-beyond-stocks-and-mfs-566741-2026-11-11",
+          "title": "74% of family offices invest over 20% in alternatives: Are Indian HNIs moving beyond stocks and MFs?",
+          "publisher": "Business Today",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHCoVJvVj9aGPuXyPjDrxDhOfyjQZ7Om7Bphe3rtlk95gVoUt-mGAUkg7FZN4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsqC98W5T3tG3RC3g-CcOLZhBpfggPN_P5ziq9orPvGB__cwWq4-UmfSlsUj0"
         }
       ]
     },
     {
-      "query": "apache http2 vulnerability cve 2026 119618",
+      "query": "weather boston",
       "approx_searches": "100+",
-      "published_at": "2026-11-12T11:00:00Z",
+      "published_at": "2026-11-12T11:40:00Z",
       "related_news_urls": [
-        "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
-        "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
-        "https://www.rescana.com/post/apache-httpd-mod-http2-cve-2026-119618-patch-now"
+        "https://www.wcvb.com/article/wintry-weather-rain-snow-massachusetts-new-england-forecast-nov2026/74388627",
+        "https://www.bostonglobe.com/2026/11/05/metro/forecast-rain-maps-new-england-boston-weather/",
+        "https://www.boston.com/weather/local-news/2026/11/11/boston-ma-weather-rain-snow-forecast-nov-2026/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2gkzEpdZEUOv-XoKNtXBCKY259L9S82Ciu2n1uXHvuj-DN0GxqqM99bb-6A8",
-      "image_credit": "wiz.io",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqChxFgh19fZMs6qL2YgTFjuIY6mqVCOvScXv4C-iRhloDDWbPlqeLACo7jd0",
+      "image_credit": "WCVB",
       "news": [
         {
-          "url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
-          "title": "Critical RCE Vulnerability in Apache HTTP Server: Everything You Need To Know",
-          "publisher": "wiz.io",
+          "url": "https://www.wcvb.com/article/wintry-weather-rain-snow-massachusetts-new-england-forecast-nov2026/74388627",
+          "title": "Weather Alert: Incoming storm brings cold rain, snowshowers for some in New England",
+          "publisher": "WCVB",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2gkzEpdZEUOv-XoKNtXBCKY259L9S82Ciu2n1uXHvuj-DN0GxqqM99bb-6A8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqChxFgh19fZMs6qL2YgTFjuIY6mqVCOvScXv4C-iRhloDDWbPlqeLACo7jd0"
         },
         {
-          "url": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
-          "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
-          "publisher": "The Hacker News",
+          "url": "https://www.bostonglobe.com/2026/11/05/metro/forecast-rain-maps-new-england-boston-weather/",
+          "title": "Storms dump up to 7 inches of rain across Mass. and R.I. Here are the latest totals.",
+          "publisher": "The Boston Globe",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4NYjqW91xd0EvuH-KrXvccR8cpMWnYlW6MQqzFfkRwYG9DAEV89do7YSEFPs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjSheSWclWiTqdzJPdZoRb9F8tQtSj2N1k9EKmaLZ8TmG7i4Q6K6kPd33Wsp8"
         },
         {
-          "url": "https://www.rescana.com/post/apache-httpd-mod-http2-cve-2026-119618-patch-now",
-          "title": "Apache HTTP Server 2.4.71 Fixes Critical mod_http2 Heap Corruption (CVE-2026-119618) — Patch Now",
-          "publisher": "Rescana",
+          "url": "https://www.boston.com/weather/local-news/2026/11/11/boston-ma-weather-rain-snow-forecast-nov-2026/",
+          "title": "What Boston meteorologists are saying about the potential for rain and snow this week",
+          "publisher": "Boston.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiTyhyvCQbadjuTcPwkcaKCrE79Ziw5uBzQCL75F9Rl4WRIo1O7ja2qxGdDfI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTzSKkAyCZVEquhujMX7Qx7aw1IJsKCCu0UNiJ6HFHkdAwA8CSQzCqrPjiN2w"
         }
       ]
     },
     {
-      "query": "anne hathaway",
+      "query": "tiempo",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T11:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/no-cristiano-ronaldo-harry-kane-150055582.html",
+        "https://www.foxsports.com/stories/soccer/uefa-nations-league-spain-england-france-portugal-storylines",
+        "https://apnews.com/article/cristiano-ronaldo-portugal-retirement-ecbd47b3bed0442048e17955e372d416"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9_j6tRbPRdBjtsXY9Dl6OpQiheZYqIYtzVa0Vq1Vtjq_hvMNSK3XcSrZGOYY",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/no-cristiano-ronaldo-harry-kane-150055582.html",
+          "title": "No Cristiano Ronaldo, Harry Kane set for another record and what to know about the Nations League",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9_j6tRbPRdBjtsXY9Dl6OpQiheZYqIYtzVa0Vq1Vtjq_hvMNSK3XcSrZGOYY"
+        },
+        {
+          "url": "https://www.foxsports.com/stories/soccer/uefa-nations-league-spain-england-france-portugal-storylines",
+          "title": "Top 5 Storylines As Europe's Biggest Stars Back In UEFA Nations League Action",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSw7VKeks8CQAfcIRtizq_HP8OTCh0jLzJCrQgSaeYGdZaxH7ZTa5CTfj8xdDc"
+        },
+        {
+          "url": "https://apnews.com/article/cristiano-ronaldo-portugal-retirement-ecbd47b3bed0442048e17955e372d416",
+          "title": "Cristiano Ronaldo announces his international retirement from Portugal",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAW09k1nZ2DJQuA5ucyVvuXbmtBI5_W77cJ2ntC5UtWOtVn0Ns9VpbyLkJ0Hw"
+        }
+      ]
+    },
+    {
+      "query": "polar vortex",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T11:30:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/12/weather/polar-vortex-stratospheric-warming-cold-el-nino",
+        "https://www.wired.com/story/the-polar-vortex-is-about-to-make-weather-weird-from-the-uk-to-the-us/",
+        "https://www.scientificamerican.com/article/the-polar-vortex-is-about-to-go-haywire/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHwPMcFP1CFIw88FHoyfBS_tTJCjbc2pbiNwaV6nlV2HbCfkK2kAX6Bhn8iVE",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/12/weather/polar-vortex-stratospheric-warming-cold-el-nino",
+          "title": "This winter, it’s polar vortex versus El Niño. Round one starts now",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHwPMcFP1CFIw88FHoyfBS_tTJCjbc2pbiNwaV6nlV2HbCfkK2kAX6Bhn8iVE"
+        },
+        {
+          "url": "https://www.wired.com/story/the-polar-vortex-is-about-to-make-weather-weird-from-the-uk-to-the-us/",
+          "title": "The Polar Vortex Is About to Make Weather Weird From the UK to the US",
+          "publisher": "WIRED",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQo9wc5PzX32Ymo5Toog2BKRJy0jjCj75lj1WufrxXJmY6kDUm5CYb8AsaYrsE"
+        },
+        {
+          "url": "https://www.scientificamerican.com/article/the-polar-vortex-is-about-to-go-haywire/",
+          "title": "The polar vortex is about to go haywire",
+          "publisher": "Scientific American",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBQgI4CPKK5iRpKwoyNBPmwJwUuPLPD2obqJghv_9IYUqpMs1W9oB7C59VoXY"
+        }
+      ]
+    },
+    {
+      "query": "погода",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T11:30:00Z",
+      "related_news_urls": [
+        "https://people.onliner.by/2026/11/12/oranzhevyj-uroven-iz-za-silnyx-dozhdej",
+        "https://smartpress.by/news/kogda-tsiklony-obrushat-silnye-dozhdi-na-belarus-sinoptiki-nazvali-datu/",
+        "https://belta.by/society/view/sneg-s-dozhdem-i-holodnyj-veter-ozhidajutsja-segodnja-v-belarusi-810518-2026/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFnWGYjvYDC8N5CGIM7FUFx-noOxR1eDHBInz_o2YJILuU8GQfk1jyrRQIlLE",
+      "image_credit": "Onlíner",
+      "news": [
+        {
+          "url": "https://people.onliner.by/2026/11/12/oranzhevyj-uroven-iz-za-silnyx-dozhdej",
+          "title": "Вводится оранжевый уровень из-за сильных дождей. Ночью может идти снег",
+          "publisher": "Onlíner",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFnWGYjvYDC8N5CGIM7FUFx-noOxR1eDHBInz_o2YJILuU8GQfk1jyrRQIlLE"
+        },
+        {
+          "url": "https://smartpress.by/news/kogda-tsiklony-obrushat-silnye-dozhdi-na-belarus-sinoptiki-nazvali-datu/",
+          "title": "Когда циклоны обрушат сильные дожди на Беларусь? Синоптики назвали дату",
+          "publisher": "Smartpress.by",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRa9VDrtSPBjAmwdbVPXIue3BWaIopUPtydqQIT-3L2y00ku2dvO-n_jNy6cCs"
+        },
+        {
+          "url": "https://belta.by/society/view/sneg-s-dozhdem-i-holodnyj-veter-ozhidajutsja-segodnja-v-belarusi-810518-2026/",
+          "title": "Снег с дождем и холодный ветер ожидаются сегодня в Беларуси",
+          "publisher": "Новости Беларуси | БелТА",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1OCUMjatKFSeGACuvJPeiZ3wUeVgEMWbAk9a7_kaX3j8LU_FjDEe2-5H3WD0"
+        }
+      ]
+    },
+    {
+      "query": "날씨",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T11:30:00Z",
+      "related_news_urls": [
+        "https://www.chosun.com/national/transport-environment/2026/11/12/RTFBZSIZPBEXTB5LM7MC55QWUI/",
+        "https://ichannela.com/news/detail/000000559710.do",
+        "https://news.kbs.co.kr/news/view.do?ncd=8711184"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1zX0S2g40cPyf_9BqzXm0kWw0eFhKYrmRgww5NbyDNshqnssZhIb_a12KJhM",
+      "image_credit": "조선일보",
+      "news": [
+        {
+          "url": "https://www.chosun.com/national/transport-environment/2026/11/12/RTFBZSIZPBEXTB5LM7MC55QWUI/",
+          "title": "6년 만에 ‘수능 한파’...다음 주 영하권 추위",
+          "publisher": "조선일보",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1zX0S2g40cPyf_9BqzXm0kWw0eFhKYrmRgww5NbyDNshqnssZhIb_a12KJhM"
+        },
+        {
+          "url": "https://ichannela.com/news/detail/000000559710.do",
+          "title": "[날씨]내일 평년보다 온화…저녁부터 충청 이남 비",
+          "publisher": "채널A",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXbQrNf3Uu5CNvpxSOBDEXAvxri1mpQ5PkDQBNR5wK-VAsj-q0OkvWaIFVwe0"
+        },
+        {
+          "url": "https://news.kbs.co.kr/news/view.do?ncd=8711184",
+          "title": "밤사이 중부 내륙에 짙은 안개…내일 오후부터 비",
+          "publisher": "KBS 뉴스",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiBarbzwZKilSQNuS_93Hk-d4XpCPPBVvgR7UQ_pi1R2YB4IRoWn2zaVMIMeE"
+        }
+      ]
+    },
+    {
+      "query": "brigham nurses strike",
       "approx_searches": "100+",
-      "published_at": "2026-11-12T11:00:00Z",
+      "published_at": "2026-11-12T11:30:00Z",
       "related_news_urls": [
-        "https://deadline.com/2026/11/santa-barbara-film-festival-awards-2027-honorees-1237112049/",
-        "https://variety.com/2026/film/news/anne-hathaway-to-receive-american-riviera-award-1236944527/",
-        "https://ca.movies.yahoo.com/anne-hathaway-lands-prestigious-hollywood-040000665.html"
+        "https://www.bostonglobe.com/2026/11/11/business/brigham-nurses-union-deal/",
+        "https://www.cbsnews.com/boston/video/nurses-strike-averted-at-brigham-and-womens-hospital-in-boston/",
+        "https://www.bostonherald.com/2026/11/11/brigham-and-womens-nurses-ready-for-indefinite-strike/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUFhDpaHU73uuvR5iBjc5GY1PJPPwa1cVxFQYbxuDamygySOo3HJBp0fY-kX8",
-      "image_credit": "Deadline",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMgvHjUvtO1RTx92_recz509w7ktiAL2ZqqA7vIA3ZSoYIiVT4pLIubD58sPY",
+      "image_credit": "The Boston Globe",
       "news": [
         {
-          "url": "https://deadline.com/2026/11/santa-barbara-film-festival-awards-2027-honorees-1237112049/",
-          "title": "Santa Barbara Film Festival Awards: Anne Hathaway Set For American Riviera Honor",
-          "publisher": "Deadline",
+          "url": "https://www.bostonglobe.com/2026/11/11/business/brigham-nurses-union-deal/",
+          "title": "Brigham nurses reach potential 11th-hour deal with MGB, averting strike",
+          "publisher": "The Boston Globe",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUFhDpaHU73uuvR5iBjc5GY1PJPPwa1cVxFQYbxuDamygySOo3HJBp0fY-kX8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMgvHjUvtO1RTx92_recz509w7ktiAL2ZqqA7vIA3ZSoYIiVT4pLIubD58sPY"
         },
         {
-          "url": "https://variety.com/2026/film/news/anne-hathaway-to-receive-american-riviera-award-1236944527/",
-          "title": "Anne Hathaway to Receive American Riviera Award at Santa Barbara International Film Festival",
-          "publisher": "Variety",
+          "url": "https://www.cbsnews.com/boston/video/nurses-strike-averted-at-brigham-and-womens-hospital-in-boston/",
+          "title": "Nurses strike averted at Brigham and Women's Hospital in Boston",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1bpNIZO0tPL08Xi9Bbn88lvYRcC3OnW9W8_a7k_UkFbR3xcm9EDPNAd3JlAc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMibXaUQQAVWwy0YZQ166sBtSNH-Yk1EFMjK1MMyyrbaC8AqvLNa2-MoelxFE"
         },
         {
-          "url": "https://ca.movies.yahoo.com/anne-hathaway-lands-prestigious-hollywood-040000665.html",
-          "title": "Anne Hathaway lands prestigious Hollywood honour for ‘breathtaking' performance in The Odyssey",
-          "publisher": "Yahoo",
+          "url": "https://www.bostonherald.com/2026/11/11/brigham-and-womens-nurses-ready-for-indefinite-strike/",
+          "title": "Strike averted! Brigham and Women’s nurses reach tentative contract agreement",
+          "publisher": "Boston Herald",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTp_qM72brea0D5jO42QFt780GHLPbJ6BiMWbFOaezYugwgNqDJa2rSHBsvxOg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbqqTg_S1PZtVd8PmgbYreRrXH_6qOs05Bh56mV7UCO2W0Z2DqLEH901dqi9E"
         }
       ]
     },
     {
-      "query": "broadcom stock",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-12T10:50:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/live/nvidia-live-board-meets-fate-ceo-jensen-huang-after-affair-reports-2026-11-12/",
-        "https://www.barrons.com/articles/amd-stock-broadcom-nvidia-ai-chips-2b96c1f1",
-        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-12-2026"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTz2SgAlMccOd8Mm1DNPWIzvvp5-E9ZR_kC6UsB9SCGvz5i2apSCX6rtuaWrXI",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/live/nvidia-live-board-meets-fate-ceo-jensen-huang-after-affair-reports-2026-11-12/",
-          "title": "Live: Nvidia shares plunge as board weighs ousting CEO Jensen Huang amid affair scandal",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTz2SgAlMccOd8Mm1DNPWIzvvp5-E9ZR_kC6UsB9SCGvz5i2apSCX6rtuaWrXI"
-        },
-        {
-          "url": "https://www.barrons.com/articles/amd-stock-broadcom-nvidia-ai-chips-2b96c1f1",
-          "title": "AMD and Broadcom Stocks Jump. What It Says About the Future of the AI Trade.",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFFyM_0C_zAqpJKCWaAM1xvp5EYXphN_AIAAlQz5EPtetwkPA2duLbSP-QAmE"
-        },
-        {
-          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-12-2026",
-          "title": "Stock Market Today: Nvidia Shares Tumble Over Leadership Crisis — Live Updates",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTbNYR2cEjbzOQI599aCMWgy_RSzi6_pIGljjUP4yn4p1C6-wyxyzl_lWTNto"
-        }
-      ]
-    },
-    {
-      "query": "kara zor-el",
+      "query": "local weather",
       "approx_searches": "200+",
-      "published_at": "2026-11-12T10:40:00Z",
+      "published_at": "2026-11-12T11:30:00Z",
       "related_news_urls": [
-        "https://screenrant.com/new-supergirl-announced-dc-thundergirl/",
-        "https://www.hollywoodreporter.com/movies/movie-news/james-gunn-peter-safran-ouster-dc-1236751437/",
-        "https://deadline.com/2026/11/frank-grillo-reaction-james-gunn-peter-safran-dc-studios-exit-1237221357/"
+        "https://www.wsmv.com/2026/11/11/first-alert-forecast-showers-storms-return-this-evening/",
+        "https://www.commercialappeal.com/story/weather/2026/11/12/memphis-first-freeze-how-to-prepare/92727402007/",
+        "https://www.wkrn.com/weather-headlines/tennessee-first-snow-flakes-of-winter-season/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRv5MqP_QvV3fb1_zj99PgcjJuhhuqHydSn23JPCq4Gk3GepT1AYK69xlLioQk",
-      "image_credit": "ScreenRant",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR22otWm8saq6tphhwehDPbUQM39qZoKIw_ERVFD10HB3MSY-Iqc8ec2RYVzJw",
+      "image_credit": "WSMV",
       "news": [
         {
-          "url": "https://screenrant.com/new-supergirl-announced-dc-thundergirl/",
-          "title": "DC Officially Announces Name Of New Supergirl",
-          "publisher": "ScreenRant",
+          "url": "https://www.wsmv.com/2026/11/11/first-alert-forecast-showers-storms-return-this-evening/",
+          "title": "First Alert Forecast: Showers, storms return this evening in Middle Tennessee",
+          "publisher": "WSMV",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRv5MqP_QvV3fb1_zj99PgcjJuhhuqHydSn23JPCq4Gk3GepT1AYK69xlLioQk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR22otWm8saq6tphhwehDPbUQM39qZoKIw_ERVFD10HB3MSY-Iqc8ec2RYVzJw"
         },
         {
-          "url": "https://www.hollywoodreporter.com/movies/movie-news/james-gunn-peter-safran-ouster-dc-1236751437/",
-          "title": "Inside James Gunn, Peter Safran’s DC Ouster: Exec Tensions and a Fateful David Ellison Visit",
-          "publisher": "The Hollywood Reporter",
+          "url": "https://www.commercialappeal.com/story/weather/2026/11/12/memphis-first-freeze-how-to-prepare/92727402007/",
+          "title": "First freeze of the season expected to hit Mid-South this weekend",
+          "publisher": "The Commercial Appeal",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUmEx8MKt73mq6adehQc6w2oeb92dJ-o438daW3k0govL5UQJ5tSa7V9pvjXA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSg5BBU6RqWgaTnPIpkk9hl9q0LenVrEB3fiM-Cjp2dOjH4REDE5wFbcBVmJnE"
         },
         {
-          "url": "https://deadline.com/2026/11/frank-grillo-reaction-james-gunn-peter-safran-dc-studios-exit-1237221357/",
-          "title": "DC Universe Actor Frank Grillo Calls James Gunn & Peter Safran \"Two Of The Most Loyal Guys\" Following Their DC Studios Exit",
-          "publisher": "Deadline",
+          "url": "https://www.wkrn.com/weather-headlines/tennessee-first-snow-flakes-of-winter-season/",
+          "title": "When will Tennessee see its first flakes of the season?",
+          "publisher": "WKRN News 2",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtoybwq9cCt7Rk7Mi5DxMGBIXCVI7ZwV9pzUQss08jgsfUrzzZ_tuQpLxsRrE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTAa7Cd27szEX_qIXSlYQhQvPCl4W9JOG7ei68cJFBIfmQUjOCMfUs8kk3EfxI"
         }
       ]
     },
     {
-      "query": "caitlin clark",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T10:40:00Z",
+      "query": "alec bohm",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T11:30:00Z",
       "related_news_urls": [
-        "https://www.aol.com/articles/caitlin-clark-says-caitlin-2-162532000.html",
-        "https://www.si.com/fannation/sneakers/news/caitlin-clark-teases-nike-sneaker-collab-here-are-contenders",
-        "https://thespun.com/wnba/caitlin-clark-is-teasing-a-big-collab-for-her-2027-nike-shoes"
+        "https://www.mlb.com/news/yankees-alec-bohm-free-agent-interest",
+        "https://www.cbssports.com/mlb/news/mlb-rumors-yankees-alec-bohm-tarik-skubal-dodgers-blue-jays-nationals-padres-mariners-orioles/",
+        "https://www.mlbtraderumors.com/2026/11/yankees-interested-in-alec-bohm.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmtv-NVbgJvDlGcjoC5gJZhloeANli0CMxYe_XOh35fa7GR6GpXlMeDaZ8DcY",
-      "image_credit": "AOL.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmJlnJl83baIFBCPAopRYhZ2pqOEitoDR3KVvg9zEhb7Cq2nDOcDcuDOXtbPk",
+      "image_credit": "MLB.com",
       "news": [
         {
-          "url": "https://www.aol.com/articles/caitlin-clark-says-caitlin-2-162532000.html",
-          "title": "Caitlin Clark Says the Caitlin 2 Signature Shoe Is Already in Development",
-          "publisher": "AOL.com",
+          "url": "https://www.mlb.com/news/yankees-alec-bohm-free-agent-interest",
+          "title": "Yankees showing interest in Alec Bohm (source)",
+          "publisher": "MLB.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmtv-NVbgJvDlGcjoC5gJZhloeANli0CMxYe_XOh35fa7GR6GpXlMeDaZ8DcY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmJlnJl83baIFBCPAopRYhZ2pqOEitoDR3KVvg9zEhb7Cq2nDOcDcuDOXtbPk"
         },
         {
-          "url": "https://www.si.com/fannation/sneakers/news/caitlin-clark-teases-nike-sneaker-collab-here-are-contenders",
-          "title": "Caitlin Clark Teases Nike Sneaker Collab — Here Are the Contenders",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.cbssports.com/mlb/news/mlb-rumors-yankees-alec-bohm-tarik-skubal-dodgers-blue-jays-nationals-padres-mariners-orioles/",
+          "title": "MLB rumors: Yankees eye Alec Bohm, Tarik Skubal books more meetings, plus Nationals, Red Sox, Mariners, more",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT99AW_ooD0W2i2hAYH60B9B9RzZLiTwE1enPDdNX8IIZ0b3YnRv3u83tt8FaE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPynIbVRanImKUa-DvtECjdf6oGs4rWvBlGKget-b90LjjEDeYYNgNalnEZaI"
         },
         {
-          "url": "https://thespun.com/wnba/caitlin-clark-is-teasing-a-big-collab-for-her-2027-nike-shoes",
-          "title": "Caitlin Clark Is Teasing A ‘Big’ Collab For Her 2027 Nike Shoes",
-          "publisher": "The Spun",
+          "url": "https://www.mlbtraderumors.com/2026/11/yankees-interested-in-alec-bohm.html",
+          "title": "Latest On Yankees, Alec Bohm",
+          "publisher": "MLB Trade Rumors",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnzp8wnX4Fq8DKQ9hzH1wPJukiQb6sY2i5WeJU0SqFxyzk3j2IZv7BRElyEyQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5_QklJHsKLAG_dshrpYHBk7xn-ff3KT5iHc16E9mdISZ9bswoUSlcK4tVipE"
         }
       ]
     },
     {
-      "query": "ps5 pro features gta 6",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-12T10:40:00Z",
+      "query": "clima",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-12T11:20:00Z",
       "related_news_urls": [
-        "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
-        "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
-        "https://mashable.com/entertainment/gta-grand-theft-auto-6-ps5-xbox-differences"
+        "https://www.france24.com/es/minuto-a-minuto/20261112-delcy-rodr%C3%ADguez-defiende-en-la-cop-el-derecho-soberano-de-venezuela-a-potenciar-sus-hidrocarburos",
+        "https://www.minec.gob.ve/cop31-en-antalya-recep-tayyip-erdogan-y-antonio-guterres-dan-la-bienvenida-a-la-presidenta-delcy-rodriguez/",
+        "https://diariovea.com.ve/compromiso-ante-el-mundo-anuncian-plan-venezuela-vive-para-proteger-la-biodiversidad-del-pais/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZll1tApV9Ds71HmTdujHYiNfoBn3zrlJCvS7S-pg_vQYPoW8x18hTe8WUCZg",
-      "image_credit": "Rockstar Games",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM1uMiOyfWzaK9_HrciITors59oHByOpmGdue-Jhwy_yBSXcZf871y8SKIEO4",
+      "image_credit": "France 24",
       "news": [
         {
-          "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
-          "title": "Pre-Load Grand Theft Auto VI Now",
-          "publisher": "Rockstar Games",
+          "url": "https://www.france24.com/es/minuto-a-minuto/20261112-delcy-rodr%C3%ADguez-defiende-en-la-cop-el-derecho-soberano-de-venezuela-a-potenciar-sus-hidrocarburos",
+          "title": "Delcy Rodríguez defiende en la COP el \"derecho soberano\" de Venezuela a potenciar sus hidrocarburos",
+          "publisher": "France 24",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZll1tApV9Ds71HmTdujHYiNfoBn3zrlJCvS7S-pg_vQYPoW8x18hTe8WUCZg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM1uMiOyfWzaK9_HrciITors59oHByOpmGdue-Jhwy_yBSXcZf871y8SKIEO4"
         },
         {
-          "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
-          "title": "Grand Theft Auto VI Comes to XBOX One and XBOX Series X|S Through XBOX Cloud Gaming on November 19",
-          "publisher": "XBOX Wire",
+          "url": "https://www.minec.gob.ve/cop31-en-antalya-recep-tayyip-erdogan-y-antonio-guterres-dan-la-bienvenida-a-la-presidenta-delcy-rodriguez/",
+          "title": "COP31 en Antalya: Recep Tayyip Erdoğan y António Guterres dan la bienvenida a la presidenta Delcy Rodríguez",
+          "publisher": "Ministerio del Poder Popular para el Ecosocialismo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJzrY6YZl2KZ4Tazfcnoml63cj6zfNMUSfSRPFiFGCNAJt_AzbhauMFnztvUI"
         },
         {
-          "url": "https://mashable.com/entertainment/gta-grand-theft-auto-6-ps5-xbox-differences",
-          "title": "'GTA 6' on PS5 vs. Xbox: What we know",
-          "publisher": "Mashable",
+          "url": "https://diariovea.com.ve/compromiso-ante-el-mundo-anuncian-plan-venezuela-vive-para-proteger-la-biodiversidad-del-pais/",
+          "title": "¡Compromiso ante el mundo! Anuncian Plan Venezuela Vive para proteger la biodiversidad del país",
+          "publisher": "DiarioVea",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQv8S9fkHNrXf6pYMlXleXLtqIOq8hcFZrsH7KeO1eKw9gwWBPYvW8V9DFIih4"
-        }
-      ]
-    },
-    {
-      "query": "weather philadelphia",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T10:40:00Z",
-      "related_news_urls": [
-        "https://www.inquirer.com/weather/philadelphia-weather-forecast-snow-rain-records-20261111.html",
-        "https://www.wgal.com/article/warm-wednesday-wet-chilly-end-to-week-in-south-central-pennsylvania/74391902",
-        "https://www.mcall.com/2026/11/11/cold-front-bringing-rain-to-the-lehigh-valley-possible-snowflakes-in-southern-poconos-thursday-into-friday/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIY4XOu6IvJICFm53lWgbwgajz7PFUi9PNJC2nVURWO9JLF2afpmimcRVG_bs",
-      "image_credit": "Inquirer.com",
-      "news": [
-        {
-          "url": "https://www.inquirer.com/weather/philadelphia-weather-forecast-snow-rain-records-20261111.html",
-          "title": "Cold, rain, wind, and possibly mood snowflakes are forecast this week in the Philly area",
-          "publisher": "Inquirer.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIY4XOu6IvJICFm53lWgbwgajz7PFUi9PNJC2nVURWO9JLF2afpmimcRVG_bs"
-        },
-        {
-          "url": "https://www.wgal.com/article/warm-wednesday-wet-chilly-end-to-week-in-south-central-pennsylvania/74391902",
-          "title": "Warm Wednesday; wet & chilly end to week in south central Pennsylvania",
-          "publisher": "WGAL",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSBBaa2WnOC96QxIh14Ix_9v5or_BL_sKmJVwQXBjsBTJF-n9NW9eRT3TRvuk"
-        },
-        {
-          "url": "https://www.mcall.com/2026/11/11/cold-front-bringing-rain-to-the-lehigh-valley-possible-snowflakes-in-southern-poconos-thursday-into-friday/",
-          "title": "Coastal storm will bring rain to the Lehigh Valley, possible snowflakes in southern Poconos",
-          "publisher": "The Morning Call",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvB-Gjg_Sbb_JDiRnxmVUQfaTF5ZluVS6oyOdI7agT5kYA2yo98I3TOThHDFs"
-        }
-      ]
-    },
-    {
-      "query": "tiempo de hoy",
-      "approx_searches": "100+",
-      "published_at": "2026-11-12T10:30:00Z",
-      "related_news_urls": [
-        "https://www.lanacion.com.ar/estados-unidos/illinois/clima-en-joliet-illinois-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-11-de-noviembre-nid11112026/",
-        "https://www.lanacion.com.ar/estados-unidos/illinois/clima-en-aurora-illinois-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-12-de-noviembre-nid12112026/",
-        "https://www.lanacion.com.ar/estados-unidos/illinois/clima-en-naperville-illinois-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-11-de-noviembre-nid11112026/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSz2ZngnaZvfxCB4GWM90WGbSd6euxktWkfzRhpbnXiO9AeOdtIwCRMMSB8Vic",
-      "image_credit": "La Nación",
-      "news": [
-        {
-          "url": "https://www.lanacion.com.ar/estados-unidos/illinois/clima-en-joliet-illinois-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-11-de-noviembre-nid11112026/",
-          "title": "Clima en Joliet, Illinois hoy: cuál es el pronóstico del tiempo para hoy 11 de noviembre",
-          "publisher": "La Nación",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSz2ZngnaZvfxCB4GWM90WGbSd6euxktWkfzRhpbnXiO9AeOdtIwCRMMSB8Vic"
-        },
-        {
-          "url": "https://www.lanacion.com.ar/estados-unidos/illinois/clima-en-aurora-illinois-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-12-de-noviembre-nid12112026/",
-          "title": "Clima en Aurora, Illinois hoy: cuál es el pronóstico del tiempo para hoy 12 de noviembre",
-          "publisher": "La Nación",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSz2ZngnaZvfxCB4GWM90WGbSd6euxktWkfzRhpbnXiO9AeOdtIwCRMMSB8Vic"
-        },
-        {
-          "url": "https://www.lanacion.com.ar/estados-unidos/illinois/clima-en-naperville-illinois-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-11-de-noviembre-nid11112026/",
-          "title": "Clima en Naperville, Illinois hoy: cuál es el pronóstico del tiempo para hoy 11 de noviembre",
-          "publisher": "La Nación",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSz2ZngnaZvfxCB4GWM90WGbSd6euxktWkfzRhpbnXiO9AeOdtIwCRMMSB8Vic"
-        }
-      ]
-    },
-    {
-      "query": "elon musk spacex tesla merger",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T10:20:00Z",
-      "related_news_urls": [
-        "https://www.fool.com/investing/2026/11/11/if-spacex-and-tesla-merge-heres-what-a-10000-inves/",
-        "https://finance.yahoo.com/markets/stocks/articles/tesla-tsla-forms-special-committee-181131688.html",
-        "https://www.forbes.com/sites/joemoglia/2026/11/10/tesla-and-spacex-merger-could-make-one-of-the-greatest-companies-ever/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIGoY6i0ZViu8gbNPmyLjbYISjolzSxU7TYKDm_u8iG0Ge1UM1FNY8GWZ0grM",
-      "image_credit": "The Motley Fool",
-      "news": [
-        {
-          "url": "https://www.fool.com/investing/2026/11/11/if-spacex-and-tesla-merge-heres-what-a-10000-inves/",
-          "title": "If SpaceX and Tesla Merge, Here's What a $10,000 Investment in the Combined Company Could Be Worth by 2030",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIGoY6i0ZViu8gbNPmyLjbYISjolzSxU7TYKDm_u8iG0Ge1UM1FNY8GWZ0grM"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-tsla-forms-special-committee-181131688.html",
-          "title": "Tesla (TSLA) Forms Special Committee To Review Possible All Stock Merger",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyWR8t_Zuuel-lmTnX4knaNKy7QFVzQ9-IiEyR18eiQ0rmG93cgUkHscnz3A4"
-        },
-        {
-          "url": "https://www.forbes.com/sites/joemoglia/2026/11/10/tesla-and-spacex-merger-could-make-one-of-the-greatest-companies-ever/",
-          "title": "Tesla And SpaceX Merger Could Make One Of The Greatest Companies Ever",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7E1vHCLvS_e8Lghcixh5bWtrKzx5KKALRkVQzWKJgxxyfZuYV30ntCkESmH8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgY_jjq5Y5Sfdu1XFy51yKFnTsp0vlmijKx7JUfTEKbt4xExRrI4R3jL8to7s"
         }
       ]
     }
