@@ -3,12 +3,82 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T13:01:32.919441Z",
+  "checked_at": "2026-11-12T13:31:30.942888Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "social security trust fund depletion 2032",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-12T13:00:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/11/social-security-benefits-taxable-payroll-gdp.html",
+        "https://www.cleveland.com/news/2026/11/social-security-faces-major-cuts-retirees-in-these-15-states-could-lose-more-than-515-a-month.html",
+        "https://finance.yahoo.com/economy/policy/articles/social-security-could-shrink-2032-142019972.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6jIiPNuC-CiNqONjDXwnXwQbiEhzcLOi4xnv3SPKQ9dQvrCDbfjeimA0LYTk",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/11/social-security-benefits-taxable-payroll-gdp.html",
+          "title": "Social Security could pay full benefits until 2059 if taxable payroll kept pace with GDP: AARP report",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6jIiPNuC-CiNqONjDXwnXwQbiEhzcLOi4xnv3SPKQ9dQvrCDbfjeimA0LYTk"
+        },
+        {
+          "url": "https://www.cleveland.com/news/2026/11/social-security-faces-major-cuts-retirees-in-these-15-states-could-lose-more-than-515-a-month.html",
+          "title": "Social Security faces major cuts: Retirees in these 15 states could lose more than $515 a month",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyiAJauQGprJyq_tOoLmTNGTuzzlB3UFd8mq4Rab-7jVtNr2TCYd_BDbsN07k"
+        },
+        {
+          "url": "https://finance.yahoo.com/economy/policy/articles/social-security-could-shrink-2032-142019972.html",
+          "title": "Social Security could shrink by 2032 — how to check your benefits",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZZY0oMIwjLecc44wRBQzXcIn2yCpC1fmtkTOW_Yws5TrVFpKdCfsVyR11Kek"
+        }
+      ]
+    },
+    {
+      "query": "resident evil code veronica remake",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-12T13:00:00Z",
+      "related_news_urls": [
+        "https://www.relyonhorror.com/latest-news/resident-evil-news/resident-evil-veronica-delayed/",
+        "https://wccftech.com/capcom-holding-resident-evil-veronica-fall-2027-polish-requiem-feedback/",
+        "https://en.gamegpu.com/news/igry/v-seti-poyavilis-podrobnosti-o-perenose-daty-pokaza-vtorogo-trejlera-remejka-resident-evil"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReiWnYl7NvsuDuLpAWNqdhnfRWXS_cBARba0tGEUfknXr-rJ6RnqNIHpe87mg",
+      "image_credit": "Rely on Horror",
+      "news": [
+        {
+          "url": "https://www.relyonhorror.com/latest-news/resident-evil-news/resident-evil-veronica-delayed/",
+          "title": "Resident Evil Veronica Reportedly Delayed Due to Requiem Feedback",
+          "publisher": "Rely on Horror",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReiWnYl7NvsuDuLpAWNqdhnfRWXS_cBARba0tGEUfknXr-rJ6RnqNIHpe87mg"
+        },
+        {
+          "url": "https://wccftech.com/capcom-holding-resident-evil-veronica-fall-2027-polish-requiem-feedback/",
+          "title": "CAPCOM Is Reportedly Holding Resident Evil Veronica Until Fall 2027 to Polish Even Minor Issues, As Resident Evil Requiem Feedback Is Shaping Development",
+          "publisher": "Wccftech",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmy6T2YKD450Lv_TY7N6lVHhRQNIa3YZ3bMy3uXuPlfubAWU-IeDxWXP_cBqA"
+        },
+        {
+          "url": "https://en.gamegpu.com/news/igry/v-seti-poyavilis-podrobnosti-o-perenose-daty-pokaza-vtorogo-trejlera-remejka-resident-evil",
+          "title": "Details have surfaced online about the postponement of the second trailer for the Resident Evil remake.",
+          "publisher": "GameGPU",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQeKuu20zgSFo45JmgtbwTWKg8ROaIc7KaybcUe_y1afg0XBnmHD9-oV4XfqDc"
+        }
+      ]
+    },
+    {
       "query": "mark mcguinn",
-      "approx_searches": "500+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-12T12:40:00Z",
       "related_news_urls": [
         "https://www.pennlive.com/entertainment/2026/11/country-music-star-known-for-2000s-hit-dies-at-58-he-was-an-incredible-talent.html",
@@ -77,41 +147,6 @@
       ]
     },
     {
-      "query": "doc brown marty mcfly flux capacitor",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T12:40:00Z",
-      "related_news_urls": [
-        "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-12-2026",
-        "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-12-1250/",
-        "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-12-2026"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY",
-      "image_credit": "Mashable",
-      "news": [
-        {
-          "url": "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-12-2026",
-          "title": "NYT Connections hints today: Meanings for each word for Nov. 12, 2026",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY"
-        },
-        {
-          "url": "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-12-1250/",
-          "title": "Today’s NYT Connections Hints and Answers for Thursday, Nov. 12, #1250",
-          "publisher": "CNET",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5B2QPFmAtPFZ6dnv4KpH5_nPJZtIDzn1O1_Cv02WPuQdaV8r20pDOMUo0v-M"
-        },
-        {
-          "url": "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-12-2026",
-          "title": "Today's NYT Connections Hints (and Answer) for Thursday, November 12, 2026",
-          "publisher": "Lifehacker",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRDJJRxBmZIbinmOGXydK6UNrAOD0ye_s7I2V8p02uvssMr2k0jHDTnNFlD_8"
-        }
-      ]
-    },
-    {
       "query": "lpga",
       "approx_searches": "200+",
       "published_at": "2026-11-12T12:30:00Z",
@@ -148,14 +183,14 @@
     },
     {
       "query": "jacey birch",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-12T12:30:00Z",
       "related_news_urls": [
         "https://nypost.com/2026/11/11/media/wplg-anchor-jacey-birch-flashes-side-boob-in-festival-pics/",
         "https://www.news.com.au/lifestyle/real-life/news-life/tv-news-anchor-sparks-backlash-over-bikini-photos-despite-bosss-strict-ban/news-story/aa35083d2300c654e53f2a3c7814ca4f",
         "https://www.ftvlive.com/sqsp-test/2026/11/10/anchor-side-boob"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzunvv3SHz1mekN7XS7emnz7Yu7dOb_TA3PY35tWIp8C9KIe6GKD1qfrqG5EM",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJBsLB1kZ8Jl9FGolo5gCE7MLVbIkZFOXHmahHbamDfwOfIZNYcqqtzQJdOLM",
       "image_credit": "New York Post",
       "news": [
         {
@@ -163,7 +198,7 @@
           "title": "Miami TV anchor flashes side boob in racy festival pics — after boss blasted ‘cringeworthy’ social media posts",
           "publisher": "New York Post",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzunvv3SHz1mekN7XS7emnz7Yu7dOb_TA3PY35tWIp8C9KIe6GKD1qfrqG5EM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJBsLB1kZ8Jl9FGolo5gCE7MLVbIkZFOXHmahHbamDfwOfIZNYcqqtzQJdOLM"
         },
         {
           "url": "https://www.news.com.au/lifestyle/real-life/news-life/tv-news-anchor-sparks-backlash-over-bikini-photos-despite-bosss-strict-ban/news-story/aa35083d2300c654e53f2a3c7814ca4f",
@@ -183,7 +218,7 @@
     },
     {
       "query": "polar vortex el niño winter weather",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-12T12:20:00Z",
       "related_news_urls": [
         "https://www.cnn.com/2026/11/12/weather/polar-vortex-stratospheric-warming-cold-el-nino",
@@ -258,7 +293,7 @@
       "related_news_urls": [
         "https://www.chicagotribune.com/2026/11/11/daily-horoscope-for-november-12-2026/",
         "https://www.mercurynews.com/2026/11/12/horoscopes-november-12-2026-ryan-gosling-choose-to-use-your-skills/",
-        "https://www.ctinsider.com/horoscope/article/horoscope-thursday-11-12-26-georgia-nicols-22515351.php"
+        "https://www.thecut.com/article/daily-horoscopes-by-madame-clairevoyant-november-12-2026.html"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyyP8aeo0B3SWQfMQVrGcd2e0KCMzT9YdlS9Cflt58rEoB1JxR7_qtipW4AyY",
       "image_credit": "Chicago Tribune",
@@ -278,81 +313,46 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwtyvKgHv0PdOXQdxOennX3P4MzJuZAVjaPLztKtH-0E9RCmShyr3Q9uxHcAQ"
         },
         {
-          "url": "https://www.ctinsider.com/horoscope/article/horoscope-thursday-11-12-26-georgia-nicols-22515351.php",
-          "title": "Horoscope for Thursday, 11/12/26 by Georgia Nicols",
-          "publisher": "CT Insider",
+          "url": "https://www.thecut.com/article/daily-horoscopes-by-madame-clairevoyant-november-12-2026.html",
+          "title": "Your Daily Horoscope by Madame Clairevoyant: November 12, 2026",
+          "publisher": "The Cut",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNtJ68KFZzTv6rsNyazH01h06Qo_EwgzYokpk1gOr8dFzGt8z4aS-Y2xWSBKs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVR3oKO21NfntqgMrNV9DhmSi8WKC3CjeygrMHMIgfxZ0M5x-dsIJciSF9M7k"
         }
       ]
     },
     {
-      "query": "alex michelsen",
-      "approx_searches": "500+",
+      "query": "nbis stock",
+      "approx_searches": "5000+",
       "published_at": "2026-11-12T12:10:00Z",
       "related_news_urls": [
-        "https://www.atptour.com/en/video/hot-shot-kecmanovic-goes-this-way-then-that-in-superb-stockholm-2026-play",
-        "https://www.thestatszone.com/arthur-rinderknech-vs-miomir-kecmanovic-preview-prediction-2026-stockholm-open-first-round-237309",
-        "https://www.skysports.com/tennis/watch/5481892268268101112/bybit-stockholm-open-2026"
+        "https://www.cnbc.com/2026/11/12/nebius-q3-earnings-report-2026.html",
+        "https://www.reuters.com/technology/nebius-beats-quarterly-revenue-estimates-strong-ai-demand-2026-11-12/",
+        "https://www.investors.com/news/technology/nebius-stock-q326-earnings-neoclouds-nbis/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTilDkxYtEPlbcOK3F2yrYyKU6N9-92s-UFpNK8kjloPWiKjoeYvHrhmqyAzmo",
-      "image_credit": "ATP Tour",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwEV0Q0wqrGWkz2b1uRMF9Y8XB2dojpILucitFJ93i8-h-oF_4HBJtcdT7mDk",
+      "image_credit": "CNBC",
       "news": [
         {
-          "url": "https://www.atptour.com/en/video/hot-shot-kecmanovic-goes-this-way-then-that-in-superb-stockholm-2026-play",
-          "title": "Hot Shot: Kecmanovic goes this way then that in superb Stockholm 2026 play",
-          "publisher": "ATP Tour",
+          "url": "https://www.cnbc.com/2026/11/12/nebius-q3-earnings-report-2026.html",
+          "title": "Nebius falls 10% as company expects increased 2026 capex spend, issues weak outlook",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTilDkxYtEPlbcOK3F2yrYyKU6N9-92s-UFpNK8kjloPWiKjoeYvHrhmqyAzmo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwEV0Q0wqrGWkz2b1uRMF9Y8XB2dojpILucitFJ93i8-h-oF_4HBJtcdT7mDk"
         },
         {
-          "url": "https://www.thestatszone.com/arthur-rinderknech-vs-miomir-kecmanovic-preview-prediction-2026-stockholm-open-first-round-237309",
-          "title": "Arthur Rinderknech vs Miomir Kecmanovic Preview & Prediction | 2026 Stockholm Open | First Round",
-          "publisher": "The Stats Zone",
+          "url": "https://www.reuters.com/technology/nebius-beats-quarterly-revenue-estimates-strong-ai-demand-2026-11-12/",
+          "title": "Nebius beats quarterly revenue estimates on strong AI demand",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe3aNFqClqjKj0-Q5VtszZvxgyCofuun84t1cjxDT2vN5uDi1zj_QZGKQp62I"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgy7tGhMIxH-eeEZ3Et3832yvretJmNwSMahI-RFMSY-Pd9_JM4jWJKwM_kRM"
         },
         {
-          "url": "https://www.skysports.com/tennis/watch/5481892268268101112/bybit-stockholm-open-2026",
-          "title": "Sports News, Transfers, Scores | Watch Live Sport",
-          "publisher": "Sky Sports",
+          "url": "https://www.investors.com/news/technology/nebius-stock-q326-earnings-neoclouds-nbis/",
+          "title": "Nebius Earnings, Revenue Top Estimates. But Neoclouds Sell Off Again.",
+          "publisher": "Investor's Business Daily",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTX0LhVSUxH57CpZZTQJ1E7brEWdVhbsjav05mED-OpsMsr2d4c47-GVaKEstA"
-        }
-      ]
-    },
-    {
-      "query": "keith cooper jr.",
-      "approx_searches": "100+",
-      "published_at": "2026-11-12T12:10:00Z",
-      "related_news_urls": [
-        "https://www.miamidolphins.com/news/dolphins-sign-cooper-jr",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-dolphins-dt-zach-sieler-to-have-season-ending-biceps-surgery",
-        "https://www.miamiherald.com/sports/article318031931.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuVY9LEwxaDTy2yE70d68xU3ttlJZhTZEGwFsY7r0qjfJ6E3dokupBK_TW0eg",
-      "image_credit": "Miami Dolphins",
-      "news": [
-        {
-          "url": "https://www.miamidolphins.com/news/dolphins-sign-cooper-jr",
-          "title": "Dolphins sign Cooper Jr.",
-          "publisher": "Miami Dolphins",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuVY9LEwxaDTy2yE70d68xU3ttlJZhTZEGwFsY7r0qjfJ6E3dokupBK_TW0eg"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-dolphins-dt-zach-sieler-to-have-season-ending-biceps-surgery",
-          "title": "Report: Dolphins DT Zach Sieler to have season-ending biceps surgery",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcjpYG4vNOmcK6_ky-qvGuIQ6SY53WWzZHHgBsaB2z1npg0Xyd-mQI0S3jzuM"
-        },
-        {
-          "url": "https://www.miamiherald.com/sports/article318031931.html",
-          "title": "Dolphins poach one of team’s training camp standouts from Panthers",
-          "publisher": "Miami Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1-68c0QA5KgxznB2T5l5WLzMIHaphn3k_T6fQB8sxgGFOxdBcQctLYrAGk0I"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQGYfUcGqaFXio4NpReqEKSlPXz7SLf0lYEaVUFOwoH2wpfai2BtwIQYxkduXI"
         }
       ]
     }
