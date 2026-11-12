@@ -3,118 +3,13 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T12:01:47.338634Z",
+  "checked_at": "2026-11-12T12:34:03.665211Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "wealthy investors alternative assets growth",
-      "approx_searches": "100+",
-      "published_at": "2026-11-12T11:40:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/12/rich-wealth-alternative-assets-.html",
-        "https://www.forexfactory.com/news/1435948-the-worlds-super-rich-are-piling-into-alternative-investments",
-        "https://www.businesstoday.in/personal-finance/story/74-of-family-offices-invest-over-20-in-alternatives-are-indian-hnis-moving-beyond-stocks-and-mfs-566741-2026-11-11"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjH3Tidie7E0SUiVcJOGMktGyTwedUtpYrDvcQ6MnZmNnhL4lDgNj8Q-qUVOU",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/12/rich-wealth-alternative-assets-.html",
-          "title": "The world's super-rich are piling into alternative investments. Here's why",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjH3Tidie7E0SUiVcJOGMktGyTwedUtpYrDvcQ6MnZmNnhL4lDgNj8Q-qUVOU"
-        },
-        {
-          "url": "https://www.forexfactory.com/news/1435948-the-worlds-super-rich-are-piling-into-alternative-investments",
-          "title": "The world’s super-rich are piling into alternative investments. Here’s why",
-          "publisher": "Forex Factory",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTs5BRyNhXui_fiYHWKeaj94AVO-UDjIkOmQS0c07aNYTwI6qv6QIRzjFDnyE"
-        },
-        {
-          "url": "https://www.businesstoday.in/personal-finance/story/74-of-family-offices-invest-over-20-in-alternatives-are-indian-hnis-moving-beyond-stocks-and-mfs-566741-2026-11-11",
-          "title": "74% of family offices invest over 20% in alternatives: Are Indian HNIs moving beyond stocks and MFs?",
-          "publisher": "Business Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsqC98W5T3tG3RC3g-CcOLZhBpfggPN_P5ziq9orPvGB__cwWq4-UmfSlsUj0"
-        }
-      ]
-    },
-    {
-      "query": "weather boston",
-      "approx_searches": "100+",
-      "published_at": "2026-11-12T11:40:00Z",
-      "related_news_urls": [
-        "https://www.wcvb.com/article/wintry-weather-rain-snow-massachusetts-new-england-forecast-nov2026/74388627",
-        "https://www.bostonglobe.com/2026/11/05/metro/forecast-rain-maps-new-england-boston-weather/",
-        "https://www.boston.com/weather/local-news/2026/11/11/boston-ma-weather-rain-snow-forecast-nov-2026/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqChxFgh19fZMs6qL2YgTFjuIY6mqVCOvScXv4C-iRhloDDWbPlqeLACo7jd0",
-      "image_credit": "WCVB",
-      "news": [
-        {
-          "url": "https://www.wcvb.com/article/wintry-weather-rain-snow-massachusetts-new-england-forecast-nov2026/74388627",
-          "title": "Weather Alert: Incoming storm brings cold rain, snowshowers for some in New England",
-          "publisher": "WCVB",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqChxFgh19fZMs6qL2YgTFjuIY6mqVCOvScXv4C-iRhloDDWbPlqeLACo7jd0"
-        },
-        {
-          "url": "https://www.bostonglobe.com/2026/11/05/metro/forecast-rain-maps-new-england-boston-weather/",
-          "title": "Storms dump up to 7 inches of rain across Mass. and R.I. Here are the latest totals.",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjSheSWclWiTqdzJPdZoRb9F8tQtSj2N1k9EKmaLZ8TmG7i4Q6K6kPd33Wsp8"
-        },
-        {
-          "url": "https://www.boston.com/weather/local-news/2026/11/11/boston-ma-weather-rain-snow-forecast-nov-2026/",
-          "title": "What Boston meteorologists are saying about the potential for rain and snow this week",
-          "publisher": "Boston.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTzSKkAyCZVEquhujMX7Qx7aw1IJsKCCu0UNiJ6HFHkdAwA8CSQzCqrPjiN2w"
-        }
-      ]
-    },
-    {
-      "query": "tiempo",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-12T11:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/no-cristiano-ronaldo-harry-kane-150055582.html",
-        "https://www.foxsports.com/stories/soccer/uefa-nations-league-spain-england-france-portugal-storylines",
-        "https://apnews.com/article/cristiano-ronaldo-portugal-retirement-ecbd47b3bed0442048e17955e372d416"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9_j6tRbPRdBjtsXY9Dl6OpQiheZYqIYtzVa0Vq1Vtjq_hvMNSK3XcSrZGOYY",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/no-cristiano-ronaldo-harry-kane-150055582.html",
-          "title": "No Cristiano Ronaldo, Harry Kane set for another record and what to know about the Nations League",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9_j6tRbPRdBjtsXY9Dl6OpQiheZYqIYtzVa0Vq1Vtjq_hvMNSK3XcSrZGOYY"
-        },
-        {
-          "url": "https://www.foxsports.com/stories/soccer/uefa-nations-league-spain-england-france-portugal-storylines",
-          "title": "Top 5 Storylines As Europe's Biggest Stars Back In UEFA Nations League Action",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSw7VKeks8CQAfcIRtizq_HP8OTCh0jLzJCrQgSaeYGdZaxH7ZTa5CTfj8xdDc"
-        },
-        {
-          "url": "https://apnews.com/article/cristiano-ronaldo-portugal-retirement-ecbd47b3bed0442048e17955e372d416",
-          "title": "Cristiano Ronaldo announces his international retirement from Portugal",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAW09k1nZ2DJQuA5ucyVvuXbmtBI5_W77cJ2ntC5UtWOtVn0Ns9VpbyLkJ0Hw"
-        }
-      ]
-    },
-    {
-      "query": "polar vortex",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T11:30:00Z",
+      "query": "polar vortex el niño winter weather",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T12:20:00Z",
       "related_news_urls": [
         "https://www.cnn.com/2026/11/12/weather/polar-vortex-stratospheric-warming-cold-el-nino",
         "https://www.wired.com/story/the-polar-vortex-is-about-to-make-weather-weird-from-the-uk-to-the-us/",
@@ -147,212 +42,317 @@
       ]
     },
     {
-      "query": "погода",
+      "query": "nelly korda",
       "approx_searches": "200+",
-      "published_at": "2026-11-12T11:30:00Z",
+      "published_at": "2026-11-12T12:20:00Z",
       "related_news_urls": [
-        "https://people.onliner.by/2026/11/12/oranzhevyj-uroven-iz-za-silnyx-dozhdej",
-        "https://smartpress.by/news/kogda-tsiklony-obrushat-silnye-dozhdi-na-belarus-sinoptiki-nazvali-datu/",
-        "https://belta.by/society/view/sneg-s-dozhdem-i-holodnyj-veter-ozhidajutsja-segodnja-v-belarusi-810518-2026/"
+        "https://www.usatoday.com/story/sports/golf/lpga/2026/11/12/nelly-korda-lpga-hall-of-fame-points-annika/92713323007/",
+        "https://www.yahoo.com/news/slideshows/nelly-korda-verge-lpga-hall-110852360.html",
+        "https://www.bbc.com/sport/golf/articles/cm5yn75wg5vqo"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFnWGYjvYDC8N5CGIM7FUFx-noOxR1eDHBInz_o2YJILuU8GQfk1jyrRQIlLE",
-      "image_credit": "Onlíner",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3_ik8svMlSWp1szjdRhyOYfQFXACvnObtlkj4kTwF8iN5LlgxqsNTRMEHyps",
+      "image_credit": "USA Today",
       "news": [
         {
-          "url": "https://people.onliner.by/2026/11/12/oranzhevyj-uroven-iz-za-silnyx-dozhdej",
-          "title": "Вводится оранжевый уровень из-за сильных дождей. Ночью может идти снег",
-          "publisher": "Onlíner",
+          "url": "https://www.usatoday.com/story/sports/golf/lpga/2026/11/12/nelly-korda-lpga-hall-of-fame-points-annika/92713323007/",
+          "title": "How close is Nelly Korda to the LPGA Hall of Fame? One win Sunday",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFnWGYjvYDC8N5CGIM7FUFx-noOxR1eDHBInz_o2YJILuU8GQfk1jyrRQIlLE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3_ik8svMlSWp1szjdRhyOYfQFXACvnObtlkj4kTwF8iN5LlgxqsNTRMEHyps"
         },
         {
-          "url": "https://smartpress.by/news/kogda-tsiklony-obrushat-silnye-dozhdi-na-belarus-sinoptiki-nazvali-datu/",
-          "title": "Когда циклоны обрушат сильные дожди на Беларусь? Синоптики назвали дату",
-          "publisher": "Smartpress.by",
+          "url": "https://www.yahoo.com/news/slideshows/nelly-korda-verge-lpga-hall-110852360.html",
+          "title": "Nelly Korda on verge of LPGA Hall of Fame. See all her tournament wins",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRa9VDrtSPBjAmwdbVPXIue3BWaIopUPtydqQIT-3L2y00ku2dvO-n_jNy6cCs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5P95o-nE2rAhfdB7ew9wQ03aIyUcaQAESA0AtCWRbNiqlpo-GdCQYRI9HlRo"
         },
         {
-          "url": "https://belta.by/society/view/sneg-s-dozhdem-i-holodnyj-veter-ozhidajutsja-segodnja-v-belarusi-810518-2026/",
-          "title": "Снег с дождем и холодный ветер ожидаются сегодня в Беларуси",
-          "publisher": "Новости Беларуси | БелТА",
+          "url": "https://www.bbc.com/sport/golf/articles/cm5yn75wg5vqo",
+          "title": "American Korda wins LPGA Tour player of the year",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1OCUMjatKFSeGACuvJPeiZ3wUeVgEMWbAk9a7_kaX3j8LU_FjDEe2-5H3WD0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS31gdjD216s_cbh6UWX71Im9W77UgMuKPmzbVP6y6LCUBkXnxzdPnjVgOf1_0"
         }
       ]
     },
     {
-      "query": "날씨",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T11:30:00Z",
+      "query": "ryan gosling",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T12:20:00Z",
       "related_news_urls": [
-        "https://www.chosun.com/national/transport-environment/2026/11/12/RTFBZSIZPBEXTB5LM7MC55QWUI/",
-        "https://ichannela.com/news/detail/000000559710.do",
-        "https://news.kbs.co.kr/news/view.do?ncd=8711184"
+        "https://www.chicagotribune.com/2026/11/11/daily-horoscope-for-november-12-2026/",
+        "https://www.oregonlive.com/advice/2026/11/todays-horoscope-taurus-take-a-back-seat-and-observe-nov-12-2026.html",
+        "https://www.thecut.com/article/daily-horoscopes-by-madame-clairevoyant-november-12-2026.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1zX0S2g40cPyf_9BqzXm0kWw0eFhKYrmRgww5NbyDNshqnssZhIb_a12KJhM",
-      "image_credit": "조선일보",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyyP8aeo0B3SWQfMQVrGcd2e0KCMzT9YdlS9Cflt58rEoB1JxR7_qtipW4AyY",
+      "image_credit": "Chicago Tribune",
       "news": [
         {
-          "url": "https://www.chosun.com/national/transport-environment/2026/11/12/RTFBZSIZPBEXTB5LM7MC55QWUI/",
-          "title": "6년 만에 ‘수능 한파’...다음 주 영하권 추위",
-          "publisher": "조선일보",
+          "url": "https://www.chicagotribune.com/2026/11/11/daily-horoscope-for-november-12-2026/",
+          "title": "Daily Horoscope for November 12, 2026",
+          "publisher": "Chicago Tribune",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1zX0S2g40cPyf_9BqzXm0kWw0eFhKYrmRgww5NbyDNshqnssZhIb_a12KJhM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyyP8aeo0B3SWQfMQVrGcd2e0KCMzT9YdlS9Cflt58rEoB1JxR7_qtipW4AyY"
         },
         {
-          "url": "https://ichannela.com/news/detail/000000559710.do",
-          "title": "[날씨]내일 평년보다 온화…저녁부터 충청 이남 비",
-          "publisher": "채널A",
+          "url": "https://www.oregonlive.com/advice/2026/11/todays-horoscope-taurus-take-a-back-seat-and-observe-nov-12-2026.html",
+          "title": "Today’s horoscope: Taurus - Take a back seat and observe (Nov. 12, 2026)",
+          "publisher": "OregonLive.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXbQrNf3Uu5CNvpxSOBDEXAvxri1mpQ5PkDQBNR5wK-VAsj-q0OkvWaIFVwe0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTA8LfnxhH3q8OxQvWB4VUIQzvj3EHOvISJBa3smzWVypHv0eZsPKFjaPdirrs"
         },
         {
-          "url": "https://news.kbs.co.kr/news/view.do?ncd=8711184",
-          "title": "밤사이 중부 내륙에 짙은 안개…내일 오후부터 비",
-          "publisher": "KBS 뉴스",
+          "url": "https://www.thecut.com/article/daily-horoscopes-by-madame-clairevoyant-november-12-2026.html",
+          "title": "Your Daily Horoscope by Madame Clairevoyant: November 12, 2026",
+          "publisher": "The Cut",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiBarbzwZKilSQNuS_93Hk-d4XpCPPBVvgR7UQ_pi1R2YB4IRoWn2zaVMIMeE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVR3oKO21NfntqgMrNV9DhmSi8WKC3CjeygrMHMIgfxZ0M5x-dsIJciSF9M7k"
         }
       ]
     },
     {
-      "query": "brigham nurses strike",
+      "query": "alex michelsen",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T12:10:00Z",
+      "related_news_urls": [
+        "https://www.atptour.com/en/video/hot-shot-kecmanovic-goes-this-way-then-that-in-superb-stockholm-2026-play",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/hewitt-vs-santillan-nov-12-2026/",
+        "https://www.bleachernation.com/picks/2026/11/08/rinderknech-vs-kecmanovic-prediction-at-the-stockholm-open-tuesday-november-10/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTilDkxYtEPlbcOK3F2yrYyKU6N9-92s-UFpNK8kjloPWiKjoeYvHrhmqyAzmo",
+      "image_credit": "ATP Tour",
+      "news": [
+        {
+          "url": "https://www.atptour.com/en/video/hot-shot-kecmanovic-goes-this-way-then-that-in-superb-stockholm-2026-play",
+          "title": "Hot Shot: Kecmanovic goes this way then that in superb Stockholm 2026 play",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTilDkxYtEPlbcOK3F2yrYyKU6N9-92s-UFpNK8kjloPWiKjoeYvHrhmqyAzmo"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/hewitt-vs-santillan-nov-12-2026/",
+          "title": "November 12, 2026: Hewitt vs Santillan Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSW2CjSg6xL4qeroZhPSyRVxrDJ28-EFBZlznmLXP5P4PmuNiZXSYBQl0h-8k8"
+        },
+        {
+          "url": "https://www.bleachernation.com/picks/2026/11/08/rinderknech-vs-kecmanovic-prediction-at-the-stockholm-open-tuesday-november-10/",
+          "title": "Rinderknech vs. Kecmanovic Prediction at the Stockholm Open – Tuesday, November 10",
+          "publisher": "Bleacher Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS63VFWscMitFCQmtdYcJ8gSlDYJ1Stc16ubYT2DAxd0Mm6ytzcAPSVc8mcwL4"
+        }
+      ]
+    },
+    {
+      "query": "keith cooper jr.",
       "approx_searches": "100+",
-      "published_at": "2026-11-12T11:30:00Z",
+      "published_at": "2026-11-12T12:10:00Z",
       "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/11/business/brigham-nurses-union-deal/",
-        "https://www.cbsnews.com/boston/video/nurses-strike-averted-at-brigham-and-womens-hospital-in-boston/",
-        "https://www.bostonherald.com/2026/11/11/brigham-and-womens-nurses-ready-for-indefinite-strike/"
+        "https://www.miamidolphins.com/news/dolphins-sign-cooper-jr",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-dolphins-dt-zach-sieler-to-have-season-ending-biceps-surgery",
+        "https://www.miamiherald.com/sports/article318031931.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMgvHjUvtO1RTx92_recz509w7ktiAL2ZqqA7vIA3ZSoYIiVT4pLIubD58sPY",
-      "image_credit": "The Boston Globe",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuVY9LEwxaDTy2yE70d68xU3ttlJZhTZEGwFsY7r0qjfJ6E3dokupBK_TW0eg",
+      "image_credit": "Miami Dolphins",
       "news": [
         {
-          "url": "https://www.bostonglobe.com/2026/11/11/business/brigham-nurses-union-deal/",
-          "title": "Brigham nurses reach potential 11th-hour deal with MGB, averting strike",
-          "publisher": "The Boston Globe",
+          "url": "https://www.miamidolphins.com/news/dolphins-sign-cooper-jr",
+          "title": "Dolphins sign Cooper Jr.",
+          "publisher": "Miami Dolphins",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMgvHjUvtO1RTx92_recz509w7ktiAL2ZqqA7vIA3ZSoYIiVT4pLIubD58sPY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuVY9LEwxaDTy2yE70d68xU3ttlJZhTZEGwFsY7r0qjfJ6E3dokupBK_TW0eg"
         },
         {
-          "url": "https://www.cbsnews.com/boston/video/nurses-strike-averted-at-brigham-and-womens-hospital-in-boston/",
-          "title": "Nurses strike averted at Brigham and Women's Hospital in Boston",
-          "publisher": "CBS News",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-dolphins-dt-zach-sieler-to-have-season-ending-biceps-surgery",
+          "title": "Report: Dolphins DT Zach Sieler to have season-ending biceps surgery",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMibXaUQQAVWwy0YZQ166sBtSNH-Yk1EFMjK1MMyyrbaC8AqvLNa2-MoelxFE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcjpYG4vNOmcK6_ky-qvGuIQ6SY53WWzZHHgBsaB2z1npg0Xyd-mQI0S3jzuM"
         },
         {
-          "url": "https://www.bostonherald.com/2026/11/11/brigham-and-womens-nurses-ready-for-indefinite-strike/",
-          "title": "Strike averted! Brigham and Women’s nurses reach tentative contract agreement",
-          "publisher": "Boston Herald",
+          "url": "https://www.miamiherald.com/sports/article318031931.html",
+          "title": "Dolphins poach one of team’s training camp standouts from Panthers",
+          "publisher": "Miami Herald",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbqqTg_S1PZtVd8PmgbYreRrXH_6qOs05Bh56mV7UCO2W0Z2DqLEH901dqi9E"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1-68c0QA5KgxznB2T5l5WLzMIHaphn3k_T6fQB8sxgGFOxdBcQctLYrAGk0I"
         }
       ]
     },
     {
-      "query": "local weather",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T11:30:00Z",
+      "query": "stockholm open",
+      "approx_searches": "100+",
+      "published_at": "2026-11-12T12:10:00Z",
       "related_news_urls": [
-        "https://www.wsmv.com/2026/11/11/first-alert-forecast-showers-storms-return-this-evening/",
-        "https://www.commercialappeal.com/story/weather/2026/11/12/memphis-first-freeze-how-to-prepare/92727402007/",
-        "https://www.wkrn.com/weather-headlines/tennessee-first-snow-flakes-of-winter-season/"
+        "https://www.tvmatchen.nu/sport/tennis/stockholm-open-kvartsfinaler-2026/",
+        "https://www.realitytopp.se/nyhet/tv4play-tv4-forlanger-med-atp-touren-till-2029-nu-borjar-stockholm-open",
+        "https://www.sverigesradio.se/artikel/rune-raddade-stockholm-open-stormatch-vantar"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR22otWm8saq6tphhwehDPbUQM39qZoKIw_ERVFD10HB3MSY-Iqc8ec2RYVzJw",
-      "image_credit": "WSMV",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqukEhiJ3ylKQzNmHDEAQaSqVnK_tP-dLoZ9FatQbvRzqo2Q5om97SS1WKrGw",
+      "image_credit": "TVmatchen.nu",
       "news": [
         {
-          "url": "https://www.wsmv.com/2026/11/11/first-alert-forecast-showers-storms-return-this-evening/",
-          "title": "First Alert Forecast: Showers, storms return this evening in Middle Tennessee",
-          "publisher": "WSMV",
+          "url": "https://www.tvmatchen.nu/sport/tennis/stockholm-open-kvartsfinaler-2026/",
+          "title": "Stockholm Open: Dagens kvartsfinaler och matchtider",
+          "publisher": "TVmatchen.nu",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR22otWm8saq6tphhwehDPbUQM39qZoKIw_ERVFD10HB3MSY-Iqc8ec2RYVzJw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqukEhiJ3ylKQzNmHDEAQaSqVnK_tP-dLoZ9FatQbvRzqo2Q5om97SS1WKrGw"
         },
         {
-          "url": "https://www.commercialappeal.com/story/weather/2026/11/12/memphis-first-freeze-how-to-prepare/92727402007/",
-          "title": "First freeze of the season expected to hit Mid-South this weekend",
-          "publisher": "The Commercial Appeal",
+          "url": "https://www.realitytopp.se/nyhet/tv4play-tv4-forlanger-med-atp-touren-till-2029-nu-borjar-stockholm-open",
+          "title": "TV4 förlänger med ATP-touren till 2029 – nu börjar Stockholm Open",
+          "publisher": "Realitytopp",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSg5BBU6RqWgaTnPIpkk9hl9q0LenVrEB3fiM-Cjp2dOjH4REDE5wFbcBVmJnE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ44PXtM93vQ-NHmWKsogDHegsb5uofSZuoDtuLdgkEAbHDNoX-rV8SP-5qnFM"
         },
         {
-          "url": "https://www.wkrn.com/weather-headlines/tennessee-first-snow-flakes-of-winter-season/",
-          "title": "When will Tennessee see its first flakes of the season?",
-          "publisher": "WKRN News 2",
+          "url": "https://www.sverigesradio.se/artikel/rune-raddade-stockholm-open-stormatch-vantar",
+          "title": "Rune ”räddade” Stockholm Open – stormatch väntar",
+          "publisher": "Sveriges Radio",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTAa7Cd27szEX_qIXSlYQhQvPCl4W9JOG7ei68cJFBIfmQUjOCMfUs8kk3EfxI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRR1VNcoVl7e3YcvTKydg2vXeC_eAwieAUdM2Kw3CV6-_HSz08a2Mu5c79cggU"
         }
       ]
     },
     {
-      "query": "alec bohm",
+      "query": "trump administration congressional probe warning",
       "approx_searches": "500+",
-      "published_at": "2026-11-12T11:30:00Z",
+      "published_at": "2026-11-12T12:10:00Z",
       "related_news_urls": [
-        "https://www.mlb.com/news/yankees-alec-bohm-free-agent-interest",
-        "https://www.cbssports.com/mlb/news/mlb-rumors-yankees-alec-bohm-tarik-skubal-dodgers-blue-jays-nationals-padres-mariners-orioles/",
-        "https://www.mlbtraderumors.com/2026/11/yankees-interested-in-alec-bohm.html"
+        "https://www.nytimes.com/2026/11/11/us/politics/trump-democrats-congress-oversight-committee.html",
+        "https://newrepublic.com/article/217892/trump-will-scharf-robert-garcia",
+        "https://www.cnn.com/2026/11/11/politics/trump-democrats-investigations-robert-garcia"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmJlnJl83baIFBCPAopRYhZ2pqOEitoDR3KVvg9zEhb7Cq2nDOcDcuDOXtbPk",
-      "image_credit": "MLB.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTCT-eWrVa1cTKjxYXeyimkaZw6bjF6Xm4-rzN7lTeCwNCO7VOMX5c4SwTOuE",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.mlb.com/news/yankees-alec-bohm-free-agent-interest",
-          "title": "Yankees showing interest in Alec Bohm (source)",
-          "publisher": "MLB.com",
+          "url": "https://www.nytimes.com/2026/11/11/us/politics/trump-democrats-congress-oversight-committee.html",
+          "title": "White House Threatens Congress, Saying Aggressive Investigations Could Be Crime",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmJlnJl83baIFBCPAopRYhZ2pqOEitoDR3KVvg9zEhb7Cq2nDOcDcuDOXtbPk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTCT-eWrVa1cTKjxYXeyimkaZw6bjF6Xm4-rzN7lTeCwNCO7VOMX5c4SwTOuE"
         },
         {
-          "url": "https://www.cbssports.com/mlb/news/mlb-rumors-yankees-alec-bohm-tarik-skubal-dodgers-blue-jays-nationals-padres-mariners-orioles/",
-          "title": "MLB rumors: Yankees eye Alec Bohm, Tarik Skubal books more meetings, plus Nationals, Red Sox, Mariners, more",
-          "publisher": "CBS Sports",
+          "url": "https://newrepublic.com/article/217892/trump-will-scharf-robert-garcia",
+          "title": "The Trump White House Has No Clue How Congress Works",
+          "publisher": "The New Republic",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPynIbVRanImKUa-DvtECjdf6oGs4rWvBlGKget-b90LjjEDeYYNgNalnEZaI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3YFfuV-M3Hbiq2h8VfadXh_RwjTgvESyVXLGBBDk0sXqJV_n8op_YZLMEGRs"
         },
         {
-          "url": "https://www.mlbtraderumors.com/2026/11/yankees-interested-in-alec-bohm.html",
-          "title": "Latest On Yankees, Alec Bohm",
-          "publisher": "MLB Trade Rumors",
+          "url": "https://www.cnn.com/2026/11/11/politics/trump-democrats-investigations-robert-garcia",
+          "title": "The Trump team’s hypocrisy reaches new levels with warning letter to Democrats",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5_QklJHsKLAG_dshrpYHBk7xn-ff3KT5iHc16E9mdISZ9bswoUSlcK4tVipE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA64Lfdx5aIMrINpjzBZvFy8sH_mlThrU6ySudIMGC-gwv7gzyGVowFtFVlDI"
         }
       ]
     },
     {
-      "query": "clima",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-12T11:20:00Z",
+      "query": "nbis earnings",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T12:00:00Z",
       "related_news_urls": [
-        "https://www.france24.com/es/minuto-a-minuto/20261112-delcy-rodr%C3%ADguez-defiende-en-la-cop-el-derecho-soberano-de-venezuela-a-potenciar-sus-hidrocarburos",
-        "https://www.minec.gob.ve/cop31-en-antalya-recep-tayyip-erdogan-y-antonio-guterres-dan-la-bienvenida-a-la-presidenta-delcy-rodriguez/",
-        "https://diariovea.com.ve/compromiso-ante-el-mundo-anuncian-plan-venezuela-vive-para-proteger-la-biodiversidad-del-pais/"
+        "https://finance.yahoo.com/technology/ai/articles/nebius-group-nbis-rocketing-15-233134155.html",
+        "https://www.barrons.com/articles/nebius-earnings-stock-price-9f5028d2",
+        "https://www.cnbc.com/video/2026/11/11/options-action-nebius-reports-tomorrow-morning.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM1uMiOyfWzaK9_HrciITors59oHByOpmGdue-Jhwy_yBSXcZf871y8SKIEO4",
-      "image_credit": "France 24",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyFmVW4NQ5dSuZyCejjBcf8VP_9QS3723G7am2ZBu18gY9s1LVAHcgFRzKENw",
+      "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://www.france24.com/es/minuto-a-minuto/20261112-delcy-rodr%C3%ADguez-defiende-en-la-cop-el-derecho-soberano-de-venezuela-a-potenciar-sus-hidrocarburos",
-          "title": "Delcy Rodríguez defiende en la COP el \"derecho soberano\" de Venezuela a potenciar sus hidrocarburos",
-          "publisher": "France 24",
+          "url": "https://finance.yahoo.com/technology/ai/articles/nebius-group-nbis-rocketing-15-233134155.html",
+          "title": "Nebius Group (NBIS) is Rocketing 15% Higher — Here’s What Could Move Shares Next",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM1uMiOyfWzaK9_HrciITors59oHByOpmGdue-Jhwy_yBSXcZf871y8SKIEO4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyFmVW4NQ5dSuZyCejjBcf8VP_9QS3723G7am2ZBu18gY9s1LVAHcgFRzKENw"
         },
         {
-          "url": "https://www.minec.gob.ve/cop31-en-antalya-recep-tayyip-erdogan-y-antonio-guterres-dan-la-bienvenida-a-la-presidenta-delcy-rodriguez/",
-          "title": "COP31 en Antalya: Recep Tayyip Erdoğan y António Guterres dan la bienvenida a la presidenta Delcy Rodríguez",
-          "publisher": "Ministerio del Poder Popular para el Ecosocialismo",
+          "url": "https://www.barrons.com/articles/nebius-earnings-stock-price-9f5028d2",
+          "title": "Nebius Stock Jumps Ahead of Earnings. CoreWeave Gives It a Lift.",
+          "publisher": "Barron's",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJzrY6YZl2KZ4Tazfcnoml63cj6zfNMUSfSRPFiFGCNAJt_AzbhauMFnztvUI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzj3RFLFHSHHVN6QI8ZwN8bBDxPyJ_SSehldc69lKWJ5SO5nthvYA8btCBTA0"
         },
         {
-          "url": "https://diariovea.com.ve/compromiso-ante-el-mundo-anuncian-plan-venezuela-vive-para-proteger-la-biodiversidad-del-pais/",
-          "title": "¡Compromiso ante el mundo! Anuncian Plan Venezuela Vive para proteger la biodiversidad del país",
-          "publisher": "DiarioVea",
+          "url": "https://www.cnbc.com/video/2026/11/11/options-action-nebius-reports-tomorrow-morning.html",
+          "title": "Options Action: Nebius reports tomorrow morning",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgY_jjq5Y5Sfdu1XFy51yKFnTsp0vlmijKx7JUfTEKbt4xExRrI4R3jL8to7s"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT94DCLoRQsOUx7-4GoVJbuwL5v9nPGLlbOxWfq8b_BjLSbZnTG0I-RoduCp6k"
+        }
+      ]
+    },
+    {
+      "query": "south park we be clubbin'",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T12:00:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/tv-and-radio/2026/nov/12/south-park-episode-5-world-of-club-sports",
+        "https://variety.com/2026/tv/news/south-park-craig-tweek-1236945874/",
+        "https://www.hollywoodreporter.com/tv/tv-features/south-park-tweek-craig-heated-rivalry-season-29-1236753617/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLzaxkwtDE1DfO3KkluAtyeJ02ecSRozVQWSp-KOR8CSh9jUIX_DbNV50gHHU",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/12/south-park-episode-5-world-of-club-sports",
+          "title": "South Park takes on the expensive, confusing world of club sports – with a nod to Heated Rivalry",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLzaxkwtDE1DfO3KkluAtyeJ02ecSRozVQWSp-KOR8CSh9jUIX_DbNV50gHHU"
+        },
+        {
+          "url": "https://variety.com/2026/tv/news/south-park-craig-tweek-1236945874/",
+          "title": "‘South Park’ Brings Back Craig and Tweek for ‘Heated Rivalry’-Inspired Episode to Celebrate the Blue Wave",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaBvIqatq9bVI7g0GN0Min6sR8_3qFN7cYsc7uUpt_K17CwP8hm8o-wEr945A"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/tv/tv-features/south-park-tweek-craig-heated-rivalry-season-29-1236753617/",
+          "title": "‘South Park’ Gives Its Fan-Favorite Couple Their Own ‘Heated Rivalry’",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtuOoMC4SRRrqv6RmUswtCDRY4gR4HuvJ3Q5HvH3A0I5NA_pSBSMhEYMPEUfc"
+        }
+      ]
+    },
+    {
+      "query": "supplemental nutrition assistance program",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T12:00:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/10/trump-administration-moves-to-cut-food-stamps-for-6point3-million-people.html",
+        "https://abcnews.com/Politics/trump-administration-moves-drop-millions-snap-proposal/story?id=138031618",
+        "https://www.cnn.com/2026/11/10/politics/food-stamps-snap-benefits-proposed-rule"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNS283YXwXDnSnC-Q61SuR2-n5d30kbr4i6O5kkk8G-hbhwGj5XsnHiSojfgA",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/10/trump-administration-moves-to-cut-food-stamps-for-6point3-million-people.html",
+          "title": "Trump administration moves to cut food stamps for 6.3 million people",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNS283YXwXDnSnC-Q61SuR2-n5d30kbr4i6O5kkk8G-hbhwGj5XsnHiSojfgA"
+        },
+        {
+          "url": "https://abcnews.com/Politics/trump-administration-moves-drop-millions-snap-proposal/story?id=138031618",
+          "title": "Trump administration moves to drop millions from SNAP food assistance under proposal",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNqYMbwJtQYs_3hDp_rwm6E9zKroNIwVn8P1AmWRDlEZqjzs1u-a9LuJ07HPE"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/10/politics/food-stamps-snap-benefits-proposed-rule",
+          "title": "Nearly one in five food stamp recipients could lose benefits under Trump proposal",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUOJoUNQi2ilzgGAouI7qRRmtgAgV2FVIMe3LxJ_lWxfyhGnn2JugmWR2Vgf4"
         }
       ]
     }
