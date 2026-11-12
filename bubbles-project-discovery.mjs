@@ -131,3 +131,6 @@ export async function discoverProject({request,catalog,views=[],invoke}){
 export function hasActionDraft(text){
  return /["']action["']\s*:\s*["'](?:(?:github|web|browser|weather|tools?|brain)[._][\w.-]{1,80}|read_repo|read_repository|read_file|search|web_search|commit_files|create_pr|deploy)["'][\s\S]{0,1000}["']parameters["']\s*:/i.test(String(text||''));
 }
+
+// Source guidance is read-only; signed owner engine still verifies actual file reads.
+export {findBuildTemplate,makeBuildPacket} from './bubbles-build-templates.mjs';
