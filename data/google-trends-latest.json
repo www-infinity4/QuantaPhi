@@ -3,51 +3,16 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T09:31:31.570042Z",
+  "checked_at": "2026-11-12T10:01:31.035757Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "amber alert",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T09:10:00Z",
-      "related_news_urls": [
-        "https://www.10tv.com/article/syndication/pammy-maye-5-year-old-darnell-taylor-death-trial/530-4c5321ec-fa32-4da5-a148-85f4f9156783",
-        "https://www.nbc4i.com/news/local-news/columbus/murder-trial-of-ohio-woman-charged-with-killing-hiding-childs-body-in-hands-of-jury/",
-        "https://www.wlwt.com/article/ohio-pammy-maye-convicted-death-5-year-old-boy-amber-alert/74399674"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSms2wKCJpid651_Mzt01fDISNnceeqeqKn6gk4zcZdh2M4t2YhReNH-m4d7dg",
-      "image_credit": "10tv.com",
-      "news": [
-        {
-          "url": "https://www.10tv.com/article/syndication/pammy-maye-5-year-old-darnell-taylor-death-trial/530-4c5321ec-fa32-4da5-a148-85f4f9156783",
-          "title": "Jury reaches verdict in trial of Columbus woman accused of killing 5-year-old boy",
-          "publisher": "10tv.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSms2wKCJpid651_Mzt01fDISNnceeqeqKn6gk4zcZdh2M4t2YhReNH-m4d7dg"
-        },
-        {
-          "url": "https://www.nbc4i.com/news/local-news/columbus/murder-trial-of-ohio-woman-charged-with-killing-hiding-childs-body-in-hands-of-jury/",
-          "title": "Jury finds Pammy Maye guilty of all charges including murder",
-          "publisher": "NBC4 WCMH-TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfdOVnACmtV5qMTrqTUJN2qk0fBR-pbAnoA_-g3dxQuw3pk3irBScn58YWLYI"
-        },
-        {
-          "url": "https://www.wlwt.com/article/ohio-pammy-maye-convicted-death-5-year-old-boy-amber-alert/74399674",
-          "title": "Ohio woman found guilty in murder of 5-year-old boy at center of Amber Alert",
-          "publisher": "WLWT",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTT_cRF72iC69yBtPz_Bg-TBYXVELgDgMyuAmTIrVFIQknonf57_K2aH_GunQQ"
-        }
-      ]
-    },
-    {
-      "query": "is fortnite down right now",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T09:10:00Z",
+      "query": "when will fortnite servers be back up",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T09:20:00Z",
       "related_news_urls": [
         "https://www.northjersey.com/story/tech/gaming/2026/11/12/fortnite-offline-for-update-will-pirate-coin-odds-increase/92736560007/",
-        "https://timesofindia.indiatimes.com/sports/esports/fortnite/when-is-the-next-fortnite-update-treasure-hunters-mini-season-v43-10-release-date-and-more/articleshow/135746472.cms",
+        "https://www.mmoexp.com/News/fortnite-servers-down-today-how-to-fix-servers-not-responding-update-43-10.html",
         "https://www.mmoexp.com/News/fortnite-update-43-10-guide-mystery-qol-change-patch-release-time-new-content-revealed.html"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjbERAz9BeqdHc4M30cc8cSHS-rMnq4_CZIDwXkdkW3E6byW90Z2Wd4zSxo48",
@@ -61,11 +26,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjbERAz9BeqdHc4M30cc8cSHS-rMnq4_CZIDwXkdkW3E6byW90Z2Wd4zSxo48"
         },
         {
-          "url": "https://timesofindia.indiatimes.com/sports/esports/fortnite/when-is-the-next-fortnite-update-treasure-hunters-mini-season-v43-10-release-date-and-more/articleshow/135746472.cms",
-          "title": "When is the next Fortnite update: Treasure Hunters mini-season v43.10 release date and more",
-          "publisher": "The Times of India",
+          "url": "https://www.mmoexp.com/News/fortnite-servers-down-today-how-to-fix-servers-not-responding-update-43-10.html",
+          "title": "Fortnite Servers Down Today? How to Fix \"Servers Not Responding\" (Update 43.10)",
+          "publisher": "MMOEXP",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4-RpWZ4Tw4tswxVLsRjewZr513EKpBWliXK3DweTWYEo8vAS8kWIZmiaPXvs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjBVujGtvEjGgDnsIz4Ao69SB32MNQZoAv_p_yuS24kouGiYsUBoYxELByqMc"
         },
         {
           "url": "https://www.mmoexp.com/News/fortnite-update-43-10-guide-mystery-qol-change-patch-release-time-new-content-revealed.html",
@@ -73,6 +38,76 @@
           "publisher": "MMOEXP",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1id2z87o4dqy5bZK-EI60iZylU7yhmkL5dhT65vK5uH_0xCLsNjKvLsyGk00"
+        }
+      ]
+    },
+    {
+      "query": "noah's ark discovery",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T09:20:00Z",
+      "related_news_urls": [
+        "https://www.globenewswire.com/news-release/2026/11/11/3400406/0/en/noah-s-ark-scans-releases-first-look-at-charred-wood-recovered-from-noah-s-ark-durupinar-site.html",
+        "https://www.foxnews.com/travel/noahs-ark-site-yields-first-look-charred-wood-fragments-recovered-deep-below-soil",
+        "https://www.news24.com.au/world/flood-of-new-evidence-ancient-wood-discovery-fuels-fresh-noahs-ark-speculation/news-story/ca846bb2fc08b9d2f3a0723efefa92e7"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQncJjQH3y68jymg_Z4vwTBjrLiEku7zb-ln1hqJ2adwrGvZ0OTzauAtkfjU-0",
+      "image_credit": "GlobeNewswire",
+      "news": [
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/11/11/3400406/0/en/noah-s-ark-scans-releases-first-look-at-charred-wood-recovered-from-noah-s-ark-durupinar-site.html",
+          "title": "Noah’s Ark Scans Releases FIRST Look at Charred Wood Recovered From Noah’s Ark Durupinar Site",
+          "publisher": "GlobeNewswire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQncJjQH3y68jymg_Z4vwTBjrLiEku7zb-ln1hqJ2adwrGvZ0OTzauAtkfjU-0"
+        },
+        {
+          "url": "https://www.foxnews.com/travel/noahs-ark-site-yields-first-look-charred-wood-fragments-recovered-deep-below-soil",
+          "title": "Noah's Ark site yields first look at charred wood fragments recovered deep below soil",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKYsvaWKuD2_n-G1w9m8JxVHY_JJ4msIq42MZkBq79iGP0dQsnRxvqUFWmuOw"
+        },
+        {
+          "url": "https://www.news24.com.au/world/flood-of-new-evidence-ancient-wood-discovery-fuels-fresh-noahs-ark-speculation/news-story/ca846bb2fc08b9d2f3a0723efefa92e7",
+          "title": "Flood of new evidence? Wood fragments revive Noah’s Ark mystery",
+          "publisher": "News24",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKLVjoV9yT7qygfgB9w-THXT4LtHc4URugoa6d9qAfQkya9J8ukn8YsBfepPY"
+        }
+      ]
+    },
+    {
+      "query": "amber alert",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T09:10:00Z",
+      "related_news_urls": [
+        "https://www.eastidahonews.com/2026/11/amber-alert-teen-abducted-in-pocatello-police-say/",
+        "https://bnonews.com/index.php/2026/11/idaho-amber-alert-14-year-old-jayleen-believed-abducted-in-pocatello/",
+        "https://www.10tv.com/article/syndication/pammy-maye-5-year-old-darnell-taylor-death-trial/530-4c5321ec-fa32-4da5-a148-85f4f9156783"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQONEmiOiEIDxNLtPHulnOqncyaBhYkf_3wemyDm2kEonoGRWd2enPnqJnz3VU",
+      "image_credit": "East Idaho News",
+      "news": [
+        {
+          "url": "https://www.eastidahonews.com/2026/11/amber-alert-teen-abducted-in-pocatello-police-say/",
+          "title": "AMBER ALERT: Teen abducted in Pocatello, police say",
+          "publisher": "East Idaho News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQONEmiOiEIDxNLtPHulnOqncyaBhYkf_3wemyDm2kEonoGRWd2enPnqJnz3VU"
+        },
+        {
+          "url": "https://bnonews.com/index.php/2026/11/idaho-amber-alert-14-year-old-jayleen-believed-abducted-in-pocatello/",
+          "title": "Idaho Amber Alert: 14-year-old Jayleen believed abducted in Pocatello",
+          "publisher": "BNO News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCjdxEkyefVqRKFfCnZImrC52jzfpTJnNqWaioEy2jN94VnypDdlE6bvi5FfY"
+        },
+        {
+          "url": "https://www.10tv.com/article/syndication/pammy-maye-5-year-old-darnell-taylor-death-trial/530-4c5321ec-fa32-4da5-a148-85f4f9156783",
+          "title": "Jury reaches verdict in trial of Columbus woman accused of killing 5-year-old boy",
+          "publisher": "10tv.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSms2wKCJpid651_Mzt01fDISNnceeqeqKn6gk4zcZdh2M4t2YhReNH-m4d7dg"
         }
       ]
     },
@@ -147,13 +182,48 @@
       ]
     },
     {
+      "query": "gta 6 online release date",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-12T09:00:00Z",
+      "related_news_urls": [
+        "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
+        "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
+        "https://mashable.com/entertainment/gta-grand-theft-auto-6-ps5-xbox-differences"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZll1tApV9Ds71HmTdujHYiNfoBn3zrlJCvS7S-pg_vQYPoW8x18hTe8WUCZg",
+      "image_credit": "Rockstar Games",
+      "news": [
+        {
+          "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
+          "title": "Pre-Load Grand Theft Auto VI Now",
+          "publisher": "Rockstar Games",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZll1tApV9Ds71HmTdujHYiNfoBn3zrlJCvS7S-pg_vQYPoW8x18hTe8WUCZg"
+        },
+        {
+          "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
+          "title": "Grand Theft Auto VI Comes to XBOX One and XBOX Series X|S Through XBOX Cloud Gaming on November 19",
+          "publisher": "XBOX Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk"
+        },
+        {
+          "url": "https://mashable.com/entertainment/gta-grand-theft-auto-6-ps5-xbox-differences",
+          "title": "'GTA 6' on PS5 vs. Xbox: What we know",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQv8S9fkHNrXf6pYMlXleXLtqIOq8hcFZrsH7KeO1eKw9gwWBPYvW8V9DFIih4"
+        }
+      ]
+    },
+    {
       "query": "rockstar",
       "approx_searches": "100+",
       "published_at": "2026-11-12T09:00:00Z",
       "related_news_urls": [
         "https://rockstarintel.com/new-gta-vi-footage-looks-so-stunning-fans-cant-believe-it/",
-        "https://insider-gaming.com/rockstar-games-unreal-gta-6-clip-social-media-first-person/",
-        "https://www.gamingbible.com/news/gta-6-npc-detail-red-dead-redemption-2-horse-balls-512318-20261102"
+        "https://x.com/i/trending/2120593749869047844",
+        "https://www.mmoexp.com/News/gta-6-realism-revealed-how-rockstar-is-bringing-miami-to-life-with-smarter-npcs-realistic-cars-and-lifelike-animations.html"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpbSOWEUncxMk0eSVdKvnW1kyZcl7wh2-xMYFIMlwK2XxvKUV62GnqrUTIfos",
       "image_credit": "RockstarINTEL",
@@ -166,18 +236,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpbSOWEUncxMk0eSVdKvnW1kyZcl7wh2-xMYFIMlwK2XxvKUV62GnqrUTIfos"
         },
         {
-          "url": "https://insider-gaming.com/rockstar-games-unreal-gta-6-clip-social-media-first-person/",
-          "title": "Unreal GTA 6 First-Person Clip Posted by Rockstar Games on Instagram",
-          "publisher": "Insider Gaming",
+          "url": "https://x.com/i/trending/2120593749869047844",
+          "title": "GTA VI Footage So Realistic It Mimics Real Life",
+          "publisher": "X",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS85zs2bCrp_Pz7ZK0Tk9BlOMdY2NvAWY_ZKHLxjvcrH6LRxUTqRegjs83xaIo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaDq0WplU1uYTQj0Rg3p8UNIS_h5riBXu3SDGkfe_ZDRMlMpbgydbc0T3fE8I"
         },
         {
-          "url": "https://www.gamingbible.com/news/gta-6-npc-detail-red-dead-redemption-2-horse-balls-512318-20261102",
-          "title": "GTA 6 gamers spot incredible NPC detail that may even rival Red Dead Redemption 2's horse balls",
-          "publisher": "GAMINGbible",
+          "url": "https://www.mmoexp.com/News/gta-6-realism-revealed-how-rockstar-is-bringing-miami-to-life-with-smarter-npcs-realistic-cars-and-lifelike-animations.html",
+          "title": "GTA 6 Realism Revealed: How Rockstar Is Bringing Miami to Life with Smarter NPCs, Realistic Cars, and Lifelike Animations",
+          "publisher": "MMOEXP",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-Res1U_KRIoS6EUXvnkw9Eh55z-Bu099PgpmqM2TBNZLJ1-PqgQ8OTl2Zvxw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsK-qLfdAGH7xIDZ0UekKwC6lIE9QhVMklFB16LuGLoJ1G2D-E48WDtEGacw0"
         }
       ]
     },
@@ -248,76 +318,6 @@
           "publisher": "Washington Examiner",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQj_LlO9RMqkiUPnmDNLkqJyxGng8DkqUekJBJmfL4n2fEeT7l0cwSC3XsEoXI"
-        }
-      ]
-    },
-    {
-      "query": "yellowjackets",
-      "approx_searches": "100+",
-      "published_at": "2026-11-12T08:20:00Z",
-      "related_news_urls": [
-        "https://pagesix.com/2026/11/11/photos/yellowjackets-season-4-premiere-red-carpet-melanie-lynskey-christina-ricci-jennifer-morrison-and-more/",
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/melanie-lynskey-joins-sophie-nelisse-064422337.html",
-        "https://www.cbr.com/yellowjackets-season-4-final-season-november-20/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDeJIeA0rRSakhghzPA-bc79YFH_v9_WUFo3BuDRrgDQRthYhpl7-B4p4apSQ",
-      "image_credit": "Page Six",
-      "news": [
-        {
-          "url": "https://pagesix.com/2026/11/11/photos/yellowjackets-season-4-premiere-red-carpet-melanie-lynskey-christina-ricci-jennifer-morrison-and-more/",
-          "title": "‘Yellowjackets’ Season 4 premiere red carpet: Melanie Lynskey, Christina Ricci, Jennifer Morrison and more",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDeJIeA0rRSakhghzPA-bc79YFH_v9_WUFo3BuDRrgDQRthYhpl7-B4p4apSQ"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/melanie-lynskey-joins-sophie-nelisse-064422337.html",
-          "title": "Melanie Lynskey Joins Sophie Nelisse, Christina Ricci, & More Stars at ‘Yellowjackets’ Final Season Premiere in L.A.",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQd2fAZUHT_8nSZzUFG2OsRkw2hQLgaGHpkBOKZvfFNKRdtNExiNzZXGi7ssJY"
-        },
-        {
-          "url": "https://www.cbr.com/yellowjackets-season-4-final-season-november-20/",
-          "title": "Paramount+ Is Bringing Its 4-Season Horror Thriller to an End This Month",
-          "publisher": "Comic Book Resources",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6oVRuopNJEiA7pFGHgDupzDVkW6cboNigOQamXBSp9I6ly0G0GrXgW971Tf4"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 pc",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-12T08:10:00Z",
-      "related_news_urls": [
-        "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
-        "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
-        "https://mashable.com/entertainment/gta-grand-theft-auto-6-ps5-xbox-differences"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZll1tApV9Ds71HmTdujHYiNfoBn3zrlJCvS7S-pg_vQYPoW8x18hTe8WUCZg",
-      "image_credit": "Rockstar Games",
-      "news": [
-        {
-          "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
-          "title": "Pre-Load Grand Theft Auto VI Now",
-          "publisher": "Rockstar Games",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZll1tApV9Ds71HmTdujHYiNfoBn3zrlJCvS7S-pg_vQYPoW8x18hTe8WUCZg"
-        },
-        {
-          "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
-          "title": "Grand Theft Auto VI Comes to XBOX One and XBOX Series X|S Through XBOX Cloud Gaming on November 19",
-          "publisher": "XBOX Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk"
-        },
-        {
-          "url": "https://mashable.com/entertainment/gta-grand-theft-auto-6-ps5-xbox-differences",
-          "title": "'GTA 6' on PS5 vs. Xbox: What we know",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQv8S9fkHNrXf6pYMlXleXLtqIOq8hcFZrsH7KeO1eKw9gwWBPYvW8V9DFIih4"
         }
       ]
     },
