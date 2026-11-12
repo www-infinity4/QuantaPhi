@@ -3,9 +3,184 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T11:01:41.709238Z",
+  "checked_at": "2026-11-12T11:31:28.560541Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "miguel díaz-canel",
+      "approx_searches": "100+",
+      "published_at": "2026-11-12T11:10:00Z",
+      "related_news_urls": [
+        "https://www.diariolasamericas.com/america-latina/miguel-diaz-canel-reafirma-su-alianza-daniel-ortega-mientras-la-onu-senala-el-deterioro-democratico-nicaragua-n5405130",
+        "https://www.cibercuba.com/noticias/2026-11-11-u1-e74-s27061-nid345489-raul-castro-felicita-daniel-ortega-sus-81-anos",
+        "https://www.infobae.com/america/agencias/2026/11/10/xi-y-putin-valoran-las-relaciones-con-nicaragua-en-el-cumpleanos-de-ortega-segun-murillo/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp-OPYk2n_HvD7eHGSIeqpGS-94puU4vLud8GtRLRBqOFpXZfPI7guk0tmG2I",
+      "image_credit": "Diario Las Américas",
+      "news": [
+        {
+          "url": "https://www.diariolasamericas.com/america-latina/miguel-diaz-canel-reafirma-su-alianza-daniel-ortega-mientras-la-onu-senala-el-deterioro-democratico-nicaragua-n5405130",
+          "title": "Miguel Díaz-Canel reafirma su alianza con Daniel Ortega mientras la ONU señala el deterioro democrático en Nicaragua",
+          "publisher": "Diario Las Américas",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp-OPYk2n_HvD7eHGSIeqpGS-94puU4vLud8GtRLRBqOFpXZfPI7guk0tmG2I"
+        },
+        {
+          "url": "https://www.cibercuba.com/noticias/2026-11-11-u1-e74-s27061-nid345489-raul-castro-felicita-daniel-ortega-sus-81-anos",
+          "title": "Raúl Castro felicita a Daniel Ortega por sus 81 años y reivindica su alianza frente a la «ofensiva imperial»",
+          "publisher": "CiberCuba",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0UHpg0qz9XmwKL9yTY0SrM-5ZUHN10aO5gbpCbtxRrk2CHqdqqwhSSjqLLdQ"
+        },
+        {
+          "url": "https://www.infobae.com/america/agencias/2026/11/10/xi-y-putin-valoran-las-relaciones-con-nicaragua-en-el-cumpleanos-de-ortega-segun-murillo/",
+          "title": "Xi y Putin valoran las relaciones con Nicaragua en el cumpleaños de Ortega, según Murillo",
+          "publisher": "Infobae",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHCoVJvVj9aGPuXyPjDrxDhOfyjQZ7Om7Bphe3rtlk95gVoUt-mGAUkg7FZN4"
+        }
+      ]
+    },
+    {
+      "query": "apache http2 vulnerability cve 2026 119618",
+      "approx_searches": "100+",
+      "published_at": "2026-11-12T11:00:00Z",
+      "related_news_urls": [
+        "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
+        "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
+        "https://www.rescana.com/post/apache-httpd-mod-http2-cve-2026-119618-patch-now"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2gkzEpdZEUOv-XoKNtXBCKY259L9S82Ciu2n1uXHvuj-DN0GxqqM99bb-6A8",
+      "image_credit": "wiz.io",
+      "news": [
+        {
+          "url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
+          "title": "Critical RCE Vulnerability in Apache HTTP Server: Everything You Need To Know",
+          "publisher": "wiz.io",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2gkzEpdZEUOv-XoKNtXBCKY259L9S82Ciu2n1uXHvuj-DN0GxqqM99bb-6A8"
+        },
+        {
+          "url": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
+          "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
+          "publisher": "The Hacker News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4NYjqW91xd0EvuH-KrXvccR8cpMWnYlW6MQqzFfkRwYG9DAEV89do7YSEFPs"
+        },
+        {
+          "url": "https://www.rescana.com/post/apache-httpd-mod-http2-cve-2026-119618-patch-now",
+          "title": "Apache HTTP Server 2.4.71 Fixes Critical mod_http2 Heap Corruption (CVE-2026-119618) — Patch Now",
+          "publisher": "Rescana",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiTyhyvCQbadjuTcPwkcaKCrE79Ziw5uBzQCL75F9Rl4WRIo1O7ja2qxGdDfI"
+        }
+      ]
+    },
+    {
+      "query": "anne hathaway",
+      "approx_searches": "100+",
+      "published_at": "2026-11-12T11:00:00Z",
+      "related_news_urls": [
+        "https://deadline.com/2026/11/santa-barbara-film-festival-awards-2027-honorees-1237112049/",
+        "https://variety.com/2026/film/news/anne-hathaway-to-receive-american-riviera-award-1236944527/",
+        "https://ca.movies.yahoo.com/anne-hathaway-lands-prestigious-hollywood-040000665.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUFhDpaHU73uuvR5iBjc5GY1PJPPwa1cVxFQYbxuDamygySOo3HJBp0fY-kX8",
+      "image_credit": "Deadline",
+      "news": [
+        {
+          "url": "https://deadline.com/2026/11/santa-barbara-film-festival-awards-2027-honorees-1237112049/",
+          "title": "Santa Barbara Film Festival Awards: Anne Hathaway Set For American Riviera Honor",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUFhDpaHU73uuvR5iBjc5GY1PJPPwa1cVxFQYbxuDamygySOo3HJBp0fY-kX8"
+        },
+        {
+          "url": "https://variety.com/2026/film/news/anne-hathaway-to-receive-american-riviera-award-1236944527/",
+          "title": "Anne Hathaway to Receive American Riviera Award at Santa Barbara International Film Festival",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1bpNIZO0tPL08Xi9Bbn88lvYRcC3OnW9W8_a7k_UkFbR3xcm9EDPNAd3JlAc"
+        },
+        {
+          "url": "https://ca.movies.yahoo.com/anne-hathaway-lands-prestigious-hollywood-040000665.html",
+          "title": "Anne Hathaway lands prestigious Hollywood honour for ‘breathtaking' performance in The Odyssey",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTp_qM72brea0D5jO42QFt780GHLPbJ6BiMWbFOaezYugwgNqDJa2rSHBsvxOg"
+        }
+      ]
+    },
+    {
+      "query": "broadcom stock",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T10:50:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/live/nvidia-live-board-meets-fate-ceo-jensen-huang-after-affair-reports-2026-11-12/",
+        "https://www.barrons.com/articles/amd-stock-broadcom-nvidia-ai-chips-2b96c1f1",
+        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-12-2026"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTz2SgAlMccOd8Mm1DNPWIzvvp5-E9ZR_kC6UsB9SCGvz5i2apSCX6rtuaWrXI",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/live/nvidia-live-board-meets-fate-ceo-jensen-huang-after-affair-reports-2026-11-12/",
+          "title": "Live: Nvidia shares plunge as board weighs ousting CEO Jensen Huang amid affair scandal",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTz2SgAlMccOd8Mm1DNPWIzvvp5-E9ZR_kC6UsB9SCGvz5i2apSCX6rtuaWrXI"
+        },
+        {
+          "url": "https://www.barrons.com/articles/amd-stock-broadcom-nvidia-ai-chips-2b96c1f1",
+          "title": "AMD and Broadcom Stocks Jump. What It Says About the Future of the AI Trade.",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFFyM_0C_zAqpJKCWaAM1xvp5EYXphN_AIAAlQz5EPtetwkPA2duLbSP-QAmE"
+        },
+        {
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-12-2026",
+          "title": "Stock Market Today: Nvidia Shares Tumble Over Leadership Crisis — Live Updates",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTbNYR2cEjbzOQI599aCMWgy_RSzi6_pIGljjUP4yn4p1C6-wyxyzl_lWTNto"
+        }
+      ]
+    },
+    {
+      "query": "kara zor-el",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T10:40:00Z",
+      "related_news_urls": [
+        "https://screenrant.com/new-supergirl-announced-dc-thundergirl/",
+        "https://www.hollywoodreporter.com/movies/movie-news/james-gunn-peter-safran-ouster-dc-1236751437/",
+        "https://deadline.com/2026/11/frank-grillo-reaction-james-gunn-peter-safran-dc-studios-exit-1237221357/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRv5MqP_QvV3fb1_zj99PgcjJuhhuqHydSn23JPCq4Gk3GepT1AYK69xlLioQk",
+      "image_credit": "ScreenRant",
+      "news": [
+        {
+          "url": "https://screenrant.com/new-supergirl-announced-dc-thundergirl/",
+          "title": "DC Officially Announces Name Of New Supergirl",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRv5MqP_QvV3fb1_zj99PgcjJuhhuqHydSn23JPCq4Gk3GepT1AYK69xlLioQk"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/james-gunn-peter-safran-ouster-dc-1236751437/",
+          "title": "Inside James Gunn, Peter Safran’s DC Ouster: Exec Tensions and a Fateful David Ellison Visit",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUmEx8MKt73mq6adehQc6w2oeb92dJ-o438daW3k0govL5UQJ5tSa7V9pvjXA"
+        },
+        {
+          "url": "https://deadline.com/2026/11/frank-grillo-reaction-james-gunn-peter-safran-dc-studios-exit-1237221357/",
+          "title": "DC Universe Actor Frank Grillo Calls James Gunn & Peter Safran \"Two Of The Most Loyal Guys\" Following Their DC Studios Exit",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtoybwq9cCt7Rk7Mi5DxMGBIXCVI7ZwV9pzUQss08jgsfUrzzZ_tuQpLxsRrE"
+        }
+      ]
+    },
     {
       "query": "caitlin clark",
       "approx_searches": "200+",
@@ -112,37 +287,37 @@
       ]
     },
     {
-      "query": "supreme court of the united states",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T10:20:00Z",
+      "query": "tiempo de hoy",
+      "approx_searches": "100+",
+      "published_at": "2026-11-12T10:30:00Z",
       "related_news_urls": [
-        "https://www.foxnews.com/politics/supreme-court-justices-confront-keep-americas-founding-freedoms-alive",
-        "https://ca.news.yahoo.com/supreme-court-justices-reflect-americas-120001023.html",
-        "https://voz.us/en/politics/261111/1000504/250-years-after-independence-three-supreme-court-justices-warn-that-freedom-is-not-guarant.html"
+        "https://www.lanacion.com.ar/estados-unidos/illinois/clima-en-joliet-illinois-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-11-de-noviembre-nid11112026/",
+        "https://www.lanacion.com.ar/estados-unidos/illinois/clima-en-aurora-illinois-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-12-de-noviembre-nid12112026/",
+        "https://www.lanacion.com.ar/estados-unidos/illinois/clima-en-naperville-illinois-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-11-de-noviembre-nid11112026/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdZVztm2gW6F6mxiWkvTI6KkBIj5hjCw1YpDy5sKXICajG_tyFu18itxw9oXg",
-      "image_credit": "Fox News",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSz2ZngnaZvfxCB4GWM90WGbSd6euxktWkfzRhpbnXiO9AeOdtIwCRMMSB8Vic",
+      "image_credit": "La Nación",
       "news": [
         {
-          "url": "https://www.foxnews.com/politics/supreme-court-justices-confront-keep-americas-founding-freedoms-alive",
-          "title": "FIRST ON FOX: Supreme Court justices confront what it will take to keep America's founding freedoms alive",
-          "publisher": "Fox News",
+          "url": "https://www.lanacion.com.ar/estados-unidos/illinois/clima-en-joliet-illinois-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-11-de-noviembre-nid11112026/",
+          "title": "Clima en Joliet, Illinois hoy: cuál es el pronóstico del tiempo para hoy 11 de noviembre",
+          "publisher": "La Nación",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdZVztm2gW6F6mxiWkvTI6KkBIj5hjCw1YpDy5sKXICajG_tyFu18itxw9oXg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSz2ZngnaZvfxCB4GWM90WGbSd6euxktWkfzRhpbnXiO9AeOdtIwCRMMSB8Vic"
         },
         {
-          "url": "https://ca.news.yahoo.com/supreme-court-justices-reflect-americas-120001023.html",
-          "title": "Supreme Court justices reflect on America's founding principles and future",
-          "publisher": "Yahoo News Canada",
+          "url": "https://www.lanacion.com.ar/estados-unidos/illinois/clima-en-aurora-illinois-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-12-de-noviembre-nid12112026/",
+          "title": "Clima en Aurora, Illinois hoy: cuál es el pronóstico del tiempo para hoy 12 de noviembre",
+          "publisher": "La Nación",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4PEmEzMuMP74P9kVLC2A44q4wboTWzlGg5fdHX2o5gianNyGJAbfObvl0zHs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSz2ZngnaZvfxCB4GWM90WGbSd6euxktWkfzRhpbnXiO9AeOdtIwCRMMSB8Vic"
         },
         {
-          "url": "https://voz.us/en/politics/261111/1000504/250-years-after-independence-three-supreme-court-justices-warn-that-freedom-is-not-guarant.html",
-          "title": "250 years after independence, three Supreme Court justices warn that freedom is not guaranteed",
-          "publisher": "voz.us",
+          "url": "https://www.lanacion.com.ar/estados-unidos/illinois/clima-en-naperville-illinois-hoy-cual-es-el-pronostico-del-tiempo-para-hoy-11-de-noviembre-nid11112026/",
+          "title": "Clima en Naperville, Illinois hoy: cuál es el pronóstico del tiempo para hoy 11 de noviembre",
+          "publisher": "La Nación",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCgPQiidoc9LwOCwPHQkezjEu7L_LWzMUTheVw6MBo4GuA5vnNvgCD5vLouWc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSz2ZngnaZvfxCB4GWM90WGbSd6euxktWkfzRhpbnXiO9AeOdtIwCRMMSB8Vic"
         }
       ]
     },
@@ -178,165 +353,6 @@
           "publisher": "Forbes",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7E1vHCLvS_e8Lghcixh5bWtrKzx5KKALRkVQzWKJgxxyfZuYV30ntCkESmH8"
-        }
-      ]
-    },
-    {
-      "query": "starbucks red cup day 2026",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T10:20:00Z",
-      "related_news_urls": [
-        "https://www.inc.com/kamya-marwah/starbucks-red-cup-day-billion-dollar-holiday-tradition/91432730",
-        "https://1035kissfmboise.com/red-cup-day-2026/",
-        "https://about.starbucks.com/press/2026/starbucks-launches-new-bearista-glass-cold-cup-surprise-box-collection-with-characters-including-rare-golden-bearista/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe-TEI9_8wPThHPdHWrQy7tPF0Kw0PMdZAf3ymQrfwxDy_SXLQW1KnkJHUOCY",
-      "image_credit": "Inc.com",
-      "news": [
-        {
-          "url": "https://www.inc.com/kamya-marwah/starbucks-red-cup-day-billion-dollar-holiday-tradition/91432730",
-          "title": "Starbucks' Red Cup Day Is Almost Here. How a Free Cup Became a Billion-Dollar Holiday Tradition",
-          "publisher": "Inc.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe-TEI9_8wPThHPdHWrQy7tPF0Kw0PMdZAf3ymQrfwxDy_SXLQW1KnkJHUOCY"
-        },
-        {
-          "url": "https://1035kissfmboise.com/red-cup-day-2026/",
-          "title": "Starbucks Viral ‘Red Cup Day’ Returns To Idaho Next Week",
-          "publisher": "1035kissfmboise.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGGxqPEzPZAGtm9gzf-E8cg6yI6-XwTpzk3-YFNsZbPoh7po84ylG8UHx-nNo"
-        },
-        {
-          "url": "https://about.starbucks.com/press/2026/starbucks-launches-new-bearista-glass-cold-cup-surprise-box-collection-with-characters-including-rare-golden-bearista/",
-          "title": "Starbucks launches new Bearista™ Glass Cold Cup Surprise Box collection with characters including rare golden bearista",
-          "publisher": "Starbucks",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdONvLccKsRKZn-pwNvvqIWxvh1_H31azGrSWydZ2yjzVwnzE8QwdBrKIL0zQ"
-        }
-      ]
-    },
-    {
-      "query": "bucs wide receiver roster cuts",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T10:20:00Z",
-      "related_news_urls": [
-        "https://www.pewterreport.com/bucs-cut-big-wide-receiver/",
-        "https://steelerswire.usatoday.com/story/sports/nfl/steelers/2026/11/12/steelers-david-sills-v-free-agent-signing-nfl-news-update-buccaneers/92737708007/",
-        "https://www.rotowire.com/football/headlines/david-sills-news-cut-by-bucs-647066"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcje_FBdUrY2V0OO5pTH2URuya1eraqTXI4o39PPv_twHYr5UFcl9vSlswnHk",
-      "image_credit": "Pewter Report",
-      "news": [
-        {
-          "url": "https://www.pewterreport.com/bucs-cut-big-wide-receiver/",
-          "title": "Bucs Cut Big Wide Receiver",
-          "publisher": "Pewter Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcje_FBdUrY2V0OO5pTH2URuya1eraqTXI4o39PPv_twHYr5UFcl9vSlswnHk"
-        },
-        {
-          "url": "https://steelerswire.usatoday.com/story/sports/nfl/steelers/2026/11/12/steelers-david-sills-v-free-agent-signing-nfl-news-update-buccaneers/92737708007/",
-          "title": "Steelers should consider signing newly released Buccaneers wide receiver",
-          "publisher": "Steelers Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_FxsF0xRN0NiCApAdiuyRK8HoAxwa6yV9Fzw6Hu__uPjMXwrORMcLniiBrtk"
-        },
-        {
-          "url": "https://www.rotowire.com/football/headlines/david-sills-news-cut-by-bucs-647066",
-          "title": "David Sills News: Cut by Bucs",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSb-z41yrAyDw-QwK9mWLyTpzPjBdPo-nSsCBVXdxJw_Qz_jTHGWi_BDc58A5E"
-        }
-      ]
-    },
-    {
-      "query": "deportación",
-      "approx_searches": "100+",
-      "published_at": "2026-11-12T10:20:00Z",
-      "related_news_urls": [
-        "https://www.univision.com/noticias/inmigracion/el-caso-de-los-8-iranies-la-batalla-judicial-que-freno-de-ultimo-momento-su-deportacion-del-pais-del-que-huyeron",
-        "https://www.greenwichtime.com/news/world/article/cancelan-de-ltima-hora-vuelo-de-deportaci-n-de-22520062.php",
-        "https://www.democracynow.org/es/2026/11/10/titulares/us_cancels_deportation_flight_of_iranians_at_last_minute"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbQqzP2MnxWHXdTtqvRq-MB23K4uXtOnr9vs2r0-bsD0jWfz98JCL46uDc4JM",
-      "image_credit": "Univision",
-      "news": [
-        {
-          "url": "https://www.univision.com/noticias/inmigracion/el-caso-de-los-8-iranies-la-batalla-judicial-que-freno-de-ultimo-momento-su-deportacion-del-pais-del-que-huyeron",
-          "title": "La batalla judicial que frenó de último momento la deportación de ocho iraníes al país del que huyeron",
-          "publisher": "Univision",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbQqzP2MnxWHXdTtqvRq-MB23K4uXtOnr9vs2r0-bsD0jWfz98JCL46uDc4JM"
-        },
-        {
-          "url": "https://www.greenwichtime.com/news/world/article/cancelan-de-ltima-hora-vuelo-de-deportaci-n-de-22520062.php",
-          "title": "Cancelan de última hora vuelo de deportación de iraníes desde EEUU, dice abogado",
-          "publisher": "Greenwich Time",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHbsfgIMS8UoLjmUSQgEX4K5fmhRxHE-WbRo_E8xFH-G6Vb0wqFWs9DGo6W9o"
-        },
-        {
-          "url": "https://www.democracynow.org/es/2026/11/10/titulares/us_cancels_deportation_flight_of_iranians_at_last_minute",
-          "title": "EE.UU. cancela a último momento un vuelo que trasladaba a inmigrantes iraníes deportados a Irán",
-          "publisher": "Democracy Now!",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmYiVa0xsTDeS393XSOC7FjNcQ6nva1-sShABX-cZNpQI0UD8U62BAEVA6-6s"
-        }
-      ]
-    },
-    {
-      "query": "charlotte weather",
-      "approx_searches": "100+",
-      "published_at": "2026-11-12T10:20:00Z",
-      "related_news_urls": [
-        "https://www.charlottenc.gov/City-News/Charlotte-Marathon-New-in-2026",
-        "https://www.wsoctv.com/news/local/pediatric-patients-cross-finish-line-ahead-charlotte-marathon/YRECPE6VRJDA5LY2RSTJUELVQI/",
-        "https://www.wcnc.com/video/entertainment/events/charlotte-marathon-interview/275-8069ae69-c36d-4cba-aae2-d651a0cc0ae7"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSesV8CPI8I6R7VTAPwgtp-d5TMFwmHaFQ82JR-GFg6XZlxJoC11AkjIr-TYdk",
-      "image_credit": "City of Charlotte (.gov)",
-      "news": [
-        {
-          "url": "https://www.charlottenc.gov/City-News/Charlotte-Marathon-New-in-2026",
-          "title": "Novant Health Charlotte Marathon: What's New in 2026?",
-          "publisher": "City of Charlotte (.gov)",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSesV8CPI8I6R7VTAPwgtp-d5TMFwmHaFQ82JR-GFg6XZlxJoC11AkjIr-TYdk"
-        },
-        {
-          "url": "https://www.wsoctv.com/news/local/pediatric-patients-cross-finish-line-ahead-charlotte-marathon/YRECPE6VRJDA5LY2RSTJUELVQI/",
-          "title": "Pediatric patients cross finish line ahead of Charlotte Marathon",
-          "publisher": "WSOC TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlaHogSpe_7YfVNobsCqBqa4dG36LIqF0r3CRZbbcqF0A4I7mXN3PDFlGfn2I"
-        },
-        {
-          "url": "https://www.wcnc.com/video/entertainment/events/charlotte-marathon-interview/275-8069ae69-c36d-4cba-aae2-d651a0cc0ae7",
-          "title": "Charlotte marathon prepares for biggest race in event history",
-          "publisher": "WCNC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsxECCdUqxqukGti6sxQICkx9DFy-b-J_CCAK7U_rDQtSQnBmz-FEGyRJuFvM"
-        }
-      ]
-    },
-    {
-      "query": "天气",
-      "approx_searches": "100+",
-      "published_at": "2026-11-12T10:20:00Z",
-      "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-11/sudden-screwworm-resurgence-finds-catalyst-in-ideal-fly-weather"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0lBgSfyUt--2jfauOYbAYOKwpSnHIc-DkS_xN-Ft7IPfoRHwu04dFgUQf9NQ",
-      "image_credit": "Bloomberg.com",
-      "news": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-11/sudden-screwworm-resurgence-finds-catalyst-in-ideal-fly-weather",
-          "title": "Deadly Screwworm Spreads Fast With Milder Weather Fueling Resurgence",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0lBgSfyUt--2jfauOYbAYOKwpSnHIc-DkS_xN-Ft7IPfoRHwu04dFgUQf9NQ"
         }
       ]
     }
