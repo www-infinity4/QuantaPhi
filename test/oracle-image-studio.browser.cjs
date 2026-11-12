@@ -31,6 +31,11 @@ const path=require('node:path');
  await page.addScriptTag({path:path.resolve(__dirname,'../phi-image-learning.js')});
  await page.addScriptTag({path:path.resolve(__dirname,'../phi-image-builder.js')});
  assert.equal(await page.locator('#pi-exact-text').isVisible(),false);
+ // The one-prompt Image Printer puts format, uploads and lettering in optional advanced controls.
+ assert.equal(await page.locator('.pi-advanced').isVisible(),true);
+ assert.equal(await page.locator('.pi-advanced').getAttribute('open'),null);
+ assert.equal(await page.locator('.pi-exact-optional').isVisible(),false);
+ await page.locator('.pi-advanced > summary').click();
  assert.equal(await page.locator('.pi-exact-optional').isVisible(),true);
  assert.equal(await page.locator('.pi-exact-optional').getAttribute('open'),null);
  assert.equal(await page.locator('.pi-section h3').filter({hasText:'Lettering'}).count(),0,'There must not be a prominent lettering step');

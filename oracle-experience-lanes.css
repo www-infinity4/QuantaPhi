@@ -1,0 +1,59 @@
+/* Oracle Octaves · calm, full-width, mobile-first original Quick Card carousels */
+#oracleExperienceLanes{display:grid;gap:24px;width:100%;max-width:1020px;margin:22px auto 35px;color:#342742;font:400 17px/1.58 system-ui,-apple-system,sans-serif;letter-spacing:.012em}
+#oracleExperienceLanes *{box-sizing:border-box}
+#oracleExperienceLanes .ioc-lane{min-width:0;border:1px solid #d5c5e5;border-radius:23px;background:linear-gradient(145deg,#fcfaff 0%,#f6f0fb 100%);padding:clamp(12px,3.5vw,24px);box-shadow:0 9px 25px #43265d12}
+#oracleExperienceLanes .ioc-intro{margin-bottom:12px}
+#oracleExperienceLanes .ioc-kicker{color:#7849a6;font-size:12px;font-weight:850;letter-spacing:.075em;margin:0 0 5px}
+#oracleExperienceLanes h2{font-size:clamp(21px,4.4vw,28px);line-height:1.22;color:#392250;margin:0 0 8px;font-weight:850}
+#oracleExperienceLanes h3{font-size:clamp(19px,4vw,25px);line-height:1.28;margin:8px 0;color:#40265c}
+#oracleExperienceLanes h4{font-size:19px;color:#4c2d67}
+#oracleExperienceLanes p{overflow-wrap:anywhere}
+#oracleExperienceLanes .ioc-intro>p:last-child{color:#5f536b;font-size:15px;margin:0}
+#oracleExperienceLanes .ioc-nav{display:grid;grid-template-columns:48px minmax(0,1fr) 48px;align-items:center;gap:8px;margin:12px 0}
+#oracleExperienceLanes button{min-height:46px;border:1px solid #c0abd7;border-radius:13px;padding:10px 14px;background:#fff;color:#59357c;font:750 16px/1.35 system-ui,sans-serif;cursor:pointer;touch-action:manipulation}
+#oracleExperienceLanes .ioc-arrow{font-size:27px;padding:0;background:#fff;color:#543676}
+#oracleExperienceLanes .ioc-primary{background:#683d91;border-color:#683d91;color:#fff;min-height:51px}
+#oracleExperienceLanes .ioc-secondary{background:#f5edf9}
+#oracleExperienceLanes button:focus-visible,#oracleExperienceLanes a:focus-visible,#oracleExperienceLanes select:focus-visible{outline:3px solid #8b55c5;outline-offset:3px}
+#oracleExperienceLanes button:disabled{opacity:.5;cursor:wait}
+#oracleExperienceLanes .ioc-count{text-align:center;font-size:14px;font-weight:750;color:#61516d;margin:0}
+#oracleExperienceLanes .ioc-stage{min-width:0;padding:2px}
+#oracleExperienceLanes .ioc-stage>section{display:block!important;max-width:100%;margin:0!important}
+#oracleExperienceLanes .ioc-stage>article{max-width:100%;margin:0 auto}
+#oracleExperienceLanes .ioc-stage iframe,#oracleExperienceLanes .ioc-stage img{max-width:100%}
+#oracleExperienceLanes .ioc-video{max-width:780px;background:#fff;border:1px solid #e2d5ec;border-radius:18px;padding:clamp(12px,3vw,20px);margin:auto}
+#oracleExperienceLanes .ioc-video-hero{position:relative;width:100%;aspect-ratio:16/9;background:#221a2c;border-radius:14px;overflow:hidden;display:grid;place-items:center}
+#oracleExperienceLanes .ioc-poster{width:100%;height:100%;display:block;object-fit:cover}
+#oracleExperienceLanes .ioc-player{width:100%;height:100%;border:0;display:block}
+#oracleExperienceLanes .ioc-source{font-size:14px;font-weight:700;color:#5c4b67;margin:0}
+#oracleExperienceLanes .ioc-source-link{display:inline-flex;min-height:44px;align-items:center;color:#563087;font-weight:800;margin:8px 0;text-decoration:underline}
+#oracleExperienceLanes .ioc-status{font-size:14px;line-height:1.55;color:#5d4a68}
+#oracleExperienceLanes .ioc-video .ioc-primary{width:100%;margin-top:10px}
+#oracleExperienceLanes .ioc-select{width:100%;min-height:48px;border:1px solid #aa96c3;border-radius:12px;font:inherit;padding:10px;background:#fff;color:#31243d}
+#oracleExperienceLanes .ioc-physics,#oracleExperienceLanes .ioc-realm{max-width:790px;margin:auto;padding:clamp(12px,3vw,22px);background:#fff;border:1px solid #e5d9ef;border-radius:17px}
+#oracleExperienceLanes .ioc-experiment-image{display:block;width:100%;height:auto;margin:15px auto;border-radius:12px;border:1px solid #ded0e8}
+#oracleExperienceLanes .ioc-realm-choices{display:grid;gap:10px}
+#oracleExperienceLanes .ioc-gate{border:1px solid #d1b6da;background:#fff;border-radius:16px;padding:18px;margin:10px 0}
+#oracleExperienceLanes .ioc-gate .ioc-primary{width:100%}
+#oracleExperienceLanes #ioc-adult .ioc-intro .ioc-secondary{margin-top:12px}
+#oracleExperienceLanes [hidden]{display:none!important}
+/* When a different story card is selected, return unused original widgets to an invisible connected bank, never a vertical wall. */
+body.oracle-card-deck-active main.app > :is(#physicsOracleCard,#oracleRealmGame){display:none!important}
+/* The age-restricted original roots must never appear as a vertical wall in the ordinary page. */
+body.oracle-card-deck-active main.app>[id^="dispensary-"],
+body.oracle-card-deck-active main.app>#cannabisDirectoryCard,
+body.oracle-card-deck-active main.app>#cannabisDirectoryCards,
+body.oracle-card-deck-active main.app>#bruceBannerWeedmapsCard,
+body.oracle-card-deck-active main.app>#infinityAdultContentCard{display:none!important}
+/* Simple printer up front; existing image modes and references remain available inside Advanced. */
+#oracleExperienceLanes #phiImageBuilder .pi-advanced{margin:12px 0;border:1px solid #d9c9e9;border-radius:13px;background:#fdfbff;padding:12px}
+#oracleExperienceLanes #phiImageBuilder .pi-advanced>summary{font-size:15px;font-weight:750;color:#54317d;cursor:pointer;min-height:35px}
+#oracleExperienceLanes #phiImageBuilder #pi-prompt{min-height:130px;font:400 18px/1.52 system-ui,sans-serif;letter-spacing:.015em}
+#oracleExperienceLanes #phiImageBuilder .pi-primary{font-size:18px;min-height:55px}
+#oracleExperienceLanes #phiStoryWriter .sw-card{max-width:100%;margin:0;background:#fff;color:#34243f;box-shadow:none;border:1px solid #e4d4ee;border-radius:18px}
+#oracleExperienceLanes #phiStoryWriter .sw-advanced{margin:10px 0 14px;padding:12px;border:1px solid #d4c1e5;border-radius:12px;background:#fcfaff}
+#oracleExperienceLanes #phiStoryWriter .sw-advanced>summary{cursor:pointer;font-size:15px;font-weight:750;color:#54317d;min-height:38px}
+#oracleExperienceLanes #phiStoryWriter .sw-primary{min-height:54px;font-size:17px}
+#oracleExperienceLanes #phiStoryWriter textarea{font:400 18px/1.55 system-ui,sans-serif;min-height:135px}
+@media(max-width:390px){#oracleExperienceLanes{font-size:16px;gap:17px}#oracleExperienceLanes .ioc-lane{padding:11px;border-radius:17px}#oracleExperienceLanes .ioc-video{padding:10px}#oracleExperienceLanes .ioc-nav{grid-template-columns:44px minmax(0,1fr) 44px}}
+@media(prefers-reduced-motion:reduce){#oracleExperienceLanes *,#oracleExperienceLanes *::before,#oracleExperienceLanes *::after{transition:none!important;animation:none!important}}

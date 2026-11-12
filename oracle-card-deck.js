@@ -146,7 +146,11 @@ const CARD_DIRECTIONS={
 
 // Builders have a dedicated real-widget home beside the advertisement area.
 const DEVELOPER_CARD_IDS=new Set(['mediaStarCreator','government501Affiliates','infinityAffiliates','phiProjectActions']);
-const unique=[...new Map(choices.filter(([id])=>!DEVELOPER_CARD_IDS.has(id)).map(([id,title])=>[id,title])).entries()];
+const reservedForDedicatedLanes=new Set([
+ 'phiMediaBuilder','phiStoryWriter','infiniteBook','groupStoryBuild','pixieStoryCard',
+ 'physicsOracleCard','oracleRealmGame','cannabisDirectoryCard','bruceBannerWeedmapsCard','infinityAdultContentCard'
+]);
+const unique=[...new Map(choices.filter(([id])=>!DEVELOPER_CARD_IDS.has(id)&&!reservedForDedicatedLanes.has(id)&&!id.startsWith('dispensary-')).map(([id,title])=>[id,title])).entries()];
 const entries=unique.map(([id,title])=>{
  const [feedId,category,feature]=CARD_DIRECTIONS[id]||['deck-'+id.toLowerCase(),'Discovery',title];
  return {id,title,feedId,category,feature,study:title,node:document.getElementById(id),marker:null,count:0};
@@ -211,6 +215,7 @@ window.addEventListener('quantaphi:source-cards-ready',registerSourceCards);
 // Dynamically mount every loaded, original Cloudflare store listing as its own
 // Oracle card. No personal browsing telemetry, sale controls, or fake ratings.
 function registerDirectoryCards(){
+ if(document.getElementById('oracleExperienceLanes'))return; // Opt-in 21+ lane owns directory listings.
  let added=false;
  for(const node of document.querySelectorAll('[data-directory-store-id]')){
   const id=node.id;
@@ -292,8 +297,10 @@ window.addEventListener('quantaphi:trending-app-cards-ready',registerTrendingApp
 // Discover widgets mounted after the deferred deck script, including roots that
 // did not exist at its first scan. Reparenting is ignored once registered.
 function registerLateWidgets(){
+ // Preserve exclusive ownership of original creator, developer, and adult cards.
  let added=false;
  for(const [id,title] of unique){
+  if(reservedForDedicatedLanes.has(id)||id.startsWith('dispensary-'))continue;
   if(entries.some(e=>e.id===id))continue;
   const node=document.getElementById(id);if(!node)continue;
   const [feedId,category,feature]=CARD_DIRECTIONS[id]||['deck-'+id.toLowerCase(),'Discovery',title];

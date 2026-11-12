@@ -106,4 +106,6 @@ function paintAll(){
   root.append(details,actions,source,close);
  }
 }
+document.addEventListener('oracle:adult-acknowledged',()=>{acknowledged=true;paintAll()});
+document.addEventListener('oracle:adult-hidden',()=>{acknowledged=false;paintAll()});
 if(roots.length)paintAll();

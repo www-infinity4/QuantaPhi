@@ -1,0 +1,35 @@
+/* Image Generator Lab · Android-first original Oracle Octaves Quick Cards. */
+#imageGeneratorCarousel{box-sizing:border-box;width:min(100%,1020px);margin:24px auto 36px;padding:clamp(13px,3vw,24px);border:1px solid #d1bbde;border-radius:23px;background:linear-gradient(140deg,#fdfafe,#f3eaf8);color:#30273c;box-shadow:0 12px 30px #3d245a18;font:400 17px/1.5 system-ui,-apple-system,sans-serif;letter-spacing:.012em}
+#imageGeneratorCarousel *{box-sizing:border-box}
+#imageGeneratorCarousel .igl-kicker{font-weight:850;letter-spacing:.09em;font-size:13px;color:#765195;margin:0 0 5px}
+#imageGeneratorCarousel h2{font-size:clamp(23px,5vw,30px);line-height:1.2;color:#402358;margin:0 0 9px}
+#imageGeneratorCarousel h3{font-size:clamp(20px,4vw,26px);line-height:1.25;color:#492a62;margin:0 0 6px}
+#imageGeneratorCarousel p{overflow-wrap:anywhere}
+#imageGeneratorCarousel .igl-intro{font-size:16px;color:#5e4b6c;line-height:1.55;margin:0 0 15px}
+#imageGeneratorCarousel .igl-navigation{display:grid;grid-template-columns:50px minmax(0,1fr) 50px;align-items:center;gap:8px;margin:9px 0 14px}
+#imageGeneratorCarousel button{cursor:pointer;touch-action:manipulation;border-radius:13px;border:1px solid #bea8d1;background:#fff;color:#4d3370;font:800 16px/1.35 system-ui,sans-serif;min-height:49px;padding:10px 13px}
+#imageGeneratorCarousel button:focus-visible,#imageGeneratorCarousel a:focus-visible,#imageGeneratorCarousel textarea:focus-visible{outline:3px solid #8b52ce;outline-offset:3px}
+#imageGeneratorCarousel button:disabled{opacity:.5;cursor:wait}
+#imageGeneratorCarousel .igl-arrow{font-size:31px;line-height:1;padding:0;min-width:48px}
+#imageGeneratorCarousel .igl-count{text-align:center;min-width:0;font-size:15px;line-height:1.36;font-weight:850;color:#51375c;overflow-wrap:anywhere}
+#imageGeneratorCarousel .igl-stage{min-width:0}
+#imageGeneratorCarousel .igl-card{max-width:800px;margin:0 auto;background:#fff;border:1px solid #e3d5ed;border-radius:20px;padding:clamp(12px,3vw,21px)}
+#imageGeneratorCarousel .igl-tagline{font-size:16px;color:#65546f;margin:0 0 14px}
+#imageGeneratorCarousel .igl-artwork{background:#261b39;border-radius:17px;min-height:140px;overflow:hidden;border:1px solid #dbcbe5}
+#imageGeneratorCarousel .igl-image{display:block;aspect-ratio:3/2;width:100%;height:auto;object-fit:cover}
+#imageGeneratorCarousel .igl-label{display:block;font-size:16px;font-weight:850;margin:16px 0 7px;color:#3c2948}
+#imageGeneratorCarousel .igl-prompt{width:100%;min-height:102px;resize:vertical;border-radius:13px;border:1px solid #bba5ca;padding:13px;font:450 18px/1.5 system-ui,sans-serif;color:#32243f;background:#fff}
+#imageGeneratorCarousel .igl-actions{display:grid;margin:13px 0;gap:9px}
+#imageGeneratorCarousel .igl-primary{min-height:54px;font-size:18px;background:#643b8c;color:#fff;border-color:#643b8c}
+#imageGeneratorCarousel .igl-downloads{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+#imageGeneratorCarousel .igl-secondary{background:#f6f0fa;color:#4d306b}
+#imageGeneratorCarousel .igl-status{font-size:14px;line-height:1.55;color:#4f4260;margin:12px 0}
+#imageGeneratorCarousel .igl-provenance{border-top:1px solid #ebe1ef;margin-top:12px;padding-top:14px}
+#imageGeneratorCarousel .igl-provenance p{font-size:14px;color:#55485b;line-height:1.55;margin:0 0 9px}
+#imageGeneratorCarousel .igl-provenance small{display:block;font-size:13px;font-weight:800;color:#604875}
+#imageGeneratorCarousel .igl-source-links{display:flex;flex-wrap:wrap;gap:9px;margin-top:10px}
+#imageGeneratorCarousel .igl-source-link{display:inline-flex;align-items:center;min-height:44px;padding:9px 13px;border-radius:10px;border:1px solid #d6c0e6;color:#4e287a;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+#imageGeneratorCarousel .igl-catalog-note{margin:13px 0 0;font-size:14px;line-height:1.55;color:#69566c}
+#imageGeneratorCarousel .igl-error{font-size:17px;padding:18px;background:#fff;border-radius:14px}
+@media(max-width:390px){#imageGeneratorCarousel{padding:11px;border-radius:17px;font-size:16px}#imageGeneratorCarousel .igl-navigation{grid-template-columns:46px minmax(0,1fr) 46px}#imageGeneratorCarousel .igl-count{font-size:14px}#imageGeneratorCarousel .igl-arrow{min-width:44px}#imageGeneratorCarousel .igl-card{padding:11px}}
+@media(prefers-reduced-motion:reduce){#imageGeneratorCarousel *{scroll-behavior:auto!important;transition:none!important}}
