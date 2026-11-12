@@ -3,17 +3,114 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T00:45:21.183043Z",
+  "checked_at": "2026-11-12T01:01:36.102588Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "colin mizuo toenail lawsuit portland",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T00:40:00Z",
+      "related_news_urls": [
+        "https://www.kgw.com/article/news/local/courts-news/second-woman-sues-kaiser-doctor-used-rubbing-alcohol-instead-anesthetic-before-toenail-removal/283-7241bb4d-54fb-4116-98eb-08b80b0d50a0",
+        "https://www.oregonlive.com/health/2026/11/torture-2nd-patient-says-doctor-injected-her-with-rubbing-alcohol-instead-of-painkiller-then-tore-off-toenail.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlyLZ4BJW75Ml_B7-m-JXz72HrIgeAVGd7T1Frda84e1qupaT4fpmQok6VI3Q",
+      "image_credit": "KGW",
+      "news": [
+        {
+          "url": "https://www.kgw.com/article/news/local/courts-news/second-woman-sues-kaiser-doctor-used-rubbing-alcohol-instead-anesthetic-before-toenail-removal/283-7241bb4d-54fb-4116-98eb-08b80b0d50a0",
+          "title": "Second woman sues Kaiser, says doctor used rubbing alcohol instead of anesthetic before toenail removal",
+          "publisher": "KGW",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlyLZ4BJW75Ml_B7-m-JXz72HrIgeAVGd7T1Frda84e1qupaT4fpmQok6VI3Q"
+        },
+        {
+          "url": "https://www.oregonlive.com/health/2026/11/torture-2nd-patient-says-doctor-injected-her-with-rubbing-alcohol-instead-of-painkiller-then-tore-off-toenail.html",
+          "title": "‘Torture’: 2nd patient says doctor injected her with rubbing alcohol instead of painkiller, then tore off toenail",
+          "publisher": "OregonLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYYIWsJY_8fBffv6nyxgOq3Ipt20UA80-5HD3QayyI--u0qzfwIkvyy9W0Zgg"
+        }
+      ]
+    },
+    {
+      "query": "rob dillingham",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T00:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/rob-dillingham-sign-nba-g-000859445.html",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/moussa-diabate-quad-probable-thursday-vs-phx",
+        "https://heavy.com/sports/nba/new-york-knicks/knicks-former-lottery-pick-rob-dillingham/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrg2i7EXLYB5hao4S8y0wtDpoNaGihSMXc2Pn6u3cJFmBpnhxq0XKFbm4K0_o",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/rob-dillingham-sign-nba-g-000859445.html",
+          "title": "Rob Dillingham to sign in NBA G League, expected to join Westchester Knicks",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrg2i7EXLYB5hao4S8y0wtDpoNaGihSMXc2Pn6u3cJFmBpnhxq0XKFbm4K0_o"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/moussa-diabate-quad-probable-thursday-vs-phx",
+          "title": "Moussa Diabaté (quad) probable Thursday vs. PHX",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSrAPWYwgsIQnnyzV8SXnrGQoUKH0qJvZ-iAtq26kCiMiVZwhxSYoXVTxe0hx0"
+        },
+        {
+          "url": "https://heavy.com/sports/nba/new-york-knicks/knicks-former-lottery-pick-rob-dillingham/",
+          "title": "Knicks Quietly Add Former No. 8 Pick After Stunning NBA Fall",
+          "publisher": "Heavy.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4itZgkezJgJj0xYALY0euksbyTefwuBmWkZzo8I5VwzzFvsObaBbxx4I40fk"
+        }
+      ]
+    },
+    {
+      "query": "razorback basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T00:40:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/arkansas/longformarticle/arkansas-basketball-robert-morris-game-preview-notebook--292554929/",
+        "https://arkansasrazorbacks.com/mbb-preview-arkansas-vs-robert-morris/",
+        "https://www.wholehogsports.com/news/2026/nov/10/arkansas-basketball-vs-robert-morris-how-to-watch-betting-line-what-to-know/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZNjXM9MXzaT-dmuT4noTMpTqG4ldh5q2iKw1xiUVKlBVLrxxTEgaf9zowbro",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/arkansas/longformarticle/arkansas-basketball-robert-morris-game-preview-notebook--292554929/",
+          "title": "Arkansas basketball back home for matchup with Robert Morris",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZNjXM9MXzaT-dmuT4noTMpTqG4ldh5q2iKw1xiUVKlBVLrxxTEgaf9zowbro"
+        },
+        {
+          "url": "https://arkansasrazorbacks.com/mbb-preview-arkansas-vs-robert-morris/",
+          "title": "MBB Preview: Arkansas vs Robert Morris",
+          "publisher": "Arkansas Razorbacks",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDt39mzEqSbB_sOZjHEvYdi1nyzGKKcyShOwCM4WbWUz-OlY4TX1Z6gP0va5o"
+        },
+        {
+          "url": "https://www.wholehogsports.com/news/2026/nov/10/arkansas-basketball-vs-robert-morris-how-to-watch-betting-line-what-to-know/",
+          "title": "Arkansas basketball vs. Robert Morris.: How to watch, betting line, what to know",
+          "publisher": "Whole Hog Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkrFd-SIFhxdaPKT6iZdpzZZuW8UJw2xW897jDshPdRte_knB6EOaetGV1hvQ"
+        }
+      ]
+    },
     {
       "query": "ryan seacrest",
       "approx_searches": "2000+",
       "published_at": "2026-11-12T00:30:00Z",
       "related_news_urls": [
         "https://www.usatoday.com/story/sports/high-school/football/2026/11/10/ryan-seacrest-dunwoody-georgia-high-school-football-first-stadium/92630959007/",
-        "https://www.wsbradio.com/news/local/school-board-advances-27-million-plan-renovate-stadium-named-after-ryan-seacrest/PDSMYEQJ7NGUTIS4F3HRTORQZ4/",
-        "https://roughdraftatlanta.com/2026/11/10/dekalb-school-board-approves-seacrest-stadium/"
+        "https://www.crossroadstoday.com/news/shareable-stories/ryan-seacrest-played-defensive-back-for-dunwoody-ga-high-school-for-two-years-before-graduating/image_93eebb7a-3231-5bb2-b426-8cf0f5e3e5ab.html",
+        "https://www.wsbradio.com/news/local/school-board-advances-27-million-plan-renovate-stadium-named-after-ryan-seacrest/PDSMYEQJ7NGUTIS4F3HRTORQZ4/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRtErz5xuJGDOMGKxQ-CZkLpIya1GjviEzlzytqAdD2ENbsGgeqyFqi-iv2RA",
       "image_credit": "USA Today",
@@ -26,59 +123,24 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRtErz5xuJGDOMGKxQ-CZkLpIya1GjviEzlzytqAdD2ENbsGgeqyFqi-iv2RA"
         },
         {
+          "url": "https://www.crossroadstoday.com/news/shareable-stories/ryan-seacrest-played-defensive-back-for-dunwoody-ga-high-school-for-two-years-before-graduating/image_93eebb7a-3231-5bb2-b426-8cf0f5e3e5ab.html",
+          "title": "Ryan Seacrest played defensive back for Dunwoody (GA) High School for two years before graduating in 1993.",
+          "publisher": "crossroadstoday.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxVkJTmNjHawD93Z7EaKtViakqzWQZK8V7e5b8kZRzEwpWfXZRB4JDsAFos-0"
+        },
+        {
           "url": "https://www.wsbradio.com/news/local/school-board-advances-27-million-plan-renovate-stadium-named-after-ryan-seacrest/PDSMYEQJ7NGUTIS4F3HRTORQZ4/",
           "title": "School board advances $2.7 million plan to renovate stadium named after Ryan Seacrest",
           "publisher": "95.5 WSB",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFTSovmtKBo9OYDVJmHe1lIMHf3XqtvPw4bQUAPhgIkRZ9KDIejjZXRa8Q_Uc"
-        },
-        {
-          "url": "https://roughdraftatlanta.com/2026/11/10/dekalb-school-board-approves-seacrest-stadium/",
-          "title": "DeKalb school board green lights Dunwoody stadium expansion",
-          "publisher": "Reporter Newspapers",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMinTf_YrxtH2ba-scj195I4b4mezYXDooKv90N6CiheLcnr7_mxAGqciA5hU"
-        }
-      ]
-    },
-    {
-      "query": "tampa bay lightning",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T00:30:00Z",
-      "related_news_urls": [
-        "https://www.audacy.com/wgr550/sports/sabres/let-the-games-begin",
-        "https://www.nhl.com/video/pepsi-primetime-preview-lightning-at-sabres-6408256354112",
-        "https://www.foxnews.com/outkick/tampa-bay-lightning-visit-buffalo-sabres-goalies-struggling-stop-pucks-season"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdcnWiZWAOMByZnvjZiHSoCFDZp8AT6suNE9kVkat_uryS2I_nWGm0-vpfGps",
-      "image_credit": "Audacy",
-      "news": [
-        {
-          "url": "https://www.audacy.com/wgr550/sports/sabres/let-the-games-begin",
-          "title": "Let the games begin",
-          "publisher": "Audacy",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdcnWiZWAOMByZnvjZiHSoCFDZp8AT6suNE9kVkat_uryS2I_nWGm0-vpfGps"
-        },
-        {
-          "url": "https://www.nhl.com/video/pepsi-primetime-preview-lightning-at-sabres-6408256354112",
-          "title": "Pepsi Primetime Preview: Lightning at Sabres",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLVFidjujGba9oY8GwiBMoi4msxWVYbBpCbmxoxA4Br93SZEEzZb-vXGFkTeY"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick/tampa-bay-lightning-visit-buffalo-sabres-goalies-struggling-stop-pucks-season",
-          "title": "Tampa Bay Lightning visit Buffalo Sabres with both goalies struggling to stop pucks this season",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUhSNqmqdFyKQZoPI83waiqvau_FXMT4fk3UND0bsDaprPX7J1Bjncn5ys9gA"
         }
       ]
     },
     {
       "query": "ja'kobe walter",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-12T00:30:00Z",
       "related_news_urls": [
         "https://www.cbssports.com/fantasy/basketball/news/raptors-jamison-battle-pops-for-20-off-bench-sunday/",
@@ -112,8 +174,43 @@
       ]
     },
     {
-      "query": "st john's basketball",
-      "approx_searches": "500+",
+      "query": "tampa bay lightning",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T00:30:00Z",
+      "related_news_urls": [
+        "https://www.audacy.com/wgr550/sports/sabres/let-the-games-begin",
+        "https://www.nhl.com/video/pepsi-primetime-preview-lightning-at-sabres-6408256354112",
+        "https://www.foxnews.com/outkick/tampa-bay-lightning-visit-buffalo-sabres-goalies-struggling-stop-pucks-season"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdcnWiZWAOMByZnvjZiHSoCFDZp8AT6suNE9kVkat_uryS2I_nWGm0-vpfGps",
+      "image_credit": "Audacy",
+      "news": [
+        {
+          "url": "https://www.audacy.com/wgr550/sports/sabres/let-the-games-begin",
+          "title": "Let the games begin",
+          "publisher": "Audacy",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdcnWiZWAOMByZnvjZiHSoCFDZp8AT6suNE9kVkat_uryS2I_nWGm0-vpfGps"
+        },
+        {
+          "url": "https://www.nhl.com/video/pepsi-primetime-preview-lightning-at-sabres-6408256354112",
+          "title": "Pepsi Primetime Preview: Lightning at Sabres",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLVFidjujGba9oY8GwiBMoi4msxWVYbBpCbmxoxA4Br93SZEEzZb-vXGFkTeY"
+        },
+        {
+          "url": "https://www.foxnews.com/outkick/tampa-bay-lightning-visit-buffalo-sabres-goalies-struggling-stop-pucks-season",
+          "title": "Tampa Bay Lightning visit Buffalo Sabres with both goalies struggling to stop pucks this season",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUhSNqmqdFyKQZoPI83waiqvau_FXMT4fk3UND0bsDaprPX7J1Bjncn5ys9gA"
+        }
+      ]
+    },
+    {
+      "query": "colgate vs st john's",
+      "approx_searches": "1000+",
       "published_at": "2026-11-12T00:30:00Z",
       "related_news_urls": [
         "https://stormthepaint.com/st-johns-basketball-second-unit-will-get-another-opportunity-to-shine-against-colgate",
@@ -148,7 +245,7 @@
     },
     {
       "query": "sc state vs notre dame",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-12T00:30:00Z",
       "related_news_urls": [
         "https://irishsportsdaily.com/s/28541/game-thread-south-carolina-state-vs-notre-dame",
@@ -182,37 +279,37 @@
       ]
     },
     {
-      "query": "knicks vs cavs",
+      "query": "take care of america's veterans act",
       "approx_searches": "200+",
       "published_at": "2026-11-12T00:30:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/nba/news/best-kalshi-promo-code-cbssports55-score-55-bonus-cavaliers-knicks-rockets-warriors-nba-politics/",
-        "https://www.usatoday.com/story/prediction-markets/2026/11/11/kalshi-promo-code-dispatch-11-11/92708698007/",
-        "https://www.al.com/betting/2026/11/kalshi-promo-code-al55-get-a-55-bonus-for-nba-tonight-maction-football.html"
+        "https://www.politico.com/news/2026/11/11/house-veterans-bill-trickery-01161481",
+        "https://thehill.com/homenews/house/6214482-gop-passes-tcava-veterans-bill/",
+        "https://www.military.com/house-passes-sweeping-veterans-benefits-bill-despite-disability-pay-concerns"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnrfzmZeWglIoRznqZnGDqP0LJKBcEunIHzysQ9EYeI8BAqcU6PX5jiZaY_pI",
-      "image_credit": "CBS Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRmpjjwlh2oxZTgkpaBPlfCAcWWQ__P_q5rIEjw1v2Miwkpmp2wYvYPI2uvxE",
+      "image_credit": "Politico",
       "news": [
         {
-          "url": "https://www.cbssports.com/nba/news/best-kalshi-promo-code-cbssports55-score-55-bonus-cavaliers-knicks-rockets-warriors-nba-politics/",
-          "title": "Best Kalshi promo code CBSSPORTS55: Score $55 bonus for Cavaliers-Knicks, Rockets-Warriors, NBA, politics",
-          "publisher": "CBS Sports",
+          "url": "https://www.politico.com/news/2026/11/11/house-veterans-bill-trickery-01161481",
+          "title": "Surprise House passage of veterans bill sparks 'trickery' accusation",
+          "publisher": "Politico",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnrfzmZeWglIoRznqZnGDqP0LJKBcEunIHzysQ9EYeI8BAqcU6PX5jiZaY_pI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRmpjjwlh2oxZTgkpaBPlfCAcWWQ__P_q5rIEjw1v2Miwkpmp2wYvYPI2uvxE"
         },
         {
-          "url": "https://www.usatoday.com/story/prediction-markets/2026/11/11/kalshi-promo-code-dispatch-11-11/92708698007/",
-          "title": "Kalshi promo code DISPATCH | $25 bonus for NFL Week 10, NCAAF, NBA & more",
-          "publisher": "USA Today",
+          "url": "https://thehill.com/homenews/house/6214482-gop-passes-tcava-veterans-bill/",
+          "title": "Democrats cry foul after Republicans fast-track partisan veterans bill: ‘Dirty tricks’",
+          "publisher": "The Hill",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTh2pTwc1Z0XQRXuEScushFSfeRkao-N3p7_Lnk-AMobhq3rC9lHq0Fb3NftS8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRgzrXAYcLclOJQw7ScEDk2NVk9Q3enLW5iPxs-CvsZImHwtv_0Il6P5WShus"
         },
         {
-          "url": "https://www.al.com/betting/2026/11/kalshi-promo-code-al55-get-a-55-bonus-for-nba-tonight-maction-football.html",
-          "title": "Kalshi Promo Code AL55: Get a $55 bonus for NBA tonight & MACtion football",
-          "publisher": "AL.com",
+          "url": "https://www.military.com/house-passes-sweeping-veterans-benefits-bill-despite-disability-pay-concerns",
+          "title": "House Passes Sweeping TCAVA Veterans Benefits Bill Despite Disability Pay Concerns",
+          "publisher": "Military.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2k4MEYZwJJEkcw5_SkjkfMTUeREj5K4E0emeOSZ5JVQfUXq9b4eI2QRpR4Ow"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpi7FcFr2Zpczy85fpmXlPXms16Ynin0tKAsyoK9bv0bF6EPM89zwh48Petfk"
         }
       ]
     },
@@ -222,8 +319,8 @@
       "published_at": "2026-11-12T00:20:00Z",
       "related_news_urls": [
         "https://www.espn.com/fantasy/basketball/story/_/id/50443924/fantasy-basketball-trends-nba-2026-2027",
-        "https://www.cleveland.com/cavs/2026/11/cavs-have-a-james-harden-problem-with-no-easy-fix-chris-fedor.html",
-        "https://sports.yahoo.com/articles/cavaliers-james-harden-shooting-career-231622362.html"
+        "https://sports.yahoo.com/articles/tim-macmahon-reveals-why-james-001926932.html",
+        "https://www.hoopsrumors.com/2026/11/cavaliers-notes-harden-atkinson-minix-tyson.html"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5Jd195zlax2BZTFoNmh3HMjroXQNtNF4rMOrw4RiH1rpIA-8ybiSeNSIroyw",
       "image_credit": "ESPN",
@@ -236,123 +333,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5Jd195zlax2BZTFoNmh3HMjroXQNtNF4rMOrw4RiH1rpIA-8ybiSeNSIroyw"
         },
         {
-          "url": "https://www.cleveland.com/cavs/2026/11/cavs-have-a-james-harden-problem-with-no-easy-fix-chris-fedor.html",
-          "title": "The Cavs have a James Harden problem with no easy fix: Chris Fedor",
-          "publisher": "Cleveland.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShIh6unJ-qAaS8Iu_d069W_yfDaUg6NwMD15dX3xm1GLrhOc_dS7-M3r5nCsw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/cavaliers-james-harden-shooting-career-231622362.html",
-          "title": "Cavaliers' James Harden Shooting Career-Low 36.4% Through 11 Games of New Deal",
+          "url": "https://sports.yahoo.com/articles/tim-macmahon-reveals-why-james-001926932.html",
+          "title": "Tim MacMahon reveals why James Harden is Cavs’ ‘biggest concern’",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEswvzeX3YKxEkYeKY9OAKY_vGgjJe6HQIg3qLODhNqnyAkEUNsfqgitZc6BQ"
-        }
-      ]
-    },
-    {
-      "query": "saint peter's vs south carolina",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T00:20:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/south-carolina/article/south-carolina-gamecocks-basketball-st-peters-peacocks-preview-292557360/",
-        "https://www.sportsgambler.com/betting-tips/basketball/saint-peter-s-peacocks-vs-south-carolina-gamecocks-prediction-odds-2026-11-11/",
-        "https://www.on3.com/teams/south-carolina-gamecocks/news/three-burning-questions-ahead-of-south-carolinas-matchup-with-saint-peters/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI38ddZEO8LR47NlYuOeTuFw2Hgj0bJkk9AMiOe9d8SoyJmnyUVv-PnpnZfNw",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/south-carolina/article/south-carolina-gamecocks-basketball-st-peters-peacocks-preview-292557360/",
-          "title": "Countdown to tipoff: South Carolina vs. St. Peter's",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI38ddZEO8LR47NlYuOeTuFw2Hgj0bJkk9AMiOe9d8SoyJmnyUVv-PnpnZfNw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu1c9sdl6q_w7tNrF4YtcuLHEY0FnQnOxCxuhLEHC6N9tkWfg4SzrwHs7nD2I"
         },
         {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/saint-peter-s-peacocks-vs-south-carolina-gamecocks-prediction-odds-2026-11-11/",
-          "title": "Saint Peter's vs South Carolina Prediction, Picks & Odds | 11 Nov 2026",
-          "publisher": "Sportsgambler",
+          "url": "https://www.hoopsrumors.com/2026/11/cavaliers-notes-harden-atkinson-minix-tyson.html",
+          "title": "Cavaliers Notes: Harden, Atkinson, Minix, Tyson",
+          "publisher": "Hoops Rumors",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-hYvvU8Fdyaub-QnNAgEZZ9H540kcmu5JWauguvOqcRhcDKqJwPmT09FP62Q"
-        },
-        {
-          "url": "https://www.on3.com/teams/south-carolina-gamecocks/news/three-burning-questions-ahead-of-south-carolinas-matchup-with-saint-peters/",
-          "title": "Three burning questions ahead of South Carolina's matchup with Saint Peter's",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtE5mgNJsWMVv_r_m1u1TARC8kntUbqkS80hvmwJ8HHaITOujvlQEmeBM1ge4"
-        }
-      ]
-    },
-    {
-      "query": "when does secret lives of mormon wives oc come out",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T00:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/09/arts/television/mormon-wives-orange-county-shows-to-watch.html",
-        "https://www.biography.com/movies-tv/a74325041/secret-lives-of-mormon-wives-orange-county-cast",
-        "https://uk.news.yahoo.com/jen-affleck-says-bigger-divide-170300591.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWoZOAyZ8mS-QK-D8f0VJWvlzbLXZX9_KYkdjbR_c4zE0lUNMjUrlCndYskwA",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/09/arts/television/mormon-wives-orange-county-shows-to-watch.html",
-          "title": "‘The Secret Lives of Mormon Wives: Orange County’ and 5 More Shows to Watch",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWoZOAyZ8mS-QK-D8f0VJWvlzbLXZX9_KYkdjbR_c4zE0lUNMjUrlCndYskwA"
-        },
-        {
-          "url": "https://www.biography.com/movies-tv/a74325041/secret-lives-of-mormon-wives-orange-county-cast",
-          "title": "‘The Secret Lives of Mormon Wives: Orange County’ Has a New Cast. But Not Everyone Is Actually Mormon.",
-          "publisher": "Biography: Historical and Celebrity Profiles",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbfrliwZ_tK-YGWOIWTtWfF0Zu_Tfu61jD7TqI32s6qmHSG_Y6HnVJaSPc5Pg"
-        },
-        {
-          "url": "https://uk.news.yahoo.com/jen-affleck-says-bigger-divide-170300591.html",
-          "title": "Jen Affleck Says There’s a ‘Bigger Divide’ Religiously Between “The” “Secret Lives of Mormon Wives: Orange County” Cast and OG MomTok (Exclusive)",
-          "publisher": "Yahoo News UK",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3oKXjo2m6qD9gBJ1OKvuo8lJ2z1jq_48cuO3ExnmDWb0JfWG4XUb4qA-zImw"
-        }
-      ]
-    },
-    {
-      "query": "evansville vs kentucky",
-      "approx_searches": "200+",
-      "published_at": "2026-11-12T00:20:00Z",
-      "related_news_urls": [
-        "https://www.aseaofblue.com/kentucky-womens-basketball/187639/kentucky-wbb-preview-evansville-invades-historic-memorial-coliseum",
-        "https://www.on3.com/teams/kentucky-wildcats/news/preview-no-12-kentucky-wbb-returns-home-for-matchup-with-evansville/",
-        "https://www.corsicanadailysun.com/sports/national_sports/kentucky-womens-basketball/image_f606e80d-2548-54f2-b049-0c131a0f4e0c.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTO1Cn3y4oyW0wcVD96xtYssygYAi-X-6r1nxdpPRd0hb1RjZeQO06R18Daz1w",
-      "image_credit": "A Sea Of Blue",
-      "news": [
-        {
-          "url": "https://www.aseaofblue.com/kentucky-womens-basketball/187639/kentucky-wbb-preview-evansville-invades-historic-memorial-coliseum",
-          "title": "Kentucky WBB preview: Evansville invades Historic Memorial Coliseum",
-          "publisher": "A Sea Of Blue",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTO1Cn3y4oyW0wcVD96xtYssygYAi-X-6r1nxdpPRd0hb1RjZeQO06R18Daz1w"
-        },
-        {
-          "url": "https://www.on3.com/teams/kentucky-wildcats/news/preview-no-12-kentucky-wbb-returns-home-for-matchup-with-evansville/",
-          "title": "PREVIEW: No. 12 Kentucky WBB returns home for matchup with Evansville",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYV12zqJO49U4QyKTL70TaJIeVBPI2j8-qrgc94nA8WkUxTvdynClAv0uIjBM"
-        },
-        {
-          "url": "https://www.corsicanadailysun.com/sports/national_sports/kentucky-womens-basketball/image_f606e80d-2548-54f2-b049-0c131a0f4e0c.html",
-          "title": "Kentucky Women's Basketball",
-          "publisher": "Corsicana Daily Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3AdBuL84I-rYBWQ90pY8_KsbooDlAdNv2a4gQrxENhOcAVHKc989K7VrrqWQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0mDPlP8eZ86NKLDXabLnAdlX-YcAuWAEqf1iwiomVjHYDrWYoHCK9XvMRg2s"
         }
       ]
     }
