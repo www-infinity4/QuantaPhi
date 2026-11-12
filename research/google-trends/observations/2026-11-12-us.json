@@ -3,9 +3,184 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T12:34:03.665211Z",
+  "checked_at": "2026-11-12T13:01:32.919441Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "mark mcguinn",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T12:40:00Z",
+      "related_news_urls": [
+        "https://www.pennlive.com/entertainment/2026/11/country-music-star-known-for-2000s-hit-dies-at-58-he-was-an-incredible-talent.html",
+        "https://www.thatericalper.com/2026/11/12/mark-mcguinn-country-singer-songwriter-behind-the-top-10-hit-mrs-steven-rudy-dies-at-58/",
+        "https://themusicuniverse.com/mark-mcguinn-dies-at-58/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsB4W02RsYk4lm-PwohbYv8dYF9A0AsAvIHTYBY9Bzp8hFK7vec-u0Cf4-6uk",
+      "image_credit": "PennLive.com",
+      "news": [
+        {
+          "url": "https://www.pennlive.com/entertainment/2026/11/country-music-star-known-for-2000s-hit-dies-at-58-he-was-an-incredible-talent.html",
+          "title": "Country music star known for 2000s hit dies at 58: ‘He was an incredible talent’",
+          "publisher": "PennLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsB4W02RsYk4lm-PwohbYv8dYF9A0AsAvIHTYBY9Bzp8hFK7vec-u0Cf4-6uk"
+        },
+        {
+          "url": "https://www.thatericalper.com/2026/11/12/mark-mcguinn-country-singer-songwriter-behind-the-top-10-hit-mrs-steven-rudy-dies-at-58/",
+          "title": "Mark McGuinn, Country Singer Songwriter Behind the Top 10 Hit “Mrs. Steven Rudy,” Dies at 58",
+          "publisher": "That Eric Alper",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToq0es3J8_Dzm-Q0j2AEaQL3T3_hcpWYyMQrIbsKCsnV8luSutXrF47aQBtYc"
+        },
+        {
+          "url": "https://themusicuniverse.com/mark-mcguinn-dies-at-58/",
+          "title": "Mark McGuinn dies at 58",
+          "publisher": "The Music Universe",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROIEmkjJe6rTELTzeaghxil_s8Gej83vm-YZRf34X454O4aPrUM3PruOu-TMs"
+        }
+      ]
+    },
+    {
+      "query": "prince",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T12:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/c6q8n8n835vqo",
+        "https://people.com/prince-george-inherited-art-skills-kate-middleton-king-charles-kingfisher-drawing-12246970",
+        "https://www.countrylife.co.uk/countryside/nature-wildlife/exclusive-if-prince-george-cant-be-king-he-has-a-promising-back-up-career-as-a-wildlife-artist"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSq6m-OsXMYphQJitwZWc9cp9ew5Ar6kFgs2-D5FouVLXw2w7sirmnArYqjxx4",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/c6q8n8n835vqo",
+          "title": "Prince George's art features in magazine edited by Prince William",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSq6m-OsXMYphQJitwZWc9cp9ew5Ar6kFgs2-D5FouVLXw2w7sirmnArYqjxx4"
+        },
+        {
+          "url": "https://people.com/prince-george-inherited-art-skills-kate-middleton-king-charles-kingfisher-drawing-12246970",
+          "title": "Prince George Proves He’s Inherited Art Skills from Kate Middleton and King Charles with New Drawing",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-HNOjzlBUCmDk4pamNYFF9n3_7jYCohcJsrtNxPfEuRs1ZYJvXl4qTBjErWw"
+        },
+        {
+          "url": "https://www.countrylife.co.uk/countryside/nature-wildlife/exclusive-if-prince-george-cant-be-king-he-has-a-promising-back-up-career-as-a-wildlife-artist",
+          "title": "A picture of royal talent: Prince George's never-before-seen drawing of a kingfisher",
+          "publisher": "Country Life",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRA1QcAs-CthXoIIuJTj7jLe1s169Y_Fgs8wMBfm8auzaKjp2XWtAXaI3xG8_g"
+        }
+      ]
+    },
+    {
+      "query": "doc brown marty mcfly flux capacitor",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T12:40:00Z",
+      "related_news_urls": [
+        "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-12-2026",
+        "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-12-1250/",
+        "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-12-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY",
+      "image_credit": "Mashable",
+      "news": [
+        {
+          "url": "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-12-2026",
+          "title": "NYT Connections hints today: Meanings for each word for Nov. 12, 2026",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY"
+        },
+        {
+          "url": "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-12-1250/",
+          "title": "Today’s NYT Connections Hints and Answers for Thursday, Nov. 12, #1250",
+          "publisher": "CNET",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5B2QPFmAtPFZ6dnv4KpH5_nPJZtIDzn1O1_Cv02WPuQdaV8r20pDOMUo0v-M"
+        },
+        {
+          "url": "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-12-2026",
+          "title": "Today's NYT Connections Hints (and Answer) for Thursday, November 12, 2026",
+          "publisher": "Lifehacker",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRDJJRxBmZIbinmOGXydK6UNrAOD0ye_s7I2V8p02uvssMr2k0jHDTnNFlD_8"
+        }
+      ]
+    },
+    {
+      "query": "lpga",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T12:30:00Z",
+      "related_news_urls": [
+        "https://www.golfchannel.com/lpga/news/lpga-increases-fines-for-slow-play-starting-in-2027-season",
+        "https://golf.com/news/lpga-update-pace-play-policy-fines/",
+        "https://www.golfdigest.com/story/lpga-tour-pace-of-play-policy-update-fines-stroke-penalties"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsRa9Rq0li_3n9HkxSku9TiJ_Tyj8tmuKpv2h1OHRH4JwFO9oWqlL2U34NWzM",
+      "image_credit": "Golf Channel",
+      "news": [
+        {
+          "url": "https://www.golfchannel.com/lpga/news/lpga-increases-fines-for-slow-play-starting-in-2027-season",
+          "title": "Pick up the pace: LPGA stiffens fines, penalties for slow play",
+          "publisher": "Golf Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsRa9Rq0li_3n9HkxSku9TiJ_Tyj8tmuKpv2h1OHRH4JwFO9oWqlL2U34NWzM"
+        },
+        {
+          "url": "https://golf.com/news/lpga-update-pace-play-policy-fines/",
+          "title": "LPGA to update pace-of-play policy with stricter punishments",
+          "publisher": "GOLF.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-kHXpZbO9ZcMWLuhJsqE6gjSW0sxzQ83C-W1MULUhAydrnQPM1jSoUovcVZ8"
+        },
+        {
+          "url": "https://www.golfdigest.com/story/lpga-tour-pace-of-play-policy-update-fines-stroke-penalties",
+          "title": "With pace of play still an issue, new LPGA policies will further ding players in their paycheck",
+          "publisher": "Golf Digest",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgsv2f8ZcIjOn7eO5ZlF0h82y1AojQpCC9D6LEPnpK9ULXgHeVriWLzTNhlvA"
+        }
+      ]
+    },
+    {
+      "query": "jacey birch",
+      "approx_searches": "100+",
+      "published_at": "2026-11-12T12:30:00Z",
+      "related_news_urls": [
+        "https://nypost.com/2026/11/11/media/wplg-anchor-jacey-birch-flashes-side-boob-in-festival-pics/",
+        "https://www.news.com.au/lifestyle/real-life/news-life/tv-news-anchor-sparks-backlash-over-bikini-photos-despite-bosss-strict-ban/news-story/aa35083d2300c654e53f2a3c7814ca4f",
+        "https://www.ftvlive.com/sqsp-test/2026/11/10/anchor-side-boob"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzunvv3SHz1mekN7XS7emnz7Yu7dOb_TA3PY35tWIp8C9KIe6GKD1qfrqG5EM",
+      "image_credit": "New York Post",
+      "news": [
+        {
+          "url": "https://nypost.com/2026/11/11/media/wplg-anchor-jacey-birch-flashes-side-boob-in-festival-pics/",
+          "title": "Miami TV anchor flashes side boob in racy festival pics — after boss blasted ‘cringeworthy’ social media posts",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzunvv3SHz1mekN7XS7emnz7Yu7dOb_TA3PY35tWIp8C9KIe6GKD1qfrqG5EM"
+        },
+        {
+          "url": "https://www.news.com.au/lifestyle/real-life/news-life/tv-news-anchor-sparks-backlash-over-bikini-photos-despite-bosss-strict-ban/news-story/aa35083d2300c654e53f2a3c7814ca4f",
+          "title": "‘Not a Kardashian’: Journo’s bikini pic angers",
+          "publisher": "News.com.au",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6hXa4ZKIAXjgYzeNq6YvEHmWhxQmSZTNfW-6OUiM8i6yCepZ3ca6eg_ZMClQ"
+        },
+        {
+          "url": "https://www.ftvlive.com/sqsp-test/2026/11/10/anchor-side-boob",
+          "title": "Anchor Side Boob",
+          "publisher": "FTVLive",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNfDXFtdu7M38_wO9lvj4DeUmGoXqrKOECnPMDtJdDD0O7UoLlZBm2PPCn9Z4"
+        }
+      ]
+    },
     {
       "query": "polar vortex el niño winter weather",
       "approx_searches": "500+",
@@ -82,8 +257,8 @@
       "published_at": "2026-11-12T12:20:00Z",
       "related_news_urls": [
         "https://www.chicagotribune.com/2026/11/11/daily-horoscope-for-november-12-2026/",
-        "https://www.oregonlive.com/advice/2026/11/todays-horoscope-taurus-take-a-back-seat-and-observe-nov-12-2026.html",
-        "https://www.thecut.com/article/daily-horoscopes-by-madame-clairevoyant-november-12-2026.html"
+        "https://www.mercurynews.com/2026/11/12/horoscopes-november-12-2026-ryan-gosling-choose-to-use-your-skills/",
+        "https://www.ctinsider.com/horoscope/article/horoscope-thursday-11-12-26-georgia-nicols-22515351.php"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyyP8aeo0B3SWQfMQVrGcd2e0KCMzT9YdlS9Cflt58rEoB1JxR7_qtipW4AyY",
       "image_credit": "Chicago Tribune",
@@ -96,29 +271,29 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyyP8aeo0B3SWQfMQVrGcd2e0KCMzT9YdlS9Cflt58rEoB1JxR7_qtipW4AyY"
         },
         {
-          "url": "https://www.oregonlive.com/advice/2026/11/todays-horoscope-taurus-take-a-back-seat-and-observe-nov-12-2026.html",
-          "title": "Today’s horoscope: Taurus - Take a back seat and observe (Nov. 12, 2026)",
-          "publisher": "OregonLive.com",
+          "url": "https://www.mercurynews.com/2026/11/12/horoscopes-november-12-2026-ryan-gosling-choose-to-use-your-skills/",
+          "title": "Horoscopes November 12, 2026: Ryan Gosling, choose to use your skills",
+          "publisher": "The Mercury News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTA8LfnxhH3q8OxQvWB4VUIQzvj3EHOvISJBa3smzWVypHv0eZsPKFjaPdirrs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwtyvKgHv0PdOXQdxOennX3P4MzJuZAVjaPLztKtH-0E9RCmShyr3Q9uxHcAQ"
         },
         {
-          "url": "https://www.thecut.com/article/daily-horoscopes-by-madame-clairevoyant-november-12-2026.html",
-          "title": "Your Daily Horoscope by Madame Clairevoyant: November 12, 2026",
-          "publisher": "The Cut",
+          "url": "https://www.ctinsider.com/horoscope/article/horoscope-thursday-11-12-26-georgia-nicols-22515351.php",
+          "title": "Horoscope for Thursday, 11/12/26 by Georgia Nicols",
+          "publisher": "CT Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVR3oKO21NfntqgMrNV9DhmSi8WKC3CjeygrMHMIgfxZ0M5x-dsIJciSF9M7k"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNtJ68KFZzTv6rsNyazH01h06Qo_EwgzYokpk1gOr8dFzGt8z4aS-Y2xWSBKs"
         }
       ]
     },
     {
       "query": "alex michelsen",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-12T12:10:00Z",
       "related_news_urls": [
         "https://www.atptour.com/en/video/hot-shot-kecmanovic-goes-this-way-then-that-in-superb-stockholm-2026-play",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/hewitt-vs-santillan-nov-12-2026/",
-        "https://www.bleachernation.com/picks/2026/11/08/rinderknech-vs-kecmanovic-prediction-at-the-stockholm-open-tuesday-november-10/"
+        "https://www.thestatszone.com/arthur-rinderknech-vs-miomir-kecmanovic-preview-prediction-2026-stockholm-open-first-round-237309",
+        "https://www.skysports.com/tennis/watch/5481892268268101112/bybit-stockholm-open-2026"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTilDkxYtEPlbcOK3F2yrYyKU6N9-92s-UFpNK8kjloPWiKjoeYvHrhmqyAzmo",
       "image_credit": "ATP Tour",
@@ -131,18 +306,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTilDkxYtEPlbcOK3F2yrYyKU6N9-92s-UFpNK8kjloPWiKjoeYvHrhmqyAzmo"
         },
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/hewitt-vs-santillan-nov-12-2026/",
-          "title": "November 12, 2026: Hewitt vs Santillan Tennis Prediction Market",
-          "publisher": "Robinhood",
+          "url": "https://www.thestatszone.com/arthur-rinderknech-vs-miomir-kecmanovic-preview-prediction-2026-stockholm-open-first-round-237309",
+          "title": "Arthur Rinderknech vs Miomir Kecmanovic Preview & Prediction | 2026 Stockholm Open | First Round",
+          "publisher": "The Stats Zone",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSW2CjSg6xL4qeroZhPSyRVxrDJ28-EFBZlznmLXP5P4PmuNiZXSYBQl0h-8k8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe3aNFqClqjKj0-Q5VtszZvxgyCofuun84t1cjxDT2vN5uDi1zj_QZGKQp62I"
         },
         {
-          "url": "https://www.bleachernation.com/picks/2026/11/08/rinderknech-vs-kecmanovic-prediction-at-the-stockholm-open-tuesday-november-10/",
-          "title": "Rinderknech vs. Kecmanovic Prediction at the Stockholm Open – Tuesday, November 10",
-          "publisher": "Bleacher Nation",
+          "url": "https://www.skysports.com/tennis/watch/5481892268268101112/bybit-stockholm-open-2026",
+          "title": "Sports News, Transfers, Scores | Watch Live Sport",
+          "publisher": "Sky Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS63VFWscMitFCQmtdYcJ8gSlDYJ1Stc16ubYT2DAxd0Mm6ytzcAPSVc8mcwL4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTX0LhVSUxH57CpZZTQJ1E7brEWdVhbsjav05mED-OpsMsr2d4c47-GVaKEstA"
         }
       ]
     },
@@ -178,181 +353,6 @@
           "publisher": "Miami Herald",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1-68c0QA5KgxznB2T5l5WLzMIHaphn3k_T6fQB8sxgGFOxdBcQctLYrAGk0I"
-        }
-      ]
-    },
-    {
-      "query": "stockholm open",
-      "approx_searches": "100+",
-      "published_at": "2026-11-12T12:10:00Z",
-      "related_news_urls": [
-        "https://www.tvmatchen.nu/sport/tennis/stockholm-open-kvartsfinaler-2026/",
-        "https://www.realitytopp.se/nyhet/tv4play-tv4-forlanger-med-atp-touren-till-2029-nu-borjar-stockholm-open",
-        "https://www.sverigesradio.se/artikel/rune-raddade-stockholm-open-stormatch-vantar"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqukEhiJ3ylKQzNmHDEAQaSqVnK_tP-dLoZ9FatQbvRzqo2Q5om97SS1WKrGw",
-      "image_credit": "TVmatchen.nu",
-      "news": [
-        {
-          "url": "https://www.tvmatchen.nu/sport/tennis/stockholm-open-kvartsfinaler-2026/",
-          "title": "Stockholm Open: Dagens kvartsfinaler och matchtider",
-          "publisher": "TVmatchen.nu",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqukEhiJ3ylKQzNmHDEAQaSqVnK_tP-dLoZ9FatQbvRzqo2Q5om97SS1WKrGw"
-        },
-        {
-          "url": "https://www.realitytopp.se/nyhet/tv4play-tv4-forlanger-med-atp-touren-till-2029-nu-borjar-stockholm-open",
-          "title": "TV4 förlänger med ATP-touren till 2029 – nu börjar Stockholm Open",
-          "publisher": "Realitytopp",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ44PXtM93vQ-NHmWKsogDHegsb5uofSZuoDtuLdgkEAbHDNoX-rV8SP-5qnFM"
-        },
-        {
-          "url": "https://www.sverigesradio.se/artikel/rune-raddade-stockholm-open-stormatch-vantar",
-          "title": "Rune ”räddade” Stockholm Open – stormatch väntar",
-          "publisher": "Sveriges Radio",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRR1VNcoVl7e3YcvTKydg2vXeC_eAwieAUdM2Kw3CV6-_HSz08a2Mu5c79cggU"
-        }
-      ]
-    },
-    {
-      "query": "trump administration congressional probe warning",
-      "approx_searches": "500+",
-      "published_at": "2026-11-12T12:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/11/us/politics/trump-democrats-congress-oversight-committee.html",
-        "https://newrepublic.com/article/217892/trump-will-scharf-robert-garcia",
-        "https://www.cnn.com/2026/11/11/politics/trump-democrats-investigations-robert-garcia"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTCT-eWrVa1cTKjxYXeyimkaZw6bjF6Xm4-rzN7lTeCwNCO7VOMX5c4SwTOuE",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/11/us/politics/trump-democrats-congress-oversight-committee.html",
-          "title": "White House Threatens Congress, Saying Aggressive Investigations Could Be Crime",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTCT-eWrVa1cTKjxYXeyimkaZw6bjF6Xm4-rzN7lTeCwNCO7VOMX5c4SwTOuE"
-        },
-        {
-          "url": "https://newrepublic.com/article/217892/trump-will-scharf-robert-garcia",
-          "title": "The Trump White House Has No Clue How Congress Works",
-          "publisher": "The New Republic",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3YFfuV-M3Hbiq2h8VfadXh_RwjTgvESyVXLGBBDk0sXqJV_n8op_YZLMEGRs"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/11/politics/trump-democrats-investigations-robert-garcia",
-          "title": "The Trump team’s hypocrisy reaches new levels with warning letter to Democrats",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA64Lfdx5aIMrINpjzBZvFy8sH_mlThrU6ySudIMGC-gwv7gzyGVowFtFVlDI"
-        }
-      ]
-    },
-    {
-      "query": "nbis earnings",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-12T12:00:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/technology/ai/articles/nebius-group-nbis-rocketing-15-233134155.html",
-        "https://www.barrons.com/articles/nebius-earnings-stock-price-9f5028d2",
-        "https://www.cnbc.com/video/2026/11/11/options-action-nebius-reports-tomorrow-morning.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyFmVW4NQ5dSuZyCejjBcf8VP_9QS3723G7am2ZBu18gY9s1LVAHcgFRzKENw",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/technology/ai/articles/nebius-group-nbis-rocketing-15-233134155.html",
-          "title": "Nebius Group (NBIS) is Rocketing 15% Higher — Here’s What Could Move Shares Next",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyFmVW4NQ5dSuZyCejjBcf8VP_9QS3723G7am2ZBu18gY9s1LVAHcgFRzKENw"
-        },
-        {
-          "url": "https://www.barrons.com/articles/nebius-earnings-stock-price-9f5028d2",
-          "title": "Nebius Stock Jumps Ahead of Earnings. CoreWeave Gives It a Lift.",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzj3RFLFHSHHVN6QI8ZwN8bBDxPyJ_SSehldc69lKWJ5SO5nthvYA8btCBTA0"
-        },
-        {
-          "url": "https://www.cnbc.com/video/2026/11/11/options-action-nebius-reports-tomorrow-morning.html",
-          "title": "Options Action: Nebius reports tomorrow morning",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT94DCLoRQsOUx7-4GoVJbuwL5v9nPGLlbOxWfq8b_BjLSbZnTG0I-RoduCp6k"
-        }
-      ]
-    },
-    {
-      "query": "south park we be clubbin'",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-12T12:00:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/tv-and-radio/2026/nov/12/south-park-episode-5-world-of-club-sports",
-        "https://variety.com/2026/tv/news/south-park-craig-tweek-1236945874/",
-        "https://www.hollywoodreporter.com/tv/tv-features/south-park-tweek-craig-heated-rivalry-season-29-1236753617/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLzaxkwtDE1DfO3KkluAtyeJ02ecSRozVQWSp-KOR8CSh9jUIX_DbNV50gHHU",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/12/south-park-episode-5-world-of-club-sports",
-          "title": "South Park takes on the expensive, confusing world of club sports – with a nod to Heated Rivalry",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLzaxkwtDE1DfO3KkluAtyeJ02ecSRozVQWSp-KOR8CSh9jUIX_DbNV50gHHU"
-        },
-        {
-          "url": "https://variety.com/2026/tv/news/south-park-craig-tweek-1236945874/",
-          "title": "‘South Park’ Brings Back Craig and Tweek for ‘Heated Rivalry’-Inspired Episode to Celebrate the Blue Wave",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaBvIqatq9bVI7g0GN0Min6sR8_3qFN7cYsc7uUpt_K17CwP8hm8o-wEr945A"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/tv/tv-features/south-park-tweek-craig-heated-rivalry-season-29-1236753617/",
-          "title": "‘South Park’ Gives Its Fan-Favorite Couple Their Own ‘Heated Rivalry’",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtuOoMC4SRRrqv6RmUswtCDRY4gR4HuvJ3Q5HvH3A0I5NA_pSBSMhEYMPEUfc"
-        }
-      ]
-    },
-    {
-      "query": "supplemental nutrition assistance program",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-12T12:00:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/10/trump-administration-moves-to-cut-food-stamps-for-6point3-million-people.html",
-        "https://abcnews.com/Politics/trump-administration-moves-drop-millions-snap-proposal/story?id=138031618",
-        "https://www.cnn.com/2026/11/10/politics/food-stamps-snap-benefits-proposed-rule"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNS283YXwXDnSnC-Q61SuR2-n5d30kbr4i6O5kkk8G-hbhwGj5XsnHiSojfgA",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/10/trump-administration-moves-to-cut-food-stamps-for-6point3-million-people.html",
-          "title": "Trump administration moves to cut food stamps for 6.3 million people",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNS283YXwXDnSnC-Q61SuR2-n5d30kbr4i6O5kkk8G-hbhwGj5XsnHiSojfgA"
-        },
-        {
-          "url": "https://abcnews.com/Politics/trump-administration-moves-drop-millions-snap-proposal/story?id=138031618",
-          "title": "Trump administration moves to drop millions from SNAP food assistance under proposal",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNqYMbwJtQYs_3hDp_rwm6E9zKroNIwVn8P1AmWRDlEZqjzs1u-a9LuJ07HPE"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/10/politics/food-stamps-snap-benefits-proposed-rule",
-          "title": "Nearly one in five food stamp recipients could lose benefits under Trump proposal",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUOJoUNQi2ilzgGAouI7qRRmtgAgV2FVIMe3LxJ_lWxfyhGnn2JugmWR2Vgf4"
         }
       ]
     }
