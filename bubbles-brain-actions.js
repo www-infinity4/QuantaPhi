@@ -248,7 +248,25 @@ function requestPlan(request,repository){
 function executionMessage(execution={},deduplicated=false,status='ready'){
  if(deduplicated&&!execution.status)return ['complete','deployed_verified'].includes(status)?'This request already has a saved result. Open its progress to review it.':'This request is already saved. Following its progress without creating duplicate work.';
  if(execution.status==='queued_for_runner')return 'Your request is saved and the build runner has been requested. Progress will appear here as it starts.';
- if(execution.status==='job_not_dispatchable')return 'Your request is saved. The runner is waiting for a prerequisite; its progress will explain what is needed.';
+ if(execution.status==='job_not_dispatchable'){
+  // Server-calculated admission codes are not proof that the executor ran.
+  // Do not echo unknown or untrusted upstream details into owner chat.
+  const blockers={
+   dependency_pending:'A required earlier job is still pending. Verify its result before retrying this job.',
+   no_matching_runner_adapter:'No matching authenticated repository runner is available. Check the existing Brain executor configuration.',
+   owner_decision_required:'An owner decision or security approval is required. The runner will not bypass it.',
+   technical_source_evidence_required:'Technical source evidence is required before the runner can claim this job.',
+   repository_lease_active:'Another runner holds the repository lease. Check its actual completion or expiry.',
+   runner_backoff:'An earlier attempt is subject to a retry backoff. The saved job remains pending.',
+   alarm_backoff:'The retry timer has not elapsed. The saved job remains pending.',
+   commit_verification_required:'An earlier source commit requires independent verification before another claim.',
+   invalid_job_scope:'The saved job lacks a valid repository or engineering instruction. Inspect its original scope.'
+  };
+  const reason=typeof execution.reason==='string'?execution.reason:'';
+  const detail=Object.hasOwn(blockers,reason)?blockers[reason]:
+   'The runner did not admit this job. Open its authenticated progress record for the exact blocker.';
+  return 'Your request is saved, but no source execution has been verified. '+detail;
+ }
  if(execution.status==='no_pending_jobs')return 'Your request is saved. Checking whether its jobs have already been claimed.';
  return 'Your request is saved, but the runner has not confirmed a launch. Robot Brain will retry automatically; you do not need to press Run.';
 }
