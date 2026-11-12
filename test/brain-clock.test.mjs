@@ -59,6 +59,23 @@ test('quick-card browser HTTP route denies guests and wrong origins before forwa
  const huge=await brainWorker.fetch(request('Bearer '+owner,'https://quantaphi.org',' '.repeat(2500)),env);
  assert.equal(huge.status,413);assert.equal(forwarded,1);
 });
+function testStorage(memory, overrides={}) {
+ let transactions=Promise.resolve();
+ const storage={
+  get:async key=>structuredClone(memory.get(key)),
+  put:async(key,value)=>{memory.set(key,structuredClone(value))},
+  delete:async key=>memory.delete(key),
+  list:async({prefix})=>new Map([...memory].filter(([key])=>key.startsWith(prefix))),
+  transaction(callback){
+   const result=transactions.then(()=>callback(storage));
+   transactions=result.catch(()=>{});
+   return result;
+  },
+  ...overrides
+ };
+ return storage;
+}
+
 test('deferred Pink result releases only its own lease and never leaves a stopped runner working',async()=>{
  const repository='www-infinity4/QuantaPhi',runUrl='https://github.com/www-infinity4/Moltnook/actions/runs/42';
  const job={id:'TASK-2',repository,instructions:'Verify source',acceptance:['Tests'],status:'working',progress:{runUrl}};
@@ -67,7 +84,7 @@ test('deferred Pink result releases only its own lease and never leaves a stoppe
  const memory=new Map([[lease.key,{...lease,leaseUntil:Date.now()+60000}],['repository-lease:'+repository,{leaseId:'new-green-lease',leaseUntil:Date.now()+60000}]]);
  let saved;
  const db={prepare:()=>({bind(...values){this.values=values;return this;},async run(){saved=this.values;return {meta:{changes:1}};}})};
- const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)}},{WORK_DB:db,WRITER_OWNER_HASH:'owner'});
+ const clock=new BrainClock({storage:testStorage(memory)},{WORK_DB:db,WRITER_OWNER_HASH:'owner'});
  const context={color_jobs:[job]},fresh={context_json:JSON.stringify(context)};
  await clock.deferSourceReviewLease({lease,runUrl,fresh,context});
  const recorded=JSON.parse(saved[0]).color_jobs[0];assert.equal(recorded.status,'blocked');assert.equal(recorded.progress.blocker,'source_review_waiting_for_repair');
@@ -138,43 +155,34 @@ test('repository engine claims any owner repository while honoring leases and jo
   {id:'base',repository:'www-infinity4/Project401',instructions:'Build new component',dependencies:[],status:'queued'},
   {id:'outside',repository:'other/Project401',instructions:'Build',status:'queued'}
  ]};
- const storage={get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)};
+ const storage=testStorage(memory);
  const clock=new BrainClock({storage},{WRITER_OWNER_HASH:'synthetic-owner',WORK_DB:{prepare:()=>({bind(){return this},all:async()=>({results:[{id:'ticket',request:'Build my project',context_json:JSON.stringify(context)}]}),run:async()=>({meta:{changes:1}})})}});
- const request=()=>new Request('https://clock/runner/claim',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook'})});
- const first=await (await clock.runner(request())).json();assert.equal(first.lease.jobId,'base');assert.equal(first.lease.job.ownerRequest,'Build my project');
- const second=await (await clock.runner(request())).json();assert.equal(second.lease,null);
+ const request=runId=>new Request('https://clock/runner/claim',{method:'POST',body:JSON.stringify({runId,runnerRepository:'www-infinity4/Moltnook'})});
+ const first=await (await clock.runner(request('42'))).json();assert.equal(first.lease.jobId,'base');assert.equal(first.lease.job.ownerRequest,'Build my project');
+ const second=await (await clock.runner(request('43'))).json();assert.equal(second.lease,null);
  const feedback={baseSha:'a'.repeat(40),stage:'test',reason:'describe is not defined'};
- memory.delete('repository-lease:www-infinity4/Project401');
+ memory.delete(first.lease.lockKey);
  memory.set(first.lease.key,{...first.lease,leaseUntil:0,retryAt:0,repairFeedback:feedback});
- const retried=await (await clock.runner(request())).json();assert.deepEqual(retried.lease.job.runtimeFeedback,feedback);
+ const retried=await (await clock.runner(request('44'))).json();assert.deepEqual(retried.lease.job.runtimeFeedback,feedback);
 });
 
-function continuityRunnerFixture(t, entries) {
+function continuityRunnerFixture(t, entries, env={}) {
  const owner='a'.repeat(64), sqlite=new DatabaseSync(':memory:'), memory=new Map();
  t.after(()=>sqlite.close());
  sqlite.exec('CREATE TABLE work_tickets (id TEXT PRIMARY KEY, owner_hash TEXT, repository TEXT, request TEXT, context_json TEXT, status TEXT, created_at INTEGER, updated_at INTEGER)');
+ const createdAt=Date.now();
  for(const [index,job] of entries.entries()){
   const ticketId='ticket-'+index;
   sqlite.prepare('INSERT INTO work_tickets VALUES(?,?,?,?,?,?,?,?)').run(ticketId,owner,job.repository,
-   job.instructions,JSON.stringify({kind:'robot-directions',color_jobs:[job]}),'ready',Date.now()-index,Date.now());
+   job.instructions,JSON.stringify({kind:'robot-directions',color_jobs:[job]}),'ready',createdAt-index,createdAt);
  }
  const db={prepare(sql){return {bind(...values){
   const statement=sqlite.prepare(sql);
   return {first:async()=>statement.get(...values),all:async()=>({results:statement.all(...values)}),
    run:async()=>({meta:{changes:statement.run(...values).changes}})};
  }}}};
- let transactions=Promise.resolve(), claims=Promise.resolve();
- const storage={
-  get:async key=>structuredClone(memory.get(key)),
-  put:async(key,value)=>{memory.set(key,structuredClone(value))},
-  delete:async key=>memory.delete(key),
-  list:async({prefix})=>new Map([...memory].filter(([key])=>key.startsWith(prefix))),
-  transaction(callback){
-   const result=transactions.then(()=>callback(storage));
-   transactions=result.catch(()=>{});
-   return result;
-  }
- };
+ let claims=Promise.resolve();
+ const storage=testStorage(memory);
  const restart=()=>new BrainClock({
   storage,
   blockConcurrencyWhile(callback){
@@ -182,7 +190,7 @@ function continuityRunnerFixture(t, entries) {
    claims=result.catch(()=>{});
    return result;
   }
- },{WORK_DB:db,WRITER_OWNER_HASH:owner});
+ },{WORK_DB:db,WRITER_OWNER_HASH:owner,...env});
  let clock=restart();
  const send=(path,runId,body={})=>clock.fetch(new Request('https://clock.internal'+path,{
   method:'POST',body:JSON.stringify({runId,runnerRepository:'www-infinity4/Moltnook',...body})
@@ -214,7 +222,7 @@ test('one signed run attempt cannot claim a second durable job, and the next run
  assert.equal((await fixture.claim('500')).lease,null);
  assert.equal(fixture.job(1).status,'queued');
  const stopped=await fixture.send('/runner/result','500',{key:first.key,leaseId:first.leaseId,
-  status:'blocked',message:'Test command returned a failure'});
+  status:'blocked',message:'No bounded implementation patch was available'});
  assert.equal(stopped.status,200);
  assert.equal(fixture.job(0).status,'blocked');
  assert.equal((await fixture.claim('500')).lease,null);
@@ -268,6 +276,60 @@ test('crash after a signed publication checkpoint requires readback before any r
  assert.equal(fixture.job(0).progress.blocker,'publication_reconciliation_required');
  assert.equal((await fixture.claim('501')).lease.jobId,'SECOND');
  assert.equal((await fixture.claim('502')).lease,null);
+});
+
+test('crash recovery reads the reviewed source and existing PR before restoring its checkpoint',async t=>{
+ const fixture=continuityRunnerFixture(t,[continuityJob('FIRST'),continuityJob('SECOND')],{GITHUB_TOKEN:'synthetic-read-token'});
+ const first=(await fixture.claim('500')).lease;
+ const baseSha='b'.repeat(40),commitSha='c'.repeat(40),prUrl='https://github.com/www-infinity4/QuantaPhi/pull/70';
+ const contents='Scoped change\n';
+ const hash=Buffer.from(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(contents))).toString('hex');
+ fixture.memory.set('engine-review:'+first.key,{leaseId:first.leaseId,baseSha,hashes:{'index.html':hash}});
+ for(const step of [{phase:'checks_started',attempt:1},{phase:'checks_passed',attempt:1,exitCode:0},{phase:'publication_started',attempt:1}]){
+  assert.equal((await fixture.send('/runner/event','500',{key:first.key,leaseId:first.leaseId,step})).status,200);
+ }
+ let terminal=false,sourceMatches=false,readbackCalls=0;
+ t.mock.method(globalThis,'fetch',async input=>{
+  const url=new URL(input);
+  assert.equal(url.hostname,'api.github.com');
+  readbackCalls++;
+  if(url.pathname.endsWith('/actions/runs/500/attempts/1'))return Response.json({
+   id:500,run_attempt:1,status:terminal?'completed':'in_progress',head_branch:'main',path:'.github/workflows/moltnook-repository-engine.yml'
+  });
+  if(url.pathname.endsWith('/pulls')){
+   assert.equal(url.searchParams.get('head'),'www-infinity4:robot/ticket-0-FIRST/500');
+   return Response.json([{number:70,title:'Robot review: ticket-0/FIRST',html_url:prUrl,
+    head:{ref:'robot/ticket-0-FIRST/500',sha:commitSha,repo:{full_name:first.repository}},
+    base:{repo:{full_name:first.repository},ref:'main'}}]);
+  }
+  if(url.pathname.endsWith('/commits/'+commitSha))return Response.json({
+   sha:commitSha,parents:[{sha:baseSha}],files:[{filename:'index.html'}]
+  });
+  if(url.pathname.endsWith('/contents/index.html')){
+   assert.equal(url.searchParams.get('ref'),commitSha);
+   return new Response(sourceMatches?contents:'wrong revision');
+  }
+  throw Error('Unexpected GitHub path '+url.pathname);
+ });
+ let now=fixture.memory.get(first.key).leaseUntil+1;
+ t.mock.method(Date,'now',()=>now);
+ await fixture.restart();
+ assert.equal(fixture.job(0).progress.blocker,'publication_reconciliation_required');
+ assert.equal(readbackCalls,1);
+ terminal=true;
+ now+=31*60000;
+ await fixture.restart();
+ assert.equal(fixture.job(0).status,'blocked','mismatched source cannot confirm a publication');
+ sourceMatches=true;
+ now+=31*60000;
+ await fixture.restart();
+ const restored=fixture.job(0);
+ assert.equal(restored.status,'committed_unverified');
+ assert.equal(restored.progress.commitSha,commitSha);
+ assert.equal(restored.progress.prUrl,prUrl);
+ assert.equal(restored.progress.browserPassed===true,false);
+ assert.equal(fixture.memory.has('job-quant-index'),false);
+ assert.equal((await fixture.claim('501')).lease.jobId,'SECOND');
 });
 
 test('dispatch and signed claim both wait for a verified dependency, then continue the next job',async t=>{
@@ -427,7 +489,7 @@ test('the owner ticket router is authentication gated and the browser never gene
 
 test('untouched queued work advances ahead of an earlier blocked job, and owner selection is honored',async()=>{
  const memory=new Map(),jobs=[{id:'TASK-1',repository:'www-infinity4/QuantaPhi',instructions:'Old repair',status:'blocked',dependencies:[]},{id:'TASK-2',repository:'www-infinity4/QuantaPhi',instructions:'New repair',status:'queued',dependencies:[]}];
- const storage={get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v),delete:async k=>memory.delete(k)};
+ const storage=testStorage(memory);
  const env={WRITER_OWNER_HASH:'synthetic-owner',WORK_DB:{prepare:()=>({bind(){return this},all:async()=>({results:[{id:'ticket',request:'Fix my cards',context_json:JSON.stringify({color_jobs:jobs})}]}),run:async()=>({meta:{changes:1}})})}};
  const clock=new BrainClock({storage},env),request=()=>new Request('https://clock/runner/claim',{method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook'})});
  const first=await(await clock.runner(request())).json();assert.equal(first.lease.jobId,'TASK-2');
@@ -568,7 +630,7 @@ test('real BrainClock runner skips the stale blocked Quant AI job and claims the
  old.context_json=JSON.stringify({kind:'robot-directions',color_jobs:[{id:'TASK-4',repository:'www-infinity4/QuantaPhi',status:'blocked',queue_priority:95,instructions:'Quant AI presentation export',progress:{summary:'Reader blocker: owner_input_required: Owner must specify exact files, exported signatures and full JSON schema.'}}]});
  modern.context_json=JSON.stringify({kind:'robot-directions',color_jobs:[{id:'TASK-1',repository:'www-infinity4/QuantaPhi',status:'queued',queue_priority:10,instructions:'Fix the verified chat copy button',dependencies:[]}]});
  const memory=new Map();const deleted=[];
- const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v),delete:async k=>{deleted.push(k);memory.delete(k)}}},{WRITER_OWNER_HASH:'owner',WORK_DB:{
+ const clock=new BrainClock({storage:testStorage(memory,{delete:async k=>{deleted.push(k);memory.delete(k)}})},{WRITER_OWNER_HASH:'owner',WORK_DB:{
   prepare(sql){return{bind(...args){this.args=args;return this},all:async()=>({results:[old,modern]}),
    first:async()=>null,run:async()=>({meta:{changes:1}})}}
  }});
@@ -588,7 +650,7 @@ test('real BrainClock honors explicit owner selection for aged but eligible work
  stale.context_json=JSON.stringify({kind:'robot-directions',color_jobs:[{id:'TASK-9',repository:'www-infinity4/Moltnook',status:'queued',queue_priority:0,instructions:'Implement safe local UI source change',dependencies:[]}]});
  const memory=new Map([['requested-next-job',{ticketId:stale.id,jobId:'TASK-9'}]]);
  const deleted=[];
- const clock=new BrainClock({storage:{get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v),delete:async k=>{deleted.push(k);memory.delete(k)}}},{WRITER_OWNER_HASH:'owner',WORK_DB:{
+ const clock=new BrainClock({storage:testStorage(memory,{delete:async k=>{deleted.push(k);memory.delete(k)}})},{WRITER_OWNER_HASH:'owner',WORK_DB:{
   prepare(sql){return{bind(...args){this.args=args;return this},all:async()=>({results:[]}),
    first:async()=>stale,run:async()=>({meta:{changes:1}})}}
  }});
@@ -732,7 +794,7 @@ test('signed Pink review of merged source finishes without a new PR, payout, or 
    async first(){return {context_json:JSON.stringify(original)};},
    async run(){updated=JSON.parse(this.args[0]);updatedStatus=this.args[1];return {meta:{changes:1}};}};
  }};
- const memory=new Map(),storage={get:async k=>memory.get(k),put:async(k,v)=>memory.set(k,v)};
+ const memory=new Map(),storage=testStorage(memory);
  const lease={key:'writer:pink',leaseId:'pink-review-id',runId:'200',engine:true,
   leaseUntil:Date.now()+120000,ticketId:'IW-20261016-706B1494',jobId:'TASK-2',
   repository:repo,job:{...original.color_jobs[1],sourceReview:review}};
@@ -983,7 +1045,7 @@ test('the owner progress endpoint serves only the selected ticket and originatin
 test('the authenticated runner path persists in-flight steps only for its current lease and revision',async()=>{
  const ticketId='IW-20261104-ABCD1234',repository='www-infinity4/QuantaPhi';
  const job={id:'TASK-1',repository,instructions:'Repair the session page',acceptance:['Run the focused check'],status:'working',
-  progress:{runUrl:'https://github.com/www-infinity4/Moltnook/actions/runs/42'}};
+  progress:{runUrl:'https://github.com/www-infinity4/Moltnook/actions/runs/42',runAttempt:2}};
  const revision=Buffer.from(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify({
   instructions:job.instructions,acceptance:job.acceptance,repository})))).toString('hex');
  let context=JSON.stringify({color_jobs:[job]}),writes=0;
@@ -1000,7 +1062,7 @@ test('the authenticated runner path persists in-flight steps only for its curren
  const lease={key:'key',leaseId:'current',runId:'42',runAttempt:2,engine:true,leaseUntil:Date.now()+60000,
   ticketId,jobId:job.id,repository,revision,job};
  const records=new Map([['key',lease]]);
- const clock=new BrainClock({storage:{get:async key=>records.get(key),put:async(key,value)=>records.set(key,value)}},env);
+ const clock=new BrainClock({storage:testStorage(records)},env);
  const send=(phase,attempt,overrides={})=>clock.runner(new Request('https://clock/runner/event',{
   method:'POST',body:JSON.stringify({key:lease.key,leaseId:lease.leaseId,runId:lease.runId,runAttempt:'2',
    runnerRepository:'www-infinity4/Moltnook',agent:'blueberry',step:{phase,attempt},...overrides})

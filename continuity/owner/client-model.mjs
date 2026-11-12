@@ -16,6 +16,8 @@ export function projectLegacyJob(job,now=Date.now()){
  const blocker=txt(p.blocker);
  const runUrl=RUN.test(p.runUrl||'')?p.runUrl:null;
  const commitSha=SHA.test(p.commitSha||'')?p.commitSha:null;
+ const latestRunnerStep=runUrl&&Array.isArray(p.runnerSteps)?
+  txt(p.runnerSteps.findLast(step=>step?.runUrl===runUrl&&(step.runAttempt||1)===(p.runAttempt||1))?.label):'';
  const lastAttempt=date(p.attemptedAt||p.claimedAt);
  const approvalRequired=OWNER_DECISION.test(blocker+' '+txt(p.summary));
  const verifiedDelivery=finished.has(status)&&Boolean(commitSha&&runUrl&&p.testsPassed===true&&p.browserPassed===true&&p.deployedFilesMatched===true);
@@ -26,11 +28,16 @@ export function projectLegacyJob(job,now=Date.now()){
  }else if(['committed_unverified','merged_verified'].includes(status)){
   phase='awaiting_deployment_proof';next='Verify production deployment and browser or device behavior';
  }else if(status==='working'){
-  phase=lastAttempt&&now-Date.parse(lastAttempt)>1200000?'stale_working':'working';
+  const deadline=p.leaseExpiresAt;
+  const stale=runUrl&&Number.isSafeInteger(deadline)&&deadline>0?
+   deadline<=now:lastAttempt&&now-Date.parse(lastAttempt)>1200000;
+  phase=stale?'stale_working':'working';
   next=phase==='stale_working'?'Reconcile existing runner lease before retry':'Read existing runner progress';
  }else if(status==='blocked'){
   phase=approvalRequired?'owner_decision_required':'blocked_recoverable';
-  next=approvalRequired?'Respect original owner authorization and security controls':'Inspect saved blocker and resume through existing signed runner';
+  next=approvalRequired?'Resolve the existing owner or security decision':
+   blocker==='publication_reconciliation_required'?'Check the existing GitHub branch and pull request before retrying':
+   'Inspect saved blocker and resume through existing signed runner';
  }else if(status==='ready'||status==='queued'){
   phase='ready_to_dispatch';next='Use the existing authorized Robot Brain runner';
  }else if(status==='failed'){
@@ -45,7 +52,7 @@ export function projectLegacyJob(job,now=Date.now()){
  if(finished.has(status)&&!commitSha)missingEvidence.push('commit');
  if(finished.has(status)&&!runUrl)missingEvidence.push('workflow run');
  return {jobId:typeof job?.id==='string'?job.id:null,status,phase,next,blocker,
-  runUrl,commitSha,lastAttempt,approvalRequired,deliveryEvidenceRecorded:verifiedDelivery,verifiedDelivery:false,missingEvidence,
+  runUrl,commitSha,lastAttempt,latestRunnerStep,approvalRequired,deliveryEvidenceRecorded:verifiedDelivery,verifiedDelivery:false,missingEvidence,
   instructions:typeof job?.instructions==='string'?job.instructions.slice(0,12000):'',
   acceptance:Array.isArray(job?.acceptance)?job.acceptance.filter(x=>typeof x==='string').slice(0,12).map(x=>x.slice(0,2000)):[]};
 }

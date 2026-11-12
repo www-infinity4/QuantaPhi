@@ -44,6 +44,7 @@ function draw(){
   if(t.request){const detail=elt('details');detail.append(elt('summary','Original request'),elt('p',t.request));box.append(detail);}
   for(const j of t.jobs||[]){
    const group=elt('div',undefined,'line');group.append(elt('span',statuses[j.phase]||'Needs inspection','phase'),elt('small',j.jobId||'Ticket-level state'));box.append(group);
+   if(typeof j.latestRunnerStep==='string'&&j.latestRunnerStep)box.append(elt('p',j.latestRunnerStep));
    box.append(elt('p',j.next));
    if(j.blocker){const d=elt('details');d.append(elt('summary','Why it stopped'),elt('p',j.blocker));box.append(d);}
    if(j.instructions||j.acceptance?.length){
