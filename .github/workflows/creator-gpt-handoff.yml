@@ -1,0 +1,35 @@
+name: Creator GPT handoff, Originals and source-checklist acceptance
+on:
+  pull_request:
+    paths:
+      - 'creator-gpt-handoff.*'
+      - 'creator-public-context.json'
+      - 'my-originals.*'
+      - 'my-originals-core.mjs'
+      - 'quick-card-builder.html'
+      - 'media-star-creator.js'
+      - 'index.html'
+      - 'test/creator-gpt-handoff.test.mjs'
+      - 'test/my-originals.test.mjs'
+      - '.github/workflows/creator-gpt-handoff.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  safe-creator-source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Parse browser and logic modules
+        run: |
+          node --check creator-gpt-handoff-core.mjs
+          node --check creator-gpt-handoff.mjs
+          node --check my-originals-core.mjs
+          node --check my-originals.mjs
+          node --check media-star-creator.js
+          node -e "const c=require('./creator-public-context.json');if(c.schema_version!==1||c.origin!=='https://quantaphi.org')process.exit(1)"
+      - name: Creator handoff, local Originals and existing Developer regressions
+        run: node --test test/creator-gpt-handoff.test.mjs test/my-originals.test.mjs tests/developer-carousel.test.mjs

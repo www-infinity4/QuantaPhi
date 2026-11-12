@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-07",
+  "origin": "https://quantaphi.org",
+  "inventory_state": "source_review_only__not_a_live_capability_receipt",
+  "creator_workflow": {
+    "quick_card_publisher": {
+      "url": "https://quantaphi.org/quick-card-builder.html",
+      "supported": "Creator supplies authorized website, meaningful interaction, preview image and receives an unlisted link after successful publication",
+      "not_verified": "Live end-to-end API publication in this audit"
+    },
+    "media_star": {
+      "url": "https://quantaphi.org/?card=mediaStarCreator",
+      "supported": "Creator can draft an independent media player card from a permitted audio/video URL",
+      "not_verified": "Media Star creator payment backend and copyrighted playback rights"
+    },
+    "code_phi": {
+      "url": "https://quantaphi.org/#developerCarousel",
+      "supported": "Developer cards reference existing builders and searchable official sources",
+      "not_verified": "Authorized deployment of arbitrary public HTML from outside accounts"
+    },
+    "images": {
+      "url": "https://quantaphi.org/?card=phiMediaBuilder",
+      "supported": "Image studio interface is present in repository source",
+      "not_verified": "Successful image generation at this moment"
+    },
+    "originals": {
+      "url": "https://quantaphi.org/",
+      "supported": "Originals public discovery category",
+      "not_verified": "Cross-device account-scoped My Originals creator library"
+    },
+    "wallet": {
+      "url": "https://quantaphi.org/",
+      "supported": "Unified Wallet and token UI exists",
+      "not_verified": "Creator-specific StarCoin unlock, payouts or Quants conversion"
+    },
+    "gpt": {
+      "url": "https://quantaphi.org/creator-gpt-handoff.html",
+      "supported": "Source-grounded brief with optional uploaded user-owned HTML",
+      "not_verified": "Any automatic connection from QuantaPhi account data into independent ChatGPT tools"
+    }
+  },
+  "creator_specialty_guidance": {
+    "jewelry": "Check metal, gemstones, grading and source evidence; no guessed product price or certification",
+    "music": "Reuse authorized creator media URLs, playback rights and signed attribution",
+    "collectibles": "Document creator rights and edition provenance; distinguish proposed coins from real wallet settlement",
+    "websites": "Respect provided HTML as data; produce real responsive accessible HTML and state publishing steps",
+    "general": "Original QuantaPhi Quick Card images, clear controls, mobile access and moderated public discovery"
+  },
+  "access_rules": "Public facts only. No private browsing histories, creator passwords, image albums, wallet balances, Cloudflare bindings or third-party provider tokens. GPT may browse this public page if its tools permit, or user may paste this context. Do not assume extra tools, checkout or publication."
+}
