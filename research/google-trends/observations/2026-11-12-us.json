@@ -3,9 +3,79 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-12T08:31:30.874527Z",
+  "checked_at": "2026-11-12T09:01:46.502138Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "ultron",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T08:20:00Z",
+      "related_news_urls": [
+        "https://www.hollywoodreporter.com/tv/tv-features/visionquest-finale-post-credits-creator-interview-1236753419/",
+        "https://mashable.com/entertainment/scarlet-witch-return-to-mcu",
+        "https://www.marvel.com/articles/tv-shows/visionquest-finale-joe-locke-interviews-ruaridh-mollica-billy-tommy"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQv_1GZsmRo2K8mxqjRP4nrkpMo4gqePj9hoeL6lKteXHIMcmqlfkRf_8g8sTE",
+      "image_credit": "The Hollywood Reporter",
+      "news": [
+        {
+          "url": "https://www.hollywoodreporter.com/tv/tv-features/visionquest-finale-post-credits-creator-interview-1236753419/",
+          "title": "‘VisionQuest’ Creator Terry Matalas Tells All About That Supersized Finale and Post-Credits Surprise",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQv_1GZsmRo2K8mxqjRP4nrkpMo4gqePj9hoeL6lKteXHIMcmqlfkRf_8g8sTE"
+        },
+        {
+          "url": "https://mashable.com/entertainment/scarlet-witch-return-to-mcu",
+          "title": "Scarlet Witch's return is everything that's wrong with the MCU",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTom8a-X_StBiJlZrnEEEIah35qzcx6cRWsQhtRwTvEQJQaq6noInwjZCzzFxc"
+        },
+        {
+          "url": "https://www.marvel.com/articles/tv-shows/visionquest-finale-joe-locke-interviews-ruaridh-mollica-billy-tommy",
+          "title": "Meet the Maximoffs: Joe Locke Interviews His ‘VisionQuest’ Brother Ruaridh Mollica",
+          "publisher": "Marvel.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmI9b_CmpVsgW4VDH62uD-YxHO17BmYqmotTdOMoXmVdrlIMY9wI0iVVLbp9I"
+        }
+      ]
+    },
+    {
+      "query": "yellowjackets",
+      "approx_searches": "100+",
+      "published_at": "2026-11-12T08:20:00Z",
+      "related_news_urls": [
+        "https://pagesix.com/2026/11/11/photos/yellowjackets-season-4-premiere-red-carpet-melanie-lynskey-christina-ricci-jennifer-morrison-and-more/",
+        "https://www.ign.com/videos/yellowjackets-three-seasons-in-four-minutes",
+        "https://www.cbsnews.com/losangeles/video/nia-sondaya-talks-yellowjackets-final-season/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDeJIeA0rRSakhghzPA-bc79YFH_v9_WUFo3BuDRrgDQRthYhpl7-B4p4apSQ",
+      "image_credit": "Page Six",
+      "news": [
+        {
+          "url": "https://pagesix.com/2026/11/11/photos/yellowjackets-season-4-premiere-red-carpet-melanie-lynskey-christina-ricci-jennifer-morrison-and-more/",
+          "title": "‘Yellowjackets’ Season 4 premiere red carpet: Melanie Lynskey, Christina Ricci, Jennifer Morrison and more",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDeJIeA0rRSakhghzPA-bc79YFH_v9_WUFo3BuDRrgDQRthYhpl7-B4p4apSQ"
+        },
+        {
+          "url": "https://www.ign.com/videos/yellowjackets-three-seasons-in-four-minutes",
+          "title": "Yellowjackets: Three Seasons in Four Minutes",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy5hvReB6Ongydc3DgwmcUcUN7xFmsIrGsbxULifpnN3U-bKK1_a9JwHXifxo"
+        },
+        {
+          "url": "https://www.cbsnews.com/losangeles/video/nia-sondaya-talks-yellowjackets-final-season/",
+          "title": "Nia Sondaya talks \"Yellowjackets\" final season",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVBvkZC-SGhhALebtUcfSJBaK08oxF5LO_SZOC4Py3RPJGn3pEheZwDsMIqWs"
+        }
+      ]
+    },
     {
       "query": "gta 6 pc",
       "approx_searches": "2000+",
@@ -13,7 +83,7 @@
       "related_news_urls": [
         "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
         "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
-        "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/"
+        "https://mashable.com/entertainment/gta-grand-theft-auto-6-ps5-xbox-differences"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZll1tApV9Ds71HmTdujHYiNfoBn3zrlJCvS7S-pg_vQYPoW8x18hTe8WUCZg",
       "image_credit": "Rockstar Games",
@@ -33,17 +103,17 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk"
         },
         {
-          "url": "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/",
-          "title": "Pre-load Grand Theft Auto VI on PS5 starting today",
-          "publisher": "PlayStation.Blog",
+          "url": "https://mashable.com/entertainment/gta-grand-theft-auto-6-ps5-xbox-differences",
+          "title": "'GTA 6' on PS5 vs. Xbox: What we know",
+          "publisher": "Mashable",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmQPZtB1cfmtJ8v-9159sSJpw2Cr8v495zAc5tM6Spqsus45lZErGPllHDXDY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQv8S9fkHNrXf6pYMlXleXLtqIOq8hcFZrsH7KeO1eKw9gwWBPYvW8V9DFIih4"
         }
       ]
     },
     {
       "query": "黄仁勋",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-12T08:00:00Z",
       "related_news_urls": [
         "https://cn.nytimes.com/business/20261111/alice-huang-megaspeed-nvidia-jensen-huang/",
@@ -113,36 +183,36 @@
     },
     {
       "query": "dhs proposed h-1b extension rule",
-      "approx_searches": "200+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-12T07:50:00Z",
       "related_news_urls": [
-        "https://www.forbes.com/sites/stuartanderson/2026/11/10/immigration-lawsuit-challenges-dhs-on-student-internships/",
-        "https://stanforddaily.com/2026/11/10/assu-international-student-roundtable/",
-        "https://www.law360.com/employment-authority/articles/2547284/mass-judge-probes-impact-of-dhs-student-internship-rules"
+        "https://www.rnlawgroup.com/how-to-oppose-dhss-proposal-to-eliminate-the-60-day-grace-period-free-comment-template-included/",
+        "https://www.fragomen.com/insights/comment-on-dhs-proposal-to-eliminate-the-60-day-grace-period.html",
+        "https://timesofindia.indiatimes.com/technology/tech-news/us-government-is-proposing-uscis-to-bring-a-new-rule-that-could-mean-thousands-of-employees-on-h-1b-visa-losing-their-visa-approval/articleshow/135755319.cms"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRe10xsBD8YHXdw9Wj2Px6LXXwr5lqdftSG4mF_yAG75-PUfDR_q_3sUemFjL8",
-      "image_credit": "Forbes",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEiYgzIqpGR1XLWXyLgpApOnVcO8MJEuifEF30dYUrhRZrBkLY9aPEYWBU01E",
+      "image_credit": "Reddy Neumann Brown PC",
       "news": [
         {
-          "url": "https://www.forbes.com/sites/stuartanderson/2026/11/10/immigration-lawsuit-challenges-dhs-on-student-internships/",
-          "title": "Immigration Lawsuit Challenges DHS For Restricting Student Internships",
-          "publisher": "Forbes",
+          "url": "https://www.rnlawgroup.com/how-to-oppose-dhss-proposal-to-eliminate-the-60-day-grace-period-free-comment-template-included/",
+          "title": "How to Oppose DHS’s Proposal to Eliminate the 60-Day Grace Period (Free Comment Template Included)",
+          "publisher": "Reddy Neumann Brown PC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRe10xsBD8YHXdw9Wj2Px6LXXwr5lqdftSG4mF_yAG75-PUfDR_q_3sUemFjL8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEiYgzIqpGR1XLWXyLgpApOnVcO8MJEuifEF30dYUrhRZrBkLY9aPEYWBU01E"
         },
         {
-          "url": "https://stanforddaily.com/2026/11/10/assu-international-student-roundtable/",
-          "title": "ASSU international student roundtable coincides with federal court hearing on internship eligibility",
-          "publisher": "The Stanford Daily",
+          "url": "https://www.fragomen.com/insights/comment-on-dhs-proposal-to-eliminate-the-60-day-grace-period.html",
+          "title": "Comment on DHS Proposal to Eliminate the 60-day Grace Period",
+          "publisher": "Fragomen",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkFGKHpEndwoL4eCGO5kmVRw4kp1u-zFLKfNvIem0L1iZQTkDX5ypC_exFi8I"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKk6FgVlr0BUpoPKzmsvhE2U85E9HkT464VmWAV98OOPIUmQdsnF0H6MY4yA"
         },
         {
-          "url": "https://www.law360.com/employment-authority/articles/2547284/mass-judge-probes-impact-of-dhs-student-internship-rules",
-          "title": "Mass. Judge Probes Impact Of DHS Student Internship Rules",
-          "publisher": "Law360",
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/us-government-is-proposing-uscis-to-bring-a-new-rule-that-could-mean-thousands-of-employees-on-h-1b-visa-losing-their-visa-approval/articleshow/135755319.cms",
+          "title": "US government is proposing USCIS to bring a new rule that could mean thousands of employees on H-1B visa",
+          "publisher": "The Times of India",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC2YQ0ONK3hXAc-V2GnC-blnCokJRRCotoCqzEcqe2m-kBtBLrRfZQzP9wYQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJb4_rdydfLkZEKRM55CttEs_OWSk3R8nBPDm1i7sAFU6QdGKs27AGd2xuYYQ"
         }
       ]
     },
@@ -245,7 +315,7 @@
     },
     {
       "query": "sasha obama",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-12T07:40:00Z",
       "related_news_urls": [
         "https://www.harpersbazaar.com/celebrity/latest/a74386831/malia-sasha-obama-fall-dressing-los-angeles-street-style-photos-dinner-barack/",
@@ -275,76 +345,6 @@
           "publisher": "Teen Vogue",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBcYQvZ002lLb7wfcanyAzWcv6KNFm09FdPXS0WKHCKy22Yoa1L5LZZi6--vs"
-        }
-      ]
-    },
-    {
-      "query": "a24",
-      "approx_searches": "100+",
-      "published_at": "2026-11-12T07:40:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/film/box-office/you-can-see-everything-second-highest-grossing-documentary-north-america-box-office-1236942385/",
-        "https://hypebeast.com/2026/11/a24-you-can-see-everything-second-highest-grossing-non-music-documentary-north-america-record-news",
-        "https://www.imdb.com/news/ni66101548/?ref_=ttnw_art_perm"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTv3VmTxMzAN7ZmhUpPH5_Qna5og5aF9PZXRqsbhjK4qb9usyNpwGluPOH2U-g",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/film/box-office/you-can-see-everything-second-highest-grossing-documentary-north-america-box-office-1236942385/",
-          "title": "Box Office: ‘You Can See Everything’ Becomes Second-Biggest Doc Ever in North America With $80 Million",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTv3VmTxMzAN7ZmhUpPH5_Qna5og5aF9PZXRqsbhjK4qb9usyNpwGluPOH2U-g"
-        },
-        {
-          "url": "https://hypebeast.com/2026/11/a24-you-can-see-everything-second-highest-grossing-non-music-documentary-north-america-record-news",
-          "title": "'You Can See Everything' Becomes Second-Highest Grossing Non-Music Documentary in North America",
-          "publisher": "Hypebeast",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRC9LIAbkx133HhrbxxPE8zIqQgcc22zbmLf1yynXeFiGhMS0emvD-aJXqStxU"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66101548/?ref_=ttnw_art_perm",
-          "title": "‘You Can See Everything’ Turns a Secretly Made Elizabeth Holmes Documentary Into a Box Office Phenomenon",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTE8Vf8qLuh-EM8SxitHVjFJtRSEA7RpqQT8NrucjTa4TXyJ3_EgSF9OfmZrHE"
-        }
-      ]
-    },
-    {
-      "query": "ps6",
-      "approx_searches": "100+",
-      "published_at": "2026-11-12T07:30:00Z",
-      "related_news_urls": [
-        "https://www.indy100.com/gaming/ps6-release-date-price-live-2678366661",
-        "https://en.gamegpu.com/news/zhelezo/v-seti-poyavilas-informatsiya-o-podgotovke-prezentatsii-konsoli-playstation-6",
-        "https://www.neoteo.com/en/sony-reportedly-says-ps6-development-is-on-schedule"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3K4yPezlv-RO7yd34k8pn1ZKz8qkS8Ji0w2I6g5CkofTH7It_MJzpT_I5nHc",
-      "image_credit": "Indy100",
-      "news": [
-        {
-          "url": "https://www.indy100.com/gaming/ps6-release-date-price-live-2678366661",
-          "title": "PS6 LIVE: Next-gen PlayStation plans official update from Sony",
-          "publisher": "Indy100",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3K4yPezlv-RO7yd34k8pn1ZKz8qkS8Ji0w2I6g5CkofTH7It_MJzpT_I5nHc"
-        },
-        {
-          "url": "https://en.gamegpu.com/news/zhelezo/v-seti-poyavilas-informatsiya-o-podgotovke-prezentatsii-konsoli-playstation-6",
-          "title": "Information about preparations for the PlayStation 6 console presentation has surfaced online.",
-          "publisher": "GameGPU",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQ3A8_o03r3dCuDszmFqrj26hFHOq9t7svvcv-hzAhYS1C5WLuLqoszn7gZJg"
-        },
-        {
-          "url": "https://www.neoteo.com/en/sony-reportedly-says-ps6-development-is-on-schedule",
-          "title": "PS6 development progress: Sony's reported update",
-          "publisher": "NeoTeo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlvIdv--8MSHQFeBkUPAkcFbZHLz8fj29ZhHkGNt_hJAXMTDEiEWfUVQmdoAk"
         }
       ]
     }
