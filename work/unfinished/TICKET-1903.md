@@ -6,25 +6,25 @@ state: source_tested
 dot: "🟡"
 progress_percent: 30
 progress_basis: "Source inventory, confirmed-answer bridge and browser fixtures exist; live AI, two-account, review, release and Android acceptance remain open"
-sessions_spent: 2
+sessions_spent: 3
 sessions_remaining_estimate: unknown
 agent: "GPT-6 GitHub connector session"
 lease_id: null
 lease_expires_at: null
 task_session_id: null
 fence: null
-last_observed_at_utc: null
+last_observed_at_utc: 2026-11-12T02:14:32Z
 repo: www-infinity4/QuantaPhi
 branch: repair/zeus-ai-live-chat-light-20261102
 head_sha: null
 pr: 1484
 tests: ["test/zeus-live-chat-contract.test.mjs", "test/zeus-quest-browser.spec.mjs"]
-ci: ["https://github.com/www-infinity4/QuantaPhi/actions/runs/42988461945"]
+ci: ["https://github.com/www-infinity4/QuantaPhi/actions/runs/43139906055", "https://github.com/www-infinity4/QuantaPhi/actions/runs/43139905984"]
 merged: false
 deployed: false
 live_verified: false
-blocker: "Real hosted AI answer, independent review, two-user isolation, and browser/Android/Cloudflare acceptance are not verified; #1271 history infrastructure still blocked"
-next_action: "Inspect the exact-head Coliseum browser job and correct any genuine Zeus regressions"
+blocker: "Exact-head history browser tests still fail due intermittent project-title input clearing (5/7); no independent approval, hosted AI, 2-account or physical Android proof; #1271 private D1/R2 not provisioned."
+next_action: "Reproduce unexpected project-title input replacement using DOM/page lifecycle trace, then fix under deterministic RED/GREEN before independent review and real hosted acceptance."
 ---
 
 # #1903 · Zeus complete live AI, identity, private history and Android acceptance
@@ -66,3 +66,11 @@ Inspect exact-head Coliseum CI and independent security review on #1484; verify 
 - Exact-head CI at that merge: https://github.com/www-infinity4/QuantaPhi/actions/runs/42988461945; source proof succeeded, browser outcome and wider regressions still being checked when this checkpoint was written.
 - Shared Bubbles cache revision aligned across first-party entrypoints and pinned tests; existing updated Bubbles code retained.
 - Private D1/R2 history PR #1271 and StarQuest/wallet PR #1270 remain separate guarded drafts. No balance, cookie, account binding, entitlement or provider key changed.
+
+## BUBBLES MERGE SESSION 08 · verified continuation (2026-11-11 CT)
+
+- **Actual branch work:** `2520be69e1fab952ea017df098271ad5519b695b` (direct title Create and Enter handler); `3f984a448e6571a18134023c2fb2cce27e830838`, `62c8eb26a0fa87479b082e095feaad27aec835a3` (Ubuntu 24.04 pinned to allow Chromium to install); `de40f169d289a33d7abde7f56a7cfdc4babda2f5` (explicit form actions / per-tab rehydration); `ec2987f8a6a0d9091064bc2dc254e32735717099`, `93227c75c18413f1de288b767c9459210b0e9804` (browser diagnostics); `bbcae0b6f6cdd4e4313075ec0aa330fc6ee1769a` (capture visible draft before redraw).
+- **Exact-head pre-checkpoint CI:** [Coliseum browser and source proof](https://github.com/www-infinity4/QuantaPhi/actions/runs/43139906055) at `bbcae0b6f6cdd4e4313075ec0aa330fc6ee1769a`: source-proof **PASS**, Zeus quest **10/10 PASS**, local history **5/7 PASS, 2 FAIL**. [Zeus discovery browser](https://github.com/www-infinity4/QuantaPhi/actions/runs/43139905984) **PASS**.
+- **Confirmed blocker:** synthetic test `.fill('Source extraction')` can produce an empty project title and missing sessionStorage draft before clicking Create. UI fails closed with `Give this thread a descriptive title.` Earlier run `43139622470` showed an independent title reload case passing, so failures are variable rather than resolved. Need DOM mutation / event-lifecycle tracing, deterministic RED, then fix; do not disable validation.
+- **Independent review**: no APPROVED review seen; **main merge / deployment / real hosted AI / two-account sign-in / physical Android verification**: none obtained. Old conflicted #1270/#1271 security/infra gates remain. No claim of a real Moltnook owner runner lease, cloud wallet mutation, or production turn response.
+- **Durable GitHub issue receipt:** [#1903 session checkpoint](https://github.com/www-infinity4/QuantaPhi/issues/1903#issuecomment-6812408792). This ticket stays open until real acceptance; this checkpoint commit itself requires CI head reassessment.
