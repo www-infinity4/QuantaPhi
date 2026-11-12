@@ -1,0 +1,28 @@
+name: Infinity Open Browser Bridge policy
+on:
+  pull_request:
+    paths:
+      - 'tools/open-browser-bridge/**'
+      - '.github/workflows/open-browser-bridge-policy.yml'
+  push:
+    paths:
+      - 'tools/open-browser-bridge/**'
+      - '.github/workflows/open-browser-bridge-policy.yml'
+permissions:
+  contents: read
+jobs:
+  policy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax, URL policy and DNS regressions
+        run: |
+          node --check tools/open-browser-bridge/policy.mjs
+          node --check tools/open-browser-bridge/dns-policy.mjs
+          node --check tools/open-browser-bridge/request-policy.mjs
+          node --check tools/open-browser-bridge/browser-bridge.mjs
+          node --test tools/open-browser-bridge/*.test.mjs
