@@ -13,18 +13,18 @@ lease_id: null
 lease_expires_at: null
 task_session_id: null
 fence: null
-last_observed_at_utc: 2026-11-12T02:14:32Z
+last_observed_at_utc: 2026-11-13T08:14:30.098Z
 repo: www-infinity4/QuantaPhi
 branch: repair/zeus-ai-live-chat-light-20261102
-head_sha: null
+head_sha: 22718dcbeeb34f214a440d00b842659b3fbfb7e6
 pr: 1484
-tests: ["test/zeus-live-chat-contract.test.mjs", "test/zeus-quest-browser.spec.mjs"]
-ci: ["https://github.com/www-infinity4/QuantaPhi/actions/runs/43139906055", "https://github.com/www-infinity4/QuantaPhi/actions/runs/43139905984"]
+tests: ["test/zeus-live-chat-contract.test.mjs", "test/zeus-quest-browser.spec.mjs", "test/zeus-session-history-browser.spec.mjs", "test/bubbles-oracle-android-ui.test.mjs"]
+ci: ["https://github.com/www-infinity4/QuantaPhi/actions/runs/43390753366", "https://github.com/www-infinity4/QuantaPhi/actions/runs/43391371454", "https://github.com/www-infinity4/QuantaPhi/actions/runs/43391371466", "https://github.com/www-infinity4/QuantaPhi/actions/runs/43391371572"]
 merged: false
 deployed: false
 live_verified: false
-blocker: "Exact-head history browser tests still fail due intermittent project-title input clearing (5/7); no independent approval, hosted AI, 2-account or physical Android proof; #1271 private D1/R2 not provisioned."
-next_action: "Reproduce unexpected project-title input replacement using DOM/page lifecycle trace, then fix under deterministic RED/GREEN before independent review and real hosted acceptance."
+blocker: "Independent APPROVED review, real hosted Bubbles answer, two-account and physical Android acceptance remain absent; broader PR checks have 10 unrelated Playwright/Ubuntu 26.04 installation failures; #1270/#1271 remain gated."
+next_action: "Obtain independent review of Zeus #1484 and coordinate unrelated CI runner-pin failures; then real hosted model reply and two-account Android verification before guarded merge."
 ---
 
 # #1903 · Zeus complete live AI, identity, private history and Android acceptance
@@ -74,3 +74,13 @@ Inspect exact-head Coliseum CI and independent security review on #1484; verify 
 - **Confirmed blocker:** synthetic test `.fill('Source extraction')` can produce an empty project title and missing sessionStorage draft before clicking Create. UI fails closed with `Give this thread a descriptive title.` Earlier run `43139622470` showed an independent title reload case passing, so failures are variable rather than resolved. Need DOM mutation / event-lifecycle tracing, deterministic RED, then fix; do not disable validation.
 - **Independent review**: no APPROVED review seen; **main merge / deployment / real hosted AI / two-account sign-in / physical Android verification**: none obtained. Old conflicted #1270/#1271 security/infra gates remain. No claim of a real Moltnook owner runner lease, cloud wallet mutation, or production turn response.
 - **Durable GitHub issue receipt:** [#1903 session checkpoint](https://github.com/www-infinity4/QuantaPhi/issues/1903#issuecomment-6812408792). This ticket stays open until real acceptance; this checkpoint commit itself requires CI head reassessment.
+
+## Session 08 · 2026-11-13 RED/GREEN root-cause continuation
+
+- **Reused draft #1484**. No fresh lease, main merge, deployment, wallet or identity mutation. The actual embedded Bubbles route remains `sendMessage(prompt)` and verified terminal-message handling; not a mock AI.
+- **RED diagnostics:** `3c83f35f0db11052e0de24fda87c32971533b20b` logged focus-in then immediate focus-out with no title-input event in intermittent Chromium failures ([43390367926](https://github.com/www-infinity4/QuantaPhi/actions/runs/43390367926)). Regression commit `2e049ea654f41ea9fc6214c6665f8524e92d88fb` explicitly tested that real embedded Bubbles open never steals host form focus; [RED CI 43390753366](https://github.com/www-infinity4/QuantaPhi/actions/runs/43390753366) failed before repair.
+- **GREEN source:** `a42912c929a61cdc7a4e40fa3654e5e5555bd831` prevents embedded Bubbles `toggle(true)` from auto-focusing its child input. `22718dcbeeb34f214a440d00b842659b3fbfb7e6` updates the existing Android source assertion to enforce the stronger embedded guard. Existing standalone Bubbles wide-screen focus is preserved.
+- **Exact source head before this checkpoint commit:** `22718dcbeeb34f214a440d00b842659b3fbfb7e6`. [Coliseum CI 43391371454](https://github.com/www-infinity4/QuantaPhi/actions/runs/43391371454): source proof pass, Zeus quest browser **10/10 pass**, history + focus browser **8/8 pass**. [Android contract 43391371466](https://github.com/www-infinity4/QuantaPhi/actions/runs/43391371466) and [Zeus discovery browser 43391371572](https://github.com/www-infinity4/QuantaPhi/actions/runs/43391371572): both pass. No hosted-model or physical Android proof is inferred.
+- **Broader CI gate:** 76 PR-associated workflows last inspected: 65 successes, 10 unrelated browser dependency/setup failures consistent with GitHub Ubuntu 26.04 + Playwright 1.56.1 not supporting chromium, 1 pending. The CI integration owner must coordinate supported runner pinning without Session 08 editing other lanes' workflows.
+- **Release not authorized yet:** No independent approving review, no clean full CI, no real hosted AI/account-isolation/physical Android acceptance, no Cloudflare deployment, and #1270/#1271 private-history infrastructure and security conditions remain blocked. Game/emulator/coin housing PRs and their assets are separate and unchanged.
+- Durable [issue comment receipt](https://github.com/www-infinity4/QuantaPhi/issues/1903#issuecomment-6847717737). A source-only green path is not completed acceptance; this ticket stays open.
