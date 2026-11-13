@@ -75,7 +75,7 @@ jobs:
           node --check oracle-card-deck.js
           node --test tests/developer-carousel.test.mjs tests/developer-discovery.test.mjs tests/developer-catalog-import.test.mjs tests/developer-catalog-workflow.test.mjs tests/developer-catalog-snapshot.test.mjs tests/developer-indexed-search.test.mjs
   developer-browser:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

@@ -51,9 +51,10 @@ test('Quanta ledger retains cloud idempotency, and does not count on page refres
  assert.match(cloud,/if\(!r\.ok\)throw new Error/);
 });
 
-test('Story Writer is light blue and has separate star, collect and share payout buttons',()=>{
+test('Story Writer and Image Studio remain separate blue cards with payout actions',()=>{
  const css=file('phi-story-writer.css'),image=file('phi-image-builder.css'),writer=file('phi-story-writer.js');
- assert.match(image,/background:linear-gradient\(155deg,#e0f1ff,#afd7fa\)/);
+ assert.match(image,/--pi-blue:#1769b6;/,'Image Studio retains its own blue theme');
+ assert.match(image,/background:linear-gradient\(135deg,#1769b6,#124682\)/,'Image Studio maintains its blue primary action');
  assert.match(css,/background:linear-gradient\(155deg,#e0f1ff,#afd7fa\)/);
  assert.doesNotMatch(css,/#24133e/);
  for(const id of ['sw-star','sw-collect','sw-share'])assert.match(writer,new RegExp(id));
