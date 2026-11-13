@@ -3,41 +3,146 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T10:31:24.379691Z",
+  "checked_at": "2026-11-13T11:00:49.919272Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "王忠林",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T10:10:00Z",
+      "query": "storm",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-13T10:40:00Z",
       "related_news_urls": [
-        "https://m.sohu.com/a/1101184382_260616?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
-        "https://www.ntdtv.com/gb/2026/11/13/a104150400.html",
-        "https://cn.wsj.com/articles/%E7%BE%8E%E8%81%94%E8%88%AA%E5%B0%86%E7%A6%81%E6%AD%A2ai%E6%9C%BA%E5%99%A8%E4%BA%BA%E9%A2%84%E8%AE%A2%E6%9C%BA%E7%A5%A8-0d318300"
+        "https://www.nytimes.com/2026/11/12/weather/california-storm-west-coast-rain.html",
+        "https://www.sfchronicle.com/weather-forecast/article/live-storm-rain-snow-22527659.php",
+        "https://abc7news.com/live-updates/live-updates-level-2-storm-making-bay-area-rain-winds-dangerous-high-surf-forecast/20037281/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzPUfeLpNA1IIoGfUnGBLjK0fofhfZVufxNjsOq6e90QeEU5zuwmm0EIKXgDg",
-      "image_credit": "Sohu",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUbs9x7TYxJeINOef9MiCeSi6fBasyg-xlj6-g7ycHnr9k56kZPBLwbZzqrPE",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://m.sohu.com/a/1101184382_260616?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
-          "title": "十四届全国人大环境与资源保护委员会副主任委员王忠林被查",
+          "url": "https://www.nytimes.com/2026/11/12/weather/california-storm-west-coast-rain.html",
+          "title": "California Could Face 50-Foot Waves as Storms Slam Its Coast",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUbs9x7TYxJeINOef9MiCeSi6fBasyg-xlj6-g7ycHnr9k56kZPBLwbZzqrPE"
+        },
+        {
+          "url": "https://www.sfchronicle.com/weather-forecast/article/live-storm-rain-snow-22527659.php",
+          "title": "California’s first big storm of season is about to land. Here are latest forecast updates",
+          "publisher": "San Francisco Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq-lO7BcLBaoTJ5O1Wfh_tTE6ntp7HI6OGo8cFFFyal-MvroJpf11DepOQVcM"
+        },
+        {
+          "url": "https://abc7news.com/live-updates/live-updates-level-2-storm-making-bay-area-rain-winds-dangerous-high-surf-forecast/20037281/",
+          "title": "LIVE UPDATES: Bay Area prepares for Level 2 storm; rain, winds and dangerous surf in forecast",
+          "publisher": "ABC7 Bay Area",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWZHWKnTNjmL3uQ2eW4lLpeo7ozeUocb4GK_rfXE5gS_Sp5uzWCCy80MvfK3Y"
+        }
+      ]
+    },
+    {
+      "query": "chip roy",
+      "approx_searches": "100+",
+      "published_at": "2026-11-13T10:30:00Z",
+      "related_news_urls": [
+        "https://thehill.com/homenews/house/6217576-gop-lawmaker-says-party-is-focusing-on-political-power-rather-than-people/",
+        "https://www.foxbusiness.com/video/6407907838112",
+        "https://m.economictimes.com/news/international/world-news/we-got-crushed-in-texas-because-roy-points-finger-at-corrupt-paxton-after-gops-midterm-loss/videoshow/135785887.cms"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQy6QYI3vso8uzj0X9opxOR7bSL1qqFxGppBqQ0wQ2jcRASQXdzvPZXsHz48to",
+      "image_credit": "The Hill",
+      "news": [
+        {
+          "url": "https://thehill.com/homenews/house/6217576-gop-lawmaker-says-party-is-focusing-on-political-power-rather-than-people/",
+          "title": "GOP lawmaker says party is focusing on ‘political power’ rather than people",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQy6QYI3vso8uzj0X9opxOR7bSL1qqFxGppBqQ0wQ2jcRASQXdzvPZXsHz48to"
+        },
+        {
+          "url": "https://www.foxbusiness.com/video/6407907838112",
+          "title": "Republicans in Texas need to regroup over the next four years: Rep Chip Roy",
+          "publisher": "Fox Business",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCJqynhgVuPWg-b80Jpq7upluEkcH43Z9JGCEmXFr65W-p1Y6LE-026zWDvD0"
+        },
+        {
+          "url": "https://m.economictimes.com/news/international/world-news/we-got-crushed-in-texas-because-roy-points-finger-at-corrupt-paxton-after-gops-midterm-loss/videoshow/135785887.cms",
+          "title": "'We got crushed in Texas because…': Roy points finger at 'corrupt' Paxton after GOP's midterm loss",
+          "publisher": "The Economic Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJKHW777UhQxTQz-A9MjYozEvHSmFapWjLEYzj1PVIp6dG6cAK15Y-v92oTLs"
+        }
+      ]
+    },
+    {
+      "query": "avatar seven havens season 2",
+      "approx_searches": "100+",
+      "published_at": "2026-11-13T10:30:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/tv/news/avatar-seven-havens-season-2-release-date-paramount-plus-1236946366/",
+        "https://www.animationmagazine.net/2026/11/avatar-seven-havens-book-2-premiere-set-for-may-on-paramount/",
+        "https://gizmodo.com/avatar-seven-havens-will-return-with-book-2-in-may-2027-2000839306"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEklbh1HPpsj5lyc9-PNDGN7U9kosz40sMDDBPvtnri6Oroe-qgyQVJl06Shc",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/tv/news/avatar-seven-havens-season-2-release-date-paramount-plus-1236946366/",
+          "title": "‘Avatar: Seven Havens’ Sets Season 2 Release Date at Paramount+",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEklbh1HPpsj5lyc9-PNDGN7U9kosz40sMDDBPvtnri6Oroe-qgyQVJl06Shc"
+        },
+        {
+          "url": "https://www.animationmagazine.net/2026/11/avatar-seven-havens-book-2-premiere-set-for-may-on-paramount/",
+          "title": "‘Avatar: Seven Havens’ Book 2 Premiere Set for May on Paramount+",
+          "publisher": "Animation Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQU9DImeD4kciAVqDvzcMhmcB4IZ9DxcaSSQON8mHic2jXXv--kliMZvdxkMxY"
+        },
+        {
+          "url": "https://gizmodo.com/avatar-seven-havens-will-return-with-book-2-in-may-2027-2000839306",
+          "title": "‘Avatar: Seven Havens’ Will Return With Book 2 in May 2027",
+          "publisher": "Gizmodo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShMivV8XY_RVggXDdY0PeY8YBXxhfxsTlz8IKXv2NRUZYG1_-gIh_J3O6NbgE"
+        }
+      ]
+    },
+    {
+      "query": "王忠林",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T10:10:00Z",
+      "related_news_urls": [
+        "https://news.ifeng.com/c/8y1UoHEcS7E",
+        "https://www.sohu.com/a/1101188989_161795?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "https://www.ntdtv.com/gb/2026/11/13/a104150400.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrNOWULGYAXjKwr4mLjHsgk4l3BYOnk05OvuP-Po6rJ1dZSLUKPjRjG-8LRjc",
+      "image_credit": "凤凰网",
+      "news": [
+        {
+          "url": "https://news.ifeng.com/c/8y1UoHEcS7E",
+          "title": "湖北省委原书记王忠林被查",
+          "publisher": "凤凰网",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrNOWULGYAXjKwr4mLjHsgk4l3BYOnk05OvuP-Po6rJ1dZSLUKPjRjG-8LRjc"
+        },
+        {
+          "url": "https://www.sohu.com/a/1101188989_161795?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "title": "十四届全国人大环境与资源保护委员会副主任委员王忠林，被查",
           "publisher": "Sohu",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzPUfeLpNA1IIoGfUnGBLjK0fofhfZVufxNjsOq6e90QeEU5zuwmm0EIKXgDg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLUD351sLO7VOI2zQyZCa2QYHRqdV0lSN4JKRdZpA_OoLLHe5xFhxT0IMA8sk"
         },
         {
           "url": "https://www.ntdtv.com/gb/2026/11/13/a104150400.html",
-          "title": "王忠林出事？傳多處住所被抄 多名家人被帶走",
+          "title": "王忠林出事？传多处住所被抄 多名家人被带走 | 湖北省委书记 | 抄家 | 被调查 | 新唐人电视台",
           "publisher": "新唐人電視台",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8Lr3xhWMrvOO6f3MwQkWURc9sak7345urZQOHsLSZW_qo-mc_FEmfaTsSNgM"
-        },
-        {
-          "url": "https://cn.wsj.com/articles/%E7%BE%8E%E8%81%94%E8%88%AA%E5%B0%86%E7%A6%81%E6%AD%A2ai%E6%9C%BA%E5%99%A8%E4%BA%BA%E9%A2%84%E8%AE%A2%E6%9C%BA%E7%A5%A8-0d318300",
-          "title": "美联航将禁止AI机器人预订机票",
-          "publisher": "华尔街日报中文网",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt0-798y4UFdsMiWZhKngFIIOuZJGEkUgtgUx6u2hlLgqCuQdrjoxS6sGeyjQ"
         }
       ]
     },
@@ -104,8 +209,113 @@
       ]
     },
     {
-      "query": "school closings",
+      "query": "gemini google",
+      "approx_searches": "50000+",
+      "published_at": "2026-11-13T09:50:00Z",
+      "related_news_urls": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+        "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
+        "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgj5oJzDzDkaEqqWzrJumRosv1AIoQ7EsQUgFGMfDEGOcOLym5xBcByIvdtgc",
+      "image_credit": "blog.google",
+      "news": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+          "title": "Introducing Gemini 4 Hydrogen for Agentic Workflows",
+          "publisher": "blog.google",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgj5oJzDzDkaEqqWzrJumRosv1AIoQ7EsQUgFGMfDEGOcOLym5xBcByIvdtgc"
+        },
+        {
+          "url": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
+          "title": "Google rolls out Gemini 4 Hydrogen, finally replacing 3.8 Flash",
+          "publisher": "Ars Technica",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQakc8yh2wqHk6ARF8mjiBUmms78zY5hHAh9UwCMT7inSguJs_505OIvZGT4y0"
+        },
+        {
+          "url": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/",
+          "title": "Google's latest Search upgrade promises better answers to your most complicated questions",
+          "publisher": "TechCrunch",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTn0Y9dmCql-VGmH2DIQz27JJmBPJp5gaEZ1GmOgMbXJ9eKFPTUvtK3Yf5znes"
+        }
+      ]
+    },
+    {
+      "query": "starship flight 15",
+      "approx_searches": "100+",
+      "published_at": "2026-11-13T09:50:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/12/science/spacex-starship-ship-catch-attempt",
+        "https://www.space.com/space-exploration/launches-spacecraft/spacex-launching-historic-double-catch-starship-test-flight-today-watch-it-live",
+        "https://abcnews.com/US/spacex-starship-flight-15-major-step-full-rocket/story?id=138053402"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7wd2UBr_9-aOuy-nyn_ZlNxoaS7tL6Q1WZz4kDzrqGOF-Czf8ii1ZHwgHllY",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/12/science/spacex-starship-ship-catch-attempt",
+          "title": "SpaceX’s next move is chasing the unprecedented ‘holy grail’ of rocketry. Here’s what’s at stake",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7wd2UBr_9-aOuy-nyn_ZlNxoaS7tL6Q1WZz4kDzrqGOF-Czf8ii1ZHwgHllY"
+        },
+        {
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-launching-historic-double-catch-starship-test-flight-today-watch-it-live",
+          "title": "Watch SpaceX attempt a historic Starship launch and double-catch landing today (Nov. 13)",
+          "publisher": "Space",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2k_gr7N4znsc-2eP1UGLeUgWvorxhiRdEO7f2kFVUgV8JHYinb5IHdoDT2mg"
+        },
+        {
+          "url": "https://abcnews.com/US/spacex-starship-flight-15-major-step-full-rocket/story?id=138053402",
+          "title": "SpaceX Starship Flight 15 could be a major step toward full rocket reusability and cheaper missions",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGh13SHO-UqvR6T7qzlveuP4qr6UxZmNGzD60bMzhnTF6GmMe_xDSpZ7ijHMI"
+        }
+      ]
+    },
+    {
+      "query": "matt smith",
       "approx_searches": "200+",
+      "published_at": "2026-11-13T09:40:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/theater/news/adolescence-writer-the-humans-house-of-the-dragon-matt-smith-1236944987/",
+        "https://www.broadwayworld.com/article/Matt-Smith-Will-Lead-World-Premiere-of-THE-HUMANS-in-the-West-End-20261111",
+        "https://www.londontheatre.co.uk/theatre-news/news/matt-smith-to-star-in-jack-thorne-adaptation-of-the-humans-in-2027"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCbfGq94qAyj_ETQD2LIdKff3-n5up3iMFpPdH0MkCA4T-OfhTWTsrAUg1DJ0",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/theater/news/adolescence-writer-the-humans-house-of-the-dragon-matt-smith-1236944987/",
+          "title": "'Adolescence' Writer's 'The Humans' Stars 'House of the Dragon' Actor",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCbfGq94qAyj_ETQD2LIdKff3-n5up3iMFpPdH0MkCA4T-OfhTWTsrAUg1DJ0"
+        },
+        {
+          "url": "https://www.broadwayworld.com/article/Matt-Smith-Will-Lead-World-Premiere-of-THE-HUMANS-in-the-West-End-20261111",
+          "title": "Matt Smith Will Lead World Premiere of THE HUMANS in the West End",
+          "publisher": "BroadwayWorld",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJgpdswEJmHpoDaA7xBOWDr3b3pEyTBRrrCkVX2YSJwycoA7jJAgr4zBKTXkk"
+        },
+        {
+          "url": "https://www.londontheatre.co.uk/theatre-news/news/matt-smith-to-star-in-jack-thorne-adaptation-of-the-humans-in-2027",
+          "title": "Matt Smith to star in Jack Thorne adaptation of 'The Humans' in 2027",
+          "publisher": "London Theatre",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeeqajc9uXalBLQAYiCqwGozpN5eQHi1XTwCuDSGkm8-n0Tja3OZVR-_hVmWk"
+        }
+      ]
+    },
+    {
+      "query": "school closings",
+      "approx_searches": "1000+",
       "published_at": "2026-11-13T09:20:00Z",
       "related_news_urls": [
         "https://www.winknews.com/news/historic-tice-orangewood-schools-in-lee-county-could-close/article_2ca9c4c1-e141-44f2-abea-746a60526bb1.html",
@@ -135,216 +345,6 @@
           "publisher": "WGCU",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjzWVZvOZ1kZxjo4rtvhqm7V6KZfhqKj6zBBkvn3ohshpEw_B8NIljCQL6ta0"
-        }
-      ]
-    },
-    {
-      "query": "lamar odom",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T09:10:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/12/khloe-kardashian-lamar-odom-documentary-reaction/92723786007/",
-        "https://www.eonline.com/news/1438045/khloe-kardashian-says-lamar-odom-is-dead-to-her-after-untold-documentary",
-        "https://pagesix.com/2026/11/12/entertainment/khloe-kardashian-slams-ex-lamar-odom-after-his-comments-on-their-marriage/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HYVbK0QEsYaupEpFct0Vx2IGLYxVDn0m8KHyj-UWQsDKwe8_i_Q36x6-be4",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/12/khloe-kardashian-lamar-odom-documentary-reaction/92723786007/",
-          "title": "Khloé Kardashian says Lamar Odom 'is dead to me' after this 'distasteful' move",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HYVbK0QEsYaupEpFct0Vx2IGLYxVDn0m8KHyj-UWQsDKwe8_i_Q36x6-be4"
-        },
-        {
-          "url": "https://www.eonline.com/news/1438045/khloe-kardashian-says-lamar-odom-is-dead-to-her-after-untold-documentary",
-          "title": "Khloe Kardashian Says Lamar Odom Is Dead to Her After His Controversial Comments",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRNd3XZKdQ9TfEOM8DKTsLp9XL1J9RPzMWha_8XJDgquHsYM7t_EtwWMhAmmQ"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/12/entertainment/khloe-kardashian-slams-ex-lamar-odom-after-his-comments-on-their-marriage/",
-          "title": "Khloé Kardashian issues brutal takedown of ex Lamar Odom after his ‘lame’ comments on their marriage",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_fnvxTWg8A3JsSjuv8PEtT-VpCnwH99uNKHnln0O_AuAUsiMZN0eFkgYyYEg"
-        }
-      ]
-    },
-    {
-      "query": "11",
-      "approx_searches": "100+",
-      "published_at": "2026-11-13T09:00:00Z",
-      "related_news_urls": [
-        "https://www.politico.com/gallery/2026/11/13/the-nations-cartoonists-on-the-week-in-politics-01164446",
-        "https://theweek.com/cartoons/political-cartoons-for-november-11-2026",
-        "https://theweek.com/cartoons/political-cartoons-for-november-10-2026"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXTMfGcwzF0EM2s5jY-Dno52vyRiFLG2JO2DKIK-RwE_tlMwpzR3RRN4Fe07c",
-      "image_credit": "Politico",
-      "news": [
-        {
-          "url": "https://www.politico.com/gallery/2026/11/13/the-nations-cartoonists-on-the-week-in-politics-01164446",
-          "title": "The nation’s cartoonists on the week in politics",
-          "publisher": "Politico",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXTMfGcwzF0EM2s5jY-Dno52vyRiFLG2JO2DKIK-RwE_tlMwpzR3RRN4Fe07c"
-        },
-        {
-          "url": "https://theweek.com/cartoons/political-cartoons-for-november-11-2026",
-          "title": "Political cartoons for November 11",
-          "publisher": "The Week",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRduE0P9IbERAZjrmzkVK-bKlKyYXVmY_dI_nk5UCJQLdKMlSR6UzlZC7XVeFE"
-        },
-        {
-          "url": "https://theweek.com/cartoons/political-cartoons-for-november-10-2026",
-          "title": "Political cartoons for November 10",
-          "publisher": "The Week",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUFEFGz7ieETCuFMGc8gdFgLhOkWTHv4vuX20ymNjcl6jl76Fy740a4RCwDZw"
-        }
-      ]
-    },
-    {
-      "query": "akira santillan",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T09:00:00Z",
-      "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/2f0b0322-2901-476b-b46a-bf4930e53c46/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/bfc9c2e0-4f35-43c0-b277-ec60e009aa43/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/3a81f12f-d108-40f4-8810-d2df44c2a52f/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwjeJDNtQkoglcP17Zs8kDMPVbcS2k7Wk_JL7k2oE8MGku1UZF-UZj1PuqAA4",
-      "image_credit": "Robinhood",
-      "news": [
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/2f0b0322-2901-476b-b46a-bf4930e53c46/",
-          "title": "November 15, 2026: Jessica Pegula vs Mirra Andreeva Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwjeJDNtQkoglcP17Zs8kDMPVbcS2k7Wk_JL7k2oE8MGku1UZF-UZj1PuqAA4"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/bfc9c2e0-4f35-43c0-b277-ec60e009aa43/",
-          "title": "November 11, 2026: Carole Monnet vs Polona Hercog Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_ir327pUEu5_6dQBqTGLUeq0qh_19ljOSabOEVaLDNr0EaqVgSHEqdb4Tt1Q"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/3a81f12f-d108-40f4-8810-d2df44c2a52f/",
-          "title": "November 11, 2026: Alejandro Tabilo vs Lorenzo Sonego Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEJMwrnwmzlInLmdONDm_dnz45BVKTZvIOIOVOyqc80bxlrpkJ5DBQSkahxTU"
-        }
-      ]
-    },
-    {
-      "query": "freeze warning",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-13T08:40:00Z",
-      "related_news_urls": [
-        "https://cnaw2news.com/wx/weather-alert-freeze-warning-for-tallapoosa-chambers-macon-lee-and-2-more-a10012",
-        "https://www.kwwl.com/video/colder-temperatures-tomorrow/video_b8bedeb8-5506-5191-9eaa-059752c2d8b8.html",
-        "https://www.wbtv.com/2026/11/12/snow-forecast-western-north-carolina-big-temp-drop-approaches/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6WCm-ylQb6M4riFWPeuK7LX75N2wLGJ82Snn9_lHZwwUDyiams03dAUp3fhA",
-      "image_credit": "CNAW2",
-      "news": [
-        {
-          "url": "https://cnaw2news.com/wx/weather-alert-freeze-warning-for-tallapoosa-chambers-macon-lee-and-2-more-a10012",
-          "title": "Freeze Warning for Tallapoosa · Chambers · Macon · Lee and 2 more",
-          "publisher": "CNAW2",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6WCm-ylQb6M4riFWPeuK7LX75N2wLGJ82Snn9_lHZwwUDyiams03dAUp3fhA"
-        },
-        {
-          "url": "https://www.kwwl.com/video/colder-temperatures-tomorrow/video_b8bedeb8-5506-5191-9eaa-059752c2d8b8.html",
-          "title": "Colder temperatures tomorrow",
-          "publisher": "KWWL",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbtPkBmX_iZuU2lh9BYtXbzIZceB1ZYN1yG_RLVitJHoq7RIkA9F7XBWJdwCE"
-        },
-        {
-          "url": "https://www.wbtv.com/2026/11/12/snow-forecast-western-north-carolina-big-temp-drop-approaches/",
-          "title": "Snow in the forecast for Western North Carolina as big temp drop approaches",
-          "publisher": "WBTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOgUwnFb8dwjqlB46I_9uV5SZ0xGwm2rmJ4mN3ONbjcFhg4lKwCzN9D96UIUk"
-        }
-      ]
-    },
-    {
-      "query": "new zealand vs india",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-13T08:30:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-4th-odi-1539440/live-match-blog",
-        "https://sports.yahoo.com/articles/huge-difference-wickets-shreyas-iyer-093003441.html",
-        "https://www.nzherald.co.nz/sport/cricket/black-caps/black-caps-v-india-result-will-young-century-matt-henry-six-wicket-haul-see-new-zealand-to-huge-odi-victory/KFHN5ITDIBHJ7FSRUJQVTFGGCU/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGOrC6SUSAQJhr68HidATTpLadMBK21dCCZw7x7H57u6eWZZccJvysmhiKIY0",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-4th-odi-1539440/live-match-blog",
-          "title": "NZ vs Ind, 3rd ODI, Live Blog - Henry six-for demolishes India, keeps series alive",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGOrC6SUSAQJhr68HidATTpLadMBK21dCCZw7x7H57u6eWZZccJvysmhiKIY0"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/huge-difference-wickets-shreyas-iyer-093003441.html",
-          "title": "'Huge difference in the wickets': Shreyas Iyer reveals why India's batting collapsed in 4th ODI at Mount Maunganui",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRiKyg6z-DqE27csWeC_lRgilHcfH0wmWscPUMhi1selAJ1uls4EPT4brI4uug"
-        },
-        {
-          "url": "https://www.nzherald.co.nz/sport/cricket/black-caps/black-caps-v-india-result-will-young-century-matt-henry-six-wicket-haul-see-new-zealand-to-huge-odi-victory/KFHN5ITDIBHJ7FSRUJQVTFGGCU/",
-          "title": "Henry six-for, Young century see Black Caps to huge ODI win over India",
-          "publisher": "NZ Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8hwKiMXYr-qyw9Cru8U1NeH0SGSAPNUu8FjUGz2yK4dfKp03Y2bW23GDtJVo"
-        }
-      ]
-    },
-    {
-      "query": "danielle fishel",
-      "approx_searches": "100+",
-      "published_at": "2026-11-13T08:20:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/boy-meets-world-book-reveals-143000905.html",
-        "https://ew.com/boy-meets-world-book-ben-savage-teenager-energy-girl-meets-world-12246667",
-        "https://variety.com/2026/tv/news/danielle-fishel-girl-meets-world-pay-disliked-boundaries-1236941905/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEOnRYyf_yRJGJqnmyV0y4BGODho338sjauEy3bfbsN1OzkZvZGo8n1IFStuE",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/boy-meets-world-book-reveals-143000905.html",
-          "title": "“Boy Meets World” book reveals ‘romantic’ moment between Danielle Fishel and Rider Strong",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEOnRYyf_yRJGJqnmyV0y4BGODho338sjauEy3bfbsN1OzkZvZGo8n1IFStuE"
-        },
-        {
-          "url": "https://ew.com/boy-meets-world-book-ben-savage-teenager-energy-girl-meets-world-12246667",
-          "title": "‘Boy Meets World’ star Ben Savage had ‘teenager’ energy on spinoff set, book claims",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREo32OJmdbdSoROImkytG3FQObGi0E02UZeJIU7fzIhXrUnaLlqalBgvRtQmE"
-        },
-        {
-          "url": "https://variety.com/2026/tv/news/danielle-fishel-girl-meets-world-pay-disliked-boundaries-1236941905/",
-          "title": "Danielle Fishel on 'Girl Meets World' Pay, Being Disliked for Boundaries",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUBJel043g1CaWBLPi9E2uaxbqqG45QVPgBQMkoGqfvu4g1vV-zpF4aSDU3IU"
         }
       ]
     }
