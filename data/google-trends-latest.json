@@ -3,9 +3,106 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T12:01:24.617594Z",
+  "checked_at": "2026-11-13T12:32:49.891348Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "putin news",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-13T12:00:00Z",
+      "related_news_urls": [
+        "https://edition.cnn.com/2026/11/12/politics/ukraine-witkoff-kushner-putin-peace-talks-intl",
+        "https://www.bbc.com/news/articles/ckn80j9jv3jxo",
+        "https://www.atlanticcouncil.org/blogs/ukrainealert/putins-chief-negotiator-vows-to-return-every-inch-of-russian-land-in-ukraine/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToIiV3MjiTgw3-tC3z8BYgi4PSvNw96fzXvp6B8YnpcV5FCzCbPISwNCSB96s",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://edition.cnn.com/2026/11/12/politics/ukraine-witkoff-kushner-putin-peace-talks-intl",
+          "title": "Kushner says Europe to join next Ukraine talks, but Putin stands firm on territorial demands",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToIiV3MjiTgw3-tC3z8BYgi4PSvNw96fzXvp6B8YnpcV5FCzCbPISwNCSB96s"
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/ckn80j9jv3jxo",
+          "title": "Zelensky welcomes US bringing Europe into Russia-Ukraine peace talks",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_v3AucCHASyyDTQTqF7eC3E3HpUjgphjEoz66JHegii1Wf-nby3sn9LcuRw0"
+        },
+        {
+          "url": "https://www.atlanticcouncil.org/blogs/ukrainealert/putins-chief-negotiator-vows-to-return-every-inch-of-russian-land-in-ukraine/",
+          "title": "Putin’s chief negotiator vows to return ‘every inch of Russian land’ in Ukraine",
+          "publisher": "Atlantic Council",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9CGqVMlKqYz5BwrV_QfDRF3yAcWYa9MWGbXLbil8-Jb3zHXLhox-itSW8GZc"
+        }
+      ]
+    },
+    {
+      "query": "ilhan omar news",
+      "approx_searches": "100+",
+      "published_at": "2026-11-13T12:00:00Z",
+      "related_news_urls": [
+        "https://www.ms.now/rachel-maddow-show/maddowblog/ilhan-omar-justice-department-trump-indict-former-bodyguard",
+        "https://www.nytimes.com/2026/11/11/us/ilhan-omar-ex-bodyguard-indicted-abdullahi-mohamed.html",
+        "https://www.nbcnews.com/politics/justice-department/doj-charged-somali-man-try-get-information-ilhan-omar-lawyer-says-rcna609030"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjBZDauKms5ttugdokNtxTSpcj29tdLgCiKJ6gTGzbpfBBd_uvSG3fIBziAPY",
+      "image_credit": "MS NOW",
+      "news": [
+        {
+          "url": "https://www.ms.now/rachel-maddow-show/maddowblog/ilhan-omar-justice-department-trump-indict-former-bodyguard",
+          "title": "Trump’s Justice Department accused of targeting Ilhan Omar by charging her bodyguard",
+          "publisher": "MS NOW",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjBZDauKms5ttugdokNtxTSpcj29tdLgCiKJ6gTGzbpfBBd_uvSG3fIBziAPY"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/11/us/ilhan-omar-ex-bodyguard-indicted-abdullahi-mohamed.html",
+          "title": "Somali Bodyguard Was Indicted in a Bid to Incriminate Ilhan Omar",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiuJBelWR0iNb-BViV-oWtczLwOQ1dcBpDdHirTcb3L7i7W24_VG6vN0vFCpY"
+        },
+        {
+          "url": "https://www.nbcnews.com/politics/justice-department/doj-charged-somali-man-try-get-information-ilhan-omar-lawyer-says-rcna609030",
+          "title": "DOJ charged Somali man to try to get information on Ilhan Omar, lawyer says",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQp4jOYrqKxOMYfs1piSfWV7dAixzuD6fO-afS2nbAzROpwpUzCgwAaHTi1XVE"
+        }
+      ]
+    },
+    {
+      "query": "ashley graham",
+      "approx_searches": "100+",
+      "published_at": "2026-11-13T12:00:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/videos/ashley-graham-fearless-fashion-icon-112659664.html",
+        "https://www.the-sun.com/entertainment/17281631/ashley-graham-bra-underwear-teal-dress/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsJCc0hyUm5O7JDVkIJr1M3QK6uSCNWBJ39DzkGoZYTrrsLrMo2iAvJzrMfow",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/videos/ashley-graham-fearless-fashion-icon-112659664.html",
+          "title": "Ashley Graham, The Fearless Fashion Icon Redefining Beauty and Confidence",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsJCc0hyUm5O7JDVkIJr1M3QK6uSCNWBJ39DzkGoZYTrrsLrMo2iAvJzrMfow"
+        },
+        {
+          "url": "https://www.the-sun.com/entertainment/17281631/ashley-graham-bra-underwear-teal-dress/",
+          "title": "Ashley Graham gives peek at black lace bra and underwear before getting dolled up in teal dress and coat",
+          "publisher": "The Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWHEXip0YA_Vzq7K3sBQy7pnSe33wUSKEa2_cT1089zKQ1vjEO8FjTUXN1HMk"
+        }
+      ]
+    },
     {
       "query": "beach hazards statement",
       "approx_searches": "1000+",
@@ -148,7 +245,7 @@
     },
     {
       "query": "joshua link jason link conviction",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-13T11:20:00Z",
       "related_news_urls": [
         "https://www.star-telegram.com/news/local/crime/article318035976.html",
@@ -177,7 +274,7 @@
           "title": "'High-tech Ponzi scheme': Brothers convicted in $240M Fort Worth cattle fraud",
           "publisher": "WFAA",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4xQH1uzi5eQqvbJFJ_N80IiVksXZfwnQvVQQ1bK3CZe1Wa9gsNIv5WNeG1nc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTygJ5nxTL3OqBy2XZ1O-tX4ixYPo6xujmnem9o6AICAN3E7xYnLrByGnQSIA"
         }
       ]
     },
@@ -248,111 +345,6 @@
           "publisher": "India.com",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcU1knR3ubXt0EPm5HiBup53ciJE-GAe3mO56Ac7j7dkztuV9K1XHE3Hmth5E"
-        }
-      ]
-    },
-    {
-      "query": "trust",
-      "approx_searches": "100+",
-      "published_at": "2026-11-13T11:00:00Z",
-      "related_news_urls": [
-        "https://www.law360.com/articles/2549656/dexus-cleared-to-put-trust-wind-up-plan-to-unitholders",
-        "https://www.lawyerly.com.au/facing-1-6b-redemption-queue-dexus-can-call-infrastructure-wind-up-vote/",
-        "https://www.courant.com/2026/11/13/ny-attorney-who-admitted-to-embezzling-500k-from-trust-sentenced-to-federal-prison-for-wire-fraud/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGM8fhMFZNQmiLKRZKPgA3Xbtxj5PGUfSMmVz0yTC1bd2zN-nzbB1-goYbeg",
-      "image_credit": "Law360",
-      "news": [
-        {
-          "url": "https://www.law360.com/articles/2549656/dexus-cleared-to-put-trust-wind-up-plan-to-unitholders",
-          "title": "Dexus Cleared To Put Trust Wind-Up Plan To Unitholders",
-          "publisher": "Law360",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGM8fhMFZNQmiLKRZKPgA3Xbtxj5PGUfSMmVz0yTC1bd2zN-nzbB1-goYbeg"
-        },
-        {
-          "url": "https://www.lawyerly.com.au/facing-1-6b-redemption-queue-dexus-can-call-infrastructure-wind-up-vote/",
-          "title": "Facing $1.6B redemption queue, Dexus can call infrastructure wind-up vote",
-          "publisher": "Lawyerly",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDeet_Km2jBGHpCtuDd7mtNcOxmMIvHWeBDexojxUf8jyRom_3hHDJmNsm7SM"
-        },
-        {
-          "url": "https://www.courant.com/2026/11/13/ny-attorney-who-admitted-to-embezzling-500k-from-trust-sentenced-to-federal-prison-for-wire-fraud/",
-          "title": "NY attorney who admitted to embezzling $500K+ from trust sentenced to federal prison for wire fraud",
-          "publisher": "Hartford Courant",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPo-lyvtKnLd_NGzKN-4MoETyAt36ZUmSox_i63wZFwUAMa9hL6CPFqYwy-yI"
-        }
-      ]
-    },
-    {
-      "query": "la weather",
-      "approx_searches": "100+",
-      "published_at": "2026-11-13T11:00:00Z",
-      "related_news_urls": [
-        "https://ktla.com/news/california/rain-forecast-timing/",
-        "https://www.foxla.com/news/socal-storm-timeline-rain-high-surf",
-        "https://www.latimes.com/california/story/2026-11-12/bring-out-your-umbrellas-cooling-temperatures-scattered-showers-start-thursday-night"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThClVaLMYdMeZZfokPnfPMj9OKN4mB6SMdOocJOTWwQoSCHhV5_utThcc9K8I",
-      "image_credit": "KTLA",
-      "news": [
-        {
-          "url": "https://ktla.com/news/california/rain-forecast-timing/",
-          "title": "‘Storm train’ rolling into Southern California, Weather Service says",
-          "publisher": "KTLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThClVaLMYdMeZZfokPnfPMj9OKN4mB6SMdOocJOTWwQoSCHhV5_utThcc9K8I"
-        },
-        {
-          "url": "https://www.foxla.com/news/socal-storm-timeline-rain-high-surf",
-          "title": "SoCal storm timeline: Back-to-back systems bring rain, high surf through Sunday",
-          "publisher": "FOX 11 Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqtuXN6RlD5ttKQtQfEmm3k17xL0oA45hYdkK2FMcbWOzxfk_70ZE3J75GafU"
-        },
-        {
-          "url": "https://www.latimes.com/california/story/2026-11-12/bring-out-your-umbrellas-cooling-temperatures-scattered-showers-start-thursday-night",
-          "title": "Bring out your umbrellas. Cooling temperatures and scattered showers start Thursday night",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLFJGCvjEQ31_-pG-dyG7MEXw5k8zwMuNUo7Pqd0uEw4tqYw3TS9MUmytLSBg"
-        }
-      ]
-    },
-    {
-      "query": "mike tomlin steelers retirement reasons",
-      "approx_searches": "100+",
-      "published_at": "2026-11-13T11:00:00Z",
-      "related_news_urls": [
-        "https://www.post-gazette.com/sports/steelers/2026/11/11/mike-tomlin-comments-on-steelers/stories/202611110030",
-        "https://sports.yahoo.com/articles/former-steelers-hc-mike-tomlin-110728448.html",
-        "https://www.cleveland.com/news/2026/11/mike-tomlin-addresses-nfl-coaching-return-but-leaves-one-big-question-unanswered.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBsl5e393BH1cpk6dvh_ye8f05E3zAydPJuIDfGnC5WehxwVzicUNULgc_-lU",
-      "image_credit": "Pittsburgh Post-Gazette",
-      "news": [
-        {
-          "url": "https://www.post-gazette.com/sports/steelers/2026/11/11/mike-tomlin-comments-on-steelers/stories/202611110030",
-          "title": "Mike Tomlin discusses watching the Steelers in person and his future in coaching",
-          "publisher": "Pittsburgh Post-Gazette",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBsl5e393BH1cpk6dvh_ye8f05E3zAydPJuIDfGnC5WehxwVzicUNULgc_-lU"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/former-steelers-hc-mike-tomlin-110728448.html",
-          "title": "Former Steelers HC Mike Tomlin says quiet part out loud about NFL return",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbNQPuqG6fwz8-Wg7eqvzN3M0pAfMtS-eeqZc8jDxZH9SF-Ndi1LMoxnC6XIU"
-        },
-        {
-          "url": "https://www.cleveland.com/news/2026/11/mike-tomlin-addresses-nfl-coaching-return-but-leaves-one-big-question-unanswered.html",
-          "title": "Mike Tomlin addresses NFL coaching return but leaves one big question unanswered",
-          "publisher": "Cleveland.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSg8JFBeANJXqVnKkTWl1C-zvymv_rBtxmY49OSmxTItrS3wWsWTVnh7s4dRlU"
         }
       ]
     }
