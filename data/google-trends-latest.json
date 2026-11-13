@@ -3,9 +3,254 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T14:31:21.712269Z",
+  "checked_at": "2026-11-13T15:01:31.479393Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "michael wilbon",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-13T14:40:00Z",
+      "related_news_urls": [
+        "https://www.phillyvoice.com/michael-wilbon-espn-mens-health-care-attitudes/",
+        "https://sports.yahoo.com/articles/espn-michael-wilbon-announces-sad-173739365.html",
+        "https://awfulannouncing.com/espn/stephen-a-smith-michael-wilbon-health.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlzUtZvH_zvSdmK9w432IXn_N6eIoD3uQ2nuDO9_RJBCxvEidUzwctjmIHQhw",
+      "image_credit": "PhillyVoice",
+      "news": [
+        {
+          "url": "https://www.phillyvoice.com/michael-wilbon-espn-mens-health-care-attitudes/",
+          "title": "ESPN host Michael Wilbon's health issues should be a wake-up call for other men",
+          "publisher": "PhillyVoice",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlzUtZvH_zvSdmK9w432IXn_N6eIoD3uQ2nuDO9_RJBCxvEidUzwctjmIHQhw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/espn-michael-wilbon-announces-sad-173739365.html",
+          "title": "ESPN’s Michael Wilbon announces sad health news, immediate leave from ‘PTI’",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsj5l5nUKmJTbSIzY6Rq_G-BvCSG4cjYSUgXoKyDf4ldRU7ap3eKoCq7n76Ek"
+        },
+        {
+          "url": "https://awfulannouncing.com/espn/stephen-a-smith-michael-wilbon-health.html",
+          "title": "Stephen A. Smith happy Michael Wilbon is prioritizing his health: ‘This is good news’",
+          "publisher": "Awful Announcing",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXEhhqSYcvpyVc9RsF3UemCcfLb1bA--aROyOzHpizCrIEtEMfBKndgD-Nm3g"
+        }
+      ]
+    },
+    {
+      "query": "bergen reilly",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T14:40:00Z",
+      "related_news_urls": [
+        "https://www.ncaa.org/stories/nebraska-volleyballs-bergen-reilly-puts-business-and-law-degree-to-work-through-nil/",
+        "https://huskers.com/news/2026/11/9/reilly-repeats-as-big-ten-setter-of-the-week",
+        "https://www.hastingstribune.com/husker_red_zone/nebraska-s-reilly-runs-red-hot-husker-offense/article_a5ecd287-caf5-44cd-a0b1-5419b68d8c26.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHfkVUY5i2XjBNtzQcTiW2Pe6t9kavW52uc-1Y1vbJ1Q5oesrMsTpII4D3E44",
+      "image_credit": "NCAA.org",
+      "news": [
+        {
+          "url": "https://www.ncaa.org/stories/nebraska-volleyballs-bergen-reilly-puts-business-and-law-degree-to-work-through-nil/",
+          "title": "Nebraska volleyball’s Bergen Reilly puts business and law degree to work through NIL",
+          "publisher": "NCAA.org",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHfkVUY5i2XjBNtzQcTiW2Pe6t9kavW52uc-1Y1vbJ1Q5oesrMsTpII4D3E44"
+        },
+        {
+          "url": "https://huskers.com/news/2026/11/9/reilly-repeats-as-big-ten-setter-of-the-week",
+          "title": "Reilly Repeats as Big Ten Setter of the Week - University of Nebraska - Official Athletics Website",
+          "publisher": "huskers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa6cjLwgeqfyjcXz7Y4ehZSJTkwl8xlal5i8Y2wj96eF2vMTKXwE0DKu5fxDk"
+        },
+        {
+          "url": "https://www.hastingstribune.com/husker_red_zone/nebraska-s-reilly-runs-red-hot-husker-offense/article_a5ecd287-caf5-44cd-a0b1-5419b68d8c26.html",
+          "title": "Nebraska’s Reilly runs red-hot Husker offense",
+          "publisher": "Hastings Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAdYdnGCQwY_8OX_JADY-h3cgX6kcOJYyaKNXMFrpbdrOy-Lwk7f5XYDoY_nY"
+        }
+      ]
+    },
+    {
+      "query": "stockholm open",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T14:40:00Z",
+      "related_news_urls": [
+        "https://www.tvmatchen.nu/match/stockholm-open-1996812",
+        "https://www.tvmatchen.nu/match/new-jersey-devils-washington-capitals-1947048",
+        "https://www.tvmatchen.nu/match/hammarby-if-spartak-myjava-1979732"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT00sgZcKgjvZIuDx_Wo2Oodu_OU2S_61lwFgyCqQ0a7RmQt2cokWLn9EmMcy8",
+      "image_credit": "TVmatchen.nu",
+      "news": [
+        {
+          "url": "https://www.tvmatchen.nu/match/stockholm-open-1996812",
+          "title": "Stockholm Open TV & Stream | TV-tid, kanal",
+          "publisher": "TVmatchen.nu",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT00sgZcKgjvZIuDx_Wo2Oodu_OU2S_61lwFgyCqQ0a7RmQt2cokWLn9EmMcy8"
+        },
+        {
+          "url": "https://www.tvmatchen.nu/match/new-jersey-devils-washington-capitals-1947048",
+          "title": "New Jersey Devils - Washington Capitals TV & Stream | TV-tid, kanal",
+          "publisher": "TVmatchen.nu",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQB45FU8xBiVj6R3bu_sf_5NiTP6Htmyvo3lRreqNDWdJdqbFM26ygQbVm8uYs"
+        },
+        {
+          "url": "https://www.tvmatchen.nu/match/hammarby-if-spartak-myjava-1979732",
+          "title": "Hammarby IF - Spartak Myjava TV & Stream | TV-tid, kanal",
+          "publisher": "TVmatchen.nu",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlGfn7y3L218QAvAWUwWclJCoOIKigdcHk6RZMf0e5DqaKouHbiX7wMm_pnck"
+        }
+      ]
+    },
+    {
+      "query": "pat desiato passing rock bassist",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-13T14:30:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/rock-musician-dies-36-band-145611452.html",
+        "https://www.legacy.com/us/obituaries/name/patrick-desiato-obituary?id=62969307",
+        "https://www.pennlive.com/entertainment/2026/11/rock-band-announces-beloved-member-has-died-at-36-we-are-heartbroken.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqrQij67BouzSb3YHTq23Wja-l7QXeMyo3oO12uTRPu166JQqEVdSbkUPMD38",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/rock-musician-dies-36-band-145611452.html",
+          "title": "Rock musician dies at 36, band announces in emotional tribute",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqrQij67BouzSb3YHTq23Wja-l7QXeMyo3oO12uTRPu166JQqEVdSbkUPMD38"
+        },
+        {
+          "url": "https://www.legacy.com/us/obituaries/name/patrick-desiato-obituary?id=62969307",
+          "title": "Patrick Desiato Obituary (2026) - Mount Laurel, NJ - Givnish Funeral Home - Cinnaminson",
+          "publisher": "Legacy | Obituary",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQH3nilmsqXsgiC96I6xjAEmwFRmwD5p0OizfB3REF5lppKNZsUaPbv8BlvG4s"
+        },
+        {
+          "url": "https://www.pennlive.com/entertainment/2026/11/rock-band-announces-beloved-member-has-died-at-36-we-are-heartbroken.html",
+          "title": "Rock band announces beloved member has died at 36: ‘We are heartbroken’",
+          "publisher": "PennLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1UBvkhzCR8DgSquStDyTNWXQJF4RP4oQInRqcsd-FPMtjNOOMP3l4dnukZh4"
+        }
+      ]
+    },
+    {
+      "query": "jamie dornan",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-13T14:20:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/tv-and-radio/2026/nov/13/12-12-12-review-anthony-mackie-jamie-dornan-heist",
+        "https://www.today.com/video/jamie-dornan-and-anthony-mackie-talk-new-series-12-12-12-273447493640",
+        "https://www.esquire.com/entertainment/tv/a74403411/12-12-12-apple-tv-review/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPjhGPI7JthDlZckMuQIGWkwD7GUuO0Dfc-YEuQPrfX7yJ1gi6YCU_33sbdkk",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/13/12-12-12-review-anthony-mackie-jamie-dornan-heist",
+          "title": "12 12 12 review – Anthony Mackie and Jamie Dornan’s super fun heist hunt",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPjhGPI7JthDlZckMuQIGWkwD7GUuO0Dfc-YEuQPrfX7yJ1gi6YCU_33sbdkk"
+        },
+        {
+          "url": "https://www.today.com/video/jamie-dornan-and-anthony-mackie-talk-new-series-12-12-12-273447493640",
+          "title": "Jamie Dornan and Anthony Mackie Talk New Series ‘12 12 12’",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVjTghbnBBeMxQQUHBDDe-LKFwbvyYyKk2JtMLuQaLoqfu8uv8fAEU95fpcbc"
+        },
+        {
+          "url": "https://www.esquire.com/entertainment/tv/a74403411/12-12-12-apple-tv-review/",
+          "title": "‘12 12 12’ Shakes Up the Tired Heist Formula with One Great Idea",
+          "publisher": "Esquire",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCiVnRMRNCBhgUwH3WGtvY8buEeYgAB2f1YfhVupbuHTpJsRB317qDmqnWZ7k"
+        }
+      ]
+    },
+    {
+      "query": "stryker sports complex",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-13T14:20:00Z",
+      "related_news_urls": [
+        "https://www.nbcnews.com/news/us-news/no-charges-woman-drove-kansas-soccer-field-killing-2-officials-say-rcna609094",
+        "https://abcnews.com/US/driver-crashed-wichita-kansas-soccer-game-killing-2/story?id=138091073",
+        "https://www.kwch.com/2026/11/13/mcpherson-residents-reflect-stryker-crash-after-decision-not-charge-driver/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4bmNb6voChh7rcMaeGodNhpeAI4qetXbyHfTD49mHWh6BU2RHwKwnM5pA1l4",
+      "image_credit": "NBC News",
+      "news": [
+        {
+          "url": "https://www.nbcnews.com/news/us-news/no-charges-woman-drove-kansas-soccer-field-killing-2-officials-say-rcna609094",
+          "title": "Woman who drove onto Kansas soccer field, killing 2, won’t be charged, officials say",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4bmNb6voChh7rcMaeGodNhpeAI4qetXbyHfTD49mHWh6BU2RHwKwnM5pA1l4"
+        },
+        {
+          "url": "https://abcnews.com/US/driver-crashed-wichita-kansas-soccer-game-killing-2/story?id=138091073",
+          "title": "Driver who crashed into Wichita, Kansas, soccer game, killing 2 won't be charged: DA",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAkOI0llU2ZMiMlnc0y7uledpdxhPdxu1vnXvpTZkdqlQrfFjYwHpYfg6dhg4"
+        },
+        {
+          "url": "https://www.kwch.com/2026/11/13/mcpherson-residents-reflect-stryker-crash-after-decision-not-charge-driver/",
+          "title": "McPherson residents reflect on Stryker crash after decision not to charge driver",
+          "publisher": "KWCH",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMRl5Fm_tix_-pgCNaWSBIf0QTd2TPXB6pO-610FdHlQDVbMSUfU8CinWDDqQ"
+        }
+      ]
+    },
+    {
+      "query": "cameron thomas",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T14:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50471659/falcons-sign-de-thomas-cb-henderson-multiyear-extensions",
+        "https://www.nfl.com/videos/ian-rapoport-on-falcons-reaching-agreements-on-extension-with-de-cameron-thomas-cb-c-j-henderson-gmfb",
+        "https://www.atlantafalcons.com/news/falcons-cj-henderson-contract-extension"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReUMFgx-HH0elCI2xoxMaPiuzjo8eAUT0g-G3nHTNcGCVN5p8sgAFyFLC4JTU",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50471659/falcons-sign-de-thomas-cb-henderson-multiyear-extensions",
+          "title": "Falcons sign DE Thomas, CB Henderson to multiyear extensions",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReUMFgx-HH0elCI2xoxMaPiuzjo8eAUT0g-G3nHTNcGCVN5p8sgAFyFLC4JTU"
+        },
+        {
+          "url": "https://www.nfl.com/videos/ian-rapoport-on-falcons-reaching-agreements-on-extension-with-de-cameron-thomas-cb-c-j-henderson-gmfb",
+          "title": "Ian Rapoport on Falcons reaching agreements on extension with DE Cameron Thomas, CB C.J. Henderson | 'GMFB'",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwfcNo_lJwBL_Fg1mVgp-MX257CBPh1E-jrXOUwyLgxV9Pb4LgUYPAxTPSpLY"
+        },
+        {
+          "url": "https://www.atlantafalcons.com/news/falcons-cj-henderson-contract-extension",
+          "title": "Falcons agree to terms with CB C.J. Henderson on 2-year contract extension",
+          "publisher": "Atlanta Falcons",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFzVivOFFTlYNmRwtk0VAvV3tTSqrFySOxTLj0ur9WsTcZFnaG5S2q8gnpO0s"
+        }
+      ]
+    },
     {
       "query": "what time does the stock market open",
       "approx_searches": "200+",
@@ -42,6 +287,41 @@
       ]
     },
     {
+      "query": "tabilo",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T14:10:00Z",
+      "related_news_urls": [
+        "https://www.dimers.com/tennis/news/taylor-fritz-vs-lorenzo-musetti-tennis-prediction-atp-stockholm-open-2026-ac",
+        "https://lastwordonsports.com/tennis/2026/11/12/atp-stockholm-semifinal-predictions-fritz-musetti/",
+        "https://www.thestatszone.com/taylor-fritz-vs-lorenzo-musetti-preview-prediction-2026-stockholm-open-semi-final-238750"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0El3dfUOIgI8G-V_EClAPHv38y2zXSQ3gkt3wAxtM036WjxT5kYlEEh9kSZw",
+      "image_credit": "Dimers",
+      "news": [
+        {
+          "url": "https://www.dimers.com/tennis/news/taylor-fritz-vs-lorenzo-musetti-tennis-prediction-atp-stockholm-open-2026-ac",
+          "title": "Taylor Fritz vs. Lorenzo Musetti prediction, odds, picks for ATP Stockholm Open 2026",
+          "publisher": "Dimers",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0El3dfUOIgI8G-V_EClAPHv38y2zXSQ3gkt3wAxtM036WjxT5kYlEEh9kSZw"
+        },
+        {
+          "url": "https://lastwordonsports.com/tennis/2026/11/12/atp-stockholm-semifinal-predictions-fritz-musetti/",
+          "title": "ATP Stockholm Semifinal Predictions Including Taylor Fritz vs Lorenzo Musetti",
+          "publisher": "Last Word On Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwuiELka_M2CW84KV9dK5-hUMmLKsA5yVLJZHBcwip9g7usCYHLAenqNNYtek"
+        },
+        {
+          "url": "https://www.thestatszone.com/taylor-fritz-vs-lorenzo-musetti-preview-prediction-2026-stockholm-open-semi-final-238750",
+          "title": "Taylor Fritz vs Lorenzo Musetti Preview & Prediction | 2026 Stockholm Open | Semi-Final",
+          "publisher": "The Stats Zone",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQD0z5Ud-UJNXtcBdY2wGU3Iyls8nCCIxJ32tzPScy_E9AjfxVTXXUBE-CD3cs"
+        }
+      ]
+    },
+    {
       "query": "john turturro",
       "approx_searches": "200+",
       "published_at": "2026-11-13T14:10:00Z",
@@ -73,286 +353,6 @@
           "publisher": "Variety",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAbNIOHMnbk9Imt-HYD4n5KJ_ncxg49H8kJbRV6MHkiDO4fsKXF1tvxmwFxew"
-        }
-      ]
-    },
-    {
-      "query": "sirik",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T14:00:00Z",
-      "related_news_urls": [
-        "https://www.aljazeera.com/news/liveblog/2026/11/13/iran-war-live-riyadh-china-discuss-houthis-as-group-claims-aramco-attacks",
-        "https://www.theguardian.com/world/2026/nov/13/iran-us-radar-bahrain-sirik-hormuz",
-        "https://apnews.com/article/iran-us-bahrain-radar-strait-hormuz-5d73a23b5b8647d2515c35b267b36c08"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgligIGAhZcj7Op5-B5c4oI1-k2ACRm8EMmHuX9UGkPc-MzMC5b7-04N0JRMM",
-      "image_credit": "Al Jazeera",
-      "news": [
-        {
-          "url": "https://www.aljazeera.com/news/liveblog/2026/11/13/iran-war-live-riyadh-china-discuss-houthis-as-group-claims-aramco-attacks",
-          "title": "Iran war live: US says shot down 2 drones over Bahrain, denies radar strike",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgligIGAhZcj7Op5-B5c4oI1-k2ACRm8EMmHuX9UGkPc-MzMC5b7-04N0JRMM"
-        },
-        {
-          "url": "https://www.theguardian.com/world/2026/nov/13/iran-us-radar-bahrain-sirik-hormuz",
-          "title": "Iran says it destroyed US military radar in Bahrain in retaliatory strike",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBwFzMkiB8FN6R49fH_fWv4WOmNlZUI-idf-zhWPiqfx6vCMC_158JshDxs2A"
-        },
-        {
-          "url": "https://apnews.com/article/iran-us-bahrain-radar-strait-hormuz-5d73a23b5b8647d2515c35b267b36c08",
-          "title": "US military downs 2 Iranian attack drones as Iran claims a strike on a US radar in Bahrain",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzDAr_w-D59j1rDgAMgyHk6t3PS54q5wSq9oGWvBbN_eGVi5Squ2ZUVHFuFq0"
-        }
-      ]
-    },
-    {
-      "query": "forex factory",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T13:50:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/business/us-treasury-chief-says-fed-should-not-hike-rates-over-energy-shock-tied-iran-war-2026-11-13/",
-        "https://www.forexfactory.com/news/1436229-bessent-fed-should-understand-that-this-is-an",
-        "https://www.tokenpost.com/news/regulation/56708"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR-JDfQ-LT_bm2zfHjBPYly3MM0clKtJLis5eACuKLbQQ2Tke_WCsiURdzqig",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/business/us-treasury-chief-says-fed-should-not-hike-rates-over-energy-shock-tied-iran-war-2026-11-13/",
-          "title": "US Treasury chief says Fed should not hike rates over energy shock tied to Iran war",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR-JDfQ-LT_bm2zfHjBPYly3MM0clKtJLis5eACuKLbQQ2Tke_WCsiURdzqig"
-        },
-        {
-          "url": "https://www.forexfactory.com/news/1436229-bessent-fed-should-understand-that-this-is-an",
-          "title": "Bessent: Fed Should Understand That This Is An Energy Supply Shock",
-          "publisher": "Forex Factory",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIlSTkWvwjhpvaz-H24CFHJNtOHi2BLDMQ-0-6qhmM56oTPYK5bY3p-yl"
-        },
-        {
-          "url": "https://www.tokenpost.com/news/regulation/56708",
-          "title": "Bessent Says Four Recent Bond Auctions Were Strongest in 20 Years",
-          "publisher": "www.tokenpost.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_r5iNcYGFdwSVTe9EEQaDzaX_Ow-oL7GJC_Fu5UCR-OfQaFwh46uO8Js5SVE"
-        }
-      ]
-    },
-    {
-      "query": "taylor swift",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-13T13:40:00Z",
-      "related_news_urls": [
-        "https://www.goodmorningamerica.com/culture/story/taylor-swift-perform-cmas-1st-time-13-years-138104764",
-        "https://www.tennessean.com/story/entertainment/music/taylor-swift/2026/11/13/taylor-swift-2026-cma-awards-performance/92563780007/",
-        "https://idahonews.com/news/entertainment/taylor-swift-performing-at-60th-annual-cma-awards-in-nashville-tennessee-country-music-i-knew-it-i-knew-you-single-of-the-year-nomination"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW5wCulqaq2YfXKLn3yI2qVq9c_KVAAIRkD-6a8YzHnJFX8KoHPmSBa_28L-M",
-      "image_credit": "Good Morning America",
-      "news": [
-        {
-          "url": "https://www.goodmorningamerica.com/culture/story/taylor-swift-perform-cmas-1st-time-13-years-138104764",
-          "title": "Taylor Swift to perform at CMAs for 1st time in 13 years",
-          "publisher": "Good Morning America",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW5wCulqaq2YfXKLn3yI2qVq9c_KVAAIRkD-6a8YzHnJFX8KoHPmSBa_28L-M"
-        },
-        {
-          "url": "https://www.tennessean.com/story/entertainment/music/taylor-swift/2026/11/13/taylor-swift-2026-cma-awards-performance/92563780007/",
-          "title": "Taylor Swift to perform at CMA Awards for first time in 13 years",
-          "publisher": "The Tennessean",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAiQPzBzkizSV4PhFZCOvyBEUyebThl7_tu8nfOjaBFJGg6X_6F51QOMdfC2c"
-        },
-        {
-          "url": "https://idahonews.com/news/entertainment/taylor-swift-performing-at-60th-annual-cma-awards-in-nashville-tennessee-country-music-i-knew-it-i-knew-you-single-of-the-year-nomination",
-          "title": "Taylor Swift performing at 60th annual CMA Awards in Nashville",
-          "publisher": "KBOI",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWnQQg74FbxwkzkZA6FgUj46U4aiWHlqaKbv0n6XsQasHIv0Leyb-zkqF1EjM"
-        }
-      ]
-    },
-    {
-      "query": "anthony mackie",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T13:40:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/tv-and-radio/2026/nov/13/12-12-12-review-anthony-mackie-jamie-dornan-heist",
-        "https://www.today.com/video/anthony-mackie-talks-12-12-12-and-avengers-doomsday-273444421915",
-        "https://pagesix.com/2026/11/12/entertainment/where-to-watch-jamie-dornan-in-new-12-12-12-series-for-free/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPjhGPI7JthDlZckMuQIGWkwD7GUuO0Dfc-YEuQPrfX7yJ1gi6YCU_33sbdkk",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/13/12-12-12-review-anthony-mackie-jamie-dornan-heist",
-          "title": "12 12 12 review – Anthony Mackie and Jamie Dornan’s super fun heist hunt",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPjhGPI7JthDlZckMuQIGWkwD7GUuO0Dfc-YEuQPrfX7yJ1gi6YCU_33sbdkk"
-        },
-        {
-          "url": "https://www.today.com/video/anthony-mackie-talks-12-12-12-and-avengers-doomsday-273444421915",
-          "title": "Anthony Mackie Talks New High-Stakes Heist Thriller ‘12 12 12’",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREEIYY6i2k92c4sCnO9NhczSeXU3eYWUV_pd1jI2wKJUDRK5HHSAJirtcaUas"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/12/entertainment/where-to-watch-jamie-dornan-in-new-12-12-12-series-for-free/",
-          "title": "Where to watch Jamie Dornan, Anthony Mackie in ‘12 12 12’ series for free",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4n6Wmej-7xyfukblIf-eCeJBt0wjxZkgdwnHfrp7FEMo3jFimPJ3i4XwMDEY"
-        }
-      ]
-    },
-    {
-      "query": "warren buffett investing tips downturn",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T13:40:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/stock-market-crash-coming-warren-072902853.html",
-        "https://247wallst.com/investing/2026/11/06/stocks-just-had-their-worst-week-since-april-heres-warren-buffetts-rule-for-a-74-year-old-who-must-withdraw-39216-by-dec-31/",
-        "https://www.theglobeandmail.com/investing/markets/stocks/NVDA/pressreleases/8755975/bill-ackman-and-warren-buffett-both-have-the-same-warning-about-the-stock-market/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZeKFIv_XcnoeNY7PbL60qhSj4BzB6XMnYN3fwOXSKyVac1lsoYO79Wxe_y5k",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-crash-coming-warren-072902853.html",
-          "title": "If a Stock Market Crash Is Coming, Warren Buffett’s 6-Word Advice Is the Smartest Move You Can Make",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZeKFIv_XcnoeNY7PbL60qhSj4BzB6XMnYN3fwOXSKyVac1lsoYO79Wxe_y5k"
-        },
-        {
-          "url": "https://247wallst.com/investing/2026/11/06/stocks-just-had-their-worst-week-since-april-heres-warren-buffetts-rule-for-a-74-year-old-who-must-withdraw-39216-by-dec-31/",
-          "title": "Stocks Just Had Their Worst Week Since April. Here's Warren Buffett's Rule for a 74-Year-Old Who Must Withdraw $39,216 by Dec. 31.",
-          "publisher": "24/7 Wall St.",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYmyli_1Vz10b5VxUK0wtrH1s47bXXEv6d5W-zusfVDTjot8uybZiWfcpFK-E"
-        },
-        {
-          "url": "https://www.theglobeandmail.com/investing/markets/stocks/NVDA/pressreleases/8755975/bill-ackman-and-warren-buffett-both-have-the-same-warning-about-the-stock-market/",
-          "title": "Bill Ackman and Warren Buffett Both Have the Same Warning About the Stock Market",
-          "publisher": "The Globe and Mail",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUGTnvTwa0I2UpantPicOS3psUs46VBwyHEQYy_boWy1Esj-mZRjZJx-5KonU"
-        }
-      ]
-    },
-    {
-      "query": "christian bale",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T13:30:00Z",
-      "related_news_urls": [
-        "https://people.com/christian-bale-and-nicolas-cage-walked-around-shared-trailer-in-undies-exclusive-12238096",
-        "https://www.krem.com/video/sports/locked-on/lo-bay-area/locked-on-raiders-hit/christian-bale-said-this-about-las-vegas-raiders-and-al-davis-you-wont-believe-the-impact/535-65dccb47-9600-4d99-8043-3a6a2b21c0b9",
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/christian-bale-plucked-eyebrows-took-120000240.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRiHtUH-BDE8Jiq6cr9rq3t70GmBPjNyC6wxBJHg-jgzY3UWURDD_3bTSS_YKY",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/christian-bale-and-nicolas-cage-walked-around-shared-trailer-in-undies-exclusive-12238096",
-          "title": "Christian Bale and Nicolas Cage Walked Around Shared Trailer in ‘Undies’ (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRiHtUH-BDE8Jiq6cr9rq3t70GmBPjNyC6wxBJHg-jgzY3UWURDD_3bTSS_YKY"
-        },
-        {
-          "url": "https://www.krem.com/video/sports/locked-on/lo-bay-area/locked-on-raiders-hit/christian-bale-said-this-about-las-vegas-raiders-and-al-davis-you-wont-believe-the-impact/535-65dccb47-9600-4d99-8043-3a6a2b21c0b9",
-          "title": "Christian Bale Said This About Las Vegas Raiders and Al Davis You Won’t Believe the Impact",
-          "publisher": "KREM",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyDZB2j8YfSICmV59ibfGfvgtEKrc4SDKHQ4VxYxQcSiEYZ5Zfp_rSvToGwrQ"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/christian-bale-plucked-eyebrows-took-120000240.html",
-          "title": "Christian Bale Plucked His Eyebrows, Took Extreme Measures for Madden Role",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0R-H37TGrdlwdkHf1d2JMaAU8vioqqjzKakz5b-yWv0VvO2cYJQpJxYnh77A"
-        }
-      ]
-    },
-    {
-      "query": "king charles",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T13:30:00Z",
-      "related_news_urls": [
-        "https://www.billboard.com/music/music-news/king-charles-elton-john-rocket-hour-special-apple-music-1236380210/",
-        "https://www.bbc.com/news/articles/c3qj5lnee5n0o",
-        "https://www.yahoo.com/entertainment/celebrity/royals/articles/king-charles-elton-john-interview-075441111.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReP-6rKEz4EonBmX6EEy5y28_ZkVpAvo1bgUhlqA1ncQFKuTYUSkU-xAccvTI",
-      "image_credit": "Billboard",
-      "news": [
-        {
-          "url": "https://www.billboard.com/music/music-news/king-charles-elton-john-rocket-hour-special-apple-music-1236380210/",
-          "title": "King Charles III Joining Elton John For ‘Rocket Hour With His Majesty The King’ Special on Apple Music",
-          "publisher": "Billboard",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReP-6rKEz4EonBmX6EEy5y28_ZkVpAvo1bgUhlqA1ncQFKuTYUSkU-xAccvTI"
-        },
-        {
-          "url": "https://www.bbc.com/news/articles/c3qj5lnee5n0o",
-          "title": "King Charles appears on Sir Elton John's radio show",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNWbMrazEFMG-6cPBwFVbCd_nL_IBmjTtZbC2nAfUKTtu9dnnMf_n8Ej8pg9A"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/royals/articles/king-charles-elton-john-interview-075441111.html",
-          "title": "King Charles’ Elton John Interview Comes With an Unexpected Prince Harry Question — Report",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUkqFKCipiuyYcDkgBZMx-TOzTnnGN0eoHAtm-4yPk3Tp7VX3RbyrsXr9Un_o"
-        }
-      ]
-    },
-    {
-      "query": "economic calendar",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T13:30:00Z",
-      "related_news_urls": [
-        "https://seekingalpha.com/news/4671653-fridays-economic-calendar",
-        "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html",
-        "https://www.marketwatch.com/livecoverage/ppi-report-today-october-inflation-fed-rates-live-updates"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStejFtWbvbew8i1bFGDq_ih0-gnitD3esnprLu6g66GnLDWL3eNXEd5EAivHM",
-      "image_credit": "Seeking Alpha",
-      "news": [
-        {
-          "url": "https://seekingalpha.com/news/4671653-fridays-economic-calendar",
-          "title": "Friday’s Economic Calendar",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStejFtWbvbew8i1bFGDq_ih0-gnitD3esnprLu6g66GnLDWL3eNXEd5EAivHM"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html",
-          "title": "Wholesale prices rose 0.3% in October, putting annual rate at 6.5%, the highest in nearly four years",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcda_y_lRvNv4BGuE3JhTD28514j8Vc3KbjDO0wWGaRHnk2aQH7rSQHyrOXwA"
-        },
-        {
-          "url": "https://www.marketwatch.com/livecoverage/ppi-report-today-october-inflation-fed-rates-live-updates",
-          "title": "PPI report moments away: Hot wholesale inflation could raise odds of a bigger Fed rate hike — live updates",
-          "publisher": "MarketWatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXSHm2smqx7c_b3KLcOQzqvHqHW1Y_wG2s7Sc7lfzX_PxV-S1E34dre9CGsNA"
         }
       ]
     }
