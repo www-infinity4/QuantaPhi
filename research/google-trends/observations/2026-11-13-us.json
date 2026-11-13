@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T20:01:30.516124Z",
+  "checked_at": "2026-11-13T20:31:31.134560Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "paige spiranac",
+      "query": "slovakia vs faroe islands",
       "approx_searches": "500+",
-      "published_at": "2026-11-13T19:40:00Z",
+      "published_at": "2026-11-13T20:10:00Z",
       "related_news_urls": [
-        "https://thespun.com/golf/paige-spiranac-is-not-happy-with-the-state-of-her-golf-game",
-        "https://www.marca.com/en/golf/2026/11/12/cheating-controversy-this-time-paige-spiranac-s-recovery-selfie-goes-viral-after-tough-internet-invitational-elimination.html",
-        "https://thespun.com/golf/paige-spiranac-gets-taunted-by-fellow-golfers-over-her-outfit-at-championship-match"
+        "https://www.bbc.com/sport/football/live/cm9dz77n1q2nt",
+        "https://www.goal.com/en-ca/news/live-stream-online-tv-where-to-watch-slovakia-v-faroe-islands/bltc8fc31a34ccdd1b6",
+        "https://sportsbook.fanduel.com/soccer/uefa-nations-league-c/slovakia-v-faroe-islands-36165995"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR97BrdVBhcgHGRMBO1P-pxe5zQQoeZS-IkPbnLumM3Qefov2Ri1hBso1OssBA",
-      "image_credit": "The Spun",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://thespun.com/golf/paige-spiranac-is-not-happy-with-the-state-of-her-golf-game",
-          "title": "Paige Spiranac Is Not Happy With The State Of Her Golf Game",
-          "publisher": "The Spun",
+          "url": "https://www.bbc.com/sport/football/live/cm9dz77n1q2nt",
+          "title": "Slovakia vs Faroe Islands: UEFA Nations League stats & head-to-head",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR97BrdVBhcgHGRMBO1P-pxe5zQQoeZS-IkPbnLumM3Qefov2Ri1hBso1OssBA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
         },
         {
-          "url": "https://www.marca.com/en/golf/2026/11/12/cheating-controversy-this-time-paige-spiranac-s-recovery-selfie-goes-viral-after-tough-internet-invitational-elimination.html",
-          "title": "No cheating controversy this time: Paige Spiranac's recovery selfie goes viral after tough Internet Invitational elimination",
-          "publisher": "MARCA",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAof1jQ4ULIXBO2URgWkeYjdC2QSchJxCZcXDZ5GaBv5tB4I4SCq81uRCtYE8"
-        },
-        {
-          "url": "https://thespun.com/golf/paige-spiranac-gets-taunted-by-fellow-golfers-over-her-outfit-at-championship-match",
-          "title": "Paige Spiranac Gets Taunted By Fellow Golfers Over Her Outfit At Championship Match",
-          "publisher": "The Spun",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQ8LItsFBXDXAISJalGZYNArlOig5vi_-mbLEZhgFsXbf2GHNoP0gj-A1m6BU"
-        }
-      ]
-    },
-    {
-      "query": "kevin hassett",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T19:40:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/video/2026/11/13/nec-director-kevin-hassett-expected-to-depart-wh-in-the-coming-weeks-report.html",
-        "https://www.yahoo.com/news/politics/articles/hassett-expected-depart-white-house-190611458.html",
-        "https://www.marketscreener.com/news/hassett-expected-to-leave-trump-administration-semafor-reports-ce785eded98bf323"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8g-tV2rrRWEaBtHCJzRooLCAoC73L4xW9srxPhyM7B07zleyCEeKCbXNaBPU",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/video/2026/11/13/nec-director-kevin-hassett-expected-to-depart-wh-in-the-coming-weeks-report.html",
-          "title": "NEC Director Kevin Hassett expected to depart WH in the coming weeks: Report",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8g-tV2rrRWEaBtHCJzRooLCAoC73L4xW9srxPhyM7B07zleyCEeKCbXNaBPU"
-        },
-        {
-          "url": "https://www.yahoo.com/news/politics/articles/hassett-expected-depart-white-house-190611458.html",
-          "title": "Hassett expected to depart White House",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT37z1D48uLDDco5YkNG4G5Z2LHdkIR030mRXKX-x9SPmUmHGdCN_TpKvouBRg"
-        },
-        {
-          "url": "https://www.marketscreener.com/news/hassett-expected-to-leave-trump-administration-semafor-reports-ce785eded98bf323",
-          "title": "Hassett expected to leave Trump administration, Semafor reports",
-          "publisher": "marketscreener.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGRKks833JRE10mvZ-6VxMeU8hShRa0c1Wy2djCaj2ucZDzXqBAVfV1jsCB24"
-        }
-      ]
-    },
-    {
-      "query": "uefa nations league schedule",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T19:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/uefa-nations-league-predictions-including-131310343.html",
-        "https://www.telegraph.co.uk/betting/football/nations-league-acca-tips-prediction-november-14-2026/",
-        "https://www.ladbrokes.com/en/news/ladbrokes-football-tips-2026-11-13/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFeTJqtFvPIzgCjugjuJK5YDuOimzBhksXebo0nX7HuC8NbYQdRz7zo4kBCmU",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/uefa-nations-league-predictions-including-131310343.html",
-          "title": "UEFA Nations League Predictions, Including Netherlands vs Greece and Serbia vs Germany",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFeTJqtFvPIzgCjugjuJK5YDuOimzBhksXebo0nX7HuC8NbYQdRz7zo4kBCmU"
-        },
-        {
-          "url": "https://www.telegraph.co.uk/betting/football/nations-league-acca-tips-prediction-november-14-2026/",
-          "title": "Nations League acca tips: Back Norway in 6.78/1 Saturday multiple",
-          "publisher": "The Telegraph",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjYEPleD8pPWkuzZOsQPISDG0yUXe16DMdnsbtlEIg65sXitEyLZQREGNgdgc"
-        },
-        {
-          "url": "https://www.ladbrokes.com/en/news/ladbrokes-football-tips-2026-11-13/",
-          "title": "Ladbrokes' football tips - Friday, November 13, 2026: Low-scoring wins for Scotland and Germany",
-          "publisher": "Ladbrokes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPUmN94wigWYkBWBRMBLBCpHKmV6FCR_515IW7nZwOGnA2j8g-FJzhIf7ugbk"
-        }
-      ]
-    },
-    {
-      "query": "kenneth walker",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-13T19:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/kenneth-walker-did-not-practice-193911884.html",
-        "https://www.cbssports.com/fantasy/football/news/chiefs-kenneth-walker-sits-out-fridays-practice/",
-        "https://www.thefantasyfootballers.com/news/647517/kenneth-walker-iii-sits-out-fridays-practice/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4KCkrqBI_KuE22kKrV9VNQOYSFrQmj9XEKsnmC-s5m9SLy3j33cZ6MH9Dw3Q",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/kenneth-walker-did-not-practice-193911884.html",
-          "title": "Kenneth Walker did not practice Friday with groin tightness",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4KCkrqBI_KuE22kKrV9VNQOYSFrQmj9XEKsnmC-s5m9SLy3j33cZ6MH9Dw3Q"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/chiefs-kenneth-walker-sits-out-fridays-practice/",
-          "title": "Chiefs' Kenneth Walker: Sits out Friday's practice",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQU6tSLE7DSX5eAUrdw652UL-4VnvjB2RRRB6Qj_I_jEyt6aQ13R8x94F_havQ"
-        },
-        {
-          "url": "https://www.thefantasyfootballers.com/news/647517/kenneth-walker-iii-sits-out-fridays-practice/",
-          "title": "Kenneth Walker Sits out Friday's practice",
-          "publisher": "Fantasy Footballers Podcast",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLm6SPDhjh0rX0MaAlVyInOBAKTxZHaji8XGFbCBB32YiZ8Xc18AHzVDD3BBc"
-        }
-      ]
-    },
-    {
-      "query": "troy aikman",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-13T19:20:00Z",
-      "related_news_urls": [
-        "https://awfulannouncing.com/nfl/troy-aikman-kyle-shanahan-49ers.html",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/troy-aikman-engages-in-potential-pre-tampering-with-kyle-shanahan",
-        "https://sports.yahoo.com/articles/aikman-says-cowboys-still-win-145417028.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLTFQjvkfVlYgmlDGKKShHUCUjF2J903o846aHNFNUXTmh9NW-j299h2yCulI",
-      "image_credit": "Awful Announcing",
-      "news": [
-        {
-          "url": "https://awfulannouncing.com/nfl/troy-aikman-kyle-shanahan-49ers.html",
-          "title": "Troy Aikman would try to lure Kyle Shanahan from 49ers if running NFL team",
-          "publisher": "Awful Announcing",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLTFQjvkfVlYgmlDGKKShHUCUjF2J903o846aHNFNUXTmh9NW-j299h2yCulI"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/troy-aikman-engages-in-potential-pre-tampering-with-kyle-shanahan",
-          "title": "Troy Aikman engages in potential pre-tampering with Kyle Shanahan",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXIakNy20k8oVZym-tvlRYHH-O6JKTHvlLVjELlzc1v3FUyOhSVNOAOO-RZfE"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/aikman-says-cowboys-still-win-145417028.html",
-          "title": "Aikman Says Cowboys Can Still Win NFC East After 4-5 Start",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToq5kpY_MAjvCeUvGFUaWSbi6rKFtz__TTFneP_S6tnvX8yfVrY3f6nBcWgb0"
-        }
-      ]
-    },
-    {
-      "query": "mali vs rwanda",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T19:20:00Z",
-      "related_news_urls": [
-        "https://www.managingmadrid.com/latest-news/115384/watch-diomandes-assist-vs-gambia",
-        "https://www.goal.com/en/news/on-video-diomande-s-gifts-prove-decisive-in-the-elephants-win/bltdf4c5e55f8c69255",
-        "https://www.coinbase.com/en-sg/predictions/event/KXAFCON1HSPREAD-26NOV13MLIRWA"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-qpl1XEcsBiiL6B8PKMVrtmkU5cbn_uupQgO0gc0VeEDTky5oU35qzIU_4DI",
-      "image_credit": "Managing Madrid",
-      "news": [
-        {
-          "url": "https://www.managingmadrid.com/latest-news/115384/watch-diomandes-assist-vs-gambia",
-          "title": "WATCH: Diomande’s Assist Vs Gambia",
-          "publisher": "Managing Madrid",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-qpl1XEcsBiiL6B8PKMVrtmkU5cbn_uupQgO0gc0VeEDTky5oU35qzIU_4DI"
-        },
-        {
-          "url": "https://www.goal.com/en/news/on-video-diomande-s-gifts-prove-decisive-in-the-elephants-win/bltdf4c5e55f8c69255",
-          "title": "On video: Diomande's gifts prove decisive in the Elephants' win",
+          "url": "https://www.goal.com/en-ca/news/live-stream-online-tv-where-to-watch-slovakia-v-faroe-islands/bltc8fc31a34ccdd1b6",
+          "title": "Watch Slovakia vs. Faroe Islands live today: Who is broadcasting the match on TV and via live stream?",
           "publisher": "Goal.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjsRDb6ZW-goja1gaiqUm36xiV4y0dpbdWCuUKeOjhFPFaEECcumX4fxQJdk0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTm6ZhMNxxnR6Fk4oK7w1ft7PhUzoadMf1hgYYjZ6MvyNy_dG4j9Puj3l5c3q0"
         },
         {
-          "url": "https://www.coinbase.com/en-sg/predictions/event/KXAFCON1HSPREAD-26NOV13MLIRWA",
-          "title": "Mali vs Rwanda: First Half Spread",
-          "publisher": "Coinbase",
+          "url": "https://sportsbook.fanduel.com/soccer/uefa-nations-league-c/slovakia-v-faroe-islands-36165995",
+          "title": "Slovakia v Faroe Islands Odds",
+          "publisher": "FanDuel Sportsbook",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtlv4wEEHi8uXNCTHBBIdZ2rUZtVp8OMhJgUFnLMqb2UJJQ1_wRphySbCj_fc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA"
         }
       ]
     },
     {
-      "query": "germany",
+      "query": "new orleans",
       "approx_searches": "1000+",
-      "published_at": "2026-11-13T19:20:00Z",
+      "published_at": "2026-11-13T20:00:00Z",
       "related_news_urls": [
-        "https://www.dallascowboys.com/video/cowboys-break-final-thoughts-before-the-49ers",
-        "https://sports.yahoo.com/videos/giardi-patriots-must-protect-ball-183349158.html",
-        "https://www.detroitlions.com/news/notebook-lions-ready-for-home-away-from-home-experience-in-germany-barnes-cisco-clark"
+        "https://www.cnn.com/2026/11/13/us/new-orleans-river-cruise-collision",
+        "https://www.fox8live.com/2026/11/13/source-river-cruiser-carrying-150-people-taking-water-near-port-new-orleans-rescue-efforts-underway/",
+        "https://www.theguardian.com/us-news/2026/nov/13/mississippi-river-crash-new-orleans"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbVJ_-3U6OrAma6FAlEL-4-BAd5KZP1sT6drTSfxZ4Tq0kn9xkRpcVVkIBNLc",
-      "image_credit": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS459bPJhEdzSmSetg6H-7EqmfuzcjNOXthyZgitO0c098lPSEPcBGjK3QMWXs",
+      "image_credit": "CNN",
       "news": [
         {
-          "url": "https://www.dallascowboys.com/video/cowboys-break-final-thoughts-before-the-49ers",
-          "title": "Cowboys Break: Final Thoughts Before the 49ers",
-          "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+          "url": "https://www.cnn.com/2026/11/13/us/new-orleans-river-cruise-collision",
+          "title": "Tanker collides with river cruiser near Port of New Orleans",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbVJ_-3U6OrAma6FAlEL-4-BAd5KZP1sT6drTSfxZ4Tq0kn9xkRpcVVkIBNLc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS459bPJhEdzSmSetg6H-7EqmfuzcjNOXthyZgitO0c098lPSEPcBGjK3QMWXs"
         },
         {
-          "url": "https://sports.yahoo.com/videos/giardi-patriots-must-protect-ball-183349158.html",
-          "title": "Giardi: Patriots MUST protect the ball against Lions",
+          "url": "https://www.fox8live.com/2026/11/13/source-river-cruiser-carrying-150-people-taking-water-near-port-new-orleans-rescue-efforts-underway/",
+          "title": "River cruiser carrying nearly 150 passengers taking on water near Port of New Orleans, rescue efforts underway",
+          "publisher": "FOX 8 Local First",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnKkztB-DFQI1uylnwNR7ILlPKo7RMfTecdpb6zku4FsmgdbGgE7gzpxA1rds"
+        },
+        {
+          "url": "https://www.theguardian.com/us-news/2026/nov/13/mississippi-river-crash-new-orleans",
+          "title": "Tanker collides with cruise ship on Mississippi River in New Orleans",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPPphUmnedaaAfBtClvsX_Ubl4MuhoKb_fyOg0xw9poRjalk75Kuq7A5weWEE"
+        }
+      ]
+    },
+    {
+      "query": "brian poindexter",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-13T20:00:00Z",
+      "related_news_urls": [
+        "https://www.nbcnews.com/politics/2026-elections/alaska-governor-results",
+        "https://whyy.org/articles/delaware-democrats-win-2026/",
+        "https://www.cbsnews.com/philadelphia/news/delaware-election-results-live-2026/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWmvwHQ7qw_OeBHOZP6ZwuRTw2z_p-Uk4Zzu0P7tlDCqywgsu_KC3_mofNjNI",
+      "image_credit": "NBC News",
+      "news": [
+        {
+          "url": "https://www.nbcnews.com/politics/2026-elections/alaska-governor-results",
+          "title": "Alaska Governor Midterm Election 2026: Live Results",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWmvwHQ7qw_OeBHOZP6ZwuRTw2z_p-Uk4Zzu0P7tlDCqywgsu_KC3_mofNjNI"
+        },
+        {
+          "url": "https://whyy.org/articles/delaware-democrats-win-2026/",
+          "title": "Delaware Democrats earn supermajorities in the state legislature, flipping 3 seats",
+          "publisher": "WHYY",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVjxumVzYZTn_C5PrOzEC3dV1XQIOc7kAJvNvgPAL4wJQ_GDjtOLaWAWtSzWw"
+        },
+        {
+          "url": "https://www.cbsnews.com/philadelphia/news/delaware-election-results-live-2026/",
+          "title": "Live Delaware election results: Congressional elections, state general assembly races",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqGHWX2VeB8zQtNqumYqeQQvLloRMpD6sUaZlDKrrhsLWAo7PxszuGHxtSo6Q"
+        }
+      ]
+    },
+    {
+      "query": "swac tv",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T20:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/texas-southern-alabama-m-watch-140000863.html",
+        "https://aamusports.com/news/2026/11/12/football-aamu-hosts-texas-southern-for-senior-day-and-military-appreciation-day.aspx",
+        "https://www.rocketcitynow.com/article/sports/local-sports/alabama-am-host-texas-southern-senior-day-and-military-appreciation-day/525-fa9841d7-3891-49a8-b677-e3ae782df79b"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2oioDWs1eIRSXIfe0-KcDsETx4cyGLXCTuIc6FYn2syqjTxqB24SHlOaYNco",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/texas-southern-alabama-m-watch-140000863.html",
+          "title": "Texas Southern at Alabama A&M: How to watch, date, time, TV channel",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXyQPfMAUxSS9j8E7xdovIny_Z94_XLpS-6ejgOSR15YYaBxjf89vwsYCD86g"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2oioDWs1eIRSXIfe0-KcDsETx4cyGLXCTuIc6FYn2syqjTxqB24SHlOaYNco"
         },
         {
-          "url": "https://www.detroitlions.com/news/notebook-lions-ready-for-home-away-from-home-experience-in-germany-barnes-cisco-clark",
-          "title": "NOTEBOOK: Lions ready for 'home away from home' experience in Munich",
-          "publisher": "Detroit Lions",
+          "url": "https://aamusports.com/news/2026/11/12/football-aamu-hosts-texas-southern-for-senior-day-and-military-appreciation-day.aspx",
+          "title": "AAMU Hosts Texas Southern for Senior Day and Military Appreciation Day",
+          "publisher": "Alabama A&M Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQNW9AU8zWIJIe2ZVS7jqeYqOeNKVsBPa6dNbJoye71Lqmc5fi1BAzLZy8vVA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTalhELCydw05iLJEPNQVrjK7V3WjyJNyufcy7gMVCVIzE1G1drnLC-c56PKPk"
+        },
+        {
+          "url": "https://www.rocketcitynow.com/article/sports/local-sports/alabama-am-host-texas-southern-senior-day-and-military-appreciation-day/525-fa9841d7-3891-49a8-b677-e3ae782df79b",
+          "title": "Alabama A&M to host Texas Southern for Senior Day and Military Appreciation Day",
+          "publisher": "rocketcitynow.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRo1amg0BG4ihRd3nLocz2lf3gt60B56WvVCjScS0Yzlwi0iUTC-HG-7U2n4Ow"
         }
       ]
     },
     {
-      "query": "morocco vs niger",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-13T19:10:00Z",
+      "query": "cleveland state basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T20:00:00Z",
       "related_news_urls": [
-        "https://www.moroccoworldnews.com/2026/11/346108/the-atlas-lions-return-to-casablanca-four-years-and-a-lifetime-later/",
-        "https://rbleipzig.com/en/news/neil-el-aynaoui-injury-international-duty-morocco-2026-11-11",
-        "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii8vZGF0dW1mYW4uY29tL2ZpbGVzL3kueG1sIi8+PC9rcnBhbm8+&id=video-live-morocco-v-niger-dmhykngddsev"
+        "https://goxavier.com/news/2026/11/13/womens-basketball-continues-homestand-vs-cleveland-state",
+        "https://www.crainscleveland.com/sports-recreation/ccl-csu-strategic-plan-20261113/",
+        "https://www.cbssports.com/betting/news/west-florida-cleveland-state-prediction-odds-2026-college-basketball-picks-friday-november-13/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbHHVJKoOtWSI8D4PsiFj0OFieim6lvQIhnbjOg975o2lp1TkbwII87qely0w",
-      "image_credit": "Morocco World News",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzIrsmbQ5d_Elcp8L9I6O1LyZeQn3za5Zsnr2yynly3Bw-FIIFjGBJXySSiBA",
+      "image_credit": "Xavier University Athletics",
       "news": [
         {
-          "url": "https://www.moroccoworldnews.com/2026/11/346108/the-atlas-lions-return-to-casablanca-four-years-and-a-lifetime-later/",
-          "title": "The Atlas Lions Return to Casablanca, Four Years and a Lifetime Later",
-          "publisher": "Morocco World News",
+          "url": "https://goxavier.com/news/2026/11/13/womens-basketball-continues-homestand-vs-cleveland-state",
+          "title": "Women's Basketball Continues Homestand vs Cleveland State",
+          "publisher": "Xavier University Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbHHVJKoOtWSI8D4PsiFj0OFieim6lvQIhnbjOg975o2lp1TkbwII87qely0w"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzIrsmbQ5d_Elcp8L9I6O1LyZeQn3za5Zsnr2yynly3Bw-FIIFjGBJXySSiBA"
         },
         {
-          "url": "https://rbleipzig.com/en/news/neil-el-aynaoui-injury-international-duty-morocco-2026-11-11",
-          "title": "Neil El Aynaoui withdraws from international duty with Morocco",
-          "publisher": "RB Leipzig",
+          "url": "https://www.crainscleveland.com/sports-recreation/ccl-csu-strategic-plan-20261113/",
+          "title": "Cleveland State’s new athletics plan targets fans, funding and wins",
+          "publisher": "Crain's Cleveland Business",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRnNWOXSwHQsF4EO_Y-4_78BrGVWycd-ow8PiFn-BkSRgjvBcc5WEGSDFzf1k"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX7eXxClk5wAjHcOFvsKTZ-ybnGYc2X_wqeaSky5kPcN1lBRVS2Z8EVeLXAyg"
         },
         {
-          "url": "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii8vZGF0dW1mYW4uY29tL2ZpbGVzL3kueG1sIi8+PC9rcnBhbm8+&id=video-live-morocco-v-niger-dmhykngddsev",
-          "title": "[#LIVESTREAm]+! Morocco v Niger LIVE Score Updates in Football Match - Nov. 13, 2026",
-          "publisher": "日本取引所グループ",
+          "url": "https://www.cbssports.com/betting/news/west-florida-cleveland-state-prediction-odds-2026-college-basketball-picks-friday-november-13/",
+          "title": "West Florida vs. Cleveland State prediction, odds: 2026 college basketball picks for Nov. 13 by proven model",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRiAjaSnUkaQMOynjmSOOXMaFaDlqfET3VgCIT8Hzn_c84cYPvfBlH_9pWEZN0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc3VzboWiGecHrdUF6rC3vBMsH2Gb8PzwHYhGuZxXR5hZVhd1aJQe_krRBRGs"
         }
       ]
     },
     {
-      "query": "france vs south africa",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-13T19:10:00Z",
+      "query": "irán",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T20:00:00Z",
       "related_news_urls": [
-        "https://africa.espn.com/espn/story/_/id/50469373/france-vs-south-africa-kick-team-news-how-watch-springboks",
-        "https://www.theguardian.com/sport/2026/nov/12/antoine-dupont-fly-half-france-south-africa-nations-championship-rugby",
-        "https://www.bbc.com/sport/rugby-union/articles/cq742lw1v3pvo"
+        "https://www.dw.com/es/donald-trump-ve-innecesario-un-pacto-de-estados-unidos-con-ir%C3%A1n/a-79935968",
+        "https://www.latimes.com/espanol/internacional/articulo/2026-11-12/trump-dice-que-cree-que-la-guerra-con-iran-ha-terminado-en-la-practica",
+        "https://elpais.com/internacional/2026-11-12/trump-retira-a-vance-de-las-conversaciones-con-iran-para-acabar-la-guerra.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOpFrlpqaWG-DtF3K7-eGEXveIVCBMZEGfrHXnQzrQtAJ7EzM6Rst3GLGtGCg",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlnoqPg8wzYc79OoIMN66uix8Q71yEOYyzqNpqCM2sTr4emY3L9b8BtHSBthA",
+      "image_credit": "DW.com",
+      "news": [
+        {
+          "url": "https://www.dw.com/es/donald-trump-ve-innecesario-un-pacto-de-estados-unidos-con-ir%C3%A1n/a-79935968",
+          "title": "Donald Trump ve innecesario un pacto de Estados Unidos con Irán",
+          "publisher": "DW.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlnoqPg8wzYc79OoIMN66uix8Q71yEOYyzqNpqCM2sTr4emY3L9b8BtHSBthA"
+        },
+        {
+          "url": "https://www.latimes.com/espanol/internacional/articulo/2026-11-12/trump-dice-que-cree-que-la-guerra-con-iran-ha-terminado-en-la-practica",
+          "title": "Trump dice que cree que la guerra con Irán \"ha terminado en la práctica\"",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDmjKL1BNszWbhm-K-GsYUp0DaBBiO-5vtwDCutIKA1N7KhLTutdDaecWbaNA"
+        },
+        {
+          "url": "https://elpais.com/internacional/2026-11-12/trump-retira-a-vance-de-las-conversaciones-con-iran-para-acabar-la-guerra.html",
+          "title": "Trump retira a Vance de las conversaciones con Irán para acabar la guerra",
+          "publisher": "EL PAÍS",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKABBx7_eN7uxMwwlAm5T_pMOhJ0g7NfLJMYKcFqODG4SB56mX27XIFb_uSe0"
+        }
+      ]
+    },
+    {
+      "query": "zero-day vulnerability",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T20:00:00Z",
+      "related_news_urls": [
+        "https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/",
+        "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
+        "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVv7s-yhlG4fpATtxdh648gAaJ9WpPOcIkc2aGFS2lJ3A9ZPgyvq4k0eyWEes",
+      "image_credit": "Ars Technica",
+      "news": [
+        {
+          "url": "https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/",
+          "title": "Windows 0-day dropped by disgruntled researcher hands hackers System rights",
+          "publisher": "Ars Technica",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVv7s-yhlG4fpATtxdh648gAaJ9WpPOcIkc2aGFS2lJ3A9ZPgyvq4k0eyWEes"
+        },
+        {
+          "url": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
+          "title": "New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access",
+          "publisher": "The Hacker News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWrC1J51LZXwXr3kjXWtOa7Chu4Ty6W4Hch8g6I7sKiw8kywnhQzzPDcrhhy0"
+        },
+        {
+          "url": "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/",
+          "title": "Nightmare Eclipse Drops Windows Zero-Day Exploit ‘SignDrop’",
+          "publisher": "SecurityWeek",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxgqZynx2X05Icu9blCqB0e4PsQUvKAqMv8mvbF7XN7g-e6Os8-U1xPRbYHzc"
+        }
+      ]
+    },
+    {
+      "query": "west florida basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T20:00:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/betting/news/west-florida-cleveland-state-prediction-odds-2026-college-basketball-picks-friday-november-13/",
+        "https://csuvikings.com/news/2026/11/12/cleveland-state-mens-basketball-set-for-bulldog-bash.aspx",
+        "https://apnews.com/article/mens-college-basketball-cleveland-florida-general-news-alabama-77252bed5ae64a5da1ff77d6012a2767"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc3VzboWiGecHrdUF6rC3vBMsH2Gb8PzwHYhGuZxXR5hZVhd1aJQe_krRBRGs",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/betting/news/west-florida-cleveland-state-prediction-odds-2026-college-basketball-picks-friday-november-13/",
+          "title": "West Florida vs. Cleveland State prediction, odds: 2026 college basketball picks for Nov. 13 by proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc3VzboWiGecHrdUF6rC3vBMsH2Gb8PzwHYhGuZxXR5hZVhd1aJQe_krRBRGs"
+        },
+        {
+          "url": "https://csuvikings.com/news/2026/11/12/cleveland-state-mens-basketball-set-for-bulldog-bash.aspx",
+          "title": "Cleveland State Men's Basketball Set for Bulldog Bash",
+          "publisher": "csuvikings.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwZQDNitPC8EeN8_aWVoyUqWctXcDVhboI2NMZWUUX5vC2VmgGYswh8FzPE2o"
+        },
+        {
+          "url": "https://apnews.com/article/mens-college-basketball-cleveland-florida-general-news-alabama-77252bed5ae64a5da1ff77d6012a2767",
+          "title": "Cleveland State takes on West Florida in Huntsville, Alabama",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyxytuQ4aGf2BOxfux9vnLUnsxmXV6_4vU1gfZLf7dr_vdaPit7PYKHCUsALk"
+        }
+      ]
+    },
+    {
+      "query": "chiefs depth chart",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T20:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50464631/jaguars-jessie-bates-trade-travis-hunter",
+        "https://www.atlantafalcons.com/news/falcons-news-now-top-headlines-for-week-10-game-vs-chiefs",
+        "https://www.nfl.com/news/jessie-bates-jaguars-falcons-trade"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKcJuo6F7SaPG_qmrtX_8X-uKAXDppEswV5g_Iy0A2qgrlmeVVE6rFSh1aKvM",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://africa.espn.com/espn/story/_/id/50469373/france-vs-south-africa-kick-team-news-how-watch-springboks",
-          "title": "France vs. South Africa - Kick-off time, team news, how to watch the Springboks",
+          "url": "https://www.espn.com/nfl/story/_/id/50464631/jaguars-jessie-bates-trade-travis-hunter",
+          "title": "Travis Hunter makes Jessie Bates' Jaguars trade a hit with his nephews",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOpFrlpqaWG-DtF3K7-eGEXveIVCBMZEGfrHXnQzrQtAJ7EzM6Rst3GLGtGCg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKcJuo6F7SaPG_qmrtX_8X-uKAXDppEswV5g_Iy0A2qgrlmeVVE6rFSh1aKvM"
         },
         {
-          "url": "https://www.theguardian.com/sport/2026/nov/12/antoine-dupont-fly-half-france-south-africa-nations-championship-rugby",
-          "title": "France have spent years trying to beat the Boks but belief and bodies are fading",
-          "publisher": "The Guardian",
+          "url": "https://www.atlantafalcons.com/news/falcons-news-now-top-headlines-for-week-10-game-vs-chiefs",
+          "title": "Falcons News Now: Top headlines for Week 10 game vs. Chiefs",
+          "publisher": "Atlanta Falcons",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKtXLnZbyfTHz6oZoThdgXeNhaEwDJGsLgSBBnLTdIE_zOmuWDTCI68WMClxc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQy9xz0dFQN16EOkQmGv6oigy25PCPzrkK3nkcp10gwRtpxd4aBLNF3A6ie-ls"
         },
         {
-          "url": "https://www.bbc.com/sport/rugby-union/articles/cq742lw1v3pvo",
-          "title": "France v South Africa: Antoine Dupont at fly-half for Paris match",
-          "publisher": "BBC",
+          "url": "https://www.nfl.com/news/jessie-bates-jaguars-falcons-trade",
+          "title": "Jaguars acquire Falcons safety Jessie Bates III, Saints DT Davon Godchaux in trades",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTmBwhBJ1umXav5ScKaIaX7yfpu51DkG8llQ5fyO51c-wQK2gF7E_pcUMlbaQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4TzaBTB7-169S194DcHffwrffsflyWS9ZwuZv2Wyr57_DyhgFUZtE3Ocdbzo"
         }
       ]
     },
     {
-      "query": "mirra andreeva",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T19:10:00Z",
+      "query": "dejounte murray",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-13T19:50:00Z",
       "related_news_urls": [
-        "https://www.wtatennis.com/news/4607998/andreeva-wins-45-of-final-55-points-to-rout-sabalenka-reach-first-fage-wta-finals-semifinal",
-        "https://www.bbc.com/sport/tennis/articles/cq1md03gz0zvo",
-        "https://sports.yahoo.com/articles/jessica-pegula-created-monster-fans-090632253.html"
+        "https://www.espn.com/nba/story/_/id/50473732/sources-dejounte-murray-wants-trade-pelicans",
+        "https://sports.yahoo.com/articles/suns-registered-interest-dejounte-murray-195558186.html",
+        "https://www.nola.com/sports/pelicans/dejounte-murray-pelicans-criticism/article_a8f04963-ac1c-4865-b056-027790351bfa.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvGnCx0ifzofPM4LJys8lZZwORpEbEEbIO7_fA6hFOUd_FSWdGtHNAoOWXvBg",
-      "image_credit": "WTA Tennis",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_U3XDYpNGxJhlUnV5wKTPR3V-FIPF676heixX1lY9_Qgj5MQ64EMhjaLPqRA",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.wtatennis.com/news/4607998/andreeva-wins-45-of-final-55-points-to-rout-sabalenka-reach-first-fage-wta-finals-semifinal",
-          "title": "Andreeva uses early anger as fuel, routs Sabalenka to top FAGE WTA Finals Group 2",
-          "publisher": "WTA Tennis",
+          "url": "https://www.espn.com/nba/story/_/id/50473732/sources-dejounte-murray-wants-trade-pelicans",
+          "title": "Sources: Murray wants trade from Pelicans; both sides working on resolution",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvGnCx0ifzofPM4LJys8lZZwORpEbEEbIO7_fA6hFOUd_FSWdGtHNAoOWXvBg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_U3XDYpNGxJhlUnV5wKTPR3V-FIPF676heixX1lY9_Qgj5MQ64EMhjaLPqRA"
         },
         {
-          "url": "https://www.bbc.com/sport/tennis/articles/cq1md03gz0zvo",
-          "title": "WTA Finals: Mirra Andreeva thrashes Aryna Sabalenka, Elina Svitolina beats Karolina Muchova",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWeVuqJduTTS8yqKFZDXKxVweYXQiy4R0UoCzo924AspEk-tSgnBqf7S3I4hw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/jessica-pegula-created-monster-fans-090632253.html",
-          "title": "“Jessica Pegula Has Created A Monster” – Fans React After Mirra Andreeva Stuns Aryna Sabalenka With 6-0 Bagel At WTA Finals",
+          "url": "https://sports.yahoo.com/articles/suns-registered-interest-dejounte-murray-195558186.html",
+          "title": "Suns have registered interest in Dejounte Murray",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_qux7zNEPrHPoJtCZMfb23U6E84zLWAzzXZl70GhZKc4h5XFfcsdcipeDjRg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1ffAoxseYp3Zm7GOXPizkTNcYJ1RWG5qLtVEbLjuDkREHb2jfJotSJwJT15Q"
+        },
+        {
+          "url": "https://www.nola.com/sports/pelicans/dejounte-murray-pelicans-criticism/article_a8f04963-ac1c-4865-b056-027790351bfa.html",
+          "title": "Pelicans’ Dejounte Murray talks ‘sabotage,’ responds harshly to criticism on social media",
+          "publisher": "NOLA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuOrt8mxbM2gSHntf2ovVYA2aeTPys2AUKF9geHR-3e7_fc4JfB0BRXlFqoUU"
         }
       ]
     }
