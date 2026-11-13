@@ -3,17 +3,122 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T06:36:34.487393Z",
+  "checked_at": "2026-11-13T07:01:28.213159Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "diane morgan",
+      "approx_searches": "100+",
+      "published_at": "2026-11-13T06:40:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/tv-and-radio/2026/nov/12/cunk-on-cinema-review-philomena-cunk-diane-morgan-bbc-two",
+        "https://www.wsj.com/arts-culture/television/cunk-on-cinema-review-a-shtick-wears-thin-on-netflix-98dcbc3a",
+        "https://www.ft.com/content/a2388361-ac33-4f36-9043-bfa6cdafbb2c"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQm155FZv5aKU55bqvYWzxpvZXrFNqKAt0koHC2uofcH7zc7L-W1aUnkfpthtY",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/12/cunk-on-cinema-review-philomena-cunk-diane-morgan-bbc-two",
+          "title": "Cunk on Cinema review – Diane Morgan baffles Hollywood with some of the stupidest jokes ever told",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQm155FZv5aKU55bqvYWzxpvZXrFNqKAt0koHC2uofcH7zc7L-W1aUnkfpthtY"
+        },
+        {
+          "url": "https://www.wsj.com/arts-culture/television/cunk-on-cinema-review-a-shtick-wears-thin-on-netflix-98dcbc3a",
+          "title": "‘Cunk on Cinema’ Review: A Shtick Wears Thin on Netflix",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn2yit3ZgrRad6ChNh5PMaphD5OtFJFu6LF3e4UYVuBS_1JdgEgMbgPfBj3Es"
+        },
+        {
+          "url": "https://www.ft.com/content/a2388361-ac33-4f36-9043-bfa6cdafbb2c",
+          "title": "Cunk on Cinema review — Britain’s top mockumentarian investigates if film is finished",
+          "publisher": "Financial Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTezqnReCmnCgo0_DqwOj56ItlLMPNvp154UuynlSwN8X7n_-n4RafHy8UdE9k"
+        }
+      ]
+    },
+    {
+      "query": "india cricket",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T06:30:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-4th-odi-1539440/match-preview",
+        "https://www.cricbuzz.com/cricket-news/140878/new-zealand-vs-india-shreyas-iyer-takes-over-as-india-look-to-wrap-up-series-cricbuzzcom",
+        "https://sports.yahoo.com/articles/india-wins-toss-bowls-4th-015811016.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmDp2deYrkdSsjNYr3ul9m9cUabc7JscWkIrsj3OAB5VI0pgo278vXP8PCQ0A",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-4th-odi-1539440/match-preview",
+          "title": "NZ look to avoid series defeat with batters set to get a boost",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmDp2deYrkdSsjNYr3ul9m9cUabc7JscWkIrsj3OAB5VI0pgo278vXP8PCQ0A"
+        },
+        {
+          "url": "https://www.cricbuzz.com/cricket-news/140878/new-zealand-vs-india-shreyas-iyer-takes-over-as-india-look-to-wrap-up-series-cricbuzzcom",
+          "title": "New Zealand vs India: Shreyas Iyer takes over as India look to wrap up series",
+          "publisher": "Cricbuzz",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9L5wUw8EOKeoZgFPEqy6yBiy-mq27mC_CHPxWBp7CsmABRlJK43-X2DH0cUU"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/india-wins-toss-bowls-4th-015811016.html",
+          "title": "India wins the toss and bowls in the 4th cricket ODI against New Zealand",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7nd0V36X9AKRK812l6OoiCT6zQwKl2It7hSJEvft6Tjl9ZjfH-LCJrhAkmC4"
+        }
+      ]
+    },
+    {
+      "query": "matt henry",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-13T06:20:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-4th-odi-1539440/ball-by-ball-commentary",
+        "https://openthemagazine.com/sports/dropped-on-5-unstoppable-at-125-meet-will-young-new-zealands-permanent-replacement",
+        "https://www.cricbuzz.com/cricket-videos/218767/cricbuzz-live-youngs-125-helps-nz-post-333-can-india-pull-off-the-chase"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTidvVCoo_Ps5botaRLslrGRzSHXztOqVatwoQywZ-eJfz5xMaXBeXyOfTP4Ug",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-4th-odi-1539440/ball-by-ball-commentary",
+          "title": "Ball by Ball Commentary & Live Score - NZ vs IND, 4th ODI",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTidvVCoo_Ps5botaRLslrGRzSHXztOqVatwoQywZ-eJfz5xMaXBeXyOfTP4Ug"
+        },
+        {
+          "url": "https://openthemagazine.com/sports/dropped-on-5-unstoppable-at-125-meet-will-young-new-zealands-permanent-replacement",
+          "title": "Dropped on 5, Unstoppable at 125: Meet Will Young, New Zealand’s Permanent Replacement",
+          "publisher": "Open Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcI-1qRCVWDFsawYtsMUGbY4xBoCZLJeNyuZ-tWROrHvpHpwugTPd_6vp_HA8"
+        },
+        {
+          "url": "https://www.cricbuzz.com/cricket-videos/218767/cricbuzz-live-youngs-125-helps-nz-post-333-can-india-pull-off-the-chase",
+          "title": "Cricbuzz Live: Young's 125 helps NZ post 333! Can India pull off the chase?",
+          "publisher": "Cricbuzz",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbll0XbqLIOfWk0Fb3Rna2Qi1kUAkp8tNv5HqqU92TgwHIMyMeZI73ep5Msaw"
+        }
+      ]
+    },
     {
       "query": "duran duran drummer roger taylor",
       "approx_searches": "200+",
       "published_at": "2026-11-13T06:20:00Z",
       "related_news_urls": [
         "https://www.bbc.com/news/articles/crwy499k504do",
-        "https://www.theguardian.com/music/2026/nov/12/duran-duran-drummer-roger-taylor-leaves-band-due-to-tinnitus",
-        "https://www.latimes.com/entertainment-arts/music/story/2026-11-12/duran-duran-roger-taylor-retires-band-playing-drums"
+        "https://www.yahoo.com/entertainment/music/articles/consummate-gentleman-rock-n-roll-055825963.html",
+        "https://www.theguardian.com/music/2026/nov/12/duran-duran-drummer-roger-taylor-leaves-band-due-to-tinnitus"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_opbV-6XHU0-Rr-9TqZFPFdCi6z15ePJY78fhH4I4lgdpl_9WqXOG2toGH90",
       "image_credit": "BBC",
@@ -26,18 +131,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_opbV-6XHU0-Rr-9TqZFPFdCi6z15ePJY78fhH4I4lgdpl_9WqXOG2toGH90"
         },
         {
+          "url": "https://www.yahoo.com/entertainment/music/articles/consummate-gentleman-rock-n-roll-055825963.html",
+          "title": "‘The Consummate Gentleman of Rock ‘n’ Roll’: Nile Rodgers Pays Tribute to Duran Duran’s Retiring Drummer Roger Taylor",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2Usr4FlCHSmnODHhxmmK2XJ8g6_WAlG_SBFofmRP_JDNgCuibQPomK-5Rs6c"
+        },
+        {
           "url": "https://www.theguardian.com/music/2026/nov/12/duran-duran-drummer-roger-taylor-leaves-band-due-to-tinnitus",
           "title": "Duran Duran drummer Roger Taylor leaves band due to tinnitus",
           "publisher": "The Guardian",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgoyASAQ9RfBrjRuq9nrFi0kFukhElwaObykYeIqkrmQ4GbhrxvxjaZXf7DDA"
-        },
-        {
-          "url": "https://www.latimes.com/entertainment-arts/music/story/2026-11-12/duran-duran-roger-taylor-retires-band-playing-drums",
-          "title": "Duran Duran’s Roger Taylor steps down, retires from playing drums",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHTvF-N7ugaNyA7e4cUHcHNDT_ZUFGtGKmLCem3Oey5HHIq-oc2MPRN7vIhzs"
         }
       ]
     },
@@ -248,111 +353,6 @@
           "publisher": "People.com",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8VvgDH4p4dNBDpNS8T_f0ZjlzOu8T2w--U_xqUcG6DZtJAdlv7juCppy4Av0"
-        }
-      ]
-    },
-    {
-      "query": "mcu films",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T05:50:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/film/news/avengers-doomsday-ryan-reynolds-hugh-jackman-writers-1236946441/",
-        "https://www.imdb.com/news/ni66108256/?ref_=int_nwr_2",
-        "https://gizmodo.com/avengers-doomsday-was-partially-written-by-two-surprising-marvel-stars-2000838991"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7Eh8vlSIX6ZN-8Vj1ve7Kze4_t1HjCw39IvIE83KhktAvco77EJJC7RQRCFI",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/film/news/avengers-doomsday-ryan-reynolds-hugh-jackman-writers-1236946441/",
-          "title": "‘Avengers: Doomsday’ Lists Ryan Reynolds and Hugh Jackman Among 10 Writers",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7Eh8vlSIX6ZN-8Vj1ve7Kze4_t1HjCw39IvIE83KhktAvco77EJJC7RQRCFI"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66108256/?ref_=int_nwr_2",
-          "title": "Los créditos del WGA vinculan a Ryan Reynolds y Hugh Jackman con Deadpool y Lobezno en ‘Avengers: Doomsday’",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtEo7YYEeDxsG2JLkoCpB4US7HPXJ-MNbiRyau8iSf9zmUAz7oMzLJ7EwOwD4"
-        },
-        {
-          "url": "https://gizmodo.com/avengers-doomsday-was-partially-written-by-two-surprising-marvel-stars-2000838991",
-          "title": "Ryan Reynolds and Hugh Jackman Wrote on 'Avengers: Doomsday'",
-          "publisher": "Gizmodo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdYBNPPBJeAKLDCee_lsiVKtqWlYUQsEffUQRWmsiKZMWMDc47mmyWRXE2SiY"
-        }
-      ]
-    },
-    {
-      "query": "afg vs zim",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T05:40:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/series/afghanistan-v-zimbabwe-2026-27-1555105/afghanistan-vs-zimbabwe-2nd-test-1555124/match-preview",
-        "https://www.heraldonline.co.zw/chevrons-back-on-the-grind/",
-        "https://guyanachronicle.com/2026/11/10/craig-ervine-slams-maiden-double-ton-in-draw-vs-afghanistan/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcST7FFHNtBeIdCTEz1pkHQBngsCs8BuFr6Roe1WiO9KchW17-oxbhMU09zwnEI",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/series/afghanistan-v-zimbabwe-2026-27-1555105/afghanistan-vs-zimbabwe-2nd-test-1555124/match-preview",
-          "title": "Bowlers eye more assistance from Sharjah pitch after runathon in first Test",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcST7FFHNtBeIdCTEz1pkHQBngsCs8BuFr6Roe1WiO9KchW17-oxbhMU09zwnEI"
-        },
-        {
-          "url": "https://www.heraldonline.co.zw/chevrons-back-on-the-grind/",
-          "title": "Chevrons back on the grind",
-          "publisher": "Herald.co.zw",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvRmFTKDAZV9SLxK02C2fDqd4Kqqhxzk8BfNM7iVcBGivEj_tSpnDlwrWVTr8"
-        },
-        {
-          "url": "https://guyanachronicle.com/2026/11/10/craig-ervine-slams-maiden-double-ton-in-draw-vs-afghanistan/",
-          "title": "Craig Ervine slams maiden double ton in draw vs Afghanistan",
-          "publisher": "Guyana Chronicle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtZTYtFqPqHxd7BE5mfyBODLNc8GFZkr99S6ziqWFsHa3k5ydadaSf7S31JOU"
-        }
-      ]
-    },
-    {
-      "query": "icc",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T05:40:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/story/icc-plans-to-exercise-greater-control-over-t20-franchise-leagues-1562388",
-        "https://theshillongtimes.com/2026/11/12/wtc-match-ups-from-2027-to-2031-set-to-be-proposed-during-icc-meet/",
-        "https://www.telegraphindia.com/sports/icc-eyes-usd-10-billion-cricket-economy-through-sponsorship-gaming-and-data-monetisation-prnt/cid/2188994"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQeoP18fIjdAav8oW3-8BBR0D7alTsQmmMrbWo7eUtewRf9oTTbMdCu4XhG_Y",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/story/icc-plans-to-exercise-greater-control-over-t20-franchise-leagues-1562388",
-          "title": "ICC proposes greater control over T20 franchise leagues",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQeoP18fIjdAav8oW3-8BBR0D7alTsQmmMrbWo7eUtewRf9oTTbMdCu4XhG_Y"
-        },
-        {
-          "url": "https://theshillongtimes.com/2026/11/12/wtc-match-ups-from-2027-to-2031-set-to-be-proposed-during-icc-meet/",
-          "title": "WTC match-ups from 2027 to 2031 set to be proposed during ICC meet",
-          "publisher": "The Shillong Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8fEi7gPecv14zeFpt1WK_cN5YnK8kdDry_ceDG3HjvCy7M8KT7tcrmI4ajPw"
-        },
-        {
-          "url": "https://www.telegraphindia.com/sports/icc-eyes-usd-10-billion-cricket-economy-through-sponsorship-gaming-and-data-monetisation-prnt/cid/2188994",
-          "title": "ICC to decide on cricket economy boost, eyes USD 10 billion annual global revenue target",
-          "publisher": "Telegraph India",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3RPiWx6Fp_1VwKlQewEnLJGizx8q95VMxwtIjD588yH4Hha-8T0WG34r7MRA"
         }
       ]
     }
