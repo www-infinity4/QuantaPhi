@@ -3,41 +3,103 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T10:01:16.191430Z",
+  "checked_at": "2026-11-13T10:31:24.379691Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "christian langmo",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T09:30:00Z",
+      "query": "王忠林",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T10:10:00Z",
       "related_news_urls": [
-        "https://www.coinbase.com/predictions/event/KXNHLGAME-26NOV11UTAVGK",
-        "https://www.coinbase.com/predictions/event/KXRAIN-26NOV12",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/15a5be0c-0146-4704-ab45-8cf22b0824db/"
+        "https://m.sohu.com/a/1101184382_260616?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "https://www.ntdtv.com/gb/2026/11/13/a104150400.html",
+        "https://cn.wsj.com/articles/%E7%BE%8E%E8%81%94%E8%88%AA%E5%B0%86%E7%A6%81%E6%AD%A2ai%E6%9C%BA%E5%99%A8%E4%BA%BA%E9%A2%84%E8%AE%A2%E6%9C%BA%E7%A5%A8-0d318300"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMkWw9_hkS4woSw5VwxFzpyfqSmu8LW2HuyVXYfgxVpDwoYwkcPytna703LeU",
-      "image_credit": "Coinbase",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzPUfeLpNA1IIoGfUnGBLjK0fofhfZVufxNjsOq6e90QeEU5zuwmm0EIKXgDg",
+      "image_credit": "Sohu",
       "news": [
         {
-          "url": "https://www.coinbase.com/predictions/event/KXNHLGAME-26NOV11UTAVGK",
-          "title": "Utah vs Vegas | Prediction Markets",
-          "publisher": "Coinbase",
+          "url": "https://m.sohu.com/a/1101184382_260616?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "title": "十四届全国人大环境与资源保护委员会副主任委员王忠林被查",
+          "publisher": "Sohu",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMkWw9_hkS4woSw5VwxFzpyfqSmu8LW2HuyVXYfgxVpDwoYwkcPytna703LeU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzPUfeLpNA1IIoGfUnGBLjK0fofhfZVufxNjsOq6e90QeEU5zuwmm0EIKXgDg"
         },
         {
-          "url": "https://www.coinbase.com/predictions/event/KXRAIN-26NOV12",
-          "title": "Where will it rain on Nov 12, 2026? | Prediction Markets",
-          "publisher": "Coinbase",
+          "url": "https://www.ntdtv.com/gb/2026/11/13/a104150400.html",
+          "title": "王忠林出事？傳多處住所被抄 多名家人被帶走",
+          "publisher": "新唐人電視台",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqH5LcOOUMV3IO1B9I8HqzXbU_TNbbNGcE8_qKCaSuU7vjhG-VCs0xpkmAfEA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8Lr3xhWMrvOO6f3MwQkWURc9sak7345urZQOHsLSZW_qo-mc_FEmfaTsSNgM"
         },
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/15a5be0c-0146-4704-ab45-8cf22b0824db/",
-          "title": "November 13, 2026: Yu Hsiou Hsu vs Rio Noguchi Tennis Prediction Market",
-          "publisher": "Robinhood",
+          "url": "https://cn.wsj.com/articles/%E7%BE%8E%E8%81%94%E8%88%AA%E5%B0%86%E7%A6%81%E6%AD%A2ai%E6%9C%BA%E5%99%A8%E4%BA%BA%E9%A2%84%E8%AE%A2%E6%9C%BA%E7%A5%A8-0d318300",
+          "title": "美联航将禁止AI机器人预订机票",
+          "publisher": "华尔街日报中文网",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDae8C1Bo4Ym2UGwZrY1Rxts7DWpZwzUrktFLjUQX6aek-D6TNG0uzN_GaCHI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt0-798y4UFdsMiWZhKngFIIOuZJGEkUgtgUx6u2hlLgqCuQdrjoxS6sGeyjQ"
+        }
+      ]
+    },
+    {
+      "query": "rory mcilroy",
+      "approx_searches": "100+",
+      "published_at": "2026-11-13T10:10:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/golf/articles/cwlymny900ezo",
+        "https://www.golfdigest.com/story/heres-prize-money-payout-for-dp-world-tour-2026-race-to-dubai-bonus-pool",
+        "https://www.espn.com/golf/story/_/id/50461266/rory-mcilroy-boosts-bid-record-tying-race-dubai-title"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKj0YSenxmJ_0jU7V12sHC13nCaF_Diln_I8ug5hEj5D3p_k7AUf62RrkP0UU",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/golf/articles/cwlymny900ezo",
+          "title": "DP World Tour Championship: Rory McIlroy best placed Race to Dubai contender after first round",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKj0YSenxmJ_0jU7V12sHC13nCaF_Diln_I8ug5hEj5D3p_k7AUf62RrkP0UU"
+        },
+        {
+          "url": "https://www.golfdigest.com/story/heres-prize-money-payout-for-dp-world-tour-2026-race-to-dubai-bonus-pool",
+          "title": "Here’s the prize money payout for the DP World Tour's 2026 Race to Dubai bonus pool",
+          "publisher": "Golf Digest",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2exYDwaMKwG87VL0yNg4XzAIv4s_uLzaE9_yLzb8DzqQmhFXmBpKSAUwzNyY"
+        },
+        {
+          "url": "https://www.espn.com/golf/story/_/id/50461266/rory-mcilroy-boosts-bid-record-tying-race-dubai-title",
+          "title": "Rory McIlroy opens season finale with 69, best among Race to Dubai contenders",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIx7hnFWPqTl85rgnbdJDpHyWC95hqpm4_oTR1q3ijVa5ONvLnRozbqrXyMJk"
+        }
+      ]
+    },
+    {
+      "query": "miami vice stan switek actor",
+      "approx_searches": "100+",
+      "published_at": "2026-11-13T10:00:00Z",
+      "related_news_urls": [
+        "https://people.com/miami-vice-star-michael-talbott-makes-rare-appearance-12251274",
+        "https://www.bollywoodshaadis.com/articles/michael-talbott-looks-unrecognizable-86592"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjXPQNuJytWPozQO5qPjJymLwKAxDz2GYfFyVzb7GhgawVL1FG5pz4Hk96xhQ",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/miami-vice-star-michael-talbott-makes-rare-appearance-12251274",
+          "title": "‘Miami Vice’ Star Michael Talbott, 71, Unrecognizable as He Makes Rare Appearance",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjXPQNuJytWPozQO5qPjJymLwKAxDz2GYfFyVzb7GhgawVL1FG5pz4Hk96xhQ"
+        },
+        {
+          "url": "https://www.bollywoodshaadis.com/articles/michael-talbott-looks-unrecognizable-86592",
+          "title": "Michael Talbott, 71, Looks Unrecognizable As 'Miami Vice' Star Makes Rare Appearance",
+          "publisher": "BollywoodShaadis",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0CdiL07rzMM3vP3Daj1rYuZMn4No1WvT-aeK7DGdkI6tLn1S0RaMgstlmTVE"
         }
       ]
     },
@@ -77,37 +139,72 @@
       ]
     },
     {
-      "query": "gta vi",
-      "approx_searches": "2000+",
+      "query": "lamar odom",
+      "approx_searches": "500+",
       "published_at": "2026-11-13T09:10:00Z",
       "related_news_urls": [
-        "https://www.rockstargames.com/newswire/article/39ak81277255o9/explore-the-grand-theft-auto-vi-launch-gallery",
-        "https://www.bloomberg.com/news/articles/2026-11-12/the-1-billion-video-game-about-to-swallow-the-world-whole",
-        "https://variety.com/2026/gaming/news/gta-6-release-gaming-industry-takeover-1236945197/"
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/12/khloe-kardashian-lamar-odom-documentary-reaction/92723786007/",
+        "https://www.eonline.com/news/1438045/khloe-kardashian-says-lamar-odom-is-dead-to-her-after-untold-documentary",
+        "https://pagesix.com/2026/11/12/entertainment/khloe-kardashian-slams-ex-lamar-odom-after-his-comments-on-their-marriage/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4lX0sBBMad-unh9Yy1yTW9kGHyrB_lxfyX6U_DFvhPjD55NVBRM1ENobVcxo",
-      "image_credit": "Rockstar Games",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HYVbK0QEsYaupEpFct0Vx2IGLYxVDn0m8KHyj-UWQsDKwe8_i_Q36x6-be4",
+      "image_credit": "USA Today",
       "news": [
         {
-          "url": "https://www.rockstargames.com/newswire/article/39ak81277255o9/explore-the-grand-theft-auto-vi-launch-gallery",
-          "title": "Explore the Grand Theft Auto VI Launch Gallery",
-          "publisher": "Rockstar Games",
+          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/12/khloe-kardashian-lamar-odom-documentary-reaction/92723786007/",
+          "title": "Khloé Kardashian says Lamar Odom 'is dead to me' after this 'distasteful' move",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4lX0sBBMad-unh9Yy1yTW9kGHyrB_lxfyX6U_DFvhPjD55NVBRM1ENobVcxo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HYVbK0QEsYaupEpFct0Vx2IGLYxVDn0m8KHyj-UWQsDKwe8_i_Q36x6-be4"
         },
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-12/the-1-billion-video-game-about-to-swallow-the-world-whole",
-          "title": "The $1 Billion Video Game About to Swallow the World Whole",
-          "publisher": "Bloomberg.com",
+          "url": "https://www.eonline.com/news/1438045/khloe-kardashian-says-lamar-odom-is-dead-to-her-after-untold-documentary",
+          "title": "Khloe Kardashian Says Lamar Odom Is Dead to Her After His Controversial Comments",
+          "publisher": "E! News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZClo8QR9wtdtqYMjdOhI8IHFnkggM3Ale_8mNazDAH8_uF7G3VHvLYY31R64"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRNd3XZKdQ9TfEOM8DKTsLp9XL1J9RPzMWha_8XJDgquHsYM7t_EtwWMhAmmQ"
         },
         {
-          "url": "https://variety.com/2026/gaming/news/gta-6-release-gaming-industry-takeover-1236945197/",
-          "title": "‘Unlike Anything Else’: As ‘GTA 6’ Approaches, the Gaming Industry Braces the World for Its Pop Culture Takeover",
-          "publisher": "Variety",
+          "url": "https://pagesix.com/2026/11/12/entertainment/khloe-kardashian-slams-ex-lamar-odom-after-his-comments-on-their-marriage/",
+          "title": "Khloé Kardashian issues brutal takedown of ex Lamar Odom after his ‘lame’ comments on their marriage",
+          "publisher": "Page Six",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThq-q30Yv2vaiBGA8K_5ePX1UXiPEd-dUwy26OMYbHE0dEx7RWh_lwqdf8D2k"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_fnvxTWg8A3JsSjuv8PEtT-VpCnwH99uNKHnln0O_AuAUsiMZN0eFkgYyYEg"
+        }
+      ]
+    },
+    {
+      "query": "11",
+      "approx_searches": "100+",
+      "published_at": "2026-11-13T09:00:00Z",
+      "related_news_urls": [
+        "https://www.politico.com/gallery/2026/11/13/the-nations-cartoonists-on-the-week-in-politics-01164446",
+        "https://theweek.com/cartoons/political-cartoons-for-november-11-2026",
+        "https://theweek.com/cartoons/political-cartoons-for-november-10-2026"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXTMfGcwzF0EM2s5jY-Dno52vyRiFLG2JO2DKIK-RwE_tlMwpzR3RRN4Fe07c",
+      "image_credit": "Politico",
+      "news": [
+        {
+          "url": "https://www.politico.com/gallery/2026/11/13/the-nations-cartoonists-on-the-week-in-politics-01164446",
+          "title": "The nation’s cartoonists on the week in politics",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXTMfGcwzF0EM2s5jY-Dno52vyRiFLG2JO2DKIK-RwE_tlMwpzR3RRN4Fe07c"
+        },
+        {
+          "url": "https://theweek.com/cartoons/political-cartoons-for-november-11-2026",
+          "title": "Political cartoons for November 11",
+          "publisher": "The Week",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRduE0P9IbERAZjrmzkVK-bKlKyYXVmY_dI_nk5UCJQLdKMlSR6UzlZC7XVeFE"
+        },
+        {
+          "url": "https://theweek.com/cartoons/political-cartoons-for-november-10-2026",
+          "title": "Political cartoons for November 10",
+          "publisher": "The Week",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUFEFGz7ieETCuFMGc8gdFgLhOkWTHv4vuX20ymNjcl6jl76Fy740a4RCwDZw"
         }
       ]
     },
@@ -116,19 +213,26 @@
       "approx_searches": "500+",
       "published_at": "2026-11-13T09:00:00Z",
       "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/15a5be0c-0146-4704-ab45-8cf22b0824db/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/3a81f12f-d108-40f4-8810-d2df44c2a52f/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/2045cde5-c168-4cfb-a606-42bf333927be/"
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/2f0b0322-2901-476b-b46a-bf4930e53c46/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/bfc9c2e0-4f35-43c0-b277-ec60e009aa43/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/3a81f12f-d108-40f4-8810-d2df44c2a52f/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDae8C1Bo4Ym2UGwZrY1Rxts7DWpZwzUrktFLjUQX6aek-D6TNG0uzN_GaCHI",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwjeJDNtQkoglcP17Zs8kDMPVbcS2k7Wk_JL7k2oE8MGku1UZF-UZj1PuqAA4",
       "image_credit": "Robinhood",
       "news": [
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/15a5be0c-0146-4704-ab45-8cf22b0824db/",
-          "title": "November 13, 2026: Yu Hsiou Hsu vs Rio Noguchi Tennis Prediction Market",
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/2f0b0322-2901-476b-b46a-bf4930e53c46/",
+          "title": "November 15, 2026: Jessica Pegula vs Mirra Andreeva Prediction Market",
           "publisher": "Robinhood",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDae8C1Bo4Ym2UGwZrY1Rxts7DWpZwzUrktFLjUQX6aek-D6TNG0uzN_GaCHI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwjeJDNtQkoglcP17Zs8kDMPVbcS2k7Wk_JL7k2oE8MGku1UZF-UZj1PuqAA4"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/bfc9c2e0-4f35-43c0-b277-ec60e009aa43/",
+          "title": "November 11, 2026: Carole Monnet vs Polona Hercog Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_ir327pUEu5_6dQBqTGLUeq0qh_19ljOSabOEVaLDNr0EaqVgSHEqdb4Tt1Q"
         },
         {
           "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/3a81f12f-d108-40f4-8810-d2df44c2a52f/",
@@ -136,13 +240,41 @@
           "publisher": "Robinhood",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEJMwrnwmzlInLmdONDm_dnz45BVKTZvIOIOVOyqc80bxlrpkJ5DBQSkahxTU"
+        }
+      ]
+    },
+    {
+      "query": "freeze warning",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-13T08:40:00Z",
+      "related_news_urls": [
+        "https://cnaw2news.com/wx/weather-alert-freeze-warning-for-tallapoosa-chambers-macon-lee-and-2-more-a10012",
+        "https://www.kwwl.com/video/colder-temperatures-tomorrow/video_b8bedeb8-5506-5191-9eaa-059752c2d8b8.html",
+        "https://www.wbtv.com/2026/11/12/snow-forecast-western-north-carolina-big-temp-drop-approaches/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6WCm-ylQb6M4riFWPeuK7LX75N2wLGJ82Snn9_lHZwwUDyiams03dAUp3fhA",
+      "image_credit": "CNAW2",
+      "news": [
+        {
+          "url": "https://cnaw2news.com/wx/weather-alert-freeze-warning-for-tallapoosa-chambers-macon-lee-and-2-more-a10012",
+          "title": "Freeze Warning for Tallapoosa · Chambers · Macon · Lee and 2 more",
+          "publisher": "CNAW2",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6WCm-ylQb6M4riFWPeuK7LX75N2wLGJ82Snn9_lHZwwUDyiams03dAUp3fhA"
         },
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/2045cde5-c168-4cfb-a606-42bf333927be/",
-          "title": "November 11, 2026: Casper Ruud vs Alexander Shevchenko Prediction Market",
-          "publisher": "Robinhood",
+          "url": "https://www.kwwl.com/video/colder-temperatures-tomorrow/video_b8bedeb8-5506-5191-9eaa-059752c2d8b8.html",
+          "title": "Colder temperatures tomorrow",
+          "publisher": "KWWL",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5v-hpgdwMz687Wb_SRnvUwM1jyHGK1g1jcphWR2zNB77dVcsnA4kR0qwtz3U"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbtPkBmX_iZuU2lh9BYtXbzIZceB1ZYN1yG_RLVitJHoq7RIkA9F7XBWJdwCE"
+        },
+        {
+          "url": "https://www.wbtv.com/2026/11/12/snow-forecast-western-north-carolina-big-temp-drop-approaches/",
+          "title": "Snow in the forecast for Western North Carolina as big temp drop approaches",
+          "publisher": "WBTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOgUwnFb8dwjqlB46I_9uV5SZ0xGwm2rmJ4mN3ONbjcFhg4lKwCzN9D96UIUk"
         }
       ]
     },
@@ -151,19 +283,26 @@
       "approx_searches": "20000+",
       "published_at": "2026-11-13T08:30:00Z",
       "related_news_urls": [
-        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-4th-odi-1539440/ball-by-ball-commentary",
-        "https://www.nzherald.co.nz/sport/cricket/black-caps/black-caps-v-india-result-will-young-century-matt-henry-six-wicket-haul-see-new-zealand-to-huge-odi-victory/KFHN5ITDIBHJ7FSRUJQVTFGGCU/",
-        "https://inshorts.com/en/news/india-suffer-their-second-biggest-defeat-in-odi-cricket-history-1794558598906"
+        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-4th-odi-1539440/live-match-blog",
+        "https://sports.yahoo.com/articles/huge-difference-wickets-shreyas-iyer-093003441.html",
+        "https://www.nzherald.co.nz/sport/cricket/black-caps/black-caps-v-india-result-will-young-century-matt-henry-six-wicket-haul-see-new-zealand-to-huge-odi-victory/KFHN5ITDIBHJ7FSRUJQVTFGGCU/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTidvVCoo_Ps5botaRLslrGRzSHXztOqVatwoQywZ-eJfz5xMaXBeXyOfTP4Ug",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGOrC6SUSAQJhr68HidATTpLadMBK21dCCZw7x7H57u6eWZZccJvysmhiKIY0",
       "image_credit": "Cricinfo",
       "news": [
         {
-          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-4th-odi-1539440/ball-by-ball-commentary",
-          "title": "Ball by Ball Commentary & Live Score - NZ vs IND, 4th ODI",
+          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-4th-odi-1539440/live-match-blog",
+          "title": "NZ vs Ind, 3rd ODI, Live Blog - Henry six-for demolishes India, keeps series alive",
           "publisher": "Cricinfo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTidvVCoo_Ps5botaRLslrGRzSHXztOqVatwoQywZ-eJfz5xMaXBeXyOfTP4Ug"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGOrC6SUSAQJhr68HidATTpLadMBK21dCCZw7x7H57u6eWZZccJvysmhiKIY0"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/huge-difference-wickets-shreyas-iyer-093003441.html",
+          "title": "'Huge difference in the wickets': Shreyas Iyer reveals why India's batting collapsed in 4th ODI at Mount Maunganui",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRiKyg6z-DqE27csWeC_lRgilHcfH0wmWscPUMhi1selAJ1uls4EPT4brI4uug"
         },
         {
           "url": "https://www.nzherald.co.nz/sport/cricket/black-caps/black-caps-v-india-result-will-young-century-matt-henry-six-wicket-haul-see-new-zealand-to-huge-odi-victory/KFHN5ITDIBHJ7FSRUJQVTFGGCU/",
@@ -171,13 +310,6 @@
           "publisher": "NZ Herald",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8hwKiMXYr-qyw9Cru8U1NeH0SGSAPNUu8FjUGz2yK4dfKp03Y2bW23GDtJVo"
-        },
-        {
-          "url": "https://inshorts.com/en/news/india-suffer-their-second-biggest-defeat-in-odi-cricket-history-1794558598906",
-          "title": "India suffer their second-biggest defeat in ODI cricket history | To view the match scorecard | Inshorts",
-          "publisher": "Inshorts",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfLmLCl3izCDj6VEFVXikVvlWEa30Nql_J9VRd2lH7TutWiHJUQCIWTArn30k"
         }
       ]
     },
@@ -213,146 +345,6 @@
           "publisher": "Variety",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUBJel043g1CaWBLPi9E2uaxbqqG45QVPgBQMkoGqfvu4g1vV-zpF4aSDU3IU"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 countdown",
-      "approx_searches": "100+",
-      "published_at": "2026-11-13T08:10:00Z",
-      "related_news_urls": [
-        "https://tech.yahoo.com/videos/gta-5-mod-turns-gta-163000084.html",
-        "https://www.pcgamer.com/games/grand-theft-auto/i-have-converted-gta-5-from-crime-sim-to-train-sim/",
-        "https://tech.yahoo.com/gaming/articles/converted-gta-5-final-form-105235346.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWwQgdf0Xk6kTh-QGS7WnEnxf5zhcxl1jKSVhiQtsW8j1TI0_qDSn94uwcUBA",
-      "image_credit": "Yahoo Tech",
-      "news": [
-        {
-          "url": "https://tech.yahoo.com/videos/gta-5-mod-turns-gta-163000084.html",
-          "title": "GTA 5 Mod Turns Into GTA 6 Chaos with Random Teleports!",
-          "publisher": "Yahoo Tech",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWwQgdf0Xk6kTh-QGS7WnEnxf5zhcxl1jKSVhiQtsW8j1TI0_qDSn94uwcUBA"
-        },
-        {
-          "url": "https://www.pcgamer.com/games/grand-theft-auto/i-have-converted-gta-5-from-crime-sim-to-train-sim/",
-          "title": "I have converted GTA 5 from crime sim to train sim",
-          "publisher": "PC Gamer",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmUbPknCjw0cMhspV_jl1mc0t7fN8RX9NfFO7wes_zTZ6fIuuj6IStssRS8ig"
-        },
-        {
-          "url": "https://tech.yahoo.com/gaming/articles/converted-gta-5-final-form-105235346.html",
-          "title": "I have converted GTA 5 to its final form: A GTA 6 countdown app",
-          "publisher": "Yahoo Tech",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHqD7RPXxzSbn14M0CEAK06eUz5Vkr-L1iVW3VIsBhgjsoWRaMZQ60pyUarEg"
-        }
-      ]
-    },
-    {
-      "query": "avengers endgame encore",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T08:00:00Z",
-      "related_news_urls": [
-        "https://www.disneyplus.com/explore/articles/avengers-endgame-encore",
-        "https://deadline.com/2026/11/avengers-endgame-encore-disney-plus-stream-release-date-1237220911/",
-        "https://collider.com/avengers-endgame-encore-streaming-release-date-disney-plus-november-2026/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjm6OEl_stk5uVsbn2picCEB9F7hPIGBoH3vkV2YxQ-jiPcq_cTuA7p_W73sM",
-      "image_credit": "Disney Plus",
-      "news": [
-        {
-          "url": "https://www.disneyplus.com/explore/articles/avengers-endgame-encore",
-          "title": "Avengers Endgame: Encore: Streaming Details, Story, Cast & What To Watch Next | Explore Disney+",
-          "publisher": "Disney Plus",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjm6OEl_stk5uVsbn2picCEB9F7hPIGBoH3vkV2YxQ-jiPcq_cTuA7p_W73sM"
-        },
-        {
-          "url": "https://deadline.com/2026/11/avengers-endgame-encore-disney-plus-stream-release-date-1237220911/",
-          "title": "'Avengers Endgame: Encore' Sets Disney+ Release Date With New 'Countdown To Doomsday' Spot",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUcoJ9hxOwvrMlCnpo8nTA32FQepEeC1UR-HJObVdzwPvft47YJAq0K74jawY"
-        },
-        {
-          "url": "https://collider.com/avengers-endgame-encore-streaming-release-date-disney-plus-november-2026/",
-          "title": "Marvel Officially Releases New Avengers Movie on Disney+ in 48 Hours",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQacJTInYTEY6fYB-vq40MmTdeA9lUqleYlEDCXdjNUlgefs9DwEx158AY_-7A"
-        }
-      ]
-    },
-    {
-      "query": "marvel rivals season 11 release date",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T07:40:00Z",
-      "related_news_urls": [
-        "https://www.marvelrivals.com/gameupdate/20261111/41548_1319332.html",
-        "https://gamingtrend.com/news/nightcrawler-teleports-into-marvel-rivals-as-season-11-doomsday-lands-november-13/",
-        "https://insider-gaming.com/all-marvel-rivals-season-11-twitch-drops-how-to-get-them/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA7TsUWXcruHvRAGhUm7a-HPD9zFGTKQPPoF2jMjqO2jenuVxS9dxEiXTDAIE",
-      "image_credit": "Marvel Rivals",
-      "news": [
-        {
-          "url": "https://www.marvelrivals.com/gameupdate/20261111/41548_1319332.html",
-          "title": "The Super Hero Team-based PVP Shooter",
-          "publisher": "Marvel Rivals",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA7TsUWXcruHvRAGhUm7a-HPD9zFGTKQPPoF2jMjqO2jenuVxS9dxEiXTDAIE"
-        },
-        {
-          "url": "https://gamingtrend.com/news/nightcrawler-teleports-into-marvel-rivals-as-season-11-doomsday-lands-november-13/",
-          "title": "Nightcrawler teleports into Marvel Rivals as Season 11: Doomsday lands November 13",
-          "publisher": "GamingTrend",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzk4S_X5t45o_owcJzbzgnf1FKBZ10QVwddCgcNDFXKb3Pj36JAoNoFyir_PU"
-        },
-        {
-          "url": "https://insider-gaming.com/all-marvel-rivals-season-11-twitch-drops-how-to-get-them/",
-          "title": "All Marvel Rivals Season 11 Twitch Drops & How To Get Them",
-          "publisher": "Insider Gaming",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSx_uOdXCfRYX9R3X11aF8pOQcPTzQ94kaE_Yb32AsZMUvorCjGozbEQudCrZQ"
-        }
-      ]
-    },
-    {
-      "query": "new zealand breakers",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T07:40:00Z",
-      "related_news_urls": [
-        "https://www.sportsgambler.com/betting-tips/basketball/new-zealand-breakers-vs-brisbane-bullets-prediction-odds-2026-11-13/",
-        "https://www.nbl.com.au/news/dj-carlin-deliver-ot-win-for-breakers",
-        "https://www.gobet.com.au/nbl-tips/bullets-vs-breakers-round-9-2026-27/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnTK4eFdPE1SvYEbvFwOHkLfEeQvcYAIDIiLh2O-A13r6dm0UAfdFBTQX-81M",
-      "image_credit": "Sportsgambler",
-      "news": [
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/new-zealand-breakers-vs-brisbane-bullets-prediction-odds-2026-11-13/",
-          "title": "New Zealand Breakers vs Brisbane Bullets Prediction, Betting Tips & Odds | 12 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnTK4eFdPE1SvYEbvFwOHkLfEeQvcYAIDIiLh2O-A13r6dm0UAfdFBTQX-81M"
-        },
-        {
-          "url": "https://www.nbl.com.au/news/dj-carlin-deliver-ot-win-for-breakers",
-          "title": "DJ, Carlin deliver OT win for Breakers",
-          "publisher": "NBL",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu8nr6HyS9g8xGvw6BZ1OGqV8OF8lBwYCRfzwvpzPSBAqy7JukfAhGVjOa8pA"
-        },
-        {
-          "url": "https://www.gobet.com.au/nbl-tips/bullets-vs-breakers-round-9-2026-27/",
-          "title": "Bullets vs. Breakers Predictions - NBL Round 9 2026-27",
-          "publisher": "GoBet.com.au",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0nUuWaWqHBC6xjofQ6tWXcdQqCj5mX1O_SaSji_40ynZ0sEzqjCIrS781IS0"
         }
       ]
     }
