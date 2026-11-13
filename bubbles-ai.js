@@ -2415,52 +2415,6 @@ window.addEventListener('bubbles:ai-consult',event=>{
  if(!['gemini_first','gemini_claude_review','claude_only'].includes(event.detail.mode))return;
  event.preventDefault();void consultExternalAi(event.detail.question,event.detail.mode,false,event.detail.respond);
 });
-// Complete Me is an EXPLICIT owner command, never a public model intent.
-// It uses existing signed Brain intake and preserves the same chat draft on failure.
-async function openCompleteMe(spoken,fromVoice,clearSentComposer){
- if(!/^complete me ai(?:\s*[—:-]|$)/i.test(spoken))return false;
- let mod;
- try{mod=await import('/bubbles-complete-me.mjs?v=20261113-owner-project1');}
- catch{status.textContent='Complete Me project controller is not available. No job was submitted.';return true;}
- const command=mod.completeMeCommand(spoken);
- if(!command)return false;
- if(!command.goal){status.textContent='State the project goal after “Complete Me AI —”. No job was submitted.';return true;}
- if(embedded){status.textContent='Complete Me needs the verified owner Bubbles page; guests cannot submit jobs.';return true;}
- const choices=[...repositorySelection];
- if(choices.length!==1){status.textContent='Select exactly one GitHub project before starting Complete Me. No job was submitted.';return true;}
- let headers;
- try{headers=await verifiedOwnerHeaders();}
- catch(error){status.textContent=String(error.message||error).slice(0,210)+' No project was submitted.';return true;}
- const repository=choices[0],goal=command.goal;
- const first='Reproduce and test the first bounded source milestone for: '+goal;
- const second='Implement the next dependent source milestone for: '+goal;
- const acceptance='Demonstrate the requested goal with actual source changes, passing tests, independent review, guarded merge and separately verified release.';
- try{
-  const result=await mod.startCompleteMe({repository,issue:'1927',goal,first,second,acceptance},
-   async(path,body)=>{
-    const response=await bubblesFetch(BRAIN+path,{method:'POST',
-     headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify(body)},15000);
-    const json=await response.json();
-    if(!response.ok||json?.ok!==true)throw Error(String(json?.error||'owner_request_failed').slice(0,140));
-    return json;
-   });
-  const state=String(result.execution?.status||'unconfirmed');
-  const reply=(result.deduplicated?'The existing Complete Me project was recovered.':'The Complete Me project was saved.')+
-   ' Ticket '+result.project.ticketId+' in '+result.project.repository+'. '+
-   (state==='queued_for_runner'?'The existing signed runner was requested; execution is not yet verified.':
-    'The runner has not confirmed a launch ('+state+').')+
-   ' Source edits, review, merge, deployment and Android acceptance remain separate receipts.';
-  display(spoken,'you');display(reply,'ai');
-  messages.push({role:'user',text:spoken},{role:'assistant',text:reply});
-  messages=messages.slice(-400);persistChat();
-  clearSentComposer();status.textContent=reply;workStatus.textContent=reply;
- }catch(error){
-  status.textContent='Complete Me blocked: '+String(error.message||error).slice(0,200)+
-   '. No completed build is claimed; your message remains available to retry.';
- }
- return true;
-}
-
 async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  let spoken=String(text||'').trim();
  // Voice turns must never overwrite partially typed messages.
@@ -2477,8 +2431,27 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  turnPending=true;
  let failedTurn=false;
  try{
- if(spoken&&await openCompleteMe(spoken,fromVoice,clearSentComposer))return;
  if(spoken&&await consumeOwnerCodeFromChat(spoken,fromVoice))return;
+ if(/^complete me ai(?:$|\s*[-–—:])/i.test(spoken)){
+  if(embedded){status.textContent='Open Bubbles on QuantaPhi to use Complete Me AI.';return;}
+  if(pendingImage||pendingImages.length){status.textContent='Complete Me AI uses a text brief. Your attachment is still in the composer.';return;}
+  const thread=activeThread;
+  try{
+   const {openCompleteMe}=await import('/bubbles-complete-me.mjs');
+   await openCompleteMe(conversation,spoken,{authorize:verifiedOwnerHeaders,scopeActive:()=>thread===activeThread,
+    initialRepository:repositorySelectionExplicit&&repositorySelection.size===1?[...repositorySelection][0]:'',
+    request:async(path,data,authorization)=>{
+     const response=await bubblesFetch(BRAIN+path,{method:'POST',cache:'no-store',
+      headers:{Authorization:authorization,'Content-Type':'application/json'},body:JSON.stringify(data)},30000);
+     const result=await response.json();
+     if(response.status===401||response.status===403)return {ok:false,error:'owner_authorization_required'};
+     return response.ok?result:{ok:false,error:result?.error};
+    }});
+   clearSentComposer();
+   status.textContent='Complete Me AI is open.';
+  }catch(error){status.textContent=String(error.message||'Complete Me AI could not open.').slice(0,150);}
+  return;
+ }
  // A deliberate Claude choice applies to the main Bubbles composer and skips
  // unrelated Oracle/tool routing. No text or attachments may be silently lost.
  if(!embedded&&modelChoice.value==='claude'){

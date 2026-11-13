@@ -14,7 +14,7 @@ test('the actual top QuantaPhi search uses an opt-in suggestion assistant',()=>{
  assert.match(js,/suggestFeedSearch\(/);
  assert.match(js,/aria-expanded/);
  assert.match(js,/keydown/);
- assert.match(js,/key==='Escape'/);
+ assert.match(js,/event\.key!=='Escape'/);
  assert.match(js,/suggestion\.sourceUrl/);
  assert.match(js,/search\.value=suggestion\.label/);
  assert.doesNotMatch(js,/\.submit\(|\.requestSubmit\(|\.click\(\)/);

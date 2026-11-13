@@ -31,6 +31,7 @@ test('requires one scoped repository and validated source before creating any jo
   await assert.rejects(startCompleteMe({...project, repository: 'different/Project'}, request));
   await assert.rejects(startCompleteMe({...project, issue: 'issue'}, request));
   await assert.rejects(startCompleteMe({...project, second: ''}, request));
+  await assert.rejects(startCompleteMe({...project, acceptance: 'a'.repeat(701)}, request));
   assert.deepEqual(requests, []);
   await assert.rejects(startCompleteMe(project, request), /source/i);
   assert.deepEqual(requests, [{path: '/work/github/read', body: {action: 'read_repository', repository}}]);
@@ -42,10 +43,10 @@ test('distinct Complete Me goals get separate stable project IDs, while retries 
   if(path==='/work/github/read')return {ok:true,repository,headSha:sourceSha};
   assert.equal(path,'/work/tickets/create');
   ids.push(body.context.submission_id);
-  return {ok:true,ticket:{id:'IW-fixture',repository,context:body.context},
+  return {ok:true,ticket:{id:'IW-20261113-ABCD1234',repository,context:body.context},
    execution:{status:'queued_for_runner'},deduplicated:false};
  };
- await startCompleteMe({...project,goal:'Finish milestone A'},request);
+ await startCompleteMe({...project,goal:'FINISH  milestone A'},request);
  await startCompleteMe({...project,goal:'Finish milestone B'},request);
  await startCompleteMe({...project,goal:'Finish milestone A'},request);
  assert.notEqual(ids[0],ids[1],'two different projects cannot share a deduplication key');
@@ -87,12 +88,13 @@ test('the existing owner intake saves one project and the signed runner resumes 
     delete: async key => durable.delete(key),
   };
   let auth = true;
+  let repositoryHead = sourceSha;
   let clock;
   let dispatches = 0;
   const env = {WORK_DB: db, WRITER_OWNER_HASH: ownerHash, CLOCK: {idFromName: () => 'owner', get: () => ({
     fetch: async (url, init) => {
       if (url.endsWith('/owner/session-check')) return Response.json({ok: auth && JSON.parse(init.body).token === token});
-      if (url.endsWith('/github/read')) return Response.json({ok: true, repository, headSha: sourceSha});
+      if (url.endsWith('/github/read')) return Response.json({ok: true, repository, headSha: repositoryHead});
       return clock.fetch(new Request(url, init));
     },
   })}};
@@ -126,7 +128,9 @@ test('the existing owner intake saves one project and the signed runner resumes 
     method: 'POST', body: JSON.stringify({runId, runnerRepository: 'www-infinity4/Moltnook'}),
   }))).json();
 
-  const created = await startCompleteMe(project, browser);
+  const submissions = await Promise.all([startCompleteMe(project, browser), startCompleteMe(project, browser)]);
+  const created = submissions.find(result => !result.deduplicated);
+  assert.equal(submissions.filter(result => result.deduplicated).length, 1);
   const id = created.project.ticketId;
   assert.equal(created.execution.status, 'queued_for_runner');
   assert.equal(count(), 1);
@@ -139,8 +143,10 @@ test('the existing owner intake saves one project and the signed runner resumes 
   assert.equal(first.jobId, 'TASK-1');
   assert.equal(JSON.parse(read(id).context_json).color_jobs[0].status, 'working');
   restartClock();
+  repositoryHead = 'e'.repeat(40);
   const repeated = await startCompleteMe(project, browser);
   assert.equal(repeated.project.ticketId, id);
+  assert.equal(repeated.project.sourceSha, sourceSha);
   assert.equal(repeated.deduplicated, true);
   assert.equal(dispatches, 1);
   await assert.rejects(startCompleteMe({...project, second: 'A different second scope'}, browser), /already|scope/i);
@@ -164,6 +170,7 @@ test('the existing owner intake saves one project and the signed runner resumes 
   fixtureReceipt(id, 'merged_verified');
   assert.equal((await claim('47')).lease.jobId, 'TASK-2');
   assert.equal(count(), 1);
+  assert.equal([...durable.keys()].filter(key => key.startsWith('job-quant:')).length, 0);
 
   auth = false;
   await assert.rejects(startCompleteMe(project, browser), /owner|source/i);

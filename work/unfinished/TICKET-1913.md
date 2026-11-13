@@ -34,3 +34,7 @@ next_action: "Inspect exact-head CI for PR #1916, secure independent review and 
 Canonical original ticket scope is unchanged. The first code slice is source-backed feed suggestions on QuantaPhi and advisory recipe validation on Moltnook. The running Brain's actual worker, shared wallets, authentication, checkout, and provider accounts were not mutated. Verified CI for a prior head does not certify a new head; issue comments and PR checks are authoritative for latest results.
 
 Owner approval for building is recorded by the work order. No per-action external purchasing, sending, account modification, wallet minting, or deployment consent can be inferred from it.
+
+## Merge Session 07
+
+[Regression CI](https://github.com/www-infinity4/QuantaPhi/actions/runs/43138774805) reproduced missing cross-field matches and public exposure of restricted catalog entries. [Search fix](https://github.com/www-infinity4/QuantaPhi/commit/3939c317b1fc1572953607939d54095aca3ecc47) restores both checks. Android-width browser coverage checks that selecting a catalog suggestion fills the original input, preserves its source link and leaves submission to the Search button. The Complete Me project entry is tracked in [#1927](TICKET-1927.md). Continue independent review, Oracle homepage integration and production acceptance through the existing PR. Provider-backed remote answers, sensitive form autofill and live recipe actions remain open.

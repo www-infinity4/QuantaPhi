@@ -33,3 +33,26 @@ test('a search permalink restores the matching card without relying on a paid lo
  await page.goto(base+'/?q=Burger%20King',{waitUntil:'domcontentloaded'});
  await expect(page.locator('[data-quick-card-match="burger-king"]')).toBeVisible();expect(jobs).toBe(0);
 });
+
+test('Android autocomplete fills on tap and leaves search submission under the visitor’s control', async ({page}) => {
+ await prepare(page);
+ await page.goto(base+'/', {waitUntil:'domcontentloaded'});
+ const input=page.getByRole('searchbox',{name:'Search anything',exact:true});
+ const panel=page.getByRole('region',{name:'Source-backed Quick Card suggestions'});
+ await input.fill('burger king');
+ const suggestion=panel.getByRole('button',{name:'Fill search with Burger King',exact:true});
+ await expect(suggestion).toBeVisible();
+ await expect(panel.getByRole('link',{name:'Original source'}).first()).toHaveAttribute('href','https://www.bk.com/');
+ expect((await suggestion.boundingBox()).height).toBeGreaterThanOrEqual(44);
+ await suggestion.focus();
+ await page.keyboard.press('Escape');
+ await expect(panel).toBeHidden();
+ await expect(input).toBeFocused();
+ await input.fill('burger kin');
+ await suggestion.click();
+ await expect(input).toHaveValue('Burger King');
+ await expect(panel).toBeHidden();
+ await expect(page.locator('[data-quick-card-match="burger-king"]')).toHaveCount(0);
+ await page.locator('#go').click();
+ await expect(page.locator('[data-quick-card-match="burger-king"]')).toBeVisible();
+});

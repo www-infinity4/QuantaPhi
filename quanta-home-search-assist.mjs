@@ -32,12 +32,12 @@ function mountHomeSearchAssistance(){
    fill.addEventListener('click',()=>{
     search.value=suggestion.label;
     search.dispatchEvent(new Event('input',{bubbles:true}));
-    hide();
     search.focus();
+    hide();
    });
    const source=document.createElement('a');
    source.className='qhss-source';
-   source.textContent='Original source';
+   source.textContent=suggestion.sourceUrl.startsWith('/')?'Open Quick Card':'Original source';
    source.href=suggestion.sourceUrl;
    source.target='_blank';
    source.rel='noopener noreferrer';
@@ -49,7 +49,11 @@ function mountHomeSearchAssistance(){
  };
  search.addEventListener('input',display);
  search.addEventListener('focus',display);
- search.addEventListener('keydown',event=>{if(event.key==='Escape')hide();});
+ wrapper.addEventListener('keydown',event=>{
+  if(event.key!=='Escape'||panel.hidden)return;
+  event.preventDefault();
+  search.focus();hide();
+ });
  document.addEventListener('pointerdown',event=>{
   if(!wrapper.contains(event.target))hide();
  });
