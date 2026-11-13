@@ -184,3 +184,24 @@ test('unsent local project title survives a tracker redraw and creates exactly o
  await expect(first(page,'.zeus-history-threads .zeus-thread')).toHaveCount(2);
  await expect(first(page,selector)).toHaveValue('');
 });
+
+test('a ready embedded Bubbles open never steals focus from Zeus project-history typing',async({page})=>{
+ await page.setViewportSize({width:1280,height:850});
+ await page.goto(base+'/coliseum/',{waitUntil:'domcontentloaded'});
+ // The public iframe is first-party and uses its actual ready/open handshake.
+ await expect(page.locator('#zeusAssistantStatus')).toContainText('initialized',{timeout:15000});
+ const historyTitle=first(page,'input[aria-label="New project or topic title"]');
+ await historyTitle.focus();
+ await expect(historyTitle).toBeFocused();
+ const width=await page.locator('#zeusAssistantFrame').evaluate(frame=>frame.contentWindow.innerWidth);
+ expect(width).toBeGreaterThan(600); // the prior child auto-focus branch
+ await page.evaluate(()=>document.getElementById('zeusAssistantFrame').contentWindow.postMessage({
+  type:'quantaphi:bubbles:open',id:'coliseum-zeus-assistant'
+ },window.location.origin));
+ // Allow the real child to handle the new open message, not just the postMessage enqueue.
+ await expect(page.locator('#zeusAssistantStatus')).toContainText('initialized');
+ await page.waitForTimeout(150);
+ await expect(historyTitle).toBeFocused();
+ await historyTitle.fill('History draft must stay with Zeus');
+ await expect(historyTitle).toHaveValue('History draft must stay with Zeus');
+});
