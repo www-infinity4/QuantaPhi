@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T01:31:14.681658Z",
+  "checked_at": "2026-11-13T02:01:39.499464Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "jj mccarthy",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-13T01:10:00Z",
+      "query": "arvell reese",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-13T01:40:00Z",
       "related_news_urls": [
-        "https://www.newsday.com/sports/columnists/tom-rock/giants-commanders-jj-mccarthy-m4c7re7a",
-        "https://www.cbssports.com/fantasy/football/news/giants-j-j-mccarthy-wont-be-limited-in-week-10/",
-        "https://www.foxnews.com/outkick-sports/jj-mccarthy-left-giants-game-hip-injury-jameis-winston-lineup-isnt-whole-story"
+        "https://www.cbssports.com/nfl/news/revisiting-2026-nfl-draft-giants-arvell-reese-francis-mauigoa/",
+        "https://www.giants.com/news/arvell-reese-named-nfc-defensive-player-of-the-week",
+        "https://www.nytimes.com/athletic/7766474/2026/11/09/arvell-reese-new-york-giants-rookie-of-the-year/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVzHAkhEJvXqi8SXzlnvtTFbaydA0RvsILn9iuTK4F-Ec7VPkM1-sHeAM4jVo",
-      "image_credit": "Newsday",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjtcAwu40c-KktWJNrFaVy7OCyPYisVXn5NQRlGH7_MJgAfASHrERIJRmfW9I",
+      "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://www.newsday.com/sports/columnists/tom-rock/giants-commanders-jj-mccarthy-m4c7re7a",
-          "title": "Tom Rock: Giants QB J.J. McCarthy will truly introduce himself to the fans in primetime at MetLife Stadium",
-          "publisher": "Newsday",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVzHAkhEJvXqi8SXzlnvtTFbaydA0RvsILn9iuTK4F-Ec7VPkM1-sHeAM4jVo"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/giants-j-j-mccarthy-wont-be-limited-in-week-10/",
-          "title": "Giants' J.J. McCarthy: Won't be limited in Week 10",
+          "url": "https://www.cbssports.com/nfl/news/revisiting-2026-nfl-draft-giants-arvell-reese-francis-mauigoa/",
+          "title": "Revisiting the 2026 NFL Draft: Was Arvell Reese a luxury for Giants? Has Francis Mauigoa turned a corner?",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQU6tSLE7DSX5eAUrdw652UL-4VnvjB2RRRB6Qj_I_jEyt6aQ13R8x94F_havQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjtcAwu40c-KktWJNrFaVy7OCyPYisVXn5NQRlGH7_MJgAfASHrERIJRmfW9I"
         },
         {
-          "url": "https://www.foxnews.com/outkick-sports/jj-mccarthy-left-giants-game-hip-injury-jameis-winston-lineup-isnt-whole-story",
-          "title": "JJ McCarthy left Giants game with hip injury, putting Jameis Winston in the lineup but that isn't whole story",
-          "publisher": "Fox News",
+          "url": "https://www.giants.com/news/arvell-reese-named-nfc-defensive-player-of-the-week",
+          "title": "Arvell Reese named NFC Defensive Player of the Week",
+          "publisher": "Giants.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeuNuIawbIXNnDBJaPlEU7dBDGdVUXKfS-4H9U0SqFSW3K5hA-6Qx-ZMdG37s"
-        }
-      ]
-    },
-    {
-      "query": "blues vs mammoth",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-13T01:10:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/blues/news/projected-lineup-nov-12-at-utah",
-        "https://www.sportsnet.ca/nhl/article/mammoths-logan-cooley-will-remain-sidelined-against-st-louis/",
-        "https://www.nytimes.com/athletic/7776652/2026/11/12/blues-vs-mammoth-stream-how-to-watch-nov-12/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCN2X4F67sJyOmALqoksQTBL8p1kwDgKmw6XoC-IcQkz9_ycDQ3VcS6bRaLLc",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/blues/news/projected-lineup-nov-12-at-utah",
-          "title": "Projected Lineup: Nov. 12 at Utah",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCN2X4F67sJyOmALqoksQTBL8p1kwDgKmw6XoC-IcQkz9_ycDQ3VcS6bRaLLc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSeUL1hZjwOWPjyaka8x4CIsZpJgFoS7JbhTDJ86WolPBZkf38gfK8Krt6cry0"
         },
         {
-          "url": "https://www.sportsnet.ca/nhl/article/mammoths-logan-cooley-will-remain-sidelined-against-st-louis/",
-          "title": "Report: Mammoth's Logan Cooley will remain sidelined against St. Louis",
-          "publisher": "Sportsnet.ca",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfPvFFreQ1wWsw7bQgN4bNwRb5YXczcE22dnM1cOVy-iJFUfsOyLKTT7wcY8M"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7776652/2026/11/12/blues-vs-mammoth-stream-how-to-watch-nov-12/",
-          "title": "How to watch Blues vs. Mammoth: TV channel and streaming options for November 12",
+          "url": "https://www.nytimes.com/athletic/7766474/2026/11/09/arvell-reese-new-york-giants-rookie-of-the-year/",
+          "title": "Giants’ Arvell Reese torments Eagles, bolsters Defensive Rookie of the Year case",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5Tk4RYC_FFO7n3wrWUcsxexrXh02wDOVi9fod5qXK6Jt4T25ya3EOMc58u0c"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDR45DkK2D8cNUQb_cfMssZHglGZgr50Q6HlPHH7miJUTcK92n5jJpCZ98E8g"
         }
       ]
     },
     {
-      "query": "louisiana vs la-monroe",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T01:10:00Z",
-      "related_news_urls": [
-        "https://www.sportsline.com/insiders/louisiana-vs-ul-monroe-odds-2026-college-football-picks-week-11-sun-belt-predictions-from-proven-model/",
-        "https://www.actionnetwork.com/ncaaf/louisiana-ragin-cajuns-vs-ulm-warhawks-prediction-pick-odds-college-football-thursday-november-12",
-        "https://collegefootballnews.com/college-football/louisiana-vs-ulm-prediction-2026"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqxnxd5lKfBo4QmHLIUYPbotEkUlh5tUUR5GXsiwuZQw-Hu5mn7ko_GRG7cSk",
-      "image_credit": "SportsLine",
-      "news": [
-        {
-          "url": "https://www.sportsline.com/insiders/louisiana-vs-ul-monroe-odds-2026-college-football-picks-week-11-sun-belt-predictions-from-proven-model/",
-          "title": "Louisiana vs. UL Monroe odds: 2026 college football picks, Week 11 Sun Belt predictions from proven model",
-          "publisher": "SportsLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqxnxd5lKfBo4QmHLIUYPbotEkUlh5tUUR5GXsiwuZQw-Hu5mn7ko_GRG7cSk"
-        },
-        {
-          "url": "https://www.actionnetwork.com/ncaaf/louisiana-ragin-cajuns-vs-ulm-warhawks-prediction-pick-odds-college-football-thursday-november-12",
-          "title": "Louisiana vs ULM Prediction, Odds, Time: Thursday College Football Picks",
-          "publisher": "Action Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRh7ndb54qV8eij6sxtK6ubAdiIG4VeuQMQcZuLV8twFM-fnL9698aK64tE-2w"
-        },
-        {
-          "url": "https://collegefootballnews.com/college-football/louisiana-vs-ulm-prediction-2026",
-          "title": "Louisiana vs ULM Prediction: Do the Ragin’ Cajuns Have a Shot at the Sun Belt Title?",
-          "publisher": "College Football News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOlQGuE80dhVins8TRKL6vf3VKT6bLGNTmIxj7n2hBEsbw8H4Kelky4-oWexs"
-        }
-      ]
-    },
-    {
-      "query": "univision",
+      "query": "austin ekeler",
       "approx_searches": "1000+",
-      "published_at": "2026-11-13T01:10:00Z",
+      "published_at": "2026-11-13T01:40:00Z",
       "related_news_urls": [
-        "https://www.univision.com/noticias/inmigracion/ice-reporta-un-nuevo-record-historico-de-deportaciones-el-mas-alto-en-los-23-anos-de-la-agencia",
-        "https://www.telemundo.com/noticias/noticias-telemundo-mediodia/inmigracion/video/la-politica-migratoria-de-trump-rompe-record-de-deportaciones-en-este-ano-fiscal-tmvo13244029",
-        "https://cnnespanol.cnn.com/2026/11/12/eeuu/ice-deporto-483200-personas-anio-fiscal-record-trax"
+        "https://www.cbssports.com/fantasy/football/news/commanders-austin-ekeler-tallies-10-touches-in-week-9/",
+        "https://sports.yahoo.com/video/is-austin-ekeler-back-to-being-fantasy-relevant-035547314.html",
+        "https://www.rotoballer.com/7-fantasy-football-bold-predictions-for-week-9-rotoballer-staff-picks/1985667"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_SsI3OojF4z08xOiepf6KwJkzCTZHaMIbTullfF16K03kfI0oVL12HvIb1W0",
-      "image_credit": "Univision",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6IZepRI9gTMMeeV1QI8P5ZShVBPsRhcSNzRbZFjNg-VEoRuBY0wUkhrZ4u6g",
+      "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://www.univision.com/noticias/inmigracion/ice-reporta-un-nuevo-record-historico-de-deportaciones-el-mas-alto-en-los-23-anos-de-la-agencia",
-          "title": "El ICE reporta nuevo récord de deportaciones desde que el presidente Trump regresó a la Casa Blanca",
-          "publisher": "Univision",
+          "url": "https://www.cbssports.com/fantasy/football/news/commanders-austin-ekeler-tallies-10-touches-in-week-9/",
+          "title": "Commanders' Austin Ekeler: Tallies 10 touches in Week 9",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_SsI3OojF4z08xOiepf6KwJkzCTZHaMIbTullfF16K03kfI0oVL12HvIb1W0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6IZepRI9gTMMeeV1QI8P5ZShVBPsRhcSNzRbZFjNg-VEoRuBY0wUkhrZ4u6g"
         },
         {
-          "url": "https://www.telemundo.com/noticias/noticias-telemundo-mediodia/inmigracion/video/la-politica-migratoria-de-trump-rompe-record-de-deportaciones-en-este-ano-fiscal-tmvo13244029",
-          "title": "La política migratoria de Trump rompe récord de deportaciones en este año fiscal",
-          "publisher": "Telemundo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Bt2UwHXrp2ygC8qIjIo4XRuPlfWgtdoGi-yvxvQHD-NXAzMApxCywbsgKoc"
-        },
-        {
-          "url": "https://cnnespanol.cnn.com/2026/11/12/eeuu/ice-deporto-483200-personas-anio-fiscal-record-trax",
-          "title": "ICE deportó a 483.200 personas en el último año fiscal, un récord para la agencia",
-          "publisher": "CNN en Español",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjvCMYtSHNw3sF9Z0KRdCyK97Eq3BXwMePm3q31XNh1wRqRUbWvbrt3jEqcpQ"
-        }
-      ]
-    },
-    {
-      "query": "hornets vs suns",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-13T01:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/3-suns-hornets-bets-experts-195308418.html",
-        "https://www.sportsgambler.com/betting-tips/basketball/charlotte-hornets-vs-phoenix-suns-prediction-odds-6019783/",
-        "https://www.brightsideofthesun.com/suns-game/113564/suns-hornets-preview-grayson-allen-royce-oneale-miles-bridges-trade-reunion"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJ1cd1fXqR1mgPtKSoY4tD_D5xheM4HomUD1fWffU7YZYgi9EFWXETyhNQS_4",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/3-suns-hornets-bets-experts-195308418.html",
-          "title": "3 Suns-Hornets Bets Experts Like Tonight",
+          "url": "https://sports.yahoo.com/video/is-austin-ekeler-back-to-being-fantasy-relevant-035547314.html",
+          "title": "Is Austin Ekeler back to being fantasy relevant?",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJ1cd1fXqR1mgPtKSoY4tD_D5xheM4HomUD1fWffU7YZYgi9EFWXETyhNQS_4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIHy23H8-ylIuZSyBSeXiDxzLB2B6j-_nIIdGSHwmGO25GM5rpt0i9DLSMWwc"
         },
         {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/charlotte-hornets-vs-phoenix-suns-prediction-odds-6019783/",
-          "title": "Charlotte Hornets vs Phoenix Suns Prediction, Picks & Odds | NBA Thursday",
-          "publisher": "Sportsgambler",
+          "url": "https://www.rotoballer.com/7-fantasy-football-bold-predictions-for-week-9-rotoballer-staff-picks/1985667",
+          "title": "7 Fantasy Football Bold Predictions for Week 9 (RotoBaller Staff Picks)",
+          "publisher": "RotoBaller",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Vu2kymBgp5UIQJc2jE3Vau3W9WjG0KMY7lLqhRMyXsUFuY6SwnJyAw-uu_c"
-        },
-        {
-          "url": "https://www.brightsideofthesun.com/suns-game/113564/suns-hornets-preview-grayson-allen-royce-oneale-miles-bridges-trade-reunion",
-          "title": "Game Preview: Suns host Hornets in first matchup since Miles Bridges trade",
-          "publisher": "Bright Side Of The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoJ7KZ_Eq-Isowcz8hHcWvJ1G3dQ0XGQNhQPTUmp3H7fVxopSVa9rJbhNSU44"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMP7J47L8zzXMrqW8JtRdmulxD8u92xYdWjH6Ug3rQ6Pe7W9o1NWVliYF-uGk"
         }
       ]
     },
     {
-      "query": "jaxson dart",
+      "query": "antonio williams",
       "approx_searches": "1000+",
-      "published_at": "2026-11-13T01:00:00Z",
+      "published_at": "2026-11-13T01:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/happened-jaxson-dart-long-latest-000017870.html",
-        "https://www.usatoday.com/story/sports/nfl/giants/2026/11/12/jaxson-dart-injury-update-giants/92733984007/",
-        "https://bolavip.com/en/nfl/jaxson-darts-status-when-is-the-ny-giants-qb-expected-to-return-from-injury"
+        "https://www.si.com/onsi/fantasy/nfl/jj-mccarthy-antonio-williams-and-more-must-start-sleepers-for-week-10",
+        "https://dknetwork.draftkings.com/2026/11/12/antonio-williams-fantasy-football-start-or-sit-advice-for-week-10/",
+        "https://www.theclemsoninsider.com/2026/11/06/clemson-rookie-draws-high-praise-from-nfl-analyst/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHPDULimF7VYqnxrVEpNkM-JrqvY4W03aG-mx6Ct70BvXr6VPZwUejiNYYeQU",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/happened-jaxson-dart-long-latest-000017870.html",
-          "title": "What Happened to Jaxson Dart, and How Long Will He Be Out? Latest on the Giants QB’s Injury As He Misses Week 10 vs. Commanders",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHPDULimF7VYqnxrVEpNkM-JrqvY4W03aG-mx6Ct70BvXr6VPZwUejiNYYeQU"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/nfl/giants/2026/11/12/jaxson-dart-injury-update-giants/92733984007/",
-          "title": "When will Jaxson Dart return? Giants QB suffered leg injury Week 2, timeline",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-gjfKCxOZ_Lr1pul4m1fgtg6s2vHUcmYRNYaHuPMkAxVEkm9N59dcUPD6vC8"
-        },
-        {
-          "url": "https://bolavip.com/en/nfl/jaxson-darts-status-when-is-the-ny-giants-qb-expected-to-return-from-injury",
-          "title": "Jaxson Dart’s status: When is the NY Giants QB expected to return from injury?",
-          "publisher": "Bolavip US",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRet8tzoYfJNZ8somNhZv8c1t4JkreZYY0TOBLrKBh9Df6dljuJy3Bh8qfhdks"
-        }
-      ]
-    },
-    {
-      "query": "malachi fields",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T01:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/week-10-tnf-fantasy-football-164843875.html",
-        "https://dairylandexpress.com/tucker-kraft-s-silence-in-packers-blowout-shouldn-t-concern-fans-01m6yw5w8n4e",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/kraft-held-to-one-catch-in-win-over-patriots"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSd33XGSTSUIHtzPaAki6TDuyZf1SBnv7tFuaeaOgw8Iu7y5IVWJnlS6UlHN28",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/week-10-tnf-fantasy-football-164843875.html",
-          "title": "Week 10 TNF Fantasy Football Start 'Em, Sit 'Em: Treylon Burks vs. Malachi Fields",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSd33XGSTSUIHtzPaAki6TDuyZf1SBnv7tFuaeaOgw8Iu7y5IVWJnlS6UlHN28"
-        },
-        {
-          "url": "https://dairylandexpress.com/tucker-kraft-s-silence-in-packers-blowout-shouldn-t-concern-fans-01m6yw5w8n4e",
-          "title": "Tucker Kraft's silence in Packers' blowout shouldn't concern fans",
-          "publisher": "Dairyland Express",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8Tr-cE6--ix40QiUtJlQVjS-rwhRim9n6hPsdImPJQz0jnbrZD0X5N_rVOgE"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-08/kraft-held-to-one-catch-in-win-over-patriots",
-          "title": "Kraft held to one catch in win over Patriots",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvKcz1L0Yso_sEmV17CNdhBRvsJy7RPA2Db6ToD0zlaD_Hsz3Yo_4tvxkrs1o"
-        }
-      ]
-    },
-    {
-      "query": "detroit pistons vs washington wizards match player stats",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T01:00:00Z",
-      "related_news_urls": [
-        "https://www.si.com/nba/wizards/aj-dybantsa-already-shown-why-wizards-made-him-first-pick-now-he-wants-more",
-        "https://lawlessrepublic.com/aj-dybantsa-five-word-response-put-his-strong-nba-start-into-perspective",
-        "https://www.fantasypros.com/nba/news/619039/aj-dybantsa-puts-up-21-points-loss-monday.php"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-EsX8qGcL68tai9TvXd-LBv1h8681NSgTteNrD6arY3WmZuhX4Y02lCkZQE4",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHQ_DwT6REc80S7WLY5_btrVk2lcQsJR5239LQTa756H2i4IN15xlPQVowCrg",
       "image_credit": "Sports Illustrated",
       "news": [
         {
-          "url": "https://www.si.com/nba/wizards/aj-dybantsa-already-shown-why-wizards-made-him-first-pick-now-he-wants-more",
-          "title": "AJ Dybantsa Has Already Shown Why Wizards Made Him the First Pick. Now, He Wants More.",
+          "url": "https://www.si.com/onsi/fantasy/nfl/jj-mccarthy-antonio-williams-and-more-must-start-sleepers-for-week-10",
+          "title": "JJ McCarthy, Antonio Williams, And More Must-Start Sleepers For Week 10",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-EsX8qGcL68tai9TvXd-LBv1h8681NSgTteNrD6arY3WmZuhX4Y02lCkZQE4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHQ_DwT6REc80S7WLY5_btrVk2lcQsJR5239LQTa756H2i4IN15xlPQVowCrg"
         },
         {
-          "url": "https://lawlessrepublic.com/aj-dybantsa-five-word-response-put-his-strong-nba-start-into-perspective",
-          "title": "AJ Dybantsa's five-word response put his strong NBA start into perspective",
-          "publisher": "Lawless Republic",
+          "url": "https://dknetwork.draftkings.com/2026/11/12/antonio-williams-fantasy-football-start-or-sit-advice-for-week-10/",
+          "title": "Antonio Williams Fantasy Football Start or Sit Advice for Week 10",
+          "publisher": "DraftKings Network",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbaCF5cDSnZyxne70-L5vwqbMd_P7pC-ZY1OtAwppYRJmsdPoKebyd-Tb77-g"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTcLivCHi68_jEUWaSZI3Lqu6aF7WOrusPk3oENsm77qocAWoofgiKONPVW8bo"
         },
         {
-          "url": "https://www.fantasypros.com/nba/news/619039/aj-dybantsa-puts-up-21-points-loss-monday.php",
-          "title": "AJ Dybantsa puts up 21 points in loss Monday",
-          "publisher": "FantasyPros",
+          "url": "https://www.theclemsoninsider.com/2026/11/06/clemson-rookie-draws-high-praise-from-nfl-analyst/",
+          "title": "Clemson Rookie Draws High Praise from NFL Analyst",
+          "publisher": "The Clemson Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2WoZYuZLPIaRce3rGXZx7S7vTfDPvt8mUjQytDe2ZtHt7mgDM47hHElSyCwA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWZEYlFWCBoOCtHxNkUfLzXRL3RJXYIOmreITkBskTqHh4eCfxjQhmnt8iAvI"
         }
       ]
     },
     {
-      "query": "bradley basketball",
+      "query": "dan quinn",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T01:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7770735/2026/11/12/commanders-dan-quinn-josh-harris-adam-peters/",
+        "https://wtop.com/news/2026/11/is-dan-quinn-the-next-coach-out-how-thursday-night-impacts-kalshis-markets/",
+        "https://www.audacy.com/thefandc/video/wjfk-washi-2026-11-12-13h45-08-xbvzn82"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0fJH3dwaRwL_dDDmorPubSwsQ7VRf66oI-_PMN3owM9yV15ppKQKC0907OUE",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7770735/2026/11/12/commanders-dan-quinn-josh-harris-adam-peters/",
+          "title": "Why Commanders fans should still be pulling for a turnaround under Dan Quinn",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0fJH3dwaRwL_dDDmorPubSwsQ7VRf66oI-_PMN3owM9yV15ppKQKC0907OUE"
+        },
+        {
+          "url": "https://wtop.com/news/2026/11/is-dan-quinn-the-next-coach-out-how-thursday-night-impacts-kalshis-markets/",
+          "title": "Is Dan Quinn the Next Coach Out? How Thursday Night Impacts Kalshi’s Markets",
+          "publisher": "WTOP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA8ffkLYsPw6bbc-xrS2XFdi-zOTw7Wpcukb5DjZ374rTZKP8VjRAFNfrVoRY"
+        },
+        {
+          "url": "https://www.audacy.com/thefandc/video/wjfk-washi-2026-11-12-13h45-08-xbvzn82",
+          "title": "WJFK Washi_2026-11-12_13h45:08",
+          "publisher": "Audacy",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGyku5UYgV32Jf-EBBLm7YhCeovUgxo-T1xwH2QVQ2030HB4C9VDeDNxWaXg"
+        }
+      ]
+    },
+    {
+      "query": "microsoft playback",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T01:40:00Z",
+      "related_news_urls": [
+        "https://news.xbox.com/en-us/2026/11/12/xbox-playback-25th-anniversary-review/",
+        "https://www.windowscentral.com/gaming/xbox/xbox-playback-is-microsofts-gaming-spotify-wrapped-on-steroids-heres-how-to-get-yours",
+        "https://www.gamespot.com/articles/my-trip-down-xbox-memory-lane-should-be-celebratory-but-instead-its-just-depressing/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHiCZWPIimLex3MBo7UJ_2XBkEfEdjclBBjkcVH1vh-ou6tMcLWsl5eM-CrP4",
+      "image_credit": "XBOX Wire",
+      "news": [
+        {
+          "url": "https://news.xbox.com/en-us/2026/11/12/xbox-playback-25th-anniversary-review/",
+          "title": "XBOX Playback is Here: Look Back at Your XBOX Story",
+          "publisher": "XBOX Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHiCZWPIimLex3MBo7UJ_2XBkEfEdjclBBjkcVH1vh-ou6tMcLWsl5eM-CrP4"
+        },
+        {
+          "url": "https://www.windowscentral.com/gaming/xbox/xbox-playback-is-microsofts-gaming-spotify-wrapped-on-steroids-heres-how-to-get-yours",
+          "title": "'Xbox Playback' is Microsoft's gaming Spotify Wrapped on steroids — Here's how to get yours",
+          "publisher": "Windows Central",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwHZRpZi-A_HHwZuJTzGI6JU7LEZl9vQ4Kv0mg_UlP92b7CNm75Y1MsHq9xu8"
+        },
+        {
+          "url": "https://www.gamespot.com/articles/my-trip-down-xbox-memory-lane-should-be-celebratory-but-instead-its-just-depressing/",
+          "title": "My Trip Down Xbox Memory Lane Should Be Celebratory, But Instead It’s Just Depressing",
+          "publisher": "GameSpot",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzplorvnF1UeZtSZtvhMPDa9UlFSvFUs_JSqVJddUzYMu0jGn0DdjUJ3LH4uE"
+        }
+      ]
+    },
+    {
+      "query": "rj barrett",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T01:40:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/fantasy/basketball/news/raptors-rj-barrett-well-rounded-line-in-loss/",
+        "https://knup.com/sports/nba/player-news/performance/alijah-martin-performance-11-11-2026-708795/",
+        "https://raptorsrapture.com/raptors-list-of-reasons-to-keep-rj-barrett-keeps-getting-shorter-with-each-game"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTOcffCvt0iSr2JPsLIVmNIFteTdx2y-8kBBItrSncPkYlNJT_iUQeMTqp2K8",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/raptors-rj-barrett-well-rounded-line-in-loss/",
+          "title": "Raptors' RJ Barrett: Well-rounded line in loss",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTOcffCvt0iSr2JPsLIVmNIFteTdx2y-8kBBItrSncPkYlNJT_iUQeMTqp2K8"
+        },
+        {
+          "url": "https://knup.com/sports/nba/player-news/performance/alijah-martin-performance-11-11-2026-708795/",
+          "title": "Alijah Martin Scores 12 in Raptors' Loss to Celtics on Wednesday",
+          "publisher": "knup.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUcrLL3It2Rkw01O-gBleJBIiPQSxow_EvClViC380w16OQb2gZv86k7KuXGk"
+        },
+        {
+          "url": "https://raptorsrapture.com/raptors-list-of-reasons-to-keep-rj-barrett-keeps-getting-shorter-with-each-game",
+          "title": "Raptors' list of reasons to keep RJ Barrett keeps getting shorter with each game",
+          "publisher": "Raptors Rapture",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR14F-RoucrGh4hT-24jTI8T67Ncgfsy8d0TfpEKvIXfI1RZNXIAoJb_n-h6Mw"
+        }
+      ]
+    },
+    {
+      "query": "météo demain",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T01:40:00Z",
+      "related_news_urls": [
+        "https://www.bfmtv.com/meteo/video-un-ciel-degage-dans-le-sud-ouest-de-la-pluie-attendue-sur-le-reste-de-la-france-la-meteo-du-11-novembre_VN-202611110125.html",
+        "https://actualite.lachainemeteo.com/actualite-meteo/2026-11-11/grande-douceur-generalisee-ce-mercredi-matin-94081",
+        "https://www.tf1info.fr/replay-tf1/videos/video-meteo-du-11-novembre-2026-previsions-meteo-a-21h02-2475321.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQL3tx6B7rZF2mb0a0LnBFx3bs7jKtZzP6m4qMdCq2TPVT_X_Q46EII0F_kzyA",
+      "image_credit": "BFM",
+      "news": [
+        {
+          "url": "https://www.bfmtv.com/meteo/video-un-ciel-degage-dans-le-sud-ouest-de-la-pluie-attendue-sur-le-reste-de-la-france-la-meteo-du-11-novembre_VN-202611110125.html",
+          "title": "Un ciel dégagé dans le sud-ouest, de la pluie attendue sur le reste de la France: la météo du 11 novembre",
+          "publisher": "BFM",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQL3tx6B7rZF2mb0a0LnBFx3bs7jKtZzP6m4qMdCq2TPVT_X_Q46EII0F_kzyA"
+        },
+        {
+          "url": "https://actualite.lachainemeteo.com/actualite-meteo/2026-11-11/grande-douceur-generalisee-ce-mercredi-matin-94081",
+          "title": "Grande douceur généralisée ce mercredi matin",
+          "publisher": "La Chaîne Météo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7PR5Bv2Bn-X_XKMl0y_9gFZT5sDV2e-Rd3Jub_Sacg72nc-PGqmDI7I31U2o"
+        },
+        {
+          "url": "https://www.tf1info.fr/replay-tf1/videos/video-meteo-du-11-novembre-2026-previsions-meteo-a-21h02-2475321.html",
+          "title": "Météo du 11 novembre 2026 : Prévisions météo à 21h02",
+          "publisher": "TF1 Info",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROm7kx7DW8O0KL_4UEbiktny4_P7q6aVA88QI-Ax3AaiGhlOO4bsC-6cPShNk"
+        }
+      ]
+    },
+    {
+      "query": "focker in law release",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-13T01:40:00Z",
+      "related_news_urls": [
+        "https://people.com/ariana-grande-makes-red-carpet-debut-with-boyfriend-ricky-alvarez-at-focker-in-law-premiere-12249764",
+        "https://www.billboard.com/culture/tv-film/ariana-grande-ricky-alvarez-red-carpet-photos-focker-in-law-1236379763/",
+        "https://www.vogue.com/article/ariana-grande-ricky-alvarez-red-carpet-debut-2026-11-12"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvdF1R5NuaqJdO9ZiO3E9LL6M7FeSL_t9x6sTEFORVMrWCsNEo66fOzCfDfUQ",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/ariana-grande-makes-red-carpet-debut-with-boyfriend-ricky-alvarez-at-focker-in-law-premiere-12249764",
+          "title": "Ariana Grande Makes Red Carpet Debut with Boyfriend Ricky Alvarez at Focker-in-Law Premiere",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvdF1R5NuaqJdO9ZiO3E9LL6M7FeSL_t9x6sTEFORVMrWCsNEo66fOzCfDfUQ"
+        },
+        {
+          "url": "https://www.billboard.com/culture/tv-film/ariana-grande-ricky-alvarez-red-carpet-photos-focker-in-law-1236379763/",
+          "title": "Ariana Grande & Ricky Alvarez Make Red-Carpet Debut at ‘Focker-in-Law’ NYC Premiere: See Photos",
+          "publisher": "Billboard",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGwEQ34UJglQeQDivXL7RiU9GLJASkhHzcvXFfrDUgP0TG29IpeDs9J8Mnme0"
+        },
+        {
+          "url": "https://www.vogue.com/article/ariana-grande-ricky-alvarez-red-carpet-debut-2026-11-12",
+          "title": "Ariana Grande Brings Her Two Great Loves—Ricky Álvarez and Rare Vintage—to the Red Carpet",
+          "publisher": "Vogue",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfdx1TH642RUD8-F6DXvcfZvFthb2E89LU1Xp49Ghh4zBLr-KY3A7L2Sj1SH0"
+        }
+      ]
+    },
+    {
+      "query": "abdul carter",
       "approx_searches": "200+",
-      "published_at": "2026-11-13T01:00:00Z",
+      "published_at": "2026-11-13T01:40:00Z",
       "related_news_urls": [
-        "https://www.espn.co.uk/video/clip/_/id/50448468/game-highlights",
-        "https://bustingbrackets.com/bradley-s-rebounding-strength-faces-a-fascinating-test-against-davidson-s-explosive-offense-basketball",
-        "https://bradleybraves.com/news/2026/11/10/mens-basketball-falls-in-road-battle-to-davidson.aspx"
+        "https://www.nydailynews.com/2026/11/11/abdul-carter-on-verge-of-breakout-as-giants-prime-time-commanders-test-looms/",
+        "https://www.centredaily.com/sports/article318003188.html",
+        "https://www.cbssports.com/fantasy/football/news/giants-abdul-carter-good-to-go-for-tnf/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1qq8NoGF5Xa9p8t4neA02jDqVnDvfzvEw72J8eMauqct0Eyffluke0UFrF6M",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrFfig4DnaX8Bvd4YjGPHfmyZndKep196YNTGwZ2nGVte6zU_rha8mnRhCD-U",
+      "image_credit": "New York Daily News",
       "news": [
         {
-          "url": "https://www.espn.co.uk/video/clip/_/id/50448468/game-highlights",
-          "title": "Bradley Braves vs. Davidson Wildcats: Game Highlights",
-          "publisher": "ESPN",
+          "url": "https://www.nydailynews.com/2026/11/11/abdul-carter-on-verge-of-breakout-as-giants-prime-time-commanders-test-looms/",
+          "title": "Abdul Carter on verge of breakout as Giants’ prime time Commanders test looms",
+          "publisher": "New York Daily News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1qq8NoGF5Xa9p8t4neA02jDqVnDvfzvEw72J8eMauqct0Eyffluke0UFrF6M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrFfig4DnaX8Bvd4YjGPHfmyZndKep196YNTGwZ2nGVte6zU_rha8mnRhCD-U"
         },
         {
-          "url": "https://bustingbrackets.com/bradley-s-rebounding-strength-faces-a-fascinating-test-against-davidson-s-explosive-offense-basketball",
-          "title": "Bradley's rebounding strength faces a fascinating test against Davidson's explosive offense",
-          "publisher": "Busting Brackets",
+          "url": "https://www.centredaily.com/sports/article318003188.html",
+          "title": "Abdul Carter's double-team rate adds context to Eagles' protection woes",
+          "publisher": "Centre Daily Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNHMchbnbs6CYv9EslmeanN1pSS3h6SBm9slWXj41I07MqmUY8yQy-aA2M0NI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsikiLCCU9zYYlyM059nVBHgJJVob7DV355UKQaO4ntdRQGubs7G-Y_q-ZoP8"
         },
         {
-          "url": "https://bradleybraves.com/news/2026/11/10/mens-basketball-falls-in-road-battle-to-davidson.aspx",
-          "title": "Men's Basketball falls in Road Battle to Davidson",
-          "publisher": "Bradley University Athletics",
+          "url": "https://www.cbssports.com/fantasy/football/news/giants-abdul-carter-good-to-go-for-tnf/",
+          "title": "Giants' Abdul Carter: Good to go for TNF",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGSd-iNydEIxdh7CyufRfLejGIb0JRuAvropeKdQGTceORiwxK2Wjx6azVMII"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-irHhjWYJgtR92JuShT7hMtFE05nvkZz7IVOT-9Dx8_4yjVQBY2HDazJ3Fjc"
         }
       ]
     },
     {
-      "query": "duncan robinson",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-13T00:50:00Z",
+      "query": "charles manson",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T01:40:00Z",
       "related_news_urls": [
-        "https://pistonpowered.com/duncan-robinson-could-break-tage-barrier-most-improved-player-detroit-pistons",
-        "https://www.basketballpoetry.com/p/can-duncan-robinson-make-the-most",
-        "https://sports.yahoo.com/videos/smash-duncan-robinson-over-3-170437831.html"
+        "https://www.nytimes.com/2026/11/12/movies/victorian-psycho-review.html",
+        "https://www.theguardian.com/film/2026/nov/12/victorian-psycho-review-maika-monroe",
+        "https://www.yahoo.com/entertainment/movies/articles/victorian-psycho-streaming-netflix-amazon-173000847.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFuiXUcsDLYed0iHPBhtucu5ur2wnx1HecQPBf--W4ZtjViApeg1EE8kgTiiM",
-      "image_credit": "PistonPowered",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTznHpmOgOhOZj5_KfLOYA7gcPxuPzxWDvkyBnV3r5bumICT1SOC2WKdJYcro",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://pistonpowered.com/duncan-robinson-could-break-tage-barrier-most-improved-player-detroit-pistons",
-          "title": "Duncan Robinson could break the age barrier for Most Improved Player",
-          "publisher": "PistonPowered",
+          "url": "https://www.nytimes.com/2026/11/12/movies/victorian-psycho-review.html",
+          "title": "‘Victorian Psycho’ Review: Who’s the Sanest of Them All?",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFuiXUcsDLYed0iHPBhtucu5ur2wnx1HecQPBf--W4ZtjViApeg1EE8kgTiiM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTznHpmOgOhOZj5_KfLOYA7gcPxuPzxWDvkyBnV3r5bumICT1SOC2WKdJYcro"
         },
         {
-          "url": "https://www.basketballpoetry.com/p/can-duncan-robinson-make-the-most",
-          "title": "Can Duncan Robinson make the Most Improved ballot?",
-          "publisher": "Basketball Poetry",
+          "url": "https://www.theguardian.com/film/2026/nov/12/victorian-psycho-review-maika-monroe",
+          "title": "Victorian Psycho review – Maika Monroe has a blast in unsteady horror romp",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVyzAVPJG5t2T7fZmS2HF2l1zaF5_DRhkOYgjeTX4hp535jWt94e-W0h80bRE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_VmtbaNcKfp1JDvucJ7AD3ceF-hrUVWWIRJ3fsagUB5uGt3Rcl5HWF5ZVTx8"
         },
         {
-          "url": "https://sports.yahoo.com/videos/smash-duncan-robinson-over-3-170437831.html",
-          "title": "Smash Duncan Robinson Over 3.5 Threes",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.yahoo.com/entertainment/movies/articles/victorian-psycho-streaming-netflix-amazon-173000847.html",
+          "title": "Is ‘Victorian Psycho’ Streaming on Netflix, Amazon Prime, or Shudder?",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIs3X9MXl8yBdZY4rpAXoeerMxAsW6V2Kc0kTu4BhsGCay1BKFbw8liFmsZ3E"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShKMF1JFJcgs12YwOW5WmNWxbsfRftZBGYoj3v-m3Hwe3GMgNZXqS-B70vHXU"
         }
       ]
     }
