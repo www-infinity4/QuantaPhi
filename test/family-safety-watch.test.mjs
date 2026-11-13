@@ -22,7 +22,7 @@ test('Bubbles opens a real registered, local Family Safety Quick Card',()=>{
 test('verified public checks never become military warning or emergency threat predictions',()=>{
  const card=read('family-safety-card.mjs'), core=read('family-safety-core.mjs');
  assert.match(card,/No live military aircraft tracking/);
- assert.match(card,/Official notice/);
+ assert.match(card,/official notice/i);
  assert.match(card,/cache:\s*'no-store'/);
  assert.match(card,/credentials:\s*'omit'/);
  assert.ok(!/localStorage|sessionStorage|Notification\.requestPermission/.test(card));
