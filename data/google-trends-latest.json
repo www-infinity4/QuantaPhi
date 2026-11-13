@@ -3,34 +3,279 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T12:32:49.891348Z",
+  "checked_at": "2026-11-13T13:01:33.948668Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "singapore vs paraguay",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T12:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/soccer/story/_/id/50461054/paraguay-brazil-ties-singapore-redemption-malaysia-humiliation",
+        "https://www.yardbarker.com/general_sports/articles/singapore_vs_paraguay_lineups_preview/s1_17615_44555414",
+        "https://athlonsports.com/soccer/singapore-vs-paraguay-lineups-live-streaming-how-where-to-watch-on-tv"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXKDLfexpSOZaG1Eiybc1O-LD9aDInrZ2M5As2nJsSp3Kr26Obi5CzaAXnmro",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50461054/paraguay-brazil-ties-singapore-redemption-malaysia-humiliation",
+          "title": "Glamour Paraguay, Brazil ties offer Singapore more than just chance for redemption after Malaysia humiliation",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXKDLfexpSOZaG1Eiybc1O-LD9aDInrZ2M5As2nJsSp3Kr26Obi5CzaAXnmro"
+        },
+        {
+          "url": "https://www.yardbarker.com/general_sports/articles/singapore_vs_paraguay_lineups_preview/s1_17615_44555414",
+          "title": "Singapore vs. Paraguay Lineups, Preview",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTY1RjI6FERQr7ZvnjLSEu2V2B_MiSNTV_6Ng49DbKadceZccM355TJhifche4"
+        },
+        {
+          "url": "https://athlonsports.com/soccer/singapore-vs-paraguay-lineups-live-streaming-how-where-to-watch-on-tv",
+          "title": "Singapore vs. Paraguay Lineups, Live Streaming, How & Where to Watch on TV",
+          "publisher": "Athlon Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSc64tQadbTjuxCuC15tYscGYW4x9PhEKd-chX_sGcNHoP0F6KqMjvTdsQl-Ak"
+        }
+      ]
+    },
+    {
+      "query": "kim jong un flag redesign",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T12:30:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/world/asia/kim-jong-un-remakes-north-koreas-flag-ditching-soviet-era-version-c65efcfe",
+        "https://www.nknews.org/2026/11/north-korea-modifies-national-flag-in-break-with-decades-old-design/",
+        "https://www.koreajoongangdaily.com/korea/north-korea-unveils-revised-constitution-reflecting-two-hostile-states-policy/12967144"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu6k61h0yc0PkUS4OiGxmJeh0ZnBgo56zZv6k8gKhHyNbw6Um7z4sXLeVmlDk",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/world/asia/kim-jong-un-remakes-north-koreas-flag-ditching-soviet-era-version-c65efcfe",
+          "title": "Kim Jong Un Remakes North Korea’s Flag, Ditching Soviet-Era Version",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu6k61h0yc0PkUS4OiGxmJeh0ZnBgo56zZv6k8gKhHyNbw6Um7z4sXLeVmlDk"
+        },
+        {
+          "url": "https://www.nknews.org/2026/11/north-korea-modifies-national-flag-in-break-with-decades-old-design/",
+          "title": "North Korea modifies national flag in break with decades-old design",
+          "publisher": "NK News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpR85K3Crwk-vGmo1_KU8TrwZ3XSbJTHQEsvkKbaUD-42By4b7ubKAFFhvTBk"
+        },
+        {
+          "url": "https://www.koreajoongangdaily.com/korea/north-korea-unveils-revised-constitution-reflecting-two-hostile-states-policy/12967144",
+          "title": "North Korea unveils revised constitution reflecting 'two hostile states' policy",
+          "publisher": "Korea JoongAng Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxa48MSnc2DA2jpO_kT1yYx-wwi7E3Jv9jTOXW38WLAMkOFAAh0w6xwTrM5iI"
+        }
+      ]
+    },
+    {
+      "query": "hailey bieber",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T12:30:00Z",
+      "related_news_urls": [
+        "https://people.com/hailey-bieber-shares-cute-video-son-jack-following-dad-justin-musical-footsteps-playing-keyboard-12252403",
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/hailey-bieber-son-already-stealing-112047478.html",
+        "https://www.geo.tv/latest/690894-hailey-bieber-shares-adorable-video-of-son-jack-playing-piano"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5_3b8AKsTYWr_7fJU4fzekQxBcqVib8NjOGWB8w6upV4Arup4UTppkrX3iEQ",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/hailey-bieber-shares-cute-video-son-jack-following-dad-justin-musical-footsteps-playing-keyboard-12252403",
+          "title": "Hailey Bieber Shares Cute Video of Son Jack Following in His Dad Justin’s Musical Footsteps: ‘Blues Loves the Keys’",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5_3b8AKsTYWr_7fJU4fzekQxBcqVib8NjOGWB8w6upV4Arup4UTppkrX3iEQ"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/hailey-bieber-son-already-stealing-112047478.html",
+          "title": "Hailey Bieber’s Son Is Already Stealing Dad Justin’s Style in Every Way",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtcAx5uDG9d_xaXthYdMKFkVxgJv8q-U7zjzMI-2bjlTCoFTHbGEIIy55iNAk"
+        },
+        {
+          "url": "https://www.geo.tv/latest/690894-hailey-bieber-shares-adorable-video-of-son-jack-playing-piano",
+          "title": "Hailey Bieber shares adorable video of son Jack playing piano",
+          "publisher": "Geo News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZVa4_NbZk0aztMcHAUX5OFlgHVGCAfFqSzTht4AYs9FbR2WLskATag42pRs0"
+        }
+      ]
+    },
+    {
+      "query": "viernes 13",
+      "approx_searches": "100+",
+      "published_at": "2026-11-13T12:30:00Z",
+      "related_news_urls": [
+        "https://www.dallasnews.com/espanol/al-dia/vida-y-estilo/article/horoscopo-hoy-noviembre-13-astrologia-22528565.php",
+        "https://www.elnuevoherald.com/entretenimiento/walter-mercado/article318011083.html",
+        "https://www.vanitatis.elconfidencial.com/horoscopo/2026-11-13/horoscopo-hoy-que-dicen-astros-viernes-13-noviembre-1qrt_4463883/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSismMX0G9uAv_NFjleqTDlbOHjIPrdXMaZuUPujSLEc8bZxBzGhSSJHX4Qa5w",
+      "image_credit": "Dallas News",
+      "news": [
+        {
+          "url": "https://www.dallasnews.com/espanol/al-dia/vida-y-estilo/article/horoscopo-hoy-noviembre-13-astrologia-22528565.php",
+          "title": "Horóscopo para hoy, viernes 13 de noviembre para los 12 signos del zodiaco",
+          "publisher": "Dallas News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSismMX0G9uAv_NFjleqTDlbOHjIPrdXMaZuUPujSLEc8bZxBzGhSSJHX4Qa5w"
+        },
+        {
+          "url": "https://www.elnuevoherald.com/entretenimiento/walter-mercado/article318011083.html",
+          "title": "Horóscopo para viernes 13 de noviembre de Las Estrellas de Walter Mercado",
+          "publisher": "El Nuevo Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzYO_oE9gmV5C5EeIfZb4bJna4u5_FNBwwq6aGFYyoQy-XIx4ICWidXvaiC5c"
+        },
+        {
+          "url": "https://www.vanitatis.elconfidencial.com/horoscopo/2026-11-13/horoscopo-hoy-que-dicen-astros-viernes-13-noviembre-1qrt_4463883/",
+          "title": "Aries, Tauro, Géminis, Cáncer, Leo, Virgo, Libra, Escorpio, Sagitario, Capricornio, Acuario y Piscis: así será este viernes 13 de noviembre",
+          "publisher": "Vanitatis",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMtEG61jsrwA0mQyqmtrEUj9SvGJ3NppB3QGk0AdNcndhSZi3cDnb4PRM1Ess"
+        }
+      ]
+    },
+    {
+      "query": "keyata harman",
+      "approx_searches": "100+",
+      "published_at": "2026-11-13T12:30:00Z",
+      "related_news_urls": [
+        "https://www.fox19.com/2026/11/12/longtime-teacher-coach-killed-murder-suicide-weeks-after-filing-divorce/",
+        "https://www.barlowfh.com/obituary/Keyata-Harman",
+        "https://www.kentucky.com/news/state/kentucky/article318019535.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDnO4gMDcSozehNLAEeS7yAl3YjV8JoLgk2jA_SJKk_EuauFTsGOJPJafTXJg",
+      "image_credit": "FOX19 | Cincinnati",
+      "news": [
+        {
+          "url": "https://www.fox19.com/2026/11/12/longtime-teacher-coach-killed-murder-suicide-weeks-after-filing-divorce/",
+          "title": "Longtime teacher and coach killed in murder-suicide weeks after filing for divorce",
+          "publisher": "FOX19 | Cincinnati",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDnO4gMDcSozehNLAEeS7yAl3YjV8JoLgk2jA_SJKk_EuauFTsGOJPJafTXJg"
+        },
+        {
+          "url": "https://www.barlowfh.com/obituary/Keyata-Harman",
+          "title": "Obituary for Keyata Lynn Harman",
+          "publisher": "Barlow Funeral Home",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMDh1JqjOpRUppuy6D6w0XjpJHuLJAi758eXK2EqK4xhVT_QCNhNDCaeqWRPw"
+        },
+        {
+          "url": "https://www.kentucky.com/news/state/kentucky/article318019535.html",
+          "title": "Kentucky teacher, volleyball coach, shot by her husband in a murder-suicide",
+          "publisher": "Lexington Herald Leader",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhc3MOMtkmkXxvzA8Bj8JTmoMzYSox-KCofAyedJt4tWwf0tMJcE8IWmLZunQ"
+        }
+      ]
+    },
+    {
+      "query": "freeze",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T12:20:00Z",
+      "related_news_urls": [
+        "https://www.wbtv.com/2026/11/12/snow-forecast-western-north-carolina-big-temp-drop-approaches/",
+        "https://www.charlotteobserver.com/news/weather-news/article318042936.html",
+        "https://www.13newsnow.com/article/weather/weather-impact/weather-impact-alert-freeze-watch-forecast-saturday-cold-temperatures/291-1b1ae0f8-da37-432b-9036-4f6b1322a806"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOgUwnFb8dwjqlB46I_9uV5SZ0xGwm2rmJ4mN3ONbjcFhg4lKwCzN9D96UIUk",
+      "image_credit": "WBTV",
+      "news": [
+        {
+          "url": "https://www.wbtv.com/2026/11/12/snow-forecast-western-north-carolina-big-temp-drop-approaches/",
+          "title": "Snow in the forecast for Western North Carolina as big temp drop approaches",
+          "publisher": "WBTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOgUwnFb8dwjqlB46I_9uV5SZ0xGwm2rmJ4mN3ONbjcFhg4lKwCzN9D96UIUk"
+        },
+        {
+          "url": "https://www.charlotteobserver.com/news/weather-news/article318042936.html",
+          "title": "‘Widespread freeze’ expected for Charlotte. Here’s how low temperatures will go",
+          "publisher": "Charlotte Observer",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaoqAhWlL6_ElvBGjBLsKabdSDVldYZQZAiZ8RiXrbEESnp3yudz_DHbPNoZc"
+        },
+        {
+          "url": "https://www.13newsnow.com/article/weather/weather-impact/weather-impact-alert-freeze-watch-forecast-saturday-cold-temperatures/291-1b1ae0f8-da37-432b-9036-4f6b1322a806",
+          "title": "Freeze watch in effect for parts of Hampton Roads region to start the weekend",
+          "publisher": "13newsnow.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToJnCTP1nDllhV4ICCo-4LpJ3b5KJ0d49pM_cfHx1fawrWlbr4KTZoy2amDqw"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 map leak selfridges",
+      "approx_searches": "100+",
+      "published_at": "2026-11-13T12:20:00Z",
+      "related_news_urls": [
+        "https://rockstarintel.com/gta-vi-map-leaks-as-collectors-box-sold-early/",
+        "https://insider-gaming.com/gta-6-full-map-leak-online-from-collectors-box/",
+        "https://news.lavx.hu/article/leaked-collector-s-edition-poster-reveals-most-of-grand-theft-auto-6-s-leonida-map"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-oS3uNckpMrVoE9-UNRYKH7jRlVsnc6dhtTZq_PXZZkDmFL3EqxbdfHb3p3I",
+      "image_credit": "RockstarINTEL",
+      "news": [
+        {
+          "url": "https://rockstarintel.com/gta-vi-map-leaks-as-collectors-box-sold-early/",
+          "title": "GTA VI Map Leaks As Collector’s Box Sold Early",
+          "publisher": "RockstarINTEL",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-oS3uNckpMrVoE9-UNRYKH7jRlVsnc6dhtTZq_PXZZkDmFL3EqxbdfHb3p3I"
+        },
+        {
+          "url": "https://insider-gaming.com/gta-6-full-map-leak-online-from-collectors-box/",
+          "title": "Full GTA 6 Map Leaked Online From Collector’s Box",
+          "publisher": "Insider Gaming",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStJlIdWno0UC_YM-27C2Xy9M9UceAywJz8pT_pheZ_X9u8DbQGJqVCMjIX934"
+        },
+        {
+          "url": "https://news.lavx.hu/article/leaked-collector-s-edition-poster-reveals-most-of-grand-theft-auto-6-s-leonida-map",
+          "title": "Leaked Collector’s Edition poster reveals most of Grand Theft Auto 6’s Leonida map",
+          "publisher": "news.lavx.hu",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSl44kX7QottX6M7n6SI7vICcWi-nQSkk07FDYO8HeBpVBYkfYk-WqJHxNLWZI"
+        }
+      ]
+    },
     {
       "query": "putin news",
       "approx_searches": "5000+",
       "published_at": "2026-11-13T12:00:00Z",
       "related_news_urls": [
-        "https://edition.cnn.com/2026/11/12/politics/ukraine-witkoff-kushner-putin-peace-talks-intl",
-        "https://www.bbc.com/news/articles/ckn80j9jv3jxo",
+        "https://www.cnn.com/2026/11/12/politics/ukraine-witkoff-kushner-putin-peace-talks-intl",
+        "https://www.reuters.com/world/europe/us-russia-ukraine-start-second-day-abu-dhabi-peace-talks-2026-11-11/",
         "https://www.atlanticcouncil.org/blogs/ukrainealert/putins-chief-negotiator-vows-to-return-every-inch-of-russian-land-in-ukraine/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToIiV3MjiTgw3-tC3z8BYgi4PSvNw96fzXvp6B8YnpcV5FCzCbPISwNCSB96s",
       "image_credit": "CNN",
       "news": [
         {
-          "url": "https://edition.cnn.com/2026/11/12/politics/ukraine-witkoff-kushner-putin-peace-talks-intl",
+          "url": "https://www.cnn.com/2026/11/12/politics/ukraine-witkoff-kushner-putin-peace-talks-intl",
           "title": "Kushner says Europe to join next Ukraine talks, but Putin stands firm on territorial demands",
           "publisher": "CNN",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToIiV3MjiTgw3-tC3z8BYgi4PSvNw96fzXvp6B8YnpcV5FCzCbPISwNCSB96s"
         },
         {
-          "url": "https://www.bbc.com/news/articles/ckn80j9jv3jxo",
-          "title": "Zelensky welcomes US bringing Europe into Russia-Ukraine peace talks",
-          "publisher": "BBC",
+          "url": "https://www.reuters.com/world/europe/us-russia-ukraine-start-second-day-abu-dhabi-peace-talks-2026-11-11/",
+          "title": "Russia, Ukraine reach deal on prisoner swap as US says lack of trust holds back talks",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_v3AucCHASyyDTQTqF7eC3E3HpUjgphjEoz66JHegii1Wf-nby3sn9LcuRw0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFqC3Mh-2MCwNXfqzUW-NFrbpXcULQvh4KMJ3Z-cK_3snYvUMKCN-E7ItP5eQ"
         },
         {
           "url": "https://www.atlanticcouncil.org/blogs/ukrainealert/putins-chief-negotiator-vows-to-return-every-inch-of-russian-land-in-ukraine/",
@@ -43,7 +288,7 @@
     },
     {
       "query": "ilhan omar news",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-13T12:00:00Z",
       "related_news_urls": [
         "https://www.ms.now/rachel-maddow-show/maddowblog/ilhan-omar-justice-department-trump-indict-former-bodyguard",
@@ -100,251 +345,6 @@
           "publisher": "The Sun",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWHEXip0YA_Vzq7K3sBQy7pnSe33wUSKEa2_cT1089zKQ1vjEO8FjTUXN1HMk"
-        }
-      ]
-    },
-    {
-      "query": "beach hazards statement",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T11:40:00Z",
-      "related_news_urls": [
-        "https://ktla.com/news/california/massive-waves-central-california-forecast/",
-        "https://www.kron4.com/weather/rain-high-surf-headed-for-bay-area-this-weekend/",
-        "https://www.kqed.org/news/12109012/california-will-get-hammered-by-giant-waves-this-weekend-surfers-are-prepping"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLL_gEV4kiO4A9Ky6ODRdby5TQhp8NRZveTwr-JSq9CZ25FOOEwPQUyqm3WuA",
-      "image_credit": "KTLA",
-      "news": [
-        {
-          "url": "https://ktla.com/news/california/massive-waves-central-california-forecast/",
-          "title": "Massive waves forecast to hit California’s Central Coast this weekend",
-          "publisher": "KTLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLL_gEV4kiO4A9Ky6ODRdby5TQhp8NRZveTwr-JSq9CZ25FOOEwPQUyqm3WuA"
-        },
-        {
-          "url": "https://www.kron4.com/weather/rain-high-surf-headed-for-bay-area-this-weekend/",
-          "title": "Rain, high surf headed for Bay Area this weekend",
-          "publisher": "KRON4",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxVUBF5ceQwwAVwSo5FE20CwnMiW3QQwuSQ4ZtE6OQuRx6P6iCsLH1p2IriRk"
-        },
-        {
-          "url": "https://www.kqed.org/news/12109012/california-will-get-hammered-by-giant-waves-this-weekend-surfers-are-prepping",
-          "title": "High Surf Warning Means Giant Waves. California Surfers Are Prepping.",
-          "publisher": "KQED",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIjWAOLyoPTl5RMseNRS34iGpaKgqPHXMjdD-8WgO3tgEliqgf4hXP_IaQp9I"
-        }
-      ]
-    },
-    {
-      "query": "stephen miller white house lobbyist rules",
-      "approx_searches": "100+",
-      "published_at": "2026-11-13T11:40:00Z",
-      "related_news_urls": [
-        "https://www.politico.com/news/2026/11/12/stephen-miller-memo-lobbyists-k-street-01163700",
-        "https://www.wired.com/story/a-servant-class-not-a-working-class-stephen-millers-biographer-on-what-comes-next/",
-        "https://www.nytimes.com/2026/11/13/us/politics/stephen-miller-memo-wiles.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcZFFNhKO5_6aK3lduqFx5KO13v5wD1utvDOpENU8BNOjo2-uLxVt1eo3E4bU",
-      "image_credit": "Politico",
-      "news": [
-        {
-          "url": "https://www.politico.com/news/2026/11/12/stephen-miller-memo-lobbyists-k-street-01163700",
-          "title": "White House staffers can no longer meet with lobbyists without prior approval, new memo says",
-          "publisher": "Politico",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcZFFNhKO5_6aK3lduqFx5KO13v5wD1utvDOpENU8BNOjo2-uLxVt1eo3E4bU"
-        },
-        {
-          "url": "https://www.wired.com/story/a-servant-class-not-a-working-class-stephen-millers-biographer-on-what-comes-next/",
-          "title": "‘A Servant Class, Not a Working Class’: Stephen Miller’s Biographer on What Comes Next",
-          "publisher": "WIRED",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2xSrrx1cwj7iOAdodBs8ah_1f92kCNzK2uo1vXGQQRdcls-Y-Bi0SQbHqkBw"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/13/us/politics/stephen-miller-memo-wiles.html",
-          "title": "After Influence Peddling Claims, White House Restricts Lobbyist Meetings",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyo2vtMFjzRLJ8yADIFAUCCyoRk0WY8PjmQ6Y1FJM097AOxfqjrW4jQMUTrSA"
-        }
-      ]
-    },
-    {
-      "query": "weather chicago",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T11:30:00Z",
-      "related_news_urls": [
-        "https://abc7chicago.com/post/chicago-il-area-weather-forecast-parts-could-see-1st-snow-season-friday-winter-advisory-indiana/20035534/",
-        "https://wgntv.com/weather/chicago-weather-thursday-11122026/",
-        "https://www.nbcchicago.com/news/local/could-a-foot-of-lake-effect-snow-fall-in-the-chicago-area-what-to-know/4015913/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_vR214GTjMiqXw8veyadCXu-YGlqWv85gYXkC7_uHUMwtp3LFkPobxl4nbd0",
-      "image_credit": "ABC7 Chicago",
-      "news": [
-        {
-          "url": "https://abc7chicago.com/post/chicago-il-area-weather-forecast-parts-could-see-1st-snow-season-friday-winter-advisory-indiana/20035534/",
-          "title": "Chicago-area AccuWeather Alert for Winter Weather Advisory, several inches of snow accumulation possible in parts area Friday",
-          "publisher": "ABC7 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_vR214GTjMiqXw8veyadCXu-YGlqWv85gYXkC7_uHUMwtp3LFkPobxl4nbd0"
-        },
-        {
-          "url": "https://wgntv.com/weather/chicago-weather-thursday-11122026/",
-          "title": "Season’s coldest air to date arrives with gusty northerly winds",
-          "publisher": "WGN-TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFmmNKih3zF-yM7lPQ-NVe1MpRAJkJlhJsnyGCZEJ9BEvBCy2iVOkdQJAqqxo"
-        },
-        {
-          "url": "https://www.nbcchicago.com/news/local/could-a-foot-of-lake-effect-snow-fall-in-the-chicago-area-what-to-know/4015913/",
-          "title": "Could a foot of lake-effect snow fall in the Chicago area? What to know",
-          "publisher": "NBC 5 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLeoNOF-HuWzTqh51LvyemsCgWdrUZXIEjBdpkzpwwAGN1oQ2E9tjk5hTOoa8"
-        }
-      ]
-    },
-    {
-      "query": "samoa",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-13T11:20:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/us-news/2026/nov/12/senate-investigation-rfk-jr-measles-samoa",
-        "https://www.cnn.com/2026/11/12/politics/senate-democrate-rfk-investigation",
-        "https://www.ms.now/rachel-maddow-show/maddowblog/kennedy-samoa-wyden-alsobrooks-senate-investigation-rfk-jr-vaccines"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0UJLsLgTxr5MXHIIuw9z6gMq8kyfLFsF8A_DdANpP6nSkgdPT5hhacjUSobo",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/us-news/2026/nov/12/senate-investigation-rfk-jr-measles-samoa",
-          "title": "Senator opens investigation into evidence RFK Jr ‘unlawfully lied’ to Congress",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0UJLsLgTxr5MXHIIuw9z6gMq8kyfLFsF8A_DdANpP6nSkgdPT5hhacjUSobo"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/12/politics/senate-democrate-rfk-investigation",
-          "title": "Top Democrat will investigate whether RFK Jr. lied to Congress",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDNDCvHRpxRK6NmZfpOIONnohyKV1G_EDZDDFqhZW-IsGMPqA70MMw4MwxNCc"
-        },
-        {
-          "url": "https://www.ms.now/rachel-maddow-show/maddowblog/kennedy-samoa-wyden-alsobrooks-senate-investigation-rfk-jr-vaccines",
-          "title": "Democratic senators launch investigation into RFK Jr., questioning whether he lied to Congress",
-          "publisher": "MS NOW",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReDt0Yw2egAYlWTcgOxj3VT5ta_mLhn6pRl432NZ25voaBL4DBBRuEaXHnLSE"
-        }
-      ]
-    },
-    {
-      "query": "joshua link jason link conviction",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T11:20:00Z",
-      "related_news_urls": [
-        "https://www.star-telegram.com/news/local/crime/article318035976.html",
-        "https://www.beefmagazine.com/farm-business-management/federal-jury-convicts-brothers-in-240m-cattle-fraud-scheme",
-        "https://www.wfaa.com/article/news/crime/high-tech-ponzi-scheme-brothers-convicted-in-240m-fort-worth-cattle-fraud/287-da7b0586-b885-4142-93a7-a0d060983192"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy6-zF7nA4TiN8-0cvL7xz-JbzVTGtdasLN2n0_TNcMl-P4Gk-KrRs0aW_dMY",
-      "image_credit": "Fort Worth Star-Telegram",
-      "news": [
-        {
-          "url": "https://www.star-telegram.com/news/local/crime/article318035976.html",
-          "title": "Brothers convicted by jury in $240 million Fort Worth cattle investment scam",
-          "publisher": "Fort Worth Star-Telegram",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy6-zF7nA4TiN8-0cvL7xz-JbzVTGtdasLN2n0_TNcMl-P4Gk-KrRs0aW_dMY"
-        },
-        {
-          "url": "https://www.beefmagazine.com/farm-business-management/federal-jury-convicts-brothers-in-240m-cattle-fraud-scheme",
-          "title": "Federal jury convicts brothers in $240M cattle fraud scheme",
-          "publisher": "Beef Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6iQpyFk4ZwN_J0Kor2UiKXvwsc8Z8isHKT5qETSwJtzw_uSzzjtXvgYaTZv8"
-        },
-        {
-          "url": "https://www.wfaa.com/article/news/crime/high-tech-ponzi-scheme-brothers-convicted-in-240m-fort-worth-cattle-fraud/287-da7b0586-b885-4142-93a7-a0d060983192",
-          "title": "'High-tech Ponzi scheme': Brothers convicted in $240M Fort Worth cattle fraud",
-          "publisher": "WFAA",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTygJ5nxTL3OqBy2XZ1O-tX4ixYPo6xujmnem9o6AICAN3E7xYnLrByGnQSIA"
-        }
-      ]
-    },
-    {
-      "query": "wktv",
-      "approx_searches": "100+",
-      "published_at": "2026-11-13T11:20:00Z",
-      "related_news_urls": [
-        "https://www.newportdispatch.com/2026/11/12/man-charged-with-drug-offenses-in-utica/",
-        "https://www.wktv.com/news/crime/utica-man-charged-with-drug-possession/article_b0d249b5-3563-4b7c-a52e-93f4fa577b5b.html",
-        "https://www.legacy.com/us/obituaries/wktv/name/gerard-pecorello-obituary?id=62954491"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-gt2Lz-aI5muNUJK1D3mAib_AkG2Zg0wbimD0Y8jWpkl2byHH3JWXRCmyZAc",
-      "image_credit": "Newport Dispatch",
-      "news": [
-        {
-          "url": "https://www.newportdispatch.com/2026/11/12/man-charged-with-drug-offenses-in-utica/",
-          "title": "Man charged with drug offenses in Utica",
-          "publisher": "Newport Dispatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-gt2Lz-aI5muNUJK1D3mAib_AkG2Zg0wbimD0Y8jWpkl2byHH3JWXRCmyZAc"
-        },
-        {
-          "url": "https://www.wktv.com/news/crime/utica-man-charged-with-drug-possession/article_b0d249b5-3563-4b7c-a52e-93f4fa577b5b.html",
-          "title": "Utica Man Charged With Drug Possession",
-          "publisher": "WKTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUCP6GUI7lNkpeqhOQvZlJla_kNKGXA662bdhN-Ii4yrQTjZQNf6i1js1WvTw"
-        },
-        {
-          "url": "https://www.legacy.com/us/obituaries/wktv/name/gerard-pecorello-obituary?id=62954491",
-          "title": "Gerard Pecorello Obituary (1944 - 2026) - Utica, NY - WKTV",
-          "publisher": "Legacy | Obituary",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmEQjITt45fP3aWaemssUIP90AfS3i6-QmE8sIsvx-tE6b1_dawT6IosxUtds"
-        }
-      ]
-    },
-    {
-      "query": "espncricinfo",
-      "approx_searches": "100+",
-      "published_at": "2026-11-13T11:10:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/story/nz-vs-ind-what-is-happening-to-mohammed-siraj-1562291",
-        "https://m.economictimes.com/news/new-updates/india-vs-new-zealand-3rd-odi-playing-11-check-head-to-head-probable-playing-11-full-squads-and-match-details/articleshow/135690846.cms",
-        "https://www.india.com/sports/cricket/8543775-8543775/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVUDU0d8mznxy94iWOOXm_0n9aj_0AlKMs6PLH0LiXwKEXMY5dcZuY4VC9VoQ",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/story/nz-vs-ind-what-is-happening-to-mohammed-siraj-1562291",
-          "title": "What is happening to Mohammed Siraj?",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVUDU0d8mznxy94iWOOXm_0n9aj_0AlKMs6PLH0LiXwKEXMY5dcZuY4VC9VoQ"
-        },
-        {
-          "url": "https://m.economictimes.com/news/new-updates/india-vs-new-zealand-3rd-odi-playing-11-check-head-to-head-probable-playing-11-full-squads-and-match-details/articleshow/135690846.cms",
-          "title": "India vs New Zealand 3rd ODI Playing 11: Weather, head-to-head, probable playing 11, full squads and match",
-          "publisher": "The Economic Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPFPkO_NUJX5upm4Y4-v3u65gQ5mKjJGelOROLExxD9ZTDHOvBsqTFAQu2VTc"
-        },
-        {
-          "url": "https://www.india.com/sports/cricket/8543775-8543775/",
-          "title": "Sunil Gavaskar questions Mohammed Siraj's omission from India's XI against New Zealand in washed out 3rd ODI",
-          "publisher": "India.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcU1knR3ubXt0EPm5HiBup53ciJE-GAe3mO56Ac7j7dkztuV9K1XHE3Hmth5E"
         }
       ]
     }
