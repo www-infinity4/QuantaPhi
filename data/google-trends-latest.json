@@ -3,41 +3,181 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T05:31:24.708128Z",
+  "checked_at": "2026-11-13T06:01:44.973987Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "snow storm weather forecast",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-13T05:10:00Z",
+      "query": "afg vs zim",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T05:40:00Z",
       "related_news_urls": [
-        "https://weather.com/2026/11/11/forecast/regional/noreaster-first-snow-frost-freeze",
-        "https://www.wbaltv.com/article/first-snowfall-records-across-the-us/74380213",
-        "https://www.yahoo.com/news/weather-news/article/a-noreaster-is-soaking-the-coast-who-could-see-the-first-snow-of-the-season-173445911.html"
+        "https://www.cricinfo.com/series/afghanistan-v-zimbabwe-2026-27-1555105/afghanistan-vs-zimbabwe-2nd-test-1555124/match-preview",
+        "https://www.heraldonline.co.zw/chevrons-back-on-the-grind/",
+        "https://guyanachronicle.com/2026/11/10/craig-ervine-slams-maiden-double-ton-in-draw-vs-afghanistan/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMy9uLSr89MhzOJ122OHTxXsuw0FTzb6mHjtpXVQ-PsbwCAcqsRf-khrtEi4s",
-      "image_credit": "The Weather Channel",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcST7FFHNtBeIdCTEz1pkHQBngsCs8BuFr6Roe1WiO9KchW17-oxbhMU09zwnEI",
+      "image_credit": "Cricinfo",
       "news": [
         {
-          "url": "https://weather.com/2026/11/11/forecast/regional/noreaster-first-snow-frost-freeze",
-          "title": "Nor’easter: Here’s who has best chance of accumulating snow",
-          "publisher": "The Weather Channel",
+          "url": "https://www.cricinfo.com/series/afghanistan-v-zimbabwe-2026-27-1555105/afghanistan-vs-zimbabwe-2nd-test-1555124/match-preview",
+          "title": "Bowlers eye more assistance from Sharjah pitch after runathon in first Test",
+          "publisher": "Cricinfo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMy9uLSr89MhzOJ122OHTxXsuw0FTzb6mHjtpXVQ-PsbwCAcqsRf-khrtEi4s"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcST7FFHNtBeIdCTEz1pkHQBngsCs8BuFr6Roe1WiO9KchW17-oxbhMU09zwnEI"
         },
         {
-          "url": "https://www.wbaltv.com/article/first-snowfall-records-across-the-us/74380213",
-          "title": "Find out the earliest first snow on record in your ZIP code",
-          "publisher": "WBAL-TV",
+          "url": "https://www.heraldonline.co.zw/chevrons-back-on-the-grind/",
+          "title": "Chevrons back on the grind",
+          "publisher": "Herald.co.zw",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1wUMNssOH9camtKOzlYRx0U2WCG_kwDw4on4iqEdPAPn2bGG2Rp-FGdooXwM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvRmFTKDAZV9SLxK02C2fDqd4Kqqhxzk8BfNM7iVcBGivEj_tSpnDlwrWVTr8"
         },
         {
-          "url": "https://www.yahoo.com/news/weather-news/article/a-noreaster-is-soaking-the-coast-who-could-see-the-first-snow-of-the-season-173445911.html",
-          "title": "A nor’easter is hitting the Northeast. How likely is the first snow of the season?",
-          "publisher": "Yahoo",
+          "url": "https://guyanachronicle.com/2026/11/10/craig-ervine-slams-maiden-double-ton-in-draw-vs-afghanistan/",
+          "title": "Craig Ervine slams maiden double ton in draw vs Afghanistan",
+          "publisher": "Guyana Chronicle",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGjkwsx4sps3BTjqYSXrrKmHAMPMfjJzNuIMK5tM6kgH6470dZpiBvuOMd2iY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtZTYtFqPqHxd7BE5mfyBODLNc8GFZkr99S6ziqWFsHa3k5ydadaSf7S31JOU"
+        }
+      ]
+    },
+    {
+      "query": "icc",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T05:40:00Z",
+      "related_news_urls": [
+        "https://www.cricbuzz.com/cricket-news/140885/icc-draws-up-schedule-for-2032-35-cycle",
+        "https://www.cricinfo.com/story/icc-plans-to-exercise-greater-control-over-t20-franchise-leagues-1562388",
+        "https://theshillongtimes.com/2026/11/12/wtc-match-ups-from-2027-to-2031-set-to-be-proposed-during-icc-meet/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSplFAOBM5tGDj5TKiDuOw-1pfK1zaOfPZa42IHnTFNdoE8os1lZyeHXsUxuEQ",
+      "image_credit": "Cricbuzz",
+      "news": [
+        {
+          "url": "https://www.cricbuzz.com/cricket-news/140885/icc-draws-up-schedule-for-2032-35-cycle",
+          "title": "ICC draws up schedule for 2032-35 cycle",
+          "publisher": "Cricbuzz",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSplFAOBM5tGDj5TKiDuOw-1pfK1zaOfPZa42IHnTFNdoE8os1lZyeHXsUxuEQ"
+        },
+        {
+          "url": "https://www.cricinfo.com/story/icc-plans-to-exercise-greater-control-over-t20-franchise-leagues-1562388",
+          "title": "ICC proposes greater control over T20 franchise leagues",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQeoP18fIjdAav8oW3-8BBR0D7alTsQmmMrbWo7eUtewRf9oTTbMdCu4XhG_Y"
+        },
+        {
+          "url": "https://theshillongtimes.com/2026/11/12/wtc-match-ups-from-2027-to-2031-set-to-be-proposed-during-icc-meet/",
+          "title": "WTC match-ups from 2027 to 2031 set to be proposed during ICC meet",
+          "publisher": "The Shillong Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8fEi7gPecv14zeFpt1WK_cN5YnK8kdDry_ceDG3HjvCy7M8KT7tcrmI4ajPw"
+        }
+      ]
+    },
+    {
+      "query": "noah gragson",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T05:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/nascar-fans-fear-noah-gragson-232354424.html",
+        "https://www.motorsport.com/nascar-cup/news/noah-gragson-apologizes-for-daniel-suarez-contact/10873425/",
+        "https://www.essentiallysports.com/nascar-news-noah-gragson-viral-post-race-moment-has-racing-community-concerned-about-his-well-being/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgmifbI3m5eBXETAx2Qp_-jitMPvC6_Ig98UcPiJuemasNRbmO4TfeTU2lHLg",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/nascar-fans-fear-noah-gragson-232354424.html",
+          "title": "NASCAR Fans Fear for Noah Gragson’s Health After Alarming Homestead Scene",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgmifbI3m5eBXETAx2Qp_-jitMPvC6_Ig98UcPiJuemasNRbmO4TfeTU2lHLg"
+        },
+        {
+          "url": "https://www.motorsport.com/nascar-cup/news/noah-gragson-apologizes-for-daniel-suarez-contact/10873425/",
+          "title": "Noah Gragson apologizes to Daniel Suarez for spinning him at Homestead",
+          "publisher": "Motorsport.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8lzsenWBr-DCPKSlt_-MSKWqvAWzK6pOifDYVaGBVMRrWJ9igSKTcUC8IpBA"
+        },
+        {
+          "url": "https://www.essentiallysports.com/nascar-news-noah-gragson-viral-post-race-moment-has-racing-community-concerned-about-his-well-being/",
+          "title": "Noah Gragson’s Viral Post-Race Moment Sparks Fan Speculation About His Health",
+          "publisher": "EssentiallySports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaACQjYEbpa_vIkRMRUqJXXKRg22qIq_vD8pr-I39ExCMhVslhWaHjvp84bF8"
+        }
+      ]
+    },
+    {
+      "query": "san francisco weather",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T05:30:00Z",
+      "related_news_urls": [
+        "https://ktla.com/news/california/massive-waves-central-california-forecast/",
+        "https://www.sanluisobispo.com/news/weather-news/article318054482.html",
+        "https://lookout.co/santa-cruz-county-braces-for-heavy-rain-dangerous-surf-as-waves-could-reach-30-feet/story"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLL_gEV4kiO4A9Ky6ODRdby5TQhp8NRZveTwr-JSq9CZ25FOOEwPQUyqm3WuA",
+      "image_credit": "KTLA",
+      "news": [
+        {
+          "url": "https://ktla.com/news/california/massive-waves-central-california-forecast/",
+          "title": "Massive waves forecast to hit California’s Central Coast this weekend",
+          "publisher": "KTLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLL_gEV4kiO4A9Ky6ODRdby5TQhp8NRZveTwr-JSq9CZ25FOOEwPQUyqm3WuA"
+        },
+        {
+          "url": "https://www.sanluisobispo.com/news/weather-news/article318054482.html",
+          "title": "‘Dangerously large’ waves to hit SLO County beaches this weekend. How to stay safe",
+          "publisher": "San Luis Obispo Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScGSVsHJXBI6_9lDgljUDUmbKII97kg_oaWJyBEyeoutlJYQUE5wrV1BYhBJY"
+        },
+        {
+          "url": "https://lookout.co/santa-cruz-county-braces-for-heavy-rain-dangerous-surf-as-waves-could-reach-30-feet/story",
+          "title": "Santa Cruz County braces for heavy rain, dangerous surf as waves could reach 30 feet",
+          "publisher": "Lookout Santa Cruz",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdH0q8e9265SLq-D_A9R7TWONlNkRGLXfGmUzTiByrQXxXZ03zDELYuGKuNd8"
+        }
+      ]
+    },
+    {
+      "query": "xbox x25",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T05:20:00Z",
+      "related_news_urls": [
+        "https://www.ign.com/articles/xbox-series-x-x25-special-edition-console-invite-requests-are-up-at-amazon",
+        "https://gamefragger.com/xbox/xbox-is-holding-back-more-xbox-series-x25-consoles-and-controllers-for-launch-day-a30109",
+        "https://www.purexbox.com/news/2026/11/microsoft-announces-last-minute-restock-of-the-xbox-series-x25-console"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQXgH9a1e6h5taPFke5zzsgmOPu0Mii_0wMHvv5dyCuT2mKNoIiEm8nuhLxQU",
+      "image_credit": "IGN",
+      "news": [
+        {
+          "url": "https://www.ign.com/articles/xbox-series-x-x25-special-edition-console-invite-requests-are-up-at-amazon",
+          "title": "You Can Request an Invite to Buy an Xbox Series X | X25 Special Edition Console at Amazon Right Now",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQXgH9a1e6h5taPFke5zzsgmOPu0Mii_0wMHvv5dyCuT2mKNoIiEm8nuhLxQU"
+        },
+        {
+          "url": "https://gamefragger.com/xbox/xbox-is-holding-back-more-xbox-series-x25-consoles-and-controllers-for-launch-day-a30109",
+          "title": "Xbox Is Holding Back More Xbox Series X25 Consoles And Controllers For Launch Day",
+          "publisher": "GameFragger.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCnss1sFjWBMfqrf16Au9UqPsdTK9o_d_E5ScRVGDVf-eUQTrvF9k_gSpoBhI"
+        },
+        {
+          "url": "https://www.purexbox.com/news/2026/11/microsoft-announces-last-minute-restock-of-the-xbox-series-x25-console",
+          "title": "Microsoft Announces Last-Minute Restock Of The Xbox Series X25 Console",
+          "publisher": "Pure Xbox",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToC4eotjD50CRpB2g52ynZnN_GLogu1enDfeHmd5omXgqQ7RTQFwD2BcnECRw"
         }
       ]
     },
@@ -81,68 +221,68 @@
       "approx_searches": "200+",
       "published_at": "2026-11-13T05:10:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/2026/11/12/politics/live-news/trump-congress",
-        "https://alaskapublic.org/news/politics/elections/2026-11-12/jkt-tops-50-in-alaska-governors-race-as-peltola-extends-senate-lead",
-        "https://www.adn.com/politics/2026/11/12/kreiss-tomkins-previews-policy-priorities-as-he-awaits-final-election-results/"
+        "https://alaskapublic.org/news/politics/elections/2026-11-11/alaskas-u-s-senate-governors-races-tighten-with-new-ballot-count",
+        "https://www.adn.com/politics/2026/11/12/peltola-kreiss-tomkins-grow-leads-after-latest-ballot-counts-in-alaska/",
+        "https://thehill.com/homenews/campaign/6215353-mary-peltola-dan-sullivan-alaska-senate-race-update/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6aLTvO0j4q5YA724scAa-FYTwZYQp59GqPP1h_-XdFMslrYT4GIG7mJuiQyw",
-      "image_credit": "CNN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSYz4HjLdIRlAPXR9lRnNV8Ak5m5t6dgH6dn-YIrzXFliZLiLAoV2EmHp-y1U",
+      "image_credit": "Alaska Public Media",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/12/politics/live-news/trump-congress",
-          "title": "Democrats pick up win in Alaska after midterms shellacking for GOP",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6aLTvO0j4q5YA724scAa-FYTwZYQp59GqPP1h_-XdFMslrYT4GIG7mJuiQyw"
-        },
-        {
-          "url": "https://alaskapublic.org/news/politics/elections/2026-11-12/jkt-tops-50-in-alaska-governors-race-as-peltola-extends-senate-lead",
-          "title": "JKT tops 50% in Alaska governor’s race as Peltola extends Senate lead",
+          "url": "https://alaskapublic.org/news/politics/elections/2026-11-11/alaskas-u-s-senate-governors-races-tighten-with-new-ballot-count",
+          "title": "Alaska’s U.S. Senate, governor’s races tighten with new ballot count",
           "publisher": "Alaska Public Media",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjL3GbdWTJeuPQot7TJPWlKEOzUdqBHLiXkC9wayuYajOjSf0cl5Fan99tLMU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSYz4HjLdIRlAPXR9lRnNV8Ak5m5t6dgH6dn-YIrzXFliZLiLAoV2EmHp-y1U"
         },
         {
-          "url": "https://www.adn.com/politics/2026/11/12/kreiss-tomkins-previews-policy-priorities-as-he-awaits-final-election-results/",
-          "title": "Kreiss-Tomkins previews policy priorities as he awaits final election results",
+          "url": "https://www.adn.com/politics/2026/11/12/peltola-kreiss-tomkins-grow-leads-after-latest-ballot-counts-in-alaska/",
+          "title": "Peltola, Kreiss-Tomkins grow leads after latest ballot counts in Alaska",
           "publisher": "Anchorage Daily News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbj5TkZbryhp6JF06irKW9TH45UgNmYLiZrMzGA2SMvY6SUoA1FJtJbSh1-ts"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQO78pq6K_8uutD9tl3HApet7gZH88epfNN7Voge1mV3_NjsncAkQFaNiqN5fA"
+        },
+        {
+          "url": "https://thehill.com/homenews/campaign/6215353-mary-peltola-dan-sullivan-alaska-senate-race-update/",
+          "title": "Peltola holds lead, but Sullivan gains after latest Alaska Senate vote drop",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt2ZMEHnsSJ_p3iAMq8_d2fAZWe1thzFCFUvtHnZYv7b4g1i2GqRrqakGhbpM"
         }
       ]
     },
     {
-      "query": "blues",
-      "approx_searches": "200+",
+      "query": "snow storm weather forecast",
+      "approx_searches": "10000+",
       "published_at": "2026-11-13T05:10:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/athletic/7756683/2026/11/12/blues-newcomer-justin-barron-good-fit/",
-        "https://www.nhl.com/blues/video/det-stl-barron-scores-goal-against-john-gibson-6408213029112",
-        "https://bleedinblue.com/justin-barron-can-become-the-next-rendition-of-justin-faulk-01m75gthxsjh"
+        "https://weather.com/2026/11/11/forecast/regional/noreaster-first-snow-frost-freeze",
+        "https://www.wbaltv.com/article/first-snowfall-records-across-the-us/74380213",
+        "https://www.yahoo.com/news/weather-news/article/a-noreaster-is-soaking-the-coast-who-could-see-the-first-snow-of-the-season-173445911.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ137ibQDX7suJ0rk7jhNgX81TbPDNXFrcHgRSFvGxwQQHo8zfzULQ1FQ3DPj4",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMy9uLSr89MhzOJ122OHTxXsuw0FTzb6mHjtpXVQ-PsbwCAcqsRf-khrtEi4s",
+      "image_credit": "The Weather Channel",
       "news": [
         {
-          "url": "https://www.nytimes.com/athletic/7756683/2026/11/12/blues-newcomer-justin-barron-good-fit/",
-          "title": "Blues newcomer Justin Barron is cooking but remains modest: ‘The fit here has felt good’",
-          "publisher": "The New York Times",
+          "url": "https://weather.com/2026/11/11/forecast/regional/noreaster-first-snow-frost-freeze",
+          "title": "Nor’easter: Here’s who has best chance of accumulating snow",
+          "publisher": "The Weather Channel",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ137ibQDX7suJ0rk7jhNgX81TbPDNXFrcHgRSFvGxwQQHo8zfzULQ1FQ3DPj4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMy9uLSr89MhzOJ122OHTxXsuw0FTzb6mHjtpXVQ-PsbwCAcqsRf-khrtEi4s"
         },
         {
-          "url": "https://www.nhl.com/blues/video/det-stl-barron-scores-goal-against-john-gibson-6408213029112",
-          "title": "DET@STL: Barron puts the Blues ahead",
-          "publisher": "NHL.com",
+          "url": "https://www.wbaltv.com/article/first-snowfall-records-across-the-us/74380213",
+          "title": "Find out the earliest first snow on record in your ZIP code",
+          "publisher": "WBAL-TV",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPAk9h8RAp1_Lgcx3Gapnzg3KiA7epoAsQ1fFFvoyooj_vrssXVpwWpdygDPM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1wUMNssOH9camtKOzlYRx0U2WCG_kwDw4on4iqEdPAPn2bGG2Rp-FGdooXwM"
         },
         {
-          "url": "https://bleedinblue.com/justin-barron-can-become-the-next-rendition-of-justin-faulk-01m75gthxsjh",
-          "title": "Justin Barron can become the next rendition of Justin Faulk",
-          "publisher": "Bleedin' Blue",
+          "url": "https://www.yahoo.com/news/weather-news/article/a-noreaster-is-soaking-the-coast-who-could-see-the-first-snow-of-the-season-173445911.html",
+          "title": "A nor’easter is hitting the Northeast. How likely is the first snow of the season?",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiyZTsNKTTGLCTFnB6XJyPImvJfP7607y8Tj-vH9rGfKPnXQv0eAI_xf1WM30"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGjkwsx4sps3BTjqYSXrrKmHAMPMfjJzNuIMK5tM6kgH6470dZpiBvuOMd2iY"
         }
       ]
     },
@@ -151,19 +291,19 @@
       "approx_searches": "200+",
       "published_at": "2026-11-13T05:10:00Z",
       "related_news_urls": [
-        "https://variety.com/2026/film/news/confession-review-1236945904/",
+        "https://www.hollywoodreporter.com/movies/movie-reviews/confession-review-rob-lowe-james-franco-nick-nolte-1236751013/",
         "https://slate.com/culture/2026/11/confession-movie-2026-daily-wire-ben-shapiro-rob-lowe-james-franco.html",
-        "https://www.hollywoodreporter.com/movies/movie-reviews/confession-review-rob-lowe-james-franco-nick-nolte-1236751013/"
+        "https://www.the-independent.com/arts-entertainment/films/news/confession-reviews-rob-lowe-daily-wire-b3084058.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROYBc4Ge6dVWnRd8IYq777tPmnucb8931OVA3dzS3jou_KroNLQ9KDKH9yDBs",
-      "image_credit": "Variety",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuY2yAv6K5zMhFUSA5wM5WHxby9FhrtXubws4fqaP_BHPqMBqshuFU4xZUBiE",
+      "image_credit": "The Hollywood Reporter",
       "news": [
         {
-          "url": "https://variety.com/2026/film/news/confession-review-1236945904/",
-          "title": "'Confession' Review: James Franco and Rob Lowe in a Sluggish Drama",
-          "publisher": "Variety",
+          "url": "https://www.hollywoodreporter.com/movies/movie-reviews/confession-review-rob-lowe-james-franco-nick-nolte-1236751013/",
+          "title": "'Confession' Review: Rob Lowe, James Franco in Ben Shapiro-Penned Film",
+          "publisher": "The Hollywood Reporter",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROYBc4Ge6dVWnRd8IYq777tPmnucb8931OVA3dzS3jou_KroNLQ9KDKH9yDBs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuY2yAv6K5zMhFUSA5wM5WHxby9FhrtXubws4fqaP_BHPqMBqshuFU4xZUBiE"
         },
         {
           "url": "https://slate.com/culture/2026/11/confession-movie-2026-daily-wire-ben-shapiro-rob-lowe-james-franco.html",
@@ -173,11 +313,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCVTW8UnpAcJPmDzc23Vb4BtyvcRL4gbgfYpsEkAehilr7uOBrOZ5XOIGf488"
         },
         {
-          "url": "https://www.hollywoodreporter.com/movies/movie-reviews/confession-review-rob-lowe-james-franco-nick-nolte-1236751013/",
-          "title": "'Confession' Review: Rob Lowe, James Franco in Ben Shapiro-Penned Film",
-          "publisher": "The Hollywood Reporter",
+          "url": "https://www.the-independent.com/arts-entertainment/films/news/confession-reviews-rob-lowe-daily-wire-b3084058.html",
+          "title": "Rob Lowe’s Daily Wire drama splits critics: ‘Masterpiece’ or ‘Tedious’?",
+          "publisher": "The Independent",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuY2yAv6K5zMhFUSA5wM5WHxby9FhrtXubws4fqaP_BHPqMBqshuFU4xZUBiE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDe0gZEK-WspOiQtRKgRzjxA8PC0oX3Nxb5tl3brNSDcagx56yarMuMuUM-No"
         }
       ]
     },
@@ -213,146 +353,6 @@
           "publisher": "ELLE",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNPRFgRwpJshkuHmBhAhgRB6rBp3fTvWDSSuN7oRY5ppXrfl0e4w-0VuOnTDM"
-        }
-      ]
-    },
-    {
-      "query": "who won gamer of the year 2026",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T05:00:00Z",
-      "related_news_urls": [
-        "https://crimsondesert.pearlabyss.com/en-US/News/Notice/Detail?_boardNo=156",
-        "https://www.bbc.com/news/articles/cmg46y76kz5no",
-        "https://www.gamesindustry.biz/resident-evil-requiem-wins-four-golden-joystick-awards-including-ultimate-and-console-goty"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT32ywwtVFR_0K_-mLKFT4nGFbvV9X7hTvjPrp2p8lzKjDbfSP3CBoD9mtL3Gs",
-      "image_credit": "펄어비스 공식 홈페이지",
-      "news": [
-        {
-          "url": "https://crimsondesert.pearlabyss.com/en-US/News/Notice/Detail?_boardNo=156",
-          "title": "Notices",
-          "publisher": "펄어비스 공식 홈페이지",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT32ywwtVFR_0K_-mLKFT4nGFbvV9X7hTvjPrp2p8lzKjDbfSP3CBoD9mtL3Gs"
-        },
-        {
-          "url": "https://www.bbc.com/news/articles/cmg46y76kz5no",
-          "title": "Resident Evil Requiem sweeps Golden Joystick Awards",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLebT8Tt90MupOvjXt2uJcfciJHdk5zeebvrD5_ClRFrkGdVAQDfap8c3XUCY"
-        },
-        {
-          "url": "https://www.gamesindustry.biz/resident-evil-requiem-wins-four-golden-joystick-awards-including-ultimate-and-console-goty",
-          "title": "Resident Evil Requiem wins four Golden Joystick Awards, including Ultimate and Console GOTY",
-          "publisher": "GamesIndustry.biz",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEP_QI_u1CnumA9YIAtn-Npw2QQfLx20PO7Wcg9Y_65hUbVF7zA2uhvWzTTG8"
-        }
-      ]
-    },
-    {
-      "query": "san diego weather",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T05:00:00Z",
-      "related_news_urls": [
-        "https://www.countynewscenter.com/light-rain-forecast-overnight-in-san-diego-county/",
-        "https://fox5sandiego.com/weather/san-diego-rain-forecast-next-week/",
-        "https://www.sandiegouniontribune.com/2026/11/11/the-first-in-a-series-of-storms-expected-to-reach-san-diego-county-late-thursday/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzVa7yy8lGbhuU1HkxThVZ-uXtb9Nc-fq6sfA90bvaIryM_lkL_P-iDG6MnZk",
-      "image_credit": "San Diego County News Center",
-      "news": [
-        {
-          "url": "https://www.countynewscenter.com/light-rain-forecast-overnight-in-san-diego-county/",
-          "title": "Light Rain Forecast Overnight in San Diego County",
-          "publisher": "San Diego County News Center",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzVa7yy8lGbhuU1HkxThVZ-uXtb9Nc-fq6sfA90bvaIryM_lkL_P-iDG6MnZk"
-        },
-        {
-          "url": "https://fox5sandiego.com/weather/san-diego-rain-forecast-next-week/",
-          "title": "San Diego County could see several rounds of rain showers through next week",
-          "publisher": "FOX 5 San Diego & KUSI News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUVfRlbIcg6NB_w1svtY9a3SsYwAO1EE9QGrRLhvLAftsC4V78_TE3mLUXjWY"
-        },
-        {
-          "url": "https://www.sandiegouniontribune.com/2026/11/11/the-first-in-a-series-of-storms-expected-to-reach-san-diego-county-late-thursday/",
-          "title": "The first in a series of storms expected to reach San Diego County late Thursday",
-          "publisher": "San Diego Union-Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShGwVgTTD2ET8Y186lnlZL67gMoMAuTqfcCytfCEMkwNZiYVM7FLChuKAwg-U"
-        }
-      ]
-    },
-    {
-      "query": "denny hamlin",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T05:00:00Z",
-      "related_news_urls": [
-        "https://www.hendrickmotorsports.com/news/2026/november/11/rick-hendrick-talks-about-the-snickers-bars-victory-lane-photo-and-days-of-thunder-2-at-nascar-awards",
-        "https://www.nascar.com/news-media/2026/11/09/hendrick-motorsports-has-a-snickers-and-the-last-laugh-over-hamlin/",
-        "https://www.autoweek.com/racing/nascar/a74401240/rick-hendrick-saved-snickers-denny-hamlin/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZlYXgtMjs7WVBkOXC3k_4rBrDzwC7z-3z8FIGLPT75sWkHqulRTAaYtfL5Xo",
-      "image_credit": "Hendrick Motorsports",
-      "news": [
-        {
-          "url": "https://www.hendrickmotorsports.com/news/2026/november/11/rick-hendrick-talks-about-the-snickers-bars-victory-lane-photo-and-days-of-thunder-2-at-nascar-awards",
-          "title": "Rick Hendrick talks about Snickers bars in victory lane and 'Days of Thunder 2' at NASCAR Awards",
-          "publisher": "Hendrick Motorsports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZlYXgtMjs7WVBkOXC3k_4rBrDzwC7z-3z8FIGLPT75sWkHqulRTAaYtfL5Xo"
-        },
-        {
-          "url": "https://www.nascar.com/news-media/2026/11/09/hendrick-motorsports-has-a-snickers-and-the-last-laugh-over-hamlin/",
-          "title": "Hendrick Motorsports has a Snickers — and the last laugh over Hamlin",
-          "publisher": "NASCAR.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSk-UbMP7cvnoDrrz_RBJ8y9nrcvIh7Vxgum7Iht_ULi1ZzWSpW9olGKA5gexk"
-        },
-        {
-          "url": "https://www.autoweek.com/racing/nascar/a74401240/rick-hendrick-saved-snickers-denny-hamlin/",
-          "title": "Rick Hendrick Saved a Snickers for Denny Hamlin",
-          "publisher": "Autoweek",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcTg6HExCGYi8NhVS3tH20mIbldcQxRH5o915mpz1Lolqu8rfSmdC8ns-S4oQ"
-        }
-      ]
-    },
-    {
-      "query": "u2",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-13T04:50:00Z",
-      "related_news_urls": [
-        "https://www.dollyparton.com/news/u2-dolly-parton-torn-the-final-song-dolly-recorded-country-version-world-premieres-thursday-nov-12",
-        "https://www.13newsnow.com/article/news/nation-world/dolly-partons-final-recorded-song-be-released-friday/507-e7d44589-344e-4697-930c-34d73a715f6f",
-        "https://fox17.com/news/entertainment/dolly-partons-final-vocal-recording-to-appear-on-u2-album"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwVla2KotbPNsujNR8HdlRC3eg5A5p4WMwTiPKvyfiZ_Nla7ie5172pMhPPII",
-      "image_credit": "Dolly Parton Official Website",
-      "news": [
-        {
-          "url": "https://www.dollyparton.com/news/u2-dolly-parton-torn-the-final-song-dolly-recorded-country-version-world-premieres-thursday-nov-12",
-          "title": "U2 & Dolly Parton, \"Torn,\" The Final Song Dolly Recorded World Premieres Thursday, Nov. 12",
-          "publisher": "Dolly Parton Official Website",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwVla2KotbPNsujNR8HdlRC3eg5A5p4WMwTiPKvyfiZ_Nla7ie5172pMhPPII"
-        },
-        {
-          "url": "https://www.13newsnow.com/article/news/nation-world/dolly-partons-final-recorded-song-be-released-friday/507-e7d44589-344e-4697-930c-34d73a715f6f",
-          "title": "Dolly Parton's final recorded song, a duet with Bono, to be released on Nov. 13",
-          "publisher": "13newsnow.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8FwIv4ILCLJwbw3gqgSSE8AEc-NZFp65zkHlJkp6X6TTm6fuOZwKB0QMc8uU"
-        },
-        {
-          "url": "https://fox17.com/news/entertainment/dolly-partons-final-vocal-recording-to-appear-on-u2-album",
-          "title": "Dolly Parton’s final vocal recording to appear on U2 album",
-          "publisher": "WZTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdeCWxtdTyqkc79RvvjfP2WbZZ6zM8ArCf6CpDrxUPEpYChYI5x6gNekaLE8I"
         }
       ]
     }
