@@ -3,12 +3,222 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T17:01:19.232118Z",
+  "checked_at": "2026-11-13T17:31:13.955523Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "emma grede",
+      "query": "polona hercog",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-13T17:10:00Z",
+      "related_news_urls": [
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/7e092555-5d1e-4c41-a162-d3d2c27dccd2/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/f678587d-37f4-4532-be56-a240ac5ec5ff/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/3a81f12f-d108-40f4-8810-d2df44c2a52f/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjsiTXphyVT-DpPqVWY8LY14D0icIvraKYlD3gUn0z16GRYw64OeA6lSMZphc",
+      "image_credit": "Robinhood",
+      "news": [
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/7e092555-5d1e-4c41-a162-d3d2c27dccd2/",
+          "title": "November 14, 2026: Marvin Moeller vs Jonas Forejtek Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjsiTXphyVT-DpPqVWY8LY14D0icIvraKYlD3gUn0z16GRYw64OeA6lSMZphc"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/f678587d-37f4-4532-be56-a240ac5ec5ff/",
+          "title": "November 11, 2026: Laura Pigossi vs Bianca Andreescu Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkyi5zNSDLBzightO7a3FPgL_MfluUTyWrUk2Q534hqm2XkEzRyRnW0L7ZwKk"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/3a81f12f-d108-40f4-8810-d2df44c2a52f/",
+          "title": "November 11, 2026: Alejandro Tabilo vs Lorenzo Sonego Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEJMwrnwmzlInLmdONDm_dnz45BVKTZvIOIOVOyqc80bxlrpkJ5DBQSkahxTU"
+        }
+      ]
+    },
+    {
+      "query": "rene haas",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-13T17:00:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/cio-journal/nvidia-needs-three-ceos-in-one-59038b0c",
+        "https://finance.yahoo.com/video/nvidias-ceo-search-has-a-3--to-4-month-clock-its-pretty-urgent-175552767.html",
+        "https://www.ft.com/content/2a64f698-46dd-4178-a3f4-4c5f4c0a0926?syn-25a6b1a6=1"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRchBr_VCzPyhAESI7uW2vBm09mrUmNnAkW8Qssnl8fguZ7jb8QI_zrLHc7vsA",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/cio-journal/nvidia-needs-three-ceos-in-one-59038b0c",
+          "title": "Nvidia Needs Three CEOs in One",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRchBr_VCzPyhAESI7uW2vBm09mrUmNnAkW8Qssnl8fguZ7jb8QI_zrLHc7vsA"
+        },
+        {
+          "url": "https://finance.yahoo.com/video/nvidias-ceo-search-has-a-3--to-4-month-clock-its-pretty-urgent-175552767.html",
+          "title": "Nvidia's CEO search has a 3- to 4-month clock: 'It's pretty urgent'",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTA19rqaozTyLF4AWH5CljHpNki3IH2va3lzIq0JGnOmZSbMisWjxRZaxvUr4"
+        },
+        {
+          "url": "https://www.ft.com/content/2a64f698-46dd-4178-a3f4-4c5f4c0a0926?syn-25a6b1a6=1",
+          "title": "Arm boss Rene Haas approached in Nvidia CEO search",
+          "publisher": "Financial Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWcf8CdJi6Tul19dJVSsWBuP3U2abZbTx6o8lksDRCQbSvsi9E35tFO5UYZEU"
+        }
+      ]
+    },
+    {
+      "query": "wes huff",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T17:00:00Z",
+      "related_news_urls": [
+        "https://churchleaders.com/news/2225507-wesley-huff-3-year-old-daughter-multiple-seizures.html",
+        "https://www.christianpost.com/news/wes-huff-asks-for-prayers-after-3-year-old-daughter-hospitalized.html",
+        "https://www.jubileecast.com/articles/41041/20261112/wesley-huff-thanks-supporters-for-prayers-as-3-year-old-daughter-returns-home-after-multiple-seizures.htm"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRacGAV_kZajsu_IspFg-FvZej1U9EfpzglPoblMkd5Bo_hRR9fkXywSyCUaKA",
+      "image_credit": "ChurchLeaders",
+      "news": [
+        {
+          "url": "https://churchleaders.com/news/2225507-wesley-huff-3-year-old-daughter-multiple-seizures.html",
+          "title": "‘Thank You For Praying'—Wesley Huff’s 3-Year-Old Daughter Home After Suffering Multiple Seizures",
+          "publisher": "ChurchLeaders",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRacGAV_kZajsu_IspFg-FvZej1U9EfpzglPoblMkd5Bo_hRR9fkXywSyCUaKA"
+        },
+        {
+          "url": "https://www.christianpost.com/news/wes-huff-asks-for-prayers-after-3-year-old-daughter-hospitalized.html",
+          "title": "Wes Huff asks for prayers after 3-year-old daughter hospitalized",
+          "publisher": "Christian Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrrEP_E5geva5cqQaV3m191_yAs5Cs9Qyc3Msr6ufdeRs2I0S_Q6rJ2NliupA"
+        },
+        {
+          "url": "https://www.jubileecast.com/articles/41041/20261112/wesley-huff-thanks-supporters-for-prayers-as-3-year-old-daughter-returns-home-after-multiple-seizures.htm",
+          "title": "Wesley Huff Thanks Supporters for Prayers as 3-Year-Old Daughter Returns Home After Multiple Seizures",
+          "publisher": "JubileeCast",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTE2Q1V0j2eg_KAnLVPcsdVyWnr0FFVsVCYnI_HJufUxGcYXIWkGQnbkyXmKJ8"
+        }
+      ]
+    },
+    {
+      "query": "michael douglas",
       "approx_searches": "1000+",
+      "published_at": "2026-11-13T16:50:00Z",
+      "related_news_urls": [
+        "https://www.instyle.com/catherine-zeta-jones-daughter-carys-wears-her-gucci-top-12251276",
+        "https://people.com/carys-douglas-borrows-mom-catherine-zeta-jones-gucci-top-12251245",
+        "https://ew.com/carys-douglas-wears-catherine-zeta-jones-black-lace-top-1996-12251930"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeQQ_TtbE7OGr0X8FNRRUS1Ola3P-WWQVWmfKPVNlm1O-tjdb8OVcTlr8BU-k",
+      "image_credit": "InStyle",
+      "news": [
+        {
+          "url": "https://www.instyle.com/catherine-zeta-jones-daughter-carys-wears-her-gucci-top-12251276",
+          "title": "Catherine Zeta-Jones’s Daughter Carys, 23, Wears Her 30-Year-Old Lace Gucci Top",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeQQ_TtbE7OGr0X8FNRRUS1Ola3P-WWQVWmfKPVNlm1O-tjdb8OVcTlr8BU-k"
+        },
+        {
+          "url": "https://people.com/carys-douglas-borrows-mom-catherine-zeta-jones-gucci-top-12251245",
+          "title": "Carys Douglas Borrows Mom Catherine Zeta-Jones’ Lace Gucci Top 30 Years Later",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ902wLzKQiyrEzNW3svjD42X7PLgQTWOuL9Je3aOYIryWx4MDOdXsaXHKGUAc"
+        },
+        {
+          "url": "https://ew.com/carys-douglas-wears-catherine-zeta-jones-black-lace-top-1996-12251930",
+          "title": "Catherine Zeta-Jones’ daughter steps out in same Gucci black lace top actress wore to 1996 premiere",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_WtYXufAIEUHTC7JmJV3LuJMMrFJh1SNTI5-XiI_e9lZrI2gc_ZlUsikY8Ts"
+        }
+      ]
+    },
+    {
+      "query": "moldova vs kazakhstan",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T16:50:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cmdx311g6np6t",
+        "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-moldova-v-kazakhstan/blt1a0e9cea4204c0d9",
+        "https://www.sportsmole.co.uk/football/moldova/uefa-nations-league/preview/moldova-vs-kazakhstan-prediction-team-news-lineups_608901.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cmdx311g6np6t",
+          "title": "Moldova vs Kazakhstan: UEFA Nations League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
+        },
+        {
+          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-moldova-v-kazakhstan/blt1a0e9cea4204c0d9",
+          "title": "Moldova vs Kazakhstan: Where to watch, TV channel, live stream & kick-off time",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOPDct3zZtCxWx_6It5LnY3HbX-r44914SpPuib2jNkkOasHYCFO4mU7hNnJA"
+        },
+        {
+          "url": "https://www.sportsmole.co.uk/football/moldova/uefa-nations-league/preview/moldova-vs-kazakhstan-prediction-team-news-lineups_608901.html",
+          "title": "Preview: Moldova vs Kazakhstan - prediction, team news, lineups",
+          "publisher": "Sports Mole",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVkLFxFWTFRDwvW-xVQKZG55H3foBQYJXmXQWPxuyUgSz5jjIyUUoZLf9DfLU"
+        }
+      ]
+    },
+    {
+      "query": "nintendo black friday deals",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-13T16:50:00Z",
+      "related_news_urls": [
+        "https://www.nintendo.com/us/whatsnew/nintendo-announces-black-friday-offers-to-help-spread-joy-this-holiday-season/",
+        "https://mashable.com/tech/nov-9-nintendo-switch-2-deal",
+        "https://lifehacker.com/tech/best-nintendo-deals-black-friday-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJdwGWfoWciYkJy6BjM3eZ6Guo1nE4Y-npuqfWyjE-gT28K5lIk-qktg4joFo",
+      "image_credit": "Nintendo",
+      "news": [
+        {
+          "url": "https://www.nintendo.com/us/whatsnew/nintendo-announces-black-friday-offers-to-help-spread-joy-this-holiday-season/",
+          "title": "Nintendo announces Black Friday offers to help spread joy this holiday season - News - Nintendo Official Site",
+          "publisher": "Nintendo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJdwGWfoWciYkJy6BjM3eZ6Guo1nE4Y-npuqfWyjE-gT28K5lIk-qktg4joFo"
+        },
+        {
+          "url": "https://mashable.com/tech/nov-9-nintendo-switch-2-deal",
+          "title": "The Nintendo Switch 2 gets a rare deal way ahead of Black Friday",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkCwfPlSALAicmzH76I52iowQmdJ6bLK-1iW9e9hPJ7mcLAAUTPSdexzZns04"
+        },
+        {
+          "url": "https://lifehacker.com/tech/best-nintendo-deals-black-friday-2026",
+          "title": "Nintendo's Black Friday Deals Are Actually Pretty Good",
+          "publisher": "Lifehacker",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYZ6clXKS3O2MrhCcatyLbePNpSLYPegEg-B3wQD9cPl6pTvs1gvXB0sA-5ak"
+        }
+      ]
+    },
+    {
+      "query": "emma grede",
+      "approx_searches": "2000+",
       "published_at": "2026-11-13T16:30:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/2026/11/09/style/skims-advent-calendar-refunds.html",
@@ -43,7 +253,7 @@
     },
     {
       "query": "taylor fritz",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-13T16:30:00Z",
       "related_news_urls": [
         "https://tennishead.net/taylor-fritz-has-made-a-very-smart-decision-after-missing-out-on-the-atp-finals-this-year/",
@@ -78,16 +288,23 @@
     },
     {
       "query": "doug mcdermott",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-13T16:30:00Z",
       "related_news_urls": [
+        "https://sports.yahoo.com/articles/former-pacers-sharpshooter-doug-mcdermott-165643079.html",
         "https://bleacherreport.com/articles/25532890-doug-mcdermott-retires-after-12-nba-seasons-bulls-knicks-thunder-spurs-more",
-        "https://clutchpoints.com/nba/nba-stories/doug-mcdermott-officially-announces-retirement-from-league",
-        "https://heavy.com/sports/nba/chicago-bulls/ex-bulls-12-year-nba-vet-makes-big-career-announcement/"
+        "https://omaha.com/sports/college/creighton/article_c576ef9e-545c-4b49-9630-6a40034eb144.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyeLW96DiG9IzIc8IBAHgGUJCepbY9IOOqY2yEuDrEOE5jQU6mfpJOfaVMG7w",
-      "image_credit": "Bleacher Report",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReZ6LQcNd3fBwLvNc0hY6MCwqwddLD2oOzyOhHCqyPLf9mqoU6r1JKgusT5rY",
+      "image_credit": "Yahoo Sports",
       "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/former-pacers-sharpshooter-doug-mcdermott-165643079.html",
+          "title": "Former Pacers sharpshooter Doug McDermott retires after 12 NBA seasons",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReZ6LQcNd3fBwLvNc0hY6MCwqwddLD2oOzyOhHCqyPLf9mqoU6r1JKgusT5rY"
+        },
         {
           "url": "https://bleacherreport.com/articles/25532890-doug-mcdermott-retires-after-12-nba-seasons-bulls-knicks-thunder-spurs-more",
           "title": "Doug McDermott Retires After 12 NBA Seasons with Bulls, Knicks, Thunder, Spurs, More",
@@ -96,18 +313,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyeLW96DiG9IzIc8IBAHgGUJCepbY9IOOqY2yEuDrEOE5jQU6mfpJOfaVMG7w"
         },
         {
-          "url": "https://clutchpoints.com/nba/nba-stories/doug-mcdermott-officially-announces-retirement-from-league",
-          "title": "NBA news: Doug McDermott officially announces retirement from league",
-          "publisher": "ClutchPoints",
+          "url": "https://omaha.com/sports/college/creighton/article_c576ef9e-545c-4b49-9630-6a40034eb144.html",
+          "title": "Creighton legend Doug McDermott retires after 12 NBA seasons",
+          "publisher": "Omaha World-Herald",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQ9wo9dENNZ1pflhdfxujVdcDpPYEexkXRd7ZJlX96BPufavtj-5eQos0lec0"
-        },
-        {
-          "url": "https://heavy.com/sports/nba/chicago-bulls/ex-bulls-12-year-nba-vet-makes-big-career-announcement/",
-          "title": "Ex-Bulls 12-Year NBA Vet Makes Big Career Announcement",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRubHw6E26Y_Mt-ng9IcmiMffJM3JHstYFON82nbOQmkx2j9gKakjOKm_NLfic"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmsCYP0Wj45aNCDtIYlBT22724svZzxcD6DvjPOI7X3UdMRPZwNROoLNZQfyI"
         }
       ]
     },
@@ -116,13 +326,20 @@
       "approx_searches": "500+",
       "published_at": "2026-11-13T16:20:00Z",
       "related_news_urls": [
+        "https://www.desmoinesregister.com/story/entertainment/2026/11/13/alex-warren-des-moines-finding-more-family-on-the-road-tour/92759161007/",
         "https://www.knoxnews.com/story/entertainment/music/2026/11/13/how-to-get-tickets-to-alex-warren-concert-in-knoxville/92745545007/",
-        "https://uwbadgers.com/news/2026/11/13/general-news-alex-warren-announces-tour-stop-at-the-kohl-center",
-        "https://www.weareiowa.com/article/entertainment/music/alex-warren-finding-more-family-on-the-road-tour-des-moines-tickets-dates/524-7fb4e8f5-b28e-4ea4-8c05-59a409ac45d4"
+        "https://www.dakotanewsnow.com/2026/11/13/grammy-nominated-singer-alex-warren-coming-premier-center/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwetZCQY1yFsIA3UgF4xP0SciHS3DIRpUvd-Bk29FqwQCt5MjD16cTAQbMZAw",
-      "image_credit": "Knoxville News Sentinel",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT42bhPfzHoMLtLRly8Bc9bVQ2SbDK6e_SK4ripsVRgLmENLZdl1XnNUNR__iQ",
+      "image_credit": "The Des Moines Register",
       "news": [
+        {
+          "url": "https://www.desmoinesregister.com/story/entertainment/2026/11/13/alex-warren-des-moines-finding-more-family-on-the-road-tour/92759161007/",
+          "title": "Alex Warren's tour is coming to Des Moines in 2027. How to get tickets",
+          "publisher": "The Des Moines Register",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT42bhPfzHoMLtLRly8Bc9bVQ2SbDK6e_SK4ripsVRgLmENLZdl1XnNUNR__iQ"
+        },
         {
           "url": "https://www.knoxnews.com/story/entertainment/music/2026/11/13/how-to-get-tickets-to-alex-warren-concert-in-knoxville/92745545007/",
           "title": "Alex Warren coming to Knoxville in 2027. Here’s how to get tickets",
@@ -131,228 +348,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwetZCQY1yFsIA3UgF4xP0SciHS3DIRpUvd-Bk29FqwQCt5MjD16cTAQbMZAw"
         },
         {
-          "url": "https://uwbadgers.com/news/2026/11/13/general-news-alex-warren-announces-tour-stop-at-the-kohl-center",
-          "title": "Alex Warren announces tour stop at the Kohl Center",
-          "publisher": "Wisconsin Badgers",
+          "url": "https://www.dakotanewsnow.com/2026/11/13/grammy-nominated-singer-alex-warren-coming-premier-center/",
+          "title": "Grammy-nominated singer Alex Warren coming to PREMIER Center",
+          "publisher": "Dakota News Now",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxgmMVyhuw4tpsPIRX28LcbtlF7W_i5YiOyse8so9KQx_1cAO4mLTzbYkUSfQ"
-        },
-        {
-          "url": "https://www.weareiowa.com/article/entertainment/music/alex-warren-finding-more-family-on-the-road-tour-des-moines-tickets-dates/524-7fb4e8f5-b28e-4ea4-8c05-59a409ac45d4",
-          "title": "'Are you having fun,' Des Moines? Alex Warren coming to Casey's Center for 2027 World Tour",
-          "publisher": "weareiowa.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQE8KxOlHq7n2p9-x-Zmf8he4fM9Tu1DExam6222PQiyNZNHXNwHLZL-XlKgMY"
-        }
-      ]
-    },
-    {
-      "query": "tunisia vs libya",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T16:20:00Z",
-      "related_news_urls": [
-        "https://www.beinsports.com/en-us/soccer/africa-cup-of-nations-qualification/articles/how-and-where-to-watch-tunisia-vs-libya-live-on-bein-sports-2026-11-13",
-        "https://www.ysscores.com/en/news/14091487/tunisia-national-team-begins-camp-in-preparation-for-libya-in-africa-cup-of-nations-qualification",
-        "https://www.cafonline.com/afcon2025/news/tunisia-turn-to-experience-and-young-attackers-for-crucial-libya-totalenergies-caf-afcon-qualifiers/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqEazwcKAPcc-Yj9kVLRf3SVa9EB5SoAQQ9MhZ55qczt51VbpXUWlWgEXHeSU",
-      "image_credit": "beIN SPORTS",
-      "news": [
-        {
-          "url": "https://www.beinsports.com/en-us/soccer/africa-cup-of-nations-qualification/articles/how-and-where-to-watch-tunisia-vs-libya-live-on-bein-sports-2026-11-13",
-          "title": "Tunisia vs Libya LIVE on beIN SPORTS | AFCON 2027",
-          "publisher": "beIN SPORTS",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqEazwcKAPcc-Yj9kVLRf3SVa9EB5SoAQQ9MhZ55qczt51VbpXUWlWgEXHeSU"
-        },
-        {
-          "url": "https://www.ysscores.com/en/news/14091487/tunisia-national-team-begins-camp-in-preparation-for-libya-in-africa-cup-of-nations-qualification",
-          "title": "Tunisia national team begins camp in preparation f… | Yalla Shoot",
-          "publisher": "YSscores",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRlXFxo5nmTPuKh3bbOQ8IoC2ds0QXF6jtc3OCv8XLRpRNo34PTJIVS9qrgTm8"
-        },
-        {
-          "url": "https://www.cafonline.com/afcon2025/news/tunisia-turn-to-experience-and-young-attackers-for-crucial-libya-totalenergies-caf-afcon-qualifiers/",
-          "title": "Tunisia turn to experience and young attackers for crucial Libya TotalEnergies CAF AFCON qualifiers",
-          "publisher": "CAFOnline.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZrPv7Ud6lyihGjR7oVzGkaWDTxx53svJpTSXjHOo9OMm0VWY_WqdL0xgZ9pU"
-        }
-      ]
-    },
-    {
-      "query": "larry david",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T16:10:00Z",
-      "related_news_urls": [
-        "https://ew.com/larry-david-reveals-actors-actresses-almost-starred-seinfeld-12237057",
-        "https://forward.com/culture/862055/larry-david-emperor-of-nothing-biography-blake-harris/",
-        "https://jweekly.com/2026/11/10/a-biographer-tried-to-get-larry-david-to-talk-about-his-jewishness-nothing-doing/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEWeBDPBtbBsAsihWh5L5C_sBKkKFl2-yaUquF9KTLNSfFKdGmLt7hBoWQUfg",
-      "image_credit": "Entertainment Weekly",
-      "news": [
-        {
-          "url": "https://ew.com/larry-david-reveals-actors-actresses-almost-starred-seinfeld-12237057",
-          "title": "Larry David book reveals actors who almost starred on Seinfeld as George, Kramer, and Elaine",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEWeBDPBtbBsAsihWh5L5C_sBKkKFl2-yaUquF9KTLNSfFKdGmLt7hBoWQUfg"
-        },
-        {
-          "url": "https://forward.com/culture/862055/larry-david-emperor-of-nothing-biography-blake-harris/",
-          "title": "The Larry David bar mitzvah story that his biographer left out",
-          "publisher": "The Forward",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRb71ytZ5yU1hxM7GmOBGqGwpjrwclj-RcZmK0kvGAUDZnT_PHOrnpMWPlR-s"
-        },
-        {
-          "url": "https://jweekly.com/2026/11/10/a-biographer-tried-to-get-larry-david-to-talk-about-his-jewishness-nothing-doing/",
-          "title": "A biographer tried to get Larry David to talk about his Jewishness. ‘Nothing’ doing.",
-          "publisher": "The Jewish News of Northern California",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0gI0oSiucL_NKGZ0P5NpI0Lj1R6nu0Ejjsjgle084dYFAKKuhKAbYdE3ay5Y"
-        }
-      ]
-    },
-    {
-      "query": "mark cuban",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T15:50:00Z",
-      "related_news_urls": [
-        "https://financebuzz.com/news/mark-cuban-one-skill-making-millions",
-        "https://www.thestreet.com/personalities/mark-cuban-shares-how-hed-make-as-much-money-as-possible-in-six-months-starting-with-500-and-a-phone",
-        "https://www.wsj.com/health/healthcare/cvs-breakup-wont-satisfy-washington-it-could-still-work-for-wall-street-1b5004e3"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhprHi1q4-AtBlny5M5EKlysbcth45N5vq3cpyFbu1W7hSf04BbnTA29SuwcY",
-      "image_credit": "FinanceBuzz",
-      "news": [
-        {
-          "url": "https://financebuzz.com/news/mark-cuban-one-skill-making-millions",
-          "title": "Mark Cuban Says This Sales Skill Could Be Your Best Shot at Making $1 Million",
-          "publisher": "FinanceBuzz",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhprHi1q4-AtBlny5M5EKlysbcth45N5vq3cpyFbu1W7hSf04BbnTA29SuwcY"
-        },
-        {
-          "url": "https://www.thestreet.com/personalities/mark-cuban-shares-how-hed-make-as-much-money-as-possible-in-six-months-starting-with-500-and-a-phone",
-          "title": "Mark Cuban shares how he’d make ‘as much money as possible’ in six months starting with $500 and a phone",
-          "publisher": "TheStreet",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREfDbeCJyZt5GRE9yS5y1L5BCgjEA2U6vBg8AFUCwbVgSrq5Cwzixb8BQoMRc"
-        },
-        {
-          "url": "https://www.wsj.com/health/healthcare/cvs-breakup-wont-satisfy-washington-it-could-still-work-for-wall-street-1b5004e3",
-          "title": "CVS Breakup Won’t Satisfy Washington. It Could Still Work for Wall Street.",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNf4boGZl3FZ8jmG5QQ5jGUIenRPjbuyr-wpKShTeIasxy9sLnevywo8wiHRc"
-        }
-      ]
-    },
-    {
-      "query": "interland",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T15:50:00Z",
-      "related_news_urls": [
-        "https://www.bndestem.nl/regiosport-brabant/een-wel-heel-bijzondere-interland-in-de-vliert-komende-zondag-alles-snel-kunnen-regelen~a783ae8c/",
-        "https://www.gelderlander.nl/regiosport-den-bosch/een-wel-heel-bijzondere-interland-in-de-vliert-komende-zondag-alles-snel-kunnen-regelen~a783ae8c/",
-        "https://www.bd.nl/fc-den-bosch/een-wel-heel-bijzondere-interland-in-de-vliert-komende-zondag-alles-snel-kunnen-regelen~a783ae8c/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoiDB3RfSKlY3s0xO73hPRxNMbVtd5uTZI8oDhxgVsCIcK4YQTZVR2heblt2U",
-      "image_credit": "BN DeStem",
-      "news": [
-        {
-          "url": "https://www.bndestem.nl/regiosport-brabant/een-wel-heel-bijzondere-interland-in-de-vliert-komende-zondag-alles-snel-kunnen-regelen~a783ae8c/",
-          "title": "Een wel heel bijzondere interland in De Vliert komende zondag: ‘Alles snel kunnen regelen’",
-          "publisher": "BN DeStem",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoiDB3RfSKlY3s0xO73hPRxNMbVtd5uTZI8oDhxgVsCIcK4YQTZVR2heblt2U"
-        },
-        {
-          "url": "https://www.gelderlander.nl/regiosport-den-bosch/een-wel-heel-bijzondere-interland-in-de-vliert-komende-zondag-alles-snel-kunnen-regelen~a783ae8c/",
-          "title": "Een wel heel bijzondere interland in De Vliert komende zondag: ‘Alles snel kunnen regelen’",
-          "publisher": "De Gelderlander",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOwJmm40vsUlEnxoEAH3PibRiOLYlXuNrr1X2V3E4tyl-Fp_Y-5wlnvqXWKAU"
-        },
-        {
-          "url": "https://www.bd.nl/fc-den-bosch/een-wel-heel-bijzondere-interland-in-de-vliert-komende-zondag-alles-snel-kunnen-regelen~a783ae8c/",
-          "title": "Een wel heel bijzondere interland in De Vliert komende zondag: ‘Alles snel kunnen regelen’",
-          "publisher": "Brabants Dagblad",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoiDB3RfSKlY3s0xO73hPRxNMbVtd5uTZI8oDhxgVsCIcK4YQTZVR2heblt2U"
-        }
-      ]
-    },
-    {
-      "query": "saudi arabia vs south korea",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T15:50:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cwvgr22k5l4nt",
-        "https://sports.yahoo.com/articles/saudi-arabia-vs-south-korea-131500696.html",
-        "https://www.chosun.com/english/sports-en/2026/11/14/D7WCVNYFQ5EHLMDBH25OZB446A/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cwvgr22k5l4nt",
-          "title": "Saudi Arabia vs South Korea: Friendlies stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/saudi-arabia-vs-south-korea-131500696.html",
-          "title": "Saudi Arabia vs. South Korea Lineups, Live Streaming, How & Where to Watch on TV",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTANmFP-ErUkX9hqsgiqdRKRliR7J-zN3KhSnOLH_koZHN3yTQmknLrDztqD3M"
-        },
-        {
-          "url": "https://www.chosun.com/english/sports-en/2026/11/14/D7WCVNYFQ5EHLMDBH25OZB446A/",
-          "title": "South Korea Concedes Opening Goal in Saudi Arabia Friendly",
-          "publisher": "조선일보",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxU8w31sLsR_r40IgBjZOHyo7kZBoxe-JZgsjaaADHdBC36jEJgvGNZ6x5ErI"
-        }
-      ]
-    },
-    {
-      "query": "avril lavigne",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-13T15:40:00Z",
-      "related_news_urls": [
-        "https://pagesix.com/2026/11/13/parents/avril-lavigne-welcomes-first-baby-with-mystery-man/",
-        "https://people.com/avril-lavigne-welcomes-her-first-child-a-baby-girl-12252796",
-        "https://www.thesun.co.uk/tvandshowbiz/41017678/avril-lavigne-secret-baby/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTA3EHLuJNJS_3waC-6wXU8d_RG7R7gNylIxvzwerzeGPQRsgxpELtblaPiPmc",
-      "image_credit": "Page Six",
-      "news": [
-        {
-          "url": "https://pagesix.com/2026/11/13/parents/avril-lavigne-welcomes-first-baby-with-mystery-man/",
-          "title": "Avril Lavigne reveals she’s secretly welcomed a baby girl with mystery man: ‘Princess’",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTA3EHLuJNJS_3waC-6wXU8d_RG7R7gNylIxvzwerzeGPQRsgxpELtblaPiPmc"
-        },
-        {
-          "url": "https://people.com/avril-lavigne-welcomes-her-first-child-a-baby-girl-12252796",
-          "title": "Avril Lavigne Welcomes Her First Child, a Baby Girl: Our ‘Princess Has Arrived’",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzNfXgWtgEYs1ZLix87VvNAkCozJKGMc9wSCqgSMVOYFMOxLljKZmNKg5eVAo"
-        },
-        {
-          "url": "https://www.thesun.co.uk/tvandshowbiz/41017678/avril-lavigne-secret-baby/",
-          "title": "Avril Lavigne reveals she’s welcomed secret baby as she announces arrival of ‘mini princess’",
-          "publisher": "The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZ0Di5jHwjyOgtpfTTwPCw6FEaG1o0XZAUdMsiVYvg4VzeuLW4FAgsqhDcdOA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmkUZiv9Wu61wfs86yezr7Kww22IOwrgv_-n4m4dAvV9T8nm2__drOcVUkdiY"
         }
       ]
     }
