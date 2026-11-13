@@ -36,6 +36,22 @@ test('requires one scoped repository and validated source before creating any jo
   assert.deepEqual(requests, [{path: '/work/github/read', body: {action: 'read_repository', repository}}]);
 });
 
+test('distinct Complete Me goals get separate stable project IDs, while retries reuse one',async()=>{
+ const ids=[];
+ const request=async(path,body)=>{
+  if(path==='/work/github/read')return {ok:true,repository,headSha:sourceSha};
+  assert.equal(path,'/work/tickets/create');
+  ids.push(body.context.submission_id);
+  return {ok:true,ticket:{id:'IW-fixture',repository,context:body.context},
+   execution:{status:'queued_for_runner'},deduplicated:false};
+ };
+ await startCompleteMe({...project,goal:'Finish milestone A'},request);
+ await startCompleteMe({...project,goal:'Finish milestone B'},request);
+ await startCompleteMe({...project,goal:'Finish milestone A'},request);
+ assert.notEqual(ids[0],ids[1],'two different projects cannot share a deduplication key');
+ assert.equal(ids[0],ids[2],'a repeated project retains its canonical submission key');
+});
+
 const workerUrl = new URL('../workers/infinity-brain-clock/worker.js', import.meta.url);
 async function loadBrain() {
   const source = (await readFile(workerUrl, 'utf8'))
