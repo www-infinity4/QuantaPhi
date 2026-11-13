@@ -3,9 +3,44 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T00:44:51.649825Z",
+  "checked_at": "2026-11-13T01:01:27.151416Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "charlie sheen",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T00:40:00Z",
+      "related_news_urls": [
+        "https://www.mediapost.com/publications/article/419296/ferris-bueller-sequel-ad-reunites-jennifer-grey.html",
+        "https://adage.com/creativity/work/aa-home-instead-save-jeanie/",
+        "https://people.com/charlie-sheen-and-jennifer-grey-reunite-for-ferris-bueller-inspired-holiday-commercial-40-years-later-12247061"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQg0NsO2Pg79uJQdc7OrW3E94wnawwuJUi-atmI66cXDheGiTvPE3KgOM-lOFk",
+      "image_credit": "MediaPost",
+      "news": [
+        {
+          "url": "https://www.mediapost.com/publications/article/419296/ferris-bueller-sequel-ad-reunites-jennifer-grey.html",
+          "title": "'Ferris Bueller' Sequel Ad Reunites Jennifer Grey, Charlie Sheen 11/09/2026",
+          "publisher": "MediaPost",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQg0NsO2Pg79uJQdc7OrW3E94wnawwuJUi-atmI66cXDheGiTvPE3KgOM-lOFk"
+        },
+        {
+          "url": "https://adage.com/creativity/work/aa-home-instead-save-jeanie/",
+          "title": "Home Instead reunites Jennifer Grey and Charlie Sheen for holiday ad",
+          "publisher": "Ad Age",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOvblOV8E1-aI3p7F6o_ZmLLF2lA5rybcE5xzUw4zt3PJFTsLkFWdHLnZLwDQ"
+        },
+        {
+          "url": "https://people.com/charlie-sheen-and-jennifer-grey-reunite-for-ferris-bueller-inspired-holiday-commercial-40-years-later-12247061",
+          "title": "Charlie Sheen and Jennifer Grey Reunite for ‘Ferris Bueller’-Inspired Holiday Commercial 40 Years Later",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToToQytwbc2hl3wg60I4CL-xYqpuwQOS_0xy2-Ogl9JbvbtOU4PVGBee1le6U"
+        }
+      ]
+    },
     {
       "query": "ryan seacrest",
       "approx_searches": "2000+",
@@ -77,6 +112,41 @@
       ]
     },
     {
+      "query": "accuweather el niño winter map us",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T00:30:00Z",
+      "related_news_urls": [
+        "https://www.washingtonpost.com/weather/2026/11/11/see-where-el-nino-may-help-deliver-lots-snow-this-winter/",
+        "https://www.wsls.com/weather/2026/11/12/wsls-10-weather-authority-2026-2027-winter-outlook/",
+        "https://www.outsideonline.com/adventure-travel/destinations/north-america/these-will-be-the-snowiest-adventure-towns-this-winter-according-to-a-meteorologist/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGoFOlOhVzEL9nZubkcfHbz6ADpyeK9sAqdbT1nB7w9MKdA1pDhk_MGygXNkY",
+      "image_credit": "The Washington Post",
+      "news": [
+        {
+          "url": "https://www.washingtonpost.com/weather/2026/11/11/see-where-el-nino-may-help-deliver-lots-snow-this-winter/",
+          "title": "See where El Niño may help deliver lots of snow this winter",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGoFOlOhVzEL9nZubkcfHbz6ADpyeK9sAqdbT1nB7w9MKdA1pDhk_MGygXNkY"
+        },
+        {
+          "url": "https://www.wsls.com/weather/2026/11/12/wsls-10-weather-authority-2026-2027-winter-outlook/",
+          "title": "WSLS 10 Weather Authority 2026-2027 Winter Outlook",
+          "publisher": "WSLS",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7Jzi-y8dn96lOe2Ni98cL_-Cmo2zzwNMJ9YCxmRwLhsjs_CidvkMPfxRI7Gc"
+        },
+        {
+          "url": "https://www.outsideonline.com/adventure-travel/destinations/north-america/these-will-be-the-snowiest-adventure-towns-this-winter-according-to-a-meteorologist/",
+          "title": "The Forecast Is in for a \"Supersized Wild Winter.\" These Towns Will Get the Most Snow.",
+          "publisher": "Outside Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7yT-VvHlPojYOneR5S0raS59rCkk76ijxPfzj7iCTNpUb2DA-WUHpcGTXuRw"
+        }
+      ]
+    },
+    {
       "query": "stephen a smith",
       "approx_searches": "500+",
       "published_at": "2026-11-13T00:30:00Z",
@@ -108,41 +178,6 @@
           "publisher": "Blog de Basket",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOCBJjpapSwjxv6W-wdP96TPFkRCwLB42d4nY9so_5nXnie2OAok97Dd737yc"
-        }
-      ]
-    },
-    {
-      "query": "accuweather el niño winter map us",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T00:30:00Z",
-      "related_news_urls": [
-        "https://www.washingtonpost.com/weather/2026/11/11/see-where-el-nino-may-help-deliver-lots-snow-this-winter/",
-        "https://www.wsls.com/weather/2026/11/12/wsls-10-weather-authority-2026-2027-winter-outlook/",
-        "https://www.outsideonline.com/adventure-travel/destinations/north-america/these-will-be-the-snowiest-adventure-towns-this-winter-according-to-a-meteorologist/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGoFOlOhVzEL9nZubkcfHbz6ADpyeK9sAqdbT1nB7w9MKdA1pDhk_MGygXNkY",
-      "image_credit": "The Washington Post",
-      "news": [
-        {
-          "url": "https://www.washingtonpost.com/weather/2026/11/11/see-where-el-nino-may-help-deliver-lots-snow-this-winter/",
-          "title": "See where El Niño may help deliver lots of snow this winter",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGoFOlOhVzEL9nZubkcfHbz6ADpyeK9sAqdbT1nB7w9MKdA1pDhk_MGygXNkY"
-        },
-        {
-          "url": "https://www.wsls.com/weather/2026/11/12/wsls-10-weather-authority-2026-2027-winter-outlook/",
-          "title": "WSLS 10 Weather Authority 2026-2027 Winter Outlook",
-          "publisher": "WSLS",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7Jzi-y8dn96lOe2Ni98cL_-Cmo2zzwNMJ9YCxmRwLhsjs_CidvkMPfxRI7Gc"
-        },
-        {
-          "url": "https://www.outsideonline.com/adventure-travel/destinations/north-america/these-will-be-the-snowiest-adventure-towns-this-winter-according-to-a-meteorologist/",
-          "title": "The Forecast Is in for a \"Supersized Wild Winter.\" These Towns Will Get the Most Snow.",
-          "publisher": "Outside Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7yT-VvHlPojYOneR5S0raS59rCkk76ijxPfzj7iCTNpUb2DA-WUHpcGTXuRw"
         }
       ]
     },
@@ -182,6 +217,41 @@
       ]
     },
     {
+      "query": "yordan alvarez",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-13T00:20:00Z",
+      "related_news_urls": [
+        "https://bbwaa.com/26-al-mvp/",
+        "https://www.mlb.com/news/yordan-alvarez-pete-crow-armstrong-win-2026-hank-aaron-awards",
+        "https://sports.yahoo.com/mlb/breaking-news/article/astros-star-yordan-alvarez-unanimously-wins-al-mvp-award-after-flirtation-with-triple-crown-002354386.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlae6jCuV5v38YI7u4b-TkXo-IAyPpdA0GbFzIyKtQHJgU5zYG1CI0b3SMVYo",
+      "image_credit": "BBWAA",
+      "news": [
+        {
+          "url": "https://bbwaa.com/26-al-mvp/",
+          "title": "Astros’ Yordan Alvarez unanimously wins AL MVP",
+          "publisher": "BBWAA",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlae6jCuV5v38YI7u4b-TkXo-IAyPpdA0GbFzIyKtQHJgU5zYG1CI0b3SMVYo"
+        },
+        {
+          "url": "https://www.mlb.com/news/yordan-alvarez-pete-crow-armstrong-win-2026-hank-aaron-awards",
+          "title": "Alvarez, PCA become 1st-time winners of Hank Aaron Award after career years",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqtK_dXdzXSfcP9RuTSEaGCSzK2pzq2eC-x3acuouWwG8iu6r8vZwWWFXswOQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/mlb/breaking-news/article/astros-star-yordan-alvarez-unanimously-wins-al-mvp-award-after-flirtation-with-triple-crown-002354386.html",
+          "title": "Astros star Yordan Alvarez unanimously wins AL MVP award after flirtation with Triple Crown",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBQVJwYhUfdsKm9V-tZBVTJ59QedPWVqE1dh1EzmZp-BP6nlxCthAanmk_uJM"
+        }
+      ]
+    },
+    {
       "query": "nl mvp",
       "approx_searches": "2000+",
       "published_at": "2026-11-13T00:20:00Z",
@@ -213,41 +283,6 @@
           "publisher": "NBC 5 Chicago",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWmJTiaE4wtuRjrXeRdXp6yzsUbo_dUUAZrvrf9SEWS0AjToJPXqyz3_6iFdU"
-        }
-      ]
-    },
-    {
-      "query": "yordan alvarez",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-13T00:20:00Z",
-      "related_news_urls": [
-        "https://www.mlb.com/news/yordan-alvarez-pete-crow-armstrong-win-2026-hank-aaron-awards",
-        "https://www.cbssports.com/mlb/news/mlb-2026-american-league-mvp-yordan-alvarez-astros/",
-        "https://www.inquirer.com/phillies/zack-wheeler-nl-comeback-player-award-20261111.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqtK_dXdzXSfcP9RuTSEaGCSzK2pzq2eC-x3acuouWwG8iu6r8vZwWWFXswOQ",
-      "image_credit": "MLB.com",
-      "news": [
-        {
-          "url": "https://www.mlb.com/news/yordan-alvarez-pete-crow-armstrong-win-2026-hank-aaron-awards",
-          "title": "Alvarez, PCA become 1st-time winners of Hank Aaron Award after career years",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqtK_dXdzXSfcP9RuTSEaGCSzK2pzq2eC-x3acuouWwG8iu6r8vZwWWFXswOQ"
-        },
-        {
-          "url": "https://www.cbssports.com/mlb/news/mlb-2026-american-league-mvp-yordan-alvarez-astros/",
-          "title": "Astros slugger Yordan Alvarez named American League MVP after nearly winning 2026 Triple Crown",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ27mKTBxdHQQmMsKZ8abWBU4PQgyeV94yFF1kvbozJNxQ6XW5LxKxAI9EZFk0"
-        },
-        {
-          "url": "https://www.inquirer.com/phillies/zack-wheeler-nl-comeback-player-award-20261111.html",
-          "title": "Phillies' Zack Wheeler wins National League Comeback Player of the Year award",
-          "publisher": "Inquirer.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0SKnH2XEGob-8oNFeoktCpkusMV6cPKNA4O9zDS6ww0FWY-HSniJaL7B3xiQ"
         }
       ]
     },
@@ -288,7 +323,7 @@
     },
     {
       "query": "is jj mccarthy playing tonight",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-13T00:20:00Z",
       "related_news_urls": [
         "https://www.cbssports.com/fantasy/football/news/giants-j-j-mccarthy-wont-be-limited-in-week-10/",
@@ -318,41 +353,6 @@
           "publisher": "Fox News",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeuNuIawbIXNnDBJaPlEU7dBDGdVUXKfS-4H9U0SqFSW3K5hA-6Qx-ZMdG37s"
-        }
-      ]
-    },
-    {
-      "query": "mavericks vs timberwolves",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-13T00:10:00Z",
-      "related_news_urls": [
-        "https://www.mavsmoneyball.com/dallas-mavericks-game-coverage/63858/dallas-mavericks-at-minnesota-timberwolves-november-12-game-preview-cooper-flagg-anthony-edwards",
-        "https://www.si.com/betting/mavericks-vs-timberwolves-prediction-odds-and-best-nba-prop-bets-for-thursday-nov-12-2026",
-        "https://www.startribune.com/minnesota-timberwolves-dallas-mavericks-score-today-lamelo-ball-stats-anthony-edwards-injury-update/601914490"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcjOdm37UQLs_2rRvlPmeiBxaww970_1ooKlaGpEwktLs4TTxy6MZyhXdk0-Q",
-      "image_credit": "Mavs Moneyball",
-      "news": [
-        {
-          "url": "https://www.mavsmoneyball.com/dallas-mavericks-game-coverage/63858/dallas-mavericks-at-minnesota-timberwolves-november-12-game-preview-cooper-flagg-anthony-edwards",
-          "title": "3 thoughts as the Mavericks begin tough road swing at the Minnesota Timberwolves",
-          "publisher": "Mavs Moneyball",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcjOdm37UQLs_2rRvlPmeiBxaww970_1ooKlaGpEwktLs4TTxy6MZyhXdk0-Q"
-        },
-        {
-          "url": "https://www.si.com/betting/mavericks-vs-timberwolves-prediction-odds-and-best-nba-prop-bets-for-thursday-nov-12-2026",
-          "title": "Mavericks vs. Timberwolves Prediction, Odds and Best NBA Prop Bets for Thursday, Nov. 12",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTT57j53K_X9YWzwVhN_nNhnCd-mpiWO-KcCUDSiQRnjW208Aw2aYvOShyXiRw"
-        },
-        {
-          "url": "https://www.startribune.com/minnesota-timberwolves-dallas-mavericks-score-today-lamelo-ball-stats-anthony-edwards-injury-update/601914490",
-          "title": "Live: Wolves put four-game winning streak to the test vs. Cooper Flagg, Mavericks",
-          "publisher": "Star Tribune",
-          "description": "",
-          "image_url": null
         }
       ]
     }
