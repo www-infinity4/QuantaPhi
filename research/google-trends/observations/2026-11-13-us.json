@@ -3,41 +3,181 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T17:31:13.955523Z",
+  "checked_at": "2026-11-13T18:01:24.493525Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "polona hercog",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-13T17:10:00Z",
+      "query": "jake bauers",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-13T17:40:00Z",
       "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/7e092555-5d1e-4c41-a162-d3d2c27dccd2/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/f678587d-37f4-4532-be56-a240ac5ec5ff/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/3a81f12f-d108-40f4-8810-d2df44c2a52f/"
+        "https://sports.yahoo.com/articles/jake-bauers-predicted-leave-milwaukee-172920013.html",
+        "https://www.jsonline.com/story/sports/mlb/brewers/2026/11/09/brewers-playoff-hero-jake-bauers-reminisces-on-world-series-run/92688660007/",
+        "https://reviewingthebrew.com/brewers-rule-5-draft-eligible-prospect-could-have-important-role-in-2027-first-base-plans-01m73hq6qrqc"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjsiTXphyVT-DpPqVWY8LY14D0icIvraKYlD3gUn0z16GRYw64OeA6lSMZphc",
-      "image_credit": "Robinhood",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrtOE9nQGgulRIfjz5n51gsbDvEVday2CBXBaAlz0AVO8rTFwAwVBRfJ6o368",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/7e092555-5d1e-4c41-a162-d3d2c27dccd2/",
-          "title": "November 14, 2026: Marvin Moeller vs Jonas Forejtek Tennis Prediction Market",
-          "publisher": "Robinhood",
+          "url": "https://sports.yahoo.com/articles/jake-bauers-predicted-leave-milwaukee-172920013.html",
+          "title": "Jake Bauers Predicted to Leave Milwaukee Brewers for NL Team in $54M Deal",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjsiTXphyVT-DpPqVWY8LY14D0icIvraKYlD3gUn0z16GRYw64OeA6lSMZphc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrtOE9nQGgulRIfjz5n51gsbDvEVday2CBXBaAlz0AVO8rTFwAwVBRfJ6o368"
         },
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/f678587d-37f4-4532-be56-a240ac5ec5ff/",
-          "title": "November 11, 2026: Laura Pigossi vs Bianca Andreescu Prediction Market",
-          "publisher": "Robinhood",
+          "url": "https://www.jsonline.com/story/sports/mlb/brewers/2026/11/09/brewers-playoff-hero-jake-bauers-reminisces-on-world-series-run/92688660007/",
+          "title": "Brewers playoff hero Jake Bauers reminisces on World Series run",
+          "publisher": "Milwaukee Journal Sentinel",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkyi5zNSDLBzightO7a3FPgL_MfluUTyWrUk2Q534hqm2XkEzRyRnW0L7ZwKk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuaURkWfXXAyqg3wKjgUygQZ4Yc-Jqsw377UMdTU_ssdynRP8215cLgOFYv14"
         },
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/3a81f12f-d108-40f4-8810-d2df44c2a52f/",
-          "title": "November 11, 2026: Alejandro Tabilo vs Lorenzo Sonego Prediction Market",
-          "publisher": "Robinhood",
+          "url": "https://reviewingthebrew.com/brewers-rule-5-draft-eligible-prospect-could-have-important-role-in-2027-first-base-plans-01m73hq6qrqc",
+          "title": "Brewers' Rule 5 Draft-eligible prospect could have important role in 2027 first base plans",
+          "publisher": "Reviewing the Brew",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEJMwrnwmzlInLmdONDm_dnz45BVKTZvIOIOVOyqc80bxlrpkJ5DBQSkahxTU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnx5AjLpAu7--QtOaNqHxvl_RCSonnrWQZKLkAflqQOGpWjwPykip05y9-dl8"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 online",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-13T17:40:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/paultassi/2026/11/13/the-gta-6-online-release-date-is-far-off-says-new-report/",
+        "https://www.vice.com/en/article/gta-6-online-release-date/",
+        "https://www.notebookcheck.net/GTA-6-Online-release-window-has-apparently-leaked.1449676.0.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS68gLeEO9x7YFCvhlOGTQry6PXiwzTbgm9QEfWPnGjxEff-BfnM-AZDgSUT68",
+      "image_credit": "Forbes",
+      "news": [
+        {
+          "url": "https://www.forbes.com/sites/paultassi/2026/11/13/the-gta-6-online-release-date-is-far-off-says-new-report/",
+          "title": "Another Update About The ‘GTA 6 Online’ Release Date",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS68gLeEO9x7YFCvhlOGTQry6PXiwzTbgm9QEfWPnGjxEff-BfnM-AZDgSUT68"
+        },
+        {
+          "url": "https://www.vice.com/en/article/gta-6-online-release-date/",
+          "title": "Is GTA 6 Going to Have Online? What We Know About Multiplayer and Its Release Date",
+          "publisher": "VICE",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlp9lczcwchIvMYIxjCONPbuUHKe87QRBoX1m8ZOR-Zyxes7kCKleTQaFnbis"
+        },
+        {
+          "url": "https://www.notebookcheck.net/GTA-6-Online-release-window-has-apparently-leaked.1449676.0.html",
+          "title": "GTA 6 Online release window has apparently leaked",
+          "publisher": "Notebookcheck",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtfnWEPwO-gSbgY74daTJfgOSKMKyJArFY5Qk2cPadYrIoNc9X-JdthheAuaw"
+        }
+      ]
+    },
+    {
+      "query": "portugal",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T17:40:00Z",
+      "related_news_urls": [
+        "https://eco.sapo.pt/2026/11/11/quem-e-o-portugues-que-pode-ser-lancado-na-corrida-ao-bce/",
+        "https://www.facebook.com/ObservadorOnTime/photos/espanha-e-pa%C3%ADses-baixos-apresentaram-candidaturas-%C3%A0-presid%C3%AAncia-que-v%C3%A3o-ser-apre/1533632982201313/",
+        "https://pt.euronews.com/2026/11/13/confirma-ue-dois-candidatos-para-suceder-a-lagarde-no-bce"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQeYg-CmmgBYwhZTkOUo3cPNyHLql7WXZiI1zY6CEtIAT2A2zcBCVK9821Uyjg",
+      "image_credit": "ECO",
+      "news": [
+        {
+          "url": "https://eco.sapo.pt/2026/11/11/quem-e-o-portugues-que-pode-ser-lancado-na-corrida-ao-bce/",
+          "title": "Quem é o português que pode ser lançado na corrida ao BCE?",
+          "publisher": "ECO",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQeYg-CmmgBYwhZTkOUo3cPNyHLql7WXZiI1zY6CEtIAT2A2zcBCVK9821Uyjg"
+        },
+        {
+          "url": "https://www.facebook.com/ObservadorOnTime/photos/espanha-e-pa%C3%ADses-baixos-apresentaram-candidaturas-%C3%A0-presid%C3%AAncia-que-v%C3%A3o-ser-apre/1533632982201313/",
+          "title": "Espanha e Países Baixos apresentaram candidaturas à presidência que vão ser apreciadas nesta reunião. Objetivo é que os estados-membros cheguem a um acordo durante o mês de novembr",
+          "publisher": "Facebook",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxTU6pQ0uZKTwTEO-NIVokK1FJuDf9tnFc7Ocmphbmp6VUIGRFqFI9Vcf4Bao"
+        },
+        {
+          "url": "https://pt.euronews.com/2026/11/13/confirma-ue-dois-candidatos-para-suceder-a-lagarde-no-bce",
+          "title": "Confirma UE dois candidatos para suceder a Lagarde no BCE",
+          "publisher": "Euronews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSG4_44H9-vreBk7EZTifac7t3rHS7vUjSvD4j7sX27cOEjpMl-AiyEj_mn_5w"
+        }
+      ]
+    },
+    {
+      "query": "tony richards",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T17:40:00Z",
+      "related_news_urls": [
+        "https://consequence.net/2026/11/w-a-s-p-drummer-tony-richards-dead-at-69/",
+        "https://ghostcultmag.com/original-w-a-s-p-drummer-tony-richards-has-died/",
+        "https://loadedradio.com/metal-breakdown-daily-slipknot-album-tony-richards-radke/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqeIitz1kn89XqRixBmPVhR2DoULNjnQf-Tm7zN8Ub1vIm8gMD493KQTRz9Gw",
+      "image_credit": "Consequence of Sound",
+      "news": [
+        {
+          "url": "https://consequence.net/2026/11/w-a-s-p-drummer-tony-richards-dead-at-69/",
+          "title": "Original W.A.S.P. Drummer Tony Richards Dead at 69",
+          "publisher": "Consequence of Sound",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqeIitz1kn89XqRixBmPVhR2DoULNjnQf-Tm7zN8Ub1vIm8gMD493KQTRz9Gw"
+        },
+        {
+          "url": "https://ghostcultmag.com/original-w-a-s-p-drummer-tony-richards-has-died/",
+          "title": "Original W.A.S.P. Drummer Tony Richards Has Died",
+          "publisher": "Ghost Cult Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt7xWrrlelZ1elttTGlkcBM7RU8B9S-Ir8eJYev9qOaYRw4fqogvUx8P0Zj7c"
+        },
+        {
+          "url": "https://loadedradio.com/metal-breakdown-daily-slipknot-album-tony-richards-radke/",
+          "title": "Metal Breakdown Daily: New Slipknot Album, Original W.A.S.P. Drummer Tony Richards Dies, Ronnie Radke Sued",
+          "publisher": "Loaded Radio",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSon1N_-7EUdCIc0z0FR3CKud4FLhyVrQimfwzOGkCmxYOzWLLfwL4zkBJHwGc"
+        }
+      ]
+    },
+    {
+      "query": "rocket launch today",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T17:30:00Z",
+      "related_news_urls": [
+        "https://www.aboutamazon.com/news/amazon-leo/amazon-leo-vulcan-satellites-launch",
+        "https://spaceflightnow.com/2026/11/13/ulas-vulcan-rocket-plans-return-to-flight-with-launch-of-40-leo-satellites-for-amazon/",
+        "https://www.space.com/space-exploration/launches-spacecraft/ula-vulcan-centaur-return-to-flight-amazon-leo-internet-satellite-launch"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuQAvyvt4PTfbJAUglLuOqipMfI0JXviQUQGrK3gUM_wCEUeFGC1VC9FuKbpI",
+      "image_credit": "About Amazon",
+      "news": [
+        {
+          "url": "https://www.aboutamazon.com/news/amazon-leo/amazon-leo-vulcan-satellites-launch",
+          "title": "Amazon Leo to launch 40 satellites on its first Vulcan mission",
+          "publisher": "About Amazon",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuQAvyvt4PTfbJAUglLuOqipMfI0JXviQUQGrK3gUM_wCEUeFGC1VC9FuKbpI"
+        },
+        {
+          "url": "https://spaceflightnow.com/2026/11/13/ulas-vulcan-rocket-plans-return-to-flight-with-launch-of-40-leo-satellites-for-amazon/",
+          "title": "ULA delays Vulcan rocket launch of 40 Leo satellites for Amazon",
+          "publisher": "Spaceflight Now",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVk1mKvZH-tWHY4CXTFvGHVu_S--bKuoqhY953_4ElKzv91gzbaOelQ4qQT0o"
+        },
+        {
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/ula-vulcan-centaur-return-to-flight-amazon-leo-internet-satellite-launch",
+          "title": "Powerful Vulcan Centaur rocket launching for 1st time in 9 months Nov. 14: Watch it live",
+          "publisher": "Space",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMPGR3LjGW6Sq1LiUAOLKel0o3e86B1hOYChoDF3xTL91pYsZ9NOsjH6slgzs"
         }
       ]
     },
@@ -47,8 +187,8 @@
       "published_at": "2026-11-13T17:00:00Z",
       "related_news_urls": [
         "https://www.wsj.com/cio-journal/nvidia-needs-three-ceos-in-one-59038b0c",
-        "https://finance.yahoo.com/video/nvidias-ceo-search-has-a-3--to-4-month-clock-its-pretty-urgent-175552767.html",
-        "https://www.ft.com/content/2a64f698-46dd-4178-a3f4-4c5f4c0a0926?syn-25a6b1a6=1"
+        "https://www.ft.com/content/2a64f698-46dd-4178-a3f4-4c5f4c0a0926?syn-25a6b1a6=1",
+        "https://www.fastcompany.com/91642252/5-things-jensen-huang-mastered-that-nvidias-next-ceo-will-have-to-learn"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRchBr_VCzPyhAESI7uW2vBm09mrUmNnAkW8Qssnl8fguZ7jb8QI_zrLHc7vsA",
       "image_credit": "WSJ",
@@ -61,24 +201,24 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRchBr_VCzPyhAESI7uW2vBm09mrUmNnAkW8Qssnl8fguZ7jb8QI_zrLHc7vsA"
         },
         {
-          "url": "https://finance.yahoo.com/video/nvidias-ceo-search-has-a-3--to-4-month-clock-its-pretty-urgent-175552767.html",
-          "title": "Nvidia's CEO search has a 3- to 4-month clock: 'It's pretty urgent'",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTA19rqaozTyLF4AWH5CljHpNki3IH2va3lzIq0JGnOmZSbMisWjxRZaxvUr4"
-        },
-        {
           "url": "https://www.ft.com/content/2a64f698-46dd-4178-a3f4-4c5f4c0a0926?syn-25a6b1a6=1",
           "title": "Arm boss Rene Haas approached in Nvidia CEO search",
           "publisher": "Financial Times",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWcf8CdJi6Tul19dJVSsWBuP3U2abZbTx6o8lksDRCQbSvsi9E35tFO5UYZEU"
+        },
+        {
+          "url": "https://www.fastcompany.com/91642252/5-things-jensen-huang-mastered-that-nvidias-next-ceo-will-have-to-learn",
+          "title": "5 things Jensen Huang mastered that Nvidia’s next CEO will have to learn",
+          "publisher": "Fast Company",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4TwtlMaXigdrg51N5Avd6-sP47xSN-8LLdYHI0ay1kD5rpyTnjPWZ7V8dZW0"
         }
       ]
     },
     {
       "query": "wes huff",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-13T17:00:00Z",
       "related_news_urls": [
         "https://churchleaders.com/news/2225507-wesley-huff-3-year-old-daughter-multiple-seizures.html",
@@ -108,41 +248,6 @@
           "publisher": "JubileeCast",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTE2Q1V0j2eg_KAnLVPcsdVyWnr0FFVsVCYnI_HJufUxGcYXIWkGQnbkyXmKJ8"
-        }
-      ]
-    },
-    {
-      "query": "michael douglas",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T16:50:00Z",
-      "related_news_urls": [
-        "https://www.instyle.com/catherine-zeta-jones-daughter-carys-wears-her-gucci-top-12251276",
-        "https://people.com/carys-douglas-borrows-mom-catherine-zeta-jones-gucci-top-12251245",
-        "https://ew.com/carys-douglas-wears-catherine-zeta-jones-black-lace-top-1996-12251930"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeQQ_TtbE7OGr0X8FNRRUS1Ola3P-WWQVWmfKPVNlm1O-tjdb8OVcTlr8BU-k",
-      "image_credit": "InStyle",
-      "news": [
-        {
-          "url": "https://www.instyle.com/catherine-zeta-jones-daughter-carys-wears-her-gucci-top-12251276",
-          "title": "Catherine Zeta-Jones’s Daughter Carys, 23, Wears Her 30-Year-Old Lace Gucci Top",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeQQ_TtbE7OGr0X8FNRRUS1Ola3P-WWQVWmfKPVNlm1O-tjdb8OVcTlr8BU-k"
-        },
-        {
-          "url": "https://people.com/carys-douglas-borrows-mom-catherine-zeta-jones-gucci-top-12251245",
-          "title": "Carys Douglas Borrows Mom Catherine Zeta-Jones’ Lace Gucci Top 30 Years Later",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ902wLzKQiyrEzNW3svjD42X7PLgQTWOuL9Je3aOYIryWx4MDOdXsaXHKGUAc"
-        },
-        {
-          "url": "https://ew.com/carys-douglas-wears-catherine-zeta-jones-black-lace-top-1996-12251930",
-          "title": "Catherine Zeta-Jones’ daughter steps out in same Gucci black lace top actress wore to 1996 premiere",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_WtYXufAIEUHTC7JmJV3LuJMMrFJh1SNTI5-XiI_e9lZrI2gc_ZlUsikY8Ts"
         }
       ]
     },
@@ -182,6 +287,41 @@
       ]
     },
     {
+      "query": "michael douglas",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-13T16:50:00Z",
+      "related_news_urls": [
+        "https://people.com/carys-douglas-borrows-mom-catherine-zeta-jones-gucci-top-12251245",
+        "https://www.instyle.com/catherine-zeta-jones-daughter-carys-wears-her-gucci-top-12251276",
+        "https://ew.com/carys-douglas-wears-catherine-zeta-jones-black-lace-top-1996-12251930"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ902wLzKQiyrEzNW3svjD42X7PLgQTWOuL9Je3aOYIryWx4MDOdXsaXHKGUAc",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/carys-douglas-borrows-mom-catherine-zeta-jones-gucci-top-12251245",
+          "title": "Carys Douglas Borrows Mom Catherine Zeta-Jones’ Lace Gucci Top 30 Years Later",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ902wLzKQiyrEzNW3svjD42X7PLgQTWOuL9Je3aOYIryWx4MDOdXsaXHKGUAc"
+        },
+        {
+          "url": "https://www.instyle.com/catherine-zeta-jones-daughter-carys-wears-her-gucci-top-12251276",
+          "title": "Catherine Zeta-Jones’s Daughter Carys, 23, Wears Her 30-Year-Old Lace Gucci Top",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeQQ_TtbE7OGr0X8FNRRUS1Ola3P-WWQVWmfKPVNlm1O-tjdb8OVcTlr8BU-k"
+        },
+        {
+          "url": "https://ew.com/carys-douglas-wears-catherine-zeta-jones-black-lace-top-1996-12251930",
+          "title": "Catherine Zeta-Jones’ daughter steps out in same Gucci black lace top actress wore to 1996 premiere",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_WtYXufAIEUHTC7JmJV3LuJMMrFJh1SNTI5-XiI_e9lZrI2gc_ZlUsikY8Ts"
+        }
+      ]
+    },
+    {
       "query": "nintendo black friday deals",
       "approx_searches": "5000+",
       "published_at": "2026-11-13T16:50:00Z",
@@ -213,146 +353,6 @@
           "publisher": "Lifehacker",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYZ6clXKS3O2MrhCcatyLbePNpSLYPegEg-B3wQD9cPl6pTvs1gvXB0sA-5ak"
-        }
-      ]
-    },
-    {
-      "query": "emma grede",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-13T16:30:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/09/style/skims-advent-calendar-refunds.html",
-        "https://www.bbc.com/news/articles/cqp8g8p53x6ko",
-        "https://globalnews.ca/news/12144875/skims-refund-advent-calendar-kim-kardashian/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCPnXUC-O4j_MwbWmpNyjv6Gd2wSuqtYF4wjNQjCNqFnBTSdyxrtEyv0vYTwo",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/09/style/skims-advent-calendar-refunds.html",
-          "title": "Skims Offers Refunds for $150 Advent Calendar Full of Hair Ties and ‘Junk’",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCPnXUC-O4j_MwbWmpNyjv6Gd2wSuqtYF4wjNQjCNqFnBTSdyxrtEyv0vYTwo"
-        },
-        {
-          "url": "https://www.bbc.com/news/articles/cqp8g8p53x6ko",
-          "title": "Kim Kardashian's Skims offers refunds for $148 advent calendar after backlash",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQapN4jObHWMh-I8NH3HOCnRiyNKUmSGWymftE5w098GFX2bUEyeSlS_VG792c"
-        },
-        {
-          "url": "https://globalnews.ca/news/12144875/skims-refund-advent-calendar-kim-kardashian/",
-          "title": "SKIMS to refund $148 advent calendar filled with hair ties, bobby pins",
-          "publisher": "Global News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSVY8zk8gkd6NeAVDTDH2rBF3a8Vg3ojdQYBb5YKvQhKTkHPE9KBCr_HOi3uc"
-        }
-      ]
-    },
-    {
-      "query": "taylor fritz",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-13T16:30:00Z",
-      "related_news_urls": [
-        "https://tennishead.net/taylor-fritz-has-made-a-very-smart-decision-after-missing-out-on-the-atp-finals-this-year/",
-        "https://www.tennis365.com/tennis-news/taylor-fritz-alex-de-minaur-without-playing",
-        "https://www.tennis365.com/tennis-news/taylor-fritz-very-bizarre-decision"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFED3ElpHFORA6uVMsuJcKKGwkAE7eu3MgffygivXVQ_-xTByTPaPHwjAy6cg",
-      "image_credit": "Tennishead",
-      "news": [
-        {
-          "url": "https://tennishead.net/taylor-fritz-has-made-a-very-smart-decision-after-missing-out-on-the-atp-finals-this-year/",
-          "title": "Taylor Fritz has made a very smart decision after missing out on the ATP Finals this year",
-          "publisher": "Tennishead",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFED3ElpHFORA6uVMsuJcKKGwkAE7eu3MgffygivXVQ_-xTByTPaPHwjAy6cg"
-        },
-        {
-          "url": "https://www.tennis365.com/tennis-news/taylor-fritz-alex-de-minaur-without-playing",
-          "title": "Taylor Fritz and Alex de Minaur set for $156,000 payday without playing a single match",
-          "publisher": "Tennis365",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6L3YoWRMUUnVRayzr51CBQh8ruTGArMGqtzKQ40-ri-0QZDpi2U9yoOf_OMY"
-        },
-        {
-          "url": "https://www.tennis365.com/tennis-news/taylor-fritz-very-bizarre-decision",
-          "title": "Taylor Fritz has just made a very bizarre decision that makes very little sense for his career",
-          "publisher": "Tennis365",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1R1Y5QasgD2HGSCd1bF4LUW3m46S2VC63IDzKc0gsKq3B3C2zAOnkWSdJ1Yc"
-        }
-      ]
-    },
-    {
-      "query": "doug mcdermott",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T16:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/former-pacers-sharpshooter-doug-mcdermott-165643079.html",
-        "https://bleacherreport.com/articles/25532890-doug-mcdermott-retires-after-12-nba-seasons-bulls-knicks-thunder-spurs-more",
-        "https://omaha.com/sports/college/creighton/article_c576ef9e-545c-4b49-9630-6a40034eb144.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReZ6LQcNd3fBwLvNc0hY6MCwqwddLD2oOzyOhHCqyPLf9mqoU6r1JKgusT5rY",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/former-pacers-sharpshooter-doug-mcdermott-165643079.html",
-          "title": "Former Pacers sharpshooter Doug McDermott retires after 12 NBA seasons",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReZ6LQcNd3fBwLvNc0hY6MCwqwddLD2oOzyOhHCqyPLf9mqoU6r1JKgusT5rY"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25532890-doug-mcdermott-retires-after-12-nba-seasons-bulls-knicks-thunder-spurs-more",
-          "title": "Doug McDermott Retires After 12 NBA Seasons with Bulls, Knicks, Thunder, Spurs, More",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyeLW96DiG9IzIc8IBAHgGUJCepbY9IOOqY2yEuDrEOE5jQU6mfpJOfaVMG7w"
-        },
-        {
-          "url": "https://omaha.com/sports/college/creighton/article_c576ef9e-545c-4b49-9630-6a40034eb144.html",
-          "title": "Creighton legend Doug McDermott retires after 12 NBA seasons",
-          "publisher": "Omaha World-Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmsCYP0Wj45aNCDtIYlBT22724svZzxcD6DvjPOI7X3UdMRPZwNROoLNZQfyI"
-        }
-      ]
-    },
-    {
-      "query": "alex warren 2027 tour",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T16:20:00Z",
-      "related_news_urls": [
-        "https://www.desmoinesregister.com/story/entertainment/2026/11/13/alex-warren-des-moines-finding-more-family-on-the-road-tour/92759161007/",
-        "https://www.knoxnews.com/story/entertainment/music/2026/11/13/how-to-get-tickets-to-alex-warren-concert-in-knoxville/92745545007/",
-        "https://www.dakotanewsnow.com/2026/11/13/grammy-nominated-singer-alex-warren-coming-premier-center/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT42bhPfzHoMLtLRly8Bc9bVQ2SbDK6e_SK4ripsVRgLmENLZdl1XnNUNR__iQ",
-      "image_credit": "The Des Moines Register",
-      "news": [
-        {
-          "url": "https://www.desmoinesregister.com/story/entertainment/2026/11/13/alex-warren-des-moines-finding-more-family-on-the-road-tour/92759161007/",
-          "title": "Alex Warren's tour is coming to Des Moines in 2027. How to get tickets",
-          "publisher": "The Des Moines Register",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT42bhPfzHoMLtLRly8Bc9bVQ2SbDK6e_SK4ripsVRgLmENLZdl1XnNUNR__iQ"
-        },
-        {
-          "url": "https://www.knoxnews.com/story/entertainment/music/2026/11/13/how-to-get-tickets-to-alex-warren-concert-in-knoxville/92745545007/",
-          "title": "Alex Warren coming to Knoxville in 2027. Here’s how to get tickets",
-          "publisher": "Knoxville News Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwetZCQY1yFsIA3UgF4xP0SciHS3DIRpUvd-Bk29FqwQCt5MjD16cTAQbMZAw"
-        },
-        {
-          "url": "https://www.dakotanewsnow.com/2026/11/13/grammy-nominated-singer-alex-warren-coming-premier-center/",
-          "title": "Grammy-nominated singer Alex Warren coming to PREMIER Center",
-          "publisher": "Dakota News Now",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmkUZiv9Wu61wfs86yezr7Kww22IOwrgv_-n4m4dAvV9T8nm2__drOcVUkdiY"
         }
       ]
     }
