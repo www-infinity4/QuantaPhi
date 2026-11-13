@@ -3,17 +3,192 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T11:00:49.919272Z",
+  "checked_at": "2026-11-13T11:31:07.065325Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "espncricinfo",
+      "approx_searches": "100+",
+      "published_at": "2026-11-13T11:10:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/story/nz-vs-ind-what-is-happening-to-mohammed-siraj-1562291",
+        "https://m.economictimes.com/news/new-updates/india-vs-new-zealand-3rd-odi-playing-11-check-head-to-head-probable-playing-11-full-squads-and-match-details/articleshow/135690846.cms",
+        "https://www.india.com/sports/cricket/8543775-8543775/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVUDU0d8mznxy94iWOOXm_0n9aj_0AlKMs6PLH0LiXwKEXMY5dcZuY4VC9VoQ",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/story/nz-vs-ind-what-is-happening-to-mohammed-siraj-1562291",
+          "title": "What is happening to Mohammed Siraj?",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVUDU0d8mznxy94iWOOXm_0n9aj_0AlKMs6PLH0LiXwKEXMY5dcZuY4VC9VoQ"
+        },
+        {
+          "url": "https://m.economictimes.com/news/new-updates/india-vs-new-zealand-3rd-odi-playing-11-check-head-to-head-probable-playing-11-full-squads-and-match-details/articleshow/135690846.cms",
+          "title": "India vs New Zealand 3rd ODI Playing 11: Weather, head-to-head, probable playing 11, full squads and match",
+          "publisher": "The Economic Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPFPkO_NUJX5upm4Y4-v3u65gQ5mKjJGelOROLExxD9ZTDHOvBsqTFAQu2VTc"
+        },
+        {
+          "url": "https://www.india.com/sports/cricket/8543775-8543775/",
+          "title": "Sunil Gavaskar questions Mohammed Siraj's omission from India's XI against New Zealand in washed out 3rd ODI",
+          "publisher": "India.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcU1knR3ubXt0EPm5HiBup53ciJE-GAe3mO56Ac7j7dkztuV9K1XHE3Hmth5E"
+        }
+      ]
+    },
+    {
+      "query": "weather new york",
+      "approx_searches": "100+",
+      "published_at": "2026-11-13T11:10:00Z",
+      "related_news_urls": [
+        "https://abc7ny.com/live-updates/is-noreaster-coming-going-snow-nyc-updates-coastal-storm-eyewitness-news-accuweather-team/20030659/",
+        "https://www.wbng.com/2026/11/12/first-alert-first-potential-snowfall-arrives-tonight/",
+        "https://www.wjhl.com/wjhl-weather/forecast/winter-weather-advisories-for-the-mountains-friday-rain-and-snow-tonight/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTw0m-ffGQKhpovwpClBWgvjt9Gi1LpZz_KrW0rM86Aw18AJdBbdsCWGyxM1vQ",
+      "image_credit": "ABC7 New York",
+      "news": [
+        {
+          "url": "https://abc7ny.com/live-updates/is-noreaster-coming-going-snow-nyc-updates-coastal-storm-eyewitness-news-accuweather-team/20030659/",
+          "title": "AccuWeather Alert: Coastal low to mature overnight; snow north and west | Live update",
+          "publisher": "ABC7 New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTw0m-ffGQKhpovwpClBWgvjt9Gi1LpZz_KrW0rM86Aw18AJdBbdsCWGyxM1vQ"
+        },
+        {
+          "url": "https://www.wbng.com/2026/11/12/first-alert-first-potential-snowfall-arrives-tonight/",
+          "title": "FIRST ALERT: First potential snowfall arrives tonight",
+          "publisher": "WBNG",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRa0mI2BgzA08AX043L1nFQXxP2N_4DHqJAUf5U7MqYo7B8BhPA0VbHhDzTBkU"
+        },
+        {
+          "url": "https://www.wjhl.com/wjhl-weather/forecast/winter-weather-advisories-for-the-mountains-friday-rain-and-snow-tonight/",
+          "title": "Winter Weather Advisories for the mountains Friday; rain and snow tonight",
+          "publisher": "WJHL",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfaP5CnEZ9vSRpmp-mZVaOMl4TWucavvJZK_pctmXWA8UthIg7n-Evi_wd9HY"
+        }
+      ]
+    },
+    {
+      "query": "trust",
+      "approx_searches": "100+",
+      "published_at": "2026-11-13T11:00:00Z",
+      "related_news_urls": [
+        "https://www.law360.com/articles/2549656/dexus-cleared-to-put-trust-wind-up-plan-to-unitholders",
+        "https://www.lawyerly.com.au/facing-1-6b-redemption-queue-dexus-can-call-infrastructure-wind-up-vote/",
+        "https://www.courant.com/2026/11/13/ny-attorney-who-admitted-to-embezzling-500k-from-trust-sentenced-to-federal-prison-for-wire-fraud/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGM8fhMFZNQmiLKRZKPgA3Xbtxj5PGUfSMmVz0yTC1bd2zN-nzbB1-goYbeg",
+      "image_credit": "Law360",
+      "news": [
+        {
+          "url": "https://www.law360.com/articles/2549656/dexus-cleared-to-put-trust-wind-up-plan-to-unitholders",
+          "title": "Dexus Cleared To Put Trust Wind-Up Plan To Unitholders",
+          "publisher": "Law360",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGM8fhMFZNQmiLKRZKPgA3Xbtxj5PGUfSMmVz0yTC1bd2zN-nzbB1-goYbeg"
+        },
+        {
+          "url": "https://www.lawyerly.com.au/facing-1-6b-redemption-queue-dexus-can-call-infrastructure-wind-up-vote/",
+          "title": "Facing $1.6B redemption queue, Dexus can call infrastructure wind-up vote",
+          "publisher": "Lawyerly",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDeet_Km2jBGHpCtuDd7mtNcOxmMIvHWeBDexojxUf8jyRom_3hHDJmNsm7SM"
+        },
+        {
+          "url": "https://www.courant.com/2026/11/13/ny-attorney-who-admitted-to-embezzling-500k-from-trust-sentenced-to-federal-prison-for-wire-fraud/",
+          "title": "NY attorney who admitted to embezzling $500K+ from trust sentenced to federal prison for wire fraud",
+          "publisher": "Hartford Courant",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPo-lyvtKnLd_NGzKN-4MoETyAt36ZUmSox_i63wZFwUAMa9hL6CPFqYwy-yI"
+        }
+      ]
+    },
+    {
+      "query": "la weather",
+      "approx_searches": "100+",
+      "published_at": "2026-11-13T11:00:00Z",
+      "related_news_urls": [
+        "https://ktla.com/news/california/rain-forecast-timing/",
+        "https://www.foxla.com/news/socal-storm-timeline-rain-high-surf",
+        "https://www.latimes.com/california/story/2026-11-12/bring-out-your-umbrellas-cooling-temperatures-scattered-showers-start-thursday-night"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThClVaLMYdMeZZfokPnfPMj9OKN4mB6SMdOocJOTWwQoSCHhV5_utThcc9K8I",
+      "image_credit": "KTLA",
+      "news": [
+        {
+          "url": "https://ktla.com/news/california/rain-forecast-timing/",
+          "title": "‘Storm train’ rolling into Southern California, Weather Service says",
+          "publisher": "KTLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThClVaLMYdMeZZfokPnfPMj9OKN4mB6SMdOocJOTWwQoSCHhV5_utThcc9K8I"
+        },
+        {
+          "url": "https://www.foxla.com/news/socal-storm-timeline-rain-high-surf",
+          "title": "SoCal storm timeline: Back-to-back systems bring rain, high surf through Sunday",
+          "publisher": "FOX 11 Los Angeles",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqtuXN6RlD5ttKQtQfEmm3k17xL0oA45hYdkK2FMcbWOzxfk_70ZE3J75GafU"
+        },
+        {
+          "url": "https://www.latimes.com/california/story/2026-11-12/bring-out-your-umbrellas-cooling-temperatures-scattered-showers-start-thursday-night",
+          "title": "Bring out your umbrellas. Cooling temperatures and scattered showers start Thursday night",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLFJGCvjEQ31_-pG-dyG7MEXw5k8zwMuNUo7Pqd0uEw4tqYw3TS9MUmytLSBg"
+        }
+      ]
+    },
+    {
+      "query": "pakistan vs sri lanka",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T10:50:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/series/sri-lanka-in-pakistan-2026-27-1550703/pakistan-vs-sri-lanka-1st-test-1550711/match-report",
+        "https://www.10tv.com/article/syndication/associatedpress/pakistan-leads-by-139-after-babar-and-agha-fall-in-sri-lanka-fielding-trap-on-5th-day-of-1st-test/616-9a455683-d1f0-4d68-82be-63b7476503f8",
+        "https://sports.yahoo.com/articles/ex-captain-silva-leads-sri-073042966.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKYkezhdg49MRhZEsLblXfx5Y2uz3wsbDhlya8nPYWk_-T1JoIHYVNbyQ-Lcw",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/series/sri-lanka-in-pakistan-2026-27-1550703/pakistan-vs-sri-lanka-1st-test-1550711/match-report",
+          "title": "Milan Rathnayaka, Asitha Fernando's strikes jolt Pakistan",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKYkezhdg49MRhZEsLblXfx5Y2uz3wsbDhlya8nPYWk_-T1JoIHYVNbyQ-Lcw"
+        },
+        {
+          "url": "https://www.10tv.com/article/syndication/associatedpress/pakistan-leads-by-139-after-babar-and-agha-fall-in-sri-lanka-fielding-trap-on-5th-day-of-1st-test/616-9a455683-d1f0-4d68-82be-63b7476503f8",
+          "title": "Pakistan leads by 139 after Babar and Agha fall in Sri Lanka fielding trap on 5th day of 1st test",
+          "publisher": "10TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQolRc1RkBtDmUQPmfvULhdge8pRiPnrOXEtEEOaM0Oea6ifHU9QWRz33nWGQ4"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/ex-captain-silva-leads-sri-073042966.html",
+          "title": "Centurions De Silva and Mendis flay inexperienced Pakistan attack to boost Sri Lanka in 1st test",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRowqHAEmXK1qUNZf4YI5vyu160IiATnAKaH2CL4kNnGIEE3dG2PKWNUi8JPEM"
+        }
+      ]
+    },
+    {
       "query": "storm",
-      "approx_searches": "2000+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-13T10:40:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/2026/11/12/weather/california-storm-west-coast-rain.html",
-        "https://www.sfchronicle.com/weather-forecast/article/live-storm-rain-snow-22527659.php",
-        "https://abc7news.com/live-updates/live-updates-level-2-storm-making-bay-area-rain-winds-dangerous-high-surf-forecast/20037281/"
+        "https://www.kcra.com/article/northern-california-morning-forecast-nov-12-2026-1794526573/74417096",
+        "https://www.sfchronicle.com/weather-forecast/article/live-storm-rain-snow-22527659.php"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUbs9x7TYxJeINOef9MiCeSi6fBasyg-xlj6-g7ycHnr9k56kZPBLwbZzqrPE",
       "image_credit": "The New York Times",
@@ -26,24 +201,24 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUbs9x7TYxJeINOef9MiCeSi6fBasyg-xlj6-g7ycHnr9k56kZPBLwbZzqrPE"
         },
         {
+          "url": "https://www.kcra.com/article/northern-california-morning-forecast-nov-12-2026-1794526573/74417096",
+          "title": "NorCal forecast: Wind, rain and snow will make for a stormy Friday",
+          "publisher": "KCRA",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQprTra_sJDYQnyFzNUDBOX41l4Wv8ON0nCvt_7PYFNL4BW25V-7Mt1zgPpFfY"
+        },
+        {
           "url": "https://www.sfchronicle.com/weather-forecast/article/live-storm-rain-snow-22527659.php",
           "title": "California’s first big storm of season is about to land. Here are latest forecast updates",
           "publisher": "San Francisco Chronicle",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq-lO7BcLBaoTJ5O1Wfh_tTE6ntp7HI6OGo8cFFFyal-MvroJpf11DepOQVcM"
-        },
-        {
-          "url": "https://abc7news.com/live-updates/live-updates-level-2-storm-making-bay-area-rain-winds-dangerous-high-surf-forecast/20037281/",
-          "title": "LIVE UPDATES: Bay Area prepares for Level 2 storm; rain, winds and dangerous surf in forecast",
-          "publisher": "ABC7 Bay Area",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWZHWKnTNjmL3uQ2eW4lLpeo7ozeUocb4GK_rfXE5gS_Sp5uzWCCy80MvfK3Y"
         }
       ]
     },
     {
       "query": "chip roy",
-      "approx_searches": "100+",
+      "approx_searches": "500+",
       "published_at": "2026-11-13T10:30:00Z",
       "related_news_urls": [
         "https://thehill.com/homenews/house/6217576-gop-lawmaker-says-party-is-focusing-on-political-power-rather-than-people/",
@@ -112,24 +287,52 @@
       ]
     },
     {
+      "query": "laurence fishburne",
+      "approx_searches": "100+",
+      "published_at": "2026-11-13T10:20:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/film/news/gatto-trailer-pixar-mark-ruffalo-cat-mobster-1236834790/",
+        "https://www.yahoo.com/entertainment/movies/trailers/articles/pixar-proves-yes-mafia-cats-233019743.html",
+        "https://abc7ny.com/post/disney-pixars-gatto-new-cast-members-official-trailer-revealed/20036415/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAbNIOHMnbk9Imt-HYD4n5KJ_ncxg49H8kJbRV6MHkiDO4fsKXF1tvxmwFxew",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/film/news/gatto-trailer-pixar-mark-ruffalo-cat-mobster-1236834790/",
+          "title": "‘Gatto’ Trailer: A Mobster Cat Is on His Last Life in Pixar’s New Animated Movie",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAbNIOHMnbk9Imt-HYD4n5KJ_ncxg49H8kJbRV6MHkiDO4fsKXF1tvxmwFxew"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/trailers/articles/pixar-proves-yes-mafia-cats-233019743.html",
+          "title": "Pixar proves that, yes, Mafia cats can still be cute in new Gatto trailer",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWy3ERPM_pFXkKNSkp2xe9Ci3eSnaMYwYfM5LWEpKXW3GHTsoRUhENqW0f_Uk"
+        },
+        {
+          "url": "https://abc7ny.com/post/disney-pixars-gatto-new-cast-members-official-trailer-revealed/20036415/",
+          "title": "Disney and Pixar's 'Gatto': New cast members and official trailer revealed",
+          "publisher": "ABC7 New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIGU5uSw1zynqnskPCBySKeE2qmyofwaZ4XJuA6cA9z7Qv0ItTadw2qjaXOlY"
+        }
+      ]
+    },
+    {
       "query": "王忠林",
       "approx_searches": "500+",
       "published_at": "2026-11-13T10:10:00Z",
       "related_news_urls": [
-        "https://news.ifeng.com/c/8y1UoHEcS7E",
         "https://www.sohu.com/a/1101188989_161795?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
-        "https://www.ntdtv.com/gb/2026/11/13/a104150400.html"
+        "https://www.epochtimes.com/gb/26/11/13/n14888384.htm",
+        "https://www.zaochenbao.com/news/Chronicles/202611/1385459.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrNOWULGYAXjKwr4mLjHsgk4l3BYOnk05OvuP-Po6rJ1dZSLUKPjRjG-8LRjc",
-      "image_credit": "凤凰网",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLUD351sLO7VOI2zQyZCa2QYHRqdV0lSN4JKRdZpA_OoLLHe5xFhxT0IMA8sk",
+      "image_credit": "Sohu",
       "news": [
-        {
-          "url": "https://news.ifeng.com/c/8y1UoHEcS7E",
-          "title": "湖北省委原书记王忠林被查",
-          "publisher": "凤凰网",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrNOWULGYAXjKwr4mLjHsgk4l3BYOnk05OvuP-Po6rJ1dZSLUKPjRjG-8LRjc"
-        },
         {
           "url": "https://www.sohu.com/a/1101188989_161795?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
           "title": "十四届全国人大环境与资源保护委员会副主任委员王忠林，被查",
@@ -138,213 +341,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLUD351sLO7VOI2zQyZCa2QYHRqdV0lSN4JKRdZpA_OoLLHe5xFhxT0IMA8sk"
         },
         {
-          "url": "https://www.ntdtv.com/gb/2026/11/13/a104150400.html",
-          "title": "王忠林出事？传多处住所被抄 多名家人被带走 | 湖北省委书记 | 抄家 | 被调查 | 新唐人电视台",
-          "publisher": "新唐人電視台",
+          "url": "https://www.epochtimes.com/gb/26/11/13/n14888384.htm",
+          "title": "前湖北書記王忠林落馬 傳多名家人被帶走",
+          "publisher": "大紀元",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8Lr3xhWMrvOO6f3MwQkWURc9sak7345urZQOHsLSZW_qo-mc_FEmfaTsSNgM"
-        }
-      ]
-    },
-    {
-      "query": "rory mcilroy",
-      "approx_searches": "100+",
-      "published_at": "2026-11-13T10:10:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/golf/articles/cwlymny900ezo",
-        "https://www.golfdigest.com/story/heres-prize-money-payout-for-dp-world-tour-2026-race-to-dubai-bonus-pool",
-        "https://www.espn.com/golf/story/_/id/50461266/rory-mcilroy-boosts-bid-record-tying-race-dubai-title"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKj0YSenxmJ_0jU7V12sHC13nCaF_Diln_I8ug5hEj5D3p_k7AUf62RrkP0UU",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/golf/articles/cwlymny900ezo",
-          "title": "DP World Tour Championship: Rory McIlroy best placed Race to Dubai contender after first round",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKj0YSenxmJ_0jU7V12sHC13nCaF_Diln_I8ug5hEj5D3p_k7AUf62RrkP0UU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvu9f3DbFfPCskd-QV7UFJS22bkxb0_5w8zK-SOwoVuezcjOscm3Apw97v9Bo"
         },
         {
-          "url": "https://www.golfdigest.com/story/heres-prize-money-payout-for-dp-world-tour-2026-race-to-dubai-bonus-pool",
-          "title": "Here’s the prize money payout for the DP World Tour's 2026 Race to Dubai bonus pool",
-          "publisher": "Golf Digest",
+          "url": "https://www.zaochenbao.com/news/Chronicles/202611/1385459.html",
+          "title": "重磅打虎！王忠林被查 曾临危受命任武汉市委书记",
+          "publisher": "早晨报",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2exYDwaMKwG87VL0yNg4XzAIv4s_uLzaE9_yLzb8DzqQmhFXmBpKSAUwzNyY"
-        },
-        {
-          "url": "https://www.espn.com/golf/story/_/id/50461266/rory-mcilroy-boosts-bid-record-tying-race-dubai-title",
-          "title": "Rory McIlroy opens season finale with 69, best among Race to Dubai contenders",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIx7hnFWPqTl85rgnbdJDpHyWC95hqpm4_oTR1q3ijVa5ONvLnRozbqrXyMJk"
-        }
-      ]
-    },
-    {
-      "query": "miami vice stan switek actor",
-      "approx_searches": "100+",
-      "published_at": "2026-11-13T10:00:00Z",
-      "related_news_urls": [
-        "https://people.com/miami-vice-star-michael-talbott-makes-rare-appearance-12251274",
-        "https://www.bollywoodshaadis.com/articles/michael-talbott-looks-unrecognizable-86592"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjXPQNuJytWPozQO5qPjJymLwKAxDz2GYfFyVzb7GhgawVL1FG5pz4Hk96xhQ",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/miami-vice-star-michael-talbott-makes-rare-appearance-12251274",
-          "title": "‘Miami Vice’ Star Michael Talbott, 71, Unrecognizable as He Makes Rare Appearance",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjXPQNuJytWPozQO5qPjJymLwKAxDz2GYfFyVzb7GhgawVL1FG5pz4Hk96xhQ"
-        },
-        {
-          "url": "https://www.bollywoodshaadis.com/articles/michael-talbott-looks-unrecognizable-86592",
-          "title": "Michael Talbott, 71, Looks Unrecognizable As 'Miami Vice' Star Makes Rare Appearance",
-          "publisher": "BollywoodShaadis",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0CdiL07rzMM3vP3Daj1rYuZMn4No1WvT-aeK7DGdkI6tLn1S0RaMgstlmTVE"
-        }
-      ]
-    },
-    {
-      "query": "gemini google",
-      "approx_searches": "50000+",
-      "published_at": "2026-11-13T09:50:00Z",
-      "related_news_urls": [
-        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
-        "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
-        "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgj5oJzDzDkaEqqWzrJumRosv1AIoQ7EsQUgFGMfDEGOcOLym5xBcByIvdtgc",
-      "image_credit": "blog.google",
-      "news": [
-        {
-          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
-          "title": "Introducing Gemini 4 Hydrogen for Agentic Workflows",
-          "publisher": "blog.google",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgj5oJzDzDkaEqqWzrJumRosv1AIoQ7EsQUgFGMfDEGOcOLym5xBcByIvdtgc"
-        },
-        {
-          "url": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
-          "title": "Google rolls out Gemini 4 Hydrogen, finally replacing 3.8 Flash",
-          "publisher": "Ars Technica",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQakc8yh2wqHk6ARF8mjiBUmms78zY5hHAh9UwCMT7inSguJs_505OIvZGT4y0"
-        },
-        {
-          "url": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/",
-          "title": "Google's latest Search upgrade promises better answers to your most complicated questions",
-          "publisher": "TechCrunch",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTn0Y9dmCql-VGmH2DIQz27JJmBPJp5gaEZ1GmOgMbXJ9eKFPTUvtK3Yf5znes"
-        }
-      ]
-    },
-    {
-      "query": "starship flight 15",
-      "approx_searches": "100+",
-      "published_at": "2026-11-13T09:50:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/12/science/spacex-starship-ship-catch-attempt",
-        "https://www.space.com/space-exploration/launches-spacecraft/spacex-launching-historic-double-catch-starship-test-flight-today-watch-it-live",
-        "https://abcnews.com/US/spacex-starship-flight-15-major-step-full-rocket/story?id=138053402"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7wd2UBr_9-aOuy-nyn_ZlNxoaS7tL6Q1WZz4kDzrqGOF-Czf8ii1ZHwgHllY",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/12/science/spacex-starship-ship-catch-attempt",
-          "title": "SpaceX’s next move is chasing the unprecedented ‘holy grail’ of rocketry. Here’s what’s at stake",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7wd2UBr_9-aOuy-nyn_ZlNxoaS7tL6Q1WZz4kDzrqGOF-Czf8ii1ZHwgHllY"
-        },
-        {
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-launching-historic-double-catch-starship-test-flight-today-watch-it-live",
-          "title": "Watch SpaceX attempt a historic Starship launch and double-catch landing today (Nov. 13)",
-          "publisher": "Space",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2k_gr7N4znsc-2eP1UGLeUgWvorxhiRdEO7f2kFVUgV8JHYinb5IHdoDT2mg"
-        },
-        {
-          "url": "https://abcnews.com/US/spacex-starship-flight-15-major-step-full-rocket/story?id=138053402",
-          "title": "SpaceX Starship Flight 15 could be a major step toward full rocket reusability and cheaper missions",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGh13SHO-UqvR6T7qzlveuP4qr6UxZmNGzD60bMzhnTF6GmMe_xDSpZ7ijHMI"
-        }
-      ]
-    },
-    {
-      "query": "matt smith",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T09:40:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/theater/news/adolescence-writer-the-humans-house-of-the-dragon-matt-smith-1236944987/",
-        "https://www.broadwayworld.com/article/Matt-Smith-Will-Lead-World-Premiere-of-THE-HUMANS-in-the-West-End-20261111",
-        "https://www.londontheatre.co.uk/theatre-news/news/matt-smith-to-star-in-jack-thorne-adaptation-of-the-humans-in-2027"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCbfGq94qAyj_ETQD2LIdKff3-n5up3iMFpPdH0MkCA4T-OfhTWTsrAUg1DJ0",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/theater/news/adolescence-writer-the-humans-house-of-the-dragon-matt-smith-1236944987/",
-          "title": "'Adolescence' Writer's 'The Humans' Stars 'House of the Dragon' Actor",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCbfGq94qAyj_ETQD2LIdKff3-n5up3iMFpPdH0MkCA4T-OfhTWTsrAUg1DJ0"
-        },
-        {
-          "url": "https://www.broadwayworld.com/article/Matt-Smith-Will-Lead-World-Premiere-of-THE-HUMANS-in-the-West-End-20261111",
-          "title": "Matt Smith Will Lead World Premiere of THE HUMANS in the West End",
-          "publisher": "BroadwayWorld",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJgpdswEJmHpoDaA7xBOWDr3b3pEyTBRrrCkVX2YSJwycoA7jJAgr4zBKTXkk"
-        },
-        {
-          "url": "https://www.londontheatre.co.uk/theatre-news/news/matt-smith-to-star-in-jack-thorne-adaptation-of-the-humans-in-2027",
-          "title": "Matt Smith to star in Jack Thorne adaptation of 'The Humans' in 2027",
-          "publisher": "London Theatre",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeeqajc9uXalBLQAYiCqwGozpN5eQHi1XTwCuDSGkm8-n0Tja3OZVR-_hVmWk"
-        }
-      ]
-    },
-    {
-      "query": "school closings",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T09:20:00Z",
-      "related_news_urls": [
-        "https://www.winknews.com/news/historic-tice-orangewood-schools-in-lee-county-could-close/article_2ca9c4c1-e141-44f2-abea-746a60526bb1.html",
-        "https://www.gulfcoastnewsnow.com/article/lee-county-school-closed-tice-orangewood-elementary/74416158",
-        "https://www.wgcu.org/top-story/2026-11-12/school-district-of-lee-county-hopes-to-close-two-elementary-schools-after-this-year"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Z_AiQNmgnLGrYVdobz_H7UzBar2yFLRa5zSQng1UHkEMJPHHT8U9IWimbFU",
-      "image_credit": "WINK News",
-      "news": [
-        {
-          "url": "https://www.winknews.com/news/historic-tice-orangewood-schools-in-lee-county-could-close/article_2ca9c4c1-e141-44f2-abea-746a60526bb1.html",
-          "title": "Historic Tice, Orangewood schools in Lee County could close",
-          "publisher": "WINK News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Z_AiQNmgnLGrYVdobz_H7UzBar2yFLRa5zSQng1UHkEMJPHHT8U9IWimbFU"
-        },
-        {
-          "url": "https://www.gulfcoastnewsnow.com/article/lee-county-school-closed-tice-orangewood-elementary/74416158",
-          "title": "Lee County school district considers closing two schools amid budget cuts",
-          "publisher": "Gulf Coast News and Weather",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXVtp4auFGol7j2d8EnnFUoikyX8QMnK2kmQf1eMarv5xYsPlR6TY_pYsBP24"
-        },
-        {
-          "url": "https://www.wgcu.org/top-story/2026-11-12/school-district-of-lee-county-hopes-to-close-two-elementary-schools-after-this-year",
-          "title": "School District of Lee County plans to close two elementary schools in 2027",
-          "publisher": "WGCU",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjzWVZvOZ1kZxjo4rtvhqm7V6KZfhqKj6zBBkvn3ohshpEw_B8NIljCQL6ta0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStU15mc0LqacHLyOGIP89Gv6OmknNEz2jZ95co3xA8jqPAZOH1Pvk4-NpPoKU"
         }
       ]
     }
