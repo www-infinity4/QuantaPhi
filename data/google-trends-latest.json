@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T13:31:21.517624Z",
+  "checked_at": "2026-11-13T14:01:32.698783Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "alejandro tabilo",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T13:10:00Z",
+      "query": "taylor swift",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-13T13:40:00Z",
       "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/2f0b0322-2901-476b-b46a-bf4930e53c46/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/bfc9c2e0-4f35-43c0-b277-ec60e009aa43/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/5e97adbf-5549-4e90-a7df-ba40127a6a5b/"
+        "https://www.cleveland.com/news/2026/11/taylor-swift-travis-kelces-bratenahl-landscaping-plan-approved-despite-neighbors-dissent.html",
+        "https://pagesix.com/2026/11/11/entertainment/taylor-swift-and-travis-kelces-ohio-neighbors-make-brutal-divorce-prediction-at-heated-town-meeting-over-landscape-plans/",
+        "https://www.beaconjournal.com/story/news/2026/11/11/taylor-swift-travis-kelce-bratenahl-ohio-home-plans-meeting-neighbors-vocal/92723006007/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwjeJDNtQkoglcP17Zs8kDMPVbcS2k7Wk_JL7k2oE8MGku1UZF-UZj1PuqAA4",
-      "image_credit": "Robinhood",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTA-Rka4SExnHlgxckTObTLeir3NaTxJTTlzIs3aiWt5dUnXRkCApPRyBqN5hs",
+      "image_credit": "Cleveland.com",
       "news": [
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/2f0b0322-2901-476b-b46a-bf4930e53c46/",
-          "title": "November 15, 2026: Jessica Pegula vs Mirra Andreeva Prediction Market",
-          "publisher": "Robinhood",
+          "url": "https://www.cleveland.com/news/2026/11/taylor-swift-travis-kelces-bratenahl-landscaping-plan-approved-despite-neighbors-dissent.html",
+          "title": "Taylor Swift, Travis Kelce’s Bratenahl landscaping plan approved despite neighbors’ dissent",
+          "publisher": "Cleveland.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwjeJDNtQkoglcP17Zs8kDMPVbcS2k7Wk_JL7k2oE8MGku1UZF-UZj1PuqAA4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTA-Rka4SExnHlgxckTObTLeir3NaTxJTTlzIs3aiWt5dUnXRkCApPRyBqN5hs"
         },
         {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/bfc9c2e0-4f35-43c0-b277-ec60e009aa43/",
-          "title": "November 11, 2026: Carole Monnet vs Polona Hercog Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_ir327pUEu5_6dQBqTGLUeq0qh_19ljOSabOEVaLDNr0EaqVgSHEqdb4Tt1Q"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/5e97adbf-5549-4e90-a7df-ba40127a6a5b/",
-          "title": "November 11, 2026: Elizabeth Mandlik vs Lucia Bronzetti Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTX_iUlfqt2OTmNVjcu3PcCC_AHEq_-SEDVZkZ1vRYO8CC4Pn-8VLGcz5GEepI"
-        }
-      ]
-    },
-    {
-      "query": "steve miner",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T13:10:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/new-friday-the-13th-movie-steve-miner-1237220585/",
-        "https://www.thewrap.com/creative-content/movies/friday-the-13th-producer-robbie-barsamian-interview-new-movie/",
-        "https://www.dreadcentral.com/news/597607/jason-returns-with-steve-miner-directing-a-new-jason-universe-film/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5CYg9NKNDRO0tu5IVyVDRBTloZhFLyHnppESyx6js4Knl0OoF7QqWC5F-B1c",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/new-friday-the-13th-movie-steve-miner-1237220585/",
-          "title": "'Friday The 13th' New Movie In Works; Steve Miner Directing",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5CYg9NKNDRO0tu5IVyVDRBTloZhFLyHnppESyx6js4Knl0OoF7QqWC5F-B1c"
-        },
-        {
-          "url": "https://www.thewrap.com/creative-content/movies/friday-the-13th-producer-robbie-barsamian-interview-new-movie/",
-          "title": "Producer Robbie Barsamian Talks New ‘Friday the 13th’ Entry and Getting Jason Back on the Big Screen | Exclusive",
-          "publisher": "TheWrap",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPecFtUC48kmyQBJNg-GQa6dunaBWsG-6Rf2ED-2XI7M3IYpyit1lI8H2fH6M"
-        },
-        {
-          "url": "https://www.dreadcentral.com/news/597607/jason-returns-with-steve-miner-directing-a-new-jason-universe-film/",
-          "title": "Jason Returns With Steve Miner Directing a New Jason Universe Film",
-          "publisher": "Dread Central",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFhjI-m0wO9byhwZ1xLcK8IrzigSZIdktxFKEZEfK6BQZxqrz2NG61TWrrB3s"
-        }
-      ]
-    },
-    {
-      "query": "ppi",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T13:10:00Z",
-      "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-12/stock-market-today-dow-s-p-live-updates",
-        "https://www.wsj.com/finance/stocks/stock-futures-lower-as-investors-look-to-u-s-inflation-data-5b1b5988",
-        "https://www.barrons.com/livecoverage/stock-market-news-today-111326/card/why-a-crazy-week-for-markets-faces-more-even-volatility-GtvKTGjdpoQTBLiLPXKv"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSexg-9JgvEMtF0f_qgew5XZBON2UX4oM_sPrN5etOhcW7KH-mWNzZ9kS_v1H8",
-      "image_credit": "Bloomberg.com",
-      "news": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-12/stock-market-today-dow-s-p-live-updates",
-          "title": "US Stocks Drift Before Inflation Test of Fed Bets: Markets Wrap",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSexg-9JgvEMtF0f_qgew5XZBON2UX4oM_sPrN5etOhcW7KH-mWNzZ9kS_v1H8"
-        },
-        {
-          "url": "https://www.wsj.com/finance/stocks/stock-futures-lower-as-investors-look-to-u-s-inflation-data-5b1b5988",
-          "title": "Stock Futures Lower as Investors Look to U.S. Inflation Data",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNonaw7qVTVf5XBtmHpZaHbbQj2zalVlDHo7fb3V0ZNOzDdvMVY076mRzeu_4"
-        },
-        {
-          "url": "https://www.barrons.com/livecoverage/stock-market-news-today-111326/card/why-a-crazy-week-for-markets-faces-more-even-volatility-GtvKTGjdpoQTBLiLPXKv",
-          "title": "Why a Crazy Week for Markets Faces More Even Volatility",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTcPTbuIn8cS5_mRZbrYgtfqpNlai5sbuGRESylJX8ci4I6ox4mG5twVG6gFvg"
-        }
-      ]
-    },
-    {
-      "query": "good morning america",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T13:00:00Z",
-      "related_news_urls": [
-        "https://abcnews.com/GMA/Shop/gma-deals-steals-gifting/story?id=138082156",
-        "https://www.goodmorningamerica.com/shop/story/exclusive-gma-digital-deals-steals-holiday-gift-guide-137907923",
-        "https://abc7.com/post/abc-secret-savings-best-deals-sales-november-2026/20025029/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRu4BBxz3V-NfHfr0lGzFmvgOJvDrX5JYm6MtlXyx7bGg_hoFRhAB_Lyg8cJ3I",
-      "image_credit": "ABC News - Breaking News, Latest News and Videos",
-      "news": [
-        {
-          "url": "https://abcnews.com/GMA/Shop/gma-deals-steals-gifting/story?id=138082156",
-          "title": "'GMA' Deals & Steals for gifting",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRu4BBxz3V-NfHfr0lGzFmvgOJvDrX5JYm6MtlXyx7bGg_hoFRhAB_Lyg8cJ3I"
-        },
-        {
-          "url": "https://www.goodmorningamerica.com/shop/story/exclusive-gma-digital-deals-steals-holiday-gift-guide-137907923",
-          "title": "Exclusive 'GMA' digital Deals & Steals Holiday Gift Guide",
-          "publisher": "Good Morning America",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTESPp205O4K-ihDGW8RqKwBlp21zJ649mSX57wGrPKKGHio6DKsQco47WSUqY"
-        },
-        {
-          "url": "https://abc7.com/post/abc-secret-savings-best-deals-sales-november-2026/20025029/",
-          "title": "ABC Secret Savings: Best deals and sales for November 2026",
-          "publisher": "ABC7 Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTN3g6L__aDzSpuNTFBcr3CnOoOUKJHs2OQpcHtaKpK2Tc1emoCX6RuIdBAEg4"
-        }
-      ]
-    },
-    {
-      "query": "aliyah boston",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T13:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/aliyah-boston-fuels-speculation-over-140000827.html",
-        "https://www.essentiallysports.com/wnba-basketball-news-i-just-dont-see-how-stephanie-white-can-return-wnba-broadcaster-questions-fever-hcs-future-as-aaliyah-boston-stays-silent/",
-        "https://sports.ndtv.com/us/nba/robin-lundberg-questions-stephanie-white-s-future-as-indiana-fever-coach-after-front-office-shake-up-12319278"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTn7VwN8icSgitmW82tKY_ljVcjzJy3cYERW5hGJOycXHfRmVgA-J5iPDa1tok",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/aliyah-boston-fuels-speculation-over-140000827.html",
-          "title": "Aliyah Boston fuels speculation over Stephanie White’s Indiana Fever future",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTn7VwN8icSgitmW82tKY_ljVcjzJy3cYERW5hGJOycXHfRmVgA-J5iPDa1tok"
-        },
-        {
-          "url": "https://www.essentiallysports.com/wnba-basketball-news-i-just-dont-see-how-stephanie-white-can-return-wnba-broadcaster-questions-fever-hcs-future-as-aaliyah-boston-stays-silent/",
-          "title": "\"I Just Don't See How Stephanie White Can Return\": WNBA Broadcaster Questions Fever HC's Future as Aliyah Boston Stays Silent",
-          "publisher": "EssentiallySports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXFoyW-5-MTPMGED_5ayVYDUwdFEtoetFlU2wTxvlXo-tjnFHfiEfi-G58a1I"
-        },
-        {
-          "url": "https://sports.ndtv.com/us/nba/robin-lundberg-questions-stephanie-white-s-future-as-indiana-fever-coach-after-front-office-shake-up-12319278",
-          "title": "Robin Lundberg Questions Stephanie White’s Future As Indiana Fever Coach After Front Office Shake-Up",
-          "publisher": "NDTV Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkw0J3OPReItXDepGN6z4H97z5WutYhf-XeWPEdGgyyoLuQtDch6_job44F8A"
-        }
-      ]
-    },
-    {
-      "query": "paraguay vs singapore",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T12:50:00Z",
-      "related_news_urls": [
-        "https://as.com/futbol/internacional/singapur-paraguay-en-vivo-amistoso-internacional-hoy-en-directo-f202611-d/",
-        "https://www.vssports.com.py/versus/2026/11/12/gustavo-alfaro-apunta-a-la-necesidad-de-sangre-nueva-en-la-albirroja",
-        "https://www.adndigital.com.py/plantel-completo-para-encarar-el-primer-desafio-en-singapur/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8_rzM4jB8qwuTy_v3bz5A06-yATmmlccJxUjHnDUYin4T6jjoFt52KKaNF6Q",
-      "image_credit": "Diario AS",
-      "news": [
-        {
-          "url": "https://as.com/futbol/internacional/singapur-paraguay-en-vivo-amistoso-internacional-hoy-en-directo-f202611-d/",
-          "title": "Singapur - Paraguay, en vivo: Amistoso internacional, hoy en directo",
-          "publisher": "Diario AS",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8_rzM4jB8qwuTy_v3bz5A06-yATmmlccJxUjHnDUYin4T6jjoFt52KKaNF6Q"
-        },
-        {
-          "url": "https://www.vssports.com.py/versus/2026/11/12/gustavo-alfaro-apunta-a-la-necesidad-de-sangre-nueva-en-la-albirroja",
-          "title": "Gustavo Alfaro apunta a la necesidad de sangre nueva en la Albirroja",
-          "publisher": "VS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTrck8qdNhSz6ABqM7WXfn0758_8U-GinXatLYh3jx2tOxLTAwG87_XGWM73A"
-        },
-        {
-          "url": "https://www.adndigital.com.py/plantel-completo-para-encarar-el-primer-desafio-en-singapur/",
-          "title": "Plantel completo para encarar el primer desafío en Singapur",
-          "publisher": "ADN Paraguayo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSiKtAFtpjAAMdJfQuKDGtNDdT1k3IMDGvEFtK3me7FTpw8CHowBgIAv0WFTug"
-        }
-      ]
-    },
-    {
-      "query": "candace cameron",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T12:50:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/de/news/ni66108292/?ref_=nwc_art_perm",
-        "https://www.yahoo.com/entertainment/tv/articles/full-house-star-candace-cameron-022607070.html",
-        "https://pagesix.com/2026/11/07/entertainment/candace-cameron-bure-sets-surprise-return-to-the-view/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNy62V1XPqIo1YRvKzodJowypbkZ0Z9Hr8GHn-wK0148Rau9SzRPp_KeBNsK8",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/de/news/ni66108292/?ref_=nwc_art_perm",
-          "title": "Candace Cameron Bure to Avoid This Subject in Return to ‘The View’",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNy62V1XPqIo1YRvKzodJowypbkZ0Z9Hr8GHn-wK0148Rau9SzRPp_KeBNsK8"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/full-house-star-candace-cameron-022607070.html",
-          "title": "‘Full House’ Star Candace Cameron Bure Is Returning to ‘The View’ After Previously Turning Down an Invitation",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3r5LKnzpVWa080O8Pxqet5kWCZk3vWa4E-P1eWZwXSuzIF5F_jyEYs2ZNXHI"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/07/entertainment/candace-cameron-bure-sets-surprise-return-to-the-view/",
-          "title": "Candace Cameron Bure sets surprise return to ‘The View’ after previously turning down invite",
+          "url": "https://pagesix.com/2026/11/11/entertainment/taylor-swift-and-travis-kelces-ohio-neighbors-make-brutal-divorce-prediction-at-heated-town-meeting-over-landscape-plans/",
+          "title": "Exclusive | Taylor Swift and Travis Kelce’s Ohio neighbors make brutal divorce prediction at heated town meeting over landscape plans",
           "publisher": "Page Six",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCq6Mwl0ZspwNt0B7EL9ftnETSJGWVYRyJjw6ArqGEmlNK1ymwXbC1gWP4y9U"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVy6dYMrRKGM7f9o0Bjd8InoBUDdEmIhYyNzzrHlVT1BtRzk7PPNlNiDg749o"
+        },
+        {
+          "url": "https://www.beaconjournal.com/story/news/2026/11/11/taylor-swift-travis-kelce-bratenahl-ohio-home-plans-meeting-neighbors-vocal/92723006007/",
+          "title": "Kelce, Swift get Ohio mansion plans approved despite some neighbors' outcry",
+          "publisher": "Akron Beacon Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK-7We0lT2BArJYHVRe2L5mnP_lPdwoOCWygPxPzBFL4T3VZYA7E5n5D9n82A"
         }
       ]
     },
     {
-      "query": "singapore vs paraguay",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T12:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50461054/paraguay-brazil-ties-singapore-redemption-malaysia-humiliation",
-        "https://www.yardbarker.com/general_sports/articles/singapore_vs_paraguay_lineups_preview/s1_17615_44555414",
-        "https://www.wvnews.com/sports/pro/singapore-paraguay-soccer/image_24dd16ce-f365-5f54-bb68-937ca2d980b7.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXKDLfexpSOZaG1Eiybc1O-LD9aDInrZ2M5As2nJsSp3Kr26Obi5CzaAXnmro",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50461054/paraguay-brazil-ties-singapore-redemption-malaysia-humiliation",
-          "title": "Glamour Paraguay, Brazil ties offer Singapore more than just chance for redemption after Malaysia humiliation",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXKDLfexpSOZaG1Eiybc1O-LD9aDInrZ2M5As2nJsSp3Kr26Obi5CzaAXnmro"
-        },
-        {
-          "url": "https://www.yardbarker.com/general_sports/articles/singapore_vs_paraguay_lineups_preview/s1_17615_44555414",
-          "title": "Singapore vs. Paraguay Lineups, Preview",
-          "publisher": "Yardbarker",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTY1RjI6FERQr7ZvnjLSEu2V2B_MiSNTV_6Ng49DbKadceZccM355TJhifche4"
-        },
-        {
-          "url": "https://www.wvnews.com/sports/pro/singapore-paraguay-soccer/image_24dd16ce-f365-5f54-bb68-937ca2d980b7.html",
-          "title": "Singapore Paraguay Soccer",
-          "publisher": "WV News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGkeIlQHwZZzYOEcuwJzrMfp8oTqy-eDl3lM8ypwHJIYJMYUO9rq6bXWF6KAM"
-        }
-      ]
-    },
-    {
-      "query": "cillian murphy",
-      "approx_searches": "100+",
-      "published_at": "2026-11-13T12:40:00Z",
-      "related_news_urls": [
-        "https://www.esquire.com/uk/culture/film/a74409453/tom-hardy-cillian-murphy-mind-bending-heist-drama-netflix/",
-        "https://www.irishstar.com/culture/entertainment/netflix-inception-streaming-cillian-murphy-37848499",
-        "https://www.hellomagazine.com/film/933620/tom-hardy-best-performance-inception-on-netflix/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjao61ITpvPD9NoesIkujMRQJxjdMW1X_qCNyl8-mAHoWifnmmZldzTgfFFZI",
-      "image_credit": "Esquire",
-      "news": [
-        {
-          "url": "https://www.esquire.com/uk/culture/film/a74409453/tom-hardy-cillian-murphy-mind-bending-heist-drama-netflix/",
-          "title": "\"More Than a Sci-Fi\": Tom Hardy & Cillian Murphy's \"Mind-Bending\" Heist Drama is on Netflix Now",
-          "publisher": "Esquire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjao61ITpvPD9NoesIkujMRQJxjdMW1X_qCNyl8-mAHoWifnmmZldzTgfFFZI"
-        },
-        {
-          "url": "https://www.irishstar.com/culture/entertainment/netflix-inception-streaming-cillian-murphy-37848499",
-          "title": "Best Picture-nominated thriller Inception starring Cillian Murphy is now streaming on Netflix",
-          "publisher": "Irish Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRv7HtydO0ojRGWOdaK6YKHh2vZAmHKLbGLdEla2iHSS5OLSAYLfDdBSBDEky0"
-        },
-        {
-          "url": "https://www.hellomagazine.com/film/933620/tom-hardy-best-performance-inception-on-netflix/",
-          "title": "'Tom Hardy's best performance': This Oscar-winning thriller is your Netflix weekend watch",
-          "publisher": "HELLO!",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMTPLLX5iDxDjQr-DahnovCjc83b6tXqKyY85RH3ZMLx84Ok2wqlArjUG_wuQ"
-        }
-      ]
-    },
-    {
-      "query": "kim jong un flag redesign",
+      "query": "anthony mackie",
       "approx_searches": "500+",
-      "published_at": "2026-11-13T12:30:00Z",
+      "published_at": "2026-11-13T13:40:00Z",
       "related_news_urls": [
-        "https://www.wsj.com/world/asia/kim-jong-un-remakes-north-koreas-flag-ditching-soviet-era-version-c65efcfe",
-        "https://www.nknews.org/2026/11/north-korea-modifies-national-flag-in-break-with-decades-old-design/",
-        "https://www.koreajoongangdaily.com/korea/north-korea-unveils-revised-constitution-reflecting-two-hostile-states-policy/12967144"
+        "https://www.theguardian.com/tv-and-radio/2026/nov/13/12-12-12-review-anthony-mackie-jamie-dornan-heist",
+        "https://pagesix.com/2026/11/12/entertainment/where-to-watch-jamie-dornan-in-new-12-12-12-series-for-free/",
+        "https://www.yahoo.com/entertainment/tv/articles/heist-thriller-12-12-12-120021119.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu6k61h0yc0PkUS4OiGxmJeh0ZnBgo56zZv6k8gKhHyNbw6Um7z4sXLeVmlDk",
-      "image_credit": "WSJ",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPjhGPI7JthDlZckMuQIGWkwD7GUuO0Dfc-YEuQPrfX7yJ1gi6YCU_33sbdkk",
+      "image_credit": "The Guardian",
       "news": [
         {
-          "url": "https://www.wsj.com/world/asia/kim-jong-un-remakes-north-koreas-flag-ditching-soviet-era-version-c65efcfe",
-          "title": "Kim Jong Un Remakes North Korea’s Flag, Ditching Soviet-Era Version",
-          "publisher": "WSJ",
+          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/13/12-12-12-review-anthony-mackie-jamie-dornan-heist",
+          "title": "12 12 12 review – Anthony Mackie and Jamie Dornan’s super fun heist hunt",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu6k61h0yc0PkUS4OiGxmJeh0ZnBgo56zZv6k8gKhHyNbw6Um7z4sXLeVmlDk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPjhGPI7JthDlZckMuQIGWkwD7GUuO0Dfc-YEuQPrfX7yJ1gi6YCU_33sbdkk"
         },
         {
-          "url": "https://www.nknews.org/2026/11/north-korea-modifies-national-flag-in-break-with-decades-old-design/",
-          "title": "North Korea modifies national flag in break with decades-old design",
-          "publisher": "NK News",
+          "url": "https://pagesix.com/2026/11/12/entertainment/where-to-watch-jamie-dornan-in-new-12-12-12-series-for-free/",
+          "title": "Where to watch Jamie Dornan, Anthony Mackie in ‘12 12 12’ series for free",
+          "publisher": "Page Six",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpR85K3Crwk-vGmo1_KU8TrwZ3XSbJTHQEsvkKbaUD-42By4b7ubKAFFhvTBk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4n6Wmej-7xyfukblIf-eCeJBt0wjxZkgdwnHfrp7FEMo3jFimPJ3i4XwMDEY"
         },
         {
-          "url": "https://www.koreajoongangdaily.com/korea/north-korea-unveils-revised-constitution-reflecting-two-hostile-states-policy/12967144",
-          "title": "North Korea unveils revised constitution reflecting 'two hostile states' policy",
-          "publisher": "Korea JoongAng Daily",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/heist-thriller-12-12-12-120021119.html",
+          "title": "Heist Thriller ’12 12 12′ & ‘Being Heumann’ on Apple TV, Jessica Chastain in ‘Heartland,’ Marg Helgenberger Visits ‘Boston’",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxa48MSnc2DA2jpO_kT1yYx-wwi7E3Jv9jTOXW38WLAMkOFAAh0w6xwTrM5iI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOTEN8-5lLkEhOTDkMS_dmZTeMHCKyYJ_XYFiF_1ZtiQzFkyDyJl8cf7KhdvE"
+        }
+      ]
+    },
+    {
+      "query": "good morning america taylor swift",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T13:40:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/music/new-albums/articles/taylor-swift-handwritten-note-fans-141027590.html",
+        "https://minutemirror.com.pk/taylor-swift-to-appear-at-critics-choice-virtual-press-conference-amid-oscar-buzz-659342/",
+        "https://www.geo.tv/latest/690946-taylor-swift-causes-fan-spiral-after-good-morning-america-promo"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrNoV3NofoolhaGQjctaTqjsAiWN4aFMiWiUCzM0oAlhZrfULoWc8iFUlYU2g",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/music/new-albums/articles/taylor-swift-handwritten-note-fans-141027590.html",
+          "title": "Taylor Swift’s New Handwritten Note Has Fans Speculating About a Christmas Drop...or a Surprise Album",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrNoV3NofoolhaGQjctaTqjsAiWN4aFMiWiUCzM0oAlhZrfULoWc8iFUlYU2g"
+        },
+        {
+          "url": "https://minutemirror.com.pk/taylor-swift-to-appear-at-critics-choice-virtual-press-conference-amid-oscar-buzz-659342/",
+          "title": "Taylor Swift to appear at Critics Choice virtual press conference amid Oscar buzz",
+          "publisher": "Minute Mirror",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShzuCXlhxxqPSupLQND7Id7nEjhH7Jk3P4DSy2TuHNzIimiPxe4kjidwhYtY0"
+        },
+        {
+          "url": "https://www.geo.tv/latest/690946-taylor-swift-causes-fan-spiral-after-good-morning-america-promo",
+          "title": "Taylor Swift causes fan spiral after 'Good Morning America' promo",
+          "publisher": "Geo News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQISe0YJV3B01C_3IS06ebIayvtw2Lv4AnkZcJGjlUTwnyz_AA733NDJkiqyWM"
+        }
+      ]
+    },
+    {
+      "query": "taylor swift gma",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-13T13:30:00Z",
+      "related_news_urls": [
+        "https://www.eonline.com/news/1438024/taylor-swift-is-not-performing-in-dolly-parton-tribute-at-cma-awards-2026",
+        "https://www.yahoo.com/entertainment/music/articles/taylor-swift-dolly-parton-tribute-080522794.html",
+        "https://sports.ndtv.com/us/nfl/taylor-swift-fans-receive-disappointing-cmas-news-before-kansas-city-chiefs-atlanta-falcons-game-12317124"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSX3vYNxHNc0xG2UXHQJFqkwQtPeAxyjvZdLGP0HPTLbRHnzhPAkcn_mqQDSac",
+      "image_credit": "E! News",
+      "news": [
+        {
+          "url": "https://www.eonline.com/news/1438024/taylor-swift-is-not-performing-in-dolly-parton-tribute-at-cma-awards-2026",
+          "title": "Is Taylor Swift Participating in the Dolly Parton Tribute at CMA Awards 2026? The Truth",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSX3vYNxHNc0xG2UXHQJFqkwQtPeAxyjvZdLGP0HPTLbRHnzhPAkcn_mqQDSac"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/music/articles/taylor-swift-dolly-parton-tribute-080522794.html",
+          "title": "Taylor Swift’s Dolly Parton Tribute Rumor at CMA Hits a Snag — Source",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrYSC0GtazGgIf91L0U2-bA8YWUcPpM3YI94n3U4RlBlY0WoA016TRAn8Whws"
+        },
+        {
+          "url": "https://sports.ndtv.com/us/nfl/taylor-swift-fans-receive-disappointing-cmas-news-before-kansas-city-chiefs-atlanta-falcons-game-12317124",
+          "title": "Taylor Swift Fans Receive Disappointing CMAs News Before Kansas City Chiefs-Atlanta Falcons Game",
+          "publisher": "NDTV Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0nxE6n086AbtvKsv77pkUoO-L5ykNHY4_dTNHlpVtQQk5DxmLDUG8k4yogVk"
+        }
+      ]
+    },
+    {
+      "query": "christian bale",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T13:30:00Z",
+      "related_news_urls": [
+        "https://3dvf.com/en/spielberg-s-forgotten-war-film-launched-christian-bale-and-ben-stiller-and-it-secretly-birthed-tropi/",
+        "https://people.com/christian-bale-says-he-can-see-daughter-luka-21-directing-him-one-day-12240202",
+        "https://www.eonline.com/news/1437862/christian-bale-details-his-sibi-blazics-daughter-lukas-career-as-model"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2IY6IfjOpOb-fZ5c7xhNNfpkDXocqvyaillJ-kygCNGnzIJbdRwhjZMRZAg4",
+      "image_credit": "3DVF",
+      "news": [
+        {
+          "url": "https://3dvf.com/en/spielberg-s-forgotten-war-film-launched-christian-bale-and-ben-stiller-and-it-secretly-birthed-tropi/",
+          "title": "Spielberg's forgotten war film launched Christian Bale AND Ben Stiller, and it secretly birthed Tropic Thunder",
+          "publisher": "3DVF",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2IY6IfjOpOb-fZ5c7xhNNfpkDXocqvyaillJ-kygCNGnzIJbdRwhjZMRZAg4"
+        },
+        {
+          "url": "https://people.com/christian-bale-says-he-can-see-daughter-luka-21-directing-him-one-day-12240202",
+          "title": "Christian Bale Says He Can See Daughter Luka, 21, Directing Him One Day: ‘So Bloody Proud of Her’",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJw0GBWIbGHr00cHf615-fPYyigDTF3jQZHV7foOn1AB9NVyW2PCrF1DSkB0A"
+        },
+        {
+          "url": "https://www.eonline.com/news/1437862/christian-bale-details-his-sibi-blazics-daughter-lukas-career-as-model",
+          "title": "Christian Bale Shares Rare Insight Into His Daughter Luka's Modeling and Directing Career",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR90H3ZE3m5MRgAA-Lke-8rP-gyrLriuoUCQEkOdXWX9cSEMHjKcPMlFhpRLs"
+        }
+      ]
+    },
+    {
+      "query": "taylor swift announcement",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T13:30:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/articles/photo-taylor-swift-travis-kelce-142857088.html",
+        "https://www.kansascity.com/sports/spt-columns-blogs/for-petes-sake/article318040810.html",
+        "https://www.instyle.com/taylor-swift-poses-travis-kelce-red-sweater-hancock-county-humane-foundation-12249632"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBAzoDbmTQ8KchN6LbKy8xlC3MkPFLUeV5QdkB8RwBtxSwrtmH_siuJa-Rxrc",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/photo-taylor-swift-travis-kelce-142857088.html",
+          "title": "New Photo of Taylor Swift and Travis Kelce Reveals Surprising Details About Their Wedding",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBAzoDbmTQ8KchN6LbKy8xlC3MkPFLUeV5QdkB8RwBtxSwrtmH_siuJa-Rxrc"
+        },
+        {
+          "url": "https://www.kansascity.com/sports/spt-columns-blogs/for-petes-sake/article318040810.html",
+          "title": "West Virginia shelter reveals fun detail of Travis Kelce-Taylor Swift wedding",
+          "publisher": "Kansas City Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzeX9ODiZNxqWVRHadgPnd8_jNjaCWb437T9MRMUQOTx3MGeiwLq3n4Scj4TY"
+        },
+        {
+          "url": "https://www.instyle.com/taylor-swift-poses-travis-kelce-red-sweater-hancock-county-humane-foundation-12249632",
+          "title": "Taylor Swift Poses in Festive Red With Husband Travis Kelce for a Meaningful Cause",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmcRMDUEKt4HdDQZLRCIj1EtZU4JOQDA57ylzKnSbWjKh4g3kj0aDlRbv4Yv8"
+        }
+      ]
+    },
+    {
+      "query": "king charles",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T13:30:00Z",
+      "related_news_urls": [
+        "https://www.billboard.com/music/music-news/king-charles-elton-john-rocket-hour-special-apple-music-1236380210/",
+        "https://www.bbc.com/news/articles/c3qj5lnee5n0o",
+        "https://www.yahoo.com/entertainment/celebrity/royals/articles/king-charles-elton-john-interview-075441111.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReP-6rKEz4EonBmX6EEy5y28_ZkVpAvo1bgUhlqA1ncQFKuTYUSkU-xAccvTI",
+      "image_credit": "Billboard",
+      "news": [
+        {
+          "url": "https://www.billboard.com/music/music-news/king-charles-elton-john-rocket-hour-special-apple-music-1236380210/",
+          "title": "King Charles III Joining Elton John For ‘Rocket Hour With His Majesty The King’ Special on Apple Music",
+          "publisher": "Billboard",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReP-6rKEz4EonBmX6EEy5y28_ZkVpAvo1bgUhlqA1ncQFKuTYUSkU-xAccvTI"
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/c3qj5lnee5n0o",
+          "title": "King Charles appears on Sir Elton John's radio show",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNWbMrazEFMG-6cPBwFVbCd_nL_IBmjTtZbC2nAfUKTtu9dnnMf_n8Ej8pg9A"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/royals/articles/king-charles-elton-john-interview-075441111.html",
+          "title": "King Charles’ Elton John Interview Comes With an Unexpected Prince Harry Question — Report",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUkqFKCipiuyYcDkgBZMx-TOzTnnGN0eoHAtm-4yPk3Tp7VX3RbyrsXr9Un_o"
+        }
+      ]
+    },
+    {
+      "query": "economic calendar",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T13:30:00Z",
+      "related_news_urls": [
+        "https://seekingalpha.com/news/4671653-fridays-economic-calendar",
+        "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html",
+        "https://www.cnn.com/2026/11/13/economy/us-wholesale-inflation-ppi-october"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStejFtWbvbew8i1bFGDq_ih0-gnitD3esnprLu6g66GnLDWL3eNXEd5EAivHM",
+      "image_credit": "Seeking Alpha",
+      "news": [
+        {
+          "url": "https://seekingalpha.com/news/4671653-fridays-economic-calendar",
+          "title": "Friday’s Economic Calendar",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStejFtWbvbew8i1bFGDq_ih0-gnitD3esnprLu6g66GnLDWL3eNXEd5EAivHM"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html",
+          "title": "Wholesale prices rose 0.3% in October, putting annual rate at 6.5%, the highest in nearly four years",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcda_y_lRvNv4BGuE3JhTD28514j8Vc3KbjDO0wWGaRHnk2aQH7rSQHyrOXwA"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/13/economy/us-wholesale-inflation-ppi-october",
+          "title": "Wholesale inflation rose in October to highest annual rate in nearly four years",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSagPMWF3C_eNVJyph4i4DTgAYT_xNIvUEkFEF_DIkKzDctm3mp_DetxYeO3Q"
+        }
+      ]
+    },
+    {
+      "query": "gma",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T13:20:00Z",
+      "related_news_urls": [
+        "https://www.tvinsider.com/1302973/george-stephanopoulos-blushes-as-wife-ali-wentworth-dishes-on-home-life-gma/",
+        "https://people.com/george-stephanopoulos-ali-wentworth-25-years-marriage-good-morning-america-12249138",
+        "https://www.imdb.com/news/ni66106285/?ref_=nwc_art_perm"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjkPBGIbS84yQMqLYV-onZ1sd3zCyO-mGmVrE369TzyhWXCkpJhr058P6ddMo",
+      "image_credit": "TV Insider",
+      "news": [
+        {
+          "url": "https://www.tvinsider.com/1302973/george-stephanopoulos-blushes-as-wife-ali-wentworth-dishes-on-home-life-gma/",
+          "title": "'GMA's George Stephanopoulos Blushes as Wife Spills on Their Home Life",
+          "publisher": "TV Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjkPBGIbS84yQMqLYV-onZ1sd3zCyO-mGmVrE369TzyhWXCkpJhr058P6ddMo"
+        },
+        {
+          "url": "https://people.com/george-stephanopoulos-ali-wentworth-25-years-marriage-good-morning-america-12249138",
+          "title": "George Stephanopoulos and Ali Wentworth Mark 25 Years of Marriage on ‘GMA’",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4fQjI0wzNjUFmBI_vd5zXe8AMMa7vv7sNQv39sgCNJW9GOTnq_X8nwpk3sZA"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66106285/?ref_=nwc_art_perm",
+          "title": "‘GMA’s George Stephanopoulos Blushes as Wife Ali Wentworth Spills on Home Life",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTppCUioa_wKMyNzzof3_8PiGSovYcD-qnxThtV-xwQUzxFRykzB7d_p-3Mb7E"
+        }
+      ]
+    },
+    {
+      "query": "sam hartman",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-13T13:10:00Z",
+      "related_news_urls": [
+        "https://abc7ny.com/story/bachelor-season-30-feature-nfl-quarterback-sam-hartman/20038127/",
+        "https://sports.yahoo.com/nfl/breaking-news/article/ex-notre-dame-and-current-washington-commanders-qb-sam-hartman-to-be-the-next-bachelor-133028697.html",
+        "https://www.wsoctv.com/news/local/nfl-quarterback-charlotte-native-sam-hartman-is-set-lead-bachelor-season-30/5YLKD63I5NFBLMZP7CSBIXLCBI/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQjoQwKh4F9f9xHat6O9pSM7z4KZZSBKEX87_w-R_a__iHwnkbNv4SJJh5ntM",
+      "image_credit": "ABC7 New York",
+      "news": [
+        {
+          "url": "https://abc7ny.com/story/bachelor-season-30-feature-nfl-quarterback-sam-hartman/20038127/",
+          "title": "'The Bachelor' season 30 to feature NFL quarterback Sam Hartman",
+          "publisher": "ABC7 New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQjoQwKh4F9f9xHat6O9pSM7z4KZZSBKEX87_w-R_a__iHwnkbNv4SJJh5ntM"
+        },
+        {
+          "url": "https://sports.yahoo.com/nfl/breaking-news/article/ex-notre-dame-and-current-washington-commanders-qb-sam-hartman-to-be-the-next-bachelor-133028697.html",
+          "title": "Ex-Notre Dame and current Washington Commanders QB Sam Hartman to be the next 'Bachelor'",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3wI6qZcWFTTEdom_WoHODGIJhYB05CT0_ak7Vi9zaXnBREjRDFNOYKlZ72GE"
+        },
+        {
+          "url": "https://www.wsoctv.com/news/local/nfl-quarterback-charlotte-native-sam-hartman-is-set-lead-bachelor-season-30/5YLKD63I5NFBLMZP7CSBIXLCBI/",
+          "title": "NFL quarterback, Charlotte native Sam Hartman is set to lead ‘The Bachelor’ Season 30",
+          "publisher": "WSOC TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgWE9sk3Uw755DnCqPpnrG45QKK1VVywspmb7HJp6DFEgvzdvhOZdIDbXkd8c"
         }
       ]
     }
