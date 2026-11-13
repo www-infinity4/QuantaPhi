@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T02:31:16.285176Z",
+  "checked_at": "2026-11-13T03:01:41.867825Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "chris van hollen",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-13T02:10:00Z",
+      "query": "aj dybantsa",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-13T02:40:00Z",
       "related_news_urls": [
-        "https://www.nbcnews.com/politics/congress/sen-chris-van-hollen-says-will-challenge-sen-chuck-schumer-majority-le-rcna609100",
-        "https://www.ms.now/news/van-hollen-schumer-senate-majority-leader",
-        "https://www.politico.com/news/2026/11/11/chris-van-hollen-senate-leader-01160588"
+        "https://www.si.com/nba/wizards/aj-dybantsa-already-shown-why-wizards-made-him-first-pick-now-he-wants-more",
+        "https://lawlessrepublic.com/aj-dybantsa-five-word-response-put-his-strong-nba-start-into-perspective",
+        "https://www.fantasypros.com/nba/news/619039/aj-dybantsa-puts-up-21-points-loss-monday.php"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUWDrKk0QZ-01_L-GnTOwlrFWo4Gt919Z5LwkgRaxEernUrVXqS62k4glz5G4",
-      "image_credit": "NBC News",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-EsX8qGcL68tai9TvXd-LBv1h8681NSgTteNrD6arY3WmZuhX4Y02lCkZQE4",
+      "image_credit": "Sports Illustrated",
       "news": [
         {
-          "url": "https://www.nbcnews.com/politics/congress/sen-chris-van-hollen-says-will-challenge-sen-chuck-schumer-majority-le-rcna609100",
-          "title": "Sen. Chris Van Hollen says he will challenge Sen. Chuck Schumer for majority leader",
-          "publisher": "NBC News",
+          "url": "https://www.si.com/nba/wizards/aj-dybantsa-already-shown-why-wizards-made-him-first-pick-now-he-wants-more",
+          "title": "AJ Dybantsa Has Already Shown Why Wizards Made Him the First Pick. Now, He Wants More.",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUWDrKk0QZ-01_L-GnTOwlrFWo4Gt919Z5LwkgRaxEernUrVXqS62k4glz5G4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-EsX8qGcL68tai9TvXd-LBv1h8681NSgTteNrD6arY3WmZuhX4Y02lCkZQE4"
         },
         {
-          "url": "https://www.ms.now/news/van-hollen-schumer-senate-majority-leader",
-          "title": "Van Hollen launches challenge to Schumer for Senate majority leader",
-          "publisher": "MS NOW",
+          "url": "https://lawlessrepublic.com/aj-dybantsa-five-word-response-put-his-strong-nba-start-into-perspective",
+          "title": "AJ Dybantsa's five-word response put his strong NBA start into perspective",
+          "publisher": "Lawless Republic",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTofwgHkkAQFYaurW3uVzXbSyLBqfmfb11Tm5cYXD_14ER5uHuS5miSprW8hOo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbaCF5cDSnZyxne70-L5vwqbMd_P7pC-ZY1OtAwppYRJmsdPoKebyd-Tb77-g"
         },
         {
-          "url": "https://www.politico.com/news/2026/11/11/chris-van-hollen-senate-leader-01160588",
-          "title": "The new darling of the Democratic left is … Chris Van Hollen?",
-          "publisher": "Politico",
+          "url": "https://www.fantasypros.com/nba/news/619039/aj-dybantsa-puts-up-21-points-loss-monday.php",
+          "title": "AJ Dybantsa puts up 21 points in loss Monday",
+          "publisher": "FantasyPros",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpCfwKWJKbHZMO25Ec6xQADkJgR9qXZFgg9e8Aa_qLQmOHHEc2SYH-g3bLbbI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2WoZYuZLPIaRce3rGXZx7S7vTfDPvt8mUjQytDe2ZtHt7mgDM47hHElSyCwA"
         }
       ]
     },
     {
-      "query": "kyshawn george",
+      "query": "lamelo ball",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-13T02:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/hes-worth-300-million-hes-184849475.html",
+        "https://dunkingwithwolves.com/lamelo-ball-s-last-four-games-are-a-blueprint-for-success-without-anthony-edwards",
+        "https://www.dazn.com/en-US/news/basketball/timberwolves-reinventing-lamelo-ball-anthony-edwards/1ivq1n1b2989m1rthjimnr4sii"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXbW17PhtqSn2S7wRNhK3G8LsaRSQDTKEPvK6LD_SkLC1e8C6xDsmS0gEMCs0",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/hes-worth-300-million-hes-184849475.html",
+          "title": "\"He's worth $300 million and he's trying to learn\" - Ayo Dosunmu exposes the biggest misconception about LaMelo Ball's dedication",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXbW17PhtqSn2S7wRNhK3G8LsaRSQDTKEPvK6LD_SkLC1e8C6xDsmS0gEMCs0"
+        },
+        {
+          "url": "https://dunkingwithwolves.com/lamelo-ball-s-last-four-games-are-a-blueprint-for-success-without-anthony-edwards",
+          "title": "LaMelo Ball's last four games are a blueprint for success without Anthony Edwards",
+          "publisher": "Dunking with Wolves",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQynVdTiGv02PSvKEfeDQ_3E88w4vGAPjVHTIi3mzVC7dxtbCGz3ERtRZuKM_8"
+        },
+        {
+          "url": "https://www.dazn.com/en-US/news/basketball/timberwolves-reinventing-lamelo-ball-anthony-edwards/1ivq1n1b2989m1rthjimnr4sii",
+          "title": "Timberwolves are 'reinventing' offense in Anthony Edwards' absence",
+          "publisher": "DAZN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvTRJmNKQfPDhWwvsTxXxjxR8bgmQH5NSVMJJJprszFuOaNO6uAEY7kWCnnrs"
+        }
+      ]
+    },
+    {
+      "query": "aus vs eng",
       "approx_searches": "1000+",
-      "published_at": "2026-11-13T02:10:00Z",
+      "published_at": "2026-11-13T02:40:00Z",
       "related_news_urls": [
-        "https://www.washingtonpost.com/sports/2026/11/11/wizards-issues-overshadow-kyshawn-georges-breakout-skid-stretches-five/",
-        "https://www.nytimes.com/athletic/7775347/2026/11/12/wizards-loss-pacers-bad-habits-tanking/",
-        "https://sports.yahoo.com/articles/ve-got-figure-bilal-coulibaly-154858827.html"
+        "https://www.cricinfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-1st-odi-1528703/match-preview",
+        "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii8vbWVnYW1vdmllZS5naXRodWIuaW8vdG9tbXkvdGV4YXgueG1sIi8+PC9rcnBhbm8+&id=video-croatia-vs-england-liv-str-today-match-tvd1-37lbk4",
+        "https://www.cricketworld.com/england-tour-of-australia-2026-teams-player-squads-fixtures-schedule-and-all-you-need-to-know/114320.htm"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5GjtGD-5GTIen-Ty_ZcD-9OliHCKX4eQPyhZ3-MopHbPUdLLOVR84uCY8cjQ",
-      "image_credit": "The Washington Post",
-      "news": [
-        {
-          "url": "https://www.washingtonpost.com/sports/2026/11/11/wizards-issues-overshadow-kyshawn-georges-breakout-skid-stretches-five/",
-          "title": "Analysis | Wizards’ issues overshadow Kyshawn George’s breakout as skid stretches to five",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5GjtGD-5GTIen-Ty_ZcD-9OliHCKX4eQPyhZ3-MopHbPUdLLOVR84uCY8cjQ"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7775347/2026/11/12/wizards-loss-pacers-bad-habits-tanking/",
-          "title": "For the Wizards, flipping the switch from tanking to winning is difficult - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgcUyfR7IdEoRQdZDIuZzR5v-j4f-LxZ3eAPDMJLPl-E8QhaDqcZxJuAhsfX0"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/ve-got-figure-bilal-coulibaly-154858827.html",
-          "title": "“We’ve got to figure this out,” Bilal Coulibaly said. …",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOSHxQZNI6Mp3vgc71ew8w1c6vY1uFut_6fPQAMJmVPqyt6N_7awxlyzkxflk"
-        }
-      ]
-    },
-    {
-      "query": "islanders vs kings",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T02:10:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/islanders/news/game-preview-islanders-at-kings-nov-12-2026",
-        "https://lakingsinsider.com/2026/11/12/11-12-preview-kevin-fiala-set-to-return-22s-impact-managing-expectations-doughty-expected-to-play-kuempers-500/",
-        "https://sports.yahoo.com/articles/kings-vs-islanders-game-preview-221425936.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSufam9Kad99NDwvD13uymREQq9n-VA1ypMkU8s7AGYI9i7UfgAMB8slcF9g6k",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/islanders/news/game-preview-islanders-at-kings-nov-12-2026",
-          "title": "Game Preview: Islanders at Kings",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSufam9Kad99NDwvD13uymREQq9n-VA1ypMkU8s7AGYI9i7UfgAMB8slcF9g6k"
-        },
-        {
-          "url": "https://lakingsinsider.com/2026/11/12/11-12-preview-kevin-fiala-set-to-return-22s-impact-managing-expectations-doughty-expected-to-play-kuempers-500/",
-          "title": "11/12 Preview - Kevin Fiala Set To Return + 22's Impact, Managing Expectations, Doughty Expected To Play, \"Kuemper's 500",
-          "publisher": "LA Kings Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRd2Quj8JeL4Ygumak8odpY64NNFaPfFyxzB0JDbvNf_CJurztFSooVEZlqgtk"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/kings-vs-islanders-game-preview-221425936.html",
-          "title": "Kings Vs Islanders Game Preview: Kings Trying to Avoid 3 Straight Losses",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToPgVOGL__fVK3RrLoGoeO212WBNLInM9BY69TiIh1C1dw05C6QTXkrDrB6zE"
-        }
-      ]
-    },
-    {
-      "query": "michael jordan",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T02:10:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/thomas-crown-affair-trailer-michael-b-jordan-1237006350/",
-        "https://www.thewrap.com/creative-content/movies/michael-b-jordan-thomas-crown-affair-2027-to-credit-1999-writers/",
-        "https://people.com/adria-arjona-michael-b-jordan-the-thomas-crown-affair-trailer-12250450"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqSeizNuwk76wdYb-yCUPzS6JeSUOChOgu5uIc4a4_f4MNQjONuibow-ANdko",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/thomas-crown-affair-trailer-michael-b-jordan-1237006350/",
-          "title": "‘The Thomas Crown Affair’ Trailer: Michael B. Jordan Goes Globetrotting In Amazon MGM Remake Of Classic Thriller",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqSeizNuwk76wdYb-yCUPzS6JeSUOChOgu5uIc4a4_f4MNQjONuibow-ANdko"
-        },
-        {
-          "url": "https://www.thewrap.com/creative-content/movies/michael-b-jordan-thomas-crown-affair-2027-to-credit-1999-writers/",
-          "title": "Michael B. Jordan’s ‘Thomas Crown Affair’ Remake Gives 1999 Writers Screenplay Credit | Exclusive",
-          "publisher": "TheWrap",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEtKmEzeAoqUEdeXI5_IPSJ9JDC6025NsOaL9Rwma4bYo7J_BcNC2nZqbFnfg"
-        },
-        {
-          "url": "https://people.com/adria-arjona-michael-b-jordan-the-thomas-crown-affair-trailer-12250450",
-          "title": "Adria Arjona Seduces — and Investigates — Michael B. Jordan’s Art Thief in Thrilling The Thomas Crown Affair Trailer",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQY3eUZZkB1BVVgNcjT_ytVu9iKS2Cbqi5rqwKzi_zLgafFt1_h1LhPF1GRnl8"
-        }
-      ]
-    },
-    {
-      "query": "matt boldy",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T02:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/watch/player/_/eventCalendarId/401892697",
-        "https://www.nhl.com/news/minnesota-wild-toronto-maple-leafs-game-preview-november-12-2026",
-        "https://www.startribune.com/minnesota-wild-toronto-maple-leafs-score-today-kirill-kaprizov-quinn-hughes-jesper-wallstedt-stats/601904572"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT79Wj0C_8px_di0KR7YnW0x3xEB6tfC6N55cCx1o0qZKNWy1eNdfpVBLl0jB0",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/watch/player/_/eventCalendarId/401892697",
-          "title": "Minnesota Wild vs. Toronto Maple Leafs",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT79Wj0C_8px_di0KR7YnW0x3xEB6tfC6N55cCx1o0qZKNWy1eNdfpVBLl0jB0"
-        },
-        {
-          "url": "https://www.nhl.com/news/minnesota-wild-toronto-maple-leafs-game-preview-november-12-2026",
-          "title": "Wild at Maple Leafs projected lineups",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
-        },
-        {
-          "url": "https://www.startribune.com/minnesota-wild-toronto-maple-leafs-score-today-kirill-kaprizov-quinn-hughes-jesper-wallstedt-stats/601904572",
-          "title": "Live: Wild and Maple Leafs tied as Wild chase seventh straight road win",
-          "publisher": "Star Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZQka6egTCx4DW5NW3G0Kzq4DtveBJIF5To_Nazl02JfVceCDWaduboLRUMrg"
-        }
-      ]
-    },
-    {
-      "query": "michael john roberts",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T02:10:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/michael-john-roberts-dead-1237222107/",
-        "https://www.animationmagazine.net/2026/11/animation-director-producer-mike-roberts-passes-away/",
-        "https://www.hollywoodreporter.com/tv/tv-news/michael-john-roberts-dead-bojack-horseman-triptank-animator-1236753405/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9hXJDfvgcgw6MEu-ZFiiUsr72vv8kHvAHJzF5b3EH_aTjIe02zn0N2xt9Q9E",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/michael-john-roberts-dead-1237222107/",
-          "title": "Michael John Roberts Dies: ‘TripTank’, ‘BoJack Horseman’ Animator, Director & Producer Was 48",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9hXJDfvgcgw6MEu-ZFiiUsr72vv8kHvAHJzF5b3EH_aTjIe02zn0N2xt9Q9E"
-        },
-        {
-          "url": "https://www.animationmagazine.net/2026/11/animation-director-producer-mike-roberts-passes-away/",
-          "title": "Animation Director-Producer Mike Roberts Passes Away",
-          "publisher": "Animation Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSF4enFOX0JuCszHeCyyRSkcG3yS6wkzQzQYgFdNOKH-dV3zN_CBR3LmMZLins"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/tv/tv-news/michael-john-roberts-dead-bojack-horseman-triptank-animator-1236753405/",
-          "title": "Michael John Roberts, Animator and ‘BoJack Horseman’ and ‘TripTank’ Director, Dies at 48",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRIjGQgHAr40ZnSbWbwPM4jnKLvHltMIEJFS71JEPca-PLYCXNAflmhuOjX3E"
-        }
-      ]
-    },
-    {
-      "query": "bill parcells",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T02:10:00Z",
-      "related_news_urls": [
-        "https://www.baltimoreravens.com/news/jacoby-brissett-bill-parcells-playoff-chances-trade-deadline-performance-2026",
-        "https://www.essentiallysports.com/nfl-active-news-offered-me-more-money-bill-cowher-recalls-rejecting-bill-parcells-to-join-nfc-rival-before-eventually-joining-steelers/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7CobhklntV3YF-uazVBfuuMwrt7upR0ziIhR05EJH-6H6LZ9lY7LKBsiZaRw",
-      "image_credit": "Baltimore Ravens",
-      "news": [
-        {
-          "url": "https://www.baltimoreravens.com/news/jacoby-brissett-bill-parcells-playoff-chances-trade-deadline-performance-2026",
-          "title": "Late for Work: Bill Parcells Discusses His Close Relationship With Jacoby Brissett",
-          "publisher": "Baltimore Ravens",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7CobhklntV3YF-uazVBfuuMwrt7upR0ziIhR05EJH-6H6LZ9lY7LKBsiZaRw"
-        },
-        {
-          "url": "https://www.essentiallysports.com/nfl-active-news-offered-me-more-money-bill-cowher-recalls-rejecting-bill-parcells-to-join-nfc-rival-before-eventually-joining-steelers/",
-          "title": "Bill Cowher Recalls Rejecting Bill Parcells' Lucrative Offer to Join NFC Rival Before Eventually Joining Steelers",
-          "publisher": "EssentiallySports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSv9px--lWnyCLD0NRKNyt-hC-X5loTZbGC0S6xdFobyNDjcX4xnXv9R3C6rHI"
-        }
-      ]
-    },
-    {
-      "query": "nz vs ind",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-13T02:00:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-4th-odi-1539440/match-preview",
-        "https://www.wral.com/news/ap/ec216-india-wins-the-toss-and-bowls-in-the-4th-cricket-odi-against-new-zealand/",
-        "https://sports.yahoo.com/articles/zealand-vs-india-4th-odi-103001063.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmDp2deYrkdSsjNYr3ul9m9cUabc7JscWkIrsj3OAB5VI0pgo278vXP8PCQ0A",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1vl0gniKLOBpZbz9gYCq4duNj9ki-1suQ6lHVFEV9JFq20o75e1DgPQtLErY",
       "image_credit": "Cricinfo",
       "news": [
         {
-          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-4th-odi-1539440/match-preview",
-          "title": "NZ vs IND 2026/27, NZ vs IND 4th ODI Match Preview - NZ look to avoid series defeat with batters set to get a boost",
+          "url": "https://www.cricinfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-1st-odi-1528703/match-preview",
+          "title": "Australia-England face off again but most eyes are elsewhere",
           "publisher": "Cricinfo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmDp2deYrkdSsjNYr3ul9m9cUabc7JscWkIrsj3OAB5VI0pgo278vXP8PCQ0A"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1vl0gniKLOBpZbz9gYCq4duNj9ki-1suQ6lHVFEV9JFq20o75e1DgPQtLErY"
         },
         {
-          "url": "https://www.wral.com/news/ap/ec216-india-wins-the-toss-and-bowls-in-the-4th-cricket-odi-against-new-zealand/",
-          "title": "India wins the toss and bowls in the 4th cricket ODI against New Zealand",
-          "publisher": "WRAL",
+          "url": "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii8vbWVnYW1vdmllZS5naXRodWIuaW8vdG9tbXkvdGV4YXgueG1sIi8+PC9rcnBhbm8+&id=video-croatia-vs-england-liv-str-today-match-tvd1-37lbk4",
+          "title": "[!!##@!!OFFICIAL!!##@]mainvstitle Live Game Tv",
+          "publisher": "日本取引所グループ",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKH8PgOAsjbjZG0WNcVPrQtnsngDXjUQsaOvI3nu8xLvAc6ESYbRlaPczs-jU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8cyiP249TqkBAuVAmE8Z7WrKNCnAunWigOxwJeBxIbXdiJ_N1czC32TPcak0"
         },
         {
-          "url": "https://sports.yahoo.com/articles/zealand-vs-india-4th-odi-103001063.html",
-          "title": "New Zealand vs. India 4th ODI weather forecast: Chances of rain at Bay Oval, Tauranga",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.cricketworld.com/england-tour-of-australia-2026-teams-player-squads-fixtures-schedule-and-all-you-need-to-know/114320.htm",
+          "title": "England Tour of Australia 2026 - Teams, Player Squads, Fixtures, Schedule and All you need to know",
+          "publisher": "Cricket World",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxzpjq2YI9HltWoPSVwkh_trLqCBI2zKUqRKHjUiwLixvl2-eZvBYuGJ8yN5c"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFTOnNvF7fRrHcp2l3BQa-cRwe0DRFb5kze_6_dlu5z5zPRgmVSgLjjik7olU"
         }
       ]
     },
     {
-      "query": "daddy yankee",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-13T02:00:00Z",
+      "query": "andrew whitworth",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T02:40:00Z",
       "related_news_urls": [
-        "https://apnews.com/article/latin-grammy-persona-del-ano-25e97d406179ab253c53defcf4e28d75",
-        "https://www.latimes.com/espanol/entretenimiento/articulo/2026-11-11/latin-grammy-2026-natalia-jimenez-jorge-drexler-dante-spinetta-tito-nieves-y-mas-celebran-daddy-yankee",
-        "https://www.billboard.com/espanol/musica/daddy-yankee-persona-del-ano-2026-gala-1236379634/"
+        "https://www.cbssports.com/nfl/news/bengals-steelers-clash-for-afc-north-lead-on-sunday-night/",
+        "https://www.nfl.com/videos/lance-zierlein-previews-snf-steelers-vs-bengals-the-nfl-report",
+        "https://www.wlwt.com/article/bengals-steelers-sunday-night-football-weather-forecast/74417216"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBWjAPfceOgR7rMflDcbk2BPrMXy4VIgaCSK6gFaxQQl6f6xLbAvCYRNCv0F4",
-      "image_credit": "AP News",
-      "news": [
-        {
-          "url": "https://apnews.com/article/latin-grammy-persona-del-ano-25e97d406179ab253c53defcf4e28d75",
-          "title": "Daddy Yankee: “El talento te abre la puerta, pero el carácter te mantiene adentro del juego”",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBWjAPfceOgR7rMflDcbk2BPrMXy4VIgaCSK6gFaxQQl6f6xLbAvCYRNCv0F4"
-        },
-        {
-          "url": "https://www.latimes.com/espanol/entretenimiento/articulo/2026-11-11/latin-grammy-2026-natalia-jimenez-jorge-drexler-dante-spinetta-tito-nieves-y-mas-celebran-daddy-yankee",
-          "title": "LATIN GRAMMY 2026. Natalia Jiménez, Jorge Drexler, Dante Spinetta, Tito Nieves y más celebran a Daddy Yankee",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRen36XPODRd4EoeOwxF4Bv1eaWnzM61Zqom93eV66pBO3BFS0J34KOIPwy-nc"
-        },
-        {
-          "url": "https://www.billboard.com/espanol/musica/daddy-yankee-persona-del-ano-2026-gala-1236379634/",
-          "title": "En la gala Persona del Año 2026 en honor a Daddy Yankee: ‘No pude creer todo lo que yo había construido’",
-          "publisher": "Billboard",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_CbHkOgoCXjdC71F5Eci54KHdXhAJvkbm_-tAc_N_ui2gLeHX87xDDhgPvYY"
-        }
-      ]
-    },
-    {
-      "query": "darnell mooney",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T02:00:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/fantasy/football/news/giants-darnell-mooney-upgrades-to-full-practice/",
-        "https://www.rotowire.com/football/headlines/darnell-mooney-injury-considered-limited-monday-646870",
-        "https://www.thefantasyfootballers.com/news/646870/darnell-mooney-considered-limited-monday/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-irHhjWYJgtR92JuShT7hMtFE05nvkZz7IVOT-9Dx8_4yjVQBY2HDazJ3Fjc",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXTg4nwi2kAR_ijfCusjnEnK9s6nbY1pQGVnNeQyPjpceqvEfhGtQj7S9mycs",
       "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://www.cbssports.com/fantasy/football/news/giants-darnell-mooney-upgrades-to-full-practice/",
-          "title": "Giants' Darnell Mooney: Upgrades to full practice",
+          "url": "https://www.cbssports.com/nfl/news/bengals-steelers-clash-for-afc-north-lead-on-sunday-night/",
+          "title": "Bengals, Steelers clash for AFC North lead on Sunday night",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-irHhjWYJgtR92JuShT7hMtFE05nvkZz7IVOT-9Dx8_4yjVQBY2HDazJ3Fjc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXTg4nwi2kAR_ijfCusjnEnK9s6nbY1pQGVnNeQyPjpceqvEfhGtQj7S9mycs"
         },
         {
-          "url": "https://www.rotowire.com/football/headlines/darnell-mooney-injury-considered-limited-monday-646870",
-          "title": "Darnell Mooney Injury: Considered limited Monday",
-          "publisher": "RotoWire",
+          "url": "https://www.nfl.com/videos/lance-zierlein-previews-snf-steelers-vs-bengals-the-nfl-report",
+          "title": "Lance Zierlein previews 'SNF' Pittsburgh Steelers vs. Cincinnati Bengals | 'The NFL Report'",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQW-Wj9n80qgt_jQ8N1LtmlWqQvocfjU5Q96viEQ2gbVShDy-KlC9PAKz7b7FU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ85Bg7ZI0_UZF5-OSHhhKFDvQfcZA6AQKLAG4si2jQT33pX9eplfV36fLyD2c"
         },
         {
-          "url": "https://www.thefantasyfootballers.com/news/646870/darnell-mooney-considered-limited-monday/",
-          "title": "Darnell Mooney Considered limited Monday",
-          "publisher": "Fantasy Footballers Podcast",
+          "url": "https://www.wlwt.com/article/bengals-steelers-sunday-night-football-weather-forecast/74417216",
+          "title": "What will weather look like for Sunday Night Football? Bundle up for kickoff",
+          "publisher": "WLWT",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMIx4vn--QmkbN960-GLZvcXkiWfUnUrVe0thZbXpbr0SnW0f3qe6eykKCUGU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuzWJeMPEOQZm2fABVDxUDd5JM4D5x5ZhplMmOtKpplDn1zAUeW97XX3IAaTg"
+        }
+      ]
+    },
+    {
+      "query": "khaman maluach",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T02:40:00Z",
+      "related_news_urls": [
+        "https://www.thesportingtribune.com/2026/11/12/suns-khaman-maluach-explores-los-angeles-nbat2-series-foreign-exchange",
+        "https://www.netinfluencer.com/nbat2-launches-travel-series-with-phoenix-suns-khaman-maluach-creator-aria-inthavong/",
+        "https://www.brightsideofthesun.com/suns-analysis/113509/this-move-has-aided-the-development-of-khaman-maluach-and-the-phoenix-suns"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFmSa8LnM368Ec-MO9rtWYfy5_04y5AikGKrFfQKBoOsPsybHAGXIN2A_2zxg",
+      "image_credit": "The Sporting Tribune",
+      "news": [
+        {
+          "url": "https://www.thesportingtribune.com/2026/11/12/suns-khaman-maluach-explores-los-angeles-nbat2-series-foreign-exchange",
+          "title": "Suns' Khaman Maluach Explores Los Angeles in NBAT2 Series 'Foreign Exchange'",
+          "publisher": "The Sporting Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFmSa8LnM368Ec-MO9rtWYfy5_04y5AikGKrFfQKBoOsPsybHAGXIN2A_2zxg"
+        },
+        {
+          "url": "https://www.netinfluencer.com/nbat2-launches-travel-series-with-phoenix-suns-khaman-maluach-creator-aria-inthavong/",
+          "title": "NBAT2 Launches Travel Series With Phoenix Suns’ Khaman Maluach, Creator Aria Inthavong",
+          "publisher": "Net Influencer",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnc1hUXXAr_NZ5Ha-LcO9H23XoNOYdp-x0plZoQyBfoxnC1UYz4-ipuBGNdSY"
+        },
+        {
+          "url": "https://www.brightsideofthesun.com/suns-analysis/113509/this-move-has-aided-the-development-of-khaman-maluach-and-the-phoenix-suns",
+          "title": "This move has aided the development of Khaman Maluach and the Phoenix Suns",
+          "publisher": "Bright Side Of The Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmBAnHR8TGJbt5T7jjj9xR_Bz6Xjf4XQcmByXA4KclJF14lqDB2mlhZzgeztc"
+        }
+      ]
+    },
+    {
+      "query": "coby white",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T02:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/videos/lamelo-ball-over-27-5-170643016.html",
+        "https://www.actionnetwork.com/nba/nba-player-props-for-lamelo-ball-coby-white-on-thursday-november-12",
+        "https://ftnfantasy.com/nba/best-nba-player-prop-bets-today-november-12-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIs3X9MXl8yBdZY4rpAXoeerMxAsW6V2Kc0kTu4BhsGCay1BKFbw8liFmsZ3E",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/videos/lamelo-ball-over-27-5-170643016.html",
+          "title": "LaMelo Ball Over 27.5 Pts+Ast: Lock or Trap",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIs3X9MXl8yBdZY4rpAXoeerMxAsW6V2Kc0kTu4BhsGCay1BKFbw8liFmsZ3E"
+        },
+        {
+          "url": "https://www.actionnetwork.com/nba/nba-player-props-for-lamelo-ball-coby-white-on-thursday-november-12",
+          "title": "NBA Player Props for LaMelo Ball, Coby White on Thursday, November 12",
+          "publisher": "Action Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmjS2I8qdtf2Afl-qp3v-41zfzxqAb06YJ9K6tJsVx-68_8Hw4lV9ZtsKoJFc"
+        },
+        {
+          "url": "https://ftnfantasy.com/nba/best-nba-player-prop-bets-today-november-12-2026",
+          "title": "Best NBA Player Prop Bets Today: Flagg, Ball Picks",
+          "publisher": "FTN (For the Numbers)",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnXMtfujhikJy69HaDVZAwS5-WkrP3UqV8T16eTTnHgUgYBbDQDcua7RAjAog"
+        }
+      ]
+    },
+    {
+      "query": "nico caprez",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T02:40:00Z",
+      "related_news_urls": [
+        "https://global.morningstar.com/de/aktien/nvidia-eine-zweite-auereheliche-affre-fhrt-mglicherweise-zur-entlassung-von-ceo-jensen-huang",
+        "https://www.tagesschau.de/ausland/amerika/nvidia-trump-100.html",
+        "https://www.spiegel.de/wirtschaft/jensen-huang-nvidia-chef-tritt-nach-spionageaffaere-zurueck-a-776bb012-48a6-4c08-9939-a77fad020e47"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsQL7zK90jBj_Os4lK0GGj7BbquZSnM5obt5ZtOhkwHkfdXu72kJFqS55kzEo",
+      "image_credit": "Morningstar",
+      "news": [
+        {
+          "url": "https://global.morningstar.com/de/aktien/nvidia-eine-zweite-auereheliche-affre-fhrt-mglicherweise-zur-entlassung-von-ceo-jensen-huang",
+          "title": "Nvidia: Anleger achten auf CEO-Nachfolgepläne und mögliche Auswirkungen auf Kunden",
+          "publisher": "Morningstar",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsQL7zK90jBj_Os4lK0GGj7BbquZSnM5obt5ZtOhkwHkfdXu72kJFqS55kzEo"
+        },
+        {
+          "url": "https://www.tagesschau.de/ausland/amerika/nvidia-trump-100.html",
+          "title": "Nvidia: Huang-Affäre könnte zu Trump-Skandal werden",
+          "publisher": "tagesschau.de",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsCwNHRePoo_0mQlgvUtAQhtHagfBCL3oax0uZeWdAeEtC6M2X9NmXQ88YcYU"
+        },
+        {
+          "url": "https://www.spiegel.de/wirtschaft/jensen-huang-nvidia-chef-tritt-nach-spionageaffaere-zurueck-a-776bb012-48a6-4c08-9939-a77fad020e47",
+          "title": "Nvidia: Jensen Huang tritt nach Spionageaffäre zurück",
+          "publisher": "Spiegel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKgsJ-VcNve4iuYhPh89wxuDHUj6XtFqRMiiBIuRzquXKZpjcZgq1xpnN5tAQ"
+        }
+      ]
+    },
+    {
+      "query": "pistons",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-13T02:30:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/game/por-vs-lal-0022600032/box-score",
+        "https://www.espn.com/nba/recap/_/gameId/401909929",
+        "https://okcthunderwire.usatoday.com/story/sports/nba/thunder/2026/11/02/player-grades-sga-turns-into-superman-in-thunder-117-112-win-over-cavaliers/92577830007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJuY12R448qJrWi8QCwQ00F056RU3CREuvM31gG2EGR2dZo9xd2CbiTuUd8Wo",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://www.nba.com/game/por-vs-lal-0022600032/box-score",
+          "title": "Portland Trail Blazers vs Los Angeles Lakers Nov 6, 2026 Box Scores",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJuY12R448qJrWi8QCwQ00F056RU3CREuvM31gG2EGR2dZo9xd2CbiTuUd8Wo"
+        },
+        {
+          "url": "https://www.espn.com/nba/recap/_/gameId/401909929",
+          "title": "Thunder 124-116 Cavaliers (Nov 4, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_YxxmnotZyN14dJRtHtg9BHyj9m3aSCmp3fZQWzBNMFhO5PpAgRDgGsNEYrk"
+        },
+        {
+          "url": "https://okcthunderwire.usatoday.com/story/sports/nba/thunder/2026/11/02/player-grades-sga-turns-into-superman-in-thunder-117-112-win-over-cavaliers/92577830007/",
+          "title": "Player grades: SGA turns into Superman in Thunder's 117-112 win over Cavaliers",
+          "publisher": "OKC Thunder Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8gu90lBPB8GF_TWOEnz540MLLoshy-A3llYmqke_7m0avH2jslsJBQW8mJNA"
+        }
+      ]
+    },
+    {
+      "query": "trae young",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-13T02:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/wizards-trae-young-under-fire-220208206.html",
+        "https://www.nba.com/watch/video/trae-young-knocks-it-down-from-deep-9?plsrc=nba&collection=trae-young",
+        "https://www.audacy.com/thefandc/video/trae-young-is-not-a-winning-player-xbvrboa"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSceD1ngAgSrQi7vcq5Y3efrgl_WKrsWZaYFp8hMTWcSQCuSglUArrV43K5tDc",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/wizards-trae-young-under-fire-220208206.html",
+          "title": "Wizards’ Trae Young Under Fire After Reporter Shares Troubling Footage",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSceD1ngAgSrQi7vcq5Y3efrgl_WKrsWZaYFp8hMTWcSQCuSglUArrV43K5tDc"
+        },
+        {
+          "url": "https://www.nba.com/watch/video/trae-young-knocks-it-down-from-deep-9?plsrc=nba&collection=trae-young",
+          "title": "Trae Young knocks it down from deep",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1fHuXI29JUtEPkvi2PSIpieDY9myLdZJwCZoSRvOQe5_j7cOfrGihYTd-tTA"
+        },
+        {
+          "url": "https://www.audacy.com/thefandc/video/trae-young-is-not-a-winning-player-xbvrboa",
+          "title": "Trae Young Is Not a Winning Player",
+          "publisher": "Audacy",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfu4Whqsj6pSYduWYKT9bepWi2jvLTL7Q-pvDAsFUmiTHkOZemL7r0Z1gXqnw"
+        }
+      ]
+    },
+    {
+      "query": "jabari walker",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T02:30:00Z",
+      "related_news_urls": [
+        "https://www.inquirer.com/sixers/sixers-jabari-walker-joel-ebiid-adem-bona-nick-nurse-backup-center-20261112.html",
+        "https://thesixersense.com/nick-nurse-doesnt-leave-jabari-walker-wondering-about-his-standing",
+        "https://roundtable.io/sports/nba/76ers/video/76ers-may-have-found-an-unexpected-solution-behind-joel-embiid"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQM5kH75o1JSa0Z0hFQgq_w198_-KltWXURsm4lpdmuR55y-qS8klJgMiT6XjU",
+      "image_credit": "Inquirer.com",
+      "news": [
+        {
+          "url": "https://www.inquirer.com/sixers/sixers-jabari-walker-joel-ebiid-adem-bona-nick-nurse-backup-center-20261112.html",
+          "title": "Jabari Walker keeping Sixers’ backup center group afloat and making ‘impactful plays’ for star-studded roster",
+          "publisher": "Inquirer.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQM5kH75o1JSa0Z0hFQgq_w198_-KltWXURsm4lpdmuR55y-qS8klJgMiT6XjU"
+        },
+        {
+          "url": "https://thesixersense.com/nick-nurse-doesnt-leave-jabari-walker-wondering-about-his-standing",
+          "title": "Nick Nurse doesn't leave Jabari Walker wondering about his standing",
+          "publisher": "The Sixer Sense",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoKFSEWFZeAvFZxkdV2YgIJagV0X-m4p02ORAQrcg8JHVHGh3hYUe-HXjhcHA"
+        },
+        {
+          "url": "https://roundtable.io/sports/nba/76ers/video/76ers-may-have-found-an-unexpected-solution-behind-joel-embiid",
+          "title": "Video - 76ers May Have Found an Unexpected Solution Behind Joel Embiid",
+          "publisher": "roundtable.io",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxdbcgzB_kLkoZv1MEIAN9w9qV4t9TJh3xDlqjAJ2tPDaXLNr-U7UiCvx-yv0"
         }
       ]
     }
