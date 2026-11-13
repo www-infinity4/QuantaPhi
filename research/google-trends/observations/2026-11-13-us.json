@@ -3,358 +3,324 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T20:31:31.134560Z",
+  "checked_at": "2026-11-13T21:01:27.284705Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "slovakia vs faroe islands",
+      "query": "ground stop",
       "approx_searches": "500+",
-      "published_at": "2026-11-13T20:10:00Z",
+      "published_at": "2026-11-13T20:40:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cm9dz77n1q2nt",
-        "https://www.goal.com/en-ca/news/live-stream-online-tv-where-to-watch-slovakia-v-faroe-islands/bltc8fc31a34ccdd1b6",
-        "https://sportsbook.fanduel.com/soccer/uefa-nations-league-c/slovakia-v-faroe-islands-36165995"
+        "https://pix11.com/news/local-news/ground-stop-issued-at-nyc-area-airports-what-to-know/",
+        "https://www.wcvb.com/article/weather-across-the-northeast-causes-flight-delays/74417954",
+        "https://www.wtnh.com/news/connecticut/hartford/flights-diverted-to-bradley-international-airport-due-to-severe-weather-in-nyc/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGj6UWMR6SlSz8hbROU7UYGlDG3zoshx2V_Q3TP-djD9M6fWuoZnaQ-rKCJo4",
+      "image_credit": "PIX11",
+      "news": [
+        {
+          "url": "https://pix11.com/news/local-news/ground-stop-issued-at-nyc-area-airports-what-to-know/",
+          "title": "Ground stop issued at NYC area airports: what to know",
+          "publisher": "PIX11",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGj6UWMR6SlSz8hbROU7UYGlDG3zoshx2V_Q3TP-djD9M6fWuoZnaQ-rKCJo4"
+        },
+        {
+          "url": "https://www.wcvb.com/article/weather-across-the-northeast-causes-flight-delays/74417954",
+          "title": "Weather across the northeast causes flight delays, cancellations at Logan, other airports",
+          "publisher": "WCVB",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRM9tj0SQiZ0OOVXmt2a1UwzDnnAiJ4MaR21s4Jg4tYge8GOXK6TIVC3HS_8tY"
+        },
+        {
+          "url": "https://www.wtnh.com/news/connecticut/hartford/flights-diverted-to-bradley-international-airport-due-to-severe-weather-in-nyc/",
+          "title": "Flights diverted to Bradley International Airport due to severe weather in NYC",
+          "publisher": "WTNH.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCEeupyubuhTdc9HR_ob2E_EiKfHymQ7hwvqDu0imGOr7wOniuC0uZCClmXSA"
+        }
+      ]
+    },
+    {
+      "query": "faa ground stop",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T20:40:00Z",
+      "related_news_urls": [
+        "https://pix11.com/news/local-news/ground-stop-issued-at-nyc-area-airports-what-to-know/",
+        "https://www.wcvb.com/article/weather-across-the-northeast-causes-flight-delays/74417954",
+        "https://www.wtnh.com/news/connecticut/hartford/flights-diverted-to-bradley-international-airport-due-to-severe-weather-in-nyc/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGj6UWMR6SlSz8hbROU7UYGlDG3zoshx2V_Q3TP-djD9M6fWuoZnaQ-rKCJo4",
+      "image_credit": "PIX11",
+      "news": [
+        {
+          "url": "https://pix11.com/news/local-news/ground-stop-issued-at-nyc-area-airports-what-to-know/",
+          "title": "Ground stop issued at NYC area airports: what to know",
+          "publisher": "PIX11",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGj6UWMR6SlSz8hbROU7UYGlDG3zoshx2V_Q3TP-djD9M6fWuoZnaQ-rKCJo4"
+        },
+        {
+          "url": "https://www.wcvb.com/article/weather-across-the-northeast-causes-flight-delays/74417954",
+          "title": "Weather across the northeast causes flight delays, cancellations at Logan, other airports",
+          "publisher": "WCVB",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRM9tj0SQiZ0OOVXmt2a1UwzDnnAiJ4MaR21s4Jg4tYge8GOXK6TIVC3HS_8tY"
+        },
+        {
+          "url": "https://www.wtnh.com/news/connecticut/hartford/flights-diverted-to-bradley-international-airport-due-to-severe-weather-in-nyc/",
+          "title": "Flights diverted to Bradley International Airport due to severe weather in NYC",
+          "publisher": "WTNH.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCEeupyubuhTdc9HR_ob2E_EiKfHymQ7hwvqDu0imGOr7wOniuC0uZCClmXSA"
+        }
+      ]
+    },
+    {
+      "query": "nintendo black friday sale",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-13T20:40:00Z",
+      "related_news_urls": [
+        "https://www.nintendo.com/us/whatsnew/nintendo-announces-black-friday-offers-to-help-spread-joy-this-holiday-season/",
+        "https://mashable.com/tech/nov-9-nintendo-switch-2-deal",
+        "https://lifehacker.com/tech/best-nintendo-deals-black-friday-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJdwGWfoWciYkJy6BjM3eZ6Guo1nE4Y-npuqfWyjE-gT28K5lIk-qktg4joFo",
+      "image_credit": "Nintendo",
+      "news": [
+        {
+          "url": "https://www.nintendo.com/us/whatsnew/nintendo-announces-black-friday-offers-to-help-spread-joy-this-holiday-season/",
+          "title": "Nintendo announces Black Friday offers to help spread joy this holiday season - News - Nintendo Official Site",
+          "publisher": "Nintendo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJdwGWfoWciYkJy6BjM3eZ6Guo1nE4Y-npuqfWyjE-gT28K5lIk-qktg4joFo"
+        },
+        {
+          "url": "https://mashable.com/tech/nov-9-nintendo-switch-2-deal",
+          "title": "The Nintendo Switch 2 gets a rare deal way ahead of Black Friday",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkCwfPlSALAicmzH76I52iowQmdJ6bLK-1iW9e9hPJ7mcLAAUTPSdexzZns04"
+        },
+        {
+          "url": "https://lifehacker.com/tech/best-nintendo-deals-black-friday-2026",
+          "title": "Nintendo's Black Friday Deals Are Actually Pretty Good",
+          "publisher": "Lifehacker",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYZ6clXKS3O2MrhCcatyLbePNpSLYPegEg-B3wQD9cPl6pTvs1gvXB0sA-5ak"
+        }
+      ]
+    },
+    {
+      "query": "egipto - malaui",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T20:40:00Z",
+      "related_news_urls": [
+        "https://www.beinsports.com/es-us/football/africa-cup-of-nations-qualification/articles/en-vivo-egipto-vs-malawi-eliminatorias-afcon-2027-2026-11-13",
+        "https://www.futbol24.com/es/pronosticos-deportivos/previa/13-11-2026-egipto-malaui-pronostico/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgyffxarX0mptj0AFcO8sd6LjLLkQHk5ovi8DHywm7LZK9-wVoLeV1iUR9uMA",
+      "image_credit": "beIN SPORTS",
+      "news": [
+        {
+          "url": "https://www.beinsports.com/es-us/football/africa-cup-of-nations-qualification/articles/en-vivo-egipto-vs-malawi-eliminatorias-afcon-2027-2026-11-13",
+          "title": "EN VIVO: Egipto vs Malawi | Eliminatorias AFCON 2027",
+          "publisher": "beIN SPORTS",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgyffxarX0mptj0AFcO8sd6LjLLkQHk5ovi8DHywm7LZK9-wVoLeV1iUR9uMA"
+        },
+        {
+          "url": "https://www.futbol24.com/es/pronosticos-deportivos/previa/13-11-2026-egipto-malaui-pronostico/",
+          "title": "Egipto - Malaui | pronósticos + mejores cuotas | 13.11.2026",
+          "publisher": "Futbol24",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTklGvHpdVTsImQRyZGCTGfK4_ex2T5lxxlAXiM18WnATsVRpfLWMmdt6an6Gs"
+        }
+      ]
+    },
+    {
+      "query": "john brennan",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T20:30:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/politics/former-cia-director-john-brennans-son-arrested-after-fbi-uncovers-dozens-alleged-child-porn-images",
+        "https://www.yahoo.com/news/us/articles/son-ex-cia-chief-brennan-203228806.html",
+        "https://www.dailymail.com/news/article-16291027/obama-cia-john-brennan-son-kyle-child-pornography.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzSlwGMgoYYLzq7RdEaZtSPYQRC4ikX41fmp0_Z9QWpi_7j5pCobwYBl0ssuk",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/politics/former-cia-director-john-brennans-son-arrested-after-fbi-uncovers-dozens-alleged-child-porn-images",
+          "title": "Former CIA director John Brennan's son arrested after FBI uncovers dozens of alleged child porn images",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzSlwGMgoYYLzq7RdEaZtSPYQRC4ikX41fmp0_Z9QWpi_7j5pCobwYBl0ssuk"
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/articles/son-ex-cia-chief-brennan-203228806.html",
+          "title": "Son of ex-CIA chief Brennan charged over sexual images of minor girls",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgdy8UW7bwDgo_3quu-4EjVBlGMWcYPph61eiXaNwIpfTU1DaqANxBxn7_GQw"
+        },
+        {
+          "url": "https://www.dailymail.com/news/article-16291027/obama-cia-john-brennan-son-kyle-child-pornography.html",
+          "title": "Obama CIA Director John Brennan's son arrested on child pornography charge after 'sexually explicit' materials found on his phone",
+          "publisher": "Daily Mail",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSW-0GBfb3i6WhI2-BOkNOCk1A39Sznfc7mz8CNhGuz096GCCuSlLWkFZZ0SpM"
+        }
+      ]
+    },
+    {
+      "query": "chris hemsworth",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T20:30:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/entertainment/movies/2026/11/13/chris-hemsworth-elsa-pataky-home-burglary-cars/92751835007/",
+        "https://7news.com.au/entertainment/police-investigate-break-in-and-theft-at-hollywood-actor-chris-hemsworths-northern-rivers-home-c-23152107",
+        "https://people.com/chris-hemsworth-home-burglarized-masked-thieves-carrying-knifes-steal-3-of-his-vehicles-12252410"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHOrJpS8WCAzfUup_YedjElEWXNYdYYGysoSB529AaZ3H8LYLnkTN0s74Iau8",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/entertainment/movies/2026/11/13/chris-hemsworth-elsa-pataky-home-burglary-cars/92751835007/",
+          "title": "Chris Hemsworth, Elsa Pataky's 3 cars stolen from Australian home",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHOrJpS8WCAzfUup_YedjElEWXNYdYYGysoSB529AaZ3H8LYLnkTN0s74Iau8"
+        },
+        {
+          "url": "https://7news.com.au/entertainment/police-investigate-break-in-and-theft-at-hollywood-actor-chris-hemsworths-northern-rivers-home-c-23152107",
+          "title": "Police investigate break in and theft at Hollywood actor Chris Hemsworth’s Northern Rivers home",
+          "publisher": "7NEWS",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShmV1HEWZF2ta2PD6zf3agCSt5JGQeBFr-guhGnZPmUn6MqJVtwbJ2u58bpAw"
+        },
+        {
+          "url": "https://people.com/chris-hemsworth-home-burglarized-masked-thieves-carrying-knifes-steal-3-of-his-vehicles-12252410",
+          "title": "Chris Hemsworth’s Home Burglarized as Masked Thieves Carrying Knives Steal 3 of His Vehicles",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmIzWomumNZbEEa65SU7J7mNRcnj2WzKzSZYOc5gDVSCxxILxl7pcyw_c36JA"
+        }
+      ]
+    },
+    {
+      "query": "fred johnson",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T20:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-eagles-to-release-veteran-ol-fred-johnson",
+        "https://sports.yahoo.com/articles/eagles-release-veteran-tackle-fred-195744556.html",
+        "https://www.profootballrumors.com/2026/11/eagles-to-waive-t-fred-johnson"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQem8mt7L3B6h9DggOThQ0_9zqehqWRp_GUyLxImKKYmq2ToKmsg4GBhs0XyT0",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-eagles-to-release-veteran-ol-fred-johnson",
+          "title": "Report: Eagles to release veteran OL Fred Johnson",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQem8mt7L3B6h9DggOThQ0_9zqehqWRp_GUyLxImKKYmq2ToKmsg4GBhs0XyT0"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/eagles-release-veteran-tackle-fred-195744556.html",
+          "title": "Eagles to release veteran tackle Fred Johnson as roster changes continue",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIvBjq9DVCLe3J4YZJI5x5o2s7g2lBMhfeoASmL7LERuR5rzlqCw1K3AsVmbY"
+        },
+        {
+          "url": "https://www.profootballrumors.com/2026/11/eagles-to-waive-t-fred-johnson",
+          "title": "Eagles To Waive T Fred Johnson",
+          "publisher": "NFL Rumors - ProFootballRumors.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRULiOHq6hqfCbIS_clXmpoYj0fyveYtQFPLEKwKozZtuX3RqbS9tCK3WhqEWU"
+        }
+      ]
+    },
+    {
+      "query": "scotland",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T20:30:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/rugby-union/articles/c6wy4lg2rx29o",
+        "https://sports.yahoo.com/articles/townsend-graham-return-wallabies-scotlands-171412094.html",
+        "https://newspaper.dailymail.com/scottish-edition/sport/479522/steyn-calls-on-leaders-to-front-up-against-aussies"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa94W8aRRu9vxFYOjhbn1wLYjiLRDTEyXtEG84ZHHXBzbaJm1qdwv9PmHTS8c",
       "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/cm9dz77n1q2nt",
-          "title": "Slovakia vs Faroe Islands: UEFA Nations League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/rugby-union/articles/c6wy4lg2rx29o",
+          "title": "Scotland v Australia: Darcy Graham & Blair Kinghorn start for Gregor Townsend's side",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa94W8aRRu9vxFYOjhbn1wLYjiLRDTEyXtEG84ZHHXBzbaJm1qdwv9PmHTS8c"
         },
         {
-          "url": "https://www.goal.com/en-ca/news/live-stream-online-tv-where-to-watch-slovakia-v-faroe-islands/bltc8fc31a34ccdd1b6",
-          "title": "Watch Slovakia vs. Faroe Islands live today: Who is broadcasting the match on TV and via live stream?",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTm6ZhMNxxnR6Fk4oK7w1ft7PhUzoadMf1hgYYjZ6MvyNy_dG4j9Puj3l5c3q0"
-        },
-        {
-          "url": "https://sportsbook.fanduel.com/soccer/uefa-nations-league-c/slovakia-v-faroe-islands-36165995",
-          "title": "Slovakia v Faroe Islands Odds",
-          "publisher": "FanDuel Sportsbook",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA"
-        }
-      ]
-    },
-    {
-      "query": "new orleans",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T20:00:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/13/us/new-orleans-river-cruise-collision",
-        "https://www.fox8live.com/2026/11/13/source-river-cruiser-carrying-150-people-taking-water-near-port-new-orleans-rescue-efforts-underway/",
-        "https://www.theguardian.com/us-news/2026/nov/13/mississippi-river-crash-new-orleans"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS459bPJhEdzSmSetg6H-7EqmfuzcjNOXthyZgitO0c098lPSEPcBGjK3QMWXs",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/13/us/new-orleans-river-cruise-collision",
-          "title": "Tanker collides with river cruiser near Port of New Orleans",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS459bPJhEdzSmSetg6H-7EqmfuzcjNOXthyZgitO0c098lPSEPcBGjK3QMWXs"
-        },
-        {
-          "url": "https://www.fox8live.com/2026/11/13/source-river-cruiser-carrying-150-people-taking-water-near-port-new-orleans-rescue-efforts-underway/",
-          "title": "River cruiser carrying nearly 150 passengers taking on water near Port of New Orleans, rescue efforts underway",
-          "publisher": "FOX 8 Local First",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnKkztB-DFQI1uylnwNR7ILlPKo7RMfTecdpb6zku4FsmgdbGgE7gzpxA1rds"
-        },
-        {
-          "url": "https://www.theguardian.com/us-news/2026/nov/13/mississippi-river-crash-new-orleans",
-          "title": "Tanker collides with cruise ship on Mississippi River in New Orleans",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPPphUmnedaaAfBtClvsX_Ubl4MuhoKb_fyOg0xw9poRjalk75Kuq7A5weWEE"
-        }
-      ]
-    },
-    {
-      "query": "brian poindexter",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T20:00:00Z",
-      "related_news_urls": [
-        "https://www.nbcnews.com/politics/2026-elections/alaska-governor-results",
-        "https://whyy.org/articles/delaware-democrats-win-2026/",
-        "https://www.cbsnews.com/philadelphia/news/delaware-election-results-live-2026/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWmvwHQ7qw_OeBHOZP6ZwuRTw2z_p-Uk4Zzu0P7tlDCqywgsu_KC3_mofNjNI",
-      "image_credit": "NBC News",
-      "news": [
-        {
-          "url": "https://www.nbcnews.com/politics/2026-elections/alaska-governor-results",
-          "title": "Alaska Governor Midterm Election 2026: Live Results",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWmvwHQ7qw_OeBHOZP6ZwuRTw2z_p-Uk4Zzu0P7tlDCqywgsu_KC3_mofNjNI"
-        },
-        {
-          "url": "https://whyy.org/articles/delaware-democrats-win-2026/",
-          "title": "Delaware Democrats earn supermajorities in the state legislature, flipping 3 seats",
-          "publisher": "WHYY",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVjxumVzYZTn_C5PrOzEC3dV1XQIOc7kAJvNvgPAL4wJQ_GDjtOLaWAWtSzWw"
-        },
-        {
-          "url": "https://www.cbsnews.com/philadelphia/news/delaware-election-results-live-2026/",
-          "title": "Live Delaware election results: Congressional elections, state general assembly races",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqGHWX2VeB8zQtNqumYqeQQvLloRMpD6sUaZlDKrrhsLWAo7PxszuGHxtSo6Q"
-        }
-      ]
-    },
-    {
-      "query": "swac tv",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T20:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/texas-southern-alabama-m-watch-140000863.html",
-        "https://aamusports.com/news/2026/11/12/football-aamu-hosts-texas-southern-for-senior-day-and-military-appreciation-day.aspx",
-        "https://www.rocketcitynow.com/article/sports/local-sports/alabama-am-host-texas-southern-senior-day-and-military-appreciation-day/525-fa9841d7-3891-49a8-b677-e3ae782df79b"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2oioDWs1eIRSXIfe0-KcDsETx4cyGLXCTuIc6FYn2syqjTxqB24SHlOaYNco",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/texas-southern-alabama-m-watch-140000863.html",
-          "title": "Texas Southern at Alabama A&M: How to watch, date, time, TV channel",
+          "url": "https://sports.yahoo.com/articles/townsend-graham-return-wallabies-scotlands-171412094.html",
+          "title": "Townsend on Graham return, Wallabies & Scotland's 'true potential'",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2oioDWs1eIRSXIfe0-KcDsETx4cyGLXCTuIc6FYn2syqjTxqB24SHlOaYNco"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTFDijEfZAAYOECFCPK4vL4cWSMvmgG53zjMz4kmkIN0j9iEjO7KxiPQzFHRs"
         },
         {
-          "url": "https://aamusports.com/news/2026/11/12/football-aamu-hosts-texas-southern-for-senior-day-and-military-appreciation-day.aspx",
-          "title": "AAMU Hosts Texas Southern for Senior Day and Military Appreciation Day",
-          "publisher": "Alabama A&M Athletics",
+          "url": "https://newspaper.dailymail.com/scottish-edition/sport/479522/steyn-calls-on-leaders-to-front-up-against-aussies",
+          "title": "Steyn calls on leaders to front up against Aussies",
+          "publisher": "Daily Mail",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTalhELCydw05iLJEPNQVrjK7V3WjyJNyufcy7gMVCVIzE1G1drnLC-c56PKPk"
-        },
-        {
-          "url": "https://www.rocketcitynow.com/article/sports/local-sports/alabama-am-host-texas-southern-senior-day-and-military-appreciation-day/525-fa9841d7-3891-49a8-b677-e3ae782df79b",
-          "title": "Alabama A&M to host Texas Southern for Senior Day and Military Appreciation Day",
-          "publisher": "rocketcitynow.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRo1amg0BG4ihRd3nLocz2lf3gt60B56WvVCjScS0Yzlwi0iUTC-HG-7U2n4Ow"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD0j9EZIqnGkcRUUgmb_q6Og3w2uWOvtVSNgJI-Nj1hB_oFTbuUr9jqeZfe1w"
         }
       ]
     },
     {
-      "query": "cleveland state basketball",
+      "query": "liga de naciones",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-13T20:20:00Z",
+      "related_news_urls": [
+        "https://www.telemundo.com/deportes/mas-deporte/italia-sorprende-a-francia-y-se-lleva-una-importante-victoria-en-la-ue-rcna608907",
+        "https://es-us.noticias.yahoo.com/deportes/laterales-boquete-naufragio-zidane-francia-192638898.html",
+        "https://www.tudn.com/futbol/uefa-nations-league/italy-vs-france-game-highlights-video"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvvr4wmqLFD9l2YVQJPF5qte4QboU2fI63iE7f88PxTp_M9Vykm-F1q3hHjLU",
+      "image_credit": "Telemundo",
+      "news": [
+        {
+          "url": "https://www.telemundo.com/deportes/mas-deporte/italia-sorprende-a-francia-y-se-lleva-una-importante-victoria-en-la-ue-rcna608907",
+          "title": "Italia sorprende a Francia y se lleva una importante victoria en la UEFA Nations League",
+          "publisher": "Telemundo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvvr4wmqLFD9l2YVQJPF5qte4QboU2fI63iE7f88PxTp_M9Vykm-F1q3hHjLU"
+        },
+        {
+          "url": "https://es-us.noticias.yahoo.com/deportes/laterales-boquete-naufragio-zidane-francia-192638898.html",
+          "title": "Los laterales, el boquete del primer naufragio de Zidane con Francia",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIH0KUJeM4IlszPecC14B0TesoG_Rkcxe1p003wz-HZN9k3P5S96V1m-qnUS4"
+        },
+        {
+          "url": "https://www.tudn.com/futbol/uefa-nations-league/italy-vs-france-game-highlights-video",
+          "title": "Resumen | Italia remonta y vence con categoría a Francia",
+          "publisher": "TUDN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQix4Je3Rcfu_PjbpYhnNNNM8pNY3cR3c3lUWt-U6T1GdhyBTR8R1yIhDIS0TY"
+        }
+      ]
+    },
+    {
+      "query": "7oh ban",
       "approx_searches": "500+",
-      "published_at": "2026-11-13T20:00:00Z",
-      "related_news_urls": [
-        "https://goxavier.com/news/2026/11/13/womens-basketball-continues-homestand-vs-cleveland-state",
-        "https://www.crainscleveland.com/sports-recreation/ccl-csu-strategic-plan-20261113/",
-        "https://www.cbssports.com/betting/news/west-florida-cleveland-state-prediction-odds-2026-college-basketball-picks-friday-november-13/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzIrsmbQ5d_Elcp8L9I6O1LyZeQn3za5Zsnr2yynly3Bw-FIIFjGBJXySSiBA",
-      "image_credit": "Xavier University Athletics",
-      "news": [
-        {
-          "url": "https://goxavier.com/news/2026/11/13/womens-basketball-continues-homestand-vs-cleveland-state",
-          "title": "Women's Basketball Continues Homestand vs Cleveland State",
-          "publisher": "Xavier University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzIrsmbQ5d_Elcp8L9I6O1LyZeQn3za5Zsnr2yynly3Bw-FIIFjGBJXySSiBA"
-        },
-        {
-          "url": "https://www.crainscleveland.com/sports-recreation/ccl-csu-strategic-plan-20261113/",
-          "title": "Cleveland State’s new athletics plan targets fans, funding and wins",
-          "publisher": "Crain's Cleveland Business",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX7eXxClk5wAjHcOFvsKTZ-ybnGYc2X_wqeaSky5kPcN1lBRVS2Z8EVeLXAyg"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/west-florida-cleveland-state-prediction-odds-2026-college-basketball-picks-friday-november-13/",
-          "title": "West Florida vs. Cleveland State prediction, odds: 2026 college basketball picks for Nov. 13 by proven model",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc3VzboWiGecHrdUF6rC3vBMsH2Gb8PzwHYhGuZxXR5hZVhd1aJQe_krRBRGs"
-        }
-      ]
-    },
-    {
-      "query": "irán",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T20:00:00Z",
-      "related_news_urls": [
-        "https://www.dw.com/es/donald-trump-ve-innecesario-un-pacto-de-estados-unidos-con-ir%C3%A1n/a-79935968",
-        "https://www.latimes.com/espanol/internacional/articulo/2026-11-12/trump-dice-que-cree-que-la-guerra-con-iran-ha-terminado-en-la-practica",
-        "https://elpais.com/internacional/2026-11-12/trump-retira-a-vance-de-las-conversaciones-con-iran-para-acabar-la-guerra.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlnoqPg8wzYc79OoIMN66uix8Q71yEOYyzqNpqCM2sTr4emY3L9b8BtHSBthA",
-      "image_credit": "DW.com",
-      "news": [
-        {
-          "url": "https://www.dw.com/es/donald-trump-ve-innecesario-un-pacto-de-estados-unidos-con-ir%C3%A1n/a-79935968",
-          "title": "Donald Trump ve innecesario un pacto de Estados Unidos con Irán",
-          "publisher": "DW.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlnoqPg8wzYc79OoIMN66uix8Q71yEOYyzqNpqCM2sTr4emY3L9b8BtHSBthA"
-        },
-        {
-          "url": "https://www.latimes.com/espanol/internacional/articulo/2026-11-12/trump-dice-que-cree-que-la-guerra-con-iran-ha-terminado-en-la-practica",
-          "title": "Trump dice que cree que la guerra con Irán \"ha terminado en la práctica\"",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDmjKL1BNszWbhm-K-GsYUp0DaBBiO-5vtwDCutIKA1N7KhLTutdDaecWbaNA"
-        },
-        {
-          "url": "https://elpais.com/internacional/2026-11-12/trump-retira-a-vance-de-las-conversaciones-con-iran-para-acabar-la-guerra.html",
-          "title": "Trump retira a Vance de las conversaciones con Irán para acabar la guerra",
-          "publisher": "EL PAÍS",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKABBx7_eN7uxMwwlAm5T_pMOhJ0g7NfLJMYKcFqODG4SB56mX27XIFb_uSe0"
-        }
-      ]
-    },
-    {
-      "query": "zero-day vulnerability",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T20:00:00Z",
-      "related_news_urls": [
-        "https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/",
-        "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
-        "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVv7s-yhlG4fpATtxdh648gAaJ9WpPOcIkc2aGFS2lJ3A9ZPgyvq4k0eyWEes",
-      "image_credit": "Ars Technica",
-      "news": [
-        {
-          "url": "https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/",
-          "title": "Windows 0-day dropped by disgruntled researcher hands hackers System rights",
-          "publisher": "Ars Technica",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVv7s-yhlG4fpATtxdh648gAaJ9WpPOcIkc2aGFS2lJ3A9ZPgyvq4k0eyWEes"
-        },
-        {
-          "url": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
-          "title": "New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access",
-          "publisher": "The Hacker News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWrC1J51LZXwXr3kjXWtOa7Chu4Ty6W4Hch8g6I7sKiw8kywnhQzzPDcrhhy0"
-        },
-        {
-          "url": "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/",
-          "title": "Nightmare Eclipse Drops Windows Zero-Day Exploit ‘SignDrop’",
-          "publisher": "SecurityWeek",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxgqZynx2X05Icu9blCqB0e4PsQUvKAqMv8mvbF7XN7g-e6Os8-U1xPRbYHzc"
-        }
-      ]
-    },
-    {
-      "query": "west florida basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T20:00:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/betting/news/west-florida-cleveland-state-prediction-odds-2026-college-basketball-picks-friday-november-13/",
-        "https://csuvikings.com/news/2026/11/12/cleveland-state-mens-basketball-set-for-bulldog-bash.aspx",
-        "https://apnews.com/article/mens-college-basketball-cleveland-florida-general-news-alabama-77252bed5ae64a5da1ff77d6012a2767"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc3VzboWiGecHrdUF6rC3vBMsH2Gb8PzwHYhGuZxXR5hZVhd1aJQe_krRBRGs",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/betting/news/west-florida-cleveland-state-prediction-odds-2026-college-basketball-picks-friday-november-13/",
-          "title": "West Florida vs. Cleveland State prediction, odds: 2026 college basketball picks for Nov. 13 by proven model",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc3VzboWiGecHrdUF6rC3vBMsH2Gb8PzwHYhGuZxXR5hZVhd1aJQe_krRBRGs"
-        },
-        {
-          "url": "https://csuvikings.com/news/2026/11/12/cleveland-state-mens-basketball-set-for-bulldog-bash.aspx",
-          "title": "Cleveland State Men's Basketball Set for Bulldog Bash",
-          "publisher": "csuvikings.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwZQDNitPC8EeN8_aWVoyUqWctXcDVhboI2NMZWUUX5vC2VmgGYswh8FzPE2o"
-        },
-        {
-          "url": "https://apnews.com/article/mens-college-basketball-cleveland-florida-general-news-alabama-77252bed5ae64a5da1ff77d6012a2767",
-          "title": "Cleveland State takes on West Florida in Huntsville, Alabama",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyxytuQ4aGf2BOxfux9vnLUnsxmXV6_4vU1gfZLf7dr_vdaPit7PYKHCUsALk"
-        }
-      ]
-    },
-    {
-      "query": "chiefs depth chart",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T20:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50464631/jaguars-jessie-bates-trade-travis-hunter",
-        "https://www.atlantafalcons.com/news/falcons-news-now-top-headlines-for-week-10-game-vs-chiefs",
-        "https://www.nfl.com/news/jessie-bates-jaguars-falcons-trade"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKcJuo6F7SaPG_qmrtX_8X-uKAXDppEswV5g_Iy0A2qgrlmeVVE6rFSh1aKvM",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50464631/jaguars-jessie-bates-trade-travis-hunter",
-          "title": "Travis Hunter makes Jessie Bates' Jaguars trade a hit with his nephews",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKcJuo6F7SaPG_qmrtX_8X-uKAXDppEswV5g_Iy0A2qgrlmeVVE6rFSh1aKvM"
-        },
-        {
-          "url": "https://www.atlantafalcons.com/news/falcons-news-now-top-headlines-for-week-10-game-vs-chiefs",
-          "title": "Falcons News Now: Top headlines for Week 10 game vs. Chiefs",
-          "publisher": "Atlanta Falcons",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQy9xz0dFQN16EOkQmGv6oigy25PCPzrkK3nkcp10gwRtpxd4aBLNF3A6ie-ls"
-        },
-        {
-          "url": "https://www.nfl.com/news/jessie-bates-jaguars-falcons-trade",
-          "title": "Jaguars acquire Falcons safety Jessie Bates III, Saints DT Davon Godchaux in trades",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4TzaBTB7-169S194DcHffwrffsflyWS9ZwuZv2Wyr57_DyhgFUZtE3Ocdbzo"
-        }
-      ]
-    },
-    {
-      "query": "dejounte murray",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-13T19:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50473732/sources-dejounte-murray-wants-trade-pelicans",
-        "https://sports.yahoo.com/articles/suns-registered-interest-dejounte-murray-195558186.html",
-        "https://www.nola.com/sports/pelicans/dejounte-murray-pelicans-criticism/article_a8f04963-ac1c-4865-b056-027790351bfa.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_U3XDYpNGxJhlUnV5wKTPR3V-FIPF676heixX1lY9_Qgj5MQ64EMhjaLPqRA",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50473732/sources-dejounte-murray-wants-trade-pelicans",
-          "title": "Sources: Murray wants trade from Pelicans; both sides working on resolution",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_U3XDYpNGxJhlUnV5wKTPR3V-FIPF676heixX1lY9_Qgj5MQ64EMhjaLPqRA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/suns-registered-interest-dejounte-murray-195558186.html",
-          "title": "Suns have registered interest in Dejounte Murray",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1ffAoxseYp3Zm7GOXPizkTNcYJ1RWG5qLtVEbLjuDkREHb2jfJotSJwJT15Q"
-        },
-        {
-          "url": "https://www.nola.com/sports/pelicans/dejounte-murray-pelicans-criticism/article_a8f04963-ac1c-4865-b056-027790351bfa.html",
-          "title": "Pelicans’ Dejounte Murray talks ‘sabotage,’ responds harshly to criticism on social media",
-          "publisher": "NOLA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuOrt8mxbM2gSHntf2ovVYA2aeTPys2AUKF9geHR-3e7_fc4JfB0BRXlFqoUU"
-        }
-      ]
+      "published_at": "2026-11-13T20:20:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
     }
   ]
 }
