@@ -33,6 +33,9 @@ test('available-card chooser exposes original tools plus all 17 actual source se
 test('Following keeps only opted-in sources and shelf mode reveals restored cards',async({page})=>{
  await fixtures(page);await page.goto(base+'/?card=pcgs',{waitUntil:'domcontentloaded'});
  await expect(page.locator('#oracleCardStage [data-source-id="pcgs"]')).toBeVisible();
+ // Select the original publisher explicitly so async source spotlights cannot replace its viewer.
+ await page.locator('#oracleCardChooser').selectOption('source-pcgs');
+ await expect(page.locator('#oracleCardChooser')).toHaveValue('source-pcgs');
  const inlineFollow=page.locator('#oracleCardStage [data-source-id="pcgs"] > div > .qca-toolbar [data-action="follow"]');
  await expect(inlineFollow).toHaveCount(1);await expect(inlineFollow).toBeVisible();await expect(page.locator('#oracleCardFollow')).toBeHidden();
  await inlineFollow.click();await page.locator('#oracleCardDeck').getByRole('tab',{name:'Following',exact:true}).click();
