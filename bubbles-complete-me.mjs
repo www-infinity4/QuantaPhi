@@ -34,7 +34,10 @@ function equalScope(previous,current){
 }
 async function projectSubmissionId(p){
  if(!crypto?.subtle)throw Error('Authenticated project fingerprint unavailable');
- const data=new TextEncoder().encode(p.repository.toLowerCase()+'|'+p.issue);
+ // The issue identifies the controller, not every project the owner may start.
+ // Different goals stay distinct; whitespace/case-only retries remain stable.
+ const normalizedGoal=p.goal.toLowerCase().replace(/\s+/g,' ');
+ const data=new TextEncoder().encode(p.repository.toLowerCase()+'|'+p.issue+'|'+normalizedGoal);
  const digest=await crypto.subtle.digest('SHA-256',data);
  return 'complete-me-'+[...new Uint8Array(digest)].map(x=>x.toString(16).padStart(2,'0')).join('').slice(0,48);
 }
