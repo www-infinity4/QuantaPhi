@@ -1,0 +1,360 @@
+{
+  "schema_version": 1,
+  "source": "Google Trends Trending Now RSS",
+  "source_url": "https://trends.google.com/trending/rss?geo=US",
+  "region": "US",
+  "checked_at": "2026-11-13T00:02:04.602361Z",
+  "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
+  "topics": [
+    {
+      "query": "curaçao vs panama",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T23:40:00Z",
+      "related_news_urls": [
+        "https://www.sportsmole.co.uk/football/curacao/preview/curacao-vs-panama-prediction-team-news-lineups_608853.html",
+        "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vdHJhdmlzLWF1c3Rpbi5naXRodWIuaW8vZW5tL2VudS54bWwiLz48L2tycGFubz4=&id=video-panama-v-curacao-nations-league-match-lie-en-zcmstvh",
+        "https://www.vavel.com/en-us/soccer/2026/11/12/1278906-curacao-vs-panama-live-score-concacaf-nations-league.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSL9-dw5dVTqtMCSNHjPIELd9QPqoXDCcLDS4oiYdZvIIFMGPImnOY-FFuFtYo",
+      "image_credit": "Sports Mole",
+      "news": [
+        {
+          "url": "https://www.sportsmole.co.uk/football/curacao/preview/curacao-vs-panama-prediction-team-news-lineups_608853.html",
+          "title": "Preview: Curacao vs Panama - prediction, team news, lineups",
+          "publisher": "Sports Mole",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSL9-dw5dVTqtMCSNHjPIELd9QPqoXDCcLDS4oiYdZvIIFMGPImnOY-FFuFtYo"
+        },
+        {
+          "url": "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vdHJhdmlzLWF1c3Rpbi5naXRodWIuaW8vZW5tL2VudS54bWwiLz48L2tycGFubz4=&id=video-panama-v-curacao-nations-league-match-lie-en-zcmstvh",
+          "title": "~$!【LIVESTREAMs】 Panama v Curaçao Nations League match LIVE STREAM Free REDDIT",
+          "publisher": "日本取引所グループ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtpqpQkY-gxL7Pgo0NSWG2yPh9sgMrgzqxhnJ8KSAENaEuG2xvFsunio9aNXs"
+        },
+        {
+          "url": "https://www.vavel.com/en-us/soccer/2026/11/12/1278906-curacao-vs-panama-live-score-concacaf-nations-league.html",
+          "title": "Curacao vs Panama LIVE, Latest Score, Goals and Concacaf Nations League Updates",
+          "publisher": "VAVEL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqGgD_PwljZ1e8tZjAIKu-nS0TqtEXwRX7SDo7EAufz5dm6iw2-JFRva8HPNY"
+        }
+      ]
+    },
+    {
+      "query": "the good daughter cast",
+      "approx_searches": "200+",
+      "published_at": "2026-11-12T23:40:00Z",
+      "related_news_urls": [
+        "https://www.npr.org/2026/11/12/nx-s1-5964969/in-the-good-daughter-hard-realities-are-met-with-some-humor",
+        "https://www.theguardian.com/tv-and-radio/2026/nov/12/the-good-daughter-review-brendan-gleeson-rose-byrne-meghann-fahy",
+        "https://variety.com/2026/tv/reviews/the-good-daughter-review-rose-byrne-meghann-fahy-1236943876/"
+      ],
+      "image_url": null,
+      "image_credit": "NPR",
+      "news": [
+        {
+          "url": "https://www.npr.org/2026/11/12/nx-s1-5964969/in-the-good-daughter-hard-realities-are-met-with-some-humor",
+          "title": "In 'The Good Daughter,' hard realities are met with some humor",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/12/the-good-daughter-review-brendan-gleeson-rose-byrne-meghann-fahy",
+          "title": "The Good Daughter review – the best thing about this legal thriller? Brendan Gleeson’s sad toilet fart",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQeZH72TVtd7TRwEZmVh6GUDcM0MCmKDI7XBwediFv2EvNBfnF4heNEjxiR6fE"
+        },
+        {
+          "url": "https://variety.com/2026/tv/reviews/the-good-daughter-review-rose-byrne-meghann-fahy-1236943876/",
+          "title": "'The Good Daughter' Review: Rose Byrne and Meghann Fahy Excel",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXn6QqrzkCmM5M88ds48agiWBZ7kQ6GsrNLWVMjrTZZGFQR9MABc26ySgShVE"
+        }
+      ]
+    },
+    {
+      "query": "uconn vs ohio state",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T23:30:00Z",
+      "related_news_urls": [
+        "https://www.ctinsider.com/sports/uconn-mens-basketball/article/uconn-vs-ohio-state-how-to-watch-time-tv-lineups-22527151.php",
+        "https://www.centraloregondaily.com/sports/portland_fire/uconn-vs-ohio-state-headlines-top-25-showdown-south-carolina-preview-wnba-offseason-talk/video_9e86b69f-67ca-5e67-8a28-73f46cd192fc.html",
+        "https://www.cleveland.com/tv/2026/11/where-to-watch-uconn-vs-ohio-state-basketball-for-free-today.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX8hbCPgS37RCPmzh70zqcm__iR5EBf9N9peLlSeHqPY0Kdx0H3PU70EaNLHg",
+      "image_credit": "CT Insider",
+      "news": [
+        {
+          "url": "https://www.ctinsider.com/sports/uconn-mens-basketball/article/uconn-vs-ohio-state-how-to-watch-time-tv-lineups-22527151.php",
+          "title": "How to watch No. 4 UConn men's basketball vs. Ohio State: Time, TV",
+          "publisher": "CT Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX8hbCPgS37RCPmzh70zqcm__iR5EBf9N9peLlSeHqPY0Kdx0H3PU70EaNLHg"
+        },
+        {
+          "url": "https://www.centraloregondaily.com/sports/portland_fire/uconn-vs-ohio-state-headlines-top-25-showdown-south-carolina-preview-wnba-offseason-talk/video_9e86b69f-67ca-5e67-8a28-73f46cd192fc.html",
+          "title": "UConn vs. Ohio State HEADLINES Top-25 Showdown | South Carolina Preview + WNBA Offseason Talk",
+          "publisher": "Central Oregon Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWCOwOgQwADzuXUIswl1lS2PwhljoZsL58lup4tDD_HFXcdH0QItPglLNGTn4"
+        },
+        {
+          "url": "https://www.cleveland.com/tv/2026/11/where-to-watch-uconn-vs-ohio-state-basketball-for-free-today.html",
+          "title": "Where to watch UConn vs Ohio State basketball for free today",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCowMqQT8N7-9rH5rnH_SkIMG6CtDZIxcXzM-kS332ucwn-cE3zRJ486YaK9I"
+        }
+      ]
+    },
+    {
+      "query": "tennessee tech vs indiana",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T23:30:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/indiana/longformarticle/scouting-report-preview-tennessee-tech-travels-to-bloomington-thursday-292590511/",
+        "https://www.insidethehall.com/2026/11/12/game-4-iu-basketball-vs-tennessee-tech-preview/",
+        "https://www.indystar.com/story/sports/college/indiana/2026/11/11/indiana-basketball-game-tonight-vs-tennessee-tech-start-time-where-to-watch-stream/92723931007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAVLMXe8e6MVOaDGxte1MZCjD2iPFairQKvbFe-XKheyxyHFHMVruv5CxD9Fs",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/indiana/longformarticle/scouting-report-preview-tennessee-tech-travels-to-bloomington-thursday-292590511/",
+          "title": "Scouting report & preview: Tennessee Tech travels to Bloomington Thursday",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAVLMXe8e6MVOaDGxte1MZCjD2iPFairQKvbFe-XKheyxyHFHMVruv5CxD9Fs"
+        },
+        {
+          "url": "https://www.insidethehall.com/2026/11/12/game-4-iu-basketball-vs-tennessee-tech-preview/",
+          "title": "Game 4: IU basketball vs. Tennessee Tech preview",
+          "publisher": "Inside the Hall",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdNDTj8XFp8HG4-GE3mlZMDBxzff_Y4qKhjG1jS5KyxIvgvfwdeuqCXKKv1FA"
+        },
+        {
+          "url": "https://www.indystar.com/story/sports/college/indiana/2026/11/11/indiana-basketball-game-tonight-vs-tennessee-tech-start-time-where-to-watch-stream/92723931007/",
+          "title": "Indiana basketball vs Tennessee Tech start time, where to watch, stream tonight, Nov. 12",
+          "publisher": "IndyStar",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_oXREj05AzGJ6vhZm_xgHsUPBq1pw3n25Fzi0MZEFQayceRWMayKRPK4rCJk"
+        }
+      ]
+    },
+    {
+      "query": "yousri belgaroui",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-12T23:30:00Z",
+      "related_news_urls": [
+        "https://www.sherdog.com/news/news/How-Alex-Pereiras-striking-and-Glover-Teixeiras-wrestling-are-helping-Yousri-Belgaroui-203596",
+        "https://mmajunkie.usatoday.com/story/sports/ufc/2026/11/11/ufc-334-caio-borralho-middleweight-title-contender-list/92733622007/",
+        "https://www.mmamania.com/ufc-334-live-stream-fight-card-start-time-gane-vs-hokit/485406/caio-borralho-vs-yousri-belgaroui-odds-full-fight-preview-and-prediction-ufc-334"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaZ4eV_ldTfRJKl4B7h7Ya_Cdj-GpdVzhq9HCKdqr8Mo3jy0a3gWwHyk-kvdE",
+      "image_credit": "Sherdog",
+      "news": [
+        {
+          "url": "https://www.sherdog.com/news/news/How-Alex-Pereiras-striking-and-Glover-Teixeiras-wrestling-are-helping-Yousri-Belgaroui-203596",
+          "title": "How Alex Pereira's striking and Glover Teixeira's wrestling are helping Yousri Belgaroui",
+          "publisher": "Sherdog",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaZ4eV_ldTfRJKl4B7h7Ya_Cdj-GpdVzhq9HCKdqr8Mo3jy0a3gWwHyk-kvdE"
+        },
+        {
+          "url": "https://mmajunkie.usatoday.com/story/sports/ufc/2026/11/11/ufc-334-caio-borralho-middleweight-title-contender-list/92733622007/",
+          "title": "Caio Borralho lists trio of title-shot-worthy contenders, including himself",
+          "publisher": "MMA Junkie",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoz0QV51tSl1BKb0nLPUUXhtswBFBScO5qDZBp7e6pKMiPUc84k2b42MyG1pI"
+        },
+        {
+          "url": "https://www.mmamania.com/ufc-334-live-stream-fight-card-start-time-gane-vs-hokit/485406/caio-borralho-vs-yousri-belgaroui-odds-full-fight-preview-and-prediction-ufc-334",
+          "title": "Borralho Vs. Belgaroui Odds, Full Fight Preview & Prediction",
+          "publisher": "MMA Mania",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWH4es_Bh6_pR1A1Fh32-qXmzQTb1TuWJ3UUm9Rcuvpx4MiKfDHddt2O-2ZRY"
+        }
+      ]
+    },
+    {
+      "query": "j. d. vance",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-12T23:30:00Z",
+      "related_news_urls": [
+        "https://www.bostonglobe.com/2026/11/12/nation/trump-bluntly-tells-jd-vance-shift-focus-iran-targeting-corruption-crime-home/",
+        "https://www.nytimes.com/2026/11/12/us/politics/trump-vance-iran-fraud.html",
+        "https://www.washingtonpost.com/politics/2026/11/12/trump-shuts-down-vance-iran-negotiating-efforts-says-no-deal-needed/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPgS_6y6Iyi4tHGvWdgAjiMM7v0zPGaIJ_5L5Ao_EXu1yn6Fmv_4ZGcoK7rvk",
+      "image_credit": "The Boston Globe",
+      "news": [
+        {
+          "url": "https://www.bostonglobe.com/2026/11/12/nation/trump-bluntly-tells-jd-vance-shift-focus-iran-targeting-corruption-crime-home/",
+          "title": "Trump bluntly tells JD Vance to shift focus from Iran to targeting ‘corruption and crime’ at home",
+          "publisher": "The Boston Globe",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPgS_6y6Iyi4tHGvWdgAjiMM7v0zPGaIJ_5L5Ao_EXu1yn6Fmv_4ZGcoK7rvk"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/12/us/politics/trump-vance-iran-fraud.html",
+          "title": "Trump Says He’s Pulling Vance Off Iran Talks to Focus on Fraud Campaign",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3LeT7moDLrdw36cKxk2MmjFxAA5vFS-CFXQ7HpzpM8vfMTksZ1zWBzshVpXM"
+        },
+        {
+          "url": "https://www.washingtonpost.com/politics/2026/11/12/trump-shuts-down-vance-iran-negotiating-efforts-says-no-deal-needed/",
+          "title": "Trump says no deal needed with Iran, closes down Vance negotiations",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv777awMyxtvBC9EfDENGQlDi5OhRWH2swurngUXWlAQPT2MVklnoYNcUlkgU"
+        }
+      ]
+    },
+    {
+      "query": "martinsville nascar penalty carson hocevar",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T23:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/nascar-carson-hocevar-sends-defiant-194417855.html",
+        "https://www.motorbiscuit.com/zane-smith-on-carson-hocevars-suspension-glad-he-got-some-karma/",
+        "https://fordauthority.com/2026/11/officials-explain-nascar-ford-chevy-penalties-from-martinsville/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZpzdxvnKPCl34issFHbxGR5-qoMWrLGXG3q7sS7v4jEVnZB70v0MYezOku3M",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/nascar-carson-hocevar-sends-defiant-194417855.html",
+          "title": "NASCAR’s Carson Hocevar Sends Defiant Message to Critics of His Aggressive Driving",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZpzdxvnKPCl34issFHbxGR5-qoMWrLGXG3q7sS7v4jEVnZB70v0MYezOku3M"
+        },
+        {
+          "url": "https://www.motorbiscuit.com/zane-smith-on-carson-hocevars-suspension-glad-he-got-some-karma/",
+          "title": "Zane Smith on Carson Hocevar’s Suspension: ‘Glad He Got Some Karma’",
+          "publisher": "MotorBiscuit",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVIEmuwqoi26nxFXN5Y3PI6CVUdGh9wDthcTEUmAJXnPXTr-Vu_huaQgkKzUU"
+        },
+        {
+          "url": "https://fordauthority.com/2026/11/officials-explain-nascar-ford-chevy-penalties-from-martinsville/",
+          "title": "Officials Explain NASCAR Ford, Chevy Penalties From Martinsville",
+          "publisher": "Ford Authority",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfWN5HfqwZXhexTCsfFK4cK1y9yFi0fg9En1VtgqQoM_gr7Woydj_82bNhMp4"
+        }
+      ]
+    },
+    {
+      "query": "ny giants schedule",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T23:20:00Z",
+      "related_news_urls": [
+        "https://www.patriots.com/news/a-j-brown-rhamondre-stevenson-present-at-thursday-s-patriots-practice-in-munich",
+        "https://www.nfl.com/videos/greatest-forgotten-players-ep-11-nfl-throwback",
+        "https://sports.yahoo.com/articles/albert-breer-drops-reality-check-194054255.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzgawV1BrL-rJ5IfgeJog6TTn6kLduDWtAJ-1tmRLOyDyT18-rBwMHOt3x8jk",
+      "image_credit": "Patriots.com",
+      "news": [
+        {
+          "url": "https://www.patriots.com/news/a-j-brown-rhamondre-stevenson-present-at-thursday-s-patriots-practice-in-munich",
+          "title": "A.J. Brown, Rhamondre Stevenson present at Thursday's Patriots practice in Munich",
+          "publisher": "Patriots.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzgawV1BrL-rJ5IfgeJog6TTn6kLduDWtAJ-1tmRLOyDyT18-rBwMHOt3x8jk"
+        },
+        {
+          "url": "https://www.nfl.com/videos/greatest-forgotten-players-ep-11-nfl-throwback",
+          "title": "Greatest forgotten players Ep. 11 | NFL Throwback",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg0Ghyk0fzghIWRez3S4j-Kzfs7SmROF3-tgM0CaNGksNk1uMYLGr7fTBZ8sE"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/albert-breer-drops-reality-check-194054255.html",
+          "title": "Albert Breer Drops Reality Check on Patriots Ahead of Week 10 Lions Clash",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRANudkGMmKXEjyHmtH0kY5CcpJiyenqUo59kpVdSBEUOwW8rDFWs_9VEo2sFQ"
+        }
+      ]
+    },
+    {
+      "query": "flight",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T23:20:00Z",
+      "related_news_urls": [
+        "https://brobible.com/culture/article/flight-attendant-first-class-babysitting/",
+        "https://www.travelandleisure.com/what-slam-click-means-in-flight-attendant-slang-12110463",
+        "https://www.insideflyer.com/posts/united-settlement-protects-flight-attendants-minimum-rest/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqqFIDnI9iC8SARlLuaFItVj3t0hiv2JDEHaN_RPNptqMjabjYiO9v7KxLM5k",
+      "image_credit": "BroBible",
+      "news": [
+        {
+          "url": "https://brobible.com/culture/article/flight-attendant-first-class-babysitting/",
+          "title": "Flight Attendant Seats First-Class Passengers. Then One Of Them Has A Ridiculous Request: ‘I’m Not A Babysitter’",
+          "publisher": "BroBible",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqqFIDnI9iC8SARlLuaFItVj3t0hiv2JDEHaN_RPNptqMjabjYiO9v7KxLM5k"
+        },
+        {
+          "url": "https://www.travelandleisure.com/what-slam-click-means-in-flight-attendant-slang-12110463",
+          "title": "Flight Attendants Call Some Crew Members ‘Slam-clickers’—Here’s What It Means",
+          "publisher": "Travel + Leisure",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGO-9i4rvPJ213luo941HaaS_v-hvrj7cu0prC6lx8pmChmQVo2j-2egtXz7c"
+        },
+        {
+          "url": "https://www.insideflyer.com/posts/united-settlement-protects-flight-attendants-minimum-rest/",
+          "title": "United settlement protects flight attendants' minimum rest",
+          "publisher": "www.insideflyer.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQA0cb1c8OGJCRwCvWuzTHTPl7s25Fu1NaePP3UXntXgiUr6AL-eKGtJvF2DIw"
+        }
+      ]
+    },
+    {
+      "query": "federal reserve bitcoin price impact",
+      "approx_searches": "500+",
+      "published_at": "2026-11-12T23:20:00Z",
+      "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-10/bitcoin-drops-to-almost-three-month-low-as-us-inflation-dims-risk-appetite",
+        "https://www.coindesk.com/daybook-us/2026/11/12/bitcoin-weakness-erases-september-s-bullish-signal",
+        "https://www.reuters.com/business/cryptocurrencies-slide-two-month-lows-after-us-midterms-2026-11-08/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQY1hEjx5JsdxvKZ88x-_QhcpZVaBWfQUGE-XPiOl-e7sdVN1ehJHyrqmDtrxk",
+      "image_credit": "Bloomberg.com",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-10/bitcoin-drops-to-almost-three-month-low-as-us-inflation-dims-risk-appetite",
+          "title": "Bitcoin Drops to Almost Three-Month Low as US Inflation Dims Risk Appetite",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQY1hEjx5JsdxvKZ88x-_QhcpZVaBWfQUGE-XPiOl-e7sdVN1ehJHyrqmDtrxk"
+        },
+        {
+          "url": "https://www.coindesk.com/daybook-us/2026/11/12/bitcoin-weakness-erases-september-s-bullish-signal",
+          "title": "Bitcoin (BTC) price weakness erases September's bullish signal: Crypto Daily",
+          "publisher": "CoinDesk",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRoyT45x1_JJgREwitvj1LRVjT63vMkTs9sknU7vC2KHcI23K1nBwd9oqs4T4g"
+        },
+        {
+          "url": "https://www.reuters.com/business/cryptocurrencies-slide-two-month-lows-after-us-midterms-2026-11-08/",
+          "title": "Cryptocurrencies slide to two-month lows after US midterms",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6BaiXBkY5IOx7n-BHwMhX5KoJMN2xqWkva1rkO6tSYAPHi9mi5gSqu7quGyM"
+        }
+      ]
+    }
+  ]
+}
