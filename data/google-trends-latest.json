@@ -3,41 +3,181 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T14:01:32.698783Z",
+  "checked_at": "2026-11-13T14:31:21.712269Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "taylor swift",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-13T13:40:00Z",
+      "query": "what time does the stock market open",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T14:10:00Z",
       "related_news_urls": [
-        "https://www.cleveland.com/news/2026/11/taylor-swift-travis-kelces-bratenahl-landscaping-plan-approved-despite-neighbors-dissent.html",
-        "https://pagesix.com/2026/11/11/entertainment/taylor-swift-and-travis-kelces-ohio-neighbors-make-brutal-divorce-prediction-at-heated-town-meeting-over-landscape-plans/",
-        "https://www.beaconjournal.com/story/news/2026/11/11/taylor-swift-travis-kelce-bratenahl-ohio-home-plans-meeting-neighbors-vocal/92723006007/"
+        "https://www.marketwatch.com/story/how-the-stock-market-has-performed-after-veterans-day-over-the-past-decade-7b47233e",
+        "https://investingnews.com/nyse-honors-those-who-have-served-on-veterans-day-nyse-content-update/",
+        "https://www.military.com/video/united-states-armed-forces-rings-opening-bell-at-new-york-stock-exchange"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTA-Rka4SExnHlgxckTObTLeir3NaTxJTTlzIs3aiWt5dUnXRkCApPRyBqN5hs",
-      "image_credit": "Cleveland.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQId2BKnTg4g9TDS6itT-_lvsMMzVf54E2cCGLWvBpb9ZsUPG9GyqkXiQ6NDGE",
+      "image_credit": "MarketWatch",
       "news": [
         {
-          "url": "https://www.cleveland.com/news/2026/11/taylor-swift-travis-kelces-bratenahl-landscaping-plan-approved-despite-neighbors-dissent.html",
-          "title": "Taylor Swift, Travis Kelce’s Bratenahl landscaping plan approved despite neighbors’ dissent",
-          "publisher": "Cleveland.com",
+          "url": "https://www.marketwatch.com/story/how-the-stock-market-has-performed-after-veterans-day-over-the-past-decade-7b47233e",
+          "title": "How the stock market has performed after Veterans Day over the past decade",
+          "publisher": "MarketWatch",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTA-Rka4SExnHlgxckTObTLeir3NaTxJTTlzIs3aiWt5dUnXRkCApPRyBqN5hs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQId2BKnTg4g9TDS6itT-_lvsMMzVf54E2cCGLWvBpb9ZsUPG9GyqkXiQ6NDGE"
         },
         {
-          "url": "https://pagesix.com/2026/11/11/entertainment/taylor-swift-and-travis-kelces-ohio-neighbors-make-brutal-divorce-prediction-at-heated-town-meeting-over-landscape-plans/",
-          "title": "Exclusive | Taylor Swift and Travis Kelce’s Ohio neighbors make brutal divorce prediction at heated town meeting over landscape plans",
-          "publisher": "Page Six",
+          "url": "https://investingnews.com/nyse-honors-those-who-have-served-on-veterans-day-nyse-content-update/",
+          "title": "NYSE Honors Those Who Have Served on Veterans Day: NYSE Content Update",
+          "publisher": "Investing News Network",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVy6dYMrRKGM7f9o0Bjd8InoBUDdEmIhYyNzzrHlVT1BtRzk7PPNlNiDg749o"
+          "image_url": null
         },
         {
-          "url": "https://www.beaconjournal.com/story/news/2026/11/11/taylor-swift-travis-kelce-bratenahl-ohio-home-plans-meeting-neighbors-vocal/92723006007/",
-          "title": "Kelce, Swift get Ohio mansion plans approved despite some neighbors' outcry",
-          "publisher": "Akron Beacon Journal",
+          "url": "https://www.military.com/video/united-states-armed-forces-rings-opening-bell-at-new-york-stock-exchange",
+          "title": "United States Armed Forces Rings Opening Bell at New York Stock Exchange",
+          "publisher": "Military.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK-7We0lT2BArJYHVRe2L5mnP_lPdwoOCWygPxPzBFL4T3VZYA7E5n5D9n82A"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTL4uSf5qpmr3-u3OFIkK5WAe4q4iYd2Vn9UWjIMrDLP7K9967NYoxKuXdxAwg"
+        }
+      ]
+    },
+    {
+      "query": "john turturro",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T14:10:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/john-turturro-says-worked-abusive-151028482.html",
+        "https://www.businessinsider.com/john-turturro-abusive-directors-to-live-and-die-in-la-2026-11",
+        "https://variety.com/2026/film/news/gatto-trailer-pixar-mark-ruffalo-cat-mobster-1236834790/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRconK4sUUTlFpTqRPW2bAUJOhJjfImZ5LUusgSoAk6S8b8f3_7P3xvQpDi0YE",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/john-turturro-says-worked-abusive-151028482.html",
+          "title": "John Turturro says he worked with 'abusive' directors early in his career",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRconK4sUUTlFpTqRPW2bAUJOhJjfImZ5LUusgSoAk6S8b8f3_7P3xvQpDi0YE"
+        },
+        {
+          "url": "https://www.businessinsider.com/john-turturro-abusive-directors-to-live-and-die-in-la-2026-11",
+          "title": "John Turturro Says He Worked With 'Abusive' Directors Early in His Career",
+          "publisher": "Business Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2r6a8PsCVYgHagZc7b_xgqq9TEX2hxT3PGH2zELjvKprEGH_YJg3y2E7WS0s"
+        },
+        {
+          "url": "https://variety.com/2026/film/news/gatto-trailer-pixar-mark-ruffalo-cat-mobster-1236834790/",
+          "title": "‘Gatto’ Trailer: A Mobster Cat Is on His Last Life in Pixar’s New Animated Movie",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAbNIOHMnbk9Imt-HYD4n5KJ_ncxg49H8kJbRV6MHkiDO4fsKXF1tvxmwFxew"
+        }
+      ]
+    },
+    {
+      "query": "sirik",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T14:00:00Z",
+      "related_news_urls": [
+        "https://www.aljazeera.com/news/liveblog/2026/11/13/iran-war-live-riyadh-china-discuss-houthis-as-group-claims-aramco-attacks",
+        "https://www.theguardian.com/world/2026/nov/13/iran-us-radar-bahrain-sirik-hormuz",
+        "https://apnews.com/article/iran-us-bahrain-radar-strait-hormuz-5d73a23b5b8647d2515c35b267b36c08"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgligIGAhZcj7Op5-B5c4oI1-k2ACRm8EMmHuX9UGkPc-MzMC5b7-04N0JRMM",
+      "image_credit": "Al Jazeera",
+      "news": [
+        {
+          "url": "https://www.aljazeera.com/news/liveblog/2026/11/13/iran-war-live-riyadh-china-discuss-houthis-as-group-claims-aramco-attacks",
+          "title": "Iran war live: US says shot down 2 drones over Bahrain, denies radar strike",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgligIGAhZcj7Op5-B5c4oI1-k2ACRm8EMmHuX9UGkPc-MzMC5b7-04N0JRMM"
+        },
+        {
+          "url": "https://www.theguardian.com/world/2026/nov/13/iran-us-radar-bahrain-sirik-hormuz",
+          "title": "Iran says it destroyed US military radar in Bahrain in retaliatory strike",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBwFzMkiB8FN6R49fH_fWv4WOmNlZUI-idf-zhWPiqfx6vCMC_158JshDxs2A"
+        },
+        {
+          "url": "https://apnews.com/article/iran-us-bahrain-radar-strait-hormuz-5d73a23b5b8647d2515c35b267b36c08",
+          "title": "US military downs 2 Iranian attack drones as Iran claims a strike on a US radar in Bahrain",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzDAr_w-D59j1rDgAMgyHk6t3PS54q5wSq9oGWvBbN_eGVi5Squ2ZUVHFuFq0"
+        }
+      ]
+    },
+    {
+      "query": "forex factory",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T13:50:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/business/us-treasury-chief-says-fed-should-not-hike-rates-over-energy-shock-tied-iran-war-2026-11-13/",
+        "https://www.forexfactory.com/news/1436229-bessent-fed-should-understand-that-this-is-an",
+        "https://www.tokenpost.com/news/regulation/56708"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR-JDfQ-LT_bm2zfHjBPYly3MM0clKtJLis5eACuKLbQQ2Tke_WCsiURdzqig",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/business/us-treasury-chief-says-fed-should-not-hike-rates-over-energy-shock-tied-iran-war-2026-11-13/",
+          "title": "US Treasury chief says Fed should not hike rates over energy shock tied to Iran war",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR-JDfQ-LT_bm2zfHjBPYly3MM0clKtJLis5eACuKLbQQ2Tke_WCsiURdzqig"
+        },
+        {
+          "url": "https://www.forexfactory.com/news/1436229-bessent-fed-should-understand-that-this-is-an",
+          "title": "Bessent: Fed Should Understand That This Is An Energy Supply Shock",
+          "publisher": "Forex Factory",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIlSTkWvwjhpvaz-H24CFHJNtOHi2BLDMQ-0-6qhmM56oTPYK5bY3p-yl"
+        },
+        {
+          "url": "https://www.tokenpost.com/news/regulation/56708",
+          "title": "Bessent Says Four Recent Bond Auctions Were Strongest in 20 Years",
+          "publisher": "www.tokenpost.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_r5iNcYGFdwSVTe9EEQaDzaX_Ow-oL7GJC_Fu5UCR-OfQaFwh46uO8Js5SVE"
+        }
+      ]
+    },
+    {
+      "query": "taylor swift",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-13T13:40:00Z",
+      "related_news_urls": [
+        "https://www.goodmorningamerica.com/culture/story/taylor-swift-perform-cmas-1st-time-13-years-138104764",
+        "https://www.tennessean.com/story/entertainment/music/taylor-swift/2026/11/13/taylor-swift-2026-cma-awards-performance/92563780007/",
+        "https://idahonews.com/news/entertainment/taylor-swift-performing-at-60th-annual-cma-awards-in-nashville-tennessee-country-music-i-knew-it-i-knew-you-single-of-the-year-nomination"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW5wCulqaq2YfXKLn3yI2qVq9c_KVAAIRkD-6a8YzHnJFX8KoHPmSBa_28L-M",
+      "image_credit": "Good Morning America",
+      "news": [
+        {
+          "url": "https://www.goodmorningamerica.com/culture/story/taylor-swift-perform-cmas-1st-time-13-years-138104764",
+          "title": "Taylor Swift to perform at CMAs for 1st time in 13 years",
+          "publisher": "Good Morning America",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW5wCulqaq2YfXKLn3yI2qVq9c_KVAAIRkD-6a8YzHnJFX8KoHPmSBa_28L-M"
+        },
+        {
+          "url": "https://www.tennessean.com/story/entertainment/music/taylor-swift/2026/11/13/taylor-swift-2026-cma-awards-performance/92563780007/",
+          "title": "Taylor Swift to perform at CMA Awards for first time in 13 years",
+          "publisher": "The Tennessean",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAiQPzBzkizSV4PhFZCOvyBEUyebThl7_tu8nfOjaBFJGg6X_6F51QOMdfC2c"
+        },
+        {
+          "url": "https://idahonews.com/news/entertainment/taylor-swift-performing-at-60th-annual-cma-awards-in-nashville-tennessee-country-music-i-knew-it-i-knew-you-single-of-the-year-nomination",
+          "title": "Taylor Swift performing at 60th annual CMA Awards in Nashville",
+          "publisher": "KBOI",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWnQQg74FbxwkzkZA6FgUj46U4aiWHlqaKbv0n6XsQasHIv0Leyb-zkqF1EjM"
         }
       ]
     },
@@ -47,8 +187,8 @@
       "published_at": "2026-11-13T13:40:00Z",
       "related_news_urls": [
         "https://www.theguardian.com/tv-and-radio/2026/nov/13/12-12-12-review-anthony-mackie-jamie-dornan-heist",
-        "https://pagesix.com/2026/11/12/entertainment/where-to-watch-jamie-dornan-in-new-12-12-12-series-for-free/",
-        "https://www.yahoo.com/entertainment/tv/articles/heist-thriller-12-12-12-120021119.html"
+        "https://www.today.com/video/anthony-mackie-talks-12-12-12-and-avengers-doomsday-273444421915",
+        "https://pagesix.com/2026/11/12/entertainment/where-to-watch-jamie-dornan-in-new-12-12-12-series-for-free/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPjhGPI7JthDlZckMuQIGWkwD7GUuO0Dfc-YEuQPrfX7yJ1gi6YCU_33sbdkk",
       "image_credit": "The Guardian",
@@ -61,158 +201,88 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPjhGPI7JthDlZckMuQIGWkwD7GUuO0Dfc-YEuQPrfX7yJ1gi6YCU_33sbdkk"
         },
         {
+          "url": "https://www.today.com/video/anthony-mackie-talks-12-12-12-and-avengers-doomsday-273444421915",
+          "title": "Anthony Mackie Talks New High-Stakes Heist Thriller ‘12 12 12’",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREEIYY6i2k92c4sCnO9NhczSeXU3eYWUV_pd1jI2wKJUDRK5HHSAJirtcaUas"
+        },
+        {
           "url": "https://pagesix.com/2026/11/12/entertainment/where-to-watch-jamie-dornan-in-new-12-12-12-series-for-free/",
           "title": "Where to watch Jamie Dornan, Anthony Mackie in ‘12 12 12’ series for free",
           "publisher": "Page Six",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4n6Wmej-7xyfukblIf-eCeJBt0wjxZkgdwnHfrp7FEMo3jFimPJ3i4XwMDEY"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/heist-thriller-12-12-12-120021119.html",
-          "title": "Heist Thriller ’12 12 12′ & ‘Being Heumann’ on Apple TV, Jessica Chastain in ‘Heartland,’ Marg Helgenberger Visits ‘Boston’",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOTEN8-5lLkEhOTDkMS_dmZTeMHCKyYJ_XYFiF_1ZtiQzFkyDyJl8cf7KhdvE"
         }
       ]
     },
     {
-      "query": "good morning america taylor swift",
+      "query": "warren buffett investing tips downturn",
       "approx_searches": "200+",
       "published_at": "2026-11-13T13:40:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/music/new-albums/articles/taylor-swift-handwritten-note-fans-141027590.html",
-        "https://minutemirror.com.pk/taylor-swift-to-appear-at-critics-choice-virtual-press-conference-amid-oscar-buzz-659342/",
-        "https://www.geo.tv/latest/690946-taylor-swift-causes-fan-spiral-after-good-morning-america-promo"
+        "https://finance.yahoo.com/markets/stocks/articles/stock-market-crash-coming-warren-072902853.html",
+        "https://247wallst.com/investing/2026/11/06/stocks-just-had-their-worst-week-since-april-heres-warren-buffetts-rule-for-a-74-year-old-who-must-withdraw-39216-by-dec-31/",
+        "https://www.theglobeandmail.com/investing/markets/stocks/NVDA/pressreleases/8755975/bill-ackman-and-warren-buffett-both-have-the-same-warning-about-the-stock-market/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrNoV3NofoolhaGQjctaTqjsAiWN4aFMiWiUCzM0oAlhZrfULoWc8iFUlYU2g",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZeKFIv_XcnoeNY7PbL60qhSj4BzB6XMnYN3fwOXSKyVac1lsoYO79Wxe_y5k",
+      "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/music/new-albums/articles/taylor-swift-handwritten-note-fans-141027590.html",
-          "title": "Taylor Swift’s New Handwritten Note Has Fans Speculating About a Christmas Drop...or a Surprise Album",
-          "publisher": "Yahoo",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-crash-coming-warren-072902853.html",
+          "title": "If a Stock Market Crash Is Coming, Warren Buffett’s 6-Word Advice Is the Smartest Move You Can Make",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrNoV3NofoolhaGQjctaTqjsAiWN4aFMiWiUCzM0oAlhZrfULoWc8iFUlYU2g"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZeKFIv_XcnoeNY7PbL60qhSj4BzB6XMnYN3fwOXSKyVac1lsoYO79Wxe_y5k"
         },
         {
-          "url": "https://minutemirror.com.pk/taylor-swift-to-appear-at-critics-choice-virtual-press-conference-amid-oscar-buzz-659342/",
-          "title": "Taylor Swift to appear at Critics Choice virtual press conference amid Oscar buzz",
-          "publisher": "Minute Mirror",
+          "url": "https://247wallst.com/investing/2026/11/06/stocks-just-had-their-worst-week-since-april-heres-warren-buffetts-rule-for-a-74-year-old-who-must-withdraw-39216-by-dec-31/",
+          "title": "Stocks Just Had Their Worst Week Since April. Here's Warren Buffett's Rule for a 74-Year-Old Who Must Withdraw $39,216 by Dec. 31.",
+          "publisher": "24/7 Wall St.",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShzuCXlhxxqPSupLQND7Id7nEjhH7Jk3P4DSy2TuHNzIimiPxe4kjidwhYtY0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYmyli_1Vz10b5VxUK0wtrH1s47bXXEv6d5W-zusfVDTjot8uybZiWfcpFK-E"
         },
         {
-          "url": "https://www.geo.tv/latest/690946-taylor-swift-causes-fan-spiral-after-good-morning-america-promo",
-          "title": "Taylor Swift causes fan spiral after 'Good Morning America' promo",
-          "publisher": "Geo News",
+          "url": "https://www.theglobeandmail.com/investing/markets/stocks/NVDA/pressreleases/8755975/bill-ackman-and-warren-buffett-both-have-the-same-warning-about-the-stock-market/",
+          "title": "Bill Ackman and Warren Buffett Both Have the Same Warning About the Stock Market",
+          "publisher": "The Globe and Mail",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQISe0YJV3B01C_3IS06ebIayvtw2Lv4AnkZcJGjlUTwnyz_AA733NDJkiqyWM"
-        }
-      ]
-    },
-    {
-      "query": "taylor swift gma",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T13:30:00Z",
-      "related_news_urls": [
-        "https://www.eonline.com/news/1438024/taylor-swift-is-not-performing-in-dolly-parton-tribute-at-cma-awards-2026",
-        "https://www.yahoo.com/entertainment/music/articles/taylor-swift-dolly-parton-tribute-080522794.html",
-        "https://sports.ndtv.com/us/nfl/taylor-swift-fans-receive-disappointing-cmas-news-before-kansas-city-chiefs-atlanta-falcons-game-12317124"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSX3vYNxHNc0xG2UXHQJFqkwQtPeAxyjvZdLGP0HPTLbRHnzhPAkcn_mqQDSac",
-      "image_credit": "E! News",
-      "news": [
-        {
-          "url": "https://www.eonline.com/news/1438024/taylor-swift-is-not-performing-in-dolly-parton-tribute-at-cma-awards-2026",
-          "title": "Is Taylor Swift Participating in the Dolly Parton Tribute at CMA Awards 2026? The Truth",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSX3vYNxHNc0xG2UXHQJFqkwQtPeAxyjvZdLGP0HPTLbRHnzhPAkcn_mqQDSac"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/music/articles/taylor-swift-dolly-parton-tribute-080522794.html",
-          "title": "Taylor Swift’s Dolly Parton Tribute Rumor at CMA Hits a Snag — Source",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrYSC0GtazGgIf91L0U2-bA8YWUcPpM3YI94n3U4RlBlY0WoA016TRAn8Whws"
-        },
-        {
-          "url": "https://sports.ndtv.com/us/nfl/taylor-swift-fans-receive-disappointing-cmas-news-before-kansas-city-chiefs-atlanta-falcons-game-12317124",
-          "title": "Taylor Swift Fans Receive Disappointing CMAs News Before Kansas City Chiefs-Atlanta Falcons Game",
-          "publisher": "NDTV Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0nxE6n086AbtvKsv77pkUoO-L5ykNHY4_dTNHlpVtQQk5DxmLDUG8k4yogVk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUGTnvTwa0I2UpantPicOS3psUs46VBwyHEQYy_boWy1Esj-mZRjZJx-5KonU"
         }
       ]
     },
     {
       "query": "christian bale",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-13T13:30:00Z",
       "related_news_urls": [
-        "https://3dvf.com/en/spielberg-s-forgotten-war-film-launched-christian-bale-and-ben-stiller-and-it-secretly-birthed-tropi/",
-        "https://people.com/christian-bale-says-he-can-see-daughter-luka-21-directing-him-one-day-12240202",
-        "https://www.eonline.com/news/1437862/christian-bale-details-his-sibi-blazics-daughter-lukas-career-as-model"
+        "https://people.com/christian-bale-and-nicolas-cage-walked-around-shared-trailer-in-undies-exclusive-12238096",
+        "https://www.krem.com/video/sports/locked-on/lo-bay-area/locked-on-raiders-hit/christian-bale-said-this-about-las-vegas-raiders-and-al-davis-you-wont-believe-the-impact/535-65dccb47-9600-4d99-8043-3a6a2b21c0b9",
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/christian-bale-plucked-eyebrows-took-120000240.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2IY6IfjOpOb-fZ5c7xhNNfpkDXocqvyaillJ-kygCNGnzIJbdRwhjZMRZAg4",
-      "image_credit": "3DVF",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRiHtUH-BDE8Jiq6cr9rq3t70GmBPjNyC6wxBJHg-jgzY3UWURDD_3bTSS_YKY",
+      "image_credit": "People.com",
       "news": [
         {
-          "url": "https://3dvf.com/en/spielberg-s-forgotten-war-film-launched-christian-bale-and-ben-stiller-and-it-secretly-birthed-tropi/",
-          "title": "Spielberg's forgotten war film launched Christian Bale AND Ben Stiller, and it secretly birthed Tropic Thunder",
-          "publisher": "3DVF",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2IY6IfjOpOb-fZ5c7xhNNfpkDXocqvyaillJ-kygCNGnzIJbdRwhjZMRZAg4"
-        },
-        {
-          "url": "https://people.com/christian-bale-says-he-can-see-daughter-luka-21-directing-him-one-day-12240202",
-          "title": "Christian Bale Says He Can See Daughter Luka, 21, Directing Him One Day: ‘So Bloody Proud of Her’",
+          "url": "https://people.com/christian-bale-and-nicolas-cage-walked-around-shared-trailer-in-undies-exclusive-12238096",
+          "title": "Christian Bale and Nicolas Cage Walked Around Shared Trailer in ‘Undies’ (Exclusive)",
           "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJw0GBWIbGHr00cHf615-fPYyigDTF3jQZHV7foOn1AB9NVyW2PCrF1DSkB0A"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRiHtUH-BDE8Jiq6cr9rq3t70GmBPjNyC6wxBJHg-jgzY3UWURDD_3bTSS_YKY"
         },
         {
-          "url": "https://www.eonline.com/news/1437862/christian-bale-details-his-sibi-blazics-daughter-lukas-career-as-model",
-          "title": "Christian Bale Shares Rare Insight Into His Daughter Luka's Modeling and Directing Career",
-          "publisher": "E! News",
+          "url": "https://www.krem.com/video/sports/locked-on/lo-bay-area/locked-on-raiders-hit/christian-bale-said-this-about-las-vegas-raiders-and-al-davis-you-wont-believe-the-impact/535-65dccb47-9600-4d99-8043-3a6a2b21c0b9",
+          "title": "Christian Bale Said This About Las Vegas Raiders and Al Davis You Won’t Believe the Impact",
+          "publisher": "KREM",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR90H3ZE3m5MRgAA-Lke-8rP-gyrLriuoUCQEkOdXWX9cSEMHjKcPMlFhpRLs"
-        }
-      ]
-    },
-    {
-      "query": "taylor swift announcement",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T13:30:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/articles/photo-taylor-swift-travis-kelce-142857088.html",
-        "https://www.kansascity.com/sports/spt-columns-blogs/for-petes-sake/article318040810.html",
-        "https://www.instyle.com/taylor-swift-poses-travis-kelce-red-sweater-hancock-county-humane-foundation-12249632"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBAzoDbmTQ8KchN6LbKy8xlC3MkPFLUeV5QdkB8RwBtxSwrtmH_siuJa-Rxrc",
-      "image_credit": "Yahoo",
-      "news": [
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyDZB2j8YfSICmV59ibfGfvgtEKrc4SDKHQ4VxYxQcSiEYZ5Zfp_rSvToGwrQ"
+        },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/photo-taylor-swift-travis-kelce-142857088.html",
-          "title": "New Photo of Taylor Swift and Travis Kelce Reveals Surprising Details About Their Wedding",
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/christian-bale-plucked-eyebrows-took-120000240.html",
+          "title": "Christian Bale Plucked His Eyebrows, Took Extreme Measures for Madden Role",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBAzoDbmTQ8KchN6LbKy8xlC3MkPFLUeV5QdkB8RwBtxSwrtmH_siuJa-Rxrc"
-        },
-        {
-          "url": "https://www.kansascity.com/sports/spt-columns-blogs/for-petes-sake/article318040810.html",
-          "title": "West Virginia shelter reveals fun detail of Travis Kelce-Taylor Swift wedding",
-          "publisher": "Kansas City Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzeX9ODiZNxqWVRHadgPnd8_jNjaCWb437T9MRMUQOTx3MGeiwLq3n4Scj4TY"
-        },
-        {
-          "url": "https://www.instyle.com/taylor-swift-poses-travis-kelce-red-sweater-hancock-county-humane-foundation-12249632",
-          "title": "Taylor Swift Poses in Festive Red With Husband Travis Kelce for a Meaningful Cause",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmcRMDUEKt4HdDQZLRCIj1EtZU4JOQDA57ylzKnSbWjKh4g3kj0aDlRbv4Yv8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0R-H37TGrdlwdkHf1d2JMaAU8vioqqjzKakz5b-yWv0VvO2cYJQpJxYnh77A"
         }
       ]
     },
@@ -258,7 +328,7 @@
       "related_news_urls": [
         "https://seekingalpha.com/news/4671653-fridays-economic-calendar",
         "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html",
-        "https://www.cnn.com/2026/11/13/economy/us-wholesale-inflation-ppi-october"
+        "https://www.marketwatch.com/livecoverage/ppi-report-today-october-inflation-fed-rates-live-updates"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStejFtWbvbew8i1bFGDq_ih0-gnitD3esnprLu6g66GnLDWL3eNXEd5EAivHM",
       "image_credit": "Seeking Alpha",
@@ -278,81 +348,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcda_y_lRvNv4BGuE3JhTD28514j8Vc3KbjDO0wWGaRHnk2aQH7rSQHyrOXwA"
         },
         {
-          "url": "https://www.cnn.com/2026/11/13/economy/us-wholesale-inflation-ppi-october",
-          "title": "Wholesale inflation rose in October to highest annual rate in nearly four years",
-          "publisher": "CNN",
+          "url": "https://www.marketwatch.com/livecoverage/ppi-report-today-october-inflation-fed-rates-live-updates",
+          "title": "PPI report moments away: Hot wholesale inflation could raise odds of a bigger Fed rate hike — live updates",
+          "publisher": "MarketWatch",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSagPMWF3C_eNVJyph4i4DTgAYT_xNIvUEkFEF_DIkKzDctm3mp_DetxYeO3Q"
-        }
-      ]
-    },
-    {
-      "query": "gma",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T13:20:00Z",
-      "related_news_urls": [
-        "https://www.tvinsider.com/1302973/george-stephanopoulos-blushes-as-wife-ali-wentworth-dishes-on-home-life-gma/",
-        "https://people.com/george-stephanopoulos-ali-wentworth-25-years-marriage-good-morning-america-12249138",
-        "https://www.imdb.com/news/ni66106285/?ref_=nwc_art_perm"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjkPBGIbS84yQMqLYV-onZ1sd3zCyO-mGmVrE369TzyhWXCkpJhr058P6ddMo",
-      "image_credit": "TV Insider",
-      "news": [
-        {
-          "url": "https://www.tvinsider.com/1302973/george-stephanopoulos-blushes-as-wife-ali-wentworth-dishes-on-home-life-gma/",
-          "title": "'GMA's George Stephanopoulos Blushes as Wife Spills on Their Home Life",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjkPBGIbS84yQMqLYV-onZ1sd3zCyO-mGmVrE369TzyhWXCkpJhr058P6ddMo"
-        },
-        {
-          "url": "https://people.com/george-stephanopoulos-ali-wentworth-25-years-marriage-good-morning-america-12249138",
-          "title": "George Stephanopoulos and Ali Wentworth Mark 25 Years of Marriage on ‘GMA’",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4fQjI0wzNjUFmBI_vd5zXe8AMMa7vv7sNQv39sgCNJW9GOTnq_X8nwpk3sZA"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66106285/?ref_=nwc_art_perm",
-          "title": "‘GMA’s George Stephanopoulos Blushes as Wife Ali Wentworth Spills on Home Life",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTppCUioa_wKMyNzzof3_8PiGSovYcD-qnxThtV-xwQUzxFRykzB7d_p-3Mb7E"
-        }
-      ]
-    },
-    {
-      "query": "sam hartman",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-13T13:10:00Z",
-      "related_news_urls": [
-        "https://abc7ny.com/story/bachelor-season-30-feature-nfl-quarterback-sam-hartman/20038127/",
-        "https://sports.yahoo.com/nfl/breaking-news/article/ex-notre-dame-and-current-washington-commanders-qb-sam-hartman-to-be-the-next-bachelor-133028697.html",
-        "https://www.wsoctv.com/news/local/nfl-quarterback-charlotte-native-sam-hartman-is-set-lead-bachelor-season-30/5YLKD63I5NFBLMZP7CSBIXLCBI/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQjoQwKh4F9f9xHat6O9pSM7z4KZZSBKEX87_w-R_a__iHwnkbNv4SJJh5ntM",
-      "image_credit": "ABC7 New York",
-      "news": [
-        {
-          "url": "https://abc7ny.com/story/bachelor-season-30-feature-nfl-quarterback-sam-hartman/20038127/",
-          "title": "'The Bachelor' season 30 to feature NFL quarterback Sam Hartman",
-          "publisher": "ABC7 New York",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQjoQwKh4F9f9xHat6O9pSM7z4KZZSBKEX87_w-R_a__iHwnkbNv4SJJh5ntM"
-        },
-        {
-          "url": "https://sports.yahoo.com/nfl/breaking-news/article/ex-notre-dame-and-current-washington-commanders-qb-sam-hartman-to-be-the-next-bachelor-133028697.html",
-          "title": "Ex-Notre Dame and current Washington Commanders QB Sam Hartman to be the next 'Bachelor'",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3wI6qZcWFTTEdom_WoHODGIJhYB05CT0_ak7Vi9zaXnBREjRDFNOYKlZ72GE"
-        },
-        {
-          "url": "https://www.wsoctv.com/news/local/nfl-quarterback-charlotte-native-sam-hartman-is-set-lead-bachelor-season-30/5YLKD63I5NFBLMZP7CSBIXLCBI/",
-          "title": "NFL quarterback, Charlotte native Sam Hartman is set to lead ‘The Bachelor’ Season 30",
-          "publisher": "WSOC TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgWE9sk3Uw755DnCqPpnrG45QKK1VVywspmb7HJp6DFEgvzdvhOZdIDbXkd8c"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXSHm2smqx7c_b3KLcOQzqvHqHW1Y_wG2s7Sc7lfzX_PxV-S1E34dre9CGsNA"
         }
       ]
     }
