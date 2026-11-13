@@ -3,9 +3,254 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T13:01:33.948668Z",
+  "checked_at": "2026-11-13T13:31:21.517624Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "alejandro tabilo",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T13:10:00Z",
+      "related_news_urls": [
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/2f0b0322-2901-476b-b46a-bf4930e53c46/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/bfc9c2e0-4f35-43c0-b277-ec60e009aa43/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/5e97adbf-5549-4e90-a7df-ba40127a6a5b/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwjeJDNtQkoglcP17Zs8kDMPVbcS2k7Wk_JL7k2oE8MGku1UZF-UZj1PuqAA4",
+      "image_credit": "Robinhood",
+      "news": [
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/2f0b0322-2901-476b-b46a-bf4930e53c46/",
+          "title": "November 15, 2026: Jessica Pegula vs Mirra Andreeva Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwjeJDNtQkoglcP17Zs8kDMPVbcS2k7Wk_JL7k2oE8MGku1UZF-UZj1PuqAA4"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/bfc9c2e0-4f35-43c0-b277-ec60e009aa43/",
+          "title": "November 11, 2026: Carole Monnet vs Polona Hercog Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_ir327pUEu5_6dQBqTGLUeq0qh_19ljOSabOEVaLDNr0EaqVgSHEqdb4Tt1Q"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/5e97adbf-5549-4e90-a7df-ba40127a6a5b/",
+          "title": "November 11, 2026: Elizabeth Mandlik vs Lucia Bronzetti Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTX_iUlfqt2OTmNVjcu3PcCC_AHEq_-SEDVZkZ1vRYO8CC4Pn-8VLGcz5GEepI"
+        }
+      ]
+    },
+    {
+      "query": "steve miner",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T13:10:00Z",
+      "related_news_urls": [
+        "https://deadline.com/2026/11/new-friday-the-13th-movie-steve-miner-1237220585/",
+        "https://www.thewrap.com/creative-content/movies/friday-the-13th-producer-robbie-barsamian-interview-new-movie/",
+        "https://www.dreadcentral.com/news/597607/jason-returns-with-steve-miner-directing-a-new-jason-universe-film/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5CYg9NKNDRO0tu5IVyVDRBTloZhFLyHnppESyx6js4Knl0OoF7QqWC5F-B1c",
+      "image_credit": "Deadline",
+      "news": [
+        {
+          "url": "https://deadline.com/2026/11/new-friday-the-13th-movie-steve-miner-1237220585/",
+          "title": "'Friday The 13th' New Movie In Works; Steve Miner Directing",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5CYg9NKNDRO0tu5IVyVDRBTloZhFLyHnppESyx6js4Knl0OoF7QqWC5F-B1c"
+        },
+        {
+          "url": "https://www.thewrap.com/creative-content/movies/friday-the-13th-producer-robbie-barsamian-interview-new-movie/",
+          "title": "Producer Robbie Barsamian Talks New ‘Friday the 13th’ Entry and Getting Jason Back on the Big Screen | Exclusive",
+          "publisher": "TheWrap",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPecFtUC48kmyQBJNg-GQa6dunaBWsG-6Rf2ED-2XI7M3IYpyit1lI8H2fH6M"
+        },
+        {
+          "url": "https://www.dreadcentral.com/news/597607/jason-returns-with-steve-miner-directing-a-new-jason-universe-film/",
+          "title": "Jason Returns With Steve Miner Directing a New Jason Universe Film",
+          "publisher": "Dread Central",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFhjI-m0wO9byhwZ1xLcK8IrzigSZIdktxFKEZEfK6BQZxqrz2NG61TWrrB3s"
+        }
+      ]
+    },
+    {
+      "query": "ppi",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T13:10:00Z",
+      "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-12/stock-market-today-dow-s-p-live-updates",
+        "https://www.wsj.com/finance/stocks/stock-futures-lower-as-investors-look-to-u-s-inflation-data-5b1b5988",
+        "https://www.barrons.com/livecoverage/stock-market-news-today-111326/card/why-a-crazy-week-for-markets-faces-more-even-volatility-GtvKTGjdpoQTBLiLPXKv"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSexg-9JgvEMtF0f_qgew5XZBON2UX4oM_sPrN5etOhcW7KH-mWNzZ9kS_v1H8",
+      "image_credit": "Bloomberg.com",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-12/stock-market-today-dow-s-p-live-updates",
+          "title": "US Stocks Drift Before Inflation Test of Fed Bets: Markets Wrap",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSexg-9JgvEMtF0f_qgew5XZBON2UX4oM_sPrN5etOhcW7KH-mWNzZ9kS_v1H8"
+        },
+        {
+          "url": "https://www.wsj.com/finance/stocks/stock-futures-lower-as-investors-look-to-u-s-inflation-data-5b1b5988",
+          "title": "Stock Futures Lower as Investors Look to U.S. Inflation Data",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNonaw7qVTVf5XBtmHpZaHbbQj2zalVlDHo7fb3V0ZNOzDdvMVY076mRzeu_4"
+        },
+        {
+          "url": "https://www.barrons.com/livecoverage/stock-market-news-today-111326/card/why-a-crazy-week-for-markets-faces-more-even-volatility-GtvKTGjdpoQTBLiLPXKv",
+          "title": "Why a Crazy Week for Markets Faces More Even Volatility",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTcPTbuIn8cS5_mRZbrYgtfqpNlai5sbuGRESylJX8ci4I6ox4mG5twVG6gFvg"
+        }
+      ]
+    },
+    {
+      "query": "good morning america",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T13:00:00Z",
+      "related_news_urls": [
+        "https://abcnews.com/GMA/Shop/gma-deals-steals-gifting/story?id=138082156",
+        "https://www.goodmorningamerica.com/shop/story/exclusive-gma-digital-deals-steals-holiday-gift-guide-137907923",
+        "https://abc7.com/post/abc-secret-savings-best-deals-sales-november-2026/20025029/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRu4BBxz3V-NfHfr0lGzFmvgOJvDrX5JYm6MtlXyx7bGg_hoFRhAB_Lyg8cJ3I",
+      "image_credit": "ABC News - Breaking News, Latest News and Videos",
+      "news": [
+        {
+          "url": "https://abcnews.com/GMA/Shop/gma-deals-steals-gifting/story?id=138082156",
+          "title": "'GMA' Deals & Steals for gifting",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRu4BBxz3V-NfHfr0lGzFmvgOJvDrX5JYm6MtlXyx7bGg_hoFRhAB_Lyg8cJ3I"
+        },
+        {
+          "url": "https://www.goodmorningamerica.com/shop/story/exclusive-gma-digital-deals-steals-holiday-gift-guide-137907923",
+          "title": "Exclusive 'GMA' digital Deals & Steals Holiday Gift Guide",
+          "publisher": "Good Morning America",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTESPp205O4K-ihDGW8RqKwBlp21zJ649mSX57wGrPKKGHio6DKsQco47WSUqY"
+        },
+        {
+          "url": "https://abc7.com/post/abc-secret-savings-best-deals-sales-november-2026/20025029/",
+          "title": "ABC Secret Savings: Best deals and sales for November 2026",
+          "publisher": "ABC7 Los Angeles",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTN3g6L__aDzSpuNTFBcr3CnOoOUKJHs2OQpcHtaKpK2Tc1emoCX6RuIdBAEg4"
+        }
+      ]
+    },
+    {
+      "query": "aliyah boston",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T13:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/aliyah-boston-fuels-speculation-over-140000827.html",
+        "https://www.essentiallysports.com/wnba-basketball-news-i-just-dont-see-how-stephanie-white-can-return-wnba-broadcaster-questions-fever-hcs-future-as-aaliyah-boston-stays-silent/",
+        "https://sports.ndtv.com/us/nba/robin-lundberg-questions-stephanie-white-s-future-as-indiana-fever-coach-after-front-office-shake-up-12319278"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTn7VwN8icSgitmW82tKY_ljVcjzJy3cYERW5hGJOycXHfRmVgA-J5iPDa1tok",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/aliyah-boston-fuels-speculation-over-140000827.html",
+          "title": "Aliyah Boston fuels speculation over Stephanie White’s Indiana Fever future",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTn7VwN8icSgitmW82tKY_ljVcjzJy3cYERW5hGJOycXHfRmVgA-J5iPDa1tok"
+        },
+        {
+          "url": "https://www.essentiallysports.com/wnba-basketball-news-i-just-dont-see-how-stephanie-white-can-return-wnba-broadcaster-questions-fever-hcs-future-as-aaliyah-boston-stays-silent/",
+          "title": "\"I Just Don't See How Stephanie White Can Return\": WNBA Broadcaster Questions Fever HC's Future as Aliyah Boston Stays Silent",
+          "publisher": "EssentiallySports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXFoyW-5-MTPMGED_5ayVYDUwdFEtoetFlU2wTxvlXo-tjnFHfiEfi-G58a1I"
+        },
+        {
+          "url": "https://sports.ndtv.com/us/nba/robin-lundberg-questions-stephanie-white-s-future-as-indiana-fever-coach-after-front-office-shake-up-12319278",
+          "title": "Robin Lundberg Questions Stephanie White’s Future As Indiana Fever Coach After Front Office Shake-Up",
+          "publisher": "NDTV Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkw0J3OPReItXDepGN6z4H97z5WutYhf-XeWPEdGgyyoLuQtDch6_job44F8A"
+        }
+      ]
+    },
+    {
+      "query": "paraguay vs singapore",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T12:50:00Z",
+      "related_news_urls": [
+        "https://as.com/futbol/internacional/singapur-paraguay-en-vivo-amistoso-internacional-hoy-en-directo-f202611-d/",
+        "https://www.vssports.com.py/versus/2026/11/12/gustavo-alfaro-apunta-a-la-necesidad-de-sangre-nueva-en-la-albirroja",
+        "https://www.adndigital.com.py/plantel-completo-para-encarar-el-primer-desafio-en-singapur/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8_rzM4jB8qwuTy_v3bz5A06-yATmmlccJxUjHnDUYin4T6jjoFt52KKaNF6Q",
+      "image_credit": "Diario AS",
+      "news": [
+        {
+          "url": "https://as.com/futbol/internacional/singapur-paraguay-en-vivo-amistoso-internacional-hoy-en-directo-f202611-d/",
+          "title": "Singapur - Paraguay, en vivo: Amistoso internacional, hoy en directo",
+          "publisher": "Diario AS",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8_rzM4jB8qwuTy_v3bz5A06-yATmmlccJxUjHnDUYin4T6jjoFt52KKaNF6Q"
+        },
+        {
+          "url": "https://www.vssports.com.py/versus/2026/11/12/gustavo-alfaro-apunta-a-la-necesidad-de-sangre-nueva-en-la-albirroja",
+          "title": "Gustavo Alfaro apunta a la necesidad de sangre nueva en la Albirroja",
+          "publisher": "VS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTrck8qdNhSz6ABqM7WXfn0758_8U-GinXatLYh3jx2tOxLTAwG87_XGWM73A"
+        },
+        {
+          "url": "https://www.adndigital.com.py/plantel-completo-para-encarar-el-primer-desafio-en-singapur/",
+          "title": "Plantel completo para encarar el primer desafío en Singapur",
+          "publisher": "ADN Paraguayo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSiKtAFtpjAAMdJfQuKDGtNDdT1k3IMDGvEFtK3me7FTpw8CHowBgIAv0WFTug"
+        }
+      ]
+    },
+    {
+      "query": "candace cameron",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T12:50:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/de/news/ni66108292/?ref_=nwc_art_perm",
+        "https://www.yahoo.com/entertainment/tv/articles/full-house-star-candace-cameron-022607070.html",
+        "https://pagesix.com/2026/11/07/entertainment/candace-cameron-bure-sets-surprise-return-to-the-view/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNy62V1XPqIo1YRvKzodJowypbkZ0Z9Hr8GHn-wK0148Rau9SzRPp_KeBNsK8",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/de/news/ni66108292/?ref_=nwc_art_perm",
+          "title": "Candace Cameron Bure to Avoid This Subject in Return to ‘The View’",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNy62V1XPqIo1YRvKzodJowypbkZ0Z9Hr8GHn-wK0148Rau9SzRPp_KeBNsK8"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/full-house-star-candace-cameron-022607070.html",
+          "title": "‘Full House’ Star Candace Cameron Bure Is Returning to ‘The View’ After Previously Turning Down an Invitation",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3r5LKnzpVWa080O8Pxqet5kWCZk3vWa4E-P1eWZwXSuzIF5F_jyEYs2ZNXHI"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/07/entertainment/candace-cameron-bure-sets-surprise-return-to-the-view/",
+          "title": "Candace Cameron Bure sets surprise return to ‘The View’ after previously turning down invite",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCq6Mwl0ZspwNt0B7EL9ftnETSJGWVYRyJjw6ArqGEmlNK1ymwXbC1gWP4y9U"
+        }
+      ]
+    },
     {
       "query": "singapore vs paraguay",
       "approx_searches": "200+",
@@ -13,7 +258,7 @@
       "related_news_urls": [
         "https://www.espn.com/soccer/story/_/id/50461054/paraguay-brazil-ties-singapore-redemption-malaysia-humiliation",
         "https://www.yardbarker.com/general_sports/articles/singapore_vs_paraguay_lineups_preview/s1_17615_44555414",
-        "https://athlonsports.com/soccer/singapore-vs-paraguay-lineups-live-streaming-how-where-to-watch-on-tv"
+        "https://www.wvnews.com/sports/pro/singapore-paraguay-soccer/image_24dd16ce-f365-5f54-bb68-937ca2d980b7.html"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXKDLfexpSOZaG1Eiybc1O-LD9aDInrZ2M5As2nJsSp3Kr26Obi5CzaAXnmro",
       "image_credit": "ESPN",
@@ -33,17 +278,52 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTY1RjI6FERQr7ZvnjLSEu2V2B_MiSNTV_6Ng49DbKadceZccM355TJhifche4"
         },
         {
-          "url": "https://athlonsports.com/soccer/singapore-vs-paraguay-lineups-live-streaming-how-where-to-watch-on-tv",
-          "title": "Singapore vs. Paraguay Lineups, Live Streaming, How & Where to Watch on TV",
-          "publisher": "Athlon Sports",
+          "url": "https://www.wvnews.com/sports/pro/singapore-paraguay-soccer/image_24dd16ce-f365-5f54-bb68-937ca2d980b7.html",
+          "title": "Singapore Paraguay Soccer",
+          "publisher": "WV News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSc64tQadbTjuxCuC15tYscGYW4x9PhEKd-chX_sGcNHoP0F6KqMjvTdsQl-Ak"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGkeIlQHwZZzYOEcuwJzrMfp8oTqy-eDl3lM8ypwHJIYJMYUO9rq6bXWF6KAM"
+        }
+      ]
+    },
+    {
+      "query": "cillian murphy",
+      "approx_searches": "100+",
+      "published_at": "2026-11-13T12:40:00Z",
+      "related_news_urls": [
+        "https://www.esquire.com/uk/culture/film/a74409453/tom-hardy-cillian-murphy-mind-bending-heist-drama-netflix/",
+        "https://www.irishstar.com/culture/entertainment/netflix-inception-streaming-cillian-murphy-37848499",
+        "https://www.hellomagazine.com/film/933620/tom-hardy-best-performance-inception-on-netflix/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjao61ITpvPD9NoesIkujMRQJxjdMW1X_qCNyl8-mAHoWifnmmZldzTgfFFZI",
+      "image_credit": "Esquire",
+      "news": [
+        {
+          "url": "https://www.esquire.com/uk/culture/film/a74409453/tom-hardy-cillian-murphy-mind-bending-heist-drama-netflix/",
+          "title": "\"More Than a Sci-Fi\": Tom Hardy & Cillian Murphy's \"Mind-Bending\" Heist Drama is on Netflix Now",
+          "publisher": "Esquire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjao61ITpvPD9NoesIkujMRQJxjdMW1X_qCNyl8-mAHoWifnmmZldzTgfFFZI"
+        },
+        {
+          "url": "https://www.irishstar.com/culture/entertainment/netflix-inception-streaming-cillian-murphy-37848499",
+          "title": "Best Picture-nominated thriller Inception starring Cillian Murphy is now streaming on Netflix",
+          "publisher": "Irish Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRv7HtydO0ojRGWOdaK6YKHh2vZAmHKLbGLdEla2iHSS5OLSAYLfDdBSBDEky0"
+        },
+        {
+          "url": "https://www.hellomagazine.com/film/933620/tom-hardy-best-performance-inception-on-netflix/",
+          "title": "'Tom Hardy's best performance': This Oscar-winning thriller is your Netflix weekend watch",
+          "publisher": "HELLO!",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMTPLLX5iDxDjQr-DahnovCjc83b6tXqKyY85RH3ZMLx84Ok2wqlArjUG_wuQ"
         }
       ]
     },
     {
       "query": "kim jong un flag redesign",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-13T12:30:00Z",
       "related_news_urls": [
         "https://www.wsj.com/world/asia/kim-jong-un-remakes-north-koreas-flag-ditching-soviet-era-version-c65efcfe",
@@ -73,278 +353,6 @@
           "publisher": "Korea JoongAng Daily",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxa48MSnc2DA2jpO_kT1yYx-wwi7E3Jv9jTOXW38WLAMkOFAAh0w6xwTrM5iI"
-        }
-      ]
-    },
-    {
-      "query": "hailey bieber",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T12:30:00Z",
-      "related_news_urls": [
-        "https://people.com/hailey-bieber-shares-cute-video-son-jack-following-dad-justin-musical-footsteps-playing-keyboard-12252403",
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/hailey-bieber-son-already-stealing-112047478.html",
-        "https://www.geo.tv/latest/690894-hailey-bieber-shares-adorable-video-of-son-jack-playing-piano"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5_3b8AKsTYWr_7fJU4fzekQxBcqVib8NjOGWB8w6upV4Arup4UTppkrX3iEQ",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/hailey-bieber-shares-cute-video-son-jack-following-dad-justin-musical-footsteps-playing-keyboard-12252403",
-          "title": "Hailey Bieber Shares Cute Video of Son Jack Following in His Dad Justin’s Musical Footsteps: ‘Blues Loves the Keys’",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5_3b8AKsTYWr_7fJU4fzekQxBcqVib8NjOGWB8w6upV4Arup4UTppkrX3iEQ"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/hailey-bieber-son-already-stealing-112047478.html",
-          "title": "Hailey Bieber’s Son Is Already Stealing Dad Justin’s Style in Every Way",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtcAx5uDG9d_xaXthYdMKFkVxgJv8q-U7zjzMI-2bjlTCoFTHbGEIIy55iNAk"
-        },
-        {
-          "url": "https://www.geo.tv/latest/690894-hailey-bieber-shares-adorable-video-of-son-jack-playing-piano",
-          "title": "Hailey Bieber shares adorable video of son Jack playing piano",
-          "publisher": "Geo News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZVa4_NbZk0aztMcHAUX5OFlgHVGCAfFqSzTht4AYs9FbR2WLskATag42pRs0"
-        }
-      ]
-    },
-    {
-      "query": "viernes 13",
-      "approx_searches": "100+",
-      "published_at": "2026-11-13T12:30:00Z",
-      "related_news_urls": [
-        "https://www.dallasnews.com/espanol/al-dia/vida-y-estilo/article/horoscopo-hoy-noviembre-13-astrologia-22528565.php",
-        "https://www.elnuevoherald.com/entretenimiento/walter-mercado/article318011083.html",
-        "https://www.vanitatis.elconfidencial.com/horoscopo/2026-11-13/horoscopo-hoy-que-dicen-astros-viernes-13-noviembre-1qrt_4463883/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSismMX0G9uAv_NFjleqTDlbOHjIPrdXMaZuUPujSLEc8bZxBzGhSSJHX4Qa5w",
-      "image_credit": "Dallas News",
-      "news": [
-        {
-          "url": "https://www.dallasnews.com/espanol/al-dia/vida-y-estilo/article/horoscopo-hoy-noviembre-13-astrologia-22528565.php",
-          "title": "Horóscopo para hoy, viernes 13 de noviembre para los 12 signos del zodiaco",
-          "publisher": "Dallas News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSismMX0G9uAv_NFjleqTDlbOHjIPrdXMaZuUPujSLEc8bZxBzGhSSJHX4Qa5w"
-        },
-        {
-          "url": "https://www.elnuevoherald.com/entretenimiento/walter-mercado/article318011083.html",
-          "title": "Horóscopo para viernes 13 de noviembre de Las Estrellas de Walter Mercado",
-          "publisher": "El Nuevo Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzYO_oE9gmV5C5EeIfZb4bJna4u5_FNBwwq6aGFYyoQy-XIx4ICWidXvaiC5c"
-        },
-        {
-          "url": "https://www.vanitatis.elconfidencial.com/horoscopo/2026-11-13/horoscopo-hoy-que-dicen-astros-viernes-13-noviembre-1qrt_4463883/",
-          "title": "Aries, Tauro, Géminis, Cáncer, Leo, Virgo, Libra, Escorpio, Sagitario, Capricornio, Acuario y Piscis: así será este viernes 13 de noviembre",
-          "publisher": "Vanitatis",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMtEG61jsrwA0mQyqmtrEUj9SvGJ3NppB3QGk0AdNcndhSZi3cDnb4PRM1Ess"
-        }
-      ]
-    },
-    {
-      "query": "keyata harman",
-      "approx_searches": "100+",
-      "published_at": "2026-11-13T12:30:00Z",
-      "related_news_urls": [
-        "https://www.fox19.com/2026/11/12/longtime-teacher-coach-killed-murder-suicide-weeks-after-filing-divorce/",
-        "https://www.barlowfh.com/obituary/Keyata-Harman",
-        "https://www.kentucky.com/news/state/kentucky/article318019535.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDnO4gMDcSozehNLAEeS7yAl3YjV8JoLgk2jA_SJKk_EuauFTsGOJPJafTXJg",
-      "image_credit": "FOX19 | Cincinnati",
-      "news": [
-        {
-          "url": "https://www.fox19.com/2026/11/12/longtime-teacher-coach-killed-murder-suicide-weeks-after-filing-divorce/",
-          "title": "Longtime teacher and coach killed in murder-suicide weeks after filing for divorce",
-          "publisher": "FOX19 | Cincinnati",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDnO4gMDcSozehNLAEeS7yAl3YjV8JoLgk2jA_SJKk_EuauFTsGOJPJafTXJg"
-        },
-        {
-          "url": "https://www.barlowfh.com/obituary/Keyata-Harman",
-          "title": "Obituary for Keyata Lynn Harman",
-          "publisher": "Barlow Funeral Home",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMDh1JqjOpRUppuy6D6w0XjpJHuLJAi758eXK2EqK4xhVT_QCNhNDCaeqWRPw"
-        },
-        {
-          "url": "https://www.kentucky.com/news/state/kentucky/article318019535.html",
-          "title": "Kentucky teacher, volleyball coach, shot by her husband in a murder-suicide",
-          "publisher": "Lexington Herald Leader",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhc3MOMtkmkXxvzA8Bj8JTmoMzYSox-KCofAyedJt4tWwf0tMJcE8IWmLZunQ"
-        }
-      ]
-    },
-    {
-      "query": "freeze",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T12:20:00Z",
-      "related_news_urls": [
-        "https://www.wbtv.com/2026/11/12/snow-forecast-western-north-carolina-big-temp-drop-approaches/",
-        "https://www.charlotteobserver.com/news/weather-news/article318042936.html",
-        "https://www.13newsnow.com/article/weather/weather-impact/weather-impact-alert-freeze-watch-forecast-saturday-cold-temperatures/291-1b1ae0f8-da37-432b-9036-4f6b1322a806"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOgUwnFb8dwjqlB46I_9uV5SZ0xGwm2rmJ4mN3ONbjcFhg4lKwCzN9D96UIUk",
-      "image_credit": "WBTV",
-      "news": [
-        {
-          "url": "https://www.wbtv.com/2026/11/12/snow-forecast-western-north-carolina-big-temp-drop-approaches/",
-          "title": "Snow in the forecast for Western North Carolina as big temp drop approaches",
-          "publisher": "WBTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOgUwnFb8dwjqlB46I_9uV5SZ0xGwm2rmJ4mN3ONbjcFhg4lKwCzN9D96UIUk"
-        },
-        {
-          "url": "https://www.charlotteobserver.com/news/weather-news/article318042936.html",
-          "title": "‘Widespread freeze’ expected for Charlotte. Here’s how low temperatures will go",
-          "publisher": "Charlotte Observer",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaoqAhWlL6_ElvBGjBLsKabdSDVldYZQZAiZ8RiXrbEESnp3yudz_DHbPNoZc"
-        },
-        {
-          "url": "https://www.13newsnow.com/article/weather/weather-impact/weather-impact-alert-freeze-watch-forecast-saturday-cold-temperatures/291-1b1ae0f8-da37-432b-9036-4f6b1322a806",
-          "title": "Freeze watch in effect for parts of Hampton Roads region to start the weekend",
-          "publisher": "13newsnow.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToJnCTP1nDllhV4ICCo-4LpJ3b5KJ0d49pM_cfHx1fawrWlbr4KTZoy2amDqw"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 map leak selfridges",
-      "approx_searches": "100+",
-      "published_at": "2026-11-13T12:20:00Z",
-      "related_news_urls": [
-        "https://rockstarintel.com/gta-vi-map-leaks-as-collectors-box-sold-early/",
-        "https://insider-gaming.com/gta-6-full-map-leak-online-from-collectors-box/",
-        "https://news.lavx.hu/article/leaked-collector-s-edition-poster-reveals-most-of-grand-theft-auto-6-s-leonida-map"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-oS3uNckpMrVoE9-UNRYKH7jRlVsnc6dhtTZq_PXZZkDmFL3EqxbdfHb3p3I",
-      "image_credit": "RockstarINTEL",
-      "news": [
-        {
-          "url": "https://rockstarintel.com/gta-vi-map-leaks-as-collectors-box-sold-early/",
-          "title": "GTA VI Map Leaks As Collector’s Box Sold Early",
-          "publisher": "RockstarINTEL",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-oS3uNckpMrVoE9-UNRYKH7jRlVsnc6dhtTZq_PXZZkDmFL3EqxbdfHb3p3I"
-        },
-        {
-          "url": "https://insider-gaming.com/gta-6-full-map-leak-online-from-collectors-box/",
-          "title": "Full GTA 6 Map Leaked Online From Collector’s Box",
-          "publisher": "Insider Gaming",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStJlIdWno0UC_YM-27C2Xy9M9UceAywJz8pT_pheZ_X9u8DbQGJqVCMjIX934"
-        },
-        {
-          "url": "https://news.lavx.hu/article/leaked-collector-s-edition-poster-reveals-most-of-grand-theft-auto-6-s-leonida-map",
-          "title": "Leaked Collector’s Edition poster reveals most of Grand Theft Auto 6’s Leonida map",
-          "publisher": "news.lavx.hu",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSl44kX7QottX6M7n6SI7vICcWi-nQSkk07FDYO8HeBpVBYkfYk-WqJHxNLWZI"
-        }
-      ]
-    },
-    {
-      "query": "putin news",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-13T12:00:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/12/politics/ukraine-witkoff-kushner-putin-peace-talks-intl",
-        "https://www.reuters.com/world/europe/us-russia-ukraine-start-second-day-abu-dhabi-peace-talks-2026-11-11/",
-        "https://www.atlanticcouncil.org/blogs/ukrainealert/putins-chief-negotiator-vows-to-return-every-inch-of-russian-land-in-ukraine/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToIiV3MjiTgw3-tC3z8BYgi4PSvNw96fzXvp6B8YnpcV5FCzCbPISwNCSB96s",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/12/politics/ukraine-witkoff-kushner-putin-peace-talks-intl",
-          "title": "Kushner says Europe to join next Ukraine talks, but Putin stands firm on territorial demands",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToIiV3MjiTgw3-tC3z8BYgi4PSvNw96fzXvp6B8YnpcV5FCzCbPISwNCSB96s"
-        },
-        {
-          "url": "https://www.reuters.com/world/europe/us-russia-ukraine-start-second-day-abu-dhabi-peace-talks-2026-11-11/",
-          "title": "Russia, Ukraine reach deal on prisoner swap as US says lack of trust holds back talks",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFqC3Mh-2MCwNXfqzUW-NFrbpXcULQvh4KMJ3Z-cK_3snYvUMKCN-E7ItP5eQ"
-        },
-        {
-          "url": "https://www.atlanticcouncil.org/blogs/ukrainealert/putins-chief-negotiator-vows-to-return-every-inch-of-russian-land-in-ukraine/",
-          "title": "Putin’s chief negotiator vows to return ‘every inch of Russian land’ in Ukraine",
-          "publisher": "Atlantic Council",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9CGqVMlKqYz5BwrV_QfDRF3yAcWYa9MWGbXLbil8-Jb3zHXLhox-itSW8GZc"
-        }
-      ]
-    },
-    {
-      "query": "ilhan omar news",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T12:00:00Z",
-      "related_news_urls": [
-        "https://www.ms.now/rachel-maddow-show/maddowblog/ilhan-omar-justice-department-trump-indict-former-bodyguard",
-        "https://www.nytimes.com/2026/11/11/us/ilhan-omar-ex-bodyguard-indicted-abdullahi-mohamed.html",
-        "https://www.nbcnews.com/politics/justice-department/doj-charged-somali-man-try-get-information-ilhan-omar-lawyer-says-rcna609030"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjBZDauKms5ttugdokNtxTSpcj29tdLgCiKJ6gTGzbpfBBd_uvSG3fIBziAPY",
-      "image_credit": "MS NOW",
-      "news": [
-        {
-          "url": "https://www.ms.now/rachel-maddow-show/maddowblog/ilhan-omar-justice-department-trump-indict-former-bodyguard",
-          "title": "Trump’s Justice Department accused of targeting Ilhan Omar by charging her bodyguard",
-          "publisher": "MS NOW",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjBZDauKms5ttugdokNtxTSpcj29tdLgCiKJ6gTGzbpfBBd_uvSG3fIBziAPY"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/11/us/ilhan-omar-ex-bodyguard-indicted-abdullahi-mohamed.html",
-          "title": "Somali Bodyguard Was Indicted in a Bid to Incriminate Ilhan Omar",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiuJBelWR0iNb-BViV-oWtczLwOQ1dcBpDdHirTcb3L7i7W24_VG6vN0vFCpY"
-        },
-        {
-          "url": "https://www.nbcnews.com/politics/justice-department/doj-charged-somali-man-try-get-information-ilhan-omar-lawyer-says-rcna609030",
-          "title": "DOJ charged Somali man to try to get information on Ilhan Omar, lawyer says",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQp4jOYrqKxOMYfs1piSfWV7dAixzuD6fO-afS2nbAzROpwpUzCgwAaHTi1XVE"
-        }
-      ]
-    },
-    {
-      "query": "ashley graham",
-      "approx_searches": "100+",
-      "published_at": "2026-11-13T12:00:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/videos/ashley-graham-fearless-fashion-icon-112659664.html",
-        "https://www.the-sun.com/entertainment/17281631/ashley-graham-bra-underwear-teal-dress/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsJCc0hyUm5O7JDVkIJr1M3QK6uSCNWBJ39DzkGoZYTrrsLrMo2iAvJzrMfow",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/videos/ashley-graham-fearless-fashion-icon-112659664.html",
-          "title": "Ashley Graham, The Fearless Fashion Icon Redefining Beauty and Confidence",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsJCc0hyUm5O7JDVkIJr1M3QK6uSCNWBJ39DzkGoZYTrrsLrMo2iAvJzrMfow"
-        },
-        {
-          "url": "https://www.the-sun.com/entertainment/17281631/ashley-graham-bra-underwear-teal-dress/",
-          "title": "Ashley Graham gives peek at black lace bra and underwear before getting dolled up in teal dress and coat",
-          "publisher": "The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWHEXip0YA_Vzq7K3sBQy7pnSe33wUSKEa2_cT1089zKQ1vjEO8FjTUXN1HMk"
         }
       ]
     }
