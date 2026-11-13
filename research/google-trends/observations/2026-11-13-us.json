@@ -3,9 +3,79 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T09:31:33.621798Z",
+  "checked_at": "2026-11-13T10:01:16.191430Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "christian langmo",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-13T09:30:00Z",
+      "related_news_urls": [
+        "https://www.coinbase.com/predictions/event/KXNHLGAME-26NOV11UTAVGK",
+        "https://www.coinbase.com/predictions/event/KXRAIN-26NOV12",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/15a5be0c-0146-4704-ab45-8cf22b0824db/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMkWw9_hkS4woSw5VwxFzpyfqSmu8LW2HuyVXYfgxVpDwoYwkcPytna703LeU",
+      "image_credit": "Coinbase",
+      "news": [
+        {
+          "url": "https://www.coinbase.com/predictions/event/KXNHLGAME-26NOV11UTAVGK",
+          "title": "Utah vs Vegas | Prediction Markets",
+          "publisher": "Coinbase",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMkWw9_hkS4woSw5VwxFzpyfqSmu8LW2HuyVXYfgxVpDwoYwkcPytna703LeU"
+        },
+        {
+          "url": "https://www.coinbase.com/predictions/event/KXRAIN-26NOV12",
+          "title": "Where will it rain on Nov 12, 2026? | Prediction Markets",
+          "publisher": "Coinbase",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqH5LcOOUMV3IO1B9I8HqzXbU_TNbbNGcE8_qKCaSuU7vjhG-VCs0xpkmAfEA"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/15a5be0c-0146-4704-ab45-8cf22b0824db/",
+          "title": "November 13, 2026: Yu Hsiou Hsu vs Rio Noguchi Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDae8C1Bo4Ym2UGwZrY1Rxts7DWpZwzUrktFLjUQX6aek-D6TNG0uzN_GaCHI"
+        }
+      ]
+    },
+    {
+      "query": "school closings",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T09:20:00Z",
+      "related_news_urls": [
+        "https://www.winknews.com/news/historic-tice-orangewood-schools-in-lee-county-could-close/article_2ca9c4c1-e141-44f2-abea-746a60526bb1.html",
+        "https://www.gulfcoastnewsnow.com/article/lee-county-school-closed-tice-orangewood-elementary/74416158",
+        "https://www.wgcu.org/top-story/2026-11-12/school-district-of-lee-county-hopes-to-close-two-elementary-schools-after-this-year"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Z_AiQNmgnLGrYVdobz_H7UzBar2yFLRa5zSQng1UHkEMJPHHT8U9IWimbFU",
+      "image_credit": "WINK News",
+      "news": [
+        {
+          "url": "https://www.winknews.com/news/historic-tice-orangewood-schools-in-lee-county-could-close/article_2ca9c4c1-e141-44f2-abea-746a60526bb1.html",
+          "title": "Historic Tice, Orangewood schools in Lee County could close",
+          "publisher": "WINK News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Z_AiQNmgnLGrYVdobz_H7UzBar2yFLRa5zSQng1UHkEMJPHHT8U9IWimbFU"
+        },
+        {
+          "url": "https://www.gulfcoastnewsnow.com/article/lee-county-school-closed-tice-orangewood-elementary/74416158",
+          "title": "Lee County school district considers closing two schools amid budget cuts",
+          "publisher": "Gulf Coast News and Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXVtp4auFGol7j2d8EnnFUoikyX8QMnK2kmQf1eMarv5xYsPlR6TY_pYsBP24"
+        },
+        {
+          "url": "https://www.wgcu.org/top-story/2026-11-12/school-district-of-lee-county-hopes-to-close-two-elementary-schools-after-this-year",
+          "title": "School District of Lee County plans to close two elementary schools in 2027",
+          "publisher": "WGCU",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjzWVZvOZ1kZxjo4rtvhqm7V6KZfhqKj6zBBkvn3ohshpEw_B8NIljCQL6ta0"
+        }
+      ]
+    },
     {
       "query": "gta vi",
       "approx_searches": "2000+",
@@ -38,41 +108,6 @@
           "publisher": "Variety",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThq-q30Yv2vaiBGA8K_5ePX1UXiPEd-dUwy26OMYbHE0dEx7RWh_lwqdf8D2k"
-        }
-      ]
-    },
-    {
-      "query": "lamar odom",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T09:10:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/12/khloe-kardashian-lamar-odom-documentary-reaction/92723786007/",
-        "https://www.eonline.com/news/1438045/khloe-kardashian-says-lamar-odom-is-dead-to-her-after-untold-documentary",
-        "https://pagesix.com/2026/11/12/entertainment/khloe-kardashian-slams-ex-lamar-odom-after-his-comments-on-their-marriage/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HYVbK0QEsYaupEpFct0Vx2IGLYxVDn0m8KHyj-UWQsDKwe8_i_Q36x6-be4",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/12/khloe-kardashian-lamar-odom-documentary-reaction/92723786007/",
-          "title": "Khloé Kardashian says Lamar Odom 'is dead to me' after this 'distasteful' move",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HYVbK0QEsYaupEpFct0Vx2IGLYxVDn0m8KHyj-UWQsDKwe8_i_Q36x6-be4"
-        },
-        {
-          "url": "https://www.eonline.com/news/1438045/khloe-kardashian-says-lamar-odom-is-dead-to-her-after-untold-documentary",
-          "title": "Khloe Kardashian Says Lamar Odom Is Dead to Her After His Controversial Comments",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRNd3XZKdQ9TfEOM8DKTsLp9XL1J9RPzMWha_8XJDgquHsYM7t_EtwWMhAmmQ"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/12/entertainment/khloe-kardashian-slams-ex-lamar-odom-after-his-comments-on-their-marriage/",
-          "title": "Khloé Kardashian issues brutal takedown of ex Lamar Odom after his ‘lame’ comments on their marriage",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_fnvxTWg8A3JsSjuv8PEtT-VpCnwH99uNKHnln0O_AuAUsiMZN0eFkgYyYEg"
         }
       ]
     },
@@ -118,7 +153,7 @@
       "related_news_urls": [
         "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-4th-odi-1539440/ball-by-ball-commentary",
         "https://www.nzherald.co.nz/sport/cricket/black-caps/black-caps-v-india-result-will-young-century-matt-henry-six-wicket-haul-see-new-zealand-to-huge-odi-victory/KFHN5ITDIBHJ7FSRUJQVTFGGCU/",
-        "https://www.rediff.com/cricket/report/three-ducks-in-one-over-india-suffer-2019-world-cup-flashbacks/20261113.htm"
+        "https://inshorts.com/en/news/india-suffer-their-second-biggest-defeat-in-odi-cricket-history-1794558598906"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTidvVCoo_Ps5botaRLslrGRzSHXztOqVatwoQywZ-eJfz5xMaXBeXyOfTP4Ug",
       "image_credit": "Cricinfo",
@@ -138,11 +173,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8hwKiMXYr-qyw9Cru8U1NeH0SGSAPNUu8FjUGz2yK4dfKp03Y2bW23GDtJVo"
         },
         {
-          "url": "https://www.rediff.com/cricket/report/three-ducks-in-one-over-india-suffer-2019-world-cup-flashbacks/20261113.htm",
-          "title": "Three Ducks in One Over! India Suffer 2019 World Cup Flashbacks",
-          "publisher": "Rediff",
+          "url": "https://inshorts.com/en/news/india-suffer-their-second-biggest-defeat-in-odi-cricket-history-1794558598906",
+          "title": "India suffer their second-biggest defeat in ODI cricket history | To view the match scorecard | Inshorts",
+          "publisher": "Inshorts",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOrDF1ATvXYv9-Rq7YX6fVx9AVDAja90H7Vp6bC7dW_6ldKVbCOXjxevq6zfw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfLmLCl3izCDj6VEFVXikVvlWEa30Nql_J9VRd2lH7TutWiHJUQCIWTArn30k"
         }
       ]
     },
@@ -252,48 +287,13 @@
       ]
     },
     {
-      "query": "new zealand breakers",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T07:40:00Z",
-      "related_news_urls": [
-        "https://kayosports.com.au/en-AU/competitor/Competitor:7ohxf7wf7hyk20sdhfdhc645k/1f40zanjm4qg412oet0wdv12xp/4rhu4qs3n063e46610dvgk3uu",
-        "https://www.nbl.com.au/news/dj-carlin-deliver-ot-win-for-breakers",
-        "https://sportsbook.fanduel.com/basketball/australian-nbl./brisbane-bullets-@-new-zealand-breakers-36289161?tab=player-defense"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQROY5B--t821x3O516jz-hSYar1R0Ob_o3DalpNQWEZLMxB7zua8Ap3WURpw8",
-      "image_credit": "Kayo Sports",
-      "news": [
-        {
-          "url": "https://kayosports.com.au/en-AU/competitor/Competitor:7ohxf7wf7hyk20sdhfdhc645k/1f40zanjm4qg412oet0wdv12xp/4rhu4qs3n063e46610dvgk3uu",
-          "title": "New Zealand v Brisbane",
-          "publisher": "Kayo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQROY5B--t821x3O516jz-hSYar1R0Ob_o3DalpNQWEZLMxB7zua8Ap3WURpw8"
-        },
-        {
-          "url": "https://www.nbl.com.au/news/dj-carlin-deliver-ot-win-for-breakers",
-          "title": "DJ, Carlin deliver OT win for Breakers",
-          "publisher": "NBL",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu8nr6HyS9g8xGvw6BZ1OGqV8OF8lBwYCRfzwvpzPSBAqy7JukfAhGVjOa8pA"
-        },
-        {
-          "url": "https://sportsbook.fanduel.com/basketball/australian-nbl./brisbane-bullets-@-new-zealand-breakers-36289161?tab=player-defense",
-          "title": "Brisbane Bullets @ New Zealand Breakers Player Defense Odds",
-          "publisher": "FanDuel Sportsbook",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKpB37eVtJ35GtEJ9HMZb-r-V089BFg_zwuuzJSZB6qWwQelizt5DrOCkL9lM"
-        }
-      ]
-    },
-    {
       "query": "marvel rivals season 11 release date",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-13T07:40:00Z",
       "related_news_urls": [
         "https://www.marvelrivals.com/gameupdate/20261111/41548_1319332.html",
         "https://gamingtrend.com/news/nightcrawler-teleports-into-marvel-rivals-as-season-11-doomsday-lands-november-13/",
-        "https://www.altchar.com/guides/marvel-rivals-how-to-get-all-season-11-twitch-drops-aFsbq3r0iC1J"
+        "https://insider-gaming.com/all-marvel-rivals-season-11-twitch-drops-how-to-get-them/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA7TsUWXcruHvRAGhUm7a-HPD9zFGTKQPPoF2jMjqO2jenuVxS9dxEiXTDAIE",
       "image_credit": "Marvel Rivals",
@@ -313,46 +313,46 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzk4S_X5t45o_owcJzbzgnf1FKBZ10QVwddCgcNDFXKb3Pj36JAoNoFyir_PU"
         },
         {
-          "url": "https://www.altchar.com/guides/marvel-rivals-how-to-get-all-season-11-twitch-drops-aFsbq3r0iC1J",
-          "title": "Marvel Rivals: How to Get All Season 11 Twitch Drops",
-          "publisher": "AltChar",
+          "url": "https://insider-gaming.com/all-marvel-rivals-season-11-twitch-drops-how-to-get-them/",
+          "title": "All Marvel Rivals Season 11 Twitch Drops & How To Get Them",
+          "publisher": "Insider Gaming",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmmEjFB7ybmpAsn4Jar--940tlfsMc2IEMV9Xfgik9y4vwM_kpJAyBz3J-cSY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSx_uOdXCfRYX9R3X11aF8pOQcPTzQ94kaE_Yb32AsZMUvorCjGozbEQudCrZQ"
         }
       ]
     },
     {
-      "query": "gta 6 pc release date",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-13T07:30:00Z",
+      "query": "new zealand breakers",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T07:40:00Z",
       "related_news_urls": [
-        "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
-        "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
-        "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/"
+        "https://www.sportsgambler.com/betting-tips/basketball/new-zealand-breakers-vs-brisbane-bullets-prediction-odds-2026-11-13/",
+        "https://www.nbl.com.au/news/dj-carlin-deliver-ot-win-for-breakers",
+        "https://www.gobet.com.au/nbl-tips/bullets-vs-breakers-round-9-2026-27/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZll1tApV9Ds71HmTdujHYiNfoBn3zrlJCvS7S-pg_vQYPoW8x18hTe8WUCZg",
-      "image_credit": "Rockstar Games",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnTK4eFdPE1SvYEbvFwOHkLfEeQvcYAIDIiLh2O-A13r6dm0UAfdFBTQX-81M",
+      "image_credit": "Sportsgambler",
       "news": [
         {
-          "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
-          "title": "Pre-Load Grand Theft Auto VI Now",
-          "publisher": "Rockstar Games",
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/new-zealand-breakers-vs-brisbane-bullets-prediction-odds-2026-11-13/",
+          "title": "New Zealand Breakers vs Brisbane Bullets Prediction, Betting Tips & Odds | 12 Nov 2026",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZll1tApV9Ds71HmTdujHYiNfoBn3zrlJCvS7S-pg_vQYPoW8x18hTe8WUCZg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnTK4eFdPE1SvYEbvFwOHkLfEeQvcYAIDIiLh2O-A13r6dm0UAfdFBTQX-81M"
         },
         {
-          "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
-          "title": "Grand Theft Auto VI Comes to XBOX One and XBOX Series X|S Through XBOX Cloud Gaming on November 19",
-          "publisher": "XBOX Wire",
+          "url": "https://www.nbl.com.au/news/dj-carlin-deliver-ot-win-for-breakers",
+          "title": "DJ, Carlin deliver OT win for Breakers",
+          "publisher": "NBL",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu8nr6HyS9g8xGvw6BZ1OGqV8OF8lBwYCRfzwvpzPSBAqy7JukfAhGVjOa8pA"
         },
         {
-          "url": "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/",
-          "title": "Pre-load Grand Theft Auto VI on PS5 starting today",
-          "publisher": "PlayStation.Blog",
+          "url": "https://www.gobet.com.au/nbl-tips/bullets-vs-breakers-round-9-2026-27/",
+          "title": "Bullets vs. Breakers Predictions - NBL Round 9 2026-27",
+          "publisher": "GoBet.com.au",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmQPZtB1cfmtJ8v-9159sSJpw2Cr8v495zAc5tM6Spqsus45lZErGPllHDXDY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0nUuWaWqHBC6xjofQ6tWXcdQqCj5mX1O_SaSji_40ynZ0sEzqjCIrS781IS0"
         }
       ]
     }
