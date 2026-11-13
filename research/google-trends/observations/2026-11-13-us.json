@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T19:01:31.450954Z",
+  "checked_at": "2026-11-13T19:31:31.122664Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "did aspyn ovard lose her baby",
+      "query": "mirra andreeva",
       "approx_searches": "500+",
-      "published_at": "2026-11-13T18:30:00Z",
+      "published_at": "2026-11-13T19:10:00Z",
       "related_news_urls": [
-        "https://www.eonline.com/news/1437669/mormon-wives-aspyn-ovards-daughter-diagnosed-with-terminal-cancer",
-        "https://extratv.com/2026/11/12/mormon-wives-oc-star-aspyn-ovard-reveals-daughter-s-terminal-cancer-diagnosis/",
-        "https://www.yahoo.com/entertainment/celebrity/article/aspyn-ovards-throuple-is-only-part-of-her-story-mormon-wives-oc-shows-the-heartbreak-behind-her-new-chapter-in-life-213011704.html"
+        "https://www.wtatennis.com/news/4607998/andreeva-wins-45-of-final-55-points-to-rout-sabalenka-reach-first-fage-wta-finals-semifinal",
+        "https://www.bbc.com/sport/tennis/articles/cq1md03gz0zvo",
+        "https://sports.yahoo.com/articles/jessica-pegula-created-monster-fans-090632253.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGfEaR3aAA55Z11kAvf_J0RM2Phsc7vMWf9yPCQ932sqfsgAgbSxd9q6xLmxI",
-      "image_credit": "E! News",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvGnCx0ifzofPM4LJys8lZZwORpEbEEbIO7_fA6hFOUd_FSWdGtHNAoOWXvBg",
+      "image_credit": "WTA Tennis",
       "news": [
         {
-          "url": "https://www.eonline.com/news/1437669/mormon-wives-aspyn-ovards-daughter-diagnosed-with-terminal-cancer",
-          "title": "Mormon Wives ' Aspyn Ovard Shares Daughter's Terminal Cancer Diagnosis",
-          "publisher": "E! News",
+          "url": "https://www.wtatennis.com/news/4607998/andreeva-wins-45-of-final-55-points-to-rout-sabalenka-reach-first-fage-wta-finals-semifinal",
+          "title": "Andreeva uses early anger as fuel, routs Sabalenka to top FAGE WTA Finals Group 2",
+          "publisher": "WTA Tennis",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGfEaR3aAA55Z11kAvf_J0RM2Phsc7vMWf9yPCQ932sqfsgAgbSxd9q6xLmxI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvGnCx0ifzofPM4LJys8lZZwORpEbEEbIO7_fA6hFOUd_FSWdGtHNAoOWXvBg"
         },
         {
-          "url": "https://extratv.com/2026/11/12/mormon-wives-oc-star-aspyn-ovard-reveals-daughter-s-terminal-cancer-diagnosis/",
-          "title": "‘Mormon Wives: OC’ Star Aspyn Ovard Reveals Daughter’s Terminal Cancer Diagnosis",
-          "publisher": "Extra",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8DbZKKQLpSIGEGhH__R_4_AlHNquQSOcCoTMzp4u1KwW6uEWYyUQ2VehFDbA"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/article/aspyn-ovards-throuple-is-only-part-of-her-story-mormon-wives-oc-shows-the-heartbreak-behind-her-new-chapter-in-life-213011704.html",
-          "title": "Aspyn Ovard's throuple is only part of her story. 'Mormon Wives: OC' shows the heartbreak behind her new chapter in life.",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdK7-ePpP34WMVbDyq8nDs2vsYrQ9F2gAH-P7y8ZbLYkvOGSpAnmXElFUNpug"
-        }
-      ]
-    },
-    {
-      "query": "gerry griffith arista records vp",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T18:30:00Z",
-      "related_news_urls": [
-        "https://www.billboard.com/pro/gerry-griffith-dead-at-87/",
-        "https://parade.com/news/gerry-griffith-the-man-who-discovered-whitney-houston-dies-at-87"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_010cNIB33ixiGExG2BJBq4oRP9nI4cmB1tivwfj7At6u13ZZWu1IBNwTo08",
-      "image_credit": "Billboard",
-      "news": [
-        {
-          "url": "https://www.billboard.com/pro/gerry-griffith-dead-at-87/",
-          "title": "Gerry Griffith, Whitney Houston Discoverer, Dead at 87",
-          "publisher": "Billboard",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_010cNIB33ixiGExG2BJBq4oRP9nI4cmB1tivwfj7At6u13ZZWu1IBNwTo08"
-        },
-        {
-          "url": "https://parade.com/news/gerry-griffith-the-man-who-discovered-whitney-houston-dies-at-87",
-          "title": "Gerry Griffith, the Man Who Discovered Whitney Houston, Dies at 87",
-          "publisher": "Parade Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNW2o96F69rpkx3VIkvRu2hXAGGssh4QBhzNzy0Xch3SKvh2wIJZZlyTg42cw"
-        }
-      ]
-    },
-    {
-      "query": "pentagon 90 day grid warning",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T18:20:00Z",
-      "related_news_urls": [
-        "https://thehill.com/opinion/national-security/6213835-iran-cyberattack-us-readiness/",
-        "https://themetropolitan.metrostate.edu/is-a-90-day-blackout-coming-what-the-military-plan-actually-means/",
-        "https://fortune.com/2026/11/08/pentagon-fortress-critical-minerals-stockpile-tungsten-rare-earth/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGEmyoLgyJhP-SOB5OZDCpvAJTZLn0zpUPDMt8fa3Bu5Qzf8vHmToR3hcqMSg",
-      "image_credit": "The Hill",
-      "news": [
-        {
-          "url": "https://thehill.com/opinion/national-security/6213835-iran-cyberattack-us-readiness/",
-          "title": "Stockpiling for disaster: What does the Pentagon know that it isn’t telling us?",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGEmyoLgyJhP-SOB5OZDCpvAJTZLn0zpUPDMt8fa3Bu5Qzf8vHmToR3hcqMSg"
-        },
-        {
-          "url": "https://themetropolitan.metrostate.edu/is-a-90-day-blackout-coming-what-the-military-plan-actually-means/",
-          "title": "Is a 90-Day Blackout Coming? What the Military Plan Actually Means -",
-          "publisher": "Metro State University",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQG89sX4UaTu5hERnkCuvaqmYNS0DKFNxPQ86C-wYSl5-fMvnm4DB6IVBMZ7Cw"
-        },
-        {
-          "url": "https://fortune.com/2026/11/08/pentagon-fortress-critical-minerals-stockpile-tungsten-rare-earth/",
-          "title": "'On par with what the DoD pursued during the Cold War': Pentagon’s war stockpile plan hits a minerals wall",
-          "publisher": "Fortune",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaHqYbDRWnrgD9KyTxiOAFiq7Dpa-3StAoziiJ96j2Y6WfMFmy-LF5h-DNMo8"
-        }
-      ]
-    },
-    {
-      "query": "mlb free agency",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T18:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mlb/story/_/id/50461703/free-agency-offseason-2026-27-gm-meetings-lessons",
-        "https://www.seattletimes.com/sports/mariners/here-are-8-seattle-mariners-trade-targets-to-upgrade-the-infield/",
-        "https://www.latimes.com/sports/dodgers/story/2026-11-10/mlb-gm-meetings-dodgers-brandon-gomes"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiSyTfRYWCQ3JPPlN692oOwNwjjElkM1QoNN3xCnjgEreUguk3a4ylfRwoJs8",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mlb/story/_/id/50461703/free-agency-offseason-2026-27-gm-meetings-lessons",
-          "title": "What's new in free agency? Lessons from 2026 MLB GM meetings",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiSyTfRYWCQ3JPPlN692oOwNwjjElkM1QoNN3xCnjgEreUguk3a4ylfRwoJs8"
-        },
-        {
-          "url": "https://www.seattletimes.com/sports/mariners/here-are-8-seattle-mariners-trade-targets-to-upgrade-the-infield/",
-          "title": "Here are 8 trade targets for Seattle Mariners to upgrade the infield",
-          "publisher": "The Seattle Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXdxf5IL1lq-di3LpTQ1xUaUFQYaAGlGncKzWxl7ZmVEzNt7TsYTSeXQDurAE"
-        },
-        {
-          "url": "https://www.latimes.com/sports/dodgers/story/2026-11-10/mlb-gm-meetings-dodgers-brandon-gomes",
-          "title": "Dodgers' Brandon Gomes shares updates on Tarik Skubal, Shoki Oda, Josue De Paula and more",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAG325YUkX54fVY55RfcZ6PtRNGVb7q1RFII6rNVu0cjRPeKk9BMEKHGKTk30"
-        }
-      ]
-    },
-    {
-      "query": "egypt vs malawi",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T18:10:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cq8jz443j2pxt",
-        "https://www.coinbase.com/en-au/predictions/event/KXAFCON1H-26NOV14UGABOT",
-        "https://www.reutersconnect.com/item/africa-cup-of-nations-qualifiers-group-b-egypt-v-malawi/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkQxRklYSVk"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cq8jz443j2pxt",
-          "title": "Egypt vs Malawi: Africa Cup of Nations Qualification stats & head-to-head",
+          "url": "https://www.bbc.com/sport/tennis/articles/cq1md03gz0zvo",
+          "title": "WTA Finals: Mirra Andreeva thrashes Aryna Sabalenka, Elina Svitolina beats Karolina Muchova",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWeVuqJduTTS8yqKFZDXKxVweYXQiy4R0UoCzo924AspEk-tSgnBqf7S3I4hw"
         },
         {
-          "url": "https://www.coinbase.com/en-au/predictions/event/KXAFCON1H-26NOV14UGABOT",
-          "title": "Uganda vs Botswana: First Half Winner",
-          "publisher": "Coinbase",
+          "url": "https://sports.yahoo.com/articles/jessica-pegula-created-monster-fans-090632253.html",
+          "title": "“Jessica Pegula Has Created A Monster” – Fans React After Mirra Andreeva Stuns Aryna Sabalenka With 6-0 Bagel At WTA Finals",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtlv4wEEHi8uXNCTHBBIdZ2rUZtVp8OMhJgUFnLMqb2UJJQ1_wRphySbCj_fc"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/africa-cup-of-nations-qualifiers-group-b-egypt-v-malawi/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkQxRklYSVk",
-          "title": "Licensable picture: Africa Cup of Nations - Qualifiers - Group B - Egypt v Malawi",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmqWM5KYeMo1zBA7j7BOVqF-IdQ0MMU9H6kFnhel0eIZQsZ6_-gIpM9dTSgPM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_qux7zNEPrHPoJtCZMfb23U6E84zLWAzzXZl70GhZKc4h5XFfcsdcipeDjRg"
         }
       ]
     },
     {
-      "query": "el nino",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T18:10:00Z",
-      "related_news_urls": [
-        "https://www.latimes.com/california/story/2026-11-13/fierce-debate-over-how-bad-californias-el-nino-winter-will-be",
-        "https://www.sfgate.com/weather/article/new-el-nino-forecast-22523911.php",
-        "https://www.cbsnews.com/news/el-nino-effects-weather-worldwide/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIyZC8Cf0zwOkQmtFenA8SvVK30ZEjXqdLhxDh2PZtI0e1A_7pAch5rqra8qE",
-      "image_credit": "Los Angeles Times",
-      "news": [
-        {
-          "url": "https://www.latimes.com/california/story/2026-11-13/fierce-debate-over-how-bad-californias-el-nino-winter-will-be",
-          "title": "Fearmongering or fair warning? A fierce debate over how bad California's El Niño winter will get",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIyZC8Cf0zwOkQmtFenA8SvVK30ZEjXqdLhxDh2PZtI0e1A_7pAch5rqra8qE"
-        },
-        {
-          "url": "https://www.sfgate.com/weather/article/new-el-nino-forecast-22523911.php",
-          "title": "What the new 'astonishing' El Niño forecast means for California",
-          "publisher": "SFGATE",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrtjKcz4Bfa5FqwytuPDAgRuLfhG-VPsIZwJF3etNK92Gr-kx7s2m2D_r0bqI"
-        },
-        {
-          "url": "https://www.cbsnews.com/news/el-nino-effects-weather-worldwide/",
-          "title": "What to know as \"super El Niño\" conditions take shape",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR94qz78IwHUPUI2vb_qvrMf___2QyOtU0Fo_3nawB1H4ShHgs-p9dRvWP5mBg"
-        }
-      ]
-    },
-    {
-      "query": "rockstar gta vi",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T18:00:00Z",
-      "related_news_urls": [
-        "https://www.bloomberg.com/news/newsletters/2026-11-13/ahead-of-grand-theft-auto-vi-rockstar-votes-on-unions",
-        "https://www.theregister.com/software/2026/11/12/rockstar-workers-vote-on-union-recognition-as-gta-vi-launch-looms/5309319",
-        "https://morningstaronline.co.uk/article/iwgb-launch-historic-recognition-ballot-rockstar"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiBxKOF4xV_fnE-CmnuOo9fnoLnlfhm7OM2TO3cvGE7kqPJaE04P0uCqTpUKc",
-      "image_credit": "Bloomberg.com",
-      "news": [
-        {
-          "url": "https://www.bloomberg.com/news/newsletters/2026-11-13/ahead-of-grand-theft-auto-vi-rockstar-votes-on-unions",
-          "title": "Ahead of ‘Grand Theft Auto VI,’ Rockstar Staff Vote on Union Effort",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiBxKOF4xV_fnE-CmnuOo9fnoLnlfhm7OM2TO3cvGE7kqPJaE04P0uCqTpUKc"
-        },
-        {
-          "url": "https://www.theregister.com/software/2026/11/12/rockstar-workers-vote-on-union-recognition-as-gta-vi-launch-looms/5309319",
-          "title": "Rockstar workers vote on union recognition as GTA VI launch looms",
-          "publisher": "The Register",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQqRd6k9vmpbexSQqQZ7Zrhsk9VtCXjmJPf_uSCQaqIn0BLkG63v-PDfPR5r8"
-        },
-        {
-          "url": "https://morningstaronline.co.uk/article/iwgb-launch-historic-recognition-ballot-rockstar",
-          "title": "IWGB launches historic recognition ballot at GTA VI developer Rockstar",
-          "publisher": "Morning Star | The People’s Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGlit4M0N6hDBr_sF6bXfqNsDcCpl5JYEAl3bMGf8I2mO4_i_KMybq1JQJdx0"
-        }
-      ]
-    },
-    {
-      "query": "willson contreras",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T18:00:00Z",
-      "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/11/sports/red-sox-gm-meetings/",
-        "https://www.fox61.com/video/sports/locked-on/lo-new-england/red-sox-show/called-out-red-sox-star-willson-contreras-demands-changeare-analytics-undermining-success/535-d9ea7f3f-2f20-448e-b05c-1d2bf1a8ce91",
-        "https://www.mlb.com/news/william-contreras-wins-inaugural-flow-mayor-award"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKcsiA13GVz8_kW0hNN9Df0dnIjQXZGzHND5N0c1mlIO0ybaFnCYMwJ_8Pu58",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/11/sports/red-sox-gm-meetings/",
-          "title": "Willson Contreras, Red Sox still talking after first baseman’s criticism of analytics reliance",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKcsiA13GVz8_kW0hNN9Df0dnIjQXZGzHND5N0c1mlIO0ybaFnCYMwJ_8Pu58"
-        },
-        {
-          "url": "https://www.fox61.com/video/sports/locked-on/lo-new-england/red-sox-show/called-out-red-sox-star-willson-contreras-demands-changeare-analytics-undermining-success/535-d9ea7f3f-2f20-448e-b05c-1d2bf1a8ce91",
-          "title": "CALLED OUT: Red Sox Star Willson Contreras DEMANDS Change—Are Analytics UNDERMINING Success?",
-          "publisher": "fox61.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREARAkXDOyBhS75m3SwaL03xiv9d4yTNYmy_dKKCkib9Qh01S34dNb296WWgo"
-        },
-        {
-          "url": "https://www.mlb.com/news/william-contreras-wins-inaugural-flow-mayor-award",
-          "title": "World Series star Contreras the very definition of first Flow Mayor Award",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFuzkdz3ouY-rWLl3k1jvdk7LEsLWFjGeLM4b6AlV3Eop036ceWUv3Y98OcW0"
-        }
-      ]
-    },
-    {
-      "query": "elijah higgins",
+      "query": "morocco vs niger",
       "approx_searches": "500+",
-      "published_at": "2026-11-13T18:00:00Z",
+      "published_at": "2026-11-13T19:10:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/fantasy/football/news/cardinals-elijah-higgins-signing-extension-through-2029/",
-        "https://www.azcardinals.com/news/cardinals-extend-tight-end-elijah-higgins",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/cardinals-te-elijah-higgins-agree-to-three-year-extension"
+        "https://www.moroccoworldnews.com/2026/11/346108/the-atlas-lions-return-to-casablanca-four-years-and-a-lifetime-later/",
+        "https://rbleipzig.com/en/news/neil-el-aynaoui-injury-international-duty-morocco-2026-11-11",
+        "https://www.elbotola.com/en/article/2026-11-12-22-36-302.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQU6tSLE7DSX5eAUrdw652UL-4VnvjB2RRRB6Qj_I_jEyt6aQ13R8x94F_havQ",
-      "image_credit": "CBS Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbHHVJKoOtWSI8D4PsiFj0OFieim6lvQIhnbjOg975o2lp1TkbwII87qely0w",
+      "image_credit": "Morocco World News",
       "news": [
         {
-          "url": "https://www.cbssports.com/fantasy/football/news/cardinals-elijah-higgins-signing-extension-through-2029/",
-          "title": "Cardinals' Elijah Higgins: Signing extension through 2029",
-          "publisher": "CBS Sports",
+          "url": "https://www.moroccoworldnews.com/2026/11/346108/the-atlas-lions-return-to-casablanca-four-years-and-a-lifetime-later/",
+          "title": "The Atlas Lions Return to Casablanca, Four Years and a Lifetime Later",
+          "publisher": "Morocco World News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQU6tSLE7DSX5eAUrdw652UL-4VnvjB2RRRB6Qj_I_jEyt6aQ13R8x94F_havQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbHHVJKoOtWSI8D4PsiFj0OFieim6lvQIhnbjOg975o2lp1TkbwII87qely0w"
         },
         {
-          "url": "https://www.azcardinals.com/news/cardinals-extend-tight-end-elijah-higgins",
-          "title": "Cardinals Extend Tight End Elijah Higgins",
-          "publisher": "Arizona Cardinals",
+          "url": "https://rbleipzig.com/en/news/neil-el-aynaoui-injury-international-duty-morocco-2026-11-11",
+          "title": "Neil El Aynaoui withdraws from international duty with Morocco",
+          "publisher": "RB Leipzig",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlmnOG2tTVhKFwqiNpDZMaqSGCV67kctT2sDXO3UqM46qKQVE-7n7V_0Wu8H8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRnNWOXSwHQsF4EO_Y-4_78BrGVWycd-ow8PiFn-BkSRgjvBcc5WEGSDFzf1k"
         },
         {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/cardinals-te-elijah-higgins-agree-to-three-year-extension",
-          "title": "Cardinals, TE Elijah Higgins agree to three-year extension",
-          "publisher": "NBC Sports",
+          "url": "https://www.elbotola.com/en/article/2026-11-12-22-36-302.html",
+          "title": "Targhalline: 'Playing in Casablanca gives us a great feeling'",
+          "publisher": "Elbotola",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaK4EN68LsG_QjNL9m1PnsSPBDb8Ij3WyOnU2pRHfNQiRTxXfhFKk5SP6grd0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyR8v8MPcm3dt6JGMPw_hHaleRx5sMR9qsbppyNg-LYgObogKJ4-vj1r2SPHA"
         }
       ]
     },
     {
-      "query": "philip rivers",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-13T17:50:00Z",
+      "query": "france vs south africa",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T19:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50456831/sources-philip-rivers-nc-state-deal-set-finalized",
-        "https://gopack.com/news/2026/11/13/rivers-named-head-coach-for-nc-state-football",
-        "https://www.nytimes.com/athletic/7764757/2026/11/08/philip-rivers-head-coach-nc-state/"
+        "https://africa.espn.com/espn/story/_/id/50469373/france-vs-south-africa-kick-team-news-how-watch-springboks",
+        "https://www.theguardian.com/sport/2026/nov/12/antoine-dupont-fly-half-france-south-africa-nations-championship-rugby",
+        "https://www.bbc.com/sport/rugby-union/articles/cq742lw1v3pvo"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7D8TfxbCksBXZz3UeDqiVu9Gp8KVJl5JrgHIyRF7Vq9dwUVTODfuXQRlh9Zw",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOpFrlpqaWG-DtF3K7-eGEXveIVCBMZEGfrHXnQzrQtAJ7EzM6Rst3GLGtGCg",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/college-football/story/_/id/50456831/sources-philip-rivers-nc-state-deal-set-finalized",
-          "title": "NC State officially hires Philip Rivers as football coach",
+          "url": "https://africa.espn.com/espn/story/_/id/50469373/france-vs-south-africa-kick-team-news-how-watch-springboks",
+          "title": "France vs. South Africa - Kick-off time, team news, how to watch the Springboks",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7D8TfxbCksBXZz3UeDqiVu9Gp8KVJl5JrgHIyRF7Vq9dwUVTODfuXQRlh9Zw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOpFrlpqaWG-DtF3K7-eGEXveIVCBMZEGfrHXnQzrQtAJ7EzM6Rst3GLGtGCg"
         },
         {
-          "url": "https://gopack.com/news/2026/11/13/rivers-named-head-coach-for-nc-state-football",
-          "title": "Rivers Named Head Coach for NC State Football",
-          "publisher": "NC State University Athletics",
+          "url": "https://www.theguardian.com/sport/2026/nov/12/antoine-dupont-fly-half-france-south-africa-nations-championship-rugby",
+          "title": "France have spent years trying to beat the Boks but belief and bodies are fading",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE-ODZyRPxVM6UzFHcWR93HCIoBxsOoQjF0Won2WxNRl8Ghn-3-1bJn-zrloQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKtXLnZbyfTHz6oZoThdgXeNhaEwDJGsLgSBBnLTdIE_zOmuWDTCI68WMClxc"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7764757/2026/11/08/philip-rivers-head-coach-nc-state/",
-          "title": "Philip Rivers is NC State’s dream coaching hire. He’s also not qualified for the job",
-          "publisher": "The New York Times",
+          "url": "https://www.bbc.com/sport/rugby-union/articles/cq742lw1v3pvo",
+          "title": "France v South Africa: Antoine Dupont at fly-half for Paris match",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc1pH8o-y4a9g3gHDqM7cO326heuZKliltJYOz1amkz6PildoUNixmT62amZM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTmBwhBJ1umXav5ScKaIaX7yfpu51DkG8llQ5fyO51c-wQK2gF7E_pcUMlbaQ"
+        }
+      ]
+    },
+    {
+      "query": "randy travis",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T19:10:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/entertainment/randy-travis-wife-doctors-gave-country-legend-1-percent-chance-survival-miraculous-comeback",
+        "https://people.com/randy-travis-first-new-album-in-18-years-is-both-blessing-and-gift-to-us-says-wife-mary-exclusive-12250717",
+        "https://www.allcountrynews.com/post/randy-travis-opens-the-vault-and-gives-country-music-something-worth-holding-onto-with-same-old-way"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmyacN9z4uU2pZpK5fFyjI4bCueOBWjX579su888cG-u3HzPVzJB6VPyhoCjY",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/entertainment/randy-travis-wife-doctors-gave-country-legend-1-percent-chance-survival-miraculous-comeback",
+          "title": "Randy Travis’ wife says doctors gave country legend 1% chance of survival before miraculous comeback",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmyacN9z4uU2pZpK5fFyjI4bCueOBWjX579su888cG-u3HzPVzJB6VPyhoCjY"
+        },
+        {
+          "url": "https://people.com/randy-travis-first-new-album-in-18-years-is-both-blessing-and-gift-to-us-says-wife-mary-exclusive-12250717",
+          "title": "Randy Travis’ First New Album in More Than 18 Years Is Both a ‘Blessing’ and a ‘Gift to Us,’ Says Wife Mary (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYLvcIs8O-AoM7T0wejErmd73b8lgVWtKP-DefpL0_vbr0HdhNSe_AZxSVzOQ"
+        },
+        {
+          "url": "https://www.allcountrynews.com/post/randy-travis-opens-the-vault-and-gives-country-music-something-worth-holding-onto-with-same-old-way",
+          "title": "Randy Travis Opens the Vault and Gives Country Music Something Worth Holding Onto with ‘Same Old Way’",
+          "publisher": "All Country News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeiBQeffnFAU7q1P3DBOUHn_KKxm0GAHhbXjJM8RLftG6Z-xq26f9n9XdmdSo"
+        }
+      ]
+    },
+    {
+      "query": "cam skattebo jameis winston sneak",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-13T19:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/nba/breaking-news/article/commanders-giants-cam-skattebo-refuses-to-be-normal-stares-into-camera-during-thursday-night-football-034621044.html",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/cam-skattebo-stayed-in-his-stance-instead-of-pushing-jameis-winstons-tush-on-key-play",
+        "https://www.usatoday.com/story/sports/nfl/giants/2026/11/12/cam-skattebo-iron-man-tnf-commanders-helmet/92750287007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1EIVEH_xGomAtMu09-COLfVGMqF5TLr3LwfwlcdcXb-GaEjaJ9Hw6KYETCz0",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/nba/breaking-news/article/commanders-giants-cam-skattebo-refuses-to-be-normal-stares-into-camera-during-thursday-night-football-034621044.html",
+          "title": "Commanders-Giants: Cam Skattebo refuses to be normal, stares into camera during 'Thursday Night Football'",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1EIVEH_xGomAtMu09-COLfVGMqF5TLr3LwfwlcdcXb-GaEjaJ9Hw6KYETCz0"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/cam-skattebo-stayed-in-his-stance-instead-of-pushing-jameis-winstons-tush-on-key-play",
+          "title": "Cam Skattebo stayed in his stance instead of pushing Jameis Winston’s tush on key play",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRldc_dTLlXfFOXvv0njzfdzWQG2sqW5aH7su4lA-siZOr8RJEaU8lZOiPE18A"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/nfl/giants/2026/11/12/cam-skattebo-iron-man-tnf-commanders-helmet/92750287007/",
+          "title": "Giants' Cam Skattebo arrives in 'Iron Man' helmet, pukes from pretzel dog, scores 2 TDs",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThFUBNZ1ZyOVn_eh78cIr4_Jv7uE75iscR_7dB13pvtgSQMOdoWk5iqbpRS-0"
+        }
+      ]
+    },
+    {
+      "query": "dale brown",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T19:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/forgot-tell-him-love-him-201922600.html",
+        "https://www.wafb.com/2026/11/12/daddy-dale-shaquille-oneal-former-players-deliver-emotional-tribute-lsu-legend-dale-brown/",
+        "https://www.wbrz.com/news/former-players-coaches-remember-legendary-lsu-basketball-coach-dale-brown/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR0jaUlkUfVVr52Opu-B68xcaybrW4anCnPcty3yXgC__fdcP4AC6upQY6mjk",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/forgot-tell-him-love-him-201922600.html",
+          "title": "“Forgot to Tell Him I Love Him”: Prayers Pour In From Shaquille O’Neal While Mourning Deceased LSU Coach Dale Brown",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR0jaUlkUfVVr52Opu-B68xcaybrW4anCnPcty3yXgC__fdcP4AC6upQY6mjk"
+        },
+        {
+          "url": "https://www.wafb.com/2026/11/12/daddy-dale-shaquille-oneal-former-players-deliver-emotional-tribute-lsu-legend-dale-brown/",
+          "title": "‘Daddy Dale’: Shaquille O’Neal, former players deliver emotional tribute to LSU legend Dale Brown",
+          "publisher": "WAFB",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZCd_ue5agaS3dcMVmXsjw_FU7O-r-vTxMaBilmjx9fczJEtwgMHzvw9fbYJM"
+        },
+        {
+          "url": "https://www.wbrz.com/news/former-players-coaches-remember-legendary-lsu-basketball-coach-dale-brown/",
+          "title": "Former players, coaches remember legendary LSU basketball coach Dale Brown",
+          "publisher": "WBRZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlv4UZXe_RqfQQVdm1lpYYb13vUmjFvp1G3hkUpWHyZVyN8n2Ap-Ind_WsAoM"
+        }
+      ]
+    },
+    {
+      "query": "eslovenia - suiza",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T19:10:00Z",
+      "related_news_urls": [
+        "https://www.sportytrader.es/pronosticos/eslovenia-suiza-386303/",
+        "https://www.dazn.com/es-ES/news/futbol/luxemburgo-estonia-fecha-hora-canal-tv-donde-ver-online-hoy-nations-league-202627-espana/zy838br1hsvk1eaqct06txep4",
+        "https://www.lanacion.com.ar/deportes/futbol/eslovenia-vs-suiza-liga-de-naciones-2026-dia-hora-y-como-seguir-online-nid12112026/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIFfWSS2UKUaSXZuJGCZj62yNQ0s8S0wC-sDqwk-p0zruC7_9s2KPUNr8ggNY",
+      "image_credit": "SportyTrader",
+      "news": [
+        {
+          "url": "https://www.sportytrader.es/pronosticos/eslovenia-suiza-386303/",
+          "title": "Pronóstico Eslovenia - Suiza - Nations League",
+          "publisher": "SportyTrader",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIFfWSS2UKUaSXZuJGCZj62yNQ0s8S0wC-sDqwk-p0zruC7_9s2KPUNr8ggNY"
+        },
+        {
+          "url": "https://www.dazn.com/es-ES/news/futbol/luxemburgo-estonia-fecha-hora-canal-tv-donde-ver-online-hoy-nations-league-202627-espana/zy838br1hsvk1eaqct06txep4",
+          "title": "Luxemburgo vs Estonia: fecha, hora, canal, TV y dónde ver online hoy la Nations League 2026/27 en España",
+          "publisher": "DAZN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjq06T64Y71G13nxPahsAORux71VEwgf_aiQEXgpSB69l6VTfbx8xuhwH1XJM"
+        },
+        {
+          "url": "https://www.lanacion.com.ar/deportes/futbol/eslovenia-vs-suiza-liga-de-naciones-2026-dia-hora-y-como-seguir-online-nid12112026/",
+          "title": "Eslovenia vs. Suiza, Liga de Naciones 2026: día, hora y cómo seguir online",
+          "publisher": "La Nación",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsAlpskW-_N6h2TbObnIDl_vnKfgi1htzurQYltyP1wbn-S4iP9VutedAbvZw"
+        }
+      ]
+    },
+    {
+      "query": "pennsylvania lottery",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T19:10:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/pittsburgh/news/shaler-township-pennsylvania-lottery-match-6-jackpot-winner/",
+        "https://patch.com/pennsylvania/pittsburgh/1-8m-jackpot-winning-pa-lottery-ticket-sold-pa-area",
+        "https://www.wtae.com/article/pittsburgh-area-lottery-winning-jackpot-shop-n-save/74425484"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPxn7Rw7OPTkZMCvRsYVrnRdNjlvWEBxNSG3LnPf0ZyL6eUF8bwnzfRHMzt8o",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/pittsburgh/news/shaler-township-pennsylvania-lottery-match-6-jackpot-winner/",
+          "title": "Pennsylvania Lottery ticket worth nearly $2 million sold just outside of Pittsburgh",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPxn7Rw7OPTkZMCvRsYVrnRdNjlvWEBxNSG3LnPf0ZyL6eUF8bwnzfRHMzt8o"
+        },
+        {
+          "url": "https://patch.com/pennsylvania/pittsburgh/1-8m-jackpot-winning-pa-lottery-ticket-sold-pa-area",
+          "title": "$1.8M Jackpot-Winning PA Lottery Ticket Sold In Pittsburgh Area",
+          "publisher": "Patch",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7bJu_ZjgZtoTQX3Tkr6anoqwrT4dvMoxCG3vNY6tuxTnCSVO92_kd0hmC0yQ"
+        },
+        {
+          "url": "https://www.wtae.com/article/pittsburgh-area-lottery-winning-jackpot-shop-n-save/74425484",
+          "title": "Jackpot-winning Pa. Lottery ticket sold at SHOP 'n SAVE in Allegheny County",
+          "publisher": "WTAE",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbJVNexOVy76y5RTAdmeLbzQPfA56ZXithgJko9H2qDrSX5w-_XII3C-Caqik"
+        }
+      ]
+    },
+    {
+      "query": "scotland vs north macedonia",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-13T19:00:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/football/live/2026/nov/13/scotland-v-north-macedonia-nations-league-live",
+        "https://www.bbc.com/sport/football/articles/c6702jxw17pjo",
+        "https://www.oregonlive.com/tv/2026/11/watch-scotland-vs-north-macedonia-soccer-for-free-today-nations-league-live-stream-tv-channel-odds.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQCFsIYU3dGc1bVteyWA23qbr6y88em0-aV1Z30rGbNxqD7qAohjqH2w_tXHk",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/football/live/2026/nov/13/scotland-v-north-macedonia-nations-league-live",
+          "title": "Scotland v North Macedonia: Nations League – live",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQCFsIYU3dGc1bVteyWA23qbr6y88em0-aV1Z30rGbNxqD7qAohjqH2w_tXHk"
+        },
+        {
+          "url": "https://www.bbc.com/sport/football/articles/c6702jxw17pjo",
+          "title": "Scotland: No excuses as Pocognoli seeks first Hampden victory",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpJMAuBJOS6ZB0kZaZDR5KxM5ZME2XsrpBO1pk3piZajXUyj-xgW6S6XWVW0c"
+        },
+        {
+          "url": "https://www.oregonlive.com/tv/2026/11/watch-scotland-vs-north-macedonia-soccer-for-free-today-nations-league-live-stream-tv-channel-odds.html",
+          "title": "Watch Scotland vs. North Macedonia soccer for free today: Nations League live stream, TV channel, odds",
+          "publisher": "OregonLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvkGSeXTsaO4R2hYlMO3vpN3kFzbvWxAvmEZhj3K_TgPXtENkEnvGH5X8QKaI"
+        }
+      ]
+    },
+    {
+      "query": "joão franco below deck",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-13T19:00:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/news/below-deck-joao-franco-arrested-turkey-fight-teenager-death/",
+        "https://globalnews.ca/news/12149393/below-deck-joao-franco-arrested-fight-teen-death/",
+        "https://www.nbcnews.com/nightly-news/video/former-reality-star-arrested-after-deadly-brawl-273387077563"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpOpZ_5eRcDBkkDP_8YIbZpcmxRnjkedbV2wSfr50JNTJ3F3_yJph3BBRLhfg",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/news/below-deck-joao-franco-arrested-turkey-fight-teenager-death/",
+          "title": "Yacht captain on U.S. reality show \"Below Deck\" arrested in Turkey after fight leaves teenager dead",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpOpZ_5eRcDBkkDP_8YIbZpcmxRnjkedbV2wSfr50JNTJ3F3_yJph3BBRLhfg"
+        },
+        {
+          "url": "https://globalnews.ca/news/12149393/below-deck-joao-franco-arrested-fight-teen-death/",
+          "title": "Ex-Below Deck cast member Joao Franco arrested in Turkey after teen dies",
+          "publisher": "Global News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLXCws8_rXYri5ggLIiC6wTR2Ca1Ez_8p5LAdyJxMoAPGG43RjfVDxVDEnLng"
+        },
+        {
+          "url": "https://www.nbcnews.com/nightly-news/video/former-reality-star-arrested-after-deadly-brawl-273387077563",
+          "title": "Former reality star arrested after deadly brawl",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwCvL63-bKNHpPV7zJ-d03DQ2dN0B3WXT5PcH6rYVSUqKftlHNrpADBD_dHOI"
         }
       ]
     }
