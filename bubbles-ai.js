@@ -2246,7 +2246,9 @@ function toggle(open){
  if(showing){
   if(chatGate)void checkPanelGate();
   if(!greeted&&!messages.length){display('Hello! I am '+config.alias+'. '+(embedded?'Use my name before speaking, or type below.':'Speak naturally or type below.')+' Say stop listening to mute.','ai',true);greeted=true}
-  if(!nativeOverlay && window.innerWidth>600)input.focus();
+  // The host owns focus in embedded Zeus/Bubbles cards. Auto-focusing this
+  // iframe can interrupt the host's project title, extraction or quest input.
+  if(!embedded&&!nativeOverlay && window.innerWidth>600)input.focus();
  }
  else{ /* Closing the panel does not disconnect the voice session. */ }
 }
