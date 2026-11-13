@@ -3,52 +3,262 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T19:31:31.122664Z",
+  "checked_at": "2026-11-13T20:01:30.516124Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "mirra andreeva",
+      "query": "paige spiranac",
       "approx_searches": "500+",
-      "published_at": "2026-11-13T19:10:00Z",
+      "published_at": "2026-11-13T19:40:00Z",
       "related_news_urls": [
-        "https://www.wtatennis.com/news/4607998/andreeva-wins-45-of-final-55-points-to-rout-sabalenka-reach-first-fage-wta-finals-semifinal",
-        "https://www.bbc.com/sport/tennis/articles/cq1md03gz0zvo",
-        "https://sports.yahoo.com/articles/jessica-pegula-created-monster-fans-090632253.html"
+        "https://thespun.com/golf/paige-spiranac-is-not-happy-with-the-state-of-her-golf-game",
+        "https://www.marca.com/en/golf/2026/11/12/cheating-controversy-this-time-paige-spiranac-s-recovery-selfie-goes-viral-after-tough-internet-invitational-elimination.html",
+        "https://thespun.com/golf/paige-spiranac-gets-taunted-by-fellow-golfers-over-her-outfit-at-championship-match"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvGnCx0ifzofPM4LJys8lZZwORpEbEEbIO7_fA6hFOUd_FSWdGtHNAoOWXvBg",
-      "image_credit": "WTA Tennis",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR97BrdVBhcgHGRMBO1P-pxe5zQQoeZS-IkPbnLumM3Qefov2Ri1hBso1OssBA",
+      "image_credit": "The Spun",
       "news": [
         {
-          "url": "https://www.wtatennis.com/news/4607998/andreeva-wins-45-of-final-55-points-to-rout-sabalenka-reach-first-fage-wta-finals-semifinal",
-          "title": "Andreeva uses early anger as fuel, routs Sabalenka to top FAGE WTA Finals Group 2",
-          "publisher": "WTA Tennis",
+          "url": "https://thespun.com/golf/paige-spiranac-is-not-happy-with-the-state-of-her-golf-game",
+          "title": "Paige Spiranac Is Not Happy With The State Of Her Golf Game",
+          "publisher": "The Spun",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvGnCx0ifzofPM4LJys8lZZwORpEbEEbIO7_fA6hFOUd_FSWdGtHNAoOWXvBg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR97BrdVBhcgHGRMBO1P-pxe5zQQoeZS-IkPbnLumM3Qefov2Ri1hBso1OssBA"
         },
         {
-          "url": "https://www.bbc.com/sport/tennis/articles/cq1md03gz0zvo",
-          "title": "WTA Finals: Mirra Andreeva thrashes Aryna Sabalenka, Elina Svitolina beats Karolina Muchova",
-          "publisher": "BBC",
+          "url": "https://www.marca.com/en/golf/2026/11/12/cheating-controversy-this-time-paige-spiranac-s-recovery-selfie-goes-viral-after-tough-internet-invitational-elimination.html",
+          "title": "No cheating controversy this time: Paige Spiranac's recovery selfie goes viral after tough Internet Invitational elimination",
+          "publisher": "MARCA",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWeVuqJduTTS8yqKFZDXKxVweYXQiy4R0UoCzo924AspEk-tSgnBqf7S3I4hw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAof1jQ4ULIXBO2URgWkeYjdC2QSchJxCZcXDZ5GaBv5tB4I4SCq81uRCtYE8"
         },
         {
-          "url": "https://sports.yahoo.com/articles/jessica-pegula-created-monster-fans-090632253.html",
-          "title": "“Jessica Pegula Has Created A Monster” – Fans React After Mirra Andreeva Stuns Aryna Sabalenka With 6-0 Bagel At WTA Finals",
+          "url": "https://thespun.com/golf/paige-spiranac-gets-taunted-by-fellow-golfers-over-her-outfit-at-championship-match",
+          "title": "Paige Spiranac Gets Taunted By Fellow Golfers Over Her Outfit At Championship Match",
+          "publisher": "The Spun",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQ8LItsFBXDXAISJalGZYNArlOig5vi_-mbLEZhgFsXbf2GHNoP0gj-A1m6BU"
+        }
+      ]
+    },
+    {
+      "query": "kevin hassett",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T19:40:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/video/2026/11/13/nec-director-kevin-hassett-expected-to-depart-wh-in-the-coming-weeks-report.html",
+        "https://www.yahoo.com/news/politics/articles/hassett-expected-depart-white-house-190611458.html",
+        "https://www.marketscreener.com/news/hassett-expected-to-leave-trump-administration-semafor-reports-ce785eded98bf323"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8g-tV2rrRWEaBtHCJzRooLCAoC73L4xW9srxPhyM7B07zleyCEeKCbXNaBPU",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/video/2026/11/13/nec-director-kevin-hassett-expected-to-depart-wh-in-the-coming-weeks-report.html",
+          "title": "NEC Director Kevin Hassett expected to depart WH in the coming weeks: Report",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8g-tV2rrRWEaBtHCJzRooLCAoC73L4xW9srxPhyM7B07zleyCEeKCbXNaBPU"
+        },
+        {
+          "url": "https://www.yahoo.com/news/politics/articles/hassett-expected-depart-white-house-190611458.html",
+          "title": "Hassett expected to depart White House",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT37z1D48uLDDco5YkNG4G5Z2LHdkIR030mRXKX-x9SPmUmHGdCN_TpKvouBRg"
+        },
+        {
+          "url": "https://www.marketscreener.com/news/hassett-expected-to-leave-trump-administration-semafor-reports-ce785eded98bf323",
+          "title": "Hassett expected to leave Trump administration, Semafor reports",
+          "publisher": "marketscreener.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGRKks833JRE10mvZ-6VxMeU8hShRa0c1Wy2djCaj2ucZDzXqBAVfV1jsCB24"
+        }
+      ]
+    },
+    {
+      "query": "uefa nations league schedule",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T19:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/uefa-nations-league-predictions-including-131310343.html",
+        "https://www.telegraph.co.uk/betting/football/nations-league-acca-tips-prediction-november-14-2026/",
+        "https://www.ladbrokes.com/en/news/ladbrokes-football-tips-2026-11-13/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFeTJqtFvPIzgCjugjuJK5YDuOimzBhksXebo0nX7HuC8NbYQdRz7zo4kBCmU",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/uefa-nations-league-predictions-including-131310343.html",
+          "title": "UEFA Nations League Predictions, Including Netherlands vs Greece and Serbia vs Germany",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_qux7zNEPrHPoJtCZMfb23U6E84zLWAzzXZl70GhZKc4h5XFfcsdcipeDjRg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFeTJqtFvPIzgCjugjuJK5YDuOimzBhksXebo0nX7HuC8NbYQdRz7zo4kBCmU"
+        },
+        {
+          "url": "https://www.telegraph.co.uk/betting/football/nations-league-acca-tips-prediction-november-14-2026/",
+          "title": "Nations League acca tips: Back Norway in 6.78/1 Saturday multiple",
+          "publisher": "The Telegraph",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjYEPleD8pPWkuzZOsQPISDG0yUXe16DMdnsbtlEIg65sXitEyLZQREGNgdgc"
+        },
+        {
+          "url": "https://www.ladbrokes.com/en/news/ladbrokes-football-tips-2026-11-13/",
+          "title": "Ladbrokes' football tips - Friday, November 13, 2026: Low-scoring wins for Scotland and Germany",
+          "publisher": "Ladbrokes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPUmN94wigWYkBWBRMBLBCpHKmV6FCR_515IW7nZwOGnA2j8g-FJzhIf7ugbk"
+        }
+      ]
+    },
+    {
+      "query": "kenneth walker",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-13T19:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/kenneth-walker-did-not-practice-193911884.html",
+        "https://www.cbssports.com/fantasy/football/news/chiefs-kenneth-walker-sits-out-fridays-practice/",
+        "https://www.thefantasyfootballers.com/news/647517/kenneth-walker-iii-sits-out-fridays-practice/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4KCkrqBI_KuE22kKrV9VNQOYSFrQmj9XEKsnmC-s5m9SLy3j33cZ6MH9Dw3Q",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/kenneth-walker-did-not-practice-193911884.html",
+          "title": "Kenneth Walker did not practice Friday with groin tightness",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4KCkrqBI_KuE22kKrV9VNQOYSFrQmj9XEKsnmC-s5m9SLy3j33cZ6MH9Dw3Q"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/football/news/chiefs-kenneth-walker-sits-out-fridays-practice/",
+          "title": "Chiefs' Kenneth Walker: Sits out Friday's practice",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQU6tSLE7DSX5eAUrdw652UL-4VnvjB2RRRB6Qj_I_jEyt6aQ13R8x94F_havQ"
+        },
+        {
+          "url": "https://www.thefantasyfootballers.com/news/647517/kenneth-walker-iii-sits-out-fridays-practice/",
+          "title": "Kenneth Walker Sits out Friday's practice",
+          "publisher": "Fantasy Footballers Podcast",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLm6SPDhjh0rX0MaAlVyInOBAKTxZHaji8XGFbCBB32YiZ8Xc18AHzVDD3BBc"
+        }
+      ]
+    },
+    {
+      "query": "troy aikman",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-13T19:20:00Z",
+      "related_news_urls": [
+        "https://awfulannouncing.com/nfl/troy-aikman-kyle-shanahan-49ers.html",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/troy-aikman-engages-in-potential-pre-tampering-with-kyle-shanahan",
+        "https://sports.yahoo.com/articles/aikman-says-cowboys-still-win-145417028.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLTFQjvkfVlYgmlDGKKShHUCUjF2J903o846aHNFNUXTmh9NW-j299h2yCulI",
+      "image_credit": "Awful Announcing",
+      "news": [
+        {
+          "url": "https://awfulannouncing.com/nfl/troy-aikman-kyle-shanahan-49ers.html",
+          "title": "Troy Aikman would try to lure Kyle Shanahan from 49ers if running NFL team",
+          "publisher": "Awful Announcing",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLTFQjvkfVlYgmlDGKKShHUCUjF2J903o846aHNFNUXTmh9NW-j299h2yCulI"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/troy-aikman-engages-in-potential-pre-tampering-with-kyle-shanahan",
+          "title": "Troy Aikman engages in potential pre-tampering with Kyle Shanahan",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXIakNy20k8oVZym-tvlRYHH-O6JKTHvlLVjELlzc1v3FUyOhSVNOAOO-RZfE"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/aikman-says-cowboys-still-win-145417028.html",
+          "title": "Aikman Says Cowboys Can Still Win NFC East After 4-5 Start",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToq5kpY_MAjvCeUvGFUaWSbi6rKFtz__TTFneP_S6tnvX8yfVrY3f6nBcWgb0"
+        }
+      ]
+    },
+    {
+      "query": "mali vs rwanda",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-13T19:20:00Z",
+      "related_news_urls": [
+        "https://www.managingmadrid.com/latest-news/115384/watch-diomandes-assist-vs-gambia",
+        "https://www.goal.com/en/news/on-video-diomande-s-gifts-prove-decisive-in-the-elephants-win/bltdf4c5e55f8c69255",
+        "https://www.coinbase.com/en-sg/predictions/event/KXAFCON1HSPREAD-26NOV13MLIRWA"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-qpl1XEcsBiiL6B8PKMVrtmkU5cbn_uupQgO0gc0VeEDTky5oU35qzIU_4DI",
+      "image_credit": "Managing Madrid",
+      "news": [
+        {
+          "url": "https://www.managingmadrid.com/latest-news/115384/watch-diomandes-assist-vs-gambia",
+          "title": "WATCH: Diomande’s Assist Vs Gambia",
+          "publisher": "Managing Madrid",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-qpl1XEcsBiiL6B8PKMVrtmkU5cbn_uupQgO0gc0VeEDTky5oU35qzIU_4DI"
+        },
+        {
+          "url": "https://www.goal.com/en/news/on-video-diomande-s-gifts-prove-decisive-in-the-elephants-win/bltdf4c5e55f8c69255",
+          "title": "On video: Diomande's gifts prove decisive in the Elephants' win",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjsRDb6ZW-goja1gaiqUm36xiV4y0dpbdWCuUKeOjhFPFaEECcumX4fxQJdk0"
+        },
+        {
+          "url": "https://www.coinbase.com/en-sg/predictions/event/KXAFCON1HSPREAD-26NOV13MLIRWA",
+          "title": "Mali vs Rwanda: First Half Spread",
+          "publisher": "Coinbase",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtlv4wEEHi8uXNCTHBBIdZ2rUZtVp8OMhJgUFnLMqb2UJJQ1_wRphySbCj_fc"
+        }
+      ]
+    },
+    {
+      "query": "germany",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-13T19:20:00Z",
+      "related_news_urls": [
+        "https://www.dallascowboys.com/video/cowboys-break-final-thoughts-before-the-49ers",
+        "https://sports.yahoo.com/videos/giardi-patriots-must-protect-ball-183349158.html",
+        "https://www.detroitlions.com/news/notebook-lions-ready-for-home-away-from-home-experience-in-germany-barnes-cisco-clark"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbVJ_-3U6OrAma6FAlEL-4-BAd5KZP1sT6drTSfxZ4Tq0kn9xkRpcVVkIBNLc",
+      "image_credit": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+      "news": [
+        {
+          "url": "https://www.dallascowboys.com/video/cowboys-break-final-thoughts-before-the-49ers",
+          "title": "Cowboys Break: Final Thoughts Before the 49ers",
+          "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbVJ_-3U6OrAma6FAlEL-4-BAd5KZP1sT6drTSfxZ4Tq0kn9xkRpcVVkIBNLc"
+        },
+        {
+          "url": "https://sports.yahoo.com/videos/giardi-patriots-must-protect-ball-183349158.html",
+          "title": "Giardi: Patriots MUST protect the ball against Lions",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXyQPfMAUxSS9j8E7xdovIny_Z94_XLpS-6ejgOSR15YYaBxjf89vwsYCD86g"
+        },
+        {
+          "url": "https://www.detroitlions.com/news/notebook-lions-ready-for-home-away-from-home-experience-in-germany-barnes-cisco-clark",
+          "title": "NOTEBOOK: Lions ready for 'home away from home' experience in Munich",
+          "publisher": "Detroit Lions",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQNW9AU8zWIJIe2ZVS7jqeYqOeNKVsBPa6dNbJoye71Lqmc5fi1BAzLZy8vVA"
         }
       ]
     },
     {
       "query": "morocco vs niger",
-      "approx_searches": "500+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-13T19:10:00Z",
       "related_news_urls": [
         "https://www.moroccoworldnews.com/2026/11/346108/the-atlas-lions-return-to-casablanca-four-years-and-a-lifetime-later/",
         "https://rbleipzig.com/en/news/neil-el-aynaoui-injury-international-duty-morocco-2026-11-11",
-        "https://www.elbotola.com/en/article/2026-11-12-22-36-302.html"
+        "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii8vZGF0dW1mYW4uY29tL2ZpbGVzL3kueG1sIi8+PC9rcnBhbm8+&id=video-live-morocco-v-niger-dmhykngddsev"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbHHVJKoOtWSI8D4PsiFj0OFieim6lvQIhnbjOg975o2lp1TkbwII87qely0w",
       "image_credit": "Morocco World News",
@@ -68,17 +278,17 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRnNWOXSwHQsF4EO_Y-4_78BrGVWycd-ow8PiFn-BkSRgjvBcc5WEGSDFzf1k"
         },
         {
-          "url": "https://www.elbotola.com/en/article/2026-11-12-22-36-302.html",
-          "title": "Targhalline: 'Playing in Casablanca gives us a great feeling'",
-          "publisher": "Elbotola",
+          "url": "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii8vZGF0dW1mYW4uY29tL2ZpbGVzL3kueG1sIi8+PC9rcnBhbm8+&id=video-live-morocco-v-niger-dmhykngddsev",
+          "title": "[#LIVESTREAm]+! Morocco v Niger LIVE Score Updates in Football Match - Nov. 13, 2026",
+          "publisher": "日本取引所グループ",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyR8v8MPcm3dt6JGMPw_hHaleRx5sMR9qsbppyNg-LYgObogKJ4-vj1r2SPHA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRiAjaSnUkaQMOynjmSOOXMaFaDlqfET3VgCIT8Hzn_c84cYPvfBlH_9pWEZN0"
         }
       ]
     },
     {
       "query": "france vs south africa",
-      "approx_searches": "500+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-13T19:10:00Z",
       "related_news_urls": [
         "https://africa.espn.com/espn/story/_/id/50469373/france-vs-south-africa-kick-team-news-how-watch-springboks",
@@ -112,247 +322,37 @@
       ]
     },
     {
-      "query": "randy travis",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T19:10:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/entertainment/randy-travis-wife-doctors-gave-country-legend-1-percent-chance-survival-miraculous-comeback",
-        "https://people.com/randy-travis-first-new-album-in-18-years-is-both-blessing-and-gift-to-us-says-wife-mary-exclusive-12250717",
-        "https://www.allcountrynews.com/post/randy-travis-opens-the-vault-and-gives-country-music-something-worth-holding-onto-with-same-old-way"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmyacN9z4uU2pZpK5fFyjI4bCueOBWjX579su888cG-u3HzPVzJB6VPyhoCjY",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/entertainment/randy-travis-wife-doctors-gave-country-legend-1-percent-chance-survival-miraculous-comeback",
-          "title": "Randy Travis’ wife says doctors gave country legend 1% chance of survival before miraculous comeback",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmyacN9z4uU2pZpK5fFyjI4bCueOBWjX579su888cG-u3HzPVzJB6VPyhoCjY"
-        },
-        {
-          "url": "https://people.com/randy-travis-first-new-album-in-18-years-is-both-blessing-and-gift-to-us-says-wife-mary-exclusive-12250717",
-          "title": "Randy Travis’ First New Album in More Than 18 Years Is Both a ‘Blessing’ and a ‘Gift to Us,’ Says Wife Mary (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYLvcIs8O-AoM7T0wejErmd73b8lgVWtKP-DefpL0_vbr0HdhNSe_AZxSVzOQ"
-        },
-        {
-          "url": "https://www.allcountrynews.com/post/randy-travis-opens-the-vault-and-gives-country-music-something-worth-holding-onto-with-same-old-way",
-          "title": "Randy Travis Opens the Vault and Gives Country Music Something Worth Holding Onto with ‘Same Old Way’",
-          "publisher": "All Country News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeiBQeffnFAU7q1P3DBOUHn_KKxm0GAHhbXjJM8RLftG6Z-xq26f9n9XdmdSo"
-        }
-      ]
-    },
-    {
-      "query": "cam skattebo jameis winston sneak",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-13T19:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nba/breaking-news/article/commanders-giants-cam-skattebo-refuses-to-be-normal-stares-into-camera-during-thursday-night-football-034621044.html",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/cam-skattebo-stayed-in-his-stance-instead-of-pushing-jameis-winstons-tush-on-key-play",
-        "https://www.usatoday.com/story/sports/nfl/giants/2026/11/12/cam-skattebo-iron-man-tnf-commanders-helmet/92750287007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1EIVEH_xGomAtMu09-COLfVGMqF5TLr3LwfwlcdcXb-GaEjaJ9Hw6KYETCz0",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/nba/breaking-news/article/commanders-giants-cam-skattebo-refuses-to-be-normal-stares-into-camera-during-thursday-night-football-034621044.html",
-          "title": "Commanders-Giants: Cam Skattebo refuses to be normal, stares into camera during 'Thursday Night Football'",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1EIVEH_xGomAtMu09-COLfVGMqF5TLr3LwfwlcdcXb-GaEjaJ9Hw6KYETCz0"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/cam-skattebo-stayed-in-his-stance-instead-of-pushing-jameis-winstons-tush-on-key-play",
-          "title": "Cam Skattebo stayed in his stance instead of pushing Jameis Winston’s tush on key play",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRldc_dTLlXfFOXvv0njzfdzWQG2sqW5aH7su4lA-siZOr8RJEaU8lZOiPE18A"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/nfl/giants/2026/11/12/cam-skattebo-iron-man-tnf-commanders-helmet/92750287007/",
-          "title": "Giants' Cam Skattebo arrives in 'Iron Man' helmet, pukes from pretzel dog, scores 2 TDs",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThFUBNZ1ZyOVn_eh78cIr4_Jv7uE75iscR_7dB13pvtgSQMOdoWk5iqbpRS-0"
-        }
-      ]
-    },
-    {
-      "query": "dale brown",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T19:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/forgot-tell-him-love-him-201922600.html",
-        "https://www.wafb.com/2026/11/12/daddy-dale-shaquille-oneal-former-players-deliver-emotional-tribute-lsu-legend-dale-brown/",
-        "https://www.wbrz.com/news/former-players-coaches-remember-legendary-lsu-basketball-coach-dale-brown/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR0jaUlkUfVVr52Opu-B68xcaybrW4anCnPcty3yXgC__fdcP4AC6upQY6mjk",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/forgot-tell-him-love-him-201922600.html",
-          "title": "“Forgot to Tell Him I Love Him”: Prayers Pour In From Shaquille O’Neal While Mourning Deceased LSU Coach Dale Brown",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR0jaUlkUfVVr52Opu-B68xcaybrW4anCnPcty3yXgC__fdcP4AC6upQY6mjk"
-        },
-        {
-          "url": "https://www.wafb.com/2026/11/12/daddy-dale-shaquille-oneal-former-players-deliver-emotional-tribute-lsu-legend-dale-brown/",
-          "title": "‘Daddy Dale’: Shaquille O’Neal, former players deliver emotional tribute to LSU legend Dale Brown",
-          "publisher": "WAFB",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZCd_ue5agaS3dcMVmXsjw_FU7O-r-vTxMaBilmjx9fczJEtwgMHzvw9fbYJM"
-        },
-        {
-          "url": "https://www.wbrz.com/news/former-players-coaches-remember-legendary-lsu-basketball-coach-dale-brown/",
-          "title": "Former players, coaches remember legendary LSU basketball coach Dale Brown",
-          "publisher": "WBRZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlv4UZXe_RqfQQVdm1lpYYb13vUmjFvp1G3hkUpWHyZVyN8n2Ap-Ind_WsAoM"
-        }
-      ]
-    },
-    {
-      "query": "eslovenia - suiza",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T19:10:00Z",
-      "related_news_urls": [
-        "https://www.sportytrader.es/pronosticos/eslovenia-suiza-386303/",
-        "https://www.dazn.com/es-ES/news/futbol/luxemburgo-estonia-fecha-hora-canal-tv-donde-ver-online-hoy-nations-league-202627-espana/zy838br1hsvk1eaqct06txep4",
-        "https://www.lanacion.com.ar/deportes/futbol/eslovenia-vs-suiza-liga-de-naciones-2026-dia-hora-y-como-seguir-online-nid12112026/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIFfWSS2UKUaSXZuJGCZj62yNQ0s8S0wC-sDqwk-p0zruC7_9s2KPUNr8ggNY",
-      "image_credit": "SportyTrader",
-      "news": [
-        {
-          "url": "https://www.sportytrader.es/pronosticos/eslovenia-suiza-386303/",
-          "title": "Pronóstico Eslovenia - Suiza - Nations League",
-          "publisher": "SportyTrader",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIFfWSS2UKUaSXZuJGCZj62yNQ0s8S0wC-sDqwk-p0zruC7_9s2KPUNr8ggNY"
-        },
-        {
-          "url": "https://www.dazn.com/es-ES/news/futbol/luxemburgo-estonia-fecha-hora-canal-tv-donde-ver-online-hoy-nations-league-202627-espana/zy838br1hsvk1eaqct06txep4",
-          "title": "Luxemburgo vs Estonia: fecha, hora, canal, TV y dónde ver online hoy la Nations League 2026/27 en España",
-          "publisher": "DAZN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjq06T64Y71G13nxPahsAORux71VEwgf_aiQEXgpSB69l6VTfbx8xuhwH1XJM"
-        },
-        {
-          "url": "https://www.lanacion.com.ar/deportes/futbol/eslovenia-vs-suiza-liga-de-naciones-2026-dia-hora-y-como-seguir-online-nid12112026/",
-          "title": "Eslovenia vs. Suiza, Liga de Naciones 2026: día, hora y cómo seguir online",
-          "publisher": "La Nación",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsAlpskW-_N6h2TbObnIDl_vnKfgi1htzurQYltyP1wbn-S4iP9VutedAbvZw"
-        }
-      ]
-    },
-    {
-      "query": "pennsylvania lottery",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T19:10:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/pittsburgh/news/shaler-township-pennsylvania-lottery-match-6-jackpot-winner/",
-        "https://patch.com/pennsylvania/pittsburgh/1-8m-jackpot-winning-pa-lottery-ticket-sold-pa-area",
-        "https://www.wtae.com/article/pittsburgh-area-lottery-winning-jackpot-shop-n-save/74425484"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPxn7Rw7OPTkZMCvRsYVrnRdNjlvWEBxNSG3LnPf0ZyL6eUF8bwnzfRHMzt8o",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/pittsburgh/news/shaler-township-pennsylvania-lottery-match-6-jackpot-winner/",
-          "title": "Pennsylvania Lottery ticket worth nearly $2 million sold just outside of Pittsburgh",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPxn7Rw7OPTkZMCvRsYVrnRdNjlvWEBxNSG3LnPf0ZyL6eUF8bwnzfRHMzt8o"
-        },
-        {
-          "url": "https://patch.com/pennsylvania/pittsburgh/1-8m-jackpot-winning-pa-lottery-ticket-sold-pa-area",
-          "title": "$1.8M Jackpot-Winning PA Lottery Ticket Sold In Pittsburgh Area",
-          "publisher": "Patch",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7bJu_ZjgZtoTQX3Tkr6anoqwrT4dvMoxCG3vNY6tuxTnCSVO92_kd0hmC0yQ"
-        },
-        {
-          "url": "https://www.wtae.com/article/pittsburgh-area-lottery-winning-jackpot-shop-n-save/74425484",
-          "title": "Jackpot-winning Pa. Lottery ticket sold at SHOP 'n SAVE in Allegheny County",
-          "publisher": "WTAE",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbJVNexOVy76y5RTAdmeLbzQPfA56ZXithgJko9H2qDrSX5w-_XII3C-Caqik"
-        }
-      ]
-    },
-    {
-      "query": "scotland vs north macedonia",
+      "query": "mirra andreeva",
       "approx_searches": "1000+",
-      "published_at": "2026-11-13T19:00:00Z",
+      "published_at": "2026-11-13T19:10:00Z",
       "related_news_urls": [
-        "https://www.theguardian.com/football/live/2026/nov/13/scotland-v-north-macedonia-nations-league-live",
-        "https://www.bbc.com/sport/football/articles/c6702jxw17pjo",
-        "https://www.oregonlive.com/tv/2026/11/watch-scotland-vs-north-macedonia-soccer-for-free-today-nations-league-live-stream-tv-channel-odds.html"
+        "https://www.wtatennis.com/news/4607998/andreeva-wins-45-of-final-55-points-to-rout-sabalenka-reach-first-fage-wta-finals-semifinal",
+        "https://www.bbc.com/sport/tennis/articles/cq1md03gz0zvo",
+        "https://sports.yahoo.com/articles/jessica-pegula-created-monster-fans-090632253.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQCFsIYU3dGc1bVteyWA23qbr6y88em0-aV1Z30rGbNxqD7qAohjqH2w_tXHk",
-      "image_credit": "The Guardian",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvGnCx0ifzofPM4LJys8lZZwORpEbEEbIO7_fA6hFOUd_FSWdGtHNAoOWXvBg",
+      "image_credit": "WTA Tennis",
       "news": [
         {
-          "url": "https://www.theguardian.com/football/live/2026/nov/13/scotland-v-north-macedonia-nations-league-live",
-          "title": "Scotland v North Macedonia: Nations League – live",
-          "publisher": "The Guardian",
+          "url": "https://www.wtatennis.com/news/4607998/andreeva-wins-45-of-final-55-points-to-rout-sabalenka-reach-first-fage-wta-finals-semifinal",
+          "title": "Andreeva uses early anger as fuel, routs Sabalenka to top FAGE WTA Finals Group 2",
+          "publisher": "WTA Tennis",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQCFsIYU3dGc1bVteyWA23qbr6y88em0-aV1Z30rGbNxqD7qAohjqH2w_tXHk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvGnCx0ifzofPM4LJys8lZZwORpEbEEbIO7_fA6hFOUd_FSWdGtHNAoOWXvBg"
         },
         {
-          "url": "https://www.bbc.com/sport/football/articles/c6702jxw17pjo",
-          "title": "Scotland: No excuses as Pocognoli seeks first Hampden victory",
+          "url": "https://www.bbc.com/sport/tennis/articles/cq1md03gz0zvo",
+          "title": "WTA Finals: Mirra Andreeva thrashes Aryna Sabalenka, Elina Svitolina beats Karolina Muchova",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpJMAuBJOS6ZB0kZaZDR5KxM5ZME2XsrpBO1pk3piZajXUyj-xgW6S6XWVW0c"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWeVuqJduTTS8yqKFZDXKxVweYXQiy4R0UoCzo924AspEk-tSgnBqf7S3I4hw"
         },
         {
-          "url": "https://www.oregonlive.com/tv/2026/11/watch-scotland-vs-north-macedonia-soccer-for-free-today-nations-league-live-stream-tv-channel-odds.html",
-          "title": "Watch Scotland vs. North Macedonia soccer for free today: Nations League live stream, TV channel, odds",
-          "publisher": "OregonLive.com",
+          "url": "https://sports.yahoo.com/articles/jessica-pegula-created-monster-fans-090632253.html",
+          "title": "“Jessica Pegula Has Created A Monster” – Fans React After Mirra Andreeva Stuns Aryna Sabalenka With 6-0 Bagel At WTA Finals",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvkGSeXTsaO4R2hYlMO3vpN3kFzbvWxAvmEZhj3K_TgPXtENkEnvGH5X8QKaI"
-        }
-      ]
-    },
-    {
-      "query": "joão franco below deck",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T19:00:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/news/below-deck-joao-franco-arrested-turkey-fight-teenager-death/",
-        "https://globalnews.ca/news/12149393/below-deck-joao-franco-arrested-fight-teen-death/",
-        "https://www.nbcnews.com/nightly-news/video/former-reality-star-arrested-after-deadly-brawl-273387077563"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpOpZ_5eRcDBkkDP_8YIbZpcmxRnjkedbV2wSfr50JNTJ3F3_yJph3BBRLhfg",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/news/below-deck-joao-franco-arrested-turkey-fight-teenager-death/",
-          "title": "Yacht captain on U.S. reality show \"Below Deck\" arrested in Turkey after fight leaves teenager dead",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpOpZ_5eRcDBkkDP_8YIbZpcmxRnjkedbV2wSfr50JNTJ3F3_yJph3BBRLhfg"
-        },
-        {
-          "url": "https://globalnews.ca/news/12149393/below-deck-joao-franco-arrested-fight-teen-death/",
-          "title": "Ex-Below Deck cast member Joao Franco arrested in Turkey after teen dies",
-          "publisher": "Global News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLXCws8_rXYri5ggLIiC6wTR2Ca1Ez_8p5LAdyJxMoAPGG43RjfVDxVDEnLng"
-        },
-        {
-          "url": "https://www.nbcnews.com/nightly-news/video/former-reality-star-arrested-after-deadly-brawl-273387077563",
-          "title": "Former reality star arrested after deadly brawl",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwCvL63-bKNHpPV7zJ-d03DQ2dN0B3WXT5PcH6rYVSUqKftlHNrpADBD_dHOI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_qux7zNEPrHPoJtCZMfb23U6E84zLWAzzXZl70GhZKc4h5XFfcsdcipeDjRg"
         }
       ]
     }
