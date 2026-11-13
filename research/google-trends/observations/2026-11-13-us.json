@@ -3,192 +3,262 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T23:01:43.580866Z",
+  "checked_at": "2026-11-13T23:30:34.246981Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "elly de la cruz",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T22:40:00Z",
+      "query": "ghost soldier",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-13T23:10:00Z",
       "related_news_urls": [
-        "https://www.mlb.com/news/elly-de-la-cruz-s-future-with-reds-trade-potential",
-        "https://local12.com/sports/reds/superagent-scott-boras-questions-reds-bowners-usiness-model-elly-de-la-cruzs-future-contract",
-        "https://sports.yahoo.com/articles/cincinnati-reds-trade-elly-la-160031034.html"
+        "https://www.nytimes.com/2026/11/11/movies/ghost-soldier-review-jim-caviezel.html",
+        "https://www.foxnews.com/video/6408264499112",
+        "https://www.pluggedin.com/movie-reviews/ghost-soldier-2026/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSNfEzXvuywR_2MoAhc27SirNDlwprBnjbOF_UmiENE47JZiOGTszU7vE9n_M",
-      "image_credit": "MLB.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-ylIEv4rfLZcQi_gm1QYpWDK3-PI76Zvbq6f1yDYf6uqs4K-yUSP8HJ0l5wo",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.mlb.com/news/elly-de-la-cruz-s-future-with-reds-trade-potential",
-          "title": "Could Reds really trade De La Cruz? Examining the situation",
-          "publisher": "MLB.com",
+          "url": "https://www.nytimes.com/2026/11/11/movies/ghost-soldier-review-jim-caviezel.html",
+          "title": "‘Ghost Soldier’ Review: As Good as His Word",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSNfEzXvuywR_2MoAhc27SirNDlwprBnjbOF_UmiENE47JZiOGTszU7vE9n_M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-ylIEv4rfLZcQi_gm1QYpWDK3-PI76Zvbq6f1yDYf6uqs4K-yUSP8HJ0l5wo"
         },
         {
-          "url": "https://local12.com/sports/reds/superagent-scott-boras-questions-reds-bowners-usiness-model-elly-de-la-cruzs-future-contract",
-          "title": "Superagent Boras questions Reds’ business model as team weighs Elly De La Cruz’s future",
-          "publisher": "WKRC",
+          "url": "https://www.foxnews.com/video/6408264499112",
+          "title": "Jim Caviezel says his new film ‘Ghost Soldier’ doesn’t have ‘Hollywood fake stuff’",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGGt-dwCQG2xRZbPAj7iZILbrVIi4wkDy6DgCtkIaWvlPxhV8K85m0BVQvrSo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNM1YsDiFYPJb--8uPnTN5KDiUYQB870WI7G4uNDVzDdhpgIZbjMffh-QzLJ4"
         },
         {
-          "url": "https://sports.yahoo.com/articles/cincinnati-reds-trade-elly-la-160031034.html",
-          "title": "Cincinnati Reds Provide Trade Update on Elly De La Cruz",
+          "url": "https://www.pluggedin.com/movie-reviews/ghost-soldier-2026/",
+          "title": "Ghost Soldier",
+          "publisher": "Plugged In",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqrUxRsaRbrQ4b5bXBwyg3LrQIgoqYZGNspwI345dVZaLTQOOXWEguwl1oUZc"
+        }
+      ]
+    },
+    {
+      "query": "colombia - chile",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-13T23:10:00Z",
+      "related_news_urls": [
+        "https://www.goal.com/en-us/betting/tips/colombia-vs-chile-predictions-11-13-2026/A%3Abltd572990866e30f72",
+        "https://bolavip.com/en/soccer/why-isnt-james-rodriguez-playing-today-for-colombia-vs-chile-in-2026-international-friendly",
+        "https://www.vavel.com/en-us/soccer/2026/11/13/1279077-colombia-vs-chile-live-score-2026-friendly.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4eqJIcoX2g3Uy7_OgwchYI03ZfUqUw8I3vaNzBjYx0eQtGCbO96blXqHZG4Y",
+      "image_credit": "Goal.com",
+      "news": [
+        {
+          "url": "https://www.goal.com/en-us/betting/tips/colombia-vs-chile-predictions-11-13-2026/A%3Abltd572990866e30f72",
+          "title": "Colombia vs Chile Predictions: Visitors show signs of a revival",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4eqJIcoX2g3Uy7_OgwchYI03ZfUqUw8I3vaNzBjYx0eQtGCbO96blXqHZG4Y"
+        },
+        {
+          "url": "https://bolavip.com/en/soccer/why-isnt-james-rodriguez-playing-today-for-colombia-vs-chile-in-2026-international-friendly",
+          "title": "Why isn’t James Rodriguez playing today for Colombia vs Chile in 2026 international friendly?",
+          "publisher": "Bolavip US",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYDddLIc60h36FiymLWNHqfAL4uXIkz3weYxiMpdGrPxoXDrWIdJON22jXrOk"
+        },
+        {
+          "url": "https://www.vavel.com/en-us/soccer/2026/11/13/1279077-colombia-vs-chile-live-score-2026-friendly.html",
+          "title": "Colombia vs Chile LIVE, Latest Score, Goals and Friendly Updates",
+          "publisher": "VAVEL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-la48AKGqcFoGHeKGde5ixjTSzJ8fRQF7lVpJs175zWBArHuDeYmv82_onjk"
+        }
+      ]
+    },
+    {
+      "query": "ios 27.3 new features release",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T23:10:00Z",
+      "related_news_urls": [
+        "https://9to5mac.com/2026/11/09/ios-27-3-three-new-iphone-features-coming-soon/",
+        "https://www.macrumors.com/2026/11/09/siri-could-get-better-remembering-your-life/",
+        "https://en.sedaily.com/culture/2026/11/11/apple-music-pushes-beyond-listening-with-selfie-sing-feature"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS64Wf13vWvvOaxlPK-yN9LoUG5Nz4Qs9Pq8sw-5EHRBTHsQFpuAIcda1xRo6A",
+      "image_credit": "9to5Mac",
+      "news": [
+        {
+          "url": "https://9to5mac.com/2026/11/09/ios-27-3-three-new-iphone-features-coming-soon/",
+          "title": "iOS 27.3: Three new iPhone features coming soon",
+          "publisher": "9to5Mac",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS64Wf13vWvvOaxlPK-yN9LoUG5Nz4Qs9Pq8sw-5EHRBTHsQFpuAIcda1xRo6A"
+        },
+        {
+          "url": "https://www.macrumors.com/2026/11/09/siri-could-get-better-remembering-your-life/",
+          "title": "Siri Is Getting a Better Memory",
+          "publisher": "MacRumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwyfqK_nfCJgO7-nmA2NSWm442Dg5B_nlh6bWbQSHu8zSnHlgW7rBSIR9emkc"
+        },
+        {
+          "url": "https://en.sedaily.com/culture/2026/11/11/apple-music-pushes-beyond-listening-with-selfie-sing-feature",
+          "title": "Apple Music Pushes Beyond Listening With Selfie Sing Feature",
+          "publisher": "Seoul Economic Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8yefl30_CIqzjbo_I4MP9fiZ8sHsE4K_7YrcwrEhdiNJ0-IkduXys4_q6vKQ"
+        }
+      ]
+    },
+    {
+      "query": "ufo",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T23:10:00Z",
+      "related_news_urls": [
+        "https://www.newsnationnow.com/space/ufo/tentacled-ufo-alaska/",
+        "https://www.foxnews.com/video/6408345209112",
+        "https://www.dailymail.com/sciencetech/article-16278729/ufo-hovers-alaska-military-base.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMdRgBFDCAws6q74vmTFP-s3lKha6tVF6tNj92T8255F-mu-vINw43UZeSATw",
+      "image_credit": "NewsNation",
+      "news": [
+        {
+          "url": "https://www.newsnationnow.com/space/ufo/tentacled-ufo-alaska/",
+          "title": "Tentacled UFO over Alaska? Experts have explanation for bizarre video",
+          "publisher": "NewsNation",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMdRgBFDCAws6q74vmTFP-s3lKha6tVF6tNj92T8255F-mu-vINw43UZeSATw"
+        },
+        {
+          "url": "https://www.foxnews.com/video/6408345209112",
+          "title": "SEE IT: Mysterious 'jellyfish' object floats near US military base as UFO expert offers theory",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnVC787JrP0LHC-ZnXTdMBimVrgWNYr_DjmctvEjPYcaOMMLDPhvZ9jziXvf4"
+        },
+        {
+          "url": "https://www.dailymail.com/sciencetech/article-16278729/ufo-hovers-alaska-military-base.html",
+          "title": "UFO with tentacles seen near US military base before vanishing",
+          "publisher": "Daily Mail",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-95SzXTsjDK4LBHVGzyxSV-_MNCKcoMoFwb1fhjVRnG_3zF0uyzqOn2mTNy4"
+        }
+      ]
+    },
+    {
+      "query": "spider-man 2 ps5 update qssr",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T23:10:00Z",
+      "related_news_urls": [
+        "https://blog.playstation.com/2026/11/13/qssr-arrives-in-marvels-spider-man-2-control-resonant-the-finals-arc-raiders-and-hell-let-loose-vietnam/",
+        "https://www.digitalfoundry.net/news/2026/11/qssr-upgrades-revealed-for-six-ps5-games-live-now-in-marvels-spider-man-2",
+        "https://kotaku.com/spider-man-2-and-a-bunch-of-other-great-games-are-about-to-look-even-better-on-base-ps5-2000756594"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgWDhkH791-b0eC_0bR1EbVMxddYt8NjNtINfBgNsvVqsV1lJkmM4MWesh-ZY",
+      "image_credit": "PlayStation.Blog",
+      "news": [
+        {
+          "url": "https://blog.playstation.com/2026/11/13/qssr-arrives-in-marvels-spider-man-2-control-resonant-the-finals-arc-raiders-and-hell-let-loose-vietnam/",
+          "title": "QSSR arrives in Marvel’s Spider-Man 2, Control Resonant, The Finals, ARC Raiders, and Hell Let Loose: Vietnam",
+          "publisher": "PlayStation.Blog",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgWDhkH791-b0eC_0bR1EbVMxddYt8NjNtINfBgNsvVqsV1lJkmM4MWesh-ZY"
+        },
+        {
+          "url": "https://www.digitalfoundry.net/news/2026/11/qssr-upgrades-revealed-for-six-ps5-games-live-now-in-marvels-spider-man-2",
+          "title": "QSSR Upgrades Revealed For Six PS5 Games, Live Now in Marvel's Spider-Man 2",
+          "publisher": "Digital Foundry",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuUw0IY0UT5SINWLZ6RRYUEiKIERmUeqoKxKKMERQwaCOJOAWGYTh9Ga4m154"
+        },
+        {
+          "url": "https://kotaku.com/spider-man-2-and-a-bunch-of-other-great-games-are-about-to-look-even-better-on-base-ps5-2000756594",
+          "title": "Spider-Man 2 And A Bunch Of Other Great Games Are About To Look Even Better On Base PS5",
+          "publisher": "Kotaku",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAo1Et27zTMY29tTat8X0gW0WqcKQaQNJ7ZXIYmB_UC7Ul6iyb60uCl0iomH8"
+        }
+      ]
+    },
+    {
+      "query": "florida state vs pittsburgh",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-13T23:00:00Z",
+      "related_news_urls": [
+        "https://pittsburghpanthers.com/news/2026/11/13/follow-live-pitt-football-vs-florida-state",
+        "https://sports.yahoo.com/articles/watch-florida-state-vs-pittsburgh-230000842.html",
+        "https://247sports.com/college/florida-state/longformarticle/florida-state-depth-chart-pitt-game-292631213/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUY8MelTrapyazvdDMm8Ltlk4dU_hKtJAdjtwI30yUbHx2iWKTwJxLaZyOehE",
+      "image_credit": "PittsburghPanthers.com",
+      "news": [
+        {
+          "url": "https://pittsburghpanthers.com/news/2026/11/13/follow-live-pitt-football-vs-florida-state",
+          "title": "Follow Live: Pitt Football vs. Florida State",
+          "publisher": "PittsburghPanthers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUY8MelTrapyazvdDMm8Ltlk4dU_hKtJAdjtwI30yUbHx2iWKTwJxLaZyOehE"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/watch-florida-state-vs-pittsburgh-230000842.html",
+          "title": "How to watch Florida State vs Pittsburgh: Live stream NCAA College Football, TV channel",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnh05Oh7Xwqc3ZYugszo0T1UeM2LXkrzXi_1CFh_m97mPUCwqg3XKXkDxI9pg"
-        }
-      ]
-    },
-    {
-      "query": "austin mack",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T22:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50474755/sources-alabama-start-qb-austin-mack-russell-available",
-        "https://www.cbssports.com/college-football/news/alabama-sit-qb-keelon-russell-austin-mack-vanderbilt/",
-        "https://sports.yahoo.com/articles/concerning-keelon-russell-development-emerges-185310468.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdHEvAhwVle--RaaskUNUHHNJiYopgbl0SrOA4NVnJjq4N4qLtxvYltoUco4Y",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50474755/sources-alabama-start-qb-austin-mack-russell-available",
-          "title": "Sources: Alabama to start QB Austin Mack; Keelon Russell available",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdHEvAhwVle--RaaskUNUHHNJiYopgbl0SrOA4NVnJjq4N4qLtxvYltoUco4Y"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfMwyGoiedwnMc_i98TZNxkak119yNszhavRm1pZ3TJMOhWEe6h1d7r4r5po4"
         },
         {
-          "url": "https://www.cbssports.com/college-football/news/alabama-sit-qb-keelon-russell-austin-mack-vanderbilt/",
-          "title": "Alabama to sit QB Keelon Russell, start Austin Mack vs. Vanderbilt, per report",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXmqgI6G_wqMdxGtTj1PhgQ4mz6GAizemeNO2qz57QAbykLg9QR-AHJ72zMgY"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/concerning-keelon-russell-development-emerges-185310468.html",
-          "title": "Concerning Keelon Russell Development Emerges Hours Before Alabama-Vanderbilt",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUOFTBd3FejvSm66aLk3fi4sDwodMc81LxIZAD31m_SZdRZTzKAaCmfSS-Ij0"
-        }
-      ]
-    },
-    {
-      "query": "liga de naciones concacaf",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T22:40:00Z",
-      "related_news_urls": [
-        "https://www.latimes.com/espanol/deportes/articulo/2026-11-13/bajo-presion-marquez-se-estrena-con-mexico-en-partidos-oficiales-ante-jamaica",
-        "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17507329/seleccion-mexicana-rafa-marquez-jamaica-final-four-concacaf",
-        "https://www.si.com/es-us/las-posibles-alineaciones-titulares-del-partido-jamaica-vs-mexico-14-11-2026"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFlzNhA7ijA93fhHVSW1AMOixxI6DVWl5AlbSBsZYm_wP25TnKPRK0kUvIWdM",
-      "image_credit": "Los Angeles Times",
-      "news": [
-        {
-          "url": "https://www.latimes.com/espanol/deportes/articulo/2026-11-13/bajo-presion-marquez-se-estrena-con-mexico-en-partidos-oficiales-ante-jamaica",
-          "title": "Bajo presión, Márquez se estrena con México en partidos oficiales ante Jamaica",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFlzNhA7ijA93fhHVSW1AMOixxI6DVWl5AlbSBsZYm_wP25TnKPRK0kUvIWdM"
-        },
-        {
-          "url": "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17507329/seleccion-mexicana-rafa-marquez-jamaica-final-four-concacaf",
-          "title": "¿Rafa Márquez abarata a la Selección Mexicana en sus convocatorias?",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZwd3udzetGjxKQFpZuTV4slnIu4PjVbYOUQr8Oz4HhLi62B4WicBeln1ti6E"
-        },
-        {
-          "url": "https://www.si.com/es-us/las-posibles-alineaciones-titulares-del-partido-jamaica-vs-mexico-14-11-2026",
-          "title": "Las posibles alineaciones titulares del partido Jamaica vs México",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgjenkbvB_TPNu61pLtWcgMGKpJ41nOUm7Uraf9m2x3m0ZoWHYhZaxr_bJsZA"
-        }
-      ]
-    },
-    {
-      "query": "north alabama vs miami fl",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T22:40:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/miami/article/live-updates-no-17-miami-hurricanes-basketball-vs-north-alabama-292633040/",
-        "https://sports.yahoo.com/articles/north-alabama-vs-no-17-170005174.html",
-        "https://www.timesdaily.com/sports/una-mens-basketball-heads-south-for-matchup-with-no-17-miami/article_1ed835b6-f8f7-49c2-9480-8fb0823efe84.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ8kXslMGSMe-CGxsi1CHOQOrmBg69M1Sg8SagdDQdRtZ3Gm209BMw1b-rL3I",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/miami/article/live-updates-no-17-miami-hurricanes-basketball-vs-north-alabama-292633040/",
-          "title": "Live Updates: No. 17 Miami basketball vs. North Alabama",
+          "url": "https://247sports.com/college/florida-state/longformarticle/florida-state-depth-chart-pitt-game-292631213/",
+          "title": "FSU releases updated depth chart ahead of Pitt game: The injury shuffle continues",
           "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ8kXslMGSMe-CGxsi1CHOQOrmBg69M1Sg8SagdDQdRtZ3Gm209BMw1b-rL3I"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/north-alabama-vs-no-17-170005174.html",
-          "title": "North Alabama vs. No. 17 Miami: Game Central, Rundown, Live Updates, Analysis",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCV2kPzGIiEd0nXhc2HbVn6OHz81aYpgp3j-ogxdSEDmtCR50YUY2iFJoE8ls"
-        },
-        {
-          "url": "https://www.timesdaily.com/sports/una-mens-basketball-heads-south-for-matchup-with-no-17-miami/article_1ed835b6-f8f7-49c2-9480-8fb0823efe84.html",
-          "title": "UNA men's basketball heads south for matchup with No. 17 Miami",
-          "publisher": "timesdaily.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjHSjtONYKVS2tQBGf10rpwyTgK16Z7MYfC24ZkzXmqo2V7n6QQikvXcgMpz8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlS1sFIIYG-KimXXUsPyNwmQJjNelVqUAXVUteLDpdS6C32wfBbatR4hCdxh8"
         }
       ]
     },
     {
-      "query": "nasdaq composite",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T22:30:00Z",
+      "query": "bucks vs magic",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-13T23:00:00Z",
       "related_news_urls": [
-        "https://www.cnbc.com/2026/11/12/stock-market-today-live-updates.html",
-        "https://www.wsj.com/finance/stocks/tech-stocks-fall-as-next-week-brings-big-tests-for-the-ai-trade-6a346b49",
-        "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html"
+        "https://sports.yahoo.com/articles/why-dominant-nba-cup-win-180005908.html",
+        "https://www.brewhoop.com/bucks-game-previews/81353/milwaukee-vs-orlando-magic-game-preview-discussion-start-time-tv-schedule-injury-report",
+        "https://www.sportsgambler.com/betting-tips/basketball/milwaukee-bucks-vs-orlando-magic-prediction-odds-6014951/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRM3MDSS8ec3Pe69TqM930udyAUzjnSePlIzVaarrPJ-jIEg_KQ3XjfdKXLEF0",
-      "image_credit": "CNBC",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_rLFAUEUrj5eyY4wMGBd_jNoO1tLRdFZnozcIpnTj_AxpSSmftcywxnUawDo",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.cnbc.com/2026/11/12/stock-market-today-live-updates.html",
-          "title": "Nasdaq falls on Friday as Nvidia sells off, but index notches best week since August: Live updates",
-          "publisher": "CNBC",
+          "url": "https://sports.yahoo.com/articles/why-dominant-nba-cup-win-180005908.html",
+          "title": "Why This Should Be a Dominant NBA Cup Win for Wagner Magic vs. Bucks",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRM3MDSS8ec3Pe69TqM930udyAUzjnSePlIzVaarrPJ-jIEg_KQ3XjfdKXLEF0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_rLFAUEUrj5eyY4wMGBd_jNoO1tLRdFZnozcIpnTj_AxpSSmftcywxnUawDo"
         },
         {
-          "url": "https://www.wsj.com/finance/stocks/tech-stocks-fall-as-next-week-brings-big-tests-for-the-ai-trade-6a346b49",
-          "title": "Tech Stocks Fall as Next Week Brings Big Tests for the AI Trade | Markets P.M. for Nov. 13",
-          "publisher": "WSJ",
+          "url": "https://www.brewhoop.com/bucks-game-previews/81353/milwaukee-vs-orlando-magic-game-preview-discussion-start-time-tv-schedule-injury-report",
+          "title": "Milwaukee Bucks vs. Orlando Magic Preview & Game Thread: Finally, a real chance",
+          "publisher": "Brew Hoop",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCkVuIQJseuVrk407UCxSRrFpjwlPrBVpmwipqDRkGBcFly4uSPxiqRUzFD0A"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRq24EIZlexB3-5KLJL56RwvfNuZaZb5B84SQ3QxBp-vwWliitl8jvwYbVZvpo"
         },
         {
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html",
-          "title": "Stock market today: Dow rises, S&P 500 and Nasdaq slip to cap volatile week, Nvidia stock plunge deepens",
-          "publisher": "Yahoo Finance",
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/milwaukee-bucks-vs-orlando-magic-prediction-odds-6014951/",
+          "title": "Milwaukee Bucks vs Orlando Magic Prediction, Picks & Odds | NBA Friday",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNPjhiVckXMhzUPe4OIbosBoTcmjbSv0JsgzA_U3yexBdZORn4z7uOIWRPhOc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBvLkLeC4Bao71AHI0KMnHsDEuw-iXZlxAY409RJ8dVPKF0X1iTOzaejeXoyg"
         }
       ]
     },
     {
-      "query": "vuelo",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T22:30:00Z",
+      "query": "estados unidos",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-13T23:00:00Z",
       "related_news_urls": [
         "https://www.bbc.com/mundo/articles/crgqx8jpw3jvo",
         "https://cnnespanol.cnn.com/2026/11/13/eeuu/live-news/ultima-hora-suspension-vuelos-eeuu-noticias-retrasos-trax",
-        "https://abc7ny.com/live-updates/actualizaciones-en-vivo-sobre-suspension-de-vuelos-la-faa-lo-que-hay-que-saber-mientras-vuelos-permanecen-detenidos-en-estados-unidos/20038919/"
+        "https://www.telemundo.com/noticias/noticias-telemundo/estados-unidos/live-blog/faa-aeropuertos-aviones-aviacion-suspension-rcna609263"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSelDKGqybJSXAMinX83T-w67cyr6dsnisIqpyl4JUriZNT4w0EqPxix2hzwwM",
       "image_credit": "BBC",
@@ -205,154 +275,84 @@
           "title": "Última hora de suspensión de todos los vuelos nacionales en EE.UU.: noticias, retrasos y más",
           "publisher": "CNN en Español",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe-fKRdgNP2640pVoBCfSP6tgA3-NJr8lI_7i4TbnC-MATkfoMJZJQb9Y17e4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtvkhCoen3MyTRVxPzGApS0rhzsDFSoQ4Do1_aSzRoG1cknMGHZOp06B-ozeU"
         },
         {
-          "url": "https://abc7ny.com/live-updates/actualizaciones-en-vivo-sobre-suspension-de-vuelos-la-faa-lo-que-hay-que-saber-mientras-vuelos-permanecen-detenidos-en-estados-unidos/20038919/",
-          "title": "Actualizaciones en vivo: Lo que hay que saber sobre la suspensión nacional de vuelos de la FAA",
-          "publisher": "ABC7 New York",
+          "url": "https://www.telemundo.com/noticias/noticias-telemundo/estados-unidos/live-blog/faa-aeropuertos-aviones-aviacion-suspension-rcna609263",
+          "title": "EN VIVO: La FAA ordena suspender los despegues en todos los aeropuertos del país por “razones de seguridad”",
+          "publisher": "Telemundo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQjoQwKh4F9f9xHat6O9pSM7z4KZZSBKEX87_w-R_a__iHwnkbNv4SJJh5ntM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRc_IAi_9orW6IuegQfBDt1h03sR6mW57R62X-oxLD27rUzK6hNjNqgBEwa-FI"
         }
       ]
     },
     {
-      "query": "texas a&m-cc vs florida state",
+      "query": "king and queen building",
       "approx_searches": "500+",
-      "published_at": "2026-11-13T22:30:00Z",
+      "published_at": "2026-11-13T23:00:00Z",
       "related_news_urls": [
-        "https://247sports.com/college/florida-state/longformarticle/fsu-basketball-texas-am-corpus-christi-game-preview-292601073/",
-        "https://www.tomahawknation.com/florida-state-seminoles-mens-basketball/140680/luke-loucks-tallahassee-net-acc-marcis-ponder",
-        "https://seminoles.com/news/2026/11/12/mens-basketball-seminoles-host-islanders-for-military-appreciation"
+        "https://www.11alive.com/article/news/local/sandy-springs-king-and-queen-towers-evacuation-threat-called-in/85-6e402e33-260e-49aa-9d91-a9359fa35058",
+        "https://www.atlantanewsfirst.com/2026/11/13/threat-forces-evacuation-sandy-springs-office-tower/",
+        "https://www.yahoo.com/news/articles/evacuation-sandy-springs-king-queen-182723304.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwfaYIyELW2f0v8MNwPMC9677rE4BzsePYgcui0_BRrfKzMMdSGTdAP2f8IjU",
-      "image_credit": "247Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1_aZ4VbBVuluWAEbDTHHCF9jeYgx6NEO3TXJ8WHD2x9mxkzjhd1UlCrAniSE",
+      "image_credit": "11Alive.com",
       "news": [
         {
-          "url": "https://247sports.com/college/florida-state/longformarticle/fsu-basketball-texas-am-corpus-christi-game-preview-292601073/",
-          "title": "FSU Basketball hosts Texas A&M-Corpus Christi on Friday evening",
-          "publisher": "247Sports",
+          "url": "https://www.11alive.com/article/news/local/sandy-springs-king-and-queen-towers-evacuation-threat-called-in/85-6e402e33-260e-49aa-9d91-a9359fa35058",
+          "title": "Threat cleared after evacuation of building at Sandy Springs 'King and Queen' complex",
+          "publisher": "11Alive.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwfaYIyELW2f0v8MNwPMC9677rE4BzsePYgcui0_BRrfKzMMdSGTdAP2f8IjU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1_aZ4VbBVuluWAEbDTHHCF9jeYgx6NEO3TXJ8WHD2x9mxkzjhd1UlCrAniSE"
         },
         {
-          "url": "https://www.tomahawknation.com/florida-state-seminoles-mens-basketball/140680/luke-loucks-tallahassee-net-acc-marcis-ponder",
-          "title": "Florida State basketball vs. Texas A&M-Corpus Christi: Preview, how to watch, game thread",
-          "publisher": "Tomahawk Nation",
+          "url": "https://www.atlantanewsfirst.com/2026/11/13/threat-forces-evacuation-sandy-springs-office-tower/",
+          "title": "Threat forces evacuation of Sandy Springs office tower",
+          "publisher": "Atlanta News First",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQz_6Lnftcct5qfhwyfCB5B0QNuypPBce7bUFxgFRW_tOf0urSx3YdgveoS-1c"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbIiqhkeytpI94ukFy6eFMWHHrOK4R9L9UVKyh-9nKtfNCIoYGe1tk6ZtiSvI"
         },
         {
-          "url": "https://seminoles.com/news/2026/11/12/mens-basketball-seminoles-host-islanders-for-military-appreciation",
-          "title": "Seminoles Host Islanders for Military Appreciation - Florida State University",
-          "publisher": "Seminoles.com",
+          "url": "https://www.yahoo.com/news/articles/evacuation-sandy-springs-king-queen-182723304.html",
+          "title": "Evacuation of building at Sandy Springs 'King and Queen' complex as a precaution after threat called in",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbiQYv9A2OOo5u2xBeV823kid5Fp3iEI7f4HJTnH3mlad09Wn4ePEehgT1eTg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3svIDS_UsyfkqhD-Tz7Pk4l-UrwZajfkHUJ0eNaK1Hq0XeA6rcSesJ5EZENs"
         }
       ]
     },
     {
-      "query": "aliens",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T22:30:00Z",
-      "related_news_urls": [
-        "https://floodmagazine.com/236349/fat-dog-cancel-me-im-tired/",
-        "https://www.irishnews.com/entertainment/the-snooty-glitterati-of-london-have-a-problem-with-us-fat-dog-on-big-gigs-with-tasty-riders-strategic-slow-songs-and-why-you-shouldnt-wear-an-england-jersey-at-a-kneecap-gig-RZGMXBIVZZHORA5WA7B3HK56AA/",
-        "https://northerntransmissions.com/fat-dog-on-aliens-gallows-humour-and-chasing-the-live-feeling/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMX-fKcBnj6K0Hs0pT4TFnhDBaXIY81devkiwHESy3Pb1ZjqHFjCoILMWU_6c",
-      "image_credit": "FLOOD Magazine",
-      "news": [
-        {
-          "url": "https://floodmagazine.com/236349/fat-dog-cancel-me-im-tired/",
-          "title": "Fat Dog, “Cancel Me (I’m Tired)”",
-          "publisher": "FLOOD Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMX-fKcBnj6K0Hs0pT4TFnhDBaXIY81devkiwHESy3Pb1ZjqHFjCoILMWU_6c"
-        },
-        {
-          "url": "https://www.irishnews.com/entertainment/the-snooty-glitterati-of-london-have-a-problem-with-us-fat-dog-on-big-gigs-with-tasty-riders-strategic-slow-songs-and-why-you-shouldnt-wear-an-england-jersey-at-a-kneecap-gig-RZGMXBIVZZHORA5WA7B3HK56AA/",
-          "title": "‘The snooty glitterati of London have a problem with us’ - Fat Dog on big gigs with tasty riders, strategic slow songs and how to get away with wearing an England jersey at a Kneec",
-          "publisher": "The Irish News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvBocZO5rfOxbbGOy55He82Ltn7Eq4JbuhE-3i_BTJFNPK7fv6kfC7REHbbqQ"
-        },
-        {
-          "url": "https://northerntransmissions.com/fat-dog-on-aliens-gallows-humour-and-chasing-the-live-feeling/",
-          "title": "Fat Dog on Aliens, Gallows Humour and Chasing the Live Feeling",
-          "publisher": "Northern Transmissions",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7_igagN6Z1RiNg98hkLL5w2rsi5Uhxs60ZHiw7gHkbrU9Fb2jxim33JJpp8A"
-        }
-      ]
-    },
-    {
-      "query": "florida state vs pittsburgh prediction",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T22:30:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/florida-state/longformarticle/florida-state-depth-chart-pitt-game-292631213/",
-        "https://www.cbssports.com/betting/news/florida-state-pittsburgh-prediction-odds-time-2026-week-11-college-football-friday-picks-best-bets/",
-        "https://sportsbook.fanduel.com/football/ncaa-football-games/florida-state-@-pittsburgh-36285249"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlS1sFIIYG-KimXXUsPyNwmQJjNelVqUAXVUteLDpdS6C32wfBbatR4hCdxh8",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/florida-state/longformarticle/florida-state-depth-chart-pitt-game-292631213/",
-          "title": "FSU releases updated depth chart ahead of Pitt game: The injury shuffle continues",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlS1sFIIYG-KimXXUsPyNwmQJjNelVqUAXVUteLDpdS6C32wfBbatR4hCdxh8"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/florida-state-pittsburgh-prediction-odds-time-2026-week-11-college-football-friday-picks-best-bets/",
-          "title": "Florida State vs. Pittsburgh prediction, odds, time: Week 11 college football Friday picks by proven model",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGYuhU_cy4O5QuGOo8kyiYmEuFQhWYIk29U2Xtgzuds8nXbr3BY5O1JHvemK4"
-        },
-        {
-          "url": "https://sportsbook.fanduel.com/football/ncaa-football-games/florida-state-@-pittsburgh-36285249",
-          "title": "Florida State @ Pittsburgh Odds",
-          "publisher": "FanDuel Sportsbook",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtz--XBN2v1-Y-_DMMhCr9mR46QuLi9Tt-ogBS2FhK0NPl-Hta0ILQD09tyQY"
-        }
-      ]
-    },
-    {
-      "query": "frontier airlines",
+      "query": "mexico vs",
       "approx_searches": "2000+",
-      "published_at": "2026-11-13T22:20:00Z",
+      "published_at": "2026-11-13T23:00:00Z",
       "related_news_urls": [
-        "https://www.latimes.com/travel/story/2026-11-12/frontier-airlines-first-class-seats-deal",
-        "https://news.flyfrontier.com/frontier-opens-first-class-reservations-expands-cabin-transformation-with-more-extra-legroom-premium-seats-and-in-seat-power/",
-        "https://allears.net/2026/11/13/new-perks-added-for-2-popular-airlines/"
+        "https://mexiconewsdaily.com/lifestyle/el-tri-back-in-action-saturday-first-official-match-rafa-marquez-era/",
+        "https://en.as.com/soccer/mexicos-record-in-stadium-debuts-ahead-of-historic-estadio-bbva-game-against-jamaica-f202611-n/",
+        "https://sports.yahoo.com/articles/tricolor-attack-arrives-camp-jamaica-050400306.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOTG3cIsSuWcEslRAkJQjtT_fSRbyS2XTu0-2m9k_wRWD3fGDEiK--r5K1E1Y",
-      "image_credit": "Los Angeles Times",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXI5f7aYg3ZFSXPAihs0AVX5jXmXTPD65rC51n2mOxuFmtCsg8VycAJThuJk0",
+      "image_credit": "Mexico News Daily",
       "news": [
         {
-          "url": "https://www.latimes.com/travel/story/2026-11-12/frontier-airlines-first-class-seats-deal",
-          "title": "Frontier is now offering first-class seats starting at $129",
-          "publisher": "Los Angeles Times",
+          "url": "https://mexiconewsdaily.com/lifestyle/el-tri-back-in-action-saturday-first-official-match-rafa-marquez-era/",
+          "title": "El Tri is back in action Saturday in its first official match of the Rafa Márquez era",
+          "publisher": "Mexico News Daily",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOTG3cIsSuWcEslRAkJQjtT_fSRbyS2XTu0-2m9k_wRWD3fGDEiK--r5K1E1Y"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXI5f7aYg3ZFSXPAihs0AVX5jXmXTPD65rC51n2mOxuFmtCsg8VycAJThuJk0"
         },
         {
-          "url": "https://news.flyfrontier.com/frontier-opens-first-class-reservations-expands-cabin-transformation-with-more-extra-legroom-premium-seats-and-in-seat-power/",
-          "title": "Frontier Opens First Class Reservations, Expands Cabin Transformation With More Extra-Legroom Premium Seats and In-Seat Power",
-          "publisher": "Frontier Newsroom",
+          "url": "https://en.as.com/soccer/mexicos-record-in-stadium-debuts-ahead-of-historic-estadio-bbva-game-against-jamaica-f202611-n/",
+          "title": "Mexico’s record in stadium debuts ahead of historic Estadio BBVA game against Jamaica",
+          "publisher": "Diario AS",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFF-xJ3EkMBNQX-zyF-5AkZA0R60B5S7f-wFijhNQHqqKWQs44jcCBFl6J_dc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfc1FnGyVaMxnEZVfXu4pVCSP2x2bwPH1GlMnj6O5l1Cl11wJqS-i_2sPYPzI"
         },
         {
-          "url": "https://allears.net/2026/11/13/new-perks-added-for-2-popular-airlines/",
-          "title": "NEW Perks Added for 2 Popular Airlines",
-          "publisher": "AllEars.Net",
+          "url": "https://sports.yahoo.com/articles/tricolor-attack-arrives-camp-jamaica-050400306.html",
+          "title": "💪​ Tricolor attack arrives at camp with Jamaica in mind",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyMkYO0TOmj9rXPcJ_OiCN4Dap2HT9-5cjk-gvx-xGazFLKEEQpKAUr6WN-qc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6E1jHqlclAVTNoGAF_-NcycE8t7yKkZSQTR-25OxV2zthJ2RNEPCDZPxTKMM"
         }
       ]
     }
