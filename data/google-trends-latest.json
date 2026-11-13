@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T05:01:30.553752Z",
+  "checked_at": "2026-11-13T05:31:24.708128Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "cowboys schedule",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T04:40:00Z",
+      "query": "snow storm weather forecast",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-13T05:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50464810/cowboys-joey-porter-absence-due-injury-not-contract",
-        "https://www.dallascowboys.com/news/joey-porter-jr-gives-injury-update-as-matchup-vs-49ers-looms",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-12/george-pickens-hamstring-limited-again-in-wk-10"
+        "https://weather.com/2026/11/11/forecast/regional/noreaster-first-snow-frost-freeze",
+        "https://www.wbaltv.com/article/first-snowfall-records-across-the-us/74380213",
+        "https://www.yahoo.com/news/weather-news/article/a-noreaster-is-soaking-the-coast-who-could-see-the-first-snow-of-the-season-173445911.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIS7BTkwqkj8kCL1FWifUx5SGqGflhIOyNo5dLb81sMWBVZhi8Tq_fzLxxj_w",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMy9uLSr89MhzOJ122OHTxXsuw0FTzb6mHjtpXVQ-PsbwCAcqsRf-khrtEi4s",
+      "image_credit": "The Weather Channel",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50464810/cowboys-joey-porter-absence-due-injury-not-contract",
-          "title": "Cowboys' Porter: My absence is because of injury, not my contract",
-          "publisher": "ESPN",
+          "url": "https://weather.com/2026/11/11/forecast/regional/noreaster-first-snow-frost-freeze",
+          "title": "Nor’easter: Here’s who has best chance of accumulating snow",
+          "publisher": "The Weather Channel",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIS7BTkwqkj8kCL1FWifUx5SGqGflhIOyNo5dLb81sMWBVZhi8Tq_fzLxxj_w"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMy9uLSr89MhzOJ122OHTxXsuw0FTzb6mHjtpXVQ-PsbwCAcqsRf-khrtEi4s"
         },
         {
-          "url": "https://www.dallascowboys.com/news/joey-porter-jr-gives-injury-update-as-matchup-vs-49ers-looms",
-          "title": "Joey Porter Jr. gives injury update as matchup vs. 49ers looms",
-          "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+          "url": "https://www.wbaltv.com/article/first-snowfall-records-across-the-us/74380213",
+          "title": "Find out the earliest first snow on record in your ZIP code",
+          "publisher": "WBAL-TV",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQo-B3zqiMsa-41aw2Gn9VKHZqqEFVrfudQIm_m7v_vecx-4fjChhPYmT8nrG0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1wUMNssOH9camtKOzlYRx0U2WCG_kwDw4on4iqEdPAPn2bGG2Rp-FGdooXwM"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-12/george-pickens-hamstring-limited-again-in-wk-10",
-          "title": "George Pickens (hamstring) limited again in Wk 10",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1t9vjK5X3ap6flwtb5GQ0DMY_l-CS43_Wu_bvFwfJ-1WAmhlF4o-Q-wY9hbQ"
-        }
-      ]
-    },
-    {
-      "query": "rockstar games gta vi",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T04:40:00Z",
-      "related_news_urls": [
-        "https://www.rockstargames.com/newswire/article/39ak81277255o9/explore-the-grand-theft-auto-vi-launch-gallery",
-        "https://variety.com/2026/gaming/news/gta-6-release-gaming-industry-takeover-1236945197/",
-        "https://www.bloomberg.com/news/articles/2026-11-12/the-1-billion-video-game-about-to-swallow-the-world-whole"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4lX0sBBMad-unh9Yy1yTW9kGHyrB_lxfyX6U_DFvhPjD55NVBRM1ENobVcxo",
-      "image_credit": "Rockstar Games",
-      "news": [
-        {
-          "url": "https://www.rockstargames.com/newswire/article/39ak81277255o9/explore-the-grand-theft-auto-vi-launch-gallery",
-          "title": "Explore the Grand Theft Auto VI Launch Gallery",
-          "publisher": "Rockstar Games",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4lX0sBBMad-unh9Yy1yTW9kGHyrB_lxfyX6U_DFvhPjD55NVBRM1ENobVcxo"
-        },
-        {
-          "url": "https://variety.com/2026/gaming/news/gta-6-release-gaming-industry-takeover-1236945197/",
-          "title": "‘Unlike Anything Else’: As ‘GTA 6’ Approaches, the Gaming Industry Braces the World for Its Pop Culture Takeover",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThq-q30Yv2vaiBGA8K_5ePX1UXiPEd-dUwy26OMYbHE0dEx7RWh_lwqdf8D2k"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-12/the-1-billion-video-game-about-to-swallow-the-world-whole",
-          "title": "The $1 Billion Video Game About to Swallow the World Whole",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZClo8QR9wtdtqYMjdOhI8IHFnkggM3Ale_8mNazDAH8_uF7G3VHvLYY31R64"
-        }
-      ]
-    },
-    {
-      "query": "richard sherman",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T04:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/wow-richard-sherman-reveals-worrying-161854959.html",
-        "https://www.foxnews.com/video/6408244006112",
-        "https://www.yahoo.com/news/videos/indianapolis-colts-dumpster-fire-dont-175536886.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoAmq9DhsgxRsf0OCKY7b34KKOvBaMNEQnEJ7QDkQAX9It6_2W19Fs-MRpbCk",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/wow-richard-sherman-reveals-worrying-161854959.html",
-          "title": "‘Wow’ – Richard Sherman reveals worrying reality about the Indianapolis Colts’ current situation",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoAmq9DhsgxRsf0OCKY7b34KKOvBaMNEQnEJ7QDkQAX9It6_2W19Fs-MRpbCk"
-        },
-        {
-          "url": "https://www.foxnews.com/video/6408244006112",
-          "title": "The Indianapolis Colts are a Dumpster Fire | Don't @ Me w/ Dan Dakich",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQSl-eFFt5CzIg768pFlFK7DbdA1rdeGqHkniDusBK-PbtzCwfpn5-BvJ-hkk"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/indianapolis-colts-dumpster-fire-dont-175536886.html",
-          "title": "The Indianapolis Colts are a Dumpster Fire | Don't @ Me w/ Dan Dakich",
+          "url": "https://www.yahoo.com/news/weather-news/article/a-noreaster-is-soaking-the-coast-who-could-see-the-first-snow-of-the-season-173445911.html",
+          "title": "A nor’easter is hitting the Northeast. How likely is the first snow of the season?",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlm9P8elHdJCAIFuroV__MV54kqWKeZIylMfIrnAcpdxEFwxdrB1UlSImx98c"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGjkwsx4sps3BTjqYSXrrKmHAMPMfjJzNuIMK5tM6kgH6470dZpiBvuOMd2iY"
         }
       ]
     },
     {
-      "query": "내일 날씨",
+      "query": "xbox 25th anniversary console",
       "approx_searches": "2000+",
-      "published_at": "2026-11-13T04:40:00Z",
+      "published_at": "2026-11-13T05:10:00Z",
       "related_news_urls": [
-        "https://www.chosun.com/national/transport-environment/2026/11/13/VDVP5NHN4VHUPCTLX3QFFGXQXQ/",
-        "https://news.kbs.co.kr/news/view.do?ncd=8711679",
-        "https://www.newsis.com/view/NISX20261113_0003866384"
+        "https://news.xbox.com/en-us/2026/11/12/xbox-25th-anniversary-news-recap/",
+        "https://www.purexbox.com/news/2026/11/xbox-playback-is-now-available-take-a-look-back-at-your-xbox-history",
+        "https://www.windowscentral.com/gaming/xbox/xbox-playback-is-microsofts-gaming-spotify-wrapped-on-steroids-heres-how-to-get-yours"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjTIViSIdE9Pdq3FjLemx5YonzJyCg4TUMgXCN9UU5WwT6z1eWd8rO6OBzYUA",
-      "image_credit": "조선일보",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRF5wVJXVg2acTm17eywIEM0X4uycvJChnF31xwyGJTahW0a_HSOXwbY8jq2U8",
+      "image_credit": "XBOX Wire",
       "news": [
         {
-          "url": "https://www.chosun.com/national/transport-environment/2026/11/13/VDVP5NHN4VHUPCTLX3QFFGXQXQ/",
-          "title": "토요일 전국에 가을비...주말동안 기온은 포근",
-          "publisher": "조선일보",
+          "url": "https://news.xbox.com/en-us/2026/11/12/xbox-25th-anniversary-news-recap/",
+          "title": "Thanks for 25 Years, XBOX Players — From Wolfenstein 3 and Halo Firefight to Classic XBOX Games on PC: Everything Announced Today",
+          "publisher": "XBOX Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjTIViSIdE9Pdq3FjLemx5YonzJyCg4TUMgXCN9UU5WwT6z1eWd8rO6OBzYUA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRF5wVJXVg2acTm17eywIEM0X4uycvJChnF31xwyGJTahW0a_HSOXwbY8jq2U8"
         },
         {
-          "url": "https://news.kbs.co.kr/news/view.do?ncd=8711679",
-          "title": "밤사이 내륙에 짙은 안개…오후부터 비 시작",
-          "publisher": "KBS 뉴스",
+          "url": "https://www.purexbox.com/news/2026/11/xbox-playback-is-now-available-take-a-look-back-at-your-xbox-history",
+          "title": "Xbox Playback Is Now Available, Take A Look Back At Your Xbox History",
+          "publisher": "Pure Xbox",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrSOYhR6JsVNVAERyoiv2fO2Jg9RBlsCHAYS6Xv8N8vAS0fbuzbe6Y6ydRMF4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsKzr8Ejs2UAdl-DraPHkwmECYvjJYwSXHiW55ubjinI60VtytW9Hf0Tp5C4E"
         },
         {
-          "url": "https://www.newsis.com/view/NISX20261113_0003866384",
-          "title": "충북, 구름 많다가 밤부터 5~30㎜ 빗방울…한낮 15~18도",
-          "publisher": "뉴시스",
+          "url": "https://www.windowscentral.com/gaming/xbox/xbox-playback-is-microsofts-gaming-spotify-wrapped-on-steroids-heres-how-to-get-yours",
+          "title": "'Xbox Playback' is Microsoft's gaming Spotify Wrapped on steroids — Here's how to get yours",
+          "publisher": "Windows Central",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRftpOvg1pFZPiKZo9rW9w2DmhKVInpJFmTp2KCVqTTx_8pcgQBZI-rBWZGB9Y"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwHZRpZi-A_HHwZuJTzGI6JU7LEZl9vQ4Kv0mg_UlP92b7CNm75Y1MsHq9xu8"
         }
       ]
     },
     {
-      "query": "weather tomorrow",
-      "approx_searches": "500000+",
-      "published_at": "2026-11-13T04:30:00Z",
-      "related_news_urls": [
-        "https://www.nbcphiladelphia.com/weather/stories-weather/storms-philadelphia-wind-rain-tornado-threat-new-jersey-delaware/4496202/",
-        "https://6abc.com/live-updates/funnel-clouds-hail-fallen-trees-severe-storms-strike-philadelphia-region/20036438/",
-        "https://www.wdel.com/news/video-christianacare-helicopter-damaged-during-storm-with-confirmed-tornado/article_319bed17-291e-4a1c-b15c-e57f13fcde2f.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqhw8okfibrH-qod3jiQKCrEFwr-gEW0OKDP7BJgm0J8aAVq0paickMgcX7xA",
-      "image_credit": "NBC10 Philadelphia",
-      "news": [
-        {
-          "url": "https://www.nbcphiladelphia.com/weather/stories-weather/storms-philadelphia-wind-rain-tornado-threat-new-jersey-delaware/4496202/",
-          "title": "Tornadoes touch down in Del. and NJ, before chances for snow Friday",
-          "publisher": "NBC10 Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqhw8okfibrH-qod3jiQKCrEFwr-gEW0OKDP7BJgm0J8aAVq0paickMgcX7xA"
-        },
-        {
-          "url": "https://6abc.com/live-updates/funnel-clouds-hail-fallen-trees-severe-storms-strike-philadelphia-region/20036438/",
-          "title": "Powerful storms leave tornado damage and piles of hail in the Philadelphia region | LIVE UPDATES",
-          "publisher": "6abc Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRecFl8_lsREyTYBqSIhsurVtkyrd7Uey75uyKMScf-SbYbwfOKNk_DndxO6sw"
-        },
-        {
-          "url": "https://www.wdel.com/news/video-christianacare-helicopter-damaged-during-storm-with-confirmed-tornado/article_319bed17-291e-4a1c-b15c-e57f13fcde2f.html",
-          "title": "VIDEO | ChristianaCare helicopter damaged during storm with confirmed tornado",
-          "publisher": "WDEL",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8mOuL1NZTmeQF2Sggg3kJLZjsoP6_Rzv01lOGp0c9FvHxjNGv06ITxmXkYGM"
-        }
-      ]
-    },
-    {
-      "query": "mariska hargitay per episode pay",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-13T04:30:00Z",
-      "related_news_urls": [
-        "https://pagesix.com/2026/11/12/entertainment/mariska-hargitays-staggering-law-order-svu-salary-revealed/",
-        "https://www.eonline.com/news/1438070/mariska-hargitays-law-order-svu-salary-revealed-as-s850-000-per-episode",
-        "https://www.news.com.au/entertainment/tv/mariska-hargitays-staggering-svu-salary-revealed/news-story/6a13b5c8b2e7b0cd377c43356909ef4e"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb5XR7YkL_o2exbgFcj68OD-sLGusfJyWS1PlmGJWxxXbQ0WUk-8HwO66xAd4",
-      "image_credit": "Page Six",
-      "news": [
-        {
-          "url": "https://pagesix.com/2026/11/12/entertainment/mariska-hargitays-staggering-law-order-svu-salary-revealed/",
-          "title": "Mariska Hargitay’s staggering ‘Law & Order: SVU’ salary revealed",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb5XR7YkL_o2exbgFcj68OD-sLGusfJyWS1PlmGJWxxXbQ0WUk-8HwO66xAd4"
-        },
-        {
-          "url": "https://www.eonline.com/news/1438070/mariska-hargitays-law-order-svu-salary-revealed-as-s850-000-per-episode",
-          "title": "Mariska Hargitay’s Eye-Popping Law & Order: SVU Salary Revealed",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSj7Sp-MnEEcKam0PEfdV42-yaqcV0KMFADr78f56b45ymqFQM19JXT6V-cbdo"
-        },
-        {
-          "url": "https://www.news.com.au/entertainment/tv/mariska-hargitays-staggering-svu-salary-revealed/news-story/6a13b5c8b2e7b0cd377c43356909ef4e",
-          "title": "Star’s staggering SVU salary revealed",
-          "publisher": "News.com.au",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFdIYvKrGkaftmNdfmHR_o1EEK_snOumrPcUoP18wwkugdvKJWkfXWtNHgfYY"
-        }
-      ]
-    },
-    {
-      "query": "the body netflix cast",
+      "query": "jonathan kreiss-tomkins",
       "approx_searches": "200+",
-      "published_at": "2026-11-13T04:30:00Z",
+      "published_at": "2026-11-13T05:10:00Z",
       "related_news_urls": [
-        "https://www.imdb.com/news/ni66107903/?ref_=ttnw_art_perm",
-        "https://www.netflix.com/tudum/articles/the-body-true-story",
-        "https://www.vanityfair.com/story/netflix-the-body-geena-meszaros"
+        "https://www.cnn.com/2026/11/12/politics/live-news/trump-congress",
+        "https://alaskapublic.org/news/politics/elections/2026-11-12/jkt-tops-50-in-alaska-governors-race-as-peltola-extends-senate-lead",
+        "https://www.adn.com/politics/2026/11/12/kreiss-tomkins-previews-policy-priorities-as-he-awaits-final-election-results/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYL3Z_7OZUYDpjlIXfAVHMADgltL_gQRcltQo7KIrr7RAjbUubPExA2IrzzR8",
-      "image_credit": "IMDb",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6aLTvO0j4q5YA724scAa-FYTwZYQp59GqPP1h_-XdFMslrYT4GIG7mJuiQyw",
+      "image_credit": "CNN",
       "news": [
         {
-          "url": "https://www.imdb.com/news/ni66107903/?ref_=ttnw_art_perm",
-          "title": "The Hidden Meaning Behind Leo’s Unholy Drawings in Netflix’s ‘The Body’",
-          "publisher": "IMDb",
+          "url": "https://www.cnn.com/2026/11/12/politics/live-news/trump-congress",
+          "title": "Democrats pick up win in Alaska after midterms shellacking for GOP",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYL3Z_7OZUYDpjlIXfAVHMADgltL_gQRcltQo7KIrr7RAjbUubPExA2IrzzR8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6aLTvO0j4q5YA724scAa-FYTwZYQp59GqPP1h_-XdFMslrYT4GIG7mJuiQyw"
         },
         {
-          "url": "https://www.netflix.com/tudum/articles/the-body-true-story",
-          "title": "Is The Body a True Story? The Cast and Showrunners Confess What’s Personal",
-          "publisher": "Netflix",
+          "url": "https://alaskapublic.org/news/politics/elections/2026-11-12/jkt-tops-50-in-alaska-governors-race-as-peltola-extends-senate-lead",
+          "title": "JKT tops 50% in Alaska governor’s race as Peltola extends Senate lead",
+          "publisher": "Alaska Public Media",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAwBqsY5LS6C-zLnU7qq7xi07377M9lIq_89OuW6wzH6C7bTtm76cVDs_M0Gs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjL3GbdWTJeuPQot7TJPWlKEOzUdqBHLiXkC9wayuYajOjSf0cl5Fan99tLMU"
         },
         {
-          "url": "https://www.vanityfair.com/story/netflix-the-body-geena-meszaros",
-          "title": "Forgive Me, Father: Netflix’s The Body Is a Queer Coming-of-Age Nightmare",
-          "publisher": "Vanity Fair",
+          "url": "https://www.adn.com/politics/2026/11/12/kreiss-tomkins-previews-policy-priorities-as-he-awaits-final-election-results/",
+          "title": "Kreiss-Tomkins previews policy priorities as he awaits final election results",
+          "publisher": "Anchorage Daily News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR2NNIOFhPhQDN_Dy5oxzr6EVkQ0xtjUrfgMf0Z2JdQCx5sRubB3dDcXyYI-I"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbj5TkZbryhp6JF06irKW9TH45UgNmYLiZrMzGA2SMvY6SUoA1FJtJbSh1-ts"
         }
       ]
     },
     {
-      "query": "nfc east standings",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-13T04:20:00Z",
+      "query": "blues",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T05:10:00Z",
       "related_news_urls": [
-        "https://www.nfl.com/news/2026-nfl-playoff-predictions-picking-every-division-winner-and-wild-card-team-at-midseason",
-        "https://www.usatoday.com/story/sports/nfl/2026/11/12/nfl-playoff-picture-week-10-nfc-afc-seeds-clinching-scenarios/92751089007/",
-        "https://www.si.com/nfl/what-history-says-about-playoff-positioning-midway-point-of-season"
+        "https://www.nytimes.com/athletic/7756683/2026/11/12/blues-newcomer-justin-barron-good-fit/",
+        "https://www.nhl.com/blues/video/det-stl-barron-scores-goal-against-john-gibson-6408213029112",
+        "https://bleedinblue.com/justin-barron-can-become-the-next-rendition-of-justin-faulk-01m75gthxsjh"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzA7YooRY16C1PENNs4xs-7kMfg3LcU_f_B9QDm1hDHtId1_N_dPwjNGhIHHQ",
-      "image_credit": "NFL.com",
-      "news": [
-        {
-          "url": "https://www.nfl.com/news/2026-nfl-playoff-predictions-picking-every-division-winner-and-wild-card-team-at-midseason",
-          "title": "2026 NFL playoff predictions: Picking every division winner and wild-card team at midseason",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzA7YooRY16C1PENNs4xs-7kMfg3LcU_f_B9QDm1hDHtId1_N_dPwjNGhIHHQ"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/nfl/2026/11/12/nfl-playoff-picture-week-10-nfc-afc-seeds-clinching-scenarios/92751089007/",
-          "title": "NFL playoff picture Week 10: Giants come back to NFC East pack with loss to Commanders",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJMgxHL3ApuFwJYDi0qIhHKUEdeYbRDUEKbnW7Rttj_dWUWFuOZkWrrnQpnwU"
-        },
-        {
-          "url": "https://www.si.com/nfl/what-history-says-about-playoff-positioning-midway-point-of-season",
-          "title": "What History Says About Playoff Positioning at the Midway Point of the Season",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSwYVxrikyxDxe27E_sb2dSIR7z0YztKSodve8Hd3-jm9F2yd9vZh2bwYtI8TQ"
-        }
-      ]
-    },
-    {
-      "query": "sylvester stallone",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-13T04:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/12/movies/i-play-rocky-how-it-got-made.html",
-        "https://www.wbur.org/news/2026/11/12/sylvester-stallone-peter-farrelly-i-play-rocky-film-review",
-        "https://www.forbes.com/sites/timlammers/2026/11/11/i-play-rocky-knocks-out-most-rotten-tomatoes-critics-as-film-expands-to-more-theaters-this-weekend/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFtGe22Ld94bPu4LugFOndUdiRhWWpwFNYP2g0y_Tqx654c_Tx0kTc9CndxYA",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ137ibQDX7suJ0rk7jhNgX81TbPDNXFrcHgRSFvGxwQQHo8zfzULQ1FQ3DPj4",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/12/movies/i-play-rocky-how-it-got-made.html",
-          "title": "The Road to ‘Rocky’: Making the Underdog Biopic Had Its Struggles, Too",
+          "url": "https://www.nytimes.com/athletic/7756683/2026/11/12/blues-newcomer-justin-barron-good-fit/",
+          "title": "Blues newcomer Justin Barron is cooking but remains modest: ‘The fit here has felt good’",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFtGe22Ld94bPu4LugFOndUdiRhWWpwFNYP2g0y_Tqx654c_Tx0kTc9CndxYA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ137ibQDX7suJ0rk7jhNgX81TbPDNXFrcHgRSFvGxwQQHo8zfzULQ1FQ3DPj4"
         },
         {
-          "url": "https://www.wbur.org/news/2026/11/12/sylvester-stallone-peter-farrelly-i-play-rocky-film-review",
-          "title": "'I Play Rocky' is a 'phony' take on how Sylvester Stallone made a classic",
-          "publisher": "WBUR",
+          "url": "https://www.nhl.com/blues/video/det-stl-barron-scores-goal-against-john-gibson-6408213029112",
+          "title": "DET@STL: Barron puts the Blues ahead",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKKO-XrY9sWU6GLaerKXbgjeHmdyjDOXPFVb6KFTHb2PX2eGEsWJJmJcIKHdY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPAk9h8RAp1_Lgcx3Gapnzg3KiA7epoAsQ1fFFvoyooj_vrssXVpwWpdygDPM"
         },
         {
-          "url": "https://www.forbes.com/sites/timlammers/2026/11/11/i-play-rocky-knocks-out-most-rotten-tomatoes-critics-as-film-expands-to-more-theaters-this-weekend/",
-          "title": "‘I Play Rocky’ Knocks Out Most Rotten Tomatoes Critics As Film Expands To More Theaters This Weekend",
-          "publisher": "Forbes",
+          "url": "https://bleedinblue.com/justin-barron-can-become-the-next-rendition-of-justin-faulk-01m75gthxsjh",
+          "title": "Justin Barron can become the next rendition of Justin Faulk",
+          "publisher": "Bleedin' Blue",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdu1NIy6nDRroixZ3ZDugH2H8O8q7SGWfkopT4PzOjLmu6CLZW_jSKlgEDJgU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiyZTsNKTTGLCTFnB6XJyPImvJfP7607y8Tj-vH9rGfKPnXQv0eAI_xf1WM30"
         }
       ]
     },
     {
-      "query": "san jose state basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T04:20:00Z",
+      "query": "rob lowe",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T05:10:00Z",
       "related_news_urls": [
-        "https://www.bleachernation.com/how-to-watch/2026/11/12/how-to-watch-san-jose-state-spartans-vs-uc-riverside-highlanders-live-stream-or-on-tv/",
-        "https://www.dunkelindex.com/news/san-jose-state-uc-riverside-ncaa-basketball-dunkel-predictions-11-12-2026",
-        "https://sports.betmgm.com/en/blog/ncaab/uc-riverside-san-jose-state-prediction-odds-picks-nov-12-college-basketball-jaa/"
+        "https://variety.com/2026/film/news/confession-review-1236945904/",
+        "https://slate.com/culture/2026/11/confession-movie-2026-daily-wire-ben-shapiro-rob-lowe-james-franco.html",
+        "https://www.hollywoodreporter.com/movies/movie-reviews/confession-review-rob-lowe-james-franco-nick-nolte-1236751013/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVu3bstMq9Zj3qwA_TnAUla2B0OhLy4uhs_opyibZVcbHkcL2ZwJ7h3srSWmY",
-      "image_credit": "Bleacher Nation",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROYBc4Ge6dVWnRd8IYq777tPmnucb8931OVA3dzS3jou_KroNLQ9KDKH9yDBs",
+      "image_credit": "Variety",
       "news": [
         {
-          "url": "https://www.bleachernation.com/how-to-watch/2026/11/12/how-to-watch-san-jose-state-spartans-vs-uc-riverside-highlanders-live-stream-or-on-tv/",
-          "title": "How to Watch San Jose State Spartans vs. UC Riverside Highlanders: Live Stream or on TV",
-          "publisher": "Bleacher Nation",
+          "url": "https://variety.com/2026/film/news/confession-review-1236945904/",
+          "title": "'Confession' Review: James Franco and Rob Lowe in a Sluggish Drama",
+          "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVu3bstMq9Zj3qwA_TnAUla2B0OhLy4uhs_opyibZVcbHkcL2ZwJ7h3srSWmY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROYBc4Ge6dVWnRd8IYq777tPmnucb8931OVA3dzS3jou_KroNLQ9KDKH9yDBs"
         },
         {
-          "url": "https://www.dunkelindex.com/news/san-jose-state-uc-riverside-ncaa-basketball-dunkel-predictions-11-12-2026",
-          "title": "San Jose State vs. UC Riverside Dunkel Predictions & Vegas Odds - Nov. 12",
-          "publisher": "The Dunkel Index",
+          "url": "https://slate.com/culture/2026/11/confession-movie-2026-daily-wire-ben-shapiro-rob-lowe-james-franco.html",
+          "title": "Ben Shapiro’s Screenwriting Debut Is Here. It’s … a Movie, All Right.",
+          "publisher": "Slate Magazine",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBeqYr8HK-5yoN4Qzxoqm5wdOopZvNM8qs1KNW-6Pz7DcPozcmgwSxiBIbW3M"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCVTW8UnpAcJPmDzc23Vb4BtyvcRL4gbgfYpsEkAehilr7uOBrOZ5XOIGf488"
         },
         {
-          "url": "https://sports.betmgm.com/en/blog/ncaab/uc-riverside-san-jose-state-prediction-odds-picks-nov-12-college-basketball-jaa/",
-          "title": "UC Riverside vs San Jose State Prediction, Odds & Best Bets Today – NCAAB, Nov. 12",
-          "publisher": "sports.betmgm.com",
+          "url": "https://www.hollywoodreporter.com/movies/movie-reviews/confession-review-rob-lowe-james-franco-nick-nolte-1236751013/",
+          "title": "'Confession' Review: Rob Lowe, James Franco in Ben Shapiro-Penned Film",
+          "publisher": "The Hollywood Reporter",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTugr9cCLoTIm2Z59rX37pNjb8GmJ-Gduzve-IUokSpX1jnsYuKrr1e3C6kRX0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuY2yAv6K5zMhFUSA5wM5WHxby9FhrtXubws4fqaP_BHPqMBqshuFU4xZUBiE"
+        }
+      ]
+    },
+    {
+      "query": "carrie coon",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T05:00:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/white-lotus-star-gets-brutally-205318560.html",
+        "https://www.thedailybeast.com/white-lotus-star-carrie-coon-gets-brutally-honest-on-actresses-with-plastic-surgery",
+        "https://www.elle.com/culture/movies-tv/a74312100/carrie-coon-elle-women-in-hollywood-interview-2026/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzOt6pEvGuee30VL6VKto781nS-mAS_qrQMpUIcgmekfH0WffzKkupWXF3-Do",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/white-lotus-star-gets-brutally-205318560.html",
+          "title": "‘White Lotus’ Star Gets Brutally Honest on Actresses With Plastic Surgery",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzOt6pEvGuee30VL6VKto781nS-mAS_qrQMpUIcgmekfH0WffzKkupWXF3-Do"
+        },
+        {
+          "url": "https://www.thedailybeast.com/white-lotus-star-carrie-coon-gets-brutally-honest-on-actresses-with-plastic-surgery",
+          "title": "‘White Lotus’ Star Gets Brutally Honest on Actresses With Plastic Surgery",
+          "publisher": "The Daily Beast",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkzsX9SwFEre-slubcW0aNS_mJZV241-QBFFyUi4GURaQ7QT5VG3RS1KC--JM"
+        },
+        {
+          "url": "https://www.elle.com/culture/movies-tv/a74312100/carrie-coon-elle-women-in-hollywood-interview-2026/",
+          "title": "Carrie Coon Is Ready for the Crone Years: ‘We’re Going to Dance Naked in the Moonlight’",
+          "publisher": "ELLE",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNPRFgRwpJshkuHmBhAhgRB6rBp3fTvWDSSuN7oRY5ppXrfl0e4w-0VuOnTDM"
+        }
+      ]
+    },
+    {
+      "query": "who won gamer of the year 2026",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T05:00:00Z",
+      "related_news_urls": [
+        "https://crimsondesert.pearlabyss.com/en-US/News/Notice/Detail?_boardNo=156",
+        "https://www.bbc.com/news/articles/cmg46y76kz5no",
+        "https://www.gamesindustry.biz/resident-evil-requiem-wins-four-golden-joystick-awards-including-ultimate-and-console-goty"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT32ywwtVFR_0K_-mLKFT4nGFbvV9X7hTvjPrp2p8lzKjDbfSP3CBoD9mtL3Gs",
+      "image_credit": "펄어비스 공식 홈페이지",
+      "news": [
+        {
+          "url": "https://crimsondesert.pearlabyss.com/en-US/News/Notice/Detail?_boardNo=156",
+          "title": "Notices",
+          "publisher": "펄어비스 공식 홈페이지",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT32ywwtVFR_0K_-mLKFT4nGFbvV9X7hTvjPrp2p8lzKjDbfSP3CBoD9mtL3Gs"
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/cmg46y76kz5no",
+          "title": "Resident Evil Requiem sweeps Golden Joystick Awards",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLebT8Tt90MupOvjXt2uJcfciJHdk5zeebvrD5_ClRFrkGdVAQDfap8c3XUCY"
+        },
+        {
+          "url": "https://www.gamesindustry.biz/resident-evil-requiem-wins-four-golden-joystick-awards-including-ultimate-and-console-goty",
+          "title": "Resident Evil Requiem wins four Golden Joystick Awards, including Ultimate and Console GOTY",
+          "publisher": "GamesIndustry.biz",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEP_QI_u1CnumA9YIAtn-Npw2QQfLx20PO7Wcg9Y_65hUbVF7zA2uhvWzTTG8"
+        }
+      ]
+    },
+    {
+      "query": "san diego weather",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T05:00:00Z",
+      "related_news_urls": [
+        "https://www.countynewscenter.com/light-rain-forecast-overnight-in-san-diego-county/",
+        "https://fox5sandiego.com/weather/san-diego-rain-forecast-next-week/",
+        "https://www.sandiegouniontribune.com/2026/11/11/the-first-in-a-series-of-storms-expected-to-reach-san-diego-county-late-thursday/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzVa7yy8lGbhuU1HkxThVZ-uXtb9Nc-fq6sfA90bvaIryM_lkL_P-iDG6MnZk",
+      "image_credit": "San Diego County News Center",
+      "news": [
+        {
+          "url": "https://www.countynewscenter.com/light-rain-forecast-overnight-in-san-diego-county/",
+          "title": "Light Rain Forecast Overnight in San Diego County",
+          "publisher": "San Diego County News Center",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzVa7yy8lGbhuU1HkxThVZ-uXtb9Nc-fq6sfA90bvaIryM_lkL_P-iDG6MnZk"
+        },
+        {
+          "url": "https://fox5sandiego.com/weather/san-diego-rain-forecast-next-week/",
+          "title": "San Diego County could see several rounds of rain showers through next week",
+          "publisher": "FOX 5 San Diego & KUSI News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUVfRlbIcg6NB_w1svtY9a3SsYwAO1EE9QGrRLhvLAftsC4V78_TE3mLUXjWY"
+        },
+        {
+          "url": "https://www.sandiegouniontribune.com/2026/11/11/the-first-in-a-series-of-storms-expected-to-reach-san-diego-county-late-thursday/",
+          "title": "The first in a series of storms expected to reach San Diego County late Thursday",
+          "publisher": "San Diego Union-Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShGwVgTTD2ET8Y186lnlZL67gMoMAuTqfcCytfCEMkwNZiYVM7FLChuKAwg-U"
+        }
+      ]
+    },
+    {
+      "query": "denny hamlin",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T05:00:00Z",
+      "related_news_urls": [
+        "https://www.hendrickmotorsports.com/news/2026/november/11/rick-hendrick-talks-about-the-snickers-bars-victory-lane-photo-and-days-of-thunder-2-at-nascar-awards",
+        "https://www.nascar.com/news-media/2026/11/09/hendrick-motorsports-has-a-snickers-and-the-last-laugh-over-hamlin/",
+        "https://www.autoweek.com/racing/nascar/a74401240/rick-hendrick-saved-snickers-denny-hamlin/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZlYXgtMjs7WVBkOXC3k_4rBrDzwC7z-3z8FIGLPT75sWkHqulRTAaYtfL5Xo",
+      "image_credit": "Hendrick Motorsports",
+      "news": [
+        {
+          "url": "https://www.hendrickmotorsports.com/news/2026/november/11/rick-hendrick-talks-about-the-snickers-bars-victory-lane-photo-and-days-of-thunder-2-at-nascar-awards",
+          "title": "Rick Hendrick talks about Snickers bars in victory lane and 'Days of Thunder 2' at NASCAR Awards",
+          "publisher": "Hendrick Motorsports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZlYXgtMjs7WVBkOXC3k_4rBrDzwC7z-3z8FIGLPT75sWkHqulRTAaYtfL5Xo"
+        },
+        {
+          "url": "https://www.nascar.com/news-media/2026/11/09/hendrick-motorsports-has-a-snickers-and-the-last-laugh-over-hamlin/",
+          "title": "Hendrick Motorsports has a Snickers — and the last laugh over Hamlin",
+          "publisher": "NASCAR.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSk-UbMP7cvnoDrrz_RBJ8y9nrcvIh7Vxgum7Iht_ULi1ZzWSpW9olGKA5gexk"
+        },
+        {
+          "url": "https://www.autoweek.com/racing/nascar/a74401240/rick-hendrick-saved-snickers-denny-hamlin/",
+          "title": "Rick Hendrick Saved a Snickers for Denny Hamlin",
+          "publisher": "Autoweek",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcTg6HExCGYi8NhVS3tH20mIbldcQxRH5o915mpz1Lolqu8rfSmdC8ns-S4oQ"
+        }
+      ]
+    },
+    {
+      "query": "u2",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-13T04:50:00Z",
+      "related_news_urls": [
+        "https://www.dollyparton.com/news/u2-dolly-parton-torn-the-final-song-dolly-recorded-country-version-world-premieres-thursday-nov-12",
+        "https://www.13newsnow.com/article/news/nation-world/dolly-partons-final-recorded-song-be-released-friday/507-e7d44589-344e-4697-930c-34d73a715f6f",
+        "https://fox17.com/news/entertainment/dolly-partons-final-vocal-recording-to-appear-on-u2-album"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwVla2KotbPNsujNR8HdlRC3eg5A5p4WMwTiPKvyfiZ_Nla7ie5172pMhPPII",
+      "image_credit": "Dolly Parton Official Website",
+      "news": [
+        {
+          "url": "https://www.dollyparton.com/news/u2-dolly-parton-torn-the-final-song-dolly-recorded-country-version-world-premieres-thursday-nov-12",
+          "title": "U2 & Dolly Parton, \"Torn,\" The Final Song Dolly Recorded World Premieres Thursday, Nov. 12",
+          "publisher": "Dolly Parton Official Website",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwVla2KotbPNsujNR8HdlRC3eg5A5p4WMwTiPKvyfiZ_Nla7ie5172pMhPPII"
+        },
+        {
+          "url": "https://www.13newsnow.com/article/news/nation-world/dolly-partons-final-recorded-song-be-released-friday/507-e7d44589-344e-4697-930c-34d73a715f6f",
+          "title": "Dolly Parton's final recorded song, a duet with Bono, to be released on Nov. 13",
+          "publisher": "13newsnow.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8FwIv4ILCLJwbw3gqgSSE8AEc-NZFp65zkHlJkp6X6TTm6fuOZwKB0QMc8uU"
+        },
+        {
+          "url": "https://fox17.com/news/entertainment/dolly-partons-final-vocal-recording-to-appear-on-u2-album",
+          "title": "Dolly Parton’s final vocal recording to appear on U2 album",
+          "publisher": "WZTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdeCWxtdTyqkc79RvvjfP2WbZZ6zM8ArCf6CpDrxUPEpYChYI5x6gNekaLE8I"
         }
       ]
     }
