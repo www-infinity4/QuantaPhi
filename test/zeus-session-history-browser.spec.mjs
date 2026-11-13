@@ -3,6 +3,43 @@ const base='http://127.0.0.1:8799';
 const root='#zeusSessionHistory';
 const first=(page,selector)=>page.locator(root+' '+selector);
 
+// Diagnostic-only regression probe: capture actual DOM replacement and native
+// input events without touching account state or relying on synthetic fixtures.
+async function installHistoryInputTrace(page){
+ await page.addInitScript(()=>{
+  const trace=[];window.__zeusHistoryInputTrace=trace;
+  const relevant=el=>el?.closest?.('#zeusSessionHistory')&&(el.matches?.('input,textarea,select')||el.closest?.('.zeus-history-new,.zeus-history-form'));
+  const record=(type,el,details='')=>{
+   if(trace.length>=120)return;
+   trace.push({type,value:el?.value??null,connected:el?.isConnected??null,
+    field:el?.getAttribute?.('aria-label')||el?.tagName,details,
+    at:Math.round(performance.now())});
+  };
+  for(const type of ['input','change','focusin','focusout','click'])
+   document.addEventListener(type,event=>{if(relevant(event.target))record(type,event.target)},true);
+  const observer=new MutationObserver(records=>{
+   for(const item of records){
+    if(item.type!=='childList')continue;
+    const target=item.target;
+    if(!target.closest?.('#zeusSessionHistory')&&!Array.from(item.addedNodes).some(n=>n.nodeType===1&&n.id==='zeusSessionHistory'))continue;
+    const changed=Array.from(item.addedNodes).concat(Array.from(item.removedNodes))
+      .some(n=>n.nodeType===1&&(n.matches?.('input,textarea,form,.zeus-history-side,.zeus-history-detail')||n.querySelector?.('input,textarea,form')));
+    if(changed)record('dom-replace',target,'added:'+item.addedNodes.length+' removed:'+item.removedNodes.length);
+   }
+  });
+  observer.observe(document,{subtree:true,childList:true});
+ });
+}
+async function historyInputSnapshot(page){
+ return page.evaluate(()=>({
+  location:location.href,
+  formValues:[...document.querySelectorAll('#zeusSessionHistory input,#zeusSessionHistory textarea')]
+    .map(e=>({label:e.getAttribute('aria-label'),value:e.value})),
+  trace:window.__zeusHistoryInputTrace?.slice(-45)||[],
+  rootCount:document.querySelectorAll('#zeusSessionHistory').length
+ }));
+}
+
 for(const width of [320,360,393,720]){
  test('Zeus history layout is readable and stays within '+width+'px viewport',async({page})=>{
   await page.setViewportSize({width,height:850});
@@ -52,8 +89,10 @@ test('red work, green completion, browsable old session and orange continuation 
  await expect(first(page,'.zeus-status')).toContainText('Thread full / continuation');
 });
 test('yellow extraction exactly routes to blue pending import without inventing a completed import',async({page})=>{
+ await installHistoryInputTrace(page);
  await page.goto(base+'/coliseum/',{waitUntil:'domcontentloaded'});
  await first(page,'input[aria-label="New project or topic title"]').fill('Source extraction');
+ console.log('Zeus extraction DOM/input lifecycle:',JSON.stringify(await historyInputSnapshot(page)));
  console.log('Zeus extraction before create:',JSON.stringify(await page.locator('#zeusSessionHistory').evaluate(root=>({
   value:root.querySelector('input[aria-label="New project or topic title"]')?.value,
   draft:sessionStorage.getItem('infinity:zeus-project-title-draft:v1')
@@ -76,6 +115,7 @@ test('yellow extraction exactly routes to blue pending import without inventing 
  const raw='  Verbatim original wording.\nLine two has extra spacing.  ';
  await first(page,'textarea[aria-label="Write a task or paste the exact extract"]').fill(raw);
  await first(page,'input[aria-label="Source reference (required for yellow extraction)"]').fill('Original owner note #22');
+ console.log('Zeus extraction detail lifecycle:',JSON.stringify(await historyInputSnapshot(page)));
  const formBefore=await page.locator('#zeusSessionHistory .zeus-history-form').evaluate(form=>({
   valid:form.checkValidity(),
   selected:form.querySelector('select')?.value,
@@ -105,9 +145,11 @@ test('yellow extraction exactly routes to blue pending import without inventing 
 });
 
 test('unsent local project title survives a tracker redraw and creates exactly one new thread',async({page})=>{
+ await installHistoryInputTrace(page);
  await page.goto(base+'/coliseum/',{waitUntil:'domcontentloaded'});
  const selector='input[aria-label="New project or topic title"]';
  await first(page,selector).fill('Initial science project');
+ console.log('Zeus first project DOM/input lifecycle:',JSON.stringify(await historyInputSnapshot(page)));
  console.log('Zeus initial title before create:',JSON.stringify(await page.locator('#zeusSessionHistory').evaluate(root=>({
   value:root.querySelector('input[aria-label="New project or topic title"]')?.value,
   draft:sessionStorage.getItem('infinity:zeus-project-title-draft:v1')
@@ -121,6 +163,7 @@ test('unsent local project title survives a tracker redraw and creates exactly o
  }))));
  await expect(first(page,'.zeus-current-head')).toContainText('Initial science project');
  await first(page,selector).fill('Source extraction with exact whitespace');
+ console.log('Zeus second-title DOM/input lifecycle:',JSON.stringify(await historyInputSnapshot(page)));
  console.log('Zeus unsent draft before reload:',JSON.stringify(await page.evaluate(()=>({
   title:document.querySelector('#zeusSessionHistory input[aria-label="New project or topic title"]')?.value,
   stored:sessionStorage.getItem('infinity:zeus-project-title-draft:v1'),
