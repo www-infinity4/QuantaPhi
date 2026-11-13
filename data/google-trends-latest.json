@@ -3,41 +3,286 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T18:01:24.493525Z",
+  "checked_at": "2026-11-13T18:31:24.836038Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "egypt vs malawi",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T18:10:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cq8jz443j2pxt",
+        "https://www.coinbase.com/en-au/predictions/event/KXAFCON1H-26NOV14UGABOT",
+        "https://www.egyptindependent.com/egypt-faces-malawi-friday-in-crucial-2027-afcon-qualifier/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cq8jz443j2pxt",
+          "title": "Egypt vs Malawi: Africa Cup of Nations Qualification stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+        },
+        {
+          "url": "https://www.coinbase.com/en-au/predictions/event/KXAFCON1H-26NOV14UGABOT",
+          "title": "Uganda vs Botswana: First Half Winner",
+          "publisher": "Coinbase",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtlv4wEEHi8uXNCTHBBIdZ2rUZtVp8OMhJgUFnLMqb2UJJQ1_wRphySbCj_fc"
+        },
+        {
+          "url": "https://www.egyptindependent.com/egypt-faces-malawi-friday-in-crucial-2027-afcon-qualifier/",
+          "title": "Egypt faces Malawi Friday in crucial 2027 AFCON qualifier",
+          "publisher": "Egypt Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZIt-khfvD_LEkRLO8wmM0mf7mA0qIR9LfW5lSfb7tgFPI-d75xixovdKUS8A"
+        }
+      ]
+    },
+    {
+      "query": "el nino",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-13T18:10:00Z",
+      "related_news_urls": [
+        "https://www.washingtonpost.com/weather/2026/11/12/what-165-days-record-ocean-temperatures-will-mean-extreme-winter-weather/",
+        "https://www.sfgate.com/weather/article/new-el-nino-forecast-22523911.php",
+        "https://www.wsj.com/us-news/climate-environment/see-what-the-super-el-nino-means-for-this-years-ski-season-f233a1d6"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6qZN_Bm-wGNWNh7Q3RhPtpM_esjV4Jh7wnvodvJM4JSdqrRcQOP3o49ZHFnw",
+      "image_credit": "The Washington Post",
+      "news": [
+        {
+          "url": "https://www.washingtonpost.com/weather/2026/11/12/what-165-days-record-ocean-temperatures-will-mean-extreme-winter-weather/",
+          "title": "What 165 days of record ocean temperatures will mean for extreme winter weather",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6qZN_Bm-wGNWNh7Q3RhPtpM_esjV4Jh7wnvodvJM4JSdqrRcQOP3o49ZHFnw"
+        },
+        {
+          "url": "https://www.sfgate.com/weather/article/new-el-nino-forecast-22523911.php",
+          "title": "What the new 'astonishing' El Niño forecast means for California",
+          "publisher": "SFGATE",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrtjKcz4Bfa5FqwytuPDAgRuLfhG-VPsIZwJF3etNK92Gr-kx7s2m2D_r0bqI"
+        },
+        {
+          "url": "https://www.wsj.com/us-news/climate-environment/see-what-the-super-el-nino-means-for-this-years-ski-season-f233a1d6",
+          "title": "See What the ‘Super El Niño’ Means for This Year’s Ski Season",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrM68N-1H6Vfx0PZDyKj9R_HnDxhYjxZaOpOm7YU2HrGEvmjyotyEbfa8yaQY"
+        }
+      ]
+    },
+    {
+      "query": "rockstar gta vi",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-13T18:00:00Z",
+      "related_news_urls": [
+        "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
+        "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/",
+        "https://gameinformer.com/2026/11/10/grand-theft-auto-vi-will-run-at-30-fps-on-all-consoles-but-ps5-pro-will-feature-improved"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk",
+      "image_credit": "XBOX Wire",
+      "news": [
+        {
+          "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
+          "title": "Grand Theft Auto VI Comes to XBOX One and XBOX Series X|S Through XBOX Cloud Gaming on November 19",
+          "publisher": "XBOX Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk"
+        },
+        {
+          "url": "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/",
+          "title": "Pre-load Grand Theft Auto VI on PS5 starting today",
+          "publisher": "PlayStation.Blog",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmQPZtB1cfmtJ8v-9159sSJpw2Cr8v495zAc5tM6Spqsus45lZErGPllHDXDY"
+        },
+        {
+          "url": "https://gameinformer.com/2026/11/10/grand-theft-auto-vi-will-run-at-30-fps-on-all-consoles-but-ps5-pro-will-feature-improved",
+          "title": "Grand Theft Auto VI Will Run At 30 FPS On All Consoles, But PS5 Pro Will Feature 'Improved Clarity' And Ray-Traced Shadows",
+          "publisher": "Game Informer",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTg4MNauIMtaoVB-7za8zRuuG4BGC14xtWW6162wz3dOedYcINsN6s4SzA_pr4"
+        }
+      ]
+    },
+    {
+      "query": "willson contreras",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T18:00:00Z",
+      "related_news_urls": [
+        "https://www.bostonglobe.com/2026/11/11/sports/red-sox-gm-meetings/",
+        "https://www.fox61.com/video/sports/locked-on/lo-new-england/red-sox-show/called-out-red-sox-star-willson-contreras-demands-changeare-analytics-undermining-success/535-d9ea7f3f-2f20-448e-b05c-1d2bf1a8ce91",
+        "https://www.mlb.com/news/william-contreras-wins-inaugural-flow-mayor-award"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKcsiA13GVz8_kW0hNN9Df0dnIjQXZGzHND5N0c1mlIO0ybaFnCYMwJ_8Pu58",
+      "image_credit": "The Boston Globe",
+      "news": [
+        {
+          "url": "https://www.bostonglobe.com/2026/11/11/sports/red-sox-gm-meetings/",
+          "title": "Willson Contreras, Red Sox still talking after first baseman’s criticism of analytics reliance",
+          "publisher": "The Boston Globe",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKcsiA13GVz8_kW0hNN9Df0dnIjQXZGzHND5N0c1mlIO0ybaFnCYMwJ_8Pu58"
+        },
+        {
+          "url": "https://www.fox61.com/video/sports/locked-on/lo-new-england/red-sox-show/called-out-red-sox-star-willson-contreras-demands-changeare-analytics-undermining-success/535-d9ea7f3f-2f20-448e-b05c-1d2bf1a8ce91",
+          "title": "CALLED OUT: Red Sox Star Willson Contreras DEMANDS Change—Are Analytics UNDERMINING Success?",
+          "publisher": "fox61.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREARAkXDOyBhS75m3SwaL03xiv9d4yTNYmy_dKKCkib9Qh01S34dNb296WWgo"
+        },
+        {
+          "url": "https://www.mlb.com/news/william-contreras-wins-inaugural-flow-mayor-award",
+          "title": "World Series star Contreras the very definition of first Flow Mayor Award",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFuzkdz3ouY-rWLl3k1jvdk7LEsLWFjGeLM4b6AlV3Eop036ceWUv3Y98OcW0"
+        }
+      ]
+    },
+    {
+      "query": "elijah higgins",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T18:00:00Z",
+      "related_news_urls": [
+        "https://www.azcardinals.com/news/cardinals-extend-tight-end-elijah-higgins",
+        "https://www.thefantasyfootballers.com/news/647058/elijah-higgins-two-grabs-versus-seattle/",
+        "https://nfltraderumors.co/cardinals-sign-te-elijah-higgins-to-three-year-extension/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlmnOG2tTVhKFwqiNpDZMaqSGCV67kctT2sDXO3UqM46qKQVE-7n7V_0Wu8H8",
+      "image_credit": "Arizona Cardinals",
+      "news": [
+        {
+          "url": "https://www.azcardinals.com/news/cardinals-extend-tight-end-elijah-higgins",
+          "title": "Cardinals Extend Tight End Elijah Higgins",
+          "publisher": "Arizona Cardinals",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlmnOG2tTVhKFwqiNpDZMaqSGCV67kctT2sDXO3UqM46qKQVE-7n7V_0Wu8H8"
+        },
+        {
+          "url": "https://www.thefantasyfootballers.com/news/647058/elijah-higgins-two-grabs-versus-seattle/",
+          "title": "Elijah Higgins Two grabs versus Seattle",
+          "publisher": "Fantasy Footballers Podcast",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-58Nc47LepB8saLd8wi5Mof91qbaI8I989vdgHCwiTDaSZq0fJQCP7qFtXoU"
+        },
+        {
+          "url": "https://nfltraderumors.co/cardinals-sign-te-elijah-higgins-to-three-year-extension/",
+          "title": "Cardinals Sign TE Elijah Higgins To Three-Year Extension",
+          "publisher": "NFLTradeRumors.co",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRoPVZtpBf7KBoy25fdndYoaqF10I25VK3gQUJVu_w1Gz9TA6wdqwtTute6W0"
+        }
+      ]
+    },
+    {
+      "query": "philip rivers",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-13T17:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50456831/sources-philip-rivers-nc-state-deal-set-finalized",
+        "https://www.nfl.com/news/philip-rivers-hired-nc-state-head-coach",
+        "https://www.nytimes.com/athletic/7764757/2026/11/08/philip-rivers-head-coach-nc-state/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7D8TfxbCksBXZz3UeDqiVu9Gp8KVJl5JrgHIyRF7Vq9dwUVTODfuXQRlh9Zw",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50456831/sources-philip-rivers-nc-state-deal-set-finalized",
+          "title": "NC State officially hires Philip Rivers as football coach",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7D8TfxbCksBXZz3UeDqiVu9Gp8KVJl5JrgHIyRF7Vq9dwUVTODfuXQRlh9Zw"
+        },
+        {
+          "url": "https://www.nfl.com/news/philip-rivers-hired-nc-state-head-coach",
+          "title": "Philip Rivers hired as N.C. State head coach",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvZp2dTTFbYh7TRuBPvgHL351e2fkxEH50fT83_xRbSuUfW1MN35S_gKadOzI"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7764757/2026/11/08/philip-rivers-head-coach-nc-state/",
+          "title": "Philip Rivers is NC State’s dream coaching hire. He’s also not qualified for the job",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc1pH8o-y4a9g3gHDqM7cO326heuZKliltJYOz1amkz6PildoUNixmT62amZM"
+        }
+      ]
+    },
+    {
       "query": "jake bauers",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-13T17:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mlb/story/_/id/50473029/sources-jake-bauers-red-sox-agree-4-year-58m-deal",
+        "https://www.mlb.com/news/jake-bauers-4-year-contract-with-red-sox",
+        "https://sports.yahoo.com/articles/nlcs-mvp-jake-bauers-wont-180517155.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYADqq3JGc1LOgxiZCeEv2YjU0DzSEqR81fKLoV7U8C4WEk8XH15CgfxhdpgQ",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mlb/story/_/id/50473029/sources-jake-bauers-red-sox-agree-4-year-58m-deal",
+          "title": "Sources - Jake Bauers, Red Sox agree to 4-year, $58M deal",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYADqq3JGc1LOgxiZCeEv2YjU0DzSEqR81fKLoV7U8C4WEk8XH15CgfxhdpgQ"
+        },
+        {
+          "url": "https://www.mlb.com/news/jake-bauers-4-year-contract-with-red-sox",
+          "title": "Postseason breakout star Bauers agrees to 4-year deal with Red Sox (source)",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShnLDsxA6gYDeYFTBAtrFEKqoUxWZInq0QbDY4QSjdfzjqBS3W4Is8GaYC9fk"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/nlcs-mvp-jake-bauers-wont-180517155.html",
+          "title": "NLCS MVP Jake Bauers won't be returning to the Brewers in 2027",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5k0cJSrkyJMjZKINlRoYVIuxSUVz_dsMr5_Wnm9TU6J-th4tnkCLjcSlvOws"
+        }
+      ]
+    },
+    {
+      "query": "tony richards",
       "approx_searches": "5000+",
       "published_at": "2026-11-13T17:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/jake-bauers-predicted-leave-milwaukee-172920013.html",
-        "https://www.jsonline.com/story/sports/mlb/brewers/2026/11/09/brewers-playoff-hero-jake-bauers-reminisces-on-world-series-run/92688660007/",
-        "https://reviewingthebrew.com/brewers-rule-5-draft-eligible-prospect-could-have-important-role-in-2027-first-base-plans-01m73hq6qrqc"
+        "https://consequence.net/2026/11/w-a-s-p-drummer-tony-richards-dead-at-69/",
+        "https://ghostcultmag.com/original-w-a-s-p-drummer-tony-richards-has-died/",
+        "https://loadedradio.com/metal-breakdown-daily-slipknot-album-tony-richards-radke/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrtOE9nQGgulRIfjz5n51gsbDvEVday2CBXBaAlz0AVO8rTFwAwVBRfJ6o368",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqeIitz1kn89XqRixBmPVhR2DoULNjnQf-Tm7zN8Ub1vIm8gMD493KQTRz9Gw",
+      "image_credit": "Consequence of Sound",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/jake-bauers-predicted-leave-milwaukee-172920013.html",
-          "title": "Jake Bauers Predicted to Leave Milwaukee Brewers for NL Team in $54M Deal",
-          "publisher": "Yahoo Sports",
+          "url": "https://consequence.net/2026/11/w-a-s-p-drummer-tony-richards-dead-at-69/",
+          "title": "Original W.A.S.P. Drummer Tony Richards Dead at 69",
+          "publisher": "Consequence of Sound",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrtOE9nQGgulRIfjz5n51gsbDvEVday2CBXBaAlz0AVO8rTFwAwVBRfJ6o368"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqeIitz1kn89XqRixBmPVhR2DoULNjnQf-Tm7zN8Ub1vIm8gMD493KQTRz9Gw"
         },
         {
-          "url": "https://www.jsonline.com/story/sports/mlb/brewers/2026/11/09/brewers-playoff-hero-jake-bauers-reminisces-on-world-series-run/92688660007/",
-          "title": "Brewers playoff hero Jake Bauers reminisces on World Series run",
-          "publisher": "Milwaukee Journal Sentinel",
+          "url": "https://ghostcultmag.com/original-w-a-s-p-drummer-tony-richards-has-died/",
+          "title": "Original W.A.S.P. Drummer Tony Richards Has Died",
+          "publisher": "Ghost Cult Magazine",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuaURkWfXXAyqg3wKjgUygQZ4Yc-Jqsw377UMdTU_ssdynRP8215cLgOFYv14"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt7xWrrlelZ1elttTGlkcBM7RU8B9S-Ir8eJYev9qOaYRw4fqogvUx8P0Zj7c"
         },
         {
-          "url": "https://reviewingthebrew.com/brewers-rule-5-draft-eligible-prospect-could-have-important-role-in-2027-first-base-plans-01m73hq6qrqc",
-          "title": "Brewers' Rule 5 Draft-eligible prospect could have important role in 2027 first base plans",
-          "publisher": "Reviewing the Brew",
+          "url": "https://loadedradio.com/metal-breakdown-daily-slipknot-album-tony-richards-radke/",
+          "title": "Metal Breakdown Daily: New Slipknot Album, Original W.A.S.P. Drummer Tony Richards Dies, Ronnie Radke Sued",
+          "publisher": "Loaded Radio",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnx5AjLpAu7--QtOaNqHxvl_RCSonnrWQZKLkAflqQOGpWjwPykip05y9-dl8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSon1N_-7EUdCIc0z0FR3CKud4FLhyVrQimfwzOGkCmxYOzWLLfwL4zkBJHwGc"
         }
       ]
     },
@@ -81,278 +326,33 @@
       "approx_searches": "500+",
       "published_at": "2026-11-13T17:40:00Z",
       "related_news_urls": [
-        "https://eco.sapo.pt/2026/11/11/quem-e-o-portugues-que-pode-ser-lancado-na-corrida-ao-bce/",
-        "https://www.facebook.com/ObservadorOnTime/photos/espanha-e-pa%C3%ADses-baixos-apresentaram-candidaturas-%C3%A0-presid%C3%AAncia-que-v%C3%A3o-ser-apre/1533632982201313/",
-        "https://pt.euronews.com/2026/11/13/confirma-ue-dois-candidatos-para-suceder-a-lagarde-no-bce"
+        "https://www.record.pt/casas-de-apostas/mega-odd-betano-portugal-vs-dinamarca/",
+        "https://www.zerozero.pt/noticias/portugal-em-braga-os-pontos-atraentes-para-este-jogo/1260030",
+        "https://golo.fm/destaque/direto-%F0%9F%94%B4-ultima-bola-conferencia-de-imprensa-da-selecao-nacional-a-7/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQeYg-CmmgBYwhZTkOUo3cPNyHLql7WXZiI1zY6CEtIAT2A2zcBCVK9821Uyjg",
-      "image_credit": "ECO",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNfFOlTfzt3CmeYKC6xj4ZFI0KlfHKfT9TIR4xNLpxVqVBfWusIZztC4mBHfQ",
+      "image_credit": "Record",
       "news": [
         {
-          "url": "https://eco.sapo.pt/2026/11/11/quem-e-o-portugues-que-pode-ser-lancado-na-corrida-ao-bce/",
-          "title": "Quem é o português que pode ser lançado na corrida ao BCE?",
-          "publisher": "ECO",
+          "url": "https://www.record.pt/casas-de-apostas/mega-odd-betano-portugal-vs-dinamarca/",
+          "title": "Mega Odd Betano: Portugal x Dinamarca com Odd de 25.00",
+          "publisher": "Record",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQeYg-CmmgBYwhZTkOUo3cPNyHLql7WXZiI1zY6CEtIAT2A2zcBCVK9821Uyjg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNfFOlTfzt3CmeYKC6xj4ZFI0KlfHKfT9TIR4xNLpxVqVBfWusIZztC4mBHfQ"
         },
         {
-          "url": "https://www.facebook.com/ObservadorOnTime/photos/espanha-e-pa%C3%ADses-baixos-apresentaram-candidaturas-%C3%A0-presid%C3%AAncia-que-v%C3%A3o-ser-apre/1533632982201313/",
-          "title": "Espanha e Países Baixos apresentaram candidaturas à presidência que vão ser apreciadas nesta reunião. Objetivo é que os estados-membros cheguem a um acordo durante o mês de novembr",
-          "publisher": "Facebook",
+          "url": "https://www.zerozero.pt/noticias/portugal-em-braga-os-pontos-atraentes-para-este-jogo/1260030",
+          "title": "Seleção em Braga: as variantes do jogo após a renúncia de Cristiano Ronaldo",
+          "publisher": "zerozero.pt",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxTU6pQ0uZKTwTEO-NIVokK1FJuDf9tnFc7Ocmphbmp6VUIGRFqFI9Vcf4Bao"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLkbOenvpWxv4aY-reqD_RZnVy8A_FFr8vhGNMv9hUpJQyxUHdvUqmOmetHj4"
         },
         {
-          "url": "https://pt.euronews.com/2026/11/13/confirma-ue-dois-candidatos-para-suceder-a-lagarde-no-bce",
-          "title": "Confirma UE dois candidatos para suceder a Lagarde no BCE",
-          "publisher": "Euronews.com",
+          "url": "https://golo.fm/destaque/direto-%F0%9F%94%B4-ultima-bola-conferencia-de-imprensa-da-selecao-nacional-a-7/",
+          "title": "DIRETO 🔴 Última Bola: Conferência de Imprensa da Seleção Nacional A",
+          "publisher": "Golo FM",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSG4_44H9-vreBk7EZTifac7t3rHS7vUjSvD4j7sX27cOEjpMl-AiyEj_mn_5w"
-        }
-      ]
-    },
-    {
-      "query": "tony richards",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T17:40:00Z",
-      "related_news_urls": [
-        "https://consequence.net/2026/11/w-a-s-p-drummer-tony-richards-dead-at-69/",
-        "https://ghostcultmag.com/original-w-a-s-p-drummer-tony-richards-has-died/",
-        "https://loadedradio.com/metal-breakdown-daily-slipknot-album-tony-richards-radke/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqeIitz1kn89XqRixBmPVhR2DoULNjnQf-Tm7zN8Ub1vIm8gMD493KQTRz9Gw",
-      "image_credit": "Consequence of Sound",
-      "news": [
-        {
-          "url": "https://consequence.net/2026/11/w-a-s-p-drummer-tony-richards-dead-at-69/",
-          "title": "Original W.A.S.P. Drummer Tony Richards Dead at 69",
-          "publisher": "Consequence of Sound",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqeIitz1kn89XqRixBmPVhR2DoULNjnQf-Tm7zN8Ub1vIm8gMD493KQTRz9Gw"
-        },
-        {
-          "url": "https://ghostcultmag.com/original-w-a-s-p-drummer-tony-richards-has-died/",
-          "title": "Original W.A.S.P. Drummer Tony Richards Has Died",
-          "publisher": "Ghost Cult Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt7xWrrlelZ1elttTGlkcBM7RU8B9S-Ir8eJYev9qOaYRw4fqogvUx8P0Zj7c"
-        },
-        {
-          "url": "https://loadedradio.com/metal-breakdown-daily-slipknot-album-tony-richards-radke/",
-          "title": "Metal Breakdown Daily: New Slipknot Album, Original W.A.S.P. Drummer Tony Richards Dies, Ronnie Radke Sued",
-          "publisher": "Loaded Radio",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSon1N_-7EUdCIc0z0FR3CKud4FLhyVrQimfwzOGkCmxYOzWLLfwL4zkBJHwGc"
-        }
-      ]
-    },
-    {
-      "query": "rocket launch today",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T17:30:00Z",
-      "related_news_urls": [
-        "https://www.aboutamazon.com/news/amazon-leo/amazon-leo-vulcan-satellites-launch",
-        "https://spaceflightnow.com/2026/11/13/ulas-vulcan-rocket-plans-return-to-flight-with-launch-of-40-leo-satellites-for-amazon/",
-        "https://www.space.com/space-exploration/launches-spacecraft/ula-vulcan-centaur-return-to-flight-amazon-leo-internet-satellite-launch"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuQAvyvt4PTfbJAUglLuOqipMfI0JXviQUQGrK3gUM_wCEUeFGC1VC9FuKbpI",
-      "image_credit": "About Amazon",
-      "news": [
-        {
-          "url": "https://www.aboutamazon.com/news/amazon-leo/amazon-leo-vulcan-satellites-launch",
-          "title": "Amazon Leo to launch 40 satellites on its first Vulcan mission",
-          "publisher": "About Amazon",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuQAvyvt4PTfbJAUglLuOqipMfI0JXviQUQGrK3gUM_wCEUeFGC1VC9FuKbpI"
-        },
-        {
-          "url": "https://spaceflightnow.com/2026/11/13/ulas-vulcan-rocket-plans-return-to-flight-with-launch-of-40-leo-satellites-for-amazon/",
-          "title": "ULA delays Vulcan rocket launch of 40 Leo satellites for Amazon",
-          "publisher": "Spaceflight Now",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVk1mKvZH-tWHY4CXTFvGHVu_S--bKuoqhY953_4ElKzv91gzbaOelQ4qQT0o"
-        },
-        {
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/ula-vulcan-centaur-return-to-flight-amazon-leo-internet-satellite-launch",
-          "title": "Powerful Vulcan Centaur rocket launching for 1st time in 9 months Nov. 14: Watch it live",
-          "publisher": "Space",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMPGR3LjGW6Sq1LiUAOLKel0o3e86B1hOYChoDF3xTL91pYsZ9NOsjH6slgzs"
-        }
-      ]
-    },
-    {
-      "query": "rene haas",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-13T17:00:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/cio-journal/nvidia-needs-three-ceos-in-one-59038b0c",
-        "https://www.ft.com/content/2a64f698-46dd-4178-a3f4-4c5f4c0a0926?syn-25a6b1a6=1",
-        "https://www.fastcompany.com/91642252/5-things-jensen-huang-mastered-that-nvidias-next-ceo-will-have-to-learn"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRchBr_VCzPyhAESI7uW2vBm09mrUmNnAkW8Qssnl8fguZ7jb8QI_zrLHc7vsA",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/cio-journal/nvidia-needs-three-ceos-in-one-59038b0c",
-          "title": "Nvidia Needs Three CEOs in One",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRchBr_VCzPyhAESI7uW2vBm09mrUmNnAkW8Qssnl8fguZ7jb8QI_zrLHc7vsA"
-        },
-        {
-          "url": "https://www.ft.com/content/2a64f698-46dd-4178-a3f4-4c5f4c0a0926?syn-25a6b1a6=1",
-          "title": "Arm boss Rene Haas approached in Nvidia CEO search",
-          "publisher": "Financial Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWcf8CdJi6Tul19dJVSsWBuP3U2abZbTx6o8lksDRCQbSvsi9E35tFO5UYZEU"
-        },
-        {
-          "url": "https://www.fastcompany.com/91642252/5-things-jensen-huang-mastered-that-nvidias-next-ceo-will-have-to-learn",
-          "title": "5 things Jensen Huang mastered that Nvidia’s next CEO will have to learn",
-          "publisher": "Fast Company",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4TwtlMaXigdrg51N5Avd6-sP47xSN-8LLdYHI0ay1kD5rpyTnjPWZ7V8dZW0"
-        }
-      ]
-    },
-    {
-      "query": "wes huff",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T17:00:00Z",
-      "related_news_urls": [
-        "https://churchleaders.com/news/2225507-wesley-huff-3-year-old-daughter-multiple-seizures.html",
-        "https://www.christianpost.com/news/wes-huff-asks-for-prayers-after-3-year-old-daughter-hospitalized.html",
-        "https://www.jubileecast.com/articles/41041/20261112/wesley-huff-thanks-supporters-for-prayers-as-3-year-old-daughter-returns-home-after-multiple-seizures.htm"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRacGAV_kZajsu_IspFg-FvZej1U9EfpzglPoblMkd5Bo_hRR9fkXywSyCUaKA",
-      "image_credit": "ChurchLeaders",
-      "news": [
-        {
-          "url": "https://churchleaders.com/news/2225507-wesley-huff-3-year-old-daughter-multiple-seizures.html",
-          "title": "‘Thank You For Praying'—Wesley Huff’s 3-Year-Old Daughter Home After Suffering Multiple Seizures",
-          "publisher": "ChurchLeaders",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRacGAV_kZajsu_IspFg-FvZej1U9EfpzglPoblMkd5Bo_hRR9fkXywSyCUaKA"
-        },
-        {
-          "url": "https://www.christianpost.com/news/wes-huff-asks-for-prayers-after-3-year-old-daughter-hospitalized.html",
-          "title": "Wes Huff asks for prayers after 3-year-old daughter hospitalized",
-          "publisher": "Christian Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrrEP_E5geva5cqQaV3m191_yAs5Cs9Qyc3Msr6ufdeRs2I0S_Q6rJ2NliupA"
-        },
-        {
-          "url": "https://www.jubileecast.com/articles/41041/20261112/wesley-huff-thanks-supporters-for-prayers-as-3-year-old-daughter-returns-home-after-multiple-seizures.htm",
-          "title": "Wesley Huff Thanks Supporters for Prayers as 3-Year-Old Daughter Returns Home After Multiple Seizures",
-          "publisher": "JubileeCast",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTE2Q1V0j2eg_KAnLVPcsdVyWnr0FFVsVCYnI_HJufUxGcYXIWkGQnbkyXmKJ8"
-        }
-      ]
-    },
-    {
-      "query": "moldova vs kazakhstan",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T16:50:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cmdx311g6np6t",
-        "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-moldova-v-kazakhstan/blt1a0e9cea4204c0d9",
-        "https://www.sportsmole.co.uk/football/moldova/uefa-nations-league/preview/moldova-vs-kazakhstan-prediction-team-news-lineups_608901.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cmdx311g6np6t",
-          "title": "Moldova vs Kazakhstan: UEFA Nations League stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
-        },
-        {
-          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-moldova-v-kazakhstan/blt1a0e9cea4204c0d9",
-          "title": "Moldova vs Kazakhstan: Where to watch, TV channel, live stream & kick-off time",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOPDct3zZtCxWx_6It5LnY3HbX-r44914SpPuib2jNkkOasHYCFO4mU7hNnJA"
-        },
-        {
-          "url": "https://www.sportsmole.co.uk/football/moldova/uefa-nations-league/preview/moldova-vs-kazakhstan-prediction-team-news-lineups_608901.html",
-          "title": "Preview: Moldova vs Kazakhstan - prediction, team news, lineups",
-          "publisher": "Sports Mole",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVkLFxFWTFRDwvW-xVQKZG55H3foBQYJXmXQWPxuyUgSz5jjIyUUoZLf9DfLU"
-        }
-      ]
-    },
-    {
-      "query": "michael douglas",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T16:50:00Z",
-      "related_news_urls": [
-        "https://people.com/carys-douglas-borrows-mom-catherine-zeta-jones-gucci-top-12251245",
-        "https://www.instyle.com/catherine-zeta-jones-daughter-carys-wears-her-gucci-top-12251276",
-        "https://ew.com/carys-douglas-wears-catherine-zeta-jones-black-lace-top-1996-12251930"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ902wLzKQiyrEzNW3svjD42X7PLgQTWOuL9Je3aOYIryWx4MDOdXsaXHKGUAc",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/carys-douglas-borrows-mom-catherine-zeta-jones-gucci-top-12251245",
-          "title": "Carys Douglas Borrows Mom Catherine Zeta-Jones’ Lace Gucci Top 30 Years Later",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ902wLzKQiyrEzNW3svjD42X7PLgQTWOuL9Je3aOYIryWx4MDOdXsaXHKGUAc"
-        },
-        {
-          "url": "https://www.instyle.com/catherine-zeta-jones-daughter-carys-wears-her-gucci-top-12251276",
-          "title": "Catherine Zeta-Jones’s Daughter Carys, 23, Wears Her 30-Year-Old Lace Gucci Top",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeQQ_TtbE7OGr0X8FNRRUS1Ola3P-WWQVWmfKPVNlm1O-tjdb8OVcTlr8BU-k"
-        },
-        {
-          "url": "https://ew.com/carys-douglas-wears-catherine-zeta-jones-black-lace-top-1996-12251930",
-          "title": "Catherine Zeta-Jones’ daughter steps out in same Gucci black lace top actress wore to 1996 premiere",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_WtYXufAIEUHTC7JmJV3LuJMMrFJh1SNTI5-XiI_e9lZrI2gc_ZlUsikY8Ts"
-        }
-      ]
-    },
-    {
-      "query": "nintendo black friday deals",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-13T16:50:00Z",
-      "related_news_urls": [
-        "https://www.nintendo.com/us/whatsnew/nintendo-announces-black-friday-offers-to-help-spread-joy-this-holiday-season/",
-        "https://mashable.com/tech/nov-9-nintendo-switch-2-deal",
-        "https://lifehacker.com/tech/best-nintendo-deals-black-friday-2026"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJdwGWfoWciYkJy6BjM3eZ6Guo1nE4Y-npuqfWyjE-gT28K5lIk-qktg4joFo",
-      "image_credit": "Nintendo",
-      "news": [
-        {
-          "url": "https://www.nintendo.com/us/whatsnew/nintendo-announces-black-friday-offers-to-help-spread-joy-this-holiday-season/",
-          "title": "Nintendo announces Black Friday offers to help spread joy this holiday season - News - Nintendo Official Site",
-          "publisher": "Nintendo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJdwGWfoWciYkJy6BjM3eZ6Guo1nE4Y-npuqfWyjE-gT28K5lIk-qktg4joFo"
-        },
-        {
-          "url": "https://mashable.com/tech/nov-9-nintendo-switch-2-deal",
-          "title": "The Nintendo Switch 2 gets a rare deal way ahead of Black Friday",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkCwfPlSALAicmzH76I52iowQmdJ6bLK-1iW9e9hPJ7mcLAAUTPSdexzZns04"
-        },
-        {
-          "url": "https://lifehacker.com/tech/best-nintendo-deals-black-friday-2026",
-          "title": "Nintendo's Black Friday Deals Are Actually Pretty Good",
-          "publisher": "Lifehacker",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYZ6clXKS3O2MrhCcatyLbePNpSLYPegEg-B3wQD9cPl6pTvs1gvXB0sA-5ak"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSi1h1KqpuHM7y4vGEMEz13RNZgCk0qLa0yQbut1AV_8BoGCjI8WUCBMEP3oek"
         }
       ]
     }
