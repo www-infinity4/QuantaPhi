@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T03:01:41.867825Z",
+  "checked_at": "2026-11-13T03:30:53.931065Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "aj dybantsa",
+      "query": "stefon diggs",
       "approx_searches": "2000+",
-      "published_at": "2026-11-13T02:40:00Z",
+      "published_at": "2026-11-13T03:10:00Z",
       "related_news_urls": [
-        "https://www.si.com/nba/wizards/aj-dybantsa-already-shown-why-wizards-made-him-first-pick-now-he-wants-more",
-        "https://lawlessrepublic.com/aj-dybantsa-five-word-response-put-his-strong-nba-start-into-perspective",
-        "https://www.fantasypros.com/nba/news/619039/aj-dybantsa-puts-up-21-points-loss-monday.php"
+        "https://www.wusa9.com/article/sports/nfl/washington-commanders/dan-quinn-stefon-diggs-out-of-bounds-rams-loss/65-6973ee9a-b34a-4fc3-809b-27d3345c36f9",
+        "https://sports.yahoo.com/articles/commanders-stefon-diggs-explains-game-200120602.html",
+        "https://www.fantasypros.com/nfl/news/618861/stefon-diggs-has-51-yards-loss.php"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-EsX8qGcL68tai9TvXd-LBv1h8681NSgTteNrD6arY3WmZuhX4Y02lCkZQE4",
-      "image_credit": "Sports Illustrated",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToV-xDZDAVwmBq3tgJCeKh3Q3BGEvMYVhRh4WF1mtTA9gsgLwfhhtEStnKYq8",
+      "image_credit": "WUSA9",
       "news": [
         {
-          "url": "https://www.si.com/nba/wizards/aj-dybantsa-already-shown-why-wizards-made-him-first-pick-now-he-wants-more",
-          "title": "AJ Dybantsa Has Already Shown Why Wizards Made Him the First Pick. Now, He Wants More.",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.wusa9.com/article/sports/nfl/washington-commanders/dan-quinn-stefon-diggs-out-of-bounds-rams-loss/65-6973ee9a-b34a-4fc3-809b-27d3345c36f9",
+          "title": "Dan Quinn addresses Stefon Diggs' costly decision and Commanders' fight to save season",
+          "publisher": "WUSA9",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-EsX8qGcL68tai9TvXd-LBv1h8681NSgTteNrD6arY3WmZuhX4Y02lCkZQE4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToV-xDZDAVwmBq3tgJCeKh3Q3BGEvMYVhRh4WF1mtTA9gsgLwfhhtEStnKYq8"
         },
         {
-          "url": "https://lawlessrepublic.com/aj-dybantsa-five-word-response-put-his-strong-nba-start-into-perspective",
-          "title": "AJ Dybantsa's five-word response put his strong NBA start into perspective",
-          "publisher": "Lawless Republic",
+          "url": "https://sports.yahoo.com/articles/commanders-stefon-diggs-explains-game-200120602.html",
+          "title": "Commanders' Stefon Diggs explains late-game decision in Week 10 vs Rams",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbaCF5cDSnZyxne70-L5vwqbMd_P7pC-ZY1OtAwppYRJmsdPoKebyd-Tb77-g"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgm9frNt28MEISMBfhUhMikzGSPkYmoZB8zQgjqxu57-2sZJ5BFKTDKM-5yTw"
         },
         {
-          "url": "https://www.fantasypros.com/nba/news/619039/aj-dybantsa-puts-up-21-points-loss-monday.php",
-          "title": "AJ Dybantsa puts up 21 points in loss Monday",
+          "url": "https://www.fantasypros.com/nfl/news/618861/stefon-diggs-has-51-yards-loss.php",
+          "title": "Stefon Diggs has 51 yards in loss",
           "publisher": "FantasyPros",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2WoZYuZLPIaRce3rGXZx7S7vTfDPvt8mUjQytDe2ZtHt7mgDM47hHElSyCwA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2k7y2orUOkXAUpj9kmiTmvt0S6a5Em2EjefikFul0bZksAduG0nh0snlld2Y"
         }
       ]
     },
     {
-      "query": "lamelo ball",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-13T02:40:00Z",
+      "query": "ausar thompson",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T03:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/hes-worth-300-million-hes-184849475.html",
-        "https://dunkingwithwolves.com/lamelo-ball-s-last-four-games-are-a-blueprint-for-success-without-anthony-edwards",
-        "https://www.dazn.com/en-US/news/basketball/timberwolves-reinventing-lamelo-ball-anthony-edwards/1ivq1n1b2989m1rthjimnr4sii"
+        "https://pistonpowered.com/ausar-thompson-early-mistakes-actually-great-sign",
+        "https://www.hoopsrumors.com/2026/11/central-notes-thompson-joe-watson-tyson-buzelis.html",
+        "https://www.fantasypros.com/nba/news/618297/ausar-thompson-fills-stat-sheet-wednesday-against-76ers.php"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXbW17PhtqSn2S7wRNhK3G8LsaRSQDTKEPvK6LD_SkLC1e8C6xDsmS0gEMCs0",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRI21JmE-VMnqNS9_xwtYv9GmS0pSV5_7k8qGzlk5sHNdg_aoJ6pFzACgkN85Q",
+      "image_credit": "PistonPowered",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/hes-worth-300-million-hes-184849475.html",
-          "title": "\"He's worth $300 million and he's trying to learn\" - Ayo Dosunmu exposes the biggest misconception about LaMelo Ball's dedication",
+          "url": "https://pistonpowered.com/ausar-thompson-early-mistakes-actually-great-sign",
+          "title": "Ausar Thompson’s early mistakes are actually a great sign",
+          "publisher": "PistonPowered",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRI21JmE-VMnqNS9_xwtYv9GmS0pSV5_7k8qGzlk5sHNdg_aoJ6pFzACgkN85Q"
+        },
+        {
+          "url": "https://www.hoopsrumors.com/2026/11/central-notes-thompson-joe-watson-tyson-buzelis.html",
+          "title": "Central Notes: Thompson, Joe, Watson, Tyson, Buzelis",
+          "publisher": "Hoops Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN66Y0IkaGpCa6eVhBcycTMFMp3U2xIFWpRU10eOUj8rwECLOwWbWwvJAY-eQ"
+        },
+        {
+          "url": "https://www.fantasypros.com/nba/news/618297/ausar-thompson-fills-stat-sheet-wednesday-against-76ers.php",
+          "title": "Ausar Thompson fills stat sheet Wednesday against 76ers",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB_BTsam54aRDcAxxfwdolW-xYg1awLh45on5Gk0vb2rXcr4NrM-vkAPEz2t0"
+        }
+      ]
+    },
+    {
+      "query": "hollywood brown",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T03:10:00Z",
+      "related_news_urls": [
+        "https://www.profootballrumors.com/2026/11/eagles-to-waive-wr-marquise-brown",
+        "https://bleacherreport.com/articles/25532802-hollywood-brown-reportedly-waived-eagles-top-landing-spots-wr-after-nfl-trade-rumors",
+        "https://sports.yahoo.com/articles/marquise-hollywood-brown-eagles-waive-031109750.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Bh1rDgP-bzlD8jcnOYCsv3Fc-7iVFoUm-YSaEheg2x9vfK278cxqeQyEgj0",
+      "image_credit": "NFL Rumors - ProFootballRumors.com",
+      "news": [
+        {
+          "url": "https://www.profootballrumors.com/2026/11/eagles-to-waive-wr-marquise-brown",
+          "title": "Eagles To Waive WR Marquise Brown",
+          "publisher": "NFL Rumors - ProFootballRumors.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Bh1rDgP-bzlD8jcnOYCsv3Fc-7iVFoUm-YSaEheg2x9vfK278cxqeQyEgj0"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25532802-hollywood-brown-reportedly-waived-eagles-top-landing-spots-wr-after-nfl-trade-rumors",
+          "title": "Hollywood Brown Reportedly Waived by Eagles, Top Landing Spots for WR After NFL Trade Rumors",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZyS6yQJNBY-5wWtXnnMl0m3QbliDOWoJQJMohHYAek8GWoV_zxKr7HCKP2MY"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/marquise-hollywood-brown-eagles-waive-031109750.html",
+          "title": "Marquise 'Hollywood' Brown: Eagles waive ex-Chiefs WR in Week 10",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXbW17PhtqSn2S7wRNhK3G8LsaRSQDTKEPvK6LD_SkLC1e8C6xDsmS0gEMCs0"
-        },
-        {
-          "url": "https://dunkingwithwolves.com/lamelo-ball-s-last-four-games-are-a-blueprint-for-success-without-anthony-edwards",
-          "title": "LaMelo Ball's last four games are a blueprint for success without Anthony Edwards",
-          "publisher": "Dunking with Wolves",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQynVdTiGv02PSvKEfeDQ_3E88w4vGAPjVHTIi3mzVC7dxtbCGz3ERtRZuKM_8"
-        },
-        {
-          "url": "https://www.dazn.com/en-US/news/basketball/timberwolves-reinventing-lamelo-ball-anthony-edwards/1ivq1n1b2989m1rthjimnr4sii",
-          "title": "Timberwolves are 'reinventing' offense in Anthony Edwards' absence",
-          "publisher": "DAZN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvTRJmNKQfPDhWwvsTxXxjxR8bgmQH5NSVMJJJprszFuOaNO6uAEY7kWCnnrs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT298bzyqIjoeGtnRsqLXDq2wpaRm-fSBaL1ZNtDQ_UvVHZBUUFzUeIOEGN-JY"
         }
       ]
     },
     {
-      "query": "aus vs eng",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T02:40:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-1st-odi-1528703/match-preview",
-        "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii8vbWVnYW1vdmllZS5naXRodWIuaW8vdG9tbXkvdGV4YXgueG1sIi8+PC9rcnBhbm8+&id=video-croatia-vs-england-liv-str-today-match-tvd1-37lbk4",
-        "https://www.cricketworld.com/england-tour-of-australia-2026-teams-player-squads-fixtures-schedule-and-all-you-need-to-know/114320.htm"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1vl0gniKLOBpZbz9gYCq4duNj9ki-1suQ6lHVFEV9JFq20o75e1DgPQtLErY",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-1st-odi-1528703/match-preview",
-          "title": "Australia-England face off again but most eyes are elsewhere",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1vl0gniKLOBpZbz9gYCq4duNj9ki-1suQ6lHVFEV9JFq20o75e1DgPQtLErY"
-        },
-        {
-          "url": "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii8vbWVnYW1vdmllZS5naXRodWIuaW8vdG9tbXkvdGV4YXgueG1sIi8+PC9rcnBhbm8+&id=video-croatia-vs-england-liv-str-today-match-tvd1-37lbk4",
-          "title": "[!!##@!!OFFICIAL!!##@]mainvstitle Live Game Tv",
-          "publisher": "日本取引所グループ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8cyiP249TqkBAuVAmE8Z7WrKNCnAunWigOxwJeBxIbXdiJ_N1czC32TPcak0"
-        },
-        {
-          "url": "https://www.cricketworld.com/england-tour-of-australia-2026-teams-player-squads-fixtures-schedule-and-all-you-need-to-know/114320.htm",
-          "title": "England Tour of Australia 2026 - Teams, Player Squads, Fixtures, Schedule and All you need to know",
-          "publisher": "Cricket World",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFTOnNvF7fRrHcp2l3BQa-cRwe0DRFb5kze_6_dlu5z5zPRgmVSgLjjik7olU"
-        }
-      ]
-    },
-    {
-      "query": "andrew whitworth",
+      "query": "zaccharie risacher",
       "approx_searches": "500+",
-      "published_at": "2026-11-13T02:40:00Z",
+      "published_at": "2026-11-13T03:10:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/nfl/news/bengals-steelers-clash-for-afc-north-lead-on-sunday-night/",
-        "https://www.nfl.com/videos/lance-zierlein-previews-snf-steelers-vs-bengals-the-nfl-report",
-        "https://www.wlwt.com/article/bengals-steelers-sunday-night-football-weather-forecast/74417216"
+        "https://thesmokingcuban.com/mavericks-have-little-reason-to-keep-zaccharie-risacher-out-of-starting-five",
+        "https://dallassportsjournal.com/dusty-may-zaccharie-risacher-mavericks-hawks-trade/",
+        "https://sports.yahoo.com/articles/still-finding-himself-hasn-t-015156546.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXTg4nwi2kAR_ijfCusjnEnK9s6nbY1pQGVnNeQyPjpceqvEfhGtQj7S9mycs",
-      "image_credit": "CBS Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwOo16AVk-PrwAyzGU7G15xqv4Vc4q17IaZnmZSUaxTrBvG3IFPoI1OuydD3o",
+      "image_credit": "The Smoking Cuban",
       "news": [
         {
-          "url": "https://www.cbssports.com/nfl/news/bengals-steelers-clash-for-afc-north-lead-on-sunday-night/",
-          "title": "Bengals, Steelers clash for AFC North lead on Sunday night",
-          "publisher": "CBS Sports",
+          "url": "https://thesmokingcuban.com/mavericks-have-little-reason-to-keep-zaccharie-risacher-out-of-starting-five",
+          "title": "Mavericks have little reason to keep Zaccharie Risacher out of the starting five",
+          "publisher": "The Smoking Cuban",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXTg4nwi2kAR_ijfCusjnEnK9s6nbY1pQGVnNeQyPjpceqvEfhGtQj7S9mycs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwOo16AVk-PrwAyzGU7G15xqv4Vc4q17IaZnmZSUaxTrBvG3IFPoI1OuydD3o"
         },
         {
-          "url": "https://www.nfl.com/videos/lance-zierlein-previews-snf-steelers-vs-bengals-the-nfl-report",
-          "title": "Lance Zierlein previews 'SNF' Pittsburgh Steelers vs. Cincinnati Bengals | 'The NFL Report'",
-          "publisher": "NFL.com",
+          "url": "https://dallassportsjournal.com/dusty-may-zaccharie-risacher-mavericks-hawks-trade/",
+          "title": "Dusty May On Zaccharie Risacher’s Fresh Start",
+          "publisher": "Dallas Hoops Journal",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ85Bg7ZI0_UZF5-OSHhhKFDvQfcZA6AQKLAG4si2jQT33pX9eplfV36fLyD2c"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUYzS6JPBf_sE78BoJdjNru2zYaTFxShOWivz8TGizx4q-aB9fKZOOt0_mKBU"
         },
         {
-          "url": "https://www.wlwt.com/article/bengals-steelers-sunday-night-football-weather-forecast/74417216",
-          "title": "What will weather look like for Sunday Night Football? Bundle up for kickoff",
-          "publisher": "WLWT",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuzWJeMPEOQZm2fABVDxUDd5JM4D5x5ZhplMmOtKpplDn1zAUeW97XX3IAaTg"
-        }
-      ]
-    },
-    {
-      "query": "khaman maluach",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T02:40:00Z",
-      "related_news_urls": [
-        "https://www.thesportingtribune.com/2026/11/12/suns-khaman-maluach-explores-los-angeles-nbat2-series-foreign-exchange",
-        "https://www.netinfluencer.com/nbat2-launches-travel-series-with-phoenix-suns-khaman-maluach-creator-aria-inthavong/",
-        "https://www.brightsideofthesun.com/suns-analysis/113509/this-move-has-aided-the-development-of-khaman-maluach-and-the-phoenix-suns"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFmSa8LnM368Ec-MO9rtWYfy5_04y5AikGKrFfQKBoOsPsybHAGXIN2A_2zxg",
-      "image_credit": "The Sporting Tribune",
-      "news": [
-        {
-          "url": "https://www.thesportingtribune.com/2026/11/12/suns-khaman-maluach-explores-los-angeles-nbat2-series-foreign-exchange",
-          "title": "Suns' Khaman Maluach Explores Los Angeles in NBAT2 Series 'Foreign Exchange'",
-          "publisher": "The Sporting Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFmSa8LnM368Ec-MO9rtWYfy5_04y5AikGKrFfQKBoOsPsybHAGXIN2A_2zxg"
-        },
-        {
-          "url": "https://www.netinfluencer.com/nbat2-launches-travel-series-with-phoenix-suns-khaman-maluach-creator-aria-inthavong/",
-          "title": "NBAT2 Launches Travel Series With Phoenix Suns’ Khaman Maluach, Creator Aria Inthavong",
-          "publisher": "Net Influencer",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnc1hUXXAr_NZ5Ha-LcO9H23XoNOYdp-x0plZoQyBfoxnC1UYz4-ipuBGNdSY"
-        },
-        {
-          "url": "https://www.brightsideofthesun.com/suns-analysis/113509/this-move-has-aided-the-development-of-khaman-maluach-and-the-phoenix-suns",
-          "title": "This move has aided the development of Khaman Maluach and the Phoenix Suns",
-          "publisher": "Bright Side Of The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmBAnHR8TGJbt5T7jjj9xR_Bz6Xjf4XQcmByXA4KclJF14lqDB2mlhZzgeztc"
-        }
-      ]
-    },
-    {
-      "query": "coby white",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T02:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/videos/lamelo-ball-over-27-5-170643016.html",
-        "https://www.actionnetwork.com/nba/nba-player-props-for-lamelo-ball-coby-white-on-thursday-november-12",
-        "https://ftnfantasy.com/nba/best-nba-player-prop-bets-today-november-12-2026"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIs3X9MXl8yBdZY4rpAXoeerMxAsW6V2Kc0kTu4BhsGCay1BKFbw8liFmsZ3E",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/videos/lamelo-ball-over-27-5-170643016.html",
-          "title": "LaMelo Ball Over 27.5 Pts+Ast: Lock or Trap",
+          "url": "https://sports.yahoo.com/articles/still-finding-himself-hasn-t-015156546.html",
+          "title": "\"He’s still finding himself. He hasn’t shot at all as …",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIs3X9MXl8yBdZY4rpAXoeerMxAsW6V2Kc0kTu4BhsGCay1BKFbw8liFmsZ3E"
-        },
-        {
-          "url": "https://www.actionnetwork.com/nba/nba-player-props-for-lamelo-ball-coby-white-on-thursday-november-12",
-          "title": "NBA Player Props for LaMelo Ball, Coby White on Thursday, November 12",
-          "publisher": "Action Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmjS2I8qdtf2Afl-qp3v-41zfzxqAb06YJ9K6tJsVx-68_8Hw4lV9ZtsKoJFc"
-        },
-        {
-          "url": "https://ftnfantasy.com/nba/best-nba-player-prop-bets-today-november-12-2026",
-          "title": "Best NBA Player Prop Bets Today: Flagg, Ball Picks",
-          "publisher": "FTN (For the Numbers)",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnXMtfujhikJy69HaDVZAwS5-WkrP3UqV8T16eTTnHgUgYBbDQDcua7RAjAog"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSa-QggyLkf6q_OdRr7BT4aRMtVLmKTdQYTBHI6YAtgL5SwuBFm-sgxqSEoHcE"
         }
       ]
     },
     {
-      "query": "nico caprez",
+      "query": "tsmc",
       "approx_searches": "200+",
-      "published_at": "2026-11-13T02:40:00Z",
+      "published_at": "2026-11-13T03:10:00Z",
       "related_news_urls": [
-        "https://global.morningstar.com/de/aktien/nvidia-eine-zweite-auereheliche-affre-fhrt-mglicherweise-zur-entlassung-von-ceo-jensen-huang",
-        "https://www.tagesschau.de/ausland/amerika/nvidia-trump-100.html",
-        "https://www.spiegel.de/wirtschaft/jensen-huang-nvidia-chef-tritt-nach-spionageaffaere-zurueck-a-776bb012-48a6-4c08-9939-a77fad020e47"
+        "https://wccftech.com/taiwan-chip-giant-tsmc-acknowledges-hack-of-reportedly-49000-employee-files-occurred-but-says-leaked-data-matches-that-stored-with-external-cloud-provider/",
+        "https://www.barchart.com/story/news/8807828/a-massive-employee-data-leak-is-dragging-down-tsm-stock",
+        "https://www.quantisnow.com/insight/sec-form-6-k-filed-by-taiwan-semiconductor-manufacturing-company-ltd-6786516"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsQL7zK90jBj_Os4lK0GGj7BbquZSnM5obt5ZtOhkwHkfdXu72kJFqS55kzEo",
-      "image_credit": "Morningstar",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBTUmA5xbEf8nGoCmbJsknmN4sgl0uQ20p6xMr6yLQsKiLBpGiCpSg1eZgN7M",
+      "image_credit": "Wccftech",
       "news": [
         {
-          "url": "https://global.morningstar.com/de/aktien/nvidia-eine-zweite-auereheliche-affre-fhrt-mglicherweise-zur-entlassung-von-ceo-jensen-huang",
-          "title": "Nvidia: Anleger achten auf CEO-Nachfolgepläne und mögliche Auswirkungen auf Kunden",
-          "publisher": "Morningstar",
+          "url": "https://wccftech.com/taiwan-chip-giant-tsmc-acknowledges-hack-of-reportedly-49000-employee-files-occurred-but-says-leaked-data-matches-that-stored-with-external-cloud-provider/",
+          "title": "Taiwan Chip Giant TSMC Acknowledges Hack Of Reportedly 49,000 Employee Files Occurred But Says Leaked Data Matches That Stored With External Cloud Provider",
+          "publisher": "Wccftech",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsQL7zK90jBj_Os4lK0GGj7BbquZSnM5obt5ZtOhkwHkfdXu72kJFqS55kzEo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBTUmA5xbEf8nGoCmbJsknmN4sgl0uQ20p6xMr6yLQsKiLBpGiCpSg1eZgN7M"
         },
         {
-          "url": "https://www.tagesschau.de/ausland/amerika/nvidia-trump-100.html",
-          "title": "Nvidia: Huang-Affäre könnte zu Trump-Skandal werden",
-          "publisher": "tagesschau.de",
+          "url": "https://www.barchart.com/story/news/8807828/a-massive-employee-data-leak-is-dragging-down-tsm-stock",
+          "title": "A Massive Employee Data Leak Is Dragging Down TSM Stock",
+          "publisher": "Barchart.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsCwNHRePoo_0mQlgvUtAQhtHagfBCL3oax0uZeWdAeEtC6M2X9NmXQ88YcYU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuIgqsuKwzCMCYJTG9cXb7ZGkOSDtUM85L9LImJ4q3lr5XROi7xSm9opfLElo"
         },
         {
-          "url": "https://www.spiegel.de/wirtschaft/jensen-huang-nvidia-chef-tritt-nach-spionageaffaere-zurueck-a-776bb012-48a6-4c08-9939-a77fad020e47",
-          "title": "Nvidia: Jensen Huang tritt nach Spionageaffäre zurück",
-          "publisher": "Spiegel",
+          "url": "https://www.quantisnow.com/insight/sec-form-6-k-filed-by-taiwan-semiconductor-manufacturing-company-ltd-6786516",
+          "title": "TSM: SEC Form 6-K filed by Taiwan Semiconductor Manufacturing Company Ltd.",
+          "publisher": "Quantisnow",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKgsJ-VcNve4iuYhPh89wxuDHUj6XtFqRMiiBIuRzquXKZpjcZgq1xpnN5tAQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7TdWJi0R7QhB9wkozw00WsbM01-weDnQbTEaMvH0Tew53jAlmQgXKMWH9Um8"
         }
       ]
     },
     {
-      "query": "pistons",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-13T02:30:00Z",
+      "query": "tre johnson",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T03:00:00Z",
       "related_news_urls": [
-        "https://www.nba.com/game/por-vs-lal-0022600032/box-score",
-        "https://www.espn.com/nba/recap/_/gameId/401909929",
-        "https://okcthunderwire.usatoday.com/story/sports/nba/thunder/2026/11/02/player-grades-sga-turns-into-superman-in-thunder-117-112-win-over-cavaliers/92577830007/"
+        "https://wizofawes.com/wizards-explore-trades-bench-costing-games",
+        "https://www.bulletsforever.com/washington-wizards-analysis-players/73979/tre-johnson-is-struggling-from-three-so-are-the-wizards",
+        "https://sports.yahoo.com/articles/tre-johnsons-shooting-slump-already-160510331.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJuY12R448qJrWi8QCwQ00F056RU3CREuvM31gG2EGR2dZo9xd2CbiTuUd8Wo",
-      "image_credit": "NBA.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5WOxluBserEJbJAQy02MN2FW5OLnFNNx4k6-jJUBAe2sLlUNCQcdRPOhZeZg",
+      "image_credit": "Wiz of Awes",
       "news": [
         {
-          "url": "https://www.nba.com/game/por-vs-lal-0022600032/box-score",
-          "title": "Portland Trail Blazers vs Los Angeles Lakers Nov 6, 2026 Box Scores",
+          "url": "https://wizofawes.com/wizards-explore-trades-bench-costing-games",
+          "title": "Wizards may need to explore trades to fix a bench that keeps costing them games",
+          "publisher": "Wiz of Awes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5WOxluBserEJbJAQy02MN2FW5OLnFNNx4k6-jJUBAe2sLlUNCQcdRPOhZeZg"
+        },
+        {
+          "url": "https://www.bulletsforever.com/washington-wizards-analysis-players/73979/tre-johnson-is-struggling-from-three-so-are-the-wizards",
+          "title": "Tre Johnson is struggling from three. So are the Wizards",
+          "publisher": "Bullets Forever",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1R03tVql_goOLVGNJkMxTHV5IVeUb8e35m-4EB49sRkZJPo13hBRayn0nsT8"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/tre-johnsons-shooting-slump-already-160510331.html",
+          "title": "Tre Johnson's Shooting Slump is Already Forcing Major Wizards Rotational Questions",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTILx0xWU8TGpBe-ZHCxiuXhONilMJBrj5X5N-CZzdlwDM7AW6p_d0iLdfNG24"
+        }
+      ]
+    },
+    {
+      "query": "santi aldama",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T03:00:00Z",
+      "related_news_urls": [
+        "https://thesmokingcuban.com/santi-aldama-helps-solve-problems-plaguing-mavericks-offense",
+        "https://www.fantasypros.com/nba/news/618060/santi-aldama-knee-probable-to-make-season-debut-friday.php",
+        "https://www.nba.com/mavs/news/santi-aldama-was-very-impressive-in-his-first-game-with-mavericks"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaUCTNjzd-ethasKaCJQ3DdjV7YYlA6K27Q-wcXAeTXzYvzXvY2UKMW0Andrk",
+      "image_credit": "The Smoking Cuban",
+      "news": [
+        {
+          "url": "https://thesmokingcuban.com/santi-aldama-helps-solve-problems-plaguing-mavericks-offense",
+          "title": "Santi Aldama helps solve problems plaguing the Mavericks’ offense",
+          "publisher": "The Smoking Cuban",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaUCTNjzd-ethasKaCJQ3DdjV7YYlA6K27Q-wcXAeTXzYvzXvY2UKMW0Andrk"
+        },
+        {
+          "url": "https://www.fantasypros.com/nba/news/618060/santi-aldama-knee-probable-to-make-season-debut-friday.php",
+          "title": "Santi Aldama (knee) probable to make season debut Friday",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5uj0t8gpDiQOYOcI60PnpwBhsm6lBP2N-XC7ly9Dgbg7uzmvxKDX8Nf_yoaM"
+        },
+        {
+          "url": "https://www.nba.com/mavs/news/santi-aldama-was-very-impressive-in-his-first-game-with-mavericks",
+          "title": "Santi Aldama impressive in his first game with Mavericks",
           "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJuY12R448qJrWi8QCwQ00F056RU3CREuvM31gG2EGR2dZo9xd2CbiTuUd8Wo"
-        },
-        {
-          "url": "https://www.espn.com/nba/recap/_/gameId/401909929",
-          "title": "Thunder 124-116 Cavaliers (Nov 4, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_YxxmnotZyN14dJRtHtg9BHyj9m3aSCmp3fZQWzBNMFhO5PpAgRDgGsNEYrk"
-        },
-        {
-          "url": "https://okcthunderwire.usatoday.com/story/sports/nba/thunder/2026/11/02/player-grades-sga-turns-into-superman-in-thunder-117-112-win-over-cavaliers/92577830007/",
-          "title": "Player grades: SGA turns into Superman in Thunder's 117-112 win over Cavaliers",
-          "publisher": "OKC Thunder Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8gu90lBPB8GF_TWOEnz540MLLoshy-A3llYmqke_7m0avH2jslsJBQW8mJNA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzckWcei0WKxzAheXJtoQf_wuLxX6FHePN9ri52bNfZFUqOeqClB_kEkfyYE4"
         }
       ]
     },
     {
-      "query": "trae young",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T02:30:00Z",
+      "query": "daayra movie",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T03:00:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/wizards-trae-young-under-fire-220208206.html",
-        "https://www.nba.com/watch/video/trae-young-knocks-it-down-from-deep-9?plsrc=nba&collection=trae-young",
-        "https://www.audacy.com/thefandc/video/trae-young-is-not-a-winning-player-xbvrboa"
+        "https://www.hindustantimes.com/entertainment/bollywood/daayra-ott-release-kareena-kapoor-and-prithviraj-sukumaaran-film-to-arrive-on-netflix-in-hindi-and-malayalam-101794489907480.html",
+        "https://www.telegraphindia.com/entertainment/daayra-ott-release-when-and-where-to-watch-meghna-gulzar-directed-investigative-drama/cid/2189082",
+        "https://thenewsmill.com/2026/11/kareena-kapoor-and-prithviraj-sukumarans-daayra-to-premiere-on-netflix-on-november-13/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSceD1ngAgSrQi7vcq5Y3efrgl_WKrsWZaYFp8hMTWcSQCuSglUArrV43K5tDc",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFS3UhIYdKiMNz7XGG3pC54FXK0wx7K5QphhclQEQ6DvpBaepanBQAQDdFDDA",
+      "image_credit": "Hindustan Times",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/wizards-trae-young-under-fire-220208206.html",
-          "title": "Wizards’ Trae Young Under Fire After Reporter Shares Troubling Footage",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.hindustantimes.com/entertainment/bollywood/daayra-ott-release-kareena-kapoor-and-prithviraj-sukumaaran-film-to-arrive-on-netflix-in-hindi-and-malayalam-101794489907480.html",
+          "title": "Daayra OTT release: Kareena Kapoor and Prithviraj Sukumaaran film to arrive on Netflix in Hindi and Malayalam | Bollywood",
+          "publisher": "Hindustan Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSceD1ngAgSrQi7vcq5Y3efrgl_WKrsWZaYFp8hMTWcSQCuSglUArrV43K5tDc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFS3UhIYdKiMNz7XGG3pC54FXK0wx7K5QphhclQEQ6DvpBaepanBQAQDdFDDA"
         },
         {
-          "url": "https://www.nba.com/watch/video/trae-young-knocks-it-down-from-deep-9?plsrc=nba&collection=trae-young",
-          "title": "Trae Young knocks it down from deep",
-          "publisher": "NBA.com",
+          "url": "https://www.telegraphindia.com/entertainment/daayra-ott-release-when-and-where-to-watch-meghna-gulzar-directed-investigative-drama/cid/2189082",
+          "title": "‘Daayra’ OTT release: When and where to watch the Meghna Gulzar-directed investigative drama",
+          "publisher": "Telegraph India",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1fHuXI29JUtEPkvi2PSIpieDY9myLdZJwCZoSRvOQe5_j7cOfrGihYTd-tTA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlFDP4dcVA_SOwt_PSMjFAMvyU1-32aRi0IxJhtcSiZ2reKEB7dUSm4ccdTXQ"
         },
         {
-          "url": "https://www.audacy.com/thefandc/video/trae-young-is-not-a-winning-player-xbvrboa",
-          "title": "Trae Young Is Not a Winning Player",
-          "publisher": "Audacy",
+          "url": "https://thenewsmill.com/2026/11/kareena-kapoor-and-prithviraj-sukumarans-daayra-to-premiere-on-netflix-on-november-13/",
+          "title": "Kareena Kapoor and Prithviraj Sukumaran’s ‘Daayra’ to premiere on Netflix on November 13",
+          "publisher": "The News Mill",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfu4Whqsj6pSYduWYKT9bepWi2jvLTL7Q-pvDAsFUmiTHkOZemL7r0Z1gXqnw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLCWC_wqxMnoaxpgxFmt6ub8lFJvUSal8ASMvVv23qIrRGeQLutZgehXWsfk8"
         }
       ]
     },
     {
-      "query": "jabari walker",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T02:30:00Z",
+      "query": "madison bontempo",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T03:00:00Z",
       "related_news_urls": [
-        "https://www.inquirer.com/sixers/sixers-jabari-walker-joel-ebiid-adem-bona-nick-nurse-backup-center-20261112.html",
-        "https://thesixersense.com/nick-nurse-doesnt-leave-jabari-walker-wondering-about-his-standing",
-        "https://roundtable.io/sports/nba/76ers/video/76ers-may-have-found-an-unexpected-solution-behind-joel-embiid"
+        "https://people.com/jen-affleck-says-madison-bontempo-s-husband-being-in-las-vegas-during-their-girls-trip-is-a-red-flag-12249956",
+        "https://www.bustle.com/entertainment/mormon-wives-orange-county-madison-bontempo-kyler-fisher-update",
+        "https://www.elitedaily.com/entertainment/madison-kyler-fisher-breakup-relationship-mormon-wives-oc-interview"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQM5kH75o1JSa0Z0hFQgq_w198_-KltWXURsm4lpdmuR55y-qS8klJgMiT6XjU",
-      "image_credit": "Inquirer.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv_AY1MbiOfJZLmlNdi8I5MxCJ8swcVotHIyPv8Nyjvav1bG2-3gWSPAa-1kg",
+      "image_credit": "People.com",
       "news": [
         {
-          "url": "https://www.inquirer.com/sixers/sixers-jabari-walker-joel-ebiid-adem-bona-nick-nurse-backup-center-20261112.html",
-          "title": "Jabari Walker keeping Sixers’ backup center group afloat and making ‘impactful plays’ for star-studded roster",
-          "publisher": "Inquirer.com",
+          "url": "https://people.com/jen-affleck-says-madison-bontempo-s-husband-being-in-las-vegas-during-their-girls-trip-is-a-red-flag-12249956",
+          "title": "Jen Affleck Says Madison Bontempo’s Husband Being in Las Vegas During Their Girls Trip Is ‘a Red Flag’",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQM5kH75o1JSa0Z0hFQgq_w198_-KltWXURsm4lpdmuR55y-qS8klJgMiT6XjU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv_AY1MbiOfJZLmlNdi8I5MxCJ8swcVotHIyPv8Nyjvav1bG2-3gWSPAa-1kg"
         },
         {
-          "url": "https://thesixersense.com/nick-nurse-doesnt-leave-jabari-walker-wondering-about-his-standing",
-          "title": "Nick Nurse doesn't leave Jabari Walker wondering about his standing",
-          "publisher": "The Sixer Sense",
+          "url": "https://www.bustle.com/entertainment/mormon-wives-orange-county-madison-bontempo-kyler-fisher-update",
+          "title": "'Mormon Wives OC': Madison Bontempo Gives Kyler Fisher Update",
+          "publisher": "Bustle",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoKFSEWFZeAvFZxkdV2YgIJagV0X-m4p02ORAQrcg8JHVHGh3hYUe-HXjhcHA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXEDrk7OeJoSl_Rta3-xieX28xlx1GxrEdPX-zXViTRfnqa7QaRRkYyE09LWM"
         },
         {
-          "url": "https://roundtable.io/sports/nba/76ers/video/76ers-may-have-found-an-unexpected-solution-behind-joel-embiid",
-          "title": "Video - 76ers May Have Found an Unexpected Solution Behind Joel Embiid",
-          "publisher": "roundtable.io",
+          "url": "https://www.elitedaily.com/entertainment/madison-kyler-fisher-breakup-relationship-mormon-wives-oc-interview",
+          "title": "Madison From ‘Mormon Wives: OC’ Regrets Saying She’d Leave Kyler [Exclusive]",
+          "publisher": "Elite Daily",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxdbcgzB_kLkoZv1MEIAN9w9qV4t9TJh3xDlqjAJ2tPDaXLNr-U7UiCvx-yv0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUhGuz4szIyDRQx3uQ0pW7w-X5DMfDQIjM1tHopM8LvtxoOL3jEID_2F_TznI"
+        }
+      ]
+    },
+    {
+      "query": "guatemala vs canada",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T03:00:00Z",
+      "related_news_urls": [
+        "https://www.prensalibre.com/deportes/futbol-nacional/quien-sera-el-portero-de-guatemala-ante-canada-hagen-o-navarro-esto-confirma-fernando-tena/",
+        "https://www.lared1061.com/posts/canada-mantiene-en-reserva-su-reconocimiento-de-cancha-en-el-estadio-el-trebol",
+        "https://emisorasunidas.com/deportes/2026/11/11/rubio-rubin-cree-que-se-le-puede-ganar-la-serie-a-canada/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFlc_7wy474bxlDU7OrYwQ-vVHNWmpy_y4-1Zl2lLfQpgqyKuMBeB95GQo5sg",
+      "image_credit": "Prensa Libre",
+      "news": [
+        {
+          "url": "https://www.prensalibre.com/deportes/futbol-nacional/quien-sera-el-portero-de-guatemala-ante-canada-hagen-o-navarro-esto-confirma-fernando-tena/",
+          "title": "¿Quién será el portero de Guatemala ante Canadá: Hagen o Navarro? Esto confirma Fernando Tena",
+          "publisher": "Prensa Libre",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFlc_7wy474bxlDU7OrYwQ-vVHNWmpy_y4-1Zl2lLfQpgqyKuMBeB95GQo5sg"
+        },
+        {
+          "url": "https://www.lared1061.com/posts/canada-mantiene-en-reserva-su-reconocimiento-de-cancha-en-el-estadio-el-trebol",
+          "title": "Canadá Mantiene En Reserva Su Reconocimiento De Cancha En El Estadio El Trébol",
+          "publisher": "La Red 106.1 FM",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZqKrrJ43a-bhCz9gOJQYULVpit_AThvFHXOnbIvOU0RjBLneo_W8gaBB1mX0"
+        },
+        {
+          "url": "https://emisorasunidas.com/deportes/2026/11/11/rubio-rubin-cree-que-se-le-puede-ganar-la-serie-a-canada/",
+          "title": "Rubio Rubín cree que se le puede ganar la serie a Canadá",
+          "publisher": "Emisoras Unidas",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQx04J_VCuP_t3XjREhbSg1VUcW5rAB4uI0u3poqEVrI9s_fTNwnRpEmTZRAmU"
         }
       ]
     }
