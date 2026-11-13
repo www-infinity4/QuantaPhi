@@ -1,7 +1,7 @@
 import test from 'node:test';import assert from 'node:assert/strict';
 import {validPacket,selectActionPackets,needsHistoryScan,recordPacketReceipt,summarizedProgress} from '../continuity/work-packets.mjs';
 const SHA='a'.repeat(40),OTHER='b'.repeat(40),repo='www-infinity4/QuantaPhi';
-const p=(issue,over={})=>({repo,issue,headSha:SHA,nextAction:'edit_code',nextSourcePath:'some-file.mjs',priority:50,state:'ready',...over});
+const p=(issue,over={})=>({repo,issue,headSha:SHA,nextAction:'edit_code',nextSourcePath:`src/${issue}.mjs`,priority:50,state:'ready',...over});
 test('stable bounded packets, deduplicated and priority ordered',()=>{
  assert.ok(validPacket(p(5)));assert.equal(validPacket(p(5,{headSha:'not-sha'})),false);
  assert.deepEqual(selectActionPackets([p(4),p(4),p(5,{priority:80}),p(6,{priority:10})],{limit:2}).map(x=>x.issue),[5,4]);
@@ -30,4 +30,36 @@ test('blocked is not a claimed mutation, code edits require actual provider evid
  const rows=recordPacketReceipt([],p(5),{...base,result:'blocked',reason:'missing approved owner token'});
  assert.equal(summarizedProgress(rows).changed,0);
  assert.equal(summarizedProgress(rows).blocked,1);
+});
+
+test('dependency graph holds an unverified prerequisite and releases only after confirmed completion',()=>{
+ const dep=repo+'#39';
+ const candidate=p(40,{nextSourcePath:'src/40.mjs',priority:99,dependencies:[dep],estimatedMinutes:30});
+ const unrelated=p(41,{nextSourcePath:'src/41.mjs',priority:80});
+ assert.deepEqual(selectActionPackets([candidate,unrelated],{limit:3}).map(x=>x.issue),[41]);
+ assert.deepEqual(selectActionPackets([candidate,unrelated],{limit:3,completedDependencies:[dep]}).map(x=>x.issue),[40,41]);
+ assert.equal(validPacket(p(40,{dependencies:[repo+'#40']})),false,'self-dependency is invalid');
+ assert.equal(validPacket(p(40,{estimatedMinutes:-5})),false,'negative duration is invalid');
+});
+test('independent lanes prevent overlapping source changes but backfill distinct files',()=>{
+ const rows=[p(60,{priority:99,nextSourcePath:'src/shared.mjs'}),
+  p(61,{priority:90,nextSourcePath:'src/shared.mjs'}),
+  p(62,{priority:80,nextSourcePath:'src/other.mjs'})];
+ assert.deepEqual(selectActionPackets(rows,{limit:2}).map(x=>x.issue),[60,62]);
+ const wider=[p(63,{priority:99,nextSourcePath:'src/a.mjs',scopePaths:['src/ui','src/a.mjs']}),
+  p(64,{priority:95,nextSourcePath:'src/ui/index.mjs'}),
+  p(65,{priority:90,nextSourcePath:'src/elsewhere.mjs'})];
+ assert.deepEqual(selectActionPackets(wider,{limit:2}).map(x=>x.issue),[63,65]);
+});
+
+test('a declared scope cannot hide the actual write target from conflict detection',()=>{
+ const first=p(70,{priority:99,nextSourcePath:'src/critical.mjs',scopePaths:['src/unrelated.mjs']});
+ const conflicting=p(71,{priority:90,nextSourcePath:'src/critical.mjs'});
+ const safe=p(72,{priority:80,nextSourcePath:'src/safe.mjs'});
+ assert.deepEqual(selectActionPackets([first,conflicting,safe],{limit:2}).map(x=>x.issue),[70,72]);
+});
+test('source write targets must be repository-relative safe paths',()=>{
+ assert.equal(validPacket(p(75,{nextSourcePath:'../src/private.mjs'})),false);
+ assert.equal(validPacket(p(76,{nextSourcePath:'/src/absolute.mjs'})),false);
+ assert.equal(validPacket(p(77,{nextSourcePath:'src\\\\escaped.mjs'})),false);
 });

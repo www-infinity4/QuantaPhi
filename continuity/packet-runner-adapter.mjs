@@ -1,4 +1,4 @@
-import {needsHistoryScan,recordPacketReceipt,selectActionPackets,validPacket} from './work-packets.mjs';
+import {needsHistoryScan,recordPacketReceipt,selectActionPackets,validPacket,scopesOverlap} from './work-packets.mjs';
 
 // Only the authenticated coordinator can claim and settle an owner-partitioned
 // cycle. No Github/Brain credential is conferred by this adapter.
@@ -40,6 +40,9 @@ function storeCandidate(p){
   requiredChecksPassed:p.requiredChecksPassed===true,
   requiredReviewsSatisfied:p.requiredReviewsSatisfied===true,
   securityHold:p.securityHold===true,
+  ...(Array.isArray(p.dependencies)?{dependencies:[...p.dependencies]}:{}),
+  ...(Array.isArray(p.scopePaths)?{scopePaths:[...p.scopePaths]}:{}),
+  ...(p.estimatedMinutes?{estimatedMinutes:p.estimatedMinutes}:{}),
   ...(p.lease&&typeof p.lease==='object'?{lease:{
    verified:p.lease.verified===true,active:p.lease.active===true,
    holder:bounded(p.lease.holder,160)
@@ -69,8 +72,8 @@ function blockedFor(ledger,p,sourceVersion){
 function candidateAvailable(p,ledger,sourceVersion){
  return validPacket(p)&&!doneFor(ledger,p)&&!blockedFor(ledger,p,sourceVersion);
 }
-function skippedCandidates(candidates,selected,ledger,ownerId,sourceVersion){
- const chosen=new Set(selected.map(actionKey)),seen=new Set();
+function skippedCandidates(candidates,selected,ledger,ownerId,sourceVersion,completedDependencies=[]){
+ const chosen=new Set(selected.map(actionKey)),seen=new Set(),resolved=new Set(completedDependencies);
  return candidates.slice(0,MAX_CANDIDATES).flatMap(p=>{
   if(!validPacket(p))return [{issue:p?.issue??null,headSha:p?.headSha??null,reason:'invalid_packet'}];
   const key=actionKey(p),pair=packetKey(p);
@@ -82,6 +85,8 @@ function skippedCandidates(candidates,selected,ledger,ownerId,sourceVersion){
   else if(blockedFor(ledger,p,sourceVersion))reason='unchanged_blocker';
   else if(p.lease?.verified&&p.lease?.active&&p.lease?.holder&&p.lease.holder!==ownerId)
    reason='foreign_active_lease';
+  else if((p.dependencies||[]).some(d=>!resolved.has(d)))reason='dependency_pending';
+  else if(selected.some(other=>other.repo===p.repo&&scopesOverlap(other,p)))reason='source_overlap';
   else if(p.nextAction==='merge_pr'&&(!p.requiredChecksPassed||!p.requiredReviewsSatisfied||p.securityHold))
    reason='merge_gate';
   else if(p.securityHold&&p.nextAction!=='write_test')reason='safety_hold';
@@ -161,7 +166,7 @@ async function reserveCheckpoint(db,claim,ownerScope,sourceVersion,ledger,previo
 }
 export async function runPacketPass({
  db,claim,ownerScope,ownerId,sourceVersion,loadCandidates,executePacket,
- limit=3,now=Date.now
+ limit=3,now=Date.now,completedDependencies=[]
 }={}){
  const clock=typeof now==='function'?now:()=>now;
  const started=stamp(clock);
@@ -170,7 +175,8 @@ export async function runPacketPass({
   !/^[a-f0-9]{64}$/i.test(ownerScope||'')||
   typeof ownerId!=='string'||!ownerId||!SHA.test(sourceVersion||'')||
   typeof loadCandidates!=='function'||typeof executePacket!=='function'||
-  !Number.isInteger(limit)||limit<2||limit>5)
+  !Number.isInteger(limit)||limit<2||limit>5||
+  !Array.isArray(completedDependencies)||completedDependencies.length>2500)
   throw Error('packet_runner_arguments_invalid');
  if(!await activeClaim(db,claim,started))
   return {status:'lease_lost',scanned:false,attempted:[],skipped:[]};
@@ -210,8 +216,8 @@ export async function runPacketPass({
   }
  }
  const pool=ledger.candidates.filter(p=>candidateAvailable(p,ledger,sourceVersion));
- const packets=selectActionPackets(pool,{blocked:[],done:[],ownerId,limit});
- ledger.skipped=skippedCandidates(ledger.candidates,packets,ledger,ownerId,sourceVersion);
+ const packets=selectActionPackets(pool,{blocked:[],done:[],ownerId,limit,completedDependencies});
+ ledger.skipped=skippedCandidates(ledger.candidates,packets,ledger,ownerId,sourceVersion,completedDependencies);
  const attempted=[];
  for(const packet of packets){
   if(!await activeClaim(db,claim,stamp(clock)))
@@ -264,9 +270,14 @@ export async function runPacketPass({
     scanned,attempted,skipped:ledger.skipped};
  }
  const left=ledger.candidates.filter(p=>candidateAvailable(p,ledger,sourceVersion));
- ledger.exhausted=selectActionPackets(left,{blocked:[],done:[],ownerId,limit:1}).length===0;
+ // Unknown prerequisites are not terminal blockers. Keep the pinned inventory
+ // available for a later signed claim with newly verified dependency receipts.
+ const resolved=new Set(completedDependencies);
+ const waitingOnDependency=left.some(p=>(p.dependencies||[]).some(d=>!resolved.has(d)));
+ ledger.exhausted=!waitingOnDependency&&
+  selectActionPackets(left,{blocked:[],done:[],ownerId,limit:1,completedDependencies}).length===0;
  if(!await saveCheckpoint(db,claim,ownerScope,sourceVersion,ledger,'settled',stamp(clock)))
   return {status:'checkpoint_conflict',scanned,attempted,skipped:ledger.skipped};
- return {status:attempted.length?'processed':'exhausted',scanned,attempted,
+ return {status:attempted.length?'processed':waitingOnDependency?'dependency_pending':'exhausted',scanned,attempted,
   skipped:ledger.skipped,hasMore:!ledger.exhausted};
 }
