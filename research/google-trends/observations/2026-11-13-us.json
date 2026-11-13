@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T22:01:24.937965Z",
+  "checked_at": "2026-11-13T22:31:21.513178Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "cnn",
-      "approx_searches": "100000+",
-      "published_at": "2026-11-13T21:40:00Z",
+      "query": "argentina - uruguay",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-13T22:10:00Z",
       "related_news_urls": [
-        "https://www.wdsu.com/article/new-orleans-mississippi-river-cruise-ship-collision-what-we-know/74426415",
-        "https://www.nytimes.com/video/us/100000011283622/new-orleans-cruise-ship-crash.html",
-        "https://www.fox8live.com/2026/11/13/source-river-cruiser-carrying-150-people-taking-water-near-port-new-orleans-rescue-efforts-underway/"
+        "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17508199/uruguay-argentina-amistosos-historias-anecdotas",
+        "https://www.infobae.com/deportes/2026/11/13/argentina-comenzara-la-era-post-messi-con-un-choque-ante-uruguay-hora-tv-y-formaciones/",
+        "https://www.clarin.com/deportes/argentina-vs-uruguay-vivo-hoy-hora-juega-seleccion-bombonera-ver-tv-formaciones_0_CqqfImqXh9.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQHWYFOWgZqrCvSb30Nrz-2knf2CNAfIfK87Amz2Mycfah_B0kyeNFfi1COSI0",
-      "image_credit": "WDSU",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTk7to276n5a6JfUdjfKeK-vVPVW9H7-2-WoW7OVdQM_HyQ1Gkjwk_GF2GoMnc",
+      "image_credit": "ESPN Deportes",
       "news": [
         {
-          "url": "https://www.wdsu.com/article/new-orleans-mississippi-river-cruise-ship-collision-what-we-know/74426415",
-          "title": "What we know about the American Cruise Line struck by a tanker in New Orleans",
-          "publisher": "WDSU",
+          "url": "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17508199/uruguay-argentina-amistosos-historias-anecdotas",
+          "title": "Anécdotas e historias de los amistosos entre Uruguay y Argentina",
+          "publisher": "ESPN Deportes",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQHWYFOWgZqrCvSb30Nrz-2knf2CNAfIfK87Amz2Mycfah_B0kyeNFfi1COSI0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTk7to276n5a6JfUdjfKeK-vVPVW9H7-2-WoW7OVdQM_HyQ1Gkjwk_GF2GoMnc"
         },
         {
-          "url": "https://www.nytimes.com/video/us/100000011283622/new-orleans-cruise-ship-crash.html",
-          "title": "Video: Riverboat Cruise Sinks After Collision With Cargo Ship in New Orleans",
+          "url": "https://www.infobae.com/deportes/2026/11/13/argentina-comenzara-la-era-post-messi-con-un-choque-ante-uruguay-hora-tv-y-formaciones/",
+          "title": "Argentina comenzará la era post Messi con un clásico ante Uruguay en La Bombonera: formaciones confirmadas",
+          "publisher": "Infobae",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReaXNlReKR_BsebMJWK0aTgeXE6BlufjyjTTiSWCycxNm0HCyBbjuCcU7Igw8"
+        },
+        {
+          "url": "https://www.clarin.com/deportes/argentina-vs-uruguay-vivo-hoy-hora-juega-seleccion-bombonera-ver-tv-formaciones_0_CqqfImqXh9.html",
+          "title": "Argentina vs Uruguay, EN VIVO: hora, TV y formaciones del primer partido de la Selección sin Messi",
+          "publisher": "Clarin.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZmiqtkHwhh8H5ogaY6q0JwttDuvNOgtd_QNZIb134bXFsgg7BhlJ3z1grG8Q"
+        }
+      ]
+    },
+    {
+      "query": "homeland security",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-13T22:10:00Z",
+      "related_news_urls": [
+        "https://www.politico.com/news/2026/11/12/internal-homeland-security-messages-corey-lewandowski-01162468",
+        "https://www.nytimes.com/2026/11/10/us/politics/democrats-corey-lewandowski-investigations.html",
+        "https://abcnews.com/Politics/former-dhs-adviser-corey-lewandowski-ordered-preserve-records/story?id=138027976"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCa0hYJ1LhcLaQ85u1Nb-4IqnVOMGgqWnxTpXzq4ZzbCZXyz4ulksIzwPP81I",
+      "image_credit": "Politico",
+      "news": [
+        {
+          "url": "https://www.politico.com/news/2026/11/12/internal-homeland-security-messages-corey-lewandowski-01162468",
+          "title": "DHS messages back up allegations that Lewandowski operated as shadow secretary",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCa0hYJ1LhcLaQ85u1Nb-4IqnVOMGgqWnxTpXzq4ZzbCZXyz4ulksIzwPP81I"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/10/us/politics/democrats-corey-lewandowski-investigations.html",
+          "title": "A Top Target of Newly Empowered Democrats: Corey Lewandowski",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVlhnzvFwL1qorRJB2VllmZfkamewHjH7WAk4CvWT-kJvgXFIQvUhGwPeGLmU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSE2MleYyf52rJF_9_2-8vs7d0ReyzN0MkOk7Cd9EyimGMeIht6pRjRS0SyiVk"
         },
         {
-          "url": "https://www.fox8live.com/2026/11/13/source-river-cruiser-carrying-150-people-taking-water-near-port-new-orleans-rescue-efforts-underway/",
-          "title": "LIVE: Tanker crashes into river cruiser carrying nearly 150 people near Port of New Orleans, rescues underway",
-          "publisher": "FOX 8 Live WVUE",
+          "url": "https://abcnews.com/Politics/former-dhs-adviser-corey-lewandowski-ordered-preserve-records/story?id=138027976",
+          "title": "Former DHS adviser Corey Lewandowski ordered to preserve records by incoming Democrat on key Senate committee",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnKkztB-DFQI1uylnwNR7ILlPKo7RMfTecdpb6zku4FsmgdbGgE7gzpxA1rds"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-xY2VcpvDKOCuybEMZ6jOqYn8TlMqH2tCI9BzeRw4-7zEzXw12XMzgJs5ylA"
         }
       ]
     },
     {
-      "query": "national weather service",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-13T21:40:00Z",
+      "query": "dhs secretary",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T22:10:00Z",
       "related_news_urls": [
-        "https://www.nbcphiladelphia.com/weather/stories-weather/storms-philadelphia-wind-rain-tornado-threat-new-jersey-delaware/4496202/",
-        "https://6abc.com/live-updates/funnel-clouds-hail-fallen-trees-severe-storms-strike-philadelphia-region/20036438/",
-        "https://www.inquirer.com/weather/hail-tornado-philadelphia-weekend-weather-forecast-cold-20261113.html"
+        "https://cis.org/Arthur/Why-Does-DHS-Secretary-Hate-Worksite-Enforcement",
+        "https://www.realclearpolicy.com/2026/11/12/why_does_the_dhs_secretary_hate_worksite_enforcement_1216503.html",
+        "https://www.cnn.com/2026/11/13/us/live-news/flights-ground-stop-faa"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqhw8okfibrH-qod3jiQKCrEFwr-gEW0OKDP7BJgm0J8aAVq0paickMgcX7xA",
-      "image_credit": "NBC10 Philadelphia",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQl_23CpACp95KQPKsEV_MMiNr34JTbvxp_j2Mi8bCBvfmPUn73PELW3dDhZH4",
+      "image_credit": "Center for Immigration Studies",
       "news": [
         {
-          "url": "https://www.nbcphiladelphia.com/weather/stories-weather/storms-philadelphia-wind-rain-tornado-threat-new-jersey-delaware/4496202/",
-          "title": "Tornadoes touch down in Del. and NJ as temperatures plummet",
-          "publisher": "NBC10 Philadelphia",
+          "url": "https://cis.org/Arthur/Why-Does-DHS-Secretary-Hate-Worksite-Enforcement",
+          "title": "Why Does the DHS Secretary Hate Worksite Enforcement?",
+          "publisher": "Center for Immigration Studies",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqhw8okfibrH-qod3jiQKCrEFwr-gEW0OKDP7BJgm0J8aAVq0paickMgcX7xA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQl_23CpACp95KQPKsEV_MMiNr34JTbvxp_j2Mi8bCBvfmPUn73PELW3dDhZH4"
         },
         {
-          "url": "https://6abc.com/live-updates/funnel-clouds-hail-fallen-trees-severe-storms-strike-philadelphia-region/20036438/",
-          "title": "2nd tornado confirmed in the Philadelphia region; cleanup continues from storms | LIVE UPDATES",
-          "publisher": "6abc Philadelphia",
+          "url": "https://www.realclearpolicy.com/2026/11/12/why_does_the_dhs_secretary_hate_worksite_enforcement_1216503.html",
+          "title": "Why Does the DHS Secretary Hate Worksite Enforcement?",
+          "publisher": "RealClearPolicy",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR36h67KW_23ZIM2hQEs8GQJSxMy3fdT_u0nT7-WNKQd83Cja-W20oi7r9EJ6c"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa3Pyb-u6uQT5HlIM5P_nhs32bmkNd3nFeSLAoRBOWMUi7slppfqsNrKqXcno"
         },
         {
-          "url": "https://www.inquirer.com/weather/hail-tornado-philadelphia-weekend-weather-forecast-cold-20261113.html",
-          "title": "Two tornadoes were confirmed from a rare storm that produced golf-ball size hailstones",
-          "publisher": "Inquirer.com",
+          "url": "https://www.cnn.com/2026/11/13/us/live-news/flights-ground-stop-faa",
+          "title": "Live updates: FAA issues nationwide ground stop for all flights",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrdNCA5ekH3u7HvCGTfwzdCxqX60iexz1s14GecNC3JNLX15LNJVK81iL8xZs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLmMo1cNfAW0b79RqIQs_qfVFL3F2qTKmFXvcESdjYVoOWzLyeKw8TpeyFE1E"
         }
       ]
     },
     {
-      "query": "cbs news",
+      "query": "mullin",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T22:10:00Z",
+      "related_news_urls": [
+        "https://abcnews.com/Politics/wireStory/ice-reports-record-high-immigration-arrests-deportations-trumps-138083036",
+        "https://www.bloomberg.com/news/articles/2026-11-12/ice-deported-record-483-000-people-in-past-year-under-trump",
+        "https://www.newsweek.com/ice-touts-record-arrest-numbers-days-after-trump-called-policy-too-tough-12705370"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqmTquJWhupTHaKqJvtQuIAL1Uwex0cnsC4nFSCrHRKtF9fzzQfjQmgDo4aFI",
+      "image_credit": "ABC News - Breaking News, Latest News and Videos",
+      "news": [
+        {
+          "url": "https://abcnews.com/Politics/wireStory/ice-reports-record-high-immigration-arrests-deportations-trumps-138083036",
+          "title": "ICE reports record-high immigration arrests and deportations since Trump's return to White House",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqmTquJWhupTHaKqJvtQuIAL1Uwex0cnsC4nFSCrHRKtF9fzzQfjQmgDo4aFI"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-12/ice-deported-record-483-000-people-in-past-year-under-trump",
+          "title": "ICE Deported Record 483,000 People in Past Year Under Trump",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTESK1FKxwiTr0A52im8dwTEg_qv2dXncBQFElNbhZaAvEKxNUJUsHlYvbTzPw"
+        },
+        {
+          "url": "https://www.newsweek.com/ice-touts-record-arrest-numbers-days-after-trump-called-policy-too-tough-12705370",
+          "title": "ICE Touts Record Arrest Numbers Days After Trump Called Policy ‘Too Tough’",
+          "publisher": "Newsweek",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAkAGH5gfv_1Xz0ZNmSGJZKELBS5hSSUiMfqbwcR57QkW_s52KZR8SHr2EqMQ"
+        }
+      ]
+    },
+    {
+      "query": "ksl news",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T22:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50462413/connelly-previews-week-11-texas-lsu",
+        "https://www.ksl.com/article/51645688/ksl-sports-pickem-staff-picks-for-week-11-of-college-football",
+        "https://www.cbssports.com/college-football/news/week-11-college-football-playoff-impact-games-usc-indiana-texas-lsu/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzUEgc3W4Q2SKinKuyA9svrsr1t9wrivf7I-TJTGj_Qc0lFEWoVrjmhqL4itM",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50462413/connelly-previews-week-11-texas-lsu",
+          "title": "Connelly previews Week 11 - 32 make-or-break showdowns",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzUEgc3W4Q2SKinKuyA9svrsr1t9wrivf7I-TJTGj_Qc0lFEWoVrjmhqL4itM"
+        },
+        {
+          "url": "https://www.ksl.com/article/51645688/ksl-sports-pickem-staff-picks-for-week-11-of-college-football",
+          "title": "KSL Sports Pick'em: Staff picks for Week 11 of college football",
+          "publisher": "KSL News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8bLIko_wgwzqXyldhZgul_XDcm32TwTBl__ra-sqhrINx8ZvHq5tKkYs7ccM"
+        },
+        {
+          "url": "https://www.cbssports.com/college-football/news/week-11-college-football-playoff-impact-games-usc-indiana-texas-lsu/",
+          "title": "Week 11 College Football Playoff impact games: USC-Indiana, Texas-LSU bring elimination consequences",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXmqgI6G_wqMdxGtTj1PhgQ4mz6GAizemeNO2qz57QAbykLg9QR-AHJ72zMgY"
+        }
+      ]
+    },
+    {
+      "query": "fox news",
+      "approx_searches": "50000+",
+      "published_at": "2026-11-13T22:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/11/us/politics/democrats-backlash-missing-hegseth-impeachment-vote.html",
+        "https://www.politico.com/news/2026/11/12/hegseth-democrats-impeachment-01161285",
+        "https://www.cnn.com/2026/11/10/politics/video/ebof-john-ullyot-hegseth-gop-impeachment-blocked"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSauyhXgUtTc39Zl-misa09qDVaKArL3Otnjdn-tpPnVst9q5l2QCpGc-6IopI",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/11/us/politics/democrats-backlash-missing-hegseth-impeachment-vote.html",
+          "title": "Democrats Face Backlash After Missing Hegseth Impeachment Vote",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSauyhXgUtTc39Zl-misa09qDVaKArL3Otnjdn-tpPnVst9q5l2QCpGc-6IopI"
+        },
+        {
+          "url": "https://www.politico.com/news/2026/11/12/hegseth-democrats-impeachment-01161285",
+          "title": "Hegseth’s future splits Dems",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTPrFfLs2xxMjadDfeESYHJatGHHu0n5crBKdOF2Bntjape9QesgpjUohrQbU"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/10/politics/video/ebof-john-ullyot-hegseth-gop-impeachment-blocked",
+          "title": "Hegseth’s former spokesman calls for resignation, says he should be impeached",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKXpkxH2GLPq6_YjU7itz7zUaPhPGTF2jXB1xHJrGPC7AOpQtQhYcjX6clGDg"
+        }
+      ]
+    },
+    {
+      "query": "markwayne mullin",
       "approx_searches": "2000+",
-      "published_at": "2026-11-13T21:40:00Z",
+      "published_at": "2026-11-13T22:00:00Z",
       "related_news_urls": [
-        "https://www.status.news/p/face-the-nation-margaret-brennan-mary-hager-anne-hsu",
-        "https://www.yahoo.com/entertainment/tv/articles/face-nation-shakeup-bari-weiss-134456508.html",
-        "https://www.poynter.org/commentary/2026/mary-hager-leaves-cbs-face-nation/"
+        "https://oklahomawatch.org/2026/11/12/were-20-million-people-illegally-released-into-the-united-states-under-the-biden-administration-as-secretary-markwayne-mullin-claimed/",
+        "https://www.theaustralian.com.au/news/shocking-border-crisis-exposed-as-biden-administration-accused-of-looking-the-other-way/video/e6958a7c49e4abc7238d22624187758a",
+        "https://www.weeklytimesnow.com.au/news/national/immigrant-insurrection-us-feeling-the-repercussions-of-bidens-open-borders/video/35fedadf21ac8edea77b71af692152c0"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRt4_-REvFWY95dMvhCM6VrcfNCYMU93SPfz5PwccyuVqETsSGVyh2mnokzyI0",
-      "image_credit": "Status",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2THf1lvQCY9HYfHQhfuCBGVuBjC3XjKQ0J1OHjfnm2atSvJi1sC2sTxj9VoI",
+      "image_credit": "Oklahoma Watch",
       "news": [
         {
-          "url": "https://www.status.news/p/face-the-nation-margaret-brennan-mary-hager-anne-hsu",
-          "title": "Facing the Exits",
-          "publisher": "Status",
+          "url": "https://oklahomawatch.org/2026/11/12/were-20-million-people-illegally-released-into-the-united-states-under-the-biden-administration-as-secretary-markwayne-mullin-claimed/",
+          "title": "Were 20 million people illegally released into the United States under the Biden Administration, as Secretary Markwayne Mullin claimed?",
+          "publisher": "Oklahoma Watch",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRt4_-REvFWY95dMvhCM6VrcfNCYMU93SPfz5PwccyuVqETsSGVyh2mnokzyI0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2THf1lvQCY9HYfHQhfuCBGVuBjC3XjKQ0J1OHjfnm2atSvJi1sC2sTxj9VoI"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/face-nation-shakeup-bari-weiss-134456508.html",
-          "title": "‘Face the Nation’ Shakeup: Bari Weiss Reportedly Considered Firing Margaret Brennan",
+          "url": "https://www.theaustralian.com.au/news/shocking-border-crisis-exposed-as-biden-administration-accused-of-looking-the-other-way/video/e6958a7c49e4abc7238d22624187758a",
+          "title": "‘Shocking’ border crisis exposed as Biden administration accused of looking the other way",
+          "publisher": "The Australian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGKre64SXbA7zec-vhk3LPHym3JCpPk7lwdVHIJn6-d2WjIEzgucU13MtkVNM"
+        },
+        {
+          "url": "https://www.weeklytimesnow.com.au/news/national/immigrant-insurrection-us-feeling-the-repercussions-of-bidens-open-borders/video/35fedadf21ac8edea77b71af692152c0",
+          "title": "IMMIGRANT INSURRECTION: US feeling the repercussions of Biden’s open borders",
+          "publisher": "The Weekly Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThTTUFyQYnZpWud4bEfeCfiALYHbZ0WPIUzfGJaCjntUHmzfBvgDbbovG8mmc"
+        }
+      ]
+    },
+    {
+      "query": "nbc news",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-13T22:00:00Z",
+      "related_news_urls": [
+        "https://pagesix.com/2026/11/12/entertainment/savannah-guthrie-re-signs-with-today-during-toughest-personal-year-following-mom-nancys-disappearance/",
+        "https://people.com/savannah-guthrie-extends-contract-with-nbc-news-after-15-years-12252115",
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/savannah-guthrie-makes-tough-decision-174521893.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREdJ1lLoLYtP0yUebv8i3eANhN8yC7I5Xgke0vwIthjlqtRA9AZTTAelbVZjU",
+      "image_credit": "Page Six",
+      "news": [
+        {
+          "url": "https://pagesix.com/2026/11/12/entertainment/savannah-guthrie-re-signs-with-today-during-toughest-personal-year-following-mom-nancys-disappearance/",
+          "title": "Savannah Guthrie re-signs with ‘Today’ during toughest personal year following mom Nancy’s disappearance",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREdJ1lLoLYtP0yUebv8i3eANhN8yC7I5Xgke0vwIthjlqtRA9AZTTAelbVZjU"
+        },
+        {
+          "url": "https://people.com/savannah-guthrie-extends-contract-with-nbc-news-after-15-years-12252115",
+          "title": "Savannah Guthrie Extends Contract with NBC News After 15 Years with the Network",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTC24CQyZbbnrlQN9Mo6heP4tY4MRgz6vTgZjGVZM4Ap79KJdardcXjGUF2cIE"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/savannah-guthrie-makes-tough-decision-174521893.html",
+          "title": "Savannah Guthrie makes tough decision 9 months after mom’s disappearance",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsFhMhzhlViUM3dJPNw30xMAtnmQuCndd971IMmCw31maq1gmOxvL37S1TI44"
-        },
-        {
-          "url": "https://www.poynter.org/commentary/2026/mary-hager-leaves-cbs-face-nation/",
-          "title": "Opinion | Face the changes: Two top leaders are leaving CBS News’ ‘Face the Nation’",
-          "publisher": "Poynter",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8zSRRE3v69iuomtD2FpJUoFdiL834Z2JpfFlsh8p67yUC3_wk_ggh6ZcOt_k"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRK6DOp0ha8SZhJcj_05mFgBk-5BKJkttm9nXFHoD1s_SzRh4AR_r0Mc7dBA_4"
         }
       ]
     },
     {
-      "query": "aryna sabalenka",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T21:40:00Z",
-      "related_news_urls": [
-        "https://www.wtatennis.com/news/4607998/andreeva-wins-45-of-final-55-points-to-rout-sabalenka-reach-first-fage-wta-finals-semifinal",
-        "https://www.bbc.com/sport/tennis/articles/cq1md03gz0zvo",
-        "https://sports.yahoo.com/articles/jessica-pegula-created-monster-fans-090632253.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvGnCx0ifzofPM4LJys8lZZwORpEbEEbIO7_fA6hFOUd_FSWdGtHNAoOWXvBg",
-      "image_credit": "WTA Tennis",
-      "news": [
-        {
-          "url": "https://www.wtatennis.com/news/4607998/andreeva-wins-45-of-final-55-points-to-rout-sabalenka-reach-first-fage-wta-finals-semifinal",
-          "title": "Andreeva uses early anger as fuel, routs Sabalenka to top FAGE WTA Finals Group 2",
-          "publisher": "WTA Tennis",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvGnCx0ifzofPM4LJys8lZZwORpEbEEbIO7_fA6hFOUd_FSWdGtHNAoOWXvBg"
-        },
-        {
-          "url": "https://www.bbc.com/sport/tennis/articles/cq1md03gz0zvo",
-          "title": "WTA Finals: Mirra Andreeva thrashes Aryna Sabalenka, Elina Svitolina beats Karolina Muchova",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWeVuqJduTTS8yqKFZDXKxVweYXQiy4R0UoCzo924AspEk-tSgnBqf7S3I4hw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/jessica-pegula-created-monster-fans-090632253.html",
-          "title": "“Jessica Pegula Has Created A Monster” – Fans React After Mirra Andreeva Stuns Aryna Sabalenka With 6-0 Bagel At WTA Finals",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_qux7zNEPrHPoJtCZMfb23U6E84zLWAzzXZl70GhZKc4h5XFfcsdcipeDjRg"
-        }
-      ]
-    },
-    {
-      "query": "sabalenka",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T21:40:00Z",
-      "related_news_urls": [
-        "https://www.wtatennis.com/news/4608276/fage-wta-finals-day-6-preview-aryna-sabalenka-elina-svitolina-play-for-a-semifinals-berth",
-        "https://tv.kyivstar.ua/en/event/6af6f93751cb8a46c2bd951c-2026-aryna-sabalenka-elina-svitolina",
-        "https://www.mlive.com/tv/2026/11/where-to-watch-aryna-sabalenka-vs-elina-svitolina-wta-finals-tennis-for-free-today.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOLSHIcWBFA9hv-lgNx0e3PmfB1dwTsL-r2CtYOVuMUtU1lruGpdiBY4gFbao",
-      "image_credit": "WTA Tennis",
-      "news": [
-        {
-          "url": "https://www.wtatennis.com/news/4608276/fage-wta-finals-day-6-preview-aryna-sabalenka-elina-svitolina-play-for-a-semifinals-berth",
-          "title": "FAGE WTA Finals Day 6 preview: Sabalenka, Svitolina play for a semifinals berth",
-          "publisher": "WTA Tennis",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOLSHIcWBFA9hv-lgNx0e3PmfB1dwTsL-r2CtYOVuMUtU1lruGpdiBY4gFbao"
-        },
-        {
-          "url": "https://tv.kyivstar.ua/en/event/6af6f93751cb8a46c2bd951c-2026-aryna-sabalenka-elina-svitolina",
-          "title": "Aryna Sabalenka - Elina Svitolina, 2026: watch sports online in high quality on Kyivstar TV",
-          "publisher": "Kyivstar TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyqS6AeQBWO2byru97vGE77Maqy50pMv7pxoJgmCW-pTsTCrHV4KYfezTW6PI"
-        },
-        {
-          "url": "https://www.mlive.com/tv/2026/11/where-to-watch-aryna-sabalenka-vs-elina-svitolina-wta-finals-tennis-for-free-today.html",
-          "title": "Where to watch Aryna Sabalenka vs. Elina Svitolina WTA Finals tennis for free today",
-          "publisher": "MLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuJgGSdqspQ_vbAEWPLjq56jjKUniVI54DJGWrK1YFZvE8V_SLG_WKq3O1IfQ"
-        }
-      ]
-    },
-    {
-      "query": "cnn.com",
+      "query": "united airlines",
       "approx_searches": "5000+",
-      "published_at": "2026-11-13T21:40:00Z",
+      "published_at": "2026-11-13T22:00:00Z",
       "related_news_urls": [
-        "https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12/",
-        "https://www.cnn.com/2026/11/13/politics/jensen-huang-us-intelligence",
-        "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+        "https://www.reuters.com/legal/litigation/jetblue-president-says-airlines-should-follow-customers-lead-ai-booking-agents-2026-11-12/",
+        "https://www.wsj.com/tech/ai/united-airlines-is-banning-ai-bots-from-booking-flights-5b514b38",
+        "https://travel.yahoo.com/flights/article/united-bans-ai-agent-from-booking-flights-210506013.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSzt0GdsS1pkRoTjQ5aPJXnBoSZFKuTZeLr1bWk67pjiWiArjr1yYSD9nvZVo",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1q1pbFRXOEAFxre9TYdEaxHbc9LgYQxU3ObxgSypJz9VbuAiK5qo0Vu5looo",
       "image_credit": "Reuters",
       "news": [
         {
-          "url": "https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12/",
-          "title": "EXCLUSIVE: Former Nvidia CEO Huang had a relationship with a second employee, sources say",
+          "url": "https://www.reuters.com/legal/litigation/jetblue-president-says-airlines-should-follow-customers-lead-ai-booking-agents-2026-11-12/",
+          "title": "JetBlue president says airlines should follow customers' lead on AI booking agents",
           "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSzt0GdsS1pkRoTjQ5aPJXnBoSZFKuTZeLr1bWk67pjiWiArjr1yYSD9nvZVo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1q1pbFRXOEAFxre9TYdEaxHbc9LgYQxU3ObxgSypJz9VbuAiK5qo0Vu5looo"
         },
         {
-          "url": "https://www.cnn.com/2026/11/13/politics/jensen-huang-us-intelligence",
-          "title": "Intel intercepts implicating Jensen Huang in affair sparked classified Rubio memo",
-          "publisher": "CNN",
+          "url": "https://www.wsj.com/tech/ai/united-airlines-is-banning-ai-bots-from-booking-flights-5b514b38",
+          "title": "Exclusive | United Airlines Is Banning AI Bots From Booking Flights",
+          "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPCZ9Hm0ll-EJLgGUOleDg9fi2e7TgYKeE79LPyj5T4fKl1E-R4H8vkdicqfs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt0-798y4UFdsMiWZhKngFIIOuZJGEkUgtgUx6u2hlLgqCuQdrjoxS6sGeyjQ"
         },
         {
-          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
-          "title": "NVIDIA Announces CEO Transition",
-          "publisher": "NVIDIA Newsroom",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8qDUGyx7H7uiXEnq5EQILYq0dJjxyQRhS2zpsVdoBZCM1RxEiYeJ_NZ_PfHQ"
-        }
-      ]
-    },
-    {
-      "query": "top news",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T21:40:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/10/europe/russia-ukraine-shelter-bomb-strike-intl",
-        "https://www.pravda.com.ua/eng/news/2026/11/13/8062645/",
-        "https://www.yahoo.com/news/world/articles/russian-attack-zaporizhzhia-13-november-163100367.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJqrWg5sdhhA6ZwYTWWH6KyyEpK9iw8E9pfBVq3tq6WPSrAWy-InTUjLuFKK4",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/10/europe/russia-ukraine-shelter-bomb-strike-intl",
-          "title": "New Ukrainian footage shows how a Russian strike turned a civilian shelter into a mass grave",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJqrWg5sdhhA6ZwYTWWH6KyyEpK9iw8E9pfBVq3tq6WPSrAWy-InTUjLuFKK4"
-        },
-        {
-          "url": "https://www.pravda.com.ua/eng/news/2026/11/13/8062645/",
-          "title": "Russians attack Zaporizhzhia: 17-year-old boy killed, four people rescued from under rubble – photos",
-          "publisher": "Українська правда",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZafWnS96BclvafzfSMKaxC1GnPAxk-dzskJ590nrSjp4sB3j3qlxhteAnJzU"
-        },
-        {
-          "url": "https://www.yahoo.com/news/world/articles/russian-attack-zaporizhzhia-13-november-163100367.html",
-          "title": "Russian attack on Zaporizhzhia on 13 November: number of injured rises to 50, including 8 children – photos",
+          "url": "https://travel.yahoo.com/flights/article/united-bans-ai-agent-from-booking-flights-210506013.html",
+          "title": "Using an AI agent to buy your flights? This airline is banning them from booking on your behalf.",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXxWe5AIY0ksPhk6_S5xCHd6v1jd_4Sp3i5EBGkEE2KqTiRbXCMeA-YwJ9H-Y"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaZJuI_Q3B1M97Jz_-5fPB2PuTttWpu5RQzy4HhwT-RaOIZSc3CnRdXTPy3vE"
         }
       ]
     },
     {
-      "query": "seatac airport",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T21:40:00Z",
+      "query": "noaa",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-13T22:00:00Z",
       "related_news_urls": [
-        "https://www.portseattle.org/news/more-parking-options-now-available-ahead-thanksgiving-travel-sea",
-        "https://www.fox13seattle.com/news/sea-tac-airport-adds-reserved-parking-capacity",
-        "https://deeparrival.com/news/sea-tac-reserved-parking-50-percent-more-holidays-2026/"
+        "https://www.bbc.com/weather/articles/c6pvg22k2w2do",
+        "https://www.sfgate.com/weather/article/new-el-nino-forecast-22523911.php",
+        "https://www.washingtonpost.com/weather/2026/11/12/what-165-days-record-ocean-temperatures-will-mean-extreme-winter-weather/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Kd68SgTbl93e0IGS06dkDAjUK9xTQVANFt287qHG5wA4eXPUBDI1S8iNk3Q",
-      "image_credit": "Port of Seattle",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdZI7ZNDaMWuw6H2yyZY0lAKwjCYpOQ-3TrEmravFzDBSDkBtLw1njah2HW8o",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.portseattle.org/news/more-parking-options-now-available-ahead-thanksgiving-travel-sea",
-          "title": "More Parking Options Now Available Ahead of Thanksgiving Travel at SEA",
-          "publisher": "Port of Seattle",
+          "url": "https://www.bbc.com/weather/articles/c6pvg22k2w2do",
+          "title": "What could El Niño mean for winter weather in the US and Canada?",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Kd68SgTbl93e0IGS06dkDAjUK9xTQVANFt287qHG5wA4eXPUBDI1S8iNk3Q"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdZI7ZNDaMWuw6H2yyZY0lAKwjCYpOQ-3TrEmravFzDBSDkBtLw1njah2HW8o"
         },
         {
-          "url": "https://www.fox13seattle.com/news/sea-tac-airport-adds-reserved-parking-capacity",
-          "title": "SEA airport adds additional reserved parking",
-          "publisher": "FOX 13 Seattle",
+          "url": "https://www.sfgate.com/weather/article/new-el-nino-forecast-22523911.php",
+          "title": "What the new 'astonishing' El Niño forecast means for California",
+          "publisher": "SFGATE",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7reji3dTb4W2wsA79Waw493M1WpTxelZOmKwtqVoJBM_fwcHF4VskQFkVVyI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrtjKcz4Bfa5FqwytuPDAgRuLfhG-VPsIZwJF3etNK92Gr-kx7s2m2D_r0bqI"
         },
         {
-          "url": "https://deeparrival.com/news/sea-tac-reserved-parking-50-percent-more-holidays-2026/",
-          "title": "Sea-Tac Airport Adds 50% More Reserved Parking: Book Holidays",
-          "publisher": "deeparrival.com",
+          "url": "https://www.washingtonpost.com/weather/2026/11/12/what-165-days-record-ocean-temperatures-will-mean-extreme-winter-weather/",
+          "title": "What 165 days of record ocean temperatures will mean for extreme winter weather",
+          "publisher": "The Washington Post",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKHhiCoVon1KAvnpVzUKz5LBInDMqKdSHfErYpFzZgExOhhYXa0irg18UrddE"
-        }
-      ]
-    },
-    {
-      "query": "cbn",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T21:40:00Z",
-      "related_news_urls": [
-        "https://business.inquirer.net/620799/abs-cbn-9-mo-losses-widened-to-p2-95b",
-        "https://insiderph.com/abs-cbn-narrows-q3-loss-but-deficit-puts-fresh-capital-in-focus",
-        "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN46T240:0-abs-cbn-corporation-reports-9m-consolidated-revenues-of-10-51-billion-pesos/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUwkdKHIn-vDJIrN3NLflmGBnp24in9CVKDEpRuaZFcCA_lmgPXqEjOOqkZIg",
-      "image_credit": "Inquirer.net",
-      "news": [
-        {
-          "url": "https://business.inquirer.net/620799/abs-cbn-9-mo-losses-widened-to-p2-95b",
-          "title": "ABS-CBN 9-mo losses widened to P2.95B",
-          "publisher": "Inquirer.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUwkdKHIn-vDJIrN3NLflmGBnp24in9CVKDEpRuaZFcCA_lmgPXqEjOOqkZIg"
-        },
-        {
-          "url": "https://insiderph.com/abs-cbn-narrows-q3-loss-but-deficit-puts-fresh-capital-in-focus",
-          "title": "ABS-CBN narrows Q3 loss but deficit puts fresh capital in focus",
-          "publisher": "InsiderPH",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgE3LgSqzxhh-ABEe16VqkgHDq3wnvUASwWMgn3CY-ev6dvdAzUs5IiIrMF54"
-        },
-        {
-          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN46T240:0-abs-cbn-corporation-reports-9m-consolidated-revenues-of-10-51-billion-pesos/",
-          "title": "ABS-CBN Corporation Reports 9M Consolidated Revenues Of 10.51 Billion Pesos",
-          "publisher": "TradingView",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
-        }
-      ]
-    },
-    {
-      "query": "reddit news",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T21:40:00Z",
-      "related_news_urls": [
-        "https://redditinc.com/news/introducing-reddit-reviews",
-        "https://techcrunch.com/2026/11/10/reddit-is-turning-user-conversations-into-ai-powered-product-reviews/",
-        "https://finance.yahoo.com/media-advertising/articles/reddit-finds-strategy-cash-candor-134428736.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTDsvKdsO2vUYPAOSHwy1-qiAk5Z1wdkYVE8QULWY6P62cPUzD8V8XGkg4mc",
-      "image_credit": "Reddit Inc Homepage",
-      "news": [
-        {
-          "url": "https://redditinc.com/news/introducing-reddit-reviews",
-          "title": "Introducing Reddit Reviews",
-          "publisher": "Reddit Inc Homepage",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvTDsvKdsO2vUYPAOSHwy1-qiAk5Z1wdkYVE8QULWY6P62cPUzD8V8XGkg4mc"
-        },
-        {
-          "url": "https://techcrunch.com/2026/11/10/reddit-is-turning-user-conversations-into-ai-powered-product-reviews/",
-          "title": "Reddit is turning user conversations into AI-powered product reviews",
-          "publisher": "TechCrunch",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkeWtMrbksHhkOb_rsWLjVASC7okosGoQ_IlSoFEusF3ZDqNDMJaAFqDT1yKo"
-        },
-        {
-          "url": "https://finance.yahoo.com/media-advertising/articles/reddit-finds-strategy-cash-candor-134428736.html",
-          "title": "Reddit Finds Strategy To Cash In On Candor",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXYQwE3dUFsin5-rWuTRJ3JStM9OPAS5GO7TW21Fx2dabbXrMA86-Q4jXaMRM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6qZN_Bm-wGNWNh7Q3RhPtpM_esjV4Jh7wnvodvJM4JSdqrRcQOP3o49ZHFnw"
         }
       ]
     }
