@@ -3,17 +3,149 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T18:31:24.836038Z",
+  "checked_at": "2026-11-13T19:01:31.450954Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "egypt vs malawi",
+      "query": "did aspyn ovard lose her baby",
       "approx_searches": "500+",
+      "published_at": "2026-11-13T18:30:00Z",
+      "related_news_urls": [
+        "https://www.eonline.com/news/1437669/mormon-wives-aspyn-ovards-daughter-diagnosed-with-terminal-cancer",
+        "https://extratv.com/2026/11/12/mormon-wives-oc-star-aspyn-ovard-reveals-daughter-s-terminal-cancer-diagnosis/",
+        "https://www.yahoo.com/entertainment/celebrity/article/aspyn-ovards-throuple-is-only-part-of-her-story-mormon-wives-oc-shows-the-heartbreak-behind-her-new-chapter-in-life-213011704.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGfEaR3aAA55Z11kAvf_J0RM2Phsc7vMWf9yPCQ932sqfsgAgbSxd9q6xLmxI",
+      "image_credit": "E! News",
+      "news": [
+        {
+          "url": "https://www.eonline.com/news/1437669/mormon-wives-aspyn-ovards-daughter-diagnosed-with-terminal-cancer",
+          "title": "Mormon Wives ' Aspyn Ovard Shares Daughter's Terminal Cancer Diagnosis",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGfEaR3aAA55Z11kAvf_J0RM2Phsc7vMWf9yPCQ932sqfsgAgbSxd9q6xLmxI"
+        },
+        {
+          "url": "https://extratv.com/2026/11/12/mormon-wives-oc-star-aspyn-ovard-reveals-daughter-s-terminal-cancer-diagnosis/",
+          "title": "‘Mormon Wives: OC’ Star Aspyn Ovard Reveals Daughter’s Terminal Cancer Diagnosis",
+          "publisher": "Extra",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8DbZKKQLpSIGEGhH__R_4_AlHNquQSOcCoTMzp4u1KwW6uEWYyUQ2VehFDbA"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/article/aspyn-ovards-throuple-is-only-part-of-her-story-mormon-wives-oc-shows-the-heartbreak-behind-her-new-chapter-in-life-213011704.html",
+          "title": "Aspyn Ovard's throuple is only part of her story. 'Mormon Wives: OC' shows the heartbreak behind her new chapter in life.",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdK7-ePpP34WMVbDyq8nDs2vsYrQ9F2gAH-P7y8ZbLYkvOGSpAnmXElFUNpug"
+        }
+      ]
+    },
+    {
+      "query": "gerry griffith arista records vp",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T18:30:00Z",
+      "related_news_urls": [
+        "https://www.billboard.com/pro/gerry-griffith-dead-at-87/",
+        "https://parade.com/news/gerry-griffith-the-man-who-discovered-whitney-houston-dies-at-87"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_010cNIB33ixiGExG2BJBq4oRP9nI4cmB1tivwfj7At6u13ZZWu1IBNwTo08",
+      "image_credit": "Billboard",
+      "news": [
+        {
+          "url": "https://www.billboard.com/pro/gerry-griffith-dead-at-87/",
+          "title": "Gerry Griffith, Whitney Houston Discoverer, Dead at 87",
+          "publisher": "Billboard",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_010cNIB33ixiGExG2BJBq4oRP9nI4cmB1tivwfj7At6u13ZZWu1IBNwTo08"
+        },
+        {
+          "url": "https://parade.com/news/gerry-griffith-the-man-who-discovered-whitney-houston-dies-at-87",
+          "title": "Gerry Griffith, the Man Who Discovered Whitney Houston, Dies at 87",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNW2o96F69rpkx3VIkvRu2hXAGGssh4QBhzNzy0Xch3SKvh2wIJZZlyTg42cw"
+        }
+      ]
+    },
+    {
+      "query": "pentagon 90 day grid warning",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-13T18:20:00Z",
+      "related_news_urls": [
+        "https://thehill.com/opinion/national-security/6213835-iran-cyberattack-us-readiness/",
+        "https://themetropolitan.metrostate.edu/is-a-90-day-blackout-coming-what-the-military-plan-actually-means/",
+        "https://fortune.com/2026/11/08/pentagon-fortress-critical-minerals-stockpile-tungsten-rare-earth/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGEmyoLgyJhP-SOB5OZDCpvAJTZLn0zpUPDMt8fa3Bu5Qzf8vHmToR3hcqMSg",
+      "image_credit": "The Hill",
+      "news": [
+        {
+          "url": "https://thehill.com/opinion/national-security/6213835-iran-cyberattack-us-readiness/",
+          "title": "Stockpiling for disaster: What does the Pentagon know that it isn’t telling us?",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGEmyoLgyJhP-SOB5OZDCpvAJTZLn0zpUPDMt8fa3Bu5Qzf8vHmToR3hcqMSg"
+        },
+        {
+          "url": "https://themetropolitan.metrostate.edu/is-a-90-day-blackout-coming-what-the-military-plan-actually-means/",
+          "title": "Is a 90-Day Blackout Coming? What the Military Plan Actually Means -",
+          "publisher": "Metro State University",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQG89sX4UaTu5hERnkCuvaqmYNS0DKFNxPQ86C-wYSl5-fMvnm4DB6IVBMZ7Cw"
+        },
+        {
+          "url": "https://fortune.com/2026/11/08/pentagon-fortress-critical-minerals-stockpile-tungsten-rare-earth/",
+          "title": "'On par with what the DoD pursued during the Cold War': Pentagon’s war stockpile plan hits a minerals wall",
+          "publisher": "Fortune",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaHqYbDRWnrgD9KyTxiOAFiq7Dpa-3StAoziiJ96j2Y6WfMFmy-LF5h-DNMo8"
+        }
+      ]
+    },
+    {
+      "query": "mlb free agency",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T18:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mlb/story/_/id/50461703/free-agency-offseason-2026-27-gm-meetings-lessons",
+        "https://www.seattletimes.com/sports/mariners/here-are-8-seattle-mariners-trade-targets-to-upgrade-the-infield/",
+        "https://www.latimes.com/sports/dodgers/story/2026-11-10/mlb-gm-meetings-dodgers-brandon-gomes"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiSyTfRYWCQ3JPPlN692oOwNwjjElkM1QoNN3xCnjgEreUguk3a4ylfRwoJs8",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mlb/story/_/id/50461703/free-agency-offseason-2026-27-gm-meetings-lessons",
+          "title": "What's new in free agency? Lessons from 2026 MLB GM meetings",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiSyTfRYWCQ3JPPlN692oOwNwjjElkM1QoNN3xCnjgEreUguk3a4ylfRwoJs8"
+        },
+        {
+          "url": "https://www.seattletimes.com/sports/mariners/here-are-8-seattle-mariners-trade-targets-to-upgrade-the-infield/",
+          "title": "Here are 8 trade targets for Seattle Mariners to upgrade the infield",
+          "publisher": "The Seattle Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXdxf5IL1lq-di3LpTQ1xUaUFQYaAGlGncKzWxl7ZmVEzNt7TsYTSeXQDurAE"
+        },
+        {
+          "url": "https://www.latimes.com/sports/dodgers/story/2026-11-10/mlb-gm-meetings-dodgers-brandon-gomes",
+          "title": "Dodgers' Brandon Gomes shares updates on Tarik Skubal, Shoki Oda, Josue De Paula and more",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAG325YUkX54fVY55RfcZ6PtRNGVb7q1RFII6rNVu0cjRPeKk9BMEKHGKTk30"
+        }
+      ]
+    },
+    {
+      "query": "egypt vs malawi",
+      "approx_searches": "1000+",
       "published_at": "2026-11-13T18:10:00Z",
       "related_news_urls": [
         "https://www.bbc.com/sport/football/live/cq8jz443j2pxt",
         "https://www.coinbase.com/en-au/predictions/event/KXAFCON1H-26NOV14UGABOT",
-        "https://www.egyptindependent.com/egypt-faces-malawi-friday-in-crucial-2027-afcon-qualifier/"
+        "https://www.reutersconnect.com/item/africa-cup-of-nations-qualifiers-group-b-egypt-v-malawi/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkQxRklYSVk"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
       "image_credit": "BBC",
@@ -33,11 +165,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtlv4wEEHi8uXNCTHBBIdZ2rUZtVp8OMhJgUFnLMqb2UJJQ1_wRphySbCj_fc"
         },
         {
-          "url": "https://www.egyptindependent.com/egypt-faces-malawi-friday-in-crucial-2027-afcon-qualifier/",
-          "title": "Egypt faces Malawi Friday in crucial 2027 AFCON qualifier",
-          "publisher": "Egypt Independent",
+          "url": "https://www.reutersconnect.com/item/africa-cup-of-nations-qualifiers-group-b-egypt-v-malawi/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkQxRklYSVk",
+          "title": "Licensable picture: Africa Cup of Nations - Qualifiers - Group B - Egypt v Malawi",
+          "publisher": "Reuters Connect",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZIt-khfvD_LEkRLO8wmM0mf7mA0qIR9LfW5lSfb7tgFPI-d75xixovdKUS8A"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmqWM5KYeMo1zBA7j7BOVqF-IdQ0MMU9H6kFnhel0eIZQsZ6_-gIpM9dTSgPM"
         }
       ]
     },
@@ -46,19 +178,19 @@
       "approx_searches": "1000+",
       "published_at": "2026-11-13T18:10:00Z",
       "related_news_urls": [
-        "https://www.washingtonpost.com/weather/2026/11/12/what-165-days-record-ocean-temperatures-will-mean-extreme-winter-weather/",
+        "https://www.latimes.com/california/story/2026-11-13/fierce-debate-over-how-bad-californias-el-nino-winter-will-be",
         "https://www.sfgate.com/weather/article/new-el-nino-forecast-22523911.php",
-        "https://www.wsj.com/us-news/climate-environment/see-what-the-super-el-nino-means-for-this-years-ski-season-f233a1d6"
+        "https://www.cbsnews.com/news/el-nino-effects-weather-worldwide/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6qZN_Bm-wGNWNh7Q3RhPtpM_esjV4Jh7wnvodvJM4JSdqrRcQOP3o49ZHFnw",
-      "image_credit": "The Washington Post",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIyZC8Cf0zwOkQmtFenA8SvVK30ZEjXqdLhxDh2PZtI0e1A_7pAch5rqra8qE",
+      "image_credit": "Los Angeles Times",
       "news": [
         {
-          "url": "https://www.washingtonpost.com/weather/2026/11/12/what-165-days-record-ocean-temperatures-will-mean-extreme-winter-weather/",
-          "title": "What 165 days of record ocean temperatures will mean for extreme winter weather",
-          "publisher": "The Washington Post",
+          "url": "https://www.latimes.com/california/story/2026-11-13/fierce-debate-over-how-bad-californias-el-nino-winter-will-be",
+          "title": "Fearmongering or fair warning? A fierce debate over how bad California's El Niño winter will get",
+          "publisher": "Los Angeles Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6qZN_Bm-wGNWNh7Q3RhPtpM_esjV4Jh7wnvodvJM4JSdqrRcQOP3o49ZHFnw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIyZC8Cf0zwOkQmtFenA8SvVK30ZEjXqdLhxDh2PZtI0e1A_7pAch5rqra8qE"
         },
         {
           "url": "https://www.sfgate.com/weather/article/new-el-nino-forecast-22523911.php",
@@ -68,52 +200,52 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrtjKcz4Bfa5FqwytuPDAgRuLfhG-VPsIZwJF3etNK92Gr-kx7s2m2D_r0bqI"
         },
         {
-          "url": "https://www.wsj.com/us-news/climate-environment/see-what-the-super-el-nino-means-for-this-years-ski-season-f233a1d6",
-          "title": "See What the ‘Super El Niño’ Means for This Year’s Ski Season",
-          "publisher": "WSJ",
+          "url": "https://www.cbsnews.com/news/el-nino-effects-weather-worldwide/",
+          "title": "What to know as \"super El Niño\" conditions take shape",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrM68N-1H6Vfx0PZDyKj9R_HnDxhYjxZaOpOm7YU2HrGEvmjyotyEbfa8yaQY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR94qz78IwHUPUI2vb_qvrMf___2QyOtU0Fo_3nawB1H4ShHgs-p9dRvWP5mBg"
         }
       ]
     },
     {
       "query": "rockstar gta vi",
-      "approx_searches": "2000+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-13T18:00:00Z",
       "related_news_urls": [
-        "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
-        "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/",
-        "https://gameinformer.com/2026/11/10/grand-theft-auto-vi-will-run-at-30-fps-on-all-consoles-but-ps5-pro-will-feature-improved"
+        "https://www.bloomberg.com/news/newsletters/2026-11-13/ahead-of-grand-theft-auto-vi-rockstar-votes-on-unions",
+        "https://www.theregister.com/software/2026/11/12/rockstar-workers-vote-on-union-recognition-as-gta-vi-launch-looms/5309319",
+        "https://morningstaronline.co.uk/article/iwgb-launch-historic-recognition-ballot-rockstar"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk",
-      "image_credit": "XBOX Wire",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiBxKOF4xV_fnE-CmnuOo9fnoLnlfhm7OM2TO3cvGE7kqPJaE04P0uCqTpUKc",
+      "image_credit": "Bloomberg.com",
       "news": [
         {
-          "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
-          "title": "Grand Theft Auto VI Comes to XBOX One and XBOX Series X|S Through XBOX Cloud Gaming on November 19",
-          "publisher": "XBOX Wire",
+          "url": "https://www.bloomberg.com/news/newsletters/2026-11-13/ahead-of-grand-theft-auto-vi-rockstar-votes-on-unions",
+          "title": "Ahead of ‘Grand Theft Auto VI,’ Rockstar Staff Vote on Union Effort",
+          "publisher": "Bloomberg.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiBxKOF4xV_fnE-CmnuOo9fnoLnlfhm7OM2TO3cvGE7kqPJaE04P0uCqTpUKc"
         },
         {
-          "url": "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/",
-          "title": "Pre-load Grand Theft Auto VI on PS5 starting today",
-          "publisher": "PlayStation.Blog",
+          "url": "https://www.theregister.com/software/2026/11/12/rockstar-workers-vote-on-union-recognition-as-gta-vi-launch-looms/5309319",
+          "title": "Rockstar workers vote on union recognition as GTA VI launch looms",
+          "publisher": "The Register",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmQPZtB1cfmtJ8v-9159sSJpw2Cr8v495zAc5tM6Spqsus45lZErGPllHDXDY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQqRd6k9vmpbexSQqQZ7Zrhsk9VtCXjmJPf_uSCQaqIn0BLkG63v-PDfPR5r8"
         },
         {
-          "url": "https://gameinformer.com/2026/11/10/grand-theft-auto-vi-will-run-at-30-fps-on-all-consoles-but-ps5-pro-will-feature-improved",
-          "title": "Grand Theft Auto VI Will Run At 30 FPS On All Consoles, But PS5 Pro Will Feature 'Improved Clarity' And Ray-Traced Shadows",
-          "publisher": "Game Informer",
+          "url": "https://morningstaronline.co.uk/article/iwgb-launch-historic-recognition-ballot-rockstar",
+          "title": "IWGB launches historic recognition ballot at GTA VI developer Rockstar",
+          "publisher": "Morning Star | The People’s Daily",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTg4MNauIMtaoVB-7za8zRuuG4BGC14xtWW6162wz3dOedYcINsN6s4SzA_pr4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGlit4M0N6hDBr_sF6bXfqNsDcCpl5JYEAl3bMGf8I2mO4_i_KMybq1JQJdx0"
         }
       ]
     },
     {
       "query": "willson contreras",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-13T18:00:00Z",
       "related_news_urls": [
         "https://www.bostonglobe.com/2026/11/11/sports/red-sox-gm-meetings/",
@@ -151,13 +283,20 @@
       "approx_searches": "500+",
       "published_at": "2026-11-13T18:00:00Z",
       "related_news_urls": [
+        "https://www.cbssports.com/fantasy/football/news/cardinals-elijah-higgins-signing-extension-through-2029/",
         "https://www.azcardinals.com/news/cardinals-extend-tight-end-elijah-higgins",
-        "https://www.thefantasyfootballers.com/news/647058/elijah-higgins-two-grabs-versus-seattle/",
-        "https://nfltraderumors.co/cardinals-sign-te-elijah-higgins-to-three-year-extension/"
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/cardinals-te-elijah-higgins-agree-to-three-year-extension"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlmnOG2tTVhKFwqiNpDZMaqSGCV67kctT2sDXO3UqM46qKQVE-7n7V_0Wu8H8",
-      "image_credit": "Arizona Cardinals",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQU6tSLE7DSX5eAUrdw652UL-4VnvjB2RRRB6Qj_I_jEyt6aQ13R8x94F_havQ",
+      "image_credit": "CBS Sports",
       "news": [
+        {
+          "url": "https://www.cbssports.com/fantasy/football/news/cardinals-elijah-higgins-signing-extension-through-2029/",
+          "title": "Cardinals' Elijah Higgins: Signing extension through 2029",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQU6tSLE7DSX5eAUrdw652UL-4VnvjB2RRRB6Qj_I_jEyt6aQ13R8x94F_havQ"
+        },
         {
           "url": "https://www.azcardinals.com/news/cardinals-extend-tight-end-elijah-higgins",
           "title": "Cardinals Extend Tight End Elijah Higgins",
@@ -166,18 +305,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlmnOG2tTVhKFwqiNpDZMaqSGCV67kctT2sDXO3UqM46qKQVE-7n7V_0Wu8H8"
         },
         {
-          "url": "https://www.thefantasyfootballers.com/news/647058/elijah-higgins-two-grabs-versus-seattle/",
-          "title": "Elijah Higgins Two grabs versus Seattle",
-          "publisher": "Fantasy Footballers Podcast",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/cardinals-te-elijah-higgins-agree-to-three-year-extension",
+          "title": "Cardinals, TE Elijah Higgins agree to three-year extension",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-58Nc47LepB8saLd8wi5Mof91qbaI8I989vdgHCwiTDaSZq0fJQCP7qFtXoU"
-        },
-        {
-          "url": "https://nfltraderumors.co/cardinals-sign-te-elijah-higgins-to-three-year-extension/",
-          "title": "Cardinals Sign TE Elijah Higgins To Three-Year Extension",
-          "publisher": "NFLTradeRumors.co",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRoPVZtpBf7KBoy25fdndYoaqF10I25VK3gQUJVu_w1Gz9TA6wdqwtTute6W0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaK4EN68LsG_QjNL9m1PnsSPBDb8Ij3WyOnU2pRHfNQiRTxXfhFKk5SP6grd0"
         }
       ]
     },
@@ -187,7 +319,7 @@
       "published_at": "2026-11-13T17:50:00Z",
       "related_news_urls": [
         "https://www.espn.com/college-football/story/_/id/50456831/sources-philip-rivers-nc-state-deal-set-finalized",
-        "https://www.nfl.com/news/philip-rivers-hired-nc-state-head-coach",
+        "https://gopack.com/news/2026/11/13/rivers-named-head-coach-for-nc-state-football",
         "https://www.nytimes.com/athletic/7764757/2026/11/08/philip-rivers-head-coach-nc-state/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7D8TfxbCksBXZz3UeDqiVu9Gp8KVJl5JrgHIyRF7Vq9dwUVTODfuXQRlh9Zw",
@@ -201,11 +333,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7D8TfxbCksBXZz3UeDqiVu9Gp8KVJl5JrgHIyRF7Vq9dwUVTODfuXQRlh9Zw"
         },
         {
-          "url": "https://www.nfl.com/news/philip-rivers-hired-nc-state-head-coach",
-          "title": "Philip Rivers hired as N.C. State head coach",
-          "publisher": "NFL.com",
+          "url": "https://gopack.com/news/2026/11/13/rivers-named-head-coach-for-nc-state-football",
+          "title": "Rivers Named Head Coach for NC State Football",
+          "publisher": "NC State University Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvZp2dTTFbYh7TRuBPvgHL351e2fkxEH50fT83_xRbSuUfW1MN35S_gKadOzI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE-ODZyRPxVM6UzFHcWR93HCIoBxsOoQjF0Won2WxNRl8Ghn-3-1bJn-zrloQ"
         },
         {
           "url": "https://www.nytimes.com/athletic/7764757/2026/11/08/philip-rivers-head-coach-nc-state/",
@@ -213,146 +345,6 @@
           "publisher": "The New York Times",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc1pH8o-y4a9g3gHDqM7cO326heuZKliltJYOz1amkz6PildoUNixmT62amZM"
-        }
-      ]
-    },
-    {
-      "query": "jake bauers",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-13T17:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mlb/story/_/id/50473029/sources-jake-bauers-red-sox-agree-4-year-58m-deal",
-        "https://www.mlb.com/news/jake-bauers-4-year-contract-with-red-sox",
-        "https://sports.yahoo.com/articles/nlcs-mvp-jake-bauers-wont-180517155.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYADqq3JGc1LOgxiZCeEv2YjU0DzSEqR81fKLoV7U8C4WEk8XH15CgfxhdpgQ",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mlb/story/_/id/50473029/sources-jake-bauers-red-sox-agree-4-year-58m-deal",
-          "title": "Sources - Jake Bauers, Red Sox agree to 4-year, $58M deal",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYADqq3JGc1LOgxiZCeEv2YjU0DzSEqR81fKLoV7U8C4WEk8XH15CgfxhdpgQ"
-        },
-        {
-          "url": "https://www.mlb.com/news/jake-bauers-4-year-contract-with-red-sox",
-          "title": "Postseason breakout star Bauers agrees to 4-year deal with Red Sox (source)",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShnLDsxA6gYDeYFTBAtrFEKqoUxWZInq0QbDY4QSjdfzjqBS3W4Is8GaYC9fk"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/nlcs-mvp-jake-bauers-wont-180517155.html",
-          "title": "NLCS MVP Jake Bauers won't be returning to the Brewers in 2027",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5k0cJSrkyJMjZKINlRoYVIuxSUVz_dsMr5_Wnm9TU6J-th4tnkCLjcSlvOws"
-        }
-      ]
-    },
-    {
-      "query": "tony richards",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-13T17:40:00Z",
-      "related_news_urls": [
-        "https://consequence.net/2026/11/w-a-s-p-drummer-tony-richards-dead-at-69/",
-        "https://ghostcultmag.com/original-w-a-s-p-drummer-tony-richards-has-died/",
-        "https://loadedradio.com/metal-breakdown-daily-slipknot-album-tony-richards-radke/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqeIitz1kn89XqRixBmPVhR2DoULNjnQf-Tm7zN8Ub1vIm8gMD493KQTRz9Gw",
-      "image_credit": "Consequence of Sound",
-      "news": [
-        {
-          "url": "https://consequence.net/2026/11/w-a-s-p-drummer-tony-richards-dead-at-69/",
-          "title": "Original W.A.S.P. Drummer Tony Richards Dead at 69",
-          "publisher": "Consequence of Sound",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqeIitz1kn89XqRixBmPVhR2DoULNjnQf-Tm7zN8Ub1vIm8gMD493KQTRz9Gw"
-        },
-        {
-          "url": "https://ghostcultmag.com/original-w-a-s-p-drummer-tony-richards-has-died/",
-          "title": "Original W.A.S.P. Drummer Tony Richards Has Died",
-          "publisher": "Ghost Cult Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt7xWrrlelZ1elttTGlkcBM7RU8B9S-Ir8eJYev9qOaYRw4fqogvUx8P0Zj7c"
-        },
-        {
-          "url": "https://loadedradio.com/metal-breakdown-daily-slipknot-album-tony-richards-radke/",
-          "title": "Metal Breakdown Daily: New Slipknot Album, Original W.A.S.P. Drummer Tony Richards Dies, Ronnie Radke Sued",
-          "publisher": "Loaded Radio",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSon1N_-7EUdCIc0z0FR3CKud4FLhyVrQimfwzOGkCmxYOzWLLfwL4zkBJHwGc"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 online",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T17:40:00Z",
-      "related_news_urls": [
-        "https://www.forbes.com/sites/paultassi/2026/11/13/the-gta-6-online-release-date-is-far-off-says-new-report/",
-        "https://www.vice.com/en/article/gta-6-online-release-date/",
-        "https://www.notebookcheck.net/GTA-6-Online-release-window-has-apparently-leaked.1449676.0.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS68gLeEO9x7YFCvhlOGTQry6PXiwzTbgm9QEfWPnGjxEff-BfnM-AZDgSUT68",
-      "image_credit": "Forbes",
-      "news": [
-        {
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/13/the-gta-6-online-release-date-is-far-off-says-new-report/",
-          "title": "Another Update About The ‘GTA 6 Online’ Release Date",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS68gLeEO9x7YFCvhlOGTQry6PXiwzTbgm9QEfWPnGjxEff-BfnM-AZDgSUT68"
-        },
-        {
-          "url": "https://www.vice.com/en/article/gta-6-online-release-date/",
-          "title": "Is GTA 6 Going to Have Online? What We Know About Multiplayer and Its Release Date",
-          "publisher": "VICE",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlp9lczcwchIvMYIxjCONPbuUHKe87QRBoX1m8ZOR-Zyxes7kCKleTQaFnbis"
-        },
-        {
-          "url": "https://www.notebookcheck.net/GTA-6-Online-release-window-has-apparently-leaked.1449676.0.html",
-          "title": "GTA 6 Online release window has apparently leaked",
-          "publisher": "Notebookcheck",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtfnWEPwO-gSbgY74daTJfgOSKMKyJArFY5Qk2cPadYrIoNc9X-JdthheAuaw"
-        }
-      ]
-    },
-    {
-      "query": "portugal",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T17:40:00Z",
-      "related_news_urls": [
-        "https://www.record.pt/casas-de-apostas/mega-odd-betano-portugal-vs-dinamarca/",
-        "https://www.zerozero.pt/noticias/portugal-em-braga-os-pontos-atraentes-para-este-jogo/1260030",
-        "https://golo.fm/destaque/direto-%F0%9F%94%B4-ultima-bola-conferencia-de-imprensa-da-selecao-nacional-a-7/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNfFOlTfzt3CmeYKC6xj4ZFI0KlfHKfT9TIR4xNLpxVqVBfWusIZztC4mBHfQ",
-      "image_credit": "Record",
-      "news": [
-        {
-          "url": "https://www.record.pt/casas-de-apostas/mega-odd-betano-portugal-vs-dinamarca/",
-          "title": "Mega Odd Betano: Portugal x Dinamarca com Odd de 25.00",
-          "publisher": "Record",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNfFOlTfzt3CmeYKC6xj4ZFI0KlfHKfT9TIR4xNLpxVqVBfWusIZztC4mBHfQ"
-        },
-        {
-          "url": "https://www.zerozero.pt/noticias/portugal-em-braga-os-pontos-atraentes-para-este-jogo/1260030",
-          "title": "Seleção em Braga: as variantes do jogo após a renúncia de Cristiano Ronaldo",
-          "publisher": "zerozero.pt",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLkbOenvpWxv4aY-reqD_RZnVy8A_FFr8vhGNMv9hUpJQyxUHdvUqmOmetHj4"
-        },
-        {
-          "url": "https://golo.fm/destaque/direto-%F0%9F%94%B4-ultima-bola-conferencia-de-imprensa-da-selecao-nacional-a-7/",
-          "title": "DIRETO 🔴 Última Bola: Conferência de Imprensa da Seleção Nacional A",
-          "publisher": "Golo FM",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSi1h1KqpuHM7y4vGEMEz13RNZgCk0qLa0yQbut1AV_8BoGCjI8WUCBMEP3oek"
         }
       ]
     }
