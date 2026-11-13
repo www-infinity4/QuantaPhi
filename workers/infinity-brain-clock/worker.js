@@ -120,6 +120,50 @@ async function verifyEngineCommit(lease,review,sha,github){
   if(text.length>250000||await digest(text)!==review.hashes[path])throw Error('engine_commit_source_mismatch');
  }
 }
+async function applyRunnerResult(context,receipt){
+ const job=context.color_jobs?.find(item=>item.id===receipt.jobId);
+ if(!job||!['queued','ready','working','blocked'].includes(job.status))return null;
+ const progress=job.progress||{};
+ if(receipt.runUrl&&progress.runUrl&&
+  (progress.runUrl!==receipt.runUrl||(progress.runAttempt||1)!==(receipt.runAttempt||1)))return null;
+ if(receipt.revision&&await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,
+  repository:job.repository}))!==receipt.revision)return null;
+ if(receipt.status==='source_verified'&&receipt.pinkVerification){
+  const review=pinnedPinkReview(context,job),proof=receipt.pinkVerification;
+  if(!review||review.mergeSha!==proof.mergeSha||review.prNumber!==proof.prNumber||
+   JSON.stringify(review.repairIds)!==JSON.stringify(proof.repairIds)||pinkReviewHasActiveRepair(context,review))return null;
+  return completePinkReviewInContext(context,job.id,proof,receipt.when,receipt.runUrl);
+ }
+ const committed=receipt.status==='committed_unverified',deployed=receipt.status==='deployed_verified';
+ const absent=receipt.status==='publication_absent',blocked=receipt.status==='blocked';
+ if((committed||deployed)&&(!/^[a-f0-9]{40}$/.test(receipt.commitSha||'')||receipt.testsPassed!==true))return null;
+ if(!committed&&!deployed&&!absent&&!blocked)return null;
+ if((blocked||absent)&&job.status!=='working'&&job.status!=='blocked')return null;
+ if(progress.receiptAt&&progress.receiptAt===receipt.when&&progress.receiptStatus===receipt.status)return null;
+ const pending=Boolean(receipt.pendingPublication);
+ job.status=deployed?'complete':committed?'committed_unverified':'blocked';
+ job.progress={...progress,attemptedAt:receipt.when||progress.attemptedAt,
+  receiptAt:receipt.when,receiptStatus:receipt.status,leaseExpiresAt:null,publicationPending:pending,
+  summary:receipt.summary||'Recovered authenticated runner receipt.',
+  next:deployed?'Verified in the deployed Android browser.':committed?'Verify the merge and deployed behavior.':
+   pending?'Check the existing GitHub branch and pull request before retrying.':'Eligible for bounded retry after backoff.',
+  blocker:deployed||absent?'':committed?'deployment_not_verified':pending?'publication_reconciliation_required':'blocked',
+  commitSha:receipt.commitSha||null,runUrl:receipt.runUrl||progress.runUrl,testsPassed:receipt.testsPassed===true,
+  browserPassed:receipt.browserPassed===true,deployedFilesMatched:receipt.deployedFilesMatched===true,
+  reviewApproved:receipt.reviewApproved===true,...(receipt.prUrl?{prUrl:receipt.prUrl}:{})};
+ if(blocked&&!pending)attachTechnicalHandoff(context,job,receipt);
+ return context;
+}
+const unresolvedPublication=job=>job?.progress?.publicationPending===true||
+ job?.progress?.blocker==='publication_reconciliation_required';
+function pinkReceipt(lease){
+ const proof=lease.pinkVerification;
+ if(lease.status!=='source_verified'||!proof)return null;
+ return {status:'source_verified',repository:lease.repository,jobId:lease.jobId,ticketId:lease.ticketId,
+  mergeSha:proof.mergeSha,commitSha:proof.sourceSha,prNumber:proof.prNumber,testPaths:proof.testPaths,
+  testsPassed:true,productionVerified:false,newSourceCommitted:false,coinsMinted:false,noWalletAction:true,
+  runUrl:lease.runUrl,when:lease.when};
+}
 // The wallet token is only exchanged server-side for a short-lived Robot Brain session.
 // Neither wallet balances nor public wallet names grant owner access.
 function output(request,value,status=200){
@@ -278,26 +322,29 @@ export class BrainClock extends DurableObject{
    throw Error('source_review_pinned_merge_not_current_or_unrelated_tests');
   // Independently exercised native test commands run in Moltnook's isolated
   // checkout, not in this service; OIDC and the exact source SHA pin that claim.
-  const when=new Date().toISOString();
-  const updated=completePinkReviewInContext(context,lease.jobId,tentative,when,runUrl);
-  const row=await this.env.WORK_DB.prepare(
-   'UPDATE work_tickets SET context_json=?,status=?,updated_at=? WHERE id=? AND owner_hash=? AND context_json=?'
-  ).bind(JSON.stringify(updated),ticketStatusFromJobs(updated.color_jobs),Date.now(),
-    lease.ticketId,this.env.WRITER_OWNER_HASH,fresh.context_json).run();
-  if(row?.meta?.changes!==1)throw Error('source_review_owner_partition_compare_and_swap_failed');
-  const receipt={status:'source_verified',repository:repo,jobId:lease.jobId,ticketId:lease.ticketId,
-   mergeSha:tentative.mergeSha,commitSha:tentative.sourceSha,prNumber:tentative.prNumber,
-   testPaths:tentative.testPaths,testsPassed:true,productionVerified:false,
-   newSourceCommitted:false,coinsMinted:false,noWalletAction:true,runUrl,when};
-  const saved=await updateRunnerLease(this.ctx.storage,lease,current=>({...current,status:'source_verified',leaseUntil:0,
-   when,summary:'Read-only Pink review confirmed existing merged source and focused tests. Production not verified.'}));
+  const saved=await updateRunnerLease(this.ctx.storage,lease,(active,now)=>({...active,status:'source_verified',leaseUntil:0,
+   when:new Date(now).toISOString(),runUrl,pinkVerification:tentative}));
   if(!saved)throw Error('writer_lease_rejected');
-  await this.ctx.storage.put('source-review-receipt:'+lease.key,receipt);
+  await this.projectRunnerResult(saved);
   await this.emit('pink-panther','black-box','source verification finished',
    repo+' · PR '+tentative.prNumber+' source and tests independently verified. No new commit, deployment or payout.',current.prUrl);
   return Response.json({ok:true,status:'source_verified',sourceOnly:true,
    productionVerified:false,coinsMinted:false,commitSha:tentative.sourceSha,
    mergeSha:tentative.mergeSha,testCount:tentative.testPaths.length});
+ }
+ async projectRunnerResult(receipt){
+  const db=this.env.WORK_DB,owner=this.env.WRITER_OWNER_HASH;
+  for(let attempt=0;attempt<3;attempt++){
+   const row=await db.prepare('SELECT context_json FROM work_tickets WHERE id=? AND owner_hash=?')
+    .bind(receipt.ticketId,owner).first();
+   if(!row)return;
+   const context=JSON.parse(row.context_json);
+   const updated=await applyRunnerResult(context,receipt);
+   if(!updated)return;
+   const saved=await db.prepare('UPDATE work_tickets SET context_json=?,status=?,updated_at=? WHERE id=? AND owner_hash=? AND context_json=?')
+    .bind(JSON.stringify(updated),ticketStatusFromJobs(updated.color_jobs),Date.now(),receipt.ticketId,owner,row.context_json).run();
+   if(saved?.meta?.changes===1)return;
+  }
  }
  async runner(request){
   const body=await request.json(),runId=body.runId;
@@ -465,9 +512,9 @@ export class BrainClock extends DurableObject{
   }
   const lease=await this.ctx.storage.get(String(body.key||''));
   if(path==='/runner/source-review-receipt'){
-   if(!lease||!engine||!lease.engine||lease.runId!==runId||lease.leaseId!==body.leaseId)
+   if(!lease||!engine||!lease.engine||lease.runId!==runId||(lease.runAttempt||1)!==runAttempt||lease.leaseId!==body.leaseId)
     throw Error('source_review_receipt_identity_rejected');
-   const receipt=await this.ctx.storage.get('source-review-receipt:'+lease.key);
+   const receipt=pinkReceipt(lease)||await this.ctx.storage.get('source-review-receipt:'+lease.key);
    if(receipt?.status!=='source_verified'||receipt.jobId!==lease.jobId||
       receipt.repository!==lease.repository||receipt.runUrl!==runUrl||
       receipt.coinsMinted!==false||receipt.productionVerified!==false)
@@ -515,6 +562,7 @@ export class BrainClock extends DurableObject{
       if(!progress&&(job.progress.leaseExpiresAt||0)>=current.leaseUntil)break;
       const sourceSha=progress&&body.step?.phase==='source_read'&&/^[a-f0-9]{40}$/.test(body.step.baseSha||'')?body.step.baseSha:null;
       job.progress={...job.progress,...progress,...(sourceSha?{sourceSha}:{}),
+       ...(publishing?{publicationPending:true}:{}),
        leaseExpiresAt:Math.max(job.progress.leaseExpiresAt||0,current.leaseUntil)};
       const saved=await db.prepare('UPDATE work_tickets SET context_json=?,updated_at=? WHERE id=? AND owner_hash=? AND context_json=?')
        .bind(JSON.stringify(context),Date.now(),lease.ticketId,owner,row.context_json).run();
@@ -635,7 +683,8 @@ export class BrainClock extends DurableObject{
    ...current,repairFeedback,status:body.status,leaseUntil:0,retryAt:now+(body.status==='blocked'?30:5)*60*1000,
    when:new Date(now).toISOString(),commitSha:body.commitSha||current.commitSha||null,
    pendingPublication:body.status==='blocked'?current.pendingPublication:null,
-   testsPassed:body.testsPassed===true,browserPassed:body.browserPassed===true,summary:message,runUrl
+   testsPassed:body.testsPassed===true,browserPassed:body.browserPassed===true,
+   deployedFilesMatched:body.deployedFilesMatched===true,reviewApproved:body.reviewApproved===true,summary:message,runUrl
   }));
   if(!receipt)return rejectedLease();
   const quantId='job-quant:'+receipt.revision+':'+receipt.ticketId+':'+receipt.jobId;
@@ -644,17 +693,7 @@ export class BrainClock extends DurableObject{
   const quantIndex=await this.ctx.storage.get('job-quant-index')||[];
   await this.ctx.storage.put('job-quant-index',[{id:quant.id,repository:quant.repository,status:quant.status,updatedAt:quant.updatedAt},...quantIndex.filter(q=>q.id!==quant.id)].slice(0,200));
   try{await this.payWork(quant,body.verificationToken||'')}catch(e){await this.ctx.storage.put('bot-work-credit-error',{when:Date.now(),error:String(e.message).slice(0,200),quantId:quant.id})}
-  const owner=this.env.WRITER_OWNER_HASH;
-  const fresh=await this.env.WORK_DB.prepare('SELECT context_json FROM work_tickets WHERE id=? AND owner_hash=?').bind(lease.ticketId,owner).first();
-  if(fresh){
-   const context=JSON.parse(fresh.context_json),job=(context.color_jobs||[]).find(j=>j.id===lease.jobId);
-   if(job?.status==='working'&&job.progress?.runUrl===runUrl&&(job.progress.runAttempt||1)===runAttempt&&
-    await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}))===lease.revision){
-    job.status=body.status==='deployed_verified'?'complete':body.status==='committed_unverified'?'committed_unverified':'blocked';job.progress={...job.progress,attemptedAt:receipt.when,leaseExpiresAt:null,summary:message,next:body.status==='deployed_verified'?'Verified in the deployed Android browser.':body.status==='committed_unverified'?'Source committed; deployed browser verification still required.':receipt.pendingPublication?'Check the existing GitHub branch and pull request before retrying.':'Runner will retry after backoff.',blocker:body.status==='deployed_verified'?'':receipt.pendingPublication?'publication_reconciliation_required':body.status,commitSha:receipt.commitSha,runUrl,testsPassed:receipt.testsPassed,browserPassed:receipt.browserPassed,deployedFilesMatched:body.deployedFilesMatched===true,reviewApproved:body.reviewApproved===true};
-    if(body.status==='blocked'&&!receipt.pendingPublication)attachTechnicalHandoff(context,job,receipt);
-    await this.env.WORK_DB.prepare('UPDATE work_tickets SET context_json=?,status=?,updated_at=? WHERE id=? AND owner_hash=? AND context_json=?').bind(JSON.stringify(context),ticketStatusFromJobs(context.color_jobs),Date.now(),lease.ticketId,owner,fresh.context_json).run();
-   }
-  }
+  await this.projectRunnerResult(receipt);
   try{
     const memory=await rememberOutcome(this.env,{ownerHash:this.env.WRITER_OWNER_HASH,
       repository:lease.repository,ticketId:lease.ticketId,jobId:lease.jobId,
@@ -682,19 +721,31 @@ export class BrainClock extends DurableObject{
    // The original signed workflow uses this branch name in publishReviewed.
    const jobId=lease.ticketId+'/'+lease.jobId;
    const branch='robot/'+jobId.replace(/[^a-zA-Z0-9_-]/g,'-').slice(0,90)+'/'+lease.runId;
-   const prs=await github('repos/'+lease.repository+'/pulls?state=all&per_page=2&head='+encodeURIComponent('www-infinity4:'+branch));
-   if(!Array.isArray(prs)||prs.length!==1)return null;
-   const [pr]=prs,sha=pr.head?.sha,repository=lease.repository.toLowerCase();
-   if(!Number.isSafeInteger(pr.number)||pr.number<1||pr.title!=='Robot review: '+jobId||
-    pr.head?.ref!==branch||pr.head.repo?.full_name?.toLowerCase()!==repository||
-    pr.base?.repo?.full_name?.toLowerCase()!==repository||!/^[a-f0-9]{40}$/.test(sha||''))return null;
-   await verifyEngineCommit(lease,review,sha,github);
-   return storage.transaction(async tx=>{
+   const base='repos/'+lease.repository;
+   const prs=await github(base+'/pulls?state=all&per_page=2&head='+encodeURIComponent('www-infinity4:'+branch));
+   if(!Array.isArray(prs)||prs.length>1)return null;
+   let result;
+   if(prs.length===0){
+    const refs=await github(base+'/git/matching-refs/heads/'+branch);
+    if(!Array.isArray(refs)||refs.some(ref=>ref?.ref==='refs/heads/'+branch))return null;
+    result={status:'publication_absent',summary:lease.status==='blocked'&&lease.summary?lease.summary:
+     'GitHub confirmed the interrupted run left no branch or pull request.',
+     commitSha:null,testsPassed:false};
+   }else{
+    const [pr]=prs,sha=pr.head?.sha,repository=lease.repository.toLowerCase();
+    if(!Number.isSafeInteger(pr.number)||pr.number<1||pr.title!=='Robot review: '+jobId||
+     pr.head?.ref!==branch||pr.head.repo?.full_name?.toLowerCase()!==repository||
+     pr.base?.repo?.full_name?.toLowerCase()!==repository||pr.base.ref!==pr.base.repo.default_branch||
+     (pr.state!=='open'&&!pr.merged_at)||!/^[a-f0-9]{40}$/.test(sha||''))return null;
+    await verifyEngineCommit(lease,review,sha,github);
+    result={status:'committed_unverified',commitSha:sha,testsPassed:true,
+     prUrl:'https://github.com/'+lease.repository+'/pull/'+pr.number,browserPassed:false,
+     summary:'Recovered the existing pull request and matched its commit to the signed runner review.'};
+   }
+   return await storage.transaction(async tx=>{
     const current=await tx.get(lease.key);
     if(current?.leaseId!==lease.leaseId||current.leaseUntil>now||!current.pendingPublication)return null;
-    const receipt={...current,status:'committed_unverified',pendingPublication:null,leaseUntil:0,commitSha:sha,testsPassed:true,
-     prUrl:'https://github.com/'+lease.repository+'/pull/'+pr.number,browserPassed:false,when:new Date(now).toISOString(),
-     summary:'Recovered the existing pull request and matched its commit to the signed runner review.'};
+    const receipt={...current,...result,pendingPublication:null,leaseUntil:0,when:new Date(now).toISOString()};
     await tx.put(lease.key,receipt);
     return receipt;
    });
@@ -717,7 +768,8 @@ export class BrainClock extends DurableObject{
   for(const row of rows.results||[]){
    let context;try{context=JSON.parse(row.context_json)}catch{continue}
    let changed=false,recovered=0,stale=0;
-   for(const job of context.color_jobs||[]){
+   for(const id of (context.color_jobs||[]).map(job=>job?.id)){
+    const job=context.color_jobs.find(item=>item?.id===id);
     if(!job?.id||!job.repository||!job.instructions||['complete','deployed_verified','merged_verified','committed_unverified','superseded'].includes(job.status))continue;
     const revision=await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}));
     let prior=await this.ctx.storage.get('writer:'+row.id+':'+job.id+':'+revision);
@@ -729,15 +781,9 @@ export class BrainClock extends DurableObject{
       prior=await this.recoverPublishedJob(prior,now)||prior;
      }
     }
-    // Only trusted runner-result records can advance state; an event carrying a
-    // commit hash merely pauses replay until a runner verifies that commit.
-    if(['deployed_verified','committed_unverified'].includes(prior?.status)&&/^[a-f0-9]{40}$/.test(prior.commitSha||'')&&prior.testsPassed===true){
-     job.status=prior.status==='deployed_verified'?'complete':'committed_unverified';
-     job.progress={...job.progress,commitSha:prior.commitSha,runUrl:prior.runUrl,leaseExpiresAt:null,testsPassed:true,
-      ...(prior.prUrl?{prUrl:prior.prUrl}:{}),summary:prior.summary||'Recovered authenticated runner receipt.',
-      blocker:prior.status==='deployed_verified'?'':'deployment_not_verified'};
-     changed=true;recovered++;continue;
-    }
+    // Reproject receipts left in durable storage when D1 was unavailable.
+    const projected=prior&&await applyRunnerResult(context,{...prior,jobId:job.id});
+    if(projected){context=projected;changed=true;recovered++;continue;}
     if(job.status!=='working'||prior?.leaseUntil>now)continue;
     const attempted=Date.parse(job.progress?.claimedAt||job.progress?.attemptedAt||'');
     if(!prior&&Number.isFinite(attempted)&&attempted>now-40*60*1000)continue;
@@ -746,7 +792,7 @@ export class BrainClock extends DurableObject{
     const publicationPending=prior?.pendingPublication||Array.isArray(steps)&&steps.some(step=>step?.runUrl===job.progress.runUrl&&
      (step.runAttempt||1)===(job.progress.runAttempt||1)&&['publication_started','pr_opened'].includes(step.phase));
     const commitPending=prior?.commitSha||job.progress?.commitSha;
-    job.progress={...job.progress,leaseExpiresAt:null,summary:'Runner stopped reporting before a final receipt.',
+    job.progress={...job.progress,leaseExpiresAt:null,publicationPending:Boolean(publicationPending),summary:'Runner stopped reporting before a final receipt.',
      blocker:publicationPending?'publication_reconciliation_required':commitPending?'commit_verification_required':job.progress?.blocker||'runner_lease_expired',
      next:publicationPending?'Check the existing GitHub branch and pull request before retrying.':commitPending?'Verify the existing commit before any further write.':'Eligible for bounded retry after backoff.',
      recoveredAt:new Date(now).toISOString()};
@@ -774,6 +820,8 @@ export class BrainClock extends DurableObject{
    for(const job of context.color_jobs||[]){
     const allowed=sourceRecoveryEligibility(job,{now});
     if(!allowed.eligible)continue;
+    const revision=await digest(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository}));
+    if((await this.ctx.storage.get('writer:'+row.id+':'+job.id+':'+revision))?.pendingPublication)continue;
     const inspection=await inspectDeferredSources(job,{now});
     const decision=recoveryDecision(job,inspection,{now});
     const recovery=decision.recovery;
@@ -1439,6 +1487,7 @@ export async function ownerTickets(env,path,body){
      continue;
     }
     if(job.status!=='blocked')continue;
+    if(unresolvedPublication(job)){summary.stillBlocked++;continue;}
     const reason=String(job.progress?.summary||'');
     const eligible=/^IW-\d{8}-[0-9A-F-]{8}$/.test(row.id)&&
       /owner_input_required/i.test(reason)&&
@@ -1491,6 +1540,7 @@ export async function ownerTickets(env,path,body){
   let context;try{context=JSON.parse(row.context_json||'{}')}catch{return denied('invalid_saved_context',409)}
   if(context.kind!=='robot-directions'||!Array.isArray(context.color_jobs))return denied('robot_context_required',409);
   const job=context.color_jobs.find(j=>j?.id===jobId);
+  if(unresolvedPublication(job))return denied('publication_reconciliation_required',409);
   const blocker=String(job?.progress?.summary||'');
   if(job?.status!=='blocked'||!/owner_input_required/i.test(blocker)||
      !/\b(?:ui|design|dialog|button|placement|wording|styling|storage|layout|enrollment)\b/i.test(blocker))
@@ -1602,6 +1652,9 @@ export async function ownerTickets(env,path,body){
   const row=await db.prepare('SELECT * FROM work_tickets WHERE id=? AND owner_hash=?').bind(id,ownerHash).first();
   if(!row)return denied('owner_ticket_not_found',404);
   if(!['draft','ready','blocked'].includes(row.status))return denied('ticket_already_in_progress',409);
+  const originalContext=JSON.parse(row.context_json||'{}');
+  if(originalContext.color_jobs?.some(unresolvedPublication))
+   return denied('publication_reconciliation_required',409);
   const context=body.context&&typeof body.context==='object'&&!Array.isArray(body.context)?body.context:null;
   if(!context||context.kind!=='robot-directions')return denied('robot_context_required');
   const jobs=context.color_jobs;
@@ -1611,7 +1664,6 @@ export async function ownerTickets(env,path,body){
   const repository=row.repository||jobs[0].repository;
   if(jobs.some(job=>job.repository!==repository))return denied('ticket_repository_mismatch');
   context.repositories=[repository];
-  const originalContext=JSON.parse(row.context_json||'{}');
   if(originalContext.iteration_thread){
    context.iteration_thread=originalContext.iteration_thread;
    const priorJobs=originalContext.color_jobs||[];

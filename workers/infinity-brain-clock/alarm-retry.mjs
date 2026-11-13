@@ -16,7 +16,7 @@ export function eligibleForRetry(job,{now,prior={},lease={},retry={},deps=[]}={}
  if(FINAL.has(prior?.status)||FINAL.has(job.status))return {eligible:false,reason:'awaiting_merge_or_complete'};
  if(lease?.leaseUntil>now)return {eligible:false,reason:'runner_lease_active'};
  if(prior?.leaseUntil>now)return {eligible:false,reason:'claimed_by_runner'};
- if(prior?.pendingPublication||job.progress?.blocker==='publication_reconciliation_required')
+ if(prior?.pendingPublication||job.progress?.publicationPending===true||job.progress?.blocker==='publication_reconciliation_required')
   return {eligible:false,reason:'publication_reconciliation_required'};
  if((prior?.commitSha||job.progress?.commitSha)&&!FINAL.has(prior?.status))return {eligible:false,reason:'commit_verification_required'};
  if(prior?.retryAt>now)return {eligible:false,reason:'runner_backoff'};
