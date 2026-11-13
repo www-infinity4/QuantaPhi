@@ -3,17 +3,227 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T16:01:35.229131Z",
+  "checked_at": "2026-11-13T16:30:57.163322Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "larry david",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T16:10:00Z",
+      "related_news_urls": [
+        "https://ew.com/larry-david-reveals-actors-actresses-almost-starred-seinfeld-12237057",
+        "https://forward.com/culture/862055/larry-david-emperor-of-nothing-biography-blake-harris/",
+        "https://jweekly.com/2026/11/10/a-biographer-tried-to-get-larry-david-to-talk-about-his-jewishness-nothing-doing/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEWeBDPBtbBsAsihWh5L5C_sBKkKFl2-yaUquF9KTLNSfFKdGmLt7hBoWQUfg",
+      "image_credit": "Entertainment Weekly",
+      "news": [
+        {
+          "url": "https://ew.com/larry-david-reveals-actors-actresses-almost-starred-seinfeld-12237057",
+          "title": "Larry David book reveals actors who almost starred on Seinfeld as George, Kramer, and Elaine",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEWeBDPBtbBsAsihWh5L5C_sBKkKFl2-yaUquF9KTLNSfFKdGmLt7hBoWQUfg"
+        },
+        {
+          "url": "https://forward.com/culture/862055/larry-david-emperor-of-nothing-biography-blake-harris/",
+          "title": "The Larry David bar mitzvah story that his biographer left out",
+          "publisher": "The Forward",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRb71ytZ5yU1hxM7GmOBGqGwpjrwclj-RcZmK0kvGAUDZnT_PHOrnpMWPlR-s"
+        },
+        {
+          "url": "https://jweekly.com/2026/11/10/a-biographer-tried-to-get-larry-david-to-talk-about-his-jewishness-nothing-doing/",
+          "title": "A biographer tried to get Larry David to talk about his Jewishness. ‘Nothing’ doing.",
+          "publisher": "The Jewish News of Northern California",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0gI0oSiucL_NKGZ0P5NpI0Lj1R6nu0Ejjsjgle084dYFAKKuhKAbYdE3ay5Y"
+        }
+      ]
+    },
+    {
+      "query": "mark cuban",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T15:50:00Z",
+      "related_news_urls": [
+        "https://financebuzz.com/news/mark-cuban-one-skill-making-millions",
+        "https://www.thestreet.com/personalities/mark-cuban-shares-how-hed-make-as-much-money-as-possible-in-six-months-starting-with-500-and-a-phone",
+        "https://www.wsj.com/health/healthcare/cvs-breakup-wont-satisfy-washington-it-could-still-work-for-wall-street-1b5004e3"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhprHi1q4-AtBlny5M5EKlysbcth45N5vq3cpyFbu1W7hSf04BbnTA29SuwcY",
+      "image_credit": "FinanceBuzz",
+      "news": [
+        {
+          "url": "https://financebuzz.com/news/mark-cuban-one-skill-making-millions",
+          "title": "Mark Cuban Says This Sales Skill Could Be Your Best Shot at Making $1 Million",
+          "publisher": "FinanceBuzz",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhprHi1q4-AtBlny5M5EKlysbcth45N5vq3cpyFbu1W7hSf04BbnTA29SuwcY"
+        },
+        {
+          "url": "https://www.thestreet.com/personalities/mark-cuban-shares-how-hed-make-as-much-money-as-possible-in-six-months-starting-with-500-and-a-phone",
+          "title": "Mark Cuban shares how he’d make ‘as much money as possible’ in six months starting with $500 and a phone",
+          "publisher": "TheStreet",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREfDbeCJyZt5GRE9yS5y1L5BCgjEA2U6vBg8AFUCwbVgSrq5Cwzixb8BQoMRc"
+        },
+        {
+          "url": "https://www.wsj.com/health/healthcare/cvs-breakup-wont-satisfy-washington-it-could-still-work-for-wall-street-1b5004e3",
+          "title": "CVS Breakup Won’t Satisfy Washington. It Could Still Work for Wall Street.",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNf4boGZl3FZ8jmG5QQ5jGUIenRPjbuyr-wpKShTeIasxy9sLnevywo8wiHRc"
+        }
+      ]
+    },
+    {
+      "query": "saudi arabia vs south korea",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T15:50:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cwvgr22k5l4nt",
+        "https://biz.chosun.com/en/en-sports/2026/11/14/ROON3ZVDTRDP3LKGIQN3MWXGDU/",
+        "https://www.livescore.com/en/news/football/more/saud-abdulhamid-surprise-al-hamdan-to-lead-saudi-arabia-in-south-korea-friendly-goal/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cwvgr22k5l4nt",
+          "title": "Saudi Arabia vs South Korea: Friendlies stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+        },
+        {
+          "url": "https://biz.chosun.com/en/en-sports/2026/11/14/ROON3ZVDTRDP3LKGIQN3MWXGDU/",
+          "title": "Korea concedes early lead and trails Saudi Arabia at halftime",
+          "publisher": "Chosunbiz",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3svd9zBPN7ZaxM3e6fcim1kZ2oSXI4prY_oT9GCCai6GNS_XFvaG6lu8_ydg"
+        },
+        {
+          "url": "https://www.livescore.com/en/news/football/more/saud-abdulhamid-surprise-al-hamdan-to-lead-saudi-arabia-in-south-korea-friendly-goal/",
+          "title": "Saud Abdulhamid surprise: Al-Hamdan to lead Saudi Arabia in South Korea friendly",
+          "publisher": "LiveScore",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIoiJ68Ul88IefEmpFWny8VGr-Ndb7qatukow7c2skYB6O8EOI90f3xLihE_k"
+        }
+      ]
+    },
+    {
+      "query": "interland",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T15:50:00Z",
+      "related_news_urls": [
+        "https://www.bndestem.nl/regiosport-brabant/een-wel-heel-bijzondere-interland-in-de-vliert-komende-zondag-alles-snel-kunnen-regelen~a783ae8c/",
+        "https://www.gelderlander.nl/regiosport-den-bosch/een-wel-heel-bijzondere-interland-in-de-vliert-komende-zondag-alles-snel-kunnen-regelen~a783ae8c/",
+        "https://www.bd.nl/fc-den-bosch/een-wel-heel-bijzondere-interland-in-de-vliert-komende-zondag-alles-snel-kunnen-regelen~a783ae8c/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoiDB3RfSKlY3s0xO73hPRxNMbVtd5uTZI8oDhxgVsCIcK4YQTZVR2heblt2U",
+      "image_credit": "BN DeStem",
+      "news": [
+        {
+          "url": "https://www.bndestem.nl/regiosport-brabant/een-wel-heel-bijzondere-interland-in-de-vliert-komende-zondag-alles-snel-kunnen-regelen~a783ae8c/",
+          "title": "Een wel heel bijzondere interland in De Vliert komende zondag: ‘Alles snel kunnen regelen’",
+          "publisher": "BN DeStem",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoiDB3RfSKlY3s0xO73hPRxNMbVtd5uTZI8oDhxgVsCIcK4YQTZVR2heblt2U"
+        },
+        {
+          "url": "https://www.gelderlander.nl/regiosport-den-bosch/een-wel-heel-bijzondere-interland-in-de-vliert-komende-zondag-alles-snel-kunnen-regelen~a783ae8c/",
+          "title": "Een wel heel bijzondere interland in De Vliert komende zondag: ‘Alles snel kunnen regelen’",
+          "publisher": "De Gelderlander",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOwJmm40vsUlEnxoEAH3PibRiOLYlXuNrr1X2V3E4tyl-Fp_Y-5wlnvqXWKAU"
+        },
+        {
+          "url": "https://www.bd.nl/fc-den-bosch/een-wel-heel-bijzondere-interland-in-de-vliert-komende-zondag-alles-snel-kunnen-regelen~a783ae8c/",
+          "title": "Een wel heel bijzondere interland in De Vliert komende zondag: ‘Alles snel kunnen regelen’",
+          "publisher": "Brabants Dagblad",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoiDB3RfSKlY3s0xO73hPRxNMbVtd5uTZI8oDhxgVsCIcK4YQTZVR2heblt2U"
+        }
+      ]
+    },
+    {
+      "query": "avril lavigne baby",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-13T15:40:00Z",
+      "related_news_urls": [
+        "https://pagesix.com/2026/11/13/parents/avril-lavigne-welcomes-first-baby-with-mystery-man/",
+        "https://hollywoodlife.com/feature/does-avril-lavigne-have-kids-baby-5583439/",
+        "https://www.justjared.com/2026/11/13/avril-lavigne-welcomes-first-child-shares-first-photos-of-her-daughter/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTA3EHLuJNJS_3waC-6wXU8d_RG7R7gNylIxvzwerzeGPQRsgxpELtblaPiPmc",
+      "image_credit": "Page Six",
+      "news": [
+        {
+          "url": "https://pagesix.com/2026/11/13/parents/avril-lavigne-welcomes-first-baby-with-mystery-man/",
+          "title": "Avril Lavigne reveals she’s secretly welcomed a baby girl with mystery man: ‘Princess’",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTA3EHLuJNJS_3waC-6wXU8d_RG7R7gNylIxvzwerzeGPQRsgxpELtblaPiPmc"
+        },
+        {
+          "url": "https://hollywoodlife.com/feature/does-avril-lavigne-have-kids-baby-5583439/",
+          "title": "Does Avril Lavigne Have Kids? What We Know About Her Baby Girl",
+          "publisher": "Hollywood Life",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSje5YwFMwIfntIVq44v1KnAt0DnUhGpHMbbLNooQ7kqer7Kfz2MRNBzJbv4Cc"
+        },
+        {
+          "url": "https://www.justjared.com/2026/11/13/avril-lavigne-welcomes-first-child-shares-first-photos-of-her-daughter/",
+          "title": "Avril Lavigne Welcomes First Child, Shares First Photos of Her Daughter",
+          "publisher": "Just Jared",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkudEtdBll3sOANXAg6DQ1H-BhuRwrCTnVzU8rGNGb8ENFdMWMMSdenx3f8os"
+        }
+      ]
+    },
+    {
+      "query": "south africa vs kenya",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T15:40:00Z",
+      "related_news_urls": [
+        "https://africa.espn.com/espn/story/_/id/50469313/south-africa-kenya-kick-team-news-how-watch-bafana-afcon-qualifier",
+        "https://thenational.co.za/sport/2026-11-13-ronwen-williams-insists-bafana-bafana-have-learnt-from-2012-afcon-dance-of-shame-ahead-of-kenya-clashes/",
+        "https://www.mozzartsport.co.ke/athletics/news/four-gold-medalists-confirmed-for-2026-mozzart-bet-chemususu-dam-race/70675/comments"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRD4kYArUZj8ihYNYBBoKCeQ0TA6J9WeBBYecUJ-KJi5QjVS99aXAdNWAORWtU",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://africa.espn.com/espn/story/_/id/50469313/south-africa-kenya-kick-team-news-how-watch-bafana-afcon-qualifier",
+          "title": "South Africa vs. Kenya - Kick-off time, team news, how to watch Bafana's AFCON qualifier",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRD4kYArUZj8ihYNYBBoKCeQ0TA6J9WeBBYecUJ-KJi5QjVS99aXAdNWAORWtU"
+        },
+        {
+          "url": "https://thenational.co.za/sport/2026-11-13-ronwen-williams-insists-bafana-bafana-have-learnt-from-2012-afcon-dance-of-shame-ahead-of-kenya-clashes/",
+          "title": "Ronwen Williams insists Bafana Bafana have learnt from 2012 Afcon 'Dance of Shame' ahead of Kenya clashes",
+          "publisher": "thenational.co.za",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ09yVQ5w-6SJt5BwdomhMQh2jk0EYLoz26wFIVCH6g3-HIenYtNy47hcflB8c"
+        },
+        {
+          "url": "https://www.mozzartsport.co.ke/athletics/news/four-gold-medalists-confirmed-for-2026-mozzart-bet-chemususu-dam-race/70675/comments",
+          "title": "News Comments Four gold medalists confirmed for 2026 Mozzart Bet Chemususu Dam race",
+          "publisher": "Mozzart Sport Kenya",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGeKIJyMZnJcv4K9yTp0r7cfNYvsNda6VRZmoMiktRfH_F73qc2-lTfRzuCO4"
+        }
+      ]
+    },
     {
       "query": "laura samson",
       "approx_searches": "2000+",
       "published_at": "2026-11-13T15:20:00Z",
       "related_news_urls": [
         "https://robinhood.com/us/en/prediction-markets/tennis/events/b0a0195b-a424-4809-a568-5d7d8dca1203/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/bfc9c2e0-4f35-43c0-b277-ec60e009aa43/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/5e97adbf-5549-4e90-a7df-ba40127a6a5b/"
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/3a81f12f-d108-40f4-8810-d2df44c2a52f/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/bfc9c2e0-4f35-43c0-b277-ec60e009aa43/"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSitoJ3kDuQVHGgiooyCf9_wmYF9k_CVbJCYyVk2JXatmGuv3jy3EpyBXp079k",
       "image_credit": "Robinhood",
@@ -26,18 +236,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSitoJ3kDuQVHGgiooyCf9_wmYF9k_CVbJCYyVk2JXatmGuv3jy3EpyBXp079k"
         },
         {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/3a81f12f-d108-40f4-8810-d2df44c2a52f/",
+          "title": "November 11, 2026: Alejandro Tabilo vs Lorenzo Sonego Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEJMwrnwmzlInLmdONDm_dnz45BVKTZvIOIOVOyqc80bxlrpkJ5DBQSkahxTU"
+        },
+        {
           "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/bfc9c2e0-4f35-43c0-b277-ec60e009aa43/",
           "title": "November 11, 2026: Carole Monnet vs Polona Hercog Prediction Market",
           "publisher": "Robinhood",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_ir327pUEu5_6dQBqTGLUeq0qh_19ljOSabOEVaLDNr0EaqVgSHEqdb4Tt1Q"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/5e97adbf-5549-4e90-a7df-ba40127a6a5b/",
-          "title": "November 11, 2026: Elizabeth Mandlik vs Lucia Bronzetti Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTX_iUlfqt2OTmNVjcu3PcCC_AHEq_-SEDVZkZ1vRYO8CC4Pn-8VLGcz5GEepI"
         }
       ]
     },
@@ -46,19 +256,26 @@
       "approx_searches": "500+",
       "published_at": "2026-11-13T15:20:00Z",
       "related_news_urls": [
-        "https://www.cnbc.com/2026/11/13/stocks-moving-the-most-today-live-updates.html",
-        "https://www.reuters.com/world/china/huang-exit-us-scrutiny-imperil-3-billion-chinese-ai-projects-reliant-nvidia-2026-11-13/",
-        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-13-2026"
+        "https://www.cnbc.com/2026/11/12/stock-market-today-live-updates.html",
+        "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-nvidia-ceo-jensen-huang-resigns-ppi-inflation-data/card/nvidia-s-stock-extends-selloff-after-jensen-huang-s-resignation-vvv1Dv3PjWEVqC9myUVp?mod=mw_FV",
+        "https://www.reuters.com/world/china/huang-exit-us-scrutiny-imperil-3-billion-chinese-ai-projects-reliant-nvidia-2026-11-13/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTf-jXbtTVNZEhZY7HovK17APcASGXAXz86fzWTEc2YzG2WAZ_OSbYsodH5UGY",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1v3pdxUY_0jMQAGI7A2x2ltcMGrInVI3FGQB9CELLj8vZTfVd5Uyhm6KVdP0",
       "image_credit": "CNBC",
       "news": [
         {
-          "url": "https://www.cnbc.com/2026/11/13/stocks-moving-the-most-today-live-updates.html",
-          "title": "Stocks making the biggest moves premarket: Microsoft, Nvidia, Cerebras & more",
+          "url": "https://www.cnbc.com/2026/11/12/stock-market-today-live-updates.html",
+          "title": "Nasdaq falls on Friday as Nvidia keeps sliding, but major averages are up for week: Live updates",
           "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTf-jXbtTVNZEhZY7HovK17APcASGXAXz86fzWTEc2YzG2WAZ_OSbYsodH5UGY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1v3pdxUY_0jMQAGI7A2x2ltcMGrInVI3FGQB9CELLj8vZTfVd5Uyhm6KVdP0"
+        },
+        {
+          "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-nvidia-ceo-jensen-huang-resigns-ppi-inflation-data/card/nvidia-s-stock-extends-selloff-after-jensen-huang-s-resignation-vvv1Dv3PjWEVqC9myUVp?mod=mw_FV",
+          "title": "Nvidia’s stock extends selloff after Jensen Huang’s resignation",
+          "publisher": "MarketWatch",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyWlJxvVryIMzrR7-lohlKKXFuNXOMy5obOr3svd6bJJrSUmJEzkf0aeM6UkY"
         },
         {
           "url": "https://www.reuters.com/world/china/huang-exit-us-scrutiny-imperil-3-billion-chinese-ai-projects-reliant-nvidia-2026-11-13/",
@@ -66,28 +283,28 @@
           "publisher": "Reuters",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDg4vhOsj2nj5GghJ7F5Sx4yMZf2T1ZemZ2m6-oCnbx1MYdvPWHZICLlMoUR4"
-        },
-        {
-          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-13-2026",
-          "title": "Stock Market Today: Nvidia Set to Recoup Some Losses After Huang's Exit — Live Updates",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRr6rcqQZ8xFVY1BVIXDAc5O8eu-fBtP6r4y0ZoUmbcjkAZgRazWu9w4UiAMeg"
         }
       ]
     },
     {
       "query": "nigeria vs tanzania",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-13T15:10:00Z",
       "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cmly0wwxl3n5t",
         "https://www.sports247.ng/eric-chelle-admits-late-arrivals-of-super-eagles-players-affected-his-game-plan-for-fridays-clash-with-tanzania/",
-        "https://dailytrust.com/super-eagles-eye-double-victories-over-tanzania-in-afcon-qualifiers/",
-        "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii8vZGF0dW1mYW4uY29tL2ZpbGVzL3kueG1sIi8+PC9rcnBhbm8+&id=video-live-nigeria-v-tanzania-enzndyhdyzln"
+        "https://realnewsmagazine.net/afcon-qualifier-aba-fans-urge-super-eagles-to-triumph-over-tanzania/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjVsND6qne_guqbk_bu4M0i9ZxWxET1bgRxHsaGLJzI00IUQF-ncKNnCz1IZo",
-      "image_credit": "Sports247 Nigeria",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
       "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cmly0wwxl3n5t",
+          "title": "Nigeria vs Tanzania: Africa Cup of Nations Qualification stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+        },
         {
           "url": "https://www.sports247.ng/eric-chelle-admits-late-arrivals-of-super-eagles-players-affected-his-game-plan-for-fridays-clash-with-tanzania/",
           "title": "Eric Chelle Admits Late Arrivals Of Super Eagles' Players Affected His Game Plan For Friday's Clash With Tanzania",
@@ -96,24 +313,17 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjVsND6qne_guqbk_bu4M0i9ZxWxET1bgRxHsaGLJzI00IUQF-ncKNnCz1IZo"
         },
         {
-          "url": "https://dailytrust.com/super-eagles-eye-double-victories-over-tanzania-in-afcon-qualifiers/",
-          "title": "Super Eagles eye double victories over Tanzania in AFCON qualifiers",
-          "publisher": "Daily Trust",
+          "url": "https://realnewsmagazine.net/afcon-qualifier-aba-fans-urge-super-eagles-to-triumph-over-tanzania/",
+          "title": "AFCON Qualifier: Aba fans urge Super Eagles to triumph over Tanzania",
+          "publisher": "Realnews Magazine",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVohXXY23tn7innWVm9AEDrxz-LSD6vZHAMh7KIkXx8iGbZtZe885pHZBGlqg"
-        },
-        {
-          "url": "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii8vZGF0dW1mYW4uY29tL2ZpbGVzL3kueG1sIi8+PC9rcnBhbm8+&id=video-live-nigeria-v-tanzania-enzndyhdyzln",
-          "title": "[𝐒𝐓ream]hERE'S*!] Nigeria vs Tanzania 𝐋𝐈𝐕𝐄 Ｓｔｒｅａｍｓ Football ＯＮ Ｔｖ Ｃｈａｎｎｅｌ",
-          "publisher": "日本取引所グループ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRiAjaSnUkaQMOynjmSOOXMaFaDlqfET3VgCIT8Hzn_c84cYPvfBlH_9pWEZN0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHOxttkKVbI6CV6ji_6ix7VSC_uBCTTq3_jqaA4-Rj7XiQvsN3PGkEaFpALgM"
         }
       ]
     },
     {
       "query": "zelda ocarina of time remake sales",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-13T15:10:00Z",
       "related_news_urls": [
         "https://www.nintendo.com/us/whatsnew/the-legend-of-zelda-ocarina-of-time-for-nintendo-switch-2-sells-over-5-2-million-units-worldwide-in-first-four-days/",
@@ -143,216 +353,6 @@
           "publisher": "Mashable",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRghmIGiGPCgfRzGiXO0GjBw-CO8B0nbM_xCM4is-6jUGWDG3XCQ11FppreVU8"
-        }
-      ]
-    },
-    {
-      "query": "alex murdaugh",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T15:10:00Z",
-      "related_news_urls": [
-        "https://www.nbcnews.com/news/us-news/alex-murdaugh-wants-murder-indictments-dismissed-saying-agent-lied-gra-rcna609161",
-        "https://www.wistv.com/2026/11/13/sumter-clerk-says-court-is-prepared-murdaugh-retrial-jury-safeguards-face-scrutiny/",
-        "https://www.postandcourier.com/murdaugh-updates/crime-scene-confusion-alex-murdaugh-murders/article_3c906485-d5d3-494b-8a9f-f6007ade385a.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCd-T6VgaL9sOM6gIfHjDb_eOkYH66sbj-1uVf3fTp-3kY0MVPfEuziCojQCs",
-      "image_credit": "NBC News",
-      "news": [
-        {
-          "url": "https://www.nbcnews.com/news/us-news/alex-murdaugh-wants-murder-indictments-dismissed-saying-agent-lied-gra-rcna609161",
-          "title": "Alex Murdaugh wants murder indictments dismissed, saying agent lied to grand jury",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCd-T6VgaL9sOM6gIfHjDb_eOkYH66sbj-1uVf3fTp-3kY0MVPfEuziCojQCs"
-        },
-        {
-          "url": "https://www.wistv.com/2026/11/13/sumter-clerk-says-court-is-prepared-murdaugh-retrial-jury-safeguards-face-scrutiny/",
-          "title": "Sumter clerk says court is prepared for Murdaugh retrial as jury safeguards face scrutiny",
-          "publisher": "WIS News 10",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIXgld-lf9Ed3dXfetyI-GEC9UDEoUUzn1f1197RNWJigUWcM3gr6mReWdvz0"
-        },
-        {
-          "url": "https://www.postandcourier.com/murdaugh-updates/crime-scene-confusion-alex-murdaugh-murders/article_3c906485-d5d3-494b-8a9f-f6007ade385a.html",
-          "title": "Crime scene confusion still rampant as Murdaugh asks judge to toss murder charges",
-          "publisher": "Post and Courier",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSl9tlUQxm8HZwDPUpPr72eA7b85ShlUKS-MO9FR9_-uag0QUqTmEoZvCGuS8Y"
-        }
-      ]
-    },
-    {
-      "query": "ruby bridges",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T15:10:00Z",
-      "related_news_urls": [
-        "https://www.wusf.org/education/2026-11-13/ruby-bridges-tells-her-story-of-breaking-racist-barriers-to-sarasota-kids",
-        "https://ktvz.com/news/local-news/2026/11/12/ruby-bridges-walk-to-school-day-happening-tomorrow-for-bend-la-pine-schools/",
-        "https://baynews9.com/fl/tampa/culture/2026/11/12/walk-forward-tradition-teaching-bay-haven-students-about-civil-rights-history"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTUzZOTIhJtGC2Exmsf5EuETlvYkDoFv8JiDD3S-k1T4EckjSKmSOCj1quFLQ",
-      "image_credit": "WUSF",
-      "news": [
-        {
-          "url": "https://www.wusf.org/education/2026-11-13/ruby-bridges-tells-her-story-of-breaking-racist-barriers-to-sarasota-kids",
-          "title": "Ruby Bridges tells her story of breaking racist barriers to Sarasota kids",
-          "publisher": "WUSF",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTUzZOTIhJtGC2Exmsf5EuETlvYkDoFv8JiDD3S-k1T4EckjSKmSOCj1quFLQ"
-        },
-        {
-          "url": "https://ktvz.com/news/local-news/2026/11/12/ruby-bridges-walk-to-school-day-happening-tomorrow-for-bend-la-pine-schools/",
-          "title": "Ruby Bridges Walk to School Day happening tomorrow for Bend-La Pine Schools",
-          "publisher": "KTVZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQONePPUKmX_jd8b4pGR8fISnW070h34qMR0m9FTe0UF2N7ki32vXS0zybPevE"
-        },
-        {
-          "url": "https://baynews9.com/fl/tampa/culture/2026/11/12/walk-forward-tradition-teaching-bay-haven-students-about-civil-rights-history",
-          "title": "Walk Forward tradition teaching Bay Haven students about civil rights history",
-          "publisher": "Bay News 9",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSq_E3EIyDumfeGfjZCmUdkGomAjrCBJKBc0RpkTgTZ9Sb2oBx0k97lz_y2Ivk"
-        }
-      ]
-    },
-    {
-      "query": "cj henderson",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T15:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50471659/falcons-sign-de-thomas-cb-henderson-multiyear-extensions",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-13/minter-confirms-jackson-thumb-is-out-6-10-weeks",
-        "https://www.atlantafalcons.com/news/falcons-cj-henderson-contract-extension"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReUMFgx-HH0elCI2xoxMaPiuzjo8eAUT0g-G3nHTNcGCVN5p8sgAFyFLC4JTU",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50471659/falcons-sign-de-thomas-cb-henderson-multiyear-extensions",
-          "title": "Falcons sign DE Thomas, CB Henderson to multiyear extensions",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReUMFgx-HH0elCI2xoxMaPiuzjo8eAUT0g-G3nHTNcGCVN5p8sgAFyFLC4JTU"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-13/minter-confirms-jackson-thumb-is-out-6-10-weeks",
-          "title": "Minter confirms Jackson (thumb) is out 6-10 weeks",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDF65WyOYJZ-11vx_nQ7kF-PQc8FIU0e-QEPQ75N1y1_OY3rP7NWKyxWEIvwo"
-        },
-        {
-          "url": "https://www.atlantafalcons.com/news/falcons-cj-henderson-contract-extension",
-          "title": "Falcons agree to terms with CB C.J. Henderson on 2-year contract extension",
-          "publisher": "Atlanta Falcons",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFzVivOFFTlYNmRwtk0VAvV3tTSqrFySOxTLj0ur9WsTcZFnaG5S2q8gnpO0s"
-        }
-      ]
-    },
-    {
-      "query": "bahrain news",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T14:50:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/13/middleeast/iran-targets-us-military-site-in-gulf-first-time-in-two-months-intl",
-        "https://www.aljazeera.com/news/liveblog/2026/11/13/iran-war-live-riyadh-china-discuss-houthis-as-group-claims-aramco-attacks",
-        "https://www.reuters.com/world/middle-east/irans-guards-say-they-targeted-us-early-warning-radar-bahrain-2026-11-13/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9aWvUCYvjv7rXAivPDODxj50ZOPw7PWciHpqiukBhaFfotJLT2Ex_x08rcAM",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/13/middleeast/iran-targets-us-military-site-in-gulf-first-time-in-two-months-intl",
-          "title": "Iran targets US military site in Gulf for first time in two months as hopes for a deal fade",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9aWvUCYvjv7rXAivPDODxj50ZOPw7PWciHpqiukBhaFfotJLT2Ex_x08rcAM"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/liveblog/2026/11/13/iran-war-live-riyadh-china-discuss-houthis-as-group-claims-aramco-attacks",
-          "title": "Iran war live: US says shot down 2 drones over Bahrain, denies radar strike",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgligIGAhZcj7Op5-B5c4oI1-k2ACRm8EMmHuX9UGkPc-MzMC5b7-04N0JRMM"
-        },
-        {
-          "url": "https://www.reuters.com/world/middle-east/irans-guards-say-they-targeted-us-early-warning-radar-bahrain-2026-11-13/",
-          "title": "US denies Iran's claim that it attacked early-warning radar in Bahrain",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScMc8_ovudXN9ufoR2jxhO5CK980Mmc13ag-KE9z3bh8hui9WfThybdNnHsXA"
-        }
-      ]
-    },
-    {
-      "query": "nayib bukele",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T14:50:00Z",
-      "related_news_urls": [
-        "https://apnews.com/article/el-salvador-haiti-bukele-pandillas-ultimatum-afb0df3421ebd1e14e70643effa23899",
-        "https://cnnespanol.cnn.com/2026/11/11/mundo/video/el-salvador-tropas-ataque-pandilla-haiti-trax",
-        "https://www.bbc.com/mundo/articles/cmzx96kk0ly7o"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQMnf9gX7omFUvh4XkOpwcn4wP4YA_7qtA-T1D3p4fMIkvwD96BsUAAhdbSKU",
-      "image_credit": "AP News",
-      "news": [
-        {
-          "url": "https://apnews.com/article/el-salvador-haiti-bukele-pandillas-ultimatum-afb0df3421ebd1e14e70643effa23899",
-          "title": "Bukele lanza ultimátum a las pandillas haitianas tras tomar control del estadio de Puerto Príncipe",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQMnf9gX7omFUvh4XkOpwcn4wP4YA_7qtA-T1D3p4fMIkvwD96BsUAAhdbSKU"
-        },
-        {
-          "url": "https://cnnespanol.cnn.com/2026/11/11/mundo/video/el-salvador-tropas-ataque-pandilla-haiti-trax",
-          "title": "Las fuerzas salvadoreñas disparan contra la presunta base de una pandilla en Haití",
-          "publisher": "CNN en Español",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKaE9cyVTx4CgNxu28_vc8H0YAhL-GpmHjlL7fi3x_ama5C6FiE-WgO3slHSQ"
-        },
-        {
-          "url": "https://www.bbc.com/mundo/articles/cmzx96kk0ly7o",
-          "title": "Quién es Wilson \"Lanmò San Jou\" Joseph, el poderoso líder pandillero de Haití cuya casa Bukele dice haber destruido",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4KAjJQw28C3KMyAxOatG7fJBrYRyvSTFvdquAXwxi5bH_LVuOgwLebUXKbWU"
-        }
-      ]
-    },
-    {
-      "query": "michael wilbon",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-13T14:40:00Z",
-      "related_news_urls": [
-        "https://www.phillyvoice.com/michael-wilbon-espn-mens-health-care-attitudes/",
-        "https://sports.yahoo.com/articles/espn-michael-wilbon-announces-sad-173739365.html",
-        "https://awfulannouncing.com/espn/stephen-a-smith-michael-wilbon-health.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlzUtZvH_zvSdmK9w432IXn_N6eIoD3uQ2nuDO9_RJBCxvEidUzwctjmIHQhw",
-      "image_credit": "PhillyVoice",
-      "news": [
-        {
-          "url": "https://www.phillyvoice.com/michael-wilbon-espn-mens-health-care-attitudes/",
-          "title": "ESPN host Michael Wilbon's health issues should be a wake-up call for other men",
-          "publisher": "PhillyVoice",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlzUtZvH_zvSdmK9w432IXn_N6eIoD3uQ2nuDO9_RJBCxvEidUzwctjmIHQhw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/espn-michael-wilbon-announces-sad-173739365.html",
-          "title": "ESPN’s Michael Wilbon announces sad health news, immediate leave from ‘PTI’",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsj5l5nUKmJTbSIzY6Rq_G-BvCSG4cjYSUgXoKyDf4ldRU7ap3eKoCq7n76Ek"
-        },
-        {
-          "url": "https://awfulannouncing.com/espn/stephen-a-smith-michael-wilbon-health.html",
-          "title": "Stephen A. Smith happy Michael Wilbon is prioritizing his health: ‘This is good news’",
-          "publisher": "Awful Announcing",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXEhhqSYcvpyVc9RsF3UemCcfLb1bA--aROyOzHpizCrIEtEMfBKndgD-Nm3g"
         }
       ]
     }
