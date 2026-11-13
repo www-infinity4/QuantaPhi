@@ -3,27 +3,104 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T08:01:33.946061Z",
+  "checked_at": "2026-11-13T08:31:27.834758Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "gta 6 countdown",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T08:10:00Z",
+      "related_news_urls": [
+        "https://tech.yahoo.com/videos/gta-5-mod-turns-gta-163000084.html",
+        "https://www.pcgamer.com/games/grand-theft-auto/i-have-converted-gta-5-from-crime-sim-to-train-sim/",
+        "https://tech.yahoo.com/gaming/articles/converted-gta-5-final-form-105235346.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWwQgdf0Xk6kTh-QGS7WnEnxf5zhcxl1jKSVhiQtsW8j1TI0_qDSn94uwcUBA",
+      "image_credit": "Yahoo Tech",
+      "news": [
+        {
+          "url": "https://tech.yahoo.com/videos/gta-5-mod-turns-gta-163000084.html",
+          "title": "GTA 5 Mod Turns Into GTA 6 Chaos with Random Teleports!",
+          "publisher": "Yahoo Tech",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWwQgdf0Xk6kTh-QGS7WnEnxf5zhcxl1jKSVhiQtsW8j1TI0_qDSn94uwcUBA"
+        },
+        {
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/i-have-converted-gta-5-from-crime-sim-to-train-sim/",
+          "title": "I have converted GTA 5 from crime sim to train sim",
+          "publisher": "PC Gamer",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmUbPknCjw0cMhspV_jl1mc0t7fN8RX9NfFO7wes_zTZ6fIuuj6IStssRS8ig"
+        },
+        {
+          "url": "https://tech.yahoo.com/gaming/articles/converted-gta-5-final-form-105235346.html",
+          "title": "I have converted GTA 5 to its final form: A GTA 6 countdown app",
+          "publisher": "Yahoo Tech",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHqD7RPXxzSbn14M0CEAK06eUz5Vkr-L1iVW3VIsBhgjsoWRaMZQ60pyUarEg"
+        }
+      ]
+    },
+    {
+      "query": "avengers endgame encore",
+      "approx_searches": "100+",
+      "published_at": "2026-11-13T08:00:00Z",
+      "related_news_urls": [
+        "https://www.disneyplus.com/explore/articles/avengers-endgame-encore",
+        "https://deadline.com/2026/11/avengers-endgame-encore-disney-plus-stream-release-date-1237220911/",
+        "https://collider.com/avengers-endgame-encore-streaming-release-date-disney-plus-november-2026/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjm6OEl_stk5uVsbn2picCEB9F7hPIGBoH3vkV2YxQ-jiPcq_cTuA7p_W73sM",
+      "image_credit": "Disney Plus",
+      "news": [
+        {
+          "url": "https://www.disneyplus.com/explore/articles/avengers-endgame-encore",
+          "title": "Avengers Endgame: Encore: Streaming Details, Story, Cast & What To Watch Next | Explore Disney+",
+          "publisher": "Disney Plus",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjm6OEl_stk5uVsbn2picCEB9F7hPIGBoH3vkV2YxQ-jiPcq_cTuA7p_W73sM"
+        },
+        {
+          "url": "https://deadline.com/2026/11/avengers-endgame-encore-disney-plus-stream-release-date-1237220911/",
+          "title": "'Avengers Endgame: Encore' Sets Disney+ Release Date With New 'Countdown To Doomsday' Spot",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUcoJ9hxOwvrMlCnpo8nTA32FQepEeC1UR-HJObVdzwPvft47YJAq0K74jawY"
+        },
+        {
+          "url": "https://collider.com/avengers-endgame-encore-streaming-release-date-disney-plus-november-2026/",
+          "title": "Marvel Officially Releases New Avengers Movie on Disney+ in 48 Hours",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQacJTInYTEY6fYB-vq40MmTdeA9lUqleYlEDCXdjNUlgefs9DwEx158AY_-7A"
+        }
+      ]
+    },
     {
       "query": "new zealand breakers",
       "approx_searches": "100+",
       "published_at": "2026-11-13T07:40:00Z",
       "related_news_urls": [
-        "https://www.nbl.com.au/news/breakers-respond-parker-jackson-cartwright-injury",
-        "https://www.basketball.com.au/news/parker-jackson-cartwright-ruled-out-season-tibia-stress-fracture-new-zealand-breakers-nbl27",
-        "https://www.1news.co.nz/2026/11/10/devastating-for-the-club-breakers-dealt-massive-injury-blow/"
+        "https://www.nbl.com.au/news/tobias-cameron-breakers-parker-jackson-cartwright-injury",
+        "https://www.rnz.co.nz/news/sport/2556570/is-it-pain-or-injury-breakers-point-guard-parker-jackson-cartwright-s-battle-to-stay-on-court",
+        "https://www.basketball.com.au/news/parker-jackson-cartwright-ruled-out-season-tibia-stress-fracture-new-zealand-breakers-nbl27"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkchgzZFEdjOKbaDVn-KUM8qcsTDuXTZUxR4322DBLfv-5vMmo4xi7nvdrwS8",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVkFk-08k-ecpxz_F6URT6jDYSBrGslXZWSBpC_Yr1aj2Y2RuNgfqMFYEo_Tw",
       "image_credit": "NBL",
       "news": [
         {
-          "url": "https://www.nbl.com.au/news/breakers-respond-parker-jackson-cartwright-injury",
-          "title": "Breakers must find a way without MVP-level star",
+          "url": "https://www.nbl.com.au/news/tobias-cameron-breakers-parker-jackson-cartwright-injury",
+          "title": "New Zealand call up Tall Black to replace star",
           "publisher": "NBL",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkchgzZFEdjOKbaDVn-KUM8qcsTDuXTZUxR4322DBLfv-5vMmo4xi7nvdrwS8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVkFk-08k-ecpxz_F6URT6jDYSBrGslXZWSBpC_Yr1aj2Y2RuNgfqMFYEo_Tw"
+        },
+        {
+          "url": "https://www.rnz.co.nz/news/sport/2556570/is-it-pain-or-injury-breakers-point-guard-parker-jackson-cartwright-s-battle-to-stay-on-court",
+          "title": "‘Is it pain or injury?’: Breakers point guard Parker Jackson-Cartwright’s battle to stay on court",
+          "publisher": "RNZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYMzC8lew3WojYZgYNYM6MZZPXKZHjBuC2vLIBqIUFuiwOktww-kdbCErNGyI"
         },
         {
           "url": "https://www.basketball.com.au/news/parker-jackson-cartwright-ruled-out-season-tibia-stress-fracture-new-zealand-breakers-nbl27",
@@ -31,13 +108,6 @@
           "publisher": "Basketball.com.au",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOw94f_Lymi7Yhzli6M_rV1kQbuxmHPePM2fr6ExtqK05rbjzBp6XHxCUEnHU"
-        },
-        {
-          "url": "https://www.1news.co.nz/2026/11/10/devastating-for-the-club-breakers-dealt-massive-injury-blow/",
-          "title": "'Devastating for the club': Breakers dealt massive injury blow",
-          "publisher": "1News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYtb5HpIsyR6GpaDs3zF9tPF9n2MAV0PsRDiZ5XtZ1pCJQZJA4StV0mim8NJc"
         }
       ]
     },
@@ -221,44 +291,44 @@
       "approx_searches": "200+",
       "published_at": "2026-11-13T07:00:00Z",
       "related_news_urls": [
-        "https://www.nbl.com.au/news/how-to-watch-talking-points-new-zealand-v-brisbane-nbl27",
-        "https://www.gobet.com.au/nbl-tips/bullets-vs-breakers-round-9-2026-27/",
-        "https://kayosports.com.au/en-AU/competitor/Competitor:7ohxf7wf7hyk20sdhfdhc645k/1f40zanjm4qg412oet0wdv12xp/4rhu4qs3n063e46610dvgk3uu"
+        "https://redlandbaysidenews.com.au/brisbane-bullets-melbourne-united-loss/",
+        "https://www.basketball.com.au/news/nbl27-round-8-melbourne-united-brisbane-bullets-match-report",
+        "https://www.beforeyoubet.com.au/united-vs-bullets-prediction-tips-nbl27-round-8"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZRb4ws2Yx0Svg3C2sEjRKriftnBrHQP2syt4vh1sI0iwLN-Z0d6HODaVpxZI",
-      "image_credit": "NBL",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_2-45KE3y4seIgunk3VrzK0_tTsKLD8q_0bfME_UwHa3FonBHKASP66MV8Zs",
+      "image_credit": "Redland Bayside News",
       "news": [
         {
-          "url": "https://www.nbl.com.au/news/how-to-watch-talking-points-new-zealand-v-brisbane-nbl27",
-          "title": "How to watch & talking points: New Zealand v Brisbane",
-          "publisher": "NBL",
+          "url": "https://redlandbaysidenews.com.au/brisbane-bullets-melbourne-united-loss/",
+          "title": "Melbourne United Ends Brisbane Bullets Winning Streak",
+          "publisher": "Redland Bayside News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZRb4ws2Yx0Svg3C2sEjRKriftnBrHQP2syt4vh1sI0iwLN-Z0d6HODaVpxZI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_2-45KE3y4seIgunk3VrzK0_tTsKLD8q_0bfME_UwHa3FonBHKASP66MV8Zs"
         },
         {
-          "url": "https://www.gobet.com.au/nbl-tips/bullets-vs-breakers-round-9-2026-27/",
-          "title": "Bullets vs. Breakers Predictions - NBL Round 9 2026-27",
-          "publisher": "GoBet.com.au",
+          "url": "https://www.basketball.com.au/news/nbl27-round-8-melbourne-united-brisbane-bullets-match-report",
+          "title": "Son of gun's verdict on dad's career-high night",
+          "publisher": "Basketball.com.au",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0nUuWaWqHBC6xjofQ6tWXcdQqCj5mX1O_SaSji_40ynZ0sEzqjCIrS781IS0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRai8f2-W1LC7Bk9eG7EIeVzH-eBH4tPbGCYKNI0UVn_HHarDBCyM91eAPGxgw"
         },
         {
-          "url": "https://kayosports.com.au/en-AU/competitor/Competitor:7ohxf7wf7hyk20sdhfdhc645k/1f40zanjm4qg412oet0wdv12xp/4rhu4qs3n063e46610dvgk3uu",
-          "title": "New Zealand v Brisbane",
-          "publisher": "Kayo Sports",
+          "url": "https://www.beforeyoubet.com.au/united-vs-bullets-prediction-tips-nbl27-round-8",
+          "title": "United vs Bullets Prediction & Tips: NBL27 Round 8",
+          "publisher": "Before You Bet",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQROY5B--t821x3O516jz-hSYar1R0Ob_o3DalpNQWEZLMxB7zua8Ap3WURpw8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhaNOeeGRZX6sO7ui6AAdJSrlpSK-oMCiZeKkL0cgfGrSnrwfF7lKzeGQQM00"
         }
       ]
     },
     {
       "query": "selena gomez",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-13T07:00:00Z",
       "related_news_urls": [
         "https://variety.com/2026/tv/news/tv-biggest-salaries-zendaya-nicolas-cage-selena-gomez-more-1236945567/",
-        "https://www.tvline.com/2315341/tv-top-salaries-highest-paid-actors-streaming-list/",
-        "https://www.tmz.com/2026/11/12/zendaya-reese-witherspoon-jennifer-aniston-salaries-revealed/"
+        "https://www.thedailybeast.com/obsessed/trump-friendly-stars-revealed-as-highest-paid-actors-on-tv",
+        "https://www.yahoo.com/entertainment/tv/articles/zendaya-reese-witherspoon-jennifer-anistons-225510303.html"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPLs9LtxejfNApcfLIcaDFF7LGxsBDdalEDIVtJotuZkIuqXR6O0PQaM1OZoc",
       "image_credit": "Variety",
@@ -271,88 +341,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPLs9LtxejfNApcfLIcaDFF7LGxsBDdalEDIVtJotuZkIuqXR6O0PQaM1OZoc"
         },
         {
-          "url": "https://www.tvline.com/2315341/tv-top-salaries-highest-paid-actors-streaming-list/",
-          "title": "TV's Top Salaries: Which Streaming Stars Make $1 Million Or More Per Episode?",
-          "publisher": "TVLine",
+          "url": "https://www.thedailybeast.com/obsessed/trump-friendly-stars-revealed-as-highest-paid-actors-on-tv",
+          "title": "Trump-Friendly Stars Revealed as Highest-Paid Actors on TV",
+          "publisher": "The Daily Beast",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5PuOWGLUqG-xtDzVd9IvLa6aDGeh0lZlimkADd_ylE8NkYVWPLHTuh7OtzUE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTF0J1TwPPDpGgFiKsLR9HCBaK1ej_7bLQfA637ekjLkP8Nna54aDnQ6vzu2E4"
         },
         {
-          "url": "https://www.tmz.com/2026/11/12/zendaya-reese-witherspoon-jennifer-aniston-salaries-revealed/",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/zendaya-reese-witherspoon-jennifer-anistons-225510303.html",
           "title": "Zendaya, Reese Witherspoon & Jennifer Aniston's Gigantic TV Salaries Revealed",
-          "publisher": "TMZ",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn9U-Hik-E6VVym7Y5UUUolDwyX8EbJPyaJw42ZxgjJyTUVoQjdgp76B85ccA"
-        }
-      ]
-    },
-    {
-      "query": "kevin holland",
-      "approx_searches": "100+",
-      "published_at": "2026-11-13T07:00:00Z",
-      "related_news_urls": [
-        "https://sports.betmgm.com/en/blog/ufc/334-uros-medic-kevin-holland-predictions-odds-bm05/",
-        "https://cagesidepress.com/2026/11/11/ufc-334-kevin-holland-contract/",
-        "https://www.ufc.com/video/161823"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLlMemgdUfXzHPXpG6zqh5YmdVSZtkCRzdv0OSVwznXtG7Lso_OSbnf4TO694",
-      "image_credit": "sports.betmgm.com",
-      "news": [
-        {
-          "url": "https://sports.betmgm.com/en/blog/ufc/334-uros-medic-kevin-holland-predictions-odds-bm05/",
-          "title": "UFC 334: Uros Medic vs. Kevin Holland Predictions & Odds",
-          "publisher": "sports.betmgm.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLlMemgdUfXzHPXpG6zqh5YmdVSZtkCRzdv0OSVwznXtG7Lso_OSbnf4TO694"
-        },
-        {
-          "url": "https://cagesidepress.com/2026/11/11/ufc-334-kevin-holland-contract/",
-          "title": "UFC 334: Kevin Holland Expects New Contract to Be His Last",
-          "publisher": "Cageside Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpo_sD6O-6yEBmEchZKB0Xh8aKtnZMIWdn0E35uy0m7IdBW7i_kEHLfZX1bbE"
-        },
-        {
-          "url": "https://www.ufc.com/video/161823",
-          "title": "Uroš Medić: 'I'm Making My Way Towards The Belt' | Polymarket UFC 334",
-          "publisher": "UFC.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfpwiCsoR-Aa87s4yO6WEGf9idiR4ERkDBBA5faT0O9OE7mCI_qTbWTnKFNrM"
-        }
-      ]
-    },
-    {
-      "query": "james webb space telescope",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T06:50:00Z",
-      "related_news_urls": [
-        "https://www.space.com/astronomy/black-holes/astronomers-stunned-after-james-webb-space-telescope-discovers-the-earliest-pair-of-black-hole-powered-quasars",
-        "https://phys.org/news/2026-11-earliest-compact-quasar-pair-poses.html",
-        "https://universemagazine.com/en/astronomers-discover-two-supermassive-quasars-where-they-shouldnt-exist/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQE-PFDQeV8U_m6HjbZ4OFdWTxiT2DToPTQH5kshyH2PeLUHvoA7sKuuUVij1A",
-      "image_credit": "Space",
-      "news": [
-        {
-          "url": "https://www.space.com/astronomy/black-holes/astronomers-stunned-after-james-webb-space-telescope-discovers-the-earliest-pair-of-black-hole-powered-quasars",
-          "title": "Astronomers stunned after James Webb Space Telescope discovers the earliest pair of black hole-powered quasars",
-          "publisher": "Space",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQE-PFDQeV8U_m6HjbZ4OFdWTxiT2DToPTQH5kshyH2PeLUHvoA7sKuuUVij1A"
-        },
-        {
-          "url": "https://phys.org/news/2026-11-earliest-compact-quasar-pair-poses.html",
-          "title": "Earliest known compact quasar pair poses a black hole growth puzzle",
-          "publisher": "Phys.org",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_thHIxsKdSas2oAauJnTKCavv0qcWVqQD5VqnLBzjWnN_P0tlI3DUY_mTLsM"
-        },
-        {
-          "url": "https://universemagazine.com/en/astronomers-discover-two-supermassive-quasars-where-they-shouldnt-exist/",
-          "title": "The most distant pair of quasars in the early Universe has been discovered",
-          "publisher": "Universe Space Tech",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbowln-gPwxwzVwTev36Qgn-2MbpUK5rF0YdAR1DWmmMuwRR3Yk5u_MAkSub0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAI3I80RVrAcYKayni_VZX2FFNwSgqUqe_B0yqQIQDjcW_aGCObhlaImFO3t4"
         }
       ]
     }
