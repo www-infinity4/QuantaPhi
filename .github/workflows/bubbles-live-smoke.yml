@@ -2,6 +2,10 @@ name: Bubbles public live and owner-boundary smoke
 on:
   pull_request:
     paths:
+      - 'bubbles-ai.js'
+      - 'bubbles-complete-me*'
+      - 'test/bubbles-complete-me.test.mjs'
+      - 'test/bubbles-complete-me.browser.spec.mjs'
       - 'scripts/bubbles-live-smoke.mjs'
       - 'test/bubbles-live-smoke.test.mjs'
       - '.github/workflows/bubbles-live-smoke.yml'
@@ -9,6 +13,9 @@ on:
     branches: [main]
     paths:
       - 'bubbles-ai.js'
+      - 'bubbles-complete-me*'
+      - 'test/bubbles-complete-me.test.mjs'
+      - 'test/bubbles-complete-me.browser.spec.mjs'
       - 'bubbles-brain-actions.js'
       - 'workers/bubbles-tools/**'
       - 'scripts/bubbles-live-smoke.mjs'
@@ -35,6 +42,8 @@ jobs:
           node-version: '24'
       - name: Verify test itself without network
         run: node --test test/bubbles-live-smoke.test.mjs
+      - name: Verify Complete Me through the existing Brain owner intake and runner
+        run: node --test test/bubbles-complete-me.test.mjs
       - name: Check public Bubbles health, CORS and private owner boundary
         env:
           # A PR only tests public security boundaries, not production GPT billable inference.
@@ -49,3 +58,22 @@ jobs:
           path: repository-receipts/bubbles-live-smoke.json
           if-no-files-found: warn
           retention-days: 14
+  complete-me-browser:
+    if: github.event_name == 'pull_request' || github.event_name == 'push'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install test-only Chromium
+        run: |
+          npm install --no-save --package-lock=false @playwright/test@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Check the Bubbles composer and project card at Android width
+        run: |
+          python3 -m http.server 8799 --bind 127.0.0.1 &
+          npx playwright test test/bubbles-complete-me.browser.spec.mjs --reporter=line --workers=1

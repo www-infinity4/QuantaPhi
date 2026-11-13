@@ -2432,6 +2432,26 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  let failedTurn=false;
  try{
  if(spoken&&await consumeOwnerCodeFromChat(spoken,fromVoice))return;
+ if(/^complete me ai(?:$|\s*[-–—:])/i.test(spoken)){
+  if(embedded){status.textContent='Open Bubbles on QuantaPhi to use Complete Me AI.';return;}
+  if(pendingImage||pendingImages.length){status.textContent='Complete Me AI uses a text brief. Your attachment is still in the composer.';return;}
+  const thread=activeThread;
+  try{
+   const {openCompleteMe}=await import('/bubbles-complete-me.mjs');
+   await openCompleteMe(conversation,spoken,{authorize:verifiedOwnerHeaders,scopeActive:()=>thread===activeThread,
+    initialRepository:repositorySelectionExplicit&&repositorySelection.size===1?[...repositorySelection][0]:'',
+    request:async(path,data,authorization)=>{
+     const response=await bubblesFetch(BRAIN+path,{method:'POST',cache:'no-store',
+      headers:{Authorization:authorization,'Content-Type':'application/json'},body:JSON.stringify(data)},30000);
+     const result=await response.json();
+     if(response.status===401||response.status===403)return {ok:false,error:'owner_authorization_required'};
+     return response.ok?result:{ok:false,error:result?.error};
+    }});
+   clearSentComposer();
+   status.textContent='Complete Me AI is open.';
+  }catch(error){status.textContent=String(error.message||'Complete Me AI could not open.').slice(0,150);}
+  return;
+ }
  // A deliberate Claude choice applies to the main Bubbles composer and skips
  // unrelated Oracle/tool routing. No text or attachments may be silently lost.
  if(!embedded&&modelChoice.value==='claude'){
