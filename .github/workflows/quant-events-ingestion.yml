@@ -1,0 +1,40 @@
+name: Quant events D1 ingestion tests
+on:
+  pull_request:
+    paths:
+      - 'workers/quant-events/**'
+      - '.github/workflows/quant-events-ingestion.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'workers/quant-events/**'
+      - '.github/workflows/quant-events-ingestion.yml'
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run Worker HTTP, Queue and real SQLite tests (no npm)
+        run: node --experimental-strip-types --test workers/quant-events/tests/*.test.mjs
+      - name: Validate D1 schema using Python SQLite (no npm)
+        run: |
+          python3 - <<'PY'
+          import sqlite3, pathlib
+          p=pathlib.Path('workers/quant-events/migrations/0001_quant_events.sql')
+          conn=sqlite3.connect(':memory:')
+          conn.execute('PRAGMA foreign_keys=ON')
+          conn.executescript(p.read_text())
+          consent=pathlib.Path('workers/quant-events/migrations/0002_quant_event_consents.sql')
+          conn.executescript(consent.read_text())
+          names={r[0] for r in conn.execute("SELECT name FROM sqlite_master WHERE type='table'")}
+          assert 'quant_event_consents' in names
+          idx=[r[2] for r in conn.execute("PRAGMA index_info('idx_events_user_type_created')")]
+          assert idx==['user_id','event_type','created_at_ms']
+          print('D1 schema and compound index OK')
+          PY

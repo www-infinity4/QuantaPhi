@@ -1,0 +1,31 @@
+{
+  "name": "quantaphi-quant-events-worker-staging",
+  "main": "src/ingest.ts",
+  "compatibility_date": "2026-11-08",
+  "workers_dev": false,
+  "routes": [],
+  "vars": {
+    "INGEST_MODE": "queue",
+    "GEO_STORAGE_ENABLED": "false",
+    "DIRECT_STAGING_ALLOWED": "false"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "quantaphi-quant-events-staging",
+      "database_id": "d87794f4-a150-469c-bf08-c1055807b145"
+    }
+  ],
+  "queues": {
+    "consumers": [
+      {
+        "queue": "quantaphi-quant-events-staging",
+        "max_batch_size": 2,
+        "max_batch_timeout": 2,
+        "max_retries": 2,
+        "max_concurrency": 1,
+        "dead_letter_queue": "quantaphi-quant-events-staging-dlq"
+      }
+    ]
+  }
+}
