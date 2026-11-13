@@ -3,9 +3,10 @@ const base='http://127.0.0.1:8799';
 test.use({viewport:{width:390,height:844}});
 test('Zeus Coliseum supports private idea creation, a local Joust, branching and switching rooms',async({page})=>{
  await page.goto(base+'/coliseum/',{waitUntil:'domcontentloaded'});
- await expect(page.getByRole('heading',{name:/EXPERIENCE THE/})).toBeVisible();
+ await expect(page.getByRole('heading',{name:/Zeus AI/})).toBeVisible();
  await expect(page.locator('#modelCards > button')).toHaveCount(4);
  await expect(page.getByText('PRIVATE DEVICE DEMO')).toBeVisible();
+ await page.getByRole('button',{name:'Build',exact:true}).click();
  await page.locator('#ideaTitle').fill('A modular radio repair exchange');
  await page.locator('#ideaDescription').fill('Connect neighborhood radio enthusiasts with verified repair instructions and exchangeable spare parts.');
  await page.getByRole('button',{name:'Enter idea into the Joust'}).click();
@@ -15,10 +16,12 @@ test('Zeus Coliseum supports private idea creation, a local Joust, branching and
  await page.getByRole('button',{name:'Branch project'}).click();
  await expect(page.locator('#ideaList .idea-card')).toHaveCount(2);
  await page.getByRole('button',{name:'Chat',exact:true}).click();
+ await page.locator('#zeusLocalNotes summary').click();
  await page.locator('#chatMessage').fill('Testing a version for radio enthusiasts.');
  await page.getByRole('button',{name:'Save local note'}).click();
  await expect(page.locator('#chatLog')).toContainText('Testing a version for radio enthusiasts.');
  await page.reload({waitUntil:'domcontentloaded'});
+ await page.getByRole('button',{name:'Build',exact:true}).click();
  await expect(page.locator('#ideaList .idea-card')).toHaveCount(2);
  await page.getByRole('button',{name:'Find the next arena'}).click();
  await expect(page.locator('#currentRoom')).toHaveText('HERMES 6.6');

@@ -17,6 +17,10 @@ const validHistory=d=>d&&d.version===1&&Array.isArray(d.threads)&&d.threads.leng
  t.sessions.every(s=>Array.isArray(s.items)&&s.items.length<=40));
 const read=()=>{try{const v=JSON.parse(localStorage.getItem(STORE)||'null');return validHistory(v)?v:newHistory()}catch{return newHistory()}};
 let history=read(),selected=history.threads[0]?.id||null,focusedSessionId=null;
+const PROJECT_TITLE_DRAFT_KEY='infinity:zeus-project-title-draft:v1';
+let projectTitleDraft=''; // session-local, never a cloud/account history write
+try{projectTitleDraft=sessionStorage.getItem(PROJECT_TITLE_DRAFT_KEY)||''}catch{}
+const persistProjectTitle=()=>{try{sessionStorage.setItem(PROJECT_TITLE_DRAFT_KEY,projectTitleDraft)}catch{}};
 const arena=document.getElementById('arena');
 if(arena){
  const root=el('section','zeus-history');root.id='zeusSessionHistory';root.setAttribute('aria-labelledby','zeusHistoryTitle');
@@ -63,21 +67,58 @@ if(arena){
  const makeForm=(inputs,onSubmit)=>{
   const form=el('form','zeus-history-form');
   for(const input of inputs)form.append(input);
-  form.addEventListener('submit',e=>{e.preventDefault();onSubmit()});return form;
+  const submit=()=>{if(form.reportValidity())onSubmit()};
+  // Explicit actions do not depend on a browser-native form submission.
+  for(const control of form.querySelectorAll('button[type="submit"]')){
+   control.type='button';
+   control.addEventListener('click',e=>{e.preventDefault();submit()});
+  }
+  form.addEventListener('keydown',e=>{
+   if(e.key==='Enter'&&!e.shiftKey&&!e.isComposing&&e.target.tagName==='INPUT'){
+    e.preventDefault();submit();
+   }
+  });
+  form.addEventListener('submit',e=>{e.preventDefault();submit()});
+  return form;
  };
  const field=(name,tag='input')=>{
   const n=el(tag);n.setAttribute('aria-label',name);n.placeholder=name;n.maxLength=tag==='textarea'?3000:250;
   if(tag==='textarea')n.rows=3;return n;
  };
  function renderSide(){
+  // Preserve the visible draft before replacing this panel. A navigation or
+  // another local history action can redraw a live, focused title input.
+  const previousTitle=side.querySelector('.zeus-history-new input');
+  if(previousTitle?.value&&previousTitle.value!==projectTitleDraft){
+   projectTitleDraft=previousTitle.value;
+   persistProjectTitle();
+  }
   side.replaceChildren(el('h3','','Project threads'));
-  const form=el('form','zeus-history-new');
-  const title=field('New project or topic title');title.required=true;title.minLength=3;title.maxLength=90;
-  const add=el('button','primary','Create project thread');add.type='submit';form.append(title,add);
-  form.addEventListener('submit',e=>{
-   e.preventDefault();
-   mutate(()=>{const t=createThread(history,title.value);selected=t.id;focusedSessionId=null},'Created a private project thread');
+  const form=el('form','zeus-history-new');form.autocomplete='off';
+  const title=field('New project or topic title');title.required=true;title.minLength=3;title.maxLength=90;title.autocomplete='off';
+  title.value=projectTitleDraft;
+  const rememberTitle=()=>{projectTitleDraft=title.value;persistProjectTitle()};
+  title.addEventListener('input',rememberTitle);
+  title.addEventListener('change',rememberTitle);
+  const add=el('button','primary','Create project thread');add.type='button';form.append(title,add);
+  const createProjectThread=()=>{
+   // A different history action may redraw the form after the visitor typed.
+   // Use the last edited draft rather than submitting a newly blank field.
+   const requested=title.value.trim()?title.value:projectTitleDraft;
+   const created=mutate(()=>{
+    const thread=createThread(history,requested);
+    selected=thread.id;focusedSessionId=null;return thread;
+   },'Created a private project thread');
+   // Clear only after the local write succeeds; a failed save keeps the draft.
+   if(created){projectTitleDraft='';persistProjectTitle();const next=side.querySelector('.zeus-history-new input');if(next)next.value='';}
+  };
+  // Prevent implicit browser submission from racing the saved title draft.
+  // Enter and button activation take the same single explicit path.
+  add.addEventListener('click',e=>{e.preventDefault();createProjectThread()});
+  title.addEventListener('keydown',e=>{
+   if(e.key==='Enter'&&!e.isComposing){e.preventDefault();createProjectThread()}
   });
+  form.addEventListener('submit',e=>e.preventDefault());
   side.append(form);
   const list=el('div','zeus-history-threads');
   if(!history.threads.length)list.append(el('p','', 'No local threads yet. Create one above.'));
@@ -180,4 +221,13 @@ if(arena){
  }
  function render(){renderSide();renderDetail();notice.textContent='Last recorded action: '+lastActivity}
  render();
+ // Chromium may restore a previous blank form value after module evaluation.
+ // Rehydrate only empty input from the current tab's unsent draft.
+ window.addEventListener('pageshow',()=>{
+  try{
+   const stored=sessionStorage.getItem(PROJECT_TITLE_DRAFT_KEY)||'';
+   const input=side.querySelector('.zeus-history-new input');
+   if(stored&&input&&!input.value){projectTitleDraft=stored;input.value=stored}
+  }catch{}
+ });
 }

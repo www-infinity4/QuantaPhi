@@ -88,11 +88,140 @@ function renderChat(){
   const div=node('div','chat-note');div.append(node('small','You · '+formatDate(note.createdAt)),node('p','',note.text));root.append(div);
  }
 }
+// Open the existing Bubbles chat once, inside Zeus' actual Chat tab.
+// The iframe never receives wallet credentials, owner powers or fake replies.
+let zeusAssistantStarted=false,zeusAssistantReady=false,questPending=null,questLastAttempt=null;
+function mountZeusAssistant(){
+ if(zeusAssistantStarted)return;
+ const iframe=el('zeusAssistantFrame'),status=el('zeusAssistantStatus');
+ if(!iframe||!status)return;
+ zeusAssistantStarted=true;
+ const id='coliseum-zeus-assistant';
+ const query=new URLSearchParams({embed:'1',id,role:'builder',name:'Zeus AI',
+  instructions:'You are Zeus AI, the Infinity Coliseum builder, using the existing Bubbles assistant service. Give useful answers, identify tool limitations honestly, and ask before publishing, charging or running owner jobs.'});
+ const openChat=()=>iframe.contentWindow?.postMessage({type:'quantaphi:bubbles:open',id},window.location.origin);
+ // An iframe load alone can also be a 404 or challenge. Only the script can send ready.
+ iframe.addEventListener('load',()=>{
+  // A navigating/reloaded iframe is a new script instance. Its prior ready
+  // event cannot authorize delivery to the replacement document.
+  zeusAssistantReady=false;
+  status.textContent='Waiting for the verified Bubbles conversation to initialize…';
+  // Explicitly request fresh readiness: the child might have sent its first
+  // ready event before the parent's load handler ran.
+  openChat();
+ });
+ window.addEventListener('message',event=>{
+  if(event.origin!==window.location.origin||event.source!==iframe?.contentWindow||
+   event.data?.type!=='quantaphi:bubbles:ready'||event.data.id!==id)return;
+  zeusAssistantReady=true;
+  openChat();
+  status.textContent='Bubbles conversation initialized. Send your question to get an AI reply.';
+  deliverQuest();
+ });
+ iframe.addEventListener('error',()=>{
+  zeusAssistantReady=false;
+  status.textContent='Bubbles chat could not load. Use the full Bubbles chat link below.';
+  el('zeusQuestStatus').textContent='Chat unavailable. Your question is still in the textbox.';
+  el('zeusQuestSend').disabled=false;
+  questPending=null;
+ });
+ iframe.src='/bubbles.html?'+query.toString();
+ setTimeout(()=>{
+  if(zeusAssistantReady)return;
+  status.textContent='Bubbles did not verify initialization. Your draft is saved; use the full Bubbles chat link if needed.';
+ },10000);
+}
+// The top-page Send is a user-initiated handoff to the SAME Bubbles AI conversation.
+ // A request ID prevents lost-ack retries from duplicating a question.
+function deliverQuest(){
+ if(!zeusAssistantReady||!questPending||questPending.dispatched)return;
+ const iframe=el('zeusAssistantFrame');
+ questPending.dispatched=true;
+ iframe.contentWindow?.postMessage({
+  type:'quantaphi:bubbles:quest',id:'coliseum-zeus-assistant',
+  requestId:questPending.requestId,prompt:questPending.text
+ },window.location.origin);
+}
+const questForm=el('zeusQuestForm'),questInput=el('zeusQuestInput'),
+ questSend=el('zeusQuestSend'),questStatus=el('zeusQuestStatus'),
+ questReply=el('zeusQuestReply');
+const ZEUS_DRAFT_KEY='quantaphi:zeus:quest-draft:v1';
+function saveQuestDraft(){
+ try{sessionStorage.setItem(ZEUS_DRAFT_KEY,questInput.value)}catch{}
+}
+try{questInput.value=sessionStorage.getItem(ZEUS_DRAFT_KEY)||''}catch{}
+questInput.addEventListener('input',saveQuestDraft);
+el('zeusStartQuest')?.addEventListener('click',()=>{
+ setMode('chat');questInput.focus();questInput.scrollIntoView({block:'center',behavior:'smooth'});
+});
+function releaseQuest(pending,message,{retrySameId=true}={}){
+ if(questPending!==pending)return;
+ questPending=null;questSend.disabled=false;
+ if(!retrySameId)questLastAttempt=null;
+ questStatus.textContent=message;
+}
+questInput.addEventListener('keydown',event=>{
+ if(event.key==='Enter'&&!event.shiftKey&&!event.isComposing){
+  event.preventDefault();questForm.requestSubmit();
+ }
+});
+questForm.addEventListener('submit',event=>{
+ event.preventDefault();
+ const text=questInput.value.trim();
+ if(!text||text.length>1800||questPending)return;
+ setMode('chat');
+ const requestId=questLastAttempt?.text===text?questLastAttempt.requestId:
+  'quest_'+crypto.randomUUID();
+ const pending={requestId,text,dispatched:false,acknowledged:false};
+ questPending=pending;questLastAttempt={requestId,text};
+ questSend.disabled=true;saveQuestDraft();
+ questStatus.textContent=zeusAssistantReady?
+  'Sending your question into the Bubbles conversation…':
+  'Connecting to Bubbles. Your draft remains saved until a real answer arrives.';
+ deliverQuest();
+ setTimeout(()=>{
+  if(questPending===pending&&!pending.acknowledged)
+   releaseQuest(pending,'Bubbles did not acknowledge the request. Your draft is saved; Send will retry the same request.');
+ },12000);
+ setTimeout(()=>{
+  if(questPending===pending)
+   releaseQuest(pending,'Bubbles did not confirm an answer in time. Your draft is saved; Send will check the same request before repeating it.');
+ },90000);
+});
+window.addEventListener('message',event=>{
+ const iframe=el('zeusAssistantFrame'),data=event.data;
+ if(event.origin!==window.location.origin||event.source!==iframe?.contentWindow||
+  !questPending||data?.id!=='coliseum-zeus-assistant'||
+  data.requestId!==questPending.requestId)return;
+ const pending=questPending;
+ if(data.type==='quantaphi:bubbles:quest-ack'){
+  if(data.status==='accepted'){
+   pending.acknowledged=true;
+   questStatus.textContent='Question accepted; waiting for an actual Bubbles reply…';
+  }else{
+   releaseQuest(pending,data.status==='busy'?
+    'Bubbles is busy. Your draft is saved; try Send again when ready.':
+    'Bubbles refused the request. Your draft remains saved.',{retrySameId:false});
+  }
+  return;
+ }
+ if(data.type!=='quantaphi:bubbles:quest-result')return;
+ if(data.status==='complete'&&typeof data.reply==='string'&&data.reply.trim()){
+  questReply.textContent=data.reply.slice(0,8000);
+  questReply.hidden=false;
+  if(questInput.value.trim()===pending.text){questInput.value='';saveQuestDraft();}
+  releaseQuest(pending,'Answer received from Bubbles. The conversation is below.',{retrySameId:false});
+ }else{
+  releaseQuest(pending,'Bubbles could not confirm an answer. Your draft is saved so you can retry.',{retrySameId:false});
+ }
+});
 function setMode(next){
+ document.body.dataset.zeusMode=next;
  el('chatPane').hidden=next!=='chat';el('buildPane').hidden=next!=='build';
+ if(next==='chat')mountZeusAssistant();
  el('chatTab').setAttribute('aria-pressed',String(next==='chat'));
  el('buildTab').setAttribute('aria-pressed',String(next==='build'));
- notify((next==='chat'?'Chat':'Build')+' mode is a private prototype; no people or AI providers are connected.');
+ notify(next==='chat'?'Zeus chat uses Bubbles AI. Send a message to check live responses.':'Build mode keeps project drafts on your device; shared rooms are still a prototype.');
 }
 el('pitchForm').addEventListener('submit',event=>{
  event.preventDefault();
@@ -121,4 +250,4 @@ el('resetDemo').addEventListener('click',()=>{
  if(!confirm('Clear local Coliseum ideas, votes and notes from this browser?'))return;
  store={ideas:[],notes:[],votes:{}};write();renderIdeas();renderChat();notify('Local demo cleared. No wallet or cloud account was changed.');
 });
-renderModels();renderRooms();renderSectors();renderIdeas();renderChat();setMode('build');
+renderModels();renderRooms();renderSectors();renderIdeas();renderChat();setMode('chat');

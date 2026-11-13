@@ -4,11 +4,12 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Infinity® Coliseum — Zeus 6.2 and Greek-God Builder Cards</title>
 <meta name="description" content="Explore Infinity Coliseum: a prototype group-building arena with Greek-god experience cards, idea challenges, and project branching.">
-<meta name="theme-color" content="#0b1725">
+<meta name="theme-color" content="#081421">
 <meta property="og:title" content="Infinity® Coliseum — Bring an idea. Find your team.">
 <meta property="og:description" content="Zeus 6.2 and the Greek-God model collection: collaboration, build rooms, and idea jousts. A prototype, not a third-party model subscription.">
 <meta property="og:url" content="https://quantaphi.org/coliseum/index.html">
 <link rel="stylesheet" href="./coliseum.css">
+<link rel="stylesheet" href="./zeus-chat-repair.css?v=20261102">
 <link rel="stylesheet" href="./session-history.css">
 <script>window.QuantaCloudConnectionDisableAutoRecovery=true;</script>
 <script src="/cloud-wallet-client.js" defer></script>
@@ -24,11 +25,48 @@
  <div class="hero-art" aria-hidden="true"><div class="lightning">ϟ</div><div class="bolt-lines"></div><div class="temple">▰ ▰ ▰ ▰ ▰</div></div>
  <div class="hero-copy">
   <p class="eyebrow">THE FIRST ARENA · ZEUS 6.2</p>
-  <h1 id="hero-title">EXPERIENCE THE<br><em>GOD OF THUNDER.</em></h1>
-  <p class="hero-lead">Build in the Coliseum. Your idea could change everything.</p>
-  <p>Join the arena, choose a sector, pitch your idea, and find collaborators. A Joust challenges the idea—not the person. If one group declines, start a new direction with the builders who believe in it.</p>
-  <div class="hero-buttons"><a class="primary" href="#arena">Enter the Coliseum</a><a class="secondary" href="#models">Explore model cards</a></div>
-  <p class="disclosure">Interactive prototype · Notes and sample votes stay in this browser · No public AI model, paid access or shared room is activated.</p>
+  <h1 id="hero-title">Zeus AI</h1>
+  <p class="hero-lead">A real conversation, powered by the existing Bubbles AI service.</p>
+  <form id="zeusQuestForm" class="zeus-quest-form" aria-label="Start a quest with Zeus AI">
+    <label for="zeusQuestInput">Ask Zeus anything</label>
+    <div class="zeus-quest-compose">
+      <textarea id="zeusQuestInput" rows="2" maxlength="1800" placeholder="Type your question or describe what you want to build…" autocomplete="off" required></textarea>
+      <button id="zeusQuestSend" type="submit">Send</button>
+    </div>
+    <p id="zeusQuestStatus" class="zeus-quest-status" role="status" aria-live="polite">Write a message and press Send to start your AI conversation.</p>
+    <div id="zeusQuestReply" class="zeus-quest-reply" role="log" aria-label="Confirmed Bubbles answer" aria-live="polite" hidden></div>
+  </form>
+
+  <p>Ask questions and work on ideas in the chat. The separate Build tab keeps your private local project drafts. Replies depend on the connected Bubbles service; this page does not invent a Zeus model.</p>
+  <div class="hero-buttons"><button id="zeusStartQuest" class="primary" type="button">Start Quest</button><a class="secondary" href="/">Quick Cards</a></div>
+  <p class="disclosure">Zeus is an Infinity experience using Bubbles AI, not a separate trained model. Local project drafts stay on this device. No paid access or shared room is activated.</p>
+ </div>
+</section>
+<section id="arena" class="arena" aria-labelledby="arena-title">
+ <div class="arena-heading"><div><p class="eyebrow">THE COLISEUM · BUILDER PREVIEW</p><h2 id="arena-title">Zeus conversation</h2><p>Chat first. Switch to Build for private project drafts and optional sector planning.</p></div><span class="local-pill">PRIVATE DEVICE DEMO</span></div>
+ <div class="arena-layout">
+  <aside class="rooms"><h3>Select an experience</h3><div id="roomList" class="room-list"></div><h3>Sector directory</h3><div id="sectors" class="sector-list"></div><p class="fineprint">AI replies, real users and live occupancy are not simulated. The room is a private interactive design proof.</p></aside>
+  <div class="workzone">
+   <div class="workzone-top"><div><span class="eyebrow" id="currentRoom">ZEUS 6.2</span><h3 id="roomHeadline">The Thunder Arena</h3></div><div class="mode-toggle" role="group" aria-label="Builder mode"><button id="chatTab" type="button" aria-pressed="false">Chat</button><button id="buildTab" type="button" aria-pressed="true">Build</button></div></div>
+   <p id="roomStatus" class="notice" role="status" aria-live="polite">Chat uses the existing Bubbles service. Collaborative rooms remain a local prototype.</p>
+   <section id="buildPane" aria-labelledby="pitchHeading"><h4 id="pitchHeading">Put an idea into the arena</h4>
+    <form id="pitchForm" class="pitch-form">
+     <label for="ideaTitle">Project title</label><input id="ideaTitle" name="title" required minlength="5" maxlength="110" placeholder="A durable electronics repair marketplace">
+     <label for="ideaDescription">What would your group build?</label><textarea id="ideaDescription" name="description" required minlength="12" maxlength="1800" rows="4" placeholder="Describe the user problem, your approach, and what help you need from other builders."></textarea>
+     <button class="primary" type="submit">Enter idea into the Joust</button>
+    </form>
+    <div class="list-heading"><h4>Ideas in this device's arena</h4><small id="ideaCount"></small></div>
+    <div id="ideaList" class="idea-list"></div>
+   </section>
+   <section id="chatPane" hidden aria-labelledby="chatHeading">
+    <h4 id="chatHeading">Zeus AI · Live chat</h4><p class="fineprint">Uses the actual Bubbles conversation engine, including its connected AI reply service. This is not a newly trained model or a shared public room.</p>
+    <div class="zeus-assistant-mount" id="zeusAssistantMount"><p id="zeusAssistantStatus" role="status">Connecting Zeus to Bubbles chat…</p><iframe id="zeusAssistantFrame" title="Zeus AI · Bubbles conversation" allow="microphone" sandbox="allow-scripts allow-same-origin allow-forms allow-popups" referrerpolicy="same-origin"></iframe><p class="fineprint">If the assistant cannot load, <a href="/bubbles.html">open the full Bubbles chat</a>. Unavailable AI connections must report an error, never a fabricated answer.</p></div>
+    <details id="zeusLocalNotes"><summary>Local planning notes (offline)</summary><p class="fineprint">These older scratchpad notes are separate from AI messages and remain on this device.</p>
+    <div id="chatLog" class="chat-log" aria-live="polite"></div>
+    <form id="chatForm" class="pitch-form"><label for="chatMessage">Your note for this local group draft</label><textarea id="chatMessage" rows="3" maxlength="1000" required placeholder="What could the group improve or test next?"></textarea><button class="primary" type="submit">Save local note</button></form></details>
+   </section>
+   <div class="switchline"><span>Not the right fit?</span><button id="switchRoom" type="button" class="secondary">Find the next arena</button><button id="resetDemo" type="button" class="secondary">Clear demo data</button></div>
+  </div>
  </div>
 </section>
 <section id="models" class="models" aria-labelledby="models-title">
@@ -43,31 +81,6 @@
   <article class="plan"><strong>Forge Pass</strong><h3>$100 <span>/month</span></h3><p>Includes Coliseum Pass plus the proposed Hephaestus engineering rooms.</p><small>Checkout not connected</small></article>
  </div>
  <p class="fineprint">Proposed pricing only. PayPal billing, verified membership, refunds, cancellation controls and server-enforced capacity must be tested before taking payments. Losing a vote does not cancel a membership.</p>
-</section>
-<section id="arena" class="arena" aria-labelledby="arena-title">
- <div class="arena-heading"><div><p class="eyebrow">THE COLISEUM · BUILDER PREVIEW</p><h2 id="arena-title">The group builder</h2><p>Choose your room, submit a project, discuss its direction, or open a new project branch.</p></div><span class="local-pill">PRIVATE DEVICE DEMO</span></div>
- <div class="arena-layout">
-  <aside class="rooms"><h3>Select an experience</h3><div id="roomList" class="room-list"></div><h3>Sector directory</h3><div id="sectors" class="sector-list"></div><p class="fineprint">AI replies, real users and live occupancy are not simulated. The room is a private interactive design proof.</p></aside>
-  <div class="workzone">
-   <div class="workzone-top"><div><span class="eyebrow" id="currentRoom">ZEUS 6.2</span><h3 id="roomHeadline">The Thunder Arena</h3></div><div class="mode-toggle" role="group" aria-label="Builder mode"><button id="chatTab" type="button" aria-pressed="false">Chat</button><button id="buildTab" type="button" aria-pressed="true">Build</button></div></div>
-   <p id="roomStatus" class="notice" role="status" aria-live="polite">A local preview, not a connected multiuser room.</p>
-   <section id="buildPane" aria-labelledby="pitchHeading"><h4 id="pitchHeading">Put an idea into the arena</h4>
-    <form id="pitchForm" class="pitch-form">
-     <label for="ideaTitle">Project title</label><input id="ideaTitle" name="title" required minlength="5" maxlength="110" placeholder="A durable electronics repair marketplace">
-     <label for="ideaDescription">What would your group build?</label><textarea id="ideaDescription" name="description" required minlength="12" maxlength="1800" rows="4" placeholder="Describe the user problem, your approach, and what help you need from other builders."></textarea>
-     <button class="primary" type="submit">Enter idea into the Joust</button>
-    </form>
-    <div class="list-heading"><h4>Ideas in this device's arena</h4><small id="ideaCount"></small></div>
-    <div id="ideaList" class="idea-list"></div>
-   </section>
-   <section id="chatPane" hidden aria-labelledby="chatHeading">
-    <h4 id="chatHeading">Builder conversation</h4><p class="fineprint">This is a private discussion scratchpad, not a ChatGPT conversation or a shared group chat. Connect an authorized AI and verified users before enabling live conversations.</p>
-    <div id="chatLog" class="chat-log" aria-live="polite"></div>
-    <form id="chatForm" class="pitch-form"><label for="chatMessage">Your note for this local group draft</label><textarea id="chatMessage" rows="3" maxlength="1000" required placeholder="What could the group improve or test next?"></textarea><button class="primary" type="submit">Save local note</button></form>
-   </section>
-   <div class="switchline"><span>Not the right fit?</span><button id="switchRoom" type="button" class="secondary">Find the next arena</button><button id="resetDemo" type="button" class="secondary">Clear demo data</button></div>
-  </div>
- </div>
 </section>
 <section class="how"><p class="eyebrow">HOW A JOUST WORKS</p><h2>Good ideas evolve. Builders stay respected.</h2><div class="how-grid"><article><span>01</span><h3>Pitch</h3><p>Describe a useful idea and the problem it solves.</p></article><article><span>02</span><h3>Challenge</h3><p>Builders ask questions and vote on the project's direction, never a person's worth.</p></article><article><span>03</span><h3>Build or branch</h3><p>Approved ideas gain a roadmap. Others can continue in another group or fork into a related project.</p></article></div><p class="fineprint">The future AI Builder can draft plans, validate evidence, recommend collaborators, and propose a new edition, but publishing, charging, and major actions require real authorization and human review.</p></section>
 <footer><p>∞ INFINITY® · An independent QuantaPhi experience. Not affiliated with or endorsed by OpenAI, Google, or Anthropic.</p><p>No paid subscriptions or third-party-model access are offered by this prototype. <a href="/">Return to QuantaPhi</a></p></footer>

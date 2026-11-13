@@ -2246,15 +2246,23 @@ function toggle(open){
  if(showing){
   if(chatGate)void checkPanelGate();
   if(!greeted&&!messages.length){display('Hello! I am '+config.alias+'. '+(embedded?'Use my name before speaking, or type below.':'Speak naturally or type below.')+' Say stop listening to mute.','ai',true);greeted=true}
-  if(!nativeOverlay && window.innerWidth>600)input.focus();
+  // The host owns focus in embedded Zeus/Bubbles cards. Auto-focusing this
+  // iframe can interrupt the host's project title, extraction or quest input.
+  if(!embedded&&!nativeOverlay && window.innerWidth>600)input.focus();
  }
  else{ /* Closing the panel does not disconnect the voice session. */ }
 }
 // A host-page orb opens this iframe only on explicit visitor interaction.
 // No owner job, microphone or permission is activated by this display signal.
 if(embedded)window.addEventListener('message',event=>{
- if(event.source!==window.parent||event.data?.type!=='quantaphi:bubbles:open'||event.data.id!==bubbleId)return;
+ if(event.source!==window.parent||event.origin!==window.location.origin||
+  event.data?.type!=='quantaphi:bubbles:open'||event.data.id!==bubbleId)return;
  toggle(true);
+ // A reloaded Zeus iframe must acknowledge the parent's fresh open request.
+ // Do not treat a prior document's ready event as proof this instance works.
+ if(bubbleId==='coliseum-zeus-assistant')window.parent.postMessage({
+  type:'quantaphi:bubbles:ready',id:bubbleId
+ },window.location.origin);
 });
 launcher.addEventListener('click',()=>{if(dragSuppressed){dragSuppressed=false;return}if(embedded){toggle(!showing);return}if(!voiceEnabled){toggle(true);void startVoice()}else toggle(!showing)});
 launchCard.addEventListener('click',()=>{toggle(true);if(!voiceEnabled)void startVoice()});
@@ -3847,6 +3855,51 @@ async function directGithubOperation(operation,{quiet=false,showIteration=!quiet
     publishDirectGithubIteration(operation,requestId,'tool_receipt',result,receiptThread);
  return {...result,requestId};
 }
+// Zeus quick-quest bridge: only the same-origin, explicit host Send can deliver
+// a visitor question here. Reuse the normal Bubbles message pipeline unchanged.
+const acceptedZeusQuests=new Set();
+const completedZeusQuests=new Map();
+if(embedded&&bubbleId==='coliseum-zeus-assistant')window.addEventListener('message',event=>{
+ if(event.source!==window.parent||event.origin!==window.location.origin)return;
+ const data=event.data;
+ if(data?.type!=='quantaphi:bubbles:quest'||data.id!==bubbleId)return;
+ const requestId=data.requestId;
+ if(typeof requestId!=='string'||!/^quest_[a-f0-9-]{36}$/.test(requestId))return;
+ const acknowledge=state=>window.parent.postMessage({
+  type:'quantaphi:bubbles:quest-ack',id:bubbleId,requestId,status:state
+ },window.location.origin);
+ if(acceptedZeusQuests.has(requestId)){
+  acknowledge('accepted');
+  const prior=completedZeusQuests.get(requestId);
+  if(prior)window.parent.postMessage(prior,window.location.origin);
+  return;
+ }
+ const prompt=typeof data.prompt==='string'?data.prompt.trim():'';
+ if(!prompt||prompt.length>1800){acknowledge('invalid');return;}
+ if(busy||turnPending){acknowledge('busy');return;}
+ const before=messages.length;
+ const finish=(state,reply='')=>{
+  const payload={type:'quantaphi:bubbles:quest-result',id:bubbleId,requestId,status:state};
+  if(state==='complete'&&reply)payload.reply=reply.slice(0,8000);
+  completedZeusQuests.set(requestId,payload);
+  if(completedZeusQuests.size>100)completedZeusQuests.delete(completedZeusQuests.keys().next().value);
+  window.parent.postMessage(payload,window.location.origin);
+ };
+ acceptedZeusQuests.add(requestId);
+ if(acceptedZeusQuests.size>100)acceptedZeusQuests.delete(acceptedZeusQuests.values().next().value);
+ toggle(true);
+ // Accepted means only that the current Bubbles turn has started.
+ acknowledge('accepted');
+ void Promise.resolve(sendMessage(prompt)).then(()=>{
+  const replies=messages.slice(before).filter(x=>x.role==='assistant');
+  const answer=replies.at(-1),text=String(answer?.text||'').trim();
+  if(!text||answer?.failed===true)finish('failed');
+  else finish('complete',text);
+ }).catch(error=>{
+  status.textContent='Zeus could not finish the Bubbles conversation.';
+  finish('failed');
+ });
+});
 input.addEventListener('keydown',event=>{if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();void sendMessage(input.value)}});
 function queueRepositoryPreview(value){
  if(repositorySearchTimer)clearTimeout(repositorySearchTimer);
@@ -4807,6 +4860,11 @@ if(!embedded&&typeof setInterval==='function'){
  }},3000);
 }
 if(embedded){launcher.style.bottom='3px';launcher.style.right='3px'};
+// Only a fully initialized Bubbles script may certify that Zeus can deliver a turn.
+// An HTML/404 iframe load is not proof of an AI assistant. Never send credentials.
+if(embedded&&bubbleId==='coliseum-zeus-assistant')window.parent.postMessage({
+ type:'quantaphi:bubbles:ready',id:bubbleId
+},window.location.origin);
 // An embed opens inside a sandboxed iframe; only window dimensions are messaged.
 
 })();
