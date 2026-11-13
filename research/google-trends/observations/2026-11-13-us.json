@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T03:30:53.931065Z",
+  "checked_at": "2026-11-13T04:01:35.175329Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "stefon diggs",
+      "query": "christian mccaffrey",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T03:40:00Z",
+      "related_news_urls": [
+        "https://www.sfchronicle.com/sports/49ers/article/sf-49ers-receiver-mike-evans-still-sidelined-22525705.php",
+        "https://sports.yahoo.com/articles/mike-evans-unable-practice-thursday-030731294.html",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-11/evans-achilles-still-sidelined-to-begin-wk-10"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKM-5mJSpuHyUSxNnhRppTR7gY8GqsN5zjNR8a0uR1IEv9PEIsMu8BO4i1Izg",
+      "image_credit": "San Francisco Chronicle",
+      "news": [
+        {
+          "url": "https://www.sfchronicle.com/sports/49ers/article/sf-49ers-receiver-mike-evans-still-sidelined-22525705.php",
+          "title": "49ers wide receiver Mike Evans ‘week-to-week’ with injury, likely out Sunday",
+          "publisher": "San Francisco Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKM-5mJSpuHyUSxNnhRppTR7gY8GqsN5zjNR8a0uR1IEv9PEIsMu8BO4i1Izg"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/mike-evans-unable-practice-thursday-030731294.html",
+          "title": "Mike Evans unable to practice Thursday",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVPQeSB4amV1nSRFKPMk9FdiRrkE8-EmxEdOv53nP26MY9RhwOGHhr8r_50WM"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-11/evans-achilles-still-sidelined-to-begin-wk-10",
+          "title": "Evans (Achilles) still sidelined to begin Wk 10",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3RVaM8V3d9KzydX-ekgxl_tVieN7rz_DJseUB4WkoqcttvMtEnsDzfeSMB2A"
+        }
+      ]
+    },
+    {
+      "query": "justine lupe",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T03:40:00Z",
+      "related_news_urls": [
+        "https://www.hollywoodreporter.com/tv/tv-features/nobody-wants-this-timothy-simons-adam-brody-sasha-morgan-s4-1236751303/",
+        "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/nobody-wants-cast-proposed-lead-002100778.html",
+        "https://www.imdb.com/news/ni66104321/?ref_=nm_nwr_1"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4Zluv3uw0zMlSMBOK-RlwDIXGHoOfYbIRo6X3ola_yuI1wZNjktyvIcodBK0",
+      "image_credit": "The Hollywood Reporter",
+      "news": [
+        {
+          "url": "https://www.hollywoodreporter.com/tv/tv-features/nobody-wants-this-timothy-simons-adam-brody-sasha-morgan-s4-1236751303/",
+          "title": "‘Nobody Wants This’ Star Timothy Simons Reveals Biggest Season 3 Concern and Looks to Season 4: “They Burned One Another — So They’re Even”",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4Zluv3uw0zMlSMBOK-RlwDIXGHoOfYbIRo6X3ola_yuI1wZNjktyvIcodBK0"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/nobody-wants-cast-proposed-lead-002100778.html",
+          "title": "The Nobody Wants This Cast Proposed A New Lead For Season 4 (I Need This To Happen)",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjNnklyo7kEmb_cPfisWpjslTV0LkTXquHmrsCFDFoRHIow-80Lxb-hjiUFqM"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66104321/?ref_=nm_nwr_1",
+          "title": "‘Nobody Wants This’ Star Timothy Simons Reveals Biggest Season 3 Concern and Looks to Season 4: “They Burned One Another — So They’re Even”",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZsHhC1HlKTzmd_xKOoXlVnPLoJIHNPMXPDAUGbedBcRGeXwnc1yEWqjwjenQ"
+        }
+      ]
+    },
+    {
+      "query": "weather forecast",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-13T03:40:00Z",
+      "related_news_urls": [
+        "https://abc7chicago.com/post/chicago-il-area-weather-forecast-parts-could-see-1st-snow-season-friday-winter-advisory-indiana/20035534/",
+        "https://wgntv.com/weather/chicago-weather-thursday-11122026/",
+        "https://www.wndu.com/2026/11/12/first-alert-freezing-temperatures-lake-effect-snow-ahead/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-lTrkdvVNpfhiAJnH6TqKt3RVVAKHZW68ggxIYBo2wAx7Bf1QpOdHalCzk2o",
+      "image_credit": "ABC7 Chicago",
+      "news": [
+        {
+          "url": "https://abc7chicago.com/post/chicago-il-area-weather-forecast-parts-could-see-1st-snow-season-friday-winter-advisory-indiana/20035534/",
+          "title": "Chicago-area AccuWeather Alert for Winter Weather Advisory, several inches of snow accumulation possible in parts area Friday",
+          "publisher": "ABC7 Chicago",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-lTrkdvVNpfhiAJnH6TqKt3RVVAKHZW68ggxIYBo2wAx7Bf1QpOdHalCzk2o"
+        },
+        {
+          "url": "https://wgntv.com/weather/chicago-weather-thursday-11122026/",
+          "title": "Midday forecast: An early taste of winter heading to Chicagoland on Thursday into Friday, with chilliest temps in months",
+          "publisher": "WGN-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO5_2eT9XCNKL4SXGeg3EKMYndFtC522dSkck0r_t1iykjYjEHrH5IspYUQiE"
+        },
+        {
+          "url": "https://www.wndu.com/2026/11/12/first-alert-freezing-temperatures-lake-effect-snow-ahead/",
+          "title": "First Alert: Freezing temperatures and lake-effect snow ahead",
+          "publisher": "WNDU",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZhl6ELvhZLBkiFYNHETNZEtk3MAdAFedworR8nKdXQa2IPx6qEB876pJpAg4"
+        }
+      ]
+    },
+    {
+      "query": "suns",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-13T03:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/game-thread-phoenix-suns-face-010000427.html",
+        "https://www.si.com/betting/hornets-vs-suns-prediction-odds-and-best-nba-prop-bets-for-thursday-nov-12-2026",
+        "https://www.brightsideofthesun.com/suns-game/113564/suns-hornets-preview-grayson-allen-royce-oneale-miles-bridges-trade-reunion"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRLW4Xjc9Uu0Gw50NVZER5S9_lmD7H3Lm6LNWbm1C56TkrcM80se_61nwb7iA",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/game-thread-phoenix-suns-face-010000427.html",
+          "title": "Game Thread: Phoenix Suns face Charlotte Hornets",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRLW4Xjc9Uu0Gw50NVZER5S9_lmD7H3Lm6LNWbm1C56TkrcM80se_61nwb7iA"
+        },
+        {
+          "url": "https://www.si.com/betting/hornets-vs-suns-prediction-odds-and-best-nba-prop-bets-for-thursday-nov-12-2026",
+          "title": "Hornets vs. Suns Prediction, Odds and Best NBA Prop Bets for Thursday, Nov. 12",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8hvxLFiDw74ZErV0iEawayVQGtmGRI2k4IA9_u_uCfCF8WFCZE8O4PWu-fwU"
+        },
+        {
+          "url": "https://www.brightsideofthesun.com/suns-game/113564/suns-hornets-preview-grayson-allen-royce-oneale-miles-bridges-trade-reunion",
+          "title": "Game Preview: Suns host Hornets in first matchup since Miles Bridges trade",
+          "publisher": "Bright Side Of The Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoJ7KZ_Eq-Isowcz8hHcWvJ1G3dQ0XGQNhQPTUmp3H7fVxopSVa9rJbhNSU44"
+        }
+      ]
+    },
+    {
+      "query": "kyle larson",
       "approx_searches": "2000+",
-      "published_at": "2026-11-13T03:10:00Z",
+      "published_at": "2026-11-13T03:30:00Z",
       "related_news_urls": [
-        "https://www.wusa9.com/article/sports/nfl/washington-commanders/dan-quinn-stefon-diggs-out-of-bounds-rams-loss/65-6973ee9a-b34a-4fc3-809b-27d3345c36f9",
-        "https://sports.yahoo.com/articles/commanders-stefon-diggs-explains-game-200120602.html",
-        "https://www.fantasypros.com/nfl/news/618861/stefon-diggs-has-51-yards-loss.php"
+        "https://www.nascar.com/news-media/2026/11/12/analysis-kyle-larson-hasnt-had-the-same-championship-season-twice/",
+        "https://www.foxnews.com/outkick-sports/kyle-larson-turned-write-off-season-third-nascar-championship-miami",
+        "https://www.jayski.com/2026/11/10/nascar-awards-in-miami-notebook/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToV-xDZDAVwmBq3tgJCeKh3Q3BGEvMYVhRh4WF1mtTA9gsgLwfhhtEStnKYq8",
-      "image_credit": "WUSA9",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf3hHHgqXNu9n9SrVEQvGyVK3NMKd2Yz_OGizRCYRahLqGwmsiA_MtX_v1MqE",
+      "image_credit": "NASCAR.com",
       "news": [
         {
-          "url": "https://www.wusa9.com/article/sports/nfl/washington-commanders/dan-quinn-stefon-diggs-out-of-bounds-rams-loss/65-6973ee9a-b34a-4fc3-809b-27d3345c36f9",
-          "title": "Dan Quinn addresses Stefon Diggs' costly decision and Commanders' fight to save season",
-          "publisher": "WUSA9",
+          "url": "https://www.nascar.com/news-media/2026/11/12/analysis-kyle-larson-hasnt-had-the-same-championship-season-twice/",
+          "title": "Analysis: Kyle Larson hasn’t had the same championship season twice",
+          "publisher": "NASCAR.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToV-xDZDAVwmBq3tgJCeKh3Q3BGEvMYVhRh4WF1mtTA9gsgLwfhhtEStnKYq8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf3hHHgqXNu9n9SrVEQvGyVK3NMKd2Yz_OGizRCYRahLqGwmsiA_MtX_v1MqE"
         },
         {
-          "url": "https://sports.yahoo.com/articles/commanders-stefon-diggs-explains-game-200120602.html",
-          "title": "Commanders' Stefon Diggs explains late-game decision in Week 10 vs Rams",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.foxnews.com/outkick-sports/kyle-larson-turned-write-off-season-third-nascar-championship-miami",
+          "title": "How Kyle Larson turned a write-off season into his third NASCAR championship in Miami",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgm9frNt28MEISMBfhUhMikzGSPkYmoZB8zQgjqxu57-2sZJ5BFKTDKM-5yTw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxxydkHriU3ki6I5QJnCCOHpJtUGrz4-XqS6V94T8wWInVaQG3QKdOfi-zOZw"
         },
         {
-          "url": "https://www.fantasypros.com/nfl/news/618861/stefon-diggs-has-51-yards-loss.php",
-          "title": "Stefon Diggs has 51 yards in loss",
-          "publisher": "FantasyPros",
+          "url": "https://www.jayski.com/2026/11/10/nascar-awards-in-miami-notebook/",
+          "title": "NASCAR Awards in Miami Notebook",
+          "publisher": "Jayski",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2k7y2orUOkXAUpj9kmiTmvt0S6a5Em2EjefikFul0bZksAduG0nh0snlld2Y"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnOPXgGQDjwI8h3ET5QqryJD7KrHoPTxXzxmESXDequS9UKSej02r_15ZUYls"
         }
       ]
     },
     {
-      "query": "ausar thompson",
+      "query": "shaq",
       "approx_searches": "500+",
-      "published_at": "2026-11-13T03:10:00Z",
+      "published_at": "2026-11-13T03:30:00Z",
       "related_news_urls": [
-        "https://pistonpowered.com/ausar-thompson-early-mistakes-actually-great-sign",
-        "https://www.hoopsrumors.com/2026/11/central-notes-thompson-joe-watson-tyson-buzelis.html",
-        "https://www.fantasypros.com/nba/news/618297/ausar-thompson-fills-stat-sheet-wednesday-against-76ers.php"
+        "https://www.wafb.com/2026/11/12/daddy-dale-shaquille-oneal-former-players-deliver-emotional-tribute-lsu-legend-dale-brown/",
+        "https://www.wbrz.com/news/former-players-coaches-remember-legendary-lsu-basketball-coach-dale-brown/",
+        "https://www.nola.com/sports/lsu/mens_basketball/dale-brown-lsu-basketball-pmac-celebration-of-life-johnny-jones-collis-temple/article_1cc12e3b-2ca5-4c5c-8992-c37e3b830b06.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRI21JmE-VMnqNS9_xwtYv9GmS0pSV5_7k8qGzlk5sHNdg_aoJ6pFzACgkN85Q",
-      "image_credit": "PistonPowered",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZCd_ue5agaS3dcMVmXsjw_FU7O-r-vTxMaBilmjx9fczJEtwgMHzvw9fbYJM",
+      "image_credit": "WAFB",
       "news": [
         {
-          "url": "https://pistonpowered.com/ausar-thompson-early-mistakes-actually-great-sign",
-          "title": "Ausar Thompson’s early mistakes are actually a great sign",
-          "publisher": "PistonPowered",
+          "url": "https://www.wafb.com/2026/11/12/daddy-dale-shaquille-oneal-former-players-deliver-emotional-tribute-lsu-legend-dale-brown/",
+          "title": "‘Daddy Dale’: Shaquille O’Neal, former players deliver emotional tribute to LSU legend Dale Brown",
+          "publisher": "WAFB",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRI21JmE-VMnqNS9_xwtYv9GmS0pSV5_7k8qGzlk5sHNdg_aoJ6pFzACgkN85Q"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZCd_ue5agaS3dcMVmXsjw_FU7O-r-vTxMaBilmjx9fczJEtwgMHzvw9fbYJM"
         },
         {
-          "url": "https://www.hoopsrumors.com/2026/11/central-notes-thompson-joe-watson-tyson-buzelis.html",
-          "title": "Central Notes: Thompson, Joe, Watson, Tyson, Buzelis",
-          "publisher": "Hoops Rumors",
+          "url": "https://www.wbrz.com/news/former-players-coaches-remember-legendary-lsu-basketball-coach-dale-brown/",
+          "title": "Former players, coaches remember legendary LSU basketball coach Dale Brown",
+          "publisher": "WBRZ",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN66Y0IkaGpCa6eVhBcycTMFMp3U2xIFWpRU10eOUj8rwECLOwWbWwvJAY-eQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlv4UZXe_RqfQQVdm1lpYYb13vUmjFvp1G3hkUpWHyZVyN8n2Ap-Ind_WsAoM"
         },
         {
-          "url": "https://www.fantasypros.com/nba/news/618297/ausar-thompson-fills-stat-sheet-wednesday-against-76ers.php",
-          "title": "Ausar Thompson fills stat sheet Wednesday against 76ers",
-          "publisher": "FantasyPros",
+          "url": "https://www.nola.com/sports/lsu/mens_basketball/dale-brown-lsu-basketball-pmac-celebration-of-life-johnny-jones-collis-temple/article_1cc12e3b-2ca5-4c5c-8992-c37e3b830b06.html",
+          "title": "Scott Rabalais: ‘He’s inside all of us.’ Memories of Dale Brown fill the PMAC one final time.",
+          "publisher": "NOLA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB_BTsam54aRDcAxxfwdolW-xYg1awLh45on5Gk0vb2rXcr4NrM-vkAPEz2t0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnh2AsC4FZw9hgmbdZI1e2d4bsvXHOcfigG5i84lYa_K652dOFhuWn8LHmZ_o"
         }
       ]
     },
     {
-      "query": "hollywood brown",
+      "query": "special forces show",
       "approx_searches": "500+",
-      "published_at": "2026-11-13T03:10:00Z",
+      "published_at": "2026-11-13T03:30:00Z",
       "related_news_urls": [
-        "https://www.profootballrumors.com/2026/11/eagles-to-waive-wr-marquise-brown",
-        "https://bleacherreport.com/articles/25532802-hollywood-brown-reportedly-waived-eagles-top-landing-spots-wr-after-nfl-trade-rumors",
-        "https://sports.yahoo.com/articles/marquise-hollywood-brown-eagles-waive-031109750.html"
+        "https://people.com/special-forces-season-5-finale-reveals-three-winners-12250897",
+        "https://www.inman.com/2026/11/12/mauricio-and-alexia-umansky-talk-special-forces/",
+        "https://www.imdb.com/de/news/ni66109029/?ref_=nwc_art_perm"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Bh1rDgP-bzlD8jcnOYCsv3Fc-7iVFoUm-YSaEheg2x9vfK278cxqeQyEgj0",
-      "image_credit": "NFL Rumors - ProFootballRumors.com",
-      "news": [
-        {
-          "url": "https://www.profootballrumors.com/2026/11/eagles-to-waive-wr-marquise-brown",
-          "title": "Eagles To Waive WR Marquise Brown",
-          "publisher": "NFL Rumors - ProFootballRumors.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Bh1rDgP-bzlD8jcnOYCsv3Fc-7iVFoUm-YSaEheg2x9vfK278cxqeQyEgj0"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25532802-hollywood-brown-reportedly-waived-eagles-top-landing-spots-wr-after-nfl-trade-rumors",
-          "title": "Hollywood Brown Reportedly Waived by Eagles, Top Landing Spots for WR After NFL Trade Rumors",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZyS6yQJNBY-5wWtXnnMl0m3QbliDOWoJQJMohHYAek8GWoV_zxKr7HCKP2MY"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/marquise-hollywood-brown-eagles-waive-031109750.html",
-          "title": "Marquise 'Hollywood' Brown: Eagles waive ex-Chiefs WR in Week 10",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT298bzyqIjoeGtnRsqLXDq2wpaRm-fSBaL1ZNtDQ_UvVHZBUUFzUeIOEGN-JY"
-        }
-      ]
-    },
-    {
-      "query": "zaccharie risacher",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T03:10:00Z",
-      "related_news_urls": [
-        "https://thesmokingcuban.com/mavericks-have-little-reason-to-keep-zaccharie-risacher-out-of-starting-five",
-        "https://dallassportsjournal.com/dusty-may-zaccharie-risacher-mavericks-hawks-trade/",
-        "https://sports.yahoo.com/articles/still-finding-himself-hasn-t-015156546.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwOo16AVk-PrwAyzGU7G15xqv4Vc4q17IaZnmZSUaxTrBvG3IFPoI1OuydD3o",
-      "image_credit": "The Smoking Cuban",
-      "news": [
-        {
-          "url": "https://thesmokingcuban.com/mavericks-have-little-reason-to-keep-zaccharie-risacher-out-of-starting-five",
-          "title": "Mavericks have little reason to keep Zaccharie Risacher out of the starting five",
-          "publisher": "The Smoking Cuban",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwOo16AVk-PrwAyzGU7G15xqv4Vc4q17IaZnmZSUaxTrBvG3IFPoI1OuydD3o"
-        },
-        {
-          "url": "https://dallassportsjournal.com/dusty-may-zaccharie-risacher-mavericks-hawks-trade/",
-          "title": "Dusty May On Zaccharie Risacher’s Fresh Start",
-          "publisher": "Dallas Hoops Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUYzS6JPBf_sE78BoJdjNru2zYaTFxShOWivz8TGizx4q-aB9fKZOOt0_mKBU"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/still-finding-himself-hasn-t-015156546.html",
-          "title": "\"He’s still finding himself. He hasn’t shot at all as …",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSa-QggyLkf6q_OdRr7BT4aRMtVLmKTdQYTBHI6YAtgL5SwuBFm-sgxqSEoHcE"
-        }
-      ]
-    },
-    {
-      "query": "tsmc",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T03:10:00Z",
-      "related_news_urls": [
-        "https://wccftech.com/taiwan-chip-giant-tsmc-acknowledges-hack-of-reportedly-49000-employee-files-occurred-but-says-leaked-data-matches-that-stored-with-external-cloud-provider/",
-        "https://www.barchart.com/story/news/8807828/a-massive-employee-data-leak-is-dragging-down-tsm-stock",
-        "https://www.quantisnow.com/insight/sec-form-6-k-filed-by-taiwan-semiconductor-manufacturing-company-ltd-6786516"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBTUmA5xbEf8nGoCmbJsknmN4sgl0uQ20p6xMr6yLQsKiLBpGiCpSg1eZgN7M",
-      "image_credit": "Wccftech",
-      "news": [
-        {
-          "url": "https://wccftech.com/taiwan-chip-giant-tsmc-acknowledges-hack-of-reportedly-49000-employee-files-occurred-but-says-leaked-data-matches-that-stored-with-external-cloud-provider/",
-          "title": "Taiwan Chip Giant TSMC Acknowledges Hack Of Reportedly 49,000 Employee Files Occurred But Says Leaked Data Matches That Stored With External Cloud Provider",
-          "publisher": "Wccftech",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBTUmA5xbEf8nGoCmbJsknmN4sgl0uQ20p6xMr6yLQsKiLBpGiCpSg1eZgN7M"
-        },
-        {
-          "url": "https://www.barchart.com/story/news/8807828/a-massive-employee-data-leak-is-dragging-down-tsm-stock",
-          "title": "A Massive Employee Data Leak Is Dragging Down TSM Stock",
-          "publisher": "Barchart.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuIgqsuKwzCMCYJTG9cXb7ZGkOSDtUM85L9LImJ4q3lr5XROi7xSm9opfLElo"
-        },
-        {
-          "url": "https://www.quantisnow.com/insight/sec-form-6-k-filed-by-taiwan-semiconductor-manufacturing-company-ltd-6786516",
-          "title": "TSM: SEC Form 6-K filed by Taiwan Semiconductor Manufacturing Company Ltd.",
-          "publisher": "Quantisnow",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7TdWJi0R7QhB9wkozw00WsbM01-weDnQbTEaMvH0Tew53jAlmQgXKMWH9Um8"
-        }
-      ]
-    },
-    {
-      "query": "tre johnson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T03:00:00Z",
-      "related_news_urls": [
-        "https://wizofawes.com/wizards-explore-trades-bench-costing-games",
-        "https://www.bulletsforever.com/washington-wizards-analysis-players/73979/tre-johnson-is-struggling-from-three-so-are-the-wizards",
-        "https://sports.yahoo.com/articles/tre-johnsons-shooting-slump-already-160510331.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5WOxluBserEJbJAQy02MN2FW5OLnFNNx4k6-jJUBAe2sLlUNCQcdRPOhZeZg",
-      "image_credit": "Wiz of Awes",
-      "news": [
-        {
-          "url": "https://wizofawes.com/wizards-explore-trades-bench-costing-games",
-          "title": "Wizards may need to explore trades to fix a bench that keeps costing them games",
-          "publisher": "Wiz of Awes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5WOxluBserEJbJAQy02MN2FW5OLnFNNx4k6-jJUBAe2sLlUNCQcdRPOhZeZg"
-        },
-        {
-          "url": "https://www.bulletsforever.com/washington-wizards-analysis-players/73979/tre-johnson-is-struggling-from-three-so-are-the-wizards",
-          "title": "Tre Johnson is struggling from three. So are the Wizards",
-          "publisher": "Bullets Forever",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1R03tVql_goOLVGNJkMxTHV5IVeUb8e35m-4EB49sRkZJPo13hBRayn0nsT8"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/tre-johnsons-shooting-slump-already-160510331.html",
-          "title": "Tre Johnson's Shooting Slump is Already Forcing Major Wizards Rotational Questions",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTILx0xWU8TGpBe-ZHCxiuXhONilMJBrj5X5N-CZzdlwDM7AW6p_d0iLdfNG24"
-        }
-      ]
-    },
-    {
-      "query": "santi aldama",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T03:00:00Z",
-      "related_news_urls": [
-        "https://thesmokingcuban.com/santi-aldama-helps-solve-problems-plaguing-mavericks-offense",
-        "https://www.fantasypros.com/nba/news/618060/santi-aldama-knee-probable-to-make-season-debut-friday.php",
-        "https://www.nba.com/mavs/news/santi-aldama-was-very-impressive-in-his-first-game-with-mavericks"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaUCTNjzd-ethasKaCJQ3DdjV7YYlA6K27Q-wcXAeTXzYvzXvY2UKMW0Andrk",
-      "image_credit": "The Smoking Cuban",
-      "news": [
-        {
-          "url": "https://thesmokingcuban.com/santi-aldama-helps-solve-problems-plaguing-mavericks-offense",
-          "title": "Santi Aldama helps solve problems plaguing the Mavericks’ offense",
-          "publisher": "The Smoking Cuban",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaUCTNjzd-ethasKaCJQ3DdjV7YYlA6K27Q-wcXAeTXzYvzXvY2UKMW0Andrk"
-        },
-        {
-          "url": "https://www.fantasypros.com/nba/news/618060/santi-aldama-knee-probable-to-make-season-debut-friday.php",
-          "title": "Santi Aldama (knee) probable to make season debut Friday",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5uj0t8gpDiQOYOcI60PnpwBhsm6lBP2N-XC7ly9Dgbg7uzmvxKDX8Nf_yoaM"
-        },
-        {
-          "url": "https://www.nba.com/mavs/news/santi-aldama-was-very-impressive-in-his-first-game-with-mavericks",
-          "title": "Santi Aldama impressive in his first game with Mavericks",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzckWcei0WKxzAheXJtoQf_wuLxX6FHePN9ri52bNfZFUqOeqClB_kEkfyYE4"
-        }
-      ]
-    },
-    {
-      "query": "daayra movie",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T03:00:00Z",
-      "related_news_urls": [
-        "https://www.hindustantimes.com/entertainment/bollywood/daayra-ott-release-kareena-kapoor-and-prithviraj-sukumaaran-film-to-arrive-on-netflix-in-hindi-and-malayalam-101794489907480.html",
-        "https://www.telegraphindia.com/entertainment/daayra-ott-release-when-and-where-to-watch-meghna-gulzar-directed-investigative-drama/cid/2189082",
-        "https://thenewsmill.com/2026/11/kareena-kapoor-and-prithviraj-sukumarans-daayra-to-premiere-on-netflix-on-november-13/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFS3UhIYdKiMNz7XGG3pC54FXK0wx7K5QphhclQEQ6DvpBaepanBQAQDdFDDA",
-      "image_credit": "Hindustan Times",
-      "news": [
-        {
-          "url": "https://www.hindustantimes.com/entertainment/bollywood/daayra-ott-release-kareena-kapoor-and-prithviraj-sukumaaran-film-to-arrive-on-netflix-in-hindi-and-malayalam-101794489907480.html",
-          "title": "Daayra OTT release: Kareena Kapoor and Prithviraj Sukumaaran film to arrive on Netflix in Hindi and Malayalam | Bollywood",
-          "publisher": "Hindustan Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFS3UhIYdKiMNz7XGG3pC54FXK0wx7K5QphhclQEQ6DvpBaepanBQAQDdFDDA"
-        },
-        {
-          "url": "https://www.telegraphindia.com/entertainment/daayra-ott-release-when-and-where-to-watch-meghna-gulzar-directed-investigative-drama/cid/2189082",
-          "title": "‘Daayra’ OTT release: When and where to watch the Meghna Gulzar-directed investigative drama",
-          "publisher": "Telegraph India",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlFDP4dcVA_SOwt_PSMjFAMvyU1-32aRi0IxJhtcSiZ2reKEB7dUSm4ccdTXQ"
-        },
-        {
-          "url": "https://thenewsmill.com/2026/11/kareena-kapoor-and-prithviraj-sukumarans-daayra-to-premiere-on-netflix-on-november-13/",
-          "title": "Kareena Kapoor and Prithviraj Sukumaran’s ‘Daayra’ to premiere on Netflix on November 13",
-          "publisher": "The News Mill",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLCWC_wqxMnoaxpgxFmt6ub8lFJvUSal8ASMvVv23qIrRGeQLutZgehXWsfk8"
-        }
-      ]
-    },
-    {
-      "query": "madison bontempo",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T03:00:00Z",
-      "related_news_urls": [
-        "https://people.com/jen-affleck-says-madison-bontempo-s-husband-being-in-las-vegas-during-their-girls-trip-is-a-red-flag-12249956",
-        "https://www.bustle.com/entertainment/mormon-wives-orange-county-madison-bontempo-kyler-fisher-update",
-        "https://www.elitedaily.com/entertainment/madison-kyler-fisher-breakup-relationship-mormon-wives-oc-interview"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv_AY1MbiOfJZLmlNdi8I5MxCJ8swcVotHIyPv8Nyjvav1bG2-3gWSPAa-1kg",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSD5Rf_HhbekRjpf0Pw6j_w_S03ibghkKq8W0AKwLJxfc_ow0nw5-UuNmm5Aq0",
       "image_credit": "People.com",
       "news": [
         {
-          "url": "https://people.com/jen-affleck-says-madison-bontempo-s-husband-being-in-las-vegas-during-their-girls-trip-is-a-red-flag-12249956",
-          "title": "Jen Affleck Says Madison Bontempo’s Husband Being in Las Vegas During Their Girls Trip Is ‘a Red Flag’",
+          "url": "https://people.com/special-forces-season-5-finale-reveals-three-winners-12250897",
+          "title": "‘Special Forces’ Season 5 Finale Ends with 3 Winners as One Celebrity Contestant Breaks Down in Tears",
           "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv_AY1MbiOfJZLmlNdi8I5MxCJ8swcVotHIyPv8Nyjvav1bG2-3gWSPAa-1kg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSD5Rf_HhbekRjpf0Pw6j_w_S03ibghkKq8W0AKwLJxfc_ow0nw5-UuNmm5Aq0"
         },
         {
-          "url": "https://www.bustle.com/entertainment/mormon-wives-orange-county-madison-bontempo-kyler-fisher-update",
-          "title": "'Mormon Wives OC': Madison Bontempo Gives Kyler Fisher Update",
-          "publisher": "Bustle",
+          "url": "https://www.inman.com/2026/11/12/mauricio-and-alexia-umansky-talk-special-forces/",
+          "title": "‘Momentum is the cure of all fear’: Mauricio and Alexia Umansky talk 'Special Forces'",
+          "publisher": "Inman Real Estate News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXEDrk7OeJoSl_Rta3-xieX28xlx1GxrEdPX-zXViTRfnqa7QaRRkYyE09LWM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrGGjVLcWfgXk6vsx8i4e6g9m9mdzkcIMHL0OiW0MHVarPc9wn86w_1yrRIBw"
         },
         {
-          "url": "https://www.elitedaily.com/entertainment/madison-kyler-fisher-breakup-relationship-mormon-wives-oc-interview",
-          "title": "Madison From ‘Mormon Wives: OC’ Regrets Saying She’d Leave Kyler [Exclusive]",
-          "publisher": "Elite Daily",
+          "url": "https://www.imdb.com/de/news/ni66109029/?ref_=nwc_art_perm",
+          "title": "‘Special Forces’ Winner Alexia Umansky Reveals Why Passing Was ‘Bittersweet’ at First",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUhGuz4szIyDRQx3uQ0pW7w-X5DMfDQIjM1tHopM8LvtxoOL3jEID_2F_TznI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKaneJI9X6-7nnYo3LnC112R9jPJMM5JHMDJvsG4CR1kHFHeNrfbppS7EmAMk"
         }
       ]
     },
     {
-      "query": "guatemala vs canada",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T03:00:00Z",
+      "query": "aqi",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T03:30:00Z",
       "related_news_urls": [
-        "https://www.prensalibre.com/deportes/futbol-nacional/quien-sera-el-portero-de-guatemala-ante-canada-hagen-o-navarro-esto-confirma-fernando-tena/",
-        "https://www.lared1061.com/posts/canada-mantiene-en-reserva-su-reconocimiento-de-cancha-en-el-estadio-el-trebol",
-        "https://emisorasunidas.com/deportes/2026/11/11/rubio-rubin-cree-que-se-le-puede-ganar-la-serie-a-canada/"
+        "https://www.bbc.com/news/articles/c30rkwpxdx50o",
+        "https://www.reuters.com/business/environment/delhi-worlds-most-polluted-major-city-eve-diwali-swiss-group-says-2026-11-07/",
+        "https://indianexpress.com/videos/news-video/why-are-student-unions-protesting-against-pollution-crisis/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFlc_7wy474bxlDU7OrYwQ-vVHNWmpy_y4-1Zl2lLfQpgqyKuMBeB95GQo5sg",
-      "image_credit": "Prensa Libre",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYpCYpqMZFhe9W5bqT_BAfUvTKNBP46O4UN9k1N8XF6pH02gvChGLrTIX7Jl8",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.prensalibre.com/deportes/futbol-nacional/quien-sera-el-portero-de-guatemala-ante-canada-hagen-o-navarro-esto-confirma-fernando-tena/",
-          "title": "¿Quién será el portero de Guatemala ante Canadá: Hagen o Navarro? Esto confirma Fernando Tena",
-          "publisher": "Prensa Libre",
+          "url": "https://www.bbc.com/news/articles/c30rkwpxdx50o",
+          "title": "Was Delhi pollution data during Diwali misleading?",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFlc_7wy474bxlDU7OrYwQ-vVHNWmpy_y4-1Zl2lLfQpgqyKuMBeB95GQo5sg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYpCYpqMZFhe9W5bqT_BAfUvTKNBP46O4UN9k1N8XF6pH02gvChGLrTIX7Jl8"
         },
         {
-          "url": "https://www.lared1061.com/posts/canada-mantiene-en-reserva-su-reconocimiento-de-cancha-en-el-estadio-el-trebol",
-          "title": "Canadá Mantiene En Reserva Su Reconocimiento De Cancha En El Estadio El Trébol",
-          "publisher": "La Red 106.1 FM",
+          "url": "https://www.reuters.com/business/environment/delhi-worlds-most-polluted-major-city-eve-diwali-swiss-group-says-2026-11-07/",
+          "title": "Delhi world's most polluted major city on eve of Diwali, Swiss group says",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZqKrrJ43a-bhCz9gOJQYULVpit_AThvFHXOnbIvOU0RjBLneo_W8gaBB1mX0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl3y-NkXsR6mwndSE75x79c9j99vMN9OZRVeSKl3598t-ZA9k_c6dLCf272Zc"
         },
         {
-          "url": "https://emisorasunidas.com/deportes/2026/11/11/rubio-rubin-cree-que-se-le-puede-ganar-la-serie-a-canada/",
-          "title": "Rubio Rubín cree que se le puede ganar la serie a Canadá",
-          "publisher": "Emisoras Unidas",
+          "url": "https://indianexpress.com/videos/news-video/why-are-student-unions-protesting-against-pollution-crisis/",
+          "title": "Why Are Student Unions Protesting Against Pollution Crisis?",
+          "publisher": "The Indian Express",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQx04J_VCuP_t3XjREhbSg1VUcW5rAB4uI0u3poqEVrI9s_fTNwnRpEmTZRAmU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgcLZHlz_VuiT0qAvEwsVzo0uK1rTelS_k1wMf7_NYYPSKgQIA0TDG6W6OEUg"
+        }
+      ]
+    },
+    {
+      "query": "ana de armas",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T03:30:00Z",
+      "related_news_urls": [
+        "https://www.redcarpet-fashionawards.com/2026/11/12/ana-de-armas-embraces-a-more-sensual-look-at-the-latin-recording-academy-gala/",
+        "https://extratv.com/2026/11/12/ana-de-armas-and-beto-montenegro-make-red-carpet-debut/",
+        "https://www.imdb.com/news/ni66108941/?ref_=nmnw_art_perm"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPc54qiLFjFUJyF-OenilpO1D_24wFWSMWqPtJdRr8HRzLRSeA56-FM9qA5BI",
+      "image_credit": "Red Carpet Fashion Awards",
+      "news": [
+        {
+          "url": "https://www.redcarpet-fashionawards.com/2026/11/12/ana-de-armas-embraces-a-more-sensual-look-at-the-latin-recording-academy-gala/",
+          "title": "Ana de Armas in Wiederhoeft for 2026 Latin Recording Academy Gala",
+          "publisher": "Red Carpet Fashion Awards",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPc54qiLFjFUJyF-OenilpO1D_24wFWSMWqPtJdRr8HRzLRSeA56-FM9qA5BI"
+        },
+        {
+          "url": "https://extratv.com/2026/11/12/ana-de-armas-and-beto-montenegro-make-red-carpet-debut/",
+          "title": "Ana de Armas & Beto Montenegro Make Red-Carpet Debut",
+          "publisher": "Extra",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLG11Npj6FAJ7LEH4BGGaq0NPvbRWYb76OXKdAWALtbzRtfmtHHHA4AbTqWGU"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66108941/?ref_=nmnw_art_perm",
+          "title": "Ana de Armas Looks Gorgeous as She Steps Out to Support Boyfriend Beto Montenegro at Latin Grammys 2026",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgXRynnbCZTuIJrPzGMR8VwTO6Rq1JVIAHRUBdTz2JEAz3RAmjYaG3d2uKUb0"
+        }
+      ]
+    },
+    {
+      "query": "miss universe 2026",
+      "approx_searches": "200+",
+      "published_at": "2026-11-13T03:30:00Z",
+      "related_news_urls": [
+        "https://www.ndtv.com/lifestyle/miss-universe-2026-15-countries-exit-amid-visa-issues-and-franchise-disputes-ahead-of-finale-in-puerto-rico-12311127",
+        "https://metro.style/fashion/2026/11/9/miss-universe-2026-strongest-and-most-stylish-candidates-1400",
+        "https://neoskosmos.com/en/2026/11/09/news/community/puerto-rico-welcomes-greeces-miss-universe-2026-representative-olivia-vasilopoulos/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdIidtpaJTXf0IepKqT6jbf-OEnqW9M84xBZQ1EFPGfe1I0mFOil9KueGMNJc",
+      "image_credit": "NDTV",
+      "news": [
+        {
+          "url": "https://www.ndtv.com/lifestyle/miss-universe-2026-15-countries-exit-amid-visa-issues-and-franchise-disputes-ahead-of-finale-in-puerto-rico-12311127",
+          "title": "Miss Universe 2026: 15 Countries Exit Amid Visa Issues And Franchise Disputes Ahead Of Finale In Puerto Rico",
+          "publisher": "NDTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdIidtpaJTXf0IepKqT6jbf-OEnqW9M84xBZQ1EFPGfe1I0mFOil9KueGMNJc"
+        },
+        {
+          "url": "https://metro.style/fashion/2026/11/9/miss-universe-2026-strongest-and-most-stylish-candidates-1400",
+          "title": "The Miss Universe 2026 Favorites: Strongest Contenders and Most Stylish Queens",
+          "publisher": "Metro.Style",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYdGmGe-0NFglVkRgQqLTnpbmhWNzkpZ3w8UqfcGcvOvb89sCph0_nT7egRp8"
+        },
+        {
+          "url": "https://neoskosmos.com/en/2026/11/09/news/community/puerto-rico-welcomes-greeces-miss-universe-2026-representative-olivia-vasilopoulos/",
+          "title": "Puerto Rico welcomes Greece’s Miss Universe 2026 representative Olivia Vasilopoulos",
+          "publisher": "Neos Kosmos",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1gW4Id7aIA_H_vZHuzE5uEPUHXYmAaEKN75Q71tMcIjFvFfpO8t5Wj43KK8I"
         }
       ]
     }
