@@ -137,7 +137,7 @@ test('completed story images automatically attach and update is not a redundant 
  assert.match(bridge,/\['remove','Clear image'\]/,'reader can clear a stored story illustration');
  assert.match(source('phi-image-builder.js'),/\['clear','Clear image'\]/,'builder can clear finished pixels independently');
  assert.match(source('phi-image-builder.js'),/if\(action==='clear'\)/,'clear has a real click handler');
- assert.match(source('phi-image-builder.css'),/Electric purple reader/,'review card uses electric-purple palette');
+ assert.match(source('phi-image-builder.css'),/Professional image studio/,'review card uses the professional blue palette');
 });
 
 test('one bounded automatic repair is scored against the original image',()=>{

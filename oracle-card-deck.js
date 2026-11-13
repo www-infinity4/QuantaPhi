@@ -168,7 +168,7 @@ const tabButtons=[...host.querySelectorAll('[data-oracle-feed]')];
 const follow=document.getElementById('oracleCardFollow'),reason=document.getElementById('oracleCardReason');
 let selectedTab='public',directionApi=null,quantApi=null,familyApi=null,quantWeights={},quantConnected=false;
 const cardFamily=e=>e?.node?.matches('.iac-card')?'accepted':e?.id?.startsWith('source-')?'website':'original';
-let feedState=null,proposed=null,followingPublisherFeed=null;
+let feedState=null,proposed=null,followingPublisherFeed=null,storageError='';
 const visited=[];
 const seenByTab={'public':new Set(),'for-you':new Set(),'following':new Set()};
 let viewerTouched=false,selectionVersion=0;
@@ -309,7 +309,12 @@ function registerLateWidgets(){
 // Module evaluation ordering can differ across mobile WebViews; recover both.
 registerSourceCards();
 const readDirections=()=>{try{return directionApi.cleanFeedState(JSON.parse(localStorage.getItem(directionApi.FEED_STORAGE_KEY)||'{}'))}catch{return directionApi.cleanFeedState({})}};
-function storeDirections(){if(!directionApi||!feedState)return;try{localStorage.setItem(directionApi.FEED_STORAGE_KEY,JSON.stringify(feedState))}catch{}}
+function storeDirections(){
+ if(!directionApi||!feedState)return false;
+ let saved;try{saved=directionApi.saveNavigationProgress(localStorage,feedState)}catch{}
+ if(!saved?.ok){storageError='Could not save or confirm feed progress on this device.';feedState=readDirections();return false}
+ feedState=saved.state;storageError='';return true;
+}
 function liveCatalog(){return entries.filter(available).filter(e=>selectedTab!=='for-you'||!nonProfiling(e)).map(e=>({id:e.feedId,name:e.title,category:e.category,feature:e.feature,study:e.study,official:e.official||'',family:cardFamily(e)}));}
 function eligible(){const cards=entries.filter(available);return selectedTab==='following'&&feedState?
  cards.filter(e=>feedState.following.includes(e.feedId)):cards;}
@@ -324,7 +329,7 @@ function updateTabs(){
  followingPublisherFeed?.sync({tab:selectedTab});
  if(follow){
   const saved=Boolean(active&&feedState?.following.includes(active.feedId));
-  follow.hidden=!active;
+  follow.hidden=!active||active.id.startsWith('source-');
   follow.textContent=saved?'✓ Following':'+ Follow';
   follow.setAttribute('aria-pressed',String(saved));
  }
@@ -381,16 +386,15 @@ function predict(){
   const balanced=familyApi?.selectNextFamilyPool(tour.cards,cardFamily(active))||tour.cards;
   const pick=directionApi.nextFeedDirection(balanced,selectedTab,context,active?.feedId||'');
   proposed=possible.find(e=>e.feedId===pick.card?.id)||null;
-  reason.textContent=proposed?(proposed.title+' · '+pick.reason+
-   ' · '+tour.remaining+' other cards in this round'):
-   'Use a card to help choose the next useful action.';
+  reason.textContent=proposed?('Next card: '+proposed.title+
+   ' · '+Math.max(0,tour.remaining-1)+' more cards remain this round'):'Select a card to continue.';
  }else{
   const rest=possible.filter(x=>x!==active);
   const groups=['accepted','website','original'],pos=groups.indexOf(cardFamily(active));
   const nextFamily=groups[(pos+1)%groups.length];
   proposed=rest.filter(e=>cardFamily(e)===nextFamily).sort((a,b)=>a.count-b.count)[0]||
    rest.sort((a,b)=>a.count-b.count)[0]||possible[0];
-  reason.textContent=proposed?'Next: '+proposed.title:'';
+  reason.textContent=proposed?'Next card: '+proposed.title:'Select a card to continue.';
  }
  next.disabled=possible.length<2;
  primeCardImage(proposed);
@@ -432,7 +436,10 @@ tabButtons.forEach(b=>b.addEventListener('click',()=>{
 }));
 follow?.addEventListener('click',()=>{
  if(!directionApi||!active)return;
- feedState=directionApi.toggleFollowing(readDirections(),active.feedId);storeDirections();
+ let saved;try{saved=directionApi.commitFollowing(localStorage,active.feedId)}catch{}
+ if(!saved?.ok){storageError='Could not save or confirm Follow on this device.';feedState=readDirections();updateTabs();predict();status.textContent=storageError;return}
+ feedState=saved.state;storageError='';
+ follow.textContent=saved.followed?'✓ Following':'+ Follow';
  if(selectedTab==='following'&&!feedState.following.includes(active.feedId)){
   returnActive();const first=eligible()[0];if(first)show(first,false);
   else {now.textContent='No followed interactive cards';status.textContent='Choose Public and follow a card to fill this view.';}
@@ -456,7 +463,7 @@ void import('/following-publisher-feed.mjs?v=20261031-following1').then(({mountF
  });
  followingPublisherFeed?.sync({tab:selectedTab});
 }).catch(()=>{const target=document.getElementById('oracleFollowingFeed');if(target)target.hidden=true;});
-Promise.all([import('/quanta-feed-rank.mjs?v=20261027-infinity-accepted2'),
+Promise.all([import('/quanta-feed-rank.mjs?v=20261109-follow-safe1'),
  import('/quanta-feed-quants.mjs?v=20261024-directions1'),
  import('/quanta-carousel-balance.mjs?v=20261027-all-families1')]).then(([r,q,f])=>{
  directionApi=r;quantApi=q;familyApi=f;feedState=readDirections();updateTabs();
@@ -528,7 +535,8 @@ function show(entry,remember=true,automatic=false){
    // the generic QuantaPhi site preview used by unrelated URLs.
    const mediaSrc=displayed.node.querySelector('[data-walmart-image],.qbp-photo,.sap-feature img,.iqc-media img,.qcx-art img,.premium-selected img,.oracle-original-cover img,img[src]')?.getAttribute('src')||'';
    mountCardActions(container,{id:displayed.feedId||displayed.id,name:displayed.title,
-    category:displayed.category,official:displayed.official,route:'/?card='+encodeURIComponent(displayed.id),mediaSrc});
+    category:displayed.category,official:displayed.official,route:'/?card='+encodeURIComponent(displayed.id),mediaSrc},
+    {showFollow:false});
    stage.append(container);
   }).catch(()=>{status.textContent='Card actions unavailable; existing card remains usable.';});
  }
@@ -539,7 +547,7 @@ function show(entry,remember=true,automatic=false){
   seenByTab[selectedTab].add(entry.feedId);
  }
  now.textContent=entry.title;updateTabs();predict();
- status.textContent='Live interactive card · '+entry.title+
+ status.textContent=(storageError?storageError+' ':'')+'Live interactive card · '+entry.title+
   '. '+(nonProfiling(entry)?'Private browsing: no view or interaction history recorded.':selectedTab==='for-you'?(quantConnected?'Signed-in Quant interests and selected cards inform directions.':'Your card interactions inform directions.'):
     selectedTab==='following'?'Only your followed cards appear here.':'Public includes every available original widget.')+
   ' · '+eligible().length+' ready cards in this direction.';

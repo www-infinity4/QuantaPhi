@@ -53,20 +53,20 @@ function input(kind,title,subtitle){
 function layout(){
  host.classList.add('oracle-image-studio');
  const form=make('div','pi-composer pi-panel');
- form.append(make('span','pi-eyebrow','ORACLE · BLUE IMAGE GENERATOR'),make('h2','','Create your image'),make('p','pi-sub','Describe what you want in ordinary words. Oracle automatically prints requested titles and slogans accurately, then grades the image. Fix image corrects the result without moving or reuploading it.'));
- const format=section('1 · Choose a format');const label=make('label','pi-label','Build Type');label.htmlFor='pi-build-type';
+ form.append(make('span','pi-eyebrow','ORACLE OCTAVES · IMAGE STUDIO'),make('h2','','Create an image'),make('p','pi-sub','Images are generated using the available QuantaPhi renderer. Results may vary. Use Fix to revise or Save to download.'));
+ const brief=section('Describe your image');const promptLabel=make('label','pi-label','Prompt');promptLabel.htmlFor='pi-prompt';
+ const prompt=make('textarea');prompt.id='pi-prompt';prompt.placeholder='Describe the subject, composition, colors, style, and details to preserve.';brief.append(promptLabel,prompt);
+ const contextBar=make('div','pi-context-line');const contextText=make('span','pi-context-label','');contextText.id='pi-context-label';const clearContext=make('button','pi-context-clear','Clear context');clearContext.type='button';clearContext.dataset.piAction='clear-context';clearContext.hidden=true;contextBar.append(contextText,clearContext);
+ const tips=make('div','pi-smart-suggestions');tips.id='pi-smart-suggestions';tips.setAttribute('aria-label','Suggested artwork formats');brief.append(contextBar,tips);form.append(brief);
+ const format=section('Format');const label=make('label','pi-label','Image format');label.htmlFor='pi-build-type';
  const chooser=make('select','pi-build-type');chooser.id='pi-build-type';chooser.setAttribute('aria-label','Build Type');
  for(const entry of modes){const option=make('option','',entry.label);option.value=entry.label;chooser.append(option)}
  format.append(label,chooser);form.append(format);
- const references=section('2 · Add references','Optional. Use one image for the subject and another for the style.');const uploads=make('div','pi-file-area');
+ const references=section('Optional references','Add a subject image or style reference. Fix keeps the original uploads unchanged.');const uploads=make('div','pi-file-area');
  for(const [kind,title,subtitle,removeLabel] of [['source','Subject image','Upload JPG, PNG or WebP','Remove uploaded photo'],['design','Style reference','Optional second image','Remove style reference']]){
   const slot=make('div','pi-upload-slot');slot.append(input(kind,title,subtitle));const remove=make('button','pi-mode pi-remove',removeLabel);remove.type='button';remove.dataset.piAction='remove-'+kind;remove.hidden=true;slot.append(remove);uploads.append(slot);
  }
  references.append(uploads);form.append(references);
- const brief=section('3 · Describe the artwork');const promptLabel=make('label','pi-label','Image instructions');promptLabel.htmlFor='pi-prompt';
- const prompt=make('textarea');prompt.id='pi-prompt';prompt.placeholder='Subject, composition, colors, style, and anything to preserve.';brief.append(promptLabel,prompt);
- const contextBar=make('div','pi-context-line');const contextText=make('span','pi-context-label','');contextText.id='pi-context-label';const clearContext=make('button','pi-context-clear','Clear context');clearContext.type='button';clearContext.dataset.piAction='clear-context';clearContext.hidden=true;contextBar.append(contextText,clearContext);
- const tips=make('div','pi-smart-suggestions');tips.id='pi-smart-suggestions';tips.setAttribute('aria-label','Suggested artwork formats');brief.append(contextBar,tips);form.append(brief);
  const optional=make('details','pi-exact-optional');optional.append(make('summary','','Optional: change automatic wording'));
  const textLabel=make('label','pi-label','Wording preference');textLabel.htmlFor='pi-text-mode';
  const policy=make('select','pi-exact-input');policy.id='pi-text-mode';for(const [value,label] of [['auto','Automatic from my description'],['exact','Override the exact words'],['off','No words on the image']]){const o=make('option','',label);o.value=value;policy.append(o)}
@@ -374,4 +374,3 @@ window.PhiImageBuilder={
  }
 };
 })();
-

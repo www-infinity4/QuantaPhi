@@ -134,3 +134,51 @@ export const markOpened=(state,id,fromId=state.lastUsed)=>({
 });
 export const toggleFollowing=(state,id)=>({...state,following:(state.following||[]).includes(id)?
  state.following.filter(x=>x!==id):[...state.following,id]});
+function readStoredFeed(storage){
+ try{return {ok:true,state:cleanFeedState(JSON.parse(storage.getItem(FEED_STORAGE_KEY)||'{}'))}}
+ catch{return {ok:false,state:cleanFeedState({})}}
+}
+function writeAndConfirm(storage,state){
+ const expected=cleanFeedState(state);
+ try{
+  storage.setItem(FEED_STORAGE_KEY,JSON.stringify(expected));
+  const saved=readStoredFeed(storage);
+  return {ok:saved.ok&&JSON.stringify(saved.state)===JSON.stringify(expected),state:saved.state};
+ }catch{return {ok:false,state:cleanFeedState({})}}
+}
+export function commitFollowing(storage,id){
+ if(!storage||!validId(id))return {ok:false,followed:false,state:cleanFeedState({})};
+ const current=readStoredFeed(storage);
+ if(!current.ok)return {ok:false,followed:false,state:current.state};
+ const result=writeAndConfirm(storage,toggleFollowing(current.state,id));
+ const followed=result.state.following.includes(id);
+ return {ok:result.ok&&followed!==current.state.following.includes(id),followed,state:result.state};
+}
+function maxValues(first={},second={}){
+ const merged={...first};
+ for(const [id,value] of Object.entries(second))merged[id]=Math.max(merged[id]||0,value||0);
+ return merged;
+}
+function maxTransitions(first={},second={}){
+ const merged={};
+ for(const from of new Set([...Object.keys(first),...Object.keys(second)])){
+  merged[from]=maxValues(first[from],second[from]);
+ }
+ return merged;
+}
+export function saveNavigationProgress(storage,progress){
+ if(!storage)return {ok:false,state:cleanFeedState({})};
+ const current=readStoredFeed(storage);
+ if(!current.ok)return {ok:false,state:current.state};
+ const older=cleanFeedState(progress);
+ const opened=older.lastUsed&&
+  (older.counts[older.lastUsed]||0)>(current.state.counts[older.lastUsed]||0);
+ const merged=cleanFeedState({...current.state,
+  counts:maxValues(current.state.counts,older.counts),
+  viewed:maxValues(current.state.viewed,older.viewed),
+  transitions:maxTransitions(current.state.transitions,older.transitions),
+  lastUsed:older.advance>current.state.advance||opened?older.lastUsed:current.state.lastUsed,
+  advance:Math.max(current.state.advance,older.advance)
+ });
+ return writeAndConfirm(storage,merged);
+}

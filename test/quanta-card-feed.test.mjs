@@ -78,7 +78,7 @@ test('tab controls, mobile search, Bubbles specialists and existing website card
  assert.match(ui,/link\.dataset\.siteUrl=target/);
  assert.ok(!ui.includes('QuantaOpenSite(target,card.name)'), 'viewer requires DOM element');
  assert.match(ui,/Next unseen card/);
- assert.match(ui,/localStorage\.setItem/);
+ assert.match(ui,/saveNavigationProgress/);
  assert.match(ui,/embed\.src='\/bubbles-embed\.js'/);
  assert.match(ui,/wallet sync is not yet enabled/);
  assert.match(css,/@media\(max-width:560px\)/);
