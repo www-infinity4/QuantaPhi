@@ -85,6 +85,18 @@ test('server rejects non-UI, generic tech failures and security-sensitive blocke
   assert.equal(row.status,'blocked');
  }
 });
+test('an unresolved publication prevents changing the ticket or approving a retry',async()=>{
+ const initial=ticket();
+ initial.context.color_jobs[0].progress.publicationPending=true;
+ const {db,calls}=mockDb(initial);
+ const env={WRITER_OWNER_HASH:'a'.repeat(64),WORK_DB:db};
+ for(const path of ['/work/tickets/approve','/work/tickets/update']){
+  const result=await ownerTickets(env,path,{id:ticketId,jobId:'TASK-1',status:'ready',context:ticket().context});
+  assert.equal(result.status,409);
+  assert.equal(result.result.error,'publication_reconciliation_required');
+ }
+ assert.equal(calls.length,0);
+});
 test('UI calls the separately owner-authorized approval endpoint from the chat, not a model message',()=>{
  const chat=fs.readFileSync('bubbles-ai.js','utf8');
  assert.match(chat,/function showOwnerApprovalRequests\(tickets\)/);

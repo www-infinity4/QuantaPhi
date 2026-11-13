@@ -154,8 +154,6 @@ async function applyRunnerResult(context,receipt){
  if(blocked&&!pending)attachTechnicalHandoff(context,job,receipt);
  return context;
 }
-const unresolvedPublication=job=>job?.progress?.publicationPending===true||
- job?.progress?.blocker==='publication_reconciliation_required';
 function pinkReceipt(lease){
  const proof=lease.pinkVerification;
  if(lease.status!=='source_verified'||!proof)return null;
@@ -1401,6 +1399,8 @@ export async function readRunnerBody(request, pathname){
  * partition that the Brain Clock's authenticated writer reads. Do not create
  * a new anonymous owner_token in the browser: those tickets never dispatch. */
 export async function ownerTickets(env,path,body){
+ const unresolvedPublication=job=>job?.progress?.publicationPending===true||
+  job?.progress?.blocker==='publication_reconciliation_required';
  const denied=(error,status=400)=>({status,result:{ok:false,error}});
  const iterationThread=/^chat_[a-f0-9]{32}$/;
  const ownerHash=env.WRITER_OWNER_HASH;
