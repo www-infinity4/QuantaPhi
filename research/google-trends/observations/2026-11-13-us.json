@@ -3,12 +3,187 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T16:30:57.163322Z",
+  "checked_at": "2026-11-13T17:01:19.232118Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "larry david",
+      "query": "emma grede",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-13T16:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/09/style/skims-advent-calendar-refunds.html",
+        "https://www.bbc.com/news/articles/cqp8g8p53x6ko",
+        "https://globalnews.ca/news/12144875/skims-refund-advent-calendar-kim-kardashian/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCPnXUC-O4j_MwbWmpNyjv6Gd2wSuqtYF4wjNQjCNqFnBTSdyxrtEyv0vYTwo",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/09/style/skims-advent-calendar-refunds.html",
+          "title": "Skims Offers Refunds for $150 Advent Calendar Full of Hair Ties and ‘Junk’",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCPnXUC-O4j_MwbWmpNyjv6Gd2wSuqtYF4wjNQjCNqFnBTSdyxrtEyv0vYTwo"
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/cqp8g8p53x6ko",
+          "title": "Kim Kardashian's Skims offers refunds for $148 advent calendar after backlash",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQapN4jObHWMh-I8NH3HOCnRiyNKUmSGWymftE5w098GFX2bUEyeSlS_VG792c"
+        },
+        {
+          "url": "https://globalnews.ca/news/12144875/skims-refund-advent-calendar-kim-kardashian/",
+          "title": "SKIMS to refund $148 advent calendar filled with hair ties, bobby pins",
+          "publisher": "Global News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSVY8zk8gkd6NeAVDTDH2rBF3a8Vg3ojdQYBb5YKvQhKTkHPE9KBCr_HOi3uc"
+        }
+      ]
+    },
+    {
+      "query": "taylor fritz",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-13T16:30:00Z",
+      "related_news_urls": [
+        "https://tennishead.net/taylor-fritz-has-made-a-very-smart-decision-after-missing-out-on-the-atp-finals-this-year/",
+        "https://www.tennis365.com/tennis-news/taylor-fritz-alex-de-minaur-without-playing",
+        "https://www.tennis365.com/tennis-news/taylor-fritz-very-bizarre-decision"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFED3ElpHFORA6uVMsuJcKKGwkAE7eu3MgffygivXVQ_-xTByTPaPHwjAy6cg",
+      "image_credit": "Tennishead",
+      "news": [
+        {
+          "url": "https://tennishead.net/taylor-fritz-has-made-a-very-smart-decision-after-missing-out-on-the-atp-finals-this-year/",
+          "title": "Taylor Fritz has made a very smart decision after missing out on the ATP Finals this year",
+          "publisher": "Tennishead",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFED3ElpHFORA6uVMsuJcKKGwkAE7eu3MgffygivXVQ_-xTByTPaPHwjAy6cg"
+        },
+        {
+          "url": "https://www.tennis365.com/tennis-news/taylor-fritz-alex-de-minaur-without-playing",
+          "title": "Taylor Fritz and Alex de Minaur set for $156,000 payday without playing a single match",
+          "publisher": "Tennis365",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6L3YoWRMUUnVRayzr51CBQh8ruTGArMGqtzKQ40-ri-0QZDpi2U9yoOf_OMY"
+        },
+        {
+          "url": "https://www.tennis365.com/tennis-news/taylor-fritz-very-bizarre-decision",
+          "title": "Taylor Fritz has just made a very bizarre decision that makes very little sense for his career",
+          "publisher": "Tennis365",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1R1Y5QasgD2HGSCd1bF4LUW3m46S2VC63IDzKc0gsKq3B3C2zAOnkWSdJ1Yc"
+        }
+      ]
+    },
+    {
+      "query": "doug mcdermott",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T16:30:00Z",
+      "related_news_urls": [
+        "https://bleacherreport.com/articles/25532890-doug-mcdermott-retires-after-12-nba-seasons-bulls-knicks-thunder-spurs-more",
+        "https://clutchpoints.com/nba/nba-stories/doug-mcdermott-officially-announces-retirement-from-league",
+        "https://heavy.com/sports/nba/chicago-bulls/ex-bulls-12-year-nba-vet-makes-big-career-announcement/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyeLW96DiG9IzIc8IBAHgGUJCepbY9IOOqY2yEuDrEOE5jQU6mfpJOfaVMG7w",
+      "image_credit": "Bleacher Report",
+      "news": [
+        {
+          "url": "https://bleacherreport.com/articles/25532890-doug-mcdermott-retires-after-12-nba-seasons-bulls-knicks-thunder-spurs-more",
+          "title": "Doug McDermott Retires After 12 NBA Seasons with Bulls, Knicks, Thunder, Spurs, More",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyeLW96DiG9IzIc8IBAHgGUJCepbY9IOOqY2yEuDrEOE5jQU6mfpJOfaVMG7w"
+        },
+        {
+          "url": "https://clutchpoints.com/nba/nba-stories/doug-mcdermott-officially-announces-retirement-from-league",
+          "title": "NBA news: Doug McDermott officially announces retirement from league",
+          "publisher": "ClutchPoints",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQ9wo9dENNZ1pflhdfxujVdcDpPYEexkXRd7ZJlX96BPufavtj-5eQos0lec0"
+        },
+        {
+          "url": "https://heavy.com/sports/nba/chicago-bulls/ex-bulls-12-year-nba-vet-makes-big-career-announcement/",
+          "title": "Ex-Bulls 12-Year NBA Vet Makes Big Career Announcement",
+          "publisher": "Heavy.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRubHw6E26Y_Mt-ng9IcmiMffJM3JHstYFON82nbOQmkx2j9gKakjOKm_NLfic"
+        }
+      ]
+    },
+    {
+      "query": "alex warren 2027 tour",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T16:20:00Z",
+      "related_news_urls": [
+        "https://www.knoxnews.com/story/entertainment/music/2026/11/13/how-to-get-tickets-to-alex-warren-concert-in-knoxville/92745545007/",
+        "https://uwbadgers.com/news/2026/11/13/general-news-alex-warren-announces-tour-stop-at-the-kohl-center",
+        "https://www.weareiowa.com/article/entertainment/music/alex-warren-finding-more-family-on-the-road-tour-des-moines-tickets-dates/524-7fb4e8f5-b28e-4ea4-8c05-59a409ac45d4"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwetZCQY1yFsIA3UgF4xP0SciHS3DIRpUvd-Bk29FqwQCt5MjD16cTAQbMZAw",
+      "image_credit": "Knoxville News Sentinel",
+      "news": [
+        {
+          "url": "https://www.knoxnews.com/story/entertainment/music/2026/11/13/how-to-get-tickets-to-alex-warren-concert-in-knoxville/92745545007/",
+          "title": "Alex Warren coming to Knoxville in 2027. Here’s how to get tickets",
+          "publisher": "Knoxville News Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwetZCQY1yFsIA3UgF4xP0SciHS3DIRpUvd-Bk29FqwQCt5MjD16cTAQbMZAw"
+        },
+        {
+          "url": "https://uwbadgers.com/news/2026/11/13/general-news-alex-warren-announces-tour-stop-at-the-kohl-center",
+          "title": "Alex Warren announces tour stop at the Kohl Center",
+          "publisher": "Wisconsin Badgers",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxgmMVyhuw4tpsPIRX28LcbtlF7W_i5YiOyse8so9KQx_1cAO4mLTzbYkUSfQ"
+        },
+        {
+          "url": "https://www.weareiowa.com/article/entertainment/music/alex-warren-finding-more-family-on-the-road-tour-des-moines-tickets-dates/524-7fb4e8f5-b28e-4ea4-8c05-59a409ac45d4",
+          "title": "'Are you having fun,' Des Moines? Alex Warren coming to Casey's Center for 2027 World Tour",
+          "publisher": "weareiowa.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQE8KxOlHq7n2p9-x-Zmf8he4fM9Tu1DExam6222PQiyNZNHXNwHLZL-XlKgMY"
+        }
+      ]
+    },
+    {
+      "query": "tunisia vs libya",
       "approx_searches": "200+",
+      "published_at": "2026-11-13T16:20:00Z",
+      "related_news_urls": [
+        "https://www.beinsports.com/en-us/soccer/africa-cup-of-nations-qualification/articles/how-and-where-to-watch-tunisia-vs-libya-live-on-bein-sports-2026-11-13",
+        "https://www.ysscores.com/en/news/14091487/tunisia-national-team-begins-camp-in-preparation-for-libya-in-africa-cup-of-nations-qualification",
+        "https://www.cafonline.com/afcon2025/news/tunisia-turn-to-experience-and-young-attackers-for-crucial-libya-totalenergies-caf-afcon-qualifiers/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqEazwcKAPcc-Yj9kVLRf3SVa9EB5SoAQQ9MhZ55qczt51VbpXUWlWgEXHeSU",
+      "image_credit": "beIN SPORTS",
+      "news": [
+        {
+          "url": "https://www.beinsports.com/en-us/soccer/africa-cup-of-nations-qualification/articles/how-and-where-to-watch-tunisia-vs-libya-live-on-bein-sports-2026-11-13",
+          "title": "Tunisia vs Libya LIVE on beIN SPORTS | AFCON 2027",
+          "publisher": "beIN SPORTS",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqEazwcKAPcc-Yj9kVLRf3SVa9EB5SoAQQ9MhZ55qczt51VbpXUWlWgEXHeSU"
+        },
+        {
+          "url": "https://www.ysscores.com/en/news/14091487/tunisia-national-team-begins-camp-in-preparation-for-libya-in-africa-cup-of-nations-qualification",
+          "title": "Tunisia national team begins camp in preparation f… | Yalla Shoot",
+          "publisher": "YSscores",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRlXFxo5nmTPuKh3bbOQ8IoC2ds0QXF6jtc3OCv8XLRpRNo34PTJIVS9qrgTm8"
+        },
+        {
+          "url": "https://www.cafonline.com/afcon2025/news/tunisia-turn-to-experience-and-young-attackers-for-crucial-libya-totalenergies-caf-afcon-qualifiers/",
+          "title": "Tunisia turn to experience and young attackers for crucial Libya TotalEnergies CAF AFCON qualifiers",
+          "publisher": "CAFOnline.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZrPv7Ud6lyihGjR7oVzGkaWDTxx53svJpTSXjHOo9OMm0VWY_WqdL0xgZ9pU"
+        }
+      ]
+    },
+    {
+      "query": "larry david",
+      "approx_searches": "500+",
       "published_at": "2026-11-13T16:10:00Z",
       "related_news_urls": [
         "https://ew.com/larry-david-reveals-actors-actresses-almost-starred-seinfeld-12237057",
@@ -43,7 +218,7 @@
     },
     {
       "query": "mark cuban",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-13T15:50:00Z",
       "related_news_urls": [
         "https://financebuzz.com/news/mark-cuban-one-skill-making-millions",
@@ -73,41 +248,6 @@
           "publisher": "WSJ",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNf4boGZl3FZ8jmG5QQ5jGUIenRPjbuyr-wpKShTeIasxy9sLnevywo8wiHRc"
-        }
-      ]
-    },
-    {
-      "query": "saudi arabia vs south korea",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T15:50:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cwvgr22k5l4nt",
-        "https://biz.chosun.com/en/en-sports/2026/11/14/ROON3ZVDTRDP3LKGIQN3MWXGDU/",
-        "https://www.livescore.com/en/news/football/more/saud-abdulhamid-surprise-al-hamdan-to-lead-saudi-arabia-in-south-korea-friendly-goal/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cwvgr22k5l4nt",
-          "title": "Saudi Arabia vs South Korea: Friendlies stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
-        },
-        {
-          "url": "https://biz.chosun.com/en/en-sports/2026/11/14/ROON3ZVDTRDP3LKGIQN3MWXGDU/",
-          "title": "Korea concedes early lead and trails Saudi Arabia at halftime",
-          "publisher": "Chosunbiz",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3svd9zBPN7ZaxM3e6fcim1kZ2oSXI4prY_oT9GCCai6GNS_XFvaG6lu8_ydg"
-        },
-        {
-          "url": "https://www.livescore.com/en/news/football/more/saud-abdulhamid-surprise-al-hamdan-to-lead-saudi-arabia-in-south-korea-friendly-goal/",
-          "title": "Saud Abdulhamid surprise: Al-Hamdan to lead Saudi Arabia in South Korea friendly",
-          "publisher": "LiveScore",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIoiJ68Ul88IefEmpFWny8VGr-Ndb7qatukow7c2skYB6O8EOI90f3xLihE_k"
         }
       ]
     },
@@ -147,13 +287,48 @@
       ]
     },
     {
-      "query": "avril lavigne baby",
-      "approx_searches": "2000+",
+      "query": "saudi arabia vs south korea",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T15:50:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cwvgr22k5l4nt",
+        "https://sports.yahoo.com/articles/saudi-arabia-vs-south-korea-131500696.html",
+        "https://www.chosun.com/english/sports-en/2026/11/14/D7WCVNYFQ5EHLMDBH25OZB446A/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cwvgr22k5l4nt",
+          "title": "Saudi Arabia vs South Korea: Friendlies stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/saudi-arabia-vs-south-korea-131500696.html",
+          "title": "Saudi Arabia vs. South Korea Lineups, Live Streaming, How & Where to Watch on TV",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTANmFP-ErUkX9hqsgiqdRKRliR7J-zN3KhSnOLH_koZHN3yTQmknLrDztqD3M"
+        },
+        {
+          "url": "https://www.chosun.com/english/sports-en/2026/11/14/D7WCVNYFQ5EHLMDBH25OZB446A/",
+          "title": "South Korea Concedes Opening Goal in Saudi Arabia Friendly",
+          "publisher": "조선일보",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxU8w31sLsR_r40IgBjZOHyo7kZBoxe-JZgsjaaADHdBC36jEJgvGNZ6x5ErI"
+        }
+      ]
+    },
+    {
+      "query": "avril lavigne",
+      "approx_searches": "10000+",
       "published_at": "2026-11-13T15:40:00Z",
       "related_news_urls": [
         "https://pagesix.com/2026/11/13/parents/avril-lavigne-welcomes-first-baby-with-mystery-man/",
-        "https://hollywoodlife.com/feature/does-avril-lavigne-have-kids-baby-5583439/",
-        "https://www.justjared.com/2026/11/13/avril-lavigne-welcomes-first-child-shares-first-photos-of-her-daughter/"
+        "https://people.com/avril-lavigne-welcomes-her-first-child-a-baby-girl-12252796",
+        "https://www.thesun.co.uk/tvandshowbiz/41017678/avril-lavigne-secret-baby/"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTA3EHLuJNJS_3waC-6wXU8d_RG7R7gNylIxvzwerzeGPQRsgxpELtblaPiPmc",
       "image_credit": "Page Six",
@@ -166,193 +341,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTA3EHLuJNJS_3waC-6wXU8d_RG7R7gNylIxvzwerzeGPQRsgxpELtblaPiPmc"
         },
         {
-          "url": "https://hollywoodlife.com/feature/does-avril-lavigne-have-kids-baby-5583439/",
-          "title": "Does Avril Lavigne Have Kids? What We Know About Her Baby Girl",
-          "publisher": "Hollywood Life",
+          "url": "https://people.com/avril-lavigne-welcomes-her-first-child-a-baby-girl-12252796",
+          "title": "Avril Lavigne Welcomes Her First Child, a Baby Girl: Our ‘Princess Has Arrived’",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSje5YwFMwIfntIVq44v1KnAt0DnUhGpHMbbLNooQ7kqer7Kfz2MRNBzJbv4Cc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzNfXgWtgEYs1ZLix87VvNAkCozJKGMc9wSCqgSMVOYFMOxLljKZmNKg5eVAo"
         },
         {
-          "url": "https://www.justjared.com/2026/11/13/avril-lavigne-welcomes-first-child-shares-first-photos-of-her-daughter/",
-          "title": "Avril Lavigne Welcomes First Child, Shares First Photos of Her Daughter",
-          "publisher": "Just Jared",
+          "url": "https://www.thesun.co.uk/tvandshowbiz/41017678/avril-lavigne-secret-baby/",
+          "title": "Avril Lavigne reveals she’s welcomed secret baby as she announces arrival of ‘mini princess’",
+          "publisher": "The Sun",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkudEtdBll3sOANXAg6DQ1H-BhuRwrCTnVzU8rGNGb8ENFdMWMMSdenx3f8os"
-        }
-      ]
-    },
-    {
-      "query": "south africa vs kenya",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T15:40:00Z",
-      "related_news_urls": [
-        "https://africa.espn.com/espn/story/_/id/50469313/south-africa-kenya-kick-team-news-how-watch-bafana-afcon-qualifier",
-        "https://thenational.co.za/sport/2026-11-13-ronwen-williams-insists-bafana-bafana-have-learnt-from-2012-afcon-dance-of-shame-ahead-of-kenya-clashes/",
-        "https://www.mozzartsport.co.ke/athletics/news/four-gold-medalists-confirmed-for-2026-mozzart-bet-chemususu-dam-race/70675/comments"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRD4kYArUZj8ihYNYBBoKCeQ0TA6J9WeBBYecUJ-KJi5QjVS99aXAdNWAORWtU",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://africa.espn.com/espn/story/_/id/50469313/south-africa-kenya-kick-team-news-how-watch-bafana-afcon-qualifier",
-          "title": "South Africa vs. Kenya - Kick-off time, team news, how to watch Bafana's AFCON qualifier",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRD4kYArUZj8ihYNYBBoKCeQ0TA6J9WeBBYecUJ-KJi5QjVS99aXAdNWAORWtU"
-        },
-        {
-          "url": "https://thenational.co.za/sport/2026-11-13-ronwen-williams-insists-bafana-bafana-have-learnt-from-2012-afcon-dance-of-shame-ahead-of-kenya-clashes/",
-          "title": "Ronwen Williams insists Bafana Bafana have learnt from 2012 Afcon 'Dance of Shame' ahead of Kenya clashes",
-          "publisher": "thenational.co.za",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ09yVQ5w-6SJt5BwdomhMQh2jk0EYLoz26wFIVCH6g3-HIenYtNy47hcflB8c"
-        },
-        {
-          "url": "https://www.mozzartsport.co.ke/athletics/news/four-gold-medalists-confirmed-for-2026-mozzart-bet-chemususu-dam-race/70675/comments",
-          "title": "News Comments Four gold medalists confirmed for 2026 Mozzart Bet Chemususu Dam race",
-          "publisher": "Mozzart Sport Kenya",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGeKIJyMZnJcv4K9yTp0r7cfNYvsNda6VRZmoMiktRfH_F73qc2-lTfRzuCO4"
-        }
-      ]
-    },
-    {
-      "query": "laura samson",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-13T15:20:00Z",
-      "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/b0a0195b-a424-4809-a568-5d7d8dca1203/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/3a81f12f-d108-40f4-8810-d2df44c2a52f/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/bfc9c2e0-4f35-43c0-b277-ec60e009aa43/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSitoJ3kDuQVHGgiooyCf9_wmYF9k_CVbJCYyVk2JXatmGuv3jy3EpyBXp079k",
-      "image_credit": "Robinhood",
-      "news": [
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/b0a0195b-a424-4809-a568-5d7d8dca1203/",
-          "title": "November 13, 2026: August Holmgren vs Sebastian Gorzny Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSitoJ3kDuQVHGgiooyCf9_wmYF9k_CVbJCYyVk2JXatmGuv3jy3EpyBXp079k"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/3a81f12f-d108-40f4-8810-d2df44c2a52f/",
-          "title": "November 11, 2026: Alejandro Tabilo vs Lorenzo Sonego Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEJMwrnwmzlInLmdONDm_dnz45BVKTZvIOIOVOyqc80bxlrpkJ5DBQSkahxTU"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/bfc9c2e0-4f35-43c0-b277-ec60e009aa43/",
-          "title": "November 11, 2026: Carole Monnet vs Polona Hercog Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_ir327pUEu5_6dQBqTGLUeq0qh_19ljOSabOEVaLDNr0EaqVgSHEqdb4Tt1Q"
-        }
-      ]
-    },
-    {
-      "query": "avgo",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T15:20:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/12/stock-market-today-live-updates.html",
-        "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-nvidia-ceo-jensen-huang-resigns-ppi-inflation-data/card/nvidia-s-stock-extends-selloff-after-jensen-huang-s-resignation-vvv1Dv3PjWEVqC9myUVp?mod=mw_FV",
-        "https://www.reuters.com/world/china/huang-exit-us-scrutiny-imperil-3-billion-chinese-ai-projects-reliant-nvidia-2026-11-13/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1v3pdxUY_0jMQAGI7A2x2ltcMGrInVI3FGQB9CELLj8vZTfVd5Uyhm6KVdP0",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/12/stock-market-today-live-updates.html",
-          "title": "Nasdaq falls on Friday as Nvidia keeps sliding, but major averages are up for week: Live updates",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1v3pdxUY_0jMQAGI7A2x2ltcMGrInVI3FGQB9CELLj8vZTfVd5Uyhm6KVdP0"
-        },
-        {
-          "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-nvidia-ceo-jensen-huang-resigns-ppi-inflation-data/card/nvidia-s-stock-extends-selloff-after-jensen-huang-s-resignation-vvv1Dv3PjWEVqC9myUVp?mod=mw_FV",
-          "title": "Nvidia’s stock extends selloff after Jensen Huang’s resignation",
-          "publisher": "MarketWatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyWlJxvVryIMzrR7-lohlKKXFuNXOMy5obOr3svd6bJJrSUmJEzkf0aeM6UkY"
-        },
-        {
-          "url": "https://www.reuters.com/world/china/huang-exit-us-scrutiny-imperil-3-billion-chinese-ai-projects-reliant-nvidia-2026-11-13/",
-          "title": "EXCLUSIVE: Huang exit and US scrutiny imperil $3 billion in Chinese AI projects reliant on Nvidia",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDg4vhOsj2nj5GghJ7F5Sx4yMZf2T1ZemZ2m6-oCnbx1MYdvPWHZICLlMoUR4"
-        }
-      ]
-    },
-    {
-      "query": "nigeria vs tanzania",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-13T15:10:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cmly0wwxl3n5t",
-        "https://www.sports247.ng/eric-chelle-admits-late-arrivals-of-super-eagles-players-affected-his-game-plan-for-fridays-clash-with-tanzania/",
-        "https://realnewsmagazine.net/afcon-qualifier-aba-fans-urge-super-eagles-to-triumph-over-tanzania/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cmly0wwxl3n5t",
-          "title": "Nigeria vs Tanzania: Africa Cup of Nations Qualification stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
-        },
-        {
-          "url": "https://www.sports247.ng/eric-chelle-admits-late-arrivals-of-super-eagles-players-affected-his-game-plan-for-fridays-clash-with-tanzania/",
-          "title": "Eric Chelle Admits Late Arrivals Of Super Eagles' Players Affected His Game Plan For Friday's Clash With Tanzania",
-          "publisher": "Sports247 Nigeria",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjVsND6qne_guqbk_bu4M0i9ZxWxET1bgRxHsaGLJzI00IUQF-ncKNnCz1IZo"
-        },
-        {
-          "url": "https://realnewsmagazine.net/afcon-qualifier-aba-fans-urge-super-eagles-to-triumph-over-tanzania/",
-          "title": "AFCON Qualifier: Aba fans urge Super Eagles to triumph over Tanzania",
-          "publisher": "Realnews Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHOxttkKVbI6CV6ji_6ix7VSC_uBCTTq3_jqaA4-Rj7XiQvsN3PGkEaFpALgM"
-        }
-      ]
-    },
-    {
-      "query": "zelda ocarina of time remake sales",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-13T15:10:00Z",
-      "related_news_urls": [
-        "https://www.nintendo.com/us/whatsnew/the-legend-of-zelda-ocarina-of-time-for-nintendo-switch-2-sells-over-5-2-million-units-worldwide-in-first-four-days/",
-        "https://gameinformer.com/2026/11/11/the-legend-of-zelda-ocarina-of-time-remake-is-nintendos-fastest-selling-switch-2-game",
-        "https://mashable.com/entertainment/zelda-ocarina-of-time-switch-2-metacritic-records"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrjq4T1B2PoODIOmmTx6eauVBlTzFz7TH53Qj5M8Go9LAPDk5160AYYianpKw",
-      "image_credit": "Nintendo",
-      "news": [
-        {
-          "url": "https://www.nintendo.com/us/whatsnew/the-legend-of-zelda-ocarina-of-time-for-nintendo-switch-2-sells-over-5-2-million-units-worldwide-in-first-four-days/",
-          "title": "The Legend of Zelda: Ocarina of Time for Nintendo Switch 2 sells over 5.2 million units worldwide in first four days",
-          "publisher": "Nintendo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrjq4T1B2PoODIOmmTx6eauVBlTzFz7TH53Qj5M8Go9LAPDk5160AYYianpKw"
-        },
-        {
-          "url": "https://gameinformer.com/2026/11/11/the-legend-of-zelda-ocarina-of-time-remake-is-nintendos-fastest-selling-switch-2-game",
-          "title": "The Legend Of Zelda: Ocarina Of Time Remake Is Nintendo's Fastest-Selling Switch 2 Game Ever",
-          "publisher": "Game Informer",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkwBCpQ_YPvA4rsJkK5oE8hS24WkM3hhLPtqj-_RWmzNf7oX1gP6TVftl-mto"
-        },
-        {
-          "url": "https://mashable.com/entertainment/zelda-ocarina-of-time-switch-2-metacritic-records",
-          "title": "'The Ocarina of Time' remake is setting Metacritic records left and right",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRghmIGiGPCgfRzGiXO0GjBw-CO8B0nbM_xCM4is-6jUGWDG3XCQ11FppreVU8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZ0Di5jHwjyOgtpfTTwPCw6FEaG1o0XZAUdMsiVYvg4VzeuLW4FAgsqhDcdOA"
         }
       ]
     }
