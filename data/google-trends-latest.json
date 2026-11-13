@@ -3,324 +3,306 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T21:01:27.284705Z",
+  "checked_at": "2026-11-13T21:31:14.423488Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ground stop",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T20:40:00Z",
+      "query": "planes",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-13T21:10:00Z",
       "related_news_urls": [
-        "https://pix11.com/news/local-news/ground-stop-issued-at-nyc-area-airports-what-to-know/",
-        "https://www.wcvb.com/article/weather-across-the-northeast-causes-flight-delays/74417954",
-        "https://www.wtnh.com/news/connecticut/hartford/flights-diverted-to-bradley-international-airport-due-to-severe-weather-in-nyc/"
+        "https://www.bbc.com/news/videos/c6vg2ljpn402o",
+        "https://news.sky.com/video/british-airways-plane-strikes-runway-with-its-tail-13611908",
+        "https://avherald.com/h?article=5476ecc8"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGj6UWMR6SlSz8hbROU7UYGlDG3zoshx2V_Q3TP-djD9M6fWuoZnaQ-rKCJo4",
-      "image_credit": "PIX11",
-      "news": [
-        {
-          "url": "https://pix11.com/news/local-news/ground-stop-issued-at-nyc-area-airports-what-to-know/",
-          "title": "Ground stop issued at NYC area airports: what to know",
-          "publisher": "PIX11",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGj6UWMR6SlSz8hbROU7UYGlDG3zoshx2V_Q3TP-djD9M6fWuoZnaQ-rKCJo4"
-        },
-        {
-          "url": "https://www.wcvb.com/article/weather-across-the-northeast-causes-flight-delays/74417954",
-          "title": "Weather across the northeast causes flight delays, cancellations at Logan, other airports",
-          "publisher": "WCVB",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRM9tj0SQiZ0OOVXmt2a1UwzDnnAiJ4MaR21s4Jg4tYge8GOXK6TIVC3HS_8tY"
-        },
-        {
-          "url": "https://www.wtnh.com/news/connecticut/hartford/flights-diverted-to-bradley-international-airport-due-to-severe-weather-in-nyc/",
-          "title": "Flights diverted to Bradley International Airport due to severe weather in NYC",
-          "publisher": "WTNH.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCEeupyubuhTdc9HR_ob2E_EiKfHymQ7hwvqDu0imGOr7wOniuC0uZCClmXSA"
-        }
-      ]
-    },
-    {
-      "query": "faa ground stop",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T20:40:00Z",
-      "related_news_urls": [
-        "https://pix11.com/news/local-news/ground-stop-issued-at-nyc-area-airports-what-to-know/",
-        "https://www.wcvb.com/article/weather-across-the-northeast-causes-flight-delays/74417954",
-        "https://www.wtnh.com/news/connecticut/hartford/flights-diverted-to-bradley-international-airport-due-to-severe-weather-in-nyc/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGj6UWMR6SlSz8hbROU7UYGlDG3zoshx2V_Q3TP-djD9M6fWuoZnaQ-rKCJo4",
-      "image_credit": "PIX11",
-      "news": [
-        {
-          "url": "https://pix11.com/news/local-news/ground-stop-issued-at-nyc-area-airports-what-to-know/",
-          "title": "Ground stop issued at NYC area airports: what to know",
-          "publisher": "PIX11",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGj6UWMR6SlSz8hbROU7UYGlDG3zoshx2V_Q3TP-djD9M6fWuoZnaQ-rKCJo4"
-        },
-        {
-          "url": "https://www.wcvb.com/article/weather-across-the-northeast-causes-flight-delays/74417954",
-          "title": "Weather across the northeast causes flight delays, cancellations at Logan, other airports",
-          "publisher": "WCVB",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRM9tj0SQiZ0OOVXmt2a1UwzDnnAiJ4MaR21s4Jg4tYge8GOXK6TIVC3HS_8tY"
-        },
-        {
-          "url": "https://www.wtnh.com/news/connecticut/hartford/flights-diverted-to-bradley-international-airport-due-to-severe-weather-in-nyc/",
-          "title": "Flights diverted to Bradley International Airport due to severe weather in NYC",
-          "publisher": "WTNH.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCEeupyubuhTdc9HR_ob2E_EiKfHymQ7hwvqDu0imGOr7wOniuC0uZCClmXSA"
-        }
-      ]
-    },
-    {
-      "query": "nintendo black friday sale",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-13T20:40:00Z",
-      "related_news_urls": [
-        "https://www.nintendo.com/us/whatsnew/nintendo-announces-black-friday-offers-to-help-spread-joy-this-holiday-season/",
-        "https://mashable.com/tech/nov-9-nintendo-switch-2-deal",
-        "https://lifehacker.com/tech/best-nintendo-deals-black-friday-2026"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJdwGWfoWciYkJy6BjM3eZ6Guo1nE4Y-npuqfWyjE-gT28K5lIk-qktg4joFo",
-      "image_credit": "Nintendo",
-      "news": [
-        {
-          "url": "https://www.nintendo.com/us/whatsnew/nintendo-announces-black-friday-offers-to-help-spread-joy-this-holiday-season/",
-          "title": "Nintendo announces Black Friday offers to help spread joy this holiday season - News - Nintendo Official Site",
-          "publisher": "Nintendo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJdwGWfoWciYkJy6BjM3eZ6Guo1nE4Y-npuqfWyjE-gT28K5lIk-qktg4joFo"
-        },
-        {
-          "url": "https://mashable.com/tech/nov-9-nintendo-switch-2-deal",
-          "title": "The Nintendo Switch 2 gets a rare deal way ahead of Black Friday",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkCwfPlSALAicmzH76I52iowQmdJ6bLK-1iW9e9hPJ7mcLAAUTPSdexzZns04"
-        },
-        {
-          "url": "https://lifehacker.com/tech/best-nintendo-deals-black-friday-2026",
-          "title": "Nintendo's Black Friday Deals Are Actually Pretty Good",
-          "publisher": "Lifehacker",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYZ6clXKS3O2MrhCcatyLbePNpSLYPegEg-B3wQD9cPl6pTvs1gvXB0sA-5ak"
-        }
-      ]
-    },
-    {
-      "query": "egipto - malaui",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T20:40:00Z",
-      "related_news_urls": [
-        "https://www.beinsports.com/es-us/football/africa-cup-of-nations-qualification/articles/en-vivo-egipto-vs-malawi-eliminatorias-afcon-2027-2026-11-13",
-        "https://www.futbol24.com/es/pronosticos-deportivos/previa/13-11-2026-egipto-malaui-pronostico/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgyffxarX0mptj0AFcO8sd6LjLLkQHk5ovi8DHywm7LZK9-wVoLeV1iUR9uMA",
-      "image_credit": "beIN SPORTS",
-      "news": [
-        {
-          "url": "https://www.beinsports.com/es-us/football/africa-cup-of-nations-qualification/articles/en-vivo-egipto-vs-malawi-eliminatorias-afcon-2027-2026-11-13",
-          "title": "EN VIVO: Egipto vs Malawi | Eliminatorias AFCON 2027",
-          "publisher": "beIN SPORTS",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgyffxarX0mptj0AFcO8sd6LjLLkQHk5ovi8DHywm7LZK9-wVoLeV1iUR9uMA"
-        },
-        {
-          "url": "https://www.futbol24.com/es/pronosticos-deportivos/previa/13-11-2026-egipto-malaui-pronostico/",
-          "title": "Egipto - Malaui | pronósticos + mejores cuotas | 13.11.2026",
-          "publisher": "Futbol24",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTklGvHpdVTsImQRyZGCTGfK4_ex2T5lxxlAXiM18WnATsVRpfLWMmdt6an6Gs"
-        }
-      ]
-    },
-    {
-      "query": "john brennan",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T20:30:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/politics/former-cia-director-john-brennans-son-arrested-after-fbi-uncovers-dozens-alleged-child-porn-images",
-        "https://www.yahoo.com/news/us/articles/son-ex-cia-chief-brennan-203228806.html",
-        "https://www.dailymail.com/news/article-16291027/obama-cia-john-brennan-son-kyle-child-pornography.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzSlwGMgoYYLzq7RdEaZtSPYQRC4ikX41fmp0_Z9QWpi_7j5pCobwYBl0ssuk",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/politics/former-cia-director-john-brennans-son-arrested-after-fbi-uncovers-dozens-alleged-child-porn-images",
-          "title": "Former CIA director John Brennan's son arrested after FBI uncovers dozens of alleged child porn images",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzSlwGMgoYYLzq7RdEaZtSPYQRC4ikX41fmp0_Z9QWpi_7j5pCobwYBl0ssuk"
-        },
-        {
-          "url": "https://www.yahoo.com/news/us/articles/son-ex-cia-chief-brennan-203228806.html",
-          "title": "Son of ex-CIA chief Brennan charged over sexual images of minor girls",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgdy8UW7bwDgo_3quu-4EjVBlGMWcYPph61eiXaNwIpfTU1DaqANxBxn7_GQw"
-        },
-        {
-          "url": "https://www.dailymail.com/news/article-16291027/obama-cia-john-brennan-son-kyle-child-pornography.html",
-          "title": "Obama CIA Director John Brennan's son arrested on child pornography charge after 'sexually explicit' materials found on his phone",
-          "publisher": "Daily Mail",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSW-0GBfb3i6WhI2-BOkNOCk1A39Sznfc7mz8CNhGuz096GCCuSlLWkFZZ0SpM"
-        }
-      ]
-    },
-    {
-      "query": "chris hemsworth",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T20:30:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/entertainment/movies/2026/11/13/chris-hemsworth-elsa-pataky-home-burglary-cars/92751835007/",
-        "https://7news.com.au/entertainment/police-investigate-break-in-and-theft-at-hollywood-actor-chris-hemsworths-northern-rivers-home-c-23152107",
-        "https://people.com/chris-hemsworth-home-burglarized-masked-thieves-carrying-knifes-steal-3-of-his-vehicles-12252410"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHOrJpS8WCAzfUup_YedjElEWXNYdYYGysoSB529AaZ3H8LYLnkTN0s74Iau8",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/entertainment/movies/2026/11/13/chris-hemsworth-elsa-pataky-home-burglary-cars/92751835007/",
-          "title": "Chris Hemsworth, Elsa Pataky's 3 cars stolen from Australian home",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHOrJpS8WCAzfUup_YedjElEWXNYdYYGysoSB529AaZ3H8LYLnkTN0s74Iau8"
-        },
-        {
-          "url": "https://7news.com.au/entertainment/police-investigate-break-in-and-theft-at-hollywood-actor-chris-hemsworths-northern-rivers-home-c-23152107",
-          "title": "Police investigate break in and theft at Hollywood actor Chris Hemsworth’s Northern Rivers home",
-          "publisher": "7NEWS",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShmV1HEWZF2ta2PD6zf3agCSt5JGQeBFr-guhGnZPmUn6MqJVtwbJ2u58bpAw"
-        },
-        {
-          "url": "https://people.com/chris-hemsworth-home-burglarized-masked-thieves-carrying-knifes-steal-3-of-his-vehicles-12252410",
-          "title": "Chris Hemsworth’s Home Burglarized as Masked Thieves Carrying Knives Steal 3 of His Vehicles",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmIzWomumNZbEEa65SU7J7mNRcnj2WzKzSZYOc5gDVSCxxILxl7pcyw_c36JA"
-        }
-      ]
-    },
-    {
-      "query": "fred johnson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T20:30:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-eagles-to-release-veteran-ol-fred-johnson",
-        "https://sports.yahoo.com/articles/eagles-release-veteran-tackle-fred-195744556.html",
-        "https://www.profootballrumors.com/2026/11/eagles-to-waive-t-fred-johnson"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQem8mt7L3B6h9DggOThQ0_9zqehqWRp_GUyLxImKKYmq2ToKmsg4GBhs0XyT0",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-eagles-to-release-veteran-ol-fred-johnson",
-          "title": "Report: Eagles to release veteran OL Fred Johnson",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQem8mt7L3B6h9DggOThQ0_9zqehqWRp_GUyLxImKKYmq2ToKmsg4GBhs0XyT0"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/eagles-release-veteran-tackle-fred-195744556.html",
-          "title": "Eagles to release veteran tackle Fred Johnson as roster changes continue",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIvBjq9DVCLe3J4YZJI5x5o2s7g2lBMhfeoASmL7LERuR5rzlqCw1K3AsVmbY"
-        },
-        {
-          "url": "https://www.profootballrumors.com/2026/11/eagles-to-waive-t-fred-johnson",
-          "title": "Eagles To Waive T Fred Johnson",
-          "publisher": "NFL Rumors - ProFootballRumors.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRULiOHq6hqfCbIS_clXmpoYj0fyveYtQFPLEKwKozZtuX3RqbS9tCK3WhqEWU"
-        }
-      ]
-    },
-    {
-      "query": "scotland",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T20:30:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/rugby-union/articles/c6wy4lg2rx29o",
-        "https://sports.yahoo.com/articles/townsend-graham-return-wallabies-scotlands-171412094.html",
-        "https://newspaper.dailymail.com/scottish-edition/sport/479522/steyn-calls-on-leaders-to-front-up-against-aussies"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa94W8aRRu9vxFYOjhbn1wLYjiLRDTEyXtEG84ZHHXBzbaJm1qdwv9PmHTS8c",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHWxTTBFJOVKKBbWjcDXoWMBgAEBheKWmxqmuQMJCllsKAG6K9ijjFyXxljgY",
       "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/rugby-union/articles/c6wy4lg2rx29o",
-          "title": "Scotland v Australia: Darcy Graham & Blair Kinghorn start for Gregor Townsend's side",
+          "url": "https://www.bbc.com/news/videos/c6vg2ljpn402o",
+          "title": "BA plane tail appears to strike runway during Heathrow landing",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa94W8aRRu9vxFYOjhbn1wLYjiLRDTEyXtEG84ZHHXBzbaJm1qdwv9PmHTS8c"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHWxTTBFJOVKKBbWjcDXoWMBgAEBheKWmxqmuQMJCllsKAG6K9ijjFyXxljgY"
         },
         {
-          "url": "https://sports.yahoo.com/articles/townsend-graham-return-wallabies-scotlands-171412094.html",
-          "title": "Townsend on Graham return, Wallabies & Scotland's 'true potential'",
-          "publisher": "Yahoo Sports",
+          "url": "https://news.sky.com/video/british-airways-plane-strikes-runway-with-its-tail-13611908",
+          "title": "British Airways plane strikes runway with its tail",
+          "publisher": "Sky News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTFDijEfZAAYOECFCPK4vL4cWSMvmgG53zjMz4kmkIN0j9iEjO7KxiPQzFHRs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4JGMjrsC44c7Lf53AhY7ncj_Irn1-i_GZPMEXbtjjdym5TMODv6elaYFwvvU"
         },
         {
-          "url": "https://newspaper.dailymail.com/scottish-edition/sport/479522/steyn-calls-on-leaders-to-front-up-against-aussies",
-          "title": "Steyn calls on leaders to front up against Aussies",
-          "publisher": "Daily Mail",
+          "url": "https://avherald.com/h?article=5476ecc8",
+          "title": "Accident: BAW A321N at London on Nov 12th 2026, tail strike on go around",
+          "publisher": "The Aviation Herald",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD0j9EZIqnGkcRUUgmb_q6Og3w2uWOvtVSNgJI-Nj1hB_oFTbuUr9jqeZfe1w"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRiyTLxAysRR44g_cnU-5w9XTo6f7qByKR6O_1MRYOMmw49BpwsipnH07GZ-o"
         }
       ]
     },
     {
-      "query": "liga de naciones",
+      "query": "faa flight delays",
       "approx_searches": "1000+",
-      "published_at": "2026-11-13T20:20:00Z",
+      "published_at": "2026-11-13T21:10:00Z",
       "related_news_urls": [
-        "https://www.telemundo.com/deportes/mas-deporte/italia-sorprende-a-francia-y-se-lleva-una-importante-victoria-en-la-ue-rcna608907",
-        "https://es-us.noticias.yahoo.com/deportes/laterales-boquete-naufragio-zidane-francia-192638898.html",
-        "https://www.tudn.com/futbol/uefa-nations-league/italy-vs-france-game-highlights-video"
+        "https://arstechnica.com/ai/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
+        "https://www.charlotteobserver.com/news/business/article318065907.html",
+        "https://www.ajc.com/business/2026/11/new-ai-tech-air-traffic-control-atlanta/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvvr4wmqLFD9l2YVQJPF5qte4QboU2fI63iE7f88PxTp_M9Vykm-F1q3hHjLU",
-      "image_credit": "Telemundo",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVhE9KBePHC71LYPAsl8NTDdJB1URjsH1AgwVR75CodHd2UY1lnz2Z8KFbAa0",
+      "image_credit": "Ars Technica",
       "news": [
         {
-          "url": "https://www.telemundo.com/deportes/mas-deporte/italia-sorprende-a-francia-y-se-lleva-una-importante-victoria-en-la-ue-rcna608907",
-          "title": "Italia sorprende a Francia y se lleva una importante victoria en la UEFA Nations League",
-          "publisher": "Telemundo",
+          "url": "https://arstechnica.com/ai/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
+          "title": "FAA expands AI advice to manage air traffic congestion across entire US airspace",
+          "publisher": "Ars Technica",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvvr4wmqLFD9l2YVQJPF5qte4QboU2fI63iE7f88PxTp_M9Vykm-F1q3hHjLU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVhE9KBePHC71LYPAsl8NTDdJB1URjsH1AgwVR75CodHd2UY1lnz2Z8KFbAa0"
         },
         {
-          "url": "https://es-us.noticias.yahoo.com/deportes/laterales-boquete-naufragio-zidane-francia-192638898.html",
-          "title": "Los laterales, el boquete del primer naufragio de Zidane con Francia",
-          "publisher": "Yahoo",
+          "url": "https://www.charlotteobserver.com/news/business/article318065907.html",
+          "title": "FAA taps AI to ease air traffic jams for Charlotte’s airport ahead of holiday rush",
+          "publisher": "Charlotte Observer",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIH0KUJeM4IlszPecC14B0TesoG_Rkcxe1p003wz-HZN9k3P5S96V1m-qnUS4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPvH1ekyxt1ShhmC48bRw1AL4wZVbZNOWTEEQb9fr5TivANBqXf2n4afgzUXE"
         },
         {
-          "url": "https://www.tudn.com/futbol/uefa-nations-league/italy-vs-france-game-highlights-video",
-          "title": "Resumen | Italia remonta y vence con categoría a Francia",
-          "publisher": "TUDN",
+          "url": "https://www.ajc.com/business/2026/11/new-ai-tech-air-traffic-control-atlanta/",
+          "title": "Atlanta one of first to see new AI air traffic control tool",
+          "publisher": "The Atlanta Journal-Constitution",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQix4Je3Rcfu_PjbpYhnNNNM8pNY3cR3c3lUWt-U6T1GdhyBTR8R1yIhDIS0TY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTBQi9hnHD3NwwvS4fNUS2_AX9j0PohfY4TzjKE7ivcqURbmzou0vnGwUhUUA"
         }
       ]
     },
     {
-      "query": "7oh ban",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T20:20:00Z",
+      "query": "why are flights grounded",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-13T21:10:00Z",
       "related_news_urls": [],
       "image_url": null,
       "image_credit": "",
       "news": []
+    },
+    {
+      "query": "airline ground stop",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-13T21:10:00Z",
+      "related_news_urls": [
+        "https://6abc.com/post/heavy-hail-piles-like-snow-parkside-borough-pennsylvania/20036746/",
+        "https://weather.com/2026/11/13/storms/severe/video/pennsylvania-hailstorm-brookhaven-road-closed-hail-pileup",
+        "https://www.delcotimes.com/2026/11/12/water-rescues-in-delaware-county-with-passage-of-storm/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ56HWwqvIN3x62OYY08GnLvLEbRygkDzSgQTWG3CpTVKE0G0UZ1oKyuNXKum0",
+      "image_credit": "6abc Philadelphia",
+      "news": [
+        {
+          "url": "https://6abc.com/post/heavy-hail-piles-like-snow-parkside-borough-pennsylvania/20036746/",
+          "title": "Heavy hail piles up like snow in parts of Delaware County, Pennsylvania",
+          "publisher": "6abc Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ56HWwqvIN3x62OYY08GnLvLEbRygkDzSgQTWG3CpTVKE0G0UZ1oKyuNXKum0"
+        },
+        {
+          "url": "https://weather.com/2026/11/13/storms/severe/video/pennsylvania-hailstorm-brookhaven-road-closed-hail-pileup",
+          "title": "19 inches of hail shuts down road in Philadelphia suburb",
+          "publisher": "The Weather Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJvPP83AS4KEmNML2lkNFc29sX9ru_OQPspY0Iv7hs8-CqnjFcZljBac7_l-M"
+        },
+        {
+          "url": "https://www.delcotimes.com/2026/11/12/water-rescues-in-delaware-county-with-passage-of-storm/",
+          "title": "Water rescues in Delaware County with passage of storm; hail piles, too",
+          "publisher": "Delco Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Tq4Rgpo5CexhfREdnUfKipA7Dhtw39ZjX8-QbP3UWiV1hvpcphWtBABsYeI"
+        }
+      ]
+    },
+    {
+      "query": "us flights grounded today",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T21:10:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
+    {
+      "query": "air travel",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T21:10:00Z",
+      "related_news_urls": [
+        "https://travel.yahoo.com/flights/articles/popular-flight-tracking-app-just-110200312.html",
+        "https://www.euronews.com/2026/11/12/when-should-you-leave-for-the-airport-this-app-can-tell-you-exactly-when",
+        "https://deeparrival.com/news/flighty-when-to-leave-airport-alert-thanksgiving-2026/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtKTTQQ8rVDyGyrIuY_k__fFlNqFXa5TMBc3IMxF9-Oa--0jU9FzPdrBVoVtg",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://travel.yahoo.com/flights/articles/popular-flight-tracking-app-just-110200312.html",
+          "title": "This Popular Flight-tracking App Just Launched a New Feature That Tells You Exactly When to Leave for the Airport",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtKTTQQ8rVDyGyrIuY_k__fFlNqFXa5TMBc3IMxF9-Oa--0jU9FzPdrBVoVtg"
+        },
+        {
+          "url": "https://www.euronews.com/2026/11/12/when-should-you-leave-for-the-airport-this-app-can-tell-you-exactly-when",
+          "title": "This app can tell you exactly when you should leave for the airport",
+          "publisher": "Euronews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScd1sggNj_LIOwEPY3Or8f-D9kszGant-WBr23AfrSw54cCiWaCyC7isEX2Xk"
+        },
+        {
+          "url": "https://deeparrival.com/news/flighty-when-to-leave-airport-alert-thanksgiving-2026/",
+          "title": "Flighty Adds When to Leave Alerts for Thanksgiving: How to Plan With It?",
+          "publisher": "https://deeparrival.com/",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTv3NXS-Jn8ngqWmSD0_sO9G0VwFNL2WDlvYOoWMtJ1l_A20rrUqPQ-GO615SI"
+        }
+      ]
+    },
+    {
+      "query": "airport news",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T21:10:00Z",
+      "related_news_urls": [
+        "https://avweb.com/aviation-news/california-airport-faces-170k-fine-safety/",
+        "https://deeparrival.com/news/sonoma-county-airport-faa-170000-fine/",
+        "https://www.dallasnews.com/business/retail/article/celina-fastest-growing-city-u-s-get-first-22527672.php"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5OulUKIe0b-JHogk4wXqW9ziY5AxhE_Q4uLnD4zfQlv0zFIrK0q2hG7bV0yI",
+      "image_credit": "AVweb",
+      "news": [
+        {
+          "url": "https://avweb.com/aviation-news/california-airport-faces-170k-fine-safety/",
+          "title": "California Airport Faces $170K Fine Over Safety Violations",
+          "publisher": "AVweb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5OulUKIe0b-JHogk4wXqW9ziY5AxhE_Q4uLnD4zfQlv0zFIrK0q2hG7bV0yI"
+        },
+        {
+          "url": "https://deeparrival.com/news/sonoma-county-airport-faa-170000-fine/",
+          "title": "Sonoma County Airport Faces $170,000 FAA Fine: Plan Your Flight",
+          "publisher": "deeparrival.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7qIsfB9ZQi6Hng3RO0M_W3GOkxmDErx9tDGE-zF9J68RV-QJvc3Sth_fgI5o"
+        },
+        {
+          "url": "https://www.dallasnews.com/business/retail/article/celina-fastest-growing-city-u-s-get-first-22527672.php",
+          "title": "The fastest-growing city in the country is getting a Target",
+          "publisher": "Dallas News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQht4sHDy2PFTCiIPo86f1PL9-2b0ftcJNDDnm_9IqR0wuZKZFD6_zlH5MFRJM"
+        }
+      ]
+    },
+    {
+      "query": "planes grounded",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-13T21:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/12/travel/turkish-airlines-flight-delay-hotel-refund.html",
+        "https://suaragarut.id/en/turkish-airlines-denver-flight-cancellation",
+        "https://demokratis.co.id/en/turkish-airlines-denver-flight-cancellation"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIdA33dQo_nQWXlHrg8urFdFcOrS83hfseOqh-6hpzYlKoSiUvqvrmmg1URVY",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/12/travel/turkish-airlines-flight-delay-hotel-refund.html",
+          "title": "Help! A Broken Toilet Grounded My Plane, and the Airline Won’t Cover a Hotel.",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIdA33dQo_nQWXlHrg8urFdFcOrS83hfseOqh-6hpzYlKoSiUvqvrmmg1URVY"
+        },
+        {
+          "url": "https://suaragarut.id/en/turkish-airlines-denver-flight-cancellation",
+          "title": "Turkish Airlines Denies Hotel Costs After Denver Flight Cancellation",
+          "publisher": "SuaraGarut.ID",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDUvkNjpiVaK6Qvz7dzR0RFh5oiRoG8ZNqRR99n3PCvHpYBEGpDE4DfWQeSQw"
+        },
+        {
+          "url": "https://demokratis.co.id/en/turkish-airlines-denver-flight-cancellation",
+          "title": "Turkish Airlines Cites Force Majeure After Denver Flight Cancellation",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDUvkNjpiVaK6Qvz7dzR0RFh5oiRoG8ZNqRR99n3PCvHpYBEGpDE4DfWQeSQw"
+        }
+      ]
+    },
+    {
+      "query": "airports",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-13T21:00:00Z",
+      "related_news_urls": [
+        "https://www.bizjournals.com/twincities/news/2026/11/13/niko-niko-boba-beverage-chain-eyes-msp-airport.html",
+        "https://www.dallasnews.com/business/retail/article/celina-fastest-growing-city-u-s-get-first-22527672.php",
+        "https://communityimpact.com/prosper-celina/development/90m-shopping-center-to-bring-celina-s-first-target/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_m3F_48vsrx_-B-_-HWo-1Q33Ee9iermua0ULHKHOMqlePn8Btv2fKM2sZ4Q",
+      "image_credit": "The Business Journals",
+      "news": [
+        {
+          "url": "https://www.bizjournals.com/twincities/news/2026/11/13/niko-niko-boba-beverage-chain-eyes-msp-airport.html",
+          "title": "Twin Cities chain Niko Niko Boba eyes MSP airport location",
+          "publisher": "The Business Journals",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_m3F_48vsrx_-B-_-HWo-1Q33Ee9iermua0ULHKHOMqlePn8Btv2fKM2sZ4Q"
+        },
+        {
+          "url": "https://www.dallasnews.com/business/retail/article/celina-fastest-growing-city-u-s-get-first-22527672.php",
+          "title": "The fastest-growing city in the country is getting a Target",
+          "publisher": "Dallas News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQht4sHDy2PFTCiIPo86f1PL9-2b0ftcJNDDnm_9IqR0wuZKZFD6_zlH5MFRJM"
+        },
+        {
+          "url": "https://communityimpact.com/prosper-celina/development/90m-shopping-center-to-bring-celina-s-first-target/",
+          "title": "New $90M shopping center to bring Celina's first Target",
+          "publisher": "Community Impact",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzlM5AhEfQ59Pjvud4DkJv6Vu7vUruUEiAxHqfXQ0riIiVelJJRCW2xIZeT6M"
+        }
+      ]
+    },
+    {
+      "query": "us flights",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-13T21:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/c6jd75geegzyo",
+        "https://news.sky.com/story/us-personnel-forced-to-shelter-at-uk-air-base-after-suspected-unauthorised-drone-activity-13611986",
+        "https://www.wral.com/news/ap/40644-drone-activity-over-us-base-in-britain-prompts-security-response-us-military-says/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTzh6g4_va4EmevSRWc3GDHAl9VkuoPDX0nc5bl9S4pgkg4Hwh2KStt3ATx0U",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/c6jd75geegzyo",
+          "title": "US Air Force says it responded to 'suspected drones' over RAF Lakenheath",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTzh6g4_va4EmevSRWc3GDHAl9VkuoPDX0nc5bl9S4pgkg4Hwh2KStt3ATx0U"
+        },
+        {
+          "url": "https://news.sky.com/story/us-personnel-forced-to-shelter-at-uk-air-base-after-suspected-unauthorised-drone-activity-13611986",
+          "title": "US personnel forced to shelter at UK air base after 'suspected unauthorised drone activity'",
+          "publisher": "Sky News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdIX8HjRRhLllgnVHnkUoAtSe2X9jNNeRWwEcSsEQfLTbhJTThaWdS8p-jHVE"
+        },
+        {
+          "url": "https://www.wral.com/news/ap/40644-drone-activity-over-us-base-in-britain-prompts-security-response-us-military-says/",
+          "title": "Drone activity over US base in Britain prompts security response, US military says",
+          "publisher": "WRAL",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToVoiRFYwTOszOCcdxP9RCQD0S31zPi3cHBz6CwFM8POgJp6atMPUuNMilA-c"
+        }
+      ]
     }
   ]
 }
