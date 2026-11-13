@@ -3,9 +3,149 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-13T09:01:44.573225Z",
+  "checked_at": "2026-11-13T09:31:33.621798Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "gta vi",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-13T09:10:00Z",
+      "related_news_urls": [
+        "https://www.rockstargames.com/newswire/article/39ak81277255o9/explore-the-grand-theft-auto-vi-launch-gallery",
+        "https://www.bloomberg.com/news/articles/2026-11-12/the-1-billion-video-game-about-to-swallow-the-world-whole",
+        "https://variety.com/2026/gaming/news/gta-6-release-gaming-industry-takeover-1236945197/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4lX0sBBMad-unh9Yy1yTW9kGHyrB_lxfyX6U_DFvhPjD55NVBRM1ENobVcxo",
+      "image_credit": "Rockstar Games",
+      "news": [
+        {
+          "url": "https://www.rockstargames.com/newswire/article/39ak81277255o9/explore-the-grand-theft-auto-vi-launch-gallery",
+          "title": "Explore the Grand Theft Auto VI Launch Gallery",
+          "publisher": "Rockstar Games",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4lX0sBBMad-unh9Yy1yTW9kGHyrB_lxfyX6U_DFvhPjD55NVBRM1ENobVcxo"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-12/the-1-billion-video-game-about-to-swallow-the-world-whole",
+          "title": "The $1 Billion Video Game About to Swallow the World Whole",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZClo8QR9wtdtqYMjdOhI8IHFnkggM3Ale_8mNazDAH8_uF7G3VHvLYY31R64"
+        },
+        {
+          "url": "https://variety.com/2026/gaming/news/gta-6-release-gaming-industry-takeover-1236945197/",
+          "title": "‘Unlike Anything Else’: As ‘GTA 6’ Approaches, the Gaming Industry Braces the World for Its Pop Culture Takeover",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThq-q30Yv2vaiBGA8K_5ePX1UXiPEd-dUwy26OMYbHE0dEx7RWh_lwqdf8D2k"
+        }
+      ]
+    },
+    {
+      "query": "lamar odom",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T09:10:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/12/khloe-kardashian-lamar-odom-documentary-reaction/92723786007/",
+        "https://www.eonline.com/news/1438045/khloe-kardashian-says-lamar-odom-is-dead-to-her-after-untold-documentary",
+        "https://pagesix.com/2026/11/12/entertainment/khloe-kardashian-slams-ex-lamar-odom-after-his-comments-on-their-marriage/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HYVbK0QEsYaupEpFct0Vx2IGLYxVDn0m8KHyj-UWQsDKwe8_i_Q36x6-be4",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/12/khloe-kardashian-lamar-odom-documentary-reaction/92723786007/",
+          "title": "Khloé Kardashian says Lamar Odom 'is dead to me' after this 'distasteful' move",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HYVbK0QEsYaupEpFct0Vx2IGLYxVDn0m8KHyj-UWQsDKwe8_i_Q36x6-be4"
+        },
+        {
+          "url": "https://www.eonline.com/news/1438045/khloe-kardashian-says-lamar-odom-is-dead-to-her-after-untold-documentary",
+          "title": "Khloe Kardashian Says Lamar Odom Is Dead to Her After His Controversial Comments",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRNd3XZKdQ9TfEOM8DKTsLp9XL1J9RPzMWha_8XJDgquHsYM7t_EtwWMhAmmQ"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/12/entertainment/khloe-kardashian-slams-ex-lamar-odom-after-his-comments-on-their-marriage/",
+          "title": "Khloé Kardashian issues brutal takedown of ex Lamar Odom after his ‘lame’ comments on their marriage",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_fnvxTWg8A3JsSjuv8PEtT-VpCnwH99uNKHnln0O_AuAUsiMZN0eFkgYyYEg"
+        }
+      ]
+    },
+    {
+      "query": "akira santillan",
+      "approx_searches": "500+",
+      "published_at": "2026-11-13T09:00:00Z",
+      "related_news_urls": [
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/15a5be0c-0146-4704-ab45-8cf22b0824db/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/3a81f12f-d108-40f4-8810-d2df44c2a52f/",
+        "https://robinhood.com/us/en/prediction-markets/tennis/events/2045cde5-c168-4cfb-a606-42bf333927be/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDae8C1Bo4Ym2UGwZrY1Rxts7DWpZwzUrktFLjUQX6aek-D6TNG0uzN_GaCHI",
+      "image_credit": "Robinhood",
+      "news": [
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/15a5be0c-0146-4704-ab45-8cf22b0824db/",
+          "title": "November 13, 2026: Yu Hsiou Hsu vs Rio Noguchi Tennis Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDae8C1Bo4Ym2UGwZrY1Rxts7DWpZwzUrktFLjUQX6aek-D6TNG0uzN_GaCHI"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/3a81f12f-d108-40f4-8810-d2df44c2a52f/",
+          "title": "November 11, 2026: Alejandro Tabilo vs Lorenzo Sonego Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEJMwrnwmzlInLmdONDm_dnz45BVKTZvIOIOVOyqc80bxlrpkJ5DBQSkahxTU"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/2045cde5-c168-4cfb-a606-42bf333927be/",
+          "title": "November 11, 2026: Casper Ruud vs Alexander Shevchenko Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5v-hpgdwMz687Wb_SRnvUwM1jyHGK1g1jcphWR2zNB77dVcsnA4kR0qwtz3U"
+        }
+      ]
+    },
+    {
+      "query": "new zealand vs india",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-13T08:30:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-4th-odi-1539440/ball-by-ball-commentary",
+        "https://www.nzherald.co.nz/sport/cricket/black-caps/black-caps-v-india-result-will-young-century-matt-henry-six-wicket-haul-see-new-zealand-to-huge-odi-victory/KFHN5ITDIBHJ7FSRUJQVTFGGCU/",
+        "https://www.rediff.com/cricket/report/three-ducks-in-one-over-india-suffer-2019-world-cup-flashbacks/20261113.htm"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTidvVCoo_Ps5botaRLslrGRzSHXztOqVatwoQywZ-eJfz5xMaXBeXyOfTP4Ug",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-4th-odi-1539440/ball-by-ball-commentary",
+          "title": "Ball by Ball Commentary & Live Score - NZ vs IND, 4th ODI",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTidvVCoo_Ps5botaRLslrGRzSHXztOqVatwoQywZ-eJfz5xMaXBeXyOfTP4Ug"
+        },
+        {
+          "url": "https://www.nzherald.co.nz/sport/cricket/black-caps/black-caps-v-india-result-will-young-century-matt-henry-six-wicket-haul-see-new-zealand-to-huge-odi-victory/KFHN5ITDIBHJ7FSRUJQVTFGGCU/",
+          "title": "Henry six-for, Young century see Black Caps to huge ODI win over India",
+          "publisher": "NZ Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8hwKiMXYr-qyw9Cru8U1NeH0SGSAPNUu8FjUGz2yK4dfKp03Y2bW23GDtJVo"
+        },
+        {
+          "url": "https://www.rediff.com/cricket/report/three-ducks-in-one-over-india-suffer-2019-world-cup-flashbacks/20261113.htm",
+          "title": "Three Ducks in One Over! India Suffer 2019 World Cup Flashbacks",
+          "publisher": "Rediff",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOrDF1ATvXYv9-Rq7YX6fVx9AVDAja90H7Vp6bC7dW_6ldKVbCOXjxevq6zfw"
+        }
+      ]
+    },
     {
       "query": "danielle fishel",
       "approx_searches": "100+",
@@ -116,33 +256,33 @@
       "approx_searches": "200+",
       "published_at": "2026-11-13T07:40:00Z",
       "related_news_urls": [
-        "https://www.nbl.com.au/news/report-phoenix-star-one-day-breaker-the-next",
-        "https://www.foxsports.com.au/en-AU/news/basketball/axed-phoenix-import-linked-to-nbl-rival-as-familiar-redemption-story-looms/19yk0539khiqd102al5ook8rs0",
-        "https://www.espn.com.au/nbl/story/_/id/50468609/nbl-olgun-uluc-new-zealand-breakers-need-point-guard-south-east-melbourne-phoenix-identity"
+        "https://kayosports.com.au/en-AU/competitor/Competitor:7ohxf7wf7hyk20sdhfdhc645k/1f40zanjm4qg412oet0wdv12xp/4rhu4qs3n063e46610dvgk3uu",
+        "https://www.nbl.com.au/news/dj-carlin-deliver-ot-win-for-breakers",
+        "https://sportsbook.fanduel.com/basketball/australian-nbl./brisbane-bullets-@-new-zealand-breakers-36289161?tab=player-defense"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStV_nw4tLMudoxlCUKUp-qoB7GhvTwaXp0YJsLdZfBuXeSOq4B2Yhf78P0MdY",
-      "image_credit": "NBL",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQROY5B--t821x3O516jz-hSYar1R0Ob_o3DalpNQWEZLMxB7zua8Ap3WURpw8",
+      "image_credit": "Kayo Sports",
       "news": [
         {
-          "url": "https://www.nbl.com.au/news/report-phoenix-star-one-day-breaker-the-next",
-          "title": "REPORT: Phoenix star one day, Breaker the next?",
+          "url": "https://kayosports.com.au/en-AU/competitor/Competitor:7ohxf7wf7hyk20sdhfdhc645k/1f40zanjm4qg412oet0wdv12xp/4rhu4qs3n063e46610dvgk3uu",
+          "title": "New Zealand v Brisbane",
+          "publisher": "Kayo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQROY5B--t821x3O516jz-hSYar1R0Ob_o3DalpNQWEZLMxB7zua8Ap3WURpw8"
+        },
+        {
+          "url": "https://www.nbl.com.au/news/dj-carlin-deliver-ot-win-for-breakers",
+          "title": "DJ, Carlin deliver OT win for Breakers",
           "publisher": "NBL",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStV_nw4tLMudoxlCUKUp-qoB7GhvTwaXp0YJsLdZfBuXeSOq4B2Yhf78P0MdY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu8nr6HyS9g8xGvw6BZ1OGqV8OF8lBwYCRfzwvpzPSBAqy7JukfAhGVjOa8pA"
         },
         {
-          "url": "https://www.foxsports.com.au/en-AU/news/basketball/axed-phoenix-import-linked-to-nbl-rival-as-familiar-redemption-story-looms/19yk0539khiqd102al5ook8rs0",
-          "title": "Axed Phoenix import linked to NBL rival as familiar redemption story looms",
-          "publisher": "Fox Sports",
+          "url": "https://sportsbook.fanduel.com/basketball/australian-nbl./brisbane-bullets-@-new-zealand-breakers-36289161?tab=player-defense",
+          "title": "Brisbane Bullets @ New Zealand Breakers Player Defense Odds",
+          "publisher": "FanDuel Sportsbook",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIM020SHXfmhabioOtOZ2umQxxeRTnpXF-1jBc3VQCUv1rFwYjlaWqG8LWXzA"
-        },
-        {
-          "url": "https://www.espn.com.au/nbl/story/_/id/50468609/nbl-olgun-uluc-new-zealand-breakers-need-point-guard-south-east-melbourne-phoenix-identity",
-          "title": "Olgs' notebook: Breakers need a PG; SEM Phoenix's personnel vs. identity",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmBct8YKBq-aAf2y4oKdULiHbcdgLdtx8ZiptNLKLFhTRwk_027K2DzNDNi8U"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKpB37eVtJ35GtEJ9HMZb-r-V089BFg_zwuuzJSZB6qWwQelizt5DrOCkL9lM"
         }
       ]
     },
@@ -183,176 +323,36 @@
     },
     {
       "query": "gta 6 pc release date",
-      "approx_searches": "200+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-13T07:30:00Z",
       "related_news_urls": [
-        "https://www.rockpapershotgun.com/its-a-brave-new-world-gta-6s-pc-port-will-release-sooner-than-you-think-to-avoid-losing-money-to-ai-rip-offs-says-former-rockstar-tech-director",
-        "https://www.tweaktown.com/news/114606/take-two-strengthens-legal-defenses-against-ai-built-gta-6-pc-clones/index.html",
-        "https://www.forbes.com/sites/paultassi/2026/11/07/an-update-on-a-possible-gta-6-pc-release-date-plans-due-to-ai/"
+        "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
+        "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
+        "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIcSYiQp4LCYT2ET2e2PNDwT7JGsG2yuo5smKwTSnJ0UvYg-ilMsAJDecmJC8",
-      "image_credit": "Rock Paper Shotgun",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZll1tApV9Ds71HmTdujHYiNfoBn3zrlJCvS7S-pg_vQYPoW8x18hTe8WUCZg",
+      "image_credit": "Rockstar Games",
       "news": [
         {
-          "url": "https://www.rockpapershotgun.com/its-a-brave-new-world-gta-6s-pc-port-will-release-sooner-than-you-think-to-avoid-losing-money-to-ai-rip-offs-says-former-rockstar-tech-director",
-          "title": "\"It's a brave new world\": GTA 6's PC port will release sooner than you think to avoid losing money to AI rip-offs, says former Rockstar tech director",
-          "publisher": "Rock Paper Shotgun",
+          "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
+          "title": "Pre-Load Grand Theft Auto VI Now",
+          "publisher": "Rockstar Games",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIcSYiQp4LCYT2ET2e2PNDwT7JGsG2yuo5smKwTSnJ0UvYg-ilMsAJDecmJC8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZll1tApV9Ds71HmTdujHYiNfoBn3zrlJCvS7S-pg_vQYPoW8x18hTe8WUCZg"
         },
         {
-          "url": "https://www.tweaktown.com/news/114606/take-two-strengthens-legal-defenses-against-ai-built-gta-6-pc-clones/index.html",
-          "title": "Take-Two strengthens legal defenses against AI-built GTA 6 PC clones",
-          "publisher": "TweakTown",
+          "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
+          "title": "Grand Theft Auto VI Comes to XBOX One and XBOX Series X|S Through XBOX Cloud Gaming on November 19",
+          "publisher": "XBOX Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWsgyJ4vAbu9JF3yNL-uac2Aix-n0pcrmLL0CaAlIi5FuKyS63QiaRDynt-8U"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk"
         },
         {
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/07/an-update-on-a-possible-gta-6-pc-release-date-plans-due-to-ai/",
-          "title": "An Update On A Possible ‘GTA 6’ PC Release Date Plans, Due To AI",
-          "publisher": "Forbes",
+          "url": "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/",
+          "title": "Pre-load Grand Theft Auto VI on PS5 starting today",
+          "publisher": "PlayStation.Blog",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSu6xoWhkLWZcGeFF80-eey_X7uGe16pvJiOQHOPerHM9RTLMrJ-6NYDO99Dec"
-        }
-      ]
-    },
-    {
-      "query": "friday the 13th",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-13T07:20:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/news/nation/2026/11/13/why-is-friday-the-13th-unlucky/92739688007/",
-        "https://gulfnews.com/world/friday-the-13th-vs-world-kindness-day-is-it-time-to-trade-bad-luck-for-good-deeds-1.500745772",
-        "https://buckrail.com/friday-the-13th-and-its-superstitious-origins/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXtuKFcwTKAchMhwTpIGbH23cEQnmqYXyM96XnUchucJ7Nt3-RFt6g_68vII4",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/news/nation/2026/11/13/why-is-friday-the-13th-unlucky/92739688007/",
-          "title": "Friday the 13th: Superstitions, history and what's next",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXtuKFcwTKAchMhwTpIGbH23cEQnmqYXyM96XnUchucJ7Nt3-RFt6g_68vII4"
-        },
-        {
-          "url": "https://gulfnews.com/world/friday-the-13th-vs-world-kindness-day-is-it-time-to-trade-bad-luck-for-good-deeds-1.500745772",
-          "title": "Friday the 13th vs World Kindness Day: Is it time to trade bad luck for good deeds?",
-          "publisher": "Gulf News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTdO0AxBcuMnIxKNR2jfKvpS_r2GzO37-ETLu4i9kKpazFwANLLrohMI22Dio"
-        },
-        {
-          "url": "https://buckrail.com/friday-the-13th-and-its-superstitious-origins/",
-          "title": "Friday the 13th and its superstitious origins",
-          "publisher": "Buckrail - Jackson Hole, news",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRfTAtZs4U_4sJF36mMNpT3YWSa9riR20xKDimhMOHlTirtrlGN6b-nF47Uvio"
-        }
-      ]
-    },
-    {
-      "query": "colman domingo",
-      "approx_searches": "100+",
-      "published_at": "2026-11-13T07:10:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/film/awards/scars-so-white-2027-predictions-actors-diversity-1236945645/",
-        "https://www.yardbarker.com/entertainment/articles/oscarssowhite_explained_why_the_2015_hashtag_might_be_making_a_comeback_this_awards_season/s1_17785_44553481",
-        "https://www.imdb.com/fr-ca/news/ni66108061/?ref_=tt_nwr_2"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjC1zlAYP2Ex0FTm-CVVKuN8rlKmKwMaqg54p0_7LWS9aknApuiCDU6tABe8Y",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/film/awards/scars-so-white-2027-predictions-actors-diversity-1236945645/",
-          "title": "We’re Dangerously Close to Another #OscarsSoWhite Year. Can Zendaya, Colman Domingo, Pedro Pascal and More Prevent It?",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjC1zlAYP2Ex0FTm-CVVKuN8rlKmKwMaqg54p0_7LWS9aknApuiCDU6tABe8Y"
-        },
-        {
-          "url": "https://www.yardbarker.com/entertainment/articles/oscarssowhite_explained_why_the_2015_hashtag_might_be_making_a_comeback_this_awards_season/s1_17785_44553481",
-          "title": "OscarsSoWhite, Explained: Why the 2015 Hashtag Might be Making a Comeback This Awards Season",
-          "publisher": "Yardbarker",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvNVHnKho8n__02CdiJjV_cylVZ_WrJo_3ivDjNAqEDvmhs-4arXlhegFHCNE"
-        },
-        {
-          "url": "https://www.imdb.com/fr-ca/news/ni66108061/?ref_=tt_nwr_2",
-          "title": "We’re Dangerously Close to Another #OscarsSoWhite Year. Can Zendaya, Colman Domingo, Pedro Pascal and More Prevent It?",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv4qxlozFGZ4-dwgh3tgVutP1UXGcjOcOZLb1pKCOIyvuxu0-KJv09t4VIn84"
-        }
-      ]
-    },
-    {
-      "query": "brisbane bullets",
-      "approx_searches": "200+",
-      "published_at": "2026-11-13T07:00:00Z",
-      "related_news_urls": [
-        "https://localipswichnews.com.au/news/bullets-melbourne-united-defeat/",
-        "https://www.basketball.com.au/news/nbl27-round-8-melbourne-united-brisbane-bullets-match-report",
-        "https://www.beforeyoubet.com.au/united-vs-bullets-prediction-tips-nbl27-round-8"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_2-45KE3y4seIgunk3VrzK0_tTsKLD8q_0bfME_UwHa3FonBHKASP66MV8Zs",
-      "image_credit": "Local Ipswich News",
-      "news": [
-        {
-          "url": "https://localipswichnews.com.au/news/bullets-melbourne-united-defeat/",
-          "title": "Brisbane Bullets beaten by Melbourne United in NBL clash",
-          "publisher": "Local Ipswich News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_2-45KE3y4seIgunk3VrzK0_tTsKLD8q_0bfME_UwHa3FonBHKASP66MV8Zs"
-        },
-        {
-          "url": "https://www.basketball.com.au/news/nbl27-round-8-melbourne-united-brisbane-bullets-match-report",
-          "title": "Son of gun's verdict on dad's career-high night",
-          "publisher": "Basketball.com.au",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRai8f2-W1LC7Bk9eG7EIeVzH-eBH4tPbGCYKNI0UVn_HHarDBCyM91eAPGxgw"
-        },
-        {
-          "url": "https://www.beforeyoubet.com.au/united-vs-bullets-prediction-tips-nbl27-round-8",
-          "title": "United vs Bullets Prediction & Tips: NBL27 Round 8",
-          "publisher": "Before You Bet",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhaNOeeGRZX6sO7ui6AAdJSrlpSK-oMCiZeKkL0cgfGrSnrwfF7lKzeGQQM00"
-        }
-      ]
-    },
-    {
-      "query": "selena gomez",
-      "approx_searches": "500+",
-      "published_at": "2026-11-13T07:00:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/tv/news/tv-biggest-salaries-zendaya-nicolas-cage-selena-gomez-more-1236945567/",
-        "https://www.thedailybeast.com/obsessed/trump-friendly-stars-revealed-as-highest-paid-actors-on-tv",
-        "https://www.tmz.com/2026/11/12/zendaya-reese-witherspoon-jennifer-aniston-salaries-revealed/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPLs9LtxejfNApcfLIcaDFF7LGxsBDdalEDIVtJotuZkIuqXR6O0PQaM1OZoc",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/tv/news/tv-biggest-salaries-zendaya-nicolas-cage-selena-gomez-more-1236945567/",
-          "title": "TV’s Biggest Salaries: Zendaya, Nicolas Cage, Selena Gomez and More Stars Earning Huge Paychecks",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPLs9LtxejfNApcfLIcaDFF7LGxsBDdalEDIVtJotuZkIuqXR6O0PQaM1OZoc"
-        },
-        {
-          "url": "https://www.thedailybeast.com/obsessed/trump-friendly-stars-revealed-as-highest-paid-actors-on-tv",
-          "title": "Trump-Friendly Stars Revealed as Highest-Paid Actors on TV",
-          "publisher": "The Daily Beast",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTF0J1TwPPDpGgFiKsLR9HCBaK1ej_7bLQfA637ekjLkP8Nna54aDnQ6vzu2E4"
-        },
-        {
-          "url": "https://www.tmz.com/2026/11/12/zendaya-reese-witherspoon-jennifer-aniston-salaries-revealed/",
-          "title": "Zendaya, Reese Witherspoon & Jennifer Aniston's Gigantic TV Salaries Revealed",
-          "publisher": "TMZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn9U-Hik-E6VVym7Y5UUUolDwyX8EbJPyaJw42ZxgjJyTUVoQjdgp76B85ccA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmQPZtB1cfmtJ8v-9159sSJpw2Cr8v495zAc5tM6Spqsus45lZErGPllHDXDY"
         }
       ]
     }
