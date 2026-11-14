@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-14T07:18:11.932217Z",
+  "checked_at": "2026-11-14T08:19:33.947191Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -197,7 +197,7 @@
     },
     "burger-king-chicken-2026": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T02:22:06.000023Z",
+      "attempted_at": "2026-11-14T08:19:33.947191Z",
       "items": [
         {
           "url": "https://news.bk.com/",
@@ -205,7 +205,7 @@
           "title": "Burger King® Expands Its Iconic Original Chicken Sandwich Lineup with Two Bold New Flavors",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T02:22:06.000023Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Restaurants"
         },
         {
@@ -214,7 +214,7 @@
           "title": "Big Holiday Cheer Comes In Mini Packages With The Return Of The Burger King® Advent Calendar",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T02:22:06.000023Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Restaurants"
         },
         {
@@ -223,7 +223,7 @@
           "title": "Hello Kitty® and Friends Are Coming to Burger King®",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T02:22:06.000023Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Restaurants"
         },
         {
@@ -232,14 +232,14 @@
           "title": "Burger King® Serves Up Game Day Flavor with New Stadium-Inspired Menu",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T02:22:06.000023Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Restaurants"
         }
       ]
     },
     "kraft-mac-cheese": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T02:22:06.000023Z",
+      "attempted_at": "2026-11-14T08:19:33.947191Z",
       "items": [
         {
           "url": "https://www.kraftheinz.com/kraft-mac-and-cheese",
@@ -247,7 +247,7 @@
           "title": "Site Logo",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T02:22:06.000023Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Food & recipes"
         },
         {
@@ -256,7 +256,7 @@
           "title": "An image displaying two Kraft Mac & Cheese products. On the left, against a solid blue background, the word \"products\" is written in large white text. To the right, on a split blue",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T02:22:06.000023Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Food & recipes"
         },
         {
@@ -265,7 +265,7 @@
           "title": "An image featuring two limited-edition Kraft Mac & Cheese boxes: a red \"Pizza Flavored\" box with pizza slice graphics and a green \"Jalapeño Flavored\" box with a jalapeño pepper gra",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T02:22:06.000023Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Food & recipes"
         },
         {
@@ -274,7 +274,7 @@
           "title": "Kraft PowerMac and Original Mac & Cheese boxes next to a prepared bowl of macaroni on a blue and yellow background.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T02:22:06.000023Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Food & recipes"
         },
         {
@@ -283,7 +283,7 @@
           "title": "Kraft Heinz logo on a purple background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T02:22:06.000023Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Food & recipes"
         },
         {
@@ -292,7 +292,7 @@
           "title": "Collage with packages from all the Kraft Heinz brands on a red background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T02:22:06.000023Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Food & recipes"
         },
         {
@@ -301,7 +301,7 @@
           "title": "A plate of pasta and meat on a yellow background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T02:22:06.000023Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Food & recipes"
         },
         {
@@ -310,54 +310,54 @@
           "title": "A slice of pumpkin cheesecake topped with whipped cream, served on a plate next to a gold fork.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T02:22:06.000023Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Food & recipes"
         }
       ]
     },
     "heritage": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T02:22:06.000023Z",
+      "attempted_at": "2026-11-14T08:19:33.947191Z",
       "items": []
     },
     "topps": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T02:22:06.000023Z",
+      "attempted_at": "2026-11-14T08:19:33.947191Z",
       "items": []
     },
     "beckett": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T02:22:06.000023Z",
+      "attempted_at": "2026-11-14T08:19:33.947191Z",
       "items": []
     },
     "christies": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T02:22:06.000023Z",
+      "attempted_at": "2026-11-14T08:19:33.947191Z",
       "items": []
     },
     "shoplc-premium": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T02:22:06.000023Z",
+      "attempted_at": "2026-11-14T08:19:33.947191Z",
       "items": []
     },
     "kohls-coupons": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T02:22:06.000023Z",
+      "attempted_at": "2026-11-14T08:19:33.947191Z",
       "items": []
     },
     "honda-vehicles": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T02:22:06.000023Z",
+      "attempted_at": "2026-11-14T08:19:33.947191Z",
       "items": []
     },
     "oakley-meta": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T02:22:06.000023Z",
+      "attempted_at": "2026-11-14T08:19:33.947191Z",
       "items": []
     },
     "gmc-trucks": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T02:22:06.000023Z",
+      "attempted_at": "2026-11-14T08:19:33.947191Z",
       "items": []
     },
     "gmc-sierra-2026": {
@@ -5494,7 +5494,7 @@
     },
     "durable-mystery-ranch": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T01:18:32.619333Z",
+      "attempted_at": "2026-11-14T08:19:33.947191Z",
       "items": [
         {
           "url": "https://www.mysteryranch.com/shipping-information",
@@ -5502,7 +5502,7 @@
           "title": "American flag",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5511,7 +5511,7 @@
           "title": "Fitting and Sizing",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5520,7 +5520,7 @@
           "title": "Warranty and Repair",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5529,14 +5529,14 @@
           "title": "Backbone Scholarship",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-goruck": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T01:18:32.619333Z",
+      "attempted_at": "2026-11-14T08:19:33.947191Z",
       "items": [
         {
           "url": "https://www.goruck.com/collections/bestsellers",
@@ -5544,7 +5544,7 @@
           "title": "A Basic Rucker backpack in gray, featuring a red patch, rests on concrete beside the bold, black stenciled words “FIGHT CLUB,” embodying the rugged essence of rucking with this pop",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5553,7 +5553,7 @@
           "title": "A person with a backpack stands by a large American flag waving at sunset.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5562,7 +5562,7 @@
           "title": "Two men and two women wearing backpacks hike together outdoors.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5571,7 +5571,7 @@
           "title": "Five people with rucksacks walk together on a sandy beach under a blue sky with scattered clouds, enjoying a day of rucking and the comfort of the Rucker 5.0’s built-in lumbar supp",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5580,7 +5580,7 @@
           "title": "Tribe Membership",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "20.00",
@@ -5595,7 +5595,7 @@
           "title": "Tribe Membership",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "20.0",
@@ -5610,7 +5610,7 @@
           "title": "Rucker® 5.0 - 20L / Black + Orange",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "295.00",
@@ -5625,7 +5625,7 @@
           "title": "Rucker® 5.0 - 20L / Ranger Green + Orange",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "295.00",
@@ -5638,7 +5638,7 @@
     },
     "durable-red-wing-shoes": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T01:18:32.619333Z",
+      "attempted_at": "2026-11-14T08:19:33.947191Z",
       "items": [
         {
           "url": "https://www.redwingshoes.com/mens/work/safety-toe/king-toe-02240.html?currency=USD",
@@ -5646,7 +5646,7 @@
           "title": "Go to King Toe® Men's 6-inch Waterproof Safety Toe Boot",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5655,7 +5655,7 @@
           "title": "Go to Hoodie with Sleeve Print Men's Hoodie in Black",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5664,7 +5664,7 @@
           "title": "Go to Traction Tred Lite Men's 6-inch Waterproof Safety Toe Boot",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5673,7 +5673,7 @@
           "title": "Go to Hoodie with Sleeve Print Men's Hoodie in Brown",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5698,7 +5698,7 @@
     },
     "durable-danner-boots": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T01:18:32.619333Z",
+      "attempted_at": "2026-11-14T08:19:33.947191Z",
       "items": [
         {
           "url": "https://www.danner.com/",
@@ -5706,7 +5706,7 @@
           "title": "pair of work boots at a construction project",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5715,7 +5715,7 @@
           "title": "A hiker climbs rocky terrain with clouds and trees visible in the background below",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5724,7 +5724,7 @@
           "title": "A stylishly dressed person with a backpack casually slung over one shoulder and tidily tied boots sits on a weathered wooden bench on a sunny day, the scene suggests they feel prep",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5733,14 +5733,14 @@
           "title": "a worker climbs into a backhoe while wearing brown work boots",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-schott-nyc": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T01:18:32.619333Z",
+      "attempted_at": "2026-11-14T08:19:33.947191Z",
       "items": [
         {
           "url": "https://www.schottnyc.com/blogs/journal/november-lookbook-the-forge-collection",
@@ -5748,7 +5748,7 @@
           "title": "ForgeCollection MenuImage",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5757,7 +5757,7 @@
           "title": "ReadyToRide Guide 2 Vertical 2.2",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5766,7 +5766,7 @@
           "title": "CabinCollection VertBadge 20681c68 f48e 489f 81c3 87df7b328419",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5775,7 +5775,7 @@
           "title": "A515 Navy",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5784,7 +5784,7 @@
           "title": "598 - Black / XS",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": null
         },
@@ -5794,7 +5794,7 @@
           "title": "JD1 - Black / S",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "1525.00",
@@ -5809,7 +5809,7 @@
           "title": "JD1",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": null
         },
@@ -5819,7 +5819,7 @@
           "title": "8630 - Indigo / S",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "250.00",
@@ -5832,12 +5832,12 @@
     },
     "durable-nicks-boots": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T01:18:32.619333Z",
+      "attempted_at": "2026-11-14T08:19:33.947191Z",
       "items": []
     },
     "durable-white-s-boots": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T01:18:32.619333Z",
+      "attempted_at": "2026-11-14T08:19:33.947191Z",
       "items": [
         {
           "url": "https://whitesboots.com/collections/legacy-boots",
@@ -5845,7 +5845,7 @@
           "title": "White's Boots Shop",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5854,7 +5854,7 @@
           "title": "White's Boots Shop",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5863,7 +5863,7 @@
           "title": "White's Boots Shop",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5872,7 +5872,7 @@
           "title": "White's Boots Shop",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5881,7 +5881,7 @@
           "title": "CMP Chelsea",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "600.0",
@@ -5896,7 +5896,7 @@
           "title": "355 Cruiser - Dr. Sole",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "850.0",
@@ -5911,7 +5911,7 @@
           "title": "C350 Cruiser",
           "kind": "product",
           "description": "It spans across every Pacific Northwest trade—drivers, cruisers, miners, sportsmen, brakemen, and factory workers. Not surprisingly, it’s a boot that is built and worn for everyday wear, including days off. Thousands of workers have walked into our retail shop",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "675.0",
@@ -5924,12 +5924,12 @@
     },
     "durable-fjallraven": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T01:18:32.619333Z",
+      "attempted_at": "2026-11-14T08:19:33.947191Z",
       "items": []
     },
     "durable-duluth-trading-co": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T01:18:32.619333Z",
+      "attempted_at": "2026-11-14T08:19:33.947191Z",
       "items": [
         {
           "url": "https://www.duluthtrading.com/crazy-sale/?feature=slim-30offundersouter",
@@ -5937,7 +5937,7 @@
           "title": "Shop Early Black Friday Deals - 30% OFF Outerwear and Underwear",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5946,7 +5946,7 @@
           "title": "No Bull Guarantee",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5955,14 +5955,14 @@
           "title": "Superior Standard",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-hilleberg": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T01:18:32.619333Z",
+      "attempted_at": "2026-11-14T08:19:33.947191Z",
       "items": [
         {
           "url": "https://www.hilleberg.com/eng",
@@ -5970,7 +5970,7 @@
           "title": "A Hilleberg tent next to the ocean",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5979,7 +5979,7 @@
           "title": "Inspirational image for All-season tents",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5988,7 +5988,7 @@
           "title": "Inspirational image for Snow-free/3-season tents",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -5997,14 +5997,14 @@
           "title": "Inspirational image for Shelters",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         }
       ]
     },
     "durable-snow-peak": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T01:18:32.619333Z",
+      "attempted_at": "2026-11-14T08:19:33.947191Z",
       "items": [
         {
           "url": "https://www.snowpeak.com/",
@@ -6012,7 +6012,7 @@
           "title": "Snow Peak USA - Japanese-Designed Camping Gear & Apparel",
           "kind": "website",
           "description": "Since 1958, Snow Peak has made Japanese-designed, lifetime-guaranteed camping gear and apparel that create restorative experiences in nature. Free shipping on orders $200+.",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6021,7 +6021,7 @@
           "title": "Titanium Aurora Bottle",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6030,7 +6030,7 @@
           "title": "Alpha Breeze Tent Set",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6039,7 +6039,7 @@
           "title": "Low Beach Chair",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6048,7 +6048,7 @@
           "title": "Titanium Aurora Bottle - Rainbow",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "139.95",
@@ -6063,7 +6063,7 @@
           "title": "Titanium Aurora Bottle - Pink",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": null
         },
@@ -6073,7 +6073,7 @@
           "title": "Titanium Aurora Bottle - Titanium",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "99.95",
@@ -6088,7 +6088,7 @@
           "title": "Titanium Aurora Bottle - Blue",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "109.95",
@@ -6101,7 +6101,7 @@
     },
     "durable-stanley": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T01:18:32.619333Z",
+      "attempted_at": "2026-11-14T08:19:33.947191Z",
       "items": [
         {
           "url": "https://www.stanley1913.com/",
@@ -6109,7 +6109,7 @@
           "title": "Stanley 1913 Drinkware & Gear | Bottles, Tumblers, Growlers & More",
           "kind": "website",
           "description": "Stanley PMI Online Store | Offers an assortment of Vacuum Bottles, Mugs, thermoses, Cookware and more!",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6118,7 +6118,7 @@
           "title": "Stanley 1913 Drinkware & Gear | Bottles, Tumblers, Growlers & More",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6127,7 +6127,7 @@
           "title": "Stanley 1913 Drinkware & Gear | Bottles, Tumblers, Growlers & More",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6136,7 +6136,7 @@
           "title": "Stanley 1913 Drinkware & Gear | Bottles, Tumblers, Growlers & More",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6145,7 +6145,7 @@
           "title": "The Quencher® ProTour Flip Straw Tumbler | 40 OZ",
           "kind": "product",
           "description": "Introducing the Stanley 1913 Quencher ProTour Flip Straw Tumbler, 40 ounces. This stainless steel tumbler makes staying hydrated easy, flip up the built-in straw to sip, then snap it shut when you're on the move. From early commutes to long days outside, this ",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": null
         },
@@ -6155,7 +6155,7 @@
           "title": "The Quencher® ProTour Flip Straw Tumbler | 40 OZ",
           "kind": "product",
           "description": "Introducing the Stanley 1913 Quencher ProTour Flip Straw Tumbler, 40 ounces. This stainless steel tumbler makes staying hydrated easy, flip up the built-in straw to sip, then snap it shut when you're on the move. From early commutes to long days outside, this ",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": null
         },
@@ -6165,7 +6165,7 @@
           "title": "The Quencher® ProTour Flip Straw Tumbler | 40 OZ",
           "kind": "product",
           "description": "Introducing the Stanley 1913 Quencher ProTour Flip Straw Tumbler, 40 ounces. This stainless steel tumbler makes staying hydrated easy, flip up the built-in straw to sip, then snap it shut when you're on the move. From early commutes to long days outside, this ",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "45.0",
@@ -6181,7 +6181,7 @@
           "title": "The Quencher® ProTour Flip Straw Tumbler | 40 OZ",
           "kind": "product",
           "description": "Introducing the Stanley 1913 Quencher ProTour Flip Straw Tumbler, 40 ounces. This stainless steel tumbler makes staying hydrated easy, flip up the built-in straw to sip, then snap it shut when you're on the move. From early commutes to long days outside, this ",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "45.0",
@@ -6195,7 +6195,7 @@
     },
     "durable-klean-kanteen": {
       "schema_version": 1,
-      "attempted_at": "2026-11-14T01:18:32.619333Z",
+      "attempted_at": "2026-11-14T08:19:33.947191Z",
       "items": [
         {
           "url": "https://www.kleankanteen.com/collections/top-sellers",
@@ -6203,7 +6203,7 @@
           "title": "Woman holding a steel water bottle with bamboo cap",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6212,7 +6212,7 @@
           "title": "Guy with purple coffee mug and laptop inside",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6221,7 +6221,7 @@
           "title": "Four Santa Cruz graphic pint cups on blue stone wall",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6230,7 +6230,7 @@
           "title": "Collection of winter seasonal graphics bottles and mugs on table in coffee shop with snowy window in background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6239,7 +6239,7 @@
           "title": "Bring Your Own Party Kit - Tumblers and Cocktails - Brittany Blue",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "124.95",
@@ -6254,7 +6254,7 @@
           "title": "Bring Your Own Party Kit - Tumblers and Cocktails - Black",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "124.95",
@@ -6269,7 +6269,7 @@
           "title": "Bring Your Own Party Kit - Tumblers and Cocktails - Barely Blue",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": null
         },
@@ -6279,7 +6279,7 @@
           "title": "Bring Your Own Party Kit - Tumblers and Cocktails - Dusty Orchid",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-14T01:18:32.619333Z",
+          "checked_at": "2026-11-14T08:19:33.947191Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": null
         }
