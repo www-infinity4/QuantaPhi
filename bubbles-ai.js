@@ -1473,14 +1473,7 @@ if(nativeOverlay&&!embedded){
   if(recordBLatestCapture)recordBController.update(recordBLatestCapture);
  }).catch(error=>{status.textContent='RecordB recorder controls unavailable: '+String(error.message||error).slice(0,120)});
 }
-// Pairing and owner recovery belong in ONE collapsible Options area, not in
-// the transcript or above a working, already connected conversation.
-// Moving the original controls preserves the existing verified handlers.
-if(!embedded){
- tools.append(create('h3','ba-section-heading','Connections & pairing'),linkBubbles,createOwnerCode,ownerCodeHelp,linkStatus);
-}
-// One big, visible button above the chat transcript on Android and mobile web.
-// It calls the real owner-authenticated five-day grant, not a fake UI toggle.
+// Settings keeps the existing owner-authenticated five-day grant.
 if(!embedded){
  const quick=create('section','ba-chatgpt-quick');
  quick.setAttribute('aria-label','ChatGPT Cloud Browser access');

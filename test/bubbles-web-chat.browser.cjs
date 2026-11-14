@@ -91,6 +91,11 @@ test('Settings sign-in settles at phone and desktop widths without granting prov
      await page.getByRole('button',{name:'Open Settings',exact:true}).click();
      const settings=page.getByRole('dialog',{name:'Bubbles Settings'});
      await settings.waitFor();
+     const pairing=settings.getByText('Pair a device',{exact:true}).locator('..');
+     assert.equal(await pairing.locator('.ba-link-bubbles').count(),1);
+     assert.equal(await settings.locator('.ba-link-bubbles').count(),1);
+     await page.evaluate(()=>window.dispatchEvent(new Event('bubbles:owner-ready')));
+     assert.equal(await settings.locator('.ba-chatgpt-quick').isVisible(),false);
      await settings.getByText('Accounts', {exact:true}).click();
      if(walletVerified){
       await gate.waitFor({state:'hidden'});
