@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T23:01:20.441515Z",
+  "checked_at": "2026-11-14T23:31:07.853340Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "xrp price",
+      "query": "nuggets vs pelicans",
       "approx_searches": "2000+",
-      "published_at": "2026-11-14T22:40:00Z",
+      "published_at": "2026-11-14T23:10:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/markets/crypto/articles/xrp-did-last-time-fell-205716270.html",
-        "https://coinpedia.org/price-analysis/xrp-loses-1-support-as-selling-accelerates-how-low-can-the-xrp-price-go/",
-        "https://www.tradingview.com/news/u_today:53b9789ca094b:0-xrp-is-not-in-free-fall-according-to-bollinger-bands-even-after-nine-red-days/"
+        "https://www.sportsgambler.com/betting-tips/basketball/denver-nuggets-vs-new-orleans-pelicans-prediction-odds-6019784/",
+        "https://sports.yahoo.com/articles/nuggets-vs-pelicans-injury-report-192248837.html",
+        "https://nuggets.com/news/nuggets-conclude-road-trip-pelicans"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJH2xuvobhThodQuox9podM_mjMtKGIgQzntKzDeBx46HXkT0-YBqXdiBA8uY",
-      "image_credit": "Yahoo Finance",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVFtaXQmvM3BvMe1z6mFvl893dqfWUbkhhMSOU0WjNiR9TF-psq8qKlmGv-l0",
+      "image_credit": "Sportsgambler",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/crypto/articles/xrp-did-last-time-fell-205716270.html",
-          "title": "What XRP Did the Last Time It Fell Below $1",
-          "publisher": "Yahoo Finance",
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/denver-nuggets-vs-new-orleans-pelicans-prediction-odds-6019784/",
+          "title": "Denver Nuggets vs New Orleans Pelicans Prediction, Picks & Odds | NBA Saturday",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJH2xuvobhThodQuox9podM_mjMtKGIgQzntKzDeBx46HXkT0-YBqXdiBA8uY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVFtaXQmvM3BvMe1z6mFvl893dqfWUbkhhMSOU0WjNiR9TF-psq8qKlmGv-l0"
         },
         {
-          "url": "https://coinpedia.org/price-analysis/xrp-loses-1-support-as-selling-accelerates-how-low-can-the-xrp-price-go/",
-          "title": "XRP Loses $1 Support as Selling Accelerates: How Low Can the XRP Price Go?",
-          "publisher": "Coinpedia",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8VIXIffw2kkHiyRNXf7Nz7lq61rLrlv5Yq-7pw7drG5Lmvw_ZWgGf9rKY_xc"
-        },
-        {
-          "url": "https://www.tradingview.com/news/u_today:53b9789ca094b:0-xrp-is-not-in-free-fall-according-to-bollinger-bands-even-after-nine-red-days/",
-          "title": "XRP Is Not in Free Fall According to Bollinger Bands, Even After Nine Red Days",
-          "publisher": "TradingView",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ91HIK9tmKJFYBlyrzdx8BIB2Wb6HzJzWbn4FjlPsFg5tZFCCi0-0kEniaM8E"
-        }
-      ]
-    },
-    {
-      "query": "jeffery simmons chicago bears trade",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T22:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/videos/stood-dt-jeffery-simmons-joining-212841576.html",
-        "https://www.si.com/nfl/bears/onsi/jeffery-simmons-titans-frustration-trade-bears",
-        "https://www.foxsports.com/watch/fmc-dlkh8jlp5aay0fko"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQP8C0acFu8F1vrsWGBPrYXSZhi80cImboG_uibqxpWg-JGmMLivF8BoiyxMnQ",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/videos/stood-dt-jeffery-simmons-joining-212841576.html",
-          "title": "What Stood Out to DT Jeffery Simmons After Joining the Chicago Bears",
+          "url": "https://sports.yahoo.com/articles/nuggets-vs-pelicans-injury-report-192248837.html",
+          "title": "Nuggets vs Pelicans Injury Report And Game Preview",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQP8C0acFu8F1vrsWGBPrYXSZhi80cImboG_uibqxpWg-JGmMLivF8BoiyxMnQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFkT8ctFc5lzDMcKRbzeAbQeMfR7VUX55YmSl03gmsXu1jiUfZXGFKXcn4CYY"
         },
         {
-          "url": "https://www.si.com/nfl/bears/onsi/jeffery-simmons-titans-frustration-trade-bears",
-          "title": "Jeffery Simmons Was Frustrated With Titans After Trade to Bears",
-          "publisher": "Sports Illustrated",
+          "url": "https://nuggets.com/news/nuggets-conclude-road-trip-pelicans",
+          "title": "Nuggets conclude road trip against Pelicans",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRozHDYC3QDSEy9qcNG4dcze1ny4wXaodrvGcc5CudXFbHygrP6EuL6esprGvc"
-        },
-        {
-          "url": "https://www.foxsports.com/watch/fmc-dlkh8jlp5aay0fko",
-          "title": "Jeffery Simmons on Bears’ Super Bowl chances, Caleb Williams & new team | FULL INTERVIEW | The Herd",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSw2ydB7SGjKqxf1uP-XNTh-UlxzabezRBwrD6V5qlionVkhReJZtTJu_aX8bU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREiSm-0f09hz71VyoNgVK53fWvqF8ondctlfxT0h7r7jvtKFEljg3I_iflAdw"
         }
       ]
     },
     {
-      "query": "gold",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T22:40:00Z",
+      "query": "wild vs bruins",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T23:10:00Z",
       "related_news_urls": [
-        "https://www.foxnews.com/travel/grandmother-mistakes-medieval-gold-cross-costume-jewelry-learning-five-figure-value",
-        "https://www.foxnews.com/video/6408359832112",
-        "https://www.nytimes.com/2026/11/14/nyregion/gold-bars-scam-new-york-city.html"
+        "https://www.nhl.com/wild/news/projected-lineup-wild-at-bruins-111426",
+        "https://sports.yahoo.com/articles/bruins-vs-wild-score-live-230002421.html",
+        "https://www.stanleycupofchowder.com/bruins-gameday/59750/bruins-vs-wild-preview-boston-looks-to-rebound-against-minnesota"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTw304MR2sZwSLxnelYvvGAur4yRAy_wO5PfcPPaB0epaBxNtOHDOSWY32uLLU",
-      "image_credit": "Fox News",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmVTA7GEbi0jnGTfbwAerBGqsd2tnsDZ_p7yE88pZXE36qYAo1MN7RXsytgjI",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://www.foxnews.com/travel/grandmother-mistakes-medieval-gold-cross-costume-jewelry-learning-five-figure-value",
-          "title": "Grandmother mistakes medieval gold cross for costume jewelry before learning its five-figure value",
-          "publisher": "Fox News",
+          "url": "https://www.nhl.com/wild/news/projected-lineup-wild-at-bruins-111426",
+          "title": "Projected Lineup: Wild at Bruins",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTw304MR2sZwSLxnelYvvGAur4yRAy_wO5PfcPPaB0epaBxNtOHDOSWY32uLLU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmVTA7GEbi0jnGTfbwAerBGqsd2tnsDZ_p7yE88pZXE36qYAo1MN7RXsytgjI"
         },
         {
-          "url": "https://www.foxnews.com/video/6408359832112",
-          "title": "Henry VIII mystery emerges after grandmother unearths gold cross in field",
-          "publisher": "Fox News",
+          "url": "https://sports.yahoo.com/articles/bruins-vs-wild-score-live-230002421.html",
+          "title": "Bruins vs. Wild Score, Live Updates, Highlights From NHL Game",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRd3HMKS99R5-ATb2V9sUgM3bWFaHW6ad55dSNckmbcdeE4AYUsJP12XLHLdmM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBj9RlXvWH8hqkoxcAcTTGB1uDGBZwW7W3x4uBalKT_gPebDQvmVnyfOKdJCU"
         },
         {
-          "url": "https://www.nytimes.com/2026/11/14/nyregion/gold-bars-scam-new-york-city.html",
-          "title": "This Man Stole $9 Million in Gold Bars on the Upper West Side, Police Say",
+          "url": "https://www.stanleycupofchowder.com/bruins-gameday/59750/bruins-vs-wild-preview-boston-looks-to-rebound-against-minnesota",
+          "title": "Bruins vs. Wild PREVIEW: Boston looks to rebound against Minnesota",
+          "publisher": "Stanley Cup of Chowder",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSH5UAACvC-MpVe-3I77twcyG4fPxyoEA2iw-Pbz8Ke1DsdxWMqeobZvtJOAwc"
+        }
+      ]
+    },
+    {
+      "query": "avalanche vs canadiens",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T23:10:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/colorado-avalanche-montreal-canadiens-game-preview-november-14-2026",
+        "https://sports.yahoo.com/articles/open-thread-colorado-avalanche-montr-230000221.html",
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/colorado-avalanche-vs-montreal-canadiens-prediction-odds-2026-11-14/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/colorado-avalanche-montreal-canadiens-game-preview-november-14-2026",
+          "title": "Avalanche at Canadiens projected lineups",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/open-thread-colorado-avalanche-montr-230000221.html",
+          "title": "Open Thread: Colorado Avalanche @ Montréal Canadiens 5:00 P.M. MST)",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRBi9Vp-n80noKxS1MnfnN8j2kh9YIkX2trtgfBgH_UVMu4ui6cL3ZK3WjPUco"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/colorado-avalanche-vs-montreal-canadiens-prediction-odds-2026-11-14/",
+          "title": "Colorado Avalanche vs Montreal Canadiens Prediction, Picks & Odds | 14 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGwuzibAo7hH5c084jChT-48Kmx59BzpbzVGnHqwJUmyUsQ2zk1DhiMmru2T0"
+        }
+      ]
+    },
+    {
+      "query": "montana state vs northern co",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T23:10:00Z",
+      "related_news_urls": [
+        "https://nbcmontana.com/sports/local-sports/msu-bobcats-head-south-to-take-on-northern-colorado",
+        "https://www.fortmorgantimes.com/2026/11/12/unc-bears-football-montana-state-nottingham-field-greeley/",
+        "https://www.swxlocalsports.com/montana/montana-state/game-preview-montana-state-focused-on-road-test-against-northern-colorado/article_ef27a413-f8ea-48ff-be13-cbd7158760d1.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWlgFocxuX2IB2bCYzJvQz6VMVZGWI-4kaYPuB3ccxjgzecZwUX13ngUt-yzg",
+      "image_credit": "NBC Montana",
+      "news": [
+        {
+          "url": "https://nbcmontana.com/sports/local-sports/msu-bobcats-head-south-to-take-on-northern-colorado",
+          "title": "MSU Bobcats head south to take on Northern Colorado",
+          "publisher": "NBC Montana",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWlgFocxuX2IB2bCYzJvQz6VMVZGWI-4kaYPuB3ccxjgzecZwUX13ngUt-yzg"
+        },
+        {
+          "url": "https://www.fortmorgantimes.com/2026/11/12/unc-bears-football-montana-state-nottingham-field-greeley/",
+          "title": "UNC Bears football look to the future ahead of final home game of the season",
+          "publisher": "The Fort Morgan Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSye7DhA4I5i5gVib5wEgHTHt3Fu79sXfjpg_AmCeGA0E8Zd21izYalIsshGMY"
+        },
+        {
+          "url": "https://www.swxlocalsports.com/montana/montana-state/game-preview-montana-state-focused-on-road-test-against-northern-colorado/article_ef27a413-f8ea-48ff-be13-cbd7158760d1.html",
+          "title": "Game Preview: Montana State focused on road test against Northern Colorado",
+          "publisher": "SWX Local Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlQHZwRoKCNHpBTtovkhMAuvgnpsU-Rh0pPPU8nfYqwIhPLg35Vc1WptsxmqU"
+        }
+      ]
+    },
+    {
+      "query": "flyers vs blue jackets",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T23:10:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/philadelphia-flyers-columbus-blue-jackets-game-preview-november-14-2026",
+        "https://www.nytimes.com/athletic/7781628/2026/11/14/flyers-vs-blue-jackets-stream-how-to-watch-nov-14/",
+        "https://sports.yahoo.com/articles/flyers-game-22-lines-notes-151852274.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/philadelphia-flyers-columbus-blue-jackets-game-preview-november-14-2026",
+          "title": "Flyers at Blue Jackets projected lineups",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7781628/2026/11/14/flyers-vs-blue-jackets-stream-how-to-watch-nov-14/",
+          "title": "How to watch Flyers vs. Blue Jackets: TV channel and streaming options for November 14",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZ89wyxiR_ryhgOp3_kTXga3f0YQo-Rn3521nHeS8_vLa3n86tT3mkPM7Gu-M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9nsUHb8vG0bz1FwzFiwglVFn8bDiNFM1S9tKt3ZelIcV4NGq7mOmDhF5x0EA"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/flyers-game-22-lines-notes-151852274.html",
+          "title": "Flyers Game 22: Lines, Notes, & How to Watch @ Blue Jackets",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNh57Lw2EJzMBMt44FKEd5SBMWaHoV4mz54l-82MlP8NF8iwvJR9_zZENCMdc"
         }
       ]
     },
     {
-      "query": "joe jonas",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T22:40:00Z",
-      "related_news_urls": [
-        "https://www.usmagazine.com/celebrity-news/news/joe-jonas-and-tatiana-gabriela-split-after-1-year-of-dating/",
-        "https://www.imdb.com/news/ni66111283/?ref_=nwc_art_perm",
-        "https://www.yahoo.com/entertainment/videos/joe-jonas-tatiana-gabriela-break-213809518.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3sf90f7qFUACeoMTq3uVo4rrLfk_Z8YIIh28t5AvDxR2TpLst_kRu1ZptebA",
-      "image_credit": "Us Weekly",
-      "news": [
-        {
-          "url": "https://www.usmagazine.com/celebrity-news/news/joe-jonas-and-tatiana-gabriela-split-after-1-year-of-dating/",
-          "title": "Joe Jonas and Girlfriend Tatiana Gabriela Split After 1 Year of Dating: ‘Things Shifted’",
-          "publisher": "Us Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3sf90f7qFUACeoMTq3uVo4rrLfk_Z8YIIh28t5AvDxR2TpLst_kRu1ZptebA"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66111283/?ref_=nwc_art_perm",
-          "title": "Joe Jonas Splits from Girlfriend Tatiana Gabriela After Year of Dating",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrI9AGlX6enXbIVBQU0E91scDTDgZl6g9oxbZBVM5JwtTAqD92kvORr9T0kog"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/videos/joe-jonas-tatiana-gabriela-break-213809518.html",
-          "title": "Joe Jonas and Tatiana Gabriela Break Up 6 Months After Confirming Romance",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTv-MtQEDSDuKH9drcb7Rtt2oVK1X5gkjmkP7ZOeaTihuIkA6WEhvyYgqzbMnk"
-        }
-      ]
-    },
-    {
-      "query": "boa grand nationals 2026",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T22:40:00Z",
-      "related_news_urls": [
-        "https://www.indystar.com/story/entertainment/music/2026/11/14/2026-boa-grand-nationals-semifinals-schedule-lucas-oil-stadium-indianapolis/92246113007/",
-        "https://fox59.com/indiana-news/bands-of-america-grand-national-championships-return-to-lucas-oil-stadium/",
-        "https://www.wral.com/news/local/green-level-high-school-marching-band-compete-grand-national-championship/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSb4mC8W4TH_-JWwkfllTCPq5YeD9RyYk2UJXlS9BrIFp-JNc64FH7WV02G5VI",
-      "image_credit": "IndyStar",
-      "news": [
-        {
-          "url": "https://www.indystar.com/story/entertainment/music/2026/11/14/2026-boa-grand-nationals-semifinals-schedule-lucas-oil-stadium-indianapolis/92246113007/",
-          "title": "See who's competing in 2026 BOA Grand National Championships semifinals",
-          "publisher": "IndyStar",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSb4mC8W4TH_-JWwkfllTCPq5YeD9RyYk2UJXlS9BrIFp-JNc64FH7WV02G5VI"
-        },
-        {
-          "url": "https://fox59.com/indiana-news/bands-of-america-grand-national-championships-return-to-lucas-oil-stadium/",
-          "title": "Bands of America Grand National Championships return to Lucas Oil Stadium",
-          "publisher": "Fox 59",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0P8gvj5MkkKBnKfqCmPjfsa-drP6JdI_CBez9xB-ahSp_ayh37A4fPPVOAsU"
-        },
-        {
-          "url": "https://www.wral.com/news/local/green-level-high-school-marching-band-compete-grand-national-championship/",
-          "title": "Green Level High School's marching band to compete in Grand National Championship",
-          "publisher": "WRAL",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTr7n0N7J45p1cLbf7SfQfyZ5z2MSfibf8ZtypPI8yuq2FSvKCk1mDH7UzCHFg"
-        }
-      ]
-    },
-    {
-      "query": "querétaro vs monterrey",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-14T22:30:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17499550/queretaro-vs-monterrey-como-afecta-pumas-liguilla",
-        "https://www.facebook.com/MilenioDiario/posts/-imperdiblecheca-a-qu%C3%A9-hora-y-en-d%C3%B3nde-ver-el-quer%C3%A9taro-vs-monterrey-de-la-liga-/1681443350679796/",
-        "https://www.reforma.com/va-rayados-con-de-la-rosa-de-titular/ar3314868?redirectcancha=1"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaSjsNpLSA5tXA7IMmjxn230d8Zh8HQphZedJujbb26sJXCtXN1jJpE1GOImM",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17499550/queretaro-vs-monterrey-como-afecta-pumas-liguilla",
-          "title": "Querétaro vs Monterrey: ¿Cómo afecta a Pumas y Liguilla?",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaSjsNpLSA5tXA7IMmjxn230d8Zh8HQphZedJujbb26sJXCtXN1jJpE1GOImM"
-        },
-        {
-          "url": "https://www.facebook.com/MilenioDiario/posts/-imperdiblecheca-a-qu%C3%A9-hora-y-en-d%C3%B3nde-ver-el-quer%C3%A9taro-vs-monterrey-de-la-liga-/1681443350679796/",
-          "title": "⚽ ¡Imperdible! Checa a qué HORA y en DÓNDE VER el Querétaro vs Monterrey de la Liga MX 🐔🆚🤠",
-          "publisher": "Facebook",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCrgp6gzc_Eq_v0BoXxubbZf_cY9PshjKQeDrNsr71uZJyh5Q6x2hu69lGcy8"
-        },
-        {
-          "url": "https://www.reforma.com/va-rayados-con-de-la-rosa-de-titular/ar3314868?redirectcancha=1",
-          "title": "Va Rayados con De la Rosa de titular",
-          "publisher": "Reforma",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7pDxby7SmtvEHKKlQTLoChqDj0n9tSEBagUzNMH-dvM7Di1sjFJstxbPNeyU"
-        }
-      ]
-    },
-    {
-      "query": "juan diaz",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T22:30:00Z",
-      "related_news_urls": [
-        "https://www.ole.com.ar/artes-marciales/juan-pegajoso-diaz-ufc-peru-argentina-cordoba-cuarteto-peso-gallo_0_ZkneSUH4Pp.html",
-        "https://www.infobae.com/peru/deportes/2026/11/13/juan-pegajoso-diaz-no-dio-el-peso-para-su-pelea-en-la-ufc-334-combate-sigue-en-pie-y-el-20-de-su-bolsa-sera-destinada-a-su-rival/",
-        "https://bolavip.com/pe/deportes/a-que-hora-pelea-juan-pegajoso-diaz-ante-alatengheili-en-la-ufc-334-donde-ver-y-cartelera-completa"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAUtzYMffad526P1vdlRV0VlP-BA7ojP96Kf9sOUsY9orIH5nqi91ljQHE7zs",
-      "image_credit": "Olé",
-      "news": [
-        {
-          "url": "https://www.ole.com.ar/artes-marciales/juan-pegajoso-diaz-ufc-peru-argentina-cordoba-cuarteto-peso-gallo_0_ZkneSUH4Pp.html",
-          "title": "Nació en Perú, vivió su adolescencia en la Argentina, escucha a La Mona y a Ulises y va por su segunda pelea en la UFC",
-          "publisher": "Olé",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAUtzYMffad526P1vdlRV0VlP-BA7ojP96Kf9sOUsY9orIH5nqi91ljQHE7zs"
-        },
-        {
-          "url": "https://www.infobae.com/peru/deportes/2026/11/13/juan-pegajoso-diaz-no-dio-el-peso-para-su-pelea-en-la-ufc-334-combate-sigue-en-pie-y-el-20-de-su-bolsa-sera-destinada-a-su-rival/",
-          "title": "Juan ‘Pegajoso’ Díaz no dio el peso para su pelea en la UFC 334: combate sigue en pie y el 20% de su bolsa será destinada a su rival",
-          "publisher": "Infobae",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsGsVxpXdozmxvIzAdgmyv7au3PqrjIJGKt9v2_IQvuiry3NSyai9Lne8OV-w"
-        },
-        {
-          "url": "https://bolavip.com/pe/deportes/a-que-hora-pelea-juan-pegajoso-diaz-ante-alatengheili-en-la-ufc-334-donde-ver-y-cartelera-completa",
-          "title": "¿A qué hora pelea Juan ‘Pegajoso’ Díaz ante Alatengheili en la UFC 334? Dónde ver y cartelera completa",
-          "publisher": "Bolavip Perú",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5KLKhXAlOdxxpydruOLasz9cqNrbSNEYLI4FbdOPCTKPnn77Aa6lFcCyPW4Q"
-        }
-      ]
-    },
-    {
-      "query": "faizon brandon",
+      "query": "sjsu vs air force",
       "approx_searches": "500+",
-      "published_at": "2026-11-14T22:30:00Z",
+      "published_at": "2026-11-14T23:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/george-macintyre-injury-tennessee-qb-222039656.html",
-        "https://sports.yahoo.com/articles/tennessee-football-qb-george-macintyre-221252060.html",
-        "https://247sports.com/article/faizon-brandon-replaces-george-macintyre-at-quarterback-in-tennessee-football-game-at-texas-am-aggies-josh-heupel-292718162/"
+        "https://milehighsports.com/air-force-falcons-vs-san-jose-state-spartans-game-preview-and-best-bets-for-week-11/",
+        "https://www.pressdemocrat.com/2026/11/14/san-jose-state-air-force-stats-mountain-west/",
+        "https://sports.yahoo.com/articles/san-jose-state-vs-air-111103816.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEXjjbuVOX1i_oAB_rU02CXxikBGZYBRkCECRAeaRm6NbEvvRwMvm7jqGPwyI",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTG2b2M1mHfxK62VkPT_x_XM9wpQYrXOw1GNoXDtAxYpuZ47mA4rnShEgi47R0",
+      "image_credit": "Mile High Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/george-macintyre-injury-tennessee-qb-222039656.html",
-          "title": "George MacIntyre injury update: Tennessee QB leaves Texas A&M game",
-          "publisher": "Yahoo Sports",
+          "url": "https://milehighsports.com/air-force-falcons-vs-san-jose-state-spartans-game-preview-and-best-bets-for-week-11/",
+          "title": "Air Force Falcons vs. San Jose State Spartans: Game preview and best bets for Week 11",
+          "publisher": "Mile High Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEXjjbuVOX1i_oAB_rU02CXxikBGZYBRkCECRAeaRm6NbEvvRwMvm7jqGPwyI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTG2b2M1mHfxK62VkPT_x_XM9wpQYrXOw1GNoXDtAxYpuZ47mA4rnShEgi47R0"
         },
         {
-          "url": "https://sports.yahoo.com/articles/tennessee-football-qb-george-macintyre-221252060.html",
-          "title": "Tennessee football QB George MacIntyre leaves Texas A&M game after hard hit",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.pressdemocrat.com/2026/11/14/san-jose-state-air-force-stats-mountain-west/",
+          "title": "What to know before San Jose State kicks off at Air Force",
+          "publisher": "The Press Democrat",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3DDqFGIv5jzBlZ25M_Di3CqOCP4dId34PkQ8bR5yyNCw7xn2DvaKf7JObp4M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQst0Qbdjbw9kTPUaPUfp4eU__odpUfGM9A-jwwLMgHQ4UtamxTjWjNeNBrNUo"
         },
         {
-          "url": "https://247sports.com/article/faizon-brandon-replaces-george-macintyre-at-quarterback-in-tennessee-football-game-at-texas-am-aggies-josh-heupel-292718162/",
-          "title": "Faizon Brandon replaces George MacIntyre at quarterback in Tennessee's game at Texas A&M",
-          "publisher": "247Sports",
+          "url": "https://sports.yahoo.com/articles/san-jose-state-vs-air-111103816.html",
+          "title": "San Jose State vs Air Force Prediction, Pick, NCAAF Odds for Saturday, Nov. 14",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcTCl6Q_Z8E6Jq5I3o9yp5vfFOH-W0tEgSwNfw192SqnfI3yHkiXLU60pz07o"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJF6MZlzekuWUb8-nmMoH1T3y8S9VaKy1GPjs1ojPFFEzTvVYRl6-WtgKSwvg"
         }
       ]
     },
     {
-      "query": "high potential",
+      "query": "devils vs capitals",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T23:10:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/new-jersey-devils-washington-capitals-game-preview-november-14-2026",
+        "https://sports.yahoo.com/articles/2026-27-gamethread-21-jersey-230029704.html",
+        "https://www.espn.com/nhl/recap/_/gameId/401892700"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/new-jersey-devils-washington-capitals-game-preview-november-14-2026",
+          "title": "Devils at Capitals projected lineups",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/2026-27-gamethread-21-jersey-230029704.html",
+          "title": "2026-27 Gamethread #21: New Jersey Devils at Washington Capitals",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_0CEKOF8HlcffJmferPq8WEsaE1d1vhKlE5sFWxpo9Gg7-0CTV0WYr3B2QUw"
+        },
+        {
+          "url": "https://www.espn.com/nhl/recap/_/gameId/401892700",
+          "title": "Devils 5-2 Capitals (Nov 12, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGEdctbdMrxEaI7hFhDXHdo0PV4ay5mm7gBSkPkaJmdojxwN8M92SlUjXSFQQ"
+        }
+      ]
+    },
+    {
+      "query": "troy vs south alabama",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T23:10:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/shopping/news/watch-troy-south-alabama-college-football-espn-live-online-1236946134/",
+        "https://www.fox10tv.com/2026/11/09/battle-belt-week-events-game-university-south-alabama/",
+        "https://troytrojans.com/news/2026/11/12/football-troy-travels-to-mobile-for-battle-for-the-belt"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9oo1_lR0TXbZE7kvd09Jit-1Azg0Rqhhvxb2YsMG0_3eBvuqS1DWEjsSI6io",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/shopping/news/watch-troy-south-alabama-college-football-espn-live-online-1236946134/",
+          "title": "ESPN Unlimited: Here's How to Watch the Troy Trojans vs. South Alabama Jaguars Game Live Online",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9oo1_lR0TXbZE7kvd09Jit-1Azg0Rqhhvxb2YsMG0_3eBvuqS1DWEjsSI6io"
+        },
+        {
+          "url": "https://www.fox10tv.com/2026/11/09/battle-belt-week-events-game-university-south-alabama/",
+          "title": "‘Battle of the Belt’ week events and game at the University of South Alabama",
+          "publisher": "Fox 10 News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTv9VbRKCwn7iaGMbXoFYJvOvCUqRrkch78_nYBRTIOev92_pdhikhCbIsaLdg"
+        },
+        {
+          "url": "https://troytrojans.com/news/2026/11/12/football-troy-travels-to-mobile-for-battle-for-the-belt",
+          "title": "Troy Travels to Mobile for “Battle for the Belt”",
+          "publisher": "Troy University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ02Lmobq7AkbZk7tw0gxMMP4xNCRpQho76LGuyP2zbaezl9UJAqOF0DvWORJk"
+        }
+      ]
+    },
+    {
+      "query": "oilers vs maple leafs",
       "approx_searches": "200+",
-      "published_at": "2026-11-14T22:30:00Z",
+      "published_at": "2026-11-14T23:10:00Z",
       "related_news_urls": [
-        "https://www.eonline.com/news/1438090/abcs-high-potential-reveals-january-2027-season-3-premiere-date",
-        "https://www.tvline.com/2316654/high-potential-season-3-release-date-cast-details-abc/",
-        "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/high-potential-fans-losing-over-151600860.html"
+        "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-14-2026",
+        "https://www.sportsnet.ca/nhl/article/oilers-superstar-connor-mcdavid-brings-his-gretzky-vibe-to-toronto/",
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/edmonton-oilers-vs-toronto-maple-leafs-prediction-odds-2026-11-14/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAu14r7W0zht9pE1eFDG04gM_UhNFseWJGXeZQREsRkKn-ucpa96RZSkRpxR4",
-      "image_credit": "E! News",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBvu4N2BfOnz6eKCSBu5k01vKYLxJUfbu4d4MKDMhv1a4Ux45k2wP4SEEDuoI",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://www.eonline.com/news/1438090/abcs-high-potential-reveals-january-2027-season-3-premiere-date",
-          "title": "High Potential Reveals Season 3 Premiere Date on ABC",
-          "publisher": "E! News",
+          "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-14-2026",
+          "title": "NHL On Tap: McDavid eyes point in 21st straight for Oilers at Maple Leafs",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAu14r7W0zht9pE1eFDG04gM_UhNFseWJGXeZQREsRkKn-ucpa96RZSkRpxR4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBvu4N2BfOnz6eKCSBu5k01vKYLxJUfbu4d4MKDMhv1a4Ux45k2wP4SEEDuoI"
         },
         {
-          "url": "https://www.tvline.com/2316654/high-potential-season-3-release-date-cast-details-abc/",
-          "title": "High Potential Season 3: Everything We Know So Far",
-          "publisher": "TVLine",
+          "url": "https://www.sportsnet.ca/nhl/article/oilers-superstar-connor-mcdavid-brings-his-gretzky-vibe-to-toronto/",
+          "title": "Oilers superstar Connor McDavid brings his Gretzky vibe to Toronto",
+          "publisher": "Sportsnet.ca",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIXERh8CzcJXGpTJD1TkmxKeZ--g6DBq_NwLBlK0qpqPrlvU4AENsOCW5hn1U"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPp1iICLPx5nvZAREMfUCgEIT53eRZtM06lfY_xErFAWqO8nu9DQaDv8lpoxU"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/high-potential-fans-losing-over-151600860.html",
-          "title": "‘High Potential’ Fans Are Losing It Over the Show’s Epic Announcement About Season 3",
-          "publisher": "Yahoo",
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/edmonton-oilers-vs-toronto-maple-leafs-prediction-odds-2026-11-14/",
+          "title": "Edmonton Oilers vs Toronto Maple Leafs Prediction, Picks & Odds | 14 Nov 2026",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQodbGQwtTaFGrB3WAGLYuXHR80NiR4mZWv3EIv9KvFdTMgfaQdZ_Ss_RAqTQ4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJv5s4hLGJzZdO8SmvT4WH7WMTBb0JaapmoVQaqSGCyE3KSrOGwmc4mw1e-e8"
         }
       ]
     },
     {
-      "query": "paramount",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-14T22:20:00Z",
+      "query": "folarin balogun",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T23:10:00Z",
       "related_news_urls": [
-        "https://deadline.com/2026/11/box-office-ebenezer-1237222749/",
-        "https://www.yahoo.com/entertainment/movies/articles/why-d-sense-johnny-depp-222912753.html",
-        "https://www.wsj.com/arts-culture/film/ebenezer-review-johnny-depp-steps-into-scrooges-slippers-983b0417"
+        "https://www.espn.com/soccer/story/_/id/50469742/transfer-rumors-news-man-united-balogun-freeman-pochettino",
+        "https://www.si.com/soccer/four-strikers-man-utd-should-target-mauricio-pochettino-ranked",
+        "https://sports.yahoo.com/articles/manchester-united-set-sights-ligue-201500349.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvkVE92s4ek0L5srwAwZIklHBnD7_Y_g9WJlAABLZnpanCWANl_8thu84ScBY",
-      "image_credit": "Deadline",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLJWHq91V-gYGb5OffVslwjspxvo6t0FftbxFx-1QkoV5Gx-0OQmPJJDOwIkg",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://deadline.com/2026/11/box-office-ebenezer-1237222749/",
-          "title": "Johnny Depp Pic ‘Ebenezer’ Hoping For $20M+ U.S. – Saturday AM Box Office Update",
-          "publisher": "Deadline",
+          "url": "https://www.espn.com/soccer/story/_/id/50469742/transfer-rumors-news-man-united-balogun-freeman-pochettino",
+          "title": "Transfer rumors, news: Real Madrid tracking Bayern Munich star Michael Olise",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvkVE92s4ek0L5srwAwZIklHBnD7_Y_g9WJlAABLZnpanCWANl_8thu84ScBY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLJWHq91V-gYGb5OffVslwjspxvo6t0FftbxFx-1QkoV5Gx-0OQmPJJDOwIkg"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/why-d-sense-johnny-depp-222912753.html",
-          "title": "Why It’d Make Sense For Johnny Depp’s ‘Ebenezer’ To Break With Paramount’s Streaming Strategy",
-          "publisher": "Yahoo",
+          "url": "https://www.si.com/soccer/four-strikers-man-utd-should-target-mauricio-pochettino-ranked",
+          "title": "Four Strikers Man Utd Should Target for Mauricio Pochettino—Ranked",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxNwbOdLt3Kjw11YyLVx-zTCmacq3_UsNKqiyERF5Z5PRjmCuwQYGafClvEHc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxPjCiOCOlMQTDJ4mQRDqwh_0psg8QYLEf8Ke0VD9PXjQkO64dw68S15Gdi3o"
         },
         {
-          "url": "https://www.wsj.com/arts-culture/film/ebenezer-review-johnny-depp-steps-into-scrooges-slippers-983b0417",
-          "title": "‘Ebenezer’ Review: Johnny Depp Steps Into Scrooge’s Slippers",
-          "publisher": "WSJ",
+          "url": "https://sports.yahoo.com/articles/manchester-united-set-sights-ligue-201500349.html",
+          "title": "Manchester United Have Set Their Sights On This Ligue 1 Striker: Should Pochettino Go For Him?",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpSYctinYRdKCPYE5KZyaySR_496gLIahOl18oLCZdxqxkajhFmYkmgMFf7eM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9_YvXFLdDDHIClo3vDBCVAN8r_vZzYquLWp6PkMIKjE83sEhmlfVdsJ4KYZQ"
         }
       ]
     }
