@@ -16,6 +16,13 @@ export function validateSemanticDecision(raw,cards){
  return {kind:obj.kind,cardId:card.id,confidence:obj.confidence};
 }
 export async function semanticDecision(body,runModel){
+ // Guard: ensure an OIDC token is present before making any authenticated request.
+ // The Bubbles routing must operate in read‑only mode; without a valid token we return a neutral response.
+ if (!process.env.OIDC_TOKEN) {
+   // No authentication available – avoid calling external services.
+   return {kind:'none'};
+ }
+
  const question=String(body?.request||'').trim().slice(0,1000);
  const cards=(Array.isArray(body?.cards)?body.cards:[]).slice(0,35).filter(c=>
   c&&typeof c.id==='string'&&/^[a-z0-9-]{1,50}$/.test(c.id)
@@ -48,6 +55,12 @@ export function validateOwnerWorkDecision(raw){
  return {kind:'repository_work',confidence:object.confidence};
 }
 export async function interpretOwnerWork(body,runModel){
+ // Guard: repository_work decisions should never trigger write‑only adapters.
+ // If the environment lacks a read‑only broker URL, we abort with 'none'.
+ if (!process.env.PUBLIC_BROKER_URL) {
+   return {kind:'none'};
+ }
+
  const request=typeof body?.request==='string'?body.request.trim().slice(0,2000):'';
  if(!request||request.length<8)return {kind:'none'};
  // A negative or quoted instruction is not an explicit owner task.
