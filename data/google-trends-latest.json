@@ -3,9 +3,184 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T08:31:19.779322Z",
+  "checked_at": "2026-11-14T09:01:11.606914Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "hltv",
+      "approx_searches": "100+",
+      "published_at": "2026-11-14T08:40:00Z",
+      "related_news_urls": [
+        "https://www.dust2.us/news/79906/h0nest-on-making-hltv-prospects-i-can-be-betteri-need-to-just-work-on-myself-and-get-higher",
+        "https://www.dust2.us/news/79679/iowa-stormboars-h0nest-breaks-into-hltv-top-50-prospects-at-33",
+        "https://www.dust2.us/news/79882/jorko-nemanha-among-eligible-players-for-hltv-rookie-of-the-year-2026"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDdjcp4mkCQ4q7ZaGOnTiMTUtcnbTiJVRBwbFwuvnJ6ZwUfOOSbvbFDvaEEs4",
+      "image_credit": "Dust2.us",
+      "news": [
+        {
+          "url": "https://www.dust2.us/news/79906/h0nest-on-making-hltv-prospects-i-can-be-betteri-need-to-just-work-on-myself-and-get-higher",
+          "title": "H0NeST on making HLTV Prospects: \"I can be better...I need to just work on myself and get higher\"",
+          "publisher": "Dust2.us",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDdjcp4mkCQ4q7ZaGOnTiMTUtcnbTiJVRBwbFwuvnJ6ZwUfOOSbvbFDvaEEs4"
+        },
+        {
+          "url": "https://www.dust2.us/news/79679/iowa-stormboars-h0nest-breaks-into-hltv-top-50-prospects-at-33",
+          "title": "Iowa Stormboar's H0NeST breaks into HLTV Top 50 Prospects at #33",
+          "publisher": "Dust2.us",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_sjFA_ccZmOrIWWPoWNL0nafJgLZhmPRgjqWi8HcrjnI-y7SNVA6AV4PvzPw"
+        },
+        {
+          "url": "https://www.dust2.us/news/79882/jorko-nemanha-among-eligible-players-for-hltv-rookie-of-the-year-2026",
+          "title": "Jorko, nEMANHA among eligible players for HLTV Rookie of the Year 2026",
+          "publisher": "Dust2.us",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMvyYRlhE35rjTAUMZ7BU6zZ3MsvPl6GOevjtGpM9RImH2ZVmc3iVEysRXDTc"
+        }
+      ]
+    },
+    {
+      "query": "ana de armas",
+      "approx_searches": "100+",
+      "published_at": "2026-11-14T08:30:00Z",
+      "related_news_urls": [
+        "https://extratv.com/2026/11/12/ana-de-armas-and-beto-montenegro-make-red-carpet-debut/",
+        "https://www.imdb.com/news/ni66108941/?ref_=nwc_art_perm",
+        "https://www.redcarpet-fashionawards.com/2026/11/12/ana-de-armas-embraces-a-more-sensual-look-at-the-latin-recording-academy-gala/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLG11Npj6FAJ7LEH4BGGaq0NPvbRWYb76OXKdAWALtbzRtfmtHHHA4AbTqWGU",
+      "image_credit": "Extra",
+      "news": [
+        {
+          "url": "https://extratv.com/2026/11/12/ana-de-armas-and-beto-montenegro-make-red-carpet-debut/",
+          "title": "Ana de Armas & Beto Montenegro Make Red-Carpet Debut",
+          "publisher": "Extra",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLG11Npj6FAJ7LEH4BGGaq0NPvbRWYb76OXKdAWALtbzRtfmtHHHA4AbTqWGU"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66108941/?ref_=nwc_art_perm",
+          "title": "Ana de Armas Looks Gorgeous as She Steps Out to Support Boyfriend Beto Montenegro at Latin Grammys 2026",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgXRynnbCZTuIJrPzGMR8VwTO6Rq1JVIAHRUBdTz2JEAz3RAmjYaG3d2uKUb0"
+        },
+        {
+          "url": "https://www.redcarpet-fashionawards.com/2026/11/12/ana-de-armas-embraces-a-more-sensual-look-at-the-latin-recording-academy-gala/",
+          "title": "Ana de Armas in Wiederhoeft for 2026 Latin Recording Academy Gala",
+          "publisher": "Red Carpet Fashion Awards",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPc54qiLFjFUJyF-OenilpO1D_24wFWSMWqPtJdRr8HRzLRSeA56-FM9qA5BI"
+        }
+      ]
+    },
+    {
+      "query": "joseph zada",
+      "approx_searches": "100+",
+      "published_at": "2026-11-14T08:30:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66106963/?ref_=nwc_art_perm",
+        "https://www.thefashionspot.com/fashion-news/982290-mckenna-grace-underwear-sheer-lacy-micro-minidress-christian-louboutins",
+        "https://www.fashiontimes.co.uk/mckenna-grace-britney-spears-lace-dress-1767678"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRfontl1V6GbTtYYpj81BdOS0107Pa9QFt8v7OdkrCxCph8Hi27H1BP2hlopbk",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66106963/?ref_=nwc_art_perm",
+          "title": "Mckenna Grace Wears Fully See-Through Dress to Support Joseph Zada’s ‘Cultured’ Cover Launch",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRfontl1V6GbTtYYpj81BdOS0107Pa9QFt8v7OdkrCxCph8Hi27H1BP2hlopbk"
+        },
+        {
+          "url": "https://www.thefashionspot.com/fashion-news/982290-mckenna-grace-underwear-sheer-lacy-micro-minidress-christian-louboutins",
+          "title": "Mckenna Grace Flashes Underwear in Sheer Lacy Micro Minidress & Louboutins",
+          "publisher": "theFashionSpot",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqlffmUo5TE6O_4lzKnr7NQ42WpNuurUGJbqsPvRWFcNKXBCP1SPc0-erj5AA"
+        },
+        {
+          "url": "https://www.fashiontimes.co.uk/mckenna-grace-britney-spears-lace-dress-1767678",
+          "title": "McKenna Grace Serves Gothic Glam in Daring Lace Minidress Straight Out of Britney Spears' 2001 VMAs Era",
+          "publisher": "Fashion Times UK",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFcZe6-fXJFkGDxEM5vUKefhf915IHRSHWWVN54di1VQIKayrMUMDEEcl1Lq8"
+        }
+      ]
+    },
+    {
+      "query": "kobe bryant",
+      "approx_searches": "100+",
+      "published_at": "2026-11-14T08:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50453988/kobe-lebron-steph-brady-tips-commanders-jayden-daniels",
+        "https://sports.yahoo.com/articles/kobe-bryant-inspired-nfl-quarterback-170038705.html",
+        "https://bleacherreport.com/articles/25532666-jayden-daniels-dishes-kobe-lebron-tom-brady-steph-currys-impact-his-chase-greatness"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmTj9Lw5xLzD9v_L9HaYRwK8kZd3O1BtsB0gO6w2Amf6jlF37VFnUoyhPfTeA",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50453988/kobe-lebron-steph-brady-tips-commanders-jayden-daniels",
+          "title": "How Kobe, LeBron, Steph and Brady are helping Jayden Daniels chase greatness",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmTj9Lw5xLzD9v_L9HaYRwK8kZd3O1BtsB0gO6w2Amf6jlF37VFnUoyhPfTeA"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/kobe-bryant-inspired-nfl-quarterback-170038705.html",
+          "title": "Kobe Bryant inspired an NFL quarterback to adopt the 'Mamba Mentality'",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQj3WhunJVUBHWbWLaBwmhw-B34NnzL-fH9V_8Ryq0SuzisbLlQNNW8HFLNP50"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25532666-jayden-daniels-dishes-kobe-lebron-tom-brady-steph-currys-impact-his-chase-greatness",
+          "title": "Jayden Daniels Dishes on Kobe, LeBron, Tom Brady, Steph Curry's Impact on His 'Chase for Greatness'",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4YxDxqSghwxUeKWC5Z1vmrvGjeHUfjSnrsYMcLry3rLrWf3LGABWVdmMVa5M"
+        }
+      ]
+    },
+    {
+      "query": "natalie portman",
+      "approx_searches": "100+",
+      "published_at": "2026-11-14T08:20:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66101296/?ref_=nmnw_art_perm",
+        "https://www.reutersconnect.com/item/2026-the-gallerist-movie-set/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBBVlpMV1E",
+        "https://www.mediaplaynews.com/roadside-attractions-drops-trailer-for-the-gallerist-hitting-theaters-dec-4/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBOLbuZUaeJkfAHSPYMrmcRgLeZYV8xYUNRYWgXkCfI3a9_NYOqrKE80d4i7o",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66101296/?ref_=nmnw_art_perm",
+          "title": "Jenna Ortega and Natalie Portman’s Twisted New Crime Comedy Officially Unleashes Its Trailer",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBOLbuZUaeJkfAHSPYMrmcRgLeZYV8xYUNRYWgXkCfI3a9_NYOqrKE80d4i7o"
+        },
+        {
+          "url": "https://www.reutersconnect.com/item/2026-the-gallerist-movie-set/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBBVlpMV1E",
+          "title": "Licensable picture: 2026 - THE GALLERIST - Movie Set",
+          "publisher": "Reuters Connect",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGOcHnKGagc1mpVyPlDONeDN9wNNuqRKb5-hVKWc-2ZrD9vMCgESIU7LRIZQI"
+        },
+        {
+          "url": "https://www.mediaplaynews.com/roadside-attractions-drops-trailer-for-the-gallerist-hitting-theaters-dec-4/",
+          "title": "Roadside Attractions Drops Trailer For ‘The Gallerist,’ Hitting Theaters Dec. 4",
+          "publisher": "Media Play News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKHsrtHXWsbHn-9oByoe961RjiYxspws6Wjqc9tmu_lVutdqWUoOXVQ9Fe8mA"
+        }
+      ]
+    },
     {
       "query": "gta 6 ultimate edition",
       "approx_searches": "100+",
@@ -46,68 +221,33 @@
       "approx_searches": "100+",
       "published_at": "2026-11-14T08:10:00Z",
       "related_news_urls": [
-        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
-        "https://www.nytimes.com/2026/11/13/technology/anthropic-ipo-spending-plans.html",
-        "https://www.reuters.com/business/finance/investors-flock-anthropic-ipo-question-durability-ai-lead-2026-11-13/"
+        "https://worldathletics.org/competitions/world-athletics-label-road-races/news/hong-kong-zhuhai-macao-bridge-half-marathon-barega-kefale",
+        "https://english.dotdotnews.com/a/202611/13/AP6af6c46ee4b091a65a2f8004.html",
+        "https://www.scmp.com/sport/hong-kong/article/3374380/hong-kong-bridge-half-marathons-platinum-status-set-boost-distance-running-city"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGhzBw5Gu9QJSkHS8KA8ykQ6iX0LlPPZnDrggt7EsviBOCrkQFYPYZBgoE6Ew",
-      "image_credit": "SEC.gov",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRK0l6KgB72Xvw9UeWO_BnaSwjfx3qaUQiYkOSHIh6sRD50uIE1SciWuWkzj5A",
+      "image_credit": "worldathletics.org",
       "news": [
         {
-          "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
-          "title": "Anthropic, PBC - S-1/A-2",
-          "publisher": "SEC.gov",
+          "url": "https://worldathletics.org/competitions/world-athletics-label-road-races/news/hong-kong-zhuhai-macao-bridge-half-marathon-barega-kefale",
+          "title": "Barega and Kefale head half marathon fields in Hong Kong",
+          "publisher": "worldathletics.org",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGhzBw5Gu9QJSkHS8KA8ykQ6iX0LlPPZnDrggt7EsviBOCrkQFYPYZBgoE6Ew"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRK0l6KgB72Xvw9UeWO_BnaSwjfx3qaUQiYkOSHIh6sRD50uIE1SciWuWkzj5A"
         },
         {
-          "url": "https://www.nytimes.com/2026/11/13/technology/anthropic-ipo-spending-plans.html",
-          "title": "Wall Street Braces for Anthropic’s Spending",
-          "publisher": "The New York Times",
+          "url": "https://english.dotdotnews.com/a/202611/13/AP6af6c46ee4b091a65a2f8004.html",
+          "title": "Police announced traffic arrangements from Nov. 14 to 15 to facilitate HZMB Half Marathon 2026",
+          "publisher": "dotdotnews",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaCQi2FcthcFyycE8j2ZdeVPkz28ZQSvxIYL4xsjBU1AZn9TjxLwEmUKh7mlU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKZMxBrwaYDjeZ8NjL1PVNAEodoHLk8wf2Ljto6h5tCKJjFA7KWh_gHR3WnEU"
         },
         {
-          "url": "https://www.reuters.com/business/finance/investors-flock-anthropic-ipo-question-durability-ai-lead-2026-11-13/",
-          "title": "EXCLUSIVE: Investors flock to Anthropic IPO but question durability of AI lead",
-          "publisher": "Reuters",
+          "url": "https://www.scmp.com/sport/hong-kong/article/3374380/hong-kong-bridge-half-marathons-platinum-status-set-boost-distance-running-city",
+          "title": "Hong Kong bridge half-marathon’s ‘platinum’ status set to boost distance running",
+          "publisher": "South China Morning Post",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJrIQkbU3FJWxFNUTbKN5Yd3XRHQ4ig7v1cFXSVAXfxwXFtca-oRoL1Lcf1lE"
-        }
-      ]
-    },
-    {
-      "query": "xrp",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T08:00:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/crypto/articles/xrp-crashes-toward-0-99-223000273.html",
-        "https://www.tradingview.com/news/benzinga:080a63707094b:0-xrp-drops-26-in-a-month-could-0-60-be-next/",
-        "https://247wallst.com/investing/cryptocurrency/2026/11/12/could-xrp-be-the-next-bitcoin/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5BkwhyjM2nTBdkPAaUae8p-nISy2EGXv1e3UV1mOIsksphuKSqYexXKF2-0M",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/crypto/articles/xrp-crashes-toward-0-99-223000273.html",
-          "title": "XRP crashes toward $0.99 as analyst warns of another brutal drop",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5BkwhyjM2nTBdkPAaUae8p-nISy2EGXv1e3UV1mOIsksphuKSqYexXKF2-0M"
-        },
-        {
-          "url": "https://www.tradingview.com/news/benzinga:080a63707094b:0-xrp-drops-26-in-a-month-could-0-60-be-next/",
-          "title": "XRP Drops 26% in a Month: Could $0.60 Be Next?",
-          "publisher": "TradingView",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
-        },
-        {
-          "url": "https://247wallst.com/investing/cryptocurrency/2026/11/12/could-xrp-be-the-next-bitcoin/",
-          "title": "Could XRP Be the Next Bitcoin?",
-          "publisher": "24/7 Wall St.",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzjt61fA6zVKufhhsUKErmSTNmOxa5_OpGSVMS0ZwuBmZTtnJkMb-mcfozGMc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNEhn0vyxKu_YEnNaTUUHP4KpvJJspyfFOww6PcBauh0aoioBRSwjGdrY_ofw"
         }
       ]
     },
@@ -147,6 +287,41 @@
       ]
     },
     {
+      "query": "xrp",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T08:00:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/crypto/articles/xrp-crashes-toward-0-99-223000273.html",
+        "https://www.tradingview.com/news/benzinga:080a63707094b:0-xrp-drops-26-in-a-month-could-0-60-be-next/",
+        "https://247wallst.com/investing/cryptocurrency/2026/11/12/could-xrp-be-the-next-bitcoin/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5BkwhyjM2nTBdkPAaUae8p-nISy2EGXv1e3UV1mOIsksphuKSqYexXKF2-0M",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/crypto/articles/xrp-crashes-toward-0-99-223000273.html",
+          "title": "XRP crashes toward $0.99 as analyst warns of another brutal drop",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5BkwhyjM2nTBdkPAaUae8p-nISy2EGXv1e3UV1mOIsksphuKSqYexXKF2-0M"
+        },
+        {
+          "url": "https://www.tradingview.com/news/benzinga:080a63707094b:0-xrp-drops-26-in-a-month-could-0-60-be-next/",
+          "title": "XRP Drops 26% in a Month: Could $0.60 Be Next?",
+          "publisher": "TradingView",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
+        },
+        {
+          "url": "https://247wallst.com/investing/cryptocurrency/2026/11/12/could-xrp-be-the-next-bitcoin/",
+          "title": "Could XRP Be the Next Bitcoin?",
+          "publisher": "24/7 Wall St.",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzjt61fA6zVKufhhsUKErmSTNmOxa5_OpGSVMS0ZwuBmZTtnJkMb-mcfozGMc"
+        }
+      ]
+    },
+    {
       "query": "andrew garfield",
       "approx_searches": "100+",
       "published_at": "2026-11-14T08:00:00Z",
@@ -178,181 +353,6 @@
           "publisher": "Yahoo",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEdfed64aWbjPSK83HIkbZ4r67CRdIFDruDPas9m8rRlLvBPwQExK1kj_c1UM"
-        }
-      ]
-    },
-    {
-      "query": "hailey bieber",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T07:50:00Z",
-      "related_news_urls": [
-        "https://www.instyle.com/hailey-bieber-son-jack-special-talent-video-12252588",
-        "https://www.eonline.com/news/1438082/hailey-bieber-justin-biebers-son-jack-following-in-dads-footsteps",
-        "https://nz.news.yahoo.com/hailey-bieber-shares-video-son-182839324.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTusXSbXcct54z15KcQukRUSEnJ3DPKRVOqyEGYgw_V4l9HS_WCqum39iYnvyk",
-      "image_credit": "InStyle",
-      "news": [
-        {
-          "url": "https://www.instyle.com/hailey-bieber-son-jack-special-talent-video-12252588",
-          "title": "Hailey Bieber’s Son Jack, 2, Shows Off Special Talent Following in Dad’s Footsteps in Never-Before-Seen Video",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTusXSbXcct54z15KcQukRUSEnJ3DPKRVOqyEGYgw_V4l9HS_WCqum39iYnvyk"
-        },
-        {
-          "url": "https://www.eonline.com/news/1438082/hailey-bieber-justin-biebers-son-jack-following-in-dads-footsteps",
-          "title": "Hailey Bieber Shares Sweet Proof Son Jack Bieber Is Following in Dad Justin Bieber’s Footsteps",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiL83EVQkWQnvCncDzS8Dyx2B51Viz-SKWNwt9BCyV12f7v9je3-nfKPIawEQ"
-        },
-        {
-          "url": "https://nz.news.yahoo.com/hailey-bieber-shares-video-son-182839324.html",
-          "title": "Hailey Bieber shares video of son Jack Blues playing the keyboard",
-          "publisher": "Yahoo News New Zealand",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3Po_FmU8Bj6Qk4IUoggQRsT0kJYooxFaqMbzekmtH4TwoVzpKNsu1O3JWVMg"
-        }
-      ]
-    },
-    {
-      "query": "alexandra daddario",
-      "approx_searches": "100+",
-      "published_at": "2026-11-14T07:50:00Z",
-      "related_news_urls": [
-        "https://screenrant.com/best-disney-plus-movies-watch-weekend-november-14/",
-        "https://screenrant.com/best-disney-plus-movies-watch-weekend-november-7/",
-        "https://deadline.com/2026/11/taylor-kitsch-alexandra-daddario-long-island-bank-robber-1237215411/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgJ99Y1ntGAIV65gkPHRKMH-D6L4CikoeTjSwfswh-wmqj342EBsvYcHq8mYI",
-      "image_credit": "ScreenRant",
-      "news": [
-        {
-          "url": "https://screenrant.com/best-disney-plus-movies-watch-weekend-november-14/",
-          "title": "3 Best Movies To Watch On Disney+ This Weekend (#1 Is Alexandra Daddario's Action Fantasy Epic)",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgJ99Y1ntGAIV65gkPHRKMH-D6L4CikoeTjSwfswh-wmqj342EBsvYcHq8mYI"
-        },
-        {
-          "url": "https://screenrant.com/best-disney-plus-movies-watch-weekend-november-7/",
-          "title": "3 Best Movies To Watch On Disney+ This Weekend (#1 Is A $1.5 Billion Space Opera With Sequels On The Way)",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRt85PJdHOblx2XaH282gk2437hKb9PTDJzrKkh0eS1S7N0uxM-iwm2rnlNiRc"
-        },
-        {
-          "url": "https://deadline.com/2026/11/taylor-kitsch-alexandra-daddario-long-island-bank-robber-1237215411/",
-          "title": "Taylor Kitsch, Alexandra Daddario, Christopher Walken Cast In 'Robber'",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvUWPLXwhkZWeeM90NlJZ0U6dtk8rYW9Vyv4sW4VYgIzyy2k8OaNg9Cx0_iXE"
-        }
-      ]
-    },
-    {
-      "query": "paris hilton",
-      "approx_searches": "100+",
-      "published_at": "2026-11-14T07:50:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/news/us/articles/inside-la-priciest-private-schools-130000995.html",
-        "https://latination.com/los-angeles-most-expensive-private-schools-privileges/",
-        "https://nypost.com/2026/11/11/us-news/l-a-s-most-expensive-private-schools-in-2026-ranked-by-tuition/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdGT0S506z9dWzj0lA9NJ5LSU8SrrO8Q5XqfHzXB1olPJhoG0qh0uFhYPlCV8",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/news/us/articles/inside-la-priciest-private-schools-130000995.html",
-          "title": "Inside LA’s priciest private schools, from a $70K campus with rooftop gardens to Paris Hilton’s alma mater",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdGT0S506z9dWzj0lA9NJ5LSU8SrrO8Q5XqfHzXB1olPJhoG0qh0uFhYPlCV8"
-        },
-        {
-          "url": "https://latination.com/los-angeles-most-expensive-private-schools-privileges/",
-          "title": "Los Angeles' priciest private schools offer privileges public school kids can only dream of",
-          "publisher": "https://latination.com/",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCaKPA0f-JjjisWpP9x4MK6KKMRnOq-2ofjt-3JkeLbOBNzuY_RfspGHClwz0"
-        },
-        {
-          "url": "https://nypost.com/2026/11/11/us-news/l-a-s-most-expensive-private-schools-in-2026-ranked-by-tuition/",
-          "title": "LA’s most expensive private schools, including one where teens manage an investment portfolio",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNpQRZDKRR3oH7iMBNdOzkK6TF0pih4zFa_WXew2hocR05AhtsGoQgS2EbYvc"
-        }
-      ]
-    },
-    {
-      "query": "los angeles weather",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T07:40:00Z",
-      "related_news_urls": [
-        "https://ktla.com/news/california/southern-california-storm-train-rain-thunderstorms/",
-        "https://www.latimes.com/california/story/2026-11-13/storm-series-brings-rain-dangerous-surf-snow-to-southern-california-heres-where-when",
-        "https://www.nbclosangeles.com/news/local/rain-southern-california-temperature-surf/3969643/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUU49ycBQw20aw2K39uW3rHzxZ20sGZ9RtpPc_RzXr44Deo8HqmG1VeAYxHNM",
-      "image_credit": "KTLA",
-      "news": [
-        {
-          "url": "https://ktla.com/news/california/southern-california-storm-train-rain-thunderstorms/",
-          "title": "‘Storm train’ brings rain, thunderstorms to Southern California",
-          "publisher": "KTLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUU49ycBQw20aw2K39uW3rHzxZ20sGZ9RtpPc_RzXr44Deo8HqmG1VeAYxHNM"
-        },
-        {
-          "url": "https://www.latimes.com/california/story/2026-11-13/storm-series-brings-rain-dangerous-surf-snow-to-southern-california-heres-where-when",
-          "title": "Rain, dangerous surf and snow could hit Southern California. Here’s where and when storms are expected",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuX34ANfwRQjfwIXzo8goixDNuKpBeKdL147DDgx35iGbB5nIKtsUjFSSS37Q"
-        },
-        {
-          "url": "https://www.nbclosangeles.com/news/local/rain-southern-california-temperature-surf/3969643/",
-          "title": "‘Storm train' to bring rain, cooler temps. See weather timeline",
-          "publisher": "NBC Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9KJamHnIhZjtpm4vDU909QS_6bmWM9AtzYUmjNmoAwf-mXLyaDpWOgP8QrWo"
-        }
-      ]
-    },
-    {
-      "query": "nathan fillion",
-      "approx_searches": "100+",
-      "published_at": "2026-11-14T07:40:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66108143/?ref_=nmnw_art_perm",
-        "https://theankler.com/tv-in-3-lanterns-in-limbo-after-dc-power-play/",
-        "https://www.esquire.com/entertainment/tv/a74399253/is-lanterns-canceled/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRA2_K8VaLSlcyyhxgshQN5TUj3ec4yL9Mf4xqi0OV21VuzPDMEKnv4huaYxn0",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66108143/?ref_=nmnw_art_perm",
-          "title": "Aquaman Is Among Skydance's Biggest Priorities For The Dcu; Lanterns Season 2 Update Revealed",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRA2_K8VaLSlcyyhxgshQN5TUj3ec4yL9Mf4xqi0OV21VuzPDMEKnv4huaYxn0"
-        },
-        {
-          "url": "https://theankler.com/tv-in-3-lanterns-in-limbo-after-dc-power-play/",
-          "title": "TV in 3: ‘Lanterns’ in Limbo After DC Power Play",
-          "publisher": "The Ankler",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjRzj7a00Hha3dAu40J44w9DjiDyvnUJA4PFsoh9WJieUzttXv7iFtFBRBbb0"
-        },
-        {
-          "url": "https://www.esquire.com/entertainment/tv/a74399253/is-lanterns-canceled/",
-          "title": "So Is ‘Lanterns’ Canceled or What?",
-          "publisher": "Esquire",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRprD7x4K_JyWD2uD8yzxQqo7RA90iH0tAkeZCF-UnQnOCerOKZXSKcqwE2HaM"
         }
       ]
     }
