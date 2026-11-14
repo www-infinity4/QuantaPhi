@@ -3,9 +3,184 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T13:01:29.993583Z",
+  "checked_at": "2026-11-14T13:31:05.316431Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "chelsea vs man city",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T13:00:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/football/live/2026/nov/14/chelsea-v-man-city-womens-super-league-live",
+        "https://www.skysports.com/football/news/13611487/do-chelsea-go-into-this-weekends-top-of-the-table-wsl-clash-with-manchester-city-as-underdogs",
+        "https://www.chelseafc.com/en/news/article/buchanan-on-togetherness-and-wsl-title-focus-ahead-of-man-city-visit"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqai2pM_tJv-gS7Q_puEascjKXivtsJlT7D618Q9zFy48hRM4ki5IEjPaYczk",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/football/live/2026/nov/14/chelsea-v-man-city-womens-super-league-live",
+          "title": "Chelsea v Manchester City: Women’s Super League – live",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqai2pM_tJv-gS7Q_puEascjKXivtsJlT7D618Q9zFy48hRM4ki5IEjPaYczk"
+        },
+        {
+          "url": "https://www.skysports.com/football/news/13611487/do-chelsea-go-into-this-weekends-top-of-the-table-wsl-clash-with-manchester-city-as-underdogs",
+          "title": "Do Chelsea go into this weekend's top-of-the-table WSL clash with Manchester City as underdogs?",
+          "publisher": "Sky Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbUU_jD3mTVC2uO_ZlqoNhlXHHpOGhsn4NVmqxfCMSGiX297jg0Q-Omm4VcUI"
+        },
+        {
+          "url": "https://www.chelseafc.com/en/news/article/buchanan-on-togetherness-and-wsl-title-focus-ahead-of-man-city-visit",
+          "title": "Buchanan on togetherness and WSL title focus ahead of Man City visit | News | Official Site",
+          "publisher": "Chelsea Football Club",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3Swaj90I9Fd3TljENpMuDkPocJFZp_0DICgtpmCKUJC4-cH4VI2FK5NYdGxQ"
+        }
+      ]
+    },
+    {
+      "query": "kosovo vs israel",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T13:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cmwy7yx5ddelt",
+        "https://www.thestatszone.com/kosovo-vs-israel-preview-prediction-2026-27-uefa-nations-league-league-b-237919",
+        "https://reporteri.net/en/sport/Foda-talks-about-the-three-new-arrivals-and-Lutfi-Dalipin-says-that-one-can-start-against-Israel/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cmwy7yx5ddelt",
+          "title": "Kosovo vs Israel: UEFA Nations League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+        },
+        {
+          "url": "https://www.thestatszone.com/kosovo-vs-israel-preview-prediction-2026-27-uefa-nations-league-league-b-237919",
+          "title": "Kosovo vs Israel Preview & Prediction | 2026-27 UEFA Nations League | League B",
+          "publisher": "The Stats Zone",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRoFVhutZ41X0yOuipGhMgkuD7yqyvnMNe0LZo9I6Ah_HOGabPik8xXmn7lOnI"
+        },
+        {
+          "url": "https://reporteri.net/en/sport/Foda-talks-about-the-three-new-arrivals-and-Lutfi-Dalipin-says-that-one-can-start-against-Israel/",
+          "title": "Foda flet për tri prurjet e reja dhe Lutfi Dalipin, thotë se njëri mund të startojë ndaj Izrealit",
+          "publisher": "Reporteri.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUPUsYUy3NemhkfGEVy5ccB48zH4a1-LFWYh0yre2HL6qdkz4kLCOOdXjJmCU"
+        }
+      ]
+    },
+    {
+      "query": "man utd vs crystal palace",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T13:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/crx2325xjjplt",
+        "https://sports.yahoo.com/articles/manchester-united-boss-olid-expecting-070500442.html",
+        "https://www.skysports.com/football/live-blog/13612149/womens-super-league-live-chelsea-vs-man-city-and-man-utd-vs-crystal-palace-match-updates-news-and-score"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/crx2325xjjplt",
+          "title": "Manchester United vs Crystal Palace: Women's Super League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/manchester-united-boss-olid-expecting-070500442.html",
+          "title": "Manchester United boss Olid expecting tactical battle against Crystal Palace",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWd0bjcY82ougj5kxaX0N3fH4Hq8fdmbGvbDyJVCGL7qDSSYJBRiXI_ZCqp_o"
+        },
+        {
+          "url": "https://www.skysports.com/football/live-blog/13612149/womens-super-league-live-chelsea-vs-man-city-and-man-utd-vs-crystal-palace-match-updates-news-and-score",
+          "title": "Women's Super League LIVE! Chelsea vs Man City and Man Utd vs Crystal Palace match updates, news and score",
+          "publisher": "Sky Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFHoSynYNcQjYMRF4N7XvXF8XdIIi3SVwHrgfoVSgxMnXg8WdM5tbZEjmTAYk"
+        }
+      ]
+    },
+    {
+      "query": "dallas weather",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T13:00:00Z",
+      "related_news_urls": [
+        "https://www.ksat.com/weather/2026/11/13/weekend-forecast-saturday-looks-uneventful-but-sunday-is-trending-damp-cool/",
+        "https://www.fox4news.com/news/dallas-weather-cool-wet-weekend-ahead",
+        "https://www.kxxv.com/weather/lovely-friday-cooler-and-wetter-this-weekend"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaTfAkJ-i4fkVBOY2HLwDePzrINc72-34rxAeJUbYSrqEl0_reCefcTTbDkKE",
+      "image_credit": "KSAT",
+      "news": [
+        {
+          "url": "https://www.ksat.com/weather/2026/11/13/weekend-forecast-saturday-looks-uneventful-but-sunday-is-trending-damp-cool/",
+          "title": "WEEKEND FORECAST: Saturday looks uneventful, but Sunday is trending damp & cool",
+          "publisher": "KSAT",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaTfAkJ-i4fkVBOY2HLwDePzrINc72-34rxAeJUbYSrqEl0_reCefcTTbDkKE"
+        },
+        {
+          "url": "https://www.fox4news.com/news/dallas-weather-cool-wet-weekend-ahead",
+          "title": "Dallas Weather: Cool and wet weekend ahead",
+          "publisher": "FOX 4 News Dallas-Fort Worth",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4siH1_49Eb48XF3q9x_4maaiUHaa8d_qJJwBfeYkymyhUd3KRWEX9mvbMk0A"
+        },
+        {
+          "url": "https://www.kxxv.com/weather/lovely-friday-cooler-and-wetter-this-weekend",
+          "title": "Lovely Friday...Cooler and wetter this weekend",
+          "publisher": "KXXV",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9_GE62LtEoHLJrfPOM3U3YeJZey2IDQurHB_98rJbdrWoHETnEHiy3qUlAiA"
+        }
+      ]
+    },
+    {
+      "query": "apec",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T13:00:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/13/politics/trump-putin-xi-meeting",
+        "https://www.nytimes.com/2026/11/13/us/politics/trump-putin-xi-china-nuclear-proliferation.html",
+        "https://thehill.com/homenews/administration/6220278-trump-putin-xi-trilateral-meeting/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeoK2I_K1CRGQ15QFDEjoGfvjy91cTNxVz0x3tZGZxM8kgRJOOZRh9H4zXeXI",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/13/politics/trump-putin-xi-meeting",
+          "title": "Trump to meet with China’s Xi and Russia’s Putin at historic trilateral sit-down on nuclear non-proliferation",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeoK2I_K1CRGQ15QFDEjoGfvjy91cTNxVz0x3tZGZxM8kgRJOOZRh9H4zXeXI"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/13/us/politics/trump-putin-xi-china-nuclear-proliferation.html",
+          "title": "Trump to Meet With Putin and Xi in China, With Nuclear Proliferation on the Agenda",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQoG1QWd-enZF7weKdsM40BMRDr2yGC17dAR8zu81bcg70zt2stxU8NBkIh2lg"
+        },
+        {
+          "url": "https://thehill.com/homenews/administration/6220278-trump-putin-xi-trilateral-meeting/",
+          "title": "Trump, Putin and Xi to meet in first trilateral meeting between leaders",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-CMrfVJ3_vkWqX9P6tRxSl4CjpeDSVeiQxahrIHZxEhay4aH56Nx9zZSaxxk"
+        }
+      ]
+    },
     {
       "query": "pj marley's medina ohio",
       "approx_searches": "100+",
@@ -42,13 +217,48 @@
       ]
     },
     {
+      "query": "anvay dravid",
+      "approx_searches": "100+",
+      "published_at": "2026-11-14T12:40:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/series/under-19s-asia-cup-2026-27-1558428/afghanistan-under-19s-vs-india-under-19s-2nd-semi-final-1558443/full-scorecard",
+        "https://www.cricbuzz.com/live-cricket-scores/175710/afgu19-vs-indu19-semi-final-2-b1-v-a2-acc-mens-u19-asia-cup-2026",
+        "https://sports.yahoo.com/articles/india-vs-afghanistan-start-time-123001360.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoniIjAuTDILdJyxaCVJZMbq5s10X2KWOJDmlbT7cu_spH54AbAW3OyJw4AMI",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/series/under-19s-asia-cup-2026-27-1558428/afghanistan-under-19s-vs-india-under-19s-2nd-semi-final-1558443/full-scorecard",
+          "title": "AFG19 vs IND19 Cricket Scorecard, 2nd Semi-Final at Al Amarat, November 12, 2026",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoniIjAuTDILdJyxaCVJZMbq5s10X2KWOJDmlbT7cu_spH54AbAW3OyJw4AMI"
+        },
+        {
+          "url": "https://www.cricbuzz.com/live-cricket-scores/175710/afgu19-vs-indu19-semi-final-2-b1-v-a2-acc-mens-u19-asia-cup-2026",
+          "title": "AFGU19 vs INDU19, Semi Final 2 (B1 v A2), ACC Men's U19 Asia Cup 2026 - Commentary",
+          "publisher": "Cricbuzz",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjqFw7JeMxFOlho95cekvGubNMnNue4cSM7yoWPRJPELW7k7-c7AdfCVI79fI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/india-vs-afghanistan-start-time-123001360.html",
+          "title": "India vs. Afghanistan start time, live stream and TV channel for U-19 Asia Cup semi-final",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdz81AyBznzGfs4bYH7kBeWMxOZX26ksedL2q5w9Xmv4QHpmee7QqMbOCGw9I"
+        }
+      ]
+    },
+    {
       "query": "donbas",
       "approx_searches": "5000+",
       "published_at": "2026-11-14T12:30:00Z",
       "related_news_urls": [
         "https://www.bbc.com/news/articles/cwvg2l312ylqo",
-        "https://apnews.com/article/russia-ukraine-war-nato-us-zelenskyy-f9a8629626c087424f05adc85d127780",
-        "https://www.aljazeera.com/news/2026/11/14/three-killed-in-russia-as-ukraine-claims-us-floated-nato-membership-option"
+        "https://www.rferl.org/a/zelenskyy-us-floated-trading-donbas-for-nato-membership/33898583.html",
+        "https://apnews.com/article/russia-ukraine-war-nato-us-zelenskyy-f9a8629626c087424f05adc85d127780"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkm6AMWDgxClwMBnVf5KvHFacmO4ZXamURDjScP1ZG32WKcVceXx771bmxDkM",
       "image_credit": "BBC",
@@ -61,18 +271,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkm6AMWDgxClwMBnVf5KvHFacmO4ZXamURDjScP1ZG32WKcVceXx771bmxDkM"
         },
         {
+          "url": "https://www.rferl.org/a/zelenskyy-us-floated-trading-donbas-for-nato-membership/33898583.html",
+          "title": "Zelenskyy: US Floated Trading Donbas For NATO Membership",
+          "publisher": "Radio Free Europe/Radio Liberty",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcJqBDnQwPEG4vUK5C47TLIIZ3nwT_k_ZoQIfMqhW4absbgiy7A919K_HArbc"
+        },
+        {
           "url": "https://apnews.com/article/russia-ukraine-war-nato-us-zelenskyy-f9a8629626c087424f05adc85d127780",
           "title": "Zelenskyy says a new European security framework floated by US could benefit Putin",
           "publisher": "AP News",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3zSIlF4G63RjDHvHgFYty7iR8PuzhTW5mI0g1eRQOhopf6CmuT_KbN5pIeWk"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/14/three-killed-in-russia-as-ukraine-claims-us-floated-nato-membership-option",
-          "title": "Three killed in Russia as Ukraine claims US floated NATO membership option",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFpTBTpS_2Lbm5w5L619PPGGkJzCyRHE7y_PKf4nsNeXzGgt3lcCvAZxt6uCc"
         }
       ]
     },
@@ -83,7 +293,7 @@
       "related_news_urls": [
         "https://www.gp.se/nyheter/varlden/iran-tankrar-har-gatt-pa-minor-i-hormuzsundet.4dee2663-4c3f-5ec9-a02a-c441d9eff83a",
         "https://www.hn.se/nyheter/falkenberg/strombergs-ost-delikatesser-ateruppstar-efter-20-ar.daf31b07-834a-5c19-b1c6-d104bee75155",
-        "https://www.alingsastidning.se/sport/bowling/team-alingsas-kryssade-pa-bortaplan-mot-ikw-koping.896618f9-8ca6-5900-8043-c2f62c2251d7"
+        "https://www.ttela.se/sport/efter-derbyt-har-melly-sarri-lart-sig-allt-om-bandy.6d072335-c737-5761-866c-954d687dcda8"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkWWCkIINVO6Emrxaekdqt-qptijokvWWrBMivtPv1hf1fXV9oQHjj5ddL-vU",
       "image_credit": "Göteborgs-Posten",
@@ -103,11 +313,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMqxKeYWuOCFnxv3gbpLxGeICxkuF_rL2XSYoiCkb29TlG0yQctVWjZpHkoLc"
         },
         {
-          "url": "https://www.alingsastidning.se/sport/bowling/team-alingsas-kryssade-pa-bortaplan-mot-ikw-koping.896618f9-8ca6-5900-8043-c2f62c2251d7",
-          "title": "Team Alingsås kryssade på bortaplan mot IKW/Köping",
-          "publisher": "Alingsås Tidning",
+          "url": "https://www.ttela.se/sport/efter-derbyt-har-melly-sarri-lart-sig-allt-om-bandy.6d072335-c737-5761-866c-954d687dcda8",
+          "title": "Efter heta derbyt: Har Melly lärt sig allt om bandy?",
+          "publisher": "TTELA",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkhQC35-Q-x_C70AMkZZjjeFbPIS2OEKSG1vtcnswyuXqsqzRvlO-D8faWBdQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQr8z9z94B2bZJ-FXefciv7bBHDhNwRKBn7y1uONhwcz-QDO2gB39e1uLrWRJo"
         }
       ]
     },
@@ -143,216 +353,6 @@
           "publisher": "WCYB",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLPrjlr1mcHoj8H-tstuYI5tmoMNqRkk1EXHWX77hBJbx8VANY2EyoK6dQENI"
-        }
-      ]
-    },
-    {
-      "query": "kate middleton",
-      "approx_searches": "100+",
-      "published_at": "2026-11-14T12:30:00Z",
-      "related_news_urls": [
-        "https://abcnews.com/GMA/Culture/kate-middleton-announces-return-annual-christmas-carol-service/story?id=138108847",
-        "https://people.com/kate-middleton-announces-return-christmas-carol-concert-reveals-theme-12252611",
-        "https://www.the-independent.com/news/uk/home-news/princess-kate-together-at-christmas-2026-b3084395.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD1zidtaMhdHpLixFk0_RusmjkBs_fwCbjS8HHp5MFoGnitxigp2ceTjaCi7Y",
-      "image_credit": "ABC News - Breaking News, Latest News and Videos",
-      "news": [
-        {
-          "url": "https://abcnews.com/GMA/Culture/kate-middleton-announces-return-annual-christmas-carol-service/story?id=138108847",
-          "title": "Kate Middleton announces return of her annual Christmas carol service",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD1zidtaMhdHpLixFk0_RusmjkBs_fwCbjS8HHp5MFoGnitxigp2ceTjaCi7Y"
-        },
-        {
-          "url": "https://people.com/kate-middleton-announces-return-christmas-carol-concert-reveals-theme-12252611",
-          "title": "Kate Middleton Announces Return of Her Christmas Carol Concert and Reveals This Year’s Theme",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgEAFgqDTPBHT62_jTv6bghkgd53FXQX0wUwEbJR3x1l9-i72yrGO6VfLT4lM"
-        },
-        {
-          "url": "https://www.the-independent.com/news/uk/home-news/princess-kate-together-at-christmas-2026-b3084395.html",
-          "title": "Details confirmed for Princess Kate’s 2026 Together At Christmas carol service",
-          "publisher": "The Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ36MIHSnPrhSX86RLQBdTEOrhVbfEeoQN_-E05cfwD1j3-jciDNkjjDHe7Bh8"
-        }
-      ]
-    },
-    {
-      "query": "st thomas aquinas football",
-      "approx_searches": "100+",
-      "published_at": "2026-11-14T12:30:00Z",
-      "related_news_urls": [
-        "https://www.nfhsnetwork.com/events/st-thomas-aquinas-high-school-fort-lauderdale-fl/gam4a70c54e8f",
-        "https://www.maxpreps.com/news/RyWGC8nFw0GeIRHv9LZHOA/highlights%2C-recap-lakeland-stuns-no-1-st-thomas-aquinas-in-overtime-to-kick-off-inaugural-florida-open-division-playoffs.htm",
-        "https://www.theledger.com/story/sports/high-school/football/2026/11/13/polk-county-high-school-football-live-scores-from-week-1-of-playoffs/92759191007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRuie5w0NVss2eCVdoxyTa_elWNYRe94puq7fZd4oVrJU9Pthazoy5iusJRKw",
-      "image_credit": "NFHS Network",
-      "news": [
-        {
-          "url": "https://www.nfhsnetwork.com/events/st-thomas-aquinas-high-school-fort-lauderdale-fl/gam4a70c54e8f",
-          "title": "Lakeland High School vs. St. Thomas Aquinas High School",
-          "publisher": "NFHS Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRuie5w0NVss2eCVdoxyTa_elWNYRe94puq7fZd4oVrJU9Pthazoy5iusJRKw"
-        },
-        {
-          "url": "https://www.maxpreps.com/news/RyWGC8nFw0GeIRHv9LZHOA/highlights%2C-recap-lakeland-stuns-no-1-st-thomas-aquinas-in-overtime-to-kick-off-inaugural-florida-open-division-playoffs.htm",
-          "title": "Highlights, recap: Lakeland stuns No. 1 St. Thomas Aquinas in overtime to kick off inaugural Florida Open Division playoffs",
-          "publisher": "MaxPreps",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwiWKR_zn3f7Rw70RyNafZoLTQ3xFyLEnJbkzJHk60lQQnch296FnQQyE0JQo"
-        },
-        {
-          "url": "https://www.theledger.com/story/sports/high-school/football/2026/11/13/polk-county-high-school-football-live-scores-from-week-1-of-playoffs/92759191007/",
-          "title": "Live scoreboard: Keep up with Polk County high school football playoff games",
-          "publisher": "Lakeland Ledger",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Ao8aNwJ7kh8CN76GE9g8YoSJy3KODyy6fdAnnp875fbqaholP9-rw3_gAys"
-        }
-      ]
-    },
-    {
-      "query": "perth wildcats",
-      "approx_searches": "100+",
-      "published_at": "2026-11-14T12:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nbl/story/_/id/50460736/nbl-brandon-knight-gritty-perth-wildcats-win-tasmania-jackjumpers",
-        "https://www.nbl.com.au/news/jackjumpers-injury-crisis-kody-stattmann-scott-roth",
-        "https://www.foxsports.com.au/en-AU/news/basketball/brandon-knight-starred-in-his-return-as-perth-ended-a-four-game-losing-streak-while-scott-roth-praised-tasmanias-resilience-despite-another-injury-setback/1ihynbeiy3v8815wn6kw4ipw9x"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSk1v0HTmLsVztdf2m3KMvN--J27cb3GRZfLppxaw1FE3o1WR-RkxYzpCw8emk",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nbl/story/_/id/50460736/nbl-brandon-knight-gritty-perth-wildcats-win-tasmania-jackjumpers",
-          "title": "NBL: Big night for Knight in gritty Perth win over Tasmania",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSk1v0HTmLsVztdf2m3KMvN--J27cb3GRZfLppxaw1FE3o1WR-RkxYzpCw8emk"
-        },
-        {
-          "url": "https://www.nbl.com.au/news/jackjumpers-injury-crisis-kody-stattmann-scott-roth",
-          "title": "Roth on his stretched JackJumpers: ‘Bit scary’",
-          "publisher": "NBL",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQyELTApZYnFflyynlHeCID2n-pu4kTwy4SFVGhV79Y-zzgiSQbMIaYwDfNSpM"
-        },
-        {
-          "url": "https://www.foxsports.com.au/en-AU/news/basketball/brandon-knight-starred-in-his-return-as-perth-ended-a-four-game-losing-streak-while-scott-roth-praised-tasmanias-resilience-despite-another-injury-setback/1ihynbeiy3v8815wn6kw4ipw9x",
-          "title": "Wildcats snap losing streak as NBA veteran stars, injury-hit JackJumpers fall short",
-          "publisher": "Fox Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIM020SHXfmhabioOtOZ2umQxxeRTnpXF-1jBc3VQCUv1rFwYjlaWqG8LWXzA"
-        }
-      ]
-    },
-    {
-      "query": "taylor fritz",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-14T12:20:00Z",
-      "related_news_urls": [
-        "https://www.bleachernation.com/picks/2026/11/12/fritz-vs-musetti-prediction-at-the-stockholm-open-friday-november-13/",
-        "https://www.tennisnerd.net/betting-blog/atp-stockholm-2026-final-prediction-taylor-fritz-vs-thiago-agustin-tirante/70667",
-        "https://lastwordonsports.com/tennis/2026/11/12/atp-stockholm-semifinal-predictions-fritz-musetti/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbAZTkKZicCGQVRBpv-4sN5snVrL4aZHMr6vo2pOZoghHQFfkTd6d60o8i_KY",
-      "image_credit": "Bleacher Nation",
-      "news": [
-        {
-          "url": "https://www.bleachernation.com/picks/2026/11/12/fritz-vs-musetti-prediction-at-the-stockholm-open-friday-november-13/",
-          "title": "Fritz vs. Musetti Prediction at the Stockholm Open – Friday, November 13",
-          "publisher": "Bleacher Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbAZTkKZicCGQVRBpv-4sN5snVrL4aZHMr6vo2pOZoghHQFfkTd6d60o8i_KY"
-        },
-        {
-          "url": "https://www.tennisnerd.net/betting-blog/atp-stockholm-2026-final-prediction-taylor-fritz-vs-thiago-agustin-tirante/70667",
-          "title": "ATP Stockholm 2026 Final Prediction – Taylor Fritz vs Thiago Agustin Tirante",
-          "publisher": "Tennisnerd",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROjLpO5bkeFe3wUh-kZ5Zkd5hFPtyG-xVlLRiAGUBh3IakgxGmsAPa4kViAjw"
-        },
-        {
-          "url": "https://lastwordonsports.com/tennis/2026/11/12/atp-stockholm-semifinal-predictions-fritz-musetti/",
-          "title": "ATP Stockholm Semifinal Predictions Including Taylor Fritz vs Lorenzo Musetti",
-          "publisher": "Last Word On Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwuiELka_M2CW84KV9dK5-hUMmLKsA5yVLJZHBcwip9g7usCYHLAenqNNYtek"
-        }
-      ]
-    },
-    {
-      "query": "caitlin cunningham uss michael murphy relieved",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T12:10:00Z",
-      "related_news_urls": [
-        "https://thehill.com/policy/defense/6219546-cunningham-relieved-uss-michael-murphy/",
-        "https://www.pbs.org/newshour/politics/navy-has-quietly-fired-some-commanders-and-other-officials-drawing-congressional-pushback",
-        "https://www.stripes.com/branches/navy/2026-11-13/uss-south-dakota-command-team-fired-23453651.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvRaLMNxmiOBKJ3kUoJWEV3jXEJlJgazOb6IFJ67e9MuOdUTcPbIIylzY_15I",
-      "image_credit": "The Hill",
-      "news": [
-        {
-          "url": "https://thehill.com/policy/defense/6219546-cunningham-relieved-uss-michael-murphy/",
-          "title": "Navy removed naval destroyer commander deployed to Middle East",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvRaLMNxmiOBKJ3kUoJWEV3jXEJlJgazOb6IFJ67e9MuOdUTcPbIIylzY_15I"
-        },
-        {
-          "url": "https://www.pbs.org/newshour/politics/navy-has-quietly-fired-some-commanders-and-other-officials-drawing-congressional-pushback",
-          "title": "Navy has quietly fired some commanders and other officials, drawing congressional pushback",
-          "publisher": "PBS",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtLPsb29f-JNgd1hwy-8s1BYdZ7HhbJVTQu0qBCQl41wzxHEzT9oDF61Mn2GA"
-        },
-        {
-          "url": "https://www.stripes.com/branches/navy/2026-11-13/uss-south-dakota-command-team-fired-23453651.html",
-          "title": "Lawmakers demand answers after leaders of USS South Dakota relieved of command",
-          "publisher": "Stars and Stripes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxDwdfRNLTXRwWECNNIAKLXIqBSubDI4P5MOPRjTE5zB2obxEWnh6lo1blh1Y"
-        }
-      ]
-    },
-    {
-      "query": "lendeborg",
-      "approx_searches": "100+",
-      "published_at": "2026-11-14T12:10:00Z",
-      "related_news_urls": [
-        "https://www.nba.com/news/kia-rookie-ladder-november-11-2026",
-        "https://www.wsj.com/sports/basketball/yaxel-lendeborg-warriors-curry-174eda28",
-        "https://sports.yahoo.com/videos/yaxel-lendeborg-brandin-podziemski-function-102719308.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxMhum203fssP1C8b_GdY_KHyeB-eo_s-qrBs0L6rBMMXdi-aBEjm-ynjvKeA",
-      "image_credit": "NBA.com",
-      "news": [
-        {
-          "url": "https://www.nba.com/news/kia-rookie-ladder-november-11-2026",
-          "title": "Kia Rookie Ladder: Yaxel Lendeborg climbs to No. 1 in latest Top 10",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxMhum203fssP1C8b_GdY_KHyeB-eo_s-qrBs0L6rBMMXdi-aBEjm-ynjvKeA"
-        },
-        {
-          "url": "https://www.wsj.com/sports/basketball/yaxel-lendeborg-warriors-curry-174eda28",
-          "title": "He Quit Basketball to Work in a Warehouse. Now He’s the NBA’s Newest Star.",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLYJx43WOtUKXtLZmeDox48EMe3Ukr4oHzQZgU5cr6DKcgvOyTqGAVGZm6ZGo"
-        },
-        {
-          "url": "https://sports.yahoo.com/videos/yaxel-lendeborg-brandin-podziemski-function-102719308.html",
-          "title": "How Yaxel Lendeborg, Brandin Podziemski will function with Steph Curry out",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ52l_XjdqtBCOW_jWos8zOdbkAU4uxHKPTxo4ioaKdMMld0fEKdLKsvNsRS5I"
         }
       ]
     }
