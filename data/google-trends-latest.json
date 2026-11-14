@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T16:01:31.539326Z",
+  "checked_at": "2026-11-14T16:31:02.440096Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "rodeo",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T15:30:00Z",
-      "related_news_urls": [
-        "https://www.si.com/fannation/rodeo/news/champions-claim-12000-wins-on-opening-night-hondo-rodeo-fest",
-        "https://www.abc15.com/entertainment/events/things-to-do-phoenix-pizza-festival-hondo-rodeo-fest-sumo-sushi-and-more",
-        "https://www.nhonews.com/news/navajo-ropers-erich-rogers-james-arviso-head-to-hondo-rodeo-fest/article_97c2892f-596e-42cf-bf20-9ed7078d72e8.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNEVPlQ4r4YpNErkjeCW5XDJKT7gjdy2PSyECYddR6lr1931ZciCdy1IfwTVo",
-      "image_credit": "Sports Illustrated",
-      "news": [
-        {
-          "url": "https://www.si.com/fannation/rodeo/news/champions-claim-12000-wins-on-opening-night-hondo-rodeo-fest",
-          "title": "Champions Claim $12,000 Wins on Opening Night of Hondo Rodeo Fest",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNEVPlQ4r4YpNErkjeCW5XDJKT7gjdy2PSyECYddR6lr1931ZciCdy1IfwTVo"
-        },
-        {
-          "url": "https://www.abc15.com/entertainment/events/things-to-do-phoenix-pizza-festival-hondo-rodeo-fest-sumo-sushi-and-more",
-          "title": "Things to do: Phoenix Pizza Festival, Hondo Rodeo Fest, Sumo + Sushi and more",
-          "publisher": "ABC15 Arizona",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqHGabDFYED3h3ZCtjOprPSc-Y5HnAuhPAejTgnAyg7sxAsWLf_ZlfU1zXfXU"
-        },
-        {
-          "url": "https://www.nhonews.com/news/navajo-ropers-erich-rogers-james-arviso-head-to-hondo-rodeo-fest/article_97c2892f-596e-42cf-bf20-9ed7078d72e8.html",
-          "title": "Navajo ropers Erich Rogers, James Arviso head to Hondo Rodeo Fest",
-          "publisher": "Navajo-Hopi Observer",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpqT5Ru76OTIirpj9RJ82Iwb3sl2YWKR_LWdYTfnJfPDVavbvj_GkZuLT8DHg"
-        }
-      ]
-    },
-    {
-      "query": "husker football schedule",
+      "query": "noruega - gales",
       "approx_searches": "2000+",
-      "published_at": "2026-11-14T15:30:00Z",
+      "published_at": "2026-11-14T16:10:00Z",
       "related_news_urls": [
-        "https://www.ncaa.com/live-updates/wrestling-men/d1/no-2-oklahoma-state-overpowers-no-3-nebraska-27-6-stillwater",
-        "https://huskers.com/news/2026/11/13/no-3-nebraska-falls-to-no-2-oklahoma-state",
-        "https://okstate.com/news/2026/11/12/cowboy-wrestling-set-to-host-no-3-nebraska"
+        "https://www.sportytrader.es/pronosticos/noruega-gales-386579/",
+        "https://es-us.noticias.yahoo.com/deportes/estadio-ullevaal-m%C3%A1xima-alerta-caos-165147057.html",
+        "https://onefootball.com/es/noticias/noruega-gales-un-duelo-sin-margen-de-error-para-los-vikingos-y-dragones-rojos-43774960"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRA2K2byflIsjnJsVHksIpxWvwoRjMBA05MiEw6kJ9gxAboxppt5EjxTyH63Wk",
-      "image_credit": "NCAA.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsI-jsrYFu4YusqWhbUZAuj5cyyCa5JsYtIZeiJfbhkNuG3eJR7wW-RH4aoZo",
+      "image_credit": "SportyTrader",
       "news": [
         {
-          "url": "https://www.ncaa.com/live-updates/wrestling-men/d1/no-2-oklahoma-state-overpowers-no-3-nebraska-27-6-stillwater",
-          "title": "No. 2 Oklahoma State overpowers No. 3 Nebraska 27-6 in Stillwater",
-          "publisher": "NCAA.com",
+          "url": "https://www.sportytrader.es/pronosticos/noruega-gales-386579/",
+          "title": "Pronóstico Noruega - Gales - Nations League",
+          "publisher": "SportyTrader",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRA2K2byflIsjnJsVHksIpxWvwoRjMBA05MiEw6kJ9gxAboxppt5EjxTyH63Wk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsI-jsrYFu4YusqWhbUZAuj5cyyCa5JsYtIZeiJfbhkNuG3eJR7wW-RH4aoZo"
         },
         {
-          "url": "https://huskers.com/news/2026/11/13/no-3-nebraska-falls-to-no-2-oklahoma-state",
-          "title": "No. 3 Nebraska Falls to No. 2 Oklahoma State - University of Nebraska - Official Athletics Website",
-          "publisher": "huskers.com",
+          "url": "https://es-us.noticias.yahoo.com/deportes/estadio-ullevaal-m%C3%A1xima-alerta-caos-165147057.html",
+          "title": "El estadio Ullevaal, en máxima alerta por el caos provocado por la nieve que amenaza el decisivo duelo de Noruega contra Gales en la Liga de Naciones",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSY_02LVBdpcpNXKblL9cujEWQB4lYQijtIjiTVzUJIilB9jXLKP10tZCdn-mE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpihYUQLh6lubdATA-T4BxlzpSl9nmgk0p0EoKAUZs3WnslsurwRi4XHvGwng"
         },
         {
-          "url": "https://okstate.com/news/2026/11/12/cowboy-wrestling-set-to-host-no-3-nebraska",
-          "title": "Cowboy Wrestling set to host No. 3 Nebraska",
-          "publisher": "Oklahoma State University Athletics",
+          "url": "https://onefootball.com/es/noticias/noruega-gales-un-duelo-sin-margen-de-error-para-los-vikingos-y-dragones-rojos-43774960",
+          "title": "Noruega – Galés: Un duelo sin margen de error para los vikingos y dragones rojos",
+          "publisher": "OneFootball",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx8-Wxv3MKmTjNQHOtf8Tn1Xw-Cc7_On17DrSMHnevUPoJt0tYSltvAVtnJNQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhA-5JHNTtsHcCOOk4fljIjiqJWPqRhB0FHK0ZMYP8gDL0bbP4oT8g511Nw2M"
         }
       ]
     },
     {
-      "query": "uga game today",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T15:30:00Z",
-      "related_news_urls": [
-        "https://www.stltoday.com/sports/college/mizzou/article_d07f8819-b883-4f02-aee0-1d31e11cdea2.html",
-        "https://sports.yahoo.com/articles/college-football-27-sim-predicts-154314451.html",
-        "https://mutigers.com/news/2026/11/12/no-22-tigers-geared-up-for-road-test-at-no-1-georgia"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxq6WO6TsH7O-Do5mUiHqVlrp1BXK-7sHDB6aQJ3mr1LKAz8wxV4K49FAAYYs",
-      "image_credit": "STLtoday.com",
-      "news": [
-        {
-          "url": "https://www.stltoday.com/sports/college/mizzou/article_d07f8819-b883-4f02-aee0-1d31e11cdea2.html",
-          "title": "3 things to watch for when No. 22 Mizzou plays No. 1 Georgia",
-          "publisher": "STLtoday.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxq6WO6TsH7O-Do5mUiHqVlrp1BXK-7sHDB6aQJ3mr1LKAz8wxV4K49FAAYYs"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/college-football-27-sim-predicts-154314451.html",
-          "title": "College football 27 sim predicts Georgia-Missouri game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsH9pK3_mHhX5hpFAVnXgBU_ixX0LAzy1sfOCzTGLpDTWP_frpK1NxiNnGYNE"
-        },
-        {
-          "url": "https://mutigers.com/news/2026/11/12/no-22-tigers-geared-up-for-road-test-at-no-1-georgia",
-          "title": "No. 22 Tigers Geared Up for Road Test at No. 1 Georgia",
-          "publisher": "Mizzou Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR5UG0nuiQHdf3Gea9Gmhu3MhdMt1ZBaqTDvPo4pMeyq9HyLNoHpYRf6AIlw4"
-        }
-      ]
-    },
-    {
-      "query": "gio lopez",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T15:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/college-football/article/college-football-week-11-players-to-watch-can-wake-forests-gio-lopez-return-with-big-game-vs-smu-152303851.html",
-        "https://247sports.com/college/wake-forest/article/wake-forest-gets-good-news-on-initial-availability-report-ahead-of-smu-292582188/",
-        "https://www.themadisonrecord.com/2026/11/11/locals-can-help-heisman-trophy-hopeful-madison/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSflN1_Mwup4YYrdyU9MCQV_zxcEl0ZZKCR4QOcIAZrbrt2VPH3W5xzKfQ8GuU",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/college-football/article/college-football-week-11-players-to-watch-can-wake-forests-gio-lopez-return-with-big-game-vs-smu-152303851.html",
-          "title": "College football Week 11 players to watch: Can Wake Forest's Gio Lopez return with big game vs. SMU?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSflN1_Mwup4YYrdyU9MCQV_zxcEl0ZZKCR4QOcIAZrbrt2VPH3W5xzKfQ8GuU"
-        },
-        {
-          "url": "https://247sports.com/college/wake-forest/article/wake-forest-gets-good-news-on-initial-availability-report-ahead-of-smu-292582188/",
-          "title": "Wake Forest gets good news on initial availability report ahead of SMU",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsvzP-bZpih158tLXDcgUlaKP7R3yYDXRvyudTXnay6Ul_HYXWaeFIrTcYDDg"
-        },
-        {
-          "url": "https://www.themadisonrecord.com/2026/11/11/locals-can-help-heisman-trophy-hopeful-madison/",
-          "title": "Locals can help Heisman Trophy hopeful from Madison",
-          "publisher": "Madison Record",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZOwe0-BbkRPLilLFAKqoo_DXGQbotOLyvynFz7tKHD1cTpMJhQshEMFc9Rig"
-        }
-      ]
-    },
-    {
-      "query": "ian mcnabb",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T15:20:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/c52e8kvwd7d1o",
-        "https://www.nine.com.au/entertainment/celebrity/ian-mcnabb-tour-dates-cancelled-after-comments-defending-convicted-rapist-russell-brand-20261112-p61dj9.html",
-        "https://www.mercurynews.com/2026/11/12/icicle-works-ian-mcnabb-russell-brand-shows-canceled/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxOm_BYrK2q9dO7QsVfTkOAReb6V0s5KjDfcMREnpNzTmOB1zMqHnaGqpmmas",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/c52e8kvwd7d1o",
-          "title": "Singer's Hall of Fame induction axed over Russell Brand comments",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxOm_BYrK2q9dO7QsVfTkOAReb6V0s5KjDfcMREnpNzTmOB1zMqHnaGqpmmas"
-        },
-        {
-          "url": "https://www.nine.com.au/entertainment/celebrity/ian-mcnabb-tour-dates-cancelled-after-comments-defending-convicted-rapist-russell-brand-20261112-p61dj9.html",
-          "title": "’80s singer’s tour cancelled after ‘disgusting’ comments defending Russell Brand",
-          "publisher": "Nine.com.au",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNKMS6CGheMwxZXLMe2v3AU4EJ4aW3I5w-5RplEQgZW1LfXHFwULrojQOV9mg"
-        },
-        {
-          "url": "https://www.mercurynews.com/2026/11/12/icicle-works-ian-mcnabb-russell-brand-shows-canceled/",
-          "title": "After British singer defends Russell Brand, his shows are canceled",
-          "publisher": "The Mercury News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEXDAb07r7zQC9enilOOwHfxl2B6JZONugURzLjnXGWne6QUCJCHy0Fv10pC8"
-        }
-      ]
-    },
-    {
-      "query": "jake dickert",
+      "query": "syracuse vs nc state",
       "approx_searches": "2000+",
-      "published_at": "2026-11-14T15:10:00Z",
+      "published_at": "2026-11-14T16:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50463776/wake-forest-awards-second-year-coach-dickert-extension",
-        "https://www.cbssports.com/college-football/news/jake-dickert-wake-forest-new-contract-coaching-carousel/",
-        "https://sports.yahoo.com/articles/fsu-head-coach-candidate-jake-191348916.html"
+        "https://247sports.com/college/north-carolina-state/article/pack-power-predictions-for-nc-state-vs-syracuse-football-in-week-11-292661374/",
+        "https://www.syracuse.com/tv/2026/11/how-to-watch-syracuse-vs-north-carolina-state-football-free-stream-today.html",
+        "https://www.localsyr.com/orange-nation/keys-to-victory-su-vs-nc-state/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRglw2ND6rGqF_P1Zeib89_lj24hUWZXJVlLppZk66nRYVYw8cplwoaMxhq700",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50463776/wake-forest-awards-second-year-coach-dickert-extension",
-          "title": "Wake Forest awards second-year coach Dickert with extension",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRglw2ND6rGqF_P1Zeib89_lj24hUWZXJVlLppZk66nRYVYw8cplwoaMxhq700"
-        },
-        {
-          "url": "https://www.cbssports.com/college-football/news/jake-dickert-wake-forest-new-contract-coaching-carousel/",
-          "title": "Jake Dickert agrees to new Wake Forest contract, rebuffing coaching carousel interest",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSgajsShDMzn6l5HaBu9cm2djWsE3sQ9rIv0SYZLMcWhOlh_08-t4qJrQ3IXo"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/fsu-head-coach-candidate-jake-191348916.html",
-          "title": "FSU head coach candidate Jake Dickert discussing contract extension",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRydi4tbDCJrtRv4uMtgW0k0zMXKxbylbeeZ78waKcnSFjqovLtA70AEGN-VZs"
-        }
-      ]
-    },
-    {
-      "query": "wake forest football",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-14T15:10:00Z",
-      "related_news_urls": [
-        "https://www.foxsports.com/stories/college-football/how-to-watch-wake-forest-vs-smu-tv-channel-live-stream-time-nov-14-2026",
-        "https://sports.yahoo.com/articles/smu-vs-wake-forest-watch-131705891.html",
-        "https://nypost.com/2026/11/14/betting/wake-forest-vs-smu-odds-picks-predictions-best-bets-for-saturday-afternoon-acc-battle/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe4yKUm5BHti0zCOwndWAVejhMW-4sKBcE9OPXtbH9fVmnRpitUdUJHYG47UM",
-      "image_credit": "FOX Sports",
-      "news": [
-        {
-          "url": "https://www.foxsports.com/stories/college-football/how-to-watch-wake-forest-vs-smu-tv-channel-live-stream-time-nov-14-2026",
-          "title": "How to Watch Wake Forest vs. SMU: TV Channel, Live Stream, Time",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe4yKUm5BHti0zCOwndWAVejhMW-4sKBcE9OPXtbH9fVmnRpitUdUJHYG47UM"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/smu-vs-wake-forest-watch-131705891.html",
-          "title": "SMU vs. Wake Forest: How To Watch Key ACC Showdown",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ859wKQaetnF3k96qjUsRpAe7E93U35rkt2Fyt3sQK_u0GnouzkVtOjzwU_j0"
-        },
-        {
-          "url": "https://nypost.com/2026/11/14/betting/wake-forest-vs-smu-odds-picks-predictions-best-bets-for-saturday-afternoon-acc-battle/",
-          "title": "Wake Forest vs. SMU odds, picks, predictions: Best bets for Saturday afternoon ACC battle",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZiMq2azdSyWZpdxLTaHhKaHvb_BOzacUPJSENlKAu8wwSVUIdmNSbuvvyiWg"
-        }
-      ]
-    },
-    {
-      "query": "rockstar games gta vi",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-14T15:10:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html",
-        "https://www.cbsnews.com/miami/video/gta-6-tops-1-billion-in-preorders-ahead-of-nov-19-release/",
-        "https://www.theguardian.com/games/2026/nov/11/a-world-of-its-own-inside-the-making-of-the-most-detailed-grand-theft-auto-yet"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHd3NeVzvt-oNvLnusokHIZ-Zb9oL682xyGIb4UF05rnZ0hudTW3XGqB38g94",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html",
-          "title": "How Rockstar's 'GTA VI' release could reshape gaming, streaming and even paid time off",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHd3NeVzvt-oNvLnusokHIZ-Zb9oL682xyGIb4UF05rnZ0hudTW3XGqB38g94"
-        },
-        {
-          "url": "https://www.cbsnews.com/miami/video/gta-6-tops-1-billion-in-preorders-ahead-of-nov-19-release/",
-          "title": "GTA 6 tops $1 billion in preorders ahead of Nov. 19 release",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIl9fLtrDCc5O3Ac_MiV_99vsumtp5SYxdKX32edamFEja7wYITiq4L1zJl1M"
-        },
-        {
-          "url": "https://www.theguardian.com/games/2026/nov/11/a-world-of-its-own-inside-the-making-of-the-most-detailed-grand-theft-auto-yet",
-          "title": "How years of research built Grand Theft Auto VI’s obsessively detailed world",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVd3QgaPZG3Y1LdVVj04yOVSu_nPxNyK6T4ECwGx4ylpikgRKK9UjTZiEGvXA"
-        }
-      ]
-    },
-    {
-      "query": "daniel altmaier",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T15:00:00Z",
-      "related_news_urls": [
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/0f09d586-8944-4057-a570-a7e911c36400/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/0eb2fd52-9630-4d60-a733-4a89cc198822/",
-        "https://robinhood.com/us/en/prediction-markets/tennis/events/2b46a0f9-350b-455f-8f7e-233f73c28789/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsYXSgfkOSJugZ9bXMZNulEN11fiPxeXvtcXaGfgzP8G5T6YiIoIC5bE22gfQ",
-      "image_credit": "Robinhood",
-      "news": [
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/0f09d586-8944-4057-a570-a7e911c36400/",
-          "title": "November 15, 2026: Taro Daniel vs Daniel Michalski Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsYXSgfkOSJugZ9bXMZNulEN11fiPxeXvtcXaGfgzP8G5T6YiIoIC5bE22gfQ"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/0eb2fd52-9630-4d60-a733-4a89cc198822/",
-          "title": "November 12, 2026: Juncheng Shang vs Dane Sweeny Tennis Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLCUE43Q2EVwkzTDgDMFIbJtiVmCl8H3ZXeE_oVmIG97tuZ0ge5cwQf8Iftpg"
-        },
-        {
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/2b46a0f9-350b-455f-8f7e-233f73c28789/",
-          "title": "November 12, 2026: Ognjen Milic vs Rei Sakamoto Prediction Market",
-          "publisher": "Robinhood",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMSPWvBy3eL50zljSpmr-W6nFaE1pqnp-6dnGc8iGhpDABRS9LMl8FUzOyBX8"
-        }
-      ]
-    },
-    {
-      "query": "ian johnson",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T14:50:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/fresno-state/longformarticle/fresno-state-at-texas-state-preview-predictions-barkboard-and-friends-betting--292637650/",
-        "https://sicscore.com/news/steve-fezzik-free-cfb-pick-of-the-week-week-11",
-        "https://www.mwcconnection.com/pac-12-football/95847/2026-pac-12-week-11-game-previews-game-time-tv-schedule-odds-predictions"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqK7U8ZQ7hoxoRVlmK1oZc75_cygaT6mbOLJ4jHUeCUew6_xEKfzMcK9N1bzo",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3AwZdkvezWTMko-ImBq3jk_92Cr8qY5-uu7hSccwzMS_O19E4kyIBUqfULUo",
       "image_credit": "247Sports",
       "news": [
         {
-          "url": "https://247sports.com/college/fresno-state/longformarticle/fresno-state-at-texas-state-preview-predictions-barkboard-and-friends-betting--292637650/",
-          "title": "BarkBoard and Friends Predictions: Fresno State at Texas State",
+          "url": "https://247sports.com/college/north-carolina-state/article/pack-power-predictions-for-nc-state-vs-syracuse-football-in-week-11-292661374/",
+          "title": "Pack Power Predictions for NC State vs. Syracuse football in Week 11",
           "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqK7U8ZQ7hoxoRVlmK1oZc75_cygaT6mbOLJ4jHUeCUew6_xEKfzMcK9N1bzo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3AwZdkvezWTMko-ImBq3jk_92Cr8qY5-uu7hSccwzMS_O19E4kyIBUqfULUo"
         },
         {
-          "url": "https://sicscore.com/news/steve-fezzik-free-cfb-pick-of-the-week-week-11",
-          "title": "Steve Fezzik Free CFB Pick of the Week - Week 11",
-          "publisher": "Sports Injury Central",
+          "url": "https://www.syracuse.com/tv/2026/11/how-to-watch-syracuse-vs-north-carolina-state-football-free-stream-today.html",
+          "title": "How to watch Syracuse vs. North Carolina State football free stream today",
+          "publisher": "Syracuse.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROEFzZUtD18MC0olWOSpqCg2O2nWa8xg5V49GU45R886Qiyz21w0nbekq9KCQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxFQqWiZXpvCoDMtgrnnwmEopd2AvbQktwLU--8XMu8JpTAmCaGvinUHYa7yc"
         },
         {
-          "url": "https://www.mwcconnection.com/pac-12-football/95847/2026-pac-12-week-11-game-previews-game-time-tv-schedule-odds-predictions",
-          "title": "2026 Pac-12 Week 11 Game Previews: Game Time, TV Schedule, Odds, Predictions",
-          "publisher": "Mountain West Connection",
+          "url": "https://www.localsyr.com/orange-nation/keys-to-victory-su-vs-nc-state/",
+          "title": "Keys to Victory: SU vs. NC State",
+          "publisher": "WSYR",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrxkWlR_e8VIqVatdCaa4HsJ_asOndhqkIIXPKWcSXUorkzQTDj6Q2jR80ues"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9LU2v30woqkFr-NqjazSwPbUzVaLj7yd-fJh3ipgdOUvxY41LZsIy_SnHHbI"
+        }
+      ]
+    },
+    {
+      "query": "james madison vs uconn",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T16:10:00Z",
+      "related_news_urls": [
+        "https://www.courant.com/2026/11/13/uconn-football-faces-another-challenge-with-james-madison-visiting-saturday-how-to-watch/",
+        "https://sports.yahoo.com/articles/jmu-vs-uconn-prediction-pick-101321904.html",
+        "https://www.sportsgambler.com/betting-tips/ncaaf/james-madison-dukes-vs-uconn-huskies-prediction-odds-2026-11-14/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQoULJ9A0eRF4dfL3MJcygw1UfyPdUHL4m_ZhLzIjAonheAsSMnTKJ56HJiEw",
+      "image_credit": "Hartford Courant",
+      "news": [
+        {
+          "url": "https://www.courant.com/2026/11/13/uconn-football-faces-another-challenge-with-james-madison-visiting-saturday-how-to-watch/",
+          "title": "UConn football faces another challenge with James Madison visiting Saturday: How to watch",
+          "publisher": "Hartford Courant",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQoULJ9A0eRF4dfL3MJcygw1UfyPdUHL4m_ZhLzIjAonheAsSMnTKJ56HJiEw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/jmu-vs-uconn-prediction-pick-101321904.html",
+          "title": "JMU vs UConn Prediction, Pick, NCAAF Odds for Saturday, Nov. 14",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-RorPuY9LPyW2_CTHfKpjk8hoTolTaJBa0WQX4JsUaufbMtghR4bMXqTQlcg"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/ncaaf/james-madison-dukes-vs-uconn-huskies-prediction-odds-2026-11-14/",
+          "title": "James Madison vs UConn Prediction, Picks & Odds | 14 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRS2TFT-SCQ7_VYEX1WO_fnCL3T7ysdJWupxfl0HLLYYTcYmRjR2z4N10eCs0"
+        }
+      ]
+    },
+    {
+      "query": "georgia vs hungary",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T16:10:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cmewewjlqq4pt",
+        "https://insights.betfred.com/football/georgia-vs-hungary-prediction-betting-tips-saturday-14-november-2026/",
+        "https://1tv.ge/lang/en/news/nations-league-georgia-vs-hungary-live-broadcast-on-gpb-first-channel-1tvsport/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cmewewjlqq4pt",
+          "title": "Georgia vs Hungary: UEFA Nations League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+        },
+        {
+          "url": "https://insights.betfred.com/football/georgia-vs-hungary-prediction-betting-tips-saturday-14-november-2026/",
+          "title": "Georgia vs Hungary Prediction, Betting Tips, Team News - 14 November 2026",
+          "publisher": "Betfred Insights",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSe-KnakE7Up5qsrbmJ-UqqhN0t6oAiUFzsz8Q1pe_lMN90II5LKZmPwetv9BA"
+        },
+        {
+          "url": "https://1tv.ge/lang/en/news/nations-league-georgia-vs-hungary-live-broadcast-on-gpb-first-channel-1tvsport/",
+          "title": "Nations League: Georgia vs Hungary, live broadcast on GPB First Channel #1TVSPORT",
+          "publisher": "1TV.GE",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP5eL3-s3Q-WyCa11TuCAt_7gC3YAV7TUdRIw_tsBaOpgHWmcp0VSv-V7_pco"
+        }
+      ]
+    },
+    {
+      "query": "duke vs miami fl",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-14T16:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/game-thread-miami-hurricanes-vs-150839319.html",
+        "https://www.cbssports.com/betting/news/miami-duke-prediction-odds-game-time-2026-week-11-college-football-picks-best-bets/",
+        "https://www.miamiherald.com/sports/college/acc/university-of-miami/article318065536.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDEduJ5hKSa5KeTKKuhoR9eg8YA5J48m47qabdWRIvtxGQgm2IrUebF_WQD_A",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/game-thread-miami-hurricanes-vs-150839319.html",
+          "title": "GAME THREAD: Miami Hurricanes vs Duke Blue Devils",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDEduJ5hKSa5KeTKKuhoR9eg8YA5J48m47qabdWRIvtxGQgm2IrUebF_WQD_A"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/miami-duke-prediction-odds-game-time-2026-week-11-college-football-picks-best-bets/",
+          "title": "Miami vs. Duke prediction, odds, time: Week 11 college football picks by proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJfe8vRzVWFyebavh0S83lqPteFX0MHp86YYpq9AbjJDfeNdvgND263-Pi1bM"
+        },
+        {
+          "url": "https://www.miamiherald.com/sports/college/acc/university-of-miami/article318065536.html",
+          "title": "Live updates: No. 7 Miami Hurricanes vs. Duke Blue Devils",
+          "publisher": "Miami Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKyPoP32tWHim27sUmZDuKoMWemG_bepYHcIZframpLhPi9iQWJQUuwv5Tl1s"
+        }
+      ]
+    },
+    {
+      "query": "wisconsin vs maryland",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-14T16:00:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/wisconsin/longformarticle/all-out-blitz-maryland-wisconsin-badgers-football-2026-292670447/",
+        "https://www.jsonline.com/story/sports/college/uw/2026/11/13/sebastian-cheeks-will-miss-badgers-game-against-maryland-due-to-injury/92769160007/",
+        "https://www.buckys5thquarter.com/wisconsin-badgers-football/91646/wisconsin-badgers-football-news-best-case-worst-case-most-likely-scenarios-maryland-terrapins-luke-fickell"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTWN847d0H__k-9xn5z_Y7JYxWCXepacvuegYL2fomNaYYN45yKM5hWEA4JSY",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/wisconsin/longformarticle/all-out-blitz-maryland-wisconsin-badgers-football-2026-292670447/",
+          "title": "All-Out Blitz: Maryland",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTWN847d0H__k-9xn5z_Y7JYxWCXepacvuegYL2fomNaYYN45yKM5hWEA4JSY"
+        },
+        {
+          "url": "https://www.jsonline.com/story/sports/college/uw/2026/11/13/sebastian-cheeks-will-miss-badgers-game-against-maryland-due-to-injury/92769160007/",
+          "title": "Badgers to be without Sebastian Cheeks for game against Maryland",
+          "publisher": "Milwaukee Journal Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTH3GJnsA5j-oAaZ1CXZAjhjYz2hOEgwcagHN1u8qnuqCfxfd8b3b3aOiEFptk"
+        },
+        {
+          "url": "https://www.buckys5thquarter.com/wisconsin-badgers-football/91646/wisconsin-badgers-football-news-best-case-worst-case-most-likely-scenarios-maryland-terrapins-luke-fickell",
+          "title": "Wisconsin Football: Best Case, Worst Case, and Most Likely Scenarios vs. Maryland",
+          "publisher": "Bucky's 5th Quarter",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAYBly8sZMDRp-Da6KVt8exBdif0x31_Vv-Dr2pp8TO03-hkloU8Zf4A-VCj8"
+        }
+      ]
+    },
+    {
+      "query": "cincinnati vs iowa state",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-14T16:00:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/cincinnati/article/how-to-watch-and-staff-predictions-iowa-st-292655649/",
+        "https://sports.yahoo.com/articles/uc-bearcats-iowa-state-cyclones-140118473.html",
+        "https://cyclonefanatic.com/2026/11/staff-picks-cincinnati-at-iowa-state/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHllRbQrWImkSZfeAEj11bUiWDP-TU3EQjwSrLMGmh-zHJmv2wYa8MNpMiO2Y",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/cincinnati/article/how-to-watch-and-staff-predictions-iowa-st-292655649/",
+          "title": "How To Watch and Staff Predictions: Iowa St",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHllRbQrWImkSZfeAEj11bUiWDP-TU3EQjwSrLMGmh-zHJmv2wYa8MNpMiO2Y"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/uc-bearcats-iowa-state-cyclones-140118473.html",
+          "title": "UC Bearcats at Iowa State Cyclones live updates, score, highlights",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJf0bkDbErRZ77EYmjtTmOJNP6112M7vJ_w2LUhisyXEHmsOTIOYu3_d8mTCg"
+        },
+        {
+          "url": "https://cyclonefanatic.com/2026/11/staff-picks-cincinnati-at-iowa-state/",
+          "title": "Staff Picks: Cincinnati at Iowa State",
+          "publisher": "Cyclone Fanatic",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUJ4niak5k4HDwyDnEyp5CSY9o3mrqFgK0N94bm9x7Ef2nivcQA-Vo4ENw9so"
+        }
+      ]
+    },
+    {
+      "query": "england vs japan",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T15:50:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/sport/live/2026/nov/14/england-v-japan-nations-championship-rugby-union-live",
+        "https://www.bbc.com/sport/rugby-union/articles/c5rmg2djmm1lo",
+        "https://www.skysports.com/rugby-union/news/13611936/england-respond-to-eddie-jones-mind-games-ahead-of-japan-match-in-nations-championship"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSh8Lv-r6AfXP87SvvPnwLwWsWwtKcpU0ZFNpLNVKdodZVs2c803Umr9ZVuzU",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/sport/live/2026/nov/14/england-v-japan-nations-championship-rugby-union-live",
+          "title": "England v Japan: Nations Championship rugby union – live",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSh8Lv-r6AfXP87SvvPnwLwWsWwtKcpU0ZFNpLNVKdodZVs2c803Umr9ZVuzU"
+        },
+        {
+          "url": "https://www.bbc.com/sport/rugby-union/articles/c5rmg2djmm1lo",
+          "title": "England v Japan: Max Ojomoh must marry talent and toughness - Steve Borthwick",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThCMe1EvPOVxCTC5zeWAn5_FI75P-OdJ5MRj6H8XzH_yWxOUEXnsg-DNQXs7g"
+        },
+        {
+          "url": "https://www.skysports.com/rugby-union/news/13611936/england-respond-to-eddie-jones-mind-games-ahead-of-japan-match-in-nations-championship",
+          "title": "England respond to Eddie Jones mind games ahead of Japan match in Nations Championship",
+          "publisher": "Sky Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAtpWgjN3Mt3KXw5a_chQ73D29DXw0_mMkrgCoS1Ih0jzYZwdIGkxhvLyIOhs"
+        }
+      ]
+    },
+    {
+      "query": "michigan vs oregon",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T15:50:00Z",
+      "related_news_urls": [
+        "https://www.oregonlive.com/ducks/2026/11/what-time-is-oregon-football-vs-michigan-today-tv-channel-streaming-how-to-watch-online.html",
+        "https://www.addictedtoquack.com/football/64954/oregon-ducks-football-duck-tape-film-analysis-of-michigan-football-2026",
+        "https://sports.yahoo.com/articles/watch-michigan-footballs-week-11-110006291.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSE169gX37VGwCIs2t7Yx9Ucjh1Xne9ehtd5x1V2IzTkE3xQJGf14na_g6UEro",
+      "image_credit": "OregonLive.com",
+      "news": [
+        {
+          "url": "https://www.oregonlive.com/ducks/2026/11/what-time-is-oregon-football-vs-michigan-today-tv-channel-streaming-how-to-watch-online.html",
+          "title": "What time is Oregon football vs. Michigan today? TV channel, streaming, how to watch online",
+          "publisher": "OregonLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSE169gX37VGwCIs2t7Yx9Ucjh1Xne9ehtd5x1V2IzTkE3xQJGf14na_g6UEro"
+        },
+        {
+          "url": "https://www.addictedtoquack.com/football/64954/oregon-ducks-football-duck-tape-film-analysis-of-michigan-football-2026",
+          "title": "Oregon Ducks Football: Duck Tape Film Analysis of Michigan Football 2026",
+          "publisher": "Addicted To Quack",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTznhi1MfYDOwehE7IvDPZ0Hgr9ndChpb7v1W-C3RVge2N8_503pOkYqbVc0bc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/watch-michigan-footballs-week-11-110006291.html",
+          "title": "How to Watch Michigan Football's Week 11 Game Against No. 16 Oregon",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSt_GAh3LSYts5QQWQZW1NrQMgasavF1bqOOWFd6PFlhaZEpxQQs6Is7PxTS5w"
+        }
+      ]
+    },
+    {
+      "query": "northwestern vs ohio state",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-14T15:40:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/ohio-state/article/pregame-observations-from-ohio-state-football-vs-northwestern-wildcats-292675118/",
+        "https://www.cbssports.com/betting/news/ohio-state-northwestern-odds-prediction-game-time-2026-week-11-college-football-picks-best-bets/",
+        "https://www.10tv.com/article/sports/football/ohio-state-football/ohio-state-northwestern-injury-report-2026/530-fd4a7b6f-e2f5-4995-ac8e-bb9f4a3925a3"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS77XKt0ngH2zoP1gY9uptGtsO57X5NMVtiffGtrtA_k1J2aIkDqjLN5_z4V2E",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/ohio-state/article/pregame-observations-from-ohio-state-football-vs-northwestern-wildcats-292675118/",
+          "title": "Pregame observations from Ohio State vs. Northwestern",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS77XKt0ngH2zoP1gY9uptGtsO57X5NMVtiffGtrtA_k1J2aIkDqjLN5_z4V2E"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/ohio-state-northwestern-odds-prediction-game-time-2026-week-11-college-football-picks-best-bets/",
+          "title": "Ohio State vs. Northwestern odds, prediction, time: Week 11 college football picks from proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxcmS_ScPK_WbGOceLkS0XfNtyvWTBhLFzIQ8nM47lJ-pCRJf32vZ8T6wrEAc"
+        },
+        {
+          "url": "https://www.10tv.com/article/sports/football/ohio-state-football/ohio-state-northwestern-injury-report-2026/530-fd4a7b6f-e2f5-4995-ac8e-bb9f4a3925a3",
+          "title": "Ohio State vs. Northwestern injury report: 11 Buckeyes out, including starting offensive lineman Luke Montgomery",
+          "publisher": "10TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScQlC_7ENU_i_hanraC2k6eZUqezU_PtmIiyGwFAzQIUy-kw93PZD1HsFaAuw"
         }
       ]
     }
