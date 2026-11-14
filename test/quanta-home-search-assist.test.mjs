@@ -30,3 +30,13 @@ test('the original Search button still owns submission and choices are finger-fr
  assert.match(css,/focus-visible/);
  assert.match(css,/max-width:420px/);
 });
+
+test('public homepage suggestions also include published original-site Quick Cards',async()=>{
+ const {TINYFISH_CARDS}=await import('../tinyfish-card-catalog.mjs');
+ const {suggestFeedSearch}=await import('../quanta-feed-search-assist.mjs');
+ const sourceBacked=suggestFeedSearch(Object.values(TINYFISH_CARDS),'burger king');
+ assert.equal(sourceBacked.find(card=>card.id==='burger-king')?.sourceUrl,'https://www.bk.com/');
+ const ui=load('quanta-home-search-assist.mjs');
+ assert.match(ui,/Object\.values\(TINYFISH_CARDS\)/);
+ assert.match(ui,/suggestFeedSearch\(HOME_SEARCH_CARDS,search\.value/);
+});
