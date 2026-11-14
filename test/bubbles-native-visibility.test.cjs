@@ -34,9 +34,10 @@ test('finger swipe scrolls native transcript while message composer stays anchor
  assert.match(site,/chatScroll\.scrollHeight-chatScroll\.scrollTop-chatScroll\.clientHeight<96/);
  assert.match(site,/typeof requestAnimationFrame==='function'/);
 });
-test('Bubbles 0.18 pairing stays in chat and options remain collapsed',()=>{
+test('Android pairing codes can be redeemed in chat while setup stays in Settings',()=>{
  assert.match(site,/Message Bubbles or paste a code/);
- assert.match(site,/chatScroll\.append\(ownerMode,linkBubbles,createOwnerCode,ownerCodeHelp,linkStatus,recorderStatus,recorderStop,(?:memoryHint,)?pairingCard,conversation,tools\)/);
+ assert.match(site,/chatScroll\.append\(ownerMode,recorderStatus,recorderStop,pairingCard,conversation,tools\)/);
+ assert.match(site,/pairing\.append\(create\('summary','','Pair a device'\),linkBubbles,createOwnerCode,ownerCodeHelp,linkStatus\)/);
  assert.match(site,/if\(who!=='you'&&!greeting\)/);
  assert.doesNotMatch(site,/nativeOwnerInput=create/);
  assert.match(nativeCss,/grid-template-columns:1fr/);

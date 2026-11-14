@@ -53,8 +53,9 @@ test('paired phone voice yields website orb without adding a second chat view',(
   assert.match(chat,/document\.body\.classList\.toggle\('ba-companion-active'/);
 });
 
-test('pairing remains accessible via Options and connected conversations stop requesting new codes',()=>{
-  assert.match(chat,/tools\.append\(create\('h3','ba-section-heading','Connections & pairing'\)/);
+test('pairing remains accessible in Settings and connected conversations stop requesting new codes',()=>{
+  assert.match(chat,/pairing\.append\(create\('summary','','Pair a device'\),linkBubbles,createOwnerCode,ownerCodeHelp,linkStatus\)/);
+  assert.match(chat,/tools\.append\(accounts,pairing\)/);
   assert.match(chat,/ownerReady\?'Verified and connected to Robot Brain/);
   assert.match(chat,/Do not demand another 64-character owner pairing code/);
 });
