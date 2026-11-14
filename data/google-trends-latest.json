@@ -3,82 +3,117 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T10:01:26.857711Z",
+  "checked_at": "2026-11-14T10:31:21.944925Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "japón - brasil",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T09:30:00Z",
+      "query": "tormenta",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T09:50:00Z",
       "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17511798/raphinha-brasil-barcelona-polemica-ancelotti",
-        "https://www.si.com/es-us/la-posible-alineacion-titular-de-brasil-para-enfrentar-a-japon-14-11-2026",
-        "https://onefootball.com/es/noticias/el-mensaje-de-carlo-ancelotti-a-los-clubes-que-les-quito-jugadores-por-la-fecha-fifa-con-brasil-43772985"
+        "https://www.telemundo20.com/noticias/local/tormenta-afectaciones-reaviva-temor-deslaves/2553547/",
+        "https://grupoanimal.mx/baja-california/sociedad/alerta-tormenta-tijuana-baja-california-riesgos",
+        "https://www.tijuanaenlinea.com/clima-hoy/2026/11/13/clima-tijuana-hoy-20c-y-75-probabilidad-de-lluvia/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvYovq-Pg-1niI0je94oFDP8c7f_2g31D3EDltTLS6Mn0Ch-suBkJjYF9jGe4",
-      "image_credit": "ESPN Deportes",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmEsf51QsFBOjrJGcRAreFBmnMvBN2Vug2_Yf4YIJmIIkbo71VJTK1NMwKyGI",
+      "image_credit": "Telemundo San Diego",
       "news": [
         {
-          "url": "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17511798/raphinha-brasil-barcelona-polemica-ancelotti",
-          "title": "Ancelotti calma a clubes tras polémica con Raphinha: \"su salud es prioridad\"",
-          "publisher": "ESPN Deportes",
+          "url": "https://www.telemundo20.com/noticias/local/tormenta-afectaciones-reaviva-temor-deslaves/2553547/",
+          "title": "Tormenta eléctrica provoca afectaciones y reaviva temor por deslaves en Tijuana",
+          "publisher": "Telemundo San Diego",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvYovq-Pg-1niI0je94oFDP8c7f_2g31D3EDltTLS6Mn0Ch-suBkJjYF9jGe4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmEsf51QsFBOjrJGcRAreFBmnMvBN2Vug2_Yf4YIJmIIkbo71VJTK1NMwKyGI"
         },
         {
-          "url": "https://www.si.com/es-us/la-posible-alineacion-titular-de-brasil-para-enfrentar-a-japon-14-11-2026",
-          "title": "La posible alineación titular de Brasil para enfrentar a Japón",
-          "publisher": "Sports Illustrated",
+          "url": "https://grupoanimal.mx/baja-california/sociedad/alerta-tormenta-tijuana-baja-california-riesgos",
+          "title": "Tormenta de fin de semana en Tijuana y BC: Qué zonas están en riesgo",
+          "publisher": "Grupo Animal",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRub4K77fgfwGphgaV8nOWcHnMP_eabAjCTndTN6LTfIuZ1MBWIJuCwrz_paBo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcOkdnUYwekbQN9mjA1e3Jr1B4gKZCugAXaJQqOIZ4VI2V-SRe18XIZxa_VO8"
         },
         {
-          "url": "https://onefootball.com/es/noticias/el-mensaje-de-carlo-ancelotti-a-los-clubes-que-les-quito-jugadores-por-la-fecha-fifa-con-brasil-43772985",
-          "title": "El mensaje de Carlo Ancelotti a los clubes que les QUITÓ JUGADORES por la fecha FIFA con Brasil",
-          "publisher": "OneFootball",
+          "url": "https://www.tijuanaenlinea.com/clima-hoy/2026/11/13/clima-tijuana-hoy-20c-y-75-probabilidad-de-lluvia/",
+          "title": "Clima Tijuana hoy: 20°C y 75% probabilidad de lluvia",
+          "publisher": "Tijuana En Linea Noticias",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvp95l81R4IJL7IwGfw99rcnPTNNO8b0ius1u3wYuuRK-1gx5KJTVil1l_iEE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUWQi0EovRvpANvzopZrskzxuUUpfbYKyB-Cnw27qjmMvA-8uKrPadrc6r4bk"
         }
       ]
     },
     {
-      "query": "dune 3",
-      "approx_searches": "500+",
+      "query": "japón - brasil",
+      "approx_searches": "1000+",
       "published_at": "2026-11-14T09:30:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/news/articles/cqly4lnxn031o",
-        "https://deadline.com/2026/11/chalamet-dune-part-three-prank-bbc-children-in-need-1237222621/",
-        "https://www.thesun.co.uk/tv/41021190/mel-giedroyc-struggles-oscar-nominee-name-children-in-need/"
+        "https://es-us.noticias.yahoo.com/deportes/onces-jap%C3%B3n-brasil-vinicius-raphinha-092900953.html",
+        "https://www.si.com/es-us/japon-vs-brasil-previa-predicciones-y-alineaciones-14-11-2026",
+        "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17503455/japon-vs-brasil-amistoso-internacional-fecha-2-equipo-fecha-hora-y-tv-en-vivo"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcGXhaWvwGisMtgh5q4MvMWKO5YNHXXR2nU3XWhq2wObSx-LfWiJvDjCRAugw",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjX6ayymYrWpw75ozyCAXZZK6US7ONWvoiukZlFiH5VoEUanJNqDNhqZeE2DM",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.bbc.com/news/articles/cqly4lnxn031o",
-          "title": "Timothée Chalamet and Zendaya prank Rylan Clark for Children in Need",
-          "publisher": "BBC",
+          "url": "https://es-us.noticias.yahoo.com/deportes/onces-jap%C3%B3n-brasil-vinicius-raphinha-092900953.html",
+          "title": "🚨 ONCES del Japón-Brasil: ¡Vinicius, Raphinha y Estevao titulares!",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcGXhaWvwGisMtgh5q4MvMWKO5YNHXXR2nU3XWhq2wObSx-LfWiJvDjCRAugw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjX6ayymYrWpw75ozyCAXZZK6US7ONWvoiukZlFiH5VoEUanJNqDNhqZeE2DM"
         },
         {
-          "url": "https://deadline.com/2026/11/chalamet-dune-part-three-prank-bbc-children-in-need-1237222621/",
-          "title": "‘Dune: Part Three’ Stars Set For Very Childish BBC Prank Tonight",
-          "publisher": "Deadline",
+          "url": "https://www.si.com/es-us/japon-vs-brasil-previa-predicciones-y-alineaciones-14-11-2026",
+          "title": "Japón vs Brasil: previa, predicciones y alineaciones",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0T8xqwQ9OZ7ry6BuBIVAxH7ySt73sfoGrWYhPJ_yRZJO-5lZzuTot4CIwmt4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCRE3o7Qbl54wpmUdqHBlCy2RfqeQYAZUuABIuRlM1V5ZSQrK74TXUdLydAwc"
         },
         {
-          "url": "https://www.thesun.co.uk/tv/41021190/mel-giedroyc-struggles-oscar-nominee-name-children-in-need/",
-          "title": "Mel Giedroyc struggles to pronounce Oscar-nominees name during Children in Need",
-          "publisher": "The Sun",
+          "url": "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17503455/japon-vs-brasil-amistoso-internacional-fecha-2-equipo-fecha-hora-y-tv-en-vivo",
+          "title": "Cuándo juegan Japón vs. Brasil por un Amistoso Internacional: equipo, fecha, hora y TV en vivo",
+          "publisher": "ESPN Deportes",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHccVkK3Tz5gC7GJYloFE9z195Ike3mJZhK1lIgjirSfjnedJ4vPaPV-SCrcs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9OYMFt7suXEJl9oS3iY4m_cEetsuE5FPJdp4M1nc_SFub55FYbq6m8WmCITs"
+        }
+      ]
+    },
+    {
+      "query": "rodtang",
+      "approx_searches": "100+",
+      "published_at": "2026-11-14T09:00:00Z",
+      "related_news_urls": [
+        "https://www.onefc.com/news/the-inner-circle-38-and-one-friday-fights-178-results-and-highlights-for-every-match/",
+        "https://www.sarawaktribune.com/im-truly-sorry-heartbroken-rodtang-apologises-after-nong-o-one-defeat/",
+        "https://bvmsports.com/2026/11/10/3-key-questions-ahead-of-one-inner-circle-38-on-nov-13/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhr19cfMCH7NZ-Kb9E_O0RrmtiaJ-C8GmJIY7AYtfoxAzEA7gZLl2QK6Sooe0",
+      "image_credit": "ONE Championship",
+      "news": [
+        {
+          "url": "https://www.onefc.com/news/the-inner-circle-38-and-one-friday-fights-178-results-and-highlights-for-every-match/",
+          "title": "The Inner Circle 38 And ONE Friday Fights 178 – Results And Highlights For Every Match",
+          "publisher": "ONE Championship",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhr19cfMCH7NZ-Kb9E_O0RrmtiaJ-C8GmJIY7AYtfoxAzEA7gZLl2QK6Sooe0"
+        },
+        {
+          "url": "https://www.sarawaktribune.com/im-truly-sorry-heartbroken-rodtang-apologises-after-nong-o-one-defeat/",
+          "title": "I’m Truly Sorry’: Heartbroken Rodtang Apologises After Nong-O ONE Defeat",
+          "publisher": "Sarawak Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQH3u2loCE5JQY7-GWaM89IG9vX2vkHhEM5TlKvMR1XeYdqtIAVp4Tf9NgMaFw"
+        },
+        {
+          "url": "https://bvmsports.com/2026/11/10/3-key-questions-ahead-of-one-inner-circle-38-on-nov-13/",
+          "title": "3 Key Questions Ahead of ONE Inner Circle 38 on Nov. 13",
+          "publisher": "BVM Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQieAdd_hqa8GR7bxd5lgw5H4R5Jm53zp9lm1D8w0mQVFAOfEqlD4qq0uLM9A"
         }
       ]
     },
     {
       "query": "angelina jolie",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-14T09:00:00Z",
       "related_news_urls": [
         "https://pagesix.com/2026/11/13/celebrity-news/angelina-jolie-brad-pitts-daughter-vivienne-reveals-hospitalization-for-eating-disorder-at-la-art-exhibit/",
@@ -113,7 +148,7 @@
     },
     {
       "query": "nyt games",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-14T08:50:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/2026/11/13/crosswords/wordle-review-1974.html",
@@ -147,6 +182,76 @@
       ]
     },
     {
+      "query": "the tomb of the unknown soldier",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T08:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/12/us/politics/pete-hegseth-warrior-image.html",
+        "https://www.cnn.com/2026/11/12/politics/hegseth-awards-medal-soldier-reprimanded-him",
+        "https://www.nbcwashington.com/news/national-international/hegseth-awards-medal-guard-tomb-of-the-unknown-soldier/4181944/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcYKcDRKXmDhsAmcmytst_ageJbf2igv9BzmTzVmXAiEKrNv0W69dQi4UvOdM",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/12/us/politics/pete-hegseth-warrior-image.html",
+          "title": "Pete Hegseth, a Soldier’s Scolding and a Lesson at the Tomb of Unknowns",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcYKcDRKXmDhsAmcmytst_ageJbf2igv9BzmTzVmXAiEKrNv0W69dQi4UvOdM"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/12/politics/hegseth-awards-medal-soldier-reprimanded-him",
+          "title": "Hegseth awards medal to soldier who reprimanded him and aides at Arlington Cemetery",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWRi_06KWS8aEpxQmaTIzXQzsAgK7EPlJqYclV8O6Y9wBCTzYku2G8kiEai98"
+        },
+        {
+          "url": "https://www.nbcwashington.com/news/national-international/hegseth-awards-medal-guard-tomb-of-the-unknown-soldier/4181944/",
+          "title": "Hegseth awards medal to guard who scolded him at the Tomb of the Unknown Soldier",
+          "publisher": "NBC4 Washington",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTH8wuQTZ6jCVAMSV5kZGvI1QOY2u9Yfme5yeiAVn3ZFrdjvllEhqy5KZ6Uzpw"
+        }
+      ]
+    },
+    {
+      "query": "timothee chalamet",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T08:50:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cqly4lnxn031o",
+        "https://deadline.com/2026/11/chalamet-dune-part-three-prank-bbc-children-in-need-1237222621/",
+        "https://www.thesun.co.uk/tv/41021190/mel-giedroyc-struggles-oscar-nominee-name-children-in-need/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcGXhaWvwGisMtgh5q4MvMWKO5YNHXXR2nU3XWhq2wObSx-LfWiJvDjCRAugw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cqly4lnxn031o",
+          "title": "Timothée Chalamet and Zendaya prank Rylan Clark for Children in Need",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcGXhaWvwGisMtgh5q4MvMWKO5YNHXXR2nU3XWhq2wObSx-LfWiJvDjCRAugw"
+        },
+        {
+          "url": "https://deadline.com/2026/11/chalamet-dune-part-three-prank-bbc-children-in-need-1237222621/",
+          "title": "‘Dune: Part Three’ Stars Set For Very Childish BBC Prank Tonight",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0T8xqwQ9OZ7ry6BuBIVAxH7ySt73sfoGrWYhPJ_yRZJO-5lZzuTot4CIwmt4"
+        },
+        {
+          "url": "https://www.thesun.co.uk/tv/41021190/mel-giedroyc-struggles-oscar-nominee-name-children-in-need/",
+          "title": "Mel Giedroyc struggles to pronounce Oscar-nominees name during Children in Need",
+          "publisher": "The Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHccVkK3Tz5gC7GJYloFE9z195Ike3mJZhK1lIgjirSfjnedJ4vPaPV-SCrcs"
+        }
+      ]
+    },
+    {
       "query": "hltv",
       "approx_searches": "100+",
       "published_at": "2026-11-14T08:40:00Z",
@@ -155,7 +260,7 @@
         "https://www.dust2.us/news/79679/iowa-stormboars-h0nest-breaks-into-hltv-top-50-prospects-at-33",
         "https://www.dust2.us/news/79882/jorko-nemanha-among-eligible-players-for-hltv-rookie-of-the-year-2026"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDdjcp4mkCQ4q7ZaGOnTiMTUtcnbTiJVRBwbFwuvnJ6ZwUfOOSbvbFDvaEEs4",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1KTJhgRg37CJeJTuj3yo74HH4QxSl1s9j7qsn8yofDhYBMa3GE83RGfXoNTU",
       "image_credit": "Dust2.us",
       "news": [
         {
@@ -163,7 +268,7 @@
           "title": "H0NeST on making HLTV Prospects: \"I can be better...I need to just work on myself and get higher\"",
           "publisher": "Dust2.us",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDdjcp4mkCQ4q7ZaGOnTiMTUtcnbTiJVRBwbFwuvnJ6ZwUfOOSbvbFDvaEEs4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1KTJhgRg37CJeJTuj3yo74HH4QxSl1s9j7qsn8yofDhYBMa3GE83RGfXoNTU"
         },
         {
           "url": "https://www.dust2.us/news/79679/iowa-stormboars-h0nest-breaks-into-hltv-top-50-prospects-at-33",
@@ -178,6 +283,41 @@
           "publisher": "Dust2.us",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMvyYRlhE35rjTAUMZ7BU6zZ3MsvPl6GOevjtGpM9RImH2ZVmc3iVEysRXDTc"
+        }
+      ]
+    },
+    {
+      "query": "ana de armas",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T08:30:00Z",
+      "related_news_urls": [
+        "https://extratv.com/2026/11/12/ana-de-armas-and-beto-montenegro-make-red-carpet-debut/",
+        "https://www.imdb.com/news/ni66108941/?ref_=nwc_art_perm",
+        "https://www.redcarpet-fashionawards.com/2026/11/12/ana-de-armas-embraces-a-more-sensual-look-at-the-latin-recording-academy-gala/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLG11Npj6FAJ7LEH4BGGaq0NPvbRWYb76OXKdAWALtbzRtfmtHHHA4AbTqWGU",
+      "image_credit": "Extra",
+      "news": [
+        {
+          "url": "https://extratv.com/2026/11/12/ana-de-armas-and-beto-montenegro-make-red-carpet-debut/",
+          "title": "Ana de Armas & Beto Montenegro Make Red-Carpet Debut",
+          "publisher": "Extra",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLG11Npj6FAJ7LEH4BGGaq0NPvbRWYb76OXKdAWALtbzRtfmtHHHA4AbTqWGU"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66108941/?ref_=nwc_art_perm",
+          "title": "Ana de Armas Looks Gorgeous as She Steps Out to Support Boyfriend Beto Montenegro at Latin Grammys 2026",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgXRynnbCZTuIJrPzGMR8VwTO6Rq1JVIAHRUBdTz2JEAz3RAmjYaG3d2uKUb0"
+        },
+        {
+          "url": "https://www.redcarpet-fashionawards.com/2026/11/12/ana-de-armas-embraces-a-more-sensual-look-at-the-latin-recording-academy-gala/",
+          "title": "Ana de Armas in Wiederhoeft for 2026 Latin Recording Academy Gala",
+          "publisher": "Red Carpet Fashion Awards",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPc54qiLFjFUJyF-OenilpO1D_24wFWSMWqPtJdRr8HRzLRSeA56-FM9qA5BI"
         }
       ]
     },
@@ -213,146 +353,6 @@
           "publisher": "ESPN India",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyUnp4IkiiGqA9eux2qhI1-a70rEkpeNzPDUdw_RJJwK05KBmUeqV5S2UxJeY"
-        }
-      ]
-    },
-    {
-      "query": "ana de armas",
-      "approx_searches": "100+",
-      "published_at": "2026-11-14T08:30:00Z",
-      "related_news_urls": [
-        "https://extratv.com/2026/11/12/ana-de-armas-and-beto-montenegro-make-red-carpet-debut/",
-        "https://www.imdb.com/news/ni66108941/?ref_=nwc_art_perm",
-        "https://www.redcarpet-fashionawards.com/2026/11/12/ana-de-armas-embraces-a-more-sensual-look-at-the-latin-recording-academy-gala/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLG11Npj6FAJ7LEH4BGGaq0NPvbRWYb76OXKdAWALtbzRtfmtHHHA4AbTqWGU",
-      "image_credit": "Extra",
-      "news": [
-        {
-          "url": "https://extratv.com/2026/11/12/ana-de-armas-and-beto-montenegro-make-red-carpet-debut/",
-          "title": "Ana de Armas & Beto Montenegro Make Red-Carpet Debut",
-          "publisher": "Extra",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLG11Npj6FAJ7LEH4BGGaq0NPvbRWYb76OXKdAWALtbzRtfmtHHHA4AbTqWGU"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66108941/?ref_=nwc_art_perm",
-          "title": "Ana de Armas Looks Gorgeous as She Steps Out to Support Boyfriend Beto Montenegro at Latin Grammys 2026",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgXRynnbCZTuIJrPzGMR8VwTO6Rq1JVIAHRUBdTz2JEAz3RAmjYaG3d2uKUb0"
-        },
-        {
-          "url": "https://www.redcarpet-fashionawards.com/2026/11/12/ana-de-armas-embraces-a-more-sensual-look-at-the-latin-recording-academy-gala/",
-          "title": "Ana de Armas in Wiederhoeft for 2026 Latin Recording Academy Gala",
-          "publisher": "Red Carpet Fashion Awards",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPc54qiLFjFUJyF-OenilpO1D_24wFWSMWqPtJdRr8HRzLRSeA56-FM9qA5BI"
-        }
-      ]
-    },
-    {
-      "query": "joseph zada",
-      "approx_searches": "100+",
-      "published_at": "2026-11-14T08:30:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66106963/?ref_=nwc_art_perm",
-        "https://www.thefashionspot.com/fashion-news/982290-mckenna-grace-underwear-sheer-lacy-micro-minidress-christian-louboutins",
-        "https://www.fashiontimes.co.uk/mckenna-grace-britney-spears-lace-dress-1767678"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRfontl1V6GbTtYYpj81BdOS0107Pa9QFt8v7OdkrCxCph8Hi27H1BP2hlopbk",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66106963/?ref_=nwc_art_perm",
-          "title": "Mckenna Grace Wears Fully See-Through Dress to Support Joseph Zada’s ‘Cultured’ Cover Launch",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRfontl1V6GbTtYYpj81BdOS0107Pa9QFt8v7OdkrCxCph8Hi27H1BP2hlopbk"
-        },
-        {
-          "url": "https://www.thefashionspot.com/fashion-news/982290-mckenna-grace-underwear-sheer-lacy-micro-minidress-christian-louboutins",
-          "title": "Mckenna Grace Flashes Underwear in Sheer Lacy Micro Minidress & Louboutins",
-          "publisher": "theFashionSpot",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqlffmUo5TE6O_4lzKnr7NQ42WpNuurUGJbqsPvRWFcNKXBCP1SPc0-erj5AA"
-        },
-        {
-          "url": "https://www.fashiontimes.co.uk/mckenna-grace-britney-spears-lace-dress-1767678",
-          "title": "McKenna Grace Serves Gothic Glam in Daring Lace Minidress Straight Out of Britney Spears' 2001 VMAs Era",
-          "publisher": "Fashion Times UK",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFcZe6-fXJFkGDxEM5vUKefhf915IHRSHWWVN54di1VQIKayrMUMDEEcl1Lq8"
-        }
-      ]
-    },
-    {
-      "query": "kobe bryant",
-      "approx_searches": "100+",
-      "published_at": "2026-11-14T08:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/bam-adebayo-did-not-care-203554902.html",
-        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/13/bam-adebayo-did-not-care-that-fans-were-going-upset-at-him-for-passing-kobe-bryants-scoring-record/92764853007/",
-        "https://sports.yahoo.com/articles/no-shaq-dont-beat-us-225800694.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVbQBwwO-ijkVrGymXYtj5SvusaPEziaQQY7bJkgW__RsvohTIGIGFbvQj8_A",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/bam-adebayo-did-not-care-203554902.html",
-          "title": "Bam Adebayo 'did not care' that fans were going to be upset at him for passing Kobe Bryant's scoring record",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVbQBwwO-ijkVrGymXYtj5SvusaPEziaQQY7bJkgW__RsvohTIGIGFbvQj8_A"
-        },
-        {
-          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/13/bam-adebayo-did-not-care-that-fans-were-going-upset-at-him-for-passing-kobe-bryants-scoring-record/92764853007/",
-          "title": "Bam Adebayo 'did not care' that fans were going to be upset at him for passing Kobe Bryant's scoring record",
-          "publisher": "HoopsHype",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFW23ulJI31IQ5dymmuc7_xlJffw1OMJvsmCLl8YcUXsVXRUyX7B99YAaI0Mg"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/no-shaq-dont-beat-us-225800694.html",
-          "title": "\"With no Shaq, they don't beat us\" - Kenyon Martin explains why the Nets feared Shaquille O'Neal more than Kobe Bryant",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQW3rZbmNITgBNNnbeSaYJYi9xf4WB67TFGvMrMgBUqvPf02yPPl7w6lGG_N2Y"
-        }
-      ]
-    },
-    {
-      "query": "natalie portman",
-      "approx_searches": "100+",
-      "published_at": "2026-11-14T08:20:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66101296/?ref_=nmnw_art_perm",
-        "https://www.reutersconnect.com/item/2026-the-gallerist-movie-set/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBBVlpMV1E",
-        "https://www.mediaplaynews.com/roadside-attractions-drops-trailer-for-the-gallerist-hitting-theaters-dec-4/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBOLbuZUaeJkfAHSPYMrmcRgLeZYV8xYUNRYWgXkCfI3a9_NYOqrKE80d4i7o",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66101296/?ref_=nmnw_art_perm",
-          "title": "Jenna Ortega and Natalie Portman’s Twisted New Crime Comedy Officially Unleashes Its Trailer",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBOLbuZUaeJkfAHSPYMrmcRgLeZYV8xYUNRYWgXkCfI3a9_NYOqrKE80d4i7o"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/2026-the-gallerist-movie-set/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBBVlpMV1E",
-          "title": "Licensable picture: 2026 - THE GALLERIST - Movie Set",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGOcHnKGagc1mpVyPlDONeDN9wNNuqRKb5-hVKWc-2ZrD9vMCgESIU7LRIZQI"
-        },
-        {
-          "url": "https://www.mediaplaynews.com/roadside-attractions-drops-trailer-for-the-gallerist-hitting-theaters-dec-4/",
-          "title": "Roadside Attractions Drops Trailer For ‘The Gallerist,’ Hitting Theaters Dec. 4",
-          "publisher": "Media Play News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKHsrtHXWsbHn-9oByoe961RjiYxspws6Wjqc9tmu_lVutdqWUoOXVQ9Fe8mA"
         }
       ]
     }
