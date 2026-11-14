@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T04:01:36.261689Z",
+  "checked_at": "2026-11-14T04:31:13.325925Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "norman powell",
+      "query": "darryn peterson",
       "approx_searches": "1000+",
-      "published_at": "2026-11-14T03:40:00Z",
+      "published_at": "2026-11-14T04:10:00Z",
       "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-13/norman-powell-will-return-to-play-against-hawks",
-        "https://heavy.com/sports/nba/chicago-bulls/injury-report-vs-spurs-november-11/",
-        "https://www.fantasypros.com/nba/news/619626/norman-powell-back-questionable-friday.php"
+        "https://www.cbssports.com/nba/news/nba-rookie-of-the-year-race-yaxel-lendeborg-cameron-boozer-darryn-peterson-aj-dybantsa/",
+        "https://www.usatoday.com/story/sports/nba/2026/11/12/nba-rookie-rankings-yaxel-lendeborg-darius-acuff-climbs/92732449007/",
+        "https://sports.yahoo.com/articles/caleb-wilsons-rookie-pursuit-bulls-014750208.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZylfFL0emnsm_LkwX66pTuecKDFTk0batYqofn1U0gt6QLWClEANzwRkqaIA",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCdxsg2X9OA4bJpLnn4O8xMto8E-6ZTOI0bHGgqvUGQS9cClNDUKSNhxumRYU",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/nba/news/nba-rookie-of-the-year-race-yaxel-lendeborg-cameron-boozer-darryn-peterson-aj-dybantsa/",
+          "title": "NBA Rookie of the Year race: Three players at top, but don't count out AJ Dybantsa, Darryn Peterson just yet",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCdxsg2X9OA4bJpLnn4O8xMto8E-6ZTOI0bHGgqvUGQS9cClNDUKSNhxumRYU"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/nba/2026/11/12/nba-rookie-rankings-yaxel-lendeborg-darius-acuff-climbs/92732449007/",
+          "title": "NBA Rookie of the Year race is wide open. See who leads new rankings.",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1x1XiL7a6Q9ip2aK72MtteK4VJkX2-_8TDkUh4poOM1QpCek_RaQJm2c-4AQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/caleb-wilsons-rookie-pursuit-bulls-014750208.html",
+          "title": "Caleb Wilson's Rookie of the Year Pursuit with Bulls Already an Uphill Battle",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoZTfFAb4Ef58CRi77s1NIfF-mnNMxEqs8Gh1x0-6mvQoTkgRYfzyabhCIDeU"
+        }
+      ]
+    },
+    {
+      "query": "vegas golden knights",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T04:10:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-13-2026",
+        "https://sports.yahoo.com/articles/nashville-predators-las-vegas-golden-220838721.html",
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/nashville-predators-vs-vegas-golden-knights-prediction-odds-2026-11-13/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0X6m0cECR9nNCahlLlYdlzpysTmtNYZJp8cIn2igr1WO4TBOb9EUkD7Kyhgk",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-13-2026",
+          "title": "NHL On Tap: Winning streaks collide for Predators, Golden Knights",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0X6m0cECR9nNCahlLlYdlzpysTmtNYZJp8cIn2igr1WO4TBOb9EUkD7Kyhgk"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/nashville-predators-las-vegas-golden-220838721.html",
+          "title": "Nashville Predators at Las Vegas Golden Knights: Game Central, How To Watch, Injury Updates",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR15soDuwVXg_Dlbw0XTNPH5CNARoEMuyfPrBdxj1B8EGMNNxr3VdKIalCZR4A"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/nashville-predators-vs-vegas-golden-knights-prediction-odds-2026-11-13/",
+          "title": "Nashville Predators vs Vegas Golden Knights Prediction, Picks & Odds | 13 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbCNW9ituFxfK-y6w5ymAiqHftH34a3QUtXcQL0LVH8-bUrqgtYohWTv-gEa4"
+        }
+      ]
+    },
+    {
+      "query": "keyonte george",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T04:10:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/basketball/news/nba-week-4-injury-report-keyonte-george-latest-early-season-injury-for-jazz",
+        "https://www.slcdunk.com/utah-jazz-game-coverage/70698/interesting-update-on-the-utah-jazz-injury-report",
+        "https://basketnews.com/news-259153-utah-jazz-reveal-brutal-injury-status-updates-for-keyonte-george-lauri-markkanen.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGsXqq1vE92aSCJTyMlqAjL_A8Wc6F7tpq61bsH4BXWmib3cHnY6x2IbTWOOQ",
       "image_credit": "NBC Sports",
       "news": [
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-13/norman-powell-will-return-to-play-against-hawks",
-          "title": "Norman Powell will return to play against Hawks",
+          "url": "https://www.nbcsports.com/fantasy/basketball/news/nba-week-4-injury-report-keyonte-george-latest-early-season-injury-for-jazz",
+          "title": "NBA Week 4 Injury Report: Keyonte George latest early-season injury for Jazz",
           "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZylfFL0emnsm_LkwX66pTuecKDFTk0batYqofn1U0gt6QLWClEANzwRkqaIA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGsXqq1vE92aSCJTyMlqAjL_A8Wc6F7tpq61bsH4BXWmib3cHnY6x2IbTWOOQ"
         },
         {
-          "url": "https://heavy.com/sports/nba/chicago-bulls/injury-report-vs-spurs-november-11/",
-          "title": "Chicago Bulls Issue Injury Report for San Antonio Spurs Game on Nov. 11",
-          "publisher": "Heavy.com",
+          "url": "https://www.slcdunk.com/utah-jazz-game-coverage/70698/interesting-update-on-the-utah-jazz-injury-report",
+          "title": "Interesting update on the Utah Jazz injury report",
+          "publisher": "SLC Dunk",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToXPmTr8F4wP03R8hYysuTs021s4zlwPM1XKFZ0YDbjLTzsterifHL8E2lMR4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMdf2syzCnjiNHUnzp6ZGKOUW5bSmjOJE4oRtbc4q5onAeITyTv4PR-8XW-jE"
         },
         {
-          "url": "https://www.fantasypros.com/nba/news/619626/norman-powell-back-questionable-friday.php",
-          "title": "Norman Powell (back) questionable Friday",
-          "publisher": "FantasyPros",
+          "url": "https://basketnews.com/news-259153-utah-jazz-reveal-brutal-injury-status-updates-for-keyonte-george-lauri-markkanen.html",
+          "title": "Utah Jazz reveal brutal injury status updates for Keyonte George, Lauri Markkanen",
+          "publisher": "BasketNews.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcqwR7Ma-yQ6Hu88SUC9Aoa6p18HUDzaNhn0JjQtvFDCHI2K_-GYBLa7Cr_nI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyCNVfmSVRIpCRMK15PXaFDogkDniA3x6RFf6MHCODLgJFxFcQPE--kKDFDlo"
         }
       ]
     },
     {
-      "query": "emma watson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T03:40:00Z",
-      "related_news_urls": [
-        "https://www.instyle.com/emma-watson-stuns-black-minidress-gq-party-12253178",
-        "https://pagesix.com/2026/11/13/celebrity-news/emma-watson-suffers-brutal-fall-outside-chateau-marmont/",
-        "https://www.yahoo.com/lifestyle/videos/emma-watson-takes-nasty-spill-180550356.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDBO21WwBKrR3aM9i-yvrAy8wVTLvAk7P8KfMe6foxSnOGtrMFndVx2gkNKDY",
-      "image_credit": "InStyle",
-      "news": [
-        {
-          "url": "https://www.instyle.com/emma-watson-stuns-black-minidress-gq-party-12253178",
-          "title": "Emma Watson Wows in a Black Velvet Minidress and Striped Heels for Rare Outing",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDBO21WwBKrR3aM9i-yvrAy8wVTLvAk7P8KfMe6foxSnOGtrMFndVx2gkNKDY"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/13/celebrity-news/emma-watson-suffers-brutal-fall-outside-chateau-marmont/",
-          "title": "Emma Watson suffers brutal fall outside splashy celebrity party at LA hot spot Chateau Marmont",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://www.yahoo.com/lifestyle/videos/emma-watson-takes-nasty-spill-180550356.html",
-          "title": "Emma Watson takes a nasty spill on the street as she attends the GQ's 31st Annual Men of the Year Party",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVC_hPHsvg5zeF6ob2om22nYxd4LHTDKySGwehEuwTvCD4WBN16baMCEFHjHc"
-        }
-      ]
-    },
-    {
-      "query": "dyson daniels",
+      "query": "uil football playoffs",
       "approx_searches": "200+",
-      "published_at": "2026-11-14T03:40:00Z",
+      "published_at": "2026-11-14T04:10:00Z",
       "related_news_urls": [
-        "https://www.nba.com/news/visualizing-the-game-luka-doncic-first-10-games",
-        "https://www.espn.com/nba/recap/_/gameId/401909952",
-        "https://www.silverscreenandroll.com/lakers-news/128901/lakes-news-dyson-daniels-luka-doncic-hawks"
+        "https://www.timesrecordnews.com/story/sports/high-school/football/2026/11/06/wichita-falls-texas-texoma-high-school-football-week-11-scores/92498539007/",
+        "https://www.newschannel6now.com/2026/11/07/blitz-6-week-11/",
+        "https://sports.yahoo.com/articles/texoma-uil-football-playoffs-thursday-171310323.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPR2BBL9J1UQvEo_sKwYBt_SffSfHngwgKVNl3iwy5vVG7-zWN6qzxU_LDYXo",
-      "image_credit": "NBA.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ9snP0JIaNb5D85oU5ytQPqgDwJR9fjbtF79qj_jNovTy7iniOIJ5MMzUoao",
+      "image_credit": "Times Record News",
       "news": [
         {
-          "url": "https://www.nba.com/news/visualizing-the-game-luka-doncic-first-10-games",
-          "title": "Visualizing the Game: Luka Dončić’s scoring spree",
-          "publisher": "NBA.com",
+          "url": "https://www.timesrecordnews.com/story/sports/high-school/football/2026/11/06/wichita-falls-texas-texoma-high-school-football-week-11-scores/92498539007/",
+          "title": "See Week 11 Texoma high school football final scores",
+          "publisher": "Times Record News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPR2BBL9J1UQvEo_sKwYBt_SffSfHngwgKVNl3iwy5vVG7-zWN6qzxU_LDYXo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ9snP0JIaNb5D85oU5ytQPqgDwJR9fjbtF79qj_jNovTy7iniOIJ5MMzUoao"
         },
         {
-          "url": "https://www.espn.com/nba/recap/_/gameId/401909952",
-          "title": "Lakers 124-114 Hawks (Nov 9, 2026) Game Recap",
-          "publisher": "ESPN",
+          "url": "https://www.newschannel6now.com/2026/11/07/blitz-6-week-11/",
+          "title": "BLITZ on 6: Week 11",
+          "publisher": "News Channel 6 | Wichita Falls, TX",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWUzUMq3D3S_awbIS0cN7InG4PGrDjKS9MhRThEh3GLbtNGI61jwWvzc1pzwU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzd4vvlahHUltGJGwTtTLEXidd5u39iEuTvtNs2MRhcpPudJq635a9A0LM3FU"
         },
         {
-          "url": "https://www.silverscreenandroll.com/lakers-news/128901/lakes-news-dyson-daniels-luka-doncic-hawks",
-          "title": "Dyson Daniels calls Luka the ‘hardest guy to guard’ in the NBA",
-          "publisher": "Silver Screen and Roll",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvcHfIsTxfc6hT-e7svJWQXnuc37f2N2hU3OQLd6qH2Y0ph5ImGibMm2X_RFc"
-        }
-      ]
-    },
-    {
-      "query": "ashley judd",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T03:40:00Z",
-      "related_news_urls": [
-        "https://people.com/ashley-judd-says-mom-naomi-judd-threatened-to-stop-paying-her-college-tuition-12253082",
-        "https://pagesix.com/2026/11/13/parents/ashley-judd-reveals-rift-with-mom-naomi-over-lesbian-college-professor/",
-        "https://ew.com/ashley-judd-says-mom-naomi-feared-retaliation-from-country-music-world-politics-12251599"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkI9lkfZg7SMQMNXzqs3VPQ9i0xIsESPTq1j04PYK2NP0bKYt9sBBdyiPCoXA",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/ashley-judd-says-mom-naomi-judd-threatened-to-stop-paying-her-college-tuition-12253082",
-          "title": "Ashley Judd Says Mom Naomi Judd Threatened to Stop Paying Her College Tuition",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkI9lkfZg7SMQMNXzqs3VPQ9i0xIsESPTq1j04PYK2NP0bKYt9sBBdyiPCoXA"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/13/parents/ashley-judd-reveals-rift-with-mom-naomi-over-lesbian-college-professor/",
-          "title": "Ashley Judd lays bare religious rift with mom Naomi — and fallout over lesbian college professor",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJRpnCafLHcpHZAIWxGevaHMk3lLBLWf7Wn9xHtLC5UjdIqr_lg8TgPZ8tkEs"
-        },
-        {
-          "url": "https://ew.com/ashley-judd-says-mom-naomi-feared-retaliation-from-country-music-world-politics-12251599",
-          "title": "Ashley Judd says mom Naomi feared ‘retaliation’ from country music world if she didn’t hold ‘certain political line’",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbY_NJQORsGweyLHyW28PkW1_Ke74azSvFWZbG98jppkh1iYoOXxFPu6B5byk"
-        }
-      ]
-    },
-    {
-      "query": "mariska hargitay",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-14T03:40:00Z",
-      "related_news_urls": [
-        "https://www.eonline.com/news/1438070/mariska-hargitays-law-order-svu-salary-revealed-as-s850-000-per-episode",
-        "https://pagesix.com/2026/11/12/entertainment/mariska-hargitays-staggering-law-order-svu-salary-revealed/",
-        "https://www.nine.com.au/entertainment/celebrity/mariska-hargitay-law-and-order-svu-salary-revealed-highest-earning-tv-stars-20261113-p61dyy.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRTptlsvFLn32-N_4plotokQ1CivsVpKFLESO6zw6NzdyNf28WWfdKRorW3M0",
-      "image_credit": "E! News",
-      "news": [
-        {
-          "url": "https://www.eonline.com/news/1438070/mariska-hargitays-law-order-svu-salary-revealed-as-s850-000-per-episode",
-          "title": "Mariska Hargitay’s Eye-Popping Law & Order: SVU Salary Revealed",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRTptlsvFLn32-N_4plotokQ1CivsVpKFLESO6zw6NzdyNf28WWfdKRorW3M0"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/12/entertainment/mariska-hargitays-staggering-law-order-svu-salary-revealed/",
-          "title": "Mariska Hargitay’s staggering ‘Law & Order: SVU’ salary revealed",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb5XR7YkL_o2exbgFcj68OD-sLGusfJyWS1PlmGJWxxXbQ0WUk-8HwO66xAd4"
-        },
-        {
-          "url": "https://www.nine.com.au/entertainment/celebrity/mariska-hargitay-law-and-order-svu-salary-revealed-highest-earning-tv-stars-20261113-p61dyy.html",
-          "title": "Mariska Hargitay’s eye-watering Law & Order salary revealed, but she’s not the only one",
-          "publisher": "Nine.com.au",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOYb67fWTNczkw12r8LERRQANDfHtWza0a1n7_HBWSqd_H70uwpGldRZLg7SA"
-        }
-      ]
-    },
-    {
-      "query": "bilal hasan",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T03:40:00Z",
-      "related_news_urls": [
-        "https://www.yardbarker.com/mma/articles/hokit_steals_nunes_belts_at_ufc_334_media_day/s1_17349_44548224",
-        "https://lastwordonsports.com/mma/2026/11/13/josh-hokit-steals-ufc-334/",
-        "https://www.mmamania.com/ufc-videos/485517/josh-hokit-copies-conor-mcgregor-steals-ufc-belts-amanda-nunes-ufc-334-media-day"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPMkeA8m3lENoYRTdyEOi8hLrapKNQTlKgi29FfqIcDbprR8R1esNBqRvelrs",
-      "image_credit": "Yardbarker",
-      "news": [
-        {
-          "url": "https://www.yardbarker.com/mma/articles/hokit_steals_nunes_belts_at_ufc_334_media_day/s1_17349_44548224",
-          "title": "Hokit Steals Nunes' Belts At UFC 334 Media Day",
-          "publisher": "Yardbarker",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPMkeA8m3lENoYRTdyEOi8hLrapKNQTlKgi29FfqIcDbprR8R1esNBqRvelrs"
-        },
-        {
-          "url": "https://lastwordonsports.com/mma/2026/11/13/josh-hokit-steals-ufc-334/",
-          "title": "Josh Hokit Steals the Show at UFC 334 Press Conference With His Wild Antics",
-          "publisher": "Last Word On Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKxwI-eWNlN0Wxy_G2V9vGuS3tLHNn6n-DjD9HLd3GBm5TGizdPS4KEO0faqQ"
-        },
-        {
-          "url": "https://www.mmamania.com/ufc-videos/485517/josh-hokit-copies-conor-mcgregor-steals-ufc-belts-amanda-nunes-ufc-334-media-day",
-          "title": "Josh Hokit copies Conor McGregor, steals UFC belts from Amanda Nunes at UFC 334 media day",
-          "publisher": "MMA Mania",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3Q4n6ykTIREaLDs-_w4n6xnXFUSrA_Z4VjzRkqMlfM3J5cHxKSGtnZRXcL5I"
-        }
-      ]
-    },
-    {
-      "query": "glenn gawdin",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T03:30:00Z",
-      "related_news_urls": [
-        "https://nypost.com/2026/11/12/sports/glenn-gawdin-makes-long-awaited-nhl-return-in-rangers-debut/",
-        "https://www.prohockeyrumors.com/2026/11/metro-notes-smits-garland-tufte.html",
-        "https://www.sportsnet.ca/nhl/article/rangers-alberts-smits-week-to-week-with-upper-body-injury/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSK7oKEjRLn1ThoJqcx_n3em9P7Lo7HxIDf6kp1OU01DPCn12nP88SFWCMRhMo",
-      "image_credit": "New York Post",
-      "news": [
-        {
-          "url": "https://nypost.com/2026/11/12/sports/glenn-gawdin-makes-long-awaited-nhl-return-in-rangers-debut/",
-          "title": "Glenn Gawdin makes long-awaited NHL return in Rangers debut",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSK7oKEjRLn1ThoJqcx_n3em9P7Lo7HxIDf6kp1OU01DPCn12nP88SFWCMRhMo"
-        },
-        {
-          "url": "https://www.prohockeyrumors.com/2026/11/metro-notes-smits-garland-tufte.html",
-          "title": "Metro Notes: Smits, Garland, Tufte",
-          "publisher": "Pro Hockey Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTN8dz3CliFMdpGstRVo9T94wOkm6mZh7L52RDfS2TTQOWC7bs94cDPBOJ-4s"
-        },
-        {
-          "url": "https://www.sportsnet.ca/nhl/article/rangers-alberts-smits-week-to-week-with-upper-body-injury/",
-          "title": "Rangers' Alberts Smits week-to-week with upper-body injury",
-          "publisher": "Sportsnet.ca",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuuSEhH6jymCKABfVL5T84-s4QBHUCp52t9S5TYPxxHdC_XmL8DC6LzCHDnnY"
-        }
-      ]
-    },
-    {
-      "query": "ucla qb",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T03:30:00Z",
-      "related_news_urls": [
-        "https://www.bestofarkansassports.com/arkansas-football-madden-iamaleava-ucla-specific-6-digit-payout/",
-        "https://www.nytimes.com/athletic/7776542/2026/11/13/ucla-bob-chesney-bruins-undefeated-big-ten-illinois/",
-        "https://www.npr.org/2026/11/13/nx-s1-6036817/uclas-golden-year-on-the-football-field"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgtzvoFBmMKHm1W22ddz6JJyJnM5FRq0V3bss8kEmhrsaJexuAy9UDh3IBMiI",
-      "image_credit": "Best of Arkansas Sports",
-      "news": [
-        {
-          "url": "https://www.bestofarkansassports.com/arkansas-football-madden-iamaleava-ucla-specific-6-digit-payout/",
-          "title": "Specific 6-Digit Payout Discussed for UCLA QB Who Peaced Out On Hogs Before Taking A Snap",
-          "publisher": "Best of Arkansas Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgtzvoFBmMKHm1W22ddz6JJyJnM5FRq0V3bss8kEmhrsaJexuAy9UDh3IBMiI"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7776542/2026/11/13/ucla-bob-chesney-bruins-undefeated-big-ten-illinois/",
-          "title": "How Bob Chesney’s small-school roots have fueled UCLA’s remarkable turnaround",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbATI327e8uheyUF9ofePXCKkV_QVYKnndlR8zKwhG298g5QEfWgYwBZrD-X0"
-        },
-        {
-          "url": "https://www.npr.org/2026/11/13/nx-s1-6036817/uclas-golden-year-on-the-football-field",
-          "title": "UCLA’s golden year on the football field",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": null
-        }
-      ]
-    },
-    {
-      "query": "carter bryant",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T03:30:00Z",
-      "related_news_urls": [
-        "https://airalamo.com/carter-bryant-is-finding-his-footing-at-the-right-time-for-the-spurs-deep-rotation",
-        "https://www.expressnews.com/sports/spurs/article/spurs-mitch-johnson-carter-bryant-remains-huge-22519649.php",
-        "https://www.rotowire.com/basketball/headlines/carter-bryant-news-limited-role-continues-538423"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0fbe1aBiJbuT6QH2Hk6ORdhP0ucX_njYczOXcndnPVxQmEW8lXPHqpkWCHUc",
-      "image_credit": "Air Alamo",
-      "news": [
-        {
-          "url": "https://airalamo.com/carter-bryant-is-finding-his-footing-at-the-right-time-for-the-spurs-deep-rotation",
-          "title": "Carter Bryant is finding his footing at the right time for the Spurs’ deep rotation",
-          "publisher": "Air Alamo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0fbe1aBiJbuT6QH2Hk6ORdhP0ucX_njYczOXcndnPVxQmEW8lXPHqpkWCHUc"
-        },
-        {
-          "url": "https://www.expressnews.com/sports/spurs/article/spurs-mitch-johnson-carter-bryant-remains-huge-22519649.php",
-          "title": "Spurs' Mitch Johnson: Carter Bryant remains 'huge part of this team'",
-          "publisher": "San Antonio Express-News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCVg_ZSqLJbnJZNA7LGlUxEHAl2fApmtFKG8FVEhWwfkx8jcSHhFXA6PDATZc"
-        },
-        {
-          "url": "https://www.rotowire.com/basketball/headlines/carter-bryant-news-limited-role-continues-538423",
-          "title": "Carter Bryant News: Limited role continues",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQl9j093jESUolTapCI-R3rbYC9z7qw9f0z1Odc-rXCiC7aIYQzFyYvkl9qNtY"
-        }
-      ]
-    },
-    {
-      "query": "new york rangers",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T03:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nhl/story/_/id/50463496/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-        "https://www.nhl.com/rangers/news/rangers-at-canucks-pregame-notes-11-13-26",
-        "https://sports.yahoo.com/videos/revisiting-canucks-rangers-move-j-010012792.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaWmhiRoxueyuw_Qn61mEGeVlLuhTsBjxlU9hfGuRIPQ3ifD9AQ5dHDuX7BK0",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nhl/story/_/id/50463496/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-          "title": "NHL Tonight: What to watch in Rangers-Canucks, Predators-Golden Knights",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaWmhiRoxueyuw_Qn61mEGeVlLuhTsBjxlU9hfGuRIPQ3ifD9AQ5dHDuX7BK0"
-        },
-        {
-          "url": "https://www.nhl.com/rangers/news/rangers-at-canucks-pregame-notes-11-13-26",
-          "title": "Rangers at Canucks: Pregame Notes",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXesxTo7e3fIe2BS_KRSAU_fSfLTlYnTYc2VEyFxAsoRe0Rh2zvJ4ZPAgbTMY"
-        },
-        {
-          "url": "https://sports.yahoo.com/videos/revisiting-canucks-rangers-move-j-010012792.html",
-          "title": "Revisiting The Canucks And Rangers’ Move For J.T. Miller Ahead Of Fifth Matchup Since The Trade",
+          "url": "https://sports.yahoo.com/articles/texoma-uil-football-playoffs-thursday-171310323.html",
+          "title": "Texoma UIL football playoffs Thursday bi-district results around Wichita Falls",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREtwtcGcPfleq0ZV__fYnIQYmMhYmrqK0gR1LVZzwer5cDcXIwwo8rsvcbPTY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQC6WWLn7MFi28B0KXKogmr39Bn50KIFK2N8RDCKXTc6_DzEQ06TaBmMEQFgiU"
+        }
+      ]
+    },
+    {
+      "query": "draymond green",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-14T04:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/draymond-green-defends-rockets-dirty-031639038.html",
+        "https://bleacherreport.com/articles/25532971-warriors-draymond-green-says-rockets-do-some-bulls-t-addresses-claim-theyre-dirty-team",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/13/draymond-green-rockets-they-some-when-play-them-yes-but-not-going-sit-here-and-call-them-dirty-team/92762266007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQj-h7wH_6GJcf044E208fZW1dBYWq-VEU27mjdAcLZs9hFIStj1Q3D75S9ks0",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/draymond-green-defends-rockets-dirty-031639038.html",
+          "title": "Draymond Green Defends Rockets From ‘Dirty’ Allegations Despite Stephen Curry’s Concerning Injury",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQj-h7wH_6GJcf044E208fZW1dBYWq-VEU27mjdAcLZs9hFIStj1Q3D75S9ks0"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25532971-warriors-draymond-green-says-rockets-do-some-bulls-t-addresses-claim-theyre-dirty-team",
+          "title": "Warriors' Draymond Green Says Rockets 'Do Some Bulls--t,' Addresses Claim They're a 'Dirty' Team",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsWZIo7jgS4CtDXCYOl1t6mDMEqlNh06DM6Sz9XO0WTuPsWqbY6jDYytA8cxE"
+        },
+        {
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/13/draymond-green-rockets-they-some-when-play-them-yes-but-not-going-sit-here-and-call-them-dirty-team/92762266007/",
+          "title": "Draymond Green on Rockets: 'Do they do some b****** when we play them? Yes, but I'm not going to sit here and call them a dirty team'",
+          "publisher": "HoopsHype",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLntw_wiMhrIq9KTZ5k54__RmLlEnUyBpcAiAkLAD_3aC6TwdSgQK9wAZPZJY"
+        }
+      ]
+    },
+    {
+      "query": "alperen şengün",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T04:00:00Z",
+      "related_news_urls": [
+        "https://www.thedreamshake.com/rockets-analysis/42484/the-houston-rockets-have-reinvented-their-offense",
+        "https://www.nytimes.com/athletic/7775524/2026/11/12/rockets-3-point-shooting-offense-win-warriors/",
+        "https://sports.yahoo.com/articles/rockets-reinvented-offense-161210150.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTxgTlhMnz02eozdqlt-Z5S5CCMXBDoGCXsAeLB-8eUGm9DqV3HPkS-ikNi-c",
+      "image_credit": "The Dream Shake",
+      "news": [
+        {
+          "url": "https://www.thedreamshake.com/rockets-analysis/42484/the-houston-rockets-have-reinvented-their-offense",
+          "title": "The Rockets have reinvented their offense",
+          "publisher": "The Dream Shake",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTxgTlhMnz02eozdqlt-Z5S5CCMXBDoGCXsAeLB-8eUGm9DqV3HPkS-ikNi-c"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7775524/2026/11/12/rockets-3-point-shooting-offense-win-warriors/",
+          "title": "Rockets’ improved 3-point shooting provides a crucial counterpunch on offense",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6MNe9JfLbVLRbuI6gmOgc9D43Z6VOyxI9Q--sVw9jdS60QQRjXzVfgKm8DXQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/rockets-reinvented-offense-161210150.html",
+          "title": "The Rockets have reinvented their offense",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRglvrM8OEqWUgXUDbpyfplS2mL7BfM3Ba47QlvzIHeziXcGDhWnmjewxfrQBM"
+        }
+      ]
+    },
+    {
+      "query": "mega millions drawing",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T04:00:00Z",
+      "related_news_urls": [
+        "https://www.detroitnews.com/story/news/lottery/2026/11/13/mega-millions-numbers-for-friday-november-13/92773091007/",
+        "https://www.usatoday.com/story/money/lottery/2026/11/13/mega-millions-winning-numbers-november-13-2026/92766331007/",
+        "https://nclottery.com/NewsBlogDetails/2026/11/10/Mega-Millions-jackpot-climbs-to-529-million-for-tonights-drawing-"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_LNbGuwqVWmE6mtOtcZwk3lTOfTfQfZPokiVdDCmG80z2DlSHCbRucxRbsvk",
+      "image_credit": "The Detroit News",
+      "news": [
+        {
+          "url": "https://www.detroitnews.com/story/news/lottery/2026/11/13/mega-millions-numbers-for-friday-november-13/92773091007/",
+          "title": "Mega Millions numbers for Friday, Nov. 13",
+          "publisher": "The Detroit News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_LNbGuwqVWmE6mtOtcZwk3lTOfTfQfZPokiVdDCmG80z2DlSHCbRucxRbsvk"
+        },
+        {
+          "url": "https://www.usatoday.com/story/money/lottery/2026/11/13/mega-millions-winning-numbers-november-13-2026/92766331007/",
+          "title": "Mega Millions hits $555M on Friday the 13th",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqCIfq6K6TyEQvIOcpHPsagI0WAL9B0GlzDbanOd_8CjIMvq3dWYioxF5mKeI"
+        },
+        {
+          "url": "https://nclottery.com/NewsBlogDetails/2026/11/10/Mega-Millions-jackpot-climbs-to-529-million-for-tonights-drawing-",
+          "title": "Mega Millions jackpot climbs to $529 million for tonight’s drawing",
+          "publisher": "NC Education Lottery",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq-3mObLSQO08xisyKO2LRLJZkRqrnHJ4VezIXgvh5Ax5i6Oyc0w-pXPia_ng"
+        }
+      ]
+    },
+    {
+      "query": "mater dei football",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T04:00:00Z",
+      "related_news_urls": [
+        "https://www.nfhsnetwork.com/events/cifss/gam54e41a469a",
+        "https://www.maxpreps.com/news/ZEM6Y5yfAUidbYCgD9QG4A/high-school-football-top-10-games-this-week-on-the-nfhs-network.htm",
+        "https://www.ocregister.com/2026/11/11/fryer-on-football-previews-and-predictions-for-fridays-cif-ss-quarterfinals/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXYs-rsHCUczvYtR_6-hq8igrFAA4pTAPaG3Sl1G-s_Vb4ezSHrhHEP8liuSI",
+      "image_credit": "NFHS Network",
+      "news": [
+        {
+          "url": "https://www.nfhsnetwork.com/events/cifss/gam54e41a469a",
+          "title": "MaxPreps Game of the Week: CIF-SS Ford Football Playoffs Centennial vs. Mater Dei - 11/13/2026 | Live & On Demand",
+          "publisher": "NFHS Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXYs-rsHCUczvYtR_6-hq8igrFAA4pTAPaG3Sl1G-s_Vb4ezSHrhHEP8liuSI"
+        },
+        {
+          "url": "https://www.maxpreps.com/news/ZEM6Y5yfAUidbYCgD9QG4A/high-school-football-top-10-games-this-week-on-the-nfhs-network.htm",
+          "title": "High school football: Top 10 games this week on the NFHS Network",
+          "publisher": "MaxPreps",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOnS-PWA6dRlewd7J2lJDlj6K9it1vdbGLG08T-CigYhGRSBcgRniTRCPNevg"
+        },
+        {
+          "url": "https://www.ocregister.com/2026/11/11/fryer-on-football-previews-and-predictions-for-fridays-cif-ss-quarterfinals/",
+          "title": "Fryer on Football: Previews and predictions for Friday’s CIF-SS quarterfinals",
+          "publisher": "Orange County Register",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYqEN_bi_AIaDslqrCU9E4PoweK8bq9PFFut49ITuzBP3XCfhLzStujeQbSb4"
+        }
+      ]
+    },
+    {
+      "query": "utah state basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T04:00:00Z",
+      "related_news_urls": [
+        "https://www.deseret.com/sports/2026/11/10/utah-state-basketball-beats-utah-tech/",
+        "https://utahstateaggies.com/news/2026/11/9/mens-basketball-aggies-host-in-state-foe-utah-tech-on-tuesday.aspx",
+        "https://sports.betmgm.com/en/blog/ncaab/utah-tech-utah-state-prediction-odds-picks-nov-10-college-basketball-jaa/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7GrP_30BaqG1DUeSS6w-E1o7X-DoCwjutLpjT1ZQebjqOd8igraGx67jztm4",
+      "image_credit": "Deseret News",
+      "news": [
+        {
+          "url": "https://www.deseret.com/sports/2026/11/10/utah-state-basketball-beats-utah-tech/",
+          "title": "Dallin Hall scores a career-high 35 points as Utah State rolls past Utah Tech",
+          "publisher": "Deseret News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7GrP_30BaqG1DUeSS6w-E1o7X-DoCwjutLpjT1ZQebjqOd8igraGx67jztm4"
+        },
+        {
+          "url": "https://utahstateaggies.com/news/2026/11/9/mens-basketball-aggies-host-in-state-foe-utah-tech-on-tuesday.aspx",
+          "title": "Aggies Host In-State Foe Utah Tech on Tuesday",
+          "publisher": "Utah State University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7XthV7oJzdlo6MSpKepBneFiOOOJcnGx5x_5mioxbUMrXuPSZMebYX5t5kgs"
+        },
+        {
+          "url": "https://sports.betmgm.com/en/blog/ncaab/utah-tech-utah-state-prediction-odds-picks-nov-10-college-basketball-jaa/",
+          "title": "Utah Tech vs Utah State Prediction, Odds & Best Bets Today – NCAAB, Nov. 10",
+          "publisher": "sports.betmgm.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRh6FfRsUudOKcvKP0glhFELxjEExzYb_rO-4kZT9MPqOMf6p9yr_Do46jhtH8"
+        }
+      ]
+    },
+    {
+      "query": "keegan murray",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T04:00:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-13/kings-start-acuff-lavine-hunter-murray-sabonis",
+        "https://www.hoopsrumors.com/2026/11/pacific-notes-murray-black-hachimura-ighodaro.html",
+        "https://www.nba.com/watch/video/mia-114-sac-108-keegan-murray-postgame-media-availability?plsrc=nba&collection=postgame-media-availability-2026-27"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCeYjXkR4_QNQpRY5Hla74oJVbZnBNBzVq-5gXSrMz1A6holz0cle2wIONyJ0",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-13/kings-start-acuff-lavine-hunter-murray-sabonis",
+          "title": "Kings start Acuff, LaVine, Hunter, Murray, Sabonis",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCeYjXkR4_QNQpRY5Hla74oJVbZnBNBzVq-5gXSrMz1A6holz0cle2wIONyJ0"
+        },
+        {
+          "url": "https://www.hoopsrumors.com/2026/11/pacific-notes-murray-black-hachimura-ighodaro.html",
+          "title": "Pacific Notes: Murray, Black, Hachimura, Ighodaro",
+          "publisher": "Hoops Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaoLfR_sDICqBc3xeGmN0bjttYLxv0fjHReXIKzaOanjYE8nNQxO9I6I9SX6k"
+        },
+        {
+          "url": "https://www.nba.com/watch/video/mia-114-sac-108-keegan-murray-postgame-media-availability?plsrc=nba&collection=postgame-media-availability-2026-27",
+          "title": "MIA 114, SAC 108: Keegan Murray Postgame Media Availability",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRscx9fC356M2o0Y54r-8GLQGaqTpnMJLsrkLuLKZ9AyTajvj_pEmuVBCky7RQ"
         }
       ]
     }
