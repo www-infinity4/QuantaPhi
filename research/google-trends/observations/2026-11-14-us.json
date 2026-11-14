@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T03:31:15.503186Z",
+  "checked_at": "2026-11-14T04:01:36.261689Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "marg helgenberger",
+      "query": "norman powell",
       "approx_searches": "1000+",
-      "published_at": "2026-11-14T03:10:00Z",
+      "published_at": "2026-11-14T03:40:00Z",
       "related_news_urls": [
-        "https://ew.com/csi-star-marg-helgenberger-boston-blue-debut-preview-12251592",
-        "https://www.paramountpressexpress.com/cbs-entertainment/shows/boston-blue/video?watch=u3fahtpg4f",
-        "https://collider.com/boston-blue-season-2-episode-6-sneak-peek-clip/"
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-13/norman-powell-will-return-to-play-against-hawks",
+        "https://heavy.com/sports/nba/chicago-bulls/injury-report-vs-spurs-november-11/",
+        "https://www.fantasypros.com/nba/news/619626/norman-powell-back-questionable-friday.php"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSntHjXb2OkNYShoSxZIQabHmTwyzMKRa6zvYvgE9WmT-ogz8LH_I1aJZixmnw",
-      "image_credit": "Entertainment Weekly",
-      "news": [
-        {
-          "url": "https://ew.com/csi-star-marg-helgenberger-boston-blue-debut-preview-12251592",
-          "title": "‘CSI’ star Marg Helgenberger makes ‘Boston Blue’ debut in exclusive preview",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSntHjXb2OkNYShoSxZIQabHmTwyzMKRa6zvYvgE9WmT-ogz8LH_I1aJZixmnw"
-        },
-        {
-          "url": "https://www.paramountpressexpress.com/cbs-entertainment/shows/boston-blue/video?watch=u3fahtpg4f",
-          "title": "CBS Entertainment | Boston Blue | Bloodlines",
-          "publisher": "Paramount Press Express",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWroBUq9PNKZeArXWogcZNlAJ-JiKbf0cTECptTF0gqT2TBGPibJppI9uVME8"
-        },
-        {
-          "url": "https://collider.com/boston-blue-season-2-episode-6-sneak-peek-clip/",
-          "title": "CBS Officially Releases New Look at 'Boston Blue' Episode Featuring 'CSI' Veteran",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRlC8TFFTYGsfE9ouZKEKvl2Lp6gJdTYhyA-HIV5rsV4M42RVZlN-EZqIOYEfk"
-        }
-      ]
-    },
-    {
-      "query": "nba cup standings",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T03:10:00Z",
-      "related_news_urls": [
-        "https://www.nba.com/news/emirates-nba-cup-live-updates-november-13",
-        "https://www.nytimes.com/athletic/7776476/2026/11/13/nba-cup-standings-cavs-heat-spurs-warriors/",
-        "https://www.si.com/nba/projected-nba-cup-bracket-after-second-night-in-season-tournament-action"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvJOSzIlS9IoC_UCvJWlvwd41WcfB1QlAVf5Jx21cBsrFI9pAMUtiyystQNzc",
-      "image_credit": "NBA.com",
-      "news": [
-        {
-          "url": "https://www.nba.com/news/emirates-nba-cup-live-updates-november-13",
-          "title": "NBA Cup Live updates: scores, highlights for November 13",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvJOSzIlS9IoC_UCvJWlvwd41WcfB1QlAVf5Jx21cBsrFI9pAMUtiyystQNzc"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7776476/2026/11/13/nba-cup-standings-cavs-heat-spurs-warriors/",
-          "title": "What’s at stake in Friday’s NBA Cup slate with Warriors-Spurs, Cavs-Heat and other games?",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrDvgjQbPgIZe38rquREVVm1239QKlC65-AivsUI4hwHWfVzhxP4TBfsCM5h8"
-        },
-        {
-          "url": "https://www.si.com/nba/projected-nba-cup-bracket-after-second-night-in-season-tournament-action",
-          "title": "Projected NBA Cup Bracket After Second Night of In-Season Tournament Action",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLKBC8p-c6WOqExmFN-wSSE8gRltH9JFzHoUujoL4VhHi9rI5MWnw40pip_kg"
-        }
-      ]
-    },
-    {
-      "query": "kosovo",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T03:10:00Z",
-      "related_news_urls": [
-        "https://prishtinainsight.com/eu-uk-concerned-as-kosovo-moves-against-hague-courts-powers-again/",
-        "https://kossev.info/en/samoopredeljenje-ce-ponovo-glasati-za-zakon-o-specijalizovanim-vecima-pdk-zahteva-obaranje-predsednickog-veta-uprkos-upozorenjima-zapada/",
-        "https://www.gazetaexpress.com/en/Citaku-responds-to-the-BE-that-the-demand-for-justice-and-European-integration-are-not-mutually-exclusive./"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQh824EFkEpcwgUoEtrUhWepDfg-24FHG1Wc0qjlSVnPdDz-xtOV0TU96dN_2Q",
-      "image_credit": "Prishtina Insight",
-      "news": [
-        {
-          "url": "https://prishtinainsight.com/eu-uk-concerned-as-kosovo-moves-against-hague-courts-powers-again/",
-          "title": "EU, UK ‘Concerned’ as Kosovo Moves Against Hague Court’s Powers Again",
-          "publisher": "Prishtina Insight",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQh824EFkEpcwgUoEtrUhWepDfg-24FHG1Wc0qjlSVnPdDz-xtOV0TU96dN_2Q"
-        },
-        {
-          "url": "https://kossev.info/en/samoopredeljenje-ce-ponovo-glasati-za-zakon-o-specijalizovanim-vecima-pdk-zahteva-obaranje-predsednickog-veta-uprkos-upozorenjima-zapada/",
-          "title": "Self-determination will again vote for the law on Specialized Councils, PDK demands overturning of presidential veto despite warnings from the West",
-          "publisher": "KoSSev",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZouSTzf6psfFmIN2xutPxzOcZPScZ7WpqLcZpFbW0jMBKE-bwy2wxgn-8TmE"
-        },
-        {
-          "url": "https://www.gazetaexpress.com/en/Citaku-responds-to-the-BE-that-the-demand-for-justice-and-European-integration-are-not-mutually-exclusive./",
-          "title": "Çitaku responds to the EU: The demand for justice and European integration are not mutually exclusive",
-          "publisher": "Gazeta Express",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTM1g16O50hvUCaJhUDcN9gbfZ8Tzp2fMqY0hqZE1w1GNYErLluMcaE0I05-Eg"
-        }
-      ]
-    },
-    {
-      "query": "the body netflix cast",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T03:10:00Z",
-      "related_news_urls": [
-        "https://www.forbes.com/sites/paultassi/2026/11/13/netflixs-best-new-show-deserves-its-98-rotten-tomatoes-audience-score/",
-        "https://www.theguardian.com/tv-and-radio/2026/nov/13/the-body-coming-of-age-review-netflix",
-        "https://www.imdb.com/news/ni66109843/?ref_=ttnw_art_perm"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj_6dX44l7QvdXETXLa31lCqdxbKltZXBljud0ReoQWLRsi49vHQEk9Eeo0K8",
-      "image_credit": "Forbes",
-      "news": [
-        {
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/13/netflixs-best-new-show-deserves-its-98-rotten-tomatoes-audience-score/",
-          "title": "Netflix’s Best New Show Deserves Its 98% Rotten Tomatoes Audience Score",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj_6dX44l7QvdXETXLa31lCqdxbKltZXBljud0ReoQWLRsi49vHQEk9Eeo0K8"
-        },
-        {
-          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/13/the-body-coming-of-age-review-netflix",
-          "title": "The Body review – this sexy retro high school drama is like Cruel Intentions … with added Satanic rituals",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0J7IDDXHi9RkKqQf7C4XNMQHzLepy5n5QJL7PMGiP8IKutfXhWrw6v-yPaSs"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66109843/?ref_=ttnw_art_perm",
-          "title": "84,000 Signed Petition for Netflix to Cancel ‘The Body,’ Yet It’s Surging Up Charts After 100% Rotten Tomatoes Debut",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKTKDok_GiyLmD3JL8u6KablvS1Zwg7Vo_wy9UgZ6Kag2vIDQFCVSYaiE2Jwg"
-        }
-      ]
-    },
-    {
-      "query": "james franco",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T03:10:00Z",
-      "related_news_urls": [
-        "https://www.hollywoodreporter.com/movies/movie-reviews/confession-review-rob-lowe-james-franco-nick-nolte-1236751013/",
-        "https://slate.com/culture/2026/11/confession-movie-2026-daily-wire-ben-shapiro-rob-lowe-james-franco.html",
-        "https://variety.com/2026/film/news/confession-review-1236945904/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuY2yAv6K5zMhFUSA5wM5WHxby9FhrtXubws4fqaP_BHPqMBqshuFU4xZUBiE",
-      "image_credit": "The Hollywood Reporter",
-      "news": [
-        {
-          "url": "https://www.hollywoodreporter.com/movies/movie-reviews/confession-review-rob-lowe-james-franco-nick-nolte-1236751013/",
-          "title": "'Confession' Review: Rob Lowe, James Franco in Ben Shapiro-Penned Film",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuY2yAv6K5zMhFUSA5wM5WHxby9FhrtXubws4fqaP_BHPqMBqshuFU4xZUBiE"
-        },
-        {
-          "url": "https://slate.com/culture/2026/11/confession-movie-2026-daily-wire-ben-shapiro-rob-lowe-james-franco.html",
-          "title": "Ben Shapiro’s Screenwriting Debut Is Here. It’s … a Movie, All Right.",
-          "publisher": "Slate Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCVTW8UnpAcJPmDzc23Vb4BtyvcRL4gbgfYpsEkAehilr7uOBrOZ5XOIGf488"
-        },
-        {
-          "url": "https://variety.com/2026/film/news/confession-review-1236945904/",
-          "title": "'Confession' Review: James Franco and Rob Lowe in a Sluggish Drama",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROYBc4Ge6dVWnRd8IYq777tPmnucb8931OVA3dzS3jou_KroNLQ9KDKH9yDBs"
-        }
-      ]
-    },
-    {
-      "query": "warped tour",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T03:10:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/warped-tour-renames-orlando-stage-203558455.html",
-        "https://www.theprp.com/2026/11/09/news/this-weekends-orlando-fl-vans-warped-tour-stop-to-be-livestreamed/",
-        "https://www.orlandoweekly.com/music/live-music-picks-previews/vans-warped-tour-continues-the-music-festival-takeover-of-downtown-orlando/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIGv8Ed9vVh2k1cr_Ceyn6K2UwoFJIzXkuyqJX8irInMlzsjXPtS50sFa1hs0",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/warped-tour-renames-orlando-stage-203558455.html",
-          "title": "Warped Tour Renames Orlando Stage to Honor Late Guitarist Chad Gilbert of New Found Glory",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIGv8Ed9vVh2k1cr_Ceyn6K2UwoFJIzXkuyqJX8irInMlzsjXPtS50sFa1hs0"
-        },
-        {
-          "url": "https://www.theprp.com/2026/11/09/news/this-weekends-orlando-fl-vans-warped-tour-stop-to-be-livestreamed/",
-          "title": "This Weekend's Orlando, FL 'Vans Warped Tour' Stop To Be Livestreamed",
-          "publisher": "Theprp.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRlGxsUxOP5y7YZKw7sjBitTd-MgU_Ha0a0xQTNZSiWylMmTR9uEADWD1lGKnY"
-        },
-        {
-          "url": "https://www.orlandoweekly.com/music/live-music-picks-previews/vans-warped-tour-continues-the-music-festival-takeover-of-downtown-orlando/",
-          "title": "Vans Warped Tour continues the music festival takeover of downtown Orlando",
-          "publisher": "Orlando Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFBmRRUhMqQAdAMKFJ68S30-Wamdu3HTdGe29Vgsa8xWDjZ1Km1FqvtrO4rDs"
-        }
-      ]
-    },
-    {
-      "query": "arkansas basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T03:00:00Z",
-      "related_news_urls": [
-        "https://arkansasrazorbacks.com/mbb-preview-arkansas-vs-uca-2/",
-        "https://www.wholehogsports.com/news/2026/nov/12/arkansas-basketball-vs-central-arkansas-how-to-watch-betting-line-what-to-know/",
-        "https://www.si.com/college/arkansas/men-s-basketball/halftime-takeaways-as-no-19-arkansas-leads-uca-43-27-"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1QpGsbY6346GTX1-s5HUtABJ4Caf9j1P0If3DXRUAswT4QNY4rXpSQCzbC5c",
-      "image_credit": "Arkansas Razorbacks",
-      "news": [
-        {
-          "url": "https://arkansasrazorbacks.com/mbb-preview-arkansas-vs-uca-2/",
-          "title": "MBB Preview: Arkansas vs UCA",
-          "publisher": "Arkansas Razorbacks",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1QpGsbY6346GTX1-s5HUtABJ4Caf9j1P0If3DXRUAswT4QNY4rXpSQCzbC5c"
-        },
-        {
-          "url": "https://www.wholehogsports.com/news/2026/nov/12/arkansas-basketball-vs-central-arkansas-how-to-watch-betting-line-what-to-know/",
-          "title": "Arkansas basketball vs. Central Arkansas: How to watch, betting line, what to know",
-          "publisher": "Whole Hog Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeUsrR3ZztFIb2oPS7kEnBEHeblOUT-Q0fB4z3kmObuukriBWMjylLp52cYxE"
-        },
-        {
-          "url": "https://www.si.com/college/arkansas/men-s-basketball/halftime-takeaways-as-no-19-arkansas-leads-uca-43-27-",
-          "title": "Halftime Takeaways As No. 19 Arkansas Leads UCA 43-27",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdzS5ByVO8Q2S4lYjoW2UEyXwORrFizWRUfuD24ydpESa1IYbFp2wMoLAH0wg"
-        }
-      ]
-    },
-    {
-      "query": "saddiq bey",
-      "approx_searches": "500+",
-      "published_at": "2026-11-14T03:00:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-13/pelicans-start-fears-jones-bey-zion-jordan",
-        "https://www.rotowire.com/basketball/headlines/saddiq-bey-news-starting-against-memphis-538962",
-        "https://www.cbssports.com/fantasy/basketball/news/pelicans-saddiq-bey-drawing-first-start-of-season/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScxFaH2C3QMoxF1FmJOnAx5MPwfo7RaXJ76iyrLDqEnfgojhOkkXWfJ-Y-OQU",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZylfFL0emnsm_LkwX66pTuecKDFTk0batYqofn1U0gt6QLWClEANzwRkqaIA",
       "image_credit": "NBC Sports",
       "news": [
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-13/pelicans-start-fears-jones-bey-zion-jordan",
-          "title": "Pelicans start Fears, Jones, Bey, Zion, Jordan",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-13/norman-powell-will-return-to-play-against-hawks",
+          "title": "Norman Powell will return to play against Hawks",
           "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScxFaH2C3QMoxF1FmJOnAx5MPwfo7RaXJ76iyrLDqEnfgojhOkkXWfJ-Y-OQU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZylfFL0emnsm_LkwX66pTuecKDFTk0batYqofn1U0gt6QLWClEANzwRkqaIA"
         },
         {
-          "url": "https://www.rotowire.com/basketball/headlines/saddiq-bey-news-starting-against-memphis-538962",
-          "title": "Saddiq Bey News: Starting against Memphis",
-          "publisher": "RotoWire",
+          "url": "https://heavy.com/sports/nba/chicago-bulls/injury-report-vs-spurs-november-11/",
+          "title": "Chicago Bulls Issue Injury Report for San Antonio Spurs Game on Nov. 11",
+          "publisher": "Heavy.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCpgsxj4C8xjk0npzZVGOIXrjotzMrE4jzFZjqczEKX4igt5CR-W2FwmlGgXU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToXPmTr8F4wP03R8hYysuTs021s4zlwPM1XKFZ0YDbjLTzsterifHL8E2lMR4"
         },
         {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/pelicans-saddiq-bey-drawing-first-start-of-season/",
-          "title": "Pelicans' Saddiq Bey: Drawing first start of season",
-          "publisher": "CBS Sports",
+          "url": "https://www.fantasypros.com/nba/news/619626/norman-powell-back-questionable-friday.php",
+          "title": "Norman Powell (back) questionable Friday",
+          "publisher": "FantasyPros",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnLuJyGE-4fvkpkhhFpY-KsXN2Bt_GwESwcn8jwJiK_oJLd0rhId20iDjdsJ0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcqwR7Ma-yQ6Hu88SUC9Aoa6p18HUDzaNhn0JjQtvFDCHI2K_-GYBLa7Cr_nI"
         }
       ]
     },
     {
-      "query": "skate america 2026",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T03:00:00Z",
+      "query": "emma watson",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T03:40:00Z",
       "related_news_urls": [
-        "https://www.everettpost.com/local-news/quad-god-malinin-makes-season-debut-in-everett-friday/",
-        "https://people.com/ilia-malinin-says-shocking-8th-place-finish-at-2026-winter-olympics-was-worst-day-of-my-life-12253104",
-        "https://www.nbcsports.com/olympics/news/ilia-malinin-figure-skater-quadgod-skate-america-2026"
+        "https://www.instyle.com/emma-watson-stuns-black-minidress-gq-party-12253178",
+        "https://pagesix.com/2026/11/13/celebrity-news/emma-watson-suffers-brutal-fall-outside-chateau-marmont/",
+        "https://www.yahoo.com/lifestyle/videos/emma-watson-takes-nasty-spill-180550356.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTU-wIT_1zn7DwQeSCoHYz0zys4oqtd4Lrpi3F20jAiGQcI04Vixd9SnHNqEQw",
-      "image_credit": "Everett Post",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDBO21WwBKrR3aM9i-yvrAy8wVTLvAk7P8KfMe6foxSnOGtrMFndVx2gkNKDY",
+      "image_credit": "InStyle",
       "news": [
         {
-          "url": "https://www.everettpost.com/local-news/quad-god-malinin-makes-season-debut-in-everett-friday/",
-          "title": "\"Quad God\" Malinin makes season debut in Everett Friday",
-          "publisher": "Everett Post",
+          "url": "https://www.instyle.com/emma-watson-stuns-black-minidress-gq-party-12253178",
+          "title": "Emma Watson Wows in a Black Velvet Minidress and Striped Heels for Rare Outing",
+          "publisher": "InStyle",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTU-wIT_1zn7DwQeSCoHYz0zys4oqtd4Lrpi3F20jAiGQcI04Vixd9SnHNqEQw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDBO21WwBKrR3aM9i-yvrAy8wVTLvAk7P8KfMe6foxSnOGtrMFndVx2gkNKDY"
         },
         {
-          "url": "https://people.com/ilia-malinin-says-shocking-8th-place-finish-at-2026-winter-olympics-was-worst-day-of-my-life-12253104",
-          "title": "Ilia Malinin Says Shocking 8th Place Finish at 2026 Winter Olympics Was ‘Worst Day of My Life’",
+          "url": "https://pagesix.com/2026/11/13/celebrity-news/emma-watson-suffers-brutal-fall-outside-chateau-marmont/",
+          "title": "Emma Watson suffers brutal fall outside splashy celebrity party at LA hot spot Chateau Marmont",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://www.yahoo.com/lifestyle/videos/emma-watson-takes-nasty-spill-180550356.html",
+          "title": "Emma Watson takes a nasty spill on the street as she attends the GQ's 31st Annual Men of the Year Party",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVC_hPHsvg5zeF6ob2om22nYxd4LHTDKySGwehEuwTvCD4WBN16baMCEFHjHc"
+        }
+      ]
+    },
+    {
+      "query": "dyson daniels",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T03:40:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/news/visualizing-the-game-luka-doncic-first-10-games",
+        "https://www.espn.com/nba/recap/_/gameId/401909952",
+        "https://www.silverscreenandroll.com/lakers-news/128901/lakes-news-dyson-daniels-luka-doncic-hawks"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPR2BBL9J1UQvEo_sKwYBt_SffSfHngwgKVNl3iwy5vVG7-zWN6qzxU_LDYXo",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://www.nba.com/news/visualizing-the-game-luka-doncic-first-10-games",
+          "title": "Visualizing the Game: Luka Dončić’s scoring spree",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPR2BBL9J1UQvEo_sKwYBt_SffSfHngwgKVNl3iwy5vVG7-zWN6qzxU_LDYXo"
+        },
+        {
+          "url": "https://www.espn.com/nba/recap/_/gameId/401909952",
+          "title": "Lakers 124-114 Hawks (Nov 9, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWUzUMq3D3S_awbIS0cN7InG4PGrDjKS9MhRThEh3GLbtNGI61jwWvzc1pzwU"
+        },
+        {
+          "url": "https://www.silverscreenandroll.com/lakers-news/128901/lakes-news-dyson-daniels-luka-doncic-hawks",
+          "title": "Dyson Daniels calls Luka the ‘hardest guy to guard’ in the NBA",
+          "publisher": "Silver Screen and Roll",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvcHfIsTxfc6hT-e7svJWQXnuc37f2N2hU3OQLd6qH2Y0ph5ImGibMm2X_RFc"
+        }
+      ]
+    },
+    {
+      "query": "ashley judd",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T03:40:00Z",
+      "related_news_urls": [
+        "https://people.com/ashley-judd-says-mom-naomi-judd-threatened-to-stop-paying-her-college-tuition-12253082",
+        "https://pagesix.com/2026/11/13/parents/ashley-judd-reveals-rift-with-mom-naomi-over-lesbian-college-professor/",
+        "https://ew.com/ashley-judd-says-mom-naomi-feared-retaliation-from-country-music-world-politics-12251599"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkI9lkfZg7SMQMNXzqs3VPQ9i0xIsESPTq1j04PYK2NP0bKYt9sBBdyiPCoXA",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/ashley-judd-says-mom-naomi-judd-threatened-to-stop-paying-her-college-tuition-12253082",
+          "title": "Ashley Judd Says Mom Naomi Judd Threatened to Stop Paying Her College Tuition",
           "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRehb7HgNQ8JKb_E3g0DmwcadoqEVDvFN4GIZyesIQSUrhbSuAZfQkipv-2M2M"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkI9lkfZg7SMQMNXzqs3VPQ9i0xIsESPTq1j04PYK2NP0bKYt9sBBdyiPCoXA"
         },
         {
-          "url": "https://www.nbcsports.com/olympics/news/ilia-malinin-figure-skater-quadgod-skate-america-2026",
-          "title": "Ilia Malinin starts next figure skating chapter with a new nickname",
-          "publisher": "NBC Sports",
+          "url": "https://pagesix.com/2026/11/13/parents/ashley-judd-reveals-rift-with-mom-naomi-over-lesbian-college-professor/",
+          "title": "Ashley Judd lays bare religious rift with mom Naomi — and fallout over lesbian college professor",
+          "publisher": "Page Six",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQD1O8uLwrKyKvNhnwSlXae1aZ-u90qQsNobZDVEtd3kL-4qG1HesxoIUAERQ4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJRpnCafLHcpHZAIWxGevaHMk3lLBLWf7Wn9xHtLC5UjdIqr_lg8TgPZ8tkEs"
+        },
+        {
+          "url": "https://ew.com/ashley-judd-says-mom-naomi-feared-retaliation-from-country-music-world-politics-12251599",
+          "title": "Ashley Judd says mom Naomi feared ‘retaliation’ from country music world if she didn’t hold ‘certain political line’",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbY_NJQORsGweyLHyW28PkW1_Ke74azSvFWZbG98jppkh1iYoOXxFPu6B5byk"
         }
       ]
     },
     {
-      "query": "josh duhamel",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T03:00:00Z",
+      "query": "mariska hargitay",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-14T03:40:00Z",
       "related_news_urls": [
-        "https://www.cbsnews.com/miami/video/actor-josh-duhamel-discusses-new-lifestyle-brand-gatlan/",
-        "https://www.nbcmiami.com/video/entertainment/south-florida-live/soflo-entertainment-his-biggest-role-yet-being-a-dad-josh-duhamel-gets-personal/3887933/",
-        "https://www.movieguide.org/news-articles/fatherhood-in-his-50s-transformed-josh-duhamel.html"
+        "https://www.eonline.com/news/1438070/mariska-hargitays-law-order-svu-salary-revealed-as-s850-000-per-episode",
+        "https://pagesix.com/2026/11/12/entertainment/mariska-hargitays-staggering-law-order-svu-salary-revealed/",
+        "https://www.nine.com.au/entertainment/celebrity/mariska-hargitay-law-and-order-svu-salary-revealed-highest-earning-tv-stars-20261113-p61dyy.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPDBGjwTx3JKyxIHso5flMvmGP9uW3V35n-NW6cmXhD3xxWPc9PfIhPsihfqQ",
-      "image_credit": "CBS News",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRTptlsvFLn32-N_4plotokQ1CivsVpKFLESO6zw6NzdyNf28WWfdKRorW3M0",
+      "image_credit": "E! News",
       "news": [
         {
-          "url": "https://www.cbsnews.com/miami/video/actor-josh-duhamel-discusses-new-lifestyle-brand-gatlan/",
-          "title": "Actor Josh Duhamel discusses new lifestyle brand \"Gatlan\"",
-          "publisher": "CBS News",
+          "url": "https://www.eonline.com/news/1438070/mariska-hargitays-law-order-svu-salary-revealed-as-s850-000-per-episode",
+          "title": "Mariska Hargitay’s Eye-Popping Law & Order: SVU Salary Revealed",
+          "publisher": "E! News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPDBGjwTx3JKyxIHso5flMvmGP9uW3V35n-NW6cmXhD3xxWPc9PfIhPsihfqQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRTptlsvFLn32-N_4plotokQ1CivsVpKFLESO6zw6NzdyNf28WWfdKRorW3M0"
         },
         {
-          "url": "https://www.nbcmiami.com/video/entertainment/south-florida-live/soflo-entertainment-his-biggest-role-yet-being-a-dad-josh-duhamel-gets-personal/3887933/",
-          "title": "SOFLO ENTERTAINMENT: His biggest role yet? Being a dad! Josh Duhamel gets personal",
-          "publisher": "NBC 6 South Florida",
+          "url": "https://pagesix.com/2026/11/12/entertainment/mariska-hargitays-staggering-law-order-svu-salary-revealed/",
+          "title": "Mariska Hargitay’s staggering ‘Law & Order: SVU’ salary revealed",
+          "publisher": "Page Six",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEVF7A71_6pEfjsMIFYzI-7jXVbXm44AFbDsshuoaftbu5zbUIZ3f3L5SMhoM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb5XR7YkL_o2exbgFcj68OD-sLGusfJyWS1PlmGJWxxXbQ0WUk-8HwO66xAd4"
         },
         {
-          "url": "https://www.movieguide.org/news-articles/fatherhood-in-his-50s-transformed-josh-duhamel.html",
-          "title": "Fatherhood in His 50s Transformed This Hollywood Actor",
-          "publisher": "Movieguide",
+          "url": "https://www.nine.com.au/entertainment/celebrity/mariska-hargitay-law-and-order-svu-salary-revealed-highest-earning-tv-stars-20261113-p61dyy.html",
+          "title": "Mariska Hargitay’s eye-watering Law & Order salary revealed, but she’s not the only one",
+          "publisher": "Nine.com.au",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_WcfRrl5BiyI8ikI1UjS-TP68GfsVnXnb3RH1m89kRqH6r3j3uP6dyAF_yQM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOYb67fWTNczkw12r8LERRQANDfHtWza0a1n7_HBWSqd_H70uwpGldRZLg7SA"
+        }
+      ]
+    },
+    {
+      "query": "bilal hasan",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T03:40:00Z",
+      "related_news_urls": [
+        "https://www.yardbarker.com/mma/articles/hokit_steals_nunes_belts_at_ufc_334_media_day/s1_17349_44548224",
+        "https://lastwordonsports.com/mma/2026/11/13/josh-hokit-steals-ufc-334/",
+        "https://www.mmamania.com/ufc-videos/485517/josh-hokit-copies-conor-mcgregor-steals-ufc-belts-amanda-nunes-ufc-334-media-day"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPMkeA8m3lENoYRTdyEOi8hLrapKNQTlKgi29FfqIcDbprR8R1esNBqRvelrs",
+      "image_credit": "Yardbarker",
+      "news": [
+        {
+          "url": "https://www.yardbarker.com/mma/articles/hokit_steals_nunes_belts_at_ufc_334_media_day/s1_17349_44548224",
+          "title": "Hokit Steals Nunes' Belts At UFC 334 Media Day",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPMkeA8m3lENoYRTdyEOi8hLrapKNQTlKgi29FfqIcDbprR8R1esNBqRvelrs"
+        },
+        {
+          "url": "https://lastwordonsports.com/mma/2026/11/13/josh-hokit-steals-ufc-334/",
+          "title": "Josh Hokit Steals the Show at UFC 334 Press Conference With His Wild Antics",
+          "publisher": "Last Word On Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKxwI-eWNlN0Wxy_G2V9vGuS3tLHNn6n-DjD9HLd3GBm5TGizdPS4KEO0faqQ"
+        },
+        {
+          "url": "https://www.mmamania.com/ufc-videos/485517/josh-hokit-copies-conor-mcgregor-steals-ufc-belts-amanda-nunes-ufc-334-media-day",
+          "title": "Josh Hokit copies Conor McGregor, steals UFC belts from Amanda Nunes at UFC 334 media day",
+          "publisher": "MMA Mania",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3Q4n6ykTIREaLDs-_w4n6xnXFUSrA_Z4VjzRkqMlfM3J5cHxKSGtnZRXcL5I"
+        }
+      ]
+    },
+    {
+      "query": "glenn gawdin",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-14T03:30:00Z",
+      "related_news_urls": [
+        "https://nypost.com/2026/11/12/sports/glenn-gawdin-makes-long-awaited-nhl-return-in-rangers-debut/",
+        "https://www.prohockeyrumors.com/2026/11/metro-notes-smits-garland-tufte.html",
+        "https://www.sportsnet.ca/nhl/article/rangers-alberts-smits-week-to-week-with-upper-body-injury/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSK7oKEjRLn1ThoJqcx_n3em9P7Lo7HxIDf6kp1OU01DPCn12nP88SFWCMRhMo",
+      "image_credit": "New York Post",
+      "news": [
+        {
+          "url": "https://nypost.com/2026/11/12/sports/glenn-gawdin-makes-long-awaited-nhl-return-in-rangers-debut/",
+          "title": "Glenn Gawdin makes long-awaited NHL return in Rangers debut",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSK7oKEjRLn1ThoJqcx_n3em9P7Lo7HxIDf6kp1OU01DPCn12nP88SFWCMRhMo"
+        },
+        {
+          "url": "https://www.prohockeyrumors.com/2026/11/metro-notes-smits-garland-tufte.html",
+          "title": "Metro Notes: Smits, Garland, Tufte",
+          "publisher": "Pro Hockey Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTN8dz3CliFMdpGstRVo9T94wOkm6mZh7L52RDfS2TTQOWC7bs94cDPBOJ-4s"
+        },
+        {
+          "url": "https://www.sportsnet.ca/nhl/article/rangers-alberts-smits-week-to-week-with-upper-body-injury/",
+          "title": "Rangers' Alberts Smits week-to-week with upper-body injury",
+          "publisher": "Sportsnet.ca",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuuSEhH6jymCKABfVL5T84-s4QBHUCp52t9S5TYPxxHdC_XmL8DC6LzCHDnnY"
+        }
+      ]
+    },
+    {
+      "query": "ucla qb",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T03:30:00Z",
+      "related_news_urls": [
+        "https://www.bestofarkansassports.com/arkansas-football-madden-iamaleava-ucla-specific-6-digit-payout/",
+        "https://www.nytimes.com/athletic/7776542/2026/11/13/ucla-bob-chesney-bruins-undefeated-big-ten-illinois/",
+        "https://www.npr.org/2026/11/13/nx-s1-6036817/uclas-golden-year-on-the-football-field"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgtzvoFBmMKHm1W22ddz6JJyJnM5FRq0V3bss8kEmhrsaJexuAy9UDh3IBMiI",
+      "image_credit": "Best of Arkansas Sports",
+      "news": [
+        {
+          "url": "https://www.bestofarkansassports.com/arkansas-football-madden-iamaleava-ucla-specific-6-digit-payout/",
+          "title": "Specific 6-Digit Payout Discussed for UCLA QB Who Peaced Out On Hogs Before Taking A Snap",
+          "publisher": "Best of Arkansas Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgtzvoFBmMKHm1W22ddz6JJyJnM5FRq0V3bss8kEmhrsaJexuAy9UDh3IBMiI"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7776542/2026/11/13/ucla-bob-chesney-bruins-undefeated-big-ten-illinois/",
+          "title": "How Bob Chesney’s small-school roots have fueled UCLA’s remarkable turnaround",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbATI327e8uheyUF9ofePXCKkV_QVYKnndlR8zKwhG298g5QEfWgYwBZrD-X0"
+        },
+        {
+          "url": "https://www.npr.org/2026/11/13/nx-s1-6036817/uclas-golden-year-on-the-football-field",
+          "title": "UCLA’s golden year on the football field",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": null
+        }
+      ]
+    },
+    {
+      "query": "carter bryant",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T03:30:00Z",
+      "related_news_urls": [
+        "https://airalamo.com/carter-bryant-is-finding-his-footing-at-the-right-time-for-the-spurs-deep-rotation",
+        "https://www.expressnews.com/sports/spurs/article/spurs-mitch-johnson-carter-bryant-remains-huge-22519649.php",
+        "https://www.rotowire.com/basketball/headlines/carter-bryant-news-limited-role-continues-538423"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0fbe1aBiJbuT6QH2Hk6ORdhP0ucX_njYczOXcndnPVxQmEW8lXPHqpkWCHUc",
+      "image_credit": "Air Alamo",
+      "news": [
+        {
+          "url": "https://airalamo.com/carter-bryant-is-finding-his-footing-at-the-right-time-for-the-spurs-deep-rotation",
+          "title": "Carter Bryant is finding his footing at the right time for the Spurs’ deep rotation",
+          "publisher": "Air Alamo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0fbe1aBiJbuT6QH2Hk6ORdhP0ucX_njYczOXcndnPVxQmEW8lXPHqpkWCHUc"
+        },
+        {
+          "url": "https://www.expressnews.com/sports/spurs/article/spurs-mitch-johnson-carter-bryant-remains-huge-22519649.php",
+          "title": "Spurs' Mitch Johnson: Carter Bryant remains 'huge part of this team'",
+          "publisher": "San Antonio Express-News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCVg_ZSqLJbnJZNA7LGlUxEHAl2fApmtFKG8FVEhWwfkx8jcSHhFXA6PDATZc"
+        },
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/carter-bryant-news-limited-role-continues-538423",
+          "title": "Carter Bryant News: Limited role continues",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQl9j093jESUolTapCI-R3rbYC9z7qw9f0z1Odc-rXCiC7aIYQzFyYvkl9qNtY"
+        }
+      ]
+    },
+    {
+      "query": "new york rangers",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T03:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nhl/story/_/id/50463496/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
+        "https://www.nhl.com/rangers/news/rangers-at-canucks-pregame-notes-11-13-26",
+        "https://sports.yahoo.com/videos/revisiting-canucks-rangers-move-j-010012792.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaWmhiRoxueyuw_Qn61mEGeVlLuhTsBjxlU9hfGuRIPQ3ifD9AQ5dHDuX7BK0",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nhl/story/_/id/50463496/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
+          "title": "NHL Tonight: What to watch in Rangers-Canucks, Predators-Golden Knights",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaWmhiRoxueyuw_Qn61mEGeVlLuhTsBjxlU9hfGuRIPQ3ifD9AQ5dHDuX7BK0"
+        },
+        {
+          "url": "https://www.nhl.com/rangers/news/rangers-at-canucks-pregame-notes-11-13-26",
+          "title": "Rangers at Canucks: Pregame Notes",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXesxTo7e3fIe2BS_KRSAU_fSfLTlYnTYc2VEyFxAsoRe0Rh2zvJ4ZPAgbTMY"
+        },
+        {
+          "url": "https://sports.yahoo.com/videos/revisiting-canucks-rangers-move-j-010012792.html",
+          "title": "Revisiting The Canucks And Rangers’ Move For J.T. Miller Ahead Of Fifth Matchup Since The Trade",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREtwtcGcPfleq0ZV__fYnIQYmMhYmrqK0gR1LVZzwer5cDcXIwwo8rsvcbPTY"
         }
       ]
     }
