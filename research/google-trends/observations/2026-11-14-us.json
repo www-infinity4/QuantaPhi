@@ -3,9 +3,289 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-14T08:01:27.751953Z",
+  "checked_at": "2026-11-14T08:31:19.779322Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "gta 6 ultimate edition",
+      "approx_searches": "100+",
+      "published_at": "2026-11-14T08:10:00Z",
+      "related_news_urls": [
+        "https://ktla.com/entertainment/free-copies-of-grand-theft-auto-vi-for-californians-what-to-know-about-kick-sweepstakes/",
+        "https://www.notebookcheck.net/10K-free-GTA-6-Ultimate-Edition-game-codes-coming-in-livestream-Twitch-drops.1449873.0.html",
+        "https://www.tweaktown.com/news/114652/kick-viewers-can-win-one-of-10000-free-gta-6-ultimate-edition-copies-by-watching-3-hours/index.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT9LxfvV6Aku-36afdXY9rQxna6G84QWx23KuKcNJfdDck3pXJ7k28SGwLdjE",
+      "image_credit": "KTLA",
+      "news": [
+        {
+          "url": "https://ktla.com/entertainment/free-copies-of-grand-theft-auto-vi-for-californians-what-to-know-about-kick-sweepstakes/",
+          "title": "Free copies of Grand Theft Auto VI for Californians? What to know about Kick sweepstakes",
+          "publisher": "KTLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT9LxfvV6Aku-36afdXY9rQxna6G84QWx23KuKcNJfdDck3pXJ7k28SGwLdjE"
+        },
+        {
+          "url": "https://www.notebookcheck.net/10K-free-GTA-6-Ultimate-Edition-game-codes-coming-in-livestream-Twitch-drops.1449873.0.html",
+          "title": "Deal | 10K+ free GTA 6 Ultimate Edition game codes coming in livestream Twitch drops",
+          "publisher": "Notebookcheck",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8efLCxwUqUCNBOp7hcz_CB8KM4eLtZQ5OsSa3UfAJlmdZxkXaXkwH7xP6nP0"
+        },
+        {
+          "url": "https://www.tweaktown.com/news/114652/kick-viewers-can-win-one-of-10000-free-gta-6-ultimate-edition-copies-by-watching-3-hours/index.html",
+          "title": "Kick viewers can win one of 10,000 free GTA 6 Ultimate Edition copies by watching 3 hours",
+          "publisher": "TweakTown",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjtqbK-eT9DAZ6JMBtFShWJnu3L058hxq38GOOQMiRuSNpJynNXVbOyZtqM2k"
+        }
+      ]
+    },
+    {
+      "query": "hong kong",
+      "approx_searches": "100+",
+      "published_at": "2026-11-14T08:10:00Z",
+      "related_news_urls": [
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+        "https://www.nytimes.com/2026/11/13/technology/anthropic-ipo-spending-plans.html",
+        "https://www.reuters.com/business/finance/investors-flock-anthropic-ipo-question-durability-ai-lead-2026-11-13/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGhzBw5Gu9QJSkHS8KA8ykQ6iX0LlPPZnDrggt7EsviBOCrkQFYPYZBgoE6Ew",
+      "image_credit": "SEC.gov",
+      "news": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+          "title": "Anthropic, PBC - S-1/A-2",
+          "publisher": "SEC.gov",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGhzBw5Gu9QJSkHS8KA8ykQ6iX0LlPPZnDrggt7EsviBOCrkQFYPYZBgoE6Ew"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/13/technology/anthropic-ipo-spending-plans.html",
+          "title": "Wall Street Braces for Anthropic’s Spending",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaCQi2FcthcFyycE8j2ZdeVPkz28ZQSvxIYL4xsjBU1AZn9TjxLwEmUKh7mlU"
+        },
+        {
+          "url": "https://www.reuters.com/business/finance/investors-flock-anthropic-ipo-question-durability-ai-lead-2026-11-13/",
+          "title": "EXCLUSIVE: Investors flock to Anthropic IPO but question durability of AI lead",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJrIQkbU3FJWxFNUTbKN5Yd3XRHQ4ig7v1cFXSVAXfxwXFtca-oRoL1Lcf1lE"
+        }
+      ]
+    },
+    {
+      "query": "xrp",
+      "approx_searches": "200+",
+      "published_at": "2026-11-14T08:00:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/crypto/articles/xrp-crashes-toward-0-99-223000273.html",
+        "https://www.tradingview.com/news/benzinga:080a63707094b:0-xrp-drops-26-in-a-month-could-0-60-be-next/",
+        "https://247wallst.com/investing/cryptocurrency/2026/11/12/could-xrp-be-the-next-bitcoin/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5BkwhyjM2nTBdkPAaUae8p-nISy2EGXv1e3UV1mOIsksphuKSqYexXKF2-0M",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/crypto/articles/xrp-crashes-toward-0-99-223000273.html",
+          "title": "XRP crashes toward $0.99 as analyst warns of another brutal drop",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5BkwhyjM2nTBdkPAaUae8p-nISy2EGXv1e3UV1mOIsksphuKSqYexXKF2-0M"
+        },
+        {
+          "url": "https://www.tradingview.com/news/benzinga:080a63707094b:0-xrp-drops-26-in-a-month-could-0-60-be-next/",
+          "title": "XRP Drops 26% in a Month: Could $0.60 Be Next?",
+          "publisher": "TradingView",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
+        },
+        {
+          "url": "https://247wallst.com/investing/cryptocurrency/2026/11/12/could-xrp-be-the-next-bitcoin/",
+          "title": "Could XRP Be the Next Bitcoin?",
+          "publisher": "24/7 Wall St.",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzjt61fA6zVKufhhsUKErmSTNmOxa5_OpGSVMS0ZwuBmZTtnJkMb-mcfozGMc"
+        }
+      ]
+    },
+    {
+      "query": "haiti",
+      "approx_searches": "100+",
+      "published_at": "2026-11-14T08:00:00Z",
+      "related_news_urls": [
+        "https://www.dw.com/en/why-does-el-salvadors-bukele-have-troops-in-haiti/a-79940771",
+        "https://americasquarterly.org/article/el-salvadors-presence-and-a-gangs-offer-test-haitis-security/",
+        "https://www.amnestyusa.org/press-releases/haiti-haiti-and-el-salvador-governments-must-ensure-salvadoran-military-personnel-respect-human-rights/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7NTvBVtZlQrO5xCky70LPBJ9G9HTHLpRXfNuzJsrnwI95HFpT-6_aaIlT8Rw",
+      "image_credit": "DW.com",
+      "news": [
+        {
+          "url": "https://www.dw.com/en/why-does-el-salvadors-bukele-have-troops-in-haiti/a-79940771",
+          "title": "El Salvador has built up a military presence in Haiti. What's in it for the Central American country?",
+          "publisher": "DW.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7NTvBVtZlQrO5xCky70LPBJ9G9HTHLpRXfNuzJsrnwI95HFpT-6_aaIlT8Rw"
+        },
+        {
+          "url": "https://americasquarterly.org/article/el-salvadors-presence-and-a-gangs-offer-test-haitis-security/",
+          "title": "El Salvador’s Presence and a Gang’s Offer Test Haiti’s Security",
+          "publisher": "Americas Quarterly",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwKbGkRZNKov9vgMaxtpVVHzehZDgKrPtF4xFDQy8ruoJsdvU7fsHXWLVh3gY"
+        },
+        {
+          "url": "https://www.amnestyusa.org/press-releases/haiti-haiti-and-el-salvador-governments-must-ensure-salvadoran-military-personnel-respect-human-rights/",
+          "title": "Haiti: Haiti and El Salvador Governments Must Ensure Salvadoran Military Personnel Respect Human Rights",
+          "publisher": "Amnesty International USA",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwJ3l_ynqxR8hXbQLwLa5WkXehu539s_uUJ7Jz5ZHpIn2LVq1A4G4Xj1YlC3w"
+        }
+      ]
+    },
+    {
+      "query": "andrew garfield",
+      "approx_searches": "100+",
+      "published_at": "2026-11-14T08:00:00Z",
+      "related_news_urls": [
+        "https://people.com/andrew-garfield-and-monica-barbaro-step-out-together-for-date-night-12252706",
+        "https://www.imdb.com/it/news/ni66109743/?ref_=nwc_art_perm",
+        "https://www.yahoo.com/entertainment/celebrity/articles/andrew-garfield-monica-barbaro-hold-153257111.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGPXhKh3DAHHsQMaV2hl9FAxqC4elofoYWUkCvDynZLBHtr19J9YZE-BIpCPo",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/andrew-garfield-and-monica-barbaro-step-out-together-for-date-night-12252706",
+          "title": "Andrew Garfield and Monica Barbaro Step Out Together for Star-Studded Date Night in Los Angeles",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGPXhKh3DAHHsQMaV2hl9FAxqC4elofoYWUkCvDynZLBHtr19J9YZE-BIpCPo"
+        },
+        {
+          "url": "https://www.imdb.com/it/news/ni66109743/?ref_=nwc_art_perm",
+          "title": "Andrew Garfield & Monica Barbaro Hold Hands While Leaving GQ’s Men of the Year Party Together",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiSKIDmBp-tFBnvRKg0C5BYUgdQ_OOqcqKRuwiKj8B0uoUk6ybJsLwsRjfBUc"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/andrew-garfield-monica-barbaro-hold-153257111.html",
+          "title": "Andrew Garfield & Monica Barbaro Hold Hands While Leaving GQ’s Men of the Year Party Together",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEdfed64aWbjPSK83HIkbZ4r67CRdIFDruDPas9m8rRlLvBPwQExK1kj_c1UM"
+        }
+      ]
+    },
+    {
+      "query": "hailey bieber",
+      "approx_searches": "500+",
+      "published_at": "2026-11-14T07:50:00Z",
+      "related_news_urls": [
+        "https://www.instyle.com/hailey-bieber-son-jack-special-talent-video-12252588",
+        "https://www.eonline.com/news/1438082/hailey-bieber-justin-biebers-son-jack-following-in-dads-footsteps",
+        "https://nz.news.yahoo.com/hailey-bieber-shares-video-son-182839324.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTusXSbXcct54z15KcQukRUSEnJ3DPKRVOqyEGYgw_V4l9HS_WCqum39iYnvyk",
+      "image_credit": "InStyle",
+      "news": [
+        {
+          "url": "https://www.instyle.com/hailey-bieber-son-jack-special-talent-video-12252588",
+          "title": "Hailey Bieber’s Son Jack, 2, Shows Off Special Talent Following in Dad’s Footsteps in Never-Before-Seen Video",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTusXSbXcct54z15KcQukRUSEnJ3DPKRVOqyEGYgw_V4l9HS_WCqum39iYnvyk"
+        },
+        {
+          "url": "https://www.eonline.com/news/1438082/hailey-bieber-justin-biebers-son-jack-following-in-dads-footsteps",
+          "title": "Hailey Bieber Shares Sweet Proof Son Jack Bieber Is Following in Dad Justin Bieber’s Footsteps",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiL83EVQkWQnvCncDzS8Dyx2B51Viz-SKWNwt9BCyV12f7v9je3-nfKPIawEQ"
+        },
+        {
+          "url": "https://nz.news.yahoo.com/hailey-bieber-shares-video-son-182839324.html",
+          "title": "Hailey Bieber shares video of son Jack Blues playing the keyboard",
+          "publisher": "Yahoo News New Zealand",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3Po_FmU8Bj6Qk4IUoggQRsT0kJYooxFaqMbzekmtH4TwoVzpKNsu1O3JWVMg"
+        }
+      ]
+    },
+    {
+      "query": "alexandra daddario",
+      "approx_searches": "100+",
+      "published_at": "2026-11-14T07:50:00Z",
+      "related_news_urls": [
+        "https://screenrant.com/best-disney-plus-movies-watch-weekend-november-14/",
+        "https://screenrant.com/best-disney-plus-movies-watch-weekend-november-7/",
+        "https://deadline.com/2026/11/taylor-kitsch-alexandra-daddario-long-island-bank-robber-1237215411/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgJ99Y1ntGAIV65gkPHRKMH-D6L4CikoeTjSwfswh-wmqj342EBsvYcHq8mYI",
+      "image_credit": "ScreenRant",
+      "news": [
+        {
+          "url": "https://screenrant.com/best-disney-plus-movies-watch-weekend-november-14/",
+          "title": "3 Best Movies To Watch On Disney+ This Weekend (#1 Is Alexandra Daddario's Action Fantasy Epic)",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgJ99Y1ntGAIV65gkPHRKMH-D6L4CikoeTjSwfswh-wmqj342EBsvYcHq8mYI"
+        },
+        {
+          "url": "https://screenrant.com/best-disney-plus-movies-watch-weekend-november-7/",
+          "title": "3 Best Movies To Watch On Disney+ This Weekend (#1 Is A $1.5 Billion Space Opera With Sequels On The Way)",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRt85PJdHOblx2XaH282gk2437hKb9PTDJzrKkh0eS1S7N0uxM-iwm2rnlNiRc"
+        },
+        {
+          "url": "https://deadline.com/2026/11/taylor-kitsch-alexandra-daddario-long-island-bank-robber-1237215411/",
+          "title": "Taylor Kitsch, Alexandra Daddario, Christopher Walken Cast In 'Robber'",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvUWPLXwhkZWeeM90NlJZ0U6dtk8rYW9Vyv4sW4VYgIzyy2k8OaNg9Cx0_iXE"
+        }
+      ]
+    },
+    {
+      "query": "paris hilton",
+      "approx_searches": "100+",
+      "published_at": "2026-11-14T07:50:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/news/us/articles/inside-la-priciest-private-schools-130000995.html",
+        "https://latination.com/los-angeles-most-expensive-private-schools-privileges/",
+        "https://nypost.com/2026/11/11/us-news/l-a-s-most-expensive-private-schools-in-2026-ranked-by-tuition/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdGT0S506z9dWzj0lA9NJ5LSU8SrrO8Q5XqfHzXB1olPJhoG0qh0uFhYPlCV8",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/news/us/articles/inside-la-priciest-private-schools-130000995.html",
+          "title": "Inside LA’s priciest private schools, from a $70K campus with rooftop gardens to Paris Hilton’s alma mater",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdGT0S506z9dWzj0lA9NJ5LSU8SrrO8Q5XqfHzXB1olPJhoG0qh0uFhYPlCV8"
+        },
+        {
+          "url": "https://latination.com/los-angeles-most-expensive-private-schools-privileges/",
+          "title": "Los Angeles' priciest private schools offer privileges public school kids can only dream of",
+          "publisher": "https://latination.com/",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCaKPA0f-JjjisWpP9x4MK6KKMRnOq-2ofjt-3JkeLbOBNzuY_RfspGHClwz0"
+        },
+        {
+          "url": "https://nypost.com/2026/11/11/us-news/l-a-s-most-expensive-private-schools-in-2026-ranked-by-tuition/",
+          "title": "LA’s most expensive private schools, including one where teens manage an investment portfolio",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNpQRZDKRR3oH7iMBNdOzkK6TF0pih4zFa_WXew2hocR05AhtsGoQgS2EbYvc"
+        }
+      ]
+    },
     {
       "query": "los angeles weather",
       "approx_searches": "200+",
@@ -47,8 +327,8 @@
       "published_at": "2026-11-14T07:40:00Z",
       "related_news_urls": [
         "https://www.imdb.com/news/ni66108143/?ref_=nmnw_art_perm",
-        "https://www.forbes.com/sites/sabrinareed/2026/11/11/lanterns-season-2-was-a-long-shot-before-james-gunn-and-peter-safrans-dc-studios-exit/",
-        "https://theankler.com/tv-in-3-lanterns-in-limbo-after-dc-power-play/"
+        "https://theankler.com/tv-in-3-lanterns-in-limbo-after-dc-power-play/",
+        "https://www.esquire.com/entertainment/tv/a74399253/is-lanterns-canceled/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRA2_K8VaLSlcyyhxgshQN5TUj3ec4yL9Mf4xqi0OV21VuzPDMEKnv4huaYxn0",
       "image_credit": "IMDb",
@@ -61,298 +341,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRA2_K8VaLSlcyyhxgshQN5TUj3ec4yL9Mf4xqi0OV21VuzPDMEKnv4huaYxn0"
         },
         {
-          "url": "https://www.forbes.com/sites/sabrinareed/2026/11/11/lanterns-season-2-was-a-long-shot-before-james-gunn-and-peter-safrans-dc-studios-exit/",
-          "title": "‘Lanterns’ Season 2 Was A Long Shot Before James Gunn And Peter Safran’s DC Studios Exit",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTb2O_qxdKZHOosnYbK1R02TYXwTt6LTi42nw9RmIk6vUATovEqYgajb_kZWmc"
-        },
-        {
           "url": "https://theankler.com/tv-in-3-lanterns-in-limbo-after-dc-power-play/",
           "title": "TV in 3: ‘Lanterns’ in Limbo After DC Power Play",
           "publisher": "The Ankler",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjRzj7a00Hha3dAu40J44w9DjiDyvnUJA4PFsoh9WJieUzttXv7iFtFBRBbb0"
-        }
-      ]
-    },
-    {
-      "query": "gen x",
-      "approx_searches": "100+",
-      "published_at": "2026-11-14T07:40:00Z",
-      "related_news_urls": [
-        "https://www.ctinsider.com/columnist/article/gen-x-boomers-congress-2027-22522678.php",
-        "https://thehill.com/the-120/6217340-gen-z-congress-representation-triples/",
-        "https://www.audacy.com/krld/news/local/gen-x-set-to-outnumber-boomers-in-congress-as-texas-seat-turns-over"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9RL-vr5QHBue3ViwD8BXSMIixzkdgUywnrfFDqIC3zdJA0ABaDk0DhzjB0g0",
-      "image_credit": "CT Insider",
-      "news": [
-        {
-          "url": "https://www.ctinsider.com/columnist/article/gen-x-boomers-congress-2027-22522678.php",
-          "title": "Gen X is about to overtake boomers in Congress",
-          "publisher": "CT Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9RL-vr5QHBue3ViwD8BXSMIixzkdgUywnrfFDqIC3zdJA0ABaDk0DhzjB0g0"
         },
         {
-          "url": "https://thehill.com/the-120/6217340-gen-z-congress-representation-triples/",
-          "title": "6 Gen Z federal and state officials you should know",
-          "publisher": "The Hill",
+          "url": "https://www.esquire.com/entertainment/tv/a74399253/is-lanterns-canceled/",
+          "title": "So Is ‘Lanterns’ Canceled or What?",
+          "publisher": "Esquire",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8fs1Vd3r5fXBIXaE5uc0BAUKZmimqOQx6n_vIZigAPE_WgyFKRdB7LOFBz-o"
-        },
-        {
-          "url": "https://www.audacy.com/krld/news/local/gen-x-set-to-outnumber-boomers-in-congress-as-texas-seat-turns-over",
-          "title": "Gen X set to outnumber boomers in Congress as Texas seat turns over",
-          "publisher": "Audacy",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJyeUKy4nQWnTb-8dmXFxKW_WSacGhTIz2DKW0DSF2Wbb97YWJkmAvkuktfOw"
-        }
-      ]
-    },
-    {
-      "query": "santa cruz beach closures",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-14T07:30:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/13/weather/california-storm-mavericks-surfers.html",
-        "https://www.ksbw.com/article/santa-cruz-evacuations-waves-weather-ocean-flooding/74427680",
-        "https://www.sfchronicle.com/california/article/santa-cruz-beach-closure-22529227.php"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOKxw5MzH_MM1msGfgCZNYJbU1t5bWV0H_fPXlTAl2nJoFqrVfsZ1Oy7PdJ98",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/13/weather/california-storm-mavericks-surfers.html",
-          "title": "Surfers Scramble to Mavericks in California to Catch Building-Size Waves",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOKxw5MzH_MM1msGfgCZNYJbU1t5bWV0H_fPXlTAl2nJoFqrVfsZ1Oy7PdJ98"
-        },
-        {
-          "url": "https://www.ksbw.com/article/santa-cruz-evacuations-waves-weather-ocean-flooding/74427680",
-          "title": "Evacuation warnings issued for some coastal Santa Cruz County neighborhoods",
-          "publisher": "KSBW",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbv1SueCsdsOD9AlTRJd0Y60g3O8OwJErsRiwlDLqRL33mGmy7lOcYrTmECJA"
-        },
-        {
-          "url": "https://www.sfchronicle.com/california/article/santa-cruz-beach-closure-22529227.php",
-          "title": "‘Stay away from beaches’: Evacuations issued in Santa Cruz County as massive waves hit",
-          "publisher": "San Francisco Chronicle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdxhhsgRsykL20X1yF5l_Qbv1-tSDXJUECz3DdK12jOTvbn4jWzjzntShVCSI"
-        }
-      ]
-    },
-    {
-      "query": "monica barbaro",
-      "approx_searches": "100+",
-      "published_at": "2026-11-14T07:30:00Z",
-      "related_news_urls": [
-        "https://www.thefashionspot.com/fashion-news/982802-monica-barbaro-plunging-dress-brandon-maxwell-gq-moty",
-        "https://www.aol.com/articles/monica-barbaro-serves-serious-plunge-093816000.html",
-        "https://www.hellomagazine.com/us/934976/monica-barbaro-36-stuns-in-daring-plunging-dress-that-nearly-reaches-her-waist-at-gq-party/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzCk3qNAuA2Ng4a1N8W6MLt_MoZw2BRrc_Hmib0oxFG736J0zxF7-5X692KL8",
-      "image_credit": "theFashionSpot",
-      "news": [
-        {
-          "url": "https://www.thefashionspot.com/fashion-news/982802-monica-barbaro-plunging-dress-brandon-maxwell-gq-moty",
-          "title": "Monica Barbaro’s Plunging Brandon Maxwell Dress Dips Dangerously Low at GQ MOTY",
-          "publisher": "theFashionSpot",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzCk3qNAuA2Ng4a1N8W6MLt_MoZw2BRrc_Hmib0oxFG736J0zxF7-5X692KL8"
-        },
-        {
-          "url": "https://www.aol.com/articles/monica-barbaro-serves-serious-plunge-093816000.html",
-          "title": "Monica Barbaro Serves a Serious Plunge in a Striking Two-Tone Dress",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8GP9Rg2-DwcVt9kiiQL05ey6txTSHNIMyQe71mSJB1wFSWS3Cd8Gk2M7OmBU"
-        },
-        {
-          "url": "https://www.hellomagazine.com/us/934976/monica-barbaro-36-stuns-in-daring-plunging-dress-that-nearly-reaches-her-waist-at-gq-party/",
-          "title": "Monica Barbaro, 36, stuns in daring plunging dress that nearly reaches her waist at GQ party",
-          "publisher": "HELLO!",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXTMiyoZ7C7HfDE-z-34beRi7V8IdQxC0mw9ZXhohwk-ZH4bpmDndmtajRTps"
-        }
-      ]
-    },
-    {
-      "query": "under-19 ind vs pak live score",
-      "approx_searches": "100+",
-      "published_at": "2026-11-14T07:30:00Z",
-      "related_news_urls": [
-        "https://www.cricbuzz.com/live-cricket-scores/175720/paku19-vs-indu19-final-acc-mens-u19-asia-cup-2026",
-        "https://www.cricinfo.com/story/pakistan-ask-india-to-field-in-under-19-asia-cup-final-1562576",
-        "https://www.espn.com/cricket/series/8616/game/1558444/india-under-19s-vs-pakistan-under-19s-final-asian-cricket-council-under-19s-asia-cup-2026-27"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGMBNyQlJD1YeenjGiX2SbF2hanemlQsFw4oRRDRAwGKyGx-RFw8x_xZswaoI",
-      "image_credit": "Cricbuzz",
-      "news": [
-        {
-          "url": "https://www.cricbuzz.com/live-cricket-scores/175720/paku19-vs-indu19-final-acc-mens-u19-asia-cup-2026",
-          "title": "PAKU19 56/0 (7) (Usman Khan 28(23) Hayam Khan 20(20)) | Pakistan U19 vs India U19, Final, ACC Men's U19 Asia Cup 2026 Live Cricket Stream, live scores, ball-by-ball commentary, hig",
-          "publisher": "Cricbuzz",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGMBNyQlJD1YeenjGiX2SbF2hanemlQsFw4oRRDRAwGKyGx-RFw8x_xZswaoI"
-        },
-        {
-          "url": "https://www.cricinfo.com/story/pakistan-ask-india-to-field-in-under-19-asia-cup-final-1562576",
-          "title": "Pakistan ask India to field in Under-19 Asia Cup final",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPxuCa1uuqY1d3MP9Ln7vg1b6Da1IqDafA5ejakDYsyG7qBeCSrwzKqzgn1-k"
-        },
-        {
-          "url": "https://www.espn.com/cricket/series/8616/game/1558444/india-under-19s-vs-pakistan-under-19s-final-asian-cricket-council-under-19s-asia-cup-2026-27",
-          "title": "Final, Asian Cricket Council Under-19s Asia Cup at Al Amarat, Nov 14 2026",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ntsB0gST_kxus_R2wxMcK8_qsbeDLWhTlmdoJt9TsIRr8b92bBIrLnEuhcY"
-        }
-      ]
-    },
-    {
-      "query": "tahiti",
-      "approx_searches": "100+",
-      "published_at": "2026-11-14T07:20:00Z",
-      "related_news_urls": [
-        "https://www.ouest-france.fr/bretagne/binic-etables-sur-mer-22680/binic-etables-sur-mer-tahiti-au-dela-du-reve-est-le-4e-livre-dodile-le-ho-ralu-affbc0b6-99c8-4c9b-ba4b-9f6e70942900",
-        "https://www.letelegramme.fr/cotes-d-armor/binic-etables-sur-mer-22680/odile-le-ho-ralu-lautrice-de-binic-etables-sort-son-4e-recit-et-ouvre-sa-maison-dedition-7157168.php",
-        "https://www.footmercato.net/live/8032090855567629765-tahiti-vs-iles-cook"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9GFK_u7fc0zuuleWcRtMHs7o0aQYfIo3xxKuhqPpQKM3-Mjn7sCyiUo4gf88",
-      "image_credit": "Ouest-France",
-      "news": [
-        {
-          "url": "https://www.ouest-france.fr/bretagne/binic-etables-sur-mer-22680/binic-etables-sur-mer-tahiti-au-dela-du-reve-est-le-4e-livre-dodile-le-ho-ralu-affbc0b6-99c8-4c9b-ba4b-9f6e70942900",
-          "title": "Binic - Étables-sur-Mer. « Tahiti, au-delà du rêve » est le 4e livre d’Odile Le Hô-Ralu",
-          "publisher": "Ouest-France",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9GFK_u7fc0zuuleWcRtMHs7o0aQYfIo3xxKuhqPpQKM3-Mjn7sCyiUo4gf88"
-        },
-        {
-          "url": "https://www.letelegramme.fr/cotes-d-armor/binic-etables-sur-mer-22680/odile-le-ho-ralu-lautrice-de-binic-etables-sort-son-4e-recit-et-ouvre-sa-maison-dedition-7157168.php",
-          "title": "Odile Le Hô-Ralu, l’autrice de Binic-Étables, sort son 4e récit et ouvre sa maison d’édition",
-          "publisher": "Le Télégramme",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQg0_yqiBouOXVWlJGEOBlpR1Zr_RPFNah4C2P56OPryHjAmS5UrT4RNmz5WMw"
-        },
-        {
-          "url": "https://www.footmercato.net/live/8032090855567629765-tahiti-vs-iles-cook",
-          "title": "Live Tahiti - Cook Islands Friendlies 3 de Matchs Amicaux 2026 14/11",
-          "publisher": "Foot Mercato",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjGuC80lwLjjTl2xDo5HaboNPhJw9EviZ7_o3qhxFWAPctIYjhphhwwUK9jP4"
-        }
-      ]
-    },
-    {
-      "query": "chris duncan",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T07:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/drew-dober-vs-chris-duncan-031828756.html",
-        "https://www.centraloregondaily.com/sports/drew-dober-aims-to-test-chin-of-zombie-chris-duncan-at-ufc-334/article_ce9b80f7-9233-5e0c-ae9c-3d4b0da42dfa.html",
-        "https://sports.betmgm.com/en/blog/ufc/334-drew-dober-chris-duncan-predictions-odds-bm05/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjFoSvMM5h_Cum_GMr10RzT-Io6SwPYsji5oB3qCa9QzoXxpio8TBFfIf5Mt8",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/drew-dober-vs-chris-duncan-031828756.html",
-          "title": "Drew Dober vs. Chris Duncan prediction, odds, pick for UFC 334",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjFoSvMM5h_Cum_GMr10RzT-Io6SwPYsji5oB3qCa9QzoXxpio8TBFfIf5Mt8"
-        },
-        {
-          "url": "https://www.centraloregondaily.com/sports/drew-dober-aims-to-test-chin-of-zombie-chris-duncan-at-ufc-334/article_ce9b80f7-9233-5e0c-ae9c-3d4b0da42dfa.html",
-          "title": "Drew Dober aims to test chin of 'zombie' Chris Duncan at UFC 334",
-          "publisher": "Central Oregon Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8k8VnpEPjk_D-Rrug_F9S9S6BBKRHNblN7FH5VXZ70lC2VNqvAENK9TB8a3s"
-        },
-        {
-          "url": "https://sports.betmgm.com/en/blog/ufc/334-drew-dober-chris-duncan-predictions-odds-bm05/",
-          "title": "UFC 334: Drew Dober vs. Chris Duncan Predictions & Odds",
-          "publisher": "sports.betmgm.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaMmaQrViS9cEOPuTcOLlQ5FesWqvWE2s8kAOKaGOgAaGy9F15NCkzG8NJGcs"
-        }
-      ]
-    },
-    {
-      "query": "jennifer aniston",
-      "approx_searches": "200+",
-      "published_at": "2026-11-14T07:10:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/tv/news/tv-biggest-salaries-zendaya-nicolas-cage-selena-gomez-more-1236945567/",
-        "https://www.thedailybeast.com/obsessed/trump-friendly-stars-revealed-as-highest-paid-actors-on-tv",
-        "https://www.vietnam.vn/en/ngoi-sao-nao-kiem-tien-khung-nhat-tu-phim-truyen-hinh-hollywood-hien-nay"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPLs9LtxejfNApcfLIcaDFF7LGxsBDdalEDIVtJotuZkIuqXR6O0PQaM1OZoc",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/tv/news/tv-biggest-salaries-zendaya-nicolas-cage-selena-gomez-more-1236945567/",
-          "title": "TV’s Biggest Salaries: Zendaya, Nicolas Cage, Selena Gomez and More Stars Earning Huge Paychecks",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPLs9LtxejfNApcfLIcaDFF7LGxsBDdalEDIVtJotuZkIuqXR6O0PQaM1OZoc"
-        },
-        {
-          "url": "https://www.thedailybeast.com/obsessed/trump-friendly-stars-revealed-as-highest-paid-actors-on-tv",
-          "title": "Trump-Friendly Stars Revealed as Highest-Paid Actors on TV",
-          "publisher": "The Daily Beast",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTF0J1TwPPDpGgFiKsLR9HCBaK1ej_7bLQfA637ekjLkP8Nna54aDnQ6vzu2E4"
-        },
-        {
-          "url": "https://www.vietnam.vn/en/ngoi-sao-nao-kiem-tien-khung-nhat-tu-phim-truyen-hinh-hollywood-hien-nay",
-          "title": "Which star is currently earning the most money from Hollywood television shows?",
-          "publisher": "Vietnam.vn",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTByxb1a3OfObtYnf12ra_Wkbq3gbW3vMsMkuMKWF9qtHrm0yvOvX8SGqk0G4c"
-        }
-      ]
-    },
-    {
-      "query": "harrison ford",
-      "approx_searches": "100+",
-      "published_at": "2026-11-14T07:10:00Z",
-      "related_news_urls": [
-        "https://www.instyle.com/harrison-ford-wyoming-estate-details-12246846",
-        "https://www.admiddleeast.com/story/10-photos-of-harrison-ford-at-home",
-        "https://www.yahoo.com/entertainment/movies/box-office-results/articles/harrison-ford-2010-box-office-144500489.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxyR5Zb8fJKEu9dEznKqjrtXxHw6eTGSHJ7jIenvOcCSTx0zT3HiC4Vr0w-rA",
-      "image_credit": "InStyle",
-      "news": [
-        {
-          "url": "https://www.instyle.com/harrison-ford-wyoming-estate-details-12246846",
-          "title": "Inside Harrison Ford’s 800-Acre Wyoming Estate, Where He Enjoys ‘Normal’ Life",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxyR5Zb8fJKEu9dEznKqjrtXxHw6eTGSHJ7jIenvOcCSTx0zT3HiC4Vr0w-rA"
-        },
-        {
-          "url": "https://www.admiddleeast.com/story/10-photos-of-harrison-ford-at-home",
-          "title": "10 Photos of Harrison Ford, Hollywood Heartthrob, at Home",
-          "publisher": "AD Middle East",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsLHU8pqqePcAuIuUNBTztvthi6D4Bdtlgd1OUHvGPvR4Kaj4OmeqrW5bADpY"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/box-office-results/articles/harrison-ford-2010-box-office-144500489.html",
-          "title": "Harrison Ford’s 2010 Box Office Flop Becomes Streaming Hit After Its 16th Anniversary",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScWCWVgJYigDIbLBfz6DI28oVe_jEW9fbAAVyanp5mFIwTDX1MyWztRdOLD7s"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRprD7x4K_JyWD2uD8yzxQqo7RA90iH0tAkeZCF-UnQnOCerOKZXSKcqwE2HaM"
         }
       ]
     }
